@@ -1,0 +1,122 @@
+; fml_0011.par, a collection of pars posted to the 
+; Fractint mail list during November 2000
+; compiled by Les St Clair <les.stclair@btinternet.com>
+
+;========================================================================;
+;From: "Multiple Bogeys" <neo_1061@hotmail.com>
+;Subject: (fractint) Obscure case where diffusion gives poor estimates.
+;Date: 06 Nov 2000 04:13:59 EST
+
+
+deep_1_54          {
+                     ;  Version 2001 Patchlevel 1
+  reset=2001 type=mandel passes=d
+  center-mag=-0.74526321750669670/+0.11304138430272110/1.263809e+009/0.999\
+  7 params=0/0 float=y maxiter=1048576 inside=0 outside=0 logmap=1122
+  distest=-1/71/1024/768
+  colors=zzz000<56>EEEEEEEEE<2>FFFFFFIII<7>fffjjjmmm<3>zzz<10>aaaZZZXXX<2>\
+  QQQNNNNNN<157>zzz
+  savename=frmig_54
+  }
+
+;Diffusion on this one initially estimates 8 hours on a PII-400, but this 
+;climbs to about 12 by the time it finishes.
+
+;-----------------------------------------------------------------------------;
+;From: Guy Marson <guy.marson@mnhn.lu>
+;Subject: Re: (fractint) SOI and LogMap?
+;Date: 21 Nov 2000 00:06:08 +0100
+
+;I got one more question: Why is there such a big jump in the following
+;[bailout.par] when amounting the bailout from 113 to 114? There are no
+;changements <113 and >114. On other Bailout Tests are other values but the
+;same jumps.. no changements before and after a certain value.
+
+
+0-mod-113          { ; Version 2001 Patchlevel 1
+  reset=2001 type=julibrot julibrotfromto=-1/-1/0/0
+  julibrot3d=128/1220/60/5/10/24 julibroteyes=-5.05
+  orbitname=julzpower 3dmode=lefteye
+  center-mag=0/0/25/1.0003 params=0/0/4/0 maxiter=6 
+  bailout=113 
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+0-mod-114          { ; Version 2001 Patchlevel 1
+  reset=2001 type=julibrot julibrotfromto=-1/-1/0/0
+  julibrot3d=128/1220/60/5/10/24 julibroteyes=-5.05
+  orbitname=julzpower 3dmode=lefteye
+  center-mag=-0/0/25/1.0003 params=0/0/4/0 maxiter=6 
+  bailout=114 
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+
+;Both are 3d-fractals for crossed-eyes viewing..
+;**** Remember: the floating point must be switched of! ****
+
+
+;-----------------------------------------------------------------------------;
+;From: Lee Skinner <LeeHSkinner@compuserve.com>
+;Subject: (fractint) C-FOTDs
+;Date: 27 Nov 2000 07:13:13 -0500
+
+
+61124009           { ;                             t=  5:03:0=3.47
+                     ; on a P233 at 1600x1200  Nov 27, 2000  05:07:51
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2001
+                     ;  Version 2001 Patchlevel 3
+  reset=2001 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=recip passes=1
+  center-mag=+2.71707619839821900/-0.94866867868312280/5936.513/1/-122.5
+  params=15/-1.15/1/-11.5/-2/500 float=y maxiter=3600 inside=0
+  logmap=231 symmetry=none periodicity=9
+  colors=000Mg2Mg2Lh1<40>ul1vl1wl1xl1yl1zm0<29>zF0zE0zD0<2>zA0z80z82<13>z4\
+  bz3ez3g<3>z2r<3>zmxzzzruz<3>N`zFWz6Qz<3>SLmYKicJf<3>pKcsKbvKazL`<6>zQPzR\
+  NzRL<3>zUD<3>nI9jF8gC6<3>V01<2>yB3<14>yfAyhByjB<2>ypDysEytF<2>zwHzwIzvK<\
+  3>zuQ<3>cvnYwuXvu<4>OpvNnvLmw<3>Ehx<3>8Th7Pd5L`<2>08P<3>9IJBLHDNG<3>NY9<\
+  30>Mg2
+  }
+
+;-----------------------------------------------------------------------------;
+;From: "Andrew Coppin" <orphi69@hotmail.com>
+;Subject: Re: (fractint) C-FOTDs
+;Date: 27 Nov 2000 15:33:32 -0000
+
+
+Shaddows           { ; Weird...
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=CubicMandelUnion passes=g
+  center-mag=-0.61165285379202610/+0.15953079178885670/32.96414
+  params=1/0/0.5/0 float=y maxiter=4096 inside=255
+  colors=mob<9>YjdXidVhdUhdSgdQfe<3>NcbNbaMa`L`_<7>BNMALL8JJ7IH<3>3CB2AA29\
+  9<2>366356245234235236<3>22D31F42H42J53M64P<10>L3iM3kN3m<3>T2uU1vV1xX0z<\
+  9>TJzSKzSMzROzRQzQSz<9>YYtYZtZ_s<2>aaqbbpddr<3>llz<3>hasgZqeWo<10>ZFbYD`\
+  YB_XAZW8YV6W<12>I2JH1IG1H<2>D0DC0CB1B<3>727626255244333222<2>414515717<2\
+  >B0DC0FC0H<3>G0PH0RH0S<8>K0fL0hL0j<2>M0oN0qN0q<7>S7tT8tT8uU9uVAuVBv<10>k\
+  IelJcnJaoK`qLZsMX<3>rQWrSVrTV<2>rYUrZUr`VraVrcVrdVqfW<3>qkbqmdqnfqphqqjp\
+  sl<4>oqf000kkk
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

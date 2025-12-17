@@ -1,0 +1,99 @@
+; fml_0203.par, a collection of pars posted to the
+; Fractint mail list during March 2002
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Wed, 06 Mar 2002 13:06:18 +0100
+;Subject: [Fractint] in the meantime ..
+
+headless           { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multi011
+center-mag=-0.97919959391820490/+0.75201651940216260/2.060404e+013/1/-10\
+0.027908767424819/0.0161327836850957348 params=2/0.2 float=y
+maxiter=26000 inside=0 logmap=-1214 periodicity=0
+colors=000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrx\
+z<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<61>000
+}
+
+rings-1            { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multi010 function=cotan passes=1
+center-mag=+1.07435612610397300/+0.94117723598434140/3812.925
+params=2/0 float=y maxiter=500 inside=0 logmap=18 periodicity=0
+colors=000000000000<16>00Q00S00T<5>00b00d00f<2>00k00m02m<24>0cw0ew0fx<2>\
+0ky0mz2mz<24>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z\
+<60>002
+}
+
+rings-2            { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multi010 function=cotan passes=1
+center-mag=+1.07435612610397300/+0.94117723598434140/1439.491
+params=2/0 float=y maxiter=500 inside=0 logmap=11 periodicity=0
+colors=00000A<5>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy\
+0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<51\
+>00B
+}
+
+running1           { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi013
+function=sin passes=1
+center-mag=-0.824344/0.411692/23.87455/1/-35.0000000000000071/-3.7782277\
+3067748585e-014 float=y maxiter=700 bailoutest=imag inside=fmod
+proximity=0.001 outside=fmod logmap=11 periodicity=0
+colors=000008<4>003002000000000<16>00Q00S00T<5>00b00d00f<2>00k00m02m<24>\
+0cw0ew0fx<2>0ky0mz2mz<24>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z\
+04z03z02z00z<53>009
+}
+
+flat               { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi010
+function=flip passes=1
+center-mag=+1.67622517438936800/-0.00000000026524558/1.90464e+007
+params=2/0 float=y maxiter=300 inside=0 logmap=61 periodicity=0
+colors=000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3\
+>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<60>002000000
+}
+
+banksia1           { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi010
+function=sin passes=1
+center-mag=-1.39621113883863800/+0.79843232063358590/9672660/1/-82.50000\
+01565917529/4.34044445545012092e-007 params=2/0 float=y maxiter=1000
+inside=0 logmap=45 periodicity=0
+colors=000105<4>21H21J31L<3>42V42Y52_<3>63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1m\
+Z0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO\
+0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d\
+0Aa0CZ0D<3>M0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5\
+Eh4Kg4Of3Sd<3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>\
+032000202<3>B0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0\
+zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<5>000002
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Wed, 06 Mar 2002 14:14:32 +0100
+;Subject: [Fractint] CPU Speed
+
+speedtst               {
+reset=1820 type=mandel
+center-mag=-0.74909880336762710/+0.05084338424079404/1.304918e+012
+params=0/0 float=y maxiter=9000 inside=0 logmap=2178 periodicity=0
+viewwindows=1.8/0.75/yes/0/0
+colors=000zI0<2>z00<3>m06j07g09<3>W0ET0FP0HM0II0K<3>809506303000<6>21H21\
+J31L<3>42V42Y52_<3>63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<1\
+6>8KG9HF9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<\
+4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<3>m06j07g09<3>W0ET0FP0HM0II0K<\
+3>90B708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2\
+e`1g`<3>1oZ0pY0rY0tX0vW0vX<16>0KB0H90F80C70A6<2>032000202<3>B0CD0FG0HI0K\
+<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<5>zN0
+}
+
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

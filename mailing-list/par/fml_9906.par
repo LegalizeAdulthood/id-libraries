@@ -1,0 +1,568 @@
+; fml_9906.par, a collection of pars posted to the 
+; Fractint mail list during June 1999
+; compiled by Les St Clair <les_stclair@compuserve.com>
+
+;========================================================================;
+;From: Randall Britten <randall@is.co.za>
+;To: Fractint (E-mail) <Fractint@xmission.com>
+;Subject: (fractint) Largest minibrot
+;Date: 01 June 1999 10:40
+
+LargestMinibrot    {
+  reset=1960 type=mandel center-mag=-1.76395/-0.000753836/34.36415
+  params=0/0
+  }
+
+;========================================================================;
+;From: Morgan L. Owens <packrat@nznet.gen.nz>
+;To: <fractint@lists.xmission.com>
+;Subject: (fractint) Some pars
+;Date: 02 June 1999 21:00
+
+Gothic             { ; Colours by Sylvie Gallet
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=SimplePendulumG function=cotan passes=b
+  center-mag=0/0/0.6666667 params=0.5/0/0/0 float=y maxiter=1023
+  inside=255 outside=atan periodicity=0
+  colors=uuteS5<29>O31N20O41N20<10>Q72R82R82S93TA3<14>gQ5hR5iS4<3>mW3nX2nX\
+  2nY2<6>rc0rc0rb0<4>pZ1pY1oX2nX2<11>aL4`K4ZI3<2>UG3SG4QF4OF5ME5<2>GC6DB7D\
+  B7<74>ssrttsttstts<11>vvtwwuwwt<9>wwgwwfwvevud<4>tqZtpYsoXsnVrmUrmT<22>e\
+  S5uus cyclerange=1/254
+  }
+
+Faberge            { ; Colours by Linda Allison
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=SimplePendulumG function=cotan passes=b
+  center-mag=0.250195/1.38778e-016/5.72659/1/90 params=0.5/0/0/0
+  float=y maxiter=1023 inside=255 outside=atan periodicity=0
+  colors=0003eZ<16>2DC2BA2BA<12>111000000000<14>000500500<26>iB3<8>xeKziMy\
+  fL<7>kF5iB3fA3<8>911500000<12>000000011021<12>3CA3CA3B9<15>000000021<4>3\
+  CA4FC5JF<10>Fte<14>155012000<15>4zn<2>4pe4lb4h_3dX3`U<8>022<13>4zp<11>3f\
+  `000 cyclerange=1/254
+  }
+
+PhosphorescentTide {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=simplependulumg function=cosxx
+  center-mag=-5.55112e-016/-1.11022e-016/0.6666667/2.2889
+  params=0.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
+  passes=b
+  colors=000298<9>11100000000000000000900J00000K009000<102>000000276<7>011\
+  011000000021<4>3CA4FC5JF<9>EqcFteEqc<14>012000<15>4zn<2>4pe4lb4h_3dX3`U<\
+  8>022<13>4zp<14>3bW3`V3ZU3XS3WR<10>2DC2BA2BA2A9299000
+  cyclerange=1/254
+  }
+
+I_Dunno_What_it_is { ; Um... a cybernetic Orang-utan?
+                     ; Colours by Kerry Mitchell
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=simplependulumg function=cosxx
+  center-mag=-0.490438/1.15415/9.226443/0.9515/34.438/-32.851
+  params=1.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
+  periodicity=0
+  colors=222642A62A86EA6E82IA2MC2ME6IC6IEAIGEMIEMGAQIAQKEUMEUKAUI6QG6QE2<2\
+  >aK2aM6YK6YMAYOEaQEaOAeQAeSEiUEiSAiQ6eO6eM2iO2mQ2mS6qU6qS2uU2yW2yY6uW6uY\
+  Ay_AyaEu_EqYEqWAmUA<2>m_MqaMq_IuaIycIyeMucMueQygQyiUugUqeUqcQmaQmcUiaUe_\
+  UeYQi_QiYMiWIeUIeWMaUMaSIYQIYSMYUQaWQaYUYWUYYYa_YaaaY_aYaeYciaeiaceeeeeg\
+  iiiiigeieaecaeaYicYmeYmgaqiaqgYuiYykYymaukaumeyoeyqiuoiqmiqkemie<2>moqqq\
+  qqomuqmysmyuqusquuuywuyyyuwyquyqsumqumsyiqyeoyemuiouimqikmeimekqaiqagmYe\
+  mYgqYiuakuamy<2>QgyQeuUguUeqUcmQamQcqMaqM_mIYmI_qIauMcuMeyIcyEayE_uAYuA_\
+  y6Yy2Wy2Uu6Wu6Uq2Sq2Qm6SmAUmAWqEYq<2>ESeAQeASi6Qi2Oi2Me6Oe6Ma2Ka2IY6KYAM\
+  YAOaEQaEOYIQYMSYMUaISaIUeIWiMYiMWeQYeQ_iUaiU_eUYaQWaQUYUWYUUUQSUQQQUSQUQ\
+  MUOIQMIQOMMMMMKIIIIIKMIMQMOQMQUIOUEMUEKQAIQAKU6IU2GU2EQ6GQ6EM2CM2AI6CIAE\
+  IAGMEIM<2>ECAAAAACE6AE28E26A68A666246 cyclerange=1/254
+  }
+
+Maelstrom          { ; Story by Edgar Allen Poe
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=simplependulumg function=cotanh
+  center-mag=-0.56294/0.762463/4.219409 params=1.5/0/0/0 float=y
+  maxiter=1023 inside=255 outside=atan periodicity=0
+  colors=000<24>000000222222<2>22822A44C44E44G44I66K66N66P66Q66T88V88X88Z8\
+  8X88V88VAATAAQAAQCCPCCN<2>CCNCCNEENEENEENGGNGGNGGPIIPIIPIIPKKP<2>KKPNNPN\
+  NQNNQNNQPPQPPQPPT<2>QQTQQTTTV<3>TTVTTVTTXTTXVVZVVZVVZVV`XX`XXcXXcXXcZZdZ\
+  ZdZZgZZg``g``i``i``kcckccmccmccmddoddoddqddqggqggsggsgguiiuiiuiiwiiwkkyk\
+  kykkzkkzmmzmmzmmzmmzoozoozoozoozqqzqqzqqzqqzsszsszsszsszuuzuuzuuzuuzwwzw\
+  wzwwzwwzyyz<27>zzzzzzzyzyyzywzwuzuuzsszqqzoozooymmwkkuikugisggqddocdo`cm\
+  Z`kZ`iXZgVXgTVdTVcQT`PQZNQZKPXKNVIKTGKTEIQCGPCGNAEK8CK6AI4AG48E26E06C04A\
+  028028000<32>000 cyclerange=1/254
+  }
+
+;========================================================================;
+;From: <Jncerra@aol.com>
+;To: <fractint@lists.xmission.com>
+;Subject: (fractint) Some pars
+;Date: 06 June 1999 05:05
+
+lorentzoom         { ; lorentz good background                    John Cerra
+  reset=1950 type=lorenz corners=-2.58/2.58/11.06322/16.22322
+  params=0.02/5/15/1 float=y inside=bof60
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+lorentzoom2        { ; lorentz -      has perspective              John Cerra
+  reset=1950 type=lorenz corners=-0.96/0.96/8.881402/15.90992
+  params=0.02/5/15/1 float=y inside=bof60
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+kamweb             { ; zoomed kamtorus                              John Cerra
+  reset=1950 type=kamtorus corners=-0.266/0.266/-0.29215442/0.29215442
+  params=2/0.005/1.5/150 float=y inside=bof60
+  colors=000g`inhv<2>DlLJqGdyiI6V<3>itRPE8VLKaTX
+  }
+
+;========================================================================;
+;From: Lee Skinner <LeeHSkinner@compuserve.com>
+;To: <fractint@lists.xmission.com>
+;Subject: (fractint) 6 scenic pars
+;Date: 10 June 1999 04:50
+
+_2821570           { ;                                       t=  0:38:35.16
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:19:52
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.09038201447702857/-0.43587405182779220/1366163/0.75
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<6>JNWMQ_OTc<3>Xcr<9>CFLADH8A\
+  E<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E96AB47A14\
+  9000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0ae0Zb<3>22\
+  R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O00<4>zg0xd\
+  0u`0 sound=yes/pc
+  }
+
+_2821665           { ;                                       t=  0:37:27.72
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:20:47
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.08992770456599442/-0.43542268193956660/73229.23/0.75
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yU\
+  F<3>yHLxENxBOx7Qx4R<4>c5S_6TW6T<2>K7TG7UC5M83F42763A00G022<3>0DD0GG0JJ0M\
+  M0P00M24L08TW<3>OXeSYgWZi<3>lQ0iN0gJ0<2>p80<2>R00P00<4>000023057<3>04514\
+  4143<2>131220457<6>JNWMQ_OTc<3>Xcr<9>CFLADH8AE<2>23300000500A<3>05D07D08\
+  E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlk\
+  SooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0ae0Zb<3>2ER29O33L<2>45C56933500000040\
+  0<2>A00C00C00D00000F00<3>I00J00K00<3>O00<3>rZ0zg0xd0<2>oU007A<2>0FM<7>bh\
+  8 sound=yes/pc
+  }
+
+_2821685           { ;                                       t=  0:16:13.88
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:20:59
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.17885355142101680/-0.60159203667394400/38885.02/0.75/-39.9\
+  99 params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000C5M83F42763A00G022055088<3>3HI4JL5MN<2>8TW<3>OXeSYgWZi__lc`ngW\
+  QlQ0iN0gJ0<2>p80<3>S30M20P78<3>cScgXkkbs<3>OKSIFLCAE657000220<7>1NV1QZ1T\
+  b<3>0cr<5>3PZ4NW5KS<2>7DI8AE68A45723300000500A<3>05D07D08E<4>EN8HQ7KT6<3\
+  >We0<4>JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtoso\
+  p<8>NhlJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D0000\
+  0F00<3>I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<3>_U7WU9SUBOUDJUF<3>bh8gl6lo5<2\
+  >zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7\
+  Qx4R<10>G7U sound=yes/pc
+  }
+
+_2821732           { ;                                       t=  0:39:11.07
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:21:30
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.09284551716413093/-0.43504743584154330/2.009519e+008/0.75/\
+  4.994/0.01 params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000xBOx7Qx4R<4>c5S_6TW6T<2>K7TG7UC5M83F42763A00G022<3>0DD0GG0JJ0M\
+  M0P00M24L08TW<3>OXeSYgWZi__lc`n<3>gJ0<3>W40T00R00P00<2>A00<3>cVgkbseZl<3\
+  >IFLCAE657000220457<6>JNWMQ_OTc<3>Xcr<9>CFLADH8AE<2>23300000500A<3>05D07\
+  D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hh\
+  MlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C56933500000040\
+  0<2>A00C00C00D00000F00<3>I00J00K00<3>O00<3>rZ0zg0xd0u`0rY0<3>BJH0FM5JK<5\
+  >YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtjawqhzyn<3>fhhacfX_dRVb<6>xE\
+  N sound=yes/pc
+  }
+
+_2821749           { ;                                       t=  0:37:33.98
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:21:41
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.09106568163733537/-0.43575847710116510/1.91681e+007/0.75/-\
+  37.499 params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000<3>0BB0DD0GG0JJ0MM<2>6RT8TWCUZ<3>SYgWZi__lc`ngWQlQ0iN0gJ0<2>p8\
+  0<2>W20P00K00<3>000023057<3>JHNOKSIFL<2>000220457<6>JNWMQ_OTc<3>Xcr<9>CF\
+  LADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E96A\
+  B47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0ae0Z\
+  b<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O00<3\
+  >rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<4>c5S_6TW6T<2>K7TG7UC5M83F42\
+  763A00G sound=yes/pc
+  }
+
+_2821777           { ;                                       t=  0:40:53.14
+                     ; on a P233 at 1600x900  Apr 11, 1999  11:22:00
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 69
+  reset=1961 type=formula formulafile=frac_ml.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.09106249590870003/-0.43575884532959520/7.886838e+008/0.75/\
+  -37.5 params=200/300/400/550 float=y maxiter=647 periodicity=0
+  viewwindows=4.2/0.563/yes/1600/900
+  colors=000PUd<5>CFLADH8AE<2>23300000500A<3>05D07D08E<3>BK9EN8HQ7KT6NW4<2\
+  >ij1qo0vtg<2>JQ5<3>9E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtoso\
+  p<8>NhlJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D0000\
+  0F00<3>I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY\
+  0lT0iN0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<2>l5\
+  Sh5Sb5S<3>D2T71T00UC5M83F42763A<4>4G63J53M4<3>0X06RT8TW<3>OXeSYgWZi__lc`\
+  ngWQlQ0iN0gJ0<2>p80<2>W20P00K00<3>000023057<3>JHNOKSIFL<2>000220457<6>JN\
+  WMQ_OTc<3>Xcr<2>RXh sound=yes/pc
+  }
+
+;========================================================================;
+;From: JoWeber <JoWeber@compuserve.com>
+;To: INTERNET:fractint@lists. <fractint@lists.xmission.com>
+;Subject: (fractint) some pars
+;Date: 12 June 1999 22:21
+
+jo06_01            { ; t=  4:21:49.08 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:09:50
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=t
+  center-mag=+0.00003582776617623/+0.00016408568488817/12126.4/1/-37.499
+  params=-500/-500/-1.1/-1/0/0 float=y maxiter=7200 bailout=25
+  inside=0 logmap=6 symmetry=none periodicity=10
+  colors=000C5M83F42763A00G022055<2>2DD2FG3HI4JL5MN<2>8TW<2>KWcOXeSYgWZi__\
+  lc`ngWQlQ0iN0gJ0<2>p80<4>M20<6>kbs<7>000220<6>1KR1NV1QZ1Tb1Wf1Zj0`n0cr<5\
+  >3PZ4NW5KS6IP6FL7DI8AE<2>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47\
+  A149000<3>II0MM0RR0WW0<3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0c\
+  h0ae0Zb<3>22R<5>569335000000400<2>A00C00C00D00000F00<9>O00<4>zg0<2>rY0oU\
+  0kU2<6>JUF<4>gl6lo5qs3uv2zz0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<10>\
+  G7U
+  }
+
+jo06_02            { ; t=  1:18:04.55 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:10:15
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+1.54894524500705000/+0.18323164348929450/2.03882e+011
+  params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
+  inside=0 logmap=273 symmetry=xaxis periodicity=10
+  colors=000r_FtaDvdByg8yh5yi3yg3<2>ga3<33>301<11>b0Ee0Ff5I<10>zzs<7>fV7cQ\
+  0`O0<2>SI0<6>P60<2>G00<4>0Qc<7>Adc<10>mrnptotupxwrzyt<2>zudzsZyqUyoOynJy\
+  lDxj2wiK<3>vc4ua0ub3<3>vhJviNvjPwkR<2>ypbyqfysiytmzvqzwu<13>wCM<7>H84<12\
+  >hMB<14>H84FB3PG3<6>zk0<3>0kk<2>WgD<3>CXF<2>FWEGVEHUEITEJTDKSDLSDMRCOQBO\
+  RA<2>OK8OH7OE6NB5PC6<7>eLAhMBiOD<3>nVJpXH
+  }
+
+jo06_03            { ; t=  0:26:59.32 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:10:23
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+0.48421237835691310/+0.85671571876294970/2.822814e+012/1/102\
+  .499/-0.001 params=1e-008/800/2e-008/400/100000000/0 float=y
+  maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
+  periodicity=10
+  colors=000C5M83F42763A00G022055<2>2DD2FG3HI4JL5MN<2>8TW<2>KWcOXeSYgWZi__\
+  lc`ngWQlQ0iN0gJ0<2>p80<4>M20<6>kbs<7>000220<6>1KR1NV1QZ1Tb1Wf1Zj0`n0cr<5\
+  >3PZ4NW5KS6IP6FL7DI8AE<2>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47\
+  A149000<3>II0MM0RR0WW0<3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0c\
+  h0ae0Zb<3>22R<5>569335000000400<2>A00C00C00D00000F00<9>O00<4>zg0<2>rY0oU\
+  0kU2<6>JUF<4>gl6lo5qs3uv2zz0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<10>\
+  G7U
+  }
+
+jo06_04            { ; t=  0:23:48.12 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:10:33
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+0.48421237835460350/+0.85671571875166410/1.649247e+012/1/114\
+  .997/0.001 params=1e-008/800/2e-008/400/100000000/0 float=y
+  maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
+  periodicity=10
+  colors=000xBOx7Qx4R<6>W6TS6TO7TK7TG7UC5M83F42763A00G022<6>0MM0P00M24L08T\
+  W<2>KWcOXeSYgWZi__lc`n<3>gJ0<4>T00R00P00<2>A00<4>kbs<7>000220457<5>HKSJN\
+  WMQ_OTcQWg<2>Xcr<14>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47A1490\
+  00<3>II0MM0RR0WW0<3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0ch0ae0\
+  Zb<3>22R<5>569335000000400<2>A00C00C00D00000F00<9>O00<4>zg0<2>rY0<4>0FM<\
+  6>YdAbh8gl6lp5qs3uw2zz0<10>`00<2>jNKmVQpbWtjawqhzyn<2>kljfhhacfX_dRVb<6>\
+  xEN
+  }
+
+jo06_05            { ; t=  0:27:14.30 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:10:43
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+0.48421237835487980/+0.85671571875186660/7.929566e+012/0.999\
+  8/114.991/0.005 params=1e-008/800/2e-008/400/100000000/0 float=y
+  maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
+  periodicity=10
+  colors=0009G4<5>OZ7Ra8Ud9XhAZiA<10>zzF<7>0Uz<13>AMOBLLCKK<11>MC7NB5PC6<7\
+  >eLAhMBiODjQF<7>xu7zz5zz4zz3<14>zE6<19>000000<12>b0Ee0Ff5I<10>zzs<7>fV7c\
+  Q0`O0<2>SI0<6>P60<2>G00<2>7FO<10>GUcHWeJYf<8>booeqpgqq<3>ouuqvvqrv<5>qUy\
+  rPzpOy<8>Z8nX6lXDj<2>X_a<4>zz0<7>z90<12>G30C209206103100003516B2
+  }
+
+jo06_06            { ; t=  0:23:54.87 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:10:52
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+0.48421237835452590/+0.85671571875109320/9.589534e+012/1/114\
+  .999/0.003 params=1e-008/800/2e-008/400/100000000/0 float=y
+  maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
+  periodicity=10
+  colors=000cU4<2>zp2<9>_iGXhIXgH<7>P`GRaF<9>OE6NB5PC6<7>eLAhMBiODjQF<7>xu\
+  7zz5zz4zz3<14>zE6<19>000000<12>b0Ee0Ff5I<2>lLS<6>xt4zz0zzIyy_xxq<2>ioZdl\
+  SajO<5>IY0<8>E87D58B9E<3>1Rc<5>8bcAdcDed<11>tupxwrzyt<30>Bwu<13>wCM<11>7\
+  73<7>NPAQSBQRB<4>LJ9KH9JF8JE7<5>H84OF4WN4
+  }
+
+jo06_07            { ; t=  0:20:49.11 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:11:00
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+1.00005032900213700/+0.00791439171380570/1.677787e+011/1/174\
+  .999 params=1e-008/800/2e-008/400/197520000/0 float=y maxiter=1200
+  bailout=25 inside=0 logmap=42 symmetry=none periodicity=10
+  colors=000bY3<29>301<11>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4\
+  >0Qc<7>Adc<10>mrnptotupxwrzyt<2>zudzsZyqUyoOynJylDxj2wiK<3>vc4ua0ub3<3>v\
+  hJviNvjPwkR<2>ypbyqfysiytmzvqzwu<13>wCM<7>H84<12>hMB<14>H84FB3PG3<6>zk0<\
+  3>0kk<2>WgD<3>CXF<2>FWEGVEHUEITEJTDKSDLSDMRCOQBORA<2>OK8OH7OE6NB5PC6<7>e\
+  LAhMBiOD<3>nVJ<3>vdByg8yh5yi3yg3<2>ga3<2>cZ3
+  }
+
+jo06_08            { ; t=  1:23:22.72 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:11:19
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+1.54894524500359000/+0.18323164348628370/8.358962e+011
+  params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
+  inside=0 logmap=273 symmetry=xaxis periodicity=10
+  colors=000000<10>0J00L00N00P02Q44S8<13>`oz<7>JaWG`SEZOBXK9WG<2>2Q40P00N0\
+  <13>010000000<9>00G00I00K00M00N00P<15>0zz<15>00P<14>001000000<9>G00I00K0\
+  0M00N00P00<15>zz0<7>i`MgYPeVSbRV`OXZL_XHbVEeSBh<14>7Ow5Px5Nt<6>3CV2BR29N\
+  17J16F<2>013000000700<23>W0CX0CY0DZ0E<2>a0F<15>700
+  }
+
+jo06_09            { ; t=  1:21:33.37 
+                     ; on a P233MMX at 1600x1200  Jun 12, 1999  23:11:28
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=1
+  center-mag=+1.54894524500060400/+0.18323164348882140/1.499139e+012/0.999\
+  9 params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
+  inside=0 logmap=273 symmetry=xaxis periodicity=10
+  colors=000r_FtaDvdByg8yh5yi3yg3<2>ga3<33>301<11>b0Ee0Ff5I<10>zzs<7>fV7cQ\
+  0`O0<2>SI0<6>P60<2>G00<4>0Qc<7>Adc<7>bnkepliqmmsnptotupxwrzyt<2>zudzsZyq\
+  UyoOynJylDxj2wiK<3>vc4ua0ub3<3>vhJviNvjPwkR<2>ypbyqfysiytmzvqzwu<4>yfhyc\
+  ex_cxXa<5>wCM<7>H84<12>hMB<14>H84FB3PG3<6>zk0<3>0kk<2>WgD<3>CXF<2>FWEGVE\
+  HUEITEJTDKSDLSDMRCOQBORA<2>OK8OH7OE6NB5PC6<7>eLAhMBiOD<3>nVJpXH
+  }
+
+;========================================================================;
+;From: Morgan L. Owens <packrat@nznet.gen.nz>
+;To: <fractint@lists.xmission.com>
+;Subject: Re: (fractint) ;Date: Sat, 19 Jun 1999 22:16:34 EEST 
+;Date: 20 June 1999 06:08
+
+Saturn             { ; Photo taken by the Cassini probe in 2006
+                     ; Copyright (c) 1999 Morgan L. Owens
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonJul
+  center-mag=0/-0.0500391/0.6666667/1/90 params=2/0.01/8/0 float=y
+  maxiter=1023 inside=255 periodicity=0
+  colors=000975<26>xn_<31>222000000<56>000111333<33>zzz<31>222000000<61>00\
+  0111332543764
+  }
+Uranus             { ; Photo taken by some probe some time in the future.
+                     ; Copyright (c) 1999 Morgan L. Owens
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonJul
+  center-mag=0/0.125/0.75/1/-70 params=5/1e-005/8/0 float=y
+  maxiter=1023 inside=255 potential=255/1000/0 periodicity=0 passes=b
+  colors=000<18>448559558<8>667777888<26>EEEFFFFFFFFGFFH<12>IIUIIVIIU<5>KK\
+  QKKPKKPKKP<27>SSTSSTSSTSSTSSTSSU<68>hhuiiviiu<16>kjpkjpjio<43>CFI000
+  }
+
+;========================================================================;
+;From: davides <davides@pipeline.com>
+;To: <fractint@lists.xmission.com>
+;Subject: (fractint) 3 julia pars
+;Date: 27 June 1999 02:21
+
+New_Dimension300   { ;  (c) David Shanholtzer Jun 26, 1999 t=0:00:17.47
+                     ;  P200 MMX 1024x768
+                     ; Another julia
+  reset=1960 type=julia passes=t
+  center-mag=-2.77556e-016/2.22045e-016/0.8130081/1/0/42.197
+  params=0.3699901320299772/0.3148632294132985 float=y maxiter=7500
+  inside=maxiter
+  colors=000<26>005K0K<34>lbumdwmdw<38>H3V000F1TE0SA20<10>yhW<22>A20111222\
+  UUY<29>xxvzzwyyv000<20>111MC7<6>yhW<14>A20000<31>0bi orbitdelay=2
+  }
+
+ 
+New_Dimension303   { ;  (c) David Shanholtzer Jun 26, 1999 t=  0:05:36.14
+                     ;  P200 MMX 1024x768
+                     ; A dusty rose julia spiral
+  reset=1960 type=julia passes=t
+  center-mag=0.163363/0.484302/5.978001/1/0/42.197
+  params=0.3699901320299772/0.3148632294132985 float=y maxiter=7500
+  inside=maxiter decomp=200
+  colors=000YC`<5>lLq<30>G1IE0GF0G<29>jAglBhlBh<31>H1J71DF1HE0G<2>G0IH1JJ1\
+  K<23>mAmK00<39>w65w65v65<68>E0G<6>VAZ orbitdelay=2
+  }
+
+New_Dimension304   { ;  (c) David Shanholtzer Jun 26, 1999 t=  0:06:47.11
+                     ;  P200 MMX 1024x768
+  reset=1960 type=julia passes=t
+  center-mag=0.210974/0.415816/6.441811/1/0/42.196
+  params=0.3699901320299772/0.3148632294132985 float=y maxiter=7500
+  inside=maxiter decomp=200
+  colors=000YC`<5>lLq<30>G1IE0GF0G<29>jAglBhlBh<31>H1J71DF1HE0G<2>G0IH1JJ1\
+  K<23>mAmK00<39>w65w65v65<68>E0G<6>VAZ
+  }
+
+;========================================================================;
+;From: JoWeber <JoWeber@compuserve.com>
+;To: INTERNET:fractint@lists. <fractint@lists.xmission.com>
+;Subject: (fractint) some new pars
+;Date: 29 June 1999 10:00
+
+jo06_10            { ; t=  0:16:21.85 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:41:45
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=ident passes=t
+  center-mag=-0.00111153314375495/-0.00160009875538247/1.192666e+009/1/-22\
+  .498 params=-500/-500/-1.1/-1/0/0 float=y maxiter=7200 bailout=25
+  inside=0 logmap=129 symmetry=none periodicity=10
+  colors=000I84G73D52<5>M82O92QA2SB1UC1<2>ZE1<11>wqJzuLztL<18>mSClRCjQB<21\
+  >H21F00G01<3>K08L09K19<3>F6AD8BC9BAAC9BC<2>5FD3HE4IF<7>FSPHTRIUSJWTKXVMY\
+  W<2>Qa_SbaUdbWedYge<11>uxxwzzwzz<10>nurmtrmsqlsqlsp<13>`kh_jgZjfYieYhe<4\
+  >TeaTd`Sc_RbZQbZPaY<5>JXTIWSJXS<12>bkbdlcfmdhoeipf<10>xylzzmzzl<6>zxazw`\
+  zwZzvYzvW<2>zuSztQzsQ<3>wmMvkLuiKugJtfI<4>pZGoXGoWGnUGmTGlRF<11>LA5
+  }
+
+jo06_11            { ; t=  3:53:44.73 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:41:56
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Mandelbrotmix4 function=recip passes=t
+  center-mag=-0.13170690815019950/+0.32310468642354880/4.920796e+007/1/-17\
+  5 params=1/-1/-1/1/0.03/10000 float=y maxiter=21000 bailout=25
+  inside=0 logmap=530 symmetry=yaxis periodicity=10
+  colors=000C5M83F42763A00G022055<2>2DD2FG3HI4JL5MN<2>8TW<2>KWcOXeSYgWZi__\
+  lc`ngWQlQ0iN0gJ0<2>p80<4>M20<6>kbs<7>000220<6>1KR1NV1QZ1Tb1Wf1Zj0`n0cr<5\
+  >3PZ4NW5KS6IP6FL7DI8AE<2>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47\
+  A149000<3>II0MM0RR0WW0<3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0c\
+  h0ae0Zb<3>22R<5>569335000000400<2>A00C00C00D00000F00<9>O00<4>zg0<2>rY0oU\
+  0kU2<6>JUF<4>gl6lo5qs3uv2zz0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<10>\
+  G7U
+  }
+
+jo06_12            { ; t=  1:57:14.53 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:42:07
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=mandelbrotmin passes=1
+  center-mag=-0.31779604786148090/+0.77644011515230850/2678.081/1/117.499
+  params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
+  logmap=65 symmetry=none periodicity=10
+  colors=000<4>0DD0GG0JJ0MM2OO4PR6RT8TW<2>KWcOXeSYgWZi__lc`ngWQlQ0iN0gJ0<2\
+  >p80<2>W20P00K00<3>000023057<4>OKS<3>000220457<5>HKSJNWMQ_OTcQWg<2>Xcr<1\
+  4>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47A149000<3>II0MM0RR0WW0<\
+  3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0ch0ae0Zb<3>22R<5>5693350\
+  00000400<2>A00C00C00D00000F00<9>O00<4>zg0<3>oU0<2>0CI0FM<8>gl6lp5qs3uw2z\
+  z0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<6>W6TS6TO7TK7TG7UC5M83F42763A\
+  00G
+  }
+
+jo06_13            { ; t=  1:25:10.00 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:42:17
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=mandelbrotmin passes=1
+  center-mag=-0.31944275114657080/+0.77742893113940280/1260.274/1/142.497
+  params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
+  logmap=65 symmetry=none periodicity=10
+  colors=000<4>0DD0GG0JJ0MM2OO4PR6RT8TW<2>KWcOXeSYgWZi__lc`ngWQlQ0iN0gJ0<2\
+  >p80<2>W20P00K00<3>000023057<4>OKS<3>000220457<5>HKSJNWMQ_OTcQWg<2>Xcr<1\
+  4>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47A149000<3>II0MM0RR0WW0<\
+  3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0ch0ae0Zb<3>22R<5>5693350\
+  00000400<2>A00C00C00D00000F00<9>O00<4>zg0<3>oU0<2>0CI0FM<8>gl6lp5qs3uw2z\
+  z0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<6>W6TS6TO7TK7TG7UC5M83F42763A\
+  00G
+  }
+
+jo06_14            { ; t=  4:39:42.11 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:42:28
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=mandelbrotmin passes=t
+  center-mag=-0.31796938224885470/+0.77353569174380330/824.025/1/117.497
+  params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
+  logmap=65 symmetry=none periodicity=10
+  colors=000<4>0DD0GG0JJ0MM2OO4PR6RT8TW<2>KWcOXeSYgWZi__lc`ngWQlQ0iN0gJ0<2\
+  >p80<2>W20P00K00<3>000023057<4>OKS<3>000220457<5>HKSJNWMQ_OTcQWg<2>Xcr<1\
+  4>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47A149000<3>II0MM0RR0WW0<\
+  3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0ch0ae0Zb<3>22R<5>5693350\
+  00000400<2>A00C00C00D00000F00<9>O00<4>zg0<3>oU0<2>0CI0FM<8>gl6lp5qs3uw2z\
+  z0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<6>W6TS6TO7TK7TG7UC5M83F42763A\
+  00G
+  }
+
+jo06_15            { ; t=  0:58:13.80 
+                     ; on a P233MMX at 1600x1200  Jun 28, 1999  15:42:39
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=obliquemanplus passes=t
+  center-mag=+1.33093052529746200/-0.33953092795716030/203.8353/1/64.999
+  params=0/0/-0.5/0.527/0.018756/0.024873 float=y maxiter=32500
+  bailout=25 inside=0 logmap=76 logmode=fly symmetry=none
+  periodicity=10
+  colors=000<4>0DD0GG0JJ0MM2OO4PR6RT8TW<2>KWcOXeSYgWZi__lc`ngWQlQ0iN0gJ0<2\
+  >p80<2>W20P00K00<3>000023057<4>OKS<3>000220457<5>HKSJNWMQ_OTcQWg<2>Xcr<1\
+  4>23300000500A<5>08E<7>NW5Q_3Tb2We0Tb1<7>9E96AB47A149000<3>II0MM0RR0WW0<\
+  3>hhMlkSooYsrcvvhzynwtosop<8>NhlJgkFgkBfj8ej4di0ch0ae0Zb<3>22R<5>5693350\
+  00000400<2>A00C00C00D00000F00<9>O00<4>zg0<3>oU0<2>0CI0FM<8>gl6lp5qs3uw2z\
+  z0<10>`00<2>jNKmVQpbWtjawqhzyn<8>yUF<7>x4R<6>W6TS6TO7TK7TG7UC5M83F42763A\
+  00G
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

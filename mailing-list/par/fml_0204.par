@@ -1,0 +1,79 @@
+; fml_0204.par, a collection of pars posted to the
+; Fractint mail list during April 2002
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Sun, 07 Apr 2002 11:24:28 +0200
+;Subject: [Fractint] OT: Group Theory
+
+deepzoom          { ;  Version 2002 Patchlevel 3
+reset=2002 type=mandel
+center-mag=-1.36798930473048630828494135783344992878081146935429233238/-\
+0.007343693441848201885859050263450932145948143782969230191/2.193722e+05\
+2 params=0/0 float=y maxiter=150000 inside=0 logmap=29649
+viewwindows=1/0.75/yes/0/0
+colors=000zI0<2>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31\
+L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0v\
+X<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o\
+05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG\
+0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2\
+e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0F\
+G0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<5>zN0
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Thu, 25 Apr 2002 00:17:28 +0200
+;Subject: [Fractint] test
+
+watch1             { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multi011 passes=1
+center-mag=4.44089e-016/0/0.6186667/1/-15.0000000000000142/-1.2337353361\
+1470521e-014 params=-11.0001/0 float=y maxiter=3800 inside=bof61
+outside=mult logmap=yes decomp=64 periodicity=10
+colors=000<3>90AB0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt\
+0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21\
+F<2>31L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0t\
+X0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h\
+08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M\
+0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<\
+3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<2>0H90F80C70A6085<2>000
+}
+
+list1              { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multi010 function=asinh
+center-mag=+0.15247172667693040/+0.95204983597001340/2.48062e+008
+params=2/0 float=y maxiter=4000 inside=0 logmap=yes periodicity=0
+colors=0001oZ<2>0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0FG\
+0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<3>zZ0zT0zN0<3>z\
+00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31L31O42Q42T42V<3>6\
+3d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>\
+9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0\
+zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0I<3>708506303000\
+<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2e`1g`1i`1k_1m_
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Mary Benkers)
+;Date: Fri, 26 Apr 2002 20:53:31 +0200
+;Subject: [Fractint] new person on the list
+
+mandelischia_coli      { ; some strange bacteria?
+reset=1910 type=mandel passes=1
+corners=-1.8605739577489129/-1.860573957723912/-9.3407929358274632e-007/\
+-9.340605428307932e-007 params=0/0 float=y
+maxiter=1500 inside=0
+distest=1/71/1280/1024
+colors=000uux<2>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00\
+<15>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C`ADaBEc<42>ttw
+}
+
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

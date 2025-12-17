@@ -1,0 +1,4273 @@
+; fml_9801.par, a collection of pars posted to the Fractint mail list
+; during January 1998
+; compiled by Les St Clair <les_stclair@compuserve.com>
+
+;========================================================================;
+; Date: Thu, 01 Jan 1998 07:42:48 -0500
+; From: davides <davides@pipeline.com>
+; Subject: Re: (fractint)  Museum of   Computer Art
+
+don't_know_yet     { ; (c) 1997 David Shanholtzer
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Dragon
+  center-mag=-0.488759/0.0959558/4.08559/1.2086 float=y maxiter=75
+  bailout=2000 inside=zmag outside=summ decomp=255
+  colors=00UW45<24>ofmphopho<27>gJvfIvfIvfIv<192>aFtU00U11V33
+  }
+
+;========================================================================;
+; Date: Thu, 01 Jan 1998 08:44:21 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Champagne Swirl
+
+champagnezz        { ; (c) wizzle 1997 - 2creams.map (new)
+  reset=1950 type=formula formulafile=frac_ml.frm formulaname=Quad
+  center-mag=0.0975136/-0.0313222/3.205116/1.284 maxiter=100
+  bailout=12123 inside=bof60 decomp=256 periodicity=-256
+  colors=bM9<7>ZF0P50<52>uuwvvyvvy<70>P50ZFCZF0<59>vtowupwuqwuq<4>yyvzzwzz\
+  v<47>cNA cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Thu, 1 Jan 1998 14:55:06 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) Gallet at MOCA
+
+3db_ph01    { ; Champagne et Cotillons               t=  0:18:39.49
+              ; Copyright Sylvie Gallet, Jan 01, 1998
+              ; <sylvie_gallet@compuserve.com>
+              ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=3d_balls_phoenix passes=1
+  center-mag=-0.22619209657076480/-0.63951552370475690/1039\
+  .243/1/-32.5
+  params=0.002/0/7/32/0.5663/0 float=y maxiter=511 inside=0
+  outside=summ symmetry=none periodicity=0
+  colors=zzz000<12>LFONGQPISRKT<14>uuu000<13>8HR9JTBLU<14>q\
+  rw000<13>ARRBTTDVV<14>uxx000<13>FSGHVIJWK<14>rwr000<13>VP\
+  6YR7ZSA<14>uuu000<11>VG2YI2`J2cL3dN6<14>ztt101<12>PDFREGT\
+  FIVHK<14>zuz000<29>112 cyclerange=1/224
+  }
+
+;========================================================================;
+; Date: 01 Jan 1998 13:18:50 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: SECRETS of the par and frm  was Re: (fractint) Binary decomp...?*
+
+j_decomp           { ; Binary decomp (c) Jay Hill 1997
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=j-decomp center-mag=-0.5/5.5e-008/0.6666667
+  float=y maxiter=256 inside=0 outside=real periodicity=0
+  colors=000ww000wm00<249>0m0000000
+  }
+
+;========================================================================;
+; Date: 01 Jan 1998 17:46:29 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: SECRETS of the par and frm  was Re: (fractint) Binary decomp...?*
+
+j_decomp-2         { 
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=j-decomp
+  center-mag=-0.739812/-0.0301508/0.6666667 float=y maxiter=255
+  inside=0 outside=real periodicity=0 colors=000ww000wwc0<251>000
+  }
+
+;========================================================================;
+; Date: 01 Jan 1998 17:42:14 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: Re: (fractint) Moving Sideways
+
+goldspir           { ; variation on Paul's Par w. gldsil-1.map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=3D_Phoenix_Spirals
+  corners=0.87401187/0.63361975/0.24360162/0.55259362/0.63361975/0.5525936\
+  2 params=0.5629999999999999/0/1/125 float=y maxiter=322 inside=255
+  outside=summ
+  colors=000UKA<30>vubwwcwvc<33>VMBUKAVLC<21>uutwwwwww<50>KKT000<108>000
+  }
+
+silverphen         { ; variation on Paul's Par w. 1silver.map (new)
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=3D_Phoenix_Spirals
+  corners=0.81578992/0.42247792/-0.262208/0.262208/0.42247792/0.262208
+  params=0.5629999/0/2/125 float=y maxiter=322 inside=255 outside=summ
+  colors=000ABG<44>luxmwzmvy<38>BCHAAFBCG<24>mzz<32>EFKDDICCHAAFAAFAAFABF<\
+  52>yyyzzzyyy<46>AAF
+  }
+
+candybubbles       { ; var on Sylvie's Par w. deeps7.map (new)
+                     ; by wizzle jan 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=3D_Balls_Phoenix
+  center-mag=0.628607/-0.442347/64.19619/0.9559/180
+  params=0.002/0/7/32/0.5663/0 float=y maxiter=511 inside=0
+  outside=summ symmetry=none periodicity=0
+  colors=000KKG<4>0000700F0<13>0zm<13>080040000<15>z0z<14>40400K<15>zzz<14\
+  >44N<2>4A45D5<13>QvjSzmRwj<14>C00<15>zzm<15>0CC<12>0zz<11>0GG00G<3>000<1\
+  5>zzm<9>OOJ0CC<2>000<15>00z<10>00K cyclerange=1/224
+  }
+
+;========================================================================;
+; Date: Thu, 1 Jan 1998 21:16:48 -0500
+; From: Les St Clair <Les_StClair@compuserve.com>
+; Subject: Re: (fractint) Happy New Year!
+
+9707A11.GIF        { ; "The Chase"
+                     ;                                      t=  0:08:39.70
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c)1997 by Les St Clair <les_stclair@compuserve.com>
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=acc_man_mod function=cabs/exp passes=1
+  center-mag=-1.60782/-0.00607963/2.224486 params=0.6/0/0.111/0
+  float=y maxiter=300 inside=zmag decomp=256 periodicity=0
+  colors=CC9<7>7CG6DH6DH6DI<15>AITBJTBJUCKUCKVDLVDLW<4>MSaNTbPVdRXe<5>aemc\
+  gocgo<13>pppqqqppq<53>00A00A11B<42>ffiggjiik<14>wwwxxxxwv<10>yrWyqUypSyo\
+  QynNymLzlI<4>yjDxiCxhBxg9xg8<3>wc4vc3vb2ua0t`0<11>eN0dM0cL0aJ0`J0_J0<12>\
+  ID2GC3GC3<5>CC8 cyclerange=0/255
+  }
+ 
+9708B02.GIF        { ; "Abstract Art"
+                     ;                                      t=  0:01:10.75
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c)1997 by Les St Clair <les_stclair@compuserve.com>
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=lesfrm34 function=tan/tan/atanh passes=1
+  center-mag=-0.0433953/-0.0601106/0.8637208/1/44.999
+  params=1000/0/50/0/50/0 float=y decomp=256
+  colors=oIP<27>E57D56E56<30>`00000<46>000SNF<14>zpastthhh<8>rsstuuuvvwxxx\
+  yyyzz<14>UPISNFSNF<46>zpa<11>bK4<23>vUDwUDwTF<6>uLQuKRtKR<2>pJP
+  cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Thu, 01 Jan 1998 19:22:04 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Binary Decompression
+
+decomp_mset        { ; Paul Carlson
+                     ; Reproduces the image on page 74 in
+                     ; _The Beauty of Fractals_.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=trydecomp
+  center-mag=-0.714727/-1.7e-006/0.8130071 params=10/0 float=y
+  maxiter=256 inside=0 outside=summ colors=000zzz000<252>000
+  }
+
+;========================================================================;
+; Date: Fri, 2 Jan 1998 07:35:51 -0500
+; From: Les St Clair <Les_StClair@compuserve.com>
+; Subject: (fractint) Single-handed spammer!
+
+9606A06.GIF        { ; "Paul's Trip ?" [cycle this!!]
+                     ;                                      t=  0:08:58.33
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c)1998 by Les St Clair <les_stclair@compuserve.com>
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=lesfrm13 function=log/sqr passes=1
+  center-mag=0.086277/0.0046945/0.1662784/1/34.999
+  params=5/2.2/-3.41/4 float=y maxiter=1000 inside=zmag outside=atan
+  colors=011<13>BGJFJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<3>X1\
+  2W13V24U25U36<2>R38Q49P49O5AN5BM6C<7>000<23>0xz<15>077<30>1Te1Uf000<31>0\
+  00 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Fri, 2 Jan 1998 16:26:23 -0000
+; From: "Bagpuss" <bagpuss@iol.ie>
+; Subject: (fractint) 3DBalls question
+
+WonkasSpiralTunnel { ; Frm (c) Paul W. Carlson, 1997
+                     ; Par Stephen Stafford, 1998
+                     ; 7:11.22 with view set to 2.5
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=3d_balls_mset passes=t
+  corners=-0.546377030934/-0.546319375487/0.488457378269/0.488519665736
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<25>EEuEEwFFxGGzI0K\
+  <28>fOzO08<28>z0fO00<28>z88000<13>000
+  }
+
+;========================================================================;
+; Date: Fri, 2 Jan 1998 17:00:02 -0000
+; From: "Bagpuss" <bagpuss@iol.ie>
+; Subject: Re: (fractint) 3DBalls question
+
+
+tunnel2            {
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=3d_balls_mset passes=t
+  center-mag=-0.54634820321063100/+0.48848852200283140/32109.19/1.4405
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=zzzNvz000Ltz<24>2Xz100000Pjz000Ngz<25>12z00z000000zjt<8>zWmzUlzSl\
+  zRl<14>z0_000000zjj<26>z00zzb000yy_<23>ll5ll3kk2jj0hzf000fxc<26>Kb0bzr00\
+  0_zp<26>0zKbzz000_yy<26>0rrzzz<13>zzz
+  }
+
+;========================================================================;
+; Date: Fri, 02 Jan 1998 10:53:07 -0600
+; From: "Damien M. Jones" <dmj@fractalus.com>
+; Subject: Re: (fractint) Single-handed spammer!
+
+RandomExploration  {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Hyp-2Dec passes=2
+  center-mag=-0.74696057451907470/-0.09822627122602220/3838.689
+  params=-0.75/0/15/0/0/0 float=y maxiter=1000 inside=0 outside=real
+  decomp=256 periodicity=0
+  colors=000100<13>RT0TV0XX0<9>op0<4>zzcxyU<2>ps0<10>XY0VW0SU0<13>12000001\
+  01212514625836A37D49E5<11>QbCRdDSfDThEVjF<2>ZpGdrPitYpvguxpzzzvyq<3>_qHZ\
+  oHYmGXkFUiF<5>NYBMWAKUAIS9<4>CI6BG58D5<5>121000010<3>0930B30D40F40H6<17>\
+  0pH4rK8tMCvMGxPKzPGyOCwM<2>0qI<11>0U90S90Q80O80M6<3>0E40C40A2<3>02000000\
+  1<13>20T20V40X<9>60p<4>UVzOOyKIwECuB6s50q<3>40i40g30e20c<6>20Q20O10M00K<\
+  8>002 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Fri, 02 Jan 1998 10:31:22 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: Re: (fractint) 3DBalls question
+
+WonkaWizzle        { ; Par Stephen Stafford, 1998 wizzle deep10.map
+                     ; Frm (c) Paul W. Carlson, 1997
+                     ; 7:11.22 with view set to 2.5
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=3d_balls_mset
+  corners=-0.546377030934/-0.546319375487/0.488457378269/0.488519665736
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000Kbc<2>PRT<9>33B00900A<11>00P<7>cru<15>0UU<3>NdZ<4>KA0<8>zzm<12\
+  >A00A03A06A0A<3>K5IN6KO7N<8>cKm<9>A0K<10>`rrcwvfzz<15>0IE3KH6NK<14>12k00\
+  m00l<11>34Q00N<15>znZ<13>S87L97EA7<2>D5IC4MB2QA0UE3X<8>mUw<10>A0K<18>Cww\
+  <4>Jef
+  }
+
+;========================================================================;
+; Date: Fri, 02 Jan 1998 17:56:02 -0500
+; From: Dick Amerman <ramerman@erols.com>
+; Subject: Re: (fractint) Happy New Year!
+
+ConvergenceII      { ; Found while learning how to reproduce Caren Park's
+                     ; ornatecbclogo - I set decomp to 128, not inverted.
+                     ; uses OK! color map
+  reset=1920 type=mandelfn function=ident
+  corners=-9.076954/2.797033/-2.850051/6.05544 params=0/0 float=y
+  maxiter=32767 bailout=2500 outside=real logmap=yes decomp=128
+  finattract=y
+  colors=00000z<14>000<16>z0X<15>000<15>p0w<15>000<15>zzz\
+  <15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000\
+  <15>ut0<15>000GA4<12>2v10z00w0<14>\
+  000<14>00v
+  }
+
+;========================================================================;
+; Date: Fri, 02 Jan 1998 18:44:54 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) From Paul Carlson
+
+whimsical          { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=3D_Phoenix_Spirals passes=t
+  corners=0.5762403157945/0.5762421404185/0.786099693384/0.786101061852
+  params=0.563/0/2/125 float=y maxiter=300 inside=253
+  outside=summ colors=000n_z<123>I0Kjzb<123>4E0000<3>000
+  }
+
+;========================================================================;
+; Date: Fri, 2 Jan 1998 09:31:16 +1100
+; From: "B Michie" <michie@acenet.com.au>
+; Subject: (fractint) entering formulas
+
+elegance           { ; by Angela 1997 using deeps7.map
+  reset=1950 type=formula formulafile=frac_ml.frm formulaname=BESSEL-2
+  center-mag=-8.88178e-016/6.66134e-016/1.041667/1/90 float=y
+  inside=bof60 periodicity=0
+  colors=00000S<6>000<15>zzm<15>0000700F0<13>0zm<13>080040000<15>z0z<14>40\
+  400K<15>zzz<14>44N<2>4A45D5<13>QvjSzmRwj<14>C00<15>zzm<15>0CC<12>0zz<15>\
+  000<15>00z<7>00W
+  }
+
+;========================================================================;
+; Date: Sat, 3 Jan 1998 03:54:39 -0500 (EST)
+; From: ao950@freenet.carleton.ca (Paul Derbyshire)
+; Subject: Re: (fractint) Formula Questions
+
+Freaky_weird       {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Vector2J-z center-mag=0/0/0.6666667
+  params=-0.5/0.01532/0/0/400/0 float=y maxiter=2000 inside=0
+  logmap=yes
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+;========================================================================;
+; Date: Sat, 3 Jan 1998 04:17:03 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) 3D_Balls_Julia
+
+balloops           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3D_Balls_Julia
+  passes=t corners=2.4395828/3.2229162/2.322917/2.910417
+  params=-1.28333/0.049167/0.2/2/2/125 float=y maxiter=500
+  inside=253 outside=summ
+  colors=000O00<44>y77z88y88<30>O0000O<44>GGzWRF<45>zqazqay\
+  p`<29>WRF00O<45>GGz000<2>000
+  }
+
+;========================================================================;
+; Date: Sat, 03 Jan 1998 22:42:41 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) Re: Sorry...
+
+Roy_Batty          { ; "I have seen things you people wouldn't believe..."
+  reset=1950 type=formula formulafile=frac_ml.frm formulaname=ikeda
+  passes=b center-mag=0/0/0.6666667 params=0.4/2/6/1 float=y
+  maxiter=1023 inside=255 outside=atan
+  colors=000900<7>E00F00F00F00<61>h4009z<30>0xz0zz2zz<25>zzz<27>3Fn0Dm0Bo<\
+  4>02x00z00z<31>W0zW0yV0w<32>102000000<14>090
+  }
+
+;========================================================================;
+; Date: Sat, 03 Jan 1998 16:26:55 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) A Football with Pizzaz
+
+footballpizzaz     { ; better than the goodyear blimp
+                     ; by wizzle
+                     ; uses special2 color map
+  reset=1960 type=mandelfn function=ident
+  corners=-0.578816/0.578816/-0.8022163/0.8022163 params=0/0 float=y
+  maxiter=32767 bailout=2500 inside=bof60 outside=real logmap=yes
+  invert=0.5/0/0 decomp=128 finattract=y
+  colors=000<26>000z00z00000<78>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLz\
+  zzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>\
+  0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>\
+  zzh<3>hzh<3>hzz<2>hlz000<41>000
+  }
+
+;========================================================================;
+; Date: Sat, 3 Jan 1998 21:29:23 -0800
+To: <fractint@lists.xmission.com>
+; Subject: (fractint) Field lines, binary and Trinary decomposition
+
+j_decomp-03       { ; Trinary decomp (c) Jay Hill 1997
+                    ; Red - Blue boundary leads to -.75
+                    ; Blue - White boundary leads to +i.
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=j-decomp3 center-mag=-0.5/0/0.5 float=y maxiter=256
+  inside=0 outside=real periodicity=0
+  colors=000ccc00cc00cK0wwwU10U1UUU0U1wKUAUAKU10<2>U20j30<236>0m0000000
+  }
+ 
+j_decomp-07       { ; 7-ary decomp (c) Jay Hill 1997
+                    ; White and gray lead to period 3
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=j-decomp7 center-mag=-0.5/0/0.5 float=y maxiter=256
+  inside=0 outside=real periodicity=0
+  colors=000ccc00cc00cK0wwwU10U1UUU0U1wKUAUAKU10<2>U20j30<236>0m0000000
+  }
+ 
+j_decomp-15       { ; 15-ary decomp (c) Jay Hill 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=j-decomp15 center-mag=-0.5/0/0.5 float=y maxiter=256
+  inside=0 outside=real periodicity=0
+  colors=0AKKKK00zK00000KAUK1AU1KKK0z0zwwwKAAAKUUKKKAKUA0j30<236>0m0000000
+  }
+ 
+j_decomp-31       { ; 31-ary decomp (c) Jay Hill 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=j-decomp31 center-mag=-0.5/0/0.5 float=y maxiter=256
+  inside=0 outside=real periodicity=0
+  colors=0AKkVzMMMdVPwcSKKKcUIwwFKmDKwAhhh<4>wwwU0AAAU6DX<3>KcwKEa<3>WMkZO\
+  naQqdStgUwg60<220>0m0000000
+  }
+ 
+j_decomp-63        { ; 63-ary decomp (c) Jay Hill 1997
+  reset=1960 type=formula formulafile=frac_ml.frm  formulaname=j-decomp63
+  center-mag=-0.5/0/0.5 float=y maxiter=2560 inside=0 outside=real
+  periodicity=0
+  colors=0AK<7>www9CU<5>FT`ACO<14>VJwWKA<6>wM8000<22>zU0U00<188>0U0000000
+  }
+
+;========================================================================;
+; Date: Sun, 4 Jan 1998 07:00:52 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) PokornyConesJulia
+
+pkcones1           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=PokornyConesJulia passes=1
+  corners=0.32024997/1.1275833/-0.28875/0.31675
+  params=-1.721302083333/0.010600585938/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+ 
+pkcones2           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=PokornyConesJulia passes=1
+  corners=0.55438357/0.91451157/0.2032067/0.4733027
+  params=-1.550794271/0.023072917/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+
+;========================================================================;
+; Date: Sun, 4 Jan 1998 16:08:32 EST
+; From: RBarn0001 <RBarn0001@aol.com>
+; Subject: Re: (fractint) Web Page Update
+
+WhirlPool          { ; .                                     t=  0:02:25.72
+                     ; Copyright Ron Barnett [70153,1233], Jan 1998
+                     ; On a Cyrix 6x86(P200+) at 1024 x 768
+  reset=1960 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=-0.99999412050000000/-0.00000169056482000/24813.85/0.8904/-39\
+  .999 params=0/0/0.15 float=y maxiter=999 bailout=100 inside=0
+  periodicity=0
+  colors=0000dL<7>0zW<7>0JJ<14>0xx0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8\
+  >px9<5>KMGFGIBBM<14>WWz<7>J9J<15>zWz<7>J09<15>z0W<7>J90<15>zW0<7>JJ0<15>\
+  zz0<7>99J<15>WWz<7>0J9<6>0bJ
+  }
+
+;========================================================================;
+; Date: Sun, 4 Jan 1998 14:16:48 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Watch out! was Re: (fractint) Web Page Update
+
+Jaws               { ; Variation by Jay Hill, 1998
+                     ; after Ron Barnett, 1998
+  reset=1960 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=-0.19270038748862370/+0.67895009630401400/29.75496/0.9645/-5.\
+  657/6.412 params=0/0/0.15 float=y maxiter=999 bailout=100 inside=0
+  periodicity=0
+  colors=0000dL<7>0zW<7>0JJ<12>0rr0uu0xx0zz2tt4nm<5>JE9<15>yjU<7>BJF<15>_z\
+  n<6>LO3<8>px9<5>KMGFGIBBM<14>WWz<7>J9J<15>zWz<7>J09<15>z0W<7>J90<15>zW0<\
+  7>JJ0<15>zz0<7>99J<15>WWz<7>0J9<6>0bJ
+  savename=Jaws
+  }
+
+;========================================================================;
+; Date: Mon, 05 Jan 1998 19:12:43 -0500
+; From: davides <davides@pipeline.com>
+; Subject: (fractint) Par
+
+Jade               { ; Copyright (c) David Shanholtzer, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Newton_elliptic center-mag=0/0/0.6666667
+  params=1/0/0.0005/0 float=y maxiter=1000 inside=maxiter outside=summ
+  colors=000<15>0000FF<14>www<15>0FF000<30>000zzz<13>mRE<14>rpqsrtsqr<14>e\
+  TA<15>kjl<15>0Eo<15>mmw<15>j0`<15>mmw<31>mmw<15>m0D
+  }
+
+;========================================================================;
+; Date: Mon, 5 Jan 1998 22:38:37 EST
+; From: T R Moe <TRMoe@aol.com>
+; Subject: (fractint) sexist fractals
+
+trm-219            { ; Victoria's Secret?
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=trm-011
+  center-mag=-0.444229/-0.0375587/1.041667/1/90 float=y inside=bof60
+  decomp=256
+  colors=0500cQ<20>0C20A00A0<15>050bVM<2>bVMbVMcXP<3>hfcjigjig<15>f`Ve`Ue_\
+  TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<11>jgdjgdjfciebifbifb<3>ifcifcifb<5\
+  9>kbR0500B00H0090050000000050<34>1H1171161030<16>0mZ<6>0dR
+  }
+
+;========================================================================;
+; Date: Mon, 5 Jan 1998 17:08:05 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) 3D Balls Julia, a par
+
+  sg_3DBJ_01         { ; .                         t= 2:34:01.27
+                     ; Copyright Sylvie Gallet, Jan 05, 1998
+                     ; <sylvie gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3D_Balls_Julia passes=1
+  center-mag=-4.44089e-016/-8.88178e-016/0.3114353/1/-96.438/-5.869
+  params=-0.402/0.8/0.1/5/7/32 float=y maxiter=511 inside=0
+  outside=summ periodicity=0
+  colors=000KKK<14>aaacccdddfffggg<11>zzzKKK<30>zzz05F<14>6Sf7Uh9Vh<13>crr\
+  D00<14>c01e02e12<13>rK5KKK<30>zzzKKK<30>zzzPKF<13>dYNeZOg`PhaQibR<12>zrc\
+  000<29>000 cyclerange=161/224
+  }
+
+;========================================================================;
+; Date: Tue, 06 Jan 1998 19:47:02 -0800
+; From: Peter Jakubowicz <pfjakub@earthlink.net>
+; Subject: (fractint) Vector pars
+
+The_Nose           {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Vector1M
+  center-mag=-0.630895/0.171354/16.19516 params=0/0/0/0/128/512
+  float=y maxiter=1500 inside=bof61
+  colors=000ET7<5>8G47E36C3492371241120000<9>BBUCCWDDZEE`FFc<4>KKnKKpLLq<3\
+  >NNwNNxOOxOOy<2>OOzPPzOOzOOz<3>NNxNNwNNu<2>LLqKKpKKnJJl<6>CCWBBUAAR99O<7\
+  >000<7>OJ4RL5UN5WP6ZR6<3>hZ8j`9la9ncApdA<3>uiBwjBxjBxkCylC<2>zlCzmCzlCzl\
+  CzlC<2>xjBwjBuiB<2>qeApdAncAla9<6>WP6UN5RL5OJ4<6>320300<8>U55W66Z66`77c7\
+  7<4>nAApAAqAA<3>wBBxBBxCCyCC<5>zCCzCCyCCxCCxBB<4>qAApAAnAAl99<6>W66U55R5\
+  5O44<7>000<7>9J4AL5BN5CP6DR6<4>I`9Ja9KcAKdALeA<2>NiBNjBNjBOkC<3>OlCPmCOl\
+  COlCOlC<5>MhBMgBLeA<2>Ja9I`9HZ8GX8FV7
+  }
+ 
+Domino             {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Vector1M
+  center-mag=-0.64823164078975020/+0.15992038613467530/865.1313/1/90
+  params=0/0/0/0/4/400 float=y maxiter=1500 inside=bof61
+  colors=000yCC<5>zCCzCCyCCxCCxBB<4>qAApAAnAAl99<6>W66U55R55O44<7>000<7>9J\
+  4AL5BN5CP6DR6<4>I`9Ja9KcAKdALeA<2>NiBNjBNjBOkC<3>OlCPmCOlCOlCOlC<5>MhBMg\
+  BLeA<2>Ja9I`9HZ8GX8<7>8G47E36C3492371241120000<9>BBUCCWDDZEE`FFc<4>KKnKK\
+  pLLq<3>NNwNNxOOxOOy<2>OOzPPzOOzOOz<3>NNxNNwNNu<2>LLqKKpKKnJJl<6>CCWBBUAA\
+  R99O<7>000<7>OJ4RL5UN5WP6ZR6<3>hZ8j`9la9ncApdA<3>uiBwjBxjBxkCylC<2>zlCzm\
+  CzlCzlCzlC<2>xjBwjBuiB<2>qeApdAncAla9<6>WP6UN5RL5OJ4<6>320300<8>U55W66Z6\
+  6`77c77<4>nAApAAqAA<3>wBBxBBxCC
+  }
+ 
+The_Grin           {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Vector2M
+  center-mag=-0.44474231273223350/+0.00415666005338331/5.456301e+009
+  params=0/0/0/0/2/400 float=y maxiter=256 outside=atan
+  colors=000LG4<2>UN5WP6ZR6`T7cV7<2>j`9la9ncApdAqeA<2>uiBwjBxjBxkCylC<2>zl\
+  CzmCzlCzlCzlC<2>xjBwjBuiB<2>qeApdAncAla9<6>WP6UN5RL5OJ4<6>320300<8>U55W6\
+  6Z66`77c77<4>nAApAAqAA<3>wBBxBBxCCyCC<5>zCCzCCyCCxCCxBB<4>qAApAAnAAl99<6\
+  >W66U55R55O44<7>000<7>9J4AL5BN5CP6DR6<4>I`9Ja9KcAKdALeA<2>NiBNjBNjBOkC<3\
+  >OlCPmCOlCOlCOlC<5>MhBMgBLeA<2>Ja9I`9HZ8GX8<7>8G47E36C3492371241120000<9\
+  >BBUCCWDDZEE`FFc<4>KKnKKpLLq<3>NNwNNxOOxOOy<2>OOzPPzOOzOOz<3>NNxNNwNNu<2\
+  >LLqKKpKKnJJl<6>CCWBBUAAR99O<7>000<5>IE3
+  }
+
+;========================================================================;
+; Date: Tue, 6 Jan 1998 23:06:48 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) Tan_Spirals & Optillus
+
+optillus           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Tan_Spirals
+  passes=1 center-mag=-1.44329e-015/7.77156e-016/3.774093
+  params=0.3/-0.9/0.001/0/5e-006/0
+  float=y maxiter=252 inside=253
+  outside=summ colors=000Vzz<123>0GGzVz<123>F0G000<3>000
+  }
+
+;========================================================================;
+; Date: 06 Jan 1998 21:55:20 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re: (fractint) The dreaded aaaaaa's again :(
+
+tsunami            { ; Why does it have to happen in the middle of the night?
+  reset=1950 type=barnsleyj3 passes=t center-mag=-0.269564/0.248257/5
+  params=0.4/0 float=y maxiter=256 inside=255 colors=@blues.map
+  }
+
+;========================================================================;
+; Date: 06 Jan 1998 16:24:04 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) Yet another formula from Paul Carlson
+
+astmset            { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Astroid_Mset passes=t
+  center-mag=+0.36126226339583390/+0.09037301461753901/5.967617e+008
+  params=0.016/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  }
+
+;========================================================================;
+; Date: Tue, 6 Jan 1998 20:28:40 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Yet another unreadable formula from Paul Carlson 
+
+Just_Looking       { ; (c) Jay Hill, 1998
+                     ; Uses Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_mset
+  center-mag=-0.77649538589904040/+0.11936080133555930/1692.849/1/52.499
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<23>DDrDDtEEuEEwFFx\
+  GGzI0K<28>fOzO08<28>z0fO00<28>z88000<13>000
+  savename=Justlook
+  }
+ 
+My_Bowling_Pins       { ; (c) Jay Hill, 1998
+                     ; Uses Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_mset
+  center-mag=-0.74108823307987630/+0.16451021799917670/5935.806/1/-165
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<23>DDrDDtEEuEEwFFx\
+  GGzI0K<28>fOzO08<28>z0fO00<28>z88000<13>000
+  savename=Bowling
+  }
+ 
+Seeing_Double      { ; (c) Jay Hill, 1998
+                     ; Uses Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_mset
+  center-mag=-0.74135813610222160/+0.16435883540279430/6329.114/1/39.999
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<23>DDrDDtEEuEEwFFx\
+  GGzI0K<28>fOzO08<28>z0fO00<28>z88000<13>000
+  savename=Seeing2
+  }
+  
+Worm_Hole          { ; (c) Jay Hill, 1998
+                     ; Uses Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_mset
+  center-mag=-0.00259591280259474/+0.64177231240735930/1818.261/1/70
+  params=0.0065/150/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<23>DDrDDtEEuEEwFFx\
+  GGzI0K<28>fOzO08<28>z0fO00<28>z88000<13>000
+  savename=wormhole
+  }
+
+;========================================================================;
+; Date: Wed, 7 Jan 1998 00:08:18 +1100
+; From: Ben Leighton <B.Leighton@bohm.anu.edu.au>
+; Subject: (fractint) beginnings
+
+tattered           { ;Copyright Ben Leighton 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=c7manderiv
+  function=sin/cos center-mag=-1.90913/1.38633/13.76667/1/-27.499
+  float=y maxiter=300 periodicity=0
+  colors=000e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSSWWW___cc\
+  chhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zz\
+  V<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QK\
+  SSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3\
+  >GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8G\
+  E8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBD\
+  GBCG000<6>00000e0e00eee00
+  }
+
+;========================================================================;
+; Date: Wed, 07 Jan 1998 23:30:16 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re: (fractint) Computer (as) Artist AND fractint-digest V1 #62
+
+HelmetII           { ; Another, even better helmet. Chrome Boffo!
+  reset=1100 type=formula formulafile=frac_ml.frm 
+  formulaname=oscillatorjul passes=b
+  center-mag=0.150198/0/0.6666667/1/90 params=3.14159265358979/0/4/0
+  float=y inside=255 decomp=256
+  colors=zzzooojjj<2>bbb___YYYWWW<3>QQQPPPOOONNNLLL<15>888888777777777<8>2\
+  22222222222222<22>000000111<13>444555555666777<8>BBBCCCDDDEEEFFF<3>IIIJJ\
+  JLLL<4>QQQSSSTTTVVVWWW<5>jjjooozzzooojjj<2>bbb___YYYWWW<3>QQQPPPOOONNNLL\
+  L<15>888888777777777<8>222222222222222<22>000000111<13>444555555666777<8\
+  >BBBCCCDDDEEEFFF<3>IIIJJJLLL<4>QQQSSSTTTVVVWWW<5>jjjooo
+  }
+
+;========================================================================;
+; Date: Wed, 7 Jan 1998 07:09:00 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: Re: (fractint) Yet another unreadable formula from Paul Carlson
+
+May2_01            { ; .                                    t=  0:01:58.69
+                     ; Copyright Sylvie Gallet, Dec 17, 1997
+                     ; <sylvie gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=May-2
+  passes=1 center-mag=0/2.22045e-016/0.3257822 params=32/0 float=y
+  maxiter=7 inside=255 decomp=256 periodicity=0
+  colors=zzz<8>MZZHWWFUU<2>9OO7LL7KK<14>000zzz<6>UdW<12>EIGCHEBFDAEC9CB<6>\
+  000zzz<6>fbHcZAbYA<21>000zzz<7>mU5<22>000zzz<2>piimcck``hXXeTU<6>SHIQFGP\
+  EFNDE<13>000zzz<2>mjnhekfbic_f`Xd<6>OKRMIOLGN<7>B8B979868656545<2>000zzz\
+  <6>Hii<15>4EG4DE3BC39A278<3>000zzz<2>llpgglddjaag<7>KKRHHOGGN<14>000
+  cyclerange=0/223
+  }
+
+;========================================================================;
+; Date: Wed, 7 Jan 1998 09:11:11 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) another frm and par
+
+testminmaxc { ; Kerry Mitchell
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=minmaxc_jul
+  passes=1 center-mag=0/0/0.85
+  params=-0.779702280199264/0.1503397589375293/100\
+  0/0/1.333333333333333/0.03333333333333333
+  float=y maxiter=2000 inside=0 decomp=256 periodicity=0
+  colors=000CGS<4>9Ne<7>eFQbJPZNOOWNCdM\
+  7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mu\
+  x<3>zaY<13>T3pQ0rQ4r<13>Wyw<2>GJ1<6\
+  >x2N<2>pBmtRWxfE<9>SD1<12>ecO<5>KSUzz\
+  zCOW8MY<14>4pJ<11>EHC<4>si5<10>bka<4>\
+  0jv<2>TEY<4>coOfwLfuN<13>hUp<4>Fjo<\
+  13>8T67R29T4<7>ShOVjRZeS<5>x7_<7>ime<8>Wge
+  cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Wed, 7 Jan 1998 22:47:45 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) Cosh_atan_mset
+
+coshatan           {; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Cosh_Atan_Mset passes=t
+  corners=0.936256107301329/0.936256306792296/0.335034518072\
+  451/0.335034387876525/0.936256241612122/0.335034338991395
+  params=12/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zVz<108>G0GG0GG0GG0GG0G<10>G0Gzz0<108>aG0aG0aG0aG0a\
+  G0<10>aG0000<3>000
+  }
+
+;========================================================================;
+; Date: Thu, 8 Jan 1998 12:01:20 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) mndbulbs
+
+mndbulbs           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=fastmand passes=1
+  center-mag=3.665e-006/-8.65e-007/0.6666663
+  float=y maxiter=2000 inside=0
+  colors=000zzz<253>zzz
+  }
+
+;========================================================================;
+; Date: Thu, 8 Jan 1998 16:37:31 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: Re: (fractint) Client-server Fractint
+
+4054_36_1           { ; Copyright (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Astroid_Mset passes=t
+  center-mag=-1.0681983441569025/0.2488787048632371/98720.96/1/-90
+  params=0.003/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  savename=4054_36_1
+  }
+
+;========================================================================;
+; Date: 08 Jan 1998 13:24:18 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: Re: (fractint) =3D disease
+
+4058_36_1           { ; Copyright (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Astroid_Mset passes=t
+  center-mag=0.3396842133902784/0.0646134485573786999/298482.0
+  params=0.016/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  savename=4058_36_1
+  }
+
+;========================================================================;
+; Date: 08 Jan 1998 14:05:24 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: Re: (fractint) =3D disease
+
+4113_36_1           { ; Copyright (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Astroid_Mset passes=t
+  center-mag=-0.749010325962558199/0.1062336845466507/356773.5
+  params=0.0015/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  savename=4113_36_1
+  }
+
+;========================================================================;
+; Date: Fri, 9 Jan 1998 01:53:15 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) Petals_Julia
+
+julia_petals_1 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Petals_Julia passes=t
+  center-mag=-4.44089e-016/2.22045e-016/0.8130081
+  params=-0.74107075/0.1578683/0.2/0/2/125
+  float=y maxiter=2000
+  inside=253 outside=summ
+  colors=000aG0<60>zy0zz0zy0<60>aG0C0C<60>yVyzVzyVy<60>C\
+  0C000<3>000
+  }
+ 
+ 
+julia_petals_2 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Petals_Julia passes=t
+  corners=-0.7881936/0.8801584/0.015265/1.266529
+  params=0.359166203/-0.09033392599999999/0.3/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000c40<14>xU0zW0yU0<11>c40aG0<14>xw0zz0yw0<11>a\
+  G00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<14>FFwGGzFFw<11>0\
+  0OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<12>R0BO08O00<15>z8\
+  8<12>O00000<13>000
+  }
+
+;========================================================================;
+; Date: Fri, 9 Jan 1998 08:31:18 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: Archiving pars/frms (was: Re: (fractint) Petals_Julia)
+
+1007_36_0           { ; Copyright (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Astroid_Mset passes=t
+  center-mag=-1.7577010598495029/0.0174547251000015/7724.799
+  params=0.003/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  savename=1006_36_0
+  }
+
+;========================================================================;
+; Date: Fri, 9 Jan 1998 18:47:01 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: (fractint) Re: Archiving pars/frms
+
+2swirl             { ; Copyright (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=astroid_mset
+  center-mag=-0.75346568113634480/+0.04710531541637864/5751.935/1/-90
+  params=0.005/0.3/8/30 float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00zR<28>0C40z\
+  z<28>0CCGGz<28>00O000<10>000z88000000
+  }
+
+;========================================================================;
+; Date: Sat, 10 Jan 1998 01:29:37 -0500 (EST)
+; From: ao950@freenet.carleton.ca (Paul Derbyshire)
+; Subject: (fractint) Liouville Julia set
+
+Liouville          {
+  reset=1960 type=lambda passes=1 center-mag=0.5/0/0.6666667
+  params=0.09801751303322832/-0.9951846899640191 float=y
+  maxiter=1048576 inside=0 logmap=yes
+  colors=000F0K<59>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0<58>G2JF0KF\
+  0KF0KF0K
+  }
+ 
+Siegel             {
+  reset=1960 type=lambda passes=1 center-mag=0.5/0/0.6666667
+  params=-0.7373688780783196/-0.675490294261524 float=y
+  maxiter=1048576 inside=0 logmap=yes
+  colors=000F0K<59>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0<58>G2JF0KF\
+  0KF0KF0K
+  }
+
+;========================================================================;
+; Date: Sat, 10 Jan 1998 00:01:08 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Liouville Julia set
+
+Liouville-1    { ; Paul Derbyshire
+                 ; zoom in and color change by Jay Hill
+  reset=1960 type=lambda passes=1
+  center-mag=0.5/4.44089e-016/0.8912656
+  params=0.09801751303322832/-0.9951846899640191 float=y
+  maxiter=1048576 inside=0 logmap=yes
+  colors=000F0K<29>i0xk0zj0z<29>20z01z01z<30>0Uz1Vz3Wz<28>xxzzzzzzx<59>zz1\
+  zz0zy0yx0<56>I4IH3JG2JF0KF0KF0KF0K
+  savename=Liouvill
+  }
+ 
+Siegel-1       { ; Paul Derbyshire
+                 ; zoom in and color change by Jay Hill
+                 ; params=exp(2*i*pi*a), a=(sqrt(5.)-1.)/2.
+  reset=1960 type=lambda center-mag=0.5/6.66134e-016/0.9861933
+  params=-0.7373688780783196/-0.675490294261524 float=y
+  maxiter=1048576 inside=0 logmap=yes passes=1
+  colors=000F0K<29>i0xk0zj0z<29>20z01z01z<30>0Uz1Vz3Wz<28>xxzzzzzzx<59>zz1\
+  zz0zy0yx0<56>I4IH3JG2JF0KF0KF0KF0K
+  savename=Siegel
+  }
+ 
+Siegel-2 { ; Jay Hill  
+           ; params=exp(2*i*pi*a), a=(sqrt(3.)-1.)/2.
+  reset=1960 type=lambda center-mag=0.5/6.66134e-016/0.9861933
+  params=-0.666130923602528/0.745834829315743 float=y
+  maxiter=1048576 inside=0 logmap=yes passes=1
+  colors=000F0K<29>i0xk0zj0z<29>20z01z01z<30>0Uz1Vz3Wz<28>xxzzzzzzx<59>zz1\
+  zz0zy0yx0<56>I4IH3JG2JF0KF0KF0KF0K
+  savename=Siegel2
+  }
+ 
+Siegel-3 { ; Jay Hill   
+           ; params=exp(2*i*pi*a), a=(sqrt(7.)-1.)/2.
+  reset=1960 type=lambda center-mag=0.5/6.66134e-016/0.9861933
+  params=0.442057568870217/-0.896986680951592 float=y
+  maxiter=1048576 inside=0 logmap=yes passes=1
+  colors=000F0K<29>i0xk0zj0z<29>20z01z01z<30>0Uz1Vz3Wz<28>xxzzzzzzx<59>zz1\
+  zz0zy0yx0<56>I4IH3JG2JF0KF0KF0KF0K
+  savename=Siegel3
+  }
+
+;========================================================================;
+; Date: Sat, 10 Jan 1998 17:40:05 +0100
+; From: "Jacco Burger" <Jacco.Burger@kabelfoon.nl>
+; Subject: (fractint) article in Dutch Newspaper
+
+jacco044           {
+  reset=1960 type=fn+fn function=log/cotan
+  passes=1 center-mag=+4.81057739000000000\
+  /+0.00299072499999997/0.7392501/0.9996/-90
+  params=4/0/1/0 maxiter=500 inside=0
+  potential=255/300/100
+  colors=425FKO<35>gfahgbihbjicihb<5>hhbhgbh\
+  gbggbgfaffa<2>edadd`cc`bc`bb_<\
+  13>ORUNQUMPTLPS<4>GLPFKOEJNDJMCILBHK\
+  AGJ9GI<3>28A068068<21>DDIEEJHHM<2>QQ\
+  VUTZWUZ<7>nia<8>EAA<8>F23F23E23<5>A5\
+  5966855622<8>ZAB<8>EA6<6>LA9MAANABOB\
+  CQDD<5>_PJaRKbRJ<6>lX6nY4mY6<6>dTKbS\
+  NbSL<6>fO6gN3fN3<6>XG4VF5VF5<6>aF3bE\
+  2bG4<7>jZO<4>gUL
+  }
+
+;========================================================================;
+; Date: Sun, 11 Jan 1998 21:06:11 -0800
+; From: "Angela Wilczynski" <wizzle@beachnet.com>
+; Subject: (fractint) My First Formula
+
+avw-9              { ; avw-2 formula wizzle 1998 for posting by wizzle
+                     ; adapted from a Linda Allison formula
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=avw-2
+  function=flip center-mag=0.183875/0.845496/0.3821855
+  params=0.74543/0.3333 decomp=512
+  colors=H4EH4EG0A<12>zmm<13>U30<3>K0K<12>mUm<34>C00<15>zzm<15>0CC<12>0zz<\
+  15>000<15>00z<11>00G<14>zzm<10>0A0<15>0zm<12>C0C<14>SivUmzUjw<12>I7H
+  }
+
+;========================================================================;
+; Date: Mon, 12 Jan 1998 18:48:10 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re:(fractint) Liouville Julia set (not really, but I do give a par)
+
+Siegel-Bof61 { ; Since it's the _inside_ of these sets that's interesting
+               ; Uses one of my standard working colour maps
+  reset=1960 type=lambda passes=2
+  center-mag=0.5/0/0.9861933
+  params=-0.7373688780783196/-0.675490294261524 float=y maxiter=1023
+  inside=bof61 outside=255 logmap=yes
+  colors=000<34>x00z00z00<57>zU0zV0zW0zX0zZ0<16>zx0zz0yz0<30>2z00z00y1<33>\
+  02x00z00z<31>W0zW0yV0w<33>000
+  }
+
+;========================================================================;
+; Date: Mon, 12 Jan 1998 05:19:43 -0500 (EST)
+; From: ao950@freenet.carleton.ca (Paul Derbyshire)
+; Subject: (fractint) Simplenet and a Formula
+
+; tricolor.par
+; Copyright (C) 1998 PGD.
+; May be distributed freely or for distribution cost, but not for profit.
+; This notice must be retained on all copies distributed. If a modified
+; copy is distributed, the nature of the modifications must be described in
+; a comment.
+
+Tri.1              {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=-0.0400501/0.616027/1.572327
+  params=0.1/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<45>PPHOOGOOGNNG<33>1100K0zzz<45>PHP\
+  OGOOGONGN<33>101K0K
+  }
+
+Tri.1_z1         {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=-0.00184234/0.949423/4.466838
+  params=0.1/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<45>PPHOOGOOGNNG<34>000zzz<45>PHPOGO\
+  OGONGN<34>000
+  }
+Tri.1_z1a          {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=0.264525/0.887382/32.8444
+  params=0.1/0/0/0/0/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<25>``e``e__d__cZZc<53>000zzz<19>zzb\
+  zz`yy`<61>000
+  }
+
+Tri.1_z2           {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=-0.475594/0.360601/2.380952
+  params=0.1/0/0/0/0/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<25>``e``e__d__cZZc<53>000zzz<19>zzb\
+  zz`yy`<61>000
+  }
+
+Tri.1_z2a          {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=-0.652215/0.411085/27.68549
+  params=0.1/0/0/0/0/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<25>`e``e`_d__c_ZcZ<53>000zzz<19>zbz\
+  z`zy`y<61>000
+  }
+
+Tri.1_z2a1         {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.63573824073836260/+0.42332920969978210/160.9622
+  params=0.1/0/0/0/1.7/0 float=y maxiter=1000 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<45>LHPKGOKGOJGN<34>000zzz<25>e``e``d__c__cZZ<53>000zzz<19>\
+  bzz`zz`yy<61>000
+  }
+
+Tri.1_z2a1a        {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.62967253402665200/+0.42702277402833490/1509.624
+  params=0.1/0/0/0/1.7/0 float=y maxiter=1000 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<45>LHPKGOKGOJGN<34>000zzz<25>e``e``d__c__cZZ<53>000zzz<19>\
+  bzz`zz`yy<61>000
+  }
+
+Tri.1_z2a2         {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand passes=t
+  center-mag=-0.62641695041578190/+0.43642094372846530/133.1033
+  params=0.1/0/0/0/1.4/0 float=y maxiter=500 inside=16 outside=real
+  periodicity=0
+  colors=000zzz<45>PHLOGKOGKNGJ<34>000zzz<45>JSPIROIROIQN<34>000zzz<44>VOb\
+  UNaTM`TM_SLZ<34>000
+  }
+
+Tri.1_z1b          {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=0.00240297/0.934558/11.56123
+  params=0.1/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<45>PPHOOGOOGNNG<33>1100K0zzz<45>PHP\
+  OGOOGONGN<33>101K0K
+  }
+
+Spotty_Purple_Leaf {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.00999789304067574/+0.90636493335468480/231.2246
+  params=0.1/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<45>PHPOGOOGONGN<34>000zzz<45>PHPOGO\
+  OGONGN<34>000
+  }
+
+tri.1_z1b1         {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.00999789304067574/+0.90636493335468480/231.2246
+  params=0.1/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<45>PHPOGOOGONGN<34>000zzz<45>PHPOGO\
+  OGONGN<34>000
+  }
+
+tri.1_z1c          {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.05086221308853772/+0.74043687361813730/89.33676
+  params=0.1/0/0/0.001/1.4/0 float=y maxiter=1000 inside=16
+  outside=real periodicity=0
+  colors=000zzz<45>PHLOGKOGKNGJ<34>000zzz<45>JPSIORIORINQ<34>000zzz<44>ObV\
+  NaUM`TM_TLZS<34>000
+  }
+
+tri.1_z1c1         {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand passes=t
+  center-mag=-0.05582255738916353/+0.74604097086189670/893.3676
+  params=0.1/0/0/0.001/1.4/0 float=y maxiter=1000 inside=16
+  outside=real periodicity=0
+  colors=000zzz<45>PHLOGKOGKNGJ<34>000zzz<45>JPSIORIORINQ<34>000zzz<44>ObV\
+  NaUM`TM_TLZS<34>000
+  }
+
+Tri.1_z1b1a        {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=+0.28738643304130160/+0.90649546577629390/186.3447
+  params=0.1/0/0/3e-006/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<45>HPLGOKGOKGNJ<34>000zzz<45>JPSIORIORINQ<34>000zzz<19>zzb\
+  zz`yy`<43>IICHHBGGAFF9EE9<13>000
+  }
+
+Trib.1_z1b1a       {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormandb
+  center-mag=+0.28738643304130160/+0.90649546577629390/186.3447
+  params=0.1/0/0/3e-006/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<45>HPLGOKGOKGNJ<34>000zzz<45>JPSIORIORINQ<34>000zzz<19>zzb\
+  zz`yy`<43>IICHHBGGAFF9EE9<13>000
+  }
+Tri.8_z1           { ; A pair of minibrots
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-8.88178e-016/-8.88178e-016/7.751938
+  params=0.8/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.8_z1a          { ; One of the minibrots
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-0.0709521/-9.36751e-016/27.68549
+  params=0.8/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.75_z1          { ; The minibrots collide when alpha is varied.
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-1.33227e-015/8.88178e-016/9.107981
+  params=0.75/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.75_z1a         { ; Chaos!!
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=+0.09129808225252056/-0.00028629417061963/182.1596
+  params=0.75/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.7_z1           { ; Weird
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=0.383509/1.85962e-015/9.107981
+  params=0.7/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.58             {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=0/0/0.6666667
+  params=0.58/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri-.3             {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand center-mag=0/0/0.6666667
+  params=-0.3/0/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>IIPGGOGGO<36>000zzz<30>aLW`JV`JV<50>000zzz<30>RWaPV`PV`\
+  <50>000
+  }
+
+Tri.1i             {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=tricolormand
+  center-mag=-3.77476e-015/-8.88178e-016/0.6921373
+  params=0/0.1/0/0.001/1.7/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000zzz<44>PIIOGGOGG<36>000zzz<30>aWL`VJ`VJ<50>000zzz<30>aRW`PV`PV\
+  <50>000
+  }
+
+; 4color.par
+; Copyright (C) 1998 PGD.
+; May be distributed freely or for distribution cost, but not for profit.
+; This notice must be retained on all copies distributed. If a modified
+; copy is distributed, the nature of the modifications must be described in
+; a comment.
+
+4col.8             {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=QuadcolorMand
+  center-mag=-1.77636e-015/-1.77636e-015/0.245098
+  params=0.8/0/0/0.0001/0/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0 colors=000KA0<64>zlh00e<61>hlze00<61>zhq0e0<61>hzq
+  }
+
+4col.5_z1          { ; Two minibrots headed for a crack-up
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.567972/0.910937/3.62571
+  params=0.5/0/0/0.0001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80I90KA0<49>zlh00e<61>hlze00<61>zhq0e0<61>hzq
+  }
+
+4col.45_z1         { ; Crash
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.44575/0.842614/3.62571
+  params=0.45/0/0/0.0001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<10>B50C60E70G80I90KA0<49>zlh00e<61>hlze00<61>zhq0e0<61>hzq
+  }
+
+4col.42_z1         { ; Crash, splut, ooooze
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.44575/0.791044/3.62571
+  params=0.42/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<10>CCg99h55g00e<47>0AKb\
+  __<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.41            { ;  
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.44575/0/0.5150156
+  params=0.41/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<10>CCg99h55g00e<47>0AKb\
+  __<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.375           {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.375/0/0/0.001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.37            {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.37/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.36            {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.36/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.355           {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.355/0/0/0.001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.35            {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.35/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+AngelsHoldingHands {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.35/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.32            {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+
+  params=0.32/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.335           {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0.0828478/0/0.5150156
+  params=0.335/0/0/0.001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+4col.335_z1        {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0/-2.77556e-017/8.857115
+  params=0.335/0/0/0.001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<10>B50C60E70G80<3>MC2NC3ND4<45>zlh__b<8>GGfEEgCCg99h55g00e<47\
+  >0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<30>0KA
+  }
+
+Trinity            {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0/-2.77556e-017/8.857115
+  params=0.335/0/0/0.001/2/0 float=y maxiter=256 inside=16
+  outside=real periodicity=0
+  colors=000<13>940A40B50C50D61F71<2>JA4LC5ND6OF7QG8SIA<38>zlh__b<8>GGfEEg\
+  CCg99h55g00e<47>0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<3\
+  0>0KA
+  }
+
+4col.3             {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand center-mag=0/0/0.6666667
+  params=0.3/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<13>940A40B50C50D61F71<2>JA4LC5ND6OF7QG8SIA<38>zlh__b<8>GGfEEg\
+  CCg99h55g00e<47>0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<3\
+  0>0KA
+  }
+
+4col.3_z1          {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand
+  center-mag=1.17961e-016/-9.02056e-017/10.93333
+  params=0.3/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<13>940A40B50C50D61F71<2>JA4LC5ND6OF7QG8SIA<38>zlh__b<8>GGfEEg\
+  CCg99h55g00e<47>0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<3\
+  0>0KA
+  }
+
+ColorWheel!        {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=quadcolormand
+  center-mag=1.17961e-016/-9.02056e-017/10.93333
+  params=0.3/0/0/0.001/2/0 float=y maxiter=256 inside=16 outside=real
+  periodicity=0
+  colors=000<13>940A40B50C50D61F71<2>JA4LC5ND6OF7QG8SIA<38>zlh__b<8>GGfEEg\
+  CCg99h55g00e<47>0AKb__<11>f88g55e00<47>K0A_b_<20>IjIHkHFjF<5>3f30e00e0<3\
+  0>0KA
+  }
+
+;========================================================================;
+; Date: Mon, 12 Jan 1998 15:50:45 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) Re: Tim's_Fract
+
+5-way              { ; 5-way symmetry
+                     ; formula FGZ-Julia-9
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=FGZ-Julia-9 center-mag=-1.00128/0.375621/6.666359/1.0001
+  fillcolor=0 decomp=2048
+colors=000MKHMMI000<16>C81D92FB3<2>LG4OI5QK7<12>vlYxn_yo`zpawn_ukY<16>bV\
+H000<22>000000223<5>HHNKKQNNTQQXTT_<6>ilploslpr<14>OI5<11>pgTriVulYxn_zp\
+a<4>jdWgaVcZT`WSYUR<3>KJNHGMGFL<10>724602702<20>Q08R09S09T0AU0A<6>`0Da0D\
+b2D<14>zVF<10>hAEaI9<6>xTF<8>H3AC09908<6>KBDMDEMFFMHG
+  }
+
+4-way              { ; 4-way symmetry
+                     ; formula FGZ-Julia-6
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=FGZ-Julia-6 center-mag=1.03307/-0.25166/18.72866/0.9999
+  fillcolor=0
+colors=0000dL<7>0zW<7>0JJ<14>0xx0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8\
+>px9<5>KMGFGIBBM<14>WWz<7>J9J<15>zWz<7>J09<15>z0W<7>J90<15>zW0<7>JJ0<15>\
+zz0<7>99J<15>WWz<7>0J9<6>0bJ
+  }
+
+3-way              { ; 3-way symmetry
+                     ; formula FGZ-Julia-5
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=FGZ-Julia-5 center-mag=1.14479/-0.204081/54.65114/0.9996
+  fillcolor=0 decomp=2048
+colors=000VRQ<3>HGM<11>724602702<20>Q08R09S09T0AU0A<6>`0Da0Db2D<14>zVF<1\
+0>hAEaI9<6>xTF<8>H3AC09908<6>KBDMDEMFF<2>MMILPKNRM<9>kmn<6>D92<3>LG4OI5Q\
+K7<12>vlYxn_yo`zpa<14>OI5000<27>000<7>KKQNNTQQXTT_VWa<3>dfkginhjn<2>kmn<\
+13>OI5<11>pgTriVulYxn_zpa<4>jdWgaVcZT`WSYUR
+  }
+ 
+aaaaghhh           { ; you don't want it in your shower
+                     ; formula FGZ-Julia-7
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=FGZ-Julia-7 center-mag=-0.405487/-0.160257/3.205208
+  fillcolor=0 decomp=2048
+colors=000OI5<11>pgTriVulYxn_zpa<4>jdWgaVcZT`WSYUR<3>KJNHGMGFL<10>724602\
+702<20>Q08R09S09T0AU0A<6>`0Da0Db2D<14>zVF<10>hAEaI9<6>xTF<8>H3AC09908<6>\
+KBDMDEMFF<2>MMI000<16>C81D92FB3<2>LG4OI5QK7<12>vlYxn_yo`zpawn_ukY<16>bVH\
+000<22>000000223<5>HHNKKQNNTQQXTT_<6>ilploslpr<13>QK8
+  }
+
+;========================================================================;
+; Date: Mon, 12 Jan 1998 13:08:57 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: (fractint) Julia Sets, Orbits and Siegel disks
+
+Mandelbrot_set   { ; (C) Jay Hill, 1998
+                   ; Turn on orbits and watch...
+  reset=1960 type=mandel center-mag=-0.5/0/0.4 params=0/0 float=y
+  maxiter=1280 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  }
+
+Siegel_Gold      { ; (C) Jay Hill, 1998
+                  ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=0/0/0.85
+  params=0.3253814503389081470/0.0535920759383226465
+  float=y maxiter=150000 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=Siegel_G
+  }
+
+Julia047-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia center-mag=-5.55112e-016/6.66134e-016/0.94375
+  params=-0.47/0.54 float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>VVVUUUUUUUUU<205>000
+  savename=J47-60
+  }
+ 
+Julia080-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85 params=-0.8/0.15
+  float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J80-60
+  }
+ 
+Julia076-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85
+  params=-0.76/0.07
+  float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J76-60
+  }
+Julia074-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85
+  params=-0.7456841472/0.0757307904
+  float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J74-60
+  }
+ 
+Julia035-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85
+  params=0.3508/0.3456
+  float=y maxiter=150000 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J35-60
+  }
+ 
+Julia026-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85
+  params=0.2514358528/0.0001092096
+  float=y maxiter=150000 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J26-60
+  }
+ 
+Julia025-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.85
+  params=0.25/0.5 ; periodicity=0
+  float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J25-60
+  }
+ 
+Julia100-bof60      { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.8
+  params=-1.0/0.25 ; periodicity=0
+  float=y maxiter=1500 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J100-60
+  }
+ 
+Julia124-bof60     { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.75
+  params=-1.2446176/0.0515968 ; periodicity=0
+  float=y maxiter=256 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J124-60
+  }
+ 
+Julia125-bof60     { ; (C) Jay Hill, 1998
+                     ; Turn on orbits and watch...
+  reset=1960 type=julia passes=1
+  center-mag=-1.33227e-015/8.88178e-016/0.75
+  params=-1.24928/0.01896  periodicity=0
+  float=y maxiter=80 inside=bof60 outside=0
+  colors=000000<13>www<30>CCCAAAAAA<45>lllmmmmmmmmm<155>www000000
+  savename=J125-60
+  }
+
+;========================================================================;
+; Date: Tue, 13 Jan 1998 00:07:35 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Re: Tim's_Fract
+
+FGZ_M          { ; (c) Jay Hill, 1998
+  ; Mandelbrot map uses formula FGZ-M
+  ; colors by Kathy Roth
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-m
+  center-mag=-0.5/0./1.000001 maxiter=1500 fillcolor=0
+  decomp=2048
+  colors=000OI5<11>pgTriVulYxn_zpa<4>jdWgaVcZT`WSYUR<3>KJNHGMGFL<10>724602\
+  702<16>M06N07O07P08Q08<10>`0Da0Db2D<14>zVF<10>hAEaI9<6>xTF<8>H3AC09908<6\
+  >KBDMDEMFF<2>MMI000<16>C81D92FB3<2>LG4OI5QK7<12>vlYxn_yo`zpawn_ukY<16>bV\
+  H000<22>000000223<5>HHNKKQNNTQQXTT_<6>ilploslpr<13>QK8
+  }
+ 
+FGZ_J          { ; (c) Jay Hill
+  ; uses formula FGZ-J
+  ; colors by Kathy Roth
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-j
+  center-mag=0./0./0.5 params=0./0. maxiter=1500 fillcolor=0
+  decomp=2048
+  colors=000MKHMMI000<16>C81D92FB3<2>LG4OI5QK7<12>vlYxn_yo`zpawn_ukY<16>bV\
+  H000<22>000000223<5>HHNKKQNNTQQXTT_<6>ilploslpr<14>OI5<11>pgTriVulYxn_zp\
+  a<4>jdWgaVcZT`WSYUR<3>KJNHGMGFL<8>947836724602702802<15>M06N07O07P08Q08<\
+  10>`0Da0Db2D<14>zVF<10>hAEaI9<6>xTF<8>H3AC09908<6>KBDMDEMFFMHG
+  }
+
+;========================================================================;
+; Date: Tue, 13 Jan 1998 02:27:26 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) Re: Tim's_Fract 
+
+barbie*goes*psycho { ; palette from Les St. Clair (sorry!)
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Tim's_fract center-mag=0.0125392/-1.06281/13.33333
+  float=y maxiter=256 inside=16 outside=real decomp=256 periodicity=0
+colors=000<23>000000223<5>HHNKKQNNTQQXTT_<6>ilploslpr<14>OI5<11>pgTriVul\
+Yxn_zpa<4>jdWgaVcZT`WSYUR<3>KJNHGMGFL<10>724602702<20>Q08R09S09T0AU0A<6>\
+`0Da0Db2D<14>zVF<10>hAEaI9<6>xTF<8>H3AC09908<6>KBDMDEMFF<2>MMI000<16>C81\
+D92FB3<2>LG4OI5QK7<12>vlYxn_yo`zpawn_ukY<16>bVH
+  }
+
+;========================================================================;
+; Date: Tue, 13 Jan 1998 10:58:02 -0500
+; From: Gedeon Peteri <gedeon@InfoAve.Net>
+; Subject: (fractint) Paul Carlson's formulas
+
+ gp-jball01         { ; (c) Gedeon Peteri, 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_julia passes=1
+  center-mag=2.1e-006/1.6e-007/0.5251441/1/-10
+  params=-0.6466273535043001/-0.4439372085034847/0.1\
+  /2/2/125 float=y maxiter=256 inside=0 outside=summ
+  colors=G80cWlaUh`Te<2>VNVTLRRJMPHINFEKC8IA4G808\
+  G0AI4CK8FNE<4>PXZRZbT`eUahWcl<3>`huaiwaixbjybjzbjz\
+  <2>aixaiw`hu<2>YeoWclUahT`e<2>NVVLTRJRMHPIFNECK\
+  84IA8KCENF<4>ZXPbZRe`ThaUlcW<3>uh`wiaxiayjbzjbzjb\
+  <2>xiawiauh`<2>oeYlcWhaUe`T<2>VVNRTLMRJIPHENF8KC4\
+  IA0G808G4AI8CKEFN<4>ZPXbRZeT`hUalWc<3>u`hwaixa\
+  iybjzbjzbj<2>xaiwaiu`h<2>oYelWchUaeT`<2>VNVRLT\
+  MJRIHPEFN8CK4AI08G80GA4IC8KFEN<4>PZXRbZTe`UhaWlc\
+  <3>`uhawiaxibyjbzjbzj<2>axiawi`uh<2>YoeWlcUhaTe`<2\
+  >NVVLRTJMRHIPFENC8KA4I80GG00I44K88NEE<4>XZZZbb`ee\
+  ahhcll<3>huuiwwixxjyyjzzjzz<2>ixxiwwhuu<2>eoocll\
+  ahh`ee<2>VVVTRRRMMPIINEEK88I44G00G80IA4KC8NFE<4\
+  >XPZZRb`TeaUhcWl<3>h`uiawiaxjbyjbzjbz<2>\
+  iaxiawh`u<2>eYo
+  }
+ 
+gp-jball03         { ; (c) Gedeon Peteri, 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_julia passes=1
+  center-mag=1.04946/-0.885465/4.586315/1/-30
+  params=-0.8421309507983057/0.209256982529335/0.35\
+  /2/2/125 float=y maxiter=256 inside=0 outside=summ
+  colors=000BBB<5>DDDDDDEEEFFF<9>PPPPPPOOO<10>DDDDDD\
+  CCCCCCCCC<4>BBBWK1<2>WL1WL1XM1YN1<4>aS1bU1dV1<4>\
+  kc1ld1ng1ng1ld1<6>bU1aS1`R1_Q1<3>XM1WL1WL1WL1W\
+  K1WK1m27<4>m27n28n28o28o28<7>v3Cw3Cx3Dy4E<5>t3Bs3Ar\
+  3Ar2A<2>o28o28n28n28m27<4>m27PPP<3>PPPQQQQQQRRRRRR\
+  <10>bbbcccccc<10>SSSRRRRRR<2>PPPPPPPPPPPPPPPPPPaX1\
+  <2>aX1aY1bY1cZ1<2>e`1f`1gb1hb1<6>rk1tl1tl1<6>id1hb1\
+  gb1f`1<4>bY1aY1aX1aX1aX1aX1W80<4>W80X80X80Y80Y80\
+  <10>fB0fB0eB0<7>Z90Z90Y80Y80X80<6>W80BBBBBB
+  }
+ 
+gp-jball05         { ; (c) Gedeon Peteri, 1/10/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3d_balls_julia passes=1
+  center-mag=-0.775855/1.08066/4.030264
+  params=-0.375/0.652/0.12/2/2/125 float=y
+  maxiter=256 inside=0 outside=summ
+  colors=00e0MM<16>0ff0gg0ff<19>0II00I<20>00g\
+  <20>00II0I<20>g0g<18>L0LK00<18>f00g00f00<18>\
+  K00I00II0<20>gg0<20>II00I0<20>0g0<19>\
+  0K00I00II0KK0LL
+  }
+ 
+gp-jcones01        { ; (c) Gedeon Peteri, 1/l0/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=pokornyconesjulia passes=1
+  center-mag=8.88178e-016/-6.66134e-016/0.5264798
+  params=-0.678/0.349/3/75 float=y maxiter=4095
+  inside=0 outside=summ
+  colors=000gKA<4>z00<7>`TF0W0<6>dnH<7>0W0W0z<6>\
+  k`u<7>W0z00W<12>KilMmmLjl<14>00WW00<14>ue1<15>\
+  W00G0G<13>dFjfGleFj<14>G0G0GG<14>dnH<15>0GGWG0\
+  <14>z0W<15>WG000W<21>LklMmmLkl<22>00W`TFdPD
+  }
+ 
+gp-jcones03        { ; (c) Gedeon Peteri. 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=pokornyconesjulia passes=1
+  center-mag=-0.861939/-0.0312907/3.332001/1/-90
+  params=-1.7688/0.002/2/125 float=y maxiter=4095
+  inside=0 outside=summ
+  colors=000Pbs<2>TeuUfvTev<22>5MfFLM<14>bhj<15>\
+  FLM03g<22>`bz<22>25h03g0Wz<14>00W<15>0WzFLM<14>\
+  bhj<15>FLMJKQ<13>eej<15>JKQ00z<14>0zz<15>00z5Mf<17>\
+  Oar
+  }
+ 
+gp-jpet04          { ; (c) Gedeon Peteri, 1/10/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=petals_julia passes=1
+  center-mag=0.54483/-0.101538/15.40927/1/17.5
+  params=-0.8421309507983057/0.209256982529335/\
+  0.5/0/2/125 float=y
+  maxiter=2047 inside=0 outside=summ
+  colors=000P`cO`c<3>NZ`MY`MX_LWZLWYKVXKUX<12>\
+  AGIMG4OH4QI5RJ5SK6UL7<7>eUBfVBgWBhXCiXC<2>\
+  l_Dm_En`En`EoaE<3>qbFqbFqbFqcFqcF<46>MG46Xn\
+  6Yo6Zq<5>8av8bv8bw8bw<6>8cx8cx8bw<2>8av7au\
+  7`t7`s7_r7Zq6Zq<2>6Wm5Vk5Vk<2>4Sf4Qd3Pc3Ob<3>\
+  2KV1JU1IS1GRJ98<3>PECQFDSHEUIF<6>bPMcQNdROeSP\
+  fSPgTQ<2>iVSjWSkWTkWT<2>mXUmYUmYUmYUlXT<39>\
+  KA9J98J98J98KUX<5>NZ`NZaO_bO_cO`c<3>PaeQbeQbe\
+  QbeQbe<6>Pad
+  }
+ 
+gp-jpet05          { ; (c) Gedeon Peteri, 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=petals_julia passes=1
+  center-mag=-0.00391175125758118/+0.08301662642285197\
+  /106.5482/1/4.999 params=-1.7688/0.002/0.1/0/2/125
+  float=y maxiter=2047 inside=0 outside=summ
+  colors=000nAI<6>h6F444444<6>IIIJJJLLLMMMNNNPPP<3>\
+  SSSTTTTTTTTTTTTTTT<4>QQQPPPNNN<2>JJJIIIGGGEEE<4>\
+  444pX6qY8s_8t`9vaA<2>xcCydDydDzdD<2>ydDxcCwcCvb\
+  BvaAt`9s_8qY8pX6U0Z<4>c0ke1mg1oi1qj1sl1tm1v<18>\
+  V1`U0ZU0Zkkkmmm<3>pppqqqqqqqqqrrrqqqqqq<4>nnnmmm\
+  kkkjjjiiiccc<6>YYY1HZ<4>4Ok5Qn5Rp5Sr6Tt6Uv6Vw<3>5\
+  Rp5Qn4Ok<4>1HZ_C1<2>cD2dE2dE2<2>fE2gF2gF2gF2<5>\
+  dE2cD2aD1`D1_C1LLL<5>UUUVVVWWWXXXYYY<4>aaabbbb\
+  bbbbb<31>LLL2jA<3>2h92g92e9<2>1`81Z81W8e4D<5>\
+  rCLtDMuEMvFNwFOxGOwFOvFN
+  }
+ 
+gp-jstalk01        { ; (c) Gedeon Peteri, 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3dstalks_julia passes=1
+  center-mag=0.83707/2.10117/1.7401 params=-0.6466\
+  273535043001/-0.4439372085034847/0.375/10000/2/125
+  float=y maxiter=200 inside=255 outside=summ
+  colors=000UPF<3>UPFVQGVQGWRGXRH<5>aVKbWLcYM<3>\
+  haPjbQkcSmeTnfU<4>vmZwn_wn_<3>qhWogVnfUmeTkcSjbQ\
+  <5>bWLaVK`VK<2>YSIXSHXRHWRGVQG<6>UPFF00<4>F00G00G0\
+  0H00I00<4>M00M00O00<5>V00X00Y00_00`00a00c00e00\
+  f00g00g00f00e00c00<8>R00Q00P00O00M00<5>I00H00G\
+  00G00F00F00F00F00PFC<5>PFCQFCQGCRGCRHC<2>UICVJC\
+  WKCXLCYLC<4>dRDeSDgTDiUD<3>pZEr`EtaEvcEwdEwdE<35>\
+  SIDRHDQGDPFCPFC2H2<4>5K35L36M37N47O48P59Q5AQ5<8>\
+  I`AIaAIaA<8>AS6AQ59Q5<3>6M35L35K34J34J2<2>2H22G12\
+  G11G1<5>1F1
+  }
+ 
+gp-jstalk03        { ; (c) Gedeon Peteri, 1/10/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3dstalks_julia passes=1
+  center-mag=-6.72822/2.64068/8.166044/1/-44.999
+  params=-0.678/0.349/0.12/10000/2/98 float=y
+  maxiter=200 inside=255 outside=summ
+  colors=CIG6CA09R<9>0FX1GY1GY2HZ2I_<32>NasObtNat\
+  <34>1GY0FX0FX0EW<7>09R78C<37>`afabg`af<6>WX`VW`\
+  UV_UV_UV_<46>78CLSQ<17>Zeb_fcZec<37>7DB
+  }
+ 
+gp-jstalk04        { ; (c) Gedeon Peteri, 1/11/98
+                     ; Formula by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3dstalks_julia passes=1
+  center-mag=-3.70351/0.00893893/7.645239
+  params=0.328/0.5659999999999999/0.25/10000/2/98
+  float=y maxiter=200 inside=0 outside=summ
+  colors=000JPN<8>CIGKG0<48>umLumLtlL<43>KG0DEI<39>\
+  WXaWXaWX`<36>DEIDJH<36>dkhelidki<28>KQO
+  }
+
+;========================================================================;
+; Date: Thu, 15 Jan 1998 16:04:26 +1
+; From: "J.P. Louvet" <jean-pierre.louvet@iuta.u-bordeaux.fr>
+; Subject: Re: (fractint) Attached Neanderthals with 3D disease
+
+Nothing            { ; J.P.Louvet
+  reset=1960 type=tim's_error function=cosh passes=t
+  center-mag=2.18686/-0.820367/4.306632 params=0/0 float=y maxiter=250
+  inside=0 potential=255/220/256
+  colors=0M2<19>0`40a40`4<29>0D0011<31>5xz<29>054032120552<8>UUJXWL_ZNa`Pc\
+  bR<2>jiWlkYml_<4>ushvtjwulxvnywp<3>zxw<2>ywrywpxvnwul<2>trfsqdqobona<2>j\
+  iWhgUedS<2>ZZMXWKUUJRRH<7>552B00<11>Q10R10R10<8>Z10Z10_10_20_20<7>`20`20\
+  _20<2>Z10Z10Y10X10<7>R10Q10O10<9>C000000E0<8>0L2 cyclerange=0/255 }
+
+;========================================================================;
+; Date: Thu, 15 Jan 1998 08:55:58 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Attached Neanderthals with 3D disease
+
+Something          { ; Jay Hill (was J. P. Louvet's Nothing)
+  reset=1960 type=tim's_error function=cosh passes=t
+  center-mag=0.0767767/0/1.0472/1/-90 params=0/0 float=y maxiter=250
+  inside=0 potential=255/220/256
+  colors=0M2<19>0`40a40`4<29>0D0011<31>5xz<29>054032120552<8>UUJXWL_ZNa`Pc\
+  bR<2>jiWlkYml_<3>srfushvtjwulxvn<4>zxw<2>ywrywpxvnwul<2>trfsqdqobona<2>j\
+  iWhgUedS<2>ZZMXWKUUJRRH<7>552B00<11>Q10R10R10<8>Z10Z10_10_20_20<7>`20`20\
+  _20<2>Z10Z10Y10X10<7>R10Q10O10<9>C000000E0<8>0L2 cyclerange=0/255
+  savename=somethin
+  }
+
+;========================================================================;
+; Date: 15 Jan 1998 21:42:11 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) more fractal stars
+
+5-point            { ; points = |imag p1 - 1|
+                     ; formula by Jim Muth
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=MandelbrotMix passes=1 center-mag=0/0/0.6666667
+  params=1/-4/0/0/0/0 float=y maxiter=3600 bailout=25 inside=0
+  logmap=yes symmetry=xaxis periodicity=10
+colors=0000Dq0Gz<6>028000000<6>00z<7>000<6>z00<7>000000<6>zG0<7>000000<6\
+>zW0<7>000000<6>zk0<7>000000<6>zz0<7>000000<6>kz0<7>000000<6>Wz0<7>00000\
+0<6>0z0<7>000000<6>0zG<7>000000<6>0zW<7>000000<6>0zk<7>000000<6>0zz<7>00\
+0000<6>0kz<7>000000<6>0Wz<7>000000<4>0Bh
+  }
+
+;========================================================================;
+; Date: 16 Jan 1998 15:43:53 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re: (fractint) Simplgif update and introduction to Nature
+
+Spectral_Flow      { ; It's so easy! I like to colour cycle this one...
+                     ; And yes, I am a David Brin fan!
+  reset=1920 type=formula formulafile=fractint.frm formulaname=liar1
+  passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
+  decomp=256
+  colors=000zD0<31>zT0zU0zV0zW0zX0<17>zx0zz0yz0<30>2z00z00y1<33>02x00z00z<\
+  31>W0zW0yV0w<32>102000100<33>x00z00z00<23>zD0
+  }
+
+;========================================================================;
+; Date: 16 Jan 1998 16:29:21 +0100
+; From: guy.marson@mnhn.lu (Guy Marson)
+; Subject: Re: (fractint) Simplgif update
+
+gallet_3           {
+  reset=1920 type=formula formulafile=frac_ml.frm 
+  formulaname=gallet-3-01 passes=1
+  center-mag=-0.614417/-1e-006/0.8503394 params=100/150/200/0 float=y
+  maxiter=300 periodicity=0
+  colors=U0002P00K<7>0I`0Lc2Mb<2>8R_BSYDUXFVVHWT<2>N_QPaOSbNUdLWeK<12>wx2z\
+  z0zy0<58>U00zpf<15>UKA<32>zrhzc0<15>U00<32>zc0zzz<15>PPP<37>zzz
+  cyclerange=0/11
+  }
+
+;========================================================================;
+; Date: 16 Jan 1998 22:17:14 -0500
+; From: Gedeon Peteri <gedeon@InfoAve.Net>
+; Subject: Re: (fractint) A newbie's approach to designing formulas.
+
+gfpdvc01-03           { ;   0:00:25.32
+                     ; Nov 15, 1997
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gfpdvc01 function=flip/asin/log passes=1
+  center-mag=0/4.92293/0.1227727 params=7/0/1/0/1.5/0
+  float=y maxiter=1023 potential=255/255/0
+  colors=000Wbj<18>8CE776<21>ffa<23>776W00<14>z00<15>\
+  W00688<22>chh<23>68800z<6>0zz<7>00zDBE<21>daeebfdae\
+  <22>DBEWG0<6>zW0<7>WG08CE<21>ahpbirahp<2>Yck
+  }
+
+;========================================================================;
+; Date: 16 Jan 1998 19:46:43 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) A newbie's approach to designing formulas.
+
+gfpdvc01-03-mess   { ; change to complex
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gfpdvc01 function=flip/asin/log passes=1
+  center-mag=4/-3.55271e-015/0.125/1/-90 params=1/7/1/0/1.5/0 float=y
+  maxiter=1023 potential=255/255/0
+  colors=000Wbj<18>8CE776<21>ffa<23>776W00<14>z00<15>W00688<21>bffchhbff<2\
+  2>68800z<6>0zz<7>00zDBE<21>daeebfdae<22>DBEWG0<6>zW0<7>WG08CE<21>ahpbira\
+  hp<2>Yck
+  }
+
+;========================================================================;
+; Date: Sat, 17 Jan 1998 16:44:30 -0800
+; From: Peter Jakubowicz <pfjakub@earthlink.net>
+; Subject: Re: (fractint) Triangle Inequality Coloring
+
+test               {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=avetriang_man passes=t
+  center-mag=-1.57516168132942300/-0.01326571056062576/101.7004
+  params=10000000/50 float=y maxiter=100000 decomp=256
+  colors=000510<27>z10340<28>z40370<28>z703A0<28>zA03E0<28>zE03H0<28>zH03K\
+  0<28>zK03O0<28>zO03R0<14>YR0
+  }
+ 
+test1              {
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=avetriang_man passes=t
+  center-mag=-1.57716568863030300/-0.01134960936219030/1871.144
+  params=10000000/50 float=y maxiter=100000 decomp=256
+  colors=000WXz<60>t3Ou2Nu3N<45>yr4ys3xs3<44>Xz0Wz0Wz0Wz0<60>IJ0II0II0II0<\
+  30>PIR
+  }
+
+;========================================================================;
+; Date: 17 Jan 1998 00:42:01 +1100
+; From: Ben Leighton <B.Leighton@bohm.anu.edu.au>
+; Subject: (fractint) x = real, y = imaginary, z= olfactory--- aaaaachooo
+
+roseforyou         {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Newfunc2
+  center-mag=+0.90010178314760500/+0.34670680568448540/504.8227
+  params=3.14159265358979/0/-3.14159265358979/0 float=y maxiter=3000
+  periodicity=0
+  colors=000<69>000000200<12>a89X05<3>hGTkKZlLWmMToOQ<8>`3QZ0P_0P<8>q7G<3>\
+  z07y29<16>P00<16>x16<14>hBLgCMgCL<12>j12k00k11<12>gENfGPgGP<30>sDHXLa<2>\
+  rTluRJQJZ<8>QLUQLTQJZQLT<5>QMP
+  }
+
+;========================================================================;
+; Date: Sat, 17 Jan 1998 23:08:05 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: (fractint) Finally, answers vs questions
+
+5s01 { ; "Between the Shadow and the Star"
+  ; something for the B5 fans...
+  ; Author: Mark "Bud" Christenson 1/16/98
+  reset=1930 type=formula formulafile=frac_ml.frm 
+  formulaname=051597-002 function=sin passes=t
+  center-mag=-0.0557669/0/1.572343/1.3333 params=1/0 float=y
+  inside=epsiloncross outside=atan viewwindows=1/1/yes/0/0
+  colors=00066ADDKGGP<9>PLcQMeRNfRNg<13>`YpaZqb_rc`rdbsect<8>moynqzprz<4>z\
+  zz<33>0UU<13>S`LUaKWbJXbIZbH_bG<11>q`2s_0s_0<30>zz0Y00VM5<17>0K0u3Yt2Z0K\
+  0<42>0z00z00y0<12>0l00k00j2<20>0Eg000kkk
+  }
+ 
+5s02 { ; something floral
+  ; Author: Mark "Bud" Christenson 1/16/98
+  reset=1930 type=formula formulafile=frac_ml.frm 
+  formulaname=051597-002 function=conj passes=t
+  center-mag=-0.0623949/-1.4988e-015/1.229181/1.3333 params=1/0
+  float=y inside=170 outside=atan viewwindows=1/1/yes/0/0
+  colors=00066ADDKGGP<9>PLcQMeRNfRNg<13>`YpaZqb_rc`rdbsect<8>moynqzprz<3>x\
+  xzzzzzyz<32>U0UU2U<2>W5TX6SY8RZ9Q_BP<4>eILgKKgLJ<6>mSCmTBnUAnVAoW9<2>qZ6\
+  r`5r`5<11>tg1th1ui0vj0<17>zz0Y00VM5<16>2L10K00UOt2Z0K0<42>0z00z00y0<12>0\
+  l00k00j2<20>0Eg000kkk
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 22:46:33 +1100
+; From: Ben Leighton <B.Leighton@bohm.anu.edu.au>
+; Subject: (fractint) sunsets in the undecided skies
+
+diffuseevents      { ; clouds reflecting in the ocean
+                     ; Copyright Ben Leighton
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=39man
+  center-mag=-0.09654759871689239/+0.32510255536910070/194.0595/1/-45
+  float=y periodicity=0
+  colors=000<13>FFFGGGGGH<35>31x20z31z<35>sgfuietie<12>feedddddd<45>beebee\
+  bdd<44>aaaaaabbb<28>dddeeeddd<21>888
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 22:45:27 EST
+; From: Nature102 <Nature102@aol.com>
+; Subject: Re: (fractint) Next version of DEEPER now avail.
+
+  Nazi    { ; It's a Nazi plot! Mr. Mandelbrot was brainwashed!!
+  reset=1960 type=mandel
+  center-mag=+0.39960241016028810/+0.19543117373730450/1.833849e+009
+  params=0/0 float=y maxiter=10000
+  colors=000L3S<53>KSK<2>KSQKSSKQSKOSKMS<40>xyyzzzyyy<36>000<36>x0Uz0Vz0G<\
+  66>E0SL0S<5>L2S
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 23:00:38 -0500 (EST)
+; From: aq936@freenet.carleton.ca (Michael Traynor)
+; Subject: Re: (fractint) On topic please
+
+SpaceWalk          { ; Mike Traynor
+                     ; aq936@freenet.carleton.ca
+  reset=300 type=mandel
+  corners=-0.754939999014/-0.754867005583/-0.0492465085672/-0.04919176\
+  34935 params=0.25/0.25 float=y maxiter=1000
+  colors=000000Hga<4>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7>bU\
+  sePrePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<7>h50\
+  <4>QdC<9>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>\
+  zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>B\
+  mn
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 23:07:21 EST
+; From: Nature102 <Nature102@aol.com>
+; Subject: Re: (fractint) On topic please
+
+  Thunder            { ; Lightning shooting from a glowing orb
+  reset=1960 type=mandel
+  center-mag=-1.25348091168648300/-0.34460367674248640/8.533333e+008
+  params=0/0 float=y maxiter=65536
+  colors=000w00<2>z00z00y01<93>00z00z00y<67>001000000100<81>w00
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 22:45:47 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, formula and par:  bubble method (long)
+
+justcircles        { ; copyright Kerry Mitchell
+; uses the bubbleboth_jul formula to only show concentric circles
+  reset=1960 type=formula formulafile=frac_ml.frm periodicity=0
+  formulaname=bubbleboth_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/1000/0.23/1/0 float=y maxiter=256 inside=0
+  cyclerange=0/255 colors=000<40>x00z00z00<40>zy0zz0zz1<39>\
+  zzxzzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000 decomp=256
+  }
+ 
+justrays           { ; copyright Kerry Mitchell
+; uses the bubbleboth_jul formula to only show rays of color
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_jul center-mag=0/0/0.85 decomp=256
+  params=0/1/1000000/0.5/0/1 float=y maxiter=256 inside=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0\
+  zz0yz<39>02z00z00z<41>000 cyclerange=0/255 periodicity=0
+  }
+ 
+julia-swirls       { ; copyright Kerry Mitchell
+; uses the bubbleboth_jul formula to combine circles & rays
+; into swirls
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/1000/0.185/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100\
+  <20>z00<20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000
+  }
+ 
+mandelbrot-swirls  { ; copyright Kerry Mitchell
+; uses the bubbleboth_man formula to combine circles & rays
+; into swirls
+  reset=1960 type=formula formulafile=frac_ml.frm passes=1
+  formulaname=bubbleboth_man center-mag=-0.5/0/0.88 periodicity=0
+  params=1000/0.5/1/1 float=y maxiter=256 inside=0 decomp=256
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<2\
+  0>z00<20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 22:48:07 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, formula, and par file--nearline method (long)
+
+julia-sample       { ; copyright Kerry Mitchell
+                     ; demonstrates use of nearline series of formulas
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=nearline01_jul passes=1 center-mag=0/0/0.8/1/-14
+  params=-0.125/0.649519052838/1000000/0 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=000<61>y99zAAzAAzBB<61>zzzzzzzyz<60>i1ih0hh0hg0g<61>000
+  }
+ 
+mandelbrot-sample  { ; copyright Kerry Mitchell
+                     ; demonstrates use of nearline series of formulas
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=nearline-theta_man passes=1
+  center-mag=-1.74757631770168900/+0.01796337199985331/465838.\
+  7/1/-84.5 params=1000000/120 float=y maxiter=500 inside=0
+  colors=F0K<60>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0\
+  <58>G2JF0KF0KF0KF0K cyclerange=0/255 periodicity=0 decomp=256
+  }
+
+;========================================================================;
+; Date: Sun, 18 Jan 1998 22:00:17 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: Re: (fractint) Next version of DEEPER now avail.
+
+crystal_sphere     { ; wizzle 1998 with newish color map
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=clips
+  center-mag=0/-0.183875/0.4536489/1/90 float=y maxiter=256 bailout=25
+  inside=bof60 outside=atan logmap=yes symmetry=xaxis periodicity=10
+  colors=0001A7<23>Amc<25>255143122000000000000000<17>PjqRmtSpwUszTqw<16>2\
+  34000000<4>000000001102<40>b0xc0zb0y<32>202000001<27>JGTKHUKHT<27>111000\
+  000000<3>000011032<2>186
+  }
+
+;========================================================================;
+; From: "Jay Hill" <ehill1@san.rr.com>
+To: <fractint@lists.xmission.com>
+; Subject: Re: (fractint) Next version of DEEPER now avail.
+; Date: Sun, 18 Jan 1998 23:29:55 -0800
+
+Langolier_Bell     { ; (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Langolier2 function=asinh
+  center-mag=0.0200125/-0.570123/0.845941 params=-0.013579/0.2468/36/0
+  float=y maxiter=2560 inside=bof61 outside=0
+  colors=000<7>c51<33>pZ8q_9s`9ta9ub9wcA<80>wKAwKAwLA<75>wl1wm0vl0<43>2200\
+  00000000
+  }
+ 
+Half_Dozen         { ; (c) Jay Hill, 1998
+            ; suggested by Nature102
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Langolier2 function=sin
+  center-mag=-0.00333556/0.0867642/0.5720206/1/-92.5
+  params=-0.013579/0.2468/100/0 float=y maxiter=2560 inside=bof60
+  colors=000<7>c51<33>pZ8q_9s`9ta9ub9wcA<80>wKAwKAwLA<75>wl1wm0vl0<43>2200\
+  00000000
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 00:31:16 -0500 (EST)
+; From: ao950@freenet.carleton.ca (Paul Derbyshire)
+; Subject: (fractint) D&C bug but not in simplgif.
+
+twoj2prn_00        {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=twofo_j
+  passes=1 center-mag=-1.00031/0.750313/1.333889/0.9999
+  params=0.49/0.5/1e-005/0 float=y maxiter=1048576 inside=0
+  outside=real periodicity=0 colors=z00zzz<125>zzz000<126>000
+  video=AF2 savename=frmig_00
+  }
+ 
+twoj2prn_01        {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=twofo_j
+  passes=1 center-mag=-1.00031/-0.750313/1.333889/0.9999
+  params=0.49/0.5/1e-005/0 float=y maxiter=1048576 inside=0
+  outside=real periodicity=0 colors=z00zzz<125>zzz000<126>000
+  video=AF2 savename=frmig_01
+  }
+ 
+twoj2prn_10        {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=twofo_j
+  passes=1 center-mag=1.00031/0.750313/1.333889/0.9999
+  params=0.49/0.5/1e-005/0 float=y maxiter=1048576 inside=0
+  outside=real periodicity=0 colors=z00zzz<125>zzz000<126>000
+  video=AF2 savename=frmig_10
+  }
+ 
+twoj2prn_11        {
+  reset=1960 type=formula formulafile=twofo.frm formulaname=twofo_j
+  passes=1 center-mag=1.00031/-0.750313/1.333889/0.9999
+  params=0.49/0.5/1e-005/0 float=y maxiter=1048576 inside=0
+  outside=real periodicity=0 colors=z00zzz<125>zzz000<126>000
+  video=AF2 savename=frmig_11
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 00:52:43 -0500
+; From: "Brock Kevin Nambo" <badger@innocent.com>
+; Subject: Re: (fractint) On topic please
+
+fractalSwastika    { ; Sunflash_the_Mace@msn.com
+  reset=1960 type=mandel
+  center-mag=-1.78567726381105200/-0.00039791420202556/650270.4/1/97.529
+  params=0/0 float=y maxiter=2147483647 colors=@glasses1.map
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 01:01:30 EST
+; From: Nature102 <Nature102@aol.com>
+; Subject: Re: (fractint) On topic please
+
+  Lily               { ; A pretty flower
+  reset=1960 type=mandel
+  center-mag=-1.99999911758727800/-0.00000000000018798/3.374226e+011
+  params=0/0 float=y maxiter=10000
+  colors=000j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zVFFbF<5>zb\
+  FFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zbNFjN<5>zj\
+  NFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zjVFrV<5>zr\
+  VFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zrbFzb<5>zz\
+  bFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<5>zbjFjj<5>zjjFrj<4>rrjzywccdWWWz000z0zz\
+  000zz0z0zzzzz00j0j0jj0
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 11:31:07 -0500
+; From: "Blake Hyde" <bhyde@connectu.net>
+; Subject: (fractint) The Debt
+
+Dancing_Gremlin    { ; Well, what would you have named it? :)
+                     ; Discovered by Blake Hyde (me)
+                     ; Color map by B.H., too, wonder of wonders.
+  reset=1960 type=julia center-mag=-1.4e-007/1.35e-007/0.6666667
+  params=0.2793424874544144/-0.009394437074661255
+  colors=000<3>000000022<21>Lzt<30>122000110<29>Yr4_t5Zs5<30>000<15>mcc<15\
+  >000000<14>Xgp<14>334000000<65>000
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 10:55:25 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: (fractint) Re: printing fractals
+
+Mean_Bug     { ; (c) Jay Hill, 1998
+                     ; The Mean Bug, touch and die!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-mand
+  center-mag=-0.3/0/0.9149714 params=0/200/0/-200/4/0 float=y
+  maxiter=25600 inside=bof60
+  colors=0ww1ww2cU4U75TA7`D<2>5Z8<2>Kc5Kc7mAAmAA000000000Rww<8>0ww000<21>0\
+  00wm0<5>wm0wj0wf0wb0<3>wW0wU0wU0<185>220111000000
+  savename=Mean_Bug
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 11:25:03 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) formula revision
+
+Two-Helmets        { ; (c) Jay Hill, 1998
+                     ; Foot ball helmets? Almost.
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=langolier3 function=sinh
+  center-mag=0.247756/0.378708/1.532688/1/-54.998 params=3/2/100/0
+  float=y maxiter=2560 inside=bof60
+  colors=Ucw<3>UcwUKw<2>wKw<7>wKcAmA<11>AmAwA5<224>wA4
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 12:13:22 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: (fractint) Sea-horses and Steven Covey
+
+Seahorse          { ; (c) Jay Hill, 1998
+                     ; Oh my, what happened to the Sea-horses
+                     ; Some blame the Ozone hole and UV!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-mand
+  center-mag=-0.75585721962559640/+0.05613931178221335/530.0102/1/80
+  params=100/0/100/0/4.1/0 float=y maxiter=25600 inside=bof60
+  outside=0
+  colors=Afc000<3>cK1<2>hK1iK2kK2mK3lK3<2>fK4<15>mKAmKAmKAmKAmKA<11>jJAjwh\
+  jJA<201>222222111000000
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 19:18:34 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: (fractint) Astrophysical Lunacy
+
+ap-102 { ; "Super Critical", AKA ap-102 by Mark "Bud" Christenson 1/19/98
+         ; from a .frm posted by Morgan L. Owens
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=jul1-138
+  function=sqr passes=b center-mag=-2.235e-005/-1.075e-006/0.6800012
+  params=1.4586/0 outside=real
+  colors=000<14>0zz<22>TWYVUWWVV<21>xx2zz0zy0<22>cW0cV0dU0<20>y20z00z01<29\
+  >z0xz0zz1z<29>zxzzzzyzy<21>IzIGzGGwH<13>FIZEE`GGa<22>zzz<13>UUUC_sCYs
+  }
+ 
+ap-105 { ; "Top", AKA ap-105 by Mark "Bud" Christenson 1/19/98
+         ; from a .frm posted by Morgan L. Owens
+         ; rotated -90 deg
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=jul1-138
+  function=tan passes=g center-mag=1.09615/-7.96e-006/0.5999983/1/-90
+  params=1.6/0 inside=zmag outside=atan
+  colors=000KKKMKKPKL<3>WKLYKMZKM`LNaLO<3>fNQgORhOSiPTjQU<8>pU_qV`rWasXbtY\
+  c<8>yjhzliznk<6>zxxzzzzzy<31>VV2UU0TV2<11>M`QL`SK`TJ`VI`W<5>C`dB`eA`f9`g\
+  8ah9aj8bk<3>HeoJfpMgqPgs<5>cmz<4>PkvLjvJjuGitEis<3>BenBdmCbk<3>EVeFTcEPa\
+  EL`DHZ0005MT<16>0K0Y3uZ2t0K0<42>0z00z00y0<12>0l00k02j0<20>gE0000kkk
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 20:12:32 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Monday - From Paul Carlson 
+
+;Paul asked me to post.....
+
+bubsjul1           { ; Copyright (c) Paul Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbles_julia_mset passes=t
+  center-mag=0.00981534/2.22045e-016/0.8503401
+  params=-0.746410388/0.184309007/0.188/16/2/125 float=y maxiter=10000
+  outside=summ colors=000zz0<123>aG0zVz<123>L5L000<3>000
+  }
+ 
+bubsjul2           { ; Copyright (c) Paul Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbles_julia_mset passes=t
+  center-mag=-0.00009916023966658/-0.00019030381371508/29\
+  027.04/1/-109.999
+  params=0.289631409419512/0.013316315158669/0.2/16/2/125
+  float=y maxiter=5000 inside=255 outside=summ
+  colors=000zz0<123>WC0zzz<123>OOO000<3>000
+  }
+  
+bubsmnd1           { ; Copyright (c) Paul Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbles_julia_mset passes=t
+  corners=-0.74886068/-0.7430740133/0.183034132/0.187374132
+  params=0/0/0.188/16/1/250
+  float=y maxiter=10000 outside=summ
+  colors=00Dzz0<249>UB0000<2>000
+  }
+  
+bubsmnd2           { ; Copyright (c) Paul Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbles_julia_mset passes=t
+  corners=-0.74886068/-0.7430740133/0.183034132/0.187374132
+  params=0/0/0.25/16/1/250 float=y maxiter=10000 outside=summ
+  colors=00Dzz0<236>UB000D<11>00D000<2>000
+  }
+
+;========================================================================;
+; Date: Mon, 19 Jan 1998 22:36:42 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, formula & par files--ghost (long)
+
+ghost-sample       { ; copyright Kerry Mitchell
+; sample image for ghost_jul
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ghost_jul
+  center-mag=0/0/1/1/90 params=0.39/0.12/1000000/4 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0
+  colors=VF0<62>yiUyiVyjVyjWxkW<27>jyijyiiyjiyjhxk<27>WjyVjyViyUiyUhx\
+  <59>0GW0GV0FV0FU1EU<27>F0GF0GG0FG0FH1E<27>UF0 cyclerange=0/255
+  }
+ 
+horiz-sample       { ; copyright Kerry Mitchell
+; sample image for ghost-horiz_man
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=ghost-horiz_man
+  center-mag=-1.94002389671361600/+0.00056527139874739/5498282
+  params=1000/1 float=y maxiter=1000 inside=0 decomp=256 periodicity=0
+  colors=VF0<62>yiUyiVyjVyjWxkW<27>jyijyiiyjiyjhxk<27>WjyVjyViyUiyUhx\
+  <59>0GW0GV0FV0FU1EU<27>F0GF0GG0FG0FH1E<27>UF0 cyclerange=0/255
+  }
+ 
+vertical-sample    { ; copyright Kerry Mitchell
+; sample image for ghost-vert_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=ghost-vert_jul center-mag=-0.524765/0.169456/40
+  params=0.28/0.005/1000000/1 float=y maxiter=256 inside=0 decomp=256
+  colors=F0V<7>iVy<3>yij<3>jyV<7>GV0<3>0GF3CJ<2>G0V<7>jVy<3>yji<3>iy\
+  V<7>FV0<3>0FG4BK87NC3RG0W<7>jWy<3>yji<3>iyU<7>FU0<3>0FG4BK87OC3SH1\
+  W<6>gSwkWx<2>wglxkh<2>lwYhxU<6>IY2EU1<2>2ID1EH<2>D2SH1X<6>gTwkXx<2\
+  >wglxkh<2>lwXhxT<6>IX2ET1<2>2ID1EH<2>D2TI2X<6>hTxlXw<2>xhkwlg<2>kx\
+  XgwT<6>HX1DT2<2>1HE2DI<2>E1TI2Y<6>hUxlYw<2>xhkwlg<2>kxWgwS<6>HW1DS\
+  2<2>1HE2DI<2>E1UJ3Y<6>iUy<3>yij<3>jyW<7>GW0<3>0GF<3>F0U
+  cyclerange=0/255 periodicity=0
+  }
+ 
+mandelbrot-ghost   { ; copyright Kerry Mitchell
+; sample image for ghost_man
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ghost_man
+  center-mag=-0.68/0/0.85 params=1000000/4 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0
+  colors=0VF<62>UyiVyiVyjWyjWxk<27>ijyijyjiyjiykhx<27>yWjyVjyViyUixU\
+  h<59>W0GV0GV0FU0FU1E<27>GF0GF0FG0FG0EH1<27>0UF cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Tue, 20 Jan 1998 23:46:07 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) Faster formulae - pointers for optimisation requested.
+
+Worshipful         { ; Something to go up behind the altar
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca03
+  function=abs passes=b
+  center-mag=0.0420974/-0.0420974/0.8313408/1/-45
+  params=2/-0.5/1/0 float=y maxiter=1023 inside=255 outside=atan
+  colors=000430<4>000000100<76>yV0zW0zW0zX0<29>zz0<15>zzz<15>zz0<30>zX0zW0\
+  zW0yW0<70>530
+  }
+
+;========================================================================;
+; Date: Tue, 20 Jan 1998 14:57:17 EST
+; From: Nature102 <Nature102@aol.com>
+; Subject: Re: (fractint) Astrophysical Lunacy
+
+  GelatinousCube     { ; The monster from AD&D invades the MSet.
+                     ; Nature Leseul
+  reset=1960 type=mandel
+  center-mag=-0.52706041835834050/+0.61952264705556860/3.606226e+010
+  params=0/0 float=y maxiter=10000
+  colors=000<34>000000010020<18>0U0<14>0C00A00B0<13>0S00U00U0<9>0K0UUUTTT<\
+  2>LLL<2>SSSUUUVVV<5>gggjjjkkk<2>sss<10>XXXUUUTTT<2>LLL<2>SSSUUUVVV<5>ggg\
+  jjjkkk<2>sss<15>000<85>000
+  }
+
+;========================================================================;
+; Date: Tue, 20 Jan 1998 17:58:18 -0700
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re: (fractint) Astrophysical Lunacy
+
+Clown              { ; Well.... kinda.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jul1-138
+  function=exp center-mag=-0.672217/0/0.7085708/1/90
+  params=1.4586/0 float=y maxiter=1023 potential=255/300/0
+  colors=00000z<29>22m22m22m22m22m<10>22m22m33m44m<44>xxyzzzzzz<93>zzzzzzz\
+  yyzxx<59>z00dNCdNC
+  }
+
+;========================================================================;
+; Date: 20 Jan 1998 21:54:24 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Lee's Truecolor Fractals
+
+FGZ-J_823z1        { ; (c) Jay Hill, 1998
+                     ; generalization of formula by Michael G. Wareman
+                     ; p1 is focus of Julia set
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-julia2
+  passes=1 center-mag=0.645915/0/10/1/90 params=3/0/3/0/-0.823/0
+  float=y maxiter=25600 inside=0
+  colors=00000e<9>Lzz<18>wzzzzzzzz<220>KKK000000
+  }
+
+;========================================================================;
+; Date: 20 Jan 1998 22:54:30 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, parameters, formula--field (long)
+
+solar-flare        { ; copyright Kerry Mitchell
+; sample parameter file for field2_man
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=field2_man passes=1 center-mag=-1.1/0/2.55/1/-90
+  params=1e+030/1 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>\
+  zz2zz0zy0<51>y20x00w00<30>200000000000000 cyclerange=0/255
+  }
+
+another-flare      { ; copyright Kerry Mitchell
+; sample parameter file for field2_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=field2_jul passes=1 center-mag=0.21045/0.224515/5.\
+  540202/1/-12.5 params=-0.745315595965/0.078886716126/1e+030/2
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0 colors=0\
+  00<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>zz2zz0zy0<51>y20x00w00<\
+  30>200000000000000 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: 20 Jan 1998 22:55:50 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, parameters, formulas--gaussian integers (long)
+
+mushroom-cloud     { ; copyright Kerry Mitchell
+; sample parameter file for gaussintt_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  periodicity=0 formulaname=gaussintt_jul passes=1
+  center-mag=0/0.75/1.333333 params=0.3/0/1e12/0 float=y
+  maxiter=256 inside=0 decomp=256 colors=000<20>z00<19>\
+  zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<20>z00<20>\
+  zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+
+nautilus           { ; copyright Kerry Mitchell
+; sample parameter file for gaussinttot_jul
+  reset=1960 type=formula formulafile=frac_ml.frm cyclerange=0/255
+  formulaname=gaussinttot_jul passes=1 periodicity=0
+  center-mag=-0.524765/0.169456/40 params=0.28/0.005/1e12/100
+  float=y maxiter=1000 inside=0 decomp=256 colors=GTg<18>AJXA\
+  JWAIVAIU9HU<33>001000001<31>9GS9HT9HUAIUAIVAJW<25>IVjJWkJWk\
+  KXlKXl<18>RftSftSgtTgtThu<3>VjvVjvWkvXkw<14>dsyesyftygtyhuz\
+  <3>kwzlwznxzoxz<2>tzzzzztzzryz<4>kwzjvzivzhuzhuzgty<8>`px`o\
+  x_ox_nxZnx<5>WkvVjvVjvViv<12>PcrObqObqOapNap<17>HTh
+  }
+
+splatter-paint     { ; copyright Kerry Mitchell
+; sample parameter file for gaussintr_man
+  reset=1960 type=formula formulafile=frac_ml.frm cyclerange=0/255
+  formulaname=gaussintr_man passes=1 center-mag=-0.8113020344287\
+  9510/+0.20153444676409190/108.7713 params=4/0 float=y maxiter=1000
+  inside=0 decomp=256 periodicity=0 colors=000<3>zo0<3>zzz<3>PPz<3>\
+  000<3>zo0<3>zzz<3>PPzJJjDDV66F110HE0XR0lc0zo1zrHztXzwlyyz<2>YYzPP\
+  yIIiCCU66E220<2>md0zo2<2>zwmyyzoozffzXXzOOx<2>66D330<2>ne0zo3zrJz\
+  uZzwnxxz<2>XXzOOw<2>55C440<2>of0zo4zrKzu_zxoxxznnzeezWWzOOv<2>55B\
+  540<2>pf0zp5<2>zxpwwzmmzddzVVzNNu<2>44A650<2>qg0zp6<2>zxqvvzmmzcc\
+  zVVzNNt<2>449760<2>rh0zp7<2>zxrvvzllzcczUUzMMs<2>448870<2>si0zp8<\
+  2>zxsuuzllzbbzUUzMMr<2>337980<2>tj0zp9<2>zxtuuz<2>TTzMMq<2>336A80\
+  <2>uj0zpA<2>zyuttz<2>SSzLLp<2>225B90<2>vk0zqB<2>zyvsszjjz``zSSzLL\
+  o<2>224CA0<2>wl0zqC<2>zywssz<2>RRzKKn<2>223DB0<2>xm0zqD<2>zyxrrzi\
+  iz__zRRzKKm<2>112EC0<2>yn0zqE<2>zyyrrz<2>QQzKKl<2>111
+  }
+
+;========================================================================;
+; Date: Wed, 21 Jan 1998 22:15:05 -0000
+; From: Peter Moreland <peter@getitonbangagong.demon.co.uk>
+; Subject: Re: (fractint) 3d_stalks
+
+Heart_One          { ; (C)1998 Peter Moreland
+                     ; Jan 21, 1998   0:00:15.04 P200MMX 1024X768
+                     ; Email: peter@getitonbangagong.demon.co.uk
+                     ; *** No Commercial Use Without Permission ***
+  reset=1960 type=manfn+zsqrd function=log
+  center-mag=-0.61235100000007710/-0.02938849999992099/0.420909/1/-87.5/0.\
+  001 params=0/0 float=y maxiter=32000 inside=0 potential=255/300/150
+  decomp=265 biomorph=0
+  colors=000zzP<23>zz1zz0zy0yx0<48>PCEPBFOAFN9GM8G<5>G2JF0KF0K<13>I0NI0OI0\
+  OI0PI0P<34>R0YR0ZR0ZS0_S0_<4>T0bT0bU1bU2c<62>zzzzzzzzy<35>zzQ
+  }
+Heart_Two          { ; (C)1998 Peter Moreland
+                     ; Jan 21, 1998   0:00:14.11 P200MMX 1024X768
+                     ; Email: peter@getitonbangagong.demon.co.uk
+                     ; *** No Commercial Use Without Permission ***
+  reset=1960 type=tetrate
+  center-mag=-1.43442799999999600/-0.00860950000000882/1.763211/1/90
+  params=0/0 float=y maxiter=60 inside=epsiloncross outside=mult
+  potential=255/511/0 invert=2.94416999816895/0/0 decomp=256
+  colors=000dGU<11>zg0<13>nGDmDEmCDmBDmACl8B<2>r6C<15>IfC<21>zz9<60>2I10H0\
+  0I1<8>4WH<4>MU`YUzUTh<6>cOheNgeOg<25>soltpluqlvrlwslxumyvmzwn<47>C2W<8>V\
+  6aY7bZ9``BZbEW
+  }
+
+;========================================================================;
+; Date: Wed, 21 Jan 1998 22:40:33 -0500
+; From: Gedeon Peteri <gedeon@InfoAve.Net>
+; Subject: Re: (fractint) Lee's Truecolor Fractals
+
+Hot_lava_brot      { ; (c) Gedeon Peteri
+                     ; Jan 20, 1998
+  reset=1960 type=magnet1m passes=b
+  center-mag=+1.78301513414121800/-1.75824140412015300\
+  /101.3055/1/4.998 params=0/0 float=y maxiter=65535
+  bailout=64 fillcolor=222 inside=222
+  colors=0V0GKiGIhFGg<2>CEeBDdABc<10>00W`1F<6>z80<7>\
+  `GF000<6>dFH<7>0W0WZz<6>kmu<7>WXz0TW<13>M0mLTl<6>B0d\
+  <7>0TWWW0<6>gn0<7>uW1s01<6>h`1<7>W00G0GH0I\
+  <13>fml<15>G0G00G<14>deH<15>00GW00<14>zGW<15>W000GW\
+  <14>Eng<6>LZlMXmLVl<3>HMi
+  }
+
+;========================================================================;
+; Date: Thu, 22 Jan 1998 00:20:36 -0500 (EST)
+; From: ao950@freenet.carleton.ca (Paul Derbyshire)
+; Subject: (fractint) The elusive Herman ring: Caught at last!
+
+FixedPoint         {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.72043/0.391134/0.1937984 params=1/0/3/1.2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000G08<29>xKKzLLzMM<29>zxxzzzzzz<29>rizqhzqhzphz<21>Vbz<6>04Gz0Gz\
+  00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>z\
+  hz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz<62>zzz
+  }
+
+InfAndZero         {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0/0/0.6666667 params=1/0/0.134/0.618/0.001/0 float=y
+  maxiter=2000 inside=0 outside=real
+  colors=000G08<29>xKKzLLzMM<29>zxxzzzzzz<29>rizqhzqhzphz<21>Vbz<6>04Gz0Gz\
+  00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>z\
+  hz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz<62>zzz
+  }
+
+InfAndZero_2       { ; Beautiful!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.3/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000G08<29>xKKzLLzMM<29>zxxzzzzzz<29>rizqhzqhzphz<21>Vbz<6>04GA0U<\
+  5>hennlrtsvzzzpuz<4>0Vz0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>z\
+  hz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz<62>zzz
+  }
+
+InfAndZero_3       { ; Beautiful!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.5/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000G08<29>xKKzLLzMM<29>zxxzzzzzz<29>rizqhzqhzphz<21>Vbz<6>04GA0U<\
+  5>hennlrtsvzzzpuz<4>0Vz0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>z\
+  hz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz<62>zzz
+  }
+
+InfAndZero_4       { ; Bubbles of beautiful color
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.6/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000G08<29>xKKzLLzMM<29>zxxzzzzzz<29>rizqhzqhzphz<21>Vbz<6>04G0AU<\
+  5>ehnlnrstvzzzupz<4>V0zG0z<13>205000111<29>fxohzqhzl<62>zzz
+  }
+
+InfAndZero_5       { ; Chaos
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.8/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000kgz<35>H2AG08I18<14>zLL<15>yxz<2>xuzxuzwtzwtzwsz<17>rizqhzqhzp\
+  hz<21>Vbz<6>04GU0A<5>nehrlnvstzzzupz<4>V0zG0z<13>205000111<29>xxfzzhzzh<\
+  62>zzz
+  }
+
+InfAndZero_5b      { ; Galaxies!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.8/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000<29>M8IN9JM8H<5>G08<14>wJKzLLzNN<14>yxz<2>xuzxuzwtzwtzwsz<17>r\
+  izqhzqhzphz<21>Vbz<6>04G000<45>LLUMMVMMVNNV<77>zzz
+  }
+
+InfAndZero_6       { ; MegaGalaxies
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.85/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000<29>M8IN9JM8H<5>G08<14>wJKzLLzNN<14>yxz<2>xuzxuzwtzwtzwsz<17>r\
+  izqhzqhzphz<21>Vbz<6>04G000<45>LLUMMVMMVNNV<77>zzz
+  }
+
+InfAndZero_7       { ; Flowerlace
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.812377/1.06798/0.3208747 params=1/0/1.9/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real colors=@funky2.map
+  }
+
+Siegel1            { ; A Siegel disk case
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=1 center-mag=0.812377/1.06798/0.3208747
+  params=1/0/2/2/0.001/0 float=y maxiter=200 inside=0 outside=real
+  colors=000zzz<28>rhdqgcrid<5>zrj<14>gf3ee0cc0<8>HG0<26>G16F07G08G08H08<2\
+  4>O0W<6>vjzzzz<30>fllfllekkdjj<42>DEECEEBDDBDDBDD<21>DD6ED5GF6<21>okL
+  }
+
+ParabolicFixed     { ;  
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=t center-mag=0.812377/0.0440538/0.4506667
+  params=1/0/2/0/0.001/0 float=y maxiter=256 inside=0 outside=real
+  colors=000A0K<46>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<24>bzV<6>4G0K0\
+  0<29>KDDKDDKEELFF<43>mllnllommommomm<21>mmtlmujkt<21>BFe
+  }
+
+InfAndZero_8       { ; Weeeeeird
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=t center-mag=0.812377/0.0440538/0.4506667
+  params=1/0/1.2/0/0.001/0 float=y maxiter=256 inside=0 outside=real
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+InfAndZero_9       { ; Weeeeeird
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=t center-mag=0.812377/0.0440538/0.4506667
+  params=1/0/1.01/0/0.001/0 float=y maxiter=256 inside=0 outside=real
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+InfAndZero_9b      { ; Weeeeeird
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=t center-mag=1.00325/-0.0195923/5.24031
+  params=1/0/1.01/0/0.001/0 float=y maxiter=256 inside=0 outside=real
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+InfAndZero_10      { ; Boiling Basins
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.00325/-0.0195923/0.3534904 params=1/0/1.1/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+InfAndZero_11      { ; A quadratic dendrite mini Julia can be seen.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.973756/0.290225/5.523287 params=1/0/1.1/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+InfAndZero_12      { ; A quadratic Cantor mini Julia can be seen.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.973756/0.290225/5.523287
+  params=1/0/1.1008/0.0002/0.001/0 float=y maxiter=2000 inside=0
+  outside=real
+  colors=000bdqbap<16>3CM0AK0AL<44>GDh<4>KJwLLzNNz<8>jiz<26>yjtzkszjrzjrzi\
+  r<11>zfgzefzeezdezce<8>zVb<6>G04<13>201000001<13>CCIDDKDDK<45>llmllnmmom\
+  mommo<21>mtmmulktj<3>eqd
+  }
+
+2-cycles_1         { ; A pair of two-cycles
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.399329/0/0.6391454 params=1/0/1.3/0/0.001/0 float=y
+  maxiter=2000 inside=0 outside=real
+  colors=000bdqbap<16>3CM0AK0AL<44>GDh<4>KJwLLzNNz<8>jiz<26>yjtzkszjrzjrzi\
+  r<11>zfgzefzeezdezce<8>zVb<6>G04<13>201000001<13>CCIDDKDDK<45>llmllnmmom\
+  mommo<21>mtmmulktj<3>eqd
+  }
+
+InfAndZero_13      { ; Spinblobs
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.399329/-0.0995335/0.554198 params=1/0/1.1/0.03/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000bdqbap<16>3CM0AK0AL<44>GDh<4>KJwLLzNNz<8>jiz<26>yjtzkszjrzjrzi\
+  r<11>zfgzefzeezdezce<8>zVb<6>G04<13>201000001<13>CCIDDKDDK<45>llmllnmmom\
+  mommo<21>mtmmulktj<3>eqd
+  }
+
+2-cycle_2          { ; Spiralicious
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=1 center-mag=0.399329/0/0.4544423 params=1/0/1.95/0.1/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000A4Q<77>dbqdbqdcqecqedq<43>zzz9EU<78>dezdezdezefzefz<43>zzz
+  }
+
+4-cycle_1          { ; A four-cycle
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=t center-mag=0.680396/0.569371/0.3903175
+  params=1/0/1.9/1/0.001/0 float=y maxiter=2000 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzAQJ<47>SmVSmVSmVTmWTmW<74>zzz
+  }
+
+InfAndZero_14      { ; Beautiful whirlpools.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.680396/0.925056/0.3622146 params=1/0/1.95/1.6/0.001/0
+  float=y maxiter=16384 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+FixedPoint_2       { ; Twistyphant
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.16401/3.08474/0.1293624 params=1/0/2.04/6/0.001/0
+  float=y maxiter=256 inside=0 outside=real periodicity=0
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+InfAndZero_15      { ; Weeeeird
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.660246/-0.140387/0.3334082 params=0/1/1.7/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+InfAndZero_16      { ; Blobbery
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.660246/0.485287/0.3334082 params=0/1/1.6/1/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+2-cycle_3          { ; Weirdz
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.660246/0.485287/0.3334082 params=-1/0/1.7/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+CubeRoots          { ; Looks a bit like Newton to find cube roots!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.660246/0.485287/0.3334082 params=0.5/0.85/1.7/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+FixedPoint_3       { ; Weeeeeird
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.660246/0.485287/0.3334082 params=0.5/0.9/2/0.2/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+InfAndZero_17      { ; Spirella
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.754067/0.062957/0.3334082 params=0.5/1/2/0.2/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=0009AQ4AQ<76>bdqbdqcdqceqdeq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+InfAndZero_18      { ; Spiroa
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.438809/-0.0158831/0.5906087
+  params=-0.7373688780783199/-0.6754902942615236/1.492/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000A9QA4Q<76>dbqdbqdcqecqedq<43>zzzJAQ<47>VSmVSmVSmWTmWTm<74>zzz
+  }
+
+8-cycle_1          { ; Weird rings
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.32231/-0.0158831/0.3304479
+  params=-0.7373688780783199/-0.6754902942615236/3/0/0.001/0 float=y
+  maxiter=256 inside=0 outside=real
+  colors=000A9QA4Q<76>dbqdbqdcqecqedq<43>zzzQAJ<47>mSVmSVmSVmTWmTW<74>zzz
+  }
+
+HERMAN_01          { ; Herman Ring!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.57026/-0.0158831/0.2523142
+  params=-0.7373688780783199/-0.6754902942615236/3.4/0/0.001/0 float=y
+  maxiter=256 inside=0 outside=real periodicity=0
+  colors=0009QA4QA<76>bqdbqdcqdcqedqe<43>zzzQAJ<47>mSVmSVmSVmTWmTW<74>zzz
+  }
+
+InfAndZero_19      { ; Forest and Lakes
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.57026/-0.0158831/0.2523142
+  params=-0.7373688780783199/-0.6754902942615236/3.4/0.31/0.001/0
+  float=y maxiter=256 inside=0 outside=real periodicity=0
+  colors=0009QA4QA<76>bqdbqdcqdcqedqe<43>zzzAJQ<47>SVmSVmSVmTWmTWm<74>zzz
+  }
+
+InfAndZero_19b     { ; Forest and Lakes zoom
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.45449/-0.0158831/1.855251
+  params=-0.7373688780783199/-0.6754902942615236/3.4/0.31/0.001/0
+  float=y maxiter=16384 inside=0 outside=real periodicity=0
+  colors=0009QA4QA<76>bqdbqdcqdcqedqe<28>rwsrwsswsswstws<10>zzvAJQ<47>SVmS\
+  VmSVmTWmTWm<74>zzz
+  }
+
+InfAndZero_20      { ; Weird spirals
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.45449/-0.0158831/0.6502943
+  params=0.09801751303322832/-0.9951846899640191/1.5/0/0.001/0 float=y
+  maxiter=16384 inside=0 outside=real periodicity=0
+  colors=0009QA4QA<76>bqdbqdcqdcqedqe<28>rwsrwsswsswstws<10>zzvAJQ<47>SVmS\
+  VmSVmTWmTWm<74>zzz
+  }
+
+InfAndZero_20b     { ; Conch-iousness
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.59078/-0.667078/13.00589
+  params=0.09801751303322832/-0.9951846899640191/1.5/0/0.001/0 float=y
+  maxiter=16384 inside=0 outside=real periodicity=0
+  colors=000DJQ<44>ORdORdPSePTf<13>VYkWZkWZkW_kX_k<43>pypqzqqzqrzr<12>zzzJ\
+  DQ<44>XTkYUlYUlZVmZVm<28>hfqhfrifrifrjfr<28>yrrzsszsszss<12>zzz
+  }
+
+InfAndZero_21      { ; Bliral
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.344086/-4.44089e-016/0.5226667
+  params=0.09801751303322832/-0.9951846899640191/1.7/0.2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000DJQ<44>ORdORdPSePTf<13>VYkWZkWZkW_kX_k<43>pypqzqqzqrzr<12>zzzJ\
+  DQ<44>XTkYUlYUlZVmZVm<28>hfqhfrifrifrjfr<28>yrrzsszsszss<12>zzz
+  }
+
+InfAndZero_22      { ; Bliral_2
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.344086/-4.44089e-016/0.5226667
+  params=0.09801751303322832/-0.9951846899640191/1.7/0.02/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000DJQ<44>ORdORdPSePTf<13>VYkWZkWZkW_kX_k<43>pypqzqqzqrzr<12>zzzJ\
+  DQ<44>XTkYUlYUlZVmZVm<28>hfqhfrifrifrjfr<28>yrrzsszsszss<12>zzz
+  }
+
+InfAndZero_23      { ; Goldenthreads
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.842819/-8.88178e-016/0.4285867
+  params=0.09801751303322832/-0.9951846899640191/2.2/0.02/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000K00<125>zz0U00<126>zz0
+  }
+
+InfAndZero_24      { ; Jewels, Emeralds, and Rubies
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=1.27159/-1.77636e-015/0.3404555
+  params=0.09801751303322832/-0.9951846899640191/2.7/0.02/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=0000K0<125>zz0U00<126>zz0
+  }
+
+InfAndZero_25      { ; Jewels, Red Opal, and Lapis Lazuli
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=-1.48477/0.251341/0.2669171
+  params=0.09801751303322832/-0.9951846899640191/-3.2/0.5/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=00000K<125>0zzU00<126>zz0
+  }
+
+FixedPoint_4       { ; Blues
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.295015/1.62085/0.2284811
+  params=0.09801751303322832/-0.9951846899640191/1/3/0.001/0 float=y
+  maxiter=2000 inside=0 outside=real colors=000AKU<125>Nfz5AK<126>kpz
+  }
+
+4-cycle_2          { ; Dragons clutching Rubies
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.397337/1.92792/0.2038051
+  params=0.09801751303322832/-0.9951846899640191/1.4/3.7/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000KAU<125>fNzK5A<7>TEJ<6>tej<111>zkp
+  }
+
+4-cycle_3          { ; Lakes behind walls
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.397337/2.30239/0.1671202
+  params=0.09801751303322832/-0.9951846899640191/0.5/3.8/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=0000K0<35>MxdNzfNzf<87>zzz5AK<7>EJT<6>ejt<111>kpz
+  }
+
+4-cycle_4          { ; Fire and Ice
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=0.397337/2.30239/0.1671202
+  params=0.09801751303322832/-0.9951846899640191/-0.5/3.9/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000K00<35>xdMzfNzfN<87>zzz5AK<7>EJT<6>ejt<111>kpz
+  }
+
+InfAndZero_26      { ; Firestorm
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  passes=1 center-mag=0.0541845/-0.0848576/0.2347194
+  params=0.09801751303322832/-0.9951846899640191/2/7/0.001/0 float=y
+  maxiter=2000 inside=0 outside=real
+  colors=000K00<35>xdMzfNzfN<87>zzz5AK<7>EJT<6>ejt<111>kpz
+  }
+
+InfAndZero_27      { ; JackFrost
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=-1.47555/-0.756048/0.2347194
+  params=0.09801751303322832/-0.9951846899640191/-3/-1.2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=00000K<35>dMxfNzfNz<87>zzzA5K<7>JET<6>jet<111>pkz
+  }
+
+HERMAN_02          { ; Liouville number Herman ring
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=-1.47555/-0.133929/0.2347194
+  params=0.09801751303322832/-0.9951846899640191/-3.3/0/0.001/0
+  float=y maxiter=100000 inside=0 outside=real
+  colors=000zJc<76>11B00A00A00A<45>000zz0<77>L10K00K00K00<45>000
+  }
+
+HERMAN_02b         { ; Liouville number Herman ring zoom
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_J
+  center-mag=-2.50837/0.310442/2.347194
+  params=0.09801751303322832/-0.9951846899640191/-3.3/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000zJc<76>11B00A00A00A<45>000zz0<77>L10K00K00K00<45>000
+  }
+
+C-Mandel_1         { ; The M-set in the c-plane, alpha is 1.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_Mc
+  center-mag=0/0/0.6666667 params=1/0/0/0/0.001/0 float=y maxiter=2000
+  inside=0 outside=real
+  colors=000QJD<44>dROdROeSPfTP<13>kYVkZWkZWk_Wk_X<43>pypqzqqzqrzr<12>zzzQ\
+  DJ<44>kTXlUYlUYmVZmVZ<28>qfhrfhrfirfirfj<28>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_1z1       { ; The M-set in the c-plane, alpha is 1.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_Mc
+  center-mag=-1.19453/0.400443/1.626016 params=1/0/0/0/0.001/0 float=y
+  maxiter=2000 inside=0 outside=real
+  colors=000JDQ<44>ROdROdSPeTPf<13>YVkZWkZWk_Wk_Xk<43>yppzqqzqqzrr<12>zzzQ\
+  DJ<44>kTXlUYlUYmVZmVZ<28>qfhrfhrfirfirfj<28>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_1z1a      { ; The M-set in the c-plane, alpha is 1.
+                     ; Scepter Valley
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_Mc
+  center-mag=+1.41142913000977500/+0.02727379400260770/239.12
+  params=1/0/0/0/0.001/0 float=y maxiter=16384 inside=0 outside=real
+  colors=000DJQ<125>mzmQDJ<126>zzc
+  }
+
+C-Mandel_i         { ; The M-set in the c-plane, alpha is i.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0.239075/0.298587/0.1755667 params=0/1/0/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000QJD<44>dROdROeSPfTP<12>kYVkYVkZWkZWk_W<44>pypqzqqzqrzr<12>zzzQ\
+  DJ<42>jSWkTXkTXlUYlUY<29>qfhqfhrfhrfirfi<29>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_-1        { ; The M-set in the c-plane, alpha is -1
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0.239075/0.298587/0.1755667 params=-1/0/0/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000QJD<44>dROdROeSPfTP<12>kYVkYVkZWkZWk_W<44>pypqzqqzqrzr<12>zzzQ\
+  DJ<42>jSWkTXkTXlUYlUY<29>qfhqfhrfhrfirfi<29>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_0.5       { ; The M-set in the c-plane, alpha is 0.5
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0.239075/0.0015422/0.3539652 params=0.5/0/0/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000QJD<44>dROdROeSPfTP<12>kYVkYVkZWkZWk_W<44>pypqzqqzqrzr<12>zzzQ\
+  DJ<42>jSWkTXkTXlUYlUY<29>qfhqfhrfhrfirfi<29>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_0.5+0.8i  { ; The M-set in the c-plane, alpha is 0.5+0.8i.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0/4.9738e-014/0.009469697 params=0.5/0.8/0/0/1e-006/0
+  float=y maxiter=256 inside=0 outside=real periodicity=0
+  colors=000QJD<44>dROdROeSPfTP<12>kYVkYVkZWkZWk_W<44>pypqzqqzqrzr<12>zzzQ\
+  DJ<42>jSWkTXkTXlUYlUY<29>qfhqfhrfhrfirfi<29>rrysszsszssz<12>zzz
+  }
+
+C-Mandel_iz1       { ; Seahorse valley?
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=6.6038/-0.00288984/2.033325 params=0/1/0/0/0.001/0
+  float=y maxiter=16384 inside=0 outside=real
+  colors=000DJQ<60>oxopyppyppyp<61>zzzQDJ<59>povqpwqqxrryrry<62>zzz
+  }
+
+C-Mandel_Golden    { ; The M-set in the c-plane, alpha is exp(2*pi*i*a) with
+                     ; a the Golden mean 0.6180339...
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=1.70479/0.453716/0.08591065
+  params=-0.7373688780783199/-0.6754902942615236/0/0/1e-006/0 float=y
+  maxiter=32768 inside=0 outside=real periodicity=0
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<26>jytkzsjzrjzrizr<2\
+  4>bzV<6>4G0<13>120000100<13>ICCKDDKDD<45>mllnllommommomm<21>mmtlmujkt<3>\
+  deq
+  }
+
+C-Mandel_Golden_z1 { ; The M-set in the c-plane, alpha is exp(2*pi*i*a) with
+                     ; a the Golden mean 0.6180339...
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0.0663148/-0.0622686/0.3068238
+  params=-0.7373688780783199/-0.6754902942615236/0/0/1e-006/0 float=y
+  maxiter=512 inside=0 outside=real periodicity=0
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<11>ipwiqwiqwiqw<29>p\
+  ezzde<14>U9EN59G04<10>502104103102000<14>ICCKDDKDD<43>ljjmkkmllmll<30>qq\
+  d
+  }
+
+C-Mandel_Liouville { ; The M-set in the c-plane, alpha is exp(2*pi*i*a) with
+                     ; a the Liouville number equal to the sum over natural n
+                     ; of 2 to the power minus n factorial.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_mc
+  center-mag=0.236231/1.77636e-015/0.07236409
+  params=0.09801751303322832/-0.9951846899640192/0/0/1e-006/0 float=y
+  maxiter=3500 inside=0 outside=real periodicity=0
+  colors=000bdq<17>C3MA0KA0L<44>DGh<4>JKwLLzNNz<8>ijz<11>ipwiqwiqwiqw<29>p\
+  ezzde<14>U9EN59G04<10>502104103102000<14>ICCKDDKDD<43>ljjmkkmllmll<30>qq\
+  d
+  }
+
+HERMAN_03          { ; Herman ring elephants!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.77553/-0.0389762/0.2198578
+  params=0.8/0.6/3.75/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real colors=000KFP<125>puzQAJ<46>mSVmSVmSVmSVmTW<75>zzz
+  }
+
+HERMAN_03z1        { ; Herman ring elephants!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=3.35243/-0.928493/4.397157 params=0.8/0.6/3.75/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000AJQ<46>SVmSVmSVmSVmTWm<74>zzzPFK<12>SIMSIMTJNTKN<110>zup
+  }
+
+HERMAN_03z2        { ; Herman ring elephants!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=3.35065/-0.364243/4.397157 params=0.8/0.6/3.75/0/0.001/0
+  float=y maxiter=256 inside=0 outside=real
+  colors=000A0c<21>J9yKAzKAzKBz<100>zzzA00<126>zup
+  }
+
+HERMAN_04          { ; Gorgeous greens.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.80092/-8.88178e-016/0.2590888
+  params=-0.6/0.8/3.75/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000tyo<125>0A0Ac0<22>Jy9KzAKzAKzB<19>TzLTzLTzLTyLSyL<76>0A0
+  }
+
+HERMAN_04z1        {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  passes=t center-mag=-1.37634e-005/-0.0603861/1.061839
+  params=-0.6/0.8/3.75/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000oty<125>00Ac0A<22>y9JzAKzAKzBK<19>zLTzLTzLTyLTyLS<76>A00
+  }
+
+A-Mandel_1         { ; The M-set in the alpha plane, c is 3.5
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HRing_Ma
+  center-mag=0.808717/-4.44089e-016/0.5466667
+  params=0/0/3.5/0/0.0001/0 float=y maxiter=2000 inside=0 outside=real
+  colors=000bCC<10>hDG<5>zLL<8>zfgzijzij<25>tjyskzrjzrjzriz<13>eezezd<9>bz\
+  V<6>4G0<13>120000100<3>644447<8>CCIDDKDDK<45>llmllnmmommommo<21>tmmumltk\
+  j<3>qeddbq<17>3CM0AK0AL<32>BCa
+  }
+
+InfAndZero_28      { ; Gorgeous orange fireswirls.
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.94166/-0.0603861/0.2046131
+  params=-0.95/-0.2/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000oty<125>00AcA0<22>yJ9zKAzKAzKB<19>zTLzTLzTLyTLySL<76>A00
+  }
+
+InfAndZero_29      { ; Gorgeous!
+  reset=1960 type=formula formulafile=frac_ml.frm  formulaname=hring_j
+  center-mag=1.94166/-0.0603861/0.2046131
+  params=-0.97/-0.2/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000cA0<22>yJ9zKAzKAzKB<19>zTLzTLzTLyTLySL<75>B11oyt<11>lvpkuokuoj\
+  tnisn<110>0A0
+  }
+
+HERMAN_05          { ; Gorgeous!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  passes=t center-mag=1.94166/-0.0603861/0.2046131
+  params=-0.98/-0.2/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real colors=000oyt<125>11BKAc<31>KczKczKcy<92>B11
+  }
+
+InfAndZero_30      { ; BlueFuzzRings
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.94166/-0.0603861/0.2046131
+  params=-0.65/0.75/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real colors=000yot<125>11BKAc<31>KczKczKcy<92>B11
+  }
+
+HERMAN_06          { ; Starfish!
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  passes=t center-mag=3.78026/0.0127637/1.199655
+  params=-0.8/0.6/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000tqz<29>f_peZoeZoeZn<92>B11cAK<29>yaKybKzcKzcKycK<92>11B
+  }
+
+InfAndZero_31      { ; Elephoids
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j2
+  center-mag=1.37766/0.053528/0.2059799 params=0.82/0.57/3.6/0/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=Ksvqtz<29>_fpZeoZeoZen<92>1B1KKc<30>KxyKzzKzz<93>BB1
+  }
+
+InfAndZero_31b     { ; Conchoids
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j2
+  center-mag=3.44154/2.55217/3.742367 params=0.82/0.57/3.6/0/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000UAK<29>prxqtzqtz<75>C9IB8HA7GA7F97E<13>000KAU<30>xrpztqztq<75>\
+  IC9HB8GA7FA7E97<13>000
+  }
+
+InfAndZero_31c     { ; Skin of A(infinity) closeup
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j2
+  center-mag=3.44781/2.61558/43.5159 params=0.82/0.57/3.6/0/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=000Xfp<29>A28906906<75>nhqoirpjspksqls<13>zzzpfX<30>82A609609<75>\
+  nhqoirpjspksqls<13>zzz
+  }
+
+;========================================================================;
+; Date: Thu, 22 Jan 1998 13:24:28 EST
+; From: MAksoy <MAksoy@aol.com>
+; Subject: (fractint) A PAR that keeps perfect time
+
+fractal_wristwatch { ; ... a timepiece of beauty in an age of chaos...
+  ;colorcycle to see it in action!
+  ;by Mark Aksoy, maksoy@aol.com, 1998.
+  reset=1960 type=manlam(fn||fn) function=conj/cos
+  center-mag=-3.56875614001061400/+1.08110566967974200/6.475259e+007/1/-77\
+  .5 params=0/0/10 float=y inside=zmag outside=summ decomp=256
+  colors=5oc<24>1AJ08I08I<4>07F<12>paa<2>dUU`RRZPP<9>F55D33D00<2>A00<15>eX\
+  0gZ0ja0mc0<3>wk0<3>mc1kb1i`2f_3<16>3AH08I08I<19>964964A74<5>C92D92E93<28\
+  >n`_paapaa<28>keBjfAlhA<6>zuD<27>Bm`9la8nc<5>5zk5xi5vg5te<2>5oc
+  }
+
+;========================================================================;
+; Date: Fri, 23 Jan 1998 01:25:56 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: (fractint) 3D glasses for Fractint viewing...so many to view
+
+AlienShip          { ; (p) Jay Hill, 1998
+                     ; uses invert to get nice ship lines
+                     ; fgz-m-551i
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fgz-mand
+  center-mag=-2.91055/5.32907e-015/0.1909855/1/90 params=3/0/3/0/0/0
+  float=y maxiter=256 inside=bof60 invert=1/-0.551/0 decomp=256
+  colors=wK0<6>AAA<22>111000001\
+  <45>0Tu0Uw0Uw<171>022111000000
+  }
+
+;========================================================================;
+; Date: Fri, 23 Jan 1998 19:48:24 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Explanation, parameters, & formulas--range (long)
+
+range-r-1-sample   { ; copyright Kerry Mitchell
+; sample parameter file for range-r-1_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-r-1_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/4/0/1/0.05 float=y maxiter=256 inside=0
+  colors=000<11>z00<3>zA0<6>zi0zo0xq2vt4tw6qz9<11>0zz<10>0Uz0\
+  Rz0Px0Nu0Ls0Ip<3>0BW<3>100<9>p00v00z00<2>z80zB0zG0<4>ze0zk0\
+  zo0<2>sw7pzAlzE<10>0zz<11>0Rz<2>0Kr0Io0Gj0Fe0D_0BU08M05E036\
+  200<9>r00w00z10z30z60z80zC0<5>zg0zl0yp1ws3uu5sx7ozB<9>7zs3z\
+  w0yz<10>0Tz0Qy0Ow0Mt0Kr0In0Gi0Ec0CZ<3>024300<10>x00z10z40z6\
+  0z90zD0<5>zh0zm0yq1ws3tv6ry8<10>6zt2zx0xz<11>0Qy0Ov0Lt0Jq0H\
+  m0Fg0Eb0CY<3>012 cyclerange=0/255 decomp=256 periodicity=0
+  }
+
+range-r-2-sample   { ; copyright Kerry Mitchell
+; sample parameter file for range-r-2_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-r-2_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/4/0/1/0.125 float=y maxiter=256 inside=0
+  colors=000<11>z00<3>zA0<6>zi0zo0xq2vt4tw6qz9<11>0zz<10>0Uz0R\
+  z0Px0Nu0Ls0Ip<3>0BW<3>100<9>p00v00z00<2>z80zB0zG0<4>ze0zk0zo\
+  0<2>sw7pzAlzE<10>0zz<11>0Rz<2>0Kr0Io0Gj0Fe0D_0BU08M05E036200\
+  <9>r00w00z10z30z60z80zC0<5>zg0zl0yp1ws3uu5sx7ozB<9>7zs3zw0yz\
+  <10>0Tz0Qy0Ow0Mt0Kr0In0Gi0Ec0CZ<3>024300<10>x00z10z40z60z90z\
+  D0<5>zh0zm0yq1ws3tv6ry8<10>6zt2zx0xz<11>0Qy0Ov0Lt0Jq0Hm0Fg0E\
+  b0CY<3>012 cyclerange=0/255 decomp=256 periodicity=0
+  }
+
+range-x-1-sample   { ; copyright Kerry Mitchell
+; sample parameter file for range-x-1_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-x-1_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/4/64/2/0.02 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>zz2zz0zy0<5\
+  1>y20x00w00<30>200000000000000 cyclerange=0/255
+  }
+
+range-y-2-sample   { ; copyright Kerry Mitchell
+; sample parameter file for range-y-2_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-y-2_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/4/64/3/0.3 float=y maxiter=2000 inside=0
+  decomp=256 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0z\
+  z0yz<39>02z00z00z<41>000 cyclerange=0/255
+  }
+
+third-time's...    { ; copyright Kerry Mitchell
+; sample parameter file for range-r-3_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-r-3_jul passes=1 center-mag=0/0/0.9/1/-10
+  params=-0.0573720519293145/0.6691939992424446/4/0/3/0.333333
+  float=y maxiter=3000 inside=0 decomp=256 periodicity=0
+  colors=000<22>00w00z01z<4>07z08z0Az0Cz<13>0lz0oz1py<5>7xs9zq\
+  Bzo<21>wz3zz0zy0<21>zT0zR0yQ0xP0<4>rK0pI0nI0<5>ZC0WB0SA0<6>0\
+  01<20>00s00v00x00z<4>06z08z09z0Bz0Dz<11>0hz0kz0mz0oz<6>8yrAz\
+  pCzn<21>xz2zz0zx0<22>zR0yQ0wP0<2>tL0rK0qJ0oI0mH0<4>_D0YC0UB0\
+  <6>210 cyclerange=0/255
+  }
+
+threex             { ; copyright Kerry Mitchell
+; sample parameter file for range-x-3_jul
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-x-3_jul passes=1 center-mag=0/0/0.8
+  params=-0.1/1/1000/1/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=00610A20C30F<2>61K71M81N91O<10>K6_L7`M8`<4>RCdSCeTDfUE\
+  fVFgWGh<9>eSnfTogUphWpiXqjZq<7>rjvslvtnwupwvqx<2>ywyzyzzyz<8>\
+  qiupguoetndtmbslar<7>dQncPmbOlaNl`Mk<7>TDfSCeRCd<4>M8`L7`K6_J\
+  6ZI5YH5X<7>91O81N71M61K50I40H30F20C10A00610820B30E<4>81M91OA2\
+  PB2Q<3>F3UG4WH4W<4>M7`N8aO9bPAbQAc<11>`MlaNlbPmcQmdRn<6>k`rla\
+  smcsnet<8>wtyxvyyxzzzzyxzxvy<11>lask`rjZriYqhXp<2>eSodRncQmbP\
+  maNl<15>N8aM7`L7_K6ZJ6YI5XH4WG4W<6>91O81M71L61J50I40G<2>108000
+  }
+
+threey             { ; copyright Kerry Mitchell
+; sample parameter file for range-y-3_jul
+  reset=1960 type=formula formulafile=frac_ml.frm passes=1
+  center-mag=-0.339487/0.595596/11.21076 params=-0.1/1/64/1/0.5/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=N`p<10>RftSftSgtTgtThu<3>VjvVjvWkvXkw<14>dsyesyftygtyhuz\
+  <3>kwzlwznxzoxz<2>tzzzzztzzryz<4>kwzjvzivzhuzhuzgty<8>`px`ox_ox\
+  _nxZnx<5>WkvVjvVjvViv<12>PcrObqObqOapNap<20>GSfFRfFReFQd<13>AJX\
+  AJWAIVAIU9HU<33>001000001<31>9GS9HT9HUAIUAIVAJW<25>IVjJWkJWkKXl\
+  KXl<6>M`o cyclerange=0/255 formulaname=range-y-3_jul
+  }
+
+;========================================================================;
+; Date: Sun, 25 Jan 1998 21:30:16 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: (fractint) hearts and flowers
+
+Hearts             { ; by Mark "Bud" Christenson 1/25/98
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=tan/atanh/sin passes=b center-mag=-1.57089/0/1.9
+  params=0.88/0/0/0/100/0 float=y inside=111
+  colors=0K00L00M0mN0s0U0P0<37>0y00z00z01z0<12>Ew7Fw7Gw7Hw7Iw8<25>grKhrLir\
+  LjqMkqMlpN<10>wnSxnTynTzmUzmUzmU<61>zz0zz0zz1<80>zzz
+  }
+ 
+gj09               { ; by Mark "Bud" Christenson 1/25/98
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/atanh/atan passes=t
+  center-mag=-1.77636e-015/8.88178e-016/0.235 params=1/0/0/0/2.95/0
+  float=y inside=111
+  colors=000PL_<20>oV`pV`rWasXb<9>yjhzliznk<6>zxxzzzyzz<25>D``C__C__<61>11\
+  1000000000<115>000
+  }
+
+;========================================================================;
+; Date: Tue, 27 Jan 1998 00:04:30 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) Astrophysical Lunacy
+
+Marching_Squeeze   { ; No! No! There's no room at the bottom! Argh! Stop!
+                     ; I could make a series on these guys - "The Freaks"
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jul1-146
+  function=abs/ident center-mag=1.14945/4.44089e-016/0.9861933/1/90
+  params=1.4/0 float=y maxiter=1023 inside=255 potential=255/300/0
+  colors=zzz<82>1zz0zz0zz0zz<81>01z00z00z00z<83>000
+  }
+ 
+Thermal_Stress     { ; Catastrophic Failure
+  reset=1960 type=formula formulafile=astro.frm formulaname=jul1-146
+  function=abs/ceil center-mag=-0.0781861/0.0146628/0.9861933
+  params=1.4/0 float=y maxiter=1023 inside=255 potential=255/300/0
+  colors=00000U<77>v00w00w00x00y00z00z00<82>zy0zz0zz0zz0<82>zzz000
+  }
+
+;========================================================================;
+; Date: Wed, 28 Jan 1998 18:59:38 -0500
+; From: Gedeon Peteri <gedeon@InfoAve.Net>
+; Subject: (fractint) gravijul formula
+
+gp-gj09-01         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 25, 1998
+                     ; Wizzle deeps2 map
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/cotan/asinh passes=b
+  center-mag=4.44089e-016/-3.10862e-015/0.4026667/1/27.498
+  params=4/0/0/0/2.95/0 float=y inside=epsiloncross outside=atan
+  colors=000EXU<4>0IE<15>kuz<10>K0S<10>zzm<22>L29<18>\
+  wwm<4>pmenkcmjblha<20>O88N76M55K33K36K29K2DK1GK0K<9>\
+  cru<15>00P<7>cru<16>V3WU0US0U<9>C0U<6>c0U<18>60u40w40t\
+  <11>7CI7DF7EC8F8AIBCLE<13>fzz<9>HZX
+  }
+ 
+gp-gj09-02         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 25, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/sin/atanh passes=b
+  center-mag=1.21207/-0.721783/8.83661/1/27.5 params=1/0/0/0/2.95/0
+  float=y outside=atan
+  colors=0007O0uQB<16>X1wW0zX1w<22>zW0JOP<13>bfgchhbgg\
+  <14>JOP00z<22>z0z<23>00zNMK<6>jjh<7>NMK0G0<6>Nh1<7>\
+  0G0WWz<21>yW3zW0yW2<22>WWzV8R<6>pQk<7>V8RLLL<14>llm\
+  <15>LLLzW0yU2xT5
+  }
+ 
+gp-gj09-03         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 25, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/cotan/asinh passes=b
+  center-mag=4.44089e-016/-3.10862e-015/0.4026667/1/27.498
+  params=4/0/0/0/2/0 float=y inside=epsiloncross outside=atan
+  colors=000BWN8SJ4NF00c<6>0Wz<7>00cV5H<6>uVg<7>V5H0G0\
+  <6>WzW<7>0G0S24<6>wRT<7>S24000<6>kkk<7>0008LM<6>Pkl\
+  <7>8LMJN4<6>ntS<7>JN4L5Z<6>fQu<7>L5ZW00<6>z00<7>W0000W\
+  <6>0zz<7>00WS24<6>wRT<7>S24L5Z<6>fQu<5>O8aL5ZG0W<6>\
+  zWz<7>G0WIF7<6>mfU<6>MIAIF7G00<6>z00<7>G004NF<6>Wti<4>F_R
+  }
+ 
+gp-gj09-04         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 25, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/atanh/atan passes=t
+  center-mag=-3.55271e-015/1.77636e-015/0.3743325/1/20
+  params=1/0/0/0/2/0 float=y inside=period outside=atan decomp=256
+  colors=G00M00G004NF<6>Wti<7>4NF00c<6>0Wz<7>00cV5H<6>\
+  uVg<7>V5H0G0<6>WzW<7>0G0S24<6>wRT<7>S24000<6>kkk\
+  <7>0008LM<6>Pkl<7>8LMJN4<6>ntS<7>JN4L5Z<6>fQu<7>\
+  L5ZW00<6>z00<7>W0000W<6>0zz<7>00WS24<6>wRT<7>S24L5Z\
+  <6>fQu<5>O8aL5ZG0W<6>zWz<7>G0WIF7<6>mfU<6>MIAIF7G00\
+  <6>z00<4>Y00M00
+  }
+ 
+gp-gj09-05         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 26, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=flip/flip/log passes=b
+  center-mag=1.77636e-015/-6.21725e-015/0.1813158
+  params=2/-1.5/0/0/8/0 float=y outside=atan
+  colors=000N5B<17>wwm<4>pmenkcmjblha<20>O88N76M55\
+  K33K36K29K2DK1GK0K<9>cru<15>00P<7>cru<16>V3WU0US0U\
+  <9>C0U<6>c0U<18>60u40w40t<11>7CI7DF7EC8F8AIBCL\
+  E<13>fzz<7>MdbKa_HZXEXUBUR8RO<2>0IE<15>kuz<10>K0S\
+  <10>zzm<22>L29
+  }
+ 
+gp-gj09-06         { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 26, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/cotan/asinh passes=b
+  center-mag=-4.44089e-016/-1.55431e-015/0.9432784/1/27.499
+  params=4/0/0/0/2.95/0 float=y maxiter=1023 fillcolor=255
+  inside=epsiloncross outside=atan invert=0.596820086519159/0/0
+  colors=000M00<5>z00<7>G004NF<6>Wti<7>4NF00c<6>0Wz\
+  <7>00cV5H<6>uVg<7>V5H0G0<6>WzW<7>0G0S24<6>wRT<7>S2\
+  4000<6>kkk<7>0008LM<6>Pkl<7>8LMJN4<6>ntS<7>JN\
+  4L5Z<6>fQu<7>L5ZW00<6>z00<7>W0000W<6>0zz<7>00WS24\
+  <6>wRT<7>S24L5Z<6>fQu<5>O8aL5ZG0W<6>zWz<7>G0WIF7\
+  <6>mfU<7>IF7000
+  }
+
+;========================================================================;
+; Date: Wed, 28 Jan 1998 04:19:52 -0500
+; From: davides <davides@pipeline.com>
+; Subject: (fractint) Re: simple par
+
+pastel_blue2       { ; (c) Copyright David Shanholtzer, 1998
+  reset=1960 type=phoenixcplx
+  center-mag=0.45827/0.312116/6.94316/1.2136 params=0.2/0/0.3/0/0
+  maxiter=5000 inside=255 logmap=75 decomp=256
+  colors=rqvnourqv<62>6Ia5I`4H`4H`4Ia4Jb<31>CmrDnsEnr<8>TgoUgoWhp<13>vvw<1\
+  5>UUhVVhWXhYZh<43>omspnspnsqotpmrokp<11>cRTZ00<11>mfjoinpmrrqvrnv<14>m0m\
+  3Km<8>Ycraerdgsgjtklu
+  }
+
+;========================================================================;
+; Date: Wed, 28 Jan 1998 16:52:11 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: Re: (fractint) Re: simple par
+
+pastel_blue2a      { ; (c) Copyright David Shanholtzer, 1998
+                     ; nearby image
+  reset=1960 type=phoenixcplx
+  center-mag=0.491675/-0.344382/3.471483/1.2137 params=0.2/0/0.3/0/0
+  maxiter=5000 inside=255 logmap=75 decomp=256
+  colors=rqvnourqv<64>4H`4H`4Ia<32>CmrDnsEnr<8>TgoUgoWhp<13>vvw<15>UUhVVhW\
+  XhYZh<45>pnsqotpmr<12>cRTZ00<11>mfjoinpmrrqvrnv<14>m0m3Km<9>aerdgsgjtklu
+  }
+
+;========================================================================;
+; Date: Wed, 28 Jan 1998 07:23:11 -0500
+; From: davides <davides@pipeline.com>
+; Subject: Re: (fractint) Re: simple par (modification)
+
+pastel_blue2b      { ; (c) Copyright David Shanholtzer, 1998
+                     ; "t" suggested by Paul Derbyshire
+                     ; color cycled a bit
+  reset=1960 type=phoenixcplx passes=t
+  center-mag=0.458265/0.312112/6.942966/1.2137 params=0.2/0/0.3/0/0
+  maxiter=5000 inside=255 logmap=75 decomp=256
+  colors=rqvZbm<38>4H`4H`4Ia<32>CmrDnsEnr<8>TgoUgoWhp<13>vvw<15>UUhVVhWXhY\
+  Zh<45>pnsqotpmr<12>cRTZ00<11>mfjoinpmrrqvrnv<14>m0m3Km<9>aerdgsgjtklunou\
+  rqv<24>_cn
+  }
+
+pastel_blue2c      { ; (c) Copyright David Shanholtzer, 1998
+                     ; nearby image
+                     ; slightly different color map
+  reset=1960 type=phoenixcplx
+  center-mag=0.491683/-0.344382/3.471483/1.2137 params=0.2/0/0.3/0/0
+  maxiter=5000 inside=255 logmap=75 decomp=256
+  colors=rqv000<42>0004H`<34>CmrDnsEnr<8>TgoUgoWhp<13>vvw<14>WWiUUhVVh<3>`\
+  biaci`bi<24>00U<15>rrw<15>cRTZ00<11>mfjoinpmrrqvrnv<14>m0m3Km<14>rqv000<\
+  18>000
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 17:02:49 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: Re: (fractint) Astrophysical Lunacy and Integer Arithmetic
+
+circuitry          { ; It's an artefact and I don't care!
+  reset=1950 type=unity passes=b float=n
+  center-mag=0/0/0.25 maxiter=256 inside=255
+  potential=255/300/150 periodicity=0 colors=@headache.map
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 08:34:04 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: Re: (fractint) gravijul formula
+
+gj09b              { ; 1/28/98 by Mark "Bud" Christenson
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+  colors=YP2qjE<18>CCs<13>ccseesefs<7>gtxhvxhxyizzgzz<6>UvvSuuSuu<14>EkfDj\
+  eCidChbCfaCe_<3>C_UCYSDXREVQ<4>JMLKKKKKK<26>ZXCZYB_YB`ZAa`A<8>qqCssCrqB<\
+  20>UK0sCE<19>sCqsCsqCs<9>YCsEEC<4>PPCSSCSSC<12>qqCssCsqC<19>sECsCCsCE<5>\
+  sCQsCSsER<12>sfE000kkk
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 10:32:41 -0600
+; From: "Justin A. Kolodziej" <4wg7kolodzie@vmsb.csd.mu.edu>
+; Subject: (fractint) NEW 4-Dimensional Hall of Shame!!
+
+quat1              { ; our first inductee into the 4-dimensional hall of
+                     ;shame
+  reset=1960 type=julibrot julibrotfromto=-1/1/0/0
+  julibrot3d=768/8/8/7/10/24 julibroteyes=2.5 orbitname=quatjul
+  center-mag=-8.88178e-16/6.66134e-16/1.626016
+  params=-0.59636187170600197/0.23952291557540031/0.12121212121212122/0.33\
+  333333333333331/0/0 float=y colors=@altern.map
+  }
+ 
+hyperc1            { ; our second inductee into the 4-dimensional hall
+                     ; of shame
+  reset=1960 type=julibrot julibrotfromto=-1/1/0/0
+  julibrot3d=768/8/8/7/10/24 julibroteyes=2.5 orbitname=hypercomplexj
+  function=sqr center-mag=0/0/0.6666667
+  params=-0.26341693389342991/-0.29332334217541411/0.25/0.5/0/0
+  float=y symmetry=none colors=@altern.map
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 18:15:09 -0800
+; From: "Jay Hill" <ehill1@san.rr.com>
+; Subject: Re: (fractint) Re: Steven vs Rich
+
+noise              { ; image of off topic email
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=quartc
+  center-mag=2.45e-006/-1e-006/0.0757734 params=0.09/0.01 float=y
+  colors=000<29>a9ucAwcAw<78>0xw0xw1xw<77>xxwxxwwwv<58>111000000000
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 20:17:16 -0600 (CST)
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Another formula
+
+c_sin_atan_jul     { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=csin_atan_julia passes=1
+  corners=0.50200688/0.62208688/0.481622813/0.571682813
+  params=1/0.1/1.35/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG0\
+  0zR<28>0C40zz<28>0CCGGz<28>00O000<13>000
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 19:37:33 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: Re: (fractint) Re: Steven vs Rich
+
+wizmeetsherman     { ; paul derbyshire's julia custom colored
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.94166/-0.0603861/0.2046131
+  params=-0.97/-0.2/4/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000<11>0004GD<7>122000000000000000<17>PjqRmtSpwUszTqw<16>23400000\
+  0<4>000000001102<10>B0IC0KE0N<13>c0w<15>K0A<8>m0h<15>F0HD0FA0D70B<4>2020\
+  00001<4>336A00<5>NFAPICQJC<30>zzc<9>A00223222111<5>000000011<28>Amc<2>9h\
+  _000<2>000
+  }
+ 
+critmass2          { ; from paul d's formula with copperplus.map
+                     ; wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=0.812377/2.36821/2.177252 params=0.9997/0/1.9/2/0.001/0
+  float=y maxiter=2000 inside=0 outside=real
+  colors=102pME<2>vPF<19>LA5000<23>000F0G<14>X0YY0ZZ0_`0a_0`Z0_<13>H0I000<\
+  26>000R00<16>v00<19>M00000<6>400500300<15>00000T<16>00z<18>00Q000<14>005\
+  006005<2>002000000<2>000NA6<14>nME
+  }
+
+;========================================================================;
+; Date: Thu, 29 Jan 1998 21:56:31 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) gravijul formula
+
+field_of_attraction  { ; Mark Christenson's formula
+                     ; variation on gideon peteri's par gp-gj09-06
+                    ;run at least 800 x 600
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/cotan/asinh passes=b
+  center-mag=0/0/0.6666667 params=1/1/1/1/1/1 float=y maxiter=1023
+  fillcolor=1 inside=zmag outside=summ decomp=2048
+  colors=0000KR<3>0kz<7>000000<6>zz0<7>000000\
+<6>0zk<7>000000<6>Wz0<7>00000\
+ 0<14>z0z<15>000000<6>0zW<7>000000<6>kz0<7>\
+000000<6>0zz<7>000000<6>zk0<7>\
+ 000000<6>0Wz<7>000000029<5>zG0<7>000000<6>\
+00z<7>000<6>z00<7>000000<6>0Gz\
+  <6>028000000<6>zW0<7>0000000790DI
+  }
+ 
+teardrop           { ; Mark Christenson's formula
+                     ; minor variation of gj09b
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-8.06682e-005/1.97784/13.22674 params=1/0/0/0/2.95/0
+  float=y inside=111 outside=atan
+ colors=000Fpm<3>0mm<7>8eb9da9da<12>1VQ0UP1UP\
+<11>GaPHaPIbPKcPKcQLdR<19>bv\
+ kcwmbvl<30>MS2LR0MS0<36>st4<5>TZQLSXGO`CLd\
+<7>Ums<5>hrwhrwgqv<31>OOlNNlOO\
+  l<45>wwm<10>Jpm
+  }
+ 
+Please! no_more_gynecology { ; Mark Christenson's formula
+                     ; minor variation of gj09b
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-8.06682e-005/1.97784/13.22674 params=1/0/0/0/2.95/0
+  float=y inside=111 outside=atan
+ colors=000ZFN<23>221<31>u2G<31>000<29>fF1hF\
+1hF1<29>320220000000<29>uT0wU\
+  0wU0<29>210<31>iJV<6>_FO
+  }
+ 
+omigod_it's_breathing             { ; must cycle
+                     ; Mark Christenson's formula
+                     ; minor variation gj09b
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-8.06682e-005/1.97784/13.22674 params=1/0/0/0/2.95/0
+  float=y inside=111 outside=atan
+ colors=000781<12>px9113<21>WWz000<22>zWz000\
+<22>z0W000<22>zW0000<22>zz000\
+  0<22>WWz000<22>0zW000<22>0zz000<22>yjU000<22\
+>_zn000340
+  }
+ 
+blue_tear          { ; must cycle
+                     ; Mark Christenson's formula
+                     ; variation gj09b
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-8.06682e-005/1.97784/13.22674 params=1/0/0/0/2.95/0
+  float=y inside=111 outside=atan
+ colors=000eLe<4>zWz<4>H0H<10>z0z<4>08H<\
+10>0Wz<4>88H<10>WWz<4>00H<10>00z<\
+ 4>088<10>0WW<4>0HH<10>0zz<4>0H8<10>0zW\
+<4>0H0<10>0z0<4>080<10>0W0<4>880<1\
+ 0>WW0<3>KD7LAA<9>zWW<4>HH8<10>zzW<4>\
+H80<10>zW0<4>H08<10>z0W<4>H8D<10>zWk\
+  <4>H8H<4>aJa
+  }
+ 
+yellow             { ; minor change of gideon peteri's gp-gj09-06
+                     ; Mark Christenson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/cotan/asinh passes=b
+  center-mag=-4.44089e-016/-1.55431e-015/0.9432784/1/27.498
+  params=4/0/0/0/2.95/0 float=y maxiter=1023 fillcolor=255
+  inside=epsiloncross outside=atan invert=0.596820086519159/0/0
+ colors=000gR0<21>zz00C4<28>0zR0CC<28>0zz00O\
+<23>DDrDDtEEuEEwFFxGGzI0K<28>\
+  fOzO08<28>z0fO00<28>z88000<13>000c40\
+<28>zW0aG0<5>fQ0
+  }
+ 
+slither_at_the_edges  { ; must cycle
+                     ; gj09b with palette by Paul Carlson
+                     ; formula and par by Mark Christenson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+  colors=000o66<7>z88000<13>000c40<28>zW0aG0<28>\
+zz00C4<28>0zR0CC<28>0zz00O\
+  <23>DDrDDtEEuEEwFFxGGzI0K<28>fOzO08<28>z0fO00\
+<19>n66
+  }
+ 
+another_color      { ; must cycle
+                     ; gj09b with palette by Paul Carlson
+                     ; formula and par by Mark Christenson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+ colors=0000VV<17>0zz00O<23>DDrDDtEEuEEwFFx\
+GGzI0K<28>fOzO08<28>z0fO00<28>\
+  z88000<13>000c40<28>zW0aG0<28>zz00C4<28>\
+0zR0CC<9>0UU
+  }
+ 
+one_more_color     {
+                     ; gj09b new palette
+                     ; formula and par by Mark Christenson
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+ colors=000gDQiCR<2>jBTjAUiAVhAVgAW<2>\
+`BYZBZWCZTD_<3>HGbEHcCIcAJd8Le6Me5O\
+  f4Pg4Rg<2>6Wi7Xj9Zk<2>IclLemPfnThn<2>dmp\
+gnpkpqnqqtsrvusxvsyvtzwtzxuzyuyy\
+  u<2>tzwrzwozw<2>ezxayxZyyVxySwyPvyMvyJuzGsz\
+<4>Amz<2>CizDgzFfz<3>N`zQ_zSY\
+ zVXzXVy<2>bSydQyePxfOx<2>gMwgLwfKw<3>b\
+Ju`Ju_JtYJtWJs<2>SJrRKqRKq<2>QMoQN\
+ oRNnROnTPmUQl<6>eWhgXghYgiZfj_e<2>kackb\
+cjbb<3>cd_adZZeZ<5>GeVDeUBdT8dS6d\
+ S4cR3cQ<2>2aO2aO3`N5_N7_M<2>FXKIXJMWJ\
+<3>`THcSGgSGjRFmRFoQErQEsPDtPDuPCuO\
+ CuOBtOBsOBqOA<3>fO9cP9_P8XQ8TQ8<4>\
+DT7AU78U7<3>4X64Y65Z6<2>9`6Aa6Db6<3>Md\
+ 7Pe7Re7Te7Wf7<3>`f8af9af9bf9<4>ZdBYcBWbC<3>\
+Q_EPZEOYFNXFMWG<2>MSHMRINQIOP\
+  J<2>SLLUKLWJMYIN_HN<3>fDQ
+  }
+ 
+odd_shell          { ; formula by Mark Christenson
+                           ;run at least 800 x 600
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/cotan/asinh passes=b
+  center-mag=-1.11022e-016/8.32667e-017/3.205128 params=1/0/0/0/2.95/0
+  float=y maxiter=1023 fillcolor=1 inside=zmag outside=summ decomp=256
+  colors=000kkO<2>000<4>z0z<2>000000<2>JTw\
+<3>000<4>z00<2>000000<2>0z0<3>00\
+ 0<4>zW0<2>000000<2>jUy<3>000<4>Nhw<2>\
+000000<2>xkk<3>000<4>WKG<2>000000<2\
+ >vEP<3>000<4>rZM<2>000000<2>qSo<3>000\
+<4>zz0<2>000000<2>Wzt<3>000<4>xH0<2\
+ >000000<2>zzW<3>000<4>bNM<2>000000\
+<2>EeL<3>000<4>_9z<2>000000<2>5Yz<3>00\
+  0<4>z5Y<2>000000<2>llZ<3>000000<3>kkk<2>\
+000000<2>dJz<3>000<4>ez0<2>00000\
+ 0<2>zhQ<3>000<4>0zz<2>000000<2>y7a<3>\
+000<4>cZH<2>000000<2>WhQ<3>000<4>00\
+  z<2>000<2>zzW
+  }
+ 
+odd_effect         { ; formula by Mark Christenson
+                           ;run at least 800 x 600
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=recip/cotan/asinh passes=t
+  center-mag=-0.220756/0.164594/5.642831 params=1/0/0/0/2.95/0 float=y
+  maxiter=1023 fillcolor=1 inside=zmag outside=summ decomp=256
+  colors=000kkO<2>000<4>z0z<2>000000<2>\
+  JTw<3>000<4>z00<2>000000<2>0z0<3>00\
+  0<4>zW0<2>000000<2>jUy<3>000<4>Nhw<2>\
+  000000<2>xkk<3>000<4>WKG<2>000000<2\
+  >vEP<3>000<4>rZM<2>000000<2>qSo<3>000\
+  <4>zz0<2>000000<2>Wzt<3>000<4>xH0<2\
+  >000000<2>zzW<3>000<4>bNM<2>000000<2>EeL\
+  <3>000<4>_9z<2>000000<2>5Yz<3>00\
+  0<4>z5Y<2>000000<2>llZ<3>000000<3>kkk<2>\
+  000000<2>dJz<3>000<4>ez0<2>00000\
+  0<2>zhQ<3>000<4>0zz<2>000000<2>y7a<3>000\
+  <4>cZH<2>000000<2>WhQ<3>000<4>00\
+  z<2>000<2>zzW
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 08:11:53 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) gravijul
+
+pretzel_logic      { ; formula by Mark "Bud" Christenson
+                     ; palette from Les St.Clair
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=cotanh/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+colors=GBRHCS<11>X`tZcwZcw<10>imvW0B<5>`0D\
+a0Db2D<14>zVF<14>b2Da0D`0D<18>\
+ I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D\
+5IC4JD6LE8NGAQjnv<3>nru<2>gkldh\
+  ibef_bdY_a<12>000<18>f`V<9>JCM<9>zzc<9>F05\
+<12>R0AS0AU0AV0A
+  }
+ 
+where_did_all_the_spirals_go      { ; formula by Mark "Bud" Christenson
+                     ; palette from Les St.Clair
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=cotanh/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0.1/0/0/2.95/0 float=y inside=111 outside=atan
+ colors=GBRHCS<11>X`tZcwZcw<10>imvW0B<5>`0Da\
+0Db2D<14>zVF<14>b2Da0D`0D<18>\
+ I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D5IC\
+4JD6LE8NGAQjnv<3>nru<2>gkldh\
+  ibef_bdY_a<12>000<18>f`V<9>JCM<9>zzc<9\
+>F05<12>R0AS0AU0AV0A
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 10:50:44 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: (fractint) gravijul
+
+gj081              { ; "Parasols", Mark "Bud" Christenson 1/25/98
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=tanh/atanh/asin passes=t
+  center-mag=1.18968/0.963934/1.804124 params=1/0/0/0/4/0 float=y
+  inside=bof60 outside=imag
+  colors=000SS_<3>cTgfUjhUkjUl<2>tYo<12>zz0<5>ct0_s0Ys3<11>7on5nr3nv0mz1kz\
+  3hz<12>TDwVAvX9r<11>p15r00v00z00<30>YVVXXXXWX<29>y2yz0zz1y<23>zlEznCznC<\
+  35>zn1zm0zm0zl0zl0<43>zU0zzz
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 12:43:14 -0800
+; From: "Jay Hill"<jrhill@nosc.mil>
+; Subject: (fractint) How long is the coast of the Mandelbrot set?
+
+Panorama_Fiegenbaum { ; (c) Jay Hill, 1998
+                      ; Panorama view from Fiegenbaum point
+           ; -1.401155189092050600523826787893861292226308
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=MandelbrotPanorama
+  center-mag=0/-3.27483/0.2449042 symmetry=yaxis
+  params=0/0/-1.4011551890920506005/0 passes=1
+  float=y maxiter=25600 inside=0 outside=summ periodicity=0
+  colors=000<7>00z<6>ccc<8>w0w<6>hhh<8\
+  >z00<6>mmm<2>qg`seWtcRvaMw_IyYDzW8<6\
+  >jjj<8>zz0<6>mmm<8>0w0<6>mmm<8>0zz<6\
+  >rrr<56>00z00z00y<81>001000000000
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 21:08:00 -0500
+; From: Les St Clair <Les_StClair@compuserve.com>
+; Subject: (fractint) re: gravijul
+
+gj_les01           { ; "Katy Lied"  t=  0:11:50.19
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par ; Date: Jan 31, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=sin/flip/sqrt passes=1
+  center-mag=-0.00191501/0.00107545/0.7502878 params=1.1/0/0/0/2.95/0
+  float=y maxiter=200 inside=maxiter outside=atan
+  colors=566333000<18>f`V<9>JCM<9>zzc<9>F05<12>R0AS0AU0AV0AHCS<11>X`tZcwZc\
+  w<10>imvW0B<5>`0Da0Db2D<14>zVF<2>uPFtNEtNE<10>b2Da0D`0D<18>I06I06H07<20>\
+  00K<21>wn`000wn_<12>RK7OI5NH6<12>D5IC4JD6LE8NGAQjnv<3>nru<2>gkldhibef_bd\
+  Y_a<9>889 cyclerange=0/255
+  }
+ 
+gj_les02           { ; t=  0:03:04.82
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par ; Date: Jan 31, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=sin/flip/sqrt passes=1
+  center-mag=-0.00191501/0.00107545/0.7502878
+  params=0.95/0/-0.1/0/3.142/0 float=y maxiter=200 inside=maxiter
+  decomp=256
+  colors=BHG<2>9DD8BB8BB9BCABDBBE<11>EZkE`nEbqFdtEaqEZn<9>C8K97F<2>9BFFD9E\
+  FA<11>svc<2>svc<8>X`YUYXRVWOSVLPUIMTFJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>\
+  c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<12>OI5<6>eYJg_\
+  LiaNkcPneR<3>xn_wm_vlZ<15>DGN000<5>800H00000H00<2>H00H00I00J00<15>e00f10\
+  f20<29>vXD<2>ucMufOthRskUrnXqq_ptb<5>ZdVWaTTZSQWQNUPKRNHOMELK<2>CIH
+  cyclerange=0/255
+  }
+ 
+gj_les03           { ; t=  0:00:39.75
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par ; Date: Jan 31, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=abs/flip/exp passes=1
+  center-mag=-0.00191501/0.00107545/0.32325 params=1.5/0/-0.05/0/3/0
+  float=y maxiter=200 inside=maxiter outside=atan
+  colors=zzz<11>ggZeeWccV<12>A56724602<25>U0AV0BW0BX0CY0C<2>`0Da0Db2D<14>z\
+  VF<14>b2Da0D`0D<3>X0BW0BV0BU0BT0A<9>J06J06H06G06<15>kmn<6>D92<3>LG4OI5QK\
+  7<12>vlYxn_yo`zpa<14>OI5000<27>000000223<6>KKQNNTQQXTT_VWa<6>loslpr<14>O\
+  I5<12>riV cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 22:01:12 -0500
+; From: Gedeon Peteri <gedeon@InfoAve.Net>
+; Subject: (fractint) Re: gravijul formula
+
+gj09-07            { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 30, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=flip/flip/log passes=b
+  center-mag=1.71784/0.415966/3.052865 params=13/-11.5/0/0/8/0
+  float=y maxiter=256 outside=mult decomp=256
+  colors=006C55943741006<7>W68_68c78f78k78<2>v89v89r89o88\
+  k78f78<10>006010740<2>OD0UG1YI1cL1gN1kP1<2>uU1vV2xW2<2>\
+  xW2wV2uU1<2>lQ1hO1cL1ZJ1VG1<4>110200<2>J2HP2NU3TZ3\
+  Yb4bg4fk5jn5nq6qt7tu7uv8w<2>w8wu7vt7t<2>k5kh4gc4b\
+  Z3YV3U<4>301741<6>L9GMAJOBLPCNQDPRDSSEUSFWSGYSGYSFW\
+  <4>OBLNAJL9G<3>E67C55943741417<6>W68_68c78f78k78<2>\
+  v89v89r89o88k78f78<10>006010740<2>OD0UG1YI1cL1gN1kP1\
+  <2>uU1vV2xW2<2>xW2wV2uU1<2>lQ1hO1cL1ZJ1VG1<4>110200\
+  <2>J2HP2NU3TZ3Yb4bg4fk5jn5nq6qt7tu7uv8w<2>w8wu7vt7t\
+  <2>k5kh4gc4bZ3YV3U<4>301741<6>L9GMAJOBL\
+  PCNQDPRDSSEUSFWSGYSGYSFW<4>OBLNAJL9G<3>E67
+  }
+ 
+gj09-08            { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 30, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=cotanh/atanh/cotan passes=t
+  center-mag=5.66214e-015/0/0.1485804/1/57.5 params=1/0/0/0/2.95/0
+  float=y inside=111 outside=atan
+  colors=HXn<5>CSkBRjAQi9Qh8Ph<2>5MfFLM<14>bhj<15>FLM03g\
+  <22>`bz<4>UWv000QTu<15>25h03g0Wz<14>00W<15>0WzFLM<14>\
+  bhj<15>FLMJKQ<13>eej<15>JKQ00z<14>0zz\
+  <15>00z5Mf<21>TeuUfvTev<9>JYo
+  }
+ 
+gj09-09            { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 30, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=ident/atanh/cotan passes=t
+  center-mag=-0.00000000000000000/-0.47932733764094000/9122.045
+  params=1/0/0/0/1/0 float=y inside=111 outside=atan
+  colors=000saJ<4>ygOzhPziQzjRziQ<4>vdLucKsaJ<17>_J1G58\
+  <22>sag<25>G58WA0<23>zL0<25>WA0KLH<22>ikgkmhjlg<25>\
+  KLHS2H<22>yPlzRnzQm<24>S2H_J1<14>q`I
+  }
+ 
+gj09-10            { ; Mark Christenson's formula
+                     ; Gedeon Peteri, Jan 30, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=flip/ident/cotan passes=b
+  center-mag=0/0/0.6666667 params=0.975/0/0/0/3.5/0 float=y
+  maxiter=1023 fillcolor=255 decomp=256
+  colors=000AFGAGHAHH<9>89C88B87B87A769759<3>637526526425\
+  <4>202202101101000000000300600800<5>R00U00W00Z00<5>\
+  l00n00o00q00<3>w00x00x00y00<5>z00z00y00x00x00<2>\
+  t00s00q00o00<2>j00h00e00c00<4>R00O00L00I00F00C00001\
+  <3>00601701812A12B<7>19L2AM2CN<4>2IU2JV2KW2MX\
+  2NZ2P_2Q`2Sa2Tb<8>2GS2FR2EQ2DP2CN<5>15G14F14D\
+  <4>017006005003<3>000300600800<2>I10L10O20R30\
+  <2>Z50a60c70e80<2>lC0nD0oE0qF0<3>wM0xN0xO0yQ0\
+  <3>zW0zV0zT0zS0yQ0xO0xN0<2>tI0sH0qF0oE0<2>\
+  jA0h90e80c70<4>R30O20L10I10F00C00800600300000\
+  <6>303313314415425526<11>99C9AD9BD9CE9DE9DFAEF
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 20:21:03 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) january wizzle pars
+
+gravwiz1           { ; bud's great formula
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=flip/cotan/asinh
+  center-mag=-8.88178e-016/8.88178e-016/0.3021152 params=3/0/0/0/2.5/0
+  float=y inside=epsiloncross outside=atan invert=1/0/0
+  colors=00008J00009C0980940002B1<24>zwm<12>KA0000<47>000330<17>000KA4<13>\
+  zzc<15>000<15>00z<14>000<32>000<15>p0w<9>K0NH0JG0N<7>25r06w06t<8>08N
+  }
+ 
+gravwiz2\          { ; bud's great formula
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/cotan/asinh
+  center-mag=-6.21725e-015/2.22045e-015/0.1283588
+  params=2/0/0.5/0/2.74543/0 float=y inside=epsiloncross outside=atan
+  colors=000a4j<12>M1MK0KL1J<14>mU0<15>KA0<14>2jI0mK0kJ<14>0A0<15>A0w<15>0\
+  0K<15>m0m<15>A0A<15>w08<15>K00<15>sW0qV0nT0000hQ0<10>E90<15>w5c<15>0B0<1\
+  5>c4mb4l
+  }
+ 
+gravwiz3           { ; bud's great formula
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=recip/cotan/asinh
+  center-mag=1.20388/1.19117/2.960785/1/47.497 params=4/0/0/0/2.95/0
+  float=y inside=epsiloncross outside=atan
+  colors=000S87L97EA7<2>D5IC4MB2QA0UE3X<8>mUw<10>A0K<18>Cww<5>KbcMZ_NVXPRT\
+  NPS<8>33B00900A<11>00P<7>cru<15>0UU5WVBZW<6>KA0<8>zzm<12>A00A03A06A0A<3>\
+  K5IN6KO7N<8>cKm<9>A0K<10>`rrcwvfzz<15>0IE3KH6NK<14>12k00m00l<11>34Q00N<1\
+  5>znZ<12>UB9
+  }
+ 
+copper             { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-y-3_jul passes=1
+  center-mag=-0.339487/0.595596/11.21076 params=-0.1/1/64/1/0.5/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=000VCA<7>M22K00K00<53>ybTzcUycU<42>H11F00G00<45>ybTzcUycU<38>M11K\
+  00L11<25>zmc<27>WEB
+  }
+ 
+goldpurp           { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=flip/flip/log passes=b
+  center-mag=5.32907e-015/-7.99361e-015/0.148679 params=3/-1.5/0/0/8/0
+  float=y outside=atan
+  colors=00j<22>002000000210000421<3>C53D64E85<23>wwc<29>GC7EA5EA5<10>E1EE\
+  0FF0GG0H<13>X0YY0ZZ0_`0a_0`Z0_<23>506405203001000000<30>v00<30>100000001\
+  <22>00j00010200n<5>00z<6>00l cyclerange=0/255
+  }
+ 
+colums98           { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=ghost-vert_jul passes=1
+  center-mag=0.999539/4.44089e-016/1.893939
+  params=-0.74543/0.14/1000000/1 float=y maxiter=256 inside=0
+  invert=0.5/0/0 decomp=256 periodicity=0
+  colors=e44<5>O00000<14>000c40<14>xU0zW0yU0<11>c40aG0<15>zz0<12>aG00C4<15\
+  >0zR<12>0C40CC<15>0zz<12>0CC00O<14>FFwGGzFFw<11>00OSA`<14>eNxfOzeNw<10>K\
+  2OO08<15>z0f<13>O08O00<15>z88<5>h44 cyclerange=0/255
+  }
+ 
+julia1             { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=ghost_jul
+  center-mag=0.0446061/3.55271e-015/0.9836549/0.8653/4.32/1.463
+  params=-0.74543/0.12/10000000/4 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=h`M<8>ukTwmUwmU<45>G66F55D55<4>00A<36>pptrrvqqu<33>77I55G33G00F<8\
+  >A0AB09C08E17F17<22>h1Ij1Jk1Jm0Kl0K<25>M0AL0AL0A<5>F07F07E07E07D16<10>84\
+  4753863<23>f_L cyclerange=0/255
+  }
+ 
+julia2             { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=ghost_jul
+  center-mag=0.0446061/3.55271e-015/0.9836549/0.8653/4.32/1.463
+  params=-0.74543/0.12/10000000/4 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=343222000<11>76C87D97EA8FA9G<12>JGTKHUKHT<27>111000000000<3>00001\
+  1032<27>Amc<25>255143122000000000000000<17>Zje<4>Amc<14>2972651330000000\
+  00<3>000000110221<38>ilYjmZkn_mp`lo_kmZ<29>554 cyclerange=0/255
+  }
+ 
+ribbonswirl        { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-x-1_jul
+  center-mag=+0.53783994610513170/+0.37293278429328400/100.2542/1.2743/180
+  params=0.28/0.005/4/64/2/0.02 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=000qlW<7>yubzwcyvb<37>M81K60K40K20K00L00<22>t0tv0wu0v<36>L0MK0KK0\
+  K<47>wccwccvbb<45>U90<2>K60<37>qkV
+  }
+ 
+ribbonswir2        { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=range-x-1_jul
+  center-mag=0.464012/0.202207/9.09615/0.7847/90
+  params=0.28/0.005/4/64/2/0.02 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=0000A0<46>0mU0mU0lT<45>0A0<2>B70K60<46>yubzwcyvb<37>M81K60K40K20K\
+  00L00<22>t0tv0wu0v<37>K0K
+  }
+ 
+bublz1             { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_jul center-mag=-0.703009/-0.244248/24.752
+  params=-0.74543/0.21/1000/0.185/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=00002C<3>K70<45>yubzwcyvb<37>M81K60I71<5>0DA<22>hwwjzziyy<33>2HC0\
+  FA0CA<2>03D<43>0ku0mw0lv<45>03D
+  }
+ 
+bublz2             { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_jul center-mag=-0.480626/0.096219/8.130081
+  params=-0.74543/0.21/1000/0.185/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=000OGa<9>YsuZwwYtu<14>60K<15>zmw<26>M23K00K03<7>R0XS0d<4>X0w<15>K\
+  0S<10>zzm<22>L29<13>lgbnjdolepnfrphtsjwwm<4>pmenkcmjblha<22>M55K33K36<2>\
+  K1GK0KM5NQ4I<10>zmr<15>U5F<7>aDa<7>wmw<8>T5XP0UO0UM0UK0U<2>NC_
+  }
+ 
+richswirl          { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_man
+  center-mag=-0.80089509843840520/+0.17799641346247760/166.0708/1/95
+  params=1000/0.5/1/1 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  colors=E96<9>E1EE0FF0GG0H<13>X0YY0ZZ0_`0a_0`Z0_<23>506405203001000000<30\
+  >v00<30>100000001<22>00j00010200n<5>00z<30>002000000210000421<3>C53D64E8\
+  5<23>wwc<29>GC7EA5EA5 cyclerange=0/255
+  }
+ 
+richswir2          { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=bubbleboth_man
+  center-mag=-0.812391/0.175649/40.52127/1/75 params=1000/0.5/1/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=R86<2>O22M00N12<24>wmwukw<15>KA0<22>utawwcvub<21>W3CU0AV2C<14>wfh\
+  <15>K00<16>wcy<19>Z0Y`0Wc0U<14>xvkzzmywk<7>pVO000oRL<5>g53<25>uq_us`us`u\
+  tauuavvb<24>TA7 cyclerange=0/255
+  }
+ 
+shellcolors        { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Crentura_2 function=cosxx
+  center-mag=-0.655881/-0.032383/0.9795398/1/90 float=y maxiter=256
+  bailout=25 inside=bof60 outside=atan logmap=yes symmetry=xaxis
+  periodicity=10
+  colors=000vtkwwm<23>X5EV2CV3C<44>vutwwuwwu<61>XDWWCVXDW<14>uapwcrwbq<29>\
+  V86U64U75<10>_IM`JNaLPbNRcPTeQW<9>xowzrzzpx<18>hAK<19>urj
+  }
+ 
+3dballplumes       { ;  wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=3D_Balls_Julia center-mag=-1.14438/1.14476/2.520549
+  params=-0.74543/0.345/0.35/2/2/125 float=y maxiter=256 inside=0
+  outside=summ
+  colors=000110110000PA0<12>wc0<15>040000004<11>00w<15>00A004000<32>000<15\
+  >p0w<12>A0B<15>0m0<10>00F70E<6>J02L00O00<12>z00<2>p00l00h00d00a00<5>F000\
+  00<47>000330<14>110
+  }
+ 
+tealswirl          { ; wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=PokornyConesJulia center-mag=-2.73699/1.4966/1.284142
+  params=-1.637453/0.021467/2/125 float=y maxiter=5000 inside=0
+  outside=summ invert=0.5/0/0
+  colors=000REE<12>wcc<14>W33U00V22<14>wcc<10>K00UUUTTT<2>LLL<2>SSSUUUVVV<\
+  5>gggjjjkkk<2>sss<10>XXXUUUTTT<2>LLL<2>SSSUUUVVV<5>gggjjjkkk<2>sss<15>00\
+  0<121>000A00<5>PCC
+  }
+ 
+petaljulia         { ; wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Petals_Julia
+  center-mag=-8.88178e-016/-0.0800782/1.041667/1/90
+  params=0.36/-0.09/0.3/0/8/30 float=y maxiter=5000 inside=253
+  outside=summ
+  colors=000e0L<4>z0W<6>PDJ<8>zWk<6>PDP<8>zWz<6>P0P<8>z0z<7>0FT<6>0Uv0Wz2U\
+  v<6>FFT<7>WWz<7>00T<6>00v00z02t<6>0FF<6>0UU0WW0WW<6>0TT<7>0zz<7>0TF<7>0z\
+  W<7>0T0<7>0z0<7>0F0<6>0U00W02U0<6>FF0<7>WW0422<13>zWW<7>TTF<7>zzW<6>PD0<\
+  8>zW0<6>P0D<2>a0J
+  }
+ 
+petalswirl         { ; wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=petals_julia
+  center-mag=-0.785496/0.332074/17.85371/1/39.772/15.277
+  params=-0.74107075/0.1678683/0.2/0/2/125 float=y maxiter=2000
+  inside=253 outside=summ
+  colors=C0C0KK<2>1LL1LL2MM2NN<64>czzczzbyy<52>1LLK0A<54>zlrzlrykq<67>K0AD\
+  1DC0C
+  }
+
+;========================================================================;
+; Date: Fri, 30 Jan 1998 22:19:18 -0800
+; From: Mark Christenson <mchris@hooked.net>
+; Subject: Re: (fractint) Re: gravijul formula
+
+gj0e               { ; "Vine" by Mark "Bud" Christenson 1/25/98
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=gravijul
+  function=sin/atanh/exp passes=t
+  center-mag=-0.859677/0.701461/1.420455 params=1/0/0/0/4/0 float=y
+  inside=111 outside=mult
+  colors=0O0<38>0y00z00z01z0<64>jz0jz0kz0kz0mMfmz0<142>zzz
+  cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 00:21:45 -0600 (CST)
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) A Herman Ring Par
+
+hring_mandel       { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=hring_mc passes=t
+  center-mag=-1.13968013785657900/+0.00177213235944437/1.3041\
+  58e+007/1/127.5
+  params=1/0/0/0/0.001/0 float=y
+  maxiter=5000 inside=0 outside=real
+  colors=000C0C<61>zVzzVzyVy<61>C0C0CC<62>VzzVzzVyy<61>0CC
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 00:21:04 -0800
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) new pars
+
+double_spiral      { ; kathy roth 1/30/98
+                     ; Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=CSin_Atan_Julia passes=1
+  center-mag=-0.00167584/0.014401/5.745766 params=1/0.5/5/0/50/100
+  float=y maxiter=5000 inside=period
+  colors=000000000<6>0Gz<6>028000000<6>00z<7>\
+000<6>z00<7>000000<6>zG0<7>00\
+ 0000<6>zW0<7>000000<6>zk0<7>000000\
+<6>zz0<7>000000<6>kz0<7>000000<6>Wz0<7\
+ >000000<6>0z0<7>000000<6>0zG<7>000000<6>\
+0zW<7>000000<6>0zk<7>000000<6>0z\
+  z<7>000000<6>0kz<7>000000<6>0Wz<6>048
+  }
+ 
+fleur_de_lys       { ; kathy roth 1/30/98
+                     ; Paul Carlson's formula
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=gravijul function=cotan/atanh/atan passes=t
+  center-mag=-4.44089e-015/2.66454e-015/0.4137324
+  params=1/0/0/0/2.95/0 float=y inside=111 outside=atan
+invert=1/0/0
+ colors=8CBulX<18>`ym_zn`zk<14>px9113<20>\
+UUxWWzXWz<21>yWzzWzzUy<21>z1Xz0W\
+ z1U<21>zU1zW0zX0<21>zy0zz0yy2<21>XXxW\
+WzUXy<21>1yX0zW0zX<21>0zy0zz2zy<22>\
+  yjU<2>vlW
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 17:21:11 -0600 (CST)
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Truncated Stalks Formula
+
+trunspr1     {; Copyright (c) Paul W. Carlson, 1998
+              ; Julia set example
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Truncated_Stalks passes=1
+  center-mag=0.498546/0.904963/17.69958/1/20
+  params=2.595821505264/0.159242645065/0.05/20/2/125
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=801sF_<123>C02Mov<123>HKS000<3>000
+  }
+ 
+trunspr2     {; Copyright (c) Paul W. Carlson, 1998
+              ; Mset example
+  reset=1960 type=formula formulafile=frac_ml.frm 
+  formulaname=Truncated_Stalks passes=1
+  center-mag=+0.78914572989794710/+0.209775364341020\
+  20/3108.882/1/7.5
+  params=0/0/0.1/0.047/2/125
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 17:53:28 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) More Mandelbrot Fareys
+
+01/17              {
+  reset=1960 type=mandel
+  center-mag=+0.28304191732923840/+0.01068323248180676/548.4862
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+02/17              {
+  reset=1960 type=mandel
+  center-mag=+0.35091283306512950/+0.08639667670649509/265.7031
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+03/17              {
+  reset=1960 type=mandel
+  center-mag=+0.37974484578073720/+0.24930810808824060/163.3133
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+04/17              {
+  reset=1960 type=mandel
+  center-mag=+0.29774672803157720/+0.45834848313926780/112.3293
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+05/17              {
+  reset=1960 type=mandel
+  center-mag=+0.07990701154554589/+0.62192606843801480/92.56304
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+06/17              {
+  reset=1960 type=mandel
+  center-mag=-0.23302183394954850/+0.64975550683228160/88.32674
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+07/17              {
+  reset=1960 type=mandel
+  center-mag=-0.54242389972194240/+0.49703037233481000/83.44459
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+ 
+08/17              {
+  reset=1960 type=mandel
+  center-mag=-0.73617449966615810/+0.18747982995311780/93.70315
+  params=0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 18:38:40 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Herman Ring Par
+
+glitters           { ; from Paul Derbyshire's herman formulas
+                     ; by wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=+0.95723776910875570/+0.29022500000000010/87.35884/1/40
+  params=1/0/1.1/0/0.001/0 float=y maxiter=256 inside=0 outside=real
+  colors=000AkbAmc<25>255143122000000000000000<17>PjqRmtSpwUszTqw<16>23400\
+  0000<4>000000001102<40>b0xc0zb0y<32>202000001<27>JGTKHUKHT<27>1110000000\
+  00<3>000011032<25>9j`
+  }
+
+;========================================================================;
+; Date: Sat, 31 Jan 1998 20:07:07 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Really last pars
+
+hermngrape         { ; from paul derbyshire's herman formulas
+                     ; a julia by wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=1.80092/-8.88178e-016/0.2590888
+  params=-0.6443/0.8/3.75/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000U5F<3>K0A<16>ipw<9>K0S<10>zzm<22>L29<18>wwm<4>pmenkcmjblha<21>\
+  N76M55N78<13>alqcru<15>00P<7>czu<24>0A0<3>IAA<21>wzo<19>K0C<4>V5IX6JZ7Ka\
+  9LcAMfBN<6>wKU<10>X7H
+  }
+ 
+bordeaux_splash    { ; from paul derbyshire's herman formulas
+                     ; a julia by wizzle 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=3.43081/-2.22045e-016/1.061839
+  params=-0.6443/0.8/3.75/0/0.001/0 float=y maxiter=256 inside=0
+  outside=real
+  colors=000gaW<17>N76M55N78<13>alqcru<15>00P<7>czu<24>0A0<3>IAA<21>wzo<19\
+  >K0C<4>V5IX6JZ7Ka9LcAMfBN<6>wKU<15>K0A<16>ipw<9>K0S<10>zzm<22>L29<18>wwm\
+  <4>pmenkcmjblha<2>icX
+  }
+ 
+lace_wine          { ; by wizzle 1998 with grngrape.map
+                     ; from a paul derbyshire herman ring formula
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=hring_j
+  center-mag=2.06186/0.925056/0.1514232/1/-12.5
+  params=-0.6676/0/4/1/0.001/0 float=y maxiter=16384
+  inside=epsiloncross outside=real
+  colors=000F1N<2>I1EK2AM4D<14>wdz<6>mww<10>0F0<15>0wk<15>0Kc<13>mzz<15>00\
+  w<14>`0Wc0Ud3V<12>wrjxvkxsj<14>i9K<30>yxlzzmyym<14>WeZUdYSbWQ`V<12>0FA<1\
+  5>czz<15>00w<10>D1Q
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }
+

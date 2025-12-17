@@ -1,0 +1,194 @@
+; fml_9911.par, a collection of pars posted to the 
+; Fractint mail list during November 1999
+; compiled by Les St Clair <les.stclair@btinternet.com>
+
+;========================================================================;
+;From:   "Fliguer, Miguel" <M_Fliguer@miniphone.com.ar>
+;Subject: RE: (fractint) Musical thumbnails
+;Date: 04 Nov 1999 09:46:11 -0300 
+
+&_Camelesque         { ; Reminds me of Camel in the 70s
+                     ; by Miguel Fliguer - 1999
+                     ; fliguer@hotmail.com
+  reset=2000 type=kamtorus center-mag=14.232/11.6834/0.06666667
+  params=2/0.1/1024/7 float=y hertz=220 sound=x/fm/quant wavetype=4
+  attack=8 decay=6 sustain=11 srelease=3
+  scalemap=1/3/5/6/8/10/12/10/8/6/5/3 orbitdelay=2500
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  savename=.gif
+}
+
+;========================================================================;
+;From: davides <davides@pipeline.com>
+;Subject: (fractint) A variant of ptc4m01 (par)
+;Date: 07 Nov 1999 08:37:10 -0500
+
+ds120              { ;  (c) David Shanholtzer Nov 07, 1999 t=  0:00:38.06
+                     ;  P200 MMX 1024x768
+                     ; A variant of ptc4m01 by S. Gallet
+                     ; color map: exp02
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=ptc+4mandels passes=1
+  center-mag=-0.488759/-0.00391134/0.7183908 params=2/0/1.525/0/-2.5/0
+  float=y maxiter=255 inside=0 decomp=256 symmetry=none periodicity=0
+  cyclerange=0/255
+  colors=qooqootsswww<9>aPR_MNXIK<3>O46hNW<19>tgqthruisujtvkuwmw<15>jQViOT\
+  hNR<3>dGJU0H<8>k_emchogk<3>www<9>eNZcJXaFU<3>U0KA0K<8>c_ffciigl<3>www<9>\
+  TNZQJXNFU<3>A0K005<24>mmnoopqqr<3>zzz<9>OORKKOGGK<3>005<35>nnooopqqq<3>w\
+  ww<11>YOOWLLTII<3>K65<3>O56O46Q89<9>okk
+  savename=ds120.gif
+}
+
+;========================================================================;
+From: "Tim Wegner" <twegner@phoenix.net>
+Subject: (fractint) Parser bug
+Date: 10 Nov 1999 21:27:02 -0600
+
+snm04              { ; (c) Bud 1998 (9 Oct)
+                     ; abusing the M-set with Kerry Mitchell's new formula
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=1 center-mag=-0.92544/0/0.56/1/-90
+  params=0.1/0.9/0.7/36 float=y maxiter=100 decomp=256 periodicity=0
+  colors=J5H<43>zzc<23>z00<55>20000000000K<27>EGVFHVFIVGJWGJX<2>ILYIMYJNZJ\
+  N_<7>NRgORhOShPTi<5>SZlT_mU`nVanWbo<3>_fqagrbhsditfju<4>psxrtytvyvwyxyzz\
+  zz<30>W2WV0VU0U<13>G0GF0FG1FH2GI3G cyclerange=0/255
+  savename=snm04.gif
+}
+
+;========================================================================;
+From: Mark Christenson <mchris@hooked.net>
+Subject: (fractint) toggle for formula types (2)
+Date: 14 Nov 1999 12:04:36 -0800
+
+gb2u               { ; - (c) Bud 7/21/99
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=gravibrot
+  ismand=y function=log/cosxx/acosh passes=b
+  center-mag=-0.232084/-0.0436159/3.659233 params=1/-0.4/0/0/3.3/0
+  float=y maxiter=300 inside=60 decomp=256 viewwindows=2/0.75/yes/0/0
+  sound=off
+  colors=LK0<14>`60a50b40c30d20e10<4>o00q00r00<3>z00<5>o00m00k00i00g00<16>\
+  QFFPGGOHHNIIMJJKKK<22>fff<3>jjjlllnnn<2>sss<3>llljjjiii<19>QQQPPPOOO<2>L\
+  LLKKKKKL<9>BPWAQX9QY<3>5Ta4Ub3Vc<4>1_k1am0bo<3>0hw0jx0kz<3>0es0dq0bo<3>0\
+  Yh0Xf1We<14>FNQGNPHMOIMNJLMKKK<15>`XLaYLbZLc_Ld`LeaLgbM<3>ohQqjRrlT<3>zs\
+  X<4>qjSoiRmgQkeP<23>KK0
+  savename=gb2u.gif
+}
+
+;========================================================================;
+From: Abhishek Roy <asm12@bom5.vsnl.net.in>
+Subject: (fractint) Lambda pars
+Date: 21 Nov 1999 04:30:02 +0500
+
+whorls             { ; Abhishek Roy 1999
+  reset=1730 type=lambda
+  corners=0.08670499344686/0.08671256986617/-0.3292191347135/-0.3292134523\
+  99 params=2/0.66 float=y maxiter=20000 outside=imag
+  distest=256/100/1024/768 finattract=y periodicity=0 sound=off
+  colors=000xE2<15>J65G65E55<3>336<11>JIYKK_MLb<3>RQkLXs<7>SRmTQmUPl<3>YMi\
+  qBu<2>OScHGa<4>GSZGUZGXY<3>FeWXFx<3>FgW<7>YdZ`cZbc_<3>la`vWg<3>lcZjeXggV\
+  eiTfhB<3>ckRclVblZ<3>_onenw<3>VokSohQpeNpb5lg<3>RrYWsWp0Z<3>eaVbkU`tU<3>\
+  XlXWjYVhZXdU<3>TibRjdQlgPmiOnkKrp<8>YhbZga`f_<3>faUtce<6>YZJVYGSYD<3>FV0\
+  <13>ZI8`I8aH9<3>gDBv8UqANlCHi61<6>gMNgOQfRT<3>e_ejWi<10>bdhbehafh<3>Zihe\
+  yyKuM<3>TsSWrUYrV<2>dp_fp`hmY<10>wH4
+  savename=whorls.gif
+}
+
+fireworks          { ; Abhishek Roy 1999
+  reset=1730 type=lambda
+  corners=0.086708718149383/0.086709096970349/-0.32921611704887/-0.3292158\
+  3293315 params=2/0.66 float=y maxiter=20000 outside=imag
+  distest=256/100/1024/768 finattract=y periodicity=0 sound=off
+  colors=000YnV<2>VhXXdS<3>Ti`RjbQlePmgOniKrn<8>Yh`Zg_`fY<3>faStcc<5>a_LYZ\
+  HVYE<2>LW4IW1FV0<3>LR0MR1OQ1<7>ZI6`I6aH7<3>gD9v8SqALlCFi60i82<5>gMLgOOfR\
+  R<3>e_cjWg<10>bdfbefaff<3>ZifeywKuK<3>TsQWrSYrT<2>dpYfpZhmW<5>pWGrTDsQA<\
+  3>xE0<15>J63G63E53<3>334<11>JIWKKYML`<3>RQiLXq<7>SRkTQkUPj<3>YMgqBs<2>OS\
+  aHG_<4>GSXGUXGXW<3>FeUXFv<3>FgU<7>YdX`cXbcY<3>laZvWe<3>lcXjeVggTeiRfh9<3\
+  >ckPclTblX<3>_olenu<3>VoiSofQpcNp`5le<3>RrWWsUp0X<4>bkS`tS_rTZpU
+  savename=firework.gif
+}
+
+;========================================================================;
+From: Guy Marson <guy.marson@mnhn.lu>
+Subject: (fractint) speedtest
+Date: 25 Nov 1999 13:38:55 +0100
+
+fpu_off            { ; 0min 44sec; video=sf5 (Pentium 90)
+  reset=2000 type=mandelfn function=sin passes=b video=sf5
+  center-mag=+2.00247192150000000/-0.00132751499999995/0.9986742/0.9995
+  params=0/0 maxiter=95 inside=bof60 savename=fpu_off
+  colors=0000pz<34>07z06z04z03z02z00z<57>005004003002000000000<25>00d00f00\
+  h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0z\
+  z<6>0qz
+  savename=fpu_off.gif
+}
+
+fpu_on             { ; 0min 29.88sec; video=sf5 (Pentium 90)
+  reset=2000 type=mandelfn function=sin passes=b video=sf5
+  center-mag=+2.00247192150000000/-0.00132751499999984/0.9986742
+  params=0/0 float=y maxiter=95 inside=bof60 Savename=fpu_on
+  colors=0000pz<34>07z06z04z03z02z00z<57>005004003002000000000<25>00d00f00\
+  h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0z\
+  z<6>0qz
+  savename=fpu_on.gif
+}
+
+julzpwr1           { ; 58min 19.61 sec; video=sf5 (Pentium 90)
+  reset=2000 type=julibrot julibrotfromto=-1.1/-1/-2/-2 video=sf5
+  julibrot3d=150/2950/-150/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=-0.56243082849999990/-0.77924701600000000/63.86515/0.9997
+  params=0/0/2.8/0 maxiter=12 bailout=620 bailoutest=and savename=julzpwr1
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  savename=julzpwr1.gif
+}
+
+;========================================================================;
+From: BeyerML@aol.com (Marie-Luise Beyer)
+Subject: Re: (fractint) German teachers training
+Date: 30 Nov 1999 15:56:32 EST
+
+spirbunt           { ; random colors
+  reset=2000 type=julia
+  center-mag=-0.0938539/0.170495/135.1038/1.0209/90
+  params=-0.204812/-0.663316 maxiter=255 inside=0
+  colors=000cYUVOLR67MECusdfaSSLF1rKKw7NMIJGDGA8botU_bLKLL5NxUT<2>PA9qoZ<2\
+  >NGB`xq<2>JIF1xd0QJ5ID9B8ztrWs3Pa3JL3rDg<2>N6DfdA<2>KD4uFtfBbS7L2Gb<2>B7\
+  ChSUYKLNCCr8O<2>N58XJz<2>I7I7nf<2>CFDnwlWWQTnRLRFmFT`BKP7BR7e<2>G4CDeZDN\
+  JjOJ<2>L97Cg2<2>DE3gYkXOXNEIBxLCWCkIw<2>L7H4lA<2>BF493ETab<2>HCCiZ_<2>LB\
+  BzqRaTFn9mW6QmZC`O9PE6Lb08Tt<2>CAGuh39uWBVHDFBDB8D75eD_WAPM7EIrnFTREi8DW\
+  6DI4DRODFD8_cAPRCEFguSSVFju2sBhmqwG7Mr60<2>N43iXP<2>LB811L73CkdF_SBOG7YY\
+  3<2>IB3fGF<2>K76gZ26RYryhSsuKUUXP1QI2JB3c1mQ3QYSUqWOXIDViO<2>HE8WXyAI8BD\
+  6C84GcI9uiBcVCMH8MyasDTa9LL6t8I<2>O564PXSFpNB_I7JTdFLM9J3SH4LG4FE49AVXBM\
+  NCDDN3EKnD<2>EF5cWc6K3<2>C839dlBMQGJy<2>D7H3_p<2>BCFdeW<2>KDAjjV5kV8XLHd\
+  oJZnLUm<2>HaUGcOGBwQqmxZ3<3>777lgb
+  savename=spirbunt.gif
+}
+
+spirneon           { ; clever coloring; by Branderhorst
+  reset=2000 type=julia
+  center-mag=-0.0938539/0.170495/135.1038/1.0209/90
+  params=-0.204812/-0.663316 maxiter=255 inside=0
+  colors=000000<24>mGOoGPqHQ<3>zKU<19>O8CM7BK6A<3>C46A45834<2>211000000<9>\
+  000000000<2>000010030<23>0n00p00r0<3>0z0<25>0C00A0080<2>020000000<9>0000\
+  00000<2>000110330<23>nn0pp0rr0<3>zz0<25>CC0AA0880<2>220000000<29>000
+  savename=spirneon.gif
+}
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

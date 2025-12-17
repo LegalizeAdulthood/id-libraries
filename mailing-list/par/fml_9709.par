@@ -1,0 +1,429 @@
+; fml_9709.par, a collection of pars posted to the Fractint mail list
+; during September 1997
+; compiled by Les St Clair <les_stclair@compuserve.com>
+
+;========================================================================;
+; Date: 02 Sep 1997 17:51:59 +0200
+; From: Jacco Burger <JACCO.BURGER@BU.TUDELFT.NL>
+; Subject: (fractint) Fractint bug?
+
+j018-0             { ; c.p. with bailoutest=imag
+                     ; problem with storing to parfile
+                     ; (c) 1997, Jacco Burger
+  reset=1960 type=fn*fn function=acos/sin
+  center-mag=-2.18929290500000000/+2.15404510500000000/1.936443
+  bailoutest=imag inside=0 potential=255/250/0
+  colors=222BHF<49>afSafTbgTchUbgT<12>QWMQVLPVLOUL<11>IOHHOHHNHHNG<12>BHDA\
+  HDAHDAHDAHD<2>AHDBHDBIECIECJF<2>FLHGMIINK<2>MROOTPQURSWTUXU<4>egehigkkin\
+  nlqqorqo<4>ppnpomoomnnl<2>llilkikihjhg<5>bZ_aXZ_VXZTV<3>SJOQGMODJMBHK8FI\
+  5C<3>I7EI8EI8EI9EIAE<10>IHGIIGIJHJKI<8>SXRTYSV_UW`W<4>`debega`c<6>O25<12\
+  >lcS<9>B62<10>MPLORNOQN<6>IDG
+  }
+
+j018-1             { ; c.p. with bailoutest=imag
+                     ; problem with storing to parfile
+                     ; (c) 1997, Jacco Burger
+                     ; bailouttest=imag added manually to parfile
+                     ; for this compilation (LStC)
+  reset=1960 type=fn*fn function=acos/sin
+  center-mag=-2.18871307500000000/+2.15404510500000000/1.936443/0.9996
+  inside=0 potential=255/250/1 bailoutest=imag 
+  colors=222BHF<47>`eR`eSafSafTbgTchU<13>QWMQVLPVLOUL<11>IOHHOHHNHHNG<11>B\
+  HDBHDAHDAHDAHD<3>AHDBHDBIECIECJF<2>FLHGMIINK<2>MROOTPQURSWTUXU<3>cecegeh\
+  igkkinnlqqorqo<4>ppnpomoomnnl<2>llilkikih<5>c``bZ_aXZ_VXZTV<3>SJOQGMODJM\
+  BHK8FI5C<2>I7EI7EI8EI8EI9E<10>IGGIHGIIGIJHJKI<8>SXRTYSV_UW`W<4>`debega`c\
+  <6>O25<12>lcS<9>B62<10>MPLORNOQN<6>IDG
+  }
+
+j018-5             { ; c.p. with bailoutest=imag
+                     ; problem with storing to parfile
+                     ; (c) 1997, Jacco Burger
+                     ; bailouttest=imag added manually to parfile
+                     ; for this compilation (LStC)
+  reset=1960 type=fn*fn function=acos/sin
+  center-mag=-2.18871307500000000/+2.15404510500000000/1.936443/0.9996
+  inside=0 potential=255/250/5 bailoutest=imag 
+  colors=222BHF<47>`eR`eSafSafTbgTchU<13>QWMQVLPVLOUL<11>IOHHOHHNHHNG<11>B\
+  HDBHDAHDAHDAHD<3>AHDBHDBIECIECJF<2>FLHGMIINK<2>MROOTPQURSWTUXU<3>cecegeh\
+  igkkinnlqqorqo<4>ppnpomoomnnl<2>llilkikih<5>c``bZ_aXZ_VXZTV<3>SJOQGMODJM\
+  BHK8FI5C<2>I7EI7EI8EI8EI9E<10>IGGIHGIIGIJHJKI<8>SXRTYSV_UW`W<4>`debega`c\
+  <6>O25<12>lcS<9>B62<10>MPLORNOQN<6>IDG
+  }
+
+j018-25            { ; c.p. with bailoutest=imag
+                     ; problem with storing to parfile
+                     ; (c) 1997, Jacco Burger
+                     ; bailouttest=imag added manually to parfile
+                     ; for this compilation (LStC)
+  reset=1960 type=fn*fn function=acos/sin
+  center-mag=-2.18871307500000000/+2.15404510500000000/1.936443/0.9996
+  inside=0 potential=255/250/25 bailoutest=imag 
+  colors=222BHF<47>`eR`eSafSafTbgTchU<13>QWMQVLPVLOUL<11>IOHHOHHNHHNG<11>B\
+  HDBHDAHDAHDAHD<3>AHDBHDBIECIECJF<2>FLHGMIINK<2>MROOTPQURSWTUXU<3>cecegeh\
+  igkkinnlqqorqo<4>ppnpomoomnnl<2>llilkikih<5>c``bZ_aXZ_VXZTV<3>SJOQGMODJM\
+  BHK8FI5C<2>I7EI7EI8EI8EI9E<10>IGGIHGIIGIJHJKI<8>SXRTYSV_UW`W<4>`debega`c\
+  <6>O25<12>lcS<9>B62<10>MPLORNOQN<6>IDG
+  }
+
+;========================================================================;
+; Date: 02 Sep 1997 19:03:08 -0700
+; From: "Jay Hill"<jrhill@NOTESGW.NOSC.MIL>
+; Subject: Re: (fractint) Julia bug? was Those awful viewwindows
+
+3191_12_1867       { ; 0.471038112527672102    0.354079734991600297
+  reset=1960 type=julia passes=1
+  center-mag=+0.00000000000000000/-0.00000000000000000/1063.278
+  params=0.4710381123973365/0.3540797351219784 float=y maxiter=4096
+  colors=000AAA<6>SKEULEWMEYOF_PF<5>nYIpZIs_Ju`JxbKzcK<20>AAA<20>hcz<21>AA\
+  A<20>zzc<20>AAADEE<19>mzz<20>AAA<19>awaczcbxb<20>AAA<20>zcm<19>DBC
+  }
+
+;========================================================================;
+; Date: 03 Sep 1997 09:05:52 +0500 (GMT)
+; From: Ramiro Perez <rperez@ns.pa>
+; Subject: (fractint) Lypunov Inside?
+
+mand1              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=mandlyap
+  passes=1 center-mag=-0.625978/-4.44089e-016/0.8503401 params=100/0
+  float=y fillcolor=0 inside=zmag outside=summ
+  colors=CCC03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<3>0Nk0Eq\
+  08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2>0Sh0Nk0Jn0Eq0\
+  8u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2>0Sh0Nk0Jn0Eq08\
+  u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2>0Sh0Nk0Jn0Eq08u
+  }
+
+Jul1               {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=julialyap
+  passes=1 center-mag=0/0/0.6666667 params=-1/0.01/100/0 float=y
+  fillcolor=0 inside=zmag outside=summ
+  colors=CCC0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT\
+  2jW0gZ<3>0Nk0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<\
+  2>0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2\
+  >0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ0bb\
+  0Ye
+  }
+
+Jul1a              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=julialyap
+  passes=1 center-mag=0.344288/0.416493/13.33333 params=-1/0.01/100/0
+  float=y fillcolor=0 inside=zmag outside=summ
+  colors=CCC0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT\
+  2jW0gZ<3>0Nk0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<\
+  2>0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2\
+  >0Sh0Nk0Jn0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ0bb\
+  0Ye
+  }
+
+;========================================================================;
+; Date: 05 Sep 1997 13:44:52 -0700
+; From: "Mike or Linda Allison" <gumbycat@ix.netcom.com>
+; Subject: (fractint) [fractint]  oops!  Another try!  Egyptian frm and par files
+
+pyramid1           { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-21.6048/-9.39653/1.17295/1/-160
+  params=1000/-5/1/-0.5/4/-4 float=y maxiter=5000 bailout=16
+  decomp=255 
+  colors=QUW<6>cru<14>34S00P00O<14>000<15>yyf<14>_cgYahYbh<14>kxk<15>8F8<1\
+  5>fzz<15>0IE<14>LlvNozMlx<14>00N<15>znZ<15>M13<2>S8BVBEXEGZHJ`JM<8>tgk<1\
+  4>gKGfIDdHD<13>A00<8>QUW
+  }
+
+pyramid2           { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs
+  center-mag=-20.14477361321762000/-6.42931584006586100/267.9619/0.8397/11\
+  7.499 params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16
+  decomp=256 
+  colors=I8F400<7>900A00D33<14>zmm<12>LAAH77E44A00800<2>000I8F<8>OEKPFLQGM\
+  RHNRHOSIP<14>lyl<4>ThWPdSL`PHXLDTH<2>8QD4NC0KA<2>6H98F88F8<28>YSJZTK`VM<\
+  10>zo`<15>0KA<15>0A1<15>mwn<15>05A<15>0cc<15>mmz<15>000<5>300
+  }
+
+pyramid3           { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-20.1363/-6.43339/55.73607/0.8397/117.498
+  params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=256
+  colors=IIrGZp<5>IFr<2>H5ZG1SH1R<8>Z9H`AG`AG<7>b6Bc5Ae8A<6>wUA<8>qq_ptbmq\
+  a<10>HOLELKDKJ<5>9DD8BB8BB9BCABDBBE<14>Fdt<15>H1R<13>xR7<16>zzb<16>xP5<6\
+  >c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<12>OI5<6>eYJg\
+  _LiaNkcPneR<3>xn_wm_vlZ<16>ADM<4>BRUBUWBXYB__CbaCec<4>Dtn<5>Fap
+  }
+
+pyramid4           { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-20.2975/-6.52285/3.622537/1/-152.498
+  params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=255
+  colors=wxfvwh<14>05A<15>hwz<15>000<15>mmz<15>M06<15>zee<15>A00<15>zxg<13\
+  >R88O45L00<15>z_K<12>kB4j93i72g50h83iB6<13>zvn<15>A07<15>ztxojm<13>8F818\
+  0<10>hjYln`prctvfyzj
+  }
+
+pyramid5           { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-20.1388/-6.18865/1.535956/1/-152.5
+  params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=255
+  colors=e79c5A<5>xP5<7>thRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<\
+  11>EZkE`nEbqFdtEaqEZn<9>C8K97F<2>9BFFD9EFA<11>svc<2>svc<10>RVWOSVLPUIMTF\
+  JSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZ\
+  V_c`b<5>urnrplnmkikk<12>OI5<6>eYJg_LiaNkcPneR<3>xn_wm_vlZ<16>ADM<4>BRUBU\
+  WBXYB__CbaCec<4>Dtn<12>IFr<2>H5ZG1SH1R<15>lF8<2>g99
+  }
+
+shield1            { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-20.3837/-6.68511/11.41063/1.3011/-152.499
+  params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=0CI000<6>0Uf<8>1Ac18c25b33a<10>D2G<12>zsz<10>L74<8>ohcsmgvqkzvpvs\
+  m<11>BB4<11>mwp<12>0EE<11>dzt<11>050<6>0go<7>2Ee2Bd27c33a53`73_<9>T1O<11\
+  >zsz<10>OA1<8>pibsmgvqkzvpvsl<11>BB0<8>al`dqdguhjzmgwk<11>0EE<10>`zu<11>\
+  355
+  }
+
+shield2            { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  viewwindows=1/1/yes/0/0
+  center-mag=-20.14728765142225000/-6.43017342420052500/1785.17/1.2604/117\
+  .5 params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=256
+  colors=AGIQFF<10>zmm<12>LAAH77E44A00800500<15>WQW<10>AGI<4>NVS<15>4D9<15\
+  >dzk<14>OOpMLqNLo<9>XJbYI`ZI__HYZGW<13>C23A00A10<13>AHBBJCBKCBLCCMD<11>m\
+  wn<15>05A<14>OTWQVXRWYTYZVZ_<12>pto<15>000<14>900A00D33<2>NCC
+  }
+
+shield3            { ; copyright Linda Allison 1996-1997
+                     ; gumbycat@ix.netcom.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=100296-005 function=sqr/abs passes=b
+  center-mag=-20.2308/-6.38475/8.564297/1.2017/-152.498
+  params=1000/-5/1/0.5/4/-4 float=y maxiter=5000 bailout=16 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=000<4>000000110221<38>ilYjmZkn_mp`lo_kmZ<31>222000001<27>JGTKHUKH\
+  T<27>111000000000<3>000011032<27>Amc<25>255143122000000000000000<16>XgcZ\
+  je`mhbpjdsmAmc<14>297265133000000
+  }
+
+;========================================================================;
+; Date: 17 Sep 1997 15:32:08 -0400
+; From: "Damien M. Jones" <dmj@emi.net>
+; Subject: (fractint) dmj-pub.frm
+
+dmj-Mand-Hyp-Ang   {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Hyp-Ang passes=1
+  center-mag=+0.28118067573129360/+0.00931181757423966/18699.62
+  params=1/2/30/0/0/0 float=y maxiter=10000 inside=0 decomp=256
+  colors=Cth<2>Uzq<4>0qc<26>0000100310510730930B30D40F60H6<17>0pJ6rMCtRIvW\
+  OxZUzd<4>0qJ<6>0cE0aD0_D0YD0WB<7>0G50E50C40A4082<3>0000100301500701902B0\
+  1D0<3>3L03N02P03R04T03V03X05Z05`04b04d06f05h05j07l06n06p0Ar4Dt8FvCJxGMzK\
+  IyGFwCBu89s46q05o06m05k04i05g05e03c04a0<2>3W03U02S01Q02O02M01K02I01G00E0\
+  1C0<5>000010<10>GN0HP0JR0LT0<11>ap0<3>ixOkzUkyOiwIguCds6cq0<3>Yi0Wg0We0<\
+  3>QY0OW0MU0KS0JQ0HO0HM0<8>440210000010<13>0TL0VM0XO0ZQ<8>0pb6re
+  cyclerange=0/255
+  }
+
+dmj-Nova-Cir-Dst-I {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-nova-cir-dst-i passes=2
+  center-mag=+0.00164425966228871/+0.50513275596330250/1951.6
+  params=-1/0/0/0/4096/2 float=y maxiter=1000 inside=0 outside=real
+  periodicity=0
+  colors=yxT<28>dM1cK0bK0<26>640530420210000<46>00T00U20U<13>`0Lc0Kd1K<27>\
+  uRSuSTvTTwUUwUU<61>yyyzzzzzy<29>zzWzzUzyU cyclerange=0/255
+  }
+
+dmj-Mand-Cir-Dec   {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Cir-Dec passes=2
+  center-mag=+0.45056400625978110/+0.33176116910229650/500.8013
+  params=0/2/0/0/0/2 float=y maxiter=10000 bailout=128 inside=0
+  decomp=256
+  colors=0000BL0DN0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<4>0Vq<13>0\
+  FQ0DO0DM<3>08E06C06A048046024012000100<11>P0JR0LT0NV0PX0P<2>b0Vd0Wf0Yh0Z\
+  j0`<2>p0e<4>zUxyOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A\
+  <3>304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<9>0p6<4>cze<3>0s8<5>0g6\
+  0e60c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221532653863A84DA5EB5HB\
+  <2>7NG8PI8RJ9TKAVNAXM<5>EhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX\
+  <5>BYOAWMAUL9SK<3>7KE6IC5GB5DA<5>121000001023025047049<4>0AJ
+  }
+
+dmj-Mand-Pls-Dst   {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Pls-Dst passes=1
+  center-mag=+0.28120298081300770/+0.00934823174311937/27084.06
+  params=0/0/45/100/256/128 float=y maxiter=1000 inside=0
+  outside=real
+  colors=000<10>30L30N40P50R50T50V40X50Z<8>80pF8rNGt<2>fcz<3>A0s<5>80g80e6\
+  0c<12>30E20C20A108106<2>00000121231552673883AA4DC5EC5H<4>K8RL9TOAVNAXQBZ\
+  RB`SCbVDd<5>bGp<4>zzz<2>m_uiRscHqbHo`GmYFkZFiXEgWEeTDcSCaRC_PBY<5>G7MF7K\
+  D6IB5GB5D<6>000100301502704904B06D06F08H08J09L0AN0CP0C<13>p0Sr4Wt8_vCexG\
+  izKoyGkwCfu8bs4Xq0S<11>U0GS0EQ0EO0CM0CK0AI09G08E08<5>201000010<10>GN0HP0\
+  JR0LT0<11>ap0<4>uzUsyOnwIkuCfs6cq0<3>Yi0Wg0We0<3>QY0OW0MU0KS0JQ0HO0HM0<9\
+  >210
+  }
+
+dmj-Mand-Triangle  {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Triangle
+  center-mag=+0.27534889540567080/+0.00678633637548891/8538.251
+  params=0/0/0/0/1024/0 float=y maxiter=1000 inside=0 outside=real
+  symmetry=xaxis periodicity=0
+  colors=0001112212212413513513615826A26A26B27D27D2<3>AJ3AK3BK3CM4CN4DN4DP\
+  4CQ4ER4GT5GT5<2>HX5HY5JZ6K`6Ka6<2>Md6Ne7Nf7Ng7<5>Rn8So8Rp8Sr8Us9Ut9Uu9Vv\
+  9Ww9Vx9Yz9WyAXxA<3>Ut9Us9Sq9Tp9<2>Qm8Ql8Rk8<3>Mf7Ne7<4>J_6IZ6IY6IX6HW5GU\
+  5GT5GT5DQ5EQ5DP4DN4<2>CL4BK49I3<2>8F38E37D26B26A258258246235135124122122\
+  1000<7>VL0ZO0bS0fV0jW0nZ0rb0ve0zg0<2>o_0kY0gU0cR0_P0WN0SJ0<6>00000100221\
+  221421542542652873973A83C94D94DB5EC5G<3>G6LH7MG7N<6>NAVNAWPAX<7>VDeVDfXE\
+  h<5>bGnbGodHqdHreHsgItgIufIvhJwhJxkKziKyiKxgJwhJvgJueItfIs<4>aGm_Gl`GkZF\
+  jYFiYFhWEgVEeVEdTDcTDbSDa<2>RCZQBYNBWNBVMAULATLASL9RJ9QK9PH8OI8NG8L<5>B6\
+  EA5D95C85A749648648437436434224223
+  }
+
+dragonstail { ; Dragon's Tail   Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-Mand-Hyp-Dec passes=1
+  center-mag=-0.74672046920821220/-0.09275300964797947/1650.714
+  params=1/0/45/0/0/128 float=y maxiter=1000 inside=0 decomp=256
+  colors=000100<10>N80P80RA0TB0VB0<10>pJ0rO8tVG<2>zkc<3>sL0<5>gG0eG0cE0<15\
+  >830620410200000100221541662883AA3DC4ED5<5>RN8TP9VSAXSA<4>faDhcEjdFleFng\
+  GpiGrlPtpYvrgxvpzzzywqwuhuq_snRqjHohHmgGkdFidF<6>WRAUQASO9QN9OL8<2>IF6GD\
+  5DC5BB4<4>211000010<3>2903B04D05F05H0<2>7N07P09R0<12>Hp0Mr4Qt8XvC`xGgzKb\
+  yGXwCTu8Os4Iq0<13>9Q08O07M06K06I0<4>280260140120000<3>03704906B<8>0GT0HV\
+  0HX<9>0Tp<4>UpzOlyIgwCcu6Ys0Vq<3>0Qi0Pg0Pe<4>0JW0HU0GS0EQ0DO<4>09E08C06A\
+  <3>021
+  }
+
+;========================================================================;
+; Date: 24 Sep 1997 09:49:22 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) New coloring scheme
+
+decomp             {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gaussint2_jul passes=1 center-mag=0/1/1
+  params=0.3/0/1e012/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<20>z00<\
+  20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+
+plain              {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gaussint2_jul center-mag=0/1/1
+  params=0.3/0/1e012/0 float=y maxiter=256 inside=0
+  periodicity=0
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<20>z00<\
+  20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: 24 Sep 1997 14:52:18 -0700 (MST)
+; From: Kerry Mitchell <lkmitch@primenet.com>
+; Subject: (fractint) Smoothing color bands, revisited (not anti-aliasing)
+
+dmj1               {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-mand-smooth center-mag=-0.5/0/0.5
+  params=0/0/0/0/1/128 float=y maxiter=256 inside=0 periodicity=0
+  colors=000CGS<4>9Ne<7>eFQbJPZNOOWNCdM7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mu\
+  x<3>zaY<13>T3pQ0rQ4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<12>ecO<8>8MY<1\
+  3>4nK4pJ5mI<10>EHC<4>si5<10>bka<4>0jv<2>TEY<4>coOfwLfuN<13>hUp<4>Fjo<11>\
+  9WD9U98T67R29T4<7>ShOVjRZeS<5>x7_<7>ime<8>Wge cyclerange=0/255
+  }
+
+smooth1            {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=smooth_man
+  center-mag=-0.5/0/0.5 params=128/1 float=y maxiter=256 inside=0
+  periodicity=0
+  colors=000CGS<4>9Ne<7>eFQbJPZNOOWNCdM7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mu\
+  x<3>zaY<13>T3pQ0rQ4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<12>ecO<8>8MY<1\
+  4>4pJ<11>EHC<4>si5<10>bka<4>0jv<2>TEY<4>coOfwLfuN<13>hUp<4>Fjo<13>8T67R2\
+  9T4<7>ShOVjRZeS<5>x7_<7>ime<8>Wge cyclerange=0/255
+  }
+
+dmj2               {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=dmj-mand-smooth
+  center-mag=+0.25990713363414080/+0.00160746266390759/95756
+  params=0/0/0/0/10/128 float=y maxiter=1000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+
+smooth2            {
+  reset=1960 type=formula formulafile=fractint.frm formulaname=smooth_man
+  center-mag=+0.25990713363414080/+0.00160746266390759/95756
+  params=128/10 float=y maxiter=1000 inside=0 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
+  00z<41>000 cyclerange=0/255
+  }
+
+;========================================================================;
+; Date: 29 Sep 1997 10:55:56 -0700
+; From: "Jay Hill"<jrhill@NOTESGW.NOSC.MIL>
+; Subject: Re: (fractint) An interesting fractal
+
+test97c               {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test97c
+  center-mag=-0.5/6e-008/0.6666667 maxiter=500 params=0/-1
+  colors=0D0000<15>9Tx<24>24N13M12K00I00H<14>001000000<2>800B00F10I10<4>W4\
+  0Z50a60c70e80g90jB0<2>oE0qF0sH0tJ0vK0wM0xN0<4>zV0zW0yT0<2>sJ0qF0nE0mE0<4\
+  >Z80W60T50Q30O30<3>E10C00B00<10>100000100200<5>B0AD0CE0F<20>k0w<7>N0QK0M\
+  J0L<17>401000<2>010020040<26>0d00f00e0<25>080060050030020000000
+  }
+
+;========================================================================;
+; Date: 30 Sep 1997 00:31:55, -0500
+; From: VRCH78B@prodigy.com (MR CHARLES F CROCKER)
+; Subject: Re: (fractint) An interesting fractal
+
+TendrilP           { ; Both mini figure and apparent Mini Mandelbrot
+                     ; P90 640X480 time  0:00:47.29
+  reset=1960 type=formula formulafile=_p.frm formulaname=Prop
+  center-mag=1.13084/0.161267/25.06297/0.9998
+  }
+
+Tendril_97         { ; Both mini figure and apparent Mini Mandelbrot
+                     ; From Deweys formula
+                     ; P90 640X480 time  0:00:16.15
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test97c
+  center-mag=-1.13212/0.166896/24.57068/0.9998 params=0/-1
+  }
+
+;========================================================================;
+; From: VRCH78B@prodigy.com (MR CHARLES F CROCKER)
+; Subject: Re: (fractint) An interesting fractal
+; Date: 30 Sep 1997 23:35:18, -0500
+
+Fig1               { ; view of one side
+                     ; P90 640X480 time  0:00:06.31
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test97c
+  center-mag=-0.158581/0.22547/2.906977 params=0/-1 float=y
+  maxiter=255
+  }
+
+Fig2               { ; raise count and zoom
+                     ; looks like smooth lines
+                     ; P90 640X480 time  0:04:11.28
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test97c
+  center-mag=-0.11277419260928540/+0.22362538875991570/7267442
+  params=0/-1 float=y maxiter=1023
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }
+
