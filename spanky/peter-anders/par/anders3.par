@@ -1,0 +1,1025 @@
+comment {
+; Not all formulas are required by the parameters,
+; but I guess the others are also quite OK.
+; All formulas (except Sierpinsky and ULI_2) and all parameters are by:
+;
+; Peter Anders
+; anders@physik.hu-berlin.de
+;
+; Please send me a mail about your impressions of my fractals 
+; and maybe some improvements.
+; I would be pleased also about formulas or parameters by anyone else.
+}
+
+Flower3            {
+  reset=1820 type=formula formulafile=anders.frm formulaname=2lambda32
+  corners=1.523554/0.4098389/-0.7343411/0.7506123/0.4098389/0.7506123
+  params=1000/0.3/0.5/0 float=y maxiter=1000 inside=period
+  colors=000_Rz_Py`MwaKucEreApg5mi0ji0j<5>zSZ<2>zgJzlEzt6zy1qz0<4>2z00z9<4\
+  >0zx7sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0z<7\
+  >zeLzjGznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0S\
+  h0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z2\
+  0<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex\
+  5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2xz2x`0czIh<7>zv4wz0<4>7z00z3<3>0zh
+  }
+
+Fractal            { ; Very fractal!!!!
+  reset=1820 type=formula formulafile=anders.frm
+  formulaname=peter_104m function=exp/sqr
+  corners=1.14550835/1.11749524/0.631569207/0.643523395/1.12969035/0.65266\
+  6748 params=1/0 maxiter=5000 inside=0
+  colors=00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKK\
+  KOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00\
+  G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG\
+  8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000<5>000
+  }
+
+Bird               {
+  reset=1820 type=formula formulafile=anders.frm
+  formulaname=polytestii
+  corners=0.5692441/2.571606/-1.486766/0.01500555 params=0/0/0.7/0
+  float=y maxiter=1000 inside=0 symmetry=origin periodicity=0
+  colors=000<15>000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<\
+  3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<\
+  3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<\
+  3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKO\
+  SKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E\
+  8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFG\
+  BDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000
+  }
+
+Bird2            {
+  reset=1820 type=formula formulafile=halley.frm
+  formulaname=polytestii passes=1
+  corners=0.5692442/2.571606/-1.486766/0.01500555 params=0/0/0.7/0
+  float=y maxiter=1000 inside=0 decomp=256 symmetry=origin
+  periodicity=0
+  colors=000z0M<9>z02z00y10<30>0z0<30>xz0zz0zz1<29>zzxzzzzzz<15>UUUSSSOOOO\
+  OO<9>222000022<30>0zz<30>02z00z10z<29>x0zz0zz0y<17>z0Q000
+  cyclerange=1/254
+  }
+
+Eyes               {
+  reset=1820 type=formula formulafile=anders.frm
+  formulaname=peter_2haltan^2 passes=t
+  corners=-3.5754542/-2.7238354/0.13884029/-0.098461306/-3.450236/-0.52678\
+  32 params=0.9/0.5/0/0 float=y maxiter=1000 inside=0 decomp=256
+  symmetry=none
+  colors=6t0<5>2y01y00z00z00y1<75>02x01y00z00z10y00030w<23>N0c00zO0b<15>a0\
+  P0z0b0O<6>h0Iz00j0G<17>y01z00z00z00<2>y10y10x20w30<82>6t0
+  }
+
+Interference       { ; Try cycling! But not too fast!
+  reset=1820 type=formula formulafile=anders.frm formulaname=f8
+  function=ident/sqr
+  corners=1.330019939/1.356991654/2.396626368/2.408844198/1.333865198/2.39\
+  1499356 params=10000/0/3/20/0/0 float=y maxiter=1000 inside=255
+  decomp=256
+  colors=0aP<14>08r06t16m25f34_<8>53M<6>S13W00Y00<13>z00<30>2x00z00y1<25>0\
+  Ap08r08l17f26`26Y35V<7>53J83HB3FJ6G<3>T24W00Y00<13>z00<26>Ap08r09o0<16>S\
+  00<16>z00<2>v40u50s70q90<25>2x00z00y1<10>0cN cyclerange=0/255
+  }
+
+Alien             {
+  reset=1820 type=formula formulafile=lambda.frm
+  formulaname=abslambdam4 function=ident passes=t
+  center-mag=12.3984/-5.33765/6.006228/0.4358/-172.499/-12.042
+  params=0/0/100/0 float=y maxiter=1000 inside=0
+  colors=000CCC<3>CCCVDCsKA<3>xj2zq0zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3\
+  >Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz\
+  0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2j\
+  W0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03xCCCCCCCCC
+  }
+
+Spiral6            {
+  reset=1820 type=formula formulafile=lambda.frm formulaname=lambda06
+  function=ident
+  corners=2.4648936944/2.4649320824/0.002056573/0.002005389/2.4649320824/0\
+  .002005389 params=0.1/0/4/0 float=y maxiter=1000 inside=0
+  periodicity=0
+  colors=000Jgz<16>w3zz0zz0y<29>z02z00z10<29>zx0zz0yz0<29>2z00z00z3<13>0zv\
+  0zz2xz<29>x2zz0zz0y<29>z02z00z10<36>zz0<6>0z0<6>0zr0zz2xz<5>Gjz
+  }
+
+Tunnel2           {
+  reset=1730 type=formula formulafile=lambda.frm formulaname=bifmay
+  function=ident passes=1
+  corners=-1.2473695109/-1.2511090893/0.49551775759/0.4924493222/-1.247242\
+  9101/0.49534895656 params=4/0/10/2 float=y maxiter=32767
+  inside=epsiloncross outside=0 finattract=y symmetry=xaxis
+  colors=CCCv04z0gzA0zI0zQ0Ex5ze0zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20\
+  xA0pEx5Q0`<3>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z6\
+  0<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<5\
+  >n0C
+  }
+
+Tree              {
+  reset=1820 type=formula formulafile=lambda.frm
+  formulaname=abslambdaj3 function=ident
+  corners=-0.01919113/1.020169/0.28299098/1.062511
+  params=0.8/0.5/100/0 float=y maxiter=1000 inside=0 logmap=4
+  periodicity=0
+  colors=000oB0<24>2x00z00y1<26>08r06t16m<6>800<26>z00<30>2x00z00y1<25>0Ap\
+  08r08l<7>800<26>z00<27>8r0<17>S00<16>z00<4>q90
+  }
+
+Dream2             {
+  reset=1820 type=formula formulafile=lambda.frm
+  formulaname=abslambdam1 function=ident passes=1
+  corners=-3.2084291901/-3.2154828028/0.17040121494/0.17887134864/-3.21636\
+  76336/0.17832706588 params=0/0/100/0/0/0 float=y maxiter=1000
+  inside=0 logmap=23 symmetry=origin periodicity=0
+  colors=000K00<4>Y00_60aC0YH0<4>UX0UX0<13>2x00z00y1<26>08r06t16m<6>800<26\
+  >z00<30>2x00z00y1<25>0Ap08r08l<7>800<26>z00<27>8r0<17>S00<16>z00y10w30
+  cyclerange=0/255
+  }
+
+Spiral1           { ; Very slow
+  reset=1820 type=formula formulafile=lambda.frm
+  formulaname=abslambdam1 function=ident passes=1
+  corners=-3.2312302385/-3.2257075279/0.15398859432/0.15572580824/-3.23030\
+  61006/0.15302295946 params=0/0/100/0 float=y maxiter=1000 inside=0
+  logmap=73 symmetry=origin periodicity=0
+  colors=000PPP<50>000000111<124>zzzzzzyyy<73>QQQ
+  }
+
+Rocket             { ; Very slow
+  reset=1820 type=formula formulafile=anders.frm
+  formulaname=mirasinpar function=ident
+  corners=-17.5663742/-17.6447742/-1.02519583/-1.08399583
+  params=0.1/0/10/0 float=y maxiter=1000 inside=255 logmap=13
+  periodicity=0
+  colors=000SoI<14>Sx9Sx9Sw9<74>fDTfDUfCUgBVgBV<78>S9xS9xSAw<76>SnJ
+  }
+
+Dream             { ; Like an angel
+  reset=1820 type=formula formulafile=anders.frm formulaname=chaos12
+  function=flip passes=1
+  corners=-1.22492198/-1.23506445/1.034333146/1.026726291
+  params=0/0/1/0 float=y maxiter=5000 inside=0 logmap=10 periodicity=0
+  colors=zz0dS8cS8<18>m_9YO7<15>qcBsdBteBvfBwgByhC<177>yy1ZP8YO7<12>weCygD\
+  ygD<16>ygD
+  }
+
+NoJuliaSets        { ; For sure!
+  reset=1950 type=formula formulafile=peternew.frm
+  formulaname=2halnewpoly2 passes=t
+  corners=-0.36351442236/-0.3631812965/0.33033029921/0.33266218024/-0.3645\
+  1379995/0.33166280266 params=4/0/0/0/-1.8/0 float=y maxiter=1000
+  inside=0 logmap=13 symmetry=xyaxis
+  colors=000E0l<5>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy\
+  2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+Circle2          { ; From a distance , looks different with FRACTINT 18.2
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike7 function=ident passes=1
+  corners=-15.86704/15.86704/-11.90028/11.90028 params=4/1.45/100/0
+  float=y maxiter=32767 inside=0 distest=10/71/1024/768 symmetry=none
+  colors=CCCE0l<5>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy\
+  2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+LikeMandelbrot   { ; Include many real Mandelbrotsets
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike7 function=ident passes=1
+  corners=-1.64/1.64/-1.23/1.23 params=4/1.45/100/0 float=y
+  maxiter=32767 inside=0 symmetry=xyaxis
+  colors=000zD0<23>zx0zz0yz0<29>2z00z00z3<13>0zv0zz2xz<29>x2zz0zz0y<29>z02\
+  z00z10<36>zz0<6>0z0<6>0zr0zz2xz<23>w3zz0zz0y<29>z02z00z10<4>zB0
+  }
+
+Murder           { ; Who killed Mr. Mandel?
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=Mandellike11 function=ident
+  corners=0.8984467099/0.9068957824/1.157872827/1.168636677/0.8963217279/1\
+  .160706136 params=-1/-0.5/100/0/0/0 float=y maxiter=2000 inside=0
+  logmap=yes periodicity=0
+  colors=000KDD<10>OGGOGGPGGQHH<22>xxxzzzzzz<67>z33z22z22z22<48>k11k11k11k\
+  11j11j11<33>`00<7>211<47>JDD
+  }
+
+Net             { ; A fractal caught in the net
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=absmandel function=tan passes=1
+  corners=-6.670237/6.670237/-5.00715/4.998205 params=0/0/1000/0
+  float=y inside=0 periodicity=0
+  colors=000aHWP2200zXIUbIQgVB<7>hiFikGhf0bXCfWC<20>O01S68<8>S8rS9xU9o<2>`\
+  7P<8>v4Fs5H<20>jHTmER<15>YSuaOl<13>mTOkSQ<13>V`DcWK<26>Oe4Nf3Nf4<35>LBpK\
+  ArLCo<43>zIbwHc<9>cHX
+  }
+
+Order1           { ;  
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=AbsMandel function=ident
+  corners=-1.999095928410552/-1.999095927237655/-9.3566384972634295e-006/-\
+  9.3557588243565043e-006 params=0/0/100/0/0/0 float=y maxiter=1000
+  inside=0 logmap=38 periodicity=0
+  colors=CCCzM0<4>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3\
+  >Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0b\
+  b0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6\
+  >zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2j\
+  W0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60zE0
+  }
+
+Order2           {
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=absmandel function=ident passes=t
+  corners=-1.8616132874819078/-1.8616132804917029/-0.0046674515233523757/-\
+  0.0046674600424595541/-1.8616132808762704/-0.0046674603308678626
+  params=0/0/10/0 float=y maxiter=2767 inside=0 periodicity=0
+  colors=000z90<2>yD0yE0yG0yI0<20>uu0uw0uz0uz0<27>2z00z00z3<13>0zv0zz2xz<2\
+  9>x2zz0zz0y<29>z02z00z10<36>zz0<6>0z0<6>0zr0zz2xz<23>w3zz0zz0y<29>z02z00\
+  z10<2>z70
+  }
+
+Order3           { ; The total order!!
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=AbsMandel function=ident passes=1
+  corners=-1.9990959279516687/-1.9990959279512228/-9.3558679034292371e-006\
+  /-9.3558675689418419e-006 params=0/0/100/0/0/0 float=y maxiter=1000
+  inside=0 logmap=59 periodicity=0
+  colors=CCCza0<2>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3\
+  >Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0b\
+  b0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6\
+  >zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2j\
+  W0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<2>zU0
+  }
+
+Order4           { ; The total order!!!!
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=AbsMandel function=ident passes=1
+  corners=-1.9965721253856801/-1.9965721253832305/-3.7143285783071416e-006\
+  /-3.7143267412095637e-006 params=0/0/100/0/0/0 float=y maxiter=6000
+  inside=0 logmap=49 periodicity=0
+  colors=CCCzy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz\
+  0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0S\
+  h0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z6\
+  0<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<5>zq0
+  }
+
+Spiral2           { ; very slow
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=Mandellike11 function=ident
+  center-mag=+0.90320619407891820/+1.16263732955549500/18503.62/1/57.5
+  params=-1/-0.5/100/0/0/0 float=y maxiter=2000 inside=0 logmap=179
+  periodicity=0
+  colors=CCC60t<28>_0R`0Qc0Pb0O<21>x02z00z00<63>zy0zz0zz0yz0<44>Hz0Gz0Gz0G\
+  z1<41>1iX1iY0hZ0gZ<29>05w03x02y00z10y<3>50u
+  }
+
+Ufo              { ;  
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=Mandellike4 function=cos/tan passes=1
+  center-mag=-1.77636e-014/4.90274e-013/0.04167969
+  params=1e-006/0/300/0/0/0 float=y maxiter=1000 inside=0 logmap=yes
+  symmetry=xyaxis periodicity=0
+  colors=000eHY<2>_IVS9xYSubIQgVB<7>hiFikGhf0bXCfWC<20>O01S68<8>S8rS9xU9o<\
+  2>`7P<8>v4Fs5H<20>jHTmER<15>YSuaOl<13>mTOkSQ<13>V`DcWK<26>Oe4Nf3Nf4<35>L\
+  BpKArLCo<43>zIbwHc<7>gHY
+  }
+
+Circle           { ; Circles inside circles inside circles inside ...
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=1NewSinF passes=1
+  corners=-4.4429224/-4.7356309/22.026793/22.417071/-4.7356309/22.417071
+  params=0/0/0/0/0/0 float=y maxiter=32767 inside=0 logmap=yes
+  symmetry=none
+  colors=000zbO<3>zv4wz0<4>7z00z3<4>0zs3wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z\
+  9<4>0zx7sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0\
+  z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2x<5>zYT
+  }
+
+Dancer           {
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=3newpolyr5 function=cos/tan
+  corners=-3.44/3.44/-2.58/2.58 params=0/4/0/0/0/0 float=y
+  maxiter=1000 inside=0 symmetry=origin
+  colors=000rQL<10>k`Ok`Oj_O<24>LAIJ8HJ8H<39>fJagJbfJa<20>BG79G69H6<33>PfG\
+  PgGOcG<8>60C<22>M0gN0hM0c<6>873<19>VSDXTDYTD<6>d_Hd_HeZH<26>yFJyFJzEJzEJ\
+  yFJ<9>sPL
+  }
+
+Mandel           {
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=2Newz^pixelLog passes=1
+  corners=0.8303237779/0.841114871/1.358822085/1.351087842/0.8379210078/1.\
+  348692445 params=0/0/0/0/0/0 float=y maxiter=1000 inside=0 logmap=21
+  periodicity=0
+  colors=000MAz<27>p3bq3as2_<13>y7Py8Py8Oy9NzAM<14>zJCzKBzLBzMAzMA<6>xS6wT\
+  5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9>MzALzB\
+  KzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<\
+  11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<6>_2t
+  }
+
+Miracle          { ; Look at the different postions of the colored piece
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=2newtan^2 passes=1
+  corners=-1.62724/13.78702/-5.780347/5.780347 params=0/0/0/0/0/0
+  float=y maxiter=1000 inside=0 decomp=256
+  colors=000zzz<27>555333233133033<27>0vv0xx0xx0xy<28>04z02z12z<30>x0zzzzz\
+  zzz0w<27>z04z02y12<29>4v02x02x02y0<28>vz0xz0xz1<30>zzx000
+  }
+
+Spiral3           { ;  
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=1NewPolyRVI function=ident passes=1
+  corners=-0.4325831/0.5840185/1.312986/-0.04248242/0.5840185/-0.04248242
+  params=4/50/2/1/0/0 float=y maxiter=32767 inside=0 symmetry=none
+  colors=000u50<27>2x00z00y1<26>08r06t16m<6>800<26>z00<30>2x00z00y1<25>0Ap\
+  08r08l<7>800<26>z00<26>Ap08r09o0<16>S00<16>z00y10w30
+  }
+
+Spiral4          { ;  
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=3PolyRIII function=sin passes=t passes=t1
+  corners=-1.380388/1.380388/1.840517/-1.840517/1.380388/-1.840517
+  params=4/0/0/0/0/0 float=y maxiter=32767 inside=0 decomp=256
+  symmetry=xaxis periodicity=0
+  colors=000zzz<12>___zhzzhzUUU<12>333za0za0033<12>0TT0z00z00ZZ<10>0ttzzz0\
+  xx0jk0jk0wzzzz0sz<10>0YzYT0YT00Sz<12>02zEbzEbz30z<12>T0zQQQQQQZ0z<12>x0z\
+  zzzzzzz0w<12>z0Yz0zz0zz0S<12>z02z00z00<13>YT0up0up0SZ0<10>6t0zzz2x00f00f\
+  03z0zzz7z0<10>Tz00zz0zzZz0<12>xz000z00zzz3<12>zzTXXXXXXzzZ<12>zzx000
+  }
+
+Web              { ;  
+  reset=1820 type=formula formulafile=peternew.frm
+  formulaname=3NewPolyR1 function=tan passes=t passes=t1
+  corners=-3.635072/3.635072/-2.726304/2.726304 params=10/0/0/0/0/0
+  float=y maxiter=32767 inside=0 logmap=yes symmetry=xyaxis
+  colors=cBbSjN<22>Sx9Sx9Sw9<76>fCUgBVgBVgBV<77>S9xS9xSAw<68>SjN
+  }
+
+SpiderLike         { ;  
+  reset=1820 type=formula formulafile=anders.frm formulaname=Spider6
+  function=ident passes=b passes=b1
+  corners=-0.6666667/0.6666667/-0.5/0.5 params=16/0/0.5/1.4/0/0
+  float=y maxiter=5000 logmap=yes symmetry=xyaxis periodicity=0
+  colors=0000000RR<17>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>0z0<30\
+  >xz0zz0zz1<29>zzxzzzzzz<28>333000011<10>0NN cyclerange=2/255
+  }
+
+Swirls             { ; Fine result while combining two formulas
+  reset=1950 type=formula formulafile=peternew.frm
+  formulaname=2halnewpoly1 passes=t
+  corners=-3.636364/3.636364/-2.727273/2.727273 params=4/4/-1/1/0/0
+  float=y maxiter=1000 inside=0 symmetry=origin
+  colors=000zM0<4>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4\
+  >Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0J\
+  n08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6\
+  >zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0S\
+  h0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z2\
+  0<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60zE0
+  }
+
+Swirls2            { ; Swirls with Decompression
+  reset=1950 type=formula formulafile=peternew.frm
+  formulaname=2halnewpoly1
+  corners=-3.636364/3.636364/-2.727273/2.727273 params=4/4/-1/1/0/0
+  float=y maxiter=1000 inside=0 decomp=256 symmetry=origin
+  colors=000zzz<12>___zhzzhzUUU<12>333za0za0033<12>0TT0z00z00ZZ<12>0xx0jk0\
+  jk0wz<12>0YzYT0YT00Sz<12>02zEbzEbz30z<12>T0zQQQQQQZ0z<12>x0zzzzzzzz0w<12\
+  >z0Yz0zz0zz0S<12>z02z00z00<13>YT0up0up0SZ0<12>2x00f00f03z0<12>Tz00zz0zzZ\
+  z0<12>xz000z00zzz3<12>zzTXXXXXXzzZ<12>zzx000
+  }
+
+Swirls3            {
+  reset=1950 type=formula formulafile=peternew.frm
+  formulaname=2halnewsin passes=t
+  center-mag=-1.56403/6.66134e-016/1.202749/1/-90 params=5/0/0/0/0/0
+  float=y maxiter=50000 inside=0 decomp=256 symmetry=none
+  colors=000zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz\
+  0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0S\
+  h0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z6\
+  0<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<5>zq0
+  }
+
+Spikes             {
+  reset=1950 type=formula formulafile=peternew.frm
+  formulaname=2halnewsin
+  center-mag=-2.08868655674560600/-0.00010840007450123/481.0997
+  params=5/0/0/0/0/0 float=y maxiter=50000 inside=0 symmetry=none
+  colors=000zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz\
+  0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0S\
+  h0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z6\
+  0<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<5>zq0
+  }
+
+Alcatraz           { ; No way to escape!!!!!!
+  reset=1820 type=barnsleyj1 passes=1
+  corners=0.07587117/0.51633888/0.36766841/0.67487383 params=0/1.45
+  float=y maxiter=1000 bailout=100 inside=0 outside=real logmap=17
+  colors=000099<26>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>0z0<30>xz\
+  0zz0zz1<29>zzxzzzzzz<28>333000011<2>077
+  }
+
+Animal             { ; Very spiky
+  reset=1820 type=formula formulafile=anders.frm formulaname=uli_2
+  function=sin/flip center-mag=-2.98e-006/0.2694/4.64614
+  params=0/0/1600/0 float=y maxiter=1000 bailout=100 inside=0
+  symmetry=xyaxis
+  colors=000<15>000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<\
+  3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<\
+  3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<\
+  3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKO\
+  SKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E\
+  8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFG\
+  BDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000
+  }
+
+Bifurcation        { ; Quite funny!!!!!!!
+  reset=1950 type=biflambda function=ident
+  center-mag=+3.56997343476607800/+0.80397548286837630/1500000
+  params=1000/0.66 float=y maxiter=1000 inside=0 periodicity=0
+  colors=000GHzepdkSSP8ZQj5HMDPjRg`CG6RtBZ8Re_jOCrWSUAGRKbetEe`DdFNJPhm_f9\
+  XSn`ehRV5g1WdcfHO8ryINGfDR1hE3KpG`ZfoqpnKTgXD_0ys7ZP7EnbS2ssyO`uCz4UuAhC\
+  WvvB0NGZiXnWL3rhl`_pPGVG5Jn0HGN6IIuCEqxRMQSCrHziJSMy08YJZ_P_tu94idZBBY9`\
+  5LYhHYmTYxL`T7k79IqpR9PhG3aZNgK`AHRbjerpMRLhZ4gHGTNl57UigYV_NE_affhn7joo\
+  05yIDWQxEVQfnGkqH5WJxmSLeSGVqzJUC9c3VfVyEGlC89cyabbd2h27zwDE5sywwkQ_dX2c\
+  N5THEaYzfzaLb2wnTxxtZ5VRh1HFzfcrbkiEwdrvs30wtYJqjkBgeRYFMzpH2XRBqWAdkU5q\
+  1a8pAciLP2n9U0ni3gZjR63cp2YXjXcuFN2GtWNpuz08b51LU6dWv9esETy5fPzO81_Ef0sZ\
+  aDIoT7vba63JT8uBZPmwvucYcFKbGfUHhlLkvlFAp`Xd5E2KHsb3Z76m5ad9WonMODBkdxjd\
+  yNYtzIfgfQKdDErbFehLRN7gcV30pjDqCFOGXs7J1x2KCeVZCvNXDz8oN3VzOQQa3v4jAJ2d\
+  PuB0U4XFVrJv954oPlI_oSCoY7ODXVhrm8RvcIYP2rwYdhgNQyWtKXMVzRuLNAtf5wheuN6l\
+  6JUDLdJeyUSRdZjg9UyFLQQvgz`6`KP1vWH1zpVDeg86Zw`_w4hpK7p
+  }
+
+Bifurcation3       { ; Period doubling?
+  reset=1950 type=bif+sinpi function=sin
+  corners=1.1235159037/1.123934136/1.6117506672/1.612462552
+  params=70/0.71 float=y maxiter=32767 inside=0
+  colors=000SrF<8>Sx9Sx9Sw9<74>fDTfDUfCUgBVgBV<78>S9xS9xSAw<82>SrF
+  }
+
+Bifurcation4       { ; Shark
+  reset=1950 type=biflambda function=ident
+  corners=-1.449846979/-1.447806979/0.6421464537/0.6431664537
+  params=1/0.66 float=y maxiter=32767 inside=0
+  colors=000<10>XSJ<2>m7K<39>M3c<6>kHI<10>YhC<4>n8J<64>IVZ<3>jAM<13>AVj<3>\
+  o7In7Io7J<5>m9Hl9Gl9Gl9Gl9FkAF<11>hCBgCAgCAfD9gCAgDA<3>o7I<2>fGEcJCbKD<2\
+  >_PHZRJYSJ<46>FnJ
+  }
+
+Flower2         {
+  reset=1820 type=tetrate
+  corners=-0.78017742538/-0.77964942538/0.0058260957966/0.0051220957966/-0\
+  .77964942538/0.0051220957966 params=1/0 float=y maxiter=20000
+  inside=255 outside=real logmap=20
+  colors=zMA<4>yQ7xR7xS6wT5wT5<6>tZ2t_2s_2s`2ra1<15>il0hm0gn0fn0eo0<4>br1a\
+  s1`s2_t2Zt2Zu2<8>Sx6Rx7Qx7Qy8Py8Oy9<6>JzDIzDHzEHzEGzFGzG<13>7xQ6xR6xS5wT\
+  5wT5wU<5>2tZ2t_2s_2s`1ra<15>0il0hm0gn0fn0eo<4>1br1as2`s2_t2Zt2Zu<8>6Sx7R\
+  x7Qx8Qy8Py9Oy<6>DJzDIzEHzEHzFGzGGz<13>Q7xR6xS6xT5wT5wU5w<5>Z2t_2t_2t_2s<\
+  17>l0im0hn0gn0fo0e<4>r1bs1as2`t2_t2Zu2Z<8>x6Sx7Rx7Qy8Qy8Py9O<6>zDJzDIzEH\
+  zFHzFGzGF<7>zMA cyclerange=0/255
+  }
+
+Flowercarpet       {
+  reset=1960 type=sqr(fn) function=tan passes=1
+  center-mag=+0.00000000000002842/+0.00000000000049560/0.2370657
+  float=y maxiter=32767 bailout=32000 inside=0 symmetry=pi
+  colors=000FLQQvgz`6`KP1vWH1zpVDeg86Zw`_w4hpK7pGHzepdkSSP8ZQj5HMDPjRg`CG6\
+  RtBZ8Re_jOCrWSUAGRKbetEe`DdFNJPhm_f9XSn`ehRV5g1WdcfHO8ryINGfDR1hE3KpG`Zf\
+  oqpnKTgXD_0ys7ZP7EnbS2ssyO`uCz4UuAhCWvvB0NGZiXnWL3rhl`_pPGVG5Jn0HGN6IIuC\
+  EqxRMQSCrHziJSMy08YJZ_P_tu94idZBBY9`5LYhHYmTYxL`T7k79IqpR9PhG3aZNgK`AHRb\
+  jerpMRLhZ4gHGTNl57UigYV_NE_affhn7joo05yIDWQxEVQfnGkqH5WJxmSLeSGVqzJUC9c3\
+  VfVyEGlC89cyabbd2h27zwDE5sywwkQ_dX2cN5THEaYzfzaLb2wnTxxtZ5VRh1HFzfcrbkiE\
+  wdrvs30wtYJqjkBgeRYFMzpH2XRBqWAdkU5q1a8pAciLP2n9U0ni3gZjR63cp2YXjXcuFN2G\
+  tWNpuz08b51LU6dWv9esETy5fPzO81_Ef0sZaDIoT7vba63JT8uBZPmwvucYcFKbGfUHhlLk\
+  vlFAp`Xd5E2KHsb3Z76m5ad9WonMODBkdxjdyNYtzIfgfQKdDErbFehLRN7gcV30pjDqCFOG\
+  Xs7J1x2KCeVZCvNXDz8oN3VzOQQa3v4jAJ2dPuB0U4XFVrJv954oPlI_oSCoY7ODXVhrm8Rv\
+  cIYP2rwYdhgNQyWtKXMVzRuLNAtf5wheuN6l6JUDLdJeyUSRdZjg9Uy
+  }
+
+Broken2            { ; The Streets of Spirals
+  reset=1950 type=barnsleyj2
+  corners=0.7021358749/0.7121358749/1.116184811/1.123684811
+  params=0.6/1.1 float=y maxiter=1000 inside=0
+  colors=000fFi<20>zIbwHc<13>XIUbIQgVB<7>hiFikGhf0bXCfWC<20>O01S68<8>S8rS9\
+  xU7hW7R<10>v4Fs5H<20>jHTmER<15>YSuaOl<13>mTOkSQ<13>V`DcWK<26>Oe4Nf3Nf4<3\
+  5>LBpKArLCo<21>eFi
+  }
+
+Broken      {
+  reset=1820 type=barnsleym1 passes=b
+  corners=-1.02092234281/-1.020495057/-0.208717307305/-0.208261180309/-1.0\
+  2098746087/-0.208630483216 params=0/0 float=y maxiter=1000
+  inside=255 logmap=yes
+  colors=000ptJ<30>hIRhHRiMQ<5>mpKnuJmtJ<15>dkOdkPcjPbiQdkQ<4>nwM<21>Rno<2\
+  >bq_grUksPptJpsJ<37>cIXcHXdOV<4>nxI<17>Iu9ouL<6>VXj<4>poO<5>lXalUdlSekQf\
+  <3>iDphArfBr<7>VKv<5>hhXjmSlqOovJovJ<40>LS`<5>ekPinNmqLquI
+  }
+
+Caves              { ; Kamtorus3D  Variation
+  reset=1950 type=kamtorus3d
+  corners=-0.5266457/0.5969383/0.82804583/1.2836986
+  params=1.3/0.001/0.1/650 float=y maxiter=32767 inside=0
+  rotation=90/10/0 perspective=0 xyshift=0/0
+  colors=0000XX<14>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>0z0<30>xz\
+  0zz0zz1<29>zzxzzzzzz<13>YYYWWWVWW<26>2SS0RR0TT0VV
+  }
+
+Cross              { ; Strange Newton
+  reset=1730 type=newtbasin passes=1
+  corners=-31.99/31.99/-23.9925/23.9925 params=4/0 float=y
+  maxiter=32000 inside=0 logmap=yes potential=255/1000/32000/16bit
+  symmetry=none periodicity=0
+  colors=000aPz<9>z0z<30>z02z00z10<29>zx0zz0yz0<29>2z00z00z3<13>0zv0zz2xz<\
+  29>x2zz0zz0y<29>z02z00z10<36>zz0<6>0z0<6>0zr0zz2xz<5>Gjz000Jgz<5>XUz
+  cyclerange=0/255
+  }
+
+Sky                { ; cloudy
+  reset=1960 type=dynamic function=sqr
+  corners=-23.11312/-1.833118/1.876297/23.1563 params=70/0.1/1/3
+  float=y maxiter=1000 inside=0
+  colors=000svy<9>zzzzzzyzz<114>1Vz0Uz0Uz0Uz<43>0Uy0Uy1Uy2Vy<76>rvy
+  }
+
+Fire               { ; Mandelzoom
+  reset=1820 type=mandel
+  corners=-0.8200239792118/-0.82002355848329/0.197714870415802/0.197714810\
+  3117/-0.82002379889957/0.197714629999477 params=0/0 float=y
+  maxiter=10000 inside=0 logmap=yes
+  colors=CCCwz0<4>7z00z3<4>0zs3wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z9<4>0zx7s\
+  z<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0z<7>zeLzj\
+  GznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08\
+  u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Ye0Nk0Eq03x60t3wz<6>w3zz2x<10>zv4
+  }
+
+Fountain           { ; Not my formula
+  reset=1820 type=formula formulafile=anders.frm formulaname=uli_2
+  function=cos/tan passes=1 center-mag=1.5333/16.269/1.05597
+  params=0/0/1600/0 float=y maxiter=1000 bailout=100 inside=255
+  symmetry=xyaxis
+  colors=000svy<9>zzzzzzyzz<114>1Vz0Uz0Uz0Uz<43>0Uy0Uy1Uy2Vy<76>rvy
+  }
+
+Hypnotic           { ; Try fast cycling!
+  reset=1950 type=newtbasin corners=-0.488/0.488/-0.366/0.366
+  params=6/1
+  colors=000yw002wyx002wyx001xyy001xzz0zW00WVw000z0w000z0w000y0w100y0w100x\
+  1w200x1w200w2w300w2w300v3w400v3w400u4w500u4w500t5w600t5w600s6w700s6w700r\
+  7w800r7w800q8w900q8w900p9wA00p9wA00oAwB00oAwB00nBwC00nBwC00mCwD00mCwD00l\
+  DwE00lDwE00kEwF00kEwF00jFwG00jFwG00iGwH00iGwH00hHwI00hHwI00gIwJ00gIwJ00f\
+  JwK00fJwK00eKxL00eKxL00dLxM00dLxM00cMxN00cMxN00bNxO00bNxO00aOxP00aOxP00`\
+  PxQ00`PxQ00_QxR00_QxR00ZRxS00ZRxS00YSxT00YSxT00XTxU00XTxU00WUxV00WUxV00V\
+  VxW00VVxW00UWxX00UWxX00TXxY00TXxY00SYxZ00SYxZ00RZx_00RZx_00Q_x`00Q_x`00P\
+  `xa00P`xa00Oaxb00Oaxb00Nbxc00Nbxc00Mcxd00Mcxd00Ldye00Ldye00Keyf00Keyf00J\
+  fyg00Jfyg00Igyh00Igyh00Hhyi00Hhyi00Giyj00Giyj00Fjyk00Fjyk00Ekyl00Ekyl00D\
+  lym00Dlym00Cmyn00Cmyn00Bnyo00Bnyo00Aoyp00Aoyp009pyq009pyq008qyr008qyr007\
+  rys007rys006syt006syt005tyu005tyu004uyv004uyv003vyw003v
+  }
+
+Julia              { ; Attractive
+  reset=1960 type=julia corners=0.906/-0.906/-1.208/1.208/-0.906/1.208
+  params=0.3739002932551294/0.1505867014341509 float=y maxiter=200
+  inside=0 outside=0 finattract=y periodicity=0
+  colors=000z0M<9>z02z00y10<30>0z0<30>xz0zz0zz1<29>zzxzzzzzz<28>333000011<\
+  30>0zz<30>02z00z10z<29>x0zz0zz0y<18>z0O
+  }
+
+Julia1             { ;  
+  reset=1820 type=julia passes=1
+  corners=0.51178617/-0.51179917/-1.4557594/1.4557504/-1.2542293/0.8989279\
+  1 params=0.2377216815948486/0.5447205305099487 float=y maxiter=32767
+  bailout=16 inside=0 logmap=yes
+  colors=000WWW<13>333000011<30>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10\
+  <30>0z0<30>xz0zz0zz1<29>zzxzzzzzz<13>YYY
+  }
+
+Julia2             { ; Poor Juliasset while a lightning
+  reset=1820 type=julia
+  corners=0.0076834238634836656/-0.0076834238634836648/-0.015360164/0.0149\
+  6902971/-0.012406654300516337/0.01142660688
+  params=-1.257855713610293/-0.3590032948740351 float=y maxiter=32767
+  bailout=10000 inside=0 logmap=yes symmetry=origin periodicity=0
+  colors=CCC20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6\
+  >v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz\
+  0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0N\
+  k0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u
+  }
+
+Julia3             { ; Really nice
+  reset=1820 type=julia passes=1
+  center-mag=-8.21565e-015/-4.88498e-015/0.884511
+  params=-0.7526999999999999/0.04000000000000001 float=y maxiter=32767
+  inside=0 logmap=yes periodicity=0
+  colors=000<4>000011033<29>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>\
+  0z0<30>xz0zz0zz1<29>zzxzzzzzz<24>BBB
+  }
+
+Julia4             { ;  
+  reset=1820 type=julia passes=t
+  corners=-0.0015936281279599/-0.0015928032336139/0.00091103322898927/0.00\
+  091242637812382/-0.0015939998775799/0.00091152889514935
+  params=-0.4231911310950311/0.5979247090843487 float=y maxiter=5000
+  bailout=400 inside=0 logmap=yes
+  colors=000zzz<28>333000011<30>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10\
+  <30>0z0<30>xz0zz0zz1<30>zzz
+  }
+
+mandel1            {
+  reset=1730 type=mandel
+  corners=-0.8140093863/-0.8123111463/0.2043579948/0.2020936748/-0.8123111\
+  463/0.2020936748 params=0/0 float=y maxiter=2500 inside=0 logmap=27
+  finattract=y
+  colors=CCC10y<33>_0R`0Qc0Pb0O<21>x02z00z00<63>zy0zz0zz0yz0<44>Hz0Gz0Gz0G\
+  z1<41>1iX1iY0hZ0gZ<32>00z
+  }
+
+mandel2            {
+  reset=1950 type=mandel passes=1
+  corners=-0.7209360507852558/-0.72093605083932943/0.25900101645583179/0.2\
+  5900101634307121/-0.72093605075060485/0.25900101640961914 params=0/0
+  float=y maxiter=32767 inside=0 finattract=y
+  colors=00000R<14>00Mz00<18>g00f00f00f00<29>X00W10V30<30>0z0<18>0g00f00f0\
+  0f0<61>0M000z<18>00g00f00f00f<45>00R
+  }
+
+Magic              { ; The Magic Carpet
+  reset=1960 type=cellular
+  center-mag=+0.00000000000000000/+0.00000000000000000/1/1.3333
+  params=101.0/3211310.0/51.0/0.0 float=y maxiter=32767 inside=0
+  colors=000e00AZADCTwuIeL0eL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+Mandel3            { ; Mandelstar
+  reset=1820 type=mandel
+  center-mag=-1.37195054000000000/-0.02716961225000000/5322.905
+  params=0/0 float=y maxiter=32767 inside=0 logmap=yes
+  colors=000z0H<3>w3Czz0v4900zu57z0os74zzzr82q90<26>0z0<30>xz0zz0zz1<29>zz\
+  xzzzzzz<28>333000011<30>0zz0yzCwz0uz<27>02z00z10z<29>x0zz0zz0y<20>z0Kzz0
+  }
+
+Mandel4            { ;  
+  reset=1820 type=mandel passes=1
+  corners=-1.175341642/-1.163056288/0.196819881/0.194515383/-1.169812762/0\
+  .189447966 params=0/0 float=y maxiter=32767 inside=0 logmap=yes
+  colors=000zzz<22>FFFDDDCGG<6>2bb0ff0ff<26>0yy0zz0yz<29>02z00z10z<29>x0zz\
+  0zz0y<29>z02z00y10<30>0z0<30>xz0zz0zz1<30>zzz
+  }
+
+Julia5             { ; MultiJulia
+  reset=1820 type=julia passes=t
+  center-mag=8.60423e-016/-6.6197e-015/10
+  params=-1.187414005274197/0.3039587482730084 float=y maxiter=32767
+  bailout=100 inside=0 logmap=10 symmetry=origin periodicity=0
+  colors=000nGf<11>zIbwHc<12>ZIV<2>dSGgWBgYB<5>hiFikGhfFgaEfWC<20>O01S68<7\
+  >S8mS8rU8l<3>`7P<8>v4Fs5H<20>jHTmER<13>_QqZRs_Rp`QmaPjbOgcPddQa<10>fSRfS\
+  QgTPhUN<6>_YHZZGZZG<3>aYIbXJaXI<23>Oe4Nf3Nf4<35>LBpKArLCo<30>mGf
+  }
+
+Octopussy          {
+  reset=1820 type=spider passes=1 corners=-2.068/1.068/-1.176/1.176
+  params=0/0 float=y maxiter=32767 inside=bof60 outside=0
+  periodicity=4
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+Sierpinski         { ; This carpet looks a little different
+  reset=1820 type=cellular
+  center-mag=+0.00000000000000000/+0.00000000000000000/1/1.3333
+  params=1.0/1010101010101.0/61.0/0.0 float=y maxiter=5000 inside=0
+  logmap=old
+  colors=000FEwPlI_oSCoY7ODXVhrm8RvcIYP2rwYdhgNQyWtKXMVzRuLNAtf5wheuN6l6JU\
+  DLdJeyUSRdZjg9UyFLQQvgz`6`KP1vWH1zpVDeg86Zw`_w4hpK7pGHzepdkSSP8ZQj5HMDPj\
+  Rg`CG6RtBZ8Re_jOCrWSUAGRKbetEe`DdFNJPhm_f9XSn`ehRV5g1WdcfHO8ryINGfDR1hE3\
+  KpG`ZfoqpnKTgXD_0ys7ZP7EnbS2ssyO`uCz4UuAhCWvvB0NGZiXnWL3rhl`_pPGVG5Jn0HG\
+  N6IIuCEqxRMQSCrHziJSMy08YJZ_P_tu94idZBBY9`5LYhHYmTYxL`T7k79IqpR9PhG3aZNg\
+  K`AHRbjerpMRLhZ4gHGTNl57UigYV_NE_affhn7joo05yIDWQxEVQfnGkqH5WJxmSLeSGVqz\
+  JUC9c3VfVyEGlC89cyabbd2h27zwDE5sywwkQ_dX2cN5THEaYzfzaLb2wnTxxtZ5VRh1HFzf\
+  crbkiEwdrvs30wtYJqjkBgeRYFMzpH2XRBqWAdkU5q1a8pAciLP2n9U0ni3gZjR63cp2YXjX\
+  cuFN2GtWNpuz08b51LU6dWv9esETy5fPzO81_Ef0sZaDIoT7vba63JT8uBZPmwvucYcFKbGf\
+  UHhlLkvlFAp`Xd5E2KHsb3Z76m5ad9WonMODBkdxjdyNYtzIfgfQKdDErbFehLRN7gcV30pj\
+  DqCFOGXs7J1x2KCeVZCvNXDz8oN3VzOQQa3v4jAJ2dPuB0U4XFVrJv9
+  }
+
+mirror_cabinet     { ; A fractal at Versailles
+  reset=1950 type=mandel(fn||fn) function=sinh/cosh
+  corners=0.1220987722/0.1177443522/0.1018209654/0.1161816842/0.1136367722\
+  /0.1131027717 params=0/0/0.5 float=y maxiter=2000 inside=0
+  colors=000z0O<10>z02z00z10<29>zx0zz0yz0<29>2z00z00z3<13>0zv0zz2xz<29>x2z\
+  z0zz0y<29>z02z00z10<36>zz0<6>0z0<6>0zr0zz2xz<23>w3zz0zz0y<17>z0Q
+  }
+
+Spiral5           { ; Try also a lower bailout!
+  reset=1820 type=barnsleyj1 passes=1
+  center-mag=-4.40536e-013/5.90639e-013/0.153716
+  params=-1.020764140588186/-0.2084504251961273 float=y maxiter=32767
+  bailout=45 inside=255 logmap=yes
+  colors=000`rb<8>Rno<2>bq_grUksPptJpsJ<37>cIXcHXdOV<4>nxI<17>Iu9ouL<6>VXj\
+  <4>poO<5>lXalUdlSekQf<3>iDphArfBr<7>VKv<5>hhXjmSlqOovJovJ<40>LS`<5>ekPin\
+  NmqLquIptJ<30>hIRhHRiMQ<5>mpKnuJmtJ<13>elNelOdkOdkPcjPbiQ<5>nwM<11>ara
+  }
+
+Tension            { ; Inside the material
+  reset=1730 type=mandellambda passes=1
+  corners=2.0887111922/2.088855517/1.2775697074/1.277677951 params=0/0
+  float=y maxiter=32767 inside=0 logmap=yes distest=1000/71/1024/768
+  periodicity=0
+  colors=000lAHiDFfGEcJC<3>_PHZRJYSJ<53>CqJ<6>m7K<39>M3c<6>kHI<10>YhC<4>n8\
+  J<64>IVZ<3>jAM<13>AVj<3>o7In7Io7J<5>m9Hl9Gl9Gl9Gl9FkAF<11>hCBgCAgCAfD9gC\
+  AgDA<3>o7I
+  }
+
+TZ                 { ; Technical painting
+  reset=1820 type=mandel passes=t
+  center-mag=-1.45015/6.89e-008/13.3334 params=0/0 float=y
+  maxiter=32767 fillcolor=0 inside=0 logmap=yes
+  colors=000z0H<3>w3Czz0v4900zu57z0os74zzzr820z0oB0k0zkF0<23>0z0<30>xz0zz0\
+  zz1<29>zzxzzzzzz<28>333000011<30>0zz0yzCwz0uz<27>02z00z10z<29>x0zz0zz0y<\
+  20>z0Kzz0
+  }
+
+Flower             { ; Not my formula
+  reset=1950 type=formula formulafile=anders.frm formulaname=sierpinsky
+  passes=g center-mag=-7.10543e-015/-0.508475/0.09861933
+  params=0/1.04 initorbit=pixel float=y maxiter=300 inside=0
+  logmap=yes
+  colors=000zq0zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz\
+  0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0S\
+  h0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy\
+  0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0b\
+  b0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z0\
+  0z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<4>zi0
+  }
+
+Cross2             {
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike1 function=ident passes=1
+  center-mag=-1.77636e-013/0.500652/0.0416797 params=0/0/250000/0
+  float=y maxiter=32767 inside=0 outside=imag symmetry=yaxis
+  colors=000br1<6>Xv3Wv3Wv4Vv4Uw5<10>MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT\
+  5wU<5>2tZ2t_2s_2s`1ra<15>0il0hm0gn0fn0eo<4>1br1as2`s2_t2Zt2Zu<8>6Sx7Rx7Q\
+  x8Qy8Py9Oy<6>DJzDIzEHzEHzFGzGGz<13>Q7xR6xS6xT5wT5wU5w<5>Z2t_2t_2s`2sa1r<\
+  15>l0im0hn0gn0fo0e<4>r1bs1as2`t2_t2Zu2Z<8>x6Sx7Rx7Qy8Qy8Py9O<6>zDJzDIzEH\
+  zEHzFGzGG<13>xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<15>il0hm0gn0fn0eo0<3>b\
+  q1
+  }
+
+Spikes2            { ; No Juliaset
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike9 function=ident
+  corners=-0.61274206398534/-0.61273814129317/6.65456079811e-005/6.2870950\
+  021659e-005/-0.61273888798034/6.2310934648683e-005 params=0/0/16/0
+  float=y maxiter=32767 inside=0 logmap=3 symmetry=xaxis periodicity=0
+  colors=000uJS<27>211000000<14>000010030<29>0z0<30>020000000<14>000110330\
+  <29>zz0<30>220000000<29>000000200<29>zKUyKUwJT
+  }
+
+Face               { ; Mysterious
+  reset=1820 type=formula formulafile=anders.frm formulaname=newwrong
+  passes=1 center-mag=7.66054e-015/0.57605/1.92915 params=4/0 float=y
+  maxiter=3 inside=epsiloncross outside=15 symmetry=xyaxis
+  colors=00000eAAAKKKz00e0eUUUeeeLLLLLzLzLLzzzLLzLzzzLzzzf00555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhhzlhzqhzzzzzh<3>hzh<3>hzz<2\
+  >hlz00S<3>S0S<3>S00<3>SS000zES07S00S0<3>0SS<2>07SEES<3>SESSEOSEL000SEE<3\
+  >SSE<2>HSEz00ESH<2>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKS\
+  K<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8\
+  EG8CG8AG88<2>GE8GG8EG8CG8AG88G88GA8GC8z08GG<2>8AGBBG<2>FBGGBGGBFGBDGBCGB\
+  B<2>GFBGGBFGBDGBCGBBGB<3>BGGBFiBDGBCG000<6>000
+  }
+
+Grey               { ; Cool teardrops
+  reset=1820 type=formula formulafile=anders.frm formulaname=f8
+  function=ident/sqr center-mag=-3.28626e-014/1.58984e-013/0.200383
+  params=10000/0/3/20 float=y maxiter=1000 inside=0 decomp=256
+  colors=000<127>zzzzzzyyy<124>000
+  }
+
+Heart              { ; I love you!
+  reset=1820 type=formula formulafile=anders.frm
+  formulaname=peter_3p02 function=sqr passes=t
+  corners=-17.00667/-15.47115/1.023683/-1.023677/-15.47115/-1.023677
+  params=0/0/1/0 float=y maxiter=100 inside=0 periodicity=0
+  colors=00000e0e0z00e00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+Lambda            { ; A star , maybe
+  reset=1820 type=formula formulafile=lambda.frm formulaname=lambda06
+  function=sin passes=t center-mag=5.77316e-014/1.5099e-014/0.366667
+  params=1e-010/0/4/0 float=y maxiter=1000 inside=0 logmap=yes
+  symmetry=xyaxis periodicity=0
+  colors=00000V<13>00w00z00z<61>y01z00z00z00<125>zz0zz1zz3<29>zzz000<13>00\
+  T
+  }
+
+Mandel5            { ; Alive or dead?Who cares?
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike4 function=ident/cos
+  corners=-28.1791979496/-28.1796352873/0.12874819857/0.129195262773/-28.1\
+  79569982/0.129244241774 params=0/0/10000/0 float=y maxiter=32767
+  inside=0
+  colors=00000000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HH\
+  HKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVV\
+  z<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2\
+  >hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3\
+  >ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKM\
+  S00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG\
+  8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCG\
+  BBGB<2>BGFBGGBFGBDGBCG000<4>000
+  }
+
+Mondrian           { ; Fine art
+  reset=1820 type=formula formulafile=anders.frm formulaname=techno1
+  function=ident/cos passes=1
+  center-mag=4.70735e-014/3.90799e-014/0.261125 params=1/1/4/0 float=y
+  maxiter=1000 inside=epsiloncross outside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+Pixel              { ; Looks familiar but strange
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=mandellike6 function=ident/tan passes=t
+  center-mag=2.59031/15.3669/40 params=0/0/100/0 float=y maxiter=32767
+  inside=0 symmetry=none
+  colors=CCC0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20\
+  x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz\
+  0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08\
+  u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Ye0Nk0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0_c0Sh
+  }
+
+Ufo2             { ; Ufo while crossing a wormhole
+  reset=1820 type=formula formulafile=peterman.frm
+  formulaname=absmandel function=ident passes=b
+  corners=-1.861612456749074/-1.861612458743692/-0.004664167553168145/-0.0\
+  04664169230168494 params=0/0/10/0 float=y maxiter=32767
+  periodicity=0
+  colors=000z00<14>0z0<15>00z<6>R0_K0WZ0S<2>j0G50A<8>cN0<9>0z0<15>00z<15>z\
+  00<15>0z0<15>00z<15>z00<15>0z0<15>00z<15>z00<15>0z0<15>00z<15>z00<5>0z0<\
+  4>00z<3>m0D
+  }
+
+Sign1              { ; Try cycling!
+  reset=1820 type=formula formulafile=anders.frm formulaname=f3
+  function=log/sqr passes=b
+  center-mag=1.03029e-013/1.55431e-013/0.125313 params=160/0/4/1
+  float=y maxiter=32767 inside=255 outside=real decomp=256
+  symmetry=none
+  colors=0H0<22>0z0<30>020000000<14>000110330<29>zz0<30>220000000<30>00000\
+  0200<19>eDKgELgEL<8>zKU<30>211000000<13>000010030<5>0F0
+  cyclerange=0/255
+  }
+
+Sign2              { ; Try cycling!
+  reset=1820 type=formula formulafile=anders.frm formulaname=techno2
+  function=sqr/recip passes=b
+  center-mag=2.45137e-013/-3.16192e-013/0.0734631
+  params=1000/1000/1000/0 float=y maxiter=1000 inside=255 decomp=256
+  colors=KK0<8>220000000<30>000000200<29>zKU<30>211000000<14>000010030<29>\
+  0z0<30>020000000<14>000110330<29>zz0<20>MM0 cyclerange=0/255
+  }
+
+Sign3              {
+  reset=1820 type=formula formulafile=halley.frm
+  formulaname=polytestii
+  corners=2.27883029/2.29244635/-0.877960139/-0.867748095
+  params=0/0/0.7/0 float=y maxiter=1000 inside=255 decomp=256
+  symmetry=origin periodicity=0
+  colors=fz0<6>tz0vz0vz0wz0xz0zz0<30>zzxzzzzzz<28>333000011<30>0zz<30>02z0\
+  0z10z<29>x0zz0zz0y<16>z0Sz0Qz0M<9>z02z00y10<30>0z0<20>dz0
+  cyclerange=0/255
+  }
+
+Tunnel             { ; Walking to Hell
+  reset=1820 type=formula formulafile=anders.frm formulaname=f1
+  function=log/sqr passes=b
+  corners=-1.135143/0.364857/1/-1/0.364857/-1 params=16/1 float=y
+  maxiter=32767 outside=real symmetry=none
+  colors=007<31>00W<13>z0z<10>z0E<4>zf0<4>zz0<3>zz0<7>00s<30>00P00N00N<30>\
+  000zz0<30>zz000r<65>00y00z00x00w000<8>006 cyclerange=0/255
+  }
+
+Bifurcation2       { ; Very strange
+  reset=1820 type=bif+sinpi function=sin
+  center-mag=-2.08019/0.240258/16.17316 params=1000/0.66 float=y
+  maxiter=32767 inside=0 logmap=yes
+  colors=000zzz<28>333000011<30>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10\
+  <30>0z0<30>xz0zz0zz1<30>zzz
+  }
+
+Chaos              {
+  reset=1960 type=julfn+exp function=cotan passes=1
+  center-mag=-1.37634408601897200/-0.01063885267306630/1.178356
+  params=0.07647069724542886/1.619018339898626 float=y maxiter=32767
+  bailout=40 inside=epsiloncross outside=0
+  colors=00000e0e00eee00e0ezLLeeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+Lyapunov1          { ; Starship , very slow
+  reset=0 type=lyapunov passes=1
+  center-mag=+3.66117436620630700/+3.38149961495736800/135.9839/-1.1366/13\
+  9.901/52.848 params=240/0.5/0 float=y maxiter=800 inside=0
+  colors=0000PP<18>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>0z0<30>xz\
+  0zz0zz1<29>zzxzzzzzz<28>333000011<10>0NN
+  }
+
+Lyapunov2          { ; very slow
+  reset=1820 type=lyapunov passes=1
+  center-mag=+3.71533962665733300/+2.35690564219807600/9.861933/1/92.499
+  params=1024/0.5/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=0000JJ<21>0zz<30>02z00z10z<29>x0zz0zz0y<29>z02z00y10<30>0z0<30>xz\
+  0zz0zz1<29>zzxzzzzzz<28>333000011<7>0HH
+  }
+
+Lyapunov3          { ; very slow
+  reset=0 type=lyapunov passes=1
+  center-mag=+3.27413489736063300/+3.94877444589305300/320.5128
+  params=240/0.5/0 float=y maxiter=600 inside=0 colors=000zk0<253>000
+  }
+
+Mandel6            {
+  reset=1950 type=mandel passes=t
+  center-mag=-0.12701008192983710/+0.98727144153940690/4.999999e+010/1/-40
+  params=0/0 float=y maxiter=40960 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+Mandel7            {
+  reset=0 type=mandel passes=1
+  center-mag=-0.72093605010870810/+0.25900101576385450/2.314759e+012/0.999\
+  9/-142.013/-0.026 params=0/0 float=y maxiter=32767 inside=0
+  logmap=473 finattract=y
+  colors=000c00<10>z00<30>2x00z00y1<25>0Ap08r08l<7>800<26>z00<26>Ap08r09o0\
+  <16>S00<16>z00<30>2x00z00y1<26>08r06t16m<6>800<14>a00
+  }
+
+Mandel8            {
+  reset=0 type=mandel passes=t
+  center-mag=-0.73877755394285370/+0.15123851313021490/1.758222e+011/1/-52\
+  .279/-0.258 params=0/0 float=y maxiter=5000 inside=0 logmap=526
+  finattract=y
+  colors=000Fx4<37>1iX1iY0hZ0gZ<29>05w03x02y00z10y<33>_0R`0Qc0Pb0O<21>x02z\
+  00z00<63>zy0zz0zz0yz0<44>Hz0Gz0Gz0Gz1<2>Fy3
+  }
