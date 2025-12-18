@@ -1,0 +1,79 @@
+; To: fractint@xmission.com
+; Subject: (fractint) Contest PAR
+; From: jim.oliver@nzpca.org.nz (JIM OLIVER)
+; Message-ID: <8E4A235.00C800F89A.uuout@nzpca.org.nz>
+; Date: Tue, 02 Dec 97 09:25:00 +1200
+; Organization: MegaBaud BBS, NZPCA, Wellington, New Zealand, 64-4-3841684
+;
+; >From another lurker, here's my entry for the contest :
+;
+; There's so many images and so little time. It's *very* hard to
+; choose only 3 :-)
+;
+; Jim Oliver <jim.oliver@nzpca.org.nz> (3.771/1680)
+; ---
+; * SLMR 2.1a * 
+;
+; My set of PAR files contained one which was supposed to be
+; generated using 2 colour MONO VGA mode (i.e F8 in most cases). It
+; looks *terrible* in any other mode. There will be those who say
+; it looks terrible anyway :-)
+;
+; Unfortunately for this particular PAR file (B&WButterflies.par) the
+; contest kit uses AF5 which is a 256 colour mode. To get the best
+; from it you will need to  (1) delete JOLIVER2.GIF then (2) run
+; this batch file : (entered as one line)
+;
+; IF NOT EXIST %3.GIF ..\FRACTINT @C:%1.PAR/%2 SAVENAME=%3.GIF
+; BATCH=Y VIEWWINDOWS=1/1/YES/160/120 VIDEO=F8 SOUND=OFF
+;
+; This assumes that your copy of FRACTINT.CFG has not been altered
+; to use F8 for another colour mode. It worked for me.
+;
+; This now means I have submitted *two* pars that broke the contest
+; kit. Shame faced I now exit right stage hoping that my images at
+; least get the best chance they can.
+;
+; If there's anyone out there who wants to see it in the correct
+; mode and can't (or don't want to) run the batch file above then
+; send me an e-mail and I'll post you a copy of the thumbnail,
+; (it's only 2516 bytes zipped) This can then replace the one in
+; your \fractint\contest directory.
+;
+; Jim Oliver <jim.oliver@nzpca.org.nz> (3.771/1680)
+;
+;  * SLMR 2.1a * 
+;
+; Jay's note:
+; Use AF1 and AF2 in the batch file. The Kit does just that.
+
+JOliver1    {;Insulators Jim Oliver <jim.oliver@nzpca.org.nz>
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4
+  center-mag=+0.38082638605114530/+0.04219071957870583/175.8883
+  params=0.525/0 float=y maxiter=1000 outside=atan logmap=30
+  colors=000YRV<125>97D<20>tr7hf9<105>d9b
+  savename=JOliver1
+  }
+
+JOliver2    {;B&WButterflies Jim Oliver (VGA mono display mode F8)
+                         ;<jim.oliver@nzpca.org.nz>
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4
+  center-mag=-1.33722687563906100/+0.18780204433826380/252.4702/1/-22.5
+  params=0/0 float=y maxiter=35 colors=000zzz
+  savename=JOliver2
+  }
+
+JOliver3    { ;Crossing Jim Oliver <jim.oliver@nzpca.org.nz>
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4 passes=1
+  center-mag=-1.58672921088622500/+0.00887585643687699/2.841158e+008/1/30
+  params=0/0 float=y maxiter=100 inside=zmag
+  potential=255/500000/1000   ; /16bit
+  invert=2.78728566005526e-007/-1.58672991358667/0.00887553400708204
+  colors=00000O<19>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwy\
+  zzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzy\
+  yy<22>GGGEEECCE<4>22E00F00G<2>00M
+  savename=JOliver3.GIF
+  }
