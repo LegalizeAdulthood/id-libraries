@@ -1,0 +1,74 @@
+; From:davides@pipeline.com on 11/16/97 10:15 PM EST
+; Please respond to fractint@mail.xmission.com
+; To:fractint@mail.xmission.com
+; Subject:Re: (fractint) Par Contest
+;
+; A bit of explanation if I may:
+;
+; In re: the first one below, the fractal was quite delicate. Unfortunately I
+; am afflicted with a debilitating disease commonly referred to as
+; "Clumsyitis"; on attempting to transport the poor thing I tripped on the
+; Persian rug, and, well, the result was a shattered fractal.  :>
+;
+; I then retired to my 65000km interferometer and located an astrophysical
+; singularity and imaged it. The result shows the Event horizon...  :>
+;
+; Since the operation of my lab requires a certain amount of expense, I
+; obtain the necessary funds by mining beneath my mountain. A snapshot of
+; what I obtain is in the third fractal.  :>
+;
+; On a more serious note, after generating these, saving the pars to an
+; exterior application, then copy/pasting them back into fractint, I
+; encountered no problems with them.
+;
+; For the contest: examples of my tinkering:
+;
+; davides@pipeline.com
+; "Do Not Meddle In The Affairs Of Dragons For You Are Crunchy And Good With
+; Ketchup"
+;
+
+david1             { ; "Shattered Fractal"
+                     ; davides@pipeline.com
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4
+  center-mag=-1.54865155336243200/+0.00003236531838063/296702.4
+  params=0/0 float=y maxiter=35000 inside=bof61 outside=real
+  decomp=255 colors=000<66>0000PZ<39>VvvWwwYww000<143>000
+  savename=DAVID_1.GIF
+}
+
+david2             { ; "Event Horizon"
+                     ; davides@pipeline.com
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4
+  center-mag=-1.54864715935377600/+0.00000247358904007/18988.95
+  params=0/0 float=y maxiter=35000 inside=bof61 outside=real
+  decomp=255
+  colors=00007y06y04y000<2>00000w<8>00n00000l<15>00X00000V00000T<27>001000\
+  000000000<27>00h00000l00003l<29>0my0003my5ny000<37>000lzy000izy000gzy000\
+  dzy000bzy`zy000Zzy000Wzy<22>2zy0zy0yy<2>0uy0000sy0000py<27>0Gy0000Ey0000\
+  By0Ay00y
+  savename=DAVID_2.GIF
+  }
+
+david3             { ; Vein of Gold
+                     ; davides@pipeline.com
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4
+  center-mag=-1.56295369211514400/-0.00000000000000032/155.0388/1/90
+  params=0/0 float=y maxiter=150000 inside=bof60 outside=imag
+  decomp=255
+  colors=000872<57>wmF000<104>0000PZ<38>UuuQ00WwwYww000<36>000000110220<5>\
+  761
+  savename=DAVID_3.GIF
+  }
+
+; While this is not related to the contest, just thought I would forward this
+; .par also. Hope it offends no one:
+
+Davides        { ; A nice variant of "Inca Gold"
+  reset=1960 type=manowarj passes=b center-mag=-0.5/0/0.6666667
+  params=0/0 float=y maxiter=3000 inside=bof60 outside=atan decomp=255
+  colors=000<8>000000110220<64>wmF000<104>0000PZ<39>VvvWwwYww000<27>000
+  }

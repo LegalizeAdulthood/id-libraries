@@ -1,0 +1,44 @@
+; Hi fractinters,
+;
+; This is my contest contribution. Gmarson.par is generated with fractint,
+; using contest4.frm.
+;
+; Enjoy them, but don't take them too serious..!
+;
+; Cheers,
+;
+; Guy Marson
+
+Gmarson1           {  ; clown-fe   Guy Marson
+  reset=1960 type=formula formulafile=contest4.frm formulaname=contest4
+  passes=1 center-mag=-0.951377/-0.0521189/1.627148/1/-87.5
+  params=-1.05/-0.03 float=y maxiter=22 inside=bof60 outside=1
+  distest=-2/71/1024/768 periodicity=0 colors=@default.map
+  savename=Gmarson1.gif
+  }
+
+Gmarson2            { ; 18s_rdna   Guy Marson
+                   ; this is the end (of Fractint's resolution)
+  reset=1960 type=formula formulafile=contest4.frm formulaname=contest4
+  passes=1 
+  center-mag=-1.68063120278028900/-0.00000000000125085/8.038397e+014/2.470\
+  4 params=0/0 float=y maxiter=1111 inside=0
+  invert=1e-011/-1.6806313407287/0 decomp=256 distest=1/33/1024/768
+  biomorph=0
+  colors=00000l<46>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
+  0yz<45>02z00z00y<11>00m
+  savename=Gmarson2.gif
+  }
+
+Gmarson3           { ; fracts-!!   Guy Marson    Artifact..!
+  reset=1960 type=formula formulafile=contest4.frm formulaname=contest4
+  passes=1 
+  center-mag=-1.68063120278029900/-0.00000000000136397/8.213789e+014/2.311\
+  1/37.784/35.933 params=0/0 float=y maxiter=1111 inside=0
+  invert=1e-011/-1.6806313407287/0 decomp=256 distest=5/33/1024/768
+  biomorph=0
+  colors=000005aKz003002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<3>uzztz\
+  ztqq<5>z00<13>zzz<10>Fzz<9>2zz0zz0yz<45>02z00z00y<55>006
+  savename=Gmarson3.gif
+  }
+
