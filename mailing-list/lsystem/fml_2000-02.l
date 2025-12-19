@@ -1,4 +1,4 @@
-; fml_0002.l, a collection of l-systems posted to the 
+; fml_2000-02.l, a collection of l-systems posted to the 
 ; Fractint mail list during February 2000
 ; compiled by Les St Clair <les.stclair@btinternet.com>
 
