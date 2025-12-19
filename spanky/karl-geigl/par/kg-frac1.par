@@ -1,0 +1,177 @@
+;
+;       These formulafiles are from Karl Geigl 100327,156. 
+;
+;
+sonderbar          {
+  reset=1810 type=mandel(fn||fn) function=exp/ident
+  corners=2.522808/1.108594/6.388691/-3.510804/6.765449/0.7318364
+  params=-1/-2/3 float=y maxiter=1234 inside=0 outside=summ logmap=yes
+  colors=0005LZ<4>14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q\
+  `5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<\
+  5>zjF<13>RCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<4>AOS<12>nk3<4>b\
+  b77Vb7Ra6O_
+  }
+
+matchstick         { ; by Karl Geigl 2/94
+  reset=1733 type=manowarj passes=t corners=-9/9/-9/9 float=y
+  maxiter=222 inside=zmag invert=0.5/0/0 periodicity=0
+  colors=LSUZchzj8ZchZchYbg0B0pDH<14>s8C<3>NDGKEHGFI<78>djpekqekqflrfkr<51\
+  >ZdhZdhYbz<45>eQWeQVfPUgPU<14>jLQjKPjKPjKOjKO<21>oDH
+  cyclerange=7/255
+  }
+
+exploding          { ; by Karl Geigl 2/94
+  reset=1733 type=manowarj corners=-9/9.000009/-9.000009/9 maxiter=111
+  inside=zmag invert=1/0/0 periodicity=0
+  colors=000X0X<4>R0Ro00<3>w00<30>200000001<30>00z<30>002000100<30>wPF<31>\
+  000<31>a0a000_0_Z0ZQ0Q<20>000<26>m00 cyclerange=7/255
+  }
+
+bubble1            { ; by Karl Geigl 1/94
+  reset=1720 type=fn(z*z) function=tanh passes=t
+  corners=-1.8892049/-1.7580403/1.90478908/2.00312145 float=y
+  inside=255 potential=255/255/0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+bubble2            { ; by Karl Geigl 1/94
+  reset=1720 type=fn(z*z) function=tanh passes=t
+  corners=-2.2464715/-1.7089118/1.7763816/2.1793831 float=y inside=255
+  potential=255/255/0
+  colors=000LEE<25>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<2>JEE
+  }
+
+kreuzblume         {
+  reset=1720 type=sqr(1/fn) function=sinh
+  corners=-1.254745/1.268951/-0.9425659/0.9494171 bailout=78
+  inside=bof60 outside=real symmetry=none
+  colors=000Bj`<3>DpdDqeDrfEsgEth<3>FxjFxkFykFylFzl<2>FzlGzmFzl<2>FzlFylFy\
+  kFxkFxj<4>EsgDrfDqeDpdCncCmb<5>AcV9aU9_S8YR8WP7UO<8>2A8286164033100000<7\
+  >J09L0AN0BP0CR0DU0E<7>h0Li0Mk0Nl0Nn0O<6>v0Sw0Sw0Tx0T<4>z0Uz0Uz0Uz0Uz0Uz0\
+  U<4>x0Tw0Sv0Su0St0R<4>o0Om0Ol0Nj0Mi0M<9>R0DP0CM0A<7>402201221<11>TTEVVFX\
+  XF<4>eeKggLiiMjjMllNmmO<5>ttRuuSvvSwwS<4>zzUzzUzzUzzUzzU<4>yyTyyTxxTwwT<\
+  4>ssQrrQppP<4>iiMhhLffKddJ<4>WWFUUERRD<5>EE7CC5AA4773552331000011<9>6OJ6\
+  QK7SM7UO8WP8YR<5>BhZ
+  }
+
+plastik            {
+  reset=1720 type=fn(z*z) function=exp passes=t
+  corners=-2.3798065/-1.4898071/1.6208801/2.2881012 inside=255
+  potential=255/255/0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Kaleidoskop        {
+  reset type=barnsleyj1 passes=t
+  corners=-2.416/2.416/-1.714551/1.701449
+  params=0.59999999999999998/1.1000000000000001 float=y inside=maxiter
+  potential=222/222/2
+  colors=000jVRkiHlx7oN`tVb1HMaFa<2>9BiaOZ<2>AnVjM_jTZk_YeBO_6CU10dE_YB`YC\
+  fL8n73vkGIlF0hPY<2>brQubYiBTh5LbJdVNiMRoAK5_GbOHfjHYiIWhJUVB`E5aaKbSPfIU\
+  jbLW<2>C`JZGaMHd9Ig3ORaEOSCCI90bPYVYVNgSnT_reZvsYQWX5kUSbk9yxVTZFeYhGW<2\
+  >_JJj6aFZnVOJEW2eKjFszlLZ<2>sbUaIPTKDKM1iH`<2>eMcXFfIDnmDW<2>x3IkbsZQWM_\
+  Sa0kd7Wf2rb6wfDgbAotW3jTbjeeisiq9gx1oQQc4`hBZ1e0PZNVNVPBbJfOg_GY<2>2ESnD\
+  _<2>z3ZqLfxRnhUPfhEdw2jJcjMhjQmhJW<2>aUHgI_cLZ_OYdEcZCgS9kttdcR`XabPmdcV\
+  RXiIPx8YJPKND`LX<2>6aMtZQfGQbHGmN`<2>wgdgM_<2>Xc`lO_oW_rc_kFUmEOoDH`Ce<2\
+  >60yeMJ_S1nGOrGCwF0c_qVCQE8GVwwcEU<2>J59aE_TCZKAYQaV4wPOSi0dt_K_OP_CUZTx\
+  VbLcVQgMVkmNV<2>vjGiK_<2>eWYgGR<2>WD0cEb<2>J8llKt0kI<3>75nIKUUZ9<3>Qfa<3\
+  >SNmgHTlHhnIqpKzk9am2duEficbs2Ga9bT2ecN_XUZP`Y8JJ
+  }
+
+binocular1         { ; crazy binocular
+  reset type=barnsleyj1 passes=b
+  corners=-2.416/2.416/-1.714551/1.701449 params=1/1.1000000000000001
+  float=y inside=maxiter potential=222/222/2
+  colors=000004000<16>z0X<15>000<15>p0w<15>000<15>zzz<3>jjj<3>ddjccjbbjaaj\
+  __j<22>22h00h10e<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3FE4\
+  EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<12>008
+  }
+
+binocular2         { ; view to ....
+  reset type=barnsleyj1 passes=b
+  corners=-2.416/2.416/-1.714551/1.701449
+  params=1.234/0.20000000000000001 float=y inside=maxiter
+  potential=222/222/2
+  colors=000KJ3IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<14>000<1\
+  6>z0X<15>000<15>p0w<15>000<15>zzz<3>jjj<3>ddjccjbbjaaj__j<22>22h00h10e<1\
+  4>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0<9>ML3
+  }
+
+binocular3         { ; mirrors
+  reset type=barnsleyj1 passes=b
+  corners=-2.416/2.416/-1.714551/1.701449 params=2 float=y
+  inside=maxiter potential=222/222/2
+  colors=000q_R<20>EA7C96A85864653432221000000<23>kb6mc7oe7qf8sh8ui9wk9zmA\
+  zmA<21>FC4DA3B83972752541321000000000<29>uX0000wZ0<29>220000000<29>uT0wU\
+  0wU0<29>210000000<5>C86E97GA8IB9KDAMEB<16>qZRs`SuaTwcUwcUubTsaS
+  }
+
+binocular4         { ; view to underground
+  reset type=barnsleyj1 passes=b
+  corners=-2.416/2.416/-1.714551/1.701449
+  params=1.6000000000000001/0.20000000000000001 float=y inside=maxiter
+  potential=111/222/2
+  colors=000b00<10>w00<30>200000001<30>00z<30>002000100<30>wPF<31>000<31>a\
+  0a000_0_<5>T0TR0RQ0QO0ON0N<17>101000100<18>`00
+  }
+
+bean               { ; red bean in a spotlight
+  reset type=manfn+zsqrd function=log corners=-16.02879/1.971214/-9/9
+  params=7 float=y inside=maxiter potential=255/255/0 decomp=265
+  biomorph=0
+  colors=000BAD<7>G68H58I57I57<8>P13Q12R12R12S12<17>e00f00g10<8>m32m32n42o\
+  43o53p53<7>t97uA7uA8uB8<8>yHEyHEyIFyJGyJG<17>zXUzYVyZW<9>webvfcvgduheuhe\
+  <3>skhslirljqmj<14>husgvtgvtfvu<11>YzyXzyWzyVzyUzzUzz<12>KzzJyzIyzIyzHyz\
+  Gxy<6>CvxBvwAuwAuv9tv<18>1il1hk1hk1gj0fi<13>0W_0WZ0VY0UX0TX1TW<4>2PS2OR2\
+  NQ3MQ3MP3LO<11>9DF9CFABEBBD
+  }
+
+footsteps          { ; first footsteps on a frctal
+                     ; Karl Geigl 100327,156
+  reset type=manfn+zsqrd function=log
+  corners=-7.752053/-11.53205/-3.089549/3.630451/-11.53205/3.630451
+  params=7 float=y inside=maxiter potential=255/255/0 decomp=265
+  biomorph=0
+  colors=000CC5<3>331000011<9>6OJ6QK7SM7UO8WP8YR<4>BfYBhZBj`CkaCmbCnc<5>Eu\
+  hEviFwjFxjFxkFyk<4>FzlGzmFzl<2>FzlFylFykFxkFxj<4>EsgDrfDqeDpdCncCmb<5>Ac\
+  V9aU9_S8YR8WP7UO<8>2A8286164033100000<7>J09L0AN0BP0CR0DU0E<7>h0Li0Mk0Nl0\
+  Nn0O<6>v0Sw0Sw0Tx0T<4>z0Uz0Uz0Uz0Uz0Uz0U<4>x0Tw0Sv0Su0St0R<4>o0Om0Ol0Nj0\
+  Mi0M<9>R0DP0CM0A<7>402201221<11>TTEVVFXXF<4>eeKggLiiMjjMllNmmO<5>ttRuuSv\
+  vSwwS<4>zzUzzUzzUzzUzzU<4>yyTyyTxxTwwT<4>ssQrrQppP<4>iiMhhLffKddJ<4>WWFU\
+  UERRD<5>EE7
+  }
+
+musicbox           { ; by Karl Geigl, CIS 100327,156
+  reset=1821 type=marksmandelpwr function=exp
+  corners=-10.42186/3.078136/11.78965/-12.21035/3.078136/-12.21035
+  float=y inside=bof60 biomorph=0
+  colors=00000V<13>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0zx<23>0z0<\
+  14>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<21>zz0000000000zzxzzz000<13>00T
+  }
+
+magneticfieldlines { ; by Karl Geigl, CIS 100327,156
+  reset=1821 type=manfn+exp function=sinh corners=-2/2/-2/2 float=y
+  inside=maxiter decomp=222
+  colors=0000B008H16934252J813B08E0HI00M0FQ2CT31X5J`76dA5gDJjF1lICnLFoO0pQ\
+  HpS9pU3oVJmW3kX8iXHfW0cVF_UCWS1SQJON6KK5HIJDF1ACC79F47025H13901300J00310\
+  920H41062F94CC61G9JKB5OE6SHJVK1ZNCbPFeR0hTHkV8mW3oXJpX3pW9pWHpU0nTFlRBjO\
+  1gMJdJ5aG6YDJUA1Q8CM5EJ30F2HB1880360J30221902H03005F08B1A13DJ5G58J6BLIEO\
+  0IQDMTEQU0TWIXW8`X3dXJgW2jV9lTHnR0oPGpNBpK1pHJoE5mC6k9Ii60f4Dc2E_10W0IS0\
+  8O04K0JH12D3AA4G77049G2CB1F10HJ0K40N71PI2S04UD6VE9W0CXIGX7KW4OVJSU2VSAZQ\
+  GbO0eLGhIAkG2mDJoA4p77p5Ip30p2Dn0Dl00j0Ig07d14a2JY42U6AQ8GMB0JDGFGABJ28M\
+  J6O43R72TI0U00WD0WD0X01XI3W75V48TJBR2EPAIMGMK0QHGTEAXB2`8Jd64g47j2Il10n0\
+  Eo0Dp00p0Ip17o34m5Jk71iABfCGcF0_IGWLASN2OQJKS4HU8DVIAW07XE4XD2W01VI0U60S\
+  50QJ1N12LB4IG6F09CHCAAG72K5JO33S18V0IZ00b0Ee0Dh10k2Im46o65p8JpB1pEBpHFnJ\
+  0lMHjP9gR2dTJaV3YW8UXIQX0MWEJWCFV1BTJ8R66P53MJ2J10GB0EF
+  }
+
+lookinto...        { ; by Karl Geigl, CIS 100327,156
+  reset type=mandelfn function=sqr corners=-8/7.995605/-6.000839/6
+  float=y inside=maxiter potential=255/300/150 decomp=222 biomorph=0
+  colors=301Au0<2>Bz0030<23>0k8501<30>z0I300<31>z30310<31>zQ0320<31>zk0330\
+  <31>sz0130<31>Xz0030<27>9s0
+  }
+

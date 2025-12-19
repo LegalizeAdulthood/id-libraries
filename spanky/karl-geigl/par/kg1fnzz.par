@@ -1,0 +1,86 @@
+;   
+;	fn(z*z) fractals 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+;
+
+01                 {
+  reset type=fn(z*z) function=cosh passes=t
+  corners=-4/3.997803/-2.99585/3 potential=222/333/444
+  colors=zzz0LK0JJ0HH0GG0FF0FF0FF0GG0HH0JJ0LK1NN5QRATTGXXM``SddZhhemmmqqsv\
+  vzzz<3>remp`inXflTckO`iLZhHWfFVeDUeASc9Rd9Rb8Qd9Rc9ReASeDUfFVhHWiLZkO`<2\
+  >p`iremtkpvpsxuvsvumspeojZkfSg`NdWH`S<2>1TH0RE0PD0O90MA0M80L80M80MA0O90P\
+  D0RE1TH6WKBYOH`SNdWSg`Zkfeojmspsvuzzz<3>smzqizpgzncz<2>jXzhVzhUzgSzgSzgR\
+  zfQzgRzgSzgSzhUzhVz<2>laznczpgzqiz<4>zzzyvtwrnvmhuhbsdXr`SpXNpUIoREnOAmL\
+  7<2>lH1lG0jG0lG0<2>lK5mL7nOAoREpUIpXNr`SsdXuhbvmh<2>zzzsxuluodsjYpcRnZLk\
+  UFiQ9gK4eH0cD0bA0a90`50_50_30Z40_30_50`50a90bA0cD4eH9gKFiQ<2>Ypcdsj<2>zz\
+  z<3>ddYZZQUUKQQELL7HH2DD0BB0990660550440440<2>660990BB0DD0HH2LL7QQEUUKZZ\
+  Q<4>zzzxvzwqy<3>n`vlXvjTthQsgNseKqdIqdHrdFpcFqcEocFqdFpdHrdIqeKqgNshQsjT\
+  tlXv<3>tlxwqyxvzzzzsvvmqqemmZhh<2>GXXATT5QR1NN
+  }
+
+02                 {
+  reset type=fn(z*z) function=exp passes=t
+  corners=-4/3.997803/-2.99585/3 potential=222/333/444
+  colors=000zv0<7>zz0zz1zz3<29>zzz000<28>00w00z00z<61>y01z00z00z00<116>zu0
+  }
+
+03                 { ; 03
+  reset=1513 type=fn(z*z) function=exp passes=b
+  corners=-1.696/1.696/-1.272/1.272 float=y maxiter=22 fillcolor=8
+  inside=epsiloncross potential=22/33/0
+  colors=1700dZ<5>0zr057<10>0ak0do0gs0iv0lz037<10>0Kk0Mo0Os0Pv0Rz007<10>03\
+  k04o04s04v04z207<10>D0kE0oF0sG0vH0z407<10>U0kX0oZ0s`0vc0z707<10>j0kn0or0\
+  su0vy0z704<10>k0Wo0Ys0`v0bz0e702<10>k0Fo0Gs0Hv0Iz0J700<10>k20o20s20v20z2\
+  0720<10>kJ0oK0sM0vN0zP0750<10>k_0ob0se0vg0zj0670<10>fk0jo0ms0pv0tz02B0<9\
+  >9k0Ao0As0Bv0Cz0071<10>0k70o80s80v90zA073<10>0kO0oQ0sS0vU0zW076<7>0`W
+  }
+
+04                 { ; 04
+  reset=1513 type=fn(z*z) function=tanh passes=b
+  corners=-2.704/2.704/-2.028/2.028 float=y maxiter=222 fillcolor=222
+  inside=epsiloncross potential=222/333/0 invert=2/0/0
+  colors=000F76G73I80<14>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<\
+  4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>000<15\
+  >zzz<3>jjj<3>ddjccjbbjaaj__j<22>22h00h10e<12>E68
+  }
+
+05                 { ; 05
+  reset=1513 type=fn(z*z) function=cotan passes=b corners=-4/4/-3/3
+  float=y maxiter=222 fillcolor=222 inside=epsiloncross
+  potential=222/333/0 invert=2/0/0
+  colors=000F76G73I80<14>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<\
+  4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>000<15\
+  >zzz<3>jjj<3>ddjccjbbjaaj__j<22>22h00h10e<12>E68
+  }
+
+06                 { ; 06
+  reset=1513 type=fn(z*z) function=sin passes=b corners=-4/4/-3/3
+  float=y maxiter=222 fillcolor=222 inside=epsiloncross
+  potential=222/333/0 invert=2/0/0
+  colors=000F76G73I80<14>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<\
+  4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>000<15\
+  >zzz<3>jjj<3>ddjccjbbjaaj__j<22>22h00h10e<12>E68
+  }
+
+07                 { ; 07
+  reset=1513 type=fn(z*z) function=cosxx passes=b
+  corners=-3.28/3.28/-2.46/2.46 float=y maxiter=222 fillcolor=222
+  inside=epsiloncross potential=222/333/0 invert=2/0/0
+  colors=zzz5DD499255000<15>Nzz<14>wzzzzzzxz<14>zNz<15>000<15>zNz<14>zwzzz\
+  zzzx<14>zzN<15>000<15>zzN<14>zzwzzzzxx<14>zNN<15>000<15>zNN<14>zwwzzzxzz\
+  <13>QzzNzzMvv<9>7HH
+  }
+
+08                 { ; 08
+  reset=1513 type=fn(z*z) function=sinh passes=b
+  corners=-3.28/3.28/-2.46/2.46 float=y maxiter=222 fillcolor=222
+  inside=epsiloncross potential=222/333/0 invert=2/0/0
+  colors=000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7W\
+  F8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<2>VOBXQD_TFbVH<4>meRpgTri\
+  VukXwmZzpa<2>qiZmgXjdWgaV<3>VRQROPOLOKJNHGMDDLAAK<3>ALQAOSARUBUWBXY<6>Dq\
+  lDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<\
+  7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000332
+  }
+
