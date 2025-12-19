@@ -2152,8 +2152,9 @@ mnfn1b31           { ; 0:01:10.80 75mhz 800x600
 web                { ;  (c) David Shanholtzer Jul 08, 1998 t=0:08:28.06
                      ;  P200 MMX 1024x768
                      ; color map: dsgoldsi
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=dmj-Mand-Pls-Dst1 passes=t
+  reset=1960 type=formula formulafile=frac_ml.frm
+  ; was formulaname=dmj-Mand-Pls-Dst1
+  formulaname=dmj-Mand-Pls-Dst passes=t
   center-mag=+0.01348973607038180/-0.65534550195567180/266.6667
   params=0/0/20/50/256/128 float=y maxiter=3000 inside=maxiter
   outside=summ

@@ -1787,7 +1787,7 @@ colors=0000Dq0Gz<6>028000000<6>00z<7>000<6>z00<7>000000<6>zG0<7>000000<6\
 
 Spectral_Flow      { ; It's so easy! I like to colour cycle this one...
                      ; And yes, I am a David Brin fan!
-  reset=1920 type=formula formulafile=fractint.frm formulaname=liar1
+  reset=1920 type=formula formulafile=frac_ml.frm formulaname=liar1
   passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
   decomp=256
   colors=000zD0<31>zT0zU0zV0zW0zX0<17>zx0zz0yz0<30>2z00z00y1<33>02x00z00z<\
@@ -2100,7 +2100,7 @@ twoj2prn_10        {
   }
  
 twoj2prn_11        {
-  reset=1960 type=formula formulafile=twofo.frm formulaname=twofo_j
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=twofo_j
   passes=1 center-mag=1.00031/-0.750313/1.333889/0.9999
   params=0.49/0.5/1e-005/0 float=y maxiter=1048576 inside=0
   outside=real periodicity=0 colors=z00zzz<125>zzz000<126>000
@@ -3248,7 +3248,7 @@ Marching_Squeeze   { ; No! No! There's no room at the bottom! Argh! Stop!
   }
  
 Thermal_Stress     { ; Catastrophic Failure
-  reset=1960 type=formula formulafile=astro.frm formulaname=jul1-146
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jul1-146
   function=abs/ceil center-mag=-0.0781861/0.0146628/0.9861933
   params=1.4/0 float=y maxiter=1023 inside=255 potential=255/300/0
   colors=00000U<77>v00w00w00x00y00z00z00<82>zy0zz0zz0zz0<82>zzz000
