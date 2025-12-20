@@ -1,0 +1,270 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+; Needs MANDHACK.FRM
+
+mand2_pixexp_1      { ;like some bug
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_pixexp
+  center-mag=-0.00000034372760304/+0.00000000000000023/2309586/1/-90
+  params=0/0/0.07000000000000001/0 float=y maxiter=255 inside=0
+  sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mand2_zzfn_sin     {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_zzfn function=sin
+  center-mag=+0.32852664576802450/+0.05019022556390983/155.0388
+  params=0/0/64/0 float=y maxiter=255 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+mand2_pixpixexp_1  {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_pixpixexp
+  center-mag=-7.49608/-5.32907e-015/0.147343 params=1.5/0 float=y
+  maxiter=511 inside=0 periodicity=5 sound=off
+  colors=000<45>t00u00w00x00y00<2>z20z30z50<41>zt0zu0zw0zx0zy0<2>xz2wz3uz5\
+  <41>6zt5zu3zw2zx1zy<2>0xz0wz0uz<41>06z05z03z02z01z<2>00x00w00u<46>000
+  }
+
+mandel_sum2exp_1  {
+  reset=2000 type=formula formulafile=mandhack.frm formulaname=mandel_sum2exp
+  center-mag=-0.0646967/0.752625/12.11288 params=2/0/4/0 float=y
+  maxiter=255 inside=0 sound=off
+  }
+
+mand_z=z*zfn^2_1   { ; a very strange cont. pot. image
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand_z=z*zfn^2 function=tanh
+  center-mag=2.205e-006/1.58e-006/0.2625068 params=0/0/0/0 float=y
+  maxiter=255 inside=255 potential=255/255/0 sound=off
+  colors=000<45>t00u00w00<3>z10z20z30<20>zU0zV0zW0zX0zZ0z_0<16>zt0zu0zw0<3\
+  >yz1xz2wz3<20>XzUWzVVzWUzXSzZRz_<16>6zt5zu3zw<3>0yz0xz0wz<20>0Xz0Wz0Vz0U\
+  z0Sz0Rz<16>06z05z03z<3>00y00x00w<16>00a00`00_00Z00X00W<25>000
+  }
+
+mand2_4fn_npass_1  {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_4fn_npass function=ident/ident/sin/sinh
+  center-mag=-0.0323175/0.794512/0.6100629 params=0/0/1000/0/6/0
+  float=y maxiter=255 inside=0 sound=off
+  }
+
+mand2_2fn_1        {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_2fn function=tan/sin
+  center-mag=-1.56692/-8.88178e-016/0.2816399 params=0/0/0/0 float=y
+  maxiter=255 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+square { ; similar to the ones in the normal mandel
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel4+n*mandel
+  center-mag=+1.07536223568848400/+0.00017467419964475/5.289937e+008
+  params=0/0/-3/0 float=y maxiter=511 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<21>znDznCznA<3>zl4zk3zk1zk0<31>444
+  }
+
+square2 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel4+n*mandel
+  center-mag=+1.13778324651452700/+0.00009675537588401/4.678975e+007
+  params=0/0/-3.05/0 float=y maxiter=511 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+square2b { ; a zoom of square2
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel4+n*mandel
+  center-mag=+1.13778324904900600/+0.00009676625608743/4.651734e+011
+  params=0/0/-3.05/0 float=y maxiter=511 inside=0 sound=off
+  colors=444zpM<10>ztbzuczue<2>zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<25>FC3DB3B9\
+  3<2>554444336<23>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2\
+  >02z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<12>zpL
+  }
+
+square4            { ; very different
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_zzfn function=sin
+  center-mag=-4.06965313073944700/+0.01688019106590051/65891.47
+  params=0/0/0/0 float=y maxiter=255 inside=0 sound=off
+  colors=4440rz<3>0zz<25>0Cz0Az08z<2>02z00z00y<24>33F33D33B<2>445444554<24\
+  >ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2>zvizwkzvi<21>znDznCznA<3>zl4zk3zk1\
+  zk0<25>FC3DB3BA4<2>654444446<23>00o00q00s<2>00x00z02z<25>0pz
+  }
+
+square5 { ; very different, very square, very SLOW :(
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand_zexp-p1exp
+  center-mag=+0.28981109079322800/+0.33772217404917300/4.964011e+007
+  params=1/0/0/0/0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+mand2_fndif_1      { ; clouds of mini-Mandels (2. degree on the axis, 5.
+                     ; degree in the 'clouds')
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_fndif function=sin/tan
+  center-mag=-3.55687/-6.66134e-016/37.33333 params=0/0/100000/0
+  float=y maxiter=2047 inside=0 sound=off
+  }
+
+square6   {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_fndif function=sin/tan
+  center-mag=-3.56469553674787000/+0.00000602853114864/4877624
+  params=0/0/100000/0 float=y maxiter=2047 inside=0 sound=off
+  colors=44402z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02z00z00y<24>33F33D33B<2\
+  >445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2>zvizwkzvi<25>zm7zl6zl\
+  4zk3zk1zk0<25>FC3DB3B93<2>554444336<29>00z
+  }
+
+square7   { ; very different, SLOW :(
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_fndif function=sin/tan
+  center-mag=-3.56469174402462800/+0.00000702225218839/9833919
+  params=0/0/100000/0 float=y maxiter=2047 inside=0 sound=off
+  colors=44402z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02z00z00y<24>33F33D33B<2\
+  >445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2>zvizwkzvi<21>znDznCzn\
+  A<3>zl4zk3zk1zk0<25>FC3DB3B93<2>554444336<29>00z
+  }
+
+mand2_z*z+-/c_1    { ; a detail often found in normal mandel, a bit different
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_z*z+-/c
+  center-mag=-0.04021058121343464/+0.20938456562110880/3.874397e+011
+  params=0/0/0/0 float=y maxiter=255 inside=0 sound=off
+  colors=000<40>00r00t00u<2>00y00z00z<40>0rz0tz0uz<2>0yz0zz0zz<24>nzzpzzrz\
+  z<2>xzzzzzzzz<24>CzzAzz8zz<2>2zz0zz0zz<40>08z06z05z<2>01z00z00z<46>000
+  }
+
+m2_zexp_div_zp1_1  { ; a web of mini-Mandels
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mand2_zexp_div_zp1 center-mag=0.267586/0.390977/15.52409
+  params=0/0/0/0.3 float=y maxiter=255 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+mandel+a*m4+b*m6_1 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m6
+  center-mag=-0.05477545189831463/+0.46686095724816680/1.171079e+010
+  params=0/0/4/0/-2/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3>z00<9>O00K0\
+  0G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O00K00G<3>000\
+  <9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0<9>OI0KF0GC0\
+  <3>000<11>0L00M00O00Q00S0<9>7h08j09l0<2>Bq0Cs0Bq0<9>3_03Z02X01V0<17>000
+  }
+
+mandel+a*m4+b*m8_1 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m8
+  center-mag=+0.24346421316614370/+0.00009940601503759/1622850
+  params=0/0/0/0/-1/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<14>h00k00n00<3>z00<15>zk0<4>zz0<15>zH0zE0zB0<3>z00<15>F00<4>0\
+  00<14>00e00h00k<2>00t00w02w<13>0Yy0_y0az<3>0kz<15>0Dx0Bw08w<2>02w00w00t<\
+  13>00H00E00B<2>002000220<13>eW0hY0k_0<3>wh0<14>yoMypOzqQ<2>zrUzsWzrU<14>\
+  xk8wj7wj5<3>wh0<20>000
+  }
+
+mandel+a*m4+b*m8_2 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m8
+  center-mag=+0.24346425316183370/+0.00009937521839570/1.199907e+008
+  params=0/0/0/0/-1/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mandel+a*m4+b*m8_3 { ; slow
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m8
+  center-mag=+0.24346425286648980/+0.00009937727146455/2.58032e+012
+  params=0/0/0/0/-1/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mandel+a*m4+b*m8_4 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m8
+  center-mag=+0.24346478031007290/+0.00009968398084128/9.273429e+011
+  params=0/0/0/0/-1/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mandel2*notmandel1 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel2*notmandel
+  center-mag=-0.87785359038595480/+0.47220406337924830/383000.9
+  params=0.2/0/0/0/0/0 float=y maxiter=767 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+mandel+n*mandel4_1 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+n*mandel4
+  center-mag=+0.24940571744072560/+0.00288897898311515/5.614046e+007
+  params=0/0/0.4/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+mandel+n*mandel4_2 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+n*mandel4
+  center-mag=+1.26481198881130900/+0.00000006908286978/6.070263e+010
+  params=0/0/-1/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<14>h00k00n00<3>z00<15>zk0<4>zz0<15>zH0zE0zB0<3>z00<15>F00<4>0\
+  00<14>00e00h00k<2>00t00w02w<13>0Yy0_y0az<3>0kz<15>0Dx0Bw08w<2>02w00w00t<\
+  13>00H00E00B<2>002000220<13>eW0hY0k_0<3>wh0<14>yoMypOzqQ<2>zrUzsWzrU<14>\
+  xk8wj7wj5<3>wh0<20>000
+  }
+
+mandelshell_1      {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel_shell center-mag=-0.130408/0.769925/6.666667
+  params=0/0/0/0/1e+120/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<24>P0DQ0DR0E<2>V0FW0GX0F<25>u02v02w01<2>z00z10z30<23>zb0zc0ze\
+  0<2>zi0zk0zk2<24>zwnzxpzxr<2>zzxzzzzzz<25>znCzmAzm8<2>zk2zk0zi0<25>z70z6\
+  0z40z30z10<26>a0D`0D_0E<2>X0FW0GV0F<29>000
+  }
+
+mandel+a*m4+b*m6_2 {
+  reset=2000 type=formula formulafile=mandhack.frm
+  formulaname=mandel+a*m4+b*m6
+  center-mag=+0.67616639599980210/+0.48666201899002690/1.681049e+009
+  params=0/0/0.3/0/0.1/0 float=y maxiter=767 inside=255 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
