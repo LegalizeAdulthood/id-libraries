@@ -1,0 +1,453 @@
+; kscope.par (c)Les St Clair <les_stclair@compuserve.com> 1997
+; Note: Viewwindows settings important! do not change aspect ratio.
+
+FRM:many_man{; Modified Stephen C. Ferguson formula
+      ; adapted for Fractint by Les St Clair, 1997
+      ; use real p1 to set bailout (try p1=4)
+      ; use real p2 to set number of mandels
+      ; set fn1=ident, fn2=log for "default" formula
+z=0, c=pixel:
+z=(z*z)+fn1(fn2(c^p2)/p2)
+|z| <=p1
+}
+
+kscope01           { ; "Square Dance"         |------------| t=  0:33:11.82
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/log
+  center-mag=-0.000946299/2.33147e-015/1.669144/1.3333
+  params=1.5/0/4/0 float=y maxiter=1000 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=GBRHCS<11>X`tZcwZcw<15>nru<3>dhibef_bdY_aVXZ<11>000<18>f`V<9>JCM<\
+  9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D<18>I06I06H07<20\
+  >00K<22>zpa<13>RK7OI5NH6<12>D5IC4JD6LE8NGAQ cyclerange=27/255
+  }
+
+kscope02           { ; "Octagon"              |For a cool  | t=  0:34:23.66
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/log passes=t
+  center-mag=-0.000786169/0.0015947/1.826034/1.3333 params=40/0/8/0
+  float=y maxiter=500 inside=bof60 decomp=100 viewwindows=1/1/yes/0/0
+  colors=0CG8EF<2>2BD09C0FK1IP<20>nppqrrrss<5>yzz<7>hfbfc_eaXbZU<4>SNF<2>T\
+  OGUPGVQHWQHWRI<40>zpa<15>0BG<24>1Uf<2>1P`1OZ1NX1MV1KU<14>011000000<15>00\
+  0000201<2>B05<9>cfJ<14>GLTEJUFJUHKUILU<4>M4UN0UL1T<5>3BK<9>z`Q<5>ZUNUSMS\
+  RL<8>AGG
+  }
+
+kscope03           { ; "Super Star"           |kaleidascope| t=  0:01:31.29
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/sin passes=1
+  center-mag=1.77636e-015/-1.77636e-015/0.3681287/1.3333
+  params=10/0/6/0 float=y maxiter=500 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=13MQLh<2>LJgKIgIHfHGe<3>CCbABa9A_<4>46T45S35Q24O<2>13K02I01G01E01\
+  D<4>006005104103202202<7>A30B30C41<4>J85L86M97N98PAA<12>hNUiOWjPXkQZmR_<\
+  2>pTcqUdsVd<2>uXfvYgwYgwZgx_h<2>y`gyagzafzae<3>ybbybayb_<2>xbWwbVvbTubSt\
+  aQ<2>r`Lq`Jo_I<2>lZDjYBiXAhX9<4>`S3_S2YR2<7>MJ0KI0JH1<3>DD4CC5BB6AB79A8<\
+  6>34J24L13M13O13Q<4>00X00Z00_00`00b<5>40f40g51g61g71h<2>A3gB3gD4fE5e<3>K\
+  7bL8aM9_<4>UDTWESXFQZGO<6>hNDjOBkPAlQ9<4>rU3sV2tW2<4>wZ0x_0y_0y`0y`0y`1<\
+  3>zb4zb5yb6<2>xbAxbBwbDvbE<5>q`Op`Qo_RnZT<2>jYXhXZgW_eV`dVb<5>WPfUOgTNgR\
+  Mg
+  }
+
+kscope04           { ; "Sunflower"            |just cycle  | t=  0:05:32.19
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 06, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=cos/log passes=1
+  center-mag=-9.4369e-016/9.4369e-016/1.540927/1.3333 params=3/0/24/0
+  float=y inside=bof60 decomp=256 viewwindows=1/1/yes/0/0
+  colors=000rf0tn0ww0<5>h80e00a00<7>700000000000BGJ<10>0oz<7>0CD0770000000\
+  0093F<10>w4R<8>C0270000000000000F<9>0`0<6>svc<6>0U0<6>077000000700<8>R00\
+  U00V27<5>_Do`Fw_Cn<5>U00<7>007000<19>000007<8>53M58M5IN<8>5xP<2>KZKPQIST\
+  K<8>svc<8>PQI000000000077<9>0UU<6>`Fw<6>94R53M34H16C077000000A00<11>e00<\
+  3>oY0
+  }
+
+kscope05           { ; "Seven Seas of Rye"    |the colors  | t=  0:24:51.95
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/log passes=1
+  center-mag=0.00328604/0.020195/1.608755/1.3333/12.499 params=4/0/7/0
+  float=y maxiter=500 inside=bof60 decomp=200 viewwindows=1/1/yes/0/0
+  colors=800mbCiZBdVA`S9<5>376365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7cq7h<2\
+  >s8ys8tr7nq7ho7cm7Z<2>c7L<7>a40<9>000G10<3>m40<5>440<2>440040<15>0z0<15>\
+  0403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcESYDQUDOPCMKBJHAHD9FA\
+  7D86A6585464344450<4>WD0`F0dG0iI0<2>sN0vP0xR0yS0zU0zV0yU0yS0xR0<2>pM0mK0\
+  iI0dG0`F0<4>A6045006606607708808A09C09F0AI<2>0CV0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd\
+  0DZ0CV0BQ0BM0AI09F09C08A0880770660662679A7ED8KH9PKBVOD_SGdVJhZNmaR<2>vld\
+  xpiysozwtzzyywtysnxpi<2>peWmaRhZNdVJ_SGVODPKBKH9ED89A7267376<2>KH7PL7VO8\
+  `S9dVAiZB<2>siFvlHxpIysKywLzzNywLysKxpI<2>peE
+  }
+
+kscope06           { ; "Nine Man Team"        |using the   | t=  0:02:48.24
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/sqrt passes=1
+  center-mag=2.66454e-015/-2.66454e-015/0.2810854/1.3333
+  params=10/0/9/0 float=y maxiter=500 inside=bof61 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=_TK<6>FB7000F73<12>eLAhMBiOD<13>ymZzo`ymZ<14>hMBfLAdKA<13>F730000\
+  00<9>U0BU0B<3>e0F<11>zz0<11>g50e00b00<2>V00V75T00<8>500<9>ZYcaagbbh<11>n\
+  nuoownls<7>hNQhKNgHJgDFfABf67e33d00<2>g96iD9jGBlJDmMG<8>zo`<12>XA7S32Q00\
+  F73<13>hMB<14>H84F73FB7<14>zo`<4>kbSg`QeYObWM cyclerange=0/255
+  }
+
+kscope07           { ; "Spinning Wheels"      |<+> <-> keys| t=  0:05:31.96
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm formulaname=many_man
+  function=recip/log passes=1
+  center-mag=2.22045e-016/-1.11022e-016/0.814819/1.3333
+  params=30/0/8/0 float=y maxiter=500 inside=bof60 decomp=140
+  viewwindows=1/1/yes/0/0
+  colors=GBRPLR<13>zpa<13>RK7OI5NH6<12>D5IC4JD6L<14>X`tZcwZcw<15>nru<4>bef\
+  _bdY_aVXZSVWQST<9>000<18>f`V<9>JCM<9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<\
+  14>zVF<14>b2Da0D`0D<18>I06I06H07<20>00K<7>MIQ
+  }
+
+kscope08           { ; "Windmill Sails"       |------------| t=  0:09:17.34
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 12, 1997
+  reset=1960 type=formula formulafile=many_man.frm formulaname=many_man
+  function=flip/log passes=b
+  center-mag=0.00176509/-0.00796967/1.46526/1.3333/9.999
+  params=5/0/9/0 float=y maxiter=500 inside=bof61 decomp=255
+  viewwindows=1/1/yes/0/0
+  colors=0009B5<13>9B5077O0O<5>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ\
+  0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15>zz0<16>VW80BB<12>4zz<15>zz0\
+  <15>z1z<8>S0S cyclerange=17/255
+  }
+
+kscope09           { ; "Trio"                                t=  0:10:17.91
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 11, 1997
+  reset=1960 type=formula formulafile=many_man.frm formulaname=many_man
+  function=cos/log passes=1
+  center-mag=0.0301049/3.38618e-015/2.061566/1.3333 params=1.5/0/3/0
+  float=y maxiter=1000 inside=bof60 decomp=256 viewwindows=1/1/yes/0/0
+  colors=GBRHCS<11>X`tZcwZcw<15>nru<3>dhibef_bdY_aVXZ<11>000<18>f`V<9>JCM<\
+  9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D<18>I06I06H07<20\
+  >00K<22>zpa<13>RK7OI5NH6<12>D5IC4JD6LE8NGAQ cyclerange=0/255
+  }
+
+kscope10           { ; "Turbine Blades"                      t=  0:02:57.25
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 12, 1997
+  reset=1960 type=formula formulafile=many_man.frm formulaname=many_man
+  function=acosh/log passes=1
+  center-mag=-0.000747249/6.77236e-015/0.8974714/1.3333
+  params=40/0/16/0 float=y maxiter=1000 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=FFF444000<15>zn0<15>000<15>zzz<15>004<10>E0cF0gG0jH0nI0qK0u<13>30\
+  8204333777BBBJJJ<10>zzz<15>000<15>z0G<15>000<15>zzz<15>000<3>0BB0EE0FF<2\
+  >0MM0PP0SS0VV0XX<3>0gg<15>000<15>zzz<13>888
+  }
+
+kscope11           { ; "Umbrella"                            t=  0:12:21.60
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on May 13, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/log passes=b
+  center-mag=-0.000747249/5.66214e-015/0.5037748/1.3333
+  params=10/0/7/0 float=y maxiter=1000 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=000JdV<5>MiYNjZNiZ<27>FDBEBAF99<10>8D38D39D3<6>H86I76K67L58<23>a1\
+  Tb0Ua0U<23>E08C07B07907<3>125<3>56B67D78F89HAAJ<16>XSpZUrYUq<11>MK`<2>MH\
+  PMFLMEHNCCKBBIA9F87<4>MCGODHPFH<3>VPIXRIZUJ_WK<16>zzZxxY<16>0CC<38>JdV
+  }
+
+kscope12           { ; "Jax"                                 t=  0:13:45.64
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 06, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=abs/log passes=1
+  center-mag=-4.21885e-015/4.44089e-015/0.6780935/1.3333
+  params=3/0/4/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=ZAf<7>N02<5>007000<19>000007<8>53M58M5IN<8>5xP<2>KZKPQISTK<8>svc<\
+  8>PQI000000000077<9>0UU<6>`Fw<6>94R53M34H16C077000000A00<11>e00<6>ww0<5>\
+  h80e00a00<7>700000000000BGJ<10>0oz<7>0CD07700000000093F<10>w4R<8>C027000\
+  0000000000F<9>0`0<6>svc<6>0U0<6>077000000700<8>R00U00V27<5>_Do`Fw_Cn
+  }
+
+kscope13           { ; "Petals"                              t=  0:13:40.64
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=atanh/log passes=b
+  center-mag=-4.94049e-015/5.21805e-015/1.529166/1.3333 params=2/0/6/0
+  float=y maxiter=200 inside=bof60 decomp=256 viewwindows=1/1/yes/0/0
+  colors=000PAi<3>94R53M34H16C077000000A00<11>e00<6>ww0<5>h80e00a00<7>7000\
+  00000000BGJ<10>0oz<7>0CD07700000000093F<10>w4R<8>C0270000000000000F<9>0`\
+  0<6>svc<6>0U0<6>077000000700<8>R00U00V27<5>_Do`Fw_CnY9a<5>P17N02J03F04C0\
+  5<29>41G32H42J43K53M58M5IN<8>5xP<2>KZKPQISTK<8>svc<8>PQI000000000077<9>0\
+  UU<6>`FwXDrTCn
+  }
+
+kscope14           { ; "Dart Board"                          t=  0:05:54.62
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=acosh/log
+  center-mag=-6.21725e-015/-7.99361e-015/0.2605029/1.3333
+  params=2/0/-10/0 float=y maxiter=200 inside=bof60 decomp=200
+  viewwindows=1/1/yes/0/0
+  colors=PWWvvazzc<15>000<15>czc<15>000<15>zmU<15>000<15>zZF<14>000000<15>\
+  cUe<15>000<15>zcm<15>000<15>mmz<15>000<15>mzz<6>T__JOO<4>344MSS000<13>rr\
+  Z
+  }
+
+kscope15           { ; "Blossoming"                          t=  0:01:44.25
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=acosh/cos passes=1
+  center-mag=-6.99441e-015/-7.43849e-015/0.8113013/1.3333
+  params=3/0/-4/0 float=y maxiter=200 inside=bof60 decomp=200
+  viewwindows=1/1/yes/0/0
+  colors=G00569235000<4>900B00C00D00<11>N00<6>yul<8>_46_00<7>B0080063547B1\
+  BG0FM<3>ITGNXES`CXdAah8<4>yz0<10>_00<7>yyn<8>xUF<7>w4R<7>R6TN7TJ7TF7UD7R\
+  A6O<2>34F03C07A<4>0O0<8>YOoaOucRu<3>jbs<5>GEJA9D557000134<12>Wcr<5>KPYIN\
+  VGKSEIPCFL<3>357134000132<10>4Pw<6>yo`<5>4Pw<3>1BQ07H049000BC9<9>hi`klcl\
+  gc<4>nLcoGdmGf<5>WIv<5>W`rWcrU`o<2>OUgLSdJP`<4>79E
+  }
+
+kscope16           { ; "Sunrise"                             t=  0:03:56.41
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 08, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=acos/flip
+  center-mag=-6.88338e-015/-7.54952e-015/0.8113013/1.3333
+  params=3/0/-15/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=K5865G<12>USh<2>MJc<25>eDGeDFfDEfDDgDChCB<2>`ABY9AV9AT89Q79N69H48\
+  <5>005<14>vvv<16>008<15>oc0<12>B82004852532103103004004203303403602802B0\
+  1F01K01Q40XC0eP0oc0<5>tmT<7>zU3xT4uS5sS6<12>X03e03o13<4>rKL<4>uaEudCvgAv\
+  j8wm6<2>zw0<3>ig4<9>upz<9>MP9<6>bhG<7>zzz<8>00c00k00t00k00c00X00R00M<2>0\
+  0D00B00A00922B44E
+  }
+
+kscope17           { ; "Water Lilly"                         t=  0:02:08.25
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=acos/abs
+  center-mag=-7.32747e-015/-6.88338e-015/1.20015/1.3333
+  params=100/0/-6/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=K58OOT<6>008<15>oc0<12>B82004852532103103004004203303403602802B01\
+  F01K01Q40XC0eP0oc0<5>tmT<7>zU3xT4uS5sS6<12>X03e03o13<4>rKL<4>uaEudCvgAvj\
+  8wm6<2>zw0<3>ig4<9>upz<9>MP9<6>bhG<7>zzz<8>00c00k00t00k00c00X00R00M<2>00\
+  D00B00A009<15>USh<2>MJc<23>cDIdDHeDGeDFfDEfDDgDChCB<2>`ABY9AV9AT89Q79N69\
+  H48<5>005<14>vvv<8>SSW
+  }
+
+kscope18           { ; "Chrome Rods"                         t=  0:14:54.24
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=recip/acosh
+  center-mag=-3.10862e-015/-1.26565e-014/0.2742349/1.3333
+  params=10000/0/10/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=YYXYYX<4>RRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<25>qZ5pY4pX2oW0oW0<43\
+  >O13N04N04M05<30>80G80G80G80G80G<2>80I71I71I71I71J<32>1AS1AT1AT1AU1AU0BV\
+  <29>aeibfibfi<8>mpnoqnprorspqro<15>ZZY cyclerange=0/255
+  }
+
+kscope19           { ; "Rosette"                             t=  0:03:09.77
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 07, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=recip/acosh
+  center-mag=-5.44009e-015/-9.76996e-015/0.8054362/1.3333
+  params=100/0/-16/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=AEHB66<3>777<31>zo`<46>888777778<32>1Tk0Um0Um<42>6BC7AB7BC<6>AFIB\
+  GJBFIAFHADG<18>000777<29>_00`00_00<25>C66
+  }
+
+kscope20           { ; "Tangerine Dream"                     t=  0:23:56.80
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 08, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/asinh
+  center-mag=-0.00000000000000778/-0.00000000000000646/821.1989/1.3333
+  params=4/0/-12/0 float=y maxiter=200 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=000wcG<3>zU3xT4uS5sS6<12>X03e03o13<4>rKL<4>uaEudCvgAvj8wm6<2>zw0<\
+  3>ig4<9>upz<9>MP9<6>bhG<7>zzz<8>00c00k00t00k00c00X00R00M<2>00D00B00A009<\
+  15>USh<2>MJc<25>eDGeDFfDEfDDgDChCB<2>`ABY9AV9AT89Q79N69H48<5>005<14>vvv<\
+  16>008<15>oc0<12>B82004852532103103004004203303403602802B01F01K01Q40XC0e\
+  P0oc0<5>tmT<2>vfJ
+  }
+
+kscope21           { ; "Big Star"                            t=  0:02:06.05
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/asin
+  center-mag=-7.77156e-016/5.55112e-016/1.846803/1.3333 params=5/0/7/0
+  float=y maxiter=200 inside=bof60 outside=atan invert=0.375/0/0
+  decomp=256 viewwindows=1/1/yes/0/0
+  colors=skXskX<6>7M3<13>070000000000007<13>3I`<7>`Fw<7>3I`<13>01900700007\
+  7<11>0UU<8>zyn<8>0FF000000007<11>3He3Ih5Ng<6>EraFw`Era<5>5Og3Ih3He<10>01\
+  A007000007000PQI<13>zyn<14>PQI000000000700<12>c00<5>tj0<4>pZ0oW0lO0iG0hC\
+  0f80c00<14>000000070<14>7M3<6>skX cyclerange=0/255
+  }
+
+kscope22           { ; "Snowflake"                           t=  0:17:33.79
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/asinh
+  center-mag=-9.99201e-016/6.66134e-016/2.88563/1.3333 params=5/0/7/0
+  float=y maxiter=200 inside=bof60 outside=atan invert=0.375/0/0
+  decomp=256 viewwindows=1/1/yes/0/0
+  colors=000<25>0000PY<40>0Pw<4>0PA0P02Q2<18>kkk<27>2QW0PV0PW<43>0Pw<5>0WW\
+  <15>zzz<38>1PZrur<3>zzz<19>0PW0PX cyclerange=27/255
+  }
+
+kscope23           { ; "Gas Burner"                          t=  0:22:29.46
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=tan/asin
+  center-mag=-8.04912e-016/8.32667e-016/2.707012/1.3333/22.498
+  params=4/0/7/0 float=y maxiter=200 inside=bof60 outside=atan
+  invert=0.375/0/0 decomp=256 viewwindows=1/1/yes/0/0
+  colors=000GKS<5>357134000132<10>4Pw<6>yo`<5>4Pw<3>1BQ07H049000BC9<9>hi`k\
+  lclgc<4>nLcoGdmGf<5>WIv<5>W`rWcrU`o<2>OUgLSdJP`<7>000<4>900B00B00<12>N00\
+  <6>yul<8>_46_00<7>B0080063547B1BG0FM<3>ITGNXES`CXdAah8<4>yz0<10>_00<7>yy\
+  n<8>xUF<7>w4R<7>R6TN7TJ7TF7UD7RA6O<2>34F03C07A<4>0O0<8>YOoaOucRu<3>jbs<5\
+  >GEJA9D557000134<12>Wcr<6>INV cyclerange=0/255
+  }
+
+kscope24           { ; "Fan"                                 t=  0:07:06.35
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/asinh
+  center-mag=-8.88178e-016/6.66134e-016/2.15748/1.3333 params=5/0/7/0
+  float=y maxiter=200 inside=bof60 outside=atan invert=0.375/0/0
+  decomp=256 viewwindows=1/1/yes/0/0
+  colors=qgqqgq<4>ypy<46>WDdVCcVAc<5>Q3`P2`O2_<2>N1XM1WL0WK0VK0UJ0T<2>G2QG\
+  3PF4OF4NE5M<3>BAIBBHDDI<20>kkk<27>4LC2KB2IC<2>4EF4CG4AH49I58J<3>73N72O82\
+  P<7>C0WD0XE1Y<6>I7aJ8bKAb<3>MGdNIdOJdPLdQNd<6>VYcWZcVYc<36>G0WG0WG0U<5>G\
+  0IG0GG0G<23>pfp cyclerange=0/255
+  }
+
+kscope25           { ; "Marigold"                            t=  0:17:13.10
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=ident/asin
+  center-mag=-8.04912e-016/7.77156e-016/3.034767/1.3333/22.498
+  params=4/0/9/0 float=y maxiter=200 inside=bof60 outside=atan
+  invert=0.375/0/0 decomp=256 viewwindows=1/1/yes/0/0
+  colors=1HT<3>14J<15>vp4<11>aD`000<5>000KGgOIf<9>ApW8tU8qU<14>14J<15>w0z<\
+  6>`7rB00<7>c007Kf<14>0uD<15>14J<15>zpg<15>z_0<7>WXW800<6>c00<3>W0014J000\
+  <5>000G00E00000A000008BL<13>zza<15>d9M<14>4ot1rw1ou<9>1KW
+  cyclerange=0/255
+  }
+
+kscope26           { ; "Green Fuzz Balls"                    t=  0:34:24.77
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=cos/acosh
+  center-mag=-8.74301e-016/7.63278e-016/16.42572/1.3333 params=4/0/6/0
+  float=y maxiter=200 inside=bof60 outside=atan invert=0.375/0/0
+  decomp=256 viewwindows=1/1/yes/0/0
+  colors=8nT<13>14J<15>w0z<15>7Hh<15>0uD0rD0kE0kE<12>14J<15>zpg<15>z_0<12>\
+  CUn14J0004000000Rw<13>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15\
+  >V0k<14>ApW8tU8qU cyclerange=0/255
+  }
+
+kscope27           { ; "Wheel of Fortune"                    t=  0:04:04.26
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=cosxx/log
+  center-mag=-9.71445e-016/9.15934e-016/4.874889/1.3333
+  params=100/0/16/0 float=y maxiter=200 inside=bof60 outside=atan
+  invert=0.161268/0/0 decomp=256 viewwindows=1/1/yes/0/0
+  colors=3239CC<12>mzz<6>T__JOO<3>688344233122000<15>zzc<4>ffSZZN<8>000<15\
+  >mmz<15>000<15>mzz<15>000<15>zzc<15>000<15>cUe<15>000<15>zcm<15>000<15>m\
+  mz<15>000344688
+  }
+
+kscope28           { ; "Circle of Cones"                     t=  0:12:43.30
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=recip/log
+  center-mag=-4.44089e-016/3.33067e-016/1.138015/1.3333
+  params=1/0/12/0 float=y maxiter=200 inside=bof60 outside=atan
+  invert=0.219095040588637/0/0 decomp=256 viewwindows=1/1/yes/0/0
+  colors=323VVb<9>000<15>mzz<6>T__JOO<3>688344233122000<15>zzc<4>ffS323VVK\
+  <7>000<15>czc<15>000<15>zmU<15>000<15>zZF<14>000000<15>cUe<2>XPZUNWSLTPJ\
+  QNHN<8>000<15>zcm<15>000<15>mmz<4>YYf
+  }
+
+kscope29           { ; "Four Way Street"                     t=  0:03:55.63
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 10, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=log/flip
+  center-mag=-7.63278e-016/7.77156e-016/2.414655/1.3333/22.498
+  params=4/0/4/0 float=y maxiter=200 inside=bof60 outside=atan
+  invert=0.375/0/0 decomp=256 viewwindows=1/1/yes/0/0
+  colors=000<31>www<31>000<2>543765986BA7DB8<24>zqb<26>A86875654443222000<\
+  31>www<31>000<10>LHDNJEPLFRNHTPI<16>zqb<30>222 cyclerange=0/255
+  }
+
+kscope30           { ; "Thick and Chunky"                    t=  0:18:42.08
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 768x768
+                     ; (c) 1997 by Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Jun 14, 1997
+  reset=1960 type=formula formulafile=many_man.frm
+  formulaname=many_man function=sin/acosh
+  center-mag=-0.000213416/-0.00209196/10.64463/1.3333/12.498
+  params=4/0/7/0 float=y maxiter=500 inside=bof60
+  invert=0.0815710563736079/0/0 decomp=200 viewwindows=1/1/yes/0/0
+  colors=000vjS<14>000<15>zZF<14>000000<15>cUe<15>000<15>zcm<15>000<15>mmz\
+  <15>000<15>mzz<6>T__JOO<4>344MSS000<15>zzc<15>000<15>czc<15>000<15>zmU
+  }

@@ -1,0 +1,308 @@
+F_title1           { ; image for F_title1_3d LStC [use 1024x768] t=08m29s
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=3d_trans.par 
+  formulaname=fractint-9-11 function=sinh/cabs/atan
+  center-mag=-1.08813/0.105609/1.054746 float=y symmetry=none
+  periodicity=0 savename=f_title1.gif
+  colors=000pfU<7>QIA000<2>000QG7<10>zUA<4>xr2ww0xq2<3>zUA<8>KG1000000000F\
+  wU<12>5K30005K3<10>FwU000000BGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`Fw<12>\
+  DGMBGJ9EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4>GJUG\
+  JVFLV<5>9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<4>JSBMTDOUFRVHUXIXYK_ZMb_O<\
+  4>gfThhUhgU<6>jbRkaRmcS<5>zo`wlZsiW
+  }
+
+F_title1_3d        { ; "Fractint-in-Rock"      LStC [use 1024x768] t=10m24s
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  3d=yes filename=f_title1.gif scalexyz=85/90 roughness=200
+  waterline=0 filltype=2 ambient=20 rotation=-30/-30/0 perspective=0
+  xyshift=-6/-8 savename=ftinrock.gif
+  }
+
+F_title2           { ; image for Fractitle2_3d LStC [use 1024x768] t=00m54s
+                     ; Modification by Les St Clair [101461,2032] 1996
+                     ; Original "Fract_Title5" by Loren G. Dobert
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=3d_trans.par 
+  formulaname=fractint-9-11 function=sqr/cotanh/asin
+  center-mag=1.18669/-0.093911/1.268178/1/14.999 float=y maxiter=1000
+  inside=bof60 outside=summ symmetry=none periodicity=0 savename=f_title2.gif
+  colors=000D5M<6>SBi<4>_ohawhdvb<5>ss0<7>UFh<7>U15U00W00<6>h00<6>ww0<8>M0\
+  0UMF<10>zpa<9>UMF53M<9>`hw<13>58M000<86>000```<9>www<8>```93F<8>SBh<8>93\
+  FYQI<7>zpa<7>YQI93FB4I
+  }
+
+F_title2_3d        { ; "Curly Fractint"        LStC [use 1024x768] t=01m03s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  3d=yes filename=f_title2.gif scalexyz=100/110 roughness=90
+  waterline=0 ambient=20 rotation=50/30/0 perspective=0 xyshift=7/15
+  savename=curlyft.gif
+  }
+
+L3DT_01            { ; image for L3DT_01_3d    LStC [use 1024x768] t=01m46s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  reset=1930 type=formula formulafile=3d_trans.par formulaname=lesfrm13
+  function=sqrt/log passes=1
+  center-mag=0.933602/0.439651/0.4265727/1/35 params=-4/1/-3/1 float=y
+  maxiter=1000 inside=zmag outside=atan savename=l3dt_01.gif
+  colors=5B0<8>zz0<12>eL2dH2bE2`A3aA3<19>u8Bw7Cw8Cv8Dv9E<12>zCmzCmzCm<2>YX\
+  c<6>7qw<20>P4VQ1TS4U<9>r_f<8>Uq1Xq2_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yqbe_F\
+  YI0L0<3>yrB<4>z00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4>zAz<9>6IJ<7>zzP<7>B8S<6>5\
+  rz<12>9IR<16>5u0<8>5G0
+  }
+
+L3DT_01_3d         { ; "Pinnacle"              LStC [use 1024x768] t=01m34s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  3d=yes filename=l3dt_01.gif scalexyz=130/240 roughness=255
+  waterline=0 filltype=1 ambient=20 rotation=70/20/20 perspective=0
+  xyshift=-3/28 savename=pinnacle.gif
+  }
+
+L3DT_06            { ; image for L3DT_06_3d    LStC [use 1024x768] t=02m48s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+                     ; image previously coded 
+  reset=1930 type=formula formulafile=3d_trans.par formulaname=lesfrm12
+  function=ident/atan passes=1 center-mag=0/0/0.6666667 float=y
+  inside=bof61 outside=atan savename=l3dt_06.gif
+  colors=000czr000azq000_zp000Yzo000Wzn000Uzm000Szl000Qzk000Ozk000Mzj000Kz\
+  i000Izh000Gzg000Dzf000Dxe000Duc000Esa000Ep`000EmZ000FkX000FhV000FfT000Gc\
+  S000G`Q000GZO000HWM000HUK000HRI<12>KB7K96K85K64K53K32K21L00<7>B00A009007\
+  00600400<2>000<20>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8R\
+  k8Sl9Tm9U<21>yHqzIszJr<29>zqPzsOzsP<10>zua000zvd000zvf000zwi000zwk000zxn\
+  000zxp000000zxr000zyu000zyw000zzz000xzz000vzy000tzx000rzx000pzw000nzv000\
+  lzu000izt000gzs000ezs 
+  }
+
+L3DT_06_3d         { ; "3d-Eye"                LStC [use 1024x768] t=07m51s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  3d=yes filename=l3dt_06.gif scalexyz=100/150 roughness=200
+  waterline=0 filltype=2 ambient=40 rotation=40/20/10 perspective=0
+  xyshift=0/0 xyadjust=5/10 savename=3d_eye.gif
+  }
+
+L3DT_13            { ; image for L3DT_13_3D    LStC [use 1024x768] t=00m51s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+                     ; based on Brian E.Jones formula BJ-LESFRM13-004
+  reset=1930 type=formula formulafile=3d_trans.par 
+  formulaname=bj-lesfrm13-004 function=tan/recip/ident/cos
+  center-mag=0.00862294/0.383509/0.8076226/1/2.5 params=2/0.5/1/1
+  float=y maxiter=1000 inside=bof61 outside=atan potential=255/255/0
+  savename=l3dt_13.gif
+  colors=000A4M<63>xPz000211522<4>UAA<14>N9N<10>zJ9<28>zu2zw1zx1zz0yz0<3>s\
+  x0rw0qv0pv0nu0<33>8_06_05Z03Z02Y00X0<62>01D00E00E10F<9>93L
+  }
+
+L3DT_13_3D         { ; "Magic Forest"          LStC [use 1024x768] t=01m06s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  3d=yes filename=l3dt_13.gif scalexyz=110/120 roughness=180
+  waterline=0 ambient=20 rotation=-40/40/-35 perspective=0 xyshift=0/0
+  xyadjust=7/3 savename=forest.gif
+  }
+
+L3DT_14            { ; image for L3DT_14_3d    LStC [use 1024x768] t=01m20s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  reset=1930 type=formula formulafile=3d_trans.par 
+  formulaname=bj-lesfrm13-002 function=conj/sqr/cosh/log
+  center-mag=0.59042/0.40678/1.173709/1/17.5 params=4/4.9/1/0.9
+  float=y potential=255/200/0 savename=l3dt_14.gif
+  colors=0FK0GE<36>2WN2WN1XO<38>D94D83D72E61F61G62H63000I64<20>d1Me1Ng0Oi0\
+  P<4>r0U<31>402<31>rZU<16>F78<30>zzZxxY<16>0CC<8>0FD cyclerange=0/255
+  }
+
+L3DT_14_3D         { ; "Wild Orchid"           LStC [use 1024x768] t=00m24s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+                     ; based on Brian E.Jones formula BJ-LESFRM13-004
+  3d=yes filename=l3dt_14.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=200 scalexyz=90/200 roughness=500 waterline=0 ambient=20
+  perspective=0 xyshift=0/3 cyclerange=0/255 savename=orchid.gif
+  }
+
+; Io_gif (c)Brian E. Jones 102702.2213@Compuserve.com
+
+Io                 { ; Generate at 1024x768 save as "io.gif" t=01m26s.
+                     ; From Damion's "Cubist-30" image
+                     ; Brian E. Jones 102702,2213@Cserve.com
+  reset=1940 type=formula formulafile=3d_trans.par formulaname=block_2
+  function=sqrt/ceil passes=1 center-mag=1.50459/1.45075/2.696078
+  params=0/0 float=y maxiter=1023 outside=atan periodicity=0
+  savename=io.gif
+  colors=000<11>m70q80u90zA0zC0<12>zk0zn0zp0zr0<2>zx0zz0zz1<29>zzxzzzzzz<6\
+  1>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<26>s22
+  }
+
+Io_3d             { ; 3d_transform of "Io.gif" use 1024x768  t=04m50s
+                    ; "Io, Moon of Jupiter" by Les St Clair [101461,2032] 1996
+                    ; 3d_transform for Brian E. Jones "Inner Planet" image
+                    ; t=time using 486DX2-66 and video=SF7
+  3d=yes filename=io.gif sphere=y latitude=-90/90
+  longitude=180/30 radius=100 scalexyz=90/100 roughness=90 waterline=0
+  filltype=5 lightsource=-1/1/1 randomize=2 ambient=88
+  perspective=0 xyshift=0/0 savename=io_3d
+  }
+
+ice_cave           { ; image for ice_cave_3d       [use 1024x768] t=06m35s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; Arno Jennen's "Fractal1" - recoloured by Les St Clair
+                     ; save as "ice.gif" 
+  reset=1940 type=formula formulafile=3d_trans.par formulaname=jenn001
+  function=sin passes=1 corners=-2.849328/2.849328/-2.136996/2.136996
+  float=y maxiter=1024 inside=bof60 savename=ice.gif
+  colors=40612D<3>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9M\
+  eAMeANfANgBOh<6>GTmGUmHVnIWoJXpKYp<6>ObtPcuQduQdvRevSfv<2>VhvWhwXiwYixZj\
+  x<3>amyamybnybnycoy<5>grzhszhsy<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<4>vz\
+  uvzuuyt<63>000000100<19>G50G60H60H60I60<5>L80M91L91<6>G50F40E40E40<2>D32\
+  C22C22B12A12<13>307207208209<6>12D
+  }
+
+ice_cave_3d        { ; "Ice Caves" - Les St Clair      [use 1024x768] t=01m08s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; 3d_transform for frac1mod.gif
+                     ; original 2d image by Arno Jennen
+  3d=yes filename=ice.gif scalexyz=130/100 roughness=200
+  waterline=0 ambient=20 rotation=180/45/0 perspective=0 xyshift=-14/3
+  }
+
+Mountain           { ; image for mountain_3d     [use 1024x768] t=  0:00:02.30
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1024x768
+                     ; (c) 1998 by Les St Clair [Par date: Feb 13, 1998]
+                     ; recoloured from 1996 original
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=julia center-mag=0/0/0.6666667 params=0.48/0.6
+  float=y potential=255/1000/0 viewwindows=4.2/0.75/yes/1024/768
+  savename=mountain.gif
+  colors=00cAEQ37JCP0HF0D95CP0ED5479CPU5A0A9ADA9AD9ED9AADDBDADEEDDA5F<2>A5\
+  FL75P75HA3L93ID3LF3H95LA5HD6LD6QC6HB8LB8ID9ME9HACHEDLEDPB8SB9PE9TE9QFCUF\
+  CFG6EHBJG3MG3IG6MH5NK6PI3UH3RK3TL3PI4TH6QL5TM5UO6IH9MHAIKAMLAIHEMIDILDML\
+  EQHATHAPLAULAPIDTIDQLEULEMPESPC37J5EJCEI4ESAEQIEIPFJHEO6GMEHKFPM6IR9KTCP\
+  UIHHLIHJLIMLHHILLILHKMMLLRLILPKTPKJLQQMQLPSRRRXE6XDAYL5YQ6dP6YKDdKCZPDeR\
+  C0M0dMIYPI`PIXTIaSJXQLaQLXTMaTLeRLYMRZTQfTQkTNlURUXJUXSYWEfXA_YMdXN`XTfY\
+  TecSmXUlfS4FW6IX8MX9OZJNXRNXMQYSTZKRdRVcYUYfUYUX`UYe_Z_eYXiYXe`Xh`YeZ`iY\
+  `ea`ia`ac_gd`Z`ffafadhgfgn`Zsa_nd`tcanbdsbdnffuffikinlitliZbkdbkafmfinai\
+  snjlujkhlqimsllmplmzzzpommmpqnpmoqppqunprtruupnptwrtqtxutuxtuxwutvyyvwux\
+  zzzz<19>zzz<7>343642334534356654931D31962D52964D74784
+  }
+
+
+mountain_3d        { ; "View From The Summit"                t=  0:06:21.62
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Oct 13, 1996 at 18:14:58 hours
+  3d=yes filename=mountain.gif scalexyz=100/100 roughness=48
+  waterline=0 filltype=6 lightsource=-1/-2/2 smoothing=2 randomize=3
+  ambient=22 rotation=50/35/19 perspective=95 xyshift=-8/4
+  xyadjust=3/0
+  }
+
+Comet              { ; image for comet_i_3d     [use 1024x768] t=07m54s
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+  reset=1940 type=formula formulafile=3d_trans.par formulaname=block_4
+  function=tan
+  corners=0.70082392/0.84284816/0.10749566/0.54124753/0.54375175/0.3169252\
+  2 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023 inside=bof60
+  outside=atan savename=comet.gif
+  colors=000A8TEHaIQj3Yq9e_FYI0L0<3>yrB<4>z00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4\
+  >zAz<9>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>5u0<9>5B0<8>zz0<12>eL2dH2bE2`A3aA\
+  3<19>u8Bw7Cw8Cv8Dv9E<12>zCmzCmzCmzzzYXc<6>7qw<20>P4VQ1TS4U<9>r_f<8>Uq1Xq\
+  2_q4<8>40B<6>50H00E32J65O
+  }
+
+Comet_i_3d         { ; "Comet Impact" Les St Clair  t=01m08s
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+  3d=yes filename=comet.gif scalexyz=80/95 roughness=600
+  waterline=0 ambient=20 rotation=40/20/0 perspective=0 xyshift=14/59
+  }
+
+
+; Required formulas...
+
+FRM:jenn001 {; Arno Jennen
+  z=|pixel|+pixel+cosxx(pixel):
+  z=fn1(z-5.75),
+  |(z)|<78
+  }
+
+FRM:Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
+               ; requires 'periodicity=0' 
+  z = fn1(log(pixel-0.025))*2 , x=real(z) , y=imag(z) , x1=x*1.8 , x3=3*x
+  ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
+  f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
+  r = ( (x<-0.9) || ty2 ) && ( (x>-0.95) && (x<-0.8) )
+  r = r || ((cabs(sqrt(|z+(0.8,-0.1)|)-0.1)<0.025) && (x>-0.8))
+  r = r || (((y<(-x1-1.44)) && (y>(-x1-1.53))) && (y<0.025))
+  a = (y>(x3+1.5)) || (y>(-x3-1.2)) || ((y>-0.125) && (y<-0.075))
+  a = a && ((y<(x3+1.65)) && (y<(-x3-1.05)))
+  c = (cabs(sqrt(|z+0.05|)-0.2)<0.025) && (x<0.05)
+  t1 = ((x>0.225) && (x<0.275) || (y>0.175)) && ((x>0.1) && (x<0.4))
+  i = (x>0.45) && (x<0.5)
+  n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
+  n = n && (x>0.55) && (x<0.85)
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
+  z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
+  (|n|>=0.0001) && test
+}
+
+FRM:Lesfrm12 {; Les St Clair, 1996
+  z = pixel :
+  x = fn1(z) , y = fn2(z)
+  z = x*y
+  |z| <= 4
+}
+
+FRM:Lesfrm13 {; Les St Clair, 1996
+  z = pixel 
+  x = fn1(z) , y = fn2(z):
+  x = x*p1*pi
+  y = y*p2*pi 
+  z = x/y
+  |z| <= 4
+}
+
+FRM:BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13" 
+  z = pixel 
+  x = fn1(z) , y = fn2(z):
+  x = x*p1*pi
+  y = y*p2*pi 
+  z = fn4(x/fn3(y))
+  |z| <= 4
+}
+
+FRM:BJ-Lesfrm13-004 {; Les St Clair, 1996
+  z = pixel 
+  x = fn1(z*z) , y = fn2(z*z):
+  x = fn3(x)*p1*pi
+  y = fn4(y)*p2*pi 
+  z = x/y
+  |z| <= 4
+}
+
+FRM:Block_2 {
+  z = c = pixel:
+  r = fn1(z) / floor(c)
+  z = r * z + p1
+  q = ceil(c) / fn2(z)
+  z = z * q * r
+  round(z) < 4
+}
+
+FRM:Block_4 {
+  z = c = pixel:
+  r = tan(1/z) + p1
+  q = floor(z) - p2 * ceil(c) - p3
+  z = fn1(z) * r * q
+  round(z) < 4
+}

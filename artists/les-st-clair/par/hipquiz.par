@@ -1,0 +1,557 @@
+; HIPQUIZ.PAR, 36 images by Les St Clair, April.14.1996
+; Scroll to the end of the .PAR listing and do the Quiz!!
+; no prizes (sorry), do it just for fun...
+; Par file re-edited 30/4/97
+; les_stclair@compuserve.com
+
+hq_01              { ; Julia/1968                     |HEY! READ THIS COLUMN  |
+                     ; t=00m11s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=julia corners=1.014/-1.014/-1.352/1.352/-1.014/1.352
+  params=0.3401253918495293/-0.02510460251046 float=y bailout=10
+  inside=0 outside=mult
+  colors=80Gopm<15>XXWVVVUUTSSSRRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<25>qZ5pY\
+  4pX2oW0oW0<43>O13N04N04M05<30>80G80G80G80G80G<2>80I71I71I71I71J<32>1AS1A\
+  T1AT1AU1AU0BV<29>aeibfibfi<8>mpnoqnprorspqropqn
+  }
+
+hq_02              { ; Maid in Heaven/1975            |-----------------------|
+                     ; t=00m28s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=zeppo
+  function=tan/sqrt
+  corners=0.8443492/8.18827/-2.064103/-1.8243498/3.373078/-5.4357469
+  params=1.04/-0.33/0/0/0/0 float=y inside=zmag outside=atan
+  colors=IHIIHI<8>ESVDTWCUXBVYBXZ<3>9`d8ae8cf7dg7ei<12>0ty<33>02l00k00k<10\
+  >77l88lAAl<23>wwbzzazyazwa<23>rqoqqoqqppppppqooq<2>nnsnntmmtllummu<20>00\
+  0<17>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0\
+  Q<5>R04P00P11<6>LCCKDDKEEJFFJGG
+  }
+
+hq_03              { ; Lady of the Island/1969        |Not only does this PAR |
+                     ; t=08m17s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=manfn+exp function=cosh
+  corners=0.57981629/1.4528787/3.088324/1.924241/1.4528787/1.924241
+  params=-0.6/0 float=y bailout=43 inside=zmag
+  colors=000K0E<5>E08C07B07907<3>125<3>56B67D78F89HAAJ<16>XSpZUrYUq<11>MK`\
+  <2>MHPMFLMEHNCCKBBIA9F87<4>MCGODHPFH<3>VPIXRIZUJ_WK<16>zzZxxY<16>0CC<45>\
+  MiYNjZNiZ<27>FDBEBAF99<10>8D38D39D3<6>H86I76K67L58<23>a1Tb0Ua0U<16>L0F
+  }
+
+hq_04              { ; Boris the Spider/1966          |file contain the usual |
+                     ; t=02m12s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=newton
+  corners=1.3229091/2.0109091/0.95876987/1.4747699 params=5 float=y
+  invert=4/0/0
+  colors=000HHJ<6>000<17>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjP\
+  GiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<9>ESVDTWCUXBVYBXZ<3>9`\
+  d8ae8cf7dg7ei<12>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<23>rqoqqo\
+  qqppppppqooq<2>nnsnntmmtllummu<12>JJM
+  }
+
+hq_05              { ; Eruption/1971                  |selection of Fractal   |
+                     ; t=01m22s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=julfn+exp function=atan
+  corners=-0.338166126/-0.26312245/-1.3375255/1.2970786/-3.58643736/0.3347\
+  1321 params=0/0 float=y maxiter=90 bailout=500 inside=bof60
+  potential=255/100/0
+  colors=100356<2>333233222111000000<4>300400500600600700<43>f00000<94>000\
+  000011122<11>AFHBGJAFH<14>000<22>l00q50<10>zg0<11>W00BGJ<15>457
+  }
+
+hq_06              { ; Dead Flowers/1971              |goodies, but...        |
+                     ; t=00m44s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=fn(z*z) function=cotan passes=b
+  corners=1.6846025/1.0636087/-0.75382045/1.6700768/0.29757404/1.0955508
+  float=y maxiter=500 bailout=5 fillcolor=45 inside=epsiloncross
+  potential=255/150/0
+  colors=AEHFEB<6>777000<34>00079B000<26>000000111122<12>7CC8CC8DD9DE9EF<2\
+  >AFIBGJBFIAFHADG<18>000777<2>A66B66B86<25>zz0<23>HE4FC4D95C66<4>777<31>z\
+  o`<39>GFC
+  }
+
+hq_07              { ; Pretty as You Feel/1971        |There's also a QUIZ!   |
+                     ; t=00m22s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Liar1
+  corners=-1.41755/0.4988323/-0.2167827/1.220504 params=0/0/0/0/0/0
+  float=y maxiter=500 fillcolor=126 inside=zmag outside=atan
+  colors=011<13>BGJFJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<4>W1\
+  3V24U25U36T36S37<4>N5BM6CJ5A<6>000<23>0xz<15>077<30>1Te1Uf000<31>000
+  }
+
+hq_08              { ; Green Earrings/1976            |It's especially for all|
+                     ; t=01m12s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Bali
+  function=tan/flip
+  corners=0.5906389/-2.554445/0.099816785/0.69011357/-0.8249336/1.9872468
+  params=0/0/0/0/0/0 float=y maxiter=1000 fillcolor=126 inside=bof60
+  outside=atan
+  colors=R0tR0tS0wT0z<7>H0a400<14>z00<15>000F70<12>qR0tT0wU0zV0<15>F70000<\
+  15>zz0<15>000583<15>bzT<15>583080<15>0z0<15>080084<15>0zz<15>084005<15>0\
+  0z<15>00550C<12>P0q
+  }
+
+hq_09              { ; Red/1977                       |the old Hippies out    |
+                     ; t=03m48s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=phoenix
+  corners=-0.029044232/0.77362912/-0.40459597/-0.87986504/0.48804733/-1.09\
+  40514 params=0.56667/-0.5/0 float=y inside=bof61 outside=atan
+  colors=100BGJ<22>111000000000<52>f00000<94>000000011122<11>AFHBGJAFH<14>\
+  000<22>l00q50<10>zg0<11>W00
+  }
+
+hq_10              { ; Tears in my Eyes/1971          |there in FRACTINT land.|
+                     ; t=00m17s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=fn(z)+fn(pix) function=sinh/sqr
+  corners=2.987013/5.045662/5.686334/2.941469/5.045662/2.941469
+  params=0/0/1/0 float=y maxiter=90 bailout=500 inside=bof60
+  potential=255/100/0
+  colors=80GYYX<4>RRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<23>r`9q_7qZ5pY4pX2oW0\
+  <2>nV0mU0lT0lS0kS0<37>O13N04N04M05<29>80G80G80G80G80G<3>80I71I71I71I71J<\
+  30>19R1AS1AS1AT1AT1AU1AU0BV<29>aeibfibfi<8>mpnoqnprorspqro<15>ZZY
+  }
+
+hq_11              { ; Ripples/1977                   |Each image has the name|
+                     ; t=31m44s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=MTet
+  corners=-1.718684/0.9898365/-1.015695/1.015695
+  params=1/-0.377/0/0/0/0 float=y maxiter=200 fillcolor=126
+  inside=zmag outside=atan
+  colors=000<3>210220210330320440420540530650530760640870740980850A80850B9\
+  0960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH0GA0LH0GA0MI0HB0NJ\
+  0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ0OF0XR0PG0YS0QG0ZT\
+  0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_0XL0h`0YM0ia0ZM0jb\
+  0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0soBjU0tqDkV0urEmW0vt\
+  FnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0usLkW0tqLjV0spLiU0rn\
+  LhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ibKYM0haKXL0g`KXL0f_\
+  KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZTLQH0YSLPH0XSLOG0WR\
+  MOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJOHC0MJPHB0LIPGB0KH\
+  PFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BAS960A9S86098T75087\
+  T75076T64065U54055U43044U43033V32022V22011V11000W
+  }
+
+hq_12              { ; 3rd Stone from the Sun/1967    |of an album track from |
+                     ; t=00m38s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=CGNewton3 corners=-11.64877/29.29843/-12.56942/18.14098
+  params=1/-0.2/0/0/0/0 float=y fillcolor=126 inside=bof61
+  outside=atan
+  colors=vv0<2>ff0zV0<15>F70000<15>zz0<15>000583<15>bzT<15>583080<15>0z0<1\
+  5>080084<15>0zz<15>084005<15>00z<15>00550C<12>P0qR0tS0wT0z<7>H0a400<14>z\
+  00<15>000F70<11>nP0
+  }
+
+hq_13              { ; Till it Shines/1978            |my record collection.  |
+                     ; t=02m38s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Larry
+  function=conj/sin
+  corners=0.097691365/-0.097691365/-1.2783928/1.2783928/-1.1999035/0.45173\
+  369 params=0.4/-0.55/0/0/0/0 float=y maxiter=50 fillcolor=126
+  inside=zmag outside=atan
+  colors=000G88<3>MCGODHPFH<3>VPIXRIZUJ_WK<16>zzZxxY<16>0CC<45>MiYNjZNiZ<2\
+  7>FDBEBAF99<10>8D38D39D3<6>H86I76K67L58<23>a1Tb0Ua0U<23>E08C07B07907<3>1\
+  25<3>56B67D78F89HAAJ<16>XSpZUrYUq<11>MK`<2>MHPMFLMEHNCCKBBIA9F87
+  }
+
+hq_14              { ; The End of the Rainbow/1974    |All you gotta do is    |
+                     ; t=00m52s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=inandout04 function=ident passes=b
+  corners=-0.32190181/-0.83283103/0.61244567/0.75538908/-0.57444917/0.9491\
+  7548 params=0.004/-0.08/-0.1/-0.5/0/0 float=y maxiter=200 bailout=10
+  inside=bof61 outside=atan
+  colors=011356<9>BGJFJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<3>\
+  X12W13V24U25U36<2>R38Q49P49O5AN5BM6C<7>000<23>0xz<15>077<30>1Te1Uf000<30\
+  >000000122234245
+  }
+
+hq_15              { ; Tangled up in Blue/1975        |identify the artist and|
+                     ; t=00m28s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=inandout02 function=ident/log
+  corners=-1.491599/1.491599/-1.231337/1.006061
+  params=0.5/0.13/0.77/-0.78/0/0 float=y maxiter=100 inside=zmag
+  outside=atan
+  colors=000C67<14>zUO<14>C67856756<13>AkYAn_Bp`<3>9eU9bS9_Q9XO9UM<7>75675\
+  6<10>FC_FCbGDeGDgHEjIFl<2>GDeFCbEC_EBXDAV<8>756756<10>_fSbiUelWhoYjr_mu`\
+  <15>756756<13>M7bO7dO8f<2>M7_L7YJ6W<9>858756756<15>dlh<14>978756756<10>N\
+  LMPMNQNOSOPTPQUQR<14>967756856<15>`GM<7>NAE
+  }
+
+hq_16              { ; Blinded by the Light/1973      |LP title. To help, I've|
+                     ; t=00m24s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Ent
+  function=acos corners=-6.233818/4.757983/-3.940769/4.303081
+  params=-0.005/-1/0/0/0/0 float=y maxiter=500 fillcolor=126
+  inside=maxiter outside=atan
+  colors=VVhVVh<13>wwbzzazyazwa<25>qqppppppqooqoor<3>mmtllummu<20>000<15>N\
+  0_P0aQ0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0\
+  Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<10>DTWCUXBVYBXZAY_<2>9`d8ae8cf7dg7ei<12>\
+  0ty<33>02l00k00k<10>77l102AAl<8>TTh
+  }
+
+hq_17              { ; The Changeling/1971            |given the year of issue|
+                     ; t=01m12s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=liar4
+  corners=0.14607236992/0.14618085736/-0.05308282502/-0.04321836078/0.1413\
+  7648256/-0.04682164188 params=1/-1/0/0/0/0 float=y maxiter=500
+  fillcolor=126 inside=zmag outside=atan
+  colors=000N5A<18>`1R`1Sa1Tb0Ua0U`0T<22>E08C07B07907<3>125<3>56B67D78F89H\
+  AAJ<16>XSpZUrYUq<11>MK`<2>MHPMFLMEHNCCKBBIA9F87<4>MCGODHPFH<3>VPIXRIZUJ_\
+  WK<16>zzZxxY<16>0CC<45>MiYNjZNiZ<25>GFDFECFDBEBAF99<10>8D38D39D3<6>H86I7\
+  6K67L58M59M5A
+  }
+
+hq_18              { ; The Light Pours Out of Me/1978 |for each track (all are|
+                     ; t=05m40s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Exipi
+  corners=-2.39404/2.39404/3.192053/-3.192053/2.39404/-3.192053
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag outside=atan
+  colors=R43<4>O13N04N04M05<30>80G80G80G80G80G<2>80I71I71I71I71J<32>1AS1AT\
+  1AT1AU1AU0BV<29>aeibfibfi<8>mpnoqnprorspqro<17>XXWVVVUUTSSSRRR<21>xxxzzz\
+  zzy<2>yxuywsyvqyvoxun<25>qZ5pY4pX2oW0oW0<38>R53
+  }
+
+hq_19              { ; Cold Blue Steel & Sweet Fire/72|from the 60's & 70's). |
+                     ; t=17m49s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Exipi
+  corners=0.45407629/0.76878718/-0.37168673/-0.79130125/0.76878718/-0.7913\
+  0125 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag outside=atan
+  colors=IHIIHI<9>DTWCUXBVYBXZAY_<2>9`d8ae8cf7dg7ei<12>0ty<33>02l00k00k<10\
+  >77l88lAAl<23>wwbzzazyazwa<25>qqppppppqooqoor<3>mmtllummu<20>000<15>N0_P\
+  0aQ0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5\
+  >R04P00P11<6>LCCKDDKEEJFFJGG
+  }
+
+hq_20              { ; Tired Eyes/1975                |If you want to do the  |
+                     ; t=00m27s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=F'Liar1
+  function=acos
+  corners=-2.37209/3.956407/0.0604478239/-0.00915174389/-0.06042318/-3.021\
+  77436 params=0.9/-0.9/0/0/0/0 float=y inside=zmag outside=atan
+  colors=CB4CB4<3>H86I76K67L58<23>a1Tb0Ua0U<23>E08C07B07907<3>125<3>56B67D\
+  78F89HAAJ<16>XSpZUrYUq<11>MK`<2>MHPMFLMEHNCCKBBIA9F87<4>MCGODHPFH<3>VPIX\
+  RIZUJ_WK<16>zzZxxY<16>0CC<45>MiYNjZNiZ<27>FDBEBAF99<10>8D38D39D3AC3BB4
+  }
+
+hq_21              { ; Behind the Wall of Sleep/1970  |quiz just open this    |
+                     ; t=03m49s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=lyapunov
+  corners=-0.6348524/-1.744533/3.847624/3.0153635 params=2/0.5/3
+  float=y
+  colors=80GB0EXXW<3>RRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<21>sbDraBr`9q_7qZ5\
+  pY4pX2oW0<2>nV0mU0lT0lS0kS0<37>O13N04N04M05<28>80G80G80G80G80G<3>80I80I7\
+  1I71I71I<2>72K62K62K62K63L<22>18Q19R19R1AS1AS<3>1AU0BV1CW<28>aeibfibfi<8\
+  >mpnoqnprorspqro<15>ZZY
+  }
+
+hq_22              { ; Up Around the Bend/1970        |file and edit the      |
+                     ; t=01m48s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=TSinh
+  corners=-2.51362946/-2.45319545/4.19650377/4.21775026/-2.50207154/4.1810\
+  932 params=0.33/-0.11/0/0/0/0 float=y maxiter=500 bailout=10
+  inside=bof60 outside=mult potential=255/200/0
+  colors=000080<14>0z0<15>0403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>\
+  FVcESYDQUDOPCMKBJHAHD9FA7D86A6585464344450<4>WD0`F0dG0iI0<2>sN0vP0xR0yS0\
+  zU0zV0yU0yS0xR0<2>pM0mK0iI0dG0`F0<4>A6045006606607708808A09C09F0AI<2>0CV\
+  0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C08A0880770660662679A7ED8KH9\
+  PKBVOD_SGdVJhZNmaR<2>vldxpiysozwtzzyywtysnxpi<2>peWmaRhZNdVJ_SGVODPKBKH9\
+  ED89A7267376<2>KH7PL7VO8`S9dVAiZB<2>siFvlHxpIysKywLzzNywLysKxpI<2>peEmbC\
+  iZBdVA`S9<5>376365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7cq7h<2>s8ys8tr7nq7h\
+  o7cm7Z<2>c7LA40<3>W40`40d40i40<2>s40v40x40y40z40<3>x40<2>p40m40i40d40`40\
+  <4>A40440040
+  }
+
+hq_23              { ; Look Into the Sun/1969         |answer form.           |
+                     ; t=01m44s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=REB005F
+  function=tan/log corners=-7.235/4.248633/-4.86368/3.749044
+  params=0.76/1/0/0/0/0 maxiter=140 bailout=10 inside=bof61
+  outside=atan
+  colors=000<3>210220210330320440420540530650530760640870740980850A80850B9\
+  0960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH0GA0LH0GA0MI0HB0NJ\
+  0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ0OF0XR0PG0YS0QG0ZT\
+  0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_0XL0h`0YM0ia0ZM0jb\
+  0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0soBjU0tqDkV0urEmW0vt\
+  FnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0usLkW0tqLjV0spLiU0rn\
+  LhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ibKYM0haKXL0g`KXL0f_\
+  KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZTLQH0YSLPH0XSLOG0WR\
+  MOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJOHC0MJPHB0LIPGB0KH\
+  PFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BAS960A9S86098T75087\
+  T75076T64065U54055U43044U43033V32022V22011V11000W
+  }
+
+hq_24              { ; Into the Mystic/1970           |e-mail your answers to |
+                     ; t=12m32s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=OK-36
+  function=ident/tan/sqrt/cosh
+  corners=-0.28246778/0.065694422/-1.1222084/-0.86108671
+  params=1.2/-0.7/0.9/-0.45/0/0 float=y bailout=10 inside=zmag
+  outside=atan
+  colors=80GYYX<4>RRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<25>qZ5pY4pX2oW0oW0<43\
+  >O13N04N04M05<30>80G80G80G80G80G<2>80I71I71I71I71J<32>1AS1AT1AT1AU1AU0BV\
+  <29>aeibfibfi<8>mpnoqnprorspqro<15>ZZY
+  }
+
+hq_25              { ; From Here to Eternity/1975     |les_stclair@           |
+                     ; t=00m20s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Liar4
+  corners=-0.7130724/1.929172/-0.8065397/1.175144
+  params=2/-0.72/0/0/0/0 float=y maxiter=175 bailout=10 inside=zmag
+  outside=atan
+  colors=AEHZUM<15>zo`<47>777000<63>000000111122<14>8DD9DE9EFAEGAFHAFIBGJB\
+  FIAFHADG<18>000777<29>_00`00_00<30>777<14>XSL
+  }
+
+hq_26              { ; Shapes of Things/1965          |compuserve.com         |
+                     ; t=00m13s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=M_TchebychevC5
+  corners=-1.2708263/-1.00046289/0.44242578/0.537476134/-1.21911964/0.3734\
+  83571 params=0.12/-0.45/0/0/0/0 float=y maxiter=10000 bailout=10
+  inside=period outside=summ
+  colors=00CH_HH`HIaIJcJ<43>222212101000100200<4>D00F00G00<6>T00V00V10<28>\
+  qa9rcAqbA<29>F21D00D03<15>00x<29>002000100<30>z0p<15>W0R000<26>GYG
+  }
+
+hq_27              { ; Emerald/1976                   |                       |
+                     ; t=02m19s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=inandout04 function=asin
+  corners=-0.11338063/0.099672116/-0.082882939/0.07690662
+  params=0.33/-1.54/2.3/0/0/0 float=y maxiter=500 inside=zmag
+  outside=atan
+  colors=tS0tS0<13>F70000<15>zz0<15>000583<15>bzT<15>583080<15>0z0<15>0800\
+  84<15>0zz<15>084005<15>00z<15>00550C<12>P0qR0tS0wT0z<7>H0a400<14>z00<15>\
+  000F70<12>qR0tT0wU0zV0wU0
+  }
+
+hq_28              { ; Fade Away (and Radiate)/1978   |Hope you enjoy the     |
+                     ; t=01m00s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=Sterling
+  corners=-0.44571676/0.23197053/-0.25413274/0.25413274
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag outside=atan
+  colors=000<15>z00<15>000F70<12>qR0tT0wU0zV0<15>F70000<15>zz0<15>000583<1\
+  5>bzT<15>583080<15>0z0<15>080084<15>0zz<15>084005<15>00z<15>00550C<12>P0\
+  qR0tS0wT0z<7>H0a
+  }
+
+hq_29              { ; A Hazy Shade of Winter/1968    |trip... or, at least   |
+                     ; t=07m54s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Moe
+  function=cosh/cotanh
+  corners=-1.0382671/-0.68011045/1.174503/1.4431204 params=0/0/0/0/0/0
+  float=y maxiter=175 bailout=10 inside=bof60 outside=atan
+  colors=000zr`000SNF<14>zpahhh<14>yzz<14>UPISNFSNF<46>zpa000<29>1Td1Uf1Td\
+  <30>000E00<14>000874<12>110000000000<59>000
+  }
+
+hq_30              { ; Doctor My Eyes/1972            |the Fractals.          |
+                     ; t=00m42s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=ULI_6
+  function=cos/flip
+  corners=4.0971187/2.6076069/-0.76667532/0.75596351/2.8300278/0.92277919
+  params=1.2/-0.2/0.2/-0.43/0/0 float=y maxiter=190 inside=zmag
+  outside=atan
+  colors=000<54>000YHYXHW<6>QobQsbOnZ<7>FB5<10>zlH<9>KH8<6>pu9<11>IG8K45<1\
+  8>sQj<2>oOdmObkN`iMZhLX<13>KA5000<98>000
+  }
+
+hq_31              { ; Silver Blue and Gold/1976      |                       |
+                     ; t=01m16s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=GopalsamyFn function=tanh/exp/recip/atan
+  corners=-0.25477454/-0.045609757/-0.41038654/0.70403711/-0.71439857/0.20\
+  24455 params=0.3/-0.45/0/0/0/0 float=y inside=zmag outside=atan
+  colors=000bcS<4>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF\
+  8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>\
+  jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXYffi<2>nru<3>ffiCql<5>8Xc7Ta9Q`<5>\
+  L4R<8>VHI<7>zH0<7>WED332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KA\
+  JMAKOAM<12>ziF<13>K8C413000775<7>Z`P
+  }
+
+hq_32              { ; Sonic Attack/1973              |By the way, I am just  |
+                     ; t=00m21s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Liar3
+  corners=5.27629/-2.6711457/-3.7500187/7.87001/-3.1624006/7.5015688
+  params=0.66/0/0/0/0/0 float=y maxiter=500 fillcolor=126 inside=zmag
+  outside=atan
+  colors=80GYYX<4>RRR<21>xxxzzzzzy<2>yxuywsyvqyvoxun<25>qZ5pY4pX2oW0oW0<43\
+  >O13N04N04M05<30>80G80G80G80G80G<2>80I71I71I71I71J<11>54MulX55N<5>46PulX\
+  37PulX37Q<8>1AS1AT1AT1AU1AU0BV<5>7HYulXAJZ<21>aeibfibfi<8>mpnoqnprorspqr\
+  o<15>ZZY
+  }
+
+hq_33              { ; Wishing Well/1973              |too young to qualify   |
+                     ; t=13m37s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=Cubic
+  corners=-0.660136783/-0.556777869/0.601303094/0.562391044/-0.60424979/0.\
+  526787103 params=2/-3/0/0/0/0 float=y maxiter=500 fillcolor=126
+  inside=bof61 outside=atan
+  colors=000WQ0OF0XR0PG0YS0QG0ZT0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY\
+  0WK0fZ0XL0g_0XL0h`0YM0ia0ZM0jb0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql\
+  9hT0rnAiT0soBjU0tqDkV0urEmW0vtFnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wv\
+  LnX0vtLmW0usLkW0tqLjV0spLiU0rnLhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kd\
+  L_N0jbKZM0ibKYM0haKXL0g`KXL0f_KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`V\
+  KRI0_UKRI0ZTLQH0YSLPH0XSLOG0WRMOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PL\
+  OJD0OKOIC0NJOHC0MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DB\
+  SA70CAS970BAS960A9S86098T75087T75076T64065U54055U43044U43033V32022V22011\
+  V11000W100<2>210220210330320440420540530650530760640870740980850A80850B9\
+  0960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH0GA0LH0GA0MI0HB0NJ\
+  0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0
+  }
+
+hq_34              { ; Shine on You Crazy Diamond/1975|myself<g>              |
+                     ; t=01m11s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=formula formulafile=les_pars.frm formulaname=f'liar1
+  function=cosh corners=-0.21240797/0.72623864/0.62634884/1.3303338
+  params=1.3/-2.3/0/0/0/0 float=y inside=zmag outside=mult
+  colors=011FJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<3>X12W13V24\
+  U25U36<2>R38Q49P49O5AN5BM6C<7>000<23>0xz<15>077<30>1Te1Uf000<30>00000012\
+  2<12>BGJ
+  }
+
+hq_35              { ; Demon's Eye/1971               |Love & Peace y'all     |
+                     ; t=00m33s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=manowar corners=-11.17472/9.06661/-7.172718/8.008279
+  params=-1/-0.5 float=y bailoutest=imag fillcolor=1 inside=bof61
+  outside=real potential=255/200/0 invert=5/0/0
+  colors=00008A0880770660662679A7ED8KH9PKBVOD_SGdVJhZNmaR<2>vldxpiysozwtzz\
+  yywtysnxpi<2>peWmaRhZNdVJ_SGVODPKBKH9ED89A7267376<2>KH7PL7VO8`S9dVAiZB<2\
+  >siFvlHxpIysKywLzzNywLysKxpI<2>peEmbCiZBdVA`S9<5>376365865D66I67N69S6BW6\
+  E_7Ic7Lg7Qj7Vm7Zo7cq7h<2>s8ys8tr7nq7ho7cm7Z<2>c7LA40<3>W40`40d40i40<2>s4\
+  0v40x40y40z40<3>x40<2>p40m40i40d40`40<4>A40440040<15>0z0<15>040344464585\
+  6A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcESYDQUDOPCMKBJHAHD9FA7D86A6585464\
+  344450<4>WD0`F0dG0iI0<2>sN0vP0xR0yS0zU0zV0yU0yS0xR0<2>pM0mK0iI0dG0`F0<4>\
+  A6045006606607708808A09C09F0AI<2>0CV0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ<3>\
+  09C
+  }
+
+hq_36              { ; God Only Knows/1966            |..Les St Clair (1996)  |
+                     ; t=03m18s       
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+                     ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+  reset=1920 type=lambda(fn||fn) function=sin/sqr
+  corners=-1.552/1.552/-1.164/1.164 params=1/0.1/1 float=y inside=zmag
+  outside=mult
+  colors=000I9AF78<30>zzZxxY<16>0CC<47>2WN2WN1XO<38>D94D83D72E61F61<23>d1M\
+  e1Ng0Oi0P<4>r0U<31>402<31>rZU<14>KBB
+  }
+
+; HIP-QUIZ ENTRY FORM, e-mail answers to: les_stclair@compuserve.com
+; scoring - 1 point each for the ARTIST and the ALBUM TITLE (max. 72 points)
+; Go-For-It!!!
+;--------------------------- cut along dotted line --------------------------
+
+
+;ALBUM TRACK                    | ARTIST                | ALBUM TITLE                 
+;                               |                       |
+;Julia                          |                       |
+;Maid in Heaven                 |                       |
+;Lady of the Island             |                       |
+;Boris the Spider               |                       |
+;Eruption                       |                       |
+;Dead Flowers                   |                       |
+;Pretty as You Feel             |                       |
+;Green Earrings                 |                       |
+;Red                            |                       |
+;Tears in my Eyes               |                       |
+;Ripples                        |                       |
+;3rd Stone From the Sun         |                       |
+;Till it Shines                 |                       |
+;The End of the Rainbow         |                       |
+;Tangled up in Blue             |                       |
+;Blinded by the Light           |                       |
+;The Changeling                 |                       |
+;The Light Pours Out of Me      |                       |
+;Cold Blue Steel & Sweet Fire   |                       |
+;Tired Eyes                     |                       |
+;Behind the Wall of Sleep       |                       |
+;Up Around the Bend             |                       |
+;Look Into the Sun              |                       |
+;Into the Mystic                |                       |
+;From Here to Eternity          |                       |
+;Shapes of Things               |                       |
+;Emerald                        |                       |
+;Fade Away (and Radiate)        |                       |
+;A Hazy Shade of Winter         |                       |
+;Doctor My Eyes                 |                       |
+;Silver Blue and Gold           |                       |
+;Sonic Attack                   |                       |
+;Wishing Well                   |                       |
+;Shine on You Crazy Diamond     |                       |
+;Demon's Eye                    |                       |
+;God Only Knows                 |                       |
+
+
+Thanks for taking part - Les St Clair (April 1996)
+
