@@ -1,3 +1,5 @@
+comment {
+
 To see examples of images these FRACTINT formulas
 can create, download 43bcarr.par.
 

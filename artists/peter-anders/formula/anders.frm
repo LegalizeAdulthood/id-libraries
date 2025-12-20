@@ -88,7 +88,7 @@ z=p1*z+p
 ;SOURCE: s.frm
   }
 
-ULI_2 = { ; As you see, it's not my formula as well
+ULI_2 { ; As you see, it's not my formula as well
       z = Pixel:
       z = fn1(1/fn2(z+p1))
       |z| <= p2

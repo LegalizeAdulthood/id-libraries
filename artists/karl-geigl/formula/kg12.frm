@@ -4,74 +4,74 @@
 ;
 
 
-  1201 = {
+  1201 {
   z = pixel:
   z = fn1 (1/z) + pixel
   |z| <= p2
 }
 
-  1202 = {
+  1202 {
   z = pixel:
   z = fn1 (1/z) - pixel
   |z| <= p2
 }
 
-  1203 = {
+  1203 {
   z = pixel:
   z = fn1 (1/z) + pixel * z
   |z| <= p2
 }
 
-  1204 = {
+  1204 {
   z = pixel:
   z = fn1 (1/z) - pixel * z
   |z| <= p2
 }
 
-  1205 = {
+  1205 {
   z = pixel:
   z = fn1 (1/z) + pixel + z
   |z| <= p2
 }
 
-  1206 = {
+  1206 {
   z = pixel:
   z = fn1 (1/z) - pixel + z
   |z| <= p2
 }
 
 
-  1207 = {
+  1207 {
   z = 1/pixel:
   z = fn1 (1/z) - pixel + z
   |z| <= p2
 }
 
-  1208 = {
+  1208 {
   z = 1/pixel:
   z = fn1 (1/z) + pixel * z
   |z| <= p2
 }
 
-  1209 = {
+  1209 {
   z = 1/pixel:
   z = fn1 (1/z) - pixel * z
   |z| <= p2
 }
 
-  1210 = {
+  1210 {
   z = 1/pixel:
   z = fn1 (1/z) + pixel + z
   |z| <= p2
 }
 
-  1211 = {
+  1211 {
   z = 1/pixel:
   z = fn1 (1/z) - pixel + z
   |z| <= p2
 }
 
-  1212 = {
+  1212 {
   z = 2/pixel:
   z = fn1 (1/z) - pixel + z
   |z| <= p2

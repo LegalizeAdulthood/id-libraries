@@ -160,7 +160,7 @@ jowe_13 {; Jo Weber, July 1996
   z=fn1(z)-c/fn2(z)
 }
 
-JoWe_xy_01 = { ; Jo Weber [100424,35] 9/1996 
+JoWe_xy_01 {   ; Jo Weber [100424,35] 9/1996 
                ; p1 is bailout
                   z = pixel, bailout=p1:
                   x=real(z), y=imag(z),
