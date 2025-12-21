@@ -174,14 +174,19 @@ def validate_parameter_file(filename, quiet=False):
 
 def main():
     parser = argparse.ArgumentParser(description='Validate parameter file syntax')
-    parser.add_argument('filename', help='Parameter file to validate')
+    parser.add_argument('filenames', nargs='+', metavar='filename', help='Parameter file(s) to validate')
     parser.add_argument('-q', '--quiet', action='store_true',
                         help='Quiet mode: only output filename on failure')
     
     args = parser.parse_args()
     
-    success = validate_parameter_file(args.filename, args.quiet)
-    sys.exit(0 if success else 1)
+    all_success = True
+    for filename in args.filenames:
+        success = validate_parameter_file(filename, args.quiet)
+        if not success:
+            all_success = False
+    
+    sys.exit(0 if all_success else 1)
 
 
 if __name__ == '__main__':
