@@ -1,4 +1,4 @@
-comment = { ­Mis fractales!.}
+comment { ­Mis fractales!.}
 
 Mac301 {
   bailout = ( 16 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
@@ -68,7 +68,7 @@ Mac308 {
     Real(z) < bailout
 }
 
-comment = { OldManoWar }
+comment { OldManoWar }
 Mac309 {
   z0 = 0,
   z1 = 0,

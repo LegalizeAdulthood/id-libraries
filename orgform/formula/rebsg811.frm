@@ -1,4 +1,4 @@
-{ ; Modification of Gallet-8-11 for Ikenaga Julias
+rebsg811 { ; Modification of Gallet-8-11 for Ikenaga Julias
   ; Ron Barnett, November 1998
   ; PHC, requires periodicity = 0 and passes = 1
   ; p1 = parameter for a Julia set

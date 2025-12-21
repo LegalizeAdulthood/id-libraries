@@ -40,7 +40,7 @@ jfnz {; from EXPLOD.FRM
    |z| <= 4
    }
 
-JMask = {; Ron Barnett [70153,1233]
+JMask {; Ron Barnett [70153,1233]
    ; try p1 = (1,0), p2 = (0,0.835), fn1 = sin, fn2 = sqr
    z = fn1(pixel):
    z = P1*fn2(z)^2 + P2, |z| <= 4
@@ -67,7 +67,7 @@ jz   {; from EXPLOD.FRM
    |z| <= 4
    }
 
-JSomethingelse (xyaxis) = {
+JSomethingelse (xyaxis) {
    z = pixel:
    z = p1 * (z*z + 1/z/z),
    |z| <= 1000000
@@ -367,7 +367,7 @@ JuliConj11 {; Paul J. Horn - a conjugate Julia (I think)
    |z| <= 4
    }
 
-JulibrotSlice1 = {; Randy Hutson - 2D slice of 4D Julibrot
+JulibrotSlice1 {; Randy Hutson - 2D slice of 4D Julibrot
   z = real(p1)+flip(imag(pixel)), c = real(pixel)+flip(imag(p1)):
   z = sqr(z)+c,
   LastSqr <= 4
@@ -380,7 +380,7 @@ LambdaPwr {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-Leeze (XAXIS) = {; Lee Skinner [75450,3631]
+Leeze (XAXIS) {; Lee Skinner [75450,3631]
    s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
    z = cosxx (z) + f,
    |z| <= 50
@@ -516,7 +516,7 @@ MandellambdaPwr {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-Mask = {; Ron Barnett [70153,1233]
+Mask {; Ron Barnett [70153,1233]
    ; try fn1 = log, fn2 = sinh, fn3 = cosh
    ;P1 = (0,1), P2 = (0,1)
    ;Use floating point
@@ -805,7 +805,7 @@ Natura {; Michael Theroux [71673,2767]
    |z| <= 4
    }
 
-Newducks(XAXIS) = {
+Newducks(XAXIS) {
    z=pixel,t=1+pixel:
    z=sqr(z)+t,
    |z|<=4
@@ -820,7 +820,7 @@ non-conformal {; Richard Hughes (Brainy Smurf) [70461,3272]
    |z| <= 4
    }
 
-No_name(xaxis) = {
+No_name(xaxis) {
    z = pixel:
    z=z+z*z+(1/z*z)+pixel,
    |z| <= 4
@@ -886,7 +886,7 @@ phoenix_m {; Richard Hughes (Brainy Smurf) [70461,3272]
    |z| <= 4
    }
 
-PolyGen = {; Ron Barnett [70153,1233]
+PolyGen {; Ron Barnett [70153,1233]
    ;p1 must not be zero
    ;zero can be simulated with a small
    ;value for p1
@@ -918,7 +918,7 @@ PseudoMandelLambda {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-PseudoZeePi = {; Ron Barnett [70153,1233]
+PseudoZeePi {; Ron Barnett [70153,1233]
    ; try p1 = 0.1, p2 = 0.39
    z = pixel:
    x = 1-z^p1;
@@ -926,7 +926,7 @@ PseudoZeePi = {; Ron Barnett [70153,1233]
    |z| <= 4
    }
 
-Ramanujan1(ORIGIN) = {
+Ramanujan1(ORIGIN) {
    z = pixel:
    z = (cosh(p1 * sqr(z)) - sinh(p2 * sqr(z))/(p2 * sqr(z)))/z,
    |z|<= 4

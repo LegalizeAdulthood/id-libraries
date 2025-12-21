@@ -279,4 +279,3 @@ z1=fac*z1+g*conj(zm)
 z=z+(z1-pixel)
 |z1|<=200
 }
-

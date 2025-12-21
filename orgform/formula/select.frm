@@ -277,5 +277,3 @@ WaldoTwinsC(XAXIS_NOPARM) {; Jon Osuch
     z   = fn1(fn2(z+pixel)) + pixel,
    |z| <= p2
    }
-
-

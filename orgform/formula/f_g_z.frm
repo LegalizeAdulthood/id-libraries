@@ -106,11 +106,11 @@ FGZ-Julia   {
       |z| <= 4
    }
 
-comment = {
+comment {
    NOTE: that Julia sets where only one of the c variables is changed results in distorted Julia sets.  I suspect this is because one of the variables is still changing.  Whereas, Julias are the result of unchanging "c" values.
    }
 
-comment = {
+comment {
    This Julia looks like a multi-limbed snake.
    }
 
@@ -268,5 +268,3 @@ Readme {
 ; T0M 1P0
 ;
 }
-
-

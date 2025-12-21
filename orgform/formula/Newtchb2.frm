@@ -1,23 +1,12 @@
-  {
-======================================================================== }
-  {              File distributed with FRAC'Cetera Vol 2 Iss 8             
- }
+{ ======================================================================== }
+{              File distributed with FRAC'Cetera Vol 2 Iss 8               }
  
 {==========================================================================
-   =  Downloaded from CIS 13 May 93 by Jon Horner (FRAC'Cetera) as part of 
-=
-   =  FRXTRA.ZIP      Author: Dan Goldwater       CIS: 71320,675           
-=
-   =  F'names,  where present,  are  FRAC'Cetera  created variations or    
-=
-   =  derivatives based, sometimes quite loosely, on the author's originals
-=
-  
+ =  Downloaded from CIS 13 May 93 by Jon Horner (FRAC'Cetera) as part of  =
+ =  FRXTRA.ZIP      Author: Dan Goldwater       CIS: 71320,675            =
+ =  F'names,  where present,  are  FRAC'Cetera  created variations or     =
+ =  derivatives based, sometimes quite loosely, on the author's originals =
 ==========================================================================}
-
-!_Press_F2_!     {; There is text in this formula file.  Shell to DOS with
-                  ; the <d> key and use a text reader to browse the file.
-                 }
 
 ;========================================================================
 ; Date:         Mon, 10 Feb 1992 08:18:36 GMT
@@ -47,8 +36,7 @@
 ; [1] _Advanced Fractal Programming in C_
 ; [2] _Chaos and Fractals, New Frontiers in Science_
 ;
-
-}
+;
 ;The above are original comments preceeding newtcheb.frm which is apparently no
 ;longer available. Thanks to Gerge Martin for providing them. Otherwise
 ;I reconstructed this formula file from ORGFORM where they were filed under J and

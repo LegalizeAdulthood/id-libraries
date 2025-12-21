@@ -153,33 +153,33 @@ RCL_Quaternion_M (XAXIS) { ; Ron Lewen, 76376,2567
    (a0^2+a1^2+a2^2+a3^2) <= 2
    }
 
-REB004A = {; Ron Barnett [70153,1233]
+REB004A {; Ron Barnett [70153,1233]
    ; try p1 = 0.9, p2 = 2, fn1 = sin, fn2 = cos 
    z = pixel:
    z =p1*fn1(z) + p1*p1*fn2(p2*z) + pixel, |z| <= 100
    }
 
-REB004B = {; Ron Barnett [70153,1233] 
+REB004B {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = 3
    z = pixel:
    z = pixel + p1*(z/2 + z*z/6 + z*z*z/12), |z| <= 100
    }
 
-REB004C = {; Ron Barnett [70153,1233] 
+REB004C {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = 3, p2 = (-0.009,1.225)
    z = pixel:
    z = p2 + p1*(z/2 + z*z/6 + z*z*Z/12), |z| <= 100
    }
 
-REB004D = {; Ron Barnett [70153,1233]
+REB004D {; Ron Barnett [70153,1233]
    ; try p1 = -1, fn1 = sin 
    z = pixel:
    z = pixel + fn1(2*z+1)/(2*z+p1), |z| <= 100
    }
 
-REB004E = {; Ron Barnett [70153,1233] 
+REB004E {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = -1, p2 = -1, fn1 = sin, fn2 = cos
    z = pixel:
@@ -187,13 +187,13 @@ REB004E = {; Ron Barnett [70153,1233]
    z = z + fn2(4*z+1)/(4*z+p2), |z| <= 100
    }
 
-REB004F = {; Ron Barnett [70153,1233]
+REB004F {; Ron Barnett [70153,1233]
    ; try p1 = -1, p2 = (-0.92, 0.979), fn1 = sin 
    z = pixel:
    z = p2 + fn1(2*z+1)/(2*z+p1), |z| <= 100
    }
 
-REB004G = {; Ron Barnett [70153,1233] 
+REB004G {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = -1, p2 = (0.849,0.087), fn1 = sin, fn2 = cos
    z = pixel:
@@ -201,21 +201,21 @@ REB004G = {; Ron Barnett [70153,1233]
    z = z + fn2(4*z+1)/(4*z+p1), |z| <= 100
    }
 
-REB004H = {; Ron Barnett [70153,1233] 
+REB004H {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try fn1 = sqr
    z = pixel:
    z = pixel + fn1(3/z - z/4), |z| <= 100
    }
 
-REB004I = {; Ron Barnett [70153,1233] 
+REB004I {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = (-1.354, 0.625) fn1 = sqr
    z = pixel:
    z = p1 + fn1(3/z - z/4), |z| <= 100
    }
 
-REB004J = {; Ron Barnett [70153,1233] 
+REB004J {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try fn1 = tan
    z = pixel:
@@ -223,7 +223,7 @@ REB004J = {; Ron Barnett [70153,1233]
    z = x*z + pixel, |z| <= 100
    }
 
-REB004K = {; Ron Barnett [70153,1233] 
+REB004K {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = (-0.564, 0.045), fn1 = tan
    z = pixel:
@@ -231,7 +231,7 @@ REB004K = {; Ron Barnett [70153,1233]
    z = x*z + p1, |z| <= 100
    }
 
-REB004L = {; Ron Barnett [70153,1233] 
+REB004L {; Ron Barnett [70153,1233] 
               ; floating point required
    ; try p1 = 1, p2 - 2, fn1 = tan
    z = pixel:
@@ -239,7 +239,7 @@ REB004L = {; Ron Barnett [70153,1233]
    z = x*z + pixel, |z| <= 100
    }
 
-REB004M = {; Ron Barnett [70153,1233] 
+REB004M {; Ron Barnett [70153,1233] 
               ; floating point required
    ;try p1 = (0.4605, 0.8), fn1 = tan, fn2 = cos
    z = pixel:
@@ -252,7 +252,7 @@ REB004M = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    }   
 
-REB004N = {; Ron Barnett [70153,1233]
+REB004N {; Ron Barnett [70153,1233]
    z = 0.5:
    x = pixel*(z - 1/z) + p1,
    z = pixel*(x - 1/sqr(x) + p2), |z| <= 100
@@ -271,7 +271,7 @@ REB005A	= {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005B = {; Ron Barnett [70153,1233]
+REB005B {; Ron Barnett [70153,1233]
               ; floating point required
    ; try p1 = 0.01, fn1 = ident, fn2 = ident
    z = pixel:
@@ -284,7 +284,7 @@ REB005B = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005C = {; Ron Barnett [70153,1233]
+REB005C {; Ron Barnett [70153,1233]
               ; floating point required
    ; try p1 = -0.5, p2 = -0.1, fn1 = ident, fn2 = ident
    z = pixel:
@@ -297,7 +297,7 @@ REB005C = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005D = {; Ron Barnett [70153,1233]
+REB005D {; Ron Barnett [70153,1233]
               ; floating point required
    ; try p1 = -1, p2 = -1, fn1 = sin, fn2 = ident
    z = pixel:
@@ -310,7 +310,7 @@ REB005D = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005E = {; Ron Barnett [70153,1233]
+REB005E {; Ron Barnett [70153,1233]
               ; floating point required
    ; try p1 = (0,0.09), fn1 = sin, fn2 = tan
    z = pixel:
@@ -323,7 +323,7 @@ REB005E = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005G = {; Ron Barnett [70153,1233]
+REB005G {; Ron Barnett [70153,1233]
               ; floating point required
    ; try fn1 = ident, fn2 = sin
    z = pixel:
@@ -336,7 +336,7 @@ REB005G = {; Ron Barnett [70153,1233]
    z = x2 + flip(y2), |z| <= 100
    }
 
-REBRefInd1 = {; Ron Barnett [70153,1233]
+REBRefInd1 {; Ron Barnett [70153,1233]
    ; Use floating point
    ; p1 = 1, p2 = 2, fn1 = sin, fn2 = sqr
    z = pixel:
@@ -344,7 +344,7 @@ REBRefInd1 = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-REBRefInd2 = {; Ron Barnett [70153,1233]
+REBRefInd2 {; Ron Barnett [70153,1233]
    ; Use floating point
    ; try p1 = (0.489, 0.844), fn1 = sin, fn2 = sqr
    z = pixel:
@@ -352,7 +352,7 @@ REBRefInd2 = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-REBRefInd3 = {; Ron Barnett [70153,1233]
+REBRefInd3 {; Ron Barnett [70153,1233]
    ; Use floating point
    ; p1 = (0.48, 0.67), fn1 = sin
    z = pixel:
@@ -360,7 +360,7 @@ REBRefInd3 = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-REBRefInd4 = {; Ron Barnett [70153,1233]
+REBRefInd4 {; Ron Barnett [70153,1233]
    ; Use floating point
    ; try p1 = 1, p2 = 2, fn1 = cosh, fn2 = sqr
    z = pixel:
@@ -369,7 +369,7 @@ REBRefInd4 = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-REBRefInd5 = {; Ron Barnett [70153,1233]
+REBRefInd5 {; Ron Barnett [70153,1233]
    ; Use floating point
    ; try p1 = (0.46, 0.482), fn1 = cosh, fn2 = sqr
    z = pixel:
@@ -378,7 +378,7 @@ REBRefInd5 = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-RecipIke = {; Ron Barnett [70153,1233]
+RecipIke {; Ron Barnett [70153,1233]
    ; try p1 = (-1.44,-0.4) with royal.map
    z = pixel:
    z = 1/(z*z*z + (p1-1)*z - p1),
@@ -398,65 +398,65 @@ quadrants {
   |z| <= 4
   }
 
-Sam_0(XAXIS) = {; from SAM.FRM
+Sam_0(XAXIS) {; from SAM.FRM
    z = Pixel:
    z = z^z - pixel
    }
 
-Sam_1(XAXIS) = {; from SAM.FRM
+Sam_1(XAXIS) {; from SAM.FRM
    z = Pixel:
    z = z^(-z) - pixel
    }
 
-Sam_10(XYAXIS) = {; from SAM.FRM
+Sam_10(XYAXIS) {; from SAM.FRM
    z = Pixel:
    z = sin(1/z)
    }
 
-Sam_11(XAXIS) = {; from SAM.FRM
+Sam_11(XAXIS) {; from SAM.FRM
    ;Try this with periodicity=none command line
    z = Pixel:
    z = sinh(1/z)
    }
 
-Sam_2(XAXIS) = {; from SAM.FRM
+Sam_2(XAXIS) {; from SAM.FRM
    ; use integer math, not floating point or you will get a blank screen
    z = Pixel:
    z = z^(1/z) - pixel
    }
 
-Sam_3(XAXIS) = {; from SAM.FRM
+Sam_3(XAXIS) {; from SAM.FRM
    z = Pixel:
     z = z^z^z - pixel
    }
 
-Sam_4(XAXIS) = {; from SAM.FRM
+Sam_4(XAXIS) {; from SAM.FRM
    z = Pixel:
    z = z^(z^(1/z)) - pixel
    }
 
-Sam_5(XAXIS) = {; from SAM.FRM
+Sam_5(XAXIS) {; from SAM.FRM
    z = Pixel:
    z = z^2.718281828 + pixel
    }
 
-Sam_6(XYAXIS) = {; from SAM.FRM
+Sam_6(XYAXIS) {; from SAM.FRM
    z = Pixel:
    z = z*cos(z) - pixel
    }
 
-Sam_7(XAXIS) = {; from SAM.FRM
+Sam_7(XAXIS) {; from SAM.FRM
    z = Pixel:
    z = z*sin(z) - pixel
    }
 
-Sam_8 = {; from SAM.FRM
+Sam_8 {; from SAM.FRM
    ;fix by Ron Barnett [70153,1233]   
    z = c = Pixel:
    z = z^c
    }
 
-Sam_9(XYAXIS) = {; from SAM.FRM
+Sam_9(XYAXIS) {; from SAM.FRM
    z = Pixel:
    z = z*tanh(z)
    }
@@ -542,25 +542,25 @@ SinEgg(XAXIS_NOPARM)[float=y function=sin/sqr] {; Jonathan Osuch
     x <= p2
    }
 
-SinInvZ(XYAXIS) = {
+SinInvZ(XYAXIS) {
    z=pixel, inv=1/pixel+p1:
    z=sin(inv/z),
    |z|<=4
    }
 
-SinhInvZ(XYAXIS) = {
+SinhInvZ(XYAXIS) {
    z=pixel, inv=1/pixel+p1:
    z=sinh(inv/z),
    |z|<=4
    }
 
-Something (xaxis) = {
+Something (xaxis) {
    z = pixel:
    z = pixel + z*z + 1/z/z,
    |z| <= 4
    }
 
-Somethingelse (xyaxis) = {
+Somethingelse (xyaxis) {
    z = 1:
    z = pixel * (z*z + 1/z/z),
    |z| <= 1000000
@@ -584,14 +584,14 @@ SymmIconFix {; Darell Shaffer [76040,2017]
    z = ((l +(a *z *zbar) +(b *real(z^n)) +(w *i)) *z) +g *(zbar^(n-1)) +pixel;
    }
 
-TanInvZ(XYAXIS) = {
+TanInvZ(XYAXIS) {
    z=pixel, inv=1/pixel+p1:
    t=inv/z,
    z=sin(t)/cos(t),
    |z|<=4
    }
 
-TanhInvZ(XYAXIS) = {
+TanhInvZ(XYAXIS) {
    z=pixel, inv=1/pixel+p1:
    z=tanh(inv/z),
    |z|<=4
@@ -753,13 +753,13 @@ TjerNewtonSinExp (XAXIS) {; Chris Green
     .0001 < |z2|
   }
 
-TLog (XAXIS) = {; Lee Skinner [75450,3631]
+TLog (XAXIS) {; Lee Skinner [75450,3631]
    z = c = log(pixel):
    z = c ^ z,
    z <= (p1 + 3)
    }
 
-Tobey3(XAXIS) = {
+Tobey3(XAXIS) {
    z = pixel:
    c = pixel - sqr(z),
    c = pixel + c/z,
@@ -882,7 +882,7 @@ TobeyWineglass(XAXIS) {; Pieter Branderhorst
    c = (1+flip(imag(fn1(c)))) * real(fn1(c)) / 3 + z,
     |z| <= 4 }
 
-TSinh (XAXIS) = {; Lee Skinner [75450,3631]
+TSinh (XAXIS) {; Lee Skinner [75450,3631]
    z = c = sinh(pixel):
    z = c ^ z,
    z <= (p1 + 3)
@@ -902,37 +902,37 @@ TurtleC(XAXIS_NOPARM)[float=y function=sqr/sqr] {; Jonathan Osuch
     |z| <= p2
     }
 
-ULI_1 = {; from ULI.FRM
+ULI_1 {; from ULI.FRM
    z = Pixel:
    z = fn1(1/fn2(z)),
    |z| <= 4
    }
 
-ULI_2 = {; from ULI.FRM
+ULI_2 {; from ULI.FRM
    z = Pixel:
    z = fn1(1/fn2(z+p1)),
    |z| <= p2
    }
 
-ULI_3 = {; from ULI.FRM
+ULI_3 {; from ULI.FRM
    z = Pixel:
    z = fn1(1/fn2(z+p1)+p1),
    |z| <= p2
    }
 
-ULI_4 = {; from ULI.FRM
+ULI_4 {; from ULI.FRM
    z = Pixel:
    z = fn1(1/(z+p1))*fn2(z+p1),
    |z| <= p2
    }
 
-ULI_5 = {; from ULI.FRM
+ULI_5 {; from ULI.FRM
    z = Pixel, c = fn1(pixel):
    z = fn2(1/(z+c))*fn3(z+c),
    |z| <= p1
    }
 
-ULI_6 = {; from ULI.FRM
+ULI_6 {; from ULI.FRM
    z = Pixel:
    z = fn1(p1+z)*fn2(p2-z),
    |z| <= p2+16
@@ -947,7 +947,7 @@ WaldoTwinsC(XAXIS_NOPARM)[float=y function=cosxx/sin] {; Jonathan Osuch
     |z| <= p2
     }
 
-Whatever_the_name(XAXIS) = {
+Whatever_the_name(XAXIS) {
    z = pixel:
    z=z*z+(1/z*z)+pixel,
    }
@@ -963,7 +963,7 @@ z^3-1=0(XAXIS)  {
    x != xold && y != yold
    }
 
-Ze2 (XAXIS) = {; Lee Skinner [75450,3631]
+Ze2 (XAXIS) {; Lee Skinner [75450,3631]
    s1 = exp(1.,0.),
    s = s1 * s1,
    z = Pixel:
@@ -971,13 +971,13 @@ Ze2 (XAXIS) = {; Lee Skinner [75450,3631]
    |z| <= 100
    }
 
-Zexpe (XAXIS) = {; Lee Skinner [75450,3631]
+Zexpe (XAXIS) {; Lee Skinner [75450,3631]
    s = exp(1.,0.), z = Pixel:
    z = z ^ s + pixel,
    |z| <= 100
    }
 
-Zexpe2 (XAXIS) = {; Lee Skinner [75450,3631]
+Zexpe2 (XAXIS) {; Lee Skinner [75450,3631]
    s = exp(1.,0.), z = Pixel:
    z = z ^ s + z ^ (s * pixel),
    |z| <= 100

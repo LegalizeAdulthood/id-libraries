@@ -1,15 +1,15 @@
-Hi, I`m Albrecht Niekamp, Duesseldorf
-Niekamp@Online-club.de
-
-This is my first try to publish formulas for the fractint users.
-These frm-files correspond to the par-files with the same .name.
-The basic formula (Nr.13 or 13a) was first used on my Multifrac 
-program for the good old AtariXL.  All other formulas are 
-variations of this one.  Try yourself, You`ll see that they are 
-very easy to edit.  Suggstions, new par-files or variations are 
-welcome.
-
---------------------------------------------------------------
+; Hi, I`m Albrecht Niekamp, Duesseldorf
+; Niekamp@Online-club.de
+; 
+; This is my first try to publish formulas for the fractint users.
+; These frm-files correspond to the par-files with the same .name.
+; The basic formula (Nr.13 or 13a) was first used on my Multifrac 
+; program for the good old AtariXL.  All other formulas are 
+; variations of this one.  Try yourself, You`ll see that they are 
+; very easy to edit.  Suggstions, new par-files or variations are 
+; welcome.
+; 
+; --------------------------------------------------------------
 
 multifrac1 {
   z = pixel:
@@ -1005,96 +1005,96 @@ multifrac68 {
 
 
 
---------------------------------------------------------------
---------------------------------------------------------------
-
-
-is this post-fractint? Kinda pick up the pieces
-and make something new of it? I hope not.
-
-It was supposed to be an update to Mandelmania
-but it turned out to become something different,
-more a tool then a formula. A tool to be used
-without leaving fractint, which lets you compose your image,- or the first
-approach to it. It mixes 4 fractals with seperate inside/ outside
-options.Two basic formulas which are ismand compatible and two hybrid mandel
-and julia variations.
-Of course a huge number of inputs is needed, but I
-have tried to make them as easy and comfortable as even possible.
-The p1 values are used as Julia seed and shared to define the default
-mandel, I call it shape.
-If you need both start with the Julia values, see what basic image you get
-and define it further with the
-P6 input,(real P2) after the dot. The first 2 digits are used, they even can
-be negative, a "minus" will be applied only to this value.
-The other two digits are used to define the 2nd shape. This one has many
-variations of mirrored mandels that can be combined to one special shape.
-Use the evolver, max mutation for example 0.003. Both
-are written by Puskás István. The default one is modified to enforce Julia
-compatability and to use the "warp"effect for further modification.
-The inputs are sorted as factor,border, maxiter, first shape, then in/out1
-and in/out2. Border1 can be fractional, a border value of 1.4567 would
-appear as (factor1).000014567.
-The primary input Real P5 consists of five digits,
-shape, out1, out2, in1, in2. You type the number of the fractal to be used
-and add five to reset it, not the shape of course. A "-" will shut off
-in/out1. Number 3 is Many_mods (mandel) by Linda Allison with a modification
-by Sylvie Gallet. I like this because it creates beautiful structures and
-its very complex. The circular form can be changed if you take a mandel as
-basic shape.
-It mixes very well with the hybrid Julia, (Nr.4),
-own write, which also gains complexity with the warpeffect, as it shares
-iteration. This one can be replaced by a different frm, if it dosnt need an
-additional input. The other ones are "built in" so
-some rewriting would be necessary in order to replace them.
-If you want the shape only, no in/out options, just type one number.
-Do not forget to set ismand according to your selection.
-The secondary input consists of 2 digits.You type the
-number out1/out2 and in1/in2 (or zero) to use the second basic formula, 3 if
-you want to use it for both, add five to use it as shape. This input is
-optional.
-Resetting generally adjusts the concerned part to the
-screen instead of the surroundings, it also helps avoid chaotic spots due to
-overcomplexity. Many-mods gains complexity, the number of "sides", (real
-P3,2nd input) is doubled if called as in/out option and again if twice f.e
-"(bailout).00008". This also creates the multiplication in "cockpit", I
-think.
-Imag P5 is optional, one digit only, for resetting the
-internal counter after shape (1) or after in/out1 (2),
-3 if both. Add five or only 5 to use the warpeffect on
-the shape. This sometimes helps if you dont get an inside image and lets you
-see the difference. Counter resetting starts the calculation of the warp
-effect from zero. If you dont reset it and use the same factor for all
-options, the effect will increase with iteration.
-The Lake input ,2nd input, is radically simplified
-(sorry, Sylvie), you just type one six digits number,
-2 digits for each value. 324151 means a frequency of 320, a level of 41% and
-an amplitude of 0.51. Any input activates the lake effect.
-The functions are used for the calculation of the warp effect, possibly a
-new factor must be found if changed. Fn1 is shared with many_mods, so if you
-dont
-warp the shape it is free to use. I did not use fn4 or
-fn5 for the 2nd function as at least 2 lines are needed to scroll the text.
-If you dont want the outside options set the values higher then bailout, or
-vv maxiter higher then maxiter on the x-screen.
-It was not possible to include twoway border values and separate bailout
-values, P6 is needed.
-Its a good idea to have a hardcopy available when doing the inputs, also
-some basic pars ready to modify.
-
-There is one problem: Many_mods is n o t compatible
-with the lake effect, as they both define "c", applying the effect to "z"
-does not do the job and the image is partly distorted. P l e a s e tell me,
-if you
-see a solution, maybe only Sylvie can help.
-
-
-If you have questions or bugs to report, I will answer immediately and --
-please post your images.
-
-Writing this was like a trip into a new country, and when you finally
-detect, that it´s much more complex then it´s parts, well- that´s it.
-
+; --------------------------------------------------------------
+; --------------------------------------------------------------
+; 
+; 
+; is this post-fractint? Kinda pick up the pieces
+; and make something new of it? I hope not.
+; 
+; It was supposed to be an update to Mandelmania
+; but it turned out to become something different,
+; more a tool then a formula. A tool to be used
+; without leaving fractint, which lets you compose your image,- or the first
+; approach to it. It mixes 4 fractals with seperate inside/ outside
+; options.Two basic formulas which are ismand compatible and two hybrid mandel
+; and julia variations.
+; Of course a huge number of inputs is needed, but I
+; have tried to make them as easy and comfortable as even possible.
+; The p1 values are used as Julia seed and shared to define the default
+; mandel, I call it shape.
+; If you need both start with the Julia values, see what basic image you get
+; and define it further with the
+; P6 input,(real P2) after the dot. The first 2 digits are used, they even can
+; be negative, a "minus" will be applied only to this value.
+; The other two digits are used to define the 2nd shape. This one has many
+; variations of mirrored mandels that can be combined to one special shape.
+; Use the evolver, max mutation for example 0.003. Both
+; are written by Puskás István. The default one is modified to enforce Julia
+; compatability and to use the "warp"effect for further modification.
+; The inputs are sorted as factor,border, maxiter, first shape, then in/out1
+; and in/out2. Border1 can be fractional, a border value of 1.4567 would
+; appear as (factor1).000014567.
+; The primary input Real P5 consists of five digits,
+; shape, out1, out2, in1, in2. You type the number of the fractal to be used
+; and add five to reset it, not the shape of course. A "-" will shut off
+; in/out1. Number 3 is Many_mods (mandel) by Linda Allison with a modification
+; by Sylvie Gallet. I like this because it creates beautiful structures and
+; its very complex. The circular form can be changed if you take a mandel as
+; basic shape.
+; It mixes very well with the hybrid Julia, (Nr.4),
+; own write, which also gains complexity with the warpeffect, as it shares
+; iteration. This one can be replaced by a different frm, if it dosnt need an
+; additional input. The other ones are "built in" so
+; some rewriting would be necessary in order to replace them.
+; If you want the shape only, no in/out options, just type one number.
+; Do not forget to set ismand according to your selection.
+; The secondary input consists of 2 digits.You type the
+; number out1/out2 and in1/in2 (or zero) to use the second basic formula, 3 if
+; you want to use it for both, add five to use it as shape. This input is
+; optional.
+; Resetting generally adjusts the concerned part to the
+; screen instead of the surroundings, it also helps avoid chaotic spots due to
+; overcomplexity. Many-mods gains complexity, the number of "sides", (real
+; P3,2nd input) is doubled if called as in/out option and again if twice f.e
+; "(bailout).00008". This also creates the multiplication in "cockpit", I
+; think.
+; Imag P5 is optional, one digit only, for resetting the
+; internal counter after shape (1) or after in/out1 (2),
+; 3 if both. Add five or only 5 to use the warpeffect on
+; the shape. This sometimes helps if you dont get an inside image and lets you
+; see the difference. Counter resetting starts the calculation of the warp
+; effect from zero. If you dont reset it and use the same factor for all
+; options, the effect will increase with iteration.
+; The Lake input ,2nd input, is radically simplified
+; (sorry, Sylvie), you just type one six digits number,
+; 2 digits for each value. 324151 means a frequency of 320, a level of 41% and
+; an amplitude of 0.51. Any input activates the lake effect.
+; The functions are used for the calculation of the warp effect, possibly a
+; new factor must be found if changed. Fn1 is shared with many_mods, so if you
+; dont
+; warp the shape it is free to use. I did not use fn4 or
+; fn5 for the 2nd function as at least 2 lines are needed to scroll the text.
+; If you dont want the outside options set the values higher then bailout, or
+; vv maxiter higher then maxiter on the x-screen.
+; It was not possible to include twoway border values and separate bailout
+; values, P6 is needed.
+; Its a good idea to have a hardcopy available when doing the inputs, also
+; some basic pars ready to modify.
+; 
+; There is one problem: Many_mods is n o t compatible
+; with the lake effect, as they both define "c", applying the effect to "z"
+; does not do the job and the image is partly distorted. P l e a s e tell me,
+; if you
+; see a solution, maybe only Sylvie can help.
+; 
+; 
+; If you have questions or bugs to report, I will answer immediately and --
+; please post your images.
+; 
+; Writing this was like a trip into a new country, and when you finally
+; detect, that it's much more complex then it´s parts, well- that´s it.
+; 
 
 Multifractal     { ; Albrecht Niekamp  -- Apr, 2003
 ;only integers as first input, second input 5 digits to the right
@@ -1395,8 +1395,8 @@ endif
 bo<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_2    { ;  Albrecht Niekamp  070603
 ;only integers as first input, second input 5 digits to the right
@@ -1697,8 +1697,8 @@ endif
 |z|<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_3    { ;  Albrecht Niekamp  090603
 ;only integers as first input, second input 5 digits to the right
@@ -2004,8 +2004,8 @@ endif
 |z|<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_4    { ;  Albrecht Niekamp  110603
 ;only integers as first input, second input 5 digits to the right
@@ -2343,8 +2343,8 @@ endif
 |z|<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_5    { ;  Albrecht Niekamp  230603
 ;only integers as first input, second input 5 digits to the right
@@ -2696,8 +2696,8 @@ bo=|z|
 bo<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_6    { ;  Albrecht Niekamp  020703
 ;only integers as first input, second input 5 digits to the right
@@ -3078,8 +3078,8 @@ bo=|z|
 bo<=ba
 }
 
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_7    { ;  Albrecht Niekamp  240703
 ;p1 (spider)julia-seed
@@ -3510,9 +3510,8 @@ bo=|z|
 bo<=ba
 }
 
-
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_8    { ;  Albrecht Niekamp  090803
 ;p1 (spider)julia-seed
@@ -4050,9 +4049,8 @@ bo=|z|
 bo<=ba
 }
 
-
---------------------------------------------------------------
---------------------------------------------------------------
+; --------------------------------------------------------------
+; --------------------------------------------------------------
 
 Multifractal_9    { ;  Albrecht Niekamp  170903
 ;p1 (spider)julia-seed
@@ -4556,7 +4554,3 @@ endif
 bo=|z|
 bo<ba
 }
-
-
---------------------------------------------------------------
---------------------------------------------------------------

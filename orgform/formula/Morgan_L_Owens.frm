@@ -1,8 +1,8 @@
-
--------------------------------------------------------------------------------------------------
-
-I've been looking at such "inversion groups" (aka. "kleinian groups") with Fractint:
-
+; 
+; -------------------------------------------------------------------------------------------------
+; 
+; I've been looking at such "inversion groups" (aka. "kleinian groups") with Fractint:
+; 
 6Klein_Group(XYAXIS)  { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                         ; Mon, 20 May 2002 19:38:59
 pi3=pi/3
@@ -37,17 +37,17 @@ ELSE
 ENDIF
 inside}
 
--------------------------------------------------------------------------------------------------
-
-In this example the accumulation points (where the images pile up on each 
-other) all lie on a single circle. This is an accident due to the symmetry 
-of the original mirrors' arrangement. In general, the curve is 
-"nowhere-differentiable" in the jargon of a mid-1960s text where I first 
-came across the subject. Modern terminology would use "fractal".
-
-I've just started on another where each pixel is coloured according to how 
-many reflections a ray starting from that point goes through before 
-escaping the system, but at the moment it's still a bit buggy:
+; -------------------------------------------------------------------------------------------------
+; 
+; In this example the accumulation points (where the images pile up on each 
+; other) all lie on a single circle. This is an accident due to the symmetry 
+; of the original mirrors' arrangement. In general, the curve is 
+; "nowhere-differentiable" in the jargon of a mid-1960s text where I first 
+; came across the subject. Modern terminology would use "fractal".
+; 
+; I've just started on another where each pixel is coloured according to how 
+; many reflections a ray starting from that point goes through before 
+; escaping the system, but at the moment it's still a bit buggy:
 
 threecircles1   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                   ; Mon, 20 May 2002 19:38:59
@@ -196,7 +196,7 @@ endif
 escaped==0
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 threecircles2   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                   ; Mon, 20 May 2002 19:38:59
@@ -336,13 +336,13 @@ endif
 escaped==0
 }
 
--------------------------------------------------------------------------------------------------
-
-...and while we're on the subject of Fractint formulae, can someone explain 
-why it is that it's still possible after all this time for BoF to still 
-contain things that haven't been reproduced in Fractint yet? You'd have 
-thought that the two-dimensional Newton systems described therein would've 
-been:
+; -------------------------------------------------------------------------------------------------
+; 
+; ...and while we're on the subject of Fractint formulae, can someone explain 
+; why it is that it's still possible after all this time for BoF to still 
+; contain things that haven't been reproduced in Fractint yet? You'd have 
+; thought that the two-dimensional Newton systems described therein would've 
+; been:
 
 twodnewton   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                ; Mon, 20 May 2002 19:38:59
@@ -363,9 +363,9 @@ z=nx+flip(ny)
 |oz-z|>.001
 }
 
-(E.g. h=0.5, m=2)
-
--------------------------------------------------------------------------------------------------
+; (E.g. h=0.5, m=2)
+; 
+; -------------------------------------------------------------------------------------------------
 
 3Klein_Group(XAXIS)   { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Thu, 23 May 2002 01:28:28
@@ -389,7 +389,7 @@ elseif(|z-c3|<rr)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 6Klein_Group(XYAXIS)   { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Thu, 23 May 2002 01:28:28
@@ -423,7 +423,7 @@ ELSEIF(|z-c6|<1)
 ENDIF
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 7Klein_Group(XYAXIS)   { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Thu, 23 May 2002 01:28:28
@@ -477,7 +477,7 @@ if(|z-c|<rr)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 Klein_tri_lattice(XYAXIS)   { ; Morgan L. Owens <packrat@nznet.gen.nz>
                               ; Thu, 23 May 2002 01:28:28
@@ -515,7 +515,7 @@ elseif(|z-c4|<rr)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 4movable   { ; Morgan L. Owens <packrat@nznet.gen.nz>
              ; Fri, 24 May 2002 00:19:27
@@ -710,7 +710,7 @@ elseif(|z-p4|<rr4)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 5movable   { ; Morgan L. Owens <packrat@nznet.gen.nz>
              ; Fri, 24 May 2002 01:19:09
@@ -925,10 +925,10 @@ elseif(|z-p5|<rr5)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
-
-The problem is that the order in which pixels are calculated depends 
-critically on the drawing method used. The following formula SHOULD NOT work:
+; -------------------------------------------------------------------------------------------------
+; 
+; The problem is that the order in which pixels are calculated depends 
+; critically on the drawing method used. The following formula SHOULD NOT work:
 
 swatch     { ; Morgan L. Owens <packrat@nznet.gen.nz>
              ; Sat, 25 May 2002 20:27:24
@@ -942,39 +942,39 @@ swatch     { ; Morgan L. Owens <packrat@nznet.gen.nz>
    z
 }
 
-And it won't if you use any drawing method other than (1) or (b).
-
--------------------------------------------------------------------------------------------------
-
-This derives from a problem by Appollonius: Given three circles in the 
-plane, find a fourth circle tangent to the given three. There are eight 
-solutions in general, depending on whether the given circles are to be 
-inside or outside the tangent circle; this one just picks the solution 
-where all three are outside (I'll use imag(p5) to make this configurable 
-later, and figure out which circles need to have negative radii).
-
-Every circle will be tangent to at least one other, and one of the circles 
-will be tangent to the other three - further tangencies are the 
-responsibility of the user.
-
-This was a situation where I wish I had Mathematica to do the algebra for 
-me. I banged my head for several hours, got stuck, went to 
-http://mathworld.wolfram.com/, found that I'd pretty much done that, went 
-back, realised what I was missing (two lines), fixed a coupla typos and the 
-rest fell into place. Exercise for the reader: Solve the Appollonian 
-problem yourself, without peeking at the code or reference materials.
-
-Parameters:
-real(p1), imag(p1), real(p2); centre and radius of first circle
-imag(p2), real(p3), imag(p3); centre and radius of second circle
-real(p4), imag(p4), real(p5); centre and radius of third circle
-
-Like I said, imag(p5) will be getting a use soon. I might also do some 
-extra checking to cope with collinear given circles (i.e., the tangent 
-circle becomes a straight line). I take no responsibility if the first 
-three circles overlap - though the tangent circle is still constructed, I 
-can only invert in one circle at a time, and which one is used in regions 
-of overlap is pretty arbitrary.
+; And it won't if you use any drawing method other than (1) or (b).
+; 
+; -------------------------------------------------------------------------------------------------
+; 
+; This derives from a problem by Appollonius: Given three circles in the 
+; plane, find a fourth circle tangent to the given three. There are eight 
+; solutions in general, depending on whether the given circles are to be 
+; inside or outside the tangent circle; this one just picks the solution 
+; where all three are outside (I'll use imag(p5) to make this configurable 
+; later, and figure out which circles need to have negative radii).
+; 
+; Every circle will be tangent to at least one other, and one of the circles 
+; will be tangent to the other three - further tangencies are the 
+; responsibility of the user.
+; 
+; This was a situation where I wish I had Mathematica to do the algebra for 
+; me. I banged my head for several hours, got stuck, went to 
+; http://mathworld.wolfram.com/, found that I'd pretty much done that, went 
+; back, realised what I was missing (two lines), fixed a coupla typos and the 
+; rest fell into place. Exercise for the reader: Solve the Appollonian 
+; problem yourself, without peeking at the code or reference materials.
+; 
+; Parameters:
+; real(p1), imag(p1), real(p2); centre and radius of first circle
+; imag(p2), real(p3), imag(p3); centre and radius of second circle
+; real(p4), imag(p4), real(p5); centre and radius of third circle
+; 
+; Like I said, imag(p5) will be getting a use soon. I might also do some 
+; extra checking to cope with collinear given circles (i.e., the tangent 
+; circle becomes a straight line). I take no responsibility if the first 
+; three circles overlap - though the tangent circle is still constructed, I 
+; can only invert in one circle at a time, and which one is used in regions 
+; of overlap is pretty arbitrary.
 
 4ApolloKlein1   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                   ; Mon, 27 May 2002 20:04:57
@@ -1035,7 +1035,7 @@ elseif(|z-p|<rr)
 endif
 inside}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 quarterblend_pJJJJ     { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Thu, 30 May 2002 00:58:26
@@ -1058,7 +1058,7 @@ endif
 z=sqr(z)+c
 |z|<=4}
 
-Now we want to index this.  In the same way that Julia sets get indexed by the Mandelbrot:
+; Now we want to index this.  In the same way that Julia sets get indexed by the Mandelbrot:
 
 MLO_Julia {
 z = pixel, c = p1:
@@ -1070,14 +1070,14 @@ z = pixel, c = pixel:
 z = sqr(z) + c, |z| <= 4
 }
 
-It should really read:
+; It should really read:
 
 MLO_Mandelbrot-2 {
 z = 0, c = pixel:
 z = sqr(z) + c, |z| <= 4
 }
 
-So now we can index the quarterblend_pJJJJ formula.
+; So now we can index the quarterblend_pJJJJ formula.
 
 quarterblend_pMJJJ     { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Thu, 30 May 2002 00:58:26
@@ -1100,7 +1100,7 @@ endif
 z=sqr(z)+c
 |z|<=4}
 
-or instead index p1 and p3 simultaneously:
+; or instead index p1 and p3 simultaneously:
 
 quarterblend_pMJMJ     { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Thu, 30 May 2002 00:58:26
@@ -1220,7 +1220,7 @@ c=pixel
 z=sqr(z)+c
 |z|<=4}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 ChaoticDualist1M      { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Sun, 07 Jul 2002 02:06:16
@@ -1231,7 +1231,7 @@ y=imag(z)
 z=1-abs(x-y)+flip(1-abs(x+y-1))
 |z|<=|bailout|}
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 LyapunovMandel        { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Thu, 25 Jul 2002 20:49:19
@@ -1262,7 +1262,7 @@ LyapunovJulia         { ; Morgan L. Owens <packrat@nznet.gen.nz>
   cabs(z0-z1)<bailout
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 SimplePendulumG       { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Tue, 06 Aug 2002 14:48:54
@@ -1289,7 +1289,7 @@ SimplePendulum(Origin) { ; Morgan L. Owens <packrat@nznet.gen.nz>
   |z|<=bailout
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 D3_Man                 { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Wed, 11 Dec 2002 15:07:25
@@ -1315,7 +1315,7 @@ z=nz1+flip(nz2)
 |z-pixel| < 100
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 distortpendulumMG      { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Tue, 14 Jan 2003 19:54:33
@@ -1714,7 +1714,7 @@ Ca10-05   { ; Morgan L. Owens <packrat@nznet.gen.nz>
    bailout<=|z-oz|
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 gaussian_distj     { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Sat, 25 Jan 2003 00:23:32
@@ -2135,7 +2135,7 @@ geometric_distm (XAxis)     { ; Morgan L. Owens <packrat@nznet.gen.nz>
         |z|<bailout
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 
 Quadraticmap     { ; Morgan L. Owens <packrat@nznet.gen.nz>
                          ; Fri, 31 Jan 2003 21:11:05
@@ -2149,5 +2149,5 @@ z=nx+flip(ny)
 |z|<bailout
 }
 
--------------------------------------------------------------------------------------------------
+; -------------------------------------------------------------------------------------------------
 

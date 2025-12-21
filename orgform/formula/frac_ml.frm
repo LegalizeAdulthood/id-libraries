@@ -1325,7 +1325,7 @@ ave8rootcount_m { ; Kerry Mitchell 12feb98
         iter>0
         }
 
-ave8template  ; Kerry Mitchell 13feb98
+ave8template  { ; Kerry Mitchell 13feb98
         ; real(p1) = bailout (try 10)
         ; imag(p1) = unused
         ; real(p2) = inner coloring speed (0 for outer only)
@@ -3986,7 +3986,7 @@ clips (XAXIS) {
   zp = temp, |zp| <= 4 
 }
 
-CmplxNewtghost = { ; Ron Barnett, 1998
+CmplxNewtghost { ; Ron Barnett, 1998
         ; use decomp=256
         ; real(p1) = bailout
         ; imag(p1) = "ghost" adjustment:
@@ -16977,7 +16977,7 @@ Jm_ducks (XAXIS) {; Jm Collard-Richard
   |z|<=tst
 }
 
-JMaskghost = { ; Ron Barnett, 1998
+JMaskghost { ; Ron Barnett, 1998
         ; use decomp=256
         ; real(p1) = bailout
         ; imag(p1) = "ghost" adjustment:
@@ -17209,7 +17209,7 @@ Julia_Ellipse {; Copyright (c) Paul W. Carlson, 1998
     bailout == 0
 }
 
-JuliaBC = { ; Z = Z^E + C
+JuliaBC { ; Z = Z^E + C
   e=p1
   p=real(p2)+PI
   q=2*PI*trunc(p/(2*PI))
@@ -17676,7 +17676,7 @@ bailout=(4*(|p2|<=0)+p2)
 z=lambda=pixel:
 z=lambda*z-lambda/z
 z=lambda*z-lambda*fn1(fn2(z))
-|z|<=bailout}
+|z|<=bailout
 }
 
 Langolier {
@@ -18264,7 +18264,7 @@ Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
     bailout == 0  && |w| < 1.0e20
 }
 
-MandelbrotBC = { ; Z = Z^E + C
+MandelbrotBC { ; Z = Z^E + C
   e=p1
   p=real(p2)+PI
   q=2*PI*trunc(p/(2*PI))
@@ -18381,7 +18381,7 @@ z=p2*((-z)^p3+z^p3)+c,
 |z| <= 250
 }
 
-MandExpGhost = { ; Ron Barnett, 1998  - modified from Kerry Mitchell
+MandExpGhost { ; Ron Barnett, 1998  - modified from Kerry Mitchell
         ;
         ; colors Mandelbrot set by combining the smoothed iteration
         ; with a background of rays from the center
@@ -19703,7 +19703,7 @@ mt_990128f { ;Mark Townsend, 28-01-99
   iter > 0
   }
 
-multifract1 = { ; Ron Barnett, January 1999
+multifract1 { ; Ron Barnett, January 1999
    ; Use decomp = 256 or outside = atan
    ; Use imag(p3) to change the color spread
    zc = z = c = pixel
@@ -25478,7 +25478,7 @@ a = 0:
 		|z| <= 100000
 }
 
-pp2
+pp2 {
   z=z*z+c,
   iter=iter+1
   (|real(z)|) <= bailout

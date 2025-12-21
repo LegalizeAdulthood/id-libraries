@@ -1,27 +1,30 @@
-Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!howland.reston.ans.net!news.sprintlink.net!rjo02.embratel.net.br!usenet
-From: jmarques@embratel.net.br (Jose Marques)
-Newsgroups: sci.fractals
-Subject: BAIL_OUT.FRM  and BAIL_OUT.PAR  for Fractint 19.2
-Date: Fri, 30 Jun 1995 09:50:34 GMT
-Organization: Empresa Brasileira de Telecomunicacoes
-Lines: 283
-Message-ID: <3t0hdn$8nj@rjo02.embratel.net.br>
-NNTP-Posting-Host: 200.255.254.106
-X-Newsreader: Forte Free Agent v0.55
- 
-BAIL_OUT.FRM and BAIL_OUT.PAR were distributed in Dan Goldwater
-FracXtra v. 6.0 collection, but unfortunately the files were corrupt.
-Also some of the images didn't work in the version 19.2 of Fractint.
- 
-I'm posting here the revised and corrected versions of these files.
- 
-I made them when the change of bail_out conditions wasn't yet a
-built-in feature of Fractint. Even so, I think the results are quite
-interesting. Please E-Mail your opinions, and other PAR files based in
-the BAIL_OUT.FRM to Jose Marques - jmarques@embratel.net.br
- 
-cut here:
-8><--------------------------------------------------------------------------------------------------------------
+; Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!howland.reston.ans.net!news.sprintlink.net!rjo02.embratel.net.br!usenet
+; From: jmarques@embratel.net.br (Jose Marques)
+; Newsgroups: sci.fractals
+; Subject: BAIL_OUT.FRM  and BAIL_OUT.PAR  for Fractint 19.2
+; Date: Fri, 30 Jun 1995 09:50:34 GMT
+; Organization: Empresa Brasileira de Telecomunicacoes
+; Lines: 283
+; Message-ID: <3t0hdn$8nj@rjo02.embratel.net.br>
+; NNTP-Posting-Host: 200.255.254.106
+; X-Newsreader: Forte Free Agent v0.55
+;  
+; BAIL_OUT.FRM and BAIL_OUT.PAR were distributed in Dan Goldwater
+; FracXtra v. 6.0 collection, but unfortunately the files were corrupt.
+; Also some of the images didn't work in the version 19.2 of Fractint.
+;  
+; I'm posting here the revised and corrected versions of these files.
+;  
+; I made them when the change of bail_out conditions wasn't yet a
+; built-in feature of Fractint. Even so, I think the results are quite
+; interesting. Please E-Mail your opinions, and other PAR files based in
+; the BAIL_OUT.FRM to Jose Marques - jmarques@embratel.net.br
+;  
+; Jose Marques
+;  
+; jmarques@embratel.internet.br
+;
+
 {
 BAIL_OUT.FRM: Formulas that explore various heterodox ways of testing
 bail_out condition for the classical Mandelbrot set. You won't get the
@@ -42,8 +45,7 @@ z = c = pixel:
   z = z^2 + c
    |fn1(real(z))| <= p1
 }
-bail_out03 (xAxis)  {;xAxis won't do for fn=exp. Use bail_out03exp
-instead
+bail_out03 (xAxis)  {;xAxis won't do for fn=exp. Use bail_out03exp instead
 z = c = pixel:
   z = z^2 + c
    |fn1(imag(z))| <= p1
@@ -98,7 +100,6 @@ z = c = pixel:
      imag(z) <= abs(z) + p1
 }
  
-8><----------------------------------------------------------------------------------------------
 {
 BAIL_OUT.PAR - some batch files to illustrate the formulas in
 BAIL_OUT.FRM
@@ -285,10 +286,3 @@ Spider2_Mandelb    { ; (in his web)
 colors=000CCC<25>zzz<30>IlJHlIHjI<29>WDMXCNWBM<28>101000101<28>VBLWBMXCN\
 YDO<29>yyyzzzyzy<29>IlJHlIGjH<30>000<4>AAA
   }
- 
-8><-------------------------------------------------------------------------------------------------------------------
- 
-Jose Marques
- 
-jmarques@embratel.internet.br
- 

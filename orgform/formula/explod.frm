@@ -1,4 +1,4 @@
-	Here is the Fractint formula file used for explod.gif:
+;	Here is the Fractint formula file used for explod.gif:
 
 j1 {
 	z=pixel, c=p1:
@@ -99,7 +99,7 @@ mfnc {
 	}
 
 
-	Here is the parameter file:
+;	Here is the parameter file:
 
 m1 {
   reset type=formula formulafile=\FRACTINT\explode.frm formulaname=m1

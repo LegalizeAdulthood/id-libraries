@@ -1,15 +1,16 @@
-Path: unixg.ubc.ca!nntp.cs.ubc.ca!newsxfer.itd.umich.edu!sol.ctr.columbia.edu!howland.reston.ans.net!EU.net!sun4nl!news.nic.surfnet.nl!tuegate.tue.nl!blade.stack.urc.tue.nl!robertk
-From: robertk@stack.urc.tue.nl (Robert Klep)
-Newsgroups: alt.binaries.pictures.fractals
-Subject: ROBERT.FRM (for Fractint)
-Date: 22 Feb 1994 10:43:37 GMT
-Organization: MCGV Stack, Eindhoven University of Technology, the Netherlands.
-Lines: 184
-Message-ID: <2kcnkp$ggv@tuegate.tue.nl>
-NNTP-Posting-Host: blade.stack.urc.tue.nl
-X-Newsreader: TIN [version 1.2 PL2]
- 
----------------------------* Cut here *-----------------------------
+; Path: unixg.ubc.ca!nntp.cs.ubc.ca!newsxfer.itd.umich.edu!
+;     sol.ctr.columbia.edu!howland.reston.ans.net!EU.net!sun4nl!
+;     news.nic.surfnet.nl!tuegate.tue.nl!blade.stack.urc.tue.nl!
+;     robertk
+; From: robertk@stack.urc.tue.nl (Robert Klep)
+; Newsgroups: alt.binaries.pictures.fractals
+; Subject: ROBERT.FRM (for Fractint)
+; Date: 22 Feb 1994 10:43:37 GMT
+; Organization: MCGV Stack, Eindhoven University of Technology, the Netherlands.
+; Lines: 184
+; Message-ID: <2kcnkp$ggv@tuegate.tue.nl>
+; NNTP-Posting-Host: blade.stack.urc.tue.nl
+; X-Newsreader: TIN [version 1.2 PL2]
  
 comment {
      These fractal-formulae were created (some probably already exist) by:
@@ -191,5 +192,3 @@ Lyapunov1 (XAXIS) {;
 	value = 1 + p1
 	z = value*z*(1-z)
 	}
- 
- 

@@ -1,12 +1,12 @@
-These FRM's require Fractint 19.5 or higher.
-Screen resolution of 1024x768 or higher should be used.
-For FRM's with slices, screen resolution should be at least 1280x1024.
-The slice FRM's are not intended to be either pseudo high color or
-pseudo true color. Some of the FRM's are from an older version of
-REB008.FRM which have been modified to comply with the new 19.5 parser.
-Email: reb01@gnn.com, 70153.1233@compuserve.com or ron_barnett@msn.com
-Web Page: http://members.gnn.com/reb01/hidden.htm
-Some examples with high slice numbers can be viewed on my web page.
+; These FRM's require Fractint 19.5 or higher.
+; Screen resolution of 1024x768 or higher should be used.
+; For FRM's with slices, screen resolution should be at least 1280x1024.
+; The slice FRM's are not intended to be either pseudo high color or
+; pseudo true color. Some of the FRM's are from an older version of
+; REB008.FRM which have been modified to comply with the new 19.5 parser.
+; Email: reb01@gnn.com, 70153.1233@compuserve.com or ron_barnett@msn.com
+; Web Page: http://members.gnn.com/reb01/hidden.htm
+; Some examples with high slice numbers can be viewed on my web page.
 
 MandJulia   {; p3 will shift the julia set wrt the mandelbrot set
 	; p2 is for the Julia value

@@ -1,4 +1,4 @@
-{ ; REB004E
+REB004E { ; REB004E
   ; Ron Barnett, 1993
   ; floating point required
    z = pixel:

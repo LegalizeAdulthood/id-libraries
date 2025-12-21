@@ -1,4 +1,4 @@
-comment = { ­Mis fractales!.}
+comment { ­Mis fractales!.}
 
 Mac101 {
   bailout = ( 16 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )

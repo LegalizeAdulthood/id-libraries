@@ -44,14 +44,14 @@ MandMand {;
    f=pixel ,z=pixel:
    f=z*z+pixel;
    z=f*f+pixel;
-   |f|<=4}
+   |f|<=4
   }
 MandMnzpwr {;shit xept p1=2 
   ; Note that floating-point is required to make this compute accurately
    f=pixel ,z=pixel:
    f=z^p1+pixel;
    z=f*f+pixel;
-   |f|<=4}
+   |f|<=4
   }
 
 ManzNwt {; 

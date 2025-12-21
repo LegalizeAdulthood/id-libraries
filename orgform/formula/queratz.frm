@@ -16,7 +16,7 @@
    z=(p2+imag(p1)*z*z*conj(z))/(p2+imag(p1)*z*conj(z)),|z|<=10}
 
 
-comment = {3.. ist alles interessante drauf}
+comment {3.. ist alles interessante drauf}
 
 
 

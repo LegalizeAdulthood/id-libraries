@@ -48,6 +48,3 @@ z = c = pixel:
   z = z^2 + c;
    |fn1(real(z))| <= p1  || |fn1(imag(z))| <= p1
 }
-   z = z^2 + c;
-     imag(z) <= abs(z) + p1
-}

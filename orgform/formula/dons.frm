@@ -13,7 +13,7 @@ CGNewtonSinExp (XAXIS) {
         z=z-p1*z2/(cos(z)+z1), .0001 < |z2|
    }
    
-Leeze (XAXIS) = {
+Leeze (XAXIS) {
                        s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 
@@ -23,7 +23,7 @@ FractalFenderC(XAXIS_NOPARM) {
                        z=sqr(z)+pixel,x=|z|,
                        x<=4 }
 
-TSinh (XAXIS) = {
+TSinh (XAXIS) {
         z = c = sinh(pixel):
         z = c ^ z,
         z <= (p1 + 3)
@@ -35,7 +35,7 @@ ScSkLMS(XAXIS) { z = pixel, TEST = (p1+3): z = log(z) - sin(z), |z|<TEST }
 
 ;REB004.FRM - Ron Barnett
 
-REB004A = {; Ron Barnett, 1993
+REB004A {; Ron Barnett, 1993
    z = pixel:
    z =p1*fn1(z) + p1*p1*fn2(p2*z) + pixel, |z| <= 100
    }

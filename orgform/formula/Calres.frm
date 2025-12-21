@@ -30,7 +30,7 @@ htd {; from NOEL.FRM (Noel Griffin)
       zp2 = zp1
       zp1 = p1/temp, (|zp1| <= 64) && (|z| <= huge) }
 
-mfn2fn = {; from KIM.FRM (Kim Best)
+mfn2fn {; from KIM.FRM (Kim Best)
         z=pixel:
         power = fn2(z);
         z = fn1(z)^power + pixel,

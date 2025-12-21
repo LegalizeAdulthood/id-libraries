@@ -280,4 +280,3 @@ RCL_Quaternion_M (XAXIS) { ; Ron Lewen
     a2=savea2
       (a0^2+a1^2+a2^2+a3^2) <= 2
   }
-

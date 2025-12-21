@@ -15,7 +15,7 @@
 ; I would be pleased also about formulas or parameters by anyone else.
 }
 
----------------------------------- formula file anders.frm -------------------------------------
+;---------------------------------- formula file anders.frm -------------------------------------
 
 frm:2lambda32{z=p2,c=pixel:  ;p2<>1<>-1<>0
 (real(z/c)>=imag(p1))*(z=z*(1-z)*c)+(real(z/c)<imag(p1))*(z=z*(1+z)*c),
@@ -105,13 +105,13 @@ z=p1*z+p
 ;SOURCE: s.frm
   }
 
-frm:ULI_2 = { ; As you see, it's not my formula as well
+frm:ULI_2 { ; As you see, it's not my formula as well
       z = Pixel:
       z = fn1(1/fn2(z+p1))
       |z| <= p2
    }
 
------------------------------------- formula file peternew.frm ----------------------------------------------
+;------------------------------------ formula file peternew.frm ----------------------------------------------
 frm:!README!  {
        ;All these formulas are advanced Newton formulas,
        ;more or less, but some may be higly distorted .
@@ -645,7 +645,7 @@ frm:2HalNewSin{z=pixel,root=p1+1,g=p2+1,g2=p3+1:
              z=z-g2*(sin(z)-root)/(cos(z)) ; Newton
              |z-c| >0.000001}
 
--------------------------------------- formula file peterman.frm --------------------------------------------
+;-------------------------------------- formula file peterman.frm --------------------------------------------
 frm:Peter_1A01(XAXIS) { z=p1, c=pixel:
                     z=z*z+c;           
                     |fn1(z)|<real(p2) }
@@ -877,7 +877,7 @@ frm:Mandellike13{ z=fn1(pixel) , c=fn2(pixel) , a=p1 , b=p2 , d=p3:
               z=fn3(z) 
               |z|<100}
 
-------------------------------------- formula file lambda.frm ----------------------------------------
+;------------------------------------- formula file lambda.frm ----------------------------------------
 
 frm:Lambda01 { z=pixel:
 	          z=z*(p1-z),
@@ -995,7 +995,7 @@ frm:AbsLambdaJ4(xaxis){ cx=real(p1),cy=imag(p1),xo=real(pixel),yo=imag(pixel):
                 yo=y;
                 abs(fn1(x*x+y*y))<real(p2)}
 
---------------------------------- formula file halley.frm --------------------------------------------------
+;--------------------------------- formula file halley.frm --------------------------------------------------
 
 frm:Peter_1HalPoly { z=pixel,r=real(p1),g=p2+1:
                         c=z,

@@ -192,8 +192,6 @@ splash_1     {  ; Basic data : FractMask08
   phc_bailout
   }
 
-------------------------------------------start-frm------------------------
-
 Multifractal_ni    { ;  Albrecht Niekamp  24.03.2003 
                      ;  <Albrecht.Niekamp@t-online.de> 
 d=real(p2)
@@ -494,79 +492,79 @@ endif
 bo<=ba
 }
 
-===============================frm-file===============================
-Multifractal_10 Inputs
-----------------------
-
-Real P2
-  First Input (before the dot)
-    5 Digits : Channels : 1_Basic Shape 2_Outside  3_Inside1 4_Inside2
-Inside3
-     Frms: 1_Secant  2_Mandel(2) 3_Bees 4_Julia 5_Many Mods 6_Phoenix
-7_Newton 8_Spider
-  Second Input (after the dot)
-    2 Digits_Many Mods_Number of sides 2 Digits_Phoenix 2 Digits_Spider
-    1 Digit_Reset on Transitions (Shape) 0_no 1_Dble Mandel 2_Iter-reset
-3_both +5_warp
-    4 Digits_Reset Channels 2-5          0_no 1_z-reset 2_Iter-reset 3_both
-+5_warp
-
-Imag P2
-  First Input
-    5 Digits_Colour (Bailout) Number for each channel (5 available)
-  Second Input
-    Variables : 4 Digits_Mand/Jul (2 var)  2 Digits_Secant 4 Digits_Bees
-
-Real P3
-  First Input
-    2 Digits_Newtonvariable 4 Digits_Colour1
-  Second Input
-    5 Digits_Colour2  5 Digits_Colour3
-
-Imag P3
-   First Input
-     Basic Shape : Warp-factor (fn1 is used)
-   Second Input
-     5 Digits_Colour4  6 Digits_Colour5
-
-Real P4
-    First Input
-      Outside : Warp-factor (fn2 is used)
-    Second Input
-      Outside : 4 Digits+1fractal digit_Border-out  4 Digits+1
-fractaldigit_Border-in
-
-Imag P4
-     First Input
-       Inside1_Maxiter
-     Second Input
-       Inside1 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
-+5_maxiter+border
-                 5 Digits_warp factor (fn2 is used) 4 Digits+1
-fractaldigit_border1
-
-Real P5
-     First Input
-        Inside2_Maxiter
-     Second Input
-        Inside2 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
-+5_maxiter+border
-                  5 Digits_warp factor (fn3 is used) 4 Digits+1
-fractaldigit_border2
-
-Imag P5
-     First Input
-        Inside3_Maxiter
-     Second Input
-        Inside3 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
-+5_maxiter+border
-                  5 Digits_Warp factor (fn4 is used) 4 Digits+1 fractal
-digit_border3
-   Alternate Input Imag P5
-      First Input  :  1_Lake effect enabled (Inside3 disabled)
-      Second Input :  2 Digits_Frequency 2 Digits_Waterlevel 2
-Digits_Amplitude
-
+; ===============================frm-file===============================
+; Multifractal_10 Inputs
+; ----------------------
+; 
+; Real P2
+;   First Input (before the dot)
+;     5 Digits : Channels : 1_Basic Shape 2_Outside  3_Inside1 4_Inside2
+; Inside3
+;      Frms: 1_Secant  2_Mandel(2) 3_Bees 4_Julia 5_Many Mods 6_Phoenix
+; 7_Newton 8_Spider
+;   Second Input (after the dot)
+;     2 Digits_Many Mods_Number of sides 2 Digits_Phoenix 2 Digits_Spider
+;     1 Digit_Reset on Transitions (Shape) 0_no 1_Dble Mandel 2_Iter-reset
+; 3_both +5_warp
+;     4 Digits_Reset Channels 2-5          0_no 1_z-reset 2_Iter-reset 3_both
+; +5_warp
+; 
+; Imag P2
+;   First Input
+;     5 Digits_Colour (Bailout) Number for each channel (5 available)
+;   Second Input
+;     Variables : 4 Digits_Mand/Jul (2 var)  2 Digits_Secant 4 Digits_Bees
+; 
+; Real P3
+;   First Input
+;     2 Digits_Newtonvariable 4 Digits_Colour1
+;   Second Input
+;     5 Digits_Colour2  5 Digits_Colour3
+; 
+; Imag P3
+;    First Input
+;      Basic Shape : Warp-factor (fn1 is used)
+;    Second Input
+;      5 Digits_Colour4  6 Digits_Colour5
+; 
+; Real P4
+;     First Input
+;       Outside : Warp-factor (fn2 is used)
+;     Second Input
+;       Outside : 4 Digits+1fractal digit_Border-out  4 Digits+1
+; fractaldigit_Border-in
+; 
+; Imag P4
+;      First Input
+;        Inside1_Maxiter
+;      Second Input
+;        Inside1 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
+; +5_maxiter+border
+;                  5 Digits_warp factor (fn2 is used) 4 Digits+1
+; fractaldigit_border1
+; 
+; Real P5
+;      First Input
+;         Inside2_Maxiter
+;      Second Input
+;         Inside2 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
+; +5_maxiter+border
+;                   5 Digits_warp factor (fn3 is used) 4 Digits+1
+; fractaldigit_border2
+; 
+; Imag P5
+;      First Input
+;         Inside3_Maxiter
+;      Second Input
+;         Inside3 : 1 Digit_Transition: 1_maxiter 2_borderout 3_borderin
+; +5_maxiter+border
+;                   5 Digits_Warp factor (fn4 is used) 4 Digits+1 fractal
+; digit_border3
+;    Alternate Input Imag P5
+;       First Input  :  1_Lake effect enabled (Inside3 disabled)
+;       Second Input :  2 Digits_Frequency 2 Digits_Waterlevel 2
+; Digits_Amplitude
+; 
 
 Multifractal_10      { ;  Albrecht Niekamp  Jan, 2005 
                        ;  <Albrecht.Niekamp@t-online.de> 
@@ -1124,8 +1122,6 @@ bo<ba
 }
 
 
----------------------------------start-frm---------------------------------
-
 MFRSPECIAL_2       { ; Albrecht.Niekamp@t-online.de
                      ; Wed, 16 Feb 2005 08:54:52
                      ; buggy formula - dont copy
@@ -1306,5 +1302,3 @@ else
 endif
 bo<=ba
 }
------------------------------------------end--------------------------------
-

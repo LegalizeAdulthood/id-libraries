@@ -1,5 +1,3 @@
-
-
 01-Carr{
 c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
 z=sqr(z) + c;
@@ -17860,5 +17858,3 @@ Carr3102 (YAXIS)  {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: c3102.frm
 }
-
-

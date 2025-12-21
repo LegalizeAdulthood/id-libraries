@@ -15,7 +15,7 @@ ikenagaoriginal {; Ron Barnett, 1994
 	z = z*z*z + (c - 1)*z - c, |z|<=100
       }
 
-JMask2 = {      ; Ron Barnett, 1995      
+JMask2 {      ; Ron Barnett, 1995      
       z = fn1(pixel):
       z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3, |z| <= 4
    }
@@ -27,12 +27,12 @@ sjjulike01 {; Ron Barnett, 1995
 	z = z*z*z + (c - 1)*z - c, |z|<=100
       }
 
-   Cubicfn = {; Ron Barnett, 1995
+   Cubicfn {; Ron Barnett, 1995
    z = c = pixel:
    z = fn1((z-1)*(z-1)*(z+1)) - c*P1 + P2; |z| <= 4
    }
 
-Phoenix = {; Ron Barnett, 1993
+Phoenix {; Ron Barnett, 1993
 	   ; This is an old formula of mine which
 	   ; predates the current formuala in Fractint
 	   ; The Fractint formula won't generate the

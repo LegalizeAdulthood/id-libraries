@@ -7339,7 +7339,7 @@ August {; Sylvie Gallet, Dec 1997
 }
 
 
-Automatic(XAXIS) = {
+Automatic(XAXIS) {
   c = z = pixel:
   temp=z
   z=(fn1(z)/fn2(z))*z + c

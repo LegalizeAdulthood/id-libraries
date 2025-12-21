@@ -1,16 +1,18 @@
-Path: unixg.ubc.ca!news.bc.net!news.mic.ucla.edu!library.ucla.edu!europa.eng.gtefsd.com!newsxfer.itd.umich.edu!gatech!howland.reston.ans.net!swiss.ans.net!prodigy.com!usenet
-From: XKBR53C@prodigy.com (CHRIS BEHRENS )
-Newsgroups: sci.fractals
-Subject: Re: Fractal Formulas
-Date: 28 Nov 1994 23:58:24 GMT
-Organization: Prodigy Services Company  1-800-PRODIGY
-Lines: 24
-Distribution: world
-Message-ID: <3bdqr0$n9i@usenetw1.news.prodigy.com>
-NNTP-Posting-Host: inugap2.news.prodigy.com
-X-Newsreader: Version 1.2
- 
-Here are the formulas, then:
+; Path: unixg.ubc.ca!news.bc.net!news.mic.ucla.edu!library.ucla.edu!
+;     europa.eng.gtefsd.com!newsxfer.itd.umich.edu!gatech!
+;     howland.reston.ans.net!swiss.ans.net!prodigy.com!usenet
+; From: XKBR53C@prodigy.com (CHRIS BEHRENS )
+; Newsgroups: sci.fractals
+; Subject: Re: Fractal Formulas
+; Date: 28 Nov 1994 23:58:24 GMT
+; Organization: Prodigy Services Company  1-800-PRODIGY
+; Lines: 24
+; Distribution: world
+; Message-ID: <3bdqr0$n9i@usenetw1.news.prodigy.com>
+; NNTP-Posting-Host: inugap2.news.prodigy.com
+; X-Newsreader: Version 1.2
+;  
+; Here are the formulas, then:
  
 Flattop {
       c = z = pixel:
@@ -26,58 +28,60 @@ Rabadon {
           |real(z)| <=8;
     }
  
-The only caution is that Rabadon sometimes won't work- I have 
-occasionally gotten a division by zero error. Have fun.
- 
--
-Chris Behrens
-xkbr53c@prodigy.com
- 
- 
-
-Path: unixg.ubc.ca!unixg.ubc.ca!news.mic.ucla.edu!nntp.club.cc.cmu.edu!godot.cc.duq.edu!news.duke.edu!news.mathworks.com!uunet!news.sprintlink.net!cs.utexas.edu!news.cs.utah.edu!news.cc.utah.edu!u.cc.utah.edu!kb9727
-From: kb9727@u.cc.utah.edu (Kim Best)
-Newsgroups: sci.fractals
-Subject: Fractint Par
-Date: 10 Feb 1995 21:33:02 GMT
-Organization: University Of Utah Computer Center
-Lines: 106
-Message-ID: <3hgm2e$9c7@news.cc.utah.edu>
-NNTP-Posting-Host: u.cc.utah.edu
-X-Newsreader: TIN [version 1.2 PL2]
- 
-A few more formulas and parameter files, I have had interesting results with.
+; The only caution is that Rabadon sometimes won't work- I have 
+; occasionally gotten a division by zero error. Have fun.
+;  
+; -
+; Chris Behrens
+; xkbr53c@prodigy.com
  
  
-mfn2fn = {
+; Path: unixg.ubc.ca!unixg.ubc.ca!news.mic.ucla.edu!nntp.club.cc.cmu.edu!
+;     godot.cc.duq.edu!news.duke.edu!news.mathworks.com!uunet!
+;     news.sprintlink.net!cs.utexas.edu!news.cs.utah.edu!news.cc.utah.edu!
+;     u.cc.utah.edu!kb9727
+; From: kb9727@u.cc.utah.edu (Kim Best)
+; Newsgroups: sci.fractals
+; Subject: Fractint Par
+; Date: 10 Feb 1995 21:33:02 GMT
+; Organization: University Of Utah Computer Center
+; Lines: 106
+; Message-ID: <3hgm2e$9c7@news.cc.utah.edu>
+; NNTP-Posting-Host: u.cc.utah.edu
+; X-Newsreader: TIN [version 1.2 PL2]
+;  
+; A few more formulas and parameter files, I have had interesting results with.
+;  
+ 
+mfn2fn {
 	z=pixel:
 	power = fn2(z);
 	z = fn1(z)^power + pixel,
 	|z| < p2
 	}
  
-jfn2fn = {
+jfn2fn {
 	z=pixel:
 	power = fn2(z);
 	z = fn1(z)^power + p1,
 	|z| < p2
 	}
  
-jtofn = {
+jtofn {
 	z=pixel:
 	power = fn2(z);
 	z = z^power + p1,
 	|z| < p2
 	}
  
-mtofn = {
+mtofn {
 	z=pixel:
 	power = fn2(z);
 	z = z^power + pixel,
 	|z| < p2
 	}
  
-Now some parameters to use with these functions...
+; Now some parameters to use with these functions...
  
  
 log2sqr            { ; A Section of the Mandelbrot set for the formula
@@ -144,42 +148,44 @@ Vines              { ; Bizarre Alien Plant life from a
   <43>0U0m00Y3uZ2t
   }
  
-Hope you enjoy these, please send in your own.
- 
---
-Kim Best                                  *************************
-                                          *      Origamist        *
-Rocky Mountain Cancer Data System         *  Are good with thier  *
-420 Chipeta Way #120                      *        Hands          *
-Salt Lake City, Utah  84108               *************************
-
-Path: unixg.ubc.ca!unixg.ubc.ca!news.bc.net!news.mic.ucla.edu!library.ucla.edu!agate!newsxfer.itd.umich.edu!news.itd.umich.edu!PM012-00.dialip.mich.net!asdalton
-From: asdalton@umich.edu (Andrew Dalton)
-Newsgroups: sci.fractals
-Subject: organic structures-- .par file
-Date: Sun, 12 Feb 1995 11:28:46
-Organization: University of Michigan
-Lines: 86
-Message-ID: <asdalton.85.000B7B1C@umich.edu>
-NNTP-Posting-Host: pm012-00.dialip.mich.net
-X-Newsreader: Trumpet for Windows [Version 1.0 Rev A]
- 
-I am interested in the ways that fractals relate to living organisms, 
-and I have found some surprising structures in the Mandelbrot set (and its 
-accompanying Julia sets).  As far as I know, all of these are original except 
-for the octopus.
- 
-All of the flower structures have realistic phyllotaxis.  For those of you 
-who do not know, phyllotaxis involves the ways that plants arrange their 
-leaves and petals.  These tend to be arranged in spiral bands whose numbers 
-are adjacent numbers in the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, ...) 
-which is the most efficient arrangement, as one might expect in living 
-organisms.  "Cauliflower" looks just like the real thing; the real plant has 
-not only 8,5 phyllotaxis but also repeated self-similarity.
- 
-Most of these fractals can be generated fairly quickly, except for the 
-sunflowers.  "Sunflower2" took 5 hours to complete on a 486SX/25.  
- 
+; Hope you enjoy these, please send in your own.
+;  
+; --
+; Kim Best                                  *************************
+;                                           *      Origamist        *
+; Rocky Mountain Cancer Data System         *  Are good with thier  *
+; 420 Chipeta Way #120                      *        Hands          *
+; Salt Lake City, Utah  84108               *************************
+
+; Path: unixg.ubc.ca!unixg.ubc.ca!news.bc.net!news.mic.ucla.edu!
+;     library.ucla.edu!agate!newsxfer.itd.umich.edu!news.itd.umich.edu!
+;     PM012-00.dialip.mich.net!asdalton
+; From: asdalton@umich.edu (Andrew Dalton)
+; Newsgroups: sci.fractals
+; Subject: organic structures-- .par file
+; Date: Sun, 12 Feb 1995 11:28:46
+; Organization: University of Michigan
+; Lines: 86
+; Message-ID: <asdalton.85.000B7B1C@umich.edu>
+; NNTP-Posting-Host: pm012-00.dialip.mich.net
+; X-Newsreader: Trumpet for Windows [Version 1.0 Rev A]
+;  
+; I am interested in the ways that fractals relate to living organisms, 
+; and I have found some surprising structures in the Mandelbrot set (and its 
+; accompanying Julia sets).  As far as I know, all of these are original except 
+; for the octopus.
+;  
+; All of the flower structures have realistic phyllotaxis.  For those of you 
+; who do not know, phyllotaxis involves the ways that plants arrange their 
+; leaves and petals.  These tend to be arranged in spiral bands whose numbers 
+; are adjacent numbers in the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, ...) 
+; which is the most efficient arrangement, as one might expect in living 
+; organisms.  "Cauliflower" looks just like the real thing; the real plant has 
+; not only 8,5 phyllotaxis but also repeated self-similarity.
+;  
+; Most of these fractals can be generated fairly quickly, except for the 
+; sunflowers.  "Sunflower2" took 5 hours to complete on a 486SX/25.  
+;  
  
 Octopus            { ; Mandelbrot zoom
   reset type=mandel passes=2
@@ -240,13 +246,13 @@ Shell1             { ; Mandelbrot zoom
  
  
  
--		Andrew Dalton
--		asdalton@umich.edu
---
----		"Faith, n. Belief without evidence in what is told by one who
------		speaks without knowledge, of things without parallel."
---------						--Ambrose Bierce
--------------
----------------------
-----------------------------------
--------------------------------------------------------
+; -		Andrew Dalton
+; -		asdalton@umich.edu
+; --
+; ---		"Faith, n. Belief without evidence in what is told by one who
+; -----		speaks without knowledge, of things without parallel."
+; --------						--Ambrose Bierce
+; -------------
+; ---------------------
+; ----------------------------------
+; -------------------------------------------------------
