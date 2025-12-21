@@ -54,27 +54,18 @@ def validate_parameter_file(filename, quiet=False):
             line_num += 1
             continue
         
-        # Check if this is the start of a parameter set entry
-        # Pattern: optional whitespace, name (zero or more characters excluding {),
-        # optional whitespace, open brace
-        # Name can be empty (comment entry), contain spaces, with leading/trailing spaces stripped
-        match = re.match(r'^(\s*)(.*?)(\s*)(\{)(.*)$', line)
-        
-        if not match:
-            errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
+        # Check if this line contains an opening brace
+        if '{' not in line:
             line_num += 1
             continue
         
-        # Extract name and validate it doesn't contain {
-        param_name = match.group(2).strip()
-        # Empty name is valid (comment entry)
-        if param_name and '{' in param_name:
-            errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
-            line_num += 1
-            continue
+        # Extract the parameter set name by working backwards from the opening brace
+        brace_pos = line.index('{')
+        before_brace = line[:brace_pos]
+        after_brace = line[brace_pos + 1:]
         
-        # Found a parameter set entry
-        after_brace = match.group(5)
+        # Strip leading and trailing whitespace
+        param_name = before_brace.strip()
         
         # Check if the closing brace is on the same line (single-line parameter set)
         if '}' in after_brace:

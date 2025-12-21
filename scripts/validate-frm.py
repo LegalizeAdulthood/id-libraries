@@ -54,30 +54,24 @@ def validate_formula_file(filename, quiet=False):
             line_num += 1
             continue
         
-        # Check if this is the start of a formula entry
-        # Pattern: optional whitespace, name (zero or more characters excluding { ( [ and =),
-        # optional = operator, optional whitespace,
-        # optional symmetry (parentheses), optional whitespace,
-        # optional parameters (square brackets), optional whitespace,
-        # open brace
-        # Name can be empty (comment entry), contain spaces, with leading/trailing spaces stripped
-        match = re.match(r'^(\s*)(.*?)(\s*)(=)?(\s*)(?:(\([^)]*\))(\s*))?(?:(\[[^\]]*\])(\s*))?(\{)(.*)$', line)
-        
-        if not match:
-            errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
+        # Check if this line contains an opening brace
+        if '{' not in line:
             line_num += 1
             continue
         
-        # Extract name and validate it doesn't contain {, (, [, or =
-        formula_name = match.group(2).strip()
-        # Empty name is valid (comment entry)
-        if formula_name and ('{' in formula_name or '(' in formula_name or '[' in formula_name or '=' in formula_name):
-            errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
-            line_num += 1
-            continue
+        # Extract the formula name by working backwards from the opening brace
+        brace_pos = line.index('{')
+        before_brace = line[:brace_pos]
+        after_brace = line[brace_pos + 1:]
         
-        # Found a formula entry
-        after_brace = match.group(11)
+        # Strip any trailing square bracket surrounded text (parameters)
+        name = re.sub(r'\[[^\]]*\]\s*$', '', before_brace)
+        
+        # Strip any trailing parentheses surrounded text (symmetry)
+        name = re.sub(r'\([^)]*\)\s*$', '', name)
+        
+        # Strip leading and trailing whitespace
+        formula_name = name.strip()
         
         # Check if the closing brace is on the same line (single-line formula)
         if '}' in after_brace:
