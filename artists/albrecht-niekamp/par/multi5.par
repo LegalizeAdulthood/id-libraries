@@ -1,0 +1,324 @@
+multi04x           { ; Insideworld
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_204f function=exp passes=t
+  center-mag=-0.99816535334584000/+0.27347839866555330/42.19409
+  params=768/1024/128/512 float=y maxiter=2048 inside=maxiter
+  outside=tdis periodicity=0
+  colors=200<24>o00q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>B\
+  BB999777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<2\
+  4>oiQqjRslS<3>zsX<31>000
+  }
+
+multi04xa          { ; First zoom
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_204f function=exp passes=t
+  center-mag=-0.99215759849906070/+0.28142452043369340/310.2507
+  params=768/1024/128/512 float=y maxiter=2048 inside=maxiter
+  outside=tdis periodicity=0
+  colors=2000Uc<13>09C08A068<2>022000111<24>niQpjRrlS<3>ysX<25>BB7996775<3\
+  >000<24>n00p00r00<3>y00<25>B00900700<2>100000011<24>hiiijjkll<3>rss<25>A\
+  BB899677<2>122000012<24>0bo0cq0es<2>0jy0kz0jy<9>0We
+  }
+
+multi04xb          { ; Second zoom
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_204f function=exp passes=t
+  center-mag=-1.00006253908692800/+0.28063386155129140/843.8819
+  params=1536/2048/512/1024 float=y maxiter=4096 inside=maxiter
+  periodicity=0
+  colors=2000gu0hw0jy0kz<25>09C08A068<2>022000211<22>keOmgPoiQqjRslSunT<2>\
+  zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<23>eeegg\
+  giiijjjlllnnn<2>sss<21>IIIGGGFFF<3>777555444222000<27>0es
+  }
+
+multi04xc          { ; Inoutkey
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_204f function=exp passes=t
+  center-mag=-0.99967796372118100/+0.28089082568746140/84388.19
+  params=1536/2048/512/868 float=y maxiter=2048 inside=maxiter
+  periodicity=0
+  colors=200777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000\
+  211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A0\
+  0800<3>000<25>iiijjjlll<3>sss<26>999
+  }
+
+multi218           { ; Mandjulin
+                     ;  Albrecht Niekamp frb,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_218 function=exp/sin passes=t
+  center-mag=-0.114536/0.775646/7.751938
+  params=768/2048/128/512/-0.5/0.375 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=200sss<25>BBB999777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<24>09C08\
+  A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3\
+  >z00<25>C00A00800<3>000<30>rrr
+  }
+
+multi218a          { ; Mandjulin_inside-iter
+                     ; Albrecht Niekamp feb,03
+                     ; Mandel with Julia inside
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_218 function=exp/sin passes=t
+  center-mag=-0.114536/0.775646/7.751938
+  params=768/2048/128/512/-0.5/0.375 float=y maxiter=1024
+  inside=maxiter periodicity=0
+  colors=200554<22>iihjjillk<3>ssr<25>BBA998776<2>221000011<24>0bn0cp0er<2\
+  >0jx0ky0jx<24>09B089067<2>021000210<24>oiPqjQslR<3>zsW<25>CB6A95874<3>00\
+  0400<23>o00q00s00<3>z00<25>C00A00800<3>000110332
+  }
+
+multi218b          { ; Mandjulin_3
+                     ; Albrecht Niekamp feb,03
+                     ; inside tdis
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_218a function=exp/sin passes=t
+  center-mag=-0.550344/3.33067e-016/0.8503401
+  params=768/2048/256/512/-0.5/0.375 float=y maxiter=2048
+  inside=maxiter outside=tdis logmap=yes periodicity=0
+  colors=200G00<4>600<2>000<25>iiijjjlll<3>sss<25>BBB999777<2>222000012<24\
+  >0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB\
+  7A96875<3>000400<23>o00q00s00<3>z00<22>I00
+  }
+
+multi219a          { ; Inside Exp-Julia
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_219a function=exp/exp passes=t
+  center-mag=-1.00313/0.18015/5.464481
+  params=1024/4094/256/512/0.5/-0.375 float=y maxiter=2048
+  inside=maxiter outside=tdis periodicity=0
+  colors=200G00<4>600<2>000<25>iiijjjlll<3>sss<25>BBB999777<2>222000012<24\
+  >0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB\
+  7A96875<3>000400<23>o00q00s00<3>z00<22>I00
+  }
+
+multi219c          { ; Mandel Machine
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_219c function=exp/exp passes=t
+  center-mag=-0.597874/2.22045e-016/0.8912656
+  params=1024/4094/256/512/0.25/0 float=y maxiter=2048 inside=maxiter
+  outside=tdis logmap=yes periodicity=0
+  colors=200ggg<3>nnnppprrrsss<25>BBB999777<2>222000012<24>0bo0cq0es<2>0jy\
+  0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400\
+  <23>o00q00s00<3>z00<25>C00A00800<3>000<23>eee
+  }
+
+multi219d          { ; Machinehead
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_219d function=exp/exp passes=t
+  center-mag=0.411007/0.347039/21.09705
+  params=1024/4094/256/512/-0.125/-0.375 float=y maxiter=2048
+  inside=maxiter outside=tdis periodicity=0
+  colors=200SSS<9>iiijjjlll<3>sss<25>BBB999777<2>222000012<24>0bo0cq0es<2>\
+  0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000\
+  400<23>o00q00s00<3>z00<25>C00A00800<3>000<14>QQQ
+  }
+
+multi220a          { ; Upandaway
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_220a function=exp/exp passes=t
+  center-mag=0.237659/0/0.6666667/1/-90/3.88578058618804789e-016
+  params=1024/4094/256/512/0.25/0 float=y maxiter=2048 inside=maxiter
+  outside=tdis logmap=6 periodicity=0
+  colors=2000FK<15>0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqj\
+  RslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<2\
+  5>iiijjjlll<3>sss<25>BBB999777<2>222000012<7>0DI
+  }
+
+multi224           { ; Julia Inside Julmandmix
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_224 function=exp/exp passes=t
+  center-mag=0/0/0.6666667 params=1024/4094/512/128/1/0.35 float=y
+  maxiter=2048 inside=maxiter outside=tdis periodicity=0
+  colors=200FFF<16>iiijjjlll<3>sss<25>BBB999777<2>222000012<24>0bo0cq0es<2\
+  >0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>00\
+  0400<23>o00q00s00<3>z00<25>C00A00800<3>000<7>EEE
+  }
+
+multi228           { ; Exp_Julia Inside Exp_Mandel
+                     ; Albrecht Niekamp feb,03
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_228 function=sin passes=t
+  center-mag=+0.39608993157380220/-0.83683232220897840/253.449/1.0522
+  params=1024/4094/512/256/1/0.25 float=y maxiter=2048 inside=maxiter
+  outside=tdis periodicity=0
+  colors=2000Sa<6>0bo0cq0es<3>0kz<25>09C08A068<2>022000211<22>keOmgPoiQqjR\
+  slSunT<2>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000\
+  <23>eeegggiiijjjlllnnn<2>sss<25>BBB999777<2>222000012<16>0R_
+}
+
+multi215a          {
+                     ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_215 function=exp passes=t
+  center-mag=-2.03179/-1.51345/6.666667/1/-90/3.88578058618804789e-016
+  params=768/1024/512/245/0.75/0.375 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=000<39>000000000<2>000000230<11>010010010<3>000JA4<7>fcOigRljT<3>\
+  yzc<9>TOFQKDNGA<3>900<9>e0Ch0Dk0F<3>y0K<6>Y0EU0DQ0C<3>908004000<26>000<4\
+  >000204<8>W0aZ0db0h<3>o0w<4>Z0dW0aT0Y<2>J0NG0JF0ND1R<3>6UX5`Z3h_1oa0wc<6\
+  >0eQ0cO0`M<3>1RE2OC2LA<2>3D3<17>jkalmcooe<3>ywm<6>bYO_UKXQG<3>JA0000<2>0\
+  00
+  }
+
+multi215n          {
+                     ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_215 function=exp passes=t
+  center-mag=-2.09534081704507600/-1.48092557848655600/133.3333/1/-90/3.88\
+  578058618804789e-016 params=768/1024/512/245/0.75/0.375 float=y
+  maxiter=1024 inside=maxiter outside=tdis periodicity=0
+  colors=000<39>000000000<2>000000230<11>010010010<3>000JA4<7>fcOigRljT<3>\
+  yzc<9>TOFQKDNGA<3>900<9>e0Ch0Dk0F<3>y0K<6>Y0EU0DQ0C<3>908004000<26>000<4\
+  >000204<8>W0aZ0db0h<3>o0w<4>Z0dW0aT0Y<2>J0NG0JF0ND1R<3>6UX5`Z3h_1oa0wc<6\
+  >0eQ0cO0`M<3>1RE2OC2LA<2>3D3<17>jkalmcooe<3>ywm<6>bYO_UKXQG<3>JA0000<2>0\
+  00
+  }
+
+multi215k          {
+                     ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_215 function=exp passes=t
+  center-mag=-0.648135/-3.77476e-015/0.6666667/1/-90/3.88578058618804789e-\
+  016 params=768/1024/512/245/0.75/0.375 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=000<3>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h\
+  _2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>00\
+  0<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f\
+  0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<27>000
+  }
+
+multi215i          {
+                     ;  Albrecht Niekamp mar,03
+                     ;  
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_215 function=exp passes=t
+  center-mag=-0.648135/-3.77476e-015/0.6666667/1/-90/3.88578058618804789e-\
+  016 params=512/1000/512/128/-0.5/-0.75 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=200022000<25>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3\
+  >z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB999777<2>222000012<24>0\
+  bo0cq0es<2>0jy0kz0jy<28>034
+  }
+
+multi209b          {
+                     ;  Albrecht Niekamp mar,03
+                     ;  
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_209 function=exp passes=t
+  center-mag=-0.482802/0.212677/13.33333
+  params=768/2048/512/128/1/-0.375 float=y maxiter=2048 inside=period
+  outside=tdis periodicity=-255
+  colors=000<21>000000000<2>000111333<27>oooqqqsss<2>xxxzzzyyy<25>CCCAAA88\
+  8<2>222000000<56>000000000<2>000111332<23>ldTnfUpgV<3>xn_<27>A8687565444\
+  3222000<30>000
+  }
+
+multi204p          {
+                     ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_204c function=cos passes=t
+  center-mag=-0.08885115971914448/+0.96285879974181270/6.127336e+010/1/-90\
+  /3.88578058618804789e-016 params=768/128/32/512 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=200UUU<8>iiijjjlll<3>sss<25>BBB999777<2>222000012<24>0bo0cq0es<2>\
+  0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000\
+  400<23>o00q00s00<3>z00<25>C00A00800<3>000<15>SSS
+  }
+
+multi204o          { 
+                   ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_204c function=cos passes=t
+  center-mag=-0.08885119171501621/+0.96285883757769040/2.083294e+007/1/-90\
+  /3.88578058618804789e-016 params=512/128/32/512 float=y maxiter=1024
+  inside=maxiter outside=tdis periodicity=0
+  colors=200YYY<12>BBB999777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<24>09C08\
+  A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3\
+  >z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<11>ZZZ
+  }
+
+multi204xd         {
+                     ;  Albrecht Niekamp mar,03
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_204f function=exp passes=t
+  center-mag=-1.00006253908692800/+0.28063386155129140/843.8819
+  params=1536/2048/512/1024 float=y maxiter=4096 inside=maxiter
+  periodicity=0
+  colors=2000`m<3>0gu0hw0jy0kz<25>09C08A068<2>022000211<22>keOmgPoiQqjRslS\
+  unT<2>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<23\
+  >eeegggiiijjjlllnnn<2>sss<21>IIIGGGFFF<3>777555444222000<23>0_k
+  }
+
+multi204xe         {
+                   ;  Albrecht Niekamp mar,03           
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_204f function=exp passes=t
+  center-mag=-0.99985701064222820/+0.28033736448566030/9812.58
+  params=768/2048/512/512 float=y maxiter=4096 inside=maxiter
+  periodicity=0
+  colors=0000Of<3>0Tn0Up4Yr8atCgvGkxKqz<3>4_s0Vq0Uo<12>0FQ0DO0DM<3>08E06C0\
+  6A048046024012000100<12>R0LT0NV0PX0P<3>d0Wf0Yh0Z<3>p0e<3>xOtzUxyOuwIquCn\
+  s6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<3>304102010<4>0B10D10F1\
+  0H20J20L20N2<2>0T40V40X3<3>0d40f50h5<3>0p6<3>WxZczeUyY<2>0s8<4>0i60g60e6\
+  0c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221532653863A84DA5EB5HB<2>\
+  7NG8PI8RJ9TKAVNAXM<3>DdTDfVEhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkX\
+  FiX<5>BYOAWMAUL9SK<4>6IC5GB5DA<3>254243121000001023025047049<5>0BL0DN0DP\
+  <4>0KZ0L`0Mb0Nd
+  }
+
+multi204xm         { ; Inandoutkey outside tdis
+                     ;  Albrecht Niekamp mar,03
+                    
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=multifrac_204f function=exp passes=t
+  center-mag=-0.99967796372118100/+0.28088973853155410/84388.19
+  params=1536/2048/512/868 float=y maxiter=2048 inside=maxiter
+  outside=tdis periodicity=0
+  colors=936dZ`<63>I45I44H34H33H23G22<2>C24A3573764844925A<119>uuxuuxvvy<2\
+  >wwzwwzvvy<49>dZ`
+  }
+
+multi218d          { ; Mandjulin4
+                     ;  Albrecht Niekamp mar,03              
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_218a function=exp/sin passes=t
+  center-mag=-0.550344/3.33067e-016/0.8503401
+  params=768/2048/128/513/-0.5/0.375 float=y maxiter=1024
+  inside=maxiter outside=tdis logmap=3 periodicity=0
+  colors=20008A<3>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o0\
+  0q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB999777<2>22200\
+  0012<24>0bo0cq0es<2>0jy0kz0jy<24>09C
+  }
+
+multi220d          { ; Upandaway_2
+                     ;  Albrecht Niekamp mar,03                   
+  reset=2002 type=formula formulafile=multi5.frm
+  formulaname=Multifrac_220a function=exp/trunc passes=t
+  center-mag=-0.266157/-7.77156e-016/0.9914733/1/-90/-1.23373533611470521e\
+  -014 params=1024/4094/256/512/0.25/0 float=y maxiter=2048
+  inside=maxiter outside=tdis logmap=yes periodicity=0
+  colors=20009C<19>0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqj\
+  RslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<2\
+  5>iiijjjlll<3>sss<25>BBB999777<2>222000012<3>07A
+  }
