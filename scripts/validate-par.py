@@ -69,6 +69,7 @@ def validate_parameter_file(filename, quiet=False):
     par_dir = os.path.dirname(os.path.abspath(filename))
     formula_dir = os.path.normpath(os.path.join(par_dir, '..', 'formula'))
     ifs_dir = os.path.normpath(os.path.join(par_dir, '..', 'ifs'))
+    lsystem_dir = os.path.normpath(os.path.join(par_dir, '..', 'lsystem'))
 
     line_num = 0
     errors = []
@@ -170,6 +171,13 @@ def validate_parameter_file(filename, quiet=False):
                 if ifsfile:
                     validate_file_reference(param_name, param_start_line, 'IFS', 
                                           ifsfile, ifs_dir, errors)
+            
+            # Check if type=lsystem and validate lfile
+            if params.get('type') == 'lsystem':
+                lfile = params.get('lfile')
+                if lfile:
+                    validate_file_reference(param_name, param_start_line, 'L-System', 
+                                          lfile, lsystem_dir, errors)
 
     if errors:
         if quiet:
