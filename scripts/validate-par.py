@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import re
+import os
 import argparse
 
 
@@ -34,6 +35,10 @@ def validate_parameter_file(filename, quiet=False):
         if not quiet:
             print("Warning: File is empty.")
         return True
+
+    # Get the directory containing the parameter file
+    par_dir = os.path.dirname(os.path.abspath(filename))
+    formula_dir = os.path.normpath(os.path.join(par_dir, '..', 'formula'))
 
     line_num = 0
     errors = []
@@ -80,7 +85,10 @@ def validate_parameter_file(filename, quiet=False):
             continue
         
         # Multi-line parameter set: content after opening brace is part of the parameter body
+        # Parse the parameter body to check for type=formula and formulafile
+        param_start_line = line_num + 1
         line_num += 1
+        param_body = []
         
         # Read lines until we find a closing brace
         found_closing_brace = False
@@ -92,6 +100,7 @@ def validate_parameter_file(filename, quiet=False):
             if '}' in line:
                 # Closing brace can be followed by optional content (already stripped)
                 brace_pos = line.index('}')
+                param_body.append(line[:brace_pos])
                 after_brace = line[brace_pos + 1:].strip()
                 
                 if after_brace:
@@ -101,11 +110,45 @@ def validate_parameter_file(filename, quiet=False):
                 line_num += 1
                 break
             
+            param_body.append(line)
             line_num += 1
         
         if not found_closing_brace:
             errors.append(f"Parameter set '{param_name}' starting near line {line_num}: Missing closing brace")
-    
+        else:
+            # Parse parameter body for type=formula and formulafile
+            param_text = ' '.join(param_body)
+            params = {}
+            
+            # Simple parsing of name=value pairs
+            # Split by whitespace, but this is a simplified parser
+            for token in param_text.split():
+                if '=' in token:
+                    key, _, value = token.partition('=')
+                    params[key.lower()] = value
+            
+            # Check if type=formula and validate formulafile
+            if params.get('type') == 'formula':
+                formulafile = params.get('formulafile')
+                if formulafile:
+                    # Check if the formula file exists (case-sensitive)
+                    formula_path = os.path.join(formula_dir, formulafile)
+                    
+                    if not os.path.exists(formula_path):
+                        errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' not found in {formula_dir}")
+                    else:
+                        # Verify case-sensitive match
+                        formula_basename = os.path.basename(formula_path)
+                        actual_files = []
+                        try:
+                            if os.path.exists(formula_dir):
+                                actual_files = os.listdir(formula_dir)
+                        except OSError:
+                            pass
+                        
+                        if formulafile not in actual_files:
+                            errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively (found: {formula_basename})")
+
     if errors:
         if quiet:
             print(filename)
