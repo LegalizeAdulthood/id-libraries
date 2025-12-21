@@ -138,7 +138,6 @@ def validate_parameter_file(filename, quiet=False):
                         errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' not found in {formula_dir}")
                     else:
                         # Verify case-sensitive match
-                        formula_basename = os.path.basename(formula_path)
                         actual_files = []
                         try:
                             if os.path.exists(formula_dir):
@@ -147,7 +146,17 @@ def validate_parameter_file(filename, quiet=False):
                             pass
                         
                         if formulafile not in actual_files:
-                            errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively (found: {formula_basename})")
+                            # Find the actual filename with different case
+                            actual_filename = None
+                            for f in actual_files:
+                                if f.lower() == formulafile.lower():
+                                    actual_filename = f
+                                    break
+                            
+                            if actual_filename:
+                                errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively (found: {actual_filename})")
+                            else:
+                                errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively")
 
     if errors:
         if quiet:
