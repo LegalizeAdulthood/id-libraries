@@ -1,5 +1,6 @@
 ;  Hi, I'm Albrecht Niekamp, Duesseldorf
 ;   Niekamp@online-club.de
+;
 ;   These formulas continue the multifrac.frm
 ;   formula-collection. Here you will find the
 ;   more sophisticated variations of the original
