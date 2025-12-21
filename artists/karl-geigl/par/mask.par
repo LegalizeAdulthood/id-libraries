@@ -12,7 +12,7 @@
 ;
 
 1                  {
-  reset=1820 type=formula formulafile=.\frm\kgexp.frm formulaname=kgexp2
+  reset=1820 type=formula formulafile=kgexp.frm formulaname=kgexp2
   function=cosxx
   corners=-1.68588/1.68588/2.99712/-2.99712/1.68588/-2.99712 float=y
   inside=maxiter potential=222/333/0
@@ -23,7 +23,7 @@
   }
 
 2                  {
-  reset type=formula formulafile=.\frm\kg4.frm formulaname=402
+  reset type=formula formulafile=kg4.frm formulaname=402
   function=log/sqr
   corners=1.363753/-0.9582466/-2.064/2.064/-0.9582466/2.064 float=y
   inside=bof61 outside=real potential=222/444/0
@@ -37,7 +37,7 @@
   }
 
 3                  {
-  reset type=formula formulafile=.\frm\kg4.frm formulaname=403
+  reset type=formula formulafile=kg4.frm formulaname=403
   function=recip/sqr corners=3.528/-3.528/-6.272/6.272/-3.528/6.272
   float=y inside=bof61 outside=real potential=222/255/0
   colors=000001002<5>22J32L33O43Q43S44V54W54Y<3>65b65c65c<2>65c65c65b55a55\
@@ -63,7 +63,7 @@
   }
 
 1.1                { ; change potential
-  reset=1820 type=formula formulafile=.\frm\kgexp.frm formulaname=kgexp2
+  reset=1820 type=formula formulafile=kgexp.frm formulaname=kgexp2
   function=cosxx
   corners=-1.68588/1.68588/2.99712/-2.99712/1.68588/-2.99712 float=y
   inside=maxiter potential=333/444/0 invert=0.56196/0/0
@@ -77,7 +77,7 @@
   }
 
 5                  { ; formula by L. Skinner, mutated by B. Beacham to Moe
-  reset=1820 type=formula formulafile=.\frm\fubar.frm formulaname=moe
+  reset=1820 type=formula formulafile=fubar.frm formulaname=moe
   function=sqr/log
   corners=-10.85886/7.885141/16.66133/-16.66133/7.885141/-16.66133
   params=1 float=y potential=333/333/0
@@ -160,7 +160,7 @@
   }
 
 12                 {
-  reset=1820 type=formula formulafile=.\frm\rcl.frm formulaname=RCL_1
+  reset=1820 type=formula formulafile=rcl.frm formulaname=RCL_1
   corners=-1.2088342/-1.7248338/-0.33398061/0.35401838/-1.7248338/0.354018\
   38 params=0/0/0/0/0/3 float=y inside=maxiter potential=333/444/0
   colors=000BqwCrwEsx<4>LwzMxzOyzPyzRyzSzz<4>_zxazxbzwdzv<3>jxskwrlwqmvpou\
@@ -173,7 +173,7 @@
   }
 
 12.1               { ; with glasses
-  reset=1820 type=formula formulafile=.\frm\rcl.frm formulaname=rcl_1
+  reset=1820 type=formula formulafile=rcl.frm formulaname=rcl_1
   corners=-1.2088342/-1.7248166/-0.33395952/0.35401839/-1.7248166/0.354018\
   39 params=0/0/0/0/0/3 float=y inside=maxiter potential=333/444/0
   colors=000a0z<6>V0zzzzmyziozbpz<15>CEVBCUB0j<17>0000Iz<5>0UzUJ0<35>0000z\
@@ -182,7 +182,7 @@
   }
 
 12.2               { ; use other color maps
-  reset=1820 type=formula formulafile=.\frm\rcl.frm formulaname=rcl_1
+  reset=1820 type=formula formulafile=rcl.frm formulaname=rcl_1
   corners=-1.2088342/-1.7248166/-0.33395952/0.35401839/-1.7248166/0.354018\
   39 params=0/0/0/0/0/3 float=y inside=maxiter potential=333/444/0
   colors=VjiBeg<3>AigAjgChdEfbFecGdc<31>vzx<17>NNN9Ei<27>7BVNNN<12>orpquss\
@@ -360,7 +360,7 @@ brown_bear         {
   }
 
 22                 { ; frm404
-  reset=1821 type=formula formulafile=.\frm\kg4.frm formulaname=404
+  reset=1821 type=formula formulafile=kg4.frm formulaname=404
   function=tan/sqr
   corners=-2.027071/1.507544/2.356429/-2.356405/1.507544/-2.356405
   float=y inside=maxiter potential=222/222/0 periodicity=0

@@ -7,14 +7,14 @@
 
 
 avocado	     { ; aus kgfrm004
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=004
+  reset type=formula formulafile=kg0.frm formulaname=004
   corners=-0.902696/0.153297/0.68573/-0.722277/0.153297/-0.722277
   inside=bof61 outside=imag
   colors=00000h00i00k00m<30>0ky0mz1mz<30>zzz<46>2zz0zz0yz<32>0Jz
   }
 
 colorfish          { ; aus kgfrm fish, ins=bof60, outs=summ, decomp=33
-  reset type=formula formulafile=.\frm\kg0.frm
+  reset type=formula formulafile=kg0.frm
   formulaname=fish passes=b
   corners=-0.043391/-2.179405/-1.414/1.434017/-2.179405/1.434017
   inside=bof60 outside=summ decomp=33
@@ -27,7 +27,7 @@ colorfish          { ; aus kgfrm fish, ins=bof60, outs=summ, decomp=33
   }
 
 Doppelfisch        { ; aus kgfrm fish, outs=mult, dec=33, colors=@dblfish.map
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=fish passes=b
+  reset type=formula formulafile=kg0.frm formulaname=fish passes=b
   corners=-2/1.999997/-1.499996/1.5 inside=epsiloncross outside=mult
   decomp=33
   colors=0004JL_NHNGNA9UiZJ<2>Zrh1e8wYrjTM<2>aWul`CkhEjqGjO8hI4eC0a_M<2>5t\
@@ -43,14 +43,14 @@ Doppelfisch        { ; aus kgfrm fish, outs=mult, dec=33, colors=@dblfish.map
   }
 
 Distel             { ; aus kgfrm 002, ins=-100, outs=mult, dec=33 
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=002
+  reset type=formula formulafile=kg0.frm formulaname=002
   corners=-2.0/1.999997/-1.499996/1.5 inside=-100 outside=mult decomp=33
   colors=000chMDC8<21>ndXDB7<18>gOHCC7<22>Wp3EB9<19>tGmSAEg8Lx6SDB7<14>bQ3CC8<\
   11>AUNFB9AWO<14>7rg<9>ws9vqBtnE
   }
 
 Farbfisch          { ; aus kgfrm fish, ins=bof60, outs=summ, dec=33
-  reset type=formula formulafile=.\frm\kg0.frm
+  reset type=formula formulafile=kg0.frm
   formulaname=fish
   corners=-0.043391/-2.179405/-1.414/1.434017/-2.179405/1.434017
   inside=bof60 outside=summ decomp=33
@@ -63,7 +63,7 @@ Farbfisch          { ; aus kgfrm fish, ins=bof60, outs=summ, dec=33
   }
 
 geformel001abgewandelt              { ; kgfrm001, ins=-100, outs=mult, dec=33
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=001
+  reset type=formula formulafile=kg0.frm formulaname=001
   corners=-2.0/1.999997/-1.499996/1.5 inside=-100 outside=mult decomp=33
   colors=000TH_UHWWISJThBei3rjQH`OHUNHNLIFLVGTRd<2>_wWMKVGNIAQ5MMb<2>4cMQ23gbi\
   yykRKe<2>RU_b8hREgSAfT6eTOb<2>_jLQRa<2>LvIWNYaTNg_CFLf2PdTNgWTgZZfY`gethUOg<\
@@ -75,7 +75,7 @@ geformel001abgewandelt              { ; kgfrm001, ins=-100, outs=mult, dec=33
 
 blume1             { ; aus ge.frm07, f1/2=sqr/rec, m=555, ins=bof60, outs=real
                      ; f1/2=sqr/recip, m=555, ins=bof60, outs=real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007
+  reset type=formula formulafile=kg0.frm formulaname=007
   function=ident/sqr corners=-2.0/1.999997/-1.499996/1.5 maxiter=333
   inside=bof60 outside=real
   colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
@@ -86,7 +86,7 @@ blume1             { ; aus ge.frm07, f1/2=sqr/rec, m=555, ins=bof60, outs=real
   }
 
 Blume2             { ; aus ge.frm08, f1/2=sqr/rec, m=555, ins=bof61, out=real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=008
+  reset type=formula formulafile=kg0.frm formulaname=008
   function=sqr/recip corners=-2.0/1.999988/-1.500002/1.5 maxiter=555
   inside=bof61 outside=real
   colors=CCCm3B<12>y46f4F<23>z`jf3E<17>kE6f3E<22>L7Gf5F<15>mgVb3E<6>88Kf3E<26>\
@@ -94,7 +94,7 @@ Blume2             { ; aus ge.frm08, f1/2=sqr/rec, m=555, ins=bof61, out=real
   }
 
 blume4             { ; aus ge.frm07, m333, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007 function=ident/sqr
+  reset type=formula formulafile=kg0.frm formulaname=007 function=ident/sqr
   corners=-2.0/1.999997/-1.499996/1.5 maxiter=333 inside=bof60
   outside=real
   colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
@@ -105,7 +105,7 @@ blume4             { ; aus ge.frm07, m333, bof60, real
   }
 
 Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=015
+  reset type=formula formulafile=kg0.frm formulaname=015
   passes=t corners=-2.0/1.999997/-1.499996/1.5 maxiter=5555 inside=-100
   outside=real
   colors=CCCsKC<2>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_Cs\
@@ -114,12 +114,12 @@ Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
   }
 
 kgfrm011           { ; kgfrm011, f.p., m=555, bof60, real, y 222, 333, 0
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=011
+  reset type=formula formulafile=kg0.frm formulaname=011
   passes=t corners=-1.424001/1.424017/-1.068014/1.068001 inside=bof60
   }
 
 kgfrm012-1         {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=012 function=exp
+  reset type=formula formulafile=kg0.frm formulaname=012 function=exp
   passes=t corners=-0.48800099/0.48800754/1.8287073/2.5606939
   params=3/2/1 inside=0 outside=real
   colors=000MBhKAcH8Z<5>000<3>OC6UF7ZH8cKAhMBlOCpQDsSEuTExUFyVFzVFzWG<2>xU\
@@ -134,7 +134,7 @@ kgfrm012-1         {
   }
 
 kgfrm012-2         {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=012
+  reset type=formula formulafile=kg0.frm formulaname=012
   function=exp passes=t corners=-0.242047/0.242052/2.217855/2.58092
   params=3/2/1 inside=0 outside=real
   colors=000ze0zL0z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>\
@@ -156,7 +156,7 @@ malaysiadrachen    { ; kgfrm012
   }
 
 ausserhalb         { ; aus kgfrm004
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=004
+  reset type=formula formulafile=kg0.frm formulaname=004
   corners=-10.816753/-8.626521/-0.203393/1.439275 inside=bof61
   outside=imag
   colors=000LIL<2>_OD8S_AfhEDP<2>ZCFMBU`9Wo6Z8KK9RCAZ48KV<5>GzqC_bIvm9GW<6>Rcx\
@@ -166,7 +166,7 @@ ausserhalb         { ; aus kgfrm004
   }
 
 mandel-c1          { ; kgfrm13, epscr, imag
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=013
+  reset type=formula formulafile=kg0.frm formulaname=013
   passes=t corners=-1.5995/2.400497/-1.540062/1.459933 inside=-100
   outside=imag logmap=yes potential=255/500/500
   colors=00011l<44>47P02n47O<4>58L<7>r50<2>q60G7c<19>tQ001r<31>Shy01r<44>Dwa31\
@@ -174,7 +174,7 @@ mandel-c1          { ; kgfrm13, epscr, imag
   }
 
 mandel-c2          { ; kgfrm013,iter=
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=013
+  reset type=formula formulafile=kg0.frm formulaname=013
   passes=t corners=-1.5995/2.400497/-1.520029/1.479967 maxiter=32323
   inside=-100 outside=imag logmap=yes potential=255/500/500
   colors=00000w<6>00z000<125>z00000<118>00v
@@ -182,7 +182,7 @@ mandel-c2          { ; kgfrm013,iter=
 
 mandel-c3          { ; kgfrm013, iter=32323, epscr, imag, 
                      ; glases2
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=013
+  reset type=formula formulafile=kg0.frm formulaname=013
   passes=t corners=-1.5995/2.400497/-1.520029/1.479967 maxiter=32323
   inside=-100 outside=imag logmap=yes potential=255/500/500
   colors=000404<13>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0O00S<14\
@@ -191,7 +191,7 @@ mandel-c3          { ; kgfrm013, iter=32323, epscr, imag,
   }
 
 Blumenwiese2       { ; geform007, f1 sin, f2 cos, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007
+  reset type=formula formulafile=kg0.frm formulaname=007
   function=sin/cos passes=t corners=-2.0/1.999997/-1.499996/1.5
   inside=bof60 outside=real
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
@@ -202,7 +202,7 @@ Blumenwiese2       { ; geform007, f1 sin, f2 cos, bof60, real
 
 Blumenwiese3       { ; geform007, f1 sin, f2 cos, epscr, real
                      ; blumenwiese2 nach links verschoben und epscr
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007
+  reset type=formula formulafile=kg0.frm formulaname=007
   function=sin/cos passes=t corners=-3.57697/0.423027/-1.499996/1.5
   inside=-100 outside=real
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
@@ -212,7 +212,7 @@ Blumenwiese3       { ; geform007, f1 sin, f2 cos, epscr, real
   }
 
 seerose            { ; kgfrm007, tan, cot, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007
+  reset type=formula formulafile=kg0.frm formulaname=007
   function=tan/cotan passes=t corners=-2.0/1.999997/-1.499996/1.5
   inside=bof60 outside=real
   colors=000zz0<3>0z00zE<2>0zx<2>0GxVVx<3>zVx<3>zVT<3>zzT<3>VzT<3>Vzx<2>Vbxhhx\
@@ -222,7 +222,7 @@ seerose            { ; kgfrm007, tan, cot, bof60, real
   }
 
 Mondlandschaft     { ; kgfrm014, p1: 1, -1, p2: -0.5, -2, sin, cos, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=014
+  reset type=formula formulafile=kg0.frm formulaname=014
   passes=t corners=-2.0/1.999997/-1.499996/1.5 params=1/-1/-0.5/-2
   inside=bof60 outside=real
   colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
@@ -238,7 +238,7 @@ plastisch          { ; kgfrm020, exp, 255, iter
   }
 
 geform20           { ; kgfrm020, cot
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=020
+  reset type=formula formulafile=kg0.frm formulaname=020
   function=cotan passes=t corners=-2.0/2.0/-1.5/1.5 float=y inside=bof60
   outside=imag
   colors=000Hdr<4>5bwpJagff<20>nA3hgf<8>weS`cf<3>7K_fff<16>GMGaglVhqOivggg<24>\
@@ -246,7 +246,7 @@ geform20           { ; kgfrm020, cot
   }
 
 blaurot1           { ; kgfrm014
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=014
+  reset type=formula formulafile=kg0.frm formulaname=014
   function=cosxx/exp passes=t corners=-2.0/1.999997/-2.03088/0.969116
   params=1/-1/-0.5/-2 float=y maxiter=555 inside=bof60 outside=real
   colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
@@ -256,7 +256,7 @@ blaurot1           { ; kgfrm014
 
 blaurot2           { ; kgfrm014
                      ; cos,sinh
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=014
+  reset type=formula formulafile=kg0.frm formulaname=014
   function=cosxx/sinh passes=t corners=-2.0/1.999997/-2.03088/0.969116
   params=1/-1/-0.5/-2 inside=bof60 outside=real
   colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
@@ -264,35 +264,35 @@ blaurot2           { ; kgfrm014
   }
 
 blueyes            { ; kgfrm020,log
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=020
+  reset type=formula formulafile=kg0.frm formulaname=020
   function=log passes=t corners=-2.0/1.999997/-1.499996/1.5
   params=1/-1/-2/2 float=y inside=bof60 outside=imag
   colors=000e_U<30>JFCsmd<33>sjYtiXsjd<4>wUhsmd<74>6Bg
   }
 
 blueyes1           { ; kgfrm020,log
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=020
+  reset type=formula formulafile=kg0.frm formulaname=020
   function=log passes=t corners=-2.0/1.999997/-1.895654/1.104341
   params=1/-1/-2/2 float=y inside=bof60 outside=imag
   colors=000d_T<29>JFCsmd<33>sjYtiXsjd<4>wUhsmd<75>5Ag
   }
 
 tropic             { ; aus kgfrm20
-  reset=1720 type=formula formulafile=.\frm\kg0.frm formulaname=020
+  reset=1720 type=formula formulafile=kg0.frm formulaname=020
   function=cos passes=t corners=-2/2/-1.5/1.5 float=y inside=bof60
   outside=imag symmetry=none
   colors=000uJ9<35>jOxuJ8<33>x1ouJ7<66>8zAjj7<5>hj7tJ8<64>aAOtJ7<39>2t4uJ8
   }
 
 gefor004           {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=004
+  reset type=formula formulafile=kg0.frm formulaname=004
   corners=-2.0/1.999997/-1.499996/1.5 inside=bof61 outside=imag
   colors=000gPT<3>mUXM9F<8>0mIO7G<21>2zjO8F<13>RvPJGFDRE7aDOGE<3>Pz7P5F<17>m1Q\
   Q9F<9>rlAO7F<15>JlLNAJ<6>FljHMPAb_O6F<20>LYPK_QMAI<7>6sm
   }
 
 rosett             { ; kgfrm006, ins=-100, outs=summ, dec=222, biom=33
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=006
+  reset type=formula formulafile=kg0.frm formulaname=006
   corners=-2.0/1.999997/-1.499996/1.5 fillcolor=33 inside=-100
   outside=summ decomp=222 biomorph=33
   colors=000GSoHTuLPM<3>nBLLSV<2>hPxLVM<3>mjNGRRIPXKNbMVP<3>rhdcUwETL<2>CZHZHI\
@@ -304,7 +304,7 @@ rosett             { ; kgfrm006, ins=-100, outs=summ, dec=222, biom=33
   }
 
 ge.frm01,          { ; ge.frm01, f.p., m=555, bof60, real, y 222, 333, 0
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=011 passes=b
+  reset type=formula formulafile=kg0.frm formulaname=011 passes=b
   corners=-1.424001/1.424016/-1.068013/1.068001 inside=bof60
   outside=real potential=222/333/0
   colors=000eyz<4>aux`tw_sv_ruZqu<5>UjnThmTglSejRdi<14>GINFGLFFKEEI<8>8478\
@@ -317,7 +317,7 @@ ge.frm01,          { ; ge.frm01, f.p., m=555, bof60, real, y 222, 333, 0
   }
 
 blume4             { ; aus ge.frm07, m333, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007 function=ident/sqr
+  reset type=formula formulafile=kg0.frm formulaname=007 function=ident/sqr
   corners=-2.0/1.999997/-1.499996/1.5 maxiter=333 inside=bof60
   outside=real
   colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
@@ -328,7 +328,7 @@ blume4             { ; aus ge.frm07, m333, bof60, real
   }
 
 Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=015
+  reset type=formula formulafile=kg0.frm formulaname=015
   passes=t corners=-2.0/1.999997/-1.499996/1.5 maxiter=5555 inside=-100
   outside=real
   colors=CCCsKC<2>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_Cs\
@@ -337,14 +337,14 @@ Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
   }
 
 ge10mand           { ; kgfrm10, bof60, real, y: 255, 500, 500
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=010
+  reset type=formula formulafile=kg0.frm formulaname=010
   corners=-2.500625/1.499371/-1.535054/1.464942 inside=bof60 outside=real
   potential=255/500/500
   colors=000FJW<45>FEcGDdFKV<70>ylLFKV<124>ZQVFKV<7>FJW
   }
 
 runderTisch        { ; kgfrm011
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=011
+  reset type=formula formulafile=kg0.frm formulaname=011
   passes=t corners=-1.424001/1.424017/-1.068014/1.068001 inside=bof60
   outside=real potential=222/333/0
   colors=000iiG<3>smI<5>kbMQ`N<29>qjoDXA<45>ugpDWB<20>O4ZDXA<38>UubEXB<20>iCXD\
@@ -352,13 +352,13 @@ runderTisch        { ; kgfrm011
   }
 
 blume5             {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=007
+  reset type=formula formulafile=kg0.frm formulaname=007
   function=ident/recip corners=-1.351998/1.352015/-1.01401/1.013998
   inside=bof60 outside=real colors=@blume.map
   }
 
 rotor1             { ; aus kgfrm001
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=001 passes=t
+  reset type=formula formulafile=kg0.frm formulaname=001 passes=t
   corners=-2/2/-1.5/1.5 float=y inside=bof60 outside=summ logmap=yes
   decomp=222 biomorph=0
   colors=000_NU<47>APqoNF<40>hS3oNF<63>26IoNF<60>kUCoRJkUC<14>iWBiWBiVB<17\
@@ -366,7 +366,7 @@ rotor1             { ; aus kgfrm001
   }
 
 kgfrm06            {
-  reset=1720 type=formula formulafile=.\frm\kg0.frm formulaname=006 passes=t
+  reset=1720 type=formula formulafile=kg0.frm formulaname=006 passes=t
   corners=-2/2/-1.5/1.5 params=1/2/3/4 float=y maxiter=5555
   inside=bof60 outside=real symmetry=none
   colors=000JTI<5>GTGsYC<13>tu3q7M<17>M7hmAO<7>Abrr7L<21>hRQq7L<23>F0As8R<\
@@ -375,7 +375,7 @@ kgfrm06            {
   }
 
 octopus            { ; kgfrm 101, log, bof60, real
-  reset type=formula formulafile=\fraktale\fractint\ge1.frm
+  reset type=formula formulafile=kg1.frm
   formulaname=101 function=log passes=t
   corners=-2.0/2.000012/-1.500014/1.5 inside=bof60 outside=real
   colors=000V5X<3>L0gyL3<14>j8sxM0<17>NfFzM2<11>qZSzM0<15>tl1_eMyM2<20>PkpvM3<\
@@ -390,7 +390,7 @@ melange            { ; sqr 1/sinh
 
 filigran           { ; geform10
                      ; 1,2,3,4,tan
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=010
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
   function=tan passes=b corners=-4.658914/5.565086/-5.112/5.112
   params=1/2/3/4 float=y inside=bof60 outside=real
   colors=000000gXI<7>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2\
@@ -401,7 +401,7 @@ filigran           { ; geform10
 
 antenne            { ; geform10
                      ; 1,2,3,4,log
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=010
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
   function=log passes=b corners=-4.876446/5.347554/-5.112/5.112
   params=1/2/3/4 float=y inside=bof60 outside=imag
   colors=000AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH\
@@ -413,7 +413,7 @@ antenne            { ; geform10
 
 drehspan           { ; geform10
                      ; 1,2,3,4,sqr
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=010
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
   function=sqr passes=b corners=-4.658914/5.565086/-5.112/5.112
   params=1/2/3/4 float=y inside=bof60 outside=imag
   colors=000000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7W\
@@ -425,7 +425,7 @@ drehspan           { ; geform10
 
 goldblatt          { ; geform10
                      ; 1,2,3,4,recip
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=010
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
   function=recip passes=t
   corners=-1.956374/4.218922/-3.087648/3.087648 params=1/2/3/4 float=y
   inside=bof60 outside=imag
@@ -437,7 +437,7 @@ goldblatt          { ; geform10
   }
 
 Blumenwiese1       { ; kgfrm011, bof61, summ, y: 255, 500, 500
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=011 passes=t
+  reset type=formula formulafile=kg0.frm formulaname=011 passes=t
   corners=-0.0249999762/0.0250053406/0.249181032/0.299165487
   inside=bof61 outside=summ potential=255/500/500 decomp=33 biomorph=3
   colors=CCCAqWnBI<2>h16lFK<4>TN9mGM<5>VXRpEQ<6>sBwpAIp5Do08iIN<3>HaSpGL<4\
@@ -450,7 +450,7 @@ Blumenwiese1       { ; kgfrm011, bof61, summ, y: 255, 500, 500
   }
 
 kgfrm022           {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=022 function=log
+  reset type=formula formulafile=kg0.frm formulaname=022 function=log
   corners=-1.950647/3.577161/-2.825019/2.702789 params=2/3/-2/-2
   float=y bailout=50 inside=bof60 potential=222/333/0
   colors=00000Y<7>000<16>z0X<15>000<15>p0w<15>000<15>zzz<3>jjj<3>ddjccjbbj\
@@ -460,7 +460,7 @@ kgfrm022           {
 
 yellowbeams       { ; kgfrm025
                      ; Karl Geigl, CIS 100327,156
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=025 passes=t
+  reset=1820 type=formula formulafile=kg0.frm formulaname=025 passes=t
   corners=-9/9/-9/9 float=y inside=bof60 outside=real distest=22/71
   colors=000yq5<6>zw8zx9zy9zyAzyByzB<5>vzFuzGtzGsyHryI<5>juMitNhsOfrOeqPcp\
   Q<12>KY_JX`HVaGTa<4>9Me8Kf7Jg6Hg5Gh5Fi<2>2Bk2Al19l17m06n<4>02q02q01r01r0\
@@ -473,7 +473,7 @@ yellowbeams       { ; kgfrm025
 
 radiowaves         { ; kgfrm024
                      ; Karl Geigl, CIS 100327,156
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=024 passes=t
+  reset=1820 type=formula formulafile=kg0.frm formulaname=024 passes=t
   corners=-22/22/-22/22 float=y inside=bof60 outside=real
   distest=22/71
   colors=00019j<10>4Fq4Gq5Hr5Ir6Is<14>EUyFUyGVyGWyHXy<10>PdzQezRfzRfzSgzTh\
@@ -484,7 +484,7 @@ radiowaves         { ; kgfrm024
   }
 
 round              { ; geform01
-  reset=1820 type=formula formulafile=.\frm\kg0.frm formulaname=001 passes=b
+  reset=1820 type=formula formulafile=kg0.frm formulaname=001 passes=b
   corners=-6/6/-6/6 float=y inside=bof60 outside=imag decomp=222
   colors=0004Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
   4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
@@ -500,7 +500,7 @@ round              { ; geform01
   }
 
 002                {
-  reset=1720 type=formula formulafile=.\frm\kg0.frm formulaname=002
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
   corners=-9.546217/9.546241/-7.159706/7.159662 maxiter=22
   inside=bof60 outside=imag potential=222/333/0 symmetry=none
   colors=000042400<5>R12U12Y13`23c23<3>l24n24o24p24q24<2>r24r24q24p24<4>g2\
@@ -515,7 +515,7 @@ round              { ; geform01
   }
 
 002/2              {
-  reset=1720 type=formula formulafile=.\frm\kg0.frm formulaname=002
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
   corners=-11.43084/13.57395/-9.376835/9.376791 float=y maxiter=22
   inside=bof60 outside=imag potential=222/222/0 symmetry=none
   colors=00033M<6>003000200<4>H12J12M13O13R13<4>Z24`25a25b25<2>c25c25b25<4\
@@ -530,7 +530,7 @@ round              { ; geform01
   }
 
 002/3              {
-  reset=1720 type=formula formulafile=.\frm\kg0.frm formulaname=002
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
   corners=8.489962/11.68896/-6.887363/-4.488109 float=y maxiter=22
   inside=bof60 outside=imag potential=222/222/1 symmetry=none
   colors=00033M<6>003000200<4>H12J12M13O13R13<4>Z24`25a25b25<2>c25c25b25<4\
@@ -545,7 +545,7 @@ round              { ; geform01
   }
 
 003                {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=003
+  reset type=formula formulafile=kg0.frm formulaname=003
   corners=-31.59933/-21.84492/-3.735834/3.580105 inside=bof61
   outside=imag potential=222/111/0
   colors=000RRR<8>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO\
@@ -554,7 +554,7 @@ round              { ; geform01
   }
 
 003/2              {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=003 passes=b
+  reset type=formula formulafile=kg0.frm formulaname=003 passes=b
   corners=11.56445/29.47885/-6.811918/6.624075 float=y inside=bof60
   outside=real potential=333/222/0
   colors=000ZZZ<8>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>0\
@@ -563,7 +563,7 @@ round              { ; geform01
   }
 
 003/3              {
-  reset type=formula formulafile=.\frm\kg0.frm formulaname=003
+  reset type=formula formulafile=kg0.frm formulaname=003
   corners=20.406508/20.4663823/0.909830349/0.954736744 float=y
   inside=bof60 outside=real potential=333/222/0
   colors=000888444000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>0\

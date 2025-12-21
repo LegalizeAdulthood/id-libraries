@@ -6,7 +6,7 @@
 
 
 baumberg           { ; kgfrm111, exp, bof60, real
-  reset type=formula formulafile=.\frm\kg1.frm
+  reset type=formula formulafile=kg1.frm
   formulaname=111 function=exp passes=t
   corners=-1.244855/1.107127/1.55546/-1.58054/1.107127/-1.58054
   inside=bof60 outside=real
@@ -15,7 +15,7 @@ baumberg           { ; kgfrm111, exp, bof60, real
   }
 
 octopus            { ; kgfrm 111, log, bof60, real
-  reset type=formula formulafile=.\frm\kg1.frm
+  reset type=formula formulafile=kg1.frm
   formulaname=111 function=log passes=t
   corners=-2.0/2.000012/-1.500014/1.5 inside=bof60 outside=real
   colors=000V5X<3>L0gyL3<14>j8sxM0<17>NfFzM2<11>qZSzM0<15>tl1_eMyM2<20>PkpvM3<\
@@ -23,7 +23,7 @@ octopus            { ; kgfrm 111, log, bof60, real
   }
 
 rotauge            { ; kgfrm111, sqr, bof60, real
-  reset type=formula formulafile=.\frm\kg1.frm
+  reset type=formula formulafile=kg1.frm
   formulaname=111 function=sqr passes=t
   corners=-1.244855/1.107128/1.55546/-1.58054/1.107128/-1.58054
   inside=bof60 outside=real
@@ -32,7 +32,7 @@ rotauge            { ; kgfrm111, sqr, bof60, real
   }
 
 blattl             { ; kgfrm111, 1,2,3,4,recip, bof60, real
-  reset type=formula formulafile=.\frm\kg1.frm formulaname=111
+  reset type=formula formulafile=kg1.frm formulaname=111
   function=recip passes=b corners=-1.888607/4.111412/-2.999991/3
   params=1/2/3/4 inside=bof60 outside=real
   colors=000qp0ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>\
@@ -41,7 +41,7 @@ blattl             { ; kgfrm111, 1,2,3,4,recip, bof60, real
   }
 
 3auge              { ; kgform111
-  reset type=formula formulafile=.\frm\kg1.frm formulaname=111 function=sin
+  reset type=formula formulafile=kg1.frm formulaname=111 function=sin
   passes=t corners=-3.574468/0.4255324/-1.46995/1.53005 float=y
   maxiter=555 inside=bof60 outside=real
   colors=000Xap<2>SXtlqd<21>qZ7jod<20>3AFkne<11>U6Wjod<9>PSLlqe<24>ixYlqe<\
@@ -50,7 +50,7 @@ blattl             { ; kgfrm111, 1,2,3,4,recip, bof60, real
 
 blume              { ; aus kgfrm107
                      ; sqr, cotan
-  reset type=formula formulafile=.\frm\kg1.frm formulaname=107
+  reset type=formula formulafile=kg1.frm formulaname=107
   function=sqr/cotan passes=t corners=-2/1.999997/-1.499996/1.5
   maxiter=555 inside=epsiloncross outside=imag
   colors=000zsl<47>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<23>GEEF\
@@ -59,7 +59,7 @@ blume              { ; aus kgfrm107
 
 oildrop            { ; kgfrm107
                      ; Karl Geigl, CIS 100327,156
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=107
+  reset=1820 type=formula formulafile=kg1.frm formulaname=107
   function=exp/recip
   corners=-0.6889633/0.3968328/1.029644/-0.9006605/0.3968328/-0.9006605
   float=y maxiter=2 inside=bof60 outside=real distest=3/71
@@ -72,7 +72,7 @@ oildrop            { ; kgfrm107
   }
 
 leuchtkissen       { ; kgfrm119, 
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=119
+  reset=1820 type=formula formulafile=kg1.frm formulaname=119
   function=log passes=t corners=-4.14/4.14/-4.14/4.14 float=y
   inside=maxiter potential=222/333/0
   colors=000EHSEIRFHk<22>vzhMLuFHj<27>jp7HGk<9>rOsEGi<17>CC4GGi<9>f8HEGk<4\
@@ -81,7 +81,7 @@ leuchtkissen       { ; kgfrm119,
 
 look_inside        { ; kgfrm107
                      ; Karl Geigl, CIS 100327,156
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=107
+  reset=1820 type=formula formulafile=kg1.frm formulaname=107
   function=sqr/ident corners=-0.0316/0.0316/-0.0237/0.0237 float=y
   maxiter=2 inside=bof60 outside=real distest=3/71
   colors=000aM0<8>VF1UE1TD1SD2RC2RC2<4>O94N84M85L75K76<4>H58G59F49E39<2>D3\
@@ -93,7 +93,7 @@ look_inside        { ; kgfrm107
   }
 
 101                { ; frm101
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=101
+  reset=1820 type=formula formulafile=kg1.frm formulaname=101
   corners=-2.392852/2.392852/-1.861667/1.727611
   params=0.10000000000000001/-0.5/33 float=y inside=bof60 outside=real
   colors=000rz5<2>uy3vy3vx3ww2<4>zs1zr1zq1zp0zo0<3>zj0yh0yg0ye0xd0<9>oP1nO\
@@ -106,7 +106,7 @@ look_inside        { ; kgfrm107
   }
 
 102                { ; frm102
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=102
+  reset=1820 type=formula formulafile=kg1.frm formulaname=102
   function=cos corners=-17.20204/17.20204/-12.90148/12.90149
   params=-2/0/22 inside=bof60 outside=real
   colors=0001LU<7>0Xe0Zg1_h1aj<4>4hp5jq6kr7ls8nt9ou<3>EsxFtyGuyIvy<2>MxzOy\
@@ -119,7 +119,7 @@ look_inside        { ; kgfrm107
   }
 
 104                { ; frm104
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=104
+  reset=1820 type=formula formulafile=kg1.frm formulaname=104
   function=cos corners=-4.032256/4.032268/-3.024178/3.024191
   params=2/0/-4 inside=bof61 outside=real
   colors=00036v<4>28r29q19o<2>1Bl0Cj0Ci0Dg0Ef<12>0NN0OL0OK1PJ<2>1RE1SD2TC2\
@@ -131,7 +131,7 @@ look_inside        { ; kgfrm107
   }
 
 103                { ; frm103
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=103
+  reset=1820 type=formula formulafile=kg1.frm formulaname=103
   function=exp/sqr
   corners=10.36648/-10.3665/-10.91163/10.91165/-10.3665/10.91165
   params=3/2/4 inside=bof61 outside=real
@@ -143,7 +143,7 @@ look_inside        { ; kgfrm107
   }
 
 105                { ; frm105
-  reset=1820 type=formula formulafile=.\frm\kg1.frm formulaname=105
+  reset=1820 type=formula formulafile=kg1.frm formulaname=105
   function=sqr/ident corners=-5.154637/5.15465/-3.865977/3.865976
   params=3/0/5 inside=bof61 outside=real
   colors=000vaE<4>uXHtWHtVIsTIsSJ<19>h6Sh5Sg5T<6>b1Wb0Wa0W`0X<8>U1_U1_T1_S\
