@@ -56,6 +56,7 @@ def validate_parameter_file(filename, quiet=False):
         
         # Check if this line contains an opening brace
         if '{' not in line:
+            errors.append(f"Line {line_num + 1}: Expected parameter entry: {original_line.rstrip()}")
             line_num += 1
             continue
         
