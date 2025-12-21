@@ -55,26 +55,29 @@ def validate_formula_file(filename, quiet=False):
             continue
         
         # Check if this is the start of a formula entry
-        # Pattern: optional whitespace, name (zero or more characters excluding { and (,
-        # optional symmetry (parentheses), optional whitespace, open brace
+        # Pattern: optional whitespace, name (zero or more characters excluding { ( [ and =),
+        # optional = operator, optional whitespace,
+        # optional symmetry (parentheses), optional whitespace,
+        # optional parameters (square brackets), optional whitespace,
+        # open brace
         # Name can be empty (comment entry), contain spaces, with leading/trailing spaces stripped
-        match = re.match(r'^(\s*)(.*?)(\s*)(?:(\([^)]*\))(\s*))?(\{)(.*)$', line)
+        match = re.match(r'^(\s*)(.*?)(\s*)(=)?(\s*)(?:(\([^)]*\))(\s*))?(?:(\[[^\]]*\])(\s*))?(\{)(.*)$', line)
         
         if not match:
             errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
             line_num += 1
             continue
         
-        # Extract name and validate it doesn't contain { or (
+        # Extract name and validate it doesn't contain {, (, [, or =
         formula_name = match.group(2).strip()
         # Empty name is valid (comment entry)
-        if formula_name and ('{' in formula_name or '(' in formula_name):
+        if formula_name and ('{' in formula_name or '(' in formula_name or '[' in formula_name or '=' in formula_name):
             errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
             line_num += 1
             continue
         
         # Found a formula entry
-        after_brace = match.group(7)
+        after_brace = match.group(11)
         
         # Check if the closing brace is on the same line (single-line formula)
         if '}' in after_brace:
