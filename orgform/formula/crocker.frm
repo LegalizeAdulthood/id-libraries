@@ -277,17 +277,6 @@ tangent { ; Scientific American puzzle.
     z=z*tan(z)+c,
     |z| <=4
     }
-; Parameter file for problem area.
-
-juliap             { ; Effect strongly depends on magnification.
-  reset=1611 type=formula formulafile=crocker.frm formulaname=Juliap
-  passes=b corners=-0.0784/0.0784/-0.0588/0.0588
-  params=0.87660000000000005/0.15301999999999999 float=y maxiter=255
-  inside=maxiter
-  colors=CCC000GCG<19>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
-  ssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq\
-  <8>Cs_000
-  }
 
 ; Enough for now.
 ;                Charles
