@@ -13,6 +13,24 @@ def strip_comment(line):
     return line
 
 
+def continue_lines(lines):
+    """Combine lines ending in backslash with the next line, skipping leading whitespace on continuation."""
+    result = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        # Check if line ends with backslash
+        while line.rstrip().endswith('\\') and i + 1 < len(lines):
+            # Remove the backslash and any trailing whitespace
+            line = line.rstrip()[:-1]
+            # Append the next line, skipping its leading whitespace
+            i += 1
+            line += lines[i].lstrip()
+        result.append(line)
+        i += 1
+    return result
+
+
 def validate_file_reference(param_name, param_start_line, file_type, filename, base_dir, errors):
     """Validate that a file reference exists with case-sensitive matching."""
     file_path = os.path.join(base_dir, filename)
@@ -147,6 +165,8 @@ def validate_parameter_file(filename, quiet=False):
         if not found_closing_brace:
             errors.append(f"Parameter set '{param_name}' starting near line {line_num}: Missing closing brace")
         else:
+            param_body = continue_lines(param_body)
+
             # Parse parameter body for type=formula and formulafile
             param_text = ' '.join(param_body)
             params = {}
