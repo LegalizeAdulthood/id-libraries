@@ -88,6 +88,7 @@ def validate_parameter_file(filename, quiet=False):
     formula_dir = os.path.normpath(os.path.join(par_dir, '..', 'formula'))
     ifs_dir = os.path.normpath(os.path.join(par_dir, '..', 'ifs'))
     lsystem_dir = os.path.normpath(os.path.join(par_dir, '..', 'lsystem'))
+    map_dir = os.path.normpath(os.path.join(par_dir, '..', 'map'))
 
     line_num = 0
     errors = []
@@ -177,6 +178,13 @@ def validate_parameter_file(filename, quiet=False):
                 if '=' in token:
                     key, _, value = token.partition('=')
                     params[key.lower()] = value
+            
+            # Check if colors parameter references a colormap file
+            colors = params.get('colors')
+            if colors and colors.startswith('@'):
+                colormap_file = colors[1:]  # Remove the @ prefix
+                validate_file_reference(param_name, param_start_line, 'Colormap', 
+                                      colormap_file, map_dir, errors)
             
             # Check if type=formula and validate formulafile
             if params.get('type') == 'formula':
