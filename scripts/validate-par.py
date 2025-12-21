@@ -13,6 +13,35 @@ def strip_comment(line):
     return line
 
 
+def validate_file_reference(param_name, param_start_line, file_type, filename, base_dir, errors):
+    """Validate that a file reference exists with case-sensitive matching."""
+    file_path = os.path.join(base_dir, filename)
+    
+    if not os.path.exists(file_path):
+        errors.append(f"{param_name.strip()}({param_start_line}): {file_type} file '{filename}' not found in {base_dir}")
+    else:
+        # Verify case-sensitive match
+        actual_files = []
+        try:
+            if os.path.exists(base_dir):
+                actual_files = os.listdir(base_dir)
+        except OSError:
+            pass
+        
+        if filename not in actual_files:
+            # Find the actual filename with different case
+            actual_filename = None
+            for f in actual_files:
+                if f.lower() == filename.lower():
+                    actual_filename = f
+                    break
+            
+            if actual_filename:
+                errors.append(f"{param_name.strip()}({param_start_line}): {file_type} file '{filename}' does not match case-sensitively (found: {actual_filename})")
+            else:
+                errors.append(f"{param_name.strip()}({param_start_line}): {file_type} file '{filename}' does not match case-sensitively")
+
+
 def validate_parameter_file(filename, quiet=False):
     """Validate that a parameter file follows the correct syntax."""
     try:
@@ -39,6 +68,7 @@ def validate_parameter_file(filename, quiet=False):
     # Get the directory containing the parameter file
     par_dir = os.path.dirname(os.path.abspath(filename))
     formula_dir = os.path.normpath(os.path.join(par_dir, '..', 'formula'))
+    ifs_dir = os.path.normpath(os.path.join(par_dir, '..', 'ifs'))
 
     line_num = 0
     errors = []
@@ -131,32 +161,15 @@ def validate_parameter_file(filename, quiet=False):
             if params.get('type') == 'formula':
                 formulafile = params.get('formulafile')
                 if formulafile:
-                    # Check if the formula file exists (case-sensitive)
-                    formula_path = os.path.join(formula_dir, formulafile)
-                    
-                    if not os.path.exists(formula_path):
-                        errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' not found in {formula_dir}")
-                    else:
-                        # Verify case-sensitive match
-                        actual_files = []
-                        try:
-                            if os.path.exists(formula_dir):
-                                actual_files = os.listdir(formula_dir)
-                        except OSError:
-                            pass
-                        
-                        if formulafile not in actual_files:
-                            # Find the actual filename with different case
-                            actual_filename = None
-                            for f in actual_files:
-                                if f.lower() == formulafile.lower():
-                                    actual_filename = f
-                                    break
-                            
-                            if actual_filename:
-                                errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively (found: {actual_filename})")
-                            else:
-                                errors.append(f"{param_name.strip()}({param_start_line}): Formula file '{formulafile}' does not match case-sensitively")
+                    validate_file_reference(param_name, param_start_line, 'Formula', 
+                                          formulafile, formula_dir, errors)
+            
+            # Check if type=ifs and validate ifsfile
+            if params.get('type') == 'ifs':
+                ifsfile = params.get('ifsfile')
+                if ifsfile:
+                    validate_file_reference(param_name, param_start_line, 'IFS', 
+                                          ifsfile, ifs_dir, errors)
 
     if errors:
         if quiet:
