@@ -55,10 +55,10 @@ def validate_formula_file(filename, quiet=False):
             continue
         
         # Check if this is the start of a formula entry
-        # Pattern: optional whitespace, name (anything excluding { and () with leading/trailing spaces stripped),
+        # Pattern: optional whitespace, name (zero or more characters excluding { and (,
         # optional symmetry (parentheses), optional whitespace, open brace
-        # Name can contain spaces but must have at least one non-whitespace character before { or (
-        match = re.match(r'^(\s*)(.+?)(\s*)(?:(\([^)]*\))(\s*))?(\{)(.*)$', line)
+        # Name can be empty (comment entry), contain spaces, with leading/trailing spaces stripped
+        match = re.match(r'^(\s*)(.*?)(\s*)(?:(\([^)]*\))(\s*))?(\{)(.*)$', line)
         
         if not match:
             errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
@@ -67,7 +67,8 @@ def validate_formula_file(filename, quiet=False):
         
         # Extract name and validate it doesn't contain { or (
         formula_name = match.group(2).strip()
-        if not formula_name or '{' in formula_name or '(' in formula_name:
+        # Empty name is valid (comment entry)
+        if formula_name and ('{' in formula_name or '(' in formula_name):
             errors.append(f"Line {line_num + 1}: Invalid formula entry start: {original_line.rstrip()}")
             line_num += 1
             continue

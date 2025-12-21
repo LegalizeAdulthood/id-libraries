@@ -55,10 +55,10 @@ def validate_parameter_file(filename, quiet=False):
             continue
         
         # Check if this is the start of a parameter set entry
-        # Pattern: optional whitespace, name (anything excluding { with leading/trailing spaces stripped),
+        # Pattern: optional whitespace, name (zero or more characters excluding {),
         # optional whitespace, open brace
-        # Name can contain spaces but must have at least one non-whitespace character before {
-        match = re.match(r'^(\s*)(.+?)(\s*)(\{)(.*)$', line)
+        # Name can be empty (comment entry), contain spaces, with leading/trailing spaces stripped
+        match = re.match(r'^(\s*)(.*?)(\s*)(\{)(.*)$', line)
         
         if not match:
             errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
@@ -67,7 +67,8 @@ def validate_parameter_file(filename, quiet=False):
         
         # Extract name and validate it doesn't contain {
         param_name = match.group(2).strip()
-        if not param_name or '{' in param_name:
+        # Empty name is valid (comment entry)
+        if param_name and '{' in param_name:
             errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
             line_num += 1
             continue
