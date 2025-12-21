@@ -10,7 +10,8 @@ to find them.  This repository brings them together in one place and new librari
 be added as further archaeological finds uncover new finds.
 
 Each directory is an Id library, consisting of subfolders for parameter files, IFS definitions,
-L-system definitions, formula definitions, colormaps, etc.
+L-system definitions, formula definitions, colormaps, etc.  A best effort has been made to
+make each library standalone by including the necessary files referenced by parameter sets.
 
 To use these in Id, add the directories with the `librarydirs` parameter (available after
 version 1.3.1).
