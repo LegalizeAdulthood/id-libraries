@@ -529,14 +529,6 @@ Globulus           { ; Globulus eats...
   2>WgD<3>CXF<7>KSDLSDMRCOQBORA<2>OK8OH7OE6NB5PC6<7>eLAhMBiOD<3>nVJpXH
   }
 
-frm:MandNewt06 {; Jim Muth
-z=c=(pixel*p1):
-a=z^3+(c-p2)*z-c
-b=p3*z^2+c-1
-z=z-1*a/b
-.000000000000000000000000000001 <= |a|
-}
-
 ;========================================================================;
 ; From "kanak" <kanak@libero.it>
 ; Subject R: (fractint) The little dragon pars
@@ -1015,22 +1007,6 @@ knk-002a           { ; erme-particular.0009 (rustrose)
 
 
 
-
-frm:Carr2926 {; Modified-inandout04 
-          ; passes=1 needs to be used with this PHC formula.
-  k=((1)*(|p1|<=0)+p1)
-  test=(4*(real(p2)<=0)+real(p2)*(0<p2))
-  b4=cabs(pixel*2)-log(conj(0.5/pixel))
-  b5=oldz=pixel-conj(pixel-1/log(tan(1/pixel))-1/log(2/pixel))
-  c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
-  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5):
-  a=(|z|<=|oldz|)*(c)
-  b=(|oldz|<|z|)*(c*k)
-  c=(a+b)
-  oldz=z
-  z=z*z+c
-  |z|<=test
-}
 
 ;========================================================================;
 ; From Lee Skinner <LeeHSkinner@compuserve.com>
