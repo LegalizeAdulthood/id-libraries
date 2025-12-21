@@ -4,6 +4,14 @@ import re
 import argparse
 
 
+def strip_comment(line):
+    """Remove comment from line (everything from ; to end of line)."""
+    comment_pos = line.find(';')
+    if comment_pos != -1:
+        return line[:comment_pos]
+    return line
+
+
 def validate_parameter_file(filename, quiet=False):
     """Validate that a parameter file follows the correct syntax."""
     try:
@@ -31,12 +39,15 @@ def validate_parameter_file(filename, quiet=False):
     errors = []
     
     while line_num < len(lines):
-        line = lines[line_num]
+        original_line = lines[line_num]
         
         # Check if line is a comment line (starts with ; after optional whitespace)
-        if re.match(r'^\s*;', line):
+        if re.match(r'^\s*;', original_line):
             line_num += 1
             continue
+        
+        # Strip comment from line for syntax checking
+        line = strip_comment(original_line)
         
         # Check if line is blank or only whitespace
         if line.strip() == '':
@@ -44,17 +55,24 @@ def validate_parameter_file(filename, quiet=False):
             continue
         
         # Check if this is the start of a parameter set entry
-        # Pattern: optional whitespace, name (non-whitespace excluding {),
+        # Pattern: optional whitespace, name (anything excluding { with leading/trailing spaces stripped),
         # optional whitespace, open brace
-        match = re.match(r'^(\s*)([^\s{]+)(\s*)(\{)(.*)$', line)
+        # Name can contain spaces but must have at least one non-whitespace character before {
+        match = re.match(r'^(\s*)(.+?)(\s*)(\{)(.*)$', line)
         
         if not match:
-            errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {line.rstrip()}")
+            errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
+            line_num += 1
+            continue
+        
+        # Extract name and validate it doesn't contain {
+        param_name = match.group(2).strip()
+        if not param_name or '{' in param_name:
+            errors.append(f"Line {line_num + 1}: Invalid parameter set entry start: {original_line.rstrip()}")
             line_num += 1
             continue
         
         # Found a parameter set entry
-        param_name = match.group(2)
         after_brace = match.group(5)
         
         # Check if the closing brace is on the same line (single-line parameter set)
@@ -62,8 +80,8 @@ def validate_parameter_file(filename, quiet=False):
             brace_pos = after_brace.index('}')
             after_closing = after_brace[brace_pos + 1:].strip()
             
-            if after_closing and not after_closing.startswith(';'):
-                errors.append(f"Line {line_num + 1}: Unexpected content after closing brace: {line.rstrip()}")
+            if after_closing:
+                errors.append(f"Line {line_num + 1}: Unexpected content after closing brace: {original_line.rstrip()}")
             
             line_num += 1
             continue
@@ -74,16 +92,17 @@ def validate_parameter_file(filename, quiet=False):
         # Read lines until we find a closing brace
         found_closing_brace = False
         while line_num < len(lines):
-            line = lines[line_num]
+            original_line = lines[line_num]
+            line = strip_comment(original_line)
             
             # Check if line contains a closing brace
             if '}' in line:
-                # Closing brace can be followed by optional comment
+                # Closing brace can be followed by optional content (already stripped)
                 brace_pos = line.index('}')
                 after_brace = line[brace_pos + 1:].strip()
                 
-                if after_brace and not after_brace.startswith(';'):
-                    errors.append(f"Line {line_num + 1}: Unexpected content after closing brace: {line.rstrip()}")
+                if after_brace:
+                    errors.append(f"Line {line_num + 1}: Unexpected content after closing brace: {original_line.rstrip()}")
                 
                 found_closing_brace = True
                 line_num += 1
