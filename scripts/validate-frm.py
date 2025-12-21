@@ -107,6 +107,10 @@ def validate_formula_file(filename, quiet=False):
                 line_num += 1
                 break
             
+            # Check for opening brace before closing brace is found
+            if '{' in line:
+                errors.append(f"Line {line_num + 1}: Unexpected opening brace inside formula entry '{formula_name}': {original_line.rstrip()}")
+            
             line_num += 1
         
         if not found_closing_brace:

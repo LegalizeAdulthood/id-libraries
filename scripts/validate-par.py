@@ -193,6 +193,10 @@ def validate_parameter_file(filename, quiet=False):
                 line_num += 1
                 break
             
+            # Check for opening brace before closing brace is found
+            if '{' in line:
+                errors.append(f"Line {line_num + 1}: Unexpected opening brace inside parameter entry '{param_name}': {original_line.rstrip()}")
+            
             param_body.append(line)
             line_num += 1
         
