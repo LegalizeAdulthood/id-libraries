@@ -236,13 +236,21 @@ def validate_parameter_file(filename, quiet=False):
                 if ifsfile:
                     validate_file_reference(param_name, param_start_line, 'IFS', 
                                           ifsfile, ifs_dir, errors)
-            
+                ifsname = params.get('ifsname')
+                if ifsname:
+                    validate_file_entry(param_name, param_start_line, 'IFS',
+                                        ifsfile, ifsname, ifs_dir, errors)
+
             # Check if type=lsystem and validate lfile
             if params.get('type') == 'lsystem':
                 lfile = params.get('lfile')
                 if lfile:
                     validate_file_reference(param_name, param_start_line, 'L-System', 
                                           lfile, lsystem_dir, errors)
+                lname = params.get('lname')
+                if lname:
+                    validate_file_entry(param_name, param_start_line, 'L-System',
+                                        lfile, lname, lsystem_dir, errors)
 
     if errors:
         if quiet:
