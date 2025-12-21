@@ -94,4 +94,5 @@ atest(XAXIS) {; R.L.Bagula
   z = Pixel, z = Sqr(z+1/z):  ; Start with z**2 to initialize LastSqr
    z = z + 1/Pixel
    z = Sqr(z)
-    LastSqr <= 16         ; Use LastSqr instead of recalculating}
+    LastSqr <= 16         ; Use LastSqr instead of recalculating
+}

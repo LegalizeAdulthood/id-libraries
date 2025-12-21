@@ -10,7 +10,7 @@
 ;Just press space, await the 
 ;transform, select your new exploration 
 ;point and see what happens. Pictures you never have seen
-:before, promised.
+;before, promised.
 ;The formulas correspond to the par-files (Multi4.par)
 ;with the same number.
 ;As some of the new Fractint features are used (Tdis is great!),
