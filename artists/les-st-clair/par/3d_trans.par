@@ -2,7 +2,7 @@ F_title1           { ; image for F_title1_3d LStC [use 1024x768] t=08m29s
                      ; t=time using 486DX2-66 and 1024x768 res.
                      ; by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
-  reset=1940 type=formula formulafile=3d_trans.par 
+  reset=1940 type=formula formulafile=3d_trans.frm 
   formulaname=fractint-9-11 function=sinh/cabs/atan
   center-mag=-1.08813/0.105609/1.054746 float=y symmetry=none
   periodicity=0 savename=f_title1.gif
@@ -26,7 +26,7 @@ F_title2           { ; image for Fractitle2_3d LStC [use 1024x768] t=00m54s
                      ; Modification by Les St Clair [101461,2032] 1996
                      ; Original "Fract_Title5" by Loren G. Dobert
                      ; based on Brian E. Jones "Fractint-9-11" formula
-  reset=1940 type=formula formulafile=3d_trans.par 
+  reset=1940 type=formula formulafile=3d_trans.frm 
   formulaname=fractint-9-11 function=sqr/cotanh/asin
   center-mag=1.18669/-0.093911/1.268178/1/14.999 float=y maxiter=1000
   inside=bof60 outside=summ symmetry=none periodicity=0 savename=f_title2.gif
@@ -46,7 +46,7 @@ F_title2_3d        { ; "Curly Fractint"        LStC [use 1024x768] t=01m03s
 L3DT_01            { ; image for L3DT_01_3d    LStC [use 1024x768] t=01m46s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1930 type=formula formulafile=3d_trans.par formulaname=lesfrm13
+  reset=1930 type=formula formulafile=3d_trans.frm formulaname=lesfrm13
   function=sqrt/log passes=1
   center-mag=0.933602/0.439651/0.4265727/1/35 params=-4/1/-3/1 float=y
   maxiter=1000 inside=zmag outside=atan savename=l3dt_01.gif
@@ -68,7 +68,7 @@ L3DT_06            { ; image for L3DT_06_3d    LStC [use 1024x768] t=02m48s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
                      ; image previously coded 
-  reset=1930 type=formula formulafile=3d_trans.par formulaname=lesfrm12
+  reset=1930 type=formula formulafile=3d_trans.frm formulaname=lesfrm12
   function=ident/atan passes=1 center-mag=0/0/0.6666667 float=y
   inside=bof61 outside=atan savename=l3dt_06.gif
   colors=000czr000azq000_zp000Yzo000Wzn000Uzm000Szl000Qzk000Ozk000Mzj000Kz\
@@ -92,7 +92,7 @@ L3DT_13            { ; image for L3DT_13_3D    LStC [use 1024x768] t=00m51s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
                      ; based on Brian E.Jones formula BJ-LESFRM13-004
-  reset=1930 type=formula formulafile=3d_trans.par 
+  reset=1930 type=formula formulafile=3d_trans.frm 
   formulaname=bj-lesfrm13-004 function=tan/recip/ident/cos
   center-mag=0.00862294/0.383509/0.8076226/1/2.5 params=2/0.5/1/1
   float=y maxiter=1000 inside=bof61 outside=atan potential=255/255/0
@@ -112,7 +112,7 @@ L3DT_13_3D         { ; "Magic Forest"          LStC [use 1024x768] t=01m06s
 L3DT_14            { ; image for L3DT_14_3d    LStC [use 1024x768] t=01m20s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1930 type=formula formulafile=3d_trans.par 
+  reset=1930 type=formula formulafile=3d_trans.frm 
   formulaname=bj-lesfrm13-002 function=conj/sqr/cosh/log
   center-mag=0.59042/0.40678/1.173709/1/17.5 params=4/4.9/1/0.9
   float=y potential=255/200/0 savename=l3dt_14.gif
@@ -134,7 +134,7 @@ L3DT_14_3D         { ; "Wild Orchid"           LStC [use 1024x768] t=00m24s
 Io                 { ; Generate at 1024x768 save as "io.gif" t=01m26s.
                      ; From Damion's "Cubist-30" image
                      ; Brian E. Jones 102702,2213@Cserve.com
-  reset=1940 type=formula formulafile=3d_trans.par formulaname=block_2
+  reset=1940 type=formula formulafile=3d_trans.frm formulaname=block_2
   function=sqrt/ceil passes=1 center-mag=1.50459/1.45075/2.696078
   params=0/0 float=y maxiter=1023 outside=atan periodicity=0
   savename=io.gif
@@ -156,7 +156,7 @@ ice_cave           { ; image for ice_cave_3d       [use 1024x768] t=06m35s
                      ; t=time using 486DX2-66 and video=SF7
                      ; Arno Jennen's "Fractal1" - recoloured by Les St Clair
                      ; save as "ice.gif" 
-  reset=1940 type=formula formulafile=3d_trans.par formulaname=jenn001
+  reset=1940 type=formula formulafile=3d_trans.frm formulaname=jenn001
   function=sin passes=1 corners=-2.849328/2.849328/-2.136996/2.136996
   float=y maxiter=1024 inside=bof60 savename=ice.gif
   colors=40612D<3>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9M\
@@ -208,7 +208,7 @@ mountain_3d        { ; "View From The Summit"                t=  0:06:21.62
 Comet              { ; image for comet_i_3d     [use 1024x768] t=07m54s
                      ; Les St Clair 101461.2032@compuserve.com 1996
                      ; t=time using 486DX2-66 and video=SF7 1024x768
-  reset=1940 type=formula formulafile=3d_trans.par formulaname=block_4
+  reset=1940 type=formula formulafile=3d_trans.frm formulaname=block_4
   function=tan
   corners=0.70082392/0.84284816/0.10749566/0.54124753/0.54375175/0.3169252\
   2 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023 inside=bof60
