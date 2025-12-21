@@ -31,6 +31,39 @@ def continue_lines(lines):
     return result
 
 
+def validate_file_entry(param_name, param_start_line, file_type, filename, entry_name, base_dir, errors):
+    """Validate that a file contains an entry with the given name (case insensitive)."""
+    if not filename:
+        errors.append(f"{param_name.strip()}({param_start_line}): No {file_type} file specified for entry '{entry_name}'")
+        return
+        
+    file_path = os.path.join(base_dir, filename)
+    
+    if not os.path.exists(file_path):
+        errors.append(f"{param_name.strip()}({param_start_line}): {file_type} file '{filename}' not found for entry '{entry_name}'")
+        return
+    
+    # Read the file and search for the entry
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
+            content = f.read()
+    except Exception as e:
+        errors.append(f"{param_name.strip()}({param_start_line}): Error reading {file_type} file '{filename}': {e}")
+        return
+    
+    # Search for entry name followed by optional symmetry specification,
+    # optional whitespace, and an opening brace
+    # Entry names are case-insensitive
+    # Symmetry specifications like (XAXIS), (YAXIS), etc. are optional
+    entry_pattern = re.compile(
+        r'^\s*' + re.escape(entry_name) + r'(?:\s*\([^)]*\))?\s*\{', 
+        re.IGNORECASE | re.MULTILINE
+    )
+    
+    if not entry_pattern.search(content):
+        errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry '{entry_name}' not found in file '{filename}'")
+
+
 def validate_file_reference(param_name, param_start_line, file_type, filename, base_dir, errors):
     """Validate that a file reference exists with case-sensitive matching."""
     file_path = os.path.join(base_dir, filename)
@@ -192,7 +225,11 @@ def validate_parameter_file(filename, quiet=False):
                 if formulafile:
                     validate_file_reference(param_name, param_start_line, 'Formula', 
                                           formulafile, formula_dir, errors)
-            
+                formulaname = params.get('formulaname')
+                if formulaname:
+                    validate_file_entry(param_name, param_start_line, 'Formula',
+                                        formulafile, formulaname, formula_dir, errors)
+
             # Check if type=ifs and validate ifsfile
             if params.get('type') == 'ifs':
                 ifsfile = params.get('ifsfile')
