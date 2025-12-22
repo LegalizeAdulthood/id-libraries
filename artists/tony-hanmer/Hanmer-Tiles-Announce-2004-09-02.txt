@@ -1,0 +1,1239 @@
+There is nothing else I would rather have found in all of mathematics
+than this.
+
+ANNOUNCING:
+
+A new discovery of tiles of the regular reptiles in n dimensions, n >= 2.
+There are an infinite number of such tiles for each reptile.  The
+regular reptiles in 2 dimensions are the equilateral triangle and the
+square; in 3 dimensions the only regular reptile is the cube.  I propose
+to call these tiles Hanmer Tiles.  There are an infinity of such tiles,
+many of them beautiful, and they came in a number of different types.
+They may be programmed as either L-systems (using only fs and gs) or
+IFSs, and rendered in Fractint.  In this article, unless otherwise
+specified, programming details refer to the L-system versions of the
+tiles.
+
+(I'll say at the onset that since I originally posted this letter to the
+Fractint email list, in early September 2004, I have found the work of
+another mathematician online, Stewart Hinsley, with a parallel discovery.
+This is at http://www.meden.demon.co.uk/Fractals/tautetramer.html I have
+been in email contact with him, though we haven't discussed the issue of
+"who got there first".)
+
+Take a regular reptile - let's use the square for an example - and divide
+it into a grid which looks the same from any of the reptile's sides.
+Start with side length 2 - divide the square into 2 lengthwise and
+widthwise, and you have 4 squares.  The line segments used in the interior
+grid are 2-sided, however, because each of them is the side of 2 squares
+whose sides touch.  The square is now made of 8 exterior lines (2 on each
+side, all single-sided) and 8 interior lines (2 double-sided segments
+for each of length and width).  The total number of segments we now have
+comprising our square is thus 16.  It looks like the picture below.
+ _ _
+|_|_|
+|_|_|
+
+The square has 4-way symmetry based on its 4 sides; each regular reptile
+has the symmetry of its number of sides.  So for a square we can make 4
+identical tiles (for a triangle, 3; for a cube, 8)... an infinite number
+of ways.  Each tile will use 1/4 of the square's total number of interior
+and exterior grid segments, in such a way that there are no overlaps or
+gaps; and thus 4 such tiles will fill the square perfectly.
+
+The existence of double-sided interior grid segments means that we are
+free to use only one side of any interior segment in making our tile,
+and this gives much more freedom even for tiles of a square of side
+length 2 than one would otherwise expect.
+
+There are several subgroups of Hanmer Tiles.  I have included some
+examples of these at the end of this article.
+
+a)  The "most orthodox" tile, unique for each reptile.  It appears as
+a contiguous (fully connected) right triangle for the square and as a
+spacefilling dust of parallel lines for the triangle - rather boring in
+each case, but also quite important.  It seems to be the only HT which
+is found at every side length, odd or even.  Area 1/4 for the square,
+1/3 (or 1?) for the triangle.
+
+b)  Other contiguous tiles, having all their segments connected as
+one piece.  Area 1/4 for the square, 1/3 for the triangle.
+
+c)  Space-filling contiguous tiles.  Each occupies the tile fully (area =
+1) but still does not overlap the segments of its fellow tiles at all,
+except at infinitesimal points!  Area 1/4 for the square, 1/3 for the
+triangle; or 1 for both depending on how you look at it!
+
+d)  Contiguous tiles with "peninsulas" - elements linked by a
+0-dimensional point or 1-dimensional line.  In my tiles, there may
+be overlap at these connections.  Area 1/4 for the square, 1/3 for
+the triangle.
+
+e)  Partially disconnected tiles, made of infinite "lakes" and "islands".
+Area 1/4 for the square, 1/3 for the triangle.
+
+f)  Space-filling "dusts", made of disconnected segments.  Here, each
+tile occupies the reptile fully (area = 1 again; but also = 1/s?!) but
+still does not overlap the segments of its 3 fellow tiles except at
+infinitesimal points...  There are many different space-filling HTs,
+both connected and dusts.  At the limit they fill in the reptile solid.
+But careful use of certain colouring algorithms which I have found for
+Fractint gives each one a beautiful distinct inner texture.  The most
+important colouring variation adds >1 to the first f and <1 to the last
+one, i.e. f=>1ff+f+f++ff++f+f+<1f.
+
+g)  Tiles having all lines parallel - another infinite subset for squares,
+but (see a) existing as a unique tile for triangles of any side length.
+For squares the area of such tiles is 1/2 instead of the standard 1/4;
+for the triangular version it is space-filling, area = 1.  These types
+in squares also may be "contiguous" or not.  They have their own "DNA"
+(see REPTILES AND GENETIC ENGINEERING, below).
+
+(I had thought of tiles which are other fractions of a square but related
+to the "standard" 1/4, e.g. 1/2 and 1/8.  In my ignorance, however,
+I first tried to make half-square tiles by using twice the number
+of segments as for quarter-square tiles.  This was successful only
+in that my initial shape - a letter "F" which interlocks with itself
+upside down - is indeed a possible tile to programme.  But this shape
+merely filled with ever smaller squares as the iterations increased -
+not a satisfactory result at all, having no fractal edges.  So I put
+aside my search for half-square tiles, not yet realising that in fact
+I already had several examples.)
+
+The great surprise for me was to realise that, like square-filling tiles,
+half-square tiles need the same number of segments as the standard 1/4
+tiles!  This is counter to intuition.  But the key, the only difference,
+is that these new tiles have all lines parallel, either vertical or
+horizontal.  From such programming an infinite set of half-square tiles
+develops.  These tiles are useful in that actually only one colour of ink,
+pixels or other medium is needed to produce a tiled square:  render the
+tile in, say, black on a white ground, outline the whole square in black
+as well, and you have the pair of tiles - one black, the other white.
+
+h)  L-systems allow the use of the symbol "!", which reverses directional
+commands.  I have found that throwing a "!" into the programming string of
+certain square HTs (of side length 2 so far) makes a new tile entirely,
+one which has only 1/8 of the area of the square!  If paired with its
+mirror image, a quarter-square tile results.  So far I have not found
+any examples of this strange variation in squares above size 2 or in
+any triangles at all.  Do they exist?
+
+i) There is another kind of eighth-square (sixth-triangle) tile as well,
+with a condition usually applying to it.  Begin with a standard 1/4 square
+(or 1/3 triangle) HT which has reflective symmetry across its vertical
+axis, *and* with all its exterior segments on the same straight line.
+Reverse the direction of its edge segments; this new tile will be
+the result.  (The symmetry condition is not , however, required for
+all-parallel, half-square types (as in g above).  Perform the reversal
+of the edge segments' directions here, and the new type of tile (in
+this case filling a quarter of a square) will appear.  If the original
+all-parallel tile had no x-axis reflectional symmetry, then the new tile
+will have glide symmetry.)
+
+So there we have it:  tiles making 1/8, 1/4, 1/2 and 1/1 of a square,
+and 1/6, 1/3 and 1/1 of a triangle, all using the same proportion of
+the reptile's segments!  This is amazing.
+
+Several of these subgroups above stretch the idea of "tile" to include
+curves made of an infinity of separate pieces, or curves which cross
+each other at infinite infinitesimal points.  This is unorthodox but,
+I believe, possible, allowable; and the beauty of the results also
+speaks clearly.
+
+Initially I was stuck with using the lower horizontal ("first") side of
+a reptile as the set of exterior segments in every case.  I had not yet
+caught on to the uses of "g", which means "move without drawing".  "G"
+properly used allows exterior segments to be spread to any position around
+the reptile.  It also allows for interior segments to be single-sided
+instead of the original double-sided ones I used.  These two variations
+showed me that there is a much greater number of HTs even for a square
+or triangle of side length 2 than I had first imagined.  I thought that
+there was only one tile in each case at this size:  how wrong I was.
+
+Very late in the game, I realised that simply rotating the position
+of a tile relative to the horizon makes new tiles - although their
+first-iteration renderings will be identical.  Suddenly, every square
+tile had three relatives, every triangle tile two, making rotation sets
+(RSs), as I have called them *1.  Another burst of programming as I
+checked out various details of the new discovery.  It seems that the
+invisible horizon to which all L-systems silently refer does in fact
+play a role in their formation, more than just a visual guideline!
+There is nothing else to explain how a tile can look the same at first
+iteration in three or four different rotations, yet become completely
+other tiles as the calculating continues into higher iterations.
+Mysterious and wonderful.  Some types of tile are actually duplicated
+in rotation, either 180 degrees away from "start" or at every position -
+these latter types I call "invariant under rotation".
+
+I also note that rotationally-related HTs may display differences in
+type from contiguous to dust to partly 1-sided interiors.  (This is
+due to the presence of so many extra gs in the formula.)  This means
+that rotations seem to have their own "dialects":  what is beautiful at
+one angle may be completely boring or ugly in rotation (see AESTHETICS,
+below).  This would require that one learn these "dialects" in order to
+find beautiful HTs in the various rotations.  Also, if an HT rotational
+set has x-axis reflectional symmetry in any member, then the 2 members 90
+and 270 degrees away from it will generally be identical except for their
+rotation, and the member 180 degrees away will have x-axis reflectional
+symmetry but be different in form from the other member with x-axis
+reflectional symmetry.  The same is for members with 45-degree mirror
+symmetry:  the member 180 degrees away shall have this as well (though
+it will be different in form); those 90 and 270 degrees away will be
+identical except for position.  The only HT so far which remains perfectly
+invariant (at the limit) under rotation is the space-filling dust, though
+this has many different textural variations.  It will be interesting
+to find any others which have this property, if they exist.  (3/9/2003:
+NB There is at least one other non-varying rotation set, starting with
+the unique (so far) "dust" HT to have >1 <4 n of pieces (it is a square
+of size 4 with 2 pieces, each composed of 2 squares joined diagonally
+at a corner).  Are there other such pieces with >1 <4 n of pieces?)
+Other, fractal-edged HTs do come close to being non-varying in rotation
+- those with all the action happening along the square's diagonals.
+Perhaps there is a "most orthodox" form of these "diagonal-action" types,
+which will be called this by virtue of its being invariant in rotation.)
+
+Rotation sets are an important way of relating different HTs to each
+other, as they allow one more easily to come up with a system for finding
+the total number of HTs for a particular reptile.  The other key is to
+systematise separately all exterior and interior possibilities for the
+reptile in question, and then multiply these for a total.
+
+
+How can I prove an infinity of tiles for the regular reptiles?  Well,
+I'm actually not enough of a mathematician to do so in a rigorous manner.
+All I can say is that side length can be extended from 2 to 3, 4, ... to
+infinity, so a single tile in each side length would already lead to
+an infinite number of them.  But I have found huge numbers of my tiles
+just in sizes 2-6 - over 6000 of them so far.  So the case looks good
+for infinity.
+
+SOME RULES AND NUMBERS
+
+The number of (standard) Hanmer Tiles required to fill a regular reptile
+is equal to s, that reptile's number of sides:  e.g. 3 tiles for a
+triangle (3 sides), 4 for a square (4 sides), 6 for a Cube (6 faces),
+and thus as a fraction each such tile (standard types) occupies 1/s of
+the space of the reptile.
+
+The number N of segments required to make an HT of a reptile with number
+of sides s in d dimensions for iteration number i is calculated:  N =
+(s ^ d) ^ i.  With segment totals growing exponentially, vector file
+sizes can grow huge; my record is a file over 1 GB in size!
+
+For 2 dimensions: The total number of exterior segments of a reptile
+with number of sides s, of side length L, = Ls.
+
+The ratio of exterior to interior segments = 1 : (s - 1).
+
+The number of segments in a (standard) Hanmer Tile in 1st iteration =
+s ^ 2.
+
+The total number of elements in the reptile = exterior number + interior
+number.
+
+One major calculation which still eludes me is for the total number of HTs
+for a given reptile of dimension d, side length L and number of sides s.
+(Don't forget, they must use the correct proportion of interior and
+exterior segments of the reptile!  And not repeat or omit any segment
+between them!)  Then there is the number of *unique* HTs for the same
+reptile... With root side length reptiles' HTs, and various symmetries,
+cutting down the number from total to unique, this may turn out to be
+indeterminable.  But I could be totally wrong in my guess.
+
+REPTILES AND GENETIC ENGINEERING
+
+One of the easy ways to program a large number of HTs in a small time is
+to begin with what I call DNA, of which there need be only one sequence
+for each reptile and side length.  (A-p types have their own modified
+DNA, however, to make it easier to program them.)  Program an L-system
+containing ALL of the segments of the specified reptile in succession,
+using "g" instead of "f" for each segment.  Then simply copy this master,
+and "switch on" the required "genes" (segments) by replacing each "g"
+with an "f".  The "g"s remain in the DNA sequence, but only as "junk
+DNA"; all they do is slow down a calculation without increasing the
+size of the output file.  Fractint currently (in the latest developer's
+version) limits the user to a line length of 225 characters, but this
+is sufficient for square DNA sequences up to at least side length 7 and
+triangle DNA sequences to at least side length 8.
+
+One of the items in my HT zip file at the website listed after this
+article is called HTDNA.l.  It contains all of my standard "DNA sequences"
+for HT squares and triangles up to size 5, to show the progression.
+(In it, I have distinguished exterior and interior segments by the use of
+"G" and "g".)  This is what should become the standard notation of HT DNA
+in L-systems, for the purposes of establishing and maintaining uniformity
+from the start.  The only exceptions to this standard DNA should be a-p
+types, with their own modified DNA, and RSs with extra sets of Gs added
+rather than having to reprogram the entire HT for each rotation.
+
+-|- -|- -|- -|- -|- -|- -|- -|- -|-
+
+Every reptile whose side length is the exponent of a whole number (which
+is its root) will contain in its HTs all of the HTs of reptiles of roots
+of that side length.  For example, the total set of square HTs of side
+length 4 (and 8, 16, etc.) includes all HTs of side length 2; size 9
+contains all HTs of size 3; etc.  In addition, of course, there will
+be many tiles in the exponent size's set which are slight deviations
+from these root tiles.  In this way, the smaller sizes can be thought
+of as more fundamental or basic or primitive than the larger sizes -
+but not necessarily less beautiful, by any means.  The larger sizes
+merely offer more and more possibilities to refine one's tiles.
+
+Which leads me to my next point:
+
+ANIMATIONS
+
+Consider that a square HT of, say, side length 2 and 2nd iteration will
+be duplicated in the form of a certain HT of side length 4 - the square
+of 2 - at 1st iteration.  Again at side length 8, and 16, and so on.
+Extrapolate this, and you will have to conclude that between any two HTs
+of a particular reptile there will be an infinite number of incremented
+HTs.  These are found by successively finer and finer adjustments using
+longer and longer side lengths.  Of course, the programming gets slower
+and slower as well; but computers are also gaining speed and memory
+size, with entirely new technologies being tested to surpass the looming
+current physical limitations.
+
+The result?  Animations, as smooth as are required, between any two HTs,
+provided that they are of the same "genus", both Tiling the reptile in
+the same number of pieces.  (This may not work at all for those special
+tiles which include "!" in their programming.)  A continuous motion,
+if you would like it and can program it.
+
+Size, too, is no object.  Because we are dealing with fractals which can
+be calculated endlessly, if in the future a tile the size of a wall or
+a building (yet with detail as small as the eye can resolve) would be
+desired, it could be produced.
+
+IFS VERSIONS, IN SHORT
+
+Iterated Function Systems, or IFS, can render HTs just as easily as
+L-systems can, and they have their own unique textural and colouring
+variations, though the actual programming is best not done in Fractint.
+(The exception to what is possible is the "!" types, for which IFS
+currently has no equivalent command.)  I use Brazil Design version 0.4,
+which like Fractint is freeware, but is Windows-based.  It can save IFS
+files for Fractint use as well as in its own native format.  Again,
+one may begin with a set of DNA for each reptile and side length.
+For IFS types, the DNA has each "gene" segment on a separate line,
+turned off by default by preceding it with a ; semicolon.  (I have
+retained the same segment order as is found in L-systems HT DNA, in
+order to minimise confusion and maximise ease of translating HTs into
+IFS versions.)  Turn on any segment simply by removing this semicolon.
+Also, Fractint is a bit limiting here, with a current maximum of 32
+active lines allowed in any IFS.  But this still gives squares up to
+side length 5.  I have not done much with my tiles in IFS versions,
+especially in triangles, as the Brazil programme currently does not allow
+exact placing of triangles.  But the theoretical possibility is there.
+
+TRANSLATIONS
+
+It would be useful to automate the process of re-programming any existing
+HT (I have many thousands) as a version of the standard DNA.  (But let my
+standard L-system drawing methods become the standard way of rendering
+these tiles as L-systems, so as to make things regular from the start.)
+Also, translations between L-system and IFS versions would be a good idea.
+Both of these programming capabilities would not be very difficult to
+produce, knowing the rules of HTs, L-systems and IFSs.
+
+ONE DIMENSION...
+
+Of course, linear HTs made of points are also possible.  However, they
+seem to number exactly one in total for all sizes.  This is a dust of
+points and the point-size spaces between them, alternating, a variation
+on Cantor Dust.  This tile has glide symmetry; move it one point to the
+left or right, and the spaces and points fill each other.  (Yawn)
+
+The point space itself offers no possibilities at all for tiles, of
+course, having zero size and dimension...
+
+AESTHETICS; OR, WHAT MAKES AN H-TILE BEAUTIFUL?
+
+With an infinity of H-tiles available to each reptile, there must
+be a large number of these which are not worth seeing:  pure dusts;
+duplicates of all side lengths in those higher side lengths which are
+exponents of them; mirror images of other tiles; and just plain ugly
+tiles.  What separates all of these from those which hold the interest,
+which have an aesthetic "value"?  For me, at least, there is a minimum of
+pleasing contiguity and maximum of aesthetic "dustiness".  The tile may,
+indeed, have 100% contiguity and still be beautiful.  But 0% contiguity
+equals a perfect (100%) dust, which is interesting the first time but
+loses its novelty fairly fast.  Too much scattering of segments also
+causes a loss of definition or form, leading to fuzziness.  There should
+be some areas of the tile which are solid, or it literally will have no
+shape except that of the entire reptile itself.
+
+So there is good news and bad news.  The bad news is, there's an infinity
+of rubbish tiles among the endless HTs of any reptile.  The good news
+is, there's also an unending collection of beautiful, sublime and
+wonderful tiles also awaiting discovery.  Only patient exploration can
+root out the latter from the former.  Because we have specified that
+these must all be tiles of reptiles, however, our infinite sets will
+contain none of the Mona Lisas or other similar masterpieces of human
+art found in the "larger" infinity of a square of entirely unlimited
+interior possibilities.  This is precisely because of the fact that
+only these tiles to which we have limited our search are in our sets.
+Infinity does not have to mean "all things".  (There may, however, be
+some close approximations to the tiling works of M.C. Escher:  one of
+my favourite artists, no surprise there.  This Multiverse of tiles may,
+indeed, be thought of as an idealisation of Escher's wonderful tilings.
+There are no representations of actual creatures in these tiles, so in
+this way they are different from his work, which mapped the mathematical
+onto a world of representational things or objects.  And this lack means
+that Hanmer Tiles are less pictorial and are purely mathematical.  They
+have no anchor in the real world, one might say.  Escher's genius was,
+I believe, precisely in the mix of the mathematical and the pictorial,
+something he consciously strove for.)
+
+Hanmer Tiles, and fractals in general, are definitely images for the
+machine age.  They begin with mathematical formulae; they can best be
+rendered by the brute force of number-crunching; and their typical
+intricacies from exponential growth are a nightmare for any kind of
+hand calculation or rendering process, whether it be carpet weaving,
+mosaic laying, Lego or whatever.  Does this alone make them not art?
+I think not.  Even if they are not destined to be included in one's
+definition of art, however, this does not mean that one is forbidden
+from calling them beautiful.  Mathematical beauty may be accused of
+having a purity which could be called inhuman.  Perhaps the eye longs
+for a break in the pattern somewhere, rather than sterile perfection!
+No real tree is an exact L-system, after all, and no L-system (as far as
+I know) looks as real as a tree.  But mathematical beauty perhaps calls
+to the part of us which longs for the perfect, and frustrates the part
+which is satisfied with less.
+
+What to do with these tiles?  I can't do it all myself, that's for
+certain!  Push on deeper into the universe which each one contains in
+the search for more undiscovered territory.  (Think of an analogy with
+the Mandelbrot Set:  ever larger reptile sizes correspond to deeper
+zooms, taking more time to calculate.)  Programme a computer search
+by calculating automatically, possibly using the HT DNA - the rules
+are simple enough.  Have the total of *unique* tiles collected into a
+separate file.  But *people* will still have to choose to concentrate on
+those finds which are more pleasing to the eye and pass over the rest.
+Use them wherever Tiling designs are wanted.  Allow a subtle variation
+in a large set of similar tiles instead of keeping them all the same
+from one edge of the set to the other, sort of a parquet deformation.
+
+Three dimensions?  I long for the day when I will hold in my hand a clear
+cube, say 30 cm on a side, containing 6 identical tiles, each of these
+differing only in its transparent colour.  The whole thing thus will be
+visible all the way through.  Its code will have been programmed in I
+don't yet know which programme.  I am not content with seeing the thing
+rotating on some 2-dimensional screen; it will have been "printed" by an
+extension of our current 2-d printing processes, and will be a solid cube.
+
+The next step will be an animated version of the same thing, its 3-d
+"tiles" set in motion by a fluid of nano-particles inside the cube, a
+fluid in 6 colours which can instantly change its state to become solid
+when instructed to do so.  It will display smooth transitions from one
+tile to the next at whatever speed the user desires.  Or, alternately,
+it might be made of a stack of 2-d square HTs, each slightly differing
+from those above and below it.  These could cycle from bottom to top
+and around again to make the animation.
+
+The size 2 cube, then.  Composed of 2 x 2 x 2 = 8 cubes, each having 6
+square faces for a total of 48 faces (the analogy of our 2-d segments),
+and each having 12 edges for a total of 96, and 8 vertices for a total
+of 64.  Each smaller cube meets 3 others at various faces, a different
+3 others at edges, and all 7 others at a single vertex.  Each side of
+the whole cube has (is divided into) 4 faces, so 4 x 6 = 24 faces - half
+of the total for size 2 - are exterior, the other 24 interior.  Each HT
+here will have 48 / 6 = 8 face "segments" - 4 exterior and 4 interior.
+
+Have we long to wait?
+
+Anthony Hanmer Tbilisi, Republic of Georgia
+
+*1 I chose to label the members of these rotation sets as follows: the
+original HT would have no suffix, just its usual number;  The RS members
+would be suffixed a, b, c for squares and a, b for triangles; for cubes
+they would thus be a, b, c, d, e.  Other suffixes I have decided on
+include ~ for "!" variations and other oddities; * for contiguous HTs;
+# for dusts of any kind except space-filling dusts; ^ for space-filling
+dusts; k, l, m and n for colouring variations; r for e-r (edge-reversed)
+variations.  I ended up losing the */# distinction in the end, through
+sheer carelessness as the number of my tiles rapidly increased.  But it
+was originally my intention.
+
+PS The L-system and IFS files associated with this
+article can be found (zipped as HanmerTiles.zip) at
+http://spanky.triumf.ca/pub/fractals/LSYSTEMS/ They are named as follows:
+HTSq23.l HTSq4a.l HTSq4b.l HTSq5.l HTSq6a.l HTSq6-a.l HTSq6-b.l HTSq6-c.l
+HTSq_a-p.l HTTr.l HTDNA.l HTs.ifs HTDNA.ifs
+
+Download and unzip the files into your Fractint directory, and they're
+ready for use as either type Lsystem or IFS.
+
+Part 2 of this posting is some examples as L-systems.
+
+EXAMPLES These are taken from my collection of over 6000 Hanmer Tiles,
+to show their diversity.  Paste the text below into a text editor and
+call it "HT_Eg.l", saving it in your Fractint folder.  Then you're ready
+to try the pieces in Fractint as type Lsystem.
+
+sq20004* { ; Anthony Hanmer 11/10/2002
+  Angle 4 ; 4th 2x2 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f; Unexpected (as 1-sided interior) but true
+  f=f+f+f|g-g+f
+  g=gg
+  }
+
+sq20005~ { ; Anthony Hanmer 15/10/2002
+  Angle 4 ; 5th 2x2 square tile...
+  Axiom f ; when put with its mirror image.
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  f=f+!f|!f+f
+  }
+
+sq20005r { ; Anthony Hanmer 9/9/2003
+  Angle 4 ; 5th 2x2 square tile...
+  Axiom f ; when put with its mirror image.
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  f=g|f|g+!f|!f+g|f|g
+  g=gg
+  }
+
+sq20006~ { ; Anthony Hanmer 15/10/2002
+  Angle 4 ; 6th 2x2 square tile...
+  Axiom f ; when put with its mirror image.
+  ; X-axis reflectional symmetry
+  ; One of my VERY best HTs
+  f=f+!gf|!fg+f
+  g=gg
+  }
+
+sq20006b { ; Anthony Hanmer 4/9/2003
+  Angle 4 ; 180-degree rotation
+  Axiom f ; This IS a new 1/2-Sq flip tile.
+  ; X-axis reflectional symmetry
+  f=gg+gg+f+!gf|!fg+f+gg+gg
+  g=gg
+  }
+
+sq20014# { ; Anthony Hanmer 19/10/2002
+  Angle 4 ; 14th 2x2 square HTile, 8th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff+g+gf+gg
+  g=gg
+  }
+
+sq20021* { ; Anthony Hanmer 19/10/2002
+  Angle 4 ; 21st 2x2 square HTile
+  ; (1b)
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  Axiom c53f+c2f+c12f+c14f
+  f=gg+gg+f+f|f+f+gg+gg
+  g=gg
+  }
+
+sq20023* { ; Anthony Hanmer 19/10/2002
+  Angle 4 ; 23rd 2x2 square HTile
+  ; (4b)
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=gg+gg+f+f+f|g-g+f+gg+gg
+  g=gg
+  }
+
+sq20033* { ; Anthony Hanmer 22/10/2002
+  Angle 4 ; 33rd 2x2 square HTile, a-p
+  ; (2b)
+  ; One of my VERY best HTs
+  Axiom c53f+g+c12f
+  f=gg+g+f|f+g+ff+gg+gg
+  ; f=g+g+f|f-g+g+gg+ff+gg+gg; formerly
+  g=gg
+  }
+
+sq20034# { ; Anthony Hanmer 22/10/2002
+  Angle 4 ; 34th 2x2 square HTile, 17th dust
+  ; (9b)
+  ; One of my VERY best HTs:
+  ; One of the most picturesque square HTiles of side 2
+  Axiom c53f+c2f+c12f+c14f
+  f=gg+g+f|f+g+fg+gf+gg
+  ; f=g+g+f|f-g+g+fg+gf+gg+gg; formerly
+  g=gg
+  }
+
+sq20052# { ; Anthony Hanmer 23/10/2002
+  Angle 4 ; 52nd 2x2 square HTile, 33rd dust
+  ; (12b)
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=g+f+f+f+gg+gg+fg+gg+gg
+  g=gg
+  }
+
+sq20057# { ; Anthony Hanmer 23/10/2002
+  Angle 4 ; 57th 2x2 square HTile, 36th dust
+  ; ()
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f-f|g+g+g+gg+gg+gf+gg
+  g=gg
+  }
+
+sq20077~ { ; Anthony Hanmer 9/9/2003
+  Angle 4 ; 2x2 square tile (almost)...
+  Axiom f ; when put with its mirror image.
+  ; One of my interesting HTs
+  f=f+!gf|!gf+f
+  }
+
+sq20078~ { ; Anthony Hanmer 9/9/2003
+  Angle 4 ; 2x2 square tile...
+  Axiom f ; when put with its mirror image.
+  ; (45-degree reflection needed)
+  ; One of my VERY best HTs
+  f=f+!ff|!gg+f
+  g=gg
+  }
+
+sq20078b { ; Anthony Hanmer 4/9/2003
+  Angle 4 ; 180-degree rotation
+  Axiom f ; 1/2 a square, tiles with
+  ; its 45-degree reflection
+  ; One of my VERY best HTs
+  f=gg+gg+f+!ff|!gg+f+gg+gg
+  g=gg
+  }
+
+sq30001* { ; Anthony Hanmer 2000
+  Angle 4 ; My very first HT
+  ; (& 1st 3x3 square HT)
+  ; Before I knew the rules of HTs...
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=ff+f+f++ff++f+f+f
+  }
+
+sq30001c { ; Anthony Hanmer 17/8/2003, 15:00
+  Angle 4 ; Whoa, this is BIG:
+  ; Merely rotating each HT gives other new HTs!!!
+  ; One of my best HTs:  270 degrees
+  Axiom c53f+c2f+c12f+c14f
+  f=ggg+ggg+ggg+ff+f+f++ff++f+f+f+ggg
+  g=ggg
+  }
+
+sq30002* { ; Anthony Hanmer 2000
+  Angle 4 ; My 3rd HT
+  ; (2nd 3x3 square EDr)
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f+f++f+f++ff+ff
+  }
+
+sq30003* { ; Anthony Hanmer 2000
+  Angle 4 ; My 4th HT
+  ; (3rd 3x3 square HT)
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff++ff+f+f++f+f
+  }
+
+sq30003a { ; Anthony Hanmer 17/8/2003
+  Angle 4 ; 90-degree rotation of my 3rd HT
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=ggg+f+ff++ff+f+f++f+f+ggg+ggg+ggg
+  g=ggg
+  }
+
+sq30006# { ; Anthony Hanmer 5/10/2002
+  Angle 4 ; 6th 3x3 square HTile, 1st dust
+  ; One of my VERY best HTs
+  Axiom c53f+g+c12f
+  ; (25/7/2003:  This axiom proves that, for HTs with only
+  ; parallel lines, only 2 tiles are needed, not 4)
+  f=f+g+f|fgf|fg-g-f|f+gg+ff
+  g=ggg
+  }
+
+sq30029# { ; Anthony Hanmer 6/10/2002
+  Angle 4 ; 29th 3x3 square HTile, 24th dust
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  Axiom c53f+g+c12f
+  f=f+g-f|f-g+f|fgf|fg+gg+ff
+  g=ggg
+  }
+
+sq30453# { ; Anthony Hanmer 14/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+g+c12f
+  f=g+g+f|f+g+f|f-g+f|f+g+ff+ggg+fgg+ggg+ggg
+  g=ggg
+  }
+
+sq30454# { ; Anthony Hanmer 14/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+g+c12f
+  f=f+g+f|f+g+f|f-g+f|f+g+gf+ggg+gfg+ggg+ggg
+  g=ggg
+  }
+
+sq30475# { ; Anthony Hanmer 14/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+g+c12f
+  f=fgf+g+fgg|ffg+gg+gfg+g+gff|ggf+gg+ggg
+  g=ggg
+  }
+
+sq30558# { ; Anthony Hanmer 17/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq3 DNA
+  ; X-axis reflectional symmetry
+  Axiom c53f+g+c12f
+  f=FFF+G+fgf|fff+GG+GGG+G+gfg|ggg+GG+GGG
+  g=ggg
+  }
+
+sq30564# { ; Anthony Hanmer 17/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq3 DNA
+  Axiom c53f+g+c12f
+  f=FFF+G+ggf|fgf+GG+GGG+G+ffg|gfg+GG+GGG
+  g=ggg
+  }
+
+sq30581# { ; Anthony Hanmer 17/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq3 DNA:  variation on 30557
+  Axiom c53f+g+c12f
+  f=GFG+G+gff|fff+GG+FGF+G+fgg|ggg+GG+GGG
+  g=ggg
+  }
+
+sq30582# { ; Anthony Hanmer 17/8/2003
+  Angle 4 ; 3x3 square HTile, a-p dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq3 DNA:  variation on 30557
+  Axiom c53f+g+c12f
+  f=FGG+G+gff|fff+GG+GFF+G+fgg|ggg+GG+GGG
+  g=ggg
+  }
+
+sq40001* { ; Anthony Hanmer 10/9/2002
+  Angle 4 ; And now, the 1st 4x4 square HTile!
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f+f|f+f-f|f+ff+f+f+f|f-f+ff
+  }
+
+sq40003* { ; Anthony Hanmer 10/9/2002
+  Angle 4 ; 3rd 4x4 square HTile!
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f; (See 8914)
+  f=f+fff|f+f|ff|f-f-f|f-f+fff
+  }
+
+sq40005* { ; Anthony Hanmer 10/9/2002
+  Angle 4 ; 5th 4x4 square HTile!
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f-f+f|f-f-f|f-f|f-f+f+f|f+ff
+  }
+
+sq40006* { ; Anthony Hanmer 10/9/2002
+  Angle 4 ; 6th 4x4 square HTile!
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fff|ff-f|f-f+f+ff|ff+ff
+  }
+
+sq40011* { ; Anthony Hanmer 10/9/2002
+  Angle 4 ; 11th 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fff|f+f|f+f-f|f-f+f+f|f+ff
+  }
+
+sq40013* { ; Anthony Hanmer 12/9/2002
+  Angle 4 ; 13th 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff+f|f-f-f|ff+f|f-f+f+fff
+  }
+
+sq40018* { ; Anthony Hanmer 18/9/2002
+  Angle 4 ; 18th 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff+f|f-ff+ff+ff+f|f-ff+f
+  }
+
+sq40019* { ; Anthony Hanmer 18/9/2002
+  Angle 4 ; 19th 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff-f|f+ff+f+f|f+f+ff|ff+f
+  }
+
+sq40020* { ; Anthony Hanmer 18/9/2002
+  Angle 4 ; 20th 4x4 square HTile
+  ; One of my VERY best HTs
+  ; Seems to contain a 180-degree symmetrical half,
+  ; and 2 quarters which make this same shape together...
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fff|f-f|ff|f+ff+ff+f|f+f
+  }
+
+sq40021* { ; Anthony Hanmer 19/9/2002
+  Angle 4 ; 21st 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=ff+f+f-f-f|f+f+f-f+f+f-f|f+f+f
+  }
+
+sq40021c { ; Anthony Hanmer 25/8/2003
+  Angle 4 ; 270-degree rotation
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=gggg+gggg+gggg+ff+f+f-f-f|f+f+f-f+f+f-f|f+f+f+gggg
+  g=gggg
+  }
+
+sq40022* { ; Anthony Hanmer 19/9/2002
+  Angle 4 ; 22nd 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=ff+f+f-f|f+f+f|ff+f+f-f|f+f+f
+  }
+
+sq40023* { ; Anthony Hanmer 19/9/2002
+  Angle 4 ; 23rd 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fff|f+f|f+ff+f+f|f+f+f|f+f
+  }
+
+sq40024* { ; Anthony Hanmer 19/9/2002
+  Angle 4 ; 24th 4x4 square HTile
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff+f|ff|f+f+f|f+f+ff+f|f+f
+  }
+
+sq40025# { ; Anthony Hanmer 5/10/2002
+  Angle 4 ; 25th 4x4 square HTile, 1st dust
+  Axiom c53f+c2f+c12f+c14f
+  ; One of my VERY best HTs
+  f=f+fg+f|ff|f+g-f|fff|ff+f+fff
+  g=gggg; THIS allows "tile dusts"!
+  ; (N of gs equalling g is n of side units
+  ; in 1st iteration)
+  }
+
+sq40026# { ; Anthony Hanmer 7/10/2002
+  Angle 4 ; 26th 4x4 square HTile, 2nd dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fgf-f-f|f+f+fgf+f+f|f+f+f|f+f
+  g=gggg
+  }
+
+sq40031# { ; Anthony Hanmer 7/10/2002
+  Angle 4 ; 31st 4x4 square HTile, 7th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f|f+f+ff|ff+f+fgf+fg|gf-fgf+f
+  g=gggg
+  }
+
+sq40036# { ; Anthony Hanmer 7/10/2002
+  Angle 4 ; 36th 4x4 square HTile, 12th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f|f+f+fg+f|f-gf+f+f+f|f+gg+fg|gf-ggf+f
+  g=gggg
+  }
+
+sq40062# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 62nd 4x4 square HTile, 38th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+gggf|f-f|f-ggg+f+f+f-f-f|f+f+f-f+ff
+  g=gggg
+  }
+
+sq40064# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 64th 4x4 square HTile, 40th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ggg+f|fggf|fgg+ggg+f+f+f-f-f|f+f+f-f+ff
+  g=gggg
+  }
+
+sq40066# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 66th 4x4 square HTile, 42nd dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ggg+f|f-ggg+f+f+f-f-f|f+f+f-f+f+f|f+f
+  g=gggg
+  }
+
+sq40070# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 70th 4x4 square HTile, 46th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+fggf|fggf+f+f+f-f-f|f+f+f-f+ff
+  g=gggg
+  }
+
+sq40071# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 71st 4x4 square HTile, 47th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+f|f+f+f+f-f-f|f+f+f-f+f+ggg-f|f+ggg+f
+  g=gggg
+  }
+
+sq40081# { ; Anthony Hanmer 8/10/2002
+  Angle 4 ; 81st 4x4 square HTile, 57th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+gff|f+f|f+f-f|f-g+f+f|f+f+g-f|f+g+f
+  g=gggg
+  }
+
+sq40089# { ; Anthony Hanmer 9/10/2002
+  Angle 4 ; 89th 4x4 square HTile, 65th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff-gf|fg+f-f|ff|f+f+f+f|f+ff
+  g=gggg
+  }
+
+sq40090# { ; Anthony Hanmer 9/10/2002
+  Angle 4 ; 90th 4x4 square HTile, 66th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+g-ff|ff+g+f+fgf|fgf+f+f-f|f+f+f
+  g=gggg
+  }
+
+sq40092# { ; Anthony Hanmer 10/10/2002
+  Angle 4 ; 92nd 4x4 square HTile, 68th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+g-ff|ff+g+f+fg+f|f-gf+f+f-f|f+f+f
+  g=gggg
+  }
+
+sq40093# { ; Anthony Hanmer 10/10/2002
+  Angle 4 ; 93rd 4x4 square HTile, 69th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+g-ff|ff+g+f+fg-f|f+gf+f+f-f|f+f+f
+  g=gggg
+  }
+
+sq40115# { ; Anthony Hanmer 9/10/2002
+  Angle 4 ; 115th 4x4 square HTile, 91st dust
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  Axiom c53f+c2f+c12f+c14f
+  f=f+g-ff|ff+g+f+fgf|fgf+f+ggg-f|fggf|fgg-ggg+f
+  g=gggg
+  }
+
+sq40132# { ; Anthony Hanmer 17/10/2002
+  Angle 4 ; 132nd 4x4 square HTile, 108th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff|f-f|ff|f+f+f+fgf|fgf+ff
+  g=gggg
+  }
+
+sq40182# { ; Anthony Hanmer 17/10/2002
+  Angle 4 ; 182nd 4x4 square HTile, 159th dust
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  Axiom c53f+c2f+c12f+c14f
+  f=ff+f+f|f+f|f+f|f+f+f+ggg+ggf|fggf|f+ggg+f
+  g=gggg
+  }
+
+sq40198# { ; Anthony Hanmer 18/10/2002
+  Angle 4 ; 198th 4x4 square HTile, 175th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff-gf|fg+f-f|f-f+f+f|f+f+gf|fg+f
+  g=gggg
+  }
+
+sq40220# { ; Anthony Hanmer 18/10/2002
+  Angle 4 ; 220th 4x4 square HTile, 196th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+gg-f|f+gg+f+f+f|f-f+f+fgf|fg+f|f+f+f
+  g=gggg
+  }
+
+sq40221# { ; Anthony Hanmer 18/10/2002
+  Angle 4 ; 221st 4x4 square HTile, 197th dust
+  ; One of my VERY best HTs
+  Axiom c53f+c2f+c12f+c14f
+  f=f+gg-f|f+gg+f+f+f|f-f+f+fgg+gf|fg-gg+f|f+f+f
+  g=gggg
+  }
+
+sq41262# { ; Anthony Hanmer 15/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA
+  Axiom c53f+g+c12f
+  f=FFFF+G+fffg|ggff+G+fg|gf+GG+GGGG+G+gggf|ffgg+G+gf|fg+GG+GGGG
+  g=gggg
+  }
+
+sq41265# { ; Anthony Hanmer 15/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA
+  Axiom c53f+g+c12f
+  f=FFFF+G+fffg|ggff+G+gf|gf+GG+GGGG+G+gggf|ffgg+G+fg|fg+GG+GGGG
+  g=gggg
+  }
+
+sq41320# { ; Anthony Hanmer 16/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA:  variation on 41135
+  Axiom c53f+g+c12f
+  f=FGFF+G+fgfg|gfgf+G+gg|ff+GG+GFGG+G+gfgf|fgfg+G+ff|gg+GG+GGGG
+  g=gggg
+  }
+
+sq41559# { ; Anthony Hanmer 16/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA:  variation on 41151
+  Axiom c53f+g+c12f
+  f=GFFF+G+ffgg|ggff+G+gg|ff+GG+FGGG+G+ggff|ffgg+G+ff|gg+GG+GGGG
+  g=gggg
+  }
+
+sq41566# { ; Anthony Hanmer 16/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA:  variation on 41151
+  Axiom c53f+g+c12f
+  f=GFGF+G+ffgg|ggff+G+gg|ff+GG+FGFG+G+ggff|ffgg+G+ff|gg+GG+GGGG
+  g=gggg
+  }
+
+sq41574# { ; Anthony Hanmer 16/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA:  variation on 41152
+  Axiom c53f+g+c12f
+  f=GFFF+G+ffgg|ggff+G+fg|gf+GG+FGGG+G+ggff|ffgg+G+gf|fg+GG+GGGG
+  g=gggg
+  }
+
+sq41583# { ; Anthony Hanmer 16/8/2003
+  Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best HTs, using a modified Sq4 DNA:  variation on 41152
+  Axiom c53f+g+c12f
+  f=GFFG+G+ffgg|ggff+G+fg|gf+GG+FGGF+G+ggff|ffgg+G+gf|fg+GG+GGGG
+  g=gggg
+  }
+
+sq50172# { ; Anthony Hanmer 23/11/2002
+  Angle 4 ; 172nd 5x5 square HTile, dust
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=f+gf|fg+f+fff|f-f|f-f-f|f-f+f+f+f|f-f+f+f|f+f+ggggg+ggggg+g+f|f+gggg+ggggg
+  g=ggggg
+  }
+
+sq50173# { ; Anthony Hanmer 23/11/2002
+  Angle 4 ; 173rd 5x5 square HTile, dust
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff|ff+f+gff|f-f|f-f-f|f-g+f+f+f|f-f+f+f|f+f+gg+f|f+ggg+ggggg+ggggg+ggggg
+  g=ggggg
+  }
+
+sq50174# { ; Anthony Hanmer 23/11/2002
+  Angle 4 ; 174th 5x5 square HTile, dust
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff|ff+f+gff|f-f|f-f-f|f-g+f+f+f|f-f+f+f|f+f+ggggg+gg+f|f+ggg+ggggg+ggggg
+  g=ggggg
+  }
+
+sq50175# { ; Anthony Hanmer 23/11/2002
+  Angle 4 ; 175th 5x5 square HTile, dust
+  ; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=f+ff|ff+f+gff|f-f|f-f-f|f-g+f+f+f|f-f+f+f|f+f+ggggg+ggggg+gg+f|f+ggg+ggggg
+  g=ggggg
+  }
+
+sq50217# { ; Anthony Hanmer 3/8/2003
+  Angle 4 ; 5x5 square HTile, all-lines-parallel dust, tiles in only 2
+  ; One of my VERY best Sq5 HTs of this type:  WAY COOL, a personal a-p favourite
+  Axiom c53f+g+c12f
+  f=FFFFF+G+ffggf|fggff+G+fgfgg|ggfgf+G+ffgfg|gfgff+G+gffgg|ggffg+G+GGGGG+GGGGG+GGGGG
+  g=ggggg
+  }
+
+Sq60727 { ; Anthony Hanmer 24/5/2004
+  Angle 4 ; Sq6 HT; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=F+fff|fff+F+ffff|ffff+F+f|f+F+ff|ff+F+f|f+F+GGGGGG+GGGGGG+GGG+gfgf|fgfg+GG+gff|ffg+G+GGGGGG
+  g=gggggg
+  }
+
+Sq60728 { ; Anthony Hanmer 24/5/2004
+  Angle 4 ; Sq6 HT; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=F+fff|fff+F+ffff|ffff+F+f|f+F+ff|ff+F+f|f+G+GGGGGG+GGGGGG+GGG+gfgf|fgfg+GG+gff|ffg+F+GGGGGG
+  g=gggggg
+  }
+
+Sq60729 { ; Anthony Hanmer 24/5/2004
+  Angle 4 ; Sq6 HT; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=F+fff|fff+F+ffff|ffff+F+f|f+F+ff|ff+G+f|f+G+GGGGGG+GGGGGG+GGG+gfgf|fgfg+GF+gff|ffg+F+GGGGGG
+  g=gggggg
+  }
+
+Sq60839 { ; Anthony Hanmer 24/5/2004
+  Angle 4 ; Sq6 HT; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=F+fff|fff+F+fffg-gf|fg+gfff+F+f|f+F+gg|ff+F+f|f+F+GGGGGG+GGGGGG+GGG+gff|ffg+G+ff|gg+G+gff|ffg+G+GGGGGG
+  g=gggggg
+  }
+
+Sq60840 { ; Anthony Hanmer 24/5/2004
+  Angle 4 ; Sq6 HT; One of my VERY best HTs:  WAY cool
+  Axiom c53f+c2f+c12f+c14f
+  f=F+fff|fff+F+fffg-gf|fg+gfff+F+f|f+F+gg|ff+F+f|f+G+GGGGGG+GGGGGG+GGG+gff|ffg+G+ff|gg+G+gff|ffg+F+GGGGGG
+  g=gggggg
+  }
+
+tr20001* { ; Anthony Hanmer 2000
+  Angle 6 ; My 2nd HT
+  ; (& 1st 2x2 triangular HT)
+  ; I think there are no more 2x2 triangular HTiles to be found.
+  ; (I am later proved to be SO wrong.)
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=f+f|f++f
+  }
+
+tr20003* { ; Anthony Hanmer 11/10/2002
+  Angle 6 ; 3rd 2x2 triangular HTile
+  ; 1-sided interior
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f; Unexpected but true
+  f=f+f|g--f|g+f
+  g=gg
+  }
+
+tr20009* { ; Anthony Hanmer 19/10/2002
+  Angle 6 ; 9th 2x2 triangular HTile
+  ; One of my VERY best HTs:  sheer simplicity
+  Axiom c9f++c12f++c14f
+  f=f+f|g--f++f++gg
+  g=gg
+  }
+
+tr20014* { ; Anthony Hanmer 23/10/2002
+  Angle 6 ; 14th 2x2 triangular HTile
+  ; X-axis reflectional symmetry
+  ; One of my VERY best HTs:  again, very simple
+  Axiom c9f++c12f++c14f
+  f=gg++g+f|f++f++fg++gg
+  g=gg
+  }
+
+tr30001* { ; Anthony Hanmer 9/9/2002
+  Angle 6 ; Eureka!  The 2nd triangular HT!
+  Axiom c9f++c12f++c14f; (1st 3x3 triangular HT)
+  ; One of my VERY best HTs
+  f=f++f|f++ff|ff++ff
+  }
+
+tr30002* { ; Anthony Hanmer 9/9/2002
+  Angle 6 ; Eureka!  The 3rd triangular HT!
+  Axiom c9f++c12f++c14f; (2nd 3x3 triangular HT)
+  ; One of my VERY best HTs
+  f=f++f--f--f|f++f++f+ff
+  }
+
+tr30009# { ; Anthony Hanmer 5/10/2002
+  Angle 6 ; 9th 3x3 triangular HTile, 1st dust
+  Axiom c9f++c12f++c14f; WOW - "Koch (variation) Dust Tile"...!
+  ; One of my VERY best HTs
+  ; X-axis reflectional symmetry
+  f=f+fg++f|f--gf++f++f|f+f
+  g=ggg
+  }
+
+tr30010# { ; Anthony Hanmer 5/10/2002
+  Angle 6 ; 10th 3x3 triangular HTile, 2nd dust
+  Axiom c9f++c12f++c14f; WOW - "Sierpinski (variation) Dust Tile"...!
+  ; One of my VERY best HTs
+  ; X-axis symmetry
+  f=f+gf++f++f|f--f--fg++ff
+  g=ggg
+  }
+
+tr30221* { ; Anthony Hanmer 24/5/2003
+  Angle 6 ; 221st 3x3 triangular HTile
+  ; 1-sided interior
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=f+f++f|g--g++f+f|g--f--f--g++f++ggg++gg+g|f++g++ggg
+  g=ggg
+  }
+
+tr30244* { ; Anthony Hanmer 24/5/2003
+  Angle 6 ; 244th 3x3 triangular HTile
+  ; 1-sided interior
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=f++f|g++f--f|g++g++fg++g++g|f++g--g|f++f++gg++ggf++ggg
+  g=ggg
+  }
+
+tr40071* { ; Anthony Hanmer 8/11/2002
+  Angle 6 ; 71st 4x4 triangular HTile
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=f++f--f--f|f++f++f+f++f--f--f|f++f++f+fg++gggg++gggf++gggg
+  g=gggg
+  }
+
+tr40071a { ; Anthony Hanmer 13/9/2003
+  Angle 6 ; 120-degree rotation
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=gggg++f++f--f--f|f++f++f+f++f--f--f|f++f++f+fg++gggg++gggf++gggg++gggg++gggg
+  g=gggg
+  }
+
+tr40398# { ; Anthony Hanmer 15/9/2003
+  Angle 6 ; 4x4 triangular HTile
+  ; Variation on Tr40233, re-drawn using the L4 DNA
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=F+ffg|ggf++G+fg|gf++F+g|g++G++G+ggf|gfg++G+gg|gg++G+g|g++G++G+ggg|fgg++F+gf|fg++G+f|f++F++GGGG
+  g=gggg
+  }
+
+tr40400# { ; Anthony Hanmer 15/9/2003
+  Angle 6 ; 4x4 triangular HTile
+  ; Variation on Tr40233, re-drawn using the L4 DNA
+  ; One of my VERY best HTs
+  Axiom c9f++c12f++c14f
+  f=F+ggg|ggg++F+fg|gf++G+g|g++G++G+fff|gff++G+gg|gg++G+g|g++G++G+ggg|fgg++G+gf|fg++F+f|f++F++GGGG
+  g=gggg
+  }
