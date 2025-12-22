@@ -36177,6 +36177,7 @@ trmoe-011 {
   z=c=pixel:
   z=fn1(z)*fn2(z)*fn3(z)*1/z+c
   |z|<=4
+}
 
 Truncated_Stalks {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
