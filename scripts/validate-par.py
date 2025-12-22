@@ -240,7 +240,7 @@ def validate_parameter_file(filename, quiet=False):
                 if ifsfile:
                     validate_file_reference(param_name, param_start_line, 'IFS', 
                                           ifsfile, ifs_dir, errors)
-                ifsname = params.get('ifsname')
+                ifsname = params.get('ifs')
                 if ifsname:
                     validate_file_entry(param_name, param_start_line, 'IFS',
                                         ifsfile, ifsname, ifs_dir, errors)
