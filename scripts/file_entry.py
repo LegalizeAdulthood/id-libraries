@@ -9,7 +9,7 @@ All these file types share a common format:
 """
 import re
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 
 @dataclass
@@ -35,6 +35,141 @@ class FileEntry:
     def __post_init__(self):
         if self.body is None:
             self.body = []
+
+
+class ParamSet:
+    """
+    Represents a parameter set with parsed name-value pairs.
+    
+    A parameter set wraps a FileEntry whose body contains name=value pairs.
+    Parameter names and values are separated by '=' with no whitespace allowed
+    around the '=' or within values. Values extend to the next whitespace.
+    
+    Parameters without values (flags) are stored with an empty string as the value.
+    """
+    
+    def __init__(self, file_entry: FileEntry):
+        """
+        Initialize ParamSet from a FileEntry.
+        
+        Args:
+            file_entry: The FileEntry to parse
+        """
+        self.entry = file_entry
+        self._params = None
+    
+    @property
+    def name(self) -> str:
+        """Get the parameter set name."""
+        return self.entry.name
+    
+    @property
+    def paren_value(self) -> Optional[str]:
+        """Get the parentheses value."""
+        return self.entry.paren_value
+    
+    @property
+    def bracket_value(self) -> Optional[str]:
+        """Get the bracket value."""
+        return self.entry.bracket_value
+    
+    @property
+    def start_line(self) -> int:
+        """Get the starting line number."""
+        return self.entry.start_line
+    
+    @property
+    def end_line(self) -> int:
+        """Get the ending line number."""
+        return self.entry.end_line
+    
+    @property
+    def body(self) -> List[str]:
+        """Get the raw body lines."""
+        return self.entry.body
+    
+    @property
+    def params(self) -> Dict[str, str]:
+        """
+        Get the parsed parameters as a dictionary.
+        
+        Returns:
+            Dictionary mapping parameter names to their values
+        """
+        if self._params is None:
+            self._params = self._parse_params()
+        return self._params
+    
+    def _parse_params(self) -> Dict[str, str]:
+        """
+        Parse the body lines into name-value pairs.
+        
+        Returns:
+            Dictionary of parameter name to value mappings
+        """
+        params = {}
+        
+        # Join all body lines into a single string
+        body_text = ' '.join(self.entry.body)
+        
+        # Split on whitespace to get individual tokens
+        tokens = body_text.split()
+        
+        # Process each token
+        for token in tokens:
+            if '=' in token:
+                # Split on '=' to separate name and value
+                name, value = token.split('=', 1)
+                params[name.lower()] = value
+            else:
+                # Token without '=' is a flag parameter (present but no value)
+                params[token.lower()] = ''
+        
+        return params
+    
+    def get(self, param_name: str, default: Optional[str] = None) -> Optional[str]:
+        """
+        Get a parameter value by name.
+        
+        Args:
+            param_name: The parameter name (case-insensitive)
+            default: Default value if parameter not found
+            
+        Returns:
+            The parameter value or default if not found
+        """
+        return self.params.get(param_name.lower(), default)
+    
+    def __getitem__(self, param_name: str) -> str:
+        """
+        Get a parameter value by name using dictionary syntax.
+        
+        Args:
+            param_name: The parameter name (case-insensitive)
+            
+        Returns:
+            The parameter value
+            
+        Raises:
+            KeyError: If parameter not found
+        """
+        return self.params[param_name.lower()]
+    
+    def __contains__(self, param_name: str) -> bool:
+        """
+        Check if a parameter exists.
+        
+        Args:
+            param_name: The parameter name (case-insensitive)
+            
+        Returns:
+            True if parameter exists, False otherwise
+        """
+        return param_name.lower() in self.params
+    
+    def __repr__(self) -> str:
+        """Return string representation of ParamSet."""
+        return f"ParamSet(name={self.name!r}, params={len(self.params)} items)"
 
 
 def strip_comment(line):
