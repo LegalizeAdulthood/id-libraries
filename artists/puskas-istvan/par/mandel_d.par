@@ -1,0 +1,312 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+; None of these are standard undistorted Mandelbrot images
+
+mandel_4spiral?    { ; 4? spiral, p1=2
+  reset=2000 type=mandel
+  corners=-0.7500006571937/-0.7499956587937/0.003435702735678/0.0034394515\
+  35678 params=2/0 float=y maxiter=32767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mandel_p1_0_5      { ; spirals, lines, caves, everything visible with SF7
+                     ; (1024*768)
+  reset=1920 type=mandel passes=b
+  corners=-0.552754859/-0.482354859/0.481640201/0.534440201
+  params=0.5/0 float=y maxiter=4095 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+mandel_spiral1     { ; 3- and many-arm spiral, p1=1, p2=1
+  reset=1920 type=mandel passes=b
+  corners=-0.182982614/-0.177305188/-0.669151247/-0.664893031
+  params=1/1 maxiter=1023 inside=255
+  }
+
+mandel_spiral3     { ; many types of spirals, min. res.: 640*480
+  reset=1920 type=mandel passes=b
+  corners=-0.789282501/-0.734883785/0.0655263662/0.106329322
+  params=2/0 maxiter=255 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+mandel_lines1    {
+  reset=1920 type=mandel passes=b
+  corners=-0.7549625705/-0.7474825705/0.04924273869/0.05485273869
+  params=0.1/0 float=y maxiter=4095 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+mandel_lines2    {
+  reset=1920 type=mandel passes=b
+  corners=-0.7522023824/-0.7437223824/0.07558884422/0.08194884422
+  params=0.2/0 float=y maxiter=4095 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+mandeldistort1     { ; p1=3.8, near the center
+  reset=1920 type=mandel
+  corners=-1.96677789875/-1.96675837535/-6.92582124205e-006/7.40265854255e\
+  -006 params=3.8/0 float=y maxiter=255 inside=255
+  }
+
+mini4^mandel2      { ; far from holes and any axis
+  reset=1920 type=mandel4 passes=b
+  corners=-0.7295082724336226/-0.72950827243323202/0.49860401309297553/0.4\
+  9860401309326852 params=0/0 float=y maxiter=255 inside=255
+  }
+
+mini4^mandel3      { ; inside a hole
+  reset=1920 type=mandel4 passes=b
+  corners=-0.23926363670607537/-0.23926363670536244/0.41605317258814423/0.\
+  41605317258867891 params=0/0 float=y maxiter=2047 inside=255
+  }
+
+mini3^mandel2      { ; in the part equivalent to the upper peak
+  reset=1920 type=manzpower passes=b
+  corners=0.5748912085833187/0.5748912116637153/0.7163271440330391/0.71632\
+  71463981217 params=0/0/3/0 float=y maxiter=255 inside=255
+  }
+
+magnet1m_spirals1 { ; 19 & 2 arm spirals
+  reset=1920 type=magnet1m passes=b
+  corners=-0.1854867603/-0.1757832083/0.1145864946/0.1218641586
+  params=0/0 float=y maxiter=255 bailout=2000000000 inside=255
+  }
+
+magnet2m_1         { ; Mandelbrot-shape 1
+  reset=1920 type=magnet2m passes=b
+  corners=0.085063713765/0.085713713765/1.009248737/1.009736237
+  params=0/0 float=y maxiter=255 inside=255
+  }
+
+bug!               {
+  reset=2000 type=marksmandelpwr function=sqr
+  corners=-1.09357023/-1.09782845/-0.00284606218/0.00283908844/-1.09782845\
+  /0.00283908844 params=0/0 maxiter=1023 bailout=2000000000 inside=255
+  sound=off
+  colors=000111<4>EEEGGGJIIMKKOMN<3>YVW`YZaZ_<3>hffighkii<2>pno000<4>00000\
+  0110311<7>LC8ND9QE9<3>ZLE`NFaPHcRI<3>iZQjaSlcUnfWpgZ<3>vqgKO`<2>OUeQWfSY\
+  hU_jValXdn<2>bisdkufnvhpxjrz000111124<6>ADLBENDGP<3>IMZ000<158>000
+  }
+
+scorpion!          {
+  reset=2000 type=marksmandelpwr function=sqr
+  corners=-1.201076196463/-1.201081006191/-3.32082075593e-006/3.0921499105\
+  73e-006/-1.201081006191/3.092149910573e-006 params=0/0 float=y
+  maxiter=1023 bailout=2000000000 inside=255 sound=off
+  colors=zZ0<24>zZ0zZ0zZ0<3>zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0z\
+  c0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0zc0zZ0L\
+  A0<52>`I0`I0`J0<2>aJ0aJ0`I0<124>000
+  }
+
+manzpower15_1      {
+  reset=2000 type=manzpower center-mag=3.665e-006/0.979899/12.85333
+  params=0/0/15/0 float=y maxiter=255 inside=bof60 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+manzpower20_1      {
+  reset=2000 type=manzpower
+  center-mag=+0.01953417826315965/+0.94914905960554820/261.3724
+  params=0/0/20/0 float=y maxiter=255 inside=bof60 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mandelaxis1        {
+  reset=2000 type=mandel
+  center-mag=-1.75461/2.3283e-008/2667.171/0.9998 params=1/0
+  maxiter=35 inside=35 sound=off
+  colors=CC6II8KI8KK8MKAMMA<2>SSGUUIXXIXXKZXKZZKZZM`ZM``ObbOddQddSffS<3>nn\
+  `ppbrrbrrdttdttfvvfvvhxxhxxjzzjzzlzzzccc<217>ccc
+  }
+
+upperfibrezoom1    { ; 'passes=g' fails with this
+  reset=2000 type=mandel passes=b
+  center-mag=-0.16226765800000000/+1.03002607500000000/79145.23/0.9948
+  params=0.01/0 maxiter=2047 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+bug2               {
+  reset=2000 type=manzpower
+  corners=-1.1640894/-0.33125266/0.5552245/-0.5552245/-0.33125266/-0.55522\
+  45 params=1.4/0/6/0 float=y maxiter=255 bailout=100 inside=bof60
+  sound=off
+  colors=0K0<3>0P00R00S00U0Y00<3>n00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGz\
+  j<3>0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>b\
+  zgfzejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntp\
+  purrv<3>zzz<31>000
+  }
+
+marksmandel_bof60  {
+  reset=2000 type=marksmandel center-mag=8.94e-006/5.72e-006/0.6666692
+  params=0/0/6 maxiter=255 inside=bof60 cyclerange=1/15 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<15>zzW
+  }
+
+hearts             {
+  reset=2000 type=barnsleym3
+  center-mag=0.257254/0.226028/37.25882/1.0003/45/30.39 params=0/0
+  maxiter=2047 inside=255 sound=off
+  }
+
+inverted_magnet1m  {
+  reset=2000 type=magnet1m
+  center-mag=+1.16641809069349200/-0.00000000000045741/0.7028162
+  params=0/0 float=y maxiter=255 inside=0 invert=0.001/1.2/0
+  periodicity=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+distortedzoom1     {
+  reset=2000 type=mandel
+  center-mag=-1.18645093500000000/+0.30106315750000000/3079.041/1.0004
+  params=0.001/0 maxiter=2047 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+distortedspiral1   {
+  reset=2000 type=mandel
+  center-mag=-1.18671617000000000/+0.30118725050000000/61160.21/1.0051
+  params=0.001/0 maxiter=2047 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+distortedzoom2     {
+  reset=2000 type=mandel
+  center-mag=-0.04174135345000000/+0.98595871149999990/37902.48/0.995
+  params=0/0.001 maxiter=16383 inside=255 cyclerange=1/15 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+distortedzoom3     {
+  reset=2000 type=mandel
+  center-mag=-0.04525270493514755/+0.98702502312116880/701734
+  params=0/0.001 float=y maxiter=16383 inside=255 cyclerange=1/15
+  sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+almost_connected   { ; Looks like it would contain "joints" like the spirals ->
+                     ; of the unwarped Mandelbrot-set (connections with a mini-
+                     ; Mandel in the middle), but the centers of that areas are
+                     ; empty and not connected
+  reset=2000 type=mandel center-mag=0.203076/0.562147/173.294
+  params=-1.2/0 maxiter=4095 inside=0 sound=off
+  colors=00F<24>00q00s00t<3>00z<10>0Xz<4>0kz<9>0IO0FK0CG<3>000<25>QnQRpRSr\
+  S<3>WzW<26>W`jW_jWZk<2>WWm<21>RAFR9EQ8C<3>Q46Q34P23P11P00<4>S30T40U50V60\
+  V60W70<15>hK0iL0jM0<2>lO0mP0lO0<62>00F
+  }
+
+manfn+zsqrd_dem  { ; min. resolution: 640*480*256
+  reset=1920 type=manfn+zsqrd function=sqr passes=t
+  center-mag=-0.88200000000000000/+0.00000000000000000/100 params=0/0
+  float=y maxiter=255 inside=0 distest=2/71/640/480
+  colors=000<41>y00z00z10<39>zy0zz0zz1<39>zzyzzzyzz<41>1zz0zz0yz<40>01z00z\
+  00y<39>000
+  }
+
+manfn+zsqrd_sf5      { ; use resolution 640*480*256
+  reset=1920 type=manfn+zsqrd function=sqr passes=1
+  center-mag=0/0/6.149733e-005 params=0/0
+  float=y maxiter=255 inside=0 distest=2/71/640/480
+  colors=000<41>y00z00z10<39>zy0zz0zz1<39>zzyzzzyzz<41>1zz0zz0yz<40>01z00z\
+  00y<39>000
+  }
+
+2spirals         {
+  reset=2000 type=mandel
+  center-mag=-1.24988244514106400/+0.03695150375939861/7991.689
+  params=0.75/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+strangespirals     {
+  reset=2000 type=mandel
+  center-mag=-0.78465261366771090/+0.14362001413533870/18027.76
+  params=1.4/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+manythreads        {
+  reset=2000 type=mandel
+  center-mag=-0.75010825939472570/+0.02442377620265452/22926.59
+  params=1.4112135/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<24>00n00p00r<2>00x00z00z<24>nnzppzrrz<2>xxzzzzzzz<24>CCzAAz88\
+  z<2>22z00z00z<24>00C00A008<2>002000000<24>P0nQ0pR0r<2>U0xW0zW0z<24>tnzup\
+  zvrz<2>yxzzzzzzz<24>aCz`Az_8z<2>X2zW0zW0z<30>000
+  }
+
+stretchedminij_1   { ; with a square inside
+  reset=2000 type=mandel
+  center-mag=-1.74854024721003000/+0.00000646146616541/1195815
+  params=1e-006/0 float=y maxiter=1024 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+axismini1          {
+  reset=2000 type=mandel
+  center-mag=-1.74854036050156600/+0.00000000000000000/4371585
+  params=8e-007/0 float=y maxiter=1024 inside=255 sound=off
+  colors=000<14>h00k00n00<3>z00<15>zk0<4>zz0<15>zH0zE0zB0<3>z00<15>F00<4>0\
+  00<14>00e00h00k<2>00t00w02w<13>0Yy0_y0az<3>0kz<15>0Dx0Bw08w<2>02w00w00t<\
+  13>00H00E00B<2>002000220<13>eW0hY0k_0<3>wh0<14>yoMypOzqQ<2>zrUzsWzrU<14>\
+  xk8wj7wj5<3>wh0<20>000
+  }
+
+mandeldistort2zoom { ; p1=3.5, near the center
+  reset=2000 type=mandel
+  corners=-1.74978130036/-1.74976197236/3.66617744362e-005/5.11577744362e-\
+  005 params=3.5/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axiszoom1          { ; p1=3.5, good colors
+  reset=2000 type=mandel
+  corners=-1.74971335090188/-1.74971331743228/-2.67064887218002e-009/2.243\
+  15511278201e-008 params=3.5/0 float=y maxiter=8191 inside=255
+  sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+

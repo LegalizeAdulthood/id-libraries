@@ -1,0 +1,59 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+
+1                  {
+  reset=1920 type=julia passes=b
+  corners=-1.495988/1.495992/-1.121982/1.122003
+  params=0.260537326335907/0.001965820789337158 maxiter=4095
+  inside=255
+  colors=000<45>0Vy0Wz0Wz<44>0yz0zz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<44>0Xz\
+  0Wz0Wz0Wz<46>000
+  }
+
+1cycle~128        {
+  reset=1920 type=julia
+  corners=0.460539987/0.541435987/-0.0298420101/0.0308299899
+  params=0.25058/0 float=y maxiter=32767 inside=255
+  colors=000<29>00x00z00z<29>xxzzzzzzz<29>22z00z00z<29>002000000<29>0ix0jz\
+  0jz<29>xzzzzzzzz<29>2kz0jz0jz<30>000
+  }
+
+sp_3arm          {
+  reset=1920 type=julia corners=-2/2/-1.5/1.5
+  params=-0.09247648902821316/0.6557788944723618 float=y maxiter=255
+  inside=255 periodicity=0
+  }
+
+sp_4arm          {
+  reset=1920 type=julia corners=-2/2/-1.5/1.5
+  params=0.2711598746081505/0.4899497487437186 float=y maxiter=255
+  inside=255 periodicity=0
+  }
+
+3arm_spiral          {
+  reset=1920 type=julia
+  corners=-0.56970533/0.11829467/0.14801504/0.66401504
+  params=-0.09247648902821316/0.6557788944723618 float=y maxiter=1023
+  inside=0 periodicity=0
+  colors=000<14>z00<15>zz0<15>0zz<14>04z00z20v<14>W00<31>0zz<15>zzW<30>2X1\
+  0W00V1<29>01V00W22X<30>zzz<31>000
+  }
+
+manyarm_spiral       { ; min. resolution: 320*400
+  reset=1920 type=julia
+  corners=-0.50822287/0.17977713/0.23091786/0.74691786
+  params=0.1/0.605 float=y maxiter=2047 inside=255
+  colors=000<14>z00<15>zz0<15>0zz<14>04z00z20v<14>W00<31>0zz<15>zzW<30>2X1\
+  0W00V1<29>01V00W22X<30>zzz<31>000
+  }
+
+2                  {
+  reset=2000 type=julia
+  center-mag=-0.00000000000000001/+0.00000000000000001/233.5575
+  params=-0.7112982758620687/0.4736183571428572 float=y maxiter=767
+  inside=0 periodicity=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+

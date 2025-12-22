@@ -1,0 +1,144 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+
+tetrate1           { ; looks like broken glass
+  reset=1920 type=tetrate
+  corners=-1.88202485/-1.83358965/0.000182544724/0.0365089447
+  params=0/0 float=y maxiter=255 inside=0 decomp=256
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  }
+
+lambdafn_flip_1    { ; Hypnotic? Start colorcycling and hit 8 then ->
+                     ; ARROW UP many times
+  reset=2000 type=lambdafn function=flip
+  corners=-3.996887/4.005371/-3.003159/3 params=1/1 maxiter=255
+  inside=0 decomp=256 cyclerange=0/255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>O00K00G00<3>000<9>b60f60j70<3\
+  >z90<9>O30K30G20<3>000<9>bB0fC0jE0<3>zI0<9>O70K60G50<3>000<9>bH0fJ0jK0<3\
+  >zR0<9>OA0K80G70<3>000<9>bN0fP0jR0<3>z_0<7>WI0SG0OE0KB0G90C70<2>000<9>bS\
+  0fV0jY0<3>zh0<9>OH0KE0GB0<3>000<9>bY0f`0jd0<3>zq0<9>OK0KH0GE0<3>000<9>bb\
+  0ff0jj0<3>zz0<15>000
+  }
+
+ice1               {
+  reset=1920 type=barnsleym1
+  corners=1.0583717/1.9289637/-0.326472/0.326472 params=0/0 float=y
+  maxiter=255 inside=0 decomp=256 periodicity=0
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  cyclerange=0/255
+  }
+
+waves          {
+  reset=1920 type=barnsleyj1 corners=-2/2/-1.5/1.5
+  params=1.025078369905954/0.03090452261306532 float=y maxiter=255
+  inside=0 decomp=256 periodicity=0
+  colors=000zzz<125>Wzzzzz<40>1sz0sz0rz<41>0Gz0Fy0Fw<39>000
+  }
+
+tetrate2           {
+  reset=1920 type=tetrate
+  corners=-2.0112023/-1.5461143/0.081873407/0.43068941 params=2/0
+  float=y maxiter=511 inside=0 decomp=256
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  }
+
+tetrate3a          {
+  reset=1920 type=tetrate
+  corners=-0.85748404/-0.39182004/0.86557701/1.214825 params=10/0
+  float=y maxiter=511 inside=0 decomp=256
+  colors=000<29>J00K00J12<29>FTuFUwGVu<29>yy2zz0zv0<14>z00<15>z0z<46>1y10z\
+  01z1<46>zzz<31>000
+  }
+
+tetrate3b          {
+  reset=1920 type=tetrate
+  corners=-0.85748404/-0.39182004/0.86557701/1.214825 params=10/0
+  float=y maxiter=511 inside=0 decomp=256
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  }
+
+tetrate4           { ; fast
+  reset=1920 type=tetrate
+  corners=-1.9848025/-1.7288025/0.086713568/0.27871357 params=0/0
+  float=y maxiter=32767 inside=0 decomp=256
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  }
+
+tetrate5           { ; waves
+  reset=1920 type=tetrate
+  corners=-16.73181/13.19075/-23.83483/-1.392909 params=20/20 float=y
+  maxiter=511 inside=0 decomp=256
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  }
+
+sqr_recip_sin_1  {
+  reset=1920 type=sqr(1/fn) function=sin
+  corners=0.7407407/-0.7407407/-0.9876543/0.9876543/-0.7407407/0.9876543
+  float=y maxiter=511 inside=bof60 decomp=256
+  colors=000<29>V0FW0GX0F<30>z00z10z30<28>zi0zk0zk2<29>zzxzzzzzz<30>2zz0zz\
+  0yz<29>FXzGWzFVz<29>01z00z00x<29>000
+  }
+
+ice2               {
+  reset=1920 type=barnsleym1
+  corners=1.1855873/1.523377/0.077885255/0.33122753 params=0/0 float=y
+  maxiter=255 inside=0 decomp=256 periodicity=0
+  colors=000<61>0Vy0Wz0Wz1Wz<61>zzzzzzyzz<60>1Wz0Wz0Wz0Vy<61>000
+  cyclerange=0/255
+  }
+
+mandel256          {
+  reset=2000 type=mandel center-mag=0.443576/0.407031/25.13269/1.0001
+  params=0/0 maxiter=255 bailout=1000000 inside=0 decomp=256 sound=off
+  colors=888<120>xxexxfyyf<3>zzg888<126>zC9
+  }
+
+mandelfn_sin_inv_1 { ; like some plant leaves, some are a bit faded
+  reset=2000 type=mandelfn function=sin
+  corners=-0.40018363/0.39983263/0.12802131/0.72803351 params=0/0
+  float=y maxiter=6 inside=15 invert=1/0/0 decomp=256 sound=off
+  colors=0A0<57>0u00v00w0<2>0z00z00y0<55>0F00F00E0<3>0A05A5<57>SuSTvTTwT<2\
+  >VzVVzVVyV<61>5A5
+  }
+
+unity1             { ; Like a diagram of a magnetic field
+  reset=2000 type=unity corners=-2.165376/2.165409/-1.624039/1.624049
+  maxiter=255 inside=0 invert=0.2/0/0 decomp=256 periodicity=0
+  sound=off
+  colors=000<9>000000000<3>000zzz<24>BBB999777555333000<91>000<4>000zzz<24\
+  >BBB999777555333000<79>000
+  }
+
+unity2             { ; planetary eclipse
+  reset=2000 type=unity
+  corners=2.29027/2.8513953/-0.21041683/0.21042696 maxiter=255
+  inside=0 invert=1/3/0 decomp=256 periodicity=0 sound=off
+  colors=000<8>000000000<3>000<9>bVPfYRj`U<3>zmc<5>zrlzsmztoztpzuq<3>zxwzy\
+  yzzz000<91>000<3>000110211<5>644754755<2>976A76A76A77<3>B88B88B88<3>BA9B\
+  AABAA<2>BBB000<78>000
+  }
+
+unity3             { ; A dark pit
+  reset=2000 type=unity
+  corners=-1.163631/-0.2156384/0.632003/-0.6320019/-0.2156384/-0.6320019
+  maxiter=255 inside=0 decomp=256 periodicity=0 sound=off
+  colors=000<136>000000000<3>000<10>YRK`UMcXO<2>mcU<8>thZui_ui_<3>ylbzmc00\
+  0<78>000
+  }
+
+mandelfn_sin_inv_2 { ; Gold & bronze
+  reset=2000 type=mandelfn function=sin
+  corners=-0.40018363/0.39983263/0.12802131/0.72803351 params=0/0
+  float=y maxiter=6 inside=0 invert=1/0/0 decomp=256 sound=off
+  colors=888<58>vF0wF0xF0yF0zG0zG0<58>C87B87A87987888888<57>ub0vb0wc0<2>ze\
+  0ze0ye0<61>888
+  }
+
+manfn+zsqrd_tanh   {
+  reset=2000 type=manfn+zsqrd function=tanh
+  center-mag=-0.5/8.88178e-016/0.3120667 params=0/0 float=y
+  maxiter=255 bailout=10000 inside=0 decomp=256 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
