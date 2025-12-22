@@ -10,10 +10,10 @@ Arguments:
     -o filename  : Save output to file instead of printing to console
 """
 import os
-import re
 import sys
 from collections import Counter
 from pathlib import Path
+from file_entry import parse_file_entries, ParamSet
 
 
 def find_par_files(directory='.'):
@@ -26,37 +26,25 @@ def find_par_files(directory='.'):
     return par_files
 
 
-def extract_fractal_type(content):
-    """Extract the fractal type from a parameter entry."""
-    # Look for type= followed by the fractal type name
-    match = re.search(r'\btype=([^\s]+)', content, re.IGNORECASE)
-    if match:
-        return match.group(1).lower()
-    return None
-
-
 def parse_par_file(filepath):
     """Parse a PAR file and extract all fractal types used."""
     fractal_types = []
     
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
-            content = f.read()
-            
-        # Split the file into parameter entries
-        # Each entry starts with a name followed by {
-        entries = re.split(r'\n(?=[^\s;{])', content)
+        # Parse the parameter file using the unified parser
+        entries, parse_errors = parse_file_entries(filepath)
         
+        if parse_errors:
+            print(f"Warning: Errors parsing {filepath}:", file=sys.stderr)
+            for error in parse_errors[:3]:  # Show first 3 errors
+                print(f"  {error}", file=sys.stderr)
+        
+        # Extract fractal type from each entry
         for entry in entries:
-            # Skip comments and empty lines
-            if entry.strip().startswith(';') or not entry.strip():
-                continue
-            
-            # Check if this is a parameter entry (contains an opening brace)
-            if '{' in entry:
-                fractal_type = extract_fractal_type(entry)
-                if fractal_type:
-                    fractal_types.append(fractal_type)
+            param_set = ParamSet(entry)
+            fractal_type = param_set.get('type')
+            if fractal_type:
+                fractal_types.append(fractal_type.lower())
     
     except Exception as e:
         print(f"Error reading {filepath}: {e}", file=sys.stderr)

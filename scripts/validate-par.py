@@ -3,7 +3,7 @@ import sys
 import re
 import os
 import argparse
-from file_entry import parse_file_entries, find_entry_by_name
+from file_entry import parse_file_entries, find_entry_by_name, ParamSet
 
 
 def validate_file_entry(param_name, param_start_line, file_type, filename, entry_name, base_dir, errors):
@@ -85,15 +85,8 @@ def validate_parameter_file(filename, quiet=False):
     
     # Validate each parameter entry
     for entry in entries:
-        # Parse parameter body for type-specific validation
-        param_text = ' '.join(entry.body)
-        params = {}
-        
-        # Simple parsing of name=value pairs
-        for token in param_text.split():
-            if '=' in token:
-                key, _, value = token.partition('=')
-                params[key.lower()] = value
+        # Use ParamSet to parse parameters
+        params = ParamSet(entry)
         
         # Check if colors parameter references a colormap file
         colors = params.get('colors')
