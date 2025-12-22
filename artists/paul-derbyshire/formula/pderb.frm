@@ -31,7 +31,8 @@
 ; __| * |_______  ASGND Full Silly and Ysiggian _______________________________
 
 Comment    {;This formula by Paul PGD Derbyshire
-            ;ao950@freenet.carleton.ca}
+            ;ao950@freenet.carleton.ca
+}
 
 Coslider   {z=pixel;
            d=8;
@@ -71,7 +72,9 @@ Coslider   {z=pixel;
 ; __| * |_______  ASGND Full Silly and Ysiggian _______________________________
 
 Comment            {;FRM entry by Paul PGD Derbyshire
-                    ;ao950@freenet.carleton.ca}
+                    ;ao950@freenet.carleton.ca
+}
+
 FNslider   {z=pixel;
            d=8;
            b=d*2
@@ -109,7 +112,8 @@ FNslider   {z=pixel;
 ;          -- B. Mandelbrot  |  Paul Derbyshire (PGD) ao950@freenet.carleton.ca
 
 Comment      {;Formulas by: Paul Derbyshire (PGD)
-              ;ao950@freenet.carleton.ca}
+              ;ao950@freenet.carleton.ca
+}
 
 PhonyMandelJ {z=pixel
              f=15/8:
@@ -154,7 +158,8 @@ PhonyMandelM {c=pixel
 
 
 Comment      {;Formulas by: Paul Derbyshire (PGD)
-              ;ao950@freenet.carleton.ca}
+              ;ao950@freenet.carleton.ca
+}
 
 PhonyMandelJ {z=pixel
              f=15/8:
