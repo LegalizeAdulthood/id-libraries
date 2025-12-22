@@ -1,0 +1,26 @@
+blue               {
+  reset=1810 type=mandel
+  corners=-1.9669063107/-1.9666763007/-0.00011470511735/0.00011470511733
+  float=y maxiter=1024 bailout=12 inside=bof61 outside=real
+  viewwindows=1/1/yes/0/0
+  colors=00z<31>000<31>00z<31>000<31>00z<31>000<31>00z<29>002000000<30>00x
+  cyclerange=0/255
+  }
+
+red                {
+  reset=1810 type=mandel
+  corners=-1.9669063107/-1.9666763007/-0.00011470511735/0.00011470511733
+  float=y maxiter=16385 bailout=12 inside=zmag outside=imag
+  viewwindows=1/1/yes/0/0
+  colors=V00<15>z00<31>000<31>z00<31>000<31>z00<31>000<31>z00<13>Z00X00X00\
+  <15>000<14>U00 cyclerange=0/255
+  }
+
+green              {
+  reset=1810 type=mandel
+  corners=-1.9669063107/-1.9666763007/-0.00011470511735/0.00011470511733
+  float=y maxiter=1024 bailout=12 inside=0 outside=mult
+  viewwindows=1/1/yes/0/0 colors=000<30>0T00U00U00U0<220>000
+  cyclerange=0/255
+  }
+
