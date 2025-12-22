@@ -1,0 +1,40 @@
+; From - Fri Jul 19 12:04:32 1996
+; Path: unixg.ubc.ca!van-bc!news.mindlink.net!uniserve!news.sol.net!
+;     newspump.sol.net!homer.alpha.net!uwm.edu!news.moneng.mei.com!
+;     bloom-beacon.mit.edu!news.mathworks.com!nntp.primenet.com!
+;     news.primenet.com!lkmitch
+; From: lkmitch@primenet.com (Kerry Mitchell)
+; Newsgroups: sci.fractals
+; Subject: Midget deepzoom parameter file
+; Date: 18 Jul 1996 09:42:01 -0700
+; Organization: Primenet (602)416-7000
+; Lines: 27
+; Message-ID: <4slpgp$cuq@nnrp1.news.primenet.com>
+; X-Posted-By: lkmitch@usr4.primenet.com
+;
+; Here is my first attempt at a deepzoom fractal.  It is a Mandelbrot
+; midget on the spike (negative real axis), that was carefully chosen.  If
+; you look at the midget at -1.75, you'll see that it is associated with
+; the number 3.  That is, this midget causes the band of dwell = 3 to dip
+; down toward the axis, and the main cardioid for this midget has
+; periodicity = 3.  In a similar fashion, the midget in this deepzoom is
+; associated with 256.  It took over 37 hours to compute on a 486DX50, at
+; 320x240 resolution and single pass mode (although the image is symmetric).
+; --
+; -------------------------------------------------------------------------------
+; Kerry Mitchell
+; lkmitch@primenet.com
+; -------------------------------------------------------------------------------
+
+two56              {;dwell 256 midget by Kerry Mitchell lkmitch@primenet.com
+  reset=1930 type=mandel passes=1
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999988958369124178362173165279999331644308055316120970\
+  270840859424786314709441797847655533023252895333209618981099216864198315\
+  29734837424289096210971806586916814/0.0/7e+305 params=0/0 float=y
+  maxiter=8192 inside=0 periodicity=0
+  colors=CCC<14>eCegCggCg<14>_CsZCsXDs<12>EJsCKsCMs<13>CmsCosCor<14>CsS<22\
+  >qsnssossn<21>ssMssKsrK<14>sWCsVCrUCqTC<11>hECgCCgCC<46>cCsbCs`Cs<12>EFs\
+  CGsCIs<14>Cks<14>CFF cyclerange=0/255
+  }

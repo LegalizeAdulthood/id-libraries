@@ -1,0 +1,1349 @@
+; Hi, I`m Albrecht Niekamp, Duesseldorf
+; Niekamp@Online-club.de
+; This is my first try to publish formulas for the fractint users.
+; These par-files correspond to the frm-files
+; with the same formula.name.
+; The basic formula (Nr.13 or 13a) was first used on my Multifrac
+; program for the good old AtariXL. All other formulas are variations
+; of this one. Try yourself, You`ll see that they are very easy to edit.
+; Suggstions, new par-files or variations are welcome.
+; --------------------------------------------------------------
+
+multifrac5         { ; sqr(z+x-y)
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac5
+  passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
+  maxiter=647 inside=startrail outside=mult periodicity=0
+  cyclerange=0/255 colors=@default.map
+  }
+
+multifrac4         { ; sqr(z+x+y)
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac4
+  passes=t center-mag=0.512901/4.44089e-016/0.9363296
+  params=0.2/0/0.5/0 float=y maxiter=647 inside=atan outside=mult
+  periodicity=0 cyclerange=0/255 colors=@default.map
+  }
+
+multifrac3         { ; sqr(z)+x+y
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac3
+  passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
+  maxiter=647 inside=startrail outside=mult periodicity=0
+  cyclerange=0/255 colors=@default.map
+  }
+
+multifrac2         { ; x2*x*y-p2
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac2
+  passes=t center-mag=0/0/0.6666667 params=0.5/0.2/0.2/0 float=y
+  maxiter=647 inside=startrail outside=mult periodicity=0
+  cyclerange=0/255 colors=@default.map
+  }
+
+multifract6        { ; z=sqr(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac6 passes=2
+  center-mag=0.193901/5.55112e-016/1.572327/1/90 params=0.2/0/0.5/0
+  float=y maxiter=647 inside=atan outside=mult periodicity=0
+  cyclerange=0/255 colors=@default.map
+  }
+
+multifrac8-1       { ; z=z^(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac8 passes=1 center-mag=1.73886/0.27566/4.901961
+  params=0.2/0/0.5572832422864468/-0.08761864070558795 float=y
+  maxiter=647 bailoutest=imag inside=atan outside=mult periodicity=0
+  cyclerange=0/255
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac8-2       { ; z=z^(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac8 passes=1 center-mag=1.73886/0.27566/4.901961
+  params=0.2/-0.2958006530961028/0.5572832422864468/-0.003402813806573695
+  float=y maxiter=647 bailoutest=imag inside=atan outside=mult
+  periodicity=0 cyclerange=0/255
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac9         { ; abs(x)*x*y-p2
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac9
+  passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
+  maxiter=647 inside=atan outside=mult periodicity=0 cyclerange=0/255
+  colors=@anenome.map
+  }
+
+multifrac9-2       { ; abs(x)*x*y-p2
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac9 passes=1 center-mag=0/0/0.6666667
+  params=0.2/0.2/0.5/0 float=y maxiter=647 inside=startrail
+  outside=mult periodicity=0 cyclerange=0/255 colors=@default1.map
+  }
+
+multifrac9-3       { ; abs(x)*x*y-p2
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac9 passes=1 center-mag=0/0/0.6666667
+  params=0.4562639240699484/0.2/0.5636310922574541/0 float=y
+  maxiter=647 inside=startrail outside=mult periodicity=0
+  cyclerange=0/255 colors=@default1.map
+  }
+
+multifrac1o            { ; p1 only
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
+  params=0.5/0 float=y maxiter=647 periodicity=0 colors=@default.map
+  }
+
+multifrac10-2      { ; p1 only
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
+  params=0.5632648701437422/0 float=y maxiter=647 bailoutest=or
+  inside=maxiter outside=real
+  invert=-0.7857600634785/0.267372661519211/-0.178075502792444
+  decomp=32 periodicity=0
+  colors=000GDBGFBGGB<2>CGBBGBBGCBGDBGFBGG<2>BCG000<4>00000000000e0e00eee0\
+  0e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00\
+  z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2\
+  >Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3\
+  >0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSK\
+  K<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0G\
+  G<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBB\
+  G<2>FBGGBGGBFGBD<2>GCB
+  }
+
+multifrac10-3      { ; p1 only
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
+  params=0.375/0 float=y maxiter=1200 bailoutest=or inside=startrail
+  outside=summ
+  invert=-0.7857600634785/0.267372661519211/-0.178075502792444
+  decomp=256 periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac11        { ; |z|>(x2+y2+z)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac11 passes=1 center-mag=0/0/0.6666667
+  params=0.2/0/0.5/0 float=y maxiter=647 periodicity=0
+  colors=@default.map
+  }
+
+multifrac11-2        { ; z=sqr(z)
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac11 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=1.20036927396466/0/-0.2503616443372906/0 inside=fmod
+  outside=summ
+  invert=-0.636341441084018/-0.74504837183752/-0.0942716757713553
+  decomp=256 colors=@default.map
+  }
+
+multifrac13        { ; original
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac13 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=-0.4436017944883572/-0.3657460249641408/-0.4168095950193793/-0.39\
+  65727713858455 inside=atan outside=imag colors=@default.map
+  }
+
+multifrac15        { ; |z|<(x2*y2)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac15 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=0.2/-0.2/0.5/0 colors=@default.map
+  }
+
+multifrac14        { ; |z|<4
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac14 passes=1 center-mag=0/0/0.6666667
+  params=0.1004333628345592/-0.1554338206122013/0.3431440168462172/-0.0432\
+  4777977843562 float=y maxiter=647 inside=maxiter outside=atan
+  invert=-0.0701651051362651/-0.0498947111423078/-0.00170598467970824
+  periodicity=0 colors=@default.map
+  }
+
+
+multifrac8-3       {
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac8 passes=t
+  center-mag=-0.57315215284098770/-0.51408961708571900/781.1124
+  params=0.2/0/0.5572832422864468/-0.08761864070558795 float=y
+  maxiter=647 bailoutest=imag inside=atan outside=mult
+  invert=0.441206091494491/-0.992431409649953/0 periodicity=0
+  cyclerange=0/255
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac18        { ; |z|<(x*y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac18 passes=t
+  center-mag=-0.494136/-0.0058651/1.041667/1/15 params=0.2/-0.2/0.5/0
+  float=y maxiter=647 periodicity=0 colors=@default.map
+  }
+
+multifrac18-2      { ; |z|<(x*y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac18 passes=3
+  center-mag=-0.494136/-0.0058651/1.041667/1/15
+  params=0.241544846949675/-0.2875606555375836/0.5719412823877682/0.054911\
+  95410016175 float=y maxiter=647 inside=255 distest=1/71/1280/1024
+  periodicity=0
+  colors=00000000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HH\
+  HKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<4>000
+  }
+
+multifrac19        { ; |z|<(x*y)z=z^(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac19 passes=t center-mag=0/0/0.6666667
+  params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=atan
+  distest=1/71/1280/1024 periodicity=0 colors=@default.map
+  }
+
+multifrac19-1      {
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac19 passes=t
+  center-mag=+1.33072713057075000/+0.14589442815249260/266.6667
+  params=0.1745628223517564/-0.1984710226752525/0.5965880306405835/0
+  float=y maxiter=647 periodicity=0
+  colors=000GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000\
+  000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchh\
+  hmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3\
+  >VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3\
+  >SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSK\
+  SSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG\
+  0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8G\
+  G8EG8CG8AGBBG<2>FBGGBGGBF
+  }
+
+multifrac10-1      {
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac10 passes=t center-mag=0/0/0.6666667
+  params=0.1264351329081088/0.03076876125370036 float=y maxiter=647
+  inside=bof60 outside=imag decomp=32 periodicity=0
+  colors=@Gallet05.map
+  }
+
+multifrac20        { ; if ..else..
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac20 passes=1 center-mag=0/0/0.6666667
+  params=0.2/-0.2/0.5/0 float=y maxiter=647 periodicity=0
+  colors=@default.map
+  }
+
+multifrac22        { ; if ..else...|z|<(x2*y2)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac22 passes=3 center-mag=0/0/0.6666667
+  params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=bof60 outside=imag
+  periodicity=0 colors=@default.map
+  }
+
+multifrac22-2      { ; if ..else...|z|<(x2*y2)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac22 passes=t center-mag=0/0/0.6666667
+  params=0.3878536332285532/-0.08574480422376171/0.4407025360881375/0.0972\
+  9911191137425 float=y maxiter=647 inside=bof60 outside=imag
+  invert=-0.195959349345378/0/0 periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac1         { ; z=sqr(z)-x-y
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac1
+  passes=t center-mag=-4.44089e-016/3.33067e-016/0.8503401
+  params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=bof60 decomp=32
+  periodicity=0 cyclerange=1/15 colors=@default.map
+  }
+
+multifrac2-1       { ; z=sqr(z)+x
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac2 passes=t
+  center-mag=-4.44089e-016/4.44089e-016/0.9363296
+  params=-0.3805536057618946/0.3986816003906369/-0.4991454817346721/0.1029\
+  389324625385 float=y maxiter=647 inside=bof60 outside=mult decomp=32
+  periodicity=0 cyclerange=0/255 colors=@default.map
+  }
+
+multifrac3-1       { ; sqr(z)+x+y
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac3
+  passes=t center-mag=-8.88178e-016/6.66134e-016/1.103753
+  params=0.5/0/0.2/0 float=y maxiter=647 inside=bof60 outside=mult
+  periodicity=0 cyclerange=0/255 colors=@jewels3.map
+  }
+
+multifrac6         { ; z=sqr(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac6 passes=3
+  center-mag=0.0764597/0.031261/2.46098 params=0.2/-0.2/0.5/0 float=y
+  maxiter=647 inside=bof61 outside=mult decomp=16 periodicity=0
+  cyclerange=0/255
+  colors=x_3z_0k00CCC000ECE<15>iCi<4>sCs<16>MCs<4>CCs<16>Cis<4>Css<16>CsM<\
+  4>CsC<16>isi<4>sss<16>ssM<4>ssC<16>sMC<4>sCC<17>KCC<4>ACCCCC<15>gCgiCikC\
+  k<3>sCs<16>MCs<4>CCs<4>CMs<2>CSsCUsEUq<18>uZ5
+  }
+
+multifrac5-1       { ; z=z^(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac5 passes=t
+  center-mag=-0.344019/5.55112e-016/1.103753
+  params=0.2969695120090335/-0.02816248054445021/0.3701071199682607/0
+  float=y maxiter=647 inside=bof60 outside=mult
+  invert=0.183947264015626/0/0 periodicity=0 cyclerange=0/255
+  colors=@chroma2.map
+  }
+
+multifrac8        { ; z=z^(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac8 passes=t center-mag=0/0/0.6666667
+  params=0.2/-0.2/0.3/0 float=y maxiter=647 inside=bof60 outside=mult
+  periodicity=0 cyclerange=0/255
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac16-2      { ; |z|<(x2*y2) z-sqr(z-x+y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac16 center-mag=-0.293949/1.365e-005/0.9363412
+  params=0.2192297128208258/0.578637043366802/-0.1630970183416242/0.145536\
+  6679891354 inside=bof60 outside=mult invert=-0.14033021027253/0/0
+  colors=@default1.map
+  }
+
+multifrac17        { ; |z|<(x2*y2) z-sqr(z)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac17 center-mag=0/0/0.6666667
+  params=0.08670003357036044/-0.1771019623401593/0.4316660054322947/0.2359\
+  111301004059 inside=bof60 outside=mult
+  invert=-0.287890255439924/-0.159535508285775/-0.286834315012055
+  decomp=256 colors=@default1.map
+  }
+
+multifrac23        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac23 passes=t center-mag=0/0/0.6666667
+  params=0.0379894405957213/-0.1840144047364727/0.3103823969237343/0.16928\
+  61720633564 float=y maxiter=647 invert=0.18408154545732/0/0
+  decomp=64 periodicity=0 colors=@default.map
+  }
+
+multifrac24        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac24 passes=t
+  center-mag=-1.27676e-015/0.734884/1.63277
+  params=0.2245643482772302/-0.2740592669454024/0.2816675313577685/-0.0486\
+  2117374187445 float=y maxiter=647
+  invert=0.0609729300820948/-0.0338297677541429/0.0461104159672842
+  decomp=32 periodicity=0 colors=@default.map
+  }
+
+multifrac25        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac25 passes=t
+  center-mag=0.136173/-0.0112648/3.522119
+  params=0.1956953642384106/-0.1918744468520158/0.3014328440198981/0.01404\
+  004028443251 float=y maxiter=647 bailoutest=manr inside=startrail
+  outside=atan
+  invert=0.0310449537644582/-0.0287011322367016/-0.0266747032074954
+  decomp=2 periodicity=0 colors=@default.map
+  }
+
+multifrac26        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac26 passes=t center-mag=0/0/0.6666667
+  params=0.2792596209601123/-0.3311349833674123/0.5897091586046938/0
+  float=y maxiter=647 inside=maxiter outside=mult decomp=256
+  periodicity=0 colors=@default.map
+  }
+
+multifrac27        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac27 passes=t
+  center-mag=0.0395986/-6.66134e-016/0.4918603
+  params=0.302584917752617/-0.1639393292031617/0.4652516251106296/0.089437\
+  54387035738 float=y maxiter=647 periodicity=0 colors=@default.map
+  }
+
+multifrac27-2      { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac27 passes=t
+  center-mag=-0.511463/0.667762/9.837205
+  params=0.302584917752617/-0.1639393292031617/0.4652516251106296/0.089437\
+  54387035738 float=y maxiter=647 periodicity=0 colors=@default.map
+  }
+
+multifrac27-3      { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac27 passes=3
+  center-mag=0.0395986/-8.88178e-016/0.4918603
+  params=0.3495376445814387/-0.1371349223303934/0.5474898525955992/0.01793\
+  572801904355 float=y maxiter=647 periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac28        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac28 passes=3 center-mag=-0.237686/0/0.6666667
+  params=0.2/0.2/0.3/0 float=y maxiter=647 periodicity=0
+  colors=@default.map
+  }
+
+multifrac29        { ; 3d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac29 passes=t center-mag=0/0/0.6666667
+  params=0.2/0/0.3/0/0.1/0 float=y maxiter=647 inside=maxiter
+  periodicity=0
+  colors=000KgMZhFli93RM<3>IwOfAWhmkafmW_o<2>Apjbys<3>JBwbCevDO<2>k57j3Sj2\
+  l<3>jBPPKz_QliVZ<2>2cJIpRTfIFON16R5Bg9FxP_adtG<3>PiyC3g<3>dS0<2>LdT<2>hP\
+  ClUIoZNdf_Uml<2>h__3oLO3oVOao_phdbHd6<2>XgL4TD<2>UdMJKztuH<2>ekNo7fjK`eX\
+  Vamvakjai_exKcrMbmOrwyiofKrR956JJDTWJLlN<2>YiP3Zm<2>UfVq2u<2>eZXwY`<2>ff\
+  SCV1PaDdzPbqPf8dHApOMfVYYWZmYbd_eX7knhoYoeCM7IUQMWTcmtBipGelL9JQOWPynXmk\
+  TvhXohUhhR75MIJNSWOwjr8gH<2>VhNozW<2>dlQazFaqKXz6ZtD`nJW7ZZQUOWQT`PYdPIt\
+  xPplWl`6D1MTD1XtE`iQdZy79dgochfbhYDcT<2>WgQKSiT`ZP9DWRJ0hj<2>ThU5QNM_O2I\
+  pERfQ_YPJvucekfX0WKEDcvYxoalhe`ZNr`Ychari3`_uY`pValS0tMJnOjro<2>cjVXBb<2\
+  >``SvVx<2>feYkAH<2>c`NqwlALQ<2>VbPyDu<2>g`XzxDLmLUjN5ZqMcbRjo<2>_hVyleqj\
+  _iiUQWcU`ZYdUz1MsCNmNO5fT
+  }
+
+multifrac31        { ; 3d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac31 passes=t center-mag=0/0/0.6666667
+  params=0.2804376354258858/-0.1289254432813501/0.3661671803949095/0.07393\
+  108920560321/0.1893734550004578/-0.02679830317087314 float=y
+  maxiter=647 inside=maxiter periodicity=0 colors=@default.map
+  }
+
+multifrac33        { ; 3d..if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac33 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=-0.09953917050691244/0.1780938138981292/0.1644672994170965/-0.401\
+  7365031891842/-0.0336191900387585/0.4090182195501572
+  colors=@default.map
+  }
+
+multifrac33-2      { ; 3d..if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac33 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=-0.06503189184240241/0.1011719107638783/0.1841975157933286/-0.374\
+  0104373302408/0.02110965300454727/0.495303201391644
+  colors=000SHE<2>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQS\
+  KOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2\
+  >E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGB\
+  FGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000000e0e00e\
+  ee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszz\
+  z00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vz\
+  z<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S\
+  0<3>0SS<2>07SEES<3>SES<3>SEE
+  }
+
+multifrac34        { ; 3d..if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac34 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=0.2680227057710501/-0.0272530289620655/-0.1306711020233772/0.1354\
+  716635639515/0.3048127689443648/-0.1128513443403424
+  invert=0.0758415478988006/0/0 decomp=128
+  colors=000KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8\
+  CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2\
+  >GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000000e0e00eee00e0eeL0ee\
+  eLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3\
+  >z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3\
+  >zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07\
+  SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSS\
+  KQSKOSKMSKKSK<2>KSQKSSKQS
+  }
+
+multifrac34-2      { ; 3d..if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac34 center-mag=7.925e-006/1.43e-006/0.6666673
+  params=0.2680227057710501/-0.0272530289620655/-0.1306711020233772/0.1354\
+  716635639515/0.3048127689443648/-0.1128513443403424
+  invert=0.0758415478988006/0/0 decomp=128
+  colors=xn_IOn<9>PWtQXtQXu<2>T_wT_wSZv<25>CHgBGfAGe<2>8Dc7Cb7B`<7>35O24M2\
+  4K13J12H01F<10>017016016<2>003001001<7>STWVX_Z`c<3>los<8>ZXSYVPWTL<2>SNC\
+  QL9QL9QL8QK7<21>pgTqhUsiV<2>vlYxn_xn_xn_<24>XQCVPBUOA<2>RL7QK6QK7QL9<2>U\
+  QHVSKXUO<3>bb_ddceff<3>los<3>XZ`SUXOQS<3>788<3>222000001<6>11911A21B<10>\
+  35O36P36Q37R<3>59Y6AZ6B`7Bb7Cd<15>IOm
+  }
+
+multifrac35        { ; 3d  nested  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac35 center-mag=0/0/0.6666667
+  params=0.009006012146366789/-0.2142551957762383/0.158989226966155/-0.458\
+  9571825312052/0.1528397473067415/-0.3464980010376293
+  invert=0.0625812555314799/0/0 decomp=256 colors=@Lindaa12.map
+  }
+
+multifrac35-1      { ; 3d  nested  if..else
+                     ; fly with me
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
+  params=-0.1528550065614795/-0.1978209784234138/0.1946501052888577/-0.273\
+  3283486434522/-0.0443800164799951/-0.1662343211157567
+  invert=0.0625812555314799/0/0 decomp=256 colors=@Lindaa12.map
+  }
+
+multifrac35-2      { ; 3d  nested  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
+  params=-0.3032685323648793/-0.2066530350657674/0.1233649708548234/-0.212\
+  2119815668203/0.08893093661305584/0.02889492477187413
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
+  }
+
+multifrac36        { ; 3d dblnested  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac36 passes=t center-mag=0/0/0.6666667
+  params=-1.311947996459853/-1.570830408642842/1.203958250679037/0.7980376\
+  598406934/-0.1753379924924467/0.8272530289620654
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
+  }
+
+multifrac37        { ; 3d dblnested  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac37 passes=3 center-mag=0/0/0.6666667
+  params=-0.3234992522965178/0.04983062227240822/-0.146012756736961/0.3033\
+  265175328837/-0.7323587755973998/-0.1556260872219001
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
+  }
+
+multifrac37-2      { ; 3d dblnested  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac37 passes=3
+  center-mag=0.258993/-0.216216/2.109705
+  params=0.2205389568773461/0.1400311288796655/0.1289223914304025/0.024585\
+  71123386334/0.03708609271523179/0.04151738029114659
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
+  }
+
+multifrac38        { ; 3d dblnested if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac38 passes=t center-mag=0/0/0.6666667
+  params=0.2984801782280954/-0.1209356975005341/0.3110202337717826/-0.0326\
+  8837549974059/0.1219153416547136/0.04773400067140721 float=y
+  maxiter=647 decomp=256 periodicity=0 colors=@default.map
+  }
+
+multifrac38-2      { ; 3d dblnested if..else
+                     ; two in one
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac38 passes=t
+  center-mag=-0.46264/-4.44089e-016/0.6024955
+  params=0.3097766045106357/-0.135232093264565/0.3529786065248573/-0.04932\
+  554094058046/0.1548158207953124/0.04801934873500779 float=y
+  maxiter=647 invert=-0.0452330088198492/0/0 decomp=256 periodicity=0
+  colors=@default.map
+  }
+
+multifrac39        { ; 3d dblnested if..else
+                     ; formula 38 inverse
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac39 passes=t center-mag=0/-0.027027/0.6666667
+  params=0.1825220496230964/-0.03488265633106479/0.2937345500045778/-0.169\
+  8202459791864/0.3995544297616505/-0.08151188695944091 float=y
+  maxiter=1500 decomp=256 periodicity=0 colors=@default.map
+  }
+
+multifrac39-2      { ; 3d dblnested if..else
+                     ; formula 38 inverse
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac39 passes=t center-mag=0/-0.027027/0.6666667
+  params=0.1698590044862209/-0.06211767937253945/0.3195083468123417/-0.146\
+  5239417706839/0.3973818170720542/-0.1087725455488754 float=y
+  maxiter=1500 decomp=256 periodicity=0 colors=@default.map
+  }
+
+multifrac41        { ; formula 30 variation
+                     ;   
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac41 passes=t
+  center-mag=1.15454/0/0.8629301/1/-90
+  params=0.4094729453413495/0.0587633899960326/0.4929471724600971/0.081267\
+  73888363292/0.4326364940336314/-0.03737601855525376 float=y
+  maxiter=647 inside=maxiter outside=mult periodicity=0
+  colors=000000554<3>HHGKKJOON<3>ccbhhgmmlssrzzy00y<3>z0yz0i<2>z00<3>zz0<3\
+  >0z00zF<2>0zy<2>0GyVVy<3>zVy<3>zVU<3>zzU<3>VzU<3>Vzy<2>Vbyhhy<3>zhy<3>zh\
+  g<3>zzg<3>hzg<3>hzy<2>hly00R<3>S0R<3>S00<3>SS0<3>0S0<3>0SR<2>07REER<3>SE\
+  R<3>SED<3>SSD<3>ESD<3>ESR<2>EHRKKR<2>QKRSKRSKPSKNSKLSKJ<2>SQJSSJQSJOSJMS\
+  JKSJ<2>KSPKSRKQRKORKMR00F<3>G0F<3>G00<3>GG0<3>0G0<3>0GF<2>04F88F<2>E8FG8\
+  FG8DG8BG89G87<2>GE7GG7EG7CG7AG78G7<2>8GD8GF8EF8CF8AFBBF<2>FBFGBFGBEGBCGB\
+  BGBA<2>GFAGGAFGADGACGABGA<2>BGEBGFBFFBDFBCF000<4>00000000000d0e00ede00e0\
+  deL0eedLLKLLyLzKLzyzLKzLyzzKzzy
+  }
+
+multifrac41-2      { ; multifrac30 variation
+                     ; jungle
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac41 passes=t
+  center-mag=1.15454/0/0.8629301/1/-90
+  params=0.4816888943144017/-0.01970885341959899/0.5019470809045686/0.0292\
+  855616931669/0.3361583300271615/0.05138706625568407 float=y
+  maxiter=647 inside=startrail outside=mult periodicity=0
+  colors=000OMPFON6QLVGKKDA8A0iR_n_fYQVshmxqtrCh<2>xan<2>kKD<3>Ux2<3>A4r<2\
+  >T3BOwEhBW_JKdGV<3>XSb<3>sO9qg_<3>Eas`crwfp<2>Ugy<2>Wi4<3>h7l<3>hQOJ7MxB\
+  P<2>Xyy<3>M5v<3>hE3fUCdjLBDmzKRdeS<2>Bf4MLB<2>VdIclSmta<2>PQC2sqX3O<2>jk\
+  O<3>`BxbAfe9OgPMieJ<2>17dZaL<2>ChN<3>oIT<2>KUI<3>iP8<2>I9`<2>kA6<3>Z`PSj\
+  HKu8Qay<2>oU_<3>17QUqG<2>yOyqDfi1NWGCQXPKmbNjXQfRckMqpH<2>XSDQJBLUMFeX9q\
+  gM8tHUhCoW<2>sOXZOTkRciQfgPjfPYhXcjGZ<2>z7sZUQYM`<2>8ZykWZqjewyliIWnH_sG\
+  cUDTH8SeOT<2>chVUSWIaZiQSmZQqgOhUYkebdWVciYbw`lJ6eOX<2>ehidLV<2>_X`7kERU\
+  XCf`hGT<2>rAVdFM<2>_50VXeUSMIaEkEbqAlw5vXJX<2>5PieGV<2>d8bi`UntVaKZXMdSO\
+  kNWe4isTPRGWP3cNdSQ<2>auEXKR
+  }
+
+multifrac41-3      { ; multifrac30 variation
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac41 passes=t
+  center-mag=1.15454/0/0.8629301/1/-90
+  params=0.4296060060426649/0.0005310220648823491/0.4084200567644276/0.050\
+  83162938322092/0.2409955137791071/0.1714407788323618 float=y
+  maxiter=647 inside=bof60 outside=mult invert=0.0370403149510178/0/0
+  decomp=32 periodicity=0
+  colors=000OMPFON6QLVGKKDA8A0iR_n_fYQVshmxqtrCh<2>xan<2>kKD<3>Ux2<3>A4r<2\
+  >T3BOwEhBW_JKdGV<3>XSb<3>sO9qg_<3>Eas`crwfp<2>Ugy<2>Wi4<3>h7l<3>hQOJ7MxB\
+  P<2>Xyy<3>M5v<3>hE3fUCdjLBDmzKRdeS<2>Bf4MLB<2>VdIclSmta<2>PQC2sqX3O<2>jk\
+  O<3>`BxbAfe9OgPMieJ<2>17dZaL<2>ChN<3>oIT<2>KUI<3>iP8<2>I9`<2>kA6<3>Z`PSj\
+  HKu8Qay<2>oU_<3>17QUqG<2>yOyqDfi1NWGCQXPKmbNjXQfRckMqpH<2>XSDQJBLUMFeX9q\
+  gM8tHUhCoW<2>sOXZOTkRciQfgPjfPYhXcjGZ<2>z7sZUQYM`<2>8ZykWZqjewyliIWnH_sG\
+  cUDTH8SeOT<2>chVUSWIaZiQSmZQqgOhUYkebdWVciYbw`lJ6eOX<2>ehidLV<2>_X`7kERU\
+  XCf`hGT<2>rAVdFM<2>_50VXeUSMIaEkEbqAlw5vXJX<2>5PieGV<2>d8bi`UntVaKZXMdSO\
+  kNWe4isTPRGWP3cNdSQ<2>auEXKR
+  }
+
+multifrac40        { ; 3d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac40 passes=t
+  center-mag=-0.338211/0.159302/0.2262122
+  params=-0.2375942258980071/-0.1755879390850551/0.30602038636433/0.175514\
+  6946623127/0.5629886776329843/0.2261815240943632 float=y maxiter=647
+  invert=-0.171492660298471/0/0 decomp=32 periodicity=0
+  colors=000GGB<2>CGBBGBBGCBGDBGFBGG<2>BCG000<4>00000000000e0e00eee00e0eeL\
+  0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0\
+  z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhh\
+  z<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2\
+  >07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQ\
+  KSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04\
+  G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FB\
+  GGBGGBFGBDGBCGBB<2>GFB
+  }
+
+multifrac40-2      { ; 3d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac40 passes=t
+  center-mag=-0.338211/0.159302/0.2262122
+  params=-0.1516812646870327/-0.1177513962218085/0.3241071810052797/0.2357\
+  133701590014/0.5453468428601946/0.2152800073244423 float=y
+  maxiter=647 invert=-0.171492660298471/0/0 decomp=64 periodicity=0
+  colors=000GGB<2>CGBBGBBGCBGDBGFBGG<2>BCG000<4>00000000000e0e00eee00e0eeL\
+  0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0\
+  z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhh\
+  z<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2\
+  >07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQ\
+  KSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04\
+  G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FB\
+  GGBGGBFGBDGBCGBB<2>GFB
+  }
+
+multifrac40-3      { ; 3d
+                     ; chaos v order
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac40 passes=3
+  center-mag=-0.338211/0.159302/0.2262122
+  params=-0.1648281807916501/-0.1396722617267372/0.3327369304483169/0.2570\
+  491958372753/0.5393670766319772/0.2322338023010956 float=y
+  maxiter=647 invert=-0.171492660298471/0/0 decomp=64 periodicity=0
+  colors=000GA8GC8GE8GG8<2>AG88G88GA8GC8GE8GG<2>8AGBBG<2>FBGGBGGBFGBDGBCGB\
+  B<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000000e0e00eee00e0eeL\
+  0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0\
+  z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhh\
+  z<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2\
+  >07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQ\
+  KSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04\
+  G88G<2>E8GG8GG8E<2>G88
+  }
+
+multifrac41-4      { ; 3d
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac41 passes=t
+  center-mag=1.15454/0/0.8629301/1/-90
+  params=0.4229027680288095/-0.003999053926206246/0.4073936277352214/0.053\
+  75820184942168/0.2440715048677023/0.178853755302591 float=y
+  maxiter=647 inside=bof60 outside=mult invert=0.0370403149510178/0/0
+  periodicity=0
+  colors=00029T05O<4>AAgCBkDCn<3>bihirgozf<3>QhSKdOD_L7WH1SE<3>KGSPDWUAZZ7\
+  bb5e<3>m7Wo7Tr7Rt7PlKgeWzMOu3Gp<3>VIkaJjhJioJh<3>UJNOJHJJCDJ68J1<3>6VN6Y\
+  T5`Y5cc5eh<3>AFtw13<3>Gli5xs6po7il7biWdasfVXlKBrA8eQ9oD<2>4fLWWeMZZCaT`4\
+  J<3>HPMCUM7ZNEA`UAMGPNfqKNjM2a23b6VAOV3N<3>S4lR4rR4x<3>kNn<3>SxW<3>_eBaa\
+  63uo<3>KPvOHwMKl<3>FT8<3>XdN`gRdjVhlY<2>NWe<2>fdi<3>kcglcglxt<3>tjTvfMxc\
+  Fz`9<3>XkLPnOIpQ<3>RpkTppVpu<3>Y5j<3>HDkDFk9Hk<3>Zw7<3>MCfJ1oNMrRetUyv<2\
+  >SZnSRlTOk<3>WDgWBfX8eX6d<3>W4bW4aW4aW4a<3>aXWbcVcjU<3>iOGjIClC9m65n12<3\
+  >jWFicJhkMgsPgzS<2>aAY<3>U9Q<3>MSlKXrI`w<4>5EY
+  }
+
+multifrac41-5      { ; 3dversion of 41-4
+                     ; save 41-4 first
+  3d=yes filename=multi41b.gif scalexyz=90/90 roughness=30 waterline=0
+  filltype=3 ambient=20 rotation=30/0/0 perspective=0 xyshift=0/0
+  colors=00029T05O<4>AAgCBkDCn<3>bihirgozf<3>QhSKdOD_L7WH1SE<3>KGSPDWUAZZ7\
+  bb5e<3>m7Wo7Tr7Rt7PlKgeWzMOu3Gp<3>VIkaJjhJioJh<3>UJNOJHJJCDJ68J1<3>6VN6Y\
+  T5`Y5cc5eh<3>AFtw13<3>Gli5xs6po7il7biWdasfVXlKBrA8eQ9oD<2>4fLWWeMZZCaT`4\
+  J<3>HPMCUM7ZNEA`UAMGPNfqKNjM2a23b6VAOV3N<3>S4lR4rR4x<3>kNn<3>SxW<3>_eBaa\
+  63uo<3>KPvOHwMKl<3>FT8<3>XdN`gRdjVhlY<2>NWe<2>fdi<3>kcglcglxt<3>tjTvfMxc\
+  Fz`9<3>XkLPnOIpQ<3>RpkTppVpu<3>Y5j<3>HDkDFk9Hk<3>Zw7<3>MCfJ1oNMrRetUyv<2\
+  >SZnSRlTOk<3>WDgWBfX8eX6d<3>W4bW4aW4aW4a<3>aXWbcVcjU<3>iOGjIClC9m65n12<3\
+  >jWFicJhkMgsPgzS<2>aAY<3>U9Q<3>MSlKXrI`w<4>5EY
+  }
+multifrac42        { ; functions only
+                     ; 2d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac42 function=cos/atanh passes=t
+  center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 decomp=256
+  periodicity=0 colors=@default.map
+  }
+
+multifrac43        { ; functions only
+                     ; 3d
+                     ; Gallet09.map
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac43 function=floor/one/asinh passes=t
+  center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 decomp=256
+  periodicity=0 colors=@Gallet09.map
+  }
+
+multifrac44        { ; functions only
+                     ; 3d z=sqr(z)-x-y-w
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac44 function=round/sinh/cos passes=t
+  center-mag=1.776e-005/1.43e-006/0.6666673 maxiter=647 inside=bof60
+  outside=mult decomp=256 periodicity=0 colors=@Gallet09.map
+  }
+multifrac46       { ; 3 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac46 function=one/asinh/exp passes=t
+  center-mag=0/0/0.6666667 float=y maxiter=647 inside=bof60
+  outside=mult periodicity=0
+  colors=000<3>00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3\
+  >HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00\
+  G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG\
+  8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000000000
+  }
+
+multifrac46-2      { ; 3 fn  if..else
+                     ; pointillism
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac46 function=one/zero/sin passes=t
+  center-mag=0/0/0.6666667 float=y maxiter=647 inside=bof60
+  outside=mult periodicity=0
+  colors=000<3>00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3\
+  >HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00\
+  G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG\
+  8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000000000
+  }
+multifrac49        { ; z=third axis
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac49 function=one/sqrt/sqr passes=3
+  center-mag=0/0/0.6666667 maxiter=647 bailoutest=imag
+  inside=epsiloncross outside=real
+  invert=-0.401959288308359/-0.32792138431959/-0.136204107791376
+  decomp=32 periodicity=0 colors=@default.map
+  }
+
+multifrac50        { ; z=third axis
+                     ; |z|>(x*y-z)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac50 function=tan/cos/sin passes=1
+  center-mag=0/0/0.6666667 maxiter=647 inside=period outside=atan
+  invert=0.808221686452834/-0.212012085329753/0.386822107608264
+  decomp=16 periodicity=0
+  colors=000<3>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HH\
+  HKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<2>000
+  }
+
+multifrac52        { ; 2 fn  if..else
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac52 function=tan/cos passes=1
+  center-mag=0/0/0.6666667 maxiter=647 inside=period outside=atan
+  invert=0.808221686452834/-0.212012085329753/0.386822107608264
+  decomp=16 periodicity=0 colors=@g1.map
+  }
+
+multifrac54        { ; 2 fn  if..else
+                     ; checkerboard
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac54 function=cosxx/sqr/sin passes=t
+  center-mag=7.925e-006/1.43e-006/0.6666673
+  params=-0.8410412915433211/0.04629963072603533 maxiter=647
+  inside=period outside=atan decomp=16 periodicity=0 colors=@g1.map
+  }
+
+multifrac56        { ; 2 fn  if..else
+                     ; mandel a la multifrac
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac56 function=cotan/acos passes=t
+  center-mag=7.925e-006/1.43e-006/0.6666673
+  params=0.1760734885708182/-0.01576891384624773 maxiter=647
+  inside=bof60 outside=mult decomp=16 periodicity=0
+  colors=000<3>00000000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz00055\
+  5<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVV\
+  z<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2\
+  >hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3\
+  >ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKM\
+  S00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG\
+  8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCG\
+  BBGB<2>BGFBGGBFGBDGBCG000000
+  }
+
+multifrac57        { ; 2 fn  if..else
+                     ; mandel a la multifrac
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac57 function=flip/trunc passes=t
+  center-mag=7.925e-006/1.43e-006/0.6666673
+  params=-0.02070375682851651/0.1232673116245002 maxiter=647
+  inside=maxiter outside=mult decomp=16 periodicity=0 colors=@g1.map
+  }
+
+multifrac58        { ; distorted mandel
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac58 function=sin/cos passes=1
+  center-mag=7.925e-006/1.43e-006/0.6666673 params=-0.2/0.3
+  maxiter=647 periodicity=0 colors=@default.map
+  }
+
+multifrac48        { ; 3 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac48 function=one/asinh/zero passes=t
+  center-mag=1.73e-006/8.95e-007/0.6666671 maxiter=647 bailoutest=imag
+  inside=bof60 outside=atan
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+multifrac45        { ; functions only
+                     ; 3d w=fn3(w)-y      
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac45 function=cos/tanh/cotan passes=3
+  center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 inside=bof60
+  outside=mult decomp=256 periodicity=0 colors=@Gallet09.map
+  }
+
+multifrac45-2    { ; 3 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac45 function=atan/log/cosxx passes=t
+  center-mag=2.468e-005/-1.0785e-005/0.8912568 float=y maxiter=647
+  inside=bof60 outside=mult invert=0.962706381420331/0/0 decomp=64
+  periodicity=0
+  colors=000zS0<7>zk_zmczph<3>zzz0z0z00202<23>g0mi0ok0q<2>p0wr0zr0y<24>`0C\
+  _0AZ08<2>X02W00V00<25>500400300200100<2>002003005<21>00W00Y00Z<3>00c<9>0\
+  0F00D00A<3>000<9>b00f00j00<3>z00<9>zb0zf0zj0<3>zz0<3>zzWzzbzzjzzrzzz<3>z\
+  WWzOOzGGz88z00<4>S00<3>000<10>H00I00K00L00N00<3>U30V40X60<16>xQ0
+  }
+
+multifrac47        { ; 3 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac47 function=acos/zero/acos passes=1
+  center-mag=0.363288/0.0231359/0.7788165 float=y maxiter=647
+  inside=maxiter outside=mult periodicity=0 colors=@Gallet09.map
+  }
+
+multifrac51        { ; 3 fn  if..else
+                     ; z=third axis
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac51 function=one/ident/asinh passes=1
+  center-mag=5.87e-006/8.95e-007/0.6666671 float=y maxiter=647
+  inside=maxiter outside=mult periodicity=0
+  colors=00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKK\
+  KOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3\
+  >zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3\
+  >S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EH\
+  SKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0\
+  G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG\
+  88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BG\
+  FBGGBFGBDGBCG000<5>000
+  }
+
+multifrac53        { ; 2 fn if..else
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac53 function=one/acos passes=t
+  center-mag=3.4065e-005/-6.885e-006/0.2346664 maxiter=647
+  inside=maxiter outside=mult periodicity=0
+  colors=00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKK\
+  KOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3\
+  >zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3\
+  >S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EH\
+  SKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0\
+  G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG\
+  88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BG\
+  FBGGBFGBDGBCG000<5>000
+  }
+
+multifrac59        { ; 2 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac59 function=round/sqrt passes=t
+  center-mag=1.73e-006/8.95e-007/0.6666671 maxiter=647 bailoutest=or
+  inside=maxiter outside=atan
+  invert=0.610766930143132/0.861568041016877/0.514572588274789
+  decomp=256 periodicity=0 colors=@Gallet05.map
+  }
+
+multifrac60        { ; 2 fn  if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac60 function=cabs/zero passes=t
+  center-mag=0.863309/0.486486/0.8912656
+  params=0.3041352580339976/0.06491592150639361/-0.7962370677816095/-0.398\
+  071230201117 maxiter=647 inside=maxiter outside=atan
+  invert=0.610766930143132/0.861568041016877/0.514572588274789
+  decomp=256 periodicity=0
+  colors=A50907<35>503503403<3>403A50<9>KA0LB0MB0<5>TG0UH0VI0WJ0YK0<6>bO0c\
+  P0cP0<3>gS0hS0iT0<5>lW0mX0mX0<3>oZ1p_2q`2q`2ra2<9>ufCugDvgE<3>wjIxkKxkL<\
+  3>ynTynVyoXzpZ000<13>000<4>000F50<6>LB6MC7ND8OE9PFA<8>VLDWMDWMD<14>h_Mi`\
+  NjaO<4>mdSneSofT<11>vmbvncwod<3>zrhE0B<46>907
+  }
+
+multifrac61        { ; tan and cabs only
+                     ; crazy spectacles
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac61 passes=t center-mag=0/0/0.6666667
+  params=0.3741142002624592/0.2969664601580859/0.9327097384563738/-0.51165\
+  50187688834 maxiter=647 inside=maxiter outside=atan
+  invert=0.610766930143132/0.861568041016877/0.514572588274789
+  decomp=256 periodicity=0
+  colors=000CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFG\
+  BDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000000e0e00eee00e0eeL0eeeLLLLLzLz\
+  LLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz\
+  0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zh\
+  h<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SE\
+  S<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMS\
+  KKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8\
+  GG8EG8CG8AG88<2>GE8GG8EG8
+  }
+
+multifrac62        { ; 3fn 3var
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac62 function=cotanh/sinh/atanh passes=t
+  center-mag=-0.234558/0.199413/4.901961
+  params=0.2/-0.1/0.3/-0.2/-0.1/0.3 maxiter=647 inside=bof60
+  outside=mult
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0
+  colors=wvyDGF<30>232222122<3>000wwc<17>ldIlcHkbFkaEj`DiZB<10>cQ5cP4bO3bN\
+  3aM2<3>`J1_J1_I2<7>WE3WD3WC3VB4UB4<3>T85S85S75<3>R66Q66Q55<20>K22K22K22<\
+  4>I00H00H00G00G00F00<19>400300200<3>000vvx<4>rsuqrtprs<2>npqmopmopmop<8>\
+  fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU`YU`Y<10>PWTPWTOVS<3>OURNURNU\
+  R<28>DHF
+  }
+
+multifrac63        { ; 3fn 3var
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac63 function=cotanh/sin/atanh passes=t
+  center-mag=-0.28777/0.189189/2.73224
+  params=0.6096804712057863/1.088122196111942/0.8945493942075868/0.1307260\
+  35340434/0.3129184850611896/0.222125919370098 maxiter=647
+  inside=bof61 outside=mult
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0
+  colors=000Ze8A5EWeZPA5XYQQHXdMSk6xq2HLpfXAPgDqo0F`QGoctNrbHzFaFj3LlSKs09\
+  1LoXDjkgf93zXHwtKdbC2pOJlDw4tUtXIihZ_zxPpIcG4qQf4tbR14CrklgGBbHRqgFZPuVL\
+  8w5_PyZtKCoMtUzupA3DNTP454q`Q3SmLy6Jau8J8q3yvS81GSrsts3DH5G2zAs7eC8_sdTD\
+  W`Pa6`xpefhAKVYF_VQcACxlgNQQbqKVJaDrxgp64rwfIZd43S_T_IlGNDvcJv3eGY7jklAb\
+  swhvc5iEf_ErVnUB4QStayUj1XzYM1LHwpsFLjbnGw9atIFDZaTgGlwO96zrFqk1QO7jVxeU\
+  Z7MfMXF6wNIKFpLn2GXf_rsusPpRLnkVA3BT4SdglExt`M1l1UIHAtA5McD5G7JebC9etFgs\
+  zeJRWEtdKeDGPx3hAnDLmNAPJR6KMH`fs9ugM4PQ0DXZOG255aYdammhX7AjZ6Z7A48JaBRZ\
+  6tfSnFaYHbfKVH87U2deKXrNuj3htaSBS1TX1WHXGStTQTamDSE32XnccW`Dz2QzpJpi2uZZ\
+  ybBzSdDSg3lGkFcEDaMtotnEvv6HTU1DjaLiprQNn1RwE7dWsFmhPKahHXnk_SDAHpsDwpES\
+  Ivd7kgBxL_4Pv7LsJCi6IFgAfg8uH097ks66LlZ7`h7_kozhOSxXAX51RYC5VUEQkNjW`O8_\
+  6jedLfAmgJq`P8xdRerlO6JbM9jXIqO5XtS`PZ7bkpLizspfKn4A5EJ
+  }
+
+multifrac63-2      { ; 3fn 3var
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac63 function=cotanh/sin/cosxx passes=t
+  center-mag=-0.28777/0.189189/2.73224
+  params=0.6096804712057863/1.088122196111942/0.8945493942075868/0.1307260\
+  35340434/0.3129184850611896/0.222125919370098 maxiter=647
+  inside=bof61 outside=mult
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0
+  colors=000Ze8A5EWeZPA5XYQQHXdMSk6xq2HLpfXAPgDqo0F`QGoctNrbHzFaFj3LlSKs09\
+  1LoXDjkgf93zXHwtKdbC2pOJlDw4tUtXIihZ_zxPpIcG4qQf4tbR14CrklgGBbHRqgFZPuVL\
+  8w5_PyZtKCoMtUzupA3DNTP454q`Q3SmLy6Jau8J8q3yvS81GSrsts3DH5G2zAs7eC8_sdTD\
+  W`Pa6`xpefhAKVYF_VQcACxlgNQQbqKVJaDrxgp64rwfIZd43S_T_IlGNDvcJv3eGY7jklAb\
+  swhvc5iEf_ErVnUB4QStayUj1XzYM1LHwpsFLjbnGw9atIFDZaTgGlwO96zrFqk1QO7jVxeU\
+  Z7MfMXF6wNIKFpLn2GXf_rsusPpRLnkVA3BT4SdglExt`M1l1UIHAtA5McD5G7JebC9etFgs\
+  zeJRWEtdKeDGPx3hAnDLmNAPJR6KMH`fs9ugM4PQ0DXZOG255aYdammhX7AjZ6Z7A48JaBRZ\
+  6tfSnFaYHbfKVH87U2deKXrNuj3htaSBS1TX1WHXGStTQTamDSE32XnccW`Dz2QzpJpi2uZZ\
+  ybBzSdDSg3lGkFcEDaMtotnEvv6HTU1DjaLiprQNn1RwE7dWsFmhPKahHXnk_SDAHpsDwpES\
+  Ivd7kgBxL_4Pv7LsJCi6IFgAfg8uH097ks66LlZ7`h7_kozhOSxXAX51RYC5VUEQkNjW`O8_\
+  6jedLfAmgJq`P8xdRerlO6JbM9jXIqO5XtS`PZ7bkpLizspfKn4A5EJ
+  }
+
+multifrac35-4               { ; 3d
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
+  params=-0.1528550065614795/-0.163609729300821/0.1946501052888577/-0.4475\
+  463118381298/-0.0443800164799951/-0.2147160252693259
+  invert=0.0625812555314799/0/0 decomp=256
+  colors=000KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8\
+  CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2\
+  >GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000000e0e00eee00e0eeL0ee\
+  eLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3\
+  >z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3\
+  >zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07\
+  SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSS\
+  KQSKOSKMSKKSK<2>KSQKSSKQS
+  }
+
+multifrac35-5               { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
+  params=0.01051057466353345/-0.4015015106662191/0.2676808984649189/0.5071\
+  642200994904/0.4147099215674306/-0.4950285348063601 bailoutest=real
+  inside=bof60
+  invert=1.04042481765191/0.403241065706351/-0.116122928556169
+  decomp=2
+  colors=000GDBGFBGGB<2>CGBBGBBGCBGDBGFBGG<2>BCG000<4>00000000000e0e00eee0\
+  0e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00\
+  z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2\
+  >Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3\
+  >0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSK\
+  K<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0G\
+  G<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBB\
+  G<2>FBGGBGGBFGBD<2>GCB
+  }
+
+multifrac22-3               { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac22 passes=t
+  center-mag=-0.13448/-0.469208/0.6666667
+  params=0.3878536332285532/-0.07901547288430433/0.4407025360881375/0.1086\
+  025574510941 float=y maxiter=647 inside=255 outside=imag
+  invert=-0.195959349345378/0/0 periodicity=0 colors=@ribbon.map
+  }
+
+multifrac22        {
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac22 passes=3 center-mag=0.028777/0/0.6666667
+  params=0.2/-0.5087557603686637/0.5/0.5800653096102786 float=y
+  maxiter=647 inside=bof60 outside=imag periodicity=0
+  colors=000u8Tw6Zz4e<3>aDUWFRQHOJKKJNOJQTKTY<2>QBJT4DTBH<3>WcYWjbXqfYyk<3\
+  >7D`00Y03`<3>0In0Lr0Pu1Ty<3>1t1<3>2RP2JV2B`33gEjN<3>Z`LcYKhVJnSI<3>`QJXQ\
+  KTPKPOL<3>JrA<2>0jz_b5vl6<3>vRUwL`lT`<2>DsY<3>InYJmYLkYMjYOhX<3>EOFBIA8D\
+  5570<3>5bQ5jX5rc6zj<3>4wg4vg3uf3te2sd3ai5Ko71u67c4EM2L3<3>2gH2mK2sO3yS<3\
+  >QgIVbG`ZDfUBlP8<3>2aTGMGVIBjE6<3>XCKUCOQBRNBVJAZWKi<3>EFB<3>QTJTXLW`NZd\
+  P<2>k6u<4>a6a<2>W5P<3>kDYoF`sHbwKen7t<3>ETG<3>MkgOpodJK<2>Va_RheOl_<2>Fx\
+  F<3>JrWKq_Lod<2>OXPQQJTWR<2>boq<3>_pqZpqYqr<3>MhfJfcGc`DaYAZV<2>jVo<3>`M\
+  bYK_WIXTGUQDQ<4>_8sa6z<2>p6YY7fE9o<4>KBgMCeMF_LJT
+  }
+
+multifrac30        { ; if..else..extended
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac30 passes=t
+  center-mag=-0.340891/-0.178886/1.106645/1/90
+  params=0.2/-0.1572939237647633/0.2/0.09842677083651234/0.1/0.13226569414\
+  3498 float=y maxiter=647 inside=maxiter outside=mult periodicity=0
+  colors=00020JYZcjkLwx2MPo<3>QaPRdISgBUk4QHgVCU_7FKLqJJlLMtIIg<3>ECPDAKC9\
+  FA7A<3>RVEV`F_fG<2>lxJ<8>djFchFbgE<2>_bDZ`CX_E<3>PUPNTRLSU<2>FNa<3>JFKKD\
+  GMAB<7>D9KC9LB9N<2>89Q68S79S<4>CHSDISFKTGLTHNTIOT<3>JULJWJKYG<3>Z87b14Mc\
+  o<2>LLmZEfm6_<3>_IfXLgTOiQRkMUm<3>GiKEmCTn3<2>Dm9uLA<3>bJHYIJTILOHNJGP<3\
+  >Bdk9jq6qw<2>LhP<3>IbWH`YNUb<2>f8t<2>WZO<3>gXGkWEgVJcUP<3>bFQbBQa7R_COYI\
+  KVOG<3>YQe<3>FboAer5iu5dm4Ze<3>3H2<3>UOF`QIgSLnUP<3>BYi<2>Wel<3>liYqjUuk\
+  QzmM<3>ffRaeSXcUSaVN_X`oQ<3>OcCK`8LYC<3>QMSSJWTG_VDd<3>SYBRc3hGB<2>_Xrpc\
+  oTej5hdJKp<11>42M
+  }
+
+multifrac6-1       { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac6 passes=2
+  center-mag=0.193901/7.155e-007/1.572326/1/90
+  params=0.1463393047883542/0.04664021729178747/0.4680123294778283/0.03343\
+  424787133396 float=y maxiter=647 inside=atan outside=mult decomp=256
+  periodicity=0 cyclerange=0/255
+  colors=00000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKK\
+  KOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3\
+  >zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3\
+  >S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EH\
+  SKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0\
+  G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG\
+  88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BG\
+  FBGGBFGBDGBCG000<5>000
+  }
+
+multifrac7         { ; z=z^(z+x-y)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac7 passes=t
+  center-mag=0.316547/0/0.6666667/1/-90
+  params=0.08447340311899167/0.06156865138706627/0.5761333048493912/-0.052\
+  37037263100072 float=y maxiter=647 inside=atan outside=mult
+  invert=-0.0311947996459853/0/0 decomp=128 periodicity=0
+  cyclerange=0/255
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac55        { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac55 function=tanh/tan/atanh passes=t
+  center-mag=0.578584/-0.483869/0.7183915
+  params=0.6922086245307779/0.005333368119019367 float=y maxiter=647
+  bailoutest=imag inside=startrail outside=mult
+  invert=0.992065187536241/0.72240363780633/-0.800836207159642
+  decomp=8
+  colors=000LLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3\
+  >z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vb\
+  zhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0S\
+  S<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2\
+  >SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2\
+  >04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2\
+  >FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<4>00000000\
+  000e0e00eee00e0eeL0eeeLLL
+  }
+
+multifrac12        { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac12 passes=t
+  center-mag=0.0644686/-0.18162/4.475479
+  params=0.278350550859096/0.08816377758110293/-0.1187143314920499/0.33557\
+  65709402753 maxiter=647 bailoutest=real inside=bof61 outside=imag
+  invert=-0.105225913266396/0.211498992889187/-0.162879192480239
+  decomp=32 periodicity=0
+  colors=000Q6E<2>t0KW2QGMEF_GEnIPLA<2>rx2H7C<2>N4DGZUGylcJPLI9QS695N12ZEF\
+  QCMc9UqOJGWULdeQO7hDYGAxLF6B<2>B07W38RKO<2>wsxS87c92pShKVRPqeD8GA8L78Q_7\
+  ImF01n3IXSKvgaVKwqTMMHS_NG8RH8eI9tD7CA5D73EGJD<2>FrJRGPaPaQHO<2>tgzQ9N_A\
+  YiChCBI<2>0L_DJNAUY7dia4_w0xi4p`EcJBJNFQRJXNFQUNcaVqMDN<2>eVtcQ8GHCHRCI`\
+  DPHOZQ`hZmLEF<2>bYQXUOnp`H6TJ3iL0zQeZQHK<2>thjO_xPGOZO`hXmlZIOQMXgXeygT6\
+  He3Ms0SgejPJ2VxDdwsHGO<2>LfwAIK3SSC7R85f43vLHI<2>_i_CN77b1J9FMAJRFPaNblV\
+  pNCOUG_`LlKFNPMYUUiIJFHHQIQdK_sLMHQ`MZLbQGE<2>vdLIKLKWVNgdE8G<2>7BVPFMYM\
+  WgUeRKK<2>ysiDKYAXtNKC<2>jsDFFQDMcBUrLNCQaCVpDE8DC8EA7FKJL<2>xa0oPq<3>P_\
+  v<3>d2m<3>dZZ<2>Wpa<2>ETyMVhURVaNGy7v<2>bPy<3>5Qw4Ju2CsAHZIND<2>5sjEljNe\
+  i<3>KrE<2>Wi4U5zO8D<2>l9G
+  }
+
+multifrac21        { ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac21 passes=t
+  center-mag=0.175079/-0.272227/3.011093
+  params=-0.3233328119754632/-0.0976955092013306/-0.4467265465254677/0.095\
+  27844325083165 float=y maxiter=647 bailoutest=and inside=bof60
+  invert=-0.111514061403241/0.209276596881008/-0.158616710409864
+  decomp=256 periodicity=0
+  colors=00000700400B00800F00C00J00G00N00K00R00O00V00S00Z00W00b00_00f00c00\
+  j00g00n00k00r00o00v00s00z00w00w00z00s00v00o00r00k00n00g00j00c00f00_00b00\
+  W00Z00S00V00O00R00K00N00G00J00C00F00800B00400700000300300000700400B00800\
+  F00C00J00G00N00K00R00O00V00S00Z00W00b00_00f00c00j00g00n00k00r00o00v00s00\
+  z00w00w00z00s00v00o00r00k00n00g00j00c00f00_00b00W00Z00S00V00O00R00K00N00\
+  G00J00C00F00800B00400700000300300000700400B00800F00C00J00G00N00K00R00O00\
+  V00S00Z00W00b00_00f00c00j00g00n00k00r00o00v00s00z00w00w00z00s00v00o00r00\
+  k00n00g00j00c00f00_00b00W00Z00S00V00O00R00K00N00G00J00C00F00800B00400700\
+  000300300000700400B00800F00C00J00G00N00K00R00O00V00S00Z00W00b00_00f00c00\
+  j00g00n00k00r00o00v00s00z00w00w00z00s00v00o00r00k00n00g00j00c00f00_00b00\
+  W00Z00S00V00O00R00K00N00G00J00C00F00800B004007000003003
+  }
+
+multifrac13a        { ; original
+                     ; z=fn1(z)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac13a function=exp
+  center-mag=-2.22045e-016/-0.0540541/0.6666667/1/-90
+  params=0.1780744285409101/0.2139287453840754/0.2026717612231819/0.176809\
+  3508713035 float=y inside=atan outside=imag
+  colors=CCCNYJ<2>Zt7JIU<3>qmRzuQM9P<2>u1AOIi`Qya2VRtwBOXCa_DocAIN9PF7X7NN\
+  N<2>wx2CGX<3>GbkHgoImsJswALSNCO<2>yF3OogMlXABR<3>4ABDJV<3>NnbQwdLJQ<3>zr\
+  8A9S<2>50M7LCAGT<3>4_O3dN1jLCAX<3>G6kH5nI4rJ2vABW<3>59c38e28g07iDGW<3>Mb\
+  eOghQmjTsmNCS<2>yFMDFW<4>NZeQbgGCX<3>bKhhMkOTNA9Y<2>51i8VK5n96GU0MVDAU<3\
+  >M4VO3VR1WIDU<3>mNVuQWMFR<2>tSF8Mc5Ym1ixLIJVQ8__cxymEISIPQMXNCFU<3>IYSKb\
+  RMgQJJV<3>pnZyw_FBY<3>ZDocEthFy6YR1tOBGT<2>BYQNKcBcPCiNXSZr9k<3>qFkpHkoL\
+  k<3>hcmggnelncqo<3>U9lvHLaILGJL<3>GfmFmuLmn<3>hlLnlEtk6rqQoxi<2>KNW<3>Kc\
+  iKgmLlqGcfBVV<2>7tM<2>rvmt`mwEm<3>YapRgpLmqEsr7ys`Od<3>VSbTTaRU`PW_aWJnW\
+  1<4>kM5
+  }
+
+multifrac13a-2     { ; original
+                     ; z=fn1(z)
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac13a function=exp
+  center-mag=1.571/-3.13188/0.2916673/1/-90
+  params=0.1780744285409101/0.2139287453840754/0.2026717612231819/0.176809\
+  3508713035 inside=atan outside=imag logmap=16
+  colors=CCCNYJ<2>Zt7JIU<3>qmRzuQM9P<2>u1AOIi`Qya2VRtwBOXCa_DocAIN9PF7X7NN\
+  N<2>wx2CGX<3>GbkHgoImsJswALSNCO<2>yF3OogMlXABR<3>4ABDJV<3>NnbQwdLJQ<3>zr\
+  8A9S<2>50M7LCAGT<3>4_O3dN1jLCAX<3>G6kH5nI4rJ2vABW<3>59c38e28g07iDGW<3>Mb\
+  eOghQmjTsmNCS<2>yFMDFW<4>NZeQbgGCX<3>bKhhMkOTNA9Y<2>51i8VK5n96GU0MVDAU<3\
+  >M4VO3VR1WIDU<3>mNVuQWMFR<2>tSF8Mc5Ym1ixLIJVQ8__cxymEISIPQMXNCFU<3>IYSKb\
+  RMgQJJV<3>pnZyw_FBY<3>ZDocEthFy6YR1tOBGT<2>BYQNKcBcPCiNXSZr9k<3>qFkpHkoL\
+  k<3>hcmggnelncqo<3>U9lvHLaILGJL<3>GfmFmuLmn<3>hlLnlEtk6rqQoxi<2>KNW<3>Kc\
+  iKgmLlqGcfBVV<2>7tM<2>rvmt`mwEm<3>YapRgpLmqEsr7ys`Od<3>VSbTTaRU`PW_aWJnW\
+  1<4>kM5
+  }
+
+multifrac42-2      { ; functions only
+                     ; zoom of 42
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac42 function=cos/atanh passes=2
+  center-mag=3.55584/-10.6865/1.508117 maxiter=647 decomp=256
+  periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+multifrac45-3      { ; functions only
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac45 function=atan/cabs/cosh passes=2
+  center-mag=1.502e-005/1.43e-006/0.6666673 maxiter=647 inside=bof60
+  outside=mult invert=0.969786675618763/0/0 periodicity=0
+  colors=000<24>g0mi0ok0q<2>p0wr0zr0y<24>`0C_0AZ08<2>X02W00V00<25>50040030\
+  0200100<2>002003005<21>00W00Y00Z<3>00c<9>00F00D00A<3>000<9>b00f00j00<3>z\
+  00<9>zb0zf0zj0<3>zz0<3>zzWzzbzzjzzrzzz<3>zWWzOOzGGz88z00<4>S00<3>000<10>\
+  H00I00K00L00N00<3>U30V40X60<11>pK0qL0sM0<2>xQ0zS0zU4<6>zk_zmczph<3>zzz0z\
+  0z00
+  }
+
+multifrac39-3      { ; 3d dblnested if..else
+                     ; formula 38 inverse
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac39 passes=t
+  center-mag=-0.489209/-0.027027/0.9363296
+  params=0.1000570696127201/0.09762840662862028/0.2360927152317881/-0.1282\
+  763145847957/0.3483031708731346/-0.0515393536179693 float=y
+  maxiter=1500 decomp=256 periodicity=0
+  colors=000zy0<77>z40z30z20z20z10z00<79>40v30w20w<2>00z00z11y<83>zz0
+  }
+
+multifrac64        { ; basic formula plus fn1
+                     ; so many shapes
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac64 function=cotan passes=t
+  center-mag=0/-0.322581/0.6666667
+  params=-0.8866939298684652/0.5905819879757073/1.006595049897763/-0.66525\
+  46769615773 maxiter=647 inside=bof61 outside=mult
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0 colors=@default.map
+  }
+
+multifrac65        { ; basic formula plus fn1
+                     ;  
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac65 function=cos passes=t
+  center-mag=-0.201439/0.162162/3.875969 params=0.25/0.25/0.25/0.25
+  maxiter=647 inside=bof61 outside=mult
+  invert=0.382000183111057/-0.230933561204871/0.200537125766778
+  decomp=64 periodicity=0
+  colors=0002Xh<2>5Bo<2>oQb<2>69875C<3>O3c<3>z7fo4Tc0E7HA2q9<3>FLXhlKfMK<2\
+  >LQv<3>4euTevqdxV_n7VdN18<2>XAAMUOBma<3>4wu<2>kZ9kZQjYg8_E8NI7AN<2>BbG<2\
+  >dGg<2>5`1<3>OrJ<3>2bC<3>Wal<2>urx<3>DElA`m7wnMve`tWauUcwR<2>iz6<3>66hTL\
+  Sp_B<2>42tYYb<2>Lkq<2>NQSOIJQCOT6T<3>H6BKXBNxAH6H<3>41ZIotZCD3X1R`HneXDu\
+  g<3>mYlabhPhccQSr6G<3>cjw<2>1lXh`w<3>Ocni06oHLuZ_<2>nsB003QQCppLeeGUUATO\
+  _WTI<2>6t8iCJ<2>7x3<2>Vsp<2>8_vFcM<3>SjjgqixxhlVj`0lo0a<2>0Eh<2>uGD<2>pJ\
+  sVAS800VCHqOY4Na<3>XdKIwlEtpApuHTmO4dKCcGLb<2>WmuruKiMJUCLD2NjOyXboJrdXe\
+  K<2>kpq<3>GX`<2>ksl6FBVGAsI8bCNp5RrIRuWR<3>Muc<2>GuiK7X<3>4l940UewoMjl
+  }
+
+multifrac67        { ; 2fn double nested if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac67 function=tanh/cosh passes=t
+  center-mag=-4.29e-006/-0.586502/0.7788206
+  params=-0.04079866939298683/-0.2055925168614765/-0.2478087710196234/-0.4\
+  175649281289102/-0.05015869624927518/-0.3834757530442213 maxiter=647
+  periodicity=0 colors=@default.map
+  }
+
+multifrac68        { ; 2fn double nested if..else
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac68 function=acos/cotan passes=t
+  center-mag=-1.15108/0/0.6666667
+  params=0.1792188024536882/-0.2778469954527421/-0.3718073824274423/-0.190\
+  9630878627888/0.5465174565874203/0.05119518112735374 float=y
+  maxiter=647 periodicity=0 colors=@defaultw.map
+  }
+
+multifrac67-2      {
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac67 function=log/cosxx passes=t
+  center-mag=0/0/0.6666667
+  params=-0.1314505447553941/-0.09633228553117465/-0.3245332193975646/-0.2\
+  350761436811426/-0.1670894497512742/-0.05271156956694236 float=y
+  maxiter=1000 decomp=16 periodicity=0 colors=@alb.map
+  }
+

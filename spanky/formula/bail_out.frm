@@ -74,8 +74,8 @@ z = c = pixel:
    |fn1(|z|)| <= p1
 }
 
-{The next two formulas don't seem to work the way they should.
-; May be there's some bug in the code for the logical "and" and "or"}
+;The next two formulas don't seem to work the way they should.
+; May be there's some bug in the code for the logical "and" and "or"
 bail_out07   {
 z = c = pixel:
   z = z^2 + c

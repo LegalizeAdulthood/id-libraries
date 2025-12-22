@@ -1,0 +1,66 @@
+Tile1              { ; Yes !  Yes !! The formula is right.
+                     ; This wallpaper for my room please ?
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_A
+  function=sin/zero passes=b center-mag=0/0/0.6666667
+  params=1/1/-0.4/0.5/1/1 float=y maxiter=5000 fillcolor=45
+  inside=epsiloncross decomp=256
+  colors=0001NX<8>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>000000200<10>O00sK\
+  S<5>a00<11>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<7>0001Uf<7>110<9>553000<7\
+  >000001001012013<35>1MW
+  }
+
+TurboFish          {
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_A
+  function=sin/sin passes=b center-mag=0.242424/0.504563/13.33333
+  params=1/1/0/0/1/1 float=y maxiter=5000 fillcolor=45 inside=epsiloncross
+  decomp=256
+  colors=0001NX<8>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>000000200<10>O00sK\
+  S<5>a00<11>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<7>0001Uf<7>110<9>553000<7\
+  >000001001012013<35>1MW
+  }
+
+ChristmasTiles     {
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_C
+  function=sqr/zero passes=t center-mag=0/0/0.6666667
+  params=1/1/0.34/0.5600000000000001/1/1 float=y maxiter=5000
+  inside=epsiloncross
+  colors=000t0M<17>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEE\
+  CCE<4>22E00F00G<23>00x00z01z<28>Puz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzz\
+  wx<14>z0Nv0M
+  }
+
+Tile2              { ; Yes !  Yes !! The formula is right.
+                     ; This is getting interesting
+  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_a
+  function=cos/zero/ident/tan passes=b center-mag=0/0/0.6666667
+  params=1/1/-0.5/1/1/1 float=y maxiter=5000 fillcolor=45 outside=mult
+  decomp=256 sound=off
+  colors=00000m<3>00t00v00x00z<23>KizKkzLmz<3>Puz<26>5IW4HV4FU<2>1BR09P19Q\
+  <8>FHbGIcIJe<2>MMiONkQPk<8>kktmmuppv<2>wwyzzzzwx<8>zOazK_zGX<3>z0Nv0M<12\
+  >M7CJ8BG8B<3>4B7<3>8JC9MEAOF<3>EXLCYLA_K<8>dnhhpkkrm<3>zyyzzz<13>wwJwwGv\
+  vD<3>uu0<11>xxexxhxxl<2>yyvzzzyyy<17>QQQOOOMMM<2>GGGEEECCE<3>44E22E00F<1\
+  7>00k
+  }
+
+3DTile             { ; Strange : a stereogram effect
+  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_c
+  function=recip/zero passes=d center-mag=0/0/0.6666667
+  params=1/1/0.34/0.5600000000000001/1/1 float=y maxiter=5000
+  inside=epsiloncross decomp=256 distest=2/71/1024/768 sound=off
+  colors=0SS0F0<3>0P00R00U0<3>0c0<9>bqbfsfjtj<3>zzz<9>OlOKjKGiG<3>0c0<9>0F\
+  00D00A0<2>030000002<8>00P00R00U<3>00c<9>bbqffsjjt<3>zzz<9>OOlKKjGGi<3>00\
+  c<9>00F00D00A<2>003000022<8>0PP0RR0UU<3>0cc<9>bqqfssjtt<3>zzz<9>OllKjjGi\
+  i<3>0cc<2>0XX0SS0SS<4>0FF0DD0AA<2>033000200<8>P00R00U00<2>`00c00d44<7>qa\
+  areetii<2>xvvzzzyvv<8>lOOjKKiGG<3>c00<9>F00D00A00<2>300000020<3>0C0
+  }
+
+Finn               {
+  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_a
+  function=sin/sin/sinh/sinh passes=b center-mag=0/0/0.6666667
+  params=1.62/1.62/0/0/1/1 float=y maxiter=5000 fillcolor=25
+  potential=255/64/0 periodicity=0 sound=off
+  colors=000DUJEXLCYLA_K<8>dnhhpkkrm<3>zyyzzz<13>wwJwwGvvD<3>uu0<11>xxexxh\
+  xxl<2>yyvzzzyyy<17>QQQOOOMMM<2>GGGEEECCE<3>44E22E00F<20>00p00r00t00v00x0\
+  0z<23>KizKkzLmz<3>Puz<26>5IW4HV4FU<2>1BR09P19Q<8>FHbGIcIJe<2>MMiONkQPk<8\
+  >kktmmuppv<2>wwyzzzzwx<8>zOazK_zGX<3>z0Nv0M<12>M7CJ8BG8B<3>4B7<7>CSI
+  }

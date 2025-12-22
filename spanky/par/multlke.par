@@ -1,0 +1,489 @@
+;Formulas and images by Albrecht Niekamp, Duesseldorf
+;using the lake formula by Sylvie Gallet.
+;This file continues the Multi2 and Multi3
+;formula and par-files.
+;As some of the new features are used,
+;be sure you have downloaded the latest Fractint version, 
+;Fractint 20.02.4 or later.
+;The fomulas correspond to the frm-files (Multlke.frm)
+;with the same number.
+;
+;I'll be happy to get some feedback of any kind!
+;
+;Albrecht.niekamp@t-online.de 
+;
+Multilake_1        { ; Lake formula by Sylvie Gallet
+                     ; uses Multifrac3
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=multi_lake1 ismand=y passes=t center-mag=0/0/0.6666667
+  params=0.5/0.2/512/40/0.2/200 float=y maxiter=647 inside=bof60
+  outside=mult periodicity=0 cyclerange=0/255
+  colors=CGX<3>FbkGgoHmsIsw9LSMCO<2>xF3NogLlX9BR<3>3ABCJV<3>MnbPwdKJQ<3>yr\
+  899S<2>40M6LC9GT<3>3_O2dN0jLBAX<3>F6kG5nH4rI2v9BW<3>49c28e18g07iCGW<3>Lb\
+  eNghPmjSsmMCS<2>xFMCFW<4>MZePbgFCX<3>aKhgMkNTN99Y<2>41i7VK4n95GU0MVCAU<3\
+  >L4VN3VQ1WHDUPGUBCCXIV<2>tQWLFR<2>sSF7Mc4Ym0ixKIJUQ8Z_cwymDISHPQLXNBFU<3\
+  >HYSJbRLgQIJV<3>onZxw_EBY<3>YDobEtgFy5YR0tOAGT<2>AYQMKcAcPBiNWSZq9k<3>pF\
+  koHknLk<3>gcmfgndlnbqo<3>T9luHL`ILFJL<3>FfmEmuKmn<3>glLmlEsk6qqQnxi<2>JN\
+  W<3>JciJgmKlqFcfAVV<2>6tM<2>qvms`mvEm<3>XapQgpKmqDsr6ys_Od<3>USbSTaQU`OW\
+  _`WJmW1<3>kO4jM5MYJ<2>Yt7IIU<3>pmRyuQL9P<2>t1ANIi_Qy`2VQtwAOXBa_Coc9IN8P\
+  F6X7MNN<2>vx2
+  }
+
+multilake_1a       { ; uses multifrac3
+                     ; Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=multi_lake1 ismand=y passes=1
+  center-mag=-1.2905e-005/7.75e-007/0.666667
+  params=-0.07000000000000001/-0.3/512/40/0.2/200 float=y maxiter=647
+  inside=fmod outside=real periodicity=0 cyclerange=0/255
+  colors=0Nk0Km0Gp<3>06v03x00z<24>n0Cp0Ar08<2>x02z00z00<25>zo0zq0zs0<2>zy0\
+  zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<3>Dv8CuABuB<3>9rH9qJ8pK7oM6nN<3>VNXaG_g9\
+  bn2e<3>o6ip8jp9k<2>rDnrEoqGm<3>nMdmOblP`kRZ00z<24>n0Cp0Ar08<2>x02z00z00<\
+  25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<11>7pK6oM5oN<3>3kT2jV2\
+  jW1iY<7>0Qj
+  }
+
+multilake_2       { ; indefinite complexity with multifrac7
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake2 ismand=y passes=t center-mag=0/0/0.6666667
+  params=0/0.75/647/40/0.2/300 float=y maxiter=647 inside=bof60
+  outside=tdis periodicity=0
+  colors=000G0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm\
+  <6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<\
+  3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000\
+  <4>000<9>X0a_0dc0h<3>p0w<10>H0J
+  }
+
+multilake_2a      { ; again without lake for zooming
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake2 ismand=n passes=t center-mag=0/0/0.6666667
+  params=0/0.75/647/0/0/0 float=y maxiter=647 inside=bof60
+  outside=tdis periodicity=0
+  colors=000G0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm\
+  <6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<\
+  3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000\
+  <4>000<9>X0a_0dc0h<3>p0w<10>H0J
+  }
+
+multilake_2b       { ;  first zoom
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake2 ismand=y passes=t
+  center-mag=1.3564/1.19097/4.901961/1/-62.4999999999999645/-1.23373533611\
+  470521e-014 params=0/0.75/647/40/0.2/300 float=y maxiter=647
+  inside=bof60 outside=tdis periodicity=0
+  colors=000G0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm\
+  <6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<\
+  3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000\
+  <4>000<9>X0a_0dc0h<3>p0w<10>H0J
+  }
+
+multilake_2c       { ; second zoom (look for the spot!)
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake2 ismand=y passes=t
+  center-mag=1.49222/1.37341/15.51253/1/-62.4999999999999645/1.31075705844\
+  807544e-014 params=0/0.75/647/40/0.2/300 float=y maxiter=647
+  inside=bof60 outside=tdis periodicity=0
+  colors=000G0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm\
+  <6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<\
+  3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000\
+  <4>000<9>X0a_0dc0h<3>p0w<10>H0J
+  }
+
+Multilake_3        { ; uses Multifrac7 variation
+                     ; Version 2000 Patchlevel 9
+                     ;  Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake3 ismand=y passes=1 center-mag=0/0/0.6666667
+  params=0.2/0.3/512/40/0.2/300 float=y maxiter=647 inside=fmod
+  outside=real periodicity=0 cyclerange=0/255
+  colors=A50<10>KA0LB0MB0<5>TG0UH0VI0WJ0YK0<6>bO0cP0cP0<3>gS0hS0iT0<5>lW0m\
+  X0mX0<3>oZ1p_2q`2q`2ra2<9>ufCugDvgE<3>wjIxkKxkL<3>ynTynVyoXzpZ000<13>000\
+  <4>000F50<6>LB6MC7ND8OE9PFA<8>VLDWMDWMD<14>h_Mi`NjaO<4>mdSneSofT<11>vmbv\
+  ncwod<3>zrhE0B<89>403
+  }
+
+Multilake_3a       { ;  
+                     ; uses Multifrac7 variation
+                     ; Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake3 ismand=y passes=1 center-mag=0/0/0.6666667
+  params=0.2/0.3/512/40/0.2/300 float=y maxiter=647 inside=fmod
+  outside=real periodicity=0 cyclerange=0/255
+  colors=800<18>_82a82b92<3>iB3<3>oPAqSCsWE<2>xeKziMyfL<3>rTDpPBoM9<2>iB3<\
+  5>O52K42H31<3>000<9>000<3>000011021<7>286297298<2>3CA3CA3B9<10>143133132\
+  <3>000<3>2862A83CA<6>9_RAbTBfW<3>Fte<9>6MH5JF4FC<2>155012000<9>2bV2fZ3ja\
+  <3>4zn<2>4pe4lb4h_3dX3`U<3>2MI2IF1EC<2>022<7>2_V2dY2ha<3>4zp<25>2KH2IG2G\
+  E2FD2DC2BA<10>133133122111<13>000000000<3>000500500600
+  }
+
+Multilake_3c       { ;  
+                     ; uses Multifrac7 variation
+                     ; Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake3c ismand=y passes=1 center-mag=0/0/0.6666667
+  params=0.2/0.3/512/45/0.3/200 float=y maxiter=647 inside=fmod
+  outside=real periodicity=0 cyclerange=0/255
+  colors=000000<24>00o00q00s00u00w00z<2>10y20x30w40v50u<53>u05v04w03x02y01\
+  <3>z20z20z30<3>z50000<30>0oo0qq0ss<2>0xx0zz0zx<18>0zD0zB0z80z60z30z0<10>\
+  Lz0Nz0Pz0Rz0Tz0<26>tz0uz0vz0<3>zz0000<3>P00V00`00<3>z00<15>zh0zk0zn0<3>z\
+  z0000000000zzxzzz
+  }
+
+Multilake_3d       { ; Volcano under water
+                     ; uses Multifrac7 variation
+                     ; Version 2000 Patchlevel 9
+                     ;  Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=multi_lake3c ismand=y passes=1 center-mag=0/0/0.6666667
+  params=-0.6563147679067355/-0.2418000823999756/512/50/2/300 float=y
+  maxiter=647 inside=zmag outside=mult decomp=16 periodicity=0
+  cyclerange=0/255
+  colors=000000<24>00o00q00s00u00w00z<2>10y20x30w40v50u<52>t06u05v04w03x02\
+  <2>z11z20z20z20z30<3>z50000<30>0oo0qq0ss<2>0xx0zz0zx<17>0zG0zD0zB<2>0z30\
+  z02z0<8>Jz0Lz0Nz0Pz0Rz0<27>tz0uz0vz0<3>zz0000<3>P00V00`00<3>z00<15>zh0zk\
+  0zn0<3>zz0000000000zzxzzz
+  }
+
+Multilake_4        { ; Sundown in Fractalia
+                     ; uses Multifrac7 variation
+                     ;  Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake4 ismand=y passes=t
+  center-mag=0/0.0229008/0.6666667
+  params=-1.686305426190985/-0.957007864619892/512/40/0.2/300 float=y
+  maxiter=647 inside=bof60 outside=imag decomp=64 periodicity=0
+  colors=@tworain.map
+  }
+
+multilake_5        {
+                     ;  Version 2002 Patchlevel 4
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake5 ismand=y passes=b
+  center-mag=-0.32/-0.59542/3.875969 params=-0.02/0.019/64/40/0.2/300
+  float=y maxiter=647 inside=fmod outside=imag periodicity=0
+  colors=CCC5nP<3>2jV2jW1iY0gZ<3>0Ye0Vg0Sh0Qj0Nk<3>0Eq0Bs08u06v03x00z<24>n\
+  0Cp0Ar08<2>x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<1\
+  5>4mQ4lS3kT2jV2jW1iY0gZ<4>0Vg0Sh0Qj0Nk0Km0Gp<3>06v03x00z<24>n0Cp0Ar08<2>\
+  x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<13>6nN
+  }
+
+multilake_5a       {
+                     ;  Version 2002 Patchlevel 4
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake5 ismand=n passes=b
+  center-mag=-0.32/-0.59542/3.875969 params=-0.02/0.019/64/0/0.2/300
+  float=y maxiter=647 inside=fmod outside=imag periodicity=0
+  colors=000egQ<37>J66I56H45H35G24F13<27>oBkpClqCn<3>wEu<14>PTnMUmKVm<3>AZ\
+  j<14>eUZgUYiUX<2>oTUrSTrST<25>mb6mb5lc4<3>ke0<2>VxB<40>hlshlthkuikvikwjj\
+  y<19>oiooinoin<2>pilqhkpgk<4>gYneWncUo<2>ZOpXMqXNq<11>TZkS`jS`j
+  }
+
+multilake_5b       { ; very spacy
+                     ;  Version 2002 Patchlevel 4
+  reset=2000 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake5 ismand=n passes=b
+  center-mag=-0.594343/-0.59542/6.638752
+  params=-0.5/0.375/64/40/0.2/300 float=y maxiter=647 inside=fmod
+  outside=imag periodicity=0
+  colors=000S`jegQ<37>J66I56H45H35G24F13<27>oBkpClqCn<3>wEu<14>PTnMUmKVm<3\
+  >AZj<14>eUZgUYiUX<2>oTUrSTrST<25>mb6mb5lc4<3>ke0<2>VxB<40>hlshlthkuikvik\
+  wjjy<19>oiooinoin<2>pilqhkpgk<4>gYneWncUo<2>ZOpXMqXNq<12>S`j
+  }
+
+multilake_6a       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=multilake_6 ismand=n function=exp passes=1
+  center-mag=0/0.437865/0.6666667 params=0/0/512/36/0.2/300/0/0
+  float=y maxiter=647 inside=bof60 outside=imag decomp=16
+  periodicity=0
+  colors=000TLB<4>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4ND6QH9
+  }
+
+multilake_6b       { ; Seamonster
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=multilake_6 ismand=n function=sqr passes=1
+  center-mag=-0.170106/-0.00250209/0.9363296
+  params=-0.1838649155722326/-0.01876563803169308/1024/50/0.133/288/-0.038\
+  63643/-0.0389359416 float=y maxiter=1024 inside=fmod outside=fmod
+  periodicity=0
+  colors=200UUU<8>iiijjjlll<3>sss<25>BBB999777<2>222000012<24>0bo0cq0es<2>\
+  0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000\
+  400<23>o00q00s00<3>z00<25>C00A00800<3>000<15>SSS
+}
+
+multilake_6h       { ; mysterious floating object
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=multilake_6 ismand=n function=sqr passes=1
+  center-mag=0.882236/0.0525438/0.6777147
+  params=-0.5/1.125/512/36/0.2/301/-1.625/0.625 float=y maxiter=647
+  inside=maxiter periodicity=0
+  colors=000<3>110110110110000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0\
+  Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_\
+  0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpo\
+  e<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<9>220
+  }
+
+ 
+multilake_7d       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=multilake_7 ismand=n function=sqr passes=1
+  center-mag=-0.332696/0.087573/1.506575
+  params=-0.1503991503646962/-0.1377208279671621/1000/50/0.133/255/0.211/3\
+  55/-0.208823384807886/-0.1503807058931242 float=y maxiter=1024
+  inside=fmod outside=fmod periodicity=0
+  colors=2000DI<16>0bo0cq0es<2>0jy0kz0jy<24>09C08A068<2>022000211<24>oiQqj\
+  RslS<3>zsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<2\
+  5>iiijjjlll<3>sss<25>BBB999777<2>222000012<6>0CG
+  }
+
+multilake_8        { ; The red cavern
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake8 ismand=n passes=t center-mag=0/0/0.6666667
+  params=2/1.5/512/40/0.2/300 float=y maxiter=647 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000gcP<3>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A0800400\
+  0<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2\
+  oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<\
+  4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<4>jgS
+  }
+
+multilake_8a       { ; different view
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake8 ismand=n passes=t
+  center-mag=-0.712946/0.155129/0.6666667 params=2/1.5/512/45/0.25/300
+  float=y maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000gcP<3>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A0800400\
+  0<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2\
+  oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<\
+  4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<4>jgS
+  }
+
+multilake_8c       { ; another cavern
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake8 ismand=n passes=t
+  center-mag=0.80514/0.155129/3.306667 params=2/1.5/1094/45/0.25/300
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000fcP<3>TOFQKDNGA<3>900<9>e0Ch0Dk0F<3>y0K<6>Y0EU0DQ0C<3>90800400\
+  0<26>000<4>000204<8>W0aZ0db0h<3>o0w<4>Z0dW0aT0Y<2>J0NG0JF0ND1R<3>6UX5`Z3\
+  h_1oa0wc<6>0eQ0cO0`M<3>1RE2OC2LA<2>3D3<17>jkalmcooe<3>ywm<6>bYO_UKXQG<3>\
+  JA0000<43>000<4>000230<11>010010010<3>000JA4<7>fcOigRljT<3>yzc<4>igS
+  }
+
+multilake_9        { ; The castle of oz
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake9 ismand=n passes=t
+  center-mag=0/0.242702/0.6666667 params=0/-0.75/512/42/0.3/300
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000pnW<2>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A0\
+  8004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6\
+  `Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<4\
+  3>000<4>000330<11>110110110<3>000KA4<9>mjT
+  }
+
+multilake_9b       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake9 ismand=n passes=t
+  center-mag=-0.16/0.229008/0.6915629 params=1/-0.375/512/43/0.3/300
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000G0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm\
+  <6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<\
+  3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000\
+  <4>000<9>X0a_0dc0h<3>p0w<10>H0J
+  }
+
+multilake_10       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake10 ismand=n passes=t
+  center-mag=0/0.285238/0.6666667 params=-0.5/-0.375/512/40.5/0.2/300
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000usiwukzwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>\
+  000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C\
+  <3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3\
+  >7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<20>rqg
+  }
+
+multilake_11       { ; The watcher
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake11 ismand=n passes=t
+  center-mag=-0.0167993/0.471259/2.469868/1/157.500000000000085/-2.5056345\
+  8870090017e-014 params=-0.5/-1.125/512/40/0.3/300 float=y
+  maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000220<3>110110110<2>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<7>220
+  }
+
+multilake_12c      { ; golden helmet
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake12 ismand=n passes=t
+  center-mag=-0.450375/0/0.6666667/1/90/3.88578058618804789e-016
+  params=2/-1.125/512/0/0.3/300 float=y maxiter=1094 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000WPE<3>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<2>TLB
+  }
+
+multilake_12d      { ; mother and child
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake12 ismand=n passes=t center-mag=0/0/0.6666667
+  params=-1/-0.75/512/40/0.3/300 float=y maxiter=1094 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000WPE<3>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<2>TLB
+  }
+
+multilake_12e      { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake12 ismand=n passes=t center-mag=0/0/0.6666667
+  params=-1/-1.125/512/40/0.3/300 float=y maxiter=1094 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000WPE<3>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<2>TLB
+  }
+
+multilake_12f      { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake12 ismand=n passes=t center-mag=0/0/0.6666667
+  params=-0.5/1.125/512/40/0.3/300 float=y maxiter=1094 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000WPE<3>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<2>TLB
+  }
+
+multilake_13       { ; spirals in the sky
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake13 ismand=n passes=t
+  center-mag=0/0.29771/0.6666667 params=-0.5/-0.375/512/40/0.2/300
+  float=y maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000Maw<3>gDtl7sr0r<3>X0XS0SM0M<3>000<43>000<3>000111333<23>nnnppp\
+  rrr<3>zzz<25>CCCAAA888<2>222000000<33>000000000<3>000Z0AU00<3>d00g00j00m\
+  00<3>c0P`0VZ0`W0fT0m<3>I0MF0FA0A505000<39>qqqsssttt<3>zzz000<3>0PP0VV0``\
+  <3>0zz<2>Ghx
+  }
+
+multilake_13a      { ; watcher at the gate
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake13 ismand=n passes=t
+  center-mag=1.77636e-015/0.29771/0.1626667/1/-90/-1.23373533611470521e-01\
+  4 params=-0.5/-0.375/512/40/0.2/300 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=000qqq<3>wwwxxxzzz000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<3>X0XS0\
+  SM0M<3>000<43>000<3>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>22200000\
+  0<33>000000000<3>000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0MF0FA0A5\
+  05000<38>ppp
+  }
+
+multilake_13b      { ; Halloween
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake13 ismand=n passes=t
+  center-mag=-0.87573/-3.33067e-016/2.380952/1/-90/3.88578058618804789e-01\
+  6 params=-0.6891807379612258/-0.3740617180984153/512/10/0.2/300
+  float=y maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000<3>000000000000000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0\
+  MF0FA0A505000<39>qqqsssttt<3>zzz000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<\
+  3>X0XS0SM0M<3>000<43>000<3>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>2\
+  22000000<31>000
+  }
+
+multilake_13c      { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake13 ismand=n passes=t
+  center-mag=-4.44089e-016/0.102936/0.8912656
+  params=1/0.75/512/40/0.2/300 float=y maxiter=647 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000m0s<3>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<\
+  3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>1101101\
+  10<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV\
+  0DR0C<3>A08004000<26>000<4>000<15>p0w
+  }
+
+multilake_14       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake14 ismand=n function=cosxx passes=1
+  center-mag=-8.88178e-016/5.55112e-016/1.041667
+  params=-0.5/-0.75/512/40/0.2/400/5164/0 float=y maxiter=1094
+  inside=maxiter outside=tdis periodicity=0
+  colors=0001cO<3>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<\
+  43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A0\
+  0<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p\
+  0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<6>1eQ
+  }
+
+multilake_15       { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake15 ismand=n passes=t
+  center-mag=0.500313/-0.0950792/0.6666667
+  params=-0.5/0.375/512/40/0.15/400/647/0 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=000R0U<2>H0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammc\
+  poe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>g\
+  cOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A080040\
+  00<26>000<4>000<9>X0a_0dc0h<3>p0w<6>U0Y
+  }
+
+multilake_15a      { ; mandel transform
+                     ; partly chaos but still a good picture
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake15 ismand=y passes=1 center-mag=0/0/0.6666667
+  params=0/0/512/40/0.15/400/20000/0 float=y maxiter=1000
+  inside=maxiter outside=tdis periodicity=0
+  colors=000ND6<6>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4
+  }
+
+multilake_15c      { ; different view 3Hrs 10min
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multlke.frm
+  formulaname=Multi_lake15 ismand=y passes=1
+  center-mag=2/-0.187656/0.9861933 params=0/0/512/40/0.15/400/20000/0
+  float=y maxiter=1000 inside=maxiter outside=tdis periodicity=0
+  colors=000ND6<6>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4
+  }

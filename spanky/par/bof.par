@@ -1,0 +1,598 @@
+; Path: unixg.ubc.ca!news.mic.ucla.edu!magnesium.club.cc.cmu.edu!
+;     eddie.mit.edu!europa.eng.gtefsd.com!howland.reston.ans.net!
+;     math.ohio-state.edu!cs.utexas.edu!uunet!mcsun!news.funet.fi!fuug!
+;     nullnet!sterna!gadox!sday!jute
+; From: jute@sday.pulp.nullnet.fi (Jussi Kantola)
+; Newsgroups: sci.fractals
+; Subject: The Beauty of Fractals parameters for Fractint v18
+; Message-ID: <30Py7B1w165w@sday.pulp.nullnet.fi>
+; Date: Mon, 19 Jul 93 18:35:37 PDT
+; Distribution: world
+; Organization: Splattersday
+; Lines: 588
+;  
+;  
+; Here you are : (some of) _The Beauty of Fractals_ fractals for Fractint v18!
+; This is not compressed nor uuencoded since usually the newsgroups go
+; compressed anyway, and uuencode just makes the things worse...
+;  
+; -- 
+; Jussi Kantola from Paltamo, Finland  | I couldn't remember my name so I called
+; email: jute@sday.pulp.nullnet.fi     | myself Jute.  It's weird being a Jute.
+;
+;  _The Beauty of Fractals_ julia(_inverse), mandelbrot and magnetic
+;  Figures and Maps for Fractint v18.
+;
+ 
+!Hit_F2 {
+  These fractals are from _The Beauty of Fractals_ by H.-O. Peitgen
+  et.al.  Only the coordinates for each fractal is given (values from
+  the end of the book).  Several color sets are included, but they're
+  very approximate.  Try 'em anyway!
+ 
+  Note that each fractal uses a viewwindow!  That's the only way (I
+  know of) to use the values in _The Beauty of Fractals_ directly and
+  so that the fractal will have same scalings etc. as in the book.
+  Note that sometimes I've rounded an aspect ratio of 0.743139048 to
+  0.74 (or 0.75), sometimes I haven't; usually the latter.
+ 
+  Please send me any nice colors (w/ coloring methods) for these
+  fractals (preferrably close to colors in the book) if you come up
+  with any, email-address is below.  Since this file has been posted
+  to USENET newsgroup sci.fractals, it might not be a bad idea to send
+  the required data there, too.
+ 
+  This file is pure public domain.  Upload it to BBS's, include it
+  in ftp-archives, parameter-collections, show it to your aunt,
+  anything.  The more widespread this gets, the better.
+ 
+  The parameters were copied by
+ 
+  Jussi Kantola
+  email: jute@sday.pulp.nullnet.fi
+  }
+ 
+;
+;  Some general parameters, handy.
+;
+ 
+!init {
+   reset viewwindows=1/0.75/yes/0/0
+   }
+ 
+!quick {
+   maxiter=150 float=no passes=g
+   }
+!slow  {
+   maxiter=32767 float=yes passes=g
+   }
+ 
+_Boundary_Trace     { ; fast access to BTM :-)
+  passes=b
+  inside=255
+  cyclerange=0/254
+  }
+ 
+_EdgeTrace    { ; "default" values for creating (mostly) julias for
+      ; printer
+      ; with type=julia_inverse this got a bit outdated
+  passes=1
+  outside=1
+  distest=-2/71
+  colors=000zzz000zzz<251>zzz
+  inside=1
+  }
+ 
+;
+; Color sets
+;
+ 
+Colors0 { ; Approximate colors for Map 15
+  colors=000000<15>zZ0<15>zz0<14>440<14>b7Qe8SfCU<2>iIYiKZjL_jN`kOa<4>mVen\
+  WfnXgoYhoZhp`i<29>zzz000<62>432000<46>xT0zU0yT1<13>e8Sc6Ua6S<12>312
+  }
+ 
+Colors1 { ; Approximate colors for Map 29
+  colors=0000P00050N01060K02080I04090P050B0N070D0K080E0I0A0G0F0B0I0G0D0J0I0E0L\
+  0K0G0M0L0H0O0N0J0Q0P0Dbr<4>MdjOehPcf<17>x33z00z00<13>pA0zu0<6>zS0zu0<14>zS0z\
+  u0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>\
+  zS0zu0<14>zS0zu0<14>zS0
+  }
+ 
+Colors2 { ; Approximate colors for Map 30
+  colors=000Q7TS8ST9QpA2j6De5Hb5J_4M<3>R2SP2TO1V<2>J1YI0ZH0_G0`F0aF0aDbr<4\
+  >MdjOehPcf<17>x33z00z00<13>pA0zu0<6>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0\
+  <14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<1\
+  4>zS0F0a<5>P6U
+  }
+ 
+Colors3 { ; Approximate colors for Map 33
+  colors=000F0a<9>VAPF0a<16>wU0Dbr<4>MdjOehPcf<15>t77v55x33z00z00y10<12>pA\
+  0zu0<6>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu\
+  0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0zu0<14>zS0
+  }
+ 
+ 
+Colors4 { ; Approximate colors for Maps 36,42 (logmap=-1)
+  colors=000wZ0hhcwZ0hhcvZ0ggbvY0ffbuY0eeatX0ee`tX0dd`sX0cc_rW0bbZrW0bbZqV0aaY\
+  pV0``XpU0__XoU0__WoU0ZZVnT0YYVmT0XXUmS0XXTlS0WWTkR0VVSkR0UURjR0UURiQ0TTQiQ0S\
+  SPhP0RRPhP0QQOgO0QQOfO0PPNfO0OOMeN0NNMdN0NNLdM0MMKcM0LLKbL0KKJbL0KKIaL0JJIaK\
+  0IIH`K0HHG_J0HHG_J0GGFZI0FFEYI0EEEYI0EEDXH0DDCWH0CCCWG0BBBVG0AAAUF0BBBVF0CCC\
+  WG0EEDXH0FFFZI0HHG_J0IIH`K0KKIaK0LLKcL0NNLdM0OOMeN0QQNfO0RRPhP0SSQiP0UURjQ0V\
+  VSkR0XXUmS0YYVnT0__WoU0``XpU0bbZrV0cc_sW0ee`tX0ffauY0hhcwZ0ggbvZ0ffauY0dd`tX\
+  0ccZrW0aaYqV0``XpU0ZZWoU0YYUmT0WWTlS0VVSkR0TTRjQ0SSPhP0RROgP0PPNfO0OOMeN0MMK\
+  cM0LLJbL0JJIaK0IIH`K0GGFZJ0FFEYI0DDDXH0CCCWG0AAA<64>zzz
+  }
+ 
+Colors5 { ; Approximate colors for Map 38 (logmap=-1)
+  colors=000<158>000F00N40R60T70W80YA0<5>fE0gF0iG0jG0kH0lH0<4>qK0rL0sL0tL0\
+  <5>yO0zP0zP0zP0zP0<3>zS0zT0zV0<2>z_0za0zd0<3>zo0zr0zv0zz0zz0<41>000
+  }
+ 
+Colors6 { ; Approximate colors for Map 44 (logmap=-1)
+  colors=000EEE<66>ZZZZZZZZZZZZZZZ___<41>llllllmmmnnn<8>qqqTTT<26>zzz<16>LLL<8\
+  >eddUTTHGG<7>nAA<32>z00<15>rsD<7>NbICCC<5>DDD
+  }
+ 
+Colors7 { ; Approximate colors for Map 48 (logmap=-1)
+  colors=000<158>000rZ00lx<9>0WcrZ0<17>hQ0<7>FCf<3>0Uz<5>0Kp<15>zzz<30>000
+  }
+ 
+Colors8 { ; Nice colors for Maps 58-60
+  colors=000uzzzzutyyyytsxxxxsrwwwwrpuuuupottttonssssnmrrrrmkppppkjoooojin\
+  nnnihmmmmhfkkkkfejjjjediiiidchhhhcaffffa`eeee`_dddd_ZccccZXaaaaXW````WV_\
+  ___VUZZZZUSXXXXSRWWWWRQVVVVQPUUUUPNSSSSNMRRRRMLQQQQLKPPPPKINNNNIKPPPPKNS\
+  SSSNPUUUUPSXXXXSUZZZZUXaaaaXZccccZaffffachhhhcfkkkkfhmmmmhkppppkmrrrrmpu\
+  uuuprwwwwruzzzzutyyyytrwwwwrpuuuupottttomrrrrmkppppkjoooojhmmmmhfkkkkfej\
+  jjjechhhhcaffffa`eeee`ZccccZXaaaaXW````WUZZZZUSXXXXSRWWWWRPUUUUPNSSSSNMR\
+  RRRMKPPPPKINNNNIJOOOOJLQQQQLNSSSSNOTTTTOQVVVVQSXXXXSTYYYYTV____VXaaaaXYb\
+  bbbY_dddd_affffabggggbdiiiidfkkkkfgllllginnnnikppppklqqqqlnssssnpuuuupqv\
+  vvvqsxxxxsuzz<30>000<30>zzu
+  }
+ 
+Colors9 { ; Cycle these with Map 11 -- looks funny!
+  colors=000z00<22>X00z00<22>000P00_00g00<2>z00z00zG0zN0zT0zX0z`0<2>zj0zk0\
+  <8>zn0zn0zn0zn0zn0zo0<176>zz0
+  }
+ 
+;
+;  Figures and Maps
+;
+;  Note that for some pictures the coordinates given are not
+;  'correct', ie. the picture in _The Beauty of Fractals_ may
+;  be (usually only) slightly different.  This is not my fault,
+;  I just copied the coordinates :).
+;
+;  Many of these coordinates are exactly the same.
+;
+ 
+Figure_03 { ; (Most) of these julia sets should actually be
+  type=julia corners=-1.8/1.8/-1.8/1.8
+  params=-0.12375/0.56508
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_04 { ; type=julia_inverse but I guess you can just
+  type=julia corners=-1.4/1.4/-1.4/1.4
+  params=-0.12/0.74
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_06 { ; hit 'J' to toggle... Remember, the main idea is just
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.481762/-0.531657
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_07 { ; to make getting the coordinates easy.
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.39054/-0.58679
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_08 {
+  type=julia corners=-1.3/1.3/-1.3/1.3
+  params=0.27334/0.00742
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_09 {
+  type=julia corners=-1.8/1.8/-1.8/1.8
+  params=-1.25
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_10 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.11/0.6557
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_11 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=0.11031/-0.67037
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_12 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=0/1
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_13 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.194/0.6557
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_14 {
+  type=julia corners=-1.7/1.7/-1.7/1.7
+  params=-0.15652/1.03225
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_15 {
+  type=julia corners=-1.7/1.7/-1.7/1.7
+  params=-0.74543/0.11301
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_25 { ; You've GOT to try this with MIIM!  Maxhits=4 will do fine
+  type=julia corners=-1.7/1.7/-1.7/1.7
+  params=0.32/0.043
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_26 {
+  type=julia corners=-1.7/1.7/-1.7/1.7
+  params=-1
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53a {
+  type=magnet1j corners=-6/4/-5/5
+  params=-1.0
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53b {
+  type=magnet1j corners=-6/4/-5/5
+  params=-0.1
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53c {
+  type=magnet1j corners=-6/4/-5/5
+  params=0
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53d { ; I don't think the book gives exactly correct corners
+  type=magnet1j corners=-5/5/-5/5
+  params=1.0
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53e { ; for these... or then the figures have been clipped
+  type=magnet1j corners=-5/5/-5/5
+  params=1.2
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53f { ; for print.
+  type=magnet1j corners=-5/5/-5/5
+  params=1.6
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53g {
+  type=magnet1j corners=-5/5/-5/5
+  params=2.0
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53h {
+  type=magnet1j corners=-5/5/-5/5
+  params=2.5
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53i {
+  type=magnet1j corners=-5/5/-5/5
+  params=2.9
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53j {
+  type=magnet1j corners=-5/5/-5/5
+  params=3.0
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53k {
+  type=magnet1j corners=-5/5/-5/5
+  params=3.1
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_53l {
+  type=magnet1j corners=-4/6/-5/5
+  params=4
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_54b {
+  type=magnet1m corners=1.85/2.15/1.5/1.8
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_54c {
+  type=magnet1m corners=-1/3.5/-2.25/2.25
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_54d {
+  type=magnet2m corners=-1/2.65/-2/2
+  viewwindows=1/1.095890411/no/0/0
+  }
+ 
+Figure_54e {
+  type=magnet2m corners=1.92/1.97/0.88/0.93
+  viewwindows=1/1/no/0/0
+  }
+ 
+Figure_54f {
+  type=magnet2m corners=-0.8/3.5/-2/2
+  viewwindows=1/0.930232558/no/0/0
+  }
+ 
+Map_001 {
+  type=magnet1m corners=-1.5/4.5/-2.25/2.25
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_002 {
+  type=magnet1m corners=1.86/2.21/1.51/1.77
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_003 {
+  type=magnet1j corners=-5.5/7.9/-5/5
+  params=4
+  viewwindows=1/0.746268656/no/0/0
+  }
+ 
+Map_004 {
+  type=magnet1j corners=0.42/1.98/2.5/3.67
+  params=-0.1
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_005 {
+  type=magnet1j corners=-0.5/1.5/-1.45/0.7
+  params=1.09582/2.07142
+  viewwindows=1/1.075/no/0/0
+  }
+ 
+Map_006 {
+  type=magnet1j corners=-2.1/-0.3/-0.5/0.5625
+  params=1.21/0.01
+  viewwindows=1/0.6/no/0/0
+  }
+ 
+Map_007 {
+  type=magnet2j corners=-15/15/-11/11
+  params=2
+  viewwindows=1/0.73333/no/0/0
+  }
+ 
+Map_008 {
+  type=magnet2j corners=-3.2/3.8/-3.3/1.9
+  params=1.2/2
+  viewwindows=1/0.742857142/no/0/0
+  }
+ 
+Map_009 {
+  type=magnet2j corners=-3.2/3.8/-3.3/1.9
+  params=1.2/2
+  viewwindows=1/0.742857142/no/0/0
+  }
+ 
+Map_010 {
+  type=magnet2j corners=-3.2/3.8/-3.3/1.9
+  params=1.2/2
+  viewwindows=1/0.742857142/no/0/0
+  }
+ 
+Map_011 {
+  type=magnet1m corners=1.2882/1.2963/0.9695/0.9753
+  viewwindows=1/0.716049382/no/0/0
+  }
+ 
+Map_012 {
+  type=magnet1m corners=1.2882/1.2963/0.9695/0.9753
+  viewwindows=1/0.716049382/no/0/0
+  }
+ 
+Map_013 {
+  type=magnet1m corners=1.290681/1.291136/0.97277/0.973098
+  viewwindows=1/0.72087912/no/0/0
+  }
+ 
+Map_014 {
+  type=magnet2m corners=1.9116/1.9784/0.88/0.93
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_015 {
+  type=magnet2m corners=1.9116/1.9784/0.88/0.93
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_016 {
+  type=magnet2m corners=-1.2/3.2/-1.65/1.65
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_018 {
+  type=julia corners=-2/2/-1.5/1.5
+  params=0.32/0.043
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_020 {
+  type=julia corners=-2/2/-1.5/1.5
+  params=-0.12375/0.56508
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_022 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.39054/-0.58679
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_024 {
+  type=julia corners=-2/2/-1.5/1.5
+  params=-0.11/0.67
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_025 {
+  type=julia corners=-1.5/1.5/-1.5/1.5
+  params=-0.39054/-0.58679
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_026 {
+  type=mandel corners=-2.25/0.75/-1.5/1.5
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_027 {
+  type=mandel corners=-0.19920/-0.12954/1.01480/1.06707
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_029 {
+  type=mandel corners=-0.95/-0.88333/0.23333/0.3
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_030 {
+  type=mandel corners=-0.713/-0.4082/0.49216/0.71429
+  viewwindows=1/0.728772965/no/0/0
+  }
+ 
+Map_033 {
+  type=mandel corners=-1.781/-1.764/0/0.013
+  viewwindows=1/0.764705882/no/0/0
+  }
+ 
+Map_036 {
+  type=mandel corners=-0.75104/-0.7408/0.10511/0.11536
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_038 {
+  type=mandel corners=-0.74758/-0.74624/0.10671/0.10779
+  viewwindows=1/0.805970149/no/0/0
+  }
+ 
+Map_040 { ; The picture in the color plate is slightly different
+  type=mandel corners=-0.746541/-0.746378/0.107574/0.107678
+  viewwindows=1/0.638036809/no/0/0
+  }
+ 
+Map_042 {
+  type=mandel corners=-0.74591/-0.74448/0.11196/0.11339
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_044 {
+  type=mandel corners=-0.745538/-0.745054/0.112881/0.113236
+  viewwindows=1/0.733371074/no/0/0
+  }
+ 
+Map_046 {
+  type=mandel corners=-0.745538/-0.745054/0.112881/0.113236
+  viewwindows=1/0.733371074/no/0/0
+  }
+ 
+Map_045 {
+  type=mandel corners=-0.745468/-0.745385/0.112979/0.113039
+  viewwindows=1/0.722891566/no/0/0
+  }
+ 
+Map_047 {
+  type=mandel corners=-0.745468/-0.745385/0.112979/0.113039
+  viewwindows=1/0.722891566/no/0/0
+  }
+ 
+Map_048 {
+  type=mandel corners=-0.7454356/-0.7454215/0.1130037/0.1130139
+  viewwindows=1/0.723404255/no/0/0
+  }
+ 
+Map_049 {
+  type=mandel corners=-0.7454301/-0.7454289/0.1130076/0.1130085
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+ 
+Map_050 {
+  type=mandel corners=-0.7454356/-0.7454215/0.1130037/0.1130139
+  viewwindows=1/0.723404255/no/0/0
+  }
+ 
+Map_051 {
+  type=mandel corners=-1.781/-1.764/0/0.013
+  viewwindows=1/0.764705882/no/0/0
+  }
+ 
+Map_052 {
+  type=mandel corners=-0.19920/-0.12954/1.01480/1.06707
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_053 {
+  type=mandel corners=-0.19920/-0.12954/1.01480/1.06707
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_054 {
+  type=mandel corners=-0.19920/-0.12954/1.01480/1.06707
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_058 { ; Actually these
+  type=mandel corners=-1.254024/-1.252861/0.046252/0.047125
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_059 { ; three are
+  type=mandel corners=-1.254024/-1.252861/0.046252/0.047125
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+Map_060 { ; all alike, but...
+  type=mandel corners=-1.254024/-1.252861/0.046252/0.047125
+  viewwindows=1/0.75/no/0/0
+  }
+ 
+ 
+Map_099 {
+  type=mandel corners=-0.745538/-0.745054/0.112881/0.113236
+  viewwindows=1/0.733371074/no/0/0
+  }
+ 
+Map_100 {
+  type=mandel corners=-0.74591/-0.74448/0.11196/0.11339
+  viewwindows=1/1/no/0/0
+  }
+ 
+Map_101 {
+  type=mandel corners=-0.74591/-0.74448/0.11196/0.11339
+  viewwindows=1/1/no/0/0
+  }

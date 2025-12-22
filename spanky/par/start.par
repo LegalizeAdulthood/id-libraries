@@ -1,0 +1,60 @@
+  ; Par-files for Fractint starting screens
+  ; If you like one, save it as start.gif
+  ; and put the name into your sstools.ini
+  ; example:" Filename=c:\fractint\gif\start.gif"
+  ; any feedback welcome!
+  ; Albrecht.niekamp@t-online.de
+  ;
+
+Starting_Screen    { ; Nontransparent letters
+                     ;
+                     ;
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=start.frm formulaname=startfrm
+  function=conj passes=1 center-mag=-0.5/0/0.6666667 params=7500/0
+  float=y maxiter=7500 inside=bof60 outside=tdis periodicity=0
+  colors=000<2>110110000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0\
+  F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU\
+  0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<2>4G54D36F5<16>kkammcpo\
+  e<3>zwm<3>mhZjdVfaS<3>VMCRI8OE4KA0000<43>000<4>000330<12>110
+  }
+
+Starting_Screen2   { ; Transparent letters  1hr 1min on a 2 Giga cpu
+                     ;
+                     ;
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=start.frm formulaname=starttfrm
+  passes=1 center-mag=-0.5/0/0.6666667 float=y maxiter=15000
+  inside=maxiter outside=tdis periodicity=0
+  colors=000WPE<3>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0\
+  EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG\
+  0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQ\
+  G<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<2>TLB
+  }
+
+Starting_Screen3   { ; Transparent letters  15 min
+                     ; Mandel in a mandel
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=start.frm formulaname=startufrm
+  passes=1 center-mag=0.5399/0/0.9 float=y maxiter=1094 inside=bof60
+  outside=tdis periodicity=0
+  colors=000<2>110110000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0\
+  F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<7>Q0UU0YX0a_0dc0hf0l<2>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<10>2WI2TG2RE<3>4G54D36F5<16\
+  >kkammcpoe<3>zwm<3>mhZjdVfaS<3>VMCRI8OE4KA0000<43>000<4>000330<12>110
+  }
+
+Starting_Screen4   { ; Transparent letters  9min
+                     ; Mandel in a mandel-head left
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=start.frm formulaname=startzfrm
+  passes=1 center-mag=-0.5/0/0.6666667 float=y maxiter=1094
+  inside=bof60 outside=tdis periodicity=0
+  colors=000acU<3>kkammcpoe<3>zwm<3>mhZjdVfaS<3>VMCRI8OE4KA0000<43>000<4>0\
+  00330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0D\
+  l0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<7>Q0UU0YX0a_0dc0hf0l<2>p0\
+  w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<10>2WI2TG2RE<3>4G54D36F5<\
+  11>_aS
+  }

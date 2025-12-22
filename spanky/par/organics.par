@@ -1,0 +1,429 @@
+; Path: unixg.ubc.ca!info.ucla.edu!psgrain!ee.und.ac.za!ucthpx!ika.cs.uct.ac.za!amason
+; From: amason@cs.uct.ac.za (Ashton Mason)
+; Newsgroups: sci.fractals
+; Subject: Organics.par - fractint parameter file
+; Date: 25 Jul 1995 13:00:01 GMT
+; Organization: University of Cape Town
+; Lines: 315
+; Message-ID: <3v2psh$66p@ucthpx.uct.ac.za>
+; NNTP-Posting-Host: ika.cs.uct.ac.za
+;
+; These are all mandelbrot images that I found over one weekend. I had
+; noticed that a certain kind of shape kept appearing in similar places,
+; and was trying to find more to investigate how true this observation was.
+
+; The shape is what I call an "organic", although it struck me later that
+; "brain" may have been a better name, since they often have a brain-like
+; shape. They basically have an oval shell, and a hollow interior with a
+; cardioid in the very center.
+
+; They occur in the creases at the rear ends of cardioids, and if you look
+; there it seems that you will always find them. Usually on the single strand
+; that originates in the center of the crease and attaches the cardioid to
+; the rest of the mandelbrot set.
+
+; To demonstrate this, choose an arbitrary area of the set, and find a
+; miniture cardioid. Magnify the crease at the rear until the central strand
+; on which the cardioid is attached is visible. Get as far into the crease
+; as you want, closer to the minature cardioid. Then magnify the strand
+; and look for "nodes". The nodes should be organics.
+
+; The interesting thing, I think, is that the detail in the area where the
+; organic occurs may in general not resemble the organic shape itself at all,
+; and when the organic does appear, it is a mixture of the basic organic shape
+; and the detail in that area. In that way, organics remind me of the cardioid
+; shape itself, in that they are both recurring shapes whose occurrence is
+; to some extent independent of the surrounding detail, and are "constructed"
+; from that detail.
+;
+; Not all of the images in this parameter file are of organics - some are
+; just interesting things that I found along the way :-)
+;
+; organics.par
+; Fractint parameter file
+; Ashton Mason
+; amason@cs.uct.ac.za
+; 1995
+
+
+12079501           { ; four armed spiral
+  reset=1900 type=mandel
+  corners=-1.3055310623459218/-1.3055310613532238/0.062802330340556906/0.0\
+  62802331084830146 params=0/0 float=y maxiter=65536 inside=0
+  colors=000900<5>000<10>S36V36Y36`37b47<5>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn\
+  4C<5>h6Ig6Jh6K<4>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<29>zqPzsOzsP<27>zyvzywzyxz\
+  zzyzzxzz<44>FzgDzfDyf<39>KB7K96K85K64K53K32K21L00<8>A00
+  }
+
+12079502           { ; within arm of spiral
+  reset=1900 type=mandel
+  corners=-1.3055310615700484/-1.3055310615672628/0.062802330954643631/0.0\
+  62802330956732072 params=0/0 float=y maxiter=65536 inside=0
+  logmap=674
+  colors=000zOn<25>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<37>KE9KC8KB7K96K85<\
+  3>K21L00K00<8>900700600400300100000<9>P35S36V36Y36`37<6>r5At6Bw6Bz7Cz7C<\
+  7>t5Cs5Cr5Cq4Cp4Co3B<6>h6Ig6Jh6K<6>k8Sl9Tm9Un9VnAW<19>yHqzIszJr<2>zNo
+  }
+
+12079503           { ; another organic thing
+  reset=1900 type=mandel
+  corners=0.4435759006651/0.4435789506651/0.3721762962291/0.3721785837291
+  params=0/0 float=y maxiter=65536 inside=0 logmap=107
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079504           { ; swirl in organic thing
+  reset=1900 type=mandel
+  corners=0.44357698903779/0.44357725133779/0.37217754696631/0.37217774369\
+  131 params=0/0 float=y maxiter=65536 inside=0 logmap=156
+  colors=000IYr<21>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<2>GYt
+  }
+
+12079505           { ; mutant organic thing
+  reset=1900 type=mandel
+  corners=0.44357702313825/0.443577038387323/0.372177639242421/0.372177650\
+  679226 params=0/0 float=y maxiter=65536 inside=0 logmap=283
+  colors=000<10>000010030<29>0z0<30>020000000<14>000110330<29>zz0<30>22000\
+  0000<29>000000200<29>zKU<30>211000000<3>000
+  }
+
+12079506           { ; mutant organic thing center
+  reset=1900 type=mandel
+  corners=0.4435770304888995/0.4435770318003197/0.37217764401538861/0.3721\
+  7764499895384 params=0/0 float=y maxiter=65536 inside=0 logmap=340
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079507           { ; part of mutant organic thing center
+  reset=1900 type=mandel
+  corners=0.44357703113952601/0.44357703125230818/0.37217764448130491/0.37\
+  217764456589153 params=0/0 float=y maxiter=65536 inside=0 logmap=614
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079508           { ; tip of mutant organic thing center
+  reset=1900 type=mandel
+  corners=0.4435770312218667/0.4435770312275058/0.37217764450788615/0.3721\
+  7764451211544 params=0/0 float=y maxiter=65536 inside=0 logmap=1269
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079509           { ; yet another of these organics
+  reset=1900 type=mandel
+  corners=0.02076163141195/0.02076294479804/-0.65020397368427/-0.650202989\
+  17269 params=0/0 float=y maxiter=65536 inside=0 logmap=226
+  colors=000SgG<10>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<12>SfG
+  }
+
+12079510           { ; organic center
+  reset=1900 type=mandel
+  corners=0.020762246017032/0.020762358968236/-0.650203523762479/-0.650203\
+  439094482 params=0/0 float=y maxiter=65536 inside=0 logmap=414
+  colors=000QeH<15>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<7>QeH
+  }
+
+12079511           { ; further into center
+  reset=1900 type=mandel
+  corners=0.0207622973702352/0.0207623111502821/-0.650203485002389/-0.6502\
+  03474672893 params=0/0 float=y maxiter=65536 inside=0 logmap=628
+  colors=000QeH<15>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<7>QeH
+  }
+
+12079512           { ; rear of center
+  reset=1900 type=mandel
+  corners=0.020762303851062428/0.020762304540064773/-0.6502034788019958/-0\
+  .65020347828552105 params=0/0 float=y maxiter=65536 inside=0
+  logmap=1403
+  colors=000QeH<15>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<7>QeH
+  }
+
+12079513           { ; down to the wire
+  reset=1900 type=mandel
+  corners=0.020762304097469722/0.020762304131919838/-0.65020347878202145/-\
+  0.65020347875619777 params=0/0 float=y maxiter=65536 inside=0
+  logmap=3347
+  colors=000QeH<15>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<7>QeH
+  }
+
+12079514           { ; seahorse on the wire
+  reset=1900 type=mandel
+  corners=0.020762304124723862/0.020762304126446366/-0.65020347877169604/-\
+  0.65020347877040485 params=0/0 float=y maxiter=65536 inside=0
+  logmap=4974
+  colors=000QeH<15>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<7>QeH
+  }
+
+12079515           { ; dandelions
+  reset=1900 type=mandel
+  corners=-1.7433364468981698/-1.7433364468964592/8.9379077240045508e-005/\
+  8.9379078522593063e-005 params=0/0 float=y maxiter=65536 inside=0
+  logmap=688
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079516           { ; dandelion wall
+  reset=1900 type=mandel
+  corners=-1.7433364468974737/-1.7433364468973267/8.9379077877043233e-005/\
+  8.9379077987342318e-005 params=0/0 float=y maxiter=65536 inside=0
+  logmap=732
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079518           { ; fractal tree planet
+  reset=1900 type=mandel
+  corners=-0.1539492714789/-0.1539462214789/-1.030524324856/-1.03052203735\
+  6 params=0/0 float=y maxiter=65536 inside=0 logmap=42
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079519           { ; binary tree
+  reset=1900 type=mandel
+  corners=-0.15394782671618662/-0.15394782671181603/-1.0305232338619659/-1\
+  .030523233858688 params=0/0 float=y maxiter=65536 inside=0
+  logmap=321
+  colors=000N_i<17>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PDd<18>0dG<16>pk\
+  0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<26>zf\
+  z<19>DXz<6>M_k
+  }
+
+12079520           { ; binary branch
+  reset=1900 type=mandel
+  corners=-0.15394782671349508/-0.15394782671264717/-1.0305232338610555/-1\
+  .0305232338604196 params=0/0 float=y maxiter=65536 inside=0
+  logmap=433
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+14079501           { ; ain't never seen this before
+  reset=1920 type=mandel
+  center-mag=-0.38656566200000000/-0.67070827550000000/106740.7/0.9995
+  params=0/0 maxiter=3000 inside=0 logmap=37
+  colors=0000g0<20>020000000<14>000110330<29>zz0<30>220000000<29>000000200\
+  <29>zKU<30>211000000<14>000010030<29>0z0<8>0i0
+  }
+
+14079502           { ; forest of ferns
+  reset=1920 type=mandel
+  center-mag=-0.38656096750000000/-0.67071313250000000/560381.1/0.9995
+  params=0/0 maxiter=3000 inside=0 logmap=158
+  colors=000FCX<10>ECgEChDChDDh<22>DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<24>\
+  WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sECrCCqCC<11>UCCSCD\
+  QCDOCEMCEKCFICFGCG<22>FCX
+  }
+
+14079503           { ; forest of ferns 2
+  reset=1920 type=mandel
+  center-mag=-0.38656093769718310/-0.67071457053131510/1.120762e+007
+  params=0/0 float=y maxiter=65536 inside=0 logmap=725
+  colors=000FCX<10>ECgEChDChDDh<22>DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<24>\
+  WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sECrCCqCC<11>UCCSCD\
+  QCDOCEMCEKCFICFGCG<22>FCX
+  }
+
+14079504           { ; fern galaxy
+  reset=1920 type=mandel
+  center-mag=-0.38655950531395100/-0.67071285580191240/1.018134e+008
+  params=0/0 float=y maxiter=3000 inside=0 logmap=389
+  colors=000FCX<10>ECgEChDChDDh<22>DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<24>\
+  WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sECrCCqCC<11>UCCSCD\
+  QCDOCEMCEKCFICFGCG<22>FCX
+  }
+
+14079505           { ; organic in fern galaxy strand
+  reset=1920 type=mandel
+  center-mag=-0.38655949516517910/-0.67071285830352070/1.669072e+010
+  params=0/0 float=y maxiter=3000 inside=0 logmap=429
+  colors=000FCX<11>ECgEChDChDDh<22>DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<24>\
+  WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sECrCCqCC<11>UCCSCD\
+  QCDOCEMCEKCFICFGCG<21>GCW
+  }
+
+15079501           { ; looking for organic in howsthispiral
+  reset=1920 type=mandel
+  corners=0.2628991168717/0.2629039668717/-0.002265518669321/-0.0022618811\
+  69321 params=0/0 float=y maxiter=32767 inside=0 logmap=92
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+15079502           { ; found one
+  reset=1920 type=mandel
+  corners=0.26290187835513007/0.26290187896138012/-0.0022632136785024071/-\
+  0.0022632132238149076 params=0/0 float=y maxiter=32767 inside=0
+  logmap=476
+  colors=000zxp<4>zyvzywzyxzzzyzzxzz<44>FzgDzfDyf<39>KB7K96K85K64K53K32K21\
+  L00<7>B00A00900700600400<2>000<10>S36V36Y36`37b47<5>r5At6Bw6Bz7Cz7C<9>r5\
+  Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<29>zqPzsOzsP<21\
+  >zwn
+  }
+
+15079503           { ; seahorse organic
+  reset=1920 type=mandel
+  corners=0.26290187861035758/0.26290187874979504/-0.0022632134702242073/-\
+  0.0022632133656460825 params=0/0 float=y maxiter=32767 inside=0
+  logmap=507
+  colors=000wJT<28>211000000<14>000010030<29>0z0<30>020000000<14>000110330\
+  <29>zz0<30>220000000<29>000000200<29>zKUyKU
+  }
+
+15079504           { ; check out the structure
+  reset=1920 type=mandel
+  corners=0.26290187867141418/0.26290187867417231/-0.0022632134299302581/-\
+  0.0022632134278617027 params=0/0 float=y maxiter=32767 inside=0
+  logmap=1210
+  colors=000FCX<11>ECgEChDChDDh<22>DdrDfrDfr<35>CvtCvtCvs<29>JiVJiVJiW<28>\
+  7ou6pv7nt<18>TDEVBBWBC<13>lJVnKXnLX<17>mkGlmFlmG<25>UkpTjrUjr<5>ekp<12>L\
+  pWJqUKqU<6>TpS
+  }
+
+15079508           { ; yes, another neon palette
+  reset=1920 type=mandel
+  center-mag=-0.02420618660000000/-0.72038490600000000/6651.722/0.9995
+  params=0/0 maxiter=3000 inside=0 logmap=yes
+  colors=0000g0<20>020000000<14>000110330<29>zz0<30>220000000<29>000000200\
+  <29>zKU<30>211000000<14>000010030<29>0z0<8>0i0
+  }
+
+15079509           { ; jewel organic
+  reset=1920 type=mandel
+  center-mag=-0.02427644398082844/-0.72037981098023330/1.397332e+012
+  params=0/0 float=y maxiter=3000 inside=0 logmap=541
+  colors=000aSZ<15>zfz<19>DXz<25>ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<11>PD\
+  d<18>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n6\
+  5<22>LIH<9>_RY
+  }
+
+; Path: unixg.ubc.ca!info.ucla.edu!psgrain!iafrica.com!ticsa.com!
+;     cstatd.cstat.co.za!ee.und.ac.za!ucthpx!ika.cs.uct.ac.za!amason
+; From: amason@cs.uct.ac.za (Ashton Mason)
+; Newsgroups: sci.fractals
+; Subject: Organics.par revisited - periodicity errors
+; Date: 31 Jul 1995 14:03:58 GMT
+; Organization: University of Cape Town
+; Lines: 94
+; Message-ID: <3vinse$s92@ucthpx.uct.ac.za>
+; NNTP-Posting-Host: ika.cs.uct.ac.za
+;
+; Last week sometime, I posted a parameter file called organics.par, which
+; contained examples of things that occur in the M-Set which I call
+; organics. Ray Girvan suggested that they resembled the entire shape of
+; certain Julia sets, so I decided to examine the Julia sets corresponding
+; to the points in the M-Set where organics occur, to see whether these were
+; particularly remarkable.
+;
+; I found that the Julia sets at these points generally resemble the
+; terrain in which the organics occur, with organic type parts of their
+; own. In general, the structure was very similar to the structure of the
+; Mandelbrot set in the corresponding position, which is not surprising.
+;
+; However, I did find that Fractint is very prone to producing errors in
+; the organic parts of these Julias, as the images in this parameter file
+; show. After experimenting with various options, I came to the conclusion
+; that the errors were caused by periodicity checking. Turing periodicity
+; checking off solved the problem. I also noticed that the errors occured
+; to a much greater extent when floating point was turned on, but still
+; occured occasionally with integer math.
+;
+; Are these errors common knowledge? Or am I doing something weird?
+;
+; Ash
+;
+;
+; errors.par
+; ----
+
+30079501           { ;
+  reset=1920 type=julia passes=2
+  corners=-0.078610316118936083/0.021245683881063925/0.00609470981/0.08098\
+  67098 params=0.4435773612284803/0.3721775378783693 float=y
+  maxiter=65536 inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+30079502           { ;
+  reset=1920 type=julia passes=1 corners=-2/2/-1.5/1.5
+  params=0.4435773568133786/0.372177545877456 float=y maxiter=10000000
+  inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+30079503           { ; try zooming into the 'lakes'
+  reset=1920 type=julia passes=1 corners=-0.172/0.172/-0.129/0.129
+  params=0.4435773568133786/0.372177545877456 float=y maxiter=1000000
+  inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+30079505           { ;
+  reset=1920 type=julia passes=1
+  corners=-0.067558046948356834/0.061097953051643158/-0.0509391106/0.04555\
+  28894 params=0.4435773568133786/0.372177545877456 float=y
+  maxiter=65536 inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+30079512           { ;
+  reset=1920 type=julia passes=1
+  corners=-0.29405321/-0.094053208/-0.94556367/-0.79556367
+  params=0.4435772371283238/0.3721777480036303 float=y maxiter=65536
+  inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<\
+  17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
+  22>LIH<26>zfz<19>DXz<6>M_k
+  }
+
+30079513           { ;
+  reset=1920 type=julia
+  corners=-0.000629970804/0.000881621614/-0.000599658117/0.000534337014
+  params=-1.305531061568662/0.06280233095569003 maxiter=65536 inside=0
+  colors=000zOn<25>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<37>KE9KC8KB7K96K85<\
+  3>K21L00K00<8>900700600400300100000<9>P35S36V36Y36`37<6>r5At6Bw6Bz7Cz7C<\
+  7>t5Cs5Cr5Cq4Cp4Co3B<6>h6Ig6Jh6K<6>k8Sl9Tm9Un9VnAW<19>yHqzIszJr<2>zNo
+  }
+
+30079514           { ;
+  reset=1920 type=julia corners=-0.388/0.388/-0.291/0.291
+  params=0.443577030416759/0.37217764578456 float=y maxiter=100000000
+  inside=0
+  colors=000SgG<10>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroErnDsmC<17>sE\
+  CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
+  >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<12>SfG
+  }

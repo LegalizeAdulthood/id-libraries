@@ -1,0 +1,90 @@
+; Path: unixg.ubc.ca!vanbc.wimsey.com!scipio.cyberstore.ca!math.ohio-state.edu!
+;     howland.reston.ans.net!swrinde!cs.utexas.edu!news.sprintlink.net!
+;     news.westnet.com!philipp.westnet.com!philipp
+; From: philipp@westnet.com (Ralf Philipp)
+; Newsgroups: sci.fractals
+; Subject: Some of My Favorite PARs
+; Date: Sat, 22 Apr 1995 13:24:50 LOCAL
+; Organization: WestNet Internet Services
+; Lines: 79
+; Message-ID: <philipp.187.002395D3@westnet.com>
+; NNTP-Posting-Host: philipp.westnet.com
+; X-Newsreader: Trumpet for Windows [Version 1.0 Rev B final beta #4]
+;
+; These are some of my favorite par files. Tell me if you like them.
+;
+; Ralf Philipp
+; philipp@westnet.com
+;
+;|Ralf Philipp - - - philipp@westnet.com - - - Home Page: http://www.westnet.com/~philipp
+;|Get Fractint!!
+;|Get my formula mass calculator MC (for all you chemist type people)
+;|from ftp://oak.oakland.edu/SimTel/win3/chem/mc1_01.zip
+;|
+;|John Serrie, David Arkenstone, Hisham, Zeus Faber, Tangerine Dream, Mike Oldfield, and
+;|Oystein Sev†g rule!! (BTW: for all of you knowledge impaired people; those are musicians)
+;
+
+FN_spiral_thingy   {
+  reset=1821 type=fn(z)+fn(pix) function=sin/sqr
+  corners=0.628081441/0.705280125/0.623857856/0.681804121 params=0/0/1
+  maxiter=1500
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+Simple_Spike       {
+  reset=1821 type=barnsleym1
+  corners=1.03651196/1.07284915/-0.013496995/0.0137802362
+  maxiter=15000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+Skewed_M_Set       {
+  reset=1750 type=mandel
+  corners=-0.0357673559/-0.0325824935/0.690909894/0.693303123
+  maxiter=15000
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+Leaf               { ; One of my favorites
+  reset=1821 type=mandel passes=b
+  corners=-1.40050901/-1.39947021/-0.00147167407/-0.000691782683
+  maxiter=256
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+Lightnin1          { ; One of my favorites
+  reset=1821 type=mandel
+  corners=0.399415675170843/0.399415768005768/-0.564181470979861/-0.564181\
+  401266568 float=y maxiter=32000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+Lightnin2          {
+  reset=1821 type=mandel
+  corners=0.3994157196711885/0.39941572571301/-0.5641814385672435/-0.56418\
+  14340283244 float=y maxiter=32000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+M_Spiral           { ; A slow M_Set Spiral
+  reset=1750 type=mandel
+  corners=-1.9990959256277916/-1.9990959256270822/-6.0184426688042906e-008\
+  /-6.0183870909549428e-008 float=y maxiter=32000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+Mouth              {
+  reset=1821 type=mandel
+  corners=-1.8605739594531159/-1.8605739591978177/-9.3587949505259191e-007\
+  /-9.3569128066345869e-007 float=y maxiter=1500 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }

@@ -1,0 +1,1582 @@
+; Newsgroups: sci.fractals,ncf.sigs.chaos-fractal
+; Path: unixg.ubc.ca!nntp.cs.ubc.ca!newsxfer.itd.umich.edu!
+; gatech!howland.reston.ans.net!torn!nott!cunews!freenet.carleton.ca!
+; FreeNet.Carleton.CA!ao950
+; From: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+; Subject: Easter PAR file for Fractint users
+; Message-ID: <D75u8s.G4t@freenet.carleton.ca>
+; Sender: ao950@freenet2.carleton.ca (Paul Derbyshire)
+; Reply-To: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+; Organization: The National Capital FreeNet
+; Date: Mon, 17 Apr 1995 03:41:16 GMT
+; Lines: 59
+;
+; This is a zoom sequence; they are numbered sequentially from furthest-out
+; to deepest-zoomed. The last one may take a bit of time (~15 minutes) even
+; on a 486/66.
+;
+; --
+; Cheers,      |  "There was a sale. The biggest going-out-of-business sale you
+; ________PGD__|  ever saw... But in the end, some of us decided not to buy."
+;    ___  ~~~                                                  --Needful Things
+; __| * |_______  ASGND Full Silly and Ysiggian _______________________________
+;
+;--
+;    .*.  "Clouds are not spheres, mountains are not cones, coastlines are not
+; -()  <  circles, and bark is not smooth, nor does lightning travel in a
+;    `*'  straight line."    ,------------------------------------------------
+;         -- B. Mandelbrot  |  Paul Derbyshire (PGD) ao950@freenet.carleton.ca
+
+1_LightningBrot    { ; The mini Mandelbrot at the top of the set.
+  reset type=mandel
+  corners=-0.194506859/-0.102968631/1.01040933/1.0791173 maxiter=1000
+  colors=000000MjI<12>6TX<23>wvO<4>rtUqsVqrV<24>qJSrHRrHR<181>000
+  cyclerange=2/255
+  }
+
+2_Mini-Lightning   { ; A lightning bolt off the side of the mini Mandelbrot
+  reset type=mandel
+  corners=-0.158211701/-0.139264425/1.03765242/1.0518742 maxiter=1000
+  colors=000000MjI<12>6TX<23>wvO<4>rtUqsVqrV<24>qJSrHRrHR<181>000
+  cyclerange=2/255
+  }
+
+3_Symmetry         { ; A symmetrical spot in the lightning bolt. At its center,
+                     ; a mini Mandelbrot
+  reset type=mandel
+  corners=-0.14784875/-0.145287374/1.04471511/1.04663871
+  colors=000000MjI<12>6TX<23>wvO<25>YipXhrXgr<4>TaqS`qS`q<180>ccc
+  cyclerange=2/255
+  }
+
+4_Closeup          { ; The mini Mandelbrot, with a blue halo of discharge.
+  reset type=mandel
+  corners=-0.146774951/-0.146364322/1.04554106/1.04584887 maxiter=2000
+  colors=000000MjI<12>6TX<23>wvO<25>YipXhrXgr<23>FFlEElEEl<4>FGkFHkFHkGIkG\
+  IkGJl<34>S`pTaqTaqTaq<113>000
+  cyclerange=2/255
+  }
+
+5_Spire            { ; The spire at the tip of the mini mandelbrot.
+  reset type=mandel
+  corners=-0.146560062/-0.146542208/1.04567072/1.0456841 maxiter=2000
+  logmap=yes
+  colors=000000qHP<3>zKU<24>312000001<22>5Ac<18>112000000<2>000010030<29>0\
+  z0<30>020000000<14>000110330<29>zz0<30>220000000<6>000000201<20>lFN
+  cyclerange=2/255
+  }
+
+6_Aurora           { ; Bands of auroras highlight the boundary of the set.
+  reset type=mandel
+  corners=-0.14655648573/-0.146556217509/1.045680355718/1.045680556903
+  float=y maxiter=5000 logmap=300
+  colors=000000050<28>0z0<30>020000000<14>000110330<29>zz0<30>220000000<6>\
+  000000201<20>lFNqHP<3>zKU<24>312000001<22>5Ac<18>112000000<2>000010030
+  cyclerange=2/255
+  }
+
+; Another zoom sequence, showing a mini-Julia set embedded in the M-set near
+; a mini Mandelbrot. The first three are identical to the first three images
+; in that batch of ten I posted earlier. The remaining eight are unique. The
+; last one is right about at the limit of Fractint's (V17... say, anyone
+; know how to get 19.2 other thasn FTP? No FTP here...:-() zoom limit.
+
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+3_DoubleSpiral     { ; Check the colors...!
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74223857886/-0.74210257886/0.14373918791/0.14384118791
+  float=y maxiter=2000 inside=0
+  colors=000<3>000110330<29>zz0<30>220000000<28>000001001002002<55>01T02U0\
+  2U03U03V<43>3Vk4Wl4Xn4Yp5_r<31>122000000<10>000
+  }
+
+_4b_Mini-Mandel    { ; A mini Mandelbrot at the center of the original dbl sprl
+                     ; Colors!
+  reset=1900 type=mandel
+  corners=-0.742180683511/-0.742168987511/0.1437872925154/0.1437960645154
+  float=y maxiter=5000 inside=0 logmap=100
+  colors=000ll0<109>cccccccbb<60>B16A05B06<29>x0az0cz1c<46>zzz
+  }
+
+_5b_Cleft          { ; The cleft between the main body and top bud of the mini
+                     ; Mandel.
+  reset=1900 type=mandel
+  corners=-0.74217523041118/-0.7421746456112/0.14379334547012/0.1437937840\
+  7013 float=y maxiter=10000 inside=0 logmap=200
+  colors=000031021000EEz<109>NNNNNNNOO<12>UWVVXVUXW<45>oytpzuozt<29>2zP0zN\
+  0yN<43>042
+  }
+
+_6b_Cleft          { ; The cleft, filled with a network of mandelstrands
+                     ;
+  reset=1900 type=mandel
+  corners=-0.742174868411754/-0.742174809931742/0.14379348332238/0.1437935\
+  27182377 float=y maxiter=20000 inside=0 logmap=900
+  colors=N09K08<11>402000<117>333444444555666<49>xxxzzzzwx<2>xnrzot<29>z2P\
+  z0Ny0N<28>O09N09N09
+  }
+
+_7b_Strand         { ; A single mandelstrand from in the cleft.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7421748388466757/-0.7421748351039226/0.1437935022922439/0.143\
+  7935050992803 float=y maxiter=20000 inside=0 logmap=900
+  colors=000<17>04L05N05N<58>0Ac0Ac0Ab<51>011000000000<5>000000200<13>Y0C`\
+  0D`0D<61>y0Mz0Ny0N<30>000
+  }
+
+_8b_DeepDoubleSprl { ; A double spiral from the mandelstrand.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74217483660908923/-0.7421748362872197/0.14379350352231371/0.1\
+  4379350376372288 float=y maxiter=20000 inside=0 logmap=900
+  colors=000983<65>yoMzpNzpNzpO<45>zzzyzzxyy<44>2LL0KK0KK<78>000000110<8>8\
+  73
+  }
+
+_9b_Sapphire+Ruby  { ; In the double spiral, a ruby mini-Julia.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7421748364904408/-0.74217483645823257/0.14379350363044119/0.1\
+  4379350365458476 float=y maxiter=20000 inside=0 logmap=1200
+  colors=0000AA<175>100100201<75>c0K
+  }
+
+__10b_Center       { ; The center of the mini Julia
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74217483647887073/-0.74217483647333715/0.14379350364215504/0.\
+  14379350364630306 float=y maxiter=20000 inside=0 logmap=1200
+  colors=000zzz<125>000000000000000<42>000000001012<12>3EJ4FL4GL<45>jynkzo\
+  kzolzp<13>zzz
+  }
+
+__11b_Center_II    { ; The center of the mini Julia
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74217483647656679/-0.74217483647578641/0.14379350364404797/0.\
+  14379350364460636 float=y maxiter=20000 inside=0 logmap=2150
+  colors=000ksl<7>xyxzzzzzz<125>0AK0AK0AJ0AJ09I<27>000000010<59>9aE9bEAcFB\
+  cG<20>irk
+  }
+
+
+; I have found interesting M-set structures that resemble spirals joined
+; together by springs... here's a fractint PAR full of them.
+;
+; The first two (seahorse tail) are duplicated from an earlier posting of mine.
+
+
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+____3e_Seahorse    { ; Tip of a seahorse from within double spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742042214246/-0.741992214246/0.144126865893/0.144164365893
+  float=y maxiter=2000 inside=0
+  colors=000<28>t_Dv`ExaEzcFybFwaF<26>642431221000000000<13>000011032<28>5\
+  r_<14>3VK3TJ3RI3PH3OG<12>122000000<14>000101303<29>z0z<30>202000000<29>0\
+  00
+  }
+
+____4e_SeaChain    { ; A chain joins two spirals of algae in the water.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7420103658106/-0.7420060658106/0.144136331159/0.144139556159
+  float=y maxiter=2000 inside=0 logmap=100
+  colors=00000A<108>4qZ5r_5qZ<13>3VK3TJ3TJ<62>zzzzzzyyy<61>000
+  }
+
+____4f_PurpleSprl  { ; Spiral from edge of seahorse chain in another spiral.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7420059449972/-0.7419998449972/0.1441258701467/0.144130445146\
+  7 float=y maxiter=2000 inside=0 logmap=100
+  colors=000A00<106>Z4pZ4qZ4q_5rZ5qY5o<12>K3VJ3TJ3T<60>yxyyyyzzzzzzyyy<61>\
+  000
+  }
+
+____5f_OrangeSprl  { ; Part of sprl from edge of seahorse chain in another sprl
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74200387752454/-0.74200343985639/0.14412828005555/0.144128608\
+  30666 float=y maxiter=2000 inside=0 logmap=100
+  colors=000K00<109>uR8uR8uR8uR8uR9<122>kiijjjkkk<14>zzz
+  }
+
+____6f_Springs    { ; Double spiral from spiral at the tip of seahorse in sprl
+                     ;
+  reset=1900 type=mandel
+  corners=-0.742003678862924/-0.742003619340047/0.144128453383104/0.144128\
+  498025254 float=y maxiter=2000 inside=0 logmap=100
+  colors=000K00<109>uR8uR8uR8uR8uR9<122>kiijjjkkk<14>zzz
+  }
+
+
+; Another PAR for Fractint users... (I feel bad all you Mac users can't
+; enjoy these...)
+; I particularly like the last one, number A9. I actually predicted this
+; pattern of spirals and deliberately "aimed" for it.
+
+Comment      {;By: Paul PGD Derbyshire
+              ;ao950@freenet.carleton.ca
+}
+
+A1_Horsehead       { ; The Seahorsehead Nebula
+  reset=1821 type=mandel
+  corners=-0.749492159/-0.748088878/0.0796128195/0.0806647316
+  maxiter=2000 inside=0 logmap=yes
+  colors=00000A<106>p4Zq4Zq4Zr5_q5Zo5Y<12>V3KT3JT3J<126>000
+  }
+
+A2_CloudyPlanet    { ; A line of clouds in a pink sky
+  reset=1821 type=mandel
+  corners=-0.748860737/-0.748790514/0.0800114144/0.0800640546
+  maxiter=2000 inside=0 logmap=yes
+  colors=zzzztm<94>vASv9Sv9Su8Ru9SuBT<12>wWfwYgwYg<126>zzzzzp<10>zum
+  }
+
+A3_Head_2_Head     { ; Two seahorses attached by their heads!
+  reset=1821 type=mandel
+  corners=-0.748810073/-0.748804122/0.0800353177/0.0800397787
+  maxiter=2000 inside=0 logmap=yes
+  colors=000w0c<77>zzzzzzyzz<60>5_q4Zp4Zp4Zo<67>111000000000<5>000101302<3\
+  0>w0c
+  }
+
+A4_2-4-1-Sale      { ; Double spiral from Head-2-Head
+  reset=1821 type=mandel
+  corners=-0.7488079911558/-0.7488065391118/0.08003720884735/0.08003829733\
+  135 float=y maxiter=2000 inside=0 logmap=yes
+  colors=0005FW<27>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<29>z5Pz3Nz3N<7\
+  7>000000001<31>5EV
+  }
+
+A5_Edge            { ; Bottom edge of double-spiral, in center
+  reset=1821 type=mandel
+  corners=-0.7488075321213/-0.74880698905688/0.0800372177711/0.08003762486\
+  4118 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000gwY<36>yyyzzzzzzzzz<5>zzzyyzwxz<29>5Pz3Nz3Nz<77>000000010<60>R\
+  u9SvASvASvB<29>fwX
+  }
+
+A6_Crown           { ; Crown of seahorse from top center of Edge
+  reset=1821 type=mandel
+  corners=-0.748807290743189/-0.748807204939029/0.080037512390008/0.080037\
+  5767107082 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000wgY<36>yyyzzzzzzzzz<5>zzzyyzxwz<29>P5zN3zN3z<77>000000100<60>u\
+  R9vSAvSAvSB<28>wfXfwX
+  }
+
+A7_Crownlet        { ; Sub-crown of Crown.
+  reset=1821 type=mandel
+  corners=-0.7488072437425168/-0.7488072363633546/0.0800375149283282/0.080\
+  03752045990598 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000w_h<34>yyyzzzzzzzzz<5>zzzyzyxzw<29>Pz5Nz3Nz3<77>000000100<60>u\
+  9RvASvASvBS<28>wXffXwwYgwZg
+  }
+
+A8_Crown-2-Crown   { ; Double spiral in the sub-crown.
+  reset=1821 type=mandel
+  corners=-0.74880724107466679/-0.7488072404400794/0.080037518634170343/0.\
+  080037519109889196 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000IvX<18>XwfXfwYwg<36>yyyzzzzzzzzz<5>zzzzyyzxw<29>zP5zN3zN3<77>0\
+  00000010<60>9uRAvSAvSBvS<8>IvX
+  }
+
+A9_Double-Date     { ; Two double spirals connected by a short cord
+  reset=1821 type=mandel
+  corners=-0.74880724079757055/-0.74880724074301519/0.080037518862495216/0\
+  .080037518903410335 float=y maxiter=5000 inside=0 logmap=yes
+  colors=0004Ho<79>S12T12T11U00U00<79>744644644555555<65>1Jw1Jx1Jy0Kz0Kz0K\
+  z<9>3It3Is3Ir3Iq4Iq4Hp
+  }
+
+
+; Two zoom sequences and an assortment of miscellaneous images. About 20 in all.
+
+Comment            { ;By Paul Derbyshire (PGD)
+                     ;ao950@freenet.carleton.ca
+}
+
+D1_Back            { ; Back of elephant
+  reset type=mandel
+  corners=0.27328163/0.273456594/0.00567048974/0.00580164418
+  maxiter=2000 logmap=yes
+  colors=000K0K<141>wzzwzzwyy<44>wLVwKUwKUvKU<61>000
+  }
+
+D2_Whirlpool       { ; Spiral from back of elephant
+  reset type=mandel
+  corners=0.273381038/0.27339175/0.00572675839/0.00573478825
+  maxiter=2000 logmap=yes
+  colors=000K0K<141>zzwzzwyyw<44>VLwUKwUKwUKv<61>000
+  }
+
+D3_Streamer        { ; Part of the spiral
+  reset type=mandel
+  corners=0.2733880874851/0.2733893943491/0.0057328148322768/0.00573379447\
+  5197 float=y maxiter=2000 logmap=yes
+  colors=0000KK<141>zzwzzwyyw<44>LVwKUwKUwKUv<61>000
+  }
+
+D4_WhenStrsCollide { ; A tiny black hole engulfs streamrs of plasma from 2 strs
+  reset type=mandel
+  corners=0.27338864584731/0.27338894642602/0.005733046786769/0.0057332721\
+  046407 float=y maxiter=2000 logmap=yes
+  colors=000zzz<60>222000000<56>00A<2>UAw<2>00A<30>T0JU0KU1KV2K<44>yx1zz0z\
+  z1<46>zzz
+  }
+
+D5_SpiralNebulae   { ; This was so dazzling it had to be dimmed by 1/64
+  reset type=mandel
+  corners=0.273388766041632/0.273388802712234/0.00573314429013794/0.005733\
+  17177891835 float=y maxiter=2000 logmap=yes
+  colors=000zzO<27>zzxzzzzzz<60>222000000<56>00A<2>UAw<2>00A<30>T0JU0KU1KV\
+  2K<44>yx1zz0zz1<16>zzN
+  }
+
+D6_TelurnionField  { ; Strange things happen in particle accelerators
+  reset type=mandel
+  corners=0.27338878113586/0.2733887842895358/0.00573315794287978/0.005733\
+  160306914862 float=y maxiter=2000 logmap=yes
+  colors=000zzH<33>zzxzzzzzz<60>222000000<56>00A<2>AUw<2>00A<30>0TJ0UK1UK2\
+  VK<44>xy1zz0zz1<10>zzF
+  }
+
+Dx_MurkyZone       { ; Something glows in this interstellar dust cloud
+  reset type=mandel
+  corners=0.27338878113586/0.2733887842895358/0.00573315794287978/0.005733\
+  160306914862 float=y maxiter=2000 logmap=yes
+  colors=0000000NH<5>0TJ0UK1UK2VK<44>xy1zz0zz1<45>zzxzzzzzz<60>222000000<7\
+  >001002002003003<23>00E00E00F11G<38>zzz<7>0NH
+  }
+
+Ax_Head2Head       { ; Two sea horses playing Head 2 Head
+  reset=1821 type=mandel
+  corners=-0.74888144635615/-0.74888051797936/0.08041465502875/0.080415350\
+  949953 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000I2C<36>111000110<37>xx0zz0zz0<174>I2C
+  }
+
+E1_Superscepters   { ; Not first, not second, third fissure toward spike
+  reset=1821 type=mandel
+  corners=-1.37025615/-1.36716512/0.005148625/0.00746657886
+  maxiter=5000 inside=0 logmap=yes
+  colors=000zyzzzz<60>z3yz2yz0z<189>zyz
+  }
+
+E2_Emperor         { ; Seahorse with super scepters.
+  reset=1821 type=mandel
+  corners=-1.3687416/-1.36789535/0.00621980801/0.00685416721
+  maxiter=5000 inside=0 logmap=yes
+  colors=zzzzy0<61>KKKKKKLKL<75>xOxyOyzPzzQz<29>zxzzzzzzz<78>zz0
+  }
+
+E3_ScepterZoom     { ; The scepter's center
+  reset=1821 type=mandel
+  corners=-1.36850717/-1.36831197/0.00642918423/0.00657550618
+  maxiter=5000 inside=0 logmap=yes
+  colors=zzzzzY<41>zz1zz0yz0yz0<60>KKKKKKKLL<75>OxxOyyPzzQzz<29>xzzzzzzzz<\
+  34>zzZ
+  }
+
+E4_CactusFern      { ; It's the incredible Cactus Fern! Spiral from scepter
+  reset=1821 type=mandel
+  corners=-1.36843232/-1.36841566/0.00648148358/0.00649397448
+  maxiter=5000 inside=0 logmap=yes
+  colors=000dJJ<32>b22b11a00`00<29>200000000<40>00X000<46>4EO5FP5FO<6>9BCA\
+  AAAAA<21>0U00U00V1<61>Kzc
+  }
+
+E5_Jewel           { ; A jewel-crusted symbol on the scepter
+  reset=1821 type=mandel
+  corners=-1.3684232854045/-1.3684224524045/0.006491250081717/0.0064918746\
+  267171 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000zKc<76>119008008008<76>E4OF5PF5O<6>B9CAAAAAA<21>U00U00V01<61>z\
+  Kc
+  }
+
+E6_FuzzyDoubleSprl { ; Weeeeeird...
+  reset=1821 type=mandel
+  corners=-1.3684229809593/-1.3684227777073/0.006491538313798/0.0064916907\
+  027781 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000zKc<76>119008008008<76>E4OF5PF5O<6>B9CAAAAAABAAC99000<16>00900\
+  A00A00A<62>0mz
+  }
+
+E7_SquareOne       { ; Weeeeeird...
+  reset=1821 type=mandel
+  corners=-1.36842291192362/-1.36842285501308/0.0064915979459285/0.0064916\
+  4061484275 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000UJ0<38>zm0zm0yl0<33>0A0<5>8A8AAAAAB<41>bJxcKzcKz<83>000000100<\
+  14>900A00A00A00<22>TI0
+  }
+
+E8_SquareOne       { ; Weeeeeird...  Notice the fiery mini Mandelbrot
+  reset=1821 type=mandel
+  corners=-1.36842291192362/-1.36842285501308/0.0064915979459285/0.0064916\
+  4061484275 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000UJ0<38>zm0zm0yl0<33>0A0<5>8A8AAAAAB<41>bJxcKzcKz<83>000000100<\
+  14>900A00A00A00<22>TI0
+  }
+
+E9_Minibrot        { ; The mini Mandelbrot, full screen
+  reset=1821 type=mandel
+  corners=-1.368422885556676/-1.368422881914449/0.006491618182217974/0.006\
+  491620913028343 float=y maxiter=10000 inside=0 logmap=1000
+  colors=000UJK<204>111000100<46>z0c
+  }
+
+
+; Fractint users, here's another PAR file. (Believe it or not, almost all of
+; this stuff I've been digging out of the seahorse valley! A lot of what
+; wasn't was from the scepter valley...
+;
+; Following this will be the Mystery PAR
+;
+; (Note: a couple of these have fancy color schemes that make the colors
+; section a little big. Bear with me, the pictures are probably worth it :-))
+
+Comment            { ;By Paul Derbyshire (PGD)
+                     ;ao950@freenet.carleton.ca
+}
+
+H1_Seahorse        { ; A seahorse, swimming in the ocean.
+  reset type=mandel
+  corners=-0.750777869/-0.739911529/0.1052102672/0.1135111508 float=y
+  maxiter=5000 inside=0 logmap=yes
+  colors=A00UUz<101>3FY3FY3FY3EY3EX3EX<75>A1IA1IB2I<7>C3HC3HC3I<58>K0U
+  }
+
+H2_Spiral_of_Life  { ; Emerging from a point, a chain of seahorses
+                     ; in the Sargasso sea
+  reset type=mandel
+  corners=-0.7459712801/-0.7443780139/0.1120447806/0.1132618894
+  float=y maxiter=5000 inside=0 logmap=yes
+  colors=000UzU<101>FY3FY3FY3EY3EX3EX3<75>1IA1IA2IB<7>3HC3HC3IC<58>0UK
+  }
+
+H3_Crowning_Achiev { ; A seahorse displaying its elegant top
+                     ;
+  reset type=mandel
+  corners=-0.7452382305/-0.74510120961/0.11313840749/0.11324307884
+  float=y maxiter=5000 inside=0 logmap=yes
+  colors=00000c<102>aOwaOwaOwaOwbPw<75>yhpyhpxho<7>winwinwhn<58>zXf
+  }
+
+H4_Ties_That_Bind  { ; Two spirals tied together!
+                     ;
+  reset type=mandel
+  corners=-0.7452022758725/-0.7451959181031/0.1132112751814/0.113216131932\
+  2 float=y maxiter=5000 inside=0 logmap=yes
+  colors=00000c<102>OawOawOawOawPbw<75>hyphyphxo<7>iwniwnhwn<58>Xzf
+  }
+
+H5_Galaxy_of_Life  { ; Spiral and part of the connecting arm.
+                     ;
+  reset type=mandel
+  corners=-0.7452006091917/-0.745198918025/0.1132126925922/0.1132139844879
+  float=y maxiter=5000 inside=0 logmap=50
+  colors=000A0A<159>000000111<9>444444555566<46>0zz0WW<30>0zz
+  }
+
+Hx_GalaxyofLife_2  { ; Spiral and part of the connecting arm.
+                     ;
+  reset type=mandel
+  corners=-0.7452006091917/-0.745198918025/0.1132126925922/0.1132139844879
+  float=y maxiter=5000 inside=0 logmap=50
+  colors=00040A<11>00A00A00A00A00A00A<119>000000111<9>444444555566<45>1xx0\
+  zz0yy<29>92CA0AA0A<21>40A
+  }
+
+H6_Stardust        { ; The stuff faeries sprinkle...
+  reset type=mandel
+  corners=-0.74519992625676/-0.74519957449409/0.11321335252165/0.113213621\
+  23596 float=y maxiter=5000 inside=0 logmap=100
+  colors=000<146>111111332323233553535355664646477885858588AA6A6A6AABB7B7B\
+  7CCDD8D8D8EEFF9F9F9FFGGAHAHBHHIIBIBICJJKKCKCKDLLLLDMEMEMMNNFNFNFOOPPGPGP\
+  GQQRRHRHRHSSSSISISITTUUJUJUJVVWWKWKWLXXXXLYLYMZZZZMZMZN__``N`N`OaaaaObOb\
+  PccccPcPcQeeeeQeReRffffRgSgShhhhShThTjjjjUjUjVllkkVlVlWmmmmWnWnXooooXoXo\
+  YqqqqYqYqZssrrZsZs_tttt_t_t`vvvv`v`vaxxwwaxaxczzyybzcz
+  }
+
+H7_Malachite       { ; Seahorse crown, opposite side of spiral from attachment.
+  reset type=mandel
+  corners=-0.745199745683604/-0.745199715431983/0.113213407444276/0.113213\
+  430553707 float=y maxiter=5000 inside=0 logmap=100
+  colors=0000zU<141>000000000000011<107>0UU
+  }
+
+H8_Sapphire        { ; Two spirals joined
+  reset type=mandel
+  corners=-0.7451997344431224/-0.7451997323097879/0.1132134170779867/0.113\
+  2134187076648 float=y maxiter=5000 inside=0 logmap=100
+  colors=000zzz<29>3zd0zc0zc<59>9BBAAAAAAAAA<45>00000000101200202401303601\
+  505802606A02707C02808E03A0AG03B0BI04C0CK04D0DM05F0FP05G0GR05H0HT06I0IV06\
+  K0KX07L0LZ07M0M`07N0Nb08P0Pd08Q0Qf09R0Rh09S0Sj0AU0Um1BV1Vm3DW3Wm5EX5Xn7G\
+  Y7Yn9IZ9ZoBJ_B_oDL`D`oFNaFapHObHbpJQcJcqLSdLdqNTeNeqPVfPfrRXgRgrTYhThsV_\
+  iVisXajXjsZbkZkt`dl`ltbfmbmudgndnufiofouhkphpvjlqjqvlnrlrwnpsnswpqtptwrs\
+  uruxtuvtvxvvwvwyxxxxxyzzzzzz
+  }
+
+H9_Emerald         { ; Four spirals linked by a strange network
+  reset type=mandel
+  corners=-0.74519973352819902/-0.74519973323804112/0.11321341782283789/0.\
+  11321341804447087 float=y maxiter=5000 inside=0 logmap=150
+  colors=000zzz<29>3dz0cz0cz<59>9BBAAAAAAAAA<45>00000001002102004203106305\
+  10850620A60720C70820E80A30GA0B30IB0C40KC0D40MD0F50PF0G50RG0H50TH0I60VI0K\
+  60XK0L70ZL0M70`M0N70bN0P80dP0Q80fQ0R90hR0S90jS0UA0mU1VB1mV3WD3mW5XE5nX7Y\
+  G7nY9ZI9oZB_JBo_D`LDo`FaNFpaHbOHpbJcQJqcLdSLqdNeTNqePfVPrfRgXRrgThYTshVi\
+  _VsiXjaXsjZkbZtk`ld`tlbmfbumdngdunfoifuohpkhvpjqljvqlrnlwrnspnwsptqpwtru\
+  srxutvutxvvwvvywxxxxyxzzzzzz
+  }
+
+I1_StarHorse       { ; A stallion for the stars... from Galaxy of Life
+  reset type=mandel
+  corners=-0.74520029808583/-0.74520012896918/0.11321285050555/0.113212979\
+  69512 float=y maxiter=5000 inside=0 logmap=50
+  colors=000z0U<109>AAAAAA999<12>111000000000<54>000000222<20>zzz<47>z0U
+  }
+
+I2_Yet_Another...  { ; ...pair of spirals joined by a chain.
+                     ; Trust me, inside this is an all-new interesting place...
+  reset type=mandel
+  corners=-0.7452002314840819/-0.7452002288120753/0.1132128908310076/0.113\
+  2128928722033 float=y maxiter=5000 inside=0 logmap=150
+  colors=000AAA<59>Z5KZ5KZ5KZ5KZ5K<93>m0Am0Am1A<60>vv1ww0vv0<30>AAA
+  }
+
+I3_Connections     { ; Four spirals in a line, joined by three short lines!
+                     ; See? I told you...
+  reset type=mandel
+  corners=-0.74520023033813809/-0.74520022997476676/0.1132128917383704/0.1\
+  1321289201597499 float=y maxiter=5000 inside=0 logmap=150
+  colors=000AAA<59>5ZK5ZK5ZK5ZK5ZK<93>0mA0mA1mA<60>vv1ww0vv0<30>AAA
+  }
+
+Ix_Candy_Cane      { ; "Connections" in a different color scheme.
+                     ; Candy canes with spirals?
+  reset type=mandel
+  corners=-0.74520023033813809/-0.74520022997476676/0.1132128917383704/0.1\
+  1321289201597499 float=y maxiter=5000 inside=0 logmap=150
+  colors=000<4>200200300400<101>y09z0Az0Az1B<60>zyyzzzzzzzzz<77>zzz
+  }
+
+
+; The "phony Mandelbrot" Julia set of this formula was interesting...
+; But I found the Mandelbrot set of this formula especially intriguing. I
+; have here a PAR for use with the PhonyMandelM formula.
+;
+; Note: the formula file needs to be named "pgd.frm"
+; Note also: this formula can be quite slow at times. Use floating point if
+; you have fractint 19.
+
+Comment            { ; By: Paul Derbyshire (PGD)
+                     ; ao950@freenet.carleton.ca
+}
+
+ThreeBud           { ; This is a 3-bud of the Mandelbroid. It is strangely
+                     ; altered; it has two subbuds and two forks!
+  reset type=formula formulafile=pgd.frm
+  formulaname=PhonyMandelM corners=-0.505095/-0.184247/0.495969/0.736965
+  maxiter=50 inside=0 logmap=yes colors=000FFF<29>x11z00z10<16>zZ0
+  }
+
+Minibrot           { ; Mini Mandelbrot from one of the y-forks of the distorted
+                     ; 3 bud. It looks undistorted.
+  reset type=formula formulafile=pgd.frm
+  formulaname=PhonyMandelM
+  corners=-0.43630564/-0.42826921/0.61371321/0.61973739 maxiter=200
+  inside=0 logmap=yes
+colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+OtherY             { ; The other Y-fork, and environs.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=PhonyMandelM
+  corners=-0.37851161/-0.19466388/0.59929317/0.73719269
+  params=0/0/0/0/0/0 inside=0
+  colors=0000HJ<4>00A<8>e0_<14>xv3zz0zz1<30>zzz<30>222000000<158>0KK
+  }
+
+OtherYMiniBrot     { ; Mini Mandelbrot, equivalent to the other. Looks normal.
+                     ; Filaments near it are fragmented however.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=PhonyMandelM
+  corners=-0.339535832/-0.330356777/0.700508118/0.707388818
+  params=0/0/0/0/0/0 inside=0
+  colors=0000HJ<4>00A<8>e0_<14>xv3zz0zz1<30>zzz<30>222000000<158>0KK
+  }
+
+Microbrot          { ; From spike of OtherYMiniBrot
+                     ; Looks normal. So do the spikes around it.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=PhonyMandelM
+  corners=-0.335756654912/-0.335661714581/0.704801988236/0.704873193484
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=0
+  colors=000<28>00w00z00z<61>y01z00z00z00<125>zz0zz1zz3<29>zzz000
+  }
+
+FloatingY          { ; A floating Y-pattern near the OtherY
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-0.278824971/-0.233961662/0.622054366/0.655701848
+  params=0/0/0/0/0/0 float=y inside=0
+  colors=000<59>0b00c00d00e01e0<29>ce0ee0ee0<30>zzLzzLzyM<60>zMyzLzyLy<29>\
+  2d20e00d0<30>000
+  }
+
+FloatingYBrot      { ; A mini Mandelbrot. Looks typical.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-0.2536164251/-0.2507451733/0.6272645974/0.6294180363
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=0
+  colors=000006<4>00900A20A<13>U01W00W00<14>h00i10j10k20l20<11>x80z90z90<8\
+  0>zn0zo0zo0zo0<41>zy0zy0zx0<36>zH0zF0xF0<13>M24J14G05E06<5>20A00A009<4>0\
+  06000
+  }
+
+MiniJulia          { ; From near FloatingYBrot
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-0.252306229964177/-0.252306142390997/0.628669432228224/0.628669\
+  49790811 params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ImkKljMji<13>u6B<13>YIC<4>00000A<60>vvlwwmvwl<3>owemwcmuc<11>m\
+  YYmVXlUX<14>aKu`JwZLt<14>0z0<15>c0c<5>000<72>1ws2xt4vr<5>Gnl
+  }
+
+Whole              { ; The entire Mandelbrot set
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0 float=y maxiter=2000
+  inside=0 logmap=yes
+  colors=000ImkKljMji<13>u6B<13>YIC<4>00000A<60>vvlwwmvwl<3>owemwcmuc<11>m\
+  YYmVXlUX<14>aKu`JwZLt<14>0z0<15>c0c<5>000<72>1ws2xt4vr<5>Gnl
+  }
+
+Another3           { ; 3-bud from the other main Mandelbroid.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.3767022/1.6327022/0.60692887/0.79892887 params=0/0/0/0/0/0
+  float=y maxiter=2000 inside=0 logmap=yes
+  colors=000T38T28V16<17>F3I<19>rgT<102>wArwArvCq<26>_e_gqW<6>PSeMOfLKf<71\
+  >Eci
+  }
+
+Braidoid           { ; Thing floating near the bud from Another3.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.58701221/1.63104421/0.676776703/0.709800703
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000T38T28V16<17>F3I<19>rgT<102>wArwArvCq<26>_e_gqW<6>PSeMOfLKf<71\
+  >Eci
+  }
+
+Braidoid_Center    { ; The doubled area does NOT have a minibrot in its center!
+                     ; It's off to one side.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.60351828/1.61426209/0.6889834235/0.6970412795
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000RkI<16>NlHwYrxYryWt<16>wkhwkhtig<18>J8Y<103>p38<27>LRR9JV<6>Za\
+  LbdKfeK<53>SjI
+  }
+
+Braidoid_Center2   { ; The mini Mandelbrot looks distorted.
+                     ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.606855864/1.610250907/0.6918403549/0.6943866373
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000hYJ<39>lNHYwrYxrWyt<17>kwh<19>8JY<102>3p83p84n9<26>RLRJ9V<6>aZ\
+  LdbKefK<30>hYJ
+  }
+
+Braidoid_Center3   { ; It's pretty much mangled.
+                     ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.6070694215/1.6076533689/0.69324609456/0.69368405515
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000Jh_<49>HlNrYwrYxtWy<17>hkw<19>Y8J<35>P6VP6VQ6V<91>y1bz0cz1c<30\
+  >zzz
+  }
+
+Right              { ; The right hand objects.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=1.766621/3.750621/-0.744/0.744 params=0/0/0/0/0/0 float=y
+  maxiter=2000 inside=0 logmap=yes
+  colors=000ImkKljMji<13>u6B<13>YIC<4>00000A<60>vvlwwmvwl<3>owemwcmuc<11>m\
+  YYmVXlUX<14>aKu`JwZLt<14>0z0<15>c0c<5>000<72>1ws2xt4vr<5>Gnl
+  }
+
+Right_Julioid      { ; This stuff looks like Julia-set matter.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.71399/3.126662/-0.154752/0.154752 params=0/0/0/0/0/0
+  float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ImkKljMji<13>u6B<13>YIC<4>00000A<60>vvlwwmvwl<3>owemwcmuc<11>m\
+  YYmVXlUX<14>aKu`JwZLt<14>0z0<15>c0c<5>000<72>1ws2xt4vr<5>Gnl
+  }
+
+Right_Minibrot     { ; A mini Mandelbrot in the dendrite.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.9039485/3.0194967/-0.13916025/-0.0524991304
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=0005NP<6>2NO<16>uzp<38>V1i<5>cjM<37>URpUQqUQqTQq<46>8dv8dv9eu<64>\
+  Uf9Uf9TeA<27>SVH
+  }
+
+Left               { ; The bud-like stuff at left.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.685292/-0.4212915/-0.474/0.474 params=0/0/0/0/0/0 float=y
+  maxiter=2000 inside=0 logmap=yes
+  colors=000_PG<15>S9GS9GTAH<60>iUNiUNhTO<51>63Y<3>tmm<35>IY6<60>ACS<8>KAp\
+  <2>o4O<7>h9Q
+  }
+
+Coastline          { ; From Left.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.2985075/-0.80807554/0.10564449/0.47346849
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000Lsk<26>53u52u63t<33>PEVPEVQFUQGU<58>VtNVtNWsO<44>wrvwrvvpt<18>\
+  iMV<46>eZzeZzfXx<11>kGa
+  }
+
+Left_Spike         { ; The spike... A mini Mandelbrot and a mini Julia.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.4848665/-1.1764505/-0.115656/0.115656 params=0/0/0/0/0/0
+  float=y maxiter=2000 inside=0 logmap=yes
+  colors=000_PG<15>S9GS9GTAH<60>iUNiUNhTO<51>63Y<3>tmm<34>JY7IY6IY6<58>ACS\
+  ACSBCV<7>KAp<2>o4O<7>h9Q
+  }
+
+Left_SpikeZoom     { ; Closeup
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.438084/-1.2851096/-0.057365376/0.057365376
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000tVauUauUaqdlnnw<16>8XX<5>ISNKRMKQL<7>8KY<17>ePb<20>_hD_hCZgD<3\
+  6>GgI<10>r8t<24>WSR<44>KZlKZlJ`j<21>OSvOSwQQy<28>Gbk`YqaXraWs
+  }
+
+Left_Thorns        { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.33505887/-1.29222606/0.013220439/0.0453450495
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000zzz<2>qqxnnwklu<15>8XX<5>ISNKRMKQL<7>8KY<17>ePb<5>cVVcWUcWU<63\
+  >r8tr8tr9t<124>zzz
+  }
+
+Dazzle             { ; From Left.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.40418754/-1.3305151/-0.0279151921/0.0273391381
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=0004VS<9>2Hh<16>wfw<46>zzz<2>qqxnnwklu<15>8XX<5>ISNKRMKQL<7>8KY<1\
+  7>ePb<5>cVVcWUcWU<63>r8tr8tr9t<50>uVv
+  }
+
+Chaos              { ; It's hard to make sense of this sort of chaos.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.36248248/-1.3445064/0.00383685903/0.0173189156
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000DQk<19>pzG<55>o1P<68>VCGVCGWDF<29>P2TO1UP2T<69>aF8b62<3>`ND
+  }
+
+Mandelbug          { ; From left.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.39851915/-1.38054308/-0.00609134999/0.00739070657
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000n`l<11>rdsuix<15>a6N`4L`4LZ5J<21>w2t<6>l9kjAjjAj<77>11L00K00K0\
+  0K<92>IYvJZwLZw<14>n`l
+  }
+
+Far_Left           { ; A cross-shaped pattern of fluff at far left.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-2.4440099/-1.6442659/-0.299904/0.299904 params=0/0/0/0/0/0
+  float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ImkKljMji<13>u6B<13>YIC<4>00000A<60>vvlwwmvwl<3>owemwcmuc<11>m\
+  YYmVXlUX<14>aKu`JwZLt<14>0z0<15>c0c<5>000<72>1ws2xt4vr<5>Gnl
+  }
+
+Far_Left_Minibrot  { ; A mini Mandelbrot with nice colors.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-2.11928629/-2.07929909/-0.0149952/0.0149952
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000K00<12>2`u0cz0by<29>02M00K00K<206>000
+  }
+
+Julie              { ; A mini Julia from the spike.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.342547985/-1.341005905/0.000389552636/0.001546112636
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000zzz<77>00K00K01L<76>0by0cz0cz1cz<93>zzy
+  }
+
+DarkTubers         { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.342197116/-1.3418208485/0.0012864528181/0.0015686534581
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000KA0<26>C60B60B60A50A50<14>000000111<77>zzzzzzyzy<60>Qz4Pz3Pz3P\
+  y3<61>KA0
+  }
+
+Center             { ; Center of the set.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.34565517/1.0336552/-0.258/0.258 params=0/0/0/0/0/0 float=y
+  maxiter=2000 inside=0 logmap=yes
+  colors=000HAqGAqF9qC7tF9qF8n<17>kowlqwmrv<57>nuNnuMpvL<32>6bZ5aZ2b_<68>j\
+  RZkRZmQY<28>CmwBnx9qz<31>E`n
+  }
+
+Seeds              { ; Seeds of a strange plant scattered to the wind.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.58575208/0.72885608/0.1514406/0.2587686 params=0/0/0/0/0/0
+  float=y maxiter=2000 inside=0 logmap=yes
+  colors=000i9pj9pk9qn6sk9qkCr<17>F3BE39D48<57>Cc5Cd5Ae4<32>tSOuSPxRO<68>G\
+  S_FS_DT`<28>n3Do2Cq09<31>lCQ
+  }
+
+Cauli's_Flower     { ; With mini Mandelbrots
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.598906877/0.628672509/0.21774326/0.240067484
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000DC8<45>Cc5Cd5Ae4<32>tSOuSPxRO<68>GS_FS_DT`<28>n3Do2Cq09<30>lCP\
+  lCQi9pj9pk9qn6sk9qkCr<17>F3BE39D48<10>DB8
+  }
+
+Spirals            { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.6181798902/0.6211564534/0.2224649739/0.2246973963
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ajj<25>Apj9pj9qk6sn9qkCrk<17>3BF39E48D<57>c5Cd5Ce4A<32>SOtSPuR\
+  Ox<68>S_GS_FT`D<28>3Dn2Co09q<5>3Dp
+  }
+
+DoubleSpirals      { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.61884517544/0.61931547243/0.22375976952/0.22411249226
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000zzz<76>6GL5FK6FK<29>u11w00w00<142>zzz
+  }
+
+Fluff              { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.805129191/0.889065191/-0.031476/0.031476
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000Deq<8>E`nHAqGAqF9qC7tF9qF8n<15>gjvimwkowlqwmrvmru<56>nuNnuMpvL\
+  <32>6bZ5aZ2b_<68>jRZkRZmQY<28>CmwBnx9qz<21>Cer
+  }
+
+Fluff2             { ;
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=0.82409136/0.838528352/0.0206624795/0.0314902235
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000WrC<4>Dbp<3>GGpHAqGAqF9qC7tF9qF8n<15>gjvimwkowlqwmrvmru<5>mrrr\
+  qm<49>uNnuMnvLp<32>bZ6aZ5b_2<68>RZjRZkQYm<28>mwCnxBqz9<5>nxAmxAlxAkwAjwA\
+  <11>WrC
+  }
+
+SHValley           { ; Seahorse Valley...weird!
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.1352964/2.2092804/0.178113741/0.233601741
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=0007eR<58>55M54M45K<62>A1kA1kB2k<47>B2kB2kC3kC4k<76>zzz
+  }
+
+Seahorses          { ; Seahorse Valley...weird!
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.13833415/2.1617131/0.205680829/0.223215037
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000R7e<12>Q6YD3G<159>k2Bk2Bk3C<77>zzz
+  }
+
+Speck              { ; Floating near a seahorse head
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.149585727/2.150754674/0.2205390528/0.2214157632
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000wmo<15>zzzR7e<12>Q6YD3G<159>k2Bk2Bk3C<60>vmn
+  }
+
+Sea-Algae          { ; Speck, magnified. A seahorse Julioid.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.1499441354/2.1501031122/0.22093613291/0.22105536553
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000mwonwp<14>AUf7Re7Rd<11>6QY3DG<159>2kB2kB3kC<60>mvn
+  }
+
+Ring...            { ; ...around the rosie
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.15004652348297/2.15004656219322/0.22100195515572/0.22100198418\
+  8401 params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000wmo<26>6u64v42v20w00w0<93>010000000100<60>i2Bj3Ck2B<62>vmn
+  }
+
+Grid               { ; Seahorse patterns
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.15005231239/2.1500796564/0.220996969484/0.221017477494
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ccc<188>111000110<29>xx0zz0zz1<30>ccc
+  }
+
+Web                { ; Seahorse patterns
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=2.15005231239/2.1500796564/0.220996969484/0.221017477494
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000ccc<188>111000110<29>xx0zz0zz1<30>ccc
+  }
+
+Ju-Ju-Julia        { ; Strange.
+  reset=1920 type=formula formulafile=pgd.frm formulaname=phonymandelm
+  corners=-1.20588339/-1.15148339/0.130227615/0.171027615
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000eZl<14>XYrWYrV_s<15>Y7mY5mX2l<20>j_tkatmcv<49>LYWKYVLZU<25>KIo\
+  JHpKIo<53>YZXhZU<7>IZa<2>fHDl71nC5pG9t8A<12>nvL<32>frO
+  }
+
+Starzzles!         { ; Looking for starzzles in a mini Mandelbrot
+  reset type=mandel
+  corners=-1.76324765/-1.76323694/0.0107910782/0.0107991081 float=y
+  maxiter=2000 logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starz_zoomout1     { ; So you can see where it is
+  reset type=mandel
+  corners=-1.76333727/-1.76314669/0.010724522/0.010867434
+maxiter=2000
+  logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starz_zoomout2     { ; So you can see where it is
+  reset type=mandel
+corners=-1.76599843/-1.76045/0.00874088/0.01290246
+  maxiter=2000 logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starz_zoomout3     { ; So you can see where it is
+  reset type=mandel corners=-1.82718/-1.70026/-0.0380752/0.0571401
+  maxiter=2000 logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starz_zoomout4     { ; So you can see where it is
+  reset type=mandel corners=-3.283251/-0.272414/-1.127099/1.132051
+  maxiter=2000 logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starz_zoomout5     { ; So you can see where it is
+  reset type=mandel corners=-3.99/3.990001/-3.243065/2.745819
+maxiter=2000
+  logmap=yes
+colors=0005FX<26>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<27>z9Rz7Qz5Pz3Nz3N\
+  y3N<74>201100000000001002<31>5FW
+  }
+
+Starzzle_Julia     { ; Looks like the Mandelbrot bit!
+  reset type=julia corners=-2.0/1.999999/-1.500001/1.5
+  params=-0.396455984/0.597559926 maxiter=2000 logmap=yes
+colors=000LZw<54>yyyzzzzzzzzz<5>zzzzyyzwx<29>z5Pz3Nz3N<73>402301201100000<3>\
+  003014015126127<25>5FV5FW5FX5FY5GZ<24>9RuASvASvBSv<11>KYw
+  }
+
+
+; I guess some of you are wondering what became of me and my PAR files.
+; I kinda got busy :-)
+; I've managed to put another one together though. It contains, as a side
+; note, one of the mini Julias I mentioned.
+; Enjoy :-)
+
+Comment            { ; This PAR file created by Paul Derbyshire (PGD)
+                     ; ao950@freenet.carleton.ca
+                     ; Freely distributable but please keep my name
+                     ; and e-mail address with it.
+}
+
+A1_BlueEyes        { ; The blue-eyed elephant that lives in the M-set
+                     ;
+                     ;
+  reset=1920 type=mandel
+  corners=0.2815830687/0.2853327733/0.008898827952/0.01171110643
+  params=0/0 float=y maxiter=10000 inside=0 logmap=40
+  colors=000<41>bbbccccccccc<15>ccccccbbbaaa<36>111000000000<14>0000001231\
+  1302335732705757B53B07B7AF75F0AF9CJ96J0CJBFNB7N0FNDHRD8R0HRFKVFAV0KVGMZG\
+  BZ0MZIPbICb0PbKRfKDf0RfMUjMFj0UjOWnOGn0WnQZrQHr0ZrS`vSIv0`vUczUKz0czWdzW\
+  Mz3dzYezYPz7ez_gz_SzBgzahzaUzFhzcjzcXzJjzekze_zNkzgmzgazRmzinzidzVnzkozk\
+  gzZozmqzmizbqzorzolzfrzqtzqozjtzsuzsqznuzuwzutzrwzwxzwwzvxzzzzzzzzzz<38>\
+  000
+  }
+
+A2_Tricolor        { ; A part of the elephant's trunk. Note the double spirals
+                     ; and the crystalline blue eyes of the mini elephants.
+                     ;
+  reset=1920 type=mandel
+  corners=0.2848551032/0.28498232532/0.0112366617424/0.0113320783335
+  params=0/0 float=y maxiter=10000 inside=0 logmap=60
+  colors=000111<21>z0Kv0Hz3Ey0Pr0Ey67w0Um0AwA0m0Pe09m90c0KY07c70U0FQ05U50K\
+  0AH04K40A05902A20000<2>0006C00C60C0CP00PC0P0I`00`I0`0Om00mO0m0Uz00zU0z0R\
+  t00tR0t0On00nO0n0Lh00hL0h0Ia00aI0a0FW00WF0W0CQ00QC0Q09J00J90J06D00D60D03\
+  7007307000000000012311302335732705757B53B07B7AF75F0AF9CJ96J0CJBFNB7N0FND\
+  HRD8R0HRFKVFAV0KVGMZGBZ0MZIPbICb0PbKRfKDf0RfMUjMFj0UjOWnOGn0WnQZrQHr0ZrS\
+  `vSIv0`vUczUKz0czWdzWMz3dzYezYPz7ez_gz_SzBgzahzaUzFhzcjzcXzJjzekze_zNkzg\
+  mzgazRmzinzidzVnzkozkgzZozmqzmizbqzorzolzfrzqtzqozjtzsuzsqznuzuwzutzrwzw\
+  xzwwzvxzzzzzzzzzzpEa<30>pEaoE`mE_<29>000
+  }
+
+A3_Wisps           { ; Wisps of ghostly fog outline the mini Mandelbrot
+                     ; in the center of the double spiral
+                     ;
+  reset=1920 type=mandel
+  corners=0.284912353156/0.284925075368/0.0112772088136/0.01128675047271
+  params=0/0 float=y maxiter=10000 inside=0 logmap=80
+  colors=000<141>yxxzyyzxy<22>qGbpEapEa<53>pEaoE`mE_<29>000
+  }
+
+A4_Mini_Mandelbrot { ; The left side of the mini Mandelbrot in the spirals
+                     ;
+                     ;
+  reset=1920 type=mandel
+  corners=0.28491838426101/0.28491902037162/0.011281945281227/0.0112824223\
+  64182 params=0/0 float=y maxiter=10000 inside=0 logmap=100
+  colors=000000<77>zzzzzzzyy<61>m0U<15>000010634323332867646664A9A979997CC\
+  DC9CCC9EFGFBFFFBHIJIEIIIEJLMLGLLLGLOPOJOOOJNRSRLRRRLPUVUNUUUNSXXXQXXXQU_\
+  __S___SWbbbUbbbUYeeeXeeeX_hhhZhhhZbkkkakkkadnnncnnncfqqqeqqqehttthttthjw\
+  wwjwwwjmzzzmzzzmnzzznzzznozzzozzzopzzzpzzzpqzzzqzzzrrzzzrzzzstzzztzzztuz\
+  zzuzzzvvzzzvzzzwwzzzwzzzxxzzzxzzzzzzzzzz
+  }
+
+A5_Bolt-brot       { ; A mini Mandelbrot in a lightning branch
+                     ;
+                     ;
+  reset=1920 type=mandel
+  corners=0.284918718268851/0.284918750074382/0.0112821957995784/0.0112822\
+  196537261 params=0/0 float=y maxiter=10000 inside=0 logmap=200
+  colors=000zzz<45>mczmczmczmcymdy<27>mmmmmmlmmkmm<20>YhmXgmXgmXgm<15>XgmW\
+  fmUem<17>2Vm0Um0Tj<14>000<30>Tk0Um0Um1<38>yyxzzzzzz<21>zzz
+  }
+
+A6_Dynamic         { ; The mini and its lightning, wrapped in filaments
+                     ;
+                     ;
+  reset=1920 type=mandel
+  corners=0.2849187335505874/0.284918736285863/0.01128220909131866/0.01128\
+  221114277537 params=0/0 float=y maxiter=10000 inside=0 logmap=480
+  colors=000zzz<109>UUcUUcVTc<29>m0U<15>000<30>0Tk0Um1Um<38>xyyzzzzzz<21>z\
+  zz
+  }
+
+A7_Filament_Junctn { ; One of the filaments near the mini Mandelbrot.
+  reset=1920 type=mandel
+  corners=0.28491873483069641/0.28491873500575404/0.011282210051400392/0.0\
+  11282210182693632 params=0/0 float=y maxiter=2000 inside=0
+  logmap=700
+  colors=000www<44>wBAv98v98<109>111000000000<21>000000012<20>JSwKUzKUz<46\
+  >zzz
+  }
+
+A8_Double_trouble  { ; A double spiral from the filament
+  reset=1920 type=mandel
+  corners=0.28491873490947234/0.28491873492697811/0.01128221011048235/0.01\
+  1282210123611674 params=0/0 float=y maxiter=2000 inside=0 logmap=700
+  colors=000A00<45>v98xA9xBA<45>yxxzzzzzz<45>NXQMWPMWPMVP<45>D3CD3CE4D<28>\
+  UUUUUUTTT<29>A00
+  }
+
+A9_Quad_Lightning  { ; A lightning bolt in a quadruple spiral
+  reset=1920 type=mandel
+  corners=0.28491873491673347/0.28491873491911424/0.011282210116428316/0.0\
+  11282210118213905 params=0/0 float=y maxiter=2000 inside=0
+  logmap=700
+  colors=000A00<45>v98xA9xBA<44>ywwyxxyxx<40>LPNKOMKPM<19>czc<7>AmA<8>Ck8C\
+  k8Bk9<20>4fG3eH5eJ<20>jlxmmzmmz<30>zzz
+  }
+
+Ax_Storm           { ; A6 retold in another color scheme
+  reset=1920 type=mandel
+  corners=0.2849187335505874/0.284918736285863/0.01128220909131866/0.01128\
+  221114277537 params=0/0 float=y maxiter=5000 inside=0 logmap=480
+  colors=000v98<157>000000000000000<17>000000220<23>zzK<14>zzczzdyyc<30>00\
+  0
+  }
+
+Ax_Valleys         { ; A6 again, but colored as a landscape...
+                     ; A couple of mountains, verdant valleys, rivers and an
+                     ; ocean!
+  reset=1920 type=mandel
+  corners=0.2849187335505874/0.284918736285863/0.01128220909131866/0.01128\
+  221114277537 params=0/0 float=y maxiter=10000 inside=0 logmap=480
+  colors=00K<39>zzzvvvwwvyyxuuuvvtxwvutsutrwuttsrtspvsrsrqsqnuqpsqorpltpmr\
+  pnqojsnkqolpmhqliqnkolfpjgpmjnjcoheolhmianfcokglh_me`njfkfYlcZmidjeWkaXm\
+  hchcUi_VlgagbShYTkf`f`QgWRke_e_OfVOjdYdZMeTMicXcXJdRKibWbWHcPIhaUaUFaNGg\
+  `T`TD`LEg_R_SB_KBfZQZQ9ZI9eYPYP7YG7eXNXN5XE5dWMWM3WC3cUKUNEje0Md0RQBii0Hi0QT9hm0Dm0PV6fq09q0NY3eu05u0M`0\
+  cz00z0Kc0cz07z0Nf0cz0Fz0Rj0cz0Nz0Un0cz0Vz0Yr0cz<36>00K
+  }
+
+Ax_Quad_Lightning2 { ; A lightning bolt in a quadruple spiral
+                     ; Slightly different colors
+  reset=1920 type=mandel
+  cornersAmA<8>Ck8Ck8B\
+  k9<20>4fG3eH5eJ<20>jlxmmzmmz<30>zzz
+  }
+
+Ax_Quad_Lightning3 { ; A lightning bolt in a quadruple spiral
+                     ; Slightly different colors, again
+  reset=1920 type=mandel
+  corners=0.28491873491673347/0.28491873491911424/0.011282210116428316/0.0\
+  11282210118213905 params=0/0 float=y maxiter=2000 inside=0
+  logmap=700
+  colors=000<45>00x00z11z<45>wvyyxxyxx<61>MQOLPNLQN<30>UzU<5>nznrzrvzvzzzz\
+  zz<14>mmzllzjjz<12>MMzKKzKKx<21>000
+  }
+
+; I feel a bit crappy that Mac users can't enjoy these... a Mac Fractint or
+; at least a Mac program that'll read Fractint PARs would be a nice thing :-)
+;
+; This PAR, like the last, is Fractint 18.2 compatible. Watch it, some
+; future ones might use 19.2 features such as arbitrary precision or fancy
+; center-mag parameters or monster maxiters. :-)
+;
+; Magnifi2.PAR
+
+Comment            { ; This PAR file created by Paul Derbyshire (PGD)
+                     ; ao950@freenet.carleton.ca
+                     ; Freely distributable but please keep my name
+                     ; and e-mail address with it.
+}
+
+B1_Cone_Spiral     { ; The strange cone-spiral grows in the second cleft
+                     ; holding aloft scepters
+  reset=1920 type=mandel
+  corners=-1.2642939/-1.25334262/0.0355610329/0.04377449684 params=0/0
+  float=y maxiter=10000 inside=0 logmap=yes
+  colors=00000K<78>S06T06T07<44>i1Bi1Bi1Bi2Ci2C<123>zzz
+  }
+
+B2_Scepter         { ; Part of the scepter of the cone spiral
+                     ; It's held together by diamond shaped things
+  reset=1920 type=mandel
+  corners=-1.25976007/-1.257876449/0.04184212084/0.04325483664
+  params=0/0 float=y maxiter=10000 inside=0 logmap=yes
+  colors=00000K<78>0S60T60T7<44>1iB1iB1iB2iC2iC<123>zzz
+  }
+
+B3_Diamond&Square  { ; A diamond-shaped tapestry, holding the scepter together
+                     ; wovn of the finest goldn thread, and containing a square
+  reset=1920 type=mandel
+  corners=-1.2589124408/-1.2587240786/0.04247784295/0.04261911453
+  params=0/0 float=y maxiter=10000 inside=0 logmap=100
+  colors=000<8>200300300400410<112>hA0iB1iB1iC1iD1<44>mm0mm0mm1<29>zzUzzUz\
+  zVzzWzzW<43>zzz
+  }
+
+B4_Goldibrots      { ; A mini Mandelbrot from the square in the scepter.
+                     ;
+  reset=1920 type=mandel
+  corners=-1.258822968754/-1.258813550649/0.04254494695073/0.0425520105297\
+  2 params=0/0 float=y maxiter=10000 inside=0 logmap=100
+  colors=000<8>200300300400410<112>hA0iB1iB1iC1iD1<44>mm0mm0mm1<29>zzUzzUz\
+  zVzzWzzW<43>zzz
+  }
+
+B5_Forest_Cleft    { ; A forested cleft in the minibrot, with king seahorses
+                     ;
+  reset=1920 type=mandel
+  corners=-1.2588194818001/-1.2588192873356/0.042547064119461/0.0425472099\
+  67788 params=0/0 float=y maxiter=10000 inside=0 logmap=600
+  colors=0000zz<60>qvvruuruuruu<60>jtfiseisehsdgsc<43>Bi1Ah0Ah0Ag0<77>000
+  }
+
+B6_Wavy_Mosaic     { ; A wavy mosaic of rectangles and filaments, near seahrses
+                     ;
+  reset=1920 type=mandel
+  corners=-1.25881939429109/-1.25881937484464/0.0425471297512086/0.0425471\
+  443360413 params=0/0 float=y maxiter=16000 inside=0 logmap=1000
+  colors=000<36>999999999AAAAAAAAA<73>5KF5KF6KG<39>TTbUUcUUcUUc<93>000
+  }
+
+B7_Shells          { ; In the sea... notice the large chambered nautilus
+                     ;
+  reset=1920 type=mandel
+  corners=-1.258819385890224/-1.258819383245508/0.0425471360518563/0.04254\
+  713803539358 params=0/0 float=y maxiter=16000 inside=0 logmap=1180
+  colors=00005P<32>JNdJNdJNc<25>BBCAAAAAA<45>JJJKKKKKKLKKLKK<27>bTTcUUcUUc\
+  UU<109>zzz
+  }
+
+B8_Spiny_Geofish   { ; A geometrically-shaped spiny fish floating in the sea
+                     ; Note the green glowing eye
+  reset=1920 type=mandel
+  corners=-1.2588193847953115/-1.2588193843404203/0.042547136873040715/0.0\
+  42547137214209156 params=0/0 float=y maxiter=16000 inside=0
+  logmap=1200
+  colors=00000K<19>zAK<3>KzA<5>AKz<4>PPP<105>111000010<29>0k90mA0mA<78>zzz
+  }
+
+B9_Eye_of_Storm    { ; A storm of swirling sprls rages around a floating sceptr
+  reset=1920 type=mandel
+  corners=-1.2588193846479268/-1.2588193844878051/0.042547136983579294/0.0\
+  42547137103670578 params=0/0 float=y maxiter=16000 inside=0
+  logmap=1200 colors=000z0K<140>zy1zz0zz1<29>p_xoZzoZz<78>c00
+  }
+
+B10_Spike          { ; A brightly colored spike in a B&W mosaic of spirals
+  reset=1920 type=mandel
+  corners=-1.2588193845779241/-1.2588193845578077/0.042547137036081269/0.0\
+  42547137051168603 params=0/0 float=y maxiter=16000 inside=0
+  logmap=1250
+  colors=000zzz<157>000000100<55>t9Iu0Av9Iw9Jx9JyKUzAKzAczBL<10>zISzUczJT<\
+  2>zLVzzzzMWzzzzNX<2>zPZzzzzQ_<3>zTbzzz
+  }
+
+B11_Spin-2         { ; Spirals and scepters and seahorses, surrounding a square
+                     ; that contains a mini Mandelbrot.
+  reset=1920 type=mandel
+  corners=-1.2588193845765741/-1.25881938457549/0.042547137040963252/0.042\
+  547137041776158 params=0/0 float=y maxiter=16000 inside=0
+  logmap=2300
+  colors=000pzz<133>N4nN4nM3mM3l<13>V1RW0PX0P<13>x0Lz0Kz0K<84>000
+  }
+
+; Two of these entries have a maxiter of 65535... so they'll only be
+; approximated by Fractint versions prior to 19.
+; I've tried some fancy coloring tricks :-)
+; I'd like feedback... if you like these, tell me so! :-)
+; Some of them are a tad slower than usual... bear with me :-)
+;
+; Magnifi3.PAR
+
+Comment            { ; This PAR file created by Paul Derbyshire (PGD)
+                     ; ao950@freenet.carleton.ca
+                     ; Freely distributable but please keep my name
+                     ; and e-mail address with it.
+                     ;
+                     ; NOTE: some images require FRACTINT 19.2 but
+                     ; can be APPROXIMATED with earlier versions
+}
+
+C01_Bud            { ; A cleft near the large bud on top of the M-set.
+                     ;
+  reset=1920 type=mandel
+  corners=-0.29189505/-0.13396129/0.62527641/0.74372672 params=0/0
+  float=y maxiter=32767 inside=0 logmap=8
+  colors=000000<76>TyyUzzUzzVzz<44>yzzzzzyzy<29>2n20m00m0<94>000
+  }
+
+C02_Wormhole!      { ; A wormhole in space, sucking in plasma streams frm stars
+                     ;
+  reset=1920 type=mandel
+  corners=-0.2168765122/-0.2089798244/0.6815403082/0.687462824
+  params=0/0 float=y maxiter=32767 inside=0 logmap=55
+  colors=000000<76>yTyzUzzUzzVz<44>zyzzzzzyy<29>n22m00m00<94>000
+  }
+
+C03_Tied_the_Knot  { ; Two spirals joined together. Notice the mini Mandelbrot.
+                     ;
+  reset=1920 type=mandel
+  corners=-0.2137187639/-0.21332392951/0.68435350316/0.68464962895
+  params=0/0 float=y maxiter=32767 inside=0 logmap=55
+  colors=000000<76>yyTzzUzzUzzV<44>zzyzzzyzy<29>2n20m00m0<94>000
+  }
+
+C04_Miniature      { ; A mini Mandelbrot from the spiral junction
+                     ;
+  reset=1920 type=mandel
+  corners=-0.213567356293/-0.213534671327/0.684497497495/0.68452201122
+  params=0/0 float=y maxiter=32767 inside=0 logmap=116
+  colors=000K1m<135>zzzzzzzzzzzzzuuzyuyvvzuxzppzwpxqrzpuzkkzukwmnzkrzeezse\
+  vhizeoz``zq`udez`mzWWzoWt_azWjzRRzmRsWXzRgzLLzkLrRTzLdzGGziGqNPzGbzBBzgB\
+  pIKzB_z66ze6oEGz6Xz00zc0m9Bz0Uz33zd3mCEz3Wz77ze7nFHz7YzBBzgBoJKzB_zFFzhF\
+  pMOzFazJJzjJqPRzJczNNzkNqTUzNezRRzmRrWXzRgzVVznVs_`zVizZZzoZtbczZkzbbzqb\
+  uefzbmzffzrfuiizfozjjztjvlmzjqznnzunwopznszrrzwrxsszruzvvzxvyvvzvwzzz<5>\
+  zzz
+  }
+
+C05_Boundary       { ; The boundary between order and chaos
+                     ;
+  reset=1920 type=mandel
+  corners=-0.2135497583799/-0.213542959907/0.6845062837465/0.6845113826012
+  params=0/0 float=y maxiter=32767 inside=0 logmap=220
+  colors=000m0K<138>zzzzzzzzzzzzuuzuyzvvyxuzppzpwzrqxupzkkzkuznmwrkzeezesz\
+  ihvoez``z`qzedum`zWWzWoza_tjWzRRzRmzXWsgRzLLzLkzTRrdLzGGzGizPNqbGzBBzBgz\
+  KIp_Bz66z6ezGEoX6z00z0czB9mU0z33z3dzECmW3z77z7ezHFnY7zBBzBgzKJo_BzFFzFhz\
+  OMpaFzJJzJjzRPqcJzNNzNkzUTqeNzRRzRmzXWrgRzVVzVnz`_siVzZZzZozcbtkZzbbzbqz\
+  feumbzffzfrziiuofzjjzjtzmlvqjznnznuzpowsnzrrzrwzssxurzvvzvxzvvywvzzzz<2>\
+  zzz
+  }
+
+C06_Gold&Velvet    { ; A bud and cleft of the mini Mandelbrot
+                     ; Requires Fractint 19.2 for maxiter value.
+  reset=1920 type=mandel
+  corners=-0.21354792284538/-0.21354758292173/0.68450780089526/0.684508055\
+  83799 params=0/0 float=y maxiter=65535 inside=0 logmap=700
+  colors=000zzz<92>nnzmmzmmzllyllx<72>11B00A00A00A00A33B<2>22A66C669549559\
+  99D999869779CCECC8B98AA8FFFFF8DB8CC8IIGII7GD7FF7MMHMM7JF7HH7PPIPP6MI6KK6\
+  SSJSS6OK6MM6VVKVV5RM5PP5YYLYY5UO5RR5``M``4XR4UU4ccNcc4ZT4WW4ggOgg3aV3ZZ3\
+  jjPjj3dX3``3mmQmm2g_2cc2ppRpp2ia2ee2ssSss1lc1hh1vvTvv1oe1jj1zzUzz0rh0mm0
+  }
+
+C07_Ruby_Seahorse  { ; A seahorse of an unusual kind.
+                     ; Requires Fractint 19.2 for maxiter value.
+  reset=1920 type=mandel
+  corners=-0.213547901819584/-0.213547884823401/0.684507921993055/0.684507\
+  934740192 params=0/0 float=y maxiter=65535 inside=0 logmap=1300
+  colors=000zzz<139>LLLLLLKKKJJJ<13>544322322<21>911911A00B00<4>I00K00J00J\
+  00L11N01N11M00P33R03R22P00T55U05V33S00X66Y06Z44U00_88`08b55X00cAAd0Af55_\
+  00gBBh0Bj66b00kDDk0Dn77d00nFFo0Fr88g00rGGr0Gv99j00vIIv0IzAAm00zKKz0KzHHm\
+  55zRRz5RzPPmAAzZZzAZzWWmFFzeezFezccmKKzmmz00
+  }
+
+C08_AllThatGlitter { ; This definitely is not gold. It's a crystal spiral.
+                     ;
+  reset=1920 type=mandel
+  corners=-0.21354789374639693/-0.21354789289658782/0.68450792804794525/0.\
+  68450792868530208 params=0/0 float=y maxiter=32767 inside=0
+  logmap=2300
+  colors=000zzc<123>eISeISdHRcHR<30>111000000<31>KKKKKKNNLNNLNLNOQOQQNQNQQ\
+  TRUUPUPURWVXXQXQXTZY__S_S_Ua`ccUcUcWddddWdWdYffffYfYf_gggg_g_gaiiiiaibid\
+  jjjjdjdjfllllflflhmmmmhnhnjoooojokolpppplqmqorrrrororqssssqtrtsuuuusutuu\
+  vvvvuwvwxxx<2>zzz
+  }
+
+C09_TwinWhirlPools { ; Two whirlpools in the waters with a glowing object
+                     ; stuck between them, pulled equally both ways.
+  reset=1920 type=mandel
+  corners=-0.21354789373638944/-0.21354789369389898/0.68450792856358555/0.\
+  6845079285954534 params=0/0 float=y maxiter=32767 inside=0
+  logmap=2600
+  colors=00000A<92>JJTKKUKKSIKSKISLLSKKTLKTKLTMLSMMSIMSMISNNQLLTNLSLNSOMQP\
+  PTJPTPJTPPOMMTPMRMPRQNORRTJRTRJTRRMNNTRNQNRQSOMUUUKUUUKUUUKPPUUPPPUPUPKX\
+  XXMXXXMXXXMRRXXRRRXRXRM___P___P___PUU__UUU_U_UPbbbSbbbSbbbSXXbbXXXbXbXSe\
+  eeUeeeUeeeUZZeeZZZeZeZUhhhXhhhXhhhXaahhaaahahaXkkk_kkk_kkk_ddkkdddkdkd_n\
+  nnbnnnbnnnbggnngggngngbqqqdqqqdqqqdiiqqiiiqiqidtttgtttgtttgllttllltltlgw\
+  wwjwwwjwwwjoowwooowowojzzzmzzzmzzzmrrzzrrrzrzrmzzzpzzzpzzzpttzztttztztpz\
+  zzszzzszzzsvvzzvvvzvzvszzzvzzzvzzzvxxzzxxxzxzxvzzz<6>zzz
+  }
+
+C10_Dark_Fuzz      { ; A strange fuzzy triskeloid surrounded by spirals
+  reset=1920 type=mandel
+  corners=-0.21354789371620528/-0.21354789371408314/0.68450792857872367/0.\
+  68450792858031528 params=0/0 float=y maxiter=32767 inside=0
+  logmap=2700
+  colors=000<33>00A00A10A10A20A20A<87>c0Mc0Md0Me0M<28>z0Uz0Uy0U<93>A00
+  }
+
+Cx_Golden_Fleece   { ; Golden fleece woven in a very strange pattern
+  reset=1920 type=mandel
+  corners=-0.21354789371620528/-0.21354789371408314/0.68450792857872367/0.\
+  68450792858031528 params=0/0 float=y maxiter=32767 inside=0
+  logmap=2700 colors=000z0U<127>000000110<123>zzK
+  }
+
+Inside-out         { ; The M-set inverted about a seahorse tail.
+  reset=1821 type=mandel corners=-2.836449/1.836448/-1.071201/2.433472
+  maxiter=5000 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
+  8q1
+  }
+
+Inside-out_zoom1   { ; A mandelblob becomes visible
+  reset=1821 type=mandel corners=-1.490654/0.490654/-0.3397017/1.14628
+  maxiter=5000 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
+  8q1
+  }
+
+Inside-out_zoom2   { ; Mandelblob close-up
+  reset=1821 type=mandel
+  corners=-1.0068282/-0.16675352/-0.19454689/0.4355092 maxiter=5000
+  logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000EmE<101>EfnEfnEfnEfnEfn<41>DdnCcoD`m<4>MMbOI_OI_<82>OnoPopN\
+  kl<8>07D6W46X4
+  }
+
+Inside-out_zoom3   { ; A bud on Mandelblob.
+                     ; Equiv. to the big front bud, somewhat rotated
+  reset=1821 type=mandel passes=t
+  corners=-0.83462238/-0.69012953/0.041052012/0.14942166 maxiter=1000
+  inside=255 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=AAA6HH<7>0GF0GF1HG<74>8KX9LY9LYALZALZ<25>LNhLNhLNhLOiLOi<14>JUsJU\
+  sLVt<34>tuwuuwttv<66>UGVUGVTHW<10>SOc000 cyclerange=1/254
+  }
+
+Inside-out_zoom4   { ; Note the 'dent' in the right-hand superbud.
+                     ;
+  reset=1821 type=mandel
+  corners=-0.7496431756/-0.7434334509/0.103067074/0.107724368
+  maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
+  colors=000<126>zz0000<126>0wc
+  }
+
+Inside-out_zoom5   { ; The 'dent' is actually the M-set back crack!
+                     ;
+  reset=1821 type=mandel
+  corners=-0.7453780818/-0.7443100091/0.1046219882/0.10542304276
+  maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
+  colors=000074<111>0wc000<125>zz0000<13>064
+  }
+
+Reef               { ; Mandelbrot zoom
+                     ; 3 minutes on a 386/25
+                     ; Try color cycling
+  reset=1821 type=mandel
+  corners=-0.43181238/-0.26781131/0.56955203/0.69255172 maxiter=1000
+  inside=0
+  colors=000z00<60>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<61>z00
+  }
+
+Firewhirl          { ; Julia set
+                     ; 2 min.
+                     ; Try color cycling
+  reset=1821 type=julia corners=-2/2/-1.5/1.5
+  params=-0.36407727189362049/0.60117465071380138 maxiter=10000
+  inside=0 logmap=yes
+  colors=000k6d<19>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<60>z10z00z00z\
+  01<38>l6c
+  }
+
+Coral              { ; Julia set
+                     ; 17 min.
+                     ; Try color cycling
+  reset=1821 type=julia corners=-1.28/1.28/-0.96/0.96
+  params=-0.36407727189362049/0.60117465071380138 maxiter=10000
+  inside=0 logmap=yes invert=0.05/0/0
+  colors=000JUt<39>JUsJUsJUsIUrIUrIUr<44>BWcBWcCVd<44>X8rX8rY9s<20>cJxcJxb\
+  Kv<35>aR6aR5bS6<22>jbLjbLkaK<28>pJF
+  }
+
+Fuzzybrot          { ; Mini Mandelbrot
+  reset=1821 type=mandel
+  corners=-1.865951/-1.85595142/-0.00375002995/0.00374986976 inside=0
+  colors=0002HK<41>E2CF1BF1BG1BH1B<14>T3GU4HU4HU4H<50>kLS<10>iuA<20>TYlSWn\
+  SWn<62>2v22v23v2<23>Qq7Rp8Rp8Rp9<12>QnH
+  }
+
+Floating           { ; Julia set
+  reset=1821 type=julia
+  corners=-0.10000014/0.10000029/-0.075000249/0.074999977
+  params=-1.8609448801726103/0.00051378458738327026 maxiter=10000
+  inside=0 logmap=yes
+  colors=000nRQ<19>gQigQifRj<30>DrxDrxEqy<45>ZDyZDyYEx<33>Vhk<27>8ER8DR9CQ\
+  <32>J1CJ1CK2D<10>T3GU4HU4HU4H<37>fGP
+  }
+
+Coastline          { ; A coastline with offshore islands and whirlpools...
+                     ; Mandelbrot closeup, three minutes on a 386/25
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=-0.834526641/-0.790495174/-0.209159218/-0.177246151
+  maxiter=2000 logmap=yes
+  colors=0000K00Zc<108>0Ac0Ac0Bc<78>KmKKmKKlK<60>0K0
+  }
+
+Bullseye!          { ; Julia set with interior coloring
+                     ; Try color cycling!
+                     ; 15 min on 325
+  reset=1821 type=julia corners=-2/2/-1.5/1.5
+  params=-0.46496263891458511/0.53840357251465321 maxiter=2000
+  inside=127 outside=0 finattract=y periodicity=0
+  colors=000OEL<40>h97h97iA8<74>jkkjlllmk<94>SelSelSdk<36>OEL
+  }
+
+Wavie              { ; Waves along a shore...
+                     ; Mandelbrot image
+                     ; Color cycle it!
+  reset=1821 type=mandel                   ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285614885/0.286475096/0.0112969242/0.0119418129
+  maxiter=10000 inside=0 logmap=yes
+  colors=000dGT<18>uGR<9>gNX000<93>A4EA4EB5FC5F<25>Z2FZ2F`3G<24>y4cz4cy4b<\
+  9>t4_s4_s4_s4_s4Zs4Z<56>z00
+  }
+
+Firestar           { ; 7 min.
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285654873/0.285729285/0.0114007536/0.0114565399
+  maxiter=10000 inside=0 logmap=yes
+  colors=000zz0<55>k5N<52>Kw2Kx2Ly3<28>UyGUyGVyHWyI<21>xyxzzzzzz<86>zz0
+  }
+
+LaceCradle         { ; A lace pattern holding a mini Mandelbrot
+                     ; Mandelbrot image, zoom of Vineleaf    17 min.
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285685636/0.285690101/0.0114355236/0.0114388708
+  maxiter=20000 inside=0 logmap=yes
+  colors=00000z<40>xTFzUDzUD<35>VUTUUUUUUUUU<38>SGURFVRGV<23>bvjcxkcxk<36>\
+  Q_fQZfPYePYdPYcOYb<62>00z
+  }
+
+Flower             { ; Mandelbrot image
+  reset type=mandel corners=-0.48376281/-0.47975345/0.61292032/0.61593054
+  maxiter=3000
+  colors=000aYV<20>eRsfQufQu<45>xdkyejydi<29>xLVxKUwJTvJT<60>111000000000<59>X\
+  e0Yf0Yf1Yf2<22>aZU
+  }
+
+s1z1Minibrot       { ; A large mini Mandelbrot
+                     ; color cycle!
+  reset type=mandel corners=-0.1808746/-0.1343577/1.0147586/1.0496752
+  maxiter=3000
+  colors=000mkd<27>yfOzeNzeNzdN<63>z1bz0cz0cy0c<64>00k01k12k<49>WoyXqzXqzXqyYq\
+  y000Yqx<32>lkd
+  }
+
+s1z2Cloudwhorl     { ; Near minibrot rear, on filamet
+                     ; color cycle!
+  reset type=mandel
+  corners=-0.154435266/-0.154411454/1.03084887/1.03086672 maxiter=3000
+  colors=000q00<19>c00b11a11`22_22<23>G9>iDKwNh<91>iDKdLS<15>fJQmZQ<76>fQx
+  }
+
+Spikabrot          { ; A tiny brot on the front spike, near the tip.
+                     ; Try color-cycling!
+  reset type=mandel corners=-1.9422713/-1.93983205/-0.00091488/0.0009149zzzzz<4>v\
+  vy
+  }
+
+Fourbrot           { ; A mini Mandelbrot on a 4-elephant.
+                     ; Try color-cycling!
+  reset type=mandel corners=0.34706508/0.35706466/0.57696781/0.58446771
+  maxiter=1000 colors=@st      ; Try color-cycling!
+  reset type=mandel corners=-1.8003769/-1.7227764/-0.0290996/0.0290999
+  colors=0000aA<4>0a20b02b0<25>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<17>41N
+  }
+
+propeller          { ; This has been zoomed as far as Fractint V18 will go.
+                     ; 12 hours on a slow 386
+                     ; Try color cycling
+  reset=1821 type=mandel
+  corners=-1.7589143877272417/-1.7589143877205/0.012089979390504157/0.0120\
+  8997939557808 float=y maxiter=7500 inside=0 logmap=250
+  colors=000n00<42>L00K00L22<21>xwjzzmzzmzzm<71>000000011<76>TlyUmzUly<30>\
+  o00
+  }
