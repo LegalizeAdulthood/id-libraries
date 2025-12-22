@@ -140,9 +140,9 @@ CoshInvZ(XYAXIS) {
    |z|<=4
    }
 
-{   ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=cosxx, for old DeepSpaceProbeTwo
+   ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=cosxx, for old DeepSpaceProbeTwo
    ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=log, for old Moth type
-   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzone type }
+   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzone type
 
 DeepSpaceProbe(XAXIS_NOPARM)[float=y function=sqr/exp/cosxx] {; Jonathan Osuch
    ; Generalized by Tobey J. E. Reed [76437,375]

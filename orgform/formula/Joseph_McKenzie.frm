@@ -3,6 +3,7 @@ Copyright { ;All formulae by Joe McKenzie
             ;You may use them freely as long as you:
             ;(1) distribute it as is and
             ;(3) LEAVE IN THIS ENTRY.
+}
 
 Sine_of_Brot (xaxis) { ;the sine of the Mandelbrot formula
   z=0, c=pixel:

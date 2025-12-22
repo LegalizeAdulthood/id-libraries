@@ -224,7 +224,8 @@ Gamma (XAXIS)={ ; Jm Richard-Collard
   }
 
 
-{===============
+{===============}
+
 Halley (XYAXIS) {; Chris Green
    ; try p1 = 1.0 and p2 = 0.0001
    ; note--use floating point
