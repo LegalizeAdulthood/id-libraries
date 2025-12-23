@@ -1,776 +1,387 @@
 Inv_Spirals        { ; Mass of spirals in InvMandel set
-
                      ; Long generation time
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=formula formulafile=fractint.frm formulaname=InvMandel
-
   corners=-1.32023555/-1.31867397/0.0929207802/0.0940913558
-
   maxiter=500 inside=0 logmap=-4 periodicity=0
-
   colors=000VHH<5>rH4vH1zH0<8>SDE<3>N3IL0JL1JM2JN3JO4I<10>tq2wu0zz0<2>pp2m\
-
   m3jj5<2>``8YY9XVA<6>KAIMAJOAL<12>ziE<13>K8B412000<15>svbsvbsvbsvb<13>UMG\
-
   SJEQII<5>EAa<6>7Nt5Pw5Nt<5>A5bB5`C6YD6WC6XG8RH9PJAMKBKMEIOEJ<7>b`bdceffh\
-
   hikjlnloqnrt<15>OI4<6>eYIg_KiaMkcOneQ<4>zp`<4>jdVgaUcZS`WRYUQ<6>AAJ<3>AL\
-
   PAORARTBUVBXX<6>DqkDtmCqk<4>9`d8Xb7Tb9Q_<5>L4Q<7>UGI
-
   }
-
-
 
 Inv_Mandel2        { ; Inverted rainbow Mandel w/propeller?
-
                      ; (c) 1994 by Jack A. Orman
-
   reset=1733 type=formula formulafile=fractint.frm
-
   formulaname=InvMandel passes=1
-
   corners=-1.453725/3.606525/-1.928146/1.867032 inside=bof60
-
   outside=mult biomorph=0
-
   colors=000zLzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3\
-
   >z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3\
-
   >zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07\
-
   SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSS\
-
   KQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88\
-
   G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGB\
-
   GGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGW0w<6>w0w00e0e00eee0\
-
   0e0eeL0eeeLLLLLzLzLLzzzLL
-
   }
-
-
 
 Blue_spirals       { ; Spirals of blue spirals
-
                      ; (c) 1994 by Jack A. Orman
-
   reset=1733 type=mandel4
-
   corners=-0.8070782857/-0.8060445944/0.098287789215/0.099062653189
-
   float=y maxiter=512 inside=0
-
   colors=00000`<34>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
-
   0yz<45>02z00z00y<23>00a
-
   }
-
-
 
 Spiral_morphs      { ; Map or blanket design
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1821 type=mandellambda passes=t
-
   corners=-0.99872733829/-0.99862640674/0.121829765972/0.121903997572
-
   float=y inside=0 biomorph=99
-
   colors=000_EBWECSDE<3>N3IL0JL1JM2JN3JO4I<10>tq2wu0zz0<2>pp2mm3jj5<2>``8Y\
-
   Y9XVA<6>KAIMAJOAL<12>ziE<13>K8B412000<15>svbsvbsvbsvb<13>UMGSJEQII<5>EAa\
-
   <6>7Nt5Pw5Nt<5>A5bB5`C6YD6WC6XG8RH9PJAMKBKMEIOEJ<7>b`bdceffhhikjlnloqnrt\
-
   <15>OI4<6>eYIg_KiaMkcOneQ<4>zp`<4>jdVgaUcZS`WRYUQ<6>AAJ<3>ALPAORARTBUVBX\
-
   X<6>DqkDtmCqk<4>9`d8Xb7Tb9Q_<5>L4Q<8>VHH<5>rH4vH1zH0<5>cF9
-
   }
-
-
 
 Layer_Cake         { ; Gold layers of cake
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1820 type=fn(z*z) function=flip passes=t corners=-4/4/-3/3
-
   float=y maxiter=32000 bailout=64 outside=imag invert=3/0/0
-
   colors=000XNAYNAZOA_OB<2>`PC`QDaQDbREbREcSEdSFdTGdTG<3>gVIgWJhWJhWJiXKiX\
-
   LiYMjYMkZNkZOk_Ol_Ol`Pl`QmaQ<15>rh_si`siasjbsjb<22>wurwuswvuwvvwvvwvwwuv\
-
   wuvwtuwts<25>rharg`rg`qf_qfZqeY<8>naTnaSm`Sl`R<2>kZPkZOkYOjYO<7>fUJfUIeT\
-
   IdTHdSGdSGcRGcRFbQEaQE<3>_OC_OCZNCYNB<2>WLAVL9VK9VK9<11>NE4ME4LD4KD4KC3<\
-
   24>210100100100<33>PG5PH5QH5RH6RI6SI6<2>UK8VK8VL8VL9WM9XM9
-
   }
-
-
 
 Skyscraper         { ; View down to a congested road
-
                      ; (c) 1994 Jack A. Orman
-
                      ; All rights reserved
-
   reset=1820 type=mandel passes=1
-
   corners=-1.773779840308547/-1.773779854507425/0.005244338018973106/0.005\
-
   24434266815775/-1.773779847651753/0.005244347809938424
-
   params=2.71828182845905 float=y maxiter=32000 bailout=12
-
   outside=summ invert=3.78497e-007/-1.77377/0.00524571
-
   colors=333iii<22>UUUTTTTTTTTT<5>PPPOOOOOOOOO<2>LLLLLLKKKKKKKKKJJJIIIIIII\
-
   IIHHH<23>777777777777666<39>333333444<19>888888888999999999<15>GGGGGGHHH\
-
   IIIIIIIIIJJJ<3>LLLLLLMMMNNN<8>SSSTTTTTTTTT<46>yyyzzzyyy<21>jjj
-
   }
-
-
 
 Electric_cross     { ; Glowing Electrified Cross
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1820 type=mandel passes=1
-
   corners=-1.77731232/-1.78761637/-0.00684374212/0.00689501175/-1.78761637\
-
   /0.00689501175 params=2.71828182845905 float=y maxiter=10240
-
   outside=summ
-
   colors=000740<24>PG5PH5QH5RH6RI6SI6<2>UK8VK8VL8VL9<3>YNAZOA_OB_OC`PC`PC<\
-
   3>bREcSEdSFdTGdTG<3>gVIgWJhWJhWJiXKiXLiYMjYMkZNkZOk_Ol_Ol`Pl`QmaQ<15>rh_\
-
   si`siasjbsjb<22>wurwuswvuwvvwvvwvwwuvwuvwtuwts<25>rharg`rg`qf_qfZqeY<8>n\
-
   aTnaSm`Sl`R<2>kZPkZOkYOjYO<7>fUJfUIeTIdTHdSGdSGcRGcRFbQEaQE<3>_OC_OCZNCY\
-
   NB<2>WLAVL9VK9VK9<11>NE4ME4LD4KD4KC3<24>210100100100<7>640
-
   }
-
-
 
 Star_Perspective   { ; Bars & Stars in Neon
-
                      ; (
-
                      ; August 1994
-
   reset=1821 type=lambdafn function=exp
-
   corners=-6.412262/-3.647109/3.882193/5.956058
-
   params=3.75/4.71828182845905 float=y maxiter=1024 bailout=640
-
   outside=real decomp=256
-
   colors=0000CC<10>0cc<15>zzz<15>0c0<14>030000200<13>`00c00d44<13>zzzyxvwv\
-
   r<4>pe_oaWmYSlUOjQKiMGgICfE8dC4cB0<9>F10D00A00800<2>000003005<5>D0KF0MJ0\
-
   P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupwxvyzzzyvxwpuvosujqse\
-
   oqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0C<4>B02900700500005<13>0\
-
   0c<15>zzzvxyrvwnrvjntfls<2>WaoSYmOWl<5>0Kc0Ka<8>02F00D00A<2>003000022<2>\
-
   0AA
-
   }
-
-
 
 Brain_Xray         { ; Hot Red X-Ray of a Brain
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1731 type=julzzpwr passes=b
-
   corners=-1.188535/0.9968098/1.469423/-1.444371/0.9968098/-1.444371
-
   params=0.0101010101/0.069999999999999993/3 float=y maxiter=256
-
   logmap=yes potential=256/200/75 periodicity=0
-
   colors=M00s`0<4>td0td1te3<27>yyhyzjyzkyzmyzn<6>zuyzuzztzzsz<40>uR1tR0tQ0\
-
   <5>sM0rL0rK0qJ0qJ0<5>pE0oE0oD0nC0nC0<8>k50k50j40i30<2>h10h00h00g00g00g00\
-
   f00<4>d00d00c00b00<9>Z00Z00Y00X00X00X00W00<3>U00U00T00S00S00S00R00<7>N00\
-
   N00N00N00O00<4>Q00Q00R00S00S00<3>U00V00V00V00W00X00X00X00Y00Z00Z00<4>`30\
-
   `40a50b50b60b70c70<4>eB0eC0fC0gD0<6>iI0iJ0jJ0kK0<16>qW0qX0qY0qY0qZ0r_0r_\
-
   0
-
   }
-
-
 
 Branch3D           { ; 3D appearing branches
-
                      ; Move back from the screen about 2 feet
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=mandel passes=1
-
   corners=0.4322927528/0.438929565/0.3757324975/0.3807100806 float=y
-
   maxiter=256 inside=0 outside=summ logmap=9
-
   colors=000MMi<13>22i00h10f<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0\
-
   <11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<14>000<11>g0NkVPo\
-
   zRsz0vzVzzXvzz<8>O0C<5>000<15>p0w<15>000<15>zzz<3>jjj<15>OOi
-
   }
-
-
 
 Spinning_pinwheels { ; Color cycle then load neon palette
-
                      ; (c) Jack A. Orman
-
   reset=1821 type=lambda passes=2
-
   corners=0.7683546/1.0210514/0.0030030169/0.19252563
-
   params=2.9182818284590502/0.71828182845904998 float=y maxiter=512
-
   bailout=4 inside=bof60 outside=summ logmap=yes invert=0.618/0/0
-
   colors=KAK0FJ<3>`2w<3>QqX`80<2>OAhhHt<2>dyFl`J<2>mqjRxJukN<3>wP7qM6kJ5dF\
-
   3<2>HAz<2>CK3<3>4KD<2>UuT<3>27JFYbTxv<2>DnFOVOZAX<3>UIpDJeABJ<2>YED<3>na\
-
   tAPe2fd3T`5FX<3>UTI<2>oqeslTwfF<2>VX3_iRdwo9uLMoN_iQRf_Hciakqwsy_nxBhw<3\
-
   >qkU<2>qUJ<2>z1_n8kbFw<2>Y6NMHF9T769KINUU`dfeSskFCa`XPYqBUn6cj1nTBUBM8<3\
-
   >ngvkWhgJV<2>v6FWQY<2>8Nk<2>g8a<2>kpV<3>FQ6JMPNHh<3>zlUlkRluBYX6I81<2>`0\
-
   ow7s<3>2dUVnNxyG<2>nO1JwFHrUFlh<2>KAp<3>5Ll_F8PpD`gSlZfcTfUMfn0xQVj0yWub\
-
   t<3>J3sdHlzVd<2>e621aMRUYqMikHSdB9<2>gug<2>n`Gp_JsYMY29a2Ge3Oj4W<3>vft<2\
-
   >LRJ<3>C_dTKDj4C<3>xWBsbImiPgpWdf1<3>tFE<2>24RQKPm`N<3>BEX<2>VKttrgae_JT\
-
   S
-
   }
-
-
 
 MandelSine         { ; Based on idea of MandelTangent
-
                      ; by Jack A. Orman
-
                      ; 11/22/94
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmanDelbrot3 function=sin
-
   corners=-6.500009/6.500047/-4.875021/4.875017 float=y maxiter=16384
-
   colors=@default.map
-
   }
-
-
 
 MandelXmas         { ; MandelCotanh of Ormandelbrot3
-
                      ; (c) 1994 by Jack A. Orman
-
                      ; 11/22/94
-
   reset=1821 type=formula formulafile=orman.frm
-
-  formulaname=ormandelbrot3 function=cotanh
-
+  formulaname=OrmanDelbrot3 function=cotanh
   corners=-0.9278118/0.9631793/-1.415372/0.002871058 float=y
-
   maxiter=16384 inside=0 decomp=128
-
   colors=0000a0<11>0E0<14>ww0<17>r90q60q30p00r00<3>z00<5>o00m00m20<7>mI0mK\
-
   0mO0mQ0mS0mW0<7>mk0mm0oo0qq0ss0uu0uu0<2>zz0<5>oo0mm0km0<22>2m00m00k0<22>\
-
   020000222<5>EEEGGGHHHIII<37>ssstttwwwxxxyyyzzz<17>hzhgzgezeczc<18>2z20z0\
-
   0y0<10>0c0
-
   }
-
-
 
 Brass_Starfish     { ; Ormandelpower w/ conj-sqr
-
                      ; Nice Brassy Map
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmandelPower function=conj/sqr
-
   corners=-2/2.000012/-1.500014/1.5 params=2 maxiter=256 decomp=128
-
   colors=000xjE<55>C54B44A33932822944<6>IA6JACKB6<19>fTDhUEhUE<29>ykEzlEzl\
-
   EzlF<60>zyyzzzzzzzzz<61>zmFzlEzlEykE
-
   }
-
-
 
 Butterfly          { ; Ormandelpower using 11th power
-
                      ; Can you say Rorschach?
-
                      ; (c) 1994 by Jack A. Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
-  formulaname=ormandelpower function=conj/sinh
-
+  formulaname=OrmandelPower function=conj/sinh
   corners=-2/2.000012/-1.500014/1.5 params=11 maxiter=1024 decomp=128
-
   colors=000010000<40>KcxLdyLex<19>VyVWyUWxS<17>df1de0ed0<40>y1xz0yz0x<39>\
-
   fb1ec0ed0<20>WyVVyWVxY<17>MfxLeyLdx<39>121
-
   }
-
-
 
 Spiral_Mandel      { ; Ormandelbrot6
-
                      ; The Spiral Mandel formula
-
                      ; Very self-replicating when magnified
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmanDelbrot6
-
   corners=-2.059498/3.037392/-1.961137/1.861563
-
   params=3/0/0.71828182845904998 colors=@default.map
-
   }
-
-
 
 Mandel_Isles       { ; Aerial view of the islands
-
                      ; (c) 1994 by Jack A. Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmandelFunc function=conj
-
   corners=0.0931351185/0.105932474/0.652816832/0.662409842
-
   colors=@topo.map
-
   }
-
-
 
 Fractal_Fire       { ; OrmandelFunc generated flames
-
                      ; (c) 1994 by Jack A. Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmandelFunc function=flip
-
   corners=0.11956871/0.31236696/0.3664133/0.51102221
-
   colors=@volcano.map
-
   }
-
-
 
 Nausea             { ; Cycle me for effect
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=cotanh
-
   corners=-0.387186995/-0.316712764/1.11080777/1.16377677 float=y
-
   maxiter=10 decomp=256
-
   colors=000GG0<10>yz0000<8>Ma0Oe0Ri0Tn0Wr0Yv0`z0000<8>7a07e08i09n0Ar0Av0B\
-
   z0000<8>0a80e90iA0nB0rB0vC0zD000<8>0aN0eQ0iS0nV0rY0v_0zb000<8>0`a0de0hi0\
-
   mn0qr0uv0yz000<8>0Ma0Oe0Ri0Tn0Wr0Yv0`z000<8>07a07e08i09n0Ar0Av0Bz000<8>8\
-
   0a90eA0iB0nB0rC0vD0z000<8>N0aQ0eS0iV0nY0r_0vb0z000<8>a0`e0di0hn0mr0qv0uz\
-
   0y000<8>a0Me0Oi0Rn0Tr0Wv0Yz0`402<13>z0`000<8>a07e07i08n09r0Av0Az0B000<8>\
-
   a80e90iA0nB0rB0vC0zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000<2>CC0
-
   }
-
-
 
 String_of_Disks    { ; Shiny Necklace of disks
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=tanh
-
   corners=-0.37383592/-0.26594769/0.791383491/0.872473155 float=y
-
   maxiter=10 decomp=256
-
   colors=000A00000000<2>600800C00<25>z00<5>o00m00m20<7>mI0mK0mO0mQ0mS0mW0<\
-
   7>mk0mm0oo0qq0ss0uu0uu0<2>zz0<5>oo0mm0km0<22>2m00m00k0<22>020000222<5>EE\
-
   EGGGHHHIII<37>ssstttwwwxxxyyyzzz<17>hzhgzgezeczc<18>2z20z00y0<30>000
-
   cyclerange=2/255
-
   }
-
-
 
 Disk_Explosion     { ; Big Bang of Shiny Disks
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=tan
-
   corners=-0.344855218/-0.3123472/0.863002386/0.887435674 float=y
-
   maxiter=10 decomp=256
-
   colors=000500300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokY\
-
   pmbqoesqjusovupwxvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4\
-
   >R0IP0GN0GL0C<4>B02900700005<13>00c<15>zzzvxyrvwnrvjntfls<2>WaoSYmOWl<5>\
-
   0Kc0Ka<8>02F00D00A<2>003000022<14>0cc<15>zzz<15>0c0<14>030000200<13>`00c\
-
   00d44<13>zzzyxvwvr<4>pe_oaWmYSlUOjQKiMGgICfE8dC4cB0<9>F10D00A00800500
-
   cyclerange=2/255
-
   }
-
-
 
 Aztec_Wheel        { ; Color Wheel - cycle colors
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=ident
-
   corners=-3.268506/3.181084/-2.344303/2.503262 float=y maxiter=10
-
   bailout=32 decomp=256
-
   colors=000402C20<11>zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000<8>`a0de0hi0mn0qr0u\
-
   v0yz0000<8>Ma0Oe0Ri0Tn0Wr0Yv0`z0000<8>7a07e08i09n0Ar0Av0Bz0000<8>0a80e90\
-
   iA0nB0rB0vC0zD000<8>0aN0eQ0iS0nV0rY0v_0zb000<8>0`a0de0hi0mn0qr0uv0yz000<\
-
   8>0Ma0Oe0Ri0Tn0Wr0Yv0`z000<8>07a07e08i09n0Ar0Av0Bz000<8>80a90eA0iB0nB0rC\
-
   0vD0z000<8>N0aQ0eS0iV0nY0r_0vb0z000<8>a0`e0di0hn0mr0qv0uz0y000<8>a0Me0Oi\
-
   0Rn0Tr0Wv0Yz0`804<12>z0`000<8>a07e07i08n09r0Av0Az0B000400810
-
   cyclerange=2/255
-
   }
-
-
 
 Aztec_Wheel2       { ; Color Wheel - cycle colors
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=sqr
-
   corners=-2.223673/2.136251/-1.680439/1.596514 float=y maxiter=10
-
   bailout=32 decomp=256
-
   colors=000402000<8>a80e90iA0nB0rB0vC0zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000<8\
-
   >`a0de0hi0mn0qr0uv0yz0000<8>Ma0Oe0Ri0Tn0Wr0Yv0`z0000<8>7a07e08i09n0Ar0Av\
-
   0Bz0000<8>0a80e90iA0nB0rB0vC0zD000<8>0aN0eQ0iS0nV0rY0v_0zb000<8>0`a0de0h\
-
   i0mn0qr0uv0yz000<8>0Ma0Oe0Ri0Tn0Wr0Yv0`z000<8>07a07e08i09n0Ar0Av0Bz000<8\
-
   >80a90eA0iB0nB0rC0vD0z000<8>N0aQ0eS0iV0nY0r_0vb0z000<8>a0`e0di0hn0mr0qv0\
-
   uz0y000<8>a0Me0Oi0Rn0Tr0Wv0Yz0`804<12>z0`000<8>a07e07i08n09r0Av0Az0B
-
   cyclerange=2/255
-
   }
-
-
 
 Ripple_Bars        { ; Cycle colors for ripple effect
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=exp
-
   corners=-54.15398/-1.486102/-18.95142/18.3202 float=y maxiter=255
-
   bailout=32 decomp=256
-
   colors=0004023G0<10>Bz0000<8>0a80e90iA0nB0rB0vC0zD000<8>0aN0eQ0iS0nV0rY0\
-
   v_0zb000<8>0`a0de0hi0mn0qr0uv0yz000<8>0Ma0Oe0Ri0Tn0Wr0Yv0`z000<8>07a07e0\
-
   8i09n0Ar0Av0Bz000<8>80a90eA0iB0nB0rC0vD0z000<8>N0aQ0eS0iV0nY0r_0vb0z000<\
-
   8>a0`e0di0hn0mr0qv0uz0y000<8>a0Me0Oi0Rn0Tr0Wv0Yz0`804<12>z0`000<8>a07e07\
-
   i08n09r0Av0Az0B000<8>a80e90iA0nB0rB0vC0zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000\
-
   <8>`a0de0hi0mn0qr0uv0yz0000<8>Ma0Oe0Ri0Tn0Wr0Yv0`z0000<2>2C0
-
   cyclerange=2/255
-
   }
-
-
 
 Fractal_Zipper     { ; Cycle colors for ripple effect
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=sinh
-
   corners=-22.64596/22.82942/-16.40646/15.77523 float=y maxiter=255
-
   bailout=32 decomp=256
-
   colors=000402C07<11>z0`000<8>a07e07i08n09r0Av0Az0B000<8>a80e90iA0nB0rB0v\
-
   C0zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000<8>`a0de0hi0mn0qr0uv0yz0000<8>Ma0Oe0R\
-
   i0Tn0Wr0Yv0`z0000<8>7a07e08i09n0Ar0Av0Bz0000<8>0a80e90iA0nB0rB0vC0zD000<\
-
   8>0aN0eQ0iS0nV0rY0v_0zb000<8>0`a0de0hi0mn0qr0uv0yz000<8>0Ma0Oe0Ri0Tn0Wr0\
-
   Yv0`z000<8>07a07e08i09n0Ar0Av0Bz000<8>80a90eA0iB0nB0rC0vD0z000<8>N0aQ0eS\
-
   0iV0nY0r_0vb0z000<8>a0`e0di0hn0mr0qv0uz0y000<8>a0Me0Oi0Rn0Tr0Wv0Yz0`804
-
   cyclerange=2/255
-
   }
-
-
 
 3D_Arcade          { ; Has depth due to color map
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=cotan
-
   corners=-10.83986/11.02331/-8.051595/7.42037 float=y maxiter=255
-
   potential=255/222/1000 decomp=256
-
   colors=000402C07<11>z0`000<8>a07e07i08n09r0Av0Az0B000<8>a80e90iA0nB0rB0v\
-
   C0zD0000<8>aN0eQ0iS0nV0rY0v_0zb0000<8>`a0de0hi0mn0qr0uv0yz0000<8>Ma0Oe0R\
-
   i0Tn0Wr0Yv0`z0000<8>7a07e08i09n0Ar0Av0Bz0000<8>0a80e90iA0nB0rB0vC0zD000<\
-
   8>0aN0eQ0iS0nV0rY0v_0zb000<8>0`a0de0hi0mn0qr0uv0yz000<8>0Ma0Oe0Ri0Tn0Wr0\
-
   Yv0`z000<8>07a07e08i09n0Ar0Av0Bz000<8>80a90eA0iB0nB0rC0vD0z000<8>N0aQ0eS\
-
   0iV0nY0r_0vb0z000<8>a0`e0di0hn0mr0qv0uz0y000<8>a0Me0Oi0Rn0Tr0Wv0Yz0`804
-
   cyclerange=2/255
-
   }
-
-
 
 Engine_Block       { ; Hmm, valves look burned ;-)
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=cotan
-
   corners=-6.652623/6.836074/-4.567437/4.582223 float=y maxiter=255
-
   potential=255/1000/100 decomp=256 colors=@gamma3.map
-
   cyclerange=2/255
-
   }
-
-
 
 Gold_Necklace      { ; Fine Detail Gold Necklace on stand
-
                      ; (c) 1994 Jack A. Orman
-
   reset type=sqr(1/fn) function=tanh
-
   corners=-1.08706/0.9913524/0.01737648/1.207226 float=y maxiter=512
-
   bailout=32 invert=0.5/0/0 decomp=256 finattract=y colors=@gamma4.map
-
   cyclerange=2/255
-
   }
-
-
 
 Fractal_Blueprint  { ; Follow this and build your own
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1821 type=sqr(1/fn) function=cotanh passes=t
-
   corners=-4/3.9953/-3.000656/3 maxiter=128 fillcolor=0
-
   inside=epsiloncross outside=summ
-
   colors=www0Ck<2>0Fl0Gl1Hm2Im<44>yyzzzzzzzzzz<46>1Hm0Gm0Fl<13>01i00h00h00\
-
   h<58>00S00S00S00S00S00S<57>00h00h01h02i<8>0Bk
-
   }
-
-
 
 Infinite_Space     { ; A study in black & white
-
                      ; (c) 1994 Jack Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmanDelbrot2 passes=b
-
   corners=-0.0702470541/-0.0430526733/0.81368649/0.834100187 params=2
-
   maxiter=2048 outside=imag decomp=256
-
   colors=333IIIJJJ<3>LLLLLLMMMNNN<8>SSSTTTTTTTTT<46>yyyzzzyyy<45>UUUTTTTTT\
-
   TTT<5>PPPOOOOOOOOO<2>LLLLLLKKKKKKKKKJJJIIIIIIIIIHHH<23>777777777777666<3\
-
   9>333333444<19>888888888999999999<15>GGGGGGHHHIIIIII
-
   }
-
-
 
 Fractal_fangs      { ; Rotated Ormandelbrot6
-
                      ; (c) 1994 Jack A. Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmanDelbrot6
-
   corners=-0.69753659/-0.13754463/0.4199751/-0.42000371/-0.13754463/-0.420\
-
   00371 maxiter=1024 outside=real potential=255/222/100
-
   colors=000A20<3>V60_70c70g80<2>qA0tB0vB0xC0yC0<2>zC0zC0yC0wB0uB0sB0pA0<3\
-
   >a70Y60T50<3>810030020<4>0S00X00`00e00i00l00p00r00u0<2>0y00z00z00z00y0<2\
-
   >0t00r00o00k00h0<2>0W00R00M00H00B0060000004<4>00U00Z00b<2>00n00q00s00v00\
-
   x00y<2>00z00z00y00w00u<2>00m00j00f<2>00U00P00J00E009330110<5>WW0``0dd0hh\
-
   0ll0<2>tt0ww0xx0yy0zz0zz0<3>ww0<2>oo0ll0hh0dd0<5>CC0770101303<3>P0PU0UY0\
-
   Yb0bf0f<2>p0ps0su0uw0wy0y<2>z0zz0zy0yx0x<2>q0qn0nj0jf0fb0b<5>A0A044000<2\
-
   >0HH0MM0RR0WW0__0dd<2>0oo0rr0tt0vv0xx0yy0zz0zz<2>0xx0ww0uu0rr0pp0ll0ii<2\
-
   >0XX0SS0NN0II0DD077222333<4>TTTYYYaaaeeeiiimmmppp<2>wwwyyyzzzzzzzzzzzzyy\
-
   yxxxvvv<2>nnnkkkgggccc<3>LLLGGGAAA555510
-
   }
-
-
 
 Spiral_T           { ; (c) 1994 by Jack A. Orman
-
   reset=1821 type=hypercomplex function=sin passes=t
-
   corners=-1.470077/-1.444477/0.823385386/0.842585386
-
   params=0/0/0.14159265358979001/0.71828182845904998 float=y
-
   maxiter=1024 fillcolor=0 periodicity=0
-
   colors=000jbU<10>AAFAAK<14>CqkDslCqk<14>AAKL7M<15>zH0<15>L7ME7M<15>zz0<1\
-
   5>E7MEAM<15>zh0<15>EAM67H<13>lo_pr`ruapr`<13>9AI67H0CF<14>4Ot5Pv4Ot<14>0\
-
   CF77H<15>mqs<7>TV`DCG<11>phXtjYwmZzo_wmZ<2>meV
-
   }
-
-
 
 Ankh               { ; Ormandel10 Copr. 1995 by Jack Orman
-
   reset=1821 type=formula formulafile=orman.frm
-
   formulaname=OrmanDelbrot10 function=cotan/conj
-
   corners=-2.025086/1.939733/-1.446895/1.525167 params=2/0/2
-
   maxiter=1024 colors=@default.map
-
   }
-
-
-

@@ -118,3 +118,89 @@ HRing_Ma { ; Mandelbrot set slice, alpha varies, c fixed.
   ENDIF  
   done==0  
 }
+
+HRing_J256 {; This thing is capable of generating Herman rings for alpha
+            ; equal to exp(2*pi*i*a), a irrational.
+            ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
+            ; used for infinity.
+            ; Color variant: stretches to 
+            ; maxiter outside, decomp-128'd inside.
+            ; Use outside=real, logmap=0, periodicity=0.
+  z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
+  z2=sqr(z)
+  z=a*z2*(z-c)/(1-c*z)
+  iter=iter+1
+  IF(lastsqr<r || lastsqr>rr)
+    IF(lastsqr>rr)
+      color=(iter/maxit)*127
+      IF(color<1)
+        color=1
+      ELSEIF(color>127)
+        color=127
+      ENDIF
+    ELSE
+      cc=atan(imag(z)/real(z))
+      IF(real(z)<0)
+        cc=cc+PI
+      ELSEIF(real(z)==0)
+        IF(imag(z)<0)
+          cc=-PI/2
+        ELSE
+          cc=PI/2
+        ENDIF
+      ENDIF
+      IF(cc<0)
+        cc=cc+2*PI
+      ENDIF
+      color=128+cc*64/PI
+    ENDIF
+    z=color-iter-7
+    done=1
+  ENDIF
+  done==0
+  ;SOURCE: 98msg.frm
+}
+
+
+HRing_J256b {; This thing is capable of generating Herman rings for alpha
+             ; equal to exp(2*pi*i*a), a irrational.
+             ; p1: alpha. p2: c. p3: Orbit trap radius 
+             ; about 0, reciprocal is used for infinity.
+             ; Color variant: stretches to 
+             ; maxiter inside, decomp-128'd outside.
+             ; Use outside=real, logmap=0, periodicity=0.
+  z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
+  z2=sqr(z)
+  z=a*z2*(z-c)/(1-c*z)
+  iter=iter+1
+  IF(lastsqr<r || lastsqr>rr)
+    IF(lastsqr>rr)
+      cc=atan(imag(z)/real(z))
+      IF(real(z)<0)
+        cc=cc+PI
+      ELSEIF(real(z)==0)
+        IF(imag(z)<0)
+          cc=-PI/2
+        ELSE
+          cc=PI/2
+        ENDIF
+      ENDIF
+      IF(cc<0)
+        cc=cc+2*PI
+      ENDIF
+      color=1+cc*64/PI
+    ELSE
+      color=(iter/maxit)*127
+      IF(color<1)
+        color=1
+      ELSEIF(color>127)
+        color=127
+      ENDIF
+      color=color+128
+    ENDIF
+    z=color-iter-7
+    done=1
+  ENDIF
+  done==0
+  ;SOURCE: 98msg.frm
+}
