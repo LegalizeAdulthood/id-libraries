@@ -30,6 +30,9 @@ def validate_file_entry(param_name, param_start_line, file_type, filename, entry
     
     if not entry:
         errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry '{entry_name}' not found in file '{filename}'")
+    elif entry.name != entry_name:
+        errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry name '{entry_name}' does not match case-sensitively (found: '{entry.name}')")
+
 
 
 def validate_file_reference(param_name, param_start_line, file_type, filename, base_dir, errors):
