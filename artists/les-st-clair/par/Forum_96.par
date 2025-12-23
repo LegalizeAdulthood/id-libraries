@@ -7,7 +7,7 @@ Starlgt2           { ; Modified version of sp_60 from sylvie.par       t=21m30s
                      ; uses gallet-03-07 formula (from gallet-03.frm)
                      ; Les St Clair 101461.2032@compuserve.com - 1996
   reset=1920 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-3-07 passes=1
+  formulaname=Gallet-3-07 passes=1
   corners=0.975316729/0.954119437/1.7560703/-0.17134123/1.89284324/0.53270\
   162 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
   colors=00Ezzz_DX<6>r_f<8>Uq1Xq2_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yq<10>zB2z\
@@ -145,7 +145,7 @@ Listerz1           { ; "Underwater Volcano"                       t=26m36s
                      ; Zoom of Vincent Damien Presogna's "2_Dragons"
                      ; by Les St Clair  101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video mode SF5 (640x480)
-  reset=1930 type=formula formulafile=Forum_96.frm formulaname=moo
+  reset=1930 type=formula formulafile=Forum_96.frm formulaname=Moo
   function=ident passes=1 center-mag=1.115/1.05175/5.988652/1/54.999
   params=0/0 float=y maxiter=500 inside=zmag periodicity=0
   colors=000<5>UAA<14>N9N<10>zJ9<28>zu2zw1zx1zz0yz0<39>B`09`08_06_05Z03Z02\
@@ -178,7 +178,7 @@ LSBJLS01           { ; Based on Brian E.Jones BJ-Lesfrm13-02 formula t=04m22s
                      ; by Les St Clair 101461.2032@compuserve.com
                      ; t=time using 486DX2-66 and video mode SF5 640x480 256c
   reset=1930 type=formula formulafile=Forum_96.frm
-  formulaname=bj-lesfrm13-002 function=asin/log/ident/cosh
+  formulaname=BJ-Lesfrm13-002 function=asin/log/ident/cosh
   center-mag=0.934868/-0.0532872/0.9617486 params=3.3/0.8/-3.2/0.8
   float=y maxiter=1000 inside=zmag outside=atan
   colors=0E_<4>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>A\
@@ -190,7 +190,7 @@ lsbjfrm1           { ; "Swallows" by Les St Clair [101461,2032] 1996 t=03m53s
                      ; formula by Brian E.Jones
                      ; t=time using 486DX2-66 and video SF7 (1024x768 256c)
   reset=1930 type=formula formulafile=Forum_96.frm
-  formulaname=bej-n141 function=recip/sin passes=1
+  formulaname=BEJ-N141 function=recip/sin passes=1
   center-mag=1.32293/0.158056/1.89393 float=y inside=bof61
   outside=atan
   colors=040GVj<3>0Tz<14>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<1\
@@ -254,7 +254,7 @@ lsbjfrm1           { ; "Swallows" by Les St Clair [101461,2032] 1996 t=03m53s
 Metropol           { ; Image for Metropolis_3d transform - Les St Clair 1996
                      ; image previously coded "LF13_07"
                      ; Les St Clair 101461.2032@compuserve.com
-  reset=1930 type=formula formulafile=Forum_96.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=Forum_96.frm formulaname=Lesfrm13
   function=asin/asinh passes=1 center-mag=0.012432/4.95e-005/0.2676312
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan savename=metropol.gif
@@ -289,7 +289,7 @@ L3DT_13            { ; image for L3DT_13_3D    LStC [use 1024x768] t=00m51s
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
                      ; based on Brian E.Jones formula BJ-LESFRM13-004
   reset=1930 type=formula formulafile=Forum_96.frm
-  formulaname=bj-lesfrm13-004 function=tan/recip/ident/cos
+  formulaname=BJ-Lesfrm13-004 function=tan/recip/ident/cos
   center-mag=0.00862294/0.383509/0.8076226/1/2.5 params=2/0.5/1/1
   float=y maxiter=1000 inside=bof61 outside=atan potential=255/255/0
   savename=l3dt_13.gif
@@ -352,7 +352,7 @@ lf01r_01          { ; "Hatchling" Les St Clair [101461,2032] 1996 t=03m49s
                      ; Requires Fractint 19.4 or later
                      ; t=time using 4DX2-66 & video sf7 (1024x768)
                      ; color map from Carr2579
-  reset=1940 type=formula formulafile=Forum_96.frm formulaname=lesfrm01r
+  reset=1940 type=formula formulafile=Forum_96.frm formulaname=Lesfrm01r
   function=sin/sqr passes=1
   center-mag=8.88178e-016/-4.44089e-016/0.4923928/1/-90 params=4/4
   float=y maxiter=300 outside=atan
@@ -378,7 +378,7 @@ Fractint           { ; Generate at 1024x768 save as "Fractint.gif"   t=08m29s
                      ; by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
   reset=1940 type=formula formulafile=Forum_96.frm
-  formulaname=fractint-9-11 function=sinh/cabs/atan
+  formulaname=Fractint-9-11 function=sinh/cabs/atan
   center-mag=-1.08813/0.105609/1.054746 float=y symmetry=none
   periodicity=0 savename=fractint.gif
   colors=000pfU<7>QIA000<2>000QG7<10>zUA<4>xr2ww0xq2<3>zUA<8>KG1000000000F\
@@ -432,7 +432,7 @@ Cub09_Z1           { ; Zoom of Vincent Presogna's "Tulane Ma Qua"  t=07m54s
                      ; Use 1024x768 and savename=cub09_z1.gif for 3d_transform
                      ; Les St Clair 101461.2032@compuserve.com 1996
                      ; t=time using 486DX2-66 and video=SF7 1024x768
-  reset=1940 type=formula formulafile=Forum_96.frm formulaname=block_4
+  reset=1940 type=formula formulafile=Forum_96.frm formulaname=Block_4
   function=tan
   corners=0.70082392/0.84284816/0.10749566/0.54124753/0.54375175/0.3169252\
   2 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023 inside=bof60
@@ -454,7 +454,7 @@ Cub09_Z2           { ; Zoom of Vincent Presogna's "Tulane Ma Qua"  t=03m47s
                      ; Use 1024x768 and savename=cub09_z2.gif for 3d_transform
                      ; Les St Clair 101461.2032@compuserve.com 1996
                      ; t=time using 486DX2-66 and video=SF7 1024x768
-  reset=1940 type=formula formulafile=Forum_96.frm formulaname=block_4
+  reset=1940 type=formula formulafile=Forum_96.frm formulaname=Block_4
   function=tan
   corners=0.885664417/0.786699591/0.150996478/0.183400728/0.834483039/0.21\
   9238314 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023
@@ -488,7 +488,7 @@ Fractle5           { ; image for Fractitle5_3d LStC [use 1024x768] t=00m54s
                      ; Original "Fract_Title5" by Loren G. Dobert
                      ; based on Brian E. Jones "Fractint-9-11" formula
   reset=1940 type=formula formulafile=Forum_96.frm
-  formulaname=fractint-9-11 function=sqr/cotanh/asin
+  formulaname=Fractint-9-11 function=sqr/cotanh/asin
   center-mag=1.18669/-0.093911/1.268178/1/14.999 float=y maxiter=1000
   inside=bof60 outside=summ symmetry=none periodicity=0 savename=fractle5.gif
   colors=000D5M<6>SBi<4>_ohawhdvb<5>ss0<7>UFh<7>U15U00W00<6>h00<6>ww0<8>M0\
@@ -570,7 +570,7 @@ AKT                { ; Zoom into "fraKtint" - Les St Clair        t=06m14s
                      ; Let's take a closer look at that "K"
                      ; Thanks to Sylvie Gallet for the Lessons!
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1940 type=formula formulafile=Forum_96.frm formulaname=Fraktint
+  reset=1940 type=formula formulafile=Forum_96.frm formulaname=FraKtint
   center-mag=-0.0753861/-0.0312907/2.469868 float=y
   colors=000<5>D00F00G00<6>T00V00V10<28>qa9rcAqbA<29>F21D00D03<15>00x<29>0\
   02000100<30>z0p<15>W0R000<29>IaIJcJJcJ<42>222212101000100
@@ -626,7 +626,7 @@ G40103_m           { ; "Here's Looking at You, Kid!"         t=  0:02:51.42
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 16, 1996 at 03:39:25 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-01 function=cabs/sin passes=1
+  formulaname=Gallet-4-01 function=cabs/sin passes=1
   center-mag=0.22431/0.213734/10.51506 params=-0.22/0/0/5 float=y
   outside=atan periodicity=0
   colors=bea406307307<3>20A21A21B11B11C<6>03F03G03H03I03J<3>05L06M06N17O17\
@@ -641,7 +641,7 @@ Spheres1           { ; "Boules"                              t=  0:02:05.17
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 19, 1996 at 19:26:57 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-3-03-gb function=tanh/log passes=1
+  formulaname=BJ-SG-3-03-gb function=tanh/log passes=1
   center-mag=1.07614/1.25843/0.1931906/1/-90 params=3.141/0.4/10/0.5
   float=y maxiter=255 outside=atan periodicity=0
   colors=0000403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcESYDQUDOPCM\
@@ -660,7 +660,7 @@ Spheres2           { ; "Pop-rivet"                           t=  0:02:00.73
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 19, 1996 at 19:31:13 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-3-03-gb function=exp/cos passes=1
+  formulaname=BJ-SG-3-03-gb function=exp/cos passes=1
   center-mag=2.90397/0.180206/0.3238233/1/-62.499
   params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
   periodicity=0
@@ -674,7 +674,7 @@ Spheres3           { ; "Shimmer and Shake"                   t=  0:02:26.76
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 19, 1996 at 19:40:34 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-3-03-gb function=tanh/cos passes=1
+  formulaname=BJ-SG-3-03-gb function=tanh/cos passes=1
   center-mag=2.33746/2.2503/0.2855985/1/-135 params=3/0/1/50 float=y
   maxiter=300 outside=atan periodicity=0
   colors=000644611<2>O44U55Z66c77h88l99pAAsBBuBBxBByCCzCC<3>xBBuBBsBBpAA<3\
@@ -691,7 +691,7 @@ Spheres4           { ; "Who moved the balls?"                t=  0:02:23.46
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 19, 1996 at 20:02:26 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-3-03-gb function=tan/sinh passes=1
+  formulaname=BJ-SG-3-03-gb function=tan/sinh passes=1
   center-mag=-4.3811/1.40415/0.2522826/1/-90 params=4.5/0.4/10/0.5
   float=y maxiter=255 outside=atan periodicity=0
   colors=000<5>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaV\
@@ -759,7 +759,7 @@ Les_rf01           { ; "From Tims_Random_Formula"            t=  0:01:52.16
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Sep 28, 1996 at 01:38:40 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=tims_random_formula
+  formulaname=Tims_Random_Formula
   center-mag=0.278616/1.13368/16.15563/1/-22.5 float=y maxiter=200
   outside=atan potential=255/400/0
   colors=348237<2>56B67D78F89HAAJ<16>XSpZUrYUq<11>MK`<2>MHPMFLMEHNCCKBBIA9\
@@ -819,7 +819,7 @@ G5_08_01           { ; "Bands of Gold"                       t=  0:10:32.19
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 13, 1996 at 21:10:28 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-5-08 function=cos/sinh/acos passes=1
+  formulaname=Gallet-5-08 function=cos/sinh/acos passes=1
   center-mag=0.00678007/0.00340466/5.758583/1/77.499
   params=2/-1/-0.3/-0.5/1.3/0.2 float=y maxiter=1000 inside=bof61
   outside=atan distest=-1/10/1600/1200 periodicity=0
@@ -831,7 +831,7 @@ G5_08_02           { ; "Complete Chaos"                      t=  0:18:18.73
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 13, 1996 at 21:42:31 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-5-08 function=tanh/sqr/log passes=1
+  formulaname=Gallet-5-08 function=tanh/sqr/log passes=1
   center-mag=0.257547/-1.56078/1.423484/1/77.499
   params=0.33/-0.6/1/-0.5/1.3/0.2 float=y maxiter=1000 inside=bof61
   outside=atan distest=-1/10/1600/1200
@@ -845,7 +845,7 @@ G5_03_03           { ; "Grainy"                              t=  0:02:07.15
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 13, 1996 at 23:05:12 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-5-03 function=atanh/cosxx/flip passes=1
+  formulaname=Gallet-5-03 function=atanh/cosxx/flip passes=1
   center-mag=0.0303023/0.00329274/0.4162242/1/44.998
   params=1.5/0.6/-0.2/50/-2/20 float=y maxiter=1000 inside=bof61
   outside=atan distest=-1/10/1600/1200 periodicity=0
@@ -899,7 +899,7 @@ PP_01              { ; "Slight Reflection"                   t=  0:35:23.26
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 22, 1996 at 20:30:27 hours
-  reset=1950 type=formula formulafile=Forum_96.frm formulaname=pd_212
+  reset=1950 type=formula formulafile=Forum_96.frm formulaname=PD_212
   function=atan/sin/asin/tanh passes=1
   center-mag=-0.0192915/0.253318/3.117544 params=-0.1/0.67/2/-1
   float=y maxiter=500 inside=bof61 outside=atan
@@ -912,7 +912,7 @@ PP_02              { ; "Double-Sun Flower"                   t=  0:06:59.91
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 22, 1996 at 20:48:28 hours
-  reset=1950 type=formula formulafile=Forum_96.frm formulaname=pd_212
+  reset=1950 type=formula formulafile=Forum_96.frm formulaname=PD_212
   function=sin/sin/ident/ident passes=1
   center-mag=0.0100941/8.88178e-016/3.483544/1/90 params=1/0/8/0
   float=y maxiter=250 inside=0 potential=255/200/255
@@ -923,7 +923,7 @@ PP_02              { ; "Double-Sun Flower"                   t=  0:06:59.91
 L3DT_01            { ; image for L3DT_01_3d    LStC [use 1024x768] t=01m46s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1930 type=formula formulafile=Forum_96.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=Forum_96.frm formulaname=Lesfrm13
   function=sqrt/log passes=1
   center-mag=0.933602/0.439651/0.4265727/1/35 params=-4/1/-3/1 float=y
   maxiter=1000 inside=zmag outside=atan savename=l3dt_01.gif
@@ -944,7 +944,7 @@ pinnacle           { ; "Pinnacle"              LStC [use 1024x768] t=01m34s
 L3DT_06            { ; image for L3DT_06_3d    LStC [use 1024x768] t=02m48s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1930 type=formula formulafile=Forum_96.frm formulaname=lesfrm12
+  reset=1930 type=formula formulafile=Forum_96.frm formulaname=Lesfrm12
   function=ident/atan passes=1 center-mag=0/0/0.6666667 float=y
   inside=bof61 outside=atan savename=l3dt_06.gif
   colors=000czr000azq000_zp000Yzo000Wzn000Uzm000Szl000Qzk000Ozk000Mzj000Kz\
@@ -968,7 +968,7 @@ L3DT_14            { ; image for L3DT_14_3d    LStC [use 1024x768] t=01m20s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
   reset=1930 type=formula formulafile=Forum_96.frm
-  formulaname=bj-lesfrm13-002 function=conj/sqr/cosh/log
+  formulaname=BJ-Lesfrm13-002 function=conj/sqr/cosh/log
   center-mag=0.59042/0.40678/1.173709/1/17.5 params=4/4.9/1/0.9
   float=y potential=255/200/0 savename=l3dt_14.gif
   colors=0FK0GE<36>2WN2WN1XO<38>D94D83D72E61F61G62H63000I64<20>d1Me1Ng0Oi0\
@@ -1000,7 +1000,7 @@ orchid_b           { ; Background for orchid overlays        t=  0:15:59.44
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Oct 27, 1996 at 18:30:55 hours
-  reset=1920 type=formula formulafile=Forum_96.frm formulaname=lesfrm04
+  reset=1920 type=formula formulafile=Forum_96.frm formulaname=Lesfrm04
   function=tan/sqr
   corners=-0.11424404/0.6104781/0.6963107/1.8066605/-0.38635021/1.0590543
   potential=255/400/0
@@ -1070,7 +1070,7 @@ BARNS_01           { ; "Will-o-the-Wisp" PHC                 t=  0:02:51.04
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:02:33 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.2366189/1.753563/1.066866/-0.9557258/1.753563/-0.9557258
   params=4.22/4.33/1.3/0.3 float=y maxiter=1024 outside=atan
   potential=255/400/0
@@ -1090,7 +1090,7 @@ BARNS_02           { ; "Subdividing Spheres" PHC             t=  0:10:05.06
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:06:36 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.359753/1.633481/0.713394/-0.98491/1.633481/-0.98491
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=mSS<6>c00<14>300<15>lT7<15>paXpaYpb_qb`qcbrdd<11>TRMRQKOOIMNGKMF<\
@@ -1103,7 +1103,7 @@ BARNS_03           { ; "World-wide Web" PHC                  t=  0:06:15.14
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:07:06 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.07494613/1.883922/0.6067729/-1.805195/1.883922/-1.805195
   params=0.22/1.33/1.3/0.3 float=y maxiter=1024 outside=atan
   potential=255/400/0
@@ -1118,7 +1118,7 @@ BARNS_04           { ; "Folds in the Picture" PHC            t=  0:13:59.04
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:07:36 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1 corners=-2/2/-1.5/1.5
+  formulaname=Barnsley_PHC_3 passes=1 corners=-2/2/-1.5/1.5
   params=4000/0/0.05/0 float=y maxiter=1024 inside=bof61 outside=atan
   colors=L99<3>VEEXFFZGF<5>iNKkPLlQMmRM<2>pVOqWOrXOrYOrZOs_Ps`P<2>rYOrXOqW\
   OpVO<2>mRNlQMkPLiNKgMK<5>XFFVEESDDQBBPBB<2>I88G77D66A55<2>311000000<2>44\
@@ -1136,7 +1136,7 @@ BARNS_05           { ; "Lights in the Undergrowth" PHC       t=  0:02:36.87
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:08:16 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-0.91369425/-1.3495416/0.505051359/0.452540361/-1.045394/0.68065\
   1045 params=1.5/2/-0.8/0.45 float=y maxiter=1024 outside=atan
   potential=255/2000/0
@@ -1156,7 +1156,7 @@ BARNS_06           { ; "Width of a Circle" PHC               t=  0:10:08.74
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:08:45 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-1.739038/-0.1629557/1.429847/-0.6715968/-0.1629557/-0.6715968
   params=3.142/0/0.15/0.66 float=y maxiter=1024 inside=bof61
   outside=atan
@@ -1170,7 +1170,7 @@ BARNS_07           { ; "Secret Passage Tunnel with a River and Ball" PHC
                      ; (c) 1996 by Julia St Clair c/o101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:09:17 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-1.1638799/-0.87600006/0.087292922/-0.29654692/-0.87600006/-0.29\
   654692 params=0/5.6/0.9/-0.3 float=y maxiter=1024 outside=atan
   colors=CDKAAK<15>z00<14>zvvzzzxvw<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvH\
@@ -1184,7 +1184,7 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 08, 1996 at 03:54:57 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-5-08 function=atanh/atan/ident passes=1
+  formulaname=Gallet-5-08 function=atanh/atan/ident passes=1
   center-mag=0.030048/-0.13293/0.3688898/1/74.998
   params=4/0/0.8/0/-1/0 float=y maxiter=255 inside=bof60 outside=atan
   decomp=256 periodicity=0
@@ -1199,7 +1199,7 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 14, 1996 at 01:09:41 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=carr2917 passes=1
+  formulaname=Carr2917 passes=1
   center-mag=-0.00669517/0.000487929/1.194297/1/95
   params=10/300/400/63 float=y maxiter=647 outside=atan periodicity=0
   colors=022245478000000000AFHEKN<11>`ow<24>5NV4MU4OW<14>0ow<30>012000000<\
@@ -1212,7 +1212,7 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 14, 1996 at 03:06:45 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=carr2917 passes=1
+  formulaname=Carr2917 passes=1
   center-mag=-0.00669517/0.000487929/1.194297/1/95
   params=10/15000/400/550 float=y maxiter=647 periodicity=0
   colors=000<5>000CEQCBNC8K97F<2>9BFFD9EFA<11>svc<2>svc<8>X`YUYXRVWOSVLPUI\
@@ -1227,7 +1227,7 @@ G5_05_03           { ; "Easter Egg"                          t=  0:07:26.99
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 10, 1996 at 14:09:04 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-5-05 function=cos/cotan passes=1
+  formulaname=Gallet-5-05 function=cos/cotan passes=1
   center-mag=3.18624/-1.9984e-015/1.679703 params=0.05/0.33/0.6/0.14
   float=y maxiter=1000 inside=0 outside=atan symmetry=none
   periodicity=0
@@ -1242,7 +1242,7 @@ BJSG57c1           { ; "Fractal Flower Bud"                  t=  0:04:59.79
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 24, 1996 at 23:43:10 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-5-07-c function=log/sqr/ident/zero
+  formulaname=BJ-SG-5-07-c function=log/sqr/ident/zero
   center-mag=0.0315673/-0.161524/0.7041646 params=0.15/0/75/0 float=y
   maxiter=255 inside=0 periodicity=0
   colors=000HCS<11>X`tZcwZcw<15>nru<3>dhibef_bdY_aVXZ<11>000<4>BA8ECAGEBIF\
@@ -1255,7 +1255,7 @@ BJSG57c2           { ; "Tropical Delight"                    t=  0:17:55.61
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 26, 1996 at 00:18:38 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=bj-sg-5-07-c function=sqr/cos/tan/cosh
+  formulaname=BJ-SG-5-07-c function=sqr/cos/tan/cosh
   center-mag=0.0971757/-0.538488/0.8956172/1/34.999
   params=0.164/0.06/30/0 float=y maxiter=255 inside=bof61
   periodicity=0
@@ -1271,7 +1271,7 @@ C2960_Z1           { ; "Zoom into Carr2960"                 t=  1:10:59.14
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 04, 1996 at 02:35:58 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=carr2960 passes=1
+  formulaname=Carr2960 passes=1
   center-mag=+1.12649911350378000/+0.01210225470106491/136.1205
   params=200/300/400/550 float=y maxiter=2000 periodicity=0
   colors=GBRHCS<11>X`tZcwZcw<15>nru<4>bef_bdY_aVXZSVWQST<9>000<18>f`V<9>JC\
@@ -1283,7 +1283,7 @@ qic_phc1           { ; "A Quick One"                         t=  0:01:52.49
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 17, 1996 at 19:01:18 hours
-  reset=1950 type=formula formulafile=Forum_96.frm formulaname=jdfrm010
+  reset=1950 type=formula formulafile=Forum_96.frm formulaname=JDfrm010
   passes=1 center-mag=0.000764414/-0.00913678/0.4698113 float=y
   maxiter=1023 inside=bof60 outside=atan logmap=yes
   colors=1228PX6OW5NV4MU<15>0ow<30>012000000<47>011011000354<5>8DB8EC9FD9G\
@@ -1324,7 +1324,7 @@ lphc04_1           { ; "Flowers and Spirals" PHC             t=  0:06:12.50
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 22, 1996 at 21:38:00 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.426051/0.0689267/1.977088/1/-17.498
   params=1.5/0/-0.21/0 float=y inside=bof60 outside=atan
   colors=000<17>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWga\
@@ -1337,7 +1337,7 @@ lphc04_2           { ; "Christmas Lights" PHC                t=  0:04:02.55
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 22, 1996 at 21:47:10 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.336886/0.913436/1.220432/1/-32.5 params=1.5/0/-0.33/0
   float=y inside=bof60 outside=atan
   colors=GBRtNE<10>b2Da0D`0D<18>I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D5\
@@ -1350,7 +1350,7 @@ lphc04_3           { ; "Sharp and Diffused" PHC              t=  0:02:12.15
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 22, 1996 at 21:51:29 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.231797/0.688441/0.9421871/1/-64.999
   params=900/-3/0.09/2 float=y inside=bof60 outside=atan
   colors=GBR_UU<9>zpa<13>RK7OI5NH6<12>D5IC4JD6L<14>X`tZcwZcw<15>nru<3>dhib\
@@ -1363,7 +1363,7 @@ lphc04_4           { ; "Blossoms" PHC                        t=  0:02:33.25
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 22, 1996 at 21:55:46 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.00586979/0.406946/1.120906/1/-50 params=-500/2.2/0.09/0
   float=y inside=bof60 outside=atan
   colors=GBRNH6<12>D5IC4JD6L<14>X`tZcwZcw<15>nru<3>dhibef_bdY_aVXZ<11>000<\
@@ -1376,7 +1376,7 @@ lphc04_5           { ; "Cherry Centre" PHC                   t=  0:02:39.22
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 22, 1996 at 22:01:41 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.0437116/0.0391863/0.4434574/1/-50 params=900/-3/0.09/0
   float=y inside=bof60 outside=atan
   colors=GBRg8E<2>c2Da0D`0D<18>I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D5I\
@@ -1389,7 +1389,7 @@ X96_mod1           { ; "Cracked Ice" PTC                     t=  0:02:17.26
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:23:09 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=flip/tan passes=1
+  formulaname=Gallet-4-06 function=flip/tan passes=1
   center-mag=-0.13452/0.0586418/0.2753357/1/75 params=1/0.3/0/0.43
   float=y decomp=256 periodicity=0
   colors=000<3>Y_b<7>HLWFJVEKV<23>1fU<6>1Uf<17>034012245<2>8CE122AFHAFHEKN\
@@ -1402,7 +1402,7 @@ X96_mod2           { ; "Cellophane Flower" PTC               t=  0:01:45.57
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:27:57 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=conj/abs passes=1
+  formulaname=Gallet-4-06 function=conj/abs passes=1
   center-mag=-0.173701/0.089832/0.7358407/1/-67.498
   params=4/0.3/0/0.43 float=y decomp=256 periodicity=0
   colors=D0A<15>00K<22>zpa<13>RK7OI5NH6<12>D5IC4JD6LE8NGAQGBRHCS<11>X`tZcw\
@@ -1416,7 +1416,7 @@ X96_mod3           { ; "Mystic Pyramid" PTC                  t=  0:02:05.12
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:30:43 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=conj/tan passes=1
+  formulaname=Gallet-4-06 function=conj/tan passes=1
   center-mag=0.288069/0.171866/0.3454684/1/75 params=1/0.3/0/0.43
   float=y decomp=256 periodicity=0
   colors=DLV<22>1fU<6>1Uf<17>034012245<2>8CE122AFHAFHEKN<11>`ow<24>5NV4MU4\
@@ -1429,7 +1429,7 @@ X96_mod4           { ; "TriStar" PTC                         t=  0:02:20.50
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:34:05 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=conj/abs passes=1
+  formulaname=Gallet-4-06 function=conj/abs passes=1
   center-mag=-0.0126089/0.194866/0.245563/1/75 params=-1/0.3/0/0.43
   float=y decomp=256 periodicity=0
   colors=STj<3>X`tZcwZcw<15>nru<2>gkldhibef_bdY_a<12>000<18>f`V<9>JCM<9>zz\
@@ -1442,7 +1442,7 @@ X96_mod5           { ; "Christmas Decoration" PTC            t=  0:01:50.55
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:38:47 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=conj/cabs passes=1
+  formulaname=Gallet-4-06 function=conj/cabs passes=1
   center-mag=0.0385978/-0.144064/0.8566881/1/-14.999 params=4/2/0/1.5
   float=y decomp=256 periodicity=0
   colors=JCM<9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D<18>I\
@@ -1455,7 +1455,7 @@ X96_mod6           { ; "Jack Frost" PTC                      t=  0:11:33.60
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 04:56:39 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=gallet-4-06 function=acos/flip passes=1
+  formulaname=Gallet-4-06 function=acos/flip passes=1
   center-mag=-0.0574164/0.0793/0.2753357/1/75 params=1/-0.33/0/0.13
   float=y decomp=256 periodicity=0
   colors=1LU<11>034012245<2>8CE122AFHAFHEKN<11>`ow<24>5NV4MU4OW<14>0ow<30>\
@@ -1468,7 +1468,7 @@ lphc04_6           { ; "Mosaic Tiles" PHC                    t=  0:02:13.74
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 16:09:11 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.00819178/0.0357915/1.770308/1/-74.999
   params=-1000/0/0.1/2 float=y maxiter=1000 inside=zmag outside=atan
   colors=000rrr<6>zzzF00<14>h00<15>000UMF<14>zo`<15>FFFHUF<14>hzM<15>0F0<1\
@@ -1481,7 +1481,7 @@ lphc04_7           { ; "Brain Stem" PHC                      t=  0:03:50.86
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 17:01:15 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.213359/0.282145/0.5549047/1/-32.498
   params=1.24/0/-0.18/0 float=y inside=bof60 outside=atan
   colors=000vlZ765<4>e`V<9>DGN000<5>800H00<3>H00H00I00J00<15>e00f10f20<13>\
@@ -1496,7 +1496,7 @@ lphc04_8           { ; "Fragrant Flower Meadow" PHC          t=  0:08:29.54
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 17:14:01 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.318561/-0.589942/3.078049/1/-14.998
   params=1.24/0/-0.18/0 float=y inside=bof60 outside=atan
   colors=000S6b<3>P2`O2_O1ZN0YM0Y<5>I0SH1RG1QG2PF3O<5>BAIBBHCDJ<20>kkk<27>\
@@ -1510,7 +1510,7 @@ lphc04_9           { ; "Sphere with Flowers" PHC             t=  0:07:33.04
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 23, 1996 at 18:19:38 hours
   reset=1950 type=formula formulafile=Forum_96.frm
-  formulaname=lesphcfrm04 passes=1
+  formulaname=LesPHCfrm04 passes=1
   center-mag=0.663159/1.33492/1.527734/1/-12.498
   params=2.3/0.6/-0.33/0 float=y inside=maxiter outside=atan
   colors=`Xl<5>NqzOszPuz<23>7N_7MZ6KY5IW<4>1BR09P19Q<13>MMiONkPOkQPk<13>ww\
@@ -1522,7 +1522,7 @@ pd411_L1           { ; "Alien Landscape" PHC                 t=  0:09:22.83
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 25, 1996 at 04:37:56 hours
-  reset=1950 type=formula formulafile=Forum_96.frm formulaname=pd_411
+  reset=1950 type=formula formulafile=Forum_96.frm formulaname=PD_411
   function=asinh/flip passes=1
   center-mag=0.122709/-0.92404/0.9237444/1/-117.5
   params=0.33/0/0.22/0/1.2/0 float=y maxiter=1000 inside=maxiter
