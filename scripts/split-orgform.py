@@ -79,17 +79,15 @@ def format_entry(entry):
     
     # Build the header line
     header = entry.name
-    if entry.bracket_value:
-        header += f" [{entry.bracket_value}]"
     if entry.paren_value:
         header += f" ({entry.paren_value})"
+    if entry.bracket_value:
+        header += f" [{entry.bracket_value}]"
     header += " {"
     
     lines.append(header)
     
-    # Add body lines (without SOURCE comment)
-    body = remove_source_comment(entry.body)
-    for line in body:
+    for line in entry.body:
         lines.append(line)
     
     # Add closing brace
