@@ -252,7 +252,12 @@ def parse_file_entries(filename):
         after_brace = line[brace_pos + 1:]
         
         # Parse the entry header: name [brackets] (parens)
-        entry_name, bracket_value, paren_value = parse_entry_header(before_brace)
+        try:
+            entry_name, bracket_value, paren_value = parse_entry_header(before_brace)
+        except ValueError:
+            errors.append(f"Line {line_num + 1}: Invalid entry header: {original_line.rstrip()}")
+            line_num += 1
+            continue
         entry_start_line = line_num + 1
         
         # Check if the closing brace is on the same line (single-line entry)
@@ -288,13 +293,13 @@ def parse_file_entries(filename):
         
         found_closing_brace = False
         while line_num < len(lines):
-            original_line = lines[line_num]
+            original_line = lines[line_num].rstrip()
             line = strip_comment(original_line)
             
             # Check if line contains a closing brace
             if '}' in line:
                 brace_pos = line.index('}')
-                body_lines.append(line[:brace_pos])
+                body_lines.append(original_line[:original_line.index('}')].rstrip())
                 after_brace = line[brace_pos + 1:].strip()
                 
                 if after_brace:
@@ -309,7 +314,7 @@ def parse_file_entries(filename):
             if '{' in line:
                 errors.append(f"Line {line_num + 1}: Unexpected opening brace inside entry '{entry_name}': {original_line.rstrip()}")
             
-            body_lines.append(line)
+            body_lines.append(original_line)
             line_num += 1
         
         if not found_closing_brace:
@@ -333,7 +338,7 @@ def parse_file_entries(filename):
     return entries, warnings, errors
 
 
-def parse_entry_header(header_text):
+def parse_entry_header(line):
     """
     Parse the entry header to extract name, bracket value, and paren value.
     
@@ -341,31 +346,27 @@ def parse_entry_header(header_text):
     Both bracket and paren values are optional and can appear in any order.
     
     Args:
-        header_text: Text before the opening brace
+        line: Text before the opening brace
         
     Returns:
         tuple: (name, bracket_value, paren_value)
     """
+    line = line.strip()
+
     # Extract square bracket content [...]
-    bracket_match = re.search(r'\[([^\]]*)\]', header_text)
-    bracket_value = bracket_match.group(1) if bracket_match else None
-    
-    # Remove bracket content from header
-    if bracket_match:
-        header_text = header_text[:bracket_match.start()] + header_text[bracket_match.end():]
-    
+    bracket_value = None
+    if line.endswith(']'):
+        bracket_value = line[line.index('[') + 1:-1].strip()
+        line = line[:line.index('[')-1].strip()
+
     # Extract parentheses content (...)
-    paren_match = re.search(r'\(([^)]*)\)', header_text)
-    paren_value = paren_match.group(1) if paren_match else None
-    
-    # Remove paren content from header
-    if paren_match:
-        header_text = header_text[:paren_match.start()] + header_text[paren_match.end():]
-    
+    paren_value = None
+    if line.endswith(')'):
+        paren_value = line[line.index('(') + 1:-1].strip()
+        line = line[:line.index('(')-1].strip()
+
     # What remains is the entry name
-    name = header_text.strip()
-    
-    return name, bracket_value, paren_value
+    return line, bracket_value, paren_value
 
 
 def find_entry_by_name(entries, name, case_sensitive=False):
