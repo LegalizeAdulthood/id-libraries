@@ -9,7 +9,7 @@
 
 nwt3way1           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=1
+  formulaname=Newton_3Way passes=1
   center-mag=-2.22045e-016/1.38778e-016/3.205128/1/-29.998
   params=1/3/2/0/2/125
   float=y maxiter=1000 inside=253 outside=summ
@@ -18,7 +18,7 @@ nwt3way1           { ; Copyright (c) Paul W. Carlson, 1998
 
 nwt3way2           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=1
+  formulaname=Newton_3Way passes=1
   center-mag=-0.00649553/0.00528143/3.770592/1/-29.998
   params=1/3/1/0/8/30
   float=y maxiter=256 inside=253 outside=summ
@@ -29,7 +29,7 @@ nwt3way2           { ; Copyright (c) Paul W. Carlson, 1998
 
 nwt3way3           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=1
+  formulaname=Newton_3Way passes=1
   center-mag=-0.00649553/0.00528143/3.770592/1/-29.998
   params=1/3/0.5/0.5/8/30
   float=y maxiter=1000 inside=253 outside=summ
@@ -40,7 +40,7 @@ nwt3way3           { ; Copyright (c) Paul W. Carlson, 1998
 
 nwt3way4           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=t
+  formulaname=Newton_3Way passes=t
   center-mag=0.0900214/-0.157822/0.04014196/1/150
   params=1/3/2.2/0/2/125
   float=y maxiter=252 inside=253 outside=summ invert=1/0/0
@@ -51,7 +51,7 @@ nwt3way4           { ; Copyright (c) Paul W. Carlson, 1998
 
 nwt3way5           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=t
+  formulaname=Newton_3Way passes=t
   center-mag=-0.00649553/0.00528143/0.5748885/1/-29.996
   params=0.7/3/0.3/0.3/8/30
   float=y maxiter=256 inside=253 outside=summ
@@ -62,7 +62,7 @@ nwt3way5           { ; Copyright (c) Paul W. Carlson, 1998
 
 nwt3way6           { ; Copyright (c) Paul W. Carlson, 1996
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=t
+  formulaname=Newton_3Way passes=t
   center-mag=0.0900214/-0.157822/0.04014196/1/150
   params=1/3/0.5/0.5/2/125
   float=y maxiter=252 inside=253 outside=summ
@@ -234,7 +234,7 @@ Carr3395          { ; Julia trimmed Mandel. Cool !!!!!
 ;Subject: (fractint) Re: 1st post to group
 
 es0001             { ; Santa Clause and Candy Canes
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=carr3197
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Carr3197
   passes=1
   corners=-4.597312839286e-006/4.628817960798e-006/0.4760988022378/0.47610\
   57218359 params=200/300/400/550 float=y maxiter=647 periodicity=0
@@ -250,7 +250,7 @@ es0001             { ; Santa Clause and Candy Canes
 
 fbhalm01           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-0.89973878027091650/+0.00000000000000005/3.68\
   7306e+009/1/90
   params=1/0/1/0/0.08/0
@@ -261,7 +261,7 @@ fbhalm01           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm02           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-17.25916734130114000/+0.00000000000000176/126\
   56.11/1/90
   params=1/0/1/0/0.8/0
@@ -272,7 +272,7 @@ fbhalm02           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm03           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-2075.01568968617400000/+0.00000000000045519/1\
   08011.1/1/90
   params=1/0/4/0/2.6/0
@@ -283,7 +283,7 @@ fbhalm03           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm04           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-19.5413/1.85962e-015/68.68225/1/90
   params=1/0/1/0/0.8/0
   float=y maxiter=1000 inside=253 outside=summ
@@ -293,7 +293,7 @@ fbhalm04           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm05           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-2075.01568968617400000/+0.00000000000045519/1\
   08011.1/1/90
   params=1/0/10/0/2/0
@@ -304,7 +304,7 @@ fbhalm05           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm06           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-0.89973878027091650/+0.00000000000000005/5.83\
   4347e+008/1/90
   params=1/0/1/0/0.08/0
@@ -315,7 +315,7 @@ fbhalm06           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm07           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-0.93531003886309210/+0.00000000000000000/7634\
   166/1/90
   params=1/0/4/0/0.7/0
@@ -326,7 +326,7 @@ fbhalm07           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm08           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-726.69704046122710000/+6.22295538700079800/36\
   32169/1/60.998
   params=1/0/4/0/0.5/0
@@ -337,7 +337,7 @@ fbhalm08           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm09           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-726.69704046122710000/+6.22295538700079800/36\
   32169/1/60.997
   params=1/0/8/0/0.8/0
@@ -348,7 +348,7 @@ fbhalm09           {; Copyright (c) Paul W. Carlson, 1998
 
 fbhalm10           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-17.25916830015516000/+0.00000000000000176/443\
   6.164/1/-90
   params=1/0/1/0/0.5/0
@@ -365,7 +365,7 @@ fbhalm10           {; Copyright (c) Paul W. Carlson, 1998
 wizapr98-1         { ; 4/3/98 copyright Angela Wilczynski aka wizzle
                      ; from a Paul Carlson formula
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4
+  formulaname=FB_Halley_M4
   center-mag=-19.54130000000000000/+0.00000000000000186/74.01105/1.3333/90
   params=1/0/0.85/0/0.75/0 float=y maxiter=1000 inside=253
   outside=summ viewwindows=1/1/yes/0/0
@@ -386,7 +386,7 @@ wizapr98-2         { ; 4/3/98 copyright Angela Wilczynski aka wizzle
 wizapr98-3         { ; 4/3/98 copyright Angela Wilczynski aka wizzle
                      ; from a Paul Carlson formula
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4
+  formulaname=FB_Halley_M4
   center-mag=-726.69704004330260000/+6.22295172006555800/7504.629/1/83.497
   params=1/0/4/0/0.5/0 float=y maxiter=1000 inside=253 outside=summ
   colors=000zzc<28>K5AzKU<27>M12K00KKU<28>00AGGz<28>K0KfOz<28>K0FKKU<28>A0\
@@ -400,7 +400,7 @@ wizapr98-3         { ; 4/3/98 copyright Angela Wilczynski aka wizzle
 
 fbbhalm1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-17.25916734130114000/+0.00000000000000176/1265\
   6.11/1/90
   params=1/0/1/0/0.8/0
@@ -412,7 +412,7 @@ fbbhalm1           {; Copyright (c) Paul W. Carlson, 1998
 
 fbbhalm2           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=fb_halley_m4 passes=1
+  formulaname=FB_Halley_M4 passes=1
   center-mag=-19.54130000000000000/+0.00000000000000186/68.68\
   225/1/90
   params=1/0/1/0/0.8/0
@@ -694,7 +694,7 @@ HellsLightning          {;(c)Thaddaeus Parker 1998
 
 hal4_1_1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=-17.25916734130114000/+0.00000000000000176/12656.11/1/90
   params=4/0/1/0/1/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -712,7 +712,7 @@ hal4_1_1           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_2_1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000000011/-4.17101362238117700/1.393827e+007
   params=4/0/1/0/2/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -730,7 +730,7 @@ hal4_2_1           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_2_2           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000000011/-4.17101362268690400/3.287327e+007
   params=4/0/1/0/2/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -748,7 +748,7 @@ hal4_2_2           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_2_3           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=-0.00000000000000001/-0.77195452543939210/465509.3
   params=4/0/1/0/2/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -766,7 +766,7 @@ hal4_2_3           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_2_4           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=-0.00000000000000033/+0.66721828411334540/3.438981e+009
   params=4/0/1/0/2/0 float=y maxiter=1000 inside=0 invert=1/0/0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -784,7 +784,7 @@ hal4_2_4           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_2_5           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=-0.00000000000000001/+1.20256741276355600/164133
   params=4/0/1/0/2/0 float=y maxiter=1000 inside=0 invert=1/0/0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -802,7 +802,7 @@ hal4_2_5           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_3_1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000001066/-3.05258092230195400/2167.722/1/180
   params=4/0/1/0/3/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -820,7 +820,7 @@ hal4_3_1           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_3_2           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000001066/-3.05249746854468900/5112.551/1/180
   params=4/0/1/0/3/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -838,7 +838,7 @@ hal4_3_2           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_3_3           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000001066/-3.05249534548110400/11114.24/1/180
   params=4/0/1/0/3/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -856,7 +856,7 @@ hal4_3_3           {; Copyright (c) Paul W. Carlson, 1998
 
 hal4_3_4           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=+0.00000000000001066/-3.05258092230195400/2167.722/1/180
   params=4/0/1/0/3/0 float=y maxiter=1000 inside=0
   colors=0000e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe00tU0zz00e00oo00eUGoe0ee0\
@@ -874,7 +874,7 @@ hal4_3_4           { ; Copyright (c) Paul W. Carlson, 1998
 
 hal4_4_1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=halley4_mset passes=1
+  formulaname=Halley4_Mset passes=1
   center-mag=-6.10516452412834000/+2.52884255890206900/7721.489/1/112.5
   params=4/0/1/0/4/0 float=y maxiter=1000 inside=0
   colors=000e00tU0zz00e00oo00eUGoe0ee00tU0zz00e00oo00eUGoe0ee00tU0zz00e00o\
@@ -986,7 +986,7 @@ gp-cffnm-02           { ; (c) Gedeon Peteri, Apr 03, 1998
                         ; Formula by Paul Carlson
                         ; Color map by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cnfrc_fnc_mset function=tan passes=1
+  formulaname=CnFrc_Fnc_Mset function=tan passes=1
   center-mag=-2.55757843721523300/+0.00794183129177392/\
   4.962846e+007/1/15 params=12/0/1/0/2/125 float=y
   maxiter=65535 inside=253 outside=summ
@@ -996,7 +996,7 @@ gp-cffnm-02           { ; (c) Gedeon Peteri, Apr 03, 1998
 gp-hycj01            { ; (c) Gedeon Peteri, Mar 22, 1998
                        ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hycycl_julia passes=t
+  formulaname=HyCycl_Julia passes=t
   center-mag=0.0700309/0.531045/6.34658/1/45.002
   params=0.782397227416/0.156915323723/0.4/0/0.4/0 float=y
   maxiter=252 inside=253 outside=summ
@@ -1006,7 +1006,7 @@ gp-hycj01            { ; (c) Gedeon Peteri, Mar 22, 1998
 gp-jball06            { ; (c) Gedeon Peteri, Mar 22, 1998
                         ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia passes=1
+  formulaname=3D_Balls_Julia passes=1
   center-mag=-0.934508/0.0985599/5.799701
   params=0.312/-0.43/0.11/2/2/125 float=y maxiter=256 inside=0
   outside=summ
@@ -1027,7 +1027,7 @@ gp-jball06            { ; (c) Gedeon Peteri, Mar 22, 1998
 gp-jball07            { ; (c) Gedeon Peteri, Mar 12, 1998
                         ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia passes=1
+  formulaname=3D_Balls_Julia passes=1
   center-mag=-0.07109866423217309/+0.37296757657045280/61.76284\
   /1/-115 params=0.312/-0.43/0.0333/2/2/125 float=y
   maxiter=256 inside=0 outside=summ
@@ -1045,7 +1045,7 @@ gp-jball07            { ; (c) Gedeon Peteri, Mar 12, 1998
 gp-n3w-01             { ; (c) Gedeon Peteri, Apr 09, 1998
                         ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newton_3way passes=1
+  formulaname=Newton_3Way passes=1
   center-mag=-3.33067e-016/1.76942e-016/3.908693/1/-29.998
   params=1/2/1/-1/2/125 float=y maxiter=1000
   inside=253 outside=summ
@@ -1064,7 +1064,7 @@ gp-trs-01             { ; (c) Gedeon Peteri, Apr 09, 1998
                         ; Formula by Paul Carlson
                         ; Color map by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=truncated_stalks passes=1
+  formulaname=Truncated_Stalks passes=1
   center-mag=8.88178e-016/0/0.4540589 params=0/-1.1/0.05/10/2/125
   float=y maxiter=5000 inside=253 outside=summ
   colors=801sF_<123>C02Mov<123>HKS000<3>000
@@ -1073,7 +1073,7 @@ gp-trs-01             { ; (c) Gedeon Peteri, Apr 09, 1998
 gp-trs-02             { ; (c) Gedeon Peteri, Apr 09, 1998
                         ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=truncated_stalks passes=1
+  formulaname=Truncated_Stalks passes=1
   center-mag=0.152547/-0.482208/22.0622
   params=0/-0.33333333/0.1/20/2/127 float=y maxiter=5000 inside=253
   outside=summ
@@ -1198,7 +1198,7 @@ dragon_8e          { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Julia set near period 8 bulb
 		     ; near Elephant Valley
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-4.44089e-016/3.33067e-016/0.8503401
   params=1/0.07/0.35408308/0.095460802/8/30
   float=y maxiter=5000 inside=253 outside=summ
@@ -1210,7 +1210,7 @@ dragon_8s          { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Julia set near period 8 bulb
 		     ; near Seahorse Valley
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-4.44089e-016/2.22045e-016/0.8912656
   params=1/0.04/-0.3393105491995811/0.6264574211090803/8/30
   float=y maxiter=5000 inside=253 outside=summ
@@ -1222,7 +1222,7 @@ dragon_4e          { ; Copyright (c) Paul W. Carlson, 1998
                      ; Julia set near period 4 bulb
                      ; near Elephant Valley
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-3.33067e-016/0/0.8197279
   params=1/0.07000000000000001/0.2880725730210543/0.4825050327\
   926874/4/60
@@ -1233,7 +1233,7 @@ dragon_4e          { ; Copyright (c) Paul W. Carlson, 1998
 drgn_head_8e       { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Zoom into dragon_8e par
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-0.456759/0.668495/2.69095/1/-54.999
   params=1/0.07/0.35408308/0.095460802/8/30
   float=y maxiter=5000 inside=253 outside=summ
@@ -1244,7 +1244,7 @@ drgn_head_8e       { ; Copyright (c) Paul W. Carlson, 1998
 drgn_head_8s       { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Zoom into dragon_8s par
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-0.0946935/0.962462/17.07051
   params=1/0.04/-0.3393105491995811/0.6264574211090803/8/30
   float=y maxiter=5000 inside=253 outside=summ
@@ -1255,7 +1255,7 @@ drgn_head_8s       { ; Copyright (c) Paul W. Carlson, 1998
 drgn_head_4e       { ; Copyright (c) Paul W. Carlson, 1998
                      ; Zoom into dragon_4e par
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-0.729481/0.759112/3.712208/1/-65
   params=1/0.07000000000000001/0.2880725730210543/0.4825050327\
   926874/4/60
@@ -1266,7 +1266,7 @@ drgn_head_4e       { ; Copyright (c) Paul W. Carlson, 1998
 elephant           { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Julia set zoom from Elephant Valley
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=0.203028/1.03894/31.68335/1/-7.499
   params=1/0.16/0.269163079909/-0.00503855199/2/125
   float=y maxiter=20000 inside=253 outside=summ
@@ -1276,7 +1276,7 @@ elephant           { ; Copyright (c) Paul W. Carlson, 1998
 seahorse           { ; Copyright (c) Paul W. Carlson, 1998
 		     ; Mset zoom into Seahorse Valley
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-0.74886221120500800/+0.10062118747390440/1292.39
   params=0/0.048/0/0/2/125
   float=y maxiter=2000 inside=253 outside=summ
@@ -1292,7 +1292,7 @@ fj1                { ; robin's egg
                      ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=trunc/cos
+  formulaname=From_Jiho1 function=trunc/cos
   center-mag=0.454916/-0.196487/0.0732372 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0
@@ -1308,7 +1308,7 @@ fj1                { ; robin's egg
 fj2                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=atanh/cos
+  formulaname=From_Jiho1 function=atanh/cos
   center-mag=0.454916/-0.196487/0.0732372 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0  colors=000LZk<3>Ums<5>hrwhrwgqv<31>\
@@ -1321,7 +1321,7 @@ fj2                { ; 4-10-98 kathy roth
 fj3                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=cos/sin
+  formulaname=From_Jiho1 function=cos/sin
   center-mag=-0.00902307/0.0519099/0.701022 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0 decomp=256
@@ -1334,7 +1334,7 @@ fj4                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
                      ;palette by Sylvie Gallet
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=sqr/cos
+  formulaname=From_Jiho1 function=sqr/cos
   center-mag=-1.42109e-014/9.76996e-015/0.0866736 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0  colors=000YYY<30>FFFwzw<21>bhdbhdagc`gc`fb<6>\
@@ -1347,7 +1347,7 @@ fj4                { ; 4-10-98 kathy roth
 fj5                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=sqr/cos
+  formulaname=From_Jiho1 function=sqr/cos
   center-mag=-1.06581e-014/7.10543e-015/0.07107235 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0
@@ -1361,7 +1361,7 @@ fj5                { ; 4-10-98 kathy roth
 fj6                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=cos/sin
+  formulaname=From_Jiho1 function=cos/sin
   center-mag=0.394197/-0.808328/0.05496012 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0 decomp=256  colors=000<2>000<7>KKQNNTQQXTT_VWa\
@@ -1376,7 +1376,7 @@ fj6                { ; 4-10-98 kathy roth
 fj7                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=sinh/tan
+  formulaname=From_Jiho1 function=sinh/tan
   center-mag=0.147432/0.0720863/0.02129752 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0
@@ -1391,7 +1391,7 @@ fj7                { ; 4-10-98 kathy roth
 fj8                { ; 4-10-98 kathy roth
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=sin/tan
+  formulaname=From_Jiho1 function=sin/tan
   center-mag=-0.189876/0.269284/0.1805382/1/-90 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=10/0/0  colors=000BBM<14>WWz<7>J9J<15>zWz\
@@ -1451,7 +1451,7 @@ Royal_'brot        { ; Copyright David Shanholtzer, 1998
                      ; on a P233MMX at 1600x1200  Apr 13, 1998  02:09:58
                      ; Par and Image Copyright 1998 by Jo Weber
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=carr2958 passes=t center-mag=-1.28899/-4.61869/16.05809
+  formulaname=Carr2958 passes=t center-mag=-1.28899/-4.61869/16.05809
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=0008R_8OX9LU<2>GHPJGNMFLPDKRCI<10>t00<15>xo0ys0yv0zz0xv0<17>P00<1\
   4>c08d09e0Af0Bf0C<4>k2Gl2Hm2In2Jo2K<8>x4R93F<9>jhz<15>MBe<15>kk0<15>000C\
@@ -1463,7 +1463,7 @@ Royal_'brot        { ; Copyright David Shanholtzer, 1998
                      ; on a P233MMX at 1600x1200  Apr 13, 1998  02:10:23
                      ; Par and Image Copyright 1998 by Jo Weber
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=carr2958 passes=t
+  formulaname=Carr2958 passes=t
   center-mag=-2.03033/-4.83829/11.59852/1/19.999
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=CCC07J<9>012000100<51>x10z20z50<14>xz0<13>wxl<14>000D8t00060t000D\
@@ -1478,7 +1478,7 @@ Royal_'brot        { ; Copyright David Shanholtzer, 1998
                      ; on a P233MMX at 1600x1200  Apr 13, 1998  02:10:36
                      ; Par and Image Copyright 1998 by Jo Weber
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=carr2958 passes=t
+  formulaname=Carr2958 passes=t
   center-mag=-1.00007696598270700/-4.50466455933547200/70.15613/1/-90
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000C60<12>zX0vV0000nR0<12>000<15>ut0<15>000GA4<12>2v10z00w0<14>00\
@@ -1491,7 +1491,7 @@ Royal_'brot        { ; Copyright David Shanholtzer, 1998
                      ; on a P233MMX at 1600x1200  Apr 13, 1998  02:10:51
                      ; Par and Image Copyright 1998 by Jo Weber
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=carr2958 passes=t
+  formulaname=Carr2958 passes=t
   center-mag=-2.01148586766561400/-4.89194530463389700/995.9015/1/20
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=CCC07J<9>012000100<51>x10z20z50<14>xz0<13>wxl<14>000D8t00060t000D\
@@ -1543,7 +1543,7 @@ Emerging           { ; Frima192-036
 
 shieldsm01           {
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=shields_mset passes=1
+  formulaname=Shields_Mset passes=1
   center-mag=-2.62648689156518500/-0.00000000000000150/\
   352.3752/1/-90 params=0.4/2/2/125/1.0e20/0
   float=y maxiter=1000 inside=253 outside=summ
@@ -1596,7 +1596,7 @@ buds_arrow         { ; (c) wizzle 4/13/98 from Bud's gravibrot formula
 
 off_center         { ; 4-13-98 wizzle inspired by kathy roth
                      ; frm by Sylvie Gallet
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gallet-5-01
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Gallet-5-01
   center-mag=0.772082/-0.275614/0.5452425 params=-0.15/0.1/0.1/20/20/1
   float=y maxiter=5000 inside=253 outside=summ invert=1/0/0
   colors=000<109>0000A0<22>0w0<8>0F00A007704E00M<18>00z<26>00N00M00K01I<2>\
@@ -1610,7 +1610,7 @@ off_center         { ; 4-13-98 wizzle inspired by kathy roth
 
 mandsqm01          {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares passes=t
+  formulaname=Mandel_Squares passes=t
   corners=-1.994336858126/-1.994329414094/4.962687466249e-006/\
   -4.962687466949e-006/-1.994329414094/-4.962687466949e-006
   params=0.4/0/8/30/20/0
@@ -1622,7 +1622,7 @@ mandsqm01          {; Copyright (c) Paul W. Carlson, 1998
 
 mandsqm02          {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares passes=t
+  formulaname=Mandel_Squares passes=t
   corners=0.289085276/0.2893099396/-0.0134643239/-0.0132958262
   params=0.12/0/8/30/20/0
   float=y maxiter=1000 inside=253 outside=summ
@@ -1633,7 +1633,7 @@ mandsqm02          {; Copyright (c) Paul W. Carlson, 1998
 
 mandsqm03          {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares passes=t
+  formulaname=Mandel_Squares passes=t
   corners=0.294723193998/0.2947260861912/-0.01645002823031/-0.016\
   4423459324/0.2947205476846/-0.01644649981239
   params=0.12/0/8/30/50/0
@@ -1645,7 +1645,7 @@ mandsqm03          {; Copyright (c) Paul W. Carlson, 1998
 
 mandsqm04          {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares
+  formulaname=Mandel_Squares
   corners=-1.712159467/-1.710182875/0.001317728051/-0.00131772805\
   1/-1.710182875/-0.001317728051
   params=0.4/0/8/30/20/0
@@ -1657,7 +1657,7 @@ mandsqm04          {; Copyright (c) Paul W. Carlson, 1998
 
 mandsqj01          {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares passes=t
+  formulaname=Mandel_Squares passes=t
   center-mag=-4.44089e-016/4.44089e-016/0.8503402
   params=0.1/1/0.35408308/0.095460802/40/0
   float=y maxiter=5000 inside=253 outside=summ
@@ -1969,7 +1969,7 @@ z<5>xzzzzzyzz<4>rzzpzzpzz<16>kzz
 
 Working3_wiz1      { ; wizzle 4/16/98
                      ; galaxy1.map
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=uc03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Uc03
   function=log passes=t center-mag=-0.637998/-0.447214/1.572327
   params=0.1/0 float=y maxiter=1023 inside=255 
   colors=A0agFM<4>K0A<4>D0UB0Y80e<3>20u00z01v<5>69V7AQ6BO<3>2ID0KA0MC<14>0\
@@ -1980,7 +1980,7 @@ Working3_wiz1      { ; wizzle 4/16/98
 
 Working3_wiz2      { ; wizzle 4/16/98
                      ; julia7.map which is based on a Paul Carlson map
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=uc03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Uc03
   function=log passes=t center-mag=-0.637998/-0.447214/1.572327
   params=0.1/0 float=y maxiter=1023 inside=255 
   colors=000ZFA<2>K0U<13>wrz<15>0II<13>0zz<11>0GG0CC07J11Q<14>mmz<13>K0K<1\
@@ -2076,7 +2076,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1 center-mag=-0.225/0.15/7.619048
+  formulaname=Phoenix_Atan passes=1 center-mag=-0.225/0.15/7.619048
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ
   colors=000wm0<25>o`0o_0n_0n_0<94>F00czm<120>2F61E51E50D4zzz000<2>000
@@ -2087,7 +2087,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=petals_mset passes=1
+  formulaname=Petals_Mset passes=1
   center-mag=-0.79703368989875070/-0.16380936561487550/2.612648e+009
   params=0.15/0/0.1/0/4/63 float=y maxiter=3000 inside=253
   outside=summ
@@ -2101,7 +2101,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandel_squares passes=1
+  formulaname=Mandel_Squares passes=1
   center-mag=-1.94041265037740200/-0.00000004164221901/4.840608e+007
   params=0.2/0/-0.75/0.123/20/0 float=y maxiter=2000 inside=253
   outside=summ
@@ -2115,7 +2115,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt7_fang_mset function=recip/recip passes=1
+  formulaname=Newt7_Fang_Mset function=recip/recip passes=1
   center-mag=-0.75931723684054940/-0.90225728486516240/6701.026/1/2.499
   params=0.5/0/0.9/0/8/30 float=y maxiter=500 inside=253 outside=summ
   colors=431C94<2>86376265365265144242132131022122043134255245346265456356\
@@ -2136,7 +2136,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1 center-mag=0/0/0.8130081
+  formulaname=Cdp_Jul_Mand passes=1 center-mag=0/0/0.8130081
   params=1/0.08500000000000001/0.3005295/-0.46/4/63 float=y
   maxiter=1000 inside=0 outside=summ
   colors=000wwm<61>FA0cmm<61>0A0zmO<4>wiLvhLvgKvgK<13>lVBkUAkUAjTA<13>_J3_\
@@ -2148,7 +2148,7 @@ phxatnj1           { ; Copyright (c) Paul W. Carlson, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=-0.00000000000000013/-0.00000000000000006/325.8765
   params=1/0.07000000000000001/0.2880725730210543/0.4825050327926874/4/63
   float=y maxiter=5000 inside=253 outside=summ
@@ -2213,7 +2213,7 @@ atan_map5          { ; wizzle 4/18/98
                      ; carl's par with a map which is a variation from one of      
                      ; carl's earlier postings....lots of black....useful
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1 center-mag=-0.225/0.15/7.619048
+  formulaname=Phoenix_Atan passes=1 center-mag=-0.225/0.15/7.619048
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ
   colors=000YF`<16>paxrczqby<26>K0K000<31>000S54<13>zzm<12>O00000<43>000QK\
@@ -2226,7 +2226,7 @@ atan_map5          { ; wizzle 4/18/98
 ;Subject: (fractint) Colouring Books rot the mind - thank you!
 
 Myattempt2colour3  {
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=uc03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Uc03
   function=log passes=t center-mag=-0.637998/-0.447214/1.572327
   params=0.1/0 float=y maxiter=1023 inside=255
   colors=000321652000<15>ypM<4>yk6xj2vk3tl4rm6<4>00z<3>JcZzmSTxLRyMOzO<52>\
@@ -2558,7 +2558,7 @@ kelly_richard      { ; Apr 02, 1998
 es000001           { ; Earl Simpson, 4/17/98
                                ; from a Paul Carlson fromula
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   corners=0.040205278/-0.099794724/0.34653194/0.48653194
   params=-0.950756510417/0.22080729167/6/0/3/83 float=y maxiter=1000
   inside=253 outside=summ
@@ -2568,7 +2568,7 @@ es000001           { ; Earl Simpson, 4/17/98
 es000002           { ; Earl Simpson, 4/17/98
                                ; from a Paul Carlson fromula
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   corners=0.038699902/-0.1013001/0.34653194/0.48653194
   params=-0.950756510417/0.22080729167/12/0/4/62 float=y maxiter=1000
   inside=253 outside=summ
@@ -2760,7 +2760,7 @@ Etude_No.10        { ; (c) Bob Margolis
 something_fishy    { ; wizzle 4/17/98
                      ; Carr formula w. deeps9.map
                      ; Inspired by Jo Weber
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=carr2958
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Carr2958
   passes=2
   center-mag=-1.00007696598270700/-4.50429300060152600/118.4101/0.7351/-90
   params=200/300/400/550 float=y maxiter=647 periodicity=0
@@ -2815,7 +2815,7 @@ Rosette            { ; (c) 1998 by Bob Margolis
 es000006           { ; Earl Simpson 4/20/98
                      ; SLOW but worth the wait
                      ; Linda Allison map
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_411
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=PD_411
   function=log/ident passes=3 corners=-2.08/2.08/-2.08/2.08
   params=6/0/0.005/0/4/2 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -2847,7 +2847,7 @@ hollywood_bowl     { ; 4-22-98 wizzle
 hollywood_bowl2    { ; 4/22/98 by Angela Wilczynski kelmod3.map
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=log/cabs
+  formulaname=From_Jiho1 function=log/cabs
   center-mag=0.87852/-2.66454e-015/0.2786978/1/90 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=1/0/0
@@ -2859,7 +2859,7 @@ hollywood_bowl2    { ; 4/22/98 by Angela Wilczynski kelmod3.map
 hollywood_bowl3    { ; 4/22/98 by Angela Wilczynski kelmod3.map
                      ; frm by Jiho Kim
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=from_jiho1 function=log/cosh
+  formulaname=From_Jiho1 function=log/cosh
   center-mag=0.176802/-8.88178e-016/0.4122748/1/90 params=0/0 float=y
   maxiter=2147483647 bailout=6 inside=maxiter potential=255/255/0
   invert=1/0/0
@@ -2945,7 +2945,7 @@ hollywood_bowl8    { ; 4/22/98 by Angela Wilczynski map adapted from Paul C
 
 rcoshm01           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cosh_rings_mset passes=t
+  formulaname=Cosh_Rings_Mset passes=t
   corners=3.1830138002/3.1798646488/1.7294245353/1.7279980114/\
   3.1825648372/1.7300231527
   params=0.21/0/1e+030/0
@@ -2961,7 +2961,7 @@ rcoshm01           { ; Copyright (c) Paul W. Carlson, 1998
 
 rcoshm02           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cosh_rings_mset passes=t
+  formulaname=Cosh_Rings_Mset passes=t
   corners=-3.44266874082/-3.44265373186/1.00059733317e-005/-1.\
   00059733352e-005/-3.44265373186/-1.00059733352e-005
   params=0.21/0/1e+030/0
@@ -2977,7 +2977,7 @@ rcoshm02           { ; Copyright (c) Paul W. Carlson, 1998
 
 rcoshm03           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cosh_rings_mset passes=t
+  formulaname=Cosh_Rings_Mset passes=t
   corners=-3.442662501169/-3.442659919627/1.721027998635e-006/\
   -1.721028002182e-006/-3.442659919627/-1.721028002182e-006
   params=0.21/0/1e+030/0
@@ -3001,7 +3001,7 @@ spiralgia          { ; kathy roth 4-21-98
                      ; from par by Sylvie Gallet
                      ; map by Linda Allison
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   center-mag=0.695361/1.79661/1.50285
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ invert=1/0/0
@@ -3015,7 +3015,7 @@ spiralgia1         { ; kathy roth 4-21-98
                      ; from par by Sylvie Gallet
                      ; map by Linda Allison
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   center-mag=-3.21184/1.32182/0.7514248
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ invert=1/0/0
@@ -3031,7 +3031,7 @@ spiralgia2         { ; kathy roth 4-21-98
                      ; from par by Sylvie Gallet
                      ; map by Kerry Mitchell
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   center-mag=-2.80875/0.503649/0.1833476
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ invert=1/0/0  
@@ -3136,7 +3136,7 @@ justa_julia1       { ; wizzle 4/22/98 julia1.map
 
 North-South        { ; (c) 1998 by Bob Margolis
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gallet-3-02 function=tan/asin passes=1
+  formulaname=Gallet-3-02 function=tan/asin passes=1
   corners=0.001328562088784505/0.001328565784738778/-0.16271358/0.16140192\
   /-0.1607291966168375/-0.00065582956 params=2.1/0/4.2/0 float=y
   maxiter=255 inside=0 outside=atan invert=4.76082568182182e-005/0/0
@@ -3198,7 +3198,7 @@ spiralgia1_wiz     { ; kathy roth 4-21-98
                      ; with new w-gldtel.map by wizzle
                      ;
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=phoenix_atan passes=1
+  formulaname=Phoenix_Atan passes=1
   center-mag=-3.21184/1.32182/0.7514248
   params=-0.50756510417/0.22080729167/0.5/0/2/125 float=y maxiter=1000
   inside=253 outside=summ invert=1/0/0
@@ -3283,7 +3283,7 @@ N<2>bRQbSQcTRcUSdUT<16>nhg09Koiiojj
 
 gold_spirs         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=t
+  formulaname=MyEqn_Julia passes=t
   corners=-6.08308/1.50092/2.116334/7.804334
   params=1.240929178/0.881773806/1/0.3/1/250
   float=y maxiter=300 inside=253 outside=summ
@@ -3292,7 +3292,7 @@ gold_spirs         {; Copyright (c) Paul W. Carlson, 1998
 
 harl_spirs         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=t
+  formulaname=MyEqn_Julia passes=t
   center-mag=-1.69694/2.10167/34.25788/1/62.5
   params=0.15/1.26875/2/0.3/2/125
   float=y maxiter=252 inside=253 outside=summ
@@ -3301,7 +3301,7 @@ harl_spirs         {; Copyright (c) Paul W. Carlson, 1998
 
 square_spirs       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=t
+  formulaname=MyEqn_Julia passes=t
   corners=-6.08308/1.50092/2.116334/7.804334
   params=1.240929178/0.881773806/3/0.18/2/125
   float=y maxiter=300 inside=253 outside=summ
@@ -3310,7 +3310,7 @@ square_spirs       { ; Copyright (c) Paul W. Carlson, 1998
 
 sphere_spirs       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=t
+  formulaname=MyEqn_Julia passes=t
   corners=-6.08308/1.50092/2.116334/7.804334
   params=1.240929178/0.881773806/4/0.1/8/30
   float=y maxiter=300 inside=253 outside=summ
@@ -3320,7 +3320,7 @@ sphere_spirs       { ; Copyright (c) Paul W. Carlson, 1998
 
 stalks_spirs       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=1
+  formulaname=MyEqn_Julia passes=1
   corners=1.337235/2.427452/0.25013261/1.0677954
   params=3/0/5/0.07000000000000001/2/125
   float=y maxiter=1000 inside=253 outside=summ
@@ -3435,7 +3435,7 @@ contrails         { ; Copyright (c) Paul W. Carlson, 1998
 
 gold_tiara         { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_stalks_mset passes=t
+  formulaname=Newt1_Stalks_Mset passes=t
   corners=0.017700460106/0.01770154987/0.999970930007/0.99997174733
   params=0.1/0/1/190/1e+020/0
   float=y maxiter=200 inside=253
@@ -3444,7 +3444,7 @@ gold_tiara         { ; Copyright (c) Paul W. Carlson, 1998
 
 midget1            { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_stalks_mset passes=t
+  formulaname=Newt1_Stalks_Mset passes=t
   center-mag=-0.50135454686508240/+0.84441168145907690/2053494/\
   1/-172.499
   params=0.1/0/2/125/1e+020/0
@@ -3454,7 +3454,7 @@ midget1            { ; Copyright (c) Paul W. Carlson, 1998
 
 midget2            { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_stalks_mset passes=t
+  formulaname=Newt1_Stalks_Mset passes=t
   center-mag=-0.11157800435080620/+0.99375485493326440/11837.12\
   /1/-159.999
   params=0.1/0/8/30/1e+020/0
@@ -3465,7 +3465,7 @@ midget2            { ; Copyright (c) Paul W. Carlson, 1998
 
 midget3            { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_stalks_mset passes=t
+  formulaname=Newt1_Stalks_Mset passes=t
   center-mag=-0.01321743275153131/+0.99991265725714540/988652/1/-90
   params=0.13/0/8/30/1e+020/0
   float=y maxiter=2000 inside=253 outside=summ
@@ -3514,7 +3514,7 @@ the_godhead        { ; kathy roth 4-8-98
 
 butterfly          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt_fang_mset function=sin/sqr passes=1
+  formulaname=Newt_Fang_Mset function=sin/sqr passes=1
   center-mag=1.5708/0/0.5691534/1/-90
   params=1/0/1/0/8/30 float=y
   maxiter=252 inside=253 outside=summ
@@ -3524,7 +3524,7 @@ butterfly          { ; Copyright (c) Paul W. Carlson, 1998
 
 trillium           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt_fang_mset function=sinh/sqr passes=1
+  formulaname=Newt_Fang_Mset function=sinh/sqr passes=1
   center-mag=0.882759/8.32667e-017/6.666667
   params=1/0/0.3/0.3/8/30
   float=y maxiter=252 inside=253 outside=summ
@@ -3534,7 +3534,7 @@ trillium           { ; Copyright (c) Paul W. Carlson, 1998
 
 sky_midget         { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt_fang_mset function=ident/ident passes=1
+  formulaname=Newt_Fang_Mset function=ident/ident passes=1
   center-mag=-0.92406962108127470/+0.38222517539884480/1625\
   3.84/1/-157.5
   params=0.2/0/1/0/2/125
@@ -3544,7 +3544,7 @@ sky_midget         { ; Copyright (c) Paul W. Carlson, 1998
 
 royal_midget       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt_fang_mset function=ident/ident passes=t
+  formulaname=Newt_Fang_Mset function=ident/ident passes=t
   center-mag=+23.88024167634043000/+0.00000000000000183/202\
   1.082/1/90
   params=0.6/0/1/0/8/30
@@ -3555,7 +3555,7 @@ royal_midget       { ; Copyright (c) Paul W. Carlson, 1998
 
 pewter_midget      { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt_fang_mset function=ident/ident passes=1
+  formulaname=Newt_Fang_Mset function=ident/ident passes=1
   center-mag=+23.88025580335069000/+0.00000000000000183/711\
   .421/1/90
   params=0.6/0/1/0/1/250
@@ -3613,7 +3613,7 @@ A_spiral           { ; From GenInvMandi_N (Jm Collard-Richard)
                      ; Color map:dav43blu
                      ; David Shanholtzer, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=geninvmand1_n function=tan/tan/sin/sin passes=t
+  formulaname=GenInvMand1_N function=tan/tan/sin/sin passes=t
   center-mag=-1.35200357384653400/-0.39582788112125420/155.0388
   float=y maxiter=800 inside=260 outside=real decomp=256
   distest=1/71/1024/768 finattract=y
@@ -3674,7 +3674,7 @@ regular_mandle     {
 
 perfect_spiral     { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=flexballs_pky passes=t
+  formulaname=FlexBalls_Pky passes=t
   center-mag=-1.13043/1.0438/28.41217/1/180
   params=-0.408904407794/0.5007793232810001/0.12/0.1/50/1000
   float=y maxiter=242 inside=253 outside=summ
@@ -3684,7 +3684,7 @@ perfect_spiral     { ; Copyright (c) Paul W. Carlson, 1998
 
 solid_spiral       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=flexballs_pky passes=t
+  formulaname=FlexBalls_Pky passes=t
   center-mag=0.972403/0.660603/21.17126/1/-37.498
   params=-0.401846/0.513278/0.2/0.2/0/1000
   float=y maxiter=300 inside=253 outside=summ
@@ -3699,7 +3699,7 @@ solid_spiral       { ; Copyright (c) Paul W. Carlson, 1998
 
 the_godhead-b      { ; kathy roth 4-8-98 - recolor by Bud 4/25/98
                      ; Bob Carr's formula modified by Sylvie Gallet
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=carr3197
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Carr3197
   passes=1 center-mag=0.00120777/0.217085/4.191818
   params=100/100/100/100 float=y maxiter=3000 inside=253 outside=summ
   colors=0000eW<19>022000211<30>zsX<30>222000101<30>w0_<30>202000111<30>ss\
@@ -3918,7 +3918,7 @@ gp-mand116            {
 
 cycle_me           { ; Copyright (c) Paul Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ibubs_julia_mset passes=t
+  formulaname=Ibubs_Julia_Mset passes=t
   corners=-1.6899829/-1.5880734/3.62762689/3.70405904
   params=-0.770833/0.178571/0.1788955/16/1/240
   float=y maxiter=10000 outside=summ
@@ -3931,7 +3931,7 @@ cycle_me           { ; Copyright (c) Paul Carlson, 1998
 
 ibubsjul1          { ; Copyright (c) Paul Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ibubs_julia_mset passes=t
+  formulaname=Ibubs_Julia_Mset passes=t
   corners=-1.6899829/-1.5880734/3.62762689/3.70405904
   params=-0.770833/0.178571/0.1788955/16/2/125
   float=y maxiter=10000 outside=summ
@@ -3944,7 +3944,7 @@ ibubsjul1          { ; Copyright (c) Paul Carlson, 1998
 ;Subject: Re: (fractint) Re: A JPL Formula
 
 001Smile              { ; SK
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderm
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderM
   function=sqr/cabs center-mag=0.215369/-0.0418968/0.6512441/1/90
   params=1/-946735786/1/0 maxiter=32 outside=1
   potential=256/999/-31073 decomp=256
@@ -3954,7 +3954,7 @@ ibubsjul1          { ; Copyright (c) Paul Carlson, 1998
   }
 
 002Wink!              { ; SK
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderm
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderM
   function=sqr/conj center-mag=3.7015e-005/-0.0417213/0.6512441/1/90
   params=-5.7/-946735786/0.68/0 maxiter=32 outside=1
   potential=256/999/-31073 decomp=256
@@ -3964,7 +3964,7 @@ ibubsjul1          { ; Copyright (c) Paul Carlson, 1998
   }
 
 003Namaste            { ; SK
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderm
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderM
   function=sqr/cabs center-mag=3.6895e-005/-0.0418887/0.6512441/1/90
   params=1/-946735786/0.6/0 maxiter=32 outside=1
   potential=256/999/-31073 decomp=256
@@ -3995,7 +3995,7 @@ MandEllipse #1     { ; An image using the MandEllipse Formula
 
 grapevines         { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=1
+  formulaname=Newt5_Stalks_Mset passes=1
   corners=0.869433581427139/0.869433512026894/1.31486394703682/\
   1.31486427722428/0.869433397953073/1.31486419166891
   params=0.2/0/2/125/1e+020/0
@@ -4005,7 +4005,7 @@ grapevines         { ; Copyright (c) Paul W. Carlson, 1998
 
 midget5_1          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   center-mag=+0.64242363770506840/-0.75947812772406030/5.794176\
   e+008/1/-12.499
   params=0.2/0/2/125/1e+020/0
@@ -4015,7 +4015,7 @@ midget5_1          { ; Copyright (c) Paul W. Carlson, 1998
 
 midget5_2          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   corners=0.869473917831/0.8693836975/1.3146365079/1.3150657515\
   /0.869235401546/1.3149545296
   params=0.2/0/2/125/1e+020/0
@@ -4025,7 +4025,7 @@ midget5_2          { ; Copyright (c) Paul W. Carlson, 1998
 
 midget5_3          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   center-mag=+0.64143261032474960/-0.76003209999604020/102644.1\
   /1/-95.5
   params=0.15/0/2/125/1e+020/0
@@ -4035,7 +4035,7 @@ midget5_3          { ; Copyright (c) Paul W. Carlson, 1998
 
 midget5_4          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   center-mag=+0.33424946523291680/-0.39784353749430370/327656.2\
   /1/3.5
   params=0.2/0/2/125/1e+020/0
@@ -4045,7 +4045,7 @@ midget5_4          { ; Copyright (c) Paul W. Carlson, 1998
 
 midget5_5           { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   center-mag=+5.03160103044942500/+6.52565802349076100/1.295945\
   e+007/1/-128.999
   params=0.034/0/2/125/1e+020/0
@@ -4055,7 +4055,7 @@ midget5_5           { ; Copyright (c) Paul W. Carlson, 1998
 
 newt_elephant      { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt5_stalks_mset passes=t
+  formulaname=Newt5_Stalks_Mset passes=t
   corners=0.64194046213/0.64242274401/-0.7614339006/-0.75886431\
   58/0.64088068267/-0.7600208616
   params=0.2/0/2/125/1e+020/0
@@ -4085,7 +4085,7 @@ jcamp1             { ; jon camp
 caperpil           { ; (c) Gedeon Peteri, Apr 26, 1998
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ibubs_julia_mset passes=1
+  formulaname=Ibubs_Julia_Mset passes=1
   center-mag=9.18614/5.862/0.2209658
   params=0.2956/0.4830000000000001/0.41/16/2/125
   float=y maxiter=10000 outside=summ
@@ -4104,7 +4104,7 @@ caperpil           { ; (c) Gedeon Peteri, Apr 26, 1998
 gp-cmj01           { ; (c) Gedeon Peteri, Apr 25, 1998
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=0.21551/-0.482882/12.72076
   params=1/0.275/0.39937/-0.272/2/120 float=y
   maxiter=5000 inside=0 outside=summ logmap=4
@@ -4115,7 +4115,7 @@ gp-cmj01           { ; (c) Gedeon Peteri, Apr 25, 1998
 gp-cmj02           { ; (c) Gedeon Peteri, Apr 25, 1998
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cdp_jul_mand passes=1
+  formulaname=Cdp_Jul_Mand passes=1
   center-mag=0.271052/-0.436024/11.64404
   params=1/0.275/-0.18/0.67/2/120 float=y
   maxiter=5000 inside=0 outside=summ logmap=4
@@ -4128,7 +4128,7 @@ gp-ibubj-01        { ; (c) Gedeon Peteri, Apr 26, 1998
                      ; Color map by Paul Carlson
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ibubs_julia_mset passes=1
+  formulaname=Ibubs_Julia_Mset passes=1
   center-mag=1.58508/0.796984/5.004955/1/-17.5
   params=0.31133/-0.0074/0.41/16/2/125 float=y
   maxiter=10000 outside=summ
@@ -4138,7 +4138,7 @@ gp-ibubj-01        { ; (c) Gedeon Peteri, Apr 26, 1998
 gp-ibubj-02        { ; (c) Gedeon Peteri, Apr 26, 1998
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ibubs_julia_mset passes=1
+  formulaname=Ibubs_Julia_Mset passes=1
   center-mag=-1.03898/3.53314/4.149141
   params=-0.17333/0.6515/0.21/16/2/125 float=y
   maxiter=10000 outside=summ
@@ -4158,7 +4158,7 @@ gp-ibubj-02        { ; (c) Gedeon Peteri, Apr 26, 1998
 gp-mej-02          { ; (c) Gedeon Peteri, Apr 25, 1998
                      ; Formula by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=myeqn_julia passes=1
+  formulaname=MyEqn_Julia passes=1
   center-mag=2.40072/-0.587147/7.038499
   params=0.5175/-0.5847/4/0.07000000000000001/2/125
   float=y maxiter=1000 inside=253 outside=summ
@@ -4194,7 +4194,7 @@ hycp067     { ; sprouts                          t=  0:17:07.75
 
 mand_ell_set       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mand_ellipse passes=t
+  formulaname=Mand_Ellipse passes=t
   corners=-3.986284/2.732366/-2.519494/2.519494
   params=16/256/2/125
   float=y maxiter=256 inside=253 outside=summ
@@ -4203,7 +4203,7 @@ mand_ell_set       { ; Copyright (c) Paul W. Carlson, 1998
 
 mellipse1          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mand_ellipse passes=t
+  formulaname=Mand_Ellipse passes=t
   corners=-1.994336436926/-1.994329835296/4.401086666311e-006/-\
   4.401086667012e-006/-1.994329835296/-4.401086667012e-006
   params=16/256/2/125
@@ -4213,7 +4213,7 @@ mellipse1          { ; Copyright (c) Paul W. Carlson, 1998
 
 mellipse2          { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mand_ellipse passes=t
+  formulaname=Mand_Ellipse passes=t
   corners=-1.994336436926/-1.994329835296/4.401086666311e-006/-\
   4.401086667012e-006/-1.994329835296/-4.401086667012e-006
   params=5/256/2/125
@@ -4251,7 +4251,7 @@ mellipse2          { ; Copyright (c) Paul W. Carlson, 1998
 
 julellipse1        { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=julia_ellipse passes=t
+  formulaname=Julia_Ellipse passes=t
   corners=-1.856/1.856/-1.392/1.392
   params=0.3571035917848349/0.09715187177062035/16/256/8/30
   float=y maxiter=500 inside=253 outside=summ
@@ -4655,7 +4655,7 @@ jo_man10           { ;   0:16:04.27
 
 bubble_bath        { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=series_balls_mset passes=b
+  formulaname=Series_Balls_Mset passes=b
   center-mag=-2.12991845359014200/+0.22725007089613850/391\
   7528/1/54.998 params=0.07/0
   float=y maxiter=3000 fillcolor=10 inside=9 outside=summ
@@ -4671,7 +4671,7 @@ sun-glasses        { ; Copyright (c) David Shanholtzer, 1998
                      ; From frm and par by Paul W. Carlson
                      ; color map: dav47
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=celtic_julia passes=1
+  formulaname=Celtic_Julia passes=1
   center-mag=-0.265885/0.265971/13.33333/1/135
   params=0.702895/0.382894/0.08500000000000001/10/2/125 float=y
   maxiter=252 inside=253 outside=summ
@@ -4824,7 +4824,7 @@ Baseball_Pk_Spiral { ; (c) by Bob Margolis, 1998
 
 Meow               { ; (c) by Bob Margolis, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=gallet-4-02 function=sin/conj passes=1
+  formulaname=Gallet-4-02 function=sin/conj passes=1
   center-mag=0.67771/0.987921/0.2474495/1.3333/-5 params=2/0/3/-1
   float=y maxiter=255 potential=256/256/0 viewwindows=1/1/yes/0/0
   colors=0005`56`67b77b7<5>FiFGkGHlHJnJLoL<4>SwSTxTTxT<3>NrNMpMLoLJnJ<2>Fi\
@@ -4846,7 +4846,7 @@ Fractonian_Gems    { ; (c) by Bob Margolis, 1998
 
 Laser_Beams        { ; (c) by Bob Margolis, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=gallet-4-02 function=cotan/floor passes=1
+  formulaname=Gallet-4-02 function=cotan/floor passes=1
   center-mag=1.22945/0.955333/1.102445/1.3333 params=0.5/0/5/0 float=y
   maxiter=255 logmap=17 potential=256/128/0 viewwindows=1/1/yes/0/0
   colors=000876<3>000<31>www<31>000<2>544765986BA7DB9<24>zrc<28>6544432220\
@@ -5189,7 +5189,7 @@ Goldmine_2         { ; Rui Parracho
 ;Subject: (fractint) SpiderM par
 
 goblin              {
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderm
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=spiderM
   function=cosxx/recip center-mag=-0.350736/0.00319047/10.17849/1/-90
   params=1.8/0/2/0 float=y potential=255/500/0
   colors=wvy<10>npqmopmopmop<8>fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU\
@@ -5244,7 +5244,7 @@ jcamp02            { ; jon camp 1998
                      ; chaotic n-space network
                      ; www.valpo.edu/home/student/jcamp/index.html
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=spiderm1 function=sinh/sqr
+  formulaname=spiderM1 function=sinh/sqr
   center-mag=-0.0699929/6.97075e-005/4.171614/1/-90
   params=2.35/0.1/0.9/0 float=y maxiter=1024 inside=0 outside=real
   colors=000000000K55<10>dAA<8>ww0<8>dAA<13>K55000000000F73<11>zUF<6>zyn<7\

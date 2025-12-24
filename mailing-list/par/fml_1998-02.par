@@ -10,7 +10,7 @@
 umbilical_1        { ; 2-1-98 kathy roth
                      ; frm by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia center-mag=-1.0826/1.00949/2.117858
+  formulaname=3D_Balls_Julia center-mag=-1.0826/1.00949/2.117858
   params=-0.1/0.345/0.35/2/2/125 float=y maxiter=256 inside=0
   outside=summ
   colors=000JNF<2>caEkfDrkDzqCzmC<8>v8A<5>x39\
@@ -24,7 +24,7 @@ umbilical_1        { ; 2-1-98 kathy roth
 I_Come_in_Peace    { ; 2-1-98 kathy roth
                      ; frm by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia center-mag=-0.814285/0.820662/3.121475
+  formulaname=3D_Balls_Julia center-mag=-0.814285/0.820662/3.121475
   params=-0.1/0.3/0.35/1/2/125 float=y maxiter=256 inside=0
   outside=summ
   colors=0000xU0zW<7>0JJ<14>0xx0zz2tt<6>\
@@ -38,7 +38,7 @@ My_right_eye_hurts  {; (maybe it's been too long a day)
                      ; 2-1-98 kathy roth
                      ; frm by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia center-mag=-1.17481/0.0798235/10.20143
+  formulaname=3D_Balls_Julia center-mag=-1.17481/0.0798235/10.20143
   params=-1/0.3/10/0.1/2/100 float=y maxiter=256 inside=0 outside=summ
   colors=000ksx<21>LguKguJfuHetHdrHcq<4>F`kE\
   _iEZhEYfDYe<8>BUVBUUBTTASR<38>\
@@ -51,7 +51,7 @@ My_right_eye_hurts  {; (maybe it's been too long a day)
 where_they_live    { ; 2-1-98 kathy roth
                      ; frm by Paul Carlson
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3d_balls_julia center-mag=-1.51894/2.73345/0.1613151
+  formulaname=3D_Balls_Julia center-mag=-1.51894/2.73345/0.1613151
   params=-0.1/0.3/0.35/1/2/125 float=y maxiter=256 inside=0
   outside=summ
   colors=000ksx<21>LguKguJfuHetHdrHcq\
@@ -381,7 +381,7 @@ explos             { ; by Jay Hill, 1998
 
 explos2            { ; by Jay Hill, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=explode_m_2j center-mag=-7.45891/-0.344906/0.1655629
+  formulaname=Explode_M_2j center-mag=-7.45891/-0.344906/0.1655629
   float=y maxiter=2000 inside=bof61 periodicity=0 colors=@default.map
   }
 
@@ -393,7 +393,7 @@ explos2            { ; by Jay Hill, 1998
 explos3            { ; by Jay Hill 1998
                      ; after Paul Derbyshire
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=explode_m_2Ja center-mag=-2.60858/5.77006/2.143265
+  formulaname=Explode_M_2Ja center-mag=-2.60858/5.77006/2.143265
   float=y maxiter=2000 inside=bof61 decomp=256 periodicity=0
   colors=000000<28>uISwJTwJT<45>wv1ww0vw1<45\
   >2du0cw0cw<62>mAwmAwlAv<58>111\
@@ -662,14 +662,14 @@ m1                 { ; nice Mandelb. closeup
  
 m1ab               { ; zoom in zoom in nice Mandelb. closeup 
                      ; (oh it's broken)
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=rota4
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Rota4
   center-mag=-0.81133068888380910/+0.20145824971278310/1.360751e+009
   params=0/0/0/0/10000/2 float=y maxiter=2000 inside=0
   colors=@blues.map
   }
  
 m2                 { ;  nice Mandelb. closeup
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=rota4
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Rota4
   center-mag=+0.27403929907584590/+0.02292343990918183/1772.146
   params=0/0/1000/0/10/2 float=y maxiter=500 inside=0
 colors=00000c<37>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
@@ -677,7 +677,7 @@ colors=00000c<37>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
   }
  
 m2b                { ; zoom into nice Mandelb. closeup
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=rota4
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Rota4
   center-mag=+0.27432264885553860/+0.02280203198747895/47544.27/1/-37.5
   params=0/0/1000/0/10/2 float=y maxiter=500 inside=0
 colors=00000c<37>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz\
@@ -702,7 +702,7 @@ hill001a           {
 
 blimp_0_bowl       { ; wizzle 1998 - blimp's eye view of the
                      ; fractoball field
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=rota4
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Rota4
   center-mag=+0.09595264355285782/-1.06428612251977300/12568.32/1/-35
   params=0/0/1000/0/2/2 float=y maxiter=1000 inside=0 outside=atan
 colors=dPR<<33>ylqzmrzmq<<52>K00F00A00<<54>ylxzmzzmz<<68>A00K00<<16>SABTBCUCD\
@@ -717,7 +717,7 @@ colors=dPR<<33>ylqzmrzmq<<52>K00F00A00<<54>ylxzmzzmz<<68>A00K00<<16>SABTBCUCD\
 subway             { ; wizzle 1998 from a damien jones formula
                      ; burgold2.map
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-nova-spi-dec-i center-mag=-1.26432/0.0111082/4.98992
+  formulaname=dmj-Nova-Spi-Dec-I center-mag=-1.26432/0.0111082/4.98992
   params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
   periodicity=0
   colors=000W0E<16>F07F07E07E07D16<10>844753863<33>ukTwmUwmU<45>G66F55D55<\
@@ -728,7 +728,7 @@ subway             { ; wizzle 1998 from a damien jones formula
 burgundy_dreams    { ; wizzle 1998 from a damien jones formula
                      ; burgold3.map
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-nova-spi-dec-i
+  formulaname=dmj-Nova-Spi-Dec-I
   center-mag=-1.35886111398751000/-0.00081229354771754/54.27602/1/90
   params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
   periodicity=0
@@ -977,7 +977,7 @@ gj19               { ; "Reflex" - (c) Mark "Bud" Christenson 2/13/98
 L3DT_01            { ; image for L3DT_01_3d    LStC [use 1024x768] t=01m46s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
-  reset=1930 type=formula formulafile=frac_ml.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=frac_ml.frm formulaname=Lesfrm13
   function=sqrt/log passes=1
   center-mag=0.933602/0.439651/0.4265727/1/35 params=-4/1/-3/1 float=y
   maxiter=1000 inside=zmag outside=atan savename=l3dt_01.gif
@@ -1000,7 +1000,7 @@ L3DT_14            { ; image for L3DT_14_3d    LStC [use 1024x768] t=01m20s
                      ; Les St Clair 101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
   reset=1930 type=formula formulafile=frac_ml.frm 
-  formulaname=bj-lesfrm13-002 function=conj/sqr/cosh/log
+  formulaname=BJ-Lesfrm13-002 function=conj/sqr/cosh/log
   center-mag=0.59042/0.40678/1.173709/1/17.5 params=4/4.9/1/0.9
   float=y potential=255/200/0 savename=l3dt_14.gif
   colors=0FK0GE<36>2WN2WN1XO<38>D94D83D72E61F61G62H63000I64<20>d1Me1Ng0Oi0\
@@ -1526,7 +1526,7 @@ petlsm3           { ; Copyright (c) Paul W. Carlson, 1998
  
 petlsm4            { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=petals_mset passes=t
+  formulaname=Petals_Mset passes=t
   center-mag=-0.74667862931571720/+0.14516987860055840/9.9995\
   6e+009/1/105.999 params=0.18/0/0.05/0/2/125
   float=y maxiter=3000 inside=253 outside=summ
@@ -1599,7 +1599,7 @@ pwc_ser3           { ; Carlson Series Demo 3
 
 n2smset1           {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt2_stalks_mset passes=1
+  formulaname=Newt2_Stalks_Mset passes=1
   center-mag=+0.53134409219500000/+0.84715435134499990/4508.94\
   1/1/122 params=0.1/0/8/30/10000/100
   float=y maxiter=2000 inside=255 outside=summ
@@ -1686,7 +1686,7 @@ gj1b3b             { ; "Peppermint Styx" - (c) Bud 2/21/98
 
 n2smset2              { ; Copyright (c) Paul Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt2_stalks_mset passes=1
+  formulaname=Newt2_Stalks_Mset passes=1
   center-mag=+0.53130726096625680/+0.84717919854159360/4.00108\
   5e+009/1/121.999
   params=0.1/0/8/30/10000/100
@@ -1799,7 +1799,7 @@ star2              { ; 2-2-98 kathy roth
 
 n1rings1       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_rings_mset passes=t
+  formulaname=Newt1_Rings_Mset passes=t
   center-mag=+0.99883132158904500/+0.0483304822356094\
   3/11411.46/1/-2.499
   params=0.1/0/8/30/1e+020/1000
@@ -1810,7 +1810,7 @@ n1rings1       { ; Copyright (c) Paul W. Carlson, 1998
  
 n1rings2       { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt1_rings_mset passes=t
+  formulaname=Newt1_Rings_Mset passes=t
   center-mag=+1046.85283978193200000/+0.00000000000000\
   000/75.29715/1/90
   params=0.1/0/8/30/1e+020/1000

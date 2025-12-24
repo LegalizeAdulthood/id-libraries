@@ -110,7 +110,7 @@ nuke2_view         { ; Jay Hill
 
 floatno            { ; (c) 1997 Jacco.Burger@BU.TUDelft.nl
   reset=1730 type=formula formulafile=frac_ml.frm
-  formulaname=richard1 passes=1 float=n
+  formulaname=Richard1 passes=1 float=n
   corners=-0.81683618/-0.55938143/0.797761261/0.68775022/-0.67134571/0.603\
   740633 maxiter=900 inside=0 logmap=yes potential=255/350/500
   colors=222C6E<44>KRILSJMTI<14>FCBEAAEBA<12>MRLNSMOUNPVORWQ<12>lmknomnnl<\
@@ -120,7 +120,7 @@ floatno            { ; (c) 1997 Jacco.Burger@BU.TUDelft.nl
 
 floatyes           { ; (c) 1997 Jacco.Burger@BU.TUDelft.nl
   reset=1730 type=formula formulafile=frac_ml.frm
-  formulaname=richard1 passes=1
+  formulaname=Richard1 passes=1
   corners=-0.81683842/-0.55938598/0.797753176/0.687746147/-0.67134795/0.60\
   3736559 float=y maxiter=900 inside=0 logmap=yes
   potential=255/350/500
@@ -250,7 +250,7 @@ Intersection       { ; Strands intersect in a superstring reactor.
 
 Tantalon_Beam      { ; Detail of the reactor core.
   reset=1930 type=formula formulafile=frac_ml.frm
-  formulaname=precognam
+  formulaname=PrecognaM
   center-mag=-0.43379384907332540/+0.00000000000000002/11335.32
   float=y maxiter=2000 inside=0 logmap=106
   colors=000zez<76>1BV0AU0AU0AU<46>0UA0VA1WB<42>JxTJyTKzULzV<29>xzxzzzzzz<\
@@ -259,7 +259,7 @@ Tantalon_Beam      { ; Detail of the reactor core.
 
 Precogna_Mandelbrt { ; The M-set of the Precogna formula.
   reset=1930 type=formula formulafile=frac_ml.frm
-  formulaname=precognam center-mag=-9.99201e-016/7.77156e-016/1.449275
+  formulaname=PrecognaM center-mag=-9.99201e-016/7.77156e-016/1.449275
   float=y maxiter=2000 inside=0 logmap=yes
   colors=000ezz<76>B1VA0UA0UA0U<46>U0AV0AW1B<42>xJTyJTzKUzLV<29>zxxzzzzzz<\
   46>ezz
@@ -486,7 +486,7 @@ Vivid_Explosion    { ; Very vivid.
 
 Twistor-Drive      { ; This looks very weird. Periodicity checking screws it up
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/6.10623e-016/1.041667 params=-0.4079/0.0026
   float=y maxiter=4096 inside=0 logmap=yes periodicity=0
   colors=000<12>830840940A50A50<91>1xJ1xJ1yJ0zK0zK0zL<28>0zb0zc0zc1zc<60>y\
@@ -495,7 +495,7 @@ Twistor-Drive      { ; This looks very weird. Periodicity checking screws it up
 
 Pinched_Carrot     { ; Strange.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/6.10623e-016/1.041667 params=-0.40518/0
   float=y maxiter=4096 inside=0 logmap=yes periodicity=0
   colors=000yzz<11>rwzrvzqvzpuzpuz<91>y2gy2gy1gz0fz0fz0e<28>z0Oz0Nz0Ny0N<6\
@@ -504,7 +504,7 @@ Pinched_Carrot     { ; Strange.
 
 Glowing_Asteroids  { ; Aftermath of a space collision. From a minibrot.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/6.10623e-016/1.041667
   params=-0.45255/0.00338 float=y maxiter=4096 inside=0 logmap=yes
   periodicity=0
@@ -514,7 +514,7 @@ Glowing_Asteroids  { ; Aftermath of a space collision. From a minibrot.
 
 Deimos             { ; Amid the asteroids.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t center-mag=0/0/20.83333
+  formulaname=PrecognaJ passes=t center-mag=0/0/20.83333
   params=-0.45255/0.00338 float=y maxiter=4096 inside=0 logmap=yes
   colors=000<12>30840840950A50A<91>xJ1xJ1yJ1zK0zK0zL0<28>zb0zc0zc0zc1<57>z\
   xvzxwzyxyzyzzz<46>A00
@@ -522,7 +522,7 @@ Deimos             { ; Amid the asteroids.
 
 Phobos             { ; Amid the asteroids, slight param tweak.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-9.57567e-016/6.10623e-016/10.41667
   params=-0.446477/0.002736 float=y maxiter=4096 inside=0 logmap=28
   colors=000<12>30840840950A50A<94>z0Kz1Kz2J<28>za1zc0zc0<58>zxvzxwzyxyzyz\
@@ -531,7 +531,7 @@ Phobos             { ; Amid the asteroids, slight param tweak.
 
 Spiral_Night       { ; A hole in the space time continuum.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t center-mag=0/0/0.6666667
+  formulaname=PrecognaJ passes=t center-mag=0/0/0.6666667
   params=-0.40746/0.00143 float=y maxiter=16384 inside=0 logmap=20
   periodicity=0
   colors=000005<11>30840940950A50A<78>z0Kz1Kz2J<28>za1zc0zc1<45>zyxzzzzyy<\
@@ -540,7 +540,7 @@ Spiral_Night       { ; A hole in the space time continuum.
 
 Spiral_Spiral_S    { ; Very interesting and unusual.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=-8.88178e-016/5.55112e-016/1.041667
+  formulaname=PrecognaJ center-mag=-8.88178e-016/5.55112e-016/1.041667
   params=-0.411579/0.013829 float=y maxiter=4096 inside=0 logmap=yes
   periodicity=0
   colors=000<10>702703803804904<96>K0zK1zJ2z<28>1az0cz0cz<61>yyzzzzyyy<45>\
@@ -550,7 +550,7 @@ Spiral_Spiral_S    { ; Very interesting and unusual.
 Intricacy          { ; Very complex patterns of spirals!
                      ; Very slow...
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-8.88178e-016/5.55112e-016/1.041667
   params=-0.4115331/0.0138375 float=y maxiter=32767 inside=0
   logmap=yes periodicity=0
@@ -560,7 +560,7 @@ Intricacy          { ; Very complex patterns of spirals!
 
 Triplicacy         { ; Three-fold forms
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/5.55112e-016/1.041667
   params=-0.139238/0.40686 float=y maxiter=4096 inside=0 logmap=yes
   colors=000<8>026026027037038048<97>0zK1zK2zJ<28>az1cz0cz0<61>yzyzzzyyy<4\
@@ -569,7 +569,7 @@ Triplicacy         { ; Three-fold forms
 
 Alien_Starship     { ; Very odd.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/5.55112e-016/1.041667 params=-0.438768/0
   float=y maxiter=4096 inside=0 logmap=yes
   colors=000<16>A00B10B10C20C31<88>xxJyyJzzKzzL<29>zzxzzzyyz<45>C2LA0KA0K<\
@@ -578,7 +578,7 @@ Alien_Starship     { ; Very odd.
 
 Starship_Mark_II   { ; A revised model.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/5.55112e-016/1.041667 params=-0.436084/0
   float=y maxiter=4096 inside=0 logmap=yes
   colors=000<16>00A01B01B02C13C<88>JxxJyyKzzLzz<29>xzzzzzzyy<45>L2CK0AK0A<\
@@ -587,7 +587,7 @@ Starship_Mark_II   { ; A revised model.
 
 Mark_II_Reactor    { ; The Mark II craft has a powerful reactor core.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-9.57567e-016/6.10623e-016/7.659316 params=-0.436084/0
   float=y maxiter=4096 inside=0 logmap=yes
   colors=000<16>00A01B01B02C13C<88>JxxJyyKzzLzz<29>xzzzzzzyy<45>L2CK0AK0A<\
@@ -596,7 +596,7 @@ Mark_II_Reactor    { ; The Mark II craft has a powerful reactor core.
 
 Fluxion_Chamber    { ; In the Mark II's reactor core.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-9.81853e-016/6.17562e-016/44.53091 params=-0.436084/0
   float=y maxiter=4096 inside=0 logmap=92
   colors=000<16>00A10B10B20C31C<88>xJxyJyzKzzLz<29>zxzzzzzyy<45>LC2KA0KA0<\
@@ -605,7 +605,7 @@ Fluxion_Chamber    { ; In the Mark II's reactor core.
 
 Starship_Mark_III  { ; Another revised model.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/5.55112e-016/1.041667 params=-0.433787/0
   float=y maxiter=4096 inside=0 logmap=yes
   colors=000<16>0A01B01B02C03C1<87>wwJxxJyyJzzKzzL<29>zzxzzzzyy<43>N5EM3DL\
@@ -614,7 +614,7 @@ Starship_Mark_III  { ; Another revised model.
 
 Mark_III_Reactor   { ; Different...
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-9.71445e-016/6.10623e-016/10.41667 params=-0.433787/0
   float=y maxiter=4096 inside=0 logmap=yes
   colors=000<16>0A01B01B02C03C1<87>wwJxxJyyJzzKzzL<29>zzxzzzzyy<43>N5EM3DL\
@@ -623,7 +623,7 @@ Mark_III_Reactor   { ; Different...
 
 Luminon_Chamber    { ; The center of the Mark III reactor uses fractal geometry
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-0.00000000000000098/+0.00000000000000062/60.56203
   params=-0.433787/0 float=y maxiter=4096 inside=0 logmap=103
   colors=000<16>A00B01B01C02C13<87>wJwxJxyJyzKzzLz<29>zxzzzzyyz<43>5EN3DM2\
@@ -632,7 +632,7 @@ Luminon_Chamber    { ; The center of the Mark III reactor uses fractal geometry
 
 Crystal_Lumps      { ; A blue corona surrounds crystals that formed in the core
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=-1.00614e-015/6.38378e-016/32.96415
+  formulaname=PrecognaJ center-mag=-1.00614e-015/6.38378e-016/32.96415
   params=-0.4339/0 float=y maxiter=4096 inside=0 logmap=69
   colors=000<15>A00A00B11B22<75>yyyzzzyyy<29>22C00A00B<37>JJlKKmKMn<6>Kcz<\
   78>zzz
@@ -640,7 +640,7 @@ Crystal_Lumps      { ; A blue corona surrounds crystals that formed in the core
 
 Crystal_Resonance  { ; One crystal in emerald green, looks like a Tholian ship.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-0.01954057947918072/+0.00000000000000064/135.099
   params=-0.4339/0 float=y maxiter=16384 inside=0 logmap=105
   colors=000<15>A0AA0AB1BB2B<75>yyyzzzyyy<29>2C20A00B0<37>JlJKmKKnM<5>Kx`K\
@@ -649,7 +649,7 @@ Crystal_Resonance  { ; One crystal in emerald green, looks like a Tholian ship.
 
 Golden_Spiral      { ; A beautiful delicate spiral of gold wrapped in mystery.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj
+  formulaname=PrecognaJ
   center-mag=+0.01123836285323686/-0.00283608552263435/659.283
   params=-0.43382/0 float=y maxiter=4096 inside=0 logmap=299
   periodicity=0
@@ -658,7 +658,7 @@ Golden_Spiral      { ; A beautiful delicate spiral of gold wrapped in mystery.
 
 Deep_Core          { ; Deep in the core of the Darkness is the Light
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/6.10623e-016/1.041667
   params=-0.136275/0.397373 float=y maxiter=4096 inside=0 logmap=yes
   colors=000A00<44>18909A09A09B09B<91>8Sw9Tx9Su<17>124000110<57>vv0xx1ww1<\
@@ -667,7 +667,7 @@ Deep_Core          { ; Deep in the core of the Darkness is the Light
 
 Complex_Stuff      { ;  
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-8.88178e-016/6.10623e-016/1.041667
   params=-0.411435/0.013704 float=y maxiter=4096 inside=0 logmap=yes
   periodicity=0
@@ -677,7 +677,7 @@ Complex_Stuff      { ;
 
 Warm_Cool_Spirals  { ; Very odd
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=-8.88178e-016/6.10623e-016/1.041667
+  formulaname=PrecognaJ center-mag=-8.88178e-016/6.10623e-016/1.041667
   params=-0.410899/0.014262 float=y maxiter=4096 inside=0 logmap=yes
   periodicity=0
   colors=000zzz<29>z33z00z00<108>L09L09K0AJ0A<13>201000000<59>0av0bw1cx2cx\
@@ -686,7 +686,7 @@ Warm_Cool_Spirals  { ; Very odd
 
 Swirl_Tunnels      { ; Strange
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-8.88178e-016/6.10623e-016/1.041667
   params=-0.157247/0.385551 float=y maxiter=4096 inside=0 logmap=yes
   periodicity=0
@@ -696,7 +696,7 @@ Swirl_Tunnels      { ; Strange
 
 Hypertronic_Pulse  { ; This formula produces a lot of funky alien power cores..
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=t
+  formulaname=PrecognaJ passes=t
   center-mag=-9.57567e-016/6.10623e-016/16.27604
   params=-0.157247/0.385551 float=y maxiter=4096 inside=0 logmap=104
   periodicity=0
@@ -705,7 +705,7 @@ Hypertronic_Pulse  { ; This formula produces a lot of funky alien power cores..
 
 Galaxies           { ; Galaxies in the night
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=0/0/0.6666667
+  formulaname=PrecognaJ center-mag=0/0/0.6666667
   params=-0.210613/0.391426 float=y maxiter=4096 inside=0 logmap=3
   periodicity=0
   colors=000<14>90IA0KA0K<140>TlyTlyUmzVmz<15>xynzzmzkp<2>z0z<72>A00
@@ -713,7 +713,7 @@ Galaxies           { ; Galaxies in the night
 
 Tango              { ; Spiraling things do an intimate tango.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj
+  formulaname=PrecognaJ
   center-mag=-6.66134e-016/4.44089e-016/0.9861933
   params=-0.192851/0.394992 float=y maxiter=4096 inside=0 logmap=3
   periodicity=0
@@ -722,7 +722,7 @@ Tango              { ; Spiraling things do an intimate tango.
 
 Chitoid            { ; This complex chitinous creature inhabits Alpha Centauri.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-8.88178e-016/0.0677411/1.152095
   params=-0.189172/0.390449 float=y maxiter=4096 inside=0 logmap=3
   periodicity=0
@@ -731,7 +731,7 @@ Chitoid            { ; This complex chitinous creature inhabits Alpha Centauri.
 
 Chitoid_Zoom       { ; This complex chitinous creature inhabits Alpha Centauri.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-1.05471e-015/0.0278755/4.114625
   params=-0.189172/0.390449 float=y maxiter=4096 inside=0 logmap=3
   periodicity=0
@@ -740,7 +740,7 @@ Chitoid_Zoom       { ; This complex chitinous creature inhabits Alpha Centauri.
 
 Green_Goo          { ; Strange stuff
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=-8.88178e-016/0.0677411/1.152095
   params=-0.157234/0.385567 float=y maxiter=4096 inside=0 logmap=3
   colors=000zyy<11>zrjzrizqhzpfzpfzpf<139>EY1EY1DX0DW0<15>12C00D00D<75>000
@@ -748,7 +748,7 @@ Green_Goo          { ; Strange stuff
 
 Purple_Haze        { ; Strange stuff
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=7.77156e-016/0.0083288/0.8895923 params=0.209132/0.011115
   float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<11>rjzrizqhzpfzpfzpfz<139>Y1EY1EX0DW0D<15>2C10D00D0<75>000
@@ -756,7 +756,7 @@ Purple_Haze        { ; Strange stuff
 
 Fuzzy_Blue         { ; Strange stuff
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj passes=2
+  formulaname=PrecognaJ passes=2
   center-mag=7.77156e-016/0.0083288/0.8895923 params=0.209735/0.010512
   float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<13>hhzffzffz<139>Z2FZ2FY1EX1E<29>21B00A00A<62>000
@@ -764,14 +764,14 @@ Fuzzy_Blue         { ; Strange stuff
 
 Frondy_Feathers    { ; Attractive fluffy spirally stuff
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=7.77156e-016/0.0083288/0.8895923
+  formulaname=PrecognaJ center-mag=7.77156e-016/0.0083288/0.8895923
   params=0.210294/0.009349 float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<13>hhzffzffz<139>Z2FZ2FY1EX1E<29>21B00A00A<62>000
   }
 
 Blue_Green_Algae   { ; Interesting critters in pond water.
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=7.77156e-016/0.0083288/0.8895923
+  formulaname=PrecognaJ center-mag=7.77156e-016/0.0083288/0.8895923
   params=-0.203006/0.488152 float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<11>jykiyihyhfzffzf<140>2FZ1EY1EY1EX1DW<27>11B00A00A00A<61>\
   000
@@ -779,7 +779,7 @@ Blue_Green_Algae   { ; Interesting critters in pond water.
 
 Pastel_Spirals     { ;  
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj center-mag=-1.11022e-015/6.66134e-016/1.131455
+  formulaname=PrecognaJ center-mag=-1.11022e-015/6.66134e-016/1.131455
   params=-0.202296/0.488633 float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<11>yykyyiyyhzzfzzf<123>L7`L7`K6_K6Z<13>F2ZE1YE1YE1XD1W<12>\
   71M71M82N<77>zzz
@@ -787,7 +787,7 @@ Pastel_Spirals     { ;
 
 Pastel_Double      { ; Double spiral
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=precognaj
+  formulaname=PrecognaJ
   center-mag=-1.16573e-015/-0.00369026/17.67899/1/97.5
   params=-0.202296/0.488633 float=y maxiter=4096 inside=0 logmap=3
   colors=000yyz<11>yykyyiyyhzzfzzf<123>L7`L7`K6_K6Z<13>F2ZE1YE1YE1XD1W<12>\
@@ -804,7 +804,7 @@ CRYSTLJ            { ; .                                    t=  0:07:38.57
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=crystal_j passes=1
+  formulaname=crystal_J passes=1
   center-mag=-4.46741/7.4332/0.212585/1/-75
   params=10000/0/-0.174/5.024 float=y decomp=256
   colors=_`d<51>wwzwwzvvy<123>F00038<75>_`d cyclerange=0/255
@@ -815,7 +815,7 @@ DRAGONJ            { ; .                                    t=  0:10:31.42
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dragon_j passes=1
+  formulaname=dragon_J passes=1
   center-mag=0.367001/4.53573/0.1292047/1.0973 params=10000/0/0.419/4
   float=y inside=0 decomp=256
   colors=L0G<4>M0LN0NN0N<2>P0PQ0QR2P<19>zp0yn0wm0<9>kX0iW0hU0fS0eR0<3>`L0Z\
@@ -828,7 +828,7 @@ FERNJ1             { ; .                                    t=  0:21:36.09
                      ; Copyright Sylvie Gallet, Oct 11, 1997
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fern_j
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fern_J
   passes=1 center-mag=-0.0871612/6.21743/0.2090168/2.26/-33.558/-0.849
   params=10000/0/0/7 float=y inside=0 decomp=256
   colors=rZ0<11>cL0aJ0`J0<13>ID2GC3GC3<13>7CG6DH6DH6DI<17>BJUCKUCKVDLVDLW<\
@@ -841,7 +841,7 @@ FERNJ2             { ; .                                    t=  0:18:43.49
                      ; Copyright Sylvie Gallet, Oct 11, 1997
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fern_j
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=fern_J
   passes=1 center-mag=0.265398/5.17793/0.1841772/1.219/-3.304/-3.084
   params=10000/0/0/8 float=y inside=0 decomp=256
   colors=fmb<12>psipsiqsjqtjrtk<11>yyqyyqyyp<11>yxhyxgywfyweyvdyvd<12>xsVw\
@@ -854,7 +854,7 @@ SPIRAL             { ; .                                    t=  0:21:53.49
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=spiral_j passes=1 center-mag=0/5/0.1666667
+  formulaname=spiral_J passes=1 center-mag=0/5/0.1666667
   params=100000/0/0/5 float=y maxiter=1000 inside=0
   colors=zQ5<5>zE6<5>dH8`I9ZH9<3>SE7QD6QD6<18>fJMgJNhLP<4>nYZp_`qbbseetjh<\
   2>zzsxvmurgurg<4>xnI<2>bmTVmXNm_Flc8lg0kk<11>FhOGhMHhKJgHKgFMfC<13>`L9aJ\
@@ -868,7 +868,7 @@ SWIRL5J            { ; .                                    t=  0:23:44.66
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=swirl5_j passes=1 center-mag=0/5/0.1666667
+  formulaname=swirl5_J passes=1 center-mag=0/5/0.1666667
   params=100000/0/-0.1/4.927 float=y maxiter=1000 inside=0
   colors=JbQ<3>KfNLhMOiL<11>wt1<12>DVF<14>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi\
   3<3>ylEymHymI<2>yoPypSyqVyqYyr`<8>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<\
@@ -881,7 +881,7 @@ TRIANGJ            { ; .                                    t=  0:07:27.76
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=triangle_j passes=1
+  formulaname=triangle_J passes=1
   center-mag=0.522659/1.48188/7.660208/0.8423/-44.353/-1.353
   params=10000/0/1/1 float=y maxiter=100 inside=0 outside=summ
   invert=0.1/0.7/1.3
@@ -896,7 +896,7 @@ ZIGZAGJ            { ; .                                    t=  0:11:41.41
                      ; <sylvie gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=zigzag2_j passes=1
+  formulaname=zigzag2_J passes=1
   center-mag=1.08048/3.51532/0.08266667/-1/212.5 params=100000/0/1/1
   float=y maxiter=100 inside=0 decomp=256
   colors=_21Z00<6>M00K00K01<8>L0BL0CL0C<12>P0PQ0QR2P<6>cKGdMFfOEgRDiTC<8>x\
@@ -916,7 +916,7 @@ Sunglasses              {
 }
 
 Sunglasses-r       { ; rotate 90 degrees
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=sunglasses
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Sunglasses
   center-mag=-0.5/6e-008/0.6666667/1/-90
 }
 
@@ -1000,7 +1000,7 @@ blue_tim           {
 
 tim's spiral       { ; nice try
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=Tim's_fract passes=2
+  formulaname=tim's_fract passes=2
   center-mag=+0.57315291829606640/+0.06912368999684013/506315.5
   float=y decomp=256
 colors=000z00<53>zY0zZ0z_0z`0z`0<34>zy0zz0yz0xz0<43>2z00z00y1<44>02x00z0\
@@ -1059,7 +1059,7 @@ test               {
 Novana-Flower      { ; Jay Hill
        ; after gedeon@InfoAve.Net
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=novena
+  formulaname=Novena
   center-mag=-0.039039/0.506089/3.245722/1/180
   params=0.51/0/1e-007/0
   maxiter=1023 fillcolor=222 potential=255/255/0
@@ -1077,7 +1077,7 @@ Novana-Flower      { ; Jay Hill
 
 tim's_fract1       {;  0:02:01.38
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=Tim's_fract passes=1
+  formulaname=tim's_fract passes=1
   center-mag=-0.75721338320859590/+0.44677702045816680\
   /175.1683/1/72.499/0\
   .001 float=y maxiter=1023 potential=255/999/0

@@ -11,7 +11,7 @@ artic_borielus     { ;   0:01:42.71
                      ; Created Jan 02, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
   reset=2000 type=formula formulafile=frac_ml.frm
-  formulaname=regula_falsi2 passes=1
+  formulaname=Regula_falsi2 passes=1
   center-mag=2.34742/3.75783/0.1866667
   params=0.6360972930082095/-0.9834589678640095/0.3860896633808405/-0.4948\
   576311532945 float=y maxiter=1000 periodicity=0
@@ -252,7 +252,7 @@ figura_06          { ;   0:00:10.43
 ;Date: 11 Jan 2000 02:27:49 EST
 
 pkpeaks.gif        { ; image(c)2000 Jim Weaver
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-36
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-36
   function=cotan/cosxx/cosh/cosxx passes=t
   center-mag=1.85462/1.9603/17.86519/1/105 params=0.2/0/0/0 float=y
   maxiter=25 inside=bof60 outside=atan
@@ -292,7 +292,7 @@ ok20eps9.gif       { ; image(c)2000 Jim Weaver
 
 fr_clock           { ; Martin Rodenberg moon@germanynet.de
   reset=2000 type=formula formulafile=frac_ml.frm
-  formulaname=jm_25 function=sinh/log passes=1
+  formulaname=Jm_25 function=sinh/log passes=1
   center-mag=+1.01305489025157200/-0.0034013417216\
   4564/124673.3/1.1454/52.778/9.107 params=900/300
   float=y maxiter=900000 colors=@volcano.map
@@ -537,413 +537,413 @@ FractalRainbow     {
 
 testmm1            { ; 10.7 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelm1 function=sqr corners=-2.5/1.5/-1.5/1.5
+  formulaname=GregsMandelM1 function=sqr corners=-2.5/1.5/-1.5/1.5
   params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
   }
 
 testmm2-1          { ; 11.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelm2 function=sqr/zero
+  formulaname=GregsMandelM2 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmm2-2          { ; 11.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelm2 function=zero/sqr
+  formulaname=GregsMandelM2 function=zero/sqr
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmm3-1          { ; 11.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelm3 function=sqr/zero
+  formulaname=GregsMandelM3 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmm3-2          { ; 11.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelm3 function=zero/sqr
+  formulaname=GregsMandelM3 function=zero/sqr
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testjm1            { ; 07.1 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliam1 function=sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaM1 function=sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjm2-1          { ; 07.8 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliam2 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaM2 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjm2-2          { ; 07.7 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliam2 function=zero/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaM2 function=zero/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjm3-1          { ; 07.7 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliam3 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaM3 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjm3-2          { ; 07.8 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliam3 function=zero/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaM3 function=zero/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testmp1-1          { ; 10.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp1 function=sqr corners=-2.5/1.5/-1.5/1.5
+  formulaname=GregsMandelP1 function=sqr corners=-2.5/1.5/-1.5/1.5
   params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
   }
 
 testmp1-2          { ; 10.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp1 function=ident corners=-2.5/1.5/-1.5/1.5
+  formulaname=GregsMandelP1 function=ident corners=-2.5/1.5/-1.5/1.5
   params=0/0/2/0/2/0 float=y maxiter=1023 symmetry=xaxis
   }
 
 testmp2-1          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp2 function=sqr/zero
+  formulaname=GregsMandelP2 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp2-2          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp2 function=zero/sqr
+  formulaname=GregsMandelP2 function=zero/sqr
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp2-3          { ; 10.8 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp2 function=ident/zero
+  formulaname=GregsMandelP2 function=ident/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp2-4          { ; 10.9 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp2 function=zero/ident
+  formulaname=GregsMandelP2 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp3-1          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp3 function=sqr/zero
+  formulaname=GregsMandelP3 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp3-2          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp3 function=zero/sqr
+  formulaname=GregsMandelP3 function=zero/sqr
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp3-3          { ; 10.8 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp3 function=zero/ident
+  formulaname=GregsMandelP3 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp4-1          { ; 10.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp4 function=sqr/zero
+  formulaname=GregsMandelP4 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp4-2          { ; 10.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp4 function=zero/sqr
+  formulaname=GregsMandelP4 function=zero/sqr
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp4-3          { ; 10.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp4 function=ident/zero
+  formulaname=GregsMandelP4 function=ident/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmp4-4          { ; 10.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelp4 function=zero/ident
+  formulaname=GregsMandelP4 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testjp1-1          { ; 06.9 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap1 function=sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP1 function=sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp1-2          { ; 06.8 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap1 function=ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP1 function=ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp2-1          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap2 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP2 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp2-2          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap2 function=zero/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP2 function=zero/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp2-3          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap2 function=ident/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP2 function=ident/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp2-4          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap2 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP2 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp3-1          { ; 07.6 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap3 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP3 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp3-2          { ; 07.6 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap3 function=zero/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP3 function=zero/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp3-3          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap3 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP3 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp4-1          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap4 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP4 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp4-2          { ; 07.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap4 function=zero/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP4 function=zero/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp4-3          { ; 07.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap4 function=ident/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP4 function=ident/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjp4-4          { ; 07.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliap4 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaP4 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testms1            { ; 10.6 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels1 function=ident corners=-2.5/1.5/-1.5/1.5
+  formulaname=GregsMandelS1 function=ident corners=-2.5/1.5/-1.5/1.5
   params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
   }
 
 testms2-1          { ; 11.1 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels2 function=ident/zero
+  formulaname=GregsMandelS2 function=ident/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms2-2          { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels2 function=zero/ident
+  formulaname=GregsMandelS2 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms3-1          { ; 11.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels3 function=ident/zero
+  formulaname=GregsMandelS3 function=ident/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms3-2          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels3 function=zero/ident
+  formulaname=GregsMandelS3 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms4-1          { ; 11.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels4 function=sqr/zero
+  formulaname=GregsMandelS4 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms4-2          { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels4 function=zero/ident
+  formulaname=GregsMandelS4 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms5-1          { ; 11.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels5 function=sqr/zero
+  formulaname=GregsMandelS5 function=sqr/zero
   corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testms5-2          { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels5 function=zero/ident
+  formulaname=GregsMandelS5 function=zero/ident
   corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testjs1            { ; 07.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias1 function=ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS1 function=ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs2-1          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias2 function=ident/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS2 function=ident/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs2-2          { ; 07.3 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias2 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS2 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs3-1          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias3 function=ident/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS3 function=ident/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs3-2          { ; 07.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias3 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS3 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs4-1          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias4 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS4 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs4-2          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias4 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS4 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs5-1          { ; 07.6 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias5 function=sqr/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS5 function=sqr/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjs5-2          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjulias5 function=zero/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaS5 function=zero/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testmf1-1          { ; 11.1 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelf1 function=ident/sqr
+  formulaname=GregsMandelF1 function=ident/sqr
   center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmf1-2          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelf1 function=sqr/ident
+  formulaname=GregsMandelF1 function=sqr/ident
   center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testjf1-1          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliaf1 function=ident/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaF1 function=ident/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjf1-2          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliaf1 function=sqr/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaF1 function=sqr/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testmf2-1          { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelf2 function=ident/sqr
+  formulaname=GregsMandelF2 function=ident/sqr
   center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmf2-2          { ; 10.9 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelf2 function=sqr/ident
+  formulaname=GregsMandelF2 function=sqr/ident
   center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testmf2-3          { ; 17.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandelf2 function=exp/log
+  formulaname=GregsMandelF2 function=exp/log
   center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
   symmetry=xaxis
   }
 
 testjf2-1          { ; 07.5 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliaf2 function=ident/sqr corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaF2 function=ident/sqr corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjf2-2          { ; 07.4 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliaf2 function=sqr/ident corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaF2 function=sqr/ident corners=-2/2/-1.5/1.5
   params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testjf2-3          { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliaf2 function=exp/log corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaF2 function=exp/log corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
@@ -983,31 +983,31 @@ testme5            { ; 17.0 s
 
 testje2            { ; 11.0 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliae2 function=log corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaE2 function=log corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testje3-1          { ; 11.1 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliae3 function=log/zero corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaE3 function=log/zero corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testje3-2          { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliae3 function=zero/log corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaE3 function=zero/log corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testje4            { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliae4 function=zero/log corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaE4 function=zero/log corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
 testje5            { ; 11.2 s
   reset=1920 type=formula formulafile=frac_ml.frm
-  formulaname=gregsjuliae5 function=zero/log corners=-2/2/-1.5/1.5
+  formulaname=GregsJuliaE5 function=zero/log corners=-2/2/-1.5/1.5
   params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
   }
 
@@ -1019,7 +1019,7 @@ testje5            { ; 11.2 s
 GiraSol01          { ;   0:00:11.20 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
@@ -1037,7 +1037,7 @@ GiraSol01          { ;   0:00:11.20 on PIII(500)
 GiraSol02          { ;   0:00:07.14 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
@@ -1055,7 +1055,7 @@ GiraSol02          { ;   0:00:07.14 on PIII(500)
 GiraSol03          { ;   0:00:06.64 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
@@ -1075,7 +1075,7 @@ GiraSol09          { ;   0:00:14.89 on PIII(500)
                      ; Created Jan 14, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=9.602374340037233/10.23746452223274/1.03568376720481/0.1582873012\
@@ -1089,7 +1089,7 @@ GiraSol09          { ;   0:00:14.89 on PIII(500)
 GiraSol14          { ;   0:00:06.31 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=10.16553239539781/10.97274697103794/0.3815195165868103/-0.8091799\
@@ -1104,7 +1104,7 @@ GiraSol14          { ;   0:00:06.31 on PIII(500)
 GiraSol16          { ;   0:00:06.65 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=9.058565019684439/11.41270180364391/0.9988479262672814/0.04411755\
@@ -1120,7 +1120,7 @@ GiraSol16          { ;   0:00:06.65 on PIII(500)
 GiraSol18          { ;   0:00:06.59 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.1374567/1/74.998
   params=8.336008789330728/11.13449507126072/-0.1694616534928431/0.7781487\
@@ -1153,7 +1153,7 @@ Spec_Tral           { ;   0:02:15.06 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
   reset=2000 type=formula formulafile=frac_ml.frm
-  formulaname=gregsmandels3 function=cos/cotan passes=t
+  formulaname=GregsMandelS3 function=cos/cotan passes=t
   center-mag=+2.32876830288676600/-0.33422447351784550/12042.16/1/-59.999
   params=-0.965514084292123/0.4783165990173039/-1.406323435163427/-0.38892\
   78847621082/7/0 float=y maxiter=1000 logmap=9 sound=off
@@ -1200,7 +1200,7 @@ GiraSol01c         { ;   0:00:11.37 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
@@ -1216,7 +1216,7 @@ GiraSol02c         { ;   0:00:10.93 on PIII(500)
                      ; Created Jan 14, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
@@ -1231,7 +1231,7 @@ GiraSol02c         { ;   0:00:10.93 on PIII(500)
 GiraSol03c         { ;   0:00:06.64 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
@@ -1249,7 +1249,7 @@ GiraSol03c         { ;   0:00:06.64 on PIII(500)
 GiraSol04c         { ;   0:00:06.48 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.413708914456619/9.865077669606618/0.4196371349223304/0.24654683\
@@ -1265,7 +1265,7 @@ GiraSol04c         { ;   0:00:06.48 on PIII(500)
 GiraSol05c         { ;   0:00:07.58 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=8.358806115909299/10.33103427228614/0.1211661122470779/1.03636585\
@@ -1283,7 +1283,7 @@ GiraSol05c         { ;   0:00:07.58 on PIII(500)
 GiraSol06c         { ;   0:00:06.48 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=8.851222266304514/10.8673970763268/0.4967574083681753/0.479860835\
@@ -1306,7 +1306,7 @@ GiraSol24          { ;   0:00:15.00 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.09577934/1/74.997
   params=10.57115390484329/10.59776604510636/1.198774681844539/-0.59155247\
