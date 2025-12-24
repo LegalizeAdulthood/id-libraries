@@ -299,7 +299,8 @@ def parse_file_entries(filename):
             # Check if line contains a closing brace
             if '}' in line:
                 brace_pos = line.index('}')
-                body_lines.append(original_line[:original_line.index('}')].rstrip())
+                if (brace_pos > 0):
+                    body_lines.append(original_line[:original_line.index('}')].rstrip())
                 after_brace = line[brace_pos + 1:].strip()
                 
                 if after_brace:
