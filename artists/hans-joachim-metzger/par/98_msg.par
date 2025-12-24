@@ -1,0 +1,1086 @@
+; Betr:  Happy New Year!			Bereich: Fractint Sources
+;  An:  All				Donnerstag, 1. Januar 1998 15:46:12
+; Von:  Sylvie Gallet, 101324,3444	#11121
+; 
+; Hi All,
+; 
+;  A souvenir of my New Year's Eve...  "Cotillons" means "confetti, streamers...".
+;
+;   I wish all of you an incredibly cool fractal year!
+; 
+;   Cheers,
+; 
+;         - Sylvie
+
+3db_ph01           { ; Champagne et Cotillons               t=  0:18:39.49
+                     ; Copyright Sylvie Gallet, Jan 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=3D_Balls_Phoenix passes=1
+  center-mag=-0.22619209657076480/-0.63951552370475690/1039.243/1/-32.5
+  params=0.002/0/7/32/0.5663/0 float=y maxiter=511 inside=0
+  outside=summ symmetry=none periodicity=0
+  colors=zzz000<12>LFONGQPISRKT<14>uuu000<13>8HR9JTBLU<14>qrw000<13>ARRBTT\
+  DVV<14>uxx000<13>FSGHVIJWK<14>rwr000<13>VP6YR7ZSA<14>uuu000<11>VG2YI2`J2\
+  cL3dN6<14>ztt101<12>PDFREGTFIVHK<14>zuz000<29>112 cyclerange=1/224
+  }
+
+3D_Balls_Phoenix {; Algorithm and comments shamelessly borrowed to
+                  ; Paul W. Carlson by Sylvie Gallet
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   real(p1) = a factor controlling the size of the balls
+    ;   imag(p1) = number of iterations to skip
+    ;   real(p2) = number of color ranges
+    ;   imag(p2) = number of colors in each color range
+    ;   p3 = param for phoenix
+
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    w = pixel , y = 0
+    z = 0
+    bailout = 0
+    iter = 0
+    range_num = 0
+    skip = imag(p1)
+    ;****************************************************
+    ; In the accompanying par file, mndballs.par,
+    ; we have 8 color ranges with 30 colors in each range
+    ; for a total of 240 colors. The first range starts at
+    ; color 1.  Pixels will use color 0 when |w| >= 1000.
+    ; Other values can be used here as long as the product
+    ; of num_ranges times colors_in_range is less than 255.
+    ; Color 0 is reserved for the background color and color
+    ; 255 can be used for the inside color.
+    ;****************************************************
+    num_ranges = real(p2)
+    colors_in_range = imag(p2)
+    ;****************************************************
+    ; Real(p1) controls the size of the balls.
+    ; These values will usually be in the range 0.001 to 0.1
+    ;****************************************************
+    ball_size = real(p1)
+    index_factor = (colors_in_range - 1) / ball_size:
+    ;****************************************************
+    ; The equation being iterated.  Almost any equation
+    ; that can be express in terms of a complex variable
+    ; and a complex constant will work with this method.
+    ; This example uses the standard Mandelbrot set equation.
+    ;****************************************************
+    w = w*w - .5*w + p3, X = w*w - .5*y + p3, Y = w, w = X
+    ;****************************************************
+    ; If the orbit point is within the specified distance of a circle,
+    ; set z to the index into the colormap and set the bailout flag.
+    ;****************************************************
+    IF (iter > skip)
+	   wr = real(w), wi = imag(w)
+	   d = |w - (0,0.5)|
+	   IF (d < ball_size)
+	     bailout = 1
+	     delta = ball_size - d
+	   ELSEIF ((d = |w + (0,0.5)|) < ball_size)
+	     bailout = 1
+	     delta = ball_size - d
+	   ELSEIF ((d = |w - 0.5|) < ball_size)
+	     bailout = 1
+	     delta = ball_size - d
+	   ELSEIF ((d = |w + 0.5|) < ball_size)
+	     bailout = 1
+	     delta = ball_size - d
+	   ENDIF
+    ENDIF
+    IF (bailout)
+	   z = index_factor * delta + range_num * colors_in_range + 1
+    ENDIF
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+    iter = iter + 1
+    z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+    bailout == 0  && |w| < 1000
+}
+
+; Betr:  3D_Balls_Julia			Bereich: Fractint Sources
+;  An:  All				Samstag, 3. Januar 1998 17:17:04
+; Von:  Sylvie Gallet, 101324,3444	#11154
+; 
+; Hi All,
+; 
+; Here is another formula and par from Paul Carlson:
+; 
+; -------------------------------------------------------
+; A while ago I posted the formula, "3D_Balls_Mset."  Here
+; is the corresponding Julia set formula, but using a
+; different equation, along with a PAR file that demonstrates
+; how different images can be created by fiddling with the
+; colormap.
+;
+; Enjoy!
+; Paul
+
+3D_Balls_Julia {; Copyright (c) Paul W. Carlson, 1997
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = Julia set coordinates
+    ;   real(p2) = a factor controlling the size of the balls
+    ;   imag(p2) = number of iterations to skip
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    w = pixel
+    c = p1
+    z = 0
+    bailout = 0
+    iter = 0
+    range_num = 0
+    skip = imag(p2)
+    ;****************************************************
+    ; In the accompanying par file, balloops.par,
+    ; we will set the number of ranges to 2, with
+    ; 125 colors in each range, but the colormap will
+    ; be modified to 4 ranges to give the desired effect.
+    ;****************************************************
+    num_ranges = real(p3)
+    colors_in_range = imag(p3)
+    ;****************************************************
+    ; Real(p2) controls the size of the balls.
+    ; These values will usually be in the range 0.001 to 0.1
+    ;****************************************************
+    ball_size = real(p2)
+    index_factor = (colors_in_range - 1) / ball_size:
+    ;****************************************************
+    ; The equation being iterated.  Almost any equation
+    ; that can be expressed in terms of a complex variable
+    ; and a complex constant will work with this method.
+    ; This example uses a modified Pokorny equation.
+    ;****************************************************
+    w = 1 / (w * w + c) + c
+    ;****************************************************
+    ; If the orbit point is within the specified distance of a circle,
+    ; set z to the index into the colormap and set the bailout flag.
+    ;****************************************************
+    IF (iter > skip)
+	wr = real(w), wi = imag(w)
+	d = wr * wr + (wi - .5) * (wi - .5)
+	IF (d < ball_size)
+	    bailout = 1
+	    delta = ball_size - d
+	ELSEIF ((d = wr * wr + (wi + .5) * (wi + .5)) < ball_size)
+	    bailout = 1
+	    delta = ball_size - d
+	ELSEIF ((d = (wr - .5) * (wr - .5) + wi * wi) < ball_size)
+	    bailout = 1
+	    delta = ball_size - d
+	ELSEIF ((d = (wr + .5) * (wr + .5) + wi * wi) < ball_size)
+	    bailout = 1
+	    delta = ball_size - d
+	ENDIF
+    ENDIF
+    IF (bailout)
+	z = index_factor * delta + range_num * colors_in_range + 1
+    ENDIF
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+    iter = iter + 1
+    z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+    bailout == 0  && |w| < 1000
+}
+
+balloops           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=ballsj.frm
+  formulaname=3D_Balls_Julia
+  passes=t corners=2.4395828/3.2229162/2.322917/2.910417
+  params=-1.28333/0.049167/0.2/2/2/125 float=y maxiter=500
+  inside=253 outside=summ
+  colors=000O00<44>y77z88y88<30>O0000O<44>GGzWRF<45>zqazqay\
+  p`<29>WRF00O<45>GGz000<2>000
+  }
+
+; Betr:   PokornyConesJulia		Bereich: Fractint Sources
+;  An:  All				Sonntag, 4. Januar 1998 13:01:01
+; Von:  Sylvie Gallet, 101324,3444	#11162
+; 
+; Hi All,
+; 
+;   Here is another formula from Paul Carlson.
+; 
+;         - Sylvie
+; 
+; --------------------------------------------------------
+; Here's another formula quite similar to the 3D_Phoenix_Spirals
+; formula I sent some time ago, the similarity being that both
+; formulas use a variation of the ATAN method.  I've added a
+; couple of PAR files that produce images that I like.  Don't
+; be put off by the maxiter=5000, they both execute quite fast.
+
+
+PokornyConesJulia {; Copyright (c) Paul W. Carlson, 1997
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = coordinates of the Julia set
+    ;   real(p2) = number of color ranges
+    ;   imag(p2) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    prev_w = pixel
+    c = p1
+    z = 0
+    bailout = 0
+    iter = 0
+    range_num = 0
+    ;****************************************************
+    ; In the accompanying par files, pkcones1 & 2.par,
+    ; we have 2 color ranges with 125 colors in each range
+    ; for a total of 250 colors. The first range starts at
+    ; color 1.  Pixels will use color 255 when w < 1.0.
+    ; Other values can be used here as long as the product
+    ; of num_ranges times colors_in_range is less than 255.
+    ;****************************************************
+    num_ranges = real(p2)
+    colors_in_range = imag(p2):
+    ;****************************************************
+    ; The equation being iterated.  This is the
+    ; Pokorny equation.
+    ;****************************************************
+    w = 1 / (prev_w * prev_w + c)
+    ;****************************************************
+    ; If |w| exceeds a value of 4.0, set z to the index
+    ; into the colormap and set the bailout flag.
+    ;****************************************************
+    IF (|w| > 4)
+	;***************************************************
+	; Compute the angle between the last 2 orbit points
+	;***************************************************
+	delta_i = imag(w) - imag(prev_w)
+	delta_r = real(w) - real(prev_w)
+	angle = abs(atan(delta_i / delta_r))
+	IF (delta_r < 0)
+	    angle = pi - angle
+	ENDIF
+	bailout = 1
+	range_index = colors_in_range * angle / pi
+	z = range_index + range_num * colors_in_range + 1
+    ENDIF
+    prev_w = w
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+    iter = iter + 1
+    z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+    bailout == 0
+}
+
+
+pkcones1           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=pkycones.frm
+  formulaname=PokornyConesJulia passes=1
+  corners=0.32024997/1.1275833/-0.28875/0.31675
+  params=-1.721302083333/0.010600585938/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+
+
+pkcones2           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=pkycones.frm
+  formulaname=PokornyConesJulia passes=1
+  corners=0.55438357/0.91451157/0.2032067/0.4733027
+  params=-1.550794271/0.023072917/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+
+
+; Betr:  Paul Carlson's new frm		Bereich: Fractint Sources
+;  An:  All				Dienstag, 6. Januar 1998 22:24:05
+; Von:  Sylvie Gallet, 101324,3444	#11317
+; 
+; Hi All,
+; 
+;   Here is Paul's latest formula and par.  Very nice image!!!
+; 
+;   Enjoy,
+; 
+;         - Sylvie
+; 
+; ---------------------------------------------------------
+; Here is a formula and PAR file that demonstrates how the
+; parametric form of an equation of a curve can be used as
+; an orbit trap.
+ 
+Astroid_Mset  {; Copyright (c) Paul W. Carlson, 1997
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   real(p1) = a factor controlling the width of the curves
+    ;   imag(p1) = radius of the astroid
+    ;   real(p2) = number of color ranges
+    ;   imag(p2) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    w = 0
+    c = pixel
+    z = 0
+    bailout = 0
+    iter = 0
+    range_num = 0
+    i = (0,1)
+    r = imag(p1)
+    ;****************************************************
+    ; In the accompanying par file, astmset.par,
+    ; we have 8 color ranges with 30 colors in each range
+    ; for a total of 240 colors. The first range starts at
+    ; color 1.  Pixels will use color 0 when |w| < 10000.
+    ; Other values can be used here as long as the product
+    ; of num_ranges times colors_in_range is less than 255.
+    ; Color 0 is reserved for the background color and color
+    ; 255 can be used for the inside color.
+    ;****************************************************
+    num_ranges = real(p2)
+    colors_in_range = imag(p2)
+    ;****************************************************
+    ; Real(p1) controls the width of the curves.
+    ; These values will usually be in the range 0.001 to 0.1
+    ;****************************************************
+    width = real(p1)
+    index_factor = (colors_in_range - 1) / width:
+    ;****************************************************
+    ; The equation being iterated.  Almost any equation
+    ; that can be expressed in terms of a complex variable
+    ; and a complex constant will work with this method.
+    ; This example uses the standard Mandelbrot set equation.
+    ;****************************************************
+    w = w * w + c
+    ;****************************************************
+    ; The orbit trap curve.  This example uses an "astroid"
+    ; curve (which has absolutely nothing to do with huge
+    ; rocks in outer space).  Any two-dimensional curve can
+    ; be used which can be expressed in parametric form in
+    ; terms of the angle from the origin.
+    ;****************************************************
+    ang = atan(imag(w) / real(w))
+    astroid = r * (cos(ang)^3 + i * sin(ang)^3)
+    ;****************************************************
+    ; If the orbit point is within some distance of the curve,
+    ; set z to the index into the colormap and set the bailout
+    ; flag.  Note: the way we use the "distance" here has
+    ; the effect of turning the curves inside-out in the image.
+    ;****************************************************
+    distance = abs(|w| - |astroid|)
+    IF (distance < width && iter > 1)
+	z = index_factor * distance + range_num * colors_in_range + 1
+	bailout = 1
+    ENDIF
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+    iter = iter + 1
+    z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+    bailout == 0  && |w| < 1000
+}
+
+astmset            { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=rast.frm
+  formulaname=Astroid_Mset passes=t
+  center-mag=+0.36126226339583390/+0.09037301461753901/5.967617e+008
+  params=0.016/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  }
+
+
+; Betr:  Yet another Carlson par		Bereich: Fractint Sources
+;  An:  All				Mittwoch, 7. Januar 1998 05:07:01
+; Von:  Lee Skinner, 75450,3631		#11324
+; 
+; 
+; Here's another Paul Carlson par:  
+; ----------------------------------------------------------
+; This formula and PAR file produce a nice optical illusion.
+; It appears as if there are two overlaid spirals, spiralling
+; in opposite directions.
+; 
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+Tan_Spirals {; Copyright (c) Paul W. Carlson, 1997
+    width = real(p2), ratio = 124 / width, w = pixel, z = 0
+    iter = 0, toggle = -1:
+    ;
+    w = p1 * tan(w)
+    awr = abs(real(w))
+    awi = abs(imag(w))
+    IF (awr < awi)
+	minw = awr
+    ELSE
+	minw = awi
+    ENDIF
+    bailout = (minw < width && |w| <= p3)
+    toggle = -1 * toggle
+    iter = iter + 1
+    IF (bailout)
+	z = ratio * minw + (toggle > 0) * 125 + 1
+    ENDIF
+    z = z - iter
+    bailout == 0
+}
+
+
+optillus           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=ctn.frm
+  formulaname=Tan_Spirals
+  passes=1 center-mag=-1.44329e-015/7.77156e-016/3.774093
+  params=0.3/-0.9/0.001/0/5e-006/0
+  float=y maxiter=252 inside=253
+  outside=summ colors=000Vzz<123>0GGzVz<123>F0G000<3>000
+  }
+
+
+; Betr:  cosh_atan_mset			Bereich: Fractint Sources
+;  An:  All				Donnerstag, 8. Januar 1998 04:48:00
+; Von:  Lee Skinner, 75450,3631		#11381
+; 
+; Here's another formula and par from Paul Carlson:
+; 
+; ---------------------------------------------------------
+; Here's a variation of ATAN coloring that works well with
+; many transcendental functions.  This FRM and PAR file
+; use the COSH function.  Let me know if you're getting
+; tired of the comments in my formulas.
+; 
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+Cosh_Atan_Mset {; Copyright (c) Paul W. Carlson, 1997
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   real(p1) = maximum value of abs(real(w))
+    ;   real(p2) = number of color ranges
+    ;   imag(p2) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    prev_w = 0
+    c = pixel
+    z = 0
+    bailout = 0
+    iter = 0
+    range_num = 0
+    max_real = real(p1)
+    ;****************************************************
+    ; In the accompanying par file coshatan.par,
+    ; we have 2 color ranges with 125 colors in each range
+    ; for a total of 250 colors. The first range starts at
+    ; color 1.  Pixels will use color 253 for no bailout.
+    ; Other values can be used here as long as the product
+    ; of num_ranges times colors_in_range is less than 255.
+    ;****************************************************
+    num_ranges = real(p2)
+    colors_in_range = imag(p2):
+    ;****************************************************
+    ; The equation being iterated.
+    ;****************************************************
+    w = cosh(prev_w) + c
+    ;****************************************************
+    ; If abs(real(w)) exceeds the value of max_real, set z to
+    ; the index into the colormap and set the bailout flag.
+    ;****************************************************
+    IF (abs(real(w)) > max_real)
+	;***************************************************
+	; Compute the angle between the last 2 orbit points
+	;***************************************************
+	delta_i = imag(w) - imag(prev_w)
+	delta_r = real(w) - real(prev_w)
+	angle = abs(atan(delta_i / delta_r))
+	bailout = 1
+	range_index = 2 * colors_in_range * angle / pi
+	z = range_index + range_num * colors_in_range + 1
+    ENDIF
+    prev_w = w
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+    iter = iter + 1
+    z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+    bailout == 0
+}
+
+
+coshatan           {; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=atan.frm
+  formulaname=Cosh_Atan_Mset passes=t
+  corners=0.936256107301329/0.936256306792296/0.335034518072\
+  451/0.335034387876525/0.936256241612122/0.335034338991395
+  params=12/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zVz<108>G0GG0GG0GG0GG0G<10>G0Gzz0<108>aG0aG0aG0aG0a\
+  G0<10>aG0000<3>000
+  }
+
+; Betr:  P. Carlson's FOTD		Bereich: Fractint Sources
+;  An:  All				Freitag, 9. Januar 1998 07:53:07
+; Von:  Sylvie Gallet, 101324,3444	#11418
+; 
+; 
+;   Paul Carlson's Formula Of The Day:
+; 
+; --------------------------------------------------------
+; This formula produces flower-like elements using orbit
+; traps consisting of the overlapping areas of four circles.
+; The Mandelbrot set equation used here produces flowers
+; with four petals.  Other equations produce different
+; numbers of petals.  Included are two PAR files to try
+; it with.
+
+Petals_Julia {; Paul Carlson
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = coordinates of the Julia set
+    ;   real(p2) = radius of the circles - this controls
+    ;              the size of the petals
+    ;   imag(p2)   Not Used
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    w = pixel
+    c = p1
+    z = 0
+    r = real(p2)
+    r2 = r * r
+    k = 0.35355339 * r    ; Don't mess with this constant
+    num_ranges = real(p3)
+    colors_in_range = imag(p3)
+    range_num = 0
+    iter = 0:
+    ;
+    w = w * w + c
+    ;
+    wr = real(w), wi = imag(w)
+    c1 = (((wr-r) * (wr-r) + wi * wi) < r2)
+    c2 = ((wr * wr + (wi+r) * (wi+r)) < r2)
+    c3 = (((wr+r) * (wr+r) + wi * wi) < r2)
+    c4 = ((wr * wr + (wi-r) * (wi-r)) < r2)
+    IF (c1 && c4)
+      d = (wr-k) * (wr-k) + (wi-k) * (wi-k)
+    ELSEIF (c1 && c2)
+      d = (wr-k) * (wr-k) + (wi+k) * (wi+k)
+    ELSEIF (c2 && c3)
+      d = (wr+k) * (wr+k) + (wi+k) * (wi+k)
+    ELSEIF (c3 && c4)
+      d = (wr+k) * (wr+k) + (wi-k) * (wi-k)
+    ELSE
+      d = 0
+    ENDIF
+    IF (d > 0)
+	index = colors_in_range * d / r2
+	z = index + range_num * colors_in_range + 1
+    ENDIF
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    iter = iter + 1
+    z = z - iter
+    d == 0 && |w| < 1000
+}
+
+
+julia_petals_1 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=petals.frm
+  formulaname=Petals_Julia passes=t
+  center-mag=-4.44089e-016/2.22045e-016/0.8130081
+  params=-0.74107075/0.1578683/0.2/0/2/125
+  float=y maxiter=2000
+  inside=253 outside=summ
+  colors=000aG0<60>zy0zz0zy0<60>aG0C0C<60>yVyzVzyVy<60>C\
+  0C000<3>000
+  }
+
+
+julia_petals_2 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=petals.frm
+  formulaname=Petals_Julia passes=t
+  corners=-0.7881936/0.8801584/0.015265/1.266529
+  params=0.359166203/-0.09033392599999999/0.3/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000c40<14>xU0zW0yU0<11>c40aG0<14>xw0zz0yw0<11>a\
+  G00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<14>FFwGGzFFw<11>0\
+  0OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<12>R0BO08O00<15>z8\
+  8<12>O00000<13>000
+  }
+
+; Betr:  a rare occasion!			Bereich: Fractint Sources
+;  An:  all				Donnerstag, 29. Januar 1998 00:54:11
+; Von:  Robin Bussell, 100604,643		#12078
+; 
+; Hi Folks,
+;   It's not often that I get round to actually sitting down and *using* fractint but I was testing out the parameter evolver 
+; the other night and brewed up this rather nice filigree that reminds me of something that Aubrey Beardsly might 
+; have drawn... see what you  think!
+; 
+; Cheers,
+;           Robin.
+
+beardsley          { ; delicate tendrils, zoom out to find a creature
+                     ; chasing a spider.
+                     ; Robin Bussell 1998.
+                     ;  Version 1961 Patchlevel 2
+  reset=1961 type=fn(z)+fn(pix) function=cotan/acosh passes=1
+  center-mag=0.277932/-3.14115e-005/4.921547/1/90 params=0/0/1/0
+  maxiter=256 bailoutest=real inside=epsiloncross outside=atan
+  colors=000zzz000KEGMGIOHJ000RKMTLOVNP<11>101<27>_Mb<14>256044044<32>3FF0\
+  00<67>`7Ba7Ba8Ca8C<4>d8Cd8Cc8C<12>F9A<50>qX_<12>JEF
+  }
+
+
+
+; Betr:  Carr2998				Bereich: 
+;  An:  All				Freitag, 13. Februar 1998 15:30:05
+; Von:  Jo Weber, 100424,35		
+; 
+; Hi,
+; here are some zooms into Bob Carr's Carr2998. Enjoy --Jo--
+
+
+C2998000           { ;   0:28:59.49     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:21:32
+                     ; Par and Image Copyright 1998 by Bob Carr
+                     ; The original
+  reset=1960 type=formula formulafile=fractint.frm formulaname=Carr2998
+  passes=1 center-mag=0.000613332/-0.0256941/0.8754333/1/180
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  colors=000D00<14>RC0<3>zoc<5>hLJfGGcAB`46`00<8>900<7>JFU<8>zc0<7>WD0<4>i\
+  ZNlcRneT<3>zoc<9>yQKyOIyKK<4>x4R<9>K7TG7UC5M83F42763A<16>87N88N88O99P88N\
+  <10>223<2>89DABGCEKEHO<7>Xcz<15>000232<10>5Pw<2>U`m<7>7Pw4Nx0Lz<5>08R05L\
+  03F00800C<18>kF`<24>000<4>A00C00C00
+  }
+
+c2998001           { ;   1:07:08.01     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:15:11
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=0.251683/-0.250113/2.897097/1/180 params=200/300/400/550
+  float=y maxiter=647 periodicity=0
+  colors=000B5`<2>E7UG8SH9QJANKBL<2>QIPSKQUNSWPUYSX_VZ<7>nru<15>OI5<6>eYJg\
+  _LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<4>HGM000000000077<12>CpkDtnCpk<12>08\
+  8000000000F00<13>zH0<13>F00L1KM2KN3KO4JR9IUDG000<3>000kc7<4>zz0ww1uu1000\
+  <10>000OGHMDIKAJMAKOAM<12>ziF<13>K8C413<3>CC8EFAIID<10>svcsvcsvcsvc<6>fc\
+  S000<4>00000A<15>5Px<6>A5c
+  }
+
+c2998002           { ;   1:20:06.53     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:16:22
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=0.251683/0.379047/2.897097/1/180 params=200/300/400/550
+  float=y maxiter=647 periodicity=0
+  colors=000K00<6>700VH2<14>svc<14>aHu`FwZEs<14>007UU`<23>oow<22>7Px<15>F0\
+  0000000F00<11>Z00`00`13<13>`Es`FwbHs<14>ww0<15>0h0<15>00U<15>oow000700<2\
+  0>o00<15>M00
+  }
+
+c2998003           { ;   0:32:17.28     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:16:37
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=1.22836/-0.0700945/4.777251/1/180 params=200/300/400/550
+  float=y maxiter=647 periodicity=0
+  colors=000<14>BGJH56<13>3RN2TP3TP<9>G`SIaTIiZJrd<14>G4I<4>A7oNC7<3>giJJ7\
+  7<13>brk<9>088JJP<7>LgvH45<14>0B6GG8IVIETCCdGAqK<4>IcNJQ5<5>Kf5K56<6>bCE\
+  LEB<3>Zr`QFA<2>mkPqlOI55<12>LT1L4D<5>g6xI47<13>I6iH7lJ78<11>VhmJ49<9>UAo\
+  MB5<6>pwBI46<14>52UI85<10>HuBM55R76V97
+  }
+
+c2998004           { ;   1:44:15.91     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:16:51
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=0.0753884/-0.418294/4.796519/1/180 params=200/300/400/550
+  float=y maxiter=647 periodicity=0
+  colors=000M00<7>200000000<13>W00Z00_33<14>wll<15>000000<14>Brx<14>HAWH7U\
+  G7S<13>102000000<14>WPW<14>xx2zz0zx1<14>wUF<15>000000<14>wlw<14>KAWH7UG7\
+  S<13>102000000<13>c00<8>zWk<6>c46`00Z00<3>P00
+  }
+
+c2998005           { ;   0:50:48.42     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:17:02
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=-0.0272495/-0.0342085/7.095442/1/180
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  colors=00000d<14>LLUMMULLS<13>112000000<11>ZFw<11>0ww<10>05W00U22V<21>ss\
+  y<11>0U0<23>sve<8>0Zc<6>000000<11>Q00HKNGJMFIL<14>`00<15>yfF<15>Zd0<15>z\
+  o`<14>POUMMULLU<13>11c
+  }
+
+c2998006           { ;   1:07:20.93     
+                     ; on a P233MMX at 1600x1200  Feb 13, 1998  15:17:12
+                     ; Par and Image Copyright 1998 by Jo Weber
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2998 passes=1
+  center-mag=0.931728/0.32518/7.909356/1/180 params=200/300/400/550
+  float=y maxiter=647 periodicity=0
+  colors=000E00B00800000007<11>70X<6>vsd<9>IMh<3>`Fw<7>5Pw<10>02C007000<5>\
+  PHHTKKXPN<5>vsc<6>uhSufQudOubMv_KvYIvWHwUF<9>H00000000<20>o00<14>000000R\
+  II<12>zyn<10>XFw<14>213000000<14>7Mw000<13>XFt<12>000B00<9>a00<7>zz0<9>W\
+  00<4>H00
+  }
+
+
+frm:Carr2998{;Modified Sylvie Gallet frm. [101324,3444],1996
+;passes=1 needs to be used with this PHC formula.
+b5=pixel-conj(0.01/pixel)
+b4=pixel-flip(0.01/pixel)-conj(0.001/pixel),
+c=whitesq*b4-(whitesq==0)*b4
+z=whitesq*b5-(whitesq==0)*b5
+c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
+l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
+bailout=16,iter=0:
+t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
+t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
+z=z^2+(-0.7456,-0.132)+flip(conj(c/10)),
+iter=iter+1
+imag(flip(z))<=bailout
+}
+
+
+; Betr:  Gravijul pars			Bereich: Fractint Sources
+;  An:  All				Sonntag, 15. Februar 1998 15:07:02
+; Von:  Sylvie Gallet, 101324,3444	#12542
+; 
+; Hi All,
+; 
+;   Here are some pars based on Mark Christenson's formula and a variation of this formula.
+; 
+;   Cheers,
+; 
+;         - Sylvie
+;
+
+sg_gravijul_01     { ; .                                    t=  0:05:02.97
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/tanh/log passes=1
+  center-mag=-0.640338/1.47121/5.603928 params=-0.5/-0.25/-1/0.225/9/0
+  float=y maxiter=2045 inside=epsiloncross decomp=256
+  colors=U00siT<5>ytZzv_yv_<29>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAa\
+  LBeMCgODjQF<2>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7QD6OC6<14>Q19R0AR1A<29>cJDc\
+  KDdLEeMF<12>rhS
+  }
+
+sg_gravijul_02     { ; .                                    t=  0:04:22.99
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/conj/sqrt passes=1
+  center-mag=1.38925/0.0169872/0.4084293/0.7564/9.869/-12.161
+  params=1.2/0.3/-3/-0.1/40/0 float=y maxiter=100 inside=0
+  outside=summ
+  colors=DFF<50>lsumtvltw<157>EKJEKJEKJEJIDJIDIH<9>ADDADDADDADDADD<11>FFF4\
+  44<11>CEE cyclerange=0/255
+  }
+
+sg_gravijul_03     { ; .                                    t=  0:05:15.33
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/cosxx/log passes=1
+  center-mag=0.669248/0.210755/7.66535/1/-4.999
+  params=-2/-2/-0.7/0.5/7/0 float=y maxiter=1023 inside=0 decomp=256
+  colors=A00A32<8>AEAAFBBHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8\
+  <4>9D6<2>MG7QH8UI9YJAZKA<13>wh9yj8yjA<17>zzz<6>SE7QD6OC6<14>Q19R0AR1A<29\
+  >cJDcKDdLEeMF<17>wpXxrYytZzv_yv_xv`<28>UupStqRrp<18>6CR5AQ5AN<5>945
+  }
+
+sg_gravijul_04     { ; .                                    t=  0:02:56.31
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=ident/log/log passes=1
+  center-mag=-7.21645e-016/6.66134e-016/0.5951129/1.0225/55/23.106
+  params=-0.9/-2/0/0.75/7/0 float=y maxiter=511 inside=79 decomp=256
+  colors=naO<14>wvZxx_wx_<25>UupStqRrp<11>FSaEQ_DOZBLXAJW9HU8FT6CR<6>12400\
+  0111<4>886AA7AC8AD9AEA<4>DMGEOHFQIFRKGTLHVMHWOIYPJ_R<7>LhM<12>wt1<12>DVF\
+  <9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAZKA<13>wh9yj8yjA<17>zzz<6>SE7QD6OC6<14>\
+  Q19R0AR1A<29>cJDcKDdLEeMF<8>naO cyclerange=0/255
+  }
+
+sg_gravijul_05     { ; .                                    t=  0:16:07.07
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=2.22045e-016/0/0.7075342
+  params=0.85/0/0.07000000000000001/0/2.95/0 float=y maxiter=151
+  inside=0 outside=summ periodicity=0
+  colors=U00nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7QD6OC6<14>Q19R0AR1A<20>iNOjPPjQ\
+  PjRP<29>xtZyv_xv`<28>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFBBHCCJD<8\
+  >IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAaLBeMCgOD\
+  jQFkSGlUI
+  }
+
+sg_gravijul_06     { ; .                                    t=  0:48:33.40
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=-0.508795/0.563438/2.201573/1/-82.5
+  params=0.97/0/0.1/0/5/0 float=y maxiter=151 inside=0 outside=summ
+  periodicity=0
+  colors=000A75<5>AEAAFBBHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1sr2pp3<30>CM9AKAAKA\
+  <13>CIACIABIA<86>0AA0AA1BB<44>OmlPnmOkl<15>6CR5AQ5AN<5>945A32A43A64
+  }
+
+sg_gravijul_07     { ; .                                    t=  1:02:08.83
+                     ; Copyright Sylvie Gallet, Feb 15, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=-1.06581e-014/8.88178e-015/0.08286928
+  params=1/0/0.1/0/5/0 float=y maxiter=255 inside=0 outside=summ
+  periodicity=0
+  colors=000ARQ<26>OmlPnmOkl<15>6CR5AQ5AN<5>945A32A43<7>AEAAFBBHCCJD<8>IYP\
+  J_RJ`R<6>LhM<12>wt1sr2pp3<30>CM9AKAAKA<13>CIACIABIA<86>0AA0AA1BB<16>9QP
+  }
+
+sg_gravijul-v1_01  { ; .                                    t=  0:01:26.84
+                     ; Copyright Sylvie Gallet, Feb 04, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/log/log passes=1
+  center-mag=0/0/0.6666667 params=-1/-3.14159265358979/-0.05/1/7/3
+  float=y maxiter=511 inside=0 decomp=256
+  colors=ulVumV<3>ytZzv_yv_<29>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAa\
+  LBeMCgODjQF<2>nVJ<3>vdByg8yh5yi3<15>yukyvnyvo<8>yyxzzzyxx<20>X8GV5DW6D<1\
+  2>fKMgLNgLN<27>tkV cyclerange=0/255
+  }
+
+sg_gravijul-v1_02  { ; .                                    t=  0:05:21.87
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/tanh/log passes=1
+  center-mag=1.53398/0.311156/18.57704
+  params=-0.5/-0.25/-1/0.225/9/2.5 float=y maxiter=2045 inside=0
+  decomp=256
+  colors=0A5<13>KV2LX2NZ1P_1R`1<3>hj0<6>bg0ag0_f1<3>Wd1Vd1Tc2Rb2<16>0P5<7>\
+  IJ4KI4LI5<10>d9H<8>K36I24G13D01F02<7>`0C<26>zzm<4>ztPzrKyoJxlH<6>lN4jJ2i\
+  I2<11>X95W96V86U77T67V98XD9<11>zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<4>\
+  cEGeHJgJNiMQkOUmRXoU`<3>wcm<15>K0K<6>3IC0LA0L9<2>0N6
+  cyclerange=0/255
+  }
+
+sg_gravijul-v1_03  { ; .                                    t=  0:00:43.45
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/abs/log passes=1
+  center-mag=0/0/0.6942545 params=-1.5/0.3/0.5/-1/4/2.25 float=y
+  maxiter=1023 inside=0 decomp=256
+  colors=A00H63<14>ZKA_LAaNA<2>dQAfSAgTAiVAkXA<3>rcAteAufBvgCwhD<16>zzz<6>\
+  SE7QD6OC6<12>Q29Q29Q19R0AR1AR2A<2>T3AT3AT3AT3AT3A<106>B34A43A54<6>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVFDUEDSEB00<4>G52
+  }
+
+sg_gravijul-v1_04  { ; .                                    t=  0:03:40.58
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/sqrt/log passes=1
+  center-mag=-1.11022e-016/1.11022e-016/0.7848492/1/12.499
+  params=1/0/0.6/-0.5/4/2 float=y maxiter=255 inside=0 decomp=256
+  colors=000<141>0E90FA0FA1GB1GB<28>J_RJ`RJaQ<4>LgNLhMOiK<11>wt1<12>DVFDUE\
+  DSE<5>G52<15>ZKA_LAaNA<2>dQAfSAgTAiVAkXA<12>I72
+  }
+
+sg_gravijul-v1_05  { ; .                                    t=  0:29:30.08
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=atanh/atanh/atanh passes=1
+  center-mag=0/0/0.3876293 params=0.95/0/0.09/0/4/2 float=y
+  maxiter=151 inside=0 outside=summ periodicity=0
+  colors=040_J9cKAhMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<2>9\
+  03<126>9848959B6<13>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<14>AB54C5<5>VI9
+  }
+
+; Betr:  Carr2998				Bereich: Fractint Sources
+;  An:  Jo Weber, 100424,35		Sonntag, 15. Februar 1998 14:27:13
+; Von:  Sylvie Gallet, 101324,3444	#12540
+; 
+; Hi Jo,
+; 
+; >> thanks for the modified c2998.frm.
+; 
+;   You're welcome.
+; 
+; >> Here is a zoom into Carr3102.
+; 
+;   Nice image!
+; 
+; >>  Maybe you can modify the formula too. Bob use the  symmetryentry
+; >> YAXIS in the formula, but I deleted this because of the stripe in the
+; >> middle of the image.
+; 
+;   Et voila:
+;
+;   Cheers,
+; 
+;         - Sylvie
+
+Carr3102 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; Converted to IF..ELSE logic by Sylvie Gallet, 02/15/98
+  ; passes=1 needs to be used with this PHC formula.
+  pixel = -abs(real(pixel)) + flip(imag(pixel))
+  if (whitesq)
+    c = sqr(abs(pixel))*abs(pixel) - 0.65
+    c1 = sqr(c/9) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + c/1.5
+    z = zorig = sqr(pixel)*pixel
+  else
+    c = - sqr(abs(pixel))*abs(pixel) + 0.65
+    c1 = sqr(c/9) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + c/1.5
+    z = zorig = - sqr(pixel)*pixel
+  endif
+  imagp1 = imag(p1) , imagp2 = imag(p2) , bailout = 16 , iter = 0
+  :
+  if (iter == p1)
+    z = 0 , c1 = sqr(zorig/6) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + zorig
+  elseif (iter == imagp1)
+    z = 0 , c1 = sqr(0.25*zorig) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + 1.5 * zorig
+  elseif (iter == p2)
+    z = 0 , c1 = sqr(0.375*zorig) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + 2.25 * zorig
+  elseif (iter == imagp2)
+    z = 0 , c1 = sqr(5.0625*zorig) + (-0.7456,-0.132)
+    c2 = (-0.7456,-0.132) + 3.375 * zorig
+  endif
+  z2 = z*z , z = z2 - 0.0025 * |0.2*z2*z + z2 + c2| + c1
+  |z| <= bailout
+}
