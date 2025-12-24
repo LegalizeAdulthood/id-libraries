@@ -17,8 +17,8 @@ def main():
     fixes = []
     
     for line in sys.stdin:
-        # Parse: EntryName(LineNum): Formula entry name 'wrong' does not match case-sensitively (found: 'Correct')
-        match = re.match(r"^\s*\S+\((\d+)\):\s+Formula entry name '([^ ]+)' does not match case-sensitively \(found: '([^ ]+)'\)", line)
+        # Parse: EntryName(LineNum): Formula entry name 'wrong' does not match case-sensitively (found: file.frm 'Correct')
+        match = re.match(r"^\s*\S+\((\d+)\):\s+Formula entry name '([^ ]+)' does not match case-sensitively \(found: [^ ]* '([^ ]+)'\)", line)
         
         if match:
             line_num = int(match.group(1))
