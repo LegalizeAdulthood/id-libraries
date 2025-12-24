@@ -358,13 +358,13 @@ def parse_entry_header(line):
     bracket_value = None
     if line.endswith(']'):
         bracket_value = line[line.index('[') + 1:-1].strip()
-        line = line[:line.index('[')-1].strip()
+        line = line[:line.index('[')].strip()
 
     # Extract parentheses content (...)
     paren_value = None
     if line.endswith(')'):
         paren_value = line[line.index('(') + 1:-1].strip()
-        line = line[:line.index('(')-1].strip()
+        line = line[:line.index('(')].strip()
 
     # What remains is the entry name
     return line, bracket_value, paren_value
