@@ -110,7 +110,7 @@ class ParamSet:
         params = {}
         
         # Join all body lines into a single string
-        body_text = ' '.join(self.entry.body)
+        body_text = ' '.join([strip_comment(line) for line in self.entry.body])
         
         # Split on whitespace to get individual tokens
         tokens = body_text.split()

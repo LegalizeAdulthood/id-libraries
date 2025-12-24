@@ -1,145 +1,150 @@
 #!/usr/bin/env python3
 """
-Test script for ParamSet class functionality.
+Test script to validate parameter parsing with test.par
+
+This script tests that parameter entries in test.par are parsed correctly
+and that all parameter values are extracted properly.
 """
 import sys
-from file_entry import parse_file_entries, ParamSet
+import os
+
+# Add current directory to path to allow importing file_entry
+sys.path.insert(0, os.path.dirname(__file__))
+
+from file_entry import parse_file_entries, ParamSet, FileEntry
 
 
-def test_param_set(filename):
-    """Test ParamSet parsing on a parameter file."""
-    print(f"Parsing parameter file: {filename}")
+# Expected parsed results from test.par
+EXPECTED_PARAMS = {
+    'name': 'elastic',
+    'paren_value': None,
+    'bracket_value': None,
+    'params': {
+        'reset': '',
+        'type': 'formula',
+        'formulafile': 'noel.frm',
+        'formulaname': 'pheonix',
+        'passes': '1',
+        'corners': '-0.35199589/-0.34714278/0.84632515/0.84996499',
+        'float': 'y',
+        'maxiter': '300',
+        'inside': '0',
+        'outside': 'mult',
+        'colors': '000d04<29>GEIFFJFFJFFJ<7>RCGSBFUBFWAE<18>x15z04z14<29>zx4zz4zz5<27>zzxzzzzzz<4>zxzzxzzwyzwx<55>zV5zU4zU4zT4<28>z14z04z04y04<27>e04'
+    }
+}
+
+
+def compare_param_set(expected, actual):
+    """Compare expected parameter data with an actual ParamSet."""
+    errors = []
+    
+    # Compare name
+    if expected['name'] != actual.name:
+        errors.append(f"Name mismatch: expected '{expected['name']}', got '{actual.name}'")
+    
+    # Compare paren_value
+    expected_paren = expected['paren_value']
+    actual_paren = actual.paren_value
+    if expected_paren != actual_paren:
+        errors.append(f"Paren mismatch: expected '{expected_paren}', got '{actual_paren}'")
+    
+    # Compare bracket_value
+    expected_bracket = expected['bracket_value']
+    actual_bracket = actual.bracket_value
+    if expected_bracket != actual_bracket:
+        errors.append(f"Bracket mismatch: expected '{expected_bracket}', got '{actual_bracket}'")
+    
+    # Compare parameters
+    expected_params = expected['params']
+    actual_params = actual.params
+    
+    # Check for missing parameters
+    for param_name in expected_params:
+        if param_name not in actual_params:
+            errors.append(f"Missing parameter: '{param_name}'")
+        elif expected_params[param_name] != actual_params[param_name]:
+            errors.append(f"Parameter '{param_name}' mismatch:")
+            errors.append(f"  Expected: {expected_params[param_name]}")
+            errors.append(f"  Got:      {actual_params[param_name]}")
+    
+    # Check for unexpected parameters
+    for param_name in actual_params:
+        if param_name not in expected_params:
+            errors.append(f"Unexpected parameter: '{param_name}' = '{actual_params[param_name]}'")
+    
+    return errors
+
+
+def test_param_set_parsing(expected, test_file):
+    """Test parsing of test.par against expected results."""
+    
+    print(f"Testing: {test_file}")
     print("=" * 70)
     
-    entries, warnings, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(test_file)
     
     if warnings:
-        print("\nWarnings encountered:")
+        print(f"\nWarnings ({len(warnings)}):")
         for warning in warnings:
             print(f"  {warning}")
-
+    
     if errors:
-        print("\nErrors encountered:")
+        print(f"\nErrors ({len(errors)}):")
         for error in errors:
             print(f"  {error}")
-        return
+        return False
     
-    if not entries:
-        print("No entries found in file.")
-        return
+    print(f"\n Successfully parsed {len(entries)} parameter entries")
     
-    print(f"\nFound {len(entries)} entries\n")
+    # Check count matches
+    if len(entries) != 1:
+        print(f"\n Entry count mismatch: expected 1, got {len(entries)}")
+        return False
     
-    # Process each entry as a ParamSet
-    for entry in entries[:5]:  # Show first 5 entries
-        param_set = ParamSet(entry)
-        
-        print(f"Entry: {param_set.name}")
-        print(f"  Location: lines {param_set.start_line}-{param_set.end_line}")
-        
-        if param_set.paren_value:
-            print(f"  Symmetry: ({param_set.paren_value})")
-        if param_set.bracket_value:
-            print(f"  Options: [{param_set.bracket_value}]")
-        
-        print(f"  Parameters: {len(param_set.params)} found")
-        
-        # Show some common parameters
-        common_params = ['type', 'corners', 'center', 'mag', 'params', 
-                        'maxiter', 'inside', 'outside', 'colors']
-        
-        for param_name in common_params:
-            if param_name in param_set:
-                value = param_set[param_name]
-                # Truncate long values
-                if len(value) > 50:
-                    value = value[:47] + "..."
-                print(f"    {param_name} = {value}")
-        
-        # Show type-specific parameters
-        param_type = param_set.get('type')
-        if param_type == 'formula':
-            if 'formulafile' in param_set:
-                print(f"    formulafile = {param_set['formulafile']}")
-            if 'formulaname' in param_set:
-                print(f"    formulaname = {param_set['formulaname']}")
-        elif param_type == 'ifs':
-            if 'ifsfile' in param_set:
-                print(f"    ifsfile = {param_set['ifsfile']}")
-            if 'ifs' in param_set:
-                print(f"    ifs = {param_set['ifs']}")
-        elif param_type == 'lsystem':
-            if 'lfile' in param_set:
-                print(f"    lfile = {param_set['lfile']}")
-            if 'lname' in param_set:
-                print(f"    lname = {param_set['lname']}")
-        
-        print()
+    # Parse the entry as a ParamSet
+    param_set = ParamSet(entries[0])
+    
+    print(f"\nValidating parameter set: {param_set.name}")
+    print("-" * 70)
+    
+    comparison_errors = compare_param_set(expected, param_set)
+    
+    if not comparison_errors:
+        print(f"   {param_set.name}: PASS")
+        print(f"   - {len(param_set.params)} parameters validated")
+    else:
+        print(f"   {param_set.name}: FAILED")
+        for error in comparison_errors:
+            print(f"      {error}")
+        return False
+    
+    return True
 
 
-def test_specific_entry(filename, entry_name):
-    """Test ParamSet with a specific entry."""
-    print(f"Searching for '{entry_name}' in {filename}")
+def main():
+    """Run all tests."""
+    print("=" * 70)
+    print("Parameter Set Parser Test Suite")
     print("=" * 70)
     
-    entries, warnings, errors = parse_file_entries(filename)
-
-    if warnings:
-        print("\nWarnings encountered:")
-        for warning in warnings:
-            print(f"  {warning}")
-
-    if errors:
-        print("\nErrors encountered:")
-        for error in errors:
-            print(f"  {error}")
-        return
+    # Run tests
+    test_file = os.path.join(os.path.dirname(__file__), 'test', 'test.par')
+    test1 = test_param_set_parsing(EXPECTED_PARAMS, test_file)
     
-    # Find the entry
-    from file_entry import find_entry_by_name
-    entry = find_entry_by_name(entries, entry_name)
+    # Summary
+    print("\n" + "=" * 70)
+    print("Test Results:")
+    print(f"  test.par parsing:          {'PASS' if test1 else 'FAIL'}")
+    print("=" * 70)
     
-    if not entry:
-        print(f"Entry '{entry_name}' not found.")
-        return
-    
-    param_set = ParamSet(entry)
-    
-    print(f"\nEntry: {param_set.name}")
-    print(f"Location: lines {param_set.start_line}-{param_set.end_line}")
-    
-    if param_set.paren_value:
-        print(f"Symmetry: ({param_set.paren_value})")
-    if param_set.bracket_value:
-        print(f"Options: [{param_set.bracket_value}]")
-    
-    print(f"\nAll parameters ({len(param_set.params)} total):")
-    
-    # Sort parameters by name for easier reading
-    for name in sorted(param_set.params.keys()):
-        value = param_set.params[name]
-        print(f"  {name:20s} = {value}")
-    
-    # Show raw body for comparison
-    print("\nRaw body content:")
-    for i, line in enumerate(entry.body[:10], 1):
-        print(f"  {i}: {line.rstrip()}")
-    if len(entry.body) > 10:
-        print(f"  ... ({len(entry.body) - 10} more lines)")
+    if test1:
+        print("\n All tests PASSED")
+        return 0
+    else:
+        print("\n Some tests FAILED")
+        return 1
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Usage: python test-param-set.py <filename> [entry_name]")
-        print("\nExamples:")
-        print("  python test-param-set.py myfile.par")
-        print("  python test-param-set.py myfile.par MyParameter")
-        sys.exit(1)
-    
-    filename = sys.argv[1]
-    
-    if len(sys.argv) >= 3:
-        entry_name = sys.argv[2]
-        test_specific_entry(filename, entry_name)
-    else:
-        test_param_set(filename)
+    sys.exit(main())
