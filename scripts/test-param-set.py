@@ -11,8 +11,13 @@ def test_param_set(filename):
     print(f"Parsing parameter file: {filename}")
     print("=" * 70)
     
-    entries, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(filename)
     
+    if warnings:
+        print("\nWarnings encountered:")
+        for warning in warnings:
+            print(f"  {warning}")
+
     if errors:
         print("\nErrors encountered:")
         for error in errors:
@@ -77,8 +82,13 @@ def test_specific_entry(filename, entry_name):
     print(f"Searching for '{entry_name}' in {filename}")
     print("=" * 70)
     
-    entries, errors = parse_file_entries(filename)
-    
+    entries, warnings, errors = parse_file_entries(filename)
+
+    if warnings:
+        print("\nWarnings encountered:")
+        for warning in warnings:
+            print(f"  {warning}")
+
     if errors:
         print("\nErrors encountered:")
         for error in errors:

@@ -6,7 +6,7 @@ import argparse
 from file_entry import parse_file_entries, find_entry_by_name, ParamSet
 
 
-def validate_file_entry(param_name, param_start_line, file_type, filename, entry_name, base_dir, errors):
+def validate_file_entry(param_name, param_start_line, file_type, filename, entry_name, base_dir, warnings, errors):
     """Validate that a file contains an entry with the given name (case insensitive)."""
     if not filename:
         errors.append(f"{param_name.strip()}({param_start_line}): No {file_type} file specified for entry '{entry_name}'")
@@ -19,10 +19,16 @@ def validate_file_entry(param_name, param_start_line, file_type, filename, entry
         return
     
     # Parse the file and search for the entry
-    entries, parse_errors = parse_file_entries(file_path)
+    entries, parse_warnings, parse_errors = parse_file_entries(file_path)
+    
+    # Report warnings from parsing the referenced file
+    if parse_warnings:
+        for warning in parse_warnings:
+            warnings.append(f"{param_name.strip()}({param_start_line}): Warning in {file_type} file '{filename}': {warning}")
     
     if parse_errors:
-        errors.append(f"{param_name.strip()}({param_start_line}): Error parsing {file_type} file '{filename}': {parse_errors[0]}")
+        for error in parse_errors:
+            errors.append(f"{param_name.strip()}({param_start_line}): Error parsing {file_type} file '{filename}': {parse_errors[0]}")
         return
     
     # Search for entry by name (case insensitive)
@@ -31,7 +37,7 @@ def validate_file_entry(param_name, param_start_line, file_type, filename, entry
     if not entry:
         errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry '{entry_name}' not found in file '{filename}'")
     elif entry.name != entry_name:
-        errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry name '{entry_name}' does not match case-sensitively (found: '{entry.name}')")
+        warnings.append(f"{param_name.strip()}({param_start_line}): {file_type} entry name '{entry_name}' does not match case-sensitively (found: '{entry.name}')")
 
 
 
@@ -74,7 +80,13 @@ def validate_parameter_file(filename, quiet=False):
     map_dir = os.path.normpath(os.path.join(par_dir, '..', 'map'))
 
     # Parse the parameter file
-    entries, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(filename)
+    
+    if warnings and not quiet:
+        print(f"Validation warnings for '{filename}':")
+        for warning in warnings:
+            print(f"  {warning}")
+        print()
     
     if errors and not entries:
         # File read error or completely invalid
@@ -107,7 +119,7 @@ def validate_parameter_file(filename, quiet=False):
             formulaname = params.get('formulaname')
             if formulaname:
                 validate_file_entry(entry.name, entry.start_line, 'Formula',
-                                    formulafile, formulaname, formula_dir, errors)
+                                    formulafile, formulaname, formula_dir, warnings, errors)
 
         # Check if type=ifs and validate ifsfile
         if params.get('type') == 'ifs':
@@ -118,7 +130,7 @@ def validate_parameter_file(filename, quiet=False):
             ifsname = params.get('ifs')
             if ifsname:
                 validate_file_entry(entry.name, entry.start_line, 'IFS',
-                                    ifsfile, ifsname, ifs_dir, errors)
+                                    ifsfile, ifsname, ifs_dir, warnings, errors)
 
         # Check if type=lsystem and validate lfile
         if params.get('type') == 'lsystem':
@@ -129,20 +141,22 @@ def validate_parameter_file(filename, quiet=False):
             lname = params.get('lname')
             if lname:
                 validate_file_entry(entry.name, entry.start_line, 'L-System',
-                                    lfile, lname, lsystem_dir, errors)
+                                    lfile, lname, lsystem_dir, warnings, errors)
 
-    if errors:
-        if quiet:
-            print(filename)
-        else:
-            print(f"Validation failed for '{filename}':")
-            for error in errors:
-                print(f"  {error}")
-        return False
-    else:
+    if warnings or errors:
         if not quiet:
-            print(f"Validation passed for '{filename}'")
-        return True
+            if warnings :
+                print("Validation warnings:")
+                for warning in warnings:
+                    print(f"  {warning}")
+            if errors:
+                print("Validation errors:")
+                for error in errors:
+                    print(f"  {error}")
+            print(f"Validation failed for '{filename}': {len(warnings)} warnings, {len(errors)} errors")
+        return False
+
+    return True
 
 
 def main():

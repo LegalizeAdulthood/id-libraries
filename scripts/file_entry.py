@@ -212,14 +212,15 @@ def parse_file_entries(filename):
         with open(filename, 'r', encoding='utf-8', errors='replace') as f:
             lines = f.readlines()
     except FileNotFoundError:
-        return [], [f"File '{filename}' not found"]
+        return [], [], [f"File '{filename}' not found"]
     except Exception as e:
-        return [], [f"Error reading file '{filename}': {e}"]
+        return [], [], [f"Error reading file '{filename}': {e}"]
     
     if not lines:
-        return [], []
+        return [], [], []
     
     entries = []
+    warnings = []
     errors = []
     line_num = 0
     
@@ -329,7 +330,7 @@ def parse_file_entries(filename):
         )
         entries.append(entry)
     
-    return entries, errors
+    return entries, warnings, errors
 
 
 def parse_entry_header(header_text):

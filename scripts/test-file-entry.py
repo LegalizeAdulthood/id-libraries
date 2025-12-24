@@ -11,8 +11,14 @@ def test_file(filename):
     print(f"\nParsing: {filename}")
     print("=" * 60)
     
-    entries, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(filename)
     
+    if warnings:
+        print("Warnings:")
+        for warning in warnings:
+            print(f"  {warning}")
+        print()
+
     if errors:
         print("Errors:")
         for error in errors:
@@ -47,10 +53,16 @@ def test_find_entry(filename, entry_name):
     print(f"\nSearching for '{entry_name}' in {filename}")
     print("=" * 60)
     
-    entries, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(filename)
     
+    if warnings:
+        print("Warnings:")
+        for warning in warnings:
+            print(f"  {warning}")
+        print()
+
     if errors:
-        print("Errors during parsing:")
+        print("Errors:")
         for error in errors:
             print(f"  {error}")
         return

@@ -86,7 +86,7 @@ def load_formula_entry(formula_filename, entry_name, search_dir, formula_cache):
             return None
         
         try:
-            entries, _ = parse_file_entries(formula_path)
+            entries, _, _ = parse_file_entries(formula_path)
             
             # Build a dictionary of entries in this file
             file_entries = {}
@@ -124,10 +124,15 @@ def parse_par_file(filepath, search_dir, formula_cache, fingerprint_map):
     
     try:
         # Parse the parameter file using the unified parser
-        entries, parse_errors = parse_file_entries(filepath)
+        entries, parse_warnings, parse_errors = parse_file_entries(filepath)
         
+        if parse_warnings:
+            print(f"Warnings parsing {filepath}:", file=sys.stderr)
+            for warning in parse_warnings[:3]:  # Show first 3 warnings
+                print(f"  {warning}", file=sys.stderr)
+
         if parse_errors:
-            print(f"Warning: Errors parsing {filepath}:", file=sys.stderr)
+            print(f"Errors parsing {filepath}:", file=sys.stderr)
             for error in parse_errors[:3]:  # Show first 3 errors
                 print(f"  {error}", file=sys.stderr)
         

@@ -6,8 +6,13 @@ from file_entry import parse_file_entries
 
 def validate_ifs_file(filename, quiet=False):
     """Validate that an IFS file follows the correct syntax."""
-    entries, errors = parse_file_entries(filename)
+    entries, warnings, errors = parse_file_entries(filename)
     
+    if warnings and not quiet:
+        print(f"Validation warnings for '{filename}':")
+        for warning in warnings:
+            print(f"  {warning}")
+
     if errors:
         if quiet:
             print(filename)
