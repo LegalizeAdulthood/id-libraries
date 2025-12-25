@@ -5188,7 +5188,7 @@ Mod-August4 {; Modified Sylvie Gallet frm, Dec 1997
 }
 
 
-Modified_a Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996 
+Modified_a { ; Gallet-3-11 Sylvie Gallet [101324,3444], 1996 
   z=fn1(pixel^p1/p2+p2*pixel/fn2(p1^pixel)), p=p2/p1:
   z = z*p
   (z+p) <= p1
