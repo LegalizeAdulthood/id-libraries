@@ -222,7 +222,7 @@ Slinky             { ; time=0:24:19.09--SF5 on a P200
 
 Dyson_Ring         { ; (8) time=0:14:39.46--1.2k x 1.6k, P1300
                      ;  Version 2002 Patchlevel 5
-  reset=2002 type=formula formulafile=fotd.par
+  reset=2002 type=formula formulafile=fotd.frm
   formulaname=MandelbrotMix3a function=ident
   passes=1
   center-mag=-1.22979885859737000/+0.002659402810015\
@@ -507,7 +507,7 @@ Spiral             { ; time=0:18:49.82--SF5 on a P200
 7Up                { ; Time 1.49.41.94
                      ; Albrecht Niekamp  Aug,03
                      ;  Version 2002 Patchlevel 4
-  reset=2002 type=formula formulafile=mult_9.par
+  reset=2002 type=formula formulafile=mult_9.frm
   formulaname=Multifractal_9 function=sin/exp/exp/sin passes=t
   center-mag=-0.44231881564814420/+0.19874433342452960/54147.94/1/-90/3.88\
   578058618804789e-016
@@ -1269,7 +1269,7 @@ Phoenix            { ; Time 2.56.13.76
   }
 
 Pink_Midget        { ; 7min on a P200, SF5
-  reset=1960 type=formula formulafile=apr-98.par
+  reset=1960 type=formula formulafile=apr-98.frm
   formulaname=MandelbrotMix4 passes=1 function=ident
   center-mag=-0.00218445795113323/-0.2346673882601\
   9790/9.192243e+010/1/-160/1.5611329691467279e-005
@@ -2117,7 +2117,7 @@ Fractal_Arrowheads { ; time=0:11:75.43--SF5 on a p200
   gzzizz0zz0zz0zz0zz0zz0zz0 }
 
 Retweaked_Midget   { ; Time=0:01:39.46--SF5 on a P200
-  reset=2002 type=formula formulafile=allinone.par
+  reset=2002 type=formula formulafile=allinone.frm
   formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=-2.03524527280745500/-0.010778095131324\
   12/941.8878/1/130/6.8422719449665e-006 params=1/2.\
@@ -2210,7 +2210,7 @@ Rebirth_of_theFOTD { ; time=0:06:34.64--SF5 on a P200
   iEgWCcJBaMA`P9_S9eoBglDii }
 
 zoom2{
-  reset=2002 type=formula formulafile=juliax.par formulaname=test
+  reset=2002 type=formula formulafile=juliax.frm formulaname=test
   passes=1 corners=-0.1779712/0.1779712/-0.1334784/0.1334784
   params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
   logmap=7
@@ -2341,7 +2341,7 @@ Mandelbrot_Glory   { ; time=0:12:49.07 -- SF5 on p200
   0sz0nz0kz0gz0dz0_z0Xz0Sz0 }
 
 cirrus             { ; 2 minutes at 200mhz, 640x480
-  reset=1960 type=formula formulafile=cirrus.par
+  reset=1960 type=formula formulafile=cirrus.frm
   formulaname=OblateVB passes=1 center-mag=-1.584890\
   27912513300/+0.01512015871562687/137.8441/1.9206/\
   -4.818/3.522 params=0/-1.36818/6/0 float=y
@@ -2387,7 +2387,7 @@ Julia_Octagon      { ; time=0:70:48 at 200MHZ SF5
   QKiMKmJLpFLtBLw8IrFFmMDiT }
 
 cirrus             { ; 2 minutes at 200mhz, 640x480
-  reset=1960 type=formula formulafile=cirrus.par
+  reset=1960 type=formula formulafile=cirrus.frm
   formulaname=OblateVB passes=1 center-mag=-1.584890\
   27912513300/+0.01512015871562687/137.8441/1.9206/\
   -4.818/3.522 params=0/-1.36818/6/0 float=y
@@ -2434,7 +2434,7 @@ A_Head_of_Bubbles  { ; time=0:06:45.10--SF5 on a P200
   0000000000000000000000000 }
 
 start                 {
-  reset=2002 type=formula formulafile=juliax.par formulaname=test
+  reset=2002 type=formula formulafile=juliax.frm formulaname=test
   passes=1 corners=-1.6/1.6/-1.2/1.2 params=-1.7435/0/0/0 float=y
   maxiter=2110000000 fillcolor=0 inside=0 logmap=yes
   colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
@@ -2445,7 +2445,7 @@ start                 {
   }
 
 zoom1                 {
-  reset=2002 type=formula formulafile=juliax.par formulaname=test
+  reset=2002 type=formula formulafile=juliax.frm formulaname=test
   passes=1 corners=-0.5632/0.5632/-0.4224/0.4224 params=-1.7435/0/0/0
   float=y maxiter=2110000000 fillcolor=0 inside=0 logmap=3
   colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
@@ -2456,7 +2456,7 @@ zoom1                 {
   }
 
 zoom2                 {
-  reset=2002 type=formula formulafile=juliax.par formulaname=test
+  reset=2002 type=formula formulafile=juliax.frm formulaname=test
   passes=1 corners=-0.1779712/0.1779712/-0.1334784/0.1334784
   params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
   logmap=7
