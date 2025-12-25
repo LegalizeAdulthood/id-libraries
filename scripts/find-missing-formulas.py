@@ -52,9 +52,13 @@ def parse_validation_output(input_source):
     return missing_entries
 
 
-def find_frm_files(directory):
+def find_frm_files(directory, underscore_only=True):
     """
-    Find all _*.frm files in the specified directory, excluding _*_dup.frm files.
+    Find formula files in the specified directory.
+    
+    Args:
+        directory: Directory to search
+        underscore_only: If True, only return _*.frm files; if False, return all .frm files
     
     Returns:
         list: List of paths to formula files
@@ -70,11 +74,18 @@ def find_frm_files(directory):
     
     try:
         for filename in os.listdir(directory):
-            if filename.lower().startswith('_') and filename.lower().endswith('.frm'):
+            if filename.lower().endswith('.frm'):
                 # Skip files matching the _*_dup.frm pattern
                 if dup_pattern.match(filename):
                     continue
-                frm_files.append(os.path.join(directory, filename))
+                
+                # Filter based on underscore prefix if requested
+                if underscore_only:
+                    if filename.lower().startswith('_'):
+                        frm_files.append(os.path.join(directory, filename))
+                else:
+                    if not filename.lower().startswith('_'):
+                        frm_files.append(os.path.join(directory, filename))
     except OSError as e:
         print(f"REM Error listing directory '{directory}': {e}", file=sys.stderr)
     
@@ -170,13 +181,15 @@ def main():
     print(f"REM   across {len(missing_entries)} formula files", file=sys.stderr)
     
     print(f"REM Searching for formulas in: {formula_dir}", file=sys.stderr)
-    frm_files = find_frm_files(formula_dir)
     
-    if not frm_files:
+    # First, search in _*.frm files
+    frm_files_underscore = find_frm_files(formula_dir, underscore_only=True)
+    
+    if not frm_files_underscore:
         print(f"REM No _*.frm files found in {formula_dir}", file=sys.stderr)
-        sys.exit(1)
+    else:
+        print(f"REM Found {len(frm_files_underscore)} _*.frm files to search", file=sys.stderr)
     
-    print(f"REM Found {len(frm_files)} formula files to search", file=sys.stderr)
     print(f"REM", file=sys.stderr)
     
     # Track what we find
@@ -194,10 +207,11 @@ def main():
             # Map entry name to its target formula file
             target_files[entry_name] = formula_file
     
-    print(f"REM Searching for {len(all_missing)} unique formula entries...", file=sys.stderr)
+    print(f"REM Searching for {len(all_missing)} unique formula entries in _*.frm files...", file=sys.stderr)
     
+    # First pass: search in _*.frm files
     for entry_name in sorted(all_missing.keys(), key=str.lower):
-        results = search_for_entry(entry_name, frm_files)
+        results = search_for_entry(entry_name, frm_files_underscore)
         
         if results:
             found_entries[entry_name] = results
@@ -206,6 +220,39 @@ def main():
                 print(f"REM   in {os.path.basename(frm_file)} (lines {entry.start_line}-{entry.end_line})", file=sys.stderr)
         else:
             not_found.append(entry_name)
+    
+    # Second pass: search in non-underscore files for entries not found
+    if not_found:
+        print(f"REM", file=sys.stderr)
+        print(f"REM {len(not_found)} entries not found in _*.frm files", file=sys.stderr)
+        print(f"REM Searching in other .frm files...", file=sys.stderr)
+        
+        frm_files_other = find_frm_files(formula_dir, underscore_only=False)
+        
+        if frm_files_other:
+            print(f"REM Found {len(frm_files_other)} other .frm files to search", file=sys.stderr)
+            
+            still_not_found = []
+            for entry_name in not_found:
+                results = search_for_entry(entry_name, frm_files_other)
+                
+                if results:
+                    found_entries[entry_name] = results
+                    print(f"REM Found: {entry_name}", file=sys.stderr)
+                    for frm_file, entry in results:
+                        print(f"REM   in {os.path.basename(frm_file)} (lines {entry.start_line}-{entry.end_line})", file=sys.stderr)
+                else:
+                    still_not_found.append(entry_name)
+            
+            not_found = still_not_found
+        else:
+            print(f"REM No other .frm files found in {formula_dir}", file=sys.stderr)
+    
+    # Print final not found list
+    if not_found:
+        print(f"REM", file=sys.stderr)
+        print(f"REM Still not found after searching all files:", file=sys.stderr)
+        for entry_name in not_found:
             print(f"REM NOT FOUND: {entry_name}", file=sys.stderr)
     
     print(f"REM", file=sys.stderr)
