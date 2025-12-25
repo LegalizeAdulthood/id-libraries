@@ -1,0 +1,128 @@
+; Path: unixg.ubc.ca!ubc-cs!news-server.csri.toronto.edu!bonnie.concordia.ca!
+;     uunet!zaphod.mps.ohio-state.edu!malgudi.oar.net!yfn.ysu.edu!ysub!psuvm!
+;     mxd120
+; From: MXD120@psuvm.psu.edu (Beaker)
+; Newsgroups: alt.fractals
+; Subject: TBOF .par file : Here it is
+; Message-ID: <92046.133244MXD120@psuvm.psu.edu>
+; Date: 15 Feb 92 18:32:44 GMT
+; Organization: Penn State University
+; Lines: 117
+;  
+; Here is the .par file of the color maps from _The Beauty of Fractals_.
+;  
+; ------------------------------------------------------------------------
+ 
+; Beaker's .par file
+; All the Mandelbrot and Julia set maps from the book
+; _The Beauty of Fractals.  I didn't add the other maps because I can't
+; seem to get them to come out right.  If I get them working, I'll post
+; changes to alt.fractals
+;
+; I only put in the types and corners because I know people have favorite
+; color maps and settings.  My personal choices for all of there are the
+; chroma color map, about 2000 iterations, and a bailout of 11.
+;
+; Disclaimer:  These are the numbers from the back H.O. Peitgen and
+; P.H. Richters book _The Beauty of Fractals_, published by
+; Springer-Verlag.  The book notes that some of the plates in the
+; book might be different becasue of cropping during production.  I
+; also take no reponsibility for any typo in the data, and all that
+; other junk.
+;
+; ENJOY!
+ 
+ 
+Map26 {
+        type=mandel
+        corners=-2.25/0.75/-1.5/1.5
+        }
+ 
+Map27 { ; Also Maps 52-54
+        type=mandel
+        corners=-0.19920/-0.12954/1.01480/1.06707
+        }
+ 
+Map29 {
+        type=mandel
+        corners=-0.95/-0.88333/0.23333/0.3
+        }
+ 
+Map30 {
+        type=mandel
+        corners=-0.73/-0.4082/0.49216/0.71429
+        }
+ 
+Map33 { ; Also Map 51
+        type=mandel
+        corners=-1.781/-1.764/0.0/0.013
+        }
+ 
+Map36 {
+        type=mandel
+        corners=-0.75104/-0.7408/0.10511/0.11536
+        }
+ 
+Map38 {
+        type=mandel
+        corners=-0.74758/-0.74624/0.10671/0.10779
+        }
+ 
+Map40 {
+        type=mandel
+        corners=-0.746541/-0.746378/0.107574/0.107678
+        }
+ 
+Map42 { ; Also Maps 100-101
+        type=mandel
+        corners=-0.74591/-0.74448/0.11196/0.11339
+        }
+ 
+Map44 { ; Also Maps 46, 49
+        type=mandel
+        corners=-0.745538/-0.745054/0.112881/0.113236
+        }
+ 
+Map45 { ; Also Map 47
+        type=mandel
+        corners=-0.745468/-0.745385/0.112979/0.113039
+        }
+ 
+Map48 { ; Also Map 50
+        type=mandel
+        corners=-0.7454356/-0.7454215/0.1130037/0.1130139
+        }
+ 
+Map49 {
+        type=mandel
+        corners=-0.7454301/-0.7454289/0.1130076/0.1130085
+        }
+ 
+Map58 { ; Also Map2 59, 60
+        type=mandel
+        corners=-1.254024/-1.252861/0.046252/0.047125
+        }
+ 
+Map18 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=0.32/0.043
+        }
+ 
+Map20 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.12375/0.56508
+        }
+ 
+Map22 { ; Also Map 25
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.39054/-0.58679
+        }
+ 
+Map24 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.11/0.67
+        }

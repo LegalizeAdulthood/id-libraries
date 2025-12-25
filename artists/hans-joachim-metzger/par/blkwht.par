@@ -1,0 +1,322 @@
+;                               
+;                              Black and White
+;                       by Donald Archer CIS 71455,657
+;
+;           A series of 30 images drawn in black and white (and  
+;           greyscale) in Fractint v18, and tested in v18.2, mostly  
+;           as an exercise in design. 
+;
+;           One can get drugged or mugged by computer color;
+;           it is so easily accessed in Fractint in so many 
+;           formidable and dazzling maps, and so faciley
+;           created, edited, manipulated, rotated (and cycled) 
+;           as to provide, I think, a design crutch to many a weak 
+;           and unsupportable image. (I often review my full-color 
+;           fractals in monocolor to confirm that the necessary 
+;           design elements may not indeed be amiss.) Black and white
+;           brings one back to the essentials.
+;            
+;           Some of these images are merely variations of fractals
+;           created in color and available for the most part 
+;           in other of my parameter files; others were created
+;           especially for black and white rendering.
+;
+;           Some of these images have been outputted successfully
+;           to a 300 dpi laser jet on glossy white media and others 
+;           to a Canon bubble jet.
+;           
+;           Rendering times are indicated on my 486-50 at resolution
+;           of 1024 x 768 x 256c.
+;
+;           Besides FRACTINT.FRM, the file DA.FRM (uploaded along
+;           with this parameter file) is required in your current 
+;           directory.
+ 
+
+ALL_IMAGES_HEREIN  {COPYRIGHTED 1993, DONALD ARCHER, CIS 71544,657
+  }
+A_NOTE_TO_VIEWERS  {SOME IMAGES REQUIRE DA.FRM IN CURRENT DIRECTORY                          
+  }
+DAbw001            { ; 0:02:02.05 - Spiral
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lambda(fn||fn) function=sinh/sqr passes=b
+  corners=-1.841263/1.828873/-1.408447/1.354767
+  params=1.1000000000000001/0.20000000000000001/1 float=y maxiter=1000
+  inside=epsiloncross outside=imag decomp=64
+  colors=000<2>000332<14>zzy<15>000<63>000332<14>zzy<15>000<63>000332<14>z\
+  zy<15>000<27>000
+  }
+
+DAbw002            { ; 0:00:08.48 - Tesseral ellipse
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm
+  formulaname=DAFRM05 passes=t corners=-2/2/-1.5/1.5 params=5.5
+  float=y maxiter=3000 fillcolor=0 inside=period outside=summ
+  potential=255/300/5000 invert=20/0/0 decomp=256 finattract=y
+  colors=zzz333<14>zzz<15>000<30>000<15>zzz<15>000<63>000<15>zzz<15>000<63\
+  >000
+  }
+
+DAbw003            { ; 0:00:33.66 - Letter C
+                     ; (c) 1993, Donald Archer, CIS 71544,657  
+  reset type=julfn+exp function=conj passes=b corners=-4/4/-3/3
+  params=0.25/0.25 float=y outside=mult
+  colors=000NNM<9>zzy<15>000<31>000332<14>zzy<15>000<31>000332<14>zzy<15>0\
+  00<30>000332<14>zzy<15>000<31>000332<3>JJI
+  }
+
+DAbw004            { ; 0:01:29.58 - Flying saucers
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=tim's_error function=cotanh
+  corners=-0.45236284/-0.29296946/-1.0212565/-0.90704381
+  params=0.10000000000000001/0.34999999999999998 fillcolor=15
+  decomp=256
+  colors=000jjj<3>zzz<15>000<63>000<15>zzz<15>000<63>000<15>zzz<15>000<30>\
+  000<10>fff
+  }
+
+DAbw005            { ; 0:01:13.90 - Tesseral clock
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=sqr(1/fn) function=recip passes=t
+  corners=-1.9843/5.4397/-2.068192/2.872775 float=y fillcolor=15
+  inside=epsiloncross decomp=128 biomorph=1
+  colors=000FFF<11>zzz<15>000<222>000<2>BBB
+  }
+
+DAbw006            { ; 0:03:23.83 - Circles, superimposed
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=magnet1m passes=b
+  corners=1.3171142/1.4147142/-0.0366/0.0366 float=y maxiter=1000
+  decomp=64 colors=000<29>000332<14>zzy<15>000<192>000
+  }
+
+DAbw007            { ; 0:02:51:26 - Pick-ax
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=tim's_error function=cotan
+  corners=1.9592761/2.3590235/-0.54331803/-1.0602078/2.3590235/-1.0602078
+  params=0.79000000000000004/0.79000000000000004 fillcolor=15
+  inside=maxiter decomp=256 biomorph=1
+  colors=000<111>000<15>zzz<15>000<110>000
+  }
+
+DAbw008            { ; 0:08:32.07 - Umbrellas on end
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=fractint.frm
+  formulaname=Fzppfnsr function=recip
+  corners=-2.17298651/-2.09186149/-0.0527973678/-0.00112496411 float=y
+  maxiter=1500 inside=maxiter outside=real decomp=64 biomorph=1
+  colors=000<17>000<15>zzz<15>000<204>000
+  }
+
+DAbw009            { ; 0:00:55.80 - Ellipse in the round
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=tanh/sqr passes=b
+  corners=-4/4/-3/3 params=2/2/3 float=y bailout=200 fillcolor=15
+  decomp=256 biomorph=1
+  colors=000<48>000332<14>zzy<15>000<30>000332<14>zzy<15>000<63>000332<14>\
+  zzy<15>000<14>000
+  }
+
+DAbw010            { ; 0:04:05.47 - Lyapunov object
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lyapunov
+  corners=3.27667047/3.281349151/3.672606109/3.691298706/3.264638111/3.687\
+  039387 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<13>888444333<14>zzz<5>ccc
+  }
+
+DAbw011            { ; 0:01:06.14 - Mandelbrot ellipse
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=manfn+zsqrd function=sqr passes=b
+  corners=1.518111/-1.905733/-2.243876/2.322737/-1.905733/2.322737
+  float=y maxiter=1000 inside=maxiter decomp=256
+  colors=zzzccc<161>000zzz<90>ccc
+  }
+
+DAbw012            { ; 0:03:23.16 - Fan blade
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm
+  formulaname=DAFRM01 function=flip passes=b
+  corners=-0.0112155676/0.011002779/0.0139911175/-0.0155820251/0.011002779\
+  /-0.0155820251 inside=maxiter decomp=256
+  colors=zzz`Z_<96>DCCDCCDCCCBBCB9BB9AB9BAABA8AA89A8A99A979978979889868867\
+  868778757756757667646645646556535534535445424423424334313312313223202201\
+  20211210110010100<3>000zyxzwx<103>`Z_
+  }
+
+DAbw013            { ; 0:01:41:18 - City slicker
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm
+  formulaname=DAFRM01 function=conj
+  corners=-2.042709/0.9572705/1.927715/-2.072281/0.9572705/-2.072281
+  colors=000zzz<4>zzz000<30>000zzz<30>zzz000<9>000GGG<3>000<4>JJJ000<9>000\
+  zzz<30>zzz000<6>0000OOKKK<4>000<3>FFF000<9>000zzz<32>zzz000<18>000NNN000\
+  <8>000zzz<24>zzz
+  }
+
+DAbw014            { ; 0:01:41:18 - Martial artist in kimona
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM01
+  function=conj
+  corners=-2.042709/0.9572707/1.927715/-2.072281/0.9572707/-2.072281
+  colors=000UUUjjjUUUKKKvvvzzz<15>000<30>000<15>zzz<15>000<31>000<15>zzz<1\
+  5>000<31>000<15>zzz<15>000<31>000<9>bbb
+  }
+
+DAbw015            { ; 0:20:32.52 - Elm leaf 
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM02
+  function=sqr
+  corners=-2.14800471/-2.14830959/0.00011998415/-0.000108599663
+  inside=maxiter decomp=256
+  colors=000<15>000<15>zzz<15>000<31>000<15>zzz<15>000<31>000<15>zzz<15>00\
+  0<30>000<15>zzz<15>000<15>000
+  }
+
+DAbw016            { ; 0:03:37.83 - Strange logo
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM03
+  function=exp
+  corners=-2.1049454/-1.7755104/0.21875078/-0.2205171/-1.7755104/-0.220517\
+  1 potential=255/200/200 colors=000<169>000<15>zzz<15>000<52>000
+  }
+
+DAbw017            { ; 0:05:06.72 - Bottle
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm
+  formulaname=DAFRM03 function=exp
+  corners=-1.377635/0.6503603/1.35202/-1.352002/0.6503603/-1.352002
+  potential=255/600/1000 colors=000zzy<59>221110000<62>zzy000<127>000
+  }
+
+DAbw018            { ; 0:13:10.60 - Spade
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM04
+  function=sqr
+  corners=0.74968469/1.2872681/0.34969419/-0.36713439/1.2872681/-0.3671343\
+  9 potential=255/300/800 colors=000<71>000<15>zzz<15>000<150>000
+  }
+
+DAbw019            { ; 0:17:50.98 - Orient ship
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM04
+  function=conj
+  corners=-0.1501767/1.661807/1.222902/-1.193071/1.661807/-1.193071
+  potential=255/300/800
+  colors=000aaa<24>zzz000<127>000zzz<60>111000111<35>```
+  }
+
+DAbw020            { ; 0:04:09.59 - Untitled
+                     ; (c) 1993, Donald Archer, CIS 71544,657 
+  reset type=tim's_error function=cosh
+  corners=-1.922931/-0.1849449/-0.08926207/1.174715
+  params=2.8999999999999999/0.25 float=y fillcolor=15 inside=maxiter
+  decomp=256 biomorph=1
+  colors=000<12>000<15>zzz<15>000<30>000<15>zzz<15>000<31>000<15>zzz<15>00\
+  0<31>000<15>zzz<15>000<18>000
+  }
+
+DAbw021            { ; 0:00:20.92 - Shark with bubbles 
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset=1800 type=tim's_error function=cotan
+  corners=2.33532216/2.38061479/0.91823598/-0.42704834/3.01754324/0.036172\
+  358 params=0.25/0.25 float=y bailout=100
+  colors=000cccKKKzzz<15>000<222>000<12>nnn
+  }
+
+DAbw022            { ; 0:02:53.33 - Flying saucers 
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset type=tim's_error function=cotanh
+  corners=-0.45533902/-0.28997332/-1.0293629/-0.91086501
+  params=0.10000000000000001/0.34999999999999998 fillcolor=15
+  decomp=256
+  colors=000jji<3>zzy<15>000<31>000332<14>zzy<15>000<31>000332<14>zzy<15>0\
+  00<31>000332<14>zzy<15>000<30>000332<9>ffe
+  }
+
+DAbw023            { ; 0:02:41.38 - Portrait of a lady
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset=1800 type=tim's_error function=sqr
+  corners=-1.0548475/-0.40832108/0.41191065/-0.42400318/-0.40832108/-0.424\
+  00318 bailout=100 inside=0
+  colors=000vvvzzzwwwzzzooo<11>444333<14>zzz<15>000<15>zzz<15>000<15>zzz<1\
+  5>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<13>rrr
+  }
+
+DAbw024            { ; 0:03:47.89 - Heart 
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset type=tim's_error function=cosh passes=b
+  corners=-1.0575715/-0.95580596/-1.3895313/-1.6006287/-0.95580596/-1.6006\
+  287 params=0.5/1.5 maxiter=100 fillcolor=15 outside=real decomp=256
+  biomorph=1
+  colors=000<8>000NNN000<8>000zzz<30>zzz000<30>000zzz<30>zzz000<9>000GGG<3\
+  >000<4>JJJ000<9>000zzz<30>zzz000<6>0000OOKKK<4>000<3>FFF000<9>000zzz<32>\
+  zzz000<9>000
+  }
+
+DAbw025            { ; 0:03:20.92 - Mrs. Quark
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=tim's_error function=sinh passes=b
+  corners=-0.348766/-1.432225/-1.201721/0.665133/-1.662904/0.497367
+  params=0.98999999999999999/0.28999999999999998 float=y fillcolor=15
+  decomp=256 biomorph=1
+  colors=000<3>000zzz<60>111000111<61>zzz000<123>000
+  }
+
+DAbw026            { ; 0:02:40.33 - Easy rider
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset type=tim's_error function=cotan passes=b
+  corners=-1.392765/-0.75099307/-0.47696471/-1.30672/-0.75099307/-1.30672
+  params=0.89000000000000001/0.89000000000000001 fillcolor=15
+  inside=maxiter decomp=256 biomorph=1
+  colors=000ccc<9>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<4>ggg
+  }
+
+DAbw027            { ; 0:00:50.04 - Circle with tubes
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset type=barnsleyj2
+  corners=-1.220602/-0.7778585/-0.16602784/0.166013 params=50/50
+  maxiter=50 inside=bof60 outside=mult potential=255/300/1000
+  colors=000<30>000<2>BBBcccJJJ<10>zzz<15>000<31>000<15>zzz<15>000<31>000<\
+  15>zzz<15>000<31>000<15>zzz<15>000
+  }
+
+DAbw028            { ; 0:00:07.96 - Matched semi-circles
+                     ; (c) 1993, Donald Archer, CIS 71544,657     
+  reset=1732 type=unity
+  corners=-4.340329/4.340329/-0.33167435/0.33167435/-1.533701/-4.0738226
+  float=y maxiter=2 inside=bof60 periodicity=0
+  colors=000jjj<3>zzz<15>000<63>000<15>zzz<15>000<63>000<15>zzz<15>000<30>\
+  000<10>fff
+  }
+
+DAbw029            { ; 0:00:30.60 - Classic heart
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=tim's_error function=log
+  corners=0.14150863/-0.063281452/-0.17988955/0.084889547/-0.063281452/0.0\
+  84889547 params=0.050000000000000003/0.050000000000000003 float=y
+  fillcolor=15 decomp=256 biomorph=1
+  colors=zzzzzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+DAbw030            { ; 0:00:42.84 - Gazelle on haunches with tail
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=tim's_error function=sin
+  corners=-3.767516/1.336443/-2.559489/1.152484
+  params=2.7000000000000002/2.2000000000000002 potential=255/600/0
+  colors=000zzzyyy000www<57>111000111<61>zzz000<127>000
+  }
+
+; 8/31/93

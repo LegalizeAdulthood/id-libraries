@@ -1,0 +1,83 @@
+comment { ; narrative copyright Kerry Mitchell 18jan98
+
+The Bubble Method
+
+The bubble method is an extension of Fractint's bof60 scheme.  In
+bof60, the interior of the fractal is colored by how closed the iterate
+comes to the origin.  In the bubble method, a specific value is set as
+the threshold.  Each step, the magnitude of the iterate is compared to
+the threshold.  If the current magnitude is smaller, it becomes the new
+threshold level.  The effect is to cover the fractal with "bubbles",
+circles the radius of the threshold.  Below a certain threshold value,
+the image is a dust of small, disconnected bubbles.  At a particular
+theshold value, which varies with the parameter c, the circles all
+touch.  Beyond this, the circles squish into each other, like mounds
+of soap bubbles.
+
+At bailout, if the image is colored by the last threshold, each bubble
+will be filled with rings of concentric circles, representing the range
+of minima from the original threshold level down to zero.
+
+Alternatively, the bubbles can be colored by the polar angle of the
+iterate, as in the standard Fractint decomposition method.  Here, the
+disks become filled with radial lines of color, emminating from the
+center of the disk.
+
+The formulas "bubbleboth" (Mandelbrot and Julia variations) combine
+the concentric circle and ray colorings.  The magnitude of the final
+minimum is scaled into an angle.  This is averaged with the polar angle
+of the final iterate, using user-supplied weights.  This allows the
+specification of either circles or rays using the same formula.  In
+between (for example, using equal amounts of circle and ray) are swirls.
+A judicious choice of color map will eliminate the branch cuts that can
+be seen with the swirls.
+
+}
+
+justcircles        { ; copyright Kerry Mitchell 18jan98
+;
+; uses the bubbleboth_jul formula to only show concentric circles
+;
+  reset=1960 type=formula formulafile=bubble.frm periodicity=0
+  formulaname=bubbleboth_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/1000/0.23/1/0 float=y maxiter=256 inside=0
+  cyclerange=0/255 colors=000<40>x00z00z00<40>zy0zz0zz1<39>\
+  zzxzzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000 decomp=256
+  }
+
+justrays           { ; copyright Kerry Mitchell 18jan98
+;
+; uses the bubbleboth_jul formula to only show rays of color
+;
+  reset=1960 type=formula formulafile=bubble.frm
+  formulaname=bubbleboth_jul center-mag=0/0/0.85 decomp=256
+  params=0/1/1000000/0.5/0/1 float=y maxiter=256 inside=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0\
+  zz0yz<39>02z00z00z<41>000 cyclerange=0/255 periodicity=0
+  }
+
+julia-swirls       { ; copyright Kerry Mitchell 18jan98
+;
+; uses the bubbleboth_jul formula to combine circles & rays
+; into swirls
+;
+  reset=1960 type=formula formulafile=bubble.frm
+  formulaname=bubbleboth_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/1000/0.185/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100\
+  <20>z00<20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000
+  }
+
+mandelbrot-swirls  { ; copyright Kerry Mitchell 18jan98
+;
+; uses the bubbleboth_man formula to combine circles & rays
+; into swirls
+;
+  reset=1960 type=formula formulafile=bubble.frm passes=1
+  formulaname=bubbleboth_man center-mag=-0.5/0/0.88 periodicity=0
+  params=1000/0.5/1/1 float=y maxiter=256 inside=0 decomp=256
+  colors=000<20>z00<19>zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<2\
+  0>z00<20>zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+

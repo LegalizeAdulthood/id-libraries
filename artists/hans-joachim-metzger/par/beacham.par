@@ -1,0 +1,154 @@
+; This parameter file by Bradley Beacham, (c) March 1993
+; Feel free to use it how ever you like.
+
+S-S-S              { ; Colorful curves.
+  reset type=lambdafn function=ident passes=b
+  corners=-4.0/3.992188/-2.992188/3.0 params=1/0.1 maxiter=1000
+  colors=000ZXC<2>pxFODA<4>Y24u1xTEL<2>k9qUFB<3>yD7TLEZSHNFD<6>RIWfjrNFE<5>LJX\
+  KK`MLB<5>GtFpykEzG<2>fJa`EKRM`GUq<7>eFX66z<7>6dJ<3>U3_<7>dmc<3>itckvbklc<2>l\
+  Jgm8ikDg<6>YkO<2>OWcKLO<4>EWiNGB<5>NMDOOEQJJ<4>ffxXUIKFG<4>2GfUOHRFK<3>fCsOI\
+  D<3>SVNUZQTII<4>x_pOGO<2>UMzMJC<2>HVHkETKMJ<2>BifQJI<4>fgqXXRfogNMC<3>RmIOKF\
+  <6>axiGEJ8CR0AZLHF<4>7S_OroNIB<5>O`CPdDOKE<5>_maNJG<6>PooLHE<6>5ZbQGG<4>gMgN\
+  FI<5>JCzPKE<4>_hWFML7TV71cPIH<5>`bqZFTTOB
+  }
+
+Nova               { ; Color-cycle with different palettes.  Wow man, heavy...
+  reset type=newton passes=b corners=-0.416/0.416/-0.312/0.312 params=5
+  float=y colors=@default.map
+  }
+
+Agate              { ; Looks best at high resolutions
+  reset type=magnet2j
+  corners=-6.0247041/-6.0609523/4.3577948/4.4481022/-6.081101/4.4329907
+  params=1.98395777111386/0.254216955369005 float=y periodicity=0
+  colors=000B5DRIT<5>6kJUJX<4>XpkSS`QfgOunXIW`OZdUaiUFzj0RDR<6>4A0YE`aGgPIW<3>\
+  1ddRGT<6>3aHdHMoLEzP5XLV<3>ltZ_BV<3>z0bk10TJNSQFRX8Qc0ROYNZbJigUGW<5>R`lRJZ<\
+  3>DitQN_<3>AzwYPR<2>lyHRR_NeeSCW<4>G6eXCT<5>p6HSIU<6>7sYTFR<6>IT5WKQ<4>hs61r\
+  lWDX<6>kGtPKS<2>7eLSKR<2>MdFSMX<3>JylWDO<2>dB3
+  }
+
+S-S-S-2            { ; Like a pattern of torn squares of colored paper
+  reset type=lambdafn function=ident passes=b
+  corners=-4.0/3.992188/-2.992188/3.0 params=0.85/0.43 finattract=y
+  periodicity=0
+  colors=000PJJNNIX4T<4>O5w_EFbO6Y8N<2>YNOLRJ8mF_4Za4jd5wVAN<6>5sL_AN<5>llTID5\
+  SAPMHSb4M<3>x6EWCK<3>Kj4_5Sa6Xd8aZ5N<6>jGKOVMEvKW4M<5>JABTCK<4>4s23p3W5N<6>G\
+  DRU5L<3>CDCUAQ<5>4ohUCN<5>4zMWFM<2>PmHW6O<5>HKWY6O<6>VM`a5T<2>mBjYAK<4>bf1OP\
+  DR5X<2>38z1IGP7GFB95F1YHR<2>WueK8G5C9KVf5uza5Ne6Mj7M
+  }
+
+Scaly              { ; Mathematical eczema?  Pretty, actually...
+  reset type=barnsleyj2 passes=b
+  corners=-1.45837/-1.036206/-1.158682/0.130596/-1.92523/-0.536183
+  params=0.6/0.95
+  colors=000C2Q<16>H4eH4fG5d<15>1J90K61L7<24>kxp<19>2Vi<6>gNd<6>eFKJMu<25>KNHU\
+  PrdSnJNu<22>9oI
+  }
+
+Frosty             { ; Delicate Mandelbrot
+  reset type=mandel passes=b
+  corners=-0.4642972/-0.4539523/0.57650171/0.5842607 maxiter=1000
+  colors=000oPF<45>_HN_HNZIO<21>MTd<16>p`_r`_r`_<54>RxfRxfSwe<46>sfW<15>PRr<35\
+  >xQzyQzxPy<6>vNs
+  }
+
+Alien              { ; Here's looking at you!
+  reset type=fn+fn function=cosxx/sqr passes=2
+  corners=-0.373001/0.376266/3.048996/3.610764 params=1/0/1 maxiter=1000
+  potential=255/400/1000
+  colors=000PWWCAT<17>_Mn<8>7EE<22>xUg<11>AQ2<16>t2C<11>Rjv<3>hBW<28>vtewvfute\
+  <12>KNO<9>pPW<11>dOObNNbMP<10>l3q<7>teIujDtjD<13>aaM_`N__N<26>a0RmUw<7>nUsoT\
+  rnUm<7>ca8ab2`a6<4>RXR
+  }
+
+Pyramid-Power      { ; X-tra Mystical!
+  reset type=fn(z)+fn(pix) function=cosxx/ident passes=2
+  corners=-9.544263/7.978159/4.518505/11.077535 params=0/0/1 outside=summ
+  potential=255/200/500
+  colors=CCC71E<2>aAB<7>b5TiPbqhlznu<3>gYS<6>WSg<7>xl6<4>oOVmJ`mLXmOT<17>03z<2\
+  >00U
+  }
+
+Mothership         { ; A maternal UFO
+  reset type=fn(z)+fn(pix) function=tanh/cos passes=2
+  corners=-0.972139/-0.333603/1.095054/1.590898 params=0/0/1 maxiter=1000
+  outside=summ potential=255/200/500
+  colors=000D3C<15>T8MU8MTAL<11>MMJPVOMNI<2>KQIEBy<27>KRJ61s<22>HLRPEQ<15>_65<\
+  14>ab1<16>C77<27>2zj<22>tKbvUfxbjXMX66K<24>yt5<28>vpm<5>91AB2BC2C
+  }
+
+Thorns             { ; Electric succulents
+  reset type=lambdafn function=exp passes=2
+  corners=-1.171661/0.376694/1.165939/2.326721 params=3/0.4 maxiter=500
+  inside=-100 potential=255/800/50
+  colors=000LXa<20>mxPnyPnxQ<21>nhhnhingjngjmfi<20>TWY<14>GzmavXwrG<17>1en<15>\
+  TaHV`FX`DY`BZaC_bC<20>mtEnuElvD<5>ZyA<16>xED<6>X5e<27>z_9<21>H4BeJL<14>7Jg<8\
+  >KWa
+  }
+
+Black-Hole         { ; Plane of galaxies getting sucked in...
+  reset type=fn(z)+fn(pix) function=sqr/exp
+  corners=-0.8290482/-0.725247/0.7445879/0.6631179/-0.7525641/0.6426368
+  params=0/0/1/1 maxiter=250 colors=@blues.map
+  }
+
+YourBrainOnDrugs   { ; Any questions?
+  reset type=manzzpwr passes=b
+  corners=-0.405009/-0.193937/0.20716/0.365464 params=0/0/2 float=y
+  maxiter=300 inside=maxiter potential=255/400/100 finattract=y
+  colors=000sap<4>YN`TJXR_`Ppe<6>ftt<4>QJl<6>TeuUiwWij<2>dk5<2>pD2<5>qoQrvVqvY\
+  <3>ltm20tUx_WeVYNQ_3K<3>bFK<3>esB<5>gBFh3GjDQlO_Qj_Xtb<6>eCc<10>sIK<13>RkjOn\
+  lNjk<6>GFY<13>mqD<15>Csl<3>wNB<14>rWerWgsWi<5>xXvYFt<2>LCF<10>7TB<15>iAukIjm\
+  R_<4>_oM<3>2J1<7>0fR<6>3aD<3>qKJ<6>OnTYSUg5V<3>jQ4<4>AQxIPpROgMW_GcSViKioB
+  }
+
+Pyramid-Power-2    { ; A radient pyramid, or maybe a walkway down a long tube
+  reset type=spider
+  corners=-0.142247/0.104212/0.165441/-0.163118/0.104212/-0.163118
+  inside=zmag outside=summ periodicity=4
+  colors=000000<7>ZW5<6>089<10>YM9aOAbPA<14>lV4<4>d_Ec`GcaG<22>zz0<11>QgoSfnTd\
+  n<20>22d00c11c<28>WcJYeIXfH<7>SkB
+  }
+  
+Burning-Cross      { ; Semi O'Keefeish
+  reset type=fn+fn function=cosxx/sqr passes=2
+  corners=-0.852036/0.857071/-1.587418/0.459091 params=1/0/1 maxiter=1000
+  potential=255/400/1000
+  colors=000gUR<33>jzT<12>rM9<8>sINsHOsHO<27>yWGzXFyXF<8>naHmbHkbHjcIicIgdI<17\
+  >KoMIpNIpN<17>KxFKxFLwH<2>NvOOuQPtSQsVRrX<10>`iu<18>TTZ<3>43L<29>Y2P<4>jo5mz\
+  0mu2<8>h4S<2>e9Q<4>zDQ<8>hMQfNRfOR<5>gTR
+  }
+
+Coils              { ; Pretty, with odd blotchy effect at low resolutions
+  reset type=julia passes=2
+  corners=0.0089555/0.902911/-0.234264/0.268836/0.0892916/-0.341378
+  params=-0.75069640214624/-0.0360122881985908 maxiter=1000
+  colors=000TYQ<2>1cF<5>LHEPDDRDM<3>bEw<2>H2q<6>PDsRFtRKo<3>RgT<7>P3C<6>m6e<7>\
+  sXc<2>KOP<7>gdf<2>5JzsRzlVYdZ4<5>4oQ<5>HNpKIuKQu<2>Nmtsm`Uge3`k<7>4Gc<3>ixi<\
+  6>YcK<4>Cl_<5>Yff<5>sUQRoZUqWXsSV7lV8pVAtVCx<2>`_M<3>IK2SwAicmW38WFWXRt<6>h1\
+  W<2>6e6wZm<7>quP<6>G_4<4>6Ui<5>el9<5>naN<5>VRE<5>bhpdlwchq<5>TKE<4>zD5<2>Nfg\
+  <3>JRa<5>JOR<5>EuU<4>aE`V8QN2F<2>OEVPI`QOY<4>_qJawFeiOjVXaWU
+  }
+
+Scaly-2            { ; Try different resolutions
+  reset type=sqr(1/fn) function=cotan passes=2
+  corners=-1.08344/1.08344/-0.81258/0.81258 float=y maxiter=256 inside=0
+  outside=mult
+  colors=000wKY<2>tzBp9b<3>JPUbSSHmEjKkXYrrH_<2>`nKr6f<5>H2rqEg<5>7yyw6_<4>rA9\
+  xB`<6>sp4w6d<4>o9_q9a<4>FOIgMkRbsrFa<4>MxJw6`<4>q7GWGZ2QSxDa<4>wlJr7_<3>UEDu\
+  5e<3>i1jf0leXPNw9q9f<5>9TsoYYm5Z<2>G2Gu5d<2>k1fx6bx5`x4Yx8bx3Ww2T<2>5De<2>9K\
+  NBNGDOE<4>QU1<4>T6HU1LSCR<2>Lhhddlx_ptZqJpWiAZVFTFKNiJa<2>0xRtEc<5>RyUk8a<2>\
+  7ESsHd<3>_zapNbgc`ZuYhX9fLMO_3u6c<3>h4XBiQqGZ<3>MsBrBc<6>7oSbCSHJFv7b<6>aFLt\
+  8e<6>PTlu9`<5>YS9eNcMcb2t`o7Y<3>GC2mGjbRpq6`<6>446X6N475tBe<6>Qnlv8Z<4>gM5u6\
+  f<5>a8u
+  }
+
+Berries            { ; Ril purty-like
+  reset type=sqr(1/fn) function=cotan passes=2
+  corners=-3.077955/3.077955/-2.308466/2.308466 float=y maxiter=256
+  inside=0 outside=mult potential=255/50/10
+  colors=CCCYCY<10>sCs<20>ECsCCsCEs<6>CSsCUsEUq<20>z_0k00000ECE<20>sCs<20>ECsC\
+  CsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>AC\
+  CCCC<9>WCW
+  }
+

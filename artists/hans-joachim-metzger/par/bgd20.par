@@ -1,0 +1,137 @@
+;*--------------------------------------------*
+;*  Fractint PAR file BGD20                   *
+;*  All images copyright BG Dodson 1994/1995  *
+;*  If you wanna use them, simply ASK nicely  *
+;*--------------------------------------------*
+;Now that the 'Great Fractal Lawsuit' of 1994/1995 is over, perhaps we can all
+;get back to fractals without worrying who's going to be ripping off our work.
+;A special thanks to Tim Wenger for his dedication to fractal artists and to
+;the Buskop Law Group for their fine representaton.
+
+BGD20_01           { ; Rainforest II :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075 Bob.Dodson@chemek.com
+                     ; Derived from my earlier Rainforest image
+  reset=1900 type=lambda passes=b
+  corners=0.86887595/0.70728945/1.3632924/-0.27582694/1.5974821/0.39181757
+  params=0.85/0.6 float=y maxiter=32000 inside=epsiloncross
+  outside=imag decomp=-2000
+  colors=00000O0PF00W00Z00b0h8000<7>00z00e<9>000<16>z0X<15>000<15>p0w<15>0\
+  00<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0e\
+  d0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<4>00K
+  }
+
+BGD20_02           { ; MirkWood Forest :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075 Bob.Dodson@chemek.com
+  reset=1800 type=mandellambda passes=b
+  corners=0.421963102/0.485794806/0.72065428/0.94881089/0.335427342/0.8360\
+  353 params=0/0 float=y maxiter=32000 inside=epsiloncross
+  outside=summ invert=1/0/0 decomp=256 distest=254/255/1024/768
+  colors=00033300A999CCCFFFADKLLL<11>vvv<15>000<27>007017037<13>4S4<13>2A2\
+  292171151131000<15>rAr<9>L4Lz00E3E<3>000<15>hh0<15>000<15>00r<15>000<2>B\
+  00E00H00K00O00<8>r00<15>000<15>0pp<12>0BB
+  }
+
+BGD20_03           { ; Tower of Quivering Chaos :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+  reset=1800 type=lambda(fn||fn) function=sin/sqr
+  corners=-0.21965553/0.379061199/-0.047740973/0.22346979/-0.134298672/-0.\
+  16155012 params=1/0.1/1 float=y maxiter=32000 inside=epsiloncross
+  outside=imag invert=0.208/0/0 decomp=-2000
+  colors=000s33<18>844<4>644644544444<57>yyyzzzzzzzzzzzzzzzzg3<44>v31v21u0\
+  0<11>r00r00r00q00q00q00<16>k00z00<69>Z22K22K22J33<2>c33k33r33z33x33u33
+  }
+
+BGD20_04           { ; Thistle Newton :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 16_2
+  reset type=newton passes=b
+  corners=-0.0955374216/0.0957856641/0.22965126/0.316629042/-0.0334223844/\
+  -0.0185550916 params=10 float=y maxiter=2399 inside=epsiloncross
+  invert=0.248/0/0 finattract=y
+  colors=000004<12>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15\
+  >hh0<14>330000003<14>00r<15>000<15>r00<15>000<15>0pp<14>044000222<14>hhh\
+  <14>333000000<12>003
+  }
+
+BGD20_05           { ; Binary Newton with flare :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 16_3
+  reset type=newton passes=b
+  corners=-0.00834312735661/-0.00813009190483/0.303737503796/0.30356947597\
+  6/-0.00821400337323/0.303539833777 params=10 float=y maxiter=2399
+  inside=epsiloncross invert=0.248/0/0 finattract=y
+  colors=000003<13>007017037<13>4S4<13>2A2292171151131000303<11>g7Ck8Dn9Er\
+  AFoAF<14>000<15>hh0<14>330000003<14>00r<15>000<15>zzz<15>000<15>0pp<14>0\
+  44000222<14>hhh<14>333000000<11>003
+  }
+
+BGD20_06           { ; Binary Newton #2 :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 16_04
+  reset type=newton passes=b
+  corners=-0.0083845307488/-0.0080946201027/0.303697851497/0.303597766607/\
+  -0.0082533722216/0.303546425706 params=10 float=y maxiter=2399
+  inside=epsiloncross invert=0.248/0/0 finattract=y
+  colors=000003<13>007017037<13>4S4<13>2A2292171151131000303<11>g7Ck8Dn9Er\
+  AFoAF<14>000<15>hh0<14>330000003<14>00r<15>000<15>zzz<15>000<15>0pp<14>0\
+  44000222<14>hhh<14>333000000<11>003
+  }
+
+BGD20_07           { ; Newton Ionization :: BG Dodson 1995
+                     ; Copyright (c) BG Dodson 1995 All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 16_5
+  reset type=newton
+  corners=-0.0236006202/0.0264121544/0.308316883/0.297236944/0.00103216936\
+  /0.150461551 params=10 float=y maxiter=2399 inside=period
+  invert=0.248/0/0 finattract=y
+  colors=000004<12>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15\
+  >hh0<14>330000003<14>00r<15>000<15>r00<15>000<15>0pp<14>044000222<14>hhh\
+  <14>333000000<12>003
+  }
+
+BGD20_08           { ; Beyond_The_Valley Of Thorns lies Salvation
+                     ; (c) BG Dodson August 1994  All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 12_1
+  reset=1820 type=mandel(fn||fn) function=cosh/sin
+  corners=-0.031035148/-0.40299699/-0.24754178/0.24875313/-0.40299699/0.24\
+  875313 params=0/0/0.5 float=y maxiter=20 inside=zmag outside=mult
+  invert=1.00011/-0.532221/0
+  colors=000234000<41>vihxkjxji<39>uROtQNrNO<2>mFOkCPkCP<72>v5Ov5Ou5O<76>H\
+  W`<8>58A067
+  }
+
+BGD20_09           { ; Garden of UnEarthly Delights :: BG Dodson 1994
+                     ; Copyright (c) BG Dodson 1994  All Rights Reserved
+                     ; CIS 71636,1075  Bob.Dodson@chemek.com
+                     ; REM 12_2
+  reset=1820 type=mandelfn function=exp passes=1
+  corners=-4.779139/7.220861/5.19554/-10.80446/7.220861/-10.80446
+  params=2.71828182845905/2.71828182845905 float=y maxiter=32000
+  bailout=9 outside=summ
+  colors=00000I<4>000<15>r00<15>000<15>0pp<14>044000222<14>hhh<14>33300000\
+  0<26>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<14>3300\
+  00003<14>00r<9>00L
+  }
+
+BGD20_10            { ; Untitled  (color map from Lee Skinner)
+                     ; BG Dodson // Apr 21 1994 // 71636,1075
+                     ; CIS 71636,1075   Bob.Dodson@chemek.com
+                     ; REM 12_3
+  reset=1820 type=mandelfn function=exp passes=1
+  corners=0.717488892/0.854595025/-3.53667224/-3.87825292/0.930805824/-3.8\
+  2109482 params=2.71828182845905/2.71828182845905 float=y
+  maxiter=32000 bailout=9 outside=summ
+  colors=0006G7<2>0A42B4<5>e_3lc2sg2zl1zi1<10>zB0<3>a00<2>`7M_9UZB`YEhVEhS\
+  DiPDiMCj<7>6L5<2>AO5<3>_S5fT9lU5sV5zW5<6>lEb<5>0SbHT6<8>3J6<2>ZJE<6>wgF<\
+  8>XKDUHDSGC<5>DC8AB79E47I0<9>nr_svcuuRwsEzq0<10>FOF<2>3FA<2>G95z0Zb5dn32\
+  z00<6>zpFscFp`FzzznZE<8>RCC<10>ca_dcaffdhhgkki<15>88C<8>TVLWYNYZO<3>gdW<\
+  5>Jiz<7>qiHvhBxh6zg0<8>__4XZ5WZ5<6>KVAIUBHSB<4>8I7
+  }
