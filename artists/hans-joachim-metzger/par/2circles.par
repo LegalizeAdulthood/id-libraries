@@ -1,0 +1,126 @@
+comment { ; narrative copyright Kerry Mitchell 26aug98
+
+2 Circles Coloring Method
+
+Several coloring schemes have been put together that color according 
+to the orbit's nearest approach to a specified point or curve.  This
+method extends that idea by coloring according to the orbit's nearest
+simultaneous approach to 2 specified circles.
+
+A circle in the x-y plane can be specified by (x - xcenter)^2 +
+(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+of the center of the circle, and radius is the circle's radius.  For
+complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
+
+f(z) = |z - center| - radius^2 (using Fractint's || convention)
+
+is a real-valued function that gives the relationship of z to the 
+circle.  If f(z) < 0, then z is inside the circle.  A positive
+value of f(z) means that z is outside of the circle, and f=0 means 
+that z is on the circle.
+
+Using 2 circles then results in 2 functions, fx(z) and fy(z).  One
+circle corresponds to fx, and the other to fy.  At each iteration,
+a new complex variable, w, can be defined as, w = fx(z)+i*fy(z).
+To check for the closest simultaneous approach of the orbit to both
+circles, it is sufficient to check for the smallest |w|.  This w is
+saved, and at the end of the iteration, "decomp=256" is used to color
+the pixel according to the polar angle of w.
+
+In its most general form, this method requires 6 real parameters:  
+2 each for the x- and y-coordinates of the centers of the circles,
+and 2 for the radii of the 2 circles.  For Mandelbrot implementation,
+this requires hardcoding the bailout value, which has been set to 
+10^12.  For Julia implementations, the bailout is also hardcoded, but
+another 2 parameters are needed to specify the Julia parameter, c.
+The "general_jul" formula is written with a hardcoded value of c, to
+allow for the greatest flexibility in choosing circles.
+
+A great deal of choice can still be allowed by only using 4 parameters
+to choose the circles, thereby freeing the other 2 for picking c.
+The "cenx=ceny_jul" method uses concentric circles (both having the 
+same center).  The radii of the circles are independently chosen.  
+A variation of this is the "cenx=-ceny_jul" formula, wherein the 
+centers of the circles are placed symmetrically with respect to the 
+origin of the complex plane.  Another variation uses the same radii
+for both circles, but different centers.  In "offset_rx=ry_jul", 
+this is accomplished by choosing a point on the plane.  One circle 
+is place a little outward of this point, and the other is a little
+inward of the chosen point.  The amount of shift along the radial
+line is 1 of the parameters.
+
+Because of the wide variety of parameter settings, it's not possible
+to say what happens with the image as the circles are moved.  However,
+you'll get very different results in the circles don't intersect from
+when they do.  If they do intersect, you'll tend to see points in the
+image where all the colors come together (this corresponds to where
+the orbit found the intersection point).  Varied ribbon-like effects
+can be seen when the circles are very close to each other--either 
+concentric with slightly different radii, or offset by a small amount.
+
+}
+
+general_man-104 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 general circles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2circles.frm
+  formulaname=general_man passes=1 center-mag=-0.7/0/0.6\
+  /1/-90 params=-2/0/-2/0/3.8/4.2 float=y maxiter=256
+  inside=0 decomp=256 colors=zwj<2>zyvzzzxxz<13>SSzPPzOO\
+  w<14>000<15>zo0<14>zywzzzxxz<13>RRzPPzOOv<11>55B337223\
+  110<13>tj0xm0zo1<13>zxtzyxyyz<12>VVzTTzRRzPPyNNu<12>33\
+  6112220<14>yn0zo2<14>zyyyyz<13>SSzQQzOOx<14>111000<15>\
+  zo0<10>zvf cyclerange=0/255 periodicity=0
+  }
+
+concentric-102 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 concentric circles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2circles.frm
+  periodicity=0 formulaname=cenx=ceny_jul passes=1 center\
+  -mag=0/0/0.8 params=0/1/0/0/0.98/1.02 float=y maxiter=256
+  inside=0 decomp=256 colors=cX0<21>yn0zo0zo0zo1<61>zzzzzz\
+  yyz<60>QQzPPzPPzPPy<61>000000110<37>bW0 cyclerange=0/255
+  }
+
+opposing-103 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 opposing circles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2circles.frm
+  formulaname=cenx=-ceny_jul passes=1 center-mag=0/0/0.8
+  params=-0.779702280199264/0.1503397589375293/0/1/1/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  cyclerange=0/255 colors=000<15>zo0<14>zyvzzzxxz<13>SSzP\
+  PzOOw<14>000<15>zo0<14>zywzzzxxz<13>RRzPPzOOv<11>55B337\
+  223110<13>tj0xm0zo1<13>zxtzyxyyz<12>VVzTTzRRzPPyNNu<12>\
+  336112220<14>yn0zo2<14>zyyyyz<13>SSzQQzOOx<14>111
+  }
+
+offset-101 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 offset circles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2circles.frm
+  periodicity=0 formulaname=offset_rx=ry_jul center-mag=0\
+  /0/0.6666667 params=0.39/0.44/1/0/1/0.1 float=y maxiter=256
+  inside=0 decomp=256 colors=xm0zo0<30>zyxzzzyyz<29>RRzPPzP\
+  Py<30>000<30>yn0zo0zo2<29>zyyzzzyyz<29>QQzPPzOOx<29>11100\
+  0110<28>vk0 cyclerange=0/255 passes=1
+  }
+
+offset_zoom-105 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 offset circles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2circles.frm formu\
+  laname=offset_rx=ry_jul passes=1 center-mag=0.272965/0\
+  .318238/30.70333 params=-0.778/0.201/0.95/0/3/0.1 float=y
+  maxiter=256 inside=0 colors=``z<3>SSzPPzOOw<14>000<15>zo\
+  0<14>zywzzzxxz<13>RRzPPzOOv<11>55B337223110<13>tj0xm0zo1\
+  <13>zxtzyxyyz<12>VVzTTzRRzPPyNNu<12>336112220<14>yn0zo2<\
+  14>zyyyyz<13>SSzQQzOOx<14>111000<15>zo0<14>zyvzzzxxz<8>ccz
+  cyclerange=0/255 decomp=256 periodicity=0
+  }

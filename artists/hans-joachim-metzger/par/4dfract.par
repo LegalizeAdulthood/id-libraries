@@ -1,0 +1,291 @@
+;; Original collection of 4DFRAC pars.
+;;
+;; File & images are Copyright (c) - Gordon Lamb 02/94
+;; All rights reserved
+;;
+;; If you wish to use any of these images commercially, please contact me
+;; before going ahead. 
+;;
+;; Comment line 3 gives iteration time on 486DX2-66
+;;
+;; Gordon Lamb (CIS:100272,3541)
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;
+re-entry           { ; Space shuttle returns!
+                     ; ;
+                     ; 0:02:21
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND07
+  function=sqr passes=1
+  corners=-2.0267334/-1.1563761/-0.900359/0.900359
+  params=0.99990000000000001 float=y maxiter=32767 logmap=yes
+  colors=0000F0F00<45>x00z00y00<30>F00ZK0<41>vn9vn9wo9wo9xp9<47>QK00F0<44>\
+  Fx0Gz0Gy0<30>1G0
+  }
+
+synapse            { ; Nerve cells containing Mandelbrot lambda sets!
+                     ; ;
+                     ; 0:12:03
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM01
+  passes=t
+  corners=-1.480064045447/-1.480060498072/0.0001001240171477/0.00010278454\
+  85306 params=-0.5 float=y maxiter=5000 inside=0 logmap=132
+  colors=@default.map
+  }
+
+lambda             { ; Mandelbrot lambda sets (in M-set C-Z plane)
+                     ; ;
+                     ; 0:52:36
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM01
+  passes=1
+  corners=-1.480063908782/-1.480060752068/0.00010215584680914/0.0001007582\
+  1657087/-1.480062320744/0.00010106032214002 params=-0.5 float=y
+  maxiter=5000 inside=0 logmap=216
+  colors=000QK00F0<44>Fx0Gz0Gy0<31>0F0F00<45>x00z00y00<30>F00ZK0<37>tlAtlA\
+  umAumAvnA<2>woAxpAwoA<45>RL0
+  }
+
+elephx             { ; Elephants kissing
+                     ; ;
+                     ; 0:01:39
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM01
+  passes=b
+  corners=-0.7787379386/-0.77812003534/0.58190492854/0.58256589093
+  params=0/0/0/0.050000000000000003 float=y maxiter=1000 inside=16
+  logmap=71
+  colors=U`Wz0N<14>000<14>EXLCYLA_K<14>zyyzzzzyz<15>Yb_WaYS_U<13>1F5<14>ox\
+  P<17>UDLSBKR8KP6KO3KM0J<2>K0OJ0QK0Q<30>w0S<15>NqzOszPuz<31>1BR09P19Q<14>\
+  ONk000QPk<13>wwyzzzzwx<13>z4Q
+  }
+
+siamdrag           { ; Siamese (2-headed) dragon
+                     ; ;
+                     ; 0:01:50
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM01
+  passes=b
+  corners=-0.01647914298/-0.008213738099/0.8189624568/0.8264160036
+  params=0/0/0/0.75 float=y maxiter=1000 logmap=50
+  colors=000h00<19>F00ZK0<41>vnAvnAwoAwoAxpA<47>QK00F0<44>Fx0Gz0Gy0<31>0F0\
+  F00<45>x00z00y00<9>j00
+  }
+
+mlorenz1           { ; Lorenz-type attractors in Sea Horse Valley!
+                     ; ;
+                     ; 0:44:13
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1 corners=-1.4775967/-1.3115244/0.0015902082/0.11493347
+  params=0/0/-0.75 float=y maxiter=32767 logmap=6
+  colors=000<31>00E00E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMi\
+  ONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>u\
+  u0<15>yys
+  }
+
+mlorenz2           { ; Lorenz-type attractors in Sea Horse Valley!
+                     ; ;
+                     ; 2:04:55
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1 corners=-1.48022375/-1.43818887/0.000783746789/0.0392042266
+  params=0/0/-0.75 float=y maxiter=32767 bailout=500 logmap=6
+  colors=000<31>00E00E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMi\
+  ONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>u\
+  u0<15>yys
+  }
+
+arachnoid          { ; Not for arachnophobes!
+                     ; ;
+                     ; 0:22:31
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1
+  corners=-1.454093569/-1.452370138/0.02375843112/0.02590872569
+  params=0/0/-0.75 float=y maxiter=32767 bailout=500 logmap=6
+  colors=000<31>00E00E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMi\
+  ONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>u\
+  u0<15>yys
+  }
+
+monster            { ; Chinaman's nightmare!
+                     ; ;
+                     ; 0:02:03
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=b corners=-0.14029643/0.13866984/0.364176379/0.379841352
+  params=0/0/0.40000000000000002 float=y maxiter=1000 logmap=13
+  colors=000<14>tJC520<7>hM8320<13>t`C302<13>vCd143<10>Dvg003<12>9Cj132<9>\
+  LcN440<7>ee8424<9>pRg422<8>lNLV2L532<8>sYN3P66mDxFARC6qPDRGIrX_8IAG`KPsV\
+  004<11>82x453<5>VZPFGHVWY421<2>GA6941<4>uS9114<8>ACh306<6>P5m310<6>RD7eq\
+  JVF8<11>HFlFEpGFo<9>RR`6D4<9>QuJKDEdRSyde155<7>AnnCttBB1<3>ut7
+  }
+
+headless           { ; Kermit decapitated!
+                     ; ;
+                     ; 0:02:13
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  corners=-0.00817494876/0.00818452612/0.37406182223/0.37418099943
+  params=0/0/0.40000000000000002 float=y maxiter=1000 logmap=13
+  colors=000JC4<9>t`C302<13>vCd143<10>Dvg003<12>9Cj132<9>LcN440<7>ee8424<9\
+  >pRg422<8>lNLV2L532<8>sYN3P66mDxFARC6qPDRGIrX_8IAG`KPsV004<11>82x453<5>V\
+  ZPFGHVWY421<2>GA6941<4>uS9114<8>ACh306<6>P5m310<6>RD7eqJVF8<11>HFlFEpGFo\
+  <9>RR`6D4<9>QuJKDEdRSyde155<7>AnnCttBB1<3>ut7310<13>tJC520<7>hM8320<2>F9\
+  3
+  }
+
+batman             { ; Fractal Batman Mask
+                     ; ;
+                     ; 0:04:33
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=b corners=-0.992/0.992/-0.8340807/0.8340807 params=0/0/-0.75
+  float=y maxiter=10000 logmap=5
+  colors=U`WIJe<3>ONk000QPk<13>wwyzzzzwx<14>z0N<14>000<14>EXLCYLA_K<14>zyy\
+  zzzzyz<15>Yb_WaYS_U<13>1F5<14>oxP<15>WILVGLUDLSBKR8KP6KO3KM0J<2>K0OJ0QK0\
+  Q<30>w0S<15>NqzOszPuz<31>1BR09P19Q<9>GId
+  }
+
+goldfish           { ; This fractal fish would create a stir in your tank!
+                     ; ;
+                     ; 0:01:25
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=b corners=0.2940897/1.56385/-0.5338117/0.5338117
+  params=0/0/-0.80000000000000004 float=y maxiter=10000 logmap=5
+  colors=XBCaA0<38>yrHztIzwJzzLzxLzuKzsKzrK<2>zkJzhIzeHzbHz_G<12>z07<15>0j\
+  0<28>Bzs<2>FttHqtJouLmuMkv<5>XZxYWy_UyaRzbQw<13>q4Bs27r28<29>MDdKEfKEf<7\
+  7>a90
+  }
+
+crabs              { ; A pair of crabs dancing on the beach
+                     ; ;
+                     ; 0:04:33
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=b corners=-0.992/0.992/-0.744/0.744 params=0/0/-0.75 float=y
+  maxiter=10000 logmap=5
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+devil              { ; Try color cycling. Different!
+                     ; ;
+                     ; 0:01:28
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  corners=-2/2/-1.5/1.5 params=0/0/-0.75 float=y maxiter=1000
+  outside=mult
+  colors=000m2K<15>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<15>yys000<30>00E00E00F\
+  00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>\
+  z0N<2>p1K
+  }
+
+unnamed1           { ; Interesting detail
+                     ; ;
+                     ; 0:02:16
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  corners=-0.2391226/-0.063337848/-0.151033575/-0.137222325
+  params=0/0/-0.75 float=y maxiter=1000
+  colors=U`W3ET<2>09P<15>ONk000QPk<13>wwyzzzzwx<14>z0N<14>000<14>EXLCYLA_K\
+  <14>zyyzzzzyz<15>Yb_WaYS_U<13>1F5<14>oxP<17>UDLSBKR8KP6KO3KM0J<2>K0OJ0QK\
+  0Q<30>w0S<15>NqzOszPuz<28>3FU
+  }
+
+vortex             { ; Massive spiral
+                     ; ;
+                     ; 0:33:09
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1
+  corners=-0.157296548609/-0.157285367714/-0.1452245300151/-0.145223651542\
+  27 params=0/0/-0.75 float=y maxiter=5000 logmap=318
+  colors=000ZZY<8>000032<14>0po<12>0BA076043000221<14>hhg<15>000<27>006016\
+  036<13>4S3<13>2A1291170150130000302<9>a59d6Ag7Bk8Cn9DrAE<15>000<15>hh0<1\
+  5>000002<14>00q<13>006002000<15>zzy<5>bba
+  }
+
+google-eye         { ; This is a real frightener!
+                     ; ;
+                     ; 0:27:21
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1
+  corners=-1.46539387131/-1.4639580244/0.0247718052656/0.0246371789296/-1.\
+  46545483379/0.0246193487045 params=0/0/-0.75 float=y maxiter=32767
+  bailout=500 logmap=6
+  colors=000<21>006016036<13>4S3<11>1D01B01A0180170<2>000312<14>rAq<13>716\
+  312000<15>hh0<15>000002<14>00q<13>006002000<15>r00<15>000032<14>0po<12>0\
+  BA076043000221<14>hhg<12>887665332000000<4>001
+  }
+
+symmetry1          { ; Hidden detail only seen after greatly magnifying Y.
+                     ; ;
+                     ; 0:35:41
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1 corners=-0.0208/0.0208/0.83546540346/0.83584024627
+  params=0/0/-0.14999999999999999 float=y maxiter=5000 logmap=107
+  colors=U`WzGX<3>z0N<14>000<14>EXLCYLA_K<14>zyyzzzzyz<15>Yb_WaYS_U<13>1F5\
+  <14>oxP<15>WILVGLUDLSBKR8KP6KO3KM0J<2>K0OJ0QK0Q<30>w0S<15>NqzOszPuz<31>1\
+  BR09P19Q<14>ONk000QPk<13>wwyzzzzwx<9>zK_
+  }
+
+symmetry2          { ; Different color palette
+                     ; ;
+                     ; 0:35:41
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=1 corners=-0.0208/0.0208/0.83546540346/0.83584024627
+  params=0/0/-0.14999999999999999 float=y maxiter=5000 logmap=107
+  colors=U`W6HP<8>2DN1CM1CN<23>PUpQUrRVsSVuTWvUXx<6>qK8<25>s5nt4pr5m<9>RFI\
+  <17>gMXuYQoR_hJj<18>hoEiqChpC<16>GJ5EH4EH4<18>0BJ<4>Fz1<4>mTl<6>XdqUfrUe\
+  q<27>oB6p94p96<19>zCu<18>z8s6HQ
+  }
+
+leaves             { ; Unusual spiral with fn1=exp
+                     ; ;
+                     ; 0:01:47
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND05
+  function=exp
+  corners=-0.781333368/-0.345460393/0.745693899/0.860657928/-0.81536901/0.\
+  826531804 params=0/0/1 float=y maxiter=1000 logmap=10 biomorph=0
+  colors=000EV9<8>pg19TB<14>soR<2>jVm9SB<13>sIWlabevi9QA<11>r24<4>e238SB<1\
+  2>cWO8SC<12>ZWf<2>tiK<6>ViURiVNiXKjZ<3>8nd<2>9tl6TA<4>4_C4`C5_C<17>XH1ZF\
+  0ZF0<11>`H0`H0_H0<10>J80<17>cM0dN0dN0<51>zd0b4VV5cN6lTChUTR<7>vVj7OA8JA9\
+  FABABATA
+  }
+
+unnamed2           { ; More action down at the valley.
+                     ; ;
+                     ; 0:14:06
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  passes=b
+  corners=-1.4673195493/-1.4630254079/0.024733128111/0.024444058152/-1.468\
+  0148493/0.024214179619 params=0/0/-0.75 float=y maxiter=32767
+  bailout=500 logmap=6
+  colors=000<31>00E00E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMi\
+  ONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>u\
+  u0<15>yys
+  }
+
+insect             { ; A multi-faceted insects head?
+                     ; ;
+                     ; 0:01:20
+                     ; Copyright - Gordon Lamb 02/94
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
+  corners=-2.242152/2.242152/-1.681614/1.681614 params=0/0/-0.75
+  float=y maxiter=1000 outside=summ
+  colors=000m2K<15>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<15>yys000<30>00E00E00F\
+  00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>\
+  z0N<2>p1K
+  }
+

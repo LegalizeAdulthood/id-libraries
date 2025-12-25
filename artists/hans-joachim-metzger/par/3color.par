@@ -1,0 +1,307 @@
+
+;                           Black + White + Color   
+;                      by Donald Archer CIS 71544,657
+;
+;            A series of 30 images drawn in FRACTINT v18.2 in
+;            one color plus black and white, as an exercise 
+;            in design. 
+;
+;            Three colors are defined for my purposes as
+;            black and white (including greyscale) and a selected 
+;            color (including shading to black or white).
+;            
+;            Some of these images have been originally created 
+;            in multiple colors and appear in other of my parameter 
+;            files, but most have been drawn for this file.
+;
+;            Rendering times are indicated on my 486-50 at resolution
+;            of 1024 x 768 x 256c.
+;
+;            Besides FRACTINT.FRM, the file DA00.FRM (uploaded 
+;            along with this parameter file) is required in your 
+;            current directory.
+ 
+
+ALL_IMAGES_HEREIN  {COPYRIGHTED 1993, DONALD ARCHER, CIS 71544,657
+  }
+A_NOTE_TO_VIEWERS  {REQUIRES FILE DA00.FRM IN CURRENT DIRECTORY                          
+  }
+ 
+DA3clr01           { ; 0:00:50.52 - Barnsley circle 
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=barnsleyj2
+  corners=-1.220602/-0.7778585/-0.16602784/0.166013 params=50/50
+  maxiter=50 inside=bof60 outside=mult potential=255/250/1000
+  colors=wU0nK0<60>Z00vU0<46>200100100000<63>zzzzzzyyy<41>KKKwU0<32>oK0
+  }
+
+DA3clr02           { ; 0:10:36.20 - Pine woods
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov passes=b
+  corners=3.90219016488/3.90220318445/2.31189310793/2.31193964438/3.902172\
+  51443/2.31191664187 params=0/0.5 float=y
+  colors=www<14>000<15>0000U00X00Y00000000U00X00U0000<4>0000R0<3>0O0000<7>\
+  0000Z0000<13>000UUU000<2>000tvt<14>0Z0<15>0V00c0<14>0V00R0<108>000<15>zz\
+  zwww
+  }
+
+DA3clr03           { ; 0:00:39.97 - Blue ring
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=manlam(fn||fn) function=cosh/sqr
+  corners=-0.256/0.256/-0.192/0.192 params=0.20000000000000001/12/6
+  float=y bailout=200 fillcolor=15 decomp=256 biomorph=1
+  colors=00000K<30>00d00d00c<58>001000000000<62>zzyzzyyyx<59>2211100000000\
+  00<29>00K
+  }
+
+DA3clr04           { ; 0:00:49.05 - Blackbird
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM11
+  function=log
+  corners=3.3245586/3.6036428/-0.2659745/4.837511/0.97535566/2.866296
+  float=y
+  colors=zKU000ccc<2>ccc000000000zKU<5>zKUzKUxxx<2>wwwzKUwww<3>vvvzKUuuu<2\
+  >tttzKUttt<221>111
+  }
+
+DA3clr05           { ; 0:00:56.42 - Untitled
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM12
+  function=log/cosxx passes=b
+  corners=-0.16589105/0.35010895/0.33994301/-0.34805699/0.35010895/-0.3480\
+  5699 float=y inside=bof61 outside=mult decomp=256
+  colors=000c00d00e00<58>400300200100000<63>zzzzzzyyy<61>000000100<58>c00
+  }
+
+DA3clr06           { ; 0:06:52.82 - Bidet
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM08
+  function=sinh passes=b
+  corners=0.04319578/1.448133/0.1521381/1.205818 inside=maxiter
+  potential=255/300/900
+  colors=wU0eL0<32>200100100000<63>zzzzzzyyy<34>RRRrrrPPP<4>KKKwU0<94>Z00v\
+  U0<12>gM0
+  }
+
+DA3clr07           { ; 0:04:41.44 - Blue oval
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=conj/cotanh passes=b
+  corners=-2.7868988554098385e-011/2.637487578989179e-011/2.59692227795098\
+  08e-011/-2.4857795483981705e-011/2.3390807737378651e-011/-2.657850809215\
+  0985e-011 params=1/8/2 float=y fillcolor=15 inside=period
+  outside=summ decomp=256 biomorph=1
+  colors=00000V<15>00e00e00d<60>000000111<61>zzzzzzyyy<61>000000001<44>00U
+  }
+
+DA3clr08           { ; 0:01:32.61 - Eclipse
+  reset=1720 type=marksmandelpwr function=tanh
+  corners=-0.12209433/-0.0670625224/0.0577416651/-0.0156340789/-0.06706252\
+  24/-0.0156340789 params=0.20000000000000001/0.20000000000000001
+  float=y maxiter=1024 inside=maxiter potential=256/511/0
+  colors=zzz000zU0<61>110000110<104>mmKmmKmmKmmKmmK<78>ddb000
+  }
+
+DA3clr09           { ; 0:07:38.03 - Gilded portal
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=marksmandelpwr function=sqr passes=b
+  corners=-1.293669453/-1.290285528/0.002253789582/-0.002258111266/-1.2902\
+  85528/-0.002258111266 float=y inside=zmag outside=imag decomp=256
+  distest=9000/20
+  colors=000753<52>kcRldSlcSkcS<61>000000110<60>kcRldSlcSkcS<61>000000110<\
+  5>653
+  }
+
+DA3clr10           { ; 0:04:37.90 - Mummy rocking
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM11
+  function=sqr
+  corners=0.646748/1.1545419/-0.45797919/-0.85657149/1.0208781/-0.95681935
+  params=1/0/2 float=y
+  colors=000653<5>FC7RLERLEJFA<16>eXMgZNfYN<29>221000000<193>000
+  }
+
+DA3clr11           { ; 0:17:49.40 - Evening sky
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov
+  corners=-1.07612607894/-1.0760821742/-1.67974896211/-1.67971603356
+  params=3/0.90000000000000002/2 float=y
+  colors=000V00<44>000000111<61>zzzzzzyyy<61>000000100<61>e00e00d00<14>V00
+  }
+
+DA3clr12           { ; 0:00:30.00 - Heart
+  reset type=tim's_error function=log
+  corners=0.14150863/-0.063281452/-0.17988955/0.084889547/-0.063281452/0.0\
+  84889547 params=0.050000000000000003/0.050000000000000003 float=y
+  fillcolor=15 decomp=256 biomorph=1
+  colors=zz0bbb<22>yyyzzzzzzzzz<99>zz0hh0<87>110000111<36>aaa
+  }
+
+DA3clr13           { ; 0:03:08.93 - Chrystal ball
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM09
+  function=sinh
+  corners=-0.095312297/0.091638744/-0.0077106953/0.13250261
+  params=2/2/0.5/0.5 inside=bof60 potential=255/300/800 decomp=128
+  colors=KKKNNO<56>stusturst<62>KKKc0z<126>LLLLLLMMMMMMNNN
+  }
+
+DA3clr14           { ; 1:18:26.39 - Untitled
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM07
+  function=cotanh passes=b
+  corners=1.098321/-1.901679/-1.99225/2.00775/-1.901679/2.00775
+  float=y inside=zmag decomp=256
+  colors=zzz222<60>zzzzzzyyy<38>NNNMMMMNM<20>7r5<20>LOLMMMNNN<39>zzzzzzyyy\
+  <61>000000111
+  }
+
+DA3clr15           { ; 0:03:17.45 - Globe
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM09
+  function=tan passes=b
+  corners=0.06963706/-0.063777447/0.094054818/-0.006019175
+  inside=maxiter potential=255/300/800
+  colors=000z00z00000<99>000z00000<118>000<15>zzz<14>444
+  cyclerange=1/2
+  }
+
+DA3clr16           { ; 0:03:04.66 - Cherry
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM09
+  function=tanh passes=b
+  corners=-0.20297748/0.17129046/1.333817/1.6145179 inside=maxiter
+  potential=255/300/800
+  colors=000X00<46>100100000000111<61>zzzzzzyyy<61>000000100<61>e00e00d00<\
+  10>Y00
+  }
+
+DA3clr17           { ; 0:01:44.36 - Spiked circle
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM06
+  passes=b corners=-1.136001/1.136009/-0.8519965/0.8520044 params=5
+  maxiter=1500 inside=maxiter decomp=128
+  colors=000<50>000000111222<61>zzzzzzyyy<41>KKKKKKLLK<44>zj0zj0yj0<14>mc0\
+  zU0kb0<27>PP0000
+  }
+
+DA3clr18           { ; 0:06:52.82 - Basin spot
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM08
+  function=cosh passes=b
+  corners=0.20426965/1.1301334/1.1703829/0.37597221/0.91891408/0.21751791
+  inside=maxiter potential=255/300/900
+  colors=000SSS<27>000000100<60>d00000d00<57>400300200100000<63>zzzzzzyyy<\
+  32>TTT
+  }
+
+DA3clr19          { ; 0:00:11.59 - Rolled-edge circle
+                    ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM10
+  function=cosxx
+  corners=0.289047774/0.342295872/-0.444974147/-0.405038124 float=y
+  inside=epsiloncross outside=imag potential=255/300/900
+  colors=0003F3777<13>zzz<15>000<222>000
+  }
+
+DA3clr20           { ; 0:05:07.86 - Ellipse
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=tan/sqr passes=b
+  corners=-2.7868988554098385e-011/2.637487578989179e-011/2.59692227795093\
+  62e-011/-2.4857795483981705e-011/2.3390807737378651e-011/-2.657850809215\
+  0985e-011 params=1/8/2 float=y fillcolor=15 inside=period
+  outside=summ decomp=256 biomorph=1
+  colors=000Z__<6>VVW000<80>AAwuvvstu<61>KKKKKKLLL<61>stusturst<34>__`
+  }
+
+DA3clr21           { ; 0:01:17.50 - Circles #1
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=cosxx/sqr passes=b
+  corners=-4/4/-3/3 params=1/0.10000000000000001/1 float=y bailout=200
+  fillcolor=15 decomp=256 biomorph=1
+  colors=VV0<62>110000111<61>stusturst<60>111000000000<61>UU0
+  }
+
+DA3clr22           { ; 0:01:10:47 - Circles #2
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=cosxx/sqr passes=b
+  corners=-4/4/-3/3 params=1/1/1 float=y bailout=200 fillcolor=15
+  inside=period outside=summ decomp=256 biomorph=1
+  colors=000000<62>sttsttrss<28>TUTSTSSSSSSS<29>0ml0ml1lk<27>QSSRRRSSS<31>\
+  sttsttrss<60>000
+  }
+
+DA3clr23           { ; 0:01:02.34 - Circles #3
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=tanh/sqr passes=b
+  corners=-2.476992/2.476992/-1.857744/1.857744
+  params=2.0039100684261943/6.0039113428944884/1.7 float=y bailout=300
+  fillcolor=15 inside=period outside=summ decomp=256 biomorph=1
+  colors=000JJI<16>221110000000<68>y0xz0yy0x<53>201000000<62>zzyzzyyyx<41>\
+  KKJ
+  }
+
+DA3clr24           { ; 0:00:55.53 - Circles #4
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=tanh/sqr passes=b
+  corners=-4/4/-3/3
+  params=1.8999999999999999/1.8999999999999999/3.1000000000000001
+  float=y bailout=200 fillcolor=15 decomp=256 biomorph=1
+  colors=000```<25>zzzzzzyyy<61>000000001<61>00e00e00d<60>000000111<34>___
+  }
+
+DA3clr25           { ; 0:00:41.25 - Rectangle
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=cotanh/ident passes=b
+  corners=-1.20096496907153e-008/1.21760648105073e-008/-6.36766271289116e-\
+  009/6.42618501602907e-009 params=2/7/1 float=y bailout=300
+  fillcolor=15 inside=period outside=summ decomp=256 biomorph=1
+  colors=00000Y<10>00e00e00d<60>000000111<61>zzzzzzyyy<61>000000001<49>00Y
+  }
+
+DA3clr26           { ; 0:09:32.83 - Endless umbrellas
+  reset=1800 type=formula formulafile=fractint.frm
+  formulaname=Fzppfnsr function=recip
+  corners=-2.17298651/-2.09186149/-0.0527973678/-0.00112496411 float=y
+  maxiter=1500 inside=maxiter outside=real decomp=64 biomorph=1
+  colors=000<30>VV0VV0UU0<29>BB0000<159>000XX0000<28>000
+  }
+
+DA3clr27           { ; 0:04:11.45 - Cracked orange
+                     ; (c) 1993, Donald Archer, CIS 71455,657
+  reset=1800 type=mandel(fn||fn) function=conj/flip passes=b
+  corners=-4.702194/3.297806/-3.150754/2.849246
+  params=0.80000000000000004/0.29999999999999999/5 float=y bailout=24
+  inside=maxiter outside=imag
+  colors=wU0jO0sS0mI0000eL0dK0000bJ0aJ0_I0000nP0000WF0mI0TE0<21>2001001000\
+  00<63>zzzzzzyyy<41>KKKwU0<94>Z00vU0<8>kO0
+  }
+
+DA3clr28           { ; 0:00:40.42 - Squares
+  reset=1800 type=lambdafn function=conj passes=b
+  corners=-0.00942807726/0.00862927137/-0.0069245163/0.00661408238
+  params=1.5/0.040000000000000001 float=y maxiter=1500 bailout=1000
+  decomp=64
+  colors=000S00<20>e00e00d00<60>000000111<61>zzzzzzyyy<61>000000100<39>R00
+  }
+
+                     
+DA3clr29           { ; 0:09:45.67 - Bronze pointer
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM07
+  function=cotanh passes=b
+  corners=-0.736920880148/-0.736859643142/0.30680317462/0.30888812598/-0.7\
+  38164516015/0.3082097772 float=y inside=zmag decomp=256
+  colors=000f_O<5>kcRldSlcSkcS<61>000000110<60>kcRldSlcSkcS<61>000000110<5\
+  2>eZO
+  }
+
+DA3clr30           { ; 0:09:26.41 - Silver pointer
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM07
+  function=cotanh passes=b
+  corners=-0.73647012004/-0.73734562548/0.30872393376/0.30688906492/-0.735\
+  7091218/0.30780003173 float=y inside=zmag decomp=256
+  colors=000<63>stusturst<61>000000111<61>stusturst<60>000
+  cyclerange=64/112
+  }
+
+; 9/12/93

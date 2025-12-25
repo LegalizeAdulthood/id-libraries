@@ -1,0 +1,114 @@
+comment { ; narrative copyright Kerry Mitchell 18oct98
+
+2 Lines Coloring Method
+
+Several coloring schemes have been put together that color according 
+to the orbit's nearest approach to a specified point or curve.  This
+method extends that idea by coloring according to the orbit's nearest
+simultaneous approach to 2 specified lines.
+
+A line in the x-y plane can be specified by A*x + B*y + C = 0, where
+-A/B is the slope of the line (if B=0 then the line is vertical).
+(The C in the line defintion should not be confused with the c used
+in Mandelbrot and Julia computations.)  For complex numbers z = x+i*y,
+
+f(z) = A*real(z) + B*imag(z) + C
+
+is a real-valued function that gives the relationship of z to the 
+line.  If f(z) < 0, then z is on one side of the line.  A positive
+value of f(z) means that z is on the other side, and f=0 means 
+that z is exactly on the line.
+
+Using 2 lines then results in 2 functions, fx(z) and fy(z).  One
+line corresponds to fx, and the other to fy.  At each iteration,
+a new complex variable, w, can be defined as, w = fx(z)+i*fy(z).
+To check for the closest simultaneous approach of the orbit to both
+lines, it is sufficient to check for the smallest |w|.  This w is
+saved, and at the end of the iteration, "decomp=256" is used to color
+the pixel according to the polar angle of w.
+
+In its most general form, this method requires 6 real parameters:  
+3 each for each line.  For Mandelbrot implementation, this requires
+hardcoding the bailout value, which has been set to 10^12.  For Julia
+implementations, the bailout is also hardcoded, but another 2 parameters
+are needed to specify the Julia parameter, c.  The "general_jul" formula
+is written with a hardcoded value of c, to allow for the greatest
+flexibility in choosing lines.
+
+A great deal of choice can still be allowed by only using 4 parameters
+to choose the lines, thereby freeing the other 2 for picking the Julia
+parameter c.  The "orthogonal_jul" method uses orthogonal lines (at right
+angles to each other).  One line uses A and B as input, the other uses
+B and -A, to make the lines orthogonal.  The other 2 parameters, Cx and
+Cy are independently chosen.  A variation of this is the "parallel_jul"
+formula, wherein the lines use the same A and B, to make them parallel.
+Another final variation uses the same A for both lines, B for one and
+-B for the other, to cause the lines to have opposite angles with respect
+to the real axis.
+
+Because of the wide variety of parameter settings, it's not possible
+to say what happens with the image as the lines are moved.  However,
+you'll get very different results in the lines don't intersect from
+when they do.  If they do intersect, you'll tend to see points in the
+image where all the colors come together (this corresponds to where
+the orbit found the intersection point).
+
+}
+
+parallel { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 parallel lines" coloring method
+  ;
+  reset=1960 type=formula formulafile=2lines.frm decomp=256
+  periodicity=0 formulaname=parallel_jul passes=1 center-mag\
+  =0/0/0.8/1/-7.5 params=0.39/0.44/2.64/-1/0.1/-0.1 float=y
+  maxiter=256 inside=0 colors=c0X<10>y0nz0oz2o<29>zyyzzzyzy\
+  <29>QzQPzPOxO<29>111000101<29>x0mz0oz1o<29>zxyzzzyzy<29>R\
+  zRPzPPyP<30>000<18>a0V cyclerange=0/255
+  }
+
+orthogonal { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 orthogonal lines" coloring method
+  ;
+  reset=1960 type=formula formulafile=2lines.frm
+  formulaname=orthogonal_jul passes=1 center-mag=0/0/0.8
+  params=-0.779702280199264/0.1503397589375293/1/2/1/2 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 colors=HeH<20>\
+  000<30>y0nz0oz2o<29>zyyzzzyzy<29>QzQPzPOxO<29>111000101<29\
+  >x0mz0oz1o<29>zxyzzzyzy<29>RzRPzPPyP<8>IgI cyclerange=0/255
+  }
+
+opposite { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 lines with opposite angles" coloring method
+  ;
+  reset=1960 type=formula formulafile=2lines.frm cyclerange=0/255
+  formulaname=oppangle_jul passes=1 center-mag=0/0/0.6666667
+  params=-0.0573720519293145/0.6691939992424446/3/1/0/0 float=y
+  maxiter=2000 inside=0 decomp=256 periodicity=0 colors=`z`<18>\
+  QzQPzPPzPPyP<61>000000101<60>y0nz0oz0oz1o<61>zzzzzzyzy<40>aza
+  }
+
+general_man { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 general lines" coloring method
+  ;
+  reset=1960 type=formula formulafile=2lines.frm periodicity=0
+  formulaname=general_man passes=1 center-mag=-0.73/0/0.74/1/-90
+  params=1/0/0.75/0/1/0 float=y maxiter=256 inside=0 decomp=256
+  colors=000<30>x0mz0oz1o<29>zxyzzzyzy<29>RzRPzPPyP<30>000<30>\
+  y0nz0oz2o<29>zyyzzzyzy<29>QzQPzPOxO<29>111 cyclerange=0/255
+  }
+
+general_jul { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "2 general lines" coloring method
+  ;
+  reset=1960 type=formula formulafile=2lines.frm periodicity=0
+  formulaname=general_jul passes=1 center-mag=0/0/0.75/1/-12.5
+  params=1/0/2/0/1/1.5 float=y maxiter=2000 inside=0 decomp=256
+  colors=DVD<14>111000101<29>x0mz0oz1o<29>zxyzzzyzy<29>RzRPzPP\
+  yP<30>000<30>y0nz0oz2o<29>zyyzzzyzy<29>QzQPzPOxO<13>DXD
+  }
+
