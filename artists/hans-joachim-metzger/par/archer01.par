@@ -1,0 +1,440 @@
+; August 24, 1997
+; Parameter file for current U-draw fractals at
+; http://www.dorsai.org/~arch
+; and
+; http://www.ingress.com/~arch
+
+; These are the parameters and formulas used by the Fractint program to
+; draw the current U-draw fractals posted to this site. For the casual
+; viewer, they are of technical interest only, but if examined closely
+; will show how the input values ("params") and functions submitted by
+; viewers were applied. The other information is fairly arcane and is
+; best ignored.
+
+; For users of the Fractint program, this parameter file when copied
+; to your Fractint directory, can be used to  re-construct these images
+; on your own computer, even at very high resolutions.
+; The formulas used to draw these images are included in this file.
+
+; The freeware program Fractint (v19.6) is available at my Ingress site
+; as is the current parameter file.
+
+; All parameters, formulas and fractals on this site, and images re-drawn by
+; this file, are copyright 1994-97 by Don Archer and all reproduction rights
+; are reserved.
+
+katona_ken         { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_04 function=sinh/sinh/exp/exp
+  center-mag=-0.822463/-0.85587/32.85983/1.1607
+  params=0.254/0.375/0.7/-0.89 float=y maxiter=320 periodicity=0
+  colors=000<14>e00<15>000UMF<14>zzM<15>XFo<14>pMAqM7qO7<13>wu0ww0vs0<11>g\
+  B3f73e33d03a03Z03<12>200000000000<12>VEkXFoZIn<14>oz`<15>I7U<15>zz0<14>f\
+  40e00b00<14>000<30>XFo000
+  }
+
+martin_peter       { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw18_04 function=exp/cotan/abs/abs
+  center-mag=0.307194/0.476649/8.136417/1.7683
+  params=0.333/0.777/-0.777/0.333 float=y maxiter=320 periodicity=0
+  colors=000z00<13>Z00W00V00<22>100000000<14>wUM<15>svc<12>hA7g75f32e00b00\
+  <14>000070<14>oo0<15>070FF0<13>wUF<15>FF0``0<14>zoU<15>``0000<14>oow<15>\
+  000000<21>T00
+  }
+
+hadley_hedy        { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=cotanh/cabs/cotanh/cabs
+  center-mag=0.777211/-1.52727/26.49007/1.2967/137.499
+  params=0.329/0.41/-0.312/-0.529 float=y maxiter=3200 periodicity=0
+  colors=PHaLd0<2>0Z0<8>070000007<11>7Px<7>bisfkrims<4>zzyxwyuty<10>nLu<10\
+  >0000000000FF<9>0oo<7>mm0oo7qpFsrM<14>fM2eJ0eJ1<29>LGZQH`<13>cD9eC7fE7<5\
+  >kSB<15>FNG<15>jC7i85h43<14>NRLLTNIQK<5>090E77C44D56<11>pMZsN`tQa<10>zyn\
+  <3>zrB<5>Rf2
+  }
+
+hamm_barbara       { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_01 function=cos/cosh/atan/abs
+  center-mag=0.0584551/-0.82215/1.253133
+  params=-0.027/0.729/-0.5679999999999999/0.4736 float=y maxiter=320
+  periodicity=0
+  colors=EjouN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnm\
+  kikk<8>VRI000<38>000AJP<6>CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>\
+  lF8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCAB\
+  DBBE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2\
+  >FJSFJS<6>bAEeCDgEC<2>rL8rL8
+  }
+
+murtaza_iram       { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_01 function=sin/sinh/sinh/sinh
+  center-mag=0.554621/-0.634954/3.183091/1/125
+  params=-0.5600000000000001/0.957/0.075/0.357 float=y maxiter=320
+  periodicity=0
+  colors=EjouN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnm\
+  kikk<8>VRI000<38>000AJP<6>CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>\
+  lF8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCAB\
+  DBBE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2\
+  >FJSFJS<6>bAEeCDgEC<2>rL8rL8
+  }
+
+bergstrom          { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_01 function=sin/sin/sin/ident
+  center-mag=-1.58399/0.115637/6.097561/1/67.5
+  params=0.1/-0.1/0.2/-0.2 float=y maxiter=320 periodicity=0
+  colors=CCHTCmWErZFw<11>0ww<11>00U<5>00Ew30<14>tt0zz0<11>0U0<23>sve<8>0Zc\
+  <6>000<11>AFIBHKCILDKNFIL<14>`00<15>yfF<15>Zd0<15>zo`<15>MMU000<14>d00<1\
+  4>NLSMMULLS<13>112000000<8>QBh
+  }
+
+mcroberts_r_b      { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_01 function=abs/cosh/tan/sqr
+  center-mag=0.205548/1.35438/0.7473841/1.3369/77.499
+  params=-0.333/0.314/0.001/-0.5 float=y maxiter=320 periodicity=0
+  colors=000Q`4<3>Ra5<6>zsl<15>O01<16>oD1qE1qF1<16>zjA<15>LW6JV5GU5DT4AS47\
+  R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<\
+  14>GRVHQWGPY<4>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<2\
+  >e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2HX1<3>6R13Q12P10O0<\
+  5>DU1FV2IW2KX3MY3P_4P_4Q`4
+  }
+
+anita              { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_00 function=ident/exp/exp/exp
+  center-mag=-0.79941/-1.78611/5.487614/1.5503/80
+  params=0.1695/0.76/0.248/0.729 float=y maxiter=3200 periodicity=0
+  colors=EjoskUc5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCA\
+  BDBBE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<\
+  2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>X\
+  SYZV_c`b<5>urnrplnmkikkgih<14>333000030<14>0n0<15>000<15>DtnEgo<8>IFr<2>\
+  H5ZG1SH1R<15>lF8jD8iB9
+  }
+
+bowers_robert      { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_01 function=cosh/log/log/abs
+  center-mag=0.707456/-0.610478/0.9363296/1/-60
+  params=0.11/0.27/0.73/0.7322 float=y maxiter=3200 periodicity=0
+  colors=z_C000<6>000<15>zB0<15>0fz<15>zR0<15>9Et<15>vu3<14>yaBz_CxYE<13>X\
+  4pU1sT1p<14>000<15>vu3<15>0fz<15>zR0<15>U1s<14>wA4zB0zC0<14>z_C<15>000<6\
+  >000
+  }
+
+reifler_jonathan_a { ; Aug 24, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw20.frm passes=1
+  formulaname=u-draw20_00 function=log/cos/cotan/atan
+  center-mag=+1.93995631009475600/+0.07561476392044221/153.3115/1/67.499
+  params=0.523/-0.209/0.733/-0.528 float=y maxiter=3200 periodicity=0
+  colors=HLqIIrIFr<2>H5ZG1SH1R<15>lF8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_p\
+  tb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<\
+  11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A\
+  <2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<8>VRI000<38>000AJ\
+  P<6>CbaCecChf<3>Dtn<9>HPq
+  }
+crooke_emily       { ; Aug 22, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=sin/log/log/asin
+  center-mag=-0.94321980677489490/-0.41937395186395020/199.1718/0.9393/-7.\
+  5 params=0.175/0.439/0.82/-0.569 float=y maxiter=3200 periodicity=0
+  colors=z9Dzq2000z0Bz00000z`1z`1zO1z`1000RR_zz0ZZSS0ZffKjjG0Z0SIZz9Dzz0S0\
+  Z00Y0Z0er7S0Z000PkDS0ZEfHUlWa0000Yz00uuw0z0000z0000Yzzzz000zlZajSIZz00RV\
+  ezz04wpIN`00YAEO4wpa000Z0S0Zzz0_RR000SIZzkk0004wpzUUzOO0z0zCCS0Z0Z0G00S0\
+  Z0z000z0z0B7oHAi0z0SIZa0000Yzz0nWC4wpzc000Y00000YSIZ0Z0000zh4zU34wp000zz\
+  0z`100Y000zL6zz0a000Z0zz0a0000YvHB0004wpSIZrJFa000z0oKH0Z000000YVVVjjj0Z\
+  0gMO4wpeNQzz0cOR0000Z0zz0_PVSIZa00000z`1VR_0z000000YURaz`1VRazzzWRa00Y00\
+  0zzz000zz000Y0z0LLLz000z0zL000YS0Z0Z0zz00000z0888uuwzh40z000YSIZz_0WWWS0\
+  Zccc0z00Z0SIZS0Zzz0S0Zzh4_0R00Y0Z0z9DS0Za00KJKzV000YKKK_0RP0Z_0RP0ZCrY_0\
+  RS0Z0zz0z00Vz0Gz0Z000Yz9DSIZzVzS0Z0z0zVbS0Zz9DzjV0000Z0S0Zz9DbzVS0ZVzbz`\
+  1z9D_0R000a00VbzS0Zlhz0Z0S0Zzq2zhuS0Z000a000Z0uuw00YVrz00YS0Zlzhzq2S0Z00\
+  000000YS0Zhqzzq2<2>zq2000000000a0000YW0V0Z0a00K0fk0F
+  }
+
+kukawka_andres     { ; Aug 19, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+   reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw19_00 function=cabs/cosh/cotanh/sqr
+  center-mag=-0.671002/-1.23865/50.44843/0.6996/34.999
+  params=-0.492/0.819/-0.109/0.9350000000000001 float=y maxiter=3200
+  periodicity=0
+  colors=004iij<2>oopllmiijbbcbbc<11>000115vvv<5>vvvnnnnnnnnnMMP<18>vvv<14\
+  >WWYUUWVVX<10>nnn<3>wZDzU3zT3<14>p9A<15>vs1sp1lj1lj1<12>562<15>zzz<15>00\
+  k<14>003000200<13>`AAcBBdCB<14>zU3<15>000<26>hhi
+  }
+
+logan_karen        { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=log/sin/sinh/atanh
+  center-mag=-0.588356/0.0556702/11.56123/1.0776/-90
+  params=-0.3/-0.5/0.9/0.25 float=y maxiter=3200 periodicity=0
+  colors=EjoZdV<5>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<13>EbqFdtEaq<10>C8K97F<2>\
+  9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN\
+  7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<8>VRI00\
+  0<38>000AJP<6>CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>lF8jD8iB9g99\
+  c5A<5>xP5<6>ufOthRskUrnXqq_ptb<4>afW
+  }
+
+gopoian_greg       { ; Aug 19, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_04 function=acosh/acosh/acosh/acosh
+  center-mag=2.52628/0.174966/9.93388/1/27.499
+  params=0.23/0.455/-0.734/-0.124 float=y maxiter=3200 periodicity=0
+  colors=w05000532<13>dPL<3>zul<8>`46`00<11>0000FM<5>T`C<6>zc0<9>b60`00<7>\
+  zyn<8>yUF<7>x4R<9>K7TG7UC5M83F42763A00003C<5>0O0<8>ZOobOudRu<3>kbs<5>HEJ\
+  B9D657000234<12>Xcr<15>000232<10>5Pw<6>zo`<5>5Pw<6>000CC906h<14>kLdoMcpG\
+  d<6>XIv<3>XVsXYsX`rXcrV`o<2>PUgMSdKP`<7>000<4>A00C00C00
+  }
+
+van_de_kris        { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_04 function=sin/tan/atan/cabs
+  center-mag=0.57999/0.0419807/37.50772/1.2184/93.047/-0.997
+  params=0.525/0.252/0.725/0.187 float=y maxiter=3200 periodicity=0
+  colors=EjouM6<5>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkik\
+  kgih<14>333000030<14>0n0<15>000<15>DtnEgo<8>IFr<2>H5ZG1SH1R<15>lF8jD8iB9\
+  g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<13>E\
+  bqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSFJS<6\
+  >bAEeCDgEC<2>rL8rL8uN7xP5
+  }
+
+thombs_daniel      { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=tan/cos/cos/cos
+  center-mag=-0.76177/-0.410265/3.363229/1.3816/62.499
+  params=0.345/0.234/0.982/-0.015 float=y maxiter=3200 periodicity=0
+  colors=EjoEZkE`nEbqFdt<10>CBNC8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYX\
+  RVWOSV<2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCM\
+  KEO<4>XSYZV_c`b<5>urnrplnmkikk<8>VRI000<38>000AJP<6>CbaCecChf<3>DtnDqnEn\
+  oEgo<8>IFr<2>H5ZG1SH1R<15>lF8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>\
+  HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<10>EXh
+  }
+
+redwine_edgar1     { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=tan/tan/ident/tan
+  center-mag=-0.893469/-2.03335/6.056202 params=0.75/-0.75/0.5/-0.2
+  float=y maxiter=3200 periodicity=0
+  colors=zzz6l6<5>3NU2IY1Ea09f8Fa<5>ws8<5>qm5pl4ok3ni2oi2<5>ye5<8>3gl<6>jT\
+  d<2>jRkjQhkPp<3>lLz<5>wbEye5yb5<7>xCC<6>000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zz\
+  z<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8>ye5<6>asa<7>iQtkMwkRw<5>gzz<8>09\
+  f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6>zzz<7>000<6>MMM<5>jGGoFFsEExCCqH\
+  C<4>Ef7
+  }
+
+mosier_nola        { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw19_00 function=cos/cos/tan/tan
+  center-mag=0.157287/1.7891/9.758002/1.2195 params=0.25/1/-0.33/-1
+  float=y maxiter=3200 periodicity=0
+  colors=EjoJ2Q<14>lF8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ\
+  <5>9DD8BB8BB9BCABDBBE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>\
+  _bZX`YUYXRVWOSV<2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9H\
+  NAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikkgih<14>333000030<14>0n0<15>000<15\
+  >DtnEgo<8>IFr<2>H5ZG1SH1R
+  }
+
+engel_jeff        { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=sqr/sqr/sqr/sqr
+  center-mag=-0.65389/0.490463/5.76869/1.2106/90 params=1/0/0/-1
+  float=y maxiter=3200 periodicity=0
+  colors=EjoTZS<3>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<13>EbqFdtEaq<10>C8K97F<2>\
+  9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN\
+  7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<8>VRI00\
+  0<38>000AJP<6>CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>lF8jD8iB9g99\
+  c5A<5>xP5<6>ufOthRskUrnXqq_ptb<6>WaT
+  }
+
+hinds_jack         { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=exp/cotanh/atan/abs
+  center-mag=0.704376/1.53124/11.66052/3.3318/2.499
+  params=-0.9/-0.7/-0.3/0.3 float=y maxiter=3200 periodicity=0
+  colors=EjoQWQvZG<2>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<\
+  13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSF\
+  JS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c\
+  `b<5>urnrplnmkikkgih<14>333000030<14>0n0<15>000<15>DtnEgo<8>IFr<2>H5ZG1S\
+  H1R<15>lF8jD8iB9g99c5A<5>xP5xS8wUA
+  }
+
+seidner_phyllis1   { ; Aug 18, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw19.frm passes=1
+  formulaname=u-draw19_00 function=abs/log/exp/tan
+  center-mag=0.817794/1.59435/31.28203/1/22.5
+  params=0.87/0.08699999999999999/-0.87/-0.08699999999999999 float=y
+  maxiter=3200 periodicity=0
+  colors=000LozFZnFXhFVcESYDQUDOPCMKBJHAHD9FA7D86A6585464344450<4>WD0`F0dG\
+  0iI0<2>sN0vP0xR0yS0zU0zV0zU0yS0xR0<2>pM0mK0iI0dG0`F0<4>A6045006606607708\
+  808A09C09F0AI<2>0CV0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C08A08807\
+  70660662679A7ED8KH9PKBVOD_SGdVJhZNmaR<2>vldxpiysozwtzzyzwtysoxpi<3>maRhZ\
+  NdVJ_SGVODPKBKH9ED89A72673769A6EE6<2>VO8`S9dVAiZB<2>siFvlHxpI<2>zzNzwMys\
+  KxpI<2>peEmbCiZBdVA`S9VO8PL7<3>376365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7\
+  cq7h<2>s8ys8tr7nq7ho7cm7Z<2>c7LA40<3>W40`40d40i40<2>s40v40x40y40z40z40z4\
+  0y40x40<2>p40m40i40d40`40<4>A40440040<15>0z0<15>040344464<2>7D89F5AHDBJH\
+  CMKDOPDQUESY<4>Gby
+  }
+
+bestgen_jeri       { ; Aug 17, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_01 function=sin/cos/tan/exp
+  center-mag=-1.11461/-0.798604/11.79245/2.7711/22.499
+  params=0.36/0.34/0.32/0.3 float=y maxiter=320 periodicity=0
+  colors=EjowUA<4>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDBBE<13>\
+  EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<7>_bZX`YUYXRVWOSV<2>FJSFJS<\
+  6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNAJLBKLCMKEO<4>XSYZV_c`b<\
+  5>urnrplnmkikk<12>OI5<6>eYJg_LiaNkcPneR<3>xn_wm_vlZ<13>JKP000<3>000AJP<6\
+  >CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>lF8jD8iB9g99c5A<5>xP5xS8
+  }
+
+robinson_tash      { ; Aug 17, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_01 function=ident/ident/ident/ident
+  center-mag=0.57453/0.16546/6.666667 params=0.023/0.233/-0.322/0.033
+  float=y maxiter=320 periodicity=0
+  colors=EjoUYX<4>FJSFJS<6>bAEeCDgEC<2>rL8rL8uN7xP5<6>c5A<2>W6DU7ES8GQ9HNA\
+  JLBKLCMKEO<4>XSYZV_c`b<5>urnrplnmkikk<12>OI5<6>eYJg_LiaNkcPneR<3>xn_wm_v\
+  lZ<13>JKP000<3>000AJP<6>CbaCecChf<3>DtnDqnEnoEgo<8>IFr<2>H5ZG1SH1R<15>lF\
+  8jD8iB9g99c5A<5>xP5<6>ufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCABDB\
+  BE<13>EbqFdtEaq<10>C8K97F<2>9BFFD9EFA<11>svc<2>svc<8>X`Y
+  }
+
+cloix_natalie      { ; Aug 17, 1997
+                     ; (c) 1997 Don Archer
+                     ; arch@dorsai.org
+  reset=1960 type=formula formulafile=u-draw18.frm passes=1
+  formulaname=u-draw18_01 function=sqr/exp/abs/cabs
+  center-mag=0.424519/-0.392097/6.884776/1.1682/134.999
+  params=-0.79/-0.6899999999999999/-0.59/-0.49 float=y maxiter=3200
+  periodicity=0
+  colors=z_C7ds<13>zR0<15>9Et<15>vu3<14>yaBz_CxYE<13>X4pU1sT1p<14>000<15>v\
+  u3<15>0fz<15>zR0<15>U1s<14>wA4zB0zC0<14>z_C<15>000<14>000<15>zB0<15>0fz3\
+  ew
+  }
+
+; ----------------------------------------------------------------------
+
+; Formulas required for this parameter file
+
+frm:u-draw18_01 { ; credits to Sylvie Gallet and Bob Carr
+ z=fn1(fn2(pixel+p1)^e)-fn3(conj(pixel+p2)^7) 
+ c=fn4(z)-conj(|0.1/z|) 
+ c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
+ l1=1000, l2=1500, l3=2000, l4=2500, l5=3000,  iter=0 :
+ t1=(iter==l1) , t2=(iter==l2) , t3=(iter==l3) ,t4=(iter==l4),t5=(iter==l5)
+ tt = 1 - (t1||t2||t3||t4||t5)
+ z = z * tt
+ c = c * tt + c1*t1 + c2*t2 + c3*t3 + c4*t4 +c5*t5
+ z = z * z + (-0.75,-0.15) + flip(conj(c/10))
+ c = z * c/pixel
+ iter = iter+1
+ |z|<=16
+}
+
+frm:u-draw18_04 { ; credits to Sylvie Gallet and Bob Carr
+ z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^7 
+ c=fn4(z)-conj(|0.1/z|) 
+ c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
+ l1=1000, l2=1500, l3=2000, l4=2500, l5=3000,  iter=0 :
+ t1=(iter==l1) , t2=(iter==l2) , t3=(iter==l3) ,t4=(iter==l4),t5=(iter==l5)
+ tt = 1 - (t1||t2||t3||t4||t5)
+ z = z * tt
+ c = c * tt + c1*t1 + c2*t2 + c3*t3 + c4*t4 +c5*t5
+ z = z * z + (-0.75,-0.15) + flip(conj(c/10))
+ c = z * c/pixel
+ iter = iter+1
+ |z|<=16
+}
+
+frm:u-draw19_00 { ; credits to Sylvie Gallet and Bob Carr
+ z=fn1(fn2(sinh(fn3(pixel+p1))^e))-conj(sinh(pixel+p2)^7)-conj(0.01/pixel-flip(0.001/pixel))-0.3
+ c=fn4(z)-(conj(|0.1/z|))
+ c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
+ l1=1000, l2=1500, l3=2000, l4=2500, l5=3000,  iter=0 :
+ t1=(iter==l1) , t2=(iter==l2) , t3=(iter==l3) ,t4=(iter==l4),t5=(iter==l5)
+ tt = 1 - (t1||t2||t3||t4||t5)
+ z = z * tt
+ c = c * tt + c1*t1 + c2*t2 + c3*t3 + c4*t4 +c5*t5
+ z = sqr(z) * z + flip(conj(c/10))
+ c = log(z) * c/pixel
+ iter = iter+1
+ |z|<=16
+}
+
+frm:u-draw20_00 { ; credits to Sylvie Gallet and Bob Carr
+ z=fn1(fn2(tan(fn3(pixel+p1))^e))-conj(tan(pixel+p2)^7)-conj(0.01/pixel-flip(0.001/pixel))-0.3
+ c=fn4(z)-(conj(|0.1/z|))
+ c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
+ l1=1000, l2=1500, l3=2000, l4=2500, l5=3000,  iter=0 :
+ t1=(iter==l1) , t2=(iter==l2) , t3=(iter==l3) ,t4=(iter==l4),t5=(iter==l5)
+ tt = 1 - (t1||t2||t3||t4||t5)
+ z = z * tt
+ c = c * tt + c1*t1 + c2*t2 + c3*t3 + c4*t4 +c5*t5
+ z = sqr(z) * z + flip(conj(c/10))
+ c = log(z) * c/pixel
+ iter = iter+1
+ |z|<=16
+}
+
+frm:u-draw20_01 { ; credits to Sylvie Gallet and Bob Carr
+ z=fn1(fn2(sinh(pixel+p1))^pi)-fn3(pixel+p2)^5 
+ c=fn4(z)-conj(|0.1/z|) 
+ c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
+ l1=1000, l2=1500, l3=2000, l4=2500, l5=3000,  iter=0 :
+ t1=(iter==l1) , t2=(iter==l2) , t3=(iter==l3) ,t4=(iter==l4),t5=(iter==l5)
+ tt = 1 - (t1||t2||t3||t4||t5)
+ z = z * tt
+ c = c * tt + c1*t1 + c2*t2 + c3*t3 + c4*t4 +c5*t5
+ z = z * z + (-0.75,-0.15) + flip(conj(c/10))
+ c = z * c/pixel
+ iter = iter+1
+ |z|<=16
+}
+

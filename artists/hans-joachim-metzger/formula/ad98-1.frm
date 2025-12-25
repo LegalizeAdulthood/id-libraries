@@ -1,0 +1,231 @@
+CDualist20 {
+  z=pixel:
+  x=real(z)
+  y=imag(z)
+  nx=1-abs(x-y)
+  ny=fn2(abs(x+y-1))
+  z=fn1(nx+flip(ny))+whitesq
+  |z+1|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+CDualist21 {
+  bailout=p1
+  z=pixel:
+  x=real(z)
+  y=imag(z)
+  nx=fn1(abs(x-y)+whitesq)
+  ny=1-abs(x+y-1)
+  z=nx+flip(ny)
+  |z|<=bailout
+  ;SOURCE: ad978-1.frm
+}
+ 
+CDualist3M {
+  bailout=pixel
+  z=pixel:
+  x=fn1(real(z))+whitesq
+  y=imag(z)
+  nx=1-abs(x-y)
+  ny=abs(x+y-1)
+  z=fn2(nx)+fn4(flip(ny))
+  |z|<=|bailout|
+  ;SOURCE: ad978-1.frm
+}
+ 
+nct0 {
+  z=pixel, x=real(z), y=real(z):
+  z=(fn2(z*(fn1(1-((x+y)+(y*y)))))+whitesq)
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+phcjx22y {
+  z=pixel:
+  z=fn1(1/z)*whitesq
+  t=(z*p2)+pixel
+  m=(fn1(sin(t)+cos(u)))
+  z=(fn4(m)+fn3(m))/fn2(t)+whitesq
+  |z|>=p3
+  ;SOURCE: ad978-1.frm
+}
+ 
+phnax4 {
+  z=pixel, t=p1:
+  r=fn1(log(log(z)))
+  IF ((z*p2)>(r*p1))
+    z=fn3((r+whitesq)-1)*(t+z)
+  ENDIF
+  z=fn4(r+whitesq)*fn3(z+p2)/p3
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+pn10zyy {
+  z=pixel:
+  d=(fn2(z-1)*(fn1(z+whitesq)))/p1
+  z=fn3(z*fn4(d))+whitesq
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+pn12zy {
+  z=pixel:
+  d=(fn2(z-1)*(fn1(z+whitesq)))/p1
+  z=(fn3(z/((d/p2)))*fn4(pixel))+whitesq
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+pn8z {
+  z=pixel:
+  d=((z-1)*(fn1(1/pixel)))/p1
+  z=(fn3(z*(1-(d/p2)))*fn4(pixel))+whitesq
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+pr19 {
+  z=pixel, t=z/1-(whitesq):
+  z=fn1((z+whitesq)*(p1))
+  z1=fn1((z*p1))
+  z2=fn1((z1/p2))
+  z3=fn1((z2-p2))
+  z=(z3*fn2(z2+z1))/t
+  |z|<4
+  ;SOURCE: ad5.frm
+}
+ 
+pxtest8 {
+  u=(sqr(p1)+whitesq)
+  z=pixel :
+  x= z*(u-1)/whitesq, y=z*(1/(u/2))
+  x1=fn1(y+fn2(p2*z))
+  y1=y-p1*fn1(z+fn2(p+whitesq/2*x))
+  z1=z-p1*fn1(x+fn2(p2*y))
+  z=z1+x1*y1
+  |z|<p3
+  ;SOURCE: ad978-1.frm
+}
+ 
+ra3 {
+  c=z=pixel, b=fn3(fn2(z)), k=real(p1)*b, o=imag(p1):
+  z=fn4(fn4(z)+c)+o
+  z=fn1(real(z))+flip(imag(z))*(b+fn3(z))
+  IF (b<=k)
+    z=(z+p3)+(fn2(b/(1-fn3(z)+whitesq)))
+  ENDIF
+  IF (b<imag(p1))
+    z=fn1(z*imag(p2))+(fn3(z/k)*o)
+  ENDIF
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+sra4 {
+  z=pixel, b=fn2(z), k=real(p1)*b, o=imag(p1):
+  z1=fn4(fn4(z))+(b*o)
+  z=fn1((z1))+flip(imag(z)), b=fn3(z1)+whitesq
+  IF (b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
+    z=(z1+p3)*(1/fn3(z))+whitesq
+  ENDIF
+  IF (b+(fn1(z+p1))<imag(p1*(b-k)))
+    z=(z1^(p2)+whitesq)+fn2(b/(k+o))
+  ENDIF
+  |z|<4
+  ;SOURCE: ad978-1.frm
+}
+ 
+w1 {
+  z=pixel, a=real(p1), b=imag(p1):
+  h=z^a+((-h)*z-1)
+  j=(z^a)
+  z=(z*h/j)+whitesq
+  |z|<a || |z|<b
+  ;SOURCE: ad978-1.frm
+}
+ 
+w1a {; Eliminated superfluous variable "e". G. Martin
+  z=pixel:
+  a=real(p1), b=imag(p1), c=real(p2), d=real(p3)
+  h=fn1(z^a+((c-d)*z-b))
+  j=fn2((c*z^d+d))
+  z=(z*h/j)+whitesq
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+w1b {
+  z=pixel, a=real(p1), b=imag(p1):
+  h=z^a+((-b)*z-1)
+  j=fn1(z^a)
+  z=fn2(z*h/j)+whitesq
+  |z|<a && |z|<b
+  ;SOURCE: ad978-1.frm
+}
+ 
+w1d {
+  z=pixel, a=real(p1), b=imag(p1):
+  h=(z*a)*((-b)*z-1)
+  j=fn1(z*a)
+  z=fn2(z*h/j)+whitesq
+  |z|<a || |z|<b
+  ;SOURCE: ad978-1.frm
+}
+ 
+w2 {
+  z=pixel, b=(p1*fn2(z)/p2), k=real(p1)*b, o=imag(p1):
+  z=fn1(real(z))+flip(imag(z))
+  IF (b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
+    z=(z+p3)*(1/fn3(z))+whitesq
+  ENDIF
+  IF (b+(fn1(z+p1))<imag(p1*(b-k)))
+    z=(z^(p2)+whitesq)+fn2(b/(k+o))
+  ENDIF
+  |z|<real(p1) && |z|<imag(p1)
+  ;SOURCE: ad978-1.frm
+}
+ 
+w3 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
+  z=pixel:
+  a=real(p1), b=fn1(imag(p1)), c=real(p2)
+  c1=imag(p2), d=real(p3), ee=imag(p3)
+  h=fn2(z*b)+fn3(c1*(z-ee))
+  j=fn4(a*(z/c+d))
+  z=(z*(h+j))+whitesq
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+yxs12 {
+  z=pixel, x=(tan(z)+whitesq), y=cos(z)
+  x2=(1/x)*p2, y2=(1/y)*p3, x3=x2*y, y3=y2*x:
+  d=fn4(z/y2)
+  x1=(y3+fn2(x))+whitesq
+  y1=fn3(x1)/z
+  z=fn1(x1*(y1))/p1
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+yxs15 {
+  z=pixel, x=tan(z), y=cosxx(z):
+  d=fn4(x*y)
+  x1=(y+fn2(x-y))+whitesq
+  y1=(((x+z)*(y-1))-fn3(x1))/cotan(z)
+  z=fn1(x1+(p1*(y1)))+whitesq
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 
+yxs5 {; Revised for Fractint v20 by G. Martin
+  z=pixel, x=fn1(pixel), y=fn2(1-tan(z)):
+  x2=fn3(x/(-2)*y), y3=fn3(z^(-2)*y)
+  d=fn4(1/x2*y3-1)
+  x=(x2*y3+fn2(x*y3))+whitesq
+  y=(x2*y3-fn3(y*x2))/d
+  z=fn1(x+y)
+  |z|<=4
+  ;SOURCE: ad978-1.frm
+}
+ 

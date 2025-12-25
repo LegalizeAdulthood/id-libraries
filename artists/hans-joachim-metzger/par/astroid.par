@@ -1,0 +1,92 @@
+comment { ; copyright Kerry Mitchell 14nov98
+
+Astroid
+
+The astroid is a figure from analytic geometry, resembling a four-
+pointed star with concave sides.  Its defining equation is:
+
+x^(2/3) + y^(2/3) = a^(2/3)
+
+where a determines the size of the figure, similar to the radius of
+a circle.  This equation can be generalized by changing the exponent
+of 2/3 to any value n.  If n is between 0 and 1, the figure resembles
+the standard astroid.  The sides go from being straight lines for n=1
+to lying atop of the coordinates axes as n approaches 0.  For n>1, the
+figure becomes convex, and is a circle for n=2.  As n approaches
+infinity, the figure approaches a square.
+
+This generalized astroid is the basis of this coloring scheme.  As with
+other plane figures, the astroid can be compared to the Mandelbrot and
+Julia orbits.  In the "astroid-near_man" and "astroid-near_jul" formulas,
+the fractal is colored according to the closest approach of the orbit
+to the figure.  The "astroid-inout_man" and "astroid-inout_jul" figures
+color by how often the orbit lands inside the astroid.
+
+The shape of the astroid can be altered through the exponent n, and its
+size changed through the use of a.  In addition, its orientation and
+location in the plane are determined by a "center" and "rotation"
+parameters.  The effects of all these parameters can be investigated
+using the basic "astroid" formula.  Here, the coloring flag allows 2
+ways of viewing the astroid:  in outline (colflag=1) and by coloring
+the inside vs. the outside (colflag=2).
+
+}
+
+basic-astroid { ; set real(p1)=2 to see inside
+  ;
+  ; illustrates astroid drawing
+  ;
+  reset=1960 type=formula formulafile=astroid.frm formulaname=astroid
+  center-mag=0/0/0.6666667 params=1/0/1/0.666666666/0/0 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 cyclerange=0/255
+  }
+
+square-mandel { ; copyright Kerry Mitchell 14nov98
+  ;
+  ; illustrates "near astroid" Mandelbrot coloring
+  ;
+  reset=1960 type=formula formulafile=astroid.frm
+  formulaname=astroid-near_man center-mag=-0.25/0/0.7
+  params=1000/0/0.01/20/0/0 float=y maxiter=100 inside=0
+  decomp=256 periodicity=0 colors=zzzuzzryz<5>jvzivziuz<7>\
+  bqybqyapyapy`ox<8>WkwVjvVjvViv<7>RetQesQdsQdrPcr<25>GSfF\
+  RfFReFQd<13>AJXAJWAIV9IU9HU<33>001000001<31>8GS9HT9HU9IU\
+  AIVAJW<31>KYmLZnLZnM_oM_o<11>RetRftSftSgtTgu<4>VjvVjvWkw\
+  Xkw<11>bqycrydryesyesz<5>jvzkwzmwz<2>qyzryzuzz cyclerange=0/255
+  }
+
+sprites { ; copyright Kerry Mitchell 14nov98
+  ;
+  ; illustrates "near astroid" Julia coloring
+  ;
+  reset=1960 type=formula formulafile=astroid.frm
+  formulaname=astroid-near_jul center-mag=0/0/0.6666667
+  params=0/1/0.6666666666666666/0.3333333333333333/-2/0
+  float=y maxiter=7 inside=0 decomp=256 periodicity=0
+  colors=FF`<3>DDXDDWDDVDDUCCT<28>000000110<60>yn0zo0zo\
+  0zo1<61>zzzzzzyyz<60>QQzPPzPPzPPy<23>FFa cyclerange=0/255
+  }
+
+astroid-near-julia { ; copyright Kerry Mitchell 14nov98
+  ;
+  ; illustrates "inside astroid" Mandelbrot coloring
+  ;
+  reset=1960 type=formula formulafile=astroid.frm cyclerange=0/255
+  formulaname=astroid-inout_man decomp=256 periodicity=0
+  center-mag=-1.27693934506353900/+0.35261951597131690/274914.1
+  params=1000/0/0.75/0.5/-0.75/0 float=y maxiter=256 inside=0
+  colors=000<62>00z00z11y<61>zz0zz0zy0<61>z01z01z12<61>zzz
+  }
+
+neptune { ; copyright Kerry Mitchell 14nov98
+  ;
+  ; illustrates "inside astroid" Julia coloring
+  ;
+  reset=1960 type=formula formulafile=astroid.frm
+  formulaname=astroid-inout_jul center-mag=0/0/0.6666667
+  params=-0.735038819963/0.14041387858/2/0.5/1/0 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 colors=000\
+  <30>xm0zo0zo1<29>zyxzzzyyz<29>RRzPPzPPy<30>000<30>yn0zo0\
+  zo2<29>zyyzzzyyz<29>QQzPPzOOx<29>111 cyclerange=0/255
+  }
+

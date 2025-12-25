@@ -1,0 +1,120 @@
+; 
+; Hi, Noel!
+; 
+; I'm sending the first of my new fractals.  Let me know if you get it and it
+; decodes ok.
+; Netcom seems to be having a few e-mail problems lately.
+; 
+; When I know you've gotten this one ok, I'll send the next 5.
+; 
+; I hope you like them!  Thanks, Noel!
+; 
+; Linda
+; 
+; P.S.  Here are the .par and .frm files for all 6:
+
+briar              { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=Lin-carr2new function=log
+  corners=0.31418914/1.2731409/-1.448862/-0.48991019
+  params=1.334/-0.667/4/-0.1/0/0 maxiter=500 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=RRuQQt<16>A0A<13>www<12>VRGTODQL9OI5<15>xn_<15>OI5<15>nru<15>0002\
+  00501000<14>99`AAcBAd<14>ZPz<14>3Be0Ac0Ab<13>01C00A00A<14>G7II8JH8J<13>2\
+  2G01F02H<10>09a0Ac1Ad2Be<10>GMuHNwHNw<14>SSv
+  }
+
+bubbles            { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=MyFrac-pc-Lin2 function=tan/recip
+  corners=-0.6874641058/-0.6862193399/-0.145383006/-0.132756213/-0.6930768\
+  507/-0.1378993461 params=1.238712387e-006/0/0/0/0/0 float=y
+  maxiter=500 inside=bof60 decomp=256
+  colors=Fdt<15>H1R<13>xR7<16>zzb<16>xP5<5>f89c5A`5B<2>U7ES8GQ9HNAJLBKLCMK\
+  EO<4>XSYZV_c`b<5>urnrplnmkikk<12>OI5<6>eYJg_LiaNkcPneR<3>xn_wm_vlZsjYqgX\
+  <13>DGNADMAGN<4>BUWBXYB__CbaCecChf<3>Dtn<12>IFr<2>H5ZG1SH1R<15>lF8<2>g99\
+  c5A<5>xP5<8>skUrnXqq_ptbmqa<11>ELK<6>9DD8BB8BB9BCABDBBE<14>Fdt
+  }
+
+pillow             { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=MyFractal-lla function=cotan/sqrt
+  corners=-0.42689516/0.26713542/1.4920541/1.3793126/-0.014164817/1.090315\
+  7 params=-0.334/0.667/0/0/0/0 float=y maxiter=1000 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=0BF778444000<15>A00<15>zmm<14>E44A00800500<2>F6CJ9GKAG<7>PFLQGMRH\
+  NRHOSIP<14>lyl<5>PdSL`PHXLDTHCSGARF8QD4NC0KA2JA4I9<15>Gmz<12>KNsLLsLLr<1\
+  3>ZI__HYZGW<14>A00968<17>CMD<11>mwn<15>05A<15>0cc<15>mmz<12>AAC
+  }
+
+scale              { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm formulaname=Dragon8
+  function=tan/sqrt
+  corners=-11.97198/0.8259627/7.117001/-7.131734/0.8259627/-7.131734
+  params=1/0/2/0/0/0 float=y maxiter=500 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=D_kCdf<2>D_k<11>pzz<15>00J<15>paj<15>5C8<14>KtvMxzLuw<13>28G0C4<1\
+  5>dtz<15>0LL<14>zzs<15>1EE<15>www<15>770<15>uzp<14>7L4<14>`qrctvexz<10>E\
+  lbBk_Bj`<2>Cee
+  }
+
+trellis            { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=MyFract-7new function=asin
+  corners=-1.43247325/-1.3694161/0.147292743/0.0813770017/-1.3694161/0.081\
+  3770017 params=1/0/0/0/0/0 float=y inside=bof61 decomp=128
+  viewwindows=1/1/yes/0/0
+  colors=0CIL74<8>ohcsmgvqkzvpvsm<11>BB4<11>mwp<12>0EE<11>dzt<11>050<6>0go\
+  <9>27c33a53`<10>T1O<11>zsz<10>OA1<8>pibsmgvqkzvpvsl<11>BB0<8>al`dqdguhjz\
+  mgwk<11>0EE<10>`zu<11>355000046<5>0Uf<8>1Ac18c25b33a<10>D2G<12>zsz<9>PCA
+  }
+
+homefire           { ; Linda Allison
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=Lin-7new5 function=abs
+  corners=-0.826646818/-0.79763804/0.797734879/0.826678071
+  params=1/0/2.1/-2.1/0/0 float=y maxiter=500 inside=bof60 decomp=256
+  viewwindows=1/1/yes/0/0 colors=@bjblured.map
+  }
+
+; ************************************
+
+Lin-carr2new { ;Original formula by Bob Carr, modified by Linda Allison
+  z = pixel:
+  z = (fn1(1/(z ^ 2)))/p1
+  |z| <= p2
+  }
+
+MyFrac-pc-Lin2 { ;Formulas by Bob Carr and Paul Carlson combined and modified
+by Linda
+Allison
+  z = c = pixel:
+  z2 = c * (1 - z * z)/(1 + z * z)
+  z = fn1(z2) + fn2((z2 ^ 2)/p1)  
+  |z| <= 100
+  }
+
+MyFractal-lla {; Linda Allison
+  z = pixel:
+   z = fn1(z) + fn2((z ^ 2)/p1)
+    |z| <= 100
+}
+
+Dragon8 (ORIGIN) {; Linda Allison
+  z = Pixel: power = p1/p2: x = z ^ power;
+   z = (fn1(z))/p1 - (fn2(z))/p2
+    |z| <= power
+  }
+
+MyFract-7new {;Linda Allison 
+  c = z = 1/pixel:
+   z = fn1(z^1.5) + (c + P1)/(z*2)
+    |z| <= P1
+}
+
+Lin-7new5 { ;Linda Allison 
+  z = pixel:
+  z = (fn1(1/z ^ 2))/p1 - p1
+  |z| <= p2
+  }
+

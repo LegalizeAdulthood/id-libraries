@@ -1387,3 +1387,155 @@ z=z1+z2+z3
 |z| < 8 
 }
  
+Wineglass (XAXIS) {; Pieter Branderhorst
+  c = z = pixel:
+  z = z * z + c
+  c = (1+flip(imag(c))) * real(c) / 2 + z
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_ducks (XAXIS) {; Jm Collard-Richard
+   ; Not so ugly at first glance and lot of corners to zoom in.
+   ; try this: corners=-1.178372/-0.978384/-0.751678/-0.601683
+  z=pixel, tst=p1+4, t=1+pixel:
+  z=sqr(z)+t
+  |z|<=tst
+  ;SOURCE: fractint.frm
+}
+ 
+IkeNewtMand {; Ron Barnett, 1993
+  z = c = pixel:
+  zf = z*z*z + (c-1)*z - c
+  zd = 3*z*z + c-1
+  z = z - p1*zf/zd
+  0.001 <= |zf|
+  ;SOURCE: fractint.frm
+}
+ 
+J_Lagandre4 {
+  c = pixel, z = P1:
+  z = (z*z*(35 * z*z - 30) + 3) / 8 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+REB004K {; Ron Barnett, 1993
+         ; floating point required
+  z = pixel:
+  x = flip(pixel + fn1(3/z - z/4))
+  z = x*z + p1
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+contest4 {; Kerry Mitchell
+          ; slightly optimized version of Contest formula
+          ; THIS IS THE ONE USED IN THE 1997 CONTEST
+  z=p1, c=pixel:
+  z2=sqr(z), z=z*z2+c*(1+z-z2)
+  |z| <= 4
+  ;SOURCE: contest.frm
+}
+ 
+Dragon8 (ORIGIN) {; Linda Allison
+                  ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = Pixel
+  power = p1/p2:
+  z = (fn1(z))/p1 - (fn2(z))/p2
+  |z| <= power
+  ;SOURCE: allison2.frm
+}
+ 
+Lin-7new5 {; Linda Allison
+  z = pixel:
+  z = (fn1(1/z ^ 2))/p1 - p1  
+  |z| <= p2
+  ;SOURCE: allison2.frm
+}
+ 
+Lin-carr2new {; Original formula by Bob Carr, modified by Linda Allison
+  z = pixel:
+  z = (fn1(1/(z ^ 2)))/p1
+  |z| <= p2
+  ;SOURCE: allison2.frm
+}
+ 
+MyFrac-pc-Lin2 {; Formulas by Bob Carr and Paul Carlson
+                ; combined and modified by Linda Allison
+  z = c = pixel:
+  z2 = c * (1 - z * z)/(1 + z * z)
+  z = fn1(z2) + fn2((z2 ^ 2)/p1)
+  |z| <= 100
+  ;SOURCE: allison2.frm
+}
+ 
+MyFract-7new {;Linda Allison
+  c = z = 1/pixel:
+  z = fn1(z^1.5) + (c + P1)/(z*2)
+  |z| <= P1
+  ;SOURCE: allison2.frm
+}
+ 
+MyFractal-lla {; Linda Allison
+  z = pixel:
+  z = fn1(z) + fn2((z ^ 2)/p1)
+  |z| <= 100
+  ;SOURCE: allison2.frm
+}
+ 
+JTet (XAXIS) {; Julia form 1 of the Tetration formula --Lee Skinner
+  z = pixel:
+  z = (pixel ^ z) + P1
+  |z| <= (P2 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+AltJTet (XAXIS) {; Julia form 2 of the Tetration formula --Lee Skinner
+  z = P1:
+  z = (pixel ^ z) + P1
+  |z| <= (P2 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+AltJTet (XAXIS) {; Julia form 2 of the Tetration formula --Lee Skinner
+  z = P1:
+  z = (pixel ^ z) + P1
+  |z| <= (P2 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+NewtonSinExp (XAXIS) {; Chris Green
+                      ; Newton's formula applied to sin(x)+exp(x)-1=0.
+                      ; Use floating point.
+  z=pixel:
+  z1=exp(z)
+  z2=sin(z)+z1-1
+  z=z-p1*z2/(cos(z)+z1)
+  .0001 < |z2|
+  ;SOURCE: fractint.frm
+}
+ 
+PseudoZeePi {; Ron Barnett, 1993
+  z = pixel:
+  x = 1-z^p1
+  z = z*((1-x)/(1+x))^(1/p1) + p2
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+PseudoZeePi {; Ron Barnett, 1993
+  z = pixel:
+  x = 1-z^p1
+  z = z*((1-x)/(1+x))^(1/p1) + p2
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+PsudoMandel (XAXIS) {; davisl - try center=0,0/magnification=28
+  z = Pixel:
+  z = ((z/2.7182818)^z)*sqr(6.2831853*z) + pixel
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 

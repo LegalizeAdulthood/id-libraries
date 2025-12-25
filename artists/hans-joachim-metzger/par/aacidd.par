@@ -1,0 +1,95 @@
+Freak No.1         { ; Pretty normal dudes...
+                     ; Slot
+  reset type=formula formulafile=fractint.frm formulaname=Jm_ducks
+  passes=b corners=-1.06468922/-1.06078678/-0.67037135/-0.66739976
+  params=1
+  }
+
+Zoom               { ; Wonderful Spiral, zOOm this one chuds.
+                     ; But remember, speed kills, ecstacy hugs and always slot.
+  reset type=formula formulafile=fractint.frm formulaname=Jm_ducks
+  corners=-1.06468922/-1.06078678/-0.67037135/-0.66739976 params=1
+  }
+
+Bleep the cat      { ; Pop a tab and colour cycle this...
+                     ; Jimi lives!
+  reset type=lambdafn function=sin passes=b
+  corners=0.63353/1.726212/-1.99617/-1.317368 params=1/0.4 bailout=4
+  colors=@default.map
+  }
+
+Girl               { ; Well, it's a long and hard story but, there was this..
+                     ; And there you have it.
+  reset type=formula formulafile=fractint.frm
+  formulaname=Wineglass corners=-1.50295/0.408146/-1.172367/1.1724
+  logmap=-5 colors=@firestrm.map
+  }
+
+Bahamas            { ; Man, I want to LIVE here!
+                     ; Gosh slot
+  reset type=fn(z)+fn(pix) function=sinh/sinh
+  corners=-1.831655/-1.143676/-1.411853/-0.89585 params=0/0/1 logmap=-7
+  colors=@topo.map
+  }
+
+Floating           { ; Mom, do I have to eat this? It's moving!
+                     ; Eat up or Mommy will call Santa to repatriate you.
+  reset type=cmplxmarksjul corners=-2.0/2.0/-1.5/1.5 params=0.3/0.6/1/-0.5
+  maxiter=100 logmap=-5 biomorph=100 colors=@d.map
+  }
+
+Teddy?             { ; Break on through to other side
+                     ; Escape from reality
+  reset type=manowarj
+  corners=-0.60497/-0.194379/0.129814/-0.12982/-0.194379/-0.12982
+  params=-0.6781311045/7.18250000003584e-006 maxiter=256 inside=0
+  potential=255/1500/500
+  colors=000c5m<2>f4oH6zCDc7LH<10>HPeIQhJQjKRmLTm<4>Udr<9>60O<8>IYSKaTKaT<21>b\
+  cLbcLbbM<8>YXU<3>DHb<3>vSj<5>bP9dFLf4X<5>RcuReuShv<32>UemUelUelUekTej<19>KfS\
+  _99<15>x11z00z10<29>zx0zz0zz1<7>103<9>`mF<2>diDfgChfBjdBkbA<3>rX6<4>Y6h<7>c5\
+  l
+  }
+
+Ss                 { ; Like Superman's logo with dim(H-B) > dim(E)
+                     ; That is Hausdorff-Besicovitch > Euclidian
+  reset type=mandel
+  corners=0.374655044/0.374674058/0.101423297/0.101454804
+  colors=000j00<5>f0000z<46>00z_99<15>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<11>z\
+  tn
+  }
+
+Digital Sunset     { ; Hmm, pretty standard, deeply beautilful.
+                     ; What you looking at this for?
+  reset type=julia corners=-2.0/1.999996/-1.49998/1.5
+  params=-0.500001905/1.01649999999509e-005 inside=bof60 outside=summ
+  colors=@volcano.map
+  }
+
+Fractal Bond       { ; Dum de-de-dee Dum Dum Dum Dum de-de-der
+                     ; Well anyway
+  reset type=julia corners=-0.587097/-0.187097/0.143357/0.443351
+  params=-0.50000019/0.5749672195 inside=bof60 outside=summ
+  colors=000GE8GG8<2>AG88G88GA8GC8GE8GG<2>8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGB\
+  FGBDGBCGBBGB<2>BGFBGGBFGBDGBCGKCC<6>FFF00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLz\
+  LzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z\
+  0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>\
+  hzh<3>hzz<2>hlz00S70S
+  }
+
+Strings            {
+  reset type=julia passes=b corners=0.300489/0.700489/0.213754/0.513755
+  params=-0.5430106845/-0.684484986 maxiter=25 inside=-101
+  }
+
+Folds              { ; Deserts...?
+                     ; Maybe
+  reset type=manowarj passes=t corners=-2.5/1.499996/-1.49998/1.5
+  params=-1.90499999996874e-006/1.01649999999509e-005 inside=bof60
+  outside=summ
+  colors=000Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>\
+  SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQS\
+  KOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3\
+  >0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG\
+  CBG
+  }
+
