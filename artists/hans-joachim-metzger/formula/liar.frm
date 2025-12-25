@@ -1,0 +1,46 @@
+Liar4 {; by Chuck Ebbert.
+       ; X: X is as true as (p1+1) times Y
+       ; Y: Y is as true as X is false
+       ; Calculate new x and y values simultaneously.
+       ; Real part of p1 changes probability.  Use floating point.
+       ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel, p = p1 + 1:
+  z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)))
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+Liar3 {; by Chuck Ebbert.
+   ; X: X is true to P1 times the extent that Y is true
+   ; Y: Y is true to the extent that X is false.
+   ; Sequential reasoning.  P1 usually 0 to 1.  P1=1 is Liar2 formula.
+   ; x(n+1) = 1 - abs(p1*y(n)-x(n) );
+   ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)*real(p1)-real(z) )
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+F'Liar1 {; Generalization by Jon Horner of Chuck Ebbert formula.
+         ; X: X is as true as Y
+         ; Y: Y is as true as X is false
+         ; Calculate new x and y values simultaneously.
+         ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel:
+  z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
+  fn1(abs(z))<p1
+  ;SOURCE: fractint.frm
+}
+Liar1 {; by Chuck Ebbert.
+       ; X: X is as true as Y
+       ; Y: Y is as true as X is false
+       ; Calculate new x and y values simultaneously.
+       ; y(n+1)=abs((1-x(n) )-y(n)), x(n+1)=1-abs(y(n)-x(n))
+  z = pixel:
+  z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 

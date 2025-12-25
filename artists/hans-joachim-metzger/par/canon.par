@@ -1,0 +1,50 @@
+canon1_1           {
+  reset=1821 type=formula formulafile=canon.frm formulaname=CANON1
+  function=cotanh/cotanh/sin/sin passes=t
+  corners=-0.7010264/0.7010458/-0.5257761/0.525772
+  params=-1.6180000000000001/0.61799999999999999/2.71828182845905/-0.61799\
+  999999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512 colors=000ddd<164>000zzz<87>ddd
+  }
+
+canon6_1           { ; 12/3/94
+  reset=1821 type=formula formulafile=canon.frm formulaname=CANON6
+  function=cotanh/sin/sqr/cosh passes=t
+  corners=-0.991999/0.9920004/-0.7970994/0.6909023
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=maxiter outside=imag
+  potential=255/256/1000 colors=@injector.map
+  }
+
+canon6_2           { ; 12/3/94
+                     ; need to run full
+  reset=1821 type=formula formulafile=canon.frm formulaname=CANON6
+  function=cotanh/sin/sqr/cosh passes=t
+  corners=-0.98259754/0.0014661749/-0.046239432/0.69180938
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=maxiter outside=imag
+  potential=255/256/1000
+  colors=000<2>111111000000zzz<76>ffffffffffffeeeeee<53>TTTTTTSRR<6>J78H45\
+  I66<6>VRK<8>5ye<9>CfQ<12>6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<29>222
+  }
+
+canon6_3           { ; 12/3/94
+                     ; need to run full
+  reset=1821 type=formula formulafile=canon.frm formulaname=CANON6
+  function=cotanh/sin/sqr/cosh passes=t
+  corners=-0.644321472/-0.621914735/0.42390526/0.440710337
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/1000 colors=@injector.map
+  }
+
+canon6_4           { ; 12/3/94
+                     ; need to run full
+  reset=1821 type=formula formulafile=canon.frm formulaname=CANON6
+  function=cotanh/sin/sqr/cosh passes=t
+  corners=-0.6409539391/-0.6330667676/0.4258768221/0.4317922089
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/1000 colors=@default.map
+  }
+

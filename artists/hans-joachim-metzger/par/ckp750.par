@@ -1,0 +1,350 @@
+;; ckp750.par (images 726 through 750), 10 February 1994
+;;
+;; Here are my current contributions to Fractint (V18.23)...
+;; Any duplications are entirely unintentional...  With any luck, a
+;; few of these will find their way into the postcard/poster world
+;; before the world comes to an end...  Comments pro and con will be
+;; sent to their appropriate locations...
+
+;; A few images here were inspirations from other creations, and
+;; have been (I hope) accorded appropriate acknowledgement...
+
+;; Time listed on the first line reflects creation on a 486-50
+;; running 1024x768x256 colors...   ALL of these images look best
+;; when created with a 256-color or better video and 1024x768 or
+;; better resolution...  I have no idea how they will look at
+;; lower resolutions or lower color densities...  Happy viewing!
+
+;; caren park
+;; lost and found books
+;; 1107 lewis lane southeast
+;; issaquah, washington  98027-4706
+;; compuserve:  76544,567
+
+;; PS:  Please do not use these images commercially without
+;; dropping me a quick message requesting inclusion in your
+;; fine product BEFORE you go to market...
+
+2d0738             { ; 2D for 3D "Crucible" (738)
+                     ; 07:08:48.64 .. 30 january 1994 .. caren park
+  reset=1823 type=fn(z)+fn(pix) function=cotanh/cosxx passes=b
+  corners=0.0203660731/-0.0285411205/-4.43416452/-4.49937418/-0.0285411205\
+  /-4.49937418 params=0/1.3300000000000001/3/1 float=y maxiter=100
+  inside=bof60 decomp=256
+  colors=00040p<13>O14P11S11<3>b22g22h22j22l22o22r33<3>x11z00z10<7>zH0zJ0z\
+  J0<110>zw8zw8zw8zw8zv8<70>g3Fg2Ff1Ge1H<11>N2WL2XJ2YH3_F3aC3c94e<2>00z10w\
+  30s
+  }
+
+ckp0726            { ; "Road, with Colors"
+                     ; 07:08:48.64 .. 24 january 1994 .. caren park
+  reset=1823 type=fn(z)+fn(pix) function=cosh/cos
+  corners=-1.71982485/-1.80619836/-1.35085911/-1.24006796/-1.76156425/-1.2\
+  4445677 params=0/0/1 maxiter=32767 bailout=128 fillcolor=21
+  inside=bof60 outside=summ logmap=yes symmetry=none
+  colors=oWe<6>c0K<13>xIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzzyyz<21>bco`bo\
+  `bo<22>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<15>zzz<5>q_h
+  cyclerange=0/255
+  }
+
+ckp0727            { ; "Shell Vines"
+                     ; 00:14:18.70 .. 24 january 1994 .. caren park
+  reset=1823 type=fn(z)+fn(pix) function=cosh/cos passes=b
+  corners=-1.75987422/-1.77037561/-1.31191093/-1.29837453/-1.76494879/-1.2\
+  9892313 params=0/0/1 float=y maxiter=3276 bailout=128 fillcolor=21
+  inside=maxiter logmap=yes decomp=256 symmetry=none
+  colors=O0G<5>00Gw0C<14>00Cw08<14>008w04<14>004w00<13>000w0ww0w<14>00ww0s\
+  <14>00sw0o<14>00ow0k<14>00kw0g<14>00gw0c<14>00cw0_<14>00_w0W<14>00Ww0S<1\
+  4>00Sw0O<14>00Ow0K<14>00Kw0G<7>S0G cyclerange=0/255
+  }
+
+ckp0728            { ; "Arch, with Colors"
+                     ; 00:03:10.04 .. 27 january 1994 .. caren park
+  reset type=fn+fn function=log/cosxx passes=1
+  corners=0.0309302438/-0.0632756433/-0.10643863/0.10643863/-0.0632756433/\
+  0.10643863 params=0.79600000000000004/0/1 float=y maxiter=1023
+  bailout=4 inside=maxiter potential=255/511/0
+  colors=000N00<5>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<1\
+  5>00z<14>000<16>z0X<15>000<15>p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l0\
+  0h00d00a00<2>Q00
+  }
+
+ckp0729            { ; "CandleFlame"
+                     ; 00:00:11.43 .. 27 january 1994 .. caren park
+  reset type=fn+fn function=exp/cosxx
+  corners=4.918687/-6.58779/-12.74621/13.255/-6.58779/13.255
+  params=0/0.238764/2 float=y maxiter=1023 bailout=4 inside=maxiter
+  potential=255/511/0
+  colors=000200000<30>0x00z00y0<29>020000000<14>000110330<29>zz0<30>220000\
+  000<29>000100300<29>z00<45>300
+  }
+
+ckp0730            { ; "Mom and Daughter"
+                     ; 00:00:42.89 .. 27 january 1994 .. caren park
+  reset type=tim's_error function=conj
+  corners=-0.02929139501/0.02528319361/0.0119918365113/-0.0584176066349/0.\
+  02734214726/-0.0584415263142 params=0.54235/0.88 float=y maxiter=25
+  bailoutest=and outside=real invert=0.0199485/0/0 decomp=256
+  biomorph=256
+  colors=0004B7<9>EXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>\
+  40r30t00v10x00z<26>MozNqzPuz<31>1BR09P19Q<11>JKfLLhLLhMMiONk<14>wwyzzzzw\
+  x<14>z0N<14>000<3>385
+  }
+
+ckp0731            { ; "Faerie Bud"
+                     ; 00:00:58.34 .. 27 january 1994 .. caren park
+  reset type=tim's_error function=conj
+  corners=-0.024354858736/-0.0051446035411/-0.004205939008954/-0.028990062\
+  99642/-0.0044198518555/-0.02899848272356 params=0.54235/0.88 float=y
+  maxiter=25 bailoutest=and outside=real invert=0.0199485/0/0
+  decomp=256 biomorph=256
+  colors=0004B7<9>EXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>\
+  40r30t00v10x00z<26>MozNqzPuz<31>1BR09P19Q<11>JKfLLhLLhMMiONk<14>wwyzzzzw\
+  x<14>z0N<14>000<3>385
+  }
+
+ckp0732            { ; "Mom and Daughter at 3"
+                     ; 00:00:44.65 .. 27 january 1994 .. caren park
+  reset type=tim's_error function=flip
+  corners=-0.02562606648/0.01744625459/0.01044363381/-0.0451261509153/0.01\
+  907125837/-0.0451450292273 params=0.54235/0.88 float=y maxiter=25
+  outside=real invert=0.0199485/0/0 decomp=256 biomorph=256
+  colors=0004B7<9>EXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>\
+  40r30t00v10x00z<26>MozNqzPuz<31>1BR09P19Q<11>JKfLLhLLhMMiONk<14>wwyzzzzw\
+  x<14>z0N<14>000<3>385
+  }
+
+ckp0733            { ; "Shattered Tunnel"
+                     ; 00:00:26.20 .. 27 january 1994 .. caren park
+                     ; derived in part from SAL006 (Richard Sherry)
+  reset type=barnsleyj1 passes=b corners=-2/2.000012/-1.499989/1.5
+  params=1.5/0.29999999999999999 maxiter=255 bailout=1000
+  fillcolor=253 potential=255/150/0 invert=0.9/0/0
+  colors=000<30>000100300<29>z00<46>200000010<30>0z0<30>020000000<14>00011\
+  0330<29>zz0<31>000
+  }
+
+ckp0734            { ; "Ammonite"
+                     ; 00:35:31.57 .. 28 january 1994
+  reset=1823 type=complexnewton
+  corners=-31.99/31.99/-22.81505/25.16995
+  params=51.5/4.5999999999999996/5.25/2.75 float=y inside=0 logmap=yes
+  periodicity=0
+  colors=5APuqq<8>yyyzzzyyyrrrkkk<3>ooo<17>GGGEEECCE<4>22E00F00G<23>00x00z\
+  01z<28>Puz<16>DXgATcBUe<12>1BR09P19Q<10>8FT8FUAGU<61>mnomoplkl<4>eQPcLKc\
+  LK<36>tpp
+  }
+
+ckp0735            { ; "Feathered Trilobyte"
+                     ; 00:1:25.74 .. 30 january 1994 .. caren park
+                     ; derived directly from DONS4:Creeping
+  reset=1823 type=mandel passes=b
+  corners=-2.159773/3.981019/-1.878549/2.727045
+  params=0.43235000000000001/0.54323999999999995 float=y maxiter=25
+  bailoutest=and inside=bof60 invert=1/0/0 decomp=256
+  colors=pppuuu<7>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000000<115>uuu
+  }
+
+ckp0736            { ; "Feathered Anemone"
+                     ; 00:1:26.83 .. 30 january 1994 .. caren park
+                     ; derived from DONS4:Creeping
+  reset=1823 type=mandel passes=b
+  corners=-2.273825/3.866967/-1.878549/2.727045
+  params=0.43235000000000001/0.54323999999999995 float=y maxiter=25
+  bailoutest=and inside=bof60 invert=1/0/0 decomp=256
+  colors=000i00z00<25>N2WL2XJ2YH3_F3aC3c94e<2>00z<16>O14P11S11<8>o22r33s22\
+  <2>x11z00z10<7>zH0zJ0zJ0<114>zx8zx8zw8<35>va6v`6wY5<4>zJ0ZC8f64o00<2>n00\
+  n00l00<4>j00
+  }
+
+ckp0737            { ; "Wing"
+                     ; 00:42:45.72 .. 30 january 1994 .. caren park
+  reset=1823 type=complexnewton
+  corners=-29.72818/29.72818/-12.60227/31.99
+  params=51.5/34.600000000000001/5.25/2.75 float=y inside=0 logmap=yes
+  periodicity=0
+  colors=9GU<62>mnomoplkl<4>eQPcLKcLK<46>yyyzzzyyyrrrkkk<3>ooo<17>GGGEEECC\
+  E<4>22E00F00G<23>00x00z01z<28>Puz<16>DXgATcBUe<12>1BR09P19Q<11>8FU
+  }
+
+ckp0738            { ; "Crucible"
+                     ; 00:04:03.04 .. 30 january 1994 .. caren park
+                     ; 3D requiring 2d0738.GIF
+  3d=yes filename=2d0738.gif scalexyz=95/95 roughness=95 waterline=0
+  filltype=4 ambient=20 rotation=55/25/0 perspective=0 xyshift=0/0
+  colors=00040p<13>O14P11S11<3>b22g22h22j22l22o22r33<3>x11z00z10<7>zH0zJ0z\
+  J0<110>zw8zw8zw8zw8zv8<70>g3Fg2Ff1Ge1H<11>N2WL2XJ2YH3_F3aC3c94e<2>00z10w\
+  30s
+  }
+
+ckp0739            { ; "Boomerang"
+                     ; 00:00:44.55 .. 03 february 1994 .. caren park
+  reset=1823 type=julfn+zsqrd function=cosxx
+  corners=-3.193466/3.626785/1.184814/-1.407166/0.504837/-3.747864
+  params=0.5/0.25 maxiter=1000 inside=0 potential=255/500/0
+  colors=00000FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMMM00NNNN00\
+  OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWWW00XXXX00\
+  YYYY00ZZZZ00____00____00````00aaaa00bbbb00cccc00dddd00eeee00eeee00ffff00\
+  gggg00hhhh00iiii00jjjj00jjjj00kkkk00llll00mmmm00nnnn00oooo00oooo00pppp00\
+  qqqq00rrrr00ssss00tttt00tttt00uuuu00vvvv00wwww00xxxx00yyyy00zzzzzzz00zyy\
+  y00yxxx00xwww00wvvv00vttt00tsss00srrr00rqqq00qppp00onnn00nmmm00mlll00lkk\
+  k00jjjj00ihhh00hggg00gfff00eeee00dccc00cbbb00baaa00a```00____00ZYYY00YXX\
+  X00XWWW00VVVV00UUUU00TSSS00SRRR00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJ\
+  J00IHHH00HGGG00FFFF00EEEE00DDDD00CBBB00AAAA00999900888800777700555500444\
+  4003333002222000<3>00111100222200333300444400555500555500666600777700888\
+  800999900AAAA00AAAA00BBBB00CCCC00DDDD00EEEE00FFFF
+  }
+
+ckp0740            { ; "4D Driedel"
+                     ; 00:00:44.55 .. 03 february 1994 .. caren park
+  reset=1823 type=julfn+zsqrd function=cosxx
+  corners=-3.193466/3.626785/1.184814/-1.407166/0.504837/-3.747864
+  params=0.5/0.25 maxiter=1000 inside=0 potential=255/500/0
+  colors=00000KzSD<12>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAK\
+  CDK<14>kuC<15>AAK<15>z00<15>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB
+  }
+
+ckp0741            { ; "Mirror on Mirror"
+                     ; 00:01:14.69 .. 03 february 1994 .. caren park
+  reset=1823 type=fn(z*z) function=log
+  corners=-0.5393189/0.5315064/-0.39752237/0.40533487 maxiter=250
+  inside=maxiter invert=0.4234/0/0 decomp=256 finattract=y
+  periodicity=0
+  colors=00dddd00eeee00eeee00ffff00gggg00hhhh00iiii00jjjj00jjjj00kkkk00lll\
+  l00mmmm00nnnn00oooo00oooo00pppp00qqqq00rrrr00ssss00tttt00tttt00uuuu00vvv\
+  v00wwww00xxxx00yyyy00zzzz00zzzz00zyyy00yxxx00xwww00wvvv00vttt00tsss00srr\
+  r00rqqq00qppp00onnn00nmmm00mlll00lkkk00jjjj00ihhh00hggg00gfff00eeee00dcc\
+  c00cbbb00baaa00a```00____00ZYYY00YXXX00XWWW00VVVV00UUUU00TSSS00SRRR00QQQ\
+  Q00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00EEEE00DDDD00CBB\
+  B00AAAA009999008888007777005555004444003333002222000<3>00111100222200333\
+  300444400555500555500666600777700888800999900AAAA00AAAA00BBBB00CCCC00DDD\
+  D00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMMM00NNN\
+  N00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWWW00XXX\
+  X00YYYY00ZZZZ00____00____00````00aaaa00bbbb00cccc cyclerange=0/255
+  }
+
+ckp0742            { ; "Eight-Balls"
+                     ; 00:01:40.61 .. 03 february 1994 .. caren park
+  reset=1823 type=barnsleyj2 passes=t corners=-2/1.999996/-1.49998/1.5
+  params=-1.0019569396972656/10.001965820789337 inside=bof60
+  outside=mult potential=512/512/1000
+  colors=0006AI<24>wFLzGMzHM<29>zrTztUzuUzwUzxUzzV<16>zfVtYPnMK<2>nRNoTPnR\
+  M<5>eD4cA0cB3cC7cDAdFE<7>V54U33T22R00R00<10>H46G57F56<5>834623523312000b\
+  00BEf<17>jlumnvopvqrv<2>wxvzzvzzr<5>zzU<8>r00<14>066<39>B2jB2kA3i<10>1AM\
+  0BJ0BJ<5>0AI0AI2AI4AI
+  }
+
+ckp0743            { ; "Split Wheels"
+                     ; 00:01:02.01 .. 03 february 1994 .. caren park
+  reset=1823 type=barnsleyj2 passes=t
+  corners=-3.521459/3.521461/-2.641076/2.641085
+  params=-19.001956939697266/9.0019658207892892 inside=maxiter
+  outside=mult potential=512/512/1000
+  colors=9GU4FU<2>1BR09P19Q<10>8FT8FUAGU<61>mnomoplkl<4>eQPcLKcLK<46>yyyzz\
+  zyyyrrrkkk<3>ooo<17>GGGEEECCE<4>22E00F00G<23>00x00z01z<28>Puz<16>DXgATcB\
+  Ue<8>4HV
+  }
+
+ckp0744            { ; "The Trail Out"
+                     ; 00:21:51.89 .. 03 february 1994 .. caren park
+  reset=1823 type=manfn+exp function=cotanh
+  corners=-0.1784831548/-0.1746211693/0.952525778/0.9554222661
+  params=0.72357234500000001 float=y maxiter=50 bailoutest=real
+  inside=zmag decomp=256
+  colors=2BU<14>9MeAMeANfANgBOh<6>GTmGUmHVnIWnJXo<10>QduReuSfvTgvUgvVhv<2>\
+  XixYjxZkx_ly_ly<6>dqzeqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw\
+  <8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tlSskRsjQsiPshO<\
+  4>qeLpdKpcJobInaH<2>m_GmZGlYFkYE<2>hVBhUBgUAgTAfS9<7>_M6ZL5YK5YK4XJ4WI3<\
+  3>TF1SE1SE1RD1QC1<13>G50F40E40E40<2>D32C22C22B12A12<15>207208000209<11>0\
+  3F03G03H03I03J<3>05L06M06N17O17P<5>2BU cyclerange=0/255
+  }
+
+ckp0745            { ; "FourPointFive-Barrel"
+                     ; 00:01:38.75 .. 06 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=Frame-RbtM passes=t
+  corners=-6.523656/2.896274/-3.56475/3.500182 float=y maxiter=500
+  fillcolor=144 inside=maxiter logmap=yes decomp=256 periodicity=-1
+  colors=00bbbb00cccc00dddd00eeee00eeee00ffff00gggg00hhhh00iiii00jjjj00jjj\
+  j00kkkk00llll00mmmm00nnnn00oooo00oooo00pppp00qqqq00rrrr00ssss00tttt00ttt\
+  t00uuuu00vvvv00wwww00xxxx00yyyy00zzzz00zzzz00zyyy00yxxx00xwww00wvvv00vtt\
+  t00tsss00srrr00rqqq00qppp00onnn00nmmm00mlll00lkkk00jjjj00ihhh00hggg00gff\
+  f00eeee00dccc00cbbb00baaa00a```00____00ZYYY00YXXX00XWWW00VVVV00UUUU00TSS\
+  S00SRRR00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00EEE\
+  E00DDDD00CBBB00AAAA009999008888007777005555004444003333002222000<3>00111\
+  100222200333300444400555500555500666600777700888800999900AAAA00AAAA00BBB\
+  B00CCCC00DDDD00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLL\
+  L00MMMM00NNNN00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVV\
+  V00WWWW00XXXX00YYYY00ZZZZ00____00____00````00aaaa cyclerange=0/255
+  }
+
+ckp0746            { ; "Grin with No Face"
+                     ; 00:00:53.72 .. 06 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=Frame-RbtM passes=t
+  corners=-0.6571764/0.4920551/1.8487472/2.7106688 float=y maxiter=500
+  fillcolor=144 inside=maxiter logmap=yes decomp=128 periodicity=-1
+  colors=00cccc00dddd00eeee00eeee00ffff00gggg00hhhh00iiii00jjjj00jjjj00kkk\
+  k00llll00mmmm00nnnn00oooo00oooo00pppp00qqqq00rrrr00ssss00tttt00tttt00uuu\
+  u00vvvv00wwww00xxxx00yyyy00zzzz00zzzz00zyyy00yxxx00xwww00wvvv00vttt00tss\
+  s00srrr00rqqq00qppp00onnn00nmmm00mlll00lkkk00jjjj00ihhh00hggg00gfff00eee\
+  e00dccc00cbbb00baaa00a```00____00ZYYY00YXXX00XWWW00VVVV00UUUU00TSSS00SRR\
+  R00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00EEEE00DDD\
+  D00CBBB00AAAA009999008888007777005555004444003333002222000<3>00111100222\
+  200333300444400555500555500666600777700888800999900AAAA00AAAA00BBBB00CCC\
+  C00DDDD00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMM\
+  M00NNNN00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWW\
+  W00XXXX00YYYY00ZZZZ00____00____00````00aaaa00bbbb cyclerange=0/255
+  }
+
+ckp0747            { ; "Rings Around"
+                     ; 00:02:18.14 .. 08 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtMand
+  corners=-0.9848524/0.7111476/-0.6985815/0.5734185
+  params=0.23095687000000001/0.20938745/0.029384750000000001/0.29857
+  float=y maxiter=500 fillcolor=144 inside=maxiter logmap=yes
+  periodicity=-1
+  colors=J2YH3_F3aC3c94e<2>00z<16>O14P11S11<4>d22g22h22j22l22o22r33<3>x11z\
+  00z10<7>zH0zJ0zJ0<110>zw8zw8zw8zw8zv8<70>g3Fg2Ff1Ge1H<12>L2X
+  cyclerange=0/255
+  }
+
+ckp0748            { ; "Trail Into the Middle"
+                     ; 00:06:56.16 .. 10 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtJul
+  corners=0.887565037/0.829510544/0.279873693/0.506475199/0.757896697/0.45\
+  2764813 params=1.9218765/0/4/1.981765 float=y maxiter=500
+  fillcolor=144 inside=maxiter logmap=yes periodicity=-1
+  colors=0000O0<5>000<15>z0z<14>40400K<15>zzz<14>44N000<15>WWW<14>000<15>z\
+  00<15>000<15>0zz<15>000<15>00z<15>000<10>ff0jj0ll0nn0<2>zz0<15>000<15>0z\
+  0<7>0W0 cyclerange=0/255
+  }
+
+ckp0749            { ; "'Round and 'Round We Go"
+                     ; 00:04:19.85 .. 10 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtMand
+  corners=0.408835582/0.457635582/-0.0183/0.0183
+  params=0.23095687000000001/0.20938745/0.029384750000000001/0.29857
+  float=y maxiter=500 fillcolor=144 inside=maxiter logmap=yes
+  periodicity=-1
+  colors=X6C<8>z00<15>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C`ADaBEc<46\
+  >xxyzzzyyz<22>`bo000_ao<21>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<5>T7D
+  cyclerange=0/255
+  }
+
+ckp0750            { ; "Solar DNA Chains"
+                     ; 00:07:57.90 .. 10 february 1994 .. caren park
+  reset=1823 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtMand
+  corners=1.81304066/1.84464066/-1.41909641/-1.39539641
+  params=0.23095687000000001/0.20938745/0.029384750000000001/0.29857
+  float=y maxiter=500 fillcolor=144 inside=maxiter logmap=yes
+  periodicity=-1
+  colors=ofe<21>yyyzzzyyyrrrkkk<3>ooo<17>GGGEEECCE<4>22E00F00G<23>00x00z01\
+  z<28>Puz<16>DXgATcBUe<12>1BR09P19Q<75>mnomoplkl<4>eQPcLKcLK<23>ned
+  cyclerange=0/255
+  }
+

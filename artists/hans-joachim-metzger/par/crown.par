@@ -1,0 +1,17 @@
+Crown_Clubs        { ; 30.38s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=crown.frm
+  formulaname=Club_Lambda function=ident/ident
+  center-mag=-0.456263/0/0.6228057/1.0948/-90/0
+  params=3/0 float=y maxiter=255 inside=0 outside=atan
+  invert=0.72092214870719/-0.125/0 periodicity=0
+  colors=@altern.map
+  }
+
+Club_Lambda {
+z=fn1(pixel), c=fn2(pixel), t=|P1|:
+
+z = z*z -conj(z) +c
+;c = c/2 +z,
+
+|z| <= t
+}

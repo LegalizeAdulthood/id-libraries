@@ -1,0 +1,78 @@
+Received: from droid.nosc.mil (root@droid.nosc.mil [198.253.206.12])
+	by mail.san.rr.com (8.8.7/8.8.7) with ESMTP id RAA15288
+	for <ehill1@san.rr.com>; Thu, 4 Dec 1997 17:54:57 -0800 (PST)
+Received: from NOTESGW.NOSC.MIL (notesgw.nosc.mil [198.253.77.61])
+	by droid.nosc.mil (8.8.7/8.8.7) with SMTP id RAA20961
+	for <ehill1@san.rr.com>; Thu, 4 Dec 1997 17:51:07 -0800 (PST)
+Received: by NOTESGW.NOSC.MIL(Lotus SMTP MTA v1.1 (385.6 5-6-1997))  id 88256564.00094F85 ; Thu, 4 Dec 1997 17:41:41 -0800
+X-Lotus-FromDomain: ACMS
+From: "Jay Hill"<jrhill@nosc.mil>
+To: fractal-art@aros.net
+Message-ID: <88256564.0008F1A8.01@NOTESGW.NOSC.MIL>
+Date: Thu, 4 Dec 1997 17:48:36 -0800
+Subject: Re: F.O.T.D., 03-12 (Omnichaos)
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+X-UIDL: a57bd39c456be8eac06360180c111f39
+
+
+Hi Jim,
+When you use the critical point you, it would appear,
+get the classic MSet like objects, the Julia sets are
+connected and you don't get the images we are
+used to seeing from you.  :-)
+
+Here is a short C++ code for computing the critical
+points for the Contest formula:
+
+f = z^3 + c(1 + z - z^2)
+f' = 3z^2 + c(1-2z)
+
+f'=0 has roots
+
+z0 = (c +- sqrt(c^2 - 3c))/3
+
+// CRITICAL.CPP
+// Computes critical points of
+//z := z^3 + c*(1+z-z^2)
+// by Jay Hill, 1997
+#include <complex.h>
+#include <stdio.h>
+#include <math.h>
+
+void main(int argc, char **argv)
+{
+  double x=-1, y=0;
+  if (argc > 1) x = atof(argv[1]);
+  if (argc > 2) y = atof(argv[2]);
+ complex c(x,y);
+ cout << "c:" << c <<"\n";
+ complex z=(c+sqrt(c*(c-3)))/3;
+// complex f=(3*z-2*c)*z+c;
+ cout << "z:" <<z <<"\n";
+}
+Usage:
+CRITICAL [real part] [imaginary part]
+
+And here is a sample, the splotch near the top of the contest object.
+It is centered at -0.559898 + 0.779713i so its z0 = 0.334535 -0.081554i.
+
+distorted          { ; distorted Midget in the Fractint Contest space
+                    ; by Jay Hill, 1997
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest4 center-mag=-0.559898/0.779713/19.99743
+  params=0.334535/-0.081554 maxiter=256
+  colors=000000<26>FUsGWvHWv<42>wilxjkxjkxjk<\
+  143>xvdywcxwc<30>0WG9g69g6
+  savename=distort1
+  }
+frm:contest4  {; Kerry Mitchell
+      ; slightly optimized version of Contest formula
+         z=p1, c=pixel:
+         z2=sqr(z), z=z*z2+c*(1+z-z2), |z| <= 4
+         }
+
+Jay
+PS  Jim, and anyone else, don't forget to post your contest entries to the
+Fractint list!
+

@@ -1,0 +1,386 @@
+;; cp1525.par (images 1501 through 1525), 10 October 1996
+;;
+;; Here are my current contributions to Fractint (v19.4)...
+;; Any duplications are entirely unintentional...  With any luck, a
+;; few of these will find their way into the postcard/poster world
+;; before the world comes to an end...
+
+;; Several CDs are now available containing many CKP images...
+;; "Fractography, Volume 1" is available for $25 + $5 shipping
+;; (US Destinations only) and handling when sent to the address
+;; posted below...
+
+;; Now Available:  Fractal Frenzy 2, "Postcards from the Edge of
+;; Chaos", from Walnut Creek CD...
+
+;; A few images here were inspirations from other creations, and
+;; have been (I hope) accorded appropriate acknowledgement...
+;; Comments pro and con will be sent to their appropriate locations...
+
+;; Time listed on the first line reflects creation on a 486-50dx
+;; running 1024x768x256 colors...   ALL of these images look best
+;; when created with a 256-color or better video and 1024x768 or
+;; better resolution...  I have no idea how they will look at
+;; lower resolutions or lower color densities...  Happy viewing!
+
+;; caren park
+;; lost and found books
+;; 1107 lewis lane southeast
+;; issaquah, washington  98027-4706
+;; compuserve:  76544,567
+
+;; PS:  DO NOT use ANY of my images commercially without
+;; dropping me a message requesting inclusion in your
+;; fine product BEFORE you go to market...  while my lawyers
+;; and accountant will appreciate it if you did, i'd be willing
+;; to guarantee you won't...
+
+ckp1501            { ; "Stained Glass Owl"
+                     ; 00:01:45.84 .. 29 august 1996 .. caren park
+  reset=1940 type=formula formulafile=42aCarr.frm formulaname=JoWe_04b
+  function=abs center-mag=1.455e-005/1.18868/0.07337978 params=-50/700
+  maxiter=151 inside=maxiter potential=255/255/0 symmetry=yaxis
+  colors=00d00_<9>00z<14>00N00K01J<11>0G40H30I20K00M00P0<13>0z0<14>0N00K01\
+  J0<11>G40H30I20K00M00P00<13>z00<13>80r40v20x00z<5>00i00f00a<4>00N00K01J<\
+  11>0G40H30I20K00M00P0<13>0z0<14>0N00K01J0<11>G40H30I20K00M00P00<13>z00<1\
+  2>T00Q00N00K00J01<11>40G30H20I00K00M00P<2>00X
+  }
+
+2d1502             { ; "Egg CrossSection"
+                     ; 00:04:41.65 .. 08 september 1996 .. caren park
+                     ; 2D needed to recreate 3D : CKP1502
+                     ; recolored from jowe3759
+  reset=1940 type=fn(z)+fn(pix) function=abs/sin
+  center-mag=-1.64689/0.0245039/0.4255175/1/-90 params=1/0/1/0 float=y
+  maxiter=100 inside=bof60 symmetry=none
+  colors=4062BU<8>6H`7Ia7Jb8Kc8Kc9Ld<2>ANfANgBOhCPi<3>FSlFSlGTmGUmHVn<5>M_\
+  qM`rN`rNasObs<4>SfvTgvUgvVhvWhw<4>_ly_ly`myamyany<2>dpzdpzeqzeqzfrz<8>mv\
+  ymwynwynxyoxy<4>qyyryxryxsywsyw<4>vzuvzuuyt<63>000000100<29>L80M91L91<6>\
+  G50F40E40E40<2>D32C22C22B12A12<13>307207208209<11>03F03G03H03I03J<3>05L0\
+  6M06N17O17P<5>2BU
+  }
+
+ckp1502            { ; "Egg CrossSection"
+                     ; 00:04:41.65 .. 08 september 1996 .. caren park
+                     ; recolored from jowe3759
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=60 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 filename=2d1502
+  colors=4062BU<8>6H`7Ia7Jb8Kc8Kc9Ld<2>ANfANgBOhCPi<3>FSlFSlGTmGUmHVn<5>M_\
+  qM`rN`rNasObs<4>SfvTgvUgvVhvWhw<4>_ly_ly`myamyany<2>dpzdpzeqzeqzfrz<8>mv\
+  ymwynwynxyoxy<4>qyyryxryxsywsyw<4>vzuvzuuyt<63>000000100<29>L80M91L91<6>\
+  G50F40E40E40<2>D32C22C22B12A12<13>307207208209<11>03F03G03H03I03J<3>05L0\
+  6M06N17O17P<5>2BU
+  }
+
+ckp1503            { ; "Skull"
+                     ; 00:02:43.12 .. 11 september 1996 .. caren park
+                     ; recolored from LHS_PHC2:zmsu003.gif
+  reset=1940 type=formula formulafile=phc_1.frm formulaname=JDfrm010
+  passes=1
+  center-mag=+0.00004400994114728/+1.00334360926112700/243.9673
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=zmag outside=summ
+  logmap=yes
+  colors=000DLX<2>GIMHIIIHEJHAKG6LG2MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1\
+  JT2JV3<6>Gi7Fk8Gi7<7>KT3KR2KP1KN1LL1LJ0MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2M\
+  F0<15>zH0<15>MF0<15>ww0<15>MF0OF1<14>wEa<3>mESkEQiENgELdEI<6>PE1<15>zp_<\
+  14>SL4PI1MF0LG2<13>7Or5Pv6Ps<4>BL`
+  }
+
+ckp1504            { ; "Star Jelly"
+                     ; 00:07:41.98 .. 20 september 1996 .. caren park
+                     ; recolored from SG40602.GIF
+  reset=1950 type=formula formulafile=_j.frm formulaname=Gallet-4-06
+  function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=Yd_<4>ZRcZOdZMe_Ke_If_Gg<4>`Aja9ka9l<2>b7nb7nb8o<4>cCrdDrdFs<2>eL\
+  teOueQueTvfWv<4>gjxgnxgqxhuyhyyhyy<2>inzijzigzjdz<4>kQzkOzkLzlJzlHzlFz<4\
+  >m9yn8yn8yn7yn7xo5x<2>o6wp7wp8wp9vpAvqCuqEuqFtqItrKs<5>s`pscotgotintmntp\
+  mutluyluykutjvpjvmivihvgg<5>xPcxMbxKayIayF`yE_yCZ<3>z7W00003603804914B<2\
+  >18F29G2CI2DJ<3>3NP3QQ4UR4WT<5>5p_6ta6yb6yc6td<2>7ig7fi8bi8_j8Wk8Ul9Qm<2\
+  >9IpAGpADrACrA9s<2>B6uB4uC4v<2>C3xDIx<4>EKyELzEMzFNzFPzFQzFSzGTzGWzGXz<5\
+  >IkyImyIpyIsxJvxJzxJzw<2>KpuKmuKkt<2>LcrLarM_pMXpMWoMTn<4>OMiOLiOKg<4>PI\
+  bQ8a<2>Q9YRAXRBWRCURDT<4>TMMTOKTRJ<3>UaDUdCVhBVj9<2>Wu5WyUWyV<2>XnYXjYXh\
+  Z cyclerange=0/255
+  }
+
+ckp1505            { ; "Boson"
+                     ; 00:07:41.98 .. 20 september 1996 .. caren park
+                     ; recolored from SG40602.GIF
+  reset=1950 type=formula formulafile=_j.frm formulaname=Gallet-4-06
+  function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=z8Xz7W00003603804914B<2>18F29G2CI2DJ<3>3NP3QQ4UR4WT<5>5p_6ta6yb6y\
+  c6td<2>7ig7fi8bi8_j8Wk8Ul9Qm<2>9IpAGpADrACrA9s<2>B6uB4uC4v<2>C3xDIx<4>EK\
+  yELzEMzFNzFPzFQzFSzGTzGWzGXz<5>IkyImyIpyIsxJvxJzxJzw<2>KpuKmuKkt<2>LcrLa\
+  rM_pMXpMWoMTn<4>OMiOLiOKg<4>PIbQ8a<2>Q9YRAXRBWRCURDT<4>TMMTOKTRJ<3>UaDUd\
+  CVhBVj9<2>Wu5WyUWyV<2>XnYXjYXhZYd_<4>ZRcZOdZMe_Ke_If_Gg<4>`Aja9ka9l<2>b7\
+  nb7nb8o<4>cCrdDrdFs<2>eLteOueQueTvfWv<4>gjxgnxgqxhuyhyyhyy<2>inzijzigzjd\
+  z<4>kQzkOzkLzlJzlHzlFz<4>m9yn8yn8yn7yn7xo5x<2>o6wp7wp8wp9vpAvqCuqEuqFtqI\
+  trKs<5>s`pscotgotintmntpmutluyluykutjvpjvmivihvgg<5>xPcxMbxKayIayF`<3>z9\
+  Y cyclerange=0/255
+  }
+
+ckp1506            { ; "Top Quark"
+                     ; 00:07:41.98 .. 20 september 1996 .. caren park
+                     ; recolored from SG40602.GIF
+  reset=1950 type=formula formulafile=_j.frm formulaname=Gallet-4-06
+  function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=_5l<14>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11\
+  <6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23\
+  >wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<4>70B00080D<11>Q0cS0fT0hV0\
+  kW0mY0pZ2n cyclerange=0/255
+  }
+
+ckp1507            { ; "Bottom Quark"
+                     ; 00:07:41.98 .. 20 september 1996 .. caren park
+                     ; recolored from SG40602.GIF
+  reset=1950 type=formula formulafile=_j.frm formulaname=Gallet-4-06
+  function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=KEE<4>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzaz\
+  yazwa<29>oornnrnnsmmsmmtllummu<20>000<4>70B00080D<11>Q0cS0fT0hV0kW0mY0p<\
+  16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<7>KDD
+  cyclerange=0/255
+  }
+
+ckp1508            { ; "Betty Elvis Eyes"
+                     ; 00:07:41.98 .. 20 september 1996 .. caren park
+                     ; recolored from SG40602.GIF
+  reset=1950 type=formula formulafile=_j.frm formulaname=Gallet-4-06
+  function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=Q00<6>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>0\
+  0z<14>000<16>z0Xv0Vr0Tp0Sn0R<12>000<15>p0w<15>000<15>zzz<15>000L00<13>z0\
+  0<2>p00l00h00d00a00Y00U00 cyclerange=0/255
+  }
+
+ckp1509            { ; "Echoes of Sunlight"
+                     ; 00:06:49.36 .. 20 september 1996 .. caren park
+                     ; derived from SG40701.GIF
+  reset=1950 type=formula formulafile=_g.frm formulaname=Gallet-4-07
+  passes=t center-mag=-2.84217e-014/0/0.106359
+  params=0/1.5/25/25/1000/0 float=y maxiter=100 inside=bof60
+  outside=atan decomp=256
+  colors=00w00z<14>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K00M00\
+  <14>z00<13>80r40v20x00z<13>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13\
+  >I20K00M00<14>z00<14>N00K00J01<13>20I00K00M<12>00t cyclerange=0/255
+  }
+
+ckp1510            { ; "Facets"
+                     ; 00:06:49.36 .. 20 september 1996 .. caren park
+                     ; derived from SG40701.GIF
+  reset=1950 type=formula formulafile=_g.frm formulaname=Gallet-4-07
+  passes=t center-mag=-2.84217e-014/0/0.106359
+  params=0/1.5/25/25/1000/0 float=y maxiter=100 inside=bof60
+  outside=atan decomp=256
+  colors=`VR<6>0A0AKK<6>mmK<7>AKMFF0<6>zz0<7>FF0F00<6>z0A<7>F00FFF<6>zzz<7\
+  >FFF0FK<6>0Um<7>0FKPF0<6>mK0<7>PF0FKA<5>NSIPUKOTJ<6>FKA00K<4>57j79p78l<6\
+  >00K0D1<6>1aA<7>1F0KF1<6>hZ0<6>OI0KF0F0F<6>Z0UX0T000U0R<5>F0FKF0<6>hZ0<7\
+  >KF000A<6>00k<7>00AA00<6>z00<7>A00<6>2r00z00u0<7>0A0<6>eXU
+  cyclerange=0/255
+  }
+
+ckp1511            { ; "Corners"
+                     ; 00:07:09.95 .. 20 september 1996 .. caren park
+                     ; derived from SG40701.GIF
+  reset=1950 type=formula formulafile=_g.frm formulaname=Gallet-4-07
+  passes=t center-mag=-3.01981e-014/1.77636e-015/0.1297061
+  params=0/1.5/25/25/1000/0 float=y maxiter=100 inside=bof60
+  outside=atan decomp=256
+  colors=0qx<31>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsmmtl\
+  lummu<20>000<4>70B00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>\
+  kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ\
+  <27>0ty0ry cyclerange=0/255
+  }
+
+ckp1512            { ; "Inner Circles"
+                     ; 02:35:11.95 .. 21 september 1996 .. caren park
+  reset=1950 type=formula formulafile=19-2-a.frm formulaname=Carr2735
+  passes=1 center-mag=0.000430141/-7.46504e-007/12.37407
+  params=100/150/200/250 float=y maxiter=647 periodicity=0
+  colors=000CCE<4>000<11>H0RJ0TK0VM0YN0_P0a<4>W0mY0pZ2n<15>rkDtnAuq8wt5xw3\
+  zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGM\
+  NFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmms\
+  mmtllummu<14>EEH
+  }
+
+ckp1513            { ; "Discs and Shadows"
+                     ; 00:02:34.78 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=19-2-a.frm
+  formulaname=BJ-SG-3-03-gb function=tanh/cosxx
+  center-mag=-0.298968/2.25332/0.1009489/1/180 params=3.141/0.4/10/0.5
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=3CW<12>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>T\
+  gvUgvVhvWhwXiw<2>Zky_ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwyn\
+  xyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<8>yqZxpZxpY\
+  woXwoW<5>tlSskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAfS9eR9\
+  dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>307207208\
+  209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV cyclerange=0/255
+  }
+
+ckp1514            { ; "4D Waves"
+                     ; 00:02:12.26 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=19-2-a.frm
+  formulaname=BJ-SG-3-03-gb function=sin/flip
+  center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=000m`Gm_G<5>hVBhUBgUAgTAfS9<16>TF1SE1SE1RD1QC1<13>G50F40E40E40<2>\
+  D32C22C22B12A12<14>307207208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2\
+  CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<5>M_qM`rN`rNasObs<\
+  4>SfvTgvUgvVhvWhw<4>_ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwyn\
+  xyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<13>zwhzwhzwgzvfzvfzue<4>ysays`\
+  yr_yq_<10>tlSskRsjQsiPshO<3>qfMqeLpdKpcJobInaHn`H
+  }
+
+ckp1515            { ; "Interface Lens"
+                     ; 00:02:38.74 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=19-2-a.frm
+  formulaname=BJ-SG-3-03-gb function=cosxx/cotanh
+  center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=yq_<10>tlSskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAf\
+  S9eR9dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>3072\
+  07208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAMe\
+  ANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>TgvUgvVhvWhwXiw<2>Zky\
+  _ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsyw\
+  syw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<6>yr_ cyclerange=0/255
+  }
+
+ckp1516            { ; "Untitled, #1516"
+                     ; 00:01:45.40 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=recip/recip center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=xJN<37>e0dd0ed0ec0fc1f<38>LKzKLzKLy<38>0cf0de0de0ed1ed<40>LzLMzKM\
+  yK<38>df0ee0ee0fd0fd1<38>zMKzLLyLLyKMxKM cyclerange=0/255
+  }
+
+ckp1517            { ; "Gravity Well"
+                     ; 00:02:26.05 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=cos/log center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=yq_<10>tlSskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAf\
+  S9eR9dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>3072\
+  07208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAMe\
+  ANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>TgvUgvVhvWhwXiw<2>Zky\
+  _ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsyw\
+  syw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<6>yr_ cyclerange=0/255
+  }
+
+ckp1518            { ; "Untitled, #1518"
+                     ; 00:02:24.40 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=asinh/floor center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=11k<8>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<4\
+  >70B00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgH\
+  JfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l\
+  00k00k11k cyclerange=0/255
+  }
+
+ckp1519            { ; "Lens Drop"
+                     ; 00:02:08.91 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=cosh/ident center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=yq_<10>tlSskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAf\
+  S9eR9dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>3072\
+  07208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAMe\
+  ANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>TgvUgvVhvWhwXiw<2>Zky\
+  _ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsyw\
+  syw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<6>yr_ cyclerange=0/255
+  }
+
+ckp1520            { ; "Drop Lanes"
+                     ; 00:02:41.16 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=tan/cosxx center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=srl<10>oornnrnnsmmsmmtllummu<20>000<4>70B00080D<11>Q0cS0fT0hV0kW0\
+  mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCC\
+  KDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzz\
+  azyazwa<17>srk cyclerange=0/255
+  }
+
+ckp1521            { ; "Patchwork"
+                     ; 00:05:20.00 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=cotanh/trunc center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=2BU<14>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>T\
+  gvUgvVhvWhwXiw<2>Zky_ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwyn\
+  xyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<8>yqZxpZxpY\
+  woXwoW<5>tlSskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAfS9eR9\
+  dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>307207208\
+  209<11>03F03G03H03I03J<3>05L06M06N17O17P<5>2BU cyclerange=0/255
+  }
+
+ckp1522            { ; "Scottish Patchwork"
+                     ; 00:02:08.91 .. 24 september 1996 .. caren park
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=cosh/ident center-mag=-0.298968/2.25332/0.06068403/1/180
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=49G<8>000CsE<31>000ss_<16>000sgC<16>000oCC<19>CCC<22>qCq000<23>CG\
+  s000<26>Bq_CsaCs_CCCCsYECE<19>qCq<31>000CWs<21>4AI cyclerange=0/255
+  }
+
+ckp1523            { ; "Dream Waters, Dream Shadows"
+                     ; 00:03:38.61 .. 25 september 1996 .. caren park
+                     ; side note:  the second sphere doesn't show until the
+                     ; fourth pass...
+  reset=1950 type=formula formulafile=_b.frm formulaname=BJ-SG-3-03-gb
+  function=tan/exp center-mag=1.20446/1.30799/0.248705/1/90
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=_M6<7>UG2TF1SE1SE1RD1QC1<13>G50F40E40E40<2>D32C22C22B12A12<14>307\
+  207208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAM\
+  eANfANgANg<7>GTmGUmHVnIWnJXo<10>QduReuSfvTgvUgvVhv<2>XixYjxZkx_ly_ly<6>d\
+  qzeqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<\
+  15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tlSskRsjQsiPshO<4>qeLpdKpcJobInaH<2\
+  >m_GmZGlYFkYE<2>hVBhUBgUAgTAfS9<6>`M6 cyclerange=0/255
+  }
+
+ckp1524            { ; "Bough Waves and Cross Hairs"
+                     ; 00:38:21.32 .. 10 october 1996 .. caren park
+  reset=1950 type=formula formulafile=19-2-a.frm formulaname=Carr2088
+  passes=b
+  center-mag=+0.00280133657222791/+0.07567675311842995/1134.14/1/-82.499
+  params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
+  colors=00013D070<14>7M3<7>zo`<7>7M3<13>070000000000007<13>3I`<7>`Fw<7>3I\
+  `<13>019007000077<11>0UU<8>zyn<8>0FF00000000701A14G<8>3He3Ih5Ng<6>EraFw`\
+  Era<5>5Og3Ih3He<8>04G03D01A007000007000PQI<13>zyn<14>PQI000000000700<12>\
+  c00<7>zz0<7>c00<14>000000 cyclerange=2/255
+  }
+
+ckp1525            { ; "Backlit"
+                     ; 00:31:46.90 .. 10 october 1996 .. caren park
+  reset=1950 type=formula formulafile=_rc2.frm formulaname=Carr2121
+  passes=b center-mag=22.419/21.4375/0.09705961/1/7.499
+  params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
+  colors=000<3>000700<20>o00<23>700XK5<12>qs`svcrsd<11>cNsbKtaHu`FwZEsXDp<\
+  13>007Q00<13>M00M00K00<14>100_fw<14>7Px<15>F00000000F00<11>Z00`00`13<13>\
+  `Es`FwbHs<14>ww0<15>0h0<15>00U<12>eeq000 cyclerange=2/255
+  }
+
