@@ -17,3 +17,14 @@ To use these in Id, add the directories with the `librarydirs` parameter (availa
 version 1.3.1).
 
 Each directory contains a ReadMe citing the original source for the files.
+
+## Linux Compatibility
+
+All entries have been reviewed by scripts to ensure that filenames match in a
+case-sensitive fashion.  This should allow them to work properly on linux, where
+the filesystem is case sensitive by default.
+
+## FRACTINT Compatibility
+
+Most files should be compatible with DOS FRACTINT, but some file parameters may
+use long filenames that are not properly handled by FRACTINT.
