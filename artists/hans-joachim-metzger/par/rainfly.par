@@ -1,0 +1,21 @@
+RainFly            {
+  reset=2003 type=formula formulafile=rainfly.frm
+  formulaname=Butterfly center-mag=0/-1.23205/0.6666667/1.1211
+  float=y maxiter=255 inside=0 outside=atan invert=0.5/0/-0.5
+  colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
+  0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
+  0<2>0z00z30z70zB0zD0zH0zJ0zK0zL0zN<3>0zS0zT0zV0zX<4>0zc0zd0zf<14>0zu0z\
+  v0zw0zx0zy<8>0rz0qz0oz<4>0jz0iz0hz<8>0Xz0Vz0Tz<3>0Pz0Nz0Lz0Jz0Hz0Gz0Dz\
+  0Bz<2>00z30z70zB0zD0zF0zG0z<4>P0zQ0zS0zT0zV0z<2>_0z`0za0zb0zc0z<3>h0zi\
+  0zk0z<9>u0zv0zw0zx0zy0z<13>z0mz0lz0k<3>z0fz0dz0cz0az0`<4>z0Vz0Tz0S<3>z\
+  0Lz0Jz0Hz0Gz0D<3>z04
+  }
+
+Butterfly(YAXIS) {
+z=(0,0), c=flip(-pixel):
+
+temp = sqr(z)
+z = temp*z -conj(temp) +c
+
+LastSqr <= 4
+}

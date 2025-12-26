@@ -5772,3 +5772,133 @@ M_TchebychevU5 {
   ;SOURCE: tchebych.frm
 }
  
+Mandel3 {; Fractal Creations example
+  z = pixel, c = sin(z):
+  z = (z*z) + c
+  z = z * 1/c
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Richard9 (XAXIS) {; Jm Collard-Richard
+  z=pixel:
+  sqrz=z*z, z=sqrz + 1/sqrz + pixel
+  |z|<=4
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppfnct {; Lee Skinner
+  z = pixel, f = cos(pixel)/sin(pixel):
+  z = fn1(z) + f
+  |z|<= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_11 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(fn4(z)*pixel)))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_16 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  f2=fn2(z), z=fn1(f2)*fn3(fn4(f2))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_18 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(z)*pixel*fn2(fn3(z)*pixel)
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_07 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3((z^z)*pixel)))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_08 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3((z^z)*pixel)))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Rollo_6 {
+   ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
+   ; formulae. The formulae used can be found in Noel.frm
+  z = pixel, zp = p1
+  a = (whitesq == 1), b = (whitesq == 0):
+  temp = z 
+  r = fn1(z)^5 + zp 
+  q = fn2(z)^5 + zp 
+  zp = temp
+  z = (q * a) + (r * b)
+  |zp| <= 4 
+  ;SOURCE: rollo.frm
+}
+ 
+a_spider1 {; Adjustable spider - After Homer Smith of Art Matrix
+           ; try p1 = (.55,0) or (0,.4) or (.4,.35)
+  z=0, c=pixel:
+  z = z*z + c, z = fn1(z)
+  c = c * p1 + z, c = fn2(c)
+  |z| <= 4
+  ;SOURCE: hughes.frm
+}
+ 
+ULI_5 {
+  z = Pixel, c = fn1(pixel):
+  z = fn2(1/(z+c))*fn3(z+c)
+  |z| <= p1
+  ;SOURCE: fractint.frm
+}
+ 
+F'M-SetInNewtonA (XAXIS) {; use float=yes
+                          ; jon horner 100112,1700, 12 feb 93
+  z = 0,  c = fn1(pixel),  cminusone = c-1:
+  oldz = z, nm = p1*c-2*z*cminusone, dn = p1*(3*z*z+cminusone)
+  z = nm/dn+2*z/p1
+  |(z-oldz)|>=|0.01|
+  ;SOURCE: fractint.frm
+}
+J_TchebychevS3 {  
+  c = pixel, z = P1:
+  z = c*z*(z*z-2)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevT5 {    
+  c = pixel, z = P1:
+  z = c*(z*(z*z*(16*z*z-20)+5))
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevT6 {
+  c = pixel, z = P1:
+  z = c*(z*z*(z*z*(32*z*z-48)+18)-1)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevT7 {     
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevS3 {
+  c = P1, z = Pixel:
+  z = c*z*(z*z-2)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 

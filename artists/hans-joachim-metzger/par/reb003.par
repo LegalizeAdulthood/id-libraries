@@ -1,0 +1,221 @@
+RoseGarden         { ; RoseGarden
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=Gopalsamy1 passes=t corners=-1.352/1.352/-1.014/1.014
+  params=0.5/0.37 float=y maxiter=256 inside=0
+  colors=000KN1<2>MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>\
+  MF0OF1<14>wEa<14>PE1<15>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG\
+  2MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1JT2JV3<7>Fk8<10>KP1
+  }
+
+ForbiddenFruit     { ; Watch out for the thorns!
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=Foam passes=t
+  corners=-2/2/-1.5/1.5 float=y maxiter=256 inside=epsiloncross
+  colors=000ZG0<4>MF0<15>ww0<15>MF0OF1<14>wEa<14>PE1<15>zp_<14>SL4PI1MF0LG\
+  2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR\
+  1JT2JV3<6>Gi7Fk8Gi7<7>KT3KR2KP1KN1LL1LJ0MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2\
+  MF0<15>zH0<9>`G0
+  }
+
+Droplets           { ; Water drops on clean glass
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=Foam passes=t
+  corners=0.05047/0.25047/0.422487/0.572487 params=1/0/-1 float=y
+  maxiter=1024 inside=0 logmap=yes potential=255/1500/500
+  colors=000cUz<102>ANUANUANUANUANUANT<145>000
+  }
+
+Hangover           { ; Were those really Margaretas?
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=Gopalsamy1
+  passes=t
+  corners=0.4348502/0.3452409/-0.005881/0.537175/0.1419237/0.384687
+  params=-0.19/-0.19 float=y maxiter=1024 inside=epsiloncross
+  logmap=yes
+  colors=000rH5vH3zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJM\
+  AKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu\
+  <5>A5c<2>E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkc\
+  PneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6\
+  >L4R<8>VHI<4>nH7
+  }
+
+Hurricane          { ; The eye of the hurricane
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=Gopalsamy2
+  passes=t
+  corners=-0.519268/-0.293714/-0.245131/0.17676/-0.640576/-0.083386
+  params=0.255 float=y maxiter=256 inside=0
+  colors=0000Tw<29>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<27>256\
+  134122000111<27>ZTq_Us`VubXwcZwbYu<25>876764652430220232<29>1Su
+  }
+
+SpiralEyes         { ; Old blue eyes is watching
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=Gopalsamy3 passes=t
+  corners=-0.847708/-0.165468/0.083273/0.594953 params=0.6/0.5 float=y
+  maxiter=256 inside=0
+  colors=000SNC<29>xo`zpaypa<29>UPF000<30>ppp<14>TTTRRRPPPNNNMMM<12>000PFF<27>\
+  vcDwdDxeDzfCyfCxeC<29>PFF00K<29>GGqHHsHHr<30>00K
+  }
+
+Mating             { ; Mandelbrot reproduction
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=PseudoMandelLambda passes=t
+  corners=-2.037936/5.414206/-2.794565/2.794557 params=1.3 float=y
+  maxiter=256 inside=bof60
+  colors=000V0z<13>w0zz0zz0x<27>z00<14>401<14>zWB<14>zVNzUOxTO<15>KA8<46>zn9<1\
+  7>000<9>z00<21>zz0<13>00G<20>00w00z20z<12>T0z
+  }
+
+Holiday            { ; Poinsetta
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=LambdaPwr
+  passes=t corners=0.456715/0.830106/1.372089/1.652133
+  params=0.46999999999999997/1.25/0.5 float=y maxiter=256 inside=0
+  colors=000QK5OI2MF0<3>LN0KP1KR1JT2JV3<6>Gi7Fk8Gi7<6>KV4KT3KR2KP1KN1<2>MH\
+  0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>MF0OF1<14>wEa<\
+  14>PE1<15>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2MF0OH1<13\
+  >kml<12>SM8
+  }
+
+TwinBird           { ; Swallow Logo
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=Gopalsamy4
+  corners=-2.467107/2.467107/0.463048/-0.463048/-0.246264/-2.498076
+  params=0.55/-1 float=y maxiter=256 inside=0 potential=255/800/500
+  colors=000PKc<29>332220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUwcU<2\
+  7>653432221000000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0
+  }
+
+Square             { ; Electric square
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=Gopalsamy5
+  corners=0.26103286/0.25571054/0.28943394/0.3216886/0.24363459/0.31263164
+  params=-0.01/-1.2 float=y maxiter=2048 inside=0 logmap=yes
+  colors=000N8P<16>544332343<30>JaxKczKby<28>676554654<31>vUP<29>333122233<30>\
+  axaczcbyb<28>652430431<29>Y9aZAcZAc<10>O8R
+  }
+
+Passage            { ; Journey to the other side
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=GopalsamyExp passes=t
+  corners=-4.729773/3.167988/1.565716/-4.642721/3.167988/-4.642721
+  params=0/2.9 float=y maxiter=2048 inside=-100 logmap=yes
+  potential=255/300/500
+  colors=000AAF<22>RZuS`wS_v<29>554432443<29>8gu9iw9hv<29>122000111<29>`VubXwc\
+  Zw<28>652430220<30>1Su0Tw0Tv<28>332420431<5>99D
+  }
+
+LaceCurtain        { ; Entrance into Fairie Land
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=GopalsamyExp2 passes=t
+  corners=-0.489021892/-0.70806086/0.927805682/0.607546521/-0.721600318/0.\
+  617701114 params=0/1 float=y maxiter=512 inside=200 decomp=256
+  colors=KXPMWQ<75>VibVibVjcVkd<12>WmfWmfWle<36>KXPKXPKXPKXPKXP<43>ALG9KF9\
+  LF<72>MWQ
+  }
+
+Laser              { ; Flash! Cover your eyes
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=GopalsamyFn function=sqr/recip/sqr/sin
+  corners=4.056/-4.056/-5.408/5.408/-4.056/5.408 params=0.0001 float=y
+  maxiter=256 inside=0 potential=255/100/500
+  colors=000625<70>yUrzVszXs<14>zzz<5>zrzqzz<2>pxzpwyqvy<47>y4iy3hy2hz0gz0\
+  gy0g<93>000000011<4>254
+  }
+
+Forest             { ; Enchanted Forest
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm formulaname=GopalsamySin
+  passes=t
+  corners=-2.909082/0.828926/0.17366233/0.29569882/-1.621977/-1.5424784
+  params=0/1.5700000000000001 float=y maxiter=256 inside=epsiloncross
+  potential=255/300/500
+  colors=000FLC<5>895773652430431<27>W9_X9`Y9aZAcZAcYAb<25>746645544332343\
+  455<2>58B69D79D<29>kT1mU0lU0<30>E97<26>vUP<30>122<31>axaczcbyb<19>GND
+  }
+
+Troll              { ; Ain't he cute?
+                     ; Ron Barnett 1993
+  reset type=formula formulafile=reb003.frm
+  formulaname=GopalsamySin2 passes=t
+  corners=-0.96616798/-0.12865118/0.34018334/0.14482317/-0.57088905/-0.186\
+  85523 params=0.32400000000000001 float=y maxiter=2048
+  inside=epsiloncross logmap=yes
+  colors=000cAAwAAaAB<15>L2JN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<1\
+  3>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8\
+  UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>j\
+  dWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<5>J8T<14>cAA
+  }
+
+Flowers            { ; Flower garden with colorfull insects
+                     ; Ron Barnett 1993
+  reset=1800 type=formula formulafile=reb003.frm
+  formulaname=GopalsamySinh passes=t
+  corners=1.54261236/1.61427672/-3.261308/3.254942/-1.55938482/0.8746928
+  params=2.71828182845905/1.1000000000000001 float=y maxiter=256
+  inside=bof60
+  colors=000PcD<28>453332243624<29>w0K<30>736545646<30>w0c<30>314122223<30\
+  >w0w<30>605043053<30>OcD
+  }
+
+Genetic            { ; Alien DNA
+                     ; Ron Barnett 1993
+  reset=1800 type=formula formulafile=reb003.frm
+  formulaname=GopalsamySinh2 passes=t corners=-2.128/2.128/-3/3
+  params=0.11/2.71828182845905 float=y maxiter=256 inside=0
+  biomorph=43
+  colors=0000Tw<29>332024<30>uZRw`Sv_S<28>666455342344<30>w9i<30>212000111\
+  <29>Vu`XwbZwc<28>526304202221<29>1Su
+  }
+
+SeaShell           { ; Seashell through Alice's looking glass
+                     ; Ron Barnett 1993
+  reset=1800 type=formula formulafile=reb003.frm
+  formulaname=MandellambdaPwr passes=t
+  corners=-1.724778/4.227222/3.310894/-4.625106/4.227222/-4.625106
+  params=0/1 float=y maxiter=256 inside=epsiloncross
+  potential=255/600/100
+  colors=000KQNJQN5ah<70>SW_SW_TX`<61>kmokmojln<89>SKOSKORLN<11>OMNNNNNNNN\
+  ONMON<6>KPN
+  }
+
+Turbulence         { ;
+                     ; Ron Barnett 1993
+  reset=1800 type=formula formulafile=reb003.frm
+  formulaname=PseudoLambda passes=t
+  corners=-0.72228476/-0.37299939/0.28304807/-0.86876072/-0.043673809/-0.6\
+  2176653 params=-0.90000000000000002/-0.56000000000000005/1/1 float=y
+  maxiter=1024 inside=bof60
+  colors=000t0K<29>545<30>u1aw0cv0b<30>122<30>u1uw0wv0v<30>403503730<28>u1\
+  0w00w00<28>521332423<30>w0Kv0K
+  }
+
+Fertility          { ; The image says it all (look at it sideways)
+                     ; Ron Barnett 1993
+  reset=1800 type=hypercomplex function=sqr
+  corners=-1.201313/0.3737269/-0.59064/0.59064
+  params=0/0/0.5/-0.32000000000000001 float=y inside=bof60
+  periodicity=0
+  colors=000Q11<11>332<31>wK0<2>sJ0qJ0oI1mI1lH1<24>554<31>wc0<31>122<31>ww\
+  0<4>oo0mm0kk0ji0hh0ff0<21>430<30>u10w00w00<16>S11
+  }
+
+Enmeshed           { ; Don't step on it!
+                     ; Ron Barnett 1993
+  reset=1800 type=hypercomplexj function=sin
+  corners=-0.8160469/1.167953/-0.5445215/0.9434785
+  params=-3.2566238905181595/0.047314013037821789/0.5/-0.29999999999999999
+  float=y maxiter=256 inside=bof60 periodicity=0
+  colors=000AGM<7>676554654<31>vUP<30>122<31>axaczcbyb<26>895773652430431<\
+  27>W9_X9`Y9aZAcZAcYAb<25>746645544332343455<29>JaxKczKby<19>AHO
+  }
+

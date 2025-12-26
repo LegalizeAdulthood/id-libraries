@@ -1,0 +1,165 @@
+comment { ; narrative copyright Kerry Mitchell 23jan98
+
+Range
+
+In the range coloring schemes, the pixels of the Julia set images
+are only colored when the iterate (of a component of it) falls within
+a specified range.  This is similar to the bubble method, which only
+treats orbits that pass close to the origin.  With an appropriate
+choice of parameters, the range schemes can be forced to generate
+bubbles-type images.  However, the intent of the range method was
+to render Julia sets through thin rings of color, using a relatively
+small range of magnitudes in which to trap the orbit.
+
+The simplest case is shown in the range-r formulas.  Here, the orbit
+is monitored until the magnitude of the iterate falls within a
+specified range.  When this occurs, that iterate is saved.  Upon
+bailout (either escape or maximum iterations), the last iterate
+falling within the range is recalled, and its polar angle shown via
+decomposition coloring.  Depending on the range chosen, the results
+can be circular rings, pinched loops (figure "8"), or open loops.
+The shapes are definitely non-fractal, but are assembled in such a
+way to recover the underlying fractal structure.
+
+Choosing the range is very important, as a greatly impacts the image.
+The most direct route is to simply specify the upper and lower bounds
+of the range.  This is the method used in range-r, and can require a
+great deal of thought, to coordinate a range with the Julia parameter.
+The other formulas using this method adust the ranges depending on the
+Julia parameter c.  The range parameters are set by the user, the
+center and the width.  For example, choosing a center of 1.0 and a
+width of 0.1 means that the range will extend from 0.95 to 1.05, half
+the width either side of the center.  The value of the center depends
+on the the formula chosen.  In range-r-1, the basis for the range is
+|c|, so the above choices would result in a range from 95% |c| to
+105% |c|.  This basis was chosen since c is the first iterate of 0
+(0^2 + c = c), and zero is the critical point of z^2 + c.  Another
+way of looking at it is that, by choosing a range centered around c,
+the orbit of 0 will fall into the range on the first iteration.  The
+formulas range-r-2 and -3 use the second and third iterations,
+respectively, so their bases are |sqr(c)+c| and |sqr(sqr(c)+c)+c|.  
+
+This method opens itself up to many variations.  For example, instead
+of monitoring the magnitude of the iterate, the real or imaginary
+components can be tracked.  The formulas range-x and range-y perform
+this.  In range-x, the real part of the iterate is watched.  When it
+falls into the target range, the imaginary part of the iterate is
+scaled and used as the decomposition angle.  Range-y does the same
+thing, switching the roles of the real and imaginary parts.  Each is
+offered with the 4 above range setting options:  explicit, c, sqr(c)+c,
+sqr(sqr(c)+c)+c (the formulas are named similar to the range-r entries,
+substituting -x or -y as appropriate).
+
+Each of the above formulas uses the last occurance of an iterate inside
+the target range to color the pixel.  If the orbit is such that the
+range is hit many times, that prior information is lost.  One manner to
+recover part of that information is with the rangecount formulas.  The
+basic setup is the same as the range formulas, but now the decomposition
+angle is the count of how many times the orbit landed in the range.  A
+scale factor is available to convert the count into a useable angle.
+This method seems to work especially well when the range width is
+increased, to increase the hit count and make more colors available.
+
+}
+
+range-r-1-sample   { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-r-1_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-r-1_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/4/0/1/0.05 float=y maxiter=256 inside=0
+  colors=000<11>z00<3>zA0<6>zi0zo0xq2vt4tw6qz9<11>0zz<10>0Uz0\
+  Rz0Px0Nu0Ls0Ip<3>0BW<3>100<9>p00v00z00<2>z80zB0zG0<4>ze0zk0\
+  zo0<2>sw7pzAlzE<10>0zz<11>0Rz<2>0Kr0Io0Gj0Fe0D_0BU08M05E036\
+  200<9>r00w00z10z30z60z80zC0<5>zg0zl0yp1ws3uu5sx7ozB<9>7zs3z\
+  w0yz<10>0Tz0Qy0Ow0Mt0Kr0In0Gi0Ec0CZ<3>024300<10>x00z10z40z6\
+  0z90zD0<5>zh0zm0yq1ws3tv6ry8<10>6zt2zx0xz<11>0Qy0Ov0Lt0Jq0H\
+  m0Fg0Eb0CY<3>012 cyclerange=0/255 decomp=256 periodicity=0
+  }
+
+range-r-2-sample   { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-r-2_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-r-2_jul passes=1 center-mag=0/0/0.85
+  params=-0.778/0.201/4/0/1/0.125 float=y maxiter=256 inside=0
+  colors=000<11>z00<3>zA0<6>zi0zo0xq2vt4tw6qz9<11>0zz<10>0Uz0R\
+  z0Px0Nu0Ls0Ip<3>0BW<3>100<9>p00v00z00<2>z80zB0zG0<4>ze0zk0zo\
+  0<2>sw7pzAlzE<10>0zz<11>0Rz<2>0Kr0Io0Gj0Fe0D_0BU08M05E036200\
+  <9>r00w00z10z30z60z80zC0<5>zg0zl0yp1ws3uu5sx7ozB<9>7zs3zw0yz\
+  <10>0Tz0Qy0Ow0Mt0Kr0In0Gi0Ec0CZ<3>024300<10>x00z10z40z60z90z\
+  D0<5>zh0zm0yq1ws3tv6ry8<10>6zt2zx0xz<11>0Qy0Ov0Lt0Jq0Hm0Fg0E\
+  b0CY<3>012 cyclerange=0/255 decomp=256 periodicity=0
+  }
+
+range-x-1-sample   { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-x-1_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-x-1_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/4/64/2/0.02 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>zz2zz0zy0<5\
+  1>y20x00w00<30>200000000000000 cyclerange=0/255
+  }
+
+range-y-2-sample   { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-y-2_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-y-2_jul passes=1 center-mag=0/0/1.2/1/90
+  params=0.28/0.005/4/64/3/0.3 float=y maxiter=2000 inside=0
+  decomp=256 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0z\
+  z0yz<39>02z00z00z<41>000 cyclerange=0/255
+  }
+
+third-time's...    { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-r-3_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-r-3_jul passes=1 center-mag=0/0/0.9/1/-10
+  params=-0.0573720519293145/0.6691939992424446/4/0/3/0.333333
+  float=y maxiter=3000 inside=0 decomp=256 periodicity=0
+  colors=000<22>00w00z01z<4>07z08z0Az0Cz<13>0lz0oz1py<5>7xs9zq\
+  Bzo<21>wz3zz0zy0<21>zT0zR0yQ0xP0<4>rK0pI0nI0<5>ZC0WB0SA0<6>0\
+  01<20>00s00v00x00z<4>06z08z09z0Bz0Dz<11>0hz0kz0mz0oz<6>8yrAz\
+  pCzn<21>xz2zz0zx0<22>zR0yQ0wP0<2>tL0rK0qJ0oI0mH0<4>_D0YC0UB0\
+  <6>210 cyclerange=0/255
+  }
+
+threex             { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-x-3_jul
+;
+  reset=1960 type=formula formulafile=range.frm
+  formulaname=range-x-3_jul passes=1 center-mag=0/0/0.8
+  params=-0.1/1/1000/1/1/1 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=00610A20C30F<2>61K71M81N91O<10>K6_L7`M8`<4>RCdSCeTDfUE\
+  fVFgWGh<9>eSnfTogUphWpiXqjZq<7>rjvslvtnwupwvqx<2>ywyzyzzyz<8>\
+  qiupguoetndtmbslar<7>dQncPmbOlaNl`Mk<7>TDfSCeRCd<4>M8`L7`K6_J\
+  6ZI5YH5X<7>91O81N71M61K50I40H30F20C10A00610820B30E<4>81M91OA2\
+  PB2Q<3>F3UG4WH4W<4>M7`N8aO9bPAbQAc<11>`MlaNlbPmcQmdRn<6>k`rla\
+  smcsnet<8>wtyxvyyxzzzzyxzxvy<11>lask`rjZriYqhXp<2>eSodRncQmbP\
+  maNl<15>N8aM7`L7_K6ZJ6YI5XH4WG4W<6>91O81M71L61J50I40G<2>108000
+  }
+
+threey             { ; copyright Kerry Mitchell 23jan98
+;
+; sample parameter file for range-y-3_jul
+;
+  reset=1960 type=formula formulafile=range.frm passes=1
+  center-mag=-0.339487/0.595596/11.21076 params=-0.1/1/64/1/0.5/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=N`p<10>RftSftSgtTgtThu<3>VjvVjvWkvXkw<14>dsyesyftygtyhuz\
+  <3>kwzlwznxzoxz<2>tzzzzztzzryz<4>kwzjvzivzhuzhuzgty<8>`px`ox_ox\
+  _nxZnx<5>WkvVjvVjvViv<12>PcrObqObqOapNap<20>GSfFRfFReFQd<13>AJX\
+  AJWAIVAIU9HU<33>001000001<31>9GS9HT9HUAIUAIVAJW<25>IVjJWkJWkKXl\
+  KXl<6>M`o cyclerange=0/255 formulaname=range-y-3_jul
+  }

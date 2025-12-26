@@ -21,3 +21,26 @@ RCL_16 (XAXIS) {; Ron Lewen, 76376,2567
   ;SOURCE: rclpar.frm
 }
  
+Mothra (XAXIS) {; Ron Lewen, 76376,2567
+                ; Remember Mothra, the giant Japanese-eating moth?
+                ; Well... here he (she?) is as a fractal!
+  z=pixel:
+  a=z^5 + z^3 + z + pixel
+  b=z^4 + z^2 + pixel
+  z=b^2/a
+  |real(z)| <= 100 || |imag(z)| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+RCL_11 {; Ron Lewen, 76376,2567
+        ; A variation on the formula used to generate
+        ; Figure 9.18 (p. 134) from Pickover's book.
+        ; P1 sets the initial value for z.
+        ; Try p1=.75, or p1=2, or just experiment!
+  z=real(p1):
+  z=z*pixel-pixel/sqr(z)
+  z=flip(z)
+  abs(z) < 8
+  ;SOURCE: rclpar.frm
+}
+ 

@@ -1,0 +1,105 @@
+Passages           {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb001.frm formulaname=ZeePi
+  passes=1 center-mag=0.0334415/1.24623/1.453488
+  params=1.8/-0.2/1/-0.07000000000000001 float=y maxiter=256
+  inside=bof60
+  colors=000<7>VTI<6>000000<7>aZM<6>000000<7>fcS<6>000000<7>jhZ<6>000000<7\
+  >jjU<6>000000<7>jjP<6>000000<7>jjK<6>000000<7>jjF<6>000000<7>jjA<6>00000\
+  0<7>mjA<6>000000<7>rjA<6>000000<7>wjA<6>000000<7>zjA<6>000000<7>zeA<6>00\
+  0000<7>z`A<6>000000<7>zWA<6>000
+  }
+
+Etching            {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb001.frm formulaname=ZeePi
+  passes=1 center-mag=0.734481/-0.901879/0.4699248/1/-90
+  params=1.7/-0.5/1/0 float=y maxiter=256 inside=bof61 logmap=23
+  colors=000<14>zWW<7>TTF<7>zzW<6>PD0<8>zW0<6>P0D<8>z0W<6>PDJ<8>zWk<6>PDP<\
+  8>zWz<6>P0P<8>z0z<7>0FT<7>0Wz<7>FFT<7>WWz<7>00T<7>00z<7>0FF<7>0WW<7>0TT<\
+  7>0zz<7>0TF<7>0zW<7>0T0<7>0z0<7>0F0<7>0W0<7>FF0<7>WW0
+  }
+
+Forward            { ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb001.frm
+  formulaname=PseudoZeePi passes=1
+  center-mag=-0.0485759/9.4369e-016/2.657031 params=-3/0/0.01/0
+  float=y maxiter=256 inside=bof61
+  colors=000qcP<19>WNAUM9UM9<19>hCCiBDiBDiBD<44>UM93IG<31>5PR5PR5PR5PR5OQ<\
+  26>5IK5HJ6HJ7HI<13>SHBUIAUIA<29>YcNYcNYbN<22>VLCUKBVKB<23>rcP
+  }
+
+Foiled             {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb004.frm formulaname=REB004J
+  function=round passes=1
+  center-mag=-7.77156e-016/5.55112e-016/2.589064 float=y maxiter=256
+  inside=zmag outside=real
+  colors=000959<3>544332343<30>JaxKczKcz<29>mmmmmmmll<28>sUPtTOvUP<29>nllm\
+  mmmmmmmm<29>dydczcbyb<28>652430431<29>Y9aZAcZAc<23>A5A
+  }
+
+ForestFire         {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb003.frm
+  formulaname=PseudoMandelLambda passes=1
+  center-mag=-0.81697409800596370/+0.01084369500956900/5037606/1/-39.999
+  params=2/0 float=y maxiter=10000 inside=bof61 logmap=526
+  colors=000NC6<8>W67X57_96<8>wh1zm0zl0<3>xe0xc0xc0<63>7EU6EU5DV5DW<4>68a7\
+  7c77c<48>44K44K64J<12>`96cA5dC5<14>zm7<14>XD6UA5TA5<11>A6295275254155157\
+  1<12>BS3BU3BT3<11>EH4FG4FF4GE5HF6<2>JE6KE6LD6MC6 cyclerange=0/255
+  }
+
+Contours           {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb004.frm formulaname=REB004A
+  function=trunc/sqr passes=1
+  center-mag=-1.04930484000000000/+0.10040408385000000/785.4551/1/17.622
+  params=1/0/1/0 float=y maxiter=256
+  colors=99J0PP<12>0xx0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8>px9<5>KMGFG\
+  IBBM<14>WWz<7>J9J<15>zWz<7>J09<15>z0W<7>J90<15>zW0<7>JJ0<15>zz0<7>99J<15\
+  >WWz<7>0J9<15>0zW<7>0JJ0MM
+  }
+
+Tapistry           {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb004.frm formulaname=REB004A
+  function=round/sqr passes=1
+  center-mag=-2.91454675257163400/+0.00000000000000001/278.5205/1/-90
+  params=1/0/0.7/0 float=y maxiter=1024 inside=0
+  colors=H88QKDHH8<10>zzW<4>H80<10>zW0<4>H08<10>z0W<4>H8D<10>zWk<4>H8H<10>\
+  zWz<4>H0H<10>z0z<4>08H<10>0Wz<4>88H<10>WWz<4>00H<10>00z<4>088<10>0WW<4>0\
+  HH<10>0zz<4>0H8<10>0zW<4>0H0<10>0z0<4>080<10>0W0<4>880<10>WW0<3>KD7LAA<9\
+  >zWW<2>ZNI
+  }
+
+FadeRight          {
+                     ; Copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb004.frm formulaname=REB004E
+  function=trunc/sqr passes=1
+  center-mag=-1.08542/-0.461014/12.93446/1/17.499 params=0.35/0/0/2
+  float=y maxiter=1024 inside=0
+  colors=000EDLAAK<4>AOSARUBUWBXYB__Bba<5>DtnDqm<14>14RC6QO8O<5>VHI<7>zH0<\
+  7>WEDSDFRAG<3>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<9>UHD<7>AB7000HI\
+  C<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<18>005SNC<17>zpa<12>UPFMJI
+  }
+
+RustyWeapon        {; copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtMand
+  center-mag=-1.63043/0.449045/3.435954/1/-137.499 params=1/1 float=y
+  maxiter=256 bailout=100 inside=bof60 logmap=yes symmetry=xaxis
+  periodicity=10 colors=@4rtoy.map
+  }
+
+Cobwebs?           {; copyright 1997, Ron Barnett
+  reset=1950 type=formula formulafile=reb001.frm
+  formulaname=IkeNewtJul center-mag=-1.19449/-0.101262/9.144272
+  params=0.1/0.45/-0.25/0.32 float=y maxiter=256 bailout=100
+  inside=bof60 logmap=yes symmetry=xaxis periodicity=10
+  colors=000<7>VTI<6>000000<7>aZM<6>000000<7>fcS<6>000000<7>jhZ<6>000000<7\
+  >jjU<6>000000<7>jjP<6>000000<7>jjK<6>000000<7>jjF<6>000000<7>jjA<6>00000\
+  0<7>mjA<6>000000<7>rjA<6>000000<7>wjA<6>000000<7>zjA<6>000000<7>zeA<6>00\
+  0000<7>z`A<6>000000<7>zWA<6>000
+  }
+

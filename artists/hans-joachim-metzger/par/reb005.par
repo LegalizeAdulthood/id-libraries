@@ -1,0 +1,219 @@
+;------------------------------------------;
+; REB005.PAR                               ;
+; All images Copyright (c) by Ron Barnett  ;
+; 70153,1233                               ;
+; For private use only                     ;
+; For commercial use, please ask.          ;
+;                                          ;
+; Several of the formulas used             ;
+; were inspired by the 4DFRACT of          ;
+; Gordon Lamb                              ;  
+;------------------------------------------;
+
+
+Bone               { ; Bones in the desert
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1800 type=formula formulafile=reb004.frm formulaname=REB004L
+  function=cosh
+  corners=-0.89950226/-0.13686482/0.31237428/0.16923581/-0.55624631/-0.145\
+  30031 params=1/0/1 float=y maxiter=1024 inside=0
+  colors=000kS0<23>220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUwcU<\
+  27>653432221000000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0wZ0wZ0\
+  <4>mU0
+  }
+
+Cam                { ; Space Wankel
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1810 type=formula formulafile=reb002.frm
+  formulaname=FlipLambdaJ
+  corners=-1.068/1.068/1.424/-1.424/1.068/-1.424
+  params=-0.45000000000000001/1.3999999999999999 float=y inside=0
+  decomp=255
+  colors=000wZ0wZ0<29>220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUw\
+  cU<27>653432221000000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0
+  }
+
+Grating            { ; A little Interference
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005A
+  function=cos/cosxx passes=1 corners=-8/8/-6/6 float=y maxiter=256
+  inside=0 potential=255/100/500
+  colors=000FDI<7>652430220<30>1Su0Tw0Tv<28>332420431<29>RZuS`wS_v<29>5544\
+  32443<29>8gu9iw9hv<29>122000111<29>`VubXwcZw<19>GEK
+  }
+
+Nebulizer          { ; I know, its a dumb name
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005B
+  function=cos/cosxx corners=-2/2/-1.5/1.5 float=y maxiter=256
+  inside=0 potential=255/100/500
+  colors=000XP5<14>321000011<29>JxaKzcKzc<29>342220321<30>zKz<29>633420210\
+  <30>JJxKKzKKy<28>544432542<31>zk9<13>ZR5
+  }
+
+Demon              { ; Right out of the Pit
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005C
+  function=cotan/cos passes=1 corners=-2/1.999996/-1.49998/1.5
+  params=0.01/0/0.01 float=y maxiter=255 inside=0
+  potential=255/250/500
+  colors=000SBB<20>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<7>RCC
+  }
+
+Tracings           { ; Etch a Sketch in color
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005D
+  function=ident/ident passes=1 corners=-2/2/-1.5/1.5 params=0/1/0/1
+  float=y maxiter=256 inside=epsiloncross potential=255/300/500
+  colors=000w00<29>332<4>B52D62F62H72I71K81<21>wK0<31>554<2>984B94DA3FB3GD\
+  3<24>wc0<31>122<31>ww0<31>430<8>J20L20N20P20Q20S20<17>w00
+  }
+
+Overflow           { ; Paint flowing over the palette
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=SJIKENAGA01 passes=1
+  corners=-0.20533488/-0.093496164/-0.168585079/-0.084706039
+  params=3/0.5/0.80000000000000004/0.59999999999999998 float=y
+  maxiter=256 inside=zmag logmap=yes
+  colors=000UI9<25>K9BGAB<29>zz0<4>PRW<15>9da8da9b_<23>C8AD79D79<56>m_8n`7\
+  n`7o`7<21>pd6pd6oc6<63>UJ9
+  }
+
+Etching            { ; Fractal wood carving
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005E
+  function=ident/ident passes=t
+  corners=-1.222569/2.777438/-2.193469/0.8065323
+  params=0.050000000000000003 float=y inside=bof60 outside=mult
+  colors=000wZ0wZ0<29>220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUw\
+  cU<27>653432221000000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0
+  }
+
+Pathways           { ; From Dune?
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005G
+  function=ident/ident
+  corners=-0.149835153/-0.124103953/0.507318178/0.526616578
+  params=-1/0/1 float=y maxiter=1024 inside=period
+  colors=000dYM<10>zpa<12>UPFMJIEDLAAK<4>AOSARUBUWBXYB__Bba<5>DtnDqm<14>14\
+  RC6QO8O<5>VHI<7>zH0<7>WEDSDFRAG<3>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>\
+  wgF<9>UHD<7>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<18>005S\
+  NC<5>bXK
+  }
+
+Icescape           { ; Another scene from the ice planet series
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMFRAME-ROBERT passes=1
+  corners=-2.9863629/-1.9264133/0.882072763/0.963071288/-2.6436604/0.42513\
+  5982 float=y maxiter=1024 inside=bof60
+  colors=0004BT<11>MMiONkQPk<13>wwyzzzzwx<14>z0N<14>000<13>DUJEXLCYLA_K<14\
+  >zyyzzzzyz<32>1F5<14>oxP<21>O3KM0JM0KL0MK0OJ0Q<31>w0S<15>NqzOszPuz<31>1B\
+  R09P19Q3AR
+  }
+
+Thicket            { ; Don't throw me in the briar patch!
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMMANOWAR01 passes=1
+  corners=-0.76464474/-0.36114914/-0.4419816348/-0.4464192003/-0.61725629/\
+  -0.6384995642 params=0.29999999999999999/0/0/0.80000000000000004
+  float=y maxiter=1024 inside=epsiloncross
+  colors=0007HI<13>SHBUIAUIA<29>YcNYcNYbN<22>VLCUKBVKB<22>qbOrcPqcP<19>WNA\
+  UM9UM9<19>hCCiBDiBDiBD<44>UM93IG<31>5PR5PR5PR5PR5OQ<28>6HJ
+  }
+
+SandPainting       { ; from a lost Indian tribe
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm formulaname=REB005G
+  function=ident/ident passes=1
+  corners=-0.0077633302/0.26206067/-0.021968969/0.18039903
+  params=0/0.90000000000000002/0/0.10000000000000001 float=y
+  maxiter=256 inside=period
+  colors=000EL5DI6<3>AB7997988978<2>949A49A3AB3AC3BD4BE4B<2>I6CJ7DL8DN9E<9\
+  >eOHfQIhRIiTJkUJ<3>oYKoZLp_Lp_Mp_M<2>p`No`No_O<2>lZPkZPjYPiXP<6>`SR_RSZR\
+  SYQSXQSWQT<2>UPTUPTUQTUQU<3>VTUVTUWVU<2>ZYV__Va`VbbVdcV<4>kkVmmVnnVpoV<2\
+  >tsVutVvtVvuVwuUxvU<2>xuUxuUxtUxsT<2>vpTunTsmT<2>ogSneSlcRjaR<6>ZMPXJPVH\
+  PUFOSEORCO<3>N6MM5MM5M<3>L3KL3KL4J<3>O6IP7HQ9H<6>YJEZKE_ME`OD<4>cVBdWBdX\
+  BdYAdZAdZ9<2>b`8b`8a`8``7_`7Y_7X_6<5>NW5LV4JV4HU4GT3ES3<4>6Q25P24P23P12P\
+  1<5>1S01T02U0<4>6`07a09c0<2>Dg0Ei0Gk0Il0<3>Oq0Pr0Qs0Rt0Su0<2>Vv0Vv0Wu0Wu\
+  1<3>Wr1Vq1Vo2<2>Tj2Sh3Qf3<8>FN5
+  }
+
+Headless           { ; And mindless
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=SJSPIDER01
+  corners=-1.590857/1.912183/2.33536/-2.33536/1.912183/-2.33536
+  params=-0.5/0/-0.20000000000000001 float=y maxiter=256 inside=period
+  colors=000bXK<11>zpa<12>UPFMJIEDLAAK<4>AOSARUBUWBXYB__Bba<5>DtnDqm<14>14\
+  RC6QO8O<5>VHI<7>zH0<7>WEDSDFRAG<3>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>\
+  wgF<9>UHD<7>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<18>005S\
+  NC<4>`VJ
+  }
+
+Hades              { ; Entrance into Hades
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMIKENAGA02
+  corners=-0.66197214/-0.11797214/-0.45452192/-0.046521921
+  params=0/0/0/0.29999999999999999 float=y maxiter=1024 inside=bof60
+  colors=000a10<17>332<30>uJ1wK0vK0<30>554<30>ua1wc0vb0<30>122<30>uu1ww0vv\
+  0<30>430<30>u10w00w00<10>c10
+  }
+
+Mandarin           { ; XXIII Dynasty
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=SJMANOWAR01
+  corners=1.0643511/0.4403511/-0.416/0.416/0.4403511/0.416
+  params=0/0/-1 float=y maxiter=256 inside=zmag
+  colors=000nj4<18>`SA_RBZQBYPCYOC<19>I4II4II5I<64>0cK0cK1cL<66>yyuzzvzzu<\
+  56>zz1zz0zy0yx0<12>ok4
+  }
+
+Swarm              { ; Beehive from Hell
+                     ; Ron Barnett, Copyright 1994
+  reset type=formula formulafile=reb005.frm formulaname=3RDIMSPIDER01
+  corners=-0.35330408/0.47869592/0.48699497/1.110995
+  params=0.29999999999999999/0/0/0.69999999999999996 float=y
+  bailout=1001 inside=bof60 outside=real
+  colors=000saC<25>PFF0A0<70>_UI`UIaVJbWK<19>xo`zpaypa<29>UPF000<29>nnnppp\
+  ooo<30>000PFF<29>xeDzfCyfC<3>ubC
+  }
+
+?Spiral?           { ; Not your ordinary spiral
+                     ; Ron Barnett, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=SJIKENAGA02 passes=t
+  corners=-0.059939732829/-0.05947670979/0.09663937333/0.1051064666/-0.063\
+  837249292/0.1018360619 params=1/0/0.75 float=y maxiter=1024
+  inside=zmag logmap=yes
+  colors=000`ce<9>0AF<86>0du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<\
+  73>uuu<4>cfh
+  }
+
+Ring               { ; Faerie Ring
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=SJIKENAGA03
+  corners=-0.1452660689/-0.1422488106/0.2743932507/0.2800369349/-0.1468888\
+  243/0.2765569246 params=0.5/0/0.10000000000000001 float=y
+  maxiter=1024 inside=0 outside=summ logmap=yes
+  colors=000saC<20>VKEUJERID<6>1A0<24>EI7FI7FI7FI7<104>X_0X_0X_1<77>r`CsaD\
+  ubD<2>xeDzfCyfC<3>ubC
+  }
+
+Flowers            { ; Floating on a silver sea
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb001.frm formulaname=Julike
+  corners=-1.0622933/0.24336861/0.67716643/-0.44311167/-0.054521555/-0.666\
+  52929 params=0.69499999999999995/0.12 float=y maxiter=256 inside=0
+  logmap=yes
+  colors=000000kmx<27>445223111000_mj<27>244122111000ohh<25>76664443322211\
+  1000www<27>333111000000iXceU`<23>646534323211101000zb0<25>96074053031011\
+  0000`QVZPUYOTXNR<11>JCGICFGBD<8>534423312111100000S8`<20>82B71A619517416\
+  315204203101001
+  }

@@ -39,3 +39,10 @@ mandel_nest {; George Martin [76440,1143] with help from Sylvie Gallet
   ;SOURCE: nest.frm
 }
  
+MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
+  z = pixel:
+  z = (pixel ^ z) + pixel
+  |z| <= (P1 + 3)
+  ;SOURCE: fractint.frm
+}
+ 

@@ -1,0 +1,48 @@
+Out_Of_Orbit {	; Animation. Border tracing _treats_ periodicity,
+		; too. How would you check if the white line is dithered?
+		; Default map is too sticky in FRACTINT.
+  reset=2003 type=mandel passes=b periodicity=-11 showorbit=yes
+  center-mag=-0.765332/6.66134e-016/0.7772216/1.4732/90/3.88578058618804\
+  789e-016 params=0/0 float=y maxiter=255 fillcolor=1 sound=beep
+  colors=000<4>00000000zzz0000<4>000z000zzz0zzz00zzz0zyy00yyy0yxx00xxx0x\
+  ww00www0www00www0wvv00vvv0vuu00uuu0utt00ttt0tss00sss0sss00sss0srr00rrr\
+  0rqq00qqq0qpp00ppp0poo00ooo0ooo00ooo0onn00nnn0nmm00mmm0mll00lll0lll00k\
+  kk0kkk00kkk0kjj00jjj0jii00iii0ihh00hhh0hhh00hhg0ggg00ggg0gff00fff0fee0\
+  0eee0edd00ddd0ddd00ddc0ccc00ccc0cbb00bbb0baa00aaa0aaa00```0```00``_0__\
+  _00___0_ZZ00ZZZ0ZYY00YYY0YYY00XXX0XXX00XXX0XWW00WWW0WVV00VVV0VUU00UUU0\
+  UUU00TTT0TTT00TTT0TSS00SSS0SRR00RRR0RQQ00QQQ0QQQ00QQP0PPP00PPP0POO00OO\
+  O0ONN00NNN0NNN00MMM0MMM00MML0LLL00LLL0LKK00KKK0KJJ00JJJ0JJJ00III0III00\
+  IIH0HHH00HHH0HGG00GGG0GFF00FFF0FFF00EEE0EEE00EED0DDD00DDD0DCC00CCC0CCC\
+  00BBB0BBB00BBA0AAA00AA909990099909880088808880077707770077606660066606\
+  550055505440044404440033303330033202220022202110011101000
+  }
+
+Default {	; I wouldn't jeneralize the formula, because
+		; it illustrates significance of sign.
+		; Try other methods of rendering.
+		; Try different periodicity thresholds.
+  reset=2003 type=formula formulafile=roarbit.frm
+  formulaname=Club_Lambda function=zero/ident passes=t
+  center-mag=-0.274835/8.88178e-016/0.7025121/1.214/90/0
+  params=3/0 float=y maxiter=255 fillcolor=1 periodicity=-1
+  sound=beep showorbit=yes; colors=@orbit.map
+  colors=000<4>00000000zzz0000<4>000z000zzz0zzz00zzz0zyy00yyy0yxx00xxx0x\
+  ww00www0www00www0wvv00vvv0vuu00uuu0utt00ttt0tss00sss0sss00sss0srr00rrr\
+  0rqq00qqq0qpp00ppp0poo00ooo0ooo00ooo0onn00nnn0nmm00mmm0mll00lll0lll00k\
+  kk0kkk00kkk0kjj00jjj0jii00iii0ihh00hhh0hhh00hhg0ggg00ggg0gff00fff0fee0\
+  0eee0edd00ddd0ddd00ddc0ccc00ccc0cbb00bbb0baa00aaa0aaa00```0```00``_0__\
+  _00___0_ZZ00ZZZ0ZYY00YYY0YYY00XXX0XXX00XXX0XWW00WWW0WVV00VVV0VUU00UUU0\
+  UUU00TTT0TTT00TTT0TSS00SSS0SRR00RRR0RQQ00QQQ0QQQ00QQP0PPP00PPP0POO00OO\
+  O0ONN00NNN0NNN00MMM0MMM00MML0LLL00LLL0LKK00KKK0KJJ00JJJ0JJJ00III0III00\
+  IIH0HHH00HHH0HGG00GGG0GFF00FFF0FFF00EEE0EEE00EED0DDD00DDD0DCC00CCC0CCC\
+  00BBB0BBB00BBA0AAA00AA909990099909880088808880077707770077606660066606\
+  550055505440044404440033303330033202220022202110011101000
+  }
+
+Club_Lambda { ;Try inversion. Simplified since last post of it.
+z=fn1(pixel), c=fn2(pixel):
+
+z = z*z -conj(z) +c
+
+|z| <= real(P1)
+}

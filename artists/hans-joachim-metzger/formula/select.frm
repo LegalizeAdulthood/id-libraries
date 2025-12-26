@@ -10,3 +10,10 @@ BirdOfPrey+ (XAXIS_NOPARM) {; Jon Osuch
   ;SOURCE: jpl1.frm
 }
  
+BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
+  z = p1 :
+  z = cosxx(sqr(z) + pixel) + pixel
+  |z| <= 4
+  ;SOURCE: fract196.frm
+}
+ 
