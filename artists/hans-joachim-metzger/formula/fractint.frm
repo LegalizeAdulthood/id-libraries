@@ -5709,3 +5709,66 @@ Jm_24 {; generalized Jm Collard-Richard type
   ;SOURCE: fractint.frm
 }
  
+M_TchebychevC2 {
+  c = P1, z = Pixel:
+  z = c*(z*z-2)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevC7 {     
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(z*z*(z*z-7)+14)-7)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevT4 {
+  c = P1, z = Pixel:
+  z = c*(z*z*(8*z*z+8)+1)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevT6 {
+  c = P1, z = Pixel:
+  z = c*(z*z*(z*z*(32*z*z-48)+18)-1)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevT7 {     
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevU2 {
+  c = P1, z = Pixel:
+  z = c*(4*z*z-1)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevU3 {
+  c = P1, z = Pixel:
+  z = c*z*(8*z*z-4)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+M_TchebychevU4 {
+  c = P1, z = Pixel:
+  z = c*(z*z*(16*z*z-12)+1)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevU5 {    
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(32*z*z-32)+6)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 

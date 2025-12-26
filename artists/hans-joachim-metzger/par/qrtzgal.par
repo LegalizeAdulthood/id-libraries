@@ -1,0 +1,277 @@
+Comment            { ; PAR file for PGD's Fractal Art Gallery,
+                     ; Quartz Formula Fractals section.
+                     ; REQUIRES QUARTZ.FRM
+                     ; Freely distributable but may not be sold.
+                     ; All fractals from this section, past and present,
+                     ; up to Mar. 12 1996.
+                     ; The calculation times are for a complete
+                     ; 640x480 image on a 486dx250 (with coprocessor).
+                     }
+
+Sprennet           { ; This plant grows only on the underside of a certain clif
+                     ; 15 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1B
+  corners=-1.0631963958/-1.0624427626/0.71455582273/0.71512104763
+  params=-0.06/0.02/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0
+  colors=000JJ4<32>__F__F__F__F__F<129>pnepnepneqofppgpog<4>qkiqkiqjh<28>n\
+  LVmKUmKUlJTlJT<28>U0ADD0<11>JJ4
+  }
+
+Shrooms!           { ; A spiral of shrooms!
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2A
+  corners=0.08235014671/0.08426491029/0.03036216247/0.03179823515
+  params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=`7H`7H<10>U0ADD0<45>__F__F__F__F__F<129>pnepnepneqofppgpog<4>qkiq\
+  kiqjh<28>nLVmKUmKUlJTlJT<16>a8I
+  }
+
+Symbol             { ; This is the symbol of the Spiral Clan.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ
+  corners=0.4908946/1.508646/-0.41870079/0.34461282
+  params=-0.03214887/0.00157945/0.1/0/0/0 float=y maxiter=200 inside=0
+  logmap=yes
+  colors=000zZ0<93>A00A00B11<92>yyszztzzs<38>zz5zz3zz2zz0zy0<19>z_0
+  }
+
+Hot_Spirals        { ; Spirals of dust after an asteroid collision.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2.035022/2.275323/-1.616379/1.616379
+  params=0/0/0.075/-0.02/0/0 float=y maxiter=200 inside=0 logmap=yes
+  periodicity=0
+  colors=000000<29>k00m00m01<29>y0kz0mz1m<30>zzz<44>z5zz3zz2zz0zz0y<43>z05\
+  z03z02z00y00<59>200000000
+  }
+
+FreakyPhant        { ; This mutant elephant has two kinds of spiral.
+                     ; 1 hour
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1B
+  corners=-0.15850384281/-0.15793534655/-0.37334233788/-0.37291596568
+  params=-0.08/0.04/0/0/0/0 float=y maxiter=5000 inside=0 logmap=yes
+  periodicity=0
+  colors=000mmz<45>RRkRRkRRkRRkRRk<129>CALCALCALB9KAAJBAJ<49>m13n12o12o12n\
+  23n33<13>nC3
+  }
+
+Trillium           { ; This flower is a rare species here.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2.035022/2.275323/-1.616379/1.616379
+  params=-0.02/0/0.08/-0.02/0/0 float=y maxiter=500 inside=0
+  logmap=yes periodicity=0
+  colors=000000<29>k00m00m01<29>y0kz0mz1m<27>ztxzvyzyxzzz<45>zz3zz2zz2<28>\
+  cj8bj8ai9aiA<30>Dcz<14>JcNKcKMcK<14>zcK<15>zzz
+  }
+
+Filigree           { ; Netscape doesn't do this one justice.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2.035022/2.275323/-1.616379/1.616379
+  params=1.55953556/0.241280896/0/0.1/0/0 float=y maxiter=32767
+  inside=0 logmap=yes periodicity=0
+  colors=000VZi<19>ccuccudbt<80>wHLwHLvHL<33>XSTWTTVTTUUUVUUXVT<10>lcOndNp\
+  eNrfMtgL<2>yjI<58>RB8QA8RB9<30>zzz
+  }
+
+Galaxies           { ; Galaxies and dark nebulae.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2.035022/2.275323/-1.616379/1.616379
+  params=0/0/0.113/0.004/0/0 float=y inside=0 logmap=yes periodicity=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z\
+  03z02z00z00y<59>002000000
+  }
+
+Jeweled_Spirals    { ; A jewelled double spiral.
+                     ; 1 hour
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ
+  corners=0.62090113/0.82090113/0.40079299/0.55079299
+  params=-0.1580119532/-0.3731782244/-0.08/0.04/0/0 float=y
+  maxiter=5000 inside=0 logmap=yes periodicity=0
+  colors=0009Np<127>7BQ7BQ8AP<103>1sX0tY1sX<17>6rW
+  }
+
+Mandelbroids       { ; These weird Mandelbroids are found in a certain region.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1B corners=-2.584859/1.653769/-1.124853/2.054118
+  params=-0.08/0.04/0/0/0/0 float=y maxiter=500 inside=0 logmap=yes
+  periodicity=0
+  colors=000UGH<4>VCFVCFXFH<15>puh<4>uuivuivuivui<93>8Tw7Sx7Sx7Sx<125>00K
+  }
+
+Flowers            { ; Bouquets of flowers sprout out of a stone.
+                     ; 15 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-1.879848/2.120139/-1.49999/1.5
+  params=0/0/0.1122300597/0.0024540044/0/0 float=y maxiter=2000
+  inside=0 logmap=yes periodicity=0
+  colors=000iof<93>20C20C31D<89>sRasSbtSbuTcuTc<28>VMjULjTLjSKkTLk<30>zzz
+  }
+
+Awesome!           { ; This is the awe inspiring Mega Galaxy
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2.035022/2.275323/-1.616379/1.616379
+  params=-0.15/0.1/0.113/0.004/0/0 float=y maxiter=200 inside=0
+  logmap=yes periodicity=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<28>vyzxzzxzz<158>z00
+  }
+
+Tall_Mushroom      { ; This purple mushroom grows tall on a rocky hill.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2B
+  corners=-0.032543973054/-0.031720233317/0.0012173327016/0.0018351375037
+  params=0.1/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000zzz<25>snnrmmqkm<13>WH`UE_TD_<13>L1VK0UK0UK0T<31>B01A00A00A00<\
+  157>zzz
+  }
+
+Pachyderm          { ; Trunk of a strange creature that roams certain regions.
+                     ; 30 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2A
+  corners=-0.141549713166/-0.141506713166/0.00119831014644/0.0012305601464\
+  4 params=0/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0
+  colors=0000DD<45>F__F__F__F__F__<14>Ia`Ia`Ib`Jb`Jb`Jba<71>iqkiqkiqkiqkiq\
+  j<73>ruOruOsvNtwM<11>wyDxyCxyBxyBwxCwwC<13>wnC
+  }
+
+Trispiral          { ; A weird triple spiral.
+                     ; 20 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ
+  corners=0.7703028/1.2359668/-0.1871763/0.1620717
+  params=0/0/-0.14152743/0.00121969/0/0 float=y maxiter=1000 inside=0
+  logmap=yes periodicity=0
+  colors=000mmz<45>RRkRRkRRkRRkRRk<123>DBNDBNECN<77>zz0
+  }
+
+Dendrite           { ; Strange branching plant growth.
+                     ; 2 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzJ corners=-2/2/-1.5/1.5
+  params=0/0/-0.15565684/-1.485e-005/0/0 float=y maxiter=1000 inside=0
+  logmap=yes periodicity=0 colors=000zzm<173>NNBNNBONC<77>z0z
+  }
+
+Crazy-Horse        { ; Look at the crazy seahorse. Weird mini Mandelbrots!
+                     ; 40 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1B
+  corners=0.0966390145/0.108638379/-0.4259862126/-0.4169866892
+  params=-0.08/0.03/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0
+  colors=000mmz<45>RRkRRkRRkRRkRRk<129>ACLACLACL9BKAAJABJ<49>1m31n21o21o22\
+  n33n3<13>Cn3
+  }
+
+Golden_Spiral      { ; A golden spiral and some puffs and streamers of smoke.
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1C
+  corners=0.5727768597553/0.5727845105676/0.0001923411873595/0.00019807929\
+  65974 params=-0.4/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0 viewwindows=2/0.75/yes/0/0
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<14>zU0\
+  zW0zW0<29>zy0zz0zz0zz1<67>zzzzzzyyy<77>000
+  }
+
+Streamers          { ; Four spirals and some odd smoke streams.
+                     ; 30 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1C
+  corners=0.572780790333736/0.572780823232229/0.00019704511284783/0.000197\
+  069786717552 params=-0.4/0/0/0/0/0 float=y maxiter=2000 inside=0
+  logmap=99 periodicity=0 viewwindows=2/0.75/yes/0/0
+  colors=CCC00A<62>z00z10z30<35>zt0zv0zx0zz0zz0<68>zzzzzzyyy<77>000
+  cyclerange=1/56
+  }
+
+Rocket             { ; A mini Mandelbrot takes off on a pillar of smoke.
+                     ; 1 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM1C
+  corners=0.52644701/0.63438222/-0.0403242835/0.0406271213
+  params=-0.4/0/0/0/0/0 float=y maxiter=200 inside=0 logmap=yes
+  periodicity=0 viewwindows=2/0.75/yes/0/0
+  colors=CCC000<5>000<7>z00<15>zz0<223>zzz
+  }
+
+Shroom_Hill        { ; A hill covered in weird mushrooms growing atweird angles
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2D
+  corners=0.106236134/0.131182677/0.0184615951/0.0371715025
+  params=0/0/-0.1/0/0/0 float=y maxiter=200 inside=0 logmap=yes
+  colors=000<11>777888999AAABBA<13>aSJcUKcVL<30>zzz<15>0z0<95>0K00K00K00K0\
+  0J0<75>000
+  }
+
+Field_Of_Shrooms   { ; Mushrooms growing in a field.
+                     ; 2 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2D
+  corners=0.15797246463/0.15868094645/-2.922783449e-006/0.00052843858505
+  params=0/0/-0.1/0/0/0 float=y maxiter=200 inside=0 logmap=29
+  colors=000444<5>888999AAABBADCBFDB<11>aSJcUKcVL<30>zzz<15>z00<95>K00K00K\
+  00K00J00<75>000000111<3>333
+  }
+
+Tridar             { ; Strange group of spirals.
+                     ; 10 min
+  reset=1920 type=formula formulafile=quartz.frm
+  formulaname=QuartzM2D
+  corners=0.1510319001404/0.1510332623859/0.005227631808592/0.005228653492\
+  687 params=0/0/-0.1/0/0/0 float=y maxiter=1000 inside=0 logmap=64
+  viewwindows=2/0.75/yes/0/0
+  colors=000<11>777888999AAAABB<13>JSaKUcLVc<29>xxyzzzzww<14>z00<95>K00K00\
+  K00K00J00<75>000
+  }
+
+Filamentous        { ; Weird.
+                     ; 1 min
+  reset=1920 type=formula formulafile=quartz.frm formulaname=QuartzJ
+  corners=-2/2/-1.5/1.5 params=-0.112/-0.2/-0.1/-0.04/0/0 float=y
+  maxiter=200 inside=0 logmap=yes viewwindows=2/0.75/yes/0/0
+  colors=000<11>888999AAABBADCBFDB<11>aSJcUKcVL<30>zzz<15>0z0<95>0K00K00K0\
+  0K00J0<76>000
+  }
+
+Symbiosis          { ; A seahorse lives in a symbiosis with strange fungi.
+                     ; 10 min
+  reset=1920 type=formula formulafile=quartz.frm formulaname=QuartzM1C
+  corners=-0.031861670722/-0.031703877647/0.025325063261/0.025443408068
+  params=0.112/0/0/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000<12>333343343344344354<93>KSUKSUKRU<41>PCLPBLPBLQAKQAKQ9J<3>Q8\
+  GR7FQ6E<6>QCFQDGQEGRFHSGI<43>yxyzzzzzz<30>zzz
+  }
+
+Teralla            { ; This spirallacious creature inhabits a crevice of Quartz
+                     ; 5 min
+  reset=1920 type=formula formulafile=quartz.frm formulaname=QuartzM1C
+  corners=-0.043399503239/-0.043289424634/0.0128601057942/0.0129426647476
+  params=0.1/0/0/0/0/0 float=y maxiter=2000 inside=0
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0\
+  zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30\
+  >zy0zz0xz0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+Edge               { ; This is a valley of a minibrot from the "Crazy Horse"
+                     ; 2 hours
+  reset=1920 type=formula formulafile=quartz.frm formulaname=QuartzM1B
+  corners=0.103607528803/0.103626531688/-0.418666513777/-0.418652261614
+  params=-0.08/0.03/0/0/0/0 float=y maxiter=10000 inside=0 logmap=270
+  periodicity=0
+  colors=000zmm<149>`QR_PQ_PQZOPZOP<20>MBDLACK9BJ9AJ89<10>A00A00B00<61>zN0
+  }
