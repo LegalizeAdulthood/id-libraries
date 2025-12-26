@@ -1,0 +1,75 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+_WARNING!_ { ;Important, press F2 when in PAR loader screen!
+This file needs V20_0_13.FRM
+V20_0_13.FRM needs version 20.0.13 (development version) or later
+The development versions can be downloaded at www.fractint.org
+The normal version 20.00 may draw *a few* images correctly
+}
+
+mand_2exp2par_1_1  { ; unusual spiral
+                     ;  Version 2000 Patchlevel 13
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=mand_2exp2par_1
+  center-mag=+1.12774294670846200/+0.54225563909774450/266.6667
+  params=0/0/0/0/0/0/0/0/0/0 float=y maxiter=255 inside=0 sound=off
+  colors=000<24>G00G00H00<2>J00K00J12<24>GOkFPmFQo<3>FUw<25>qtBsu9tv7<2>yy\
+  2zz0zv0<8>zO0zK0zG0<3>z00<9>z0bz0fz0j<3>z0z<41>8r86t65u5<2>1y10z01z1<40>\
+  rzrtztuzu<3>zzz<31>000
+  }
+
+mand_2exp2par_1_2  { ; another unusual spiral, with decomp
+                     ;  Version 2000 Patchlevel 13
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=mand_2exp2par_1
+  center-mag=+0.68934921630093910/-0.54383157894736640/102.7158
+  params=0.8/0/2/0/-0.8/0/3/0/4/0 float=y maxiter=255 inside=0
+  decomp=256 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3\
+  >z00<9>O00K00G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O\
+  00K00G<3>000<9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0\
+  <9>OI0KF0GC0<3>000<9>0I00J00L00M00O0<2>1U01V02X03Z0<5>7h08j09l0<2>Bq0Cs0\
+  Bq0<6>6e05c04a0<2>2X02V02U02S02Q0<14>000
+  }
+
+mand_2exp2par_1_2b { ; the same unusual spiral, with cont. pot.
+                     ;  Version 2000 Patchlevel 13
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=mand_2exp2par_1
+  center-mag=+0.68934538950000000/-0.54354199750000000/102.6817
+  params=0.8/0/2/0/-0.8/0/3/0/800/0 float=y maxiter=255 inside=0
+  potential=255/10000/0 sound=off
+  colors=000zG0<120>X10X00W00<4>W00V00V00<54>300200200<2>000000002<24>00n0\
+  0p00r<2>00x00z22z<29>zzz
+  }
+
+magnet1jvar_exp2_1 { ; metallic-like decomp
+                     ;  Version 2000 Patchlevel 15
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=magnet1jvar_exp2
+  center-mag=-6.66134e-016/4.44089e-016/0.9861933
+  params=1.7/0/0/0.8/3/0/10/0 float=y maxiter=255 inside=0 decomp=256
+  sound=off colors=000<121>xxxxxxyyy<2>zzzzzzyyz<59>TTcSScSSc<63>000
+  }
+
+magnet1jvar_exp2_2 { ; metallic-like decomp
+                     ;  Version 2000 Patchlevel 15
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=magnet1jvar_exp2
+  center-mag=-8.88178e-016/6.10623e-016/1.041667
+  params=1/0/0/0.7/3/0/10/0 float=y maxiter=255 inside=0 decomp=256
+  sound=off colors=000<121>xxxxxxyyy<2>zzzzzzyyz<59>TTcSScSSc<63>000
+  }
+
+mand_a*2+b*4+c*6_1 {
+                     ;  Version 2000 Patchlevel 15
+  reset=2000 type=formula formulafile=v20_0_13.frm
+  formulaname=mand_a*2+b*4+c*6
+  center-mag=-0.79920256941484570/+0.81876563926303520/2.646494e+008
+  params=0/0/0.4/0/0.3/0/0.1/0/0/0 float=y maxiter=255 inside=0
+  sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3>z00<9>O00K0\
+  0G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O00K00G<3>000\
+  <9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0<9>OI0KF0GC0\
+  <3>000<11>0L00M00O00Q00S0<9>7h08j09l0<2>Bq0Cs0Bq0<9>3_03Z02X01V0<17>000
+  }
+
