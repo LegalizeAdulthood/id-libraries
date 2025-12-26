@@ -1,3 +1,10 @@
+<!--
+SPDX-License-Identifier: GPL-3.0-only
+-->
+[![GitHub Release](https://img.shields.io/github/v/release/LegalizeAdulthood/id-libraries?label=Latest+Release)](https://github.com/LegalizeAdulthood/id-libraries/releases)
+[![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/LegalizeAdulthood/id-libraries/latest/total?label=Downloads&color=blue)](https://github.com/LegalizeAdulthood/id-libraries/releases)
+
+
 # Iterated Dynamics Libraries
 
 This repository consists of libraries of data files for
