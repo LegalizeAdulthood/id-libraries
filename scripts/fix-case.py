@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate sed commands to fix case mismatches in formula, IFS, and L-system parameters.
+Generate sed commands to fix case mismatches in formula, IFS, L-system, and colormap parameters.
 
 Reads validation output from validate-par.py and outputs sed commands.
 
@@ -109,6 +109,21 @@ def main():
             correct_case_escaped = escape_for_sed(correct_case)
             
             fixes.append((line_num, f"s/ifsfile={wrong_case_escaped}/ifsfile={correct_case_escaped}/g"))
+            continue
+        
+        # Parse: EntryName(LineNum): Colormap file 'wrong.map' does not match case-sensitively (found: Correct.map)
+        match = re.match(r"^\s*\S+\((\d+)\):\s+Colormap file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        
+        if match:
+            line_num = int(match.group(1))
+            wrong_case = match.group(2)
+            correct_case = match.group(3)
+            
+            wrong_case_escaped = escape_for_sed(wrong_case)
+            correct_case_escaped = escape_for_sed(correct_case)
+            
+            # Colormap files are referenced with @filename in the colors parameter
+            fixes.append((line_num, f"s/colors=@{wrong_case_escaped}/colors=@{correct_case_escaped}/g"))
     
     # Output sed commands sorted by line number
     fixes.sort(key=lambda x: x[0])
