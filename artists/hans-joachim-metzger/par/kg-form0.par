@@ -1,0 +1,573 @@
+;
+;	Fractals made with my kg0.frm 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+
+
+
+avocado	     { ; aus kgfrm004
+  reset type=formula formulafile=kg0.frm formulaname=004
+  corners=-0.902696/0.153297/0.68573/-0.722277/0.153297/-0.722277
+  inside=bof61 outside=imag
+  colors=00000h00i00k00m<30>0ky0mz1mz<30>zzz<46>2zz0zz0yz<32>0Jz
+  }
+
+colorfish          { ; aus kgfrm fish, ins=bof60, outs=summ, decomp=33
+  reset type=formula formulafile=kg0.frm
+  formulaname=Fish passes=b
+  corners=-0.043391/-2.179405/-1.414/1.434017/-2.179405/1.434017
+  inside=bof60 outside=summ decomp=33
+  colors=000VKW_PSEBXCFLFGhEPiCZkOSOXl3EKlCYr9kxvpEI6_L5SO3KDJY<2>2t4aBUwGGAZi\
+  3zl9d_T7We7Jr76Q9`_CUiFNHCZ<2>NT7GJdGVaGfYQ6k<2>t0zeozQNm_csityQMZ_`QioGpTUV\
+  PWigKyz7TTVenHK9XPBMRKi<2>ywoYme8Sh0mjLDg<2>_VfOFaWNWcVQWR6abbM8k<2>cCyRJc<2\
+  >yrRUCVhHIwM5WFRkO9kZTKKaPYWUkQTQ33aMIMbL`YOoTTSoemxR5ka3om1sYDbpKYyJ2OKZWYQ\
+  ckHNA`VDTuKyZYbWOllerLLaQZWWmPF7e<2>99YJDeELgMJcPPaPZRHNTHVMIcEUwUHHd<2>NlTF\
+  KSDXCKBa<2>WPIeDqP9h<2>rIlEQPCh5IIg<2>PpgA7l
+  }
+
+Doppelfisch        { ; aus kgfrm fish, outs=mult, dec=33, colors=@dblfish.map
+  reset type=formula formulafile=kg0.frm formulaname=Fish passes=b
+  corners=-2/1.999997/-1.499996/1.5 inside=epsiloncross outside=mult
+  decomp=33
+  colors=0004JL_NHNGNA9UiZJ<2>Zrh1e8wYrjTM<2>aWul`CkhEjqGjO8hI4eC0a_M<2>5t\
+  ts`8zi4nNN<2>w2vlUJ<2>oYgk_L<2>hwqkUIiVQeXFYaKOsPZSSKRik_LjfVhnddWB<2>Eg\
+  AnT6qS0n_DqfFtnHfXQ_aeE0VVEInaApk9su7kIoeTL<2>JRocVZUYvaXYRatjTShUheVyXX\
+  BHaB0fAoXMs`YwdicPGVLMjabgtFVTQDTen`GqhMtqSiQ6fN1lRH<2>jJap47_jXfXG_`LTe\
+  QalglTPlSckRreIKY6UVvxoU9<2>xY1bhFSyK_NMNHYABil`9<2>mx2qjIoPH<2>xC`WgLEw\
+  VYSDJRF4QIlOG<2>o6WcSH<2>AM`XZQHed0lsmTJnUSoV`qWisV9zY7lKClADm0FhMN<2>W0\
+  viWReZfaavcXA<2>Ck5faN_jZcYWUcqod9rq6_bANl89v6fWJ<2>Pfh`t4fYB<2>OnEiQI<2\
+  >YHegPC<2>QCIhbGdlL_vQaKBQBBE2CbXB<2>9h97XGKLAnZM<2>tpt`T9<2>0T3hRCcODZL\
+  FX`CHhD0qEc`JUhRhW9<2>Ug0fSH<2>OPZcPJRgJEzJk57<2>Q9z<2>2GJ<2>5Yi7csAhp<2\
+  >LxgJrYHkN<3>pid<3>TcXkTQDE6
+  }
+
+Distel             { ; aus kgfrm 002, ins=-100, outs=mult, dec=33 
+  reset type=formula formulafile=kg0.frm formulaname=002
+  corners=-2.0/1.999997/-1.499996/1.5 inside=-100 outside=mult decomp=33
+  colors=000chMDC8<21>ndXDB7<18>gOHCC7<22>Wp3EB9<19>tGmSAEg8Lx6SDB7<14>bQ3CC8<\
+  11>AUNFB9AWO<14>7rg<9>ws9vqBtnE
+  }
+
+Farbfisch          { ; aus kgfrm fish, ins=bof60, outs=summ, dec=33
+  reset type=formula formulafile=kg0.frm
+  formulaname=Fish
+  corners=-0.043391/-2.179405/-1.414/1.434017/-2.179405/1.434017
+  inside=bof60 outside=summ decomp=33
+  colors=000VKW_PSEBXCFLFGhEPiCZkOSOXl3EKlCYr9kxvpEI6_L5SO3KDJY<2>2t4aBUwGGAZi\
+  3zl9d_T7We7Jr76Q9`_CUiFNHCZ<2>NT7GJdGVaGfYQ6k<2>t0zeozQNm_csityQMZ_`QioGpTUV\
+  PWigKyz7TTVenHK9XPBMRKi<2>ywoYme8Sh0mjLDg<2>_VfOFaWNWcVQWR6abbM8k<2>cCyRJc<2\
+  >yrRUCVhHIwM5WFRkO9kZTKKaPYWUkQTQ33aMIMbL`YOoTTSoemxR5ka3om1sYDbpKYyJ2OKZWYQ\
+  ckHNA`VDTuKyZYbWOllerLLaQZWWmPF7e<2>99YJDeELgMJcPPaPZRHNTHVMIcEUwUHHd<2>NlTF\
+  KSDXCKBa<2>WPIeDqP9h<2>rIlEQPCh5IIg<2>PpgA7l
+  }
+
+geformel001abgewandelt              { ; kgfrm001, ins=-100, outs=mult, dec=33
+  reset type=formula formulafile=kg0.frm formulaname=001
+  corners=-2.0/1.999997/-1.499996/1.5 inside=-100 outside=mult decomp=33
+  colors=000TH_UHWWISJThBei3rjQH`OHUNHNLIFLVGTRd<2>_wWMKVGNIAQ5MMb<2>4cMQ23gbi\
+  yykRKe<2>RU_b8hREgSAfT6eTOb<2>_jLQRa<2>LvIWNYaTNg_CFLf2PdTNgWTgZZfY`gethUOg<\
+  2>ejdHunNOYIVODaE8h34mMOLg<2>C_gW3k6iGXL`bQUiVNsAF`QfkZdvgbSJ`<2>VPDgMUyRFd9\
+  Pr15LJfFLd8ObEu_dWWsjJRDgS9gT4f_JfhLeqNcVDc<2>f1Q`KbkNYvQTYUeefcmt`SZpUpyPFh\
+  NCiL9kXJicLlOmEYWkdjolysRKa<2>TTILLVFQI8V4XRd<2>otTRF_<2>R6Ac7wXEf<2>o4`OKBV\
+  Pj<2>imuRHaQGWINf9Td0ZbWIpaJzNSXIbMDmB
+  }
+
+blume1             { ; aus ge.frm07, f1/2=sqr/rec, m=555, ins=bof60, outs=real
+                     ; f1/2=sqr/recip, m=555, ins=bof60, outs=real
+  reset type=formula formulafile=kg0.frm formulaname=007
+  function=ident/sqr corners=-2.0/1.999997/-1.499996/1.5 maxiter=333
+  inside=bof60 outside=real
+  colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
+  2>00z<12>000<2>00z<10>zzLzL000000L<9>z00e00L00zzLzL0000<21>0zzzzezz0<2>z00e0\
+  0L00zzL<20>00z<6>30pE0n40m<32>L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLz\
+  L0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L000S\
+  XzFU
+  }
+
+Blume2             { ; aus ge.frm08, f1/2=sqr/rec, m=555, ins=bof61, out=real
+  reset type=formula formulafile=kg0.frm formulaname=008
+  function=sqr/recip corners=-2.0/1.999988/-1.500002/1.5 maxiter=555
+  inside=bof61 outside=real
+  colors=CCCm3B<12>y46f4F<23>z`jf3E<17>kE6f3E<22>L7Gf5F<15>mgVb3E<6>88Kf3E<26>\
+  `QDf4E`RD<18>WgBWgBVhC<27>FvWEwXEvW<15>EV8DT6DT6<48>CO7
+  }
+
+blume4             { ; aus ge.frm07, m333, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=007 function=ident/sqr
+  corners=-2.0/1.999997/-1.499996/1.5 maxiter=333 inside=bof60
+  outside=real
+  colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
+  2>00z<12>000<2>00z<10>zzLzL000000L<9>z00e00L00zzLzL0000<21>0zzzzezz0<2>z00e0\
+  0L00zzL<20>00z<6>30pE0n40m<32>L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLz\
+  L0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L000S\
+  XzFU
+  }
+
+Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=015
+  passes=t corners=-2.0/1.999997/-1.499996/1.5 maxiter=5555 inside=-100
+  outside=real
+  colors=CCCsKC<2>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_Cs\
+  YECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC\
+  <15>sMC
+  }
+
+kgfrm011           { ; kgfrm011, f.p., m=555, bof60, real, y 222, 333, 0
+  reset type=formula formulafile=kg0.frm formulaname=011
+  passes=t corners=-1.424001/1.424017/-1.068014/1.068001 inside=bof60
+  }
+
+kgfrm012-1         {
+  reset type=formula formulafile=kg0.frm formulaname=012 function=exp
+  passes=t corners=-0.48800099/0.48800754/1.8287073/2.5606939
+  params=3/2/1 inside=0 outside=real
+  colors=000MBhKAcH8Z<5>000<3>OC6UF7ZH8cKAhMBlOCpQDsSEuTExUFyVFzVFzWG<2>xU\
+  FuTEsSEpQDlOC<2>ZH8UF7OC6<3>000<3>6OC7UF8ZHAcKBhMClODpQEsSEuTFxUFyVFzVGz\
+  W<2>FxUEuTEsSDpQClO<2>8ZH7UF6OC<3>000<4>UULZZPccShhVllYpp`ssbuudxxfyygzz\
+  gzzh<2>xxfuudssbpp`llY<2>ZZPUULOOH<3>000<2>E7IJ9ONBURDZVFcZHhaJldKpgMsiN\
+  ujNxlOylOzmPzlOzlOyjNxiNugMsdKpaJl<2>RDZNBUJ9O<3>000<3>EOOHUUKZZNccQhhSl\
+  lVppXssYuuZxx_yy`zz`zz<2>ZxxYuuXssVppSll<2>KZZHUUEOO<3>000<2>I9EOCJUFNZH\
+  RcKVhMZlOapQdsSguTixUjyVlzVlzWmzVlyVlxUjuTisSgpQdlOa<2>ZHRUFNOCJ<2>63436\
+  46C99IECOJ<2>KcVMhZOlaQpdSsgTuiUxjVylVzlWzmVzlVylUxjTuiSsgQpdOla<2>HZRFU\
+  NCOJ<3>000<3>C6OF7UH8ZKAcMBhOClQDpSEsTEuUFxVFyVFzWGz<2>UFxTEuSEsQDpOCl
+  }
+
+kgfrm012-2         {
+  reset type=formula formulafile=kg0.frm formulaname=012
+  function=exp passes=t corners=-0.242047/0.242052/2.217855/2.58092
+  params=3/2/1 inside=0 outside=real
+  colors=000ze0zL0z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>\
+  00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<\
+  2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL000\
+  0<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0\
+  000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzL
+  }
+
+malaysiadrachen    { ; kgfrm012
+  reset=1720 type=formula formulafile=kg0.frm formulaname=012
+  function=exp corners=-0.057799518/0.060308278/2.42904854/2.51762813
+  params=3/2/1/0/0/0 inside=bof60 outside=real decomp=88 symmetry=none
+  colors=000`98i_9<2>EWIna6ib6cc6n`B<5>H`ds_6<5>nR5dbDQdKAgRnY7<6>98JnUH<2\
+  >Y9ptb7<2>wiDra6<8>`mEcYBNUG6QLp_A<4>YSWqgAnnEkuJnXB<5>H9esYSsUnmb8<7>1t\
+  Op`9<13>BOsoYB<7>K4qsIGs_B<3>sWWtUasa8<14>xzlsa8<12>pxajdH<3>8wxjmR<8>nm\
+  MomLmkN<11>ILl<5>VS7<3>rnQsXRtFS<10>RoG<6>BTZ<2>FZsH`zGMYF74Lim<10>bSjdQ\
+  ieQi<12>zTc<3>gfObjJ`iM<7>IViFTmESl<4>8Ld
+  }
+
+ausserhalb         { ; aus kgfrm004
+  reset type=formula formulafile=kg0.frm formulaname=004
+  corners=-10.816753/-8.626521/-0.203393/1.439275 inside=bof61
+  outside=imag
+  colors=000LIL<2>_OD8S_AfhEDP<2>ZCFMBU`9Wo6Z8KK9RCAZ48KV<5>GzqC_bIvm9GW<6>Rcx\
+  CKQ<4>dvDEA_M7gU4pG9YQ5c_0jJBV<2>u4c9EV<5>LLl9OZ<2>Ftu7HU<6>DngLUU7CT<3>35Z9\
+  GW<4>JYtAIS<6>awO7LT<2>7kX7tZ9IM<2>H_2DJS<5>ltPS7bm0n8vG8LT<3>DsX9DV<5>MBqCC\
+  SHARCJRN9R<3>h2OnCOuMNvQLxVJsWMnXQ8ER<5>JPGDNO<3>dz6CES<3>ZJS
+  }
+
+mandel-c1          { ; kgfrm13, epscr, imag
+  reset type=formula formulafile=kg0.frm formulaname=013
+  passes=t corners=-1.5995/2.400497/-1.540062/1.459933 inside=-100
+  outside=imag logmap=yes potential=255/500/500
+  colors=00011l<44>47P02n47O<4>58L<7>r50<2>q60G7c<19>tQ001r<31>Shy01r<44>Dwa31\
+  r<13>nJd00r<62>sj700r<10>01l
+  }
+
+mandel-c2          { ; kgfrm013,iter=
+  reset type=formula formulafile=kg0.frm formulaname=013
+  passes=t corners=-1.5995/2.400497/-1.520029/1.479967 maxiter=32323
+  inside=-100 outside=imag logmap=yes potential=255/500/500
+  colors=00000w<6>00z000<125>z00000<118>00v
+  }
+
+mandel-c3          { ; kgfrm013, iter=32323, epscr, imag, 
+                     ; glases2
+  reset type=formula formulafile=kg0.frm formulaname=013
+  passes=t corners=-1.5995/2.400497/-1.520029/1.479967 maxiter=32323
+  inside=-100 outside=imag logmap=yes potential=255/500/500
+  colors=000404<13>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0O00S<14\
+  >w0S00W<14>w0W00_<14>w0_00c<14>w0c00g<14>w0g00k<14>w0k00o<14>w0o00s<14>w0s00\
+  w<14>w0w400<13>w00004
+  }
+
+Blumenwiese2       { ; geform007, f1 sin, f2 cos, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=007
+  function=sin/cos passes=t corners=-2.0/1.999997/-1.499996/1.5
+  inside=bof60 outside=real
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+
+Blumenwiese3       { ; geform007, f1 sin, f2 cos, epscr, real
+                     ; blumenwiese2 nach links verschoben und epscr
+  reset type=formula formulafile=kg0.frm formulaname=007
+  function=sin/cos passes=t corners=-3.57697/0.423027/-1.499996/1.5
+  inside=-100 outside=real
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+
+seerose            { ; kgfrm007, tan, cot, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=007
+  function=tan/cotan passes=t corners=-2.0/1.999997/-1.499996/1.5
+  inside=bof60 outside=real
+  colors=000zz0<3>0z00zE<2>0zx<2>0GxVVx<3>zVx<3>zVT<3>zzT<3>VzT<3>Vzx<2>Vbxhhx\
+  <3>zhx<3>zhf<3>zzf<3>hzf<3>hzx<2>hlx00Q<3>S0QS0JS0CS05S00<3>SS0<3>0S00S5<2>0\
+  SQ<2>07QEEQ<3>SEQ<3>SEC<3>SSC<3>ESC<3>ESQ<2>EHQKKQ<2>QKQSKQSKOSKMSKKSKI<2>SQ\
+  ISSIQSIOSIMSIKSI<2>KSOKSQKQQKOQKMQ00E<3>G0EG0AG06G02G00<3>GG0<3>0G00G2
+  }
+
+Mondlandschaft     { ; kgfrm014, p1: 1, -1, p2: -0.5, -2, sin, cos, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=014
+  passes=t corners=-2.0/1.999997/-1.499996/1.5 params=1/-1/-0.5/-2
+  inside=bof60 outside=real
+  colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
+  O00S<14>w0S00W<14>w0W00_<5>O0_
+  }
+
+plastisch          { ; kgfrm020, exp, 255, iter
+  reset type=fn(z*z) function=exp passes=2
+  corners=-2.3798065/-1.4898071/1.6208801/2.2881012 inside=255
+  potential=255/255/0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+geform20           { ; kgfrm020, cot
+  reset type=formula formulafile=kg0.frm formulaname=020
+  function=cotan passes=t corners=-2.0/2.0/-1.5/1.5 float=y inside=bof60
+  outside=imag
+  colors=000Hdr<4>5bwpJagff<20>nA3hgf<8>weS`cf<3>7K_fff<16>GMGaglVhqOivggg<24>\
+  YSVggg<26>IONgge<12>`a6ggf<15>ghM
+  }
+
+blaurot1           { ; kgfrm014
+  reset type=formula formulafile=kg0.frm formulaname=014
+  function=cosxx/exp passes=t corners=-2.0/1.999997/-2.03088/0.969116
+  params=1/-1/-0.5/-2 float=y maxiter=555 inside=bof60 outside=real
+  colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
+  O00S<14>w0S00W<14>w0W00_<14>w0_00c<14>w0c00g<14>w0g00k<14>w0k00o<14>w0o00s<1\
+  4>w0s00w<14>w0w
+  }
+
+blaurot2           { ; kgfrm014
+                     ; cos,sinh
+  reset type=formula formulafile=kg0.frm formulaname=014
+  function=cosxx/sinh passes=t corners=-2.0/1.999997/-2.03088/0.969116
+  params=1/-1/-0.5/-2 inside=bof60 outside=real
+  colors=000<14>w00004<14>w04008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0\
+  O00S<14>w0S00W<14>w0W00_<5>O0_
+  }
+
+blueyes            { ; kgfrm020,log
+  reset type=formula formulafile=kg0.frm formulaname=020
+  function=log passes=t corners=-2.0/1.999997/-1.499996/1.5
+  params=1/-1/-2/2 float=y inside=bof60 outside=imag
+  colors=000e_U<30>JFCsmd<33>sjYtiXsjd<4>wUhsmd<74>6Bg
+  }
+
+blueyes1           { ; kgfrm020,log
+  reset type=formula formulafile=kg0.frm formulaname=020
+  function=log passes=t corners=-2.0/1.999997/-1.895654/1.104341
+  params=1/-1/-2/2 float=y inside=bof60 outside=imag
+  colors=000d_T<29>JFCsmd<33>sjYtiXsjd<4>wUhsmd<75>5Ag
+  }
+
+tropic             { ; aus kgfrm20
+  reset=1720 type=formula formulafile=kg0.frm formulaname=020
+  function=cos passes=t corners=-2/2/-1.5/1.5 float=y inside=bof60
+  outside=imag symmetry=none
+  colors=000uJ9<35>jOxuJ8<33>x1ouJ7<66>8zAjj7<5>hj7tJ8<64>aAOtJ7<39>2t4uJ8
+  }
+
+gefor004           {
+  reset type=formula formulafile=kg0.frm formulaname=004
+  corners=-2.0/1.999997/-1.499996/1.5 inside=bof61 outside=imag
+  colors=000gPT<3>mUXM9F<8>0mIO7G<21>2zjO8F<13>RvPJGFDRE7aDOGE<3>Pz7P5F<17>m1Q\
+  Q9F<9>rlAO7F<15>JlLNAJ<6>FljHMPAb_O6F<20>LYPK_QMAI<7>6sm
+  }
+
+rosett             { ; kgfrm006, ins=-100, outs=summ, dec=222, biom=33
+  reset type=formula formulafile=kg0.frm formulaname=006
+  corners=-2.0/1.999997/-1.499996/1.5 fillcolor=33 inside=-100
+  outside=summ decomp=222 biomorph=33
+  colors=000GSoHTuLPM<3>nBLLSV<2>hPxLVM<3>mjNGRRIPXKNbMVP<3>rhdcUwETL<2>CZHZHI\
+  s6DOPNZMODRR<6>2FyCYRAdX7kbEZW<2>FszIWM<5>kuOASR5TX0UbDSM<6>1VRCVS<3>3gqmyQK\
+  MI<2>a45FWP<5>PthI_M<2>XyPISL<2>UQGZPE`YPwcSW`RmjWGQK<5>XD7HPP<5>`2hGOQ<2>OA\
+  cBKH7CB345KTN<2>dZSIJ2IUP<3>accFWJ<4>Oq0GSS<4>TSxKVP<5>wnjJTO<4>lb`SXKGRM<6>\
+  UGQv1qg9_<2>bkq`xx`rq`lj_fb<2>Rvx<3>kq3<3>bWQ`QW_eP<2>vsSIXN<5>hzUSVZfZkubxq\
+  GDjeOXVZpYkC3vJPQ<5>n1pETM<6>HbPYWLr_KLjCDWMB_M
+  }
+
+ge.frm01,          { ; ge.frm01, f.p., m=555, bof60, real, y 222, 333, 0
+  reset type=formula formulafile=kg0.frm formulaname=011 passes=b
+  corners=-1.424001/1.424016/-1.068013/1.068001 inside=bof60
+  outside=real potential=222/333/0
+  colors=000eyz<4>aux`tw_sv_ruZqu<5>UjnThmTglSejRdi<14>GINFGLFFKEEI<8>8478\
+  36735724<4>501401400300300300<4>120120131141<5>0960A70C8<2>0FB0HC0ID0KF0\
+  LG<5>1UP1WQ1YS2ZU<5>3gb4ic4je5kf5mh<4>7so8tp9tq<3>BxuBxvCywDywDzx<3>GzzH\
+  zzHzzIzzJzz<4>MxyNwyOvyPuxQuw<7>WlpXjoXim<2>_dj_ch`aga`ebZd<9>iKPjIOjHMk\
+  GL<5>o8Cp7Bp6Aq59q48<5>t13u02u01v01<6>x00x10y10y20y21<5>z84z95zA6zB7zC8<\
+  5>zKFzMHzNIzPKzRL<5>x_Ux`WxbYwcZwe`wfa<5>tojtpksqmsrnrso<2>qvspwtowt<3>m\
+  yxlzxlzykzyjzz<6>eyz
+  }
+
+blume4             { ; aus ge.frm07, m333, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=007 function=ident/sqr
+  corners=-2.0/1.999997/-1.499996/1.5 maxiter=333 inside=bof60
+  outside=real
+  colors=000000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc00L<13>zL0000<\
+  2>00z<12>000<2>00z<10>zzLzL000000L<9>z00e00L00zzLzL0000<21>0zzzzezz0<2>z00e0\
+  0L00zzL<20>00z<6>30pE0n40m<32>L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLz\
+  L0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L000S\
+  XzFU
+  }
+
+Mandel-1           { ; aus ge.frm 009, mandel-1, bof60, real
+  reset type=formula formulafile=kg0.frm formulaname=015
+  passes=t corners=-2.0/1.999997/-1.499996/1.5 maxiter=5555 inside=-100
+  outside=real
+  colors=CCCsKC<2>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_Cs\
+  YECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC\
+  <15>sMC
+  }
+
+ge10mand           { ; kgfrm10, bof60, real, y: 255, 500, 500
+  reset type=formula formulafile=kg0.frm formulaname=010
+  corners=-2.500625/1.499371/-1.535054/1.464942 inside=bof60 outside=real
+  potential=255/500/500
+  colors=000FJW<45>FEcGDdFKV<70>ylLFKV<124>ZQVFKV<7>FJW
+  }
+
+runderTisch        { ; kgfrm011
+  reset type=formula formulafile=kg0.frm formulaname=011
+  passes=t corners=-1.424001/1.424017/-1.068014/1.068001 inside=bof60
+  outside=real potential=222/333/0
+  colors=000iiG<3>smI<5>kbMQ`N<29>qjoDXA<45>ugpDWB<20>O4ZDXA<38>UubEXB<20>iCXD\
+  XA<35>Y3PDXB<10>LVU
+  }
+
+blume5             {
+  reset type=formula formulafile=kg0.frm formulaname=007
+  function=ident/recip corners=-1.351998/1.352015/-1.01401/1.013998
+  inside=bof60 outside=real colors=@blume.map
+  }
+
+rotor1             { ; aus kgfrm001
+  reset type=formula formulafile=kg0.frm formulaname=001 passes=t
+  corners=-2/2/-1.5/1.5 float=y inside=bof60 outside=summ logmap=yes
+  decomp=222 biomorph=0
+  colors=000_NU<47>APqoNF<40>hS3oNF<63>26IoNF<60>kUCoRJkUC<14>iWBiWBiVB<17\
+  >lID
+  }
+
+kgfrm06            {
+  reset=1720 type=formula formulafile=kg0.frm formulaname=006 passes=t
+  corners=-2/2/-1.5/1.5 params=1/2/3/4 float=y maxiter=5555
+  inside=bof60 outside=real symmetry=none
+  colors=000JTI<5>GTGsYC<13>tu3q7M<17>M7hmAO<7>Abrr7L<21>hRQq7L<23>F0As8R<\
+  3>zGpr8L<25>ioNY7rr7L<21>mDAq7L<25>F2JjFI<4>4v3r7L<14>v7Ur7Lw7U<4>x7Xy6Y\
+  x6V<5>q4C<28>PSKNTLNTL<5>KTJ
+  }
+
+octopus            { ; kgfrm 101, log, bof60, real
+  reset type=formula formulafile=ge1.frm
+  formulaname=101 function=log passes=t
+  corners=-2.0/2.000012/-1.500014/1.5 inside=bof60 outside=real
+  colors=000V5X<3>L0gyL3<14>j8sxM0<17>NfFzM2<11>qZSzM0<15>tl1_eMyM2<20>PkpvM3<\
+  13>2`qxL2<19>IKezL0<15>kN3vO3<2>iYC
+  }
+
+melange            { ; sqr 1/sinh
+  reset type=sqr(1/fn) function=sinh passes=t
+  corners=-1.254745/1.268951/-0.9425659/0.9494171 bailout=77
+  inside=bof60 outside=real colors=000NFA<122>`jlMD7<24>LCAccc<103>ccc
+  }
+
+filigran           { ; geform10
+                     ; 1,2,3,4,tan
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
+  function=tan passes=b corners=-4.658914/5.565086/-5.112/5.112
+  params=1/2/3/4 float=y inside=bof60 outside=real
+  colors=000000gXI<7>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2\
+  MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1JT2JV3<6>Gi7Fk8Gi7<7>KT3KR2KP1KN1L\
+  L1LJ0MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>MF0OF1<\
+  14>wEa<14>PE1<3>YOA000bTE
+  }
+
+antenne            { ; geform10
+                     ; 1,2,3,4,log
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
+  function=log passes=b corners=-4.876446/5.347554/-5.112/5.112
+  params=1/2/3/4 float=y inside=bof60 outside=imag
+  colors=000AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH\
+  0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8\
+  C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8S\
+  H9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<2>VOBXQD_TFbVH<4>meRpgTriVukXwm\
+  Zzpa<2>qiZmgXjdWgaV<3>VRQROPOLOKJNHGMDDL
+  }
+
+drehspan           { ; geform10
+                     ; 1,2,3,4,sqr
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
+  function=sqr passes=b corners=-4.658914/5.565086/-5.112/5.112
+  params=1/2/3/4 float=y inside=bof60 outside=imag
+  colors=000000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7W\
+  F8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<2>VOBXQD_TFbVH<4>meRpgTri\
+  VukXwmZzpa<2>qiZmgXjdWgaV<3>VRQROPOLOKJNHGMDDLAAK<3>ALQAOSARUBUWBXY<6>Dq\
+  lDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<\
+  7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413
+  }
+
+goldblatt          { ; geform10
+                     ; 1,2,3,4,recip
+  reset=1820 type=formula formulafile=kg0.frm formulaname=010
+  function=recip passes=t
+  corners=-1.956374/4.218922/-3.087648/3.087648 params=1/2/3/4 float=y
+  inside=bof60 outside=imag
+  colors=000a`W<7>OI5<2>VOBXQD_TFbVH<4>meRpgTriVukXwmZzpa<2>qiZmgXjdWgaV<3\
+  >VRQROPOLOKJNHGMDDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8\
+  >VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>\
+  ziF<13>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>\
+  E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<6>bbZ
+  }
+
+Blumenwiese1       { ; kgfrm011, bof61, summ, y: 255, 500, 500
+  reset type=formula formulafile=kg0.frm formulaname=011 passes=t
+  corners=-0.0249999762/0.0250053406/0.249181032/0.299165487
+  inside=bof61 outside=summ potential=255/500/500 decomp=33 biomorph=3
+  colors=CCCAqWnBI<2>h16lFK<4>TN9mGM<5>VXRpEQ<6>sBwpAIp5Do08iIN<3>HaSpGL<4\
+  >oSCfBP<2>A2`jES<4>EBulEO<6>IKcsDQvCUkIL<4>JfFnRPkcShqWmFQ<3>aNhCFxiKL<4\
+  >8qEoFQ<5>iLohNtiSPaeTfQTXb_lOW<2>ZszrERtEWwEakFGfHAq38iMR<3>Hum_EMJEM2D\
+  LoKK<2>jbBt9slJL<6>LsDeIQ<2>9WaqKQrQUtWYoGL<3>gSEpLT<3>oluiWMamLjEO<6>4L\
+  djHM<4>E`JlILgNJbSHpELZWGU`EPeCURWYIeb9p<6>CNb8P`2r_<6>KYldfPzp0<6>C5Y<4\
+  >Q5XS5WV5WY5VZ5R<4>dA5<4>MBGICJGDJ<3>7IGFXweLK<2>w5e<5>1F4<3>`y0rHt<4>LY\
+  WFiL9u9<2>l0Z<2>fLTcSQ`ZP<2>PuKRVFT49S4IR4R
+  }
+
+kgfrm022           {
+  reset type=formula formulafile=kg0.frm formulaname=022 function=log
+  corners=-1.950647/3.577161/-2.825019/2.702789 params=2/3/-2/-2
+  float=y bailout=50 inside=bof60 potential=222/333/0
+  colors=00000Y<7>000<16>z0X<15>000<15>p0w<15>000<15>zzz<3>jjj<3>ddjccjbbj\
+  aaj__j<22>22h00h10e<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3\
+  FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<5>00a
+  }
+
+yellowbeams       { ; kgfrm025
+                     ; Karl Geigl, CIS 100327,156
+  reset=1820 type=formula formulafile=kg0.frm formulaname=025 passes=t
+  corners=-9/9/-9/9 float=y inside=bof60 outside=real distest=22/71
+  colors=000yq5<6>zw8zx9zy9zyAzyByzB<5>vzFuzGtzGsyHryI<5>juMitNhsOfrOeqPcp\
+  Q<12>KY_JX`HVaGTa<4>9Me8Kf7Jg6Hg5Gh5Fi<2>2Bk2Al19l17m06n<4>02q02q01r01r0\
+  0s<3>20u30u40u50v60v<4>B2xC3xD4yF5yG5y<9>VHzXJzYKz_Mz`Nz<6>kYzl_ym`ynbyp\
+  cy<3>tixujwvlwvmvwnv<5>zuszvszvr<4>zypyzoyznyzn<6>sziryiqyhpxgowf<8>bo`a\
+  n__lZ<5>RdUPcUOaTM_S<6>CQNBOMAML9LK8JK<5>3BF2AF19E18D17D06C<2>03A03A0290\
+  29018<6>305404504604713813<4>E41F51H61I71K80L90<10>aO0cP0dR0fT0<4>m_1na1\
+  ob1pd1qe2<7>xp4
+  }
+
+radiowaves         { ; kgfrm024
+                     ; Karl Geigl, CIS 100327,156
+  reset=1820 type=formula formulafile=kg0.frm formulaname=024 passes=t
+  corners=-22/22/-22/22 float=y inside=bof60 outside=real
+  distest=22/71
+  colors=00019j<10>4Fq4Gq5Hr5Ir6Is<14>EUyFUyGVyGWyHXy<10>PdzQezRfzRfzSgzTh\
+  z<10>aoxapwbpwcqvdqv<2>fsugttgtthts<7>mxonxnoxnoxmpym<7>tzguzfuzfuze<5>x\
+  z`xz`xz_xzZyzY<6>zxTzxSzxRzwQzwQzwP<9>zrHyrHyqGypF<7>wlAvkAvj9ui9ui8<12>\
+  n_2mZ2mZ2lY2kX1<15>`L0_K0ZJ0YI0YI0XH0<6>RC2RC2QB2PB3OA3O93<11>F49E39E3AD\
+  3B<4>A1E91E91F81G80G70H<6>40M40N30O30P30P20Q<9>02Y02Z02Z03_03`03a<10>08i
+  }
+
+round              { ; geform01
+  reset=1820 type=formula formulafile=kg0.frm formulaname=001 passes=b
+  corners=-6/6/-6/6 float=y inside=bof60 outside=imag decomp=222
+  colors=0004Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW\
+  4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0jN9y4Wv1qcGzGcq1vW4y9Nk0j
+  }
+
+002                {
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
+  corners=-9.546217/9.546241/-7.159706/7.159662 maxiter=22
+  inside=bof60 outside=imag potential=222/333/0 symmetry=none
+  colors=000042400<5>R12U12Y13`23c23<3>l24n24o24p24q24<2>r24r24q24p24<4>g2\
+  4e23b23<2>T12Q12M12I11E01<2>210100<5>NI2RK2UN3XP3_R3bU4dV4gX4<2>l`5ma5nb\
+  5oc5oc5pc5oc5<2>ma5l`5j_4iZ4gX4dV4bU4<3>RK2NI2KF2GC1C91960530001002<5>22\
+  J32L33O43Q43S44V54W54Y<3>65b65c65c<2>65c65c65b55a55`54_<4>43R33P33M<6>00\
+  3000200<4>H12J12M13O13R13<4>Z24`25a25b25<2>c25c25b25<4>Z24Y24W24<2>Q13N1\
+  3L12I12G12<2>701400332111<5>SSKWWN__PbcS<2>lmZop`qrbstcuvdwxfxyfyzgyzgyz\
+  hyzgyzgxyfwxfuvdstcqrbop`lmZijX<2>__PWWNSSKOOHJJEFFAAA7664010031<3>1LA1P\
+  C1TE2XG2`I<3>3mO3pP3rQ3tR<2>3xT3yU3yU3yU<2>3wT3vS3tR3sR<3>2hL2eK2aI<6>09\
+  4
+  }
+
+002/2              {
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
+  corners=-11.43084/13.57395/-9.376835/9.376791 float=y maxiter=22
+  inside=bof60 outside=imag potential=222/222/0 symmetry=none
+  colors=00033M<6>003000200<4>H12J12M13O13R13<4>Z24`25a25b25<2>c25c25b25<4\
+  >Z24Y24W24<2>Q13N13L12I12G12<2>701400332111<5>SSKWWN__PbcS<2>lmZop`qrbst\
+  cuvdwxfxyfyzgyzgyzhyzgyzgxyfwxfuvdstcqrbop`lmZijX<2>__PWWNSSKOOHJJEFFAAA\
+  7664010031<3>1LA1PC1TE2XG2`I<3>3mO3pP3rQ3tR<2>3xT3yU3yU3yU<2>3wT3vS3tR3s\
+  R<3>2hL2eK2aI<4>1I80D6094042400<5>R12U12Y13`23c23<3>l24n24o24p24q24<2>r2\
+  4r24q24p24<4>g24e23b23<2>T12Q12M12I11E01<2>210100<5>NI2RK2UN3XP3_R3bU4dV\
+  4gX4<2>l`5ma5nb5oc5oc5pc5oc5<2>ma5l`5j_4iZ4gX4dV4bU4<3>RK2NI2KF2GC1C9196\
+  0530001002<5>22J32L33O43Q43S44V54W54Y<3>65b65c65c<2>65c65c65b55a55`54_<5\
+  >33P
+  }
+
+002/3              {
+  reset=1720 type=formula formulafile=kg0.frm formulaname=002
+  corners=8.489962/11.68896/-6.887363/-4.488109 float=y maxiter=22
+  inside=bof60 outside=imag potential=222/222/1 symmetry=none
+  colors=00033M<6>003000200<4>H12J12M13O13R13<4>Z24`25a25b25<2>c25c25b25<4\
+  >Z24Y24W24<2>Q13N13L12I12G12<2>701400332111<5>SSKWWN__PbcS<2>lmZop`qrbst\
+  cuvdwxfxyfyzgyzgyzhyzgyzgxyfwxfuvdstcqrbop`lmZijX<2>__PWWNSSKOOHJJEFFAAA\
+  7664010031<3>1LA1PC1TE2XG2`I<3>3mO3pP3rQ3tR<2>3xT3yU3yU3yU<2>3wT3vS3tR3s\
+  R<3>2hL2eK2aI<4>1I80D6094042400<5>R12U12Y13`23c23<3>l24n24o24p24q24<2>r2\
+  4r24q24p24<4>g24e23b23<2>T12Q12M12I11E01<2>210100<5>NI2RK2UN3XP3_R3bU4dV\
+  4gX4<2>l`5ma5nb5oc5oc5pc5oc5<2>ma5l`5j_4iZ4gX4dV4bU4<3>RK2NI2KF2GC1C9196\
+  0530001002<5>22J32L33O43Q43S44V54W54Y<3>65b65c65c<2>65c65c65b55a55`54_<5\
+  >33P
+  }
+
+003                {
+  reset type=formula formulafile=kg0.frm formulaname=003
+  corners=-31.59933/-21.84492/-3.735834/3.580105 inside=bof61
+  outside=imag potential=222/111/0
+  colors=000RRR<8>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO\
+  0RR<5>0gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332\
+  333<4>NNN
+  }
+
+003/2              {
+  reset type=formula formulafile=kg0.frm formulaname=003 passes=b
+  corners=11.56445/29.47885/-6.811918/6.624075 float=y inside=bof60
+  outside=real potential=333/222/0
+  colors=000ZZZ<8>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>0\
+  gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332333<14>\
+  zzz<5>bbb
+  }
+
+003/3              {
+  reset type=formula formulafile=kg0.frm formulaname=003
+  corners=20.406508/20.4663823/0.909830349/0.954736744 float=y
+  inside=bof60 outside=real potential=333/222/0
+  colors=000888444000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>0\
+  gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332333<14>\
+  zzz<12>CCC
+  }
+

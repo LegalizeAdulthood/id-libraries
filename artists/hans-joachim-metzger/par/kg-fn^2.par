@@ -1,0 +1,114 @@
+;   
+;	fn*fn fractals 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+;
+
+01                 {
+  reset=1820 type=fn*fn function=cosh/sqr passes=b
+  corners=-2.784424/2.781845/3.727554/-3.697235/2.781845/-3.697235
+  inside=maxiter potential=255/300/900
+  colors=000ZUZ<4>VQVUPUSOS<2>PLPNKNMJMKHKJGJ<8>333111133<7>GRRHUUJWWKZZM`\
+  `<2>QhhRjjSllUnnVpp<4>ZwwZxx_xx_yy<5>`zz`zz_yy_xxZxx<5>VppUnnSll<2>PeeNc\
+  cM``KZZJWW<10>000<8>RRGUUHWWJZZK``M<2>hhQjjRllSnnUppV<4>wwZxxZxx_yy_<5>z\
+  z`zz`yy_xx_xxZ<5>ppVnnUllS<2>eePccN``MZZKWWJ<10>000<8>R6GU7HW8JZ8K`9M<2>\
+  hBQjBRlCSnCUpDV<4>wFZxFZxF_yF_<2>zF`zG`zF`zF`<3>xFZwFZuEY<3>pDVnCUlCS<2>\
+  eAPcAN`9MZ8KW8J<10>000<8>GDGHFHJGJKHKMJM<7>WRWXSXXSX<2>ZUZ_V__V_`V``V``V\
+  ``W`<2>`V`_V__V_ZUZ
+  }
+
+02                 {
+  reset=1820 type=fn*fn function=tan/sqr passes=b
+  corners=-4/3.997803/-2.99585/3 inside=maxiter potential=255/300/900
+  colors=000A0o<3>40l31l21k12j12i<4>06f07e18d19d<3>6Ea7F`9H_BIZ<7>SUTUWSWX\
+  RZZR``QbaP<5>ojLqkKrmJ<5>ysFztEzuE<2>zxCzxBzyByyAxz9<2>uz8sz7rz7pz6nz6<4\
+  >dx4bx3_w3Yv3<4>Mr1Kq1Io1<2>Cl0Aj09i07g06f0<2>2b01`01Z0<4>0S00Q01O01N0<3\
+  >6H17G29E2BD2<5>N64P55S55<2>Z27`27b18e18g09<4>q0Cr0Ct0Du0Dv0E<2>y2Gz2Hz3\
+  Iz4I<2>z7Kz8Ly9MxAN<2>uDPsFQrGRpHRnJS<6>_UYYVYWXZTY_R_`P``<5>CieAkf9lf<2\
+  >4pi3qi2rj1sk1tk<4>0xo0xo1yp1yp<3>6zs7zs9ztBzt<3>JyvLyvNxwPww<8>ioyknzml\
+  z<2>rhztgzuezvdz<2>y_zzZzzXzzWz<2>zRzzPzyOzxMy<2>uIysGyrFxpExnCx<6>_5uY4\
+  uW3tT3tR2sP1s<5>C0o
+  }
+
+03                 {
+  reset=1820 type=fn*fn function=tanh/sqr passes=t
+  corners=-4.141342/4.136871/-4.139954/4.1409 inside=maxiter
+  potential=255/300/900
+  colors=90IOOO<8>www<14>ztnzsmysl<11>tqetqdtqe<12>tqntqotpn<12>vkhvkgvjfv\
+  ievhduhcug_uf_ue`td_tdWtcWt_Xs_Ws`Ss`Ss_Ts`St_XtcWud`uf_vgc<8>ztt<12>yjh\
+  xigxhfxhfwhfvhf<11>ngcnf_mf_me`md`mc_l_Wl_YlaXl`Wk_SkWSkWUkYTjXSjWOlYTmW\
+  Sn_Wo`Xp_Wqc`rd_sec<5>yllznnzmm<9>wecwe_wdavc`v__wc`wd_we_wfd<9>zppzqqyp\
+  o<7>qhapg_ofWneWmdSlcTkcOj_Oj_Oj_Oj_SiaS<6>h_SgWSgWSgWSh_Ui_Sj`WkaXl_Wnc\
+  Woc`pdaqe_rfc<3>uhgvihwjiwkjxlk<11>yvuzzzzzzvliP0Iz34
+  }
+
+04                 {
+  reset=1820 type=fn*fn function=cotan/sqr
+  corners=-4.141342/4.136871/-4.139954/4.1409 inside=maxiter
+  potential=255/300/900
+  colors=000JBe<7>KBqKBrJGkJKdIOYISR<6>4Zd3_e2Zd<31>2BQ2BP2AP2AP3BO<29>ILK\
+  ILKILKILKJLK<2>MKKMJKNJKNIKOIK<3>RHKSHKSIJTIJTIJUJJVKJVKJVLJWLJ<4>YOJZPJ\
+  ZPJZPJ_QJ_QJ1RB<5>1R91R92P93MA4KAlnf<12>xxl<16>2B5<8>h0F<55>EC3EC3FB5<22\
+  >JBc
+  }
+
+05                 {
+  reset=1720 type=fn*fn function=recip/cotan corners=-4/4/-3/3 float=y
+  bailout=66 inside=maxiter outside=imag potential=111/234/0
+  symmetry=xaxis
+  colors=00007R<9>05AVAV<14>wKwAVV<14>Ayxwww<29>55533300arl00M0KwArrApP0cG\
+  0X56f71zUAU2TzUWsNNzhfwAU`DM<5>fPWwl6<7>wwm900<13>w95pUKzsZ00L00e00z<2>0\
+  zzzzezz0<2>z00e00L00zzLzL0wA5<14>whwzeZ<14>_JA0B0<14>KwAqiw<14>JAJCKs<14\
+  >gpwLB2<14>oe00Az<19>07T
+  }
+
+06                 {
+  reset=1720 type=fn*fn function=cotan/log passes=t
+  corners=-2.997891/5.469821/-4.233856/4.233856 float=y bailout=66
+  inside=maxiter outside=imag potential=222/333/0 invert=1/0/0
+  symmetry=xaxis
+  colors=000Beo<10>LLd<13>zzynrt<2>jkjhigfgddd`cbY<8>OI4<2>VOAXQC_TEbVG<9>\
+  zp`<2>qiYmgWjdVgaU<9>AAJ<3>ALPAORARTBUVBXX<7>Dtm<16>ABGJ88<15>sH2<6>SDE<\
+  3>N3IL0JL1JM2JN3JO4IR9HUDFZ00_MC<6>tq2wu0zz0<2>pp2mm3jj5<2>``8YY9XVA<6>K\
+  AIMAJOAL<12>ziE<13>843412000<15>svb032063<10>0fS0iU0mW0pY0s`0wb0zd<6>0zv\
+  0zy1xx<8>Ago
+  }
+
+07                 {
+  reset=1720 type=fn*fn function=recip/cotan
+  corners=-3.568/3.568/-2.676/2.676 float=y bailout=66 inside=maxiter
+  outside=imag potential=222/444/0 invert=1/0/0 symmetry=xaxis
+  colors=000<2>0950D70GA<13>0zd<6>0zv0zy1xx<19>KNeLLdOOf<12>zzynrt<2>jkjhi\
+  gfgddd`cbY<8>OI4<2>VOAXQC_TEbVG<9>zp`<2>qiYmgWjdVgaU<9>AAJ<3>ALPAORARTBU\
+  VBXX<7>Dtm<16>ABGJ88<15>sH2<6>SDE<3>N3IL0JL1JM2JN3JO4IR9HUDFZ00_MC<6>tq2\
+  wu0zz0<2>pp2mm3jj5<2>``8YY9XVA<6>KAIMAJOAL<12>ziE<13>843412000<15>svb
+  }
+
+08                 {
+  reset=1720 type=fn*fn function=cos/exp passes=t
+  corners=-3.571107/-2.6729344/0.05895079/6.34616/-6.2656251/3.651642
+  float=y inside=bof60 outside=real potential=255/255/0 symmetry=none
+  colors=00000j00r00z070<6>0z0077<6>0zz700<6>z00007<6>00z070<6>0z0077<6>0z\
+  z700<6>z00007<6>00z070<6>0z0077<6>0zz700<6>z00007<6>00z070<6>0z0077<6>0z\
+  z700<6>z00007<6>00z070<6>0z0077<6>0zz700<6>z00007<6>00z070<6>0z0077<6>0z\
+  z700<6>z00007<6>00z070<6>0z0077<6>0zz700<6>z00007<6>00z070<6>0z0077<6>0z\
+  z700<6>z0000F<2>00b
+  }
+
+09                 {
+  reset=1720 type=fn*fn function=cosh/recip passes=t
+  corners=-0.8128506/0.8506924/1.120206/2.367343 float=y inside=bof60
+  outside=real symmetry=xaxis
+  colors=000gOS<2>W0D<2>IZ`<3>vZZNQZveq<3>6ay<3>kOf<3>HWxPVlXVacVRiUcoUo<2\
+  >bmgOSU96H<2>FKL<2>1aIMjCfs6L`K0JXBQeMXmWcudORQIeCfk<2>hSKAT091G<2>gICpd\
+  5qZ7rT9LQl1UKJRH`PEhVC<2>pPBl3k<2>qIK2wM3I5<2>eMAWr4bLR<2>nNFuAiY6t<2>mJ\
+  MSBe`FViJLKpYaaM8Lz<2>gNOauCflBjcBnVBtz7<2>rXA`kl<2>nTKFRwTPfeORwmA`qe<2\
+  >nUIaaw8a5nEWpHPqKIUZffTR6XwnVJ<2>qPDmdSoZMqTGdeQiZLnTG3jW<2>eTGM`xbU_kd\
+  YnZQpTI8kwObfcVRgpDkfCoXBje`iPWlOPoNIoq2<2>rU9IBEVFDfJCk6roFXi4ELm0a_64M\
+  GUNDqJUcCUhGNmKHvb`tVO4OSLNMaNGz1w<2>tIN8zuIvq<2>iWL3J9anZXntdddkWQVG0KM\
+  wWNfgNRLGEXJDgLC`QNfPJlOFnSMpQIqOEdTNkQH4_LXUi<2>mOJc38<2>oIB6`uVUYhjemZ\
+  Qnqj<2>qUKMfM<2>jSDz6nvFV43ELADaHCz0MBMieAvlHZiR8lP9oOAgOakNToNK4wYQ3iyk\
+  XOiWZaPhUI_WU<2>nPFOd0ZZ4
+  }
+

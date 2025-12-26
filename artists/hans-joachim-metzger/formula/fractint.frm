@@ -5123,3 +5123,65 @@ j+c2821 {; Sylvie Gallet frm. [101324,3444],1997
   ;SOURCE: ifs196.frm
 }
  
+Absolem {
+  z = 0, c = pixel:
+  z = z + p1
+  z = (z * z) * (1/c) 
+  z = fn1(z) * fn2(1/z)
+  z = z + c 
+  |z| <= 4 
+  ;SOURCE: korfu.frm
+}
+ 
+Absolem_2 {
+  z = 0, c = pixel:
+  z = z + p1
+  z = (z * z) * (1/c) 
+  z = fn1(z) * fn2(1/c)
+  z = z + c 
+  |z| <= 4 
+  ;SOURCE: korfu.frm
+}
+ 
+Absolem_SRand {
+  z = 0, c = pixel:
+  z = z + p1
+  z = (srand(z) * z) * (1/z) 
+  z = fn1(z) * fn2(1/c)
+  z = z + c  
+  |z| <= 4 
+  ;SOURCE: korfu.frm
+}
+ 
+Curfew {
+  z = 0, c = pixel:
+  z = z + c + p1
+  z = z * fn1((1/c)/(1/z)) 
+  |z| < 4
+  ;SOURCE: korfu.frm
+}
+ 
+Korfu (YAXIS) {
+  z = c = pixel:
+  z = z + p1
+  c = c/fn1(z) 
+  z = z * fn2(c)
+  |z| < 4
+  ;SOURCE: korfu.frm
+}
+ 
+Pilsner {; Revised for Fractint v20 by G. Martin  
+  z = 0, c = pixel, ppix = pixel^(-1) + p1:
+  z = (z*1/ppix) * fn1(ppix)
+  z = fn2(z) + c
+  |z| < 4
+  ;SOURCE: korfu.frm
+}
+ 
+Kapetanov11 {
+  c=pixel, z=pixel-cos(c):
+  c=sqr(pixel)+z, z=c*sin(z)
+  |z|<8
+  ;SOURCE: kapet011.frm
+}
+ 

@@ -1,0 +1,331 @@
+; From the Mandelbrot Set   
+; by Donald Archer, CIS 71544,657
+
+; All images copyright 1995 Donald Archer. All rights reserved.  
+ 
+; A series of 32 images from the Mandelbrot set, the classic
+; and keystone of fractal art. 
+
+; The set in these images is often deeply perturbed and sometimes  
+; deeply zoomed. Bells, whistles (i.e., options) are kept minimal
+; in these pars and in most cases the default options prevail. 
+; This constraint excites me.
+
+; For my own GIF files I almost always render my images in a
+; single pass (passes=1) for the precision it affords, but for 
+; speed-up I have converted the rendering of these pars to
+; solid-guessing. For on-screen viewing the lost pixels may
+; not really matter.
+
+ALL_IMAGES_HEREIN {COPYRIGHT 1995 DONALD ARCHER, CIS 71544,657
+  }
+
+mand532            {
+  reset=1920 type=mandel
+  corners=-0.15427325859088/-0.15427194435798/1.0307518838496/1.0307516964\
+  281/-0.15427269534774/1.03075113416 params=0/0 float=y maxiter=5000
+  logmap=yes
+  colors=000pF7LLL<10>222000001<13>90TA0VA0V<31>cUGdUGeTF<13>wH7<15>100<10\
+  >LAASEE<2>SEESEEREFRFG<12>KKSKKSLKR<13>ZEE<15>Kmz<14>KD4KA0KA0<14>8G8<15\
+  >cUG<14>C2UA0VA0U<13>J03K11L33<12>RQQSSSRRRPPP
+  }
+
+mand542            {
+  reset=1920 type=mandel 
+  corners=-0.74501051/-0.754930926/-0.00259975344/0.127183607/-0.810872737\
+  /0.0852212068 params=1.99/0 maxiter=500
+  colors=000000KAQ<3>C2UA0VA0U<13>J03K11L33<12>RQQSSSRRR<13>222000001<13>9\
+  0TA0VA0V<31>cUGdUGeTF<13>wH7<15>100<13>QDDSEESEE<14>KKSKKSLKR<13>ZEE<15>\
+  Kmz<14>KD4KA0KA0<14>8G8<15>cUG<8>OEO
+  }
+
+mand553            {
+  reset=1920 type=mandel
+  center-mag=-1.86057396076798300/-0.00000093291108129/3.710719e+011/1/-56\
+  .53/-1.697 params=0/0 float=y maxiter=2000 inside=maxiter logmap=yes
+  colors=AKA<4>AKAAKAAJA9I9<13>000<15>zzz<15>BQA<12>BDQBCRBBSAAUBATC9S<10>\
+  Q3ER3DS2CU1AT2AS3A<10>EGADHACIAAKAAKAAKA<12>AKAAKABJBCIC<12>S3SU1UT1T<14\
+  >000<15>cc3<12>O8PN5QM3SK0UK1UL3U<13>UUU<12>U7EU5DU3CU1AT1AR19P19N18U7EJ\
+  17<8>211000010<11>8G88H89I9AKAAKAAKA<5>AKAzzz
+  }
+
+mand640            {
+  reset=1920 type=mandel
+  corners=-1.132969303/-1.1313863576/0.21221081095/0.21248375138/-1.132521\
+  17/0.21160696786 params=2.3/-0.29 float=y maxiter=5120 fillcolor=2
+  colors=z_C<15>000<14>000<15>zB0<15>0fz<15>zR0<15>9Et<15>vu3<14>yaBz_CxYE\
+  <13>X4pU1sT1p<14>000<15>vu3<15>0fz<15>zR0<15>U1s<14>wA4zB0zC0<14>z_C
+  }
+
+mand656            {
+  reset=1920 type=mandel passes=t
+  center-mag=-0.676548/3.5285e-005/0.2384483 params=0/0 maxiter=1500
+  fillcolor=2 potential=255/300/0
+  colors=000UUU<63>yyyzzzzzzzzz<63>VVVVVVVVVVUUVUU<59>c05c05c15<53>VSS000V\
+  TTUUU
+  }
+
+mand661            {
+  reset=1920 type=mandel
+  corners=-0.5250484714654/-0.5250269682763/0.5964019836254/0.596424938249\
+  3/-0.5250517485368/0.596406353054 params=0.457855/0.182818 float=y
+  maxiter=3250 inside=maxiter
+  colors=ZNC<3>WLAVL9VK9VK9<6>SH6RG5QG5PF4OF4<3>LD4LD3KC3JB3<2>GA2G92F92F8\
+  2E82<3>C61B51A51941841<9>100000100<23>JB5KC5LC5LD5MD5ME5<5>QH5QH6RI6RI7S\
+  J7<2>UK8VK8VL8VL9<3>YNAZOA_OB_OC<5>bREcSEdSFdTG<6>hWJhWJiXKiXL<13>odTpeU\
+  peUpeV<5>rhYrhZrh_ri`sia<3>tkdtkdtletmf<7>uqjuqkvqlvrmvrn<5>wurwuswvuwvv\
+  wvvwvwwuvwuvwtuwts<28>qf_qfZqeYqeXpdXpdW<5>naTnaSm`Sl`R<2>kZPkZOkYOjYO<6\
+  >gVLfUKfUJeTIdTH<10>_OC
+  }
+
+mand662            {
+  reset=1920 type=mandel
+  corners=-0.525058262343/-0.525060092235/0.5963847794342/0.5963999677488/\
+  -0.5250662114952/0.5963953783037 params=0.457855/0.182818 float=y
+  maxiter=32500 inside=maxiter
+  colors=000G80<12>I90J90J90KA0KA0<29>_UA_UAZTA<29>951840740740<30>1100002\
+  22<29>zzz<30>222000000<75>G80
+  }         
+mand664           { 
+  reset=1920 type=mandel
+  corners=-0.755288823/-0.761169102/0.0530532207/0.05809737/-0.75982764/0.\
+  0591031387 params=1/0.5 maxiter=5000
+  colors=000VVV<7>zzz<15>000<31>000<15>zzz<15>000<31>000<15>zzz<15>000<31>\
+  000<15>zzz<15>000<30>000<6>RRR
+  }
+  
+mand680            {
+  reset=1920 type=mandel
+  corners=-0.1443016911/-0.141166431/0.6477366454/0.6560645815/-0.14717040\
+  67/0.6515615997 params=1/-1.4656546 float=y maxiter=2560
+  colors=000<11>K70L80N90PA0QB0<14>eW4<15>00P<15>uXP<14>YC2WA0WA0<14>PA0PA\
+  0OA1NA2<27>11O00P10P<45>k51m60l60<45>210000100<14>PA0<15>000
+  }
+
+mand809           { 
+  reset=1920 type=mandel 
+  corners=-0.75142452459/-0.7531126843/-0.053053642487/-0.053818356258/-0.\
+  75166519935/-0.052732742906 params=1/0.66666999999999998 float=y
+  maxiter=5120
+  colors=000Y40<30>210000100<14>PA0<14>210000100<11>L80N90PA0QB0RC0SE0<12>\
+  eW4<15>00P<15>uXP<14>YC2WA0WA0<14>PA0PA0OA1NA2<27>11O00P10P<45>k51m60l60\
+  <13>Z50
+  }
+
+mand881           { 
+  reset=1920 type=mandel 
+  corners=-0.7543871897/-0.7486135903/-0.04386893769/-0.03953873815
+  params=0.666667/0.666667 float=y maxiter=2048
+  colors=zzz<7>000<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<5>3NU2IY1Ea09f8Fa<5>ws8<5\
+  >qm5pl4ok3ni2oi2<5>ye5<8>3gl<6>jTd<2>jRkjQhkPp<3>lLz<5>wbEye5yb5<7>xCC<6\
+  >000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8\
+  >ye5<6>asa<7>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6\
+  >zzz
+  }
+
+mand883           { 
+  reset=1920 type=mandel 
+  corners=-0.75122572309/-0.75106420549/-0.04030051956/-0.040179381362
+  params=0.75/0.666667 float=y maxiter=2048
+  colors=zzz<7>000<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<4>4RQ3NU2IY1Ea09f<6>ws8<4\
+  >rn6qm5pl4ok3ni2<6>ye5<8>3gl<6>jTd<2>jRkjQhkPp<2>lMxlLznOr<4>wbEye5yb5<7\
+  >xCC<6>000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6\
+  >ggz<8>ye5<6>asa<7>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8\
+  >xCC<6>zzz
+  }
+
+mand885           { 
+  reset=1920 type=mandel 
+  corners=-0.75019407355/-0.750149155217/-0.0135442205581/-0.0135682350505\
+  /-0.750166375994/-0.013581150633 params=0.666666667/0.6666666667
+  float=y maxiter=10240
+  colors=zzzedk<3>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xC\
+  C<6>zzz<7>000<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<4>4RQ3NU2IY1Ea09f<6>ws8<4>rn\
+  6qm5pl4ok3ni2<6>ye5<8>3gl<6>jTd<2>jRkjQhkPp<2>lMxlLznOr<4>wbEye5yb5<7>xC\
+  C<6>000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>gg\
+  z<8>ye5<6>asa<2>dhh
+  }
+
+mand886           { 
+  reset=1920 type=mandel 
+  corners=-0.1477105767/-0.1398705767/-0.6539906128/-0.6481106128
+  params=0.666666667/0.666666667 float=y maxiter=2048
+  colors=zzzedk<3>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xC\
+  C<6>zzz<7>000<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<4>4RQ3NU2IY1Ea09f<6>ws8<4>rn\
+  6qm5pl4ok3ni2<6>ye5<8>3gl<6>jTd<2>jRkjQhkPp<2>lMxlLznOr<4>wbEye5yb5<7>xC\
+  C<6>000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>gg\
+  z<8>ye5<6>asa<2>dhh
+  }
+
+mand893           { 
+  reset=1920 type=mandel
+  center-mag=-0.75326003137330900/-0.05000425281709783/2553.317/1/-52.499
+  params=0.25/0.25 float=y maxiter=2048
+  colors=000VA0<10>QA0QA0PA0OB1<13>AYK8_M9_M<14>WWOXWOYXO<13>qhP<15>FLe<3>\
+  LQc930<21>TH7UI8TG6SE4RC2PA0<15>m60<15>000<14>N90PA0OA0<14>000<11>K70L80\
+  N90PA0QB0<14>eW4<15>00P<15>uXP<14>YC2WA0WA0WA0
+  }
+
+mand894           { 
+  reset=1920 type=mandel
+  corners=-0.7538311080653/-0.7538139906853/-0.06470525162911/-0.064709775\
+  76357/-0.7538176544548/-0.06471263211501 params=0.7/0.7 float=y
+  maxiter=1024
+  colors=zzzNfY<2>3gl<6>jTd<2>jRkjQhkPp<3>lLz<5>wbEye5yb5<7>xCC<6>000<8>pl\
+  4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8>ye5<6>as\
+  a<7>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6>zzz<7>00\
+  0<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<5>3NU2IY1Ea09f8Fa<5>ws8<5>qm5pl4ok3ni2oi\
+  2<5>ye5<4>UfT
+  }
+
+mand902           { 
+  reset=1920 type=mandel 
+  corners=-0.75237359196/-0.75222141419/-0.041644461366/-0.041530328032
+  params=1.875/0.225 float=y maxiter=2560
+  colors=zzm210<6>210210212<13>1CV0DY2EY<14>cUN<14>DMCBLBBLB<14>a24c03b05<\
+  14>F8c<14>UNTVPSXRTZUUQH7<33>QH7<8>016<14>DP6ER5ER5<14>ER5EQ5DO5<12>1350\
+  16116<13>OF2QG1QG1<14>QG1PG1NF1<12>421210210<5>210
+  }
+
+mand906           { 
+  reset=1920 type=mandel 
+  corners=-1.2522592512/-1.2489202541/-0.011595010812/-0.010082489268/-1.2\
+  517832226/-0.012229715654 params=2.7189/0.0373 float=y maxiter=5160
+  colors=000<30>RJ7SJ7UK7<12>oQ8qR9qR9<14>rG3<6>SDF<3>N3JL0KL1KM2KN3KO4J<1\
+  2>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<2>BB8<46>6Ms5Nu6Kr<4>A\
+  5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<2>WPB<15>000
+  }
+
+mand907           { 
+  reset=1920 type=mandel
+  center-mag=-1.25264338144598600/-0.02792255403580066/650/1/27.501
+  params=2.71828182845905/0.0375 float=y maxiter=5160
+  colors=AKAAKAkZb<6>zzz<15>000<14>000AJA<14>000<15>zzz<11>O_O<12>LBLL9LL7\
+  LK5KK5KK5K<11>O5GO5GP4FQ3ER3DS2CU1A<15>AKA<15>z_C<14>X4SU1UT1T<14>000<15\
+  >cc3<2>`X8ZU9ZT9<11>jEIkDIlCJmAKlAKkBK<10>YKNXLOWMOUNPULO<7>U7EU5DU3CU1A\
+  W4DY8G<4>gSX
+  }
+
+mand908           { 
+  reset=1920 type=mandel
+  center-mag=-1.25045672531938700/+0.00866010554339112/1027.158/1/-152.5
+  params=2.71828182845905/-0.034159 float=y maxiter=3200
+  colors=0008G88H88I8<6>5C54B4494<6>121000122<5>8FH000000<37>TTTUUUUTT<13>\
+  H22G00H00<14>e06<14>MIJKKKKKK<13>HCCGBBFBC<13>11S00U10T<13>I03K11L33<12>\
+  RQQSSSRRR<13>222000001<14>00S00U10U<13>I0LK0KK1K<25>9G9
+  }
+
+mand910           { 
+  reset=1920 type=mandel 
+  center-mag=-0.75049486648588490/-0.02334365451419988/425/1/-22.5
+  params=0.7005/0.801 float=y maxiter=5120
+  colors=zzz8G4<4>9J4AK5AJ5<13>121000111<13>NNNPPPPPP<14>PPPPPPPOOPNN<11>T\
+  ECUDBTDB<13>6C54B44B4<14>800800911<12>J77K88K88K99<12>KJJKKKKKJ<13>TK2UK\
+  0TJ0<14>000<15>mc0<15>000<15>00Z<15>zzz<14>492<8>7F3
+  }
+
+mand909           { 
+  reset=1920 type=mandel 
+  corners=-0.756652004/-0.746652004/-0.05197685789/-0.04447685789
+  params=1.756/0.37253 float=y maxiter=5120
+  colors=z_C000<12>000<15>zB0<15>0fz<15>zR0wR3tQ7uXB<10>000<18>vt3<13>yaBz\
+  _CxYE<13>X4pU1sT1p<14>000<15>vu3<15>0fz<15>zR0<15>U1s<14>wA4zB0zC0<14>z_\
+  C<15>000000
+  }
+
+mand911           {
+  reset=1920 type=mandel 
+  center-mag=-0.75021803965500660/-0.02261748679618117/670.1245/1/94.999
+  params=2.2/0.066 float=y maxiter=5120
+  colors=000<13>SSSUUUUTT<14>OA9<3>AEA<15>zz4<15>A00<14>SSSUUUUTT<13>LCC<1\
+  2>zzzxxw<14>QJ6NG2NG5<13>BBjAAmBBk<13>PSHQUERTE<14>k34<15>006<14>9SsAUwA\
+  Uu<13>HJLIIIKKK<15>zzz<13>L8W
+  }
+
+mand914            {
+  reset=1920 type=mandel
+  center-mag=+0.23839257086998970/-0.51369003911342900/1550.388
+  params=0.6/1.5 float=y maxiter=2400
+  colors=000<15>WUM<4>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<\
+  3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM\
+  2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvc\
+  svc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5cB5`C6Z<15>000
+  }
+
+mand915           { 
+  reset=1920 type=mandel 
+  corners=-0.7568240564/-0.7453217619/0.02356338612/0.01531940805/-0.74872\
+  61209/0.01276613879 params=2.1/0.066 float=y maxiter=6400
+  colors=000000220<29>`f0ad0<7>kNVlKZlIb<5>e4yd2ub0qa0m<12>NU0MW0<10>9ue8u\
+  i<3>3lw<2>0el0bi1`e<10>CB0D90<2>H2BI0FJ0I<10>UQv<11>frFgtBgv7fv3et0dr0<1\
+  5>OGu<5>I2_H0XF0T<7>7J06M0<5>0_L0bP1dS<7>8xt9xq<14>NO0OM0<8>W0VX0Z<5>bFr\
+  <15>Pq0Ot0Nv3My7LyA<12>9Uq<7>2AR
+  }
+
+mand916           { 
+  reset=1920 type=mandel 
+  corners=-0.7539308027/-0.7492578059/0.01373293142/0.0196861811/-0.755106\
+  0837/0.01529997274 params=2.1/0.066 float=y maxiter=6400
+  colors=000000310<10>L80N90PA0QB0RC0SE0<12>eW4<15>00P<15>uXP<14>YC2WA0WA0\
+  <12>QA0QA0PA0OB1<13>AYK8_M9_M<14>WWOXWOYXO<13>qhP<14>INcFLeFLd<29>OB2PA0\
+  QA0<14>m60<15>000<14>N90PA0OA0<14>000
+  }
+
+mand923           {  
+  reset=1920 type=mandel
+  corners=-0.75787524319/-0.75469560837/0.077884086762/0.075605164105/-0.7\
+  5563669178/0.07489935155 params=2.05/0.041 float=y maxiter=5160
+  colors=zzzbabEE1<30>EE1jTfjShjRkjQhkPp<2>lMxlLznOr<4>wbEye5yb5<7>xCC<6>0\
+  00<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8>y\
+  e5<6>asa<7>iQtkMwkRw<5>gzz<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6>z\
+  zz<7>000<6>MMM<5>jGGoFFsEExCCqHC<5>6l6<4>4RQ3NU2IY1Ea09f<5>nlD
+  }
+
+mand924           {  
+  reset=1920 type=mandel
+  corners=-1.251801713/-1.255502129/0.0390188699/0.0131159621/-1.240700467\
+  /0.0242172082 params=2.71828182845905/-0.041 float=y maxiter=5160
+  colors=000<13>000000204<14>U1s<15>zB0<15>0fz<15>zR0<15>zR0zS0zU0<13>vu3<\
+  15>000000<14>U1s<14>2cy0fz0dw<14>000<15>00z<15>vu3<12>yX1yV1yT1zR0zQ0zP0\
+  <13>zB0<15>000
+  }
+
+mand925           {  
+  reset=1920 type=mandel 
+  corners=-1.2483160172/-1.2517823581/0.013937467987/0.012546122897/-1.248\
+  8960543/0.014710850766 params=2.71828182845905/-0.041 float=y
+  maxiter=4096
+  colors=000KKK500<12>`00c00d44<13>zzz<15>c00<14>300<15>lT7<17>pb_qb`qcbrd\
+  dpcc<4>eYVcXUaWS_VRXTP<6>ILDFJBDI9AG78F5<2>0A0<2>030000003<14>00c<15>zzz\
+  <15>00c<14>003000022<14>0cc<15>zzz<15>0cc<15>000
+  }
+
+mand926           {  
+  reset=1920 type=mandel 
+  corners=-1.249248404/-1.251612084/0.01005523052/0.008282470522
+  params=2.71828182845905/-0.035 float=y maxiter=5120
+  colors=000KKK500<12>`00c00d44<13>zzz<15>c00<14>300<15>lT7<15>paXpaYpb_qb\
+  `qcbrdd<11>TRMRQKOOIMNGKMF<6>3C20A0080<2>000<15>00c<15>zzz<15>00c<14>003\
+  000022<14>0cc<15>zzz<15>0cc<15>000
+  }
+
+mand928           {  
+  reset=1920 type=mandel 
+  corners=-1.1156023805/-1.11533437842/0.223354644814/0.22302802403/-1.115\
+  34912178/0.223016966515 params=0.1233/-0.23133 float=y maxiter=2048
+  colors=000<29>EKEFLFFLFFLF<21>FLFEKECJC<4>2D20B00700403444645856A67D89FA\
+  AHDBJHCMKDOPDQUESY<4>Gby<3>FVcESYDQUDOPCMKBJHAHD9FA7D86A6585<30>58558558\
+  7<14>0Dd<12>0AG0AE09C08A<13>8B99B9ACA<13>_ZOa`PbaPdbP<12>xuNzwMytM<14>c6\
+  7<31>000
+  }
+
+mand929           {  
+  reset=1920 type=mandel 
+  corners=-1.115592851084/-1.115556402802/0.2231517096749/0.2231072892482/\
+  -1.115558407898/0.2231057854262 params=0.1233/-0.23133 float=y
+  maxiter=2560
+  colors=000<62>0B00700403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcE\
+  SYDQUDOPCMKBJHAHD9FA7D86A6585<30>585585587<14>0Dd<12>0AG0AE09C08A<13>8B9\
+  9B9ACA<6>NOHPQJRSM<12>tttwwwwwu<13>ywPzwMytM<14>c67<23>000
+  }
+

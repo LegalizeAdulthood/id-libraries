@@ -1,0 +1,71 @@
+;Kim Best                                  *************************
+;                                          *      Origamist        *
+;Rocky Mountain Cancer Data System         *  Are good with thier  *
+;420 Chipeta Way #120                      *        Hands          *
+;Salt Lake City, Utah  84108               *************************
+;
+
+log2sqr            { ; A Section of the Mandelbrot set for the formula
+                     ; z  =  log(z) ^ sqr(z)
+  reset=1821 type=formula formulafile=kim.frm formulaname=mfn2fn
+  function=log/sqr
+  corners=2.6266707454/2.6273926625/0.35959516412/0.35935878535/2.62704409\
+  74/0.35909736147 params=0/0/100 float=y maxiter=500 inside=0
+  colors=mU0a06<27>c00c00b00<26>20K00L00M<28>00u00w00w<45>T0VU0UU0UU0U<114\
+  >a06
+  }
+
+sin2sqr            { ; z1 = sin(z0) ^ sqr(z0)
+  reset=1821 type=formula formulafile=kim.frm formulaname=mtofn
+  function=sin/sqr
+  corners=1.336035534/1.346864405/0.7162926354/0.7085313265/1.343659361/0.\
+  7061275462 params=0/0/100 float=y maxiter=1000 inside=0
+  colors=000z0z<7>z00<5>zz0<7>0z0<7>0zz<7>00z<7>m0m<7>m00<7>mm0<7>0m0<7>0m\
+  m<7>00m<7>c0c<7>c00<7>cc0<7>0c0<7>0cc<7>00c<7>U0U<7>U00<7>UU0<7>0U0<7>0U\
+  U<6>04U00U20T<6>K0K<6>K03K00K20<5>KH0KK0IK0<6>0K0<6>0KH0KK0IK<6>00K<6>80\
+  CA0AD0D<13>w0wjWr
+  }
+
+sin2sqr2           { ; z1 = sin(z0) ^ sqr(z0)
+  reset=1821 type=formula formulafile=kim.frm formulaname=mtofn
+  function=sin/sqr
+  corners=1.3414287342/1.343201919/0.7147275786/0.71510027391/1.3418881868\
+  /0.71411497597 params=0/0/100 float=y maxiter=1000 inside=0
+  colors=CCCcK0<44>rrXssYssW<8>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>\
+  ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<6>Cs\
+  c
+  }
+
+Maelstrom          { ; z = sin(z) ^ sinh(z)
+                     ; Look at the wierd junk entering the whirlpool
+  reset=1821 type=formula formulafile=kim.frm formulaname=mfn2fn
+  function=sin/sinh
+  corners=0.542924405/0.5484006094/3.774413923/3.775816907/0.5442224063/3.\
+  772683255 params=0/0/100 float=y maxiter=500 inside=0
+  colors=CCC00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15\
+  >zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6\
+  >z00<15>zz0<7>0z0<6>0zz<15>04z
+  }
+
+Splat!             { ;  
+                     ;  
+  reset=1821 type=formula formulafile=kim.frm formulaname=mfn2fn
+  function=sin/cotan passes=1
+  corners=5.6526622/5.7742505/-8.55473708/-8.46354582 params=0/0/100
+  float=y maxiter=500 inside=0 outside=real
+  colors=000z0z<7>z00<5>zz0<7>0z0<7>0zz<7>00z<7>m0m<7>m00<7>mm0<7>0m0<7>0m\
+  m<7>00m<7>c0c<7>c00<7>cc0<7>0c0<7>0cc<7>00c<7>U0U<7>U00<7>UU0<7>0U0<7>0U\
+  U<6>04U00U20T<6>K0K<6>K03K00K20<5>KH0KK0IK0<6>0K0<6>0KH0KK0IK<6>00K<6>80\
+  CA0AD0D<13>w0wjWr
+  }
+
+Vines              { ; Bizarre Alien Plant life from a
+                     ; B rate Sci-Fi horror flick
+  reset=1821 type=formula formulafile=kim.frm formulaname=mfn2fn
+  function=sin/log passes=1
+  corners=-10.032862/-9.1796235/0.5694353/-0.5682166/-9.1796235/-0.5682166
+  params=0/0/100 float=y maxiter=500 inside=253 outside=mult
+  colors=0000U0<13>0z0<46>02u00w00w<46>U0UU0UT0V<44>10v00w01v<45>0x20z00z0\
+  <43>0U0m00Y3uZ2t
+  }
+
