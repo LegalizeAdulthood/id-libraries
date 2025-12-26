@@ -175,7 +175,7 @@ PixNwt1/ {
   ;SOURCE: crazynwt.frm
 }
 
-N5fn1[fn2] {; 
+N5fn1_fn2 {; 
   z = pixel+1/fn1(p2 * fn2(pixel-p1)) , Root = 1:
   z = (4 * z^5 + Root) / (5 * z^4);
   0.001 <= |z^5 - Root|

@@ -1,0 +1,36 @@
+;
+;	Mandelbrot fractals 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+
+m001               { ; mandel leaf 1
+                     ; by Karl Geigl, CIS 100327,156
+  reset=1720 type=mandel passes=t
+  corners=-0.12173414/0.31858586/-0.15661816/0.17362184 float=y
+  inside=maxiter outside=summ logmap=yes invert=0.0748145/0/0
+  symmetry=none
+  colors=0002jo<13>144tjE<18>3310QP<29>111chw<29>33422232F<5>113oY7<2>D921\
+  JI<16>2joBPA<12>LLBkoo<11>WTP5FA<20>1114I2<11>121I_0<10>231Tw3<20>231A7A\
+  <12>111WY6<12>331yqL<2>GE6
+  }
+
+m002               { ; mandel leaf 2
+                     ; by Karl Geigl, CIS 100327,156
+  reset type=mandel passes=t
+  corners=-1.410656/2.445344/-1.460015/1.431985 inside=bof60
+  potential=111/99/44 invert=0.5/0/0
+  colors=0002jo<13>144tjE<18>3310QP<29>111chw<29>33422232F<5>113oY7<2>D921\
+  JI<16>2joBPA<12>LLBkoo<11>WTP5FA<20>1114I2<11>121I_0<10>231Tw3<20>231A7A\
+  <12>111WY6<12>331yqL<2>GE6
+  }
+
+m003               { ; terraced mandel
+                     ; by Karl Geigl, CIS 100327,156
+  reset=1720 type=mandel corners=-2.541777/1.458223/-1.498898/1.501102
+  float=y maxiter=5555 bailout=33 inside=bof60 outside=real
+  symmetry=none
+  colors=000VGC<45>tU2MCF<67>RRSMDF<24>ZtQMCF<51>XSfMCF<42>ENNMCFENN<13>BQ\
+  Q
+  }
+

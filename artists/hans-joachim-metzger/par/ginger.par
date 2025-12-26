@@ -1,0 +1,35 @@
+; 
+; Title: The Ghost of the Gingerbreadman
+; 
+; Categories: 4. Oddest Fractal
+;             8. Best Animal or Human Shape
+; 
+; Description: The stylized and distorted ghost of the Gingerbreadman.
+;              Image made of two layers created with Fractint (pars and
+;              formula included.)
+
+Ginger-1          {
+  reset=1960 type=formula formulafile=Ginger.frm
+  formulaname=Ginger passes=1
+  center-mag=1.6419/5.11571/0.06462646/1.3537/-134.999/-23.43
+  params=1e-006/0 float=y maxiter=900 bailout=128 inside=0 decomp=256
+  periodicity=0
+  colors=000aeo<12>flsgmtfmt<14>SZiQYhQXg<2>NUdMTcMTcMSb<6>LLXKKXKKWKKW<29\
+  >F9QE8PE9Q<12>DObDPcEQd<8>E`mFboFao<3>CXkCWjCWj<54>16N05M06N<14>0Na0Pc0P\
+  c<31>AFQBEPBEQCFS<15>JNaJNbKOcLPc<9>X`kYalZbm_cm`dn
+  }
+
+Ginger-2           {
+  reset=1960 type=formula formulafile=Ginger.frm formulaname=Ginger
+  passes=1 center-mag=3.85051/3.78682/0.08748752/1/-134.998
+  params=1e-006/0 float=y maxiter=2 bailout=128 inside=startrail
+  outside=atan periodicity=0
+  colors=000iyG<5>Kw_<5>Ets<6>000B15<233>000
+  }
+
+Ginger-3           { 
+  reset=1960 type=formula formulafile=Ginger.frm formulaname=Ginger
+  center-mag=3.85051/3.78682/0.08748752/1/-134.998 params=1e-006/0
+  float=y maxiter=31 bailout=128 inside=0 periodicity=0
+  colors=000<4>000OwX000<21>000h6I000<223>000
+  }

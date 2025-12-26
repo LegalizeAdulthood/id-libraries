@@ -1,0 +1,136 @@
+;
+;	Fractals like broken glass 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+g01                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=flip passes=b
+  corners=-5.665402/3.422598/-4.169269/2.646731 params=1/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000WWWz000z0zz000zz0z0zzzzz00j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000\
+  WW0W0WWFNF<5>zNFFVF<5>zVFFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFN\
+  N<5>zNNFVN<5>zVNFbN<5>zbNFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFV\
+  V<5>zVVFbV<5>zbVFjV<5>zjVFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFb\
+  b<5>zbbFjb<5>zjbFrb<5>zrbFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<5>zbjFj\
+  j<5>zjjFrj<4>rrjzywccd
+  }
+
+g02                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=conj passes=b
+  corners=-5.665402/3.422598/-4.169269/2.646731 params=1/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000J_B<2>Eg9ZEH<9>UF9ZNH<3>bzGZEH<14>eR6WEL<7>88pZPUY`g_EI<6>g9QZ\
+  LH<5>XzFWIL<5>DglXKI<5>KsUdPH<2>yxHYFPXGXWIeZGL<9>d`z`EI<7>uBUiXIuoJZFI<\
+  13>_bW_IH<6>imBXJH<7>EzLXGH<10>8kAZGH<9>b_DrhmNZNBtUYNO<3>SwrZHJ<4>`YUaa\
+  X`HH<9>tlBeCIl9JTHR<2>8TuZGJ<10>agh06iXEH<5>FJG_HH<10>uoMVJK<4>Bj__GH7pb\
+  3vf<4>3dkkWPlYQn`RWDI<3>I5QhrCYGH<6>LYC
+  }
+
+g03                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=sin passes=b
+  corners=-5.665402/3.422598/-4.169269/2.646731 params=1/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=0004OO000000000waI<15>q7C<16>B`a9ab8`c<27>3Un3Un5Wo<12>Llx`8l<7>u\
+  mz<11>HRGEPCDOHDONCNS<3>sLf<28>Lqn<13>0R7KHA<7>Cx_<7>107<2>k2J<19>X8tX8u\
+  Y9t<15>cEsVGjMHa<18>BiT<20>4PO
+  }
+
+g04                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=cosxx passes=b
+  corners=-5.665402/3.422598/-4.169269/2.646731 params=1/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=zzzzM3zM0yL0<19>EE0<13>880870770670<14>00000010010031031041042062\
+  0620830830930940B40B40D40D50E50E50G60G60I60<2>J70K80L80M80N90O90O90Q90RA\
+  0RA0TB0TB0VB0VB0WC0WC0YC0YD0_D0_D0`E0`E0bE0bF0dF0dF0eG0eG0gG0<3>jI0jI0kI\
+  0lI0mJ0<2>pK0pK0rK0<5>yL0zL0zM0<4>zM6zN8zN8<5>zOFzOGzOHzOJzOJzPK<2>zPOzP\
+  PzPPzQQzQQzQQzRR<4>zTTzTTzUUzVVzVVzVVzWW<7>zZZzZZz__z``<9>zddzddzddzddze\
+  e<6>zggzggxhhxhhvhhvhitiitiiriiriipjjpjjnjjmkklkllkllkllkkmiioiiohhqhhrg\
+  gtfgueeveewddzcc<4>z__z__zZZzYZzYYzXXzWV<3>zTTzTTzRR<2>zPPzPOzPM<6>zM5
+  }
+
+g05                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=log passes=b
+  corners=-5.665402/3.422598/-4.169269/2.646731 params=2/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000100<4>000zk0<247>100
+  }
+
+g06                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=sqr passes=b
+  corners=-6.404726/2.683274/-4.169269/2.646731 params=2/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000664<5>OOJRRLUUNWWPZZR<3>hhZjj`llanncppd<3>uuiwwjxxjxxkyyl<2>zz\
+  lzzmzzlzzlzzl<2>xxjwwjuui<2>qqeppdnnclla<6>WWPUUNRRLOOJ<7>000<8>HD2JE2LF\
+  2MG3OI3<8>_Q4`R4`S5<2>bT5cT5cU5cU5cU5dU5<3>cT5bT5bT5aS5`S5<2>ZQ4YP4WO4<3\
+  >RK3QJ3OI3MG3<2>HD2FB2DA1B81971<4>000<8>HDDJEELFFMGGOII<8>_QQ`RR`SS<2>bT\
+  TcTTcUUcUUcUUdUU<3>cTTbTTbTTaSS`SS<2>ZQQYPPWOO<3>RKKQJJOIIMGG<2>HDDFBBDA\
+  AB88977<3>211132<6>BOJDRLEUNFWPGZR<3>LhZMj`NlaOncPpd<3>SuiSwjTxjTxkTyl<2\
+  >UzlUzmUzlUzlUzl<2>TxjSwjSui<2>QqePpdOncNla<6>FWPEUNDRLBOJ<7>000332
+  }
+
+g07                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=recip passes=b
+  corners=-6.404726/2.683274/-4.169269/2.646731 params=2/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=072hf0<4>zx0570<10>Xk0_o0as0dv0fz0270<10>Gk0Ho0Is0Jv0Lz00B4<9>0kI\
+  0oJ0sK0vM0zN075<10>0kZ0oa0sc0vf0zi067<10>0gk0ko0ns0rv0uz047<10>0Rk0To0Vs\
+  0Yv0_z017<10>0Ak0Bo0Cs0Cv0Dz107<10>60k70o70s80v80z307<10>N0kP0oR0sT0vV0z\
+  607<10>d0kg0oj0sm0vp0z706<10>k0bo0es0hv0kz0n703<10>k0Lo0Ns0Pv0Rz0S700<10\
+  >k04o05s05v05z06710<10>kC0oD0sE0vF0zG0740<10>kT0oV0sY0v_0za0770<8>db0
+  }
+
+g08                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=ident passes=b
+  corners=-3.686288/5.401712/-4.169269/2.646731 params=-1/2 float=y
+  maxiter=8 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000zr0zt0A1r81s71sQL`wn8hdIoxI<6>yw2oot<21>zw2cmWorGPJb<9>wt3Z01<\
+  6>wp0e43<7>xq0MG7<11>wt0wro<9>zw4d9Q<28>zv0mOl<7>ys540U<29>yv0MAT<11>wt2\
+  qsp<12>zw3MZz<4>tsACZt<9>vu5lufCoHTrBiu5zpG<8>zw1NhmnXd<5>yt5s4D<24>yp1
+  }
+
+g09                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=cos passes=b
+  corners=-3.686288/5.401712/-4.169269/2.646731 params=-1/2 float=y
+  maxiter=9 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000ieH<3>wt3Z01<6>wp0e43<7>xq0MG7<11>wt0wro<9>zw4d9Q<28>zv0mOl<7>\
+  ys540U<29>yv0MAT<11>wt2qsp<12>zw3MZz<4>tsACZt<9>vu5lufCoHTrBiu5zpG<8>zw1\
+  NhmnXd<5>yt5s4D<26>zt0A1r81s71sQL`wn8hdIoxI<6>yw2oot<21>zw2cmWorGPJb<4>f\
+  aL
+  }
+
+g10                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=tan passes=b
+  corners=-6.370603/2.717397/-4.169269/2.646731 params=2/2 float=y
+  maxiter=22 bailout=22 fillcolor=222 inside=epsiloncross decomp=22
+  colors=000kg2<3>wt0wro<9>zw4d9Q<28>zv0mOl<7>ys540U<29>yv0MAT<11>wt2qsp<1\
+  2>zw3MZz<4>tsACZt<9>vu5lufCoHTrBiu5zpG<8>zw1NhmnXd<5>yt5s4D<26>zt0A1r81s\
+  71sQL`wn8hdIoxI<6>yw2oot<21>zw2cmWorGPJb<9>wt3Z01<6>wp0e43<7>xq0MG7<6>hc\
+  3
+  }
+
+g11                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=tan passes=b
+  corners=-2.402399/2.695969/2.690976/-4.106848/2.695969/-4.106848
+  params=2/2 float=y maxiter=7 bailout=22 fillcolor=222
+  inside=epsiloncross decomp=22
+  colors=000kg2<3>wt0wro<9>zw4d9Q<28>zv0mOl<7>ys540U<29>yv0MAT<11>wt2qsp<1\
+  2>zw3MZz<4>tsACZt<9>vu5lufCoHTrBiu5zpG<8>zw1NhmnXd<5>yt5s4D<26>zt0A1r81s\
+  71sQL`wn8hdIoxI<6>yw2oot<21>zw2cmWorGPJb<9>wt3Z01<6>wp0e43<7>xq0MG7<6>hc\
+  3
+  }
+
+g12                { ; Karl Geigl, 100327,156
+  reset=1710 type=mandelfn function=tanh passes=b
+  corners=-3.415263/1.683105/2.7165/-4.081324/1.683105/-4.081324
+  params=2/2 float=y maxiter=7 bailout=22 fillcolor=222
+  inside=epsiloncross decomp=22
+  colors=B0Q000<2>kkk<14>z_C<3>sX1qWz<8>cQdaPaaPd<6>`Px`P0<4>`PE`PHaNE<6>e\
+  C0fAy<4>i2oj1mixi<2>foYelGdhGceMbbIa_0`X0_G6ZG2YNkXKkXHqZNk`G5bY0dbKfhGh\
+  mYjsdlxln3sp8zrE6<3>z__<9>t50t2xszt<2>rqj<13>FnYDnYCjGBgGAdN9aK8ZG7G06G9\
+  5P64M23Jk20k10s09oz6lz3W48p80kCI1GN7KG0PWKT`GXeW<3>mxtq2zu75zCC<2>v30u0w\
+  txs<5>mfWlcGk`OjYKiGGkZLlbGmfGnj_<3>ryrs2wt61<4>zQQ<2>mE4iAxe6q`2iXyb<2>\
+  LnIGj0Cf38bk4Zp0WWzGWyGWxGWwGkvPk<6>oGmn0mm0mm0nrGsvJkzM13P67G0CW0GZKKaO\
+  OdGSgX<4>mxtn1xo40<2>pEAG300110U000G020U3000120E300000<2>kkk000<2>kkk000\
+  <2>kkk
+  }
+

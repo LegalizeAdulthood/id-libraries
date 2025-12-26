@@ -1,0 +1,450 @@
+; GUENZEL.par
+; greeting to all fractal folks!
+
+
+aaadeals           { ; eli formula
+                     ; S.G.Guenzel, 100543,1216
+  reset=1821 type=formula formulafile=eli.frm formulaname=aaa-deals
+  corners=-31.99/31.99/-25.74627/22.26968 maxiter=1500 inside=0
+  outside=summ logmap=yes
+  colors=000__p<8>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`0\
+  0c00d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<14>030000002<14>\
+  00c<15>zzz<5>ccr
+  }
+
+aa_c-to-z          { ; eli formula
+                     ; S.G.Guenzel, 100543,1216
+  reset=1821 type=formula formulafile=eli.frm formulaname=aa-z-to-c
+  corners=-0.9206497/0.1138615/-5.4752362/-4.6983713 maxiter=32000
+  outside=mult decomp=256
+  colors=WWWyv8yw7zw5<17>z0w<5>y3ox3nx4lx5j<12>rGNrHLqIJpJH<7>lT5kU4jV3iW2\
+  iX2hZ1<7>bg0ah0ai1<3>Ym4Yn5Xo7<2>VqBUrCTsESsG<6>NwTMxVLxWKxY<5>GyiFzkFyl\
+  <5>BxuAxvAxw9wx9wx8vy<5>5sz5rz4qz4pz3oy<3>2lv2ku2js<2>1go1fn0el0cj<16>0L\
+  F0JE1IC1HB1G9<4>2B33A2392391<4>650640730730820821<3>A04B05C07<2>D0BE0CF0\
+  EG0G<7>L0VM0WN1YO1_O2aP2c<3>S5kT5lU6nV7oV8q<4>ZCw_Dx`ExaFy<7>gOzgPzhQy<3\
+  >kVvlWulXs<2>n`ooanoblpcj<7>tlWumVunTuoR<5>xsFxtExuCyuByv9
+  }
+
+aa-diamand         { ; eli formula
+                     ; S.G.Guenzel, 100543,1216
+  reset=1821 type=formula formulafile=eli.frm formulaname=aa-diamand
+  corners=-0.894978881/-0.810466766/0.329949856/0.393404722 float=y
+  maxiter=500 inside=0 outside=real
+  colors=000d00<29>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>\
+  zV1zU0zU0zT0<28>z10z00z00y00<27>e00
+  }
+
+barn3m_a           { ; 16.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=barnsleym3 corners=-2/1.999996/-1.49998/1.5
+  colors=WWWNZk<5>UaUWaRXaOZbK_bI`bF<4>ed4ee2fe1<3>eg0eg0eg1dh2ch3ch4ai6`i\
+  8<2>XjGWjIUkLSkO<6>GmiEnlDnnCnpAos9ou9ov7px7py<3>6qz6qz6ry<3>8st9srAso<1\
+  1>QvHSvESuF<40>W2xX0zX0zX0yY0x<3>`0qa0oc0l<2>g0dh0aj0Y<4>r0Js0Gt1Du1Bv19\
+  w17x15y13z12z11<2>z20
+  }
+
+CMPLXMARKSMAND     { ; 16.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=cmplxmarksmand
+  corners=-0.996037377/-0.974633288/0.294185766/0.310249299
+  params=0/0/1 float=y maxiter=400 inside=maxiter outside=real
+  colors=CCC000ECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
+  ssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<6>CSsCUsEUq<\
+  20>z_0k00
+  }
+
+FN*Z+Z             { ; (c) 16.10.1994 by S.G.Guenzel
+  reset=1821 type=fn*z+z function=tan
+  corners=0.93016273/1.8032556/-0.51284492/0.14223707
+  params=-0.187/0.40000000000000002/1/-0.40000000000000002 maxiter=250
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmw00000j0j0jj0j00j0j0jjkkkkrkdmw0i00e\
+  00Y00T00L00H0zzn<2>zzCznz<4>zn0zaz<4>za0zPz<4>zP0zCz<4>zC0z0n<2>z0Cnzz<4\
+  >nz0nnz<4>nn0naz<4>na0nPz<4>nP0nCz<4>nC0n0z<4>n00azz<4>az0anz<4>an0aaz<4\
+  >aa0aPz<4>aP0aCz<4>aC0a0z<4>a00Pzz<4>Pz0Pnz<4>Pn0Paz<4>Pa0PPz<4>PP0PCz<4\
+  >PC0P0z<4>P00Czz<4>Cz0Cnz<4>Cn0Caz<4>Ca0CPz<4>CP0CCz<4>CC0C0z<4>C000zn<2\
+  >0zC0nz<4>0n00az<4>0a00Pz<4>0P00Cz<4>0C000n<2>00CvvvrrriiieeeYYYTTTLLLHH\
+  H888444v00r00zywccdWWWz000z0
+  }
+
+Fract001           { ; (c) S.G.Guenzel 15.10.94
+  reset=1821 type=julia
+  corners=-0.00716253911809/-0.00710516734923/-0.000348540822438/-0.000316\
+  924535022 params=-0.745/-0.11 float=y maxiter=3000 bailout=300
+  inside=88
+  colors=000zG0<22>zU0gMO<12>VR_TR`TR`zzzURazzzVRazzzWRazzz000zzz000zz0zzz\
+  0z0LLLz00zA0zL0zV0zcK<5>ZRkUUc<6>zz0hhhmmmssszzzzz0<6>z0Gz00<3>zz0nx6buC\
+  P0ZFpP<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh\
+  <3>zzh<3>hzh<3>hzz<2>hlzz00w03000o0B<7>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZ\
+  mzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlL\
+  ccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcRKK<3>zkk\
+  <7>z00<25>zF0
+  }
+
+FRACT002           { ; Stars  (C) S.G.Guenzel
+  reset=1821 type=manfn+zsqrd function=exp
+  corners=-0.616550999/-0.561511912/0.677782138/0.719088366 float=y
+  maxiter=10000 inside=zmag distest=33/200 periodicity=0
+  colors=CCCC_s<8>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<1\
+  9>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>E\
+  CsCCsCEs<9>CYs
+  }
+
+FRACT005           { ; (C) 16.10.94 S.G.Guenzel
+  reset=1821 type=manfn+zsqrd function=cosxx
+  corners=-0.5765852914/-0.5737933574/0.6990616156/0.7011589808
+  float=y inside=maxiter distest=12/71
+  colors=000zjz<10>z0zzzz<14>0zzzzz<14>zz0zzz<14>W0zzzz<14>0Wzzzz<14>z0Wzz\
+  z<14>zW0zzz<14>00Wzzz<14>W00zzz<8>QhQ
+  }
+
+FRACT006           { ; (c) 16.10.94 S.G.Guenzel
+  reset=1821 type=complexnewton
+  corners=0.362565167/0.374248345/0.4597099597/0.4684809138
+  params=2.5/-1/0.5 float=y maxiter=2000 inside=bof60 periodicity=0
+  colors=000n0J<11>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3\
+  KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<13>MMiONkQPk<13>wwy\
+  zzzzwx<14>z0Nv0Mr0K
+  }
+
+FRACT007           { ; (c) 16.10.94 S.G.Guenzel
+  reset=1821 type=complexnewton
+  corners=0.36730467711/0.3680812715/0.46640538812/0.46698859367
+  params=2.5/-1/0.5 float=y maxiter=20000 inside=bof60 finattract=y
+  periodicity=0
+  colors=000zWf<7>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP\
+  <21>O3KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<13>MMiONkQPk<\
+  13>wwyzzzzwx<5>z_i
+  }
+
+frothy             { ; 16.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=frothybasin
+  corners=-0.86510196/-0.3489744/0.65058557/1.0378094 params=3
+  maxiter=300 inside=0 outside=3
+  colors=000000zb0<12>740310000`QV<12>423111000S8`<12>304101000OUY<10>5794\
+  56234111000zVW<12>733311000e3L<11>703502201000kmx<12>567223000_mj<12>465\
+  1220000OJ<11>043021011000ohh<12>655222000www<12>777333000jQU<12>52321100\
+  0i0w<12>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<14>000_mj<13>122
+  }
+
+fzpfnc_a           { ; 16.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=fractint.frm
+  formulaname=Fzpfncoh function=sin
+  corners=-1.6337422/-1.4350839/1.0000112/1.3040734
+  colors=WWW8K2AF1CA1E60H30K10M00P00R10U30X60ZA1<3>fV4g_5ic6if8ji9jjAjjCji\
+  EjgF<2>fXK<2>aHQ_CRX8TV4VS1X<2>K0`I2bF5c<2>8Jf6Og5Th3Yi2bi<2>0jj0jjjjj<2\
+  >hbi<3>bJf`EeY9dW5cT2bR0`<2>J1XG4VE8T<2>7MO5RM4XK2`J1dH0gF0iE0jC0jA0i91f\
+  81c63_5<3>AF1CA1E60H30K10M00P00R10U30X60ZA1<3>fV4g_5ic6if8ji9jjAjjCjiEjg\
+  F<2>fXK<2>aHQ_CRX8TV4VS1X<2>K0`I2bF5c<2>8Jf6Og5Th3Yi2bi<2>0jj0jj0jj<2>2b\
+  i<3>8JfAEeD9dF5cI2bK0`N0_Q0Y
+  }
+
+SGG006_2           { ; 25.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG006
+  corners=-31.99/31.99/-16.02636/31.99 maxiter=1000 inside=130
+  logmap=old decomp=256
+  colors=WWWc60<2>fF0fJ0gM0hQ0hT0iX0i_0<2>jf0jh0ji0jj0jj0jjjjij<2>jdjibji_\
+  j<5>fFjeCjd9jc6jc4jb2ja1j<2>Z0jY0jX1i<2>T8iSAiREi<4>LVhKYhJ`hIchGehFghEi\
+  h<2>BjgAjg9ig8gg7eg<2>5Yf4Vf3Rf<3>1Ee1Ae08e05d03d01d<2>00c00c01c02c04c<2\
+  >1Cb1Fb2Ja<4>5_`6b`7d`8f`9h_Ai_Aj_CjZDjZEiZ<2>HdYIbYJ_Y<5>QFWRCWT9VU6VV4\
+  VW2VX1U<2>_0T`0Ta1T<2>d8SeASeER<4>hVQiYQi`PjcPjePjgPjiO<2>jjNjjNjiNjgMje\
+  M<2>iYLhVLhRL<3>eEKeAJd8Jc5Jb3Ia1I<2>Z0HY0HX1HW2GV4G<2>RCFQFFPJF<4>J_DIb\
+  DHdDGfDFhCEiCDjCBjBAjBAiB<2>7dA6bA5_A<4>2J91F81C8198068047027017<2>00600\
+  6016<2>0851A51E5<3>3R44V45Y46`46c4<2>9i3Aj3Bj3Cj3Dj2<2>Ge2Ic2J`2<6>RE1SA\
+  1T81U51V31X11<2>_00`00a10b20c40
+  }
+
+SGG006_3           { ; 25.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG006
+  corners=-1.844976/2.032581/1.048573/3.959588 maxiter=1000 inside=130
+  logmap=old decomp=256
+  colors=000zrz<12>z0zzzz<14>0zzzzz<14>zz0zzz<14>W0zzzz<14>0Wzzzz<14>z0Wzz\
+  z<14>zW0zzz<14>00Wzzz<14>W00zzz<14>0W0zzz<14>W0Wzzz<14>0WWzzz<14>WW0zzz<\
+  13>00zzzz<14>z00zzz<14>0z0zzzzvz
+  }
+
+SGG006_4           { ; 25.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG006
+  corners=0.838612437/0.937148929/1.32657439/1.40058982 maxiter=1000
+  inside=130 logmap=old decomp=256
+  colors=000vHB<7>nKI000FzFVVVjjjzzzgMO<12>VR_TR`TR`zzzURazzzVRazzzWRazzz0\
+  00zzz000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z0KKK<3>___ccchhhmmmssszzzzz0<\
+  6>z0Gz00<3>zz0nx6buCP0ZFpP<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<\
+  2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlzz00w03000o0B<12>00z<15>zz0<8\
+  >EfH<2>zzz<5>jkqzzzdfm0zlZaj<5>IN`FKZAEO57C000<6>zkk<7>z00G00G40G8000z<1\
+  0>zc0<4>zY2000zV3<5>zN5000zL6zJ7zI7zG8<2>wHA
+  }
+
+SGG007_1             { ; (c) 26.10.1994 by S.G.Guenzel
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG007
+  corners=-0.365593/0.6353817/-0.37744838/0.37354088 maxiter=700
+  logmap=old decomp=256 colors=@default.map
+  }
+
+SGG007_2           { ; 26.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG007
+  corners=2.2271797/3.1497398/-3.0396878/-2.3466674 maxiter=700
+  logmap=old decomp=256
+  colors=000BUL<18>GYKGYKHZJIZJ<39>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGro\
+  FroErnDsmC<17>sECrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<2\
+  0>DCrCCsCEs<12>CcsCesChtCku<4>CzzCzz0KN<38>BUL
+  }
+
+SGG008             { ; 26.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG008
+  corners=-0.48269614/0.50079024/-0.0053978546/0.73269356 float=y
+  maxiter=700 inside=bof60 outside=mult decomp=256
+  colors=WWWJIv<3>K9wL7wL6w<3>N1xN0xO0y<2>P0yP0yP1yQ2z<2>R6zR8zSAzSCzTEz<1\
+  0>XgzXizYlzYnzYpz<2>_uz_wz_xz`yy<4>bzybzxbyx<2>dvxdtwdsweqweow<8>hTtiQsi\
+  NsiKsjIr<4>l7pl5pl4o<2>m1nm0nn0mn0mn0lo0l<2>p2jp3jp5ip7hq8h<4>rKerMdsPds\
+  Sc<6>ui_ulZunZupY<2>vuWvwVvxUwyU<4>wzQxzQxyPxxOxwN<5>ylJyjIygH<6>zPCzNBz\
+  KAzIAzF9<4>z55z44z23z13z12z01z00WWW0z0<2>0y30x30v4<4>0m80k90hA<2>0aC0ZD0\
+  WE0TE0RF<2>1JH1GI1EJ1CK<2>16M24N23N22O21P<4>30S30T31U<2>45W46X48X4AY<4>5\
+  M`6Oa6Ra6Ub<3>7dd7fe8if8kf8mg8pg<2>9uiAwjAxjAyk<4>CzmCznCyn<2>DvoDupEspE\
+  qq<3>FhrGfsGcsH`s<5>JLu
+  }
+
+SGG008_2           { ; (c) 26.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG008
+  corners=0.40652/7.035904/-6.33654/-1.353184 maxiter=450 inside=bof60
+  outside=mult decomp=256
+  colors=WWW0TE<3>1JH1GI1EJ1CK<2>16M24N23N22O21P<4>30S30T31U<2>45W46X48X4A\
+  Y<4>5M`6Oa6Ra6Ub<3>7dd7fe8if8kf8mg8pg<2>9uiAwjAxjAyk<4>CzmCznCyn<2>DvoDu\
+  pEspEqq<3>FhrGfsGcsH`s<7>JGvKDvKBwK9w<2>M4xM3xM2xN1xN0x<3>P0yP0yP1yQ2z<2\
+  >R6zR8zSAzSCzTEz<10>XgzXizYlzYnzYpz<2>_uz_wz_xz`yy<4>bzybzxbyx<2>dvxdtwd\
+  sweqweow<8>hTtiQsiNsiKsjIr<4>l7pl5pl4o<2>m1nm0nn0mn0mn0lo0l<2>p2jp3jp5ip\
+  7hq8h<4>rKerMdsPdsSc<6>ui_ulZunZupY<2>vuWvwVvxUwyU<4>wzQxzQxyPxxOxwN<5>y\
+  lJyjIygH<6>zPCzNBzKAzIAzF9<4>z55z44z23z13z12z01z00WWW0z0<2>0y30x30v4<4>0\
+  m80k90hA<4>0WE
+  }
+
+SGG009_1           { ; (c) 26.10.1994 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG009
+  corners=-2/1.999996/-1.49998/1.5 inside=bof60 outside=mult
+  colors=000000<15>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c\
+  00<14>300000020<14>0c0<5>NkN
+  }
+
+SGG010_1            { ; (c) 28.10.1994 by S.G.Guenzel
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG010 corners=-2/1.999996/-1.49998/1.5 inside=bof60
+  outside=mult colors=@default.map
+    }
+
+SGG001             { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG001 corners=-2/1.999996/-1.49998/1.5 inside=bof60
+  outside=real
+  colors=aMEUHD<7>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<6>hUDeRDdQDcPD<4>RCC\
+  EEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>Dql
+  }
+
+SGG001_1           { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG001
+  corners=0.17790604/0.39686924/0.56912166/0.73338199 inside=bof60
+  outside=real
+  colors=aMESSJ<9>200pdJ<5>zjF<6>hUDeRDdQDcPD<4>RCCEEE<13>kki<18>005332<17\
+  >zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>1\
+  4RC6QO8O<2>RCLSDKUFJVHI<7>zH0
+  }
+
+SGG002             { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG002 corners=-2/1.999996/-1.49998/1.5 inside=bof60
+  outside=real
+  colors=000Eiq<5>PevRdwRcw<3>O_ubaV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8\
+  >68Y59W7CU<5>MVHPYER`CUd9VdB<15>qtj<12>Dhl<2>vFj<2>kRV<18>UMm
+  }
+
+SGG002_1           { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG002
+  corners=0.076244354/0.28740269/-0.19457811/-0.036169529 inside=bof60
+  outside=real
+  colors=rjXJJJ<19>ppp<11>ZZZXXXVVVTTTRRR<3>LLLJJJHHHFFFEEE<7>000AUh<20>Id\
+  NJeLJfL<2>IjMHlNHlN<26>A_eAZeAZfAYfAYg9Xh<2>D8BF00I00<15>z00<10>M0AI0BG0\
+  BE0CA0D
+  }
+
+SGG003             { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG003
+  corners=-0.17512393/-0.174209297/-0.14100188/-0.140316129
+  maxiter=12000 inside=0
+  colors=aME337005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm\
+  <2>BghAdg9`e8Yd7Vb<7>14RC6QO8O<2>RCLSDKUFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19\
+  >Q`5Sa6R`6<16>2I6IIAZJEeQE<4>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>20\
+  0pdJ<5>zjF<6>hUDeRDdQDcPD<4>RCCEEE<13>kki<16>559
+  }
+
+SGG004             { ; Oct.1994
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG004
+  corners=-0.14271748/0.42813563/-1.4755367/-1.0472621 maxiter=600
+  inside=bof60 outside=real
+  colors=00012g00h<2>00r<15>000<15>r00<14>300<16>zuZ<11>AE9000006077044000\
+  <15>hhh<16>M3rK0sK0r<29>5FB5FA4F93F82G6<5>4Q44S44R4<12>2A229217115113100\
+  0<3>E3EH3HK5H<10>zWC<11>H8I200<3>200200201202<31>28a29b29c3Ae28f26f
+  }
+
+SGG004_1           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG004
+  corners=0.100020647/0.165874243/-1.07867426/-1.02925444 maxiter=600
+  inside=bof60 outside=real
+  colors=000A74<14>zuZ<11>AE9000006077044000<15>hhh<16>M3rK0sK0r<29>5FB5FA\
+  4F93F82G6<5>4Q44S44R4<12>2A2292171151131000<3>E3EH3HK5H<10>zWC<11>H8I200\
+  <3>200200201202<31>28a29b29c3Ae28f26f12g00h<2>00r<15>000<15>r00<14>30073\
+  2
+  }
+
+SGG004_2           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG004
+  corners=0.142184973/0.146941066/-1.05081314/-1.04724723 maxiter=800
+  inside=bof60 outside=imag
+  colors=0000OJ<11>043021011000ohh<12>655222000www<12>777333000jQU<12>5232\
+  11000i0w<12>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<14>000_mj<12>4\
+  65122000zb0<12>740310000`QV<12>423111000S8`<12>304101000OUY<10>579456234\
+  111000zVW<12>733311000e3L<11>703502201000kmx<12>567223000_mj<12>46512200\
+  0
+  }
+
+SGG005             { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG005 function=sin/sqr/sinh/cosh
+  corners=-2/1.999996/-1.49998/1.5 maxiter=800 inside=bof60
+  outside=imag
+  colors=VC8PS`QTbRVcSWe<6>dch<2>``hZ_hXZhVYgTXf<16>ACD9AC89A779667<3>100<\
+  12>PA6RB7VC8XD8_F7ZE8<6>jKC<5>vP0<2>qO6oN8mMAkLDjKC<24>000<24>ZWK_XLbYL<\
+  4>vdQ<2>laPh`Od_N`YM_XL<15>ED9CC8BB7996885664<2>221000011<3>3764974B85D9\
+  5EA<15>HbUIdVIeY<4>Nno<2>MjeLhbKg_JeWIcV<19>386375254243122000<16>KLULNV\
+  MOXNPYOQ_
+  }
+
+SGG005_1           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG005 function=sin/sqr/sinh/cosh
+  corners=0.1077643/4.493858/-2.176581/1.119415 maxiter=32000
+  inside=bof60 outside=imag
+  colors=VC8JeW<20>386375254243122000<16>KLULNVMOXNPYOQ_<2>RVcSWeUXe<5>dch\
+  <2>``hZ_hXZhVYgTXf<16>ACD9AC89A779667<3>100<12>PA6RB7VC8XD8_F7ZE8<6>jKC<\
+  5>vP0<2>qO6oN8mMAkLDjKC<24>000<24>ZWK_XLbYL<4>vdQ<2>laPh`Od_N`YM_XL<15>E\
+  D9CC8BB7996885664<2>221000011<3>3764974B85D95EA<15>HbUIdVIeY<4>Nno<4>Kg_
+  }
+
+SGG005_2           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG005 function=sin/sqr/sinh/cosh
+  corners=-31.99/31.99/-31.99/16.13576 maxiter=32000 inside=bof60
+  outside=imag
+  colors=TG5NdM<3>UdIF`g373<5>RmR132<10>DcO865<5>vfb277<5>Jqn221<12>SaR000\
+  UdTWgV767<4>f`h613<7>xGT445<8>dlm420<10>mV7613<7>vEYA7AKFLFC3<2>xkF540<9\
+  >up4491<3>Nh8223<13>e_jB5CNBOZH_6VECyS323<5>NKQ001<14>16PAA5<4>zyY723<6>\
+  tKT754<5>rcS245<9>OjsGILW_ekqz210<12>UJ1031<4>0J6<12>0Aj<7>XTM<3>qMO<7>Q\
+  bM
+  }
+
+SGG006             { ; 11.01.1995 by S.G.Guenzel
+                     ; CIS 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG006 corners=-2/1.999996/-1.49998/1.5 maxiter=160
+  inside=bof60 outside=imag
+  colors=000siW<2>zpa<2>qiZmgXjdWgaV<9>AAK<3>ALQAOSARUBUWBXY<7>Dtn<16>ABHJ\
+  89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IUDGZ00_MD<8>zz0<7>``9YYAXVB<6>KAJ\
+  MAKOAM<12>ziF<13>844413000<12>ikX
+  }
+
+SGG006_1           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG006 passes=b corners=-31.99/31.99/-31.99/16.01036
+  maxiter=1200 inside=bof60 outside=imag
+  colors=000_YS<6>OI5<2>VOBXQD_TFbVH<9>zpa<2>qiZmgXjdWgaV<9>AAK<3>ALQAOSAR\
+  UBUWBXY<7>Dtn<16>ABHJ89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IUDGZ00_MD<8>\
+  zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>844413000<15>svc032<17>0ze<6>0zw0z\
+  z1xy<19>KNfLLeOOg<12>zzznru<2>jkkhihfgeddacbZa`W
+  }
+
+SGG007             { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG007 passes=2 corners=-2/1.999996/-1.49998/1.5
+  maxiter=1200 inside=bof60 outside=summ
+  colors=BLKDXz<32>PyzPzzOxx<13>CRPCONAJI<5>543420420<22>E80E80E80E80E80<8\
+  0>jQ010y00zzzz<35>K8lJ7kI5kG3jE3lC3n<4>21x00z00z<35>DWz
+  }
+
+SGG007_3           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm formulaname=SGG007
+  passes=2 corners=-12.25196/28.74807/-15.54006/15.21978 maxiter=1200
+  inside=bof60 outside=imag
+  colors=BLKHec<5>CRPCONAJI<5>543420420<21>E80E80E80E80E80<81>jQ010y00zzzz\
+  <37>I5kG3jE3l<5>21x00z00z<34>DVzDWzDXzDYzEZz<30>PyzPzzOxx<6>Igf
+  }
+
+SGG008_1           { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG008 corners=-31.99/31.99/-31.6172/16.3988 maxiter=600
+  inside=zmag outside=imag
+  colors=000<18>0ze<6>0zw0zz1xy<19>KNfLLeOOg<12>zzznru<2>jkkhihfgeddacbZ<8\
+  >OI5<2>VOBXQD_TFbVH<9>zpa<2>qiZmgXjdWgaV<9>AAK<3>ALQAOSARUBUWBXY<7>Dtn<1\
+  6>ABHJ89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IUDGZ00_MD<8>zz0<7>``9YYAXVB\
+  <6>KAJMAKOAM<12>ziF<13>844413000<15>svc
+  }
+
+SGG009             { ; 11.01.1995
+                     ; CIS100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG009 corners=-31.99/31.99/-31.99/16.026 maxiter=600
+  inside=bof60 outside=mult
+  colors=0000RI<10>0ze<6>0zw0zz1xy<19>KNfLLeOOg<12>zzznru<2>jkkhihfgeddacb\
+  Z<8>OI5<2>VOBXQD_TFbVH<9>zpa<2>qiZmgXjdWgaV<9>AAK<3>ALQAOSARUBUWBXY<7>Dt\
+  n<16>ABHJ89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IUDGZ00_MD<8>zz0<7>``9YYA\
+  XVB<6>KAJMAKOAM<12>ziF<13>844413000<15>svc032<5>0NF
+  }
+
+SGG010             { ; 11.01.1995
+                     ; 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG010 passes=2
+  corners=-0.041057587/0.12314957/-0.059637606/0.063569069
+  inside=bof60 outside=real
+  colors=aMEikW<16>200pdJ<5>zjF<6>hUDeRDdQDcPD<4>RCCEEE<13>kki<18>005332<1\
+  7>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>\
+  14RC6QO8O<2>RCLSDKUFJVHIZHG
+  }
+
+SGG010_2           { ; 11.01.1995
+                     ; 100543,1216
+  reset=1821 type=formula formulafile=guenzel.frm
+  formulaname=SGG010 passes=2
+  corners=-0.00686782598/0.0172175169/-0.0103496909/0.00770843029
+  inside=bof60 outside=real
+  colors=000RRm<8>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>03300020\
+  0<13>`00c00d44<13>zzz<12>hCC
+  }
+

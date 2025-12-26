@@ -2847,3 +2847,325 @@ Sterling2 (XAXIS) {; davisl
   ;SOURCE: fractint.frm
 }
  
+Fzpfncoh {; Lee Skinner
+  z = pixel, f = 1./cosh(pixel):
+  z = fn1(z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+many_man {; Modified Stephen C. Ferguson formula
+          ; adapted for Fractint by Les St Clair, 1997
+          ; use real p1 to set bailout (try p1=4)
+          ; use real p2 to set number of mandels
+          ; set fn1=ident, fn2=log for "default" formula
+  z=0, c=pixel:
+  z=(z*z)+fn1(fn2(c^p2)/p2)
+  |z| <=p1
+  ;SOURCE: many_man.frm
+}
+ 
+Gallet-7-01 {; Sylvie Gallet [101324,3444], 1996
+  j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
+  z = pixel :
+   x = z*j, y = z*j2
+   x1 = x - p1*fn1(y + fn2(p2*z))
+   y1 = y - p1*fn1(z + fn2(p2*x))
+   z1 = z - p1*fn1(x + fn2(p2*y))
+   z = z1 + x1*j + y1*j2
+    |z| <= 32
+  ;SOURCE: gallet-7.frm
+}
+ 
+Gallet-7-02 {; Sylvie Gallet [101324,3444], 1997
+  j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
+  z = pixel:
+   x = z*j, y = z*j2
+   x1 = x - p1*fn1(y*z + p2*fn2(x))
+   y1 = y - p1*fn1(z*x + p2*fn2(y))
+   z1 = z - p1*fn1(x*y + p2*fn2(z))
+   z = z1 + x1*j + y1*j2
+    |z| <= 32
+  ;SOURCE: gallet-7.frm
+}
+ 
+Gallet-7-03 {; Sylvie Gallet [101324,3444], 1997
+  j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
+  z = pixel:
+   x = z*j, y = z*j2
+   x1 = x - p1*fn1(x + p1*fn1(y + p2*fn2(z)))
+   y1 = y - p1*fn1(y + p1*fn1(z + p2*fn2(x)))
+   z1 = z - p1*fn1(z + p1*fn1(x + p2*fn2(y)))
+   z = z1 + x1*j + y1*j2
+    |z| <= 32
+  ;SOURCE: gallet-7.frm
+}
+ 
+Gallet-10-01 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Oct 1997
+  z1 = c = pixel, mz1 = cabs(fn2(z1)), k = real(p1)*mz1
+  bailout = real(p2), z = imag(p1) :
+  z1 = sqr(sqr(z1) + c) + c
+  z1 = fn1(real(z1)) + flip(imag(z1)), mz1 = cabs(z1)
+  IF (mz1 <= k)
+    z1 = z1 + p3, mz1 = cabs(z1)
+  ENDIF
+  IF (mz1 < imag(p1))
+    z = z1^imag(p2)
+  ENDIF
+  mz1 <= bailout
+  ;SOURCE: gallet10.frm
+}
+ 
+Gallet-10-02 {; Modified Paul W. Carlson formula ( Petals_Mset)
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = radius of the circles
+    ;   p2       = circle offset factor
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+  w = 0
+  c = pixel
+  r = real(p1), bailout = imag(p1)
+  r2 = r * r
+  ro = r + r * p2
+  f = 1 - (2 + p2) * p2
+  k = r * (p2 + sqrt(f))    ;abs val of petal center (k,k)
+  k1 = k*(1,1), k2 = conj(k1)
+  plsqd = 2 * r2 * f        ;petal length squared
+  z = 0
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+  range_num = 0
+  iter = 0:
+    ;
+  w = 1 / (w*w + c)
+    ;****************************************************
+    ; Determine which pair of overlapping circles the
+    ; orbit point falls in, if any.
+    ;****************************************************
+  c1 = (|w - ro| < r2)
+  c2 = (|w + flip(ro)| < r2)
+  c3 = (|w + ro| < r2)
+  c4 = (|w - flip(ro)| < r2)
+  IF (c1 && c4)
+    d = |w-k1|
+  ELSEIF (c1 && c2)
+    d = |w-k2|
+  ELSEIF (c2 && c3)
+    d = |w+k1|
+  ELSEIF (c3 && c4)
+    d = |w+k2|
+  ELSE
+    d = 0
+  ENDIF
+    ;
+  IF (d > 0)
+    ;************************************************
+    ; Set z equal to the index into the colormap.
+    ;************************************************
+    index = colors_in_range * d / plsqd
+    z = index + range_num * colors_in_range + 1
+  ENDIF
+    ;
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  d == 0 && |w| < bailout
+  ;SOURCE: 98msg.frm
+}
+ 
+Gallet-10-03 {; Modified Paul W. Carlson formula ( Petals_Mset)
+              ; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
+    ;
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   real(p1) = radius of the circles
+    ;   imag(p1) = b, try 0.563 or 0.56667
+    ;   p2       = circle offset factor
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+  w = x = y  = pixel
+  r = real(p1), b = imag(p1)
+  r2 = r * r
+  ro = r + r * p2
+  f = 1 - (2 + p2) * p2
+  k = r * (p2 + sqrt(f))    ; abs val of petal center (k,k)
+  k1 = k*(1,1), k2 = conj(k1)
+  plsqd = 2 * r2 * f        ; petal length squared
+  z = 0
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+  range_num = 0
+  iter = 0:
+    ;
+  w = w*w - 0.5*w + b, x = w*w - 0.5*y + b, y = w, w = x
+    ;****************************************************
+    ; Determine which pair of overlapping circles the
+    ; orbit point falls in, if any.
+    ;****************************************************
+  c1 = (|w - ro| < r2)
+  c2 = (|w + flip(ro)| < r2)
+  c3 = (|w + ro| < r2)
+  c4 = (|w - flip(ro)| < r2)
+  IF (c1 && c4)
+    d = |w-k1|
+  ELSEIF (c1 && c2)
+    d = |w-k2|
+  ELSEIF (c2 && c3)
+    d = |w+k1|
+  ELSEIF (c3 && c4)
+    d = |w+k2|
+  ELSE
+    d = 0
+  ENDIF
+    ;
+  IF (d > 0)
+    ;************************************************
+    ; Set z equal to the index into the colormap.
+    ;************************************************
+    index = colors_in_range * d / plsqd
+    z = index + range_num * colors_in_range + 1
+  ENDIF
+    ;
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  d == 0 && |w| < 16
+  ;SOURCE: gallet10.frm
+}
+ 
+Gallet-10-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
+  ; Yet another formula based on Earl Hinrich's "Invasion" algorithm
+  ;
+  r = real(p1), t = imag(p1), r_t = r - t, index = z = iter = 0
+  w = c = pixel, pw = 0, dw = 0.1, mw = p3
+  :
+  w = w*w + c
+  w = w*w + c, w = fn1(real(w)) + flip(imag(w))
+  ww = w, w = w*w + c, w0 = w
+  w = w - pw, d = |w|
+  w = ww - dw, w = w*w + c
+  w = w - pw, dd = |w|
+  IF (d < dd)
+    w = ww + dw, w = w*w + c
+    w = w + pw, dd = |w|
+    IF (d < dd)
+      w0 = w0 + mw
+    ENDIF
+  ENDIF
+  w = w0, m = cabs(w)
+  IF (abs(m-r) < t)
+    index = 1 + 127.5*(m - r_t)/t
+  ENDIF
+  iter = iter + 1
+  z = index - iter
+  m <= 10
+  ;SOURCE: gallet10.frm
+}
+ 
+Gallet-10-05 {; Modified Paul W. Carlson formula
+              ; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
+    ;
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = coordinates of the Julia set
+    ;   real(p2) = radius of the circles - this controls
+    ;              the size of the petals
+    ;   imag(p2)   Not Used
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+  w = pixel
+  c = p1
+  z = 0
+  r = real(p2)
+  r2 = r * r
+  k = 0.35355339 * r    ; Don't mess with this constant
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+  range_num = 0
+  iter = 0:
+    ;
+  w = c*fn1(w)
+    ;
+  wr = real(w), wi = imag(w)
+  c1 = (((wr-r) * (wr-r) + wi * wi) < r2)
+  c2 = ((wr * wr + (wi+r) * (wi+r)) < r2)
+  c3 = (((wr+r) * (wr+r) + wi * wi) < r2)
+  c4 = ((wr * wr + (wi-r) * (wi-r)) < r2)
+  IF (c1 && c4)
+    d = (wr-k) * (wr-k) + (wi-k) * (wi-k)
+  ELSEIF (c1 && c2)
+    d = (wr-k) * (wr-k) + (wi+k) * (wi+k)
+  ELSEIF (c2 && c3)
+    d = (wr+k) * (wr+k) + (wi+k) * (wi+k)
+  ELSEIF (c3 && c4)
+    d = (wr+k) * (wr+k) + (wi-k) * (wi-k)
+  ELSE
+    d = 0
+  ENDIF
+  IF (d > 0)
+    index = colors_in_range * d / r2
+    z = index + range_num * colors_in_range + 1
+  ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  d == 0 && |w| < 16000
+  ;SOURCE: gallet10.frm
+}
+ 
+Gallet-8-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
+             ; Requires periodicity = 0
+             ; 0 < p1 <= 1 (default = 1)
+   z = c = zn = pixel
+   IF (p1 || imag(p1))
+      k = p1
+   ELSE
+      k = 1
+   ENDIF
+   :
+   zn = zn*zn + c
+   IF (abs(zn) < abs(z))
+      z = k*real(zn) + flip(imag(z))
+   ENDIF
+   IF (flip(abs(zn)) < flip(abs(z)))
+      z = real(z) + k*flip(imag(zn))
+   ENDIF
+   |zn| <= 4
+  ;SOURCE: gallet_8.frm
+}
+ 
+Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996 
+  z = Pixel*(0.0,1.0) :
+  n = sin(z)-z-pixel, z = z-n/(cos(z)-pixel)
+  |n| > real(p1) 
+  ;SOURCE: gallet-3.frm
+}
+ 
