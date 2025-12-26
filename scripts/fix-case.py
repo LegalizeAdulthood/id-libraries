@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate sed commands to fix case mismatches in formulaname parameters.
+Generate sed commands to fix case mismatches in formulaname and formulafile parameters.
 
 Reads validation output from validate-par.py and outputs sed commands.
 
@@ -10,6 +10,16 @@ Usage:
 """
 import sys
 import re
+
+
+def escape_for_sed(text):
+    """Escape special sed characters in text."""
+    # Escape characters that are special in sed regular expressions
+    # Note: We escape these one at a time to avoid double-escaping
+    result = text
+    for char in r'.*[]^$/':
+        result = result.replace(char, '\\' + char)
+    return result
 
 
 def main():
@@ -25,12 +35,24 @@ def main():
             wrong_case = match.group(2)
             correct_case = match.group(3)
             
-            # Escape special sed characters
-            for char in r'.*[]^$\/':
-                wrong_case = wrong_case.replace(char, '\\' + char)
-                correct_case = correct_case.replace(char, '\\' + char)
+            wrong_case_escaped = escape_for_sed(wrong_case)
+            correct_case_escaped = escape_for_sed(correct_case)
             
-            fixes.append((line_num, f"s/formulaname={wrong_case}/formulaname={correct_case}/g"))
+            fixes.append((line_num, f"s/formulaname={wrong_case_escaped}/formulaname={correct_case_escaped}/g"))
+            continue
+        
+        # Parse: EntryName(LineNum): Formula file 'wrong.frm' does not match case-sensitively (found: Correct.frm)
+        match = re.match(r"^\s*\S+\((\d+)\):\s+Formula file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        
+        if match:
+            line_num = int(match.group(1))
+            wrong_case = match.group(2)
+            correct_case = match.group(3)
+            
+            wrong_case_escaped = escape_for_sed(wrong_case)
+            correct_case_escaped = escape_for_sed(correct_case)
+            
+            fixes.append((line_num, f"s/formulafile={wrong_case_escaped}/formulafile={correct_case_escaped}/g"))
     
     # Output sed commands sorted by line number
     fixes.sort(key=lambda x: x[0])
