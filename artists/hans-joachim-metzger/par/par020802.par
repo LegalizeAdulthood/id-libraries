@@ -1,0 +1,320 @@
+strangenewton_1    { ; 0.00.26.91 with AMD 1800+ and SF9
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=crazynwt.frm formulaname=Nwtsqzz
+  function=tan/sin center-mag=-1.77636e-015/9.99201e-016/0.5623188
+  params=2/2/1/0 float=y maxiter=1000 inside=0
+  colors=0000He<13>0Ze0_e0ae0be0ce0ee<26>HvvIwwJxx<2>LzzLzzMzy<56>vzPwzOxz\
+  NxzNyzMzzL<25>CCaAAa88b<2>22d00e00d<25>007006004003002000<57>00a00b00b00\
+  c00d<2>02e03e05e<7>0Fe
+  }
+
+strangenewton_2    { ; 0.00.31.20 with AMD 1800+ and SF9
+                     ; Version 2002 Patchlevel 3
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=crazynwt.frm formulaname=Nwtsqzz
+  function=sqr/sin center-mag=-1.77636e-015/9.99201e-016/0.5623188
+  params=1/1/1/0 float=y maxiter=1000 inside=0
+  colors=00048H<3>49I49J49J49J<2>5DL5EL5GM5IM<4>6QP7RP7TQ<2>7YR8_SA`S<8>_i\
+  JajIdkH<3>ppD<9>p_6pY5pW4<2>pR2pP1oP2<25>94X74Z53_42`21a00c<107>00200100\
+  1<2>000000001<50>48H
+  }
+
+strangenewton_3    { ; 0.00.18.74 with AMD 1800+ and SF9
+                     ; Version 2002 Patchlevel 3
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=crazynwt.frm
+  formulaname=Komplexmatsch function=sin/sqr
+  center-mag=0.722299/-1.21753/3.205128/1/34.9999999999999787/1.3107570584\
+  4807544e-014 params=2/3/1/2 float=y maxiter=1000 inside=0
+  colors=00007B<17>0Wi0Xk0Zm<3>0du<6>XoRaqNfsI<3>zz0<20>EK8CI8AG9<3>07B<16\
+  >0Wh0Xj0Zl<3>0du<6>XoRaqNfsI<3>zz0<4>ZZ0TT0NN0<3>000<25>nnnppprrr<3>zzz<\
+  9>OSVKPSGLO<3>07B<17>0Wi0Xk0Zm<3>0du<6>XoRaqNfsI<3>zz0<4>ZZ0TT0NN0<3>000\
+  <25>nnnppprrr<3>zzz<14>4BF
+  }
+
+strangenewton_4    { ; 0.00.24.93 with AMD 1800+ and SF9
+                     ; Version 2002 Patchlevel 3
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=crazynwt.frm formulaname=Nwtsqzz
+  function=sqr/cos center-mag=0/0/0.6666667 params=1/1/2/0 float=y
+  colors=00048H<3>49J49J49J<2>5DL5EL5GM5IM<4>6QP7RP7TQ<2>7YR8_SA`S<8>_iJaj\
+  IdkH<3>ppD<9>p_6pY5pW4<2>pR2pP1oP2<25>94X74Z53_42`21a00c<107>002001001<2\
+  >000000001<51>48H
+  }
+
+Mandelbrot_Network { ; time=0:02:50.60-SF5 on a P200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
+  center-mag=+0.523994586278288/0/121.9547/1/90/-1.2\
+  3373533611470521e-014 params=1/0.35/-1/0.3/32.175/0
+  float=y maxiter=500 inside=fmod proximity=0.085
+  logmap=yes periodicity=10
+  colors=0008PdAPcCPaEOaGO_INZKNXMMWOMURLSTKRVJPXIOZ\
+  HM`GKbGJdFHfEGiEEkDDmCBoC9qB8sA6uA5v93x81y92y93x93\
+  xA4wA4wA5vB6vB6uB7uC7tC8tC9sD9sDArDArEBqECqECpFDpF\
+  DoFEoGFnGFnGGmHGmHHmHIlIIlIJkIJkJKjJLjJLiKMiKMhKNh\
+  LOgLOgLPfMPfMQeMReNRdNSdNScOTcOUbOUbPVaPVaPWbOVaPW\
+  aPWaQWaQXaQXaRXaRYaSY`SY`SY`TZ`TZ`UZ`U_`U_`V_`V`_W\
+  `_W`_W`_Xa_Xa_Ya_Yb_Yb_ZbZZcZ_cZ_cZ_cZ`dZ`dZadZaeZ\
+  aeYbeYbfYcfYcfYcfYdgYdgYegYehXehXfhXfiXgiXgiXgiXhj\
+  XhjXijWikWikWjkWjlWklWklWklWlmWlmVmmVmnVmnVnnVnoVo\
+  oVooVooVppUppUqpUqqUqqUrqUrrUsrUsrTuqUsrVrrWprXosY\
+  nsZls_kt`itahtbguceudduecvfavg`vhZwiYwjXwkVxlUxmTx\
+  kUviUuhUtfUreUqcUpbUo`Um_VlYVkXVjVVhUVgSVfQVdPVcNV\
+  bMWaKW_JWZHWYGWXEWVDWUBWTAWSAWRAWRAWQAWQBWPBWPBXPB\
+  XOBXOBXNBXNBXMCXMCYMCYLCYLCYKCYKCYJCYJCYJBXIBXIBXI\
+  BXIBXHBXHBXHAWHAWHAWGAWGAWGAWGAWGBVHCVIBUJAUKAUKAU\
+  KAUKAUKAUKAUKAUKAUKAUKAUK }
+
+Interesting_Midget { ; time=0:07:51.48--SF5 on a P200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
+  center-mag=+49.36527881043839000/+30.4157556183393\
+  0000/2.374188e+009/1/50/-9.25530275780669931e-005
+  params=1/-1.11/0.1/-11.1/0.5/0 float=y maxiter=800
+  inside=0 logmap=165 periodicity=10
+  colors=000EV0GY1JY6Nb9OdERgIViNXiQ_iTbiTdiTbiTaiT_\
+  iTYiTXiTTgTQfTNdTJbTGYTDXQlTLdNNXIJQEGI9BB48214000\
+  000000000001204B08I0BO0EV0Ib1Li2Op4Rx6Vz8Yz9az9dzD\
+  azG_zJYzQXzQVzWRzXQz`OzbNzdLziIxlEqpDks9dw8Yz4Rz1T\
+  z0iz0zz0zz0zz0zz1zzDizOTtYJniOgtTbzV_zXVzYRz_NzaIz\
+  bEzd9zf6zg1zg0zd2za6z_BzXEwTJsRNpORkNVgJ_dGb_EgXBi\
+  T9iO6iL2iI1iD0q90z60zz0qz0iz0Tz0Dw40p90gE0aJ0TO0NT\
+  0EY08b01g0Bk0Ln1Tq6bwBkzEtzJzzOzzRzw_zifzXnsJtk6za\
+  0zT0zL0s00n00k00f00b01Y06V09Q1EN1II2NE2R94V64_16b0\
+  6g08k08p09s09q0Bq0Dq0Eq0Gq0Iq0Jq0Jq0Lq1Nq2Oq6Qq8Rq\
+  9TqBTn9Vk8Xg6Xd6Ya4_Y2_V2aR1aO0bL0dI0dE0fB0g80g40i\
+  10i00k00l00l00n00n00p00p00p00q01q04q08q0Bs0Ds0Gs0J\
+  t0Nt0Qt0Rt0Vw0Yw0aw0bw1as1aq1_p1_n1_l2Yk2_i2ag2bf2\
+  dd2fb4g_4iY4kX4lV4nT6pR6qQ6sO6tN6wL6xJ8zL8zL9zL9zL\
+  BzLBzLDzLDzNEzNEzNGzNGzNIzNIzNIzNTzGdzBnz6kzbJzT0z\
+  L0zJOzVJzJEz89z04z08z0Bz0 }
+
+UnstableOrbits     { ; Unstable Orbits in the Space of Lies
+                      ; Best viewed at 1600x1200
+                      ; Greg Egan, Interzone #61, July 1992
+                      ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=logic.frm
+   formulaname=ChaoticDualist1M passes=d
+   center-mag=0.67703/0.67703/0.589404/1/44.999 float=y maxiter=16
+   inside=atan outside=255 periodicity=0
+   colors=000JG2<24>OG2PG2PG2PG2PG2<2>QH4RI5RJ6SK7TK8<46>vusvvtwvu<3>zzz030\
+   <9>010010000<6>000000000<52>1E01E02F0<87>JG2
+   }
+
+A_Blue_Creation    { ; time=0:06:15.52--SF5 on a p200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
+  center-mag=-1.164418403483855/-0.00416714065635447\
+  /4.784102e+008/1/-7.5/-1.34769670230433514e-005
+  params=1.75/0.8/0.175/-8/0/0 float=y maxiter=750
+  inside=0 logmap=111 periodicity=10
+  colors=0000005E46D38B0990z0zr0nl0hc0`W3ZQ6YJ9YBDY5\
+  J_4K`4Lb4Oa3Pb3Qc3Rd2Se2Tf2Ug0Vh0Wj0Xl0Ym0Xq0Vt3St\
+  5Op9KkBIfEHcKHbKIYKJUQKRTLPWMLZNJaOGdMEfMBiQFjTIkV\
+  KnZMo`PpcTsfVtiYul_xoayqezthzxjzzlzzozypzvqztszptz\
+  nuzkvyhxyexxcyx_zvYzuVzuRztPztMzhflYzVTxPPvJKuDGs6\
+  Bq08p0Bk0Fh3Jd6M_AQWEUTIYPL`KQdGUhDYk8`o4ds0hv0kq3\
+  jn8ijEheJfaPeZUeUZdQdcMiaIo`Et_Ay_FscKlePhhUajZYlc\
+  RphMslGuqBxv5zz0zx2xu3tt3oq4ko4fn5ck5Zi6Vh6Qe8Mc8I\
+  a9E_99YA5WA2`DAdEJiFRlI_qJhuKpyLxsIynEzhBzc8zZ5zYA\
+  vYFpYKjYPdYTZTVaPWeLYhG_kD`o9aqFWtLQuQKxWEy`8zf2zk\
+  0zl3zn8xoDuoIqpMoqRlqWis`ftedtjavk_xkZykYzkWzkVznV\
+  ypVysVxuVxvVvyVuzVuzVtzVtzVazeLzo4zy3xv2qu0ks0eq0_\
+  o0Un0Ok0JjfJihGkhFlhEnhDohAqh9sh8th6u`DsVJqPPoJVnD\
+  `l6fj0li0sh6piIniTkjcijnfjkjaioUjqkqxuyzzxzzxzxxzu\
+  vzsvzpvznuzjuzhuzetzctz`tzZtzWkzUdzTYzQQzPIzOAzL3z\
+  K0zJ0zG0zF0zE0zB2zA3z93z8 }
+
+Midget_Squid       { ; time=0:10:24.07--SF5 on a p200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
+  center-mag=-3.18686290593923700/-0.012918240803433\
+  52/9.031838e+011/1/-110.25/0.31625297457531909
+  params=4/-0.1/0.4/2/0/0 float=y maxiter=1200
+  inside=0 logmap=209 periodicity=10
+  colors=0000Ki0Mh0Og0Qf0Se0Ud0Wc0Yb0_a0a`4c_6eY8gWA\
+  iUBjSDlQFnTGoWIqZKsaLudNwgPxjQvmRtgRpbTkXXfSWaMWYH\
+  YUB`P6`E1YE3YE5_E7bE9dEBfEDhEFkEHnEJqELtENvDRvFQtH\
+  QrIQpKQnMQlNQjPQgRQeSQcUQaWQ_XQYZQW_QZ`Sa`Uc`WfaYh\
+  a_kaanbcpbesbgubivcdvd`veWvfSvfNwgJwhEwiAwj5wj1c_A\
+  e`Jg`Ri`Tk`Um`Ti`SdaS_aRVbRQbQLcPGcPBdO6dO8fP9gQAh\
+  QCiRDjREkSFlTHnTIoUJpUKqVMrWNsWOtXPuXUt_Ytaascesei\
+  rhmrjqqluqnyqpypkyogyobynZymVymQylMylItjLohOkgQfeT\
+  acVYbYT`_OZbKYdFWgBViJYhQ_gYafddelfdshdoh`khXghUch\
+  Q_hMWhJShFOhBKh8Gh4Ch1Ib7OYDUTJ_OOeJUkE_q9dnDakH_i\
+  LYfPVdTTaXR_`OXdMVgKXcIY`H_YG`UFbREcOCeLBfHAhE9iB8\
+  j87kB9lEAmHBmKCnNEoQFoTGpWHqZJqaKrdLsgMsjNpiMniOmi\
+  RliUkhXjc_iZbhUegPhfKkeFndAqc5tb6qc7nc8kc9hc8hc8ic\
+  8jc8kc7lc7md7oe7qf6sg6uh6wi6yj6zkGzlPzmQznQzoRzpRz\
+  qRzrSzsSztTzuTzvTzwVzxWzyXzzXzzYzzZzzZzz_zz`zz`zzY\
+  zzVzzTzzQzzOzzLzzIzzGzzqz }
+
+mutant_octopus     { ; it has eight legs, right?  90 min at 1024x768
+  reset=1930 type=mandel passes=b 
+  center-mag=-1.759895432332375466/0.01229829457725998347/5.665433e+015
+  params=0/0 float=y maxiter=5000
+  colors=000_ao<21>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<14>zvvzzzxv\
+  w<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvHCxIBzKA<2>zREzUFzXGz_HzaJ<8>zzU<\
+  15>9C`ADaBEc<46>xxyzzzyyz<22>`bo }
+
+Midget-01          { ; time=0:07:59.45--SF5 on a P200
+  reset=2002 type=mandel mathtolerance=/0
+  center-mag=-1.74259033650061656/0.0108269125319204\
+  82/3.416697e+012/1/-35.0070018490356247/-0.0174293\
+  321394581244 params=0/0 float=y maxiter=975
+  bailout=6 inside=0 logmap=180 periodicity=10
+  colors=000KbmKakK`kKagK`fK_fKZdKYbKXbKW`JV`ET`9PW8\
+  MK7Ab9F`AK_COZDTYEXXGaVHfUJjTKoSLqRKgSKXSJMSJBSFJN\
+  CQJ8XE5cA2j63f84b95ZB6VC7RD8NF9JG9FHIDJQBLY9Ne7Pm6\
+  Qn7To7Vo7Zp7cp7hq7kr7ms7ot7qu7sv7uw7wx7xy7yz7zpBtl\
+  EqhHmcKj_OfWRcRU_NXXJ_UHbZGdcHeeHffHggHghHhiHijIjl\
+  IjmIknIloImpImqKlnLklMjjNjgOiePhcQgaSgZTfXUeVVdTWd\
+  QXcOYbMZbKYaLYaLX`MX`MX_MW_NWZNWZNVYOVYOVXOUXPUWPU\
+  WPTSUTPYTLaTIeSEjSBnS7rS4vS1zV4rX7k_AcaDXdGPfJIhLB\
+  gKCfJDfIEeHFeGGdFHdEIcEJcDKbCLbBMaANa9O`8P`8QZCRXF\
+  SVITULTSOUQRVPUVNXWL`XKcXIfYGiZFlZDo_Br`Au`Bq_CmZD\
+  jYDfYEcXF_WGXVGTVHQUIMTJJSJFSKCRL8QL5QN9RPDRQHRSLS\
+  TOSVSSWWSY_TZcT`fTajTcnUdrUfvUgyUhtRhpPhkNigLibJiZ\
+  HjUFjQDjLBkH9kC7k85ZVKMqZOoXPmVQkTRjRShPTfNUeLVcJW\
+  aHX`FYZDZXB_W9aYDc_GeaJgcMhePjgSliVnkYpm`qocsqfusi\
+  wtlxuoTvXVwVXxTYyR_zP`zNbzLczJezIgzGhzEjzCkzAmz8nz\
+  6hzzkzzgzwczt`zrXzoUzmTzk }
+
+8-Legged_Weirdo    { ; time=0:24:40.96--SF5 on a P200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
+  center-mag=+0.4106409957710013/+0.0021028911297467\
+  /4.29809e+012/1/-150/-0.0559633657765741532
+  params=1/3/-0.3/5/0.29/0 float=y mathtolerance=/1
+  maxiter=2700 inside=0 logmap=421 periodicity=10
+  colors=00035y6Bw8GvBMuDRtGXrIaqLgpNloPjlRiiTgfUfcW\
+  d`YcYZaV``SbZPdYMeWJgVGiTDjSAlQ7nP4oO2eM8WKENJKPIN\
+  RHPTHSVGUXGWZFZ`F`aEccEeeDggDjiClkComBqnBspLtqVtrc\
+  tjXqbQnVJlWKkWLjXMiXMhYNgYOfZOeZPd_Qc_QbaNYcKUeHQg\
+  EMiCHk9Dm69o35p11l64iA6fF9cJB_NDXSGUWIR_KOdNKhPHlR\
+  EqUBuW8yYLscXnhiimudrtcotclscjscgscercbrb`qbYqbWqb\
+  TpbQpbOobLoaJoaGnaEnaBma9ma6ma4iY5eV6aS6YO7UL8RI8S\
+  OGTUNUZVVdaWjiWopYpnZpl_pj`qhaqfcqddqber`frZgrXhrV\
+  wyLjfKZOKN6K_SAll0jk1ik2hj3gj4ei5di6ch7bh8`g9_gAZf\
+  BYfCXfDZbC`ZCbVCdRBfNBhJBjFBlBAn7Ap3Ar0Aq29q49q68p\
+  78p98pB7pD7oE7oG6oI6oK5nL5nN5nP4nR4mS4mU3mW3mX31SL\
+  DPUONa_KijIqgLndOkbQi_TfXVdVYaS__QbXNdVKgSIiQFlNDn\
+  LFmOHlRJkUKjXMi_OibQheRghTfkVenWeqYerZer`frafrcfrd\
+  fregrggrhgrigrfhqdhpbhp_hoYhoWhnTinRjmPkmNllKmkInk\
+  GojDpjBqi9ri6sh4th2ug0vg6whBxhGyiLziQziWzj`zjezkjz\
+  kozkmzi6zu5zv5zw4zw4zx3zy }
+
+Ultimate_Objective { ; time=0:05:31.25 -- SF5 on a P200
+                     ;  Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=julibrot.frm
+  formulaname=SliceJB2003-PT passes=t
+  center-mag=0.000726367/-0.00764189/55.68627/1/2.499
+  params=0.5169/0.2637/0.4979/0.4845/-1.7434/0 float=y
+  maxiter=6000 inside=0 logmap=52 periodicity=10
+  colors=000nZr<12>qctqcurdu<2>reureupdr<5>jadi`bh__<2\
+  >eZTdYReZQ<35>IIJIIIHHI<2>FGIFGIGHI<14>VWQWXQXYR<2>_\
+  `S`aTbdV<6>YULXTJXRI<3>ULCWO7<9>RDKRCMRBN<3>P7SO3U<3\
+  9>ehSeiSejS<2>gmSgnSjrT<19>R`OQ_OPZNOYNNXNMWNMXO<20>\
+  LUBLUBLUA<3>LU8jWhjUkjSmiPn<20>nYr
+  }
+
+Lyamand_1          {
+                      ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=lyamand.frm
+   formulaname=LyapunovMandel passes=1
+   center-mag=-0.162602/0.700584/5.464481 params=0/0/1/0.1/0/0 float=y
+   maxiter=255 inside=255 logmap=5 periodicity=0
+   colors=000zzz<42>zzBzz9zz8<3>yy4yy4yx4<72>yX0yX0yW0<127>000
+   }
+
+LyapunovJulia_1    {
+                      ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=lyamand.frm
+   formulaname=LyapunovJulia
+   center-mag=+0.46966854283928040/-0.00187656380316929/57.97101
+   params=-1/0/3.14/0.4/0/0 float=y maxiter=1023 inside=255 logmap=36
+   periodicity=0
+   colors=000<42>00s00t00v00w00x00z<41>0qz0rz0sz<3>0yz<9>bymfyljyk<3>zye<9>\
+   zyGzyEzyB<3>zy0<41>z80z70z50<2>z20z00y00<24>T00S00R00<3>L00<9>jaDleEoiF<\
+   3>zyL<9>z_8zY7zV6<3>zK0<11>D50930520000
+   }
+
+Lyapunov           {
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=LyapunovMandel
+  center-mag=-1.07668/7.77156e-016/1.344086
+  params=0/0/0/1/16/0 float=y maxiter=500
+  inside=0 logmap=yes periodicity=0 sound=off
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+  zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+  zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+  00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+  VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+  lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+  lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+  E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+  OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+  OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+  SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+  G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+  G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+  G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+  GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+  G000000000000000000000000
+  }
+
+Hypercomplex       {
+  reset=2002 type=hypercomplex function=sqr
+  center-mag=-0.5759/7.77156e-016/1.344086
+  params=0/0/0/0.5 float=y maxiter=500 bailout=7
+  inside=0 logmap=yes periodicity=0 sound=off
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+  zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+  zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+  00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+  VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+  lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+  lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+  E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+  OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+  OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+  SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+  G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+  G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+  G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+  GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+  G000000000000000000000000
+  }
+
+For_Jim_Muth {
+ ;
+ reset=2002 type=formula formulafile=temp.frm
+ formulaname=SuperposeMandel center-mag=-1/0/0.6666667
+ params=0/0/0/1/16/0 float=y outside=summ colors=@default.map
+ }
+
+Quadrapus_Minibrot { ; time=0:03:39.53--SF5 on a P200
+  reset=2002 type=formula formulafile=allinone.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
+  center-mag=-2.85097707624026200/-3.007861364773440\
+  00/5821280/1/-115/1.56494616987412627e-008
+  params=1.5/1.618/1.5/16.18/0/0 float=y maxiter=400
+  inside=0 logmap=71 periodicity=10
+  colors=00020K10K00K40MBAQI9WPMcXcadt_lzZtzXlzUdvRX\
+  qOPlLKgIPcFU_C_W9eR7lM4sI1yE0z90zd0zZ0yS0sB0nB2gC5\
+  cE7XF9TFCMHEIIHCKK8KL7PH5WCBTEHRFLOFRMHXLHaIIgHIlE\
+  KsCKyBLz8Lz7Mz5Mz8Pz9RzCTwEUtFWoIXlKZgMadOc_PdXTeT\
+  UgPXiLZjI_lIZlIWlBTg4Pc0PZ0PU0tU0PW0PW0PW0PWIIa09W\
+  0BW0BX0BX0CX0CX1EX1EZ1EZ1FZ2FZ2FZ2HZ2H_4I_4I_4I_5K\
+  _5Ka5La5La7La7Ma7Ma7Mc8Oc8Oc8Pc8Pc9Pd9Rd9Rd9RdBTdB\
+  TdBUeBUeCUeCWeCWeCWgEXgEXgEZgEZgFZgF_iF_iF_iHaiHai\
+  HdjHggIjdLnaOqZRtWUtTUtPUtITtBTt4Tt1Rt2Rt5Rt7Pt9Pt\
+  BPtEOtFOqIOnKMjMMgOMdRLaTLZWLWXKW_KXaK_dPacXcadd_l\
+  dZtdXzcWzcUycTwcTtcUscWqcWncXlcZicZgd_dd_cda_dcZdc\
+  XddUdeTdePddXaXdZPlWItTBwR4vT0vU0tW0tX0sZ0s_0qa0qc\
+  0od0ne0ng0li0lj1jl1jn2io4iq5gs7gt8et9dt9dtBctCctEa\
+  tFatH_tI_tKZtKXtLXtMWtOWtPUtRUtTTtTTtURtWRtXPt_Otc\
+  OteMtiMtlLtoLtsLtvKtyItzKtzItzItzItzItzItzItzItzIt\
+  zItzItzItzItzItzItz5tq4to }
+

@@ -5534,3 +5534,178 @@ zzz (XAXIS) {
   ;SOURCE: noel.frm
 }
  
+Guanaco { 
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  z = pixel, Root = 1:
+  z3 =z*z*z
+  z4 = Z3 * z
+  z5 = z4 * z
+  z6 = z5 * z
+  z7 = z6 * z
+  r = (3 * z4 + Root) / ( 4*z3)
+  q =  z - p1*((z7-z)/((7.0*z6-1)-(42.0*z5)*(z7-z)/(14.0*z6-2)))
+  z = (r * whitesq ) + (q * (whitesq == 0)) 
+  (.004 <= |z4-Root| && whitesq) || (0.0001 <= |z7-z| && whitesq == 0)
+  ;SOURCE: pablo.frm
+}
+ 
+Pablo {
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  z = c = pixel:
+  r = fn1(tan(1/z)+ c) + p1 
+  q = fn2(flip(atan(z)) + c) + p2
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  |z| < 4
+  ;SOURCE: pablo.frm
+}
+ 
+Q_Java {
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  z = 0, c = pixel:
+  z=z*z+c
+  c=c+(p1/z)
+  r=fn1(z)+ p2 + c
+  q=fn2(z)+ p3 + c
+  z=(r*(whitesq == 1)) + (q*(whitesq == 0))
+  |z| <= 4
+  ;SOURCE: pablo.frm
+}
+ 
+Sublime {  
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  z = (1,1), c = pixel: 
+  z2 = z*z, z3 = z2*z
+  r = z - p1 *(z3-pixel)/(3.0*z2)
+  q = fn1(z) * fn2(z) + c + p2
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  (|z| < 4 && whitesq == 0) || (0.0001 < |z3 - pixel| && whitesq)
+  ;SOURCE: pablo.frm
+}
+ 
+Sublime_2 {
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  z = c = pixel, Root = 1: 
+  z3 = z*z*z, z4 = z3*z
+  r = (3.0*z4 + Root)/(4 * z3)+ p1
+  q = (fn1(z) * fn2(z))+ c + p2
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  (|z| < 4 && whitesq == 0) || (0.004 < |z4 - Root| && whitesq)
+  ;SOURCE: pablo.frm
+}
+ 
+Sylac { 
+   ; Any comments or question?
+   ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
+  c1 = flip(1/pixel), c2 = conj(1/pixel), z = c = pixel:
+  r = ((fn1(z)* c1) * z) + p1
+  q = ((fn2(z)* c2) * z + c) + p2
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
+  |z| <= 4 
+  ;SOURCE: pablo.frm
+}
+ 
+FnDog (XYAXIS) {; Scott Taylor
+  z = Pixel, b = p1+2:
+  z = fn1( z ) * pixel
+  |z| <= b
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppfnse {; Lee Skinner
+  z = pixel, f = 1./sin(pixel):
+  z = fn1(z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_11a {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(fn4(z)*pixel)))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+3daMand01 {; Mandelbrot/Zexpe via Lee Skinner
+           ; based on 4dFRACT.FRM by Gordon Lamb (CIS: 100272,3541)
+  z=real(pixel)+flip(imag(pixel)*p1)
+  c=p2+p1*real(pixel)+flip(imag(pixel)):
+  z=z^2.71828182845905 + c
+  |z|<=100
+  ;SOURCE: fractint.frm
+}
+ 
+J_Laguerre2 {
+  c = pixel, z = P1:
+  z = (z*(z - 4) +2 ) / 2 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+J_Laguerre3 {
+  c = pixel, z = P1:
+  z = (z*(z*(-z + 9) -18) + 6 ) / 6 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+J_TchebychevS4 {
+  c = pixel, z = P1:
+  z = c*(z*z*(z*z-3)+1)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_03a {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_05 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2((z^pixel)))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_10 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(fn4(z)*pixel)))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_13 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(z)*pixel))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_22 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  sq=fn1(z), z=(sq*fn2(sq)+sq)+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_23 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(z)+pixel*pixel))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_24 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z2=fn1(z), z=(fn2(z2*fn3(z2)+z2))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 

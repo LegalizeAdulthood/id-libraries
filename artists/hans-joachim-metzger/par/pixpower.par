@@ -1,0 +1,46 @@
+PixPowerTest       { ; 4.51s a 350MHz PII @ 1280x1024
+                     ; All VESA Autodetect modes make a mess of
+                     ; this on an ATI Mach 64 Utah with 8meg.
+                     ; z=0 Requires parameters for zed to escape.
+  reset=2003 type=formula formulafile=pixpower.frm
+  formulaname=PixelPower function=zero/ident passes=b
+  center-mag=0/0/0.6666667 params=0.1/0.3/0/0/0/0 float=y
+  maxiter=255 inside=15
+  colors=zzz000<3>e00o00z00<3>zRRzYYzddzkkzrr<3>zcSz_LzWEzS7zO0<3>_E0TB0\
+  M90F60830<3>ZP0eV0l_0se0zk1<3>zqSzsYztdzvkzxr<3>vySuyLtyEsy7rz0<3>V_0P\
+  T0JM0DF0780<3>KZ1Ne1Ql1Ts1Xz2<3>izSlzZozdrzkvzr<3>ZzTTzMNzGHz9Az2<3>6_\
+  25T24M23F2281<3>2Z92eB2lD2sF3zI<3>Xzcczikznrztrzt<3>TzlNzjGzhAzf3zd<3>\
+  2WL2OG1GB186186<3>2ZY2ed3lk3sr4zz<3>Xzzczzkzzrzzrzz<3>UpzOnzHkzBiz4fz<\
+  3>2MW2HO1BG168168<3>3DZ3Fe4Hl4Js5Lz<3>Yezdjzkozrtzrtz<3>XVzSPzMIzHCzB5\
+  z<3>63W52O32G218218<3>H3ZL4eP4lT5sX6z<3>kYzndzrkzvrzvrz<3>tVztPzsJzsDz\
+  r7z<3>S4WL3OE2G718718<3>Z4Te4Yl5cs6hz7n<3>zZtzeuzlwzsxzsx<3>zWizQezKaz\
+  EYz8U<6>814814
+  }
+
+PixelPower {	; (formula) Imajinaries yield asymmetry.
+chaw=P1, z=fn1(pixel), s=P2-fn2(pixel),
+if(P3==(0,0))
+	P3=sqrt(0,2)
+endif:
+
+z = z^s +chaw,
+
+|z| <=|P3|
+}
+Russia             { ; 4.51s a 350MHz PII @ 1280x1024
+  reset=2003 type=formula formulafile=pixpower.frm
+  formulaname=PixelPower function=zero/recip
+  center-mag=0.384015/-0.24339/2.205627/1.0783/-27.8465904519730465/5.47\
+  426022151024316 params=0.1/0.3/2/1/0/0 float=y maxiter=255
+  inside=0 outside=atan logmap=yes periodicity=255 sound=z/pc
+  colors=000zzz<3>LzzBzz0zz<3>0__0TT0MM0FF088<3>0NZ0Re0Vl0Zs0bz<3>RlzYoz\
+  dqzktzrwz<3>SazLWzERz7Lz0Fy<3>09Z07T06M04F028<3>41Z51e61l71s80z<3>WRza\
+  Yzgdzmkzsrz<3>fSycLy`EyY7yU0x<3>H0ZE0SB0M80F408<3>S0YY0dc0ji0qp0x<3>tR\
+  xuYxvdxwkxxry<3>xSqxLoxEmx7kw0h<3>U0NN0HF0C806806<3>Y0Ec0Gj0Ip0Kw0M<3>\
+  xVexbjyjoyrtyrt<3>xSTxLMwEFw78v00<3>U00N00F00800800<3>XA0bC0iF0oH0vK0<\
+  3>xdVxibyojytrytr<3>wmSwkLviEvg7ue0<3>TL0MG0FB0860860<3>UW0Za0dh0in0ou\
+  0<3>twVuxbwxjxyrxyr<3>iwSevLavEYu7Ut0<3>FT0CM08F0480480<3>6W06a07g07m0\
+  8s0<3>ZvVewblxjsyrsyr<3>SvYLvTEuN7tI0sC<3>0S60L50E3072072<3>0VH0`L0fP0\
+  lT0rX<6>ryvryv
+  }
+

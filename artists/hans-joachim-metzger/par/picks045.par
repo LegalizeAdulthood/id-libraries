@@ -1,0 +1,202 @@
+;Fractint parameter files from Sam Costy-Bennett, 72754,1062
+;use them and enjoy
+;6/22/94
+
+scb031        { ; Mollusk Mouth. What the Clam sees.
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia passes=t
+  corners=-1.309594/1.309587/-0.25423211/0.25423914
+  params=-2.0049999999999999 maxiter=5 inside=zmag potential=256/200/0
+  colors=@zoot.map
+  }
+
+scb032        { ; Ripley's nightmare!
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia corners=-1.309594/1.309587/-0.25423211/0.25423914
+  params=-2.02 maxiter=500 inside=bof60 potential=256/200/0 decomp=16
+  colors=00000x<4>00z000<125>z00000<120>00w
+  }
+
+scb033        { ; Catacombs
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia corners=-1.309594/1.309587/-0.25423211/0.25423914
+  params=-2.4199999999999999 maxiter=500 inside=bof60
+  potential=256/200/0 decomp=16 colors=@chroma.map
+  }
+
+scb034        { ; More Catacombs
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia corners=0.2526186/2.380614/-0.7829255/0.813075
+  params=-2.4199999999999999 maxiter=5 inside=bof60
+  potential=256/200/0 invert=2/0/0 decomp=16 colors=@chroma.map
+  }
+
+scb035        { ; Behold I give you...
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia passes=b
+  center-mag=2.10942e-015/5.55112e-015/0.666667 params=1 maxiter=50
+  inside=bof60 potential=256/200/0 invert=0.5/0/0
+  colors=000yo2<2>yt2yv1yx1zz0zz0zy0zx0zx0<15>bq2`p3Yp3<4>Jo7Fn8En9<4>9nE7\
+  nF7nH<11>7rg6sj6sk<12>8rx8ry8px<9>9Vl9Sk9QjANhALh<7>C5dD2cD2c<18>V0_V0_W\
+  0_W0_X0_<3>_0`<15>303000000<86>v00w00z99<2>yF9xG9xI9xJ8xL8<7>xX4xY4x_4xa\
+  4<6>ym3
+  }
+
+scb036        { ; Fork and Egg
+                     ; 4-25-94
+                     ; sam costy-bennett
+  reset type=julia passes=b
+  center-mag=-1.4766e-014/1.24345e-014/0.666667 params=1
+  inside=epsiloncross potential=256/200/0 invert=0.7/0/0
+  colors=000yo2<2>yt2yv1yx1zz0zz0zy0zx0zx0<15>bq2`p3Yp3<4>Jo7Fn8En9<4>9nE7\
+  nF7nH<11>7rg6sj6sk<12>8rx8ry8px<7>9Zn9Xm9Vl9Sk9QjANh<6>C9eC7eC5dD2c<19>V\
+  0_V0_W0_W0_X0_<3>_0`<15>303000000<86>v00w00z99<2>yF9xG9xI9xJ8xL8<7>xX4xY\
+  4x_4xa4<6>ym3
+  }
+
+scb037        { ; Seashells and Aladdin's Lamp
+                     ; 4-25-94
+                     ; from Hundhammer in B of Fractals.
+                     ; sam costy-bennett
+  reset type=julia
+  corners=-0.36400008/0.36399986/-0.36399992/0.36399998
+  params=0.27366000000000001/0.0074200000000000004 maxiter=500
+  inside=epsiloncross invert=0.1/0/0 colors=@chroma.map
+  }
+
+scb038        { ; Octopus' Filigree
+                     ; 4-25-94
+                     ; I like the laciness.
+                     ; sam costy-bennett
+  reset type=julia passes=t
+  corners=-0.36400008/0.36399986/-0.36399992/0.36399998
+  params=0.27366000000000001/0.0074200000000000004 maxiter=500
+  fillcolor=230 inside=epsiloncross invert=0.1/0/0 colors=@chroma.map
+  }
+
+scb039        { ; Frog Legs
+                     ; 4-26-94
+                     ; sam costy-bennett
+  reset type=mandel center-mag=-0.541387/-0.00807538/4.71698
+  params=0.20000000000000001 maxiter=500 inside=epsiloncross
+  invert=0.6/0/0
+  colors=CCC0zn0007sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4\
+  >kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08\
+  u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy\
+  0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2x<10>zv4wz0<4>7z00z3<4>0zs3\
+  wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z9<2>0zc
+  }
+
+Timeline           { ; Magnified Tiny Mite3
+                     ; 4-17-94
+                     ; into the mite continued, real coef16,2nd term1,1stfuntan
+                     ; sam costy-bennett
+  reset=1800 type=fn*z+z function=tan
+  corners=2.8541568/3.1513438/-0.0456844568/0.043109417 params=16/0/1
+  maxiter=200 inside=epsiloncross outside=0 potential=256/50/150
+  decomp=8
+  colors=000Wih<5>cSDSqx<32>GrWSpw<20>RC`QAZSpw<28>gBTSpw<13>_R_Sow<18>C6V\
+  Sqx<38>5xjSqvSqxTqt<19>ko8lo6km7<22>W8KV6LT5Q<2>N2f<13>loFnsDnsD<16>mt7
+  }
+
+scb010             { ; Turtle shell pieces
+                     ; 4-27-94
+                     ; sam costy-bennett
+  reset=1800 type=lambda(fn||fn) function=exp/sqr
+  corners=-1.441956/1.444504/-1.083145/1.081879
+  params=0.55000000000000004/0.025000000000000001/0.80000000000000004
+  maxiter=50 inside=bof60 outside=25 finattract=y
+  colors=CCCsECsCC<22>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<\
+  20>sCs<20>ECsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssssq<19>ssEs\
+  sCsqC<18>sGC
+  }
+
+scb040             { ; Red Pearls
+                     ; 4-17-94
+                     ; sam costy-bennett
+  reset=1800 type=fn*z+z function=sin passes=t
+  corners=0.8555208/3.959518/-1.124419/1.305314 params=1/0/1
+  maxiter=200 inside=bof61 outside=imag potential=256/150/0
+  colors=000YK9<9>iD59ZH<42>442BZI<11>ecdAZH<41>tNtAZH<31>uxh9ZH<33>c`W9ZH\
+  <16>CQJ9ZHDPK<23>DKJCJIDJI<29>jAV
+  }
+
+scb041             { ; Magnified Tiny Mite3
+                     ; 4-17-94
+                     ; into the mite continued, real coef16,2nd term1,1stfuntan
+                     ; sam costy-bennett
+  reset=1800 type=fn*z+z function=tan
+  corners=2.8541568/3.1513438/-0.0456844568/0.043109417 params=16/0/1
+  maxiter=200 inside=epsiloncross outside=0 potential=256/50/150
+  decomp=8
+  colors=000Wih<5>cSDSqx<32>GrWSpw<20>RC`QAZSpw<28>gBTSpw<13>_R_Sow<18>C6V\
+  Sqx<38>5xjSqvSqxTqt<19>ko8lo6km7<22>W8KV6LT5Q<2>N2f<13>loFnsDnsD<16>mt7
+  }
+
+4-27_rose01        { ; nothing special, just kind of nice and subtle
+                     ; 4-27-94
+                     ; sam costy-bennett
+  reset=1800 type=lambda(fn||fn) function=sin/sqr
+  corners=-1.441956/1.444504/-1.083145/1.081879
+  params=0.55000000000000004/0.10000000000000001/1 maxiter=50
+  inside=bof60 outside=25 finattract=y periodicity=0
+  colors=CCCsECsCC<22>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<\
+  20>sCs<20>ECsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssssq<19>ssEs\
+  sCsqC<18>sGC
+  }
+
+scb042             { ; Red Rose, soft and subtle
+                     ; 4-27-94
+                     ; sam costy-bennett
+  reset=1800 type=lambda(fn||fn) function=sin/sqr
+  corners=-1.441956/1.444504/-1.083145/1.081879
+  params=0.55000000000000004/0.10000000000000001/1 maxiter=50
+  inside=bof60 outside=25 finattract=y periodicity=0
+  colors=CCCsECsCC<22>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<\
+  20>sCs<20>ECsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssssq<19>ssEs\
+  sCsqC<18>sGC
+  }
+
+scb045             { ; The Waves
+                     ; 4-30-94
+                     ; sam costy-bennett
+  reset=1800 type=barnsleyj1 passes=b
+  corners=-1.123378/-0.00336504/-0.48264295/0.35736418
+  params=1.1000000000000001/0.20000000000000001 maxiter=5000
+  fillcolor=200 inside=bof60 decomp=96 biomorph=1
+  colors=CCCqtm<7>qrnqroqpn<2>qqoqqoqpp<2>qppWLW<28>qopoe4<14>qpm0b1<36>pp\
+  oQSF<20>poo5_K<46>pppAsE<32>ppoC5D<19>onoMSj<17>popveE<2>ugLqtl<2>qtm
+  }
+
+scb043             { ; The Days Mistake
+                     ; 4-30-94
+                     ; sam costy-bennett
+  reset=1800 type=barnsleym1 corners=-0.9/3.100007/-1.300002/1.7
+  maxiter=5000 fillcolor=200 inside=bof60 decomp=96
+  colors=CCCGCG<19>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq\
+  <19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>\
+  Cs_CsYECE
+  }
+
+scb044             { ; Octopus Arms
+                     ; 4-30-94
+                     ; sam costy-bennett
+  reset=1800 type=barnsleyj1 passes=t
+  corners=-0.48799735/0.48800435/-0.36600124/0.36599924
+  params=1.1000000000000001/0.59999999999999998 maxiter=500 bailout=50
+  fillcolor=200 inside=zmag invert=0.6/0/0 decomp=64
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }

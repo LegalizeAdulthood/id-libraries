@@ -1,0 +1,710 @@
+;; 27 May 1994.
+;
+;; I'm a Mandelbrot nut, which reflects in most of the images below.
+;; There are some that are not Mandelbrots, but mostly I've tried to
+;; concentrate on the 'classics' and see what kind of pretty things I
+;; can make.  All images are 640 x 480, maximum 256 colors.  Most of 
+;; these images are colored as created, often with Fractint's BLUES 
+;; or INJECTOR maps.  Some of them are colored with maps I've made.
+;
+;; The first comment in each case is a general description of from
+;; where in the Set the image series comes.  The number following is
+;; the Fractint magnification.
+;;
+;; The second comment is the date when the image was created.	
+;
+;; The third comment is the time it took to create the image, in 
+;; minutes, seconds, and decimals of seconds.  All were made on a 
+;; Compaq Prolinea 486 running at 50 Megahertz with a Floating Point 
+;; Unit.  FPU math was invoked as the Fractint program determined.
+;
+;; The fourth comment is a copyright note.  Yeah, I know I made 'em
+;; with Fractint, but, still, I knew how to find 'em!  Please use the
+;; images if you like and as you like, but if you do use them, I'd
+;; appreciate a note letting me know that you have done so.
+;
+;; Would certainly appreciate hearing any comments or advice.  I'm:
+;;
+;;	Leonard Pratt
+;;	CompuServe 71407,767
+;
+;; Hope you like 'em!
+;
+;; ==================================================================
+
+
+Back4              { ; From rear of main Mandelbrot hump.  125,372.
+				 ; 8 September 1993.
+				 ; 0.02.58			
+                     ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.4032550814/0.4032762962/0.2102492559/0.2102652084 float=y
+  maxiter=20000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Back5              { ; From rear of main Mandelbrot hump.  1,213,196.
+                     ; 8 September 1993.
+				 ; 0.03.59
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.4032635474/0.40326573859/0.21025765679/0.21025930533 float=y
+  maxiter=20000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Back4B             { ; From rear of main Mandelbrot hump.  6,800,355.
+                     ; 9 September 1993.
+				 ; 0.07.39.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.403263714071/0.403264104781/0.210258945091/0.210259239194
+  float=y maxiter=30000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Back4C             { ; From rear of main Mandelbrot hump.  259,819,462.
+                     ; 9 September 1993.
+				 ; 0.09.17.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.403263824275/0.4032638344905/0.21025912907501/0.21025913677266
+  float=y maxiter=30000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Back4D             { ; From rear of main Mandelbrot hump.  32,469,974,201.
+                     ; 9 September 1993.
+				 ; 0.21.08.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel passes=1
+  corners=0.4032638293603485/0.4032638294420042/0.2102591329507525/0.210259133\
+  0123479 float=y maxiter=30000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Back6              { ; From rear of main Mandelbrot hump.  85,912,697.
+                     ; 8 September 1993.
+				 ; 0.14.13.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel passes=1
+  corners=0.4032646599707/0.4032646908809/0.210258525675/0.2102585489544
+  float=y maxiter=30000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Drago5             { ; Detail from Seahorse Valley.  12,496,543,485.
+                     ; 23 March 1993.
+				 ; 0.22.51.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.723110595895413/-0.723110595682938/0.287599767853332/0.2875997680\
+  13376 float=y maxiter=5000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Dune               { ; Detail from Seahorse Valley.  59,848.
+                     ; 25 May 1993.
+				 ; 0.05.46.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.7231323925/-0.7230880209/0.2875730433/0.287606461 float=y
+  maxiter=5000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45>z10\
+  z00y00<46>700
+  }
+
+Kris1              { ; Upper left of main bulb.  5,883.
+                     ; 7 September 1993.
+				 ; 0.02.19.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.531643308/-0.531190748/0.591915408/0.592255357 float=y
+  maxiter=5000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45>z10\
+  z00y00<46>700
+  }
+
+Kris2              { ; Upper left of main bulb.  58,709.
+                     ; 7 September 1993.
+				 ; 0.05.09.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.5314719159/-0.5314265891/0.5921212227/0.5921552885 float=y
+  maxiter=5000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45>z10\
+  z00y00<46>700
+  }
+
+Kris3              { ; Upper left of main bulb.  506,702.
+                     ; 7 September 1993.
+				 ; 0.06.41.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.53146453879/-0.53145928968/0.59214172266/0.59214566974
+  float=y maxiter=5000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45>z10\
+  z00y00<46>700
+  }
+
+Kris4              { ; Upper left of main bulb.  5,778,824.
+                     ; 7 September 1993.
+				 ; 0.12.01.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.53146236193/-0.531461901913/0.592143823923/0.592144170014
+  float=y maxiter=5000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45>z10\
+  z00y00<46>700
+  }
+
+Nek2a              { ; Valley between 2nd & 3rd bulb.  2,585.
+                     ; 11 August 1993.
+				 ; 0.03.53.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-1.25215025/-1.25112028/0.016385353/0.017159034 float=y
+  maxiter=5000 inside=0 colors=@injector.map
+  }
+
+Nek2b              { ; Valley between 2nd & 3rd bulb.  6,069.
+                     ; 11 August 1993.
+				 ; 0.01.02.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-1.251590937/-1.251152514/0.016787538/0.017117039 float=y
+  maxiter=5000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Nek2c              { ; Valley between 2nd & 3rd bulb.  138,448.
+                     ; 12 August 1993.
+				 ; 0.02.18.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-1.2514324459/-1.2514132349/0.0169192699/0.0169337157 float=y
+  maxiter=5000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Nek2d              { ; Valley between 2nd & 3rd bulb.  775,637.
+                     ; 12 August 1993.
+				 ; 0.07.03.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-1.25142420829/-1.25142078098/0.01692533924/0.01692791776
+  float=y maxiter=5000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Sin4               { ; Pretty picture of the Sine function.  0.33.
+                     ; 1 January 1993.
+				 ; 0.00.39.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=lambdafn function=sin corners=-4.0/4.0/-3.0/3.0 params=1/0.4
+  float=y maxiter=256
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Spira4             { ; From the top bulb.  1,502,382.
+                     ; 11 August 1993.
+				 ; 0.05.31.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.38789524744/-0.38789347802/0.62435939212/0.62436072334
+  float=y maxiter=20000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Spooky             { ; From a lower filament off the nose.  110.
+                     ; 3 September 1993.
+				 ; 0.00.20.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel corners=-1.4891994/-1.4651851/-0.0091884/0.0088505
+  float=y maxiter=1000 inside=0
+  colors=000<30>U00V00X00<28>y00z00z01z02<45>z0z<15>zzz<15>z0z<46>z01z00z00<62\
+  >U00
+  }
+
+Tail2              { ; Upper right of main bulb.  3,111.
+                     ; 29 May 1993.
+				 ; 0.02.01.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.321483288/0.322338414/-0.035535001/-0.034892321 float=y
+  maxiter=3000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Tail4              { ; Upper right of main bulb.  12,276.
+                     ; 29 May 1993.
+				 ; 0.01.37.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.321474233/0.321690778/-0.035198908/-0.035035991 float=y
+  maxiter=3000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Tail5              { ; Upper right of main bulb.  177,416.
+                     ; 29 May 1993.
+				 ; 0.03.51.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=0.321571983/0.3215869511/-0.0351423478/-0.0351310749 float=y
+  maxiter=6000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Thai2              { ; Another petty picture of the Sine.  3.67.
+                     ; 5 September 1993.
+				 ; 0.04.52.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=lambdafn function=sin
+  corners=-1.496088/-0.769953/1.462422/2.007307 params=1/0.4 float=y
+  maxiter=500 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>400000<2>\
+  000
+  }
+
+Vortex4            { ; Neck between main & top bulb.  2,426,999.
+                     ; 8 May 1993.
+				 ; 0.04.01.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.12506333663/-0.1250622414/0.840142898297/0.840143722359
+  float=y maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>400000<2>\
+  000
+  }
+
+Vortex5            { ; Neck between main & top bulb.  85,828,927.
+                     ; 8 May 1993.
+				 ; 0.06.15.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.1250627871052/-0.1250627561836/0.8401432726877/0.8401432959898
+  float=y maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>400000<2>\
+  000
+  }
+
+Vortex6            { ; Neck between main & top bulb.  294,710,860.
+                     ; 8 May 1993.
+				 ; 0.09.08.
+				 ; Copyright Leonard Pratt, 1993.
+  reset type=mandel
+  corners=-0.1250627762173/-0.12506276721664/0.84014328101858/0.84014328780489
+  float=y maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>400000<2>\
+  000
+  }
+
+Blaze1             { ; Filament off the upper right.  39,215.
+				 ; 24 September 1993.
+				 ; 0.14.02.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-0.153561441084/-0.153493440254/1.03826195336/1.03831295414
+  float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Blaze2             { ; Filament off the upper right.  288,346.
+				 ; 24 September 1993.
+				 ; 0.47.06.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.1535437706588/-0.1535345225459/1.038294845987/1.038301782092
+  float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Blaze3             { ; Filament off the upper right.  819,165.
+				 ; 24 September 1993.
+				 ; 0.09.16.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.1535405861239/-0.1535373307882/1.038299207422/1.038301648931
+  float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Blaze4             { ; Filament off the upper right.  9,525,180.
+				 ; 24 September 1993.
+				 ; 0.16.57.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-0.15353944485622/-0.15353916489736/1.0382995433357/1.0382997533\
+  054 float=y maxiter=30000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Blaze5             { ; Filament off the upper right.  287,767,599.
+				 ; 19 September 1993.
+				 ; 0.28.00.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-0.1535392539783622/-0.1535392447117193/1.038299655848075/1.0382\
+  99662798128 float=y maxiter=30000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Blaze6             { ; Filament off the upper right.  5,755,792,411.
+				 ; 24 September 1993.
+				 ; 0.43.15.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1750 type=mandel
+  corners=-0.15353924963471399/-0.15353924917138362/1.038299659163886/1.03\
+  8299659511362 float=y maxiter=30000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Bug4               { ; Filament off the top bulb.  77,224,533,098.
+				 ; 26 September 1993.
+				 ; 0.03.16.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-1.04356016187401/-1.0435601618395316/0.34170366771663868/0.3417\
+  0366774253719 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Realnice           { ; From the nose filament.  13,503.
+				 ; 13 September 1993.
+				 ; 0.00.41.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-1.72202419/-1.7218278/-7.4326992e-005/7.37793744e-005
+  maxiter=10000 inside=0
+  colors=000000<13>00zK00<14>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z0\
+  0<45>H0000z<14>007
+  }
+
+Candles            { ; Filament off upper left of main.  224,164.
+				 ; 29 September 1993.
+				 ; 0.03.28.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-0.726124777/-0.726112874/0.286748871/0.286757793
+  maxiter=20000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Valy2a1b           { ; S'horse Valley, nose filament bulb.  2,415,570.
+				 ; 10 October 1993.
+				 ; 0.01.28.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-1.76879169619/-1.76879059187/0.0044242632497218/0.0044250912113\
+  219 float=y maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>40000\
+  0<2>000
+  }
+
+Valycor3           { ; S'horse Valley, nose filament bulb.  78,392,456.
+				 ; 26 October 1993.
+				 ; 0.13.54.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-1.76847940280596/-1.76847936877151/0.0036754731254766/0.0036754\
+  9863813552 float=y maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>40000\
+  0<2>000
+  }
+
+Valy2b2b           { ; S'horse Valley, nose filament bulb.  160,116.
+				 ; 26 October 1993.
+				 ; 0.01.40.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-1.76965339/-1.76963673/0.00354954787/0.00356203876
+  maxiter=10000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>40000\
+  0<2>000
+  }
+
+Rear1i             { ; Lower top rear of main.  9,906,873,045.
+				 ; 6 November 1993.
+				 ; 0.01.54.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=0.34394242137024511/0.34394242163954569/0.05607695427496287/0.05\
+  6076954476842918 float=y maxiter=20000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>40000\
+  0<2>000
+  }
+
+Rear1k             { ; Lower top rear of main.  323,165,178,251.
+				 ; 6 November 1993.
+				 ; 0.05.04.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=0.34394242150411669/0.34394242151238158/0.056076954374903287/0.0\
+  56076954381092073 float=y maxiter=20000 inside=0
+  colors=000000<28>f00m00<31>tj0zm0<30>ztqzzz<46>zz5zz0<46>z50z00<58>40000\
+  0<2>000
+  }
+
+Star3              { ; Filament, upper left bulb.  6,813.
+				 ; 13 November 1993.
+				 ; 0.01.08.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-0.565422166/-0.565031771/0.643943505/0.644237041
+  maxiter=10000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Star7              { ; Filament, upper left bulb.  64,824,207.
+				 ; 13 November 1993.
+				 ; 0.03.03.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.565256535000174/-0.565256493842021/0.644112028124795/0.644112\
+  058977466 float=y maxiter=20000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Star8              { ; Filament, upper left bulb.  1,296,481,922.
+				 ; 13 November 1993.
+				 ; 0.03.34.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.565256515321231/-0.5652565132633092/0.6441120429730429/0.6441\
+  120445156792 float=y maxiter=20000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Star9              { ; Filament, upper left bulb.  25,936,791,461.
+				 ; 13 November 1993.
+				 ; 0.05.52.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.56525651422777889/-0.56525651412491118/0.64411204374768338/0.\
+  64411204382479392 float=y maxiter=20000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Star10             { ; Filament, upper left bulb.  164,228,592,222.
+				 ; 13 November 1993.
+				 ; 0.11.44.
+				 ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-0.56525651418736922/-0.56525651417112321/0.64411204378079612/0.\
+  64411204379297426 float=y maxiter=20000 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+Sixteen            { ; Top of 2nd bulb.  65,800,524.
+                     ; 30 November 1993.
+                     ; 0.01.29.
+                     ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel
+  corners=-1.29411426525853/-1.29411422471957/0.0808822852434499/0.0808823\
+  156383442 float=y maxiter=5000 inside=0
+  colors=000M00<13>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z\
+  M00<14>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z
+  }
+
+Bug6               { ; Bug from upper left of 2nd bulb.  5,462,540.
+                     ; 6 December 1993.
+                     ; 0.01.24.
+                     ; Copyright Leonard Pratt, 1993.
+  reset=1820 type=mandel passes=t
+  corners=-1.2141277757106/-1.2141272878106/0.24269776082122/0.24269812695\
+  122 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000M00<13>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z\
+  M00<14>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z
+  }
+
+Thrhills           { ; Lower left of main bulb.  Corners parameters, no mag.
+                     ; 6 December 1993.
+                     ; 0.01.06.
+                     ; By Ron Myhr, colored by Leonard Pratt.
+  reset=1820 type=mandel
+  corners=-0.5571401033063/-0.5571346350502/-0.635099267883/-0.63509509869\
+  13 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000M00<13>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z\
+  M00<14>z00<15>zz0<15>z0z<15>00zM00<14>z00<15>zz0<15>z0z<15>00z
+  }
+
+verysmall          {
+  reset=1820 type=mandel
+  corners=-1.9999991175880689/-1.9999991175866501/-5.407397578331893e-013/\
+  5.4106126240431669e-013 float=y maxiter=30000 inside=0
+  colors=00000z<45>0Kz0Kz0Kz0Kz0Lz<27>0UzXFz<13>x1zz0zz0y<13>z0Yz0zz0U<13>\
+  z02z00z00<14>z00z00z10z20<27>zP0zQ0zQ0zQ0<29>zQ0zQ0zR0zS0<44>zz0
+  }
+
+Fan2               { ; From corner of upper left bulb.  843.
+                     ; 31 January 1994.
+                     ; 06.05.37.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.11081344/-1.10765338/0.225788517/0.228158219
+  maxiter=10000 inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Fan3               { ; From corner of upper left bulb.  4,905.
+                     ; 31 January 1994.
+                     ; 13.42.35.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.1096931/-1.10914917/0.226339018/0.226746757 maxiter=10000
+  inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Fan5               { ; From corner of upper left bulb.  8,427.
+                     ; 31 January 1994.
+                     ; 11.13.11.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.10880292/-1.10848751/0.226453803/0.226691131
+  maxiter=10000 inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Fan6               { ; From corner of upper left bulb.  21,976.
+                     ; 31 January 1994.
+                     ; 04.59.50.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.10940131/-1.10927991/0.226826292/0.226917297
+  maxiter=10000 inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Fan6a              { ; From corner of upper left bulb.  97,465.
+                     ; 31 January 1994.
+                     ; 07.16.44.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.10935457/-1.1093272/0.22686174/0.22688226 maxiter=10000
+  inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Dragfan5           { ; From Seahorse Valley.  37,240.965.
+                     ; 25 March 1994.
+                     ; 13.25.27.
+                     ; Copyright Leonard Pratt 1994.
+  reset=1820 type=mandel
+  corners=-0.733062001490887/-0.733061929847213/0.208244768204967/0.208244\
+  821909268 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Neckfan4           { ; Bottom of an upper bulb.  44,843,057.
+                     ; 19 March 1994.
+                     ; 16.35.97.
+                     ; Copyright Leonard Pratt 1994.
+  reset=1820 type=mandel passes=t
+  corners=-0.641395986861855/-0.641395927311877/0.435010567979758/0.435010\
+  612579749 float=y maxiter=20000 inside=0 logmap=yes
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+Tailfan5           { ; Detail of rear filament.  4,890,335.
+                     ; 2 February 1994.
+                     ; 02.36.60.
+                     ; Copyright Leonard Pratt 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.4165700404976/-1.4165694950255/-2.0789356728652e-007/2.010762\
+  8971448e-007 float=y maxiter=5000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+curl5              { ; Along main spike.  255,819,790.
+                     ; 26 May 1994.
+                     ; 10.22.13.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.90724965189089/-1.90724964144151/-1.617967096601782e-007/-1.5\
+  39787062323011e-007 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+curl6              { ; Along main spike.  15,418,261,248.
+                     ; 26 May 1994.
+                     ; 20.56.07.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel
+  corners=-1.9072496491814483/-1.907249649008063/-1.5747545571394047e-007/\
+  -1.5734573940106866e-007 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+curl7              { ; Along main spike.  126,379,190,554.
+                     ; 26 May 1994.
+                     ; 37.58.76.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.9072496491020761/-1.907249649080935/-1.574141773486112e-007/-\
+  1.5739835195844038e-007 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+curla5             { ; Along main spike.  94,956,246,612.
+                     ; 26 May 1994.
+                     ; 3.34.76.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.9073786668023789/-1.9073786667742854/3.4731646239548687e-005/\
+  3.4731667301880775e-005 float=y maxiter=20000 inside=0
+  colors=000000<44>y00z00z10<31>zf0zu0<12>zz0zz0zz2<30>zzz<30>zz2zz0zy0<45\
+  >z10z00y00<46>700
+  }
+
+gauze6             { ; Along main spike.  20,166,151,709,784.
+                     ; 14 May 1994.
+                     ; 1.17.00.
+                     ; Copyright Leonard Pratt, 1994.
+  reset=1820 type=mandel passes=t
+  corners=-1.9990949076405877/-1.9990949076404458/-4.9472300665284215e-014\
+  /4.9703785520243751e-014 float=y maxiter=30000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
