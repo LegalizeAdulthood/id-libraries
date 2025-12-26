@@ -1,0 +1,262 @@
+APreview           { ; Two mini Mandelbrot sets on a filament
+  reset type=mandel corners=0.3243381/0.3783222/-0.6521847/-0.6116972
+  maxiter=256
+  colors=000000AMb<5>CL`<5>UJa<9>MQg`8H<7>i49ww0<3>ww04Mn<37>_Qy2Nl<20>qtL1Ml<\
+  36>fo02Nm<20>yvk0Mm<43>Pko0Mm<42>9Md1Ml9Mc<4>AMb
+  }
+
+Fig1.27            { ; The Mandelbrot Set Itself
+  reset type=mandel corners=-2.5/1.5/-1.5/1.5 colors=@stripes.map
+  }
+
+Fig1.28and5.14     { ; A Julia set
+  reset type=julia corners=-1.662803/1.578395/-1.23981/1.191089
+  params=-0.8085942695/0.1711177395
+  colors=000K6J<35>74U74U85T<94>myRmyRlxS<13>foT
+  }
+
+Fig1.29            { ; Newton's Method
+  reset type=newton corners=-1.285953/-0.264795/-1.010203/-0.244334
+  params=4
+  colors=000Ln`A0A<3>D0DE0HF0FG0GH0HI0UJ0JK0KL0LM0mN0NO0OP0PQ0wR0RS0ST0TUUzwww\
+  cUeeUkiSq<10>mbsmUsnds<18>wwwajr<13>YssYssYrs<44>RBeQAdQAdQAd<10>TD`TD`TD_UE\
+  Z<11>WHV
+  }
+
+Fig2.19plasma      { ; Save this as a GIF for using with 3D transforms
+  reset type=plasma corners=-2.0/2.0/-1.5/1.5 params=2 float=y
+  maxiter=1024 colors=@topo.map
+  }
+
+Fig2.19            { ; 3D Mountain transform
+                     ; (Reguires a plasma image to transform)
+  3d=yes scalexyz=90/90 roughness=30 waterline=0 filltype=2 ambient=20
+  rotation=60/30/0 perspective=0 xyshift=0/0
+  }
+
+Fig2.20            { ; 3D Planet with continents
+                     ; (Reguires a plasma image to transform)
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=30 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=000sss<108>kkkkkklll<23>mmmmmmlll<11>eee
+  }
+
+Fig2.30            { ; Henon's orbiting attractor
+  reset type=henon
+  corners=0.30137787/0.31049368/0.21029885/0.21179364/0.30312125/0.20921464
+  params=1.4/0.3 float=y maxiter=32767
+  }
+
+
+Fig2.32            { ; Graph of Lorenz' weather system attractor
+  reset type=lorenz
+  corners=-13.39070967/13.48388814/1.58805/28.577209/-13.39952864/1.703672
+  params=0.02/6/15/1 float=y colors=@blues.map
+  }
+
+Fig2.33            { ; Close-up of Lorenz attractor
+  reset type=lorenz
+  corners=-0.05278/-1.51445/5.714539/21.941467/-6.418884/17.044464
+  params=0.02/6/15/1 colors=@blues.map
+  }
+
+Fig2.34            { ; Diffusion limited aggregation
+  reset type=diffusion corners=-2.0/2.0/-1.5/1.5 params=10
+  colors=000zyy<60>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<17>LBB
+  }
+
+Fig2.38a           { ; Magnetism fractal
+  reset type=magnet1j corners=-4.41933/2.71667/-0.544195/4.807805
+  params=-0.300469483568055/0.687679083094556 periodicity=0
+  colors=00000z<83>zz0zz0zy0<62>zF0
+  }
+
+Fig2.38b           { ; Magnetism fractal
+  reset type=magnet2j corners=-2.157545/-0.371265/-2.107867/-0.768156
+  params=0.895148678005045/1.40041757077912 finattract=y periodicity=0
+  colors=000grYD8RmMxvZwZEn<2>EUFESW`8mV6aP4PmGivNUMmpaRw6W9VInJRcgKp<2>opPnTw\
+  wlueDieIUeNDf9xgAvhBtmQxufwdPtcenavhoXVyu0TQuFgphVckqHc6_NXm3t`7ohSEpEJf0OXV\
+  JEhQZlg8SC_DFAWZvMyreGqeNifVaPPekinI84VQgKfPXPrOekFvcw6oeAm<2>cGCi8qm7iVBlKD\
+  _XVcDo9PKgjBsoEmtHg_IjTRVbDo<2>SSKvK7XDpOIfENXcPhadR_t9L6c02IZJfSUNLd3X8r<2>\
+  35WXFq<2>4_RaLo<2>QvLLaXKYh`Kx<2>LqseZZfy7MCW2G1hHdlPKN1PwjKZcF_4PcEvaKsZQpT\
+  HjGPW2XGeKt<2>eqcjNmoa`upOSIpDSfWInMRcC`TOE4fYuhwqZKs
+  }
+
+Fig2.38c           { ; Magnetism fractal
+  reset type=magnet1j
+  corners=-3.964111/3.261917/4.67961/-5.88564/3.708579/-5.550644
+  params=1.23908238283765/-0.988129709088234 finattract=y periodicity=0
+  colors=000A00<104>y00z00y00<41>d00
+  }
+
+Fig2.38x           { ; A Mandelbrot set hiding in a Magnetism fractal
+  reset type=magnet1m corners=1.386763/2.224523/-1.761396/-1.133076
+  float=y finattract=y colors=@stripes.map
+  }
+
+Fig3.33            { ; Robert May's population equation
+  reset type=bifurcation corners=1.9/3.000001/0.000005/1.34 colors=000zzz
+  }
+
+Fig3.34            { ; Bifurcation of sin(pi y)
+  reset type=bif=sinpi corners=-2.139862/2.140549/-2.997498/2.99585
+  colors=000zzz
+  }
+
+Fig3.35a           { ; Close up on bifurcation
+  reset type=bifurcation
+  corners=2.56993166/2.5699560363/0.4810528711/0.4810839342 float=y
+  maxiter=2048 colors=000zzz
+  }
+
+Fig3.35b           { ; Close up on bifurcation
+  reset type=bifurcation
+  corners=2.56994319977/2.56994876147/0.48107228562/0.48107937297 float=y
+  maxiter=2048 colors=000zzz
+  }
+
+Fig3.35c           { ; Close up on bifurcation
+  reset type=bifurcation
+  corners=2.56989159119/2.56989871016/0.48101092508/0.4810199969 float=y
+  maxiter=2048 colors=000zzz
+  }
+
+Fig3.35d           { ; Close up on bifurcation
+  reset type=bifurcation
+  corners=2.5696355511/2.5696494281/0.4816374951/0.4816551786 float=y
+  maxiter=4069 colors=000zzz
+  }
+
+Fig5.6             { ; 3D transform for IFS planets
+                     ; (reguires a picture to transform)
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=200
+  scalexyz=90/200 roughness=200 waterline=0 filltype=5 lightsource=1/1/1
+  ambient=20 perspective=0 xyshift=0/0 colors=000zzz<148>QQQ
+  }
+
+Fig5.14            { ; A Julia Set (also similar to a color plate)
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-1.1708387045/1.5499999994617e-007
+  colors=000Ei7bXCgd7RGLNDMKANRKJG7O<3>GF8NCLU8ZFi7
+  }
+
+Fig5.14            { ; A Julia Set
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=0.3/0.6
+  colors=000ynB<2>VbgG`T1ZE<3>u1s<3>iZ1<2>3xfDdlOLrZ0yg8gqGP<2>SzR<2>IwKLZV<3>\
+  SeZ2M0<3>yd5<3>31X<2>TMmYEec6Y2hl<3>wbk<2>63e<3>FDYCNL9X8Q1RfIT<3>L6r<2>NGMe\
+  Wy<3>CSk<3>WvT<2>o1q<2>L5e<2>0uA4an<2>E2n<3>7cBFSXNFrZaljyf_hoUpZNxH<3>BCFBt\
+  j<3>liVh3PVyZ_hLeR7TN7FI6<3>k3K<2>FHX<2>ju7<2>Y7E<3>aWi<2>iRtlPxlFrm5kxdL<3>\
+  _Qs<3>XRP
+  }
+
+Fig5.15a           { ; Mandelbrot set zoom sequence 1
+  reset type=mandel corners=-1.302437/-0.169338/-0.264867/0.584514
+  maxiter=1024 colors=@prplhaze.map
+  }
+
+Fig5.15b           { ; Mandelbrot set zoom sequence 2
+  reset type=mandel corners=-0.7642151/-0.7075601/0.1385891/0.1810582
+  maxiter=1024 colors=@prplhaze.map
+  }
+
+Fig5.15c           { ; Mandelbrot set zoom sequence 3
+  reset type=mandel corners=-0.73730396/-0.73447121/0.15876192/0.16088538
+  maxiter=1024 colors=@prplhaze.map
+  }
+
+Fig5.15d           { ; Mandelbrot set zoom sequence 4
+  reset type=mandel
+  corners=-0.735958399/-0.735816762/0.159770565/0.159876738 maxiter=2048
+  colors=@prplhaze.map
+  }
+
+Fig5.15e           { ; Mandelbrot set zoom sequence 5
+  reset type=mandel
+  corners=-0.735891121/-0.735883979/0.159820953/0.159826307 maxiter=2048
+  colors=@prplhaze.map
+  }
+
+Fig5.15f           { ; Mandelbrot set zoom sequence 6
+  reset type=mandel
+  corners=-0.73588772855/-0.73588737145/0.15982349615/0.15982376385
+  float=y maxiter=2048 colors=@prplhaze.map
+  }
+
+Fig5.16            { ; Julia set from center of zoom sequence
+  reset type=julia corners=-1.568/1.568/-1.176/1.176
+  params=-0.73588754999999/0.159823630000002 float=y maxiter=2048
+  colors=@prplhaze.map
+  }
+
+Fig5.16zoom        { ; Closer look at ZoomJulia
+  reset type=julia corners=-0.752775/0.752775/-0.53443/0.594732
+  params=-0.770548113/0.10447237635 maxiter=1500 colors=@prplhaze
+  }
+
+Fig5.17            { ; Branching filaments from Mandelbrot set
+  reset type=mandel
+  corners=-0.23672287021399/-0.23672279021312/0.82941297001249/0.8294128573207\
+  5/-0.23672278545159/0.8294128610194 float=y maxiter=200 logmap=yes
+  colors=@volcano.map
+  }
+
+Fig5.18            { ; Spiral patterns within Mandelbrot set
+  reset type=julia passes=1 corners=-0.723702/-0.228645/-0.114836/0.256457
+  params=-0.747854922/-0.0750671318 maxiter=2000 logmap=8
+  colors=000kkkzzz<5>zzz00e10f<5>27g38g39h4Ai4Bi5Ci5Dj6Ek6Fk7Gk7Hl8Im8Jm9Km9Ln\
+  AMoANoBOoBPpCQqCRqDSqDTrEUsFVsFWsGXtGYuHXuHYuHZuH_uI`vIawJbwJcwKdx<2>LgyAV0<\
+  12>CX2DX2DX2EX3EX3<18>H`6I`6I`7Ia7Ia8Ja8<4>KcALcALdAMdAMdB<7>PgDPgEPhEPhEQhF\
+  <20>WoNXoNXpNYpNYpO<8>`sR`tRatRatRbtRbtR<2>etRetRftRftRgtR<22>ttRutRutRutQ<5\
+  >utNusNusNurMuqL<5>unHumHumGumG<9>uhBuhBugBugBugA<7>tc8tc8sb7sa6sa6s`5r`5rZ4\
+  rZ4rX4qX4qV2qV2qT2WWWWWWzzz<6>zzzkkk
+  }
+
+Fig5.19            { ; A Pickover biomorph Julia set
+  reset type=julia corners=-3.930027/3.930046/-2.947506/2.947513
+  params=-0.8764166855/0.514839828 maxiter=250 biomorph=2
+  colors=@stripes.map
+  }
+
+Fig5.20a           { ; Plant growing in Mandelbrot set
+  reset type=mandel corners=0.05788368/0.06157237/-0.62136626/-0.61860257
+  maxiter=75 biomorph=2 colors=000<74>0_0
+  }
+
+Fig5.20b           { ; Plant growing in Mandelbrot set
+  reset type=mandel corners=0.05788368/0.06157237/-0.62136626/-0.61860257
+  maxiter=100 biomorph=2 colors=000<99>0l0
+  }
+
+Fig5.20c           { ; Plant growing in Mandelbrot set
+  reset type=mandel corners=0.05788368/0.06157237/-0.62136626/-0.61860257
+  maxiter=125 biomorph=2 colors=000<124>0x0
+  }
+
+Fig5.20d           { ; Plant growing in Mandelbrot set
+  reset type=mandel corners=0.05788368/0.06157237/-0.62136626/-0.61860257
+  biomorph=2 colors=000<126>0y00z00y0<20>0n0
+  }
+
+Fig5.20d           { ; Plant growing in Mandelbrot set
+  reset type=mandel corners=0.05788368/0.06157815/-0.62137198/-0.61860257
+  biomorph=2 colors=000zzz
+  }
+
+Tendrils           { ; Vegetative wilderness of a Julia set
+  reset type=julia corners=-0.4535542/-0.4278226/0.7281378/0.7474363
+  params=0.356881952101659/0.64791427216425 maxiter=1500
+  colors=000HnC<20>RUkUaR<21>o4VHtP<44>LnIMnR<6>u2eHsO<21>DL1IrP<8>SVGHtP<45>m\
+  jVHsP<24>a68IsPJrQKqQHtPLoR<34>y7j<7>Gp7Gp8GoA
+  }
+
+MandelbrotColor    { ; Mandelbrot set image from color plate
+  reset type=mandel
+  corners=-0.2367228574103/-0.2367223510756/0.8294133504506/0.8294126372118/-0\
+  .2367223209394/0.8294126606209 float=y maxiter=1024 logmap=yes
+  colors=000000b4F<5>_34f7R<11>xhMc8S<9>Coie7S<14>rzhf6R<13>wk_ZJKSYDKl5B8Td4T\
+  <12>HGrX6EO80gBO<6>wy0c6Q<8>FPD_4P<5>068f4Q<13>y57c5S<14>2Pse6S<12>l_ff6Q<13\
+  >ueCZLXSabLUw<18>wcc<4>c00f03w00wwwd7Q<14>wu9g8WiDac4RkHg<2>rVy<2>lPvfIr<2>`\
+  CnZ9lZBm<3>ZFoaTWb`MdgCfo1ihDjeIkcMnWZ<2>8lu8ai<2>9RX9G09C0A8C9C08EM8FP
+  }
+

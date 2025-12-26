@@ -39,3 +39,22 @@ InvMandel (XAXIS) {; Mark Peterson
   ;SOURCE: fractint.frm
 }
  
+Mandelbrot (XAXIS) {; Mark Peterson
+                    ; Classical fractal showing LastSqr speedup
+  z = Pixel, z = Sqr(z):  ; Start with z**2 to initialize LastSqr
+  z = z + Pixel
+  z = Sqr(z)
+  LastSqr <= 4            ; Use LastSqr instead of recalculating
+  ;SOURCE: fractint.frm
+}
+ 
+Newton4 (XYAXIS) {; Mark Peterson
+   ; Note that floating-point is required to make this compute accurately
+  z = pixel, Root = 1:
+  z3 = z*z*z
+  z4 = z3 * z
+  z = (3 * z4 + Root) / (4 * z3)
+  .004 <= |z4 - Root|
+  ;SOURCE: fractint.frm
+}
+ 

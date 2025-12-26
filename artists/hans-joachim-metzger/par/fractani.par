@@ -1,0 +1,44 @@
+FractAnimation { ; Usable on most functions, but default has an island.
+z=fn1(pixel), c=fn2(pixel), d=P1:
+
+z=d*z^c -z^2 +c
+
+|z| < = 4
+}
+
+Default            { ; See it in the evolver.
+  reset=2003 type=formula formulafile=fractani.frm
+  formulaname=FractAnimation function=zero/sqrt
+  center-mag=0/0/0.6666667 params=1/0 float=y maxiter=512 inside=0
+  periodicity=0; colors=@primo.map
+  colors=000z00zz00z00zV0zz0Wz00z<3>z0zz0Wz00<3>zz0Wz00z0<3>0zz<3>0Lz0Bz\
+  00zV0zz0z<3>z0Lz0Bz00<3>zz0Wz00z0<3>0zz<3>0Lz0Bz00z<3>e0zo0zz0zz0Wz00<\
+  3>ze0zo0zz0<3>0z00zV0zz<3>0Lz0Bz00z<3>z0z<3>z0Lz0Bz00<3>zV0zb0zj0zr0zz\
+  0<3>0z00zV0zz<3>00zV0zz0z<3>z00<7>z_0zc0zh0<3>zz0<3>0z0<3>0ze0zo0zz0Wz\
+  00z<3>P0zV0z`0z<3>z0zz0Wz00<3>ze0zo0zz0<3>Lz0Bz00z0<3>0zz<3>0Lz0Bz00z<\
+  3>e0zo0zz0zz0Wz00<3>zP0zV0z`0<3>zz0Wz00z0<3>0zz0Wz00z<5>V0z_0ze0z<3>z0\
+  z<5>z0Wz0Rz0L<3>z00<3>zz0Wz00z0<3>0zz<3>0Lz0Bz00zV0zz0z<3>z0az0Wz0Q<3>\
+  z00<3>zzz
+  }
+
+Yendor             { ; See it in the evolver.
+  reset=2003 type=formula formulafile=fractani.frm
+  formulaname=FractAnimation function=zero/ident
+  center-mag=0.135963/2.22045e-016/0.3929177/2.0567/90/3.885780586188047\
+  89e-016 params=-0.5/0 float=y maxiter=255 inside=0 proximity=1
+  outside=fmod invert=0.5/0.33333333333333/0 periodicity=0;
+  colors=@altern.map
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuu\
+  uuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqp\
+  ooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjji\
+  kjiiiiihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdd\
+  dcedcccccbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZY\
+  ZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTT\
+  TSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONN\
+  NNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJI\
+  HHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCB\
+  DCBBBBBABBBACBAAAAA9AAA9BA9999989998A988888788879877777677768766666566\
+  657655555455546544444344435433333233324322222122213211111011102100<2>0\
+  00
+  }
+

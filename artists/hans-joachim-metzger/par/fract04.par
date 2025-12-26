@@ -1,0 +1,32 @@
+basic              {
+  reset=1820 type=julia
+  corners=-1.855204/1.855203/0.00787734799/-0.0329291392/-0.4998701/-1.799\
+  23496 params=-0.75352127477526665/-0.04070967435836792 maxiter=1024
+  inside=zmag colors=@vertigo.map
+  }
+
+blue               {
+  reset=1820 type=julia
+  corners=-1.855204/1.855179/0.00788927078/-0.0329291224/-0.4998773/-1.799\
+  24208 params=-0.75352127477526665/-0.04070967435836792 maxiter=1024
+  inside=zmag outside=summ
+  colors=000<31>00z<31>000<31>00z<31>000<31>00z<31>000<31>00z<30>000
+  }
+
+red                {
+  reset=1820 type=julia
+  corners=-1.855204/1.855179/0.00788927078/-0.0329291224/-0.4998773/-1.799\
+  24208 params=-0.75352127477526665/-0.04070967435836792 maxiter=1024
+  inside=bof60 outside=summ finattract=y
+  colors=W00<15>000<31>z00<31>000<31>z00<31>000<31>z00<31>000<31>z00<14>Y0\
+  0 cyclerange=0/255
+  }
+
+green              {
+  reset=1820 type=julia
+  corners=-1.855204/1.855179/0.00788927078/-0.0329291224/-0.4998773/-1.799\
+  24208 params=-0.75352127477526665/-0.04070967435836792 maxiter=1024
+  inside=bof61 outside=mult finattract=y
+  colors=000<129>0c00c00b0<122>000 cyclerange=0/255
+  }
+

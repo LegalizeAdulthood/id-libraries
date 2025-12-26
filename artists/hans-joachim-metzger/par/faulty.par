@@ -1,0 +1,349 @@
+; Faultlines #2: 30 images  
+; by Donald Archer, CIS 71544,657
+;
+; All images copyrighted 1995 Donald Archer. All rights reserved.  
+;
+; Requires file faulty.frm which is included in this download.  
+;
+; Faultlines are "discontinuities" in a Mandelbrot- or Julia-style image   
+; that break the image into two or more parts. The interest in these images
+; is largely in the relationship of these parts.
+; 
+; These formulas are almost entirely derived from ideas by Brad Beacham 
+; and Gordon Lamb from their respective files snazzy.frm and 4dfract.frm. 
+; Theirs is the creative work. The discontinuities are caused by 
+; substituting a fractional exponent on the Mandelbrot variable z 
+; (in these formulas the natural number e or 2.71828182845905) 
+; instead of squaring z.
+;
+; The images are not notably time-intensive to render. On my 486DX-50,
+; with three or four exceptions, each image renders at 1024 x 768 in
+; 15-20 minutes or less.
+
+ALL_IMAGES_HEREIN {COPYRIGHTED 1995, DONALD ARCHER, CIS 71544,657
+  }
+
+fault949           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty1
+  corners=-0.11006813969997/-0.11006732945503/0.77619084197163/0.776191087\
+  67796/-0.11006796595083/0.77619061030611 params=45/0/0/0/0/0 float=y
+  maxiter=1023 periodicity=0
+  colors=zzzUX9<2>6l6<5>3NU2IY1Ea09f8Fa<5>ws8<5>qm5pl4ok3ni2oi2<5>ye5<8>3g\
+  l<6>jTd<2>jRkjQhkPp<3>lLz<5>wbEye5yb5<7>xCC<6>000<8>pl4<5>hVgfRnfRm<7>_Y\
+  _<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8>ye5<6>asa<7>iQtkMwkRw<5>gz\
+  z<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6>zzz<7>000<6>MMM<5>jGGoFFsE\
+  ExCCqHCiMBaRA
+  }
+
+fault951           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty1
+  corners=-0.1100708974242/-0.1100633454643/0.77619240826124/0.77618468834\
+  428/-0.1100644731585/0.77618384257366 params=45/0/0/0/0/0 float=y
+  maxiter=1023 periodicity=0
+  colors=zzzUX9<2>6l6<5>3NU2IY1Ea09f8Fa<5>ws8<5>qm5pl4ok3ni2oi2<5>ye5<8>3g\
+  l<6>jTd<2>jRkjQhkPp<3>lLz<5>wbEye5yb5<7>xCC<6>000<8>pl4<5>hVgfRnfRm<7>_Y\
+  _<6>zzz<7>yIIxCCvJH<4>irifzobtn<7>09f<6>ggz<8>ye5<6>asa<7>iQtkMwkRw<5>gz\
+  z<8>09f<6>fmm<5>qpMsqIurDws8wtF<5>zzz<8>xCC<6>zzz<7>000<6>MMM<5>jGGoFFsE\
+  ExCCqHCiMBaRA
+  }
+
+fault952           {
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty1
+  corners=-0.110066542732437/-0.110066314436292/0.776190379482839/0.776190\
+  230487482/-0.110066389028053/0.776190174543661 params=75/0/0/0/0/0
+  float=y maxiter=1024 periodicity=0
+  colors=zzz<14>491<14>9J3AK4AJ4<13>120000110<13>NNMPPOPPO<14>PPOPPOPONPNM\
+  <11>TEBUDATDA<13>6C44B34B3<14>800800910<12>J76K87K87K98<12>KJIKKJKKI<13>\
+  TK1UK0TJ0<14>000<15>mc0<15>000<3>00700900C<9>00Y<15>zzy
+  }
+
+fault956           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty2
+  corners=-0.1702533659/-0.1657420059/0.8061788624/0.8095623824
+  params=0.75/0/65/0/0/0 float=y maxiter=511 periodicity=0
+  colors=000OTJ248<13>I_z<8>TtSUtOVrKWoGjPR<7>jPRjPRhRNjPRkNVlKZlIb<5>e4yd\
+  2ub0qa0m<12>NU0MW0<10>9ue8ui7sl<15>E73<15>QGh<3>UQv<11>frFgtBgv7fv3et0dr\
+  0<15>OGu<5>I2_H0XF0T<7>7J06M0<5>0_L0bP1dS<7>8xt9xq<14>NO0OM0<8>W0VX0Z<5>\
+  bFr<15>Pq0Ot0Nv3My7LyA<12>9Uq<7>2AR
+  }
+
+fault957           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty2
+  corners=-0.1375443206/-0.1333843206/0.7813016949/0.7844216949
+  params=0.75/0/65/0/0/0 float=y maxiter=1279 periodicity=0
+  colors=000K88<3>G00I20<14>WNFXPGXPG<19>KIGJHHIGG<6>HCCGBBFBC<13>11S00U10\
+  T<13>I03K11L33<12>RQQSSSRRR<13>222000001<11>00M<6>w09<7>D0O<3>I0LK0KK1K<\
+  28>8I87I77H7<13>121000122<13>IX`K_cNW`<7>j05<6>KKS<14>TTTUUUUTT<9>LAA
+  }
+
+fault958           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty2
+  corners=-0.1151952445/-0.1131839667/0.8296019583/0.8343104766/-0.1167312\
+  733/0.8316499967 params=0.66666/0.5/50/0/0/0 float=y maxiter=1024
+  periodicity=0
+  colors=WWWOGG<2>LCCKAAKAA<13>CLCBMDCMD<14>cIKaHJ<14>CJTAKUAJT<13>1220000\
+  10<13>8S89U9CT9<14>z06<15>000<15>zy5<15>000<15>zzz<15>000<14>SS0UU0TT0<1\
+  4>000<5>CCCEEEHHE<14>zy5<14>TOKQLLPJJOII
+  }
+
+fault960           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty2
+  corners=-0.1110194607/-0.08098068905/0.7870478065/0.7906668852/-0.101942\
+  6607/0.7749454065 params=1/0/50/0/0/0 float=y maxiter=1023
+  periodicity=0
+  colors=0008G88H88I8<6>5C54B4494<6>121000122<11>GTWHVZIX`K_cNW`QSX<6>j05<\
+  6>KKS<14>TTTUUUUTT<14>G00<15>w_A<14>NLJKKKKKK<11>HDDHDDHCCGBBFBCEAD<12>1\
+  1S00U10T<11>G07H05I03K11L33L55<11>RQQSSSRRR<13>222000001<14>00S00U10U<11\
+  >G0MH0MI0LK0KK1KK2K<24>9G9
+  }
+
+fault973           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3
+  corners=-0.26035667232/-0.25828442249/0.72553952269/0.72454532794/-0.259\
+  1334489/0.72390855813 params=1.5/0.5/0/0/0/0 float=y maxiter=1535
+  periodicity=0
+  colors=zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0\
+  <15>000GA4<12>2v10z00w0<14>000<15>00z<14>000301000703<14>z0X<15>000<15>p\
+  0w<15>000<14>vvv
+  }
+
+fault974           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3 
+  corners=-0.259807589344/-0.259869840861/0.72449735397/0.72501404875/-0.2\
+  60078013385/0.72485791936 params=1.5/0.5/0/0/0/0 float=y
+  maxiter=1535 periodicity=0
+  colors=zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0\
+  <15>000GA4<12>2v10z00w0<14>000<15>00z<14>000301000703<14>z0X<15>000<15>p\
+  0w<15>000<14>vvv
+  }
+
+fault975           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.25986088824/-0.25962440425/0.72460928816/0.72478665115
+  params=1.5/0.5/0/0/0/0 float=y maxiter=1535 periodicity=0
+  colors=keW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<\
+  8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C4\
+  13000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<2>D6\
+  WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<\
+  2>piYmfXkeW
+  }
+
+fault976           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.259858040259/-0.259791824743/0.724661280722/0.724710942359
+  params=1.5/0.5/0/0/0/0 float=y maxiter=1535 periodicity=0
+  colors=zzzt00w00z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0<15>000G\
+  A3<12>2v00z00w0<14>000<15>00y<12>007003000300000702<14>z0W<13>803401000<\
+  2>A0AD0EH0IK0MN0P<8>p0v<12>A0A707303000443<13>vvuvvu<14>000L00<10>q00
+  }
+
+fault979           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.13051184164949/-0.13051112141252/-0.76041548572887/-0.7604146\
+  4630693/-0.13051198528672/-0.76041529421257 params=1.5/0.5/0/0/0/0
+  float=y maxiter=2047 periodicity=0
+  colors=zzz840<13>zX0<10>KA0840840840420000<2>BB0<5>BB0<5>qp0<6>BB0<6>BB0\
+  <2>000GA4<12>2v10z00w0<14>000<15>00z<14>000301000703<14>z0X<15>000<15>p0\
+  w<15>000<14>vvvvvv<14>000L00<13>z00<2>p00l00h00d00a00<9>000420
+  }
+
+fault980           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.253315713781/-0.253405511754/-0.7276967126/-0.72494617805/-0.\
+  254668297636/-0.72589326746 params=1.75/0.333333/0/0/0/0 float=y
+  maxiter=2559 periodicity=0
+  colors=zzzSE0<6>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>00030\
+  1000703<14>z0X<15>000<15>p0w<15>000<14>vvvvvv<14>000L00<13>z00<2>p00l00h\
+  00d00a00<9>000<15>zX0<7>WH0
+  }
+
+fault981           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.164566829491347/-0.164567023619102/0.748096045395971/0.748096\
+  118480221/-0.164566934457779/0.748096185351214
+  params=1.875/0.1875/0/0/0/0 float=y maxiter=2559 periodicity=0
+  colors=keWjj6<2>``9YYAXVB<6>KAJMAKOAM<7>ziF<8>000<9>000413000000775<13>s\
+  vcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<2>D6WE7UG8SH9Q\
+  JANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<2>piYmfXke\
+  W<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N\
+  3JL0KL1K<7>M2K<7>zz0<3>mm5
+  }
+
+fault983           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.144096745607/-0.1440472352/-0.753413722954/-0.753282212484/-0\
+  .144142046886/-0.753353321249 params=1.5/0.45/0/0/0/0 float=y
+  maxiter=2047 periodicity=0
+  colors=000<11>f2Fj2Gn2Hr3Jm3M<8>00m<5>00m<15>rW2qX2<9>000<11>000<8>RrL<1\
+  4>8ne6mg7sl<2>3lw<2>0el0bi1`e<8>AG7<6>wwC<7>QGh<3>UQv<11>frFgtBgv7<11>FB\
+  HC7IB9E<3>7J06M0<5>0_L0bP1dS<7>8xt9xq<14>NO0OM0<8>W0VX0Z<5>bFr<15>Pq0Ot0\
+  Nv3My7LyA<12>9Uq<3>5Kd4H`3CP26D000 cyclerange=66/146
+  }
+
+fault984           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.14404185461766/-0.14404015292246/-0.75335345856058/-0.7533524\
+  0058864/-0.14404174983392/-0.75335359827223 params=1.5/0.45/0/0/0/0
+  float=y maxiter=2047 periodicity=0
+  colors=dcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<\
+  3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM\
+  2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvc\
+  svc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<2>D6WE7UG8SH9QJANKBLMC\
+  LOEK<7>b`c cyclerange=66/146
+  }
+
+fault986           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.144041006237578/-0.144040962920515/-0.7533527008319414/-0.753\
+  3527070200934/-0.144040987673122/-0.7533527255845487
+  params=1.5/0.45/0/0/0/0 float=y maxiter=2047 periodicity=0
+  colors=hilhilhil<11>ZYRYWPWUM<4>OI5<6>eYJg_LiaNkcPf`R<7>000<16>cca<9>999\
+  <7>999CCB<4>000<3>753864A85CA6<7>RMEQJG<10>8Xc7Ta<6>L4R<8>VHI<7>zH0<8>SD\
+  FRBG<14>iUHkWInZH<3>ziF<13>K8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHS\
+  JF<6>EAb<6>7Nu5Px5Nu<5>A5cB5`C6Z<15>hil cyclerange=66/146
+  }
+
+fault987           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  center-mag=-0.23477281511970810/+0.73060844097140640/21028.04/1/7.5
+  params=1.5/0.45/0/0/0/0 float=y maxiter=2047 
+  colors=hilhilhil<11>ZYRYWPWUM<4>OI5<6>eYJg_LiaNkcPneR<4>zpawn`tk_tk_<3>f\
+  _UbXTZUSVRQROP<4>AAK<3>ALQAOSARUBUWBXYB__Cba<8>EHBFE8FE8<2>FE8FE8GC6<14>\
+  w14z03z33<13>xq3wu2us2<12>WRDUPESMFQJG<10>8Xc7Ta<2>DIX<15>kWI<4>ziF<10>T\
+  GD<5>WUKXWMYYNZ`P_aQ<9>qtasvcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu\
+  5Px5Nu<5>A5cB5`C6Z<15>hil cyclerange=66/146
+  }
+
+
+fault989           {
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  center-mag=-0.14404100694657950/-0.75335270443590300/2.693966e+008/1/-45
+  params=1.5/0.45/0/0/0/0 float=y maxiter=2047
+  colors=000<15>I_z<7>SrWTtSXqP<6>zU3zU3<5>qNRpLVnKZlIbkGf<2>g9qiAk<6>u2Cz\
+  06<7>OS4<6>D90F47F47F47D90F47<5>F47F47G6B<10>VSs<10>frFgtBgv7fv3et0<9>wW\
+  6yT7yT7<7>K_C<15>OKoPJrOGu<5>I2_H0XF0T<7>7J06M0<5>0_L0bP1dS<7>8xt9xq<8>H\
+  bL<14>G78F47F47<5>F47<5>GMaGPgGSlHVrHUp<5>7FS6DN4AJ27E27E<12>27E27E26C<5\
+  >000 
+  }
+
+fault990           {
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.235535340158/-0.235196956915/0.730280459028/0.730383073556/-0\
+  .235462777164/0.73018370837 params=1.5/0.45/0/0/0/0 float=y
+  maxiter=2047 periodicity=0
+  colors=000<11>m03q04u04z05v05<11>000<2>000070<5>070<11>0w0<15>344464<2>7\
+  D8464<3>4645AC464<8>464464664<26>z04<15>45006606607708808A09C09F0AI<2>0C\
+  V0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C08A0880770660662679A7ED8KH\
+  9PKBVOD_SGdVJhZNmaR<2>vldxpiysozwtzzyzwtysoxpi<3>maRhZNdVJ_SGVODPKBKH9ED\
+  89A72673769A6EE6<2>VO8`S9dVAiZB<2>siFvlHxpI<2>zzNzwMysKxpI<2>peEmbCiZBdV\
+  A`S9VO8PL7<3>376365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7cq7h<2>s8ys8tr7nq7\
+  ho7cm7Z<2>c7L 
+  }
+
+fault991           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.2282267292/-0.2245166492/0.7306646528/0.7334472128
+  params=1.375/0.375/0/0/0/0 float=y maxiter=2047 
+  colors=000<20>zy5<15>000<15>zzz<15>000<14>SS0UU0TT0<14>000<14>UUUWWWWWW<\
+  12>WWWWWWWVVVUU<11>LCCKAAKAA<13>CLCBMDCMD<14>cIKaHJ<14>CJTAKUAJT<13>1220\
+  00010<13>8S89U9CT9<9>iA7<15>000
+  }
+
+fault992           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty3   
+  corners=-0.225281292726/-0.225204123062/0.731812225559/0.731870102807
+  params=1.375/0.375/0/0/0/0 float=y maxiter=2559 
+  colors=zzz<7>000<6>xCC<5>P_9Jc8Dg76l66hA<7>09f<4>09f1Ea09f8Fa<9>wp8<10>x\
+  f6ye5ye7<20>7Ce09f<16>09f<7>000<8>pl4<5>hVgfRnfRm<7>_Y_<6>zzz<7>yIIxCCvJ\
+  H<4>irifzobtn<7>09f09f09fIOn<3>ggz<8>ye5<6>asa<7>iQtkMwkRw<5>gzz<8>09f<6\
+  >fmm<5>qpMsqIurDws8wtF<5>zzz<7>yII<7>zzz
+  }
+
+fault994           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  corners=-1.0882522976596/-1.0882530521099/-0.6129889873674/-0.6129827253\
+  43/-1.0882555750334/-0.6129846175357 params=1.3333/0.33333/0/0/0/0
+  float=y maxiter=1023 
+  colors=keWhUE<7>K8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>\
+  7Nu5Px5Nu<5>A5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eY\
+  Jg_LiaNkcPneR<4>zpa<2>piYmfXkeW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7\
+  Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJ\
+  MAKOAM<12>ziF<4>kWE
+  }
+
+fault995           {
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.08825118082378700/-0.61298711741412950/3500000/1.2978/-120
+  params=1.3333/0.33333/0/0/0/0 float=y maxiter=1279 
+  colors=keWhUE<7>K8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>\
+  7Nu5Px5Nu<5>A5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eY\
+  Jg_LiaNkcPneR<4>zpa<2>piYmfXkeW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7\
+  Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJ\
+  MAKOAM<12>ziF<4>kWE
+  }
+
+fault996           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.08190150249811700/-0.61461002396662270/587179.3/0.7804/37.\
+  5 params=1.25/0.5/0/0/0/0 float=y maxiter=2047
+  colors=keWEDMAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8\
+  >SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C41\
+  3000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<2>D6W\
+  E7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<2\
+  >piYmfXkeW<8>HGN
+  }
+
+fault997           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.08919948037884800/-0.61034339230205310/1587677/1/-2.5
+  params=1.375/0.4/0/0/0/0 float=y maxiter=1535
+  colors=000PGK<8>KKS<15>zzz<14>J44G00G11<13>KJJLLLLLL<14>8G88G89G8<11>FCA\
+  FCBEBD<12>11Y00_10Y<14>H00<15>zz5<15>444000<14>90TA0VA0V<3>D0SD0RF0Q<14>\
+  w34<15>BCB<8>8I87I77H7<13>121000100<13>QDDSEESEE<4>PGJ
+  }
+
+fault998           {
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.17478328894713500/+0.57132524273716060/700000/1/90
+  params=1.3333/0.13333/0/0/0/0 float=y maxiter=1023
+  colors=keWtt2<6>YYA<7>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc<10>_\
+  UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`\
+  Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<2>piYmfXkeW<10>AAK<3>ALQAO\
+  SARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4\
+  J<12>zz0ww1
+  }
+
+fault999           { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.08923607431584200/-0.61034194627878380/151733.6/1/-39.999
+  params=1.375/0.4/0/0/0/0 float=y maxiter=1023
+  colors=keW000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>\
+  A5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPne\
+  R<4>zpa<2>piYmfXkeW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>V\
+  HI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>zi\
+  F<13>K8C413
+  }
+
+fault_1000            { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty4   
+  center-mag=-1.08193551654132600/-0.61461310297247670/114282.6/1/14.999
+  params=1.25/0.5/0/0/0/0 float=y maxiter=1023
+  colors=keWQHN<5>`Yab`cffi<3>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<2>piYmfXk\
+  eW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>\
+  N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<7>bPE_MDXJDTGDQ\
+  EDNBCK8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5\
+  >A5c<2>D6WE7UG8SH9QJANKBLMCLOEK
+  }
+
+fault_1002             { 
+  reset=1920 type=formula formulafile=faulty.frm formulaname=faulty5   
+  corners=-0.16710772078/-0.16672904558/-0.4987379354/-0.498453929
+  params=1.1/0.375/0/0/0/0 float=y maxiter=1024
+  colors=000<15>GGl<15>aas<15>00D<14>F5dG6fG6e<13>ECMDDKEEL<13>TWZVY`UX`<1\
+  3>BBW99VAAV<13>RRhTTiTTh<13>TSHTRFUSG<14>hfV<15>024<15>zV0<15>00_<14>K03\
+  M00M01<14>W0U<14>000
+  }
+
+
+
+

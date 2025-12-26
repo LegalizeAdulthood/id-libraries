@@ -2716,3 +2716,134 @@ aa-mand-re (XAXIS) {
   ;SOURCE: eli.frm
 }
  
+Newton3 {; Chris Green
+         ; Try p1=1.8 and p2 = 3.0
+  z  = (1,1):
+  z2 = z*z
+  z3 = (z*z2) - pixel
+  z  = z-p1*z3/(p2*z2)
+  0.0001 < |z3|
+  ;SOURCE: improved.frm
+}
+ 
+Mind_3 {
+   ; This Fractint .FRM file (c) 1993 by:
+   ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
+   ; Michael G. Wareman
+   ; P.O. Box 1856
+   ; Olds, Alberta, Canada
+   ; T0M 1P0
+  z = c = pixel:
+  z = c * sin(1 / z)
+  z = z * z + c
+  |z| <= 4
+  ;SOURCE: physics.frm
+}
+ 
+Daisy (ORIGIN) {; Mark Peterson
+  z = pixel:
+  z = z*z + (0.11031, -0.67037)
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Dragon (ORIGIN) {; Mark Peterson
+  z = Pixel:
+  z = sqr(z) + (-0.74543, 0.2)
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppfnht {; Lee Skinner
+  z = pixel, f = cosh(pixel)/sinh(pixel):
+  z = fn1(z)+f
+  |z|<= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppfnta {; Lee Skinner
+  z = pixel, f = tan(pixel):
+  z = fn1(z) + f
+  |z|<= 50
+  ;SOURCE: fractint.frm
+}
+ 
+MyFractal {; Fractal Creations example
+  c = z = 1/pixel:
+  z = sqr(z) + c
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Richard4 (XAXIS) {; Jm Collard-Richard
+  z = pixel:
+  z2=z*z, z=(1/(z2*cos(z2)+z2))+pixel
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+InvMandel (XAXIS) {; Mark Peterson
+  c = z = 1 / pixel:
+  z = sqr(z) + c
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Newton4 (XYAXIS) {; Mark Peterson
+   ; Note that floating-point is required to make this compute accurately
+  z = pixel, Root = 1:
+  z3 = z*z*z
+  z4 = z3 * z
+  z = (3 * z4 + Root) / (4 * z3)
+  .004 <= |z4 - Root|
+  ;SOURCE: fractint.frm
+}
+ 
+Richard2 (XYAXIS) {; Jm Collard-Richard
+  z = pixel:
+  z=1/(sin(z*z+pixel*pixel))
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+Richard6 (XYAXIS) {; Jm Collard-Richard
+  z = pixel:
+  z=sin(sinh(z))+pixel
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+G-3-03-M  { ; Sylvie Gallet [101324,3444], 1996
+            ; Modified Gallet-3-03 formula
+  z = pixel :
+  x = real(z), y = imag(z)
+  x1 = x - p1 * fn1(y*y + round(p2*fn2(y)))
+  y1 = y - p1 * fn1(x*x + round(p2*fn2(x)))
+  z = x1 + flip(y1)
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Newton_real {; Sylvie Gallet [101324,3444], 1996
+   ; Newton's method applied to   x^3 + y^2 - 1 = 0 
+   ;                              y^3 - x^2 + 1 = 0
+   ;                              solution (0,-1)
+   ; One parameter : real(p1) = bailout value 
+  z = pixel, x = real(z), y = imag(z) : 
+  xy = x*y                                
+  d = 9*xy+4, x2 = x*x, y2 = y*y        
+  c = 6*xy+2 
+  x1 = x*c - (y*y2 - 3*y - 2)/x
+  y1 = y*c + (x*x2 + 2 - 3*x)/y
+  z = (x1+flip(y1))/d, x = real(z), y = imag(z)
+  (|x| >= p1) || (|y+1| >= p1)
+  ;SOURCE: fractint.frm
+}
+ 
+Sterling2 (XAXIS) {; davisl
+  z = Pixel:
+  z = ((z/2.7182818)^z)/sqr(6.2831853*z) + pixel
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
