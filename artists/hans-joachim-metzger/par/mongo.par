@@ -1,0 +1,316 @@
+comment {
+  This FractInt parameter file is by Bradley Beacham, (c) 1993.
+
+  Consider it FREEWARE; I encourage you to copy and distribute it, but
+  only if it is unaltered.
+  
+  These parameters all depend on finding the formula file MONGO.FRM.
+  If you don't also have that file, they won't work.  The number of the
+  formula used by a parameter is listed in parenthesis on the comment line.
+  I hope you will find this helpful in locating formulas that you want to
+  explore on your own.
+  
+  Most of these parameters should work with version 17.2 of FRACTINT, but
+  some require version 18.0 because they use the FLIP and CONJ functions.
+
+  I welcome any comments.  I'm B.BEACHAM on GEnie, and my postal address is:
+     
+        Bradley Beacham
+        1343 S. Tyler
+        Salt Lake City, Utah  84105
+        U.S.A.
+  
+}
+
+StairwellToHeaven  { ; Ah, inspiring!                                  (01)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-01 function=sqr
+  corners=-0.246936767/-0.199587007/0.360939255/0.396451575
+  params=1/0/5 float=y decomp=256 colors=@volcano
+  }
+
+Pelican_Hell       { ; What it's REALLY like...                        (01)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-01 function=sqr
+  corners=-0.89073518/-0.29835118/-0.60886854/-0.16458054
+  params=-2/0/5 float=y potential=256/256/0
+  colors=000O22<6>KDDKEEJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbz\
+  zazyazwa<33>mmtllummu<20>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P1\
+  1
+  }
+
+Cleavon_Little     { ; My homage                                       (02)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-02 function=sqr/recip
+  corners=-3.335989/3.78139/-0.025373119/-0.72701374/-0.4369453/-3.890765
+  params=-1/0.5/5 float=y inside=bof60 outside=real
+  colors=000nnr<2>mmtllummu<20>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<2\
+  1>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00\
+  k<10>77l88lAAl<23>wwbzzazyazwa<29>nnr
+  }
+
+Gary_Coleman       { ; A tribute                                       (02)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-02 function=sqr/sqr
+  corners=-1.267365/1.467615/0.3124678/-0.45270152/0.08450922/-1.490031
+  params=-0.40000000000000002/1/5 float=y inside=bof60 outside=summ
+  colors=000ocK<4>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>H\
+  JLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsmm\
+  smmtllummu<20>000<19>T0hV0kW0mY0pZ2n<11>n`M
+  }
+
+Marty_Feldman      { ; It's pronounced EYE-gor                         (03)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-03 function=sinh/sin passes=b
+  corners=-0.8803627/0.8893653/0.08402372/1.41132 params=0.5/0/10
+  float=y decomp=256
+  colors=000385<10>EXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<19>R8KP6KO3KM0JM0K\
+  L0MK0OJ0Q<31>w0S<15>NqzOszPuz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>\
+  z0N<14>000<2>264
+  }
+
+Grover_Cleveland   { ; In Memory Of...                                 (03)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-03 function=sqr/cosxx
+  corners=-2.0487216/-1.5892486/0.18200991/0.074832706/-1.8318662/-0.10713\
+  052 params=0.90000000000000002/0/5 float=y decomp=256
+  colors=0009ad<15>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsmms\
+  mmtllummu<20>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P1\
+  1<6>LCCKDDKEEJFFJGG<9>ESTDTVCUWCVYBXZ<3>9`c
+  }
+
+Angie_Dickenson    { ; The myth behind the woman...                    (04)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-04 function=flip corners=-2/2/-1.5/1.5
+  params=3.1415899999999999/0/1.6180000000000001 float=y inside=zmag
+  colors=zff<4>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzz\
+  yyz<21>bco`bo`bo<22>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<9>zbb
+  cyclerange=0/255
+  }
+
+Behind_The_Veil    { ; Mystical experience, no charge.                 (04)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-04 function=cosxx
+  corners=1.0091231/1.4124845/1.574191/1.8767121 params=25/0/10
+  float=y inside=zmag outside=real
+  colors=000077<12>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213\
+  <13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<15>0000220\
+  45
+  }
+
+Liberace           { ; Glamorama!                                      (05)
+  reset=1800 type=formula formulafile=mongo.frm formulaname=mongo-05
+  function=cos/sin
+  corners=-0.70326986/-0.50758749/0.13040457/-0.13050526/-0.50758749/-0.13\
+  050526 params=0.5/0/10 float=y logmap=yes
+  colors=000T0iV0kW0mY0p<20>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKEEJFFJGGIHI\
+  <33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllummu<20>000<18\
+  >S0f
+  }
+
+Too_Busy           { ; Detail, detail, detail...                       (05)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-05 function=cos/sinh
+  corners=-0.7543049241/-0.7906425752/-0.5175696334/-0.5340301088/-0.75948\
+  54504/-0.5106622651 params=1/0/10 float=y outside=summ
+  colors=00080D<15>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKEEJFFJG\
+  GIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllummu<20>00\
+  0<4>70B
+  }
+
+Tricky_Parts       { ; Don't forget 'em!                               (05)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-05 function=sqr/sin
+  corners=-0.42914289854/-0.42767369223/0.7763191411/0.7793814813/-0.43008\
+  390759/0.7775738197 params=1/0/10 float=y outside=imag
+  colors=000CWf<13>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<14>000<13>DU\
+  JEXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<21>O3KM0JM0KL0MK0OJ0Q<31>w0S<15>Nq\
+  zOszPuz<16>DXg
+  }
+
+Bartok's_Shrink    { ; Know what I mean?                               (06)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-06 function=sin/sqr passes=t
+  corners=-0.237516099/-0.163845443/0.315697083/0.370950075
+  params=0/0/10 float=y inside=zmag outside=real
+  colors=000JA5<4>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>\
+  003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<9>NC6
+  }
+
+Dome_Kit           { ; Some assembly required                          (06)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-06 function=sqr/cotanh passes=t
+  corners=-2.0530732/-1.9104252/-0.0049133108/-0.19511058/-1.9104252/-0.19\
+  511058 params=0/0/20 float=y potential=256/1000/1000
+  colors=000000<31>zzz<15>07B<23>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<12\
+  >zz0<25>3AA07B08D<21>0du<12>zz0<9>660
+  }
+
+LaToya_Jackson     { ; The legend continues...                         (07)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-07 function=log passes=t
+  corners=1.2891985/1.5883985/0.61451119/0.83891119 params=3/0/5
+  float=y inside=zmag outside=real
+  colors=00000v10x00z<28>OszPuzPty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<\
+  14>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K\
+  <19>30t
+  }
+
+Corsage            { ; Prom-Night fractal                              (07)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-07 function=sqr passes=2
+  corners=0.6446058/-1.275394/-1.28/1.28/-1.275394/1.28 params=1/0/10
+  float=y potential=256/200/0
+  colors=000j0H<10>000<13>DUJEXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<21>O3KM0\
+  JM0KL0MK0OJ0Q<31>w0S<15>NqzOszPuz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx\
+  <14>z0N<2>n0J
+  }
+
+Burma              { ; I panicked...                                   (08)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-08 function=sinh
+  corners=-0.06367714/1.307251/0.9189603/-0.9089437/1.307251/-0.9089437
+  params=0.5/0/5 float=y decomp=256
+  colors=000<14>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000\
+  <15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003
+  }
+
+CityOfTheFuture    { ; Ultra-modern plaza with sculpture! Gee!         (08)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-08 function=flip passes=t
+  corners=-0.41241502/0.25621871/-2.388493/2.291943/-2.4183162/0.2860427
+  params=0.5/0/20 float=y decomp=256
+  colors=000ify<6>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<15>\
+  0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<7>khy
+  }
+
+Criswell           { ; My psychic impression                           (09)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-09 function=cos/recip
+  corners=-1.585973/1.190313/1.856507/-1.845207/1.190313/-1.845207
+  params=5/0/20 float=y inside=bof60 outside=real
+  colors=000tnA<3>zz0<22>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOF\
+  OQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsmmsmmtllummu<2\
+  0>000<19>T0hV0kW0mY0pZ2n<15>skD
+  }
+
+Charo              { ; Makes Jayne Mansfield look like Barbara Eden    (09)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-09 function=cosxx/flip
+  corners=0.61647517/0.99820317/-1.0606872/-0.77439123
+  params=0.10000000000000001/0/5 float=y decomp=256
+  colors=000QF8<8>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>0\
+  00<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<5>MD\
+  7
+  }
+
+Shaman             { ; Neo-tribal or something...                      (09)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-09 function=cosxx/tan
+  corners=1.1383284/1.2481245/0.586773362/0.669120434
+  params=0.10000000000000001/0/10 float=y
+  colors=000444000<14>YQ0`S0aU0<14>zz0<15>i70<15>000<15>S5N<15>zz0<15>XX8V\
+  W8TU8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zz\
+  z<13>888
+  }
+
+Your_Name_Here     { ; Yep!  My tribute to YOU!  Gosh, swell!          (09)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-09 function=cosxx/cotan
+  corners=0.2128761/1.1888761/-0.87685142/-0.14485142
+  params=0.10000000000000001/0/10 float=y outside=real
+  colors=000ywb<30>mmtllummu<20>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04\
+  P00P11<7>KDDKEEJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazw\
+  azwazwb
+  }
+
+Veg-O-Matic        { ; Sliced and diced                                (10)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-10 function=sqr passes=2
+  corners=-0.16852034/0.033536151/0.15892728/0.31046965 params=2/0/20
+  float=y
+  colors=000DD2<2>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>yxwzz\
+  zzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<10>H\
+  H2
+  }
+
+Ed_McMahon         { ; How can we miss him if he won't go away?        (10)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-10 function=cosxx
+  corners=-1.811796/0.03908396/1.233111/-1.234729/0.03908396/-1.234729
+  params=3/0/10.5 float=y outside=real
+  colors=0DD<3>033000200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15\
+  >zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<14>003000000<15>0cc<15>zzz\
+  <15>0cc<9>0FF cyclerange=0/255
+  }
+
+Paisley_Sex        { ; Extended tendrils budding                       (10)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-10 function=sin passes=2
+  corners=-1.16768861/-0.865049431/0.788698726/1.03702318/-1.17793425/0.80\
+  2359572 params=-1/0/5 float=y inside=zmag outside=real
+  colors=000zzz<15>000<14>YQ0`S0aU0<14>zz0<15>i70<15>000<15>S5N<15>zz0<15>\
+  XX8VW8TU8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<1\
+  4>zzv
+  }
+
+James_Brown        { ; Star time!                                      (11)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-11 function=sqr/sqr/log
+  corners=-1.419895/-0.01189487/-0.007131886/1.048868 params=1.8/0/10
+  float=y decomp=256
+  colors=Zq0<6>zz0<15>zzz<13>888000444000<14>YQ0`S0aU0<14>zz0<15>i70<15>00\
+  0<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15>\
+  000<15>0f0<7>Vp0 cyclerange=0/255
+  }
+
+Loretta_Lynn       { ; In all her glory                                (11)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-11 function=sin/sin/sqr
+  corners=-0.50284352/0.12806848/0.42273065/-0.41848535/0.12806848/-0.4184\
+  8535 params=1/0/10 float=y outside=real
+  colors=0005IW<4>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<14>000<13>DUJ\
+  EXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>40r30t00v10x00z<\
+  28>OszPuzPty<24>6KY
+  }
+
+Big_Dipper         { ; Another uncanny likeness                        (12)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-12 function=exp/sqr
+  corners=-0.80928681/-0.16160681/-1.5524626/-1.0667026
+  params=0.5/0/10 float=y inside=zmag outside=real
+  colors=0003ET2CS1BR09P<14>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4\
+  B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E00F00G<23\
+  >00x00z01z<27>OszPuzOty<27>4FU
+  }
+
+SpanishInquisition { ; NOBODY expects the Spanish Inquisition!         (12)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-12 function=sqr/sqr
+  corners=0.16817743/0.55089743/-1.5690158/-1.2819758 params=0/0/10
+  float=y outside=imag
+  colors=000504<11>Q4LS5NU8M<14>zz0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz\
+  <15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<14>YQ0`S0aU0<14>zz0<15\
+  >i70<15>000101302
+  }
+
+Poodles_Of_Doom    { ; No joke!                                        (13)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-13 function=sin/tan
+  corners=1.2704405/1.8662805/0.79726117/1.2441412 params=2/0/10
+  float=y inside=bof60 outside=imag
+  colors=0008ef4de0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<1\
+  4>yxx<15>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<12>C\
+  gh
+  }
+
+Cosmic_Spud        { ; AKA Freeway Planet                              (13)
+  reset=1800 type=formula formulafile=mongo.frm
+  formulaname=mongo-13 function=flip/flip
+  corners=-2.004975/2.144402/-1.819402/1.292632
+  params=0.39500000000000002/0/10 float=y outside=imag
+  colors=sry<2>yxx<15>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<\
+  15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003000<14>URvXTzYVz<10>qpy
+  cyclerange=0/255
+  }
+

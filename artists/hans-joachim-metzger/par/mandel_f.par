@@ -1,0 +1,958 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+
+"+"-sign            { ; middle of a joint
+  reset=1920 type=mandel
+  center-mag=+0.25561187830887900/+0.00067566052333826/1.049965e+012
+  params=0/0 float=y maxiter=4095 inside=255
+  colors=000<45>0Vy0Wz0Wz<44>0yz0zz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<44>0Xz\
+  0Wz0Wz0Wz<46>000
+  }
+
+2armsp_mini    {
+  reset=1920 type=mandel
+  corners=-0.783265940903/-0.783198316903/0.145139695342/0.145190413342
+  params=0/0 float=y maxiter=4095 inside=255
+  colors=000<61>`WPaXQaXQaXQ<58>zuozuozvpzvpzvp<64>`WP`WP_VOZVO<58>000
+  }
+
+2armsp_part  {
+  reset=1920 type=mandel
+  corners=-0.783214526876261/-0.783214474075441/0.145166507964124/0.145166\
+  547564739 params=0/0 float=y maxiter=4095 inside=255
+  colors=000<61>`WPaXQaXQaXQ<57>zuozuozuozvpzvp<65>`WP`WP_VOZVO<58>000
+  }
+
+fibres1            { ; mini-Mandel surrounded by fibres
+                     ; in an arm of a 5-arm spiral
+  reset=2000 type=mandel
+  corners=-0.5620900742817/-0.562086487396/0.6428452342498/0.6428479881999
+  params=0/0 float=y maxiter=32767 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+fibres2            {
+  reset=2000 type=mandel
+  corners=0.36644175142956353/0.36644175188438494/0.59146467849067874/0.59\
+  146467883179477 params=0/0 float=y maxiter=1023 inside=255 sound=off
+  colors=444<56>JuuJvvJww<2>KyyKzzKyy<56>599588577<2>455444544<56>uF0vF0wF\
+  0<2>yF0zG0yF0<62>444
+  }
+
+fibres3            {
+  reset=2000 type=mandel
+  corners=-0.483004767/-0.482979812/0.625661129/0.625679709 params=0/0
+  maxiter=1023 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+cyclic!          { ; 1 thread ~ 256 iteration step
+  reset=1920 type=mandel
+  corners=0.2501531910287083/0.2501531954578199/-2.792716666924578e-006/-2\
+  .789394833197864e-006 params=0/0 float=y maxiter=32767 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+net1            { ; there is a mini-Mandel in the middle
+  reset=1920 type=mandel
+  corners=0.2821124445879/0.2821127847239/0.0096439511115228/0.00964420621\
+  35228 params=0/0 float=y maxiter=32767 inside=255
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3zz2zz0zz<42>\
+  08z06z05z03z02z00z<60>002000000
+  }
+
+net2               { ; use a high resolution
+  reset=2000 type=mandel
+  center-mag=+0.28211258689461220/+0.00964410074095533/1.195502e+011
+  params=0/0 float=y maxiter=32767 inside=255 sound=off
+  colors=000<24>00n00p00r<2>00x00z11z<9>HHzIIzKKz<2>PPz<25>4sz4tz3vz<3>0zz\
+  <25>nzzpzzrzz<3>zzz<26>`z`_z_ZzZ<2>WzWWzVXzU<33>wz4wz3xz2yz1zz0zz0<32>z9\
+  0z80z60<2>z10z00x00<30>000
+  }
+
+joint1            { ; in the middle of a 2-arm which itself is in a 1-arm
+  reset=1920 type=mandel
+  corners=0.265025222021344/0.265025239323979/0.00302735004634804/0.003027\
+  36333103134 params=0/0 float=y maxiter=4095 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+joint2             { ; 2 connected spirals
+  reset=2000 type=mandel
+  corners=0.28604105675679/0.28604135142719/0.011783200142466/0.0117834299\
+  20717 params=0/0 float=y maxiter=4095 inside=255 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
+joint3            {
+  reset=1920 type=mandel
+  corners=0.306529119/0.306831839/0.48302879156/0.48325583156
+  params=0/0 float=y maxiter=2047 inside=255
+  colors=000<29>00x00z00z<29>xxzzzzzzz<29>22z00z00z<29>002000000<29>0ix0jz\
+  0jz<29>xzzzzzzzz<29>2kz0jz0jz<30>000
+  }
+
+joint_asymm        {
+  reset=2000 type=mandel
+  corners=-0.077831250784/-0.077529250784/0.65937909422/0.65960559422
+  params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+joint_fig2         { ; completely different,
+                     ; in a 2-arm spiral which is in the gap between the
+                     ; 2. and 3. biggest spheres on the axis
+  reset=2000 type=mandel
+  center-mag=-1.25163830543608300/+0.01540287357943879/306656.3/1.0237
+  params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+joint_fig3         { ; in a 3-arm spiral
+  reset=2000 type=mandel
+  corners=-1.10876503738347/-1.1087649647532/0.245480567671727/0.245480625\
+  915619 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<24>00n00p00r<2>00x00z11z<9>HHzIIzKKz<2>PPz<25>4sz4tz3vz<3>0zz\
+  <25>nzzpzzrzz<3>zzz<26>`z`_z_ZzZ<2>WzWWzVXzU<33>wz4wz3xz2yz1zz0zz0<32>z9\
+  0z80z60<2>z10z00x00<30>000
+  }
+
+joint_fig4         {
+  reset=2000 type=mandel
+  corners=-0.1269361184262/-0.12693581219318/0.98729474284404/0.9872949725\
+  188 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+cross2             { ; deep in the fibres coming vertically from the largest
+                     ; mini-Mandel on the axis
+  reset=2000 type=mandel
+  corners=-1.769088582921128/-1.7690885828639844/0.057047164873572934/0.05\
+  7047164916430762 params=0/0 float=y maxiter=2047 inside=255
+  sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+minimand1          { ; inside a joint, very deep magnification
+  reset=1920 type=mandel
+  corners=0.25004006348042457/0.25004006348322455/3.9551022135678386e-007/\
+  3.9551232135678386e-007 params=0/0 float=y maxiter=32767 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+minimand+3sp        { ; mini-Mandel and 3-arm spirals
+  reset=2000 type=mandel
+  corners=-0.204324104/-0.203169605/0.673777336/0.674643159 params=0/0
+  maxiter=767 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+minimand2          {
+  reset=2000 type=mandel
+  corners=0.364748904401629/0.364748924313843/-0.629468850261854/-0.629468\
+  835327694 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<45>t00u00w00x00y00<2>z20z30z50<41>zt0zu0zw0zx0zy0<2>xz2wz3uz5\
+  <41>6zt5zu3zw2zx1zy<2>0xz0wz0uz<41>06z05z03z02z01z<2>00x00w00u<46>000
+  }
+
+minimand_end     {
+  reset=2000 type=mandel passes=b
+  corners=-1.75877657/-1.75873379/0.018946724/0.0189786814 params=0/0
+  maxiter=2047 inside=255 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+gap               { ; the gap between the 2 largest spheres, maxiter=65535
+  reset=1920 type=mandel
+  corners=-0.75000024890279993/-0.7499950489028/0.003159733417085/0.003163\
+  633417085 params=0/0 float=y maxiter=65535
+  }
+
+sp_1+1             { ; fibre going into a 1-arm
+  reset=2000 type=mandel
+  corners=-1.74900385423/-1.74894285423/0.000410542085427/0.00045629208542\
+  7 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+sp_1+1_2           {
+  reset=2000 type=mandel
+  corners=-0.12678843758643/-0.12678831372643/0.987360472047237/0.98736056\
+  4942237 params=0/0 float=y maxiter=1024 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+sp_1+1_3           {
+  reset=1920 type=mandel
+  corners=-1.7587674291403/-1.7587672442518/0.018972829222559/0.0189729678\
+  88959 params=0/0 float=y maxiter=2047 inside=255
+  colors=000<4>N00R00V00Z00b00e00i00<2>q00s00u00w00x00<3>z00z00y00x00w00<2\
+  >p00n00k00h00<2>Y00U00P00<3>700330110<4>OO0SS0WW0__0cc0<2>mm0pp0rr0<2>xx\
+  0yy0yy0<2>zz0zz0yy0<3>rr0pp0mm0<2>cc0__0WW0SS0OO0<2>AA0660010030<4>0Q00U\
+  00Y00a00d00h0<2>0p00s00u00w0<2>0y00z00z00z0<2>0v00u00s00q00o0<2>0e00b00Z\
+  00V0<6>000<4>00N00R00V00Z00b00e00i<2>00q00s00u00w00x<3>00z00z00y00x00w<2\
+  >00p00n00k00h<2>00Y00U00P<3>007303101<4>O0OS0SW0W_0_c0c<2>m0mp0pr0r<2>x0\
+  xy0yy0y<2>z0zz0zy0y<3>r0rp0pm0m<2>c0c_0_W0WS0SO0O<2>A0A606000100<6>H00J0\
+  0K00<2>P00R00S00T00<2>V00V00V00V00V00<5>R00Q00O00<7>900700400200
+  }
+
+sp_1+1_zoom1       {
+  reset=2000 type=mandel
+  corners=-1.7489744576703/-1.7489742514903/0.00043369073709786/0.00043384\
+  537209786 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+sp_10arm           {
+  reset=2000 type=mandel
+  corners=0.3439833262278823/0.343983329729817/0.05607085279587298/0.05607\
+  085552659555 params=0/0 float=y maxiter=767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+sp_1arm_1          {
+  reset=2000 type=mandel
+  corners=0.25156532252963/0.25156548447963/9.9102034704774e-005/9.9223497\
+  204774e-005 params=0/0 float=y maxiter=4095 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+sp_2*5arm          { ; looks like a 10-arm, but it isn't - look in the middle
+  reset=2000 type=mandel
+  corners=-0.5575631614317086/-0.5575631600920986/0.6015384878971252/0.601\
+  5384889018326 params=0/0 float=y maxiter=2047 bailout=2000000000
+  inside=255 sound=off
+  colors=000<40>09Y09Z09_09`09a<23>MEcNEcPFc<19>hJciJcjJckJcmKc<2>mKamL`mL\
+  _mM_mMZ<33>q`7q`6qa5<3>qb1qb1rc0<7>q`0q`0q`0q`0q_0<27>nS0nR0nR0mQ0mQ0<2>\
+  mP0mP0mQ0<23>wh0wi0xj0<2>yl0zm0yl0<30>000
+  }
+
+sp_2+???           { ; 2 spirals and something inbetween
+                     ; in a many-arm spiral near the hole
+  reset=1920 type=mandel
+  corners=0.2821113701771/0.2821138711771/0.009643136489322/0.009645012239\
+  322 params=0/0 float=y maxiter=32767 inside=255
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<38>EzzCzzBzz9zz8zz<3>2zz0\
+  zz0yz<37>0Ez0Cz0Bz09z08z<3>02z00z00y<59>002000000
+  }
+
+sp_2arm+2*many     {
+  reset=2000 type=mandel
+  corners=-0.750564089342/-0.750521089342/0.0188323511307/0.0188646011307
+  params=0/0 float=y maxiter=8191 inside=255 sound=off
+  colors=000<24>00n00p00r<2>00x00z00z<24>nnzppzrrz<2>xxzzzzzzz<24>CCzAAz88\
+  z<2>22z00z00z<24>00C00A008<2>002000000<24>0an0cp0dr<2>0ix0jz0jz<24>nwzpx\
+  zrxz<2>xzzzzzzzz<24>CnzAmz8mz<2>2kz0jz0jz<30>000
+  }
+
+sp_2arm_1          {
+  reset=2000 type=mandel
+  corners=-0.7559904383/-0.7544165695/0.05880798796/0.05998838956
+  params=0/0 float=y maxiter=4095 inside=255 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+sp_2arm_2        { ; almost cyclic
+  reset=1920 type=mandel
+  corners=-0.7505439107492/-0.7505402127492/0.01884614489322/0.01884891839\
+  322 params=0/0 float=y maxiter=8191 inside=255
+  colors=000<29>00x00z00z<29>xxzzzzzzz<29>22z00z00z<29>002000000<29>0ix0jz\
+  0jz<29>xzzzzzzzz<29>2kz0jz0jz<30>000
+  }
+
+sp_2arm_3        { ; almost cyclic
+  reset=1920 type=mandel
+  corners=-0.75012848848777/-0.75012759608777/0.0091686662658291/0.0091693\
+  355658291 params=0/0 float=y maxiter=131071 inside=255
+  colors=000<29>00x00z00z<29>xxzzzzzzz<29>22z00z00z<29>002000000<29>0ix0jz\
+  0jz<29>xzzzzzzzz<29>2kz0jz0jz<30>000
+  }
+
+sp_2arm_4        { ; extremely fine
+  reset=1920 type=mandel
+  corners=-0.750009292376702/-0.75000907289995788/0.0024569669059324/0.002\
+  4571315134905 params=0/0 float=y maxiter=131071 inside=255
+  colors=000<45>00y00z00z<45>0yz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<45>01z00z\
+  00z<46>000
+  }
+
+sp_6arm_zoom       {
+  reset=2000 type=mandel
+  corners=-0.459602712/-0.45959677/0.570215914/0.570220374 params=0/0
+  maxiter=1023 inside=255 sound=off
+  colors=000<45>t00u00w00x00y00<2>z20z30z50<41>zt0zu0zw0zx0zy0<2>xz2wz3uz5\
+  <41>6zt5zu3zw2zx1zy<2>0xz0wz0uz<41>06z05z03z02z01z<2>00x00w00u<46>000
+  }
+
+sp_manyarm_1        { ;
+  reset=1920 type=mandel
+  corners=0.2644980018857744/0.2644980050107745/0.003034640454224251/0.003\
+  034642797974251 params=0/0 float=y maxiter=32767 inside=255
+  }
+
+sp_many+1arm       { ; spiral with 1 arm and many threads and another
+                     ; with MANY arms
+  reset=1920 type=mandel
+  corners=0.25035528373266/0.25035550683266/1.2377897175957e-005/1.2545222\
+  175957e-005 params=0/0 float=y maxiter=262143 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+sp_many+1arm_2     { ; deep in the hole, iter=20000!
+  reset=2000 type=mandel
+  corners=0.250153187370982/0.250153197817/-2.794769235496478e-006/-2.7869\
+  34721990074e-006 params=0/0 float=y maxiter=32767 inside=255
+  sound=off
+  colors=333<57>uujvvkwwl<2>zznzznyym<56>886776665<2>333333444<56>jjukkvll\
+  w<2>nnznnzmmy<61>333
+  }
+
+sp_spec1           {
+  reset=1920 type=mandel
+  corners=0.3267679858781/0.3267692358781/0.048309704375545/0.048310641875\
+  545 params=0/0 float=y maxiter=4095 inside=255
+  colors=000<45>0Vy0Wz0Wz<44>0yz0zz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<44>0Xz\
+  0Wz0Wz0Wz<46>000
+  }
+
+sp_ultrafine      { ; ultrafine spiral, VERY SLOW, min. res.: 1024*768!
+  reset=1920 type=mandel passes=1
+  corners=0.250355443234723/0.250355471970003/1.24509385181989e-005/1.2472\
+  4899781989e-005 params=0/0 float=y maxiter=262143 inside=255
+  }
+
+axis_mini_1     {
+  reset=1920 type=mandel passes=b
+  corners=-1.9999964703502637/-1.9999964703231681/-1.0101076317534336e-011\
+  /1.0220708223965684e-011 params=0/0 float=y maxiter=255 inside=255
+  }
+
+axis_mini_2     {
+  reset=1920 type=mandel passes=b
+  corners=-1.9999991175880514/-1.9999991175867076/-5.0390625000000321e-013\
+  /5.0390625000000361e-013 params=0/0 float=y maxiter=255 inside=255
+  }
+
+spikes1          {
+  reset=1920 type=mandel
+  center-mag=-1.67099097698833400/+0.00000000000000000/2.225441e+010
+  params=0/0 float=y maxiter=8191 inside=255
+  colors=666<32>_XK`YK`ZLa_M<24>yxfyyfzzgzzgyyf<27>`YK_XKZWJZWJYVJ<29>6666\
+  66766<28>c87d97d97<28>yC9zC9zC9zC9<32>c87b87a87`87Z87Y87<24>666
+  }
+
+spikes2          {
+  reset=1920 type=mandel
+  corners=-1.5199609837041692/-1.5199609836436252/-2.2703999972895035e-011\
+  /2.2704000027105182e-011 params=0/0 float=y maxiter=2047 inside=255
+  colors=666<32>_XK`YK`ZLa_M<24>yxfyyfzzgzzgyyf<25>b_MaZL`YK_XKZWJZWJ<30>6\
+  66666766<28>c87d97d97<28>yC9zC9zC9zC9<32>c87b87a87`87Z87Y87<24>666
+  }
+
+spikes3          { ; very deep zoom
+  reset=1920 type=mandel
+  corners=-1.51996098366953723969115/-1.519960983669537239594/1.8737251701\
+  252e-11/1.8737251774116e-11 params=0/0 float=y maxiter=2047
+  inside=255
+  colors=666<32>_XK`YK`ZLa_M<24>yxfyyfzzgzzgyyf<27>`YK_XKZWJZWJYVJ<29>6666\
+  66766<28>c87d97d97<28>yC9zC9zC9zC9<32>c87b87a87`87Z87Y87<24>666
+  }
+
+spikes4          {
+  reset=1920 type=mandel
+  corners=-1.5199609836695372396261433/-1.5199609836695372396258098/1.8737\
+  25172727212e-11/1.873725172752224e-11 params=0/0 float=y
+  maxiter=4095 inside=255
+  colors=666<32>_XK`YK`ZLa_M<24>yxfyyfzzgzzgyyf<25>b_MaZL`YK_XKZWJZWJ<30>6\
+  66666766<28>c87d97d97<28>yC9zC9zC9zC9<32>c87b87a87`87Z87Y87<24>666
+  }
+
+forked_fibres1     { ; in fibres coming vertically from the axis near a
+                     ; mini-Mandel
+  reset=1920 type=mandel
+  corners=-1.941338748041/-1.941337498041/0.0034762664886935/0.00347720398\
+  86935 params=0/0 float=y maxiter=2047 inside=255
+  colors=000<57>00`00a00b00c00d00e<58>uuOvvNwwNxxMyyMzzL<30>2fd0ee0ee<29>K\
+  yyLzzLyz<29>12f00e00d<30>000
+  }
+
+manymini1          { ; many mini-Mandels
+  reset=2000 type=mandel
+  corners=-0.64093496/-0.49853406/0.60087825/0.7076791 params=0/0
+  maxiter=255 inside=0 sound=off
+  }
+
+holehole1          { ; in the fibres coming out of the hole of a mini-
+                     ; Mandel which is in the fibres coming out of the
+                     ; hole of another mini-Mandel
+  reset=2000 type=mandel
+  corners=-0.53206372172555938/-0.53206372171420802/0.66833117652740803/0.\
+  6683311765361456 params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+miniend1           { ; at the "start" of the axis
+  reset=2000 type=mandel
+  corners=-1.44663941/-1.44661445/0.000136520714/0.000155100599
+  params=0/0 maxiter=2047 inside=0 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
+holehole2          {
+  reset=2000 type=mandel
+  corners=-0.5502422889645513/-0.55024228893532012/0.6258141229012022/0.62\
+  581412292405103 params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
+holehole3          {
+  reset=2000 type=mandel
+  corners=-0.15375610201887274/-0.15375610201422935/1.0303832598471954/1.0\
+  303832598506779 params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+mini_mini_mini     {
+  reset=1920 type=mandel
+  center-mag=-1.75901808490007200/+0.01915721364308684/2.788484e+007
+  params=0/0 float=y maxiter=32767
+  colors=000<61>`WPaXQaXQaXQ<59>zuozvpzvpzvpzvp<63>`WP`WP_VOZVO<58>000
+  }
+
+2arm_???_1         { ; looks like a spiral
+  reset=2000 type=mandel
+  corners=-1.395427791928/-1.395426541928/0.016965652481156/0.016966589981\
+  156 params=0/0 float=y maxiter=4095 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+big_zmag         {
+  reset=2000 type=mandel
+  corners=0.429294446/0.452696376/0.366475085/0.384026388 params=0/0
+  maxiter=255 inside=0 sound=off
+  colors=000<24>00n00p00r<2>00x00z11z<9>HHzIIzKKz<2>PPz<25>4sz4tz3vz<3>0zz\
+  <25>nzzpzzrzz<3>zzz<26>`z`_z_ZzZ<2>WzWWzVXzU<33>wz4wz3xz2yz1zz0zz0<32>z9\
+  0z80z60<2>z10z00x00<30>000
+  }
+
+fibres1b            {
+  reset=1920 type=mandel
+  corners=-0.705162844/-0.699659513/0.348144006/0.352271713 params=0/0
+  maxiter=2047 inside=0
+  colors=00007B<22>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<12>zz0<10>000<31\
+  >zzz<15>07B<23>0du<12>zz0<25>3AA
+  }
+
+sp_2arms_1         {
+  reset=2000 type=mandel
+  corners=-0.772816818/-0.767496496/0.113896752/0.117886968 params=0/0
+  maxiter=255 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+sp_2arms_1_joint   {
+  reset=2000 type=mandel
+  corners=-0.76990588/-0.768873189/0.115724513/0.116498923 params=0/0
+  maxiter=2047 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+sp_2arms_1_zoom1  { ; min. res.: 640*480*256
+  reset=1920 type=mandel
+  corners=-0.769434763/-0.769405007/0.116120281/0.116142586 params=0/0
+  maxiter=2047 inside=0
+  colors=000<45>0Vy0Wz0Wz<44>0yz0zz0zz0zz<29>xzzzzzzzz<29>2zz0zz0zz<44>0Xz\
+  0Wz0Wz0Wz<46>000
+  }
+
+sp_2arms_1_zoom2   { ; min. res.: 640*480*256
+  reset=2000 type=mandel
+  corners=-0.769654131/-0.76912709/0.115924682/0.116320062 params=0/0
+  maxiter=2047 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+spiralpart   {
+  reset=1920 type=mandel
+  corners=-0.31967578633934/-0.31967522183934/0.654611176875/0.65461158562\
+  5 params=0/0 float=y maxiter=2047 inside=0
+  colors=000<14>z00<15>zz0<15>0zz<14>04z00z20v<14>W00<31>0zz<15>zzW<30>2X1\
+  0W00V1<29>01V00W22X<30>zzz<31>000
+  }
+
+connection_2       {
+  reset=2000 type=mandel
+  corners=0.0549040269/0.0549337361/0.657278286/0.657300582 params=0/0
+  maxiter=2047 inside=0 sound=off
+  colors=000<40>0Rr0St0Tu<2>0Vy0Wz0Wz<40>0vz0wz0xz0xz0yz0zz0zz0zz<24>nzzpz\
+  zrzz<2>xzzzzzzzz<24>CzzAzz8zz<2>2zz0zz0zz<40>0_z0Zz0Yz0Yz0Xz0Wz0Wz0Wz<46\
+  >000
+  }
+
+joint^5            {
+  reset=2000 type=mandel
+  corners=-1.748054389435/-1.748052055889/0.007300111388321/0.007301861547\
+  842 params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+joint^5_zoom      {
+  reset=2000 type=mandel
+  corners=-1.7480533788436/-1.7480531985818/0.0073011054355886/0.007301240\
+  6319113 params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+fibres3b           {
+  reset=2000 type=mandel
+  corners=0.36644175142956353/0.36644175188438494/0.59146467849067874/0.59\
+  146467883179477 params=0/0 float=y maxiter=1023 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+empty_joint1       { ; 'reverse_s' is in the middle of this
+  reset=1920 type=mandel
+  corners=-1.7489743225207077/-1.7489743225108103/0.00043380130440188552/0\
+  .00043380131182482918 params=0/0 float=y maxiter=2047 inside=255
+  colors=000<29>00x00z11z<14>PPz<31>0zz<31>zzz<31>WzWWzVXzU<36>yz1zz0zz0zy\
+  0<36>z10z00x00<30>000
+  }
+
+reverse_s        {
+  reset=1920 type=mandel
+  corners=-1.7489743225158019/-1.7489743225156633/0.00043380130789913646/0\
+  .00043380130800305767 params=0/0 float=y maxiter=2047 inside=255
+  colors=000<29>00x00z11z<14>PPz<31>0zz<31>zzz<31>WzWWzVXzU<36>yz1zz0zz0zy\
+  0<36>z10z00x00<30>000
+  }
+
+other_fibres_?2    {
+  reset=2000 type=mandel
+  corners=-0.48299246087851061/-0.48299246087474862/0.62566994787207264/0.\
+  62566994787489416 params=0/0 float=y maxiter=8191 inside=255
+  sound=off
+  colors=000<40>00r00t00u<2>00y00z00z<40>0rz0tz0uz<2>0yz0zz0zz<24>nzzpzzrz\
+  z<2>xzzzzzzzz<24>CzzAzz8zz<2>2zz0zz0zz<40>08z06z05z<2>01z00z00z<46>000
+  }
+
+fibres6            {
+  reset=2000 type=mandel
+  corners=-0.48299093852647695/-0.48299093852533598/0.62567291125851821/0.\
+  62567291125937397 params=0/0 float=y maxiter=1023 inside=255
+  sound=off
+  colors=000<57>0Tu0Uv0Uw0Vx0Vy<59>uxzvxzwyz<2>zzzzzzyzz<56>5Yz4Yz3Xz2Xz1W\
+  z<64>000
+  }
+
+upperfibrezoom1    {
+  reset=2000 type=mandel
+  center-mag=-0.22656323213806150/+1.11627161749608100/7.279568e+009
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+upperfibrezoom2   { ; from a smaller one
+  reset=2000 type=mandel
+  corners=-0.22321871339478019/-0.22321871339411592/1.1167431776234134/1.1\
+  167431776239234 params=0/0 float=y maxiter=4095 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axiszoom1          {
+  reset=2000 type=mandel
+  center-mag=-1.94133766503851400/+0.00347670500449070/8.516086e+010
+  params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+minimand_on_axis   {
+  reset=2000 type=mandel
+  corners=-1.9999858813727525/-1.9999858809613709/-1.5426804123711427e-010\
+  /1.5426804123711448e-010 params=0/0 float=y maxiter=2047 inside=0
+  sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axiszoom2          { ; slow
+  reset=2000 type=mandel
+  center-mag=-1.76650785187054200/+0.04172539691428311/9030399
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+mini_joint         {
+  reset=2000 type=mandel
+  center-mag=-1.76650794411672700/+0.04172539133579873/1.328e+009
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+mini1armzoom       {
+  reset=2000 type=mandel
+  center-mag=-1.76650794439948200/+0.04172539214379797/1.733825e+010
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+upperfibrezoom3    {
+  reset=2000 type=mandel
+  center-mag=-0.22815164304847440/+1.11525874545121900/2.851462e+010
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+deep_in_the_hole   { ; VERY slow
+  reset=2000 type=mandel
+  center-mag=+0.25001678418901560/-0.00000011841766663/4.407275e+007
+  params=0/0 float=y maxiter=32767 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axis_mini_zoom1    { ; very good colors
+  reset=2000 type=mandel
+  corners=-1.749865665057/-1.749855965057/1.703919172932e-005/2.4314191729\
+  32e-005 params=0/0 float=y maxiter=16383 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+minimand1          {
+  reset=2000 type=mandel
+  center-mag=+0.31795258196677310/+0.03022784186929892/1.373478e+007
+  params=0/0 float=y maxiter=4095 inside=0 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+axis_mini_zoom4    { ; part of the spirals, not too slow
+  reset=2000 type=mandel
+  corners=-1.749857704124/-1.749856384924/1.9939248010727e-005/2.092864801\
+  0727e-005 params=0/0 float=y maxiter=16383 inside=255 sound=off
+  colors=000<4>L00P00U00<3>i00m00r00v00z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3\
+  >0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgf\
+  zejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppur\
+  rv<3>zzz<31>000
+  }
+
+axis_mini_zoom6    { ; a joint
+  reset=2000 type=mandel
+  corners=-1.74985751627654/-1.749857516272636/2.0458662547033302e-005/2.0\
+  458665475024085e-005 params=0/0 float=y maxiter=16383 inside=255
+  sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+nice2armsp         {
+  reset=2000 type=mandel
+  corners=-0.75297727273/-0.75247727273/0.041767387218/0.042142387218
+  params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+nice2armsp_2       {
+  reset=2000 type=mandel
+  corners=-0.7526722126959/-0.7526679126959/0.04199274840226/0.04199597340\
+  226 params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+nice2armzoom1      {
+  reset=2000 type=mandel
+  corners=-0.75267082606118/-0.75267071469118/0.0419949544392576/0.0419950\
+  379667576 params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+smallconnection    { ; the whole formation is connected only by ... press F2
+                     ; the minimand in the center
+  reset=2000 type=mandel
+  corners=-1.7496010386447958/-1.7496010381998663/9.6627285676600792e-005/\
+  9.6627619373800764e-005 params=0/0 float=y maxiter=2047 inside=255
+  sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+jointzoom1         {
+  reset=2000 type=mandel
+  corners=0.306680771281/0.306721941201/0.483108664118/0.483139541558
+  params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+sp_manyarm         {
+  reset=2000 type=mandel
+  corners=0.0785544959230711/0.078554554798715/0.623774233666579/0.6237742\
+  77823312 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+deepswirls1        {
+  reset=2000 type=mandel
+  center-mag=-1.76853095042526700/+0.00013946917197729/3.903989e+009
+  params=0/0 float=y maxiter=65535 inside=0 sound=off
+  colors=000<40>00r00t00u<2>00y00z00z<40>0rz0tz0uz<2>0yz0zz0zz<24>nzzpzzrz\
+  z<2>xzzzzzzzz<24>CzzAzz8zz<2>2zz0zz0zz<40>08z06z05z<2>01z00z00z<46>000
+  }
+
+notsodeepswirls1   {
+  reset=2000 type=mandel
+  center-mag=-0.75752835162742040/+0.06335190642922436/1.60862e+007
+  params=0/0 float=y maxiter=65535 inside=0 sound=off
+  colors=000<57>XXMXXMYYMYYNZZN<58>xxwxxwyyx<3>zzzzzzzzz<57>TTeTTeSSe<65>0\
+  00
+  }
+
+axisminizoom1      {
+  reset=2000 type=mandel
+  center-mag=-1.99637522651724000/+0.00000000242481203/2.48062e+009
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axisminizoom2      {
+  reset=2000 type=mandel
+  corners=-1.7857726584404/-1.7857724434404/7.0649906015038e-007/8.6774906\
+  015038e-007 params=0/0 float=y maxiter=8191 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+axisminizoom3      {
+  reset=2000 type=mandel
+  corners=-1.785772378558/-1.785772118558/7.8244360902256e-007/9.774436090\
+  2256e-007 params=0/0 float=y maxiter=8191 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+other_spikes             {
+  reset=2000 type=mandel
+  corners=-1.861423227120884/-1.861423223995884/0.008034010094572381/0.008\
+  03401243832238 params=0/0 float=y maxiter=8191 inside=255 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+verynicespirals    { ; part of a mini-Julia
+  reset=2000 type=mandel
+  center-mag=-1.76855854231974800/+0.00134910714285715/2133333
+  params=0/0 float=y maxiter=2047 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+joint4             { ; nice
+  reset=2000 type=mandel
+  corners=0.262111544842983/0.262111627946983/0.00216353791494738/0.002163\
+  60024294738 params=0/0 float=y maxiter=2047 inside=255 sound=off
+  colors=444444<25>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2>zvizwkzvi<21>znDzn\
+  CznA<3>zl4zk3zk1zk0<25>FC3DB3B93<2>554444336<23>00o00q00s<2>00x00z02z<24\
+  >0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02z00z00y<12>11`22Z22Y<2>22S22Q02O22M<8>\
+  445
+  }
+
+spiralcluster      {
+  reset=2000 type=mandel
+  center-mag=-0.75022569820615850/+0.01316945359771641/1.588512e+009
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<45>t00u00w00x00y00<2>z20z30z50<41>zt0zu0zw0zx0zy0<2>xz2wz3uz5\
+  <41>6zt5zu3zw2zx1zy<2>0xz0wz0uz<41>06z05z03z02z01z<2>00x00w00u<46>000
+  }
+
+spiralcluster_b    {
+  reset=2000 type=mandel
+  center-mag=-0.75022569820006670/+0.01316945360465848/1.650135e+010
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=444<24>00o00q00s<2>00x00z02z<24>0nz0pz0rz<3>0zz<25>0Cz0Az08z<2>02\
+  z00z00y<24>33F33D33B<2>445444554<24>ob0qd0se0<2>yi0zk0zk1<24>ztbzuczue<2\
+  >zvizwkzvi<25>zm7zl6zl4zk3zk1zk0<31>444
+  }
+
+spiral_connection  {
+  reset=2000 type=mandel
+  center-mag=-1.76852785180125300/+0.00049384839774436/5083238
+  params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3>z00<9>O00K0\
+  0G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O00K00G<3>000\
+  <9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0<9>OI0KF0GC0\
+  <3>000<11>0L00M00O00Q00S0<9>7h08j09l0<2>Bq0Cs0Bq0<9>3_03Z02X01V0<17>000
+  }
+
+mini_2armspiral    { ; nice colors
+  reset=2000 type=mandel
+  center-mag=-0.16113034908465140/+1.03634286387216200/205349.4
+  params=0/0 float=y maxiter=8191 inside=0 cyclerange=0/255 sound=off
+  colors=jjj<17>CCCAAA888<2>222000000<4>L00P00U00<3>i00m00r00v00z00<9>zb0z\
+  f0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<\
+  25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q05R0\
+  4S<2>01V00W22X<24>nntppurrv<3>zzz<6>lll
+  }
+
+spiralconnection_2 {
+  reset=2000 type=mandel
+  center-mag=-1.76924018788883100/+0.05692620107476510/1.412804e+009
+  params=0/0 float=y maxiter=21767 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3>z00<9>O00K0\
+  0G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O00K00G<3>000\
+  <9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0<9>OI0KF0GC0\
+  <3>000<11>0L00M00O00Q00S0<9>7h08j09l0<2>Bq0Cs0Bq0<9>3_03Z02X01V0<17>000
+  }
+
+nice2armsp_3       {
+  reset=2000 type=mandel
+  center-mag=-0.75092926986235920/+0.02518737613902260/10094.37
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>zO0zK0zG0<3>z00<9>O00K0\
+  0G00<3>000<9>00b00f00j<3>00z<10>0Xz<4>0kz<10>0Fz<4>00z<9>00O00K00G<3>000\
+  <9>bU0fX0j_0<3>zk0<9>zpKzpMzqO<2>zrUzsWzrU<8>znCzmAzm8<3>zk0<9>OI0KF0GC0\
+  <3>000<11>0L00M00O00Q00S0<9>7h08j09l0<2>Bq0Cs0Bq0<9>3_03Z02X01V0<17>000
+  }
+
+spiralcluster_2    {
+  reset=2000 type=mandel
+  center-mag=-0.75086995954332780/+0.02522576343202327/1274817
+  params=0/0 float=y maxiter=8191 inside=0 sound=off
+  colors=666<27>WTIXUIYVI<3>`YK`ZLa_M<20>utbvucwvd<3>zzgzzgyyf<23>caOb`Na_\
+  M<3>ZWJZWJYVI<24>BA8A98987<2>666666766<23>Y87Z87`87<4>d97e97f97f97g98h98\
+  <21>wC9xC9yC9<2>zC9zC9yC9<27>e97d97d97<30>666
+  }
+
+dark_spiral        { ; slow
+  reset=2000 type=mandel
+  center-mag=+0.25015219435736550/+0.00000300751879699/2133333
+  params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=000<37>s00t00v00w00y00z00<36>zs0zt0zv0zw0zy0zz0<36>zzszztzzvzzwzz\
+  yzzz<37>8zz7zz5zz<2>1zz0zz0yz<36>07z06z04z03z01z00z<40>000
+  }
+
+dark_spiral_zoom1  { ; slow
+  reset=2000 type=mandel
+  center-mag=+0.25015246856804400/+0.00000302205387509/1.632431e+009
+  params=0/0 float=y maxiter=32767 inside=0 sound=off
+  colors=000<37>s00t00v00w00y00z00<36>zs0zt0zv0zw0zy0zz0<36>zzszztzzvzzwzz\
+  yzzz<37>8zz7zz5zz<2>1zz0zz0yz<36>07z06z04z03z01z00z<40>000
+  }
+

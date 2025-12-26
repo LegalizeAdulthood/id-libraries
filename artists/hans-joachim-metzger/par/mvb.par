@@ -1,0 +1,115 @@
+Spiral C-Horse     { ; Pseudo sea horse, mandelbrot, uses chroma.map
+                     ; by Mike Vande Bunt
+  reset type=mandel passes=1
+  corners=-1.25779498/-1.25499556/0.02981652/0.03191677 maxiter=20000
+  colors=@chroma.map
+  }
+
+WhirlPools         { ; Julia - multiple spirals, try also neon.map
+                     ; by Mike Vande Bunt
+  reset type=julia corners=-0.516832/0.516833/-0.387624/0.387624
+  params=-1.255403835/0.0308624795 maxiter=20000
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+Sunflower Field    { ; Julia, custom color map - a field of Sunflowers
+                     ; by Mike Vande Bunt
+  reset type=julia passes=1
+  corners=-1.619171/1.565687/-0.630262/0.648099/-1.086236/-1.340843
+  params=-0.4299123195/0.6110180725 maxiter=69 inside=0
+  colors=CCCSsS<12>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<8>_CC
+  }
+
+NU-VIEW            { ; A new way of looking at a familiar fractal
+                     ; by Mike Vande Bunt (for 'old' way, set outside=iter)
+  reset type=mandel passes=1
+  corners=0.284714656/0.285221694/0.010978011/0.011358984 maxiter=242
+  outside=summ colors=@default.map
+  }
+
+Magneto            { ; Loops interacting -- also try other MAXITER values
+                     ; by Mike Vande Bunt  (looks best in 2-color mode)
+  reset type=julia passes=1 corners=-0.207878/0.186105/0.423049/0.718536
+  params=-0.7503480365/0.0345821232 maxiter=500
+  }
+
+lobal              { ; Lobes of color - pseudo 3D effect
+                     ; by Mike Vande Bunt  (best in 256 color mode)
+  reset type=mandelfn function=cosh passes=1
+  corners=1.202713/2.002243/0.70224/1.301575 maxiter=2000 decomp=256
+  colors=@chroma.map
+  }
+
+Moire-Patterns     { ; Try this one in a 2-color mode
+                     ; by Mike Vande Bunt
+  reset type=fn*z+z function=sin
+  corners=-0.811957/-0.411942/0.178526/0.47853 params=3/0/2 decomp=64
+  }
+
+Julia:Alone        { ; A julia set -- inside only -- use 2-color mode
+                     ; by Mike Vande Bunt    (try for higest resolution)
+  reset type=julia passes=1 corners=-0.544065/0.544066/-0.408049/0.408049
+  params=-1.256328611/0.043227668 maxiter=90 outside=0
+  }
+Tails              { ; Fine detail; edged in liquid gold -- 256 colors
+                     ; by Mike Vande Bunt
+  reset type=mandel passes=1
+  corners=-0.742981784/-0.742161715/0.143440157/0.14405578 maxiter=20000
+  colors=000<30>0z0<30>020000000<14>000110330<29>zz0<30>220000000<29>000000200\
+  <29>zKU<30>211000000<15>010
+  }
+
+Ornamental         { ; Nice to look at -- good range of colors
+                     ; by Mike Vande Bunt
+  reset type=mandel passes=1
+  corners=-0.741700988/-0.741470084/0.138639266/0.138811462 maxiter=20000
+  colors=@chroma.map
+  }
+
+Newton's_Necklace  { ; It looks more like a necklace viewed on it's side
+                     ; by Mike Vande Bunt
+  reset type=newton passes=1
+  corners=-1.511691/-0.848459/-0.248712/0.248712 params=5
+  }
+
+Accretion_Disk     { ; Lambda - hard to name, but nice to look at
+                     ; by Mike Vande Bunt
+  reset type=lambda passes=1
+  corners=0.6156372/0.6601232/0.1479714/0.1813471
+  params=2.28950214/1.039661168 maxiter=20000
+  colors=00000S08Y8BaAEeEEiGEmHGsEMtDSvBWx7`zKdzTjz`nzzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzzU0VX0Y_0`c8df2gi9jlAmoDprCst0uwCuy5zyRzyYzxczxhzvmzsuvn\
+  qvjmsdhoY`iSVdPR`NOYLMVJJRHHPFEMCBIB8E000z00zICzNGzQNzTS<3>zbbzeezhizjkzlozo\
+  pzsr000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00X08_8DaCFcHEgKHlNGrLOqJVqHar\
+  5gtTjv_nwduxzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzV0W_0_c4de9fg2gi9jl\
+  AmoDprCst0uwCuz5zzRzzYzzczzhz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzz00zI\
+  CzNGzQNzTS<3>zbbzeezhizjkzlozopzts000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz\
+  00P00X08_8DaCFcHEgKHlNGrLOqJVqHar5gtTjv_nwduxzyz000555<3>HHHKKKOOOSSSWWW___c\
+  cchhhmmmssszzzV0W_0_c4de9fg2gi9jlAmoDprCst0uwCuz5zzRzzYzzczzhz000555<3>HHHKK\
+  KOOOSSSWWW___ccchhhmmmssszzz00z0z0z00
+  }
+
+Arthropod          { ; Squashed bug from another dimension.
+                     ; by Mike Vande Bunt
+  reset type=manowar passes=1
+  corners=0.06658524/0.07073677/0.07820451/0.08131653 maxiter=32767
+  colors=CCCmsmosoqsqsss<20>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsC\
+  Es<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<16\
+  >ksk
+  }
+
+Centipede_Twins    { ; A Julia spiral with decomposition - striking 3-D effect!
+                     ;   by Mike Vande Bunt, 1992
+  reset type=julia passes=1 corners=-0.711357/-0.28486/-0.086283/0.23359
+  params=-0.778164518/0.155619592 decomp=256
+  colors=000zV0<14>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<30>c\
+  00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<13>zT0
+  }
+
+Dandelion_Wine     { ; Swirls of color -- A must for color cycling
+                     ; 1992, Mike Vande Bunt
+  reset type=julia passes=1 center-mag=1.02289/0.00561714/15.3265
+  params=-1.25456216/-0.024877456 maxiter=500 colors=@chroma.map
+  }
+

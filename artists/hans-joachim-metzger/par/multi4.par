@@ -1,0 +1,1076 @@
+;Formulas and pictures by Albrecht Niekamp, Duesseldorf
+;This file continues the files multi 1-3
+;
+;It contains special mandel and julia variations
+;with a unique aproach (I hope, as I never have seen anything
+;like it before) to quasi 3d structures. The basic fractal 
+;is "distorted" in relation to the iteration of the previous
+;pixel, the relation is expressed by a function. 
+;Note: Some pictures can be converted to Mandel/Julia VV.
+;Just press space, maybe twice after completion, await the 
+;transform, select your new exploration 
+;point and see what happens. Pictures you never have seen
+;before, promised.
+;The names correspond to the formulas with the same number.
+;As some of the new Fractint features are used,
+;make sure you have downloaded the latest Fractint version, 
+;Fractint 20.02.4 or later.
+;
+;I´ll be happy to get some feedback of any kind!
+;
+;Albrecht.niekamp@t-online.de 
+;
+
+
+multi132           { ; Pyramid on a foggy day
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=log passes=t
+  center-mag=-0.582864/5.55112e-016/1.572327/1/-90/3.88578058618804789e-01\
+  6 params=647/647 float=y maxiter=647 inside=bof60 outside=imag
+  periodicity=0
+  colors=CCC5nP<3>2jV2jW1iY<3>0`c0Ye0Vg<4>0Jn0Gp0Eq<3>03x00z20x<23>n0Cp0Ar\
+  08<2>x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<11>7pK6\
+  oM5oN<3>3kT2jV2jW1iY<3>0_c0Ye0Vg<2>0Nk0Km0Gp<3>06v03x00z<24>n0Cp0Ar08<2>\
+  x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<13>6nN
+  }
+
+multi132d          { ; Futuristic pinball
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=tan passes=t
+  center-mag=-0.582864/6.66134e-016/1.572327/1/-90/3.88578058618804789e-01\
+  6 params=647/647 float=y maxiter=647 inside=bof60 outside=imag
+  periodicity=0
+  colors=936X5U<3>f0ORRXBrf<3>FYbGTaIN_<3>XQK<2>2GR<3>QUWWYYT_V<3>FiHClE8o\
+  A<3>EUVGP_HJdJEiL8o<3>l7Cs61k84<3>EGJ5INMcKcyG<3>oR_rIdsRXu`OwjFyt6<3>yT\
+  VyM`yFfy8lx1s<3>v4tv5tu6uu7ut8v73oChV<3>zRZxfTvvN<3>mvQkvQivRgvSduT<3>Ic\
+  TCZT6UT<3>IALM4JL8O<2>ILc<3>GbUFfSEkPQQQb4S<3>RICOL8LP4HT0<3>ft8YUSO3k<3\
+  >bMafRZeQV<3>ZIEbnO<3>Fua9weEvb<3>_nRdlOjjK<3>QXgKTmciexzY<3>eVi`Nm_Pd<2\
+  >XXD<3>WOIWMJWJLWHMVEO`HFfK5aI4XG3OCD<16>I45I44H34H33H23G22<2>C24A357376\
+  4844925A<26>EHLFHMFIM<2>HJNHJOHIP<5>NA_<2>U7W
+  }
+
+multi132e          { ; different view
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=conj passes=t
+  center-mag=-0.582864/6.66134e-016/1.572327/1/-90/3.88578058618804789e-01\
+  6 params=647.8240302743613/646.6634113589893 float=y maxiter=647
+  inside=bof60 outside=tdis periodicity=0
+  colors=936X5U<3>f0ORRXBrf<3>FYbGTaIN_<3>XQK<2>2GR<3>QUWWYYT_V<3>FiHClE8o\
+  A<3>EUVGP_HJdJEiL8o<3>l7Cs61k84<3>EGJ5INMcKcyG<3>oR_rIdsRXu`OwjFyt6<3>yT\
+  VyM`yFfy8lx1s<3>v4tv5tu6uu7ut8v73oChV<3>zRZxfTvvN<3>mvQkvQivRgvSduT<3>Ic\
+  TCZT6UT<3>IALM4JL8O<2>ILc<3>GbUFfSEkPQQQb4S<3>RICOL8LP4HT0<3>ft8YUSO3k<3\
+  >bMafRZeQV<3>ZIEbnO<3>Fua9weEvb<3>_nRdlOjjK<3>QXgKTmciexzY<3>eVi`Nm_Pd<2\
+  >XXD<3>WOIWMJWJLWHMVEO`HFfK5aI4XG3OCD<16>I45I44H34H33H23G22<2>C24A357376\
+  4844925A<26>EHLFHMFIM<2>HJNHJOHIP<5>NA_<2>U7W
+  }
+
+multi132f          { ; Blue mystery
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=one passes=t
+  center-mag=-0.582864/6.66134e-016/1.572327/1/-90/3.88578058618804789e-01\
+  6 params=734.8841822565386/661.9379253517259 float=y maxiter=647
+  inside=bof61 outside=tdis periodicity=0
+  colors=000<24>00o00q00s00u00w00z<58>u05v04w03x02y01<2>z00z10z10z20z20<11\
+  6>zw0zx0zx0<2>zz0zz1zz3<23>zznzzpzzr<3>zzz000
+  }
+
+multi132h           {
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=flip passes=t
+  center-mag=-0.582864/6.66134e-016/1.572327/1/-90/3.88578058618804789e-01\
+  6 params=1734.25919370098/661.7462385937072 float=y maxiter=647
+  inside=bof61 outside=tdis periodicity=0
+  colors=000<24>00o00q00s00u00w00z<58>u05v04w03x02y01<2>z00z10z10z20z20<11\
+  6>zw0zx0zx0<2>zz0zz1zz3<23>zznzzpzzr<3>zzz000
+  }
+
+multi132i           {
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=cos passes=1
+  center-mag=-0.582864/2.22045e-016/2.768181/1/90/3.88578058618804789e-016
+  params=1121.966338084048/1575.623004852443 float=y maxiter=647
+  inside=bof61 outside=tdis periodicity=0
+  colors=000344<22>W_eX`fZbh<3>cho<9>FHKDFHACD<3>000<11>Q0KS0LV0N<3>c0U<30\
+  >907806705<2>403302000<22>YYU__V``W<10>qqlrrmtto<2>xxszzuyyt<11>aaX__VYY\
+  T<10>CCBAA9887<2>222000000<70>000000000<2>000111223
+  }
+
+multi132j          { ; fractal insect
+                     ; takes a while, but worth it
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac132 function=sinh passes=1
+  center-mag=-0.211917/3.05311e-016/3.233857/1/90/3.88578058618804789e-016
+  params=1315.972502822962/512 float=y maxiter=647 inside=atan
+  outside=tdis periodicity=0
+  colors=000008<20>00o00q00s00u00w00z<58>u05v04w03x02y01<2>z00z10z10z20z20\
+  <116>zw0zx0zx0<2>zz0zz1zz3<23>zznzzpzzr<3>zzz000<2>006
+  }
+
+multi133f          { ; quasi 3d structures
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac133 function=cosh passes=t
+  center-mag=-0.65524757839342130/-0.09195276449089906/1839.966/1/-90/3.88\
+  578058618804789e-016 params=23889.7671437727/1046.723838007752
+  float=y maxiter=647 inside=atan outside=atan periodicity=0
+  colors=000<4>000000000<3>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1\
+  R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>\
+  KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDO\
+  GA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<20>000
+  }
+
+multi134           { ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=test130.frm
+  formulaname=Multifrac135 function=sinh passes=1
+  center-mag=0/0/0.6666667 params=647/647 float=y maxiter=647
+  inside=atan outside=tdis periodicity=0
+  colors=CCC5nP<3>2jV2jW1iY0gZ<3>0Ye0Vg0Sh0Qj0Nk<3>0Eq0Bs08u06v03x00z<24>n\
+  0Cp0Ar08<2>x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<1\
+  5>4mQ4lS3kT2jV2jW1iY0gZ<4>0Vg0Sh0Qj0Nk0Km0Gp<3>06v03x00z<24>n0Cp0Ar08<2>\
+  x02z00z00<25>zo0zq0zs0<2>zy0zz0xz0<16>Rz0Pz0Nz0<2>Hz0Gz0Fy2<13>6nN
+  }
+
+multi135           { ; There is a mandel deep down below
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=cosxx passes=1
+  center-mag=-1.5/0/0.8 params=1094/128 float=y maxiter=2588
+  inside=bof60 outside=tdis periodicity=0
+  colors=000Ho_GmYFkWFiW<5>BYNAWLAUK9SJ<4>6IB5GA5D9<3>25324212000000002202\
+  4046048<5>0BK0DM0DO<4>0KY0L_0Ma0Nc0Oe0Qg<3>0Uo4Yq8asCguGkwKqy<3>4_r0Vp0U\
+  n<12>0FP0DN0DL<3>08D06B069047045023011000100<2>704905B07D09<6>R0KT0MV0OX\
+  0O<3>d0Vf0Xh0Y<3>p0d<3>xOszUwyOtwIpuCms6hq0f<2>k0ai0_g0Ze0Y<3>Y0RW0QU0N<\
+  5>I0EG0DE0BC09<3>303101010<11>0P10R20T30V30X2<3>0d30f40h4<3>0p5<3>WxYczd\
+  UyX<2>0s7<4>0i50g50e50c3<2>0Y30W20U3<5>0I10G10E10C10A0080<3>000010121152\
+  2643853A74D95EA5HA<2>7NF8PH8RI9TJAVMAXL<3>DdSDfUEhVFjXFlXGnZGp_Prc<3>zzy\
+  <2>_ukRsfHq`
+  }
+
+multi135a          { ; mandel of a special kind
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=cos passes=1
+  center-mag=-1.07429/0/0.6666667 params=647/647 float=y maxiter=647
+  inside=atan outside=tdis periodicity=0
+  colors=000110110000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3\
+  >z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<\
+  2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6\
+  >cYO`UKYQG<3>KA0000<43>000<4>000330<14>110
+  }
+
+multi135b          { ; a look into the valley
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=cosxx passes=1
+  center-mag=-1.07429/0.963303/13.33333 params=2588/128 float=y
+  maxiter=2588 inside=atan outside=tdis periodicity=0
+  colors=000zzj<4>zzt<2>zzz000<23>00m00o00q<3>00z<58>u05v04w03<3>z00z00z10\
+  <119>zw0zx0zx0<2>zz0zz1zz3<20>zzh
+  }
+
+multi135e          { ; a look into the valley
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=zero passes=1
+  center-mag=-0.60199252936331220/+0.61707588387122970/83333.33/1/-32.5000\
+  000000883631/3.55971571663893371e-011 params=20000/10000 float=y
+  maxiter=20000 inside=atan outside=tdis periodicity=0
+  colors=000N0Q<3>_0dc0hf0l<2>p0w<4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2o\
+  a0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4\
+  >000330<11>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci\
+  0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<5>K0N
+  }
+
+multi135f          { ; diff color
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=sqr passes=1
+  center-mag=-0.60199252936331220/+0.61707588387122970/83333.33/1/-32.5000\
+  000000883631/3.55971571663893371e-011 params=80000/10000 float=y
+  maxiter=20000 inside=atan outside=tdis periodicity=0
+  colors=zzzxxx<74>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzzyyy
+  }
+
+multi135h          { ; another mandel with depth
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac135 function=sqr passes=1
+  center-mag=0/0/0.6666667 params=1500/725 float=y maxiter=2000
+  inside=bof61 outside=tdis periodicity=0
+  colors=zzz___<40>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzz<34>___
+  }
+
+multi136a          { ; basic 3d mandel for zooming
+                     ; color gallet10 mod
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac136 function=zero passes=1
+  center-mag=0/0/0.6666667 params=1094/1094 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0 cyclerange=0/255
+  colors=ooo<62>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3Ic2\
+  H<27>713512412311211000000zzz<13>ppp
+  }
+
+multi137           { ; basic 3d mandel for zooming
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac137 function=cosxx passes=1
+  center-mag=0/0/0.6666667 params=2588/647 float=y maxiter=2588
+  inside=maxiter outside=tdis periodicity=0 cyclerange=0/255
+  colors=3G64D3<17>kkammcpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<11\
+  >110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0\
+  K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K\
+  0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<8>1`M2YK2WI<3>3LA0003J8
+  }
+
+multi137b          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac137 function=ceil passes=t
+  center-mag=-0.19764106628622870/+0.67536705361210180/3720.238
+  params=2588/647 float=y maxiter=2588 inside=maxiter outside=tdis
+  periodicity=0
+  colors=wvyK22<3>J11I00I00<24>400300200<3>000vvx<4>rsuqrtprs<2>npqmopmopm\
+  op<8>fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU`YU`Y<10>PWTPWTOVS<3>OUR\
+  NURNUR<60>232222122<3>000wwc<17>ldIlcHkbFkaEj`DiZB<10>cQ5cP4bO3bN3aM2<3>\
+  `J1_J1_I2<7>WE3WD3WC3VB4UB4<3>T85S85S75<3>R66Q66Q55<20>K22
+  }
+
+multi137a          { ; 1st zoom
+                     ; fn1=ceil
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac137 function=ceil passes=t
+  center-mag=-0.20114448759610160/+0.67662650602409660/238.0952
+  params=2000/647 float=y maxiter=1294 inside=maxiter outside=tdis
+  periodicity=0
+  colors=zzz<77>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3Ic2\
+  H<31>211000000
+  }
+
+multi137d          { ; mandel and baby mandel
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac137 function=cosxx passes=1
+  center-mag=0.036036/0/0.6666667 params=5176/2588 float=y
+  maxiter=5176 inside=maxiter outside=tdis periodicity=0
+  colors=974cO0<22>UB4UA4U94<3>S75R66R66<24>K22K22K22<4>I00H00H00G00G00F00\
+  F00E00E00<3>C42B52A63974<13>741741630630630<10>C96C96DA7<4>EB9FCAFCA<71>\
+  kjilkjlkj<8>rrpssqttr<2>vvtwwuwwt<10>wwiwwhwwgwwfvvdwwc<27>eT5eS3dR2cP0c\
+  P0
+  }
+
+multi137e          { ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac137 function=ceil passes=t
+  center-mag=-0.19779796434751700/+0.67533566745697260/74404.76
+  params=5164/2588 float=y maxiter=5164 inside=maxiter outside=tdis
+  periodicity=0
+  colors=000b0V<3>j0`l0an0cp0e<3>xOtzUxyOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0\
+  SW0RU0O<5>I0FG0EE0CC0A<3>304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<3\
+  >0d40f50h5<3>0p6<3>WxZczeUyY<2>0s8<4>0i60g60e60c4<2>0Y40W30U4<5>0I20G20E\
+  20C20A1081<3>0000101221532653863A84DA5EB5HB<2>7NG8PI8RJ9TKAVNAXM<3>DdTDf\
+  VEhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX<5>BYOAWMAUL9SK<4>6IC5G\
+  B5DA<3>254243121000001023025047049<5>0BL0DN0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0U\
+  p4Yr8atCgvGkxKqz<3>4_s0Vq0Uo<12>0FQ0DO0DM<3>08E06C06A048046024012000100<\
+  11>P0JR0LT0NV0PX0PZ0R`0T
+  }
+
+multi138a          { ; pretty deep
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac138 function=one passes=1
+  center-mag=-0.110069/0.998332/13.33333 params=5000/1250 float=y
+  maxiter=5000 inside=maxiter outside=tdis periodicity=0
+  colors=zzzrrr<66>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzz<8>sss
+  }
+
+multi138b          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac138 function=one passes=1
+  center-mag=-0.13821138211382110/+0.97806505421184190/266.6667
+  params=5000/1250 float=y maxiter=5000 inside=maxiter outside=tdis
+  periodicity=0
+  colors=000R0LT0NV0PX0P<3>d0Wf0Yh0Z<3>p0e<3>xOtzUxyOuwIquCns6iq0g<2>k0bi0\
+  `g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<3>304102010<4>0B10D10F10H20J20L20N2<2\
+  >0T40V40X3<3>0d40f50h5<3>0p6<3>WxZczeUyY<2>0s8<4>0i60g60e60c4<2>0Y40W30U\
+  4<5>0I20G20E20C20A1081<3>0000101221532653863A84DA5EB5HB<2>7NG8PI8RJ9TKAV\
+  NAXM<3>DdTDfVEhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX<5>BYOAWMAU\
+  L9SK<4>6IC5GB5DA<3>254243121000001023025047049<5>0BL0DN0DP<4>0KZ0L`0Mb0N\
+  d0Of0Qh<3>0Up4Yr8atCgvGkxKqz<3>4_s0Vq0Uo<12>0FQ0DO0DM<3>08E06C06A0480460\
+  24012000100<11>P0J
+  }
+
+multi139          { ; basic julia
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac139 function=one passes=1
+  center-mag=0/0/0.6666667
+  params=0.3915890987884152/-0.8669637134922331/2/725 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=zzzXXX<36>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzz<38>XXX
+  }
+
+multi139b          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac139 function=ceil passes=1
+  center-mag=-0.787992/-1.00834/6.666667
+  params=0.3915890987884152/-0.8669637134922331/647/725 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=zzz_WP<40>654544443<3>111zmm<46>e6Kd5Jd4Ic3Ic2H<27>71351241231121\
+  1000000zzz<76>555444333<3>000zrf<35>`WP
+  }
+
+multi140           { ; seeing is believing
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac140a function=atanh passes=1
+  center-mag=-0.326954/-0.595997/21.09705
+  params=-0.2549916074098949/0.9375926999725333/2/725 float=y
+  maxiter=5164 inside=maxiter outside=tdis periodicity=0
+  colors=zzzVWW<35>455344233<3>000yrf<77>554444343<3>011ymm<46>d6Kc5Jc4Ib3\
+  Ib2H<26>713613412<3>000000yzz<39>WXX
+  }
+
+multi141           { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac141 function=zero passes=1
+  center-mag=0/0/0.6666667 params=-0.2/0.9/2/2588 float=y maxiter=2588
+  inside=maxiter outside=tdis periodicity=0
+  colors=000zzt<2>zzz000<24>00o00q00s00u00w00z<58>u05v04w03x02y01<2>z00z10\
+  z10z20z20<116>zw0zx0zx0<2>zz0zz1zz3<25>zzr
+  }
+
+multi141b          { ; julia valley
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac141 function=zero passes=1
+  center-mag=+1.35522201375861300/-0.53131776480400260/266.6667
+  params=-0.2/0.9/2/2588 float=y maxiter=2588 inside=maxiter
+  outside=tdis periodicity=0
+  colors=wvyT_X<8>PWTPWTOVS<3>OURNURNUR<60>232222122<3>000wwc<17>ldIlcHkbF\
+  kaEj`DiZB<10>cQ5cP4bO3bN3aM2<3>`J1_J1_I2<7>WE3WD3WC3VB4UB4<3>T85S85S75<3\
+  >R66Q66Q55<20>K22K22K22<4>I00H00H00G00G00F00<19>400300200<3>000vvx<4>rsu\
+  qrtprs<2>npqmopmopmop<8>fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU`YU`Y\
+  U`Y
+  }
+
+multi142           { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac142 function=zero passes=t
+  center-mag=0/0/0.6666667 params=0.555/-0.337/2/725 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=wvyFKI<38>232222122<3>000wwc<17>ldIlcHkbFkaEj`DiZB<10>cQ5cP4bO3bN\
+  3aM2<3>`J1_J1_I2<7>WE3WD3WC3VB4UB4<3>T85S85S75<3>R66Q66Q55<20>K22K22K22<\
+  4>I00H00H00G00G00F00<19>400300200<3>000vvx<4>rsuqrtprs<2>npqmopmopmop<8>\
+  fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU`YU`Y<10>PWTPWTOVS<3>OURNURNU\
+  R<20>GKI
+  }
+Multi144a          { ; capable of mandel conversion
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=0.2279549546800134/-0.2555202795495468/2/647 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=wvyGKI<39>232222122<3>000wwc<17>ldIlcHkbFkaEj`DiZB<10>cQ5cP4bO3bN\
+  3aM2<3>`J1_J1_I2<7>WE3WD3WC3VB4UB4<3>T85S85S75<3>R66Q66Q55<20>K22K22K22<\
+  4>I00H00H00G00G00F00<19>400300200<3>000vvx<4>rsuqrtprs<2>npqmopmopmop<8>\
+  fjieihdhgcgfbgf<3>ZdbZdbYcaYcaXb`<2>VaZU`YU`YU`Y<10>PWTPWTOVS<3>OURNURNU\
+  R<19>GLJ
+  }
+
+multi144b          { ; same as 144a,diff colors
+                     ; capable of mandel conversion
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=0.2279549546800134/-0.2555202795495468/2/647 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000MMM<6>FFF<4>AAAK00<42>rfQrgQshR<3>wmU000<3>000A00<20>QC8RD8SD9\
+  <13>dSFeTGgUG<3>kZIl_Jm`J<3>reMwww<42>CCCBBBAAA<3>555F00<10>SC7TD8VE9<2>\
+  YHB_JC_KC<24>tlWunXvoX<3>zt`rrr<35>MMM
+  }
+Multi144c           { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=0.2288930581613508/-0.2564637197664721/2/647 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000MMM<6>FFF<4>AAAK00<37>naNobOpcO<3>rgQshRtiS<2>wmU000<3>000A00<\
+  16>NA6OA7OB7<3>SD9TE9UFA<6>_ND`ODaPE<8>kZIl_Jm`J<3>reMwww<42>CCCBBBAAA<3\
+  >555F00<5>M74N84O95<6>XGAYHB_JC<4>bPFcQGdRHeSIfTIgUJ<9>oeRpfSqgT<3>tlWun\
+  XvoX<3>zt`rrr<35>MMM
+ }
+
+Multi144d          { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=-1.47592/-0.400334/4.901961
+  params=0.2288930581613508/-0.2564637197664721/2588/647 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000G43<12>QC8RD8SD9<13>dSFeTGgUG<3>kZIl_Jm`J<3>reMwww<42>CCCBBBAA\
+  A<3>555F00<10>SC7TD8VE9<2>YHB_JC_KC<24>tlWunXvoX<3>zt`rrr<42>GGGFFFEEE<3\
+  >AAAK00<42>rfQrgQshR<3>wmU000<3>000A00<6>F42
+  }
+
+Multi144f          { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=-0.2338961851156973/-0.4140950792326939/2/647 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=uutbL4<3>fP5gQ5hR5<3>lV3mW3nX2<3>o_2p_1p`1<2>rc0rc0rb0<3>q_1pZ1pY\
+  1<8>gQ3fP3eO3<2>aL4`K4ZI3<3>SG4QF4OF5<3>GC6DB7DB7<70>qqoqqprrqrrqssr<11>\
+  vvtvvtvvtvvtvvtwwu<6>wwlwwkwwjwwiwwg<3>vtcvtbusa<3>soXsnVrmU<18>hXAgW9gV\
+  8fU7eT6<4>cP5cO5bO5aN4<18>R71Q71Q61<2>O31N20O41N20<8>Q61Q72Q72<3>TA3UB3V\
+  C3<6>aK4
+  }
+
+Multi144g           { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=-0.2564102564102564/0.4115929941618015/2/647 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=uutbL4<3>fP5gQ5hR5<3>lV3mW3nX2<3>o_2p_1p`1<2>rc0rc0rb0<3>q_1pZ1pY\
+  1<8>gQ3fP3eO3<2>aL4`K4ZI3<3>SG4QF4OF5<3>GC6DB7DB7<70>qqoqqprrqrrqssr<11>\
+  vvtvvtvvtvvtvvtwwu<6>wwlwwkwwjwwiwwg<3>vtcvtbusa<3>soXsnVrmU<18>hXAgW9gV\
+  8fU7eT6<4>cP5cO5bO5aN4<18>R71Q71Q61<2>O31N20O41N20<8>Q61Q72Q72<3>TA3UB3V\
+  C3<6>aK4
+  }
+
+Multi144h           { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0.295184/0/0.6666667 params=0/0/2/2588 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000PPP<9>GGGFFFEEE<3>AAAK00<42>rfQrgQshR<3>wmU000<3>000A00<20>QC8\
+  RD8SD9<13>dSFeTGgUG<3>kZIl_Jm`J<3>reMwww<42>CCCBBBAAA<3>555F00<10>SC7TD8\
+  VE9<2>YHB_JC_KC<24>tlWunXvoX<3>zt`rrr<31>QQQ
+  }
+
+Multi144i           { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=-0.1713570981863667/0.001251042535446205/2/2588 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000OOO<8>GGGFFFEEE<3>AAAK00<37>naNobOpcO<3>rgQshRtiS<2>wmU000<3>0\
+  00A00<16>NA6OA7OB7<3>SD9TE9UFA<6>_ND`ODaPE<8>kZIl_Jm`J<3>reMwww<42>CCCBB\
+  BAAA<3>555F00<5>M74N84O95<6>XGAYHB_JC<4>bPFcQGdRHeSIfTIgUJ<9>oeRpfSqgT<3\
+  >tlWunXvoX<3>zt`rrr<32>PPP
+  }
+
+Multi144j          { ; capable of mandel conversion
+                     ; Version 2002 Patchlevel 4
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac144a function=one passes=1
+  center-mag=0/0/0.6666667
+  params=-0.5190744215134458/-0.05129274395329441/2/2588 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000PPP<9>GGGFFFEEE<3>AAAK00<42>rfQrgQshR<3>wmU000<3>000A00<20>QC8\
+  RD8SD9<13>dSFeTGgUG<3>kZIl_Jm`J<3>reMwww<42>CCCBBBAAA<3>555F00<10>SC7TD8\
+  VE9<2>YHB_JC_KC<24>tlWunXvoX<3>zt`rrr<31>QQQ
+  }
+
+
+
+
+
+multi145c          { ; entrance to the hall of wonders
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac145 function=ceil passes=1
+  center-mag=-0.967705/0.0131452/0.2543717/1/-90/3.88578058618804789e-016
+  params=2.464854884487443/-0.7135264137699517/5164/2588 float=y
+  maxiter=5194 inside=maxiter outside=tdis periodicity=0
+  colors=@mstart1.map
+  }
+
+multi145d          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac145 function=ceil passes=1
+  center-mag=-0.81336586083823930/+4.59482011843853100/41.22985/1/-77.4999\
+  999999992042/-1.32272665043231541e-012
+  params=2.464854884487443/-0.7135264137699517/5164/2588 float=y
+  maxiter=5194 inside=maxiter outside=tdis periodicity=0
+  colors=000000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6\
+  >Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<4>_0dX0aU0Y<2>K0NH\
+  0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>zwm<6>cYO`U\
+  KYQG<3>KA0000<43>000<4>000330<16>110
+  }
+
+multi145e          { ; fantastic spiderweb
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac145 function=cosh passes=1
+  center-mag=1.29664/-1.02009/2.565681
+  params=2.405894766075626/-3.473617853328043/10000/10000 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000bn0<3>hv0ix0kz0<24>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<23>`l0
+  }
+
+multi145f          { ; golden spiderweb
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac145 function=cosh passes=1
+  center-mag=1.29664/-1.02009/2.565681
+  params=2.405894766075626/-3.473617853328043/10000/10000 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=2000bo<19>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3\
+  >000400<23>o00q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB9\
+  99777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<3>0dq
+  }
+
+multi146d          { ; first bot
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac146 function=log passes=1
+  center-mag=-2.83664/-0.0096289/0.814322/1/-90/-1.23373533611470521e-014
+  params=-0.3999999999999999/-5.551115123126e-017/1000000/100000
+  float=y maxiter=1000000 inside=maxiter outside=tdis periodicity=0
+  colors=uut<3>vvtvvtvvtvvtwwu<6>wwlwwkwwjwwiwwg<3>vtcvtbusa<3>soXsnVrmU<1\
+  8>hXAgW9gV8fU7eT6<4>cP5cO5bO5aN4<18>R71Q71Q61<2>O31N20O41N20<8>Q61Q72Q72\
+  <3>TA3UB3VC3<6>aK4bL4cM5<5>iS4jT4kU4lV3mW3<4>o_2p_1p`1<2>rc0rc0rb0<3>q_1\
+  pZ1pY1<8>gQ3fP3eO3<2>aL4`K4ZI3<3>SG4QF4OF5<3>GC6DB7DB7<70>qqoqqprrqrrqss\
+  r<8>uus
+  }
+
+multi146g          { ; second bot
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac146 function=log passes=1
+  center-mag=-2.83664/-0.0096289/0.814322/1/-90/-1.23373533611470521e-014
+  params=-0.3999999999999999/-5.551115123126e-017/10000000/10000000
+  float=y maxiter=10000000 inside=maxiter outside=tdis periodicity=0
+  colors=0000BK<2>08E06C06A048046024012000100<12>R0LT0NV0PX0P<3>d0Wf0Yh0Z<\
+  3>p0e<3>xOtzUxyOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<\
+  3>304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<3>0d40f50h5<3>0p6<3>WxZc\
+  zeUyY<2>0s8<4>0i60g60e60c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221\
+  532653863A84DA5EB5HB<2>7NG8PI8RJ9TKAVNAXM<3>DdTDfVEhWFjYFlYGn_Gp`Prd<3>z\
+  zz<2>_ulRsgHqaHo`GmZFkXFiX<5>BYOAWMAUL9SK<4>6IC5GB5DA<3>2542431210000010\
+  23025047049<5>0BL0DN0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<3>4_s0\
+  Vq0Uo<12>0FQ0DO0DM
+  }
+
+multi146h          { ; third bot
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac146 function=log passes=1
+  center-mag=-2.83664/-0.0096289/0.814322/1/-90/-1.23373533611470521e-014
+  params=-0.3999999999999999/-5.551115123126e-017/10000000/1000000
+  float=y maxiter=10000000 inside=maxiter outside=tdis periodicity=0
+  colors=JE9JQY<17>68A579568456345<2>000zzz<24>omYolXnlW<2>mjSliQkhQ<24>99\
+  5874663<3>000zxy<39>PMLOLKNKK<14>766555444<3>000zzz<15>ojdnicmgblf`le_kd\
+  Y<4>g_SfZQfYPeXNdWMcUK<9>SLERKEQJDOICNHC<3>GC8FB8EA7<4>864653543<3>000zz\
+  z<5>stvrsuqrtpqtopsmorlnr<10>`dj_ciZbh<3>TZeSYdRXc<5>LRZ
+  }
+
+multi146k          { ; fifth bot
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac146 function=log passes=1
+  center-mag=-2.83664/-0.0096289/0.814322/1/-90/-1.23373533611470521e-014
+  params=-0.3999999999999999/-5.551115123126e-017/1000000/100000
+  float=y maxiter=1000000 inside=maxiter outside=tdis periodicity=0
+  colors=uutKD5ID6GC6DB7<71>qqoqqprrqrrqssr<11>vvtvvtvvtvvtvvtwwu<6>wwlwwk\
+  wwjwwiwwg<3>vtcvtbusa<3>soXsnVrmU<18>hXAgW9gV8fU7eT6<4>cP5cO5bO5aN4<18>R\
+  71Q71Q61<2>O31N20O41N20<8>Q61Q72Q72<3>TA3UB3VC3<6>aK4bL4cM5<5>iS4jT4kU4l\
+  V3mW3<4>o_2p_1p`1<2>rc0rc0rb0<3>q_1pZ1pY1<8>gQ3fP3eO3<2>aL4`K4ZI3<2>UG3S\
+  G4QF4OF5ME5
+  }
+
+multi146o          { ; bell of freedom
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac146 function=log passes=1
+  center-mag=-0.876381/-0.0096289/0.3265397/1/-90/3.88578058618804789e-016
+  params=-0.3999999999999999/-5.551115123126e-017/40000000/1000000
+  float=y maxiter=1000000 inside=maxiter outside=tdis periodicity=0
+  colors=200068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>000400<23>o0\
+  0q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB999777<2>22200\
+  0012<24>0bo0cq0es<2>0jy0kz0jy<25>08A
+  }
+
+multi147           { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac147 function=one passes=t
+  center-mag=-1.14896/4.44089e-016/1.008976/1/90/3.88578058618804789e-016
+  params=647.6018555253761/647.1745963927121 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=zzzppp<63>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzz<11>qqq
+  }
+
+multi147c          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac147 function=one passes=t
+  center-mag=-1.08374/4.44089e-016/0.9712963/1/90/-1.23373533611470521e-01\
+  4 params=2588/725 float=y maxiter=2588 inside=maxiter outside=tdis
+  periodicity=0
+  colors=000Xf0<3>bn0cp0er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00\
+  o00q00<3>z00<25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088\
+  066<2>022000101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<19>Vd0
+  }
+
+multi147d          { ; road to infinity
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac147 function=one passes=t
+  center-mag=-1.08374/4.44089e-016/0.9712963/1/90/-1.23373533611470521e-01\
+  4 params=2588/725 float=y maxiter=2588 inside=bof60 outside=tdis
+  periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi147f          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac147 function=one passes=t
+  center-mag=-0.585711/5.13478e-016/7.141884/1/90/-1.23373533611470521e-01\
+  4 params=2588/725 float=y maxiter=2588 inside=bof60 outside=tdis
+  periodicity=0
+  colors=000znz<3>ztzzuzzwzzxzzzz<22>___ZZZYYY<3>UUU200<4>C00D00E00<5>Q00S\
+  00U00W00Y00<22>u00v00w00x00y00z00<39>zr0zt0zu0zw0zx0zz0<38>9Zq8Yr6Xt<2>2\
+  Vx0Uz1Uz<37>q5zr4zt3z<2>x1zz0zz1z<34>zmz
+  }
+
+multi147g          { ; diff color
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac147 function=one passes=t
+  center-mag=-0.585711/5.13478e-016/7.141884/1/90/-1.23373533611470521e-01\
+  4 params=5000/1000 float=y maxiter=2500 inside=bof60 outside=tdis
+  periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi148a          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac148 function=sqr passes=1
+  center-mag=0.175109/1.05088/13.33333 params=2500/647 float=y
+  maxiter=2500 inside=maxiter outside=tdis periodicity=0
+  colors=2000NU<8>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3>\
+  000400<23>o00q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB99\
+  9777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<14>0OW
+  }
+
+multi148c          { ; crossroad
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac148 function=zero passes=1
+  center-mag=+0.16235297060663030/+1.03989382819015800/83333.33
+  params=20000/2500 float=y maxiter=20000 inside=maxiter outside=tdis
+  periodicity=0
+  colors=0000V40X3<3>0d40f50h5<3>0p6<3>WxZczeUyY<2>0s8<4>0i60g60e60c4<2>0Y\
+  40W30U4<5>0I20G20E20C20A1081<3>0000101221532653863A84DA5EB5HB<2>7NG8PI8R\
+  J9TKAVNAXM<3>DdTDfVEhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX<5>BY\
+  OAWMAUL9SK<4>6IC5GB5DA<3>254243121000001023025047049<5>0BL0DN0DP<4>0KZ0L\
+  `0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<3>4_s0Vq0Uo<12>0FQ0DO0DM<3>08E06C06A0\
+  48046024012000100<12>R0LT0NV0PX0P<3>d0Wf0Yh0Z<3>p0e<3>xOtzUxyOuwIquCns6i\
+  q0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<3>304102010<4>0B10D10F10H2\
+  0J20L20N2<2>0T4
+  }
+
+multi149           {
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac149 function=abs passes=t
+  center-mag=0.330376/0/0.6915629 params=1294/647 float=y maxiter=1294
+  inside=maxiter outside=tdis periodicity=0
+  colors=zzzXXX<36>555444333<3>000zrf<77>654544443<3>111zmm<46>e6Kd5Jd4Ic3\
+  Ic2H<27>713512412311211000000zzz<38>XXX
+  }
+
+multi149a          { ; diff color
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac149 function=abs passes=1
+  center-mag=0.330376/0/0.6915629 params=2500/1250 float=y
+  maxiter=2500 inside=maxiter outside=tdis periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi149c          { ; from up above
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac149 function=abs passes=1
+  center-mag=0.563409/-5.55112e-017/4.088449 params=2500/1025 float=y
+  maxiter=2500 inside=maxiter outside=tdis periodicity=0
+  colors=000cp0<3>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<24>bn0
+  }
+
+multi150a          { ; inside fmod
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac150 function=cosxx passes=1
+  center-mag=0.205714/0/0.6915629 params=647/647 float=y maxiter=647
+  inside=fmod outside=tdis periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi150b          { ; inside atan
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac150 function=cosxx passes=1
+  center-mag=0.205714/0/0.6915629 params=647/647 float=y maxiter=647
+  inside=atan outside=tdis periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi152a         { ; basic julia
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac152 function=cosxx passes=1
+  center-mag=0/0/0.6666667
+  params=0.3554490798669393/0.7543870357371746/647/647 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000er0<2>ix0kz0jx0<23>8B0790570450230000000000<24>m00o00q00<3>z00\
+  <25>C00A00800<2>200000011<24>0bb0cc0ee<2>0ii0kk0jj<24>099088066<2>022000\
+  101<24>b0nc0pe0r<2>i0xk0zj0y<24>90C80A608<2>202000110<25>cp0
+  }
+
+multi152b          { ;  zoom
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac152 function=cosxx passes=1
+  center-mag=-0.340213/-0.425354/6.666667
+  params=0.3554490798669393/0.7543870357371746/2500/1250 float=y
+  maxiter=2500 inside=maxiter outside=tdis periodicity=0
+  colors=000<25>000000000<2>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>22\
+  2000000<33>000000000<3>000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0MF\
+  0FA0A505000<39>qqqsssttt<3>zzz000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<3>\
+  X0XS0SM0M<3>000<16>000
+  }
+
+multi155           { ; basic 3d mandel for julia transform
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac155 function=acos passes=t
+  center-mag=0/0/0.6666667 params=0/0/647/647 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=000H0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkammcpoe<3>\
+  zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<11>110110110<3>000KA4<7>gcOjgRm\
+  jT<3>zzc<9>UOFRKDOGA<3>A00<9>f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>\
+  000<4>000<9>X0a_0dc0h<3>p0w<9>K0N
+  }
+
+multi155f           { ; Terminator (just another mandel)
+                     ; accepts Julia transform
+                     ; be ready for something
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac155 function=acos passes=t
+  center-mag=0.686761/-1.33227e-015/0.4228488/1/-90/-1.23373533611470521e-\
+  014 params=0/0/647/2500 float=y maxiter=647 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000<4>000000000<3>000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0\
+  MF0FA0A505000<39>qqqsssttt<3>zzz000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<\
+  3>X0XS0SM0M<3>000<43>000<3>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>2\
+  22000000<28>000
+  }
+multi155d          { ; 3d spiral accepts mandel transform
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac155 function=acos passes=t
+  center-mag=-0.150094/-0.112594/13.33333
+  params=1.302063789868668/-0.00375312760633862/10000/2500 float=y
+  maxiter=10000 inside=maxiter outside=tdis periodicity=0
+  colors=000<3>0000000000004468AA<7>4aa3ee3hh<3>0ww<9>0ZZ0XX0UU<2>0NN0KK2M\
+  M<8>RhhUjjXmm<3>gww<9>HeeEccBaa<3>0UUUUUTTT<2>LLL<2>SSSUUUVVV<4>eeegggjj\
+  jkkk<2>sss<8>```ZZZXXXUUUTTT<2>LLL<2>SSSUUUVVV<4>eeegggjjjkkk<2>sss<9>LL\
+  LIIIEEE<3>000<114>000
+  }
+
+multi155g          { ; accepts mandel transform
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac155 function=acos passes=t
+  center-mag=0/0/0.6666667
+  params=0.937256203789264/0.001971991994683897/10000/2500 float=y
+  maxiter=10000 inside=maxiter outside=tdis periodicity=0
+  colors=000220<3>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<6>220
+  }
+
+multi155h          { ; machine man
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac155 function=acos passes=1
+  center-mag=-0.392745/0/0.6666667/1/-90/-1.23373533611470521e-014
+  params=1.438246608714262/0.001971991994683897/10000/1000 float=y
+  maxiter=10000 inside=maxiter outside=tdis periodicity=0
+  colors=000wmZ<26>A86875654443222000<52>000000000<2>000111333<27>oooqqqss\
+  s<2>xxxzzzyyy<25>CCCAAA888<2>222000000<56>000000000<2>000111332<29>xn_
+  }
+
+multi156e          { ;  
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac156 function=exp passes=1
+  center-mag=0/0/0.6666667
+  params=-1.500495315408795/0.04433027130954924/2500/1250 float=y
+  maxiter=2500 inside=maxiter outside=tdis periodicity=0
+  colors=000<4>000000000<3>000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0\
+  MF0FA0A505000<39>qqqsssttt<3>zzz000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<\
+  3>X0XS0SM0M<3>000<43>000<3>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>2\
+  22000000<28>000
+  }
+
+multi157d          { ; skull
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac157 function=cos passes=1
+  center-mag=-0.265447/1.43198/1.462979/1/-84.9999999999999858/-1.23373533\
+  611470521e-014 params=-1.008091372417371/-0.3967903683584094/1094/64
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000220<4>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<5>220
+  }
+
+multi157c          { ; skull and bones
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac157 function=cos passes=1
+  center-mag=0.863262/1.06931/0.5149686/1/-72.4999999999999858/-2.50563458\
+  870090017e-014 params=-1.008091372417371/-0.3967903683584094/1094/64
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000220<3>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<6>220
+  }
+
+multi157e          { ;  
+                     ;  
+                     ;  
+                     ; Version 2002 Patchlevel 4
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac157 function=cos passes=1
+  center-mag=0.863262/1.06931/0.5149686/1/-72.4999999999999858/-2.50563458\
+  870090017e-014 params=-1.023924375133518/-0.3518030335398419/1094/64
+  float=y maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000220<3>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<6>220
+  }
+
+multi157g          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac157 function=cos passes=1
+  center-mag=-0.485818/0.119192/0.2288567/1/-90/3.88578058618804789e-016
+  params=-1.023924375133518/-0.3518030335398419/2588/128 float=y
+  maxiter=1094 inside=maxiter outside=tdis periodicity=0
+  colors=000220<7>110110110<3>000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<2>220
+  }
+
+multi158           { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac158 function=acosh passes=t
+  center-mag=1.02335/0.225141/1.449275/1/-90/3.88578058618804789e-016
+  params=0.05735953856013673/-0.3804467909787286/2588/647 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=2000QY<10>09C08A068<2>022000211<24>oiQqjRslS<3>zsX<25>CB7A96875<3\
+  >000400<23>o00q00s00<3>z00<25>C00A00800<3>000<25>iiijjjlll<3>sss<25>BBB9\
+  99777<2>222000012<24>0bo0cq0es<2>0jy0kz0jy<12>0R_
+  }
+
+multi158a          { ; two opposite spirals
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac158 function=acosh passes=t
+  center-mag=1.03832/-0.0359805/1.503398/1/-90/3.88578058618804789e-016
+  params=-0.00582903530991546/-0.3076509903256325/2588/647 float=y
+  maxiter=2588 inside=maxiter outside=tdis periodicity=0
+  colors=000Ecc<3>3WW0UUUUUTTT<2>LLL<2>SSSUUUVVV<4>eeegggjjjkkk<2>sss<8>``\
+  `ZZZXXXUUUTTT<2>LLL<2>SSSUUUVVV<4>eeegggjjjkkk<2>sss<9>LLLIIIEEE<3>000<1\
+  16>000<4>0004468AA<7>4aa3ee3hh<3>0ww<9>0ZZ0XX0UU<2>0NN0KK2MM<8>RhhUjjXmm\
+  <3>gww<9>Hee
+  }
+
+multi158c          { ;  
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac158 function=cosxx passes=t
+  center-mag=0/0/0.6666667 params=-2/-0.75/647/725 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=0000AI09G08E06C06A048046024012000100<12>R0LT0NV0PX0P<3>d0Wf0Yh0Z<\
+  3>p0e<3>xOtzUxyOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<\
+  3>304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<3>0d40f50h5<3>0p6<3>WxZc\
+  zeUyY<2>0s8<4>0i60g60e60c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221\
+  532653863A84DA5EB5HB<2>7NG8PI8RJ9TKAVNAXM<3>DdTDfVEhWFjYFlYGn_Gp`Prd<3>z\
+  zz<2>_ulRsgHqaHo`GmZFkXFiX<5>BYOAWMAUL9SK<4>6IC5GB5DA<3>2542431210000010\
+  23025047049<5>0BL0DN0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<3>4_s0\
+  Vq0Uo<12>0FQ0DO0DM0BK
+  }
+multi158f          { ; finally terminator 2
+                     ; The formula, which makes faces!
+                     ; On the mandel transform just move the
+                     ; cursor a little bit along the x-axis
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac158 function=exp passes=t
+  center-mag=-0.232654/4.44089e-016/0.7331891/1/-90/3.88578058618804789e-0\
+  16 params=-1.5/0/647/725 float=y maxiter=647 inside=maxiter
+  outside=tdis periodicity=0
+  colors=000220<3>110110110110000KA4<7>gcOjgRmjT<3>zzc<9>UOFRKDOGA<3>A00<9\
+  >f0Ci0Dl0F<3>z0K<6>Z0EV0DR0C<3>A08004000<26>000<4>000<9>X0a_0dc0h<3>p0w<\
+  4>_0dX0aU0Y<2>K0NH0JG0NE1R<3>7UX6`Z4h_2oa0wc<11>2TG2RE3OC<3>4D3<17>kkamm\
+  cpoe<3>zwm<6>cYO`UKYQG<3>KA0000<43>000<4>000330<8>220
+  }
+
+multi158g          { ; .. and his end
+                     ;  
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac158 function=exp passes=t
+  center-mag=-0.820684/0.00500313/3.205128/1/-90/3.88578058618804789e-016
+  params=-0.766729205753596/-0.001251042535446205/647/725 float=y
+  maxiter=647 inside=maxiter outside=tdis periodicity=0
+  colors=000<3>010010010010000JA4<7>fcOigRljT<3>yzc<9>TOFQKDNGA<3>900<9>e0\
+  Ch0Dk0F<3>y0K<6>Y0EU0DQ0C<3>908004000<26>000<4>000204<8>W0aZ0db0h<3>o0w<\
+  4>Z0dW0aT0Y<2>J0NG0JF0ND1R<3>6UX5`Z3h_1oa0wc<6>0eQ0cO0`M<3>1RE2OC2LA<2>3\
+  D3<17>jkalmcooe<3>ywm<6>bYO_UKXQG<3>JA0000<43>000<4>000230<9>120
+  }
+
+multi130           { ; Julia transform with ismand possible
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac130 ismand=n function=cos passes=1
+  center-mag=0/0/0.6666667 params=0.2/-0.3/127/32 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=wvyLea<24>GFGGEFFDE<3>E8A<5>CSVCVZCZa<3>Alp<3>AlmAllAll<3>Alh688<\
+  12>232222122<3>000wwc<10>qlRpjPoiO<2>nfKmeJmeJ<45>KB5JA5IA4<2>G73G73G74<\
+  51>37U37V37V37W26X<34>JkiKljKnj<2>MqkNslNrl<10>Lfb
+  }
+
+multi130a          { ; Julia transform
+                     ;  Version 2002 Patchlevel 4
+  reset=2002 type=formula formulafile=multi4.frm
+  formulaname=Multifrac130 ismand=y function=cos passes=1
+  center-mag=0/0/0.6666667 params=-0.2/0.3/127/32 float=y maxiter=647
+  inside=maxiter outside=tdis periodicity=0
+  colors=wvyHNM<6>GFGGEFFDE<3>E8A<5>CSVCVZCZa<3>Alp<3>AlmAllAll<3>Alh688<1\
+  2>232222122<3>000wwc<10>qlRpjPoiO<2>nfKmeJmeJ<45>KB5JA5IA4<2>G73G73G74<5\
+  1>37U37V37V37W26X<34>JkiKljKnj<2>MqkNslNrl<28>HON
+  }
+

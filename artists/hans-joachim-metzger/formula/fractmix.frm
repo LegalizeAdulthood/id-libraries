@@ -20,3 +20,21 @@ NwtNwtNwt {; p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
   ;SOURCE: fractmix.frm
 }
  
+MandMnzpwr {; shit xept p1=2 
+   ; Note that floating-point is required to make this compute accurately
+  f=pixel, z=pixel:
+  f=z^p1+pixel
+  z=f*f+pixel
+  |f|<=4
+  ;SOURCE: fractmix.frm
+}
+ 
+MandMnzpwr {; shit xept p1=2 
+   ; Note that floating-point is required to make this compute accurately
+  f=pixel, z=pixel:
+  f=z^p1+pixel
+  z=f*f+pixel
+  |f|<=4
+  ;SOURCE: fractmix.frm
+}
+ 

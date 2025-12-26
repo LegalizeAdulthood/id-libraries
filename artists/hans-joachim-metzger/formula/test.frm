@@ -22,3 +22,28 @@ test {; Edited for Fractint v. 20 by George Martin, 10/98
   ;SOURCE: tchebych.frm
 }
  
+apflmatsch { 
+  z=pixel:
+  z=sqr(z)+pixel
+  |z*fn1(p1*fn2(p2*pixel/|pixel|))| <= 4 
+  ;SOURCE: test.frm
+}
+ 
+njutn-j {
+  z=pixel:
+  z=(z/imag(z)*z/real(z)*z*z*z+p1)
+  |z|<=4
+  ;SOURCE: test.frm
+}
+ 
+spider {; Chuck Ebbert                       added 12 Jan 1993
+        ; p1=initial perturbation of z
+        ; bailout is real(p2) (default 4)
+  z = pixel + p1, c = pixel
+  t = (4 * (real(p2)<=0) + real(p2) * (0<p2) ):
+  z = sqr(z) + c
+  c = z + c/2
+  |z| <= t
+  ;SOURCE: builtn2.frm
+}
+ 

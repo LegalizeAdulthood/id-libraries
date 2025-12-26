@@ -650,3 +650,95 @@ Multifrac_228 {
  |z|<=bailout
  }
  
+Multifrac_204c {
+  fac=real(p1)
+  bailout=imag(p1)
+  border=real(p2)
+  out=imag(p2)
+  z=0
+  t=0
+  start=1
+  c=pixel
+  :
+  if (start)
+    t=t+1
+    z=z^2+c
+    if (|z|>=border) || (t>out)
+      u=2*(fn1(t/fac))
+      z=0
+      start=0
+    endif
+  else
+    z=z^u+c
+  endif
+  |z|<=bailout
+  }
+ 
+Multifrac_204c {  ; Albrecht Niekamp  feb,03
+ fac=real(p1)
+ bailout=imag(p1)
+ border=real(p2)
+ out=imag(p2)
+ z=0
+ t=0
+ start=1
+ c=pixel
+ :
+ if (start)
+  t=t+1
+  z=z^2+c
+  if (|z|>=border) || (t>out)
+   u=2*(fn1(t/fac))
+   z=0
+   start=0
+   endif
+ else
+   z=z^u+c
+ endif
+ |z|<=bailout
+ }
+ 
+Multifrac_209 {
+  fac=real(p1)
+  bailout=imag(p1)
+  out=real(p2)
+  border=imag(p2)
+  z=pixel
+  t=0
+  start=1
+  c=p3
+  :
+  z=z^z+c
+  if (start)
+    if (|z|>=border) || (t>out)
+      u=fn1(t/fac)
+      z=pixel
+      c=p3/u
+      start=0
+    endif
+  endif
+  |z|<=bailout
+  }
+ 
+Multifrac_209 { ; Albrecht Niekamp  feb,03
+ fac=real(p1)
+ bailout=imag(p1)
+ out=real(p2)
+ border=imag(p2)
+ z=pixel
+ t=0
+ start=1
+ c=p3
+ :
+ z=z^z+c
+ if (start)
+  if (|z|>=border) || (t>out)
+   u=fn1(t/fac)
+   z=pixel
+   c=p3/u
+   start=0
+   endif
+ endif
+ |z|<=bailout
+ }
+ 

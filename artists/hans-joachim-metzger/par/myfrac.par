@@ -1,0 +1,152 @@
+WierdMandel1       { ; A WARPED Mandel; hardly recognizable.
+                     ; Fiercely inverted and scooted around.
+  reset type=mandel corners=-8.097778/0.981507/-4.691694/2.11777 inside=0
+  invert=0.35/0.4/0.6
+  colors=0007TJ<14>ACNntu<13>CEPGH0<26>ABNdXp<2>HGUHRQ<29>ABN65F<22>ABNlOJ<12>\
+  CBN4uq<4>9OVWDa<6>bKacKabJ`aJ``J_
+  }
+
+BOF_MagnetMandel1  { ; A Magnet Mandelbrot from the Beauty of Fractals.
+                     ; Nice colors, too.
+  reset type=magnet1m passes=2 corners=1.86/2.21/1.51/1.77 inside=0
+  colors=000sFU<4>q8Up6Vq8U<11>OCOMCNMCN<10>UHIUHIVIIVIIWJI<37>ycTzdUzdUzdU<28\
+  >pTToSSoST<38>sIwsIwsIv
+  }
+
+BOF_MagnetMandel2  { ; A Magnet Mandelbrot from the Beauty of Fractals.
+                     ; A very dignified spiral in blue & purple.
+  reset type=magnet1m passes=2 corners=1.2882/1.2963/0.9695/0.9753
+  inside=0
+  colors=0000zx<21>4kn0zx<31>AQZBOYBOY<27>G4KH3JG2JF0K<5>F0LG0LG0LG0MG0MH0M<49\
+  >T0a
+  }
+
+LSD_ComplexNewton  { ; There's no apparent symmetry or order to this.
+                     ; It's colorful though, and fairly nice.
+  reset type=complexnewton passes=2 corners=-1.687011/2.312989/-1.5/1.5
+  params=4/-3/1/1 float=y maxiter=1500 inside=0 invert=0.2/0.5/0.7
+  periodicity=0
+  colors=000N06<5>ZFR`IUbLYdO`fRbhUe<5>uxqFJ`<6>LObMObMPbNPcOQc<55>xqqFJ`<58>k\
+  iXFM`ljX<18>wsVwsVvrV<58>2BW2BW3BW<24>SHb
+  }
+
+BOF_Floral Mandel  { ; A floral Mandelbrot from the Beauty of Fractals.
+                     ; Slow, but maybe worth the time.
+  reset type=mandel passes=2
+  corners=-0.745435189/-0.745422097/0.113004085/0.113013899 maxiter=1000
+  inside=0
+  colors=000GPW<28>AcYP1V<129>k0Jk0Jk0Kk0Kk0L<37>m`anabnabnab<48>bYP
+  }
+
+Royal_Julia        { ; A nice Julia in purple and yellows.
+                     ; It has a center shaped kinda like a ?.
+  reset type=julia corners=-3.99/3.99/-2.9925/2.9925
+  params=-0.744131604209543/0.212943747639656 inside=0 invert=0.5/0.55/0
+  colors=00009N<32>GCmHCnIDoJDoJEn<18>XKdYKcYKcYKb<18>YJTZIS`JS<8>rTOtVNtVN<37\
+  >yeDyfDyhD<4>ypCzrBzqB<10>r`C
+  }
+
+CoolComplexNewton  { ; A complexnewton using Chroma.map.
+                     ; It, too, seems to have no order.
+  reset type=complexnewton passes=2 corners=-2.0/2.0/-1.5/1.5
+  params=4/-3/1/1 float=y inside=bof60 invert=0.5/0.125/-0.125
+  colors=CCCssC<20>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_C\
+  sYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE
+  }
+
+Asymmetric_Julia   { ; An odd Julia; it's symmetric, but isn't.
+                     ; This is one that's hard to describe.
+  reset type=julia
+  corners=-4.537932/6.870769/-9.946535/12.28059/-11.310384/0.550358
+  params=-0.75039179995656/0.125261260196567 inside=0 invert=0.5/0.3/0
+  colors=000E9`<49>obXpcWpcWpcW<95>`92
+  }
+
+Semi-chaotic_Mgnt1 { ; This one is rather complex/chaotic but nice.
+                     ; It's a magnetm1, in blues & purples.
+  reset type=magnet1m
+  corners=-0.6524304/-0.5193545/1.55254364/1.55109403/-0.6038206/1.48834778
+  inside=0 invert=0.0433333/0.45/1.64
+  colors=000PY_<11>RgbfLadOacQbbRbA0P<8>i6CA0P<22>_QT`RTaSTcUUbVVaWW<8>TceScfR\
+  dgQdhPei<12>Brx<12>QjdCis<53>Rjc
+  }
+
+
+
+An_Ordinary_Newton { ; A newton with a different color map.
+                     ; The map makes it interesting, really.
+  reset type=newton
+  corners=-1.229981/3.170513/-0.325483/0.400639/0.005658/-1.973002
+  params=-4 inside=maxiter invert=0.12/0.32/0.7 decomp=256
+  colors=CCCC5L91Jena<3>bnaan`ana<48>4lSema<30>BFbema<34>j6jena<35>DRB3_UCPABU\
+  TAO89NMena<33>pqyena<45>R9NNLR<3>E8M
+  }
+
+Fiery_Mandelbrot!! { ; This is a HOT mandelbrot that resembles lightning.
+                     ; In reds, blues...one of my first.
+  reset type=mandel
+  corners=-0.59695729/-0.58756756/-0.62374772/-0.61683133 inside=0 
+  colors=000aiu_kxZmzgbmpS`N`8<13>wINF5E<19>wHO7xu<8>tLRz`p<22>yIQyHPwzD<22>yI\
+  OBR`<23>wHOCxF<5>rNN3DX<3>nHP6`W<9>tIOptH<9>yKORCG<14>wHOlEe<30>yHO8_1<25>wH\
+  O_uF<7>hgIieJiX`<4>kVc<4>bfr
+  }
+
+Smooth_Lambda      { ; A 256-color grayshade decomp lambda.
+                     ; Excellent for a 3-D rendering.
+  reset type=lambda corners=-0.998442/1.999948/-1.1242/1.124219
+  params=0.97/0.5 maxiter=1250 inside=0 decomp=256
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
+  utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonpo\
+  nnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhh\
+  hghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabb\
+  bacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYX\
+  WWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQ\
+  QPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKK\
+  KJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFE\
+  DDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAAA9AAA9BA9999989998A98888878887987777\
+  7677768766666566657655555455546544444344435433333233324322222122213211111011\
+  102100<2>000
+  }
+
+Siamese_Twins      { ; A pair of non-uniformly sized mandels joined.
+                     ; A blue-violet ComplexMarksMandel.
+  reset type=cmplxmarksmand corners=-2.128394/0.925814/-0.940501/1.350155
+  params=0/0/1.16/0.14 maxiter=32767 inside=bof60
+  colors=000000<37>Z0z0jp<54>xyyzzzzzz<86>1xz0wz0wz0vy<64>013002000000
+  }
+
+MandelShell        { ; This is a C-shaped Mandelbrot inversion.
+                     ; A 256-color blue decomposition.
+  reset type=mandel passes=1 corners=-1.56518/6.49934/-2.08343/4.04858
+  inside=bof60 invert=0.35/0.3/0.3 decomp=256
+  colors=000<126>00y00z00y<125>000
+  }
+
+Floral_Mandel_2    { ; Another floral-type mandel, in shades of rose.
+                     ; It's not from the BOF.
+  reset type=mandel
+  corners=-0.74483694102/-0.74483140309/0.112382699415/0.112383285373/-0.74483\
+  523002/0.112380416281 float=y maxiter=1000 inside=0
+  colors=000G5B<84>hFPhFPhFPhGPhGQhHQ<113>zzz003<48>G5A
+  }
+
+White-Center_Julia { ; It's bright, it's flashy.  
+                     ; It's a white-centered Julia!
+  reset type=julia
+  corners=-1.73833/1.748145/-0.093932/0.172496/-0.611084/-1.596926
+  params=-0.738498943857849/0.183507654815912 inside=116
+  colors=0000AL<5>0AR0AR1BQ<87>iKCiKCjLD<15>lTEzzzlTE<32>qiG
+  }
+
+
+
+Rustic_Mandel      { ; A VERY classy Mandel(zoom) in rust/umber
+                     ; It's not a flashy Mandelbrot; very reserved.
+  reset type=mandel
+  corners=-0.80008072/-0.800196774/0.169733165/0.169620143/-0.800068229/0.1697\
+  16502 maxiter=1250 inside=0
+  colors=000mWAmWAnWAyp_<106>Q2BQ2BQ2BQ2BQ2B<139>mVA
+  }
+
+
+

@@ -1,0 +1,34 @@
+m25a1              { ; by Minoru Morikawa. small M with m=25.
+  reset=1920 type=mandel
+  center-mag=-1.99999999999998685104553996190604824145973215854934\
+  /0.0/1.07e+028/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+
+m25horz            { ; by Minoru Morikawa. Horiz. Lines
+  reset=1920 type=mandel passes=t
+  center-mag=-1.999999999999986851045539961874934/0.0/3.0e+029
+  params=0/0 float=y maxiter=10000 inside=0
+--MORE--(48%)
+
+  params=0/0 float=y maxiter=10000 inside=0
+  }
+
+
+m50a1              { ; by Minoru Morikawa. small M with m=50.
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999883213824069750497300385583139\
+  2087677/0.0/1.36e+058/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+
+
+m50horz            { ; by Minoru Morikawa. Horiz. Lines
+  reset=1920 type=mandel passes=t
+  center-mag=-1.9999999999999999999999999999883213824069750497300385583138\
+  956/0.0/3.85e+059/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+
+test1000           {  ; by Minoru Morikawa   10^10000
+  reset=1920 type=mandel
+  center-mag=0.0/1.0/1.0e+1000/1.0
+  params=0/0 float=y maxiter=100000 inside=0
+  }

@@ -18,3 +18,11 @@ Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-3.frm
 }
  
+t6 {; Revised 4/27/96 to eliminate superfluous "+c"
+    ; Original version of this formula may be discarded
+  z=(pixel^(1/tan(pixel^p1)))^(fn1(pixel^(1/pixel^p2))):
+  z=fn2(z^fn3(1/z^2.5878))
+  |real(z)|<=4
+  ;SOURCE: new.frm
+}
+ 

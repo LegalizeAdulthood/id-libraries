@@ -1,0 +1,30 @@
+multifrac59 {
+  z =pixel:
+  y2=fn2(y)
+  x2=fn1(x)
+  x = x2-y2
+  if (x2<y2)
+  y = 2*y2*x2
+  z = sqr(z)-x-y
+  else
+  y= y2-x2
+  z=sqr(z-x-y)
+  endif
+  |z| > (x*y)
+  }
+ 
+multifrac59 {
+  z =pixel:
+  y2=fn2(y)
+  x2=fn1(x)
+  x = x2-y2
+  if (x2<y2)
+  y = 2*y2*x2
+  z = sqr(z)-x-y
+  else
+  y= y2-x2
+  z=sqr(z-x-y)
+  endif
+  |z| > (x*y)
+  }
+ 

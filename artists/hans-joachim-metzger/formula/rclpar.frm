@@ -10,3 +10,14 @@ RCL_Cosh (XAXIS) {; Ron Lewen, 76376,2567
   ;SOURCE: fractint.frm
 }
  
+RCL_16 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Set fn1 to sqr to generate Figure 9.18 (p. 134)
+                ; from Pickover's book.
+                ; Set maxiter >= 1000 to see good detail in the spirals
+                ; in the three large lakes.  Also set inside=0.
+  z=0.5:
+  z=z*pixel-pixel/fn1(z)
+  abs(z) < 8
+  ;SOURCE: rclpar.frm
+}
+ 

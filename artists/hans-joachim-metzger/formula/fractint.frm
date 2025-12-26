@@ -5334,3 +5334,165 @@ Zexpe2 (XAXIS) {
   ;SOURCE: skinner.frm
 }
  
+Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+   x1 = x - p1*fn1(y + p2*fn2(x - p3*fn3(y)))
+   y1 = y - p1*fn1(x + p2*fn2(y - p3*fn3(x)))
+   x = x1, y = y1
+   z = x + flip(y)
+    |z| <= 32
+  ;SOURCE: gallet-6.frm
+}
+ 
+Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+   hx = p1*fn1(x + p2*fn2(y)), hy = p1*fn1(y + p2*fn2(x))
+   x = x + hy, y = y + hx
+   z = x + flip(y), mhx = |hx|, mhy = |hy|
+    (mhx+mhy) >= p3 && mhx <= 1e35 && mhy <= 1e35
+  ;SOURCE: gallet-6.frm
+}
+ 
+Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+  x2 = x*x, y2 = y*y
+   x1 = x2 - p1*fn1(y2 + fn2(p2*x) + fn3(p3*y))
+   y1 = y2 - p1*fn1(x2 + fn2(p2*y) + fn3(p3*x))
+   x = x1, y = y1
+   z = x + flip(y)
+    |z| <= 32
+  ;SOURCE: gallet-6.frm
+}
+ 
+Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+  x2 = x*x, y2 = y*y
+   x1 = x2 - p1*fn1(y2 + fn2(p2*x) + fn3(p3*y))
+   y1 = y2 - p1*fn1(x2 + fn2(p2*y) + fn3(p3*x))
+   x = x1, y = y1
+   z = x + flip(y)
+    |z| <= 32
+  ;SOURCE: gallet-6.frm
+}
+ 
+Gallet-6-05 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+   x1 = x - p1*fn1(y * fn2(p2*x) + fn3(p3*y))
+   y1 = y - p1*fn1(x * fn2(p2*y) + fn3(p3*x))
+   x = x1, y = y1
+   z = x + flip(y)
+    |z| <= 32
+  ;SOURCE: gallet-6.frm
+}
+ 
+Gallet-6-08 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = real(z), y = imag(z) :
+   x1 = x - p1*fn1(y + fn2(p2*x) / fn3(p3*y))
+   y1 = y - p1*fn1(x + fn2(p2*y) / fn3(p3*x))
+   x = x1, y = y1
+   z = x + flip(y)
+    |z| <= 1024
+  ;SOURCE: gallet-6.frm
+}
+ 
+FGZ {; Michael G. Wareman
+     ; try p1=3
+     ; generalized by Jon Horner
+     ; replaces FGZ_-1,0.5,1,2,4,5,-Imag-3,-Both-3,-Both_-1
+  z = c = pixel:
+  z = z * z + c
+     ;  z = (3 * z * z) / (z + 3) + c  ; original
+  z = (p1 * z * z) / (z + p1) + c      ; alternative by JH
+  |z| <= 4
+  ;SOURCE: fgz.frm
+}
+ 
+FGZ-2 {
+   ; (c) 1993 by:
+   ;
+   ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
+   ;
+   ; Michael G. Wareman
+   ; P.O. Box 1856
+   ; Olds, Alberta, Canada
+   ; T0M 1P0
+   ;
+  z = c = pixel:
+  z = z * z + c
+  z = (2 * z * z) / (z + 2) + c
+  |z| <= 4
+  ;SOURCE: f(g(z))).frm
+}
+ 
+FGZ-4 {
+   ; (c) 1993 by:
+   ;
+   ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
+   ;
+   ; Michael G. Wareman
+   ; P.O. Box 1856
+   ; Olds, Alberta, Canada
+   ; T0M 1P0
+   ;
+  z = c = pixel:
+  z = z * z + c
+  z = (4 * z * z) / (z + 4) + c
+  |z| <= 4
+  ;SOURCE: f(g(z))).frm
+}
+ 
+Mind_2 {
+   ; These formulas were developed after having read
+   ; COMPUTERS AND THE IMAGINATION [Chapter 27] Turning
+   ; a Universe Inside-Out.  This is just a new venture
+   ; and I am still exploring this rich area.
+   ; This Fractint .FRM file (c) 1993 by:
+   ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
+   ; Michael G. Wareman
+   ; P.O. Box 1856
+   ; Olds, Alberta, Canada
+   ; T0M 1P0
+  z = c = pixel:
+  z = c * sin(1 / z)
+  |z| <= 100
+  ;SOURCE: physics.frm
+}
+ 
+Mind_5 {
+   ; This Fractint .FRM file (c) 1993 by:
+   ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
+   ; Michael G. Wareman
+   ; P.O. Box 1856
+   ; Olds, Alberta, Canada
+   ; T0M 1P0
+  z = c = pixel:
+  z = c * sin(1 / z)
+  z = z * z
+  |z| <= 100
+  ;SOURCE: physics.frm
+}
+ 
+Jm_04 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+3RDIM01 {; Mandelbrot
+  z=p1*real(pixel)+flip(imag(pixel))
+  c=p2+real(pixel)+flip(imag(pixel)*p1):
+  z=z*z+c
+  |z|<=64
+  ;SOURCE: fractint.frm
+}
+ 
+Moo_4 {
+  z = pixel:
+  z = z + p1
+  r = tan(1/z) + pixel
+  z = fn1(z)/sqrt(r) 
+  |z| < 4
+  ;SOURCE: mad_cow.frm
+}
+ 

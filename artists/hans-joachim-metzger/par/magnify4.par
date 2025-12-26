@@ -1,0 +1,129 @@
+; Magnifi4.PAR
+
+Comment            { ; This PAR file created by Paul Derbyshire (PGD)
+                     ; ao950@freenet.carleton.ca
+                     ; Freely distributable but please keep my name
+                     ; and e-mail address with it.
+                     ;
+                     ; NOTE: some images require FRACTINT 19.2.
+                     ; The last 4 images use arbitrary precision and
+                     ; are quite slow. You may wish to use viewwindows.
+                     }
+
+D01_Glowing        { ; The large mini Mandelbrot of the front spike
+  reset=1920 type=mandel
+  corners=-1.80223672/-1.72172524/-0.030087789/0.030295822 params=0/0
+  float=y maxiter=32767 inside=0 logmap=6
+  colors=000<61>00y00z00z01z<76>0yz0zz0zz1zz<109>zzz
+  }
+
+D02_Hot_Brot       { ; Part of the mini Mandelbrot, with filaments
+  reset=1920 type=mandel
+  corners=-1.768025644/-1.76400007/0.006914506227/0.009933686778
+  params=0/0 float=y maxiter=32767 inside=0 logmap=21
+  colors=000<61>y00z00z00z10<76>zy0zz0zz0zz1<109>zzz
+  }
+
+D03_Hot_Wire       { ; A filament with nodes here and there
+  reset=1920 type=mandel
+  corners=-1.7661134963/-1.7659122176/0.0083486169889/0.0084995760165
+  params=0/0 float=y maxiter=32767 inside=0 logmap=45
+  colors=000A00<44>bxCczDczD<46>KzmKzmLzm<29>mmzmmznnz<13>zzzzzzzyy<109>A0\
+  0
+  }
+
+D04_Starzzle       { ; A strange starburst pattern within the filament node
+  reset=1920 type=mandel
+  corners=-1.76605568769/-1.76604562376/0.008440492417952/0.00844804036933\
+  1 params=0/0 float=y maxiter=32767 inside=0 logmap=55
+  colors=0000A0<44>CbxDczDcz<46>mKzmKzmLz<29>zmmzmmznn<13>zzzzzzyzy<109>0A\
+  0
+  }
+
+D05_Greenglow      { ; The starzzle's center. Notice the filament and diamond
+  reset=1920 type=mandel
+  corners=-1.766051521222/-1.766049790225/0.008443617269823/0.008444915517\
+  46 params=0/0 float=y maxiter=32767 inside=0 logmap=107
+  colors=000<38>0k90mA0mA<101>zzzzzzyyy<109>000
+  }
+
+D06_Ring_Around... { ; ...The Mini Mandelbrot
+  reset=1920 type=mandel
+  corners=-1.76605069899846/-1.76605061244862/0.00844423393745055/0.008444\
+  29884983241 params=0/0 float=y maxiter=32767 inside=0 logmap=107
+  colors=000BBM<92>111000011<45>JkuKmwKmw<110>zzz
+  }
+
+D07_StarryBrot     { ; A mini Mandelbrot within the starzzle
+  reset=1920 type=mandel
+  corners=-1.766050657887285/-1.766050653559792/0.008444264770831928/0.008\
+  444268016451035 params=0/0 float=y maxiter=32767 inside=0 logmap=200
+  colors=000BBM<92>111000111<45>xxuzzwzyw<29>zCdzAczAc<45>NACMBBMBBMBB<29>\
+  BBM
+  }
+
+D08_Crevice_Waves  { ; Waves of starzzle-bands line the crevice of the
+minibrot
+  reset=1920 type=mandel
+  corners=-1.7660506558101714/-1.7660506556369056/0.0084442657637041098/0.\
+  0084442658936534944 params=0/0 float=y maxiter=32767 inside=0
+  logmap=453 colors=000BBM<93>000000110<77>zcZzcZzbZ<77>U0U
+  }
+
+D09_Freaky_Colors  { ; Strange star clusters and a pink elephant
+  reset=1920 type=mandel
+  corners=-1.7660506557156701/-1.7660506557070068/0.0084442658674804862/0.\
+  0084442658739779762 params=0/0 float=y maxiter=32767 inside=0
+  logmap=852 colors=000<141>yb0zc0zc1zc2<28>z_azZczZc<78>U0m
+  }
+
+D10_Tree           { ; A tree in the strange forest
+  reset=1920 type=mandel
+  corners=-1.7660506557141513/-1.7660506557124411/0.0084442658689910452/0.\
+  0084442658702735957 params=0/0 float=y maxiter=32767 inside=0
+  logmap=852 colors=0000U0<158>czcczcbzc<92>0cz
+  }
+
+D11_StrngsAttached { ; A filament connects two of the starburst trees
+                     ;
+  reset=1920 type=mandel
+  corners=-1.7660506557131233/-1.7660506557122475/0.0084442658696644527/0.\
+  0084442658703211323 params=0/0 float=y maxiter=32767 inside=0
+  logmap=900 colors=000KKz<12>5BJ3AF3AF<238>czz
+  }
+
+D12_Filament_Node  { ; A node on the filament
+                     ; Arbitrary precision, quite slow
+  reset=1920 type=mandel
+  corners=-1.76605065571274566/-1.76605065571262507/0.008444265869968139/0\
+  .008444265870058587 params=0/0 float=y maxiter=32767 inside=0
+  logmap=902 colors=000zKK<13>FA3<239>zzc
+  }
+
+D13_Algae_Colonies { ; Starburst colonies of algae connected by filaments
+                     ; Arbitrary precision, quite slow
+  reset=1920 type=mandel
+  corners=-1.766050655712689039/-1.766050655712681685/0.008444265870010606\
+  3/0.0084442658700161214 params=0/0 float=y maxiter=32767 inside=0
+  logmap=939
+  colors=000000<44>00b00c00c00c<77>0ZP0ZP1_P2`P<28>UzUK00<45>1TT0UU1UU<46>\
+  zzU
+  }
+
+D14_Fourfold       { ; The group of four starzzles, within which are eight
+                     ; Arbitrary precision, quite slow
+  reset=1920 type=mandel
+  corners=-1.7660506557126855459/-1.7660506557126851782/0.0084442658700132\
+  2605/0.00844426587001350181 params=0/0 float=y maxiter=32767
+  inside=0 logmap=961
+  colors=000zzU<157>K00K00K11<44>1TT0UU1UU<46>zzU
+  }
+
+D15_Snazz          { ; A strange swirling object in the node's center.
+                     ; Arbitrary precision, quite slow
+  reset=1920 type=mandel
+  corners=-1.766050655712685371225/-1.766050655712685352842/0.008444265870\
+  0133570414/0.0084442658700133708292 params=0/0 float=y maxiter=32767
+  inside=0 logmap=1055
+  colors=000000<78>0by0cz0cz1cz<74>yyzzzzzyy<45>L22K00K00<46>000
+  }
