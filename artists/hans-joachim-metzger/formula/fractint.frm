@@ -3320,3 +3320,30 @@ HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
   ;SOURCE: 98msg.frm
 }
  
+sg_ifs_45_J {
+  a0=0.40944, b0=0.63556, c0=0.69977, d0=-0.36429
+  a1=0.44003, b1=-0.21839, c1=0.41333, d1=0.37676
+  a2=0.10788, b2=0.43864, c2=0.08479, d2=0.25711
+  al0=-0.59391, k0=3.91945, l0=-3.79794
+  al1=0.25605, k1=0.47092, l1=-2.67077
+  al2=-0.00946, k2=1.93894, l2=-0.59695
+  z=pixel:
+  x=real(z)
+  y=imag(z)
+  o0=(d0*x-b0*y+k0)/al0+flip((-c0*x+a0*y+l0)/al0)
+  op0=|o0-p2|
+  o1=(d1*x-b1*y+k1)/al1+flip((-c1*x+a1*y+l1)/al1)
+  op1=|o1-p2|
+  o2=(d2*x-b2*y+k2)/al2+flip((-c2*x+a2*y+l2)/al2)
+  op2=|o2-p2|
+  IF (op0<op1 && op0<op2)
+    z=o0
+  ELSEIF (op1<op0 && op1<op2)
+    z=o1
+  ELSEIF (op2<op1 && op2<op0)
+    z=o2
+  ENDIF
+  |z|<=p1
+  ;SOURCE: 99msg.frm
+}
+ 
