@@ -40,3 +40,10 @@ J_TchebychevC3 {
   ;SOURCE: fractint.frm
 }
  
+M_Laguerre2 {
+  c = P1, z = Pixel:
+  z = (z*(z - 4) +2 ) / 2 + c
+  |z| < 100
+  ;SOURCE: tchebych.frm
+}
+ 

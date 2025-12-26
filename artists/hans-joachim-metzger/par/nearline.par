@@ -1,0 +1,87 @@
+comment { ; narrative copyright Kerry Mitchell 18jan98
+
+Near to a given line
+
+This method (also called, "nearline") is an extension of Fractint's
+bof60 scheme.  In bof60, the question is asked, "how close does the
+orbit come to the origin?", or, "what is the minimum magnitude of the
+iterate?"  In nearline, we are curious about approach to a given line,
+instead of the origin [the origin is the point 0+0i in the complex
+plane, also written (0,0)].  The lines in question are all straight and
+pass through the origin, so they have the equation, y=kx.  The slope of
+the line, k, is equal tan(theta), where theta is the angle of the line
+with respect to the x-axis.  Given that tan = sin/cos, an alternative
+way to write the equation of the line is to define a distance quantity,
+r, and set r equal to 0:
+
+r = cos(theta) * y - sin(theta) * x = 0.
+
+So the basis of this coloring method is, for a given theta, what is the
+minimum value of |r|?
+
+Given a minimum value of |r| for the orbit, the formulas plot the results
+by taking the log of |r|, and using that as the polar angle of z for the
+decomposition coloring.  This has the advantage of being able to handle a
+wide range of values without rescaling, and compressing them into a small
+variable space.  Decomposition wraps automatically, so no clipping is
+encountered if the color overruns the 0 - 255 index range.  And, the log
+function is only executed once per orbit, so the time penalty is minimal.
+
+The general nature of this coloring is a series of lines, starting at the
+fractal boundary and heading to infinity, asymptotic to the angle theta.
+How these lines interact and intersect varies greatly with the choice of
+theta.  Specifically, it is not clear what values of theta to choose to
+cause the lines to intersect at the origin.  However, the lines can be
+chosen in terms of iterations instead of angle.  The first iterate of (0,0)
+is simply c, so, from the above equation, we can force the lines to cross
+at the origin after 1 iteration by making
+
+r = imag(c) * x - real(c) * y,
+
+and clearly, r will be 0 at the origin at the first iteration.
+Similarly, if we define
+
+zero2 = c*c + c
+      = the second iterate of (0,0), and
+
+zero3 = zero2*zero2 + c
+      = the third iterate of (0,0), then
+
+r = imag(zero2) * x - real(zero2) * y
+
+will cause an intersection at the second iteration, and
+
+r = imag(zero3) * x - real(zero3) * y
+
+will cause an intersection at the third iteration.  These techniques
+are employed in nearline01_jul, -02_jul, and -03_jul, respectively.
+Such actions are not required for the Mandelbrot variation, since the
+origin is a fixed point, and all its iterates are zero.
+
+While initially an external coloring scheme, this method works for
+the inside as well.  Fundamentally, there's no difference between the
+fractal interior and exterior with this method, so the formulas force
+all iterations to escape, allowing interior points to be rendered via
+decomposition, instead of relying on "inside=zmag".
+
+}
+
+julia-sample       { ; copyright Kerry Mitchell 18jan98
+                     ; demonstrates use of nearline series of formulas
+  reset=1960 type=formula formulafile=nearline.frm
+  formulaname=nearline01_jul passes=1 center-mag=0/0/0.8/1/-14
+  params=-0.125/0.649519052838/1000000/0 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=000<61>y99zAAzAAzBB<61>zzzzzzzyz<60>i1ih0hh0hg0g<61>000
+  }
+
+mandelbrot-sample  { ; copyright Kerry Mitchell 18jan98
+                     ; demonstrates use of nearline series of formulas
+  reset=1960 type=formula formulafile=nearline.frm
+  formulaname=nearline-theta_man passes=1
+  center-mag=-1.74757631770168900/+0.01796337199985331/465838.\
+  7/1/-84.5 params=1000000/120 float=y maxiter=500 inside=0
+  colors=F0K<60>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0\
+  <58>G2JF0KF0KF0KF0K cyclerange=0/255 periodicity=0 decomp=256
+  }
+

@@ -1,0 +1,54 @@
+Monument           { ; Alien headstone?
+                     ; Bradley Beacham,  CIS 74223,2745
+  reset=1820 type=formula formulafile=newtell.frm
+  formulaname=Newton_elliptic passes=2
+  corners=0.75470845/0.87275005/0.078770704/-0.078618096/0.87275005/-0.078\
+  618096 params=1/0/0.001 float=y maxiter=16 inside=startrail
+  colors=14J8AM<13>zpg<15>z_0<15>0Tz<14>06M47K<14>zza<15>d9M<14>4ot1rw1ou<\
+  14>14J<15>vp4<15>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J47K
+  }
+
+Dust_Devil         { ; Gnarly
+                     ; Bradley Beacham,  CIS 74223,2745
+  reset=1820 type=formula formulafile=newtell.frm
+  formulaname=Newton_elliptic passes=2
+  corners=-0.044254187/0.29356583/0.00850888919/0.0195378554/0.072067114/-\
+  0.146586179 params=1/0/1.01 float=y outside=mult
+  colors=000TTT<13>ppp<14>TTTRRRPPPNNNMMM<12>000PFF<27>vcDwdDxeDzfCyfCxeC<\
+  29>PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>U\
+  PF222<14>RRR
+  }
+
+Layers             { ; with mutated Lyupanov map
+                     ; Bradley Beacham,  CIS 74223,2745
+  reset=1820 type=formula formulafile=newtell.frm
+  formulaname=Newt_ellipt_oops
+  corners=0.06483912/-1.452105/-1.01256/1.010032/-1.452105/1.010032
+  params=1/0/1.3999999999999999 float=y decomp=256 periodicity=0
+  colors=000<32>WH0XI0YJ0ZK0_L0<25>yj0zk0zk0zk0<94>ZK0ZK0ZK0ZK0YJ0YJ0<71>H\
+  20H20G10F10<13>110 cyclerange=0/255
+  }
+
+
+metal-newtons      { ; a bit overdone, but what the hey
+                      ;don lebow
+   reset=1820 type=formula formulafile=newtell.frm
+   formulaname=Newton_elliptic
+   passes=b
+   corners=0.09513674/-1.068863/-0.7844197/0.7675803/-1.068863/0.7675803
+   params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
+   decomp=256
+   colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
+   z<15>000<15>zn0<15>000<15>zzz<15>004<10>E0cF0gG0jH0nI0qK0u<14>204
+   }
+
+very-metal-newtons   { ; zoom with a new map
+                        ; don lebow
+   reset=1820 type=formula formulafile=newtell.frm
+   formulaname=Newton_elliptic
+   passes=b
+   corners=-0.26753572/-0.4300515/-0.1324775/0.13223162/-0.4300515/0.132231\
+   62 params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
+   decomp=256
+   colors=ppp333<119>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000000<3>222
+   }

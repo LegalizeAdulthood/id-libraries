@@ -1,0 +1,79 @@
+frm:jhline {   ;Jos Hendriks,2002
+                    ;draws the line y=0, p1 gives the thickness of the line
+                    ;watch out: only two colors are used
+                    ;take for instance maxiter=2, inside=0, outside=iter 
+                    :
+                    |Imag(Pixel)|<p1
+           }
+
+x-as {;Jos Hendriks,2002
+reset=2000 type=formula formulaname=jhline formulafile=new.frm
+center-mag=0/0/0.6666667 params=0.001/0 float=y maxiter=2 inside=0
+colors=00000e
+}
+
+frm:jhparabola{ ;Jos Hendriks,2002, 
+                ;draws a parabola. Thickness depends on p1.
+                ;use maxiter=2,inside color=0, outside=iter
+                :
+                |real(Pixel)^2-imag(Pixel)-1.25|<p1
+              }
+
+
+jhparabola1 {;Jos Hendriks,2002
+reset=2000 type=formula formulafile=sier.frm formulaname=jhparabola
+center-mag=0.0301786/0.369842/0.4959278 params=0.1/0 float=y
+maxiter=2 inside=0 colors=00000e
+}
+
+
+frm:jhgraphs1 { ;Jos Hendriks,2002
+                ;graph of y= (a1*x+a2*x)/(a3*x^2+a4*x+a5)\
+                ;imag(p3) gives the thickness
+                ;also the x- and y-axes are drawn
+                :
+                |(real(p1)*real(Pixel)+imag(p1))/\
+                (real(p2)*real(Pixel)^2+imag(p2)*\
+                real(Pixel)+real(p3))-imag(Pixel)|<imag(p3)||\
+                |real(Pixel)|<.001|||imag(Pixel)|<.001
+              }
+
+graph1 { ;Jos Hendriks,2002, broken polynomial function
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/-1/2/1/0.02 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph2 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-as are visible
+reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/1/-2/-3/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+graph3 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e 
+}
+
+graph4 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-as are visible
+reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=-5/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph5 { ; Jos Hendriks,2002, 
+;with correct choosen parameters graph of linear f: a line
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=1/3/0/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}

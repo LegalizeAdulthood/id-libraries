@@ -17,3 +17,10 @@ phoenix_m {; Mandelbrot style map of the Phoenix curves
   ;SOURCE: fractint.frm
 }
  
+flip0_man_j (ORIGIN) {
+  z=pixel:
+  z = flip(sqr(z) + p1)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 

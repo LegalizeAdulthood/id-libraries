@@ -5496,3 +5496,41 @@ Moo_4 {
   ;SOURCE: mad_cow.frm
 }
  
+quartet {; From Noel Giffin noel@triumf.ca
+     ; The quatro-HT variation. Use real part of p1  0.0 < p1 < 1.0
+     ; Adding the inversion causes what looks like an 
+     ; infinite extension along
+     ; the real axis. Using the Imag component will 
+     ; add some nice asymmetry.
+  z=pixel, zp = (0,0), huge = 1.0e30:
+  temp = z
+  z = sin(z) - zp
+  zp = p1/temp
+  (|zp| <= huge && |z| <= huge) 
+  ;SOURCE: noel1.frm
+}
+ 
+quartet1 {; From Noel Giffin noel@triumf.ca
+   ; Use an input parameter (real part of p2) to control the bailout.
+   ; increasing the bailout will reduce the disk size and a wider and
+   ; more interesting range of workable P1 input parameters.
+  z=pixel, zp = (0,0), bail=real(p2), huge = 1.0e32:
+  temp = z
+  z = sin(z) - zp
+  zp = p1/temp
+  (|zp| <= bail && |z| <= huge) 
+  ;SOURCE: noel1.frm
+}
+ 
+zzz (XAXIS) {
+   ; Same as XXX but introduce a new dynamic by inverting a previous term
+   ; A small but curious active region. Try 256 colour decomp.
+  z = zp1 = pixel, zp2 = (0,0):
+  temp = z
+  z = z^zp1 - zp2
+  zp2 = zp1
+  zp1 = 1/temp 
+  |zp1| <= 4
+  ;SOURCE: noel.frm
+}
+ 

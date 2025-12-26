@@ -1,0 +1,246 @@
+Comment            { ; PAR file for PGD's Fractal Art Gallery,
+                     ; Nova Formulae section.
+                     ; Freely distributable but may not be sold.
+                     ; All fractals from this section, past and present,
+                     ; up to Mar. 28 1996.
+                     ; The calculation times are for a complete
+                     ; 640x480 image on a 486dx250 (with coprocessor).
+                     }
+
+Nova_Mandelbrot    { ; The Nova formula Mandelbrot set. It looks like a bell!
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-1.564175/0.4198257/-0.7440041/0.7439964
+  params=0/0/1e-005/0/0/0 float=y inside=0 periodicity=0
+  colors=000A0A<92>yyyzzzzzzzzz<157>000
+  }
+
+Nova_Mandel_Zoom   { ; The front of the Mandelbrot set. Notice the minibrot.
+                     ; 10 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.73814036/-0.28182021/-0.17112387/0.17111624
+  params=0/0/1e-005/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0 colors=000A0A<92>yyyzzzzzzzzz<157>000
+  }
+
+Darana             { ; A strange region of the Nova M-set.
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.542476289/-0.503232756/0.0540142769/0.083446927
+  params=0/0/1e-005/0/0/0 float=y maxiter=32767 inside=0 logmap=yes
+  periodicity=0 colors=000A0A<93>zzzzzzyyy<93>00A00A01A<61>0z0
+  }
+
+Nova_Valley        { ; Nova Seahorse Valley. Incredible threads interconnect...
+                     ; 30 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.3743623363/-0.3668356714/0.02822211378/0.03386711242
+  params=0/0/1e-005/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0 colors=000zmc<109>A00A00A00A00A00<75>000000110<61>zz0
+  }
+
+Thread             { ; One of the threads tying the valley's sides together.
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.37125734871/-0.37096230345/0.031241021261/0.031462305208
+  params=0/0/1e-005/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=0 colors=000zmc<109>A00A00A00A00A00<75>000000110<61>zz0
+  }
+
+Mini_Mandelbrot    { ; A mini Mandelbrot inside a skein of threads.
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.371076196652391/-0.371076115455935/0.0313934643877415/0.03139\
+  35252850836 params=0/0/1e-005/0/0/0 float=y maxiter=2000 inside=0
+  logmap=107 periodicity=0
+  colors=000cmz<109>00A00A00A00A00A<75>000000011<61>0zz
+  }
+
+Cloudoid           { ; A strange cloud in the sky.
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=0.179681793/0.197476225/0.502662569/0.516008393
+  params=0/0/1e-008/0/0/0 float=y maxiter=2000 inside=0 logmap=17
+  periodicity=0 colors=00000z<108>yyzzzzzzzzzy<28>zzdzzczzczyc<109>z00
+  }
+
+Nova_Spiral        { ; A spiral from the Nova formula Mandelbrot set
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.5982065198/-0.5900647278/0.01922841796/0.02533476196
+  params=0/0/1e-008/0/0/0 float=y maxiter=32767 inside=0 logmap=25
+  periodicity=0
+  colors=000<31>000010010020030<57>0b00c00c01c1<61>zzzzzzyyy<93>00A
+  }
+
+Shock_Wave         { ; Weird!
+                     ; 40 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.64532973/-0.55065773/-0.035502/0.035502
+  params=0/0/1e-008/0/0/0 float=y maxiter=32767 inside=0 logmap=25
+  periodicity=0
+  colors=000<31>000100100200300<57>b00c00c10c21<44>yxbzzczzc<45>LdyKczLcz<\
+  13>agzchzchz<46>zzz
+  }
+
+Nova_Scepter_Vale  { ; ScepterValley Nova style. Again a skein of threads.
+                     ; 1 hour
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.5166270219/-0.5134670219/0.007381945607/0.009751945607
+  params=0/0/1e-008/0/0/0 float=y maxiter=5000 inside=0 logmap=83
+  periodicity=0 colors=0004AA<109>zzzzzzzyy<60>z11z00z00y00<77>000
+  }
+
+Nova_Julia         { ; A julia set of Nova with a complicated structure.
+                     ; 15 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  passes=t corners=-2/2/-1.5/1.5 params=-0.39528/0.03208/1e-007/0/0/0
+  float=y maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=000000<28>w00z00z00<61>zy0zz0zz0zz0<157>zzz
+  }
+
+Nova_Foam          { ; A Julia set of Nova with spirals, lake, and foam.
+                     ; 15 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-1.498433/2.501567/-2.027197/0.9728033
+  params=-0.30981/0.30301/1e-007/0/0/0 float=y maxiter=1000 inside=0
+  logmap=yes periodicity=0
+  colors=0000KK<8>000<35>xxxzzzyyz<29>CMzAKzAKz<174>00K
+  }
+
+Isla_Nova          { ; Islands with verdant beaches, desert interiors, lagoons.
+                     ; 15 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-2/2/-1.5/1.5 params=0.28845/0.52403/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=A50zzz<44>22C00A00A<10>13K24L24N<16>9JwAKzAKz<14>AJwAJvBKu<28>bjM\
+  ckKckK<61>1L10K00K00K0<61>000
+  }
+
+Metanna            { ; The strangest of strange metallic spirally things.
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-2/2/-1.5/1.5 params=-0.60697/0.03349/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=A50zzz<44>22C00A00A<10>13K24L24N<16>9JwAKzAKz<14>AJwAJvBKu<28>bjM\
+  ckKckK<61>1L10K00K00K0<61>000
+  }
+
+Shiny              { ; Another odd metallic Julia image. Quite nice.
+                     ; 10 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-2/2/-1.5/1.5 params=-0.514101/0.009504/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=A50zzz<44>C22A00A00<10>K13L24N24<16>w9JzAKzBK<45>zxyzzzzzz<126>00\
+  0
+  }
+
+Crossing           { ; Two threads intersecting in a Julia set.
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=1.6988636/2.1396316/-0.22599093/0.10458507
+  params=-0.37107615605/0.0313934836/1e-007/0/0/0 float=y maxiter=1000
+  inside=0 logmap=yes periodicity=0
+  colors=A50cUU<47>111000000000<2>000<6>0Q00U00W0<9>0z0<5>zz0<29>aX0`W0`W0\
+  `W0<93>000001112<45>ccz
+  }
+
+Swendala           { ; Weird seahorse spirals and threads in this Julia set.
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-2/2/-1.5/1.5
+  params=-0.37107615605/0.0313934836/1e-007/0/0/0 float=y maxiter=1000
+  inside=0 logmap=yes periodicity=0
+  colors=A50`G7<60>yyTzzUzzT<13>zz2zz0zz0<61>TM0SL0SL0SL0<61>000001112<45>\
+  ccz
+  }
+
+Spike              { ; A Julia set of Nova formula.
+                     ; 2 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-0.984326/3.015674/-1.5/1.5 params=-1/0/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=9 periodicity=0
+  colors=A0500z<36>002000200<22>z00<63>zzzzzzyzy<61>0z00y00w0<28>020000001\
+  <30>00z
+  }
+
+Tendrils           { ; Tendrils of a Julia set
+                     ; 2 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova
+  corners=-0.9216301/3.07837/-1.5/1.5 params=-0.9/0.1/1e-007/0/0/0
+  float=y maxiter=1000 inside=0 logmap=9 periodicity=0
+  colors=000cc0<35>vxuvxvvxv<38>yyyzzzyyy<29>I2IG0GF0F<14>000000011<61>0zz\
+  1zz3zz<28>xzzzzzzzy<30>zz0
+  }
+
+Hot_Brot           { ; A mini Mandelbrot at a convergence of spirals.
+                     ; 10 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovaM
+  corners=-0.559281150847/-0.559277129711/0.0843624196012/0.0843654354532
+  params=0/0/1e-009/0/0/0 float=y maxiter=1000 inside=0 logmap=75
+  periodicity=0
+  colors=000<13>000000100200<44>x00z00z10<29>zc0ze0ze0<29>zy0zz0zz0zz0<125\
+  >zzz
+  }
+
+Web                { ; A webwork among spirals from the Nova-4 equation.
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova4M
+  corners=-0.265236933/-0.166036933/0.161614196/0.236014196
+  params=0/0/1e-007/0/0/0 float=y maxiter=1000 inside=0 logmap=17
+  periodicity=0
+  colors=000055<28>01x00z11z<29>xxzzzzzzz<126>z00z00y00x00<60>A00
+  }
+
+Twizan             { ; An odd Julia set of Nova4 with two kinds of black lake.
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova4
+  passes=t corners=-2/2/-1.5/1.5
+  params=-0.2189746478/0.17652526/1e-007/0/0/0 float=y maxiter=1000
+  inside=0 logmap=17 periodicity=0
+  colors=000AAF<92>yyyzzzzzzzzz<157>z00
+  }
+
+Thorny             { ; Another peculiar Nova4 Julia, with bands and stripes.
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova4
+  corners=-2/2/-1.5/1.5 params=-0.3/0/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=000AAF<92>yyyzzzzzzzzz<157>00z
+  }
+
+Tangle             { ; A tangle of threads and some spirals.
+                     ; 10 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova4
+  corners=-2/2/-1.5/1.5 params=-0.2/0.2/1e-007/0/0/0 float=y
+  maxiter=1000 inside=0 logmap=yes periodicity=0
+  colors=000pkp<59>NLNNLNMKMLJL<13>222000100<45>x0Mz0Nz0N<126>zzz
+  }
+
+Novena_Valley      { ; Seahorse valley of Novena. Fascinating!
+                     ; 20 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=NovenaM
+  corners=-0.599356643/-0.564956483/0.102333556/0.128133677
+  params=0/0/1e-007/0/0/0 float=y maxiter=1000 inside=0 logmap=25
+  periodicity=0
+  colors=000<17>445446446447557<72>NNXNNXNNXNNXOOX<155>zzz
+  }
+
+Ribbons            { ; Ribbons and bunting strung from celebrating seahorses.
+                     ; 45 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova5M
+  corners=-0.2164578938/-0.2101090641/0.01673198591/0.02149360814
+  params=0/0/1e-006/0/0/0 float=y maxiter=2000 inside=0 logmap=41
+  periodicity=0
+  colors=000X5F<2>ZAI_BK`DLaFNaFN<14>gRXgRXgSYhSYhTZ<17>ndgndhoehoeh<29>yy\
+  yzzzyzz<45>5Oz3Nz3Nz<126>000
+  }
+
+Headdress          { ; Ceremonial headdress of the Priestess of Nova
+                     ; 5 min
+  reset=1920 type=formula formulafile=nova.frm formulaname=Nova5M
+  corners=-1.630499/0.3535098/-0.7440105/0.7439965
+  params=0/0/1e-006/0/0/0 float=y maxiter=2000 inside=0 periodicity=0
+  colors=00Ao00<26>200000000<25>FQTGRUGSWGTXHUY<2>KZdL`gL`fL_eL_dKZc<4>Mag\
+  MbhMbiNciNcjNdj<15>TnsUotUotUot<157>zzz
+  }
