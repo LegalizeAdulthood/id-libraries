@@ -1,0 +1,121 @@
+Waffle { ; Very productive for icons. Ex-president Clinton
+         ; must be in this equation. Interchangeable with funk_r_not.
+z=fn1(pixel), clear=fn2(pixel), set=fn3(pixel), flop=1:
+
+c=clear
+if(flop==-1)
+        c=set
+endif,
+flop=-flop
+z = sqr(z) +c,
+
+LastSqr <=real(P1)
+}
+
+Kwodrongl          { ; 20.27s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/zero/abs passes=t
+  center-mag=-1.33227e-015/2.22045e-016/1.263/0.8752 params=4/0
+  float=y maxiter=255 inside=0 outside=atan
+  invert=0.5597347986818/0/0 symmetry=xyaxis periodicity=0
+  colors=@altern.map
+  }
+
+Vektor             { ; 32.35s/megapixel@350Mhz.
+                     ; grayhack is -altern.map with first colour black.
+  reset=2003 type=formula formulafile=waffle.frm
+  formulaname=Waffle function=zero/atan/atanh
+  center-mag=-0.941635/0/0.46/0.8407 params=16/0 float=y
+  maxiter=255 inside=0 outside=atan invert=1.37582076541427/-0.25/0
+  symmetry=xaxis periodicity=0 colors=@altern.map
+  }
+
+Bowser             { ; 32.62s/megapixel@350Mhz.
+                     ; It's not the species of stunning beauty called
+                     ; a Mountain Lion that moved into Elk Island
+                     ; national park recently, but it's decent.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=exp/atan/atanh center-mag=-0.467145/0/0.767/1.111
+  params=64/0 float=y maxiter=255 inside=0 outside=atan
+  invert=0.467996152338943/-0.333333333333/0 symmetry=xaxis
+  periodicity=0 colors=@altern.map
+  }
+
+Guuglufagus        { ; Total mess for relief. 1:07.07/megapixel@350Mhz.
+                     ; Higher bailouts will increase wrinkles.
+  reset=2003 type=lambda(fn||fn) function=recip/exp
+  center-mag=-0.294592/-0.296513/0.09228216/1.3722 params=-0.5/0.5/1
+  float=y maxiter=255 bailout=37 inside=0 outside=atan
+  invert=2.8079376810782e-005/-0.072132107189747/-0.0929080805175205
+  symmetry=none periodicity=0 colors=@altern.map
+  }
+
+GobletOfBenwaw     { ; 1:10.08/megapixel@350Mhz.
+                     ; FRACTINT will "calculate" the aspect
+                     ; ratio of .75 to put in this parameter file
+                     ; if you save it again. It's one. colors=@diag.map
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/ident/sqrt passes=t
+  center-mag=-2.30776/0/0.5289784/0.659 params=4/0 float=y
+  maxiter=255 inside=0 outside=tdis invert=0.6570112296359/-0.25/0
+  symmetry=xaxis periodicity=0
+  colors=000zzz<3>LzzBzz0zz<3>0__0TT0MM0FF088<3>0NZ0Re0Vl0Zs0bz<3>RlzYoz\
+  dqzktzrwz<3>SazLWzERz7Lz0Fy<3>09Z07T06M04F028<3>41Z51e61l71s80z<3>WRza\
+  Yzgdzmkzsrz<3>fSycLy`EyY7yU0x<3>H0ZE0SB0M80F408<3>S0YY0dc0ji0qp0x<3>tR\
+  xuYxvdxwkxxry<3>xSqxLoxEmx7kw0h<3>U0NN0HF0C806806<3>Y0Ec0Gj0Ip0Kw0M<3>\
+  xVexbjyjoyrtyrt<3>xSTxLMwEFw78v00<3>U00N00F00800800<3>XA0bC0iF0oH0vK0<\
+  3>xdVxibyojytrytr<3>wmSwkLviEvg7ue0<3>TL0MG0FB0860860<3>UW0Za0dh0in0ou\
+  0<3>twVuxbwxjxyrxyr<3>iwSevLavEYu7Ut0<3>FT0CM08F0480480<3>6W06a07g07m0\
+  8s0<3>ZvVewblxjsyrsyr<3>SvYLvTEuN7tI0sC<3>0S60L50E3072072<3>0VH0`L0fP0\
+  lT0rX<6>ryvryv
+  }
+
+Cancer             { ; 51.24s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/recip/conj passes=t
+  center-mag=0.970492/0/0.05868219/0.7229 params=16/0 float=y
+  maxiter=255 inside=0 outside=atan invert=0.621604712054051/-1.15/0
+  symmetry=xaxis periodicity=0 colors=@altern.map
+  }
+
+FunKlub            { ; 33.84s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/sqr/sqrt passes=t center-mag=-0.210411/0/1.25/1.34
+  params=4/0 float=y maxiter=255 inside=0 outside=atan
+  invert=0.3671085141903/-0.25/0 symmetry=xaxis periodicity=0
+  colors=@altern.map
+  }
+
+FunkSpade          { ; 49.54s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/recip/ident center-mag=5.30944/0/0.01633668/2.0059
+  params=8/0 float=y maxiter=255 inside=0 outside=atan
+  invert=0.7284382284382/-0.73/0 symmetry=xaxis periodicity=0
+  colors=@altern.map
+  }
+
+FunkHeart          { ; 42.02s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=exp/sqrt/sqr
+  center-mag=-0.98638/0/0.5782385/1.7489 params=4/0
+  float=y maxiter=255 fillcolor=0 inside=0 outside=atan
+  invert=0.5/-0.75/0 symmetry=xaxis periodicity=0 colors=@altern.map
+  }
+
+FunkDiamond        { ; 27.9s/megapixel@350Mhz.
+                     ; Look Ma. Four Suits. One Formula.
+                     ; (Three sides is actually a better representation
+                     ; of tetrahedral carbon crystals in 2D.)
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/flip/zero passes=t
+  center-mag=0/0.254029/0.9553083/1.2434 params=4/0 float=y
+  maxiter=255 inside=0 outside=atan invert=0.609875904495143/0/0
+  symmetry=yaxis periodicity=0 colors=@altern.map
+  }
+
+Default            { ; 35.93s/megapixel@350Mhz. I tried
+	             ; putting evolver parameters here.
+  reset=2003 type=formula formulafile=waffle.frm formulaname=Waffle
+  function=zero/ident/recip passes=t params=4/0 fillcolor=255
+  inside=255 periodicity=-3
+  }
