@@ -7209,3 +7209,10 @@ Jm_03 {; generalized Jm Collard-Richard type
   ;SOURCE: fractint.frm
 }
  
+M_TchebychevC5 {
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(z*z-5)+5)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
