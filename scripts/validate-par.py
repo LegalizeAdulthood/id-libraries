@@ -107,6 +107,8 @@ def validate_parameter_file(filename, quiet=False):
         colors = params.get('colors')
         if colors and colors.startswith('@'):
             colormap_file = colors[1:]  # Remove the @ prefix
+            if not colormap_file.lower().endswith('.map'):
+                colormap_file = colormap_file + '.map'
             validate_file_reference(entry.name, entry.start_line, 'Colormap', 
                                   colormap_file, map_dir, errors)
         
