@@ -1,0 +1,93 @@
+legalstf { ;Press F2
+           ;Most of these are grown 
+           ;on Peter Moreland's (c) droppings , but then...  
+         }
+
+ageen              {
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=3.357374/-3.981826/0.57498854/-0.30924058/1.139671/3.531922
+  params=100/-8/100/100 maxiter=32000 inside=0 potential=255/200/32000
+  colors=@melo.map
+  }
+
+polyp              {
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=3.420659/-4.204358/5.774542/-5.909286/6.283947/1.957231
+  params=0/0/345/832 maxiter=32000 inside=0 potential=255/200/32000
+  colors=@melo.map
+  }
+
+kratz              {
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=1.232502/-1.083285/5.802185/-6.536369/6.321312/-0.9829171
+  params=100/-8/100/5.8989000000000003 maxiter=32000 inside=0
+  potential=255/200/32000 colors=@melo.map
+  }
+
+blop               {
+  reset type=fn*z+z function=cosxx
+  corners=2.018389/8.932886/-0.4705716/5.58351 params=17/16/15/100
+  maxiter=32000 inside=0 potential=255/200/32000 colors=@melo.map
+  }
+
+Mouth              { ; It's hard (!) to believe this is really a fractal...
+                     ; alles nur geklaut
+  reset type=fn*z+z function=exp
+  corners=-0.539317846/-0.611571074/3.15289/1.7553128/0.106124282/2.29718
+  params=0.12435160000000001/1 maxiter=1000 inside=0
+  potential=256/400/1000
+  colors=zzz<14>zzz000<30>x00z00zVVzzzxWWv00<24>S00KKK<16>wwwzzzzzz<157>zz\
+  z cyclerange=16/77
+  }
+
+NYUF0101           { ; pretty bug if changed to float=n     Dan Farmer &
+  reset type=fn(z)+fn(pix) function=sin/sqr
+  corners=-4.087723/10.8296/-0.13394/11.0541 params=0/0/1 inside=0
+  potential=255/200/250 colors=@melo.map
+  }
+
+monstrig           {
+  reset type=formula formulafile=smuus.frm
+  formulaname=Fn*z+z function=recip/sin/sinh/cosxx
+  corners=3.0367616/2.8827738/-0.078231275/0.12698102/2.8827738/0.12698102
+  params=17/16/15/100 maxiter=32000 inside=0 potential=255/200/32000
+  colors=zzzauo<5>dyseztdxr<4>VmgTjdRf`<6>7A9455011<39>2FI3GJ3GJ4HK5IL<2>7\
+  LO7LO7MP8NP8NQ<20>Fb_Gc`GdaHebIeb<35>zzz7KC<36>VmfWngVle<10>9NF7KC7KC<62\
+  >`tn000auo
+  }
+
+blech              {
+  reset type=formula formulafile=ilvi.frm
+  formulaname=ilvp+fn123 function=recip/sin/sinh
+  corners=-6.961506/6.961499/-5.223528/5.223509 params=0/0/1/1 float=y
+  maxiter=32000 inside=0 potential=255/200/32000 colors=@melo.map
+  }
+
+steel              { ; k..k..k.kkooold
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=6.008357/-14.20932/5.992959/-9.170361 params=5/12/-8/10
+  maxiter=32000 inside=0 potential=255/200/32000
+  colors=zzzauo<5>dyseztdxr<4>VmgTjdRf`<6>7A9455011<39>2FI3GJ3GJ4HK5IL<2>7\
+  LO7LO7MP8NP8NQ<20>Fb_Gc`GdaHebIeb<35>zzz<12>FUM<24>VmfWngVle<10>9NF7KC7K\
+  C<64>auo
+  }
+
+steelsculpture     { ; zoomout from steel
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=5.979071/-16.09403/-24.71559/4.715345/-16.09403/4.715345
+  params=5/12/-8/10 maxiter=32000 inside=0 potential=255/200/32000
+  colors=zzzauo<5>dyseztdxr<4>VmgTjdRf`<6>7A9455011<39>2FI3GJ3GJ4HK5IL<2>7\
+  LO7LO7MP8NP8NQ<20>Fb_Gc`GdaHebIeb<35>zzz<12>FUM<24>VmfWngVle<10>9NF7KC7K\
+  C<64>auo
+  }
+
+tech               {
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=1.966815/-27.46408/19.04406/-3.029044
+  params=100/-8/100/5.8989000000000003 maxiter=32000 inside=0
+  potential=255/200/32000
+  colors=zzzbvp<4>dyseztdxr<4>VmgTjdRf`<6>7A9455011<39>2FI3GJ3GJ4HK5IL<2>7\
+  LO7LO7MP8NP8NQ<20>Fb_Gc`GdaHebIeb<35>zzz<12>FUM<24>VmfWngVle<10>9NF7KC7K\
+  C<65>auo
+  }
+

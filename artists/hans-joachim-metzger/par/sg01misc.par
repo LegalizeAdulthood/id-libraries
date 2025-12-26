@@ -1,0 +1,78 @@
+
+frm: 040797-001 { ; by Linda Allison
+  ; gumbycat@ix.netcom.com
+z = c = pixel:
+; z2 = (1/z ^ p1)
+; z = fn1(c * (1 - z2 ^ z2)/(1 + z2 ^ z2))
+ z2 = z^(-p1)
+, z22 = z2 ^ z2
+ z = fn1(c * (1 - z22)/(1 + z22))
+|z| <= p2
+}
+
+Xmas96             { ; Christmas Tree Ornament               t=  0:00:57.68
+                     ; Copyright Sylvie Gallet [101324,3444], Dec 1996
+                     ; On a Pentium 166 at 1600 x 1200
+                     ; Formula by Sylvie Gallet
+  reset=1950 type=formula formulafile=Gallet-4.frm
+  formulaname=Gallet-4-06 function=conj/atanh passes=1
+  center-mag=-0.0200884/0.0749709/0.2589752/1/-15 params=0/2/0/1.5
+  float=y decomp=256 periodicity=0
+  colors=0Z1<15>3LL3KH<14>68a77c77c<51>85BF6F<7>Z97`96aB6<15>zr7<12>`J7ZG7\
+  XD6UA5<14>752541551<14>BU3<14>FF4GE5HF6<2>JE6KE6LD6MC6<10>X57Z97aD6dH6fL\
+  5<5>wm1zr0zp0<7>vY0uW0sV0<13>NC9KAAKBA<19>1X10Z00Z0 cyclerange=0/255
+  }
+
+6domctz2           { ; .                                     t=  0:20:30.94
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1920 type=formula formulafile=040797.frm
+  formulaname=040797-001 function=log passes=1
+  center-mag=-0.40167751459501030/-0.05074543817035155/323292.7/0.6845/72.\
+  799/-30.569 params=0.555/0/9/-9 float=y maxiter=500 inside=bof60
+  invert=-1/0/0 decomp=256
+  colors=555<2>000B0A<14>d9H<10>A00<8>Y0A`0C`2D<25>zzm<5>yoRxmNxkJwiFvfD<3\
+  >qU6pR4oQ4<12>ZC5YB5W96U87T77R58<12>zpN<11>SdaPccPba<20>OB2N90P80<3>U30<\
+  15>zcc<22>856634312000<30>aaacccbbb<24>666 cyclerange=0/255
+  }
+
+6domctz3           { ; .                                     t=  0:11:35.20
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1920 type=formula formulafile=040797.frm
+  formulaname=040797-001 function=log passes=1
+  center-mag=-0.40147432236812600/-0.05044919062026389/2200/1/158.999
+  params=0.555/0/9/-9 float=y maxiter=500 inside=bof60 invert=-1/0/0
+  decomp=256
+  colors=199388<13>0AA<7>mS6<5>se3th2uj1wm0wn3<9>yxdzzhzyf<15>rZ0<14>i30h0\
+  0g00<11>M00K00K01<2>K06K07K08K09K0A<10>M0LN0NN0N<3>P0PQ0QR2P<19>zp0<30>M\
+  20K00K00<83>388
+  }
+
+6dynamc1           { ; .                                     t=  0:12:38.08
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=dynamic function=sin
+  center-mag=+0.00000000000000200/+0.00000000000000178/0.09653783/1/44.999
+  params=200/0.15/25/-0.5 float=y maxiter=1000 inside=0
+  colors=000`00c00<13>xuuzzzyww<14>c00<14>300000020<14>0c0<15>zzz<15>0c0<1\
+  4>030000002<14>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>03\
+  3000200<12>Z00
+  }
+
+6ok3201            { ; .                                     t=  1:29:57.64
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=fractint.frm formulaname=OK-32
+  function=exp passes=1
+  center-mag=+0.30702335662254070/+1.43662678036938400/76.39131/1/-7.5
+  params=0.5/0/100/0 float=y maxiter=1023 inside=bof60 periodicity=0
+  colors=A85TRP<43>lkjlkjmlknml<10>vvtwwuwwt<13>wwfvvdwwc<29>dR2cP0cP0<28>\
+  S85S75S75S75<9>O44O44O44O44N44<15>J11I00I00H00H00<28>100000100<4>6427529\
+  63A74<5>DA7DB8EB8EB9<31>SRP
+  }
+

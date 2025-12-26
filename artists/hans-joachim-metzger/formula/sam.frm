@@ -4,3 +4,9 @@ Sam_10 (XYAXIS) {
   ;SOURCE: sam.frm
 }
  
+Sam_5 (XAXIS) {
+  z = Pixel: 
+  z = z^2.718281828 + pixel
+  ;SOURCE: sam.frm
+}
+ 

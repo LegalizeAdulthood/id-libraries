@@ -23,3 +23,10 @@ test3 {; Michael Theroux [71673,2767]
   ;SOURCE: fractint.frm
 }
  
+Natura (xyaxis) {; phi yoni
+  z = pixel:
+  z = z*z*z + ((sqrt 5 + 1)/2) 
+  |z| <= 4
+  ;SOURCE: drcha.frm
+}
+ 

@@ -1,0 +1,60 @@
+6timod01           { ; .                                     t=  0:34:46.29
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=tent_in_mod function=flip/exp/cabs/cabs passes=1
+  center-mag=-0.74034851454384400/-0.18341381296766270/597.2435/1/-127.499
+  params=0.4/0/0.01/0 float=y maxiter=1023 inside=0 decomp=256
+  periodicity=0
+  colors=DH1<6>2M20K0<14>Q9MS8OS8O<12>ZHYZIZ_J__K_`K``L`<11>bPewwe<21>wo9w\
+  o7wo7<28>rW7rV7qU8qT8pS9oR9<16>Z8Knsz<27>ahvahv`gv`gu_fu_eu<9>V_qUZpUZn<\
+  12>LXHKWEIWE<2>DVEBUEBUEBTDBTD<15>EHCAKA<15>IX4IX4IW4<20>EH1
+  cyclerange=0/255
+  }
+
+6timod02           { ; .                                     t=  0:13:45.71
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=tent_in_mod function=flip/exp/cabs/cabs passes=1
+  center-mag=-1.71117255150344800/+0.00000000000000000/1696.941
+  params=0.4/0/0.01/0 float=y maxiter=1023 inside=0 decomp=256
+  periodicity=0
+  colors=EKD<38>QbQQbQRcRScS<34>qtjqtjrtkruksul<5>vxowxowxoxxpyyqzzrzzp<29\
+  >xsVwrUwrUvqU<56>UMCTMCTLBTLB<28>542432321321321331<34>EKD
+  cyclerange=0/255
+  }
+
+6timod03           { ; .                                     t=  0:20:26.92
+                     ; Copyright Sylvie Gallet, Aug 22, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=tent_in_mod function=abs/sqr/cosxx/sqr passes=1
+  center-mag=-0.02302937442065149/+0.78157628031747950/39150.11
+  params=0/0/0.001/0 float=y maxiter=255 inside=bof60 logmode=fly
+  decomp=256 periodicity=0
+  colors=unv<12>iOihLgfIegIe<7>wBZzAYzIS<3>wm0<3>QmY<7>K0UK0UK1U<7>z9W<6>z\
+  m0<3>hS5cM7`M7<6>GJ7CI6BJ6<4>6P34R24R3<12>GYIHYJIZLJ_N<17>efnffphgrihs<6\
+  >kkullvjlv<14>8gg9gf<29>GNSGMSHLRIKR<13>P2TQ0UQ0U<29>lT1mU0mV1<13>ynFzpH\
+  zpJ<6>zpczpeyphypjxpm<3>upw cyclerange=0/255
+  }
+
+frm:tent_in_mod { ; Modified Sylvie Gallet formula
+              ; Modified tent_inside.frm (generalized by Les St Clair)
+              ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
+              ; set p1=0, p2=0.001 for default behaviour
+   IF (p1 || flip(p1))
+    r = p1
+   ELSE
+    r = 1
+   ENDIF
+   z = 0 :
+   l = r+p1
+   z = z*z + pixel
+   UV = (5,5) - fn1((5,5) - fn2(z))
+   r = fn3(UV)
+    fn4(l-r) >= p2 && r < 4
+  }

@@ -110,3 +110,35 @@ ScSkZCZZ (XYAXIS) {
   ;SOURCE: fractint.frm
 }
  
+Fzppshlo {
+  z = pixel, f = log (pixel):
+  z = sinh (z) + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppsisq {
+  z = pixel, f = sqr (pixel):
+  z = sin (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Mothra (XAXIS) {; Ron Lewen, 76376,2567
+                ; Remember Mothra, the giant Japanese-eating moth?
+                ; Well... here he (she?) is as a fractal!
+  z=pixel:
+  a=z^5 + z^3 + z + pixel
+  b=z^4 + z^2 + pixel
+  z=b^2/a
+  |real(z)| <= 100 || |imag(z)| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+ScottSIS (XYAXIS) { 
+  z = pixel, TEST = (p1+3): 
+  z = sqr(1/sin(z)) 
+  |z|<TEST 
+  ;SOURCE: skinner.frm
+}
+ 

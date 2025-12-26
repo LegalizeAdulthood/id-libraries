@@ -1,0 +1,29 @@
+LumoCurve {	; Make a stereogram with a depth effect of about
+		; ten too see warpage near the left of the screen
+		; that might help you locate the source of the
+		; edges that don't exist, especially here.
+  reset=2003 type=formula formulafile=stereod.frm
+  formulaname=Extension function=conj/zero
+  center-mag=-7.77369/13.9985/0.009283401/1.2365/-29.9999999999999858/-1\
+  .23373533611470521e-014 params=0/0 float=y maxiter=255 inside=0
+  invert=0.5/0/0 periodicity=0
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuu\
+  uuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqp\
+  ooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjji\
+  kjiiiiihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdd\
+  dcedcccccbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZY\
+  ZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTT\
+  TSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONN\
+  NNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJI\
+  HHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCB\
+  DCBBBBBABBBACBAAAAA9AAA9BA9999989998A988888788879877777677768766666566\
+  657655555455546544444344435433333233324322222122213211111011102100<2>0\
+  00
+  }
+
+Extension {
+z=fn1(pixel), c=fn2(pixel), d=P1:
+
+z= z*z +conj(z) -c
+|z| <=4
+}

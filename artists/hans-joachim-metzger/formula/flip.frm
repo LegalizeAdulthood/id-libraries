@@ -24,3 +24,27 @@ flip0_man_j (ORIGIN) {
   ;SOURCE: flip.frm
 }
  
+flip0_man_m (XAXIS) {
+  z=0:
+  z = flip(sqr(z) + pixel)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 
+flip3_man_m (XAXIS) { 
+  z = 0:
+  z = 1/flip(sqr(z) + pixel)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 
+phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
+  x=real(pixel), y=imag(pixel), z=nx=ny=x1=x2=y1=y2=0:
+  x2 = sqr(x), y2 = sqr(y)
+  x1 = x2 - y2 + real(p1) + imag(p1) * nx
+  y1 = 2 * x * y + imag(p1) * ny
+  nx=x, ny=y, x=x1, y=y1, z=nx + flip(ny)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 

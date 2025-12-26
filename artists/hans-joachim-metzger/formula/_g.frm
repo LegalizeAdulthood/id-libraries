@@ -488,3 +488,82 @@ Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-6.frm
 }
  
+Gallet-5-01 {; Sylvie Gallet [101324,3444], 1996
+  sq3 = sqrt(3), sq32 = 0.5*sq3, l = real(p1), h = l*sq32, l3 = 3*l
+  h2 = 2*h, h3 = 3*h, h4 = h2 + h2, l15 = 0.5*l3
+  c1 = 0.5*l + flip(h), c2 = l, rot = -0.5 + flip(sq32)
+  y = imag(pixel), x = real(pixel) - y/sq3
+  y = y - floor(y/h3)*h3, x = x - floor(x/l3)*l3 + y/sq3
+  d = 0.5*y + sq32*x - h3, x = x - d*sq3*(d>0), y = y - d*(d>0)
+  y = y - h2*(y>h2)
+  t = y < sq3*x-h4, x = x - l15*t, y = y + h*t
+  q1 = abs(floor(y / h))
+  d2 = -sq32*x + 0.5*y, q2 = abs(floor(d2 / h))
+  d3 = sq32*x + 0.5*y - h, q3 = abs(floor(d3 / h))
+  q = q1 + q2 + q3, odd = q != 2*floor(q/2)
+  y = y*(odd==0) + (h2-y)*odd
+  t = y > -sq3*x + h4, x = x - l15*t, y = y - h*t
+  z = x + flip(y), z = z * (y<=h) + ((z-c1)*conj(rot) + c1) * (y>h)
+  x = real(z), z = z * (x<l) + ((z-c2)*rot + c2) * (x>=l)
+  z = c = p2*z + p3 :
+   z = z*z + c
+    |z| <= 4
+  ;SOURCE: gallet-5.frm
+}
+ 
+Gallet-8-05 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
+             ; Requires periodicity = 0
+             ; 0 < p1 <= 1 (default = 1)
+   z = c = zn = pixel
+   IF (p1 || imag(p1))
+      k = p1
+   ELSE
+      k = 1
+   ENDIF
+   :
+   zn = zn*zn + c
+   IF (abs(zn) < abs(z) || flip(abs(zn)) < flip(abs(z)))
+      z = k*zn
+   ENDIF
+   |zn| <= 4
+  ;SOURCE: gallet_8.frm
+}
+ 
+Gallet-7-05 {; Sylvie Gallet [101324,3444], 1997
+  x = real(pixel), y = imag(pixel):
+   dx = p1 * fn1(fn2(y)), dy = p1 * fn3(fn4(x))
+   x = x + dx, y = y + dy
+   z = x + flip(y)
+    (|dx| + |dy|) >= p2
+  ;SOURCE: gallet-7.frm
+}
+ 
+Gallet-9-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
+             ; Bailout: real part of p2 (must be > 0)
+             ; Real and Imag parts of p1 must be > 0
+             ; Imag part of p2 must be non-zero
+             ; Use periodicity=0
+  z1 = c = pixel, mz1 = cabs(fn2(z1)), k = real(p1)*mz1
+  bailout = real(p2), z = imag(p1) :
+  z1 = z1*z1 + c
+  z1 = fn1(real(z1)) + flip(imag(z1)), mz1 = cabs(z1)
+  IF (mz1 <= k)
+    z1 = z1 + p3, mz1 = cabs(z1)
+  ENDIF
+  IF (mz1 < imag(p1))
+    z = z1^imag(p2)
+  ENDIF
+  mz1 <= bailout
+  ;SOURCE: gallet_9.frm
+}
+ 
+Gallet-3-03 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel :
+  x = real(z), y = imag(z)
+  x1 = x - p1*fn1(y*y+p2*fn2(y))
+  y1 = y - p1*fn1(x*x+p2*fn2(x))
+  z = x1+flip(y1)
+  |z| <= 4
+  ;SOURCE: gallet-3.frm
+}
+ 

@@ -80,3 +80,20 @@ BEJ_N13 {; Revised for Fractint v. 20 by George Martin
   ;SOURCE: bej's.frm
 }
  
+mandel-newton_j7c3 {; Sylvie Gallet [101324,3444], 1995
+  z = pixel, c = z, iter = 1
+  rad = 3.1, center = (1.0,0.1)
+  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95)
+  zn = center*rad+(pix-center)
+  limit = real(p1), b1 = 16, b2 = 0.0001 :
+  test1 = (iter&&limit), test2=(iter!=limit)
+  c1=(-0.7056,-0.0086)
+  c=fn1(sin(conj(-0.80256,-0.1095)))
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
+  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1) 
+  iter = iter+1
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: sg-bc-bj.frm
+}
+ 

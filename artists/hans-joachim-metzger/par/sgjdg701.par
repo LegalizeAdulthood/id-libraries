@@ -1,0 +1,240 @@
+
+frm:JDG-7-01c { ; Formula by Jim Deutch, Modified Sylvie Gallet frm
+;image and 60 deg rotation w/ palette divided
+  j = -0.5 + flip(0.5*sqrt(3)) , j2 = conj(j)
+   IF (whitesq)
+      z = pixel
+   ELSE
+      z = -j2*pixel
+   ENDIF
+   :
+   x = z*j , y = z*j2
+   x1 = x - p1*fn1(y + fn2(p2*z))
+   y1 = y - p1*fn1(z + fn2(p2*x))
+   z1 = z - p1*fn1(x + fn2(p2*y))
+   z = z1 + x1*j + y1*j2
+   t1 = (|z| <= 32)
+   t = t1 || (whitesq == (imag(z) >= 0))
+   IF (t==0)
+      z = conj(z)
+   ENDIF
+    t1
+  }
+
+gjdg711            { ; Recolored JDdemo1                     t=  0:01:27.21
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=cabs/cos passes=1
+  center-mag=0/0/0.6666667 params=1/2.5/0/2 float=y decomp=256
+  colors=zzc<20>AAA<20>kwwmzzlxx<19>AAA<19>awaczcbxb<20>AAA<20>zcm<20>AAA<\
+  21>zcK<20>AAA<19>fawhczgbx<20>AAA<19>wwa cyclerange=0/255
+  }
+
+gjdg712            { ; .                                     t=  0:01:27.22
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=abs/cotan passes=1
+  center-mag=0/5.55112e-017/0.3284376/1/-29.999 params=1/2.5/0/2
+  float=y decomp=256
+  colors=faw<38>BBCAAAABB<40>lxxmzzmyy<39>BCCAAABAA<40>xblzcmycm<40>CBBAAA\
+  AAB<39>gbxhczhcygbx cyclerange=0/255
+  }
+
+gjdg713            { ; .                                     t=  0:02:36.85
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=cabs/cotan passes=1
+  center-mag=-2.22045e-016/1.249e-016/5.574188/1/-30 params=0/8/0/1.5
+  float=y decomp=256
+  colors=BCC<20>mzz<19>CDDAAABCB<18>awaczcbxb<20>AAA<20>zcm<20>AAA<21>zcK<\
+  20>AAA<19>fawhczgbx<20>AAA<20>zzc<20>AAA cyclerange=0/255
+  }
+
+gjdg714            { ; .                                     t=  0:12:37.36
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=recip/floor passes=1
+  center-mag=7.10543e-015/-5.77316e-015/0.152711 params=0/4/0/1.5
+  float=y decomp=256
+  colors=CCDAAA<20>zzc<20>AAA<20>kwwmzzlxx<19>AAA<19>awaczcbxb<20>AAA<20>z\
+  cm<20>AAA<21>zcK<20>AAA<19>fawhczgbx<18>EDF cyclerange=0/255
+  }
+
+gjdg715            { ; .                                     t=  0:01:58.03
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=recip/floor passes=1
+  center-mag=0/0/1.031162 params=0/4/0/1 float=y decomp=256
+  colors=CBB<19>zcm<20>AAA<21>zcK<20>AAA<19>fawhczgbx<20>AAA<20>zzc<20>AAA\
+  <20>kwwmzzlxx<19>AAA<19>awaczcbxb<20>AAA cyclerange=0/255
+  }
+
+gjdg716            { ; .                                     t=  0:01:19.70
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=tan/cabs passes=1
+  center-mag=-0.108069/-0.270802/0.2941078/1/7.499 params=0/5/0/5
+  float=y maxiter=255 inside=0 decomp=256
+  colors=FHH<18>mzz<19>CDDAAABCB<18>awaczcbxb<20>AAA<20>zcm<20>AAA<21>zcK<\
+  20>AAA<19>fawhczgbx<20>AAA<20>zzc<20>AAABCCDEE cyclerange=0/255
+  }
+
+gjdg717            { ; .                                     t=  0:02:03.75
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=ceil/cabs passes=1
+  center-mag=0/4.44089e-016/0.1962667/1/29.999 params=0/8/0/5 float=y
+  maxiter=255 inside=0 decomp=256
+  colors=lxx<19>AAA<19>awaczcbxb<20>AAA<20>zcm<20>AAA<21>zcK<20>AAA<19>faw\
+  hczgbx<20>AAA<20>zzc<20>AAA<21>mzz cyclerange=0/255
+  }
+
+gjdg718            { ; .                                     t=  0:01:43.26
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=cabs/cotanh passes=1
+  center-mag=0/0/0.4431554/1/29.999 params=0/9/0.75/1.2 float=y
+  maxiter=255 inside=0 decomp=256
+  colors=2OE<39>noopppppo<39>JO2IN0IN1<40>oonppppoo<40>E22D00D11<39>onnppp\
+  opp<40>2OE0ND1ND cyclerange=0/255
+  }
+
+gjdg719            { ; .                                     t=  0:02:22.53
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=cabs/tanh passes=1
+  center-mag=-0.0018554/-0.00321365/1.625102/1/2.999 params=1/7/1/2
+  float=y maxiter=255 inside=0 decomp=256
+  colors=mnn<38>2OE0ND1ND<40>noopppppo<39>JO2IN0IN1<40>oonppppoo<40>E22D00\
+  D11<39>onnpppoppnoo cyclerange=0/255
+  }
+
+gjdg71A            { ; .                                     t=  0:05:12.79
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=flip/acos passes=1
+  center-mag=-2.88658e-015/2.16493e-015/1.221468 params=0/-0.3/4/-0.5
+  float=y maxiter=255 inside=0 decomp=256
+  colors=SQ`<10>AAA<20>zzc<20>AAA<20>kwwmzzlxx<19>AAA<19>awaczcbxb<20>AAA<\
+  20>zcm<20>AAA<21>zcK<20>AAA<19>fawhczgbx<8>URb cyclerange=0/255
+  }
+
+gjdg71B            { ; .                                     t=  0:01:47.87
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=sqrt/ceil passes=1
+  center-mag=-2.22045e-016/2.22045e-016/0.6666667/1/12.5
+  params=0/12/0.75/1.2 float=y maxiter=255 inside=0
+  potential=255/300/100
+  colors=th2<12>tt`uucuta<15>sZ3rX0rV0<13>h30g00e00<8>Q00O00O00<25>S0UT0WU\
+  2V<5>aHJbJHdMFfPE<10>zp0<30>M20K00K00<82>488388199388<13>0AA<7>mS6<5>se3
+  cyclerange=0/255
+  }
+
+gjdg71C            { ; .                                     t=  0:01:55.56
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=sqrt/cosxx passes=1
+  center-mag=4.44089e-016/4.44089e-016/0.3642923/1/12.499
+  params=1/5/0.5/1.2 float=y maxiter=255 inside=0
+  potential=255/300/100
+  colors=299<6>0AA<7>mS6<5>se3th2th4<11>tt`uucuta<15>sZ3rX0rV0<13>h30g00e0\
+  0<8>Q00O00O00<25>S0UT0WU2V<5>aHJbJHdMFfPE<10>zp0<30>M20K00K00<82>4883881\
+  99388<5>299 cyclerange=0/255
+  }
+
+gjdg71D            { ; .                                     t=  0:01:47.99
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=sqrt/asinh passes=1
+  center-mag=0/0/0.6432099/1/30 params=1/15/0.6/1.2 float=y
+  maxiter=255 inside=0 potential=255/300/100
+  colors=J05<12>J0BJ0BK0CK0D<12>Q0RR0TS2S<13>mZAo`9qc7re5<3>zp0<30>M20K00K\
+  00<82>488388199388<13>0AA<7>mS6<5>se3th2uj1wm0wn3<9>yxdzzhzyf<15>rZ0<14>\
+  i30h00g00<6>V00 cyclerange=0/255
+  }
+
+gjdg71e            { ; .                                     t=  0:01:53.26
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=recip/cos passes=1
+  center-mag=-2.14273e-014/9.32587e-015/1.523981 params=2/6/0.25/-1
+  float=y decomp=256
+  colors=d9H<10>A00<8>Y0A`0C`2D<13>nZXo`YpbY<9>zzc<2>zwUzuRztOzrKypJ<8>pQ4\
+  nN2mM2<15>R58<2>hU9naAtiBzrCyrD<12>_jWYiYWgW<11>CM8AK5AJ5<8>A21A00C31<4>\
+  OI9<7>cGI<5>o_drchsbhu`i<11>XDTVBSS8QP5O<15>0cc<15>stw<13>tl4uk0sk0<13>N\
+  Z0KY0JY0<11>7Q0<6>UG2YE3`D2<3>cAE cyclerange=0/255
+  }
+
+gjdg71f            { ; .                                     t=  0:02:24.18
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=abs/asin passes=1
+  center-mag=-2.17604e-014/9.30506e-015/12.53521/1/5 params=0.5/6/1/7
+  float=y inside=0 decomp=256
+  colors=mzz<19>CDDAAABCB<18>awaczcbxb<20>AAA<20>zcm<20>AAA<21>zcK<20>AAA<\
+  19>fawhczgbx<20>AAA<20>zzc<20>AAA<20>kww cyclerange=0/255
+  }
+
+gjdg71g            { ; .                                     t=  0:01:34.31
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=acosh/sqr passes=1
+  center-mag=-3.19189e-016/2.35922e-016/12.72647 params=0/2/1/6
+  float=y inside=0 decomp=256
+  colors=566334000<18>czc<21>000<20>zcm<20>000<21>zcK<20>000<20>hcz<21>000\
+  <20>zzc<20>000<21>mzz<19>799 cyclerange=0/255
+  }
+
+gjdg71h            { ; .                                     t=  0:02:37.75
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=acosh/exp passes=1
+  center-mag=-2.70617e-016/1.8735e-016/10.71346 params=0/2/1/6 float=y
+  inside=0 decomp=256
+  colors=852<18>zcK<20>000<20>hcz<21>000<20>zzc<20>000<21>mzz<18>9BB799566\
+  334000<18>czc<21>000<20>zcm<20>000210531 cyclerange=0/255
+  }
+
+gjdg71i            { ; .                                     t=  0:04:05.62
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=acos/cosxx passes=1
+  center-mag=-0.00000000000000002/+0.00000000000000005/85.03384
+  params=0/-1.1/0/6 float=y inside=0 decomp=256
+  colors=A55<30>488388199388<13>0AA<7>mS6<5>se3th2uj1wm0wn3<9>yxdzzhzyf<15\
+  >rZ0<14>i30h00g00<11>M00K00K01<2>K06K07K08K09K0A<10>M0LN0NN0N<3>P0PQ0QR2\
+  P<19>zp0<30>M20K00K00<50>A55 cyclerange=0/255
+  }
+
+gjdg71j            { ; .                                     t=  0:01:19.86
+                     ; Copyright Sylvie Gallet [101324,3444], Feb 1997
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=jdphc04.frm
+  formulaname=JDG-7-01c function=sqrt/trunc passes=1
+  center-mag=4.44089e-016/0/0.2958766/1/17.5 params=1/18/0.7/1.3
+  float=y maxiter=255 inside=0 potential=255/300/100
+  colors=000000O0M<4>Q0RR0TS2S<12>kXBmZAo`9qc7re5<3>zp0<28>P50N40M20K00K00\
+  <80>488488488388199388<5>299<14>jQ7mS6nU6<3>rc4se3th2uj1wm0<4>xrIxsMxtQx\
+  uUyvXyw`yxdzzh<8>vlMvjJuhGufDteB<3>rZ0<14>i30h00g00<5>X00V00U00T01<8>K09\
+  J0AJ0BJ0BJ0BK0E<5>N0L cyclerange=2/255
+  }
+

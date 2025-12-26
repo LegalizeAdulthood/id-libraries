@@ -47,3 +47,77 @@ M_Laguerre2 {
   ;SOURCE: tchebych.frm
 }
  
+J_TchebychevS6 {
+  c = pixel, z = P1:
+  z = c*(z*z*(z*z*(z*z-5)+6)-1)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+J_TchebychevT3 {
+  c = pixel, z = P1:
+  z = c*z*(4*z*z-3)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevU7 {     
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevC7 {
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z*(z*z-7)+14)-7)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_14 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(z)*pixel))+pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_15 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  f2=fn2(z), z=fn1(f2)*fn3(fn4(f2))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Mothra (XAXIS) {; Ron Lewen, 76376,2567
+                ; Remember Mothra, the giant Japanese-eating moth?
+                ; Well... here he (she?) is as a fractal!
+  z=pixel:
+  a=z^5 + z^3 + z + pixel
+  b=z^4 + z^2 + pixel
+  z=b^2/a
+  |real(z)| <= 100 || |imag(z)| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+Richard1 (XYAXIS) {; Jm Collard-Richard
+  z = pixel:
+  sq=z*z, z=(sq*sin(sq)+sq)+pixel
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+M_Lagandre2 {
+  c = P1, z = Pixel:
+  z = (3 * z*z - 1) / 2 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+M_Lagandre3 {
+  c = P1, z = Pixel:
+  z = z * (5 * z*z - 3) / 2 + c
+  |z| < 100
+  ;SOURCE: tchebych.frm
+}
+ 

@@ -1,0 +1,44 @@
+EyeOfBenwaw {	; 45 of 64 _real_ colours isn't bad.
+		; 640x480x256
+		; Patchlevel 5
+  reset=2002 type=marksmandel
+  center-mag=6e-008/-0.00262576/1.656373/0.7863 params=0/0/2
+  maxiter=257 inside=0 outside=atan invert=0.500879943333333/0/0
+  colors=@grays.map
+  }
+
+EyeOfBenoyt {	; 180 of 256 colours is better.
+		; Anomalous, but better.
+		; I see unlikely dips if I replace gif's colour map
+		; with graymap in PSP. Patchlevel 5
+  reset=2002 type=marksmandel
+  center-mag=6e-008/-0.00262576/1.656373/0.7863 params=0/0/2
+  maxiter=257 inside=0 outside=atan invert=0.500879943333333/0/0
+  colors=zzz111<4>6667770440240140052055067057038008309708905A01A00B30B70C\
+  C08C03C10D60DC0EF0BF06G00G60HC0FH09I02I00J40JC0KK0DK05L20LA0LI0MM0HM09O0\
+  0O90MH0MP0DQ03Q00R70RG0SS0IS08T30TE0TP0UU0OV0CW00WC0XO0TX0HY04Y00Z80ZM0_\
+  _0O_0A`30`I0aW0aa0Ub0Fb00cF0dU0_d0Le05e00fB0fR0gg0Tg0Ch40hM0ib0ii0_j0Ij0\
+  0kI0l_0fl0Pm06m00nC0nU0oo0Yo0Ep50pP0qi0qr0er0Mr00sL0se0mt0Tu07u00vF0v`0w\
+  w0bw0Gx60xT0yp0yz0lz0Pz00zO0zk1rz0Xz2Az23zI3zd4zz4fz5LzB5zX6zr7zz7nz8Uz8\
+  8zT8zm9tz9`zAHzABzOBzgCzzCizDRzIDz`EzsFzzFozGZzGGzYHzoHuzHdzIOzIJzUJzjKz\
+  zKkzLXzQLzeMztMzzNqzObzOOzbPzqPvzPhzQVzQRz_RzmSzzSnzTazXTziUzuUzzVszWgzW\
+  WzgXzsXwzYlzYazYZzeZzp_zz_qz`gzc`zmazwazzbuzblzcczldzudxzepzehzefzkfzsgz\
+  zgtzhmzjhzqizxizzjwzjqzkkzqlzwlyzmtzmoznnzqnzvozz<2>qpzuqzyqzzryzrvzsszv\
+  szytzzuxzuvzvvzwvzy<2>xyzyxzzyz<2>zzz
+  }
+
+EyeOfBenWhat {	; 180 of 256 colours is better. Since 64 is 2^6
+		; and 45=3^2*5, 180/256 reduces to 45/64.
+		; I see unlikely dips if I replace gif's colour
+		; map with graymap in PSP. Same map as above.
+  reset=2002 type=marksmandel
+  center-mag=6e-008/-0.00262576/1.656373/0.7863 params=0/0/2
+  maxiter=257 inside=0 outside=atan invert=0.500879943333333/0/0
+  colors=@kayos.map
+  }
+
+Kaiyaker {	; This guy seems to hav warp drive.
+  reset=2000 type=tim's_error function=sin
+  corners=-2.081475/1.392551/2.155224/-2.140852/1.392551/-2.140852
+  params=0/0 inside=atan
+  }

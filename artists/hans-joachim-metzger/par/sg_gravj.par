@@ -1,0 +1,638 @@
+
+frm:gravijul { ; r^(-2) Mark Christenson 1/25/98
+; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
+   z = pixel:
+   w = fn1(z)
+   z = fn3(p1/fn2(w*w)) + p2
+    |z| < p3
+  }
+
+frm:gravijul-v1 { ; Variation on Mark Christenson's gravijul by Sylvie Gallet
+   z = pixel^imag(p3) :
+   w = fn1(z)
+   z = fn3(p1/fn2(w*w)) + p2
+    |z| < p3
+  }
+
+frm:gravijul-v2 { ; Variation on Mark Christenson's gravijul by Sylvie Gallet
+   z = pixel :
+   w = fn1(real(z)) , x = fn3(p1/fn2(w*w))
+   w = fn1(imag(z)) , y = fn3(p1/fn2(w*w))
+   z = x + flip(y) + p2
+    |z| < p3
+  }
+
+frm:gravijul-v3 { ; Variation on Mark Christenson's gravijul by Sylvie Gallet
+   z = pixel:
+   w = fn1(z)
+   z = fn3(fn2(w*w)^p1) + p2
+    |z| < p3
+  }
+
+frm:gravijul-v4 { ; Variation on Mark Christenson's gravijul by Sylvie Gallet
+  z = pixel :
+   w = fn1(1/z)
+   z = fn3(fn2(w*w)^p1) + p2
+    |z| < p3
+  }
+
+frm:gravijul-v5 { ; r^(-2) Mark Christenson 1/25/98
+   z = pixel :
+   w = fn1(z)
+   z = fn3(p1/fn2(w*(1-w))) + p2
+    |z| < p3
+  }
+
+sg_gravijul_01     { ; .                                    t=  0:05:02.97
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/tanh/log passes=1
+  center-mag=-0.640338/1.47121/5.603928 params=-0.5/-0.25/-1/0.225/9/0
+  float=y maxiter=2045 inside=epsiloncross decomp=256
+  colors=U00siT<5>ytZzv_yv_<29>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAa\
+  LBeMCgODjQF<2>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7QD6OC6<14>Q19R0AR1A<29>cJDc\
+  KDdLEeMF<12>rhS
+  }
+
+sg_gravijul_02     { ; .                                    t=  0:04:22.99
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/conj/sqrt passes=1
+  center-mag=1.38925/0.0169872/0.4084293/0.7564/9.869/-12.161
+  params=1.2/0.3/-3/-0.1/40/0 float=y maxiter=100 inside=0
+  outside=summ
+  colors=DFF<50>lsumtvltw<157>EKJEKJEKJEJIDJIDIH<9>ADDADDADDADDADD<11>FFF4\
+  44<11>CEE cyclerange=0/255
+  }
+
+sg_gravijul_03     { ; .                                    t=  0:05:15.33
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=recip/cosxx/log passes=1
+  center-mag=0.669248/0.210755/7.66535/1/-4.999
+  params=-2/-2/-0.7/0.5/7/0 float=y maxiter=1023 inside=0 decomp=256
+  colors=A00A32<8>AEAAFBBHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8\
+  <4>9D6<2>MG7QH8UI9YJAZKA<13>wh9yj8yjA<17>zzz<6>SE7QD6OC6<14>Q19R0AR1A<29\
+  >cJDcKDdLEeMF<17>wpXxrYytZzv_yv_xv`<28>UupStqRrp<18>6CR5AQ5AN<5>945
+  }
+
+sg_gravijul_04     { ; .                                    t=  0:02:56.31
+                     ; Copyright Sylvie Gallet, Feb 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=ident/log/log passes=1
+  center-mag=-7.21645e-016/6.66134e-016/0.5951129/1.0225/55/23.106
+  params=-0.9/-2/0/0.75/7/0 float=y maxiter=511 inside=79 decomp=256
+  colors=naO<14>wvZxx_wx_<25>UupStqRrp<11>FSaEQ_DOZBLXAJW9HU8FT6CR<6>12400\
+  0111<4>886AA7AC8AD9AEA<4>DMGEOHFQIFRKGTLHVMHWOIYPJ_R<7>LhM<12>wt1<12>DVF\
+  <9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAZKA<13>wh9yj8yjA<17>zzz<6>SE7QD6OC6<14>\
+  Q19R0AR1A<29>cJDcKDdLEeMF<8>naO cyclerange=0/255
+  }
+
+sg_gravijul_05     { ; .                                    t=  0:16:07.07
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=2.22045e-016/0/0.7075342
+  params=0.85/0/0.07000000000000001/0/2.95/0 float=y maxiter=151
+  inside=0 outside=summ periodicity=0
+  colors=U00nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7QD6OC6<14>Q19R0AR1A<20>iNOjPPjQ\
+  PjRP<29>xtZyv_xv`<28>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFBBHCCJD<8\
+  >IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAaLBeMCgOD\
+  jQFkSGlUI
+  }
+
+sg_gravijul_06     { ; .                                    t=  0:48:33.40
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=-0.508795/0.563438/2.201573/1/-82.5
+  params=0.97/0/0.1/0/5/0 float=y maxiter=151 inside=0 outside=summ
+  periodicity=0
+  colors=000A75<5>AEAAFBBHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1sr2pp3<30>CM9AKAAKA\
+  <13>CIACIABIA<86>0AA0AA1BB<44>OmlPnmOkl<15>6CR5AQ5AN<5>945A32A43A64
+  }
+
+sg_gravijul_07     { ; .                                    t=  1:02:08.83
+                     ; Copyright Sylvie Gallet, Feb 15, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/atanh passes=1
+  center-mag=-1.06581e-014/8.88178e-015/0.08286928
+  params=1/0/0.1/0/5/0 float=y maxiter=255 inside=0 outside=summ
+  periodicity=0
+  colors=000ARQ<26>OmlPnmOkl<15>6CR5AQ5AN<5>945A32A43<7>AEAAFBBHCCJD<8>IYP\
+  J_RJ`R<6>LhM<12>wt1sr2pp3<30>CM9AKAAKA<13>CIACIABIA<86>0AA0AA1BB<16>9QP
+  }
+
+sg_gravijul_08     { ; .                                    t=  1:06:56.97
+                     ; Copyright Sylvie Gallet, Feb 15, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/atanh/recip passes=1
+  center-mag=1.25928/0/1.323938/1/-90
+  params=0.87/0/0.07000000000000001/0/3/0 float=y maxiter=255 inside=0
+  decomp=256 periodicity=0
+  colors=963<85>llimljmlknllomm<2>ppoqqprrqssrttsuutvvuwwv<11>wwgwwfwvevud\
+  <4>tqZtpYsoXsnVrmUrmT<24>dQ3cP2bO2<8>ZJ1YI1YH0YG0XG0<3>WD0WD3<5>U93T84T8\
+  4T84<5>Q55Q55Q55Q55P45<8>N33M33M33L22L22<7>J01I01I00H00H00<5>E00E00D00C0\
+  0<18>200100100100<9>852 cyclerange=0/255
+  }
+
+sg_gravijul_09     { ; .                                    t=  0:00:57.01
+                     ; Copyright Sylvie Gallet, Feb 17, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul function=recip/abs/acosh passes=1
+  center-mag=-4.44089e-016/4.44089e-016/0.383432
+  params=-0.35/1.55/-2/0.03/2.3/0 float=y maxiter=300 inside=0
+  decomp=256
+  colors=3N3<46>3N33N35N4<6>JSDMTFMTF<4>NWF<9>wwc<4>www<20>llikkhkkhkkh<29\
+  >aaZaaZaaZaaZaaZaaZ3N3<2>3N3WWT<5>eebffcffc<3>hheiifjjgjjhkkh<24>wwuwwuw\
+  wuwwuvvt<67>aaZ
+  }
+
+sg_gravijul_10     { ; .                                    t=  0:01:32.44
+                     ; Copyright Sylvie Gallet, Feb 17, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul function=sqrt/abs/acosh passes=1
+  center-mag=-2.77556e-017/0.369621/3.975055
+  params=0/1.5/-2.2/-0.1/2/0 float=y maxiter=300 inside=0 decomp=256
+  colors=YE0<21>M25L15K06K07<17>L0LM0MO2M<5>_EJaHIcKG<10>vk3xm2xm2xm1xm0<8\
+  >kZ0jX0iW0hU0fS0<9>UC0TA0TA0<29>F22F22F22F22F22<46>577577677<29>kR7mS6nU\
+  6<6>uj1wm0wn3<7>yvXyw`yxdzzhzyfzwc<10>teBtc8sa8<11>YE0
+  cyclerange=0/255
+  }
+
+sg_gravijul_11     { ; .                                    t=  0:00:55.70
+                     ; Copyright Sylvie Gallet, Feb 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul function=ident/flip/asin passes=1
+  center-mag=0/-4.44089e-016/0.3832945/1/122.499
+  params=1/0.1/0.08/0/2.7/0 float=y maxiter=300 inside=0 outside=atan
+  periodicity=0 colors=000<20>000zzz<30>2WW0VV0UU<14>0FFruu000<182>000
+  }
+
+sg_gravijul_12     { ; .                                    t=  0:00:48.06
+                     ; Copyright Sylvie Gallet, Feb 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul function=recip/tan/acosh passes=1
+  center-mag=-3.33067e-016/3.33067e-016/0.7788162
+  params=1/0/0.05/0/2.8/0 float=y maxiter=300 inside=255 outside=atan
+  symmetry=none periodicity=0
+  colors=QRQ<13>tttwwwwwv<26>XXWVWVVVV<30>000zzz<15>ojdnicmgbmfale_<3>iaUi\
+  `Th_SgZRfYQ<4>aTL`SJ_RJ<12>IEAHD9FB8EA7D96B86<7>111000000<94>000KFA<2>IE\
+  9HE9GD8FC8<12>000 cyclerange=0/255
+  }
+
+sg_gravijul_13     { ; .                                    t=  0:00:56.85
+                     ; Copyright Sylvie Gallet, Feb 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul function=recip/cos/log passes=1
+  center-mag=0/-1.04083e-016/0.5680577/1/-37.5 params=0.7/0.1/0/0/5/0
+  float=y maxiter=500 inside=0 decomp=256 periodicity=0
+  colors=000<62>000zzz<30>2WW0VV0UU<13>0GG0FF0CC<3>000<137>000
+  cyclerange=0/255
+  }
+
+sg_gravijul_14     { ; .                                    t=  0:02:48.18
+                     ; Copyright Sylvie Gallet, Feb 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=abs/abs/acos passes=1 center-mag=0/0/0.06364123
+  params=1.85/0.1/0/0.5/3.2/0 float=y maxiter=300 inside=0 decomp=256
+  colors=011011<62>y00z00y00<30>V00000<7>AAMCCPDDSFFVFFV<6>LKaMLaNMbNMbONc\
+  <2>QOfRPgSQhTRiURj<11>d`ueavecvfdwPhh<15>tww<27>2WW0VV0VV<64>022
+  cyclerange=0/255
+  }
+
+sg_gravijul_15     { ; .                                    t=  0:08:02.58
+                     ; Copyright Sylvie Gallet, Feb 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/tan/atanh passes=1
+  center-mag=-2.22045e-016/2.22045e-016/1.258897
+  params=0.97/0/0.02/0/3/0 float=y maxiter=300 inside=0 decomp=256
+  colors=V_H<5>_dM`eNaeP<26>yyxzzzzzz<27>snRsmPsmOrlMqkM<27>FE2DD2CC1AA0AA\
+  0AB0<26>OREOSEOTEPUFQVG<29>xxxzzzzzz<29>i_3hZ0gZ0<29>CB0AA0AA0<25>VZG
+  cyclerange=0/255
+  }
+
+sg_gravijul_16     { ; .                                    t=  0:08:02.58
+                     ; Copyright Sylvie Gallet, Feb 26, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/tan/atanh passes=1
+  center-mag=-2.22045e-016/2.22045e-016/1.258897
+  params=0.97/0/0.02/0/3/0 float=y maxiter=300 inside=0 decomp=256
+  colors=SSX<16>bckcdldemefmfgmghm<11>ttqvurvuq<45>bK2aJ0`J0<9>NC0LB0KA0I9\
+  0H80F80E70C60A50<21>AFMAFN9GO9HP<2>AIQAIQBJRCKS<16>UZgVZgW_hX`hYai<14>op\
+  pqqqppq<50>33C33C44D<26>PPVPPWQQWQQWRRX cyclerange=0/255
+  }
+
+sg_gravijul_17     { ; .                                    t=  0:21:33.04
+                     ; Copyright Sylvie Gallet, Feb 26, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atan/asinh/atanh passes=1
+  center-mag=-2.66454e-014/1.9873e-014/0.617879/0.9243
+  params=0.995/0/-0.91/0/3.8/0 float=y fillcolor=0 inside=0 decomp=256
+  colors=000ei0<3>bg0ag0_f1<3>Wd1Vd1Tc2Rb2<16>0P5<12>TF3WF3YE3`D2`D5<3>d9H\
+  <10>A00<9>`0C<26>zzm<4>ztPzrKyoJxlH<6>lN4jJ2iI2<11>X95W96V86U77T67R58XD8\
+  <11>zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<6>fJMhLPkPV<5>wcm<15>K0K<6>3I\
+  C0LA0L9<5>0P30Q20Q21Q2<6>5P2<8>hj0gj0fi0
+  }
+
+sg_gravijul_18     { ; .                                    t=  1:09:37.97
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/tan/atanh passes=1 center-mag=0/0/0.06365257/2.0703
+  params=0.91/0/0.02/0/2.85/0 float=y maxiter=300 inside=0 decomp=256
+  periodicity=0
+  colors=974<16>630630741<12>DB8EB8EB9EB9FCA<74>lkjlkjmlknml<10>vvtwwuwwt<\
+  13>wwfvvdwwc<27>eT5eS3dR2cP0cP0<29>S75R66R66R66<26>K11J11J11I00I00<9>D00\
+  C00A85<3>974 cyclerange=0/255
+  }
+
+sg_gravijul_19     { ; .                                    t=  0:57:07.35
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/tan/atanh passes=1
+  center-mag=-2.66454e-015/2.66454e-015/0.1199349/2.0654
+  params=0.91/0/0.02/0/2.85/0 float=y maxiter=300 inside=0 decomp=256
+  periodicity=0
+  colors=974<16>630630741<12>DB8EB8EB9EB9FCA<74>lkjlkjmlknml<10>vvtwwuwwt<\
+  13>wwfvvdwwc<27>eT5eS3dR2cP0cP0<29>S75R66R66R66<26>K11J11J11I00I00<9>D00\
+  C00A85<3>974 cyclerange=0/255
+  }
+
+sg_gravijul_20     { ; .                                    t=  0:57:07.35
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/tan/atanh passes=1
+  center-mag=-2.66454e-015/2.66454e-015/0.1199349/2.0654
+  params=0.91/0/0.02/0/2.85/0 float=y maxiter=300 inside=0 decomp=256
+  periodicity=0 colors=@t.map cyclerange=0/255
+  }
+
+sg_gravijul_21     { ; .                                    t=  0:06:54.52
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  function=atanh/ident/atanh passes=1
+  center-mag=0.430241/1.00651/6.96767
+  params=0.84/0.01/0.24/-0.075/2.7/0 float=y maxiter=300 inside=0
+  decomp=256 periodicity=0
+  colors=000<147>000111223<29>cho<14>334000000<57>000 cyclerange=0/255
+  }
+
+sg_gravijul-v1_01  { ; .                                    t=  0:01:26.84
+                     ; Copyright Sylvie Gallet, Feb 04, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/log/log passes=1
+  center-mag=0/0/0.6666667 params=-1/-3.14159265358979/-0.05/1/7/3
+  float=y maxiter=511 inside=0 decomp=256
+  colors=ulVumV<3>ytZzv_yv_<29>UupStqRrp<18>6CR5AQ5AN<5>945A32A43<7>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAa\
+  LBeMCgODjQF<2>nVJ<3>vdByg8yh5yi3<15>yukyvnyvo<8>yyxzzzyxx<20>X8GV5DW6D<1\
+  2>fKMgLNgLN<27>tkV cyclerange=0/255
+  }
+
+sg_gravijul-v1_02  { ; .                                    t=  0:05:21.87
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/tanh/log passes=1
+  center-mag=1.53398/0.311156/18.57704
+  params=-0.5/-0.25/-1/0.225/9/2.5 float=y maxiter=2045 inside=0
+  decomp=256
+  colors=0A5<13>KV2LX2NZ1P_1R`1<3>hj0<6>bg0ag0_f1<3>Wd1Vd1Tc2Rb2<16>0P5<7>\
+  IJ4KI4LI5<10>d9H<8>K36I24G13D01F02<7>`0C<26>zzm<4>ztPzrKyoJxlH<6>lN4jJ2i\
+  I2<11>X95W96V86U77T67V98XD9<11>zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<4>\
+  cEGeHJgJNiMQkOUmRXoU`<3>wcm<15>K0K<6>3IC0LA0L9<2>0N6
+  cyclerange=0/255
+  }
+
+sg_gravijul-v1_03  { ; .                                    t=  0:00:43.45
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/abs/log passes=1
+  center-mag=0/0/0.6942545 params=-1.5/0.3/0.5/-1/4/2.25 float=y
+  maxiter=1023 inside=0 decomp=256
+  colors=A00H63<14>ZKA_LAaNA<2>dQAfSAgTAiVAkXA<3>rcAteAufBvgCwhD<16>zzz<6>\
+  SE7QD6OC6<12>Q29Q29Q19R0AR1AR2A<2>T3AT3AT3AT3AT3A<106>B34A43A54<6>AEAAFB\
+  BHCCJD<8>IYPJ_RJ`R<6>LhM<12>wt1<12>DVFDUEDSEB00<4>G52
+  }
+
+sg_gravijul-v1_04  { ; .                                    t=  0:03:40.58
+                     ; Copyright Sylvie Gallet, Feb 05, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=recip/sqrt/log passes=1
+  center-mag=-1.11022e-016/1.11022e-016/0.7848492/1/12.499
+  params=1/0/0.6/-0.5/4/2 float=y maxiter=255 inside=0 decomp=256
+  colors=000<141>0E90FA0FA1GB1GB<28>J_RJ`RJaQ<4>LgNLhMOiK<11>wt1<12>DVFDUE\
+  DSE<5>G52<15>ZKA_LAaNA<2>dQAfSAgTAiVAkXA<12>I72
+  }
+
+sg_gravijul-v1_05  { ; .                                    t=  0:29:30.08
+                     ; Copyright Sylvie Gallet, Feb 14, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=atanh/atanh/atanh passes=1
+  center-mag=0/0/0.3876293 params=0.95/0/0.09/0/4/2 float=y
+  maxiter=151 inside=0 outside=summ periodicity=0
+  colors=040_J9cKAhMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<2>9\
+  03<126>9848959B6<13>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<14>AB54C5<5>VI9
+  }
+
+sg_gravijul-v1_06  { ; .                                    t=  0:13:53.37
+                     ; Copyright Sylvie Gallet, Feb 27, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v1 function=atanh/tan/atanh passes=1
+  center-mag=0/0/0.3437489 params=0.918/0/0.01/0/2.95/2 float=y
+  maxiter=300 inside=0 decomp=256
+  colors=000<31>302<10>c0U<4>504<41>b0Tc0Ub0U<34>403302000<24>``WbbYccZee`\
+  ffa<12>zzw<14>YYUWWRUUQ<13>222000000<50>000
+  }
+
+sg_gravijul-v2_01  { ; .                                    t=  0:02:26.32
+                     ; Copyright Sylvie Gallet, Feb 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v2 function=conj/cosh/cotan passes=1
+  center-mag=0.0197824/-0.0197824/0.1018761/1/45
+  params=2.71828182845905/3.14159265358979/-300/20/100/0 float=y
+  maxiter=255 inside=0 decomp=256 symmetry=none periodicity=0
+  colors=www334000zzz<5>gmrcjpagm<13>000www<5>fofcmcaja<13>000zzz<5>ZgRUcK\
+  SaJ<13>000www<6>hhK<11>995663332000www<5>ofZmcUjaS<13>000www<6>cKK<11>95\
+  5633322000zzz<6>kM2<14>000<2>000wur<5>wcK<11>C95863432000www<6>rhZ<11>C9\
+  7865433000www<5>okomhmjej<13>000www<5>bboZZmXXj<11>557
+  }
+
+sg_gravijul-v2_02  { ; .                                    t=  0:01:39.74
+                     ; Copyright Sylvie Gallet, Feb 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v2 function=log/tan/flip passes=1
+  center-mag=29.8676/30.1229/0.05575293/-1/44.999/-3.28
+  params=1.2/2.71828182845905/2.71828182845905/3/200/0 float=y
+  maxiter=255 inside=0 decomp=256 symmetry=none periodicity=0
+  colors=aU0LO9MO9NPANQB<2>ORBORCOSCOSDPSD<7>QVHQVHRWISXJ<15>oqiprkqrl<8>y\
+  yxzzzzzz<27>snRsmPsmOrlMqkM<27>FE2DD2CC1AA0AA0AB0<26>OREOSEOTEPUFQVG<29>\
+  xxxzzzzzz<29>i_3hZ0gZ0<3>cW0bV0`T0<22>CB0AA0AA0<12>KN8
+  }
+
+sg_gravijul-v2_03  { ; .                                    t=  0:02:17.48
+                     ; Copyright Sylvie Gallet, Feb 27, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v2 function=tan/sqrt/recip passes=1
+  center-mag=0.177926/0.615303/0.5038743/1/122.5
+  params=1.1/0/0.2/0/2.95/2 float=y maxiter=300 inside=0
+  invert=1/0.2/0.15 decomp=256
+  colors=000605<8>`0Rzzwb0T<9>000B08<34>b0Tzzwb0U<34>403302000<22>YYT__V``\
+  WbbYccZ<6>nniookqqmrrottp<3>zzw<14>YYUWWRUUQ<13>222000000<82>302
+  }
+
+sg_gravijul-v3_01  { ; .                                    t=  0:06:26.07
+                     ; Copyright Sylvie Gallet, Feb 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v3 function=tan/tan/acos passes=1
+  center-mag=0.923589/0.746835/7.814454
+  params=-1.2/0/-1.1/0/3.14159265358979/0 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=I`e<10>6CR5AQ5AN<5>945A32A43<7>AEAAFBBHCCJD<8>IYPJ_RJ`R<6>LhM<12>\
+  wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAaLBeMCgODjQFkSGmTInVJ<3>vdByg\
+  8yh5yi3<15>yukyvnyvo<8>yyxzzzyxx<20>X8GV5DW6D<12>fKMgLNgLN<28>ulVumVvoW<\
+  2>ytZzv_yv_<29>UupStqRrp<6>Jbf cyclerange=0/255
+  }
+
+sg_gravijul-v3_02  { ; .                                    t=  0:01:33.48
+                     ; Copyright Sylvie Gallet, Feb 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=list_98.frm
+  formulaname=gravijul-v3 function=flip/tanh/acos passes=1
+  center-mag=-0.783736/-0.217427/3.75192/1/-34.999
+  params=1/0/3/0/1.9/0 float=y maxiter=256 decomp=256 periodicity=0
+  colors=AFB<7>GTLHVMHWM<3>JaQJbQJcP<3>LhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6\
+  <2>MG7QH8UI9YJAaLBeMCgODjQFkSGmTInVJ<3>vdByg8yh5yi3<15>yukyvnyvo<8>yyxzz\
+  zyxx<20>X8GV5DW6D<12>fKMgLNgLN<28>ulVumVvoW<2>ytZzv_yv_<29>UupStqRrp<18>\
+  6CR5AQ5AN<5>945A32A43<7>AEA cyclerange=0/255
+  }
+
+sg_gravijul-v3_03  { ; .                                    t=  0:01:22.50
+                     ; Copyright Sylvie Gallet, Feb 27, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=tan/tan/acos passes=1
+  center-mag=1.62934/0.0292372/0.8107285 params=0.914/0/0/0/2.96/0
+  float=y maxiter=300 inside=0 decomp=256
+  colors=000<48>705705806907<36>b0Tc0Ub0U<34>403302000<7>CCADDCGGD<6>QQMRR\
+  NSSOTTPVVQXXS<5>ee`ffahhciie<10>zzw<14>YYUWWRUUQ<13>222000000<51>000
+  }
+sg_gravijul-v2_04  { ; .                                    t=  0:06:25.14
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v2 function=sqr/sqrt/log passes=1
+  center-mag=2.21579/3.28324/0.5318352/1/-24.999
+  params=1/-1/0.1/0.1/20/0 float=y maxiter=300 inside=0
+  invert=1/0.2/0.15 decomp=256
+  colors=UYf<10>cht<15>000<15>m0Z<29>K0GJ0FH0EG0DF0C<12>201000000<125>0000\
+  00001112<33>UXe cyclerange=0/255
+  }
+
+sg_gravijul-v3_04  { ; .                                    t=  0:00:45.69
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=flip/acosh/acosh passes=1
+  center-mag=8.88178e-016/0/0.02962973/1/40 params=22/0/12/0/20/0
+  float=y maxiter=256 decomp=256 periodicity=0
+  colors=000sZa<2>zmr<10>00P56T<5>Q1TU0UW4W<9>wmw<8>T5XP0UO0UM0UK0U<13>Ysu\
+  ZwwYtu<14>60K<15>zmw<26>M23K00K03<14>X0w<15>K0S<10>zzm<22>L29<13>lgbnjdr\
+  phtsjwwm<4>pmenkcmjblha<22>M55K33K36<2>K1GK0KM5NQ4I<5>hHLlKMnPRpUX000
+  cyclerange=1/254
+  }
+
+sg_gravijul-v3_05  { ; .                                    t=  0:00:45.69
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=flip/acosh/acosh passes=1
+  center-mag=8.88178e-016/0/0.02962973/1/40 params=22/0/12/0/20/0
+  float=y maxiter=256 decomp=256 periodicity=0
+  colors=000uwmwzo<19>K0C<4>V5IX6JZ7Ka9LcAMfBN<6>wKU<15>K0A<16>ipw<9>K0S<1\
+  0>zzm<22>L29<18>wwm<4>pmenkcmjblha<21>N76M55N78<13>alqcru<15>00P<7>czu<2\
+  4>0A0<3>IAA<5>TOLXTP<11>suk000 cyclerange=1/254
+  }
+
+sg_gravijul-v3_06  { ; .                                    t=  0:00:45.69
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=flip/acosh/acosh passes=1
+  center-mag=8.88178e-016/0/0.02962973/1/40 params=22/0/12/0/20/0
+  float=y maxiter=256 decomp=256 periodicity=0
+  colors=000bWJ<20>vubwwcwvc<33>VMBUKAUKA<40>vvbwwcwvc<32>UPF000<106>000UK\
+  A<8>aVI000 cyclerange=1/254
+  }
+
+sg_gravijul-v3_07  { ; .                                    t=  0:00:49.38
+                     ; Copyright Sylvie Gallet, Mar 01, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=flip/asin/asin passes=1
+  center-mag=4.44089e-016/0/0.03026086/1/45 params=32/0/8/0/6/0
+  float=y maxiter=256 decomp=256 periodicity=0
+  colors=rrrcYK<10>VMBUKAUKA<40>vvbwwcwvc<32>UPF000<106>000UKA<30>vubwwcwv\
+  c<21>dZL000 cyclerange=1/254
+  }
+
+sg_gravijul-v3_08  { ; .                                    t=  0:00:57.78
+                     ; Copyright Sylvie Gallet, Mar 02, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=asinh/log/asinh passes=1
+  center-mag=1.77636e-015/-1.55431e-015/0.08372294/1/150
+  params=13.5/0/-11.5/0/2.5/0 float=y maxiter=511 decomp=256
+  periodicity=0
+  colors=pnX<5>vubwwcwvc<25>`VI_UHYTG<5>RMBPKAPKA<17>e`MfaNgbOhcPidQieQ<17\
+  >vvbwwcwvc<23>aYM`XLZVK<13>332000000<77>000000100211<11>GD7HE8IF9JGAKHA<\
+  10>XTJYUJZVK_WK`XL<2>c_Md`NeaOfbPgcQ<6>olW cyclerange=0/255
+  }
+
+sg_gravijul-v3_09  { ; .                                    t=  0:01:01.96
+                     ; Copyright Sylvie Gallet, Mar 03, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=cotanh/flip/log passes=1
+  center-mag=0/2.77556e-017/0.6987274/0.6283/-18.855/14.713
+  params=-3.6/0/1/0/3.14159265358979/0 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=806<19>604604714<8>D54000<31>WM1WM1XN1YN2ZO2<9>fU7gV7hW8iW9<16>qe\
+  LqfMrfNrfN<18>zpZ000<5>000zwh<30>qiYphXphXogWnfV<28>QLBPKBNJA<12>2210000\
+  00<45>000 cyclerange=0/255
+  }
+
+sg_gravijul-v3_10  { ; .                                    t=  0:01:00.08
+                     ; Copyright Sylvie Gallet, Mar 11, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v3 function=sqrt/flip/log passes=1
+  center-mag=0/0.320458/0.1626667 params=-5/0/6/0/10/0 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=www<79>AAAAAABBB<58>klmlmnklm<30>000<15>sZc<15>lKUkJTkJTjJS<45>A0\
+  5 cyclerange=0/255
+  }
+
+sg_gravijul-v4_01  { ; .                                    t=  0:00:51.80
+                     ; Copyright Sylvie Gallet, Mar 11, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul-v4 function=sqr/asinh/asin passes=1
+  center-mag=-4.44089e-016/0/0.8503401/1/5 params=20/10/-10/10/5/0
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=swz<36>ys`ys_zrZzqZ<46>L71K50J50<6>A00<5>ODFRGIRGJ<7>VMSVNTWOVXPW\
+  YRXZSY<4>e_cf`dgad<13>xrazt`zs`<29>_LEZJDYICYHCXGBWFA<12>K000AA<22>IQTJR\
+  ULSV<22>puxrwzrwz<15>swz cyclerange=0/255
+  }
+
+sg_gravijul_22     { ; .                                    t=  0:03:26.03
+                     ; Copyright Sylvie Gallet, Mar 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=sg_gravj.frm
+  formulaname=gravijul function=tan/tan/atanh passes=1
+  center-mag=0/0/0.3546667 params=0.9399999999999999/0/0/0/2.7/0
+  float=y maxiter=511 inside=0 decomp=256 periodicity=0
+  colors=ACD<3>000<17>c0U<35>403302000<24>``WbbYccZee`ffa<12>zzu<16>UUQSSO\
+  QQMOOLMMJKKH<8>222000000<76>000111223<29>cho<10>DFH cyclerange=0/255
+  }
+
+sg_gravijul-v4_02  { ; .                                    t=  0:02:33.46
+                     ; Copyright Sylvie Gallet, Mar 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_list_98.frm
+  formulaname=gravijul4 function=acosh/recip/sqrt/sqrt passes=1
+  center-mag=-7.77156e-016/1.33227e-015/0.7639226/1/70
+  params=0.1/2.05/-3/0/1/5 float=y maxiter=300 inside=0 decomp=256
+  colors=aUF<11>VNAxxn<30>imbimbhlagla<44>DNDxxn<30>imbimbhlagla<44>DND000\
+  <13>000442zzn<29>voTunSunStmS<32>bVF cyclerange=0/255
+  }
+
+sg_gravijul-v5_01  { ; .                                    t=  0:04:47.04
+                     ; Copyright Sylvie Gallet, Mar 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_list_98.frm
+  formulaname=gravijul function=tan/tan/atanh passes=1
+  center-mag=2.66454e-015/0/0.211206 params=1/0/0/0/2.5/0 float=y
+  maxiter=511 inside=0 decomp=256 periodicity=0
+  colors=E0B<86>403A50<16>QE0RF0TG0<2>WJ0YK0YK0<14>jU0jU0kV0kV0lW0<9>q`2ra\
+  2sb3sb4<11>viGwiHwjIxkKxkL<6>zpZ000<18>000F50<10>PFAQGBQGBRHB<8>XNDYOEYO\
+  EZPF_QG<13>kbPlcQmdRmdSneSofT<14>xoexpfyqgzrhE0BE0BE0B
+  cyclerange=0/255
+  }
+

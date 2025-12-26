@@ -5902,3 +5902,1295 @@ M_TchebychevS3 {
   ;SOURCE: fractint.frm
 }
  
+BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
+  z = p1 :
+  z = cosxx(sqr(z) + pixel) + pixel
+  |z| <= 4
+  ;SOURCE: fract196.frm
+}
+ 
+flip0_man_m (XAXIS) {
+  z=0:
+  z = flip(sqr(z) + pixel)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 
+flip3_man_m (XAXIS) { 
+  z = 0:
+  z = 1/flip(sqr(z) + pixel)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 
+FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+                              ; by George Martin, 10/98
+  z=p1, x=|z|:
+  z=cosh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4 
+  ;SOURCE: choice.frm
+}
+ 
+Frame-RbtJ {; Ron Barnett, 1993
+  z = pixel:
+  z = z*z*z/5 + z*z + p1
+  |z| <= 100
+  ;SOURCE: reb001.frm
+}
+ 
+Frame-RbtM (XAXIS) {; Ron Barnett, 1993
+                    ; from Mazes for the Mind by Pickover
+  z = c = pixel:
+  z = z*z*z/5 + z*z + c
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+IslandOfChaos (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=sin(z)/cosxx(z)+pixel
+  x=x+1 
+  |z|<=4
+  ;SOURCE: choice.frm
+}
+ 
+j1 {
+   ; see also alx1 in _a.frm - a formula formerly named j1, changed
+   ; to avoid duplication of name with this formula.
+  z=pixel, c=p1:
+  z=sqr(z)+c
+  c=c+p2
+  |z| <= 4
+  ;SOURCE: explode.frm
+}
+ 
+J_TchebychevS6 {
+  c = pixel, z = P1:
+  z = c*(z*z*(z*z*(z*z-5)+6)-1)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+J_TchebychevT3 {
+  c = pixel, z = P1:
+  z = c*z*(4*z*z-3)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevU7 {     
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+jfnc {
+  z=pixel, c=p1:
+  z=sqr(z)+c
+  c=c+p2*fn1(c)
+  |z| <= 4
+  ;SOURCE: explode.frm
+}
+ 
+JMask {; Ron Barnett, 1993
+  z = fn1(pixel):
+  z = P1*fn2(z)^2 + P2
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+M_Lagandre6 {
+  c = P1, z = Pixel:
+  z = (z*z*(z*z*(231 * z*z - 315)  + 105 ) - 5) / 16 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+ManInTheOzone (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=cosxx(z)+pixel
+  z=sin(z)+pixel
+  x=x+1 
+  |z|<=4 
+  ;SOURCE: choice.frm
+}
+ 
+Natura (xyaxis) {; phi yoni
+  z = pixel:
+  z = z*z*z + ((sqrt 5 + 1)/2) 
+  |z| <= 4
+  ;SOURCE: drcha.frm
+}
+ 
+phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
+  x=real(pixel), y=imag(pixel), z=nx=ny=x1=x2=y1=y2=0:
+  x2 = sqr(x), y2 = sqr(y)
+  x1 = x2 - y2 + real(p1) + imag(p1) * nx
+  y1 = 2 * x * y + imag(p1) * ny
+  nx=x, ny=y, x=x1, y=y1, z=nx + flip(ny)
+  |z| <= 4
+  ;SOURCE: flip.frm
+}
+ 
+REBRefInd2 {; Ron Barnett, 1993
+            ; Use floating point
+  z = pixel:
+  z = (z*z-1)/(z*z+2)*fn1(z)*fn2(z) + p1
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+SinhEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                        ; George Martin, 10/98
+  z=p1, x=|z|:
+  z=sinh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4 
+  ;SOURCE: choice.frm
+}
+ 
+aaaa (XAXIS) {
+  z = pixel, c = z:
+  z = exp(z*log(z))
+  |z| <= p1
+  ;SOURCE: dan.frm
+}
+ 
+Elliptic2 (XAXIS) {; By Alastair Scott
+  z = pixel:
+  z = pixel*(1.57079 - z*z*(0.392699 + z*z*(0.073631\ 
+       +z*z*(0.030680 + z*z*0.016778))))
+  |z|<=4 
+  ;SOURCE: elliptic.frm
+}
+ 
+FlipLambdaM {; Ron Barnett, 1993
+  z = 0.5:
+  z = pixel*z*(1-flip(z)*flip(z))
+  |z| <= 100
+  ;SOURCE: reb002.frm
+}
+ 
+FrRbtGenM {; Ron Barnett, 1993
+  z = pixel:
+  z = p1*z*z*z + z*z + pixel
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppcopo {
+  z = pixel, f = (pixel) ^ (pixel):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppshlo {
+  z = pixel, f = log (pixel):
+  z = sinh (z) + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppsisq {
+  z = pixel, f = sqr (pixel):
+  z = sin (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+jfnz {
+  z=pixel, c=p1:
+  z=sqr(z)+c
+  c=c+p2*fn1(z)
+  |z| <= 4
+  ;SOURCE: explode.frm
+}
+ 
+Julike {; Ron Barnett, 1993
+        ; a Julia function based upon the Ikenaga function
+  z = Pixel:
+  z = z*z*z + (P1-1)*z - P1
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Liar2 {; by Chuck Ebbert.
+       ; Same as Liar1 but use sequential reasoning, calculating
+       ; new y value using new x value.
+       ; x(n+1) = 1 - abs(y(n)-x(n) );
+       ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)-real(z))
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: liar.frm
+}
+ 
+Liar3 {; by Chuck Ebbert.
+   ; X: X is true to P1 times the extent that Y is true
+   ; Y: Y is true to the extent that X is false.
+   ; Sequential reasoning.  P1 usually 0 to 1.  P1=1 is Liar2 formula.
+   ; x(n+1) = 1 - abs(p1*y(n)-x(n) );
+   ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)*real(p1)-real(z) )
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+Liar4 {; by Chuck Ebbert.
+       ; X: X is as true as (p1+1) times Y
+       ; Y: Y is as true as X is false
+       ; Calculate new x and y values simultaneously.
+       ; Real part of p1 changes probability.  Use floating point.
+       ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel, p = p1 + 1:
+  z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)))
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+M-SetInNewton(XAXIS) {; use float=yes
+                      ; jon horner 100112,1700, 12 feb 93
+  z = 0, c = pixel, cminusone = c-1:
+  oldz = z, nm = 3*c-2*z*cminusone, dn = 3*(3*z*z+cminusone)
+  z = nm/dn+2*z/3
+  |(z-oldz)|>=|0.01|
+  ;SOURCE: fractint.frm
+}
+ 
+m1 {
+  z=0, c=pixel:
+  z=sqr(z)+c
+  c=c+p1
+  |z| <= 4
+  ;SOURCE: explode.frm
+}
+ 
+M_Lagandre2 {
+  c = P1, z = Pixel:
+  z = (3 * z*z - 1) / 2 + c
+  |z| < 100
+  ;SOURCE: fractint.frm
+}
+ 
+M_Lagandre3 {
+  c = P1, z = Pixel:
+  z = z * (5 * z*z - 3) / 2 + c
+  |z| < 100
+  ;SOURCE: tchebych.frm
+}
+ 
+mfnz {
+  z=0, c=pixel:
+  z=sqr(z)+c
+  c=c+p1*fn1(z)
+  |z| <= 4
+  ;SOURCE: explode.frm
+}
+ 
+Sam_5 (XAXIS) {
+  z = Pixel: 
+  z = z^2.718281828 + pixel
+  ;SOURCE: sam.frm
+}
+ 
+ScottSIS (XYAXIS) { 
+  z = pixel, TEST = (p1+3): 
+  z = sqr(1/sin(z)) 
+  |z|<TEST 
+  ;SOURCE: skinner.frm
+}
+ 
+F'Liar1 {; Generalization by Jon Horner of Chuck Ebbert formula.
+         ; X: X is as true as Y
+         ; Y: Y is as true as X is false
+         ; Calculate new x and y values simultaneously.
+         ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel:
+  z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
+  fn1(abs(z))<p1
+  ;SOURCE: fractint.frm
+}
+F'Liar2 {; Generalization by Jo. Horner of Chuck Ebert Formula
+         ; x(n+1) = 1 - abs(y(n)-x(n! )
+         ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) )
+  z = fn1(pixel):
+  x = 1 - abs(imag(z)-real(z))
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= p1 
+  ;SOURCE: form2.frm
+}
+mandel-newton_j7c3 {; Sylvie Gallet [101324,3444], 1995
+  z = pixel, c = z, iter = 1
+  rad = 3.1, center = (1.0,0.1)
+  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95)
+  zn = center*rad+(pix-center)
+  limit = real(p1), b1 = 16, b2 = 0.0001 :
+  test1 = (iter&&limit), test2=(iter!=limit)
+  c1=(-0.7056,-0.0086)
+  c=fn1(sin(conj(-0.80256,-0.1095)))
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
+  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1) 
+  iter = iter+1
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: sg-bc-bj.frm
+}
+ 
+OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
+   z = y = x = pixel, k = 1 + p1, test = 5 + p2 :
+   a = fn1(z)
+   IF (a <= y)
+      b = y
+   ELSE
+      b = x
+   ENDIF
+   x = y, y = z, z = a*k + b
+   |z| <= test
+  ;SOURCE: fract196.frm
+}
+ 
+3D_Balls_Julia {; Copyright (c) Paul W. Carlson, 1997
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = Julia set coordinates
+    ;   real(p2) = a factor controlling the size of the balls
+    ;   imag(p2) = number of iterations to skip
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+  w = pixel
+  c = p1
+  z = 0
+  bailout = 0
+  iter = 0
+  range_num = 0
+  skip = imag(p2)
+    ;****************************************************
+    ; In the accompanying par file, balloops.par,
+    ; we will set the number of ranges to 2, with
+    ; 125 colors in each range, but the colormap will
+    ; be modified to 4 ranges to give the desired effect.
+    ;****************************************************
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+    ;****************************************************
+    ; Real(p2) controls the size of the balls.
+    ; These values will usually be in the range 0.001 to 0.1
+    ;****************************************************
+    ball_size = real(p2)
+    index_factor = (colors_in_range - 1) / ball_size:
+    ;****************************************************
+    ; The equation being iterated.  Almost any equation
+    ; that can be expressed in terms of a complex variable
+    ; and a complex constant will work with this method.
+    ; This example uses a modified Pokorny equation.
+    ;****************************************************
+  w = 1 / (w * w + c) + c
+    ;****************************************************
+    ; If the orbit point is within the specified distance of a circle,
+    ; set z to the index into the colormap and set the bailout flag.
+    ;****************************************************
+  IF (iter > skip)
+    wr = real(w), wi = imag(w)
+    d = wr * wr + (wi - .5) * (wi - .5)
+    IF (d < ball_size)
+      bailout = 1
+      delta = ball_size - d
+    ELSEIF (wr * wr + (wi + .5) * (wi + .5) < ball_size)
+      bailout = 1
+      delta = ball_size - (wr * wr + (wi + .5) * (wi + .5))
+    ELSEIF ((wr - .5) * (wr - .5) + wi * wi < ball_size)
+      bailout = 1
+      delta = ball_size - ((wr - .5) * (wr - .5) + wi * wi)
+    ELSEIF ((wr + .5) * (wr + .5) + wi * wi < ball_size)
+      bailout = 1
+      delta = ball_size - ((wr + .5) * (wr + .5) + wi * wi)
+    ENDIF
+  ENDIF
+  IF (bailout)
+    z = index_factor * delta + range_num * colors_in_range + 1
+  ENDIF
+    ;****************************************************
+    ; Cycle through the range numbers (0 thru num_ranges - 1)
+    ; With two color ranges, even iterations use color
+    ; range 0, odd iterations use color range 1.
+    ;****************************************************
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+    ;****************************************************
+    ; Since we are using outside=summ, we have to subtract
+    ; the number of iterations from z.
+    ;****************************************************
+  iter = iter + 1
+  z = z - iter
+    ;****************************************************
+    ; Finally, we test for bailout
+    ;****************************************************
+  bailout == 0  && |w| < 1000
+  ;SOURCE: 97msg.frm
+}
+ 
+bshng84 {; by Kovari Janos
+  a = pixel, b = pixel, z = pixel:
+  a = real(fn1(a))
+  b = real(fn2(b))
+  z = fn3(z) + a + flip(b)
+  |z| <= p1
+  ;SOURCE: sg_misc.frm
+}
+ 
+bshng85 {; by Kovari Janos
+  a = pixel, b = pixel, z = pixel:
+  a = fn1(a)
+  b = fn2(b)
+  c = real(a)
+  d = real(b)
+  z = fn3(z) + a + b + (flip(a-b))
+  |z| <= p1
+  ;SOURCE: bshng.frm
+}
+ 
+bshng86 {; by Kovari Janos
+  c = abs(cabs(pixel)), k = abs(cabs(fn1(pixel))), z = pixel, i = 0:
+  z = z^(c*k)/(i+1) + c*i + k*i
+  c = abs(cabs(fn2(c)))
+  k = abs(cabs(fn2(k)))
+  i = i + 1
+  |z| <= p1
+  ;SOURCE: sg_misc.frm
+}
+ 
+bshng95 {; by Kovari Janos
+  i = 0, z = pixel, z1 = flip(pixel):
+  z1 = z
+  z = 2*fn1(z^2/z1) + p1
+  IF (z > z1)
+    i = i + 1
+  ENDIF
+  i <= real(p2)
+  ;SOURCE: sg_misc.frm
+}
+ 
+Candy {; (c) Jay Hill, 1998
+       ; use outside=summ periodicity=0 float=y
+  done = 1, z = 0, zc = 0, c = pixel 
+  t4=8+4*c*(1+sqrt(-4*c-7)) 
+  IF (|t4|<=1)
+    z=z+128*abs(imag(log((t4+sqrt(4.5)-1))))/pi
+    done=-1 
+  ELSE
+    z=z+64
+  ENDIF
+  :             ; initialization.
+  zc=sqr(zc) + c 
+  IF (|zc| >= 4)
+    done=-1 
+  ENDIF
+  done >= 0 
+  ;SOURCE: 98msg.frm
+}
+ 
+Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
+    ; real(p1) = 0 if Mset, otherwise Julia set
+    ; imag(p1) = maximum value of ratio (try 0.01 to 0.3)
+    ; p2       = Julia set coordinates (not used if Mset)
+    ; real(p3) = number of color ranges
+    ; imag(p3) = number of colors in a range
+    ;
+  z = iter = range_num = bailout = 0
+  IF (real(p1) == 0)
+    prev_w = 0
+    c = pixel
+  ELSE
+    prev_w = pixel
+    c = p2
+  ENDIF
+  max_r = imag(p1)
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+  index_factor = (colors_in_range - 1) / max_r
+  :
+  w = prev_w * prev_w + c
+    ;
+  r = |prev_w| / |w|
+  prev_w = w
+  IF (r < max_r && iter > 0)
+    bailout = 1
+    z = index_factor * r + range_num * colors_in_range + 1
+  ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  bailout == 0 && |w| < 4
+  ;SOURCE: 98msg.frm
+}
+ 
+Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
+  z = pixel, x = z, y = conj(z) :
+   hx = p1*fn1(x), hy = p1*fn2(y)
+   x = x + hy, y = y + hx
+   z = x + flip(y)
+    (|hx|+|hy|) >= p2
+  ;SOURCE: gallet-5.frm
+}
+ 
+heart_man {; Kerry Mitchell
+        ; See end of formula xlty_jul for Kerry Mitchell's explanation
+        ;  of his "fraction" formulas
+        ;
+        ; colors by how often r < t, where r & t are the
+        ; magnitude & polar angle of the fractional part of
+        ; the iterate of the Mandelbrot set
+        ; fills fractal with little hearts
+        ;
+        ; real(p1) = bailout (try 4)
+        ; imag(p1) = color speed (try 1)
+        ; p2 = rounding factor (try 1)
+        ; fn1 = rounding function, either round() or trunc()
+        ; fn2 = arbitrary function of iterate (try log())
+        ; calculation uses variable zc, z used for coloring
+        ; use decomp=256
+        ;
+  zc=0, c=pixel, iter=2, twopi=2*pi, count=0
+  maxr=real(p1), speed=imag(p1)*twopi*255/256
+  roundfac=p2
+  :
+        ;
+        ; adjust iterate through arbitrary function and find
+        ;   fractional part
+        ;
+  temp=fn2(zc)/roundfac, frac=temp-fn1(temp)
+  r=cabs(frac)
+  t=cabs(imag(log(frac))/twopi)
+        ;
+        ; update counter if conditions are right
+        ;
+  IF (r<t)
+    count=count+1
+  ENDIF
+        ;
+        ; bailout
+        ;   scale counter into decomposition angle
+        ;   set "iteration done" flag (iter = -1)
+        ;
+  IF ((|zc|>maxr)||(iter==maxit))
+    angle=speed*count/(iter-1)
+    z=cos(angle)+flip(sin(angle))
+    iter=-1
+  ELSE
+    iter=iter+1
+    zc=sqr(zc)+c
+  ENDIF
+  iter>0
+  ;SOURCE: 98msg.frm
+}
+ 
+lambdafroth4m (XYAxis) {
+  bailout=(4*(|p2|<=0)+p2)
+  z=lambda=pixel:
+  z=lambda*z-lambda/z
+  z=lambda*z-lambda*fn1(fn2(z))
+  |z|<=bailout
+  ;SOURCE: 98msg.frm
+}
+ 
+Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
+    ; Parameters:
+    ;   real(p1) = controls the size of the squares (0.1 to 0.8)
+    ;   imag(p1) = 0 if Mset, else Julia set
+    ;   p2       = Julia set coordinates
+    ;   real(p3) = number of iterations to skip
+    ;
+  IF (imag(p1) == 0)
+    c = pixel
+    w = 0
+  ELSE
+    c = p2
+    w = pixel
+  ENDIF
+  z = bailout = iter = range_num = 0
+  shield_size = real(p1)
+  skip_iters = real(p3)
+  num_ranges = 8
+  colors_in_range = 30
+  k = 0.5 + shield_size
+  j = 0.5 - shield_size
+  index_factor = 29 / shield_size:
+    ;****************************************************
+  w = w * w + c
+    ;****************************************************
+  awr = abs(real(w)), awi = abs(imag(w))
+  IF ((awr < k) && (awr > j) && (awi < k) && (awi > j))
+    awr5 = abs(awr - 0.5), awi5 = abs(awi - 0.5)
+    IF (awr5 <= awi5)
+      min_dist = awr5
+    ELSE
+      min_dist = awi5
+    ENDIF
+    IF (min_dist < shield_size && iter > skip_iters)
+      z = index_factor * min_dist + range_num * colors_in_range + 1
+      bailout = 1
+    ENDIF
+  ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  bailout == 0  && |w| < 1.0e20
+  ;SOURCE: 98msg.frm
+}
+ 
+Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
+    ; real(p1) = controls element size try 0.01 to 2.0
+    ; imag(p1)   not used
+    ; p2       = factor, try (1,0)
+    ; real(p3) = number of color ranges
+    ; imag(p3) = number of colors in a range
+    ;
+  width = real(p1)
+  c = pixel
+  c2 = c * c, c1 = 1 / c
+  root1 = c1
+  root2 = -c1
+  root3 = c
+  root4 = -c
+  c41 = c2 * c2+1
+  w = sqrt(c41 / (6 * c2))
+  z = iter = range_num = bailout = 0
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
+  colors_in_range_1 = colors_in_range - 1
+  :
+  w2 = w * w
+  w = w - (c2*w2*w2 - c41*w2 + c2) / (4*c2*w2*w - 2*c41*w)
+  angle = atan(imag(w) / real(w))
+  v = p2 * (fn1(angle)^2 + fn2(angle)^2)
+  dist = abs(|w| - |v|)
+  IF (dist < width && iter > 0)
+    bailout = 1
+    index = colors_in_range_1 * dist / width
+    z = index + range_num * colors_in_range + 1
+  ELSEIF (|w - root1| < 0.00001)
+    bailout = 1
+    z = 252
+  ELSEIF (|w - root2| < 0.00001)
+    bailout = 1
+    z = 252
+  ELSEIF (|w - root3| < 0.00001)
+    bailout = 1
+    z = 252
+  ELSEIF (|w - root4| < 0.00001)
+    bailout = 1
+    z = 252
+  ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  bailout == 0 && |w| < 10000000
+  ;SOURCE: 98msg.frm
+}
+ 
+Petals_Mset {; Copyright (c) Paul W. Carlson, 1998
+    ;****************************************************
+    ; Always use floating point math and outside=summ.
+    ;
+    ; Parameters:
+    ;   p1       = radius of the circles
+    ;   p2       = circle offset factor
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+    ;
+    ; Note that the equation variable is w, not z.  Always
+    ; initialize z to zero.
+    ;****************************************************
+    w = 0
+    c = pixel
+    r = p1
+    ro = r + r * p2
+    r2 = r * r
+    f = 1 - 2 * p2 - p2 * p2
+    k = p2 * r + r * sqrt(f)  ;abs val of petal center (k,k)
+    plsqd = 2 * r2 * f        ;petal length squared
+    z = 0
+    num_ranges = real(p3)
+    colors_in_range = imag(p3)
+    range_num = 0
+    iter = 0:
+    ;****************************************************
+    ; The Carlson Series (I had to name it something)  :)
+    ;****************************************************
+    w2 = w * w
+    w4 = 0.01 * w2 * w2
+    w8  = w4 * w4
+    w12 = w4 * w8
+    w16 = w4 * w12
+    w = w2 - w4 - w8 - w12 - w16 + c
+    ;****************************************************
+    ; Determine which pair of overlapping circles the
+    ; orbit point falls in, if any.
+    ;****************************************************
+    wr = real(w), wi = imag(w)
+    c1 = (((wr-ro) * (wr-ro) + wi * wi) < r2)
+    c2 = ((wr * wr + (wi+ro) * (wi+ro)) < r2)
+    c3 = (((wr+ro) * (wr+ro) + wi * wi) < r2)
+    c4 = ((wr * wr + (wi-ro) * (wi-ro)) < r2)
+    IF (c1 && c4)
+      d = (wr-k) * (wr-k) + (wi-k) * (wi-k)
+    ELSEIF (c1 && c2)
+      d = (wr-k) * (wr-k) + (wi+k) * (wi+k)
+    ELSEIF (c2 && c3)
+      d = (wr+k) * (wr+k) + (wi+k) * (wi+k)
+    ELSEIF (c3 && c4)
+      d = (wr+k) * (wr+k) + (wi-k) * (wi-k)
+    ELSE
+      d = 0
+    ENDIF
+    ;
+    IF (d > 0)
+        ;************************************************
+        ; Set z equal to the index into the colormap.
+        ;************************************************
+        index = colors_in_range * d / plsqd
+        z = index + range_num * colors_in_range + 1
+    ENDIF
+    ;
+    range_num = range_num + 1
+    IF (range_num == num_ranges)
+        range_num = 0
+    ENDIF
+    iter = iter + 1
+    z = z - iter
+    d == 0 && |w| < 1000
+  ;SOURCE: 98msg.frm
+}
+ 
+Phoenix_Atan {; Copyright (c) Paul W. Carlson, 1998
+    ; Parameters:
+    ;   p1       = coordinates of the Julia set
+    ;   real(p2) = bailout value for real(w)
+    ;   imag(p2)   not used
+    ;   real(p3) = number of color ranges
+    ;   imag(p3) = number of colors in each color range
+  prev_w = y = pixel
+  c = p1
+  z = bailout = iter = range_num = 0
+  num_ranges = real(p3)
+  colors_in_range = imag(p3):
+    ;****************************************************
+  w = prev_w * prev_w - 0.5 * prev_w + c
+  b = w * w - 0.5 * y + c
+  y = w
+  w = b
+    ;****************************************************
+  IF (abs(real(w)) > real(p2))
+    delta_i = imag(w) - imag(prev_w)
+    delta_r = real(w) - real(prev_w)
+    angle = abs(atan(delta_i / delta_r))
+    bailout = 1
+    range_index = 2 * colors_in_range * angle / pi
+    z = range_index + range_num * colors_in_range + 1
+  ENDIF
+  prev_w = w
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  bailout == 0
+  ;SOURCE: 98msg.frm
+}
+ 
+quartc {
+   ; This makes for an unusual combination of fractal characteristics
+   ; Recognizable sin fractal filled with chaotic banding.
+   ; Real part of P1 should be about 0.1 and Imag portion can be 0.0
+   ; Oh yes! You will have to zoom out to +/- 2pi on the x axis 
+   ; for full view.
+  z=pixel, zp = (0,0), huge = 1.0e32:
+  temp = z
+  z = sin(z) - zp
+  zp = p1/conj(temp)
+  (|zp| <= 4 && |z| <= huge) 
+  ;SOURCE: noel.frm
+}
+ 
+sfi-p160 {; Sylvie Gallet, Mar 1998
+  z = pixel :
+  z = e^(z-1)                       ; z = 1/e * e^z
+  IF (z >= 50 && cos(imag(z)) >= 0)
+    continue = 0
+  ELSE
+    continue = 1
+  ENDIF
+  continue
+  ;SOURCE: 98msg.frm
+}
+ 
+tri-mandel-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
+              ; Thanks to Kerry Mitchell for the idea!
+              ; real(p1) = bailout (1024 recommended)
+              ; imag(p1) must be different from 0 (>=1 recommended)
+   ; This formula must be used with decomp = 256 and periodicity = 0
+   ;
+   c = z1 = pixel, b = mz1 = cabs(z1), summ = iter = 1
+   b1 = abs(real(p1)), f = b1^0.1
+   b2 = b1*f, b3 = b2*f, b4 = b3*f, b5 = b4*f, b6 = b5*f
+   b7 = b6*f, b8 = b7*f, b9 = b8*f, b10 = b9*f, b11 = b10*f
+   iter1 = iter2 = iter3 = iter4 = iter5 = iter6 = iter7       \
+         = iter8 = iter9 = iter10 = summ_tot = iter_tot = 0
+   k = imag(p1) * (0.0,6.28319530718)
+   :
+   iter = iter + 1, a = mz1 * mz1
+   z1 = z1 * z1 + c, mz1 = cabs(z1), a_b = abs(a - b)
+   summ = summ + (mz1 - a_b) / (a+b - a_b)
+   IF (mz1 > b1)
+    IF (iter1==0)
+     iter1 = iter
+     iter_tot = iter_tot + iter1, summ_tot = summ_tot + summ
+    ENDIF
+    IF (mz1 > b2)
+     IF (iter2==0)
+      iter2 = iter
+      iter_tot = iter_tot + iter2, summ_tot = summ_tot + summ
+     ENDIF
+     IF (mz1 > b3)
+      IF (iter3==0)
+       iter3 = iter
+       iter_tot = iter_tot + iter3, summ_tot = summ_tot + summ
+      ENDIF
+      IF (mz1 > b4)
+       IF (iter4==0)
+        iter4 = iter
+        iter_tot = iter_tot + iter4, summ_tot = summ_tot + summ
+       ENDIF
+       IF (mz1 > b5)
+        IF (iter5==0)
+         iter5 = iter
+         iter_tot = iter_tot + iter5, summ_tot = summ_tot + summ
+        ENDIF
+        IF (mz1 > b6)
+         IF (iter6==0)
+          iter6 = iter
+          iter_tot = iter_tot + iter6, summ_tot = summ_tot + summ
+         ENDIF
+         IF (mz1 > b7)
+          IF (iter7==0)
+           iter7 = iter
+           iter_tot = iter_tot + iter7, summ_tot = summ_tot + summ
+          ENDIF
+          IF (mz1 > b8)
+           IF (iter8==0)
+            iter8 = iter
+            iter_tot = iter_tot + iter8, summ_tot = summ_tot + summ
+           ENDIF
+           IF (mz1 > b9)
+            IF (iter9==0)
+             iter9 = iter
+             iter_tot = iter_tot + iter9, summ_tot = summ_tot + summ
+            ENDIF
+            IF (mz1 > b10)
+             IF (iter10==0)
+              iter10 = iter
+              iter_tot = iter_tot + iter10, summ_tot = summ_tot + summ
+             ENDIF
+             IF (mz1 > b11)
+              iter_tot = iter_tot + iter, summ_tot = summ_tot + summ
+              z = exp (summ_tot * k / iter_tot)
+             ENDIF
+            ENDIF
+           ENDIF
+          ENDIF
+         ENDIF
+        ENDIF
+       ENDIF
+      ENDIF
+     ENDIF
+    ENDIF
+   ENDIF
+   mz1 <= b11
+  ;SOURCE: triangl.frm
+}
+ 
+Uc03 {; = 2z(2z-1)U02-U01
+      ; Copyright (c)1998,1999 Morgan L. Owens
+      ; Prerelease 16/04/1998
+  t=p1, bailout=4, z=pixel:
+  x=real(z), y=imag(z)
+  ax=4*x-2, ay=4*y-2
+  Tx=fn1(ax*(ax*ax-2))
+  Ty=fn1(ay*(ay*ay-2))
+  x=x-t*Ty, y=y+t*Tx
+  z=x+flip(y)
+  |z|<=bailout
+  ;SOURCE: 98msg.frm
+}
+ 
+Uc03 {; = 2z(2z-1)U02-U01
+      ; Copyright (c)1998,1999 Morgan L. Owens
+      ; Prerelease 16/04/1998
+  t=p1, bailout=4, z=pixel:
+  x=real(z), y=imag(z)
+  ax=4*x-2, ay=4*y-2
+  Tx=fn1(ax*(ax*ax-2))
+  Ty=fn1(ay*(ay*ay-2))
+  x=x-t*Ty, y=y+t*Tx
+  z=x+flip(y)
+  |z|<=bailout
+  ;SOURCE: 98msg.frm
+}
+ 
+gravijul {; r^(-2) Mark Christenson 1/25/98
+   ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
+  z = pixel:
+  w = fn1(z)
+  z = fn3(p1/fn2(w*w)) + p2
+  |z| < p3
+  ;SOURCE: 98msg.frm
+}
+ 
+Invasion5 {; Mike Traynor
+           ; From Earl L. Hinrichs' non-fractint formula
+  z = Pixel, c = pixel:
+  z = z^2 + c
+  x = p1*fn1(real(z^2 + c))
+  y = p2*imag(z^2 + c)
+  z =  x + flip(y)
+  z = z^2 + c
+  |(z^2)| <= 4
+  ;SOURCE: invasio2.frm
+}
+ 
+_AA1 {; generalized _AA0
+; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
+; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
+; R1R = 8^ABS(Q1R) = BAILOUT,   S1R = 1 IF Q1R >0 ELSE S1R = -1
+; Z0 = PIXEL   :
+;   Z = Q1I*FN1(FN2(Q2R*Z))+FN3(FN4(Q2I*Z))
+;   Q2R = Q2R*S1R      q1r<0 -> q2r alternates sign
+;   |Z| < R1R
+  IF (REAL(P1) || IMAG(P1))
+    Q1 = P1
+  ELSE
+    Q1 = PIXEL
+  ENDIF
+  Q1R = REAL(Q1), R1R = 8^(ABS(Q1R))
+  IF (Q1R >= 0)
+    S1R = 1
+  ELSE
+    S1R = -1
+  ENDIF
+  Q1I = IMAG(Q1)
+  IF (REAL(P2) || IMAG(P2))
+    Q2 = P2
+  ELSE
+    Q2 = PIXEL
+  ENDIF
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
+  Z = PIXEL
+  :
+  Z = Q1I*FN1(FN2(Q2R*Z))+FN3(FN4(Q2I*Z))
+  ZM = |Z|
+  Q2R = Q2R*S1R
+  ZM <= R1R
+  ;SOURCE: frac_ml.frm
+}
+ 
+_AB1 {; generalized _AB0
+; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
+; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
+; R1R = 8^ABS(Q1R) = BAILOUT,   S1R = 1 IF Q1R >0 ELSE S1R = -1
+; Z0 = PIXEL   :
+;   Z = Q1I*FN1(FN2(Q2R*Z))*FN3(FN4(Q2I*Z))
+;   Q2R = Q2R*S1R      q1r<0 -> q2r alternates sign
+;   |Z| < R1R
+  IF (REAL(P1) || IMAG(P1))
+    Q1 = P1
+  ELSE
+    Q1 = PIXEL
+  ENDIF
+  Q1R = REAL(Q1), R1R = 8^(ABS(Q1R))
+  IF (Q1R >= 0)
+    S1R = 1
+  ELSE
+    S1R = -1
+  ENDIF
+  Q1I = IMAG(Q1)
+  IF (REAL(P2) || IMAG(P2))
+    Q2 = P2
+  ELSE
+    Q2 = PIXEL
+  ENDIF
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
+  Z = PIXEL
+  :
+  Z = Q1I*FN1(FN2(Q2R*Z))*FN3(FN4(Q2I*Z))
+  ZM = |Z|
+  Q2R = Q2R*S1R
+  ZM <= R1R
+  ;SOURCE: frac_ml.frm
+}
+ 
+_AC1 {; generalized _AC0
+; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
+; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
+; R1R = 8^ABS(Q1R) = BAILOUT,   S1R = 1 IF Q1R >0 ELSE S1R = -1
+; Z0 = PIXEL   :
+;   Z = Q1I*FN1(FN2(Q2R*Z))^FN3(FN4(Q2I*Z))
+;   Q2R = Q2R*S1R      q1r<0 -> q2r alternates sign
+;   |Z| < R1R
+  IF (REAL(P1) || IMAG(P1))
+    Q1 = P1
+  ELSE
+    Q1 = PIXEL
+  ENDIF
+  Q1R = REAL(Q1), R1R = 8^(ABS(Q1R))
+  IF (Q1R >= 0)
+    S1R = 1
+  ELSE
+    S1R = -1
+  ENDIF
+  Q1I = IMAG(Q1)
+  IF (REAL(P2) || IMAG(P2))
+    Q2 = P2
+  ELSE
+    Q2 = PIXEL
+  ENDIF
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
+  Z = PIXEL
+  :
+  Z = Q1I*FN1(FN2(Q2R*Z))^FN3(FN4(Q2I*Z))
+  ZM = |Z|
+  Q2R = Q2R*S1R
+  ZM <= R1R
+  ;SOURCE: frac_ml.frm
+}
+ 
+bills_xy-trade4 {
+     ; Replaced variable "e" with "ee", 5/7/99. G. Martin
+  a = real(p1), b = imag(p1)
+  c = real(p2), d = imag(p2)
+  ee = real(p3), f = imag(p3)
+  z = pixel+1/pixel
+  zold = pixel^ee:
+  x = (real(z)-real(zold))^a
+  y = (imag(z)-imag(zold))^b
+  zold = z
+  z = (y +flip(x))
+  z = (fn1(z))^c - (fn2(zold))^d
+  |z| < f
+  ;SOURCE: 98msg.frm
+}
+ 
+HC_Julstar {; a modified Paul W. Carlson formula
+            ; cobbled together by P. DiGiorgi - 10/98
+  z = w = iter = range_num = bailout = 0
+  pts = real(p2)     ; order of radial symmetry
+  colors = imag(p2)  ; use (0)2x125 or (1)4x63 or (2)8x30
+  pa = abs(real(p3)), pb = imag(p3)
+  IF (colors == 1)
+    num_r = 4, num_c = 63
+  ELSEIF (colors == 2)
+    num_r = 8, num_c = 30
+  ELSE
+    num_r = 2, num_c = 125
+  ENDIF
+  w = fn3(abs(log(pixel^pts)/pts))
+  c = p1
+  i = (0,1)
+  k = 1.2 - pb
+  :
+  c = fn1(fn2(c))
+  w = w * w, wr = real(w)
+  w = w - wr + abs(wr) - c
+  angle = atan(imag(w)/wr)
+  ka = k * angle / pb
+  rw = k * cos(angle) + pb * cos(ka)
+  iw = k * sin(angle) + pb * sin(ka)
+  ww = rw + i * iw
+  IF (real(p3) >= 0)
+    ww = fn4(ww)
+  ELSE
+    ww = fn4(1 - ww)/ww
+  ENDIF
+  dist = abs(|w|-|ww|)
+  IF (dist < pa && iter > 1)
+    bailout = 1
+    index = num_c * dist / pa
+    z = index + range_num * num_c + 1
+  ENDIF
+  iter = iter + 1
+  range_num = range_num + 1
+  IF (range_num == num_r)
+    range_num = 0
+  ENDIF
+  z = z - iter
+  bailout == 0 && |w| < 10000
+  ;SOURCE: 98msg.frm
+}
+ 
+Trans_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
+  z = prev_w = bailout = iter = range_num = 0
+  c = pixel
+  max_real = real(p1)
+  num_ranges = real(p2)
+  colors_in_range = imag(p2):
+    ;****************************************************
+  w = fn1(prev_w) + c
+    ;****************************************************
+  IF (abs(real(w)) > max_real)
+    angle = abs(atan((imag(w)-imag(prev_w))/(real(w)-real(prev_w))))
+    bailout = 1
+    z = colors_in_range * (2 * angle / pi + range_num) + 1
+  ENDIF
+  prev_w = w
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
+  iter = iter + 1
+  z = z - iter
+  bailout == 0
+  ;SOURCE: 98msg.frm
+}
+ 
+tent_in_mod {; Modified Sylvie Gallet formula
+             ; Modified tent_inside.frm (generalized by Les St Clair)
+             ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
+             ; set p1=0, p2=0.001 for default behaviour
+  IF (p1 || flip(p1))
+    r = p1
+  ELSE
+    r = 1
+  ENDIF
+  z = 0 :
+  l = r+p1
+  z = z*z + pixel
+  UV = (5,5) - fn1((5,5) - fn2(z))
+  r = fn3(UV)
+  fn4(l-r) >= p2 && r < 4
+  ;SOURCE: tent_mod.par
+}
+ 
+Devotion {
+  z = pixel:
+  z = z + p1
+  r = fn1(z) * z * z  
+  q = z^e 
+  z = (z - imag(1/r)/z - real(1/q))
+  |z| <= 4
+  ;SOURCE: shakti.frm
+}
+ 
+Devotion {
+  z = pixel:
+  z = z + p1
+  r = fn1(z) * z * z  
+  q = z^e 
+  z = (z - imag(1/r)/z - real(1/q))
+  |z| <= 4
+  ;SOURCE: shakti.frm
+}
+ 
+Dharma (XAXIS) {
+  z = c = pixel:
+  z = z + p1
+  r = tan(1/z) + pixel
+  z = fn1(r) * z 
+  |z| < 4
+  ;SOURCE: shakti.frm
+}
+ 
+Gita {
+  z = pixel + p1:
+  r = fn1(tan(1/z)) + pixel + 1
+  z = (z*r)/fn2(r)
+  |z| < 4
+  ;SOURCE: shakti.frm
+}
+ 
+Sattva {
+  z = pixel + p1:
+  r = fn1(tan(1/z)) + pixel 
+  z = z * fn2(r)
+  |z| < 4
+  ;SOURCE: shakti.frm
+}
+ 
+Sutra {
+  z = pixel + p1:
+  r = tan((1/z) + 1)
+  z = fn1(z * r)/fn2(r) 
+  |z| < 4
+  ;SOURCE: shakti.frm
+}
+ 
+Carr-Orman2 {; Modified by Jack A. Orman
+  z=1/pixel, c=fn1(p2)/pixel:
+  z=z^p1+fn2(c/pixel)
+  |z| <=10
+  ;SOURCE: j-carr.frm
+}
+ 
+J_TchebychevC3 {
+  c = pixel, z = P1:
+  z = c*z*(z*z-3)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+TobeyRichard1 (XYAXIS) {; Jm Richard-Collard
+                        ; Generalized by Tobey J. E. Reed [76437,375]
+  z = pixel:
+  sq=z*z, z=(sq*fn1(sq)+sq)+pixel
+  |z|<=50
+  ;SOURCE: fract003.frm
+}
+ 
+FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                  ; by George Martin, 10/98
+  z=(pixel)/(1.099,0), x=|z|:
+  IF (x>1)
+    z=cosxx(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4 
+  ;SOURCE: spcb.frm
+}
+ 
+FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                  ; by George Martin, 10/98
+  z=(pixel)/(1.099,0), x=|z|:
+  IF (x>1)
+    z=cosxx(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4 
+  ;SOURCE: spcb.frm
+}
+ 

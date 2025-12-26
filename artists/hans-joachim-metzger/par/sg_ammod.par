@@ -1,0 +1,127 @@
+frm:acc_man_mod {; Modified Sylvie Gallet formula
+             ; Modified acceleration_man.frm (generalized by Les St Clair)
+             ; use fn1=cabs, fn2=abs for default behaviour
+             ; set p1=0 and p2=0 for default behaviour
+  z2 = r = 0 , c1 = pixel +p1 , c2 = pixel +p2 :
+  l = r, z = z2
+  z1 = z*z + c1
+  vel1 = z1 - z
+  z2 = z1*z1 + c2
+  vel2 = z2 - z1
+  acc = vel2 - vel1
+  r = fn1(acc)
+  r < 4 && fn2(l - r) >= 0.001
+}
+
+sgammd01           { ;                                       t=  0:16:17.84
+                     ; Copyright Sylvie Gallet, Aug 14, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=am_mod.frm
+  formulaname=acc_man_mod function=tan/exp passes=1
+  center-mag=-1.02430596172242600/+0.24347501976267020/1918.357/1/7.499
+  params=0.415/0/0.33/0 float=y maxiter=300 inside=0 decomp=256
+  periodicity=0
+  colors=kponqpqsq<2>tutvvuvvu<28>cc`cc`dda<17>vusvusutr<21>ffcffcggd<25>t\
+  truusvvtwwuwwt<27>trVtrUtrUtqU<36>iNGhMFhMFgMF<29>T9IT9ISAJRAJ<12>JKQJKQ\
+  ILRILRHMS<11>8Xb<5>Yijakkcllfmmhnn cyclerange=0/255
+  }
+
+sgammd02           { ; Fleurs de Lis                         t=  0:12:44.51
+                     ; Copyright Sylvie Gallet, Aug 14, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=am_mod.frm
+  formulaname=acc_man_mod function=tan/exp passes=1
+  center-mag=-0.12354532627109960/+0.60897056365619890/97028.66/1/79.999
+  params=0.415/0/0.33/0 float=y maxiter=1023 inside=0 decomp=256
+  periodicity=0
+  colors=kdM<13>hYLhXLgWKgVKgUJ<9>bKEbJDbICaHBaGA<15>U00U00T01<35>4DM<6>8L\
+  5<13>wwc<4>www<4>ttsttsssrssrrrq<21>ffbeeaffb<14>uuuwwwwww<24>ee`ee`ffa<\
+  28>vvtwwuwwt<24>rr_rrZrrYqqXqqXqpW<4>lfO cyclerange=0/255
+  }
+
+sgammd03           { ; Mandelflower                          t=  0:15:28.12
+                     ; Copyright Sylvie Gallet, Aug 14, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=tan/exp passes=1
+  center-mag=-1.71075179946902900/+0.33169348599296870/4.98529e+007
+  params=0.415/0/0.33/0 float=y maxiter=1023 inside=0 decomp=256
+  periodicity=0
+  colors=7H6<10>Q9MS8OS8O<12>ZHYZIZ_J__K_`K``L`<9>bPd<4>wwb<22>wn4wm2wm2<2\
+  8>sY6sX6rW7rV7qU8<19>Z8Kmsu<39>Yiu<8>R_JQYEOXE<4>GWEFVECVE<3>BTDBTDBSDBR\
+  D<12>EHCAKA<14>HW5HW5HV5<19>FJ2FI2EH1DH1<6>2M20K0<2>5I4
+  cyclerange=0/255
+  }
+
+sgammd04           { ; .                                     t=  0:12:55.44
+                     ; Copyright Sylvie Gallet, Aug 15, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=tan/exp passes=1
+  center-mag=-2.06780944636637400/-0.01507796116376017/16365.11/1/50
+  params=0.415/0/0.33/0 float=y maxiter=1023 inside=102 decomp=256
+  periodicity=0
+  colors=enu<17>P`pUZ0<35>FKBFKBEJCEICEHCAKA<12>GU6HV5HW5HW5HV5HU5<15>FL2F\
+  K2FK2EK2<8>4L22M20K0<14>Q9MS8OS8O<12>ZHYZIZ_J__K_`K``L`<9>bPd<4>wwb<22>w\
+  n4wm2wm2<27>sZ6sY6sX6rW7rV7<20>Z8Khnp<17>fnt cyclerange=0/255
+  }
+
+sgammd05           { ; .                                     t=  0:08:38.94
+                     ; Copyright Sylvie Gallet, Aug 15, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=cos/abs passes=1
+  center-mag=-0.19108561268677360/+0.43134018392391030/4422.478/1/32.503
+  params=0.415/0/0.63/0 float=y maxiter=512 inside=0 logmode=fly
+  decomp=256 periodicity=0
+  colors=tb5<2>ta5ta5t`5t_5<4>sY6sX6rW7rV7qU8<19>Z8Kmsu<41>Xht`_E<14>DVEBU\
+  EBUEBTDBTD<15>EHCBLA<12>HW5IX4IW4<12>OE1PC0OC0<14>2M20K0<14>Q9MS8OS8O<12\
+  >ZHYZIZ_J__K_`K``L`<11>bPewwe<24>wn4wm2wm2<18>tb5 cyclerange=0/255
+  }
+
+sgammd06           { ; .                                     t=  0:06:26.35
+                     ; Copyright Sylvie Gallet, Aug 15, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=cos/abs passes=1
+  center-mag=-2.04095933800896500/+0.04720031414387206/20762/0.8075/-124.9\
+  96 params=0.415/0/0.63/0 float=y maxiter=512 inside=85 logmode=fly
+  decomp=256 periodicity=0
+  colors=i_N<16>bKEbJDbICaHBaGA<15>U00U00T01<7>N36N36M47M47M47L47<3>J5AI6A\
+  H6BG6BG7C<16>4DM<6>8L5<13>wwc<4>www<29>ffdeecffd<13>xxwzzyzzy<27>llikkhk\
+  khkkh<25>vvswwtwws<23>rr_rrZrrYqqXqqXqpW<15>j`O cyclerange=0/255
+  }
+
+sgammd07           { ; .                                     t=  0:12:02.38
+                     ; Copyright Sylvie Gallet, Aug 15, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=cos/abs passes=1
+  center-mag=-2.04095885711188000/+0.04720289208143763/1133186/0.8844/79.9\
+  97/10.57 params=0.415/0/0.63/0 float=y maxiter=512 inside=208
+  logmode=fly decomp=256 periodicity=0
+  colors=VZE<10>DVEBUEBUEBTDBTD<15>EHCAKA<14>HW5IX4IW4<12>OE1PC0OC0<14>2M2\
+  0K0<14>Q9MS8OS8O<12>ZHYZIZ_J__K_`K``L`<11>bPewwe<24>wn4wm2wm2<28>sY6sX6r\
+  W7rV7qU8<3>mQAmuu<57>Sco`_E<2>XZE cyclerange=0/255
+  }
+
+sgammd08           { ; .                                     t=  0:12:27.38
+                     ; Copyright Sylvie Gallet, Aug 15, 1997
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=test.frm formulaname=acc_man_mod
+  function=cos/abs passes=1
+  center-mag=-2.04095925843257600/+0.04720315289147382/6044478/1.2192/79.9\
+  97/10.57 params=0.415/0/0.63/0 float=y maxiter=512 inside=0
+  logmode=fly decomp=256 periodicity=0
+  colors=rrwKZF<30>BL1AK0BK0<13>TU9VVAVVA<30>EL1EL1EL2<43>KWFzzU<28>yYDyXC\
+  xVBwUA<31>U00zww<37>MSeLReJQdIPc<14>00KKU0<4>Zc0
+  }
+

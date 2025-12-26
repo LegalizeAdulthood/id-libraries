@@ -44,3 +44,24 @@ Liar1 {; by Chuck Ebbert.
   ;SOURCE: fractint.frm
 }
  
+Liar2 {; by Chuck Ebbert.
+       ; Same as Liar1 but use sequential reasoning, calculating
+       ; new y value using new x value.
+       ; x(n+1) = 1 - abs(y(n)-x(n) );
+       ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)-real(z))
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: liar.frm
+}
+ 
+F'Liar2 {; Generalization by Jo. Horner of Chuck Ebert Formula
+         ; x(n+1) = 1 - abs(y(n)-x(n! )
+         ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) )
+  z = fn1(pixel):
+  x = 1 - abs(imag(z)-real(z))
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= p1 
+  ;SOURCE: form2.frm
+}

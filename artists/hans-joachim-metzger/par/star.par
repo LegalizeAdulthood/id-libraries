@@ -1,0 +1,153 @@
+comment{ ; narrative copyright Kerry Mitchell 09oct98
+
+SeeingStars
+
+Mostfractal images involve circles in some respect:  either stopping
+theiteration when the orbit moves outside of a given circle, or
+coloringby how close the orbit comes to a certain circle, or some
+variation.These formulas use a 5 point star instead of a circle.
+The"starnear" formulas color by how close the orbit comes to a star.
+The"starbail" formulas are set up to stop iterating either when the
+orbitcomes into a star or when it leaves a star.
+
+Thestar is represented by the 5 outer points.  These are equally spaced
+ona circle.  The center and size of the circle are user-specified, as
+isthe rotation angle of the star.
+
+Howz at any iteration relates to the star (inside, outside, how close)
+isdetermined by looking at each of the 10 sides, one at a time.  Each
+sidecan be represented by a line A*x + B*y + C = 0, where A, B, and C
+comefrom the coordinates of the 2 outer points that are joined to make
+theside.  Given the numbers A, B, and C, the quantity
+
+q = A*real(z) + B*imag(z) + C
+
+iscomputed.  If q is positive, then z is on one side of the line, and
+ifq is negative, then z is on the other side of the line.  If |q| is
+verysmall, that means that z is very close to that side of the star.
+Takingthe signs of q for all 10 sides will determine if z is inside or
+outsideof the star.  Using the smallest value of |q| gives the distance
+fromz to the star.
+
+Tosee this in action, use the formula "star".  It will draw the outline
+ofa star, with the position, orientation and size that you choose.
+Thisformula, and the "starnear" formulas that are built on it, use a
+logarithmictransfer function from distance to angle (for decomposition
+coloringin Fractint).  This helps highlight the star without needing to
+findout if the point is exactly on the star or not.  The "star-inout"
+formulawill draw a star in 2 colors.  Everything inside the star is one
+color,and everything outside of the star is the other color.  These 2
+formulasare simply to give an idea of how the method works.
+
+Thefractal formulas need a bit of extra explanation.  In the
+"starnear_jul"formula, you have the option of whether or not to check
+thepixel (initial value of z) for its distance from the star.  If the
+staris centered at the origin (p2=0/0), this can make quite a difference.
+Forexample, use the "starnear2" parameter set.  As written, the real
+partof p3 is -0.28. The magnitude of real(p3) is the radius of the circle
+containingthe 5 outer points.  If real(p3) is negative, that tells the
+formulato check the pixel for its distance before iterating.  In the
+image,this shows up as a star in the center.  Now, make real(p3) +0.28.
+You'llsee that the outer portion of the image is unchanged, but the star
+inthe middle has gone away.  In the "starbail" formulas, the flag to
+checkthe pixel before iterating (pixelflag) has been set in the formula,
+andis not interactively changeable (too many parameters).
+
+The"starnear" formulas use a standard bailout condition--stop when the
+iterategets too big, or leaves a very large circle.  Conversely, in the
+"starbail"formulas, the bailout condition is built around a star.  If 
+thestar is centered at the origin and is big enough, then you can
+essentiallyuse the star instead of the traditional bailout circle.  This
+iswhat has been done in parameter set "starbail1".  The magnification
+wasdecreased to show the bailout star, and the fractal can clearly be
+seenin the middle.  It is also possible to bailout when the orbit enters
+astar.  This is similar to the orbit trap methods that others have
+written,and works particularly well for Julia sets that are dusts.  An
+exampleof this is in parameter set "starbail2".  Some care must be taken
+ifthe star is not centered on the origin.  The "starbail" formulas set
+zto a default (1,0) if the orbit was not caught by a star.  If the star
+istoo far away or too small to catch many orbits, the majority of the
+screenwill be one color (color 0 when using decomposition coloring).  If
+youuse stars off of the origin, you may want to increase the size and
+set"pixelflag=0" in the formula, to prevent the image from being taken
+overby one huge rogue star.
+
+Onefinal note:  This method uses angles a lot to figure out which side
+belongsto whom.  Consequently, the ability to rotate the star is a bit
+limited.If the rotations are kept to the range of 0 to 36 degrees, there
+shouldn'tbe any problems.  Rotations outside this range (try it with the
+"star"formula) will result in branch cuts as the formula gets its angles
+confused.Fortunately, since the star is symmetric, there shouldn't be
+aneed to rotate it beyond those bounds.
+
+}
+
+starnear1{ ; copyright Kerry Mitchell 09oct98
+;
+; sample of "near to 5 point star" coloring
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starnear_jul center-mag=-0.358/0.651/8
+params=0/1/0/0/0.25/18 float=y maxiter=256 inside=0
+decomp=256 periodicity=0 colors=zrM<40>zzzzzzyyz<60>QQzPPzPP\
+zPPy<61>000000110<60>yn0zo0zo0zo1<19>zrL cyclerange=0/255
+}
+
+starnear2{ ; copyright Kerry Mitchell 09oct98
+;
+; sample of "near to 5 point star" coloring
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starnear_jul center-mag=0/0/1.1/1/-90
+params=0.28/0/0/0/-0.28/36 float=y maxiter=256 inside=0
+decomp=256 periodicity=0 colors=vlv<23>i1ih0hf0f<28>303\
+101100<29>x99zAAzBB<30>zzz<30>i2ih0hg0g<29>202000000<30>\
+y99zAAzCC<30>zzz<5>wnw cyclerange=0/255
+}
+
+starnear3{ ; copyright Kerry Mitchell 09oct98
+;
+;  Mandelbrot sample of coloring by nearest approach to 5 point star
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starnear_man center-mag=-1/0/0.56/1/-90
+params=-2/0/0.25/36 float=y maxiter=100 inside=0 decomp=256
+periodicity=0 colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>\
+zz2zz0zy0<51>y20x00w00<30>200000000000000 cyclerange=0/255
+}
+
+starbail1{ ; copyright Kerry Mitchell 09oct98
+;
+; bails out when orbit leaves a 5 point star
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starbail_jul center-mag=0/0/0.25 cyclerange=0/255
+params=0.3795135923319061/0.3349323012073617/0/0/5/18 float=y
+maxiter=256 inside=0 decomp=256 periodicity=0 colors=000<40>x00z\
+00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000
+}
+
+starbail2{ ; copyright Kerry Mitchell 09oct98
+;
+; bails out when orbit enters a 5 point star
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starbail_jul passes=1 center-mag=0/0/1.1/1/-90
+params=0.3/0/0/0/-0.5/36 float=y maxiter=256 inside=0
+decomp=256 periodicity=0 colors=000<15>zo0<14>zyvzzzxxz<13>\
+SSzPPzOOw<14>000<15>zo0<14>zywzzzxxz<13>RRzPPzOOv<11>55B337\
+223110<13>tj0xm0zo1<13>zxtzyxyyz<12>VVzTTzRRzPPyNNu<12>3361\
+12220<14>yn0zo2<14>zyyyyz<13>SSzQQzOOx<14>111 cyclerange=0/255
+}
+
+starbail3{ ; copyright Kerry Mitchell 09oct98
+;
+;  Mandelbrot sample of bailout out when moving inside a 5 point star
+;
+reset=1960 type=formula formulafile=star.frm
+formulaname=starbail_man center-mag=-0.407/0/0.813
+params=1/0/-1/36 float=y maxiter=100 inside=0 decomp=256
+periodicity=0 colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>\
+zz2zz0zy0<51>y20x00w00<30>200000000000000 cyclerange=0/255
+}
+

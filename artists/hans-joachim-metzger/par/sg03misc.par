@@ -1,0 +1,194 @@
+sg_octet           { ; From Wizzle's wiz_octet        t=  0:23:49.23
+                     ; Copyright Sylvie Gallet, May 09, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-0.50875428314337120/+0.52145167887750430/6021489
+  params=0/0 float=y maxiter=50000 inside=0 logmap=667
+  colors=00F<13>48N49O5AP5BP5CQ<16>CT`CU`DVaEWb<8>MghNhhOig<3>VmcXnb_n_<9>\
+  zv4<13>Efa<10>7WR6VP7UO<13>HA2I80HA0<2>CG1AI2AJ2<14>H`8<12>wrB<12>zzz<14\
+  >xtQwsNuqM<16>BK3<13>zVI<4>zzr<10>ryU<12>0bT<4>0UK0SI2PF4LB6I8<14>12E
+  }
+
+sg_bg_galaxy1      { ; From Greg Bushta's gb_galaxy1  t=  0:00:39.11
+                     ; Copyright Sylvie Gallet, May 10, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.25933736077605500/+0.04084145989359493/2294.118/1/-67.499
+  params=2.5/0 float=y maxiter=99999999 inside=0
+  colors=000`I0<10>L40<5>CG1AI2AJ2<14>H`8<12>wrB<11>yyvzzzyyz<22>RSjPRiOPf\
+  <6>D6IC3EC3G<7>B9`AAcBEd<8>Kmm<5>hu`mwZqxXvzUryU<12>0bT<4>0UK0SI2PF<3>AA\
+  0<5>U00<10>zm0<6>xU0<5>UB1P82K52E13C26<3>46K37N38O<7>7GW7HX8JY9LY<14>Soi\
+  UrjXrf<8>tr9wr5wq5<8>s`1rZ0rZ0<15>aJ0
+  }
+
+sg_coshm3-1        { ; Color plug-in for Paul Carlson's coshm3
+                     ; Copyright Sylvie Gallet, May 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+  colors=442svs<31>iogiogioghnfhnfgme<48>LRLLRKKQKKPK<20>9D99C98B87A7797<9\
+  >000zxn<6>yvkxvkxvkxvkxvj<44>keQjdPjdPicPicO<12>bXJbXJaWJaWJ`VI<40>B95A8\
+  5985874863<4>442331432
+  }
+
+sg_coshm3-2        { ; Color plug-in for Paul Carlson's coshm3
+                     ; Copyright Sylvie Gallet, May 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+  colors=442qxz<58>G_aFZ`FZ`FZ`<61>0AAyyv<117>AA5AA5994883<4>550000000000
+  }
+
+sg-hgate           { ; Heaven's Gate; from DMJ-Mand-PNT-And-I
+                     ; Colormap is Gallet05
+  reset=1960 type=formula formulafile=_d.frm
+  formulaname=dmj-Mand-Pnt-Ang-I
+  center-mag=+0.20312911440366170/+0.56105580543252540/2100.702/1.5496
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  colors=A50<16>QE0RF0TG0<2>WJ0YK0YK0<14>jU0jU0kV0kV0lW0<9>q`2ra2sb3sb4<11\
+  >viGwiHwjIxkKxkL<6>zpZ000<18>000F50<10>PFAQGBQGBRHB<8>XNDYOEYOEZPF_QG<13\
+  >kbPlcQmdRmdSneSofT<14>xoexpfyqgzrhE0B<89>403
+  }
+
+sg_pentagram       { ; "Double Pentagram" (c) Joe Pearson May 06, 1998
+                     ; Copyright Sylvie Gallet, May 15, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; recolored using deep11.map
+  reset=1960 type=julia passes=1
+  center-mag=+0.00000000000000000/+0.00000000000000000/1523.981/1/65
+  params=-0.7612078329687501/0.08479657003125 float=y maxiter=2000
+  logmap=518
+  colors=0A0<13>5eW<31>121000001<21>3KZ4L`5Na<7>CakDcmDdm<6>JkmKmmKlk<13>6\
+  LG5JD6LE<14>JdMKfNLhM<12>wt1<12>DVF<9>BI9BH8BH8<4>9D6<2>MG7QH8UI9YJAaLBe\
+  MCgODjQF<13>xnGypGzrF<6>xvqwwwuvw<14>FZh<11>A0A<9>uU0<13>zzcvycqwb
+  }
+
+sg_doom            { ; Copyright Sylvie Gallet, May 15, 1998
+                     ; <sylvie_gallet@compuserve.com>
+  reset=1960 type=barnsleyj1 passes=1
+  center-mag=0.519156/-0.0375416/2.976768
+  params=1.041092677582345/-0.2267429885282054 float=y maxiter=1500
+  bailout=8 inside=0 logmap=27
+  colors=000540<8>EB0FC1EE1CG1AI2<15>H`8<12>wrB<11>yyvzzzyzx<21>RnDPmAPmA<\
+  60>9F58E4AA0<5>U00<10>zm0<6>xU0<5>UB1P82K52E13C26<3>46K37N38O<7>7GW7HX8J\
+  Y9LY<14>SoiUrjXrf<8>tr9wr5wq5<8>s`1rZ0rZ0<15>aJ0000<3>430
+  }
+
+sg_deepmini        { ; t= 17:22:59.88
+                     ; on a P233 at 1600x1200  May 21, 1998  17:16:17
+                     ; Image Copyright 1998 by Sylvie Gallet
+  reset=1960 type=mandel passes=t
+  center-mag=-1.55536216159586300/+0.00000944894898022/1.260548e+012/1/15.\
+  015/-0.026 params=0/0 float=y maxiter=2000000 inside=0 logmap=45495
+  colors=000KhZ122<28>HXaIZcJac<5>RmhSoiUoh<10>zwU<16>0P0<10>LiXNk_PmcQnfS\
+  piUrm<4>www<4>mqkkpihnfflc<12>AR1<4>L`6Nb7Qd8Te8<8>wrB<11>yyvzzzyyz<16>_\
+  `nY_mWXj<6>ICPG9LG8K<3>D4GC3EA0AF1CL2F<3>UCOWFQXHS<14>www<7>juU<10>0bT<4\
+  >0UK<31>zzz
+  }
+
+SG_Zf_Ang_01       { ; .                                    t=  0:01:57.92
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=round passes=1 center-mag=-1.12818/0.194412/1.718213/-1
+  params=-0.45/-0.15/0.35/-1/7/36 float=y maxiter=252 inside=0
+  outside=summ
+  colors=000xyy<14>KdY<40>ANG9MF9LG<3>8GL7EN7EO<7>7ES7ET6EU6FV7GW<3>ANZBP_\
+  DR`<5>KcdMeeOff<10>www<34>4BX29W29V2AT<14>www<15>Ka8Nb8Qd8<14>tsVwuXwu`<\
+  6>yyz<22>RSjPRiOPf<8>A0AF1C<5>XDQ_FT`IV<14>zzz
+  }
+
+SG_Zf_Ang_02       { ; .                                    t=  0:08:03.61
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=exp passes=1
+  center-mag=-8.88178e-016/4.44089e-016/0.3302181
+  params=0.755/0.45/0.4/-1/2/125 float=y maxiter=252 inside=0
+  outside=summ
+  colors=442svs<31>iogiogioghnfhnfgme<48>LRLLRKKQKKPK<20>9D99C98B87A7797<9\
+  >000zxn<6>yvkxvkxvkxvkxvj<44>keQjdPjdPicPicO<12>bXJbXJaWJaWJ`VI<40>B95A8\
+  5985874863<4>442331432
+  }
+
+SG_Zf_Ang_03       { ; .                                    t=  0:02:25.60
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=cos passes=1 center-mag=0/0/0.6666667
+  params=0.2/0.53/0.4/-1/2/125 float=y maxiter=255 inside=0
+  outside=summ
+  colors=000uux<2>stvrsuprs<2>npqmopmopmop<8>fjieihdhgcgfbgf<3>ZdbZdbYcaYc\
+  aXb`<2>VaZU`YU`YU`Y<12>OVSOVSOVSOVSOUR<68>000wwc<19>kbFkaEj`DiZBiZBhYA<1\
+  2>aM2`L1`L1`K1<10>WE3WD3WC3VB4UB4<5>S75R66R66R66<26>K11J11J11I00I00<30>0\
+  00wvyvvx
+  }
+
+SG_Zf_Ang_04       { ; .                                    t=  0:02:03.53
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=tan passes=1 center-mag=0/0/0.6426667
+  params=0.02/0.5/0.5/-1/5/51 float=y maxiter=255 inside=0
+  outside=summ
+  colors=990EM7EM7FN8GN8GO9<14>QWIRWJSXKTYLUZM<19>nrmosnptprur<3>vywxzyxyx\
+  <11>smdslbrl`qk_<3>ngUmeTldRkbP<8>`QB_P9YN7XL5VJ4UH2SE0<15>CG2CG2DG2<6>F\
+  I4FI4FI4FJ4GJ4GJ5<4>IL6JL7JM7KN8<2>LP9MQ9NRAOSB<17>beRceSdfU<21>wwvxxwyy\
+  xyyzyyxyxw<9>vsmvsmvslvskvrj<9>vo`vo_unZumY<13>hXGgVEfUE<13>HG3FF2DG1BG0\
+  9G07H0<7>BK4CK4DL5DL6EL6
+  }
+
+SG_Zf_Ang_05       { ; .                                    t=  0:03:08.66
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=tan passes=1 center-mag=1.11022e-016/-1.11022e-016/3.875969
+  params=-0.05/-0.5/0.45/-1/2/125 float=y maxiter=252 inside=253
+  outside=summ
+  colors=442qxz<58>G_aFZ`FZ`FZ`<61>0AAyyv<117>AA5AA5994883<4>550000000000
+  }
+
+SG_Zf_Ang_06       { ; .                                    t=  0:03:07.18
+                     ; Copyright Sylvie Gallet, May 23, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm formulaname=Zf_Ang
+  function=tan passes=1 center-mag=1.11022e-016/-1.11022e-016/3.875969
+  params=-0.05/-0.5/0.45/-1/5/51 float=y maxiter=252 inside=253
+  outside=summ
+  colors=000bmi<11>zzz<16>9IL<13>HXaIZcJac<5>RmhSoiUoh<10>zwU<16>0P0<10>Li\
+  XNk_PmcQnfSpiUrm<4>www<4>mqkkpihnfflc<12>AR1<4>L`6Nb7Qd8Te8<8>wrB<11>yyv\
+  zzzyyz<16>_`nY_mWXj<6>ICPG9LG8K<3>D4GC3EA0AF1CL2F<3>UCOWFQXHS<14>www<7>j\
+  uU<10>0bT<4>0UK<18>`lh
+  }
+
+SG_MyEqn           { ; .                                    t=  0:08:42.71
+                     ; Copyright Sylvie Gallet, May 27, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=formula formulafile=_z.frm
+  formulaname=MyEqn_Julia-sg passes=1
+  center-mag=8.88178e-016/-1.33227e-015/0.1708176
+  params=-0.783/0/0/0.5/3/80 float=y maxiter=511 inside=253
+  outside=summ
+  colors=855wwq<7>wwgwwfwvevud<4>tqZtpYsoXsnVrmUrmT<21>eT6eS5eS5<29>O31N20\
+  O41N20<3>O40O40P50Q60<38>yk5zm5zl5<11>oZ4nY4mY4<29>64B487<23>1RM1SN1TO0U\
+  P0UP<36>1AA1221110001A9<13>223 cyclerange=1/240
+  }
+
+m016453            { ; .                                    t= 19:47:39.92
+                     ; Copyright Sylvie Gallet, May 27, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.62415897047562059015/9.6124459311221668e-5/4.535025e+016
+  params=0/0 float=y maxiter=4000 inside=0 logmap=1608
+  colors=0006FV<17>QheRifSkgUmhUmh<21>GfaFfaEe`Ee_<13>BUJATHATH<13>AJ3AI2A\
+  J2<11>FX6GY7IZ7<14>wrF<8>ywnyxryyvzzzyzy<13>dsgbreapc<10>MT9KU6<21>vxqxz\
+  txzr<7>uzb<15>0bT<4>0UK0SI2PF4LB<5>9MGAMHBNJ<10>NTXPUZQVZ<27>uzu
+  }
+
