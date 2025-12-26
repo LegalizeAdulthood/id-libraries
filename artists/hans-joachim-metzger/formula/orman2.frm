@@ -36,3 +36,56 @@ DaliJack3 {
   ;SOURCE: orman2.frm
 }
  
+Ormandelbrot20 {
+  z=c=pixel:
+  z=(z*z+c)/(z*z-c)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot20A {
+  z=pixel, C=P1:
+  z=(z*z+c)*(z*z-c)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot22 {
+  z=c=pixel:
+  z=(z*z+c)*(z*z-c)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot41 {
+  c=z=pixel, zp=.1:
+  z=fn1((z*z+c)/(z*z-c))
+  zp=z
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot43 {
+  z=pixel, z=sqr(z), c=p1:
+  z=z*z + c
+  z=fn1(z)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot43 {
+  z=pixel, z=sqr(z), c=p1:
+  z=z*z + c
+  z=fn1(z)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
+Ormandelbrot44 {
+  z=pixel, c=p1:
+  z=z*z + c
+  z=fn1(z)
+  |z|<4
+  ;SOURCE: orman2.frm
+}
+ 
