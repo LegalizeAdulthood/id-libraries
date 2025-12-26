@@ -1,0 +1,25 @@
+TigerDilly         { ; Show me this list, or I'll sic this on you.
+  reset=2003 type=formula formulafile=tigerd.frm
+  formulaname=Quadrat function=atan/cos passes=b
+  center-mag=0.642967/-0.00289556/0.603934/2.3 params=16/0 float=y
+  maxiter=255 inside=255 outside=atan invert=0.0582220549835/1/0
+  symmetry=xaxis periodicity=0 colors=@altern.map
+  }
+
+Quadrat { ; Conjugates tend to make fine lines and textures.
+z=fn1(pixel), c=fn2(pixel):
+
+z=z*z -conj(z*c) +c,
+
+|z| <= real(P1)
+}
+
+TigerDillyH {	; Chrominance or hue component.
+		; Border tracing cuts out most of the texture,
+		; but I was surprised that it worked at all.
+  reset=2003 type=formula formulafile=tigerd.frm
+  formulaname=Quadrat function=atan/cos passes=b
+  center-mag=0.642967/-0.00289556/0.603934/2.3 params=16/0 float=y
+  maxiter=255 inside=0 invert=0.0582220549835/1/0 symmetry=xaxis
+  periodicity=0 colors=@preemoh.map
+  }

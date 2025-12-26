@@ -1,0 +1,440 @@
+trm-101    { ; culture thriving in petri dish
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  passes=t
+  center-mag=+0.00139858775633743/-0.29042589778434310/1687.756
+  float=y colors=@trmoe3.map
+  }
+
+trm-102          {
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  passes=t center-mag=8.62298/0.000748137/18.28568/1/90 float=y
+  decomp=256 colors=@trmoe3.map
+  }
+
+trm-103               { ; devil's little helper
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  passes=t center-mag=6.78305/-0.0116443/5.786609/1/90 float=y
+  decomp=256 colors=@t'sred.map
+  }
+
+trm-104          { ; sort of filigreed mandelbrot looking thing
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  passes=t center-mag=-18.9886/8.60423e-016/12.36058 float=y
+  decomp=128 colors=@trmoe3.map
+  }
+
+trm-105     {
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-02
+  function=sqr center-mag=-2.0025e-005/-1.7165e-005/0.4838512
+  params=3.14159265358979/0 decomp=256 colors=@trmoe3.map
+  }
+
+trm-106     {
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-03
+  function=sqr center-mag=-1.2755e-005/-9.955e-006/0.3001123
+  params=3.14159265358979/0 decomp=256 colors=@trmoe3.map
+  }
+
+trm-107     {
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-02
+  function=recip center-mag=-1.0222e-005/-1.9729e-005/7.655848
+  params=3.14159265358979/2.71828182845905 decomp=256
+  colors=00008O<25>0ee<13>00K33UK00<3>N44N55O78<12>cbkeeoeeo<11>eefeeeeddf\
+  cc<10>RCCP99O66M33K0000K66N<8>RRcTTeTTe<12>ddneeoddo<10>PQdNPcLObJMaHK`F\
+  I`DG_<2>DH_EI_GK_<2>LNaMPbNQbORcPSd<10>ddneeodcm<11>RMPQKNRLO<12>ccmeeod\
+  cm<10>PIKNGHLEEJBBH99<3>A0003K<3>68N8AOACQ<12>eeo<12>BBR99P66N33M00K<4>0\
+  6Neeo
+  }
+
+trm-108           { ; variations on formula by Bob Carr
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-04
+  center-mag=-0.95398/0.0236326/0.6666636 float=y inside=bof60
+  colors=@trmoe3.map
+  }
+
+trm-109             {;Offset
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-05
+  center-mag=-0.0192732/-0.057842/0.6853674 float=y inside=bof60
+  colors=@trmoe3.map
+  }
+
+trm-110       {;color clover
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-07
+  center-mag=5.78e-006/-7.005e-006/0.5025837 float=y inside=bof60
+  outside=atan decomp=256
+  colors=000<2>0000w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<14>\
+  04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0<14\
+  >0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-111    {
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-08
+  center-mag=12.0986/0.0187764/0.6426099/1/180 float=y inside=bof60
+  outside=real decomp=256 colors=@trmoe6.map
+  }
+
+trm-112         {; Sand Dollar #1
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-08
+  center-mag=0.00130203/1.83352/0.01326626 float=y maxiter=1792
+  inside=bof60 outside=real invert=1/0/0 decomp=256
+  colors=0000U00000m00w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>z\
+  Vzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<\
+  14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0\
+  <14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-113           { ; Sand Dollar #2 
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=cosxx/recip center-mag=-5.68434e-014/0/0.002759382 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=0000U00cm0m00w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>z\
+  Vzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<13>0DS0DS0ES0\
+  ER0DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<\
+  12>0m0<14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-114           { ; Sand Dollar #3 
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=abs/recip center-mag=1.7053e-013/-10.0209/0.002759382
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=0000U000K0m00w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>z\
+  Vzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<\
+  14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0\
+  <14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-115            { ; Sand Dollar #4
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=atanh/recip center-mag=-0.382106/-0.0337698/0.002982329
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=K00wwFcU0sqC<4>ib4g_2eX1cU0009<6>FFb<6>009mm0<3>AA0<2>GG7JJALLDNN\
+  GPPJ<7>eed<14>00m00i<9>SSgUUfXXf__ebbeeed<13>3Mx0Ly0Gy<4>0cyzjU<2>yqKxtG\
+  xwDwz9wz9<31>wdSS00<3>w00S06S00S70K000cJ<4>0S0<4>0dRUK9<2>NA4K72I31F00I4\
+  1<4>XLD009<13>A0l<23>40F80F<5>_04d03h01m00FG0<6>4R62S70U908F<6>G8D<2>95D\
+  63D42D10EcU0eX0<8>utD
+  }
+
+trm-116           { ; Sand Dollar #5
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=conj/recip
+  center-mag=5.68434e-013/-1.13687e-013/0.002986669 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=00000E<56>0Wd0Xd0Xe0Xe<46>00J0rwr00<4>q00q10q10q20q20<93>vuIvvIvu\
+  JvuJ<27>I20G00G00F0000E005<5>000
+  }
+
+trm-117            { ; Sand Dollar #6
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=flip/recip center-mag=-1.98952e-013/0.200418/0.002934272
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=K00wwGL50sqD<7>cU000A<6>FFc<6>00Amm0<3>AA0<14>eee<14>00n00j<9>SSh\
+  UUgXXg__fbbfeee<13>3My0Lz0Gz<4>0czzjV<2>yqLxtHxwEwzAwzA<31>wdTS00<3>w00S\
+  07S00S70K000cK<4>0S0<4>0dSUKA<5>F00<5>XLE00A<13>A0m<23>40G80G<8>m00FG0<7\
+  >2S80UA08G<6>G8E<2>95E63E42E10FcU0<9>utE
+  }
+
+trm-118            { ; Sand Dollar #7
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=recip/recip center-mag=-1.36633/-1.75147/0.007407671/1/90
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=000NJm<14>92u80v80t<11>00NEEDSSReed<79>00S<3>00e00h22h<2>BBgDDgEE\
+  g<13>eed<14>DYs<24>eed<35>22Y00X00Y<18>80vddc<18>OKm
+  }
+
+trm-119                { ; Sand Dollar #8
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=ident/recip
+  center-mag=0.000938967/-0.000626305/0.003088747/1/-90 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=00000000F000<33>111111333<16>mmm<21>333000000<20>111222000bVM<2>b\
+  VMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfcieb\
+  ifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-120            { ; Sand Dollar #9
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=exp/recip center-mag=0.563424/-0.00744211/0.00310165/1/90
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=000000050000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000b\
+  VM<2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>\
+  jfciebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-121            { ; Sand Dollar #10
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=trunc/recip center-mag=-1.59999/-4.80597/0.003047036
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=00000300F006<25>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z\
+  00z00y<59>002000000000001
+  }
+
+trm-122             {; Yow!!
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-09
+  center-mag=15.9219/1.31936/0.06323863/1/90 float=y maxiter=1483
+  inside=zmag outside=atan decomp=256
+  colors=00000K<5>00m<4>00P0m0<6>0F0<4>0m0K00<6>m00<7>F0066L<6>rrz<5>MMY00\
+  h<4>00K0H00O076J<23>jfe<3>zzh<9>00F00K00S<2>01S01S02S03S<13>0DS0DS0ES0ER\
+  0DQ<14>04B04B04C<2>14D<10>vug<22>MKRKIQGCO<3>00F00F<12>rrw<9>00FF00<7>m0\
+  0<6>F000m0<5>0F0<6>0m000K00F<4>00m<3>00F000000
+  }
+	
+
+trm-123            { ; Elegant Wing Nut
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=abs/recip center-mag=1.90958e-013/-0.185386/0.5878322
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-124            { ; Christmas Tree Sunrise
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=cabs/recip
+  center-mag=+0.00079399061030070/-0.00129374530279592/139.7155
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=0000U0<2>0w0K00<6>z00<7>n000A0k00<17>K00zG0<2>zz0<3>0z0<3>0zz<2>0\
+  GzVVz<3>zVzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0\
+  ES0ER0DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0\
+  F0<12>0m0<6>0Y0mo00T0<5>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-125            { ; Ping Pong Paddle w/balls
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=atanh/recip center-mag=-0.382106/-0.0337698/0.505803
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=K00wwF<6>ib4g_2eX1cU0009<6>FFb<6>009mm0<3>AA0<2>GG7JJALLDNNGPPJ<7\
+  >eed<14>00m00i<9>SSgUUfXXf__ebbeeed<13>3Mx0Ly0Gy<4>0cyzjU<2>yqKxtGxwDwz9\
+  wz9<31>wdSS00<3>w00S06S00S70K000cJ<4>0S0<4>0dRUK9<2>NA4K72I31F00I41<4>XL\
+  D009<13>A0l<23>40F80F<5>_04d03h01m00FG0<6>4R62S70U908F<6>G8D<2>95D63D42D\
+  10EcU0eX0<8>utD
+  }
+
+trm-126     { ; circlebrot
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  passes=t
+  center-mag=-19.05067271910013000/+0.03150855094765913/274994.1/1/-125
+  float=y maxiter=1500 decomp=128
+  colors=00007S0c00m00w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>z\
+  Vzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<\
+  14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0\
+  <14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+
+
+trm-127            { ; Full Moon at Midnight
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=conj/recip center-mag=-6.93889e-018/-3.54924e-015/57.97101
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=00000e00A0eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBD<2>GCBjjjGFBGGB<2>CGBBGBBGCBG\
+  DBGFBGG<2>BCGha3<6>utD
+  }
+
+trm-128   { ; Kite- based on "Globes"L.StClair/gallet-3-13 formula  t=00m36s
+            ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+            ; (c) 1996 Les St Clair <les_stclair@compuserve.com>
+            ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=les_pars.frm
+  formulaname=gallet-3-13 function=sqr/flip passes=1
+  center-mag=-0.00000469987715678/-0.00000459599391394/33788.4/1/-47.497
+  params=100/-0.2/33/-3 float=y maxiter=255 outside=atan periodicity=0
+  colors=@trmoe6.map cyclerange=0/255
+  }
+
+
+
+trm-129           { ; Pocket Watch
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=flip/recip center-mag=0/0.200418/0.6666667 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=K00wwG<9>cU000A<6>FFc<6>00Amm0<3>AA0<14>eee<14>00n00j<9>SShUUgXXg\
+  __fbbfeee<13>3My0Lz0Gz<4>0czzjV<2>yqLxtHxwEwzAwzA<31>wdTS00<3>w00S07S00S\
+  70K000cK<4>0S0<4>0dSUKA<5>F00<5>XLE00A<13>A0m<23>40G80G<8>m00FG0<7>2S80U\
+  A08G<6>G8E<2>95E63E42E10FcU0<9>utE
+  }
+
+
+
+trm-130            { ; Horned Cyclops
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=recip/recip center-mag=-0.0535115/0.0313152/0.9363296/1/90
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858 colors=@moodyblu.map
+  }
+
+
+
+trm-131                { ; Super Fractal
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=ident/recip
+  center-mag=0.000938967/-0.000626305/0.924153/1/-90 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<14>\
+  04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0<14\
+  >0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-132            { ; Fabrege Egg
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=exp/recip center-mag=0.563424/-0.00744211/1.7425/1/90
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+
+
+trm-133            { ; Spirograph Memories
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=trunc/recip center-mag=-9.99201e-016/-0.00350731/1.9611
+  float=y fillcolor=110 inside=bof60 outside=real decomp=256
+  rseed=15858
+  colors=000003<27>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000000001
+  }
+
+
+trm-134  {; mask of Hammurabi
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-08
+  center-mag=0.00130203/0.00962674/4.987316 float=y maxiter=1792
+  inside=bof60 outside=real invert=1/0/0 decomp=256
+  colors=0000U00000m00w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>z\
+  Vzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<13>0DS0DS0ES0\
+  ER0DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<\
+  12>0m0<14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-135            {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-13
+  function=cosxx/cosxx/cosxx
+  center-mag=0.28421/-0.0913078/0.4523145/1/90 float=y inside=bof60
+  invert=1/0/0 decomp=256
+  colors=00000G0010010U1<2>0w1K01<6>z01<27>K01zG1<2>zz1<3>0z1<3>0zz<2>0GzV\
+  Vz<3>zVzzz1<12>cU10U8<2>0w1B0b<12>zzi<9>00G00L00T<2>01T01T02T03T<15>0ET0\
+  ES0DR<14>04C04C04D<2>14Ezj1<8>zu1zw1zx1zz1zz1<25>zj1B8b<19>GAn<2>00G0F1<\
+  12>0m1<14>0F1BGEBGG00G<4>00n<2>00P
+  }
+
+trm-136            { ; ceremonial mask
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-01
+  center-mag=9.00139/0.0110194/0.5739662/1/90 float=y inside=bof60
+  outside=real
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<20>\
+  005zm0<12>SQ0<10>wm000U20N40G<2>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E\
+  8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFG\
+  BDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000
+  }
+
+trm-137            { ; Sand Dollar #11
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-02
+  function=abs center-mag=-6.5e-007/-0.701279/0.01358317
+  params=3.14159265358979/-3.14159265358979 float=y fillcolor=256
+  inside=bof60
+  colors=00000e0C00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+trm-138            { ; Sand Dollar #12
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-03
+  function=abs center-mag=-0.0108718/1.06581e-013/0.01405284
+  params=3.14159265358979/-3.14159265358979 float=y inside=bof60
+  invert=1/0/0 decomp=256
+  colors=00000eA000eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+trm-139            { ; Medallion
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-04
+  center-mag=-0.0247973/0/0.9604155/1/-90 float=y inside=bof60
+  invert=0.5/0/0 decomp=256
+  colors=kbR0U0<2>0w0K00Q00W00UUT<8>xxw<17>SSRR00<3>K00zG0<2>zz00z00p00f0<\
+  4>0z00jy0Vy0GyVVy<3>zVyzz0<12>cU00U6<2>0w0B0`<12>zzg<9>00E00J00R<2>01R01\
+  R02R03R<15>0ER0EQ0DP<14>04A04A04B<2>14Czj0<8>zu0zw0zx0zz0zz0<25>zj0B8`<1\
+  9>GAl<2>00E0F0<12>0m0<14>0F0BGCBGE00E<4>00l<3>00E000000
+  }
+
+trm-140            { ; Inv Offset
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-05
+  center-mag=-8.88178e-016/8.88178e-016/0.7967429 float=y inside=bof60
+  outside=real invert=0.5/0/0
+  colors=kbR0U0<2>0w0K00Q00W00UUU<8>xxx<17>SSSR00<3>K00zG0zV0zj00K0<3>0m0<\
+  3>0K00jz0Vz0GzVVz<3>zVzzz0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01\
+  S02S03S<15>0ES0ER0DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<1\
+  9>GAm<2>00F0F0<12>0m0<14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-141            { ; Starfish
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-06
+  center-mag=-4.44089e-015/-2.66454e-014/0.1825737/1/90 float=y
+  inside=bof60 outside=real decomp=256
+  colors=000ww0<8>KK0A00<7>c00b``<4>eee<13>AAR88Q55O22M00KRSf<4>YZf__f``ea\
+  aebceddeeee<6>MPbJMaHK`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZ\
+  A00<23>dddfffedd<18>A0003K<22>__c<12>00K<9>0CQ0DR2ES<13>eee<13>eeeeeedcc\
+  <10>TFFSDDP00<3>SSS<3>P0000P<7>PPP<6>00P
+  }
+
+trm-142            { ; Faucet Handle
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-07
+  center-mag=8.21565e-015/-6.55032e-015/0.7246377 float=y inside=bof60
+  outside=real invert=0.5/0/0 decomp=256
+  colors=000vvJvuKvuK<27>I21G00G00F0000F006<3>00200000000F<56>0We0Xe0Xf0Xf\
+  <46>00K0rxr00<4>q00q10q10q20q20<93>vuJ
+  }
+
+
+trm-143            { ; Maltese Cross
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-010
+  function=exp/log center-mag=-9.5444/7.10543e-015/0.01864931 float=y
+  inside=bof60 outside=atan rseed=15858 colors=@trmoe6.map
+  }
+
+trm-144            { ; Maltese Cross #2
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-010
+  function=recip/exp center-mag=-9.74322/2.11138e-010/0.01627605
+  float=y inside=bof60 outside=atan rseed=15858
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<93>vuJvvJvu\
+  KvuK<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-145            { ; dragonfly
+  reset=1960 type=formula formulafile=trmoe2.frm formulaname=trmoe-010
+  function=sqr/log center-mag=0.0912786/0.00823158/3.402184 float=y
+  inside=bof60 outside=atan invert=1/0/0
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }

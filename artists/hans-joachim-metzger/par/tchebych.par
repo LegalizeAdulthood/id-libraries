@@ -1,0 +1,109 @@
+;{
+;   Parameter file (uses tchebych.frm mostly)
+;}
+;
+
+
+J_Lagandre4 1      { ; J_Lagandre4 zoomed in
+  reset type=formula formulafile=tchebych.frm
+  formulaname=J_Lagandre4 corners=-1.830262/1.161745/-1.115761/1.128261
+  potential=256/2000/4 colors=@topo.map
+  }
+
+J_TchebC3          { ; J_TchebC3 1 (0.145,0,0,0)
+  reset type=formula formulafile=tchebych.frm
+  formulaname=J_TchebychevC3 corners=-0.259458/0.284549/0.278406/0.686412
+  params=0.145 potential=256/2000/4 colors=@topo.map
+  }
+
+J_TchebC3-1        { ; J_TchebC3 2 (0.145,0,0,0)
+  reset type=formula formulafile=tchebych.frm
+  formulaname=J_TchebychevC3
+  corners=0.1274425/0.2097883/0.4195771/0.5912387/0.0746809/0.4899126
+  params=0.145 potential=256/2000/4 colors=@topo.map
+  }
+
+rainbow            {
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevC5
+  corners=-2.0/2.000007/-1.500002/1.5 params=0.12 inside=bof60 decomp=256
+  }
+
+maintain           { ; tchebychevC5 turned
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevC5
+  corners=0.262213/-0.262211/1.161177/0.767863 params=0.12 inside=bof60
+  decomp=256
+  colors=CCCCosCqsCss<9>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEs\
+  E<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<17>Cm\
+  s
+  }
+
+red-mountain       {
+  reset type=formula formulafile=tchebych.frm formulaname=J_TchebychevU5
+  corners=-0.164285/0.164282/-0.123208/0.123212 params=-0.45/0.44
+  maxiter=256 inside=bof60 colors=@volcano.map
+  }
+
+j_lagerre1         { ; j_lagerre 3 met cont potentiaal
+  reset type=formula formulafile=tchebych.frm formulaname=J_Laguerre3
+  corners=0.682238/1.616713/0.900764/1.601596 params=-0.12/0.56
+  maxiter=256 potential=255/2000/5 finattract=y colors=@landscap.map
+  }
+
+mts3-1             { ; m-tchebychevS3
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevS3
+  corners=-2.0/2.000005/-1.500014/1.5 params=-0.023/0.34 maxiter=256
+  inside=bof60 decomp=255 finattract=y colors=@neon.map
+  }
+
+hail               {
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevT5
+  corners=-2.0/2.000005/-1.500014/1.5 params=0.15/-0.15 inside=0
+  }
+
+hail2              {
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevT5
+  corners=-0.0833434/-0.0393062/0.0707312/0.1037643 params=0.15/-0.15
+  inside=0
+  }
+
+mtu3_1             { ; dendrite like structures
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevU3
+  corners=0.13200682/0.13951755/0.10646808/0.11209256 params=0.45/-0.15
+  inside=0 colors=@topo.map
+  }
+
+folds1             { ; j_l3
+  reset type=formula formulafile=tchebych.frm formulaname=J_Laguerre3
+  corners=2.8288057/2.9163843/0.1209986/0.3260441/2.7619116/0.2101857
+  params=0.15 inside=0 colors=@goodega.map
+  }
+
+folds2             { ; j_tc5
+  reset type=formula formulafile=tchebych.frm formulaname=J_TchebychevC5
+  corners=0.02572495/0.02777916/0.29965341/0.30119515 params=0.56 inside=0
+  colors=@goodega.map
+  }
+
+folds3             { ; j_tc5
+  reset type=formula formulafile=tchebych.frm formulaname=J_TchebychevC5
+  corners=0.026907128/0.027157742/0.300684284/0.300872375 params=0.56
+  float=y inside=0 colors=@goodega.map
+  }
+
+hoorn              { ; mtu3
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevU3
+  corners=-0.4338863/-0.3794925/-0.0561094/-0.0153106 params=0.61/0.01
+  inside=bof61 colors=@goodega.map
+  }
+
+circles            { ; mandel with tricks
+  reset type=mandel corners=-0.39317/0.15083/0.53504/0.94304 inside=bof60
+  outside=mult colors=@volcano.map
+  }
+
+;
+; -------------------------------------------------------------------------
+;
+;Have fun
+;
+;The graphical Gnome (rdb@ktibv)

@@ -1,0 +1,932 @@
+
+FRM:tri-mandel-2 { ; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
+               ; Thanks to Kerry Mitchell for the idea!
+               ; real(p1) = bailout (1024 recommended)
+               ; imag(p1) must be different from 0 (>=1 recommended)
+   ; This formula must be used with decomp = 256 and periodicity = 0
+   ;
+   c = z1 = pixel , b = mz1 = cabs(z1) , summ = iter = 1
+   b1 = abs(real(p1)) , f = b1^0.1
+   b2 = b1*f , b3 = b2*f , b4 = b3*f , b5 = b4*f , b6 = b5*f
+   b7 = b6*f , b8 = b7*f , b9 = b8*f , b10 = b9*f , b11 = b10*f
+   iter1 = iter2 = iter3 = iter4 = iter5 = iter6 = iter7       \
+         = iter8 = iter9 = iter10 = summ_tot = iter_tot = 0
+   k = imag(p1) * (0.0,6.28319530718)
+   :
+   iter = iter + 1 , a = mz1 * mz1
+   z1 = z1 * z1 + c , mz1 = cabs(z1) , a_b = abs(a - b)
+   summ = summ + (mz1 - a_b) / (a+b - a_b)
+   IF (mz1 > b1)
+    IF (iter1==0)
+     iter1 = iter
+     iter_tot = iter_tot + iter1 , summ_tot = summ_tot + summ
+    ENDIF
+    IF (mz1 > b2)
+     IF (iter2==0)
+      iter2 = iter
+      iter_tot = iter_tot + iter2 , summ_tot = summ_tot + summ
+     ENDIF
+     IF (mz1 > b3)
+      IF (iter3==0)
+       iter3 = iter
+       iter_tot = iter_tot + iter3 , summ_tot = summ_tot + summ
+      ENDIF
+      IF (mz1 > b4)
+       IF (iter4==0)
+        iter4 = iter
+        iter_tot = iter_tot + iter4 , summ_tot = summ_tot + summ
+       ENDIF
+       IF (mz1 > b5)
+        IF (iter5==0)
+         iter5 = iter
+         iter_tot = iter_tot + iter5 , summ_tot = summ_tot + summ
+        ENDIF
+        IF (mz1 > b6)
+         IF (iter6==0)
+          iter6 = iter
+          iter_tot = iter_tot + iter6 , summ_tot = summ_tot + summ
+         ENDIF
+         IF (mz1 > b7)
+          IF (iter7==0)
+           iter7 = iter
+           iter_tot = iter_tot + iter7 , summ_tot = summ_tot + summ
+          ENDIF
+          IF (mz1 > b8)
+           IF (iter8==0)
+            iter8 = iter
+            iter_tot = iter_tot + iter8 , summ_tot = summ_tot + summ
+           ENDIF
+           IF (mz1 > b9)
+            IF (iter9==0)
+             iter9 = iter
+             iter_tot = iter_tot + iter9 , summ_tot = summ_tot + summ
+            ENDIF
+            IF (mz1 > b10)
+             IF (iter10==0)
+              iter10 = iter
+              iter_tot = iter_tot + iter10 , summ_tot = summ_tot + summ
+             ENDIF
+             IF (mz1 > b11)
+              iter_tot = iter_tot + iter , summ_tot = summ_tot + summ
+              z = exp (summ_tot * k / iter_tot)
+             ENDIF
+            ENDIF
+           ENDIF
+          ENDIF
+         ENDIF
+        ENDIF
+       ENDIF
+      ENDIF
+     ENDIF
+    ENDIF
+   ENDIF
+   mz1 <= b11
+   }
+
+trim000            { ; Universe - others are zooms within it. t=  0:20:12.21
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:36
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.865903/-0.00337691/0.2629067 params=1024/4 float=y
+  maxiter=4095 inside=0 outside=atan logmode=fly periodicity=0
+  colors=F73U0B<2>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8\
+  bcAdcDed<11>tupxwrzyt<7>ylDxj2wiK<3>vc4ua0ub3<3>vhJviNvjPwkR<7>zwu<13>wC\
+  M<7>H84<12>hMB<14>H84KB3<7>zk0<3>0kk<2>WgD<3>CXF<7>KSDLSDMRCOQBORAOPA<3>\
+  OE6NB5PC6<7>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<15>zE6<2>lNCgQFeNDbJA<12>F730\
+  00000<8>R0A
+  }
+
+trim001            { ; .                                      t=  1:01:22.44
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:36
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.130074/0.954668/3.057055 params=1024/4 float=y
+  maxiter=4095 inside=0 outside=atan logmode=fly periodicity=0
+  colors=F73nfP<2>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrz\
+  yt<7>ylDxj2wiK<3>vc4ua0ub3<3>vhJviNvjPwkR<7>zwu<13>wCM<7>H84<12>hMB<14>H\
+  84KB3<7>zk0<3>0kk<2>WgD<3>CXF<7>KSDLSDMRCOQBORAOPA<3>OE6NB5PC6<7>eLAhMBi\
+  OD<3>nVJ<3>vdByg8yh5yi3<15>zE6<2>lNCgQFeNDbJA<12>F73000000<12>b0Ee0Ff5I<\
+  10>zzs<3>pjW
+  }
+
+trim002            { ; .                                      t=  1:09:48.92
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:37
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.16116934484158100/+1.03378649483002300/61.1411
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=F73ytmyuqzwu<13>wCM<7>H84<12>hMB<14>H84KB3<7>zk0<3>0kk<2>WgD<3>CX\
+  F<7>KSDLSDMRCOQBORAOPA<3>OE6NB5PC6<7>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<15>z\
+  E6<2>lNCgQFeNDbJA<12>F73000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P\
+  60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<7>ylDxj2wiK<3>vc4ua0ub3<3>vhJviN\
+  vjPwkR<4>xri
+  }
+
+trim003            { ; .                                      t=  0:16:58.70
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:37
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.05370033260534103/+0.99340900700641830/61.1411
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000<43>eJRfKSeLS<29>QccPccPdcPdc<46>yvszwtzws<49>ud6tc4tc4<74>nOI
+  }
+
+trim004            { ; .                                      t=  0:11:06.01
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:38
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.25218992471467410/+0.76623085556921630/193.4845
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=Jdt<22>xnrzoqzoo<13>sgErfBreAre9qd8<20>a23`02`02<8>_39_3A_3AZ3A<6\
+  1>000424<2>111000010<29>3VI4XJ4XL<3>4TT5SV5TW<15>8dj<17>zwz<29>wmbzzt<5>\
+  ywn
+  }
+
+trim005            { ; .                                      t=  1:21:35.79
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:38
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.57045/-0.00337691/3.057055 params=1024/4 float=y
+  maxiter=4095 inside=0 outside=atan logmode=fly periodicity=0
+  colors=0Cf5vz<2>6dU<8>FB3PG3<6>zk0<3>0kk<2>WgD<3>CXF<7>KSDLSDMRCOQBORAOP\
+  A<3>OE6NB5PC6<7>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<5>7E7SE7<3>LA5<3>0\
+  00000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDe\
+  d<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<7>H84JA7MDA<8>CRb<4>7pv
+  }
+
+trim006            { ; .                                      t=  8:38:59.33
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:39
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.880175/0.19648/5.258134 params=1024/4 float=y
+  maxiter=4095 inside=0 outside=atan logmode=fly periodicity=0
+  colors=INdRT0<6>QS0PS0PS0PR0PR0OR0<32>FF0FF0FF0FF0GE0<49>X00000WM6<21>ye\
+  CzfCyeC<21>VL6``U<22>ssgtthssg<21>``UUU0<22>yn_zo`ynZ<20>VV2UU0UU0<9>ST0
+  }
+
+trim007            { ; .                                      t=  9:06:35.72
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:39
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=+0.26499498246816660/+0.00001733273091259/90.2839
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=IZkp_A<15>VL6``U<22>ssgtthssg<21>``UUU0<22>yn_zo`ynZ<20>VV2UU0UU0\
+  <14>QT0QT0QT0QS0PS0PS0<35>FF0FF0FF0FF0GE0<49>X00000WM6<21>yeCzfCyeC<4>r`\
+  A
+  }
+
+trim008            { ; .                                      t=  4:29:52.84
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:40
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.76356263849029400/-0.00000283387191944/56.81818
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0Cf8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim009            { ; .                                      t=  3:44:14.29
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:40
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.72041798879056320/+0.24628589950227250/52.58134
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04f8tz8vz9yz<3>Qpr<21>884<15>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<14>AB5\
+  4C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000301602903<13>z\
+  FP<5>zihzolztozzsxvm<6>fV7cQ0`O0<2>SI0<4>QA0Q80R91<29>xwrzytzxo<3>zqU<14\
+  >6hz<3>7qz
+  }
+
+trim010            { ; .                                      t=  2:01:42.66
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:41
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74915237237077000/+0.01197514864157317/465.7228
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04z8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim011            { ; .                                      t=  0:24:37.55
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:41
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74826072702829500/+0.01174592293700123/1750.837
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04z8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim012            { ; .                                      t=  0:20:35.88
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:42
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74859017028736200/+0.01280251016901251/1951.986
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04z8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim013            { ; .                                      t=  1:11:22.48
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:42
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75183472230388700/+0.01134827221333442/26461.52
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zZkn<5>yXa<5>wCM<2>gBGbADWAB<2>884<15>IYPJ_RJ`R<6>LhM<12>wt1<12\
+  >DVF<14>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12\
+  >b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tup\
+  xwrzyt<4>zqU<14>6hz<6>9yz<4>Vmp
+  }
+
+trim014            { ; .                                      t=  0:13:36.13
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:43
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74838243136505400/+0.01282574605967955/95218.82
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04z8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim015            { ; .                                      t=  0:15:45.72
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:43
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74838564954725000/+0.01282895033779696/1487794
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zN97H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk0<11>DXF<\
+  2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3\
+  >000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdc\
+  Ded<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<5>S99
+  }
+
+trim016            { ; .                                      t=  0:36:49.22
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:44
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.72603185231488570/+0.25037821245736760/305.7055/1/-37.499
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04f8tz8vz9yz<3>Qpr<21>884<15>IYPJ_RJ`R<6>LhM<12>wt1<12>DVF<14>AB5\
+  4C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000301602903<13>z\
+  FP<5>zihzolztozzsxvm<6>fV7cQ0`O0<2>SI0<4>QA0Q80R91<29>xwrzytzxo<3>zqU<14\
+  >6hz<3>7qz
+  }
+
+trim017            { ; .                                      t=  1:46:39.20
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:44
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75186805217083800/+0.01133731180942558/264615.2/1/-80
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=040ts3wt1<12>DVF<14>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE\
+  7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc\
+  <6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<2>gBGbADWAB<2>\
+  884<15>IYPJ_RJ`R<6>LhM<10>qr5
+  }
+
+trim018            { ; .                                      t=  3:58:57.00
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:45
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75186769356320600/+0.01133720377990318/1272189/1/-154.999
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=040ymK<14>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<9>xtozzszzs<54>zq\
+  U<14>6hz<6>9yz<11>yXa<5>wCM<2>gBGbADWAB<2>884<15>IYPJ_RJ`R<6>LhM<12>wt1<\
+  12>DVF<14>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<4>ymH
+  }
+
+trim019            { ; .                                      t= 17:56:20.21
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:45
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75186754024650400/+0.01133706942032851/9017571/1/-145
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=00dDQ5<13>KfKLhMOiL<11>wt1<5>ls1js1fr1bq1Zp1<4>2f0<2>2R03L12H11E1\
+  0A0CD1PG2aK4lO6wS8<2>zz9<10>vui<43>632000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ\
+  0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz\
+  <11>yXa<5>wCM<2>gBGbADWAB<2>884<6>CJDDO3DP4
+  }
+
+trim020            { ; .                                      t=  0:33:35.70
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:46
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74852016222228800/+0.01160086483627486/27356.84/1/-35
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04z8ZO<6>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU7aR
+  }
+
+trim021            { ; .                                      t=  0:30:38.69
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:46
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74850361981375700/+0.01190121618854545/20358.58/1/65
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zCLC<2>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>\
+  vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0\
+  <2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>\
+  yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<4>BPF
+  }
+
+trim022            { ; .                                      t=  0:25:20.50
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:47
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74822022979049000/+0.01152813716307720/11081.25/1/40
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zyUZ<4>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk\
+  0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE\
+  7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc\
+  <6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa
+  }
+
+trim023            { ; .                                      t=  0:23:37.75
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:47
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74818923844267000/+0.01184530680711219/11081.25
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zxNU<2>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk\
+  0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE\
+  7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc\
+  <6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXayUZxQX
+  }
+
+trim024            { ; .                                      t=  0:33:11.10
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:48
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75079457539912000/+0.01122676253266213/9314.455
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zfx0<10>G84<2>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P6\
+  0<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<7\
+  >H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk0<11>DXF<2>DUEDTEDRDD\
+  QC<10>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz
+  }
+
+trim025            { ; .                                      t=  0:26:14.65
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:48
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75020131007931500/+0.01180275379114303/4489.567
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=04zG74<9>_j1bn0fhBjaNoVZ<5>zzs<4>nfPkbJi`H<6>SH0<5>P60<2>G00<2>7F\
+  O<4>9_dAdhCeh<17>zyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<7>H84JA7MDA<8>CRb<2\
+  >9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk0<11>DXF<2>DUEDTEDRDDQC<10>AB54C5<8>hMB\
+  <4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<3>C04E34
+  }
+
+trim026            { ; .                                      t=  4:03:14.36
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:49
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.74851879374772500/+0.01160092982581437/131523.2/1/-35
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=S007pv5vz<2>6dU<8>FB3<7>zk0<10>IZD<6>DLDCJCCJC<6>BE7BD6AB54C5<8>h\
+  MB<4>nVJpXHr_F<5>xpFzsFztJ<6>zzs<3>zzxzzzxwv<11>SE7<3>LA5<3>000000<12>b0\
+  Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwr\
+  zyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<7>H84JA7MDA<8>CRb<3>8kr
+  }
+
+trim027            { ; .                                      t=  2:57:20.09
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:49
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.75017456473084200/+0.01163816129385736/28414.98
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0czF00<3>MI2ON3QR2<4>_j1bn0fhBjaNoVZ<6>xvvzzzyxw<5>slbqiZoeV<6>bH\
+  0<2>RB3M95I76D58AAG7FO<4>9_dAdhCeh<17>zyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wC\
+  M<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3<7>zk0<11>DXF<2>DUEDTED\
+  RDDQC<10>AB54C5<8>hMB<4>nVJ<3>vdByg8yh5yi3<20>zzz<6>SE7<3>LA5<3>000000<3\
+  >C04
+  }
+
+trim028            { ; .                                      t=  0:04:46.18
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:50
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.96416418762486200/-0.00010306375069308/35.54715
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfIjs<2>6hz<6>9yz<11>yXa<5>wCM<7>H84JA7MDA<8>CRb<2>9en8kr7pv5vz5\
+  po5jd6dU<8>FB3PG3<6>zk0<3>0kk<2>WgD<3>CXF<7>KSDLSDMRCOQBORAOPA<3>OE6NB5P\
+  C6<7>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<5>7E7SE7<3>LA5<3>000000<12>b0\
+  Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<11>tupxwr\
+  zyt<4>zqU<10>Mkq
+  }
+
+trim029            { ; .                                      t=  0:05:18.56
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:50
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.95238842062927100/-0.00010306375069308/355.4715
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfDQ_CRb<2>9en8kr7pv5vz5po5jd6dU<8>FB3PG3<6>zk0<3>0kk<2>WgD<3>CX\
+  F<7>KSDLSDMRCOQBORAOPA<3>OE6NB5PC6<7>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>z\
+  zz<5>7E7SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2\
+  >G00<4>0Qc<6>8bcAdcDed<11>tupxwrzyt<4>zqU<14>6hz<6>9yz<11>yXa<5>wCM<7>H8\
+  4JA7MDA<6>EOW
+  }
+
+trim030            { ; .                                      t=  0:36:05.92
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:51
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94070648444639300/-0.00010306375069308/355.4715
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfN50<3>O11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ\
+  3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<\
+  3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>z\
+  zs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6Zc
+  }
+
+trim031            { ; .                                      t=  2:16:44.94
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:51
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.95371490498713800/-0.00000033610335885/45859.08
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfynN<13>zzz<5>7E7SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ\
+  0`O0<2>SI0SH0SF0<30>ca_ca`dbaecb<19>wvwxwyzxz<21>yLUxJSxGPwCM<2>gBG<4>11\
+  0<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5\
+  <8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<5>ymK
+  }
+
+trim032            { ; .                                      t=  0:26:11.75
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:52
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.95370831547727700/+0.00001604289765937/917181.6
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfymH<15>zzz<5>7E7SE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ\
+  0`O0<2>SI0<6>P60<2>G00<4>0Qc<6>8bcAdcDed<4>Wli<27>xwyzxzzwy<20>yLUxJSxGP\
+  wCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R\
+  `2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<3>ylE
+  }
+
+trim033            { ; .                                      t=  1:35:46.34
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:52
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.95370794903974300/+0.00001547373893573/7878484/1/19.999
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0Cf000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc1Rc\
+  2Tc<52>xyyzzzzvw<10>wCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>\
+  zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>z\
+  zz<5>7E7SE7<3>LA5<3>000
+  }
+
+trim034            { ; .                                      t=  3:31:56.92
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:53
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94133271129044600/+0.00075228858622834/1269.541
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfN20O11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4\
+  >`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>n\
+  VJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<\
+  7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6ZcN50N40N30
+  }
+
+trim035            { ; .                                      t=  1:19:34.86
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:53
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94095701271633900/+0.00092813115758758/6103.563
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=0CfXGG<23>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q\
+  0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<\
+  3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>f\
+  V7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6ZcN50<3>O11<6>WEE
+  }
+
+trim036            { ; .                                      t=  1:03:59.51
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:54
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94096247742287200/+0.00100355983187020/26537.23
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CfXGG<23>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q\
+  0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<\
+  3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>f\
+  V7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6ZcN50<3>O11<6>WEE
+  }
+
+trim037            { ; .                                      t=  0:47:22.38
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:54
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94137803157298600/+0.00063154069104696/28918.93
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CfN30N20O11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ\
+  3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<\
+  3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>z\
+  zs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6ZcN50N40
+  }
+
+trim038            { ; .                                      t=  0:49:05.72
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:55
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94046262754723100/+0.00063817775217557/37560.39
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CkSF0<3>Q80P60M40J20G00<2>7FOE00<5>L40N50N40<2>O11<31>xvxzxzzwy<\
+  20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_\
+  d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNH\
+  MJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0SH0
+  }
+
+trim039            { ; .                                      t=  0:25:57.37
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:55
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94104424036201100/+0.00085685433989809/95368.17
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CfXGG<23>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q\
+  0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<\
+  3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>f\
+  V7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc<4>6ZcN50<3>O11<6>WEE
+  }
+
+trim040            { ; .                                      t=  1:01:49.90
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:56
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044454830421900/+0.00066296029460159/784600.3/1/10
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=5CkJ20G00<2>7FOE00<5>L40N50N40<2>O11<31>xvxzxzzwy<20>yLUxJSxGPwCM\
+  <2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<\
+  9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>\
+  000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60M40
+  }
+
+trim041            { ; .                                      t= 13:18:08.38
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:56
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044948590483700/+0.00064577186190973/307872
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CkG10<3>L40N50N40<2>O11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110\
+  <12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<\
+  8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0\
+  Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<2>7FOE00F00
+  }
+
+trim042            { ; .                                      t= 21:51:15.46
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:57
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044948590483700/+0.00063926482011751/307872
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CkG10<3>L40N50N40<2>O11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110\
+  <12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<\
+  8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0\
+  Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<2>7FOE00F00
+  }
+
+trim043            { ; .                                      t=  9:34:15.60
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:57
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.95370792436210600/+0.00001552595130237/3.914876e+007/1/-5
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0Cf000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<6>P60<2>G00<4>0Qc1Rc\
+  2Tc<52>xyyzzzzvw<10>wCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>\
+  zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>z\
+  zz<5>7E7SE7<3>LA5<3>000
+  }
+
+trim044            { ; .                                      t=  2:14:29.99
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:57
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044979649680100/+0.00064654031847327/1789954/1/32.499
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=0CkQA0Q80P60<2>G00<2>7FOE00<5>L40N50N40<2>O11<31>xvxzxzzwy<20>yLU\
+  xJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0V\
+  b1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7\
+  <3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<3>RC0
+  }
+
+trim045            { ; .                                      t= 12:54:44.36
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:58
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044468030927000/+0.00066276654399993/1.569201e+007/1/37.\
+  499 params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=5CkO11<31>xvxzxzzwy<20>yLUxJSxGPwCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q\
+  0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R`2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<\
+  3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5<3>000000<12>b0Ee0Ff5I<10>zzs<7>f\
+  V7cQ0`O0<2>SI0<6>P60<2>G00<2>7FOE00<5>L40N50N40N30N20
+  }
+
+trim046            { ; .                                      t=  3:37:56.11
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:58
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-1.94044470716689000/+0.00066281274105539/1.839367e+008/1/37.\
+  5 params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=5`TP60<2>G00<2>7FOE00<5>L40N50N40<2>O11<31>xvxzxzzwy<20>yLUxJSxGP\
+  wCM<2>gBG<4>110<12>ES3FV3GZ3<4>`q0<6>DI9EF6FB3PG3<6>zk0<12>_d0Yc0Vb1Ta1R\
+  `2<9>PH5OE6NB5<8>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3<20>zzz<4>HNHMJCSE7<3>LA5\
+  <3>000000<12>b0Ee0Ff5I<10>zzs<7>fV7cQ0`O0<2>SI0<5>Q80
+  }
+
+trim047            { ; .                                      t=  6:14:48.37
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:59
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.497988/0.542265/5.258134 params=1024/4 float=y
+  maxiter=4095 inside=0 outside=atan logmode=fly periodicity=0
+  colors=000wts<7>qfq<2>fS_bNTZINVDGVDG<46>ua0<11>xriytmyuqzwuxus<32>iODhM\
+  BfLB<13>H84F73FB7<9>jaR<4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLA\
+  hMBiOD<3>nVJ<3>vdByg8yh5yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6\
+  >xtozzszysywsxus
+  }
+
+trim048            { ; .                                      t=  0:16:31.38
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:26:59
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.56078762089273000/+0.64245986158296390/33.27933
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000zzs<11>qfq<2>fS_bNTZINVDGVDG<46>ua0<11>xriytmyuqzwuxus<32>iODh\
+  MBfLB<13>H84F73FB7<9>jaR<4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eL\
+  AhMBiOD<3>nVJ<3>vdByg8yh5yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<\
+  6>xto
+  }
+
+trim049            { ; .                                      t=  0:23:55.37
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:00
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.55508017420412310/+0.62403587229528310/159.9968/1/62.5
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000zzs<11>qfq<2>fS_bNTZINVDGVDG<46>ua0<11>xriytmyuqzwuxus<32>iODh\
+  MBfLB<13>H84F73FB7<9>jaR<4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eL\
+  AhMBiOD<3>nVJ<3>vdByg8yh5yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<\
+  6>xto
+  }
+
+trim050            { ; .                                      t=  0:27:30.09
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:00
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.55191002976552950/+0.62507861098314450/1599.968/1/62.5
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000O00<12>VDEWEGXFF<43>ua0<11>xriytmyuqzwuxus<32>iODhMBfLB<13>H84\
+  F73FB7<9>jaR<4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nV\
+  J<3>vdByg8yh5yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6>xtozzszys<\
+  4>vps
+  }
+
+trim051            { ; .                                      t=  0:26:07.08
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:01
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.55140469707161430/+0.62448031180902430/13114.49/1/62.499
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000iR8<20>ua0<11>xriytmyuqzwuxus<32>iODhMBfLB<13>H84F73FB7<9>jaR<\
+  4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5\
+  yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6>xtozzszys<9>rhrqfqnak<4\
+  >VDG<25>hQ8
+  }
+
+trim052            { ; .                                      t=  1:38:39.09
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:01
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.55141042913274710/+0.62447947834589170/262289.8/1/85
+  params=1024/4 float=y maxiter=16383 inside=0 outside=atan
+  logmode=fly periodicity=0
+  colors=000wrp<29>iODhMBfLB<13>H84F73FB7<9>jaR<4>VhG<4>SZF<2>0W0<3>NLCMJC\
+  LGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3xk0<2>xlCymGymKznOzmL<7\
+  >zE6vH8<35>kGOjFPlLS<6>xtozzszys<9>rhrqfqnak<4>VDG<44>s_2s_1t`1ua0ub3<12\
+  >yuqzwuxusxtrxsq
+  }
+
+trim053            { ; .                                      t=  0:57:02.25
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:02
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.53445613213237660/+0.66671934656761760/171.5429
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000mV5<12>ua0<11>xriytmyuqzwuxus<32>iODhMBfLB<13>H84F73FB7<9>jaR<\
+  4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5\
+  yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6>xtozzszys<9>rhrqfqnak<4\
+  >VDG<33>mU5
+  }
+
+trim054            { ; .                                      t=  1:16:59.83
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:02
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.59711273569133030/+0.66331098917307940/244.701
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000wlU<5>yuqzwuxus<32>iODhMBfLB<13>H84F73FB7<9>jaR<4>VhG<4>SZF<2>\
+  0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5yi3xk0<2>xlCym\
+  GymKznOzmL<7>zE6vH8<2>vH9<8>Ngj<98>tb1ua0ub3<5>wkR
+  }
+
+trim055            { ; .                                      t=  0:35:28.96
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:03
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.59284475820403990/+0.61823325722258690/159.9968
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000rZ2<3>ua0<11>xriytmyuqzwuxus<32>iODhMBfLB<13>H84F73FB7<9>jaR<4\
+  >VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5y\
+  i3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6>xtozzszys<9>rhrqfqnak<4>\
+  VDG<42>rZ2
+  }
+
+trim056            { ; .                                      t=  0:21:40.59
+                     ; on a P166 at 1600x1200  Jul 27, 1997  15:27:03
+                     ; Image Copyright 1997 by Lee H. Skinner ver=1961
+                     ; Formula by Sylvie Gallet
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=tri-mandel-2 passes=1
+  center-mag=-0.53763408137455160/+0.62328688983694110/125.1103/1/-147.499
+  params=1024/4 float=y maxiter=4095 inside=0 outside=atan logmode=fly
+  periodicity=0
+  colors=000YGE<40>ua0<11>xriytmyuqzwuxus<32>iODhMBfLB<13>H84F73FB7<9>jaR<\
+  4>VhG<4>SZF<2>0W0<3>NLCMJCLGBIE9FB7000F73<12>eLAhMBiOD<3>nVJ<3>vdByg8yh5\
+  yi3xk0<2>xlCymGymKznOzmL<7>zE6vH8<35>kGOjFPlLS<6>xtozzszys<9>rhrqfqnak<4\
+  >VDG<5>YGF
+  }
+

@@ -207,3 +207,51 @@ acc_man_mod {; Modified Sylvie Gallet formula
   ;SOURCE: test.frm
 }
  
+Karts          { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
+                 ; Sun, 15 Feb 2004 04:04:22
+                 ; 
+  z = fn1(pixel), chaw=fn2(pixel), ex=P1, iter=0, t=P2
+  if(t==(0,0))
+      t=|sqrt(0,2)|
+  endif:
+  imod=(iter/ 16 -trunc(iter/ 16 ))* 16 ,
+  ; imod=remainder(num_notes/iter)
+  iter=iter+1,
+  if(imod== 0 )
+      see=( 2.04347825050354000, 3 )
+  elseif(imod== 1 )
+      see=( 1.00000000000000000, 2 )
+  elseif(imod== 2 )
+      see=( 1.60869562625885000, 11 )
+  elseif(imod== 3 )
+      see=( 1.26086962223053000, 7 )
+  elseif(imod== 4 )
+      see=( 1.34782612323761000, 3 )
+  elseif(imod== 5 )
+      see=( 1.26086962223053000, 2 )
+  elseif(imod== 6 )
+      see=( 1.34782612323761000, 11 )
+  elseif(imod== 7 )
+      see=( 1.00000000000000000, 7 )
+  elseif(imod== 8 )
+      see=( 1.34782612323761000, 3 )
+  elseif(imod== 9 )
+      see=( 1.26086962223053000, 2 )
+  elseif(imod== 10 )
+      see=( 1.78260874748230000, 11 )
+  elseif(imod== 11 )
+      see=( 2.04347825050354000, 7 )
+  elseif(imod== 12 )
+      see=( 1.86956524848938000, 3 )
+  elseif(imod== 13 )
+      see=( 2.04347825050354000, 2 )
+  elseif(imod== 14 )
+      see=( 1.00000000000000000, 11 )
+  elseif(imod== 15 )
+      see=( 1.34782612323761000, 7 )
+  endif,
+  z=z^ex +chaw
+  chaw=chaw/see +z
+  |z| <= t
+}
+ 

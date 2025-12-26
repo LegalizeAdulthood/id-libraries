@@ -121,3 +121,59 @@ M_Lagandre3 {
   ;SOURCE: tchebych.frm
 }
  
+J_TchebychevC5 { 
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z-5)+5)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevC5 { 
+  c = pixel, z = P1:
+  z = c*z*(z*z*(z*z-5)+5)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+J_TchebychevU5 {    
+  c = pixel, z = P1:
+  z = c*z*(z*z*(32*z*z-32)+6)
+  |z|<100
+  ;SOURCE: tchebych.frm
+}
+ 
+M_TchebychevC5 {
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(z*z-5)+5)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+M_TchebychevC5 {
+  c = P1, z = Pixel:
+  z = c*z*(z*z*(z*z-5)+5)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+M_TchebychevT5 {
+  c = P1, z = Pixel:
+  z = c*(z*(z*z*(16*z*z-20)+5))
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+M_TchebychevT5 {
+  c = P1, z = Pixel:
+  z = c*(z*(z*z*(16*z*z-20)+5))
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 
+M_TchebychevU3 {
+  c = P1, z = Pixel:
+  z = c*z*(8*z*z-4)
+  |z|<100
+  ;SOURCE: fractint.frm
+}
+ 

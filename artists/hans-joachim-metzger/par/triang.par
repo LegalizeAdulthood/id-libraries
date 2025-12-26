@@ -1,0 +1,83 @@
+comment { ; narrative copyright Kerry Mitchell 11feb98
+
+Triangle
+
+The triangle method is based on a simple characteristic of complex
+numbers:  the magnitude of the sum of two complex numbers, |a+b|,
+is strictly limited to a range determined by a and b:
+
+|a+b| >= ||a| - |b||, and
+|a+b| <= |a| + |b|,
+
+where |z| is the square root of the sum of the squares of the
+components, not the sum of the squares, as in Fractint.  The
+extremes of this inequality are easily seen with a few examples.
+If a=1 and b=2, then:
+
+|a| = 1, |b| = 2;
+||a| - |b|| = |1-2| = |-1| = 1;
+|a| + |b| = 1+2 = 3;
+|a+b| = |3| = 3;
+1 <= 3 <= 3.
+
+The upper bound occurs when both addends have the same polar angle.
+The geometric interpretation of this is that the complex numbers add
+up, and the length of the sum is simply the sum of the individual
+lengths.
+
+The lower bound occurs when the polar angles of the complex numbers
+differ by 180 degrees; the two numbers are diametrically opposed.
+Then, the length of the sum is the difference of the lengths.  For
+example, if a=3i and b=-5i, then:
+
+|a| = 3, |b| = 5;
+||a| - |b|| = |3-5| = |-2| = 2;
+|a| + |b| = 3 + 5 = 8;
+|a+b| = |-2i| = 2;
+2 <= 2 <= 8.
+
+In general, the length of the sum is somewhere inbetween, and can be
+thought of in terms of a triangle, which is how the inequality gets
+its name.  If |a| is the length of one side of a triangle, and |b|
+is the length of the second side, then |a+b| is the length of the
+third side, and lies somewhere within the range shown above.
+
+Back to fractals.  The two numbers of interest are z^2 and c.  Given
+z (the previous iterate) and c (the Mandelbrot or Julia parameter),
+the range for the magnitude of the new iterate can then be determined.
+With this range, the magnitude of the new iterate can be rescaled to
+a fraction between 0 and 1 inclusive:
+
+min = ||z_old^2| - |c||, max = |z_old^2| + |c|,
+z_new = z_old * z_old + c
+fraction = (|z_new| - min) / (max - min).
+
+This fraction is then scaled into an angle for coloring with the
+decomposition method.
+
+In the triang formulas (_man and _jul variations), this operation
+is performed on the last iterate.  The triangcount formulas compute
+the fraction at every iteration, and color the image based on the
+average fraction (over all iterations).
+
+}
+
+triangle-sample    { ; copyright Kerry Mitchell 09feb98
+  reset=1960 type=formula formulafile=triang.frm
+  formulaname=triang_jul center-mag=0/0/0.85 params=-0\
+  .735038819963/0.14041387858/4/0/7/0 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0 colors=000<41>0x00z\
+  00y0<39>020000001<42>00x00z00y<39>002000100<40>z00<40\
+  >200 cyclerange=0/255 passes=1
+  }
+
+triangcount-sample { ; copyright Kerry Mitchell 09feb98
+  reset=1960 type=formula formulafile=triang.frm
+  formulaname=triangcount_jul passes=1 center-mag=-0.2\
+  19856/0.463628/3 params=-0.0573720519293145/0.669193\
+  9992424446/1e012/0/0/3 float=y maxiter=2000 inside=0
+  decomp=256 periodicity=0 colors=000<41>0x00z00y0<39>\
+  020000001<42>00x00z00y<39>002000100<40>z00<40>200
+  cyclerange=0/255
+  }
+

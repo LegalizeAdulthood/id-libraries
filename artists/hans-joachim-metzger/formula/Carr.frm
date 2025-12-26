@@ -22,3 +22,654 @@ Carr1298 {
   ;SOURCE: 29carr.frm
 }
  
+05-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-02A {
+  c=z=1/pixel:
+  z=sqr(z) + .33
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-02B {
+  c=z=1/pixel:
+  z=sqr(z^z) + .33
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-02C {
+  c=z=1/pixel:
+  z=sqr(conj(z^z^z^z^z)) + .33
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-02D {
+  c=z=(1/pixel)/pixel-0.25:
+  z=sqr(z) + 0.33
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-02E {; Try using Distance Estimator function on this formula
+  c=z=1/pixel:
+  z=sqr(z) + c
+  z1=sqr(z) + 0.33
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-03 {
+  c = z = 1 / pixel:
+  z = sin((z*z) - (aa3*z)) +b
+  |z| <= (p2 + 3)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-05 {
+  a=(0,0), b=(0,0): 
+  z=z+1
+  anew=sqr(a)-sqr(b)+pixel
+  b=2.0*a*b+p1
+  a=anew
+  |a|+|b| <= 4
+  c = z = 1 / pixel
+  z = sqr(z) + c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-06 {; was OK-03 and was modified
+  z = c = pixel:
+  z = cosxx(z)/c
+  z = sin(z)
+  |z| <= (5 + p1)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-09 {; was OK-04 and was modified
+  z = 0, c = cosxx(pixel):
+  z = sqr(z) + c
+  |z| <= (5 + p1)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-10 {
+  c=z= 1/pixel:
+  z=(tanh(z)*tanh(1/z)*z) + c
+  |z| <=(5 + p1)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-11 {
+  c=z=1/pixel:
+  z=sqr(z*(z+1.918)) + c
+  z=sin(z*z) + c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-12 {
+  c=z=sqr(pixel):
+  z=sqr(z) + 2*c
+  z=sqr(z) + c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-74 {
+  c=z=1/pixel:
+  z=(3.334/sin(z*z)) + (c/pixel)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-83 {
+  z=c=1/pixel:
+  z=sin(z*z) + (conj(1/pixel))/(0.33/c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-84 {
+  z=c=1/pixel:
+  z=sin(z*z) + ((tanh(1/pixel))/(0.33/c))
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-85 {
+  z=c=1/pixel:
+  z=sqr(z) + c
+  z=sqr(z) + conj(c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-87 {
+  z=c=1/pixel:
+  z=sqr(z) + c
+  z=sin(z) + c
+  z=sqr(z) + conj(c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-90 {
+  z=c=1/pixel:
+  z=sqr(z) + sqr(c-5)
+  z=sin(z*z) + sqr(c-2)
+  z=sqr(z) + sqr(c-0.67)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-900 {
+  z=cotanh(pixel+1)/imag(1/pixel-0.334)
+  c=sqr(sqr(sqr(pixel*1/pixel))):
+  z=(z^real(2.124)+c)/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-902 {
+  z=sinh(pixel+1)/imag(1/pixel-0.334)
+  c=sqr(sqr(sqr(pixel*1/pixel))):
+  z=cotanh(z^exp(2.424)+c)/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-903 {
+  z=1/(pixel*pixel)
+  c=imag(1/pixel*0.91/pixel):
+  z=(sqr(conj(z))*conj(z)+conj(2.124))/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-905 {; Modified Richard frm
+  z=1/pixel, c=pixel-sqr(z):
+  c=pixel +c/z
+  z=c-z*pixel
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+708 {
+  z = c = p2 / pixel:
+  z = z^p1 / c^p2 + c
+  z <= p2
+  ;SOURCE: kg7.frm
+}
+ 
+Carr-105 {
+  z=c=pixel:
+  z=sqr(z) + sqr(c*c)
+  z=sin(z) + sin(c)
+  z=sqr(z) + sin(c*c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-110 {
+  z=c=pixel:
+  z=sqr(z*z) + (c*c)
+  z=sin(z*z) + sin(c*c)
+  z=sin(z*(1/z)) + cotanh(c*c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-501 {; Distance Estimator works here.
+  z=1/pixel, c=exp(0.6,0.3)/pixel:
+  z=z*z*z*z*z+flip(c/pixel)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-559 {
+  z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel)):
+  z=z*z*z*z+conj(sin(c-0.524))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-561 {
+  z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel*1/pixel)):
+  z=sqr(conj(z*z*z))+conj(sin(c-1.5))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-740 {
+  z=1/pixel, c=(1/pixel)/2/(z-2.5)^(1/pixel-1):
+  z=z*z+(c-0.4)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-786 {; Very interesting image poosibilities !!
+  z=sqr(sqr(sqr(1/pixel-0.006))), c=sqr(sqr(1/pixel-0.009)):
+  z=1/z^z*z+flip(c*c)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-873 {
+  z=1/(pixel*conj(5/pixel+0.724))
+  c=1/(fn4((pixel-1.524)*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
+  z=(pixel+z*z)/(pixel-c*c-0.324)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-874 {
+  z=1/(pixel*conj(conj(5/pixel+0.724)))
+  c=1/(fn4((conj(pixel-1.524))*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
+  z=flip((pixel+z*z)/(pixel-c*c-0.324))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-878 {
+  z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^cotanh(pixel-1.124):
+  z=(conj(pixel+z*z)/(pixel-c*c))/1.55
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-881 {
+  z=((1/pixel)/0.91)/(2.7,-1.3)
+  c=(1/pixel*0.91/pixel):
+  z=(1/z*z*z+z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-884 {
+  z=((1/pixel)/0.71)/(4.7,-0.3)
+  c=(1/pixel*0.51/pixel):
+  z=(z^(1/z*1/z)+3*z)/(pixel-conj(c*c))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-890 {; May not be mathmatically correct but...
+  z=(1/1/pixel^pixel*pixel)
+  c=1/conj(1/pixel^pixel+pixel):
+  z=(1/z*z*z)/(c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-906 {
+  z=1/pixel, c=conj(pixel-sqr(z)):
+  z=c-z*pixel
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-908 {
+  z=cotanh(exp(1/pixel))
+  c=conj(pixel-sqr(z)):
+  z=c+z*pixel-1
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-01 { 
+  z = Pixel, z = cosxx(z):
+  z = z + Pixel
+  z = sqr(z)
+  |z| <=4          
+  ;SOURCE: carr.frm
+}
+ 
+Carr-07 {; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-16 {
+  z = 0:
+  z2 = z^z^z
+  z = (cosxx(sqr(z-1)) ) + (sin(pixel))
+  |z| <= 6
+  ;SOURCE: carr.frm
+}
+ 
+Carr-19 {
+  c = z = (sqr(1 / pixel)):
+  z = (sqr(1 / cosxx(z)) ) + (sin(z^z^z))
+  |z| <= 10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-20 {
+  z = pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (log(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-202 {
+  z=c=1/pixel:
+  z=sqr(z) + c
+  z=(1/pixel)*z*z/(z-0.5) + c
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-21 {
+  z = 1 / pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (log(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-210 {
+  z=c=1/pixel:
+  z=z*z+c+(z*z+(c-0.124))/(z-0.75)+c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-212 {
+  z=c=1/pixel:
+  z=sin(z^2)+sin(z)/sin(pixel)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-22 {
+  z = 1 / pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (cosxx(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-520 {
+  z=1/pixel, c=cos(z*1/pixel):
+  c=fn1(sinh(z))
+  z=z*z*z+flip(c-0.324)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-877 {
+  z=1/(pixel*conj(conj(2/pixel+0.794)))
+  c=1/(fn2((conj(pixel-1.784))*sqr(1/pixel-0.024)/fn2(conj(1/pixel-0.824)))):
+  z=conj(flip(pixel+z*z-0.025)/(pixel-c*c-0.494))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-889 {
+  z=((1/pixel)/0.71)/(0.85/pixel+1.324)
+  c=((1/pixel)/2)/z-2.5^fn4(pixel-1.324)/(1/pixel):
+  z=((1/z^1/pixel*z*z)/((pixel-1)-(c*c)))/1.6
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-910 {
+  z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^tanh(pixel-1.124):
+  z=c-z*pixel
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-914 {
+  z=1/pixel+2.524
+  c=((1*(|1.324|<=0)+1.324)*cotanh(pixel)):
+  z=c-z*pixel
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-915 {
+  z=1/pixel+0.91/pixel
+  c=((2.124*(|3.324|<=0)+1.324)*cotanh(pixel)):
+  z=c-z*pixel+1
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-200 {
+  z=c=1/pixel:
+  z=sqr(z) + c
+  z=((1/pixel)*z*z)/(z-1) + c
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-27 {; Carr-24 Modified
+  c=z=1/pixel:
+  z=sqr(z) + (c-1 1/4)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-508 {
+  z=1/pixel, c=exp(0.6,0.3)/(0.5/pixel):
+  z=(z/(pixel-0.724)*z/(pixel-0.724)+(pixel+0.524)*-1/pixel)/c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-800 {
+  z=sqr(sqr(sqr(1/pixel-0.006))), c=sqr(sqr(1/pixel-0.009)):
+  z=((pixel-z*z)/(pixel-(c+0.624)*(c+0.624)))-0.375
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-801 {
+  z=sqr(sqr(sqr(1/pixel-0.006)))-0.01, c=sqr(sqr(1/pixel-0.009)):
+  z=((pixel-z*z)/(pixel-(c+0.624)*(c+0.624)))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-804 {; Modified SJMAND01
+  z=1/(real(pixel)+flip(imag(pixel)*1.224))
+  c=1/(2.224+1.224*real(pixel)+flip(imag(pixel))):
+  z=z*z+c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-875 {
+  z=1/(pixel*conj(conj(5/pixel+0.724)))
+  c=1/(fn4((conj(pixel-1.524))*sqr(1/pixel)/fn2(conj(1/pixel-0.524)))):
+  z=flip((pixel+z*z)/(pixel-c*c-0.324))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-876 {
+  z=1/(pixel*conj(conj(2/pixel+0.724)))
+  c=1/(fn2((conj(pixel-1.524))*sqr(1/pixel)/fn2(conj(1/pixel-0.524)))):
+  z=flip(pixel+z*z)/(pixel-c*c-0.324)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-879 {
+  z=1/(pixel*pixel)
+  c=((1/pixel)/2)/z-2.5^cotanh(pixel-1.124):
+  z=(1/z*z*z+z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-880 {
+  z=real((1/pixel)/1.91)/(5.7,-1.3)
+  c=(1/pixel*0.91/pixel):
+  z=(pixel+z*z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-89 {
+  z=c=pixel:
+  z=sqr(z) + sqr(c)
+  z=sin(z*z) + sqr(c)
+  z=sqr(z) + sqr(c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-895 {
+  z=cotanh(1/pixel), c=2+cotanh(1/pixel):
+  z=conj(2.124)*(z*z+c)+real(c*(1/pixel-0.5))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-896 {
+  z=cotanh(1/pixel), c=2+cotanh(1/pixel*0.87/pixel):
+  z=(2.124)*(z*z+c)/real(c*(1/pixel-0.5))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-904 {
+  z=((1-pixel)/3)^0.5, c=(1-1/pixel)^0.5:
+  z=z*z+c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-909 {
+  z=conj(exp(1/pixel))
+  c=conj(pixel-sqr(z)):
+  z=z*z+c
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+02-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z*z) + c
+  z=sin(z*z) + c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-04 {
+  c = z = 1 / pixel 
+  z = cosh(z) + c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-13 {; Edited for Fractint v. 20 by George Martin, 10/98
+  c = z = cosxx(pixel):
+  z = cosxx(z) + 2
+  c = z = 1 / sqr(pixel)
+  z = 1 / cosxx(z) +c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-15 (xaxis) {; Mark Peterson modified(Zoom all the way out & look)
+                 ; Edited for Fractint v20 by G. Martin
+  z = log(pixel), z = cosxx(z): 
+  z = z + cosxx(pixel)
+  z = sqr(z)
+  Lastsqr <=4 
+  ;SOURCE: carr.frm
+}
+ 
+Carr-201 {
+  z=c=pixel:
+  z=sqr(z) + c
+  z=((1/pixel)*z*z)/(z-1) + c
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-220 {; 100's of diff. Inv. Mandels
+  z=c=1/pixel:
+  z=(z^2)*(z^2)+sin(z-0.3)/cos(sqr(pixel))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-528 {; Nice !!!
+  z=1/pixel, c=1/conj(1/(z*z)):
+  z=z*z*z+(c+(0.6,0.3))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-882 {
+  z=((1/pixel)/0.71)/(2.7,-1.3)
+  c=(1/pixel*0.51/pixel):
+  z=(1/z*z*z+z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-907 {
+  z=exp(1/pixel), c=conj(pixel-sqr(z)):
+  z=(c-z*pixel)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-912 {
+  z=1/(pixel*pixel)
+  c=imag(1/pixel*0.91/pixel):
+  z=((1/(sin(z*z+pixel*pixel)))/(pixel-c*c))/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-92 {
+  z=c=1/pixel:
+  z=sqr(z) + sqr(c)
+  z=sqr(z) + sin(c)
+  z=sqr(z) + sin(c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-95 {
+  z=c=pixel:
+  z=sqr(z*z) + sqr(c*c)
+  z=sqr(z) + sin(c)
+  z=sqr(z*z) + sin(c*c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-99 {
+  z=c=pixel:
+  z=sqr(z*z) + sqr(c*c)
+  z=sqr(z*z) + sin(c^pixel)
+  z=sqr(z*z) + sin(c^pixel)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 

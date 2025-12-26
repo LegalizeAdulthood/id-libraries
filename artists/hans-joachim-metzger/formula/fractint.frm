@@ -7194,3 +7194,11 @@ FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
   ;SOURCE: spcb.frm
 }
  
+OK-08 {
+  z = pixel, c = fn1(pixel):
+  z = z^z / fn2(z)
+  z = c / z
+  |z| <= (5 + p1)
+  ;SOURCE: fractint.frm
+}
+ 

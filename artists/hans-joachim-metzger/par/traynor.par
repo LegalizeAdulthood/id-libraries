@@ -1,0 +1,205 @@
+; Newsgroups: sci.fractals
+; Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!spool.mu.edu!bloom-beacon.mit.edu!news.kei.com!ub!netfs.dnd.ca!dgbt!nott!cunews!freenet.carleton.ca!FreeNet.Carleton.CA!aq936
+; From: aq936@FreeNet.Carleton.CA (Michael Traynor)
+; Subject: Fractint Parameters
+; Message-ID: <DA0KJL.LD7@freenet.carleton.ca>
+; Sender: aq936@freenet3.carleton.ca (Michael Traynor)
+; Reply-To: aq936@FreeNet.Carleton.CA (Michael Traynor)
+; Organization: The National Capital FreeNet
+; Date: Sun, 11 Jun 1995 15:04:33 GMT
+; Lines: 197
+;  
+; Here are a bunch of parameter entries for fractint.  Most of these
+; are based on perturbed versions of the mandelbrot set.  I hope you
+; enjoy them, and if not, hey, they're free.
+;  
+; Thanks to Paul Derbyshire, Jonathan Wolfe and others whose pars
+; I have enjoyed and especially thanks to Tim Wegner and all the other
+; folks who have shared their expertise and enthusiasm with us through
+; Fractint and its various ports.
+;  
+; While I'm here, has anyone found problems running Fractint on 
+; any of the tainted Pentiums (shouldn't that be Pentia?)?  Just
+; curious, since Fractint should exagerate arithmetic errors with its 
+; iterative action.
+ 
+SpiralofSpirals    { ; Perturbation:(.25,.25)
+                     ; 13 hrs on 486DX33, 1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel passes=1
+  corners=-0.75544119602/-0.75477810162/-0.049602705104/\
+  -0.049105384304
+  params=0.25/0.25 float=y maxiter=32767
+  colors=000000Hga<4>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>\
+  Hzz<7>bUsePrePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15\
+  >yT1zR0xP0<7>h50<4>QdC<9>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSq\
+  IRu<3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2\
+  >zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+DoubleSpiral       { ; Mandel, (.25,.25)
+                     ; about  1h 08 minutes 486dx33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel passes=1
+  corners=-0.7616308942/-0.7600508942/-0.0516454052/\
+  -0.0504604052
+  params=0.25/0.25 float=y maxiter=32767
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz\
+  <7>bUsePrePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT\
+  1zR0xP0<7>h50<4>QdC<9>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu\
+  <3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zl\
+  EzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+RainbowBridge      { ; Mandel, (.30,.30)
+                     ; about  1h 12 minutes 486dx33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel
+  corners=-1.122848514/-1.121628514/-0.21880821708/-0.21789321708
+  params=0.29999999999999999/0.29999999999999999
+  float=y maxiter=32767
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7\
+  >bUsePrePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0\
+  xP0<7>h50<4>QdC<9>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLg\
+  PJdSJa<8>zB9<6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDz\
+  ZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+CollisionZone      { ; Mandel, (.25,.25)
+                     ; about 1:39 486DX-33, 1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  corners=-0.7554601215/-0.7477497215/-0.05069984627/\
+  -0.04491704627
+  params=0.25/0.25 float=y maxiter=100000
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8\
+  >ePr<4>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80\
+  h50dC2<3>QdC<9>Rn3<4>Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>\
+  OLgPJdSJa<8>zB9<6>zz8<17>kVf<5>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCz\
+  UC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+SpiralsInspace     { ; Perturbation: (.25,.25)
+                     ; about  0h 11 minutes33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel
+  corners=-0.7548953497195/-0.7548659893871/-0.04920354244686/-0.049228734\
+  06476/-0.7548726880233/-0.04923375804186 params=0.25/0.25 float=y
+  maxiter=1000
+  colors=000000Hga<4>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7>bUsePr\
+  ePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<7>h50<4>QdC<9\
+  >Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkV\
+  fmUj<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+SpikedBays         { ; Mandel, perturbed (-.50,-.50)
+                     ; took about  7min on 486DX33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  corners=0.328629894186/0.328578736033/0.412019929131/0.412263325662/0.32\
+  8494646916/0.412200258824 params=-0.5/-0.5 float=y maxiter=50000
+  inside=0
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8>ePr<4>hRl\
+  iSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80h50dC2<3>QdC<9>Rn3<4\
+  >Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<17>kVf<5\
+  >zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+TripleSpiral       { ; Mandel, perturbed ( .30, .30)
+                     ; took about 4.5hr on 486DX33,1024x768
+                     ; in the eastern valley, near the end of RainbowBridge
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  corners=-1.1225938741000001/-1.1223840341/-0.21837453094/-0.21821715094
+  params=0.3/0.3 float=y maxiter=100000 inside=0
+  colors=00KEj_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8>ePr<4>hRl\
+  iSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80h50dC2<3>QdC<9>Rn3<4\
+  >Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<17>kVf<5\
+  >zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+3SpiralValley      { ; Mandel, perturbed ( .30, .30)
+                     ; took about 11hrs on 486DX33,1024x768
+                     ; Contains many TripleSpirals
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel passes=1
+  corners=-1.12261569652/-1.12256449556/-0.218341082896/-0.218302682176
+  params=0.29999999999999999/0.29999999999999999 float=y maxiter=32767
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7>bUsePrePq\
+  fQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<7>h50<4>QdC<9>Rn\
+  3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkVfmU\
+  j<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+9Spiral            { ; Mandel, perturbed (-.50,-.50)
+                     ; took about 22min on 486DX33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=300 type=mandel passes=1
+  corners=0.33694563405/0.33652259547/0.40406526145/0.40607796353/0.335827\
+  24316/0.40555644929 params=-0.5/-0.5 float=y maxiter=5000
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7>bUsePrePq\
+  fQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<7>h50<4>QdC<9>Rn\
+  3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkVfmU\
+  j<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+OutOfTheFrothII    { ; Perturbation: (.25,.25)
+                     ; took about 20hrs on 486DX33,1024x768
+                     ; Collision zone again, the froth is made of objects 
+                     ; like those in the centre foreground
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  corners=-0.75489534971949146/-0.75486598938710858/-0.0492035424469/-0.04\
+  922873406472/-0.75487268802329144/-0.04923375804182 params=0.25/0.25
+  float=y maxiter=50000 inside=0
+  colors=000j18<30>2ax0cz1by<29>i29k07k17<29>zv0<29>l26k07j18<30>2ax0cz1by\
+  <28>i29k07k17<31>zv0<30>k07
+  }
+ 
+ShatteredLines     { ; Mandel perturbed (.208, .208)
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  center-mag=-0.74999688019300000/-0.00203592565893952/40713.92
+  params=0.208/0.208 float=y maxiter=5000
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8>ePr<4>hRl\
+  iSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80h50dC2<3>QdC<9>Rn3<4\
+  >Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<17>kVf<5\
+  >zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+Filligree2         {
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset type=mandel passes=1
+  corners=-0.7944634182/-0.7927226198/0.163020084/0.1643256801 float=y
+  maxiter=1000 inside=0
+  colors=00pzgXzga<27>zI2zH0xJ1uL3sN5pQ7<5>ZXM<7>aeLafLbhKciJ<17>xy1zz0zz0\
+  <18>zr0zr0yq1yp1<14>yT1zR0xP0<7>h50<4>QdC<9>Rn3<4>Y0W<12>z2m<19>NTiLVhKU\
+  kKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zlEz\
+  gDzcDzZCzUC<3>zAA<6>wz0zzHzzG
+  }
+ 
+TripleSpiralValley { ; Mandel, perturbed ( .30, .30)
+                     ; took about 3h24m 486DX33, 1024x768
+                     ; Contains many TripleSpirals
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=1
+  corners=-1.12260531359/-1.12258729085/-0.218326888748/-0.218313371695
+  params=0.3/0.3 float=y maxiter=100000
+  colors=00000PHga<4>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8>ePr<4>\
+  hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80h50dC2<3>QdC<9>Rn\
+  3<4>Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<17>kV\
+  f<5>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+Nine               { ; 11 min on 486DX33,1024x768
+                     ; Mike Traynor, aq936@freenet. carleton.ca 
+  reset=1920 type=mandel passes=t
+  center-mag=+0.32860407369228710/+0.41212649245963330/268044.7/1/64.999
+  params=-0.5/-0.5 float=y maxiter=100000 inside=0
+  colors=000Ej_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<8>ePr<4>hRl\
+  iSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<6>j80h50dC2<3>QdC<9>Rn3<4\
+  >Y0W<12>z2m<17>RQiPSiNTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9<6>zz8<17>kVf<5\
+  >zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bmn
+  }
+ 
+ 

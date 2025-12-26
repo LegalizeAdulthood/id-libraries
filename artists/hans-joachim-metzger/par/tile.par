@@ -1,0 +1,46 @@
+comment { ; narrative copyright Kerry Mitchell 17oct98
+
+Tiled background patterns in Fractint
+
+These formulas bring together 3 separate ideas: tiling the complex
+plane, using Julia sets to make abstract wavy patterns, and combining
+various complex numbers to enhance decomposition images.
+
+To tile the plane, a cosine mapping was used. Take the cosine of the
+real and imaginary parts of the pixels, and multiply by 2. Now, the
+complex plane is transformed into a grid of squares, each of which
+having x and y values ranging from -2 to 2. A scale factor changes
+the sizes of the squares in the grid.
+
+Given this grid, we are now in position to compute the fractal.
+Typically, Julia sets are computed for many iterations. However,
+interesting, non- fractal patterns can be made by only iterating
+a few times (2 to 5), and using decomp=256.
+
+To further confuse the issue, these formulas use 2 different Julia
+sets; call them z1 and z2. Then, the final z variable is computed
+by multiplying these two together. That has the effect of adding
+the angles, giving the decomp option more to play with. Actually,
+z is comprised of fn1(z1)* fn2(z2), to add even more flexibility.
+
+}
+
+tile-sample-1 { ; copyright Kerry Mitchell 17oct98
+  reset=1960 type=formula formulafile=tile.frm
+  formulaname=tile2julia function=exp/ident center-mag=0/0/1
+  params=-2/0/2/0/1/2 float=y maxiter=3 inside=0 decomp=256
+  periodicity=0 colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxz\
+  zzzzz<40>1zz0zz0yz<39>02z00z00z<41>000 cyclerange=0/255
+  }
+
+tile-sample-2 { ; copyright Kerry Mitchell 17oct98
+  reset=1960 type=formula formulafile=tile.frm cyclerange=0/255
+  formulaname=tile2julia function=ident/sqr center-mag=0/0/0.6666667
+  params=0/-1/0/1/2/1 float=y maxiter=4 inside=0 decomp=256
+  periodicity=0 colors=U9H<9>`CM`DNaDNaDObEO<14>jIVkJWkJWlKXlKX<18\
+  >tRftSftSgtTguTh<3>vVjvVjvWkwXk<14>ydsyesyftygtzhu<3>zkwzlwznxzo\
+  x<2>ztzzzzztzzry<4>zkwzjvzivzhuzhuygt<8>x`px`ox_ox_nxZn<5>vWkvVj\
+  vVjvVi<12>rPcqObqObpOapNa<20>fGSfFReFRdFQ<13>XAJWAJVAIUAIU9H<33>\
+  100000100<32>T9H
+  }
+
