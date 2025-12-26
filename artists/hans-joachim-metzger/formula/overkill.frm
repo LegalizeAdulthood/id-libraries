@@ -86,3 +86,35 @@ OK-08 {
   ;SOURCE: fractint.frm
 }
  
+OK-22 {
+  z = v = pixel:
+  v = fn1(v) * fn2(z)
+  z = fn1(z) / fn2(v)
+  |z| <= (5 + p1)
+  ;SOURCE: fractint.frm
+}
+ 
+OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
+   z = y = x = pixel, k = 1 + p1, test = 5 + p2 :
+   a = fn1(z)
+   IF (a <= y)
+      b = y
+   ELSE
+      b = x
+   ENDIF
+   x = y, y = z, z = a*k + b
+   |z| <= test
+  ;SOURCE: fract196.frm
+}
+ 
+OK-36 {; DISSECTED MANDELBROT
+   ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
+  z = pixel, cx = fn1(real(z)), cy = fn2(imag(z)), k = 2 + p1:
+  zx = real(z), zy = imag(z)
+  x = fn3(zx*zx - zy*zy) + cx
+  y = fn4(k * zx * zy) + cy
+  z = x + flip(y)
+  |z| <  (10 + p2)
+  ;SOURCE: fractint.frm
+}
+ 

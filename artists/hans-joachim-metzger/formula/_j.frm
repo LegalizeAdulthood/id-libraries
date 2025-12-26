@@ -13,3 +13,21 @@ Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-4.frm
 }
  
+jowe_68 {; by Jo Weber [100424,35], 12/1996
+  z=pixel
+  bailout=p3:
+  z=(sin(z)-tan(z))/(sin(z)+tan(z))
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_68_1 {; by Jo Weber [100424,35], 4/1997
+  z=pixel
+  bailout=p3:
+  z=(sin(z)-cos(z))/(log(z)^2)
+  z=fn1(z)-(z<0)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 

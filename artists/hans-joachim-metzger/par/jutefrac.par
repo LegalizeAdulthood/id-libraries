@@ -1,0 +1,470 @@
+;
+;    JUTEFRAC.PAR ---------------------------
+;   -------------- Jutes Fractint parameters
+;
+;
+;     All the fractals (and most of the color maps) in this file are
+;     created or found by Jussi Kantola.  They're not, of course, copyrighted
+;     nor anything else like that -- they're pure pd as long as I stand!
+;     Please don't hesitate to use these in whatever purpose you would
+;     like to.	I wouldn't mind if my name followed the parameters,
+;     though... ;-).
+;
+;     If you've got anything to say to me, or would like to send me
+;     your parameters (I'D LIKE THAT!), you can try the following
+;     Internet email-address:
+;
+;          jute@sday.pulp.nullnet.fi
+;
+;     I seem to create a new parameter every now and then.
+;     If you're interested in newer jutefrac.par, try email!
+;
+;     G'wan, iterate!
+;
+;     22/11/1992
+;
+
+;
+;   NOTE!!  Some of the parameters may have FAR to big maxiter,
+;   like 32767 or such :).  Lower maxiter will often do just
+;   as good a picture!
+;
+
+Bat                { ; Looks like a bat flying towards your face (?)
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=julfn+exp function=sinh
+  corners=3.097595/-1.595505/-3.148438/3.111069/-1.595505/3.111069
+  maxiter=1000 inside=0 decomp=256
+  colors=000pzP<29>L3NJ0MI0O<13>20w00z01z<30>Pty<30>1BR09P19P<13>H1NJ0MI0M<13>\
+  28O09P0AQ<30>Pty<30>12y00z10x<14>J0M<30>nxO
+  }
+
+Brains             {  ;  4 Brains
+                      ;  --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.15374105802/-0.15377080498/1.03035843791/1.03040685209/-0.1537750\
+  1522/1.03040370941 float=y maxiter=1000 inside=0
+  colors=000ULL<19>zzz<10>000<9>00t00z20x<28>w03z00z32<14>zzZ<9>zX4<16>0yh<6>0\
+  80000<12>zzz<15>0PZ<8>0hU0kU0mT0pS1nT<17>W3jY0lY1m<9>SKz<4>00z<6>0ks0rr2rk<5\
+  >Kt0<16>z00<14>J77<5>SJJ
+  }
+
+BrokenHeart        { ; "My heart is raped and torn apart.."..
+                     ;  --jute@sday.pulp.nullnet.fi
+  reset type=barnsleyj3 corners=-0.228411/0.016517/0.566728/0.750424
+  params=0.1/0.36 float=y maxiter=32767 inside=0 distest=1/30
+  colors=000<15>z00<31>000<7>z00<6>100z00<15>000<31>z01a00<141>000
+  cyclerange=1/112
+  }
+
+Drop               { ; Like one of those "white-drop-to-red-liquid"-photo's
+                     ;  --jute@sday.pulp.nullnet.fi
+  reset type=mandel passes=1
+  corners=-0.6449241606389799/-0.6449241606042825/-0.4831896355470977/-0.48318\
+  96355275797/-0.6449241606358566/-0.4831896355512525 float=y
+  maxiter=32767 inside=0
+  colors=000cdo<19>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<15\
+  >zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C`ADaBEc<25>bco
+  }
+
+MSumm              { ; Mandelbrot-zoom with outside=summ
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.740298079/-0.740094712/-0.157979038/-0.158121012/-0.740165215/-0.\
+  158169586 float=y maxiter=768 inside=0 outside=summ
+  colors=0000BQ09P<14>MMiONkQPk<13>wwyzzzzwx<11>zCV<2>vCUuCTsBSrBRpBR<25>H26F1\
+  5G15<29>uBTwCUwDV<29>yxxzzzxxy<13>PPkMMiLMh<13>2AR09P0AP<37>0xy0zz0yz<36>0CR
+  }
+
+Balrog             { ; A balrog!  One couldn't draw it better!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=sin/sqr passes=b
+  corners=-0.739723/0.793929/1.420089/-1.427892/0.793929/-1.427892
+  params=0/0/1 maxiter=1000 inside=-100 potential=256/800/500
+  invert=0.499997/-0.500002/0
+  colors=000_99<15>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<11>XAA000
+  }
+
+Trilobite          { ; It IS a trilobite ...  isn't it?
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=newton
+  corners=0.175791/0.938849/1.120094/0.82341/0.619617/0.567168 params=3
+  float=y maxiter=1000 inside=0 decomp=256
+  colors=000B00<8>200000100<26>Z00`00a00c00b00<27>400300200000100200<26>_00`00\
+  a00c00b00a00<26>400300200000100200<26>_00`00a00c00b00a00<26>4003002000001002\
+  00<29>c00Y00<19>D00
+  }
+
+JAutumn            { ; Creation of my brother, reminds me of autumn.
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-1.75903307551/-1.75903145551/0.01916315506/0.01916436942
+  float=y maxiter=1000 inside=0
+  colors=00020x<28>w03z00z32<14>zzZ<9>zX4<16>0yh<6>080000<12>zzz<15>0PZ<8>0hU0\
+  kU0mT0pS1nT<17>W3jY0lY1m<9>SKz<4>00z<6>0ks0rr2rk<5>Kt0<16>z00<14>J77<26>zzz<\
+  10>000<10>00z
+  }
+
+Tsunami            { ; Quite a wet pic.. 
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=cosxx/sqr
+  corners=0.319302/1.439301/0.363922/1.203922 params=1/0/1 maxiter=1000
+  inside=0 potential=255/200/1000
+  colors=000QPk<13>wwyccc<127>zzzzzzyyy<51>UUUZ`o<4>NqzOszPuz<31>1BR09P19Q<14>\
+  ONk
+  }
+
+SlimeMold          { ; My parents named this, so blame 'em! :-).
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=cosh/cos
+  corners=-0.75887/-0.290596/-0.18144/0.169764 params=0/0/1/0.12
+  maxiter=1000 inside=0 logmap=yes potential=256/150/1000
+  invert=0.499996/-0.500006/0
+  colors=000yKU<29>211000000<14>000010030<29>0z0000<26>qHQ<4>0M0<8>0u0Kz00w0<1\
+  2>0J00G00B0060000<113>000 cyclerange=1/112
+  }
+
+Flower             { ; Beautiful, that's all
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z*z) function=cosxx
+  corners=-1.701582/1.693724/-1.27477/1.270879 maxiter=1000 inside=0
+  potential=255/200/1000 invert=1.00065/0/0
+  colors=000zzz0xx<28>033000100<30>z00<31>000<15>zz0<29>zzwzzzzzz<110>0F0
+  }
+
+Crown              { ; A royal picture without royal.map?
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z*z) function=cosxx
+  corners=-0.172565/0.172832/0.005617/0.183338 maxiter=1000 inside=0
+  potential=255/200/1000 invert=1.00065/0/0
+  colors=000zzz0xx<28>033000100<30>z00<31>000<15>zz0<29>zzwzzzzzz<110>0F0
+  }
+
+Afterburner        { ; Coloc-cycle with [-] and strike 7!
+                     ; -jute@sday.pulp.nullnet.fi
+  reset type=magnet2m
+  corners=2.185389/2.382904/1.11182/1.817807/1.91762/1.468845 float=y
+  maxiter=1000 inside=0 potential=255/10000/1000
+  colors=000c00<28>GEEFFFGFF<28>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0z\
+  U0zT0<28>z10z00z00y00<28>d00FFFFFF cyclerange=1/253
+  }
+
+TimeGlass          { ; Nothing special..
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn+fn function=sinh/ident corners=-4.0/4.007797/-3.003891/3.0
+  params=1/0/1 maxiter=1000 inside=0 potential=256/50/1000
+  colors=000JKfLLhMMiONk<14>wwyzzzzwx<14>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<\
+  31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19\
+  Q<10>IJe
+  }
+
+Richbrother        { ; In the spirit of Rich8z3
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=sin/sin
+  corners=0.58328199/0.61110958/1.18960072/1.19172723/0.5922792/1.17760444
+  params=0/0/1 float=y maxiter=1023 bailout=50 inside=0
+  colors=000d0M<54>00z00z11y<82>zz0zz0zy0<81>z10z00z00y01<26>e0L
+  }
+
+Mouth              { ; It's hard (!) to believe this is really a fractal...
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn*z+z function=exp
+  corners=-0.6115711/-0.5393181/1.755278/3.15289/-1.2570004/2.611009
+  params=0.1243516/1 maxiter=1000 inside=0 potential=256/400/1000
+  colors=zzz<14>zzz000<30>x00z00zVVzzzxWWv00<24>S00KKK<16>wwwzzzzzz<157>zzz
+  cyclerange=16/77
+  }
+
+Bnewton            { ; Newton with parm 1=5, nice map..
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=newton corners=-2.0/2.0/-1.5/1.5 params=5 float=y
+  maxiter=1000 inside=0
+  colors=000DPn<12>IFNJEKKEK<18>lRInSHnTH<14>zgL<8>UKJ<9>PApO8tP9r<22>qn4<12>6\
+  3C<20>KouLrxMru<14>foAhn6hn8<20>oez<12>iYCOYS2Zh<16>DITJIVQHY<17>4I_OHJhG1<1\
+  2>uEjnDgV2m<6>H6wF7yFCy<2>CSx<3>DQp
+  }
+
+LorenzEye          { ; Yep, a lorenz producing an eye!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=lorenz corners=-7.923889/0.474152/9.855133/18.25824
+  params=0.001/3/15/1 maxiter=1000 inside=0
+  colors=000MMiONk<14>wwyzzzzwx<14>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk\
+  <14>owRpzPoxP<21>O3KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<12>L\
+  Lh
+  }
+
+Shell              { ;
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=lorenz corners=-3.355911/8.288956/0.466797/12.100067
+  params=0.001/5/8/1 maxiter=1000 inside=0
+  colors=000MMiONk<14>wwyzzzzwx<14>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk\
+  <14>owRpzPoxP<21>O3KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<12>L\
+  Lh
+  }
+
+DumbosEar          { ; You know that lil' flying elephant?
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=lorenz corners=-15.0/15.001923/0.003952/30.0
+  params=0.0001/5/15/0.2 maxiter=1000 inside=0
+  colors=000MMiONk<14>wwyzzzzwx<14>z0N<14>000<13>DUJEXLCYLA_K<14>zyyzzz<31>kKk\
+  <14>owRpzPoxP<21>O3KM0JM0K<18>40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<12>L\
+  Lh
+  }
+
+MbZoom001          { ; Just a zoom of mandelbrot.  Very, VERY nice...
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.749850139/-0.749479725/0.0335847132/0.0335481919/-0.749699262/0.0\
+  333835146 float=y maxiter=32767 inside=0
+  colors=000UUU<13>000<15>z00<15>000<15>0zz<15>000<15>00z<15>000<15>zz0<15>000\
+  <15>0z0<15>000<15>z0z<14>40400K<15>zzz<14>44N000<15>WWW
+  }
+
+NiceMbrot          { ; *Very* beautiful mandelbrot.
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.74967927075/-0.74967182656/0.03409444676/0.03410003072
+  float=y maxiter=32767 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<28>Puz<31>1BR09P19Q<13>M\
+  MiONkQPk<13>wwyzzzzwx<14>z0Nv0M<18>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzz\
+  zyyywwwuuu
+  }
+
+Vertigo            { ; A bit like 'Vertigo' in tiling.l... ?
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.74970905267/-0.74969053197/0.03360248477/0.03360065871/-0.7497015\
+  0884/0.03359242484 float=y maxiter=32767 inside=0
+  colors=000nn0<2>zz0<15>000<15>0z0<15>000<15>z0z<14>40400K<15>zzz<14>44N000<1\
+  5>WWW<14>000<15>z00<15>000<15>0zz<15>000<15>00z<15>000<11>jj0
+  }
+
+ComplexMand001     { ; Lousy parname, but a neat pic!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.134262434/-0.134052515/0.649779856/0.649937244 float=y
+  maxiter=32767 inside=0
+  colors=000055033000<14>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15\
+  >0c0<14>030000002<14>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<12>\
+  088
+  }
+
+FootPrint          { ; Looks a bit like a footprint of a Hooloovoo or some such
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel corners=-2.5/1.500005/-1.499985/1.5 maxiter=1000
+  inside=0 potential=255/512/1000/16bit colors=000zzz<253>000
+  }
+
+InvJulia01         { ; Inverted and decomposed julia
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.771554334255132/-0.192242240704694 maxiter=1000 inside=0
+  invert=0.5/0/0 decomp=256
+  colors=000kkk<6>zzz<30>222000000<14>000111332<29>zzW<30>221000000<14>0001103\
+  30<29>zz0<30>220000000<29>000000222<21>iii
+  }
+
+Junction           { ; Very nice with almost any map at all
+                     ; jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  center-mag=+0.30299111868317660/+0.02084989911199521/+2039809359.15308700000\
+  000000 float=y maxiter=32767 inside=0
+  colors=0000KK<7>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<14\
+  >300000020<14>0c0<15>zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<14>0030000\
+  22<5>0HH
+  }
+
+Shuriken           { ; Really beautiful mandelbrot.
+                     ; jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  center-mag=+0.30299111869546000/+0.02084989911199808/+48908606481.8304700000\
+  0000000 float=y maxiter=32767 inside=0
+  colors=00007B<94>0du<6>zz0<24>000<15>zz0<21>330000000<86>zzz
+  }
+
+Badge              { ; LeeMandel-formula with cont.pot.  Nice.
+                     ; -jute@sday.pulp.nullnet.fi
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel1
+  corners=-0.839037/0.839071/-0.629255/0.629282 maxiter=1000 inside=0
+  potential=255/500/1000
+  colors=000zzh<7>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22\
+  <23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<20>zzf
+  }
+
+Spinner            { ; Cycle *fast* for fun!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=magnet1j
+  corners=0.610353/1.141233/0.347349/-0.360491/1.141233/-0.360491
+  maxiter=1000 inside=0 finattract=y periodicity=0
+  colors=000zzy<15>0cb<14>032000200<13>`00c00d43<13>zzy<15>c00<14>300000020<14\
+  >0c03d2<14>zzy<15>0c0<14>030000001<14>00b<15>zzy<15>00b<14>002000021<14>0cb<\
+  14>vxw
+  }
+
+LamStripe          { ; Interesting... a slight 3d-feeling!  Cycle and hit 8!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=lambdafn function=sqr
+  corners=-1.671234/1.68483/-5.107422/5.115509/-5.384186/-0.183487
+  params=1/0.4 maxiter=1000 inside=0 decomp=256 finattract=y periodicity=0
+  colors=00ihhh00hggg00gfff00eeee00dccc00cbbb00baaa00a```00____00ZYYY00YXXX00X\
+  WWW00VVVV00UUUU00TSSS00SRRR00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH0\
+  0HGGG00FFFF00EEEE00DDDD00CBBB00AAAA00999900888800777700555500444400333300222\
+  2000<3>00111100222200333300444400555500555500666600777700888800999900AAAA00A\
+  AAA00BBBB00CCCC00DDDD00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL0\
+  0LLLL00MMMM00NNNN00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVV\
+  V00WWWW00XXXX00YYYY00ZZZZ00____00____00````00aaaa00bbbb00cccc00dddd00eeee00e\
+  eee00ffff00gggg00hhhh00iiii00jjjj00jjjj00kkkk00llll00mmmm00nnnn00oooo00oooo0\
+  0pppp00qqqq00rrrr00ssss00tttt00tttt00uuuu00vvvv00wwww00xxxx00yyyy00zzzz00zzz\
+  z00zyyy00yxxx00xwww00wvvv00vttt00tsss00srrr00rqqq00qppp00onnn00nmmm00mlll00l\
+  kkk00jjjj cyclerange=0/255
+  ; EESH!  Some colors, huh!
+  }
+
+StripeSpiral       { ; Funny spiral
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=lambdafn function=ident corners=-4.0/4.0/-3.0/3.0
+  params=1/0.4 float=y maxiter=250 inside=0 decomp=256
+  colors=00zzzz00zyyy00yxxx00xwww00wvvv00vttt00tsss00srrr00rqqq00qppp00onnn00n\
+  mmm00mlll00lkkk00jjjj00ihhh00hggg00gfff00eeee00dccc00cbbb00baaa00a```00____0\
+  0ZYYY00YXXX00XWWW00VVVV00UUUU00TSSS00SRRR00QQQQ00PPPP00OOOO00NMMM00LLLL00KKK\
+  K00JJJJ00IHHH00HGGG00FFFF00EEEE00DDDD00CBBB00AAAA009999008888007777005555004\
+  444003333002222000<3>0011110022220033330044440055550055550066660077770088880\
+  0999900AAAA00AAAA00BBBB00CCCC00DDDD00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJ\
+  J00KKKK00LLLL00LLLL00MMMM00NNNN00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00U\
+  UUU00VVVV00VVVV00WWWW00XXXX00YYYY00ZZZZ00____00____00````00aaaa00bbbb00cccc0\
+  0dddd00eeee00eeee00ffff00gggg00hhhh00iiii00jjjj00jjjj00kkkk00llll00mmmm00nnn\
+  n00oooo00oooo00pppp00qqqq00rrrr00ssss00tttt00tttt00uuuu00vvvv00wwww00xxxx00y\
+  yyy00zzzz
+  }
+
+BofMandel          { ; Mandebrot with inside=bof60 -- just great!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel corners=-2.5/1.499996/-1.49998/1.5 inside=bof60
+  colors=000000<15>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<1\
+  4>300000020<14>0c0<5>NkN
+  }
+
+Torch              { ; Try with decomp=256 (neat!), try with inside=zmag!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=cosxx/sqr
+  corners=-2.630387/-1.466392/0.776026/-0.775985/-1.466392/-0.775985
+  params=0/0/1 maxiter=1024 inside=bof60 colors=@volcano.map
+  }
+
+Lips               { ; I almost kissed the monitor ;-)
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=cosxx/sqr
+  corners=-2.384768/-2.5243028/-0.0542918/-0.1769083/-2.361681/-0.1134991
+  params=0/0/1 maxiter=1024 inside=0 decomp=256
+  colors=000<30>o44000<222>000
+  }
+
+GoldenMbrot        { ; Very metallic and 3d!
+                     ; -jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-1.999943527971/-1.9999435171966/-0.00000000402568/0.0000000040525
+  float=y maxiter=32767 inside=0 decomp=256 colors=000zh0<253>000
+  }
+
+SlimeMold2         { ; Hey!  I found another one!
+		     ; -jute@sday.pulp.nullnet.fi
+  reset type=formula formulafile=fractint.frm formulaname=Sterling
+  corners=-0.316441/0.194747/-0.191688/0.191693 maxiter=1000 inside=0
+  potential=255/200/1000
+  colors=000<13>000011011122233<45>zzz<15>000<34>zz0<7>00P<14>00z<5>pzz<7>00z<\
+  23>030000<77>000
+; Colors bit like in the first, older SlimeMold.  Which one is better?
+; colors=000<13>000011011122233<45>zzz<15>000<34>u0U<5>0L0<16>0z0<5>pzA<7>0z0<\
+; 23>030000000<76>000
+  }
+
+Lambdacosxx        { ; Lambdafn/cosxx with nothing but *nice* colors
+                     ; -jute@sday.pulp.nullnet.fi
+  reset type=lambdafn function=cosxx passes=t
+  corners=-4.0/4.007797/-3.003891/3.0 params=1/0.4 maxiter=300 inside=0
+  colors=000nn0<2>zz0<15>000<15>0z0<15>000<15>z0z<14>40400K<15>zzz<14>44N000<1\
+  5>WWW<14>000<15>z00<15>000<15>0zz<15>000<15>00z<15>000<11>jj0
+  }
+
+Fiver              { ; A mandelbrot.  Nice colors.
+  reset type=mandel
+  corners=-1.0661442554/-1.0660977245/-0.24673846011/-0.24677498721/-1.0661099\
+  784/-0.24678416645 float=y maxiter=1000 inside=0
+  colors=000Iqz<52>11z00z00y00x<20>00c000<38>000<7>5Xx<10>zzz<12>zz0<30>z20z00\
+  y00<29>200000011<29>KxxLzzLzz<7>Jrz
+  }
+
+Blue_Thought       { ; Electric... cold...  beautiful...
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=recip/cotan
+  corners=2.729163/9.137372/-2.470697/2.691393 params=1000/80/111/1
+  bailout=600 inside=maxiter outside=imag invert=4/10/0
+  colors=000<9>20920A20C<32>B2k<10>zzz<22>G8lD5kD5k<53>000zzz<15>wc0<7>z00<15>\
+  000<15>z00<7>zc0<14>zxvzzzyyz<37>00z
+  }
+
+Teardrop           { ; Like its ray traced cousin from POV-Ray!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=fn(z)+fn(pix) function=recip/cotan
+  corners=3.38375/8.957754/4.10155/-3.880854/8.957754/-3.880854
+  params=1000/80/111/1 bailout=600 inside=maxiter outside=imag
+  invert=4/10/0 colors=0000OO<29>wxxzzzzzz<101>0OO000<117>000
+  }
+
+French             { ; Decompressed mandelbrot, nice.  Try convolution too!
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel passes=b corners=-2.5/1.5/-1.5/1.5 float=y maxiter=100
+  inside=maxiter decomp=256
+  colors=00099z<5>zzz<7>z0000u<6>uuu<7>u0000p<6>ppp<7>p0000k<6>kkk<7>k0000f<6>\
+  fff<7>f0000a<6>aaa<7>a0000X<6>XXX<7>X0000S<6>SSS<7>S0050X<6>SSS<7>X05A0a<6>X\
+  XX<7>a0AF0f<6>aaa<7>f0FK0k<6>fff<7>k0KP0p<6>kkk<7>p0PU0u<6>ppp<7>u0UZ0z<6>uu\
+  u<7>z0Zc0z<6>zzz<7>z0c
+  }
+
+Necklace           { ; name tells it all
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel1
+  corners=-0.084812/0.084761/-0.632068/-0.504884 maxiter=300 inside=0
+  colors=000000<5>U00<4>aP0cU0fZA<4>zzz<5>gZ9cU0bP0<3>W50U00U00<45>O00100<3>U0\
+  0<3>zzz<6>00z<5>zzzRRz<8>zzz100<141>100zzz
+  }
+
+Spiral^2           { ; Spirals in a spiral -- basic...
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=mandel
+  corners=-0.78976859/-0.78618437/-0.16314707/-0.16045978 maxiter=1000
+  inside=0 colors=@gamma2.map
+  }
+
+CoolJulia          { ; Julia with parms changed... very complex.  Beautiful.
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=0.1349/0.6
+  maxiter=1000 inside=0 colors=00000z<83>zz0zz0zy0<81>z10z00z00y01<82>00z
+  }
+
+SpiderWeb          { ; bifurcation
+                     ; --jute@sday.pulp.nullnet.fi
+  reset type=bifurcation corners=1.9/2.999999/-0.000004/1.34 params=1/0.1
+  maxiter=40 inside=0
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
+  utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpp
+  }
+
+NiceMbrot2         { ; <yawn>... But it's beautiful anyway.
+  reset type=mandel
+  corners=-0.775807353/-0.77572258/0.134632427/0.134559061/-0.775741635/0.1345\
+  44775 maxiter=400 inside=0
+  colors=000zW0<7>z00<15>00z<15>0z0<15>z0z<14>N0NK0KJ1L<13>2Sk0Um0Vm<13>0km0mm\
+  0mm<14>0cz<15>zzz<30>zd2zc0zd0<14>zz0<15>z00<14>ZZZccc<7>zzz<6>00z<15>zz0<6>\
+  z_0
+  }
+
+Boogieman          { ; or a spider... 
+  reset type=mandel passes=b
+  corners=0.34942825097/0.349436912529/-0.066686580316/-0.066678819744/0.34942\
+  7644926/-0.066685769492 float=y maxiter=500
+  colors=000zyw<28>zd2zc0zd0<14>zz0<15>z00<14>ZZZccc<7>zzz<6>00z<15>zz0<15>z00\
+  <15>00z<15>0z0<15>z0z<14>N0NK0KJ1L<13>2Sk0Um0Vm<13>0km0mm0mm<14>0cz<15>zzzzz\
+  y
+  }

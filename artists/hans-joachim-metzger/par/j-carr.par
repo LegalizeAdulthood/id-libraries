@@ -1,0 +1,225 @@
+Carr-501_mod       { ; All puns intended and apologies to Bob :-)
+                     ; Modified by Jack Orman
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-501
+  corners=-1.868245/1.840665/-1.473577/1.313906 maxiter=1150
+  inside=255 outside=summ potential=255/222/1000 colors=@prime.map
+  }
+
+Carr-501_mod2      { ; Modified by Jack Orman
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-501
+  corners=-2.27532/2.247745/-1.779531/1.619849 params=0.1111111
+  maxiter=2048 fillcolor=0 inside=0 outside=imag potential=255/111/16
+  finattract=y colors=@prime.map
+  }
+
+Carr-559-3D_mod    { ; Neon3 map from Mapmaker
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-559
+  function=sin/sqr corners=-2.698427/2.857911/-2.252417/1.976244
+  maxiter=1150 inside=epsiloncross outside=imag potential=255/222/64
+  colors=00000800550C<12>P0qR0tS0wT0zS0w<6>H0a400<14>z00<15>000F70<12>qR0t\
+  T0wU0zV0wU0<14>F70000<15>zz0<15>000583<15>bzT<15>583080<15>0z0<15>080084\
+  <15>0zz<15>084005<15>00z<13>00C
+  }
+
+Carr-561-3D**      { ; Modified by Jack Orman
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-561
+  function=cotanh/sinh passes=t
+  corners=-5.952609/5.966909/-4.610929/4.569953 maxiter=1150
+  fillcolor=0 inside=bof60 outside=real colors=@prime.map
+  }
+
+Carr-561-3D**mod   { ; Modified by Jack Orman
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-561
+  function=cos/sin corners=-2.734339/2.748639/-2.132091/2.091115
+  float=y maxiter=1150 fillcolor=0 inside=epsiloncross outside=mult
+  decomp=256 distest=-1/71 biomorph=0 colors=@prime.map
+  }
+
+Carr-560-3D*mod    { ; Modified by Jack Orman
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-560
+  function=conj/flip passes=t
+  corners=-5.780911/5.763371/-4.433644/4.435049 float=y maxiter=1024
+  fillcolor=180 inside=bof60 outside=imag distest=3/16 biomorph=0
+  colors=@prime.map
+  }
+
+2*Func_1           { ; There was a young man named Carr
+                     ; Carr_518 Converted by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=conj/sinh passes=2 corners=-2/2.000012/-1.500014/1.5
+  params=0.14159265358979001 maxiter=1024 inside=bof60 outside=real
+  colors=000X0a<9>000<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0\
+  <10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00\
+  z<14>000<11>g0NkVPozRsz0vzVzzXvzz<8>O0C<5>000<15>p0w<4>_0d
+  }
+
+2*Func_2           { ; Whose fractals spread near and far
+                     ; Carr_518 Converted by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=conj/flip passes=2
+  corners=-2.008367/1.991644/-1.700967/1.299047
+  params=0.71828182845904998 maxiter=1024 inside=bof60 outside=real
+  colors=000X0a<9>000<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0\
+  <10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00\
+  z<14>000<11>g0NkVPozRsz0vzVzzXvzz<8>O0C<5>000<15>p0w<4>_0d
+  }
+
+2*Func_3           { ; But his math was a crime
+                     ; Carr_518 Converted by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=conj/flip passes=2
+  corners=-2.008367/1.991644/-1.700967/1.299047
+  params=0.055500000000000001/0.01111 maxiter=1024 inside=bof60
+  outside=real
+  colors=000N0GL0C<4>B02900700500005<13>00c<15>zzzvxyrvwnrvjntfls<2>WaoSYm\
+  OWl<5>0Kc0Ka<8>02F00D00A<2>003000022<14>0cc<15>zzz<15>0c0<14>030000200<1\
+  3>`00c00d44<13>zzzyxvwvr<4>pe_oaWmYSlUOjQKiMGgICfE8dC4cB0<9>F10D00A00800\
+  <2>000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusov\
+  upwxvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<5>P0G
+  }
+
+2*Func_4           { ; Without reason or rhyme
+                     ; Carr_518 Converted by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=conj/sqr passes=2
+  corners=-2.250521/2.23381/-1.700017/1.663218
+  params=0.055500000000000001/0.01111 maxiter=1024 inside=bof60
+  outside=real
+  colors=000N0GL0C<4>B02900700500005<13>00c<15>zzzvxyrvwnrvjntfls<2>WaoSYm\
+  OWl<5>0Kc0Ka<8>02F00D00A<2>003000022<14>0cc<15>zzz<15>0c0<14>030000200<1\
+  3>`00c00d44<13>zzzyxvwvr<4>pe_oaWmYSlUOjQKiMGgICfE8dC4cB0<9>F10D00A00800\
+  <2>000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusov\
+  upwxvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<5>P0G
+  }
+
+2*Func_5           { ; Which left his .FRM without .PAR
+                     ; Carr_518 Converted by Jack Orman
+                     ; Flip/Cotanh
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=flip/cotanh passes=2
+  corners=-2.250521/2.23381/-1.700017/1.663218
+  params=0.055550000000000002 maxiter=1024 inside=bof60 outside=imag
+  colors=@chroma2.map
+  }
+
+2*Func_6_B&W       { ;
+                     ; Carr_518 Converted by Jack Orman
+                     ; Flip/Cotanh
+  reset=1821 type=formula formulafile=j-carr.frm formulaname=Carr-Orman1
+  function=flip/ident passes=2
+  corners=-2.250521/2.23381/-1.700017/1.663218
+  params=0.14158999999999999 maxiter=1024 inside=bof60 outside=imag
+  colors=333BBB<10>GGGGGGHHHIIIIIIIIIJJJ<3>LLLLLLMMMNNN<8>SSSTTTTTTTTT<46>\
+  yyyzzzyyy<45>UUUTTTTTTTTT<5>PPPOOOOOOOOO<2>LLLLLLKKKKKKKKKJJJIIIIIIIIIHH\
+  H<23>777777777777666<39>333333444<19>888888888999999999<3>BBB
+  }
+
+Kirlian_1          { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=conj/flip passes=2
+  corners=-2/2.000012/-1.500014/1.5
+  params=2/0/0.59999999999999998/0.29999999999999999 inside=bof60
+  outside=imag colors=@subdue.map
+  }
+
+Kirlian_2          { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=conj/flip passes=2
+  corners=-2/2.000012/-1.500014/1.5
+  params=5/0/0.59999999999999998/0.29999999999999999 inside=bof60
+  outside=imag colors=@subdue.map
+  }
+
+Vortex_1           { ; Formula derived by Jack Orman
+                     ; Conj/flip
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=conj/flip passes=2
+  corners=-2.242153/2.242178/-1.68162/1.681615
+  params=-2/0/0.59999999999999998/0.29999999999999999 inside=bof60
+  outside=imag
+  colors=000eVA<33>C54B44A33932822944<6>IA6JACKB6<19>fTDhUEhUE<29>ykEzlEzl\
+  EzlF<58>zywzyxzyyzzzzzzzzz<59>zmHzmGzmFzlEzlEykE<21>fVA
+  }
+
+Kirlian_3          { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=cos/sqr passes=2
+  corners=-0.8979573/0.8979763/-0.6797308/0.6672021
+  params=2/0/0.11828182845905/0.14159265358979001 inside=bof60
+  outside=imag potential=256/222/111 colors=@subdue.map
+  }
+
+Cave_1             { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=sqr/cosh passes=2
+  corners=-1.687898/1.6879/-1.272191/1.25965
+  params=2/0/0.31828182845905001/0.14159265358979001 inside=bof60
+  outside=imag potential=256/222/111
+  colors=000kZNkZOk_Ol_Ol`Pl`QmaQ<15>rh_si`siasjbsjb<22>wurwuswvuwvvwvvwvw\
+  wuvwuvwtuwts<25>rharg`rg`qf_qfZqeY<8>naTnaSm`Sl`R<2>kZPkZOkYOjYO<7>fUJfU\
+  IeTIdTHdSGdSGcRGcRFbQEaQE<3>_OC_OCZNCYNB<2>WLAVL9VK9VK9<11>NE4ME4LD4KD4K\
+  C3<24>210100100100<33>PG5PH5QH5RH6RI6SI6<2>UK8VK8VL8VL9<3>YNAZOA_OB_OC`P\
+  C`PC<3>bREcSEdSFdTGdTG<3>gVIgWJhWJhWJ<3>jYM
+  }
+
+Circle_1           { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=sqr/cotanh passes=2
+  corners=-1.687898/1.6879/-1.272191/1.25965
+  params=5/0/0.31828182845905001/0.14159265358979001 inside=bof60
+  outside=imag potential=256/222/0
+  colors=000`40d40i40<2>s40v40x40y40z40z40z40y40x40<2>p40m40i40d40`40<4>A4\
+  0440040<15>0z0<15>0403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcESY\
+  DQUDOPCMKBJHAHD9FA7D86A6585464344450<4>WD0`F0dG0iI0<2>sN0vP0xR0yS0zU0zV0\
+  zU0yS0xR0<2>pM0mK0iI0dG0`F0<4>A6045006606607708808A09C09F0AI<2>0CV0DZ0Dd\
+  <2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C08A0880770660662679A7ED8KH9PKBVOD\
+  _SGdVJhZNmaR<2>vldxpiysozwtzzyzwtysoxpi<3>maRhZNdVJ_SGVODPKBKH9ED89A7267\
+  3769A6EE6<2>VO8`S9dVAiZB<2>siFvlHxpI<2>zzNzwMysKxpI<2>peEmbCiZBdVA`S9VO8\
+  PL7<3>376365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7cq7h<2>s8ys8tr7nq7ho7cm7Z\
+  <2>c7LA40<3>W40
+  }
+
+Circle_2           { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=cos/sinh passes=2
+  corners=-1.687898/1.6879/-1.272191/1.25965
+  params=4/0/0.31828182845905001/0.14159265358979001 inside=bof60
+  outside=imag potential=256/222/0 colors=@subdue.map
+  }
+
+Toroid_field       { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=cos/cosxx passes=2
+  corners=-1.687898/1.6879/-1.272191/1.25965
+  params=4/0/3.14159265358979/2.71828182845905 inside=bof60
+  outside=imag potential=256/222/0 colors=@prime.map
+  }
+
+Toroid_2           { ; Formula derived by Jack Orman
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=cos/cotanh passes=2
+  corners=-1.687898/1.6879/-1.272191/1.25965
+  params=4/0/3.14159265358979/2.71828182845905 inside=bof60
+  outside=imag potential=256/222/0 colors=@prime.map
+  }
+
+Planetscape        { ; (c) 1995 Jack A. Orman
+                     ; No commercial use without permission
+  reset=1920 type=julia(fn||fn) function=asinh/sqr passes=b
+  corners=-1.38681/1.499298/-1.083267/1.080185
+  params=-0.44159265358979/-0.71828182845905/0.04159265358979
+  maxiter=2048 inside=bof60 potential=64/401/2000
+  colors=000008<13>00z<14>000<11>g0NkVPozRsz0vzVzzXvzz<8>O0C<5>000<15>p0w<\
+  15>000<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0\
+  gf0ed0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000004
+  }
+
+Tau_Ceti_1         { ; Based on Sepia.map
+  reset=1821 type=formula formulafile=06Carr.frm formulaname=Carr-560
+  function=acos/ident passes=b
+  corners=-4.719733/4.702206/-3.618423/3.619818 params=0/0/0/0/0/0
+  float=y maxiter=128 inside=epsiloncross outside=summ
+  distest=255/64/640/480 biomorph=0 finattract=y
+  colors=000SOEG40<61>`VKG40K40G40G10G40G30pgbfYR<63>zzhzzhzyh<115>G41SLE
+  }
+

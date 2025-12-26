@@ -1,0 +1,399 @@
+;; FOR FRACTINT v19.6
+
+;; Jo_We_75
+;; Zooms into Carr2904.
+
+;; Time listed on the first line reflects creation on a P233MMX or P166.
+;; running a resolution of 1600x1200 with 256 colors.
+
+;; Par and Images Copyright 1999 by Hans-Joachim Weber
+;; Images in this file MAY NOT BE USED FOR COMMERCIAL PURPOSES without the
+;; consent of me.
+
+;; Jo Weber
+;; CIS 100424,35
+
+;; calculated with Fractint v19.6
+;; 7/1999
+;; needs carr2904.frm.
+
+;; Your comments are welcome!
+
+;; Enjoy!  -- Jo  --
+;; http://www.joweber.de
+
+frm:Carr2904{;Modified Sylvie Gallet frm. [101324,3444],1996
+;passes=1 needs to be used with this PHC formula.
+b5=(pixel-conj(0.1/pixel-flip(0.01/pixel)))^5
+b4=pixel-conj(0.1/pixel-flip(0.01/pixel))
+c=whitesq*b4-(whitesq==0)*b4
+z=whitesq*b5-(whitesq==0)*b5
+c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
+l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
+bailout=16,iter=0:
+t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
+t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
+z=z*z+c,
+c=((z+c/2.125)-0.0125)
+iter=iter+1
+|z|<=bailout
+}
+
+6c290400           { ; t=  0:20:44.28 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:45:02
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.00186986/-0.00682851/0.8171541/1/90
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290401           { ; t=  0:53:26.28 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:45:34
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=0.00833664/0.615638/3.348992 params=200/300/400/550
+  float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290402           { ; t=  1:04:12.25 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:45:42
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.00186986/-0.00682851/3.928625/1/90
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290403           { ; t=  0:59:50.20 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:45:50
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.155497/0.605178/16.10092/1/-24.999
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290404           { ; t=  1:12:58.99 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:45:58
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.07034315965182968/+0.68387458277122600/52.328
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290405           { ; t=  1:31:31.56 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:06
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1 center-mag=0.020288/0.534451/11.96069
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290406           { ; t=  0:39:10.92 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:13
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1 center-mag=0.0153083/0.811382/10.59808
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290407           { ; t=  1:02:25.15 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:21
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=+0.01580624123276864/+0.75310732003546250/52.328
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290408           { ; t=  1:08:03.10 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:29
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.0116354/0.162972/18.88762/1/152.498
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290409           { ; t=  0:41:49.54 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:41
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=0.156502/0.114579/16.10092/1/145 params=200/300/400/550
+  float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290410           { ; t=  0:39:44.92 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:49
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.145806/0.0233111/16.10092/1/105 params=200/300/400/550
+  float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290411           { ; t=  0:50:51.77 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:46:59
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=+0.12155019282902680/+0.14410332841292370/32.46153/1/167.5
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290412           { ; t=  1:11:23.69 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:07
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.02076315650896974/+0.15536962681304270/63.47479/1/162.497
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290413           { ; t=  0:59:54.22 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:15
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.01306205972896911/+0.12302392509369300/67.45579/1/162.498
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290414           { ; t=  1:17:13.29 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:22
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=+0.00457563102330322/+0.17161104671780510/109.8117/1/162.498
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290415           { ; t=  0:48:39.74 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:30
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.07375719916463173/+0.79910539672031120/37.85029/1/-19.999
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290416           { ; t=  0:53:59.28 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:38
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.01916812695522684/+0.84182335653396520/77.92706/1/-32.498
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000rY0oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN0<3>`00<3>mVQpbWtj\
+  awqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6T<3>K6AG65C50<3>33\
+  1022055<3>0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN0gJ0<2>p80<2>R0\
+  0P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3>QWgTZkV`nXcr<9\
+  >CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4>JQ5HN6EK7CH89E\
+  96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>NhlJgkFgk<3>0ch0a\
+  e0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3>I00J00K00<3>O0\
+  0<4>zg0xd0u`0
+  }
+
+6c290417           { ; t=  1:03:05.25 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:50
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=0.119458/0.140477/25.13544/1/-17.499
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }
+
+6c290418           { ; t=  0:48:28.03 
+                     ; on a P233MMX at 1600x1200  Jul 22, 1999  15:47:58
+                     ; Par and Image Copyright 1999 by Jo Weber
+                     ; e-mail to JoWeber@compuserve.com
+                     ;  Version 1961 Patchlevel 78
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=Carr2904 passes=1
+  center-mag=-0.06395375038261862/+0.10304846585200160/44.54627/1/152.497
+  params=200/300/400/550 float=y maxiter=647 periodicity=0 2935
+  colors=000841<2>022<3>0DD0GG0JJ0MM0P00M24L08TW<3>OXeSYgWZi__lc`n0TplQ0iN\
+  0gJ0<2>p80<2>R00P00<4>000023057kbs<3>OKSIFLCAE657000220457<3>DFLFIPHKS<3\
+  >QWgTZkV`nXcr<9>CFLADH8AE<2>23300000500A<3>05D07D08E<4>EN8HQ7KT6<3>We0<4\
+  >JQ5HN6EK7CH89E96AB47A149000<3>II0MM0RR0WW0<3>hhMlkSooY<2>zynwtosop<8>Nh\
+  lJgkFgk<3>0ch0ae0Zb<3>22R<3>44F45C569335000000400<2>A00C00C00D00000F00<3\
+  >I00J00K00<3>O00<3>rZ0zg0xd0<2>oU0<2>0CI0FM<6>YdAbh8gl6<3>zz0<4>nY0lT0iN\
+  0<3>`00<3>mVQpbWtjawqhzyn<3>zkZygVydR<2>yUF<3>yHLxENxBOx7Qx4R<3>h5Sc5S_6\
+  T<4>G65C50A50
+  }

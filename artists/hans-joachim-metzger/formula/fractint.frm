@@ -3347,3 +3347,1779 @@ sg_ifs_45_J {
   ;SOURCE: 99msg.frm
 }
  
+Sterling (XAXIS) {; davisl
+  z = Pixel:
+  z = ((z/2.7182818)^z)/sqr(6.2831853*z)
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
+             ; resolution specific - 1024x768
+             ; p1 = 1st julia parameters
+             ; p2 = 2nd julia parameters
+             ; p3 slides 1st julia around the plane wrt the 2nd
+  count = (count + 1) * (count != 1023)
+  evenodd = (evenodd == (count == 1))
+  oddeven = (evenodd == 0)
+  z=pixel + p3*evenodd
+  p = p1*evenodd + p2*oddeven:
+  z=z*z + p
+  |z| < 4
+  ;SOURCE: phc_1.frm
+}
+ 
+BILL_err7 (yaxis) {; Bill Rossi
+  z=Pixel:
+  tmp1=fn1(z)^fn2(z)
+  tmp2=fn3(z)^fn4(z)
+  z=(tmp1/tmp2) 
+  |z| <= 4
+  ;SOURCE: jpl1.frm
+}
+ 
+CarlsonJ1 {; from P. Carlson, modified by J.P. Louvet
+           ; P1 = c
+           ; P2 = degre
+           ; P3 = iter (normalement 4)
+  z=pixel
+  c=P1:
+  Z=fn1(C*(Z^P2-1))
+  |z|<=P3
+  ;SOURCE: jpl1.frm
+}
+ 
+InverseJulia {; J.P. Louvet
+              ; P1 = c
+              ; P2 = iter (normalement 4)
+  z=pixel
+  c=P1:
+  z=1/(z^2+c)
+  |z|<=P2
+  ;SOURCE: jpl1.frm
+}
+ 
+InverseJuliaFn {; after Pokorny
+                ;  modified by J.P. Louvet
+                ; P1 = c
+                ; P2 = iter (normalement 4)
+  z=pixel
+  c=P1:
+  z=fn1(1/(z^2+c))
+  |z|<=P2
+  ;SOURCE: jpl1.frm
+}
+ 
+OK-01 {; TRY P1 REAL = 10000, FN1 = SQR
+  z = 0, c = pixel:
+  z = (c^z) + c
+  z = fn1(z)
+  |z| <= (5 + p1)
+  ;SOURCE: fractint.frm
+}
+ 
+spiderM {
+  z=pixel, f=pixel, g=pixel: 
+  f=f/p1+z
+  z=fn1(z^(p2+g))+fn2(f)
+  |z| <= 4 
+  ;SOURCE: jpl1.frm
+}
+ 
+JPL4' (yaxis) {; J.P. Louvet
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=Pixel
+  c=Pixel:
+  z=fn1(z^2+1)+c
+  |z|<=4
+  ;SOURCE: jpl1.frm
+}
+JPL4a' (yaxis) {; J.P. Louvet
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=Pixel
+  c=Pixel:
+  z=fn1(z^2+1)+c
+  |z|<=4
+  ;SOURCE: jpl1.frm
+}
+Carr2918 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=(pixel^5-conj(0.1/pixel)-flip(0.1/pixel))
+  b4=(pixel^5-(b5+conj(sqr(b5*(pixel)))))
+  c=whitesq*sqr(b4)-(whitesq==0)*conj(b4)
+  z=whitesq*sqr(b5)-(whitesq==0)*(b5)
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=((z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21))
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2922 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+          ; Modified for IF..ELSE logic by Sylvie Gallet, 05/20/97
+  IF (whitesq)
+    b4 = sqr(pixel) - conj(0.1/pixel) - flip(0.01/pixel)
+    c = sqr(b4) / 10  + (-0.7206,0.2132)
+    z = z0 = sqr(conj(b4) + real(0.1/pixel))
+  ELSE
+    b4 = sqr(pixel) - conj(0.1/pixel) - flip(0.01/pixel)
+    c = - conj(b4) / 10  + (-0.7206,0.2132)
+    z = z0 = b4 + real(0.1/pixel)
+  ENDIF
+  bailout = 16, iter = 0
+  :
+  IF (iter==p1)
+    z = 0, c = z0 * 0.15 + (-0.7206,0.2132)
+  ELSEIF (iter==imag(p1))
+    z = 0, c = z0 * 0.225 + (-0.7206,0.2132)
+  ELSEIF (iter==p2)
+    z = 0, c = z0 * 0.3375 + (-0.7206,0.2132)
+  ELSEIF (iter==imag(p2))
+    z = 0, c = z0 * 0.50625 + (-0.7206,0.2132)
+  ENDIF
+  iter = iter + 1
+  z = sqr(z) + c
+  |z| <= bailout
+  ;SOURCE: phctopng.frm
+}
+ 
+Carr2935 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b4=conj(pixel)-pixel+conj(0.1/pixel)
+  b5=cabs(pixel/2)-pixel^2
+  c=whitesq*sqr(b4)-(whitesq==0)*sqr(b4)
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5)
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=z*z+(-0.7456,-0.122)+c/10
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2939 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=flip(flip(pixel/2))^5-conj(0.13/pixel)-flip(0.1/pixel)+0.3
+  b4=pixel^3-conj(0.13/pixel-cabs(0.1/pixel))
+  c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5)
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=0.2*z^3+z^2+(-0.7656,-0.232)+c/10+c
+  iter=iter+1
+  imag(flip(z))<=bailout
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2932 {; Modified OK-42
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel
+  p1x=real(p1)+1, p1y=imag(p1)+1
+  p2x=real(p2)+1, p2y=imag(p2)+1
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5):
+  zx=real(z), zy=imag(z)
+  x=fn1(zx*p1x-zy*p1y)+fn2(zx*p2x-zy*p2y)
+  y=fn3(zx*p1y+zy*p1x)+fn4(zx*p2y+zy*p2x)
+  z=(|x+flip(y)|)+(x+flip(y))+(-0.7456,-0.132)+(x+flip(y))/10
+  |z|<=4
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2931 {; Modified OK-42
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel
+  p1x=real(p1)+1, p1y=imag(p1)+1
+  p2x=real(p2)+1, p2y=imag(p2)+1
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5):
+  zx=real(z), zy=imag(z)
+  x=fn1(zx*p1x-zy*p1y)+fn2(zx*p2x-zy*p2y)
+  y=fn3(zx*p1y+zy*p1x)+fn4(zx*p2y+zy*p2x)
+  z=x+flip(y)+(-0.7456,-0.132)+(x+flip(y))/10
+  |z|<=4
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2930 {; Modified OK-42
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel
+  p1x=real(p1)+1, p1y=imag(p1)+1
+  p2x=real(p2)+1, p2y=imag(p2)+1
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5):
+  zx=real(z), zy=imag(z)
+  x=fn1(zx*p1x-zy*p1y)+fn2(zx*p2x-zy*p2y)
+  y=fn3(zx*p1y+zy*p1x)+fn4(zx*p2y+zy*p2x)
+  z=x+flip(y)
+  |z|<=4
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2891 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel-conj(0.1/pixel)-flip(0.01/pixel)
+  b3=|cos(conj(conj(pixel^30.5)))|
+  b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))\
+      -b3-0.4)-0.8))))+|flip(flip(2*b5^4))|
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*b5
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ucarr.frm
+}
+ 
+Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b4=(sqr(pixel))/(conj(2/pixel)*sin(2/pixel))
+  b5=(b4/(cos(-0.7456,0.2)))-flip(0.1/pixel)+0.4
+  c=whitesq*cabs(b4)-(whitesq==0)*sqr(b4)
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5)
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=z*z+(-0.7456,-0.132)+c/10
+  iter=iter+1
+  imag(flip(z))<=bailout
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2907 (XYAXIS) {; Halley PHC
+                   ; passes=1 needs to be used with this PHC formula.
+  b5=1/pixel
+  z=b5*(whitesq+b5*(whitesq==0)): 
+  z5=z*z*z*z*z
+  z6=z5*z
+  z7=z6*z
+  z=(z-p1*((z7-z)/((14.0*z6-2)-(84.0*z5)*(z7-z)/(28.0*z6-4))))
+  0.0001<=|z7-z|
+  ;SOURCE: 42ucarr.frm
+}
+ 
+Carr2904 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=(pixel-conj(0.1/pixel-flip(0.01/pixel)))^5
+  b4=pixel-conj(0.1/pixel-flip(0.01/pixel))
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*b5
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=z*z+c
+  c=((z+c/2.125)-0.0125)
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ucarr.frm
+}
+ 
+Carr2926 {; Modified-inandout04 
+          ; passes=1 needs to be used with this PHC formula.
+  k=((1)*(|p1|<=0)+p1)
+  test=(4*(real(p2)<=0)+real(p2)*(0<p2))
+  b4=cabs(pixel*2)-log(conj(0.5/pixel))
+  b5=oldz=pixel-conj(pixel-1/log(tan(1/pixel))-1/log(2/pixel))
+  c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
+  z=whitesq*sqr(b5)-(whitesq==0)*conj(b5):
+  a=(|z|<=|oldz|)*(c)
+  b=(|oldz|<|z|)*(c*k)
+  c=(a+b)
+  oldz=z
+  z=z*z+c
+  |z|<=test
+  ;SOURCE: 42vcarr.frm
+}
+ 
+Carr2882 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b3=|sin(conj(conj(pixel^30.5)))|
+  b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))-b3-0.4)-0.8))))
+  b5=(-0.7564,0.21978)*((-1.099,-0.2249)/(-0.8606,-0.0959))\
+      -flip(0.001/pixel)
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*b5
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ucarr.frm
+}
+ 
+JoWe55c36a {; from a modified Carr-formula
+            ; 6/1997 JoWeber CIS [100424,35]
+  c=z=p1/pixel:
+  z1=fn1(z) + c
+  z=fn2(z1) + p2
+  |z| <=p3
+  ;SOURCE: jo_we_71.frm
+}
+ 
+JoWe55d36a {; from a modified Carr-formula
+            ; 5/1999 JoWeber CIS [100424,35]
+  c=z=p1/pixel:
+  z1=fn1(z) + c
+  z=fn2(z1) + c/p2
+  |z| <=p3
+  ;SOURCE: jo_we_71.frm
+}
+ 
+Carr2884 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+          ; Rewritten for if..else by Sylvie Gallet 5/22/98
+  IF (whitesq)
+    c = 0.15/log(exp(pixel^7 + |sin(pixel^3.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z = zorig = (pixel - conj(0.1/pixel) - flip(0.01/pixel))^7
+  ELSE
+    c = - 0.15/log(exp(pixel^7 + |sin(pixel^3.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z = zorig = - (pixel - conj(0.1/pixel) - flip(0.01/pixel))^7
+  ENDIF
+  bailout = 16, iter = 0
+  :
+  IF (iter == p1)
+    z = c = (-0.7456,-0.132) + 0.15*zorig - 1/(zorig*9000)
+  ELSEIF (iter == imag(p1))
+    z = c = (-0.7456,-0.132) + 0.225*zorig - 1/(zorig*13500)
+  ELSEIF (iter == p2)
+    z = c = (-0.7456,-0.132) + 0.3375*zorig - 1/(zorig*20250)
+  ELSEIF (iter == imag(p2))
+    z = c = (-0.7456,-0.132) + 0.50625*zorig - 1/(zorig*30375)
+  ELSE
+    z = z*z + c
+  ENDIF
+  iter = iter + 1
+  |z| <= bailout
+  ;SOURCE: 98msg.frm
+}
+ 
+Carr2958 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+          ; Converted to IF..ELSE logic by Sylvie Gallet, 02/21/98
+  b4 = abs(sinh(0.5+pixel/2))^3 - conj(0.1/pixel) - flip(0.1/pixel) + 0.5
+  IF (whitesq)
+    c = conj(b4)/10 + (-0.7456,-0.132), z = zorig = sqr(b4)
+  ELSE
+    c = - sqr(b4)/10 + (-0.7456,-0.132), z = zorig = - conj(b4)
+  ENDIF
+  imagp1 = imag(p1), imagp2 = imag(p2), bailout = 16, iter = 0
+  :
+  IF (iter == p1)
+    z = 0, c = 0.15 * zorig + (-0.7456,-0.132)
+  ELSEIF (iter == imagp1)
+    z = 0, c = 0.225 * zorig + (-0.7456,-0.132)
+  ELSEIF (iter == p2)
+    z = 0, c = 0.3375 * zorig + (-0.7456,-0.132)
+  ELSEIF (iter == imagp2)
+    z = 0, c = 0.50625 * zorig + (-0.7456,-0.132)
+  ENDIF
+  iter = iter + 1
+  z = z*z + c
+  z <= bailout
+  ;SOURCE: 42wcarr.frm
+}
+ 
+JoWe55c36b {; from a modified Carr-formula
+            ; 6/1997 JoWeber CIS [100424,35]
+  c=z1=z2=p1/pixel:
+  z1=fn2(fn1(z1) + c) + p2
+  z2=fn4(fn3(z2) + c) + p2
+  z=z1*whitesq+z2*(whitesq==0)
+  |z| <=p3
+  ;SOURCE: jo_we_71.frm
+}
+ 
+JoWe_34 {; Jo Weber [100424,35] 11/1996
+  z=pixel
+  bailout=p3 :
+  z=(exp(z)+1)/(exp(z)-1)
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jowe49.frm
+}
+ 
+JoWe_58_3 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  q=real(z), r=imag(z)
+  z=z/q-p1*sin(p2*z+r)
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_53.frm
+}
+ 
+jowe_62_1 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  q=real(z), r=imag(z)
+  z1=z*q, z2=z/q
+  z3=z*r, z4=z/r
+  z1=z1-z4, z2=z2+z3
+  h1=r-q, h2=r+q
+  z=z1^h1-z2^h2
+  z=fn1(p1*fn2(p2*z))+h1*h2
+  z=z+(z<0)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_63 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=sin(z)*(1+2*tan(z))+tan(z)*cos(z)
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_64 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=sin(z)*(1+2*tan(z))+tan(z)*cos(z)
+  q=real(z), r=imag(z)
+  z1=z*q, z2=z/q
+  z3=z*r, z4=z/r
+  z1=z1-z4, z2=z2+z3
+  z=fn1(z1-z2)-fn2(z2-z1)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_65 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=tan(sin(z)^2-cos(z^2))
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_65_1 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=tan(sin(z)^2-cos(z)^2)
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_65_1_phc {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=tan(sin(z)^2-cos(z)^2)
+  z=fn1(z)*(whitesq==0)+fn2(z)*whitesq
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_66 {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=(tan(z)^2+cotan(z)^2)/(sin(z)^2-cos(z)^2)
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_66_PHC {; by Jo Weber [100424,35], 11/1996
+  z=pixel
+  bailout=p3:
+  z=(tan(z)^2+cotan(z)^2)/(sin(z)^2-cos(z)^2)
+  z=fn1(z)*whitesq+fn2(z)*(whitesq==0)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_67 {; by Jo Weber [100424,35], 12/1996
+  z=pixel
+  bailout=p3:
+  z=(sin(z)-tan(z))/(cos(z)-cotan(z))
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_67_1 {; by Jo Weber [100424,35], 12/1996
+  z=pixel
+  bailout=p3:
+  z=(sin(z)-tan(z))/(sin(z)-cotan(z))
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_67_2 {; by Jo Weber [100424,35], 12/1996
+  z=c=pixel
+  bailout=p3:
+  z1=sin(z)-tan(z)
+  z2=cos(z)-cotan(z)
+  z1=z1+c
+  z2=z2+(z1>=0)
+  z=z1*z2
+  z=fn1(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+jowe_67_3 {; by Jo Weber [100424,35], 12/1996
+  z=pixel
+  bailout=p3:
+  z=fn1(sin(z)-tan(z))/fn2(cos(z)+cotan(z))
+  z=fn3(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+JoWe_xy_35 {; Jo Weber [100424,35] 11/1996
+            ; Added variable "newpixel". G. Martin 6/27/99
+  newpixel=3*sin(pixel)-5*sqr(sqr(sin(pixel)))
+  z=newpixel
+  bailout=p3:
+  x1=real(z), y1=imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  z=fn3(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+JoWe_XY_51m_1 {; Jo Weber [100424,35] 11/1996
+               ; Added variable "newpixel". G. Martin 6/27/99
+  k=(6,4), l = (0,4)
+  newpixel=cos(sin((k-pixel)/(l+pixel)))
+  z=newpixel
+  bailout=p3:
+  x1=real(z), y1=imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  z=fn3(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+JoWe_XY_51m_3 {; Jo Weber [100424,35] 11/1996
+               ; Added variable "newpixel". G. Martin 6/27/99
+  k=(0.6,0.44), l = (0,0.4)
+  newpixel=cos(sin((k-pixel)/(l+pixel)))
+  z=newpixel
+  bailout=p3:
+  x1=real(z), y1=imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  z=fn3(z)
+  |z|<=bailout
+  ;SOURCE: jo_we_54.frm
+}
+ 
+JoWe_XY_14 {; Jo Weber [100424,35], 10/1996
+            ; something by Sylvie Gallet or Brian E. Jones
+  bailout=p3
+  z = pixel*pixel-fn3(1-pixel):
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y2))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_XY_17b2 {; Jo Weber [100424,35], 10/1996
+              ; something by Sylvie Gallet or Brian E. Jones
+  bailout=p3
+  z=conj(conj(pixel/3-conj(0.10/pixel))):
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(y1))
+  y1=y1-fn1(y1-fn2(x1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_XY_17b3 {; Jo Weber [100424,35], 10/1996
+              ; something by Sylvie Gallet or Brian E. Jones
+  bailout=p3
+  z=conj(conj(pixel/3-conj(0.10/pixel))):
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(y1-fn2(y1))
+  y1=y1-fn1(x1-fn2(x1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_XY_17d2 {; Jo Weber [100424,35], 10/1996
+              ; something by Sylvie Gallet or Brian E. Jones
+              ; Added variable "newpixel". G. Martin 6/27/99
+  bailout=p3
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  z=cabs(2*newpixel)-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^6:
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(y1))
+  y1=y1-fn1(y1-fn2(x1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_xy_17f {; Jo Weber [100424,35], 10/1996
+             ; something by Sylvie Gallet or Brian E. Jones
+  bailout=p3
+  z=(2*pixel-conj(0.10/pixel)):
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_xy_17g {; Jo Weber [100424,35], 10/1996
+             ; something by Sylvie Gallet or Brian E. Jones
+  bailout=p3
+  z=(2*conj(pixel)-conj(0.30/pixel))+0.2:
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_xy_17h {; Jo Weber [100424,35], 10/1996
+             ; something by Sylvie Gallet or Brian E. Jones
+             ; Added variable "newpixel". G. Martin 6/27/99
+  bailout=p3
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  z=(2*tanh(newpixel)-conj(0.10/newpixel))+0.2:
+  x1=real(z), y1= imag(z)
+  x1=x1-fn1(x1-fn2(x1))
+  y1=y1-fn1(y1-fn2(y1))
+  z=p1*x1+p2*y1
+  |z|<=bailout
+  ;SOURCE: jo_we_48.frm
+}
+ 
+JoWe_xy_09 {; Jo Weber [100424,35], 10/1996
+            ; bailout = p3
+  z = c = pixel
+  bailout=p3
+  pa1=real(p1), pb1=imag(p1)
+  pa2=real(p2), pb2=imag(p2):
+  x1=real(z), y1=imag(z)
+  x=(x1*pa1-x1*pa2)+c
+  y=(y1*pb1-y1*pb2)+c
+  z=fn1(x+y)/2
+  |z|<=bailout
+  ;SOURCE: jo_we_46.frm
+}
+ 
+JoWe_xy_10 {; Jo Weber [100424,35], 10/1996
+            ; bailout = p3
+  z = c = pixel
+  bailout=p3
+  pa1=real(p1), pb1=imag(p1)
+  pa2=real(p2), pb2=imag(p2):
+  x1=real(z), y1=imag(z)
+  x=x1*pa1+fn1(z+pa2)
+  y=y1*pb1+fn1(z+pb2)
+  z=fn2(x+y)
+  |z|<=bailout
+  ;SOURCE: jo_we_46.frm
+}
+ 
+JoWe_xy_12 {; Jo Weber [100424,35], 10/1996
+            ; bailout = p3
+  z = c = pixel
+  bailout=p3
+  pa1=real(p1), pb1=imag(p1)
+  pa2=real(p2), pb2=imag(p2):
+  x1=real(z), y1=imag(z)
+  x=x1*pa1+fn1(z+pa2)
+  y=y1*pb1+fn2(z+pb2)
+  z=fn3(x)+fn3(y)
+  |z|<=bailout
+  ;SOURCE: jo_we_46.frm
+}
+ 
+Carr1977 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+1
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1978 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.7456,0.2), p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1979 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, c4=c^4, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = ((z^4)*c4+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1980 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.63,-0.4), p4=pixel^4, p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = 0.79*(z4*p4+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+(1.299,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1981 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(1/pixel))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1984 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1985 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+z6+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1986 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.7456,0.2), p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1991 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z =imag(pixel), c =pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
+  p10=10*pixel, iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(3.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1993 {; Modified Sylvie Gallet frm.
+  z=imag(pixel), c=pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
+  compt=0, limit=real(p1*cos(pixel/5)), bailout=4
+  p=(-0.743380900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=compt+(1.099,0.0)
+  |z|<=bailout
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr2038 {; Modified Sylvie Gallet frm.
+  c=z=pixel-log(cos(0.01/pixel))/pixel-1/log(flip(imag(0.305/pixel)))
+  compt=0, limit=real(p1*cos(pixel/5)), bailout=4
+  p=(-0.745680900000982,0.1931):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr2050 {; Modified Sylvie Gallet frm. 
+  z=c=sinh((-0.7456,0.2)*(pixel))*sqr(pixel)\
+        -conj(0.010/pixel)-flip(0.010/pixel)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2055 {; Modified Sylvie Gallet frm.
+  z=sqr(sqr(conj(pixel)))-(conj(0.020/pixel))-(flip(0.020/pixel))
+  c=(-0.7456,0.13)+0.009/pixel
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=(c*test+p*(1-test))
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2058 {; Modified Sylvie Gallet frm.
+  z=pixel+1/sqrt(0.1/pixel)*(tan(0.1/pixel))
+  c=(-0.7456,-0.13)-0.01/pixel
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=(c*test+p*(1-test))
+  z=z*z+c-0.0087
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2106 {; Modified Sylvie Gallet frm. 
+  z=c=pixel-2/(sinh(0.10/pixel)-sqr(tanh(0.010/pixel)))
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z*z+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z=z*(1-(test3 && test0 && test1))
+  iter = iter+1.2
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2111 {; Modified Sylvie Gallet frm. [101324,3444],1996
+  c=(-0.8006,-0.159)
+  z=pixel-1/log(0.050/pixel)-cos(0.10/pixel+1.25)+conj(0.0250/pixel)
+  z1=1.5*z, z2=2.25*z, z3=3.375*z, z4=5.0625*z
+  l1=(real(p1)), l2=(imag(p1)), l3=(real(p2)), l4=(imag(p2))
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t = 1-(t1||t2||t3||t4), ct = z1*t1 + z2*t2 + z3*t3 + z4*t4
+  z = z*t + ct, c = c*t + ct
+  z=z*z+c
+  iter=iter+1
+  (|real(z)|) <= bailout
+  ;SOURCE: 42ccarr.frm
+}
+ 
+Carr2112 {; Modified Sylvie Gallet frm. [101324,3444],1996
+  c=(-0.8006,-0.149)
+  z=pixel-cos(0.10/pixel+1.25)+conj(0.10/pixel+1.35)
+  z1=1.5*z, z2=2.25*z, z3=3.375*z, z4=5.0625*z
+  l1=(real(p1)), l2=(imag(p1)), l3=(real(p2)), l4=(imag(p2))
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t = 1-(t1||t2||t3||t4), ct = z1*t1 + z2*t2 + z3*t3 + z4*t4
+  z = z*t + ct, c = c*t + ct
+  z=z*z+c
+  iter=iter+1
+  (|real(z)|) <= bailout
+  ;SOURCE: 42ccarr.frm
+}
+ 
+JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
+  z = c =pixel:
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  a1=fn1(z), a2=p1/a1
+  b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
+  z=b1
+  b3=(|z|<=4)
+  if b3 then z=b2
+  ;SOURCE: phc.frm
+}
+ 
+JoWe_04a (XYAXIS) {; Jo Weber [100424,35], 6/1996
+                   ; Added variable "newpixel". G. Martin 6/27/99
+  newpixel=abs(real(pixel)) + flip(imag(pixel))
+  newpixel=real(newpixel) + flip(abs(imag(newpixel)))
+  z = newpixel:
+  a1=fn1(z), a2=p1/a1 
+  z=a1+a2+newpixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_04b (XYAXIS) {; Jo Weber [100424,35], 6/1996
+                   ; Added variable "newpixel". G. Martin 6/27/99
+  newpixel=pixel*(-1)^(pixel>0)
+  z = newpixel:
+  a1=fn1(z), a2=p1/a1 
+  z=a1+a2+newpixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_04c (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel:
+  a1=fn1(z), a2=p1/a1 
+  z=fn2(a1)+fn3(a2)+pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+Whatever_09 (XYAXIS) {; Original formula Whatever_the_name
+                      ; modified by Jo Weber [100424,35], 6/1996
+  z = pixel:
+  z=fn1(z)*fn2(z)+(p1/z*z)+pixel
+  ;SOURCE: jo_we_31.frm
+}
+ 
+JoWe_02_1 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1)) 
+  z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel
+  ;SOURCE: jo_we_33.frm
+}
+ 
+JoWe_05 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1:
+  a1=fn1(z), a2=p/a1 
+  z=a1+a2+pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_06 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1:
+  a1=fn1(z), a2=p/a1 
+  z=a1+a2
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1:
+  a1=fn1(z), a2=p/a1 
+  z=(a1+a2)*pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1:
+  a1=fn1(z), a2=p/a1 
+  z=(a1+a2)*pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_09 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1:
+  a1=fn1(z), a2=p/a1 
+  z=(a1+a2)/pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+JoWe_11 (XYAXIS) {; Jo Weber [100424,35], 6/1996
+  z = pixel
+  p=1*(|p1|<0)+p1 :
+  a1=fn1(z), a2=p/a1 
+  z=(a1+a2)^pixel
+  |z|<=4
+  ;SOURCE: jo_we_32.frm
+}
+ 
+Whatever_02m {; Original formula Whatever_the_name
+              ; corrected and modified by 
+              ; Jo Weber [100424,35], 6/1996
+  z = pixel:
+  a1=sqr(z), a2=2/a1
+  z=a1+a2+pixel
+  ;SOURCE: jo_we_32.frm
+}
+ 
+Whatever_03m {; Original formula Whatever_the_name
+              ; corrected and modified by 
+              ; Jo Weber [100424,35], 6/1996
+  z = pixel:
+  a1=sqr(z), a2=1/a1
+  z=fn1(z)*z+a2+pixel
+  |z|>=0.05
+  ;SOURCE: jo_we_32.frm
+}
+ 
+bfly (XYAXIS) {
+   ; Be creative and try to use these terms in novel ways.
+   ; You have to be careful what you initialize here
+   ; or everything goes to 0.0
+  z = zp1 = pixel, zp2 = (0,0):
+  temp = z
+  z  = z * zp1 + zp2
+  zp2 = zp1
+  zp1 = temp
+  |zp1| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+bfly3 (XAXIS) {
+   ; How about a conjugation of a cosine function
+  z=pixel, zp = z1 = (0,0):
+  temp = z
+  z = 1-cos(z) - zp
+  zp = conj(temp)
+  |zp| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+Carr-367 {
+  z=1/sinh(1/fn2(1/pixel+2)), c=1/tanh(1/fn2(1/pixel+2)):
+  z=z*z+c
+  |z| <=10
+  ;SOURCE: 09carr.frm
+}
+ 
+cnigel (XAXIS) {
+   ; Conjugates still show the chaotic banding it tends to
+   ; produce in this fractal type.
+  z = pixel, zp1=zp2=zp3=(0,0):
+  temp = z
+  z = z*z - zp3
+  zp3 = zp2
+  zp2 = zp1
+  zp1 = conj(temp)
+  |zp1| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+cntr1 (XAXIS) {
+   ; There are many different combinations on this theme.
+  z = zp1 = zp2 = pixel:
+  temp = z
+  z  = z * zp2 + zp1
+  zp2 = zp1
+  zp1 = temp
+  |zp1| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+four (XYAXIS) {
+   ; A square root initialization of the octo 
+   ; will halve the number of arms
+  z = pixel^.5,zp=(0,0):
+  temp = z
+  z = z^3 - zp
+  zp = temp
+  |zp| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+frtan (XAXIS) {
+   ; Lets not forget the tangent
+  z = pixel, zp = (0,0):
+  temp = z
+  z = -tan(z) - zp
+  zp = temp
+  |zp| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+fuzzy {; To center this on your screen use 
+       ; the command corners=-2/3/2.5/-1.5 
+  a=real(pixel), b=imag(pixel):
+  x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y 
+  sqr(abs(a*a)+abs(b*b))<=p1
+  ;SOURCE: fuzzy.frm
+}
+ 
+hflip {
+   ; A little non-standard math-function 
+   ; produces chaotic bands like the
+   ; conjugate function but the symmetry is now skew.
+  z = pixel, zp=(0,0):
+  temp = z
+  z = z*z +  zp
+  zp = flip(temp) 
+  |zp| <= 4 
+  ;SOURCE: noel.frm
+}
+ 
+Carr1451 {; Creates Julia.
+  z=cotan(pixel*pixel+1), c=sqr(1/pixel*0.91/pixel):
+  z=(z*z)+c-1.49
+  c=1/z*z+1/pixel
+  |z| <=4
+  ;SOURCE: 33carr.frm
+}
+ 
+Carr1400 {
+  z=pixel/0.999, c=sqrt(flip(pixel)):
+  z=sqr(conj(z))+c-1.5
+  |z|<=4
+  ;SOURCE: 32carr.frm
+}
+ 
+Carr1401 {
+  z=pixel/0.999, c=sqrt(1/(1/(1/(1/pixel)))):
+  z=z^2.09+c-0.5
+  |z|<=4
+  ;SOURCE: 32carr.frm
+}
+ 
+Carr1402 {; Julia (I think??)
+  z=pixel, c=sqrt(1/(1/(1/(5/pixel)))):
+  z=z*z+(c-1)
+  |z|<=4
+  ;SOURCE: 32carr.frm
+}
+ 
+Carr1403 {; Modified T.J.E. Reed formula;Julia
+  c=z=pixel:   
+  z=z*z+c   
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z    
+  |z| <= 4
+  ;SOURCE: 32carr.frm
+}
+ 
+Carr1404 {; Modified T.J.E. Reed formula; Julia
+  c=z=pixel:   
+  z=z*z+c   
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z    
+  |z| <= 4
+  ;SOURCE: 32carr.frm
+}
+ 
+Carr1697 {; Mandel type.
+  c=(pixel)/(flip(pixel)-conj(1/pixel))
+  z=(1/pixel)/(pixel-flip(1/pixel)-conj(1/pixel)):
+  z=z*z+c
+  |real(z)| <=4
+  ;SOURCE: 37carr.frm
+}
+ 
+Carr1710 {; Mandelbrot.
+  c=conj(pixel^1/pixel)/(pixel-(flip(1/pixel)-conj(1/pixel)))
+  z=(1/pixel)/(3*pixel-flip(1/pixel)-conj(1/pixel)):
+  z=z*z+c
+  |real(z)| <=4
+  ;SOURCE: 38carr.frm
+}
+ 
+Carr-889 {
+  z=((1/pixel)/0.71)/(0.85/pixel+1.324)
+  c=((1/pixel)/2)/z-2.5^fn4(pixel-1.324)/(1/pixel):
+  z=((1/z^1/pixel*z*z)/((pixel-1)-(c*c)))/1.6
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-917 {
+  z=1/(pixel*pixel)
+  c=flip(pixel+fn3(4/z-z/5+125)):
+  z=(pixel-z*z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr1164 {
+  z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
+  z=z-(cotanh(z+pixel))/(z*1/c)
+  |real(z)| <=100
+  ;SOURCE: 27carr.frm
+}
+ 
+pixey02 {; Added variable "newpixel". G. Martin 6/29/99     
+  newpixel = pixel
+  z = newpixel + p1, c = newpixel:
+  temp = z
+  z = z*z + newpixel + c
+  newpixel = temp
+  z <= 4 
+  ;SOURCE: pixey.frm
+}
+ 
+pixey03 {
+  z = pixel
+  x = real(z + p1), y = imag(z + p2):
+  x = fn1(x*x - fn2(y*y))
+  y = fn3(y*y - fn4(x*x))
+  z = x*x + y*y 
+  |z| <= 4
+  ;SOURCE: pixey.frm
+}
+ 
+pixey05 {
+  z = pixel + p1 
+  c = pixel:
+  z = fn1(z^2.71828182845905) + fn2(c)  
+  |z| <= 16
+  ;SOURCE: pixey.frm
+}
+ 
+PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
+   ; p1 = step size (default 0.05), p2 = parameter (default 3)
+   ; p3 = bailout value (default 4)
+   ; set co-ords = -3/3/-2.25/2.25, fn1=sin, fn2=tan, fn3=ident, fn4=flip
+  h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
+  k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
+  test = (4.0 * ((p3)<=0) + (p3) * (0<p3))
+  x = real(pixel), y = imag(pixel):
+  newx = x - h*fn1((y) + fn2(k*y))
+  newy = y - h*fn1((x) + fn2(k*x))
+  x = newx, y = newy
+  z = fn3(x) + fn4(y)
+  |z| < test
+  ;SOURCE: snazzy.frm
+}
+ 
+Carr-913 {
+  z=1/(pixel*pixel)
+  c=imag(1/pixel*0.91/pixel):
+  z=((1/(fn2(z*z+pixel*pixel)))/(pixel-c*c))/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr1150 {
+  z=pixel^(sinh(1.099,0)/cosh(pixel))
+  c=pixel/((2.099,0)*1/z):
+  z=cosxx(z)+c
+  |real(z)| <=100
+  ;SOURCE: 27carr.frm
+}
+ 
+Carr1151 {
+  z=pixel/((1.099,0)^(pixel))
+  c=(pixel/((2.099,0)*1/z)):
+  z=(z*z+c)/(z*1/c)
+  |real(z)| <=100
+  ;SOURCE: 27carr.frm
+}
+ 
+Carr1152 {
+  z=pixel/((1.099,0)^(pixel))
+  c=(pixel/((2.099,0)*1/z)):
+  z=cosxx((z*z+c)/(z*1/c))
+  |real(z)| <=100
+  ;SOURCE: 27carr.frm
+}
+ 
+pixey00 (XAXIS_NOPARM) {     
+  z = pixel + p1:
+  z = z*z + pixel
+  z <= 4 
+  ;SOURCE: pixey.frm
+}
+ 
+pixey04 {
+  z = pixel + p1 
+  c = pixel:
+  z = fn1(z*2.71828182845905) + fn2(c)  
+  |z| <= 16
+  ;SOURCE: pixey.frm
+}
+ 
+shifter03 {; After shift, switch from fn1(z) to fn2(z)
+           ; Bradley Beacham  [74223,2745]
+           ; P1 = shift value, P2 varies bailout value
+  z = c = pixel, iter = 1, shift = p1, test = 4 + p2:
+  lo = fn1(z) * (iter <= shift)
+  hi = fn2(z) * (shift < iter)
+  iter = iter + 1
+  z = lo + hi + c
+  |z| < test
+  ;SOURCE: snazzy.frm
+}
+ 
+slider01 {; Bradley Beacham  [74223,2745]
+          ; P1 = exponent A, P2 = exponent B
+          ; P3 varies radius of bailout circle (default 2)
+  z = c = pixel, limit = 2 + p3, f = 0 :
+  z = ((f) * fn1(z^p1)) + ((1-f) * fn2(z^p2)) + c
+  f = cabs(z) / limit
+  f < 1.0
+  ;SOURCE: dons.frm
+}
+ 
+speed01 {; Speed chooses between functions, escape-time
+         ; Bradley Beacham  [74223,2745]
+         ; P1 is maximum speed for "slow"
+         ; P2 varies bailout value
+  z = oldz = c = pixel, limit = 4 + p2:
+  x = real(z) - real(oldz)
+  y = imag(z) - imag(oldz)
+  speed = x*x + y*y
+  slow = fn1(z*z) * (speed < p1)
+  fast = fn2(z*z) * (speed >= p1)
+  oldz = z
+  z = slow + fast + c
+  |z| <= limit
+  ;SOURCE: snazzy.frm
+}
+ 
+Carr-520 {
+  z=1/pixel, c=cos(z*1/pixel):
+  c=fn1(sinh(z))
+  z=z*z*z+flip(c-0.324)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-01 { 
+  z = Pixel, z = cosxx(z):
+  z = z + Pixel
+  z = sqr(z)
+  |z| <=4          
+  ;SOURCE: carr.frm
+}
+ 
+Carr-07 {; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
+  ;SOURCE: carr.frm
+}
+ 
+Carr-16 {
+  z = 0:
+  z2 = z^z^z
+  z = (cosxx(sqr(z-1)) ) + (sin(pixel))
+  |z| <= 6
+  ;SOURCE: carr.frm
+}
+ 
+Carr-19 {
+  c = z = (sqr(1 / pixel)):
+  z = (sqr(1 / cosxx(z)) ) + (sin(z^z^z))
+  |z| <= 10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-20 {
+  z = pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (log(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-202 {
+  z=c=1/pixel:
+  z=sqr(z) + c
+  z=(1/pixel)*z*z/(z-0.5) + c
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-21 {
+  z = 1 / pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (log(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-210 {
+  z=c=1/pixel:
+  z=z*z+c+(z*z+(c-0.124))/(z-0.75)+c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-212 {
+  z=c=1/pixel:
+  z=sin(z^2)+sin(z)/sin(pixel)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-22 {
+  z = 1 / pixel, z = cosxx(z):
+  z = z + (sqr(pixel))
+  z = sqr (cosxx(1 / (z)) )
+  |z| <= 4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-877 {
+  z=1/(pixel*conj(conj(2/pixel+0.794)))
+  c=1/(fn2((conj(pixel-1.784))*sqr(1/pixel-0.024)/fn2(conj(1/pixel-0.824)))):
+  z=conj(flip(pixel+z*z-0.025)/(pixel-c*c-0.494))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-905 {; Modified Richard frm
+  z=1/pixel, c=pixel-sqr(z):
+  c=pixel +c/z
+  z=c-z*pixel
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-910 {
+  z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^tanh(pixel-1.124):
+  z=c-z*pixel
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-914 {
+  z=1/pixel+2.524
+  c=((1*(|1.324|<=0)+1.324)*cotanh(pixel)):
+  z=c-z*pixel
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-915 {
+  z=1/pixel+0.91/pixel
+  c=((2.124*(|3.324|<=0)+1.324)*cotanh(pixel)):
+  z=c-z*pixel+1
+  z=z*1/c
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+708 {
+  z = c = p2 / pixel:
+  z = z^p1 / c^p2 + c
+  z <= p2
+  ;SOURCE: kg7.frm
+}
+ 
+Carr-105 {
+  z=c=pixel:
+  z=sqr(z) + sqr(c*c)
+  z=sin(z) + sin(c)
+  z=sqr(z) + sin(c*c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-110 {
+  z=c=pixel:
+  z=sqr(z*z) + (c*c)
+  z=sin(z*z) + sin(c*c)
+  z=sin(z*(1/z)) + cotanh(c*c)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-501 {; Distance Estimator works here.
+  z=1/pixel, c=exp(0.6,0.3)/pixel:
+  z=z*z*z*z*z+flip(c/pixel)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-559 {
+  z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel)):
+  z=z*z*z*z+conj(sin(c-0.524))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-561 {
+  z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel*1/pixel)):
+  z=sqr(conj(z*z*z))+conj(sin(c-1.5))
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-740 {
+  z=1/pixel, c=(1/pixel)/2/(z-2.5)^(1/pixel-1):
+  z=z*z+(c-0.4)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-786 {; Very interesting image poosibilities !!
+  z=sqr(sqr(sqr(1/pixel-0.006))), c=sqr(sqr(1/pixel-0.009)):
+  z=1/z^z*z+flip(c*c)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
+ 
+Carr-873 {
+  z=1/(pixel*conj(5/pixel+0.724))
+  c=1/(fn4((pixel-1.524)*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
+  z=(pixel+z*z)/(pixel-c*c-0.324)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-874 {
+  z=1/(pixel*conj(conj(5/pixel+0.724)))
+  c=1/(fn4((conj(pixel-1.524))*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
+  z=flip((pixel+z*z)/(pixel-c*c-0.324))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-878 {
+  z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^cotanh(pixel-1.124):
+  z=(conj(pixel+z*z)/(pixel-c*c))/1.55
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-881 {
+  z=((1/pixel)/0.91)/(2.7,-1.3)
+  c=(1/pixel*0.91/pixel):
+  z=(1/z*z*z+z)/(pixel-c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-884 {
+  z=((1/pixel)/0.71)/(4.7,-0.3)
+  c=(1/pixel*0.51/pixel):
+  z=(z^(1/z*1/z)+3*z)/(pixel-conj(c*c))
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-890 {; May not be mathmatically correct but...
+  z=(1/1/pixel^pixel*pixel)
+  c=1/conj(1/pixel^pixel+pixel):
+  z=(1/z*z*z)/(c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-890 {; May not be mathmatically correct but...
+  z=(1/1/pixel^pixel*pixel)
+  c=1/conj(1/pixel^pixel+pixel):
+  z=(1/z*z*z)/(c*c)
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-90 {
+  z=c=1/pixel:
+  z=sqr(z) + sqr(c-5)
+  z=sin(z*z) + sqr(c-2)
+  z=sqr(z) + sqr(c-0.67)
+  |z| <=4
+  ;SOURCE: carr.frm
+}
+ 
+Carr-900 {
+  z=cotanh(pixel+1)/imag(1/pixel-0.334)
+  c=sqr(sqr(sqr(pixel*1/pixel))):
+  z=(z^real(2.124)+c)/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-902 {
+  z=sinh(pixel+1)/imag(1/pixel-0.334)
+  c=sqr(sqr(sqr(pixel*1/pixel))):
+  z=cotanh(z^exp(2.424)+c)/1.7
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-906 {
+  z=1/pixel, c=conj(pixel-sqr(z)):
+  z=c-z*pixel
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Carr-908 {
+  z=cotanh(exp(1/pixel))
+  c=conj(pixel-sqr(z)):
+  z=c+z*pixel-1
+  |real(z)| <=100
+  ;SOURCE: carr.frm
+}
+ 
+Whatever_the_name (XAXIS) {
+  z = pixel:
+  z=z*z+(1/z*z)+pixel
+  ;SOURCE: whatever.frm
+}
+ 
+Ent {; Scott Taylor
+     ; Try params=.5/.75 and the first function as exp.
+     ; Zoom in on the swirls around the middle.  There's a
+     ; symmetrical area surrounded by an asymmetric area.
+  z = Pixel, y = fn1(z), base = log(p1):
+  z = y * log(z)/base
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+Richard10 (XYAXIS) {; Jm Collard-Richard
+  z=pixel:
+  z=1/sin(1/(z*z))
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+j+c2821 {; Sylvie Gallet frm. [101324,3444],1997
+         ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
+   z = real(pixel)/real(p1) + flip (imag(pixel)/imag(p1)) - p2
+   pixinv = 0.1/pixel, p9 = 0.9*pixinv
+   c = (0.3459989467084647,0.0835267537688434)
+   b4 = pixel - flip(pixinv) - conj(0.01*pixinv)
+   b5 = pixel - conj(pixinv)
+   odev = iter = wait = 0, continue = 1 :
+   IF (iter < 600)
+      IF (wait == 0)
+         IF (|z| < 16)
+            z = z*z + c, odev = odev == 0
+         ELSE
+            wait = 1
+         ENDIF
+      ENDIF
+   ELSEIF (iter == 600)
+      IF (wait == 0)
+         odev = odev == 0
+      ENDIF
+      IF (odev)
+         c = b4 - p9, z = z0 = b5, mz = |z|
+      ELSE
+         c = -b4 - p9, z = z0 = -b5, mz = |z|
+      ENDIF
+      continue = mz < 16
+   ELSE
+      IF (iter == 800)
+         IF (odev)
+            c = (z0^1.2)*1.5 - p9
+         ELSE
+            c = (z0^1.2)*(-1.5) - p9
+         ENDIF
+      ELSEIF (iter == 900)
+         c = conj(z0)*2.25 - p9
+      ELSEIF (iter == 1000)
+         c = flip(z0)*3.3375 - p9
+      ELSEIF (iter == 1150)
+         c = flip(z0)*5.0625 - p9
+      ENDIF
+      z = mz*0.2 + z*z + c, mz = |z|, continue = mz < 16
+   ENDIF
+   iter = iter + 1
+   continue
+  ;SOURCE: ifs196.frm
+}
+ 

@@ -1,0 +1,210 @@
+Orman-delbrot      { ; Fn = sin, other params = 0
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot1 function=sin passes=1
+  corners=-2/1.999996/-1.500025/1.5 maxiter=1024 outside=real
+  colors=000SBB<20>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<7>RCC
+  }
+
+Infrared Bay area  { ; Zoom in of Orman-delbrot 1
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot1 function=sin
+  corners=0.790951788/0.859737575/-0.0283007026/0.0232902765
+  maxiter=1024 outside=real
+  colors=0000CmUBB<19>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<\
+  28>z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<7>RCC
+  }
+
+Orman-delbrot7     { ; Full view of Ormandelbrot Set 7
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot7 passes=1
+  corners=-1.298905/2.701095/-1.5/1.5 float=y colors=@default.map
+  }
+
+Orman-delbrot8     { ; Zoom in; very specific to these params
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot8 function=cotanh
+  corners=-1.2662856/-0.96550965/-0.11905605/0.10652244
+  params=10/20/30/40 outside=imag
+  colors=000GFBGGB<2>CGBBGBBGCBGDBGFBGG<2>BCG000<6>00000e0e00eee00e0eeL0ee\
+  eLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3\
+  >z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vb\
+  zhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0S\
+  S<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2\
+  >SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2\
+  >04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2\
+  >FBGGBGGBFGBDGBC<2>GDB
+  }
+
+Orman-delbrot9     { ; Mandala
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=tanh/zero passes=1
+  corners=-2/1.999996/-1.500025/1.5 inside=epsiloncross outside=imag
+  colors=CCCiCi<4>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<\
+  19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>C\
+  s_CsYECE<14>gCg
+  }
+
+Orman-delbrot9a    { ; Mandala 2
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=cotanh/zero passes=1
+  corners=-2/1.999996/-1.500025/1.5 inside=epsiloncross outside=imag
+  colors=CCCSCs<6>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEs\
+  sCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYEC\
+  E<20>sCs<12>UCs
+  }
+
+Blue_Metal_Disk    { ; Orman-delbrot 4 formula
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot4 function=cos passes=1
+  corners=-2.256309/2.28765/-1.735434/1.672705
+  params=2/0.001/5/0.0050000000000000001 maxiter=512 decomp=128
+  colors=00000z<60>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz\
+  2zz0zz0yz<45>02z
+  }
+
+Chroma_Disk        { ; Orman-delbrot 4 derivative
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot4 function=cos passes=1
+  corners=-2.074689/2.074697/-1.556014/1.556017 params=2/0/5
+  maxiter=256 outside=real decomp=200
+  colors=CCCkCs<16>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYE\
+  CE<20>sCs<2>mCs
+  }
+
+Tweed              { ; Fine woven fabric texture
+                     ; (c) 1994 Jack A. Orman
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot4 function=conj
+  corners=-4.560701/1.837291/-2.435811/2.453313
+  params=12/0.0050000000000000001/3.14159265358979 maxiter=500
+  inside=maxiter potential=255/222/2000 invert=45/0/0
+  colors=0006Kq<4>A5bB5`C6YD6WC6XG8RH9PJAMKBKMEIOEJ<7>b`bdceffhhikjlnloqnr\
+  t<15>OI4<6>eYIg_KiaMkcOneQ<4>zp`<4>jdVgaUcZS`WRYUQ<6>AAJ<3>ALPAORARTBUVB\
+  XX<6>DqkDtmCqk<4>9`d8Xb7Tb9Q_<5>L4Q<8>VHH<5>rH4vH1zH0<8>SDE<3>N3IL0JL1JM\
+  2JN3JO4I<10>tq2wu0zz0<2>pp2mm3jj5<2>``8YY9XVA<6>KAIMAJOAL<12>ziE<13>K8B4\
+  12000<15>svbsvbsvbsvb<13>UMGSJEQII<5>EAa<6>7Nt5Pw5Nt
+  }
+
+Flaming            {
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=flip/conj passes=1
+  corners=-2.155173/2.155189/-1.616389/1.61638 maxiter=256
+  inside=epsiloncross potential=255/256/8192
+  colors=000XAA<17>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<10>WAA
+  }
+
+Blue_Crystal       { ; Ice blue snowflake or virus in synapse
+                     ; (c) 1994 by Jack A. Orman
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=log/flip passes=1
+  corners=-3.188126/3.188148/-2.391147/2.391101 maxiter=256
+  inside=epsiloncross potential=255/256/4096 colors=@blues.map
+  }
+
+Metal_grid         { ; Stargate to infinity
+                     ; (c) 1994 by Jack A. Orman
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot2 passes=1
+  corners=-19.45479/20.57121/-15.00979/15.00976 inside=epsiloncross
+  potential=255/128/4096
+  colors=333XXX<3>UUUTTTTTTTTT<5>PPPOOOOOOOOO<2>LLLLLLKKKKKKKKKJJJ<26>7777\
+  77777777777<40>333333444<25>999AAAAAABBBBBB<10>GGGGGGHHHIIIIII<3>KKKLLLL\
+  LLLLL<2>OOOOOOPPPPPPQQQ<3>SSSTTTTTTTTT<46>yyyzzzyyy<40>XXX
+  }
+
+Marksjulia         { ; Zoom-in with chroma map - viruses
+                     ; (c) 1994 by Jack A. Orman
+  reset=1821 type=cmplxmarksjul passes=1
+  corners=-0.120956495/-0.0793564945/0.144734029/0.175934029
+  params=0.29999999999999999/0.59999999999999998/1 float=y
+  colors=000g_K<7>zp`<4>jdVgaUcZS`WRYUQ<6>AAJ<3>ALPAORARTBUVBXX<6>DqkDtmCq\
+  k<4>9`d8Xb7Tb9Q_<5>L4Q<8>VHH<5>rH4vH1zH0<8>SDE<3>N3IL0JL1JM2JN3JO4I<10>t\
+  q2wu0zz0<2>pp2mm3jj5<2>``8YY9XVA<6>KAIMAJOAL<12>ziE<13>K8B412000<15>svbs\
+  vbsvbsvb<13>UMGSJEQII<5>EAa<6>7Nt5Pw5Nt<5>A5bB5`C6YD6WC6XG8RH9PJAMKBKMEI\
+  OEJ<7>b`bdceffhhikjlnloqnrt<15>OI4<6>eYI
+  }
+
+Ornate_cross       { ; Gold Cross on dark background
+                     ; (c) 1994 by Jack A. Orman
+  reset type=fn(z*z) function=cosxx passes=b corners=-4/4/-3/3 float=y
+  maxiter=32000 fillcolor=200 inside=epsiloncross outside=imag
+  logmap=4 potential=253/3000/1 decomp=128
+  colors=000qb0<217>000zk0<34>rc0
+  }
+
+Ornate_X           { ; Multi-color 'X' with patterns
+                     ; (c) 1994 by Jack A. Orman
+  reset type=fn(z*z) function=sinh passes=t corners=-4/4/-3/3 float=y
+  maxiter=32000 fillcolor=200 inside=epsiloncross outside=imag
+  logmap=4 potential=253/100/5000 decomp=128
+  colors=000siU<2>zp`<4>jdVgaUcZS`WRYUQ<6>AAJ<3>ALPAORARTBUVBXX<6>DqkDtmCq\
+  k<4>9`d8Xb7Tb9Q_<5>L4Q<8>VHH<5>rH4vH1zH0<8>SDE<3>N3IL0JL1JM2JN3JO4I<10>t\
+  q2wu0zz0<2>pp2mm3jj5<2>``8YY9XVA<6>KAIMAJOAL<12>ziE<13>K8B412000<15>svbs\
+  vbsvbsvb<13>UMGSJEQII<5>EAa<6>7Nt5Pw5Nt<5>A5bB5`C6YD6WC6XG8RH9PJAMKBKMEI\
+  OEJ<7>b`bdceffhhikjlnloqnrt<15>OI4<6>eYIg_KiaMkcOneQpgS
+  }
+
+Metallic_Mandel    { ; Grey metal mandel derivative
+                     ; (c) 1994 by Jack A. Orman
+  reset type=fn(z*z) function=cosh passes=1 corners=-4/4/-3/3 float=y
+  maxiter=32000 fillcolor=200 inside=bof60 outside=imag logmap=4
+  potential=253/100/10000 invert=4/0/0 decomp=128
+  colors=000ikl<2>nooppprrrsstuuvxwx<44>9DL8CK9DL<45>uvvwwwvvv<30>8CK<46>u\
+  vvwwwvvw<45>ADL8CK9DL<22>hij
+  }
+
+Grey_Ovals         { ; Study in Black & White
+                     ; (c) 1994 by Jack A. Orman
+  reset type=mandel passes=1
+  corners=-8.096088/-2.830693/-5.683536/6.643057/-12.11731/-0.321906
+  params=5/-0.55500000000000005 float=y maxiter=30333 bailout=500
+  fillcolor=9 inside=256 decomp=256 periodicity=-1
+  colors=00023342443243453353554354564464665465675575776576786686887687897\
+  7887889989A8899899AA9AB99AA9AABBABCAACACBBCACBBCBDBDCCDBDCCDCECEDDECEDDE\
+  DDEFEEFDFEEFEEFGFFGEGFGFHFGHGGHHGGHGIHHFHHHIHHIHJIIGIIIJIIJIKJJHJJJJJLKJ\
+  LKKIKKKKKMKLJMKLLLLLLNLMKNLMMMMMMOMNLOMNNNNNNPNOMNOOOOONPNOPNOPPPPPOQOOQ\
+  Q<2>RQPPRRQRRRRQQSQSRSRSSSSRRTRRTTSTTTTSSUSSUUVTTUUTUUVTVVWUUVVUVVWUWWXV\
+  VWWVWWXVXXYWWYWYXXYYXXXYXZXZYYZZYYYZY_Y_ZZ__ZZZ_ZZ_`__``___`__`a``aa``a`\
+  b`abaaa`babacbb`bbbacbcbdccacccbdcdceddbdddddfedfeeceeeeegefdgeffffffhfg\
+  ehfggggggighfighhhhhhjhighiiiiijihijhijjjjikjikjkjkkkkjjljlklkllllkkmkkm\
+  mlmmmmllnllnnommnnmnnomoopnnoonoopnppqooppoppqoqqrpprprqqrrqqsqqsqsrrssr\
+  rrsrtrtssttssstsstuttuutttuttuvuuvvuuvuwuvwvvvuwvwvxwwuwwwvxwxwyxxvxxxwy\
+  xyxzyywyyyxzyyzxzzxzzz001100010111202212122222321323
+  }
+
+Cosmic_Lobster     { ; (c) 1994 by Jack A. Orman
+  reset type=manowarj passes=1
+  corners=-5.803056/9.808064/-7.758382/3.949979
+  params=0.001/0.0030000000000000001 inside=0 invert=0.3/0/0
+  periodicity=4
+  colors=000n00<15>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0z\
+  z1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<13>o00
+  }
+
+Orman-delbrot9b    { ; Hot Red & Blue Woven Design
+                     ; (c) 1994 Jack A. Orman
+  reset=1821 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=cotanh/cos passes=1
+  corners=-16.5257/16.52573/-12.39433/12.3943
+  params=0.71828182845904998/0/0.14159265358979001 inside=epsiloncross
+  outside=imag
+  colors=000zCC<2>zCCzCCyCCxCCxBB<4>qAApAAnAAl99<6>W66U55R55O44<7>000<6>8H\
+  49J4AL5BN5CP6<5>I`9Ja9KcAKdALeA<2>NiBNjBNjB<4>OlCPmCOlC<2>OkCNkCNjCNiBMi\
+  BMhB<4>Ja9I`9HZ8GX8<9>6C3492371241120000<9>BBUCCWDDZEE`FFc<4>KKnKKpLLq<3\
+  >NNwNNxOOx<3>OOzPPzOOz<2>OOyNNyNNxNNw<3>LLqKKpKKnJJl<6>CCWBBUAAR99O<7>00\
+  0<6>LH4OJ4RL5UN5WP6<2>cV7fX8hZ8j`9<2>pdAqeAsgBthBuiBwjBxjBxkC<3>zlCzmCzl\
+  C<2>ykCykBxjBwjB<3>qeApdAncAla9<6>WP6UN5RL5OJ4<6>320300<8>U55W66Z66`77c7\
+  7<4>nAApAAqAA<3>wBBxBBxCC<2>zCC
+  }
+
+Blue_Crystal_2     { ; Ice blue snowflake or virus in synapse
+                     ; (c) 1995 by Jack A. Orman
+  reset=1900 type=formula formulafile=orman.frm
+  formulaname=OrmanDelbrot9 function=sin/sqr passes=1
+  corners=-3.188126/3.188148/-2.391147/2.391101 maxiter=256
+  inside=epsiloncross potential=255/256/4096 colors=@blues.map
+  }
+

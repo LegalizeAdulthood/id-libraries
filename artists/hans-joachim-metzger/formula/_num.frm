@@ -13,3 +13,10 @@
   ;SOURCE: kg13.frm
 }
  
+001 (YAXIS) {
+  z = pixel:
+  z = z*z + pixel
+  z = fn1(z) + p1
+  ;SOURCE: damion.frm
+}
+ 

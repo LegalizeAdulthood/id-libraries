@@ -1041,3 +1041,209 @@ Carr2168 {; Modified Sylvie Gallet frm. [101324,3444],1996
   ;SOURCE: 42ccarr.frm
 }
  
+Carr1982 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, dit=-1/pixel+(1.099,0.0), rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter + dit
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr1987 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=1/pixel, c=1/pixel, p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr2039 {; Modified Sylvie Gallet frm.
+  z = pixel+1/log(10*pixel)
+  c = (-0.7456,-0.13)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+1.75
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr2044 {; Modified Sylvie Gallet frm.
+  z=pixel-conj(0.010/pixel)-flip(0.010/pixel),
+  c=(0.3,0.6)-(0.0165/pixel)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0)), z5=z4*z2-1
+  z = (z2+c/z5)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
+ 
+Carr2047 {; Modified Sylvie Gallet frm. 
+  z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel)
+  c=(-0.7456,-0.13)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+(1.099,0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2048 {; Modified Sylvie Gallet frm. 
+  z=conj((0.3,0.6)*(pixel))*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel)
+  c=(-0.7456,-0.13)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+(1.099,0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2049 {; Modified Sylvie Gallet frm. 
+  z=c=conj((0.3,0.6)*(pixel))*sqr(pixel)\
+       -conj(0.010/pixel)-flip(0.010/pixel)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-(test3 && test0 && test1))
+  iter = iter+(1.099,0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2052 {; Modified Sylvie Gallet frm.
+  z=c=tanh(pixel)-(((0.3,0.6)+pixel)/(0.20/-pixel))
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2053 {; Modified Sylvie Gallet frm.
+  z=c=sinh((-0.7456,0.2)*(pixel))*sqr(pixel)\
+     -conj(0.10/pixel)-flip(0.10/pixel)
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2054 {; Modified Sylvie Gallet frm.
+  z=pixel*sqr(pixel)+conj(0.010/pixel)+flip(0.010/pixel)+tanh(0.010/pixel)
+  c=(-0.7456,-0.13)-conj(0.001/pixel)
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2056 {; Modified Sylvie Gallet frm.
+  z=sqr(sqr(conj(pixel)))-(tan(0.00020/pixel))-(sin(0.00020/pixel))
+  c=(-0.7456,-0.03)+0.009/pixel
+  compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
+  p=(-0.745680900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=(c*test+p*(1-test))
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2103 {; Modified Sylvie Gallet frm. 
+  z=c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
+  compt=0, limit=real(p1*cos(pixel/5)), bailout=4
+  p=(-0.743380900000982,-0.131850030300002):
+  test=(compt<limit)
+  c=c*test+p*(1-test)
+  z=z*z+c
+  compt=(compt+1)
+  |z|<=bailout
+  ;SOURCE: 42bcarr.frm
+}
+ 
+Carr2108 {; Modified Sylvie Gallet frm.
+  z=c=pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^6
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+  zn = center+rad/(pix-center), limit = real(p1)
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z1 = (z4*z-1)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
+  test3 = (test3 || (|z|>b1))
+  z=z*(1-(test3 && test0 && test1))
+  iter = iter+1.2
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42ccarr.frm
+}
+ 
