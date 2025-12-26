@@ -1,0 +1,222 @@
+; * pars for Fractint v18.2
+; * don lebow 1/94
+; * take 3
+; * these are, to the best of my knowledge, orginal, tho the more I do, the
+; * less likely that seems ... then again, infinity's a big place (as I'm
+; * finding out!)
+; * at any rate, if dupes show up it's purely unintentional
+; *
+; * use 'em as you like. I'm no artist ... the magic's in the numbers
+; *
+; * these were rendered at 640 x 480 x 256 ... other resolutions are apt
+; * to look strange(r)
+; *
+; * for convenience, the companion file dons.frm has the referred forumulas
+; * in one spot ... this version has some added, but can still be
+; * used with my previous PARs
+; *
+; * aloha-
+; *
+; * >>don CIS:76704,41
+
+black_trillium     {
+  reset type=sqr(1/fn) function=cosxx passes=1
+  corners=-2.0904999/-1.1154633/2.1779022/2.9087982 float=y
+  inside=bof61 outside=real
+  colors=000nKD<51>ECwpKA<51>AbwpNB<8>pvKpKA<59>pvdowepKA<55>TUMkIG<3>P8ep\
+  JB<13>sZP
+  }
+
+color_wheel        {
+  reset type=newton passes=b
+  corners=15.21061/-14.07711/-11.15281/10.81299 params=8 float=y
+  maxiter=25 inside=maxiter outside=summ invert=23/0/0 decomp=256
+  colors=zzzaaa<10>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR0\
+  9P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14\
+  >zyyzzw<18>uu0<16>yyvzzzyyy<2>rrrsss<7>ccc
+  }
+
+deco_liar          {
+  reset type=formula formulafile=dons.frm formulaname=Liar3 passes=t
+  corners=-9.357018/9.920923/-1.987873/12.47058 float=y maxiter=256
+  inside=bof60 outside=real decomp=256 distest=1/71
+  colors=358LQY<7>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
+  Ozv<13>KHTaSd<7>MFSz85kADYCKfPf<21>LERm21<12>MEQW_s<3>STiRRgQPePOcOMaNLZ\
+  MJXWh_Xi`YjaYka<17>NTrMSsNTq<20>poHqpFpnGnmGmkHmkH<23>LFROki<13>MSY
+  }
+
+decomp             { ; where the color wheel started ... sorta
+                     ; newtons march to the sea
+  reset type=newton passes=b
+  corners=15.21061/-14.07711/-11.15281/10.81299 params=3 float=y
+  maxiter=25 inside=maxiter outside=summ invert=23/0/0 decomp=256
+  colors=000ccc<11>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR0\
+  9P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14\
+  >zyyzzw<18>uu0<16>yyvzzzyyy<2>rrrsss<6>eee
+  }
+
+lurking            { ; kinda popped up out of nowhere
+                     ;
+  reset=1800 type=formula formulafile=dons.frm formulaname=ScSkLMS
+  passes=b
+  corners=4.448413/-2.077547/-4.35064/4.35064/-2.077547/4.35064
+  params=0.0040000000000000001 float=y maxiter=256 inside=bof60
+  potential=255/500/0 invert=1/0/0
+  colors=000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>\
+  wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<1\
+  8>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`\
+  e8Yd7Vb<7>14RC6QO8OP9NQBM000
+  }
+
+rons               { ; ron barnett's frm ... no fpu
+                     ; not yer "classic fractal" at all
+                     ; neat effect with tesselation, too
+  reset=1800 type=formula formulafile=dons.frm formulaname=REB004A
+  function=conj/zero passes=b
+  corners=-5.642158/3.053531/-3.260884/3.260878 params=1/-1/1/0.25
+  inside=bof60 decomp=256
+  colors=000<14>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>0000zz<14>z_\
+  0000<14>000zz0<14>0z0000<14>000m_m<14>zz0000<14>000000200<29>z00sKS<6>zA\
+  0<15>zz0<14>w03<8>O0b
+  }
+
+waiting_for_spring { ;  
+  reset=1800 type=fn(z)+fn(pix) function=log/tanh passes=b
+  corners=2.917431/-1.866228/10.81585/4.437639/-1.866228/4.437639
+  params=0.79000000000000004/-1/1/2 float=y maxiter=200 inside=bof60
+  outside=mult logmap=yes distest=1/71 periodicity=-1
+  colors=0NWIzY<5>ecf<5>KfnGgpEer<3>A`x8_z8_z<5>5Xz5Xz4Xz3Xz3Xz<50>0Uy0Uy1\
+  Uy<68>ppzpqzqqzqrzrrz<14>yzzzzzyzz<76>Mez<3>Ueq cyclerange=0/255
+  }
+
+convexish          {
+  reset=1720 type=fn*fn function=sinh/ident passes=t
+  corners=-0.6233762/0.6148846/-6.7464573/-5.8177616 float=y
+  inside=bof60 outside=imag potential=128/256/16 symmetry=none
+  colors=000cPD<4>RCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSA\
+  RUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>z\
+  H0<3>jF7000cEA<2>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUH\
+  DSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<7>eRD
+  }
+
+glowbugs           { ; really just a pallete tweak, but...
+  reset type=newton passes=t corners=-2/2/-1.5/1.5 params=3 float=y
+  maxiter=25 inside=epsiloncross outside=real
+  colors=00000a<8>000<16>z0X<15>000<15>p0w<15>000<15>zzz<15>000L00<13>z00<\
+  2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>0\
+  00<15>00z<4>00e
+  }
+
+friendly_critter   { ; it followed me home from hyperspace mom! can we keep it?
+  reset type=julfn+exp function=recip passes=b
+  corners=-0.6048337/1.832266/-1.557596/1.693567/1.832266/1.693567
+  inside=bof60 potential=255/500/0 invert=1/0/0
+  colors=0009OY<13>6OU6OU7PV<67>ils_JV<47>o5Co5Cp6D<50>vqvvqvtps<16>RdFPcD\
+  PbF<16>HMdHMeGNd<27>9OY
+  }
+
+deco_liar_z        { ; yeah, near dupe ... except not quite. neat formula.
+  reset type=formula formulafile=dons.frm formulaname=Liar3 passes=b
+  corners=-3.578644/3.901197/-1.698885/3.910995 float=y maxiter=256
+  inside=zmag outside=real invert=1/0/0 decomp=256 distest=1/71
+  colors=358LPX<6>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
+  Ozv<13>KHTaSd<6>OHU<13>ccdeeeecc<12>h78i45g57<9>MEQW_s<3>STiRRgQPePOcOMa\
+  NLZMJXWh_Xi`YjaYka<17>NTrMSsNTq<20>poHqpFpnGnmGmkHmkH<23>LFROki<14>LQY
+  }
+
+overlay            {
+  reset type=fn(z)+fn(pix) function=flip/cos passes=b
+  corners=-4.20589/4.86384/-2.753292/4.048855 params=0/0/1 float=y
+  inside=zmag outside=real decomp=256
+  colors=Vji6A8<27>RgHRhISiITkJSjKRiM<7>J_`IYbHXdFVfFWf<12>AigAjgChdEfbFec\
+  Gdc<31>vzx<17>NNN9Ei<27>7BVNNN<4>YZY_a`acbdfedfe<29>eeeeeedec<12>GT9ES6E\
+  S6<25>9H89H88H88H88G8<21>478478488598
+  }
+
+shattered           { ; one too many zooms at 3am
+                      ; 
+  reset type=fn(z)+fn(pix) function=exp/tanh passes=b
+  corners=-1.9928/2.445069/2.943289/-2.973871/2.445069/-2.973871
+  params=0/0/1 float=y maxiter=25 inside=zmag outside=real
+  colors=000<14>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>0000zz<14>z_\
+  0000<14>000zz0<14>0z0000<14>000m_m<14>zz0000<14>000000200<29>z00sKS<6>zA\
+  0<15>zz0<14>w03<8>O0b
+  }
+
+loophole           {
+  reset=1720 type=julfn+exp function=exp passes=b
+  corners=-1.681426/1.085773/1.160954/4.85248/1.085773/4.85248
+  params=1/-0.050000000000000003 float=y inside=bof61 outside=imag
+  potential=128/256/16 symmetry=none
+  colors=00N22E00F<24>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>\
+  wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzw<18>uu0<16>yyvz\
+  zzyyy<2>rrrsss<19>GGGEEECCE<3>44E
+  }
+
+prismatic          {
+  reset type=popcornjul passes=b
+  corners=-4.010695/4.010695/-2.941177/2.941177
+  params=0.050000000000000003 float=y fillcolor=1 inside=maxiter
+  potential=255/500/0
+  colors=zzzrrw<2>zzz<15>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzw<18>u\
+  u0<16>yyvzzzyyy<2>rrrsss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuz\
+  Oty<30>1BR09P19Q<13>MMiONkQPk<10>ppv
+  }
+
+hilt               {
+  reset=1720 type=barnsleym3 passes=1
+  corners=1.698027/0.5340183/-0.7665404/0.7854436/0.5340183/0.7854436
+  float=y bailout=64 inside=bof61 potential=255/511/0 decomp=256
+  colors=000D00<4>000020050<116>01J00K00I<5>003000022<14>0cc<15>zzz<15>0cc\
+  <14>033000200<13>`00c00d44<13>zzz<15>c00<9>F00
+  }
+
+tasteless_filigree {
+  reset type=manfn+zsqrd function=sin passes=b
+  corners=-1.4532597804/-1.4529593406/0.00019574563904/-0.00020504983784/-\
+  1.4529593406/-0.00020504983784 float=y fillcolor=128 periodicity=0
+  colors=000Q9zaiP3B`Z9ew1XXr2ADel5Su1jlvv2`QfRA3So5tjvILvAkjfRbaVE4Gi7Lb`\
+  Cnn7HsD44DbLLGM9ohXN_hxWsFLBv5UUt4939iODjHX7JtQz4bJwcrbapDP7_PIeV_HvFs_8\
+  DFLDBA6pY77yQeA5RBBUkHxHSrvzYjTdLzIvabD2zFxpajskbCpWZOdSFxrErnQ5aIywYVjz\
+  DQndexkwsD0iM1jJWBiNtgYH4lZ6Idu65QXJvGVWN4lsq7k2tJBx6DdZNxZZTa8kaTySYkVl\
+  gVe26FUmCSkIlHDogJyi1WzSl7zVTfpd86eSTdqlC93P4wSRr6JJH8L_iPKcXSMWXQCgc93C\
+  oMW6wSGJE_REmuAafcfpLZWHFpAcdGTG4M`zD6FpinjhYvg2t`imMeZLJeuKq8cDzqeQTQix\
+  sm2FlsMNiR7zrbOdG4F8vXMKjw8VB1h7nQbY67l6agNgzLafF9PhssaqY8F6bduIBSBcRcmk\
+  3J3tfuZOxp4v3FY4fHHstGkvGZum14Rtd`dPg_GGj1Sw7L`IZdRGwrO2qHU_Sev44F_hchPH\
+  RR6D3UJoatrOYfa8Q4ukbNip2ODBvnTxWg8NBeV1N5hFG0vEtFnRliToQWvroXYNyN2Q9W9D\
+  Uc1WWMbqu27vUvz`4UzbQeU1TqlZxJUk`Pne_J`5__JqbnMmz`e1b9nz8TlGsuq2V_4wVbWT\
+  bpG4Qpo2FW8U93mqlPvJautT2kgOCCf6MiLiQ8o0xHZ7``LgijZg1VR
+  }
+
+more_metal         { ; inter-fractal with no cont pot *whew*
+                     ; amazing program, fractint
+  reset type=julfn+zsqrd function=sin passes=b
+  corners=-3.840648/3.289787/-2.648861/2.698965
+  params=-1.4592156850029896/-0.0024968188340532735 float=y maxiter=50
+  inside=bof60 invert=1/0/0 decomp=256
+  colors=ppp444<117>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000000<5>333
+  }
+
+inter_fractal_zone {
+  reset type=julfn+zsqrd function=sin passes=b
+  corners=-13.82545/9.577528/-15.74881/15.45517/9.577528/15.45517
+  params=-1.4592156850029896/-0.0024968188340532735 float=y
+  inside=bof60 potential=255/500/0 invert=1/0/0 decomp=256
+  colors=000005Ol6<12>IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>20\
+  0pdJ<5>zjF<13>RCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARU\
+  BUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NBBM000000UFJVHI<7>zH0\
+  <8>SDF<4>L0KB8D<25>Opz
+  }
+
+tims_newton_poly   { ; just messing around to see what's there
+                     ; from a message on GraphDev 1/10/94
+  reset type=formula formulafile=dons.frm formulaname=Newton_poly2
+  passes=t
+  corners=-1.608707/2.496424/-2.826889/2.646618/2.496424/2.646618
+  params=-0.050000000000000003 float=y maxiter=100 inside=bof60
+  outside=real decomp=256 distest=1/71
+  colors=000QGF<26>vcDwdDxeDzfCyfCxeC<29>PFF00K<29>GGqHHsHHr<30>00KSNC<29>\
+  xo`zpaypa<29>UPF000<30>ppp<2>llljjjhhhfffeee<4>ZZZXXXVVVTTTRRR<2>NNNLLLJ\
+  JJHHHFFF<2>BBB999777555444222000PFF
+  }
+

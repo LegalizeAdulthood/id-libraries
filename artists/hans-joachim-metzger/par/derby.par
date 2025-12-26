@@ -1,0 +1,337 @@
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+3_DoubleSpiral     { ; Check the colors...!
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74223857886/-0.74210257886/0.14373918791/0.14384118791
+  float=y maxiter=2000 inside=0
+  colors=000<3>000110330<29>zz0<30>220000000<28>000001001002002<55>01T02U0\
+  2U03U03V<43>3Vk4Wl4Xn4Yp5_r<31>122000000<10>000
+  }
+
+4a_Double,double   { ; Double double spiral!
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.742210261061/-0.742201557061/0.1437905439558/0.1437970719557
+  float=y maxiter=2000 inside=0
+  colors=0003PH<13>122000000<14>000101303<29>z0z<30>202000000<28>000010010\
+  020020<55>0T10U20U20U30V3<43>3kV4lW4nX4pY5r_<16>3RI
+  }
+
+5a_Ruby_Spiral     { ; Part of double double spiral
+                     ; Two words: color cycling
+  reset=1900 type=mandel
+  corners=-0.74220814227041/-0.74220727187043/0.14379545767265/0.143796110\
+  47266 float=y maxiter=2000 inside=0
+  colors=000j3Uk3Uk3V<2>p4Yr5_q5Z<15>R3IH3P<13>212000000<14>000110330<29>z\
+  z0<30>220000000<28>000100100200200<55>T01U02U02U03V03<40>j3T
+  }
+
+6a_Doubled_Again   { ; Double spiral in double double spiral
+                     ; Colors. They're FAN-tastic.
+  reset=1900 type=mandel
+  corners=-0.742207409989421/-0.742207332349765/0.143795779488884/0.143795\
+  837718642 float=y maxiter=2000 inside=0
+  colors=000X07<38>k3Vl4Wn4Xp4Yr5_<31>212000000<14>000011033<29>0zz<30>022\
+  000000<28>000100100200200<55>T01U02U02U03V03<3>W06
+  }
+
+7a_Triple-Double   { ; Really complex bunch of spirals
+                     ; Pastel colors for Easter
+  reset=1900 type=mandel
+  corners=-0.742207384104675/-0.742207362365606/0.143795799357509/0.143795\
+  815661842 float=y maxiter=2000 inside=0
+  colors=000GGW<13>JJbKKcKKcLKc<43>o5Yo5Yn6Y<77>0xx<29>022000000<18>000001\
+  001112112<57>FFV
+  }
+
+8a_CloudySpiral    { ; Center of the really complex bunch of spirals.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7422073742039409/-0.7422073723343734/0.1437958063660888/0.143\
+  7958077682642 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000101<56>K0KK0KK0KK0LK1LK1L<121>9Rw9RwASw<52>zzz<14>000
+  }
+
+9a_PurpleQuartet   { ; Fourfold spirals
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7422073735645488/-0.7422073729737334/0.14379580684562712/0.14\
+  379580728872024 float=y maxiter=2000 inside=0 logmap=256
+  colors=000QQQ<5>000<183>bJTcKUcKUcLVdMV<51>zzz<7>UUU
+  }
+
+_10a_EmeraldMandel { ; The center... a mini Mandelbrot surrounded by emerald.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74220737334515263/-0.74220737326527053/0.14379580705662953/0.\
+  14379580711656303 float=y maxiter=2000 inside=0 logmap=380
+  colors=000<178>JbTKcUKcULcVMdV<51>zzz<14>000<4>000
+  }
+
+flower             { ; Flowery pastel image
+                     ; Mandelbrot set, low-level zoom into area of 5-spirals
+                     ; By Paul Derbyshire (PGD)  ao950@freenet.carleton.ca
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.363427315/0.366147842/-0.316901667/-0.314862123
+  maxiter=3000 inside=0 logmap=yes
+  colors=000kRV<17>UrXTsXUrX<71>cWXcWXbXY<74>VodVodUnc<51>N8PN7PN7PN7O<4>N\
+  6Kj4a<21>8oc
+  }
+
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+3_DoubleSpiral     { ; Check the colors...!
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74223857886/-0.74210257886/0.14373918791/0.14384118791
+  float=y maxiter=2000 inside=0
+  colors=000<3>000110330<29>zz0<30>220000000<28>000001001002002<55>01T02U0\
+  2U03U03V<43>3Vk4Wl4Xn4Yp5_r<31>122000000<10>000
+  }
+
+_4b_Mini-Mandel    { ; A mini Mandelbrot at the center of the original dbl sprl
+                     ; Colors!
+  reset=1900 type=mandel
+  corners=-0.742180683511/-0.742168987511/0.1437872925154/0.1437960645154
+  float=y maxiter=5000 inside=0 logmap=100
+  colors=000ll0<109>cccccccbb<60>B16A05B06<29>x0az0cz1c<46>zzz
+  }
+
+_5b_Cleft          { ; The cleft between the main body and top bud of the mini
+                     ; Mandel.
+  reset=1900 type=mandel
+  corners=-0.74217523041118/-0.7421746456112/0.14379334547012/0.1437937840\
+  7013 float=y maxiter=10000 inside=0 logmap=200
+  colors=000031021000EEz<109>NNNNNNNOO<12>UWVVXVUXW<45>oytpzuozt<29>2zP0zN\
+  0yN<43>042
+  }
+
+_6b_Cleft          { ; The cleft, filled with a network of mandelstrands
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.742174868411754/-0.742174809931742/0.14379348332238/0.1437935\
+  27182377 float=y maxiter=20000 inside=0 logmap=900
+  colors=N09K08<11>402000<117>333444444555666<49>xxxzzzzwx<2>xnrzot<29>z2P\
+  z0Ny0N<28>O09N09N09
+  }
+
+_7b_Strand         { ; A single mandelstrand from in the cleft.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7421748388466757/-0.7421748351039226/0.1437935022922439/0.143\
+  7935050992803 float=y maxiter=20000 inside=0 logmap=900
+  colors=000<17>04L05N05N<58>0Ac0Ac0Ab<51>011000000000<5>000000200<13>Y0C`\
+  0D`0D<61>y0Mz0Ny0N<30>000
+  }
+
+_8b_DeepDoubleSprl { ; A double spiral from the mandelstrand.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74217483660908923/-0.7421748362872197/0.14379350352231371/0.1\
+  4379350376372288 float=y maxiter=20000 inside=0 logmap=900
+  colors=000983<65>yoMzpNzpNzpO<45>zzzyzzxyy<44>2LL0KK0KK<78>000000110<8>8\
+  73
+  }
+
+_9b_Sapphire+Ruby  { ; In the double spiral, a ruby mini-Julia.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7421748364904408/-0.74217483645823257/0.14379350363044119/0.1\
+  4379350365458476 float=y maxiter=20000 inside=0 logmap=1200
+  colors=0000AA<175>100100201<75>c0K
+  }
+
+__10b_Center       { ; The center of the mini Julia
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74217483647887073/-0.74217483647333715/0.14379350364215504/0.\
+  14379350364630306 float=y maxiter=20000 inside=0 logmap=1200
+  colors=000zzz<125>000000000000000<42>000000001012<12>3EJ4FL4GL<45>jynkzo\
+  kzolzp<13>zzz
+  }
+
+__11b_Center_II    { ; The center of the mini Julia
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74217483647656679/-0.74217483647578641/0.14379350364404797/0.\
+  14379350364460636 float=y maxiter=20000 inside=0 logmap=2150
+  colors=000ksl<7>xyxzzzzzz<125>0AK0AK0AJ0AJ09I<27>000000010<59>9aE9bEAcFB\
+  cG<20>irk
+  }
+
+fuse_burning    {
+  reset type=formula formulafile=coslider.frm formulaname=Coslider
+  corners=0.0/16.0/6.0/-6.0 params=1/0.4/0/1 float=y inside=0
+  colors=555000<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>333
+  }
+
+Spiral_Flip        {
+  reset type=formula formulafile=coslider.frm formulaname=Coslider
+  corners=-8.0/7.999987/5.999982/-6.0 params=-0.01597/0.7115/0.0156/0.7115
+  float=y maxiter=1000 bailout=127 inside=0
+  colors=000F0K<59>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0<58>G2JF0KF0KF0\
+  KF0K
+  }
+
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+____3e_Seahorse    { ; Tip of a seahorse from within double spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742042214246/-0.741992214246/0.144126865893/0.144164365893
+  float=y maxiter=2000 inside=0
+  colors=000<28>t_Dv`ExaEzcFybFwaF<26>642431221000000000<13>000011032<28>5\
+  r_<14>3VK3TJ3RI3PH3OG<12>122000000<14>000101303<29>z0z<30>202000000<29>0\
+  00
+  }
+
+____4e_SeaChain    { ; A chain joins two spirals of algae in the water.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7420103658106/-0.7420060658106/0.144136331159/0.144139556159
+  float=y maxiter=2000 inside=0 logmap=100
+  colors=00000A<108>4qZ5r_5qZ<13>3VK3TJ3TJ<62>zzzzzzyyy<61>000
+  }
+
+____4f_PurpleSprl  { ; Spiral from edge of seahorse chain in another spiral.
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.7420059449972/-0.7419998449972/0.1441258701467/0.144130445146\
+  7 float=y maxiter=2000 inside=0 logmap=100
+  colors=000A00<106>Z4pZ4qZ4q_5rZ5qY5o<12>K3VJ3TJ3T<60>yxyyyyzzzzzzyyy<61>\
+  000
+  }
+
+____5f_OrangeSprl  { ; Part of sprl from edge of seahorse chain in another sprl
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.74200387752454/-0.74200343985639/0.14412828005555/0.144128608\
+  30666 float=y maxiter=2000 inside=0 logmap=100
+  colors=000K00<109>uR8uR8uR8uR8uR9<122>kiijjjkkk<14>zzz
+  }
+
+____6f_Springs    { ; Double spiral from spiral at the tip of seahorse in sprl
+                     ;  
+  reset=1900 type=mandel
+  corners=-0.742003678862924/-0.742003619340047/0.144128453383104/0.144128\
+  498025254 float=y maxiter=2000 inside=0 logmap=100
+  colors=000K00<109>uR8uR8uR8uR8uR9<122>kiijjjkkk<14>zzz
+  }
+
+A1_Horsehead       { ; The Seahorsehead Nebula
+  reset=1821 type=mandel
+  corners=-0.749492159/-0.748088878/0.0796128195/0.0806647316
+  maxiter=2000 inside=0 logmap=yes
+  colors=00000A<106>p4Zq4Zq4Zr5_q5Zo5Y<12>V3KT3JT3J<126>000
+  }
+
+A2_CloudyPlanet    { ; A line of clouds in a pink sky
+  reset=1821 type=mandel
+  corners=-0.748860737/-0.748790514/0.0800114144/0.0800640546
+  maxiter=2000 inside=0 logmap=yes
+  colors=zzzztm<94>vASv9Sv9Su8Ru9SuBT<12>wWfwYgwYg<126>zzzzzp<10>zum
+  }
+
+A3_Head_2_Head     { ; Two seahorses attached by their heads!
+  reset=1821 type=mandel
+  corners=-0.748810073/-0.748804122/0.0800353177/0.0800397787
+  maxiter=2000 inside=0 logmap=yes
+  colors=000w0c<77>zzzzzzyzz<60>5_q4Zp4Zp4Zo<67>111000000000<5>000101302<3\
+  0>w0c
+  }
+
+A4_2-4-1-Sale      { ; Double spiral from Head-2-Head
+  reset=1821 type=mandel
+  corners=-0.7488079911558/-0.7488065391118/0.08003720884735/0.08003829733\
+  135 float=y maxiter=2000 inside=0 logmap=yes
+  colors=0005FW<27>9RuASvASvBSv<67>yyyzzzzzzzzz<5>zzzzyyzwx<29>z5Pz3Nz3N<7\
+  7>000000001<31>5EV
+  }
+
+A5_Edge            { ; Bottom edge of double-spiral, in center
+  reset=1821 type=mandel
+  corners=-0.7488075321213/-0.74880698905688/0.0800372177711/0.08003762486\
+  4118 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000gwY<36>yyyzzzzzzzzz<5>zzzyyzwxz<29>5Pz3Nz3Nz<77>000000010<60>R\
+  u9SvASvASvB<29>fwX
+  }
+
+A6_Crown           { ; Crown of seahorse from top center of Edge
+  reset=1821 type=mandel
+  corners=-0.748807290743189/-0.748807204939029/0.080037512390008/0.080037\
+  5767107082 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000wgY<36>yyyzzzzzzzzz<5>zzzyyzxwz<29>P5zN3zN3z<77>000000100<60>u\
+  R9vSAvSAvSB<28>wfXfwX
+  }
+
+A7_Crownlet        { ; Sub-crown of Crown.
+  reset=1821 type=mandel
+  corners=-0.7488072437425168/-0.7488072363633546/0.0800375149283282/0.080\
+  03752045990598 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000w_h<34>yyyzzzzzzzzz<5>zzzyzyxzw<29>Pz5Nz3Nz3<77>000000100<60>u\
+  9RvASvASvBS<28>wXffXwwYgwZg
+  }
+
+A8_Crown-2-Crown   { ; Double spiral in the sub-crown.
+  reset=1821 type=mandel
+  corners=-0.74880724107466679/-0.7488072404400794/0.080037518634170343/0.\
+  080037519109889196 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000IvX<18>XwfXfwYwg<36>yyyzzzzzzzzz<5>zzzzyyzxw<29>zP5zN3zN3<77>0\
+  00000010<60>9uRAvSAvSBvS<8>IvX
+  }
+
+A9_Double-Date     { ; Two double spirals connected by a short cord
+  reset=1821 type=mandel
+  corners=-0.74880724079757055/-0.74880724074301519/0.080037518862495216/0\
+  .080037518903410335 float=y maxiter=5000 inside=0 logmap=yes
+  colors=0004Ho<79>S12T12T11U00U00<79>744644644555555<65>1Jw1Jx1Jy0Kz0Kz0K\
+  z<9>3It3Is3Ir3Iq4Iq4Hp
+  }

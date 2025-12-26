@@ -1,0 +1,28 @@
+Div {	; Rotation relates to atan(P2), while scale is proportional
+        ; to |P2| or cabs(P2), and P3 will position.
+z=z-z, c=fn1(pixel):
+
+z=(z*z +c)/P2 +P3
+|z| <= real(P1)
+}
+
+Frosty_Dragon      { ; I don't hav a straight graymap, and I don't want one
+                     ; for FRACTINT.
+                     ; Resembles the usual graymapped outside=atan view.
+  reset=2003 type=formula formulafile=div.frm formulaname=Div
+  function=ident
+  center-mag=66.6682/-137.807/0.01117382/0.5424/53.4018434140312834/-16.\
+  8036868280625953 params=64/0/0/-4/3/0 float=y maxiter=255 inside=0
+  invert=1.15593619240626/0/0 periodicity=0
+  colors=@primes.map
+  }
+
+Pert3              { ; I tried to get something like it with mandel,
+                     ; but this isn't a bad booby prize.
+  reset=2003 type=mandel
+  center-mag=-1.57423/1.77636e-015/0.2247124/1.579 params=3/0
+  float=y maxiter=512 inside=0 outside=atan
+  invert=0.0203990517529/-1.3575/0 symmetry=none periodicity=0
+  colors=@altern.map
+  }
+

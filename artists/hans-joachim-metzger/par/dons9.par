@@ -1,0 +1,296 @@
+;                pars for fractint 18.2 ... take 9
+                
+;         all images are, to the best of my knowledge, original and
+
+;              Copyright (c) 1994, don lebow
+
+;                  All Rights Reserved
+
+;         Many of these were done at 800 x 600 or 1024 x 768 x 256 colors
+;         and really need that high a resolution to look their "best". 
+;         Or whatever. 
+;         Apologies in advance to those who run up against a wall on this.
+;         An FPU will be helpful as well.
+;         Ditto.
+
+;         Special thanks, yet again, to the formula authors, who are identified
+;         in (still bulkier) DONS.FRM.
+
+;         Three images are repeats from DONS8. They don't display as intended
+;         above 640 x 480 using the original plotting method, so I changed
+;         it. Picky, picky ... sorry about the dupe.
+
+;         Hope you find one or two in here that give you a nice moment or
+;         two.
+
+;         >>don CIS:76704,41
+
+
+commute            {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-30
+  function=exp passes=b corners=-2.406811/0.7291894/-1.176/1.176
+  params=0.20000000000000001/0.5/1 float=y inside=maxiter
+  potential=256/200/0 decomp=256
+  colors=00044d00c<14>003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`00c0\
+  0d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<14>030000003<14>00c\
+  <15>zzz<13>88f
+  }
+
+monstro-2          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
+  function=tan/conj/exp passes=t
+  corners=-0.2154743/1.056526/0.8680334/-0.8279666/1.056526/-0.8279666
+  params=1 float=y potential=256/128/0
+  colors=0005A6077044000<15>hhh<16>M3rK0sK0r<27>6ED6FC5FB5FA4F93F82G6<6>4S\
+  4<13>2A2292171151131000<3>E3EH3HK5H<10>zWC<11>H8I200<4>200FRP<10>CtZ<20>\
+  5Ic4Gd4Ed3Ce3Ae<3>12g00h00k00o00r<15>000<15>r00<14>300<16>zuZ<11>AE9
+  }
+
+stardance          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-40
+  function=cos/sin/conj/flip passes=t
+  corners=13.3318/6.012022/-8.44765/-13.93748 params=1/0.5 float=y
+  potential=256/200/0
+  colors=30N4Wz<5>1Vz0Uz0Uz0Uz<36>0Uz0Uz2Vz<22>ztk<20>MooKooIooGnpGnpGoo<4\
+  >GslFtkGsk<21>nXUpVTqTQ<9>zC0<20>sswrvzrvz<92>5Xz
+  }
+
+to-the-egress      {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=conj/ident passes=1
+  corners=-0.22062123/0.27540219/-0.55225056/0.60896915/-0.59943826/-0.047\
+  161194 params=0.5/0/1 float=y potential=256/255/0 decomp=256
+  colors=000223000_mj<12>4651220000OJ<11>043021011000ohh<12>655222000www<1\
+  2>777333000jQU<12>523211000i0w<12>507203000CWn<5>6HS5FP4DL3BH28E16A14601\
+  3000iXc<14>000_mj<12>465122000zb0<12>740310000`QV<12>423111000S8`<12>304\
+  101000OUY<8>8BE79B579456234111000zVW<12>733311000e3L<11>703502201000kmx<\
+  12>567
+  }
+
+gooey              {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=cotan/ident passes=b
+  corners=-0.25596926/0.062261712/-0.56251014/0.18248709/-0.49900478/-0.23\
+  846278 params=0.5/0/1 float=y inside=zmag potential=256/255/0
+  colors=000zvt<13>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15\
+  >zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzzzxw
+  }
+
+hola-mundo         {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
+  function=cotanh/sin/ident passes=1
+  corners=3.514504/-4.827402/-5.673656/5.448886/-4.827402/5.448886
+  params=1/0/0/-1 float=y potential=256/500/0
+  colors=000<16>000000200<29>zKU<30>211000000<14>000010030<2>0900B00B2<26>\
+  00z<22>068075073080060040020000<15>000110321<28>xnZ<23>IH5GF3EE2CC0AA0<3\
+  >220000000<12>000
+  }
+
+zep-shell          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=conj/ident passes=b
+  corners=1.3936694/1.843979/0.70470312/0.9207463/1.6594816/1.0591194
+  params=2/0.5/1 float=y inside=zmag potential=256/500/0
+  colors=000ZZY<8>000032<14>0po<12>0BA076043000221<14>hhg<15>000<27>006016\
+  036<13>4S3<13>2A1291170150130000302<9>a59d6Ag7Bk8Cn9DrAE<15>000<15>hh0<1\
+  5>000002<14>00q<13>006002000<15>zzy<5>bba
+  }
+
+tree-frog          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
+  function=cos/ident/ident passes=b
+  corners=-2.343163/1.56695/-2.584332/2.629151/1.56695/2.629151
+  float=y inside=maxiter potential=256/200/0
+  colors=000kO0<23>210000000<27>qZRs`SuaTwcUwcU<23>EA7C96A8586465343222100\
+  0000<6>EB2GD2GE4<21>WkwXmzWkx<21>CA6B83972<2>321000000000<29>uX0wZ0wZ0<2\
+  9>220000000<29>uT0wU0wU0<4>mP0
+  }
+
+crabby-nebula      {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Chico
+  function=sin/sin passes=t
+  corners=-0.1578141/3.291166/-1.301356/1.285379 float=y
+  colors=000UdTWgV767<4>f`h613<7>xGT445<8>dlm420<11>qY8613<7>vEYA7AKFLFC3<\
+  2>xkF540<9>up4491<3>Nh8223<13>e_jB5CNBOZH_6VECyS323<5>NKQ001<14>16PAA5<4\
+  >zyY723<6>tKT754<5>rcS245<9>OjsGILW_ekqz210<12>UJ1031<4>0J6<12>0Aj<7>XTM\
+  <3>qMO<8>NdM<3>UdIF`g373<5>RmR132<10>DcO865<5>vfb277<5>Jqn221<12>SaR
+  }
+
+high-anxiety       {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Chico
+  function=sin/sin passes=1
+  corners=0.9603202/2.174361/0.1145763/1.025107 float=y maxiter=25
+  outside=real potential=256/2000/0
+  colors=000ABE<7>100<23>iJBjKClKA<4>vP0<2>qO6oN8mMAkLDjKC<24>000<24>ZWK_X\
+  LbYL<4>vdQ<2>laPh`Od_N`YM_XL<15>ED9CC8BB7996885664<2>221000111<3>3764974\
+  B85D95EA<15>HbUIdVIeY<4>Nno<2>MjeLhbKg_JeWIcV<19>386375254243122000<16>K\
+  LULNVMOXNPYOQ_<2>RVcSWeUXe<5>dch<2>``hZ_hXZhVYgTXf<15>BCG
+  }
+
+breakout           {;variation on 4-split
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
+  function=tanh passes=b corners=-4.674309/5.186156/4.978249/12.3736
+  params=0/0/1 float=y maxiter=500 inside=maxiter logmap=yes
+  potential=256/256/0
+  colors=000<8>003003003003004004<8>006016036<13>4S3<13>2A1291170150130000\
+  302<8>Z58a59d6Ag7Bk8Cn9DrAE<15>000<15>hh0<15>000002<14>00q<13>006002000<\
+  15>zzy<15>000032<14>0po<12>0BA076043000221<14>hhg<15>000<4>001
+  }
+
+4-split            { ; 4d experiment
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
+  function=sin passes=1 corners=-1.928/1.928/-1.446/1.446 params=0/0/1
+  float=y inside=0 symmetry=xyaxis
+  colors=AAPMCS<8>323000021<14>0WJ<15>ttt<7>Th`QgZMeXIcVEaT<3>0WJ<13>04302\
+  2023<14>6Zk<15>ttt<5>bmqZkqWjpThoQgo<5>6Zk<15>000<15>m0I<15>ttt<15>m0I<1\
+  5>000<14>WGdZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<3>ODV
+  }
+
+tilt               {
+  reset=1820 type=formula formulafile=dons.frm formulaname=ScSkLMS
+  passes=b
+  corners=4.0044884/3.4279459/0.12231153/0.8910346/3.4279459/0.8910346
+  params=2/-0.5 float=y decomp=64
+  colors=000<14>`00c00d43<13>zzy<15>c00<14>300<2>C50F71H91KB2ND2<8>lT6<17>\
+  pbZqb_qcardcpca<9>VSNTRLRQJOOHMNF<7>3C10A0080<2>000<15>00b<15>zzy<15>00b\
+  <14>002000021<14>0cb<15>zzy<15>0cb<15>000
+  }
+
+static             {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Groucho
+  function=exp/cotanh passes=b
+  corners=2.6237792/3.0573831/3.0556437/2.4775052/3.0573831/2.4775052
+  params=-1 float=y potential=256/128/0
+  colors=000TLn<5>OKtNJuMJvLIwKIxJHz<9>cTneVlgWkiYikZh<2>qbesdcvebxg`zh_<5\
+  >eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_ubaV<14>vHFxFDwFD<\
+  24>TJPc1t<15>81h62g62f<8>68Y59W7CU<12>og6rj4vl2zo0<14>`ohZnkWnk<5>Dhl<2>\
+  vFj<2>kRV<18>ULm
+  }
+
+show-me            {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=cos/cosxx passes=1
+  corners=-5.255015/6.108621/-3.709788/4.812939 params=1 float=y
+  decomp=256
+  colors=0000bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URv\
+  XTzYVz<14>yxx<15>XTz<7>HHZFGVDERBDN9BJ<3>033<15>xWG<15>zzz<15>xWG<15>000\
+  <14>0`a
+  }
+
+big_red_switch     {;figuratively speaking
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=FlipConjJul_N passes=1 corners=-2/2/-1.5/1.5
+  params=0/0/-2 float=y inside=zmag potential=256/128/0
+  colors=000zzN<18>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`\
+  22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<9>zzL
+  }
+
+delta              {
+  reset type=mandel4 passes=t
+  corners=2.015171/-1.275079/-2.195446/2.191554/-1.275079/2.191554
+  float=y maxiter=75 inside=maxiter outside=summ potential=256/500/0
+  invert=1/0/0 decomp=256
+  colors=00007B<77>0_m0_n0_n0_n0_n<11>0du<3>Jjc<6>Kf_KeZJdY<52>D61C50A50<4\
+  >320111111<84>zzz
+  }
+
+fame               {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
+  function=cosh/cotan passes=1
+  corners=-1.599445/1.582373/-1.260319/1.240924
+  params=1/0.20000000000000001 float=y inside=epsiloncross
+  potential=256/128/16
+  colors=000zGP<2>zGMzHMzHLzILzIKzJKzJJ<31>z``zaazaayaa<41>211000011<40>0o\
+  o0qq0rr0tt0uu<2>0zz<62>y1zz0zz0zz0y<51>zFP
+  }
+
+arty-fact          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Curly
+  function=cosxx/sinh passes=b
+  corners=-5.65986/5.751958/-4.121573/4.437291 params=0.5/0/0/-1
+  potential=256/128/1000 decomp=256
+  colors=000ovv<12>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<14>30000002\
+  0050<116>01J00K00I<5>003000022<14>0cc<15>zzzwyysxx
+  }
+
+sea-star           { ; popping up all over the place aren't they?
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
+  function=cosxx/conj passes=b corners=-2/2/-1.5/1.5 params=1 float=y
+  potential=256/500/0 decomp=256
+  colors=00007B<94>0du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<80>zzz
+  }
+
+kozmik             {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
+  function=cotan/sqr passes=t
+  corners=-0.57451153/-0.41459847/-1.0474176/-0.67305182/-0.69663841/-0.88\
+  458178 params=0.20000000000000001/-1/0/0.20000000000000001 float=y
+  outside=summ potential=255/255/0
+  colors=000DC7<15>ZWK_XLbYL<4>vdQ<2>laPh`Od_N`YM_XL<19>885664553332221000\
+  <2>1432653764974B8<17>HbUIdVIeY<4>Nno<2>MjeLhbKg_JeWIcV<19>3863752542431\
+  22000<20>OQ_PS`QTbRVcSWe<6>dch<2>``hZ_hXZhVYgTXf<18>89A77966744533421210\
+  0<23>iJBjKClKA<4>vP0<2>qO6oN8mMAkLDjKC<24>000<7>BA6
+  }
+
+wizard's-ring      {
+  reset=1820 type=formula formulafile=fractint.frm
+  formulaname=CGhalley passes=b
+  corners=-27.38344/27.38344/-20.28615/20.78901 params=1 float=y
+  inside=zmag potential=256/5000/0
+  colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
+  z<15>000<15>zn0<15>000<15>zzz<15>004<12>G0jH0nI0qK0uJ0rI0n<12>204
+  }
+
+strokes            { ; neat jm collard-richard formula
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=GenInvMand1_N function=flip/cotanh/recip/tanh passes=b
+  corners=0.8629375/-0.8769728/0.1971175/1.50205 float=y inside=zmag
+  potential=256/256/0 decomp=256
+  colors=000K00<6>300<15>lT7<17>pb_qb`qcbrddpcc<4>eYVcXUaWS_VRXTP<6>ILDFJB\
+  DI9AG78F5<2>0A0<2>030000003<14>00c<15>zzz<15>00c<14>003000022<14>0cc<15>\
+  zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<6>N00
+  }
+
+light-fall         {
+  reset=1820 type=fn(z)+fn(pix) function=cosxx/cotan passes=b
+  corners=1.350803/2.908112/1.040968/-1.035399/2.908112/-1.035399
+  params=1/0/1 float=y inside=zmag outside=real potential=256/256/0
+  decomp=256
+  colors=000xvd<20>qqppppppqooqoor<3>mmtllummu<20>000<19>T0hV0kW0mY0pZ2n<1\
+  5>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEE\
+  JFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazw\
+  a<3>yvc
+  }
+
+; these are the corrected images from DONS8. Probably more lurking
+; amongst my older files, but these bugged me
+
+x_guardian         { ; captain-planet zoom - corrected
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-13
+  function=log/sqr passes=t
+  corners=2.102736/1.4474443/-0.43519454/0.43852297/1.4474443/0.43852297
+  float=y potential=255/500/0 decomp=256
+  colors=000`DV<7>V4cU2eU3e<33>Vpq<10>0fz<45>02z01z01z11y<90>jN3jN3kN2lO1l\
+  O1lP1<27>re1re1rd2<23>aEU
+  }
+
+x_liar-fantasy       { ; from dons8 - corrected
+  reset=1820 type=formula formulafile=dons.frm formulaname=Liar4
+  passes=1 corners=-3.061919/3.850651/-2.160063/3.024364 float=y
+  potential=256/500/16
+  colors=M99<4>KFFJGGIHIHIJHJL<31>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzaz\
+  yazwa<25>qqppppppqooqoor<3>mmtllummu<16>AAC000889<2>000<19>T0hV0kW0mY0pZ\
+  2n<15>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<3>N77
+  cyclerange=0/255
+  }
+
+x_captain-planet   { ; from dons8 - corrected
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-13
+  function=log/sqr passes=t
+  corners=5.190578/0.09226536/-3.377674/3.420037/0.09226536/3.420037
+  float=y potential=255/200/0 decomp=256
+  colors=0000AA<11>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c\
+  00<14>300000020<14>0c0<15>zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<1\
+  4>003000022055077
+  }
+

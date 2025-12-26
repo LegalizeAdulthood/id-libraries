@@ -1,0 +1,300 @@
+comment { parameter file #13
+         Copyright (c) 1995 don lebow
+         all rights reserved
+
+         this is the first cut exploring some of the new options
+         in version 19 of Fractint, which is required.
+
+         Several are old images with 1 or 2 of the new features
+         implemented. 
+
+         an updated dons.frm is included. While there's some duplication
+         of formulas now included in FRACTINT.FRM, I'm leaving it intact
+         for now. Belt and suspenders.
+
+         enjoy ...
+
+             don CIS:76704,41
+             mdon@aloha.net
+             http://www.aloha.net/~mdon/ 
+}
+
+defender           {
+  reset=1900 type=formula formulafile=dons.frm
+  formulaname=inandout04 function=acosh
+  corners=0.6649609/-0.7150391/-0.9450522/0.8949478/-0.7150391/0.8949478
+  params=0.03/0.5/2/0/0/0 float=y potential=255/150/0 invert=-1/0/0
+  decomp=255
+  colors=zPCzMBzRE<12>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAK\
+  CDKEGJ<14>eee<14>AAK<9>f57i46l35p24s13w11z00<11>zjjznnzppzrrzvvzzz<13>c0\
+  K<4>k7Il8Hm9GoAFpBE<2>uGDwHCxIBzKA
+  }
+swoop-du-jour      { ; 
+  reset=1900 type=barnsleyj3 passes=b
+  corners=1.77522/-2.717868/-2.940709/3.050074/-2.717868/3.050074
+  params=0.4/0 float=y bailout=1 bailoutest=and inside=zmag
+  outside=atan
+  colors=000fdffff<4>zzzvvvrrrzzzpppfff<10>000L00<13>z00<2>p00l00h00d00a00\
+  <3>N00<5>OLLOOOQOL<7>bL0<5>zX0vV0rT0<14>OOO<9>ed2gf0ji0<2>ut0<2>ji0gf0ed\
+  2<10>OOO<8>8g67i45k24n13r12v10z0<4>0g00c02b2<9>OOO<9>22h00j00n<2>00z<3>0\
+  0i00e22c44b66a88_AAYCCXEEWGGU<3>OOO<6>Z3K`0Jd0L<5>z0X<5>b0L<22>f0l<2>p0w\
+  <4>_0d<19>ebf
+  }
+
+
+square-stare       {
+  reset=1900 type=formula formulafile=fractint.frm
+  formulaname=inandout03 function=zero/asin corners=-2/2/-1.5/1.5
+  params=0.05/-0.2/0/0/0/0 float=y bailout=1 inside=zmag outside=real
+  potential=255/255/0 invert=-1/0/0
+  colors=000AJR<43>xeIzfHyfH<51>65I44J44K<13>71Z80`91`<31>xYLz_KzZK<12>zNI\
+  zMHxMH<22>EC1BB0AA0<4>330220012<23>0Pl0Qn0Tp<4>0iz<4>0Vq0Ro0Qm<9>0GU0FS1\
+  FS<6>9JR
+  }
+
+brainiac           {
+  reset=1900 type=formula formulafile=dons.frm formulaname=inandout09
+  function=cotan/conj
+  corners=0.64574884/0.0061928472/-0.44715337/0.40558795/0.0061928472/0.40\
+  558795 params=15/-1/16/0/0/0 float=y inside=maxiter
+  colors=000bbq<9>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`0\
+  0c00d44<13>zzz<15>c00<14>300<15>lT7<15>paXpaYpb_qb`qcbrdd<2>la`i_ZgZXeYV\
+  cXU<11>DI9AG78F55D43C20A0<2>030000003<14>00c<15>zzz<4>ffs
+  }
+
+hot-peek           {
+  reset=1900 type=formula formulafile=dons.frm
+  formulaname=GenInvMand1_N function=asinh/asinh/asin/atanh
+  corners=-1.288079/1.711921/2.026549/-1.973451/1.711921/-1.973451
+  params=1/1/1/1/0/0 float=y maxiter=50 potential=255/255/0
+  colors=000FFFz50<27>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y\
+  00<30>c00b11a11`22_22<24>FFFFFFGFF<28>x11z00z10z30 cyclerange=2/255
+  }
+
+u-are-here           { ;  
+                     ;  
+  reset=1900 type=formula formulafile=fubar.frm formulaname=Zeppo
+  function=asin/acosh corners=-9.560554/10.65713/-6.548199/8.615061
+  params=0.5/0/0.2/1/0/0 float=y potential=255/125/125 decomp=256
+  colors=000a0E<11>000<21>g0Uj0Wk6Y<6>rmqtttsnr<7>j0W<5>Z0OX0NW0N<29>20100\
+  0042<6>3XL<7>ttt<15>0WJ<13>043022023<14>6Zk<15>ttt<15>6Zk<15>000<15>m0I<\
+  15>ttt<15>m0I<2>d0F
+  }
+
+steereo            {
+  reset=1900 type=formula formulafile=dons.frm formulaname=inandout11
+  function=cosxx/cotanh/sinh
+  corners=1.159559/-1.084441/-1.496/1.496/-1.084441/1.496
+  params=0.5/0/0.2/0/0/0 float=y inside=zmag potential=255/255/0
+  colors=000ABD<7>100<23>iJAjKBlK9<4>vP0<3>oN7mM9kLC<20>A41831620420210000\
+  <3>652763874A95BA6<2>GF8HG9IH9KIALJB<9>ZWJ_XKbYK<4>vdP<2>laOh`Nd_M`YL_XK\
+  <15>ED8CC7BB6995884663<2>220000010<23>HbTIdUIeX<4>Nnn<2>MjdLhaKgZJeVIcU<\
+  23>121000110<15>KLSLNUMOWNPXOQZPS_QTaRVbSWd<6>dcg<2>``gZ_gXZgVYfTXe<15>B\
+  CF
+  }
+
+maui-christmas2    {
+  reset=1900 type=formula formulafile=dons.frm formulaname=Liar3
+  passes=b corners=-3.695699/3.784142/-3.432209/2.177671
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=zmag outside=real
+  invert=1/0/0 decomp=256 distest=1/71/640/480
+  colors=000Ds0<4>Fx0Gz0Gy0<31>0F0F00<45>x00z00y00<30>F00<16>eU2gW3hW3<27>\
+  xpAxpAwoA<28>bW4aV4_V4<17>0H0<36>Dr0
+  }
+
+tiny_lake2         {
+  reset=1900 type=manfn+zsqrd function=sin passes=b
+  corners=-2.2090651/-1.3690651/-0.5607707/0.5592293/-1.3690651/0.5592293
+  params=1/0 float=y bailoutest=imag inside=maxiter outside=mult
+  decomp=128
+  colors=000ccb<11>GGFEEDCCD<4>22D00E00F<23>00w00y01y<27>OsyPuyOtx<30>1BQ0\
+  9O19P<13>MMhONjQPj<13>wwxzzyzww<14>z0M<3>m2Jj2Ih3H<13>4B6<9>EXKCYKA_J<14\
+  >zyxzzv<16>vv5uu2uu0uu2<15>yyuzzyyyx<2>rrqssr<6>eed
+  }
+
+frosty-barnsley    {
+  reset=1910 type=barnsleyj2 passes=b
+  corners=-0.01079182/-1.44323/0.4031895/-0.6711392 params=2/2 float=y
+  bailoutest=and inside=maxiter decomp=256 periodicity=0
+  colors=LSUFLU<2>EKUDJVCKU<3>9MQ8MP6KM<4>9NPANQBOQBOQ<5>FRVGSVHSWITWITX<2\
+  4>ZfkBLS<2>8MP6KM<2>8MOdjq<6>inujovinu<169>IPUIPUIPUHOUHOUHOU<6>FMU
+  }
+
+bauble             {
+  reset=1900 type=formula formulafile=dons.frm
+  formulaname=OldNewtonSinExp passes=b
+  corners=0.57949119/0.0044389504/-0.38985596/0.3768851/0.0044389504/0.376\
+  8851 params=1/0/0/0/0/0 float=y maxiter=25 inside=maxiter outside=1
+  potential=256/1024/0 invert=-1/0/0
+  colors=000zrrzvvzzz<13>c0K<4>k7Il8Hm9GoAFpBE<2>uGDwHCxIBzKAzMB<14>zzU<15\
+  >9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDKEGJ<14>eee<14>AAK<9>f57\
+  i46l35p24s13w11z00<12>znn
+  }
+
+interior-9         {
+  reset=1900 type=formula formulafile=dons.frm formulaname=inandout09
+  function=acosh/cosxx
+  corners=0.087402266/0.00253826604/-0.055022764/0.058129236/0.00253826604\
+  /0.058129236 params=5/0/0/0/0/0 float=y inside=maxiter
+  potential=255/255/0
+  colors=000qp0<14>000GA4<15>0fI<14>103<13>I9hKAkJAh<13>000<15>g01<13>B038\
+  04402<15>u0u<12>E0FB0C708304000<15>zzz<14>444<14>HNeIPhIOe<13>800400000<\
+  15>zX0<15>000<15>ut0
+  }
+
+beltway            {
+  reset=1900 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=asin/cosxx passes=1
+  corners=-5.255015/6.108621/-3.709788/4.812939 params=1/0/0/0/0/0
+  float=y decomp=256
+  colors=000heV<3>leU<6>pcFqcDpaD<17>_24Z04Z04Y04X14X15X15W15V25V25V25U25T\
+  36T36T36S36R36R46R46Q47P47P57P57O57N57N57N68M68L68L68L78K78J79J79J89I89H\
+  89H89H89G9AF9AF9AF9AEAADAADAADABCBB<4>BBBBBBCCC<31>HHHIIIHIL<10>2Qu0Ry1R\
+  v<10>KNQMMMNNN<19>QQQQQQPRR<7>NTTNTTNTS<36>eH7eH7eI8<34>fcUfdVgeWheW
+  }
+
+long-view          {
+  reset=1900 type=formula formulafile=dons.frm formulaname=OK-26
+  function=atan passes=1 corners=-3.027001/2.812923/-2.224289/2.155654
+  params=0/0/0/0/0/0 float=y outside=real potential=255/200/0
+  decomp=256
+  colors=000QQP<5>eee<13>773440000GA4<15>0fI<14>103<13>I9hKAkJAh<13>000<15\
+  >g01<13>B03804402<15>u0u<12>E0FB0C708304000<15>zzz<14>444<14>HNeIPhIOe<1\
+  3>800400000<15>zX0<15>000440<7>OOM
+  }
+
+life's-a-beach     {
+  reset=1900 type=formula formulafile=dons.frm formulaname=OK-43
+  function=sin/asin/abs passes=b
+  corners=-0.0145439298/0.0269400272/-0.75390017/0.0046982175/-0.363736932\
+  /-0.2883095 params=0.2/-1/0/0/0/0 float=y inside=zmag
+  colors=00C<3>zjR<11>WUYTSYQRZNP_JM_<2>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBE\
+  c<29>BBLAAKCDKEGJ<14>eee<14>AAK<8>c68f57i46l35p24<2>z00<11>zjjznnzppzrrz\
+  vvzzz<13>c0K<3>i6Ik7Il8Hm9GoAF<3>uGDwHCxIBzKAzMBzRE<5>zgL
+  }
+
+zep-totems         {
+  reset=1900 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=sin/sqr passes=b
+  corners=0.77032704/0.46632645/-4.336279/4.975337/-3.8086882/1.769075
+  params=2/0/1/0/0/0 float=y maxiter=256 inside=zmag outside=real
+  decomp=256 distest=1/71/640/480
+  colors=80CzRE<12>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDK\
+  EGJ<14>eee<14>AAK<8>c68f57i46l35p24<2>z00<11>zjjznnzppzrrzvvzzz<13>c0K<3\
+  >i6Ik7Il8Hm9GoAF<3>uGDwHCxIBzKAzMB
+  }
+
+processional       {
+  reset=1920 type=formula formulafile=dons.frm formulaname=TSinh
+  corners=0.3095912/4.180099/2.585292/-2.575386/4.180099/-2.575386
+  params=-1/0/0/0/0/0 float=y inside=bof61 outside=summ
+  potential=200/200/0 invert=-1/0/0
+  colors=000972752542321000000000<28>sW0uX0vY0wZ0<29>210000000<29>uT0wU0wU\
+  0<29>210000000<5>C86E97GA8IB9KDAMEB<16>qZRs`SuaTwcUwcU<23>EA7C96A8586465\
+  3432221000000<6>EB2GD2GD3<23>0Ce<22>B93
+  }
+
+halley-rose        {
+  reset=1900 type=formula formulafile=fractint.frm
+  formulaname=CGhalley passes=2
+  corners=-27.38344/27.38344/-20.28615/20.78901 params=2/0/0/0/0/0
+  float=y inside=zmag
+  colors=000lC`<5>rmqtttsnr<7>j0W<5>Z0OX0NW0N<29>201000042<6>3XL<7>ttt<15>\
+  0WJ<13>043022023<14>6Zk<15>ttt<15>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000\
+  <21>g0Uj0Wk6Y
+  }
+
+life-support       {
+  reset=1900 type=formula formulafile=dons.frm formulaname=inandout09
+  function=tanh/abs passes=b
+  corners=-0.21864762/0.81225761/-0.061646727/2.0871206/-0.87893004/0.8187\
+  2984 params=2/0/16/0/0/0 float=y inside=zmag potential=255/255/0
+  invert=-1/0/0
+  colors=000mwy<7>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<3>y\
+  says`yr_yq_<10>tlSskRsjQsiPshO<4>qeLpdKpcJobInaH<2>m_GmZGlYFkYE<2>hVBhUB\
+  gUAgTAfS9<7>_M6ZL5YK5YK4XJ4WI3<3>TF1SE1SE1RD1QC1<13>G50F40E40E40<2>D32C2\
+  2C22B12A12<14>307207208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW\
+  3DX4EX4EY<9>9MeAMeANfANgBOh<6>GTmGUmHVnIWnJXo<10>QduReuSfvTgvUgvVhv<2>Xi\
+  xYjxZkx_ly_ly<6>dqzeqzfrzgrzhszhsz<5>mvy
+  }
+
+twit-filter        {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=acosh/sin/abs passes=1
+  corners=-15.62199/22.85382/-15.40843/13.44843 params=9/0.3/0/0/0/0
+  float=y inside=bof61 outside=atan
+  colors=00065I<3>g0G<7>J07<22>cBGdBGeCHeCI<23>dSk<2>`LhZIgXHe<5>KBPI9MG9L\
+  <5>4AB<12>NOPPPQRRSSTU<16>viZ<11>_b`YaaW__<9>KXTJXSGTO<4>153<2>2C2<9>RCC\
+  UCDXCE_CFbCGeCH<14>Z_`<2>989<6>3L32N22N2<13>2AB29C279<2>000<3>C04<12>2W1\
+  <4>OQJ<22>76J
+  }
+
+whiplash           {
+  reset=1900 type=formula formulafile=dons.frm formulaname=OK-43
+  function=conj/asin/abs corners=-2/2/-1.5/1.5 params=1/5/0/0/0/0
+  float=y inside=zmag potential=256/128/0
+  colors=000727B2BE3EH3H<11>zWC<11>H8I200<3>200200201202<31>28a29b29c3Ae28\
+  f<2>12g00h00k00o00r<15>000<15>r00<14>300<16>zuZ<11>AE9006077044000<15>hh\
+  h<16>M3rK0sK0r<29>5FB5FA4F93F82G6<5>4Q44S44R4<12>2A2292171151131000414
+  }
+
+prophet            {
+  reset=1900 type=formula formulafile=dons.frm formulaname=inandout09
+  function=asinh/sqr passes=b
+  corners=0.34590432/-0.49409568/-0.553737/0.566263/-0.49409568/0.566263
+  params=2/0/0/0/0/0 float=y inside=maxiter potential=255/255/0
+  colors=000l00<6>N00<5>OLLOOOQOL<7>bL0<5>zX0vV0rT0<14>OOO<9>ed2gf0ji0<2>u\
+  t0<2>ji0gf0ed2<10>OOO<8>8g67i45k24n13r12v10z0<4>0g00c02b2<9>OOO<9>22h00j\
+  00n<2>00z<3>00i00e22c44b66a88_AAYCCXEEWGGU<3>OOO<6>Z3K`0Jd0L<5>z0X<5>b0L\
+  <22>f0l<2>p0w<4>_0d<21>fff<4>zzzvvvrrrzzz<2>bbb<9>000L00<13>z00<2>p00
+  }
+
+bungalow-bill      {
+  reset=1910 type=formula formulafile=dons.frm formulaname=OK-26
+  function=cabs
+  corners=-1.064216/1.58127/1.759324/-1.76799/1.58127/-1.76799
+  params=0.5/0/0/0/0/0 float=y outside=real potential=255/200/0
+  decomp=256
+  colors=000444000<15>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<15>004\
+  <12>G0jH0nI0qK0uJ0rI0n<11>308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<1\
+  3>888
+  }
+
+wavey             {
+  reset=1910 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=cosxx/sqrt passes=1
+  corners=0.61732352/0.97622089/-3.140672/3.422322/-2.4037106/0.8873734
+  params=5/0/0.1/0/0/0 float=y inside=zmag decomp=256
+  colors=80C_ao<21>DGdBEcBEc<29>BBLAAKCDKEGJ<14>eee<14>AAK<9>f57i46l35p24s\
+  13w11z00<11>zjjznnzppzrrzvvzzz<13>c0K<4>k7Il8Hm9GoAFpBE<2>uGDwHCxIBzKAzM\
+  BzRE<12>zzU<15>9C`ADaBEc<46>xxyzzzyyz<22>abo
+  }
+
+seventh-gate       {
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout04
+  function=asin passes=b
+  corners=1.280283/-0.00821879/-0.8632261/0.8547769/-0.00821879/0.8547769
+  params=0.5/-1/0/0/0/0 float=y inside=zmag outside=summ
+  potential=255/500/0 invert=-2/0/0 decomp=255
+  colors=000<15>zQZ<15>000<15>d0j<14>303000022<14>0gg<15>000<15>0pQ<15>000\
+  <15>zn0<15>000<15>zM0<15>004<15>faP<13>654332333<14>zzz<15>000
+  }
+
+shield-wall          {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OldManowar
+  passes=b
+  corners=1.2395/-2.123729/-2.256195/2.22811/-2.123729/2.22811
+  params=16/0/0/0/0/0 float=y inside=zmag invert=1/0/0 decomp=64
+  colors=000000<14>`00c00d44<13>zzz<15>c00<4>S00P00P00<59>zh5<6>0F0<4>0300\
+  00002<14>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>033
+  }
+
+mystic-sign        {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-26
+  function=sqrt passes=1
+  corners=1.735535/-1.382985/-2.076755/2.081271/-1.382985/2.081271
+  params=1/0/0/0/0/0 float=y outside=real potential=255/200/0
+  decomp=256
+  colors=000J8A<10>zQZ<15>000<15>d0j<14>303000022<14>0gg<15>000<15>0pQ<15>\
+  000<15>zn0<15>000<15>zM0<15>004<15>faP<13>654332333<14>zzz<15>000<3>F68
+  }

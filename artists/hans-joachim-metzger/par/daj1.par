@@ -1,0 +1,386 @@
+; From: David Johnston <daj@lclark.edu>, (c)opyright 1994
+;
+;  --------------------------------------------
+;  | Here's my par file.  Hope you like it :) |
+;  --------------------------------------------
+
+0g toaster         { ; PAR file (c)1994 David Johnston
+                     ; as if in space, even
+  reset type=icons corners=-2/2/-1.5/1.5
+  params=-2.25/2.0800000000000001/0.19900000000000001/-0.63/0.100000000000\
+  00001/17 float=y inside=0 colors=@volcano.map
+  }
+
+koel_rotater       { ; I like it, no more to say...         David Johnston
+  reset type=julfn+zsqrd function=recip passes=b
+  corners=-2/1.996094/-1.496094/1.5 params=-0.5/0.5 maxiter=2250
+  bailout=30 decomp=256 biomorph=0
+  colors=000rkM<9>vjFtkI<72>fnPeoQgnP<14>bfUaeVcfR<2>jkD_eU<5>IaJQ_T<7>G1z\
+  LJi<52>ek8uVidiB<38>LHxNNt<8>NunNymPak<5>fRBS_e<17>R`e
+  }
+
+funky julia        { ; wierd
+  reset=1810 type=julia_inverse miim=breadth/left
+  corners=-2/2.000012/-1.500014/1.5
+  params=-0.11/0.65569999999999995/4/1024
+  }
+
+death's head       { ; WAY koel neato!
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
+  corners=0.9344883/0.81416178/-0.080225587/0.080201089/0.81416178/0.08020\
+  1089 params=8/0/1/12 maxiter=500 inside=0 potential=256/250/32000
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+spiral stuffy      {
+  reset=1810 type=phoenix passes=b
+  corners=0.28185326/0.48185003/0.23814225/0.38814723
+  params=0.56667000000000001/-0.5 maxiter=2000
+  }
+
+octagon            {
+  reset=1810 type=newton corners=-2/2/-1.5/1.5 params=8
+  colors=000SXkeit<4>s8G<3>hthqvfzxd<3>SmD<7>i26<5>FY9<6>R8lT4rT6q<6>UNeKF\
+  LA70<4>39g<6>zmK<6>yWPxTQxSR<4>vMX<6>5Xy<5>bDJ<7>0VC8NVGEmbNdyXWeUv7Ty<4\
+  >Un4<5>a6O<4>Qtj<7>y7a<2>hxPipYjggkZq<3>h7Qo4Pv1OgCISNB<3>lVyfLc_BHbSXeh\
+  lBiq89D<4>ri1tmwzrV<2>8L5<5>r1H<4>s7Q<5>HqT<4>QgjSenVbj<6>vDFXXU6piG6y<6\
+  >mdr<6>5JM<3>vay<4>l_sjZqhZpfYne_m<4>ZlhXogYlh<5>hPr<5>9b_Riq<3>JrG4lU<2\
+  >fpi<4>7vlBul
+  }
+
+mandelbrot^20      { ; takes a long time, island in lake
+  reset=1810 type=manzpower
+  corners=0.189561963/0.190781474/-0.888464212/-0.887549877
+  params=0/0/20 maxiter=10000
+  }
+
+flower             { ; sowing the seeds of love?
+  reset=1810 type=newton corners=-6/6/-4.5/4.5 params=20
+  }
+
+raindrop           { ; looks like an inside-out mandelbrot set
+                     ; It looks like an eyeball, too
+  reset type=formula formulafile=improved.frm formulaname=InvMandel
+  function=sqr corners=-1.352689/3.047307/-1.650019/1.65 params=1/0/4
+  maxiter=500 inside=0 potential=256/250/32000
+  colors=000z00<30>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<\
+  30>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11
+  }
+
+flowery thingie    { ; looks like a way spiff flower on drugs
+                     ; this one looks like a delicate glass thingie
+  reset type=icons corners=-2/2/-1.5/1.5
+  params=-2.3399999999999999/2/0.19980000000000001/-0.59999999999999998/0.\
+  10000000000000001/7 float=y inside=0 colors=@neon.map
+  }
+
+snakey flames      { ; six little flamin' serpents o' hell
+                     ;  
+  reset type=icons corners=-2/2/-1.5/1.5
+  params=-2.3100000000000001/2.0600000000000001/0.19900000000000001/-0.635\
+  00000000000001/0.10000000000000001/6 float=y inside=0
+  colors=@volcano.map
+  }
+
+palm fronds        { ; funky, funky.
+  reset=1820 type=formula formulafile=sam.frm formulaname=Sam_10
+  corners=-0.38976914/0.40766913/-1.071938/1.064087 float=y
+  colors=000aNC<3>aN4aN2bL5<15>h4l4Nt<3>5Gt<3>EOnLNO<14>3pI2rI3qG<12>Fg3Fg\
+  2Gh4<12>OuMOuNPtO<12>QsP<14>vvfxvgyqc<9>zA4z61x52<17>_5GZ5GX7I<19>9Tl<14\
+  >bUjdUjeVh<12>reUreTqcS<13>nMKnLKoML<16>rQYrQYsRX<21>wdF<3>bUm
+  }
+
+sumo wrastle       { ; Byg ol Purple phat guy
+  reset=1820 type=formula formulafile=f_g_z.frm formulaname=FGZ_-1
+  corners=-1.561767/0.89824/1.618434/-1.661581/0.89824/-1.661581
+  float=y maxiter=20000 colors=@chroma4.map
+  }
+
+swirly icon        { ; Migty awsome-- let it go for a while
+  reset type=icons corners=-2/2/-1.5/1.5
+  params=-2.3500000000000001/2.6000000000000001/0.20000000000000001/-0.800\
+  00000000000004/0.20000000000000001/6 float=y inside=0
+  colors=000<126>00z00z00z11z11z<123>zzz
+  }
+
+ball-o string      { ; looks like a wierd ball of string or somepin.
+  reset type=icons3d corners=-2.1125/2.1125/-1.584375/1.584375
+  params=-2.3399999999999999/2/0.35354999999999998/0.10000000000000001/0.2\
+  0000000000000001/3 float=y maxiter=32767 inside=0 rotation=0/0/0
+  perspective=300 xyshift=0/0 stereo=2 interocular=3 converge=-3
+  crop=4/0/0/4 bright=80/100 colors=@glasses2.map
+  }
+
+wavey              { ; A byg ol mandelbrot turbulent wave
+  reset=1820 type=mandel
+  corners=-0.75008204587/-0.74935389684/0.029438857617/0.030409722989/-0.7\
+  4935389684/0.030409722989 float=y maxiter=255 inside=zmag
+  colors=@blues.map
+  }
+
+AAUGHGHGHGHGH!!!   { ; lightningy mandelbrot funky
+  reset=1820 type=mandel
+  corners=-1.26086845/-1.25086814/0.377670107/0.38517 maxiter=2000
+  colors=@blues.map
+  }
+
+present            { ; open it up and see!
+  reset type=icons3d corners=-2/2/-1.5/1.5
+  params=-2.3500000000000001/2.6000000000000001/0.20000000000000001/-0.800\
+  00000000000004/0.20000000000000001/6 float=y maxiter=30000 inside=0
+  rotation=0/0/0 perspective=300 xyshift=0/0 stereo=1 interocular=3
+  converge=-3 crop=4/0/0/4 bright=100/100 colors=@glasses1.map
+  }
+
+leafy glasses      { ; EEt EEs CAt OOman!    3dG
+  reset=1820 type=icons3d corners=-2/2/-1.5/1.5
+  params=-2.25/2/0.20000000000000001/0.10000000000000001/0/3 float=y
+  maxiter=3000 rotation=-20/0/25 perspective=200 xyshift=0/0 stereo=2
+  interocular=3 converge=-3 crop=4/0/0/4 bright=80/80
+  colors=@glasses2.map
+  }
+
+toons?             { ; I dunno why I named it toons.  What the hell.
+  reset=1820 type=julia passes=b
+  corners=4.282181/-4.282181/-5.678494/5.740658/-4.282181/5.740658
+  params=0.29999999999999999/0.59999999999999998 maxiter=3000
+  invert=0.5/0/0
+  colors=000z00zc0zz0Aw97Uym0ycA9zclwwvKKJccbKKJccbKKJccbKKJccbKKJccbKKJcc\
+  bKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJcc\
+  bKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJcc\
+  bKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJcc\
+  bKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJccbKKJcc\
+  bKKJccbKKJccbKKJccbKKJccbKKJKKJ000<10>0000j000W600000<3>0000z7000<2>0000\
+  05G0000000000MB00B000s80000000000CB00Na00xd0000000000t40000<7>00000V8000\
+  0000000sp00000<7>0000Wm00R2006j0000<15>00000kg00E800OE00Vq0000000000e100\
+  <4>0000uu000<2>00000N000<4>00004b0000000000RP00Qb00000<3>000
+  }
+
+fracsplosion       { ; funky mandelbrotian funk
+  reset=1820 type=mandel
+  corners=-0.32255966/-0.28095909/0.642092234/0.673292495 maxiter=3000
+  inside=0 colors=@bluedave.map
+  }
+
+super-highway      { ; Phunquis bubbly road to oblivion
+  reset=1820 type=marksmandelpwr function=tan
+  corners=-0.46539783/-0.065398216/0.15118712/0.45118052 maxiter=3000
+  inside=0
+  colors=000FLJ<2>C5X<6>pu9<4>4fM<4>yno<7>Qw9<5>QT_<7>krB<6>zPKIaf<6>Rnd<2\
+  >Tde<2>wS0<4>lWg<5>6C8<3>c0u<2>jBd<5>QL8<7>4_fJZNYY3<2>qxf<3>mrdlqdkma<5\
+  >kTLkQJiPM<6>_Pd<3>m6Y<6>fm3kgPpbi<4>gC8f71cE2<5>Qp2<7>khaVSj<6>fVkXJmO7\
+  o<2>bhXftRm`XsIa<2>hWs<7>RX`<2>bEuTaN<2>_8R<7>p7b<7>Z01<2>RaGPmLLhP<5>3I\
+  g<2>hL4icPjuinUZr2OcKXPad<3>TrN<2>yoM<3>_FK<2>cPK<4>4VZ<2>4hx<4>vqItY9jI\
+  S
+  }
+
+phunkey sandy      { ; frothy basin w/poiple.map
+  reset=1820 type=frothybasin corners=-3/3.000002/-2.500001/2 params=6
+  maxiter=3000 inside=0 colors=@poiple.map
+  }
+
+brotian SiCo       { ; koel mandel-like thing, but not from a mandelbrot! slow.
+                     ; nice aesthetic balance, but takes forever.
+                     ; zoom out & it looks like a pit
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
+  passes=b
+  corners=0.9057203277418/0.9057131932994/-5.275776436208e-006/4.236298568\
+  949e-006/0.9057131932994/4.236298568949e-006 params=8/0/1/12 float=y
+  maxiter=3000 potential=256/250/32000
+  colors=CCCqCs<19>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsYwCw<\
+  18>JCJwww000
+  }
+
+tulipy             { ; like a zestful hollandish flower.  (manzpwr^-200)
+  reset=1820 type=manzpower
+  corners=-1.03246769/-0.996289021/-0.0244322631/0.0238059583/-0.996289021\
+  /0.0238059583 params=0/0/-200 float=y maxiter=30000 inside=0
+  colors=@default.map
+  }
+
+dewdrop            { ; from a byg thing what looks not interesting. This koel!
+  reset=1810 type=magnet2m
+  corners=0.07325846713/0.07671958717/0.04239021663/0.04498605669
+  params=0.94999999999999996 float=y
+  colors=000<8>LLz<4>ww0<16>zzz<8>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>z\
+  VV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S\
+  0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSK\
+  KS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<\
+  3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88\
+  G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFB\
+  GGBFGBDGBCG000<6>000
+  }
+
+rainbow bob        { ; punkey julia w/o an inside.  Most colorful.
+  reset=1820 type=julia corners=-2/2/-1.5/1.5
+  params=-0.75219941511750221/0.080182682722806931 maxiter=3000
+  inside=0 colors=@default.map
+  }
+
+unpeel             { ; artichokey?  phinquis dave-made fractal.
+  reset=1820 type=formula formulafile=unknown.frm
+  formulaname=DavesDollop
+  corners=-2.636597/3.889363/4.364264/-4.337016/3.889363/-4.337016
+  params=1.8/0/2 float=y maxiter=30000 inside=0
+  colors=000000<20>t00w00w10<41>yx4zz5zz7<26>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+TrekWings          { ; like a pair of pilot wings fron star trek
+  reset=1820 type=formula formulafile=unknown.frm formulaname=Dollop2
+  corners=1.5/-1.5/-2/2/-1.5/2 params=-1.5/0/-0.044999999999999998
+  float=y maxiter=3000 inside=0
+  }
+
+peelout            { ; most phunque.  custom frac.
+  reset=1820 type=formula formulafile=unknown.frm formulaname=Dollop3
+  corners=-2/1.999996/-1.49998/1.5 params=-0.5 float=y maxiter=3000
+  inside=0
+  }
+
+MOsT Phunque       { ; like a wierd ice crystal? Can't describe the phunquiness
+  reset=1820 type=formula formulafile=unknown.frm formulaname=InvJulia
+  passes=b corners=-4.659098/4.659129/-3.494322/3.494328
+  params=-0.90000000000000002/-1 maxiter=3000 colors=@blues.map
+  }
+
+phunquellebrotte   { ; kinda treelike brot phunque in boosted yeller
+                     ; I think boosted means blended to black
+  reset=1820 type=mandel
+  corners=-1.5560045/-1.3094583/-0.16481683/0.16391167/-1.3094583/0.163911\
+  67 maxiter=3000 inside=0 colors=zz0<14>000
+  }
+
+phraqtured scape   { ; indescribably phraque.  Shattered window?  Mandelstuv.
+  reset=1820 type=mandel
+  corners=-1.62865085/-1.6269302/0.0215226002/0.0228126701
+  maxiter=3000 inside=0 colors=@mandel.map
+  }
+
+Hairy mandelsplat  { ; Kinda surpriziing mandel zoom.  Eez ver naas.
+  reset=1820 type=mandel
+  corners=-1.6275808734459/-1.6275801052154/0.021663865503645/0.0216632894\
+  72413 float=y maxiter=3000 inside=0 colors=@mandel.map
+  }
+
+sqarey             { ; Very wierd julia w/o inside
+  reset=1820 type=julia
+  corners=-0.023249032/-0.0229651146/0.277210375/0.277423244
+  params=-1.6275804640441098/0.021663492096464738 maxiter=3000
+  inside=0 colors=@mandel.map
+  }
+
+Autumn             { ; Wierd fall mandeleaf.  Mellow kool.
+  reset=1820 type=mandel
+  corners=-1.9427182521883619/-1.9427182521668949/0.00035076507722800335/0\
+  .00035076509335021445 float=y maxiter=3000 inside=0
+  colors=@volcano.map
+  }
+
+Burn baby, burn!   { ; From the firey pits of mandelbrot hell
+  reset=1820 type=mandel
+  corners=-1.62758062659179/-1.62758059778311/0.0216635151423426/0.0216635\
+  535444246/-1.62758059778311/0.0216635535444246 float=y maxiter=3000
+  inside=0 colors=@mandel.map
+  }
+
+Diamonds           { ; Diamond jewelry on pink velvet.  Mandel4 zoom.
+  reset=1820 type=mandel4
+  corners=-0.632217562112/-0.632193171862/0.511288797832/0.511307084582
+  float=y maxiter=3000 inside=0 colors=@jutemap2.map cyclerange=0/255
+  }
+
+krull              { ; like a firey krull thingie. Julzpwr^6.
+  reset=1820 type=julzpower corners=-2/1.999996/-1.49998/1.5
+  params=0.38133203983306885/0.68970847129821777/6 maxiter=3000
+  inside=0 colors=@volcano.map
+  }
+
+barbed brot        { ; yet more brottian funk.  Not very zoomed. Default map.
+  reset=1820 type=mandel
+  corners=-0.64692082/-0.44692101/0.55863808/0.70863763 maxiter=3000
+  inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000 cyclerange=0/255
+  }
+
+mandelthing        { ; takes a long time, but rotate that baby with a minus
+  reset=1820 type=mandel passes=1
+  corners=-1.26086843/-1.25085145/0.377661169/0.385169983 maxiter=2000
+  inside=maxiter potential=255/70000/10000/16bit
+  colors=000000<2>zzy<2>000<247>000
+  }
+
+phunque dat        {
+  reset=1820 type=mandel
+  corners=-0.79941349/-0.59941368/0.2848441/0.43484366 maxiter=3000
+  inside=0
+  colors=UjU<8>Lu3<4>F9aE0gABX<2>1g32UR3Gm<3>5gp<12>qmA<9>k1t<9>d15d10b31<\
+  12>DR5<3>jFu<4>35r<14>Jb4<13>FhO<14>nHz<6>iavidvjbw<7>pOw<5>i7K<7>h`vhcz\
+  fdv<6>Ye_g``<6>5_V<8>iHv<11>3bg<6>uto<14>YhL<4>_fB_fAZhC<8>ZtT<8>ulC<4>u\
+  Hy<7>`JW cyclerange=0/255
+  }
+
+umbilical cord     { ; same old mandstuv, but nice colors
+                     ; on 1024, you can't tell it's made of pixels!
+  reset=1820 type=mandel
+  corners=0.119437838/0.129437828/0.653159892/0.660660299 maxiter=3000
+  inside=0 colors=@haystack.map cyclerange=0/255
+  }
+
+doily              { ; funki fn(z*z).  inneresting, a bit slow.
+  reset=1820 type=fn(z*z) function=tan corners=-4/4.007797/-3.003891/3
+  maxiter=3000 inside=0 cyclerange=0/255
+  }
+
+Ruby Brooch        { ; julia^4 with a funk map, red sparkley
+  reset=1820 type=julia4 corners=-2/1.999996/-1.49998/1.5
+  params=0.37644016742706299/0.69228518009185791 maxiter=3000 inside=0
+  colors=@funk5.map cyclerange=0/255
+  }
+
+single cell        { ; Loks like a funki petry dish with yeast or somepin
+  reset=1820 type=magnet2m
+  corners=1.4427273/1.7027273/0.17707628/0.37207628 float=y
+  maxiter=3000 inside=0 colors=@default.map cyclerange=0/255
+  }
+
+cord of rainbow    { ; Pretty mandelzoom.  Umbilical type schtoff.
+  reset=1820 type=mandel
+  corners=-0.988056075/-0.988031304/0.324305272/0.324323844
+  maxiter=3000 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000 cyclerange=0/255
+  }
+
+pretty cool        { ; plain old mandelzoom with a funky map
+  reset=1820 type=mandel
+  corners=-1.404686573064767/-1.404686569967328/0.03129421138086859/0.0312\
+  9421370241966 float=y maxiter=3000 inside=0
+  colors=000YO4_J0cI3dG0eD5jG9gK6hL4iH5dIAbO8_O6_Q2XR6_N4dO6ZI8VJ8RK5XE8aC\
+  6dBC_AFW5IS6CM8FJEDFI8DCBCG5FB5K80I20G60LB0I90EB2D71A14F08E08G08A3EB3GG5\
+  BI7BI1HK0EF0BF05L57G71C30A704720D13F45923D64J7AK7FPDBTCEWHDZMBTJ9XDA_7BV\
+  DCV79`A4_E2ZC5_7AZ45V48V9BZ4F`0FV0C_0BY0H_3Jc6N`1L`0GZ0Ca17f1Ai0Ce2Hh6Ef\
+  AAfE6hDAe98f5AhA4e67h42h00e01f02e08a02Y50_52YB2`H6WNBVOASQDUWDO_7MYAGbGF\
+  dBE`BA`GCaCD_D8UADXCIRGENJIHKHBEFGDCCB7778C67763517B09504B04H00L60K66NC5\
+  R62L80J40OA5P51OB7QE3OC3U98Q8BU4AU8A_8Dc3Hh9Lh8KgDHaGLfMKkHNnLRkRXkOUqSQ\
+  vYKyXKsbNvdNp_PjcVoZXlaSpeXjgYpc_jdXn`UtbZwaZy_bycgydjyeoy`syenwYH0_M0_Q\
+  6XT5WUAUPESQHXRDaWJaUGaZE_TKaZJgdLabIehD_k7dq9dwFZzGVxLQvQTxLQrMToQSiNVk\
+  HUgBTcCVb7Q_1PY0KZ1Od6I_1NW1KW0Qa1Uf1Rg7Ue8XaDVb8`X9VW3`S2YR7_PB_LA`R7`R\
+  3ZN7bN3YM5`Q8YP6YT7aQ4ZS4`YAWZ8VY4PV7OU2QW3TQ1UO0WJ3aM1
+  cyclerange=0/255
+  }

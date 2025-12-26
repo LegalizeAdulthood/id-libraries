@@ -127,3 +127,502 @@ CGNewtonSinExp (XAXIS) {
   ;SOURCE: fractint.frm
 }
  
+Chico {; Mutation of 'M-SetInNewton'. Mutated by Bradley Beacham [74223,2745]
+       ; Original formula by Jon Horner [100112,1700]
+       ; For 'M-SetInNewton' set FN1 & FN2 =IDENT and P1 & P2 = default
+       ; p1 & p2 = Parameters (default 3,0 and 0,0)
+  z = 0, c = fn1(pixel), cminusone = c-1
+   ; The next line sets k=default if p1=0, else k=p1
+  k = (3 * (|p1|<=0) + p1)
+  kminusone = k - 1:
+  oldz = z
+  nm = k*c-kminusone*z*cminusone
+  dn = k*(k*z*z+cminusone)
+  z = fn2(nm/dn)+kminusone*z/k + p2
+  0.01 <= |(z-oldz)|
+  ;SOURCE: dons.frm
+}
+ 
+Curly {; Mutation of 'Natura'. Mutated by Bradley Beacham [74223,2745]
+       ; Original formula by Michael Theroux [71673,2767]
+       ; For 'Natura', set FN1 & FN2 =IDENT and P1 & P2 = default
+       ; p1 = Parameter (default 0.5,0), real(p2) = Bailout (default 4)
+  z = pixel
+       ; The next line sets c=default if p1=0, else c=p1
+  c = ((0.5,0) * (|p1|<=0) + p1)
+       ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  test = (4 * (real(p2)<=0) + real(p2) * (0<p2)):
+  z = fn1(fn2(z*z*z)) + c
+  |z| <= test
+  ;SOURCE: dons.frm
+}
+ 
+FlipConjJul_N {; Jm Collard-Richard
+  z=pixel:
+  z=flip(conj(z^p2))+p1
+  |z|<=4         
+  ;SOURCE: dons.frm
+}
+ 
+GenInvMand1_N {; Jm Collard-Richard
+  c=z=1/pixel:
+  z=fn1(z)*fn2(z)+fn3(fn4(c))
+  |z|<=4
+  ;SOURCE: fractint.frm
+}
+ 
+Groucho {; Mutation of 'Fish2'.
+    ; Original formula by Dave Oliver via Tim Wegner
+    ; Modified for if..else logic 3/19/97 by Sylvie Gallet
+    ; For 'Fish2', set FN1 & FN2 =IDENT and P1 & P2 = default
+    ; p1 = Parameter (default 1,0), real(p2) = Bailout (default 4)
+   z = c = pixel
+    ; The next line sets k=default if p1=0, else k=p1
+   IF (real(p1) || imag(p1))
+      k = p1
+   ELSE
+      k = 1
+   ENDIF
+    ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+   IF (real(p2) <= 0)
+      test = 4
+   ELSE
+      test = real(p2)
+   ENDIF
+   :
+   z1 = c^(fn1(z)-k)
+   z = fn2(((c*z1)-k)*(z1))
+   |z| <= test
+  ;SOURCE: fract196.frm
+}
+ 
+Liar4 {; by Chuck Ebbert.
+       ; X: X is as true as (p1+1) times Y
+       ; Y: Y is as true as X is false
+       ; Calculate new x and y values simultaneously.
+       ; Real part of p1 changes probability.  Use floating point.
+       ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel, p = p1 + 1:
+  z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)))
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+OK-13 {; TRY FN1 = SQR, FN2 = SQR
+  z = 0, c = fn1(pixel) :
+  z = fn1(z) + c
+  z = fn2(z)
+  |z| <= (5 + p1)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-30 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
+  z = v = pixel, k = .5 + p1:
+  a = fn1(z)
+  b = (z <= k) * (a + v)
+  ee = (z > k) * (a - v)
+  v = z
+  z = b + ee
+  |z| <= (5 + p2)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-43 {; DISSECTED SPIDER
+   ; TO GENERATE "STANDARD" SPIDER, SET P1 = 0,0 & ALL FN = IDENT
+  z = c = pixel, k = 2 + p1:
+  zx = real(z), zy = imag(z)
+  cx = real(c), cy = imag(c)
+  x = fn1(zx*zx - zy*zy) + cx
+  y = fn2(k*zx*zy) + cy
+  z = x + flip(y)
+  c = fn3((cx + flip(cy))/k) + z
+  |z| <  (10 + p2)
+  ;SOURCE: fractint.frm
+}
+ 
+ScSkLMS (XAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = log(z) - sin(z)
+  |z|<TEST
+  ;SOURCE: fractint.frm
+}
+ 
+SJMAND05 {; Mandelbrot lambda function
+  z=real(pixel)+flip(imag(pixel)*p1)
+  c=p2+p1*real(pixel)+flip(imag(pixel)):
+  z=fn1(z)*c
+  |z|<=64
+  ;SOURCE: fractint.frm
+}
+ 
+OK-23 {
+  z = c = pixel, k = 1 + p1:
+  z = k * fn1(z^z + c) + c/z
+  |z| <= (5 + p2)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-26 {
+  z = c = pixel, k = 2 + p1, test = k/(2 + p2):
+  a = fn1(z)
+  b = (|z| > test)  * (a - c)
+  d = (|z| <= test) * (a + c)
+  z = b + d
+  |z| <= k
+  ;SOURCE: overkill.frm
+}
+ 
+OK-27 {
+  z = pixel, c = fn1(pixel), k = 1 + p1:
+  a = fn2(z)
+  b = (|z| >= k) * (a - c)
+  d = (|z| < k) * (a + c)
+  z = a + b + d
+  |z| <= (10 + p2)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-31 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
+  z = v = pixel, k = .1 + p1:
+  a = fn1(z)
+  b = (a <= k) * (a + v)
+  ee = (a > k) * fn2(a)
+  v = z
+  z = b + ee
+  |z| <= (5 + p2)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-42 {; MUTATION OF FN + FN
+  z = pixel, p1x = real(p1)+1, p1y = imag(p1)+1
+  p2x = real(p2)+1, p2y = imag(p2)+1:
+  zx = real(z), zy = imag(z)
+  x = fn1(zx*p1x - zy*p1y) + fn2(zx*p2x - zy*p2y)
+  y = fn3(zx*p1y + zy*p1x) + fn4(zx*p2y + zy*p2x)
+  z = x + flip(y)
+  |z| <= 20
+  ;SOURCE: fractint.frm
+}
+ 
+REB005E {; Ron Barnett, 1993
+         ; floating point required
+  z = pixel:
+  x = real(z), y = imag(z)
+  const = x*x + y*y
+  x1 = -fn1((const - x)*x/const)
+  y1 = -fn2((const + y)*y/const)
+  x2 = x1*x1 - y1*y1 + p1
+  y2 = 2*x1*y1
+  z = x2 + flip(y2)
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+REB004M {; Ron Barnett, 1993
+         ; floating point required
+  z = pixel:
+  x = real(z), y = imag(z)
+  const = x*x + y*y
+  x1 = -fn1(const - 12*x)*x/(4*const)
+  y1 = -fn2(const + 12*x)*y/(4*const)
+  x2 = x1*x1 - y1*y1 + p1
+  y2 = 2*x*y
+  z = x2 + flip(y2)
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+OldManowar (XAXIS) {
+  z0 = 0
+  z1 = 0
+  test = p1 + 3
+  c = pixel :
+  z = z1*z1 + z0 + c
+  z0 = z1
+  z1 = z
+  |z| < test
+  ;SOURCE: fractint.frm
+}
+ 
+OldNewtonSinExp (XAXIS) {; Chris Green
+   ; Newton's formula applied to sin(x)+exp(x)-1=0.
+   ; Use floating point.
+  z=pixel:
+  z1=exp(z)
+  z2=sin(z)+z1-1
+  z=z-p1*z2/(cosxx(z)+z1)
+  .0001 < |z2|
+  ;SOURCE: dons.frm
+}
+ 
+ScSkZCZZ (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = (z*cosxx(z)) - z
+  |z|<TEST
+  ;SOURCE: fractint.frm
+}
+ 
+ScSkZCZZ (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = (z*cosxx(z)) - z
+  |z|<TEST
+  ;SOURCE: fractint.frm
+}
+ 
+TSinh (XAXIS) {; Tetrated Hyperbolic Sine - Improper Bailout
+  z = c = sinh(pixel):
+  z = c ^ z
+  z <= (p1 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
+ 
+Leeze (XAXIS) {
+  s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+  z = cosxx (z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Leeze (XAXIS) {
+  s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+  z = cosxx (z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Liar3 {; by Chuck Ebbert.
+   ; X: X is true to P1 times the extent that Y is true
+   ; Y: Y is true to the extent that X is false.
+   ; Sequential reasoning.  P1 usually 0 to 1.  P1=1 is Liar2 formula.
+   ; x(n+1) = 1 - abs(p1*y(n)-x(n) );
+   ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)*real(p1)-real(z) )
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+Liar3 {; by Chuck Ebbert.
+   ; X: X is true to P1 times the extent that Y is true
+   ; Y: Y is true to the extent that X is false.
+   ; Sequential reasoning.  P1 usually 0 to 1.  P1=1 is Liar2 formula.
+   ; x(n+1) = 1 - abs(p1*y(n)-x(n) );
+   ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) );
+  z = pixel:
+  x = 1 - abs(imag(z)*real(p1)-real(z) )
+  z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
+  |z| <= 1
+  ;SOURCE: fractint.frm
+}
+ 
+REB004A {; Ron Barnett, 1993
+  z = pixel:
+  z =p1*fn1(z) + p1*p1*fn2(p2*z) + pixel
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+inandout09 {; Bradley Beacham  [74223,2745]
+            ;p1 = Parameter (default 1), real(p2) = Bailout (default 4)
+            ;The next line sets k=default if p1=0, else k=p1
+  k = ((1) * (|p1|<=0) + p1)
+            ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  test = (4 * (real(p2)<=0) + real(p2) * (0<p2))
+  z = c = pixel, tgt = fn1(pixel), rt = real(tgt), it = imag(tgt)
+  olddist = 100:
+  x = real(z) - rt
+  y = imag(z) - it
+  dist = x*x + y*y
+  in  = c * (dist <= olddist)
+  out = (c*k) * (olddist < dist)
+  c = in + out
+  olddist = dist
+  z = fn2(z*z) + c
+  |z| <= test
+  ;SOURCE: dons.frm
+}
+ 
+inandout11 {; Bradley Beacham  [74223,2745]
+            ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
+            ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  test = (4 * (real(p2)<=0) + real(p2) * (0<p2))
+  z = pixel, c1 = fn1(pixel), c2 = fn2(pixel)
+  rt = real(p1), it = imag(p1), olddist = 100:
+  x = real(z) - rt
+  y = imag(z) - it
+  dist = x*x + y*y
+  in  = c1 * (dist <= olddist)
+  out = c2 * (olddist < dist)
+  olddist = dist
+  z = fn3(z*z) + in + out
+  |z| <= test
+  ;SOURCE: dons.frm
+}
+ 
+dafrm21 {
+  z = pixel:
+  x = real(z), y = imag(z)
+  x1 = -fn1((x*x*x + y*y*y - 1) - 6*x)*x/(2*x*x*x + y*y*y - 1)
+  y1 = -fn2((x*x*x + y*y*y - 1) + 6*x)*y/(2*x*x*x + y*y*y - 1)
+  x2 = x1*x1*x1 - y1*y1*y1 + p1 + 5
+  y2 = 4*x*y - 18
+  z = x2 + flip(y2)
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+inandout13 {; Bradley Beacham  [74223,2745]
+            ;p1 = Parameter (default 0), p2 = parameter (default 1,0)
+            ;The next line sets k=1 if real(p2)==0, else k=p2
+  k = (1 * (real(p2)==0) + p2 * (0 != p2))
+  z = c = pixel, rt = real(p1), it = imag(p1), olddist = 100:
+  x = real(z) - rt
+  y = imag(z) - it
+  dist = x*x + y*y
+  in  = c * (dist <= olddist)
+  out = (z*k) * (olddist < dist)
+  c = fn1(in + out)
+  olddist = dist
+  z = fn2(z*z) + c
+  |z| <= 4
+  ;SOURCE: dons.frm
+}
+ 
+OK-21 {
+  z = pixel, c = fn1(pixel):
+  z = fn2(z) + c
+  fn3(z) <= p1
+  ;SOURCE: fractint.frm
+}
+ 
+inandout01 {; Bradley Beacham  [74223,2745]
+            ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
+            ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  test = (4 * (real(p2)<=0) + real(p2) * (0<p2))
+  z = oldz = pixel, c1 = fn1(pixel), c2 = fn2(pixel):
+  a = (|z| <= |oldz|) * (c1) ;IN
+  b = (|oldz| < |z|)  * (c2) ;OUT
+  oldz = z
+  z = fn3(z*z) + a + b + p1
+  |z| <= test
+  ;SOURCE: dons.frm
+}
+ 
+inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
+   ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
+   ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  IF (p2 <= 0)
+     test = 4
+  ELSE
+     test = real(p2)
+  ENDIF
+  z = oldz = pixel, moldz = mz = |z|:
+  IF (mz <= moldz)
+     oldz = z, moldz = mz, z = fn1(z) + p1, mz = |z|  ;IN
+  ELSE
+     oldz = z, moldz = mz, z = fn2(z) + p1, mz = |z|  ;OUT
+  ENDIF
+  mz <= test
+  ;SOURCE: fract196.frm
+}
+ 
+OK-11 {; TRY FN1 = SQR, FN2 = SQR
+  z = 0, v = pixel:
+  z = fn1(v) + z
+  v = fn2(z) + v
+  |z| <= (5 + p1)
+  ;SOURCE: overkill.frm
+}
+ 
+OK-36 {; DISSECTED MANDELBROT
+   ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
+  z = pixel, cx = fn1(real(z)), cy = fn2(imag(z)), k = 2 + p1:
+  zx = real(z), zy = imag(z)
+  x = fn3(zx*zx - zy*zy) + cx
+  y = fn4(k * zx * zy) + cy
+  z = x + flip(y)
+  |z| <  (10 + p2)
+  ;SOURCE: fractint.frm
+}
+ 
+OK-36 {; DISSECTED MANDELBROT
+   ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
+  z = pixel, cx = fn1(real(z)), cy = fn2(imag(z)), k = 2 + p1:
+  zx = real(z), zy = imag(z)
+  x = fn3(zx*zx - zy*zy) + cx
+  y = fn4(k * zx * zy) + cy
+  z = x + flip(y)
+  |z| <  (10 + p2)
+  ;SOURCE: fractint.frm
+}
+ 
+SPCZ (xaxis) {; resol. sin(z)^cos(z)=0 - Jm Collard-Richard 
+              ; Use Float=yes
+  z=pixel:
+  s=sin(z)
+  c=cos(z)
+  co=cotan(z)
+  sc=s^c
+  z1=sc
+  z2=((c*co)-(s*log(s)))*sc
+  z=z-(z1/z2)
+  0.001<=|z1| 
+  ;SOURCE: dons.frm
+}
+ 
+Moe {; Mutation of 'Zexpe'.
+     ; Original formula by Lee Skinner [75450,3631]
+     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
+     ; For 'Zexpe', set FN1 & FN2 = IDENT and P1 = default
+     ; real(p1) = Bailout (default 100)
+  s = exp(1.,0.), z = pixel, c = fn1(pixel)
+     ; The next line sets test=100 if real(p1)<=0, else test=real(p1)
+  IF (real(p1) <= 0)
+    test = 100
+  ELSE
+    test = real(p1)
+  ENDIF
+  :
+  z = fn2(z)^s + c
+  |z| <= test
+  ;SOURCE: fract196.frm
+}
+ 
+Newt_ellipt_oops {; Tim Wegner - use float=yes and periodicity=0
+   ; fractal generated by Newton formula  (z^3 + c*z^2 +1)^.5
+   ; try p1 = 1 and p2 = .1
+   ; if p2 is small (say .001), converges very slowly so need large maxit
+   ; another "tim's error" - mistook sqr for sqrt (see next)
+  z = pixel, z2 = z*z, z3 = z*z2:
+  num = (z3 + p1*z2 + 1)^.5      ; f(z)
+  denom = (1.5*z2 + p1*z)/num    ; f'(z)
+  z = z - (num/denom)            ; z - f(z)/f'(z)
+  z2 = z*z
+  z3 = z*z2
+  p2 <= |z3 + p1*z2 + 1|  ; no need for sqrt because sqrt(z)==0 iff z==0
+  ;SOURCE: fractint.frm
+}
+ 
+Newton_elliptic {; Tim Wegner - use float=yes and periodicity=0
+   ; fractal generated by Newton formula f(z) = (z^3 + c*z^2 +1)^2
+   ; try p1 = 1 and p2 = .0001
+  z = pixel, z2 = z*z, z3 = z*z2:
+  z = z - (z3 + p1*z2 + 1)/(6*z2 + 4*p1*z)      ; z - f(z)/f'(z)
+  z2 = z*z
+  z3 = z*z2
+  p2 <= |z3 + p1*z2 + 1|  ; no need for sqr because sqr(z)==0 iff z==0
+  ;SOURCE: fractint.frm
+}
+ 

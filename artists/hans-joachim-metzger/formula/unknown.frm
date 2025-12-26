@@ -9,10 +9,22 @@ Carr1973m {
 Classic-Shift_ {
 }
 
+DavesDollop {
+}
+
+Dollop2 {
+}
+
+Dollop3 {
+}
+
 Fibrot1 {
 }
 
 G-2_variation {
+}
+
+InvJulia {
 }
 
 Metabrot {

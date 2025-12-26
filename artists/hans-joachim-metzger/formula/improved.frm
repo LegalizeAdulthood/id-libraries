@@ -32,3 +32,10 @@ halleySin (XYAXIS) {; Chris Green. Halley's formula applied to sin(x)=0.
   ;SOURCE: fractint.frm
 }
  
+InvMandel (XAXIS) {; Mark Peterson
+  c = z = 1 / pixel:
+  z = sqr(z) + c
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 

@@ -1,0 +1,1015 @@
+; dmj-pub.par
+; FractInt Parameter File by Damien M. Jones
+; for use with dmj-pub.frm
+
+dmj--Read-Me-First {; Hit "z": Instructions for using dmj-pub.frm
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj--Read-Me-First passes=2 center-mag=0/0/0.6666667
+  float=y maxiter=256 inside=0 outside=real
+  colors=000mry<7>rkk<15>NG0<3>0F0<5>040<8>0bN<13>zzz<114>C11B00B00A00086<\
+  77>mrz
+  }
+
+dmj--What's-New    {; Hit "z": What's new in version 1.1 of dmj-pub.frm
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj--What's-New center-mag=0/0/0.6666667 float=y
+  maxiter=256 inside=0 periodicity=0
+  colors=000000<20>z00<20>zzz<20>z00<20>000000<20>0z0<20>zzz<20>0z0<20>000\
+  000<20>00z<20>zzz<20>00z<20>000
+  }
+
+dmj--Redistribute  {; Hit "z": Redistribution guidelines for dmj-pub.frm
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj--Redistribute center-mag=0/0/0.6666667 float=y
+  maxiter=1000 inside=0 periodicity=0
+  colors=000<31>zzz<29>333000000<62>0zz0zz1yz<61>r0rr0rq0q<61>000
+  }
+
+;-------------------------------------------------------------------------
+; Mandelbrot versions.
+
+dmj-Mand-Pnt-Dst   { ; Point orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Pnt-Dst-I { ; Point orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Pnt-Ang   { ; Point orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Pnt-Ang-I { ; Point orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Pnt-Dec   { ; Point orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Pnt-Dec-I { ; Point orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Pnt-Itr   { ; Point orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Pnt-Itr-I { ; Point orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pnt-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Hyp-Dst   { ; Hyperbola orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Hyp-Dst-I { ; Hyperbola orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Hyp-Ang   { ; Hyperbola orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Hyp-Ang-I { ; Hyperbola orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Hyp-Dec   { ; Hyperbola orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Hyp-Dec-I { ; Hyperbola orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Hyp-Itr   { ; Hyperbola orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Hyp-Itr-I { ; Hyperbola orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Cir-Dst   { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Cir-Dst-I { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Cir-Ang   { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Cir-Ang-I { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Cir-Dec   { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Cir-Dec-I { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Cir-Itr   { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Cir-Itr-I { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Cr2-Dst   { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Cr2-Dst-I { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Cr2-Ang   { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Cr2-Ang-I { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Cr2-Dec   { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Cr2-Dec-I { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Cr2-Itr   { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Cr2-Itr-I { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cr2-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Pls-Dst   { ; Cross orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Pls-Dst-I { ; Cross orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Pls-Ang   { ; Cross orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Pls-Ang-I { ; Cross orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Pls-Dec   { ; Cross orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Pls-Dec-I { ; Cross orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Pls-Itr   { ; Cross orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Pls-Itr-I { ; Cross orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Rct-Dst   { ; Box orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Rct-Dst-I { ; Box orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Rct-Ang   { ; Box orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Rct-Ang-I { ; Box orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Rct-Dec   { ; Box orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Rct-Dec-I { ; Box orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Rct-Itr   { ; Box orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Rct-Itr-I { ; Box orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Rct-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Spi-Dst   { ; Spiral orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Spi-Dst-I { ; Spiral orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-Spi-Ang   { ; Spiral orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Spi-Ang-I { ; Spiral orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Spi-Dec   { ; Spiral orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  }
+
+dmj-Mand-Spi-Dec-I { ; Spiral orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Mand-Spi-Itr   { ; Spiral orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Spi-Itr-I { ; Spiral orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Spi-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Mand-Smooth    { ; Continuous potential
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Smooth center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-SmoothPHC { ; Continuous potential (pseudo-highcolor)
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-SmoothPHC center-mag=-0.5/0/0.6666667
+  params=0/0/0/16/0/0 float=y maxiter=256 inside=0 outside=real
+  passes=2
+  }
+
+dmj-Mand-SmoothX2 { ; Continuous potential (separate palettes)
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-SmoothX2 center-mag=-0.5/0/0.6666667
+  params=0/0/0/16/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=000z00<30>zz0<15>0z0<15>0zz<31>00z<15>z0z<14>z00000<63>zzzzzzyyy<\
+  60>111 passes=2
+  }
+
+dmj-Mand-Triangle  { ; Triangle inequality coloring
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Triangle center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-Triangl-I { ; Triangle inequality coloring
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Triangl-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-ThetaW    { ; Weighted decomposition average
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-ThetaW center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-ThetaW-I  { ; Weighted decomposition average
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-ThetaW-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Mand-ThetaW2   { ; Weighted decomposition average II
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-ThetaW2 center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  }
+
+dmj-Mand-ThetaW2-I { ; Weighted decomposition average II
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-ThetaW2-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+
+;-------------------------------------------------------------------------
+; NovaM versions.
+
+dmj-Nova-Pnt-Dst   { ; Point orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Dst-I { ; Point orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Ang   { ; Point orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Ang-I { ; Point orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Dec   { ; Point orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Dec-I { ; Point orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Itr   { ; Point orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pnt-Itr-I { ; Point orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pnt-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Hyp-Dst   { ; Hyperbola orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Dst-I { ; Hyperbola orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Ang   { ; Hyperbola orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Ang-I { ; Hyperbola orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Dec   { ; Hyperbola orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Dec-I { ; Hyperbola orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Itr   { ; Hyperbola orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Hyp-Itr-I { ; Hyperbola orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Hyp-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Cir-Dst   { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Dst-I { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Ang   { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Ang-I { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Dec   { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Dec-I { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Itr   { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cir-Itr-I { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Cr2-Dst   { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Dst-I { ; Ring orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Ang   { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Ang-I { ; Ring orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Dec   { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Dec-I { ; Ring orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Itr   { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Cr2-Itr-I { ; Ring orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cr2-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Pls-Dst   { ; Cross orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Dst-I { ; Cross orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Ang   { ; Cross orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Ang-I { ; Cross orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Dec   { ; Cross orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Dec-I { ; Cross orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Itr   { ; Cross orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Pls-Itr-I { ; Cross orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Pls-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Rct-Dst   { ; Box orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Dst-I { ; Box orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Ang   { ; Box orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Ang-I { ; Box orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Dec   { ; Box orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Dec-I { ; Box orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Itr   { ; Box orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Rct-Itr-I { ; Box orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Rct-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+dmj-Nova-Spi-Dst   { ; Spiral orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Dst center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Dst-I { ; Spiral orbit trap: closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Dst-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Ang   { ; Spiral orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Ang center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Ang-I { ; Spiral orbit trap: angle of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Ang-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Dec   { ; Spiral orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Dec center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Dec-I { ; Spiral orbit trap: angle at closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Dec-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Itr   { ; Spiral orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Itr center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+dmj-Nova-Spi-Itr-I { ; Spiral orbit trap: iteration of closest approach to trap
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Spi-Itr-I center-mag=-0.5/0/0.6666667
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  periodicity=0
+  }
+
+
+;-------------------------------------------------------------------------
+; Examples.
+; Copyright 1997 Damien M. Jones
+
+ex-Mand-SmoothX2   { ; .               Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-SmoothX2 passes=1
+  center-mag=-0.19599060255976220/+0.66654987632594980/2611859
+  params=0/0/0/16/0/0 float=y maxiter=1000 inside=0 outside=real
+  colors=000z00<30>zz0<15>0z0<14>0zv0zz0xz<30>00z<15>z0z<14>z00000<63>zzzz\
+  zzyyy<60>111
+  }
+
+ex-Wispy           { ; Wispy           Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dst passes=1
+  center-mag=-1.69796046725493800/+0.00000042352474333/400641/1/-27.5
+  params=100000.25/100000/45/0/1024/10000 float=y maxiter=1000
+  inside=0 outside=real
+  colors=0000HQ<6>05a03c13c<29>cTveUweUw<61>yyyzzzzyz<29>zWnzUmzUm<28>a2d`\
+  1d_0cZ0b<27>405304102000<45>0TB0UC0TD<5>0JO
+  }
+
+ex-Slug            { ; Slug            Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Ang passes=1
+  center-mag=+0.34401741025219960/+0.05650866877705338/1.484913e+007
+  params=0.75/0/45/0/0/0 float=y maxiter=1000 inside=0 decomp=256
+  colors=000zvv<26>zWWzUUzUU<28>e2Md1Mc0Lb0La0K`0K<25>503402201000<45>0TT0\
+  UU1TU<13>I2bK0cL0c<29>uTvwUwwUw<61>yyyzzzzyyzxxzww
+  }
+
+ex-Trilobyte       { ; Trilobyte       Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj.frm
+  formulaname=dmj-Nova-Hyp-Dec passes=1
+  center-mag=-0.963098/0/27.3224/1/-90 params=1/0/45/0/0/0 float=y
+  maxiter=1000 inside=0 outside=real decomp=256 periodicity=0
+  colors=000100<13>RT0TV0XX0<9>op0<4>zzcxyU<2>ps0<10>XY0VW0SU0<13>12000001\
+  01212514625836A37D49E5<11>QbCRdDSfDThEVjF<2>ZpGdrPitYpvguxpzzzvyq<3>_qHZ\
+  oHYmGXkFUiF<5>NYBMWAKUAIS9<4>CI6BG58D5<5>121000010<3>0930B30D40F40H6<17>\
+  0pH4rK8tMCvMGxPKzPGyOCwM<2>0qI<11>0U90S90Q80O80M6<3>0E40C40A2<3>02000000\
+  1<13>20T20V40X<9>60p<4>UVzOOyKIwECuB6s50q<3>40i40g30e20c<6>20Q20O10M00K<\
+  8>002
+  }
+
+ex-Propeller       { ; Propeller       Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj.frm
+  formulaname=dmj-Mand-Pnt-Dec
+  center-mag=-1.29600139123362700/+0.44162744160625830/1053252
+  params=1/1/30/0.3333333333333333/0/0 float=y maxiter=1000 inside=0
+  outside=real decomp=256 periodicity=0
+  colors=000<2>021031042053<55>0xb0yc1yc2yc<47>xyyzzzzzz<54>OWgNVfNVfNVf<8\
+  1>111
+  }
+
+ex-SatinFolds      { ; Satin Folds     Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj.frm formulaname=Color11
+  function=sqr passes=2
+  center-mag=+0.27793404027201810/+0.00795777096818105/70028.01/1/-82.499
+  params=-2/0/0/2/128/0 float=y maxiter=10000 bailout=128 inside=0
+  decomp=256
+  colors=000E0S<12>102010031<24>0pP<4>czm<4>0qQ<26>000<26>0Xp<4>Umz<4>0Yq<\
+  25>022000001<25>0Dp<4>Kcz<4>0Eq<26>000<26>P0p<4>cUz<3>T6sQ0qP0o<10>F0U
+  }
+
+ex-Mand-Hyp-Ang    { ; .               Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Ang passes=1
+  center-mag=+0.28118067573129360/+0.00931181757423966/18699.62
+  params=1/2/30/0/0/0 float=y maxiter=10000 inside=0 decomp=256
+  colors=Cth<2>Uzq<4>0qc<26>0000100310510730930B30D40F60H6<17>0pJ6rMCtRIvW\
+  OxZUzd<4>0qJ<6>0cE0aD0_D0YD0WB<7>0G50E50C40A4082<3>0000100301500701902B0\
+  1D0<3>3L03N02P03R04T03V03X05Z05`04b04d06f05h05j07l06n06p0Ar4Dt8FvCJxGMzK\
+  IyGFwCBu89s46q05o06m05k04i05g05e03c04a0<2>3W03U02S01Q02O02M01K02I01G00E0\
+  1C0<5>000010<10>GN0HP0JR0LT0<11>ap0<3>ixOkzUkyOiwIguCds6cq0<3>Yi0Wg0We0<\
+  3>QY0OW0MU0KS0JQ0HO0HM0<8>440210000010<13>0TL0VM0XO0ZQ<8>0pb6re
+  cyclerange=0/255
+  }
+
+ex-LiveWire        { ; LiveWire        Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Nova-Cir-Dst-I passes=2
+  center-mag=+0.00164425966228871/+0.50513275596330250/1951.6
+  params=-1/0/0/0/4096/2 float=y maxiter=1000 inside=0 outside=real
+  periodicity=0
+  colors=yxT<28>dM1cK0bK0<26>640530420210000<46>00T00U20U<13>`0Lc0Kd1K<27>\
+  uRSuSTvTTwUUwUU<61>yyyzzzzzy<29>zzWzzUzyU cyclerange=0/255
+  }
+
+ex-Breezy          { ; Breezy          Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Cir-Dec passes=2
+  center-mag=+0.45056400625978110/+0.33176116910229650/500.8013
+  params=0/2/0/0/0/2 float=y maxiter=10000 bailout=128 inside=0
+  decomp=256
+  colors=0000BL0DN0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<4>0Vq<13>0\
+  FQ0DO0DM<3>08E06C06A048046024012000100<11>P0JR0LT0NV0PX0P<2>b0Vd0Wf0Yh0Z\
+  j0`<2>p0e<4>zUxyOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A\
+  <3>304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<9>0p6<4>cze<3>0s8<5>0g6\
+  0e60c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221532653863A84DA5EB5HB\
+  <2>7NG8PI8RJ9TKAVNAXM<5>EhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX\
+  <5>BYOAWMAUL9SK<3>7KE6IC5GB5DA<5>121000001023025047049<4>0AJ
+  }
+
+ex-BlueBlade       { ; Blue Blade      Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Pls-Dst passes=1
+  center-mag=+0.28120298081300770/+0.00934823174311937/27084.06
+  params=0/0/45/100/256/128 float=y maxiter=1000 inside=0
+  outside=real
+  colors=000<10>30L30N40P50R50T50V40X50Z<8>80pF8rNGt<2>fcz<3>A0s<5>80g80e6\
+  0c<12>30E20C20A108106<2>00000121231552673883AA4DC5EC5H<4>K8RL9TOAVNAXQBZ\
+  RB`SCbVDd<5>bGp<4>zzz<2>m_uiRscHqbHo`GmYFkZFiXEgWEeTDcSCaRC_PBY<5>G7MF7K\
+  D6IB5GB5D<6>000100301502704904B06D06F08H08J09L0AN0CP0C<13>p0Sr4Wt8_vCexG\
+  izKoyGkwCfu8bs4Xq0S<11>U0GS0EQ0EO0CM0CK0AI09G08E08<5>201000010<10>GN0HP0\
+  JR0LT0<11>ap0<4>uzUsyOnwIkuCfs6cq0<3>Yi0Wg0We0<3>QY0OW0MU0KS0JQ0HO0HM0<9\
+  >210
+  }
+
+ex-CupricFlames    { ; Cupric Flames   Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Triangle
+  center-mag=+0.27534889540567080/+0.00678633637548891/8538.251
+  params=0/0/0/0/1024/0 float=y maxiter=1000 inside=0 outside=real
+  symmetry=xaxis periodicity=0
+  colors=0001112212212413513513615826A26A26B27D27D2<3>AJ3AK3BK3CM4CN4DN4DP\
+  4CQ4ER4GT5GT5<2>HX5HY5JZ6K`6Ka6<2>Md6Ne7Nf7Ng7<5>Rn8So8Rp8Sr8Us9Ut9Uu9Vv\
+  9Ww9Vx9Yz9WyAXxA<3>Ut9Us9Sq9Tp9<2>Qm8Ql8Rk8<3>Mf7Ne7<4>J_6IZ6IY6IX6HW5GU\
+  5GT5GT5DQ5EQ5DP4DN4<2>CL4BK49I3<2>8F38E37D26B26A258258246235135124122122\
+  1000<7>VL0ZO0bS0fV0jW0nZ0rb0ve0zg0<2>o_0kY0gU0cR0_P0WN0SJ0<6>00000100221\
+  221421542542652873973A83C94D94DB5EC5G<3>G6LH7MG7N<6>NAVNAWPAX<7>VDeVDfXE\
+  h<5>bGnbGodHqdHreHsgItgIufIvhJwhJxkKziKyiKxgJwhJvgJueItfIs<4>aGm_Gl`GkZF\
+  jYFiYFhWEgVEeVEdTDcTDbSDa<2>RCZQBYNBWNBVMAULATLASL9RJ9QK9PH8OI8NG8L<5>B6\
+  EA5D95C85A749648648437436434224223
+  }
+
+ex-Dragon'sTail    { ; Dragon's Tail   Copyright 1997 Damien M. Jones
+  reset=1960 type=formula formulafile=dmj-pub.frm
+  formulaname=dmj-Mand-Hyp-Dec passes=1
+  center-mag=-0.74672046920821220/-0.09275300964797947/1650.714
+  params=1/0/45/0/0/128 float=y maxiter=1000 inside=0 decomp=256
+  colors=000100<10>N80P80RA0TB0VB0<10>pJ0rO8tVG<2>zkc<3>sL0<5>gG0eG0cE0<15\
+  >830620410200000100221541662883AA3DC4ED5<5>RN8TP9VSAXSA<4>faDhcEjdFleFng\
+  GpiGrlPtpYvrgxvpzzzywqwuhuq_snRqjHohHmgGkdFidF<6>WRAUQASO9QN9OL8<2>IF6GD\
+  5DC5BB4<4>211000010<3>2903B04D05F05H0<2>7N07P09R0<12>Hp0Mr4Qt8XvC`xGgzKb\
+  yGXwCTu8Os4Iq0<13>9Q08O07M06K06I0<4>280260140120000<3>03704906B<8>0GT0HV\
+  0HX<9>0Tp<4>UpzOlyIgwCcu6Ys0Vq<3>0Qi0Pg0Pe<4>0JW0HU0GS0EQ0DO<4>09E08C06A\
+  <3>021
+  }
+

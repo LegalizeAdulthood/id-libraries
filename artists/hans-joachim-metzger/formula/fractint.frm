@@ -2499,3 +2499,175 @@ Carr1989 {; Modified Sylvie Gallet frm.
   ;SOURCE: 42acarr.frm
 }
  
+Jm_17 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(z)*pixel*fn2(fn3(z))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_02 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=(z^pixel)*fn1(z^pixel)
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+AltMTet (XAXIS) {; Mandelbrot form 2 of the Tetration formula--Lee Skinner
+  z = 0:
+  z = (pixel ^ z) + pixel
+  |z| <= (P1 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_15 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  f2=fn2(z), z=fn1(f2)*fn3(fn4(f2))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+inandout03 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
+   ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
+   ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  IF (p2 <= 0)
+     test = 4
+  ELSE
+     test = real(p2)
+  ENDIF
+  z = oldz = c = pixel, moldz = mz = |z| :
+  IF (mz <= moldz)
+     c = fn1(c)       ;IN
+  ELSE
+     c = fn1(z * p1)  ;OUT
+  ENDIF
+  oldz = z, moldz = mz
+  z = fn2(z*z) + c, mz = |z|
+  mz <= test
+  ;SOURCE: fract196.frm
+}
+ 
+inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
+   ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
+   ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+  IF (p2 <= 0)
+     test = 4
+  ELSE
+     test = real(p2)
+  ENDIF
+  z = oldz = pixel, moldz = mz = |z|:
+  IF (mz <= moldz)
+     oldz = z, moldz = mz, z = fn1(z) + p1, mz = |z|  ;IN
+  ELSE
+     oldz = z, moldz = mz, z = fn2(z) + p1, mz = |z|  ;OUT
+  ENDIF
+  mz <= test
+  ;SOURCE: fract196.frm
+}
+ 
+Jm_12 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(fn2(fn3(z)*pixel))
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Jm_20 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1(z^pixel)
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+Larry {; Mutation of 'Michaelbrot' and 'Element'
+    ; Original formulas by Michael Theroux [71673,2767]
+    ; Modified for if..else logic 3/19/97 by Sylvie Gallet
+    ; For 'Michaelbrot', set FN1 & FN2 =IDENT and P1 & P2 = default
+    ; For 'Element', set FN1=IDENT & FN2=SQR and P1 & P2 = default
+    ; p1 = Parameter (default 0.5,0), real(p2) = Bailout (default 4)
+   z = pixel
+    ; The next line sets c=default if p1=0, else c=p1
+   IF (real(p1) || imag(p1))
+      c = p1
+   ELSE
+      c = 0.5
+   ENDIF
+    ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
+   IF (real(p2) <= 0)
+      test = 4
+   ELSE
+      test = real(p2)
+   ENDIF
+   :
+   z = fn1(fn2(z*z)) + c
+   |z| <= test
+  ;SOURCE: fract196.frm
+}
+ 
+Zeppo {; Mutation of 'Liar4'.
+    ; Original formula by Chuck Ebbert [76306,1226]
+    ; Modified for if..else logic 3/19/97 by Sylvie Gallet
+    ; For 'Liar4' set FN1 & FN2 =IDENT and P1 & P2 = default
+    ; p1 & p2 = Parameters (default 1,0 and 0,0)
+   z = pixel
+    ; The next line sets p=default if p1=0, else p=p1
+   IF (real(p1) || imag(p1))
+      p = p1
+   ELSE
+      p = 1
+   ENDIF
+   :
+   z = fn1(1-abs(imag(z)*p-real(z))) +          \
+       flip(fn2(1-abs(1-real(z)-imag(z)))) - p2
+   |z| <= 1
+  ;SOURCE: fract196.frm
+}
+ 
+shifter01 {; After shift, switch from z*z to z*z*z
+           ; Bradley Beacham  [74223,2745]
+           ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+           ; P1 = shift value, P2 varies bailout value
+  z = c = pixel, iter = 1, shift = p1, test = 4 + p2 :
+  IF (iter <= shift)
+     z = z*z + c
+  ELSE
+     z = z*z*z + c
+  ENDIF
+  iter = iter + 1
+  |z| < test
+  ;SOURCE: fract196.frm
+}
+ 
+bizarre {; Edited for Fractint v. 20 by George Martin 10/98
+  z=sqr(z)+pixel
+  z=exp(z)+pixel
+  z=log(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: bizarre.frm
+}
+ 
+Fzpcocoh {
+  z = pixel, f = 1. / cosh(pixel):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Bali {; The difference of two squares
+  z=x=1/pixel, c= fn1 (z):
+  z = (x+c) * (x-c)
+  x=fn2(z)
+  |z| <=3
+  ;SOURCE: fractint.frm
+}
+ 
+Kreagor {
+  z = c = pixel:
+  z = fn1(z) + c + p1
+  x = real(z), y = imag(z)
+  z = ((1/z) * (fn2(x)/fn1(y)))/ z + c
+  |z| <= 4 + p2
+  ;SOURCE: d-rock.frm
+}
+ 

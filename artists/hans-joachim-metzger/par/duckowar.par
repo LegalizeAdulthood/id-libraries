@@ -1,0 +1,93 @@
+DuckOWar {	; Slightly different from "frenzy" (deleted).
+		; More flexible. That's all.
+z = fn1(pixel), s=-fn3(fn2(pixel)):
+z = z * s + z
+s = s/z + pixel
+
+|z| <= real(P1)
+}
+
+julfnzsqrd { ; Simplifies to hard-coded julfn+zsqrd.
+z=fn1(pixel), c=P2:
+
+z= fn2(z) +z*z +c
+
+|z| <= real(P3)
+}
+
+DuckV              { ; Negate. Drop chrominance through this as mask.
+                     ; 1/5 speed with intejers on PII.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=ident/ident/conj passes=1
+  center-mag=0.0823998/0/0.7405866/1.338 params=8/0 float=y
+  maxiter=255 outside=atan symmetry=xaxis colors=@altern.map
+  }
+
+DuckH              { ; Chrominance.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=ident/ident/conj
+  center-mag=0.0823998/0/0.7405866/1.338 params=8/0 float=y
+  maxiter=255 inside=0 symmetry=xaxis
+  colors=000000000z0zz0Wz00zV0zz0<3>0z00zV0zz<3>00zV0zz0z<3>z00<3>ze0zo0\
+  zz0Wz00z0<3>0ze0zo0zz<3>00zV0zz0z<3>z00<3>ze0zo0zz0<3>Lz0Bz00z00zV0zz<\
+  3>0Lz0Bz00z<3>z0zz0Wz00<3>ze0zo0zz0<3>0z0<3>0ze0zo0zz<3>0Wz0Oz0Gz08z00\
+  z<3>z0zz0Wz00<3>zz0Wz00z0<3>0zz<7>0Rz0Nz0Iz<3>00z<3>z0z<3>z0Lz0Bz00zV0\
+  zz0<3>az0Wz0Qz0<3>0z00zV0zz<3>0Lz0Bz00z<3>e0zo0zz0z<3>z00<3>ze0zo0zz0<\
+  3>Lz0Bz00z00zV0zz<3>0az0Wz0Qz<3>00zV0zz0z<3>z00zV0zz0<5>Wz0Rz0Lz0<3>0z\
+  0<5>0zV0z_0ze<3>0zz<3>00zV0zz0z<3>z00<3>ze0zo0zz0Wz00z0<3>0zP0zV0z`<3>\
+  0zz<3>000
+  }
+
+Clueless           { ; So I am regarding what to call it.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=ident/atanh/ident
+  center-mag=-0.787502/0/0.710666/0.95 params=32/0 float=y
+  maxiter=255 inside=0 outside=atan invert=0.723722569413074/-1.3/0
+  symmetry=xaxis colors=@altern.map
+  }
+
+Yambuuza           {
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=conj/atanh/flip
+  center-mag=-1.19936/0/0.97/1.86 params=32/0 float=y maxiter=255
+  inside=0 outside=atan invert=0.469043601029387/-1.25/0
+  symmetry=xaxis colors=@rainboh.map
+  }
+
+Goyapod           { ; Once again, tesseral beats solid guessing.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=ident/ident/ident passes=t
+  center-mag=-1.34937/0/0.3178056/1.251 params=32/0 float=y
+  maxiter=255 inside=0 outside=atan invert=0.180026453807229/-0.77/0
+  symmetry=xaxis periodicity=0 colors=@rainboh.map
+  }
+
+Slohman            { ; Raise or lower the escape radius
+                     ; to get large blank areas.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=DuckOWar function=cotan/cabs/recip passes=t
+  center-mag=133.366/0/0.002554849/0.675 params=31/0 float=y
+  maxiter=255 inside=0 outside=atan invert=1/-0.34/0 symmetry=xaxis
+  periodicity=0 colors=@rainboh.map
+  }
+
+Dendrong           { ; 6:06.74/megapixel@350Mhz&PII.
+                     ; This gets bigger but kind of boring
+                     ; at higher iteration counts.
+                     ; Score one for the parser over the compiler.
+  reset=2003 type=julfn+zsqrd function=sinh passes=t
+  center-mag=-0.470218/2.57876/0.1237586/1.2183/-29.38848943572523/8.277\
+  90231174726365 params=0/0.75 float=y maxiter=255 bailout=256
+  inside=0 outside=tdis invert=1.49867022990501/-1.25/1.25
+  periodicity=0 colors=@diag.map
+  }
+
+DendrongP {	; 5:02.59/megapixel@350Mhz&PII.
+		; Essentially the same thing with the parser.
+  reset=2003 type=formula formulafile=duckowar.frm
+  formulaname=julfnzsqrd function=ident/sinh passes=t
+  center-mag=-0.470218/2.57876/0.1237586/1.2183/-29.38848943572523/8.277\
+  90231174726365 params=0/0/0/0.75/256/0 float=y maxiter=255
+  inside=0 outside=tdis invert=1.49867022990501/-1.25/1.25 periodicity=0
+  colors=@diag.map
+  }

@@ -1,0 +1,32 @@
+; 
+; Title:      Desert_Spring
+; 
+; Categories: 1. Best Use of Color
+;             9. Best FractInt Fractal
+; 
+; Description:  Alluvial fans surround a desert oasis filled with gardens of
+;               colorful wildflowers.
+
+Desert_Spring      {
+  reset=1960 type=formula formulafile=desertsp.frm
+  formulaname=desert_sp passes=1
+  center-mag=-1.76863774541514500/+0.00266815004776880/9.023876e+007/1/-34\
+  .999 params=1200000/0.06279999999999999 float=y maxiter=10000
+  inside=0 decomp=256 symmetry=none periodicity=0
+  colors=0007EP<14>VdAXf9Yg9_h9<12>wx9yz9yy9<11>ra3q_2pY1oW0nV0<12>`I0ZG0Y\
+  F0WE0VD0<6>L40<5>CG1AI2AJ2<14>H`8<12>wrB<2>wsKwsNxtRxuU<5>yylzzpyzo<16>_\
+  oRYnPXlO<14>A55<12>lYdo`grbjuemviowmr<9>vzU<13>0bT<6>5MF6KD8MF<23>mwz<21\
+  >5CQ
+  }
+
+frm:desert_sp {
+  w = a = 0 , c = pixel :
+  w = w*w + c , mw = |w|
+  a = a + imag(log(w))
+  if (mw <= p1)
+    continue = 1
+  else
+    continue = 0 , z = exp(flip(imag(p1)*a))
+  endif
+  continue
+}

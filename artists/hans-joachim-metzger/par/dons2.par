@@ -1,0 +1,219 @@
+; * PAR file for Fractint 18.2 ... take 2
+; * don lebow 1/94 
+; *
+; * these are, to the best of my knowledge, original
+; *
+; * use 'em as you like. I'm no artist ... the magic's in the numbers
+; * 
+; * they were created at 640 x 480 x 256 colors. lower res renderings are 
+; * apt to look strange(r)
+; *
+; * formulas not part of the default v18.2 FRACTINT.FRM are in the
+; * companion file DONS.FRM
+; * you can substitute SKINNER.FRM (as found in LHS001.ZIP in GRAPHDEV)
+; * 
+; * I believe I forgot to say thanks last time to all the folks who've
+; * contributed to this wonderful program ... and to my own education.
+; *
+; * Thanks.
+; *
+; * >>don CIS:76704,41
+
+
+
+ripples            {
+  reset=1800 type=fn(z)+fn(pix) function=conj/tan passes=b
+  corners=-3.79355/-0.06068915/2.475775/-2.501372/-0.06068915/-2.501372
+  params=0/0/1 float=y maxiter=512 inside=bof60 logmap=yes
+  distest=1/71 periodicity=-1
+  colors=ZmW<4>dvZ<3>JUn<4>YqR<6>PuBdmh<13>5`zeDpggg<6>u0afie<6>eHRVgRIaAf\
+  me<18>vd3fmf<4>hr_dmehsY<7>kzM<2>tAQ<21>2Gx<11>_GB<7>F_GCfF9nD<13>4LK<10\
+  >sdB<5>F2h<3>3h6<21>2f12f12g1<8>1j40k52k7<21>uon<6>SkEHIN<16>YkV
+  cyclerange=0/255
+  }
+
+
+storm_front        { ; button up your overcoat
+  reset type=fn(z)+fn(pix) function=sinh/cosh
+  corners=-3.57349/-0.2934898/-1.580731/0.8792693
+  params=0.29999999999999999/0.75/1/-2 float=y maxiter=100
+  inside=bof60 invert=1/0/0
+  colors=000<62>mqtnrumpr<14>OI5<2>VOBXQD_TFbVH<9>zpa<2>qiZmgXjdWgaV<9>AAK\
+  <3>ALQAOSARUBUWBXY<7>Dtn<16>ABHJ89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IU\
+  DGZ00_MD<8>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>844413000<15>svc
+  }
+
+arbai_door         {
+  reset type=fn+fn function=sin/sqr passes=b
+  corners=-2.353526/2.134474/2.995401/-2.988599/2.134474/-2.988599
+  params=1/0/1 float=y outside=imag distest=128/71 finattract=y
+  periodicity=0 colors=000<126>00y00z00y<125>000
+  }
+
+autumn_bouquet     { ; for your virtual thanksgiving table
+  reset type=formula formulafile=dons.frm formulaname=TSinh passes=t
+  corners=0.1702022/-1.597419/1.172323/-1.184511/-1.597419/-1.184511
+  params=1 float=y maxiter=75 inside=bof60 outside=imag
+  potential=255/500/0
+  colors=000zQH<54>zk0zk0zk0zk0zk0<118>YJ0YJ0YK2<13>eee<8>NaaL``J__HZZFYYD\
+  XXAWW<4>D``DaaDbbDccDdd<4>FiiGjiIki<12>aze<13>xSKzPIzQH
+  }
+
+button_button      {
+  reset type=sqr(1/fn) function=cotan
+  corners=-1.0930786/-0.6933136/1.0667572/1.3664246 float=y
+  maxiter=120 inside=bof60 outside=real
+  colors=000p_D<4>vcDwdDxeDzfCyfCxeC<29>PFF00K<29>GGqHHsHHr<30>00KSNC<29>x\
+  o`zpaypa<29>UPF000<30>ppp<2>llljjjhhhfffeee<6>VVVTTTRRRPPPOOO<13>000PFF<\
+  21>nZE
+  }
+
+Jm_15              { ; the day we finally found the bugs in the network
+  reset type=formula formulafile=fractint.frm formulaname=Jm_15
+  function=exp/tanh/log/exp passes=b
+  corners=-0.8433769/0.6950481/1.221535/2.375351
+  params=-0.13472999999999999 inside=epsiloncross outside=imag
+  colors=000<8>sT8<31>KumvQ4<2>qR8lQJpR9<29>5_n<18>flNhmLlS9<20>YWIwQ4<7>w\
+  SFwSHwSIxTKwQ3wQ3<45>phGuQ5<11>MJ`wS7<61>yvs
+  }
+
+baroque            { ; or is it rococo? 
+  reset type=manfn+zsqrd function=tanh passes=b
+  corners=-0.509362087/-0.585490087/-0.051164993/0.050339007/-0.585490087/\
+  0.050339007 params=1 float=y inside=maxiter potential=255/500/0
+  invert=1/0/0
+  colors=000CpR<3>SlMF8I<3>64HcGG<3>iE1aIL<7>TddbLK<6>XtSbGI<11>U62_BGX6CT\
+  18g_Dls7ZHI<7>3T8cHJ<2>iKLcJM<9>usqaGJ<11>KHOIHOEWcr6o_IJ<7>AYNbJO<4>Yan\
+  bGJ<6>`IONEd7CzcIJ<12>qpJbGJ<10>a8S`7TbGI<5>bLA__`WsreNL<4>vxVbHK<13>bac\
+  bce`HM<6>KVgaCN_7RY2VZIK<5>9UTbJM<4>bb`afdcFJ<9>t5HcGM<6>nLgdJH<3>lW8dIJ\
+  <7>t`C_EJWBKbFKS9KO6LK3M<15>7SZ0M0JhU
+  }
+
+stairway           { ; to ... uh ... somewhere
+  reset type=julfn+exp function=cos passes=b
+  corners=-0.12542825/-0.42526014/-0.19901889/0.20075695/-0.42526014/0.200\
+  75695 params=0.33000000000000002 float=y inside=zmag
+  potential=255/500/0 invert=1/0/0
+  colors=000<18>0ze<6>0zw0zz1xy<19>KNfLLeOOg<12>zzznru<2>jkkhihfgeddacbZ<8\
+  >OI5<2>VOBXQD_TFbVH<9>zpa<2>qiZmgXjdWgaV<9>AAK<3>ALQAOSARUBUWBXY<7>Dtn<1\
+  6>ABHJ89<15>sH3<6>SDF<3>N3JL0KL1KM2KN3KO4JR9IUDGZ00_MD<8>zz0<7>``9YYAXVB\
+  <6>KAJMAKOAM<12>ziF<13>844413000<15>svc
+  }
+
+up_front           {
+  reset type=formula formulafile=fractint.frm formulaname=Fzppfnre
+  function=cos
+  corners=0.8567512/-1.495249/-1.524159/1.611841/-1.495249/1.611841
+  float=y maxiter=100 inside=bof60 finattract=y
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<40>Bzz9zz8zz6zz5zz3zz2zz0\
+  zz<40>0Bz09z08z06z05z03z02z00z<60>002000000
+  }
+
+UFOs               { ; Unidentified Fractal Objects
+  reset type=mandelfn function=sinh
+  corners=2.836182/-4.525345/9.230743/3.712479 params=1/1 maxiter=256
+  inside=bof60 potential=255/500/0
+  colors=ppp999<106>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000000<16>999
+  }
+
+satellites         { ; default lambda (fn||fn) with some tweaks
+  reset type=lambda(fn||fn) function=sin/sqr passes=b
+  corners=-3.998768/3.992512/-3.019089/2.990082
+  params=1/0.10000000000000001/1 float=y bailout=24 fillcolor=255
+  invert=1/0/0 periodicity=0
+  colors=000KFU<16>BDhACiBDi<16>dYhf_hh`hjbhlchnehpfhrhg<3>qfeqeeqddpcdpbc\
+  <3>n_an_`nZ`nY_mX_<4>lTXiJIiJJjSKjNKkSK<2>zfMtpezzzzzzvZOqJPqJJrJDsJ6<3>\
+  kPIiRLeTIaWGYZD<3>dGV<2>jDhXJ9<29>mK0<4>cN7aN9_N9<17>0SA<7>NdKQeMTgNWiPZ\
+  iP<3>jlR<2>_REWJ9UI9<8>GD8FD8FD8<30>UX5VY4VX4<8>WO6WN7WM7WL8WK8XJ9<5>UIE\
+  zzz<5>zzyozz<7>LGSLGTKGU
+  }
+
+fractal_cad        {
+  reset type=fn(z*z) function=cos passes=t
+  corners=-1.626188/1.571234/-1.198171/1.206182 float=y fillcolor=255
+  inside=174 potential=255/500/16 invert=1/0/0 periodicity=0
+  colors=000nnn<12>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>\
+  ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>\
+  000<15>zzzvvvrrr
+  }
+
+
+melting            { ; I told you not to leave your fractal in the car
+  reset=1800 type=fn(z)+fn(pix) function=sin/conj passes=t
+  corners=-4.985345/-0.08990059/-1.38226/2.289324
+  params=0.79000000000000004/-1/1 float=y inside=bof60 logmap=yes
+  distest=1/71 periodicity=-1
+  colors=6J`njT<22>xEBlkR<7>Pj7liU<7>SUiljV<14>GJxohT<5>wONhfP<2>ORDmjU<9>\
+  UUcmjT<16>HGOkjW<6>M`unjT<20>m5AhhR<3>HTGmhP<3>gU7miS<12>WHDnkT<21>Ysfpg\
+  OXtg<14>G`o<3>S3D<20>6te4wg4wf<20>Er9Fq7Fo7<7>K_BLYCKSY<2>AM_
+  cyclerange=0/255
+  }
+
+wallpaper          { ; what can I say?
+  reset type=lambdafn function=cosxx passes=b
+  corners=-0.656311/3.809357/-1.674973/1.67984
+  params=0.33456000000000002/-1 float=y bailout=2500 fillcolor=0
+  inside=zmag
+  colors=zzzDVKEXLCYLA_K<14>zyyzzw<18>uu0<16>yyvzzzyyy<23>GGGEEECCE<4>22E0\
+  0F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<1\
+  4>z0N<3>m2Kj2Jh3I<13>4B7<7>CTI
+  }
+
+microverse         { ; FractalFenderC again ...
+  reset type=formula formulafile=dons.frm formulaname=FractalFenderC
+  passes=b
+  corners=0.3078015/-2.818378/2.065304/-2.102901/-2.818378/-2.102901
+  params=1 float=y potential=200/300/0
+  colors=000BVI<16>NhH6KK<6>hX`CJOOJV_Ja1JI<15>C7I2JJ<22>hSt1LM<5>5`jEXLRk\
+  PczT2JI<25>WBA3JJ<21>nSjDWMPhQ`vU3JI<18>dJQ2KJ<15>N_g2JL<10>GSz2JI<30>`X\
+  lvp13JI<20>q6J1JI1PM2IH<14>FA6
+  }
+
+julia_brooch       { ; thank you,dear ... it's certainly ..ummm ... different
+                     ; memories of shop class
+  reset=1720 type=julia passes=t corners=-2/2.000012/-1.500014/1.5
+  params=-0.75/0.10000000000000001 inside=bof60 symmetry=none
+  colors=000cPD<4>RCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSA\
+  RUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>z\
+  H0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB700\
+  0HIC<10>svcsvc<20>200pdJ<5>zjF<7>eRD
+  }
+
+blue_green_thing   {
+  reset type=manfn+exp function=log passes=b
+  corners=-0.35662734/-0.65448693/-0.19907731/0.19806881/-0.65448693/0.198\
+  06881 params=1 float=y maxiter=25 inside=bof60 potential=255/500/0
+  colors=000J`r<19>dGuIar<22>LwkOar<4>vZmJaq<8>Wd_L_r<8>rItJar<11>VVrHbr<1\
+  1>0rhI`r<21>N8sIVr<3>L0tBWi3P_KZk<5>WC1Lan<8>lj7J`r<15>_CrIcl<5>Fp8Iaq<1\
+  6>WgUMLOI`r<16>CFfPdfWgUckHIbq<18>CzLIar<12>BRnIaqHboGcmJ1sGdk<7>AkX
+  }
+
+interior_2         {
+  reset type=manfn+zsqrd function=log passes=b
+  corners=-0.8940852/2.243817/-1.4745/0.8776985
+  params=-0.10000000000000001/1 float=y inside=bof60
+  potential=255/500/0
+  colors=000E80<81>jQ010y00zzzz<37>I5kG3jE3l<5>21x00z00z<69>PyzPzzOxx<23>4\
+  20<24>E80
+  }
+
+cobwebs            { ; from the Oyster God series
+  reset type=mandel(fn||fn) function=cosh/sqr passes=b
+  corners=26.90813/5.876356/-15.13816/-7.633037/16.32185/-0.2204375
+  params=1/-0.33000000000000002/0.5 float=y inside=bof60 logmap=16
+  invert=-1/0/0 decomp=128 distest=1024/71 periodicity=4
+  colors=000fff<5>ppp<8>cccbbb```ZZZ<2>TTTSSSQQQPPPNNN<2>HHHGGGEEEDDDBBB<5\
+  >000PFF<27>vcDwdDxeDzfCyfCxeC<29>PFF00K<29>GGqHHsHHr<30>00KSNC<29>xo`zpa\
+  ypa<29>UPF000<23>ddd
+  }
+
+blue_scatter       {
+  reset=1800 type=mandellambda passes=b
+  corners=0.173812741/0.192782034/1.05506526/1.06929264
+  params=-0.050000000000000003/-1 float=y maxiter=256 inside=bof61
+  outside=real logmap=yes periodicity=-1
+  colors=bbb<23>zzzrrrsss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzO\
+  ty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<4>9M\
+  E000<37>aaa cyclerange=0/255
+  }
+

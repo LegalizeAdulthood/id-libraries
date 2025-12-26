@@ -1,0 +1,83 @@
+; Newsgroups: sci.fractals
+; Path: unixg.ubc.ca!vanbc.wimsey.com!news.bc.net!torn!nott!cunews!freenet.carleton.ca!FreeNet.Carleton.CA!ao950
+; From: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+; Subject: PAR for the course
+; Message-ID: <D707Ip.Bvy@freenet.carleton.ca>
+; Sender: ao950@freenet2.carleton.ca (Paul Derbyshire)
+; Reply-To: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+; Organization: The National Capital FreeNet
+; Date: Fri, 14 Apr 1995 02:42:24 GMT
+; Lines: 75
+;  
+; These are pretty deep zooms, so you might not want to try them on less
+; than a good 486. Use them with Fractint.
+; Freely distributable. Please retain credit where credit is due :-)
+ ;
+; --
+; Cheers,      |  "There was a sale. The biggest going-out-of-business sale you
+; ________PGD__|  ever saw... But in the end, some of us decided not to buy."
+;    ___  ~~~                                                  --Needful Things
+; __| * |_______  ASGND Full Silly and Ysiggian _______________________________
+ 
+spiralia           {
+  reset type=mandel
+  corners=0.262951613216131/0.262951696319481/0.00241705201973599/0.002417\
+  11434725227 float=y maxiter=5000 inside=0 logmap=100
+  colors=000FK0<59>Tb0Uc0Uc0Vc1Vd2<60>zzzzzzzyz<60>z1zz0zz0yy0x<58>GJ2FK0F\
+  K0FK0FK0
+  }
+ 
+spiralia4          {
+  reset type=mandel
+  corners=0.262951650543581/0.2629516636739/0.002417080211421436/0.0024170\
+  90059169053 float=y maxiter=5000 inside=0 logmap=200
+  colors=000z8z<6>z1zz0zy0zx0y<56>4II3JH2JG0KF0KF<4>0LF0LG0LG0MG0MG0MH<50>\
+  0aT0bT0bT0cU0cU<62>zzzzzzzyz<52>z9z
+  }
+ 
+spiralia8          {
+  reset type=mandel
+  corners=0.2629516558459284/0.2629516585770307/0.002417084111129596/0.002\
+  417086159460997 float=y maxiter=5000 inside=0 logmap=200
+  colors=000V9b<24>6HK5IJ4II3JH2JG0KF<10>0MH0MH0NH0NI0NI0OI<43>0`T0aT0aT0b\
+  T0bT0cU<63>zzzzzzzyz<60>z1zz0zy0zx0y<28>W9c
+  }
+ 
+whyralia           { ; Y-fork from a deep mini Mandelbrot
+  reset type=mandel
+  corners=0.26295165732698511/0.26295165746355087/0.0024170849557990115/0.\
+  0024170850582156023 float=y maxiter=5000 inside=0 logmap=200
+  colors=000V9b<22>8GM7HL6HK5IJ4II3JH2JG0KF<12>0NH0NI0NI0OI0OI0PJ<39>0_T0`\
+  T0`T0aT0aT0bT0bT<64>zzzzzzzyz<60>z1zz0zy0zx0y<28>W9c
+  }
+ 
+DistantStar        { ; Actually a mini Mandelbrot near the tip of the spike.
+  reset type=mandel
+  corners=-1.99977941/-1.99976869/-4.13879752e-006/3.89106572e-006
+  maxiter=5000 inside=0 logmap=yes
+  colors=000002<12>000000111<11>555DDD<14>zzz<130>zz0zz0zy0yx0<59>dB0cA0aA\
+  0<14>000
+  }
+ 
+CloserStar         { ; Actually a mini Mandelbrot near the tip of the spike.
+  reset type=mandel
+  corners=-1.99977439304/-1.99977370696/-2.6347487925411e-007/2.5043636810\
+  589e-007 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000002<12>000000111<11>555DDD<14>zzz<130>zz0zz0zy0yx0<59>dB0cA0aA\
+  0<14>000
+  }
+ 
+Total Eclipse...   { ; ...of the Mandelbrot! It even has prominences...
+  reset type=mandel
+  corners=-1.99977410094816/-1.99977400764132/-3.39550351513353e-008/3.593\
+  68944896239e-008 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000zUU<22>000<53>xxxzzzzzz<94>zz0zy0zw0<28>z20z00z00<46>zUU
+  }
+ 
+Total Eclipse...2  { ; ...of the Mandelbrot! It even has prominences...
+  reset type=mandel
+  corners=-1.99977410094816/-1.99977400764132/-3.39550351513353e-008/3.593\
+  68944896239e-008 float=y maxiter=5000 inside=0 logmap=yes
+  colors=000zUU<21>322000000<100>000000110220<44>xx0zz0zy0<29>z20z00z00<46\
+  >zUU
+  }

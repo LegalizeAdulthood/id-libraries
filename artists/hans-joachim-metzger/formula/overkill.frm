@@ -78,3 +78,11 @@ OK-35 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   ;SOURCE: fract196.frm
 }
  
+OK-08 {
+  z = pixel, c = fn1(pixel):
+  z = z^z / fn2(z)
+  z = c / z
+  |z| <= (5 + p1)
+  ;SOURCE: fractint.frm
+}
+ 
