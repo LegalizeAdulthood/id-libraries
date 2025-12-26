@@ -1,0 +1,315 @@
+bakreef            { ; Part of Great Barrier Reef
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=manfn+exp function=cosxx passes=1
+  corners=-2.1806513/-1.6110513/0.99932693/1.4265269 float=y
+  maxiter=1023 bailout=8192 inside=0 logmap=yes periodicity=0
+  colors=000zzz<4>zzz00e10f<5>27g38g39h4Ai4Bi5Ci5Dj6Ek6Fk7Gk7Hl8Im8Jm9Km9L\
+  nAMoANoBOoBPpCQqCRqDSqDTrEUsFVsFWsGXtGYuHXuHYuHZuH_uI`vIawJbwJcwKdx<2>Lg\
+  yAV0<12>CX2DX2DX2EX3EX3<18>H`6I`6I`7Ia7Ia8Ja8<4>KcALcALdAMdAMdB<7>PgDPgE\
+  PhEPhEQhF<20>WoNXoNXpNYpNYpO<8>`sR`tRatRatRbtRbtR<2>etRetRftRftRgtR<22>t\
+  tRutRutRutQ<5>utNusNusNurMuqL<5>unHumHumGumG<9>uhBuhBugBugBugA<7>tc8tc8s\
+  b7sa6sa6s`5r`5rZ4rZ4rX4qX4qV2qV2qT2WWWWWWzzz<6>zzzkkkkkkzzz
+  }
+
+blobs              { ; Strings of Pearls
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=marksmandelpwr function=tanh passes=1
+  corners=-0.270197/0.100782/0.203178/0.481411 float=y maxiter=1024
+  inside=maxiter potential=256/511/0
+  colors=000U66<15>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>\
+  zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<6>U66
+  }
+
+blufrog            { ; Big Blue Frog or Sumo Wrestler
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=tetrate passes=1
+  corners=-2/-1.178608/-0.293872/0.296155 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=000i``jlrYYNYWOpS4LPgSYzMAoRBBaHKaR`l`hxjqFASzg56XkE5qV7Hj7mz6H0P\
+  0<2>4fRz00<3>hYOGFM<2>LcQE5XD3iC1v8QX0hiFKHEXD<8>2N60L50M5<32>Gv9<3>Xsf<\
+  2>ugx<2>KXgIadGf`REQcMVpU_UVPMCS<2>iSoM6V<2>h1zEWIDuETAZfEltIzGPLHfLJxKI\
+  ENizQOTTR`WG9G<2>KI0DEEAL6JWJOtGKEU<2>a`tH6MK5NN4PrJ6bP326LCniITPLoUnzzm\
+  UCIJLLVKOfJe70D9NBBP9ESGKI<2>Jx9TCZPET<2>sapFAbFDtNDLVJMyl6CFR9OX5XbGAJ<\
+  2>MKA_GQtQVKBV<2>aNxKEP<2>ZacHHN<2>NmUXXeowzG8TI9`ZMcsawCBQ9FV6K_KYDPx4L\
+  5DR2594P31UFRbGjtRGXbPhnZt_GItQESPHefCOISXTZfceGDTHJ`IQiEfgQBJ<2>xNAINZL\
+  clOtzJLBOZ1VXFjw88GY0QjkS5aUQxpWRMJc`GQDR`JXlPcLIK<2>doGHFMKOONzQQeSENGD\
+  cABt4Kg4IHI<2>Sl9PHQZRV
+  }
+
+geode01            { ; Geode Crystals
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1597 type=fn(z)+fn(pix) function=sin/sin passes=1
+  corners=1.21823297/1.22329775/1.55953029/1.56332887 params=0/0/1
+  float=y maxiter=1023 bailout=50 inside=0 logmap=yes
+  colors=000lJl<26>jGPzGO<7>TE8PD6MG6<6>0a6<5>CoRErVEoT<11>A74<6>tcA<37>rs\
+  UrsVrsVrsWrsW<44>qyspztpztpzt<4>pytpxtpxtpwtpwt<80>pJzlJnlJm
+  }
+
+rngwrld            { ; Larry Niven's Ring World
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=manfn+exp function=cosxx passes=1
+  corners=-6.2843036/-5.4843036/1.4787056/2.0787056 float=y
+  maxiter=1023 bailout=8192 inside=0 logmap=yes periodicity=0
+  colors=000BMpBKr00BA0uAFw9Yz0e2VjMcovbWZzQXzzLu85eNH0bT<3>kdFF``<13>7Hp_\
+  9OIa`<11>wWqETd<2>B1sGd_<5>Qv_F`_<7>BNcGbX<4>NiGIa_<10>tjPTbdfciKaY<6>t`\
+  JFa_<11>5Rh<6>8t5<3>bclctm<15>bN0<3>zxF<13>_EAYA9VE8<3>IU4EZ2CMHA9X<10>Y\
+  LH`NFa5R<4>a_c<7>onJ<4>A8d<14>rWQ<15>rNu<7>kPZ6WO5WN4VLJaa<7>sbvF``<7>CN\
+  n
+  }
+
+sunflwr            { ; Sunflower (Revised Palette)
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=mandel passes=1
+  corners=-0.7454172061/-0.74541628679997/0.11299518739895/0.1129958768989\
+  6 float=y maxiter=16383 inside=0 logmap=yes symmetry=none
+  colors=000CZSNgMRMW<6>p3QHTJAY6POT<5>XJ6VHYaA`i2cNPU<3>FTLSOU<4>mSHXqDST\
+  `<4>ouyEP_4RdOPGNQ0ORV<5>SkOrP_XRPfVIpZBOOW<4>TOZ1yDLRW<6>0oUOOW<3>OSWOT\
+  VMRW<6>7rQIJVCEU68TQRT<3>_dFPUX<4>UyfPMZ<5>V7sNPY<3>JXeSQX<5>uddONZ<5>TD\
+  rOMZ<4>QBoVObaNjpzFYWdhcmskv869_YYlh_ysbNNjMLzEZH4i1nzYLOZ<5>3Mt<6>E2vQK\
+  ibaWatI<2>LQ9FF5C61<4>zN0<3>TC1K92B60<3>zz0<14>770700<45>S5H2Vz<4>XtP<4>\
+  1QY
+  }
+
+tincone            { ; Green Metallic Cones, All Sizes
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=tetrate passes=1
+  corners=-0.9994530688/-0.9954538888/0.0150294895/0.0180273095
+  float=y maxiter=1023 inside=0 decomp=256
+  colors=000<126>0y00z00y0<125>000
+  }
+
+tunnelp            { ; Tunnel (Cycle  it!)
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=tetrate passes=1
+  corners=1.58675/2.769972/3.222258/4.1055 float=y maxiter=1023
+  inside=maxiter potential=255/511/0
+  colors=000waC<14>hEh<2>jLbkN_lQYmTW<12>zz0<14>z00<18>WaaUdcUdc<7>UjX<7>0\
+  dHOiP<4>Q`RQZRQXQ<6>LGG<12>Uon<5>ojmojkpkh<4>xaVz_SzbQ<4>ysCxw9xx6yy3zz0\
+  <4>vqF<8>r0r<6>0Y3<6>rP0<6>w67x39x26y13z00x03v17s2A<8>KZTFbWD`UAZS8XQ<2>\
+  0mK<3>HKW<8>s2vz0z<6>z0c<5>z00<8>zz0<2>zb3zV4xZ4<2>ol3_g3<2>0R0<4>0ub0qj\
+  0ur0zzvrgzuj
+  }
+
+wizards            { ; Dueling Wizards (Encased in Ice!)
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=manfn+exp function=cosxx passes=1
+  corners=-8.238607/-7.438607/1.333403/1.933403 float=y maxiter=1023
+  bailout=8192 inside=0 logmap=yes
+  colors=000CPl<6>9DyNefVjncovbWZzQX_NLu85KaX<4>kdFF``<13>7Hp_9OIa`<11>wWq\
+  ETd<2>B1sGd_<5>Qv_F`_<7>BNcGbX<4>NiGIa_<10>tjPTbdfciKaY<6>t`JFa_<11>5Rh<\
+  6>8t5<3>bclctm<15>bN0<3>zxF<13>_EAYA9VE8<3>IU4EZ2CMHA9X<8>UJKWKIYLH`NFa5\
+  RaBU<2>aU`a_cca`<6>onJ<4>A8d<14>rWQ<15>rNu<7>kPZ6WO5WN4VLJaa<7>sbvF``<5>\
+  DRk
+  }
+
+zexpe43            { ; Indian Village
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.11589711913/-0.11572997811/1.0911759746/1.0913013303
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000Ri8<4>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9\
+  <6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bm\
+  nEj_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<3>Sjw<8>A9n<5>oJepOd\
+  rTbtY`<4>xfiucf<3>yq1<15>yT1zR0xP0<7>h50<4>QdC<3>Qh8
+  }
+
+zexpf57            { ; Waterfall Mountain
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.115826993113/-0.1158230833503/1.092760972588/1.09276390491
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000QfA<7>Rn3<4>Y0W<12>z2m<19>NTiLVhKUkKTnJSqIRu<3>OLgPJdSJa<8>zB9\
+  <6>zz8<16>lXdkVfmUj<4>zPzPbF<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IUZ<3>Bm\
+  nEj_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<5>JBXK9WL9T<5>LXiLakLenLjqKot<12\
+  >a4T<6>oKbwNd<6>eIgbHhZFg<4>F0Zkhqzv0<5>yW1yV1yT1zR0<8>h50eC2aD40K0<2>Fn\
+  1
+  }
+
+zexpf73            { ; Night Train
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.11592879103701/-0.11592866741952/1.09279880064267/1.092798893\
+  35573 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000UTxTXW<2>4Ki8PlCUoQixbcVacV`dUXeRVfQ`hMsn7<3>lYUfMjdHp_KR_SMEg\
+  47f2qkG<3>PcQvoStqengE<4>1DGlYL`HTO0`m_ObMYuoI<4>aycqnH<5>9tbvmI<6>fsnyR\
+  Vz4lljS`gfPduuaJ<2>j2YqkJ<4>EYhukK<3>ebkYQhA2dvdC<2>oB6g13qs0qiFrgP_eTQS\
+  dJaIzsJzANtfrzb8qcMzUgv1kkdOZWZLNixhI<5>yFjz9oxSUx5iletrhE<5>EBDwjH<6>mJ\
+  hxjF<6>wPTvkJtiOrgTpeZleH<2>DISlnE`pFPrGkoK<2>6xdjOjrmG<4>NrQHgDApNuzFqv\
+  TypHjrI<2>ZvLznElpFzrg`tH<2>IzKkhKZbQMXXslD<4>Td4jkJXiOIgU0QmVNczz00mmz0\
+  0zW2zo07h6zGjvN6SjAso0mM`6J_7Xq00O00N0J000S00W33`cej0VM30m7PwdaCLU91J7xn\
+  ExZCzmw5L0UKKw00zuAr0fwgEw`CxUAzo7j0zz000Vz9L`0T02b05o_zr6z42_aGKYHXcEAT\
+  FxnAxb0V`8iJEn7Lyc3yXPz00UiItX`zXY
+  }
+
+zexpg12            { ; Can Can
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.1092646444214/-0.1092622712223/1.049141523875/1.049143303775
+  float=y maxiter=1023 inside=0 logmap=256
+  colors=000zc0Hga<4>VTk<7>9IA6KE2MIR83<9>z10<10>wz0<3>BEh9Hc<7>NplPunOuo<\
+  6>Hzz<7>bUsePrePqfQp<2>hRliSkkTi<4>rXbtY`tZa<3>xfi<2>oWZ<2>yp1<14>yT1zR0\
+  xP0<9>d00<5>rWR<9>U0U<11>s1hu1jw1kz2mQcD<9>Nx2<10>LWiKTnJSqIRuRbE<8>fkEh\
+  lDkfC<3>zH7<13>zz0<7>zDd<6>zuz<6>JlM<2>GrR<2>zzE<2>zlEzgDzcDzZCzUC<2>zFA\
+  <3>XCQ<2>KXaFcfDhjBmn
+  }
+
+zexpg18            { ; Winter Campfire
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.1134097348652/-0.1134073989274/1.032367650715/1.032369402668
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000n``<2>kVf<3>uRsjQv`Pp0V0<9>DvUzzE<2>zlEzgDzcDzZCzUC<3>zAA<4>IU\
+  Z<3>BmnEj_<5>VTkTSg<15>k42<3>z10<10>wz0<6>CQe<6>Pun<7>Hzz<7>bUsePrePqfQp\
+  <2>hRliSkkTi<4>rXbtY`tZa<3>xfiucf<3>yq1<15>yT1zR0xP0<7>h50<4>QdC<9>Rn3<4\
+  >Y0W<12>z2m<19>NTiLVhKUkKTnJSqyzz<7>_HW<6>zB9<6>zz8<8>skProRqjKpeDuXGzbK
+  }
+
+zexpg23            { ; Desert Night Scene
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.113447336983519/-0.113447326620336/1.032362332753624/1.032362\
+  34052598 float=y maxiter=2047 inside=0 logmap=256
+  colors=000zzz9FT<16>qSdFOORYJbhEAEP<6>v705ES<10>LIaeI0gURQKdRKeTLf4ES<48\
+  >fQJ4ES<31>OM04ES<58>Di34ES<52>V9l6QWW9m<4>Y9oZ9oZBoZCnZEn
+  }
+
+zexpg29            { ; Easter Eggs
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=0.49879102653702/0.49879119055509/0.5384812129216/0.538481335935\
+  13 float=y maxiter=4095 inside=0 logmap=512
+  colors=000zi_<2>UDhRElKHv<13>9sg8veAve<16>xzU<15>q2L<14>dDMcENdEO<7>lJam\
+  KclKc<5>aO`_P__Q`<18>XanWboWbn<9>ScjRdiOdf<6>7eH4fD4fD<54>`Vk<3>T7`ggs<2\
+  >ahy<3>zzz<7>y0iy0k<6>c0kr7s<3>vZSwULxfEyn7zz0yvk<3>kpCckDjiROaH0R08SK0N\
+  M2PM4SLz608hKCJjBWLAUG9SBX_0z0``7MzE0zd0zU0ziQz80z40zlGz9Fz4H
+  }
+
+zexpg78            { ; Sailboat
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.710519550513/-0.710494333873/0.0773096884762/0.0773286009565
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zsIztLhgKgiJgkJ<7>fRK<2>fJUfDUf7Ue0UfAbgB_gCXhDU<6>zUn<6>iQJfP\
+  EdOC<3>WG0<3>o`0hZ3aX6YW5TV4PU3<3>0I0<6>Di6dX6wS7z00<11>zz0<3>z000Yp<6>`\
+  tzmwzzzz<4>z0zz9qzIhzif<3>zz0<8>z30<3>zs0zk00b0<2>0u09k3<4>vdJwcHwbE<4>h\
+  4r<3>q`5nb7je9<7>00S23Q<7>KPzNOj<2>VMz<5>gpwjvvkvq<4>sxStsNvmIxhD<4>z00<\
+  4>GKN4GP<3>WT_f_ZGMnteZzgX<2>RYF<3>4K0<7>OkOzzJ<5>zG1<2>d2C<2>n7Wk8ahAh`\
+  GnXMtSSzJZcARG_h80S0EX0Ta0F`30Z0X0O<2>zkT<2>zz0zu2zo4zX6zM8<2>zeBzlDzrDz\
+  sF
+  }
+
+zexph73            { ; Mine Railroad
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=0.241378129600685/0.241378221171499/0.723303941059535/0.72330400\
+  9737684 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000aDQ<2>TOd`aS<3>xLo_UNu4eBf67V93ICLq7<3>plNIo8<6>pUcHnB<4>_SiFa\
+  UGLsGk8<5>T2YEgA<2>C8VGrF<2>MrlIZPNFjIr6<4>dwIXl5pe7En6<2>H`DDoA<3>6cYy6\
+  sJo4<6>tP6Fp7<6>TYSHk7<5>Z0UCn4Ai47d5ab3zN1FuTGxrMJNBr97rFGqfFk4<5>N26h_\
+  gFr7<6>NkV_36Jp4<6>xX2IpB<5>e_pJqA<5>rgoKpE<2>ajjIn4<6>nL1Ck4<2>6R5Ek5<5\
+  >D6BKr7<6>zlY<2>SGytFq<5>pxh<5>VsERr8QoA<6>DTS<2>7ae5ej5ej<4>4`i<4>n5t<6\
+  >TEq<7>zbixZi<4>eA`a5ZX0X<6>zpD<7>pBB<2>JA3
+  }
+
+zexph82            { ; Inside the Pyramid
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=0.24138430162033/0.24138501701724/0.72330556671214/0.72330610325\
+  982 float=y maxiter=1023 inside=0 logmap=256
+  colors=0006MG6OI6QJ7SL9QMBNN<2>PEXUA`_7Pe4Dm00FdE<3>CpJHZC<12>UGDHZC<10>\
+  bLMJeG<2>VwUKWE<5>m5QG_E<11>CTeHYC<9>YE5GZC<14>1DOHSB<2>N15IXD<9>e3TFaC<\
+  7>7yFG_E<8>EdbE7xE9qEBiDEn<9>7ON7PK7PK<20>0G0<8>kGApD8<4>H_C<13>YO1I_LL`\
+  VOadk22G`D<3>EdJTVCeQCsLCL`C<5>pgBGZC<4>BSDA5Q<9>VPiXYk_fxcashWnVW54L3FP\
+  5<3>zpH<3>z_C<5>SH3VC4Y666KF
+  }
+
+zexph83            { ; Carniverous Plants
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=0.241379069281236/0.241379102012083/0.72330624125478/0.723306265\
+  802921 float=y maxiter=1023 inside=0 logmap=512
+  colors=000EgF<2>CpJHZC<12>UGDHZC<10>bLMJeG<2>VwUKWE<5>m5QG_E<11>CTeHYC<9\
+  >YE5GZC<14>1DOHSB<2>N15IXD<9>e3TFaC<7>7yFG_E<12>DgnI_C<8>dRHH_D<11>VgQKb\
+  H<7>pztHYD<13>`4VH_C<13>YO1I_LL`VOadk22G`D<3>EdJTVCeQCsLCL`C<3>edC<7>BSD\
+  COHD0YE5XGBW<6>VPiXYk_fmyaozWfkRdrLatFZ<2>v`MwhHumC<2>fgC`dCXaC<5>6IE<3>\
+  6QJ7SL9QMBNN<2>PEXUA`_7Pe4Dm00zrL
+  }
+
+zexph85            { ; Sky Roots
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=0.2413867536126/0.2413881844065/0.7232981541625/0.7232992272578
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000FdE<3>CpJHZC<12>UGDHZC<10>bLMJeG<2>VwUKWE<5>m5QG_E<11>CTeHYC<9\
+  >YE5GZC<14>1DOHSB<2>N15IXD<9>e3TFaC<7>7yFG_E<12>DgnI_C<8>dRHH_D<11>VgQKb\
+  H<7>pztHYD<13>`4VH_C<13>YO1I_LL`VOadk22G`D<3>EdJTVCeQCsLCL`C<5>pgBGZC<4>\
+  BSDA5QC7SE9UE9WE9Y<2>E9QD9VGC_JFaMJmSTqeYjkOgqLdqKctFZ<2>v`MwhHumC<2>fgC\
+  `dCXaC<5>6IE<3>6QJ7SL9QMBNN<2>PEXUA`_7Pe4Dm00
+  }
+
+zexpi14            { ; Silk Road
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.6714319057194/-0.6714254616324/0.4091753301103/0.409180163175\
+  5 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzz5g_5yRJmSuFTifA`WCJCG<2>cUxVX6<3>ac8_V6ObHBjSAuTLlWWdYVJOfW\
+  _IFH<2>hMXzGBwJKtMTqUY<2>qP`XpLcfRjXXGWZZS`ogspYjdPYTFK4kxLcpaWhLHUWKXfM\
+  _Z`MV`_<2>lRavurmoooahQm9LXD<2>iQWJHJ`LT2xzKkq`_iRsndcgdthkcdrV`4oFi16fx\
+  zlem5f_<2>eSanlE<2>qUWznTK9VWEYfJ_dNskOjRHEk8MSxTdeYqLRqMVqNZpmcs7grGdJk\
+  USeW`_YiU_tVfrRcybEvYMsTUox7peNpjgqbeqVcMk5XcGgWRAle3kTT_Y9kIUwR<2>kX_`v\
+  jideTW5eSMmCo<2>pLdacEiWQZAphHhhpFkfNnXVDq_Rg`dYaZz6emHk`SwxH`xVieZ4pxTa\
+  lvl7Z0fhCcx_n<4>jOl_3E<2>mJWV6ObCTjIYJd8VZIfTSAqL<2>fVYtCYrI_W2lfDfoOPJQ\
+  AHfp_XhTRdaQciPbEJISDSP68<2>jKVO1nY9igHeZdf6oO<2>eVZvavtXorShdbWiYYmT_qd\
+  gqWdWlnf_gq6bY`jdWgkSd_r3_b`hVayF0uKJ0hNEbRzbBdTZj78feIiJSgd2zZEnTQzx2zp\
+  Ng_QnJjGQZzo9zgHWO0q07<3>t22zR0qbucYi7pgzJQuJc5arMXlr8wXV09`HLX0ya0
+  }
+
+zexpi44            { ; Night Sky Mouse Monster
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.0795704449510343/-0.07957043438996/1.030303680361105/1.030303\
+  688281799 float=y maxiter=1023 inside=0 logmap=512
+  colors=000zzzU_c<2>seM<4>5oC<3>kIJhAJd2JlfG<2>Ml5<5>qEE<5>tfH<5>rs0mdO<4\
+  >Cen<3>l8S<13>r_NsaMqZP<3>kNa<2>RAsKRL80D<15>17K08L18O<11>ABs<4>VKn<12>q\
+  dP<4>ahv<4>Khd9XoDhX<2>6Q4`a0LYJ4TatNZoOYjQX<5>7XW4Sa0N47RH<2>DRLFSNFOP<\
+  3>H8Z<6>n_P<3>REm<6>t`K<4>xHP<7>D8S<4>eGSkISnLOqPKtTGwXBxV8<5>DDu<6>ajw<\
+  5>spk<5>8IS<2>zee<3>kPW<3>NeO<3>tmKwsHwtH<2>z00l960G04M8peGP5XAddBz`Dnz
+  }
+
+zexpi56            { ; Doorways and Spiral
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.6637682729235556/-0.6637682718554886/0.40962616164216037/0.40\
+  962616244324762 float=y maxiter=1023 inside=0 logmap=512
+  colors=000zzzBM_BN_BP`BTaBUbBWbBZc<6>YBa<3>Y8f<13>xf6zi3yi5<20>_QpYPsYPr\
+  <5>XSkWSiWShWTfWUc<14>aj3bl0bk1<17>ZMJYKKZKL_JM`INaHObHPcHP<16>u4cw3dw3c\
+  <30>wU4<15>rXhqYkqYk<45>FVb<3>EV4<7>ELEEHF<2>G5GH0HJ1I<9>bFVdHXgIYjJZ
+  }
+
+zexpi60            { ; Pupa
+                     ; Copyright, Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1
+  corners=-0.71347208948206/-0.71347178925143/0.40814380594295/0.408144031\
+  11591 float=y maxiter=1023 inside=0 logmap=256
+  colors=000zzzLTJFSL9RN<2>DWo<4>seM<4>5oC<3>kIJhAJd2JlfG<2>Ml5<5>qEE<5>tf\
+  H<5>rs0mdO<4>Cen<3>l8S<5>NP3<8>saM<4>kNa<2>RAsKRL80D<15>17K08L18O<11>ABs\
+  <4>VKn<12>qdP<4>ahv<7>9gT<4>tXZ<2>sRh<4>sbPteLsfNqjCnp5<8>H8Z<6>n_P<3>RE\
+  m<6>t`K<4>xHP<7>D8S<4>eGSkISnLOqPKtTGwXBxV8<5>DDu<6>ajw<5>spk<5>8IS<2>ze\
+  e<2>qYX<4>NeO<3>tmKwsHwtH<2>z00zzz
+  }

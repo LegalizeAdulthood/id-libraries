@@ -5185,3 +5185,152 @@ Kapetanov11 {
   ;SOURCE: kapet011.frm
 }
  
+Carr2168 {; Modified Sylvie Gallet frm. [101324,3444],1996
+  c=pixel
+  z=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
+  d1 = conj(0.0000455/pixel), d4 = 4*d1
+  z1 = 1.5*z+d1, z2 = 2.25*z+d1, z3 = 3.375*z+d1, z4 = 11.0625*z+d1
+  l1=(real(p1)), l2=(imag(p1)), l3=(real(p2)), l4=(imag(p2))
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t = 1-(t1||t2||t3||t4), ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + d4
+  z = z*sin(t+ct), c = c*t + ct
+  z=z*z+c
+  iter=iter+1
+  (|real(z)|) <= bailout
+  ;SOURCE: 42ccarr.frm
+}
+ 
+Lister_M {; Might need periodicity=0 
+  z = c = pixel:
+  r = tan(e/z)/c  
+  z = r * fn1(z) - p1 
+  |z| < 4
+  ;SOURCE: lister.frm
+}
+ 
+Lister_2 {; Might need periodicity=0 
+  z = c = pixel + p1:
+  r = tan(e/z)/pi
+  z = fn1(z)/fn2(c/r) 
+  |z| < 4
+  ;SOURCE: lister.frm
+}
+ 
+Listerial {; Might need periodicity=0
+  z = pixel, tp = tan(1/pixel):
+  z = fn1(z) + p1
+  r = tp/(imag(z)/real(z)) 
+  z = tan(1/z)/sqrt(r)
+  |z| < 4
+  ;SOURCE: lister.frm
+}
+ 
+manjul_lace {; Requires passes=1   George Martin, 1996
+             ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
+             ; If Real(p1) is:
+             ;    0 : formula draws PHC manjul_lace
+             ;    1 : formula draws mandel component only
+             ;    2 : formula draws julia component  only
+  IF (p1==1 || p1 == whitesq)
+    z = c = 1.5*pixel
+  ELSE
+    z = pixel, c = (-.75, .1234567)
+  ENDIF :
+  z = z*z + c
+  |z| <= 4
+  ;SOURCE: ifs196.frm
+}
+ 
+Zexpe (XAXIS) {
+  s = exp(1.,0.), z = Pixel:
+  z = z ^ s + pixel
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+Exipi (XAXIS) {
+  s = log(-1.,0.) / (0.,1.), z = Pixel:
+  z = z ^ s + pixel
+  |z| <= 100
+  ;SOURCE: fractint.frm
+}
+ 
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
+ 
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
+  ;SOURCE: skinner.frm
+}
+ 
+Fzpcophs {
+  z = pixel, f = pixel ^ (1. / sinh(pixel) ):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppchco {
+  z = pixel, f = cosxx (pixel):
+  z = cosh (z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppcosq {
+  z = pixel, f = sqr (pixel):
+  z = cosxx (z)  + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppcosr {
+  z = pixel, f = (pixel) ^ 0.5:
+  z = cosxx (z)  + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppshex {
+  z = pixel, f = exp (pixel):
+  z = sinh (z) + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+OldManowar (XAXIS) {
+  z0 = 0
+  z1 = 0
+  test = p1 + 3
+  c = pixel :
+  z = z1*z1 + z0 + c
+  z0 = z1
+  z1 = z
+  |z| < test
+  ;SOURCE: fractint.frm
+}
+ 
+Zexpe2 (XAXIS) {
+  s = exp(1.,0.), z = Pixel:
+  z = z ^ s + z ^ (s * pixel)
+  |z| <= 100
+  ;SOURCE: skinner.frm
+}
+ 

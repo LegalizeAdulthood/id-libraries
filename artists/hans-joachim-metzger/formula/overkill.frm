@@ -118,3 +118,11 @@ OK-36 {; DISSECTED MANDELBROT
   ;SOURCE: fractint.frm
 }
  
+OK-12 {; TRY FN1 = SQR, FN2 = SQR
+  z = c = pixel:
+  z = fn1(z) + c
+  z = fn2(z) / c
+  |z| <= (5 + p1)
+  ;SOURCE: overkill.frm
+}
+ 

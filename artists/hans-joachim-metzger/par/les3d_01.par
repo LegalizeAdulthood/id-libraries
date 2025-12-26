@@ -1,0 +1,71 @@
+;  Author: Les St Clair (101461.2032@compuserve.com)
+;  3D-transformation parameter file to re-created "ASTRAL PLANE" image
+;  copyright Les St Clair 1994
+
+!comments	{ ; Les StClair 1994 101461.2032@compuserve.com *PRESS F2*
+		  ; If you have problems with the colours in this image
+		  ; disable "map=" in SSTOOLS.INI or, after 2nd overlay hit
+		  ; @ key, re-select 2nd overlay, hit return then Esc key
+}
+
+
+1st_image_for_3D   { ; Save as SPOTS.GIF to be used later for 3d overlay
+		     ; Les StClair 1994 101461.2032@compuserve.com 		
+  reset=1100 type=fn(z*z) function=cotan savename=spots.gif
+  corners=-1.2232056/-0.43890381/0.477416992/0.504608154/-0.95402527/0.118\
+  392944 potential=255/200/0
+  colors=000332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>\
+  ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c\
+  <2>E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4\
+  >zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8\
+  >VHI<7>zH0<7>WED
+  }
+
+2nd_image_for_3D   { ; Save as BIGFOOT.GIF to be used later for 3d overlay
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  reset=1800 type=fn(z*z) function=sinh savename=BIGFOOT.GIF
+  corners=-1.06756976305/-1.06762878237/-0.905112103533/-0.904877551286/-1\
+  .06770158638/-0.904933146202 float=y potential=255/1000/50
+  colors=0005Px<6>A5c<3>F7UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>e\
+  YJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnC\
+  ql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9\
+  YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5\
+  >EAb<6>7Nu
+  }
+
+background_for_3D  { ; restore image then hit @ key and go to overlay stages>
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  reset=1800 type=mandel
+  corners=-3.905013/-2.034885/-0.7012891/0.7012997 maxiter=255
+  inside=zmag decomp=255 savename=BACK.GIF
+  colors=000bZP<4>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8SH9QJANKBLMC\
+  I<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<\
+  6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF<\
+  3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C4130007\
+  75<13>svcsvcsvcsvc<7>daR
+  }
+
+First_3D_overlay   { ; xforms 1st image to 3D sphere & overlays on backgrnd
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  3d=overlay filename=spots.gif sphere=y latitude=-90/90
+  longitude=180/0 radius=30 scalexyz=90/30 roughness=30 waterline=0
+  filltype=2 ambient=20 perspective=0 xyshift=-30/28
+  colors=000332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>\
+  ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c\
+  <2>E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4\
+  >zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8\
+  >VHI<7>zH0<7>WED
+  }
+
+Second_3D_overlay  { ; xforms 2nd image to 3D sphere & overlays on backgrnd
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  3d=overlay filename=bigfoot.gif sphere=y latitude=-90/90
+  longitude=180/0 radius=70 scalexyz=90/70 roughness=30 waterline=0
+  filltype=2 ambient=20 perspective=0 xyshift=10/-8
+  colors=0005Px<6>A5c<4>G8SH9QJANKBLMCIOEK<5>_VZ`Y`b`cdcf<4>nru<15>OI5<6>e\
+  YJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnC\
+  ql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9\
+  YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5\
+  >EAb<6>7Nu
+  }
+

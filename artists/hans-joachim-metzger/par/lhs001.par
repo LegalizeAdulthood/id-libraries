@@ -1,0 +1,559 @@
+anemone            { ; Sea Anemone
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandel passes=1
+  corners=-1.74864188256/-1.748641040544/0.000676918048/0.000677549952
+  float=y maxiter=16383 inside=0 logmap=yes
+  colors=000jrr<23>WUMVSKWTL<14>j_Sk`Tj_T<19>96l75m75l<11>24Q13O13O<27>18d\
+  29e29d28b28`<3>28Q28O17L17J17H<3>179166368<9>J6UK7WM7X<2>RA`TAbVBdWBeYCg\
+  <5>gDsiDuiDr<3>eDfdDceDc<4>jD_jDZkDX<6>rANs9Lr9L<7>jGLhHMgIL<26>0X0<36>h\
+  trittjuulvwluvktukss
+  }
+
+aspenep            { ; Aspen Branches - Looking up in a grove in the fall
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=Fzpcocoh passes=1
+  corners=0.3566763651/0.3567524359/2.0095053309/2.0095623841 float=y
+  maxiter=1023 inside=-100 logmap=yes
+  colors=S0Xzzz000qo_<2>tui<3>rohrngrkh<4>mVm<6>bbf`deZce<2>V`cTZbTZb<4>OV\
+  aMUaLTaJS`IR`<10>0FY<14>H`aJbbIcc<7>AcV8dT8cT<10>7ZM6YM6ZL6_K6`J6aI<23>A\
+  UIBTJDUJ<20>wxMzzNzyN<2>ztLzsLzpK<15>z00<8>z00`OR<19>S57R45T55<8>lKAnLBo\
+  LB<6>xHEzGFzIF<6>zaFydFyeF<3>yiFxjExjExjE<3>xjEwiDugB<5>jW2hU0hV3<7>oiRz\
+  jF cyclerange=2/255
+  }
+
+astroid            { ; Asteroid
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=NewtonSinExp passes=1
+  corners=4.438653/6.212828/1.925411/3.256043 params=1/1 float=y
+  maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlp\
+  S<2>jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX\
+  _
+  }
+
+baloons            { ; Balloons
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=LeeMandel3 passes=1
+  corners=-0.713978/-0.38409/0.120979/0.368395 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=000zzzcTPKunNNNVc5ctRhJ3YA7zETQHTaG`U`hFASzg56XkE5qV7Hj7mz6H0P0<2\
+  >4fRz00<3>hYOGFM<2>LcQE5XD3iC1v8QX0hiFKHEXD<2>AUB9TA7R96P9<2>2H60E50E5<5\
+  7>_e3_e3`e3`e3ae3<39>zo0zo0zn0<35>uJ0uI0uH0tG0tE0tD0tC0<58>A00
+  cyclerange=2/255
+  }
+
+birds01            { ; Red and Blue Birds flying under clouds, over lakes
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=fn+fn function=log/sin passes=1
+  corners=2.996874/6.194994/0.002655/2.399994 params=1/0/1 float=y
+  maxiter=1023 bailout=100 inside=maxiter logmap=yes
+  potential=255/511/0
+  colors=000vvk<4>rskqrlpqloploolnol<20>VYnUXoTWnSVnRUm<7>MkC<9>98F<4>k3L<\
+  4>g3Q<2>nk2<12>OHC<7>8Qj5So5So<12>4_e4Ye5Ve6Sf<5>0CT<2>CFdGHiIHh<2>RHc<7\
+  >toN<11>TTI<8>mZW<2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<8>Qb\
+  GSeDWbL<4>nLz<5>jExiCwjJlkQamYQ<11>fSm_Sj<4>TLrleV<6>deh
+  }
+
+blkperl            { ; Black Pearl
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=NewtonSinExp passes=1
+  corners=5.212091/5.2438275/2.4160863/2.4398886 params=1/1 float=y
+  maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZzFhzKJ<2>yzBee7LS2BM71GD<2>D_xVkbmxVlp\
+  S<2>jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX\
+  _
+  }
+
+bridges            { ; Bridges
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=fn+fn function=log/sin passes=1
+  corners=3.824888/4.138878/2.078113/2.313603 params=1/0/1 float=y
+  maxiter=1023 bailout=100 inside=maxiter logmap=yes
+  potential=255/511/0
+  colors=000dEh<56>F3I<5>b3Og3QiIIkXAnk2<11>RKBOHCOHC<29>o00<14>lfSpjQtoN<\
+  11>TTI<8>mZW<2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<9>SeD<5>n\
+  Lz<5>jExiCwjJlkQamYQ<11>fSm_Sj<4>TLrleV<5>eef
+  }
+
+clown              { ; Clown
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=fn*fn function=log/cosxx passes=1
+  corners=2.784676/3.961652/0.229259/1.112244 float=y maxiter=1023
+  bailout=8192 inside=maxiter logmap=yes potential=255/511/0
+  colors=0007P0<6>nnL<6>xv7zx5yw5<23>aFF_DG_CH<9>W0U<4>p1i<6>Ozy<11>H4V<7>\
+  ABHAIIAOJ<3>AuL<6>8B9<4>p0G<4>pYE<11>zz0<4>znXykcykc<28>ydLzcKy`I<6>nC0<\
+  4>zs6<4>6P8<4>0K0<6>RzY<4>GGWD6VC8Z<5>4Pw0Rz<4>Upv<11>TjDSi9QjA<6>CsM9uO\
+  8uM<6>GDeI6hI5hH5hH4h<6>RXo<7>be_
+  }
+
+cmpnwt3            { ; ButterScotch Strings - Alien Musical Instrument
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=complexnewton passes=1
+  corners=-0.942097/3.057903/-0.322547/2.677453
+  params=1.5/4.6/0.25/0.75 float=y inside=0 logmap=yes periodicity=0
+  colors=000KK0<11>WB9XAAZ99<16>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1\
+  zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<24>FFF
+  }
+
+cogs               { ; Cogs
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=ScottSIC passes=1 corners=1.6674/1.961663/0.655304/0.876
+  float=y maxiter=1023 inside=maxiter potential=255/511/0
+  colors=0005Tn<10>4Zf4_e4Ye5Ve6Sf<5>0CT<2>CFdGHiIHh<2>RHc<7>toN<11>TTI<8>\
+  mZW<2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<8>QbGSeDWbL<4>nLz<\
+  5>jExiCwjJlkQamYQ<11>fSm_Sj<4>TLrleV<6>dehvvk<4>rskqrlpqloploolnol<20>VY\
+  nUXoTWnSVnRUm<7>MkC<9>98F<4>k3L<4>g3Q<2>nk2<12>OHC<7>8Qj5So5So
+  }
+
+condos             { ; Condos In The City - Downtown Manhatten
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm formulaname=Jm_20
+  passes=1 corners=0.16517/0.72069/2.014541/2.431181 float=y
+  maxiter=1023 inside=0 logmap=yes periodicity=0 function=sin
+  colors=000C1vF0N0Q9DFzUci2Ya<7>84F90S<15>zh6<54>zC3zB2zB2yB2<17>a82`82Z8\
+  2Y72W71V71<5>N51L40L40<76>h7Sh7Sh7R<53>zA0E5XD3i
+  }
+
+demon              { ; Demon
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1710 type=fn+fn function=log/cosxx passes=1
+  corners=-3.0/5.0/-3.0/3.0 params=1/0/1 float=y maxiter=1023
+  bailout=100 inside=maxiter logmap=old potential=255/511/0
+  colors=000xhC<89>xoFwpGwoG<46>L5FK3EK3E<55>lEElEEmEEnFEnFEnFEnFExdA<49>x\
+  hC
+  }
+
+ferncav            { ; Fern Cave
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandelfn function=sinh passes=1
+  corners=0.73349/2.310074/-0.593658/0.588394 maxiter=1023 inside=0
+  logmap=yes
+  colors=0002Q00O02Y04L07a0HK0S_0Q00<14>w00z00z30<13>zh0zk0zl0<10>zw0zx0zx\
+  0zx0<124>T1YT1YS0ZR0_<33>10y10y00z00z11y<31>PPa0O01P0
+  }
+
+frog               { ; Frog
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=marksmandelpwr function=sqr passes=1
+  corners=-1.08927233176/-1.08926876824/-0.00000133632/0.00000133632
+  float=y maxiter=2047 inside=0 logmap=yes
+  colors=000z01<5>z00zt5<12>zt2zt1zt1zs0ys1<2>vs6zm8<6>jZYh2ah7ahCaZEe<2>W\
+  IPUKJUNG<2>VX6<3>GM3CJ38F24C1080zo5nAnyGf<4>vj0<4>0JQLWgehz<6>QNqNJoMIm<\
+  10>40K<6>A0KB0KD0J<62>y01z10x1C<89>z01
+  }
+
+frogs              { ; Stacked Frogs watching you
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=fn+fn function=sin/sqr passes=1
+  corners=-1.382504/-0.806509/-0.216/0.216 params=1/0/-1 float=y
+  maxiter=1023 bailout=8192 inside=maxiter logmap=yes
+  potential=255/511/0
+  colors=00005DECkTKegSZMAQgSZnFZe8bW1fJBRW1fIUaTTfdSkyIvTIEyIvaVONj0<2>zp\
+  VhXhMQFMAIaQF<3>xEJuMGrUDz8HP7Ez8HrSr<4>UZJ_hUfreK2PW1Th0X<2>w0CT86Q9Ju5\
+  Dk4Pa3`R1mG1j61gTco<2>Cl1<2>naufZvZWxRKzrd`<2>VSqFNcPYhTiUXuEc3iX0caFs_M\
+  x`XaahF`VbZGzKpc<3>FxV<2>Sx2P`BecL<2>VZycO`lDB<2>txSrfSe4DmQT<2>dYY<3>Iu\
+  eWqkToiPlgXbjX8blJpu8s<3>NeL<2>VdYCakCZcCWV0O06TS<3>xvimujbtkFuHF`F`FDT0\
+  PfDatQn<2>qVTpWLqbH<2>rw3_oKMt7<3>TajfSmuHqhi0<3>oY_<3>t48<2>2B0<3>G3Vcr\
+  NbtJfrJcyP<2>oWL<2>eRUaPXXVR<2>Jl7<3>sfMpPGl6A<2>yY2<2>hAH<2>CpT<2>Lx_2b\
+  7HnA4GU<2>rfRfkKVqD<2>xXufXsPWqRcrUltW27<3>WtV_hhdXw<2>5GWoB1fWQYpouF5<2\
+  >YLN<2>x4ggDt7Ej<2>nzB<3>FvZjXx4Jay`SVLd
+  }
+
+gardian            { ; Guardian
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=fn+fn function=log/cosxx passes=1
+  corners=2.489563/4.081757/1.98494/3.178696 params=1/0/1 maxiter=1023
+  bailout=100 inside=maxiter logmap=old potential=255/511/0
+  colors=000xhC<95>xoFwpGwoG<46>L5FK3EK3E<55>lEElEEmEEnFEnFEnFEnFExdA<43>x\
+  hC
+  }
+
+glaseye            { ; Glassey Eyed Alien with transparent bay window
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=fn+fn function=log/cosxx passes=1
+  corners=-3.040213/5.580477/-3.232759/3.232759 params=1/0/1 float=y
+  maxiter=1023 bailout=4 inside=maxiter potential=255/511/0
+  colors=000_L_FM`<29>qqr9HY<125>aPGgQGbQG<71>sV5sV5sV6<6>sV8EkD<8>Gr8AIYB\
+  JZCKZ
+  }
+
+globe              { ; 3-D Globe (Generate Martian First)
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Generate from Martian.gif
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=5 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 map=globe.map
+  }
+
+grid               { ; Grid
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1673 type=lyapunov
+  corners=3.7635553/3.8511926/3.2310525/3.2967805 params=321/0.5
+  float=y maxiter=40 inside=0 logmap=yes
+  colors=000ODD<23>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<4>MDD
+  }
+
+gudluck            { ; Good Luck Road - A Trail of Four-Leaf Clovers
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=sqr(1/fn) function=sin passes=1
+  corners=0.288798/1.082196/0.546241/1.54123 float=y maxiter=1023
+  bailout=7168 inside=maxiter logmap=yes potential=255/511/0
+  colors=0005vF3zEKJG<25>e5qf4sf4s<43>G3JG3JG4J<3>G5JG5KG5KG5LG5M<65>51y40\
+  z51z<36>rqlsrltsn<4>zzz<5>00_000KJF<49>FWZ
+  }
+
+hangovr            { ; Hangover - Oh, What a Headache!
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Zoom into Caren Park's PeterMaxxPeas (ckp150.par)
+  reset=1720 type=fn(z)+fn(pix) function=sin/cosh passes=1
+  corners=0.03612347/0.03877584/1.29710943/1.29909872
+  params=0.7/0.333/0.5/0.5 float=y maxiter=100 bailout=50 inside=bof60
+  colors=000U0R<5>F0FKF0<6>hZ0<7>KF000A<6>00k<7>00AA00<6>z00<7>A00<6>2r00z\
+  00u0<7>0A0<6>eXU<7>0A0AKK<6>mmK<7>AKMFF0<6>zz0<7>FF0F00<6>z0A<7>F00FFF<6\
+  >zzz<7>FFF0FK<6>0Um<7>0FKPF0<6>mK0<7>PF0FKA<5>NSIPUKOTJ<6>FKA00K<4>57j79\
+  p78l<6>00K0D1<6>1aA<7>1F0KF1<6>hZ0<6>OI0KF0F0F<6>Z0UX0T
+  }
+
+icon               { ; Windows 3.1 Icon Clip-Art
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandel passes=1
+  corners=-31.99/31.99/-23.9925/23.9925 float=y maxiter=1023 inside=0
+  logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCGlWb<4>mYZnZYn_Z
+  }
+
+lakesid            { ; GlacialLake in the Sawtooth National Forest
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Zoom into Richard H. Sherry's rhs335 (rhs04.par)
+  reset=1720 type=barnsleym3 passes=1
+  corners=-0.23304/-0.058772/0.261725/0.392429 maxiter=499 fillcolor=7
+  inside=zmag outside=imag logmap=yes
+  colors=000cPE<4>ZH0EEE<3>OONGQ_EQZBQYYYX<7>ppn<15>CCGGc6<10>0G5ZJE<6>zgF\
+  <8>YKEUHDSGC<6>AB7<12>svcsvcsvcsvc<9>aXO<4>h`MjaMkbLmbK<7>zjF<7>fREUPF<2\
+  >OI5<15>zd3<11>XREUPFUPF<34>P9NO8OPAN<3>UGJVHIZHG<6>zO0<5>cG9_EBWEDSDF<4\
+  >L0K0G5<5>6Q58R5BT5<7>Wf6<7>Op7<4>He6 cyclerange=40/255
+  }
+
+lvloop4            { ; A Challenge For You - Decode the Secret Message
+                     ; Copyright Lee H. Skinner, 1993
+  reset type=sqr(1/fn) function=sin passes=1
+  corners=-1.6/1.599986/-1.199994/1.2 float=y maxiter=1023 inside=0
+  colors=000AIg<6>G9H<3>sD1<8>sL3sM3sO3<21>tz4miB<6>2s58dEEQOHZVLgaPqh<4>V\
+  n`<3>0LaZWL<5>K4LEDS7NZ<7>zh5xaHuUU<6>`oE<6>pR5nE`<4>KXH<4>NLOOJPRJQ<3>d\
+  HS<4>YVr<6>kv0Tv7AwF<4>a7FZBe<7>Lfv<7>l2Zsb`<6>gaee`fbWb<4>O4JRfd<6>Does\
+  Anybo<3>dyReadThe<2>seL<7>inesLe<3>eHS<7>kin<2>nerAlbuqu<3>erq<5>ueN<7>e\
+  wM<3>xicoDP<4>pzB<5>Do8<5>4Ol6Mk8Ki
+  }
+
+martian            { ; Martian
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Use this image to generate the 3-D Globe
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=Fzppsinh passes=1
+  corners=1.17861178/1.178766702/0.582658831/0.582775023 float=y
+  maxiter=1023 inside=maxiter
+  colors=000kOPkMN000kJK<18>yKV<5>fF_hEcjDhXJ9<29>mK0<5>_NAXOCXPC<34>WnSVo\
+  TUmS<16>5B8386386<29>TM4UN3UN3UN3<5>TO1XJ9<3>VJDD0M<28>83T74U63U<6>00X<1\
+  0>SOgVRiXTh<10>pfhrhgrhg<15>mWZmWZmUXlSUlQS
+  }
+
+mhypsz1            { ; Aspen
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandelfn function=sinh passes=1
+  corners=0.4413/0.635393/0.847906/0.9934 float=y maxiter=2047
+  inside=0 logmap=yes
+  colors=000FFk<12>PPa0O01P02Q00O02Y04L07a0HK0S_0Q00<14>w00z00z30<13>zh0zk\
+  0zl0<10>zw0zx0zx0zx0<124>T1YT1YS0ZR0_<33>10y10y00z00z11y<17>FFk
+  }
+
+mhypsz3            { ; Ferns
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandelfn function=sinh passes=1
+  corners=-0.1972/0.197195/1.204216/1.5 float=y maxiter=2047 inside=0
+  logmap=old
+  colors=000l7B<9>OK2b`3rq5rSDq1M<24>y2Ky2Ky3L<22>yP`yM_<20>yhpyjqwip<20>1\
+  EB<31>1a21b11c11d01c4<10>3Lp<5>ZZq<34>yg2zh0zh0<52>t3Dq4Do5C
+  }
+
+mite               { ; Mite
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=marksmandelpwr function=sqr passes=1
+  corners=-1.090649/-1.08950482/-0.000428538/0.000429154 float=y
+  maxiter=2047 inside=0 logmap=yes
+  colors=000zt5<10>zt2zt1zt1zs0ys1<2>vs6zm8<3>qeNwMp<11>00CznA0Bz<2>0J_<3>\
+  0m0zz0<3>nmA<4>IiW<19>13L00K00K<67>v0Ew1Dw1Dw1D<103>z00zt5zt5
+  }
+
+moswood            { ; Mossy Wood - Moss growing on rotten boards
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=Fzppcosq passes=1
+  corners=0.324413976/0.325175684/1.357493574/1.358064855 float=y
+  maxiter=1023 inside=0 logmap=yes
+  colors=000PaO<132>zk9zk9zj9<106>hJ7M`Q<10>PaO
+  }
+
+panties            { ; Panties
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=fn*fn function=sin/cos passes=1
+  corners=0.881653/2.257653/0.105419/1.137419 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=zcKoAA<3>zLLzLzzzLzzz<3>BBBEEEHHH<4>___ccchhhmmmssszzz<44>Vzz<2>V\
+  bzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0\
+  SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<\
+  2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<\
+  2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<\
+  2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGz0oz_1zq0<2>z\
+  U0zq0zE000e0e00eee00<2>l77
+  }
+
+papmoon            { ; Paper Moon
+                     ; Copyright Lee H. Skinner, 1993
+  reset type=cmplxmarksmand passes=1
+  corners=-1.958518/1.177482/-0.546926/1.805074 params=0/0/0/1 float=y
+  maxiter=1023 inside=0 logmap=yes
+  colors=00000Eme0<3>eL0<5>sle<39>5Jx3Iy2Hy0Gz0Gz<47>00S<3>S0S<3>S00<3>SS0\
+  <3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQ\
+  SKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>\
+  0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG\
+  8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000\
+  <6>000
+  }
+
+peacock            { ; Peacock
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=mandel passes=1
+  corners=-0.2349564/-0.23243777/-0.82714025/-0.82525128 params=0.5/1
+  float=y maxiter=2047 inside=0 logmap=yes periodicity=0
+  colors=000fTZ<2>hgU<3>GuP<15>fiL<8>DKC<2>T_2<2>A8l<6>_AKcAGhjEmn9<11>Vip\
+  <12>tD8<3>xZ4<8>d9sa6y_6v<8>DER<11>ZKf<8>xsK<7>9c7<13>ct1<3>RZ2NT2KQ2<3>\
+  6C4o4I<12>4gJ<8>6Po7Ms9Os<8>Vfk<12>zKP<3>W1p<6>hBA<14>ygy<7>TRH<11>ew8gz\
+  7gsB<5>e9c<2>fO_
+  }
+
+phoenix            { ; Phoenix Islands - Tropical Atoll
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1729 type=phoenix passes=1
+  corners=-0.732989/0.819011/0.133776/1.297776 params=0.56667/-0.5
+  float=y maxiter=1023 bailout=100 inside=0 logmap=yes
+  colors=000zzz00K<16>ECsCCs<20>CqsCssCsq<16>CsKCsIAqH<4>0bB<15>gohjpjlpk<\
+  4>zsu<6>ts_ssWssU<7>ssEssCssC<74>r88q77q77q77<65>z00qCsoCs
+  }
+
+rainbow            { ; Rainbow
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=ScSkZCZZ passes=1
+  corners=0.4366/1.600867/0.615518/1.4888 maxiter=1023 inside=maxiter
+  potential=255/511/0
+  colors=0004BOz00z20<5>z10z00z20<11>zT0zW0zX0<8>zb0zc0zf0<4>zz0<8>zz0<5>0\
+  l10l2<26>0k3<7>DFkFAqFAq<9>FAqFAqGAqHAqHAqIAqIAq<7>_5ub4vb4v<22>b4vb4vc3\
+  wd2x<13>f0zf0ze0z<89>d0zc0zemvF3`
+  }
+
+rch1zs4            { ; The Bronx?
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=Richard1 passes=1
+  corners=-0.403326333/-0.402899504/0.623393595/0.623713613
+  maxiter=500 fillcolor=7 inside=zmag outside=summ logmap=yes
+  colors=000zzIChe<2>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<4>L0K<3\
+  >4J5<17>Q`5Sa6R`6<17>0G5<7>wgF<8>XKDUHDSGC<6>AB7<12>svcsvcsvcsvc<9>aXO<1\
+  5>zjF<13>RCCEEE<13>kki<11>IILDDG<4>005SNCQL9OI5<6>eYJg_LiaNkcPneR<4>zpa<\
+  12>UPFHGMEDLAAK<3>ALQAOSARUBUWBXY<2>Bec cyclerange=2/255
+  }
+
+rcl_10             { ; Light Bulb Alien
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Rcl_10 formula from Ron Lewen
+  reset=1720 type=formula formulafile=skinner.frm formulaname=RCL_10
+  passes=1 corners=-2.189386/2.120959/-1.97565/1.257109 float=y
+  inside=255 potential=255/128/0
+  colors=000QCC<7>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>s\
+  Cs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>s\
+  ECsCCqCC<9>YCCG41UCCPLe
+  }
+
+roach              { ; Roach
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=marksmandelpwr function=sqr passes=1
+  corners=-1.08925528145/-1.08925143445/-0.000001443/0.000001443
+  float=y maxiter=2047 inside=0 logmap=yes
+  colors=000z02<11>z00zt5<12>zt2zt1zt1zs0ys1<2>vs6zm8<7>hXabVezTw<10>D7L95\
+  YlfzzoKLPzL2sB3h14g0jj0Q02Az<15>Aly<5>jWs<7>57U<2>52N60K70K<46>u0Gw1Fw1F\
+  <104>z02
+  }
+
+romulan            { ; Romulan Bird-of-Prey (Warning: Initially Cloaked)
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=Fzppchco passes=1
+  corners=1.65995399/1.66376115/1.40818213/1.4110375 float=y
+  maxiter=1023 inside=0 logmap=yes
+  colors=000zzzv`IwaHhTP<15>ouehSO<22>pQCeSO<8>EQF<13>Ht5<11>aWQ<9>0q_<4>i\
+  ZO<13>mtQ<3>lYPkSOlSO<14>wPR<4>hRVeSWdSX<2>bS`aTbbT_<9>pK4rJ0rJ0<62>myIm\
+  yImxI<32>qZJrYKsZJt_J cyclerange=2/255
+  }
+
+rose               { ; Rose
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=NewtonSinExp passes=1
+  corners=4.963746/5.332775/2.231113/2.507885 params=1/1 float=y
+  maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlp\
+  S<2>jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX\
+  _
+  }
+
+scorpio            { ; Scorpios
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandelfn function=sinh passes=1
+  corners=0.985488/0.98735428/0.25159299/0.25299197 float=y
+  maxiter=16383 bailout=8192 inside=0 logmap=yes
+  colors=000gJG<9>f3Xe1Zd1Zc1Zb1Y<4>`1X_1X_1XZ1WZ1WZ1W<9>U1TU1TT1SS1S<15>C\
+  6IA7HA8G<3>99E99E9AF<10>FLQFMRFMRFMR<22>GQaGQaGQaGQaHR`<45>zz0zz0zy0<101\
+  >z00gMDgKF
+  }
+
+shelob             { ; Shelob's Lair
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=spider passes=1 corners=-2.5/1.5/-1.5/1.5 float=y
+  maxiter=1023 inside=maxiter potential=255/511/0 periodicity=0
+  colors=000tR0z00<35>q00q00p00o00<212>000z`0
+  }
+
+spca016            { ; Satelite View of planet from orbit
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm formulaname=SpecC
+  passes=1 corners=0.4109549164/0.4109707624/0.4596432269/0.4596551114
+  float=y maxiter=1023 inside=0 logmap=64 function=cosh/cosxx
+  colors=000xjqz00<17>z00y00w00<25>900090<17>YX0<6>5IJuj0VcPcjKYA7QI79QFaR\
+  `l`kFAS`E56`YE5qm7Vj7mzX60P0yFTAVV4fRz0JzQ6zUCzZ0hYOSFMzUUJVOLcQE5XD3iC1\
+  v8QX0hi<10>84F90SC3CF7CIACTDAdH7<2>ZSAaVAec9h`9<4>zo6zn6zm5<3>zk6zj6zi5<\
+  53>z71z61x61<6>f51c40b40<21>E30D20D20<15>800<5>Zfzpx0
+  cyclerange=2/255
+  }
+
+stamp              { ; New Postage Stamp
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=mandel passes=1
+  corners=-23.651336/1.172904/-17.209494/1.408686 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=000zzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zz\
+  V<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QK\
+  SSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3\
+  >GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8G\
+  E8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBD\
+  GBCGKCC<6>FFF00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKK\
+  KOOOSSSWWW___ccc<2>sss
+  }
+
+swirls             { ; Nebulous Swirls - Not in our Solar System
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=formula formulafile=skinner.frm
+  formulaname=Fzpcophs passes=1
+  corners=0.43791766/0.44484167/0.79959798/0.80479099 float=y
+  maxiter=1023 inside=0 logmap=yes
+  colors=000zVP<14>z6Qy4Rx4R<13>Y9OWANUANSBMSBM<41>kYJlZIlYJ<44>V6mU6mU5nU\
+  5nU5m<35>HGVGGVHHV<11>STYTUYUVYVWZWXZXYZ<22>qtfrufptd<4>fpTcoQanP<16>0Y9\
+  <11>xy7<3>yy4<4>wj0zXP
+  }
+
+tgrtals            { ; Tiger Tails waving in the air
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1510 type=manowarj passes=1
+  corners=0.084659/0.133449/0.0149314/0.0515047 float=y logmap=yes
+  colors=000VewzKK111zKK111zKK111zKK111zKK111zKK111zKK111zKK111zKJ111zKJ11\
+  1zKJ111zKJ111zKJ111zKJ111zKJ111zKJ111zKI111zjI111zjI112zjI113zjH114zjH11\
+  4zkH115zkH116zkH117zkH118zkH118zkG119zkG11AzlG11BzlG11CzlG11CzlG11DzlG11\
+  EzlF11FzlF11GzmF11GzmF11HzmF11IzmF11JzmE11JzmE11KzmE11LznE11MznE11NznE11\
+  NznE11OznD11PznD11QznD11RzoD11RzoD11SzoD11TzoD11UzoC11VzoC11VzoC11WzpC11\
+  XzpC11YzpC11YzpB11ZzpB11_zpB11`zpB11azqB11azqB11bzqB11czqA11dzqA11ezqA11\
+  ezqA11fzrA11gzrA11hzr911izr9111zr9111zr9111zr9111zs9111zs9111zs8111zs811\
+  1zs8111zs8111zs8111zt8111zt8111zt7111zt7111zt7111zt7111zt7111zu7111zu611\
+  1zu6111zu6111zu6111zu6111zu6111zv6111zv5111zv5111zv5111zv5111zv5111zv511\
+  1zw5111zw4111zw4111zw4111zw4111zw4111zw4111zx3111zx3111zx3111zx3111zx311\
+  1zx3111zxA111zxH111zxO111zyV111zya111zyh111zyo111zzvWbe
+  }
+
+theblob            { ; The Blob In The Forest
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Rcl_10 formula from Ron Lewen
+  reset=1720 type=formula formulafile=skinner.frm formulaname=RCL_10
+  passes=1 corners=0.334593/1.1708/-0.635859/-0.008704 float=y
+  inside=255 potential=255/128/0
+  colors=000ECCCCCACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>s\
+  Cs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>s\
+  ECsCCqCC<10>WCCUCCSBA<3>H400K30UZ
+  }
+
+tick               { ; Tick
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=marksmandelpwr function=sqr passes=1
+  corners=-1.08950555/-1.0891397/-0.00013721/0.000137091 float=y
+  maxiter=2047 bailout=4 inside=0 logmap=yes
+  colors=000zt5<12>zt1zs0ys1<2>vs6zm8<7>hXa<3>KOpukCUY0<6>baMdbQcbQ<7>WZXV\
+  YYUXZTWZSVY<20>22L00K00K<10>A0KB0KD0J<41>u0Gw1Fw1F<117>z00zt5zt5
+  }
+
+valntin            { ; Don't you just LOVE fractals?
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=skinner.frm
+  formulaname=Fzppcopo passes=1
+  corners=-2.031475/-0.997371/-0.389645/0.385933 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=000HUzzzzWr7<3>Ut5zCW<45>zWwzWxzXyzYz<17>zmzznzynzxnz<24>_kzZkzYj\
+  yYjx<29>yyVzzUzyU<105>z11z00z00z00<7>z00
+  }
+
+wired              { ; Wired Mandel
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1611 type=magnet2m passes=1
+  corners=0.22128795/0.22928795/-1.03858768/-1.03258768 float=y
+  inside=0 logmap=old
+  colors=000NaL<6>RwEzXeJDQ<10>P93NBKS8BQDV<3>q9jMJR<6>fzFJES<13>5ZFKDT<2>\
+  NAWJESO9X<4>U5cQOV<4>VWXJGS<6>LdYMhZLHQ<7>ep5ICV<4>85lKKR<4>PrINDP<7>xG0\
+  LHT<6>ZleJGVJJYzz`<23>pT0ROAUS3JDU<10>NFoOGqQCT<4>x4_HMZ<2>AlsLDS<14>wGI\
+  DRT6dUJFR<10>Jh9Ik7GIQ<3>3dFcaRyzPJDT<7>R7aNHSRLRu_GRNZ<2>orvKFU<9>VhoPN\
+  W<2>fpiSFT`IVLLU<2>UibHFO<4>7P2JGS<5>MYM
+  }
+
+wrmwood            { ; Wormwood - Rotten Wood with worm holes
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Zoom into Peter Moreland's PlanetOfTheCaterpillars
+  reset=1720 type=barnsleym1 passes=1
+  corners=0.905186/1.040873/-0.289316/-0.47023/1.040873/-0.47023
+  maxiter=50 bailout=12123 inside=bof60 decomp=256 periodicity=-256
+  colors=000421<28>vPF<30>110000001<29>Z0_`0a_0`<27>102001000000<30>v00<30\
+  >100000001<30>00z<30>002000000210
+  }
+
+zexph51            { ; Pseudo-StereoScopic
+                     ; Copyright Lee H. Skinner, 1993
+                     ; Note: use video=SF5.  (SF7 gives different area)
+  reset=1611 type=formula formulafile=skinner.frm formulaname=Zexpe
+  passes=1 video=SF5
+  corners=-0.2969912429588051/-0.2969912429583439/1.133673662892548/1.1336\
+  73662892867 float=y maxiter=2047 inside=0 logmap=1664
+  colors=000tPTtLSuHRuHRuHRaGT<6>kAfz00<2>m70<2>K3IAEO0PU3QQ6SL<3>JT1<4>4I\
+  3<6>qI7<12>dI5bH4cI4<11>vd8xf9xgC<10>qlbpmeqnfqng<4>lgXjfVieThcQgbOfaMd_\
+  J<4>_J8YF5XD3VA0<5>iA0lA0mA0<9>xA0z90z93<8>zA_zBcy9`x7Yw4V<3>mIdjMgjNf<4\
+  >lS`lTZkTW<6>YTA<3>pdK<8>1OP<3>kNh<2>zYM<5>jxI<6>0M0<2>wtV<3>VJp<16>n5Da\
+  00z00<8>q0oz0j<2>wzG<3>zr9zv5yz0<11>BO00J07M49P9BSD<2>G_m<2>iSZ
+  }
+

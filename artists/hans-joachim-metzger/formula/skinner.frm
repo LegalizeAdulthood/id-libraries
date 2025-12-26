@@ -47,3 +47,66 @@ SpecC (XAXIS_NOPARM) {
   ;SOURCE: skinner.frm
 }
  
+Fzpcocoh {
+  z = pixel, f = 1. / cosh(pixel):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzpcophs {
+  z = pixel, f = pixel ^ (1. / sinh(pixel) ):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppchco {
+  z = pixel, f = cosxx (pixel):
+  z = cosh (z) + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppcopo {
+  z = pixel, f = (pixel) ^ (pixel):
+  z = cosxx (z)  + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+Fzppcosq {
+  z = pixel, f = sqr (pixel):
+  z = cosxx (z)  + f
+  |z| <= 50
+  ;SOURCE: fractint.frm
+}
+ 
+Fzppsinh {
+  z = pixel, f = sinh (pixel):
+  z = sinh (z) + f 
+  |z| <= 50
+  ;SOURCE: skinner.frm
+}
+ 
+RCL_10 {; Ron Lewen, 76376,2567
+  z=pixel:
+  z=flip((z^2+pixel)/(pixel^2+z))
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+ScottSIC (XYAXIS) { 
+  z = pixel, TEST = (p1+3): 
+  z = sqr(1/cosxx(z)) 
+  |z|<TEST 
+  ;SOURCE: skinner.frm
+}
+ 
+ScSkZCZZ (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = (z*cosxx(z)) - z
+  |z|<TEST
+  ;SOURCE: fractint.frm
+}
+ 

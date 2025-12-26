@@ -134,3 +134,11 @@ Fish (xaxis) {; Dave Oliver   >INTERNET:D.E.Oliver@soton.ac.uk
   ;SOURCE: fish.frm
 }
  
+1301 {
+  z = 1/pixel:
+  z = fn1(z/pixel) * fn2(pixel)
+  z = z^p2 + fn1 (c-p1)
+  |z| <= p2
+  ;SOURCE: kg13.frm
+}
+ 

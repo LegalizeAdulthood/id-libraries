@@ -1,0 +1,29 @@
+image_limit        {
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest5 center-mag=-0.526644/9.445e-006/0.8912733
+  params=0.387426/0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+frm:contest5  {; Kerry Mitchell
+      ; slightly optimized version of Contest formula
+         z=p1, c=pixel:
+         z2=sqr(z), z=z*z2+c*(1+z-z2), |z| <= 36
+         }
+
+image_limit1       {
+  reset=1960 type=formula formulafile=limit.frm formulaname=contest5
+  center-mag=-1.08827/2.1545e-005/0.7488859 params=0.35/0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+image_limit2       {
+  reset=1960 type=formula formulafile=contest4.frm
+  formulaname=contest5 center-mag=-0.920671/1.4095e-005/0.7085162
+  params=0.387426/0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+

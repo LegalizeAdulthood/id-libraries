@@ -1,0 +1,3043 @@
+DA3clr02           { ; 0:10:36.20 - Pine woods
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov passes=b
+  corners=3.90219016488/3.90220318445/2.31189310793/2.31193964438/3.902172\
+  51443/2.31191664187 params=0/0.5 float=y
+  colors=www<14>000<15>0000U00X00Y00000000U00X00U0000<4>0000R0<3>0O0000<7>\
+  0000Z0000<13>000UUU000<2>000tvt<14>0Z0<15>0V00c0<14>0V00R0<108>000<15>zz\
+  zwww
+  }
+
+
+DA3clr11           { ; 0:17:49.40 - Evening sky
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov
+  corners=-1.07612607894/-1.0760821742/-1.67974896211/-1.67971603356
+  params=3/0.90000000000000002/2 float=y
+  colors=000V00<44>000000111<61>zzzzzzyyy<61>000000100<61>e00e00d00<14>V00
+  }
+
+
+saf002             { ; Chaoitic Layupanov
+                     ; (c) 1993 Richard H. Sherry, CIS:76264,752
+  reset=1732 type=lyapunov passes=1 savename=saf002.gif
+  corners=3.426544/3.651664/3.410975/3.579815 params=6/0.00687321/10
+  float=y maxiter=2 inside=0 logmap=yes periodicity=0
+  colors=000riW<5>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeD\
+  zfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<22>phV
+  }
+
+saf003             { ; 3D spherical Layupanov
+                     ; (c) 1993 Richard H. Sherry, CIS:76264,752
+  3d=yes filename=saf002.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=100 scalexyz=90/100 roughness=10 waterline=0 filltype=2
+  ambient=20 perspective=0 xyshift=0/0
+  colors=000riW<5>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeD\
+  zfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<22>phV
+  }
+
+
+Lyapunov_one       { ; (c) 1992 Peter Moreland, The Saint                      
+                     ; come in Brett Sinclair!
+  reset type=lyapunov corners=2.93748764/2.94703484/3.67514065/3.68217105
+  params=4/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+Lyapunov_two       { ; (c) 1992 Peter Moreland, The Hair!                      
+                     ; Don't know why?
+  reset type=lyapunov corners=2.8488063/2.9442783/3.6342572/3.7045612
+  params=4/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+Lyapunov_three     { ; (c) 1992 Peter Moreland, Crucifixtion????            
+                     ; Don't know why?
+  reset type=lyapunov corners=2.8488063/2.9442783/3.6342572/3.7045612
+  params=48/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+
+DAbw010            { ; 0:04:05.47 - Lyapunov object
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset type=lyapunov
+  corners=3.27667047/3.281349151/3.672606109/3.691298706/3.264638111/3.687\
+  039387 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<13>888444333<14>zzz<5>ccc
+  }
+
+
+Doppler Raceway    { ; Lyapunov. Try this at 1024x768x256
+                     ; BG Dodson 1992 71636,1075
+  reset type=lyapunov corners=2.0/4.0/2.5/4.0 params=0/0.75 float=y
+  maxiter=6 inside=bof60 outside=real
+  colors=000<141>ussvttvrr<16>xJJxHHxHH<12>xHHxIIxIIxJJxKK<57>wuuvvvvvvvvv<6>v\
+  vv<6>MMM
+  }
+
+
+ckp0001            { ; "Spirit Rising"
+                     ; 00:02:12.31 .. (c) 26 November 1992 .. caren park
+  reset type=lyapunov passes=1
+  corners=2.497462/3.201462/3.384957/3.912957 params=-44/0.5 float=y
+  maxiter=3 logmap=yes periodicity=-1
+  colors=000008<5>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2\
+  zz0zz0yz<43>05z03z02z00z00y<52>009
+  }
+
+ckp0002            { ; "Star Light, Star Bright"
+                     ; 00:03:26.74 .. (c) 26 November 1992 .. caren park
+  reset type=lyapunov passes=1
+  corners=3.436489/3.564489/3.4484146/3.5444146 params=-44/0.5 float=y
+  maxiter=5 logmap=yes periodicity=-1
+  colors=000<44>000005<144>0xy0yz0xz<42>05z03z02z00z00y<14>00j
+  }
+
+
+ckp0003            { ; "Dance of Hope"
+                     ; 00:03:18.28 .. (c) 26 November 1992 .. caren park
+  reset type=lyapunov passes=1
+  corners=2.861099/3.565099/3.027069/3.555069 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00000i<43>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz\
+  2zz0zz0yz<43>05z03z02z00z00y<14>00j
+  }
+
+ckp0004            { ; "Rail Track After Rain"
+                     ; 00:03:22.68 .. (c) 26 November 1992 .. caren park
+  reset type=lyapunov passes=1
+  corners=3.144379/3.344379/3.859485/4.009485 params=-44/0.5 float=y
+  maxiter=5 logmap=yes periodicity=-1
+  colors=00000I<18>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z\
+  03z02z00z00y<59>002000000000<9>00G
+  }
+
+
+ckp0049            { ; "Red Satin Star Chaos"
+                     ; 02:43:53.33 .. 08 Dec 92 .. caren park
+  reset type=lyapunov corners=3.07368/3.63368/3.01495/3.43495
+  params=10/0.001/40 float=y maxiter=5 inside=maxiter periodicity=-1
+  colors=000800<5>200000000000<29>k00m00m01<29>y0kz0mz1m<30>zzz<46>z2zz0zz0y<4\
+  5>z02z00y00<52>900
+  }
+
+
+ckp0080            { ; "Plasma Lines"
+                     ; 00:03:22.29 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=3.48878/3.66078/2.962553/3.091553
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=00000D<33>01L01M01M02M02M02N<87>0Zh0_h1_h2`h<71>zzz000<50>00D
+  }
+
+
+ckp0081            { ; "Reflections"
+                     ; 00:03:23.61 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=3.112604/3.356604/3.612216/3.795216
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=000H3JG2JF0K<14>I0NI0OI0OI0PI0P<34>R0YR0ZR0ZS0_S0_<4>T0bT0bU1bU2c<62>\
+  zzzzzzzzy<2>xzvwzuuzt<42>2zE0zD1zD<30>lg5<13>bU9aTA`SA_RBZQB<17>L8GL7HK6HJ5I\
+  I4I
+  }
+
+ckp0082            { ; "Sunrise At Black Hole"
+                     ; 00:03:23.61 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=3.112604/3.356604/3.612216/3.795216
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1 colors=000<189>z00z00z11z22<61>zzz
+  }
+
+
+ckp0083            { ; "Stellar Jellyfish"
+                     ; 00:03:22.06 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=2.761529/3.105529/3.694012/3.952012
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=000H3JG2JF0K<12>I0NI0NI0NI0OI0OI0P<37>R0ZS0_S0_T0`T0`<2>T0bT0bU1bU2c<\
+  62>zzzzzzzzy<60>zz1zz0zy0yx0<32>`SA_RBZQBYPCXOC<15>L8GL7HK6HJ5II4I
+  }
+
+
+ckp0085            { ; "Free Sprites"
+                     ; 00:02:04.19 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t
+  corners=-1.36498/-1.019777/4.595415/4.135144/-1.019777/4.135144
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1 colors=002000000000 cyclerange=0/255
+  }
+
+ckp0086            { ; "Dancing Ropes"
+                     ; 00:03:23.22 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=3.405859/3.649859/3.138943/3.321943
+  params=104443/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=000H3JG2JF0K<12>I0NI0NI0NI0OI0OI0P<37>R0ZS0_S0_T0`T0`<2>T0bT0bU1bU2c<\
+  62>zzzzzzzzy<60>zz1zz0zy0yx0<32>`SA_RBZQBYPCXOC<15>L8GL7HK6HJ5II4I
+  }
+
+
+ckp0087            { ; "Jellyfish and Squid"
+                     ; 00:03:23.57 .. 14 December 92 .. caren park
+  reset type=lyapunov passes=t corners=3.442196/3.758196/2.613247/2.850247
+  params=104443/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=000H3JG2JF0K<12>I0NI0NI0NI0OI0OI0P<37>R0ZS0_S0_T0`T0`<2>T0bT0bU1bU2c<\
+  62>zzzzzzzzy<60>zz1zz0zy0yx0<32>`SA_RBZQBYPCXOC<15>L8GL7HK6HJ5II4I
+  }
+
+
+ckp0089            { ; "Fly, Be Free..."
+                     ; 00:03:22.02 .. 15 December 92 .. caren park
+  reset type=lyapunov passes=t corners=2.852031/3.072191/3.774089/3.939209
+  params=104443/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1
+  colors=000H3JG2JF0K<12>I0NI0NI0NI0OI0OI0P<37>R0ZS0_S0_T0`T0`<2>T0bT0bU1bU2c<\
+  62>zzzzzzzzy<60>zz1zz0zy0yx0<32>`SA_RBZQBYPCXOC<15>L8GL7HK6HJ5II4I
+  }
+
+
+ckp0113            { ; "Fractal Sunrise"
+                     ; 00:13:32.56 .. 22 December 92 .. caren park
+  reset type=lyapunov corners=3.07368/3.63368/3.01495/3.43495
+  params=10/0.001/40 float=y maxiter=3 inside=-100 periodicity=-1
+  colors=000<189>z00z00z11z22<61>zzz
+  }
+
+
+ckp0189            { ; "Plasma"
+                     ; 05:48:30.34
+                     ; 06 jan 93 .. caren park
+  reset type=lyapunov passes=1 corners=2.0/4.0/2.5/4.0 params=-44/0.5
+  float=y maxiter=5 inside=zmag logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0\
+  yz<43>05z03z02z00z00y<47>00F cyclerange=0/255
+  }
+
+ckp0190            { ; "Purgatory"
+                     ; 03:52:39.05
+                     ; 06 jan 93 .. caren park
+  reset type=lyapunov corners=1.999997/4.000003/2.499998/4.000002
+  params=618/0.5 float=y maxiter=5 inside=maxiter periodicity=-1
+  colors=L9d<35>ahSahSbgR<74>dICdICcJB<78>4y64y66x5<8>Mu3Ou3Ot4<15>LkEKjFIiHKj\
+  F<2>KiHJhIJgJIgJIfK<7>HaPKHY<3>G3fG0hH1g<6>K8d cyclerange=0/255
+  }
+
+
+ckp0232            { ; "BeanBagKite"
+                     ; 00:04:18.48 (from a spot on LOOPY_LYAP, Peter Moreland)
+                     ; 12 jan 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-0.738626/-1.795997/-2.009769/-0.59994/-1.795997/-0.59994
+  params=-37.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=00H<2>00FFF0000FF0<58>xx0yy0zz0zz0yy0xx0<60>FF000F<60>00x00y00z00z00y\
+  00x<56>00I cyclerange=0/255
+  }
+
+
+ckp0234            { ; "AuroraOverHighway"
+                     ; 00:04:17.82 (from a spot on TimeOut, Peter Moreland)
+                     ; 12 jan 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=3.56312126/3.5126093/3.07851778/3.13487383/3.51788605/3.1388314
+  params=-27.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<40>Bzz9zz8zz6zz5zz3zz2zz0zz<4\
+  0>0Bz09z08z06z05z03z02z00z<60>002000000
+  }
+
+ckp0235            { ; "Untitled-008"
+                     ; 00:04:17.97
+                     ; 12 jan 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-1.308359/-1.590208/-1.813214/-1.215447/-1.590208/-1.215447
+  params=-37.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=00N<8>00G00F22E<6>HH2KK0LL0<51>xx0yy0zz0zz0yy0xx0<46>QQ0PP1NN2<11>22E\
+  00F00G<59>00x00y00z00z00y00x<49>00N cyclerange=0/255
+  }
+
+ckp0236            { ; "MeltingStarFish"
+                     ; 00:04:18.15
+                     ; 12 jan 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-1.412382/-1.632315/-0.79273/-0.499485/-1.632315/-0.499485
+  params=-37.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=00H<2>00FFF0000FF0<58>xx0yy0zz0zz0yy0xx0<60>FF000F<60>00x00y00z00z00y\
+  00x<56>00I cyclerange=0/255
+  }
+
+
+ckp0264            { ; "Fun House Mirror"
+                     ; 00:04:02.83
+                     ; 08 nov 92 .. caren park
+  reset type=lyapunov corners=-0.163606/3.628394/0.882511/3.726511
+  params=432/0.7/4 float=y maxiter=2 inside=0
+  colors=000MIRBX0<7>Gfg<3>006<6>hWj<5>Ro8<37>DWYCVZDVZ<31>watybuxbu<36>KbTZO2\
+  <35>_rT<3>sTT<32>UxpTyqTyp<40>OX5
+  }
+
+
+ckp0277            { ; "Waves and Reflections"
+                     ; 00:05:46.90 .. 21 feb 93 .. caren park
+  reset type=lyapunov passes=t corners=2.98784/3.54784/3.620834/4.040834
+  params=-412/0.58 float=y maxiter=5 periodicity=-1
+  colors=00B<8>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0y\
+  z<43>05z03z02z00z00y<50>00C cyclerange=0/255
+  }
+
+
+ckp0281            { ; "Reflections on Waves"
+                     ; 00:05:58.72 .. 21 feb 93 .. caren park
+  reset type=lyapunov passes=t corners=3.153858/3.310658/3.887575/4.005175
+  params=-412/0.58 float=y maxiter=5 periodicity=-1
+  colors=00B<8>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0y\
+  z<43>05z03z02z00z00y<50>00C cyclerange=0/255
+  }
+
+
+ckp0295            { ; "Star Light, Star Bright"
+                     ; 00:02:17.36 .. 17 feb 93 .. caren park
+  reset=1732 type=lyapunov passes=t corners=-8.0/8.0/-6.0/6.0
+  params=377/0.5 float=y maxiter=5 periodicity=-1
+  colors=000<189>z00z00z11z22<61>zzz cyclerange=0/255
+  }
+
+ckp0296            { ; "Angel Light"
+                     ; 00:10:20.71 .. 17 feb 93 .. caren park
+  reset=1732 type=lyapunov passes=t
+  corners=-1.657697/-0.281697/-2.158764/-1.126764 params=377/0.5
+  float=y maxiter=5 periodicity=-1
+  colors=600<171>z00z00z11z22<61>zzz000<16>500 cyclerange=0/255
+  }
+
+ckp0297            { ; "Fire Waters"
+                     ; 00:01:41.17 .. 17 feb 93 .. caren park
+  reset=1732 type=lyapunov passes=t
+  corners=0.694819/1.494819/3.454889/4.054889 params=377/0.5 float=y
+  maxiter=5 periodicity=-1 colors=V00<96>z00z00z11z22<61>zzz000<91>U00
+  cyclerange=0/255
+  }
+
+
+ckp0299            { ; "Bad Windshield Wiper Results"
+                     ; 00:02:32.25 .. 19 feb 93 .. caren park
+  reset type=lyapunov passes=t corners=3.727807/4.063551/0.957382/1.20919
+  params=377/0.5 float=y maxiter=5 periodicity=-1
+  colors=008<5>002000000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<4\
+  5>02z00z00y<52>009 cyclerange=0/255
+  }
+
+ckp0300            { ; "Gas Clouds and Rings"
+                     ; 00:13:00.88 .. 19 feb 93 .. caren park
+  reset type=lyapunov passes=t
+  corners=-1.034413/-0.724032/-1.997332/-1.764546 params=377/0.5 float=y
+  maxiter=5 periodicity=-1
+  colors=00J<16>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0\
+  yz<43>05z03z02z00z00y<42>00K cyclerange=0/255
+  }
+
+
+ckp0301            { ; "Plasma Lightning and Rings"
+                     ; 00:06:06.64 .. 21 feb 93 .. caren park
+  reset type=lyapunov passes=t
+  corners=3.0053218/3.0814818/3.8181545/3.8752745 params=-412/0.58 float=y
+  maxiter=5 periodicity=-1
+  colors=008<24>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z03z02z0\
+  0z00y<59>003002000000000<3>006 cyclerange=0/255
+  }
+
+ckp0302            { ; "Ghost in Tesla Flow"
+                     ; 00:06:06.35 .. 21 feb 93 .. caren park
+  reset type=lyapunov passes=t
+  corners=3.4851145/3.5154505/3.9570739/3.9166259/3.5154505/3.9166259
+  params=-12/0.28 float=y maxiter=5 periodicity=-1
+  colors=003<27>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z03z02z0\
+  0z00y<59>003002000000000002 cyclerange=0/255
+  }
+
+ckp0303            { ; "Waterfall Angel"
+                     ; 00:02:51.80 .. 22 feb 93 .. caren park
+  reset=1720 type=lyapunov passes=t
+  corners=3.4885083/3.5156164/3.9420724/3.9030805/3.5156164/3.9030805
+  params=-12/0.28 float=y maxiter=5 inside=0 periodicity=-1
+  colors=005<2>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz<43>05z03z02z00z00y<56>006 cyclerange=0/255
+  }
+
+ckp0304            { ; "Ripples"
+                     ; 00:02:53.62 .. 24 feb 93 .. caren park
+  reset=1720 type=lyapunov passes=1
+  corners=3.180815/3.298415/4.0/3.867975/3.298415/3.867975
+  params=-412/0.59 float=y maxiter=5 inside=0 periodicity=-1
+  colors=00B<8>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz<43>05z03z02z00z00y<50>00C cyclerange=0/255
+  }
+
+ckp0305            { ; "Sparkler AfterImage"
+                     ; 00:02:56.21 .. 24 feb 93 .. caren park
+  reset=1720 type=lyapunov passes=1
+  corners=3.395268814/3.394930179/3.90479416/3.90046763/3.403396063/3.9047\
+  9416 params=-12/0.28 float=y maxiter=5 inside=256 periodicity=-1
+  colors=000<28>000X99<17>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<14>zrk000zrj\
+  <45>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<7>T66
+  cyclerange=0/255
+  }
+
+
+ckp0307            { ; "Star Pillow, Satin Sheets"
+                     ; 00:03:12.02 .. 24 feb 93 .. caren park
+  reset=1720 type=lyapunov passes=t
+  corners=3.2104897/3.1796177/3.9507899/3.9276359 params=-12/0.28
+  float=y maxiter=5 inside=0 periodicity=-1
+  colors=z__<43>zxxzxxywx<43>5FO3EN2DM0BL0BM<30>PZxQ_zSZz<33>y1zz0zz0zz0y<\
+  5>z2u000z2t<52>zIKzJKzJJzJJzKK<25>zZZ cyclerange=0/255
+  }
+
+
+ckp0328            { ; "Angels Playing with Reflections"
+                     ; 00:30:14.34 .. 13 mar 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-1.1735122/-1.111526/-2.0136754/-1.9671857
+  params=31416/0.325/5 float=y maxiter=3 inside=0 logmap=yes
+  periodicity=-1
+  colors=00A<7>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz<43>05z03z02z00z00y<51>00B cyclerange=0/255
+  }
+
+
+ckp0412            { ; "Spirit Spiral"
+                     ; 00:02:08.53 .. 06 june 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-0.69186939/0.0025578009/-0.0013965735/0.51942382
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=0tz006<3>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2\
+  zz0zz0yz0xz0vz0uz0rz<38>05z03z02z00z00y<55>007
+  }
+
+ckp0413            { ; "Spirit Dance at Dawn"
+                     ; 00:02:08.53 .. 06 june 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=-0.69186939/0.0025578009/-0.0013965735/0.51942382
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=hc5J0P<39>T0`T0aT0aT0bT0bU0c<63>zzzzzzzzy<60>zz1zz0zy0yx0<16>lg5k\
+  f6je6id7hc7<33>K6HJ5II4IH3JG2JF0K<12>H0NI0NI0NI0OI0OI0PJ0P
+  }
+
+
+ckp0418            { ; "Light Shark"
+                     ; 00:04:21.11 .. 08 june 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=3.53651335/3.58958387/3.60856427/3.64762581 params=20/0.5
+  float=y maxiter=15 inside=0
+  colors=00A<7>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz0xz0vz0uz0rz<38>05z03z02z00z00y00x0tz00w<49>00B
+  cyclerange=0/255
+  }
+
+ckp0419            { ; "Dancing Flames"
+                     ; 00:04:18.37 .. 08 june 93 .. caren park
+  reset type=lyapunov passes=1
+  corners=3.467837086/3.471568081/3.568438868/3.571237114
+  params=20/0.5 float=y maxiter=15 inside=0
+  colors=007<4>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz<43>05z03z02z00z00y<54>008 cyclerange=0/255
+  }
+
+
+ckp0772            { ; "Necklace of Light"
+                     ; 00:03:07.68 .. 04 march 1994 .. caren park
+  reset=1710 type=lyapunov passes=1
+  corners=3.15741791/3.20621791/3.97641968/4.01301968 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00000I<18>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3zz2zz0zz<42>\
+  08z06z05z03z02z00z<60>002000000000<9>00G
+  }
+
+
+ckp0843            { ; "Red AngelFish"
+                     ; 00:16:41.02 .. 25 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.92726346/2.91078353/3.43985838/3.46181568/2.91078353/3.4618156\
+  8 params=65/0.050000000000000003 float=y maxiter=50 inside=0
+  colors=0AA<6>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K00M00<14>z00<14>N00K00\
+  J01<13>20I00K00M<14>00z<14>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13\
+  >I20K00M00<14>z00<5>c0N000kkkS0Z<4>80r40v20x00z<13>00N00K01J<5>09B
+  cyclerange=0/255
+  }
+
+ckp0844            { ; "Interference"
+                     ; 00:04:33.36 .. 26 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.880764786/2.886491092/3.858551304/3.860595079
+  params=20/0.5 float=y maxiter=15 inside=0
+  colors=F50<2>I20K00M00<14>z00<14>N00K00J01<11>40G30H20I00K00M00P<13>00z<\
+  14>00N00K01J<11>0G40H30I20K00M00P0<13>0z0<14>0N00K01J0<11>G40H30I20K00M0\
+  0P00<13>z00<5>c0N000kkkS0Z<4>80r40v20x00z<13>00N00K01J<11>0G40H30I20K00M\
+  00P0<13>0z0<14>0N00K01J0<9>D70 cyclerange=0/255
+  }
+
+ckp0845            { ; "Lyapunov, #0845"
+                     ; 00:06:23.10 .. 26 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.88978953/2.94127027/3.84956308/3.86793707
+  params=500/0.29999999999999999 float=y maxiter=15 inside=0
+  colors=00A<23>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z03z\
+  02z00z00y<59>003002000000000<4>008 cyclerange=0/255
+  }
+
+ckp0846            { ; "Lyapunov, #0846"
+                     ; 00:05:27.30 .. 26 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.892369299/2.895664067/3.857754861/3.858930796
+  params=125/0.5 float=y maxiter=15 inside=0
+  colors=00CKMI<3>AAK<15>z00<15>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C\
+  `ADaBEc<46>xxyzzzyyz<21>bco`bo`bo<22>DGdBEcBEc<29>BBLAAKCDK<14>kuC<9>PSH
+  cyclerange=0/255
+  }
+
+ckp0847            { ; "Electric W"
+                     ; 00:03:34.04 .. 26 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.88267421/2.89338221/3.858995189/3.862816979
+  params=5/0.10000000000000001 float=y maxiter=15 inside=0
+  colors=837<67>yUrzVszXs<14>zzz<5>zrzqzz<2>pxzpwyqvy<49>y2hz0gz0g<94>0000\
+  00011<3>243254000625726836 cyclerange=0/255
+  }
+
+ckp0848            { ; "Crosswipe Shadows"
+                     ; 00:04:32.15 .. 26 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.87553696/2.88995157/3.851386585/3.856531302
+  params=25/0.10000000000000001 float=y maxiter=15 inside=0
+  colors=00B<8>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0\
+  zz0yz<43>05z03z02z00z00y<50>00C cyclerange=0/255
+  }
+
+ckp0849            { ; "Star and Lavender Curtain"
+                     ; 00:05:29.12 .. 28 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.88323129/2.90320582/3.865140822/3.872269931
+  params=80/0.29999999999999999 float=y maxiter=15 inside=0
+  colors=503<4>101100000000011<4>254000625<70>yUrzVszXs<14>zzz<5>zrzqzz<2>\
+  pxzpwyqvy<49>y2hz0gz0g<86>504 cyclerange=0/255
+  }
+
+ckp0850            { ; "Limbo"
+                     ; 00:04:32.04 .. 28 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.6860656/2.9022848/3.8909337/3.7537413/2.9022848/3.7537413
+  params=25/0.5 float=y maxiter=15 inside=0
+  colors=00A<12>00O00Q00P<22>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz\
+  <44>5zz3zz2zz0zz0yz<43>05z03z02z00z00y<21>00d cyclerange=0/255
+  }
+
+
+ckp0860            { ; "Lyapunov Glass"
+                     ; 00:07:29.61 .. 30 march 1994 .. caren park
+  reset=1730 type=lyapunov passes=1
+  corners=2.93147814/2.98743978/3.8425685/3.86254177
+  params=2354/0.54320999999999997 float=y maxiter=15 inside=0
+  colors=00D<21>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>05z03z\
+  02z00z00y<59>003002000000000<6>00B cyclerange=0/255
+  }
+
+
+ckp0869            { ; "Close Encounter of the Third Kind"
+                     ; 00:08:23.55 .. 08 april 1994 .. caren park
+  reset=1701 type=lyapunov passes=t
+  corners=3.2061095/3.3061095/3.61047914/3.68547914
+  params=111/0.20000000000000001 float=y maxiter=25 inside=0
+  finattract=y
+  colors=D3F<39>P77P77P88<14>V99V99WAAXAA<17>x11z00z10<28>zv0zx0zx0<31>ed8\
+  dc8dc8dc8<18>WUBWFQ<63>61K61K72K<22>D3F cyclerange=0/255
+  }
+
+
+grid               { ; (C) Lee H. Skinner, 1993
+ reset type=lyapunov corners=3.7635553/3.8511926/3.2310525/3.2967805
+ params=321/0.5 float=y maxiter=40 inside=0 logmap=yes
+ colors=000ODD<23>x11z00z10<12>zR0
+ }
+
+
+'2'                { ; (c) 1994 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1826 type=lyapunov passes=1
+  corners=3.518726496/3.523115631/3.739256725/3.740903254/3.520536747/3.73\
+  7767806 params=32/0.5 float=y
+  colors=00000U<10>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000000<17>00T
+  }
+
+
+Positronic_Path    { ; Thoughts of Platinum - Iridium, thanks for the stories..
+                     ; (c)1992 Peter Moreland 100012,3213
+  reset type=lyapunov passes=1
+  corners=3.56312126/3.5126093/3.07851778/3.13487383/3.51788605/3.1388314
+  params=-17.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3zz2zz0zz<42>08z0\
+  6z05z03z02z00z<60>002000000
+  }
+
+
+Loopy_LU           { ; Don't zoom in... Zoom out!  Wait - first inch is black!
+                     ; (c)1992 Peter Moreland 100012,3213
+  reset type=lyapunov passes=1
+  corners=4.900824/-2.873966/-4.258718/6.107671/-2.873966/6.107671
+  params=-37.44/0.375/2 float=y maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=000FF0<60>zz0zz0yy0<61>FF000F<62>00z00z00y<61>00FFF0
+  }
+
+
+Lyapunov_one       { ; (c) 1992 Peter Moreland, The Saint                      
+                     ; come in Brett Sinclair!
+  reset type=lyapunov corners=2.93748764/2.94703484/3.67514065/3.68217105
+  params=4/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+
+Lyapunov_two       { ; (c) 1992 Peter Moreland, The Hair!                      
+                     ; Don't know why?
+  reset type=lyapunov corners=2.8488063/2.9442783/3.6342572/3.7045612
+  params=4/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+Lyapunov_three     { ; (c) 1992 Peter Moreland, Crucifixtion????            
+                     ; Don't know why?
+  reset type=lyapunov corners=2.8488063/2.9442783/3.6342572/3.7045612
+  params=48/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
+  }
+
+
+Ghost_Buster       { ; In the trap! (c)1992 PGM 100012,3213
+                     ; Blantyre House, Cossack SQ, Nailsworth, Gloucs, UK.
+  reset type=lyapunov corners=3.556418/3.972418/3.308545/3.620545
+  params=5/0.5 float=y maxiter=10
+  colors=000VZ2<26>i3P<4>HZ3<4>7qW<15>1Zq<30>hMA<8>Q7_O6aN8_<12>IOG<2>wRZ<4>iD\
+  T<20>pj4<5>cfGHZcaeI<8>J__ny1<6>LbYvkD<14>J_`i8F<21>IZ`bC6<2>PRQLWWF9_<20>HY\
+  aHZaGXk<18>H_aOHJ<3>JUW
+  }
+
+
+Grin!              { ; Terminator type smile...
+                     ; Blantyre House, Cossack Sq, Nailsworth, Gloucs, UIK.
+  reset type=lyapunov corners=3.558858/3.974858/3.315041/3.604287
+  params=0/0.5 float=y maxiter=10
+  colors=000VZ2<26>i3P<4>HZ3<3>9mQ7qW7pX<13>1_p1Zq2Zp<29>hMA<8>Q7_O6aN8_<12>IO\
+  G<2>wRZ<4>iDT<19>ph5pj4ni6<4>cfGHZcaeI<8>J__ny1<6>LbYvkD<14>J_`i8F<21>IZ`bC6\
+  <2>PRQLWWF9_<20>HYaHZaGXk<18>H_aOHJ<3>JUW
+  }
+
+
+001                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.6941149/3.1340983/3.7598159/3.5487268/2.9538316/3.4135268
+  params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+003                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.87816587/3.08055823/3.66885199/3.57175101/2.99763555/3.5095590\
+  1 params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+004                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1820 type=lyapunov
+  corners=2.269239/3.328628/2.8795562/3.6740983 params=-1/0.5 float=y
+  colors=000zk0<253>000
+  }
+
+005                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2.736/3.195/3.662/4
+  params=63/0.5 float=y maxiter=15 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+006                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.008/3.658667/3.409266/3.897266 params=32/0.5 float=y
+  maxiter=15 inside=0
+  colors=000F3HG5JG7KI8JI9ML9LJBNLBOLCPMDNNDQPDPNFPQERQFRQGQQGUSGTSHSTHTSI\
+  VSJTTJUSKVVJWUKXULVVLWVLZXLXWMYVNYWNZXNZWOZXO_YO_XP__O_ZP`ZPbZQ`_Q``Q`_R\
+  ``R``RcaRbbRbaSb`TbaTbcSdbTdbTfcTfcUccUedUedUgcVgdVgeVfeVhdWheWgdXgfWifX\
+  ffXhfXjfYgfYigYhfZhfZjiYiiYkhZkg_jiZljZki_jh`jh`li`kj`jj`lj`nk`ml`ll`nka\
+  mkaokblmammaolbnlbplcmnbnnbpmcomcqncpocomdqndpodomeqnepoeooepoerpeqofpof\
+  rqespfrpftogspgrqgqqgrqgtphsqhrsgsqhurhtqisshtrisriuthvsiurjttiutiwsjvui\
+  wtjvskuujvujxtkwvjxukwtlvvkwulvwkwulyvlxvlyumxwlyvmxxlywmxwmzwmzvnzxmzwn\
+  zymz<2>wozynzxozznzyozyozzozzozypzzoz<3>zpzyqzzpz<4>zqzzrzzqz<4>zrzzszzr\
+  z<5>zszztzzsz<2>ztzzuzztzztzzuzztz<3>zuzzvzzuz<3>zvzzwzzvzzvzzwzzwzzvz<3\
+  >zwzzxzzwz<5>zyzzyzzxz<10>zzz
+  }
+
+007                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.393981/3.620648/2.962111/3.882111 params=20/0.5 float=y
+  maxiter=15 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+008                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2.719/3.178/3.26/3.604
+  params=1165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+009                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.85003227/2.92898027/3.4905768/3.5497448
+  params=1165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.08456832/3.16351632/3.54935067/3.60851867
+  params=11111111165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-1.8926445/-1.7838445/-1.88602613/-1.80442613
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.495875/4.823875/2.128884/4.624884 float=y maxiter=25
+  inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-1.314508/-0.2905078/-2.3136482/-1.5456482
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+019                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=-8/8/-6/6
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+020                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=3.82/3.87/3.82/3.8575
+  params=2/0.025000000000000001 float=y inside=0
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+021                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.97082428/2.980513207/3.61553093/3.610882512/2.976543533/3.6079\
+  05256 params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+
+024                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.14668444/3.20296151/3.46906298/3.51124013
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+025                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.6941149/3.1340983/3.7598159/3.5487268/2.9538316/3.4135268
+  params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+026                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.87816587/3.08055823/3.66885199/3.57175101/2.99763555/3.5095590\
+  1 params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+028                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1820 type=lyapunov
+  corners=2.269239/3.328628/2.8795562/3.6740983 params=-1/0.5 float=y
+  colors=000zk0<253>000
+  }
+
+029                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2.736/3.195/3.662/4
+  params=63/0.5 float=y maxiter=15 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+030                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.008/3.658667/3.409266/3.897266 params=32/0.5 float=y
+  maxiter=15 inside=0
+  colors=000F3HG5JG7KI8JI9ML9LJBNLBOLCPMDNNDQPDPNFPQERQFRQGQQGUSGTSHSTHTSI\
+  VSJTTJUSKVVJWUKXULVVLWVLZXLXWMYVNYWNZXNZWOZXO_YO_XP__O_ZP`ZPbZQ`_Q``Q`_R\
+  ``R``RcaRbbRbaSb`TbaTbcSdbTdbTfcTfcUccUedUedUgcVgdVgeVfeVhdWheWgdXgfWifX\
+  ffXhfXjfYgfYigYhfZhfZjiYiiYkhZkg_jiZljZki_jh`jh`li`kj`jj`lj`nk`ml`ll`nka\
+  mkaokblmammaolbnlbplcmnbnnbpmcomcqncpocomdqndpodomeqnepoeooepoerpeqofpof\
+  rqespfrpftogspgrqgqqgrqgtphsqhrsgsqhurhtqisshtrisriuthvsiurjttiutiwsjvui\
+  wtjvskuujvujxtkwvjxukwtlvvkwulvwkwulyvlxvlyumxwlyvmxxlywmxwmzwmzvnzxmzwn\
+  zymz<2>wozynzxozznzyozyozzozzozypzzoz<3>zpzyqzzpz<4>zqzzrzzqz<4>zrzzszzr\
+  z<5>zszztzzsz<2>ztzzuzztzztzzuzztz<3>zuzzvzzuz<3>zvzzwzzvzzvzzwzzwzzvz<3\
+  >zwzzxzzwz<5>zyzzyzzxz<10>zzz
+  }
+
+031                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.393981/3.620648/2.962111/3.882111 params=20/0.5 float=y
+  maxiter=15 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+032                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2.719/3.178/3.26/3.604
+  params=1165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+033                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.85003227/2.92898027/3.4905768/3.5497448
+  params=1165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+
+039                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.08456832/3.16351632/3.54935067/3.60851867
+  params=11111111165/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+040                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-1.8926445/-1.7838445/-1.88602613/-1.80442613
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+041                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.495875/4.823875/2.128884/4.624884 float=y maxiter=25
+  inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+042                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-1.314508/-0.2905078/-2.3136482/-1.5456482
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+043                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=-8/8/-6/6
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+044                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=3.82/3.87/3.82/3.8575
+  params=2/0.025000000000000001 float=y inside=0
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+045                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.97082428/2.980513207/3.61553093/3.610882512/2.976543533/3.6079\
+  05256 params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<45>_O8_O8_O8ZO8ZO8<17>SH9SH9SH9SG9SG9<17>LAAK9B\
+  LAB<7>VO9
+  }
+
+
+048                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.14668444/3.20296151/3.46906298/3.51124013
+  params=-11111/0.050000000000000003 float=y maxiter=25 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+049                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.80350802/3.8740252/3.82174697/3.87461283 params=0/0.5
+  float=y maxiter=15 inside=0 colors=000zk0<253>000
+  }
+
+050                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.80350802/3.8740252/3.82174697/3.87461283 params=0/0.5
+  float=y maxiter=15 inside=0
+  colors=000247<2>112000000000000yyy<175>JJJJJwIIIIIUIIII0KHHH<7>FFFUFFcFF\
+  mFFmEEzEEEEE<15>AAAAUz<32>249
+  }
+
+
+012                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.6298211/3.5297718/3.352936/3.6021946/3.4741592/3.5604851
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+013                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.162352/3.574846/3.207905/3.688659/3.0800881/3.31759
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+014                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.536531/2.165779/1.586088/3.790875/1.984763/3.655112
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.93748764/2.94703484/3.67514065/3.68217105 params=4/0.75
+  float=y maxiter=50 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.8488063/2.9442783/3.6342572/3.7045612 params=4/0.75
+  float=y maxiter=50 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.8488063/2.9442783/3.6342572/3.7045612 params=48/0.75
+  float=y maxiter=50 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.27667047/3.281349151/3.672606109/3.691298706/3.264638111/3.687\
+  039387 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+019                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2/4/2.5/4 params=0/0.75 float=y
+  maxiter=6 outside=real
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+020                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.46422/4.018413/2.442289/4.359934 params=0/0.5 float=y
+  maxiter=30 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+021                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-4.055687/4.456313/-2.199519/4.184481 params=32560180/0.5
+  float=y maxiter=2 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+022                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.1506286/3.4073911/3.1690346/4.1948702/2.4903017/3.961122
+  params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+023                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.93275/3.167185/0.9579285/5.889831/-1.241898/4.766041
+  params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+024                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.60627459/2.89914027/3.84133534/3.98182455/2.66548264/3.8586587
+  params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+025                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.73865563/2.82315366/3.89709079/3.90998561/2.77754687/3.8783005\
+  3 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+026                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=0.774222313/0.835944067/3.55672086/3.80331597/0.615489906/3.7471\
+  2649 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+028                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.04003073/3.08493882/3.774742894/3.790030174/3.05404542/3.77201\
+  5435 params=10/0.5 float=y maxiter=15 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+029                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.941822/3.851262/2.966369/4.372449 params=4/0.75 float=y
+  maxiter=50 inside=0
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+030                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.9852633/2.02030379/0.0470194701/0.000298814458/2.02030379/0.00\
+  0298814458 params=-9/0.050000000000000003 float=y maxiter=25
+  inside=0
+  colors=000gaH<34>PZZPZZOYY<40>BJ5AI4BJ5<55>Ne8Ne8Pr4<16>KJDKHEHB6<24>VSg\
+  fkZ<14>F0w<55>Cny
+  }
+
+031                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=4.900824/-2.873966/-4.258718/6.107671/-2.873966/6.107671
+  params=-37.439999999999998/0.375/2 float=y maxiter=3 inside=0
+  logmap=yes periodicity=-1
+  colors=000___<8>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>\
+  000<15>zzz<15>000<15>zzz<15>000<15>zzz<14>444333<14>zzz<5>ccc
+  }
+
+
+001                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov corners=-8/8/-6/6 params=0/0.5 float=y
+  colors=000zk0<253>000
+  }
+
+003                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov corners=-8/8/-6/6 params=0/0.123456789
+  float=y maxiter=100 colors=000zk0<253>000
+  }
+
+004                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov corners=2.119257/4.152493/2.843546/4.36897
+  params=0/0.99999999999999001 float=y maxiter=100
+  colors=000zk0<253>000
+  }
+
+005                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov
+  corners=2.2941591/2.5207366/3.8046428/3.9746868
+  params=0/0.99999999999999001 float=y maxiter=100
+  colors=000zk0<253>000
+  }
+
+006                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.1397849/3.3587488/3.7633638/3.9276402 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz\
+  3zz2zz0zz<42>08z06z05z03z02z00z<48>00F cyclerange=0/255
+  }
+
+007                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov corners=-8/8/-6/6 params=-999/0.5 float=y
+  colors=000zk0<253>000
+  }
+
+008                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov
+  corners=-2.2913/-0.4457478/-2.108214/-0.7235984 params=-999/0.5
+  float=y
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+009                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov
+  corners=-1.0104182/-0.83722859/-1.9168589/-1.786882 params=-999/0.5
+  float=y
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+010                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-6.039131/31.99/-11.73696/16.81279 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz\
+  3zz2zz0zz<42>08z06z05z03z02z00z<48>00F cyclerange=0/255
+  }
+
+011                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.3539419/2.161059/-2.281095/-0.9231045 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz\
+  3zz2zz0zz<42>08z06z05z03z02z00z<48>00F cyclerange=0/255
+  }
+
+012                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.558854478/0.636579952/-1.8641372/-1.80570996
+  params=-44/0.5 float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz\
+  3zz2zz0zz<42>08z06z05z03z02z00z<48>00F cyclerange=0/255
+  }
+
+013                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.3345776/3.904167/2.450753/5.12969 params=32560180/0.5
+  float=y maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+014                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.3345776/3.904167/2.450753/5.12969 params=19325/0.5 float=y
+  maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.3345776/3.904167/2.450753/5.12969 params=9919325/0.5
+  float=y maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.3345776/3.904167/2.450753/5.12969 params=991932576/0.5
+  float=y maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-1.55331/3.758545/-2.013699/1.971491
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=0tz006<3>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5\
+  zz3zz2zz0zz<2>0vz0uz0rz<36>08z06z05z03z02z00z<56>007
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-4.500456/5.204072/-3.869284/3.420982 params=9919325/0.5
+  float=y maxiter=2 inside=0 invert=1/0/0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+019                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-0.8482145/0.7644637/-0.6257334/0.5861425 params=9919325/0.5
+  float=y maxiter=2 inside=0 invert=1/0/0
+  colors=000bFvaZf<53>thFnkr<46>hgYhgXeeM<23>qqEdbO<11>R1m`Q0eeM<24>KiNeeM\
+  <83>bFv
+  }
+
+020                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-0.48563778/0.47282588/-0.72053468/-4.519849e-005
+  params=9919325/0.5 float=y maxiter=2 inside=0 invert=1/0/0
+  colors=000bFvaZf<53>thFnkr<46>hgYhgXeeM<23>qqEdbO<11>R1m`Q0eeM<24>KiNeeM\
+  <83>bFv
+  }
+
+021                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-0.48563778/0.47282588/-0.72053468/-4.519849e-005
+  params=9919325/0.5 float=y maxiter=2 inside=0 invert=0.5/0/0
+  colors=000lR7<2>nS7oT8oT8oT8<84>yf8<4>7E7<74>qiBrjCrjCrjD<74>MqyLrzMqz<2\
+  >Pmx
+  }
+
+022                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-2.489352/1.874366/0.003966815/3.283161 params=9919325/0.5
+  float=y maxiter=2 inside=0 invert=5/0/0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+
+024                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-2.489352/1.874366/0.003966815/3.283161 params=9919325/0.5
+  float=y maxiter=200 inside=0 invert=5/0/0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+025                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-2.489352/1.874366/0.003966815/3.283161 params=9919325/0.5
+  float=y maxiter=200 inside=0 invert=5/0/0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15\
+  >PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM\
+  <12>000PFF<14>pf0
+  }
+
+
+004                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-0.738626/-1.795997/-2.009769/-0.59994/-1.795997/-0.59994
+  params=-37.439999999999998/0.375/2 float=y maxiter=3 logmap=yes
+  periodicity=-1
+  colors=00H<2>00FFF0000FF0<60>zz0zz0yy0<61>FF000F<62>00z00z00y<57>00I
+  cyclerange=0/255
+  }
+
+005                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-0.69186939/0.0025578009/-0.0013965735/0.51942382
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=0tz006<3>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5\
+  zz3zz2zz0zz<2>0vz0uz0rz<36>08z06z05z03z02z00z<56>007
+  }
+
+006                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-0.69186939/0.0025578009/-0.0013965735/0.51942382
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=hc5J0P<37>T0_T0`T0`T0aT0aT0bT0b<64>zzzzzzzzy<60>zz1zz0zy0yx0<14>n\
+  i4mh5lg5kf6je6<33>L8GL7HK6HJ5II4IH3JG2JF0K<14>I0NI0OI0OI0PJ0P
+  }
+
+007                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.53651335/3.58958387/3.60856427/3.64762581 params=20/0.5
+  float=y maxiter=15 inside=0
+  colors=00A<7>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3\
+  zz2zz0zz<2>0vz0uz0rz<36>08z06z05z03z02z00z00y00x0tz00w<49>00B
+  cyclerange=0/255
+  }
+
+008                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.467837086/3.471568081/3.568438868/3.571237114
+  params=20/0.5 float=y maxiter=15 inside=0
+  colors=007<4>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3\
+  zz2zz0zz<42>08z06z05z03z02z00z<55>008 cyclerange=0/255
+  }
+
+
+010                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2/4/2.5/4 params=0/0.75 float=y
+  maxiter=6 outside=real
+  colors=000<141>ussvttvrr<16>xJJxHHxHH<12>xHHxIIxIIxJJxKK<57>wuuvvvvvvvvv\
+  <6>vvv<6>MMM
+  }
+
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=4.900824/-2.873966/-4.258718/6.107671/-2.873966/6.107671
+  params=-37.439999999999998/0.375/2 float=y maxiter=3 logmap=yes
+  periodicity=-1
+  colors=000FF0<58>xx0yy0zz0zz0yy0xx0<60>FF000F<60>00x00y00z00z00y00x<60>0\
+  0FFF0
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.162352/3.574846/3.207905/3.688659/3.0800881/3.31759
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000iUE<6>zfD<14>SHE05F0FM<12>GKaHLcILdKMfJMe<13>0FKAA0<15>PP0PP0O\
+  O0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<30>ppp<14>TTTRRRPPPNNNMMM<12>000P\
+  FF<14>pf0<14>PFF<7>gTE
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.8488063/2.9442783/3.6342572/3.7045612 params=48/0.75
+  float=y maxiter=50 inside=0
+  colors=000000<29>00k00m01m<16>0Stccc<203>ccc
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.93748764/2.94703484/3.67514065/3.68217105 params=4/0.75
+  float=y maxiter=50 inside=0
+  colors=000000<29>00k00m01m<16>0Stccc<203>ccc
+  }
+
+019                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=-1.412382/-1.632315/-0.79273/-0.499485/-1.632315/-0.499485
+  params=-37.439999999999998/0.375/2 float=y maxiter=3 logmap=yes
+  periodicity=-1
+  colors=00H<2>00FFF0000FF0<60>zz0zz0yy0<61>FF000F<62>00z00z00y<57>00I
+  cyclerange=0/255
+  }
+
+020                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1 corners=2/4/2.5/4 params=-44/0.5
+  float=y maxiter=5 logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz\
+  3zz2zz0zz<42>08z06z05z03z02z00z<48>00F cyclerange=0/255
+  }
+
+
+022                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=3.56312126/3.5126093/3.07851778/3.13487383/3.51788605/3.1388314
+  params=-17.440000000000001/0.375/2 float=y maxiter=3 logmap=yes
+  periodicity=-1
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<40>Bzz9zz8zz6zz5zz3zz2zz0\
+  zz<40>0Bz09z08z06z05z03z02z00z<60>002000000
+  }
+
+023                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=1.999997/4.000003/2.499998/4.000002 params=618/0.5 float=y
+  maxiter=5 periodicity=-1
+  colors=L9d<35>ahSahSbgR<74>dICdICcJB<78>4y64y66x5<8>Mu3Ou3Ot4<13>LlDLlDL\
+  kEKjFIiHKjF<2>KiHJhIJgJIgJIfK<7>HaPKHY<3>G3fG0hH1g<6>K8d
+  cyclerange=0/255
+  }
+
+
+026                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1731 type=lyapunov
+  corners=2.820664/3.778046/3.2911593/3.2806302/3.170376/2.8248773
+  params=90909/0.31416699999999997 float=y maxiter=5 inside=0
+  logmap=yes periodicity=0
+  colors=0009ZX<20>C8AD79E79<39>qe8qe8pd8<43>LBALBAKAAKAALBA<39>qe8rf8sg8s\
+  g8rf8qe8<39>K9B<15>zz6<14>MFA96G<13>BWXBYYB_ZCa`Bb`Aca9da8da9b_9aZ000
+  }
+
+
+001                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov
+  corners=2.3597473/2.510799/3.827017/3.9403796
+  params=0/0.99999999999999001 float=y maxiter=100
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+003                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.1397849/3.3587488/3.7633638/3.9276402 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+004                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-4.500456/5.204072/-3.869284/3.420982 params=9919325/0.5
+  float=y maxiter=2 inside=0 invert=1/0/0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+005                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.185821/4.662387/3.073693/4.18184 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+006                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=1.261829/5.211974/1.662869/4.629341 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+007                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=1.261829/5.211974/1.662869/4.629341 params=-444/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+008                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=1.8101387/2.2503308/3.6788711/4.0095535 params=-444/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+009                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=2.04637079/2.11005449/3.81920633/3.86706259 params=-444/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+010                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+011                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-4/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+012                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135
+  params=-44/0.14999999999999999 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+013                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-44/0.115
+  fl
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+014                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-44/0.1115
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-1.77116/4.620085/0.4232162/5.222903 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-2.565452/2.616347/-4.370824/-0.4755987 params=-44/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-0.0580119547/0.0271208567/3.46906805/3.53304263
+  params=-9/0.5 float=y maxiter=10 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=-1.77116/4.620085/0.4232162/5.222903 params=-44/0.5/1000
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+
+001                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.46452551/0.78408776/3.7551908/3.9951752
+  params=-44/0.5/1000 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+003                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=0.608328519/0.640284744/3.87871514/3.90271357
+  params=-44/0.5/10 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+004                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=1.8101387/2.2503308/3.6788711/4.0095535 params=-444/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+005                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=4.0750312/3.4528052/2.7444608/3.5751777/3.4528052/3.5751777
+  params=-44/0.5/100 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+006                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.045198/4.604662/2.618266/3.78939 params=-44/0.5 float=y
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+007                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-44/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+008                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-4/0.5
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+009                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135
+  params=-44/0.14999999999999999/100 float=y maxiter=5 inside=0
+  logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+010                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-44/0.115/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+011                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=44/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+012                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=444/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+013                { ; My Name and ID
+      
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-444/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+014                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=4444/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+015                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-4444/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+016                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-1/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+017                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-2/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+018                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-3/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+019                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-5/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+020                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-6/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+021                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135 params=-7/0.5/100
+  float=y maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+022                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.4845981/4.1947357/3.0122893/3.5454135
+  params=-99999/0.5/100 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+023                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=3.045198/4.604662/2.618266/3.78939 par
+  maxiter=5 inside=0 logmap=yes periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+024                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset=1821 type=lyapunov passes=1
+  corners=4.0750312/3.4528052/2.7444608/3.5751777/3.4528052/3.5751777
+  params=-44/0.5/100 float=y maxiter=5 inside=0 logmap=yes
+  periodicity=-1
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  cyclerange=0/255
+  }
+
+025                { ; My Name and ID
+                     ; y
+                     ; 256
+  reset type=lyapunov passes=1
+  corners=2.6941149/3.1340983/3.7598159/3.5487268/2.9538316/3.4135268
+  params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHII\
+  JIJHJJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQR\
+  PRRPRRSSRRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXX\
+  VXXXXXZXYWXYYYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baa\
+  aaacab`caacacbbbbbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdef\
+  fgegfffffheggfgfggeggfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjki\
+  kjjjikikjjkjljkkljlkkkjljlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomn\
+  nomonnnnnomononononpnooonoooponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqq\
+  sprrrqsqrrqrsrrrrrsrrtqsssrtrssssq<2>ssutssstrussttrttstttsusuttutututvt\
+  uvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwvvwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxx\
+  wxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzxyzyzzxzzyzzz
+  }
+
+
+grid               { ; Grid
+                     ; Copyright Lee H. Skinner, 1993
+  reset=1673 type=lyapunov
+  corners=3.7635553/3.8511926/3.2310525/3.2967805 params=321/0.5
+  float=y maxiter=40 inside=0 logmap=yes
+  colors=000ODD<23>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<4>MDD
+  }
+
+
+DAnon08            { ; 0:12:28.09 - Diagonals, Lyapunov
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov passes=b
+  corners=3.6339186236/3.6357885105/3.94614074858/3.94612018393/3.63460165\
+  39/3.94523004148 params=0/0.5 float=y
+  colors=000TeH<6>akF1QK<30>VSbBLO<2>f4b4SJ<10>gv02QK<25>Z2M3QK<19>zG81RL<\
+  18>5rl5QM<11>xHt2QL<17>N`d1QJ<9>5Z42QK<27>_eg1NL<3>17P13Q3RK<8>NfQ1RK<20\
+  >BlW2QKBmXCoY<17>3Bi
+  }
+
+DAnon09            { ; 0:10:46.09 - Striped verticals  
+                     ; (c) 1993, Donald Archer, CIS 71544,657
+  reset=1800 type=lyapunov passes=b
+  corners=3.90220506724/3.90221808681/2.31188167294/2.31192820939/3.902187\
+  41679/2.31190520688 params=0/0.5 float=y
+  colors=000_Lc<2>pFPYPZ<2>hX5TXSLRaBWV1`OdJgnEfIoIVTf<2>Wma_O`dPUiRMONY<2\
+  >1Q1_rvPLeIJbBG__bVdrIcJ_lFSvBKMehDxjRKf<2>FBbsm0POj<2>5Rt_chduiVYhVhiWt\
+  kNLlFJq7Gv`SZ<2>sh6_LjeJmkGqPeYJxOSQgOUhKYiINM4M0TJgFGqLIyVRkVWpU`uUNUTM\
+  GRL1`IWfDKl87VRiVWkV_mVdoXWQZe8`cQZPc<2>kYRGNTIC_40SohuQIiLDlF8o_Wj<2>py\
+  ueIpWNgYNf_NfaMecNklNovOs_Uf<2>ppaWRWXWKZ`7WWcXd_YnWskHaMliLqqKvHRa3WVNX\
+  eFgc7r`K`Z8nPJco6uxKKCEz1QKNLH1MNUDNG3N2bGYk9Nt2COBmaJeoSY`MhLFtDVd4kO<2\
+  >MagYT0pIPRVZ0gi<3>uysddYNJB<2>0Y8<2>oPx<2>6HQ7KN9NKBQG<3>6qY<2>HoiLrDUY\
+  U<2>8vaIrMTn5<2>`Yw<2>trpedaQRM<2>U94<2>wbgu8cF4a5oR<2>HF_L2bNITPYJRm8Yq\
+  VHz5AlK3ZZS2A<2>R2CtEv<2>RnaUZeXJi`3m<2>qPT<2>LZM<3>URpr3r_A_GHG<2>4fqHU\
+  qUHp<2>CSjC`bBiU<2>NzjaPM
+  }
+
+
+Crucifix           { ; Decomp cross                                 (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=OK-12
+  function=sqr/sqr
+  corners=-1.97024944/-1.96722828/0.00203192/-0.00199629/-1.96722828/-0.00\
+  199629 float=y decomp=256 colors=@lyapunov.map
+  }
+
+
+Ghost_Buster       { ; In the trap! (c)1992 PGM 100012,3213
+                     ; Blantyre House, Cossack SQ, Nailsworth, Gloucs, UK.
+  reset type=lyapunov corners=3.556418/3.972418/3.308545/3.620545
+  params=5/0.5 float=y maxiter=10
+  colors=000VZ2<26>i3P<4>HZ3<4>7qW<15>1Zq<30>hMA<8>Q7_O6aN8_<12>IOG<2>wRZ<4>iD\
+  T<20>pj4<5>cfGHZcaeI<8>J__ny1<6>LbYvkD<14>J_`i8F<21>IZ`bC6<2>PRQLWWF9_<20>HY\
+  aHZaGXk<18>H_aOHJ<3>JUW
+  }
+
+
+Grin!              { ; Terminator type smile...
+                     ; Blantyre House, Cossack Sq, Nailsworth, Gloucs, UIK.
+  reset type=lyapunov corners=3.558858/3.974858/3.315041/3.604287
+  params=0/0.5 float=y maxiter=10
+  colors=000VZ2<26>i3P<4>HZ3<4>7qW<15>1Zq<30>hMA<8>Q7_O6aN8_<12>IOG<2>wRZ<4>iD\
+  T<20>pj4<5>cfGHZcaeI<8>J__ny1<6>LbYvkD<14>J_`i8F<21>IZ`bC6<2>PRQLWWF9_<20>HY\
+  aHZaGXk<18>H_aOHJ<3>JUW
+  }
+
+
+NiceLyaponov       { ; By Bud Pratt.
+                     ; Colored by B's RADIUM.MAP
+  reset type=lyapunov corners=1.46422/4.018413/2.442289/4.359934
+  params=0/0.5 maxiter=30 inside=0 colors=000<29>T00
+  }
+
+
+Flight             { ; Flaming Birds
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=lyapunov passes=t
+  corners=2.805682/3.29989/3.40177/4.236431/2.58296/3.698733
+  params=49/0.99 float=y inside=0 colors=@volcano.map
+  }
+
+
+rhs-19             { ; (c) 1992 Richard H. Sherry 
+                     ; Please give recognition for commercial purposes
+  reset type=lyapunov passes=1 corners=2.0/4.0/2.5/4.0 params=0/0.5
+  maxiter=2 inside=0 logmap=yes periodicity=0 colors=000yj0xi0
+  }
+
+
+RHS-43             { ; (c) Richard H. Sherry 76264,752 June 1992
+                     ; no commerial use w/o permission
+  reset type=lyapunov passes=1 corners=2.0/4.0/2.5/4.0 params=0/0.5
+  float=y maxiter=16 inside=0 logmap=yes periodicity=0
+  colors=000U`c<64>KQUJQUJQUJPUJPUIPU<11>FMUFLUFLUEKUEKUDJV<2>BLSAMR9MQ8MP6KM<\
+  58>inujovinu<77>YcgTZgXbg<18>U`d
+  }
+
+
+rhs-124            { ; (c) June 1992 Dick Sherry 76264,752
+                     ; no commercial use w/o permission
+  reset type=lyapunov corners=-0.163606/3.628394/0.882511/3.726511
+  params=432/0.7/4 float=y maxiter=2 inside=0 colors=000glsgls
+  }
+
+
+xrh108             { ; (c)1993 Richard H. Sherry
+                     ; Most original some inspired by others with my thanks.
+  reset type=lyapunov passes=1
+  corners=1.297889/2.008692/3.436421/3.969524 params=31416/0.325/5
+  float=y maxiter=10 inside=zmag logmap=yes periodicity=-1
+  colors=000QGE<8>fX5
+  }
+
+
+sad028             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; Must have V18 & necessary frm files
+  reset=1732 type=lyapunov corners=1.329446/3.291174/2.510547/3.981843
+  params=3/0.005254687/3 float=y maxiter=2 inside=0 logmap=yes
+  periodicity=0
+  colors=000FFFFFFFFF<27>u22v11u11<28>QCCODDPDD<29>xW3zX2zY2<14>zzG<30>PCA\
+  NA9NA9<44>x41y41z30z20z10z00<32>c00b11a11`22_22<22>HEE000
+  }
+
+
+sac031             { ; (c) Richard H. Sherry 1993, CIS:76264,752
+                     ; V17.32
+  reset=1731 type=lyapunov
+  corners=2.820664/3.778046/3.2911593/3.2806302/3.170376/2.8248773
+  params=90909/0.314167 maxiter=5 inside=0 logmap=yes periodicity=0
+  colors=0009ZX<20>C8AD79E79<39>qe8qe8pd8<45>KAAKAALBA<41>sg8sg8rf8<40>K9B\
+  <15>zz6<14>MFA96G<15>B_ZCa`Bb`Aca9da8da9b_9aZ000
+  }
+
+
+s3e038             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.0832028478/-0.69809473/-0.64755654/0.0384764235/-0.633859748/\
+  0.0866526597 params=9182736455/0.5 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000LeV<2>blGioBor6vu0ut1<36>D79<3>G99G99HA9IB9<36>ma6ma6l`6<45>KA\
+  AKAALBA<43>ma6ma6l`6<24>TH9SH9RG9RF9QE9PDA<4>K9BGAB<30>BZZ000B``Baa
+  }
+
+
+s3e041             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=1
+  corners=-0.48335097/-0.352346113/-0.36745297/-0.227605471/-0.503316021/-\
+  0.340832902 params=9182736455/0.5 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000LeV<2>blGioBor6vu0ut1<36>D79<3>G99G99HA9IB9<36>ma6ma6l`6<45>KA\
+  AKAALBA<43>ma6ma6l`6<24>TH9SH9RG9RF9QE9PDA<4>K9BGAB<30>BZZ000B``Baa
+  }
+
+s3e042             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.8948804/0.8948804/-0.6711603/0.6711603
+  params=1212/0.29999999999999999 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000lXE<9>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0LS0JQ0<7>0A0<15>Zc\
+  0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<15>gTE0\
+  00000000
+  }
+
+s3e043             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.8948804/0.8948804/-0.6711603/0.6711603
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=000000<29>nnnpppooo<30>000PFF<29>xeDzfCyfC<29>RGEPFFQFF<13>cRFeSF\
+  dSF<13>RGFPFFPFF<14>cPFcPFbOF<13>PFFSNC<29>xo`zpaypa<26>YSI000000000
+  }
+
+
+s3e038             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.0832028478/-0.69809473/-0.64755654/0.0384764235/-0.633859748/\
+  0.0866526597 params=9182736455/0.5 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000LeV<2>blGioBor6vu0ut1<36>D79<3>G99G99HA9IB9<36>ma6ma6l`6<45>KA\
+  AKAALBA<43>ma6ma6l`6<24>TH9SH9RG9RF9QE9PDA<4>K9BGAB<30>BZZ000B``Baa
+  }
+
+
+s3e041             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=1
+  corners=-0.48335097/-0.352346113/-0.36745297/-0.227605471/-0.503316021/-\
+  0.340832902 params=9182736455/0.5 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000LeV<2>blGioBor6vu0ut1<36>D79<3>G99G99HA9IB9<36>ma6ma6l`6<45>KA\
+  AKAALBA<43>ma6ma6l`6<24>TH9SH9RG9RF9QE9PDA<4>K9BGAB<30>BZZ000B``Baa
+  }
+
+s3e042             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.8948804/0.8948804/-0.6711603/0.6711603
+  params=1212/0.29999999999999999 float=y maxiter=2 fillcolor=253
+  inside=253 invert=1/0/0
+  colors=000lXE<9>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0LS0JQ0<7>0A0<15>Zc\
+  0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<15>gTE0\
+  00000000
+  }
+
+s3e043             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; All rights reserved
+  reset type=lyapunov passes=t
+  corners=-0.8948804/0.8948804/-0.6711603/0.6711603
+  params=300512475/-0.021453799999999999 float=y maxiter=2
+  fillcolor=253 inside=253 invert=1/0/0
+  colors=000000<29>nnnpppooo<30>000PFF<29>xeDzfCyfC<29>RGEPFFQFF<13>cRFeSF\
+  dSF<13>RGFPFFPFF<14>cPFcPFbOF<13>PFFSNC<29>xo`zpaypa<26>YSI000000000
+  }
+
+
+s3f003             { ; (c) 1993, Richard H. Sherry, CIS:76264,752
+                                         ; 3X|18|CY|SF5|180  1h52m47.10s
+  reset type=lyapunov passes=1
+  corners=2.6941149/3.1340983/3.7598159/3.5487268/2.9538316/3.4135268
+  params=21345/0.014 float=y maxiter=50 fillcolor=253 inside=0
+  colors=000XQ8<12>mk4nm4po3rq2<2>vv1<6>PRW<15>9da8da9b_<23>C8AD79D79<56>m\
+  _8n`7n`7o`7<21>pd6pd6oc6<46>_O8_O8ZO8ZO8ZN8<17>SH9SH9SG9SG9RGA<16>LAAK9B\
+  LAB<7>VO9
+  }
+
+
+s3f057             { ; (c) 1993, Richard H. Sherry, CIS:76264,752  
+                                         ; 3X|18|CY|SF5|180  54m31.08s
+  reset=1800 type=lyapunov passes=b
+  corners=4.0261841/3.6961285/0.82575258/1.2658268/3.6961285/1.2658268
+  params=33/0.50302100000000005 float=y maxiter=75 fillcolor=253
+  inside=253 periodicity=0
+  colors=000nd1pf0<14>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP\
+  0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<9>fX5\
+  000j`3lb2
+  }
+
+
+sbc064             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=0.02619092/2.778191/0.9060451/2.970045 params=213/0.02145/1
+  float=y maxiter=2 fillcolor=253 inside=2 outside=imag invert=10/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc065             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=0.925068272/0.14800841/2.9181822/2.1580283/1.01020059/2.8046725
+  params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=10/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc066             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=2.40045856/1.36863064/1.94236035/1.09571483/2.43539036/1.8957846\
+  2 params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=10/0/0
+  colors=000AAA<5>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0LS0JQ0<7\
+  >0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<24>CCC
+  }
+
+sbc067             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=2.2105069/2.6697185/3.2280088/1.7137055/3.1026886/2.0384331
+  params=314167/0.0039090899999999996/5 float=y maxiter=2
+  fillcolor=253 inside=2 outside=imag invert=15/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc068             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=b corners=-5.696/5.696/-4.272/4.272
+  params=1111/-0.102909/3 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=1/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<17>EPP000\
+  DQRDRR
+  }
+
+
+sbc070             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov
+  corners=-1.414431/1.414431/-1.060823/1.060823 params=9/1.03287/3
+  float=y maxiter=2 fillcolor=253 inside=2 outside=imag invert=1/0/0
+  colors=000_Q9000bT7<6>pf0<14>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FK\
+  AA0<15>PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000\
+  PFF<4>YOA
+  }
+
+sbc071             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=-0.7221388/0.7185332/0.9689894/-0.9519066/0.7185332/-0.9519066
+  params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=1/0/0 finattract=y
+  colors=000666<26>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0\
+  LS0JQ0<7>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111333555
+  }
+
+
+sbc064             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=0.02619092/2.778191/0.9060451/2.970045 params=213/0.02145/1
+  float=y maxiter=2 fillcolor=253 inside=2 outside=imag invert=10/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc065             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=0.925068272/0.14800841/2.9181822/2.1580283/1.01020059/2.8046725
+  params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=10/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc066             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=2.40045856/1.36863064/1.94236035/1.09571483/2.43539036/1.8957846\
+  2 params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=10/0/0
+  colors=000AAA<5>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0LS0JQ0<7\
+  >0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<24>CCC
+  }
+
+sbc067             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=2.2105069/2.6697185/3.2280088/1.7137055/3.1026886/2.0384331
+  params=314167/0.0039090899999999996/5 float=y maxiter=2
+  fillcolor=253 inside=2 outside=imag invert=15/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<20>DRR
+  }
+
+sbc068             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=b corners=-5.696/5.696/-4.272/4.272
+  params=1111/-0.102909/3 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=1/0/0
+  colors=000<16>000<2>vu0<36>F98D79E89<2>G99G99HA9IB9<36>ma6ma6l`6<20>_P7Z\
+  O7ZO8ZO8<5>UK8UJ8TJ8TI8SH8<11>KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<17>EPP000\
+  DQRDRR
+  }
+
+
+sbc070             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov
+  corners=-1.414431/1.414431/-1.060823/1.060823 params=9/1.03287/3
+  float=y maxiter=2 fillcolor=253 inside=2 outside=imag invert=1/0/0
+  colors=000_Q9000bT7<6>pf0<14>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FK\
+  AA0<15>PP0PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000\
+  PFF<4>YOA
+  }
+
+sbc071             { ; (c) 1993, Richard H Sherry, CIS:76264,752
+                     ; 100 new pars compiled w/ final beta of V18
+  reset=1733 type=lyapunov passes=1
+  corners=-0.7221388/0.7185332/0.9689894/-0.9519066/0.7185332/-0.9519066
+  params=213/0.02145/1 float=y maxiter=2 fillcolor=253 inside=2
+  outside=imag invert=1/0/0 finattract=y
+  colors=000666<26>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0\
+  LS0JQ0<7>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111333555
+  }
+
+
+s3i231             { ; (c) 1993, Richard H. Sherry, CIS:76264,752
+                     ; Pseudo Lyapunov
+  reset=1810 type=formula formulafile=fractint.frm formulaname=Jm_15
+  function=cosxx/sqr/exp/cosh
+  corners=-0.5228588509/-0.5094231555/0.2316387211/0.2487553706/-0.5262379\
+  923/0.2361442431 params=5/0/-2 float=y maxiter=500 fillcolor=253
+  inside=253 potential=253/300/0 decomp=64
+  colors=000BaaLeV<2>blGioBor6vu0ut1<36>D79<3>G99G99HA9IB9<36>ma6ma6l`6<45\
+  >KAAKAALBA<43>ma6ma6l`6<34>K9BGAB<32>B``
+  }
+
+
+lupy2              { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov passes=1
+  corners=3.162352/3.574846/3.207905/3.688659/3.0800881/3.31759
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000iUE<6>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0PP0OO0<13>\
+  AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<13>nd1pf0oe1<13>\
+  PFF<7>gTE
+  }
+
+lyup3              { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov passes=1
+  corners=3.6298211/3.5297718/3.352936/3.6021946/3.4741592/3.5604851
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000AUT<16>C8AD79D79<51>jX8jX8iW8<29>KAAKAALBA<28>cT8dU7dT7<57>K9B\
+  GAB<29>zz0<8>LVY<11>9da8da9b_<5>AWU
+  }
+
+xlup1              { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov passes=1
+  corners=3.536531/2.165779/1.586088/3.790875/1.984763/3.655112
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0PP\
+  0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<14>pf0
+  }
+
+xlupy              { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov corners=-4.055687/4.456313/-2.199519/4.184481
+  params=32560180/0.5 float=y maxiter=2 inside=0
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0PP\
+  0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<14>pf0
+  }
+
+
+xzz017             { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov passes=t
+  corners=3.6298211/3.5297718/3.352936/3.6021946/3.4741592/3.5604851
+  params=32560180/0.5 float=y maxiter=2 fillcolor=10 inside=-102
+  colors=FKFAUT<7>BKK000BHI<6>C8AD79D79<51>jX8jX8iW8<29>KAAKAALBA<28>cT8dU\
+  7dT7<57>K9BGAB<29>zz0<8>LVY<11>9da8da9b_<5>AWU
+  }
+
+xzz018             { ; (c) 1993 Richard H, Sherry, CIS: 76264,752
+  reset type=lyapunov passes=1
+  corners=3.3602997/3.2295107/3.224088/3.5499304/3.1568113/3.4954058
+  params=2314/0.09374215 maxiter=3 inside=zmag logmap=yes
+  periodicity=-1
+  colors=000222000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SN\
+  C<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<29>444
+  }
+
+xzz121             { ; (c) 1992 Richard H. Sherry, CIS: 76264,753
+  reset type=lyapunov passes=b
+  corners=-0.825163/0.826165/-0.634767/0.603729 params=32560180/0.5
+  float=y maxiter=2 inside=2 decomp=9
+  colors=000oe1<13>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0PP\
+  0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<14>pf0
+  }
+
+
+Blob               { ; bar, having a few drinks after a hard day at the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=lyapunov passes=2
+  corners=3.54327124/3.4736102/3.736623201/3.728230421/3.5222218/3.7646891\
+  21 params=32/0.5 float=y
+  colors=000B60<20>WH0XI0YJ0ZK0_L0<25>yj0zk0zk0zk0<94>ZK0ZK0ZK0ZK0YJ0YJ0<7\
+  1>H20H20G10F10<13>110000110<8>A50
+  }

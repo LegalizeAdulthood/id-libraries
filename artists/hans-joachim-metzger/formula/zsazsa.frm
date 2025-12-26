@@ -15,3 +15,24 @@ inandout07 {; Bradley Beacham  [74223,2745]
   ;SOURCE: zsazsa.frm
 }
  
+fnglynn {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
+         ; Original formula by Jon Horner [100112,1700]
+         ; Try p1=1.5, p2=-0.2, fn1=ident for 'standard' Glynn
+  z = pixel:
+  z = fn1(z^p1 + p2)
+  |z| < 4
+  ;SOURCE: zsazsa.frm
+}
+ 
+glynnout1 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
+           ; Original formula by Jon Horner [100112,1700]
+           ; in-and-out relative to origin
+  z = oldz = pixel:
+  in  =  p2 * (|z| <= |oldz|)
+  out = -p2 * (|oldz| < |z|)
+  oldz = z
+  z = fn1(z)^p1 + in + out
+  |z| <= 4
+  ;SOURCE: zsazsa.frm
+}
+ 
