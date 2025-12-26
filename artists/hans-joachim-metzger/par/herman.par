@@ -1,0 +1,151 @@
+comment { ; narrative copyright Kerry Mitchell 15feb98
+
+Higher order Herman Rings
+
+In Paul Derbyshire's posting about Herman Rings, he gave a formula 
+that was known to generate the rings:
+
+H(z) = alpha * z^2 * (z-c) / (1-c*z).
+
+Paul's examples tended to resemble, in overall shape, Julia sets 
+from the standard quadratic, f(z) = z^2 + c.  I surmised that this 
+was due to the z^2 factor in H(z), and conjectured that higher 
+order Herman Rings could be made by increasing the z exponent.  
+Just going from z^2 to z^3 was interesting, but didn't result in 
+the same sort of dynamics that H(z) had.  So, I generalized H(z)
+into F(z):
+
+F(z) = alpha * z^n * g(z)^m, where
+g(z) = (z-c)/(1-c*z).
+
+The formula that Paul used had n=2 and m=1.  I tried n=3 and m=1 
+and determined it to be unsuccessful.  So, I tried n=3 and m=2, 
+and decided that, in general, m should be equal to n-1 for higher 
+order rings.
+
+Finding the critical points for F is not as hard as it may seem.  
+Using the derivative rules from calculus,
+
+F' = alpha * nz^(n-1) * g^m + alpha * z^n * mg'g^(m-1).
+
+Setting F' = 0 to find the critical points means that alpha,
+z^(n-1) and g^(m-1) can all be divided out as common factors.
+(The critical points associated with those factors are:  z=0,
+z=c, and z=1/c.  None of these has interesting dynamics.)  The
+result is:
+
+0 = ng + mg'z, or
+z = -ng / (mg').
+
+Differentiating g(z),
+
+g' = (1-c^2) / (1-c*z)^2.
+
+Using this in the above equation for z results in a quadratic
+for z which is easily solved using the quadratic equation.  In
+fact, when m = n-1, the discriminant of the solution can be
+factored.  The result is:
+
+z = [c^2 + (2n-1)] +/- sqrt([c^2 - 1]*[c^2 - (2n-1)^2])] / (2nc).
+
+Using this directly as the starting point for Mandelbrot-type 
+images leads to discontinuities, where one root should be used 
+instead of the other.  These discontinuities occur when real(c^2) 
+= n^2 + m^2, and at the imaginary axis.  In the formulas below
+(herman_man and herman-alpha), they are automatically handled
+in the initialization.  Since Julia sets are not initialized
+using critical points, the herman_jul formulas lack this logic.
+
+The rotation parameter, alpha, is what seems to determine whether 
+or not Herman rings actually show up.  Two methods can be used to 
+set alpha--cartesian and polar coordinates.  For the cartesian 
+method (-cart formulas), the real and imaginary parts of alpha are 
+input directly.  With the polar method (-polar formulas), the 
+magnitude and polar angle of alpha are input.  This makes it very 
+easy to specify rotation by an irrational angle.  Simply specify a 
+*rational* number for the polar angle.  The irrationality of the 
+rotation angle is expressed as an irrational number of turns, not 
+radians.  Since the difference between turns and radians involves 
+a factor of pi, which is irrational, using a rational number of 
+radians insures that the number of turns is irrational.  The effect
+of alpha can be shown through the special Mandelbrot-type formula,
+herman_alpha.  Here, c is input through parameters and z is
+initialized accordingly.  The parameter alpha is varied by being
+set to the pixel value.
+
+The following formulas all use the renormalization method to 
+reduce banding.  In this implementation, the actual coloring is 
+performed using the decomposition method.  This allows separate 
+rendering of the orbits that get attracted to infinity and those 
+that get attracted to 0.  After forming the decomposition angle 
+based on the iteration count, those pixels that escape to infinity 
+have their angle increased by pi.  This means that for the same 
+iteration count, two pixels with different basins of attraction 
+will be separarated by half of the color palette.  Those pixels 
+whose orbits are not attracted by either 0 or infinity are treated
+as inside pixels.
+
+}
+
+alpha-sweep { ; copyright Kerry Mitchell 15feb98
+  ;
+  ; blue goes to infinity, green to 0
+  ;
+  reset=1960 type=formula formulafile=herman.frm
+  formulaname=herman_alpha center-mag=0/0/0.6666667
+  params=3/4/1.25/0/1/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=000<41>0x00z00y0<39>020000001<42>\
+  00x00z00y<39>002000100<40>z00<40>200 cyclerange=0/255
+  }
+
+lay-o-the-land-2 { ; copyright Kerry Mitchell 15feb98
+  ;
+  ; notice the effect of critical points across imag axis
+  ; uses irrational rotation angle (1/2pi turns = 1 radian)
+  ;
+  reset=1960 type=formula formulafile=herman.frm
+  formulaname=herman_man-polar center-mag=7.40689/0/0.25
+  params=2/4/1/1/1/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzx\
+  zzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000 cyclerange=0/255
+  }
+
+herman-ring-2 { ; copyright Kerry Mitchell 15feb98
+  ;
+  ; ring from lay-o-the-land-2
+  ;
+  reset=1960 type=formula formulafile=herman.frm
+  formulaname=herman_jul-polar cyclerange=0/255
+  center-mag=1.43796/-0.021421/0.3493159/1/-37.499
+  params=3.14159265358979/0/2/4/1/1 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0 colors=000<40>x00z00z00<\
+  40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000
+  }
+
+midget-four { ; copyright Kerry Mitchell 15feb98
+  ;
+  ; 4th order, uses rational rotation angle (1/4 turn)
+  ;
+  reset=1960 type=formula formulafile=herman.frm
+  formulaname=herman_man-cart center-mag=3.30331/0/0.6373984
+  params=4/4/0/1/-1/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=000<46>00x00z00z<12>08z09z0Az0Bz0Cz<2\
+  8>0mz0oz0oz<12>7xs8yr9zqAzpBzo<44>xz2zz0zz0<46>zR0zR0yQ0yQ\
+  0xP0<9>rK0qJ0pI0oI0nI0<11>ZC0YC0WB0UB0<13>210 cyclerange=0/255
+  }
+
+lace-doily { ; copyright Kerry Mitchell 15feb98
+  ;
+  ; 4th order, uses rational rotation angle (1/2 turn)
+  ;
+  reset=1960 type=formula formulafile=herman.frm
+  formulaname=herman_jul-cart center-mag=0/4.30063/0.1336898
+  params=0/5.660750148272625/4/4/-1/0 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0 colors=Wph<9>bsmcsmdtn\
+  etnetofto<20>yzzzzzyzz<31>ZqjYqiXqiXphWphVpg<25>GhWFgVFg\
+  VEfUEfU<18>6_K6ZK6ZJ6YJ5YI<3>4WG4WG4VF3UF<14>1M71L71K61J\
+  60I5<3>0F30E30C20B2<2>060000060081<4>0F30G40H40I50I51J6<\
+  8>2QA2QB2RB2RC2SC<5>4VF4WG4WG4WH<12>8aN9bO9bOAbPAcP<20>K\
+  jZKk_Lk_Mk`<14>Vpg cyclerange=0/255
+  }
+

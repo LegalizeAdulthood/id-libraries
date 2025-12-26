@@ -1,0 +1,73 @@
+comment { ; narrative copyright Kerry Mitchell 16feb98
+
+Variations on Herman Rings
+
+The below formulas are based on the following formula, which is
+known to produce Herman rings:
+
+f(z) = alpha * z^2 * (z-c) / (1-c*z).
+
+This can be generalized to:
+
+F(z) = alpha * z^n * g(z)^m, where
+g(z) = (z-c) / (1-c*z).
+
+For the case of n >= 2 and m=n-1, it is believed that F(z) will
+generate higher order Herman rings.  The present formulas treat
+the general case, where m and n are independent.
+
+For the Mandelbrot-type formulas, the critical points of F(z)
+are readily determined by solving a quadratic equation.  To
+maintain continuity in the image, the selection of critical
+must be changed depending on the parameter c.  Otherwise, lines
+of discontinuity appear.  These lines are hyperbolic (plus the
+imaginary axis), according to (real(c))^2 - (imag(c))^2 = r^2.
+This value of r depends on the exponents n and m:
+
+r = (n^2 + m^2) / (n - m)^2.
+
+This adjustment of the critical point is made in the formula
+initialization.
+
+The parameter alpha can be selected in two ways, either using
+cartesian or polar coordinates.  The advantage to polar coordinates
+is that entering an irrational rotation angle is easy; enter a
+*rational* polar angle for alpha, and the rotation angle (which
+involves a factor of pi) will be irrational.
+
+Five formulas are included:  2 Mandelbrot types (cartesian and
+polar), 2 Julia types (cartesian and polar), and 1 Mandelbrot
+type where c is explicitly specified and alpha takes on the
+pixel value.  For the Mandelbrot types, the choice of critical
+point (using either the positive or negative root of the
+discriminant) is governed by the sign of real(p3).
+
+}
+
+for-jay { ; copyright Kerry Mitchell 16feb98
+  reset=1960 type=formula formulafile=hermanm.frm
+  formulaname=hermanm_man-polar center-mag=-0.76637882\
+  451330240/0/8000 params=2/-1/1/1/1/0 float=y maxiter\
+  =256 inside=0 decomp=256 periodicity=0 colors=000<40\
+  >x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39\
+  >02z00z00z<41>000 cyclerange=0/255
+  }
+
+alpha-sample { ; copyright Kerry Mitchell 16feb98
+  reset=1960 type=formula formulafile=hermanm.frm
+  formulaname=hermanm_alpha center-mag=-0.534251/6.319\
+  /1.212533 params=4/-5/0.33333333333333/0/1/0 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 colors\
+  =222<45>wn9ypAypA<45>fMheLieLieLi<43>bOlbOlaPm`Pm<29\
+  >4pp2qq2qq<30>Q`iQ`iP_h<45>266 cyclerange=0/255
+  }
+
+another-doily { ; copyright Kerry Mitchell 16feb98
+  reset=1960 type=formula formulafile=hermanm.frm
+  formulaname=hermanm_jul-cart center-mag=2.71257/-3.2\
+  1503/0.127551 params=0.168453633/0.17634814/4/-4/0/1
+  float=y maxiter=256 inside=0 decomp=256 periodicity=0
+  colors=o_K<19>yiUyiVyjVyjWxkW<27>jyijyiiyjiyjhxk<27>\
+  WjyVjyViyUiyUhx<59>0GW0GV0FV0FU1EU<27>F0GF0GG0FG0FH1\
+  E<27>UF0VF0VG0WG0WH1<38>n_K cyclerange=0/255
+  }
