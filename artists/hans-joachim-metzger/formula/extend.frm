@@ -1,8 +1,15 @@
-Extend     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
-             ; Sun, 4 Apr 2004 10:28:36
-             ; 
-  z=fn1(pixel), c=fn2(pixel):
-  z= z*z +fn3(z) +c
-  |z| <= real(P1)
+Extend {    ; z=z^2 +z +c: params=-4/0 function=ident/ident/ident
+            ; As first posted, this turned out be curiously close
+            ; to club_lambda (as a formula), so the parameters
+            ; hav changed and the formula has the same result.
+z=fn1(pixel), c=fn2(pixel), t=|real(P1)|:
+
+if(real(P1)<0)
+    temp =fn3(z)
+else
+    temp =-fn3(z)
+endif,
+z=sqr(z) +temp +c
+
+LastSqr <= t
 }
- 

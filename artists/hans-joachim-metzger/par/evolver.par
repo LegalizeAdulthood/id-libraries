@@ -1,0 +1,72 @@
+; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
+; All were made with the evolver function, some will not work with older
+; versions
+
+3                  {
+  reset=2000 type=marksmandel
+  center-mag=-3.55271e-015/-1.075e-006/0.04167974
+  params=-0.478560747093112/-0.2037720877712333/1 bailoutest=manh
+  inside=zmag outside=imag
+  invert=0.548753318887906/0.2593768120365/0.659840693380535
+  decomp=256 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+labmdafnsin1       {
+  reset=2000 type=lambdafn function=sin
+  center-mag=0.00112915/-6.1035e-005/0.3333266/0.9997
+  params=-0.1616565446943571/-0.458851893673513 maxiter=255
+  inside=atan outside=atan sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+lambdafn_1         {
+  reset=2000 type=lambdafn function=cosh
+  center-mag=2.38425/-6.1035e-005/0.1913176/0.9997
+  params=-0.75/-0.3077547532578508 maxiter=255 bailoutest=manr
+  inside=bof60 outside=iter invert=0.602404858546709/1.25/2.75
+  sound=off
+  colors=000<4>T00Y00c00<3>z00<3>zP0zW0za0<3>zz0<4>zzTzzYzzc<3>zzz<4>YzzTz\
+  zNzz<3>0zz<3>0az0Wz0Pz<3>00z<4>00Y00T00N<3>000<4>T00Y00c00<3>z00<3>zP0zW\
+  0za0<3>zz0<3>zzNzzTzzY<3>zzu<5>WzxQzxLzx<3>0zz<3>0az0Wz0Pz<3>00z<4>00Y00\
+  T00N<3>000<4>T00Y00c00<3>z00<3>zP0zW0za0<3>zz0<3>zzNzzTzzY<3>zzu<5>WzxQz\
+  xLzx<3>0zz<3>0az0Wz0Pz<3>00z<4>00Y00T00N<3>000<4>T00Y00c00<3>z00<3>zP0zW\
+  0za0<3>zz0<3>zzNzzTzzY<3>zzu<5>WzxQzxLzx<3>0zz<3>0az0Wz0Pz<3>00z<9>005
+  }
+
+tree               { ; has fruits
+  reset=2000 type=magnet2j
+  center-mag=-0.456312/2.66001/0.1865996/1/24.999
+  params=0.2404248176519059/-1.258827478865932 float=y maxiter=255
+  inside=0 periodicity=0 sound=off
+  colors=000Kcz<39>3wz3wz2xz<3>0zz<9>0Oz0Kz0Gz<2>04z00z20v<8>K0OM0KO0G<3>W\
+  00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<25>Ca6A`58_4<2>2X10W00V1<24>06Q0\
+  5R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>000
+  }
+
+julia_spiral       {
+  reset=2000 type=julia
+  corners=-0.41873354/0.26926646/0.25173363/0.76773363
+  params=0.1849062435991253/0.5640707734969903 float=y maxiter=1023
+  inside=0 periodicity=0 sound=off
+  colors=000<8>a00e00i00<3>z00<9>zb0zf0zj0<3>zz0<9>OzbKzfGzj<3>0zz<9>0Oz0K\
+  z0Gz<2>04z00z20v<8>K0OM0KO0G<3>W00<25>6nn5pp4rr<3>0zz<9>bzgfzejzc<3>zzW<\
+  25>Ca6A`58_4<2>2X10W00V1<24>06Q05R04S<2>01V00W22X<24>nntppurrv<3>zzz<31>\
+  000
+  }
+
+julzzpwr1          {
+  reset=2000 type=julzzpwr
+  center-mag=+0.00000000000000000/+0.00000000000000000/0.6666667
+  params=-0.1382824182866909/-0.3121097445600757/2.080538346507157
+  float=y maxiter=255 bailout=100 inside=0
+  invert=-0.579699087496567/-0.593005157628102/-0.706656086916715
+  decomp=256 sound=off colors=888<118>wwdxxexxexxfyyf<3>zzg888<126>zC9
+  }
+

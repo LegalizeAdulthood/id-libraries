@@ -1,0 +1,96 @@
+;From: cullen@scripps.edu (Miles Egan)
+;To: daniel_goldwater@brown.edu
+;Subject: Par file
+;
+;        Thanks for fracextras!  Almost enough to force me to buy a 486
+;just to see some of the slower par files.  Anyway, here is another par
+;file you might want to include in version 3.
+
+Eyeman             { ; Very intricate mandelbrot
+  reset type=mandel
+  corners=-0.508914424/-0.508491652/0.51402791/0.514117055/-0.508804683/0.5138\
+  81512 maxiter=3000 inside=0 logmap=252
+  colors=000JC0<6>530310110000`QVZPUYOTXNRWMR<23>312111100000S8`<22>6195174163\
+  15204203101001000kmx<27>445223111000_mj<27>244122111000ohh<7>aXX_WWZUUXSS<16\
+  >433222111000www<27>333111000000iXceU`<25>323211101000zb0<19>LD0
+  }
+
+Eyes               { ; Looks like a collection of compound eyes
+  reset type=julia corners=-0.044318/0.188643/-0.351009/-0.176289
+  params=-0.748226823/0.08396267425 maxiter=4000 inside=0 logmap=37
+  colors=000VMR<9>000_mj<12>465122000zb0<12>740310000`QV<12>423111000S8`<12>30\
+  4101000OUY<12>234111000zVW<12>733311000e3L<11>703502201000kmx<12>567223000_m\
+  j<12>4651220000OJ<11>043021011000ohh<12>655222000www<12>777333000jQU<12>5232\
+  11000i0w<12>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<3>YPU
+  }
+
+Paisley            { ; Zoom near border of m-set
+  reset type=mandel
+  corners=-0.104949353/-0.104898173/0.925622858/0.925661223 maxiter=7000
+  inside=0 logmap=207
+  colors=000b0o<10>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<14>000_mj<12>\
+  465122000zb0<12>740310000`QV<12>423111000S8`<12>304101000OUY<12>234111000zVW\
+  <12>733311000e3L<11>703502201000kmx<12>567223000_mj<12>4651220000OJ<11>04302\
+  1011000ohh<12>655222000www<12>777333000jQU<12>523211000i0we0s
+  }
+
+PaisleyII          { ; Another zoom near border of m-set
+  reset type=mandel
+  corners=-1.18740995/-1.18733083/0.304048724/0.304005567/-1.18736177/0.303983\
+  262 maxiter=4000 inside=0 logmap=164
+  colors=000_mj<12>465122000zb0<12>740310000`QV<12>423111000S8`<12>304101000OU\
+  Y<12>234111000zVW<12>733311000e3L<11>703502201000kmx<12>567223000_mj<12>4651\
+  220000OJ<11>043021011000ohh<12>655222000www<12>777333000jQU<12>523211000i0w<\
+  12>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<14>000
+  }
+
+Descending         { ; good example of self-similarity
+  reset type=mandel passes=1
+  corners=-1.18738521/-1.18735665/0.304050449/0.30404955/-1.1873745/0.30403616\
+  7 maxiter=32000 inside=0 logmap=183
+  colors=000_mj<12>465122000zb0<12>740310000`QV<12>423111000S8`<12>304101000OU\
+  Y<12>234111000zVW<12>733311000e3L<11>703502201000kmx<12>567223000_mj<12>4651\
+  220000OJ<11>043021011000ohh<12>655222000www<12>777333000jQU<12>523211000i0w<\
+  12>507203000CWn<5>6HS5FP4DL3BH28E16A146013000iXc<14>000
+  }
+
+Alien              { ; Zoomorphic Manowar, parameter file by Miles Egan
+  reset type=manowar passes=b
+  corners=0.0270227/0.0814115/-0.0143333/0.0264356 params=0.1/0.2
+  maxiter=20000
+  colors=CCCzsGzzz<9>UsU<11>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>s\
+  Cs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<12\
+  >CsS<4>qsI
+  }
+
+Superman           { ; Deep Zoom
+  reset type=mandel
+  corners=-1.00906883/-1.00905812/0.312439606/0.312447635 maxiter=2000
+  inside=0 logmap=210
+  colors=000_SA<15>BjxaR7<12>qE7`S7<27>xxMyzNxNMaQ8<12>vDWJP70N6`R9_RCZRETRBYR\
+  H<9>QOehR7<13>vP7`S7<10>kj8`S7<23>RxV`R9<9>`VX`R9<25>QdxZS7<6>Ed7ZR7<13>4WGY\
+  OC<5>C2haR7<22>xlEXPB<5>59a_R9<9>NZb
+  }
+
+Violets            { ; Flowery Julia
+  reset type=julia passes=b
+  corners=-0.0245266/0.0245266/-0.248793/0.248794/-0.2457092/0.046118
+  params=-1.76071051508188/0.0126884365454316 maxiter=4000
+  colors=000gJu<26>xVGfJu<21>55JfJu<24>23UfLv<14>IttfKu<22>DkEdKu<10>7ccfIt<10\
+  >P2OhJt<4>mOefJv<18>B_ogJv<26>neaeLu<8>IikfLt<10>RiQcNr<6>9nQgJv<28>RY_
+  }
+
+Blueday            { ; Nice understated mandelbrot
+  reset type=mandel corners=-0.349217/-0.149216/-0.902067/-0.752067
+  maxiter=2000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+Lace               { ; Lacy Julia
+  reset type=julia passes=1
+  corners=1.26888511/1.27316503/-0.0820355/-0.08774265/1.27316503/-0.08774265
+  params=-0.7429996785/0.1365450595 maxiter=3000 inside=0 logmap=140
+  colors=000zzz<253>000
+  }
+

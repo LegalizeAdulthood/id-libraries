@@ -2671,3 +2671,48 @@ Kreagor {
   ;SOURCE: d-rock.frm
 }
  
+MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
+  z = pixel:
+  z = (pixel ^ z) + pixel
+  |z| <= (P1 + 3)
+  ;SOURCE: fractint.frm
+}
+ 
+Richard3 (XAXIS) {; Jm Collard-Richard
+  z = pixel:
+  sh=sinh(z), z=(1/(sh*sh))+pixel
+  |z|<=50
+  ;SOURCE: fractint.frm
+}
+ 
+Sterling3 (XAXIS) {; davisl
+  z = Pixel:
+  z = ((z/2.7182818)^z)/sqr(6.2831853*z) - pixel
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
+ 
+ZZa (XAXIS) {; Prof Jm using Newton-Raphson method
+             ; use floating point with this one
+  z=pixel, solution=1:
+  z1=z^(z-1)
+  z2=(((z-1)/z)+log(z))*z1
+  z=z-((z1-1)/z2)
+  .001 <= |solution-z1|
+  ;SOURCE: fractint.frm
+}
+ 
+a--mand {
+  z = c = pixel:
+  z = (sqr(z)+c) / |c|
+  |z|<p1
+  ;SOURCE: eli.frm
+}
+ 
+aa-mand-re (XAXIS) {
+  z = c = pixel:
+  z = sqr(z)+c
+  real(z)<p1
+  ;SOURCE: eli.frm
+}
+ 

@@ -1,0 +1,10 @@
+Crown_Clubs        { ; Same as before, but formula is more flexible,
+                     ; and map doesn't suffer unnecessary losses.
+                     ; 40.32s/megapixel@350Mhz.
+  reset=2003 type=formula formulafile=extend.frm formulaname=Extend
+  function=ident/ident/conj
+  center-mag=-0.227724/0.00422066/1.194434/1.0731/-90/-1.233735336114705\
+  21e-014 params=3/0 float=y maxiter=255 inside=0 outside=atan
+  invert=0.3835305831122/-0.1/0 viewwindows=4.2/0.75/no/1024/1024
+  colors=@altern.map
+  }

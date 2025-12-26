@@ -1,0 +1,155 @@
+
+Mandel-off	   { ; This satelite is weirdly of true, not manually warped.
+		     ; Lower iterations less lake dots, higher stronger branchi
+  reset type=mandel passes=b
+  corners=0.33826136/0.34063809/0.04992551/0.05170842 maxiter=1000
+  }
+
+Phallic 	   { ; 16xmag, mandel. Lots of lake- lower iterations for speed
+		     ; color cycles well. Good place to go exploring from.
+  reset type=mandel passes=b corners=0.24859/0.443431/-0.073065/0.073066
+  float=y maxiter=1000
+  colors=CCCWXY<2>VXXscc<26>NRPBKG<14>GOLddg<29>9zxfcf<101>RgIecf<36>0npfcf<33\
+  >WXY
+  }
+
+Flame		   { ; GREAT picture, mandel, high iterations, not too zoomed
+		     ; 3 minutes 486 800x600. Could lower iterations.
+  reset type=mandel passes=b
+  corners=-0.99835504/-0.99254192/0.29237107/0.29678488 maxiter=1000
+  colors=000k00<11>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<2\
+  9>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<17>l00
+  }
+
+Sway		   { ; Mandel, Real nice.
+		     ; 30 minutes XT 1024x768, 2.5 mintues 486
+  reset type=mandel passes=g
+  corners=0.342729438/0.343533095/0.051756948/0.052366134 float=y
+  maxiter=1000 inside=0
+  colors=00000W0W0WW0W00W0W0WWkkkkrkdmwNFF<4>zFFFNF<5>zNFFVF<5>zVFFbF<5>zbFFjF\
+  <5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zbNFjN<5>zjNFrN<5>z\
+  rNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zjVFrV<5>zrVFzV<5>zzVFF\
+  b<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zrbFzb<5>zzbFFj<5>zFjFNj<5>\
+  zNjFVj<5>zVjFbj<5>zbjFjj<5>zjjFrj<4>rrjzywccdWWWz000z0zz000zz0z0zzzzz
+  }
+
+LakeWeird	   { ; magnetm, loop, weird
+  reset type=magnet2m passes=b
+  corners=0.9403926/0.9663038/-1.3401315/-1.3207929 float=y maxiter=32676
+  inside=255
+  }
+
+Pebble		   { ; Magnet mandel type. High iterations, personal favourite
+		     ; 13 minutes 1024x768 486. SLOW without FPU. Own risk..
+  reset type=magnet1m passes=b corners=1.929964/2.142764/1.56492/1.72452
+  float=y maxiter=1000 inside=255
+  colors=000PPP<49>000000000000000<124>yyyzzzyyy<72>QQQ
+  }
+
+Double star	   { ; Julia, fast, neat. 30 seconds on 486.
+		     ; Not much to say, nowhere to zoom to. Magx4000+
+  reset type=julia
+  corners=-0.515599204/-0.515543945/-0.0000207573/0.0000206735
+  params=-1.89275792434506/5.89527190000001e-007 maxiter=1024 inside=0
+  colors=000fVt<3>fVuC8e<8>A8kG8G<43>rA62D6G9H<12>GQaHScG8H<9>J8UG8GK8V<6>M8cN\
+  9eN9e<25>jDLkEKjEK<26>CRcASdASd<21>OQaPP`PP`PP`<41>fRffRffRffRgfRg<28>fVs
+  }
+
+Super mandel	   { ; GREAT mandelbrot. max iterations, log pallette.
+		     ; Perfect mandel. Slow, 486 minutes on 486. Worth it.
+  reset type=mandel passes=b
+  corners=-1.779873924/-1.779697924/-0.00006584/0.00006616 float=y
+  maxiter=1000 inside=255 logmap=yes
+  colors=000III<88>yyyzzzyyy<123>000000000000000<34>III
+  }
+
+Weird weird	   { ; another magnet type. Weird, different, astounding. SLOW.
+		     ; Very odd picture, non-mandel. Spikes and THINGS. SLOW.
+  reset type=magnet2m passes=2
+  corners=0.693242/1.103254/-1.429132/-1.123122 float=y inside=0
+  colors=00000W0W0WW0W00W0W0WWkkkkrkdmwCCCssq<19>ssEssCsqC<19>sECsCCqCC<18>GCC\
+  ECCACCECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<6>Csc
+  }
+
+ Gasket 	    { ; Mandel-magnet type. Slow! Floating Point
+		     ; Use 1024x768. If not, zoom to tighten a bit.
+  reset type=magnet2m passes=b
+  corners=0.09928873/0.10313465/-1.06588058/-1.06299614 float=y
+  maxiter=1000 inside=maxiter
+  colors=000<5>000110330<29>zz0<30>220000000<29>000000200<29>zKU<30>211000000<\
+  14>000010030<29>0z0<30>020000000<8>000
+  }
+
+Chain		   { ; MarksJulia
+  reset type=marksjulia corners=-2.0/1.999973/-1.499985/1.5 params=0.1/0.9
+  maxiter=1000 inside=0
+  colors=000009<106>00y00z00y<123>000000000000000<16>009
+  }
+
+julia-attractor    { ; SLOWSLOW Julia with finite attractor on. 2h 486.
+                     ; Wonderufl picture, higher resolution the better
+  reset type=julia passes=g corners=0.136579/0.528973/-0.102776/0.198083
+  params=-0.00468703545629978/0.633165875449777 float=y maxiter=1000
+  finattract=y periodicity=0
+  colors=000m44<6>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z0\
+  0z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<21>l55
+  }
+
+Corners            { ; Mandel, many, many corners to zoom in on
+                     ;  
+  reset type=mandel passes=g
+  corners=0.3257826/0.3452654/0.0436815/0.0582941 float=y maxiter=1000
+  inside=0
+  colors=0006Zu<3>1JmNLzBIrJOPCLX6Id02r<3>0DlLKsEIp7GmSxLIhU9Ub3dync8<2>CLaY3r\
+  M7oBBmk58<2>RAQSlb<2>Mle<2>DOR<2>h5F<4>is02b4<6>KSYMRaNWY<4>PsG<5>UbvPNeL7P<\
+  3>iVx_agQgR<3>5It<7>r3a<7>2c9<3>0KdOMdGJg8Hi1_e0Ph4g2<2>1M`r58<3>BDcR3P<4>4D\
+  hPHU<5>3Fi`hy<6>4Il9DWYNH<5>4GgHIT<3>3Fhczr<6>5LkTNzEJr13D<2>0Cc6Oy<5>0GmPbk\
+  CRkSiiIZj9Pkmvx<2>CQn282<5>0EePdf<2>6Lj8EdllR<5>7JhNlb<3>4Ljp2zQ9rQPvHLr8InJ\
+  A2s57<2>EDa1UoIEF<3>3FeWP8<5>4GfBHe<6>1FkfLKLIYM5GaMN<6>4FhAoW<4>1LiQSB<2>6I\
+  b
+  }
+
+LittleMandelLake   { ; magnetm
+                     ; probably slow
+  reset type=magnet1m passes=b
+  corners=2.12831959/2.129185876/1.686909736/1.687559451 float=y
+  maxiter=1000 inside=255
+  colors=000g00<5>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<29\
+  >zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<23>h00
+  }
+
+Julia Recursive    { ; Julia, perfect recursive shape. Awful neat.
+                     ;  
+  reset type=julia passes=b corners=0.147702/0.540097/-0.102776/0.198083
+  params=-0.00468703545629978/0.633165875449777 maxiter=1000
+  colors=CCCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsC\
+  Es<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACC
+  }
+
+Feather            { ; Mandel, lots of feathery bits
+                     ;  
+  reset type=mandel passes=g
+  corners=-0.984551668/-0.984368742/-0.256558776/-0.256421626 float=y
+  maxiter=1000 bailout=1000 inside=255 logmap=yes
+  colors=0000F0<23>0z0<30>020000000<14>000110330<29>zz0<30>220000000<29>000000\
+  200<29>zKU<30>211000000<14>000010030<4>0D0
+  }
+
+Feather+Lake       { ; Mandel, lots of feathery bits
+                     ;  
+  reset type=mandel passes=g
+  corners=-0.98705125/-0.98339272/-0.25774008/-0.25499708 maxiter=1000
+  bailout=1000 inside=255 logmap=yes
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
+  utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonpo\
+  nnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhh\
+  hghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabb\
+  bacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYX\
+  WWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQ\
+  QPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKK\
+  KJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFE\
+  DDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAAA9AAA9BA9999989998A98888878887987777\
+  7677768766666566657655555455546544444344435433333233324322222122213211111011\
+  102100<2>000
+  }
+
