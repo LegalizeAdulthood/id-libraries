@@ -1,0 +1,80 @@
+comment { update05.par, for my WWW home page ... July 15, 1995
+
+         file and images are copyright (c) 1995, don lebow.
+         All rights reserved.
+
+         Commercial use without prior arrangement is prohibited.
+
+         This file requires the formula file DONS.FRM, and Fractint,
+         version 19.2
+
+         Enjoy.
+
+         - don
+           76704.41@compuserve.com
+           mdon@aloha.net
+  }
+
+observer           {
+  reset=1920 type=formula formulafile=dons.frm formulaname=ScSkLMS
+  passes=1
+  corners=-8.022094/-2.535549/3.695179/-3.620214/-2.535549/-3.620214
+  params=4/0/0/0/0/0 float=y inside=zmag potential=255/255/16
+  decomp=256
+  colors=000<4>0900B00B2<26>00z<20>05D06A068075073080<2>020000000<14>00011\
+  0321<28>xnZ<19>QNAOL9MK8KI6IH5GF3EE2CC0<4>220000000<29>000000200<29>zKU<\
+  30>211000000<14>000
+  }
+neon-horizon       { ; slow one
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-26
+  function=cabs passes=1
+  corners=0.2161471/-2.297242/-1.646536/1.70465/-2.297242/1.70465
+  params=1/2/-1/0/0/0 float=y inside=zmag outside=real decomp=128
+  colors=000G57<22>zKU<30>211000000<14>000010030<2>0900B00B2<26>00z<22>068\
+  075073080060040020000<15>000110321<28>xnZ<23>IH5GF3EE2CC0AA0<3>220000000\
+  <29>000000200<5>E46
+  }
+
+fishy-business     {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-23
+  function=tan passes=t corners=-0.2660409/3.733959/-1.349687/1.650313
+  params=1/0/0/0/0/0 float=y inside=maxiter potential=256/200/0
+  colors=0006LZ<6>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<1\
+  3>4B7<9>EXLCYLA_K<14>zyyzzw<18>uu0<16>yyvzzzyyy<2>rrrsss<19>GGGEEECCE<4>\
+  22E00F00G<23>00x00z12z<27>OszPuzOty<22>7N_
+  }
+cross-purposes     {
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout02
+  function=conj/cosxx passes=b
+  corners=1.34471/0.1162036/1.3974624/0.47608256 params=0.5/0/0/0/0/0
+  float=y potential=255/500/0
+  colors=0AU333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15\
+  >zzz<15>000<15>zn0<15>000<15>zzz<15>004<8>B0XD0`E0cF0gG0jH0nI0qK0u<14>20\
+  4
+  }
+in-the-rough       {
+  reset=1920 type=lambda(fn||fn) function=tanh/sinh passes=b
+  corners=2.161498/-1.738059/1.577365/-1.456523 params=0.75/1.5/2
+  float=y potential=255/128/0
+  colors=000kkk<20>zzz<16>0DJ<59>0_l0_m0_m0_n0_n<13>0du<3>Jjc<6>Kf_KeZJdY<\
+  52>D61C50A50<4>320111111<62>jjj
+  }
+monstro-2          {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-43
+  function=tan/conj/exp passes=t
+  corners=-0.2154743/1.056526/0.8680336/-0.8279668/1.056526/-0.8279668
+  params=1/0/0/0/0/0 float=y potential=256/128/0
+  colors=0005A6077044000<15>hhh<16>M3rK0sK0r<27>6ED6FC5FB5FA4F93F82G6<6>4S\
+  4<13>2A2292171151131000<3>E3EH3HK5H<10>zWC<11>H8I200<4>200FRP<10>CtZ<20>\
+  5Ic4Gd4Ed3Ce3Ae<3>12g00h00k00o00r<15>000<15>r00<14>300<16>zuZ<11>AE9
+  }
+orbital-velocity   {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-21
+  function=cotan/cosxx/cotan passes=g
+  corners=-0.36315536/-0.13403936/0.15585865/-0.14962935/-0.13403936/-0.14\
+  962935 params=0.5 float=y potential=255/255/0
+  colors=000840<13>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<\
+  14>000<16>z0X<15>000<15>p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l00h00d0\
+  0a00<9>000420
+  }
+

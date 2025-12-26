@@ -10,3 +10,9 @@ Sam_5 (XAXIS) {
   ;SOURCE: sam.frm
 }
  
+Sam_1 (XAXIS) {
+  z = Pixel: 
+  z = z^(-z) - pixel
+  ;SOURCE: sam.frm
+}
+ 

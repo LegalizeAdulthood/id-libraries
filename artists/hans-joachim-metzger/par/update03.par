@@ -1,0 +1,86 @@
+comment { update03.par, for my WWW home page ... April 30, 1994
+
+         file and images are copyright (c) 1995, don lebow.
+         All rights reserved.
+
+         Commercial use without prior arrangement is prohibited.
+
+         This file requires the formula file DONS.FRM, and Fractint,
+         version 19 (actually, 18.2 will work for these.)
+
+         Enjoy.
+
+         - don
+           76704.41@compuserve.com
+           mdon@aloha.net
+  }
+
+rons               { ; not yer "classic fractal" at all
+                     ; neat effect with tesselation, too
+  reset=1800 type=formula formulafile=dons.frm formulaname=REB004A
+  function=conj/zero passes=b
+  corners=-5.642152/3.053531/-3.260884/3.260878 params=1/-1/1/0.25/0/0
+  float=y inside=bof60 decomp=256
+  colors=000<14>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>0000zz<14>z_\
+  0000<14>000zz0<14>0z0000<14>000m_m<14>zz0000<14>000000200<29>z00sKS<6>zA\
+  0<15>zz0<14>w03<8>O0b
+  }
+nightmoves         {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
+  function=cotanh/tan/exp passes=b
+  corners=2.600789/-2.981819/-3.721739/3.721739/-2.981819/3.721739
+  float=y potential=256/128/0
+  colors=000Vhv<2>XixYjxZkx_ly_ly<11>hszitzjty<6>nxyoxyoxypxypyy<14>xzsxzs\
+  xzrxzrxzq<15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tlSskRsjQsiPshO<2>rgNqfMq\
+  eLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAfS9eR9dQ8dQ8<12>UG1TF1SE1SE1RD1<14>G50F4\
+  0E40E40<2>D32C22C22B12A12<14>307207208209<11>03F03G03H03I03J<3>05L06M06N\
+  17O17P<7>2CV3CW3DX4EX4EY<9>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObs\
+  PcsQctRdt<3>Ugv
+  }
+fame               {
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
+  function=cosh/cotan passes=1
+  corners=-1.599445/1.582373/-1.260319/1.240924
+  params=1/0.20000000000000001 float=y inside=epsiloncross
+  potential=256/128/16
+  colors=000zGP<2>zGMzHMzHLzILzIKzJKzJJ<31>z``zaazaayaa<41>211000011<40>0o\
+  o0qq0rr0tt0uu<2>0zz<62>y1zz0zz0zz0y<51>zFP
+  }
+wizard's-ring      {
+  reset=1820 type=formula formulafile=fractint.frm
+  formulaname=CGhalley passes=b
+  corners=-27.38344/27.38344/-20.28615/20.78901 params=1 float=y
+  inside=zmag potential=256/5000/0
+  colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
+  z<15>000<15>zn0<15>000<15>zzz<15>004<12>G0jH0nI0qK0uJ0rI0n<12>204
+  }
+guardian           {
+  reset=1920 type=formula formulafile=dons.frm formulaname=OK-13
+  function=log/sqr passes=t
+  corners=2.102736/1.4474443/-0.43519692/0.43852535/1.4474443/0.43852535
+  params=0/0/0/0/0/0 float=y potential=255/500/0 decomp=256
+  colors=000`DV<7>V4cU2eU3e<33>Vpq<10>0fz<45>02z01z01z11y<92>kN2lO1lO1lP1<\
+  27>re1re1rd2<23>aEU
+  }
+
+wildlife    {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-40
+  function=tanh/sin/cotan/flip passes=1
+  corners=2.424932/-2.568904/-0.01077842/-3.146261 float=y
+  outside=real decomp=256
+  colors=200333<14>zzz<12>TCC<2>zzz<12>CTC<2>zzz<12>CCT<2>zzz<12>TTC<2>zzz\
+  <12>TCT<2>zzz<12>CTT<2>zzz<12>hCC<2>zzz<12>ChC<2>zzz<12>CCh<2>zzz<12>hhC\
+  <2>zzz<12>hCh<2>zzz<12>Chh<2>zzz<2>zzzkkz<25>b00<16>100
+  }
+ two                {
+  reset=1820 type=fn+fn function=tanh/flip passes=b
+  corners=2.834732/-2.513763/-3.642853/3.490799/-2.513763/3.490799
+  params=1.5/0/1 maxiter=50 potential=256/200/0 
+  colors=000764<2>321110112<11>FJKGKLHLNJMOKOP<8>TZaU_bVacWbdXce<9>dlpemqe\
+  nq<5>irvirvjswjswjtx<3>lvzlvzlvzlvzlvz<12>kuykuyktxjtxjswjsw<3>hqugptgos\
+  forenq<5>ahl`hk_gi<6>U_bTZaSY_RWZQVXPUW<5>JNOILMHKLFIJEHIDFGCEF<9>000<13\
+  >LGCNHDOJEPKF<7>`SLaTMbUNcVNdWO<10>pdVqeVqeW<5>viYviYwjZwjZxjZ<3>zl_zl_z\
+  l`zl`zl`<12>yk_yk_xk_xjZwjZwjZ<3>uhXtgXsgXrfWqeW<6>k`Sj_RhZQ<4>cVObUNaTM\
+  _SLZRK<13>FC9EA8C97A86975
+  }
+

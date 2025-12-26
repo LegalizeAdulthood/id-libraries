@@ -1,0 +1,91 @@
+comment { update04.par, for my WWW home page ... May 11, 1995
+
+         file and images are copyright (c) 1995, don lebow.
+         All rights reserved.
+
+         Commercial use without prior arrangement is prohibited.
+
+         This file requires the formula file DONS.FRM, and Fractint,
+         version 19 (actually, 18.2 will work for these.)
+
+         Enjoy.
+
+         - don
+           76704.41@compuserve.com
+           mdon@aloha.net
+  }
+
+slightly_twisted       {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=FlipLambdaJ passes=t
+  corners=1.247649/-1.247676/1.663534/-1.66355/-1.247676/-1.66355
+  params=1/0.5 float=y inside=maxiter potential=255/450/0 decomp=255
+  colors=000<12>FJKGKLHLNJMOKOP<8>TZaU_bVacWbdXce<9>dlpemqenq<5>irvirvjswj\
+  swjtx<3>lvzlvzlvzlvzlvz<12>kuykuyktxjtxjswjsw<3>hqugptgosforenq<5>ahl`hk\
+  _gi<6>U_bTZaSY_RWZQVXPUW<5>JNOILMHKLFIJEHIDFGCEF<9>000<13>LGCNHDOJEPKF<7\
+  >`SLaTMbUNcVNdWO<10>pdVqeVqeW<5>viYviYwjZwjZxjZ<3>zl_zl_zl`zl`zl`<12>yk_\
+  yk_xk_xjZwjZwjZ<3>uhXtgXsgXrfWqeW<6>k`Sj_RhZQ<4>cVObUNaTM_SLZRK<13>FC9EA\
+  8C97A86<5>110
+  }
+
+split            { ; 4d experiment
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
+  function=sin passes=1 corners=-1.928/1.928/-1.446/1.446 params=0/0/1
+  float=y inside=0 symmetry=xyaxis
+  colors=AAPMCS<8>323000021<14>0WJ<15>ttt<7>Th`QgZMeXIcVEaT<3>0WJ<13>04302\
+  2023<14>6Zk<15>ttt<5>bmqZkqWjpThoQgo<5>6Zk<15>000<15>m0I<15>ttt<15>m0I<1\
+  5>000<14>WGdZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<3>ODV
+  }
+door_into_summer   {
+  reset type=manfn+exp function=sin passes=b
+  corners=-0.37362857/-0.76584/-0.26405106/0.25889755/-0.76584/0.25889755
+  params=0.75 float=y bailout=6 inside=maxiter potential=255/500/0
+  invert=0.5/0/0
+  colors=0000Xz<32>02z01z01z11y<90>jN3jN3kN2lO1lO1lP1<61>zz0zzQ<45>zzz0fz<\
+  11>0Xz
+  }
+burbs              { ; zoom on brads-galaxy
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
+  function=tan/tan/exp passes=b
+  corners=-3.266648/2.84085/-4.19259/3.950741/2.84085/3.950741
+  params=1 float=y potential=256/128/0
+  colors=000<14>`00c00d44<13>zzz<15>c00<14>300<15>lT7<15>paXpaYpb_qb`qcbrd\
+  d<11>TRMRQKOOIMNGKMF<6>3C20A0080<2>000<15>00c<15>zzz<15>00c<14>003000022\
+  <14>0cc<15>zzz<15>0cc<15>000
+  }
+
+ancient-metal-2    { ; by torchlight
+  reset=1820 type=popcornjul passes=1
+  corners=-4.012628/4.294373/5.537803/-5.292063/4.294373/-5.292063
+  params=16 float=y inside=maxiter outside=real potential=255/64/0
+  invert=1.5/0/0 decomp=256
+  colors=000430220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUwcU<23>E\
+  A7C96A85864653432221000000<6>EB2GD2GE4<21>WkwXmzWkx<21>CA6B83972<2>32100\
+  0000000<29>uX0wZ0wZ0<27>640
+  }
+
+s_turns            {
+  reset type=fn*z+z function=cosxx passes=b
+  corners=-0.6703725/0.7056275/-0.5661044/0.4658956
+  params=1/0.10000000000000001/1/1 float=y inside=maxiter
+  potential=255/128/0
+  colors=000oWe<6>c0K<2>h5Ji6Ik7Il8Hm9G<3>tFEuGDwHCxIBzKA<2>zREzUFzXGz_Hza\
+  J<8>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDKEGJ<14>eee<14\
+  >AAK<8>c68f57i46l35p24<2>z00<14>zvvzzzxvw<4>p_h
+  }
+
+radiotractive      {
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout04
+  function=flip passes=b
+  corners=0.0206845494/-0.0169858262/-0.160494936/0.152173574/-0.142957687\
+  /0.0576946978 params=1.5/0.5/0/0/0/0 float=y maxiter=50
+  inside=period potential=256/500/0
+  colors=030cccZZZWWWSSSOOOJJJGGGCCC888333000z00<14>00z<14>0z0<13>v40r21q1\
+  2p12p12n12<6>i05h05g05f05e05<2>i0Bj0Ck0F<9>w2X<3>k1Zi1Ze1_<3>W0aQ0bQ0cN0\
+  cK0cH0d<13>10o00p02p<4>0Hq0Jr0Nr<2>0Vs0Xt0`u0bu0eu<3>2gg2gc3g`3gX4gU<3>6\
+  hF7hC7h87i47g4<3>5b44`44_43Y43X42W42U41S41S40Q40O31N32N34L35L37J3<2>BH2C\
+  G2EF2GE2<2>JB1LA1OE1<5>cX1f`1ic1lg1nj1<3>yw1ys1xp1xk1wh1wc1<9>r21<14>w2X\
+  s2Yo1Zj1`g1ac1bZ1cW1eS0fO0hJ0iG0jC0l80m30n00p88pCCqGGqJJrOOrSSsWWsZZscct\
+  ggujju<2>wwwsssooojjjggg
+  }
+

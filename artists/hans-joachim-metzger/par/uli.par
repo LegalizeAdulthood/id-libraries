@@ -1,0 +1,492 @@
+; ULI.PAR  needs uli.frm, sam.frm, improved.frm
+
+shoe               { ; jm01
+  reset type=formula formulafile=fractint.frm formulaname=Jm_01
+  function=sin/sqr
+  corners=0.0254894/0.1884035/0.65732323/0.65907376/0.0609416/0.59097112
+  float=y
+  colors=000qbe<3>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<14>oaf
+  }
+
+nashornvogelkopf   { ; schildktreotenkopf
+                     ; jm01
+  reset type=formula formulafile=fractint.frm formulaname=Jm_01
+  function=sin/sqr
+  corners=0.3278267/0.4141923/0.4350311/0.4492821/0.3520778/0.4026965
+  float=y
+  colors=000000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>\
+  0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<\
+  3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SS\
+  E<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQS\
+  KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8G\
+  G8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+lots corners 1     { ; zum weiterzoomen
+                     ; jm02
+  reset type=formula formulafile=fractint.frm formulaname=Jm_02
+  function=sin corners=1.373436/1.701435/-0.122989/0.123009 float=y
+  maxiter=1000 inside=bof60
+  colors=00059W<8>R`CUd9VdB<15>qtj<12>Dhl<2>vFj<2>kRV<29>KIxJHzLIy<19>zh_<5>eB\
+  P<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_ubaV<14>vHFxFDwFD<24>TJPc\
+  1t<15>81h62g62f<8>68Y
+  }
+
+snail on hill      { ; zum weiterzoomen
+                     ; jm02
+  reset type=formula formulafile=fractint.frm formulaname=Jm_02
+  function=sin
+  corners=1.3924443/1.423541/0.0558286/0.0456466/1.4085265/0.0343858
+  float=y maxiter=1000 inside=bof60
+  colors=000EEk<64>zz0zz0zy0<49>zP0050F80H00zM0<27>z10z00z00y01<82>00z00z11y<1\
+  6>EEl
+  }
+
+motherstar         { ; sternenhimmel ohne stargeneratzor
+                     ; jm03
+  reset type=formula formulafile=fractint.frm formulaname=Jm_03
+  function=ident/ident/ident/ident corners=-31.99/31.99/-23.9925/23.9925
+  float=y maxiter=10000 inside=bof60 outside=imag
+  colors=000Y`bkau<32>wWzwWzwWzwWzwXz<94>wwowwovwouwo<49>JpvIowIowIow<64>Yab
+  }
+
+get crazy          { ; try slow color cycling
+                     ; jm04
+  reset type=formula formulafile=fractint.frm formulaname=Jm_04
+  function=ident/ident/ident/ident
+  corners=-3.159155/-0.305647/7.328874/9.469005 float=y maxiter=10000
+  inside=bof60 outside=imag
+  colors=0000t6w600s7w700s7w700r8w800r8w800q9w900q9w900pAwA00pAwA00oBwB00oBwB0\
+  0nCwC00nCwC00mDwD00mDwD00lEwE00lEwE00kFwF00kFwF00jGwG00jGwG00iHwH00iHwH00hIw\
+  I00hIwI00gJwJ00gJwJ00fKwK00fKwK00eLxL00eLxL00dMxM00dMxM00cNxN00cNxN00bOxO00b\
+  OxO00aPxP00aPxP00`QxQ00`QxQ00_RxR00_RxR00ZSxS00ZSxS00YTxT00YTxT00XUxU00XUxU0\
+  0WVxV00WVxV00VWxW00VWxW00UXxX00UXxX00TYxY00TYxY00SZxZ00SZxZ00R_x_00R_x_00Q`x\
+  `00Q`x`00Paxa00Paxa00Obxb00Obxb00Ncxc00Ncxc00Mdxd00Mdxd00Leye00Leye00Kfyf00K\
+  fyf00Jgyg00Jgyg00Ihyh00Ihyh00Hiyi00Hiyi00Gjyj00Gjyj00Fkyk00Fkyk00Elyl00Elyl0\
+  0Dmym00Dmym00Cnyn00Cnyn00Boyo00Boyo00Apyp00Apyp009qyq009qyq008ryr008ryr007sy\
+  s007sys006tyt006tyt005uyu005uyu004vyv004vyv003wyw003wyw002xyx002xyx001yyy001\
+  yzz0zW00WWw000z0w000z0w000y1w100y1w100x2w200x2w200w3w300w3w300v4w400v4w400u5\
+  w500u5w500t6w60
+  }
+
+exploding bridge   { ; exploding bridge
+                     ; jm05
+  reset type=formula formulafile=fractint.frm formulaname=Jm_05
+  function=ident/ident
+  corners=-5.216903/8.218897/8.9572/-8.9572/8.218897/-8.9572 float=y
+  maxiter=10000 inside=bof60 outside=imag
+  colors=000gXk<8>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<9>eVl
+  }
+
+drop the bomb      { ; drop the bomb
+                     ;
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=0.098839/-1.389161/-0.972443/1.011557/-1.389161/1.011557 float=y
+  maxiter=10000 inside=bof60 outside=imag
+  colors=00000M<15>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000000<12>00K
+  }
+
+bug                { ; bugs in the hall of strawberry
+                     ; richard11
+  reset type=formula formulafile=fractint.frm formulaname=Richard11
+  corners=-0.272/0.272/0.910733/1.318733 float=y maxiter=10000
+  inside=bof60 outside=imag
+  colors=000e6J<7>g4Gh3Fh4G<40>IrtHtuHtu<38>SvTTwSRwR<2>JwN<30>ttNvsOusP<19>Lo\
+  tJnvJnv<28>JdhJdhJcgJbg<34>DGODGODHO<30>OX_e7Je7J
+  }
+
+sinappel           { ; bunt
+  reset type=fn(z)+fn(pix) function=sin/sqr
+  corners=-3.345158/3.277336/-2.483415/2.483437 params=0/0/1 inside=bof60
+  colors=000aaP<32>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<48>``P
+  }
+
+sunrise            { ; lots of mandelbrots
+                     ; jm27 sin 100!
+  reset type=formula formulafile=improved.frm formulaname=Jm_27
+  function=sin
+  corners=-1.162026/-2.045545/-0.318954/0.318954/-2.045545/0.318954
+  params=100 float=y inside=zmag
+  colors=000TNt<15>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_\
+  ubaV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>D\
+  hl<2>vFj<2>kRV<29>KIxJHzLIy<2>RMu
+  }
+
+lotbrot            { ; lots of mandelbrots
+                     ; jm27 sin 100!
+  reset type=formula formulafile=improved.frm formulaname=Jm_27
+  function=sin
+  corners=-1.70059/-1.852555/-0.05486/0.05486/-1.852555/0.05486 params=100
+  float=y inside=zmag logmap=yes
+  colors=CCCssa<11>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>Cqs\
+  CssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssss\
+  q<6>ssc
+  }
+
+carpet             { ; red carpet
+                     ; jm27 sin 100!
+  reset type=formula formulafile=improved.frm formulaname=Jm_27
+  function=sin
+  corners=-1.78565183/-1.79325009/-0.002743/0.002743/-1.79325009/0.002743
+  params=100 float=y inside=zmag logmap=yes
+  colors=CCCssa<11>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>Cqs\
+  CssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssss\
+  q<6>ssc
+  }
+
+landscape          { ; great
+                     ; jm27 sin
+  reset type=formula formulafile=improved.frm formulaname=Jm_27
+  function=sin
+  corners=-1.5026184/-1.4584425/-0.0925527/-0.1244481/-1.4584425/-0.1244481
+  params=100 float=y maxiter=1000 inside=zmag logmap=yes
+  colors=00030w<3>00z00z11y<82>zz0zz0zy0<81>z10z00z00y01<77>40v
+  }
+
+fish               { ; head of salmon
+                     ; leemandel3 tan
+  reset type=formula formulafile=improved.frm
+  formulaname=LeeMandel3 function=tan
+  corners=-0.455931/-0.350331/-0.055504/-0.196304/-0.350331/-0.196304
+  params=4/4 float=y maxiter=1000 logmap=yes
+  colors=00000AiiH<21>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<58>hhI
+  }
+
+porzellan          { ; aus meissen
+                     ; leemandel3 tan
+  reset type=formula formulafile=improved.frm
+  formulaname=LeeMandel3 function=tan
+  corners=-0.4074287/-0.3886269/-0.0939742/-0.1190433/-0.3886269/-0.1190433
+  params=4/4 float=y maxiter=1000 logmap=yes
+  colors=000pwz<4>zzz<46>2zz0zz0yz<45>02z00z00y<59>002000000000<29>00k00m01m<2\
+  9>0ky0mz1mz<24>nwz
+  }
+
+flower             { ; strange flower,great,takes lots of time
+                     ; sam1
+  reset type=formula formulafile=sam.frm formulaname=Sam_1
+  corners=0.541233/0.56219173/0.39446443/0.39979589/0.54621613/0.3878181
+  maxiter=30000 colors=000yy1zz0<83>z10z00z00y01<82>00z00z11y<80>xx2
+  }
+
+ornament1          { ; nach ulis formel
+                     ; uli1 sin sqr
+  reset type=formula formulafile=uli.frm formulaname=ULI_1
+  function=sin/sqr
+  corners=0.516783/-0.537034/0.125895/1.530954/-0.537034/1.530954
+  colors=000694<3>102<10>sh6<23>P62N41O51<29>us1wu0vs0<19>_2GL4T67e<6>fV4<10>p\
+  KcqIgoIf<22>6ZF<8>iyG<21>m8G<13>oV6pX5nX5<3>cU7JV6<6>BI39G29I4<12>FieGlhGlg<\
+  14>VuIWvGVtG<22>7B5
+  }
+
+match              {
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/sqr corners=0.300215/1.420215/-0.408266/0.431734
+  params=4 float=y inside=0
+  colors=000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0\
+  <3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>h\
+  zh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3\
+  >ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOS\
+  KMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8E\
+  G8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000
+  }
+
+moon               {
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/recip corners=-2.395599/4.116029/-2.430126/2.453594
+  params=4 float=y inside=0
+  colors=000000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>\
+  0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<\
+  3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SS\
+  E<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQS\
+  KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8G\
+  G8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+hill               {
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/cos
+  corners=-0.432909/4.017309/3.008492/-2.925131/4.017309/-2.925131
+  params=4 float=y inside=0
+  colors=000ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>\
+  zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<\
+  3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QK\
+  SSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0\
+  <3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8\
+  CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGzzLzzz00\
+  0555<3>HHH00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___
+  }
+
+ueberschallknall   { ; wie ein gehirn
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=exp/cosxx/ident corners=-2.942326/1.057674/-1.5/1.5 params=4
+  float=y inside=0
+  colors=00000F000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0\
+  <3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>z\
+  zh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3\
+  >SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSS\
+  KQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>G\
+  E8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCG\
+  BBGB<2>BGFBGGBFGBDGBCG0GzVVz<3>zVzzVrzVj00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLL\
+  zLzzzL
+  }
+
+lanzenspitze       { ; dekorativ, sehr!
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=exp/cosxx/ident corners=-1.151077/-0.607077/-0.204/0.204
+  params=4 float=y inside=0
+  colors=00000F000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0\
+  <3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>z\
+  zh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3\
+  >SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSS\
+  KQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>G\
+  E8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCG\
+  BBGB<2>BGFBGGBFGBDGBCG0GzVVz<3>zVzzVrzVj00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLL\
+  zLzzzL
+  }
+
+gehirn             { ; denkend
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=exp/cosxx/sqr corners=-1.711767/0.273123/-0.724087/0.764581
+  params=4 float=y inside=0
+  colors=000<2>000001003<27>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z0\
+  0z00y<59>002
+  }
+
+zauber             { ;
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/log/log
+  corners=-1.55683/2.40705/2.760442/-2.524732/2.40705/-2.524732 params=32
+  float=y maxiter=1000 inside=0
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+tausend            { ; ecken zum zoomen
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=recip/sqr/cosh corners=-8.892669/8.892669/-6.669502/6.669502
+  params=32 float=y maxiter=1000 inside=zmag
+  colors=000ddM<28>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<52>ccM
+  }
+
+schwebend          { ; seltsames spinnennetz
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=exp/cosxx/cos corners=-5.361498/-4.918275/-0.18048/0.151937
+  params=4 float=y inside=0
+  colors=000000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>\
+  0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<\
+  3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SS\
+  E<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQS\
+  KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8G\
+  G8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+spiral             { ; ungewoehnlich
+  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  function=sin/sqr corners=-2.121024/1.302976/-2.187614/0.380386
+  params=0.09/0.09/4 float=y maxiter=1000
+  colors=00000V<9>00j00l01l<29>0kx0my1my<30>zzy<46>2zy0zy0yy<45>02y00y00x<59>0\
+  01000000000000<17>00T
+  }
+
+hosentraeger       { ; golden
+  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  function=sqr/cosxx corners=-11.26048/11.26048/-8.415133/8.475587
+  params=0/0/32 float=y maxiter=1000
+  colors=000102<10>sh6<23>P62N41O51<29>us1wu0vs0<19>_2GL4T67e<6>fV4<10>pKcqIgo\
+  If<22>6ZF<8>iyG<21>m8G<13>oV6pX5nX5<3>cU7JV6<6>BI39G29I4<12>FieGlhGlg<14>VuI\
+  WvGVtG<26>333
+  }
+
+davor              { ; vor der explosion
+  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  function=sqr/log corners=-3.555215/5.523374/-3.404422/3.40445
+  params=0.4/0/32 float=y maxiter=1000
+  colors=000m`g<5>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<12>kZh
+  }
+
+danach             { ; nach der explosion
+  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  function=sqr/log corners=-19.39939/23.162386/-15.960488/15.960516
+  params=0.46/0/32 float=y maxiter=1000
+  colors=000m`g<5>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<12>kZh
+  }
+
+dreischneck        { ; in blau
+  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  function=sqr/recip corners=-9.412641/7.101328/-7.025021/5.360329
+  params=1/1/32 float=y maxiter=1000
+  colors=00000G<13>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<\
+  45>02z00z00y<44>00H
+  }
+
+biomorph           { ; no biomorph
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/sqr corners=0.9667732/0.9798727/-0.00488356/0.00494108
+  params=4 float=y inside=0
+  colors=000hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>\
+  SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>K\
+  SQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG8\
+  8<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGB\
+  DGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+  zLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3\
+  >0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<2>mzh
+  }
+
+biomorph2          { ; no biomorph, too
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/sqr
+  corners=0.974800948/0.974975329/0.000902535/0.001033321 params=4 float=y
+  inside=0
+  colors=000KIxJHz<20>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3\
+  >O_ubaV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<1\
+  2>Dhl<2>vFj<2>kRV<28>LIw
+  }
+
+maske              { ; no biomorph, too
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/cos/sqr
+  corners=0.810883/1.141509/0.217259/-0.223576/1.141509/-0.223576 params=4
+  float=y inside=0
+  colors=000wfazh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_ubaV\
+  <14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dhl<2\
+  >vFj<2>kRV<29>KIxJHzLIy<17>ueb
+  }
+
+drachenfamilie     { ; mutter und kind
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=sin/sqr corners=-1.282631/2.717366/-1.61826/1.381719
+  params=1/0.315/1/0.099
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000
+  }
+
+drachen            { ; tanzende drachen
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=sin/cos corners=-1.432672/2.837995/-1.631563/1.571445
+  params=0/0.4/0/0.5
+  colors=000EP8<11>102<10>sh6<23>P62N41O51<29>us1wu0vs0<19>_2GL4T67e<6>fV4<10>\
+  pKcqIgoIf<22>6ZF<8>iyG<21>m8G<13>oV6pX5nX5<3>cU7JV6<6>BI39G29I4<12>FieGlhGlg\
+  <14>VuIWvGVtG<14>FR9
+  }
+
+bleistiftspitze    { ; fang den drachen
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=exp/cos corners=-9.427608/2.631723/-4.382229/4.662283
+  params=0/0.89999/0/0.44899 float=y
+  colors=000WYGVtG<27>102<10>sh6<23>P62N41O51<29>us1wu0vs0<19>_2GL4T67e<6>fV4<\
+  10>pKcqIgoIf<22>6ZF<8>iyG<21>m8G<13>oV6pX5nX5<3>cU7JV6<6>BI39G29I4<12>FieGlh\
+  Glg<14>VuI
+  }
+
+spinnennetze       { ; fang den drachen
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=sqr/exp
+  corners=-2.833944/5.460689/2.660364/-1.629566/1.122109/-4.149853
+  params=1.2/0.89/0.009/0.03 float=y
+  colors=000TTY<44>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<36>SSY
+  }
+
+wege               { ; gottes wege sind seltsam
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=cos/cosxx corners=-1.730177/2.445433/-1.565854/1.565854
+  params=0.01/0.9/0.3/0.9 float=y
+  colors=000E4e<10>ov8<21>pd1pd1oc2<3>k_40PR<14>1HI1HI1IJ<17>4TW<13>kFd<17>kjQ\
+  jlPjkP<27>t9pu7qu7q<27>YXiXYhXZf<12>_tG<14>TT7SR6SR6<24>7hU<13>v38<15>H3c
+  }
+
+rose               { ; zerfallen
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=cos/sinh corners=-2.945798/3.165465/-3.179842/1.403606
+  params=-0.1/0.8/0.1/0.6 float=y
+  colors=000sdc<2>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<15>qbe
+  }
+
+antenne            { ; hat apfelmann verloren
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=sqr/log corners=-2.367726/1.580562/-1.514936/1.457164
+  params=1.1/0/2 float=y
+  colors=000sdc<2>zh_<5>eBP<5>22J<22>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_u\
+  baV<14>vHFxFDwFD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<7>R`CUd9VdB<15>qtj<12>Dh\
+  l<2>vFj<2>kRV<29>KIxJHzLIy<15>qbe
+  }
+
+meinungsvielfalt   { ; rustikal
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=exp/recip corners=-2.367726/1.580562/-1.514936/1.457164
+  params=-4/0/0.01 float=y logmap=yes
+  colors=00000i00s<19>zyyzzz<84>00z00z10y<82>z00z00z11<59>zhh
+  }
+
+spiralfeld         { ; nach Escher
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=exp/ident corners=-6.251781/1.169813/-2.938754/2.647901
+  params=0.1/2 float=y logmap=yes
+  colors=000N00<20>200000100<30>k00m00m00<61>yyyzzzyzz<14>ezzdzzdzzbzz<27>2zz0\
+  zz0yz<45>02z00z00y<34>00RQ00P00O00
+  }
+
+surreale           { ; Traumlandschaft
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/recip
+  corners=1.044189/1.0339668/1.5957842/1.4088542/1.1302354/1.4810557
+  params=4 float=y inside=0
+  colors=000300200000<31>k00m00m00<61>yyyzzzyzz<14>ezzdzzdzzbzz<27>2zz0zz0yz<4\
+  5>02z00z00y<34>00RQ00<21>400
+  }
+
+fuellhorn          { ; gelb
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/sin/recip
+  corners=1.3946025/1.4394838/0.5738958/0.4853147/1.4532788/0.4956609
+  params=4 float=y inside=0
+  colors=0000Q_x`00P`xa00P`xa00Oaxb00Oaxb00Nbxc00Nbxc00Mcxd00Mcxd00Ldye00Ldye0\
+  0Keyf00Keyf00Jfyg00Jfyg00Igyh00Igyh00Hhyi00Hhyi00Giyj00Giyj00Fjyk00Fjyk00Eky\
+  l00Ekyl00Dlym00Dlym00Cmyn00Cmyn00Bnyo00Bnyo00Aoyp00Aoyp009pyq009pyq008qyr008\
+  qyr007rys007rys006syt006syt005tyu005tyu004uyv004uyv003vyw003vyw002wyx002wyx0\
+  01xyy001xzz0zW00WVw000z0w000z0w000y0w100y0w100x1w200x1w200w2w300w2w300v3w400\
+  v3w400u4w500u4w500t5w600t5w600s6w700s6w700r7w800r7w800q8w900q8w900p9wA00p9wA\
+  00oA
+  }
+
+wellen             { ; fractalwaves rule the world
+  reset type=formula formulafile=uli.frm formulaname=ULI_6
+  function=exp/ident
+  corners=1.427758/-8.391851/-6.698716/6.442221/-8.391851/6.442221
+  params=0.1/2/0.05 float=y logmap=yes
+  colors=000IIh<59>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<21>HHh
+  }
+
+grashalme          { ; in der abenddaemmerung
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/log/sqr
+  corners=0.8766554/0.8893398/-0.0217046/-0.0386171/0.8893398/-0.0386171
+  params=32 float=y maxiter=1000 inside=0
+  colors=0000Iz<11>02z00z00y<59>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<\
+  46>2zz0zz0yz<32>0Jz
+  }
+
+halme              { ; im wind
+  reset type=formula formulafile=uli.frm formulaname=ULI_5
+  function=log/log/sqr
+  corners=0.88338819/0.88693983/-0.02222172/-0.02695724/0.88693983/-0.02695724
+  params=32 float=y maxiter=10000 inside=bof60
+  colors=00000`<9>00RQ00<23>200000100<30>k00m00m00<61>yyyzzzyzz<14>ezzdzzdzzbz\
+  z<27>2zz0zz0yz<45>02z00z00y<23>00a
+  }

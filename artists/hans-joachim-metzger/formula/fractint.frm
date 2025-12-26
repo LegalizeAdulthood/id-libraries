@@ -7202,3 +7202,10 @@ OK-08 {
   ;SOURCE: fractint.frm
 }
  
+Jm_03 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))*pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 

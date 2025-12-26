@@ -18,3 +18,23 @@ ULI_5 {
   ;SOURCE: fractint.frm
 }
  
+ULI_1 {
+  z = Pixel: z = fn1(1/fn2(z))
+  |z| <= 4
+  ;SOURCE: uli.frm
+}
+ 
+ULI_6 {
+  z = Pixel:
+  z = fn1(p1+z)*fn2(p2-z)
+  |z| <= p2+16
+  ;SOURCE: fractint.frm
+}
+ 
+ULI_6 {
+  z = Pixel:
+  z = fn1(p1+z)*fn2(p2-z)
+  |z| <= p2+16
+  ;SOURCE: fractint.frm
+}
+ 

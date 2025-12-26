@@ -58,3 +58,17 @@ Newton4 (XYAXIS) {; Mark Peterson
   ;SOURCE: fractint.frm
 }
  
+Jm_27 {; generalized Jm Collard-Richard type
+  z=pixel, t=p1+4:
+  sqrz=fn1(z), z=sqrz + 1/sqrz + pixel
+  |z|<=t
+  ;SOURCE: fractint.frm
+}
+ 
+LeeMandel3 (XAXIS) {; Kevin Lee
+  z=Pixel, c=Pixel-sqr(z):
+  c=Pixel+c/z, z=c-z*pixel
+  |z|<4
+  ;SOURCE: fractint.frm
+}
+ 

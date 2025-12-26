@@ -1,0 +1,70 @@
+comment { updat01a.par, for my WWW home page ... July 15, 1995
+
+         file and images are copyright (c) 1995, don lebow.
+         All rights reserved.
+
+         Commercial use without prior arrangement is prohibited.
+
+         This file requires the formula file DONS.FRM, and Fractint,
+         version 19.2 
+
+         Enjoy.
+
+         - don
+           76704.41@compuserve.com
+           mdon@aloha.net
+  }
+
+shell-game         { ; color cycle this one
+  reset=1920 type=lambda(fn||fn) function=tan/flip passes=b
+  corners=-0.118336/0.118336/-0.086597511/0.090906489 params=-1/0.5/3
+  float=y decomp=128
+  colors=000SSS<8>zzz<15>000<15>zn0<15>000<15>zzz<15>004<10>E0cF0gG0jH0nI0\
+  qK0u<13>308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>00\
+  0<5>OOO
+  }
+show-me            {
+  reset=1920 type=formula formulafile=dons.frm formulaname=Zeppo
+  function=cos/cosxx passes=1
+  corners=-5.255015/6.108621/-3.709788/4.812939 params=1/0/0/0/0/0
+  float=y decomp=256
+  colors=0000bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URv\
+  XTzYVz<14>yxx<15>XTz<6>JJbHHZFGVDERBDN<4>033<15>xWG<15>zzz<15>xWG<15>000\
+  <14>0`a
+  }
+flutterby          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-21
+  function=cotan/conj/cosh passes=b
+  corners=-3.3401502/-2.9321502/0.2594739/-0.2845261/-2.9321502/-0.2845261
+  params=1/2/0/0/0/0 float=y inside=bof61 outside=real decomp=256
+  colors=000332<14>zzy<15>000<15>z0F<15>000<15>zzy<15>000<2>0870BA0ED0HG0J\
+  I<8>0gf<12>087065032000443<14>zzy<15>000<15>zn0<15>000<15>zzy<15>003<10>\
+  E0bF0fG0iH0mI0pK0t<14>203
+  }
+kaleido-eye        {
+  reset=1920 type=lambda(fn||fn) function=cotanh/flip passes=b
+  corners=-0.976/0.976/-0.732/0.732 params=1/2/0.5 float=y
+  outside=real decomp=256
+  colors=WWW6Oy<7>2`y2by2cy1dy<4>0iy0iy0jy0jy0jy0jz<66>2Za2Z`2Z`3Y_3__2`_<\
+  5>0g`0h`0ha0ia<5>0jb0jb0ib<4>1ec1dc1cc2bd2`d3_d<11>9GfAEfBCgCAgD9g<5>I2h\
+  J1hK1i<6>Q0jR0jR1j<4>W5kX6lX8l<9>dOndQneRneTnfVn<4>hboicpidpiepifp<2>jiq\
+  jiqjjqjjqjjq<3>jjrjirjirjhsjgs<4>hbsh`tg_tgYtfWt<9>aGv`Ev_CvZAvY9v<5>T2w\
+  S1wR1w<6>L0xK0xK1x<4>F5xE6xE8x<8>7My
+  }
+moderne            {
+  reset=1920 type=barnsleyj2 passes=b
+  corners=-0.58071485/-0.69730866/-0.570145414/-0.657590769
+  params=0.1/2 float=y inside=maxiter decomp=256 periodicity=0
+  colors=000XG0<49>hZ0h_0h_1h`2<71>zzz000<32>zzz800900000<47>M10M10M10M10M\
+  10<2>N30O30O30O30O40<2>P40P50Q50Q60Q60<25>WG0
+  }
+shades             {
+  reset=1820 type=lambda(fn||fn) function=conj/exp passes=b
+  corners=-14.54309/-2.429885/8.038583/-8.112358/-2.429885/-8.112358
+  params=12/0.5/6 float=y inside=bof60 outside=real
+  potential=255/128/0
+  colors=000KDj<5>ECLDBGCBCBA7885654332444<14>zzz<15>000<15>zQZ<15>000<15>\
+  d0j<15>000<3>0AA0DD0GG0JJ0MM<2>0UU0XX2YY<35>xvvzwwyww<33>KYWJXVIWUGVTGWV\
+  GXW<3>Ia`JbbJccKeeKdd<26>25823712600410731B<12>MCtNDwMDsLDo
+  }
+
