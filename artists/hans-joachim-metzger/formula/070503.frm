@@ -150,20 +150,18 @@ if (vb)
  if (d3)
   z=(z*z-real(c))^(z*u+imag(c))       ;frm: Albrecht Niekamp
  else
-  z2=fn1(z)+c                                   ;frm: Many_mods Linda
-Allison
+  z2=fn1(z)+c                                   ;frm: Many_mods Linda Allison
   sqz2=cos(z2)
   z=c*(1-sqz2)/(1+sqz2)
  endif
-else if (ab)
+elseif (ab)
  z=z*z+c+c*c-p7                           ;frm: Puskas Istvan
 else
- z2=z*z                                          ;frm: Puskas Istvan
-modified
+ z2=z*z                                          ;frm: Puskas Istvan modified
  z=z2*z2+(p6+u)*z2+c-p1*(d3==0)
 endif
 bo=|z|
-If (wo)
+if (wo)
  t=t+1
  if ((t<mi1)+(bo>b1))
   u=2*(fn1(t/fac1))

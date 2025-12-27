@@ -31,14 +31,14 @@ Carr-150 {
  
 Carr-151 {; Dr. Chaosbrot 1 Modified
   z=c=pixel:
-  z=sqr(z*z) + (((sqrt 5+1)/2)+c)
+  z=sqr(z*z) + (((sqrt(5)+1)/2)+c)
   |z| <=4
   ;SOURCE: carr.frm
 }
  
 Carr-152 {
   z=c=1/pixel:
-  z=cosxx(flip(z*z/pixel)) + (((sqrt 5+1)/2) + c)
+  z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c)
   z=sqr(flip(z))+c
   |z| <=4
   ;SOURCE: carr.frm
@@ -46,7 +46,7 @@ Carr-152 {
  
 Carr-153 {
   z=c=1/pixel:
-  z=tanh(z*z/pixel)+(((sqrt 5+1)/2)+c)
+  z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c)
   z=sqr(flip(z))+c
   |z| <=4
   ;SOURCE: carr.frm

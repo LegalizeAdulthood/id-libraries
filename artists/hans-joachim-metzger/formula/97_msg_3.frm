@@ -519,8 +519,8 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
-   y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
     |z| <= 32

@@ -1038,7 +1038,7 @@ Allison
   sqz2=cos(z2)
   z=c*(1-sqz2)/(1+sqz2)
  endif
-else if (ab)
+elseif (ab)
  z=z*z+c+c*c-p7                           ;frm: Puskas Istvan
 else
  z2=z*z                                          ;frm: Puskas Istvan
@@ -6023,7 +6023,7 @@ ManInTheOzone (XAXIS_NOPARM) {
  
 Natura (xyaxis) {; phi yoni
   z = pixel:
-  z = z*z*z + ((sqrt 5 + 1)/2) 
+  z = z*z*z + ((sqrt(5) + 1)/2) 
   |z| <= 4
   ;SOURCE: drcha.frm
 }
