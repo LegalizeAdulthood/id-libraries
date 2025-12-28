@@ -17,7 +17,7 @@ bof62_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, zmin=zc
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -26,7 +26,7 @@ bof62_man { ; Kerry Mitchell 04feb98
         if ((r>maxr)||(iter==maxit))
           iter=-1
           z=zmin
-          end if
+          endif
         iter>0
 	}
 
@@ -50,7 +50,7 @@ bof61_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, itermin=iter
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -60,7 +60,7 @@ bof61_man { ; Kerry Mitchell 04feb98
           iter=-1
           angle61=scale61*itermin
           z=cos(angle61)+flip(sin(angle61))
-          end if
+          endif
         iter>0
 	}
 
@@ -83,7 +83,7 @@ bof60_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -94,7 +94,7 @@ bof60_man { ; Kerry Mitchell 04feb98
           iter=-1
           angle60=log(minr)
           z=cos(angle60)+flip(sin(angle60))
-          end if
+          endif
         iter>0
 	}
 
@@ -121,7 +121,7 @@ bof6061_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, itermin=iter
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -135,7 +135,7 @@ bof6061_man { ; Kerry Mitchell 04feb98
           angle61=scale61*itermin
           angle=weight60*angle60+weight61*angle61
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
 
@@ -162,7 +162,7 @@ bof6162_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, itermin=iter, zmin=zc
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -176,7 +176,7 @@ bof6162_man { ; Kerry Mitchell 04feb98
           angle62=imag(log(zmin))
           angle=weight61*angle61+weight62*angle62
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
 
@@ -203,7 +203,7 @@ bof6260_man { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, zmin=zc
-          end if
+          endif
 ;
 ;       bailout--escape or maximum iterations
 ;         set "iteration done" flag (iter-1)
@@ -217,7 +217,7 @@ bof6260_man { ; Kerry Mitchell 04feb98
           angle60=log(minr)
           angle=weight62*angle62+weight60*angle60
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
 
@@ -240,7 +240,7 @@ bof62_jul { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, zmin=zc
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -250,7 +250,7 @@ bof62_jul { ; Kerry Mitchell 04feb98
         if ((r>maxr)||(iter==maxit))
           iter=-1
           z=zmin
-          end if
+          endif
         iter>0
 	}
 
@@ -274,7 +274,7 @@ bof61_jul { ; Kerry Mitchell 04feb98
 ;
        if (r<minr)
           minr=r, itermin=iter
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -285,7 +285,7 @@ bof61_jul { ; Kerry Mitchell 04feb98
           iter=-1
           angle61=scale61*itermin
           z=cos(angle61)+flip(sin(angle61))
-          end if
+          endif
         iter>0
 	}
 
@@ -308,7 +308,7 @@ bof60_jul { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -320,7 +320,7 @@ bof60_jul { ; Kerry Mitchell 04feb98
           iter=-1
           angle60=log(minr)
           z=cos(angle60)+flip(sin(angle60))
-          end if
+          endif
         iter>0
 	}
 
@@ -347,7 +347,7 @@ bof6061_jul { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, itermin=iter
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -362,7 +362,7 @@ bof6061_jul { ; Kerry Mitchell 04feb98
           angle61=scale61*itermin
           angle=weight60*angle60+weight61*angle61
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
 
@@ -389,7 +389,7 @@ bof6162_jul { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, itermin=iter, zmin=zc
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -404,7 +404,7 @@ bof6162_jul { ; Kerry Mitchell 04feb98
           angle62=imag(log(zmin))
           angle=weight61*angle61+weight62*angle62
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
 
@@ -431,7 +431,7 @@ bof6260_jul { ; Kerry Mitchell 04feb98
 ;
         if (r<minr)
           minr=r, zmin=zc
-          end if
+          endif
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
 ;
 ;       bailout--escape or maximum iterations
@@ -446,6 +446,6 @@ bof6260_jul { ; Kerry Mitchell 04feb98
           angle60=log(minr)
           angle=weight62*angle62+weight60*angle60
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
 	}
