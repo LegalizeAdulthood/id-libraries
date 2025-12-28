@@ -30,8 +30,8 @@ Multifrac_202f { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>4) || (t>647)
-   u=fn1(t\fac)
+  if (|z|>4 || t>647)
+   u=fn1(t/fac)
    z=0
    start=0
    endif
@@ -53,7 +53,7 @@ Multifrac_202 {  ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>4) || (t>647)
+  if (|z|>4 || t>647)
    u=fn1(t/fac)
    z=0
    start=0
@@ -76,7 +76,7 @@ Multifrac_203 { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>4) || (t>647)
+  if (|z|>4 || t>647)
    u=fn1(t/fac)
    z=0
    c=c*u
@@ -100,7 +100,7 @@ Multifrac_204 { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>4) || (t>647)
+  if (|z|>4 || t>647)
    u=fn1(t/fac)
    z=0
    start=0
@@ -123,7 +123,7 @@ Multifrac_204a { ;Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>4) || (t>647)
+  if (|z|>4 || t>647)
    u=fn1(t/fac)
    z=0
    start=0
@@ -148,7 +148,7 @@ Multifrac_204b {  ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=0
    start=0
@@ -173,7 +173,7 @@ Multifrac_204c {  ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    z=0
    start=0
@@ -254,7 +254,7 @@ Multifrac_205 {;  Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^z+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=0
    start=0
@@ -279,7 +279,7 @@ Multifrac_206 { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^z+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=0
    start=0
@@ -304,7 +304,7 @@ Multifrac_207 { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=pixel
    c=p3*u
@@ -330,7 +330,7 @@ Multifrac_208 { ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=pixel
    c=p3/u
@@ -355,7 +355,7 @@ Multifrac_209 { ; Albrecht Niekamp  feb,03
  :
  z=z^z+c
  if (start)
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=pixel
    c=p3/u
@@ -379,7 +379,7 @@ Multifrac_210 { ; Albrecht Niekamp  feb,03
  z=z^z+c
  if (start)
   t=t+1
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=pixel
    c=p3*u
@@ -414,7 +414,7 @@ Multifrac_211 { ;  Albrecht Niekamp  feb,03
  x = x2-y2-real(c)
  y = 2*x*y-imag(c)
  z = z^(z+x-y)    
- if (|z|>=border) || (t>out)
+ if (|z|>=border || t>out)
    u=fn1(t/fac)
    if (ismand)
      z=0
@@ -462,7 +462,7 @@ Multifrac_212 { ;  Albrecht Niekamp  feb,03
  x = x2-y2-real(c)
  y = 2*x*y-imag(c)
  z = z^(z+x-y)    
- if (|z|>=border) || (t>out)
+ if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    if (ismand)
      z=0
@@ -508,7 +508,7 @@ Multifrac_213 { ;  Albrecht Niekamp  feb,03
  z=z^(z+x-y)
  if (start)
    t=t+1
-   if (|z|>=border) || (t>out)
+   if (|z|>=border || t>out)
      u=2*(fn1(t/fac))
      z=pixel
      c=p3*u
@@ -541,7 +541,7 @@ Multifrac_214 { ;  Albrecht Niekamp  feb,03
  z=z^(z+x-y)
  if (start)
    t=t+1
-   if (|z|>=border) || (t>out)
+   if (|z|>=border || t>out)
      u=2*(fn1(t/fac))
      z=pixel
      c=p3^u
@@ -574,7 +574,7 @@ Multifrac_215 { ;  Albrecht Niekamp  feb,03
  z=(z*x)^(z*y)
  if (start)
    t=t+1
-   if (|z|>=border) || (t>out)
+   if (|z|>=border || t>out)
      u=2*(fn1(t/fac))
      z=pixel
      c=p3*u
@@ -600,7 +600,7 @@ Multifrac_216 { ;  Albrecht Niekamp  feb,03
  z=(z+imag(c))^(z+real(c))
  if (start)
   t=t+1
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    z=pixel
    c=p3*u
@@ -624,7 +624,7 @@ Multifrac_216a { ;  Albrecht Niekamp  feb,03
  z=(z+imag(c))^(z+real(c))
  if (start)
   t=t+1
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    z=pixel
    c=p3*u
@@ -1060,7 +1060,7 @@ Multifrac_225 {
  z=z^z+c
  if (start)
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=p3*u
@@ -1089,7 +1089,7 @@ Multifrac_226 {
  endif
  if (start)
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=pixel
@@ -1115,7 +1115,7 @@ Multifrac_227 {
  z=(z+real(c))^(z+imag(c))
  if (start)
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=p3*u
@@ -1140,7 +1140,7 @@ Multifrac_228 {
  if (start)
  z=(z+real(c))^(z+imag(c))
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=PIXEL
@@ -1167,7 +1167,7 @@ Multifrac_229 {
  if (start)
  z=(z+real(c))^(z+imag(c))
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     start=0

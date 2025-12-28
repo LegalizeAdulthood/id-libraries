@@ -663,7 +663,7 @@ Multifrac_204c {
   if (start)
     t=t+1
     z=z^2+c
-    if (|z|>=border) || (t>out)
+    if (|z|>=border || t>out)
       u=2*(fn1(t/fac))
       z=0
       start=0
@@ -687,7 +687,7 @@ Multifrac_204c {  ; Albrecht Niekamp  feb,03
  if (start)
   t=t+1
   z=z^2+c
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    z=0
    start=0
