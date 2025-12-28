@@ -6,7 +6,7 @@
 
   oof8 (XYAXIS) {
   z = pixel:
-  z = z^(fn2(z^(fn1)))
+  z = z^(fn2(z^(fn1(z))))
   z = z + pixel
   z = fn1(z) * p1
   |z| <= p2

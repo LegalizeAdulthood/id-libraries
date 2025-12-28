@@ -5315,7 +5315,7 @@ frm-C2 {
 
 frm-D1 {; Unparsable expression ignored
   z = c = pixel:
-  z = z*z + sin z + c
+  z = z*z + sin(z) + c
   |z| < 4
   ;SOURCE: frmtutor.frm
 }

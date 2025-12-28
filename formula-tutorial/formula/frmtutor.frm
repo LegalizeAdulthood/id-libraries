@@ -244,7 +244,7 @@ sym-B (xaxis) { ;Sym-A with symmetry declared in error
 
 frm-D1 { ;Unparsable expression ignored
   z = c = pixel:
-    z = z*z + sin z + c
+    z = z*z + sin(z) + c
     |z| < 4
 }
 

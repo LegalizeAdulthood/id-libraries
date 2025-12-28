@@ -707,7 +707,7 @@ Lesfrm08 {; Les St Clair, 1996
 
 Lesfrm09 {; Les St Clair, 1996 
   c=z=tan(pixel):
-  z=z+p1*fn1(z)-(fn1)*c,
+  z=z+p1*fn1(z)-(fn1(z))*c,
   |z| <=10
   ;SOURCE: les.frm
 }
