@@ -5,24 +5,30 @@ z=(z*z+c)+(maria/p1)
 |z|<4
 }
 
-BEJ_N13  {;
-z=pixel,c=atan(pixel):
-z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
-zsqr=z*z
-x = (1.5+z^p1)^(1/p1)
-z = z*(1+y)/(1-x) + p2
-z=fn1(z)+c
-z=fn2(z)-c
-|z| <4
+BEJ_N13 {; Revised for Fractint v. 20 by George Martin
+         ; Second line was
+         ; z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
+  z=pixel, c=atan(pixel):
+  z=z^sqr(5+1/p1)*(-1+3/p2)
+  zsqr=z*z
+  x = (1.5+z^p1)^(1/p1)
+  z = z*(1+y)/(1-x) + p2
+  z=fn1(z)+c
+  z=fn2(z)-c
+  |z| <4
+  ;SOURCE: bej's.frm
 }
 
-BEJ_M9{;
-fn1(z)=pixel:
-z=z*z+c
-z=z*z
-z=fn1(z*z+c)
-z=fn2(fn3(z+z*c))
-|z*z+c|<4
+BEJ_M9 {; Revised for Fractint v. 20 by George Martin
+        ; first line was
+        ; fn1(z)=pixel:
+  z=pixel:
+  z=z*z+c
+  z=z*z
+  z=fn1(z*z+c)
+  z=fn2(fn3(z+z*c))
+  |z*z+c|<4
+  ;SOURCE: bejones.frm
 }
 
 BEJ_22  {;

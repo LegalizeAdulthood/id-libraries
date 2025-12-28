@@ -126,7 +126,7 @@ Multifrac_215 {
   z=(z*x)^(z*y)
   if (start)
     t=t+1
-    if (|z|>=border) || (t>out)
+    if (|z|>=border || t>out)
       u=2*(fn1(t/fac))
       z=pixel
       c=p3*u
@@ -158,7 +158,7 @@ Multifrac_215 { ;  Albrecht Niekamp  feb,03
  z=(z*x)^(z*y)
  if (start)
    t=t+1
-   if (|z|>=border) || (t>out)
+   if (|z|>=border || t>out)
      u=2*(fn1(t/fac))
      z=pixel
      c=p3*u
@@ -638,7 +638,7 @@ Multifrac_228 {
  if (start)
  z=(z+real(c))^(z+imag(c))
   t=t+1
-  if (t>out) || (|z|>=border)
+  if (t>out || |z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=PIXEL
@@ -710,7 +710,7 @@ Multifrac_209 {
   :
   z=z^z+c
   if (start)
-    if (|z|>=border) || (t>out)
+    if (|z|>=border || t>out)
       u=fn1(t/fac)
       z=pixel
       c=p3/u
@@ -732,7 +732,7 @@ Multifrac_209 { ; Albrecht Niekamp  feb,03
  :
  z=z^z+c
  if (start)
-  if (|z|>=border) || (t>out)
+  if (|z|>=border || t>out)
    u=fn1(t/fac)
    z=pixel
    c=p3/u

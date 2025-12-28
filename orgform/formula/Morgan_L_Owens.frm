@@ -1017,7 +1017,7 @@ brr=sqr(br)
 crr=sqr(cr)
 rr=sqr(r)
 
-z=pixel:
+z=pixel
 :
 inside=0
 if(|z-ap|<arr)

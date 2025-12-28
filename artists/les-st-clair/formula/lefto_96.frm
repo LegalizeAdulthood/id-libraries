@@ -240,7 +240,8 @@ Lesfrm16 {; Les St Clair, 1996
 
 Lesfrm25 { ; Les St Clair, 1996
            ; Modified formula, sorry I don't remember who's!!
- z = 1/c = pixel
+ c = pixel
+ z = 1/c
  x=real(z), y=imag(z)
  i = (x<.7) && (x>-.1)
  test = 1*real(i) || y<1:
@@ -251,7 +252,8 @@ Lesfrm25 { ; Les St Clair, 1996
 
 Lesfrm26 { ; Les St Clair, 1996
            ; Modified formula, sorry I don't remember who's!!
- z = 1/c = pixel^p3
+ c = pixel^p3
+ z = 1/c
  x=real(z), y=imag(z)
  i = (x<.7) && (x>-.1)
  test = 1*real(i) || y<1:
