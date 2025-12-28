@@ -612,7 +612,7 @@ Multifrac_228 {
   if (start)
   z=(z+real(c))^(z+imag(c))
    t=t+1
-   if (t>out) || (|z|>=border)
+   if (t>out || |z|>=border)
      u=2*(fn1(t/fac))
      z=z/u
      c=PIXEL
