@@ -911,7 +911,7 @@ z=sqr(flip(z*z*z)) + c,
 
 
 Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
-  z = log(pixel) + 4c, z = cosxx(z): 
+  z = log(pixel) + 4*c, z = cosxx(z): 
  z = z + cosxx(pixel);
  z = sqr(z)
      Lastsqr <=4 
