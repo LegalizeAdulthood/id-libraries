@@ -34963,21 +34963,6 @@ z=fn1(p1/z)/fn2(p2/pixel)
 |z|<4
 }
 
-Testing {
-;Rui Parracho
-;periodicity off
-init:
-z=0
-n=0
-loop:
-n=n+1
-z=z*z+#pixel
-bailout:
-(n/|z|)<= 512
-default:
-title = "Testing"
-}
-
 TetraSpheres {
 ;Four mirrored spheres at the corners of a
 ;tetrahedron, each touching the other three.
