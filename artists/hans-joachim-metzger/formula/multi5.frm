@@ -24,7 +24,7 @@ Multifrac_204f {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_204f {  ; Albrecht Niekamp  feb,03
  fac=real(p1)
  bailout=imag(p1)
@@ -51,7 +51,7 @@ Multifrac_204f {  ; Albrecht Niekamp  feb,03
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_204f {
   fac=real(p1)
   bailout=imag(p1)
@@ -78,7 +78,7 @@ Multifrac_204f {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_204f {  ; Albrecht Niekamp  feb,03
  fac=real(p1)
  bailout=imag(p1)
@@ -105,7 +105,7 @@ Multifrac_204f {  ; Albrecht Niekamp  feb,03
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_215 {
   ;p3=julia seed
   fac=real (p1)
@@ -137,14 +137,14 @@ Multifrac_215 {
   endif
   |z| <=bailout
   }
- 
+
 Multifrac_215 { ;  Albrecht Niekamp  feb,03
  ;p3=julia seed
  fac=real (p1)
  bailout=imag(p1)
  out=real (p2)
  border=imag(p2)
- z=pixel 
+ z=pixel
  c=p3
  t=0
  start=1
@@ -169,7 +169,7 @@ Multifrac_215 { ;  Albrecht Niekamp  feb,03
  endif
  |z| <=bailout
  }
- 
+
 Multifrac_218 {
   fac=real(p1)
   bailout=imag(p1)
@@ -197,7 +197,7 @@ Multifrac_218 {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_218 {
  fac=real(p1)
  bailout=imag(p1)
@@ -225,7 +225,7 @@ Multifrac_218 {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_218a {
   fac=real(p1)
   bailout=imag(p1)
@@ -252,7 +252,7 @@ Multifrac_218a {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_218a {
  fac=real(p1)
  bailout=imag(p1)
@@ -279,7 +279,7 @@ Multifrac_218a {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_219a {
   fac=real(p1)
   bailout=imag(p1)
@@ -309,7 +309,7 @@ Multifrac_219a {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_219a {
  fac=real(p1)
  bailout=imag(p1)
@@ -339,7 +339,7 @@ Multifrac_219a {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_219c {
   fac=real(p1)
   bailout=imag(p1)
@@ -369,7 +369,7 @@ Multifrac_219c {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_219c {
  fac=real(p1)
  bailout=imag(p1)
@@ -399,7 +399,7 @@ Multifrac_219c {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_219d {
   fac=real(p1)
   bailout=imag(p1)
@@ -429,7 +429,7 @@ Multifrac_219d {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_219d {
  fac=real(p1)
  bailout=imag(p1)
@@ -459,7 +459,7 @@ Multifrac_219d {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_220a {
   fac=real(p1)
   bailout=imag(p1)
@@ -493,7 +493,7 @@ Multifrac_220a {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_220a {
  fac=real(p1)
  bailout=imag(p1)
@@ -527,7 +527,7 @@ Multifrac_220a {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_224 {
   fac=real(p1)
   bailout=imag(p1)
@@ -562,7 +562,7 @@ Multifrac_224 {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_224 {
  fac=real(p1)
  bailout=imag(p1)
@@ -581,13 +581,13 @@ Multifrac_224 {
  endif
  if (start)
   t=t+1
-  if (t>out) 
+  if (t>out)
     u=2*(fn1(t/fac))
     z=z/u
     c=p3*u
     start=0
    endif
-  if (|z|>=border)   
+  if (|z|>=border)
   u=2*(fn2(t/fac))
     z=z/u
     c=pixel
@@ -597,7 +597,7 @@ Multifrac_224 {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_228 {
   fac=real(p1)
   bailout=imag(p1)
@@ -673,7 +673,7 @@ Multifrac_204c {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_204c {  ; Albrecht Niekamp  feb,03
  fac=real(p1)
  bailout=imag(p1)
@@ -697,7 +697,7 @@ Multifrac_204c {  ; Albrecht Niekamp  feb,03
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_209 {
   fac=real(p1)
   bailout=imag(p1)
@@ -719,7 +719,7 @@ Multifrac_209 {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_209 { ; Albrecht Niekamp  feb,03
  fac=real(p1)
  bailout=imag(p1)
@@ -741,4 +741,4 @@ Multifrac_209 { ; Albrecht Niekamp  feb,03
  endif
  |z|<=bailout
  }
- 
+
