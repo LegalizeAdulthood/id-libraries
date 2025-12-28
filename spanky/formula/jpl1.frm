@@ -59,15 +59,6 @@ c=P1:
 Z=fn1(C*(Z^P2-1)),
 |z|<=P3}
 
-;-----------------------------
-; formulas for other fractals
-JPL4' (yaxis) {;J.P. Louvet
-z=Pixel,
-c=Pixel:
-fn1(z)=fn1(z^2+1)+c,
-|z|<=4
-}
-
 BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
     tmp1=fn1(z)^fn2(z),
