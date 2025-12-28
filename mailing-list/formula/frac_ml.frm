@@ -14263,7 +14263,7 @@ GregsJuliaZ1 {;  Greg McClure
 ; p1 = point, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
-  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:=20
+  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:
    z = fn1(z)^fn2(z) + fn3(z)^p2 + p1
    ip = imag(p3)
    rz = real(z)
@@ -14296,7 +14296,7 @@ GregsJuliaZ2 {;  Greg McClure
 ; p1 = point, p2 = power, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
-  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:=20
+  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:
    z = fn1(z)^fn2(-z) + fn3(z)^p2 + p1
    ip = imag(p3)
    rz = real(z)
@@ -14330,7 +14330,7 @@ GregsJuliaZ3 {;  Greg McClure
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p1 = 0/0, p2 = 1/0, p3 = 2/0, fn1/fn2 = sqr/zero = standard Mandelbrot
 ; p1 = 0/0, p2 = 2/0, p3 = 2/0, fn1/fn2 = ident/zero = standard Mandelbrot
-  z = Pixel, z = fn1(z)^p2 + fn2(z)^(-p2) + p1:=20
+  z = Pixel, z = fn1(z)^p2 + fn2(z)^(-p2) + p1:
    z = fn1(z)^p2 + fn2(z)^(-p2) + p1
    ip = imag(p3)
    rz = real(z)
