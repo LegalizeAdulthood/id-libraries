@@ -677,7 +677,7 @@ JoWe_XY_46 {; Jo Weber [100424,35] 11/1996
  
 JoWe_XY_51m {; Jo Weber [100424,35] 11/1996
              ; Added variable "newpixel". G. Martin 6/27/99
-  k=(6 4), l = (0 4)
+  k=(6, 4), l = (0, 4)
   newpixel=cos(sin((k-pixel)/(l+pixel)))
   z=newpixel
   bailout=p3:
