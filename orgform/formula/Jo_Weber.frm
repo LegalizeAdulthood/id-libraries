@@ -4561,7 +4561,7 @@ quatro(XYAXIS)  {
 quilt(XAXIS) {
 ; The combination of a typing error and a bug in fractints parser
 ; makes weird quilt like patterns, I hope they don't fix it. I like it.
-     z = = zp1 = pixel, zp2 = (0,0):
+     z = zp1 = pixel, zp2 = (0,0):
       temp = z
       z = zp2*zp2  - zp1
       zp2 = zp1
