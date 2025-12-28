@@ -182,7 +182,7 @@ z=sqr(z) + c*c,
 
 12-Carr{
 z=c=cosxx(1/pixel):
-z=cosxx(z*z) + (sin(z) + c,
+z=cosxx(z*z) + sin(z) + c,
 |z| <=10
 }
 
