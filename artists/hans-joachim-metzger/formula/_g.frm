@@ -400,7 +400,7 @@ Carr-220 {; 100's of diff. Inv. Mandels
  
 Carr-27 {; Carr-24 Modified
   c=z=1/pixel:
-  z=sqr(z) + (c-1 1/4)
+  z=sqr(z) + (c-1)*(1/4)
   |z| <=10
   ;SOURCE: carr.frm
 }
