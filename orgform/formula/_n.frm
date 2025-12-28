@@ -323,7 +323,7 @@ na1 {
 
 Natura (xyaxis) {; phi yoni
   z = pixel:
-  z = z*z*z + ((sqrt 5 + 1)/2) 
+  z = z*z*z + ((sqrt(5) + 1)/2) 
   |z| <= 4
   ;SOURCE: drcha.frm
 }

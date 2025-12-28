@@ -667,7 +667,7 @@ Carr-150 {
 
 Carr-151 {; Dr. Chaosbrot 1 Modified
   z=c=pixel:
-  z=sqr(z*z) + (((sqrt 5+1)/2)+c)
+  z=sqr(z*z) + (((sqrt(5)+1)/2)+c)
   |z| <=4
   ;SOURCE: carr.frm
 }
@@ -675,7 +675,7 @@ Carr-151 {; Dr. Chaosbrot 1 Modified
 
 Carr-152 {
   z=c=1/pixel:
-  z=cosxx(flip(z*z/pixel)) + (((sqrt 5+1)/2) + c)
+  z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c)
   z=sqr(flip(z))+c
   |z| <=4
   ;SOURCE: carr.frm
@@ -684,7 +684,7 @@ Carr-152 {
 
 Carr-153 {
   z=c=1/pixel:
-  z=tanh(z*z/pixel)+(((sqrt 5+1)/2)+c)
+  z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c)
   z=sqr(flip(z))+c
   |z| <=4
   ;SOURCE: carr.frm
@@ -2950,7 +2950,7 @@ Carr-391 {
 
 
 Carr-392 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=z*z+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2958,7 +2958,7 @@ Carr-392 {; Distance Estimator works here
 
 
 Carr-393 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=z*z*z+flip(c*c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2966,7 +2966,7 @@ Carr-393 {; Distance Estimator works here
 
 
 Carr-394 {
-  z=c=((sqrt 3 + 0.5)/0.124)/pixel:
+  z=c=((sqrt(3) + 0.5)/0.124)/pixel:
   z=z*z*z+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2974,7 +2974,7 @@ Carr-394 {
 
 
 Carr-395 {
-  z=c=((sqrt 9 + 2.234)/0.324)/pixel:
+  z=c=((sqrt(9) + 2.234)/0.324)/pixel:
   z=z*z*z+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2982,7 +2982,7 @@ Carr-395 {
 
 
 Carr-396 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=conj(z*z)+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2990,7 +2990,7 @@ Carr-396 {; Distance Estimator works here
 
 
 Carr-397 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=1/conj(z*z)+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -2998,7 +2998,7 @@ Carr-397 {; Distance Estimator works here
 
 
 Carr-398 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=1/sqr(z*z)+flip(c)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -3006,7 +3006,7 @@ Carr-398 {; Distance Estimator works here
 
 
 Carr-399 {; Distance Estimator works here
-  z=c=((sqrt 5 + 1)/2)/pixel:
+  z=c=((sqrt(5) + 1)/2)/pixel:
   z=z*z+flip(c/2)
   |z| <=10
   ;SOURCE: 08carr.frm
@@ -3370,8 +3370,8 @@ Carr-439 {
 
 Carr-44 {; Drcha.frm-test-1 Modified
   c=pixel
-  z=((sqrt 5 +1)/2):
-  z=(z*z*z*z*z*z) + pixel*(sqrt 5 + 1)/2 +c
+  z=((sqrt(5) +1)/2):
+  z=(z*z*z*z*z*z) + pixel*(sqrt(5) + 1)/2 +c
   |z| <= 4
   ;SOURCE: carr-1.frm
 }

@@ -9309,8 +9309,8 @@ Test0622a {; Jim Muth
 
 test1 (xyaxis) {; =phi
   c = pixel 
-  z = ((sqrt 5 + 1)/2):
-  z =  z*z + pixel*((sqrt 5 + 1)/2) + c
+  z = ((sqrt(5) + 1)/2):
+  z =  z*z + pixel*((sqrt(5) + 1)/2) + c
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -9364,8 +9364,8 @@ Test17 {; Jim Muth
 
 
 test2 (xyaxis) {; =phi 
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z*z + pixel*((sqrt 5 + 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -9454,8 +9454,8 @@ tetrate {
 
 
 Tetratephi (xyaxis) {; ?
-  z  = c = ((sqrt 5 +1)/2)/pixel:
-  z = c^z + ((sqrt 5 +1)/2) 
+  z  = c = ((sqrt(5) +1)/2)/pixel:
+  z = c^z + ((sqrt(5) +1)/2) 
   |z| <= 4
   ;SOURCE: drcha.frm
 }

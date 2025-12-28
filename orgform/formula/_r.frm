@@ -1419,7 +1419,7 @@ rangecount-y_jul {; Kerry Mitchell
 
 Raphaelbrot (xyaxis) {; phi
   z = pixel:
-  z = sqr(z) + ((sqrt 5 - 1)/2) 
+  z = sqr(z) + ((sqrt(5) - 1)/2) 
   |z| <= 4
   ;SOURCE: drcha.frm
 }

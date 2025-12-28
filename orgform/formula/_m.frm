@@ -4614,7 +4614,7 @@ Mi_Mini {; an automatic Mix
 
 Michaelbrot (origin) {; based on Golden Mean
   z = pixel:
-  z = sqr(z) + ((sqrt 5 + 1)/2) 
+  z = sqr(z) + ((sqrt(5) + 1)/2) 
   |z| <= 4
   ;SOURCE: drcha.frm
 }

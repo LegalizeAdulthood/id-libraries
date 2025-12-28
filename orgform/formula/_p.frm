@@ -11294,8 +11294,8 @@ phfx2 {
 
 
 phi01 (xyaxis) {; try inside=maxiter and outside=imag on these
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z + pixel*((sqrt 5 + 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: formulas.frm
 }
@@ -11303,24 +11303,24 @@ phi01 (xyaxis) {; try inside=maxiter and outside=imag on these
 
 phi02 (xyaxis) {; try inside=maxiter and outside=imag on these
   c = pixel 
-  z = ((sqrt 5 + 1)/2):
-  z =  z*z + pixel*((sqrt 5 + 1)/2) + c
+  z = ((sqrt(5) + 1)/2):
+  z =  z*z + pixel*((sqrt(5) + 1)/2) + c
   |z| <= 4
   ;SOURCE: formulas.frm
 }
 
 
 phi03 (xyaxis) {; try inside=maxiter and outside=imag on these
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z*z + pixel*((sqrt 5 + 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: formulas.frm
 }
 
 
 phi04 (xyaxis) {; try inside=maxiter and outside=imag on these
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z + pixel*((sqrt 5 + 1)/2)/((sqrt 5 - 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z + pixel*((sqrt(5) + 1)/2)/((sqrt(5) - 1)/2)
   |z| <= 4
   ;SOURCE: formulas.frm
 }

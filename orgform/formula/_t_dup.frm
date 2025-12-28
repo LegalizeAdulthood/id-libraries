@@ -1,8 +1,8 @@
 
 
 test (xyaxis) {; =phi 
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z + pixel*((sqrt 5 + 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -62,8 +62,8 @@ test2 {; Michael Theroux [71673,2767]
 
 
 test3 (xyaxis) {; =phi 
-  z = ((sqrt 5 + 1)/2)/pixel:
-  z =  z*z + pixel*((sqrt 5 + 1)/2)/((sqrt 5 - 1)/2)
+  z = ((sqrt(5) + 1)/2)/pixel:
+  z =  z*z + pixel*((sqrt(5) + 1)/2)/((sqrt(5) - 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }

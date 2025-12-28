@@ -7898,7 +7898,7 @@ DrChaosbrot {; Michael Theroux [71673,2767]
 
 DrChaosbrot1 (xaxis) {; more phi
   z = c = pixel:
-  z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -7906,7 +7906,7 @@ DrChaosbrot1 (xaxis) {; more phi
 
 DrChaosbrot2 (xyaxis) {; more phi
   z = c = pixel:
-  z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
   |z| <= 4
   ;SOURCE: drcha.frm
 }

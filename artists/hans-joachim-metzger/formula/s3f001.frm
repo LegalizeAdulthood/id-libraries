@@ -29,7 +29,7 @@ DpSpaceProbeTwoC (XAXIS_NOPARM) {
  
 DrChaosbrot2 (xyaxis) {; more phi
   z = c = pixel:
-  z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+  z = sqr(z) + (((sqrt(5) + 1)/2)+c)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
