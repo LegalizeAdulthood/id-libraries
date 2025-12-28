@@ -46,7 +46,7 @@ z=fn1(1/(z^2+c)),
 JPL4' (yaxis) {;J.P. Louvet
 z=Pixel,
 c=Pixel:
-fn1(z)=fn1(z^2+1)+c,
+z=fn1(z^2+1)+c,
 |z|<=4
 }
 
