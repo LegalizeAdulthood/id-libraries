@@ -1,4 +1,4 @@
-Readme {
+Comment {
 ;This .FRM file by Mike Wareman.
 ;Secant method general formula:
 ;z[k+1] = z[k] - f(z[k]) * (z[k] - z[k-1]) / (f(z[k]) - f(z[k-1])

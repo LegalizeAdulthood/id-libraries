@@ -1,7 +1,7 @@
 
 
 
-hints {; All of these need float . They are all distorted M-Sets.
+Comment {; All of these need float . They are all distorted M-Sets.
        }
 
 Ilvifn1-iw { z = Pixel + 1/(fn1(p2*Pixel) - p1) :  

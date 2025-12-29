@@ -1,5 +1,5 @@
 ;------------------------------------ formula file peternew.frm ----------------------------------------------
-!README!  {
+Comment  {
        ;All these formulas are advanced Newton formulas,
        ;more or less, but some may be higly distorted .
        ;Most of them require floating point.

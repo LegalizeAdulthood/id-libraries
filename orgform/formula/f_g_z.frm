@@ -257,7 +257,7 @@ FGZ-Julia-20  {
 
 
 
-Readme {
+Comment {
 ; This Fractint .FRM file (c) 1993 by:
 ;
 ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA

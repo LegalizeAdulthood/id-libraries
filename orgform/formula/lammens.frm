@@ -76,7 +76,7 @@ New_number6  (XAXIS){ z = z1 = z2 = pixel, c1 = real(p1), c2 = imag(p1) :
                |z|< |p2|
                }
  
-My_name  { ; Lammens Bert  :
+Comment  { ; Lammens Bert  :
            ; Student Civil Engineering,
            ; University of Ghent, Belgium,
            ; e-mail blammens@eduserv.rug.ac.be,

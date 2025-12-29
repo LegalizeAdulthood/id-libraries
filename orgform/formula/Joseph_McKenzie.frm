@@ -1,4 +1,4 @@
-Copyright { ;All formulae by Joe McKenzie
+Comment   { ;All formulae copyright by Joe McKenzie
             ;email: joemck@crosswinds.net
             ;You may use them freely as long as you:
             ;(1) distribute it as is and

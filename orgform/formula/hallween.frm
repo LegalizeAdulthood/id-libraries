@@ -25,7 +25,7 @@ z = (-2.7 + 5 * z * conj(z) + 1.5 * real(z ^ 6)) * z + 1 * conj(z * z),
 
 
 
-Readme {
+Comment {
 ; This Fractint .FRM file (c) 1993 by:
 ;
 ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA

@@ -1,4 +1,4 @@
-hints { ;Don't even try without fpu , nwtnwt is the best one 
+Comment { ;Don't even try without fpu , nwtnwt is the best one 
        }
 
 MandNwtX {
