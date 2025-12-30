@@ -379,7 +379,7 @@ Fly(XAXIS_NOPARM)[float=y function=sqr/sqr] {; Jonathan Osuch
    ELSE
       z = fn2(z)-pixel
    ENDIF
-   |z|< = p2
+   |z| <= p2
    }
 
 FlyingSquirrel(XAXIS_NOPARM)[float=y function=sin/cosxx/sqr] {; Jonathan Osuch

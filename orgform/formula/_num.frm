@@ -2374,7 +2374,7 @@
   z = pixel, c = fn1(z):
   z = z + c
   z= (z-p1)^p2 * (c+p2)
-  |z| < =p2
+  |z| <= p2
   ;SOURCE: kg3.frm
 }
 
