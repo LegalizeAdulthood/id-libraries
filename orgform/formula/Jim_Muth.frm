@@ -24,7 +24,7 @@ Bubbles            {; Jim Muth
   a=sqr(z)+(c-1)*z-c
   b=3*sqr(z)+c-1
   z=z-2*a/b,
-  .000000000000000000000000000001 &lt;= |a|
+  .000000000000000000000000000001 <= |a|
 }
 
 C4G           { ; p1 is (plus or minus) 1 or i 
