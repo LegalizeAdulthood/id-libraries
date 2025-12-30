@@ -18727,7 +18727,10 @@ JoWe_03_PHC_n1 {; Jo Weber [100424,35], 1996    Requires passes=1
   b2=(fn1(a2)-fn2(a1)*fn2(a3))*whitesq-(c^(fn1(a3)/fn2(a2)))*(whitesq==0)
   z=b1
   b3=(1.0>=|z|)
-  if b3 then z=b2
+  if (b3)
+    z=b2
+  endif
+  (1.0>=|z|)
 }
 
 
@@ -18739,7 +18742,10 @@ JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
   b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
   z=b1
   b3=(|z|<=4)
-  if b3 then z=b2
+  if (b3)
+    z=b2
+  endif
+  (|z|<=4)
 }
 
 JoWe_19_PHC_2 {; Jo Weber [100424,35], 1996  Requires passes=1

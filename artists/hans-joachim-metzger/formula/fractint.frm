@@ -4350,7 +4350,10 @@ JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
   b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
   z=b1
   b3=(|z|<=4)
-  if b3 then z=b2
+  if (b3)
+    z=b2
+  endif
+  |z|<=4
   ;SOURCE: phc.frm
 }
  
