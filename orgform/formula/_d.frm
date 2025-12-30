@@ -3145,10 +3145,10 @@ dmj-Mand-Pls-Dst1 {; outside = real: closest z[n] to cross at p1
   z2 = (z-p1) * r               ; Offset to p1 and rotate.
   d = abs(imag(z2))             ; First distance.
   d2 = abs(real(z2)*imag(p2))   ; Second distance.
-  IF (d2 << d)                  ; Second distance is closer.
+  IF (d2 < d)                   ; Second distance is closer.
     d = d2                      ; Use it instead.
   ENDIF
-  IF (d << closest)             ; Closer than previous value.
+  IF (d < closest)              ; Closer than previous value.
     point = z                   ; Save that point.
     closest = d                 ; Save the closest approach.
   ENDIF
