@@ -36648,9 +36648,6 @@ Twofo_M { ; Attractors are of no fixed address or type!
   iter=iter+1
   IF(flipflag==0)
     z=lambda*(z-1/z)
-    IF(|z|>big)
-      IF(bigpflag=0
-    ENDIF
   ENDIF
   IF(done!=0)
     IF(done==2 || twoflag==0)
