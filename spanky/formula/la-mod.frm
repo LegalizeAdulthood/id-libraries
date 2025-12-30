@@ -1,8 +1,8 @@
 ; Collection of modified formulas from Linda Allison. Original formulas
 ; are from various sources.
 
-MyFract-7 {;from the book *Fractal Creations* by Tim Wegner and Mark Peterson ;
-modified by Linda Allison 
+MyFract-7 {;from the book *Fractal Creations* by Tim Wegner and Mark Peterson
+           ; modified by Linda Allison 
   c = z = 1/pixel:
    z = fn1(z) + (c + P1/z)
     |z| <= P2

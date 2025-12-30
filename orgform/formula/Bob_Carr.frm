@@ -283,7 +283,7 @@ z=sqr(z) + 0.33;
 }
 
 
-Carr-02E {Try using Distance Estimator function on this formula
+Carr-02E { ; Try using Distance Estimator function on this formula
 c=z=1/pixel:
 z=sqr(z) + c;
 z1=sqr(z) + 0.33,
@@ -318,7 +318,7 @@ c = z = 1 / pixel
 }
 
 
-Carr-06 {was OK-03 and was modified
+Carr-06 { ; was OK-03 and was modified
 z = c = pixel:
 z = cosxx(z)/c;
 z = sin(z),
@@ -326,15 +326,17 @@ z = sin(z),
 }
 
 
-Carr-07 {was OK-02 and was modified
-z = c = 1 / pixel, k = 1 + p1:
-z = (c^z) + c:
-z = cotan(z) * k,
-|z| <= (5 + p2)
+Carr-07 {; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
+  ;SOURCE: carr.frm
 }
 
 
-Carr-08 {was OK-01 and was modified
+Carr-08 { ; was OK-01 and was modified
 z = 0, c = 1 / pixel:
 z = (c^z) + c;
 z = sqr(z),
@@ -342,7 +344,7 @@ z = sqr(z),
 }
 
 
-Carr-09 {was OK-04 and was modified
+Carr-09 { ; was OK-04 and was modified
 z = 0, c = cosxx(pixel):
 z = sqr(z) + c,
 |z| <= (5 + p1)
@@ -1909,7 +1911,7 @@ z=Bob2/Bob3,
 }
 
 
-Carr-24 {InvRadius-Mandel formula manipulated
+Carr-24 { ; InvRadius-Mandel formula manipulated
 c=z=1/pixel:
 z=sqr(z*z) - c;
 |z| <=4
@@ -2041,7 +2043,7 @@ z=(-z*z)+(c-0.124),
 }
 
 
-Carr-25 { Carr-24 Modified
+Carr-25 { ; Carr-24 Modified
 c=z=1/pixel:
 z=sqr(z) + (c-1);
 |z| <= 4
@@ -2389,7 +2391,7 @@ z-z*1/(c+0.124),
 }
 
 
-Carr-28 {Carr-24 Modified
+Carr-28 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z) + c;
 |z| <= 4
@@ -2504,7 +2506,7 @@ z=z*z+log(sqr(c-0.124*c-0.124)),
 }
 
 
-Carr-29 {Carr-24 Modified
+Carr-29 { ; Carr-24 Modified
 c=z=1/pixel:
 z=1-(z*z*z) + c;
 |z| <= 4
@@ -2623,7 +2625,7 @@ z=c*(2*z*z-1)/1/(sqr(z)+pixel),
 }
 
 
-Carr-30 {Carr-24 Modified
+Carr-30 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z) +c;
 |Z| <= 4
@@ -2735,7 +2737,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-31 {Carr-24 Modified       
+Carr-31 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
@@ -2845,7 +2847,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-32 {Carr-24 Modified
+Carr-32 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
@@ -2955,7 +2957,7 @@ z=z*z+conj(c*c),
 }
 
 
-Carr-33 {Carr-24 Modified
+Carr-33 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8
@@ -3065,7 +3067,7 @@ z=z*z+c,
 }
 
 
-Carr-34 {Carr-24 Modified
+Carr-34 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8
@@ -3174,7 +3176,7 @@ z=z*z+(c/pixel*c/pixel),
 }
 
 
-Carr-35 {Carr-24 Modified
+Carr-35 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z*z*z*z*z) +c;
  |z| <= 8
@@ -3284,7 +3286,7 @@ z=z+1/conj(c*c*c),
 }
 
 
-Carr-36 { Modified Julia formula from BUILTIN.FRM file
+Carr-36 { ; Modified Julia formula from BUILTIN.FRM file
 z=1/cosxx(pixel),
 c=((0.3,0.6) ^ (|p1| <=0) + p1),
 t=4*(real(p2)<=0 + real(p2) ^ (0<p2)):
@@ -3396,7 +3398,7 @@ z=z*z*z*z+flip(c*c),
 }
 
 
-Carr-37 { Modified Julia formula from BUILTIN.FRM file
+Carr-37 { ; Modified Julia formula from BUILTIN.FRM file
 z=tan(1/pixel),
 c=((0.4,0.8) ^ (|p1|<=0)) + p1,
 t=(4^(real(p2)<=0) + real(p2) ^ (0<p2)):
@@ -3509,7 +3511,7 @@ z=conj(z+sqr(z-0.324))/(0.48/pixel),
 }
 
 
-Carr-38 {Modified Julia formula from BUILTIN.FRM file
+Carr-38 { ; Modified Julia formula from BUILTIN.FRM file
 c=cosxx(1/pixel),
 c=((0.4,0.8) ^ (|p1|<=0)) + p1,
 t=(4^(real(p2)<=0) + real(p2) ^ (0<p2)):
@@ -3622,7 +3624,7 @@ z=z*z+c,
 }
 
 
-Carr-39 {Karl Geigl formula Modified
+Carr-39 { ; Karl Geigl formula Modified
 z=c=pixel:
 z=((z*z*z*z+1/4)*2/z*(z*z-1))*c;
 |z| <=4
@@ -3732,7 +3734,7 @@ z=z*z+flip(c/2),
 }
 
 
-Carr-40 {Karl Geigl formula Modified
+Carr-40 { ; Karl Geigl formula Modified
 z=c=1/pixel:
 z=((z*z*z*z+1/4)*2/z*(z*z-1))*tan(c);
 |z| <= 4
@@ -3842,7 +3844,7 @@ z=z*z+(c/pixel)+conj(((sqrt5+1)/2)*exp(conj(pixel))),
 }
 
 
-Carr-41 {Mark Peterson frm Modified
+Carr-41 { ; Mark Peterson frm Modified
 z=pixel, c=cosh(1/pixel):
 z=sqr(z*z*z) + c,
 |z| <= 4
@@ -3953,7 +3955,7 @@ z=z*z+c,
 }
 
 
-Carr-42 {Mark Petersom frm Modified
+Carr-42 { ; Mark Petersom frm Modified
 z=pixel, c=cosh(1/pixel):
 z=cosxx(z*z*z) + c,
 |z| <= 4
@@ -4065,7 +4067,7 @@ z=z*z+c,
 }
 
 
-Carr-43 {Kevin Lee Modified
+Carr-43 { ; Kevin Lee Modified
 z=cosxx(pixel), c=pixel-tan(z*z*z):
 c=pixel+ c*c/z, z=c-z*sqr(pixel),
 |z| <= 4
@@ -4175,7 +4177,7 @@ z=z*z+c,
 }
 
 
-Carr-44 {Drcha.frm-test-1 Modified
+Carr-44 { ; Drcha.frm-test-1 Modified
 c=pixel
 z=((sqrt(5) +1)/2):
 z=(z*z*z*z*z*z) + pixel*(sqrt(5) + 1)/2 +c
@@ -4289,7 +4291,7 @@ z=z*z+c,
 }
 
 
-Carr-45 {Mark Peterson frm Modified
+Carr-45 { ; Mark Peterson frm Modified
 c=z=1/pixel:
 z=sqr(z) + sqr(c);
 |z| <= 4
@@ -4523,7 +4525,7 @@ z=z*z*z+1/(pixel*pixel-1)*z-pixel,
 }
 
 
-Carr-47 {Mark Peterson frm Modified
+Carr-47 { ; Mark Peterson frm Modified
 c=z=(1/pixel)/2:
 z=sqr(z*z) + c;
 |z| <= 4
@@ -4647,7 +4649,7 @@ z=z*z+c,
 }
 
 
-Carr-48 {Mark Peterson frm Modified
+Carr-48 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=sqr(z) + c;
 |z| <= 4
@@ -4767,7 +4769,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-49 {Mark Peterson frm Modified
+Carr-49 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=sqr(z*z*z) + c;
 |z| <= 4
@@ -4887,7 +4889,7 @@ z=z*z*z+c/pixel+0.324,
 }
 
 
-Carr-50 {Mark Peterson frm Modified
+Carr-50 { ; Mark Peterson frm Modified
 c=z=1/cosxx(-pixel):
 z=sqr(z) + c;
 |z| <= 4
@@ -4988,7 +4990,7 @@ z=z*z*z+flip(c),
 }
 
 
-Carr-51 {Mark Peterson frm Modified
+Carr-51 { ; Mark Peterson frm Modified
 c=z=1/tan(-pixel):
 z=sqr(z*z*z) + c;
 |z| <= 4
@@ -5088,7 +5090,7 @@ z+z*z*z+flip(c-0.324),
 }
 
 
-Carr-52 {Mark Peterson frm Modified
+Carr-52 { ; Mark Peterson frm Modified
 c=z=1/tan(-pixel):
 z=sqr(z*z*z) + 0.75;
 |z| <= 4
@@ -5190,7 +5192,7 @@ z=z*z*z+(c-0.224),
 }
 
 
-Carr-53 {Mark Peterson frm Modified
+Carr-53 { ; Mark Peterson frm Modified
 c=z=1/conj(-pixel):
 z=(sqr(z*z*z))/2 + 0.75;
 |z| <= 4
@@ -5292,7 +5294,7 @@ z=z*z*z+c,
 }
 
 
-Carr-54 {Mark Peterson frm Modified
+Carr-54 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=(sqr(z*z*z))/2 + 0.33;
 |z| <= 4
@@ -6701,7 +6703,7 @@ z=sqr(z) + 0.33;
 }
 
 
-Carr-67 {use Distance Estimator funtion on this formula
+Carr-67 { ; use Distance Estimator funtion on this formula
 c=z=pixel:
 z=sqr(z) + c;
 z1=sqr(z) + 0.33,

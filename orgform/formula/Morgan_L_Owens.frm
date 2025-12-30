@@ -553,8 +553,7 @@ r2=r2/2
 r3=r3/2
 r4=r4/2
 
-; We subtract these radii from our distances, leaving only some possible 
-"excess"
+; We subtract these radii from our distances, leaving only some possible "excess"
 d21=d12=d12-r1-r2
 d31=d13=d13-r1-r3
 d41=d14=d14-r1-r4

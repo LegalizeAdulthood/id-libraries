@@ -5909,7 +5909,7 @@ CubeG2_Ma { ; a-plane M-set
             ; p2 = b
             ; real(p3) affects coloring (outside=real); default is 64.
             ; imag(p3) affects periodicity checking -- smaller is less
-sensitive, negative disables; default is 0.001.
+            ; sensitive, negative disables; default is 0.001.
             ; Use periodicity=0 if you seem to be getting all blank screens.
 a = pixel, b = p2, c = real(p3), t = imag(p3), ta2 = 3*a*a
 IF(c==0)
@@ -5972,7 +5972,7 @@ CubeG2_Mb { ; b-plane M-set
             ; p1 = a
             ; real(p3) affects coloring (outside=real); default is 64.
             ; imag(p3) affects periodicity checking -- smaller is less
-sensitive, negative disables; default is 0.001.
+            ; sensitive, negative disables; default is 0.001.
             ; Use periodicity=0 if you seem to be getting all blank screens.
 a = p1, b = pixel, c = real(p3), t = imag(p3), ta2 = 3*a*a
 IF(c==0)

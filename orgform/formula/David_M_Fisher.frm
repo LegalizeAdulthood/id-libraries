@@ -3,8 +3,7 @@ January_gen  { ; Modified Sylvie Gallet "january" formula
           ; Based on Scott Burns equation solver applied to z^3-1 = 0
           ; Use decomp = 256
           ; generalized by Les St Clair, Dec 1997
-          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp for
-  default behaviour
+          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp for default behaviour
   z1 = pixel , iter = 0
   a = 23*(0,0.0245436)       ; 23 * 2i pi / 256
   mz = fn1(fn2(z1)-1) :

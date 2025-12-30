@@ -996,7 +996,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Mandelbrot set
   ;  formula.
   ;  Use floating point
@@ -1005,7 +1005,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Julia set.
   ;  Use floating point
   z=pixel:
