@@ -25,7 +25,7 @@ xlty_man { ; Kerry Mitchell 03feb98
         ;
         if (real(frac)<imag(frac))
           count=count+1
-          end if
+          endif
         ;
         ; bailout
         ;   scale counter into decomposition angle
@@ -70,7 +70,7 @@ xlty_jul { ; Kerry Mitchell 03feb98
         ;
         if (real(frac)<imag(frac))
           count=count+1
-          end if
+          endif
         ;
         ; bailout
         ;   scale counter into decomposition angle
@@ -117,7 +117,7 @@ heart_man { ; Kerry Mitchell 03feb98
         ;
         if (r<t)
           count=count+1
-          end if
+          endif
         ;
         ; bailout
         ;   scale counter into decomposition angle
@@ -165,7 +165,7 @@ heart_jul { ; Kerry Mitchell 03feb98
         ;
         if (r<t)
           count=count+1
-          end if
+          endif
         ;
         ; bailout
         ;   scale counter into decomposition angle

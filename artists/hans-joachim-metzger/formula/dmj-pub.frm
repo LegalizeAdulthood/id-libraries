@@ -163,7 +163,7 @@ dmj--Read-Me-First {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
+          ELSEIF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
             ;dstalk
           ELSE
             done = -1
@@ -176,7 +176,7 @@ dmj--Read-Me-First {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < 0.05)
+          ELSEIF (real(y) < 0.05)
             d = |y - (-0.05,-0.05)|
             IF (d > 0.0025 && d < 0.0225)
               ;mlefttop
@@ -285,7 +285,7 @@ dmj--Redistribute {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
+          ELSEIF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
             ;dstalk
           ELSE
             done = -1
@@ -298,7 +298,7 @@ dmj--Redistribute {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < 0.05)
+          ELSEIF (real(y) < 0.05)
             d = |y - (-0.05,-0.05)|
             IF (d > 0.0025 && d < 0.0225)
               ;mlefttop
@@ -5283,7 +5283,7 @@ dmj--What's-New {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
+          ELSEIF (real(y) < -0.3 && imag(y) > -0.2 && imag(y) < 0.3)
             ;dstalk
           ELSE
             done = -1
@@ -5296,7 +5296,7 @@ dmj--What's-New {; dmj-pub.frm 1.1 - October 5, 1997
             ELSE
               done = -1
             ENDIF
-          ELSE IF (real(y) < 0.05)
+          ELSEIF (real(y) < 0.05)
             d = |y - (-0.05,-0.05)|
             IF (d > 0.0025 && d < 0.0225)
               ;mlefttop

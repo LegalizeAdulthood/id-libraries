@@ -22,7 +22,7 @@ field2_jul { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -33,7 +33,7 @@ field2_jul { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -62,7 +62,7 @@ field3_jul { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -73,7 +73,7 @@ field3_jul { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -101,7 +101,7 @@ field4_jul { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -112,7 +112,7 @@ field4_jul { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -139,7 +139,7 @@ field2_man { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -150,7 +150,7 @@ field2_man { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -178,7 +178,7 @@ field3_man { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -189,7 +189,7 @@ field3_man { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -216,7 +216,7 @@ field4_man { ; Kerry Mitchell 20jan98
         r=cabs(fieldangle-tanangle)
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -227,7 +227,7 @@ field4_man { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 

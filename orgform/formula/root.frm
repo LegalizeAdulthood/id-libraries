@@ -11,7 +11,7 @@ root_jul { ; Kerry Mitchell 11feb98
           iter=-1
         else
           zc=znew
-        end if
+        endif
         iter>0
         ;
         ; colors Julia set by whether or not previous iterate
@@ -31,7 +31,7 @@ root_man { ; Kerry Mitchell 11feb98
           iter=-1
         else
           zc=znew
-        end if
+        endif
         iter>0
         ;
         ; colors Mandelbrot set by whether or not previous
@@ -52,17 +52,17 @@ rootcount_man { ; Kerry Mitchell 11feb98
         r1=|zc-w|, r2=|zc+w|, zc=z2+c
         if (r1<r2)
           count=count+1
-          end if
+          endif
         if (iter==maxit)
           angle=inspeed*count/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         if (|zc|>maxr)
           angle=outspeed*count/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         iter>0
         ;
         ; Colors Mandelbrot set by how often previous iterate
@@ -89,17 +89,17 @@ rootcount_jul { ; Kerry Mitchell 11feb98
         r1=|zc-w|, r2=|zc+w|, zc=z2+c
         if (r1<r2)
           count=count+1
-          end if
+          endif
         if (iter==maxit)
           angle=inspeed*count/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         if (|zc|>maxr)
           angle=outspeed*count/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         iter>0
         ;
         ; Colors Julia set by how often previous iterate

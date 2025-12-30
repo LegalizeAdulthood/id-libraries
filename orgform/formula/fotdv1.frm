@@ -712,13 +712,13 @@ hermanm_man-polar { ; Kerry Mitchell 16feb98
         hypden=sqr(n-m), hypfac=hypnum/hypden
         if (real(p3)<0)
           pn=-1
-          end if
+          endif
         if (real(c2)>hypfac)
           pn=-pn
-        end if
+        endif
         if (imag(c)<0)
           pn=-pn
-        end if
+        endif
         afac=c*n, bfac=c2*(n-m)+(n+m), cfac=c*n
         d=sqrt(bfac*bfac-4*afac*cfac)
         z=(bfac+pn*d)/(2*afac)
@@ -734,7 +734,7 @@ hermanm_man-polar { ; Kerry Mitchell 16feb98
           angle=(iter+oln*(fac-log(log(cabs(z)))))*speed
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         ;
         ; orbit trap around infinity
         ;   renormalize iteration count via decomp angle
@@ -746,7 +746,7 @@ hermanm_man-polar { ; Kerry Mitchell 16feb98
           angle=angle+pi
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         iter>0
         }
 

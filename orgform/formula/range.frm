@@ -20,7 +20,7 @@ range-r_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           z=zc
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -31,7 +31,7 @@ range-r_jul { ; Kerry Mitchell 23jan98
         ;
         if ((r>maxr)||(iter==maxit))
           iter=-1
-          end if
+          endif
         iter>0
         }
 
@@ -59,7 +59,7 @@ range-r-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           z=zc
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -70,7 +70,7 @@ range-r-1_jul { ; Kerry Mitchell 23jan98
         ;
         if ((r>maxr)||(iter==maxit))
           iter=-1
-          end if
+          endif
         iter>0
         }
 
@@ -98,7 +98,7 @@ range-r-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           z=zc
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -109,7 +109,7 @@ range-r-2_jul { ; Kerry Mitchell 23jan98
         ;
         if ((r>maxr)||(iter==maxit))
           iter=-1
-          end if
+          endif
         iter>0
         }
 
@@ -137,7 +137,7 @@ range-r-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           z=zc
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -148,7 +148,7 @@ range-r-3_jul { ; Kerry Mitchell 23jan98
         ;
         if ((r>maxr)||(iter==maxit))
           iter=-1
-          end if
+          endif
         iter>0
         }
 
@@ -176,7 +176,7 @@ range-x_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*imag(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -188,7 +188,7 @@ range-x_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -212,7 +212,7 @@ range-x-1_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -222,7 +222,7 @@ range-x-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*imag(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -234,7 +234,7 @@ range-x-1_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -258,7 +258,7 @@ range-x-2_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -268,7 +268,7 @@ range-x-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*imag(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -280,7 +280,7 @@ range-x-2_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -304,7 +304,7 @@ range-x-3_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -314,7 +314,7 @@ range-x-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*imag(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -326,7 +326,7 @@ range-x-3_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -354,7 +354,7 @@ range-y_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*real(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -366,7 +366,7 @@ range-y_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -390,7 +390,7 @@ range-y-1_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -400,7 +400,7 @@ range-y-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*real(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -412,7 +412,7 @@ range-y-1_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -436,7 +436,7 @@ range-y-2_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -446,7 +446,7 @@ range-y-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*real(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -458,7 +458,7 @@ range-y-2_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -482,7 +482,7 @@ range-y-3_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -492,7 +492,7 @@ range-y-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           angle=scale*real(zc)
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -504,7 +504,7 @@ range-y-3_jul { ; Kerry Mitchell 23jan98
         if ((|zc|>maxr)||(iter==maxit))
           iter=-1
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -531,7 +531,7 @@ rangecount-r_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -544,7 +544,7 @@ rangecount-r_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -573,7 +573,7 @@ rangecount-r-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -586,7 +586,7 @@ rangecount-r-1_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -615,7 +615,7 @@ rangecount-r-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -628,7 +628,7 @@ rangecount-r-2_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -657,7 +657,7 @@ rangecount-r-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=|zc|
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -670,7 +670,7 @@ rangecount-r-3_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -699,7 +699,7 @@ rangecount-x_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -712,7 +712,7 @@ rangecount-x_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -736,7 +736,7 @@ rangecount-x-1_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -746,7 +746,7 @@ rangecount-x-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -759,7 +759,7 @@ rangecount-x-1_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -783,7 +783,7 @@ rangecount-x-2_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -793,7 +793,7 @@ rangecount-x-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -806,7 +806,7 @@ rangecount-x-2_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -830,7 +830,7 @@ rangecount-x-3_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -840,7 +840,7 @@ rangecount-x-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=real(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -853,7 +853,7 @@ rangecount-x-3_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -881,7 +881,7 @@ rangecount-y_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -894,7 +894,7 @@ rangecount-y_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -918,7 +918,7 @@ rangecount-y-1_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -928,7 +928,7 @@ rangecount-y-1_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -941,7 +941,7 @@ rangecount-y-1_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -965,7 +965,7 @@ rangecount-y-2_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -975,7 +975,7 @@ rangecount-y-2_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -988,7 +988,7 @@ rangecount-y-2_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -1012,7 +1012,7 @@ rangecount-y-3_jul { ; Kerry Mitchell 23jan98
         lo=(real(p3)-imag(p3)/2)*fac, hi=(real(p3)+imag(p3)/2)*fac
         if (hi<lo)
           temp=lo, lo=hi, hi=temp
-          end if
+          endif
         :
         ;
         ; iteration
@@ -1022,7 +1022,7 @@ rangecount-y-3_jul { ; Kerry Mitchell 23jan98
         iter=iter+1, zc=sqr(zc)+c, r=imag(zc)
         if ((r>lo)&&(r<hi))
           count=count+1
-          end if
+          endif
         ;
         ; bailout--escape and maximum iterations treated the same
         ;   set "iteration done" flag (iter=-1)
@@ -1035,7 +1035,7 @@ rangecount-y-3_jul { ; Kerry Mitchell 23jan98
           iter=-1
           angle=scale*count
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 

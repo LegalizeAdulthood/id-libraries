@@ -19,7 +19,7 @@ gaussintr_jul { ; Kerry Mitchell 20jan98
         iter=iter+1, zc=sqr(zc)+c, zr=round(zc), r=|zc-zr|,
         if (r<rmin)
           rmin=r, zmin=zr
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -30,7 +30,7 @@ gaussintr_jul { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(cabs(zmin)+1)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -55,7 +55,7 @@ gaussintt_jul { ; Kerry Mitchell 20jan98
         iter=iter+1, zc=sqr(zc)+c, zr=round(zc), q=|zc-zr|,
         if (q<rmin)
           rmin=q, zmin=zr
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -64,7 +64,7 @@ gaussintt_jul { ; Kerry Mitchell 20jan98
         if ((|zc|>rmax)||(iter==maxit))
           iter=-1
           z=zmin
-          end if
+          endif
         iter>0
         }
 
@@ -100,7 +100,7 @@ gaussinttot_jul { ; Kerry Mitchell 20jan98
           angle=scale*tot/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         iter>0
         }
 
@@ -124,7 +124,7 @@ gaussintr_man { ; Kerry Mitchell 20jan98
         iter=iter+1, zc=sqr(zc)+c, zr=round(zc), r=|zc-zr|,
         if (r<rmin)
           rmin=r, zmin=zr
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -135,7 +135,7 @@ gaussintr_man { ; Kerry Mitchell 20jan98
           iter=-1
           angle=log(cabs(zmin)+1)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -159,7 +159,7 @@ gaussintt_man { ; Kerry Mitchell 20jan98
         iter=iter+1, zc=sqr(zc)+c, zr=round(zc), q=|zc-zr|,
         if (q<rmin)
           rmin=q, zmin=zr
-          end if
+          endif
         ;
         ; bailout
         ;   set "iteration done" flag (iter=-1)
@@ -168,7 +168,7 @@ gaussintt_man { ; Kerry Mitchell 20jan98
         if ((|zc|>rmax)||(iter==maxit))
           iter=-1
           z=zmin
-          end if
+          endif
         iter>0
         }
 
@@ -203,7 +203,7 @@ gaussinttot_man { ; Kerry Mitchell 20jan98
           angle=scale*tot/(iter-1)
           z=cos(angle)+flip(sin(angle))
           iter=-1
-          end if
+          endif
         iter>0
         }
 

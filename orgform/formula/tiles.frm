@@ -76,7 +76,7 @@ LensA  {  z = c = pixel,
            d = SQRT((z-p1)*CONJ(z-p1)),
            IF (d <= real(p2))
             z = p1 + (1 + fn1(imag(p2)*d/real(p2)))*(z-p1)
-           END IF :
+           ENDIF :
            z = z*z+c,
            |z| <= 256
         }

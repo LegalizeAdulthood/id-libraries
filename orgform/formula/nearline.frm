@@ -20,7 +20,7 @@ nearline-theta_jul { ; Kerry Mitchell 18jan98
         r=|ct*imag(zc)-st*real(zc)|
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout--take log of minimum distance as decomp angle
         ;
@@ -28,7 +28,7 @@ nearline-theta_jul { ; Kerry Mitchell 18jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -54,7 +54,7 @@ nearline01_jul { ; Kerry Mitchell 18jan98
         r=|ct*real(zc)-st*imag(zc)|
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout--take log of minimum distance as decomp angle
         ;
@@ -62,7 +62,7 @@ nearline01_jul { ; Kerry Mitchell 18jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -88,7 +88,7 @@ nearline02_jul { ; Kerry Mitchell 18jan98
         r=|ct*real(zc)-st*imag(zc)|
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout--take log of minimum distance as decomp angle
         ;
@@ -96,7 +96,7 @@ nearline02_jul { ; Kerry Mitchell 18jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -123,7 +123,7 @@ nearline03_jul { ; Kerry Mitchell 18jan98
         r=|ct*real(zc)-st*imag(zc)|
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout--take log of minimum distance as decomp angle
         ;
@@ -131,7 +131,7 @@ nearline03_jul { ; Kerry Mitchell 18jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
@@ -156,7 +156,7 @@ nearline-theta_man { ; Kerry Mitchell 18jan98
         r=|ct*imag(zc)-st*real(zc)|
         if (r<minr)
           minr=r
-          end if
+          endif
         ;
         ; bailout--take log of minimum distance as decomp angle
         ;
@@ -164,7 +164,7 @@ nearline-theta_man { ; Kerry Mitchell 18jan98
           iter=-1
           angle=log(minr)
           z=cos(angle)+flip(sin(angle))
-          end if
+          endif
         iter>0
         }
 
