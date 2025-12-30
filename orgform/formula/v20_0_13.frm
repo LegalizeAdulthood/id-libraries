@@ -1,5 +1,6 @@
 ; Made by Pusk s Istv n jr.  E-mail: pataki.v@matavnet.hu
-_WARNING!_ {
+Comment {
+_WARNING!_
 These formulas need version 20.0.13 (development version) or later
 The development versions can be downloaded at www.fractint.org
 }

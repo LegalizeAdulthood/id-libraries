@@ -14,7 +14,8 @@
 ;
 ; Regards David Walter London england.
  
-comment={received from Ramiro Perez <RPEREZ@EARN.UTPVM1> 18 Aug 93
+comment {
+  ; received from Ramiro Perez <RPEREZ@EARN.UTPVM1> 18 Aug 93
 }
 V-Euler{
 x=real(pixel),

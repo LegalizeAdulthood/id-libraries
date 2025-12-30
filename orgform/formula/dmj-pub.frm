@@ -1,7 +1,7 @@
 ; dmj-pub.frm
 ; FractInt Formula File by Damien M. Jones
 
-dmj--Read-Me-First {; dmj-pub.frm 1.0 - September 11, 1997
+Comment { ; dmj--Read-Me-First dmj-pub.frm 1.0 - September 11, 1997
 	; Scroll down (CTRL-DOWN) to see all of this text.
 	;
 	; This formula file contains formulae written by Damien M. Jones
