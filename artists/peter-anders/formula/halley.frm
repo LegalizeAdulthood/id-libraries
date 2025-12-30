@@ -30,8 +30,7 @@ Peter_1HalPolyR {; real Halley formula for polynoms,
                             f3=r*(r-1)*z^(r-2)
                             z=z-g*f1/(f2-(f3*f1/(2*f2)))
                             |z-c| >0.000001}
-Peter_1HalPolyRII{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRII{; real Halley formula for polynoms, use floating point
                             z=pixel,r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -117,8 +116,7 @@ Peter_1HalPolyRIII  { z=pixel,g=p2+1:
                             f3=(p1*(p1-1)*z^(p1-2))-(p2*(p2-1)*z^(p2-2))
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             |z-c| >0.000001}
-Peter_1HalPolyRFu{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu{; real Halley formula for polynoms, use floating point
                   z=fn1(pixel),r=p1,g=p2+1:
                   c=z,
                   f1=z^r-1
@@ -126,8 +124,7 @@ Peter_1HalPolyRFu{; real Halley formula for polynoms,
                   f3=r*(r-1)*z^(r-2)
                   z=z-g*f1/(f2-f3*f1/(2*f2))
                   |z-c| >0.000001}
-Peter_1HalPolyRFu2{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu2{; real Halley formula for polynoms, use floating point
                         z=pixel^real(p2)-imag(p2),r=p1,g=p2+1:
                         c=z,
                         f1=z^r-1
@@ -135,8 +132,7 @@ Peter_1HalPolyRFu2{; real Halley formula for polynoms,
                         f3=r*(r-1)*z^(r-2)
                         z=z-g*f1/(f2-f3*f1/(2*f2))
                         |z-c| >0.000001}
-Peter_1HalPolyRFu3{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu3{; real Halley formula for polynoms, use floating point
                             z=pixel^4-1.25*pixel^2+0.25,r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -144,8 +140,7 @@ Peter_1HalPolyRFu3{; real Halley formula for polynoms,
                             f3=r*(r-1)*z^(r-2)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             |z-c| >0.000001}
-Peter_1HalPolyRFu4{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu4{; real Halley formula for polynoms, use floating point
                     a=fn1(real(pixel)),b=fn1(imag(pixel)),z=a+b*(0,1),r=p1,g=p2+1:
                     c=z,
                     f1=z^r-1
@@ -153,8 +148,7 @@ Peter_1HalPolyRFu4{; real Halley formula for polynoms,
                     f3=r*(r-1)*z^(r-2)
                     z=z-g*f1/(f2-f3*f1/(2*f2))
                     |z-c| >0.000001}
-Peter_1HalPolyRIV{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRIV{; real Halley formula for polynoms, use floating point
                             z=pixel,r=real(p1),a=p2,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -162,8 +156,7 @@ Peter_1HalPolyRIV{; real Halley formula for polynoms,
                             f3=r*(r-a)*z^(r-a-1)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             |z-c| >imag(p1)}
-Peter_1HalPolyRV{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRV{; real Halley formula for polynoms, use floating point
                             z=pixel,r=real(p1),a=p2,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -171,8 +164,7 @@ Peter_1HalPolyRV{; real Halley formula for polynoms,
                             f3=r*(r-a)*z^(r-a-1)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             real(|z-c|) <imag(p1)}
-Peter_1HalPolyRVI{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRVI{; real Halley formula for polynoms, use floating point
                             z=pixel,r=real(p1),a=p2,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -180,8 +172,7 @@ Peter_1HalPolyRVI{; real Halley formula for polynoms,
                             f3=r*(r-a)*z^(r-a-1)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             real(|fn1(z)|)<imag(p1)}
-Peter_1HalPolyRVII{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRVII{; real Halley formula for polynoms, use floating point
                             z=pixel,r=real(p1),a=p2,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -189,8 +180,7 @@ Peter_1HalPolyRVII{; real Halley formula for polynoms,
                             f3=r*(r-a)*z^(r-a-1)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             real(|fn1(z)|)>imag(p1)}
-PolyRI{; real Halley formula for polynoms,
-                    use floating point
+PolyRI{; real Halley formula for polynoms, use floating point
                             z=pixel,r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -199,8 +189,7 @@ PolyRI{; real Halley formula for polynoms,
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             z=z+p2;
                             |z-c| >0.000001}
-PolyRII{; real Halley formula for polynoms,
-                    use floating point
+PolyRII{; real Halley formula for polynoms, use floating point
                             z=pixel,r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -209,8 +198,7 @@ PolyRII{; real Halley formula for polynoms,
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             z=z*p2;
                             |z-c| >0.000001}
-PolyRIII{; real Halley formula for polynoms,
-                    use floating point
+PolyRIII{; real Halley formula for polynoms, use floating point
                             z=pixel,r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -249,8 +237,7 @@ Halley_test42{z=c=pixel,r=p2+1,g=p2+1:
               z=z-g*f1/(f2-f3*f1/(2*f2))
               |z-d|<p1 }
 
-Peter_1HalPolyRFu5{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu5{; real Halley formula for polynoms, use floating point
                             z=fn1(fn2(pixel)),r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
@@ -258,8 +245,7 @@ Peter_1HalPolyRFu5{; real Halley formula for polynoms,
                             f3=r*(r-1)*z^(r-2)
                             z=z-g*f1/(f2-f3*f1/(2*f2))
                             |z-c| >0.000001}
-Peter_1HalPolyRFu6{; real Halley formula for polynoms,
-                    use floating point
+Peter_1HalPolyRFu6{; real Halley formula for polynoms, use floating point
                             z=fn1(pixel^real(p2)+imag(p2)),r=p1,g=p2+1:
                             c=z,
                             f1=z^r-1
