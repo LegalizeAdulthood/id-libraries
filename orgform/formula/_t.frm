@@ -12384,10 +12384,12 @@ TwoIkes {; Ron Barnett [70153,1233], 1996  Requires passes=1
 TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   r=rand
-  if r<0.5 
-  z=c*z*(1-z)
-  if r>=0.5
-  z=c*z*(z-1)
+  if (r<0.5)
+    z=c*z*(1-z)
+  endif
+  if (r>=0.5)
+    z=c*z*(z-1)
+  endif
   |fn1(z)|<real(p2) 
   ;SOURCE: lambda.frm
 }
