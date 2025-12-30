@@ -53,15 +53,15 @@
         IF (d < ball_size)
             bailout = 1
             delta = ball_size - d
-        ELSEIF ((d = wr * wr + (wi + .5) * (wi + .5)) < ball_size)
+        ELSEIF ((wr * wr + (wi + .5) * (wi + .5)) < ball_size)
             bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr - .5) * (wr - .5) + wi * wi) < ball_size)
+            delta = ball_size - wr * wr + (wi + .5) * (wi + .5)
+        ELSEIF ((wr - .5) * (wr - .5) + wi * wi < ball_size)
             bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr + .5) * (wr + .5) + wi * wi) < ball_size)
+            delta = ball_size - (wr - .5) * (wr - .5) + wi * wi
+        ELSEIF ((wr + .5) * (wr + .5) + wi * wi < ball_size)
             bailout = 1
-            delta = ball_size - d
+            delta = ball_size - (wr + .5) * (wr + .5) + wi * wi
         ENDIF
     ENDIF
     IF (bailout)
@@ -143,15 +143,15 @@
         IF (d < ball_size)
             bailout = 1
             delta = ball_size - d
-        ELSEIF ((d = wr * wr + (wi + .5) * (wi + .5)) < ball_size)
+        ELSEIF (wr * wr + (wi + .5) * (wi + .5) < ball_size)
             bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr - .5) * (wr - .5) + wi * wi) < ball_size)
+            delta = ball_size - wr * wr + (wi + .5) * (wi + .5)
+        ELSEIF ((wr - .5) * (wr - .5) + wi * wi < ball_size)
             bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr + .5) * (wr + .5) + wi * wi) < ball_size)
+            delta = ball_size - (wr - .5) * (wr - .5) + wi * wi
+        ELSEIF ((wr + .5) * (wr + .5) + wi * wi < ball_size)
             bailout = 1
-            delta = ball_size - d
+            delta = ball_size - (wr + .5) * (wr + .5) + wi * wi
         ENDIF
     ENDIF
     IF (bailout)
@@ -2395,14 +2395,14 @@ MyEqn_Julia {; Copyright (c) Paul W. Carlson, 1998
             ENDIF                                              ;;
         ENDIF                                                  ;;
     ELSEIF (render == 4) ; SPHERES                             ;;
-        IF ((d = |w + (0,-.5)|) < size)                        ;;
-            dist = size - d                                    ;;
-        ELSEIF ((d = |w + (0,.5)|) < size)                     ;;
-            dist = size - d                                    ;;
-        ELSEIF ((d = |w + (-.5,0)|) < size)                    ;;
-            dist = size - d                                    ;;
-        ELSEIF ((d = |w + (.5,0)|) < size)                     ;;
-            dist = size - d                                    ;;
+        IF (|w + (0,-.5)| < size)                              ;;
+            dist = size - |w + (0,-.5)|                        ;;
+        ELSEIF (|w + (0,.5)| < size)                           ;;
+            dist = size - |w + (0,.5)|                         ;;
+        ELSEIF (|w + (-.5,0)| < size)                          ;;
+            dist = size - |w + (-.5,0)|                        ;;
+        ELSEIF (|w + (.5,0)| < size)                           ;;
+            dist = size - |w + (.5,0)|                         ;;
         ENDIF                                                  ;;
     ELSEIF (render == 5) ; STALKS                              ;;
         IF (abs(real(w)) <= abs(imag(w)))                      ;;
@@ -3500,14 +3500,14 @@ Series_Balls_Mset {; Copyright (c) Paul W. Carlson, 1998
     w10 = w4 * w6, w14 = w4 * w10
     w = w2 - aaa * w6 + bbb * w10 - ccc * w14 + c, w = w * w + c
     ;
-    IF ((d = |w + (0,-.5)|) < size)
-        dist = size - d
-    ELSEIF ((d = |w + (0,.5)|) < size)
-        dist = size - d
-    ELSEIF ((d = |w + (-.5,0)|) < size)
-        dist = size - d
-    ELSEIF ((d = |w + (.5,0)|) < size)
-        dist = size - d
+    IF (|w + (0,-.5)| < size)
+        dist = size - |w + (0,-.5)|
+    ELSEIF (|w + (0,.5)| < size)
+        dist = size - |w + (0,.5)|
+    ELSEIF (|w + (-.5,0)| < size)
+        dist = size - |w + (-.5,0)|
+    ELSEIF (|w + (.5,0)| < size)
+        dist = size - |w + (.5,0)|
     ENDIF
     IF (dist < size && iter > 0)
         bailout = 1
@@ -3958,18 +3958,18 @@ TwoBallsJulia {; Copyright (c) Paul Carlson, 1998
     ; it does, compute "delta" and set bailout flag.
     ;****************************************************
     wr = real(w), wi = imag(w)
-    IF ((d = wr * wr + (wi - .5) * (wi - .5)) < ball_size)
+    IF (wr * wr + (wi - .5) * (wi - .5) < ball_size)
         bailout = 1
-        delta = ball_size - d
-    ELSEIF ((d = wr * wr + (wi + .5) * (wi + .5)) < ball_size)
+        delta = ball_size - wr * wr + (wi - .5) * (wi - .5)
+    ELSEIF (wr * wr + (wi + .5) * (wi + .5) < ball_size)
         bailout = 1
-        delta = ball_size - d
-    ELSEIF ((d = wi * wi + (wr - .5) * (wr - .5)) < ball_size)
+        delta = ball_size - wr * wr + (wi + .5) * (wi + .5)
+    ELSEIF (wi * wi + (wr - .5) * (wr - .5) < ball_size)
         bailout = 1
-        delta = ball_size - d
-    ELSEIF ((d = wi * wi + (wr + .5) * (wr + .5)) < ball_size)
+        delta = ball_size - wi * wi + (wr - .5) * (wr - .5)
+    ELSEIF (wi * wi + (wr + .5) * (wr + .5) < ball_size)
         bailout = 1
-        delta = ball_size - d
+        delta = ball_size - wi * wi + (wr + .5) * (wr + .5)
     ENDIF
     ;
     IF (bailout)
