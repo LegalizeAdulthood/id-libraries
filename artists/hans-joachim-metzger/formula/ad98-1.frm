@@ -126,7 +126,7 @@ sra4 {
   z=pixel, b=fn2(z), k=real(p1)*b, o=imag(p1):
   z1=fn4(fn4(z))+(b*o)
   z=fn1((z1))+flip(imag(z)), b=fn3(z1)+whitesq
-  IF (b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
+  IF ((b+(fn1(z+p1))/imag(p1))<k+(z+(p2)))
     z=(z1+p3)*(1/fn3(z))+whitesq
   ENDIF
   IF (b+(fn1(z+p1))<imag(p1*(b-k)))
@@ -176,7 +176,7 @@ w1d {
 w2 {
   z=pixel, b=(p1*fn2(z)/p2), k=real(p1)*b, o=imag(p1):
   z=fn1(real(z))+flip(imag(z))
-  IF (b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
+  IF ((b+(fn1(z+p1))/imag(p1))<k+(z+(p2)))
     z=(z+p3)*(1/fn3(z))+whitesq
   ENDIF
   IF (b+(fn1(z+p1))<imag(p1*(b-k)))

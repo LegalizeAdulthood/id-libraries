@@ -23471,7 +23471,7 @@ ENDIF
 dis=|z|-|pixel|
 a=real(z)
 b=imag(z)
-IF (|a| <= |b|+dis)&& (|a| > |b|-dis)
+IF ((|a| <= |b|+dis)&& (|a| > |b|-dis))
 z=(z-pixel)^p1 
 ELSE
 z=(z+pixel)^p2

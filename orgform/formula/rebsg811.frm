@@ -8,8 +8,8 @@ rebsg811 { ; Modification of Gallet-8-11 for Ikenaga Julias
   h = cabs(pixel)
   r = real(p3)
   ir = imag(p3)
-  IF h >= r 
-     IF whitesq 
+  IF (h >= r)
+     IF (whitesq)
         z = pixel
         c = p1
      ELSE
