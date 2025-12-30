@@ -269,29 +269,27 @@ endif
 done >= 0 ; Continue if the flag >=0.
 } 
 
-Colorit-3f { ; (c) Jay Hill, 1998
-; p1= light angle (cos a, sin a)
-; use these, float=y inside=0 outside=real
-periodicity=0
-iter=0, zc = 0, c = pixel, dz=1
-; 23 is the color of the period 1 component.
-z=23*(|(2*sinh(asinh(sqrt(-6.75)*c)/3))|<=1.0)
-done=-(z>0) ; done if we know z is not 0
-if(p1==0)
-p1=1
-endif
-: ; initialization.
-iter = iter+1 ; gotta count the iterations
-dz=3*sqr(zc)*dz+1 ; derivative, dz/dc, a slope
-for shading
-zc=zc*sqr(zc) + c ; standard MSet cubic
-iteration  z=z^3+c
-if(|zc| >= 1024) ; Bailout 
-z = z-8+((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
-done=-1 ; Set flag to force an exit.
-endif
-done >= 0 ; Continue if the flag >=0.
-} 
+Colorit-3f {; (c) Jay Hill, 1998
+            ; p1= light angle (cos a, sin a)
+            ; use these, float=y inside=0 outside=real periodicity=0
+  iter=0, zc = 0, c = pixel, dz=1
+                         ; 23 is the color of the period 1 component.
+  z=23*(|(2*sinh(asinh(sqrt(-6.75)*c)/3))|<=1.0)
+  done=-(z>0)            ; done if we know z is not 0
+  IF (p1==0)
+    p1=1
+  ENDIF
+  :                      ; initialization.
+  iter = iter+1          ; gotta count the iterations
+  dz=3*sqr(zc)*dz+1      ; derivative, dz/dc, a slope for shading
+  zc=zc*sqr(zc) + c      ; standard MSet cubic iteration  z=z^3+c
+  IF (|zc| >= 1024)      ; Bailout 
+    z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
+    done=-1              ; Set flag to force an exit.
+  ENDIF
+  done >= 0              ; Continue if the flag >=0.
+  ;SOURCE: 98msg.frm
+}
 
 Colorit-3fJS { ; (c) Jay Hill, 1998
 ; angle=real(p1)+sqrt(imag(p1)) 

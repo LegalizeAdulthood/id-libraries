@@ -133,15 +133,15 @@ _AC1 { ; generalized _AC0
 }
 
 0008 {
- z = pixel:
- z = pixel^z+sqr(z)-pixel/z:
-; source KANAK.FRM
+  z = pixel:
+  z = pixel^z+sqr(z)-pixel/z
+  ;SOURCE: 99msg.frm
 }
 
 000b {
- z = pixel^p1:
- z = sqr(z^p2)-pixel^p3:
-; source KANAK.FRM
+  z = pixel^p1:
+  z = sqr(z^p2)-pixel^p3
+  ;SOURCE: 99msg.frm
 }
 
 0014 {
@@ -809,7 +809,8 @@ endif
 inside
 }
 
-4movable {
+4movable   { ; Morgan L. Owens <packrat@nznet.gen.nz>
+             ; Fri, 24 May 2002 00:19:27
 ; For any set of four points in the plane, there are an infinite number
 ; of solutions to the problem of mutually tangent circles centred on those
 ; points. For the sake of definiteness, some more or less arbitrary methods
@@ -844,8 +845,7 @@ r2=r2/2
 r3=r3/2
 r4=r4/2
 
-; We subtract these radii from our distances, leaving only some possible
-"excess"
+; We subtract these radii from our distances, leaving only some possible "excess"
 d21=d12=d12-r1-r2
 d31=d13=d13-r1-r3
 d41=d14=d14-r1-r4
@@ -874,111 +874,111 @@ g2=(d21*d23*d24>0)
 g3=(d31*d32*d34>0)
 g4=(d41*d42*d43>0)
 if(g1)
-ma=1,da1=0,da2=d12,da3=d13,da4=d14
+         ma=1,da1=0,da2=d12,da3=d13,da4=d14
 elseif(g2)
-ma=2,da1=d21,da2=0,da3=d23,da4=d24
+         ma=2,da1=d21,da2=0,da3=d23,da4=d24
 elseif(g3)
-ma=3,da1=d31,da2=d32,da3=0,da4=d34
+         ma=3,da1=d31,da2=d32,da3=0,da4=d34
 elseif(g4)
-ma=4,da1=d41,da2=d42,da3=d43,da4=0
+         ma=4,da1=d41,da2=d42,da3=d43,da4=0
 else
-ma=0
+         ma=0
 endif
 if(g1 && ma!=1)
-mb=1,db1=0,db2=d12,db3=db3,db4=d14
+         mb=1,db1=0,db2=d12,db3=db3,db4=d14
 elseif(g2 && ma!=2)
-mb=2,db1=d21,db2=0,db3=d23,db4=d24
+         mb=2,db1=d21,db2=0,db3=d23,db4=d24
 elseif(g3 && ma!=3)
-mb=3,db1=d31,db2=d32,db3=0,db4=d34
+         mb=3,db1=d31,db2=d32,db3=0,db4=d34
 elseif(g4 && ma!=4)
-mb=4,db1=d41,db2=d42,db3=d43,db4=0
+         mb=4,db1=d41,db2=d42,db3=d43,db4=0
 else
-mb=0
+         mb=0
 endif
 
 ; ma and mb are the only two (if any) circles that can still grow.
 if(ma!=0) ; At least one circle can still grow.
-if(mb==0) ; and it's the only one, so we grow it as big as it will go.
-if(ma==1)
-d=da2
-d=(da3<d)*da3+(da3>=d)*d
-d=(da4<d)*da4+(da4>=d)*d
-r1=r1+d
-elseif(ma==2)
-d=da1
-d=(da3<d)*da3+(da3>=d)*d
-d=(da4<d)*da4+(da4>=d)*d
-r2=r2+d
-elseif(ma==3)
-d=da1
-d=(da2<d)*da2+(da2>=d)*d
-d=(da4<d)*da4+(da4>=d)*d
-r3=r3+d
-elseif(ma==4)
-d=da1
-d=(da2<d)*da2+(da2>=d)*d
-d=(da3<d)*da3+(da3>=d)*d
-r4=r4+d
-endif
-else ; Both can grow, so we grow them both as much as they can go.
-if((ma==1 && mb==2)||(ma==2 && mb==1))
-dab=d12
-elseif((ma==1 && mb==3)||(ma==3 && mb==1))
-dab=d13
-elseif((ma==1 && mb==4)||(ma==4 && mb==1))
-dab=d14
-elseif((ma==2 && mb==3)||(ma==3 && mb==2))
-dab=d23
-elseif((ma==2 && mb==4)||(ma==4 && mb==2))
-dab=d24
-elseif((ma==3 && mb==4)||(ma==4 && mb==3))
-dab=d34
-endif
-da=dab/2
-if(ma!=1)
-da=(da1<da)*da1+(da1>=da)*da
-endif
-if(ma!=2)
-da=(da2<da)*da2+(da2>=da)*da
-endif
-if(ma!=3)
-da=(da3<da)*da3+(da3>=da)*da
-endif
-if(ma!=4)
-da=(da4<da)*da4+(da4>=da)*da
-endif
-db=dab/2
-if(mb!=1)
-db=(db1<db)*db1+(db1>=db)*db
-endif
-if(mb!=2)
-db=(db2<db)*db2+(db2>=db)*db
-endif
-if(mb!=3)
-db=(db3<db)*db3+(db3>=db)*db
-endif
-if(mb!=4)
-db=(db4<db)*db4+(db4>=db)*db
-endif
-if(ma==1)
-r1=r1+da
-elseif(ma==2)
-r2=r2+da
-elseif(ma==3)
-r3=r3+da
-elseif(ma==4)
-r4=r4+da
-endif
-if(mb==1)
-r1=r1+db
-elseif(mb==2)
-r2=r2+db
-elseif(mb==3)
-r3=r3+db
-elseif(mb==4)
-r4=r4+db
-endif
-endif
+         if(mb==0) ; and it's the only one, so we grow it as big as it will go.
+                 if(ma==1)
+                         d=da2
+                         d=(da3<d)*da3+(da3>=d)*d
+                         d=(da4<d)*da4+(da4>=d)*d
+                         r1=r1+d
+                 elseif(ma==2)
+                         d=da1
+                         d=(da3<d)*da3+(da3>=d)*d
+                         d=(da4<d)*da4+(da4>=d)*d
+                         r2=r2+d
+                 elseif(ma==3)
+                         d=da1
+                         d=(da2<d)*da2+(da2>=d)*d
+                         d=(da4<d)*da4+(da4>=d)*d
+                         r3=r3+d
+                 elseif(ma==4)
+                         d=da1
+                         d=(da2<d)*da2+(da2>=d)*d
+                         d=(da3<d)*da3+(da3>=d)*d
+                         r4=r4+d
+                 endif
+         else ; Both can grow, so we grow them both as much as they can go.
+                 if((ma==1 && mb==2)||(ma==2 && mb==1))
+                         dab=d12
+                 elseif((ma==1 && mb==3)||(ma==3 && mb==1))
+                         dab=d13
+                 elseif((ma==1 && mb==4)||(ma==4 && mb==1))
+                         dab=d14
+                 elseif((ma==2 && mb==3)||(ma==3 && mb==2))
+                         dab=d23
+                 elseif((ma==2 && mb==4)||(ma==4 && mb==2))
+                         dab=d24
+                 elseif((ma==3 && mb==4)||(ma==4 && mb==3))
+                         dab=d34
+                 endif
+                 da=dab/2
+                 if(ma!=1)
+                         da=(da1<da)*da1+(da1>=da)*da
+                 endif
+                 if(ma!=2)
+                         da=(da2<da)*da2+(da2>=da)*da
+                 endif
+                 if(ma!=3)
+                         da=(da3<da)*da3+(da3>=da)*da
+                 endif
+                 if(ma!=4)
+                         da=(da4<da)*da4+(da4>=da)*da
+                 endif
+                 db=dab/2
+                 if(mb!=1)
+                         db=(db1<db)*db1+(db1>=db)*db
+                 endif
+                 if(mb!=2)
+                         db=(db2<db)*db2+(db2>=db)*db
+                 endif
+                 if(mb!=3)
+                         db=(db3<db)*db3+(db3>=db)*db
+                 endif
+                 if(mb!=4)
+                         db=(db4<db)*db4+(db4>=db)*db
+                 endif
+                 if(ma==1)
+                         r1=r1+da
+                 elseif(ma==2)
+                         r2=r2+da
+                 elseif(ma==3)
+                         r3=r3+da
+                 elseif(ma==4)
+                         r4=r4+da
+                 endif
+                 if(mb==1)
+                         r1=r1+db
+                 elseif(mb==2)
+                         r2=r2+db
+                 elseif(mb==3)
+                         r3=r3+db
+                 elseif(mb==4)
+                         r4=r4+db
+                 endif
+         endif
 endif
 rr1=sqr(r1)
 rr2=sqr(r2)
@@ -987,20 +987,19 @@ rr4=sqr(r4)
 z=pixel:
 inside=0
 if(|z-p1|<rr1)
-z=r1*conj(r1/(z-p1))+p1
-inside=1
+         z=r1*conj(r1/(z-p1))+p1
+         inside=1
 elseif(|z-p2|<rr2)
-z=r2*conj(r2/(z-p2))+p2
-inside=1
+         z=r2*conj(r2/(z-p2))+p2
+         inside=1
 elseif(|z-p3|<rr3)
-z=r3*conj(r3/(z-p3))+p3
-inside=1
+         z=r3*conj(r3/(z-p3))+p3
+         inside=1
 elseif(|z-p4|<rr4)
-z=r4*conj(r4/(z-p4))+p4
-inside=1
+         z=r4*conj(r4/(z-p4))+p4
+         inside=1
 endif
-inside
-}
+inside}
 
 5movable {
 d21=d12=cabs(p1-p2)
@@ -22522,107 +22521,107 @@ endif
 }
 
 Multifrac_231 {
- ; Albrecht Niekamp   March,03
-;real(p2) factor
-;imag(p2) bailout
-;real(p3) maxiter1
-;imag(p3) maxiter2
-;real(p4) inside1: 1_mandel 2_julia 3_expmandel 4_expjulia
-;           other: *10_soft julia transitions <0_outside=exp
-;imag(p4) inside2: 1_mandel 2_julia 3_expmandel 4_expjulia
-;           other: *10_soft mandel transitions <0_no inside1
-;real(p5) border1
-;imag(p5) border2
-fac=real(p2)
-ba=imag(p2)
-out1=real(p3)
-out2=imag(p3)
-b1=real(p5)
-b2=imag(p5)
-d1=real(p4)
-d2=imag(p4)
-vb=(d1<0)
-If (vb)
-d1=d1*-1
-endif
-tj=(d1<10)
-if (tj==0)
-d1=d1/10
-endif
-v1=(d1==3)
-v2=(d1==4)
-d1=(d1==2)+(d1==4)
-st=(d2<0)
-if (st)
-d2=d2*-1
-endif
-mj=(d2<10)
-if (mj==0)
-d2=d2/10
-endif
-v3=(d2==3)
-v4=(d2==4)
-d2=(d2==2)+(d2==4)
-t=0
-start=2-st
-if (ismand)
-z=0
-c=pixel
-else
-c=p1
-z=pixel
-endif
-:
-if (vb)
-z=(z+real(c))^(z+imag(c))
-else
-z=z^2+c
-endif
-bo=|z|
-if (start)
-t=t+1
-if (start==2)
-if ((t>out1)+(bo>=b1))
-u=2*(fn1(t/fac))
-if (d1)
-if (tj)
-z=pixel
-endif
-c=p1*u
-vb=v2
-else
-z=z*u
-c=z
-if (mj)
-z=0
-endif
-vb=v1
-endif
-start=1
-t=0
-endif
-else
-if (t>out2)+(bo>=b2)
-u=2*(fn2(t/fac))
-if (d2)
-if (tj)
-z=pixel
-endif
-c=p1*u
-vb=v4
-else
-z=z*u
-c=z
-if (mj)
-z=0
-endif
-vb=v3
-endif
-start=0
-endif
-endif
-endif
-bo<=ba
+  ; Albrecht Niekamp   March,03
+  ;real(p2) factor
+  ;imag(p2) bailout
+  ;real(p3) maxiter1
+  ;imag(p3) maxiter2
+  ;real(p4) inside1: 1_mandel 2_julia 3_expmandel 4_expjulia
+  ;           other: *10_soft julia transitions <0_outside=exp
+  ;imag(p4) inside2: 1_mandel 2_julia 3_expmandel 4_expjulia
+  ;           other: *10_soft mandel transitions <0_no inside1
+  ;real(p5) border1
+  ;imag(p5) border2
+  fac=real(p2)
+  ba=imag(p2)
+  out1=real(p3)
+  out2=imag(p3)
+  b1=real(p5)
+  b2=imag(p5)
+  d1=real(p4)
+  d2=imag(p4)
+  vb=(d1<0)
+  If (vb)
+    d1=d1*-1
+  endif
+  tj=(d1<10)
+  if (tj==0)
+  d1=d1/10
+  endif
+  v1=(d1==3)
+  v2=(d1==4)
+  d1=(d1==2)+(d1==4)
+  st=(d2<0)
+  if (st)
+    d2=d2*-1
+  endif
+  mj=(d2<10)
+  if (mj==0)
+    d2=d2/10
+  endif
+  v3=(d2==3)
+  v4=(d2==4)
+  d2=(d2==2)+(d2==4)
+  t=0
+  start=2-st
+  if (ismand)
+    z=0
+    c=pixel
+  else
+    c=p1
+    z=pixel
+  endif
+  :
+  if (vb)
+    z=(z+real(c))^(z+imag(c))
+  else
+    z=z^2+c
+  endif
+  bo=|z|
+  if (start)
+    t=t+1
+    if (start==2)
+      if ((t>out1)+(bo>=b1))
+        u=2*(fn1(t/fac))
+        if (d1)
+          if (tj)
+            z=pixel
+          endif
+          c=p1*u
+          vb=v2
+        else
+          z=z*u
+          c=z
+          if (mj)
+            z=0
+          endif
+          vb=v1
+        endif
+        start=1
+        t=0
+      endif
+    else
+      if ((t>out2)+(bo>=b2))
+        u=2*(fn2(t/fac))
+        if (d2)
+          if (tj)
+            z=pixel
+          endif
+          c=p1*u
+          vb=v4
+        else
+          z=z*u
+          c=z
+          if (mj)
+            z=0
+          endif
+          vb=v3
+        endif
+        start=0
+      endif
+    endif
+  endif
+  bo<=ba
 }
 
 multifract1 { ; Ron Barnett, January 1999

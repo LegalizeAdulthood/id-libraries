@@ -17,14 +17,15 @@ zp1 = temp, |zp1| <= 4
 }
 
 
-bfly1(XAXIS)  {
-; A minor variation on exp1 [init to pixel], gives another
-; butterfly symmetry.
-      z = zp = pixel
-temp = z
-z = -exp(z) - zp
-z(-z) - zp
-      zp = temp,|zp| <= 4 
+bfly1 (XAXIS) {
+   ; A minor variation on exp1 [init to pixel], gives another
+   ; butterfly symmetry.
+  z = zp = pixel:
+  temp = z
+  z = -exp(z) - zp
+  zp = temp
+  |zp| <= 4 
+  ;SOURCE: noel.frm
 }
 
 
@@ -390,11 +391,15 @@ four(XYAXIS)  {
 }
 
 
-FractalFenderC(XAXIS_NOPARM) {
-                       z=p1,x=|z|:
-                       (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-                       z=sqr(z)+pixel,x=|z|,
-                       x<=4 
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
 }
 
 
@@ -838,63 +843,69 @@ janet {
 }
 
 
-JoWe55c01 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=10
-   ;SOURCE: jo_we_55.frm
+JoWe55c01 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=10
+  ;SOURCE: jo_we_55.frm
 }
 
 
-JoWe55c02 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+JoWe55c02 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
 
 
-JoWe55c03 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c-0.14;
-z=fn2(z) + c-0.14,
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+JoWe55c03 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c-0.14
+  z=fn2(z) + c-0.14
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
 
 
-JoWe55c04 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c-0.28;
-z=fn2(z) + c-0.14,
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+JoWe55c04 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c-0.28
+  z=fn2(z) + c-0.14
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
 
 
-JoWe55c05 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=p1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c*c
-z=fn2(z) + (c<0)
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+JoWe55c05 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=p1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c*c
+  z=fn2(z) + (c<0)
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
 
 
-JoWe55c06 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=p1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c*c
-z=fn2(z) + (z<0)
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+JoWe55c06 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=p1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c*c
+  z=fn2(z) + (z<0)
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
 
 
@@ -1190,20 +1201,19 @@ JoWe_03_PHC_n { ; Jo Weber [100424,35], 8/1996
 }
 
 
-JoWe_03_PHC_n1 { ; Jo Weber [100424,35], 8/1996
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-                      z = c = pixel:
-                      a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1)) 
-                      t=fn1(z),
-                      b1 = (c^(sqr(t)))*evenodd-c*fn2(t)*oddeven,
-                      b2=(fn1(a2)-fn2(a1)*fn2(a3))*evenodd-(c^(fn1(a3)/fn2(a2)))*oddeven,
-                      z=b1
-                      b3=(1.0>=|z|),
-                      if b3 then z=b2
-     ;SOURCE: jowe_phc.frm
+JoWe_03_PHC_n1 {; Jo Weber [100424,35], 1996    Requires passes=1
+  z = c = pixel:
+  a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1))
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  b2=(fn1(a2)-fn2(a1)*fn2(a3))*whitesq-(c^(fn1(a3)/fn2(a2)))*(whitesq==0)
+  z=b1
+  b3=(1.0>=|z|)
+  if (b3)
+    z=b2
+  endif
+  1.0>=|z|
+  ;SOURCE: phc.frm
 }
 
 
@@ -1232,21 +1242,19 @@ JoWe_04(XYAXIS) { ; Jo Weber [100424,35], 6/1996
 }
 
 
-JoWe_04_PHC { ; Jo Weber [100424,35], 8/1996
-  ; p2 - no effect
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-                          z = c =pixel:
-                          t=fn1(z),
-                          b1 = (c^(sqr(t)))*evenodd-c*fn2(t)*oddeven,
-		          a1=fn1(z), a2=p1/a1, 
-                          b2=(a1-a2+pixel)*oddeven+c*a1*(a2-0.34)*evenodd,
-                          z=b1
-                          b3=(|z|<=4)
-			  if b3 then z=b2
-     ;SOURCE: jowe_phc.frm
+JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
+  z = c =pixel:
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  a1=fn1(z), a2=p1/a1
+  b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
+  z=b1
+  b3=(|z|<=4)
+  if (b3)
+    z=b2
+  endif
+  |z|<=4
+  ;SOURCE: phc.frm
 }
 
 

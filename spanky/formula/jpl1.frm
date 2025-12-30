@@ -8,8 +8,12 @@ BirdOfPrey+(XAXIS_NOPARM) {; Jon Osuch
     ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx
     z   = p1,
     x   = 1:
-   (x  <  10) * (z=fn1(z)+pixel),
-   (10 <= x)  * (z=fn2(z)+pixel),
+    if (x  <  10)
+        z=fn1(z)+pixel
+    endif
+    if (10 <= x)
+        z=fn2(z)+pixel
+    endif
     x   = x+1,
    |z| <=p2
    }

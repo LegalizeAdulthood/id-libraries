@@ -319,21 +319,24 @@ January_gen  { ; Modified Sylvie Gallet "january" formula
           ; Based on Scott Burns equation solver applied to z^3-1 = 0
           ; Use decomp = 256
           ; generalized by Les St Clair, Dec 1997
-          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp for
-default behaviour
-z1 = pixel , iter = 0
-a = 23*(0,0.0245436)       ; 23 * 2i pi / 256
-mz = fn1(fn2(z1)-1) :
-if (mz >= 0.1)
- z2 = z1*z1
- z1 = ((1,-1)*z2*z2 + (7,1)*z1) / (2*z1*z2 + p1)
- mz = fn1(fn2(z1)-1) , cont = 1
- iter = iter + 1
-else
- z = fn3((iter + p2*mz)*a)
- cont = 0
-endif
-cont
+          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp 
+          ; for default behaviour
+  z1 = pixel, iter = 0
+  a = 23*(0,0.0245436)       ; 23 * 2i pi / 256
+  mz = fn1(fn2(z1)-1)
+  :
+  IF (mz >= 0.1)
+    z2 = z1*z1
+    z1 = ((1,-1)*z2*z2 + (7,1)*z1) / (2*z1*z2 + p1)
+    mz = fn1(fn2(z1)-1)
+    cont = 1
+    iter = iter + 1
+  ELSE
+    z = fn3((iter + p2*mz)*a)
+    cont = 0
+  ENDIF
+  cont
+  ;SOURCE: 97msg.frm
 }
 
 JDG-7-01c { ; Modified Sylvie Gallet frm
@@ -430,19 +433,20 @@ z=z-p3*a/b
 }
 
 many_man_phc {; Modified Stephen C. Ferguson formula
-	      ; adapted for Fractint by Les St Clair, 1997
-	      ; phc variation by P. DiGiorgi
-  	      ; use imag(p1) to set bailout
-    z=0, c1=fn3(pixel), c0=fn4(pixel)
-    IF (whitesq)
-	v = (c1^p2)/p2
-    ELSE
-	v = (c0^p2)/p2
-    END IF
-    n = p3*fn1(fn2(v)):
-    	z = z^real(p1) + n
-        |z| <= imag(p1)
-	}
+              ; adapted for Fractint by Les St Clair, 1997
+              ; phc variation by P. DiGiorgi
+              ; use imag(p1) to set bailout
+  z=0, c1=fn3(pixel), c0=fn4(pixel)
+  IF (whitesq)
+    v = (c1^p2)/p2
+  ELSE
+    v = (c0^p2)/p2
+  ENDIF
+  n = p3*fn1(fn2(v)):
+  z = z^(real(p1)) + n
+  |z| <= imag(p1)
+  ;SOURCE: 97msg.frm
+}
 
 PD_411  {
         bailout = 4 + imag(p3)

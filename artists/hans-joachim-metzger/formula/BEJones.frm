@@ -124,19 +124,25 @@ z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  |z| <= 4
 }
 
-BJ-SG-G-1-d    {; Modified Sylvie Gallet [101324,3444], 1996
-  ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
-  c = z = pixel,c1=fn1(c=sin(conj(-0.81256,-0.1295)))/p3
-  z1 = c1 = 1.5*z , z2 = c2 = 2.25*z , z3 = c3 = 3.375*z , z4 = c4 = 5.0625*z
-  l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2)
-  bailout = 16 , iter = 0 :
-   t1 = (iter==l1) , t2 = (iter==l2) , t3 = (iter==l3) , t4 = (iter==l4)
-   z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
-   c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
-   z = z*z+c
-   iter = iter+1
-    |z| <= bailout
-  }
+BJ-SG-G-1-d {; Modified Sylvie Gallet [101324,3444], 1996
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; periodicity=0
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  c = z = pixel
+  c1=sin(conj(-0.81256,-0.1295))/p3
+  c = fn1(c1)
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
+  bailout = 16, iter = 0 :
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
+  z = z*z+c
+  iter = iter+1
+  |z| <= bailout
+  ;SOURCE: sg-bc-bj.frm
+}
 
 BJ-SG-man-newt-j {    ;Modified Sylvie Gallet [101324,3444], 1995
    z = pixel , c = sqrt(fn1(conj(fn2(z+pixel)))/p2)^2+0.25 , iter = 1
@@ -423,18 +429,21 @@ BJ-SG-MaNewt-024 {    ;Modified Sylvie Gallet [101324,3444], 1995
    ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-BJ-SG-MaNewt-026 {    ;Modified Sylvie Gallet [101324,3444], 1995
-   z = pixel * fn1(rad/p2) , c = z , iter = 1
-   rad = 3.1 , center = (1.0,0.1)
-   pix = fn2((10*pixel+(5.0,-3.4/p3))*(0.0,-0.95))
-   zn = fn3(center+rad/(pix-center))
-   limit = real(p1) , b1 = 16 , b2 = 0.0001 :
-   test1 = (iter<limit) , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-1)/(4*z4)
-   z = (z2+c)*test1 + (z-z1)*(1-test1) 
-   iter = iter+1
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+BJ-SG-MaNewt-026 {; Modified Sylvie Gallet [101324,3444], 1995
+                  ; Unmatched parentheses error corrected by George 
+                  ; Martin, 5/4/98
+  z = pixel * fn1(rad/p2), c = z, iter = 1
+  rad = 3.1, center = (1.0,0.1)
+  pix = fn2((10*pixel+((5.0,-3.4)/p3))*(0.0,-0.95))
+  zn = fn3(center+rad/(pix-center))
+  limit = real(p1), b1 = 16, b2 = 0.0001 :
+  test1 = (iter<limit), test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
+  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  iter = iter+1
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: bejones.frm
 }
 
 BJ-man-julz-002 {  ; Sylvie Gallet [101324,3444], 1995

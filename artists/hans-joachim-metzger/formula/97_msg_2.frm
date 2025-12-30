@@ -68,20 +68,23 @@ Carr2821{;Modified Sylvie Gallet frm. [101324,3444],1996
   z=(|z|/5)+z*z+c-0.09/pixel
   iter=iter+1
   |z|<=bailout }
+
 many_man_phc {; Modified Stephen C. Ferguson formula
-	      ; adapted for Fractint by Les St Clair, 1997
-	      ; phc variation by P. DiGiorgi
-  	      ; use imag(p1) to set bailout
-    z=0, c1=fn3(pixel), c0=fn4(pixel)
-    IF (whitesq)
-	v = (c1^p2)/p2
-    ELSE
-	v = (c0^p2)/p2
-    END IF
-    n = p3*fn1(fn2(v)):
-    	z = z^real(p1) + n
-        |z| <= imag(p1)
-	}
+              ; adapted for Fractint by Les St Clair, 1997
+              ; phc variation by P. DiGiorgi
+              ; use imag(p1) to set bailout
+  z=0, c1=fn3(pixel), c0=fn4(pixel)
+  IF (whitesq)
+    v = (c1^p2)/p2
+  ELSE
+    v = (c0^p2)/p2
+  ENDIF
+  n = p3*fn1(fn2(v)):
+  z = z^(real(p1)) + n
+  |z| <= imag(p1)
+  ;SOURCE: 97msg.frm
+}
+
 many_man{; Modified Stephen C. Ferguson formula
       ; adapted for Fractint by Les St Clair, 1997
       ; use real p1 to set bailout (try p1=4)
@@ -293,22 +296,27 @@ tri-fn+fn    { ; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
    ENDIF
    mz1 <= b11
    }
-JoWe55c02 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=p2
-   ;SOURCE: jo_we_55.frm
+
+JoWe55c02 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
 }
-JoWe55c01 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=10
-   ;SOURCE: jo_we_55.frm
+
+JoWe55c01 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=10
+  ;SOURCE: jo_we_55.frm
 }
+
 tri-mandel-2 { ; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
                ; Thanks to Kerry Mitchell for the idea!
                ; real(p1) = bailout (1024 recommended)

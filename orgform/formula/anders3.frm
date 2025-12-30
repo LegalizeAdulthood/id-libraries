@@ -17,13 +17,29 @@ Comment {
 
 ;---------------------------------- formula file anders.frm -------------------------------------
 
-2lambda32{z=p2,c=pixel:  ;p2<>1<>-1<>0
-(real(z/c)>=imag(p1))*(z=z*(1-z)*c)+(real(z/c)<imag(p1))*(z=z*(1+z)*c),
-|z|<real(p1)+4}
+2lambda32 {; Peter Anders anders@physik.hu-berlin.de
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p2, c=pixel:  ; p2<>1<>-1<>0
+  IF (real(z/c)<imag(p1))
+    z = z*(1-z)*c + z*(1+z)*c 
+  ELSE
+    z = z*(1-z)*c
+  ENDIF
+  |z|<real(p1)+4
+  ;SOURCE: anders.frm
+}
 
-2mandel32{ z=p2,c=pixel:
-(real(z/c)>=imag(p1))*(z=z*z+c)+(real(z/c)<imag(p1))*(z=z*z-c),
-           |z|<real(p1)+4}
+2mandel32 {; Peter Anders anders@physik.hu-berlin.de 
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p2, c=pixel:
+  IF (real(z/c)<imag(p1))
+    z = 2*z*z  
+  ELSE
+    z = z*z+c
+  ENDIF
+  |z|<real(p1)+4
+  ;SOURCE: anders.frm
+}
 
 Chaos12 {cx=real(pixel),cy=imag(pixel),xo=0,yo=-cy/2:
          x=xo*xo-yo*yo+cx*yo;
@@ -921,13 +937,20 @@ Lambda13 { z=((0.3*p1^2+0.3*p2^2-(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5), c
 Lambda14{ z=pixel,c=p1:
 		z=c*z*(1-z);
                             |fn1(z)|<real(p2) }
-TwoLogistic {z=p1,c=pixel:
-	        r=rand;
-	        if r<0.5 
-                        z=c*z*(1-z);
-                     if r>=0.5
-                        z=c*z*(z-1);
- 	        |fn1(z)|<real(p2) }
+
+TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
+  z=p1, c=pixel:
+  r=rand
+  if (r<0.5)
+    z=c*z*(1-z)
+  endif
+  if (r>=0.5)
+    z=c*z*(z-1)
+  endif
+  |fn1(z)|<real(p2) 
+  ;SOURCE: lambda.frm
+}
+
 Bifurcation {z=p1,c=pixel:
              z=z+c*fn1(z)*(1-fn1(z)),
              |fn2(z)|<real(p2) }

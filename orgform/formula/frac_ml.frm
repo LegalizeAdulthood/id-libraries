@@ -134,14 +134,14 @@ _AC1 { ; generalized _AC0
 }
 
 0008 {
- z = pixel:
- z = pixel^z+sqr(z)-pixel/z:
-; source KANAK.FRM
+  z = pixel:
+  z = pixel^z+sqr(z)-pixel/z
+  ;SOURCE: 99msg.frm
 }
 
 000b {
  z = pixel^p1:
- z = sqr(z^p2)-pixel^p3:
+ z = sqr(z^p2)-pixel^p3
 ; source KANAK.FRM
 }
 
@@ -20219,24 +20219,25 @@ p2 < |z2|   ; p2 small like .0000001 or smaller, not zero
 }
 
 Newfunc2  {
-z=a=b=lastz=dis=pixel, s=0:
-IF (s==0)
-lastz=z
-ENDIF
-IF (s==0)
-s=1
-ELSE
-s=0
-ENDIF
-dis=|z|-|pixel|
-a=real(z)
-b=imag(z)
-IF (|a| <= |b|+dis)&& (|a| > |b|-dis)
-z=(z-pixel)^p1 
-ELSE
-z=(z+pixel)^p2
-ENDIF
-|z| <=4
+  z=a=b=lastz=dis=pixel, s=0:
+  IF (s==0)
+    lastz=z
+  ENDIF
+  IF (s==0)
+    s=1
+  ELSE
+    s=0
+  ENDIF
+  dis=|z|-|pixel|
+  a=real(z)
+  b=imag(z)
+  IF ((|a| <= |b|+dis)&& (|a| > |b|-dis))
+    z=(z-pixel)^p1 
+  ELSE
+    z=(z+pixel)^p2
+  ENDIF
+  |z| <=4
+  ;SOURCE: 98msg.frm
 }
 
 Newt_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998

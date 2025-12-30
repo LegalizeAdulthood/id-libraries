@@ -430,19 +430,20 @@ z=z-p3*a/b
 }
 
 many_man_phc {; Modified Stephen C. Ferguson formula
-	      ; adapted for Fractint by Les St Clair, 1997
-	      ; phc variation by P. DiGiorgi
-  	      ; use imag(p1) to set bailout
-    z=0, c1=fn3(pixel), c0=fn4(pixel)
-    IF (whitesq)
-	v = (c1^p2)/p2
-    ELSE
-	v = (c0^p2)/p2
-    END IF
-    n = p3*fn1(fn2(v)):
-    	z = z^real(p1) + n
-        |z| <= imag(p1)
-	}
+              ; adapted for Fractint by Les St Clair, 1997
+              ; phc variation by P. DiGiorgi
+              ; use imag(p1) to set bailout
+  z=0, c1=fn3(pixel), c0=fn4(pixel)
+  IF (whitesq)
+    v = (c1^p2)/p2
+  ELSE
+    v = (c0^p2)/p2
+  ENDIF
+  n = p3*fn1(fn2(v)):
+  z = z^(real(p1)) + n
+  |z| <= imag(p1)
+  ;SOURCE: 97msg.frm
+}
 
 PD_411  {
         bailout = 4 + imag(p3)

@@ -42,13 +42,20 @@ Lambda13 { z=((0.3*p1^2+0.3*p2^2-(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5), c
 Lambda14{ z=pixel,c=p1:
 		z=c*z*(1-z);
                             |fn1(z)|<real(p2) }
-TwoLogistic {z=p1,c=pixel:
-	        r=rand;
-	        if r<0.5 
-                        z=c*z*(1-z);
-                     if r>=0.5
-                        z=c*z*(z-1);
- 	        |fn1(z)|<real(p2) }
+
+TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
+  z=p1, c=pixel:
+  r=rand
+  if (r<0.5)
+    z=c*z*(1-z)
+  endif
+  if (r>=0.5)
+    z=c*z*(z-1)
+  endif
+  |fn1(z)|<real(p2) 
+  ;SOURCE: lambda.frm
+}
+
 Bifurcation {z=p1,c=pixel:
              z=z+c*fn1(z)*(1-fn1(z)),
              |fn2(z)|<real(p2) }

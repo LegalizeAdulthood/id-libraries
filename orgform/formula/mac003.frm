@@ -705,7 +705,9 @@ Macm003 { ;mutation of SinEgg
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   z = p2
   x = |z|:
-  ( 1 < x ) * ( z = fn1(z) + pixel )
+  if (1 < x)
+    z = fn1(z) + pixel
+  endif
   z = fn2(z) + pixel
   x = |z|
   x <= bailout
@@ -715,7 +717,9 @@ Macm004 { ;mutation of SinEggC
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   z = p2
   x = |z|:
-  ( z = fn1(z) + pixel ) * ( 1 < x ) + ( z = z ) * ( x <= 1 )
+  if (1 < x)
+    z = fn1(z) + pixel
+  endif
   z = fn2(z) + pixel
   x = |z|
   x <= bailout

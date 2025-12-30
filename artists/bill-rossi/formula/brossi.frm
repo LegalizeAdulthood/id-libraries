@@ -19,15 +19,17 @@
 ; Serving suggestion:  I think these all make very good tiles for Windows
 ; wallpaper, so I am also uploading small Windows .BMP files of these
 ; fractals. Let me know what you think. 
- 
+
 Doozy18 (yaxis) {; Bill Rossi
+                 ; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel, c=fn1(z)/fn2(z):
-   t=fn3(z),
-   l=t/fn1(t),
-   fn1(z)=l,
-   z=z/fn4(c)/l+fn1(z),
-   |z| <= 4
-  }
+  t=fn3(z)
+  l=t/fn1(t)
+  z=l
+  z=z/fn4(c)/l+fn1(z)
+  |z| <= 4
+  ;SOURCE: brossi.frm
+}
  
 NewOne3 (yaxis) {; Bill Rossi
   z = pixel:

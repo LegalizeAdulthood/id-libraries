@@ -79,13 +79,20 @@ speed-B { ;variation of speed-A showing one speed-up technique
 }
 
 
-IfThen-A1 { ;Demonstrates that the order of expressions can make a
-          ;difference.  In this example, the assignment is performed
-          ;BEFORE the comparison.
+IfThen-A1 {; Demonstrates that the order of expressions can make a
+           ; difference.  In this example, the assignment is performed
+           ; BEFORE the comparison.
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+           ; Bradley's point is no longer relevant, since the program
+           ; will report an error if this method of conditional assignment
+           ; is attempted.
   z = c = pixel:
-    (z < 0) * (z = fn1(z) + c)
-    (0 <= z) * (z = fn2(z) + c)
-    |z| < 4
+     ; (z < 0) * (z = fn1(z) + c)
+     ; (0 <= z) * (z = fn2(z) + c)
+  z = fn1(z) + c
+  z = fn2(z) + c
+  |z| < 4
+  ;SOURCE: frmtutor.frm
 }
 
 
@@ -104,12 +111,19 @@ IfThen-A3 { ;Another equivalent of IfThen-A1
 }
 
 
-IfThen-B1 { ;In this formula, the comparison is performed BEFORE the
-          ;assignment, but there's still a subtle flaw.
+IfThen-B1 {; In this formula, the comparison is performed BEFORE the
+           ; assignment, but there's still a subtle flaw.
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+           ; Bradley's point is no longer relevant, since the program
+           ; will report an error if this method of conditional assignment
+           ; is attempted.
   z = c = pixel:
-    (z = fn1(z) + c) * (z < 0)
-    (z = fn2(z) + c) * (0 <= z)
-    |z| < 4
+    ; (z = fn1(z) + c) * (z < 0)
+    ; (z = fn2(z) + c) * (0 <= z)
+  z = (fn1(z) + c) * (z < 0)
+  z = (fn2(z) + c) * (0 <= z)
+  |z| < 4
+  ;SOURCE: frmtutor.frm
 }
 
 

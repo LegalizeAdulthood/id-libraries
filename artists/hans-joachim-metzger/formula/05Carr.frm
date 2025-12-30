@@ -36,13 +36,12 @@ z=z*z+conj(c-p2),
   ;SOURCE: 05carr.frm
   ;SOURCE: to-bob-6.frm
 }
-Carr-576{
-z=1/conj(pixel-p1),
-c=conj(cos(z/(1/pixel)))*conj(z(1/pixel)):
-z=z*z*z+conj(c-p2),
-|z| <=10
-  ;SOURCE: 05carr.frm
-  ;SOURCE: to-bob-6.frm
+Carr-576 {
+  z=1/conj(pixel-p1)
+  c=conj(cos(z/(1/pixel)))*conj(z/(1/pixel)):
+  z=z*z*z+conj(c-p2)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 Carr-577{
 z=1/conj(pixel),c=fn1(1/pixel):

@@ -24,12 +24,17 @@
 
 ; First, formulas with only two transformations..
 
-; I post this one some months ago.. use p1=.9/-.87
-zpj(YAXIS){
-    z=pixel:
-    k=real(z)
-    (z=z*p1-1)*(k<0)+(z=z*conj(p1)+1)*(0<=k),
-    |z|<=100
+zpj (YAXIS) {; I post this one some months ago.. use p1=.9/-.87
+             ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel:
+  k=real(z)
+  IF (k<0)
+    z=z*p1-1
+  ELSE
+    z=z*conj(p1)+1
+  ENDIF
+  |z|<=100
+  ;SOURCE: esc-ifs.frm
 }
 
 ; This one make a dragon curve, use p1=(1.1,.9)
