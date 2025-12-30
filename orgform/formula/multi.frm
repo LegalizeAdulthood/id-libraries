@@ -4193,7 +4193,7 @@ Multifrac_216f {
   if (start)
     t=t+1
     if (|z|>=border || t>out)
-      u=2*(fn1(t\fac))
+      u=2*(fn1(t/fac))
       z=pixel
       c=p3*u
       start=0
