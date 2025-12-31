@@ -96,7 +96,7 @@ julia-attractor    { ; SLOWSLOW Julia with finite attractor on. 2h 486.
   }
 
 Corners            { ; Mandel, many, many corners to zoom in on
-                     ;  
+                     ;
   reset type=mandel passes=g
   corners=0.3257826/0.3452654/0.0436815/0.0582941 float=y maxiter=1000
   inside=0
@@ -119,7 +119,7 @@ LittleMandelLake   { ; magnetm
   }
 
 Julia Recursive    { ; Julia, perfect recursive shape. Awful neat.
-                     ;  
+                     ;
   reset type=julia passes=b corners=0.147702/0.540097/-0.102776/0.198083
   params=-0.00468703545629978/0.633165875449777 maxiter=1000
   colors=CCCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsC\
@@ -127,7 +127,7 @@ Julia Recursive    { ; Julia, perfect recursive shape. Awful neat.
   }
 
 Feather            { ; Mandel, lots of feathery bits
-                     ;  
+                     ;
   reset type=mandel passes=g
   corners=-0.984551668/-0.984368742/-0.256558776/-0.256421626 float=y
   maxiter=1000 bailout=1000 inside=255 logmap=yes
@@ -136,7 +136,7 @@ Feather            { ; Mandel, lots of feathery bits
   }
 
 Feather+Lake       { ; Mandel, lots of feathery bits
-                     ;  
+                     ;
   reset type=mandel passes=g
   corners=-0.98705125/-0.98339272/-0.25774008/-0.25499708 maxiter=1000
   bailout=1000 inside=255 logmap=yes

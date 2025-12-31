@@ -2,21 +2,21 @@ comment { ; narrative copyright Kerry Mitchell 26aug98
 
 2 Circles Coloring Method
 
-Several coloring schemes have been put together that color according 
+Several coloring schemes have been put together that color according
 to the orbit's nearest approach to a specified point or curve.  This
 method extends that idea by coloring according to the orbit's nearest
 simultaneous approach to 2 specified circles.
 
 A circle in the x-y plane can be specified by (x - xcenter)^2 +
-(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate
 of the center of the circle, and radius is the circle's radius.  For
 complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
 
 f(z) = |z - center| - radius^2 (using Fractint's || convention)
 
-is a real-valued function that gives the relationship of z to the 
+is a real-valued function that gives the relationship of z to the
 circle.  If f(z) < 0, then z is inside the circle.  A positive
-value of f(z) means that z is outside of the circle, and f=0 means 
+value of f(z) means that z is outside of the circle, and f=0 means
 that z is on the circle.
 
 Using 2 circles then results in 2 functions, fx(z) and fy(z).  One
@@ -27,10 +27,10 @@ circles, it is sufficient to check for the smallest |w|.  This w is
 saved, and at the end of the iteration, "decomp=256" is used to color
 the pixel according to the polar angle of w.
 
-In its most general form, this method requires 6 real parameters:  
+In its most general form, this method requires 6 real parameters:
 2 each for the x- and y-coordinates of the centers of the circles,
 and 2 for the radii of the 2 circles.  For Mandelbrot implementation,
-this requires hardcoding the bailout value, which has been set to 
+this requires hardcoding the bailout value, which has been set to
 10^12.  For Julia implementations, the bailout is also hardcoded, but
 another 2 parameters are needed to specify the Julia parameter, c.
 The "general_jul" formula is written with a hardcoded value of c, to
@@ -38,13 +38,13 @@ allow for the greatest flexibility in choosing circles.
 
 A great deal of choice can still be allowed by only using 4 parameters
 to choose the circles, thereby freeing the other 2 for picking c.
-The "cenx=ceny_jul" method uses concentric circles (both having the 
-same center).  The radii of the circles are independently chosen.  
-A variation of this is the "cenx=-ceny_jul" formula, wherein the 
-centers of the circles are placed symmetrically with respect to the 
+The "cenx=ceny_jul" method uses concentric circles (both having the
+same center).  The radii of the circles are independently chosen.
+A variation of this is the "cenx=-ceny_jul" formula, wherein the
+centers of the circles are placed symmetrically with respect to the
 origin of the complex plane.  Another variation uses the same radii
-for both circles, but different centers.  In "offset_rx=ry_jul", 
-this is accomplished by choosing a point on the plane.  One circle 
+for both circles, but different centers.  In "offset_rx=ry_jul",
+this is accomplished by choosing a point on the plane.  One circle
 is place a little outward of this point, and the other is a little
 inward of the chosen point.  The amount of shift along the radial
 line is 1 of the parameters.
@@ -55,7 +55,7 @@ you'll get very different results in the circles don't intersect from
 when they do.  If they do intersect, you'll tend to see points in the
 image where all the colors come together (this corresponds to where
 the orbit found the intersection point).  Varied ribbon-like effects
-can be seen when the circles are very close to each other--either 
+can be seen when the circles are very close to each other--either
 concentric with slightly different radii, or offset by a small amount.
 
 }

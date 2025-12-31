@@ -1,41 +1,41 @@
-;                               
+;
 ;                              Black and White
 ;                       by Donald Archer CIS 71455,657
 ;
-;           A series of 30 images drawn in black and white (and  
-;           greyscale) in Fractint v18, and tested in v18.2, mostly  
-;           as an exercise in design. 
+;           A series of 30 images drawn in black and white (and
+;           greyscale) in Fractint v18, and tested in v18.2, mostly
+;           as an exercise in design.
 ;
 ;           One can get drugged or mugged by computer color;
-;           it is so easily accessed in Fractint in so many 
+;           it is so easily accessed in Fractint in so many
 ;           formidable and dazzling maps, and so faciley
-;           created, edited, manipulated, rotated (and cycled) 
-;           as to provide, I think, a design crutch to many a weak 
-;           and unsupportable image. (I often review my full-color 
-;           fractals in monocolor to confirm that the necessary 
+;           created, edited, manipulated, rotated (and cycled)
+;           as to provide, I think, a design crutch to many a weak
+;           and unsupportable image. (I often review my full-color
+;           fractals in monocolor to confirm that the necessary
 ;           design elements may not indeed be amiss.) Black and white
 ;           brings one back to the essentials.
-;            
+;
 ;           Some of these images are merely variations of fractals
-;           created in color and available for the most part 
+;           created in color and available for the most part
 ;           in other of my parameter files; others were created
 ;           especially for black and white rendering.
 ;
 ;           Some of these images have been outputted successfully
-;           to a 300 dpi laser jet on glossy white media and others 
+;           to a 300 dpi laser jet on glossy white media and others
 ;           to a Canon bubble jet.
-;           
+;
 ;           Rendering times are indicated on my 486-50 at resolution
 ;           of 1024 x 768 x 256c.
 ;
 ;           Besides FRACTINT.FRM, the file DA.FRM (uploaded along
-;           with this parameter file) is required in your current 
+;           with this parameter file) is required in your current
 ;           directory.
- 
+
 
 ALL_IMAGES_HEREIN  {COPYRIGHTED 1993, DONALD ARCHER, CIS 71544,657
   }
-A_NOTE_TO_VIEWERS  {SOME IMAGES REQUIRE DA.FRM IN CURRENT DIRECTORY                          
+A_NOTE_TO_VIEWERS  {SOME IMAGES REQUIRE DA.FRM IN CURRENT DIRECTORY
   }
 DAbw001            { ; 0:02:02.05 - Spiral
                      ; (c) 1993, Donald Archer, CIS 71544,657
@@ -58,7 +58,7 @@ DAbw002            { ; 0:00:08.48 - Tesseral ellipse
   }
 
 DAbw003            { ; 0:00:33.66 - Letter C
-                     ; (c) 1993, Donald Archer, CIS 71544,657  
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=julfn+exp function=conj passes=b corners=-4/4/-3/3
   params=0.25/0.25 float=y outside=mult
   colors=000NNM<9>zzy<15>000<31>000332<14>zzy<15>000<31>000332<14>zzy<15>0\
@@ -164,7 +164,7 @@ DAbw014            { ; 0:01:41:18 - Martial artist in kimona
   5>000<31>000<15>zzz<15>000<31>000<9>bbb
   }
 
-DAbw015            { ; 0:20:32.52 - Elm leaf 
+DAbw015            { ; 0:20:32.52 - Elm leaf
                      ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1800 type=formula formulafile=da.frm formulaname=DAFRM02
   function=sqr
@@ -208,7 +208,7 @@ DAbw019            { ; 0:17:50.98 - Orient ship
   }
 
 DAbw020            { ; 0:04:09.59 - Untitled
-                     ; (c) 1993, Donald Archer, CIS 71544,657 
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=tim's_error function=cosh
   corners=-1.922931/-0.1849449/-0.08926207/1.174715
   params=2.8999999999999999/0.25 float=y fillcolor=15 inside=maxiter
@@ -217,16 +217,16 @@ DAbw020            { ; 0:04:09.59 - Untitled
   0<31>000<15>zzz<15>000<18>000
   }
 
-DAbw021            { ; 0:00:20.92 - Shark with bubbles 
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+DAbw021            { ; 0:00:20.92 - Shark with bubbles
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1800 type=tim's_error function=cotan
   corners=2.33532216/2.38061479/0.91823598/-0.42704834/3.01754324/0.036172\
   358 params=0.25/0.25 float=y bailout=100
   colors=000cccKKKzzz<15>000<222>000<12>nnn
   }
 
-DAbw022            { ; 0:02:53.33 - Flying saucers 
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+DAbw022            { ; 0:02:53.33 - Flying saucers
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=tim's_error function=cotanh
   corners=-0.45533902/-0.28997332/-1.0293629/-0.91086501
   params=0.10000000000000001/0.34999999999999998 fillcolor=15
@@ -236,7 +236,7 @@ DAbw022            { ; 0:02:53.33 - Flying saucers
   }
 
 DAbw023            { ; 0:02:41.38 - Portrait of a lady
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1800 type=tim's_error function=sqr
   corners=-1.0548475/-0.40832108/0.41191065/-0.42400318/-0.40832108/-0.424\
   00318 bailout=100 inside=0
@@ -244,8 +244,8 @@ DAbw023            { ; 0:02:41.38 - Portrait of a lady
   5>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<15>zzz<15>000<13>rrr
   }
 
-DAbw024            { ; 0:03:47.89 - Heart 
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+DAbw024            { ; 0:03:47.89 - Heart
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=tim's_error function=cosh passes=b
   corners=-1.0575715/-0.95580596/-1.3895313/-1.6006287/-0.95580596/-1.6006\
   287 params=0.5/1.5 maxiter=100 fillcolor=15 outside=real decomp=256
@@ -265,7 +265,7 @@ DAbw025            { ; 0:03:20.92 - Mrs. Quark
   }
 
 DAbw026            { ; 0:02:40.33 - Easy rider
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=tim's_error function=cotan passes=b
   corners=-1.392765/-0.75099307/-0.47696471/-1.30672/-0.75099307/-1.30672
   params=0.89000000000000001/0.89000000000000001 fillcolor=15
@@ -275,7 +275,7 @@ DAbw026            { ; 0:02:40.33 - Easy rider
   }
 
 DAbw027            { ; 0:00:50.04 - Circle with tubes
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset type=barnsleyj2
   corners=-1.220602/-0.7778585/-0.16602784/0.166013 params=50/50
   maxiter=50 inside=bof60 outside=mult potential=255/300/1000
@@ -284,7 +284,7 @@ DAbw027            { ; 0:00:50.04 - Circle with tubes
   }
 
 DAbw028            { ; 0:00:07.96 - Matched semi-circles
-                     ; (c) 1993, Donald Archer, CIS 71544,657     
+                     ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1732 type=unity
   corners=-4.340329/4.340329/-0.33167435/0.33167435/-1.533701/-4.0738226
   float=y maxiter=2 inside=bof60 periodicity=0

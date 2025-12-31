@@ -1,400 +1,400 @@
-; Only formulas with J.P. Louvet are mine.
-
-; Warning : The following .par have not been cleaned and may include some "garbage" parameters
-; having no influence on the final result.
-; ---------------------------------------------------------------------
-; In the .PAR file
-
-; Edit the name of the .frm file if necessary
-
-
-JPL5               { ; J.P. Louvet
-  reset=1820 type=phoenix passes=1
-  corners=-0.0163242153/0.0607797847/0.781150948/0.838978948
-  params=0.56667/-0.5/0 initorbit=0/0 float=y inside=bof60 decomp=256
-  finattract=y
-  colors=C00<2>000000<13>RR0TT0UU0VV0<15>zz0<30>220<15>zIz<15>000000<27>sI\
-  RuISuIS<69>1e10f00h0<8>0z0<14>0Y0<15>z00<11>G00 cyclerange=0/255
-  }
-
-JPL43              { ; J.P. Louvet
-  reset=1920 type=phoenixcplx passes=t
-  corners=0.369221972/0.380778724/0.537894624/0.546562188
-  params=0.3/0/0.5/0/0 float=y bailoutest=and inside=0 decomp=256
-  colors=aSI<13>K2JI0KJ0K<20>VE`WFaXGbYGbYHc<27>n_zaG0<54>zz0I0K<50>lXwlYx\
-  mZyn_zaG0<54>yyFzzGyyG<16>cUI cyclerange=0/255
-  }
-
-JPL50              { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm formulaname=spiderM
-  function=sqr/sin passes=t
-  corners=0.4405116/0.9764476/0.18756156/0.58951356
-  params=1/0/0.1/0/0/0 float=y maxiter=500 inside=zmag outside=mult
-  potential=255/1000/64 decomp=256
-  colors=000000<7>K83N94PA4RB4<8>mL8pM9rN9tO9wPAyQA<6>hJ7fI7cH7`F6<6>K83I7\
-  3F62C52<3>21000000103505807D1AG1CK<3>2MX2O`2Qb2Te<4>3dq3fs3ht3kv3mw<3>4v\
-  y<2>4ox4mw3kv3hu3fs3dr<5>2Qc2Oa2MY2JV1HS1FP1CK1AH07D05A035002110<15>cb5f\
-  e5hg5kj5ml6on6<3>yx6<11>XW4UU4SR4QP3NN3LK3JI3GF2<5>110300<7>M22O23Q33S33\
-  V33<12>x75<13>S33Q33O23M22J22<6>300000030150<3>3F03I04K04M0<8>7h17j17m17\
-  o17r18t18v18y1<8>6c16`16Z15W15U05R0<2>4K03I03F02C0<4>000
-  cyclerange=0/255
-  }
-
-JPL51A             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=InverseJulia passes=t
-  corners=-2.95858/2.95858/-2.218935/2.218935 params=0.6/0.23/2/0/0/0
-  float=y maxiter=250 inside=0 decomp=256
-  colors=PPP<18>zzz<19>JJJBBB444000<113>100410940B60E90JE0KG0NJ1RK1TN4UP4Y\
-  R6_T6`U9bW9e_Bf`BhbEjdEkeGmfJohJqiKrjKtmNunNvoPxqPyrRzsRztTzuTzvUzwUzyWz\
-  zWzzYzzYzz_zz_zz`zz`zzbzzdzzdzzbzz`zz_zz_zzYzxWzvUzuTzsTxqRvoPtmNrjNoiKm\
-  fJjdGhbEe_EbWB_U9WR6TN6PK4KG1GB0B90640100<21>000<4>NNN
-  cyclerange=0/255
-  }
-
-JPL78              { ; J.P. Louvet
-  reset=1920 type=lambda(fn||fn) function=sin/sqr passes=t
-  corners=-1.555878/1.554489/-1.167755/1.163803
-  params=0.1280517578125/1.021316528320312/1 bailoutest=and inside=0
-  finattract=y periodicity=0
-  colors=zzznXnB0BD0D`L`lWlOAOTETF3FJ6JdPdM9Ms`snC0hShUFUI5IWHWgRgwcEvcvYJ\
-  YH4HcOczlJaMazfzpH2yhHsR7vZCQCQpJ3E2EoF1rO6xeFyjIPBPtT8<2>xfGoE0qK4qL4sQ\
-  7zkJv`DwdFpG1uWApI2sS8rN5wbEtU9yiIuYBxgHrP6oD0v_CqM5tVASDSXIX_K_fQfwdwoY\
-  ojTjkVkyeyubur_rpZp000<48>000EES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<\
-  2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G\
-  00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<\
-  2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGB\
-  FGBDGBCG`mQmsDzz0<4>hlzL7L
-  }
-
-JPL103             { ; J.P. Louvet
-  reset=1920 type=phoenixcplx passes=t corners=-2/2/-1.5/1.5
-  params=0.2/0/0.3/0/0 float=y bailoutest=and inside=0 decomp=256
-  colors=rrr<30>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>2D41D40E30F3<\
-  12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<37>xxxzzzyyy<4>sss
-  cyclerange=0/255
-  }
-
-JPL104             { ; J.P. Louvet
-  reset=1920 type=phoenixcplx passes=t
-  corners=-1.0118698/-0.37986984/-0.016632721/0.45736728
-  params=0.2/0/0.3/0/0 float=y bailoutest=or inside=0 decomp=256
-  colors=RND<3>EC8<14>2D41D40E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8\
-  DDD<37>xxxzzzyyy<36>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<10>UPE
-  cyclerange=0/255
-  }
-
-JPL113             { ; J.P. Louvet
-  reset=1920 type=julzpower passes=t
-  corners=0.01267584/1.068676/-0.004986247/-1.159546/1.068676/-1.159546
-  params=0.3/0/2/0 float=y bailoutest=imag inside=0 decomp=255
-  colors=YYY<21>zzz<37>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>2D41D4\
-  0E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<15>XXX
-  cyclerange=0/255
-  }
-
-JPL126             { ; J.P. Louvet
-  reset=1920 type=lambda(fn||fn) function=sin/sqr passes=t
-  corners=-3.239437/3.239437/-2.429577/2.429577 params=1/0.1/1 float=y
-  maxiter=200 bailout=1 inside=0 invert=0.46/0/0 decomp=256
-  colors=RRR<26>xxxzzzyyy<36>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>\
-  2D41D40E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<9>PPP
-  cyclerange=0/255
-  }
-
-JPL140             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=select.frm
-  formulaname=BirdOfPrey+ function=sqr/atanh passes=t
-  corners=0.037938476/0.28886992/0.52293205/0.71112353
-  params=2/-1/1/0/0/0 potential=255/600/2 decomp=256
-  colors=oRC99jAAmBBpBBqCCr<2>GGzI0K<14>fOzO08<14>z0fO00<10>lOBqTDsVEvYFaG\
-  0<14>zz00C4<14>0zR0CC<14>0zz00O<14>GGzI0K<14>fOzO08<14>z0f0C4<14>0zR400<\
-  3>K00O00Q00<13>z88oD0<8>vYBaG0<14>zz00C4<14>0zR0CC<14>0zz00O<7>88h
-  }
-
-JPL147A            { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm formulaname=JPL4'
-  function=tan passes=t
-  corners=0.81553942/1.6475394/-0.31700835/0.30699165
-  params=0/0/0/0/0/0 float=y maxiter=250 inside=0 potential=255/150/32
-  decomp=256 rseed=-10386
-  colors=0000P00N00K0KK0<17>zz0<3>zz0zz0xx0<16>KK0K40N50P80RB0UC0WF0YH0`I0\
-  bK0eN0<7>x_0za0zb0ze0ze0zb0za0<7>gO0eN0bK0`I0YH0WF0UC0RB0P80N50K40000<2>\
-  0000N0<15>0x00z00z0<2>0z00z00x0<16>0K0KK0<17>zz0<3>zz0zz0xx0<16>KK0K40N5\
-  0P80RB0UC0WF0YH0`I0bK0eN0<7>x_0za0zb0zd0zc0zb0za0<7>gO0eN0bK0`I0YH0WF0UC\
-  0RB0P80N50K400K0<17>0z0<3>0z00z00x0<13>0R0
-  }
-
-JPL189             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=InverseJulia passes=t
-  corners=-2.242152/2.242152/-1.681614/1.681614 params=0.3/0/11/0/0/0
-  float=y maxiter=250 inside=0 potential=255/400/0 decomp=256
-  colors=000W0eT0aQ0_N0WM0SI0NF0KB0F50800020250880DD0HF0KH0NI0QM0TN0VP0XQ0\
-  _T0aV0dW0fX0i_0kY0jX0gW0eT0cS0`Q0YP0WM0TK0SI0PH0MD0IB0F80B505000500D00H0\
-  0M00<2>W00_00a00e00g00k00n00q00s00w00u00q00o00k00i00e00c00<4>M00I00D0080\
-  00000200520B20D50H80I80MB0ND0PD0SF0TF0WH0XI0_I0`K0cM0aM0`K0YK0XI0VH0TH0Q\
-  F0PD0ND0KB0IB0F80D5085052000850HD0NI0TN0XS0aV0fY0ka0oe0si0xk0zo0zr0zv0zy\
-  0zz0zz0<3>yl0uj0pf0kc0g_0cW0YT0TP0PK0IF0B8000000500D<2>00Q00V00Y<3>00kD0\
-  gN0dV0_a0Wg0So0Mu0Hz0Bz00z00x00s00n00<4>M00D000000000200800D00H0<6>0_0Da\
-  0Nd0Vf0ai0gl0oo0uq0zs0zw0zs0xo0sk0nf0ia0cY0<2>MI0DB000000000500D00I00N<2\
-  >00_00c00f<3>00u00x00z00z00z00x<3>00j00f00a00Y00V00Q00M00H00B00000002005\
-  00B00D00H00I00M00N0<2>0V05T8BQFFNMIKQNIVQF_TBcW5f_0kY0i
-  }
-
-JPL193             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=InverseJuliaFn function=tan passes=t
-  corners=-2/2/-1.5/1.5 params=0.4/0/1/0/0/0 float=y maxiter=250
-  inside=0 potential=255/500/0 decomp=256
-  colors=000521<5>K83N94PA4RB4<8>mL8pM9rN9tO9wPAyQA<6>hJ7fI7cH7`F6<6>K83I7\
-  3F62C52<3>21000000103505807D1AG1CK<3>2MX2O`2Qb2Te<4>3dq3fs3ht3kv3mw<3>4v\
-  y<2>4ox4mw3kv3hu3fs3dr<5>2Qc2Oa2MY2JV1HS1FP1CK1AH07D05A035002110<15>cb5f\
-  e5hg5kj5ml6on6<3>yx6<11>XW4UU4SR4QP3NN3LK3JI3GF2<5>110300<7>M22O23Q33S33\
-  V33<12>x75<13>S33Q33O23M22J22<6>300000030150<3>3F03I04K04M0<8>7h17j17m17\
-  o17r18t18v18y1<8>6c16`16Z15W15U05R0<2>4K03I03F02C0<3>030000000210
-  }
-
-JPL196             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=CarlsonJ1 function=sin passes=t
-  corners=-0.3875493/-0.12855522/-0.39717768/0.39380819/-0.67398465/-0.015\
-  263884 params=5/0/1/0/1/0 float=y maxiter=50 inside=0
-  potential=255/400/0 decomp=256
-  colors=0000000H0<39>0z0<41>0F0FF0<41>zz0<40>GG0FF0F20<41>z`0<41>F20000
-  cyclerange=2/255
-  }
-
-JPL215             { ; J.P. Louvet
-  reset=1920 type=fn+fn function=sin/tan passes=t
-  corners=2.467668/3.815706/0.8986917/-0.8986917/3.815706/-0.8986917
-  params=6/0/6/0 float=y maxiter=250 bailout=128 inside=0
-  potential=255/310/0 decomp=256
-  colors=000303qe8<3>vn9wp9ws9xuAxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO\
-  6YM6WJ5SH5QF5LC5<3>724403330564787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvkn\
-  wmpxpsy<2>vzztwz<3>knwilvgitdgs<3>WYiUWgSUcPRa<2>JKRHIOEFJ<3>56433103C07\
-  D0BE<4>1SJ1WK2YL2aM<5>3pS3rT3sU<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3n\
-  R3lQ2iP2gO2dN2bM2ZL1XK1TJ1QI1LH1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0\
-  <5>100<6>Q15U15W16_16<5>n29p29q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29\
-  l19j18g18<3>X16V15R15O14J03<4>200724A54E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7\
-  ob8 cyclerange=2/255
-  }
-;-----------------------------
-; In the .FRM fole
-
-; I have added "+" because the following formula is not the one included in fractint.frm
-; but the slight modified one in FRACXTR6.ZIP 
-
-BirdOfPrey+(XAXIS_NOPARM) {; Jon Osuch
-    ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx
-    z   = p1,
-    x   = 1:
-   (x  <  10) * (z=fn1(z)+pixel),
-   (10 <= x)  * (z=fn2(z)+pixel),
-    x   = x+1,
-   |z| <=p2
-   }
-
-spiderM {z=pixel,f=pixel,g=pixel: 
-         f=f/p1+z,
-         z=fn1(z^(p2+g))+fn2(f),
-         |z| <= 4 }
-
-; I named first the following formula "InverseJulia" under my name 
-; but Paul Carlson told me that it was first published by Pokorny
-; sorry ! Moreother this name is not good because it suggests an other formula.
-; I have retained this name for compatibility with the pictures but a better name is simply Pokorny !
-
-InverseJulia {; Pokorny's formula
-; P1 = c
-; P2 = iter (normalement 4)
-z=pixel,
-c=P1:
-z=1/(z^2+c),
-|z|<=P2
-}
-
-; a better name might be PokornyFn
-
-InverseJuliaFn {; after Pokorny
-                ;  modified by J.P. Louvet
-; P1 = c
-; P2 = iter (normalement 4)
-z=pixel,
-c=P1:
-z=fn1(1/(z^2+c)),
-|z|<=P2
-}
-
-JPL4' (yaxis) {;J.P. Louvet
-z=Pixel,
-c=Pixel:
-fn1(z)=fn1(z^2+1)+c,
-|z|<=4
-}
-
-CarlsonJ1 {; from P. Carlson, modified by J.P. Louvet
-; P1 = c
-; P2 = degre
-; P3 = iter (normalement 4)
-z=pixel,
-c=P1:
-Z=fn1(C*(Z^P2-1)),
-|z|<=P3}
-
-
-
-; --------------------------------------
-; Some other fractals
-;
-
-JPL1a              { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm formulaname=JPL4a'
-  function=sin passes=t
-  corners=-0.079515813/0.079515813/0.88544712/1.0965646
-  params=6/0/0/0/0/0 float=y maxiter=250 inside=0
-  potential=255/1800/1024 rseed=1997
-  colors=000hhh000<7>00085686888A8ACABDADFAEGAFHAHKAJL<6>CTVCUWCWZCX_DZa<3\
-  >DdgDeiEhj<3>EmqForFquFrvFtwFvzGwzGzz<6>GzzGwzFvzFtw<6>EhkEgjDehDcgDbdDa\
-  cD_bCZ`CW_CVX<7>BKMAJLAGJAFHAEFACE8BD8AB87A867846825010<2>1601701A1<3>2F\
-  12H14J2<3>4P25Q25R4<4>6Z46`56a56b56d57e57h6<2>7l67m67p67q77r77u77v78x78z\
-  7<4>8z88z88z78x78v77u77r7<2>7m67k67j67i67g57e5<3>6_56Z46W4<2>5S45R45P2<3\
-  >4K24J22G1<2>2C11B1180<3>0200B0<2>7C0AD1DE1GE1JF1<2>PH2RH2TJ2VJ2XK2_L4<5\
-  >kO5lP5oP5<5>xT6zU6zU6<3>zX7zX7zZ7<4>za8za8z`8<2>zZ8zZ7zX7<4>zU6zT6xT6<4\
-  >qQ5oP5lP5<4>cM4aL4_K2ZK2VJ2TJ2RH2PG2NG1 cyclerange=0/255
-  }
-
-JPL3               { ; J.P. Louvet
-  reset=1920 type=julia passes=t
-  corners=-0.196229303/-0.126766488/0.710566586/0.481506821/-0.0612740684/\
-  0.530626386 params=-0.728476881980896/0.1096100807189941
-  maxiter=30000 inside=0 decomp=256 finattract=y periodicity=0
-  colors=kFNpKQ<63>1e10f00h0<8>0z0<14>0Y0<15>z00<15>000000<13>RR0TT0UU0VV0\
-  <15>zz0<30>220<15>zIz<15>000000<21>gELiEMmGO<2>sIRuISuIS<4>qKQ
-  }
-
-JPL31              { ; J.P. Louvet
-  reset=1920 type=unity passes=1
-  corners=0.686302702/0.742302702/-0.825660201/-0.783660201
-  initorbit=0/0 float=y inside=0 finattract=y periodicity=0
-  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
-  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
-  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
-  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
-  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
-  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
-  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
-  >BGFBGGBFGBDGBCGSEHSEE<3>SSEOSELSE
-  }
-
-JPL91              { ; J.P. Louvet
-  reset=1920 type=fn*z+z function=exp passes=2
-  corners=-0.09116177/2.942726/2.029363/-2.015821/2.942726/-2.015821
-  params=1/0/1/0 float=y bailoutest=and inside=0 decomp=256
-  colors=OOf0C5<27>0zR<12>0E5<11>0kK<11>mW5qU3uT2zR0zT0<13>yx0<19>cJ0<11>9\
-  qL6tN3wP0zR3yQ<12>f_2jY0k_0<4>rl0so0ur0wt0xw0zz00zR<11>0VD0TC2TC<13>aG0<\
-  13>N60L50I30G30<2>MB0OD0PE0QG0<16>zz0<34>220000010<3>093
-  cyclerange=0/255
-  }
-
-JPL142             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=CarlsonJ1 function=sqr passes=t
-  corners=-2/2/-1.660267/1.339733 params=0.6/0.4/3/0/1/0 float=y
-  maxiter=250 inside=0 invert=0.5/0/0 decomp=256
-  colors=010020<33>0zR<12>0E5<11>0kK<11>mW5qU3uT2zR0zT0<13>yx0<19>cJ0<11>9\
-  qL6tN3wP0zR3yQ<12>f_2jY0k_0<4>rl0so0ur0wt0xw0zz00zR<11>0VD0TC2TC<13>aG0<\
-  13>N60L50I30G30<2>MB0OD0PE0QG0<16>zz0<34>220 cyclerange=0/255
-  }
-
-JPL144a            { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=CarlsonJ1 function=log passes=t
-  corners=-2.256439/-0.3945278/1.241274/-1.241274/-0.3945278/-1.241274
-  params=0.58/0/4.5/0/4/0 float=y maxiter=250 inside=0
-  potential=255/550/0 decomp=256
-  colors=000600D00Nb0Oe0Qh0Sl0<4>`z0_x0Zu0Xq0Wn0Tl0Sh0Pe0Oa0LZ0KW0HQ0FN0BH\
-  09B0303I00N03Q03T03X06_06b06e09g09j09m0Bp0Br0Bu0Dr0Dp0Dm0Dj0Bg0Bd0Ba09Z0\
-  9W09S06O06K06F0390300000630D30H60L60P90SB0WB0ZD0`D0cF0fH0hH0kI0nI0pK0rL0\
-  uL0sK0pK0nI0kH0hH0fF0cD0`D0YB0UB0S90O60K60F309000960HB0NF0<2>_P0cS0gU0<3\
-  >uc0xe0zg0zi0zl0<2>yf0<3>kY0gW0dT0`Q0XN0SK0OH0ID0B90000000<3>0B00B0<2>0H\
-  00I00I0<3>0O00P00P0<2>0L00K00K0<2>0F00D00D00B0<3>00030660B<2>D0LF0OH0QI0\
-  T<2>N0_O0aP0cQ0eS0gU0j<5>N0ZL0XK0UI0SH0PF0ND0K<2>60900003609D0DH0HL0KO0N\
-  S0PU0SY0T_<6>0gp<2>0bj0`g0Ze0Xb0U`0SY0QW<2>0IL0FI0BD069000606D0D<2>O0OS0\
-  SU0UY0Y<7>p0p<2>j0jg0ge0eb0b`0`Y0YW0W<2>L0LI0ID0D9090003906F0BK0DO0HS0IX\
-  0L_0 cyclerange=0/255
-  }
-
-JPL198             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=BILL_err7 function=exp/sqr/exp/log passes=t
-  corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0 float=y maxiter=250
-  bailout=4 inside=0 potential=255/400/0 decomp=256
-  colors=000303<2>E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7ob8<2>ti8ul9vn9wp9ws9xu\
-  AxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO6YM6WJ5SH5QF5LC5<3>72440333056\
-  4787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvknwmpxpsy<2>vzztwz<3>knwilvgitdg\
-  s<3>WYiUWgSUcPRa<2>JKRHIOEFJ<3>56433103C07D0BE<4>1SJ1WK2YL2aM<5>3pS3rT3s\
-  U<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3nR3lQ2iP2gO2dN2bM2ZL1XK1TJ1QI1L\
-  H1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0<5>100<6>Q15U15W16_16<5>n29p29\
-  q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29l19j18g18<3>X16V15R15O14J03<4>\
-  200 cyclerange=0/255
-  }
-
-JPL199             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=BILL_err7 function=log/cos/log/sqr passes=t
-  corners=-1.1384175/-0.7839855/0.23544486/-0.23713114/-0.7839855/-0.23713\
-  114 params=0/0/0/0/0/0 float=y maxiter=250 bailout=4 inside=0
-  potential=255/700/0 decomp=256
-  colors=000303<2>E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7ob8<2>ti8ul9vn9wp9ws9xu\
-  AxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO6YM6WJ5SH5QF5LC5<3>72440333056\
-  4787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvknwmpxpsy<2>vzz<27>BCE0001IG<2>1\
-  SJ1WK2YL2aM<5>3pS3rT3sU<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3nR3lQ2iP2\
-  gO2dN2bM2ZL1XK1TJ1QI1LH1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0<5>100<6\
-  >Q15U15W16_16<5>n29p29q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29l19j18g1\
-  8<3>X16V15R15O14J03<4>200 cyclerange=0/255
-  }
-
-JPL205             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=fractint.frm formulaname=OK-01
-  function=tan passes=t
-  corners=-1.37877/-0.2443757/-0.7117012/0.7117012
-  params=-4.1/0/0/0/0/0 float=y maxiter=250 inside=0
-  potential=255/300/0 decomp=256
-  colors=000TT0<10>GG0FF0FFF<40>zzz<41>DDD0D0<13>0U0zz0<68>EE0DD0FF0<40>zz\
-  0<27>UU0DD0000 cyclerange=1/253
-  }
-
-JPL223             { ; J.P. Louvet
-  reset=1920 type=formula formulafile=jpl.frm
-  formulaname=CarlsonJ1 function=cos passes=t
-  corners=-0.704/0.704/-0.528/0.528 params=1000/0/6/0/1/0 float=y
-  maxiter=250 inside=0 potential=255/100/0 decomp=256
-  colors=000724<39>EtxEvyEvy<40>724010<40>7u77v77v7<40>020090<2>6A08B1BC1E\
-  C1<12>bK3dL3fL4gM4iM4kN4<5>rR5sR5sS6uS6uT6vU6<4>xX7xX7xY7xY7xX7xX7<2>wV6\
-  wU6vT6uT6<4>qQ5pP5nP5mO4lN4<9>WH2VH2SG2<5>GD1EC1BB18B1<2>290DDD
-  cyclerange=0/255
-  }
-
-
-;-----------------------------
-
-; formulas for other fractals
-
-
-JPL4' (yaxis) {;J.P. Louvet
-z=Pixel,
-c=Pixel:
-fn1(z)=fn1(z^2+1)+c,
-|z|<=4
-}
-
-
-BILL_err7 (yaxis) {; Bill Rossi
-  z=Pixel:
-    tmp1=fn1(z)^fn2(z),
-    tmp2=fn3(z)^fn4(z),
-    z=(tmp1/tmp2), 
-    |z| <= 4
-}
-
+; Only formulas with J.P. Louvet are mine.
+
+; Warning : The following .par have not been cleaned and may include some "garbage" parameters
+; having no influence on the final result.
+; ---------------------------------------------------------------------
+; In the .PAR file
+
+; Edit the name of the .frm file if necessary
+
+
+JPL5               { ; J.P. Louvet
+  reset=1820 type=phoenix passes=1
+  corners=-0.0163242153/0.0607797847/0.781150948/0.838978948
+  params=0.56667/-0.5/0 initorbit=0/0 float=y inside=bof60 decomp=256
+  finattract=y
+  colors=C00<2>000000<13>RR0TT0UU0VV0<15>zz0<30>220<15>zIz<15>000000<27>sI\
+  RuISuIS<69>1e10f00h0<8>0z0<14>0Y0<15>z00<11>G00 cyclerange=0/255
+  }
+
+JPL43              { ; J.P. Louvet
+  reset=1920 type=phoenixcplx passes=t
+  corners=0.369221972/0.380778724/0.537894624/0.546562188
+  params=0.3/0/0.5/0/0 float=y bailoutest=and inside=0 decomp=256
+  colors=aSI<13>K2JI0KJ0K<20>VE`WFaXGbYGbYHc<27>n_zaG0<54>zz0I0K<50>lXwlYx\
+  mZyn_zaG0<54>yyFzzGyyG<16>cUI cyclerange=0/255
+  }
+
+JPL50              { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm formulaname=spiderM
+  function=sqr/sin passes=t
+  corners=0.4405116/0.9764476/0.18756156/0.58951356
+  params=1/0/0.1/0/0/0 float=y maxiter=500 inside=zmag outside=mult
+  potential=255/1000/64 decomp=256
+  colors=000000<7>K83N94PA4RB4<8>mL8pM9rN9tO9wPAyQA<6>hJ7fI7cH7`F6<6>K83I7\
+  3F62C52<3>21000000103505807D1AG1CK<3>2MX2O`2Qb2Te<4>3dq3fs3ht3kv3mw<3>4v\
+  y<2>4ox4mw3kv3hu3fs3dr<5>2Qc2Oa2MY2JV1HS1FP1CK1AH07D05A035002110<15>cb5f\
+  e5hg5kj5ml6on6<3>yx6<11>XW4UU4SR4QP3NN3LK3JI3GF2<5>110300<7>M22O23Q33S33\
+  V33<12>x75<13>S33Q33O23M22J22<6>300000030150<3>3F03I04K04M0<8>7h17j17m17\
+  o17r18t18v18y1<8>6c16`16Z15W15U05R0<2>4K03I03F02C0<4>000
+  cyclerange=0/255
+  }
+
+JPL51A             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=InverseJulia passes=t
+  corners=-2.95858/2.95858/-2.218935/2.218935 params=0.6/0.23/2/0/0/0
+  float=y maxiter=250 inside=0 decomp=256
+  colors=PPP<18>zzz<19>JJJBBB444000<113>100410940B60E90JE0KG0NJ1RK1TN4UP4Y\
+  R6_T6`U9bW9e_Bf`BhbEjdEkeGmfJohJqiKrjKtmNunNvoPxqPyrRzsRztTzuTzvUzwUzyWz\
+  zWzzYzzYzz_zz_zz`zz`zzbzzdzzdzzbzz`zz_zz_zzYzxWzvUzuTzsTxqRvoPtmNrjNoiKm\
+  fJjdGhbEe_EbWB_U9WR6TN6PK4KG1GB0B90640100<21>000<4>NNN
+  cyclerange=0/255
+  }
+
+JPL78              { ; J.P. Louvet
+  reset=1920 type=lambda(fn||fn) function=sin/sqr passes=t
+  corners=-1.555878/1.554489/-1.167755/1.163803
+  params=0.1280517578125/1.021316528320312/1 bailoutest=and inside=0
+  finattract=y periodicity=0
+  colors=zzznXnB0BD0D`L`lWlOAOTETF3FJ6JdPdM9Ms`snC0hShUFUI5IWHWgRgwcEvcvYJ\
+  YH4HcOczlJaMazfzpH2yhHsR7vZCQCQpJ3E2EoF1rO6xeFyjIPBPtT8<2>xfGoE0qK4qL4sQ\
+  7zkJv`DwdFpG1uWApI2sS8rN5wbEtU9yiIuYBxgHrP6oD0v_CqM5tVASDSXIX_K_fQfwdwoY\
+  ojTjkVkyeyubur_rpZp000<48>000EES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<\
+  2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G\
+  00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<\
+  2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGB\
+  FGBDGBCG`mQmsDzz0<4>hlzL7L
+  }
+
+JPL103             { ; J.P. Louvet
+  reset=1920 type=phoenixcplx passes=t corners=-2/2/-1.5/1.5
+  params=0.2/0/0.3/0/0 float=y bailoutest=and inside=0 decomp=256
+  colors=rrr<30>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>2D41D40E30F3<\
+  12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<37>xxxzzzyyy<4>sss
+  cyclerange=0/255
+  }
+
+JPL104             { ; J.P. Louvet
+  reset=1920 type=phoenixcplx passes=t
+  corners=-1.0118698/-0.37986984/-0.016632721/0.45736728
+  params=0.2/0/0.3/0/0 float=y bailoutest=or inside=0 decomp=256
+  colors=RND<3>EC8<14>2D41D40E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8\
+  DDD<37>xxxzzzyyy<36>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<10>UPE
+  cyclerange=0/255
+  }
+
+JPL113             { ; J.P. Louvet
+  reset=1920 type=julzpower passes=t
+  corners=0.01267584/1.068676/-0.004986247/-1.159546/1.068676/-1.159546
+  params=0.3/0/2/0 float=y bailoutest=imag inside=0 decomp=255
+  colors=YYY<21>zzz<37>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>2D41D4\
+  0E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<15>XXX
+  cyclerange=0/255
+  }
+
+JPL126             { ; J.P. Louvet
+  reset=1920 type=lambda(fn||fn) function=sin/sqr passes=t
+  corners=-3.239437/3.239437/-2.429577/2.429577 params=1/0.1/1 float=y
+  maxiter=200 bailout=1 inside=0 invert=0.46/0/0 decomp=256
+  colors=RRR<26>xxxzzzyyy<36>IIIGGGDDD0G4<6>0b6<7>0G4EC8<30>zpP<15>EC8<14>\
+  2D41D40E30F3<12>0a50c60c6<30>0G4EC8<30>zpP<14>IFAEC8DDD<9>PPP
+  cyclerange=0/255
+  }
+
+JPL140             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=select.frm
+  formulaname=BirdOfPrey+ function=sqr/atanh passes=t
+  corners=0.037938476/0.28886992/0.52293205/0.71112353
+  params=2/-1/1/0/0/0 potential=255/600/2 decomp=256
+  colors=oRC99jAAmBBpBBqCCr<2>GGzI0K<14>fOzO08<14>z0fO00<10>lOBqTDsVEvYFaG\
+  0<14>zz00C4<14>0zR0CC<14>0zz00O<14>GGzI0K<14>fOzO08<14>z0f0C4<14>0zR400<\
+  3>K00O00Q00<13>z88oD0<8>vYBaG0<14>zz00C4<14>0zR0CC<14>0zz00O<7>88h
+  }
+
+JPL147A            { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm formulaname=JPL4'
+  function=tan passes=t
+  corners=0.81553942/1.6475394/-0.31700835/0.30699165
+  params=0/0/0/0/0/0 float=y maxiter=250 inside=0 potential=255/150/32
+  decomp=256 rseed=-10386
+  colors=0000P00N00K0KK0<17>zz0<3>zz0zz0xx0<16>KK0K40N50P80RB0UC0WF0YH0`I0\
+  bK0eN0<7>x_0za0zb0ze0ze0zb0za0<7>gO0eN0bK0`I0YH0WF0UC0RB0P80N50K40000<2>\
+  0000N0<15>0x00z00z0<2>0z00z00x0<16>0K0KK0<17>zz0<3>zz0zz0xx0<16>KK0K40N5\
+  0P80RB0UC0WF0YH0`I0bK0eN0<7>x_0za0zb0zd0zc0zb0za0<7>gO0eN0bK0`I0YH0WF0UC\
+  0RB0P80N50K400K0<17>0z0<3>0z00z00x0<13>0R0
+  }
+
+JPL189             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=InverseJulia passes=t
+  corners=-2.242152/2.242152/-1.681614/1.681614 params=0.3/0/11/0/0/0
+  float=y maxiter=250 inside=0 potential=255/400/0 decomp=256
+  colors=000W0eT0aQ0_N0WM0SI0NF0KB0F50800020250880DD0HF0KH0NI0QM0TN0VP0XQ0\
+  _T0aV0dW0fX0i_0kY0jX0gW0eT0cS0`Q0YP0WM0TK0SI0PH0MD0IB0F80B505000500D00H0\
+  0M00<2>W00_00a00e00g00k00n00q00s00w00u00q00o00k00i00e00c00<4>M00I00D0080\
+  00000200520B20D50H80I80MB0ND0PD0SF0TF0WH0XI0_I0`K0cM0aM0`K0YK0XI0VH0TH0Q\
+  F0PD0ND0KB0IB0F80D5085052000850HD0NI0TN0XS0aV0fY0ka0oe0si0xk0zo0zr0zv0zy\
+  0zz0zz0<3>yl0uj0pf0kc0g_0cW0YT0TP0PK0IF0B8000000500D<2>00Q00V00Y<3>00kD0\
+  gN0dV0_a0Wg0So0Mu0Hz0Bz00z00x00s00n00<4>M00D000000000200800D00H0<6>0_0Da\
+  0Nd0Vf0ai0gl0oo0uq0zs0zw0zs0xo0sk0nf0ia0cY0<2>MI0DB000000000500D00I00N<2\
+  >00_00c00f<3>00u00x00z00z00z00x<3>00j00f00a00Y00V00Q00M00H00B00000002005\
+  00B00D00H00I00M00N0<2>0V05T8BQFFNMIKQNIVQF_TBcW5f_0kY0i
+  }
+
+JPL193             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=InverseJuliaFn function=tan passes=t
+  corners=-2/2/-1.5/1.5 params=0.4/0/1/0/0/0 float=y maxiter=250
+  inside=0 potential=255/500/0 decomp=256
+  colors=000521<5>K83N94PA4RB4<8>mL8pM9rN9tO9wPAyQA<6>hJ7fI7cH7`F6<6>K83I7\
+  3F62C52<3>21000000103505807D1AG1CK<3>2MX2O`2Qb2Te<4>3dq3fs3ht3kv3mw<3>4v\
+  y<2>4ox4mw3kv3hu3fs3dr<5>2Qc2Oa2MY2JV1HS1FP1CK1AH07D05A035002110<15>cb5f\
+  e5hg5kj5ml6on6<3>yx6<11>XW4UU4SR4QP3NN3LK3JI3GF2<5>110300<7>M22O23Q33S33\
+  V33<12>x75<13>S33Q33O23M22J22<6>300000030150<3>3F03I04K04M0<8>7h17j17m17\
+  o17r18t18v18y1<8>6c16`16Z15W15U05R0<2>4K03I03F02C0<3>030000000210
+  }
+
+JPL196             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=CarlsonJ1 function=sin passes=t
+  corners=-0.3875493/-0.12855522/-0.39717768/0.39380819/-0.67398465/-0.015\
+  263884 params=5/0/1/0/1/0 float=y maxiter=50 inside=0
+  potential=255/400/0 decomp=256
+  colors=0000000H0<39>0z0<41>0F0FF0<41>zz0<40>GG0FF0F20<41>z`0<41>F20000
+  cyclerange=2/255
+  }
+
+JPL215             { ; J.P. Louvet
+  reset=1920 type=fn+fn function=sin/tan passes=t
+  corners=2.467668/3.815706/0.8986917/-0.8986917/3.815706/-0.8986917
+  params=6/0/6/0 float=y maxiter=250 bailout=128 inside=0
+  potential=255/310/0 decomp=256
+  colors=000303qe8<3>vn9wp9ws9xuAxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO\
+  6YM6WJ5SH5QF5LC5<3>724403330564787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvkn\
+  wmpxpsy<2>vzztwz<3>knwilvgitdgs<3>WYiUWgSUcPRa<2>JKRHIOEFJ<3>56433103C07\
+  D0BE<4>1SJ1WK2YL2aM<5>3pS3rT3sU<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3n\
+  R3lQ2iP2gO2dN2bM2ZL1XK1TJ1QI1LH1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0\
+  <5>100<6>Q15U15W16_16<5>n29p29q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29\
+  l19j18g18<3>X16V15R15O14J03<4>200724A54E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7\
+  ob8 cyclerange=2/255
+  }
+;-----------------------------
+; In the .FRM fole
+
+; I have added "+" because the following formula is not the one included in fractint.frm
+; but the slight modified one in FRACXTR6.ZIP
+
+BirdOfPrey+(XAXIS_NOPARM) {; Jon Osuch
+    ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx
+    z   = p1,
+    x   = 1:
+   (x  <  10) * (z=fn1(z)+pixel),
+   (10 <= x)  * (z=fn2(z)+pixel),
+    x   = x+1,
+   |z| <=p2
+   }
+
+spiderM {z=pixel,f=pixel,g=pixel:
+         f=f/p1+z,
+         z=fn1(z^(p2+g))+fn2(f),
+         |z| <= 4 }
+
+; I named first the following formula "InverseJulia" under my name
+; but Paul Carlson told me that it was first published by Pokorny
+; sorry ! Moreother this name is not good because it suggests an other formula.
+; I have retained this name for compatibility with the pictures but a better name is simply Pokorny !
+
+InverseJulia {; Pokorny's formula
+; P1 = c
+; P2 = iter (normalement 4)
+z=pixel,
+c=P1:
+z=1/(z^2+c),
+|z|<=P2
+}
+
+; a better name might be PokornyFn
+
+InverseJuliaFn {; after Pokorny
+                ;  modified by J.P. Louvet
+; P1 = c
+; P2 = iter (normalement 4)
+z=pixel,
+c=P1:
+z=fn1(1/(z^2+c)),
+|z|<=P2
+}
+
+JPL4' (yaxis) {;J.P. Louvet
+z=Pixel,
+c=Pixel:
+fn1(z)=fn1(z^2+1)+c,
+|z|<=4
+}
+
+CarlsonJ1 {; from P. Carlson, modified by J.P. Louvet
+; P1 = c
+; P2 = degre
+; P3 = iter (normalement 4)
+z=pixel,
+c=P1:
+Z=fn1(C*(Z^P2-1)),
+|z|<=P3}
+
+
+
+; --------------------------------------
+; Some other fractals
+;
+
+JPL1a              { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm formulaname=JPL4a'
+  function=sin passes=t
+  corners=-0.079515813/0.079515813/0.88544712/1.0965646
+  params=6/0/0/0/0/0 float=y maxiter=250 inside=0
+  potential=255/1800/1024 rseed=1997
+  colors=000hhh000<7>00085686888A8ACABDADFAEGAFHAHKAJL<6>CTVCUWCWZCX_DZa<3\
+  >DdgDeiEhj<3>EmqForFquFrvFtwFvzGwzGzz<6>GzzGwzFvzFtw<6>EhkEgjDehDcgDbdDa\
+  cD_bCZ`CW_CVX<7>BKMAJLAGJAFHAEFACE8BD8AB87A867846825010<2>1601701A1<3>2F\
+  12H14J2<3>4P25Q25R4<4>6Z46`56a56b56d57e57h6<2>7l67m67p67q77r77u77v78x78z\
+  7<4>8z88z88z78x78v77u77r7<2>7m67k67j67i67g57e5<3>6_56Z46W4<2>5S45R45P2<3\
+  >4K24J22G1<2>2C11B1180<3>0200B0<2>7C0AD1DE1GE1JF1<2>PH2RH2TJ2VJ2XK2_L4<5\
+  >kO5lP5oP5<5>xT6zU6zU6<3>zX7zX7zZ7<4>za8za8z`8<2>zZ8zZ7zX7<4>zU6zT6xT6<4\
+  >qQ5oP5lP5<4>cM4aL4_K2ZK2VJ2TJ2RH2PG2NG1 cyclerange=0/255
+  }
+
+JPL3               { ; J.P. Louvet
+  reset=1920 type=julia passes=t
+  corners=-0.196229303/-0.126766488/0.710566586/0.481506821/-0.0612740684/\
+  0.530626386 params=-0.728476881980896/0.1096100807189941
+  maxiter=30000 inside=0 decomp=256 finattract=y periodicity=0
+  colors=kFNpKQ<63>1e10f00h0<8>0z0<14>0Y0<15>z00<15>000000<13>RR0TT0UU0VV0\
+  <15>zz0<30>220<15>zIz<15>000000<21>gELiEMmGO<2>sIRuISuIS<4>qKQ
+  }
+
+JPL31              { ; J.P. Louvet
+  reset=1920 type=unity passes=1
+  corners=0.686302702/0.742302702/-0.825660201/-0.783660201
+  initorbit=0/0 float=y inside=0 finattract=y periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCGSEHSEE<3>SSEOSELSE
+  }
+
+JPL91              { ; J.P. Louvet
+  reset=1920 type=fn*z+z function=exp passes=2
+  corners=-0.09116177/2.942726/2.029363/-2.015821/2.942726/-2.015821
+  params=1/0/1/0 float=y bailoutest=and inside=0 decomp=256
+  colors=OOf0C5<27>0zR<12>0E5<11>0kK<11>mW5qU3uT2zR0zT0<13>yx0<19>cJ0<11>9\
+  qL6tN3wP0zR3yQ<12>f_2jY0k_0<4>rl0so0ur0wt0xw0zz00zR<11>0VD0TC2TC<13>aG0<\
+  13>N60L50I30G30<2>MB0OD0PE0QG0<16>zz0<34>220000010<3>093
+  cyclerange=0/255
+  }
+
+JPL142             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=CarlsonJ1 function=sqr passes=t
+  corners=-2/2/-1.660267/1.339733 params=0.6/0.4/3/0/1/0 float=y
+  maxiter=250 inside=0 invert=0.5/0/0 decomp=256
+  colors=010020<33>0zR<12>0E5<11>0kK<11>mW5qU3uT2zR0zT0<13>yx0<19>cJ0<11>9\
+  qL6tN3wP0zR3yQ<12>f_2jY0k_0<4>rl0so0ur0wt0xw0zz00zR<11>0VD0TC2TC<13>aG0<\
+  13>N60L50I30G30<2>MB0OD0PE0QG0<16>zz0<34>220 cyclerange=0/255
+  }
+
+JPL144a            { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=CarlsonJ1 function=log passes=t
+  corners=-2.256439/-0.3945278/1.241274/-1.241274/-0.3945278/-1.241274
+  params=0.58/0/4.5/0/4/0 float=y maxiter=250 inside=0
+  potential=255/550/0 decomp=256
+  colors=000600D00Nb0Oe0Qh0Sl0<4>`z0_x0Zu0Xq0Wn0Tl0Sh0Pe0Oa0LZ0KW0HQ0FN0BH\
+  09B0303I00N03Q03T03X06_06b06e09g09j09m0Bp0Br0Bu0Dr0Dp0Dm0Dj0Bg0Bd0Ba09Z0\
+  9W09S06O06K06F0390300000630D30H60L60P90SB0WB0ZD0`D0cF0fH0hH0kI0nI0pK0rL0\
+  uL0sK0pK0nI0kH0hH0fF0cD0`D0YB0UB0S90O60K60F309000960HB0NF0<2>_P0cS0gU0<3\
+  >uc0xe0zg0zi0zl0<2>yf0<3>kY0gW0dT0`Q0XN0SK0OH0ID0B90000000<3>0B00B0<2>0H\
+  00I00I0<3>0O00P00P0<2>0L00K00K0<2>0F00D00D00B0<3>00030660B<2>D0LF0OH0QI0\
+  T<2>N0_O0aP0cQ0eS0gU0j<5>N0ZL0XK0UI0SH0PF0ND0K<2>60900003609D0DH0HL0KO0N\
+  S0PU0SY0T_<6>0gp<2>0bj0`g0Ze0Xb0U`0SY0QW<2>0IL0FI0BD069000606D0D<2>O0OS0\
+  SU0UY0Y<7>p0p<2>j0jg0ge0eb0b`0`Y0YW0W<2>L0LI0ID0D9090003906F0BK0DO0HS0IX\
+  0L_0 cyclerange=0/255
+  }
+
+JPL198             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=BILL_err7 function=exp/sqr/exp/log passes=t
+  corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0 float=y maxiter=250
+  bailout=4 inside=0 potential=255/400/0 decomp=256
+  colors=000303<2>E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7ob8<2>ti8ul9vn9wp9ws9xu\
+  AxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO6YM6WJ5SH5QF5LC5<3>72440333056\
+  4787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvknwmpxpsy<2>vzztwz<3>knwilvgitdg\
+  s<3>WYiUWgSUcPRa<2>JKRHIOEFJ<3>56433103C07D0BE<4>1SJ1WK2YL2aM<5>3pS3rT3s\
+  U<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3nR3lQ2iP2gO2dN2bM2ZL1XK1TJ1QI1L\
+  H1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0<5>100<6>Q15U15W16_16<5>n29p29\
+  q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29l19j18g18<3>X16V15R15O14J03<4>\
+  200 cyclerange=0/255
+  }
+
+JPL199             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=BILL_err7 function=log/cos/log/sqr passes=t
+  corners=-1.1384175/-0.7839855/0.23544486/-0.23713114/-0.7839855/-0.23713\
+  114 params=0/0/0/0/0/0 float=y maxiter=250 bailout=4 inside=0
+  potential=255/700/0 decomp=256
+  colors=000303<2>E74H94LC5PF5RH5VJ5<3>eT6hV7jY7l_7ob8<2>ti8ul9vn9wp9ws9xu\
+  AxxA<2>wp9vn9ul9ti8rg8<2>m_7kY7hV7fT6cR6aO6YM6WJ5SH5QF5LC5<3>72440333056\
+  4787AACCDF<4>NPXPR`SUcUWf<3>bepdgrgitilvknwmpxpsy<2>vzz<27>BCE0001IG<2>1\
+  SJ1WK2YL2aM<5>3pS3rT3sU<2>4wX4xY4xZ5y_5y`<2>4xY4wX4vW4uV3sU<2>3nR3lQ2iP2\
+  gO2dN2bM2ZL1XK1TJ1QI1LH1JG0FF0CE07D04C030<24>3z2<16>1M11K10H10E0<5>100<6\
+  >Q15U15W16_16<5>n29p29q2A<2>u2Bv2Bv2Bw2B<2>v2Bv2Bu2Bt2A<2>p2An29l19j18g1\
+  8<3>X16V15R15O14J03<4>200 cyclerange=0/255
+  }
+
+JPL205             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=fractint.frm formulaname=OK-01
+  function=tan passes=t
+  corners=-1.37877/-0.2443757/-0.7117012/0.7117012
+  params=-4.1/0/0/0/0/0 float=y maxiter=250 inside=0
+  potential=255/300/0 decomp=256
+  colors=000TT0<10>GG0FF0FFF<40>zzz<41>DDD0D0<13>0U0zz0<68>EE0DD0FF0<40>zz\
+  0<27>UU0DD0000 cyclerange=1/253
+  }
+
+JPL223             { ; J.P. Louvet
+  reset=1920 type=formula formulafile=jpl.frm
+  formulaname=CarlsonJ1 function=cos passes=t
+  corners=-0.704/0.704/-0.528/0.528 params=1000/0/6/0/1/0 float=y
+  maxiter=250 inside=0 potential=255/100/0 decomp=256
+  colors=000724<39>EtxEvyEvy<40>724010<40>7u77v77v7<40>020090<2>6A08B1BC1E\
+  C1<12>bK3dL3fL4gM4iM4kN4<5>rR5sR5sS6uS6uT6vU6<4>xX7xX7xY7xY7xX7xX7<2>wV6\
+  wU6vT6uT6<4>qQ5pP5nP5mO4lN4<9>WH2VH2SG2<5>GD1EC1BB18B1<2>290DDD
+  cyclerange=0/255
+  }
+
+
+;-----------------------------
+
+; formulas for other fractals
+
+
+JPL4' (yaxis) {;J.P. Louvet
+z=Pixel,
+c=Pixel:
+fn1(z)=fn1(z^2+1)+c,
+|z|<=4
+}
+
+
+BILL_err7 (yaxis) {; Bill Rossi
+  z=Pixel:
+    tmp1=fn1(z)^fn2(z),
+    tmp2=fn3(z)^fn4(z),
+    z=(tmp1/tmp2),
+    |z| <= 4
+}
+

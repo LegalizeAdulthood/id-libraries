@@ -3,7 +3,7 @@
 ; 3/94
 ;
 ; file and images are Copyright (c) 1994, don lebow
-; 
+;
 ; some more stuff ... to the best of my knowledge original
 ;
 ; 640 x 480 x 256, fpu recommended
@@ -13,7 +13,7 @@
 ;>>don CIS:76704,41
 ;
 ;
-dazzle             {   
+dazzle             {
   reset type=fn*fn function=cosh/cotanh passes=b
   corners=-0.0121663127/0.0135216446/-0.195350125/-0.176084156 float=y
   inside=zmag outside=mult potential=128/256/16 invert=1/0/0
@@ -22,7 +22,7 @@ dazzle             {
   >rrrsss<19>GGGEEECCE<4>22E00F00G<20>00r
   }
 
-dazzle_2           {   
+dazzle_2           {
   reset type=fn*fn function=cosh/cotanh passes=b
   corners=-0.1828766/0.19793396/-0.29656641/-0.010958474 float=y
   inside=zmag outside=mult potential=128/256/16 invert=1/0/0
@@ -98,7 +98,7 @@ night_bloom        {
   KILKILK<2>KLKLKKMKKMJKNJK<5>RHKSHKSIJTIJ<8>XNJ
   }
 
-spring_brocade     { 
+spring_brocade     {
   reset type=formula formulafile=dons.frm formulaname=CGNewtonSinExp
   passes=b
   corners=-5.398283/-6.940474/-1.033147/1.023152/-6.940474/1.023152
@@ -243,7 +243,7 @@ gray_star_2        {
   }
 
 
-kinetic            { 
+kinetic            {
   reset type=fn*fn function=cosxx/cotanh passes=t corners=-4/4/-3/3
   float=y inside=zmag outside=mult potential=128/256/16 invert=1/0/0
   symmetry=none

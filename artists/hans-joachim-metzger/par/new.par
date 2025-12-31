@@ -1,7 +1,7 @@
 frm:jhline {   ;Jos Hendriks,2002
                     ;draws the line y=0, p1 gives the thickness of the line
                     ;watch out: only two colors are used
-                    ;take for instance maxiter=2, inside=0, outside=iter 
+                    ;take for instance maxiter=2, inside=0, outside=iter
                     :
                     |Imag(Pixel)|<p1
            }
@@ -12,7 +12,7 @@ center-mag=0/0/0.6666667 params=0.001/0 float=y maxiter=2 inside=0
 colors=00000e
 }
 
-frm:jhparabola{ ;Jos Hendriks,2002, 
+frm:jhparabola{ ;Jos Hendriks,2002,
                 ;draws a parabola. Thickness depends on p1.
                 ;use maxiter=2,inside color=0, outside=iter
                 :
@@ -58,7 +58,7 @@ graph3 { ; Jos Hendriks,2002, broken polynomial function
 reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=0/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
-colors=00000e 
+colors=00000e
 }
 
 graph4 { ; Jos Hendriks,2002, broken polynomial function
@@ -69,7 +69,7 @@ params=-5/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e
 }
 
-graph5 { ; Jos Hendriks,2002, 
+graph5 { ; Jos Hendriks,2002,
 ;with correct choosen parameters graph of linear f: a line
 ; also x- en y-axes are visible
 reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1

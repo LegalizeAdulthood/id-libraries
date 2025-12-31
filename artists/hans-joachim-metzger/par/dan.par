@@ -26,7 +26,7 @@ weird2             { ; try this with the zebra palettes
   z0<21>Hz0Gz0Fy2<13>6nN
   }
 
-bunchofspirals   { ;   
+bunchofspirals   { ;
   reset type=mandel
   corners=-0.725509072/-0.725434758/0.257722767/0.257778484 maxiter=10000
   logmap=yes
@@ -44,7 +44,7 @@ arc                { ; try this with zebra pallettes too
   z0<21>Hz0Gz0Fy2<15>4mQ
   }
 
-4claws            { ;  
+4claws            { ;
   reset type=julia
   corners=0.8250979/-0.7781777/-1.1681708/1.1759939/-0.8772801/1.101667
   params=0.3787811025/0.09865208995 maxiter=2500 logmap=yes
@@ -71,7 +71,7 @@ zebra1             { ; probably have this one with another name and pallette
   000wz0000tz0000
   }
 
-spirals2           { ;  
+spirals2           { ;
   reset type=julia
   corners=-0.29119/0.301761/-1.206843/1.227373/-1.594161/0.131756
   params=-0.725471915/0.2577506255 maxiter=10000 logmap=yes
@@ -80,7 +80,7 @@ spirals2           { ;
   0Gp<4>03x00z20x<23>n0C
   }
 
-lakes              { ;  
+lakes              { ;
   reset type=julia
   corners=0.2211875/-0.2277288/-0.3232145/0.3331505/-0.2554784/0.3123394
   params=0.3787811025/0.09865208995 maxiter=2500 logmap=yes
@@ -90,7 +90,7 @@ lakes              { ;
   20<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2>0Sh0Nk0Jn0Eq08u03x20x60t
   }
 
-spirals3           { ;  
+spirals3           { ;
   reset type=julia
   corners=-0.359551/0.36737/-1.562082/1.554259/-1.593703/0.083454
   params=-0.7234418085/0.2514432045 maxiter=2500 logmap=yes
@@ -100,7 +100,7 @@ spirals3           { ;
   >0Nk0Eq08u03x20x<14>z00z20<13>zu0zy0xz0<9>Lz0Hz0Fy2<9>2jW
   }
 
-weird4             { ;  
+weird4             { ;
   reset type=julia corners=-0.018032/0.018032/-0.0137196/0.0133284
   params=-1.78610437726295/9.56840812588018e-005 float=y maxiter=10000
   logmap=yes
@@ -121,14 +121,14 @@ minimandel         { ; took 10 hours on 486 (using copro)
   }
 
 julibrot           { ; normal julibrot, no zoom
-                     ;  
+                     ;
   reset type=julibrot corners=-1.352001/1.352021/-0.732377/0.732388
   params=-0.83/-0.83/0.25/-0.25 maxiter=10000 logmap=yes
   colors=@tworain.map
   }
 
-seriousclaws      { ;  
-                     ;  
+seriousclaws      { ;
+                     ;
   reset type=lambda
   corners=1.780679/-0.765014/-0.543819/0.528224/0.455716/1.372338
   params=0.85/0.6 maxiter=2000 logmap=yes
@@ -137,8 +137,8 @@ seriousclaws      { ;
   Fy2<19>2jW1iY0gZ<3>0Ye
   }
 
-spiraldoomspecail1 { ;  
-                     ;  
+spiraldoomspecail1 { ;
+                     ;
   reset type=mandel
   corners=-0.723858157/-0.72302546/0.251131045/0.251755364 maxiter=2500
   logmap=yes invert=5e-008/-0.723442/0.251443
@@ -146,8 +146,8 @@ spiraldoomspecail1 { ;
   <29>2z00z00z3<14>0zz<30>x2zz0zz0y<29>z02z00z10<31>zq0
   }
 
-spikeyspiral       { ;  
-                     ;  
+spikeyspiral       { ;
+                     ;
   reset type=lambdafn function=sin
   corners=-1.349426/1.351059/-1.011993/1.012711 params=1/0.4 maxiter=2000
   logmap=yes
@@ -159,8 +159,8 @@ spikeyspiral       { ;
   0x<6>v04z20<5>zm0zu0xz0<4>Lz0
   }
 
-minimandeldeform1  { ;  
-                     ;  
+minimandeldeform1  { ;
+                     ;
   reset type=mandel
   corners=-1.78610519684/-1.78610355768/0.00009506976/0.0000962984 float=y
   maxiter=5000 logmap=yes
@@ -169,8 +169,8 @@ minimandeldeform1  { ;
   z0<21>Hz0Gz0Fy2<13>6nN
   }
 
-weird7             { ;  
-                     ;  
+weird7             { ;
+                     ;
   reset type=manowar corners=-0.0507533/-0.036607/0.0567945/0.0674008
   maxiter=2000 logmap=yes
   colors=CCCHz0Gz0<20>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0\
@@ -178,8 +178,8 @@ weird7             { ;
   zz0xz0<20>Jz0
   }
 
-minimandelbranch1  { ;  
-                     ;  
+minimandelbranch1  { ;
+                     ;
   reset type=mandel
   corners=0.410244973/0.410410751/0.213708563/0.213832855 maxiter=2500
   logmap=yes
@@ -199,8 +199,8 @@ minimandel3        { ; took 10 hours on a 486, and it needs copro.
   0<13>zu0zy0xz0<9>Lz0Hz0Fy2<8>3kT2jW0gZ<2>0Sh0Nk0Jn0Eq08u03x20x<6>U0X
   }
 
-weird6             { ;  
-                     ;  
+weird6             { ;
+                     ;
   reset type=manowarj corners=-0.280801/0.073101/-0.093086/0.172345
   params=-0.0436801314/0.06209760905 maxiter=2000 logmap=yes
   colors=CCCHz0Gz0<20>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0\
@@ -208,7 +208,7 @@ weird6             { ;
   zz0xz0<20>Jz0
   }
 
-centipede          { ; 2 heads of seahorses stuck together make a centipede 
+centipede          { ; 2 heads of seahorses stuck together make a centipede
                      ; type thingy. or maybe crablike.
   reset type=mandel
   corners=-1.78610892444/-1.78610385448/0.00008940676/0.00009320697

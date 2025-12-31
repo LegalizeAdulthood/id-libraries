@@ -4,14 +4,14 @@ Inside-out         { ; The M-set inverted about a seahorse tail.
   colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
   8q1
   }
- 
+
 Inside-out_zoom1   { ; A mandelblob becomes visible
   reset=1821 type=mandel corners=-1.490654/0.490654/-0.3397017/1.14628
   maxiter=5000 logmap=yes invert=0.001/-0.745816/0.105092
   colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
   8q1
   }
- 
+
 Inside-out_zoom2   { ; Mandelblob close-up
   reset=1821 type=mandel
   corners=-1.0068282/-0.16675352/-0.19454689/0.4355092 maxiter=5000
@@ -19,7 +19,7 @@ Inside-out_zoom2   { ; Mandelblob close-up
   colors=000000EmE<101>EfnEfnEfnEfnEfn<41>DdnCcoD`m<4>MMbOI_OI_<82>OnoPopN\
   kl<8>07D6W46X4
   }
- 
+
 Inside-out_zoom3   { ; A bud on Mandelblob.
                      ; Equiv. to the big front bud, somewhat rotated
   reset=1821 type=mandel passes=t
@@ -28,23 +28,23 @@ Inside-out_zoom3   { ; A bud on Mandelblob.
   colors=AAA6HH<7>0GF0GF1HG<74>8KX9LY9LYALZALZ<25>LNhLNhLNhLOiLOi<14>JUsJU\
   sLVt<34>tuwuuwttv<66>UGVUGVTHW<10>SOc000 cyclerange=1/254
   }
- 
+
 Inside-out_zoom4   { ; Note the 'dent' in the right-hand superbud.
-                     ;  
+                     ;
   reset=1821 type=mandel
   corners=-0.7496431756/-0.7434334509/0.103067074/0.107724368
   maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
   colors=000<126>zz0000<126>0wc
   }
- 
+
 Inside-out_zoom5   { ; The 'dent' is actually the M-set back crack!
-                     ;  
+                     ;
   reset=1821 type=mandel
   corners=-0.7453780818/-0.7443100091/0.1046219882/0.10542304276
   maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
   colors=000074<111>0wc000<125>zz0000<13>064
   }
- 
+
 Reef               { ; Mandelbrot zoom
                      ; 3 minutes on a 386/25
                      ; Try color cycling
@@ -53,7 +53,7 @@ Reef               { ; Mandelbrot zoom
   inside=0
   colors=000z00<60>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<61>z00
   }
- 
+
 Firewhirl          { ; Julia set
                      ; 2 min.
                      ; Try color cycling
@@ -63,7 +63,7 @@ Firewhirl          { ; Julia set
   colors=000k6d<19>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<60>z10z00z00z\
   01<38>l6c
   }
- 
+
 Coral              { ; Julia set
                      ; 17 min.
                      ; Try color cycling
@@ -73,14 +73,14 @@ Coral              { ; Julia set
   colors=000JUt<39>JUsJUsJUsIUrIUrIUr<44>BWcBWcCVd<44>X8rX8rY9s<20>cJxcJxb\
   Kv<35>aR6aR5bS6<22>jbLjbLkaK<28>pJF
   }
- 
+
 Fuzzybrot          { ; Mini Mandelbrot
   reset=1821 type=mandel
   corners=-1.865951/-1.85595142/-0.00375002995/0.00374986976 inside=0
   colors=0002HK<41>E2CF1BF1BG1BH1B<14>T3GU4HU4HU4H<50>kLS<10>iuA<20>TYlSWn\
   SWn<62>2v22v23v2<23>Qq7Rp8Rp8Rp9<12>QnH
   }
- 
+
 Floating           { ; Julia set
   reset=1821 type=julia
   corners=-0.10000014/0.10000029/-0.075000249/0.074999977
@@ -89,7 +89,7 @@ Floating           { ; Julia set
   colors=000nRQ<19>gQigQifRj<30>DrxDrxEqy<45>ZDyZDyYEx<33>Vhk<27>8ER8DR9CQ\
   <32>J1CJ1CK2D<10>T3GU4HU4HU4H<37>fGP
   }
- 
+
 Coastline          { ; A coastline with offshore islands and whirlpools...
                      ; Mandelbrot closeup, three minutes on a 386/25
                      ; Try color cycling!
@@ -98,14 +98,14 @@ Coastline          { ; A coastline with offshore islands and whirlpools...
   maxiter=2000 logmap=yes
   colors=0000K00Zc<108>0Ac0Ac0Bc<78>KmKKmKKlK<60>0K0
   }
- 
+
 ; Island             { ; An offshore island
 ;        { ; A mini Mandelbrot
 ;                      ; Mandelbrot, zoom of Coastline, 15 min on 325
 ;                      ; Try color cycling!
 ;   reset=1821 type=mayclerange=2/255
 ;   }
- 
+
 Bullseye!          { ; Julia set with interior coloring
                      ; Try color cycling!
                      ; 15 min on 325
@@ -114,7 +114,7 @@ Bullseye!          { ; Julia set with interior coloring
   inside=127 outside=0 finattract=y periodicity=0
   colors=000OEL<40>h97h97iA8<74>jkkjlllmk<94>SelSelSdk<36>OEL
   }
- 
+
 Wavie              { ; Waves along a shore...
                      ; Mandelbrot image
                      ; Color cycle it!
@@ -125,7 +125,7 @@ Wavie              { ; Waves along a shore...
   colors=000dGT<18>uGR<9>gNX000<93>A4EA4EB5FC5F<25>Z2FZ2F`3G<24>y4cz4cy4b<\
   9>t4_s4_s4_s4_s4Zs4Z<56>z00
   }
- 
+
 Firestar           { ; 7 min.
                      ; Try color cycling!
   reset=1821 type=mandel
@@ -133,7 +133,7 @@ Firestar           { ; 7 min.
   maxiter=10000 inside=0 logmap=yes
   colors=000zz0<55>k5N<52>Kw2Kx2Ly3<28>UyGUyGVyHWyI<21>xyxzzzzzz<86>zz0
   }
- 
+
 LaceCradle         { ; A lace pattern holding a mini Mandelbrot
                      ; Mandelbrot image, zoom of Vineleaf    17 min.
                      ; Try color cycling!
@@ -143,14 +143,14 @@ LaceCradle         { ; A lace pattern holding a mini Mandelbrot
   colors=00000z<40>xTFzUDzUD<35>VUTUUUUUUUUU<38>SGURFVRGV<23>bvjcxkcxk<36>\
   Q_fQZfPYePYdPYcOYb<62>00z
   }
- 
+
 Flower             { ; Mandelbrot image
   reset type=mandel corners=-0.48376281/-0.47975345/0.61292032/0.61593054
   maxiter=3000
   colors=000aYV<20>eRsfQufQu<45>xdkyejydi<29>xLVxKUwJTvJT<60>111000000000<59>X\
   e0Yf0Yf1Yf2<22>aZU
   }
- 
+
 s1z1Minibrot       { ; A large mini Mandelbrot
                      ; color cycle!
   reset type=mandel corners=-0.1808746/-0.1343577/1.0147586/1.0496752
@@ -158,20 +158,20 @@ s1z1Minibrot       { ; A large mini Mandelbrot
   colors=000mkd<27>yfOzeNzeNzdN<63>z1bz0cz0cy0c<64>00k01k12k<49>WoyXqzXqzXqyYq\
   y000Yqx<32>lkd
   }
- 
+
 s1z2Cloudwhorl     { ; Near minibrot rear, on filamet
                      ; color cycle!
   reset type=mandel
   corners=-0.154435266/-0.154411454/1.03084887/1.03086672 maxiter=3000
   colors=000q00<19>c00b11a11`22_22<23>G9>iDKwNh<91>iDKdLS<15>fJQmZQ<76>fQx
   }
- 
+
 Spikabrot          { ; A tiny brot on the front spike, near the tip.
                      ; Try color-cycling!
   reset type=mandel corners=-1.9422713/-1.93983205/-0.00091488/0.0009149zzzzz<4>v\
   vy
   }
- 
+
 Fourbrot           { ; A mini Mandelbrot on a 4-elephant.
                      ; Try color-cycling!
   reset type=mandel corners=0.34706508/0.35706466/0.57696781/0.58446771
@@ -179,7 +179,7 @@ Fourbrot           { ; A mini Mandelbrot on a 4-elephant.
   reset type=mandel corners=-1.8003769/-1.7227764/-0.0290996/0.0290999
   colors=0000aA<4>0a20b02b0<25>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<17>41N
   }
- 
+
 ; Newsgroups: sci.fractals
 ; Path: unixg.ubc.ca!nntp.cs.ubc.ca!psgrain!usenet.eel.ufl.edu!
 ;     news.mathworks.com!europa.eng.gtefsd.com!gatech!howland.reston.ans.net!
@@ -200,8 +200,8 @@ Fourbrot           { ; A mini Mandelbrot on a 4-elephant.
 ; ________PGD__|  ever saw... But in the end, some of us decided not to buy."
 ;    ___  ~~~                                                  --Needful Things
 ; __| * |_______  ASGND Full Silly and Ysiggian _______________________________
- 
- 
+
+
 propeller          { ; This has been zoomed as far as Fractint V18 will go.
                      ; 12 hours on a slow 386
                      ; Try color cycling

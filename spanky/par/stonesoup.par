@@ -1,73 +1,73 @@
 ; The following Formula files give you some idea of the scope
- 
+
  Lamp             { ; First there was light
   reset=1960
-  type=formula 
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
-  center-mag=0.879765/5.55112e-016/1.718213/1/90 
+  center-mag=0.879765/5.55112e-016/1.718213/1/90
   params=1/3/1/0/-1/0
-  float=y 
+  float=y
   colors=@default.map
   }
 
 Cauldron           { ; And there was a Soup Cauldron
-  reset=1960 
-  type=formula 
+  reset=1960
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
-  center-mag=0.879765/5.55112e-016/1.718213/1/90 
+  center-mag=0.879765/5.55112e-016/1.718213/1/90
   params=1/3/0/1/-1/0
   float=y colors=@default.map
   }
 
 Twister            { ; Start things spinning
   reset=1960
-  type=formula 
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
   center-mag=0.879765/5.55112e-016/1.718213/1/90
-  params=1/3/0.045/1.016/-1/0 
-  float=y 
+  params=1/3/0.045/1.016/-1/0
+  float=y
   colors=@default.map
   }
 
 Stone soup         { ; With just the correct twist you can work wonders
-  reset=1960 
-  type=formula 
+  reset=1960
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
   center-mag=0.879765/5.55112e-016/1.718213/1/90
-  params=1/3/0.08400000000000001/1.016/-1/0 
+  params=1/3/0.08400000000000001/1.016/-1/0
   float=y
   colors=@default.map
   }
 
  Dendrites          { ; Things can get sticky
-  reset=1960 
-  type=formula 
+  reset=1960
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
-  center-mag=0.879765/5.55112e-016/1.718213/1/90 
+  center-mag=0.879765/5.55112e-016/1.718213/1/90
   params=1/3/1/0.5/-1/0
-  float=y 
+  float=y
   colors=@default.map
   }
 
 Order out of chaos { ; Some people prefer things to be less chaotic
-  reset=1960 
-  type=formula 
+  reset=1960
+  type=formula
   formulafile=stonesoup.frm
-  formulaname=StoneSoup 
+  formulaname=StoneSoup
   passes=t
-  center-mag=0.474062/5.55112e-016/1.532646 
+  center-mag=0.474062/5.55112e-016/1.532646
   params=1/3/0/2/-1/0
-  float=y 
+  float=y
   colors=@default.map
   }
 
@@ -78,15 +78,15 @@ Soup {
    z = A;
    B = 1/p2:
    z = B*(A/z + z) + p3,
-  |z| <= Imag(p1)     
-   } 
+  |z| <= Imag(p1)
+   }
 
 The fractal master { ; The man behind the light
-  reset=1960 
-  type=formula 
-  formulafile=stonesoup.frm 
+  reset=1960
+  type=formula
+  formulafile=stonesoup.frm
   formulaname=Soup
-  passes=t 
+  passes=t
   center-mag=0.0715936/9.4175e-006/11.01123/0.9999/-90
   params=1/3/1/0/-0.5/0
   colors=@default.map

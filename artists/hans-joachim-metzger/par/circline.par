@@ -2,21 +2,21 @@ comment { ; narrative copyright Kerry Mitchell 18oct98
 
 Circle and Line Coloring Method
 
-Several coloring schemes have been put together that color according 
+Several coloring schemes have been put together that color according
 to the orbit's nearest approach to a specified point or curve.  This
 method extends that idea by coloring according to the orbit's nearest
 simultaneous approach to 2 specified curves, a circle and a line.
 
 A circle in the x-y plane can be specified by (x - xcenter)^2 +
-(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate
 of the center of the circle, and radius is the circle's radius.  For
 complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
 
 f(z) = |z - center| - radius^2 (using Fractint's || convention)
 
-is a real-valued function that gives the relationship of z to the 
+is a real-valued function that gives the relationship of z to the
 circle.  If f(z) < 0, then z is inside the circle.  A positive
-value of f(z) means that z is outside of the circle, and f=0 means 
+value of f(z) means that z is outside of the circle, and f=0 means
 that z is on the circle.
 
 A line in the x-y plane can be specified by A*x + B*y + C = 0, where
@@ -26,9 +26,9 @@ in Mandelbrot and Julia computations.)  For complex numbers z = x+i*y,
 
 f(z) = A*real(z) + B*imag(z) + C
 
-is a real-valued function that gives the relationship of z to the 
+is a real-valued function that gives the relationship of z to the
 line.  If f(z) < 0, then z is on one side of the line.  A positive
-value of f(z) means that z is on the other side, and f=0 means 
+value of f(z) means that z is on the other side, and f=0 means
 that z is exactly on the line.
 
 Using 2 curves then results in 2 functions, fx(z) and fy(z).  The
@@ -39,25 +39,25 @@ curves, it is sufficient to check for the smallest |w|.  This w is
 saved, and at the end of the iteration, "decomp=256" is used to color
 the pixel according to the polar angle of w.
 
-In its most general form, this method requires 6 real parameters:  
-3 for the circle (xcenter, ycenter, radius) and 3 for the line (A, 
-B, C).  For Mandelbrot implementation, this requires hardcoding the 
-bailout value, which has been set to 10^12.  For Julia implementations, 
-the bailout is also hardcoded, but another 2 parameters are needed to 
-specify the Julia parameter, c.  The "general_jul" formula is written 
-with a hardcoded value of c, to allow for the greatest flexibility in 
+In its most general form, this method requires 6 real parameters:
+3 for the circle (xcenter, ycenter, radius) and 3 for the line (A,
+B, C).  For Mandelbrot implementation, this requires hardcoding the
+bailout value, which has been set to 10^12.  For Julia implementations,
+the bailout is also hardcoded, but another 2 parameters are needed to
+specify the Julia parameter, c.  The "general_jul" formula is written
+with a hardcoded value of c, to allow for the greatest flexibility in
 choosing the curves.
 
 A great deal of choice can still be allowed by only using 4 parameters
 to choose the lines, thereby freeing the other 2 for picking the Julia
-parameter c.  The "center_jul" method uses a general circle and the 
-line passes through the center with a specified inclination angle.  
-The "tangent_jul" method also uses a general circle.  The line, however, 
-is tangent to the circle.  The tangent point is at a specified angle 
-to the center of the circle.  Finally, the "offset_jul" formula is 
-similar to the "tangent_jul" formula.  Instead of the line touching 
-the circle, it is offset by the radius of the circle.  The line is 
-parallel to a tangent line, with the tangency point at a specified 
+parameter c.  The "center_jul" method uses a general circle and the
+line passes through the center with a specified inclination angle.
+The "tangent_jul" method also uses a general circle.  The line, however,
+is tangent to the circle.  The tangent point is at a specified angle
+to the center of the circle.  Finally, the "offset_jul" formula is
+similar to the "tangent_jul" formula.  Instead of the line touching
+the circle, it is offset by the radius of the circle.  The line is
+parallel to a tangent line, with the tangency point at a specified
 angle to the center.
 
 Because of the wide variety of parameter settings, it's not possible

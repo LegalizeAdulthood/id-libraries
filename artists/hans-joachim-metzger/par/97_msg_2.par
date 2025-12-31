@@ -9,7 +9,7 @@
 ;
 ; BTW, I tried a modification to your "Vasarely" formula  -  now I've got dots
 ; before my eyes...
-; 
+;
 ; cheers, Les
 
 
@@ -75,16 +75,16 @@ LF43_04            { ; "Dandelion"                           t=  0:05:27.03
 ; Subj:  disk/ram fract not saved		Section: Fractint Sources
 ;   To:  Jim J. Deutch, 104074,3171	03 April 1997 22:43:11
 ; From:  Les St Clair, 101461,2032	#151537
-; 
+;
 ; Hi Jim,
-; 
+;
 ; >>A challenge if I ever heard one<<
 ; >>Can you post an example of a good image based on integer artifacts for us to work on?  <<
-; 
+;
 ; I don't know about "good", but here's two examples, one using a formula, the other using the built-in fn*z+z type.
 ; Both lose their main characteristics once floating point comes into play. Both also use continuous potential, I
 ; don't know if this is a factor.
-; 
+;
 ; The first one shows a strange saucer like object with two saw blades protruding. Switch to float=y and the saw
 ; blades, together with most of the interest from the saucer disappear.
 ;
@@ -92,7 +92,7 @@ LF43_04            { ; "Dandelion"                           t=  0:05:27.03
 ; plant stem disappear.
 ;
 ; Naturally, I'd be very interested if you discover anything!
-; 
+;
 ; cheers and good luck, Les
 
 LF04_14            { ; "Integer artifacts example #1"        t=  0:05:28.89
@@ -123,11 +123,11 @@ venus_fly_trap     { ; "Integer artifacts example #2"        t=  0:01:20.57
 ; Subj:  BASIC-to-FRM?			Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	16 April 1997 23:50:14
 ; From:  Les St Clair, 101461,2032	#164
-; 
+;
 ; Hi Sylvie,
-; 
+;
 ; >>  Try this:<<
-; 
+;
 ; I knew if anyone could, you could<g>
 ; You are a fractal genius!!
 ;
@@ -151,21 +151,21 @@ Tent_01            { ; "Thank you, Sylvie!"                  t=  0:27:59.46
 ; Subj:  BASIC-to-FRM?			Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	20 April 1997 06:25:01
 ; From:  Les St Clair, 101461,2032	#182
-; 
+;
 ; Hi Sylvie,
-; 
+;
 ; >> Here it is (it can be optimized, I'll do it later):<<
 ; >>;acceleration_man {
-; 
+;
 ; Great! You have worked your magic again.
-; 
+;
 ; >> When I wrote the formula, I commented out the BASIC lines and added the
 ; corresponding Fractint statement:<<
-; 
+;
 ; This is very useful in helping me understand what's going on. Thanks.
-; 
+;
 ; Now, thanks to your efforts, here's a couple of images:
-; 
+;
 ; cheers, Les
 
 accel_01           { ; "zoom using acceleration_man.frm"     t=  0:22:47.15
@@ -200,7 +200,7 @@ accel_02           { ; "zoom using acceleration_man.frm"     t=  0:27:37.10
 ; Subj:  Basic-to_frm			Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	21 April 1997 08:35:02
 ; From:  Jo Weber, 100424,35		#193
-; 
+;
 ; Hi Les,
 ; great images. Fantastic. The only idea I had was to send you some nice colors. :-)
 ;  -- Jo --
@@ -247,22 +247,22 @@ accel_02_JoWe      { ;   0:30:31.11     Color plugin
 ; Subj:  bej0015				Section: Fractint Sources
 ;   To:  Jo Weber, 100424,35		03 May 1997 04:45:00
 ; From:  Les St Clair, 101461,2032	#356
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >>I have a question. What's about the ant's?
 ; Have I to cancel the generating of the image after a while, because it never
 ; stops?<<
-; 
+;
 ; They do stop <eventually!>
 ; It rather depends on the maxpts. setting. If you reduce this they stop a lot
 ; sooner.
-; 
+;
 ; One thing, though. It's pretty difficult to save them to a par file as they
 ; generate a different image depending on
 ; a.) Video mode
 ; b.) Viewwindows size (if used)
-; 
+;
 ; Here's what I mean:
 ;
 ; Try this:
@@ -270,10 +270,10 @@ accel_02_JoWe      { ;   0:30:31.11     Color plugin
 ; viewwindows=4.2. The image stops after a few seconds.
 ; 2. now switch viewwindows off --> completely different image!
 ; 3. try different video modes, 800x600, 640x480 --> each one different!!
-; 
+;
 ; The moral of this story is that, it seems, you must state the video mode used in the par entry if you want others
 ; to generate the correct image!
-; 
+;
 ; cheers, Les
 
 ant_01             { ; Just Testing - maxpoints=500000       t=  0:00:13.13
@@ -299,9 +299,9 @@ ant_01             { ; Just Testing - maxpoints=500000       t=  0:00:13.13
 ; Subj:  Interesting zoom...		Section: Fractint Sources
 ;   To:  ALL				09 May 1997 18:16:14
 ; From:  Robert W. Carr, 73753,2420	#998
-; 
+;
 ; I found this zoom to be interesting and colorful.
-; 
+;
 ; --Bob Carr--
 
 
@@ -319,9 +319,9 @@ Carr3184-1    { ; Interesting and colorful zoom.
 ; Subj:  Frm in Par (cool!)		Section: Fractint Sources
 ;   To:  All				10 May 1997 00:53:04
 ; From:  Les St Clair, 101461,2032	#1010
-; 
+;
 ; Hi everyone,
-; 
+;
 ; Fractint 19.6 is here and, amongst other goodies, it now supports formula
 ; files inside pars.
 ; It seems to me that this facility has an additional functionality, it makes
@@ -332,7 +332,7 @@ Carr3184-1    { ; Interesting and colorful zoom.
 ; Try it with this formula that I found on the Fractal Art mailing list:
 ; (p.s. if you've not upgraded to v19.6 then you'll have to remove the prefix
 ; <FRM:> from the formula name)
-; 
+;
 ; - Les
 
 frart_01           { ; "Disappearing Ribbons"                t=  0:21:10.42
@@ -352,15 +352,15 @@ frart_01           { ; "Disappearing Ribbons"                t=  0:21:10.42
 ; Subj:  Frm in Par (cool!)		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	10 May 1997 09:25:02
 ; From:  Les St Clair, 101461,2032	#1019
-; 
+;
 ; Me again!
-; 
+;
 ; >> ...formula that I found on the Fractal Art mailing list:
-; 
+;
 ; Hmmm, here's another from the same source -
 ; This formula is an adaptation of a formula from Stephen C. Ferguson's
 ; Flarium24 fractal program [http://home1.gte.net/itriazon/].
-; 
+;
 ; For some reason passes=t is the quickest drawing method that gives a complete
 ; image. Passes=g crops the tips of the pentagon!
 
@@ -390,7 +390,7 @@ frart_03           { ; "Fractal Pentagon #2"                 t=  0:12:22.49
 ; Subj:  orchid				Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	11 May 1997 01:51:11
 ; From:  Jo Weber, 100424,35		#1093
-; 
+;
 ; Hi Les,
 ; here are two color-plugins for the orchid image.
 ;
@@ -398,7 +398,7 @@ frart_03           { ; "Fractal Pentagon #2"                 t=  0:12:22.49
 ; Create first the image with orchid_3d using the original orchid.gif, set
 ; "Output Targa=No", don't save it, because it uses default.map and then use
 ; the color-plugins #1-#5.
-; 
+;
 ; Cheers -- Jo --
 
 JW_Orch_01         { ; color-plugin #1 for Orchid.gif
@@ -482,30 +482,30 @@ JW_Orch_05_3D     { ; color-plugin #5 for Orchid_3D.gif May 10, 1997  11:47:11
 ; Subj:  orchid				Section: Fractint Sources
 ;   To:  Jo Weber, 100424,35		11 May 1997 11:04:01
 ; From:  Les St Clair, 101461,2032	#1101
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >>here are very nice reliefs for the image.
-; 
+;
 ; Superb bas-relief effect!!
 ; Especially plug-in #1. What an absolutely brilliant idea!
-; 
+;
 ; Here's one from me -
-; 
+;
 ; >>BTW I finished the generating of "all" Compuserve-par's at 1600x1200 and the
 ; next step is to buy a CD-writer.<<
-; 
+;
 ; That must have been a marathon! (how many machines did you use?).
 ; I'd do the same myself, except for some minor details -
 ; 1. my machine's too slow
 ; 2. no 1600x1200 res.
 ; 3. no CD-Writer ;-(
-; 
+;
 ; I've actually generated many of the pars uploaded here at 1024x768 and
 ; archived them to Travan data tape. By the time I can afford a CD-Writer
 ; (first I need a new PC, bigger hard disk, Monitor, etc. etc.) 1024x768 will
 ; probably seem pretty crummy and I'll have to start all over again!
-; 
+;
 ; - Les
 
 LSC_Orch_01_3D     { ; "Color plug-in for Jo Weber's Orchid_3D"
@@ -519,18 +519,18 @@ LSC_Orch_01_3D     { ; "Color plug-in for Jo Weber's Orchid_3D"
 ; Subj:  orchid				Section: Fractint Sources
 ;   To:  Jo Weber, 100424,35		11 May 1997 07:34:04
 ; From:  Sylvie Gallet, 101324,3444	#1103
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >> here are two color-plugins for the orchid image.
 ; >> And here are very nice reliefs for the image.
-; 
+;
 ;   Very nice images!  I particularly love 01_3D,02_3D and 05_3D.
-; 
+;
 ;   Here is another one from me:
 ;
 ;   Cheers,
-; 
+;
 ; 	-  Sylvie
 
 SG_Orch_01_3D      { ; "Color plug-in for Jo Weber's Orchid_3D"
@@ -545,19 +545,19 @@ SG_Orch_01_3D      { ; "Color plug-in for Jo Weber's Orchid_3D"
 ; Subj:  New coloring scheme		Section: Fractint Sources
 ;   To:  All				18 May 1997 17:13:12
 ; From:  Sylvie Gallet, 101324,3444	#1558
-; 
+;
 ; Hi,
-; 
+;
 ;   On his home page (http://www.primenet.com/~lkmitch/), Kerry Mitchell
 ;   describes a new coloring scheme for the Julia and Mandelbrot sets based on
 ;   the triangle inequality for complex numbers.
-; 
+;
 ;   I implemented his algorithm as well as his trick to minimize banding in the
 ;   following Mandel formula (Julia formula later!):
-; 
-; 
+;
+;
 ;   Here are 2 of my favorite images:
-; 
+;
 ; 	-  Sylvie
 
 6TRMN201.GIF       { ; .                                     t=  0:29:42.17
@@ -590,7 +590,7 @@ SG_Orch_01_3D      { ; "Color plug-in for Jo Weber's Orchid_3D"
 ; Subj:  Thanks and some images		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	18 May 1997 19:11:05
 ; From:  Jo Weber, 100424,35		#1561
-; 
+;
 ; Hi Les,
 ; thanks for the e-mail and some nice images. Enjoy -- Jo --
 
@@ -645,8 +645,8 @@ JoWe5504           { ;   0:01:27.50
 ; Subj:  Pars				Section: Fractint Sources
 ;   To:  All				18 May 1997 21:24:13
 ; From:  Lee Skinner, 75450,3631		#1568
-; 
-; 
+;
+;
 ;   Here are a couple of pars from g8_07.zip which should be visible by Monday:
 ;
 ; Lee
@@ -685,11 +685,11 @@ g807037            { ;                                        t=  0:25:47.31
 ; Subj:  New coloring scheme		Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	20 May 1997 18:29:02
 ; From:  Sylvie Gallet, 101324,3444	#1681
-; 
+;
 ; Hi Everyone,
-; 
+;
 ;   Here are two formulas using the same algorithm.
-; 
+;
 ; 	-  Sylvie
 
 6TRfn01.GIF        { ; .                                     t=  0:02:52.14
@@ -734,17 +734,17 @@ g807037            { ;                                        t=  0:25:47.31
 ; Subj:  kscope				Section: Fractint Sources
 ;   To:  Jo Weber, 100424,35		11 June 1997 22:31:00
 ; From:  Les St Clair, 101461,2032	#3048
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >> I love the images and the use of viewwindows is absolutely perfect.<<
-; 
+;
 ; Thanks!
 ; It seemed to me that the symmetry of the images required a square format.
-; 
+;
 ; Now that I've tried it, I can see more uses of the aspect ratio - panoramic
 ; fractals, tall images....
-; 
+;
 ; Meanwhile, here's some more for the Fractint kaleidascope:
 ;
 ; - Les
@@ -882,18 +882,18 @@ kscope29           { ; "Four Way Street"                     t=  0:03:55.63
 ; Subj:  Kscope				Section: Fractal Sources
 ;   To:  Les St Clair, 101461,2032	16 June 1997 01:39:05
 ; From:  Phil DiGiorgi, 76736,570		#3218
-; 
+;
 ; Hi Les,
-; 
+;
 ; Liked very much your kaliedoscopic images, especially 10, 18, 20, and 28.
 ; Very nice!
-; 
+;
 ; Been having fun with the "many_man" formula for the last couple of days.
 ; Here are a few images with a phc variation of it.
-; 
-; 
+;
+;
 ;    --Phil
-; 
+;
 ; ----------------------
 
 pd_mm202             {
@@ -956,17 +956,17 @@ pd_mm217           {
 ; Subj:  Kscope				Section: Fractal Sources
 ;   To:  Phil DiGiorgi, 76736,570		16 June 1997 22:51:01
 ; From:  Les St Clair, 101461,2032	#3227
-; 
+;
 ; Hi Phil,
-; 
+;
 ; >>Liked very much your kaliedoscopic images, especially 10, 18, 20, and 28.   Very nice!
 ; Thank you!
-; 
+;
 ; >>Been having fun with the "many_man" formula for the last couple of days.
 ; Here are a few images with a phc variation of it.<<
-; 
+;
 ; I like it! I really like it!!
-; 
+;
 ; Your images are great. I did a couple of my own, very quickly. I think I'm
 ; going to be doing a little more work with this formula<g>. Thanks.
 ;
@@ -1008,16 +1008,16 @@ mmphc02            { ; "Tentacles"                           t=  0:06:35.09
 ; Subj:  Kscope				Section: Fractal Sources
 ;   To:  Les St Clair, 101461,2032	17 June 1997 04:10:07
 ; From:  Phil DiGiorgi, 76736,570		#3359
-; 
+;
 ; >> I think I'm going to be doing a little more work with this formula<g>. <<
-; 
+;
 ; Can't wait to see what else you come up with.   "Tentacles" was super!
-; 
-; 
+;
+;
 ;   --Phil
-; 
+;
 ; ------------------
-; 
+;
 ; Here's a few more:
 
 
@@ -1069,14 +1069,14 @@ pd_mm205           { ; "Out of Focus"
 ; Subj:  Wrong section			Section: Fractint Sources
 ;   To:  Phil DiGiorgi, 76736,570		19 June 1997 23:50:10
 ; From:  Les St Clair, 101461,2032	#3545
-; 
+;
 ; Phil,
-; 
+;
 ; >>Just realized that I posted the mm_phc pars to you in message section 5
 ; instead of 3 by mistake
-; 
+;
 ; I'm just glad that you posted them!
-; 
+;
 ; I've had a bit more fun with your formula...
 ;
 ; cheers, Les
@@ -1142,19 +1142,19 @@ mmphc06            { ; "wide border 02"                      t=  0:00:45.98
 ; Subj:  Wrong section			Section: Fractint Sources
 ;   To:  Loren G. Dobert, 72332,507	22 June 1997 23:55:05
 ; From:  Les St Clair, 101461,2032	#3693
-; 
+;
 ; Hi Loren,
-; 
+;
 ; >>I was just wondering, why the viewwindows? Are you trying for a specific
 ; effect?
-; 
+;
 ; Kind of.
 ; I realised when I did my "kaleidascope" par (where I specifically wanted a
 ; square image) that there was no real reason to stick with the standard aspect
 ; ratio. So I've been experimenting with wide ones, tall thin ones etc...
 ; I thought that the repeating patterns in "wide border 01" & "02" would make a
 ; nice decorative strip e.g. for use in a WEB page..
-; 
+;
 ; ..like this zoomed out and even narrower image (viewwindows aspect
 ; ratio = 0.08)
 ;
@@ -1180,7 +1180,7 @@ mmphc06a           { ; "Border design for WEB page?"         t=  0:00:16.92
 ; Subj:  2 pars				Section: Fractint Sources
 ;   To:  All				29 June 1997 05:58:10
 ; From:  Lee Skinner, 75450,3631		#4011
-; 
+;
 ;   Since it's been a while since I posted a par, here are two that I recently
 ; created: (formula is in George Martin's Orgform)
 ;
@@ -1220,9 +1220,9 @@ c2821p7            { ; Land of the Lost                       t=  1:08:16.51
 ; Subj:  UFOs and Arizona Sunset		Section: Fractint Sources
 ;   To:  All				29 June 1997 12:56:11
 ; From:  Lee Skinner, 75450,3631		#4012
-; 
+;
 ; Dear friends,
-; 
+;
 ;   In celebration of 50 years since the Roswell Incident, I submit for your
 ; approval the following interpretation:
 ;
@@ -1231,7 +1231,7 @@ c2821p7            { ; Land of the Lost                       t=  1:08:16.51
 ; off around 10 minutes to be more accurate.)
 ;
 ; Lee Skinner
-; 
+;
 
 c2821n7            { ; UFO Invasion                           t=  1:04:45.97
                      ; on a P166 at 1600x1200  Jun 29, 1997  10:41:13
@@ -1263,7 +1263,7 @@ c2821p6            { ; Tucson Sunset                          t=  1:21:30.92
   }
 
 ; ===========================Developer's PARs====================================
-; 
+;
 ;   To:  Sylvie Gallet, 101324,3444	31 March 1997 12:56:01
 ; From:  Sylvie Gallet, 101324,3444	#23
 
@@ -1452,12 +1452,12 @@ oortcld            { ; The Oort Cloud, Birthplace of Comets   t=  0:05:37.90
 ;;**************************************************************************;;
 ;   To:  All				12 May 1997 17:40:02
 ; From:  Sylvie Gallet, 101324,3444	#1219
-; 
+;
 ; Hi,
-; 
+;
 ;   Run the following par (saved with p1=1e10) and look at the value of p1 in
 ;   the <z> screen: 1410065408!
-; 
+;
 ; 	-  Sylvie
 
 tri-mandel-2       { ; .                                    t=  0:00:02.74

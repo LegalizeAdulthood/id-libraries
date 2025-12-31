@@ -93,7 +93,7 @@ frm:startfrm   {; mask_008.frm
   out*|z|+in<test*out+z*in
   ;SOURCE: 96_msg_2.frm
    }
-frm:starttfrm    {; FractMask08 
+frm:starttfrm    {; FractMask08
 ;3d effects, fast if-else logic, transparent letters by
 ;Albrecht.niekamp@t-online.de
 ;maxiter=15000, center-x: -0.5, inside maxiter, outside tdis
@@ -317,14 +317,14 @@ endif
   phc_bailout
   }
 
-frm:startzfrm    {; FractMask08 
+frm:startzfrm    {; FractMask08
 ;3d effects, fast if-else logic, transparent letters by
 ;Albrecht.niekamp@t-online.de
 ;maxiter=1094, maxiter, tdis
 ;passes=1.To avoid moir‚e, which is ugly at lower
 ;resolutions set periodity=-1. This shuts off
 ;the inner mandel.
-;fractint 20.2.04 or later      
+;fractint 20.2.04 or later
   row=imag(scrnpix)
   col=real(scrnpix)
   rows=imag(scrnmax)
@@ -431,8 +431,8 @@ endif
 
 
 Starting_Screen    { ; Nontransparent letters
-                     ;  
-                     ;  
+                     ;
+                     ;
                      ;  Version 2002 Patchlevel 4
   reset=2002 type=formula formulafile=start.frm formulaname=startfrm
   function=conj passes=1 center-mag=-0.5/0/0.6666667 params=7500/0
@@ -444,8 +444,8 @@ Starting_Screen    { ; Nontransparent letters
   }
 
 Starting_Screen2   { ; Transparent letters  1hr 1min on a 2 Giga cpu
-                     ;  
-                     ;  
+                     ;
+                     ;
                      ;  Version 2002 Patchlevel 4
   reset=2002 type=formula formulafile=start.frm formulaname=starttfrm
   passes=1 center-mag=-0.5/0/0.6666667 float=y maxiter=15000

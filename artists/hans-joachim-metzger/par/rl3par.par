@@ -1,6 +1,6 @@
 Urchin             { ; Sea Urchin
                      ; Ronald C. Lewen, 76376,2567
-                     ; Derived from Peter Moreland's "*GONZO*"    
+                     ; Derived from Peter Moreland's "*GONZO*"
   reset type=mandel
   corners=-1.860573960192692/-1.860573959920093/-0.0000009344666941/-0.0000009\
   34243118/-1.86057396020188/-0.0000009344543947 float=y maxiter=1500
@@ -31,7 +31,7 @@ Luna               { ; A Fractal Harvest Moon
 
 Oz                 { ; "Somewhere... Over the rainbow..."
                      ; Ronald C. Lewen, 76376,2576
-                     ; Derived from Peter Moreland's "Bio"    
+                     ; Derived from Peter Moreland's "Bio"
   reset type=formula formulafile=fractint.frm formulaname=Richard1
   corners=-0.6869366011/-0.6869603858/0.74403923/0.7496943/-0.6897774489/0.746\
   85528 params=1.78/0.345 float=y maxiter=10000 inside=6
@@ -70,7 +70,7 @@ Tsunami            { ; A fractal tidal wave
 Twister            { ; Gosh, Toto... I don't think we're in Kansas anymore
                      ; Ronald C. Lewen, 76376,2567
                      ; Derived from Peter Moreland's mutation of my original
-                     ; "Chaos Gate"       
+                     ; "Chaos Gate"
   reset type=fn*z+z function=sqr
   corners=0.43230671/0.43629479/0.0522262/-0.0597079/0.47179222/0.0039314
   params=2.6/0/0/2.66 maxiter=20000 inside=255 potential=255/128/0
@@ -82,7 +82,7 @@ Twister            { ; Gosh, Toto... I don't think we're in Kansas anymore
 Balloons           { ; At the balloon factory
                      ; Ronald C. Lewen, 76376,2567
                      ; Derived from Peter Moreland's mutation of my original
-                     ; "Cut me"       
+                     ; "Cut me"
   reset type=fn*z+z function=cotan
   corners=-2.424178/-1.255653/-0.387032/-0.752695/-1.97113/-1.167838
   params=2.1414/0.875/1/1.863 float=y maxiter=20000 bailout=2000

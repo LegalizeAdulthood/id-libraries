@@ -2,41 +2,41 @@ comment { ; narrative copyright Kerry Mitchell 19jan98
 
 Ghost
 
-In the ghost coloring scheme, you can make the fractal appear or disappear 
-against a gradient background.  It is based on the iteration smoothing 
-routine of Linas Vepstas, and uses an adjustable parameter to determine 
+In the ghost coloring scheme, you can make the fractal appear or disappear
+against a gradient background.  It is based on the iteration smoothing
+routine of Linas Vepstas, and uses an adjustable parameter to determine
 how prevalent the fractal appears.
 
-The iteration smoothing technique works by letting the iterate go much 
-beyond the required escape radius of 4, and converting its geometric 
-growth into a real number.  When combined with the original iteration 
-number, the result is a real number that can be plotted continuously 
-with the decomposition (or outside=real) methods.  Here, the smoothed 
-iteration count is scaled and made the polar angle for the decomposition 
+The iteration smoothing technique works by letting the iterate go much
+beyond the required escape radius of 4, and converting its geometric
+growth into a real number.  When combined with the original iteration
+number, the result is a real number that can be plotted continuously
+with the decomposition (or outside=real) methods.  Here, the smoothed
+iteration count is scaled and made the polar angle for the decomposition
 coloring.
 
-The backgrounds for these images are gradients (using smooth color maps), 
-running horizontally, vertically, or in rays from the origin (point 0+0i).  
-In the latter case, the background is simply the polar angle of the pixel, 
-which may or may not be centered on the screen, depending on the zoom of 
-the image.  In the former two cases, the gradients are dynamically set to 
-use the full color range irrespective of the pixel coordinates.  In any 
+The backgrounds for these images are gradients (using smooth color maps),
+running horizontally, vertically, or in rays from the origin (point 0+0i).
+In the latter case, the background is simply the polar angle of the pixel,
+which may or may not be centered on the screen, depending on the zoom of
+the image.  In the former two cases, the gradients are dynamically set to
+use the full color range irrespective of the pixel coordinates.  In any
 case, the background is represented by an angle, for use with decomposition.
 
-Given angles for both the iteration count and the background image, they 
-are combined using the "ghost" parameter.  The iteration angle is scaled 
-by "ghost" and added to the background angle.  When the ghost level is 
-set to zero, then only the background angle remains, and that is what is 
-shown in the image.  Increasing the ghost level results in the background 
-being subtly, then significantly, perturbed by the fractal.  The disturbance 
-starts with the highest iteration levels first (except that interior points 
-are assigned 0 iteration, to clarify the boundary), and propagates to the 
-lower iterations as the ghostliness is increased.  The effect on the image 
-is to see the background gradient smoothly displaced by the fractal, but 
+Given angles for both the iteration count and the background image, they
+are combined using the "ghost" parameter.  The iteration angle is scaled
+by "ghost" and added to the background angle.  When the ghost level is
+set to zero, then only the background angle remains, and that is what is
+shown in the image.  Increasing the ghost level results in the background
+being subtly, then significantly, perturbed by the fractal.  The disturbance
+starts with the highest iteration levels first (except that interior points
+are assigned 0 iteration, to clarify the boundary), and propagates to the
+lower iterations as the ghostliness is increased.  The effect on the image
+is to see the background gradient smoothly displaced by the fractal, but
 to not see the fractal directly.
 
-The best uses of this scheme seems to be on Julia dust (non-connected) 
-fractals, in which there is lots of "empty" space for the background to 
+The best uses of this scheme seems to be on Julia dust (non-connected)
+fractals, in which there is lots of "empty" space for the background to
 show through.
 
 }

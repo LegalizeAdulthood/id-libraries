@@ -7,19 +7,19 @@
 ; Lines: 94
 ; Message-ID: <3vinse$s92@ucthpx.uct.ac.za>
 ; NNTP-Posting-Host: ika.cs.uct.ac.za
-;  
+;
 ; Last week sometime, I posted a parameter file called organics.par, which
 ; contained examples of things that occur in the M-Set which I call
 ; organics. Ray Girvan suggested that they resembled the entire shape of
 ; certain Julia sets, so I decided to examine the Julia sets corresponding
 ; to the points in the M-Set where organics occur, to see whether these were
 ; particularly remarkable.
-;  
+;
 ; I found that the Julia sets at these points generally resemble the
 ; terrain in which the organics occur, with organic type parts of their
 ; own. In general, the structure was very similar to the structure of the
 ; Mandelbrot set in the corresponding position, which is not surprising.
-;  
+;
 ; However, I did find that Fractint is very prone to producing errors in
 ; the organic parts of these Julias, as the images in this parameter file
 ; show. After experimenting with various options, I came to the conclusion
@@ -27,15 +27,15 @@
 ; checking off solved the problem. I also noticed that the errors occured
 ; to a much greater extent when floating point was turned on, but still
 ; occured occasionally with integer math.
-;  
+;
 ; Are these errors common knowledge? Or am I doing something weird?
-;  
+;
 ; Ash
-;  
-;  
+;
+;
 ; errors.par
 ; ----
- 
+
 30079501           { ;
   reset=1920 type=julia passes=2
   corners=-0.078610316118936083/0.021245683881063925/0.00609470981/0.08098\
@@ -45,7 +45,7 @@
   17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
   22>LIH<26>zfz<19>DXz<6>M_k
   }
- 
+
 30079502           { ;
   reset=1920 type=julia passes=1 corners=-2/2/-1.5/1.5
   params=0.4435773568133786/0.372177545877456 float=y maxiter=10000000
@@ -54,7 +54,7 @@
   17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
   22>LIH<26>zfz<19>DXz<6>M_k
   }
- 
+
 30079503           { ; try zooming into the 'lakes'
   reset=1920 type=julia passes=1 corners=-0.172/0.172/-0.129/0.129
   params=0.4435773568133786/0.372177545877456 float=y maxiter=1000000
@@ -63,7 +63,7 @@
   17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
   22>LIH<26>zfz<19>DXz<6>M_k
   }
- 
+
 30079505           { ;
   reset=1920 type=julia passes=1
   corners=-0.067558046948356834/0.061097953051643158/-0.0509391106/0.04555\
@@ -73,7 +73,7 @@
   17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
   22>LIH<26>zfz<19>DXz<6>M_k
   }
- 
+
 30079512           { ;
   reset=1920 type=julia passes=1
   corners=-0.29405321/-0.094053208/-0.94556367/-0.79556367
@@ -83,7 +83,7 @@
   17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<\
   22>LIH<26>zfz<19>DXz<6>M_k
   }
- 
+
 30079513           { ;
   reset=1920 type=julia
   corners=-0.000629970804/0.000881621614/-0.000599658117/0.000534337014
@@ -92,7 +92,7 @@
   3>K21L00K00<8>900700600400300100000<9>P35S36V36Y36`37<6>r5At6Bw6Bz7Cz7C<\
   7>t5Cs5Cr5Cq4Cp4Co3B<6>h6Ig6Jh6K<6>k8Sl9Tm9Un9VnAW<19>yHqzIszJr<2>zNo
   }
- 
+
 30079514           { ;
   reset=1920 type=julia corners=-0.388/0.388/-0.291/0.291
   params=0.443577030416759/0.37217764578456 float=y maxiter=100000000
@@ -101,4 +101,4 @@
   CrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<8>ECgEChDChDDh<22\
   >DdrDfrDfr<35>CvtCvtCvs<45>NbINbINcI<12>SfG
   }
- 
+

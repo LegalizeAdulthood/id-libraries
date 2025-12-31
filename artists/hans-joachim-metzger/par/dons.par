@@ -4,19 +4,19 @@
 ; * file and images are Copyright (c) 1994, don lebow
 ; * to the best of my knowledge all are original
 ; *
-; * these were rendered at 640 x 480 x 256 colors. 
+; * these were rendered at 640 x 480 x 256 colors.
 ; * other resolutions are apt to look strange(r)
 ; *
 ; * forumlas not included in the distribution version of Fractint 18.2
 ; * (FRACTINT.FRM) can be found in the companion file DONS.FRM
 ; *
-; * 
+; *
 ; * hope you find one or two that strikes your fancy, and enjoy playing with
 ; * them as much as I have
 ; *
-; * >>don CIS:76704,41 
+; * >>don CIS:76704,41
 
-Interior           { ;  
+Interior           { ;
   reset type=formula formulafile=fractint.frm formulaname=Ent2
   function=cosxx/sqr passes=1
   corners=0.66520307/0.40408232/-0.27309454/0.075067083/0.40408232/0.07506\
@@ -209,7 +209,7 @@ potential_fishes   {
   QPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<8>I8B
   }
 
-threadz          {   
+threadz          {
   reset type=fn(z)+fn(pix) function=tanh/cotan passes=b
   corners=-5.976442/4.250307/6.854249/-6.781418/4.250307/-6.781418
   params=1/0/1 float=y maxiter=100 bailout=50 inside=bof60 decomp=256
@@ -283,7 +283,7 @@ Jm_15              { ; the day we finally found the bugs in the network
   SFwSHwSIxTKwQ3wQ3<45>phGuQ5<11>MJ`wS7<61>yvs
   }
 
-baroque            { ; or is it rococo? 
+baroque            { ; or is it rococo?
   reset type=manfn+zsqrd function=tanh passes=b
   corners=-0.509362087/-0.585490087/-0.051164993/0.050339007/-0.585490087/\
   0.050339007 params=1 float=y inside=maxiter potential=255/500/0
@@ -485,7 +485,7 @@ rons               { ; ron barnett's frm ... no fpu
   0<15>zz0<14>w03<8>O0b
   }
 
-waiting_for_spring { ;  
+waiting_for_spring { ;
   reset type=fn(z)+fn(pix) function=log/tanh passes=b
   corners=2.917431/-1.866228/10.81585/4.437639/-1.866228/4.437639
   params=0.79000000000000004/-1/1/2 float=y maxiter=200 inside=bof60
@@ -539,7 +539,7 @@ overlay            {
   }
 
 shattered           { ; one too many zooms at 3am
-                      ; 
+                      ;
   reset type=fn(z)+fn(pix) function=exp/tanh passes=b
   corners=-1.9928/2.445069/2.943289/-2.973871/2.445069/-2.973871
   params=0/0/1 float=y maxiter=25 inside=zmag outside=real

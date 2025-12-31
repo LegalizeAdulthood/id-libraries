@@ -86,7 +86,7 @@ con02-01           { ; (c) Gedeon Peteri, Sep 26, 1998
   }
 
 cyc01-01           { ; (c) Gedeon Peteri, Sep27, 1998
-  reset=1960 type=formula formulafile=gpcurves.frm 
+  reset=1960 type=formula formulafile=gpcurves.frm
   formulaname=gpcyc01 function=recip/exp/cosxx passes=1
   center-mag=-0.0589013/-0.477047/0.4889768/1.2328/-1.802/3.263
   params=2/0/-1.43333333/0/8/0 float=y maxiter=1000
@@ -344,7 +344,7 @@ frm:gpcyc01 {;Cycloid
    }
 
 ;The general equation of a DAMPED VIBRATION CURVE is
-;y=ae^-kx * sin(bx+c) where k>0.  
+;y=ae^-kx * sin(bx+c) where k>0.
 
 frm:gpdvc01 {;Damped vibration curve
    z=fn1(1/pixel):
@@ -381,7 +381,7 @@ frm:gplob01 {;Lemniscate of Bernoulli
    |z|<=4 + p2
    }
 
-;The polar equation of the LIMACON OF PASCAL is 
+;The polar equation of the LIMACON OF PASCAL is
 ;r=2a*cos(t)+b
 
 frm:gplop01  {;Limacon of Pascal

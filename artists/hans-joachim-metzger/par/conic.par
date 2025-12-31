@@ -1,4 +1,4 @@
-comment { ; narrative copyright Kerry Mitchell 12may98 
+comment { ; narrative copyright Kerry Mitchell 12may98
 
 Conic Sections
 
@@ -17,13 +17,13 @@ x and y are the 2 spatial coordinates. For example, the line y=x can be
 represented as
 
 x - y = 0, or
-A = 0, B = 1, C = 0, D = -1, E = 0, F = 0. 
+A = 0, B = 1, C = 0, D = -1, E = 0, F = 0.
 
-A circle centered at (1,0) with a radius of 2 would have the equation 
+A circle centered at (1,0) with a radius of 2 would have the equation
 
 (x - 1)^2 + y^2 = 4, or
 x^2 - 2x + y^2 - 3 = 0, giving
-A = 1, B = -2, C = 1, D = 0, E = 0, F = -3. 
+A = 1, B = -2, C = 1, D = 0, E = 0, F = -3.
 
 How can these shapes be used to render fractals? First off, the "conic"
 formula simply draws the section determined by the six parameters A - F,
@@ -53,7 +53,7 @@ condition is that the quantity
 
 Q = Ax^2 + Bx + Cy^2 + Dy + Exy + F
 
-become larger than 0. Q=0 is the equation for the escape boundary.) 
+become larger than 0. Q=0 is the equation for the escape boundary.)
 
 (A note about the formulas: Since 6 parameters are required to fully
 specify a conic section, this leaves no room in the Fractint scheme to
@@ -86,7 +86,7 @@ centered at (h,k)].
 
 vertical line through (h,k): x=h
 
-non-vertical line with slope m, through (h,k): y-k = m*(x-h) 
+non-vertical line with slope m, through (h,k): y-k = m*(x-h)
 
 parabola, opening up or down, with vertex at (h,k): y-k = 4*p*(x-h)^2
 [p determines width; +/up, -/down]

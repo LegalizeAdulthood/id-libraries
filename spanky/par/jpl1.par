@@ -179,7 +179,7 @@ JPL215             { ; J.P. Louvet
 ;-----------------------------
 ; In the .FRM fole
 ; I have added "+" because the following formula is not the one included in fractint.frm
-; but the slight modified one in FRACXTR6.ZIP 
+; but the slight modified one in FRACXTR6.ZIP
 BirdOfPrey+(XAXIS_NOPARM) {; Jon Osuch
     ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx
     z   = p1,
@@ -190,12 +190,12 @@ BirdOfPrey+(XAXIS_NOPARM) {; Jon Osuch
    |z| <=p2
    }
 
-spiderM {z=pixel,f=pixel,g=pixel: 
+spiderM {z=pixel,f=pixel,g=pixel:
          f=f/p1+z,
          z=fn1(z^(p2+g))+fn2(f),
          |z| <= 4 }
 
-; I named first the following formula "InverseJulia" under my name 
+; I named first the following formula "InverseJulia" under my name
 ; but Paul Carlson told me that it was first published by Pokorny
 ; sorry ! Moreother this name is not good because it suggests an other formula.
 ; I have retained this name for compatibility with the pictures but a better name is simply Pokorny !
@@ -379,6 +379,6 @@ BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
     tmp1=fn1(z)^fn2(z),
     tmp2=fn3(z)^fn4(z),
-    z=(tmp1/tmp2), 
+    z=(tmp1/tmp2),
     |z| <= 4
 }

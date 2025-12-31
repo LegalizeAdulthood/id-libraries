@@ -2,7 +2,7 @@ comment { ; narrative copyright Kerry Mitchell 18oct98
 
 2 Lines Coloring Method
 
-Several coloring schemes have been put together that color according 
+Several coloring schemes have been put together that color according
 to the orbit's nearest approach to a specified point or curve.  This
 method extends that idea by coloring according to the orbit's nearest
 simultaneous approach to 2 specified lines.
@@ -14,9 +14,9 @@ in Mandelbrot and Julia computations.)  For complex numbers z = x+i*y,
 
 f(z) = A*real(z) + B*imag(z) + C
 
-is a real-valued function that gives the relationship of z to the 
+is a real-valued function that gives the relationship of z to the
 line.  If f(z) < 0, then z is on one side of the line.  A positive
-value of f(z) means that z is on the other side, and f=0 means 
+value of f(z) means that z is on the other side, and f=0 means
 that z is exactly on the line.
 
 Using 2 lines then results in 2 functions, fx(z) and fy(z).  One
@@ -27,7 +27,7 @@ lines, it is sufficient to check for the smallest |w|.  This w is
 saved, and at the end of the iteration, "decomp=256" is used to color
 the pixel according to the polar angle of w.
 
-In its most general form, this method requires 6 real parameters:  
+In its most general form, this method requires 6 real parameters:
 3 each for each line.  For Mandelbrot implementation, this requires
 hardcoding the bailout value, which has been set to 10^12.  For Julia
 implementations, the bailout is also hardcoded, but another 2 parameters
