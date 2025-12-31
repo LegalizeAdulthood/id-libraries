@@ -7219,3 +7219,8 @@ M_TchebychevC5 {
   ;SOURCE: fractint.frm
 }
  
+g5_01_m {
+  z = c = p1*pixel + p2 :
+  z = z*z + c
+  |z| <= 4
+}
