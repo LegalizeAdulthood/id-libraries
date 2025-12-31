@@ -26,7 +26,7 @@ gap_jul {; Kerry MItchell 07sep98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 gapc_man {; Kerry MItchell 07sep98
         ;
         ; bails out when orbit falls in the gap between
@@ -52,7 +52,7 @@ gapc_man {; Kerry MItchell 07sep98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 ring_man {; Kerry MItchell 07sep98
         ;
         ; bails out when orbit falls in the ring between
@@ -77,7 +77,7 @@ ring_man {; Kerry MItchell 07sep98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 ringc_jul {; Kerry MItchell 07sep98
         ;
         ; bails out when orbit falls in the ring between
@@ -103,4 +103,4 @@ ringc_jul {; Kerry MItchell 07sep98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+

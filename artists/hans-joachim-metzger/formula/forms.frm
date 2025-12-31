@@ -6,7 +6,7 @@ oof2 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof2.frm
 }
- 
+
 PhonyMandelM {
   c=pixel
   f=15/8
@@ -16,4 +16,4 @@ PhonyMandelM {
   |z|<=127
   ;SOURCE: pderb.frm
 }
- 
+

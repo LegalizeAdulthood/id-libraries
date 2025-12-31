@@ -1,9 +1,9 @@
 
 
-Zexpe (XAXIS) { 
+Zexpe (XAXIS) {
   z = Pixel:
   z = z ^ 2.71828182845905 + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: imagelab.frm
 }
 

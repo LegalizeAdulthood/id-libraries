@@ -6,4 +6,4 @@ OblateVB {; Jim Muth
   |z| <= a
   ;SOURCE: 97msg.frm
 }
- 
+

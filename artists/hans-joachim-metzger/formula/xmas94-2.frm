@@ -4,4 +4,4 @@ OrmanDelbrot3 {; Copr. 1995 by Jack Orman
   |Real(z)| <=  32
   ;SOURCE: orman.frm
 }
- 
+

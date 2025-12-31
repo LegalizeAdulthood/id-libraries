@@ -15,4 +15,4 @@ u-draw19_00 {; via formulas by Sylvie Gallet as modified by Bob Carr
   |z|<=16
   ;SOURCE: u-draw19.frm
 }
- 
+

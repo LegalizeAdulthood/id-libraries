@@ -15,7 +15,7 @@ pd_mm_fn {; A "many-man" variation by P. DiGiorgi
   (|real(z)| <= bailout)||(|imag(z)| <= bailout)
   ;SOURCE: pdg05.frm
 }
- 
+
 pd_pcj {; modified PopcornJul by P. DiGiorgi
   h = real(p3), bailout = imag(p3)
   z = fn4(pixel)
@@ -27,7 +27,7 @@ pd_pcj {; modified PopcornJul by P. DiGiorgi
   |z| <= bailout
   ;SOURCE: pdg05.frm
 }
- 
+
 pd_wpp {; formula by P. DiGiorgi
   z = pixel
   x = real(z), y = imag(z):
@@ -42,7 +42,7 @@ pd_wpp {; formula by P. DiGiorgi
   (|real(z)| <= 4) && (|imag(z)| <= 4)
   ;SOURCE: pdg05.frm
 }
- 
+
 Pd_5cb {
   bailout = imag(p2)
   k = real(p2), z = fn1(pixel):
@@ -51,4 +51,4 @@ Pd_5cb {
   |z| <= bailout
   ;SOURCE: pdg05.frm
 }
- 
+

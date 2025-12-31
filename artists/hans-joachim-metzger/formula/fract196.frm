@@ -24,7 +24,7 @@ Carr2289 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   abs(z) <= bailout
   ;SOURCE: fract196.frm
 }
- 
+
 Five-Mandels (XAXIS) {; Sylvie Gallet [101324,3444], 1996
    ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
    ; Modified for if..else logic 3/17/97 by Sylvie Gallet
@@ -44,7 +44,7 @@ Five-Mandels (XAXIS) {; Sylvie Gallet [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: fract196.frm
 }
- 
+
 Fractint {; Sylvie Gallet [101324,3444], 1996
           ; Modified for if..else logic 3/21/97 by Sylvie Gallet
           ; requires 'periodicity=0'
@@ -87,7 +87,7 @@ Fractint {; Sylvie Gallet [101324,3444], 1996
    continue
   ;SOURCE: fract196.frm
 }
- 
+
 Gallet-8-21 {; Sylvie Gallet [101324,3444], Apr 1997
              ; Requires periodicity = 0 and decomp = 256
              ; p1 = parameter for a Julia set (0 for the Mandelbrot set)
@@ -116,7 +116,7 @@ Gallet-8-21 {; Sylvie Gallet [101324,3444], Apr 1997
    znc <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 Graph {; Sylvie Gallet [101324,3444], 1996
        ; Modified for if..else logic 3/17/97 by Sylvie Gallet
        ; 2 parameters: curves thickness = real(p1)
@@ -147,7 +147,7 @@ Graph {; Sylvie Gallet [101324,3444], 1996
    z > 0
   ;SOURCE: fract196.frm
 }
- 
+
 JD-SG-04-1 {; Sylvie Gallet [101324,3444], 1996
     ; On an original idea by Jim Deutch [104074,3171]
     ; Modified for if..else logic 3/21/97 by Sylvie Gallet
@@ -163,7 +163,7 @@ JD-SG-04-1 {; Sylvie Gallet [101324,3444], 1996
   |z| < 4
   ;SOURCE: fract196.frm
 }
- 
+
 ptc+4mandels {; Sylvie Gallet [101324,3444], 1996
               ; 32-bit Pseudo-TrueColor
               ; Modified for if..else logic 3/21/97 by Sylvie Gallet
@@ -183,7 +183,7 @@ ptc+4mandels {; Sylvie Gallet [101324,3444], 1996
    |z| <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 ptc+mjn {; Sylvie Gallet [101324,3444], 1996
          ; Modified for if..else logic 3/19/97 by Sylvie Gallet
          ; 24-bit Pseudo-TrueColor
@@ -207,7 +207,7 @@ ptc+mjn {; Sylvie Gallet [101324,3444], 1996
    continue
   ;SOURCE: fract196.frm
 }
- 
+
 shifter01 {; After shift, switch from z*z to z*z*z
            ; Bradley Beacham  [74223,2745]
            ; Modified for if..else logic 3/18/97 by Sylvie Gallet
@@ -222,7 +222,7 @@ shifter01 {; After shift, switch from z*z to z*z*z
   |z| < test
   ;SOURCE: fract196.frm
 }
- 
+
 TileJulia {; Terren Suydam (terren@io.com), 1996
            ; modified by Sylvie Gallet [101324,3444]
            ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -248,7 +248,7 @@ TileJulia {; Terren Suydam (terren@io.com), 1996
   |z| <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 TileMandel {; Terren Suydam (terren@io.com), 1996
             ; modified by Sylvie Gallet [101324,3444]
             ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -273,4 +273,4 @@ TileMandel {; Terren Suydam (terren@io.com), 1996
   |z| <= 4
   ;SOURCE: fract196.frm
 }
- 
+

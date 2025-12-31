@@ -57,13 +57,13 @@ Coslider   {z=pixel;
 ; Organization: The National Capital FreeNet
 ; Date: Wed, 19 Apr 1995 02:23:00 GMT
 ; Lines: 38
-; 
+;
 ; Yeah, me again :-)
 ; I have made a generalised coslider (FNslider) where you
 ; select the function from cos, sin, and others.
 ; Also, another PAR entry, one I like, for coslider (won't work with FNslider)
-; 
-; 
+;
+;
 ; (for FNslider.frm)
 ; --
 ; Cheers,      |  "There was a sale. The biggest going-out-of-business sale you
@@ -97,14 +97,14 @@ FNslider   {z=pixel;
 ; Organization: The National Capital FreeNet
 ; Date: Thu, 4 May 1995 06:45:52 GMT
 ; Lines: 48
-; 
+;
 ; Use this one, not the earlier one. If you don't want to re-download it
 ; change "formulaname=PhonyMandel" to "formulaname=PhonyMandelJ" in your copy.
-; 
-; 
+;
+;
 ; The formula file must be named 'pgd.frm'
 ; Note: this formula can be slow. If you have fractint 19, use floating point.
-; 
+;
 ; --
 ;     .*.  "Clouds are not spheres, mountains are not cones, coastlines are not
 ;  -()  <  circles, and bark is not smooth, nor does lightning travel in a
@@ -142,14 +142,14 @@ PhonyMandelM {c=pixel
 ; Organization: The National Capital FreeNet
 ; Date: Thu, 4 May 1995 03:40:03 GMT
 ; Lines: 50
-; 
+;
 ; This Julia formula (PhonyMandelJ) with the parameter set to 1 produces ersatz
 ; mini Mandelbrots!
 ; They are actually illusory.
-; 
+;
 ; The (true) Mandelbrot formula is printed below with it, and a parameter
 ; entry showing the phony Mandelbrots.
-; 
+;
 ; --
 ;     .*.  "Clouds are not spheres, mountains are not cones, coastlines are not
 ;  -()  <  circles, and bark is not smooth, nor does lightning travel in a
@@ -185,16 +185,16 @@ PhonyMandelM {c=pixel
 ; Organization: The National Capital FreeNet
 ; Date: Sat, 2 Sep 1995 03:32:41 GMT
 ; Lines: 26
-; 
+;
 ; Super-weird formula:
-; 
+;
 ; z -> 1/3 z*z*z + z + c
-; 
+;
 ; Critical points for mandelbrot sets are +i and -i; they are identical but
 ; one is flipped relative to the other.
 ;
 ; Try them out!
-; 
+;
 ; --
 ;     .*.  "Clouds are not spheres, mountains are not cones, coastlines are not
 ;  -()  <  circles, and bark is not smooth, nor does lightning travel in a
@@ -224,9 +224,9 @@ Cubebrot2m {z=P1:
 ; Message-ID: <4rvg6e$mmc@freenet-news.carleton.ca>
 ; Reply-To: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
 ; NNTP-Posting-Host: freenet6.carleton.ca
-; 
+;
 ; FRACTINT lovers try this one:
-; 
+;
 ; --
 ;     .*.  Where feelings are concerned, answers are rarely simple [GeneDeWeese]
 ;  -()  <  When I go to the theater, I always go straight to the "bag and mix"

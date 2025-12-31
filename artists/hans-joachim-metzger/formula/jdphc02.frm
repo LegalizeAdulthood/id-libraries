@@ -8,7 +8,7 @@ jdphc01 {
   |z|<4
   ;SOURCE: jdphc02.frm
 }
- 
+
 jdphc02 {
   cr=real(pixel)
   cq=imag(pixel)
@@ -19,7 +19,7 @@ jdphc02 {
   |z|<4
   ;SOURCE: jdphc02.frm
 }
- 
+
 jdphc05 {
   z=pixel*whitesq+pixel*(whitesq==0)*(.9,.4)
   p=(-1.5,0)*whitesq+(-1,0)*(whitesq==0):
@@ -27,7 +27,7 @@ jdphc05 {
   |z|<4
   ;SOURCE: jdphc02.frm
 }
- 
+
 jdphc07 {
   cr=real(pixel)
   cq=imag(pixel)
@@ -38,7 +38,7 @@ jdphc07 {
   |z|<4
   ;SOURCE: jdphc02.frm
 }
- 
+
 jdphc08 {
   z=pixel*whitesq+(pixel+p3)*(whitesq==0)
   p=p1*whitesq+p2*(whitesq==0):
@@ -46,4 +46,4 @@ jdphc08 {
   |z|<4
   ;SOURCE: jdphc02.frm
 }
- 
+

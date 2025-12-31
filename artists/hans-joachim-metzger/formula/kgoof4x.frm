@@ -6,4 +6,4 @@ oof4x (XYAXIS) {; Added variable "newpixel". G. Martin 6/29/99
   |z| <= p2
   ;SOURCE: kgoof4x.frm
 }
- 
+

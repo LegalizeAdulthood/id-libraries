@@ -1,9 +1,9 @@
 ;------------------------------------------------;
 ; REB007.FRM                                     ;
 ; Ron Barnett 70153,1233                         ;
-;------------------------------------------------; 
+;------------------------------------------------;
 
-JMask2 {      ; Ron Barnett, 1995      
+JMask2 {      ; Ron Barnett, 1995
       z = fn1(pixel):
       z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3, |z| <= 4
    }
@@ -14,7 +14,7 @@ sjjulike01 {; Ron Barnett, 1995
         c=p2+p1*real(p3)+flip(imag(p3)):
         z = z*z*z + (c - 1)*z - c, |z|<=100
       }
-   
+
 PolyGenJulia {  ; Ron Barnett, 1995
                 ;p1 must not be zero
                 ;zero can be simulated with a small

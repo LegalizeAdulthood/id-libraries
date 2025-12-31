@@ -16,4 +16,4 @@ Newton {
   |z| <= 4
   ;SOURCE: methods.frm
 }
- 
+

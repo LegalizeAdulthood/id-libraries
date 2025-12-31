@@ -257,10 +257,10 @@ hermanm_alpha {; Kerry Mitchell 16feb98
 ;
 ;  Applicable formulas are:
 ;      hermanm_alpha (above)
-;      hermanm_jul-cart 
-;      hermanm_man-cart 
-;      hermanm_jul-polar 
-;      hermanm_man-polar 
+;      hermanm_jul-cart
+;      hermanm_man-cart
+;      hermanm_jul-polar
+;      hermanm_man-polar
 ;
 ; Variations on Herman Rings
 ;
@@ -290,13 +290,13 @@ hermanm_alpha {; Kerry Mitchell 16feb98
 ;
 ; This adjustment of the critical point is made in the formula
 ; initialization.
-; 
+;
 ; The parameter alpha can be selected in two ways, either using
 ; cartesian or polar coordinates.  The advantage to polar coordinates
 ; is that entering an irrational rotation angle is easy; enter a
 ; *rational* polar angle for alpha, and the rotation angle (which
 ; involves a factor of pi) will be irrational.
-; 
+;
 ; Five formulas are included:  2 Mandelbrot types (cartesian and
 ; polar), 2 Julia types (cartesian and polar), and 1 Mandelbrot
 ; type where c is explicitly specified and alpha takes on the

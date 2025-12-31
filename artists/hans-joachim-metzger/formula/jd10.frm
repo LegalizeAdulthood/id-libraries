@@ -11,7 +11,7 @@ JDfrm010m1 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+
 JDfrm010m9 {; Jim Deutch/modified by Lee Skinner.
             ; Eliminated assignment to "pixel". G. Martin 6/29/99
   countreset = (count < 1280)
@@ -25,7 +25,7 @@ JDfrm010m9 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+
 JDfrm010m7 {; Jim Deutch/modified by Lee Skinner.
             ; Eliminated assignment to "pixel". G. Martin 6/29/99
   countreset = (count < 1024)
@@ -39,7 +39,7 @@ JDfrm010m7 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+
 JDfrm010m6 {; Jim Deutch/modified by Lee Skinner.
             ; Eliminated assignment to "pixel". G. Martin 6/29/99
   countreset = (count < 800)
@@ -53,7 +53,7 @@ JDfrm010m6 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+
 JDfrm010m5 {; Jim Deutch/modified by Lee Skinner.
             ; Eliminated assignment to "pixel". G. Martin 6/29/99
   countreset = (count < 640)
@@ -67,7 +67,7 @@ JDfrm010m5 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+
 JDfrm010m3 {; Jim Deutch/modified by Lee Skinner.
             ; Eliminated assignment to "pixel". G. Martin 6/29/99
   countreset = (count < 320)
@@ -81,4 +81,4 @@ JDfrm010m3 {; Jim Deutch/modified by Lee Skinner.
   |z| < 4
   ;SOURCE: jd10.frm
 }
- 
+

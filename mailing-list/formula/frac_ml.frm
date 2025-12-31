@@ -168,7 +168,7 @@ _AC1 { ; generalized _AC0
 ; source KANAK.FRM
 }
 
-0018 { 
+0018 {
 	z = pixel:
 	z = sqr(pixel*z)+z^p1
 ; source KANAK.FRM
@@ -197,7 +197,7 @@ _AC1 { ; generalized _AC0
 }
 
 051597-002a   {; Linda Allison May 15, 1997
-; stars modified by David Shanholtzer 
+; stars modified by David Shanholtzer
  z=0;
  c=log(sqr(sqr(pixel))*pixel)*0.4:
  z2=fn1(z)+c
@@ -702,7 +702,7 @@ _AC1 { ; generalized _AC0
 }
 
 39man (XAXIS) {
-; Tentative Copyright Ben Leighton 
+; Tentative Copyright Ben Leighton
 ;(this is likely to have been done at some time somewhere)
 z=a=pixel:
 a=pixel+(flip(a)-z)
@@ -733,12 +733,12 @@ inside
 }
 
 3telescope {; (c) Jay Hill, 1998
-            ; use outside=summ periodicity=0 
+            ; use outside=summ periodicity=0
   done = 1, z = 0, zc = 0, c = pixel
   s=|c|, t1=(256*s - 96)*s + 32*Real(c)              ; period 1 test
   t2=16*s + 32*Real(c) + 16                          ; period 2 test
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| ; period 3 tests
-  z=z + 249*(t1<=3) + 250*(t2<=1)\ 
+  z=z + 249*(t1<=3) + 250*(t2<=1)\
        + 251*(t3<=1) + 252*(t4<=1)      ; set colors
   IF (z>0)                              ; for periods 1, 2, and 3.
     done=-1         ; color is set for c in a component, skip iterations
@@ -1284,13 +1284,13 @@ endif
 inside
 }
 
-a0 {; (c) by Miguel Fliguer 
+a0 {; (c) by Miguel Fliguer
 z=c=pixel:
 z=fn1(z/fn2(z/fn3(z/fn4(z))))+c
 |z|<4
 }
 
-a1 {; (c) by Miguel Fliguer 
+a1 {; (c) by Miguel Fliguer
 z=c=pixel:
 z=fn1(p1*z/fn2(p2+z/fn3(p3-z/fn1(z))))+c
 |z|<4
@@ -1833,7 +1833,7 @@ August {; Sylvie Gallet, Dec 1997
         ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0, sq2 = sqrt(2)
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-sq2) 
+  mz = abs(cabs(z1)-sq2)
   :
   IF (mz > 0.1)
     z2 = z1*z1
@@ -1937,12 +1937,12 @@ ave8rootcount_j { ; Kerry Mitchell 12feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -1951,14 +1951,14 @@ ave8rootcount_j { ; Kerry Mitchell 12feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2008,12 +2008,12 @@ ave8rootcount_m { ; Kerry Mitchell 12feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2022,14 +2022,14 @@ ave8rootcount_m { ; Kerry Mitchell 12feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2082,12 +2082,12 @@ ave8template  { ; Kerry Mitchell 13feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2096,16 +2096,16 @@ ave8template  { ; Kerry Mitchell 13feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
- 
+
 }
 
 ave8triangcount_j {
@@ -2156,12 +2156,12 @@ ave8triangcount_j {
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2170,14 +2170,14 @@ ave8triangcount_j {
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2228,12 +2228,12 @@ ave8triangcount_m {
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2242,14 +2242,14 @@ ave8triangcount_m {
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2303,12 +2303,12 @@ ave8xlty_jul { ; Kerry Mitchell 13feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2317,14 +2317,14 @@ ave8xlty_jul { ; Kerry Mitchell 13feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2377,12 +2377,12 @@ ave8xlty_man { ; Kerry Mitchell 13feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2391,14 +2391,14 @@ ave8xlty_man { ; Kerry Mitchell 13feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2451,12 +2451,12 @@ ave8z1gtz2_jul { ; Kerry Mitchell 13feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2465,14 +2465,14 @@ ave8z1gtz2_jul { ; Kerry Mitchell 13feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2524,12 +2524,12 @@ ave8z1gtz2_man { ; Kerry Mitchell 13feb98
           if (iter8==0)
             iter8=iter, q8=count/iter
           endif
- 
+
         iter=-1
         q=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         angle=q*outspeed
         z=cos(angle)+flip(sin(angle))
- 
+
         endif
         endif
         endif
@@ -2538,14 +2538,14 @@ ave8z1gtz2_man { ; Kerry Mitchell 13feb98
         endif
         endif
         endif
- 
+
         if (iter==maxit)
           q=count/iter
           angle=q*inspeed
           z=cos(angle)+flip(sin(angle))
           iter=-1
           endif
- 
+
         iter>0
         }
 
@@ -2597,10 +2597,10 @@ avetriang_man {
                         if (iter8==0)
                           iter8=iter, q8=tot/iter
                         endif
- 
+
         qave=(q1+q2+q3+q4+q5+q6+q7+q8)*0.125
         z=exp(qave*k)
- 
+
                       endif
                     endif
                   endif
@@ -2609,7 +2609,7 @@ avetriang_man {
             endif
           endif
         endif
- 
+
         r2zc <= b8
         }
 
@@ -2855,11 +2855,11 @@ BirdOfPrey (XAXIS_NOPARM) { ; Optimized by Sylvie Gallet
     |z| <= 4
 }
 
-BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13" 
-  z = pixel 
+BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13"
+  z = pixel
   x = fn1(z) , y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(x/fn3(y))
   |z| <= 4
 }
@@ -2868,9 +2868,9 @@ BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
    ;Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
 }
 
@@ -2897,7 +2897,7 @@ bailout = real(p2):
 brbl {; Formula uses PHC to cast "soft" shadow
       ; October 1996 by Jan Maarten van der Valk
       ; 'periodicity=0' and 'passes=1' recommended
-      ; Tanks to Sylvie Gallet, Paul Carlson, Jan M. v.d. Valk 
+      ; Tanks to Sylvie Gallet, Paul Carlson, Jan M. v.d. Valk
       ; (c) guy.marson@mnhn.lu
       ; Added variable "newpixel". G. Martin 6/27/99
   x=real(scrnpix)/real(scrnmax), y=(imag(scrnmax)-imag(scrnpix))/(rea\
@@ -3111,7 +3111,7 @@ bubbleboth_jul { ; Kerry Mitchell
           endif
         iter > 0
         }
-        
+
 bubbleboth_man { ; Kerry Mitchell
         ;
         ; color Mandelbrot set with small bubbles
@@ -3307,7 +3307,7 @@ w=fn3(1/fn2(q*q))
 BUG05 (XYAXIS) {
   z = 0:
   z = sin(z) + cos(pixel) + c + p1
-  z = z ^ fn1(z) + z  
+  z = z ^ fn1(z) + z
 }
 
 C02-13 {; V.1.1 - earlier versions may be discarded
@@ -3636,13 +3636,13 @@ C10-15 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
 }
 
-c7manderiv  { 
+c7manderiv  {
 ;Copyright Ben Leighton 1998
 ;try sin(fn1) and cos (fn2)
 q=pixel, a=1, b=flip(1), last = 0:
 a=a+ fn1(imag(pixel)*10*(1/imag(q)))
 b=b+ fn2(real(pixel)*10*(1/real(q)))
-q=(q-a-b)^2 + pixel  
+q=(q-a-b)^2 + pixel
 (a+b) <= 300
 }
 
@@ -4029,7 +4029,7 @@ Carr2904 {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2907 (XYAXIS) {; Halley PHC
                    ; passes=1 needs to be used with this PHC formula.
   b5=1/pixel
-  z=b5*(whitesq+b5*(whitesq==0)): 
+  z=b5*(whitesq+b5*(whitesq==0)):
   z5=z*z*z*z*z
   z6=z5*z
   z7=z6*z
@@ -4037,7 +4037,7 @@ Carr2907 (XYAXIS) {; Halley PHC
   0.0001<=|z7-z|
 }
 
-Carr2926 {; Modified-inandout04 
+Carr2926 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -4239,8 +4239,8 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   tenthinvpixel = .1/newpixel
-  b6=conj(tenthinvpixel) 
-  b7=flip(.1*tenthinvpixel) 
+  b6=conj(tenthinvpixel)
+  b7=flip(.1*tenthinvpixel)
   b8=cabs(.02*tenthinvpixel+cabs(0.02*tenthinvpixel))
   b4=abs(newpixel^2)*conj(flip(newpixel^3))\
      -conj(tenthinvpixel-flip(0.1*tenthinvpixel))
@@ -4256,16 +4256,16 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
   :
   IF (iter == p1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)     
+    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)
   ELSEIF (iter == imagp1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.225*origz)   
+    c=(-0.7456,-0.13214)+conj(.225*origz)
   ELSEIF (iter == p2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.3375*origz)   
+    c=(-0.7456,-0.13214)+conj(.3375*origz)
   ELSEIF (iter == imagp2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.50625*origz)   
+    c=(-0.7456,-0.13214)+conj(.50625*origz)
   ENDIF
   z=z*z+c
   iter=iter+1
@@ -4797,7 +4797,7 @@ CGNewton3 {; Chris Green -- A variation on newton iteration.
 classic-shift_ (XAXIS){ ; Jay Hill, 1998
 continue = 1,
 z = 0,
-zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq 
+zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq
    :
 if (|zc| > 40)
     continue = 0
@@ -4812,10 +4812,10 @@ classic_shift { ; Jay Hill, 1998
 ; p1 = shift of first midget
 ; p2 = scaling factor of first midget relative to second
 ; p3 = shift of second midget
-; use  outside=summ periodicity=0 passes=1float=y 
+; use  outside=summ periodicity=0 passes=1float=y
 continue = 1,
 z = 0,
-zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq 
+zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq
    :
 if (|zc| > 40)
     continue = 0
@@ -4830,7 +4830,7 @@ clips (XAXIS) {
   z = pixel, zp = (0,0):
   temp = z
   z = -(z^.5) - zp
-  zp = temp, |zp| <= 4 
+  zp = temp, |zp| <= 4
 }
 
 CmplxNewtghost { ; Ron Barnett, 1998
@@ -4908,7 +4908,7 @@ conic {; Kerry Mitchell 12may98
   z=cos(t)+flip(sin(t))
   iter>0
 ;******************************************************************
-;    Kerry Mitchell's explanation of his conic formulas 
+;    Kerry Mitchell's explanation of his conic formulas
 ;               (c) Kerry Mitchell, 1998
 ;
 ; Conic Sections
@@ -4926,7 +4926,7 @@ conic {; Kerry Mitchell 12may98
 ; where the parameters A through F determine the shape of the section, and x
 ; and y are the 2 spatial coordinates.  For example, the line y=x can be
 ; represented as
-; 
+;
 ; x - y = 0, or
 ; A = 0, B = 1, C = 0, D = -1, E = 0, F = 0.
 ;
@@ -5016,7 +5016,7 @@ conic {; Kerry Mitchell 12may98
 ;
 ; hyperbola centered at (h,k), semimajor axis alpha, semiminor axis beta,
 ; opening up/down:  (y-k)^2/beta^2 - (x-h)^2/alpha^2 = 1
-; 
+;
 ; coordinate rotation, from (u,v) to (x,y), through an angle theta:
 ; u = x*cos(theta) + y*sin(theta)
 ; v = -x*sin(theta) + y*cos(theta)
@@ -5615,14 +5615,14 @@ Colorit-3f {; (c) Jay Hill, 1998
   iter = iter+1          ; gotta count the iterations
   dz=3*sqr(zc)*dz+1      ; derivative, dz/dc, a slope for shading
   zc=zc*sqr(zc) + c      ; standard MSet cubic iteration  z=z^3+c
-  IF (|zc| >= 1024)      ; Bailout 
+  IF (|zc| >= 1024)      ; Bailout
     z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
     done=-1              ; Set flag to force an exit.
   ENDIF
   done >= 0              ; Continue if the flag >=0.
 }
 
-ComplexNewton_11 {; Jon Horner 
+ComplexNewton_11 {; Jon Horner
                   ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5,  pm2=p1-1, z = pixel :
   oldz = z,
@@ -5824,8 +5824,8 @@ z <= 16
 
 Crentura_2 (XAXIS) {
   z = c = pixel - 0.5:
-  z = (1/sqr(z)) * z + pixel 
-  z = fn1(z) * c 
+  z = (1/sqr(z)) * z + pixel
+  z = fn1(z) * c
   |z| < 4
 }
 
@@ -5918,7 +5918,7 @@ ENDIF
 IF(t==0)
   t = 0.001
 ENDIF
-z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0, 
+z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0,
 m = maxit-1, done = 0:
 IF(z1done==0)
   z1 = (sqr(z1)-ta2)*z1+b
@@ -5981,7 +5981,7 @@ ENDIF
 IF(t==0)
   t = 0.001
 ENDIF
-z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0, 
+z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0,
 m = maxit-1, done = 0:
 IF(z1done==0)
   z1 = (sqr(z1)-ta2)*z1+b
@@ -6408,7 +6408,7 @@ DD01 {; revised by G. Martin to put into fractint formula syntax
   R1R=8^abs(Q1R)
   IF (Q1R>0)
     S1R= 1
-  ELSE 
+  ELSE
     S1R = -1
   ENDIF
   Z=pixel:
@@ -6428,7 +6428,7 @@ DD02 {; revised by G. Martin to put into fractint formula syntax
   R1R=8^abs(Q1R)
   IF (Q1R>0)
     S1R= 1
-  ELSE 
+  ELSE
     S1R = -1
   ENDIF
   Z=pixel:
@@ -6469,7 +6469,7 @@ decomposable-M {
   continue = 1,     ; Set flag for continuation.
   z = 0,
   c = pixel,   ; set up the pixel to color
-  iter = 0     ; keep our own count 
+  iter = 0     ; keep our own count
   :                 ; initialization.
   if (|z| > 4)      ; Bailout at 4
     continue = 0    ; Set flag to force an exit.
@@ -6561,7 +6561,7 @@ dmj-Jul-Triangle2(XAXIS) { ; outside = real: triangle inequality average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = p2:		; Mandelbrot initialization.
 	az2 = |z|			; Save absolute value of first term.
 	z = sqr(z) + c			; Mandelbrot calculation.
@@ -6569,7 +6569,7 @@ dmj-Jul-Triangle2(XAXIS) { ; outside = real: triangle inequality average
 	lowbound = abs(az2 - ac)	; Calculate lower bound for sum.
 	sum = sum + (cabs(z) - lowbound) / (az2+ac - lowbound)
 					; Ratio between bounds.
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (az2 > imag(p3))		; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -6584,7 +6584,7 @@ dmj-Jul-Triangle2(XAXIS) { ; outside = real: triangle inequality average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -6604,7 +6604,7 @@ dmj-Jul-Triangl2-I(XAXIS) { ; outside = real: triangle inequality average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = p2:		; Mandelbrot initialization.
 	az2 = |z|			; Save absolute value of first term.
 	z = sqr(z) + c			; Mandelbrot calculation.
@@ -6612,7 +6612,7 @@ dmj-Jul-Triangl2-I(XAXIS) { ; outside = real: triangle inequality average
 	lowbound = abs(az2 - ac)	; Calculate lower bound for sum.
 	sum = sum + (cabs(z) - lowbound) / (az2+ac - lowbound)
 					; Ratio between bounds.
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (az2 > imag(p3) || done > maxit-2)	; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -6627,7 +6627,7 @@ dmj-Jul-Triangl2-I(XAXIS) { ; outside = real: triangle inequality average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -6653,7 +6653,7 @@ dmj-Jul2-TC001 {
   e1 = 0			; distance estimates
   e2 = 0
   e3 = 0
-  
+
   t = 1
   z = 0
   z1 = pixel					; pixel
@@ -6663,7 +6663,7 @@ dmj-Jul2-TC001 {
   done2 = 0
   done3 = 0
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -6707,18 +6707,18 @@ dmj-Jul2-TC001 {
   ELSE
     done3 = 1			; done with this one
   ENDIF
-  
+
 ; bailout test:
   IF (done1+done2+done3 == 3 || i == maxit-2)	; all three points are done
     done = 1
-    
+
     ; point has bailed out, compute color
 
     ; final distances
     e1 = sqrt(2*log(cabs(z1)) * cabs(z1) / cabs(e1))
     e2 = sqrt(2*log(cabs(z2)) * cabs(z2) / cabs(e2))
     e3 = sqrt(2*log(cabs(z3)) * cabs(z3) / cabs(e3))
-    
+
     ; transfer functions
     e1 = sqrt(e1*4)
     e2 = sqrt(e2*4)
@@ -6726,7 +6726,7 @@ dmj-Jul2-TC001 {
     e1 = e1 - trunc(e1)
     e2 = e2 - trunc(e2)
     e3 = e3 - trunc(e3)
-    
+
     ; gradients
     IF (e1 < 0.0225)		; first part of gradient
       e1 = (e1+0.1975)/0.22
@@ -6784,7 +6784,7 @@ dmj-Jul2-TC001 {
     r = abs(r-r1)		; Difference merge mode
     g = abs(g-g1)
     b = abs(b-b1)
-    
+
     IF (e3 < 0.0225)		; first part of gradient
       e3 = (e3+0.1975)/0.22
       r1 = 31 + (81-31)*e3
@@ -6814,12 +6814,12 @@ dmj-Jul2-TC001 {
     r = abs(r-r1)		; Difference merge mode
     g = abs(g-g1)
     b = abs(b-b1)
-    
+
   ENDIF
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -6912,12 +6912,12 @@ dmj-Jul2-TC001 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 7
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -7013,7 +7013,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -7029,7 +7029,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -7143,7 +7143,7 @@ dmj-Mand-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 }
 
 dmj-Mand-Hyp-2Dec { ; outside = decomp: 2nd-closest z[n] to hyp. at p1
- 
+
         IF (imag(p2) == 0)                ; Invalid value for aspect ratio.
           p2 = (0,1) + real(p2)        ; Substitute a default value.
         ENDIF
@@ -7158,10 +7158,10 @@ dmj-Mand-Hyp-2Dec { ; outside = decomp: 2nd-closest z[n] to hyp. at p1
         point = 0                        ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)        ; Compute rotation vector.
- 
+
         z = 0, c = pixel:                ; Mandelbrot initialization.
         z = sqr(z) + c                        ; Mandelbrot calculation.
- 
+
         done = done + 1                        ; Done one more iteration.
         z2 = (z-p1) * r                        ; Offset to p1 and rotate.
         d = abs(imag(z2) * real(z2))        ; Compute hyperbolic distance.
@@ -7178,7 +7178,7 @@ dmj-Mand-Hyp-2Dec { ; outside = decomp: 2nd-closest z[n] to hyp. at p1
           z = point2 - point                ; Return difference between points.
           done = -1                        ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                        ; Continue if the flag is clear.
 }
 
@@ -7195,7 +7195,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -7210,7 +7210,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -7227,7 +7227,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -7242,7 +7242,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -7261,7 +7261,7 @@ dmj-Mand-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -7282,7 +7282,7 @@ dmj-Mand-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	  z = z - done			; Return value.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -7299,7 +7299,7 @@ dmj-Mand-Smooth(XAXIS) {; outside = real: smooth iteration coloring
         done = 2                        ; Iteration counter.
         il2 = 1/log(2.0)                ; Inverse log 2 (precalc).
         lp = log(log(imag(p3)))         ; log(log bailout) (precalc).
-        
+
         z = 0, c = pixel:               ; Mandelbrot initialization.
         z = sqr(z) + c                  ; Mandelbrot calculation.
 
@@ -7310,7 +7310,7 @@ dmj-Mand-Smooth(XAXIS) {; outside = real: smooth iteration coloring
           z = z - done - 5              ; Pass value back to FractInt.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
 }
 
@@ -7360,9 +7360,9 @@ dmj-Mand-TC001 {
   tt1 = 1 / real(p1)		; reciprocals of trap thresholds
   tt2 = 1 / imag(p1)
   tt3 = 1 / real(p2)
-  
+
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -7371,7 +7371,7 @@ dmj-Mand-TC001 {
   d1 = abs(real((t1-z)*r1))
   d2 = abs(real((t2-z)*r2))
   d3 = abs(real((t3-z)*r3))
-  
+
   IF (d1 < real(p1))
     r = r + (t1r-r)*sqr(d1*tt1)
     g = g + (t1g-g)*sqr(d1*tt1)
@@ -7395,7 +7395,7 @@ dmj-Mand-TC001 {
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -7488,12 +7488,12 @@ dmj-Mand-TC001 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 6
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -7544,9 +7544,9 @@ dmj-Mand-TC002 {
   tt1 = 1 / real(p1)		; reciprocals of trap thresholds
   tt2 = 1 / imag(p1)
   tt3 = 1 / real(p2)
-  
+
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -7555,7 +7555,7 @@ dmj-Mand-TC002 {
   d1 = |t1-z|
   d2 = |t2-z|
   d3 = |t3-z|
-  
+
   IF (d1 < real(p1))
     r = r + (t1r-r)*(1-sqrt(d1*tt1))
     g = g + (t1g-g)*(1-sqrt(d1*tt1))
@@ -7579,7 +7579,7 @@ dmj-Mand-TC002 {
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -7672,12 +7672,12 @@ dmj-Mand-TC002 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 6
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -7722,9 +7722,9 @@ dmj-Mand-TC003 {
   r1 = (0,1)^(real(p2)/90)	; trap rotations
   a1 = imag(p2)			; aspect ratio
   tt1 = 1 / real(p1)		; reciprocals of trap thresholds
-  
+
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -7733,7 +7733,7 @@ dmj-Mand-TC003 {
   z1 = (z-t1) * r1
   z1 = real(z1) + flip(imag(z1)*a1)
   d1 = abs(cabs(z1)-imag(p1))
-  
+
   IF (d1 < real(p1))
     d1 = 1 - (d1*tt1)
     h = (atan(imag(z1)/real(z1)) + pi/2) * 127.5/pi
@@ -7742,7 +7742,7 @@ dmj-Mand-TC003 {
     ENDIF
     s = 255
     l = 255 * sqr(d1)
-    
+
     ; HSL -> RGB conversion code
     IF (s == 0)			; zero saturation (grey shade)
       t1r = l, t1g = l, t1b = l	; take the easy way out
@@ -7795,7 +7795,7 @@ dmj-Mand-TC003 {
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -7888,12 +7888,12 @@ dmj-Mand-TC003 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 6
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -7914,7 +7914,7 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	az2 = |z|			; Save absolute value of first term.
 	z = sqr(z) + c			; Mandelbrot calculation.
@@ -7922,7 +7922,7 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	lowbound = abs(az2 - ac)	; Calculate lower bound for sum.
 	sum = sum + (cabs(z) - lowbound) / (az2+ac - lowbound)
 					; Ratio between bounds.
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (az2 > imag(p3))		; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -7937,11 +7937,11 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
-dmj-Magnet-Cir-Ang { 
+dmj-Magnet-Cir-Ang {
      ; modified by jon camp
      ; outside = decomp: angle of
      ; closest z[n] to ring at p1
@@ -7995,7 +7995,7 @@ dmj-Nova-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -8016,7 +8016,7 @@ dmj-Nova-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	  z = z - done			; Return value.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -8035,7 +8035,7 @@ dmj-Nova-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
         closest = 1e+38                 ; Closest approach so far.
         point = 0                       ; Point of that closest approach.
         done = 2                        ; Iteration counter.
-        
+
         z = 1, c = pixel:               ; NovaM initialization.
         zsquared = sqr(z)
         zcubed = zsquared * z
@@ -8056,7 +8056,7 @@ dmj-Nova-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
           z = point                     ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
 }
 
@@ -8144,7 +8144,7 @@ bailout == 0  && |w| < 4
 
 e-viva-c   { ; lake-transformation = Sylvie Gallet, Jan 16, 2000
 ; requires: float=on, Fractint 20.0.6, periodicity=0' and 'passes=1'
-; real part of p1: diameter of text bailout 
+; real part of p1: diameter of text bailout
 ; imag part of p1: position of text bailout (x and y)
 ; real part of p2: merging of text (position)
 ; imag part of p2: merging of text (position)
@@ -8154,9 +8154,9 @@ e-viva-c   { ; lake-transformation = Sylvie Gallet, Jan 16, 2000
 ;                  any value between 0 and 100: water level in % of
 ;                  the screen height (0 = bottom, 100 = top)
 ; Try fn1=recip, fn2=ident: If (A=B*C) then text=invisible, else=visible!
-; imag part of p4: A (position of text & picture bailout) 
-; real part of p5: B (position of text bailout) 
-; imag part of p5: C (position of picture bailout) 
+; imag part of p4: A (position of text & picture bailout)
+; real part of p5: B (position of text bailout)
+; imag part of p5: C (position of picture bailout)
 ; to position text into the picture, try e.g.: A=0.18, B=0.18005, C=1
 ; finaly set B to the best value found by 'try and error'
 pp_p3 = (0.2,300) ;  0.2=amplitude  and  300=frequency of the lake
@@ -8180,7 +8180,7 @@ if (real(p4) > 0 && real(p4) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
  pixel = z + z3rd
@@ -8698,7 +8698,7 @@ F'Liar1C {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel):
   z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) );
-  fn2(abs(z))<p1 
+  fn2(abs(z))<p1
 }
 
 F'Liar4C {; Generalization by Jon Horner of Chuck Ebbert formula.
@@ -8709,7 +8709,7 @@ F'Liar4C {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel), p = p1 + 1, pp = p2 + 1:
   z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z))),
-  |imag(z)| <= pp || |real(z)| <= pp 
+  |imag(z)| <= pp || |real(z)| <= pp
 }
 
 fastmand { ; Copyright (c) Paul W. Carlson, 1997
@@ -9239,7 +9239,7 @@ ENDIF
 
 FGZ-J   { ; Jay Hill
    ; p1 is the Julia set parameter
-   z = pixel, c = p1: 
+   z = pixel, c = p1:
    z = z * z + c;
    z = (3 * z * z) / (z + 3) + c,
    |z| <= 36
@@ -9289,28 +9289,28 @@ FGZ-Julia-5   {
          z = (3 * z * z) / (z + 3) + (-1.1266, 0.2666),
       |z| <= 4
    }
- 
+
 FGZ-Julia-6   {
       z = c = pixel:
          z = z * z + (-0.97, 0.2709);
          z = (3 * z * z) / (z + 3) + (-0.97, 0.2709),
       |z| <= 4
    }
- 
+
 FGZ-Julia-7   {
       z = c = pixel:
          z = z * z + (-0.6908, 0.1185);
          z = (3 * z * z) / (z + 3) + (-0.6908, 0.1185),
       |z| <= 4
    }
- 
+
 FGZ-Julia-8   {
       z = c = pixel:
          z = z * z + (-0.5892, 0.0549);
          z = (3 * z * z) / (z + 3) + (-0.5892, 0.0549),
       |z| <= 4
    }
- 
+
 FGZ-Julia-9   {
       z = c = pixel:
          z = z * z + (-0.4919, 0.4572);
@@ -9319,7 +9319,7 @@ FGZ-Julia-9   {
    }
 
 FGZ-M    { ; Jay Hill
-   c = pixel, 
+   c = pixel,
    z=-sqrt(-c): ; approximate critical point
    z = z * z + c;
    z = (3 * z * z) / (z + 3) + c,
@@ -9327,7 +9327,7 @@ FGZ-M    { ; Jay Hill
   }
 
 FGZ-Mand  { ; (c) Jay Hill, 1998
-  IF( |p3| == 0) 
+  IF( |p3| == 0)
     p3 = 16
   ENDIF
   c=pixel, z=sqrt(-c), bailout = real(p3):
@@ -9890,14 +9890,14 @@ FlexBalls_R4 {; Copyright (c) Paul W. Carlson, 1998
     bailout == 0 && |w| < 1000
 }
 
-FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                 ; by George Martin 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=sin(z)/cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
 }
 
 Formulization { ; Copyright (c) Paul W. Carlson, 1998
@@ -10353,7 +10353,7 @@ z=p1*sin(z)+p2*sin(2*z)+c
 FourierM{; First three terms of a Fourier series
 	  ; p1 and p2: coefficients of the sine waves
 	  ; bailout fixed at 8
-z=0 
+z=0
 c=pixel:
 z=p1*sin(z)+p2*sin(2*z)+c
 |z|<=8
@@ -10476,7 +10476,7 @@ gallet-2-09 {; Sylvie Gallet [101324,3444], 1995
 gallet-2-11 {; Sylvie Gallet [101324,3444], 1995
   z = pixel , a = p1-1 , b = p1-2 , ap1 = a*p1 :
   zb = z^b , za = z*zb , zp1 = z*za , n1 = zp1-z , n2 = p1*za-1
-  z1 = n1/(n2 - ap1*zb*fn1(z)*n1/(2*n2)) 
+  z1 = n1/(n2 - ap1*zb*fn1(z)*n1/(2*n2))
   z = z-z1
   |z1| >= 0.000001
 }
@@ -10586,7 +10586,7 @@ b = fn1(b) + flip(fn2(b))
 z = (a + b) / 2
 |a| <= bailout || |b| <= bailout
 }
- 
+
 Gallet-5-01 { ; Sylvie Gallet [101324,3444], 1996
   sq3 = sqrt(3) , sq32 = 0.5*sq3 , l = real(p1) ,
   h = l*sq32 , l3 = 3*l
@@ -11467,7 +11467,7 @@ general_jul-c&l {
         iter>0
         }
 
-general_man-2circ { ; Kerry Mitchell 26aug98 
+general_man-2circ { ; Kerry Mitchell 26aug98
 	;
 	; "2 general circles" coloring method for Mandelbrot
 	; c = pixel = Mandelbrot parameter
@@ -11723,7 +11723,7 @@ ghost_jul { ; Kerry Mitchell
           endif
         iter>0
         }
- 
+
 ghost_man { ; Kerry Mitchell
         ;
         ; colors Mandelbrot set by combining the smoothed iteration
@@ -11882,7 +11882,7 @@ gravibrot{ ; generalized r^(-2) by Mark "Bud" Christenson 3/13/98
 ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
    z = p2
    c = pixel:
- 
+
    w = fn1(z)
    z = fn3(p1/fn2(w*w)) + c
     |z| < p3
@@ -11891,7 +11891,7 @@ gravibrot{ ; generalized r^(-2) by Mark "Bud" Christenson 3/13/98
 gravijul { ; r^(-2) Mark Christenson 1/25/98
 ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
    z = pixel:
- 
+
    w = fn1(z)
    z = fn3(p1/fn2(w*w)) + p2
     |z| < p3
@@ -11916,7 +11916,7 @@ gravijul-a' { ; generalized r^(-2) by Mark "Bud" Christenson 3/6/98
   q3 = real(p3) ; new knob 2
   q5 = imag(p3) ; bailout
    z = pixel:
- 
+
    v = fn1(z)
    w = q1*(v*v)
    z = q3*fn3(q2/fn2(w)) + q4
@@ -11936,7 +11936,7 @@ gravijul-a1 { ; generalized r^(-2) by Mark "Bud" Christenson 3/6/98
    z = q3*fn3(q2/fn2(w)) + q4
     |z| < q5
   }
- 
+
 gravijul-a2 { ; generalized r^(-2) by Mark "Bud" Christenson 3/6/98
               ; favors p2
               ; defaults: p1 = (1,0) p2 = (0,0) p3 = (0,4)
@@ -11952,7 +11952,7 @@ gravijul-a2 { ; generalized r^(-2) by Mark "Bud" Christenson 3/6/98
     |z| < q5
   }
 
-gravijul-v1 { ; Variation on Mark Christenson's gravijul 
+gravijul-v1 { ; Variation on Mark Christenson's gravijul
               ; by Sylvie Gallet
    z = pixel^imag(p3) :
    w = fn1(z)
@@ -12199,7 +12199,7 @@ gravity-dt2=pix { ; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; set p1 to about 1 in magnitude, e.g, (1.0,0.1)
-        ; 
+        ;
         z1=1, z=p1, dt2=pixel, bailout=1000:
         z0=z1, z1=z, f=1/z-1/sqr(z)
         z=2*z1-z0+f*dt2, |z| < bailout
@@ -12210,7 +12210,7 @@ gravity-z=pix { ; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; p1 = "time step", small in magnitude (about .1 or less)
-        ; 
+        ;
         z1=1, dt2=p1, z=pixel, bailout=1000:
         z0=z1, z1=z, f=1/z-1/sqr(z)
         z=2*z1-z0+f*dt2, |z| < bailout
@@ -17106,7 +17106,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 heart_jul { ; Kerry Mitchell
         ;
@@ -17321,7 +17321,7 @@ herman_jul-cart { ; Kerry Mitchell 15feb98
           endif
         iter>0
         }
- 
+
 herman_jul-polar {; Kerry Mitchell 15feb98
         ; p1 = Julia parameter
         ; real(p2) = z exponent (use integer >= 2; m=n-1)
@@ -17931,24 +17931,24 @@ HRing_Ma { ; Mandelbrot set slice, alpha varies, c fixed.
 }
 
 ht1 {
-   ; Ah! You can use a variable in the 
+   ; Ah! You can use a variable in the
    ; inversion but now check for overflow.
-   ; Good results are found when the real part 
+   ; Good results are found when the real part
    ; of p1 is in the range 0.1->1.0
    ; With some sort of special value aprox. 0.148148...
    ; Setting the imaginary part as well causes very strange fractals
   z = pixel, zp=temp=(0,0), huge=1.0e32:
   temp = z
   z = z*z + zp
-  zp = p1/temp 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
 }
 
 htz0 {; From Noel Giffin noel@triumf.ca
       ; some unusual julia intializations
   z = pixel^3:
   z = z*z + p1
-  (|z| <= 4.) 
+  (|z| <= 4.)
 }
 
 hualp (XAXIS) {; (c) Copyright 1996 by Manfred W.Rupp
@@ -18069,7 +18069,7 @@ Ibubs_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
     z = z - iter
     bailout == 0  && |w| < max_w
 }
- 
+
 Ikeda{
 ;Standard:c1=.4,c2=.9,c3=6;rho=1
 c1=real(p1)
@@ -18089,11 +18089,11 @@ z=nx+flip(ny)
 |z|<bailout
 }
 
-ilvp+fn123 { 
+ilvp+fn123 {
   Ground = pixel+fn1(fn2(fn3(p2*pixel)))+fn1(fn3(fn2(p2*pixel)))
   z=Ground:
   z=sqr(z)+Ground
-  |z|<=4 
+  |z|<=4
 }
 
 inandout01 {; Bradley Beacham  [74223,2745]
@@ -18378,7 +18378,7 @@ IslandOfChaos (XAXIS_NOPARM) {
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)/cosxx(z)+pixel
-  x=x+1 
+  x=x+1
   |z|<=4
 }
 
@@ -18408,8 +18408,8 @@ z = sqr(z) + c         ; Mandelbrot calculation.
 IF (|z| >= 100)        ; Point exceeds bailout.
   done = -1            ; Set flag to force an exit.
   y=.5*imag(log(z))/pi
-  IF (y<0) 
-    y=y+1 
+  IF (y<0)
+    y=y+1
   ENDIF
   w=3*y
   z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -18428,8 +18428,8 @@ z = sqr(z) + c         ; Mandelbrot calculation.
 IF (|z| >= 100)        ; Point exceeds bailout.
   done = -1            ; Set flag to force an exit.
   y=.5*imag(log(z))/pi
-IF (y<0) 
-y=y+1 
+IF (y<0)
+y=y+1
 ENDIF
   w=7*y
   z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -18437,7 +18437,7 @@ ENDIF
 iter = iter + 1        ; Sylvie Gallet's suggestion
 done >= 0              ; Continue if the flag >=0.
 }
- 
+
 J-decomp15 { ; 15-ary decomp (c) Jay Hill 1997
 done = 1               ; Iteration flag.
 iter = 0               ; Sylvie Gallet's suggestion
@@ -18449,8 +18449,8 @@ z = sqr(z) + c         ; Mandelbrot calculation.
 IF (|z| >= 100)        ; Point exceeds bailout.
   done = -1            ; Set flag to force an exit.
   y=.5*imag(log(z))/pi
-IF (y<0) 
-y=y+1 
+IF (y<0)
+y=y+1
 ENDIF
   w=15*y
   z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -18458,7 +18458,7 @@ ENDIF
 iter = iter + 1        ; Sylvie Gallet's suggestion
 done >= 0              ; Continue if the flag >=0.
 }
- 
+
 J-decomp31 { ; 31-ary decomp (c) Jay Hill 1997
 done = 1               ; Iteration flag.
 iter = 0               ; Sylvie Gallet's suggestion
@@ -18471,8 +18471,8 @@ z = sqr(z) + c         ; Mandelbrot calculation.
 IF (|z| >= 10000)      ; Point exceeds bailout.
   done = -1            ; Set flag to force an exit.
   y=.5*imag(log(z))/pi
-IF (y<0) 
-y=y+1 
+IF (y<0)
+y=y+1
 ENDIF
   w=31*y
   z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -18480,7 +18480,7 @@ ENDIF
 iter = iter + 1        ; Sylvie Gallet's suggestion
 done >= 0              ; Continue if the flag >=0.
 }
- 
+
 J-decomp63 { ; 63-ary decomp (c) Jay Hill 1997
 done = 1               ; Iteration flag.
 iter = 0               ; Sylvie Gallet's suggestion
@@ -18494,8 +18494,8 @@ z = sqr(z) + c         ; Mandelbrot calculation.
 IF (|z| >= 10000)      ; Point exceeds bailout.
   done = -1            ; Set flag to force an exit.
   y=.5*imag(log(z))/pi
-IF (y<0) 
-y=y+1 
+IF (y<0)
+y=y+1
 ENDIF
   w=63*y
   z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -19291,7 +19291,7 @@ kpassion_balls {; variant of Paul W. Carlson and Kerry Mitchell
     ; These values will usually be in the range 0.001 to 0.1
     ;****************************************************
   ball_size = real(p1)
-  index_factor = (colors_in_range - 1) / ball_size 
+  index_factor = (colors_in_range - 1) / ball_size
   :
     ;****************************************************
     ; The equation being iterated.  Almost any equation
@@ -19711,7 +19711,7 @@ La08-01 {; V.1.1.1 - earlier versions may be discarded
 
 lakerise   { ; lake-transformation = Sylvie Gallet, Jan 16, 2000
 ; requires: float=on, Fractint 20.0.6, periodicity=0' and 'passes=1'
-; real part of p1: diameter of text bailout 
+; real part of p1: diameter of text bailout
 ; imag part of p1: position of text bailout (x and y)
 ; real part of p2: merging of text (position)
 ; imag part of p2: merging of text (position)
@@ -19721,9 +19721,9 @@ lakerise   { ; lake-transformation = Sylvie Gallet, Jan 16, 2000
 ;                  any value between 0 and 100: water level in % of
 ;                  the screen height (0 = bottom, 100 = top)
 ; Try fn1=recip, fn2=ident: If (A=B*C) then text=invisible, else=visible!
-; imag part of p4: A (position of text & picture bailout) 
-; real part of p5: B (position of text bailout) 
-; imag part of p5: C (position of picture bailout) 
+; imag part of p4: A (position of text & picture bailout)
+; real part of p5: B (position of text bailout)
+; imag part of p5: C (position of picture bailout)
 ; to position text into the picture, try e.g.: A=0.18, B=0.18005, C=1
 ; finaly set B to the best value found by 'try and error'
 pp_p3 = (0.2,300) ;  0.2=amplitude  and  300=frequency of the lake
@@ -19747,7 +19747,7 @@ if (real(p4) > 0 && real(p4) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
  pixel = z + z3rd
@@ -19893,10 +19893,10 @@ Langolier {
 Langolier2 { ; Nature102
             ; suggested by generalized by Jay Hill
             ; try p1= -.013579, .2468
-  IF( |p1| == 0) 
+  IF( |p1| == 0)
     p1 = 1 ; default, don't want zero divide
   ENDIF
-  IF( |p2| == 0) 
+  IF( |p2| == 0)
     p2 = 16 ; default bailout
   ENDIF
   z = 0, c = pixel, bailout = real(p2):
@@ -19906,8 +19906,8 @@ Langolier2 { ; Nature102
 
 Langolier3 { ; Nature102
             ; preferred generalization by Jay Hill
-            ; try non-zero p1 
-  IF( |p2| == 0) 
+            ; try non-zero p1
+  IF( |p2| == 0)
     p2 = 16 ; default bailout
   ENDIF
   z = 0, c = pixel, bailout = real(p2):
@@ -19979,10 +19979,10 @@ LeeMandel2 (XYAXIS) {; Kevin Lee
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -20002,8 +20002,8 @@ Lesfrm34 {; Modified Sylvie Gallet formula
           ; Les St Clair 1997
      ; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel*pi, x = real(z), y = imag(z):
-  x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x))  
-  y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y)) 
+  x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x))
+  y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y))
   x = x1^pi, y = y1^pi
   z = (x + flip(y))^pi
   |z| <= 32
@@ -20048,7 +20048,7 @@ LL2-01  { ; overlay LL1-06 and LL1-09
 	  z = fn2(p1*fn1(z))
 	  PHC_bailout = |z| < b2
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-02  { ; overlay LL1-08 and LL1-11
 	z = pixel,c = fn2(z^p1),b1 = p2+3,b2 = p2+1:
@@ -20059,7 +20059,7 @@ LL2-02  { ; overlay LL1-08 and LL1-11
           z = p1*fn2(z*z*z*fn1(z)) + fn1(fn2(fn3(z)))
 	  PHC_bailout = z < b2
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-03  { ; overlay LL1-11 and LL1-06
 	z = pixel,c = (p1+1)*fn2(z*z*z),b1 = p2+3,b2 = p2+1:
@@ -20068,9 +20068,9 @@ LL2-03  { ; overlay LL1-11 and LL1-06
 	  PHC_bailout = z < b2
 	ELSE
 	  z = fn1(z)*z*z+c
-	  PHC_bailout = |z| < b1	
+	  PHC_bailout = |z| < b1
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-04  { ; overlay LL1-09 and LL1-08
 	z = pixel,c = fn2(z^p1),b1 = p2+3,b2 = p2+1:
@@ -20206,7 +20206,7 @@ LorentzM{; Mutated Mandelbrot set based on Lorentz contraction
 	  ;Size increases with |p1|
 	  ;p2=unused
 	  ;p3=bailout
-z=0 
+z=0
 c=pixel:
 z=sqrt(1-(z*z)/(p1*p1))+c
 |z|<=p3
@@ -20562,7 +20562,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd
@@ -20719,7 +20719,7 @@ MandelbrotMix4_v1 {; Jim Muth
 ; _v1 suffix added to differentiate this version
 ; from the current version (posted by JM 3-feb-99 onward)
 c=pixel, a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
-g=1/f, h=1/d, j=1/(f-b), 
+g=1/f, h=1/d, j=1/(f-b),
 z=(-a*b*g*h)^j:z=(a*(z^b))+(d*(z^f))+c,
 |z| <= 100
 }
@@ -20758,7 +20758,7 @@ h=1/d, j=1/(f-b), z=(-a*b*g*h)^j, k=real(p3)+1,
 l=imag(p3)+100, c=pixel*k:
 z=(a*(z^b))+(d*(z^f))+c,
 |z| <= l
-} 
+}
 
 MandelbrotPanorama { ; Jay Hill, 1998
               ; Panorama Mandelbrot set
@@ -20936,19 +20936,19 @@ ManInTheOzone (XAXIS_NOPARM) {
   z=sqr(z)+pixel
   z=cos(z)+pixel
   z=sin(z)+pixel
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
 }
 
 ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet withMandel(fn||fn)
-                            ; function=fn1/fn2            
+                            ; function=fn1/fn2
                             ; p1 = Julia seed
                             ; real(p2) = bailout value
                             ; imag part of p2: 0 = lake transform disabled
                             ;                  any value between 0 and 100: water level in % of
                             ;                  the screen height (0 = bottom, 100 = top)
                             ; real part of p3: amplitude of the wave (try 0.2)
-                            ; imag part of p3: frequency (try 300)                       
+                            ; imag part of p3: frequency (try 300)
 
 bailout = real(p2),  shift = 0.5
 
@@ -21001,7 +21001,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd
@@ -22680,7 +22680,7 @@ multirot-XZ-YW {; Jim Muth
   f=exp(flip(imag(p1*.01745329251994)))
   z=f*real(pixel)+p2, c=ee*imag(pixel)+p3:
   z=sqr(z)+c
-  |z| <= 36  
+  |z| <= 36
 }
 
 multirot05-XZ-YW {; Jim Muth
@@ -22698,8 +22698,8 @@ Mutant_demo { ; Oliver Klimek's TripleMutant formula
     w = z = bailout = iter = 0
     c = pixel
     pt1 = (2.5,2.5),  pt2 = (-2.5,2.5),  pt3 = (2.5,-2.5)
-    a1 = 1 / (|(pixel - pt1)|^2)    
-    a2 = 1 / (|(pixel - pt2)|^2)    
+    a1 = 1 / (|(pixel - pt1)|^2)
+    a2 = 1 / (|(pixel - pt2)|^2)
     a3 = 1 / (|(pixel - pt3)|^2)
     :
     ; find contribution of each function
@@ -22755,8 +22755,8 @@ Mutant_End { ; Oliver Klimek's TripleMutant formula
                  ; as modified by Paul Carlson, 1998
     w = z = bailout = iter = 0
     c = pixel
-    a1 = 1 / (|(pixel - p1)|^2)    
-    a2 = 1 / (|(pixel - p2)|^2)    
+    a1 = 1 / (|(pixel - p1)|^2)
+    a2 = 1 / (|(pixel - p2)|^2)
     a3 = 1 / (|(pixel - p3)|^2)
     :
     ; find contribution of each function
@@ -22810,8 +22810,8 @@ Mutant_Start { ; Oliver Klimek's TripleMutant formula
 		   ; as modified by Paul Carlson, 1998
     w = z = bailout = iter = 0
     c = pixel
-    a1 = 1 / (|(pixel - p1)|^2)    
-    a2 = 1 / (|(pixel - p2)|^2)    
+    a1 = 1 / (|(pixel - p1)|^2)
+    a2 = 1 / (|(pixel - p2)|^2)
     a3 = 1 / (|(pixel - p3)|^2)
     ;
     ; find contribution of each function
@@ -23000,7 +23000,7 @@ nearline-theta_jul { ; Kerry Mitchell
           endif
         iter>0
         }
- 
+
 nearline01_jul { ; Kerry Mitchell
         ;
         ; color Julia sets with nearest approach to a given line
@@ -23034,7 +23034,7 @@ nearline01_jul { ; Kerry Mitchell
           endif
         iter>0
         }
- 
+
 nearline02_jul { ; Kerry Mitchell
         ;
         ; color Julia sets with nearest approach to a given line
@@ -23068,7 +23068,7 @@ nearline02_jul { ; Kerry Mitchell
           endif
         iter>0
         }
- 
+
 nearline03_jul { ; Kerry Mitchell
         ;
         ; color Julia sets with nearest approach to a given line
@@ -23103,7 +23103,7 @@ nearline03_jul { ; Kerry Mitchell
           endif
         iter>0
         }
- 
+
 nearline-theta_man { ; Kerry Mitchell
         ;
         ; color Mandelbrot set with nearest approach to a given line
@@ -23478,7 +23478,7 @@ dis=|z|-|pixel|
 a=real(z)
 b=imag(z)
 IF ((|a| <= |b|+dis)&& (|a| > |b|-dis))
-z=(z-pixel)^p1 
+z=(z-pixel)^p1
 ELSE
 z=(z+pixel)^p2
 ENDIF
@@ -23585,8 +23585,8 @@ Newt_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     z = z - iter
     bailout == 0
 }
- 
- 
+
+
 Newt_Fnc_Julia {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = controls element size
@@ -23983,7 +23983,7 @@ Newt5_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
 Newt6-JAtan-Mset {; (c) Jay R. Hill, 1998
          ; Newton method set up as a Mandelbrot set
          ; This formula searches for 6 roots of a function
-         ; Inspired by Paul Carlson's Newt5_Atan_Mset 
+         ; Inspired by Paul Carlson's Newt5_Atan_Mset
   ; p1=precision of root finding, try =.001
   ; p2=A=scaling constant in formula, try =1
   ; F(w)   = w^6 - A*w^5 - w*c + A*c
@@ -24069,7 +24069,7 @@ Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
 Newt8-JAtan-Mset {; (c) Jay R. Hill, 1998
 ; Newton method set up as a Mandelbrot set
 ; This formula searches for 8 roots of a function
-; Inspired by Paul Carlson's Newt5_Atan_Mset 
+; Inspired by Paul Carlson's Newt5_Atan_Mset
 ; p1=width of root finding
 ; p2=A=constant in formula
 ; F(w) = w^8 - A*w^7 - w*c + A*c
@@ -24223,8 +24223,8 @@ newton_reel_1 (ORIGIN) {; Sylvie Gallet
   x2=x*x , y2=y*y , x3=x2*x , y3=y2*y  ; x -> x^3-y
   d=1+9*x2*y2                          ; y -> y^3+x
   x = (6*x3*y2 + 2*y3) / d             ; solution (0,0)
-  y = (6*x2*y3 - 2*x3) / d   
-  z = x+flip(y) 
+  y = (6*x2*y3 - 2*x3) / d
+  z = x+flip(y)
   |z|>=.01
 }
 
@@ -24461,7 +24461,7 @@ Nuclear_JulCol { ; p1, p2, p3 parameters. Use float=y, outside=real, logmap=0,
   ENDIF
   done==0
 }
- 
+
 Nuclear_JColLog { ; p1, p2, p3 parameters. Use float=y, outside=real, logmap=0,
                   ; periodicity=0. Colors from 4 ranges by finite attractors
                   ; and attracted to infinity. Uses a "logmap".
@@ -24563,7 +24563,7 @@ Nuclear_JColLog { ; p1, p2, p3 parameters. Use float=y, outside=real, logmap=0,
 }
 
 Nuclear_Jul { ; p1, p2, p3 parameters. Use float=y.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
   r3ac=r3*ac, ack=k*ac
   z=pixel:
   z2=sqr(z)
@@ -24575,7 +24575,7 @@ Nuclear_Jul { ; p1, p2, p3 parameters. Use float=y.
 Nuclear_JulCol { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                  ; periodicity=0. Colors from 4 ranges by finite attractors
                  ; and attracted to infinity.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.000001, bail=1000
@@ -24674,7 +24674,7 @@ r3ac=r3*ac, ack=k*ac
 Nuclear_JColLog { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                   ; periodicity=0. Colors from 4 ranges by finite attractors
                   ; and attracted to infinity. Uses a "logmap".
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.000001, bail=1000
@@ -24776,7 +24776,7 @@ Nuclear_JColLogB { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                    ; and attracted to infinity. Uses a "logmap".
                    ; Variation: qq shrunk.
                    ; Suitable for deeper zooms.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.00000001, bail=1000
@@ -24877,7 +24877,7 @@ Nuclear_JColLogC { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                    ; periodicity=0. Colors from 4 ranges by finite attractors
                    ; and attracted to infinity. Uses a "logmap".
                    ; Variation: Log reversed for high iterations.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0, fi=3000
   qq=0.000001, bail=1000
@@ -24987,7 +24987,7 @@ Nuclear_M_k_0 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
 
 Nuclear_M_k_0 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
                 ; critical point 0.
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
   r3ac=r3*ac, ack=k*ac
   z=0:
   z2=sqr(z)
@@ -24995,7 +24995,7 @@ Nuclear_M_k_0 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_k_1 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
                 ; critical point 1.
   a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25006,7 +25006,7 @@ Nuclear_M_k_1 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_k_-1 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
                 ; critical point -1.
   a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25017,7 +25017,7 @@ Nuclear_M_k_-1 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_c_0 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
                 ; critical point 0.
   a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25028,7 +25028,7 @@ Nuclear_M_c_0 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_c_1 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
                 ; critical point 1.
   a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25039,7 +25039,7 @@ Nuclear_M_c_1 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_c_-1 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
                 ; critical point -1.
   a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25050,7 +25050,7 @@ Nuclear_M_c_-1 { ; p1, p3 parameters. Use float=y. c is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_a_0 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
                 ; critical point 0.
   a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25061,7 +25061,7 @@ Nuclear_M_a_0 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_a_1 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
                 ; critical point 1.
   a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25072,7 +25072,7 @@ Nuclear_M_a_1 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
+
 Nuclear_M_a_-1 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
                 ; critical point -1.
   a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2
@@ -25083,20 +25083,20 @@ Nuclear_M_a_-1 { ; p2, p3 parameters. Use float=y. a is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
- 
- 
-Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based 
-             ; on all 3 critical points. Use outside=real, float=y, 
+
+
+Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
+             ; on all 3 critical points. Use outside=real, float=y,
              ; periodicity=n, maxiter>=256, and logmap=0.
              ; For logmap effect put real(p3) minimum iteration,
              ; imag(p3) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p3)
   p=imag(p3)
@@ -25104,656 +25104,8 @@ Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
-  z3d2=0, qrl=1.5, q2=0.15
-  :
-  IF(z3done==0)
-    zz2=sqr(z3)
-    zz3=z3*zz2
-    z3=(r3a2*zz3-a6*zz2-r3ac*z3-ac)/(r3*z3+1)+ack
-    IF(lastsqr>10000)
-      z3done=iter
-      z3d2=1
-    ENDIF
-  ENDIF
-  IF(z2done==0)
-    zz2=sqr(z2)
-    zz3=z2*zz2
-    z2=(r3a2*zz3-a6*zz2-r3ac*z2-ac)/(r3*z2+1)+ack
-    IF(lastsqr>10000)
-      z2done=iter
-      z2d2=1
-    ENDIF
-  ENDIF
-  IF(z1done==0)
-    zz2=sqr(z1)
-    zz3=z1*zz2
-    z1=(r3a2*zz3-a6*zz2-r3ac*z1-ac)/(r3*z1+1)+ack
-    IF(lastsqr>10000)
-      z1done=iter
-      z1d2=1
-    ENDIF
-  ENDIF
-  iter=iter+1
-  IF(iter>=m2 && iter<(m2+1) && flag==0)
-    z1chek=z1
-    z2chek=z2
-    z3chek=z3
-    flag=1
-    spd=0
-    first=0
-    same12=0
-    same23=0
-    same13=0
-  ELSEIF(flag==1)
-    zz2=sqr(z1a)
-    zz3=z1a*zz2
-    z1a=(r3a2*zz3-a6*zz2-r3ac*z1a-ac)/(r3*z1a+1)+ack
-    zz2=sqr(z2a)
-    zz3=z2a*zz2
-    z2a=(r3a2*zz3-a6*zz2-r3ac*z2a-ac)/(r3*z2a+1)+ack
-    zz2=sqr(z3a)
-    zz3=z3a*zz2
-    z3a=(r3a2*zz3-a6*zz2-r3ac*z3a-ac)/(r3*z3a+1)+ack
-    spd=spd+1
-    IF(|z1a-z2chek|<qq)
-      same12=1
-      z1d2=spd
-      IF(first==0 && |z2a-z1chek|>=qq)
-        first=1
-      ENDIF
-    ENDIF
-    IF(|z2a-z1chek|<qq)
-      same12=1
-      z2d2=spd
-      IF(first==0 && |z1a-z2chek|>=qq)
-        first=2
-      ENDIF
-    ENDIF
-    IF(|z1a-z3chek|<qq)
-      same13=1
-      z1d2=spd
-      IF(first==0 && |z3a-z1chek|>=qq)
-        first=1
-      ENDIF
-    ENDIF
-    IF(|z3a-z1chek|<qq)
-      same13=1
-      z3d2=spd
-      IF(first==0 && |z1a-z3chek|>=qq)
-        first=3
-      ENDIF
-    ENDIF
-    IF(|z2a-z3chek|<qq)
-      same23=1
-      z2d2=spd
-      IF(first==0 && |z3a-z2chek|>=qq)
-        first=2
-      ENDIF
-    ENDIF
-    IF(|z3a-z2chek|<qq)
-      same23=1
-      z3d2=spd
-      IF(first==0 && |z2a-z3chek|>=qq)
-        first=3
-      ENDIF
-    ENDIF
-  ENDIF
-  IF((z1d2>0 && z2d2>0 && z3d2>0) || iter==m)
-    IF(z1done==0 || z2done==0 || z3done==0)
-      IF(z2done>0 && z3done>0)
-        ddd=z2done
-        IF(z3done>ddd)
-          ddd=z3done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+66
-      ELSEIF(z1done>0 && z3done>0)
-        ddd=z1done
-        IF(z3done>ddd)
-          ddd=z3done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+129
-      ELSEIF(z1done>0 && z2done>0)
-        ddd=z1done
-        IF(z2done>ddd)
-          ddd=z2done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+192
-      ELSEIF(z1done>0)
-        IF(same23!=0 && first!=0)
-          ddd=z1done*(q2*abs(z2d2-z3d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z1done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same23==0)
-          color=color+66
-        ELSE
-          IF(first==0)
-            color=color+66
-          ELSEIF(first==2)
-            color=color+129
-          ELSE
-            color=color+192
-          ENDIF
-        ENDIF
-      ELSEIF(z2done>0)
-        IF(same13!=0 && first!=0)
-          ddd=z2done*(q2*abs(z1d2-z3d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z2done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same13==0)
-          color=color+129
-        ELSE
-          IF(first==0)
-            color=color+129
-          ELSEIF(first==1)
-            color=color+66
-          ELSE
-            color=color+192
-          ENDIF
-        ENDIF
-      ELSEIF(z3done>0)
-        IF(same12!=0 && first!=0)
-          ddd=z3done*(q2*abs(z1d2-z2d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z3done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same12==0)
-          color=color+192
-        ELSE
-          IF(first==0)
-            color=color+192
-          ELSEIF(first==1)
-            color=color+66
-          ELSE
-            color=color+129
-          ENDIF
-        ENDIF
-      ELSEIF(same12==1 && same23==1)
-        ddd=abs(z1d2-z2d2)
-        IF(abs(z1d2-z3d2)<ddd)
-          ddd=abs(z1d2-z3d2)
-        ENDIF
-        IF(abs(z2d2-z3d2)<ddd)
-          ddd=abs(z2d2-z3d2)
-        ENDIF
-        IF(first==0)
-          color=(ddd/m)^(1/p)*66
-          IF(color>66)
-            color=66
-          ENDIF
-        ELSE
-          color=(ddd/m)^(1/p)*63
-          IF(color>63)
-            color=63
-          ENDIF
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==1)
-          color=color+66
-        ELSEIF(first==2)
-          color=color+129
-        ELSEIF(first==3)
-          color=color+192
-        ENDIF
-      ELSEIF(same12==1)
-        ddd=abs(z1d2-z2d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+192
-        ELSEIF(first==1)
-          color=color+66
-        ELSE
-          color=color+129
-        ENDIF
-      ELSEIF(same13==1)
-        ddd=abs(z1d2-z3d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+129
-        ELSEIF(first==1)
-          color=color+66
-        ELSE
-          color=color+192
-        ENDIF
-      ELSEIF(same23==1)
-        ddd=abs(z2d2-z3d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+66
-        ELSEIF(first==2)
-          color=color+129
-        ELSE
-          color=color+192
-        ENDIF
-      ELSE
-        color=0
-      ENDIF
-    ELSE
-      color=((iter-min)/(m-min))^(1/p)*66
-      IF(color>66)
-        color=66
-      ENDIF
-      IF(color<1)
-        color=1
-      ENDIF
-    ENDIF
-    done=1
-    z=color-iter-7
-  ENDIF
-  done==0
-}
- 
-Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
-             ; Use outside=real, float=y, periodicity=n,
-             ; maxiter>=256, and logmap=0.
-             ; For logmap effect put real(p2) minimum iteration,
-             ; imag(p2) bigger than 1, e.g. 2.
-             ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
-             ; ranges.
-             ; Use first for outside, second thru fourth for two
-             ; critical points escape, one trapped...
-             ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
-  r3ac=r3*ac, ack=k*ac
-  min=real(p2)
-  p=imag(p2)
-  IF(p==0)
-    p=1
-  ENDIF
-  z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
-  z3d2=0, qrl=1.5, q2=0.15
-  :
-  IF(z3done==0)
-    zz2=sqr(z3)
-    zz3=z3*zz2
-    z3=(r3a2*zz3-a6*zz2-r3ac*z3-ac)/(r3*z3+1)+ack
-    IF(lastsqr>10000)
-      z3done=iter
-      z3d2=1
-    ENDIF
-  ENDIF
-  IF(z2done==0)
-    zz2=sqr(z2)
-    zz3=z2*zz2
-    z2=(r3a2*zz3-a6*zz2-r3ac*z2-ac)/(r3*z2+1)+ack
-    IF(lastsqr>10000)
-      z2done=iter
-      z2d2=1
-    ENDIF
-  ENDIF
-  IF(z1done==0)
-    zz2=sqr(z1)
-    zz3=z1*zz2
-    z1=(r3a2*zz3-a6*zz2-r3ac*z1-ac)/(r3*z1+1)+ack
-    IF(lastsqr>10000)
-      z1done=iter
-      z1d2=1
-    ENDIF
-  ENDIF
-  iter=iter+1
-  IF(iter>=m2 && iter<(m2+1) && flag==0)
-    z1chek=z1
-    z2chek=z2
-    z3chek=z3
-    flag=1
-    spd=0
-    first=0
-    same12=0
-    same23=0
-    same13=0
-  ELSEIF(flag==1)
-    zz2=sqr(z1a)
-    zz3=z1a*zz2
-    z1a=(r3a2*zz3-a6*zz2-r3ac*z1a-ac)/(r3*z1a+1)+ack
-    zz2=sqr(z2a)
-    zz3=z2a*zz2
-    z2a=(r3a2*zz3-a6*zz2-r3ac*z2a-ac)/(r3*z2a+1)+ack
-    zz2=sqr(z3a)
-    zz3=z3a*zz2
-    z3a=(r3a2*zz3-a6*zz2-r3ac*z3a-ac)/(r3*z3a+1)+ack
-    spd=spd+1
-    IF(|z1a-z2chek|<qq)
-      same12=1
-      z1d2=spd
-      IF(first==0 && |z2a-z1chek|>=qq)
-        first=1
-      ENDIF
-    ENDIF
-    IF(|z2a-z1chek|<qq)
-      same12=1
-      z2d2=spd
-      IF(first==0 && |z1a-z2chek|>=qq)
-        first=2
-      ENDIF
-    ENDIF
-    IF(|z1a-z3chek|<qq)
-      same13=1
-      z1d2=spd
-      IF(first==0 && |z3a-z1chek|>=qq)
-        first=1
-      ENDIF
-    ENDIF
-    IF(|z3a-z1chek|<qq)
-      same13=1
-      z3d2=spd
-      IF(first==0 && |z1a-z3chek|>=qq)
-        first=3
-      ENDIF
-    ENDIF
-    IF(|z2a-z3chek|<qq)
-      same23=1
-      z2d2=spd
-      IF(first==0 && |z3a-z2chek|>=qq)
-        first=2
-      ENDIF
-    ENDIF
-    IF(|z3a-z2chek|<qq)
-      same23=1
-      z3d2=spd
-      IF(first==0 && |z2a-z3chek|>=qq)
-        first=3
-      ENDIF
-    ENDIF
-  ENDIF
-  IF((z1d2>0 && z2d2>0 && z3d2>0) || iter==m)
-    IF(z1done==0 || z2done==0 || z3done==0)
-      IF(z2done>0 && z3done>0)
-        ddd=z2done
-        IF(z3done>ddd)
-          ddd=z3done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+66
-      ELSEIF(z1done>0 && z3done>0)
-        ddd=z1done
-        IF(z3done>ddd)
-          ddd=z3done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+129
-      ELSEIF(z1done>0 && z2done>0)
-        ddd=z1done
-        IF(z2done>ddd)
-          ddd=z2done
-        ENDIF
-        color=((ddd-min)/(m-min))^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        color=color+192
-      ELSEIF(z1done>0)
-        IF(same23!=0 && first!=0)
-          ddd=z1done*(q2*abs(z2d2-z3d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z1done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same23==0)
-          color=color+66
-        ELSE
-          IF(first==0)
-            color=color+66
-          ELSEIF(first==2)
-            color=color+129
-          ELSE
-            color=color+192
-          ENDIF
-        ENDIF
-      ELSEIF(z2done>0)
-        IF(same13!=0 && first!=0)
-          ddd=z2done*(q2*abs(z1d2-z3d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z2done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same13==0)
-          color=color+129
-        ELSE
-          IF(first==0)
-            color=color+129
-          ELSEIF(first==1)
-            color=color+66
-          ELSE
-            color=color+192
-          ENDIF
-        ENDIF
-      ELSEIF(z3done>0)
-        IF(same12!=0 && first!=0)
-          ddd=z3done*(q2*abs(z1d2-z2d2))^qrl
-          color=((ddd-min)/(m-min))^(1/p)*63
-        ELSE
-          color=((z3done-min)/(m-min))^(1/p)*63
-        ENDIF
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(same12==0)
-          color=color+192
-        ELSE
-          IF(first==0)
-            color=color+192
-          ELSEIF(first==1)
-            color=color+66
-          ELSE
-            color=color+129
-          ENDIF
-        ENDIF
-      ELSEIF(same12==1 && same23==1)
-        ddd=abs(z1d2-z2d2)
-        IF(abs(z1d2-z3d2)<ddd)
-          ddd=abs(z1d2-z3d2)
-        ENDIF
-        IF(abs(z2d2-z3d2)<ddd)
-          ddd=abs(z2d2-z3d2)
-        ENDIF
-        IF(first==0)
-          color=(ddd/m)^(1/p)*66
-          IF(color>66)
-            color=66
-          ENDIF
-        ELSE
-          color=(ddd/m)^(1/p)*63
-          IF(color>63)
-            color=63
-          ENDIF
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==1)
-          color=color+66
-        ELSEIF(first==2)
-          color=color+129
-        ELSEIF(first==3)
-          color=color+192
-        ENDIF
-      ELSEIF(same12==1)
-        ddd=abs(z1d2-z2d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+192
-        ELSEIF(first==1)
-          color=color+66
-        ELSE
-          color=color+129
-        ENDIF
-      ELSEIF(same13==1)
-        ddd=abs(z1d2-z3d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+129
-        ELSEIF(first==1)
-          color=color+66
-        ELSE
-          color=color+192
-        ENDIF
-      ELSEIF(same23==1)
-        ddd=abs(z2d2-z3d2)
-        color=(ddd/m)^(1/p)*63
-        IF(color>63)
-          color=63
-        ENDIF
-        IF(color<1)
-          color=1
-        ENDIF
-        IF(first==0)
-          color=color+66
-        ELSEIF(first==2)
-          color=color+129
-        ELSE
-          color=color+192
-        ENDIF
-      ELSE
-        color=0
-      ENDIF
-    ELSE
-      color=((iter-min)/(m-min))^(1/p)*66
-      IF(color>66)
-        color=66
-      ENDIF
-      IF(color<1)
-        color=1
-      ENDIF
-    ENDIF
-    done=1
-    z=color-iter-7
-  ENDIF
-  done==0
-}
- 
-Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
-             ; Use outside=real, float=y, periodicity=n,
-             ; maxiter>=256, and logmap=0.
-             ; For logmap effect put real(p1) minimum iteration,
-             ; imag(p1) bigger than 1, e.g. 2.
-             ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
-             ; ranges.
-             ; Use first for outside, second thru fourth for two
-             ; critical points escape, one trapped...
-             ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
-  r3ac=r3*ac, ack=k*ac
-  min=real(p1)
-  p=imag(p1)
-  IF(p==0)
-    p=1
-  ENDIF
-  z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -26056,20 +25408,19 @@ Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
   done==0
 }
 
-Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
-              ; Use outside=real, float=y, periodicity=n,
-              ; maxiter>=256, and logmap=0.
-              ; For logmap effect put real(p2) minimum iteration,
-              ; imag(p2) bigger than 1, e.g. 2.
-              ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
-              ; ranges.
-              ; Use first for outside, second thru fourth for two
-              ; critical points escape, one trapped...
-              ; Coloring variant.
-              ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
+             ; Use outside=real, float=y, periodicity=n,
+             ; maxiter>=256, and logmap=0.
+             ; For logmap effect put real(p2) minimum iteration,
+             ; imag(p2) bigger than 1, e.g. 2.
+             ; Color 0 is for all critical points trapped.
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
+             ; ranges.
+             ; Use first for outside, second thru fourth for two
+             ; critical points escape, one trapped...
+             ; Edited for Fractint v. 20 by George Martin, 10/98
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -26077,8 +25428,657 @@ Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
+  z3d2=0, qrl=1.5, q2=0.15
+  :
+  IF(z3done==0)
+    zz2=sqr(z3)
+    zz3=z3*zz2
+    z3=(r3a2*zz3-a6*zz2-r3ac*z3-ac)/(r3*z3+1)+ack
+    IF(lastsqr>10000)
+      z3done=iter
+      z3d2=1
+    ENDIF
+  ENDIF
+  IF(z2done==0)
+    zz2=sqr(z2)
+    zz3=z2*zz2
+    z2=(r3a2*zz3-a6*zz2-r3ac*z2-ac)/(r3*z2+1)+ack
+    IF(lastsqr>10000)
+      z2done=iter
+      z2d2=1
+    ENDIF
+  ENDIF
+  IF(z1done==0)
+    zz2=sqr(z1)
+    zz3=z1*zz2
+    z1=(r3a2*zz3-a6*zz2-r3ac*z1-ac)/(r3*z1+1)+ack
+    IF(lastsqr>10000)
+      z1done=iter
+      z1d2=1
+    ENDIF
+  ENDIF
+  iter=iter+1
+  IF(iter>=m2 && iter<(m2+1) && flag==0)
+    z1chek=z1
+    z2chek=z2
+    z3chek=z3
+    flag=1
+    spd=0
+    first=0
+    same12=0
+    same23=0
+    same13=0
+  ELSEIF(flag==1)
+    zz2=sqr(z1a)
+    zz3=z1a*zz2
+    z1a=(r3a2*zz3-a6*zz2-r3ac*z1a-ac)/(r3*z1a+1)+ack
+    zz2=sqr(z2a)
+    zz3=z2a*zz2
+    z2a=(r3a2*zz3-a6*zz2-r3ac*z2a-ac)/(r3*z2a+1)+ack
+    zz2=sqr(z3a)
+    zz3=z3a*zz2
+    z3a=(r3a2*zz3-a6*zz2-r3ac*z3a-ac)/(r3*z3a+1)+ack
+    spd=spd+1
+    IF(|z1a-z2chek|<qq)
+      same12=1
+      z1d2=spd
+      IF(first==0 && |z2a-z1chek|>=qq)
+        first=1
+      ENDIF
+    ENDIF
+    IF(|z2a-z1chek|<qq)
+      same12=1
+      z2d2=spd
+      IF(first==0 && |z1a-z2chek|>=qq)
+        first=2
+      ENDIF
+    ENDIF
+    IF(|z1a-z3chek|<qq)
+      same13=1
+      z1d2=spd
+      IF(first==0 && |z3a-z1chek|>=qq)
+        first=1
+      ENDIF
+    ENDIF
+    IF(|z3a-z1chek|<qq)
+      same13=1
+      z3d2=spd
+      IF(first==0 && |z1a-z3chek|>=qq)
+        first=3
+      ENDIF
+    ENDIF
+    IF(|z2a-z3chek|<qq)
+      same23=1
+      z2d2=spd
+      IF(first==0 && |z3a-z2chek|>=qq)
+        first=2
+      ENDIF
+    ENDIF
+    IF(|z3a-z2chek|<qq)
+      same23=1
+      z3d2=spd
+      IF(first==0 && |z2a-z3chek|>=qq)
+        first=3
+      ENDIF
+    ENDIF
+  ENDIF
+  IF((z1d2>0 && z2d2>0 && z3d2>0) || iter==m)
+    IF(z1done==0 || z2done==0 || z3done==0)
+      IF(z2done>0 && z3done>0)
+        ddd=z2done
+        IF(z3done>ddd)
+          ddd=z3done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+66
+      ELSEIF(z1done>0 && z3done>0)
+        ddd=z1done
+        IF(z3done>ddd)
+          ddd=z3done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+129
+      ELSEIF(z1done>0 && z2done>0)
+        ddd=z1done
+        IF(z2done>ddd)
+          ddd=z2done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+192
+      ELSEIF(z1done>0)
+        IF(same23!=0 && first!=0)
+          ddd=z1done*(q2*abs(z2d2-z3d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z1done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same23==0)
+          color=color+66
+        ELSE
+          IF(first==0)
+            color=color+66
+          ELSEIF(first==2)
+            color=color+129
+          ELSE
+            color=color+192
+          ENDIF
+        ENDIF
+      ELSEIF(z2done>0)
+        IF(same13!=0 && first!=0)
+          ddd=z2done*(q2*abs(z1d2-z3d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z2done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same13==0)
+          color=color+129
+        ELSE
+          IF(first==0)
+            color=color+129
+          ELSEIF(first==1)
+            color=color+66
+          ELSE
+            color=color+192
+          ENDIF
+        ENDIF
+      ELSEIF(z3done>0)
+        IF(same12!=0 && first!=0)
+          ddd=z3done*(q2*abs(z1d2-z2d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z3done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same12==0)
+          color=color+192
+        ELSE
+          IF(first==0)
+            color=color+192
+          ELSEIF(first==1)
+            color=color+66
+          ELSE
+            color=color+129
+          ENDIF
+        ENDIF
+      ELSEIF(same12==1 && same23==1)
+        ddd=abs(z1d2-z2d2)
+        IF(abs(z1d2-z3d2)<ddd)
+          ddd=abs(z1d2-z3d2)
+        ENDIF
+        IF(abs(z2d2-z3d2)<ddd)
+          ddd=abs(z2d2-z3d2)
+        ENDIF
+        IF(first==0)
+          color=(ddd/m)^(1/p)*66
+          IF(color>66)
+            color=66
+          ENDIF
+        ELSE
+          color=(ddd/m)^(1/p)*63
+          IF(color>63)
+            color=63
+          ENDIF
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==1)
+          color=color+66
+        ELSEIF(first==2)
+          color=color+129
+        ELSEIF(first==3)
+          color=color+192
+        ENDIF
+      ELSEIF(same12==1)
+        ddd=abs(z1d2-z2d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+192
+        ELSEIF(first==1)
+          color=color+66
+        ELSE
+          color=color+129
+        ENDIF
+      ELSEIF(same13==1)
+        ddd=abs(z1d2-z3d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+129
+        ELSEIF(first==1)
+          color=color+66
+        ELSE
+          color=color+192
+        ENDIF
+      ELSEIF(same23==1)
+        ddd=abs(z2d2-z3d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+66
+        ELSEIF(first==2)
+          color=color+129
+        ELSE
+          color=color+192
+        ENDIF
+      ELSE
+        color=0
+      ENDIF
+    ELSE
+      color=((iter-min)/(m-min))^(1/p)*66
+      IF(color>66)
+        color=66
+      ENDIF
+      IF(color<1)
+        color=1
+      ENDIF
+    ENDIF
+    done=1
+    z=color-iter-7
+  ENDIF
+  done==0
+}
+
+Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
+             ; Use outside=real, float=y, periodicity=n,
+             ; maxiter>=256, and logmap=0.
+             ; For logmap effect put real(p1) minimum iteration,
+             ; imag(p1) bigger than 1, e.g. 2.
+             ; Color 0 is for all critical points trapped.
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
+             ; ranges.
+             ; Use first for outside, second thru fourth for two
+             ; critical points escape, one trapped...
+             ; Edited for Fractint v. 20 by George Martin, 10,98
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
+  r3ac=r3*ac, ack=k*ac
+  min=real(p1)
+  p=imag(p1)
+  IF(p==0)
+    p=1
+  ENDIF
+  z1=0, z2=1, z3=-1
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
+  z3d2=0, qrl=1.5, q2=0.15
+  :
+  IF(z3done==0)
+    zz2=sqr(z3)
+    zz3=z3*zz2
+    z3=(r3a2*zz3-a6*zz2-r3ac*z3-ac)/(r3*z3+1)+ack
+    IF(lastsqr>10000)
+      z3done=iter
+      z3d2=1
+    ENDIF
+  ENDIF
+  IF(z2done==0)
+    zz2=sqr(z2)
+    zz3=z2*zz2
+    z2=(r3a2*zz3-a6*zz2-r3ac*z2-ac)/(r3*z2+1)+ack
+    IF(lastsqr>10000)
+      z2done=iter
+      z2d2=1
+    ENDIF
+  ENDIF
+  IF(z1done==0)
+    zz2=sqr(z1)
+    zz3=z1*zz2
+    z1=(r3a2*zz3-a6*zz2-r3ac*z1-ac)/(r3*z1+1)+ack
+    IF(lastsqr>10000)
+      z1done=iter
+      z1d2=1
+    ENDIF
+  ENDIF
+  iter=iter+1
+  IF(iter>=m2 && iter<(m2+1) && flag==0)
+    z1chek=z1
+    z2chek=z2
+    z3chek=z3
+    flag=1
+    spd=0
+    first=0
+    same12=0
+    same23=0
+    same13=0
+  ELSEIF(flag==1)
+    zz2=sqr(z1a)
+    zz3=z1a*zz2
+    z1a=(r3a2*zz3-a6*zz2-r3ac*z1a-ac)/(r3*z1a+1)+ack
+    zz2=sqr(z2a)
+    zz3=z2a*zz2
+    z2a=(r3a2*zz3-a6*zz2-r3ac*z2a-ac)/(r3*z2a+1)+ack
+    zz2=sqr(z3a)
+    zz3=z3a*zz2
+    z3a=(r3a2*zz3-a6*zz2-r3ac*z3a-ac)/(r3*z3a+1)+ack
+    spd=spd+1
+    IF(|z1a-z2chek|<qq)
+      same12=1
+      z1d2=spd
+      IF(first==0 && |z2a-z1chek|>=qq)
+        first=1
+      ENDIF
+    ENDIF
+    IF(|z2a-z1chek|<qq)
+      same12=1
+      z2d2=spd
+      IF(first==0 && |z1a-z2chek|>=qq)
+        first=2
+      ENDIF
+    ENDIF
+    IF(|z1a-z3chek|<qq)
+      same13=1
+      z1d2=spd
+      IF(first==0 && |z3a-z1chek|>=qq)
+        first=1
+      ENDIF
+    ENDIF
+    IF(|z3a-z1chek|<qq)
+      same13=1
+      z3d2=spd
+      IF(first==0 && |z1a-z3chek|>=qq)
+        first=3
+      ENDIF
+    ENDIF
+    IF(|z2a-z3chek|<qq)
+      same23=1
+      z2d2=spd
+      IF(first==0 && |z3a-z2chek|>=qq)
+        first=2
+      ENDIF
+    ENDIF
+    IF(|z3a-z2chek|<qq)
+      same23=1
+      z3d2=spd
+      IF(first==0 && |z2a-z3chek|>=qq)
+        first=3
+      ENDIF
+    ENDIF
+  ENDIF
+  IF((z1d2>0 && z2d2>0 && z3d2>0) || iter==m)
+    IF(z1done==0 || z2done==0 || z3done==0)
+      IF(z2done>0 && z3done>0)
+        ddd=z2done
+        IF(z3done>ddd)
+          ddd=z3done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+66
+      ELSEIF(z1done>0 && z3done>0)
+        ddd=z1done
+        IF(z3done>ddd)
+          ddd=z3done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+129
+      ELSEIF(z1done>0 && z2done>0)
+        ddd=z1done
+        IF(z2done>ddd)
+          ddd=z2done
+        ENDIF
+        color=((ddd-min)/(m-min))^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        color=color+192
+      ELSEIF(z1done>0)
+        IF(same23!=0 && first!=0)
+          ddd=z1done*(q2*abs(z2d2-z3d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z1done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same23==0)
+          color=color+66
+        ELSE
+          IF(first==0)
+            color=color+66
+          ELSEIF(first==2)
+            color=color+129
+          ELSE
+            color=color+192
+          ENDIF
+        ENDIF
+      ELSEIF(z2done>0)
+        IF(same13!=0 && first!=0)
+          ddd=z2done*(q2*abs(z1d2-z3d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z2done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same13==0)
+          color=color+129
+        ELSE
+          IF(first==0)
+            color=color+129
+          ELSEIF(first==1)
+            color=color+66
+          ELSE
+            color=color+192
+          ENDIF
+        ENDIF
+      ELSEIF(z3done>0)
+        IF(same12!=0 && first!=0)
+          ddd=z3done*(q2*abs(z1d2-z2d2))^qrl
+          color=((ddd-min)/(m-min))^(1/p)*63
+        ELSE
+          color=((z3done-min)/(m-min))^(1/p)*63
+        ENDIF
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(same12==0)
+          color=color+192
+        ELSE
+          IF(first==0)
+            color=color+192
+          ELSEIF(first==1)
+            color=color+66
+          ELSE
+            color=color+129
+          ENDIF
+        ENDIF
+      ELSEIF(same12==1 && same23==1)
+        ddd=abs(z1d2-z2d2)
+        IF(abs(z1d2-z3d2)<ddd)
+          ddd=abs(z1d2-z3d2)
+        ENDIF
+        IF(abs(z2d2-z3d2)<ddd)
+          ddd=abs(z2d2-z3d2)
+        ENDIF
+        IF(first==0)
+          color=(ddd/m)^(1/p)*66
+          IF(color>66)
+            color=66
+          ENDIF
+        ELSE
+          color=(ddd/m)^(1/p)*63
+          IF(color>63)
+            color=63
+          ENDIF
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==1)
+          color=color+66
+        ELSEIF(first==2)
+          color=color+129
+        ELSEIF(first==3)
+          color=color+192
+        ENDIF
+      ELSEIF(same12==1)
+        ddd=abs(z1d2-z2d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+192
+        ELSEIF(first==1)
+          color=color+66
+        ELSE
+          color=color+129
+        ENDIF
+      ELSEIF(same13==1)
+        ddd=abs(z1d2-z3d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+129
+        ELSEIF(first==1)
+          color=color+66
+        ELSE
+          color=color+192
+        ENDIF
+      ELSEIF(same23==1)
+        ddd=abs(z2d2-z3d2)
+        color=(ddd/m)^(1/p)*63
+        IF(color>63)
+          color=63
+        ENDIF
+        IF(color<1)
+          color=1
+        ENDIF
+        IF(first==0)
+          color=color+66
+        ELSEIF(first==2)
+          color=color+129
+        ELSE
+          color=color+192
+        ENDIF
+      ELSE
+        color=0
+      ENDIF
+    ELSE
+      color=((iter-min)/(m-min))^(1/p)*66
+      IF(color>66)
+        color=66
+      ENDIF
+      IF(color<1)
+        color=1
+      ENDIF
+    ENDIF
+    done=1
+    z=color-iter-7
+  ENDIF
+  done==0
+}
+
+Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
+              ; Use outside=real, float=y, periodicity=n,
+              ; maxiter>=256, and logmap=0.
+              ; For logmap effect put real(p2) minimum iteration,
+              ; imag(p2) bigger than 1, e.g. 2.
+              ; Color 0 is for all critical points trapped.
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
+              ; ranges.
+              ; Use first for outside, second thru fourth for two
+              ; critical points escape, one trapped...
+              ; Coloring variant.
+              ; Edited for Fractint v. 20 by George Martin, 10,98
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
+  r3ac=r3*ac, ack=k*ac
+  min=real(p2)
+  p=imag(p2)
+  IF(p==0)
+    p=1
+  ENDIF
+  z1=0, z2=1, z3=-1
+  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=10^(-7)
   :
@@ -26425,8 +26425,8 @@ Nuclear_M_cq { ; p1, p3 parameters. c is Mandel parameter. Colored based on all
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0, 
-m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0, 
+  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0,
+m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0,
 qrl=1.5, q2=0.15
   qq2=0.0000001
   :
@@ -26756,20 +26756,20 @@ qrl=1.5, q2=0.15
   done==0
 }
 
-Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
+Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
               ; Use outside=real, float=y, periodicity=n,
               ; maxiter>=256, and logmap=0.
               ; For logmap effect put real(p2) minimum iteration,
               ; imag(p2) bigger than 1, e.g. 2.
               ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
               ; ranges.
               ; Use first for outside, second thru fourth for two
               ; critical points escape, one trapped...
               ; Coloring variant.
               ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -26777,8 +26777,8 @@ Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=10^(-7)
   :
@@ -27123,7 +27123,7 @@ z = (4 * z^5 + Root) / (5 * z^4);
 .001 <= |z^5 - Root|
 }
 
-NY002 { 
+NY002 {
   z=pixel, c=fn1(z), zc=fn2(c+z):
   z=fn3(zc)-fn4((z*z)+c)
   |z|<16
@@ -27302,7 +27302,7 @@ ny2001-1 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   p_p2 = (50,0)
   p_p3 = (0.3,250)
   ; Function: r
-  
+
   ; User-selectable Lake parameters:
   ; -------------------------------
   ; real part of p2: 0 = lake transform disabled
@@ -27311,10 +27311,10 @@ ny2001-1 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   ; imag part of p2: phase
   ; real part of p3: amplitude of the wave (try 0.2)
   ; imag part of p3: frequency (try 300)
-  
+
   ; Lake transformation (Sylvie Gallet)
   ; -------------------
-  
+
   if (real(p_p2) > 0 && real(p_p2) <= 100)
   level = real(p_p2) / 100         ; water level
   phase = imag(p_p2)               ; phase
@@ -27336,10 +27336,10 @@ ny2001-1 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   endif
   pixel = z + z3rd
   endif
-  
+
   ; Modified MandelbrotMix4 formula (Jim Muth)
   ; -------------------------------
-  
+
   a = real(p1) , b = imag(p1) , d = real(p2) , f = imag(p2)
   g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j
   k = real(p3) + 1 , l = imag(p3) + 100 , c = fn1(pixel)
@@ -27482,7 +27482,7 @@ ny2001-2 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   p_p2 = (50,0)
   p_p3 = (0.3,250)
   ; Function: r
-  
+
   ; User-selectable Lake parameters:
   ; -------------------------------
   ; real part of p2: 0 = lake transform disabled
@@ -27491,10 +27491,10 @@ ny2001-2 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   ; imag part of p2: phase
   ; real part of p3: amplitude of the wave (try 0.2)
   ; imag part of p3: frequency (try 300)
-  
+
   ; Lake transformation (Sylvie Gallet)
   ; -------------------
-  
+
   if (real(p_p2) > 0 && real(p_p2) <= 100)
   level = real(p_p2) / 100         ; water level
   phase = imag(p_p2)               ; phase
@@ -27516,10 +27516,10 @@ ny2001-2 { ; using modified .frm's from Jim Muth and Sylvie Gallet
   endif
   pixel = z + z3rd
   endif
-  
+
   ; Modified MandelbrotMix4 formula (Jim Muth)
   ; -------------------------------
-  
+
   a = real(p1) , b = imag(p1) , d = real(p2) , f = imag(p2)
   g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j
   k = real(p3) + 1 , l = imag(p3) + 100 , c = fn1(pixel)
@@ -27670,7 +27670,7 @@ OK-41 {; DISECTED MANDELLAMBDA
 
 okJ_05{ ; Perturbed Julia set
             ; Julia parameter p1 is perturbed by p2*pixel
-            ; p2=0 -> no perturbation 
+            ; p2=0 -> no perturbation
             ; p3 = bailout
 z=pixel
 c=p1+p2*pixel:
@@ -27680,7 +27680,7 @@ z=z*z+c
 
 okJ_06{ ; Generalized perturbed Julia set
             ; Julia parameter p1 is perturbed by p2*fn1(pixel)
-            ; p2=0 -> no perturbation 
+            ; p2=0 -> no perturbation
             ; p3 = bailout
 z=pixel
 c=p1+p2*fn1(pixel):
@@ -27891,7 +27891,7 @@ z=x+flip(y)
 |z|<=bailout}
 
 P03-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -27929,7 +27929,7 @@ z=x+flip(y)
 |z|<=bailout}
 
 P05-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -27976,7 +27976,7 @@ bailout<=|z-oz|
 }
 
 P08-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP(7)-7P(6))/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -27988,7 +27988,7 @@ P08-15 {; V.1.1 - earlier versions may be discarded
 }
 
 P10-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP(9)-9P(8))/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -28589,7 +28589,7 @@ pheot {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = p1/conj(temp)
-  (|zp1| <= 64) && (|z| <= huge) 
+  (|zp1| <= 64) && (|z| <= huge)
 }
 
 poem {; created using FracText 1.0 à6 - by Jan Maarten van der Valk
@@ -29415,7 +29415,7 @@ Prop (XAXIS) {
   |z| <=4
 }
 
-Prueba_000 {; 
+Prueba_000 {;
 z=fn1(pixel), c=fn2(pixel):
 z=fn2(p1/z^4) - fn1(p2/z^2) + c
 |z|<64
@@ -29441,7 +29441,7 @@ Prueba_003 {; Bill Decker mod 10/98 of Prueba_000
   |z|<f
 }
 
-Prueba_pop {; (c) by Miguel Fliguer 
+Prueba_pop {; (c) by Miguel Fliguer
 z=c=pixel,step1=p1,step2=p2:
 rz=real(z)
 iz=imag(z)
@@ -29889,7 +29889,7 @@ quartc {
        z=pixel, zp = (0,0), huge = 1.0e32:
        temp = z
        z = sin(z) - zp
-       zp = p1/conj(temp),(|zp| <= 4 && |z| <= huge) 
+       zp = p1/conj(temp),(|zp| <= 4 && |z| <= huge)
   }
 
 quarterblend_iJJJJ {
@@ -31460,7 +31460,7 @@ ringc_jul-alt { ; Kerry Mitchell 07sep98
         if((r>=r1)&&(r<=r2))
           done=1
           t=(r-r1)*fac
-          IF (trunc(iter/2)==(iter/2)) 
+          IF (trunc(iter/2)==(iter/2))
             t=t+pi
           ENDIF
           z=cos(t)+flip(sin(t))
@@ -31807,7 +31807,7 @@ Rota4 { ; Agustin Martin Barbero   II-1998
         ; p1 deforming factor (expands black areas? Usually leave it 0)
         ; p2 = Bailout - 4      if u use imag(p3)=1, p2 should be high
         ;        but not too much...
-        ; real(p3) scale factor for deformation waves. Keep it high if 
+        ; real(p3) scale factor for deformation waves. Keep it high if
         ;   you want to see the big picture like an z^n + c formula
         ; imag(p3) exponent of z^n + c (no need to explain this)
  z=pixel
@@ -32119,20 +32119,20 @@ RSP_10060	{;rsp 28jul98
 ;Newt_Carlson typo and other mistakes
   c=pixel,  w=z=iter=bailout=0,  ca=.382683432365, cb=.923879532511,
 d0=p2+p3,
-IF (|P1|==0)	
+IF (|P1|==0)
   d1=ca*p2
   d2=cb*p2
-ELSE		
+ELSE
   d1=p1*p2
   d2=p1*p2
 ENDIF
-g=p2, h=p3,		
+g=p2, h=p3,
 dsq= g*(h*(2*(1-g)-h) + g*(2-d2*g) ) + h*h :
 w2=w*w,   fnc=w2*w2-w-c,   der=4*w*w2-1,   k=1*fnc/(der-12*w2*fnc/der/2),
 w=w-k,
 IF (((abs(cabs(w)-p2))<p3) && (iter>0))
 	  bailout=1,
-	  wr=real(w), 
+	  wr=real(w),
 	  awr=abs(wr),
 	  wi=imag(w), awi=abs(wi),
 	IF (awr>=awi)
@@ -32161,10 +32161,10 @@ ENDIF
 RSP_10061	{;rsp 28jul98
 ;Newt_Carlson typo and other mistakes
   c=pixel, w=z=iter=bailout=0, ca=real(pixel), cb=imag(pixel), d0=p2+p3,
-IF (|P1|==0)	 
+IF (|P1|==0)
   d1=ca*p2
   d2=cb*p2
-ELSE		
+ELSE
   d1=p1*p2
   d2=p1*p2
 ENDIF
@@ -32173,7 +32173,7 @@ w2=w*w,   fnc=w2*w2-w-c,   der=4*w*w2-1,   k=1*fnc/(der-12*w2*fnc/der/2),
 w=w-k,
 IF (((abs(cabs(w)-p2))<p3) && (iter>0))
 	  bailout=1,
-	  wr=real(w), 
+	  wr=real(w),
 	  awr=abs(wr),
 	  wi=imag(w), awi=abs(wi),
 	IF (awr>=awi)
@@ -32201,32 +32201,32 @@ ENDIF
 
 RSP_10062	{;rsp 28jul98
 ;Newt_Carlson typo and other mistakes
-c=w=pixel, 
-z=iter=bailout=0, 
-ca=real(pixel), 
-cb=imag(pixel), 
+c=w=pixel,
+z=iter=bailout=0,
+ca=real(pixel),
+cb=imag(pixel),
 d0=p2+p3,
-IF (|P1|==0)	
+IF (|P1|==0)
 d1=ca*p2
 d2=cb*p2
-ELSE		
+ELSE
 d1=p1*p2
 d2=p1*p2
 ENDIF
-g=p2, 
-h=p3,		
+g=p2,
+h=p3,
 dsq= g*(h*(2*(1-g)-h) + g*(2-cb*g) ) + h*h :
 w2=w*w, pder=(1-w2/2+w2*w2/12-w2*w2*w2/720), fnc=w2*w2-w-sin(w),
-der=4*w*w2-1-pder,   
+der=4*w*w2-1-pder,
 k=1*fnc/(der-12*w2*fnc/der/2), w=w-k,
 IF (((abs(cabs(w)-p2))<p3) && (iter>0))
 bailout=1,
-wr=real(w), 
+wr=real(w),
 awr=abs(wr),
-wi=imag(w), 
+wi=imag(w),
 awi=abs(wi),
   IF (awr>=awi)
-  dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1), 
+  dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1),
   adjust=1,
   ELSE
   dist=(awr-d1)*(awr-d1)+(awi-d2)*(awi-d2), adjust=0,
@@ -32253,27 +32253,27 @@ RSP_10063	{;rsp 28jul98
 ;Newt_Carlson typo and other mistakes
 c=w=pixel, z=iter=bailout=0, ca=real(pixel/|pixel|), cb=imag(pixel/|pixel|),
 d0=p2+p3,
-IF (|P1|==0)	
+IF (|P1|==0)
 d1=ca*p2
 d2=cb*p2
-ELSE		
+ELSE
 d1=p1*p2
 d2=p1*p2
 ENDIF
-g=p2 
-h=p3		
+g=p2
+h=p3
  dsq=(g*g-2*g*h)*h*d2/g/g-(3*g*g+2*h)*(g-2*d2)*h/g+6*g*h*(g-2*h) :
-w2=w*w, pder=(1-w2/2+w2*w2/12-w2*w2*w2/720), fnc=w2*w2-w-sin(w),   
+w2=w*w, pder=(1-w2/2+w2*w2/12-w2*w2*w2/720), fnc=w2*w2-w-sin(w),
 der=4*w*w2-1-pder, k=1*fnc/(der-12*w2*fnc/der/2),  w=w-k,
 IF (((abs(cabs(w)-p2))<p3) && (iter>0))
 bailout=1,
 wr=real(w),  awr=abs(wr),
 wi=imag(w),  awi=abs(wi),
   IF (awr>=awi)
-  dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1), 
+  dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1),
   adjust=1,
   ELSE
-  dist=(awr-d1)*(awr-d1)+(awi-d2)*(awi-d2), 
+  dist=(awr-d1)*(awr-d1)+(awi-d2)*(awi-d2),
   adjust=0,
   ENDIF
 ENDIF
@@ -32295,12 +32295,12 @@ ENDIF
   iter=iter+1,     z=z-iter,    bailout==0 }
 
 rsp_1010{
-z=a=pixel, 
+z=a=pixel,
 c=a*(a*a-1)/(a*a*a*a-3*a*a+1):
 z=z*z+c/a, |z|<=64}
 
 rsp_1011{
-z=pixel,a=(pixel*(|p1|<=0)+p1), 
+z=pixel,a=(pixel*(|p1|<=0)+p1),
 c=a*(a*a-1)/(a*a*a*a-3*a*a+1):
 z=z*z+c/a, |z|<=64}
 
@@ -32317,11 +32317,11 @@ rsp_1012{; RSP 24MAY98
  bail=(64*(|p2|<=0)+(p2)),
  z=(pixel*(|p1|<=0)+(2.5*pixel)),
  a=(pixel*(|p1|<=0)+p1),
- b=sqr(a): 
+ b=sqr(a):
  c=(b-1)/(b*(b-z)+1),
  y=real(z*c),
  x=flip(imag(c/z+1)),
- z=x+y+c, 
+ z=x+y+c,
  (real(z)*imag(z))>=bail}
 
 rsp_1170{	;*RSP 11NOV98
@@ -32367,39 +32367,39 @@ rsp_1171{	;*RSP 11NOV98
 
 rsp_3080   { ;*RSP 29MAY98
   z=pixel,
-  n=p1: 
+  n=p1:
   z=z^n*sin(1/z)}
 
 rsp_3090   { ;*RSP 29MAY98
   z=pixel,
-  n=p1: 
+  n=p1:
   z=z^n*sin(n/z)}
 
 rsp_3091   { ;*RSP 29MAY98
   z=pixel,
   bail=(64*(|p2|<=0)+p2),
-  n=(1*(|p1|<=0)+p1): 
+  n=(1*(|p1|<=0)+p1):
   z=z^n*sin(n/z)
   |z|<=bail}
 
 rsp_3170	{; RSP 23MAY98
   z=c=pixel: ; P1 IS NORMALLY 1
-  f=2.5*z*z*z-1.5*z, 
+  f=2.5*z*z*z-1.5*z,
   g=7.5*z*z-1.5, h=15*z,
   z=z-p1*f/(g-(h*(c-z)^2)/(2*g)),
  .001<=|f|}
 
 rsp_4060	{;RSP 27JUN98
- z=(1,1), c=100*pixel: 
+ z=(1,1), c=100*pixel:
  zz=sqr(z),
- f=(4*zz*z-3*z)+c, g=12*zz-3, 
- z=z-p1*f/g, 
+ f=(4*zz*z-3*z)+c, g=12*zz-3,
+ z=z-p1*f/g,
  .0001<|f| }
 
 rsp_5010	{; RSP 23MAY98
   ;P1 IS ZOOM OUT CANT BE ZERO
   ;P2 IS BAILOUT VALUE
-  z=c=p1*pixel:	
+  z=c=p1*pixel:
   f=1/tanh(z),
   g=log(sinh(z)),
   z=z-f/g,
@@ -32436,8 +32436,8 @@ n=n+1, z=(z-c)*(z+c)*(z+1),
 
 rsp_6011  {;rsp 15AUG98
 z=-1/(2*pixel), c=pixel:
-f=z*z+c, oz=z, z=1/z, z=1-z, 
-z=1/(1-z), z=(z-1)/z, 
+f=z*z+c, oz=z, z=1/z, z=1-z,
+z=1/(1-z), z=(z-1)/z,
 z=z/(z-1), z=z*z*c+z,
 fz=2*c*z+1
 real(f*fz/z)<=1000}
@@ -32483,7 +32483,7 @@ n=n+1
 
 rsp_a301{;rsp 3/99
 r=p1,c=z=pixel:
-oz=z, z2=z*z, 
+oz=z, z2=z*z,
 z=r*(c/(z2*z2*z)+1/z2)
 |z/oz|>p2}
 
@@ -32533,7 +32533,7 @@ rsp_may002{
     z=10*pixel
     a=z, an=1, n=i=0,
     :
-    i=i+.5, n=a-i, 
+    i=i+.5, n=a-i,
     an=an*n/(z^n), oz=z,
     z=1+z+an
     |z-oz|>.00001
@@ -32543,7 +32543,7 @@ rsp_may005 {
     z=w=c=pixel, n=p1,
     :
     w=w*w+c, z=(w-floor(w))*n
-    |w|<p2  
+    |w|<p2
     }
 
 rsp_may007 {
@@ -32659,21 +32659,21 @@ cabs(f) > .00000001
 }
 
 rspf_4032	{;RSP 06JUN98
-  z=4*pixel: 
+  z=4*pixel:
 zz=sqr(z),
-f=4*zz*z-3*z, 
-g=12*zz-3, 
+f=4*zz*z-3*z,
+g=12*zz-3,
 h=24*z,
 z=z-P1*f/(g-f*f/2/h)
 (1+real(z*h/g)) <=(0+P2) }
 
 rspf_4050	{;RSP 06JUN98
-c=50*pixel, z=(1,1): 
+c=50*pixel, z=(1,1):
 zz=sqr(z),
-f=zz*zz*z-zz*z+c, 
-g=5*zz*zz-3*zz, 
-h=20*zz*z-6*z, 
-z=z-p1*f/(g-f*f/2/h), 
+f=zz*zz*z-zz*z+c,
+g=5*zz*zz-3*zz,
+h=20*zz*z-6*z,
+z=z-p1*f/(g-f*f/2/h),
 .0001<=|f|}
 
 rspf_5030 {; RSP 07JUN98
@@ -32689,10 +32689,10 @@ rspf_5030 {; RSP 07JUN98
 }
 
 Runge01	   {;RSPF010 22MAY98
-z=c=pixel, 
+z=c=pixel,
 h=real(p1), 		;step size start with whole + /- numbers
 b=imag(p1):		;bailout value
-k1=fn1(z)+c, 
+k1=fn1(z)+c,
  xb=real(z)+h/2,
  yb=flip(imag(z))+h*k1/2,
 k2=fn1(xb+yb),
@@ -32940,10 +32940,10 @@ SECANT1{; Ray Girvan, March 1998
     ; needs two seed values z0, z1
     ; Newton-like images, perturbed by choice of z1,
     ; a relaxation factor p2, and a function fn2
-    ; inside the iteration loop 
+    ; inside the iteration loop
    z=pixel, z0=(0,0), z1=fn1(z)+p1:
    f0=z0*z0*z0*z0*z0-1
-   f1=z1*z1*z1*z1*z1-1 
+   f1=z1*z1*z1*z1*z1-1
    z=z-p2*f1*(z1-z0)/(f1-f0);
    z0=z1;
    z1=fn2(z),
@@ -33085,7 +33085,7 @@ SGRM-5 { ; Sylvie Gallet's Gallet-3-02 formula
  |fn1(z)| <= 4
 }
 
-Sierpinsky {; Use p1=2 for the triangle, 
+Sierpinsky {; Use p1=2 for the triangle,
             ; and p1=(1.3,.5) for a strange thing
   z=pixel, j=(0, -1), k=(-1, 0):
   x=real(z),
@@ -33168,7 +33168,7 @@ Sine_of_Brot (xaxis) { ;the sine of the Mandelbrot formula
 SliceJB {; by John R. H. Goering, July 1999
 ;This formula produces 2D slices of the 4D Julibrot set. The numbers for
 ;p1 and p2 describe the rotation of the plane that slices the set (I
-;call that plane the uv-plane -- the u-axis is the horizontal axis on 
+;call that plane the uv-plane -- the u-axis is the horizontal axis on
 ;the screen and the v-axis is the vertical axis). I call the 4 axes
 ;in 4-space the p, q, r, & s axes. The M-set is in the pq-plane and the
 ;J-sets are in the rs-plane and planes "parallel" to it. The rotation angles
@@ -33179,7 +33179,7 @@ SliceJB {; by John R. H. Goering, July 1999
 ;real(p2)--pr-plane. imag(p2)--pq-plane.
 ;The origin of the resulting skewed uv-plane is then placed at the point
 ;(real(p3), imag(p3), 0, 0) in pqrs-space. To create the M-set, leave the
-;parameters alone, or you may change p3 to change the position of the M-set 
+;parameters alone, or you may change p3 to change the position of the M-set
 ;on the uv-plane.
 ;To create a J-set, set real(p1)=real(p2)=0.5, then set p3 equal to the
 ;constant for the J-set (let imag(p1)=imag(p2)=0).
@@ -34962,7 +34962,7 @@ c=fn2(pixel)+p2:
 z=sqr(z)+c
 |z| <16  }
 
-test667{; 
+test667{;
 z=pixel:
 z=fn1(p1/z)/fn2(p2/pixel)
 |z|<4
@@ -36136,7 +36136,7 @@ TripleMutant{; Mandelbrot mutated by a combination of fn1, fn2 and fn3
              ; inverse square of the distance to the current pixel
   z=0
   c=pixel
-  a1=1/(|(pixel-p1)|^2)    ; calclulate the inverse square for 
+  a1=1/(|(pixel-p1)|^2)    ; calclulate the inverse square for
   a2=1/(|(pixel-p2)|^2)    ; all three points
   a3=1/(|(pixel-p3)|^2):
   z=z*z+a1*fn1(z)+a2*fn2(z)+a3*fn3(z)+c  ; the functions are added
@@ -36146,14 +36146,14 @@ TripleMutant{; Mandelbrot mutated by a combination of fn1, fn2 and fn3
 TripleMutant2{ ; Mandelbrot mutated by a combination of fn1, fn2 and fn3
                     ; "sitting" at the points p1, p2 and p3
                     ;  Not the iterated formula is modified
-                    ;  but the constant c 
+                    ;  but the constant c
 z=0
 c=pixel
-a1=1/(|(pixel-p1)|^2)   
-a2=1/(|(pixel-p2)|^2)    
+a1=1/(|(pixel-p1)|^2)
+a2=1/(|(pixel-p2)|^2)
 a3=1/(|(pixel-p3)|^2):
 c=c+a1*fn1(c)+a2*fn2(c)+a3*fn3(c)
-z=z*z+c   
+z=z*z+c
 |z|<=8
 }
 
@@ -36583,7 +36583,7 @@ Twofo_J { ; Attractors are of no fixed address or type!
   ENDIF
   done==0
 }
- 
+
 Twofo_M { ; Attractors are of no fixed address or type!
           ; Thus, periodicity checking: At half of maxit it saves z,
           ; then checks all future z against it to trap orbit.
@@ -37154,7 +37154,7 @@ Vector1J-z { ; 4D Julia set parallel to the the Z plane
   w=c*z2*w2+1,
   |z2+w2|<=p3
 }
- 
+
 Vector1J-w { ; 4D Julia set parallel to the the W plane
              ; p1 Julia param, p2 chooses slice, p3 bailout.
   z=p2, w=pixel, c=p1:
@@ -37164,7 +37164,7 @@ Vector1J-w { ; 4D Julia set parallel to the the W plane
   w=c*z2*w2+1,
   |z2+w2|<=p3
 }
- 
+
 Vector1J-zw { ; 4D Julia set parallel to another plane.
               ; p1 Julia param, p2 chooses slice, p3 bailout.
   z=pixel+p2, w=pixel-p2, c=p1:
@@ -37174,7 +37174,7 @@ Vector1J-zw { ; 4D Julia set parallel to another plane.
   w=c*z2*w2+1,
   |z2+w2|<=p3
 }
- 
+
 Vector1M { ; 2D Mandelbrot set from vector valued function.
            ; p3 bailout.
   z=0, w=0, c=pixel:
@@ -37184,8 +37184,8 @@ Vector1M { ; 2D Mandelbrot set from vector valued function.
   w=c*z2*w2+1,
   |z2+w2|<=p3
 }
- 
- 
+
+
 Vector2J-z { ; 4D Julia set parallel to the the Z plane
              ; p1 Julia param, p2 chooses slice, p3 bailout.
   z=pixel, w=p2, c=p1:
@@ -37195,7 +37195,7 @@ Vector2J-z { ; 4D Julia set parallel to the the Z plane
   w=z*Z2+w*w2+w2*z2+c,
   |z2+w2|<=p3
 }
- 
+
 Vector2J-w { ; 4D Julia set parallel to the the W plane
              ; p1 Julia param, p2 chooses slice, p3 bailout.
   z=p2, w=pixel, c=p1:
@@ -37205,7 +37205,7 @@ Vector2J-w { ; 4D Julia set parallel to the the W plane
   w=z*Z2+w*w2+w2*z2+c,
   |z2+w2|<=p3
 }
- 
+
 Vector2J-zw { ; 4D Julia set parallel to another plane.
               ; p1 Julia param, p2 chooses slice, p3 bailout.
   z=pixel+p2, w=pixel-p2, c=p1:
@@ -37215,7 +37215,7 @@ Vector2J-zw { ; 4D Julia set parallel to another plane.
   w=z*Z2+w*w2+w2*z2+c,
   |z2+w2|<=p3
 }
- 
+
 Vector2M { ; 2D Mandelbrot set from vector valued function.
            ; p3 bailout.
   z=0, w=0, c=pixel:
@@ -37346,7 +37346,7 @@ WK990208 {; Eliminated superfluous variable "c". G. Martin, 7/26/99
 
 Woven {; Jim Muth
        ; As Posted in Fractal-Art, 4/97
-  z=pixel 
+  z=pixel
   c=p1:
   z=(-z)^1.05+c
   |z| <= 100
@@ -37447,7 +37447,7 @@ xlty_man { ; Kerry Mitchell
         endif
         iter>0
         }
- 
+
 Xmas2 {; Copyright (c) Paul W. Carlson, 1997
     x=0, c=pixel, iter=0, toggle=-1:
     x=x*x+c
@@ -37497,7 +37497,7 @@ yyt {
   temp = z
   z = zp1^z - zp2
   zp2 = zp1
-  zp1 = p1/temp, (|zp2| <= 64) && (|z| <= huge) 
+  zp1 = p1/temp, (|zp2| <= 64) && (|z| <= huge)
 }
 
 z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
@@ -37526,7 +37526,7 @@ z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
   stop == 0
 }
 
-zappa-1 {; by Miguel Fliguer 
+zappa-1 {; by Miguel Fliguer
 z=c=pixel:
 x=z*pixel+c
 y=c*pixel+z
@@ -37756,7 +37756,7 @@ comment {
 
   The parameter file OVERKILL.PAR has many examples of the images I have
   created with these formulas, as well as lots of other fractal types.
-  
+
   I welcome any comments.  Reach me at:
 
     CIS: 74223,2745    Internet: 74223,2745@compuserve.com
@@ -37765,9 +37765,9 @@ comment {
                1343 S. Tyler
                Salt Lake City, Utah  84105
                U.S.A.
-  
+
   NOTE: You'll usually get more interesting results by using floating-point
-        math.  
+        math.
 }
 
 comment {
@@ -37886,7 +37886,7 @@ dmj-Mand-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 

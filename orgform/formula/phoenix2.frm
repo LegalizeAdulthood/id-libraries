@@ -1,5 +1,5 @@
 Phoenix2-1 {
-;This is the Phoenix formula as described by 
+;This is the Phoenix formula as described by
 ;Shigehiro Ushiki.  The other formulas come from
 ;Fractal programming in C.
   z = pixel,

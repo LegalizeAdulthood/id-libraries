@@ -5,7 +5,7 @@ jenn001 {; Arno Jennen
   |(z^1.12)|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn002 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=pixel+log(pixel-a):
@@ -13,7 +13,7 @@ jenn002 {; Arno Jennen
   |(z^(z+1.12))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn003 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=pixel+log(pixel-a):
@@ -21,7 +21,7 @@ jenn003 {; Arno Jennen
   |(z/(z+1.12))|<=(a*1.75)+(z*a)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn005 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=pixel+log(pixel-a):
@@ -29,7 +29,7 @@ jenn005 {; Arno Jennen
   |(z^1.12)|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn006 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=pixel+log(pixel-a):
@@ -37,7 +37,7 @@ jenn006 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn007 {; Arno Jennen
          ; Revised for Fractint v20 by G. Martin
   a=(sin(|pixel-1.25|))<pixel
@@ -46,7 +46,7 @@ jenn007 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn008 {; Arno Jennen
   a=(cotanh(pixel-6.47)+|tanh(pixel)|)/pixel
   z=sin(pixel+a)+exp(pixel-a):
@@ -54,7 +54,7 @@ jenn008 {; Arno Jennen
   |(z^1.15)|<=(a*4.33)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn009 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel+8.76)-(cos(pixel*7.79))
@@ -63,7 +63,7 @@ jenn009 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn010 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel+0.44)-(log(pixel*6.59))
@@ -72,7 +72,7 @@ jenn010 {; Arno Jennen
   |(z^(1-a))|<=(a*1.15)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn012 {; Arno Jennen
   a=(exp(pixel))+(exp(pixel-1))
   z=pixel-a+cotan(pixel):
@@ -81,7 +81,7 @@ jenn012 {; Arno Jennen
   |(z)|<2000
   ;SOURCE: je082701.frm
 }
- 
+
 jenn013 {; Arno Jennen
   a=(exp(pixel))+(exp(pixel-1))
   z=pixel-a+cotan(pixel):
@@ -89,7 +89,7 @@ jenn013 {; Arno Jennen
   |(z)|<2000
   ;SOURCE: je082701.frm
 }
- 
+
 jenn014 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=pixel+log(pixel-a):
@@ -97,4 +97,4 @@ jenn014 {; Arno Jennen
   |(z^1.12)|<=(a*1.75)
   ;SOURCE: je-001.frm
 }
- 
+

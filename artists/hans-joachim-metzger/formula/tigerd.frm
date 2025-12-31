@@ -5,4 +5,4 @@ Quadrat         { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z=z*z -conj(z*c) +c,
   |z| <= real(P1)
 }
- 
+

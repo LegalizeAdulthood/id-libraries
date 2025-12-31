@@ -5,18 +5,18 @@
   |z| <= p2
   ;SOURCE: kg13.frm
 }
- 
+
 1306 {
   z = 0.1/pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
   ;SOURCE: kg13.frm
 }
- 
+
 001 (YAXIS) {
   z = pixel:
   z = z*z + pixel
   z = fn1(z) + p1
   ;SOURCE: damion.frm
 }
- 
+

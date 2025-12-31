@@ -1,4 +1,4 @@
-PolyTestII {; Peter Anders anders@physik.hu-berlin.de 
+PolyTestII {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=p1:
   c=z
   f1=sin(z)
@@ -8,4 +8,4 @@ PolyTestII {; Peter Anders anders@physik.hu-berlin.de
   |z-c| >0.000001
   ;SOURCE: halley.frm
 }
- 
+

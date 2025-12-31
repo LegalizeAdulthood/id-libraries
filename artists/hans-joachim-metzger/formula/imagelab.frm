@@ -4,11 +4,11 @@ MarksMandelPwr_tan (XAXIS) {
   |z| <= 4
   ;SOURCE: formulas.frm
 }
- 
+
 Zexpe (XAXIS) {
   s = exp(1.,0.), z = Pixel:
   z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+

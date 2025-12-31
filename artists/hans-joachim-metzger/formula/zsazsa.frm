@@ -14,7 +14,7 @@ inandout07 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: zsazsa.frm
 }
- 
+
 fnglynn {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
          ; Original formula by Jon Horner [100112,1700]
          ; Try p1=1.5, p2=-0.2, fn1=ident for 'standard' Glynn
@@ -23,7 +23,7 @@ fnglynn {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
   |z| < 4
   ;SOURCE: zsazsa.frm
 }
- 
+
 glynnout1 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
            ; Original formula by Jon Horner [100112,1700]
            ; in-and-out relative to origin
@@ -35,7 +35,7 @@ glynnout1 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: zsazsa.frm
 }
- 
+
 glynnout2 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
            ; Original formula by Jon Horner [100112,1700]
            ; in-and-out relative to origin
@@ -47,7 +47,7 @@ glynnout2 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: zsazsa.frm
 }
- 
+
 glynnout3 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
            ; Original formula by Jon Horner [100112,1700]
            ; in-and-out relative to fn1(pixel)
@@ -64,7 +64,7 @@ glynnout3 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout06 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -81,7 +81,7 @@ inandout06 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout08 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -99,7 +99,7 @@ inandout08 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout09 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 1), real(p2) = Bailout (default 4)
             ;The next line sets k=default if p1=0, else k=p1
@@ -119,7 +119,7 @@ inandout09 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: dons.frm
 }
- 
+
 inandout10 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -137,7 +137,7 @@ inandout10 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout11 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -154,7 +154,7 @@ inandout11 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: dons.frm
 }
- 
+
 inandout13 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), p2 = parameter (default 1,0)
             ;The next line sets k=1 if real(p2)==0, else k=p2
@@ -171,7 +171,7 @@ inandout13 {; Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: dons.frm
 }
- 
+
 limerick {; Bradley Beacham  [74223,2745]
           ; Just an experiment -- nothing earth-shaking...
   z = c = pixel, test = p1 + 4:
@@ -183,7 +183,7 @@ limerick {; Bradley Beacham  [74223,2745]
   |z| < test
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout12 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0,0), p2 = Parameter (default 0,0)
   z = pixel, rt = real(p1), it = imag(p1), olddist = 100:
@@ -197,4 +197,4 @@ inandout12 {; Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: zsazsa.frm
 }
- 
+

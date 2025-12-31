@@ -18,14 +18,14 @@ z2=z*z+p2
 z=(z2+p)/(z2-1)
 |z|<b
 }
- 
+
 magnet_cplxspirals (XAXIS) { ;at the left end!
 ;needs floating point!
 z=c=pixel:
 z=( (z*z+(c-1)) / (c/z+(c-2)) )^2-2
 |z|<100
 }
- 
+
 magnet_spirals1 (XAXIS_NOIMAG) {
 ;needs floating point!
 ;p2 is the bailout (default=100)
@@ -34,7 +34,7 @@ z=c=pixel:
 z=( (z*z+(c)) / (2*z+(c-2)) )^2-p1
 |z|<b
 }
- 
+
 magnet_spirals2 (XAXIS_NOIMAG) {
 ;needs floating point!
 ;p2 is the bailout (default=1000)
@@ -43,7 +43,7 @@ z=c=pixel:
 z=( (z*z+(c-1)) / (c*z+(c-2)) )^2-p1
 |z|<b
 }
- 
+
 magnet_zpower(XAXIS_NOIMAG) { ;tried to make a magnet1m variant
 ;p1 should be over 2, recommended: 3..6 (default=3)
 x=p1,x=x+(x==0)*3
@@ -51,4 +51,4 @@ z=c=pixel:
 z=((z^x+c-1)/(2*z+c-2))^(x-1)
 |z|<100
 }
- 
+

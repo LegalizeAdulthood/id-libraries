@@ -32,213 +32,213 @@
 ;   MANDELBROT TYPE FRACTALS
 ;}
 
-M_TchebychevT2 { 
+M_TchebychevT2 {
    c = pixel, z = P1:
    z = c*(2*z*z-1),
    |z|<100
 }
 
-M_TchebychevT3 { 
+M_TchebychevT3 {
    c = pixel, z = P1:
    z = c*z*(4*z*z-3),
    |z|<100
 }
 
-M_TchebychevT4 { 
+M_TchebychevT4 {
    c = pixel, z = P1:
    z = c*(z*z*(8*z*z+8)+1),
    |z|<100
 }
 
-M_TchebychevT5 { 
+M_TchebychevT5 {
    c = pixel, z = P1:
    z = c*(z*(z*z*(16*z*z-20)+5)),
    |z|<100
 }
 
-M_TchebychevT6 { 
+M_TchebychevT6 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z*(32*z*z-48)+18)-1),
    |z|<100
 }
 
-M_TchebychevT7 { 
+M_TchebychevT7 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7),
    |z|<100
 }
 
-M_TchebychevC2 { 
+M_TchebychevC2 {
    c = pixel, z = P1:
    z = c*(z*z-2),
    |z|<100
 }
 
-M_TchebychevC3 { 
+M_TchebychevC3 {
    c = pixel, z = P1:
    z = c*z*(z*z-3),
    |z|<100
 }
 
-M_TchebychevC4 { 
+M_TchebychevC4 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z-4)+2),
    |z|<100
 }
 
-M_TchebychevC5 { 
+M_TchebychevC5 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z-5)+5),
    |z|<100
 }
 
-M_TchebychevC6 { 
+M_TchebychevC6 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z*(z*z-6)+9)-2),
    |z|<100
 }
 
-M_TchebychevC7 { 
+M_TchebychevC7 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z*(z*z-7)+14)-7),
    |z|<100
 }
 
 
-M_TchebychevU2 { 
+M_TchebychevU2 {
    c = pixel, z = P1:
    z = c*(4*z*z-1),
    |z|<100
 }
 
-M_TchebychevU3 { 
+M_TchebychevU3 {
    c = pixel, z = P1:
    z = c*z*(8*z*z-4),
    |z|<100
 }
 
-M_TchebychevU4 { 
+M_TchebychevU4 {
    c = pixel, z = P1:
    z = c*(z*z*(16*z*z-12)+1),
    |z|<100
 }
 
-M_TchebychevU5 { 
+M_TchebychevU5 {
    c = pixel, z = P1:
    z = c*z*(z*z*(32*z*z-32)+6),
    |z|<100
 }
 
-M_TchebychevU6 { 
+M_TchebychevU6 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z*(64*z*z-80)+24)-1),
    |z|<100
 }
 
-M_TchebychevU7 { 
+M_TchebychevU7 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8),
    |z|<100
 }
 
-M_TchebychevS2 { 
+M_TchebychevS2 {
    c = pixel, z = P1:
    z = c*(z*z-1),
    |z|<100
 }
 
-M_TchebychevS3 { 
+M_TchebychevS3 {
    c = pixel, z = P1:
    z = c*z*(z*z-2),
    |z|<100
 }
 
-M_TchebychevS4 { 
+M_TchebychevS4 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z-3)+1),
    |z|<100
 }
 
-M_TchebychevS5 { 
+M_TchebychevS5 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z-4)+3),
    |z|<100
 }
 
-M_TchebychevS6 { 
+M_TchebychevS6 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z*(z*z-5)+6)-1),
    |z|<100
 }
 
-M_TchebychevS7 { 
+M_TchebychevS7 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z*(z*z-6)+10)-4),
    |z|<100
 }
 
-M_Laguerre2 { 
+M_Laguerre2 {
    c = pixel, z = P1:
    z = (z*(z - 4) +2 ) / 2 + c,
    |z| < 100
 }
 
-M_Laguerre3 { 
+M_Laguerre3 {
    c = pixel, z = P1:
    z = (z*(z*(-z + 9) -18) + 6 ) / 6 + c,
    |z| < 100
 }
 
-M_Laguerre4 { 
+M_Laguerre4 {
    c = pixel, z = P1:
    z = (z * ( z * ( z * ( z - 16)+ 72) - 96)+ 24 ) / 24 + c,
    |z| < 100
 }
 
-M_Laguerre5 { 
+M_Laguerre5 {
    c = pixel, z = P1:
    z = (z * ( z * ( z * ( z * (-z +25) -200) +600) -600) + 120 ) / 120 + c,
    |z| < 100
 }
 
-M_Laguerre6 { 
+M_Laguerre6 {
    c = pixel, z = P1:
    z = (z * ( z * ( z * ( z*(z*(z -36) +450) -2400) + 5400)-4320) + 720 ) / 720
 + c,
    |z| < 100
 }
 
-M_Lagandre2 { 
+M_Lagandre2 {
    c = pixel, z = P1:
    z = (3 * z*z - 1) / 2 + c
    |z| < 100
 }
 
-M_Lagandre3 { 
+M_Lagandre3 {
    c = pixel, z = P1:
    z = z * (5 * z*z - 3) / 2 + c
    |z| < 100
 }
 
-M_Lagandre4 { 
+M_Lagandre4 {
    c = pixel, z = P1:
    z = (z*z*(35 * z*z - 30) + 3) / 8 + c
    |z| < 100
 }
 
-M_Lagandre5 { 
+M_Lagandre5 {
    c = pixel, z = P1:
    z = z* (z*z*(63 * z*z - 70) + 15 ) / 8 + c
    |z| < 100
 }
 
-M_Lagandre6 { 
+M_Lagandre6 {
    c = pixel, z = P1:
    z = (z*z*(z*z*(231 * z*z - 315)  + 105 ) - 5) / 16 + c
    |z| < 100
 }
 
-M_Lagandre7 { 
+M_Lagandre7 {
    c = pixel, z = P1:
    z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / 16 + c
    |z| < 100
@@ -248,220 +248,220 @@ M_Lagandre7 {
  JULIA TYPE FRACTALS
 }
 
-J_TchebychevT2 { 
+J_TchebychevT2 {
    c = P1, z = Pixel:
    z = c*(2*z*z-1),
    |z|<100
 }
 
-J_TchebychevT3 { 
+J_TchebychevT3 {
    c = P1, z = Pixel:
    z = c*z*(4*z*z-3),
    |z|<100
 }
 
-J_TchebychevT4 { 
+J_TchebychevT4 {
    c = P1, z = Pixel:
    z = c*(z*z*(8*z*z+8)+1),
    |z|<100
 }
 
-J_TchebychevT5 { 
+J_TchebychevT5 {
    c = P1, z = Pixel:
    z = c*(z*(z*z*(16*z*z-20)+5)),
    |z|<100
 }
 
-J_TchebychevT6 { 
+J_TchebychevT6 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z*(32*z*z-48)+18)-1),
    |z|<100
 }
 
-J_TchebychevT7 { 
+J_TchebychevT7 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7),
    |z|<100
 }
 
-J_TchebychevC2 { 
+J_TchebychevC2 {
    c = P1, z = Pixel:
    z = c*(z*z-2),
    |z|<100
 }
 
-J_TchebychevC3 { 
+J_TchebychevC3 {
    c = P1, z = Pixel:
    z = c*z*(z*z-3),
    |z|<100
 }
 
-J_TchebychevC4 { 
+J_TchebychevC4 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z-4)+2),
    |z|<100
 }
 
-J_TchebychevC5 { 
+J_TchebychevC5 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z-5)+5),
    |z|<100
 }
 
-J_TchebychevC6 { 
+J_TchebychevC6 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z*(z*z-6)+9)-2),
    |z|<100
 }
 
-J_TchebychevC7 { 
+J_TchebychevC7 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z*(z*z-7)+14)-7),
    |z|<100
 }
 
 
-J_TchebychevU2 { 
+J_TchebychevU2 {
    c = P1, z = Pixel:
    z = c*(4*z*z-1),
    |z|<100
 }
 
-J_TchebychevU3 { 
+J_TchebychevU3 {
    c = P1, z = Pixel:
    z = c*z*(8*z*z-4),
    |z|<100
 }
 
-J_TchebychevU4 { 
+J_TchebychevU4 {
    c = P1, z = Pixel:
    z = c*(z*z*(16*z*z-12)+1),
    |z|<100
 }
 
-J_TchebychevU5 { 
+J_TchebychevU5 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(32*z*z-32)+6),
    |z|<100
 }
 
-J_TchebychevU6 { 
+J_TchebychevU6 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z*(64*z*z-80)+24)-1),
    |z|<100
 }
 
-J_TchebychevU7 { 
+J_TchebychevU7 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8),
    |z|<100
 }
 
-J_TchebychevS2 { 
+J_TchebychevS2 {
    c = P1, z = Pixel:
    z = c*(z*z-1),
    |z|<100
 }
 
-J_TchebychevS3 { 
+J_TchebychevS3 {
    c = P1, z = Pixel:
    z = c*z*(z*z-2),
    |z|<100
 }
 
-J_TchebychevS4 { 
+J_TchebychevS4 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z-3)+1),
    |z|<100
 }
 
-J_TchebychevS5 { 
+J_TchebychevS5 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z-4)+3),
    |z|<100
 }
 
-J_TchebychevS6 { 
+J_TchebychevS6 {
    c = P1, z = Pixel:
    z = c*(z*z*(z*z*(z*z-5)+6)-1),
    |z|<100
 }
 
-J_TchebychevS7 { 
+J_TchebychevS7 {
    c = P1, z = Pixel:
    z = c*z*(z*z*(z*z*(z*z-6)+10)-4),
    |z|<100
 }
 
-J_Laguerre2 { 
+J_Laguerre2 {
    c = P1, z = Pixel:
    z = (z*(z - 4) +2 ) / 2 + c,
    |z| < 100
 
 }
 
-J_Laguerre3 { 
+J_Laguerre3 {
    c = P1, z = Pixel:
    z = (z*(z*(-z + 9) -18) + 6 ) / 6 + c,
    |z| < 100
 }
 
-J_Laguerre4 { 
+J_Laguerre4 {
    c = P1, z = Pixel:
    z = (z * ( z * ( z * ( z - 16)+ 72) - 96)+ 24 ) / 24 + c,
    |z| < 100
 }
 
-J_Laguerre5 { 
+J_Laguerre5 {
    c = P1, z = Pixel:
    z = (z * ( z * ( z * ( z * (-z +25) -200) +600) -600) + 120 ) / 120 + c,
    |z| < 100
 }
 
-J_Laguerre6 { 
+J_Laguerre6 {
    c = P1, z = Pixel:
    z = (z * ( z * ( z * ( z*(z*(z -36) +450) -2400) + 5400)-4320) + 720 ) / 720
 + c,
    |z| < 100
 }
 
-J_Lagandre2 { 
+J_Lagandre2 {
    c = P1, z = Pixel:
    z = (3 * z*z - 1) / 2 + c
    |z| < 100
 }
 
-J_Lagandre3 { 
+J_Lagandre3 {
    c = P1, z = Pixel:
    z = z * (5 * z*z - 3) / 2 + c
    |z| < 100
 }
 
-J_Lagandre4 { 
+J_Lagandre4 {
    c = P1, z = Pixel:
    z = (z*z*(35 * z*z - 30) + 3) / 8 + c
    |z| < 100
 }
 
-J_Lagandre5 { 
+J_Lagandre5 {
    c = P1, z = Pixel:
    z = z* (z*z*(63 * z*z - 70) + 15 ) / 8 + c
    |z| < 100
 }
 
-J_Lagandre6 { 
+J_Lagandre6 {
    c = P1, z = Pixel:
    z = (z*z*(z*z*(231 * z*z - 315)  + 105 ) - 5) / 16 + c
    |z| < 100
 }
 
-J_Lagandre7 { 
+J_Lagandre7 {
    c = P1, z = Pixel:
    z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / 16 + c
    |z| < 100
 }
 
-test { 
+test {
    c = P1, z = Pixel:
    z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / (16 * (z+c))
    |z| < 100

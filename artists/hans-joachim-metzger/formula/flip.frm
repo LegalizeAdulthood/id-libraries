@@ -6,7 +6,7 @@ non-conformal {; From Media Magic Calender - August
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
+
 phoenix_m {; Mandelbrot style map of the Phoenix curves
   z=x=y=nx=ny=x1=y1=x2=y2=0:
   x2 = sqr(x), y2 = sqr(y)
@@ -16,28 +16,28 @@ phoenix_m {; Mandelbrot style map of the Phoenix curves
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 flip0_man_j (ORIGIN) {
   z=pixel:
   z = flip(sqr(z) + p1)
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
+
 flip0_man_m (XAXIS) {
   z=0:
   z = flip(sqr(z) + pixel)
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
-flip3_man_m (XAXIS) { 
+
+flip3_man_m (XAXIS) {
   z = 0:
   z = 1/flip(sqr(z) + pixel)
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
+
 phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
   x=real(pixel), y=imag(pixel), z=nx=ny=x1=x2=y1=y2=0:
   x2 = sqr(x), y2 = sqr(y)
@@ -47,4 +47,4 @@ phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
+

@@ -13,36 +13,36 @@ manjul_lace {; Requires passes=1   George Martin, 1996
   |z| <= 4
   ;SOURCE: ifs196.frm
 }
- 
+
 mandel_nest {; George Martin [76440,1143] with help from Sylvie Gallet
    ; periodicity=0 float=yes, fractint v19.3 or higher
    ; real(p1) is reduction factor, e.g 1 (default) is same size,
    ;     2 is half the size (linear; 1/4 the area size)
    ; imag(p1) is clockwise rotation of the image in degrees
    ; p2 - real portion moves image along the x axis, imag
-   ;     portion along the y axis. + = right,up. 
+   ;     portion along the y axis. + = right,up.
    ; real(p3) - iteration spacing. 256 and multiples causes
-   ;     nested images to have same coloring. Default 256 
+   ;     nested images to have same coloring. Default 256
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180:
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
   newpixel=newpixel*(1-test)+test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*newpixel
   z = z*z + c
   iter = iter + 1
   |z| <= 16
   ;SOURCE: nest.frm
 }
- 
+
 MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
   z = pixel:
   z = (pixel ^ z) + pixel
   |z| <= (P1 + 3)
   ;SOURCE: fractint.frm
 }
- 
+

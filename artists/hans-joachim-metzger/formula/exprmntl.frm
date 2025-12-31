@@ -38,7 +38,7 @@ Bimandeloid           { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   isalldiv == 0
 }
- 
+
 Bimandeloid2          { ; Hiram Berry <burningb@burningbridges.com>
                         ;  Thu, 13 May 2004 15:54:11
           ; vary C over the screen in z->z^A+k*z^B+C
@@ -79,7 +79,7 @@ Bimandeloid2          { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   isalldiv == 0
  }
- 
+
 Bimandeloid3          { ; Hiram Berry <burningb@burningbridges.com>
                         ;  Sun, 16 May 2004 16:52:37
           ; toggles with 3 different kinds of corresponding Julia sets
@@ -154,7 +154,7 @@ Bimandeloid3          { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   isalldiv == 0
 }
- 
+
 Bimandeloid3          { ; Hiram Berry <burningb@burningbridges.com>
                         ;  Sun, 16 May 2004 16:52:37
           ; toggles with 3 different kinds of corresponding Julia sets
@@ -229,7 +229,7 @@ Bimandeloid3          { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   isalldiv == 0
 }
- 
+
 JulibrotSlice_R4        { ; Hiram Berry <burningb@burningbridges.com>
                           ;  Wed, 10 Mar 2004 22:33:41
         ;  p1: origin_x, origin_y; Mset init 0,0
@@ -269,7 +269,7 @@ JulibrotSlice_R4        { ; Hiram Berry <burningb@burningbridges.com>
   z=sqr(z)+C,
   |z|<=1024
 }
- 
+
 MsetImages            { ; Hiram Berry <burningb@burningbridges.com>
                         ;  Wed, 12 May 2004 00:09:55
           ; inside=zmag renders closest approach to given point
@@ -307,7 +307,7 @@ MsetImages            { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   |zp| <= bailout
 }
- 
+
 TernaryJulibrotSl2  { ; Hiram Berry <burningb@burningbridges.com>
                       ;  Sat, 6 Mar 2004 01:19:11
                       ;  C1 linear slice of a C3 parameter phase space
@@ -336,7 +336,7 @@ TernaryJulibrotSl2  { ; Hiram Berry <burningb@burningbridges.com>
   z = z ^ a + c
   |z| <= lim
 }
- 
+
 TernaryJulibrotSlc  { ; Hiram Berry <burningb@burningbridges.com>
                       ;  Sat, 6 Mar 2004 01:19:11
                       ;  C1 linear slice of a C3 parameter phase space
@@ -363,7 +363,7 @@ TernaryJulibrotSlc  { ; Hiram Berry <burningb@burningbridges.com>
   z = z ^ a + c
   |z| <= lim
  }
- 
+
 XY_Orbiter_1        { ; Hiram Berry <burningb@burningbridges.com>
                       ;  Wed, 10 Mar 2004 17:57:45
         ;  INITIALIZE:   fn1=sqr,fn2=sin,fn3=cos,p1=(10000,0),p2=(-0.05,0)
@@ -401,4 +401,4 @@ XY_Orbiter_1        { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   ( isorbit && ( |z| < 1E20 ) ) || (isntorbit && ( |z| < 4 + p3 ) )
 }
- 
+

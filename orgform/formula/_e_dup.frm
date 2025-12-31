@@ -1,7 +1,7 @@
 
 
 Element(xyaxis) {; Michael Theroux [71673,2767]
-   ; fix and generalization by Ron Barnett [70153,1233] 
+   ; fix and generalization by Ron Barnett [70153,1233]
    ;phi lingam
    ;try p1 = 2.236067977 for the golden mean
   z = pixel:
@@ -92,7 +92,7 @@ exp2 (XAXIS) {
   temp = z
   z = 1-exp(-z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 

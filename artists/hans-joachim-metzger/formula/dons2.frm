@@ -4,4 +4,4 @@ TSinh (XAXIS) {; Tetrated Hyperbolic Sine - Improper Bailout
   z <= (p1 + 3)
   ;SOURCE: fractint.frm
 }
- 
+

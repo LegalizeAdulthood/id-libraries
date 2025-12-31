@@ -13,7 +13,7 @@ H08-06 {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby6.frm
 }
- 
+
 S10-06 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zS09-S08
@@ -27,4 +27,4 @@ S10-06 {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby6.frm
 }
- 
+

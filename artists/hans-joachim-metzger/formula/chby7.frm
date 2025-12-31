@@ -13,4 +13,4 @@ C05-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby7.frm
 }
- 
+

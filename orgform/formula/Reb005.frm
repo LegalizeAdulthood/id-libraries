@@ -3,7 +3,7 @@
 ; Ron Barnett 70153,1233                         ;
 ; The last six FRM's in this file were inspired  ;
 ; by 4DFRACT.FRM of Gordon Lamb                  ;
-;------------------------------------------------; 
+;------------------------------------------------;
 
 REB005A	= {; Ron Barnett, 1993
               ; floating point required
@@ -15,7 +15,7 @@ REB005A	= {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005B {; Ron Barnett, 1993
               ; floating point required
@@ -39,7 +39,7 @@ REB005C {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p2;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005D {; Ron Barnett, 1993
               ; floating point required
@@ -75,7 +75,7 @@ REB005F {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005G {; Ron Barnett, 1993
               ; floating point required

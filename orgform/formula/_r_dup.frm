@@ -11,9 +11,9 @@ rand_generic {; ****   PARAMETER 1 MUST BE > 0   ****
 
 
 Raphaelbrot {; Michael Theroux [71673,2767]
-   ; Fix and generalization by  Ron Barnett [70153,1233]   
+   ; Fix and generalization by  Ron Barnett [70153,1233]
    ; phi
-   ; try p1 = 2.236067977 for the golden mean 
+   ; try p1 = 2.236067977 for the golden mean
   z = pixel:
   z = sqr(z) + ((p1 - 1)/2)
   |z| <= 4
@@ -32,8 +32,8 @@ Richard1 (XYAXIS) {; Jm Richard-Collard
 
 
 Richard1 (YAXIS) {
-  c = z = pixel: 
-  z=(z*z*sin(z*z)+z*z)+pixel 
+  c = z = pixel:
+  z=(z*z*sin(z*z)+z*z)+pixel
   |z|<=50
   ;SOURCE: newform.frm
 }
@@ -58,7 +58,7 @@ Richard2 (XYAXIS) {; Jm Richard-Collard
 
 
 Richard2 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=1/(sin(z*z+pixel*pixel))
   |z|<=50
   ;SOURCE: newform.frm
@@ -76,7 +76,7 @@ Richard3 (XAXIS) {; Jm Richard-Collard
 
 
 Richard3 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=(1/sinh(z)*sinh(z))+pixel
   |z|<=50
   ;SOURCE: newform.frm
@@ -94,7 +94,7 @@ Richard4 (XAXIS) {; Jm Richard-Collard
 
 
 Richard4 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=(1/(z*z*cos(z*z)+z*z))+pixel
   |z|<=50
   ;SOURCE: newform.frm
@@ -111,7 +111,7 @@ Richard5 (XAXIS) {; Jm Richard-Collard
 
 
 Richard5 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=sin(z*sinh(z))+pixel
   |z|<=50
   ;SOURCE: newform.frm
@@ -128,7 +128,7 @@ Richard6 (XYAXIS) {; Jm Richard-Collard
 
 
 Richard6 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=sin(sinh(z))+pixel
   |z|<=50
   ;SOURCE: newform.frm
@@ -154,7 +154,7 @@ Richard7 (XAXIS) {; Jm Richard-Collard
 
 
 Richard7 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=log(z)*pixel
   |z|<=50
   ;SOURCE: newform.frm
@@ -182,7 +182,7 @@ Richard8 (XYAXIS) {; Jm Richard-Collard
 
 
 Richard8 (YAXIS) {
-  c = z = pixel: 
+  c = z = pixel:
   z=sin(z)+sin(pixel)
   |z|<=50
   ;SOURCE: newform.frm

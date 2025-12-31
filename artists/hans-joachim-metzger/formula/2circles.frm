@@ -1,7 +1,7 @@
 cenx=-ceny_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
         ;
         ; "2 opposing circles" coloring method for Julia sets
@@ -29,13 +29,13 @@ cenx=-ceny_jul {; Kerry Mitchell 26aug98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 cenx=ceny_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
-        ; 
+        ;
         ; "2 concentric circles" coloring method for Julia sets
         ; p1 = c = Julia parameter
         ; p2 = (both) circle center
@@ -60,11 +60,11 @@ cenx=ceny_jul {; Kerry Mitchell 26aug98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 offset_rx=ry_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
         ;
         ; "2 offset circles" coloring method for Julia sets
@@ -92,8 +92,8 @@ offset_rx=ry_jul {; Kerry Mitchell 26aug98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
-general_man { ; Kerry Mitchell 26aug98 
+
+general_man { ; Kerry Mitchell 26aug98
 	;
 	; "2 general circles" coloring method for Mandelbrot
 	; c = pixel = Mandelbrot parameter

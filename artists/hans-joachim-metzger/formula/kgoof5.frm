@@ -6,7 +6,7 @@ oof5 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof5.frm
 }
- 
+
 oof6 (XYAXIS) {
   z = c = pixel:
   z = c * fn1 (z*z) * (fn2(z))
@@ -15,7 +15,7 @@ oof6 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof6.frm
 }
- 
+
 oof7 (XYAXIS) {
   z = pixel:
   z = z^(fn1(z^(p1)))
@@ -24,4 +24,4 @@ oof7 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof7.frm
 }
- 
+

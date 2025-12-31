@@ -21,7 +21,7 @@ WaldoTwinsC (XAXIS_NOPARM) {; Jon Osuch
 Whatever_the_name (XAXIS) {
   z=pixel:
   z=z*z+(1/z*z)+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -39,7 +39,7 @@ Wineglass (XAXIS) {; Pieter Branderhorst
 Wineglass (XAXIS) {
   c = z = pixel:
   z = z * z + c, c = (1+imag(c)) * real(c) / 2 + z
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: newform.frm
 }
 

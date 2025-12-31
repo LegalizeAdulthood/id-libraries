@@ -1,5 +1,5 @@
 polar-inout_jul {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -77,9 +77,9 @@ polar-inout_jul {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 polar-inout_man {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -155,9 +155,9 @@ polar-inout_man {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 polar-near_jul { ; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -235,9 +235,9 @@ polar-near_jul { ; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 polar-near_man {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -313,4 +313,4 @@ polar-near_man {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+

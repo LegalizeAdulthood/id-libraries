@@ -6,4 +6,4 @@ contest4 {; Kerry Mitchell
   |z| <= 4
   ;SOURCE: contest.frm
 }
- 
+

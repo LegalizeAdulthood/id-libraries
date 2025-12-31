@@ -171,7 +171,7 @@ Fzppfnsr {; Lee Skinner
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 MandelbrotMix4 {; Jim Muth
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2), g=1/f
   h=1/d, j=1/(f-b), z=(-a*b*g*h)^j, k=real(p3)+1
@@ -180,7 +180,7 @@ MandelbrotMix4 {; Jim Muth
   |z| < l
   ;SOURCE: 99msg.frm
 }
- 
+
 Multifractal_5    { ;  Albrecht Niekamp  230603
 ;only integers as first input, second input 5 digits to the right
 ;real(p2) 5digits: shape, outside, in1, in2, in3
@@ -530,7 +530,7 @@ endif
 bo=|z|
 bo<=ba
 }
- 
+
 Multifractal_4    { ;  Albrecht Niekamp  110603
 ;only integers as first input, second input 5 digits to the right
 ;real(p2) 5digits: shape, outside, in1, in2, in3
@@ -866,7 +866,7 @@ else
 endif
 |z|<=ba
 }
- 
+
 Jh_square     { ; Jos Hendriks <jos@hexaedre-fr.com>
                 ; Sat, 4 Jan 2003 20:36:30
                 ; You could call it a lambdaSierpinski formula
@@ -880,7 +880,7 @@ Jh_square     { ; Jos Hendriks <jos@hexaedre-fr.com>
   z=a*a+flip(b*b)+c
   real(z)<p2 && imag(z)<p2
  }
- 
+
 Multifractal     { ; Albrecht Niekamp  -- Apr, 2003
 ;only integers as first input, second input 5 digits to the right
 ;real(p2) factor1,border1
@@ -1179,7 +1179,7 @@ elseif (start)
 endif
 bo<=ba
 }
- 
+
 threecircles2   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                   ; Mon, 20 May 2002 19:38:59
 ; three circles located at the cube roots of 1
@@ -1317,7 +1317,7 @@ endif
 ;bailout continue until we escape
 escaped==0
 }
- 
+
 TMan1              { ; Russell Walsmith
                      ; Fri, 17 Jan 2003 11:12:25
   c1=flip(real(pixel)),c2=imag(pixel),c3=p1
@@ -1329,7 +1329,7 @@ TMan1              { ; Russell Walsmith
   z=z1+z2+z3
   |z| < 8
 }
- 
+
 TMan1           { ; Lee H. Skinner <skinner@thuntek.net>
                   ; Sun, 19 Jan 2003 23:09:22
                   ;
@@ -1342,7 +1342,7 @@ TMan1           { ; Lee H. Skinner <skinner@thuntek.net>
   z=z1+z2+z3
   |z| < 8
 }
- 
+
 tmanlake   { ; lake-transform
              ; Sylvie Gallet <sylviegallet@compuserve.com>
              ; Jan 16, 2000
@@ -1352,7 +1352,7 @@ tmanlake   { ; lake-transform
 ;                  the screen height (0 = bottom, 100 = top)
 ; imag part of p2: amplitude of the wave (try 0.2)
 ; real part of p3: frequency (try 300)
-; imag part of p3: phase 
+; imag part of p3: phase
 ;
 ; Lake transformation
 ; -------------------
@@ -1372,7 +1372,7 @@ if (real(p2) > 0 && real(p2) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2+imag(p3))) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2+imag(p3))) * v
   endif
  pixel = z + z3rd
 endif
@@ -1384,9 +1384,9 @@ t2=z3*z3+2*z1*z2
 t3=z2*z2+2*z3*z1
 z1=t1+c1,z2=t2-c2*c2,z3=t3+c3
 z=z1+z2+z3
-|z| < 8 
+|z| < 8
 }
- 
+
 Wineglass (XAXIS) {; Pieter Branderhorst
   c = z = pixel:
   z = z * z + c
@@ -1394,7 +1394,7 @@ Wineglass (XAXIS) {; Pieter Branderhorst
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_ducks (XAXIS) {; Jm Collard-Richard
    ; Not so ugly at first glance and lot of corners to zoom in.
    ; try this: corners=-1.178372/-0.978384/-0.751678/-0.601683
@@ -1403,7 +1403,7 @@ Jm_ducks (XAXIS) {; Jm Collard-Richard
   |z|<=tst
   ;SOURCE: fractint.frm
 }
- 
+
 IkeNewtMand {; Ron Barnett, 1993
   z = c = pixel:
   zf = z*z*z + (c-1)*z - c
@@ -1412,14 +1412,14 @@ IkeNewtMand {; Ron Barnett, 1993
   0.001 <= |zf|
   ;SOURCE: fractint.frm
 }
- 
+
 J_Lagandre4 {
   c = pixel, z = P1:
   z = (z*z*(35 * z*z - 30) + 3) / 8 + c
   |z| < 100
   ;SOURCE: fractint.frm
 }
- 
+
 REB004K {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
@@ -1428,7 +1428,7 @@ REB004K {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 contest4 {; Kerry Mitchell
           ; slightly optimized version of Contest formula
           ; THIS IS THE ONE USED IN THE 1997 CONTEST
@@ -1437,7 +1437,7 @@ contest4 {; Kerry Mitchell
   |z| <= 4
   ;SOURCE: contest.frm
 }
- 
+
 Dragon8 (ORIGIN) {; Linda Allison
                   ; Edited for Fractint v. 20 by George Martin, 10/98
   z = Pixel
@@ -1446,21 +1446,21 @@ Dragon8 (ORIGIN) {; Linda Allison
   |z| <= power
   ;SOURCE: allison2.frm
 }
- 
+
 Lin-7new5 {; Linda Allison
   z = pixel:
-  z = (fn1(1/z ^ 2))/p1 - p1  
+  z = (fn1(1/z ^ 2))/p1 - p1
   |z| <= p2
   ;SOURCE: allison2.frm
 }
- 
+
 Lin-carr2new {; Original formula by Bob Carr, modified by Linda Allison
   z = pixel:
   z = (fn1(1/(z ^ 2)))/p1
   |z| <= p2
   ;SOURCE: allison2.frm
 }
- 
+
 MyFrac-pc-Lin2 {; Formulas by Bob Carr and Paul Carlson
                 ; combined and modified by Linda Allison
   z = c = pixel:
@@ -1469,42 +1469,42 @@ MyFrac-pc-Lin2 {; Formulas by Bob Carr and Paul Carlson
   |z| <= 100
   ;SOURCE: allison2.frm
 }
- 
+
 MyFract-7new {;Linda Allison
   c = z = 1/pixel:
   z = fn1(z^1.5) + (c + P1)/(z*2)
   |z| <= P1
   ;SOURCE: allison2.frm
 }
- 
+
 MyFractal-lla {; Linda Allison
   z = pixel:
   z = fn1(z) + fn2((z ^ 2)/p1)
   |z| <= 100
   ;SOURCE: allison2.frm
 }
- 
+
 JTet (XAXIS) {; Julia form 1 of the Tetration formula --Lee Skinner
   z = pixel:
   z = (pixel ^ z) + P1
   |z| <= (P2 + 3)
   ;SOURCE: fractint.frm
 }
- 
+
 AltJTet (XAXIS) {; Julia form 2 of the Tetration formula --Lee Skinner
   z = P1:
   z = (pixel ^ z) + P1
   |z| <= (P2 + 3)
   ;SOURCE: fractint.frm
 }
- 
+
 AltJTet (XAXIS) {; Julia form 2 of the Tetration formula --Lee Skinner
   z = P1:
   z = (pixel ^ z) + P1
   |z| <= (P2 + 3)
   ;SOURCE: fractint.frm
 }
- 
+
 NewtonSinExp (XAXIS) {; Chris Green
                       ; Newton's formula applied to sin(x)+exp(x)-1=0.
                       ; Use floating point.
@@ -1515,7 +1515,7 @@ NewtonSinExp (XAXIS) {; Chris Green
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 PseudoZeePi {; Ron Barnett, 1993
   z = pixel:
   x = 1-z^p1
@@ -1523,7 +1523,7 @@ PseudoZeePi {; Ron Barnett, 1993
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 PseudoZeePi {; Ron Barnett, 1993
   z = pixel:
   x = 1-z^p1
@@ -1531,14 +1531,14 @@ PseudoZeePi {; Ron Barnett, 1993
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 PsudoMandel (XAXIS) {; davisl - try center=0,0/magnification=28
   z = Pixel:
   z = ((z/2.7182818)^z)*sqr(6.2831853*z) + pixel
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Eyeball (XAXIS_NOPARM) {
      ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=1:
@@ -1548,25 +1548,25 @@ Eyeball (XAXIS_NOPARM) {
   |z|<=4
   ;SOURCE: choice.frm
 }
- 
+
 Frog (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=|z|:
   z=tanh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
- 
+
 Gamma(XAXIS) {; first order gamma function from Prof. Jm
-              ; "It's pretty long to generate even on a 486-33 
-              ;  comp but there's a lot of corners to zoom in and 
+              ; "It's pretty long to generate even on a 486-33
+              ;  comp but there's a lot of corners to zoom in and
               ;  zoom and zoom...beautiful pictures :)"
   z=pixel, twopi=6.283185307179586, r=10:
   z=(twopi*z)^(0.5)*(z^z)*exp(-z)+pixel
   |z|<=r
   ;SOURCE: fractint.frm
 }
- 
+
 Halley (xyaxis) {; Chris Green. Halley's formula applied to x^7-x=0.
    ; P1 real usually 1 to 1.5, P1 imag usually zero. Use floating point.
    ; Setting P1 to 1 creates the picture on page 277 of Pickover's book
@@ -1578,21 +1578,21 @@ Halley (xyaxis) {; Chris Green. Halley's formula applied to x^7-x=0.
   0.0001 <= |z7-z|
   ;SOURCE: fractint.frm
 }
- 
+
 Ny1 (XYAXIS) {
   z=pixel:
   z=(z^pixel)*sinh(z^pixel)
   |z|<=4
   ;SOURCE: fixrch.frm
 }
- 
+
 Richard5 (XAXIS) {; Jm Collard-Richard
   z = pixel:
   z=sin(z*sinh(z))+pixel
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 Richard8 (XYAXIS) {; Jm Collard-Richard
                    ; This was used for the "Fractal Creations" cover
   z=pixel, sinp = sin(pixel):
@@ -1600,34 +1600,34 @@ Richard8 (XYAXIS) {; Jm Collard-Richard
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 Sam_6 (XYAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z*cos(z) - pixel
   ;SOURCE: sam.frm
 }
- 
+
 Fzppfnth {; Lee Skinner
   z = pixel, f = tanh(pixel):
   z = fn1(z)+f
   |z|<= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_14 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(z)*pixel))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_27 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   sqrz=fn1(z), z=sqrz + 1/sqrz + pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 ZZ (XAXIS) {; Prof Jm using Newton-Raphson method
             ; use floating point with this one
   z=pixel, solution=1:
@@ -1637,14 +1637,14 @@ ZZ (XAXIS) {; Prof Jm using Newton-Raphson method
   0.001 <= |solution-z1|
   ;SOURCE: fractint.frm
 }
- 
+
 Billsfrm (YAXIS) {; Based on a formula by Paul Carlson
   z = pixel:
   z = (fn1(z)^4) / (fn2(z)^3) / (fn3(z)^2) / (fn4(z))
   |z| <=4
   ;SOURCE: brossi.frm
 }
- 
+
 Doozy18 (yaxis) {; Bill Rossi
                  ; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel, c=fn1(z)/fn2(z):
@@ -1655,7 +1655,7 @@ Doozy18 (yaxis) {; Bill Rossi
   |z| <= 4
   ;SOURCE: brossi.frm
 }
- 
+
 NewOne3 (yaxis) {; Bill Rossi
   z = pixel:
   temp1 = fn1(z) / fn2(z)
@@ -1665,50 +1665,50 @@ NewOne3 (yaxis) {; Bill Rossi
   |z| <= 4
   ;SOURCE: brossi.frm
 }
- 
+
 Richard1 (XYAXIS) {; Jm Collard-Richard
   z = pixel:
   sq=z*z, z=(sq*sin(sq)+sq)+pixel
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_25 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z*fn2(z)) + pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnpo {; Lee Skinner
   z = pixel, f = (pixel)^(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_09 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(fn4(z))))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 BillTry3 {; Bill Rossi, billatny@nyiq.net
   z = pixel, c=p1:
   z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0))
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: billspir.frm
 }
- 
+
 BillTry4 {; Bill Rossi
   z = pixel, c=p1:
   z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0))
   z = fn1(z) + c, z = fn2(c) + z
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: billspir.frm
 }
- 
+
 BILL13 (yaxis) {; Bill Rossi
                 ; replaced "pi" with "approxpi". G. Martin, 7/9/99
   z=pixel, approxpi=3.142857142857:
@@ -1717,7 +1717,7 @@ BILL13 (yaxis) {; Bill Rossi
   |z| <= 4
   ;SOURCE: billatny.frm
 }
- 
+
 Oink {
   z = c = pixel + p1:
   r = fn1(1/z) * imag(z)
@@ -1726,33 +1726,33 @@ Oink {
   |z| < 4 + p2
   ;SOURCE: big_pig.frm
 }
- 
+
 Pigalleto {
   z = c = pixel:
-  r = fn1((1/z) / z) + p1 
+  r = fn1((1/z) / z) + p1
   z = fn2(z / r)
   z = z + c
   |z| < 4 + p2
   ;SOURCE: big_pig.frm
 }
- 
+
 Piglet {
   z = c = pixel, p = pixel + p1:
   z = z * z * p
-  r = tan((1/z) / c)  
+  r = tan((1/z) / c)
   z = fn2(z) + fn1(r)
   |z| < 4 + p2
   ;SOURCE: big_pig.frm
 }
- 
+
 Pigs {
   z = pixel:
-  r = z * fn1(z)^e   
+  r = z * fn1(z)^e
   z = (fn2(z) / r) + p1
   |z| < 4
   ;SOURCE: big_pig.frm
 }
- 
+
 BEJ_N39 {
   z=c=pixel, maria=log(z):
   z=fn1(z)
@@ -1760,7 +1760,7 @@ BEJ_N39 {
   |z|<4
   ;SOURCE: bej-mari.frm
 }
- 
+
 BEJ_N41 {
   z=c=pixel, maria=sqr(z)+log(z):
   z=fn1(z)+p1/(maria+pixel)
@@ -1768,8 +1768,8 @@ BEJ_N41 {
   |z|<4
   ;SOURCE: bej-mari.frm
 }
- 
-Carr2178a {; Modified Bob Carr 
+
+Carr2178a {; Modified Bob Carr
            ; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5
   c=sin(conj(-0.81256,-0.2495))
@@ -1787,7 +1787,7 @@ Carr2178a {; Modified Bob Carr
   (|real(z)|) <= bailout
   ;SOURCE: bej4.frm
 }
- 
+
 mandel-newton_j5 {; Modified Sylvie Gallet Frm [101324,3444], 1995
   z = pixel, c = z, iter = 1
   rad = 3.1, center = (1.0,0.1)
@@ -1797,12 +1797,12 @@ mandel-newton_j5 {; Modified Sylvie Gallet Frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = fn1((z*z)/(zn)), z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+fn2(3.099,-3.099)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
 }
- 
+
 mandel-newton_j6e {; Modified Sylvie Gallet Frm [101324,3444], 1995
   z = pixel, c = z, iter = 1
   rad = 3.1, center = (1.0,0.1)
@@ -1814,12 +1814,12 @@ mandel-newton_j6e {; Modified Sylvie Gallet Frm [101324,3444], 1995
   c=sin(conj(-0.81256,-0.1295))
   z = (z-zn)*test2 + zn
   z2 = fn1(z*z/c)-(zn), z4 = (z2*z2), z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(2.079,-2.079)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
 }
- 
+
 mandel-newton_j6g {; Modified Sylvie Gallet Frm [101324,3444], 1995
                    ; Revised for Fractint v20 by G. Martin
   z = pixel, c = z, iter = 1
@@ -1831,14 +1831,14 @@ mandel-newton_j6g {; Modified Sylvie Gallet Frm [101324,3444], 1995
   c1=(-0.7056,-0.0086)
   c=fn1(fn2(conj(-0.80256,-0.1095)))
   z = (z-zn)*test2 + zn
-  z2 = (z^2+(-0.6956,0.10)+(test1/7*pixel)), z4 = (z2*z2) 
+  z2 = (z^2+(-0.6956,0.10)+(test1/7*pixel)), z4 = (z2*z2)
   z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(3.099,-3.099)
   ((|z2| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
 }
- 
+
 BEJ3 {
   z=c=pixel:
   zsqr=z*z*z*z
@@ -1849,7 +1849,7 @@ BEJ3 {
   |z|<=3
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ6 {
   z=(0), c=pixel:
   zsqr^2*z+const
@@ -1859,7 +1859,7 @@ BEJ6 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_23 {
   z=pixel:
   z1=(z*z)^(z-z)*z
@@ -1869,7 +1869,7 @@ BEJ_23 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
             ; Fourth line began
             ; z3=z^(zsqr=z*z)
@@ -1883,7 +1883,7 @@ BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_New1 {
   z=pixel, root=1:
   z=z*z/p1
@@ -1896,7 +1896,7 @@ BEJ_New1 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
               ; For FN1 check out
   z= pixel, c =(-0.7456,3.245)
@@ -1907,7 +1907,7 @@ BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel)
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   z7=z*z*z
   z8=(z+c)^pixel/(z*z+(zn*z2)/z7)
@@ -1918,7 +1918,7 @@ BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej's.frm
 }
- 
+
 BJ-BC1974 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   c=z=pixel, d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/5)), bailout=4
@@ -1930,7 +1930,7 @@ BJ-BC1974 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: bej's.frm
 }
- 
+
 CGhalley (XYAXIS) {; Chris Green -- Halley's formula
    ; P1 real usually 1 to 1.5, P1 imag usually zero. Use floating point.
   z=(1,1):
@@ -1941,7 +1941,7 @@ CGhalley (XYAXIS) {; Chris Green -- Halley's formula
   0.0001 <= |z7-z-pixel|
   ;SOURCE: fractint.frm
 }
- 
+
 CGNewtonSinExp (XAXIS) {
   z=pixel:
   z1=exp(z)
@@ -1950,7 +1950,7 @@ CGNewtonSinExp (XAXIS) {
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 moc {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -1958,7 +1958,7 @@ moc {
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 BEJ_25 {
   z=pixel:
   z1=z*z*z
@@ -1968,45 +1968,45 @@ BEJ_25 {
   |z|<=4
   ;SOURCE: bej's.frm
 }
- 
+
 Beck {
-  z = pixel, sp = sin(sqr(pixel)): 
-  r = z * (fn1(1/z) /sp) + p1  
-  q = fn2(z) * sp + p2 
+  z = pixel, sp = sin(sqr(pixel)):
+  r = z * (fn1(1/z) /sp) + p1
+  q = fn2(z) * sp + p2
   z = r * (whitesq == 1) + q * (whitesq == 0)
   |z| <= 4
   ;SOURCE: beck.frm
 }
- 
+
 DaSum_PHC {
   z1 = pixel + p1, z2 = pixel:
   z1 = (z1 - 1) * (z1 + 0.5) * (z1*z1+1)
   z1 = (z1 * 0.3) - ((z1)/fn1(z1))
   z2 = z2 + p2, r = fn2(z2) * z2^2, q = z2^e
-  z2 = (z2 - imag(1/r) / z2 - real(1/q)) 
+  z2 = (z2 - imag(1/r) / z2 - real(1/q))
   z = (z1 * (whitesq == 1)) + (z2 * (whitesq == 0))
   |z| <= 4
   ;SOURCE: beck.frm
 }
- 
+
 Peace_Magnet_PHC {
   z = r = pixel, c1 = p1 - 1, c2 = p1 - 2:
   r = ((z*z + (p2 - 1)) / (2*z + (p2 - 2)))^2
-  z = (z*z + c1)/(z+z+c2) 
+  z = (z*z + c1)/(z+z+c2)
   z = (z*z * (whitesq == 1)) + (r * z * (whitesq == 0))
   |z| < 100
   ;SOURCE: beck.frm
 }
- 
+
 Peace_PHC {
   z = pixel:
   r = ((z*z + (p1 - 1)) / (2*z + (p1 - 2)))^2
   q = fn1(z) * fn2(z) + p2
-  z = (r * (whitesq == 1)) + (q * (whitesq == 0))  
+  z = (r * (whitesq == 1)) + (q * (whitesq == 0))
   |z| < 100
   ;SOURCE: beck.frm
 }
- 
+
 Mandelbrot (XAXIS) {; Mark Peterson
                     ; Classical fractal showing LastSqr speedup
   z = Pixel, z = Sqr(z):  ; Start with z**2 to initialize LastSqr
@@ -2015,7 +2015,7 @@ Mandelbrot (XAXIS) {; Mark Peterson
   LastSqr <= 4            ; Use LastSqr instead of recalculating
   ;SOURCE: fractint.frm
 }
- 
+
 OK-40 {; DISECTED OK-39
        ; (ASSUMING YOU USE OK-39 WITH FN1= IDENT & FN2 = SQR...)
   z = pixel, cx = fn1(real(pixel)), cy = fn2(imag(pixel)), k = 2 + p1:
@@ -2028,7 +2028,7 @@ OK-40 {; DISECTED OK-39
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 Newton_elliptic {; Tim Wegner - use float=yes and periodicity=0
    ; fractal generated by Newton formula f(z) = (z^3 + c*z^2 +1)^2
    ; try p1 = 1 and p2 = .0001
@@ -2039,35 +2039,35 @@ Newton_elliptic {; Tim Wegner - use float=yes and periodicity=0
   p2 <= |z3 + p1*z2 + 1|  ; no need for sqr because sqr(z)==0 iff z==0
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnre {; Lee Skinner
   z = pixel, f = 1./(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_19 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z)*pixel*fn2(fn3(z)+pixel)
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_21 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z^pixel)*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfncs {; Lee Skinner
   z = pixel, f = 1./cos(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Ent2 {; Scott Taylor
       ; try params=2/1, functions=cos/cosh, potential=255/355
   z = Pixel, y = fn1(z), base = log(p1):
@@ -2075,21 +2075,21 @@ Ent2 {; Scott Taylor
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_26 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(z)) + pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 LeeMandel3 (XAXIS) {; Kevin Lee
   z=Pixel, c=Pixel-sqr(z):
   c=Pixel+c/z, z=c-z*pixel
   |z|<4
   ;SOURCE: fractint.frm
 }
- 
+
 HyperMandel {; Chris Green.
    ; A four dimensional version of the mandelbrot set.
    ; Use P1 to select which two-dimensional plane of the
@@ -2103,27 +2103,27 @@ HyperMandel {; Chris Green.
   |a|+|b| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Richard11 (XYAXIS) {; Jm Collard-Richard
   z=pixel:
   z=1/sinh(1/(z*z))
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 DeltaLog (XAXIS) {; Mark Peterson
   z = pixel, c = log(pixel):
   z = sqr(z) + c
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 T02-04 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Mandelbrot)
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -2134,7 +2134,7 @@ T02-04 {; V.1.1 - earlier versions may be discarded
   |z|<100
   ;SOURCE: chby4.frm
 }
- 
+
 Carr1795 {
   z=1/(pixel-real(1/pixel)-sinh(1/pixel-0.25))
   c=(1/(pixel-(0.124/z*(0.524/pixel/z)))):
@@ -2142,7 +2142,7 @@ Carr1795 {
   |real(z)| <=4
   ;SOURCE: 39carr.frm
 }
- 
+
 Carr1540 {
   z=sqr(1/pixel)+sqr(pixel)
   c=sin(tan(exp(z-1))):
@@ -2150,14 +2150,14 @@ Carr1540 {
   |real(z)| <=4
   ;SOURCE: 34carr.frm
 }
- 
+
 August {; Sylvie Gallet, Dec 1997
         ; Newton's method applied to z^4 - 4 = 0
         ; Coloring algorithm by Scott Burns
         ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0, sq2 = sqrt(2)
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-sq2) 
+  mz = abs(cabs(z1)-sq2)
   :
   IF (mz > 0.1)
     z2 = z1*z1
@@ -2176,7 +2176,7 @@ August {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 February {; Sylvie Gallet, Dec 1997
           ; Newton's method applied to z^3 - 1 = 0
           ; Coloring algorithm by Scott Burns
@@ -2189,7 +2189,7 @@ February {; Sylvie Gallet, Dec 1997
   IF (m1 <= limit)
     mk = abs(cabs(z1-k)-sqr2)
     IF (mk <= limit)
-      z = exp((2 + c*mk)*a) 
+      z = exp((2 + c*mk)*a)
       cont = 0
     ELSE
       z = exp(c*m1*a)
@@ -2216,13 +2216,13 @@ February {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 January-2 {; Sylvie Gallet, Dec 1997
            ; Based on Scott Burns equation solver applied to z^3 - 1 = 0
            ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-1) 
+  mz = abs(cabs(z1)-1)
   :
   IF (mz >= 0.1)
     z2 = z1*z1
@@ -2237,13 +2237,13 @@ January-2 {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 January-3 {; Sylvie Gallet, Dec 1997
            ; Based on Scott Burns equation solver applied to z^4 - 1 = 0
            ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-1) 
+  mz = abs(cabs(z1)-1)
   :
   IF (mz >= 0.1)
     z2 = z1*z1
@@ -2258,13 +2258,13 @@ January-3 {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 January-3 {; Sylvie Gallet, Dec 1997
            ; Based on Scott Burns equation solver applied to z^4 - 1 = 0
            ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-1) 
+  mz = abs(cabs(z1)-1)
   :
   IF (mz >= 0.1)
     z2 = z1*z1
@@ -2279,7 +2279,7 @@ January-3 {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 May {; Sylvie Gallet, Dec 1997
      ; Newton's method applied to z^3 - 1 = 0
      ; Coloring algorithm by Scott Burns
@@ -2302,7 +2302,7 @@ May {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 May-2 {; Sylvie Gallet, Dec 1997
        ; Newton's method applied to z^3 - 1 = 0
        ; Use decomp = 256 and periodicity = 0
@@ -2329,7 +2329,7 @@ May-2 {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 98msg.frm
 }
- 
+
 New1 {
   z1 = pixel, iter = 0, imag1 = imag(p1), imag1inv = 1 / imag1
   a = p1*(0,0.0245436)    ; real(p1) * 2i pi / 256
@@ -2348,7 +2348,7 @@ New1 {
   cont
   ;SOURCE: calendar.frm
 }
- 
+
 November {; Sylvie Gallet, Dec 1997
           ; Coloring algorithm by Scott Burns
           ; Use decomp = 256 and periodicity = 0
@@ -2368,7 +2368,7 @@ November {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: calendar.frm
 }
- 
+
 January {; Sylvie Gallet, Dec 1997
          ; Based on Scott Burns equation solver applied to z^3-1 = 0
          ; Use decomp = 256
@@ -2382,14 +2382,14 @@ January {; Sylvie Gallet, Dec 1997
   ELSE
     z2 = z1*z1
     z1 = ((1,-1)*z2*z2 + (7,1)*z1) / (2*z1*z2 + 6)
-    mz = abs(cabs(z1)-1) 
+    mz = abs(cabs(z1)-1)
     cont = 1
     iter = iter + 1
   ENDIF
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; Converted to if.else by Sylvie Gallet and George Martin 3/97
           ; passes=1 needs to be used with this PHC formula.
@@ -2428,7 +2428,7 @@ carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
    mz <= bailout
   ;SOURCE: ifs196.frm
 }
- 
+
 Carr2771 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Modified for IF..ELSE logic by Sylvie Gallet, 05/15/97
@@ -2462,7 +2462,7 @@ Carr2771 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   abs(z) <= bailout
   ;SOURCE: phctopng.frm
 }
- 
+
 Carr2579 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -2480,7 +2480,7 @@ Carr2579 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 96msg.frm
 }
- 
+
 Carr1989 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel-conj(pixel/5), p10=10*pixel, th1=tanh(1), c=z-0.099/pixel
@@ -2498,35 +2498,35 @@ Carr1989 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Jm_17 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z)*pixel*fn2(fn3(z))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_02 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=(z^pixel)*fn1(z^pixel)
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 AltMTet (XAXIS) {; Mandelbrot form 2 of the Tetration formula--Lee Skinner
   z = 0:
   z = (pixel ^ z) + pixel
   |z| <= (P1 + 3)
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_15 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   f2=fn2(z), z=fn1(f2)*fn3(fn4(f2))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 inandout03 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
    ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -2546,7 +2546,7 @@ inandout03 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   mz <= test
   ;SOURCE: fract196.frm
 }
- 
+
 inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
    ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -2564,21 +2564,21 @@ inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   mz <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Jm_12 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(z)*pixel))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_20 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z^pixel)
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Larry {; Mutation of 'Michaelbrot' and 'Element'
     ; Original formulas by Michael Theroux [71673,2767]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -2603,7 +2603,7 @@ Larry {; Mutation of 'Michaelbrot' and 'Element'
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Zeppo {; Mutation of 'Liar4'.
     ; Original formula by Chuck Ebbert [76306,1226]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -2622,7 +2622,7 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 shifter01 {; After shift, switch from z*z to z*z*z
            ; Bradley Beacham  [74223,2745]
            ; Modified for if..else logic 3/18/97 by Sylvie Gallet
@@ -2637,7 +2637,7 @@ shifter01 {; After shift, switch from z*z to z*z*z
   |z| < test
   ;SOURCE: fract196.frm
 }
- 
+
 bizarre {; Edited for Fractint v. 20 by George Martin 10/98
   z=sqr(z)+pixel
   z=exp(z)+pixel
@@ -2646,14 +2646,14 @@ bizarre {; Edited for Fractint v. 20 by George Martin 10/98
   |z|<=4
   ;SOURCE: bizarre.frm
 }
- 
+
 Fzpcocoh {
   z = pixel, f = 1. / cosh(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 Bali {; The difference of two squares
   z=x=1/pixel, c= fn1 (z):
   z = (x+c) * (x-c)
@@ -2661,7 +2661,7 @@ Bali {; The difference of two squares
   |z| <=3
   ;SOURCE: fractint.frm
 }
- 
+
 Kreagor {
   z = c = pixel:
   z = fn1(z) + c + p1
@@ -2670,28 +2670,28 @@ Kreagor {
   |z| <= 4 + p2
   ;SOURCE: d-rock.frm
 }
- 
+
 MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
   z = pixel:
   z = (pixel ^ z) + pixel
   |z| <= (P1 + 3)
   ;SOURCE: fractint.frm
 }
- 
+
 Richard3 (XAXIS) {; Jm Collard-Richard
   z = pixel:
   sh=sinh(z), z=(1/(sh*sh))+pixel
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 Sterling3 (XAXIS) {; davisl
   z = Pixel:
   z = ((z/2.7182818)^z)/sqr(6.2831853*z) - pixel
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 ZZa (XAXIS) {; Prof Jm using Newton-Raphson method
              ; use floating point with this one
   z=pixel, solution=1:
@@ -2701,21 +2701,21 @@ ZZa (XAXIS) {; Prof Jm using Newton-Raphson method
   .001 <= |solution-z1|
   ;SOURCE: fractint.frm
 }
- 
+
 a--mand {
   z = c = pixel:
   z = (sqr(z)+c) / |c|
   |z|<p1
   ;SOURCE: eli.frm
 }
- 
+
 aa-mand-re (XAXIS) {
   z = c = pixel:
   z = sqr(z)+c
   real(z)<p1
   ;SOURCE: eli.frm
 }
- 
+
 Newton3 {; Chris Green
          ; Try p1=1.8 and p2 = 3.0
   z  = (1,1):
@@ -2725,7 +2725,7 @@ Newton3 {; Chris Green
   0.0001 < |z3|
   ;SOURCE: improved.frm
 }
- 
+
 Mind_3 {
    ; This Fractint .FRM file (c) 1993 by:
    ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
@@ -2739,56 +2739,56 @@ Mind_3 {
   |z| <= 4
   ;SOURCE: physics.frm
 }
- 
+
 Daisy (ORIGIN) {; Mark Peterson
   z = pixel:
   z = z*z + (0.11031, -0.67037)
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Dragon (ORIGIN) {; Mark Peterson
   z = Pixel:
   z = sqr(z) + (-0.74543, 0.2)
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnht {; Lee Skinner
   z = pixel, f = cosh(pixel)/sinh(pixel):
   z = fn1(z)+f
   |z|<= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnta {; Lee Skinner
   z = pixel, f = tan(pixel):
   z = fn1(z) + f
   |z|<= 50
   ;SOURCE: fractint.frm
 }
- 
+
 MyFractal {; Fractal Creations example
   c = z = 1/pixel:
   z = sqr(z) + c
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Richard4 (XAXIS) {; Jm Collard-Richard
   z = pixel:
   z2=z*z, z=(1/(z2*cos(z2)+z2))+pixel
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 InvMandel (XAXIS) {; Mark Peterson
   c = z = 1 / pixel:
   z = sqr(z) + c
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Newton4 (XYAXIS) {; Mark Peterson
    ; Note that floating-point is required to make this compute accurately
   z = pixel, Root = 1:
@@ -2798,21 +2798,21 @@ Newton4 (XYAXIS) {; Mark Peterson
   .004 <= |z4 - Root|
   ;SOURCE: fractint.frm
 }
- 
+
 Richard2 (XYAXIS) {; Jm Collard-Richard
   z = pixel:
   z=1/(sin(z*z+pixel*pixel))
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 Richard6 (XYAXIS) {; Jm Collard-Richard
   z = pixel:
   z=sin(sinh(z))+pixel
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 G-3-03-M  { ; Sylvie Gallet [101324,3444], 1996
             ; Modified Gallet-3-03 formula
   z = pixel :
@@ -2823,37 +2823,37 @@ G-3-03-M  { ; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Newton_real {; Sylvie Gallet [101324,3444], 1996
-   ; Newton's method applied to   x^3 + y^2 - 1 = 0 
+   ; Newton's method applied to   x^3 + y^2 - 1 = 0
    ;                              y^3 - x^2 + 1 = 0
    ;                              solution (0,-1)
-   ; One parameter : real(p1) = bailout value 
-  z = pixel, x = real(z), y = imag(z) : 
-  xy = x*y                                
-  d = 9*xy+4, x2 = x*x, y2 = y*y        
-  c = 6*xy+2 
+   ; One parameter : real(p1) = bailout value
+  z = pixel, x = real(z), y = imag(z) :
+  xy = x*y
+  d = 9*xy+4, x2 = x*x, y2 = y*y
+  c = 6*xy+2
   x1 = x*c - (y*y2 - 3*y - 2)/x
   y1 = y*c + (x*x2 + 2 - 3*x)/y
   z = (x1+flip(y1))/d, x = real(z), y = imag(z)
   (|x| >= p1) || (|y+1| >= p1)
   ;SOURCE: fractint.frm
 }
- 
+
 Sterling2 (XAXIS) {; davisl
   z = Pixel:
   z = ((z/2.7182818)^z)/sqr(6.2831853*z) + pixel
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Fzpfncoh {; Lee Skinner
   z = pixel, f = 1./cosh(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 many_man {; Modified Stephen C. Ferguson formula
           ; adapted for Fractint by Les St Clair, 1997
           ; use real p1 to set bailout (try p1=4)
@@ -2864,7 +2864,7 @@ many_man {; Modified Stephen C. Ferguson formula
   |z| <=p1
   ;SOURCE: many_man.frm
 }
- 
+
 Gallet-7-01 {; Sylvie Gallet [101324,3444], 1996
   j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
   z = pixel :
@@ -2876,7 +2876,7 @@ Gallet-7-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-7.frm
 }
- 
+
 Gallet-7-02 {; Sylvie Gallet [101324,3444], 1997
   j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
   z = pixel:
@@ -2888,7 +2888,7 @@ Gallet-7-02 {; Sylvie Gallet [101324,3444], 1997
     |z| <= 32
   ;SOURCE: gallet-7.frm
 }
- 
+
 Gallet-7-03 {; Sylvie Gallet [101324,3444], 1997
   j = -0.5 + flip(0.5*sqrt(3)), j2 = j*j
   z = pixel:
@@ -2900,7 +2900,7 @@ Gallet-7-03 {; Sylvie Gallet [101324,3444], 1997
     |z| <= 32
   ;SOURCE: gallet-7.frm
 }
- 
+
 Gallet-10-01 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Oct 1997
   z1 = c = pixel, mz1 = cabs(fn2(z1)), k = real(p1)*mz1
   bailout = real(p2), z = imag(p1) :
@@ -2915,7 +2915,7 @@ Gallet-10-01 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Oct 1997
   mz1 <= bailout
   ;SOURCE: gallet10.frm
 }
- 
+
 Gallet-10-02 {; Modified Paul W. Carlson formula ( Petals_Mset)
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -2982,7 +2982,7 @@ Gallet-10-02 {; Modified Paul W. Carlson formula ( Petals_Mset)
   d == 0 && |w| < bailout
   ;SOURCE: 98msg.frm
 }
- 
+
 Gallet-10-03 {; Modified Paul W. Carlson formula ( Petals_Mset)
               ; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
     ;
@@ -3051,7 +3051,7 @@ Gallet-10-03 {; Modified Paul W. Carlson formula ( Petals_Mset)
   d == 0 && |w| < 16
   ;SOURCE: gallet10.frm
 }
- 
+
 Gallet-10-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
   ; Yet another formula based on Earl Hinrich's "Invasion" algorithm
   ;
@@ -3080,7 +3080,7 @@ Gallet-10-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
   m <= 10
   ;SOURCE: gallet10.frm
 }
- 
+
 Gallet-10-05 {; Modified Paul W. Carlson formula
               ; Sylvie Gallet, sylvie_gallet@compuserve.com, 1998
     ;
@@ -3140,7 +3140,7 @@ Gallet-10-05 {; Modified Paul W. Carlson formula
   d == 0 && |w| < 16000
   ;SOURCE: gallet10.frm
 }
- 
+
 Gallet-8-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < p1 <= 1 (default = 1)
@@ -3161,14 +3161,14 @@ Gallet-8-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
-Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996 
+
+Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996
   z = Pixel*(0.0,1.0) :
   n = sin(z)-z-pixel, z = z-n/(cos(z)-pixel)
-  |n| > real(p1) 
+  |n| > real(p1)
   ;SOURCE: gallet-3.frm
 }
- 
+
 HRing_J {; This thing is capable of generating Herman rings for alpha
          ; equal to exp(2*pi*i*a), a irrational.
          ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
@@ -3194,7 +3194,7 @@ HRing_J {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J {; This thing is capable of generating Herman rings for alpha
          ; equal to exp(2*pi*i*a), a irrational.
          ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
@@ -3220,7 +3220,7 @@ HRing_J {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J2 {; This thing is capable of generating Herman rings for alpha
           ; equal to exp(2*pi*i*a), a irrational.
           ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
@@ -3247,7 +3247,7 @@ HRing_J2 {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_Ma {; Mandelbrot set slice, alpha varies, c fixed.
           ; p2: c. p3: Orbit trap radius about 0, reciprocal is
           ; used for infinity.
@@ -3283,7 +3283,7 @@ HRing_Ma {; Mandelbrot set slice, alpha varies, c fixed.
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
           ; p1: alpha. p3: Orbit trap radius about 0, reciprocal is
           ; used for infinity.
@@ -3319,7 +3319,7 @@ HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 sg_ifs_45_J {
   a0=0.40944, b0=0.63556, c0=0.69977, d0=-0.36429
   a1=0.44003, b1=-0.21839, c1=0.41333, d1=0.37676
@@ -3346,14 +3346,14 @@ sg_ifs_45_J {
   |z|<=p1
   ;SOURCE: 99msg.frm
 }
- 
+
 Sterling (XAXIS) {; davisl
   z = Pixel:
   z = ((z/2.7182818)^z)/sqr(6.2831853*z)
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
              ; resolution specific - 1024x768
              ; p1 = 1st julia parameters
@@ -3368,16 +3368,16 @@ JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
   |z| < 4
   ;SOURCE: phc_1.frm
 }
- 
+
 BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
   tmp1=fn1(z)^fn2(z)
   tmp2=fn3(z)^fn4(z)
-  z=(tmp1/tmp2) 
+  z=(tmp1/tmp2)
   |z| <= 4
   ;SOURCE: jpl1.frm
 }
- 
+
 CarlsonJ1 {; from P. Carlson, modified by J.P. Louvet
            ; P1 = c
            ; P2 = degre
@@ -3388,7 +3388,7 @@ CarlsonJ1 {; from P. Carlson, modified by J.P. Louvet
   |z|<=P3
   ;SOURCE: jpl1.frm
 }
- 
+
 InverseJulia {; J.P. Louvet
               ; P1 = c
               ; P2 = iter (normalement 4)
@@ -3398,7 +3398,7 @@ InverseJulia {; J.P. Louvet
   |z|<=P2
   ;SOURCE: jpl1.frm
 }
- 
+
 InverseJuliaFn {; after Pokorny
                 ;  modified by J.P. Louvet
                 ; P1 = c
@@ -3409,7 +3409,7 @@ InverseJuliaFn {; after Pokorny
   |z|<=P2
   ;SOURCE: jpl1.frm
 }
- 
+
 OK-01 {; TRY P1 REAL = 10000, FN1 = SQR
   z = 0, c = pixel:
   z = (c^z) + c
@@ -3417,15 +3417,15 @@ OK-01 {; TRY P1 REAL = 10000, FN1 = SQR
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 spiderM {
-  z=pixel, f=pixel, g=pixel: 
+  z=pixel, f=pixel, g=pixel:
   f=f/p1+z
   z=fn1(z^(p2+g))+fn2(f)
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: jpl1.frm
 }
- 
+
 JPL4' (yaxis) {; J.P. Louvet
     ; Edited for Fractint v. 20 by George Martin, 10/98
   z=Pixel
@@ -3458,7 +3458,7 @@ Carr2918 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2922 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
           ; Modified for IF..ELSE logic by Sylvie Gallet, 05/20/97
@@ -3487,7 +3487,7 @@ Carr2922 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: phctopng.frm
 }
- 
+
 Carr2935 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=conj(pixel)-pixel+conj(0.1/pixel)
@@ -3504,7 +3504,7 @@ Carr2935 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2939 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=flip(flip(pixel/2))^5-conj(0.13/pixel)-flip(0.1/pixel)+0.3
@@ -3521,7 +3521,7 @@ Carr2939 {; Modified Sylvie Gallet frm. [101324,3444],1996
   imag(flip(z))<=bailout
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2932 {; Modified OK-42
           ; passes=1 needs to be used with this PHC formula.
   b5=pixel
@@ -3535,7 +3535,7 @@ Carr2932 {; Modified OK-42
   |z|<=4
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2931 {; Modified OK-42
           ; passes=1 needs to be used with this PHC formula.
   b5=pixel
@@ -3549,7 +3549,7 @@ Carr2931 {; Modified OK-42
   |z|<=4
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2930 {; Modified OK-42
           ; passes=1 needs to be used with this PHC formula.
   b5=pixel
@@ -3563,7 +3563,7 @@ Carr2930 {; Modified OK-42
   |z|<=4
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2891 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=pixel-conj(0.1/pixel)-flip(0.01/pixel)
@@ -3582,7 +3582,7 @@ Carr2891 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42ucarr.frm
 }
- 
+
 Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=(sqr(pixel))/(conj(2/pixel)*sin(2/pixel))
@@ -3599,11 +3599,11 @@ Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
   imag(flip(z))<=bailout
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2907 (XYAXIS) {; Halley PHC
                    ; passes=1 needs to be used with this PHC formula.
   b5=1/pixel
-  z=b5*(whitesq+b5*(whitesq==0)): 
+  z=b5*(whitesq+b5*(whitesq==0)):
   z5=z*z*z*z*z
   z6=z5*z
   z7=z6*z
@@ -3611,7 +3611,7 @@ Carr2907 (XYAXIS) {; Halley PHC
   0.0001<=|z7-z|
   ;SOURCE: 42ucarr.frm
 }
- 
+
 Carr2904 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=(pixel-conj(0.1/pixel-flip(0.01/pixel)))^5
@@ -3629,8 +3629,8 @@ Carr2904 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42ucarr.frm
 }
- 
-Carr2926 {; Modified-inandout04 
+
+Carr2926 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -3646,7 +3646,7 @@ Carr2926 {; Modified-inandout04
   |z|<=test
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2882 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b3=|sin(conj(conj(pixel^30.5)))|
@@ -3665,7 +3665,7 @@ Carr2882 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42ucarr.frm
 }
- 
+
 JoWe55c36a {; from a modified Carr-formula
             ; 6/1997 JoWeber CIS [100424,35]
   c=z=p1/pixel:
@@ -3674,7 +3674,7 @@ JoWe55c36a {; from a modified Carr-formula
   |z| <=p3
   ;SOURCE: jo_we_71.frm
 }
- 
+
 JoWe55d36a {; from a modified Carr-formula
             ; 5/1999 JoWeber CIS [100424,35]
   c=z=p1/pixel:
@@ -3683,7 +3683,7 @@ JoWe55d36a {; from a modified Carr-formula
   |z| <=p3
   ;SOURCE: jo_we_71.frm
 }
- 
+
 Carr2884 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
           ; Rewritten for if..else by Sylvie Gallet 5/22/98
@@ -3713,7 +3713,7 @@ Carr2884 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: 98msg.frm
 }
- 
+
 Carr2958 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
           ; Converted to IF..ELSE logic by Sylvie Gallet, 02/21/98
@@ -3739,7 +3739,7 @@ Carr2958 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z <= bailout
   ;SOURCE: 42wcarr.frm
 }
- 
+
 JoWe55c36b {; from a modified Carr-formula
             ; 6/1997 JoWeber CIS [100424,35]
   c=z1=z2=p1/pixel:
@@ -3749,7 +3749,7 @@ JoWe55c36b {; from a modified Carr-formula
   |z| <=p3
   ;SOURCE: jo_we_71.frm
 }
- 
+
 JoWe_34 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -3758,7 +3758,7 @@ JoWe_34 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_58_3 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3768,7 +3768,7 @@ JoWe_58_3 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 jowe_62_1 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3783,7 +3783,7 @@ jowe_62_1 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_63 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3792,7 +3792,7 @@ jowe_63 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_64 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3805,7 +3805,7 @@ jowe_64 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_65 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3814,7 +3814,7 @@ jowe_65 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_65_1 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3823,7 +3823,7 @@ jowe_65_1 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_65_1_phc {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3832,7 +3832,7 @@ jowe_65_1_phc {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_66 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3841,7 +3841,7 @@ jowe_66 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_66_PHC {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -3850,7 +3850,7 @@ jowe_66_PHC {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_67 {; by Jo Weber [100424,35], 12/1996
   z=pixel
   bailout=p3:
@@ -3859,7 +3859,7 @@ jowe_67 {; by Jo Weber [100424,35], 12/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_67_1 {; by Jo Weber [100424,35], 12/1996
   z=pixel
   bailout=p3:
@@ -3868,7 +3868,7 @@ jowe_67_1 {; by Jo Weber [100424,35], 12/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_67_2 {; by Jo Weber [100424,35], 12/1996
   z=c=pixel
   bailout=p3:
@@ -3881,7 +3881,7 @@ jowe_67_2 {; by Jo Weber [100424,35], 12/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 jowe_67_3 {; by Jo Weber [100424,35], 12/1996
   z=pixel
   bailout=p3:
@@ -3890,7 +3890,7 @@ jowe_67_3 {; by Jo Weber [100424,35], 12/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 JoWe_xy_35 {; Jo Weber [100424,35] 11/1996
             ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=3*sin(pixel)-5*sqr(sqr(sin(pixel)))
@@ -3904,7 +3904,7 @@ JoWe_xy_35 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 JoWe_XY_51m_1 {; Jo Weber [100424,35] 11/1996
                ; Added variable "newpixel". G. Martin 6/27/99
   k=(6,4), l = (0,4)
@@ -3919,7 +3919,7 @@ JoWe_XY_51m_1 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 JoWe_XY_51m_3 {; Jo Weber [100424,35] 11/1996
                ; Added variable "newpixel". G. Martin 6/27/99
   k=(0.6,0.44), l = (0,0.4)
@@ -3934,7 +3934,7 @@ JoWe_XY_51m_3 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_54.frm
 }
- 
+
 JoWe_XY_14 {; Jo Weber [100424,35], 10/1996
             ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -3946,7 +3946,7 @@ JoWe_XY_14 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17b2 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -3958,7 +3958,7 @@ JoWe_XY_17b2 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17b3 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -3970,7 +3970,7 @@ JoWe_XY_17b3 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17d2 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
               ; Added variable "newpixel". G. Martin 6/27/99
@@ -3984,7 +3984,7 @@ JoWe_XY_17d2 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_xy_17f {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -3996,7 +3996,7 @@ JoWe_xy_17f {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_xy_17g {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -4008,7 +4008,7 @@ JoWe_xy_17g {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_xy_17h {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
              ; Added variable "newpixel". G. Martin 6/27/99
@@ -4022,7 +4022,7 @@ JoWe_xy_17h {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_xy_09 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -4036,7 +4036,7 @@ JoWe_xy_09 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_xy_10 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -4050,7 +4050,7 @@ JoWe_xy_10 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_xy_12 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -4064,7 +4064,7 @@ JoWe_xy_12 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 Carr1977 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel
@@ -4082,7 +4082,7 @@ Carr1977 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1978 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=(-0.7456,0.2), p10=10*pixel
@@ -4100,7 +4100,7 @@ Carr1978 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1979 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, c4=c^4, p10=10*pixel
@@ -4118,7 +4118,7 @@ Carr1979 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1980 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=(-0.63,-0.4), p4=pixel^4, p10=10*pixel, th1=tanh(1)
@@ -4136,7 +4136,7 @@ Carr1980 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1981 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
@@ -4154,7 +4154,7 @@ Carr1981 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1984 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
@@ -4172,7 +4172,7 @@ Carr1984 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1985 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel
@@ -4190,7 +4190,7 @@ Carr1985 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1986 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=(-0.7456,0.2), p10=10*pixel, th1=tanh(1)
@@ -4208,7 +4208,7 @@ Carr1986 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1991 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z =imag(pixel), c =pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
@@ -4226,7 +4226,7 @@ Carr1991 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1993 {; Modified Sylvie Gallet frm.
   z=imag(pixel), c=pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
   compt=0, limit=real(p1*cos(pixel/5)), bailout=4
@@ -4238,7 +4238,7 @@ Carr1993 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2038 {; Modified Sylvie Gallet frm.
   c=z=pixel-log(cos(0.01/pixel))/pixel-1/log(flip(imag(0.305/pixel)))
   compt=0, limit=real(p1*cos(pixel/5)), bailout=4
@@ -4250,8 +4250,8 @@ Carr2038 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42acarr.frm
 }
- 
-Carr2050 {; Modified Sylvie Gallet frm. 
+
+Carr2050 {; Modified Sylvie Gallet frm.
   z=c=sinh((-0.7456,0.2)*(pixel))*sqr(pixel)\
         -conj(0.010/pixel)-flip(0.010/pixel)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -4268,7 +4268,7 @@ Carr2050 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42bcarr.frm
 }
- 
+
 Carr2055 {; Modified Sylvie Gallet frm.
   z=sqr(sqr(conj(pixel)))-(conj(0.020/pixel))-(flip(0.020/pixel))
   c=(-0.7456,0.13)+0.009/pixel
@@ -4281,7 +4281,7 @@ Carr2055 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42bcarr.frm
 }
- 
+
 Carr2058 {; Modified Sylvie Gallet frm.
   z=pixel+1/sqrt(0.1/pixel)*(tan(0.1/pixel))
   c=(-0.7456,-0.13)-0.01/pixel
@@ -4294,15 +4294,15 @@ Carr2058 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42bcarr.frm
 }
- 
-Carr2106 {; Modified Sylvie Gallet frm. 
+
+Carr2106 {; Modified Sylvie Gallet frm.
   z=c=pixel-2/(sinh(0.10/pixel)-sqr(tanh(0.010/pixel)))
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z*z+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -4311,7 +4311,7 @@ Carr2106 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42bcarr.frm
 }
- 
+
 Carr2111 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.159)
   z=pixel-1/log(0.050/pixel)-cos(0.10/pixel+1.25)+conj(0.0250/pixel)
@@ -4326,7 +4326,7 @@ Carr2111 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42ccarr.frm
 }
- 
+
 Carr2112 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=pixel-cos(0.10/pixel+1.25)+conj(0.10/pixel+1.35)
@@ -4341,7 +4341,7 @@ Carr2112 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42ccarr.frm
 }
- 
+
 JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
   z = c =pixel:
   t=fn1(z)
@@ -4356,107 +4356,107 @@ JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
   |z|<=4
   ;SOURCE: phc.frm
 }
- 
+
 JoWe_04a (XYAXIS) {; Jo Weber [100424,35], 6/1996
                    ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=abs(real(pixel)) + flip(imag(pixel))
   newpixel=real(newpixel) + flip(abs(imag(newpixel)))
   z = newpixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+newpixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_04b (XYAXIS) {; Jo Weber [100424,35], 6/1996
                    ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=pixel*(-1)^(pixel>0)
   z = newpixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+newpixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_04c (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=fn2(a1)+fn3(a2)+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_09 (XYAXIS) {; Original formula Whatever_the_name
                       ; modified by Jo Weber [100424,35], 6/1996
   z = pixel:
   z=fn1(z)*fn2(z)+(p1/z*z)+pixel
   ;SOURCE: jo_we_31.frm
 }
- 
+
 JoWe_02_1 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
-  a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1)) 
+  a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1))
   z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel
   ;SOURCE: jo_we_33.frm
 }
- 
+
 JoWe_05 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_06 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=a1+a2
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)*pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)*pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_09 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)/pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 JoWe_11 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1 :
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)^pixel
   |z|<=4
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_02m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=2/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_03m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -4464,7 +4464,7 @@ Whatever_03m {; Original formula Whatever_the_name
   |z|>=0.05
   ;SOURCE: jo_we_32.frm
 }
- 
+
 bfly (XYAXIS) {
    ; Be creative and try to use these terms in novel ways.
    ; You have to be careful what you initialize here
@@ -4474,27 +4474,27 @@ bfly (XYAXIS) {
   z  = z * zp1 + zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 bfly3 (XAXIS) {
    ; How about a conjugation of a cosine function
   z=pixel, zp = z1 = (0,0):
   temp = z
   z = 1-cos(z) - zp
   zp = conj(temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 Carr-367 {
   z=1/sinh(1/fn2(1/pixel+2)), c=1/tanh(1/fn2(1/pixel+2)):
   z=z*z+c
   |z| <=10
   ;SOURCE: 09carr.frm
 }
- 
+
 cnigel (XAXIS) {
    ; Conjugates still show the chaotic banding it tends to
    ; produce in this fractal type.
@@ -4504,10 +4504,10 @@ cnigel (XAXIS) {
   zp3 = zp2
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 cntr1 (XAXIS) {
    ; There are many different combinations on this theme.
   z = zp1 = zp2 = pixel:
@@ -4515,51 +4515,51 @@ cntr1 (XAXIS) {
   z  = z * zp2 + zp1
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 four (XYAXIS) {
-   ; A square root initialization of the octo 
+   ; A square root initialization of the octo
    ; will halve the number of arms
   z = pixel^.5,zp=(0,0):
   temp = z
   z = z^3 - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 frtan (XAXIS) {
    ; Lets not forget the tangent
   z = pixel, zp = (0,0):
   temp = z
   z = -tan(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
- 
-fuzzy {; To center this on your screen use 
-       ; the command corners=-2/3/2.5/-1.5 
+
+fuzzy {; To center this on your screen use
+       ; the command corners=-2/3/2.5/-1.5
   a=real(pixel), b=imag(pixel):
-  x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y 
+  x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y
   sqr(abs(a*a)+abs(b*b))<=p1
   ;SOURCE: fuzzy.frm
 }
- 
+
 hflip {
-   ; A little non-standard math-function 
+   ; A little non-standard math-function
    ; produces chaotic bands like the
    ; conjugate function but the symmetry is now skew.
   z = pixel, zp=(0,0):
   temp = z
   z = z*z +  zp
-  zp = flip(temp) 
-  |zp| <= 4 
+  zp = flip(temp)
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
- 
+
 Carr1451 {; Creates Julia.
   z=cotan(pixel*pixel+1), c=sqr(1/pixel*0.91/pixel):
   z=(z*z)+c-1.49
@@ -4567,44 +4567,44 @@ Carr1451 {; Creates Julia.
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1400 {
   z=pixel/0.999, c=sqrt(flip(pixel)):
   z=sqr(conj(z))+c-1.5
   |z|<=4
   ;SOURCE: 32carr.frm
 }
- 
+
 Carr1401 {
   z=pixel/0.999, c=sqrt(1/(1/(1/(1/pixel)))):
   z=z^2.09+c-0.5
   |z|<=4
   ;SOURCE: 32carr.frm
 }
- 
+
 Carr1402 {; Julia (I think??)
   z=pixel, c=sqrt(1/(1/(1/(5/pixel)))):
   z=z*z+(c-1)
   |z|<=4
   ;SOURCE: 32carr.frm
 }
- 
+
 Carr1403 {; Modified T.J.E. Reed formula;Julia
-  c=z=pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z    
+  c=z=pixel:
+  z=z*z+c
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
- 
+
 Carr1404 {; Modified T.J.E. Reed formula; Julia
-  c=z=pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z    
+  c=z=pixel:
+  z=z*z+c
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
- 
+
 Carr1697 {; Mandel type.
   c=(pixel)/(flip(pixel)-conj(1/pixel))
   z=(1/pixel)/(pixel-flip(1/pixel)-conj(1/pixel)):
@@ -4612,7 +4612,7 @@ Carr1697 {; Mandel type.
   |real(z)| <=4
   ;SOURCE: 37carr.frm
 }
- 
+
 Carr1710 {; Mandelbrot.
   c=conj(pixel^1/pixel)/(pixel-(flip(1/pixel)-conj(1/pixel)))
   z=(1/pixel)/(3*pixel-flip(1/pixel)-conj(1/pixel)):
@@ -4620,7 +4620,7 @@ Carr1710 {; Mandelbrot.
   |real(z)| <=4
   ;SOURCE: 38carr.frm
 }
- 
+
 Carr-889 {
   z=((1/pixel)/0.71)/(0.85/pixel+1.324)
   c=((1/pixel)/2)/z-2.5^fn4(pixel-1.324)/(1/pixel):
@@ -4628,7 +4628,7 @@ Carr-889 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-917 {
   z=1/(pixel*pixel)
   c=flip(pixel+fn3(4/z-z/5+125)):
@@ -4636,42 +4636,42 @@ Carr-917 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr1164 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(cotanh(z+pixel))/(z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
-pixey02 {; Added variable "newpixel". G. Martin 6/29/99     
+
+pixey02 {; Added variable "newpixel". G. Martin 6/29/99
   newpixel = pixel
   z = newpixel + p1, c = newpixel:
   temp = z
   z = z*z + newpixel + c
   newpixel = temp
-  z <= 4 
+  z <= 4
   ;SOURCE: pixey.frm
 }
- 
+
 pixey03 {
   z = pixel
   x = real(z + p1), y = imag(z + p2):
   x = fn1(x*x - fn2(y*y))
   y = fn3(y*y - fn4(x*x))
-  z = x*x + y*y 
+  z = x*x + y*y
   |z| <= 4
   ;SOURCE: pixey.frm
 }
- 
+
 pixey05 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z^2.71828182845905) + fn2(c)  
+  z = fn1(z^2.71828182845905) + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
- 
+
 PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
    ; p1 = step size (default 0.05), p2 = parameter (default 3)
    ; p3 = bailout value (default 4)
@@ -4687,7 +4687,7 @@ PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 Carr-913 {
   z=1/(pixel*pixel)
   c=imag(1/pixel*0.91/pixel):
@@ -4695,7 +4695,7 @@ Carr-913 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr1150 {
   z=pixel^(sinh(1.099,0)/cosh(pixel))
   c=pixel/((2.099,0)*1/z):
@@ -4703,7 +4703,7 @@ Carr1150 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1151 {
   z=pixel/((1.099,0)^(pixel))
   c=(pixel/((2.099,0)*1/z)):
@@ -4711,7 +4711,7 @@ Carr1151 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1152 {
   z=pixel/((1.099,0)^(pixel))
   c=(pixel/((2.099,0)*1/z)):
@@ -4719,22 +4719,22 @@ Carr1152 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
-pixey00 (XAXIS_NOPARM) {     
+
+pixey00 (XAXIS_NOPARM) {
   z = pixel + p1:
   z = z*z + pixel
-  z <= 4 
+  z <= 4
   ;SOURCE: pixey.frm
 }
- 
+
 pixey04 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z*2.71828182845905) + fn2(c)  
+  z = fn1(z*2.71828182845905) + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
- 
+
 shifter03 {; After shift, switch from fn1(z) to fn2(z)
            ; Bradley Beacham  [74223,2745]
            ; P1 = shift value, P2 varies bailout value
@@ -4746,7 +4746,7 @@ shifter03 {; After shift, switch from fn1(z) to fn2(z)
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 slider01 {; Bradley Beacham  [74223,2745]
           ; P1 = exponent A, P2 = exponent B
           ; P3 varies radius of bailout circle (default 2)
@@ -4756,7 +4756,7 @@ slider01 {; Bradley Beacham  [74223,2745]
   f < 1.0
   ;SOURCE: dons.frm
 }
- 
+
 speed01 {; Speed chooses between functions, escape-time
          ; Bradley Beacham  [74223,2745]
          ; P1 is maximum speed for "slow"
@@ -4772,7 +4772,7 @@ speed01 {; Speed chooses between functions, escape-time
   |z| <= limit
   ;SOURCE: snazzy.frm
 }
- 
+
 Carr-520 {
   z=1/pixel, c=cos(z*1/pixel):
   c=fn1(sinh(z))
@@ -4780,15 +4780,15 @@ Carr-520 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
-Carr-01 { 
+
+Carr-01 {
   z = Pixel, z = cosxx(z):
   z = z + Pixel
   z = sqr(z)
-  |z| <=4          
+  |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-07 {; was OK-02 and was modified
          ; Edited for Fractint v. 20 by George Martin, 10/98
   z = c = 1 / pixel, k = 1 + p1:
@@ -4797,7 +4797,7 @@ Carr-07 {; was OK-02 and was modified
   |z| <= (5 + p2)
   ;SOURCE: carr.frm
 }
- 
+
 Carr-16 {
   z = 0:
   z2 = z^z^z
@@ -4805,14 +4805,14 @@ Carr-16 {
   |z| <= 6
   ;SOURCE: carr.frm
 }
- 
+
 Carr-19 {
   c = z = (sqr(1 / pixel)):
   z = (sqr(1 / cosxx(z)) ) + (sin(z^z^z))
   |z| <= 10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-20 {
   z = pixel, z = cosxx(z):
   z = z + (sqr(pixel))
@@ -4820,7 +4820,7 @@ Carr-20 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-202 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -4828,7 +4828,7 @@ Carr-202 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-21 {
   z = 1 / pixel, z = cosxx(z):
   z = z + (sqr(pixel))
@@ -4836,21 +4836,21 @@ Carr-21 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-210 {
   z=c=1/pixel:
   z=z*z+c+(z*z+(c-0.124))/(z-0.75)+c
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-212 {
   z=c=1/pixel:
   z=sin(z^2)+sin(z)/sin(pixel)
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-22 {
   z = 1 / pixel, z = cosxx(z):
   z = z + (sqr(pixel))
@@ -4858,7 +4858,7 @@ Carr-22 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-877 {
   z=1/(pixel*conj(conj(2/pixel+0.794)))
   c=1/(fn2((conj(pixel-1.784))*sqr(1/pixel-0.024)/fn2(conj(1/pixel-0.824)))):
@@ -4866,7 +4866,7 @@ Carr-877 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-905 {; Modified Richard frm
   z=1/pixel, c=pixel-sqr(z):
   c=pixel +c/z
@@ -4874,7 +4874,7 @@ Carr-905 {; Modified Richard frm
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-910 {
   z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^tanh(pixel-1.124):
   z=c-z*pixel
@@ -4882,7 +4882,7 @@ Carr-910 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-914 {
   z=1/pixel+2.524
   c=((1*(|1.324|<=0)+1.324)*cotanh(pixel)):
@@ -4891,7 +4891,7 @@ Carr-914 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-915 {
   z=1/pixel+0.91/pixel
   c=((2.124*(|3.324|<=0)+1.324)*cotanh(pixel)):
@@ -4900,14 +4900,14 @@ Carr-915 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 708 {
   z = c = p2 / pixel:
   z = z^p1 / c^p2 + c
   z <= p2
   ;SOURCE: kg7.frm
 }
- 
+
 Carr-105 {
   z=c=pixel:
   z=sqr(z) + sqr(c*c)
@@ -4916,7 +4916,7 @@ Carr-105 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-110 {
   z=c=pixel:
   z=sqr(z*z) + (c*c)
@@ -4925,42 +4925,42 @@ Carr-110 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-501 {; Distance Estimator works here.
   z=1/pixel, c=exp(0.6,0.3)/pixel:
   z=z*z*z*z*z+flip(c/pixel)
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-559 {
   z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel)):
   z=z*z*z*z+conj(sin(c-0.524))
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-561 {
   z=1/pixel, c=1/conj(fn2(1/pixel*1/pixel*1/pixel)):
   z=sqr(conj(z*z*z))+conj(sin(c-1.5))
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-740 {
   z=1/pixel, c=(1/pixel)/2/(z-2.5)^(1/pixel-1):
   z=z*z+(c-0.4)
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-786 {; Very interesting image poosibilities !!
   z=sqr(sqr(sqr(1/pixel-0.006))), c=sqr(sqr(1/pixel-0.009)):
   z=1/z^z*z+flip(c*c)
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-873 {
   z=1/(pixel*conj(5/pixel+0.724))
   c=1/(fn4((pixel-1.524)*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
@@ -4968,7 +4968,7 @@ Carr-873 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-874 {
   z=1/(pixel*conj(conj(5/pixel+0.724)))
   c=1/(fn4((conj(pixel-1.524))*sqr(1/pixel)+fn2(conj(1/pixel-0.524)))):
@@ -4976,14 +4976,14 @@ Carr-874 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-878 {
   z=(1/pixel)/1.91, c=((1/pixel)/2)/z-2.5^cotanh(pixel-1.124):
   z=(conj(pixel+z*z)/(pixel-c*c))/1.55
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-881 {
   z=((1/pixel)/0.91)/(2.7,-1.3)
   c=(1/pixel*0.91/pixel):
@@ -4991,7 +4991,7 @@ Carr-881 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-884 {
   z=((1/pixel)/0.71)/(4.7,-0.3)
   c=(1/pixel*0.51/pixel):
@@ -4999,7 +4999,7 @@ Carr-884 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-890 {; May not be mathmatically correct but...
   z=(1/1/pixel^pixel*pixel)
   c=1/conj(1/pixel^pixel+pixel):
@@ -5007,7 +5007,7 @@ Carr-890 {; May not be mathmatically correct but...
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-890 {; May not be mathmatically correct but...
   z=(1/1/pixel^pixel*pixel)
   c=1/conj(1/pixel^pixel+pixel):
@@ -5015,7 +5015,7 @@ Carr-890 {; May not be mathmatically correct but...
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-90 {
   z=c=1/pixel:
   z=sqr(z) + sqr(c-5)
@@ -5024,7 +5024,7 @@ Carr-90 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-900 {
   z=cotanh(pixel+1)/imag(1/pixel-0.334)
   c=sqr(sqr(sqr(pixel*1/pixel))):
@@ -5032,7 +5032,7 @@ Carr-900 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-902 {
   z=sinh(pixel+1)/imag(1/pixel-0.334)
   c=sqr(sqr(sqr(pixel*1/pixel))):
@@ -5040,14 +5040,14 @@ Carr-902 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-906 {
   z=1/pixel, c=conj(pixel-sqr(z)):
   z=c-z*pixel
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-908 {
   z=cotanh(exp(1/pixel))
   c=conj(pixel-sqr(z)):
@@ -5055,13 +5055,13 @@ Carr-908 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Whatever_the_name (XAXIS) {
   z = pixel:
   z=z*z+(1/z*z)+pixel
   ;SOURCE: whatever.frm
 }
- 
+
 Ent {; Scott Taylor
      ; Try params=.5/.75 and the first function as exp.
      ; Zoom in on the swirls around the middle.  There's a
@@ -5071,14 +5071,14 @@ Ent {; Scott Taylor
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Richard10 (XYAXIS) {; Jm Collard-Richard
   z=pixel:
   z=1/sin(1/(z*z))
   |z|<=50
   ;SOURCE: fractint.frm
 }
- 
+
 j+c2821 {; Sylvie Gallet frm. [101324,3444],1997
          ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
    z = real(pixel)/real(p1) + flip (imag(pixel)/imag(p1)) - p2
@@ -5125,69 +5125,69 @@ j+c2821 {; Sylvie Gallet frm. [101324,3444],1997
    continue
   ;SOURCE: ifs196.frm
 }
- 
+
 Absolem {
   z = 0, c = pixel:
   z = z + p1
-  z = (z * z) * (1/c) 
+  z = (z * z) * (1/c)
   z = fn1(z) * fn2(1/z)
-  z = z + c 
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
- 
+
 Absolem_2 {
   z = 0, c = pixel:
   z = z + p1
-  z = (z * z) * (1/c) 
+  z = (z * z) * (1/c)
   z = fn1(z) * fn2(1/c)
-  z = z + c 
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
- 
+
 Absolem_SRand {
   z = 0, c = pixel:
   z = z + p1
-  z = (srand(z) * z) * (1/z) 
+  z = (srand(z) * z) * (1/z)
   z = fn1(z) * fn2(1/c)
-  z = z + c  
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
- 
+
 Curfew {
   z = 0, c = pixel:
   z = z + c + p1
-  z = z * fn1((1/c)/(1/z)) 
+  z = z * fn1((1/c)/(1/z))
   |z| < 4
   ;SOURCE: korfu.frm
 }
- 
+
 Korfu (YAXIS) {
   z = c = pixel:
   z = z + p1
-  c = c/fn1(z) 
+  c = c/fn1(z)
   z = z * fn2(c)
   |z| < 4
   ;SOURCE: korfu.frm
 }
- 
-Pilsner {; Revised for Fractint v20 by G. Martin  
+
+Pilsner {; Revised for Fractint v20 by G. Martin
   z = 0, c = pixel, ppix = pixel^(-1) + p1:
   z = (z*1/ppix) * fn1(ppix)
   z = fn2(z) + c
   |z| < 4
   ;SOURCE: korfu.frm
 }
- 
+
 Kapetanov11 {
   c=pixel, z=pixel-cos(c):
   c=sqr(pixel)+z, z=c*sin(z)
   |z|<8
   ;SOURCE: kapet011.frm
 }
- 
+
 Carr2168 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -5203,32 +5203,32 @@ Carr2168 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42ccarr.frm
 }
- 
-Lister_M {; Might need periodicity=0 
+
+Lister_M {; Might need periodicity=0
   z = c = pixel:
-  r = tan(e/z)/c  
-  z = r * fn1(z) - p1 
+  r = tan(e/z)/c
+  z = r * fn1(z) - p1
   |z| < 4
   ;SOURCE: lister.frm
 }
- 
-Lister_2 {; Might need periodicity=0 
+
+Lister_2 {; Might need periodicity=0
   z = c = pixel + p1:
   r = tan(e/z)/pi
-  z = fn1(z)/fn2(c/r) 
+  z = fn1(z)/fn2(c/r)
   |z| < 4
   ;SOURCE: lister.frm
 }
- 
+
 Listerial {; Might need periodicity=0
   z = pixel, tp = tan(1/pixel):
   z = fn1(z) + p1
-  r = tp/(imag(z)/real(z)) 
+  r = tp/(imag(z)/real(z))
   z = tan(1/z)/sqrt(r)
   |z| < 4
   ;SOURCE: lister.frm
 }
- 
+
 manjul_lace {; Requires passes=1   George Martin, 1996
              ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
              ; If Real(p1) is:
@@ -5244,21 +5244,21 @@ manjul_lace {; Requires passes=1   George Martin, 1996
   |z| <= 4
   ;SOURCE: ifs196.frm
 }
- 
+
 Zexpe (XAXIS) {
   s = exp(1.,0.), z = Pixel:
   z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 Exipi (XAXIS) {
   s = log(-1.,0.) / (0.,1.), z = Pixel:
   z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 FractalFenderC (XAXIS_NOPARM) {; Spectacular!
     ; Modified for if..else logic 3/18/97 by Sylvie Gallet
    z = p1, x = |z| :
@@ -5269,7 +5269,7 @@ FractalFenderC (XAXIS_NOPARM) {; Spectacular!
    x <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 SpecC (XAXIS_NOPARM) {
      ; modified for if..else by George Martin 3/18/97
    z = p1
@@ -5282,42 +5282,42 @@ SpecC (XAXIS_NOPARM) {
    x <= 4
   ;SOURCE: skinner.frm
 }
- 
+
 Fzpcophs {
   z = pixel, f = pixel ^ (1. / sinh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 Fzppchco {
   z = pixel, f = cosxx (pixel):
   z = cosh (z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppcosq {
   z = pixel, f = sqr (pixel):
   z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppcosr {
   z = pixel, f = (pixel) ^ 0.5:
   z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppshex {
   z = pixel, f = exp (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 OldManowar (XAXIS) {
   z0 = 0
   z1 = 0
@@ -5329,14 +5329,14 @@ OldManowar (XAXIS) {
   |z| < test
   ;SOURCE: fractint.frm
 }
- 
+
 Zexpe2 (XAXIS) {
   s = exp(1.,0.), z = Pixel:
   z = z ^ s + z ^ (s * pixel)
   |z| <= 100
   ;SOURCE: skinner.frm
 }
- 
+
 Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + p2*fn2(x - p3*fn3(y)))
@@ -5346,7 +5346,7 @@ Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    hx = p1*fn1(x + p2*fn2(y)), hy = p1*fn1(y + p2*fn2(x))
@@ -5355,7 +5355,7 @@ Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
     (mhx+mhy) >= p3 && mhx <= 1e35 && mhy <= 1e35
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
   x2 = x*x, y2 = y*y
@@ -5366,7 +5366,7 @@ Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
   x2 = x*x, y2 = y*y
@@ -5377,7 +5377,7 @@ Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y * fn2(p2*x) + fn3(p3*y))
@@ -5387,7 +5387,7 @@ Gallet-6-05 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-08 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) / fn3(p3*y))
@@ -5397,7 +5397,7 @@ Gallet-6-08 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 1024
   ;SOURCE: gallet-6.frm
 }
- 
+
 FGZ {; Michael G. Wareman
      ; try p1=3
      ; generalized by Jon Horner
@@ -5409,7 +5409,7 @@ FGZ {; Michael G. Wareman
   |z| <= 4
   ;SOURCE: fgz.frm
 }
- 
+
 FGZ-2 {
    ; (c) 1993 by:
    ;
@@ -5426,7 +5426,7 @@ FGZ-2 {
   |z| <= 4
   ;SOURCE: f(g(z))).frm
 }
- 
+
 FGZ-4 {
    ; (c) 1993 by:
    ;
@@ -5443,7 +5443,7 @@ FGZ-4 {
   |z| <= 4
   ;SOURCE: f(g(z))).frm
 }
- 
+
 Mind_2 {
    ; These formulas were developed after having read
    ; COMPUTERS AND THE IMAGINATION [Chapter 27] Turning
@@ -5460,7 +5460,7 @@ Mind_2 {
   |z| <= 100
   ;SOURCE: physics.frm
 }
- 
+
 Mind_5 {
    ; This Fractint .FRM file (c) 1993 by:
    ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
@@ -5474,14 +5474,14 @@ Mind_5 {
   |z| <= 100
   ;SOURCE: physics.frm
 }
- 
+
 Jm_04 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 3RDIM01 {; Mandelbrot
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
@@ -5489,30 +5489,30 @@ Jm_04 {; generalized Jm Collard-Richard type
   |z|<=64
   ;SOURCE: fractint.frm
 }
- 
+
 Moo_4 {
   z = pixel:
   z = z + p1
   r = tan(1/z) + pixel
-  z = fn1(z)/sqrt(r) 
+  z = fn1(z)/sqrt(r)
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
- 
+
 quartet {; From Noel Giffin noel@triumf.ca
      ; The quatro-HT variation. Use real part of p1  0.0 < p1 < 1.0
-     ; Adding the inversion causes what looks like an 
+     ; Adding the inversion causes what looks like an
      ; infinite extension along
-     ; the real axis. Using the Imag component will 
+     ; the real axis. Using the Imag component will
      ; add some nice asymmetry.
   z=pixel, zp = (0,0), huge = 1.0e30:
   temp = z
   z = sin(z) - zp
   zp = p1/temp
-  (|zp| <= huge && |z| <= huge) 
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
- 
+
 quartet1 {; From Noel Giffin noel@triumf.ca
    ; Use an input parameter (real part of p2) to control the bailout.
    ; increasing the bailout will reduce the disk size and a wider and
@@ -5521,10 +5521,10 @@ quartet1 {; From Noel Giffin noel@triumf.ca
   temp = z
   z = sin(z) - zp
   zp = p1/temp
-  (|zp| <= bail && |z| <= huge) 
+  (|zp| <= bail && |z| <= huge)
   ;SOURCE: noel1.frm
 }
- 
+
 zzz (XAXIS) {
    ; Same as XXX but introduce a new dynamic by inverting a previous term
    ; A small but curious active region. Try 256 colour decomp.
@@ -5532,12 +5532,12 @@ zzz (XAXIS) {
   temp = z
   z = z^zp1 - zp2
   zp2 = zp1
-  zp1 = 1/temp 
+  zp1 = 1/temp
   |zp1| <= 4
   ;SOURCE: noel.frm
 }
- 
-Guanaco { 
+
+Guanaco {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   z = pixel, Root = 1:
@@ -5548,22 +5548,22 @@ Guanaco {
   z7 = z6 * z
   r = (3 * z4 + Root) / ( 4*z3)
   q =  z - p1*((z7-z)/((7.0*z6-1)-(42.0*z5)*(z7-z)/(14.0*z6-2)))
-  z = (r * whitesq ) + (q * (whitesq == 0)) 
+  z = (r * whitesq ) + (q * (whitesq == 0))
   (.004 <= |z4-Root| && whitesq) || (0.0001 <= |z7-z| && whitesq == 0)
   ;SOURCE: pablo.frm
 }
- 
+
 Pablo {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   z = c = pixel:
-  r = fn1(tan(1/z)+ c) + p1 
+  r = fn1(tan(1/z)+ c) + p1
   q = fn2(flip(atan(z)) + c) + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   |z| < 4
   ;SOURCE: pablo.frm
 }
- 
+
 Q_Java {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
@@ -5576,63 +5576,63 @@ Q_Java {
   |z| <= 4
   ;SOURCE: pablo.frm
 }
- 
-Sublime {  
+
+Sublime {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
-  z = (1,1), c = pixel: 
+  z = (1,1), c = pixel:
   z2 = z*z, z3 = z2*z
   r = z - p1 *(z3-pixel)/(3.0*z2)
   q = fn1(z) * fn2(z) + c + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   (|z| < 4 && whitesq == 0) || (0.0001 < |z3 - pixel| && whitesq)
   ;SOURCE: pablo.frm
 }
- 
+
 Sublime_2 {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
-  z = c = pixel, Root = 1: 
+  z = c = pixel, Root = 1:
   z3 = z*z*z, z4 = z3*z
   r = (3.0*z4 + Root)/(4 * z3)+ p1
   q = (fn1(z) * fn2(z))+ c + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   (|z| < 4 && whitesq == 0) || (0.004 < |z4 - Root| && whitesq)
   ;SOURCE: pablo.frm
 }
- 
-Sylac { 
+
+Sylac {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   c1 = flip(1/pixel), c2 = conj(1/pixel), z = c = pixel:
   r = ((fn1(z)* c1) * z) + p1
   q = ((fn2(z)* c2) * z + c) + p2
   z = (q * (whitesq == 0)) + (r * (whitesq == 1))
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: pablo.frm
 }
- 
+
 FnDog (XYAXIS) {; Scott Taylor
   z = Pixel, b = p1+2:
   z = fn1( z ) * pixel
   |z| <= b
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnse {; Lee Skinner
   z = pixel, f = 1./sin(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_11a {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(fn4(z)*pixel)))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 3daMand01 {; Mandelbrot/Zexpe via Lee Skinner
            ; based on 4dFRACT.FRM by Gordon Lamb (CIS: 100272,3541)
   z=real(pixel)+flip(imag(pixel)*p1)
@@ -5641,140 +5641,140 @@ Jm_11a {; generalized Jm Collard-Richard type
   |z|<=100
   ;SOURCE: fractint.frm
 }
- 
+
 J_Laguerre2 {
   c = pixel, z = P1:
   z = (z*(z - 4) +2 ) / 2 + c
   |z| < 100
   ;SOURCE: fractint.frm
 }
- 
+
 J_Laguerre3 {
   c = pixel, z = P1:
   z = (z*(z*(-z + 9) -18) + 6 ) / 6 + c
   |z| < 100
   ;SOURCE: fractint.frm
 }
- 
+
 J_TchebychevS4 {
   c = pixel, z = P1:
   z = c*(z*z*(z*z-3)+1)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_03a {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_05 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2((z^pixel)))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_10 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(fn4(z)*pixel)))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_13 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(z)*pixel))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_22 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   sq=fn1(z), z=(sq*fn2(sq)+sq)+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_23 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(z)+pixel*pixel))
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_24 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z2=fn1(z), z=(fn2(z2*fn3(z2)+z2))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 M_TchebychevC2 {
   c = P1, z = Pixel:
   z = c*(z*z-2)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-M_TchebychevC7 {     
+
+M_TchebychevC7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(z*z-7)+14)-7)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 M_TchebychevT4 {
   c = P1, z = Pixel:
   z = c*(z*z*(8*z*z+8)+1)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 M_TchebychevT6 {
   c = P1, z = Pixel:
   z = c*(z*z*(z*z*(32*z*z-48)+18)-1)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-M_TchebychevT7 {     
+
+M_TchebychevT7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 M_TchebychevU2 {
   c = P1, z = Pixel:
   z = c*(4*z*z-1)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 M_TchebychevU3 {
   c = P1, z = Pixel:
   z = c*z*(8*z*z-4)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 M_TchebychevU4 {
   c = P1, z = Pixel:
   z = c*(z*z*(16*z*z-12)+1)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-M_TchebychevU5 {    
+
+M_TchebychevU5 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(32*z*z-32)+6)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 Mandel3 {; Fractal Creations example
   z = pixel, c = sin(z):
   z = (z*z) + c
@@ -5782,70 +5782,70 @@ Mandel3 {; Fractal Creations example
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Richard9 (XAXIS) {; Jm Collard-Richard
   z=pixel:
   sqrz=z*z, z=sqrz + 1/sqrz + pixel
   |z|<=4
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppfnct {; Lee Skinner
   z = pixel, f = cos(pixel)/sin(pixel):
   z = fn1(z) + f
   |z|<= 50
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_11 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3(fn4(z)*pixel)))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_16 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   f2=fn2(z), z=fn1(f2)*fn3(fn4(f2))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_18 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z)*pixel*fn2(fn3(z)*pixel)
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_07 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3((z^z)*pixel)))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_08 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3((z^z)*pixel)))+pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Rollo_6 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
   z = pixel, zp = p1
   a = (whitesq == 1), b = (whitesq == 0):
-  temp = z 
-  r = fn1(z)^5 + zp 
-  q = fn2(z)^5 + zp 
+  temp = z
+  r = fn1(z)^5 + zp
+  q = fn2(z)^5 + zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 a_spider1 {; Adjustable spider - After Homer Smith of Art Matrix
            ; try p1 = (.55,0) or (0,.4) or (.4,.35)
   z=0, c=pixel:
@@ -5854,14 +5854,14 @@ a_spider1 {; Adjustable spider - After Homer Smith of Art Matrix
   |z| <= 4
   ;SOURCE: hughes.frm
 }
- 
+
 ULI_5 {
   z = Pixel, c = fn1(pixel):
   z = fn2(1/(z+c))*fn3(z+c)
   |z| <= p1
   ;SOURCE: fractint.frm
 }
- 
+
 F'M-SetInNewtonA (XAXIS) {; use float=yes
                           ; jon horner 100112,1700, 12 feb 93
   z = 0,  c = fn1(pixel),  cminusone = c-1:
@@ -5870,78 +5870,78 @@ F'M-SetInNewtonA (XAXIS) {; use float=yes
   |(z-oldz)|>=|0.01|
   ;SOURCE: fractint.frm
 }
-J_TchebychevS3 {  
+J_TchebychevS3 {
   c = pixel, z = P1:
   z = c*z*(z*z-2)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-J_TchebychevT5 {    
+
+J_TchebychevT5 {
   c = pixel, z = P1:
   z = c*(z*(z*z*(16*z*z-20)+5))
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 J_TchebychevT6 {
   c = pixel, z = P1:
   z = c*(z*z*(z*z*(32*z*z-48)+18)-1)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-J_TchebychevT7 {     
+
+J_TchebychevT7 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 M_TchebychevS3 {
   c = P1, z = Pixel:
   z = c*z*(z*z-2)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
   z = p1 :
   z = cosxx(sqr(z) + pixel) + pixel
   |z| <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 flip0_man_m (XAXIS) {
   z=0:
   z = flip(sqr(z) + pixel)
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
-flip3_man_m (XAXIS) { 
+
+flip3_man_m (XAXIS) {
   z = 0:
   z = 1/flip(sqr(z) + pixel)
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
-FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+
+FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20
                               ; by George Martin, 10/98
   z=p1, x=|z|:
   z=cosh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
- 
+
 Frame-RbtJ {; Ron Barnett, 1993
   z = pixel:
   z = z*z*z/5 + z*z + p1
   |z| <= 100
   ;SOURCE: reb001.frm
 }
- 
+
 Frame-RbtM (XAXIS) {; Ron Barnett, 1993
                     ; from Mazes for the Mind by Pickover
   z = c = pixel:
@@ -5949,17 +5949,17 @@ Frame-RbtM (XAXIS) {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 IslandOfChaos (XAXIS_NOPARM) {
     ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)/cosxx(z)+pixel
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: choice.frm
 }
- 
+
 j1 {
    ; see also alx1 in _a.frm - a formula formerly named j1, changed
    ; to avoid duplication of name with this formula.
@@ -5969,28 +5969,28 @@ j1 {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 J_TchebychevS6 {
   c = pixel, z = P1:
   z = c*(z*z*(z*z*(z*z-5)+6)-1)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 J_TchebychevT3 {
   c = pixel, z = P1:
   z = c*z*(4*z*z-3)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
-J_TchebychevU7 {     
+
+J_TchebychevU7 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8)
   |z|<100
   ;SOURCE: tchebych.frm
 }
- 
+
 jfnc {
   z=pixel, c=p1:
   z=sqr(z)+c
@@ -5998,39 +5998,39 @@ jfnc {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 JMask {; Ron Barnett, 1993
   z = fn1(pixel):
   z = P1*fn2(z)^2 + P2
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 M_Lagandre6 {
   c = P1, z = Pixel:
   z = (z*z*(z*z*(231 * z*z - 315)  + 105 ) - 5) / 16 + c
   |z| < 100
   ;SOURCE: fractint.frm
 }
- 
+
 ManInTheOzone (XAXIS_NOPARM) {
     ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=1:
   z=sqr(z)+pixel
   z=cosxx(z)+pixel
   z=sin(z)+pixel
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: choice.frm
 }
- 
+
 Natura (xyaxis) {; phi yoni
   z = pixel:
-  z = z*z*z + ((sqrt(5) + 1)/2) 
+  z = z*z*z + ((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
- 
+
 phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
   x=real(pixel), y=imag(pixel), z=nx=ny=x1=x2=y1=y2=0:
   x2 = sqr(x), y2 = sqr(y)
@@ -6040,7 +6040,7 @@ phoenix_j (XAXIS) {; Use P1=0.56667/-0.5   &   .1/.8
   |z| <= 4
   ;SOURCE: flip.frm
 }
- 
+
 REBRefInd2 {; Ron Barnett, 1993
             ; Use floating point
   z = pixel:
@@ -6048,66 +6048,66 @@ REBRefInd2 {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 SinhEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
                         ; George Martin, 10/98
   z=p1, x=|z|:
   z=sinh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
- 
+
 aaaa (XAXIS) {
   z = pixel, c = z:
   z = exp(z*log(z))
   |z| <= p1
   ;SOURCE: dan.frm
 }
- 
+
 Elliptic2 (XAXIS) {; By Alastair Scott
   z = pixel:
-  z = pixel*(1.57079 - z*z*(0.392699 + z*z*(0.073631\ 
+  z = pixel*(1.57079 - z*z*(0.392699 + z*z*(0.073631\
        +z*z*(0.030680 + z*z*0.016778))))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: elliptic.frm
 }
- 
+
 FlipLambdaM {; Ron Barnett, 1993
   z = 0.5:
   z = pixel*z*(1-flip(z)*flip(z))
   |z| <= 100
   ;SOURCE: reb002.frm
 }
- 
+
 FrRbtGenM {; Ron Barnett, 1993
   z = pixel:
   z = p1*z*z*z + z*z + pixel
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 Fzppcopo {
   z = pixel, f = (pixel) ^ (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 Fzppshlo {
   z = pixel, f = log (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 Fzppsisq {
   z = pixel, f = sqr (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
- 
+
 jfnz {
   z=pixel, c=p1:
   z=sqr(z)+c
@@ -6115,7 +6115,7 @@ jfnz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 Julike {; Ron Barnett, 1993
         ; a Julia function based upon the Ikenaga function
   z = Pixel:
@@ -6123,7 +6123,7 @@ Julike {; Ron Barnett, 1993
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 Liar2 {; by Chuck Ebbert.
        ; Same as Liar1 but use sequential reasoning, calculating
        ; new y value using new x value.
@@ -6135,7 +6135,7 @@ Liar2 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: liar.frm
 }
- 
+
 Liar3 {; by Chuck Ebbert.
    ; X: X is true to P1 times the extent that Y is true
    ; Y: Y is true to the extent that X is false.
@@ -6148,7 +6148,7 @@ Liar3 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 Liar4 {; by Chuck Ebbert.
        ; X: X is as true as (p1+1) times Y
        ; Y: Y is as true as X is false
@@ -6160,7 +6160,7 @@ Liar4 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 M-SetInNewton(XAXIS) {; use float=yes
                       ; jon horner 100112,1700, 12 feb 93
   z = 0, c = pixel, cminusone = c-1:
@@ -6169,7 +6169,7 @@ M-SetInNewton(XAXIS) {; use float=yes
   |(z-oldz)|>=|0.01|
   ;SOURCE: fractint.frm
 }
- 
+
 m1 {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -6177,21 +6177,21 @@ m1 {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 M_Lagandre2 {
   c = P1, z = Pixel:
   z = (3 * z*z - 1) / 2 + c
   |z| < 100
   ;SOURCE: fractint.frm
 }
- 
+
 M_Lagandre3 {
   c = P1, z = Pixel:
   z = z * (5 * z*z - 3) / 2 + c
   |z| < 100
   ;SOURCE: tchebych.frm
 }
- 
+
 mfnz {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -6199,20 +6199,20 @@ mfnz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 Sam_5 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^2.718281828 + pixel
   ;SOURCE: sam.frm
 }
- 
-ScottSIS (XYAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = sqr(1/sin(z)) 
-  |z|<TEST 
+
+ScottSIS (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = sqr(1/sin(z))
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
- 
+
 F'Liar1 {; Generalization by Jon Horner of Chuck Ebbert formula.
          ; X: X is as true as Y
          ; Y: Y is as true as X is false
@@ -6229,7 +6229,7 @@ F'Liar2 {; Generalization by Jo. Horner of Chuck Ebert Formula
   z = fn1(pixel):
   x = 1 - abs(imag(z)-real(z))
   z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
-  |z| <= p1 
+  |z| <= p1
   ;SOURCE: form2.frm
 }
 mandel-newton_j7c3 {; Sylvie Gallet [101324,3444], 1995
@@ -6243,12 +6243,12 @@ mandel-newton_j7c3 {; Sylvie Gallet [101324,3444], 1995
   c=fn1(sin(conj(-0.80256,-0.1095)))
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1) 
+  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
 }
- 
+
 OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    z = y = x = pixel, k = 1 + p1, test = 5 + p2 :
    a = fn1(z)
@@ -6261,7 +6261,7 @@ OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 3D_Balls_Julia {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -6349,7 +6349,7 @@ OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   bailout == 0  && |w| < 1000
   ;SOURCE: 97msg.frm
 }
- 
+
 bshng84 {; by Kovari Janos
   a = pixel, b = pixel, z = pixel:
   a = real(fn1(a))
@@ -6358,7 +6358,7 @@ bshng84 {; by Kovari Janos
   |z| <= p1
   ;SOURCE: sg_misc.frm
 }
- 
+
 bshng85 {; by Kovari Janos
   a = pixel, b = pixel, z = pixel:
   a = fn1(a)
@@ -6369,7 +6369,7 @@ bshng85 {; by Kovari Janos
   |z| <= p1
   ;SOURCE: bshng.frm
 }
- 
+
 bshng86 {; by Kovari Janos
   c = abs(cabs(pixel)), k = abs(cabs(fn1(pixel))), z = pixel, i = 0:
   z = z^(c*k)/(i+1) + c*i + k*i
@@ -6379,7 +6379,7 @@ bshng86 {; by Kovari Janos
   |z| <= p1
   ;SOURCE: sg_misc.frm
 }
- 
+
 bshng95 {; by Kovari Janos
   i = 0, z = pixel, z1 = flip(pixel):
   z1 = z
@@ -6390,26 +6390,26 @@ bshng95 {; by Kovari Janos
   i <= real(p2)
   ;SOURCE: sg_misc.frm
 }
- 
+
 Candy {; (c) Jay Hill, 1998
        ; use outside=summ periodicity=0 float=y
-  done = 1, z = 0, zc = 0, c = pixel 
-  t4=8+4*c*(1+sqrt(-4*c-7)) 
+  done = 1, z = 0, zc = 0, c = pixel
+  t4=8+4*c*(1+sqrt(-4*c-7))
   IF (|t4|<=1)
     z=z+128*abs(imag(log((t4+sqrt(4.5)-1))))/pi
-    done=-1 
+    done=-1
   ELSE
     z=z+64
   ENDIF
   :             ; initialization.
-  zc=sqr(zc) + c 
+  zc=sqr(zc) + c
   IF (|zc| >= 4)
-    done=-1 
+    done=-1
   ENDIF
-  done >= 0 
+  done >= 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = 0 if Mset, otherwise Julia set
     ; imag(p1) = maximum value of ratio (try 0.01 to 0.3)
@@ -6447,7 +6447,7 @@ Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z, y = conj(z) :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -6456,7 +6456,7 @@ Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) >= p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 heart_man {; Kerry Mitchell
         ; See end of formula xlty_jul for Kerry Mitchell's explanation
         ;  of his "fraction" formulas
@@ -6507,7 +6507,7 @@ heart_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 lambdafroth4m (XYAxis) {
   bailout=(4*(|p2|<=0)+p2)
   z=lambda=pixel:
@@ -6516,7 +6516,7 @@ lambdafroth4m (XYAxis) {
   |z|<=bailout
   ;SOURCE: 98msg.frm
 }
- 
+
 Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   real(p1) = controls the size of the squares (0.1 to 0.8)
@@ -6564,7 +6564,7 @@ Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls element size try 0.01 to 2.0
     ; imag(p1)   not used
@@ -6617,7 +6617,7 @@ Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 10000000
   ;SOURCE: 98msg.frm
 }
- 
+
 Petals_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -6691,7 +6691,7 @@ Petals_Mset {; Copyright (c) Paul W. Carlson, 1998
     d == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Phoenix_Atan {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   p1       = coordinates of the Julia set
@@ -6728,21 +6728,21 @@ Phoenix_Atan {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 quartc {
    ; This makes for an unusual combination of fractal characteristics
    ; Recognizable sin fractal filled with chaotic banding.
    ; Real part of P1 should be about 0.1 and Imag portion can be 0.0
-   ; Oh yes! You will have to zoom out to +/- 2pi on the x axis 
+   ; Oh yes! You will have to zoom out to +/- 2pi on the x axis
    ; for full view.
   z=pixel, zp = (0,0), huge = 1.0e32:
   temp = z
   z = sin(z) - zp
   zp = p1/conj(temp)
-  (|zp| <= 4 && |z| <= huge) 
+  (|zp| <= 4 && |z| <= huge)
   ;SOURCE: noel.frm
 }
- 
+
 sfi-p160 {; Sylvie Gallet, Mar 1998
   z = pixel :
   z = e^(z-1)                       ; z = 1/e * e^z
@@ -6754,7 +6754,7 @@ sfi-p160 {; Sylvie Gallet, Mar 1998
   continue
   ;SOURCE: 98msg.frm
 }
- 
+
 tri-mandel-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
               ; Thanks to Kerry Mitchell for the idea!
               ; real(p1) = bailout (1024 recommended)
@@ -6839,7 +6839,7 @@ tri-mandel-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
    mz1 <= b11
   ;SOURCE: triangl.frm
 }
- 
+
 Uc03 {; = 2z(2z-1)U02-U01
       ; Copyright (c)1998,1999 Morgan L. Owens
       ; Prerelease 16/04/1998
@@ -6853,7 +6853,7 @@ Uc03 {; = 2z(2z-1)U02-U01
   |z|<=bailout
   ;SOURCE: 98msg.frm
 }
- 
+
 Uc03 {; = 2z(2z-1)U02-U01
       ; Copyright (c)1998,1999 Morgan L. Owens
       ; Prerelease 16/04/1998
@@ -6867,7 +6867,7 @@ Uc03 {; = 2z(2z-1)U02-U01
   |z|<=bailout
   ;SOURCE: 98msg.frm
 }
- 
+
 gravijul {; r^(-2) Mark Christenson 1/25/98
    ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
   z = pixel:
@@ -6876,7 +6876,7 @@ gravijul {; r^(-2) Mark Christenson 1/25/98
   |z| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 Invasion5 {; Mike Traynor
            ; From Earl L. Hinrichs' non-fractint formula
   z = Pixel, c = pixel:
@@ -6888,7 +6888,7 @@ Invasion5 {; Mike Traynor
   |(z^2)| <= 4
   ;SOURCE: invasio2.frm
 }
- 
+
 _AA1 {; generalized _AA0
 ; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
 ; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
@@ -6923,7 +6923,7 @@ _AA1 {; generalized _AA0
   ZM <= R1R
   ;SOURCE: frac_ml.frm
 }
- 
+
 _AB1 {; generalized _AB0
 ; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
 ; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
@@ -6958,7 +6958,7 @@ _AB1 {; generalized _AB0
   ZM <= R1R
   ;SOURCE: frac_ml.frm
 }
- 
+
 _AC1 {; generalized _AC0
 ; Q1 = P1 IF P1 <> 0  ELSE  Q1 = PIXEL,   Q1R = REAL(Q1),   Q1I = IMAG(Q1)
 ; Q2 = P2 IF P2 <> 0  ELSE  Q2 = PIXEL,   Q2R = REAL(Q2),   Q2I = IMAG(Q2)
@@ -6993,7 +6993,7 @@ _AC1 {; generalized _AC0
   ZM <= R1R
   ;SOURCE: frac_ml.frm
 }
- 
+
 bills_xy-trade4 {
      ; Replaced variable "e" with "ee", 5/7/99. G. Martin
   a = real(p1), b = imag(p1)
@@ -7009,7 +7009,7 @@ bills_xy-trade4 {
   |z| < f
   ;SOURCE: 98msg.frm
 }
- 
+
 HC_Julstar {; a modified Paul W. Carlson formula
             ; cobbled together by P. DiGiorgi - 10/98
   z = w = iter = range_num = bailout = 0
@@ -7056,7 +7056,7 @@ HC_Julstar {; a modified Paul W. Carlson formula
   bailout == 0 && |w| < 10000
   ;SOURCE: 98msg.frm
 }
- 
+
 Trans_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   z = prev_w = bailout = iter = range_num = 0
   c = pixel
@@ -7081,7 +7081,7 @@ Trans_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 tent_in_mod {; Modified Sylvie Gallet formula
              ; Modified tent_inside.frm (generalized by Les St Clair)
              ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
@@ -7099,36 +7099,36 @@ tent_in_mod {; Modified Sylvie Gallet formula
   fn4(l-r) >= p2 && r < 4
   ;SOURCE: tent_mod.par
 }
- 
+
 Devotion {
   z = pixel:
   z = z + p1
-  r = fn1(z) * z * z  
-  q = z^e 
+  r = fn1(z) * z * z
+  q = z^e
   z = (z - imag(1/r)/z - real(1/q))
   |z| <= 4
   ;SOURCE: shakti.frm
 }
- 
+
 Devotion {
   z = pixel:
   z = z + p1
-  r = fn1(z) * z * z  
-  q = z^e 
+  r = fn1(z) * z * z
+  q = z^e
   z = (z - imag(1/r)/z - real(1/q))
   |z| <= 4
   ;SOURCE: shakti.frm
 }
- 
+
 Dharma (XAXIS) {
   z = c = pixel:
   z = z + p1
   r = tan(1/z) + pixel
-  z = fn1(r) * z 
+  z = fn1(r) * z
   |z| < 4
   ;SOURCE: shakti.frm
 }
- 
+
 Gita {
   z = pixel + p1:
   r = fn1(tan(1/z)) + pixel + 1
@@ -7136,37 +7136,37 @@ Gita {
   |z| < 4
   ;SOURCE: shakti.frm
 }
- 
+
 Sattva {
   z = pixel + p1:
-  r = fn1(tan(1/z)) + pixel 
+  r = fn1(tan(1/z)) + pixel
   z = z * fn2(r)
   |z| < 4
   ;SOURCE: shakti.frm
 }
- 
+
 Sutra {
   z = pixel + p1:
   r = tan((1/z) + 1)
-  z = fn1(z * r)/fn2(r) 
+  z = fn1(z * r)/fn2(r)
   |z| < 4
   ;SOURCE: shakti.frm
 }
- 
+
 Carr-Orman2 {; Modified by Jack A. Orman
   z=1/pixel, c=fn1(p2)/pixel:
   z=z^p1+fn2(c/pixel)
   |z| <=10
   ;SOURCE: j-carr.frm
 }
- 
+
 J_TchebychevC3 {
   c = pixel, z = P1:
   z = c*z*(z*z-3)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 TobeyRichard1 (XYAXIS) {; Jm Richard-Collard
                         ; Generalized by Tobey J. E. Reed [76437,375]
   z = pixel:
@@ -7174,7 +7174,7 @@ TobeyRichard1 (XYAXIS) {; Jm Richard-Collard
   |z|<=50
   ;SOURCE: fract003.frm
 }
- 
+
 FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                   ; by George Martin, 10/98
   z=(pixel)/(1.099,0), x=|z|:
@@ -7182,10 +7182,10 @@ FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: spcb.frm
 }
- 
+
 FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                   ; by George Martin, 10/98
   z=(pixel)/(1.099,0), x=|z|:
@@ -7193,10 +7193,10 @@ FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: spcb.frm
 }
- 
+
 OK-08 {
   z = pixel, c = fn1(pixel):
   z = z^z / fn2(z)
@@ -7204,21 +7204,21 @@ OK-08 {
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_03 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 M_TchebychevC5 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z-5)+5)
   |z|<100
   ;SOURCE: fractint.frm
 }
- 
+
 g5_01_m {
   z = c = p1*pixel + p2 :
   z = z*z + c

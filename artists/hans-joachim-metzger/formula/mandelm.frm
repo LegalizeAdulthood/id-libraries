@@ -11,4 +11,4 @@ mandel-mandel {; Sylvie Gallet 1995
   |z|<=bailout
   ;SOURCE: mandelm.frm
 }
- 
+

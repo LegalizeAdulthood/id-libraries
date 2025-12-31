@@ -9,7 +9,7 @@ BJ-BC1974-c {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: bej0015.frm
 }
- 
+
 BJ-BC1974-h {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   c=z=fn2(pixel*pixel)/p2, d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/5)), bailout=4
@@ -21,7 +21,7 @@ BJ-BC1974-h {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: bej0015.frm
 }
- 
+
 BEJ-N187 {
   z=c=pixel, q=sin(conj(0.1,1.0)):
   z1=fn1(z/sqrt(pixel+1))/q
@@ -29,4 +29,4 @@ BEJ-N187 {
   |real(z)|<4
   ;SOURCE: bej0015.frm
 }
- 
+

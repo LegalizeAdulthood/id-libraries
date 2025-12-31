@@ -27,7 +27,7 @@ Bubbles            {; Jim Muth
   .000000000000000000000000000001 <= |a|
 }
 
-C4G           { ; p1 is (plus or minus) 1 or i 
+C4G           { ; p1 is (plus or minus) 1 or i
   x=real(pixel), y=imag(pixel)*p1
   a=b=0:
   a1 = a^2-p1^2*b^2
@@ -281,7 +281,7 @@ JulibrotZpwr       { ; Jim Muth
   |z| <= 100
 }
 
-Klein_tri_lattice(XYAXIS)  { 
+Klein_tri_lattice(XYAXIS)  {
   ang=pi/3
   r=1/2
   rr=r*r
@@ -1101,7 +1101,7 @@ Triternion         { ; Jim Muth
   |z-pixel| < 100
 }
 
-Wallpaper          { ; 
+Wallpaper          { ;
       ; use fp math, no periodicity, XY symmetry
       ; p1=location in M-set
       ; p2=magnitude

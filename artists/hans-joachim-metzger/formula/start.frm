@@ -93,7 +93,7 @@ startfrm   {; mask_008.frm
   out*|z|+in<test*out+z*in
   ;SOURCE: 96_msg_2.frm
    }
-starttfrm    {; FractMask08 
+starttfrm    {; FractMask08
 ;3d effects, fast if-else logic, transparent letters by
 ;Albrecht.niekamp@t-online.de
 ;maxiter=15000, center-x: -0.5, inside maxiter, outside tdis
@@ -317,14 +317,14 @@ endif
   phc_bailout
   }
 
-startzfrm    {; FractMask08 
+startzfrm    {; FractMask08
 ;3d effects, fast if-else logic, transparent letters by
 ;Albrecht.niekamp@t-online.de
 ;maxiter=1094, maxiter, tdis
 ;passes=1.To avoid moir‚e, which is ugly at lower
 ;resolutions set periodity=-1. This shuts off
 ;the inner mandel.
-;fractint 20.2.04 or later      
+;fractint 20.2.04 or later
   row=imag(scrnpix)
   col=real(scrnpix)
   rows=imag(scrnmax)

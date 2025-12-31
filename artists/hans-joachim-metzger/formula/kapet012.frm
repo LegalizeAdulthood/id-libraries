@@ -4,4 +4,4 @@ Kapetanov12 {
   |z|<8
   ;SOURCE: kapet012.frm
 }
- 
+

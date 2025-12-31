@@ -3,30 +3,30 @@
 ;Multi1,2,3.
 ;It contains special mandel and julia variations
 ;with a unique aproach (I hope, as I never have seen anything
-;like it before) to quasi 3d structures. The basic fractal 
+;like it before) to quasi 3d structures. The basic fractal
 ;is "distorted" in relation to the iteration of the previous
-;pixel.The relation is expressed by a function. 
+;pixel.The relation is expressed by a function.
 ;Note: Some pictures can be converted to Mandel/Julia VV.
-;Just press space, await the 
-;transform, select your new exploration 
+;Just press space, await the
+;transform, select your new exploration
 ;point and see what happens. Pictures you never have seen
 ;before, promised.
 ;The formulas correspond to the par-files (Multi4.par)
 ;with the same number.
 ;As some of the new Fractint features are used (Tdis is great!),
-;make sure you have downloaded the latest Fractint version, 
+;make sure you have downloaded the latest Fractint version,
 ;Fractint 20.02.4 or later.
 ;
 ;I'll be happy to get some feedback of any kind!
 ;
-;Albrecht.niekamp@t-online.de 
+;Albrecht.niekamp@t-online.de
 ;
 Multifrac131 {
 z=c=pixel
 fac=real(p1)
 u=fn1(t/fac)
 t=0
-:                                 
+:
 t=t+1
 z=z^2+c
 |z|<=u

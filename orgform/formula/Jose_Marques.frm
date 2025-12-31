@@ -1,27 +1,27 @@
-; jmarques@embratel.net.br (Jose Marques) 
-; 
+; jmarques@embratel.net.br (Jose Marques)
+;
 ; BAIL_OUT.FRM and BAIL_OUT.PAR for Fractint 19.2
-; 
-; Fri, 30 Jun 1995 09:50:34 GMT Empresa Brasileira de Telecomunicacoes 
-; 
-; Newsgroups: 
-;    sci.fractals 
-; 
-; 
-; 
+;
+; Fri, 30 Jun 1995 09:50:34 GMT Empresa Brasileira de Telecomunicacoes
+;
+; Newsgroups:
+;    sci.fractals
+;
+;
+;
 ; BAIL_OUT.FRM and BAIL_OUT.PAR were distributed in Dan Goldwater
 ; FracXtra v. 6.0 collection, but unfortunately the files were corrupt.
 ; Also some of the images didn't work in the version 19.2 of Fractint.
-; 
+;
 ; I'm posting here the revised and corrected versions of these files.
-; 
+;
 ; I made them when the change of bail_out conditions wasn't yet a
 ; built-in feature of Fractint. Even so, I think the results are quite
 ; interesting. Please E-Mail your opinions, and other PAR files based in
 ; the BAIL_OUT.FRM to Jose Marques - jmarques@embratel.net.br
-; 
+;
 ; Jose Marques
-; 
+;
 ; jmarques@embratel.internet.br
 
 {

@@ -12,4 +12,4 @@ Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+

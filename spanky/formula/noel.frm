@@ -678,7 +678,7 @@ quartest {
   temp = z
   z = sin(zp1) - zp2
   zp2 = zp1
-  zp1 = p1/temp, (|zp| <= huge && |z| <= huge) 
+  zp1 = p1/temp, (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -688,7 +688,7 @@ quartest {
       z = z*z + p1, (|z| <= 4.) }
 
  htzi {    ; From Noel Giffin noel@triumf.ca
-;          some unusual julia intializations 
+;          some unusual julia intializations
       z =(1.0,1.0)/pixel^4:
       z = z^2 + p1, |z| <=32767.0 }
 
@@ -705,7 +705,7 @@ quartest {
        z = sin(zp2) - zp1
        zp2 = zp1
        zp1 = p1/temp, (|zp| <= huge && |z| <= huge) }
-   
+
    quiltX(XAXIS) {    ; From Noel Giffin noel@triumf.ca
 ; The combination of a typing error and a bug in fractints parser
 ; makes weird quilt like patterns, I hope they don't fix it. I like it.
@@ -715,21 +715,21 @@ quartest {
       zp = p1/temp^.5, |zp| <= 4}
 
  htzsini {    ; From Noel Giffin noel@triumf.ca
-;          some unusual julia intializations 
+;          some unusual julia intializations
       z = 1/sin(pixel)^4:
       z = z*z + p1, |z| <=4.0 }
 
 ht {
-   ; Ah! You can use a variable in the 
+   ; Ah! You can use a variable in the
    ; inversion but now check for overflow.
-   ; Good results are found when the real part 
+   ; Good results are found when the real part
    ; of p1 is in the range 0.1->1.0
    ; With some sort of special value aprox. 0.148148...
    ; Setting the imaginary part as well causes very strange fractals
   z = pixel, zp=temp=(0,0), huge=1.0e32:
   temp = z
   z = z*z + zp
-  zp = p1/temp 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }

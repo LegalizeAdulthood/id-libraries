@@ -11,7 +11,7 @@ z=(real(z)^2-imag(z)^2)-1+real(c)*real(z)+i*(2*real(z))*imag(z)+imag(c)*real(z)-
 ;endif
 |z|<5
 }
- 
+
 fndif { ;p1 is the bailout if specified
 ;needs floating point if p1>127
 ;p1 is the bailout if specified (default=1e5)
@@ -21,7 +21,7 @@ z=pixel:
 z=fn1(z)-fn2(z)
 |z|<b
 }
- 
+
 halfspider(XAXIS_NOIMAG) {
 ;default for p1=-0.27
 ;(0 is useless, spider-like formations appear around 1)
@@ -31,7 +31,7 @@ z=z*z+c-p
 c=c-z*z*c
 |z|<8
 }
- 
+
 mandelcells(XAXIS_NOIMAG) {
 ;needs floating point!
 ;default for p1=0.01
@@ -43,7 +43,7 @@ z=z*c+z+p
 c=z/c
 |z|<b
 }
- 
+
 net {
 ;needs floating point!
 ;should be used with continuous pot. on
@@ -55,11 +55,11 @@ z=pixel:
 z=z*z+cotan(z)^x+cotan(real(z))^x*cotan(imag(z))^x-p1
 |z|<b
 }
- 
+
 simple1 { ;p1 is the exponent (default=2)
 x=p1,x=x+(x==0)*2
 z=pixel:
 z=real(z)+imag(z)+z^x
 |z|<4
 }
- 
+

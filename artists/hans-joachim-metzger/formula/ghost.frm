@@ -40,7 +40,7 @@ ghost-horiz_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 ghost-vert_jul {; Kerry Mitchell
         ; For Kerry Mitchell's explanation of his "ghost" formulas, see
         ;   the end of formula ghost_jul
@@ -84,7 +84,7 @@ ghost-vert_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 ghost_jul {; Kerry Mitchell
         ;
         ; colors Julia sets by combining the smoothed iteration
@@ -171,7 +171,7 @@ ghost_jul {; Kerry Mitchell
 ;***********************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 ghost_man {; Kerry Mitchell
         ; For Kerry Mitchell's explanation of his "ghost" formulas, see
         ;   the end of formula ghost_jul
@@ -209,4 +209,4 @@ ghost_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

@@ -533,7 +533,7 @@ endif
 bo=|z|
 bo<=ba
 }
- 
+
 Multifractal_9    { ;  Albrecht Niekamp  170903
 ;p1 (spider)julia-seed
 ;real(p2) 5digits : (1)shape (2)outside (3)inside1 (4)inside2 (5)inside3
@@ -1036,7 +1036,7 @@ endif
 bo=|z|
 bo<ba
 }
- 
+
 Multifractal_7    { ;  Albrecht Niekamp  240703
 ;p1 (spider)julia-seed
 ;real(p2) 5digits: frm-use: shape, outside, inside1, inside2, inside3
@@ -1465,4 +1465,4 @@ endif
 bo=|z|
 bo<=ba
 }
- 
+

@@ -5,7 +5,7 @@ Carr1150 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1151 {
   z=pixel/((1.099,0)^(pixel))
   c=(pixel/((2.099,0)*1/z)):
@@ -13,7 +13,7 @@ Carr1151 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1152 {
   z=pixel/((1.099,0)^(pixel))
   c=(pixel/((2.099,0)*1/z)):
@@ -21,7 +21,7 @@ Carr1152 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1153 {
   z=1/pixel
   c=(1.099,0)/(pixel-z):
@@ -29,7 +29,7 @@ Carr1153 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1154 {
   z=1/pixel
   c=(0.3,0.6)/(pixel-z*z):
@@ -37,7 +37,7 @@ Carr1154 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1155 (XAXIS_NOPARM) {; FractalFenderC modified
                          ; Modified Lee Skinner frm.
      ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -47,10 +47,10 @@ Carr1155 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+(pixel)
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1156 (XAXIS_NOPARM) {; FractalFenderC modified
                          ; Modified Lee Skinner frm.
      ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -60,10 +60,10 @@ Carr1156 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+(pixel/(1.099,0))
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1157 {; Modified Wareman formula
   z=1/pixel, root=(1.099,0):
   z3=z*z*z
@@ -72,84 +72,84 @@ Carr1157 {; Modified Wareman formula
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1158 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=(c*sqr(z)+pixel)/(pixel-z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1159 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(c*sqr(z)+pixel)/(pixel-z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1160 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-cosxx(c*sqr(z)+pixel)/(pixel-z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1161 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=cabs(z)-cosxx(c*sqr(z)+pixel)/(pixel-z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1162 {; Forms Faberge' Eggs
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(cosh(z+pixel))/(z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1163 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(cosxx(z+pixel))/(z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1164 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(cotanh(z+pixel))/(z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1165 {
   z=1/pixel*0.91/pixel, c=pixel/(1.099,0):
   z=z-(cosxx(z*z+c)+pixel)/(z*1/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1166 {
   z=1/pixel*0.91/pixel, c=(1.099,0)/pixel:
   z=z-(cosxx(z*1/c+pixel))/sqr(z/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1167 {
   z=sqr(1/pixel*0.91/pixel), c=(1.099,0)/pixel:
   z=z-1/(cosxx(z/c+pixel))/sqr(z/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1168 {
   z=sqr(1/pixel*0.91/pixel), c=(1.099,0)/pixel:
   z=z-1/(sinh(z/c-pixel))/sqr(z/c)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1169 {
   z=pixel/(1.099,0)
   c=((1/pixel)/2)/z-2.5^(pixel+2.324)/(1.099,0):
@@ -157,7 +157,7 @@ Carr1169 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1170 {
   z=pixel/(1.099,0)
   c=((1/pixel)/2)/z-2.5^(pixel+2.324)/(1.099,0):
@@ -165,7 +165,7 @@ Carr1170 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1171 {
   z=(4/pixel)/(1.099,0)
   c=z-2.5^(pixel-2.324)/(1.099,0):
@@ -173,25 +173,25 @@ Carr1171 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1172 {; Modified Noel Giffin formula
   z=1/pixel, zp=(0,0):
   temp=z
   z=z*z-zp
   zp=sin(-temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1173 {; Ditto above
   z=1/pixel, zp=exp(1.099,0):
   temp=real(z)
   z=exp(z*z+zp)
   zp=z-(cosxx(1/temp))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1175 {; Modified Noel Giffin formula
   z=pixel, zp1=zp2=zp3=(0,0):
   temp=z
@@ -202,7 +202,7 @@ Carr1175 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1176 {; Ditto above
   z=1/pixel, zp=(0,0):
   temp=z
@@ -211,7 +211,7 @@ Carr1176 {; Ditto above
   |zp| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1177 {; Ditto above
   z=cosxx(1/pixel*1/pixel*1/pixel), zp=(0,0):
   temp=z
@@ -220,7 +220,7 @@ Carr1177 {; Ditto above
   |zp| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1178 {; Modified Noel Giffin formula
   z=cosxx(pixel), zp1=zp2=zp3=(0,0):
   temp=z
@@ -231,7 +231,7 @@ Carr1178 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1179 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=(1/pixel):
   temp=z
@@ -242,7 +242,7 @@ Carr1179 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1180 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=cotanh(1/-pixel):
   temp=z
@@ -253,7 +253,7 @@ Carr1180 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1181 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=log(1/-pixel):
   temp=z
@@ -264,7 +264,7 @@ Carr1181 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1182 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=log(1/-pixel):
   temp=z
@@ -275,7 +275,7 @@ Carr1182 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1183 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=log(1/-pixel):
   temp=cabs(z)
@@ -286,7 +286,7 @@ Carr1183 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1184 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=sqr(1/-pixel):
   temp=cabs(z-0.5)
@@ -297,7 +297,7 @@ Carr1184 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1185 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=sqr(2*(1/-pixel)):
   temp=cabs(z-0.25)
@@ -308,7 +308,7 @@ Carr1185 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1186 {; Modified Noel Giffin formula
   z=sqr(pixel*pixel+pixel), zp1=zp2=zp3=sqr(cosxx(1/-pixel)):
   temp=cabs(z-1.25)
@@ -319,7 +319,7 @@ Carr1186 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1187 {; Modified Noel Giffin formula
   z=zp1=pixel, zp2=(1.099,0):
   temp=z
@@ -329,7 +329,7 @@ Carr1187 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1188 {; Modified Noel Giffin formula
   z=zp1=pixel, zp2=(1.099,0), zp3=sqr(1/pixel*0.91/pixel):
   temp=z
@@ -340,7 +340,7 @@ Carr1188 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1189 {; Modified Noel Giffin formula
   z=pixel^2.34, zp1=zp2=zp3=(1/pixel)*(1.099,0)
   c=z-(1/pixel):
@@ -352,32 +352,32 @@ Carr1189 {; Modified Noel Giffin formula
   |zp1| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1190 {
   z=1/pixel, c=cosxx(1/pixel):
   z=sqr(sqr(z*c))+c+(1.099,0)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1191 {
   z=1/pixel, c=cosxx(1/pixel):
   z=cosxx(sqr(sqr(z*1/c)))+c+(1.099,0)
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1192 {; Modified (Modified Newton; Tim Wegner)
           ; from MISCBLB.FRM
   z=1/pixel, z2=z*z+c, z3=z*(cosxx(z2))
   c=cosxx(1/pixel*0.91/pixel):
-  z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)      
+  z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)
   z2=z*z/c*c
   z3=z*z2
   p2<=|z3+p1*z2+1|
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1193 {
   z=conj(1/pixel*0.91/pixel), z2=z+conj(cosxx(1/pixel)), z3=z*z2
   c=1/cosxx(sqr(pixel)):
@@ -387,7 +387,7 @@ Carr1193 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1194 {; Creates VERY nice images
   z=conj(1/pixel*0.91/pixel), z2=z+conj(cosxx(1/pixel)), z3=z*z2
   c=1/cosxx(sqr(pixel)):
@@ -397,7 +397,7 @@ Carr1194 {; Creates VERY nice images
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1195 {
   z=conj(1/pixel*0.91/pixel), z2=z+conj(cosxx(1/pixel)), z3=z*z2
   c=1/cosxx(sqr(pixel)):
@@ -407,7 +407,7 @@ Carr1195 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1196 {
   z=conj(1/pixel*0.91/pixel), z2=z+conj(cosxx(1/pixel)), z3=z*z2
   c=(1/cosxx(sqr(pixel)))/(1.099,0):
@@ -417,7 +417,7 @@ Carr1196 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1197 {
   z=conj(1/pixel*0.91/pixel), z2=z+exp(cosxx(1/pixel)), z3=z*z2
   c=(1/cosxx(sqr(pixel)))/(1.099,0):
@@ -427,7 +427,7 @@ Carr1197 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1198 {
   z=conj(1/pixel*0.91/pixel), z2=z+exp(cosxx(1/pixel)), z3=z*z2
   c=(1/cosxx(sqr(pixel)))/(1.099,0):
@@ -437,7 +437,7 @@ Carr1198 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+
 Carr1199 {
   z=exp(1/pixel*0.91/pixel), z2=z+exp(cosxx(1/pixel)), z3=z*z2
   c=(1/cosxx(sqr(pixel)))/(1.099,0):
@@ -447,4 +447,4 @@ Carr1199 {
   |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
- 
+

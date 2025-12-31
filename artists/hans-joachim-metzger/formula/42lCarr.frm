@@ -15,7 +15,7 @@ Carr2537 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2538 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -32,7 +32,7 @@ Carr2538 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2539 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -50,7 +50,7 @@ Carr2539 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2540 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -68,7 +68,7 @@ Carr2540 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2541 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -85,7 +85,7 @@ Carr2541 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2542 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -102,7 +102,7 @@ Carr2542 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2543 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -120,7 +120,7 @@ Carr2543 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2544 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -139,7 +139,7 @@ Carr2544 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2545 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -156,7 +156,7 @@ Carr2545 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2546 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -174,7 +174,7 @@ Carr2546 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2547 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -193,7 +193,7 @@ Carr2547 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2548 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -211,7 +211,7 @@ Carr2548 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2549 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -229,7 +229,7 @@ Carr2549 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2550 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -247,7 +247,7 @@ Carr2550 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2551 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -265,7 +265,7 @@ Carr2551 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2552 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -282,7 +282,7 @@ Carr2552 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2553 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -299,7 +299,7 @@ Carr2553 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2554 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -316,7 +316,7 @@ Carr2554 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2555 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -333,7 +333,7 @@ Carr2555 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2556 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -351,7 +351,7 @@ Carr2556 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2557 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -368,7 +368,7 @@ Carr2557 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2558 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -384,7 +384,7 @@ Carr2558 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2559 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -401,7 +401,7 @@ Carr2559 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2560 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -418,7 +418,7 @@ Carr2560 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2561 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -435,7 +435,7 @@ Carr2561 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2562  (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -452,7 +452,7 @@ Carr2562  (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2563 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -469,7 +469,7 @@ Carr2563 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2564 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -486,7 +486,7 @@ Carr2564 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2565 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -503,7 +503,7 @@ Carr2565 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2566 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -520,7 +520,7 @@ Carr2566 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2567 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -537,7 +537,7 @@ Carr2567 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2568 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -554,7 +554,7 @@ Carr2568 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2569 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -573,7 +573,7 @@ Carr2569 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2570 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -593,7 +593,7 @@ Carr2570 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2571 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -611,7 +611,7 @@ Carr2571 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2572 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -629,7 +629,7 @@ Carr2572 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2573 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -648,7 +648,7 @@ Carr2573 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2574 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -667,7 +667,7 @@ Carr2574 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2575 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -685,7 +685,7 @@ Carr2575 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2576 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -703,7 +703,7 @@ Carr2576 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2577 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -721,7 +721,7 @@ Carr2577 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2578 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -739,7 +739,7 @@ Carr2578 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2579 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -757,7 +757,7 @@ Carr2579 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 96msg.frm
 }
- 
+
 Carr2580 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -776,7 +776,7 @@ Carr2580 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2581 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -794,7 +794,7 @@ Carr2581 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2582 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -812,8 +812,8 @@ Carr2582 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
- 
+
+
 Carr2584 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -831,7 +831,7 @@ Carr2584 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2585 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -849,7 +849,7 @@ Carr2585 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2586 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -867,7 +867,7 @@ Carr2586 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2587 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -885,7 +885,7 @@ Carr2587 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2588 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -903,7 +903,7 @@ Carr2588 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Carr2583 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -921,4 +921,4 @@ Carr2583 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+

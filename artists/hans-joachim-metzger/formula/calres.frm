@@ -4,11 +4,11 @@ htd {
   temp = z
   z = zp1*zp1 - zp2
   zp2 = zp1
-  zp1 = p1/temp 
-  (|zp1| <= 64) && (|z| <= huge) 
+  zp1 = p1/temp
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
- 
+
 mfn2fn {
   z=pixel:
   power = fn2(z)
@@ -16,7 +16,7 @@ mfn2fn {
   |z| < p2
   ;SOURCE: fractals.frm
 }
- 
+
 NewtonSinExp (XAXIS) {; Chris Green
                       ; Newton's formula applied to sin(x)+exp(x)-1=0.
                       ; Use floating point.
@@ -27,7 +27,7 @@ NewtonSinExp (XAXIS) {; Chris Green
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 OK-09 {
   z = c = pixel, d = fn1(pixel), k = 1 + p1:
   z = z^c * k
@@ -35,7 +35,7 @@ OK-09 {
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-12 {; TRY FN1 = SQR, FN2 = SQR
   z = c = pixel:
   z = fn1(z) + c
@@ -43,7 +43,7 @@ OK-12 {; TRY FN1 = SQR, FN2 = SQR
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 pheonix (XAXIS) {
    ; Add conjugation and produce a great fractal even if it's spelt wrong.
   z = pixel, zp1 = zp2 = (0,0):
@@ -51,17 +51,17 @@ pheonix (XAXIS) {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
- 
-3jRatz-fn {; try fn=ident, p1 < 1 
-  z = Pixel :  
-  z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) 
-  | z | <= 10 
+
+3jRatz-fn {; try fn=ident, p1 < 1
+  z = Pixel :
+  z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 )
+  | z | <= 10
   ;SOURCE: fn-ratz.frm
 }
- 
+
 3RDIM01 {; Mandelbrot
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
@@ -69,14 +69,14 @@ pheonix (XAXIS) {
   |z|<=64
   ;SOURCE: fractint.frm
 }
- 
+
 NovaM {; Mandelbrot-like set for Nova.
        ; P2 is an inverse bailout,
        ; set this to a small nonzero value and use
        ; floating point. E.g. 0.0000001.
        ; The Nova Formulae, discovered by PGD.
        ; Freely distributable but may not be sold.
-  z=1  
+  z=1
   c=pixel:
   z2=z*z
   z3=z*z2
@@ -87,7 +87,7 @@ NovaM {; Mandelbrot-like set for Nova.
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 OK-16 {
   z = v = pixel :
   z = fn1(z)^v
@@ -95,7 +95,7 @@ OK-16 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-18 {
   z = v = pixel:
   z = fn1(v) + real(z)
@@ -103,14 +103,14 @@ OK-18 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
-PixNwt { 
+
+PixNwt {
   z = pixel, Root = fn1(p2 * pixel):
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
   ;SOURCE: crazynwt.frm
 }
- 
+
 TileMandel {; Terren Suydam (terren@io.com), 1996
             ; modified by Sylvie Gallet [101324,3444]
             ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -135,4 +135,4 @@ TileMandel {; Terren Suydam (terren@io.com), 1996
   |z| <= 4
   ;SOURCE: fract196.frm
 }
- 
+

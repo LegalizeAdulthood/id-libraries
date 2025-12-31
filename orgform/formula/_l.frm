@@ -2683,7 +2683,7 @@ L07-29 {; V.1.1 - earlier versions may be discarded
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
   test=(|Tx|+|Ty|)
-  test>=bailout && test<=1e30  
+  test>=bailout && test<=1e30
   ;SOURCE: chby29.frm
 }
 
@@ -3936,7 +3936,7 @@ L10-30 {; V.1.1 - earlier versions may be discarded
 l6 {
   z=pixel, z1=(1-pixel), y=fn4(1/z1), c=(y+y)^p1:
   z=fn1(z)*fn2(z1+1)
-  z=(fn1((z1-2)/z+1)+(fn2(z1-1)))*1/(z1+z1) 
+  z=(fn1((z1-2)/z+1)+(fn2(z1-1)))*1/(z1+z1)
   z=fn2(z1*y)/fn3(1/c-1)/fn3(z1*((y+z)))+(c*z)
   |z|<4
   ;SOURCE: ad3.frm
@@ -4341,7 +4341,7 @@ La02-18 {; V.1.1 - earlier versions may be discarded
          ; La(1)=(a+1-z)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p3, c=a+2, b=c*(a+1)/2 
+  a=p3, c=a+2, b=c*(a+1)/2
   z=pixel, oz=0
   fz=b
   zt=fn1(z)+p1:
@@ -4522,7 +4522,7 @@ La02-26 {; V.1.1 - earlier versions may be discarded
          ; La[n+1] = ((a+2n+1-z)La[n]-(a+n)La[n-1])/(n+1)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p2, c=a+2, b=c*(a+1)/2, 
+  a=p2, c=a+2, b=c*(a+1)/2,
   t=p1, bailout=real(p3), z=pixel, v=imag(p3):
   x=real(z), y=imag(z)
   Tx=(fn1(x*(x/2-c)+b))
@@ -4546,7 +4546,7 @@ La02-27 {; V.1.1 - earlier versions may be discarded
          ; La[n+1] = ((a+2n+1-z)La[n]-(a+n)La[n-1])/(n+1)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p2, c=a+2, b=c*(a+1)/2, 
+  a=p2, c=a+2, b=c*(a+1)/2,
   t=p1, bailout=real(p2), z=pixel, x=real(pixel)
   y=imag(pixel), h=imag(p2):
   newx=x-h*sin(y+tan(3*y))
@@ -4598,7 +4598,7 @@ La02-29 {; V.1.1 - earlier versions may be discarded
          ; La[n+1] = ((a+2n+1-z)La[n]-(a+n)La[n-1])/(n+1)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p2, c=a+2, b=c*(a+1)/2 
+  a=p2, c=a+2, b=c*(a+1)/2
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
   Tx=(fn1(x*(x/2-c)+b))
@@ -9158,7 +9158,7 @@ Lambda {; v7.x - Jon Horner - set p1 = (0.85, 0.6)
         ; (1-z^2) which produces a totally different fractal.
         ; - fixed in v18.  CAL calls it LogisticEquation-J.
   z = pixel, c = p1 :
-  z = z * (1 - z ) * c 
+  z = z * (1 - z ) * c
   |z| <= 4
   ;SOURCE: parser.frm
 }
@@ -9178,116 +9178,116 @@ lambda-2 {; Sylvie_Gallet@CompuServe.com, Sep 1997
 }
 
 
-Lambda01 {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda01 {; Peter Anders (anders@physik.hu-berlin.de)
   z=pixel:
   z=z*(p1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda02 {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda02 {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1:
   z=z*(pixel-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda03 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda03 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=0.5, c=pixel:
   z=c*z*(1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda04 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda04 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=0.422649730811, c=pixel:
   z=c*z*(1-z)*(2-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda05 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda05 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=0.38197, c=pixel:
   z=c*z*(1-z)*(2-z)*(3-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda06 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda06 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   z=c*z*(1-z)*(-1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda07 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda07 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=0.577350269189, c=pixel:
   z=c*z*(1-z)*(-1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda08 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda08 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   z=c*z*(1-z)*(-1-z)*(2-z)*(-2-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda09 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda09 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=0.54391225591, c=pixel:
   z=c*z*(1-z)*(-1-z)*(2-z)*(-2-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda10 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda10 (XAXIS) {; Peter Anders (anders@physik.hu-berlin.de)
   z=1.64443286815, c=pixel:
   z=c*z*(1-z)*(-1-z)*(2-z)*(-2-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda11 {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda11 {; Peter Anders (anders@physik.hu-berlin.de)
   z=(p1/(3^0.5)), c=pixel:
   z=c*z*(p1-z)*(-p1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
 
-Lambda12 {; Peter Anders (anders@physik.hu-berlin.de) 
-  z=((0.3*p1^2+0.3*p2^2+(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5) 
+Lambda12 {; Peter Anders (anders@physik.hu-berlin.de)
+  z=((0.3*p1^2+0.3*p2^2+(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5)
   c=pixel:
   z=c*z*(p1-z)*(-p1-z)* (p2-z)*(-p2-z)
-  |fn1(z)|<100 
+  |fn1(z)|<100
   ;SOURCE: lambda.frm
 }
 
 
-Lambda13 {; Peter Anders (anders@physik.hu-berlin.de) 
-  z=((0.3*p1^2+0.3*p2^2-(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5) 
+Lambda13 {; Peter Anders (anders@physik.hu-berlin.de)
+  z=((0.3*p1^2+0.3*p2^2-(0.09*(p1^2+p2^2)^2-0.2*p1^2*p2^2)^0.5)^0.5)
   c=pixel:
   z=c*z*(p1-z)*(-p1-z)* (p2-z)*(-p2-z)
-  |fn1(z)|<100 
+  |fn1(z)|<100
   ;SOURCE: lambda.frm
 }
 
 
-Lambda14 {; Peter Anders (anders@physik.hu-berlin.de) 
+Lambda14 {; Peter Anders (anders@physik.hu-berlin.de)
   z=pixel, c=p1:
   z=c*z*(1-z)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -9319,9 +9319,9 @@ lambdafn {; Chuck Ebbert.
 }
 
 
-lambdafn-mod { 
+lambdafn-mod {
   z = pixel
-  m = ((1, 0.4) * (|p1|<=0) + p1 )  
+  m = ((1, 0.4) * (|p1|<=0) + p1 )
   t = (64 * (real(p2)<=0) + real(p2) * (0<p2) ):
   z = fn1(z) * fn2(m)
   abs(imag(z)) <= t && abs(real(z)) <= t
@@ -9338,7 +9338,7 @@ lambdafn-xw {; 1997 by Benno Schmid
 }
 
 
-lambdafn-xy {; 1997 by Benno Schmid 
+lambdafn-xy {; 1997 by Benno Schmid
   z=pixel
   c=p1:
   z=c*fn1(z)
@@ -9374,7 +9374,7 @@ lambdafn-yz {; 1997 by Benno Schmid
 }
 
 
-lambdafn-zw {; 1997 by Benno Schmid 
+lambdafn-zw {; 1997 by Benno Schmid
   z=p1, c=pixel:
   z=c*fn1(z)
   |z| <= 64
@@ -9417,90 +9417,90 @@ lambdafroth4m (XYAxis) {
 
 
 LambdaLog (XAXIS) {
-  z = pixel, c = log(pixel):  
-  z = c * sqr(z) + pixel 
-  |z| <= 4 
+  z = pixel, c = log(pixel):
+  z = c * sqr(z) + pixel
+  |z| <= 4
   ;SOURCE: skinner.frm
 }
 
 
 LambdaPwr {
   z = pixel:
-  z = p1*z*(1 - z^p2) 
+  z = p1*z*(1 - z^p2)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
 
 
 lambtet1 {; fn1=sin & inside=bof60 gives a striking tropical fish!
-          ; see file FISHY.GIF - New Images Nov. 
-          ; set fn1=fn2=ident for simple tetrate fractal.            
-  z=c=fn2(pixel): 
-  z=fn1(c^z) 
+          ; see file FISHY.GIF - New Images Nov.
+          ; set fn1=fn2=ident for simple tetrate fractal.
+  z=c=fn2(pixel):
+  z=fn1(c^z)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet2 {
-  z=c=fn2(pixel): 
-  z=fn1(z^c) 
+  z=c=fn2(pixel):
+  z=fn1(z^c)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet3 {; fn1=recip will produce infinitely nested crustaceans!
-  z=c=fn2(pixel): 
-  z=c^fn1(z) 
+  z=c=fn2(pixel):
+  z=c^fn1(z)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet4 {
-  z=c=fn2(pixel): 
-  z=z^fn1(c) 
+  z=c=fn2(pixel):
+  z=z^fn1(c)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
-lambtet5 { 
-  z=c=fn2(pixel): 
-  z=1/fn1(c^z) 
+lambtet5 {
+  z=c=fn2(pixel):
+  z=1/fn1(c^z)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet6 {
-  z=c=fn2(pixel): 
-  z=1/fn1(z^c) 
+  z=c=fn2(pixel):
+  z=1/fn1(z^c)
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet7 {
-  z=c=fn2(pixel): 
-  z=c^(1/fn1(z)) 
+  z=c=fn2(pixel):
+  z=c^(1/fn1(z))
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
-lambtet8 { 
-  z=c=fn2(pixel): 
-  z=z^(1/fn1(c)) 
+lambtet8 {
+  z=c=fn2(pixel):
+  z=z^(1/fn1(c))
   |z|<=4
   ;SOURCE: lamtet.frm
 }
 
 
 lambtet9 {
-  z=c=fn2(pixel): 
-  z=fn1(c^fn3(z)) 
+  z=c=fn2(pixel):
+  z=fn1(c^fn3(z))
   |z|<=4
   ;SOURCE: lamtet.frm
 }
@@ -9517,10 +9517,10 @@ Langolier {
 Langolier2 {; Nature102
             ; suggested by generalized by Jay Hill
             ; try p1= -.013579, .2468
-  IF( |p1| == 0) 
+  IF( |p1| == 0)
     p1 = 1 ; default, don't want zero divide
   ENDIF
-  IF( |p2| == 0) 
+  IF( |p2| == 0)
     p2 = 16 ; default bailout
   ENDIF
   z = 0, c = pixel, bailout = real(p2):
@@ -9532,8 +9532,8 @@ Langolier2 {; Nature102
 
 Langolier3 {; Nature102
             ; preferred generalization by Jay Hill
-            ; try non-zero p1 
-  IF( |p2| == 0) 
+            ; try non-zero p1
+  IF( |p2| == 0)
     p2 = 16 ; default bailout
   ENDIF
   z = 0, c = pixel, bailout = real(p2):
@@ -9611,7 +9611,7 @@ Legendre (XAXIS) {; Advanced Fractal Programming in C  - Stevens
 }
 
 
-Lesfrm01 (xaxis) { 
+Lesfrm01 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c)/fn2(z))/c^3
   |z| <=4
@@ -9634,7 +9634,7 @@ Lesfrm01r {; Les St Clair, 1996
 }
 
 
-Lesfrm02 (xaxis) { 
+Lesfrm02 (xaxis) {
   c=z=pixel:
   z=z+(fn1(z)/fn2(c))/c^3
   |z| <=4
@@ -9659,7 +9659,7 @@ Lesfrm02g_PHC {; Les St Clair [101461,2032], 1996  Requires passes=1
 }
 
 
-Lesfrm03 (xaxis) { 
+Lesfrm03 (xaxis) {
   z=pixel:
   z=z+(fn1(z)/fn2(z))/z^4
   |z| <=4
@@ -9667,7 +9667,7 @@ Lesfrm03 (xaxis) {
 }
 
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4
   |z| <=6
@@ -9675,7 +9675,7 @@ Lesfrm04 (xaxis) {
 }
 
 
-Lesfrm05 (xaxis) { 
+Lesfrm05 (xaxis) {
   c=z=pixel:
   z=z+p1/fn1(z^2)/c^3
   |z| <=6
@@ -9691,7 +9691,7 @@ Lesfrm05_a (xaxis) {
 }
 
 
-Lesfrm06 { 
+Lesfrm06 {
   c=z=pixel:
   z=z+p1*fn1(z/0.213)/c
   |z| <=3
@@ -9699,7 +9699,7 @@ Lesfrm06 {
 }
 
 
-Lesfrm07 { 
+Lesfrm07 {
   c=z=pixel:
   z=z+p1*fn1(z/0.416)/c^2
   |z| <=3
@@ -9707,7 +9707,7 @@ Lesfrm07 {
 }
 
 
-Lesfrm08 { 
+Lesfrm08 {
   c=z=pixel:
   z=z+p1*fn1(z/3.142)/c^3.142
   |z| <=3.142
@@ -9715,7 +9715,7 @@ Lesfrm08 {
 }
 
 
-Lesfrm09 {; modified for v20 compatibility 
+Lesfrm09 {; modified for v20 compatibility
   c=z=tan(pixel):
   z=z+p1*fn1(z)
   |z| <=10
@@ -9723,7 +9723,7 @@ Lesfrm09 {; modified for v20 compatibility
 }
 
 
-Lesfrm10 { 
+Lesfrm10 {
   c=z=pixel:
   z=z+(fn1(fn2(Z)))+C/P1
   |z|<4
@@ -9731,7 +9731,7 @@ Lesfrm10 {
 }
 
 
-Lesfrm11 { 
+Lesfrm11 {
   c=z=pixel:
   z=z+(((fn1(z)-P1)*fn2(z))/fn3(c))
   |z|<4
@@ -9749,10 +9749,10 @@ Lesfrm12 {; Les St Clair, 1996
 
 
 Lesfrm13 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: lesfrm13.frm
@@ -9771,7 +9771,7 @@ Lesfrm14 (xaxis) {; Les St Clair, 1996
 
 Lesfrm15 {; Les St Clair, 1996
   z = c = pixel:
-  c = p1*c 
+  c = p1*c
   z = fn1(c)^pi+fn2(z)+p2*c
   |z| <= 4
   ;SOURCE: les.frm
@@ -9878,7 +9878,7 @@ Lesfrm30 {; Modified Sylvie Gallet formula
    x1 = x + p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y + p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi, y = (y1*pi)/(x*x*x)
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
   ;SOURCE: 97msg.frm
 }
@@ -9889,8 +9889,8 @@ Lesfrm34 {; Modified Sylvie Gallet formula
           ; Les St Clair 1997
           ; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel*pi, x = real(z), y = imag(z):
-  x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x))  
-  y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y)) 
+  x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x))
+  y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y))
   x = x1^pi, y = y1^pi
   z = (x + flip(y))^pi
   |z| <= 32
@@ -9902,7 +9902,7 @@ Lesfrm35 {; Modified Sylvie Gallet formula
           ; Modified Gallet-5-08
           ; Les St Clair 1997
   z = pixel*pi, x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y))
    x = x1+p1^pi, y = y1+p2^pi
    z = (x + flip(y))
@@ -9921,7 +9921,7 @@ Lesfrm42    {; Modified Sylvie Gallet formula
   beta = fn2(h/r), alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :
@@ -9940,7 +9940,7 @@ Lesfrm43    {; Modified Sylvie Gallet formula
   beta = fn2(h/r), alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :
@@ -9965,7 +9965,7 @@ LesPHCfrm01 {; Les St Clair [101461,2032], 1996  Requires passes=1
 
 LesPHCfrm04 {; Les St Clair [101461,2032], 1996  Requires passes=1
              ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-             ; Earl Glynn 
+             ; Earl Glynn
   z = pixel:
   x = 1 - abs(imag(z)-real(z))
   z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -10057,7 +10057,7 @@ LGDF0009 (XAXIS) {; TwoFace Formula
                   ; Modified Sylvie Gallet frm.
                   ; Modified Carr1971 formula
                   ; LGD 1-11-96
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -10082,7 +10082,7 @@ LGDF0010 {; Inspired by Bob Carr
 LGDF0011 {; Modified Sylvie Gallet frm.
           ; Modified Carr1971 formula
           ; LGD 3-6-96
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(p2) :
   test=(compt<limit)
@@ -10188,7 +10188,7 @@ Liar1M {; by Jon Horner - based on LIAR1 by Chuck Ebbert - 76306,1226
         ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = (0,0), c = pixel :
   z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z))) + c
-  |z| <= 1 
+  |z| <= 1
   ;SOURCE: nuliar.frm
 }
 
@@ -10214,7 +10214,7 @@ Liar2M {; by Jon Horner - based on LIAR2 by Chuck Ebbert.
   z = (0,0), c = pixel :
   x = 1 - abs(imag(z) - real(z))
   z = flip(1 - abs(1-real(x)-imag(z))) + real(x) + c
-  |z| <= 1 
+  |z| <= 1
   ;SOURCE: nuliar.frm
 }
 
@@ -10242,7 +10242,7 @@ Liar3M {; by Jon Horner - based on LIAR3 by Chuck Ebbert.
   z = (0,0), c = pixel :
   x = 1 - abs(imag(z) * real(p1) -real(z) )
   z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x) + c
-  |z| <= 1 
+  |z| <= 1
   ;SOURCE: nuliar.frm
 }
 
@@ -10268,7 +10268,7 @@ Liar4M {; by Jon Horner - based on LIAR4 by Chuck Ebbert.
         ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = (0,0), c = pixel, p = p1 + 1:
   z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z))) + c
-  |z| <= p2 
+  |z| <= p2
   ;SOURCE: nuliar.frm
 }
 
@@ -10288,7 +10288,7 @@ limerick {; Bradley Beacham  [74223,2745]
 
 Lin-7new5 {; Linda Allison
   z = pixel:
-  z = (fn1(1/z ^ 2))/p1 - p1  
+  z = (fn1(1/z ^ 2))/p1 - p1
   |z| <= p2
   ;SOURCE: allison2.frm
 }
@@ -10341,11 +10341,11 @@ lion {; Giuseppe Zito
   d33 = -0.49559599
   d40 = -0.78277397
   d43 = 0.18307801
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 +c1
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +x
   s1 = y
@@ -10381,44 +10381,44 @@ lion {; Giuseppe Zito
   s1 =d43
   s0 = s0 *s1
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
-Lister {; Might need periodicity=0 
+Lister {; Might need periodicity=0
   z = pixel + p1:
-  r = tan(1/z)/e + pixel  
-  z = fn1(z)/r 
+  r = tan(1/z)/e + pixel
+  z = fn1(z)/r
   |z| < 4
   ;SOURCE: lister.frm
 }
 
 
-Lister_2 {; Might need periodicity=0 
+Lister_2 {; Might need periodicity=0
   z = c = pixel + p1:
   r = tan(e/z)/pi
-  z = fn1(z)/fn2(c/r) 
+  z = fn1(z)/fn2(c/r)
   |z| < 4
   ;SOURCE: lister.frm
 }
 
 
-Lister_3 {; Might need periodicity=0 
+Lister_3 {; Might need periodicity=0
   z = pixel + p1:
   r = tan(1/z)/e
-  z = fn1(1/z)*r/e   
+  z = fn1(1/z)*r/e
   |z| < 4
   ;SOURCE: lister.frm
 }
 
 
-Lister_M {; Might need periodicity=0 
+Lister_M {; Might need periodicity=0
   z = c = pixel:
-  r = tan(e/z)/c  
-  z = r * fn1(z) - p1 
+  r = tan(e/z)/c
+  z = r * fn1(z) - p1
   |z| < 4
   ;SOURCE: lister.frm
 }
@@ -10427,7 +10427,7 @@ Lister_M {; Might need periodicity=0
 Listerial {; Might need periodicity=0
   z = pixel, tp = tan(1/pixel):
   z = fn1(z) + p1
-  r = tp/(imag(z)/real(z)) 
+  r = tp/(imag(z)/real(z))
   z = tan(1/z)/sqrt(r)
   |z| < 4
   ;SOURCE: lister.frm
@@ -11059,7 +11059,7 @@ LKM-bailline_jul {; Kerry Mitchell
      ; bails out when a*x + b*y > k
      ; c = p1, real(p2) = a, imag(p2) = b, real(p3) = k
   z=pixel, c=p1, a=real(p2), b=imag(p2), k=real(p3):
-  z=sqr(z)+c 
+  z=sqr(z)+c
   (a*real(z)+b*imag(z)) < k
   ;SOURCE: lkm.frm
 }
@@ -11070,7 +11070,7 @@ LKM-bailline_man {; Kerry Mitchell
    ; bails out when a*x + b*y > k
    ; real(p1) = a, imag(p1) = b, real(p2) = k
   z=0, c=pixel, a=real(p1), b=imag(p1), k=real(p2):
-  z=sqr(z)+c 
+  z=sqr(z)+c
   (a*real(z)+b*imag(z)) < k
   ;SOURCE: lkm.frm
 }
@@ -11080,7 +11080,7 @@ LKM-bailstrict_jul {; Kerry Mitchell
      ; stricter bailout condition for Julia sets
      ; c=p1, bailout level computed automatically
   z=pixel, c=p1, r=4*cabs(c), r=sqrt(1+r), r=(1+r)/2, r=|r|:
-  z=sqr(z)+c 
+  z=sqr(z)+c
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11090,7 +11090,7 @@ LKM-bailstrict_man (xaxis) {; Kerry Mitchell
       ; stricter bailout condition for Mandelbrot sets
       ; no parameters, bailout level computed automatically
   z=0, c=pixel, r=4*cabs(c), r=sqrt(1+r), r=(1+r)/2, r=|r|:
-  z=sqr(z)+c 
+  z=sqr(z)+c
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11111,7 +11111,7 @@ LKM-bg_fn1xfn2y {; Kerry Mitchell
       ; bailout=0 to force 1 iteration
       ; use "decomp=256" coloring
   x=real(pixel), y=imag(pixel), r=0:
-  z=fn1(x)+flip(fn2(y)) 
+  z=fn1(x)+flip(fn2(y))
   1 < r
   ;SOURCE: lkm.frm
 }
@@ -11122,7 +11122,7 @@ LKM-bg_fn1z {; Kerry Mitchell
      ; bailout=0 to force 1 iteration
      ; use "decomp=256" coloring
   z=pixel, r=0:
-  z=fn1(z) 
+  z=fn1(z)
   1 < r
   ;SOURCE: lkm.frm
 }
@@ -11133,7 +11133,7 @@ LKM-bg_fn1zfn2z {; Kerry Mitchell
       ; bailout=0 to force 1 iteration
       ; use "decomp=256" coloring
   z=pixel, r=0:
-  z=fn1(z), z=fn2(z) 
+  z=fn1(z), z=fn2(z)
   1 < r
   ;SOURCE: lkm.frm
 }
@@ -11145,7 +11145,7 @@ LKM-bg_lines {; Kerry Mitchell
       ; use "outside=real" coloring
       ; use p1 to adjust scale and angle of lines
   z=pixel, r=0:
-  z=p1*z 
+  z=p1*z
   1 < r
   ;SOURCE: lkm.frm
 }
@@ -11157,7 +11157,7 @@ LKM-bg_radius {; Kerry Mitchell
       ; use "outside=real" coloring for concentric circles
       ; use p1 to adjust scale
   z=pixel, r=0:
-  z=p1*cabs(z) 
+  z=p1*cabs(z)
   1 < r
   ;SOURCE: lkm.frm
 }
@@ -11184,7 +11184,7 @@ LKM-bof60_man {; Kerry Mitchell
   c=pixel, zc=c, rmin=|zc|, rbig=real(p1), k=imag(p1):
   zc=sqr(zc)+c, rzc=|zc|
   IF (rzc<rmin)
-    rmin=rzc 
+    rmin=rzc
     z=k*fn1(zc)
   ENDIF
   rzc < rbig
@@ -11226,7 +11226,7 @@ LKM-compound1_jul {; Kerry Mitchell
      ; Julia derivative, each iteration compound c by adding k
      ; c=p1, k=p2, real(p3)=bailout
   z=pixel, c=p1, k=p2, r=real(p3):
-  z=sqr(z)+c, c=c+k 
+  z=sqr(z)+c, c=c+k
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11236,7 +11236,7 @@ LKM-compound1_man {; Kerry Mitchell
     ; Mandelbrot derivative, each iteration compound c by adding k
     ; k=p1, real(p2)=bailout
   z=c=pixel, k=p1, r=real(p2):
-  z=sqr(z)+c, c=c+k 
+  z=sqr(z)+c, c=c+k
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11247,7 +11247,7 @@ LKM-compoundc_jul {; Kerry Mitchell
     ; adding k*fn1(c), try small k, fn1=recip
     ; c=p1, k=p2, real(p3)=bailout
   z=c=pixel, c=p1, k=p2, r=real(p3):
-  z=sqr(z)+c, c=c+k*fn1(c) 
+  z=sqr(z)+c, c=c+k*fn1(c)
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11258,7 +11258,7 @@ LKM-compoundc_man {; Kerry Mitchell
     ; adding k*fn1(c), try small k, fn1=recip
     ; k=p1, real(p2)=bailout
   z=c=pixel, k=p1, r=real(p2):
-  z=sqr(z)+c, c=c+k*fn1(c) 
+  z=sqr(z)+c, c=c+k*fn1(c)
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11269,7 +11269,7 @@ LKM-compoundz_jul {; Kerry Mitchell
     ; adding k*fn1(z), try small k, fn1=recip
     ; c=p1, k=p2, real(p3)=bailout
   z=c=pixel, c=p1, k=p2, r=real(p3):
-  z=sqr(z)+c, c=c+k*fn1(z) 
+  z=sqr(z)+c, c=c+k*fn1(z)
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11280,7 +11280,7 @@ LKM-compoundz_man {; Kerry Mitchell
     ; adding k*fn1(z), try small k, fn1=recip
     ; k=p1, real(p2)=bailout
   z=c=pixel, k=p1, r=real(p2):
-  z=sqr(z)+c, c=c+k*fn1(z) 
+  z=sqr(z)+c, c=c+k*fn1(z)
   |z| <= r
   ;SOURCE: lkm.frm
 }
@@ -11293,7 +11293,7 @@ LKM-contract_jul {; Kerry Mitchell
     ; c=p1, real(p2) = bailout
   z=pixel, c=p1, r=real(p2):
   kx=(real(z)<=0)-0.5, ky=(imag(z)<=0)-0.5
-  z=0.5*z+ky+flip(kx), z=c*z 
+  z=0.5*z+ky+flip(kx), z=c*z
   |z| < r
   ;SOURCE: lkm.frm
 }
@@ -11306,7 +11306,7 @@ LKM-contract_man (xaxis) {; Kerry Mitchell
     ; real(p1) = bailout
   z=0, c=pixel, r=real(p1):
   kx=(real(z)<=0)-0.5, ky=(imag(z)<=0)-0.5
-  z=0.5*z+ky+flip(kx), z=c*z 
+  z=0.5*z+ky+flip(kx), z=c*z
   |z| < r
   ;SOURCE: lkm.frm
 }
@@ -11320,7 +11320,7 @@ LKM-conxexpy_jul {; Kerry Mitchell
   z=pixel, c=p1, r=real(p2):
   x=real(z), y=imag(z)
   kx=1-2*(x<=0), ky=(y<=0)-0.5
-  z=0.5*x+ky+flip(2*y+kx), z=c*z 
+  z=0.5*x+ky+flip(2*y+kx), z=c*z
   |z| < r
   ;SOURCE: lkm.frm
 }
@@ -11505,7 +11505,7 @@ LKM-gravity_dt2 {; Kerry Mitchell
      ; dt2 = time step (squared), real(p2) = bailout
   z0=1, z=p1, dt2=pixel, r=real(p2):
   f=1/z, f=f-sqr(f), z2=dt2*f+2*z-z0
-  z0=z, z=z2 
+  z0=z, z=z2
   |z| < r
   ;SOURCE: lkm.frm
 }
@@ -11660,7 +11660,7 @@ LKM-patcht_jul {; Kerry Mitchell
     ; angle gets increased by angle factor each iteration,
     ; cutoff is changed each iteration by cos(angle)
   z=pixel, c=p1, r=real(p2), kr=imag(p2), dt=real(p3), t=0:
-  ct=cos(t), k=kr*ct, z=fn1(z*k)/k 
+  ct=cos(t), k=kr*ct, z=fn1(z*k)/k
   z=sqr(z)+c, t=t+dt
   |z| < r
   ;SOURCE: lkm.frm
@@ -11677,7 +11677,7 @@ LKM-patcht_man {; Kerry Mitchell
      ; angle gets increased by angle factor each iteration,
      ; cutoff is changed each iteration by cos(angle)
   c=pixel, z=0, r=real(p1), kr=imag(p1), dt=real(p2), t=0:
-  ct=cos(t), k=kr*ct, z=fn1(z*k)/k 
+  ct=cos(t), k=kr*ct, z=fn1(z*k)/k
   z=sqr(z)+c, t=t+dt
   |z| < r
   ;SOURCE: lkm.frm
@@ -12238,7 +12238,7 @@ LL2-03 {; overlay LL1-11 and LL1-06
     PHC_bailout = z < b2
   ELSE
     z = fn1(z)*z*z+c
-    PHC_bailout = |z| < b1        
+    PHC_bailout = |z| < b1
   ENDIF
   PHC_bailout
   ;SOURCE: leelane.frm
@@ -12336,22 +12336,22 @@ Log_Series_Mset {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-LogDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = log( z ) * pixel  
-  |z| <= b 
+LogDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = log( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
 
 LogExp (xaxis) {; Jm Collard-Richard  float=yes
-                ; log(z)+exp(z)=0  une solution n'est *pas* z=0 ! 
+                ; log(z)+exp(z)=0  une solution n'est *pas* z=0 !
                 ; UNE solution: z=0.2...
   z=pixel:
   z1=log(z)+exp(z)
   z2=1/z+exp(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -12362,7 +12362,7 @@ logf {
   temp = z
   z = z*z + zp
   zp = log(1-temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -12393,7 +12393,7 @@ LorentzM {; Mutated Mandelbrot set based on Lorentz contraction
           ; Size increases with |p1|
           ; p2=unused
           ; p3=bailout
-  z=0 
+  z=0
   c=pixel:
   z=sqrt(1-(z*z)/(p1*p1))+c
   |z|<=p3
@@ -12452,7 +12452,7 @@ LorentzM_FB {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-Lyapunov1 (XAXIS) {  
+Lyapunov1 (XAXIS) {
   z = pixel:
   value = 1 + p1
   z = value*z*(1-z)
@@ -12460,258 +12460,258 @@ Lyapunov1 (XAXIS) {
 }
 
 
-lz10_sin (xyaxis) { 
-  z=0: 
-  z=(1/((z*pixel)*sin(z*pixel)))*pixel 
-  |z|<=4 
+lz10_sin (xyaxis) {
+  z=0:
+  z=(1/((z*pixel)*sin(z*pixel)))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
-lz10_sinh (xyaxis) { 
-  z=0: 
-  z=(1/((z*pixel)*sinh(z*pixel)))*pixel 
-  |z|<=4 
+lz10_sinh (xyaxis) {
+  z=0:
+  z=(1/((z*pixel)*sinh(z*pixel)))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz11_sin (xyaxis) {
-  z=(z^pixel)*sin(z^pixel) 
-  |z|<=4 
+  z=(z^pixel)*sin(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz1_cos (xyaxis) {
-  z=cos(z^pixel) 
-  |z|<=4 
+  z=cos(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz1_cosh (xyaxis) {
-  z=cosh(z^pixel) 
-  |z|<=4 
+  z=cosh(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz1_sin (xyaxis) {
-  z=sin(z^pixel) 
-  |z|<=4 
+  z=sin(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz1_sinh (xyaxis) {
-  z=sinh(z^pixel) 
-  |z|<=4 
+  z=sinh(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz1l_sinh (xyaxis) {
-  z=(z^pixel)*sinh(z^pixel) 
-  |z|<=4 
+  z=(z^pixel)*sinh(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz2_cos (xyaxis) {
-  z=cos(z^pixel)*pixel 
-  |z|<=4 
+  z=cos(z^pixel)*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz2_cosh (xyaxis) {
-  z=cosh(z^pixel)*pixel 
-  |z|<-4 
+  z=cosh(z^pixel)*pixel
+  |z|<-4
   ;SOURCE: formtype.frm
 }
 
 
 lz2_sin (xyaxis) {
-  z=sin(z^pixel)*pixel 
-  |z|<=4 
+  z=sin(z^pixel)*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz2_sinh (xyaxis) {
-  z=sinh(z^pixel)*pixel 
-  |z|<=4 
+  z=sinh(z^pixel)*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz3_cos (xyaxis) {
-  z=1/cos(z^pixel) 
-  |z|<=4 
+  z=1/cos(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz3_cosh (xyaxis) {
-  z=1/cosh(z^pixel) 
-  |z|<=4 
+  z=1/cosh(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz3_sin (xyaxis) {
-  z=1/sin(z^pixel) 
-  |z|<=4 
+  z=1/sin(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz3_sinh (xyaxis) {
-  z=1/sinh(z^pixel) 
-  |z|<=4 
+  z=1/sinh(z^pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz4_cos (xyaxis) {
-  z=1/cos(z*pixel)  
-  |z|<=4 
+  z=1/cos(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz4_cosh (xyaxis) {
-  z=1/cosh(z*pixel)  
-  |z|<=4 
+  z=1/cosh(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz4_sin (xyaxis) {
-  z=1/sin(z*pixel)  
-  |z|<=4 
+  z=1/sin(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz4_sinh (xyaxis) {
-  z=1/sinh(z*pixel)  
-  |z|<=4 
+  z=1/sinh(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz5_cos (xyaxis) {
-  z=(1/sin(z^pixel))*pixel  
-  |z|<=4 
+  z=(1/sin(z^pixel))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz5_cosh (xyaxis) {
-  z=(1/sin(z^pixel))*pixel  
-  |z|<=4 
+  z=(1/sin(z^pixel))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz5_sin (xyaxis) {
-  z=(1/sin(z^pixel))*pixel  
-  |z|<=4 
+  z=(1/sin(z^pixel))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz5_sinh (xyaxis) {
-  z=(1/sin(z^pixel))*pixel  
-  |z|<=4 
+  z=(1/sin(z^pixel))*pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz6_cos (xyaxis) {
-  z=(1/cos(z*pixel))*pixel 
-  |4|<=4 
+  z=(1/cos(z*pixel))*pixel
+  |4|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz6_cosh (xyaxis) {
-  z=(1/cosh(z*pixel))*pixel 
-  |4|<=4 
+  z=(1/cosh(z*pixel))*pixel
+  |4|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz6_sin (xyaxis) {
-  z=(1/sin(z*pixel))*pixel 
-  |4|<=4 
+  z=(1/sin(z*pixel))*pixel
+  |4|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz6_sinh (xyaxis) {
-  z=(1/sinh(z*pixel))*pixel 
-  |4|<=4 
+  z=(1/sinh(z*pixel))*pixel
+  |4|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz7_cosh (xyaxis) {
-  z=z*pixel*cosh(z*pixel) 
-  |z|<=4 
+  z=z*pixel*cosh(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz7_sin (xyaxis) {
-  z=z*pixel*sin(z*pixel) 
-  |z|<=4 
+  z=z*pixel*sin(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz7_sinh (xyaxis) {
-  z=z*pixel*sinh(z*pixel) 
-  |z|<=4 
+  z=z*pixel*sinh(z*pixel)
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz8_cosh (xyaxis) {
-  z=z*pixel*cosh(z*pixel)+pixel 
-  |z|<=4 
+  z=z*pixel*cosh(z*pixel)+pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz8_sin (xyaxis) {
-  z=z*pixel*sin(z*pixel)+pixel 
-  |z|<=4 
+  z=z*pixel*sin(z*pixel)+pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz8_sinh (xyaxis) {
-  z=z*pixel*sinh(z*pixel)+pixel 
-  |z|<=4 
+  z=z*pixel*sinh(z*pixel)+pixel
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz9_sin (xyaxis) {; edited 5/6/96 for Orgform by George Martin
                   ; extra ")" at end of first expression deleted
-  z=1/((z*pixel)*sin(z*pixel)) 
-  |z|<=4 
+  z=1/((z*pixel)*sin(z*pixel))
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 lz9_sinh (xyaxis) {; edited 5/6/96 for Orgform by George Martin
                    ; extra ")" at end of first expression deleted
-  z=1/((z*pixel)*sinh(z*pixel)) 
-  |z|<=4 
+  z=1/((z*pixel)*sinh(z*pixel))
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -12725,7 +12725,7 @@ LZZSHZ (Xaxis) {; Jm Collard-Richard
   z1=log(zz)-sh
   z2=(((log(z)+1)*zz)/(zz))-ch
   z=z-(z1/z2)
-  0.001<=|z1|  
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -12739,7 +12739,7 @@ LZZSZ (Xaxis) {; Jm Collard-Richard  - Use Float=Yes
   z1=log(zz)-s
   z2=(((log(z)+1)*zz)/(zz))-c
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 

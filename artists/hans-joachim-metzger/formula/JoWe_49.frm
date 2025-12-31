@@ -6,7 +6,7 @@ JoWe_28_2 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_31 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -16,7 +16,7 @@ JoWe_31 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_32 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -27,7 +27,7 @@ JoWe_32 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_33 {; Jo Weber [100424,35] 11/1996
          ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=pixel*pixel-(1-pixel)
@@ -38,7 +38,7 @@ JoWe_33 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_34 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -47,7 +47,7 @@ JoWe_34 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_36 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -56,7 +56,7 @@ JoWe_36 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_40 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -65,7 +65,7 @@ JoWe_40 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_46 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -74,7 +74,7 @@ JoWe_46 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_47 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -83,7 +83,7 @@ JoWe_47 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_51m {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -92,7 +92,7 @@ JoWe_51m {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_55 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -101,7 +101,7 @@ JoWe_55 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_56 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -110,7 +110,7 @@ JoWe_56 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_61 {; Jo Weber [100424,35] 11/1996
   z=pixel
   bailout=p3 :
@@ -119,7 +119,7 @@ JoWe_61 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+
 JoWe_C_28_5 {; Jo Weber [100424,35] 11/1996
   bailout=p3
   z=pixel
@@ -130,7 +130,7 @@ JoWe_C_28_5 {; Jo Weber [100424,35] 11/1996
   (|real(z)|) <= bailout
   ;SOURCE: 96msg.frm
 }
- 
+
 JoWe_XY_40 {; Jo Weber [100424,35] 11/1996
             ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=p1*log(sin(p2*pixel))
@@ -143,4 +143,4 @@ JoWe_XY_40 {; Jo Weber [100424,35] 11/1996
   |z|<=bailout
   ;SOURCE: jowe49.frm
 }
- 
+

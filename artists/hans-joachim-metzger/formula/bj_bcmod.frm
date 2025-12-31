@@ -9,7 +9,7 @@ BJ-BC1974 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_22 {
   z=pixel:
   z=z*z*z
@@ -18,7 +18,7 @@ BEJ_22 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_25 {
   z=pixel:
   z1=z*z*z
@@ -28,7 +28,7 @@ BEJ_25 {
   |z|<=4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N13 {; Revised for Fractint v. 20 by George Martin
          ; Second line was
          ; z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
@@ -42,7 +42,7 @@ BEJ_N13 {; Revised for Fractint v. 20 by George Martin
   |z| <4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N24 {
   z=pixel, c=pixel:
   z1=z*z
@@ -51,7 +51,7 @@ BEJ_N24 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N4 {
   z=c=pixel:
   zsqr=z*z
@@ -62,7 +62,7 @@ BEJ_N4 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BJ_Newton1 {
   z=pixel, Root=1:
   z=fn1(fn2(z*z+c))
@@ -72,7 +72,7 @@ BJ_Newton1 {
   .0004<|z+Root|
   ;SOURCE: bej3.frm
 }
- 
+
 gallet-2-07b {; Modified Sylvie Gallet frm [101324,3444], 1995
               ; (sin z)^p1 + z = 0 solution = 0
   z = pixel, c=pixel:
@@ -83,7 +83,7 @@ gallet-2-07b {; Modified Sylvie Gallet frm [101324,3444], 1995
   |z1| >= 0.000001
   ;SOURCE: bej3.frm
 }
- 
+
 gallet-2-07e {; Modified Sylvie Gallet frm [101324,3444], 1995
               ; (sin z)^p1 + z = 0 solution = 0
   z = pixel, c=pixel, Root=1:
@@ -94,7 +94,7 @@ gallet-2-07e {; Modified Sylvie Gallet frm [101324,3444], 1995
   |z1-Root| >= 0.000001
   ;SOURCE: bej3.frm
 }
- 
+
 mandel-newton_a {; Modified Sylvie Gallet frm [101324,3444], 1995
   z = pixel, c = z, iter = 1
   rad = 3.1, center = (-3.6,-3.0)
@@ -104,16 +104,16 @@ mandel-newton_a {; Modified Sylvie Gallet frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej3.frm
 }
- 
+
 NewNewton_a {
   z = pixel+1/fn1(p2 * pixel-p1)  + 1/fn2(p2 * pixel), Root = 1:
-  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4)) 
+  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4))
   0.001<=|z^5-Root+1|
   ;SOURCE: bej3.frm
 }
- 
+

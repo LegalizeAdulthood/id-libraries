@@ -1,5 +1,5 @@
 comment {
-These formulae can be used to initiate exploration in the two "hybridised" 
+These formulae can be used to initiate exploration in the two "hybridised"
 planes as referred to in 4dfract.txt. Type SJ iterate in the "zc" plane,
 and type 3RDIM in the "cz" plane. Ititially, param p2=0. Altering the real
 value of p2 in type SJ, or the imaginary value of p2 in type 3rdim, will
@@ -23,7 +23,7 @@ SJMAND01 {;Mandelbrot
 3RDIM01  {;Mandelbrot
         z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+flip(imag(pixel)*p1):
-        
+
         z=z*z+c, |z|<=64}
 
 SJMAND02 {;Tetration
@@ -51,7 +51,7 @@ SJMAND04 {;Tetrated function
         c=p2+p1*real(pixel)+flip(imag(pixel)):
         z=fn1(c)^z, |z|<=64}
 
-3RDIM04  {;Tetrated function     
+3RDIM04  {;Tetrated function
         z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+flip(imag(pixel)*p1):
         z=fn1(c)^z, |z|<=64}
@@ -88,11 +88,11 @@ SJMAND08 {;Mandelbar
         z=conj(z*z)+c, |z|<=4}
 
 3RDIM08  {;Mandelbar
-        z=p1*real(pixel)+flip(imag(pixel)), 
+        z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+p1*flip(imag(pixel)):
         z=conj(z*z)+c, |z|<=4}
 
-SJMAND09 { 
+SJMAND09 {
         z=real(pixel)+flip(imag(p2)),
         c=real(p2)+flip(imag(pixel)):
         z=z*z+c, |z|<=4}

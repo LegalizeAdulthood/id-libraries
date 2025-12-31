@@ -5,7 +5,7 @@ HalleyJack (xyaxis) {
   p2<=|s|
   ;SOURCE: orman2.frm
 }
- 
+
 DaliJack (Yaxis) {
   z = pixel:
   C1 = fn1(z) / fn2(z)
@@ -15,7 +15,7 @@ DaliJack (Yaxis) {
   |z| <= 4
   ;SOURCE: orman2.frm
 }
- 
+
 DaliJack2 (Yaxis) {
   z = pixel:
   C1 = fn1(z) * fn2(z)
@@ -25,7 +25,7 @@ DaliJack2 (Yaxis) {
   |z| <= 4
   ;SOURCE: orman2.frm
 }
- 
+
 DaliJack3 {
   z = pixel:
   C1 = fn1(z) * fn2(z)
@@ -35,28 +35,28 @@ DaliJack3 {
   |z| <= 4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot20 {
   z=c=pixel:
   z=(z*z+c)/(z*z-c)
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot20A {
   z=pixel, C=P1:
   z=(z*z+c)*(z*z-c)
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot22 {
   z=c=pixel:
   z=(z*z+c)*(z*z-c)
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot41 {
   c=z=pixel, zp=.1:
   z=fn1((z*z+c)/(z*z-c))
@@ -64,7 +64,7 @@ Ormandelbrot41 {
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot43 {
   z=pixel, z=sqr(z), c=p1:
   z=z*z + c
@@ -72,7 +72,7 @@ Ormandelbrot43 {
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot43 {
   z=pixel, z=sqr(z), c=p1:
   z=z*z + c
@@ -80,7 +80,7 @@ Ormandelbrot43 {
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+
 Ormandelbrot44 {
   z=pixel, c=p1:
   z=z*z + c
@@ -88,4 +88,4 @@ Ormandelbrot44 {
   |z|<4
   ;SOURCE: orman2.frm
 }
- 
+

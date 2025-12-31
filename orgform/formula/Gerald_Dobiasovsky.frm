@@ -293,7 +293,7 @@ TetraSpheresBas   { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
 
 ; As of more paramters, I've cobbled together a patch for both
 ; formulas to move the "camera" around a bit:
-; 
+;
 ;---------------------- Parameter usage -----------------------
 ; p1r: camera shift x
 ; p1i: camera shift y
@@ -301,12 +301,12 @@ TetraSpheresBas   { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
 ; p2i: rotation around x-axis (will be applied before p3r)
 ; p3r: rotation around y-axis
 ;--------------------------------------------------------------
-; 
+;
 ; The patch proper has to replace everything below the coordinate
 ; constants (sphere centers and unit vector directions) up to the
-; 
+;
 ;------------- TetraSpheres and TetraSpheresBas ---------------
-; 
+;
 ;  tmp2 = pi/180
 ;  tmp1 = exp(flip(imag(p2)*tmp2)), tmp2 = exp(flip(real(p3)*tmp2))
 ;  dxy = flip(conj(tmp2))
@@ -319,11 +319,11 @@ TetraSpheresBas   { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
 ;  vz = imag(vxy)
 ;  vxy = real(vxy) + flip(imag(tmp1))
 ;  :
-; 
+;
 ;--------------------------------------------------------------
-; 
+;
 ; In TetraSpheresBas also replace ":" with "j = 1:"
-; 
+;
 ; --------------------------------------------------------------------
 
 Inv4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
@@ -694,7 +694,7 @@ oLauwerier       { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
 
 oHiram           { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ;   Thu, 11 Mar 2004 04:44:00
-                   ; 
+                   ;
             ;-------------------
             ; p1real = a (0<a<1)
             ;-------------------

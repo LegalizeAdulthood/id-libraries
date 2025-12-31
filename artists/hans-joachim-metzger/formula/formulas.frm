@@ -17,16 +17,16 @@ inandout03 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   mz <= test
   ;SOURCE: fract196.frm
 }
- 
-Incdbail { 
+
+Incdbail {
   z = c = pixel, m = fn3(z), n = fn4(z):
-  t = fn1(z) + fn2(z)                                                 
+  t = fn1(z) + fn2(z)
   d = z-t
-  z=((d<=p1)*(z+(m/z)))+((d>p1)*(d<=(2*p1))*(t))+((d>(2*p1))*(z-(n/z))) 
+  z=((d<=p1)*(z+(m/z)))+((d>p1)*(d<=(2*p1))*(t))+((d>(2*p1))*(z-(n/z)))
   d <= p2
   ;SOURCE: ron1.frm
 }
- 
+
 shifter01 {; After shift, switch from z*z to z*z*z
            ; Bradley Beacham  [74223,2745]
            ; Modified for if..else logic 3/18/97 by Sylvie Gallet
@@ -41,13 +41,13 @@ shifter01 {; After shift, switch from z*z to z*z*z
   |z| < test
   ;SOURCE: fract196.frm
 }
- 
+
 Whatever_the_name (XAXIS) {
   z = pixel:
   z=z*z+(1/z*z)+pixel
   ;SOURCE: whatever.frm
 }
- 
+
 Zeppo {; Mutation of 'Liar4'.
     ; Original formula by Chuck Ebbert [76306,1226]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -66,7 +66,7 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
    ; p1 = step size (default 0.05), p2 = parameter (default 3)
    ; p3 = bailout value (default 4)
@@ -82,7 +82,7 @@ PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 F'Liar1 {; Generalization by Jon Horner of Chuck Ebbert formula.
          ; X: X is as true as Y
          ; Y: Y is as true as X is false
@@ -98,11 +98,11 @@ Gopalsamy4 {
   x = real(z), y = imag(z)
   x1 = -x*y + p1
   y = 2*y*y - 3*x*x
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
- 
+
 inandout07 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -119,7 +119,7 @@ inandout07 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: zsazsa.frm
 }
- 
+
 inandout13 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), p2 = parameter (default 1,0)
             ;The next line sets k=1 if real(p2)==0, else k=p2
@@ -136,7 +136,7 @@ inandout13 {; Bradley Beacham  [74223,2745]
   |z| <= 4
   ;SOURCE: dons.frm
 }
- 
+
 Mask {; Ron Barnett, 1993
       ; try fn1 = log, fn2 = sinh, fn3 = cosh
       ; P1 = (0,1), P2 = (0,1)
@@ -146,7 +146,7 @@ Mask {; Ron Barnett, 1993
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 dafrm21 {
   z = pixel:
   x = real(z), y = imag(z)
@@ -158,7 +158,7 @@ dafrm21 {
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 SGG014 {
   z=y=pixel+sqr(pixel)
   z=exp(z)*sin(y)/cos(z)
@@ -166,7 +166,7 @@ SGG014 {
   |z|<=3
   ;SOURCE: guenzel.frm
 }
- 
+
 402 {
   z = x = pixel:
   x = fn1 (z) / fn2 (x)
@@ -174,7 +174,7 @@ SGG014 {
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+
 inandout04 {; Modified for if..else logic 3/21/97 by Sylvie Gallet
     ; p1 = Parameter (default 1), real(p2) = Bailout (default 4)
     ; The next line sets k=default if p1=0, else k=p1
@@ -198,7 +198,7 @@ inandout04 {; Modified for if..else logic 3/21/97 by Sylvie Gallet
    mz <= test
   ;SOURCE: fract196.frm
 }
- 
+
 CGNewtonSinExp (XAXIS) {
   z=pixel:
   z1=exp(z)
@@ -207,7 +207,7 @@ CGNewtonSinExp (XAXIS) {
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 F'M-SetInNewtonC (XAXIS) {; same as F'M-SetInNewtonB except for bailout
                           ; use float=yes, periodicity=no
                           ; (3 <= p1 <= ?) and (1e-30 < p2 < .01)
@@ -240,11 +240,11 @@ Groucho {; Mutation of 'Fish2'.
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 OK-21 {
   z = pixel, c = fn1(pixel):
   z = fn2(z) + c
   fn3(z) <= p1
   ;SOURCE: fractint.frm
 }
- 
+

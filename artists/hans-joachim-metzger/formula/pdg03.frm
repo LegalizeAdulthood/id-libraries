@@ -6,7 +6,7 @@ PD_301 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_302 {
   bailout = p3
   z = pixel:
@@ -18,7 +18,7 @@ PD_302 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_302 {
   bailout = p3
   z = pixel:
@@ -30,7 +30,7 @@ PD_302 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_303 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   bailout = 4 + imag(p3)
   ee = real(p3), z = c = pixel:
@@ -39,7 +39,7 @@ PD_303 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_303 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   bailout = 4 + imag(p3)
   ee = real(p3), z = c = pixel:
@@ -48,7 +48,7 @@ PD_303 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_304 {
   bailout = 4 + imag(p3)
   a = conj(pixel*pixel)
@@ -58,7 +58,7 @@ PD_304 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_304 {
   bailout = 4 + imag(p3)
   a = conj(pixel*pixel)
@@ -68,7 +68,7 @@ PD_304 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_305 {
   bailout = 4 + p3
   z = pixel, x = real(pixel), y = imag(pixel)
@@ -78,7 +78,7 @@ PD_305 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_305 {
   bailout = 4 + p3
   z = pixel, x = real(pixel), y = imag(pixel)
@@ -88,7 +88,7 @@ PD_305 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_306 {
   bailout = 4 + p3
   z = pixel:
@@ -97,7 +97,7 @@ PD_306 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_307 {
   bailout = 4 + p2, z = pixel:
   c = fn1(real(z) + p1) / fn2(imag(z) + p1)
@@ -105,7 +105,7 @@ PD_307 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_307 {
   bailout = 4 + p2, z = pixel:
   c = fn1(real(z) + p1) / fn2(imag(z) + p1)
@@ -113,7 +113,7 @@ PD_307 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_308 {
   bailout = 4 + p3, z = pixel:
   a = fn1(z - pixel)
@@ -123,7 +123,7 @@ PD_308 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_309 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   bailout = 4 + imag(p3)
   z = conj(fn1(pixel + p1))
@@ -132,7 +132,7 @@ PD_309 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_310 {
   bailout = 4 + p3
   z = pixel, c = z*z*p1:
@@ -141,7 +141,7 @@ PD_310 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_311 {
   bailout = 4 + imag(p3)
   z = tanh(p1 - 1/conj(pixel))
@@ -156,7 +156,7 @@ PD_311 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_312 {; Revised for Fractint v20 by G. Martin
   bailout = 4 + imag(p3)
   expo = 1 + real(p3)
@@ -171,7 +171,7 @@ PD_312 {; Revised for Fractint v20 by G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_312 {; Revised for Fractint v20 by G. Martin
   bailout = 4 + imag(p3)
   expo = 1 + real(p3)
@@ -186,7 +186,7 @@ PD_312 {; Revised for Fractint v20 by G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_313 {
   bailout = 4 + p3, z = pixel
   c = fn1(p1 + z):
@@ -195,7 +195,7 @@ PD_313 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_313 {
   bailout = 4 + p3, z = pixel
   c = fn1(p1 + z):
@@ -204,7 +204,7 @@ PD_313 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_314 {
   bailout = 4 + imag(p3), k = real(p3)
   z = pixel:
@@ -216,7 +216,7 @@ PD_314 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_314 {
   bailout = 4 + imag(p3), k = real(p3)
   z = pixel:
@@ -228,7 +228,7 @@ PD_314 {
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+
 PD_315 {; Revised for Fractint v20 by G. Martin
   bailout = 4 + imag(p3)
   z = pixel, expo = real(p3)
@@ -240,4 +240,4 @@ PD_315 {; Revised for Fractint v20 by G. Martin
   |z| <= bailout
   ;SOURCE: pdg03.frm
 }
- 
+

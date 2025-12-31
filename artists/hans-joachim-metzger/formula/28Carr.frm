@@ -7,7 +7,7 @@ Carr1200 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1201 {
   z=1/pixel, z2=z^1/z*z, z3=z^z2
   c=cosxx(1/pixel):
@@ -17,7 +17,7 @@ Carr1201 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1202 {
   z=cosxx(1/pixel), z2=z^1/z*z, z3=z^z2
   c=cabs(1/pixel):
@@ -27,7 +27,7 @@ Carr1202 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1203 {
   z=cosxx(1/pixel), z2=abs(real(z)), z3=abs(imag(z))
   c=cotanh(1/pixel):
@@ -37,7 +37,7 @@ Carr1203 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1204 {
   z=cosxx(1/pixel), z2=abs(real(z)), z3=abs(imag(z))
   c=cotanh(1/pixel):
@@ -47,7 +47,7 @@ Carr1204 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1205 {
   z=cosxx(1/pixel), z2=flip(real(z)), z3=conj(imag(z))
   c=cotanh(1/pixel):
@@ -57,7 +57,7 @@ Carr1205 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1206 {
   z=cosxx(1/pixel), z2=flip(real(z)), z3=conj(imag(z))
   c=cotanh(1/pixel), z4=conj(sqr(pixel))/cosxx(sqr(pixel)):
@@ -68,7 +68,7 @@ Carr1206 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1207 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel)
   z2=conj(sqr(pixel-1))/cosxx(sqr(pixel)):
@@ -77,7 +77,7 @@ Carr1207 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1208 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z2=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)):
@@ -86,7 +86,7 @@ Carr1208 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1209 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z2=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)):
@@ -95,7 +95,7 @@ Carr1209 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1210 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z2=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)), zp1=z+c+z2:
@@ -105,7 +105,7 @@ Carr1210 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1211 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z2=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)), zp1=z+c+z2:
@@ -115,7 +115,7 @@ Carr1211 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1212 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z1=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)), c1=conj(z+c+z1):
@@ -124,7 +124,7 @@ Carr1212 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1213 {
   z=cosxx(sqr(1/pixel)), c=cotanh(1/pixel*0.91/pixel)
   z1=conj(sqr(pixel-1))/cosxx(sqr(pixel+1)), c1=conj(z+c+z1):
@@ -134,7 +134,7 @@ Carr1213 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1214 {; Newton variant
   z=sinh(sqr(1/pixel)), z1=conj(sqr(pixel-1))/flip(sqr(pixel+1))
   c1=sqr(z+c+z1):
@@ -144,7 +144,7 @@ Carr1214 {; Newton variant
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1215 {; Newton variant (sort of)
   z=sinh(sqr(1/pixel)), c=cosxx(1/pixel*0.91/pixel)
   z1=conj(sqr(pixel-1))/flip(sqr(pixel+1)), c1=sqr(z+c+z1):
@@ -154,7 +154,7 @@ Carr1215 {; Newton variant (sort of)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1217 {
   z=(real(1.099,0)+1)/pixel, c=(imag(2.0,0)-1)/pixel:
   z=cosxx(z/c)
@@ -162,7 +162,7 @@ Carr1217 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1218 {
   z=(real(1.099,0)+1)/pixel, c=(imag(2.0,0)-1)/pixel:
   z=(z/c)
@@ -171,32 +171,32 @@ Carr1218 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1219 {
   z=1/(pixel*pixel), c=imag(cosxx(1/pixel)):
   z=z-(pixel-z*z)/(pixel-c*c)
   c=(1+flip(imag(c)))*real(c)/2+z
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1220 {
   z=1/(pixel*pixel*pixel)
   c=pixel-sqr(imag(cosxx(1/pixel))):
   z=c-z*pixel
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1221 {
   z=pixel, c=pixel
   z1=cosxx(pixel), c1=cosxx(pixel):
   z=z*z1+c
   z=z1*z+c1
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1222 {; Modified Rollo Silver formula
   z=1/pixel, zz=z*z, zzz=zz*z, z=(1.-(1.099,0))*zz+((1.099,0)*zzz):
   z=z+1/pixel
@@ -206,7 +206,7 @@ Carr1222 {; Modified Rollo Silver formula
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1223 {; Modified Rollo Silver formula
   z=(1/pixel*0.91/pixel), zz=z*z, zzz=zz*z
   z=(1.-(2.099,0))*zz+((2.099,0)*zzz):
@@ -217,7 +217,7 @@ Carr1223 {; Modified Rollo Silver formula
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1224 {; Modified Rollo Silver formula
   z=(1/pixel*0.91/pixel), zz=z*z, zzz=zz*z
   z=(1.-(2.099,0))*zz+((2.099,0)*zzz):
@@ -228,7 +228,7 @@ Carr1224 {; Modified Rollo Silver formula
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1225 {
   z=(1/pixel*0.91/pixel)
   c=(cosxx(1.7/z))/(1.099,0):
@@ -236,35 +236,35 @@ Carr1225 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1226 {
   z=(1/pixel*0.91/pixel):
   z=z^(z-1)*cosxx(z)+pixel
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1227 {
   z=(1/pixel*0.91/pixel), c=(1.7/z)/(1.099,0):
   z=c-(z^(z-1)*cosxx(z)+pixel)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1228 {
   z=(1/pixel*0.91/pixel), c=(1.7/z)/(1.099,0):
   z=z*1/c+((1.099,0)-1)*z-(1.099,0)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1229 {
   z=(1/pixel*0.91/pixel), c=tan(1.7/z)/(1.099,0):
   z=z*1/c+((1.099,0)-1)*z-(1.099,0)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1230 {
   z=(1/pixel*0.91/pixel), c=cotanh(1.7/z)/(1.099,0):
   z=z/c
@@ -272,7 +272,7 @@ Carr1230 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1231 {
   z=(1/pixel*0.91/pixel), c=cotanh(1.4/z)/(2.099,0):
   z=z/c
@@ -280,7 +280,7 @@ Carr1231 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1232 {
   z=1/sqr(pixel/(1.099,0)), c=(1.4/z)/(2.099,0):
   z=z*1/c
@@ -288,28 +288,28 @@ Carr1232 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1233 {
   z=sqr(1/pixel*1.4/pixel):
   z=(1.099,0)*z*(1-flip(z)*flip(z))
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1234 {
   z=sqr(1/pixel*1.4/pixel):
   z=(1.099,0)*z*(1-conj(z)*conj(z))
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1235 {
   z=cosxx(1/pixel*1.4/pixel), c=flip(pixel)-1:
   z=z-(sqr(pixel/z))/c-(sqr(pixel/c))
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1236 {
   z=cosxx(1/pixel*1.4/pixel), c=flip(pixel)-1:
   z=z-(sqr(pixel/z))/c-(sqr(pixel/c))
@@ -317,7 +317,7 @@ Carr1236 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1237 {
   z=flip(1/sqr(pixel*pixel+pixel)), c=cosxx(1.6*pixel-0.5):
   c=pixel+z/c
@@ -325,7 +325,7 @@ Carr1237 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1238 {
   z=conj(1/sqr(pixel*pixel+pixel)), c=cosxx(1.6*pixel-0.5):
   c=pixel+z/c
@@ -333,7 +333,7 @@ Carr1238 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1239 {
   z=conj(1/sqr(pixel*pixel+pixel))
   c=cotanh(1.6*pixel-0.5):
@@ -342,7 +342,7 @@ Carr1239 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1240 {
   z=conj(1/sqr(pixel*pixel+pixel)), c=cotanh(1.6*pixel-0.5):
   z=pixel+z*1/c
@@ -350,35 +350,35 @@ Carr1240 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1241 {
   z=exp(1/pixel), c=z*(1/pixel):
   z=z*c-(z*cosxx(z)-z)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1242 {
   z=exp(1/pixel), c=z*(1/pixel):
   z=z*c-(z*cotanh(z)-z)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1243 {
   z=(exp(1/pixel*0.91/pixel)), c=z*(1/pixel):
   z=z*c-(conj(z*z)-z)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1244 {
   z=(exp(1/pixel*0.91/pixel)), c=sqr(z*(1/pixel)):
   z=z*c-(conj(z*z)-z)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1245 {
   z=(sqr(1/pixel*0.91/pixel))
   c=sqr(z*(1.4/pixel)):
@@ -386,7 +386,7 @@ Carr1245 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1246 {
   z=cabs(1/pixel)
   c=abs(1/pixel):
@@ -394,7 +394,7 @@ Carr1246 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1247 (XAXIS_NOPARM) {; FractalFenderC modified
                          ; Modified Lee Skinner frm.
      ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -405,10 +405,10 @@ Carr1247 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z*1/c)+pixel
   x=|real(z)|
-  x<=4 
+  x<=4
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
                          ; Modified Lee Skinner frm.
      ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -419,10 +419,10 @@ Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z/c)+(pixel*pixel)
   x=|real(z)|
-  x<=100 
+  x<=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1249 {
   z=(1/pixel)
   c=cosxx(sqr(1/pixel)):
@@ -431,7 +431,7 @@ Carr1249 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1250 {
   z=(1/pixel)
   c=cosxx(sqr(1/pixel)):
@@ -440,7 +440,7 @@ Carr1250 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+
 Carr1216 {
   z=(real(1.099,0)+1)/pixel, c=(imag(2.0,0)-1)/pixel:
   z=z/c
@@ -448,4 +448,4 @@ Carr1216 {
   |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
- 
+

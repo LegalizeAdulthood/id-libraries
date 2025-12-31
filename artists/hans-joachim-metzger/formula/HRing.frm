@@ -23,7 +23,7 @@ HRing_J {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J {; This thing is capable of generating Herman rings for alpha
          ; equal to exp(2*pi*i*a), a irrational.
          ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
@@ -49,7 +49,7 @@ HRing_J {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J2 {; This thing is capable of generating Herman rings for alpha
           ; equal to exp(2*pi*i*a), a irrational.
           ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
@@ -76,12 +76,12 @@ HRing_J2 {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J256 {; This thing is capable of generating Herman rings for alpha
             ; equal to exp(2*pi*i*a), a irrational.
             ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
             ; used for infinity.
-            ; Color variant: stretches to 
+            ; Color variant: stretches to
             ; maxiter outside, decomp-128'd inside.
             ; Use outside=real, logmap=0, periodicity=0.
   z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
@@ -118,12 +118,12 @@ HRing_J256 {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J256 {; This thing is capable of generating Herman rings for alpha
             ; equal to exp(2*pi*i*a), a irrational.
             ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
             ; used for infinity.
-            ; Color variant: stretches to 
+            ; Color variant: stretches to
             ; maxiter outside, decomp-128'd inside.
             ; Use outside=real, logmap=0, periodicity=0.
   z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
@@ -160,12 +160,12 @@ HRing_J256 {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_J256b {; This thing is capable of generating Herman rings for alpha
              ; equal to exp(2*pi*i*a), a irrational.
-             ; p1: alpha. p2: c. p3: Orbit trap radius 
+             ; p1: alpha. p2: c. p3: Orbit trap radius
              ; about 0, reciprocal is used for infinity.
-             ; Color variant: stretches to 
+             ; Color variant: stretches to
              ; maxiter inside, decomp-128'd outside.
              ; Use outside=real, logmap=0, periodicity=0.
   z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
@@ -203,7 +203,7 @@ HRing_J256b {; This thing is capable of generating Herman rings for alpha
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_Ma {; Mandelbrot set slice, alpha varies, c fixed.
           ; p2: c. p3: Orbit trap radius about 0, reciprocal is
           ; used for infinity.
@@ -239,7 +239,7 @@ HRing_Ma {; Mandelbrot set slice, alpha varies, c fixed.
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
           ; p1: alpha. p3: Orbit trap radius about 0, reciprocal is
           ; used for infinity.
@@ -275,7 +275,7 @@ HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
           ; p1: alpha. p3: Orbit trap radius about 0, reciprocal is
           ; used for infinity.
@@ -311,4 +311,4 @@ HRing_Mc {; Mandelbrot set slice, c varies, alpha fixed.
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+

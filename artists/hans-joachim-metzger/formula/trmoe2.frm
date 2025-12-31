@@ -10,7 +10,7 @@ trmoe-01 {
   |z|<=256
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-010 {
   z=Pixel/12.20, c=flip(atanh(conj(sqr(12, -20))))
   x=1.210*(z+c), y=(x*z)/.122*z:
@@ -18,19 +18,19 @@ trmoe-010 {
   |z|<=1.22
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-02 {
   z=c=pixel:
   z=fn1(z)*p1
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-03 {
   z=c=1/pixel:
   z=fn1(z)*p1
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-04 {
   z=flip(imag(cosh(sqr(pixel))))*1/pixel
   c=pixel+sqr(atan(z*z+1)):
@@ -38,7 +38,7 @@ trmoe-04 {
   |z|<=256
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-05 {
   z=pixel, c=1/pixel
   x=(z+c)*sin(c)
@@ -46,7 +46,7 @@ trmoe-05 {
   z=z*(x*y)/abs(x)+c
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-06 {
   z=(pixel*7.5)/2, c=sqr(z)*.00915
   x=cosxx(c/z), y=tanh(z*c):
@@ -54,39 +54,39 @@ trmoe-06 {
   |z|<=4
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-07 {
   z=1/pixel*1.066, c=flip(sqr(z))*.1865
   z=(z+z)*c*z*z*z/cosxx(c+(z*z))+c
   |z|<4
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-08 {
   z=pixel*-.1792, c=flip(cosxx(tan(sqr(z))))
   z=1/z*atan(cos(real(imag(z*c))))+c/-.1792
   |z|>.1792
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-09 {
   z=-14.83/pixel, c=z^(z-.1483)
   z=(z*z*z)*cosxx(flip(z*c))+c+1.483
   |z|<.1483
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-011 {
   z=c=pixel:
   z=fn1(z)*fn2(z)*fn3(z)*1/z+c
   |z|<=4
   ;SOURCE: trmoe2.frm
 }
- 
+
 trmoe-012 {
   z=1/pixel-0.99, c=fn1(pixel):
   z=fn2(z)*.218+c
   |z|<=4
   ;SOURCE: trmoe2.frm
 }
- 
+

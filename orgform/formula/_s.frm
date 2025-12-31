@@ -622,7 +622,7 @@ S02-29 {; V.1.1 - earlier versions may be discarded
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
   test=(|Tx|+|Ty|)
-  test>=bailout && test<=1e30  
+  test>=bailout && test<=1e30
   ;SOURCE: chby29.frm
 }
 
@@ -2404,7 +2404,7 @@ S06-29 {; V.1.1 - earlier versions may be discarded
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
   test=(|Tx|+|Ty|)
-  test>=bailout && test<=1e30  
+  test>=bailout && test<=1e30
   ;SOURCE: chby29.frm
 }
 
@@ -4243,7 +4243,7 @@ S2Z (XAXIS) {; resol. sin(sin(z)=z - Jm Collard-Richard -  Use float=yes
   z1=sin(sin(z))-z
   z2=cos(z)*cos(sin(z))-1
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -4270,93 +4270,93 @@ saddle {; Sylvie Gallet [101324,3444], 1996
 
 
 Sam_0(XAXIS) {
-  z = Pixel:  
+  z = Pixel:
   z = z^z - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_1 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^(-z) - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_10 (XYAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = sin(1/z)
   ;SOURCE: sam.frm
 }
 
 
 Sam_11 (XAXIS) {; Try this with periodicity=none command line
-  z = Pixel: 
+  z = Pixel:
   z = sinh(1/z)
   ;SOURCE: sam.frm
 }
 
 
 Sam_2 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^(1/z) - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_3 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^z^z - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_4 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^(z^(1/z)) - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_5 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z^2.718281828 + pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_6 (XYAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z*cos(z) - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_7 (XAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z*sin(z) - pixel
   ;SOURCE: sam.frm
 }
 
 
 Sam_8 {
-  z = Pixel: 
+  z = Pixel:
   z = z^c
   ;SOURCE: sam.frm
 }
 
 
 Sam_9 (XYAXIS) {
-  z = Pixel: 
+  z = Pixel:
   z = z*tanh(z)
   ;SOURCE: sam.frm
 }
 
 
 SanMarcoFractal {; (as Mandelbrot himself called it) is probably a well
-                 ; known Julia set; it corresponds to the intersection 
+                 ; known Julia set; it corresponds to the intersection
                  ; of the cardioid and circle of the Mandelbrot set.
-  z = pixel, c = -0.7498431447893381 
+  z = pixel, c = -0.7498431447893381
   z = z*z + c
   |z| < 4
   ;SOURCE: 99msg.frm
@@ -4368,12 +4368,12 @@ sargassi {; Giuseppe Zito
   c0 = 0.492479
   c3 = -0.705575
   d12 = -0.538524
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *y
   s0 = s0 /c3
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *x
   s0 = s0 -x
@@ -4384,16 +4384,16 @@ sargassi {; Giuseppe Zito
   s1 = y
   s1 = s1 /d12
   s0 = s0 *s1
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 Sattva {
   z = pixel + p1:
-  r = fn1(tan(1/z)) + pixel 
+  r = fn1(tan(1/z)) + pixel
   z = z * fn2(r)
   |z| < 4
   ;SOURCE: shakti.frm
@@ -4893,7 +4893,7 @@ Sc02-25 {; V.1.1 - earlier versions may be discarded
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified implicit Euler Method)
          ;
-         ; Schlafi Polynomials 
+         ; Schlafi Polynomials
          ; Sc[0] = 0
          ; Sc[1] = 0
          ; Sc[n+1] = 2(zO[n]-cos(n*pi/2)^2)/n
@@ -4914,7 +4914,7 @@ Sc02-26 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Kathy Roth:
          ; Dynamic (modified implicit Euler Method, gravitated)
-         ; 
+         ;
          ; Schlafi Polynomials
          ; Sc[0] = 0
          ; Sc[1] = 0
@@ -8290,7 +8290,7 @@ Scary {
 Schizo {
   z = c = pixel:
   r = z * (1/fn1(z)) + p1
-  z = fn2(r) * z + c 
+  z = fn2(r) * z + c
   round(z) <= 4
   ;SOURCE: schizo.frm
 }
@@ -8315,157 +8315,157 @@ scorpio (XAXIS) {
 }
 
 
-ScottCos (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = cos(z) + sqr(z) 
-  |z|<TEST 
+ScottCos (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = cos(z) + sqr(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottCosH (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = cosh(z) + sqr(z) 
-  |z|<TEST 
+ScottCosH (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = cosh(z) + sqr(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottCZSA (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = cos(z*z) 
-  |z|<TEST 
+ScottCZSA (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = cos(z*z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottCZSB (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = cos(z)*cos(z) 
-  |z|<TEST 
+ScottCZSB (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = cos(z)*cos(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottLPC (XAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = log(z)+cosxx(z) 
-  |z|<TEST 
+ScottLPC (XAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = log(z)+cosxx(z)
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottLPS (XAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = log(z)+sin(z) 
-  |z|<TEST 
+ScottLPS (XAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = log(z)+sin(z)
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottLTC (XAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = log(z)*cosxx(z) 
-  |z|<TEST 
+ScottLTC (XAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = log(z)*cosxx(z)
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottLTS (XAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = log(z)*sin(z) 
-  |z|<TEST 
+ScottLTS (XAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = log(z)*sin(z)
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottSIC (XYAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = sqr(1/cosxx(z)) 
-  |z|<TEST 
+ScottSIC (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = sqr(1/cosxx(z))
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottSin(XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sin(z) + sqr(z) 
-  |z|<TEST 
+ScottSin(XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sin(z) + sqr(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottSinH (XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sinh(z) + sqr(z) 
-  |z|<TEST 
+ScottSinH (XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sinh(z) + sqr(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottSIS (XYAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = sqr(1/sin(z)) 
-  |z|<TEST 
+ScottSIS (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = sqr(1/sin(z))
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
 
-ScottSZSA (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sin(z*z) 
-  |z|<TEST 
+ScottSZSA (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sin(z*z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottSZSB (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sin(z)*sin(z) 
-  |z|<TEST 
+ScottSZSB (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sin(z)*sin(z)
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottZCZZ (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = (z*cos(z))+z 
-  |z|<TEST 
+ScottZCZZ (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = (z*cos(z))+z
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScottZSZZ (XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = (z*sin(z))+z 
-  |z|<TEST 
+ScottZSZZ (XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = (z*sin(z))+z
+  |z|<TEST
   ;SOURCE: fracv13r.frm
 }
 
 
-ScSkCos (XYAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = cosxx(z) - sqr(z) 
-  |z|<TEST 
+ScSkCos (XYAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = cosxx(z) - sqr(z)
+  |z|<TEST
   ;SOURCE: skinv13r.frm
 }
 
 
-ScSkCosH (XYAXIS) { 
-  z = pixel, TEST = (p1+3): 
-  z = cosh(z) - sqr(z) 
-  |z|<TEST 
+ScSkCosH (XYAXIS) {
+  z = pixel, TEST = (p1+3):
+  z = cosh(z) - sqr(z)
+  |z|<TEST
   ;SOURCE: skinner.frm
 }
 
@@ -8478,20 +8478,20 @@ ScSkLMS (XAXIS) {
 }
 
 
-ScSkSin (XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sin(z) - sqr(z) 
-  |z|<TEST 
+ScSkSin (XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sin(z) - sqr(z)
+  |z|<TEST
   ;SOURCE: skinv13r.frm
 }
 
 
-ScSkSinH (XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = sinh(z) - sqr(z) 
-  |z|<TEST 
+ScSkSinH (XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = sinh(z) - sqr(z)
+  |z|<TEST
   ;SOURCE: skinv13r.frm
 }
 
@@ -8504,11 +8504,11 @@ ScSkZCZZ (XYAXIS) {
 }
 
 
-ScSkZSZZ (XAXIS) { 
-  z = pixel 
-  TEST = (p1+3): 
-  z = (z*sin(z)) - z 
-  |z|<TEST 
+ScSkZSZZ (XAXIS) {
+  z = pixel
+  TEST = (p1+3):
+  z = (z*sin(z)) - z
+  |z|<TEST
   ;SOURCE: skinv13r.frm
 }
 
@@ -8522,7 +8522,7 @@ seashell {; Giuseppe Zito
   d5 = -0.958196
   d7 = -0.068108
   d13 = 0.651859
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 /x
@@ -8534,7 +8534,7 @@ seashell {; Giuseppe Zito
   s0 = s0 -y
   s0 = s0 *x
   s0 = s0 /y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d3
   s0 = s0 /d5
@@ -8546,9 +8546,9 @@ seashell {; Giuseppe Zito
   s0 = s0 /d13
   s0 = s0 -x
   s0 = s0 /y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -8560,10 +8560,10 @@ seaweed {; Giuseppe Zito
   d6 = 0.94905
   d9 = -0.491294
   d13 = 0.008099
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 +y
   s0 = s0 +d4
@@ -8577,9 +8577,9 @@ seaweed {; Giuseppe Zito
   s0 = s0 +d13
   s0 = s0 /x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -8629,10 +8629,10 @@ SECANT1 {; Ray Girvan, March 1998
          ; needs two seed values z0, z1
          ; Newton-like images, perturbed by choice of z1,
          ; a relaxation factor p2, and a function fn2
-         ; inside the iteration loop 
+         ; inside the iteration loop
   z=pixel, z0=(0,0), z1=fn1(z)+p1:
   f0=z0*z0*z0*z0*z0-1
-  f1=z1*z1*z1*z1*z1-1 
+  f1=z1*z1*z1*z1*z1-1
   z=z-p2*f1*(z1-z0)/(f1-f0)
   z0=z1
   z1=fn2(z)
@@ -8723,7 +8723,7 @@ septo (XAXIS) {
   z = z*z - zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -8776,12 +8776,12 @@ seta {; Giuseppe Zito
   d11 = 0.993975
   d12 = 0.442516
   d14 = 0.739683
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *x
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
   s0 = s0 -x
@@ -8797,9 +8797,9 @@ seta {; Giuseppe Zito
   s0 = s0 *d14
   s0 = s0 *x
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -9014,7 +9014,7 @@ SGG014 {
 
 
 SGG015 {
-  z=pixel  
+  z=pixel
   z=sqr(z)/sin(z)+1/pixel
   |z|<=4
   ;SOURCE: guenzel.frm
@@ -9351,7 +9351,7 @@ SGG046 {; Edited for Fractint v. 20 by George Martin, 10/98
 
 SGG047 {
   z=pixel:
-  v=cos(z) 
+  v=cos(z)
   w=flip(z)
   x=sqr(z)
   y=exp(z)
@@ -9363,7 +9363,7 @@ SGG047 {
 
 SGG048 {
   z=pixel:
-  v=sqr(z) 
+  v=sqr(z)
   w=sin(z)
   x=log(z)
   y=cos(z)
@@ -9382,7 +9382,7 @@ SGG049 {; Edited by George Martin to remove extra ":"
 }
 
 
-SGG050 {  
+SGG050 {
   z=sqr(pixel):
   z=(p1*cosxx(z))/sqr(p2)+1/z
   |z|<=20
@@ -9400,10 +9400,10 @@ SGG051 {
 }
 
 
-SGG052 {  
+SGG052 {
   z=1/pixel+p1:
   x=sqr(z)
-  x=cos(z)+0.31   
+  x=cos(z)+0.31
   z=x+log(z*z)
   |z| <=35
   ;SOURCE: guenzel.frm
@@ -9422,7 +9422,7 @@ SGG053 {
 
 SGG054 {
   z=pixel:
-  x=cotanh(z)+conj(z*0.337)/pixel 
+  x=cotanh(z)+conj(z*0.337)/pixel
   z=x*log(z)-(z*z)+p1
   |z|<=10
   ;SOURCE: guenzel.frm
@@ -9450,7 +9450,7 @@ SGG056 {
 
 SGG057 {
   z=1/pixel+p1, x=real(p2)+pixel:
-  x=log(z^z+pixel)  
+  x=log(z^z+pixel)
   z=z+sqr(x)
   |z|<20
   ;SOURCE: guenzel.frm
@@ -9573,7 +9573,7 @@ SGG069 {; 24.02.95
 
 
 SGG070 {; 05.03.95
-  z=x=pixel*0.87: 
+  z=x=pixel*0.87:
   x=conj(z-(x+0.11))
   z=1.11/(flip(z^x))
   |z|<=8
@@ -9582,7 +9582,7 @@ SGG070 {; 05.03.95
 
 
 SGG071 {; 05.03.95
-  z=pixel*0.87, x=sqr(pixel): 
+  z=pixel*0.87, x=sqr(pixel):
   x=conj(z-(x+0.11))
   z=1.11/(flip(z^x))
   |z|<=x/(log(z))+2
@@ -9630,7 +9630,7 @@ SGG075 {; 10.03.95
 SGG076 {; 10.03.95
   z=pixel, x=sqr(pixel*pixel):
   x=x+sqr(z)
-  z=cosxx(z)+1/x 
+  z=cosxx(z)+1/x
   |z|<=20
   ;SOURCE: guenzel.frm
 }
@@ -9825,10 +9825,10 @@ sgrowth {; Giuseppe Zito
   d0 = 0.454073
   d6 = -0.662253
   d12 = -0.9959
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -x
   s0 = s0 -y
@@ -9837,9 +9837,9 @@ sgrowth {; Giuseppe Zito
   s0 = s0 -x
   s0 = s0 *x
   s0 = s0 -d12
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -9872,8 +9872,8 @@ ShadowRot-XZ-YW {; Jim Muth
 Shakti {
   z = pixel:
   z = z + p1
-  r = z * z * z 
-  q = z^e 
+  r = z * z * z
+  q = z^e
   z = z * (r/q)
   |z| <= 4
   ;SOURCE: shakti.frm
@@ -9881,9 +9881,9 @@ Shakti {
 
 
 SHARK (XAXIS) {
-  z=pixel-1+p1: 
-  z=sqr(z) + pixel + p2 
-  |z|<=4  
+  z=pixel-1+p1:
+  z=sqr(z) + pixel + p2
+  |z|<=4
   ;SOURCE: newform.frm
 }
 
@@ -10019,15 +10019,15 @@ ShZ (XAXIS) {; Jm Collard-Richard
   z1=sinh(z)
   z2=cosh(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
 
-Siamese (XAXIS) {; Try params=6/0/2/0  
+Siamese (XAXIS) {; Try params=6/0/2/0
                  ; Note: symmetry valid only for Real p1
-  c=z=pixel: 
-  z=z^p1+c 
+  c=z=pixel:
+  z=z^p1+c
   |z|<=Real(p2)
   ;SOURCE: fractfun.frm
 }
@@ -10065,7 +10065,7 @@ SierpinskiB {; Jonathan Osuch
 }
 
 
-Sierpinsky {; Use p1=2 for the triangle, 
+Sierpinsky {; Use p1=2 for the triangle,
             ; and p1=(1.3,.5) for a strange thing
   z=pixel, j=(0,-1), k=(-1, 0):
   x=real(z)
@@ -10083,9 +10083,9 @@ Sierpinsky {; Use p1=2 for the triangle,
 
 Silverado (XAXIS) {; Rollo Silver
                    ; Select p1 such that 0. <= p1 <= 1.
-  z = Pixel, zz=z*z, zzz=zz*z 
-  z = (1.-p1)*zz + (p1*zzz) 
-  test = (p2+4)*(p2+4): 
+  z = Pixel, zz=z*z, zzz=zz*z
+  z = (1.-p1)*zz + (p1*zzz)
+  test = (p2+4)*(p2+4):
   z = z + Pixel
   zsq = z*z
   zcu = zsq*z
@@ -10110,7 +10110,7 @@ Simmetrico_random {; Giuseppe Zito
   z = pixel
   a = 2.8:
   x = real(z), y = imag(z)
-  IF (rand > 0.5) 
+  IF (rand > 0.5)
     newx = -y
     newy = x
   ELSE
@@ -10174,7 +10174,7 @@ SimplePendulumG {
 }
 
 
-Sin1 (XAXIS) {  
+Sin1 (XAXIS) {
   c = z = pixel:
   z = (1-(z^sin(1.1-z))) + c + p1
   |z| <= 4
@@ -10187,12 +10187,12 @@ Sin2Z (XAXIS) {; Jm Collard-Richard
   z1=sin(z*z)-sin(z)
   z2=2*z*cos(z*z)-cos(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
 
-SinCos1 (XAXIS) {  
+SinCos1 (XAXIS) {
   c = z = pixel:
   z = sin (cos(z^c)) +c +p1
   |z| <= 4
@@ -10200,10 +10200,10 @@ SinCos1 (XAXIS) {
 }
 
 
-SinDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = sin( z ) * pixel  
-  |z| <= b 
+SinDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = sin( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -10216,7 +10216,7 @@ SinE2 (XAXIS) {; Jm Collard-Richard
   z1=expz2-exp(z)-s
   z2=2*z*expz2-exp(z)-c
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10232,7 +10232,7 @@ SinE2Z (XAXIS) {; Jm Collard-Richard
   z1=expz2-exp(z)-s2+s
   z2=2*z*expz2-exp(z)-z*c2*2+c
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10323,7 +10323,7 @@ Sinebrot09 {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))    
+  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))
                                            ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10334,7 +10334,7 @@ Sinebrot10 {; Tom Schumm
   z = Pixel, z = Sqr(z):                     ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^3 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^3 <= 16-sqr(real(z)+sin(imag(z)))
                                              ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10345,7 +10345,7 @@ Sinebrot11 {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  sqr(imag(z)-sin(2*real(z))) <= 64-(real(z)+sin(imag(z)))^3    
+  sqr(imag(z)-sin(2*real(z))) <= 64-(real(z)+sin(imag(z)))^3
                                            ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10356,7 +10356,7 @@ Sinebrot12 {; Tom Schumm
   z = Pixel, z = Sqr(z):                    ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^5 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^5 <= 16-sqr(real(z)+sin(imag(z)))
                                              ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10367,18 +10367,18 @@ Sinebrot13 {; Tom Schumm
   z = Pixel, z = Sqr(z):                      ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^7 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^7 <= 16-sqr(real(z)+sin(imag(z)))
                                               ; Different escape boundry
   ;SOURCE: phong.frm
 }
 
 
-SinEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by 
+SinEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
                        ; George Martin 10/98
   z=p1, x=|z|:
   z=sin(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -10390,7 +10390,7 @@ SinEggC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
     z = sin(z) + pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -10470,7 +10470,7 @@ Sineia08 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                     ; Just like julia
   z = z + p1
   z = Sqr(z)
-  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(real(z)))    
+  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(real(z)))
                                              ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10481,7 +10481,7 @@ Sineia09 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                    ; Just like julia
   z = z + p1
   z = Sqr(z)
-  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))    
+  sqr(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))
                                             ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10492,7 +10492,7 @@ Sineia10 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                    ; Just like julia
   z = z + p1
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^3 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^3 <= 16-sqr(real(z)+sin(imag(z)))
                                             ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10503,7 +10503,7 @@ Sineia11 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like julia
   z = z + p1
   z = Sqr(z)
-  sqr(imag(z)-sin(2*real(z))) <= 64-(real(z)+sin(imag(z)))^3    
+  sqr(imag(z)-sin(2*real(z))) <= 64-(real(z)+sin(imag(z)))^3
                                            ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10514,7 +10514,7 @@ Sineia12 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like julia
   z = z + p1
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^5 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^5 <= 16-sqr(real(z)+sin(imag(z)))
                                            ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10525,7 +10525,7 @@ Sineia13 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                  ; Just like julia
   z = z + p1
   z = Sqr(z)
-  (imag(z)-sin(2*real(z)))^7 <= 16-sqr(real(z)+sin(imag(z)))    
+  (imag(z)-sin(2*real(z)))^7 <= 16-sqr(real(z)+sin(imag(z)))
                                           ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10538,9 +10538,9 @@ SineMandel {
   ELSE
     z = y, iterate = iterate + 1
   ENDIF
-  z = z*z + c 
-  y = z 
-  |z| <= 100 
+  z = z*z + c
+  y = z
+  |z| <= 100
   ;SOURCE: 97msg.frm
 }
 
@@ -10550,7 +10550,7 @@ SineTangentbrot1 {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))    
+  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))
                                            ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10561,7 +10561,7 @@ SineTangentbrot2 {; Tom Schumm
   z = Pixel, z = Sqr(z):                   ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))    
+  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))
                                            ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10572,7 +10572,7 @@ SineTangentbrot3 {; Tom Schumm
   z = Pixel, z = Sqr(z):                 ; Just like mandel
   z = z + Pixel
   z = Sqr(z)
-  tan(imag(z)-sin(4*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))    
+  tan(imag(z)-sin(4*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))
                                          ; Different escape boundry
   ;SOURCE: phong.frm
 }
@@ -10583,7 +10583,7 @@ SineTangentia1 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                ; Just like julia
   z = z + p1
   z = Sqr(z)
-  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))    
+  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(imag(z)))
                                         ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10594,7 +10594,7 @@ SineTangentia2 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                  ; Just like julia
   z = z + p1
   z = Sqr(z)
-  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))    
+  tan(imag(z)-sin(2*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))
                                           ; Different escape boundry
   ;SOURCE: phong2.frm
 }
@@ -10605,16 +10605,16 @@ SineTangentia3 (ORIGIN) {; Tom Schumm
   z = Pixel, z = Sqr(z):                 ; Just like julia
   z = z + p1
   z = Sqr(z)
-  tan(imag(z)-sin(4*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))    
+  tan(imag(z)-sin(4*real(z))) <= 16-sqr(real(z)+sin(2*imag(z)))
                                          ; Different escape boundry
   ;SOURCE: phong2.frm
 }
 
 
-SinHDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = sinh( z ) * pixel 
-  |z| <= b 
+SinHDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = sinh( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -10624,7 +10624,7 @@ SinhEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
   z=p1, x=|z|:
   z=sinh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -10635,7 +10635,7 @@ SinhEggC (XAXIS_NOPARM) {
     z = sinh(z) + pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -10665,7 +10665,7 @@ SinZ1 (XAXIS) {; Resol. sin(z)^sin(z)=1  Jm Collard-Richard
   z1=ss-1
   z2=(c+c*log(s))*ss
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10675,7 +10675,7 @@ SinZ4 (XAXIS) {; Jm Collard-Richard
   z1=sin(z^4)+sin(z^3)+sin(z^2)+sin(z)
   z2=4*(z^3)*cos(z^4)+3*(z^2)*cos(z^3)+2*z*cos(z^2)+cos(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10688,7 +10688,7 @@ SinZZ (XAXIS) {; Jm Collard-Richard
   z1=szz-zz
   z2=(cos(z)*log(sin(z))+cos(z))*szz-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10697,7 +10697,7 @@ SJFRAME-ROBERT {; Ron Barnett, 1994
                 ; floating point required
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=z*z*z/5+z*z+c 
+  z=z*z*z/5+z*z+c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -10707,7 +10707,7 @@ SJFRAME-ROBERTJ {; Ron Barnett, 1995
                  ; floating point required
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(p3)+flip(imag(p3)):
-  z=z*z*z/5+z*z+c 
+  z=z*z*z/5+z*z+c
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -10717,7 +10717,7 @@ SJIKENAGA01 {; Ron Barnett, 1994
              ; floating point required
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -10728,7 +10728,7 @@ SJIKENAGA02 {; Ron Barnett, 1994
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel))
   z=conj(z), c=conj(c):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<100
   ;SOURCE: reb005.frm
 }
@@ -10739,7 +10739,7 @@ SJIKENAGA02JULIA {; Ron Barnett, 1995
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(p3)+flip(imag(p3))
   z=conj(z), c=conj(c):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<100
   ;SOURCE: reb007.frm
 }
@@ -10749,7 +10749,7 @@ SJIKENAGA03 {; Ron Barnett, 1994
              ; floating point required
   z=real(pixel)-flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)-flip(imag(pixel)):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -10759,7 +10759,7 @@ SJIKENAGA03JULIA {; Ron Barnett, 1995
                   ; floating point required
   z=real(pixel)-flip(imag(pixel)*p1)
   c=p2+p1*real(p3)-flip(imag(p3)):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -10769,7 +10769,7 @@ sjikenagamap01 {; Ron Barnett, 1994
   y = ((1-pixel)/3)^0.5
   z=real(y)+flip(imag(y)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z = z*z*z + (c - 1)*z - c 
+  z = z*z*z + (c - 1)*z - c
   |z|<=100
   ;SOURCE: reb006.frm
 }
@@ -10779,7 +10779,7 @@ sjjulike01 {; Ron Barnett, 1995
   y = pixel
   z=real(y)+flip(imag(y)*p1)
   c=p2+p1*real(p3)+flip(imag(p3)):
-  z = z*z*z + (c - 1)*z - c 
+  z = z*z*z + (c - 1)*z - c
   |z|<=100
   ;SOURCE: reb006.frm
 }
@@ -10815,7 +10815,7 @@ SJMAND03 {; Mandelbrot function
 SJMAND04 {; Tetrated function
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=fn1(c)^z 
+  z=fn1(c)^z
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -10834,7 +10834,7 @@ SJMAND06 {
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel))
   z=conj(z), c=conj(c):
-  z=fn1(z)+c 
+  z=fn1(z)+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -10844,7 +10844,7 @@ SJMAND07 {; Mandelbrot function
           ; changing real(p1) will now rotate between ZC & CZ planes
   z=(1-p1)*real(pixel)+p1*flip(imag(pixel))
   c=p1*real(pixel)+(1-p1)*flip(imag(pixel)):
-  z=fn1(z)+c 
+  z=fn1(z)+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -10853,16 +10853,16 @@ SJMAND07 {; Mandelbrot function
 SJMAND08 {; Mandelbar
   z=real(pixel)+flip(imag(pixel))*p1
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=conj(z*z)+c 
+  z=conj(z*z)+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
 
 
-SJMAND09 { 
+SJMAND09 {
   z=real(pixel)+flip(imag(p2))
   c=real(p2)+flip(imag(pixel)):
-  z=z*z+c 
+  z=z*z+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -10887,7 +10887,7 @@ SJMAND11 {; Mandelbrot lambda function - lower bailout
 
 SJMAND12 {; Mandelbrot with perturbed initiator
   z=real(pixel)+p1, c=flip(imag(pixel))+p2:
-  z=z*z+c 
+  z=z*z+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -10896,7 +10896,7 @@ SJMAND12 {; Mandelbrot with perturbed initiator
 SJMAND13 {; Mandelbrot function
   z=real(pixel)+p1*(flip(imag(pixel)))
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=1/fn1(z)+c 
+  z=1/fn1(z)+c
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -10905,7 +10905,7 @@ SJMAND13 {; Mandelbrot function
 SJMAND14 {; Mandelbrot lambda function
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
-  z=c/fn1(z) 
+  z=c/fn1(z)
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -10916,7 +10916,7 @@ SJMANOWAR01 {; Ron Barnett, 1994
   z=z1=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
   z=z*z+z1+c
-  z1=z 
+  z1=z
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -10927,7 +10927,7 @@ SJMANOWAR01JULIA {; Ron Barnett, 1995
   z=z1=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(p3)+flip(imag(p3)):
   z=z*z+z1+c
-  z1=z 
+  z1=z
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -10938,7 +10938,7 @@ SJSPIDER01 {; Ron Barnett, 1994
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(pixel)+flip(imag(pixel)):
   z=z*z+c
-  c=c/2+z 
+  c=c/2+z
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -10949,7 +10949,7 @@ SJSPIDER01JULIA {; Ron Barnett, 1995
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p2+p1*real(p3)+flip(imag(p3)):
   z=z*z+c
-  c=c/2+z 
+  c=c/2+z
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -10980,34 +10980,34 @@ SkewPlanesSqr {; Jim Muth
 }
 
 
-SkMandelCosine (XYAXIS) { 
-  z = pixel:  
-  z = cosxx(z) * pixel 
-  |z| <= (p1 + 3) 
+SkMandelCosine (XYAXIS) {
+  z = pixel:
+  z = cosxx(z) * pixel
+  |z| <= (p1 + 3)
   ;SOURCE: skinv13r.frm
 }
 
 
-SkMandelHypCosine (XYAXIS) { 
-  z = pixel: 
-  z = cosh(z) * pixel 
-  |z| <= (p1 + 3) 
+SkMandelHypCosine (XYAXIS) {
+  z = pixel:
+  z = cosh(z) * pixel
+  |z| <= (p1 + 3)
   ;SOURCE: skinv13r.frm
 }
 
 
-SkMandelHypSine (XYAXIS) { 
-  z = pixel:  
-  z = sinh(z) * pixel 
-  |z| <= (p1 + 3) 
+SkMandelHypSine (XYAXIS) {
+  z = pixel:
+  z = sinh(z) * pixel
+  |z| <= (p1 + 3)
   ;SOURCE: skinv13r.frm
 }
 
 
-SkMandelSine (XYAXIS) { 
-  z = Pixel:  
-  z = sin(z) * pixel 
-  |z| <= (p1 + 3) 
+SkMandelSine (XYAXIS) {
+  z = Pixel:
+  z = sin(z) * pixel
+  |z| <= (p1 + 3)
   ;SOURCE: skinv13r.frm
 }
 
@@ -11017,7 +11017,7 @@ sky {; Giuseppe Zito
   c0 = -1.26
   c3 = -0.892095
   c4 = 0.504
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 /y
@@ -11026,13 +11026,13 @@ sky {; Giuseppe Zito
   s0 = s0 -c4
   s0 = s0 /y
   s0 = s0 /x
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *x
   s0 = s0 *x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11063,7 +11063,7 @@ smooth {; Giuseppe Zito
   z = pixel
   d0 = 0.318941
   d3 = 0.879961
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -y
@@ -11071,14 +11071,14 @@ smooth {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 +x
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *y
   s0 = s0 /d3
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11151,7 +11151,7 @@ snared {; Giuseppe Zito
   d1 = 0.043854
   d6 = 0.78535497
   d8 = -0.72237098
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s1 =c1
@@ -11167,7 +11167,7 @@ snared {; Giuseppe Zito
   s0 = s0 *c17
   s0 = s0 *y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s1 = x
@@ -11176,9 +11176,9 @@ snared {; Giuseppe Zito
   s0 = s0 *d6
   s0 = s0 -y
   s0 = s0 +d8
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11187,7 +11187,7 @@ Sneaky-D {
   z = 0, c = pixel:
   z = fn1(z) + c
   c = c + fn2(1/z) + p1
-  z = c 
+  z = c
   |z| <= 6
   ;SOURCE: d-rock.frm
 }
@@ -11222,7 +11222,7 @@ Somethingelse (xyaxis) {
 Sow {
   z = c = pixel, p = sqr(pixel) + p1:
   z = z * z * p
-  r = tan((1/z) / c)  
+  r = tan((1/z) / c)
   z = z * z + fn1(r)
   |z| <= 4 + p2
   ;SOURCE: big_pig.frm
@@ -11231,7 +11231,7 @@ Sow {
 
 SpaceMandel_PHC {
   z = c = pixel, rand = srand(pixel):
-  r = fn1(1/z) + rand 
+  r = fn1(1/z) + rand
   m = z*z + c
   z = m * (whitesq == 1) +  (z * r) * (whitesq == 0)
   |z| < 4 || 2 < |r|
@@ -11246,7 +11246,7 @@ spalace {; Giuseppe Zito
   c6 = -0.211834
   c10 = 0.54942
   d11 = -0.747369
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 +c1
@@ -11257,7 +11257,7 @@ spalace {; Giuseppe Zito
   s0 = s0 -x
   s0 = s0 /c10
   s0 = s0 *y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 /x
   s0 = s0 *y
@@ -11266,14 +11266,14 @@ spalace {; Giuseppe Zito
   s0 = s0 +x
   s0 = s0 *y
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
-SPCZ (xaxis) {; resol. sin(z)^cos(z)=0 - Jm Collard-Richard 
+SPCZ (xaxis) {; resol. sin(z)^cos(z)=0 - Jm Collard-Richard
               ; Use Float=yes
   z=pixel:
   s=sin(z)
@@ -11283,7 +11283,7 @@ SPCZ (xaxis) {; resol. sin(z)^cos(z)=0 - Jm Collard-Richard
   z1=sc
   z2=((c*co)-(s*log(s)))*sc
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: dons.frm
 }
 
@@ -11304,7 +11304,7 @@ SpecC (XAXIS_NOPARM) {
 
 Special1 {
   z=pixel:
-  z=p1*z+(z^5)+(z^z) 
+  z=p1*z+(z^5)+(z^z)
   |z|<=100
   ;SOURCE: sample.frm
 }
@@ -11312,7 +11312,7 @@ Special1 {
 
 Special2 {
   z=pixel:
-  z=p1*z+(z^6)+(z^z) 
+  z=p1*z+(z^6)+(z^z)
   |z|<100
   ;SOURCE: sample.frm
 }
@@ -11351,7 +11351,7 @@ speed01 {; Speed chooses between functions, escape-time
 }
 
 
-speed02 {; Acceleration chooses between functions, 
+speed02 {; Acceleration chooses between functions,
          ; acceleration-limit-time
          ; Bradley Beacham  [74223,2745]
          ; P1 varies definition of acceleration
@@ -11383,12 +11383,12 @@ spider {; Chuck Ebbert                       added 12 Jan 1993
 }
 
 
-Spider6 {; Peter Anders anders@physik.hu-berlin.de 
+Spider6 {; Peter Anders anders@physik.hu-berlin.de
   c=z=pixel, a=real(p2), b=imag(p2):
   r=z
   c=(c-z)*b
   z=(r-c)^(1/a)
-  |fn1(c)| <= real(p1) 
+  |fn1(c)| <= real(p1)
   ;SOURCE: anders.frm
 }
 
@@ -11449,7 +11449,7 @@ SpiderJulcplx {; by Jon Horner - 100112,1700 - FRAC'Cetera
 SpiderJulcplx_RFR {; by Jon Horner - 100112,1700 - FRAC'Cetera
                    ; Complex-form of SPIDERJUL
                    ; float=yes
-                   ; modified by Rolf Freericks 
+                   ; modified by Rolf Freericks
   z = pixel, h=c = p1:
   z = z * z + c-h
   c = c * p2 + z
@@ -11464,10 +11464,10 @@ SpiderJulcplx_RFR {; by Jon Horner - 100112,1700 - FRAC'Cetera
 
 
 spiderM {
-  z=pixel, f=pixel, g=pixel: 
+  z=pixel, f=pixel, g=pixel:
   f=f/p1+z
   z=fn1(z^(p2+g))+fn2(f)
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: jpl1.frm
 }
 
@@ -11477,7 +11477,7 @@ spiderM1 {; by Jean-Pierre Louvet
   z=pixel, f=pixel, g = f + p2:
   f=f/p1+z
   z=fn1(z^g)+fn2(f)
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: 98msg.frm
 }
 
@@ -11606,7 +11606,7 @@ Spir_Stalks_Jul {; Copyright (c) Paul W. Carlson, 1998
 
 Spiral (XYAXIS) {
   z = pixel:
-  z = sin(z) * (cos(z) + 1.) 
+  z = sin(z) * (cos(z) + 1.)
   |z| <= 42
   ;SOURCE: hubert.frm
 }
@@ -11684,7 +11684,7 @@ SpNewton4 (xyaxis) {; Jm Collard-Richard     (Cf M.I Hiver 93-94)
   z1=(z*z-1)*(z*z+0.16)
   z2=4*z^3-1.68*z
   z=z-z1/z2
-  0.001<=|z1|    
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -11714,10 +11714,10 @@ Sqr[fn] (XYAXIS)  {; Jon Horner [ needs zoom-out ]
 }
 
 
-SqrDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = sqr( z ) * pixel  
-  |z| <= b 
+SqrDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = sqr( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -11742,7 +11742,7 @@ SS2Z (XAXIS) {; Jm Collard-Richard
   z1=sin(z)*sin(z)-sin(z*z)
   z2=sin(2*z)-z*cos(z*z)*2
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -11753,7 +11753,7 @@ star (XAXIS) {
   temp = z
   z = z*z + zp
   zp = conj(temp)
-  |zp| <= 64 
+  |zp| <= 64
   ;SOURCE: noel.frm
 }
 
@@ -12403,11 +12403,11 @@ starbail_man {; Kerry Mitchell 09oct98
 ;          narrative copyright Kerry Mitchell 09oct98
 ;
 ;  Related formulas:
-;    starbail_man  (above) 
+;    starbail_man  (above)
 ;    starbail_jul
 ;    starnear_man
 ;    starnear_jul
-;    star-inout 
+;    star-inout
 ;    star_km
 ;
 ; Seeing Stars
@@ -12465,7 +12465,7 @@ starbail_man {; Kerry Mitchell 09oct98
 ;
 ; The "starnear" formulas use a standard bailout condition--stop when the
 ; iterate gets too big, or leaves a very large circle.  Conversely, in the
-; "starbail" formulas, the bailout condition is built around a star.  If 
+; "starbail" formulas, the bailout condition is built around a star.  If
 ; the star is centered at the origin and is big enough, then you can
 ; essentially use the star instead of the traditional bailout circle.  This
 ; is what has been done in parameter set "starbail1".  The magnification
@@ -12834,7 +12834,7 @@ STEFF1(XAXIS) {; Ray Girvan, May 1996
    li=p1
    z=pixel:
    z1=z*z*z-p2
-   g=((z+z1)*(z+z1)*(z+z1)-z1-p2)/z1     
+   g=((z+z1)*(z+z1)*(z+z1)-z1-p2)/z1
    z=z-z1/g
    |z1| >= li
   ;SOURCE: girvan.frm
@@ -12872,7 +12872,7 @@ stone {; Giuseppe Zito
   c5 = 0.46983
   c8 = 0.246683
   c9 = -0.624521
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c1
@@ -12884,14 +12884,14 @@ stone {; Giuseppe Zito
   s1 = s1 *c9
   s0 = s0 +s1
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *x
   s0 = s0 *y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13072,7 +13072,7 @@ straw {; Giuseppe Zito
   d3 = 0.96822
   d5 = 0.360598
   d8 = 0.133834
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 /x
@@ -13083,7 +13083,7 @@ straw {; Giuseppe Zito
   s0 = s0 /c11
   s0 = s0 +c12
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *y
   s0 = s0 +d3
@@ -13092,9 +13092,9 @@ straw {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 -d8
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13119,10 +13119,10 @@ Stretch1 {; Flattened cardioid by Jay R. Hill, 1998
 
 Stretch3 {; Flattened cardioid by Jay R. Hill, 1998
           ; Classic Mandelbrot set fractal, transformed
-          ; use: maxiter=256 inside=249 
+          ; use: maxiter=256 inside=249
           ; outside=summ symmetry=xaxis periodicity=0
   p = 0.5*exp(Pixel), c=p*(1-p), z = 0, done = 1, zc = 0
-  s=|c|, t1=(256*s - 96)*s + 32*Real(c) ; period 1 cardioid test 
+  s=|c|, t1=(256*s - 96)*s + 32*Real(c) ; period 1 cardioid test
   t2=16*s + 32*Real(c) + 16 ; period 2 circle test
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| ; period 3 components test
   z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) ; set colors
@@ -13133,7 +13133,7 @@ Stretch3 {; Flattened cardioid by Jay R. Hill, 1998
   zc=sqr(zc) + c; standard MSet iteration
   IF (|zc| >= 4); Bailout at 4
     done=-1     ; Set flag to force an exit.
-  ENDIF         
+  ENDIF
   done >= 0     ; Continue if the flag >=0.
   ;SOURCE: 98msg.frm
 }
@@ -13142,12 +13142,12 @@ Stretch3 {; Flattened cardioid by Jay R. Hill, 1998
 Stretch3j {; Flattened cardioid by Jay R. Hill, 1998
            ; Classic Mandelbrot set fractal, transformed
            ; p1 = bailout
-           ; use: maxiter=256 inside=249 
+           ; use: maxiter=256 inside=249
            ;      outside=summ symmetry=xaxis periodicity=0
   p = 0.5*exp(Pixel), c=p*(1-p), z = 0, done = 1, zc = 0, bailout=p1
   s=|c|, t1=(256*s - 96)*s + 32*Real(c); period 1 cardioid test
   t2=16*s + 32*Real(c) + 16            ; period 2 circle test
-  B=sqrt(-4*c-7), t3=|8+4*c*(1-B)| 
+  B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|
   t4=|8+4*c*(1+B)|                     ; period 3 components test
   z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) ; set colors
   IF (z>0)                             ; periods 1, 2 and 3 have z>0.
@@ -13168,12 +13168,12 @@ Stretch4 {; Flattened cardioid by Jay R. Hill, 1998
     ; use: maxiter=256 inside=246 outside=summ
     ; symmetry=xaxis periodicity=0
   p = 0.5*exp(Pixel), c=p*(1-p), z = 0, done = 1
-  zc = 0 
+  zc = 0
   t1=(1-sqrt(1-4*c)), t2=4*(c+1)
   z=z + 246*(|t1|<=1) + 247*(|t2|<=1)
   IF (z==0)
-    B=sqrt(-4*c-7), t3=8+4*c*(1-B), t4=8+4*c*(1+B) 
-    z=z + 248*(|t3|<=1) + 249*(|t4|<=1) 
+    B=sqrt(-4*c-7), t3=8+4*c*(1-B), t4=8+4*c*(1+B)
+    z=z + 248*(|t3|<=1) + 249*(|t4|<=1)
     IF (z==0)
       IF ((4*c+3) !=0)
         L0=L1=L2=2
@@ -13239,24 +13239,24 @@ stretch_J {
 
 
 strict_man {
-  c=pixel 
-  r=cabs(c) 
-  r=(1+sqrt(1+4*r))/2 
+  c=pixel
+  r=cabs(c)
+  r=(1+sqrt(1+4*r))/2
   z=0:
-  z=sqr(z)+c 
+  z=sqr(z)+c
   cabs(z) < r
   ;SOURCE: strict.frm
 }
 
 
-Sublime {  
+Sublime {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
-  z = (1,1), c = pixel: 
+  z = (1,1), c = pixel:
   z2 = z*z, z3 = z2*z
   r = z - p1 *(z3-pixel)/(3.0*z2)
   q = fn1(z) * fn2(z) + c + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   (|z| < 4 && whitesq == 0) || (0.0001 < |z3 - pixel| && whitesq)
   ;SOURCE: pablo.frm
 }
@@ -13265,11 +13265,11 @@ Sublime {
 Sublime_2 {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
-  z = c = pixel, Root = 1: 
+  z = c = pixel, Root = 1:
   z3 = z*z*z, z4 = z3*z
   r = (3.0*z4 + Root)/(4 * z3)+ p1
   q = (fn1(z) * fn2(z))+ c + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   (|z| < 4 && whitesq == 0) || (0.004 < |z4 - Root| && whitesq)
   ;SOURCE: pablo.frm
 }
@@ -13326,7 +13326,7 @@ Summia (ORIGIN) {; Tom Schumm
 
 
 Sunglasses (xaxis) {; Merle L. Newsted Jr.
-  z = 0          
+  z = 0
   a = pixel
   b = pixel + 1
   c = pixel * 2:
@@ -13388,7 +13388,7 @@ support {; Giuseppe Zito
   d4 = -0.961538
   d8 = -0.968626
   d11 = 0.85732
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *y
@@ -13402,7 +13402,7 @@ support {; Giuseppe Zito
   s0 = s0 -y
   s0 = s0 *x
   s0 = s0 /x
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *d2
   s0 = s0 /d3
@@ -13413,9 +13413,9 @@ support {; Giuseppe Zito
   s0 = s0 *d11
   s0 = s0 /x
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13439,7 +13439,7 @@ sushi {; Giuseppe Zito
   c22 = 0.346487
   d0 = -0.815432
   d8 = 0.053317
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 +y
@@ -13457,15 +13457,15 @@ sushi {; Giuseppe Zito
   s0 = s0 -c19
   s0 = s0 +x
   s0 = s0 +c22
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
   s0 = s0 /x
   s0 = s0 +d8
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13473,7 +13473,7 @@ sushi {; Giuseppe Zito
 Sutra {
   z = pixel + p1:
   r = tan((1/z) + 1)
-  z = fn1(z * r)/fn2(r) 
+  z = fn1(z * r)/fn2(r)
   |z| < 4
   ;SOURCE: shakti.frm
 }
@@ -13481,7 +13481,7 @@ Sutra {
 
 Swine {
   z = c = pixel:
-  z = tan(1/z) 
+  z = tan(1/z)
   r = z * (e/z) + p1
   z = fn1(z) * fn2(r)
   |z| < 4
@@ -13539,14 +13539,14 @@ swirl5_M {
 }
 
 
-Sylac { 
+Sylac {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   c1 = flip(1/pixel), c2 = conj(1/pixel), z = c = pixel:
   r = ((fn1(z)* c1) * z) + p1
   q = ((fn2(z)* c2) * z + c) + p2
   z = (q * (whitesq == 0)) + (r * (whitesq == 1))
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: pablo.frm
 }
 
@@ -13605,7 +13605,7 @@ SZZCHZ (xaxis) {; Jm Collard-Richard - Use FLOAT=YES
   z1=s+zz-cz
   z2=c+(log(z)+1)*zz-sz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -13618,7 +13618,7 @@ SZZS (XAXIS) {; Jm Collard-Richard
   z1=sz-zs
   z2=(log(sin(z))+z*(cos(z)/sin(z)))*sz-(cos(z)*log(z)+sin(z)/z)*zs
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 

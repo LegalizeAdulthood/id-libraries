@@ -69,7 +69,7 @@ w3 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
 
 WaldoTwinsC (XAXIS_NOPARM) {
   z=p1:
-  z=cosxx(sin(z+pixel))+pixel 
+  z=cosxx(sin(z+pixel))+pixel
   |z|<=4
   ;SOURCE: choice.frm
 }
@@ -77,7 +77,7 @@ WaldoTwinsC (XAXIS_NOPARM) {
 
 WaldoTwinsC.1 (XAXIS_NOPARM) {
   z=p1:
-  z=cos(sin(z+pixel))+pixel 
+  z=cos(sin(z+pixel))+pixel
   |z|<=4
   ;SOURCE: choice.frm
 }
@@ -98,7 +98,7 @@ WALLFRM {; Mandelbrot tiler, Ray Girvan, May 1997
 Warning! {; You must try the RECIP function
           ; Revised for Fractint v20 by G. Martin
   z = pixel:
-  z = fn1(z) + pixel + p1 
+  z = fn1(z) + pixel + p1
   z = (1/sqrt(z)*(exp(-1/2)))
   z = z * imag(z)
   |z| < 4
@@ -107,8 +107,8 @@ Warning! {; You must try the RECIP function
 
 
 WarpEngines (XAXIS) {; Try params=2/1000/0/0
-  c=z=pixel: 
-  z=z^Real(p1)+c 
+  c=z=pixel:
+  z=z^Real(p1)+c
   |z^c|<=Imag(p1)
                      ; "Full speed ahead Mr. Sulu!"
   ;SOURCE: fractfun.frm
@@ -128,8 +128,8 @@ Wave {; Sylvie Gallet [101324,3444], 1996
 
 
 Waves (XAXIS) {; Try params=2/50/2/1
-  c=z=pixel: 
-  z=z^Real(p1)+c 
+  c=z=pixel:
+  z=z^Real(p1)+c
   |Real(z)*Real(p2)|+|Imag(z)*Imag(p2)|<=Imag(p1)
                ; "She canna take this much longer Cap'n!"
   ;SOURCE: fractfun.frm
@@ -141,7 +141,7 @@ wax {; Giuseppe Zito
   c5 = -0.429507
   c10 = 0.68116
   c11 = 0.770711
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *x
@@ -151,12 +151,12 @@ wax {; Giuseppe Zito
   s0 = s0 +c10
   s0 = s0 +c11
   s0 = s0 *y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -174,11 +174,11 @@ welcome {; Giuseppe Zito
   d3 = 0.012126
   d6 = -0.62995899
   d10 = 0.68319201
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *x
   s0 = s0 -d2
@@ -190,9 +190,9 @@ welcome {; Giuseppe Zito
   s0 = s0 *x
   s0 = s0 -x
   s0 = s0 /x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -238,7 +238,7 @@ wha03 {; Use a counter to gradually change exponent
 Whatever_00m (XAXIS) {; Original formula Whatever_the_name
                       ; corrected by Jo Weber [100424,35], 6/1996
   z = pixel:
-  a1=sqr(z), a2=1/a1 
+  a1=sqr(z), a2=1/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -262,10 +262,10 @@ Whatever_01_m (XYAXIS) {; Original formula Whatever_the_name
 
 
 Whatever_01m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
-  a1=sqr(z), a2=1/a1 
+  a1=sqr(z), a2=1/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -280,7 +280,7 @@ Whatever_02 {; Original formula Whatever_the_name
 
 
 Whatever_02m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=2/a1
@@ -299,7 +299,7 @@ Whatever_03 {; Original formula Whatever_the_name
 
 
 Whatever_03m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -319,7 +319,7 @@ Whatever_04 (XYAXIS) {; Original formula Whatever_the_name
 
 
 Whatever_04m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -339,7 +339,7 @@ Whatever_05 {; Original formula Whatever_the_name
 
 
 Whatever_05m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -359,7 +359,7 @@ Whatever_06 (XYAXIS) {; Original formula Whatever_the_name
 
 
 Whatever_06m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -378,7 +378,7 @@ Whatever_07 {; Original formula Whatever_the_name
 
 
 Whatever_07m  {; Original formula Whatever_the_name
-               ; corrected and modified by 
+               ; corrected and modified by
                ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -396,7 +396,7 @@ Whatever_08 (XYAXIS) {; Original formula Whatever_the_name
 
 
 Whatever_08m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -414,7 +414,7 @@ Whatever_09 (XYAXIS) {; Original formula Whatever_the_name
 
 
 Whatever_09m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=p1/a1
@@ -432,7 +432,7 @@ Whatever_10 {; Original formula Whatever_the_name
 
 
 Whatever_10m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=p1/a1
@@ -521,7 +521,7 @@ wiltetrate {; by me
 }
 
 
-wiltetrate_gen { 
+wiltetrate_gen {
   z = pixel :
   z=z^(fn1(z^real(p1)))+pixel
   |z|<=4
@@ -554,7 +554,7 @@ Wing {; Edited for Fractint v. 20 by George Martin, 10/98
       ; created in integer mode with the old formula.
   z = pixel
   c = cotan(3,9):
-  z = c / (z*z*z + pixel) 
+  z = c / (z*z*z + pixel)
   |z| <= 42
   ;SOURCE: hubert.frm
 }
@@ -613,7 +613,7 @@ WK990208 {; Eliminated superfluous variable "c". G. Martin, 7/26/99
 
 Wontfin (XAXIS) {
   z = pixel:
-  z = | log(z) | + sin(z) 
+  z = | log(z) | + sin(z)
   |z| <= 50
   ;SOURCE: hubert.frm
 }
@@ -621,7 +621,7 @@ Wontfin (XAXIS) {
 
 Woven {; Jim Muth
        ; As Posted in Fractal-Art, 4/97
-  z=pixel 
+  z=pixel
   c=p1:
   z=(-z)^1.05+c
   |z| <= 100

@@ -4,4 +4,4 @@ Kapetanov7 {
   |z|<14
   ;SOURCE: kapet007.frm
 }
- 
+

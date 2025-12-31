@@ -17,7 +17,7 @@ JD-SG-05 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   |z| < 4
   ;SOURCE: phctopng.frm
 }
- 
+
 JD-SG-06 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   IF (whitesq)
     z = real(p1)
@@ -29,4 +29,4 @@ JD-SG-06 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   |z| < 4
   ;SOURCE: phctopng.frm
 }
- 
+

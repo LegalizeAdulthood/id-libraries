@@ -11,7 +11,7 @@ QuartzJ {; Julia sets of Quartz formula
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzJ {; Julia sets of Quartz formula
          ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
          ; Freely distributable but may not be sold.
@@ -25,7 +25,7 @@ QuartzJ {; Julia sets of Quartz formula
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzJ {; Julia sets of Quartz formula
          ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
          ; Freely distributable but may not be sold.
@@ -39,7 +39,7 @@ QuartzJ {; Julia sets of Quartz formula
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM1B {; Mandelbrot set 1 sliced vertically
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -53,7 +53,7 @@ QuartzM1B {; Mandelbrot set 1 sliced vertically
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM1C {; Mandelbrot set 1 sliced diagonally
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -67,7 +67,7 @@ QuartzM1C {; Mandelbrot set 1 sliced diagonally
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM1C {; Mandelbrot set 1 sliced diagonally
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -81,7 +81,7 @@ QuartzM1C {; Mandelbrot set 1 sliced diagonally
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM2A {; Mandelbrot set 2 (critical point -1) sliced horizontally
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -95,7 +95,7 @@ QuartzM2A {; Mandelbrot set 2 (critical point -1) sliced horizontally
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM2A {; Mandelbrot set 2 (critical point -1) sliced horizontally
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -109,7 +109,7 @@ QuartzM2A {; Mandelbrot set 2 (critical point -1) sliced horizontally
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM2B {; Mandelbrot set 2 sliced vertically
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
            ; Freely distributable but may not be sold.
@@ -123,7 +123,7 @@ QuartzM2B {; Mandelbrot set 2 sliced vertically
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+
 QuartzM2D {; Mandelbrot set 2 sliced at an arbitrary real angle set by p2
            ; (0-1, not 0-2pi)
            ; The Quartz Fractal Formula, discovered by Paul Derbyshire.
@@ -141,4 +141,4 @@ QuartzM2D {; Mandelbrot set 2 sliced at an arbitrary real angle set by p2
   |z|<=127
   ;SOURCE: quartz.frm
 }
- 
+

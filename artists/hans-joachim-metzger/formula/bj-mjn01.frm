@@ -25,7 +25,7 @@ m+j+n {; Sylvie Gallet [101324,3444], 1997
    continue
   ;SOURCE: ifs196.frm
 }
- 
+
 m+j+n_2 {; Sylvie Gallet [101324,3444], 1997
          ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
    p0 = p3 - 1, odev = iter = wait = 0
@@ -53,4 +53,4 @@ m+j+n_2 {; Sylvie Gallet [101324,3444], 1997
    continue
   ;SOURCE: ifs196.frm
 }
- 
+

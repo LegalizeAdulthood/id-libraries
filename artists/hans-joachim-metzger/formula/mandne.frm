@@ -14,4 +14,4 @@ M-SetInNewton(XAXIS) {; use float=yes
   |(z-oldz)|>=|0.01|
   ;SOURCE: fractint.frm
 }
- 
+

@@ -2,7 +2,7 @@
 ; are from various sources.
 
 MyFract-7 {;from the book *Fractal Creations* by Tim Wegner and Mark Peterson
-           ; modified by Linda Allison 
+           ; modified by Linda Allison
   c = z = 1/pixel:
    z = fn1(z) + (c + P1/z)
     |z| <= P2
@@ -43,7 +43,7 @@ Lin-carr6new { ;Robert Carr's formula modified by Linda Allison
   z = (fn1(p1/z ^ 3))/.5
   |z| <= p2
   }
-                                            
+
 
 MyFractal2 {; *Fractal Creations* formula, modified by Linda Allison
   c = z = 1/pixel:

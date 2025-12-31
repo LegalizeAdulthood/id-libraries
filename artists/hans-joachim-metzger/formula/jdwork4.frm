@@ -1,5 +1,5 @@
 JDCarr2289b  {; Modified Carr/Gallet frm. Jim Deutch 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Added variable "newpixel". G. Martin 6/29/99
   y=((imag(scrnpix)/(imag(scrnmax)-1)))*imag(scrnmax)/real(scrnmax)-.85
@@ -23,7 +23,7 @@ JDCarr2289b  {; Modified Carr/Gallet frm. Jim Deutch 1996
   (rain==0)*(|real(z)|)+rain <= bailout*(rain==0)+rain*z
   ;SOURCE: 96msg.frm
 }
- 
+
 JDCarr2330c {; Modified Carr/Sylvie Gallet frm. Jim Deutch 1996
              ; thanks to Tim Wegner for correcting my error
              ; Added variable "newpixel". G. Martin 6/27/99
@@ -52,7 +52,7 @@ JDCarr2330c {; Modified Carr/Sylvie Gallet frm. Jim Deutch 1996
   (rain==0)*(|real(z)|)+rain <=bailout*(rain==0)+rain*z
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDfrm038b {; Jim Deutch [104074,3171], 1996 requires 19.5
            ; p1 = Julia parameters
            ; p2 = Julia translation
@@ -66,7 +66,7 @@ JDfrm038b {; Jim Deutch [104074,3171], 1996 requires 19.5
   |z| < 4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDfrm038C {; Jim Deutch [104074,3171], 1996 requires 19.5
            ; p1 = Julia parameters
            ; p2 = Julia translation
@@ -80,7 +80,7 @@ JDfrm038C {; Jim Deutch [104074,3171], 1996 requires 19.5
   |z| < 100000
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDFrmF01 {; Modified Gallet frm Jim Deutch 1996
   sq6=0.5+flip(sqrt(3)/2)
   z=pixel:
@@ -93,7 +93,7 @@ JDFrmF01 {; Modified Gallet frm Jim Deutch 1996
   |z|<=4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDFrmF18b {; tanh is nice Jim Deutch 1996
   sq6=.5+flip(sqrt(3)/2)
   z=pixel
@@ -103,7 +103,7 @@ JDFrmF18b {; tanh is nice Jim Deutch 1996
   fn1(z)*(ct<8)+(|z|*(ct>=8))<(ct<8)+4*(ct>=8)
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDFrmJT02 {
   z=pixel
   x=real(pixel)
@@ -112,7 +112,7 @@ JDFrmJT02 {
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDFrmJT04 {
   z=pixel
   x=real(pixel)
@@ -121,7 +121,7 @@ JDFrmJT04 {
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDrings {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
          ; p1=julia params
          ; p2=translation
@@ -141,7 +141,7 @@ JDrings {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDringsB {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
           ; p1=julia params
           ; p2=translation
@@ -162,7 +162,7 @@ JDringsB {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDringsC {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
           ; p1=julia params
           ; p2=translation
@@ -185,7 +185,7 @@ JDringsC {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDringsD {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
           ; p1=julia params
           ; p2=translation
@@ -209,7 +209,7 @@ JDringsD {; Jim Deutch [104074,3171], 1996 requires Fractint 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDWhatzit3 {; Jim Deutch [104074,3171], 1996 requires 19.5
   col=real(scrnpix)
   cols=real(scrnmax)
@@ -222,7 +222,7 @@ JDWhatzit3 {; Jim Deutch [104074,3171], 1996 requires 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDWhatzit4 {; Jim Deutch [104074,3171], 1996 requires 19.5
   col=real(scrnpix)
   cols=real(scrnmax)
@@ -235,7 +235,7 @@ JDWhatzit4 {; Jim Deutch [104074,3171], 1996 requires 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 TransformingJulia0 {; Jim Deutch [104074,3171], 1996 requires 19.5
                     ; p1=initial julia
                     ; p2=final julia
@@ -248,7 +248,7 @@ TransformingJulia0 {; Jim Deutch [104074,3171], 1996 requires 19.5
   |z|<4
   ;SOURCE: jdwork4.frm
 }
- 
+
 JDfrm038 {; Jim Deutch [104074,3171], 1996  Requires passes=1
           ; p1 = Julia parameters
           ; p2 = bailout test
@@ -260,4 +260,4 @@ JDfrm038 {; Jim Deutch [104074,3171], 1996  Requires passes=1
   |z| < p2
   ;SOURCE: phc.frm
 }
- 
+

@@ -14,11 +14,11 @@
 ;
 ; Here are the .frm and .par file codes for my pictures Sonic.gif,
 ; Red_blob.gif and RedButtn.gif. If you are new to fractint or need help
-; figuring out what to do with these codes, let me know; I'll help you out. 
+; figuring out what to do with these codes, let me know; I'll help you out.
 ;
 ; Serving suggestion:  I think these all make very good tiles for Windows
 ; wallpaper, so I am also uploading small Windows .BMP files of these
-; fractals. Let me know what you think. 
+; fractals. Let me know what you think.
 
 Doozy18 (yaxis) {; Bill Rossi
                  ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -30,7 +30,7 @@ Doozy18 (yaxis) {; Bill Rossi
   |z| <= 4
   ;SOURCE: brossi.frm
 }
- 
+
 NewOne3 (yaxis) {; Bill Rossi
   z = pixel:
    temp1 = fn1(z) / fn2(z),
@@ -39,7 +39,7 @@ NewOne3 (yaxis) {; Bill Rossi
    z = temp1 / temp2 - temp3,
    |z| <= 4
   }
- 
+
 Billsfrm (YAXIS) { ; Based on a formula by Paul Carlson
   z = pixel:
    z = (fn1(z)^4) / (fn2(z)^3) / (fn3(z)^2) / (fn4(z)),

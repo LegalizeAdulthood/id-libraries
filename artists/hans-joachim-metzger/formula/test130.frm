@@ -9,4 +9,4 @@ Multifrac135 {
  z=(z+u)^2+c
  |z|<=bailout
  }
- 
+

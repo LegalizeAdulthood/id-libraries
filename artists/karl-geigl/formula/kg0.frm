@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -19,19 +19,19 @@
    z = pixel, c = sin(z):
    z = (z*z) + c;
    z = z*z/c;
-   z <=4 
+   z <=4
 }
- 
+
    003 {
    z = c = pixel:
    z =( (sin(z) / c) + (cos(z))^2) * z;
    z <=1
-} 
+}
 
    004 {
    z = pixel, x = sin(z):
    z = (z*z) + x;
-   z = z*1/x; 
+   z = z*1/x;
     z <= 4
 }
 
@@ -145,7 +145,7 @@
    023 {
    z = pixel:
    z = (1/fn1(z))^2;
-}  
+}
    024 {
    z = pixel:
    z = (z-1) * (z+1/2) +c

@@ -14,4 +14,4 @@ FGZ_-1 {
   |z| <= 4
   ;SOURCE: f(g(z))).frm
 }
- 
+

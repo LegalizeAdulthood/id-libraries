@@ -10,7 +10,7 @@ Gallet-8-01 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= p2
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; real(p2) = bailout value
    z = c = pixel :
@@ -18,7 +18,7 @@ Gallet-8-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= p2
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
    z = c = zn = pixel :
@@ -29,7 +29,7 @@ Gallet-8-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
    z = c = zn = pixel :
@@ -40,7 +40,7 @@ Gallet-8-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; p1 = exponent
@@ -60,7 +60,7 @@ Gallet-8-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    mnum >= 0.001
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; p1 = exponent
@@ -80,7 +80,7 @@ Gallet-8-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    mnum >= 0.001
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-05 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < p1 <= 1 (default = 1)
@@ -98,7 +98,7 @@ Gallet-8-05 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < p1 <= 1 (default = 1)
@@ -116,7 +116,7 @@ Gallet-8-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < p1 <= 1 (default = 1)
@@ -137,7 +137,7 @@ Gallet-8-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-08 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < p2 <= 1 (default = 1)
@@ -155,7 +155,7 @@ Gallet-8-08 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-09 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; a = p1 , b = p2
@@ -165,7 +165,7 @@ Gallet-8-09 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= 16
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-10 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; a = p1, b = p2
@@ -174,7 +174,7 @@ Gallet-8-10 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= 16
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-11 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; PHC, requires periodicity = 0 and passes = 1
              ; p1 = parameter for a Julia set
@@ -198,7 +198,7 @@ Gallet-8-11 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= 128
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-12 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; p2: real part = radius
@@ -222,7 +222,7 @@ Gallet-8-12 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    z <= bailout
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-12 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; p2: real part = radius
@@ -246,7 +246,7 @@ Gallet-8-12 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    z <= bailout
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-13 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; a = p1, b = p2
@@ -256,7 +256,7 @@ Gallet-8-13 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |z| <= 16
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-14 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; 0 < p1 <= 1
@@ -268,7 +268,7 @@ Gallet-8-14 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    znc <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-15 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; bailout = real(p2)
@@ -282,7 +282,7 @@ Gallet-8-15 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    znc <= real(p2)
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-16 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; 0 < p1
@@ -301,7 +301,7 @@ Gallet-8-16 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 16
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-17 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; p1 = parameter for a Julia set (0 for the Mandelbrot set)
@@ -326,7 +326,7 @@ Gallet-8-17 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    znc <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-17 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; p1 = parameter for a Julia set (0 for the Mandelbrot set)
@@ -351,7 +351,7 @@ Gallet-8-17 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    znc <= 4
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-18 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
              ; 0 < real(p3) < imag(p3)
@@ -370,7 +370,7 @@ Gallet-8-18 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |n| >= 0.0000000001
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-19 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
              ; Choose 0 < real(p1) < imag(p1)
              ; Requires periodicity = 0
@@ -387,7 +387,7 @@ Gallet-8-19 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
    |z| <= 16
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-20 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
              ; real(p2) > 0
@@ -409,7 +409,7 @@ Gallet-8-20 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    z < -1
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-21 {; Sylvie Gallet [101324,3444], Apr 1997
              ; Requires periodicity = 0 and decomp = 256
              ; p1 = parameter for a Julia set (0 for the Mandelbrot set)
@@ -438,7 +438,7 @@ Gallet-8-21 {; Sylvie Gallet [101324,3444], Apr 1997
    znc <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 Gallet-8-22 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
              ; Requires periodicity = 0 and decomp=256
              ; 0 < real(p2) , 0 < imag(p2)
@@ -466,7 +466,7 @@ Gallet-8-22 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
    znc <= 256
   ;SOURCE: gallet_8.frm
 }
- 
+
 Gallet-8-22 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
              ; Requires periodicity = 0 and decomp=256
              ; 0 < real(p2) , 0 < imag(p2)
@@ -494,4 +494,4 @@ Gallet-8-22 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
    znc <= 256
   ;SOURCE: gallet_8.frm
 }
- 
+

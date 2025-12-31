@@ -9,7 +9,7 @@ z2=z^x1,n=z2*z-1,d=x1*z2
 z=(z-n/d)^x2
 |n|>0.000001
 }
- 
+
 quasinewton(XAXIS_NOIMAG) { ;tried to make a Newton-variant
 ;p1 is the exponent (default=5)
 ;draws a 'gear' with p1>~20
@@ -22,4 +22,4 @@ n=z^x-1,d=x*z*z
 z=z-n/d
 |n|>0.000001
 }
- 
+

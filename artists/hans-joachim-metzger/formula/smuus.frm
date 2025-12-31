@@ -10,4 +10,4 @@ Fn*z+z (XAXIS) {; Chuck Ebbert - from BUILTN.FRM
   |z| <= 64                        ; always bail out at 64
   ;SOURCE: parser.frm
 }
- 
+

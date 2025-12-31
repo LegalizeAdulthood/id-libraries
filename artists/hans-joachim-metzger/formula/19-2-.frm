@@ -11,4 +11,4 @@ REB005G {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+

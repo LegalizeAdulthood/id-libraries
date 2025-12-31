@@ -13,7 +13,7 @@ JD-G-4-06 {; modified Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF05 {; Jim Deutch, 1996
   sq6=0.5+flip(sqrt(3)/2)
   z=pixel:
@@ -21,7 +21,7 @@ JDFrmF05 {; Jim Deutch, 1996
   real(z)>-1
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF17 {; Jim Deutch, 1996
   sq6=.5+flip(sqrt(3)/2)
   z=pixel:
@@ -29,7 +29,7 @@ JDFrmF17 {; Jim Deutch, 1996
   fn1(z)<p1
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF23 {; Jim Deutch, 1996: PTC triple Julia
   cr = real(scrnpix) + imag(scrnpix)
   r = cr - 3 * trunc(cr / real(3))
@@ -40,7 +40,7 @@ JDFrmF23 {; Jim Deutch, 1996: PTC triple Julia
   |z|<4
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF23 {; Jim Deutch, 1996: PTC triple Julia
   cr = real(scrnpix) + imag(scrnpix)
   r = cr - 3 * trunc(cr / real(3))
@@ -51,7 +51,7 @@ JDFrmF23 {; Jim Deutch, 1996: PTC triple Julia
   |z|<4
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF26g {; Jim Deutch, 1996
   sq6=.5+flip(sqrt(3)/2)
   cr = real(scrnpix) + imag(scrnpix)
@@ -66,7 +66,7 @@ JDFrmF26g {; Jim Deutch, 1996
   (fn1(z*(p2+1))*out+ |z|*(out==0))<(out+ 4*(out==0))
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF26g {; Jim Deutch, 1996
   sq6=.5+flip(sqrt(3)/2)
   cr = real(scrnpix) + imag(scrnpix)
@@ -81,7 +81,7 @@ JDFrmF26g {; Jim Deutch, 1996
   (fn1(z*(p2+1))*out+ |z|*(out==0))<(out+ 4*(out==0))
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF27 {; Jim Deutch, 1996
   sq6=.5+flip(sqrt(3)/2)
   out=1
@@ -94,7 +94,7 @@ JDFrmF27 {; Jim Deutch, 1996
   (asin(z)*out+ .0001*(out==0))<(out+ |n|*(out==0))
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF28 {; Jim Deutch, 1996
   sq6=.5+flip(sqrt(3)/2)
   out=1
@@ -107,7 +107,7 @@ JDFrmF28 {; Jim Deutch, 1996
   ((sinh(z)*out)+|n|*(out==0))>(-5*out+.0001*(out==0))
   ;SOURCE: jdflake.frm
 }
- 
+
 JDFrmF31 {; Jim Deutch, 1996
           ; Added variable "newpixel". G. Martin 6/27/99
   sq6=-.5+flip(sqrt(3)/2)
@@ -122,4 +122,4 @@ JDFrmF31 {; Jim Deutch, 1996
   |n|>.0001
   ;SOURCE: jdflake.frm
 }
- 
+

@@ -21,7 +21,7 @@ crystal_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 dragon_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -45,7 +45,7 @@ dragon_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 fern_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -81,7 +81,7 @@ fern_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 spiral_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -111,7 +111,7 @@ spiral_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 swirl5_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -135,7 +135,7 @@ swirl5_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 triangle_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -165,7 +165,7 @@ triangle_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+
 zigzag2_J {
    ; This is a formula rendition of an ifs entry from fractint.ifs.
    ; The conversion was done with ifsinv.exe, a program
@@ -189,4 +189,4 @@ zigzag2_J {
   |z|<=p1
   ;SOURCE: ifsinv.frm
 }
- 
+

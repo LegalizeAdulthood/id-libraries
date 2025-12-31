@@ -6,7 +6,7 @@ multifrac43 {
   z = z^(z-x-y-w)
   |z| > (x*y*w)
   }
- 
+
 multifrac43 {
   z = pixel:
   x = fn1(x)-y
@@ -15,4 +15,4 @@ multifrac43 {
   z = z^(z-x-y-w)
   |z| > (x*y*w)
   }
- 
+

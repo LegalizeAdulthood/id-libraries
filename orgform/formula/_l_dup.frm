@@ -14,7 +14,7 @@ lambdafn {; Chuck Ebbert.
 
 
 LambdaFn (ORIGIN) {; v7.x/9.1 - Chuck Ebbert - from BUILTN.FRM
-   ; p1 is lambda (default = 1.0,0.4), 
+   ; p1 is lambda (default = 1.0,0.4),
    ; real(p2) changes bailout (default = 64).
    ; float=yes, set co-ords = -4/3/4/-3              - JH
   z = pixel
@@ -27,9 +27,9 @@ LambdaFn (ORIGIN) {; v7.x/9.1 - Chuck Ebbert - from BUILTN.FRM
 }
 
 
-lambdafn { 
+lambdafn {
   z = pixel
-  m = ((1, 0.4) * (|p1|<=0) + p1 )  
+  m = ((1, 0.4) * (|p1|<=0) + p1 )
   t = (64 * (real(p2)<=0) + real(p2) * (0<p2) ):
   z = fn1(z) * fn2(m)
   abs(imag(z)) <= t && abs(real(z)) <= t
@@ -73,15 +73,15 @@ LeeMandel1 (XYAXIS) {
   c = sqr(pixel)/z
   c = z + c
   z = sqr(z)
-  |z| < P1 
+  |z| < P1
   ;SOURCE: newforms.frm
 }
 
 
-LeeMandel1 (XYAXIS) { 
-  z=Pixel: 
-  c=sqr(pixel)/z, c=z+c, z=sqr(z)  
-  |z|<4 
+LeeMandel1 (XYAXIS) {
+  z=Pixel:
+  c=sqr(pixel)/z, c=z+c, z=sqr(z)
+  |z|<4
   ;SOURCE: newform.frm
 }
 
@@ -125,9 +125,9 @@ LeeMandel3 (XAXIS) {; Kevin Lee
 }
 
 
-LeeMandel3 (XYAXIS) { 
-  z=Pixel, c=Pixel-sqr(z): 
-  c=Pixel+c/z, z=c-z*pixel 
+LeeMandel3 (XYAXIS) {
+  z=Pixel, c=Pixel-sqr(z):
+  c=Pixel+c/z, z=c-z*pixel
   |z|<4
   ;SOURCE: newform.frm
 }

@@ -15,4 +15,4 @@ tent_in_mod {; Modified Sylvie Gallet formula
   fn4(l-r) >= p2 && r < 4
   ;SOURCE: tent_mod.par
 }
- 
+

@@ -10,7 +10,7 @@ SpecC (XAXIS_NOPARM) {
    x <= 4
   ;SOURCE: skinner.frm
 }
- 
+
 starAstroid_Mset {; adapted from Paul Carlson by Kathy Roth
                   ; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
@@ -100,7 +100,7 @@ starAstroid_Mset {; adapted from Paul Carlson by Kathy Roth
   bailout == 0  && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 starnear_jul {; Kerry Mitchell 09oct98
         ;
         ; See the end of formula starbail_man for Kerry Mitchell's
@@ -227,7 +227,7 @@ starnear_jul {; Kerry Mitchell 09oct98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 SimplePendulumG {
   bailout=real(p2)+4
   dt=real(p1)
@@ -239,4 +239,4 @@ SimplePendulumG {
   |z|<=bailout
   ;SOURCE: 99msg.frm
 }
- 
+

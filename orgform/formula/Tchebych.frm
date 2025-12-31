@@ -51,7 +51,7 @@ J_TchebychevT4 {
    |z|<100
 }
 
-J_TchebychevT5 {    
+J_TchebychevT5 {
    c = pixel, z = P1:
    z = c*(z*(z*z*(16*z*z-20)+5)),
    |z|<100
@@ -63,7 +63,7 @@ J_TchebychevT6 {
    |z|<100
 }
 
-J_TchebychevT7 {     
+J_TchebychevT7 {
    c = pixel, z = P1:
    z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7),
    |z|<100

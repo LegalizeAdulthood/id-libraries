@@ -1,10 +1,10 @@
 ; The formula draws the x-as.  The thickness of
-; the line depends on the parameter p1. 
+; the line depends on the parameter p1.
 jhline     { ; Jos Hendriks <jos@hexaedre-fr.com>
              ; Mon, 23 Dec 2002 21:01:01
              ; draws the line y=0, p1 gives the thickness of
              ; the line watch out: only two colors are used
-             ; take for instance maxiter=2, inside=0, outside=iter 
+             ; take for instance maxiter=2, inside=0, outside=iter
   :
   |Imag(Pixel)|<p1
  }
@@ -44,30 +44,30 @@ jhgraphs1  { ; Jos Hendriks <jos@hexaedre-fr.com>
 Jhsierpinski { ; Jos Hendriks <jos@hexaedre-fr.com>
                ; Sun, 29 Dec 2002 21:30:14
                ; escape time formula for the Sierpinski triangle
-  z=Pixel: 
-  IF (real(z)<.5 && imag(z)>.5) 
-    z=2*z-(0,1) 
-  ELSEIF(real(z)>.5) 
-    z=2*z-(1,0) 
-  ELSE 
-    z=2*z 
-  ENDIF 
-  |z|<p1 
+  z=Pixel:
+  IF (real(z)<.5 && imag(z)>.5)
+    z=2*z-(0,1)
+  ELSEIF(real(z)>.5)
+    z=2*z-(1,0)
+  ELSE
+    z=2*z
+  ENDIF
+  |z|<p1
  }
 
 
 Jhsierpinskim { ; Jos Hendriks <jos@hexaedre-fr.com>
                 ; Sun, 29 Dec 2002 21:30:14
                 ; You could call it a lambdaSierpinski formula
-  z=Pixel: 
-  IF (real(z)<.5 && imag(z)>.5) 
-    z=(2*z-(0,1))*Pixel 
-  ELSEIF(real(z)>.5) 
-    z=(2*z-(1,0))*Pixel 
-  ELSE 
-    z=2*z*Pixel 
-  ENDIF 
-  |z|<p1 
+  z=Pixel:
+  IF (real(z)<.5 && imag(z)>.5)
+    z=(2*z-(0,1))*Pixel
+  ELSEIF(real(z)>.5)
+    z=(2*z-(1,0))*Pixel
+  ELSE
+    z=2*z*Pixel
+  ENDIF
+  |z|<p1
  }
 
 

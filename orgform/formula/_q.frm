@@ -425,17 +425,17 @@ quadrosin (ORIGIN) {; bs
 
 
 quart2 {; From Noel Giffin noel@triumf.ca
-        ; The quatro-HT variation. 
+        ; The quatro-HT variation.
         ; Use real part of p1  0.0 < p1 < 1.0
-        ; Adding the inversion causes what looks like 
+        ; Adding the inversion causes what looks like
         ; an infinite extension along
-        ; the real axis. Using the Imag component 
+        ; the real axis. Using the Imag component
         ; will add some nice asymmetry.
   z=c=pixel, zp = (0,0), huge = 1.0e32:
   temp = z
   z = sin(z) - zp
   zp = c/temp
-  (|zp| <= 4 && |z| <= huge) 
+  (|zp| <= 4 && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -446,7 +446,7 @@ quart3 {; From Noel Giffin noel@triumf.ca
   z = sin(z) - zp2
   zp2 = zp1
   zp1 = p1/temp
-  (|zp2| <= huge && |z| <= huge) 
+  (|zp2| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -457,7 +457,7 @@ quart4 {; From Noel Giffin noel@triumf.ca
   z = sin(z) + zp2
   zp2 = zp1
   zp1 = conj(p1/temp)
-  (|zp2| <= huge && |z| <= huge) 
+  (|zp2| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -468,7 +468,7 @@ quart5 {; From Noel Giffin noel@triumf.ca
   z = sin(zp1) - zp2
   zp2 = zp1
   zp1 = p1/temp
-  (|zp2| <= huge && |z| <= huge) 
+  (|zp2| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -477,13 +477,13 @@ quartc {
    ; This makes for an unusual combination of fractal characteristics
    ; Recognizable sin fractal filled with chaotic banding.
    ; Real part of P1 should be about 0.1 and Imag portion can be 0.0
-   ; Oh yes! You will have to zoom out to +/- 2pi on the x axis 
+   ; Oh yes! You will have to zoom out to +/- 2pi on the x axis
    ; for full view.
   z=pixel, zp = (0,0), huge = 1.0e32:
   temp = z
   z = sin(z) - zp
   zp = p1/conj(temp)
-  (|zp| <= 4 && |z| <= huge) 
+  (|zp| <= 4 && |z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -493,7 +493,7 @@ quartc1 {; From Noel Giffin noel@triumf.ca
   temp = z
   z = sin(z) - zp
   zp = p1/conj(temp)
-  (|zp| <= bail && |z| <= huge) 
+  (|zp| <= bail && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -503,7 +503,7 @@ quartest {
   temp = z
   z = sin(zp1) - zp2
   zp2 = zp1
-  zp1 = p1/temp, (|zp| <= huge && |z| <= huge) 
+  zp1 = p1/temp, (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -514,22 +514,22 @@ quartest1 {; From Noel Giffin noel@triumf.ca
   z = sin(zp2) - zp1
   zp2 = zp1
   zp1 = p1/temp
-  (|zp| <= huge && |z| <= huge) 
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
 
 quartet {; From Noel Giffin noel@triumf.ca
      ; The quatro-HT variation. Use real part of p1  0.0 < p1 < 1.0
-     ; Adding the inversion causes what looks like an 
+     ; Adding the inversion causes what looks like an
      ; infinite extension along
-     ; the real axis. Using the Imag component will 
+     ; the real axis. Using the Imag component will
      ; add some nice asymmetry.
   z=pixel, zp = (0,0), huge = 1.0e30:
   temp = z
   z = sin(z) - zp
   zp = p1/temp
-  (|zp| <= huge && |z| <= huge) 
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -542,7 +542,7 @@ quartet1 {; From Noel Giffin noel@triumf.ca
   temp = z
   z = sin(z) - zp
   zp = p1/temp
-  (|zp| <= bail && |z| <= huge) 
+  (|zp| <= bail && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -553,7 +553,7 @@ quartet2 {; From Noel Giffin noel@triumf.ca
   temp = z
   z = sin(z) - zp
   zp = p1/temp
-  (|zp| <= huge && |z| <= huge) 
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -562,8 +562,8 @@ quartz {
   z=c=pixel, zp = (0,0), huge = 1.0e32:
   temp = z
   z = -sin(z) - zp
-  zp = p1/temp 
-  (|zp| <= huge && |z| <= huge) 
+  zp = p1/temp
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -717,8 +717,8 @@ QuasiJulia1 (ORIGIN) {; Fractal Report 24, p20 - Jose Murciano/Villanueva
   x = real(pixel), y = imag(pixel), c = p1 :
   xnew = ABS(x * x - y * y) + real(c)
   y = x * y * 2 + imag(c)
-  x = xnew 
-  x*x + y*y <=4 
+  x = xnew
+  x*x + y*y <=4
   ;SOURCE: burt.frm
 }
 
@@ -730,12 +730,12 @@ QuasiJulia2 (ORIGIN) {; Fractal Report 26, p15 - Jose Murciano/Villanueva
   xnew = (x * x - y * y) + real(c)
   y = ABS(x * y) * 2 + imag(c)
   x = xnew
-  x*x + y*y <=4 
+  x*x + y*y <=4
   ;SOURCE: burt.frm
 }
 
 
-QuasiMandelbrot1 (XAXIS) { 
+QuasiMandelbrot1 (XAXIS) {
    ; Fractal Report 26, p16 - Jose Murciano/Villanueva
    ; translated for Fractint by Jon Horner
    ; float=yes, periodicity=none
@@ -743,7 +743,7 @@ QuasiMandelbrot1 (XAXIS) {
   xnew = ABS(x * x - y * y) + real(pixel)
   y = x * y * 2 + imag(pixel)
   x = xnew
-  x*x + y*y <=4 
+  x*x + y*y <=4
   ;SOURCE: burt.frm
 }
 
@@ -755,7 +755,7 @@ QuasiMandelbrot2 {; from QuasiJulia2 - Jose Murciano/Villanueva
   xnew = (x * x - y * y) + real(pixel)
   y = ABS(x * y) * 2 + imag(pixel)
   x = xnew
-  x*x + y*y <=4 
+  x*x + y*y <=4
   ;SOURCE: burt.frm
 }
 
@@ -831,7 +831,7 @@ QuatJul_0yz0 {; 4-dimensional J-Set
 
 
 QuatJul_x00w {; 4-dimensional J-Set
-  z = real(pixel) 
+  z = real(pixel)
   w = flip(imag(pixel))
   cz = p2
   cw = p3
@@ -849,8 +849,8 @@ QuatJul_x00w {; 4-dimensional J-Set
 
 
 QuatJul_x0z0 {; 4-dimensional J-Set
-  z = real(pixel) 
-  w = imag(pixel) 
+  z = real(pixel)
+  w = imag(pixel)
   cz = p2
   cw = p3
   qz = sqr(z)
@@ -940,7 +940,7 @@ QuatJul_xz {; 4-dimensional J-Set
 
 QuatJul_yw {; 4-dimensional J-Set
   z = real(p1) + flip(real(pixel))
-  w = imag(p1) + flip(imag(pixel)) 
+  w = imag(p1) + flip(imag(pixel))
   cz = p2
   cw = p3
   qz = sqr(z)
@@ -958,7 +958,7 @@ QuatJul_yw {; 4-dimensional J-Set
 
 QuatJul_yz {; 4-dimensional J-Set
   z = real(p1) + flip(real(pixel))
-  w = imag(pixel) + flip(imag(p1)) 
+  w = imag(pixel) + flip(imag(p1))
   cz = p2
   cw = p3
   qz = sqr(z)
@@ -976,7 +976,7 @@ QuatJul_yz {; 4-dimensional J-Set
 
 QuatJul_zw {; 4-dimensional J-Set
   z = p1
-  w = pixel 
+  w = pixel
   cz = p2
   cw = p3
   qz = sqr(z)
@@ -1137,7 +1137,7 @@ QuatMan_yz(ORIGIN) {; 4-dimensional M-Set
 
 
 QuatMan_zw(ORIGIN) {; 4-dimensional M-Set
-  cz = z = p1 
+  cz = z = p1
   cw = w = pixel
   qz = sqr(z)
   qw = sqr(w):
@@ -1158,7 +1158,7 @@ quatro (XYAXIS) {
   temp = z
   z = sin(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -1172,16 +1172,16 @@ quilt (XAXIS) {
   temp = z
   z = zp2*zp2  - zp1
   zp2 = zp1
-  zp1 = temp^.5 
+  zp1 = temp^.5
   |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
 
 quiltX (XAXIS) {; From Noel Giffin noel@triumf.ca
-                ; The combination of a typing error and 
+                ; The combination of a typing error and
                 ; a bug in fractints parser
-                ; makes weird quilt like patterns, 
+                ; makes weird quilt like patterns,
                 ; I hope they don't fix it. I like it.
   z = zp = pixel, huge = 1.e32:
   temp = z
@@ -1204,7 +1204,7 @@ Quiz {; Sylvie Gallet [101324,3444], 1995
 
 Quotient (XAXIS) {
   z = pixel:
-  z = (sqr(z) + pixel) / (sqr(z) - pixel) 
+  z = (sqr(z) + pixel) / (sqr(z) - pixel)
   |z| <= 42
   ;SOURCE: hubert.frm
 }

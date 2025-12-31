@@ -49,7 +49,7 @@ heart_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 heart_man {; Kerry Mitchell
         ; See end of formula xlty_jul for Kerry Mitchell's explanation
         ;  of his "fraction" formulas
@@ -100,7 +100,7 @@ heart_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 xlty_jul {; Kerry Mitchell
         ;
         ; colors by how often x < y, where x & y are the
@@ -145,13 +145,13 @@ xlty_jul {; Kerry Mitchell
     zc=sqr(zc)+c
   ENDIF
   iter>0
-;*********Kerry Mitchell's explanation of "fraction" formulas******** 
+;*********Kerry Mitchell's explanation of "fraction" formulas********
 ;           narrative copyright Kerry Mitchell, 1998
 ;
 ;  Formulas covered by this explanation:
 ;     xlty_jul (above)
 ;     xlty_man
-;     heart_jul     
+;     heart_jul
 ;     heart_man
 ;
 ; Fun with fractions
@@ -196,7 +196,7 @@ xlty_jul {; Kerry Mitchell
 ;*******************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 xlty_man {; Kerry Mitchell
         ; See end of formula xlty_jul for Kerry Mitchell's explanation
         ;  of his "fraction" formulas
@@ -244,4 +244,4 @@ xlty_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

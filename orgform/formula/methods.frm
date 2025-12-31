@@ -17,7 +17,7 @@ zt = (0, 0):
 z3 = z * z * z;
 z4 = z3 * z;
 z = zt - ((z4 - root) / (4 * z3));
-zt = z; 
+zt = z;
 |z| <= 4
 }
 
@@ -37,7 +37,7 @@ zt = (0, 0):
 z3 = z * z * z;
 z4 = z3 * z;
 z = zt - ((z4 - root) / (4 * z3)) + c;
-zt = z; 
+zt = z;
 |z| <= 4
 }
 
@@ -57,7 +57,7 @@ zt = (0, 0):
 z3 = z * z * z;
 z4 = z3 * z;
 z = zt - ((z4 - root) / (4 * z3));
-zt = z; 
+zt = z;
 |z - c| <= 4
 }
 
@@ -147,7 +147,7 @@ z = (100 * z100 * z - 1) / (101 * z100);
 
 Newton_neg_real {
 z = pixel:
-z = (1 / z); 
+z = (1 / z);
 z4 = z * z * z * z;
 z = (-5 * z4 + 1) / (-4 * z4 * z);
 |real(z)| <= 4

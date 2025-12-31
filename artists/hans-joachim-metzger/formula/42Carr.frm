@@ -8,14 +8,14 @@ Carr1900 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((z2+c)/(|c|))*test1 + (z-z1)*(1-test1) 
+  z = ((z2+c)/(|c|))*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1901 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -33,7 +33,7 @@ Carr1901 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1902 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -52,7 +52,7 @@ Carr1902 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1903 {; Modified Sylvie Gallet frm.  REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -71,7 +71,7 @@ Carr1903 {; Modified Sylvie Gallet frm.  REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1904 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -83,14 +83,14 @@ Carr1904 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((pixel-z2+c)/(pixel-c*c))*test1 + (z-z1)*(1-test1) 
+  z = ((pixel-z2+c)/(pixel-c*c))*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1905 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -102,14 +102,14 @@ Carr1905 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((z^4)*(c^4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((z^4)*(c^4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1907 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -121,14 +121,14 @@ Carr1907 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (sqr(sqr(z)+c^4)-c)*test1 + (z-z1)*(1-test1) 
+  z = (sqr(sqr(z)+c^4)-c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1908 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -140,14 +140,14 @@ Carr1908 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 * z * z) / (1/sin(z) + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 * z * z) / (1/sin(z) + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1909 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -159,14 +159,14 @@ Carr1909 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 * z * z) / (1/cotanh(z) + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 * z * z) / (1/cotanh(z) + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1910 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -178,14 +178,14 @@ Carr1910 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 *sin(z2)) / (z + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 *sin(z2)) / (z + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1911 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -197,14 +197,14 @@ Carr1911 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(test3 && test0 && test1)))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1912 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -216,14 +216,14 @@ Carr1912 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(cabs(test3 && test0 && test1))))
   iter = real(iter)+(1.099,0.0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1913 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -235,14 +235,14 @@ Carr1913 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(cabs(test3 && test0 && test1))))
   iter = real(iter)+(1.099,0.0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1914 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -254,14 +254,14 @@ Carr1914 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (z2+c-0.099/pixel)*test1 + ((z-z1)*(1-test1)) 
+  z = (z2+c-0.099/pixel)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1915 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -273,14 +273,14 @@ Carr1915 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (real(z2)*z4+c)*test1 + ((z-z1)*(1-test1)) 
+  z = (real(z2)*z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1916 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -292,14 +292,14 @@ Carr1916 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (sqr(z1)*z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = (sqr(z1)*z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1917 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -310,7 +310,7 @@ Carr1917 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -318,7 +318,7 @@ Carr1917 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1918 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -329,7 +329,7 @@ Carr1918 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -337,7 +337,7 @@ Carr1918 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1919 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -348,7 +348,7 @@ Carr1919 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   c=z+c/2.125
   test3 = (test3 || (|z|>b1))
@@ -357,7 +357,7 @@ Carr1919 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1920 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -368,7 +368,7 @@ Carr1920 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -376,7 +376,7 @@ Carr1920 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1921 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -387,7 +387,7 @@ Carr1921 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -395,7 +395,7 @@ Carr1921 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1922 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -406,7 +406,7 @@ Carr1922 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -414,7 +414,7 @@ Carr1922 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1923 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -425,7 +425,7 @@ Carr1923 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -433,7 +433,7 @@ Carr1923 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1924 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -444,7 +444,7 @@ Carr1924 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   c=z+c/2.125
   test3 = (test3 || (|z|>b1))
@@ -453,7 +453,7 @@ Carr1924 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1925 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -464,7 +464,7 @@ Carr1925 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -472,7 +472,7 @@ Carr1925 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1926 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -483,7 +483,7 @@ Carr1926 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -491,8 +491,8 @@ Carr1926 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
- 
+
+
 Carr1928 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -503,7 +503,7 @@ Carr1928 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+1/c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -511,7 +511,7 @@ Carr1928 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1929 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -522,7 +522,7 @@ Carr1929 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -530,7 +530,7 @@ Carr1929 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1930 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -541,7 +541,7 @@ Carr1930 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -549,7 +549,7 @@ Carr1930 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1931 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -557,10 +557,10 @@ Carr1931 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (4.0,0.4)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -568,7 +568,7 @@ Carr1931 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1932 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -576,10 +576,10 @@ Carr1932 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7564,0.21978)+(c/10))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -587,7 +587,7 @@ Carr1932 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1933 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -595,10 +595,10 @@ Carr1933 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7564,0.21978)+(c/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -606,7 +606,7 @@ Carr1933 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1934 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -614,10 +614,10 @@ Carr1934 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7456,0.10)+(c/7*pixel))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -625,7 +625,7 @@ Carr1934 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1935 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -633,10 +633,10 @@ Carr1935 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -644,7 +644,7 @@ Carr1935 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1936 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -652,10 +652,10 @@ Carr1936 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -663,7 +663,7 @@ Carr1936 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1937 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -671,10 +671,10 @@ Carr1937 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -682,7 +682,7 @@ Carr1937 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1938 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -690,10 +690,10 @@ Carr1938 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -701,7 +701,7 @@ Carr1938 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1939 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -709,10 +709,10 @@ Carr1939 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -720,7 +720,7 @@ Carr1939 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1940 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -728,10 +728,10 @@ Carr1940 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -739,7 +739,7 @@ Carr1940 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1941 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -747,10 +747,10 @@ Carr1941 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -758,7 +758,7 @@ Carr1941 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1942 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -766,10 +766,10 @@ Carr1942 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -777,7 +777,7 @@ Carr1942 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1943 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -786,10 +786,10 @@ Carr1943 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -797,7 +797,7 @@ Carr1943 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1944 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -806,10 +806,10 @@ Carr1944 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -817,7 +817,7 @@ Carr1944 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1945 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -826,10 +826,10 @@ Carr1945 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -837,7 +837,7 @@ Carr1945 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1946 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -846,10 +846,10 @@ Carr1946 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -857,7 +857,7 @@ Carr1946 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1947 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -866,10 +866,10 @@ Carr1947 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -877,7 +877,7 @@ Carr1947 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1948 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -886,10 +886,10 @@ Carr1948 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -897,7 +897,7 @@ Carr1948 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1949 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -907,10 +907,10 @@ Carr1949 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -918,7 +918,7 @@ Carr1949 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1950 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -928,10 +928,10 @@ Carr1950 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = ((4 *z2) / (z + 4) + c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -939,7 +939,7 @@ Carr1950 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1951 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -948,10 +948,10 @@ Carr1951 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = ((4 *z2) / (z + 4) + c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -959,7 +959,7 @@ Carr1951 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1952 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -968,10 +968,10 @@ Carr1952 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -979,7 +979,7 @@ Carr1952 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1953 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -989,10 +989,10 @@ Carr1953 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -1000,7 +1000,7 @@ Carr1953 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1954 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1010,10 +1010,10 @@ Carr1954 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -1021,7 +1021,7 @@ Carr1954 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1955 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1030,10 +1030,10 @@ Carr1955 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -1041,7 +1041,7 @@ Carr1955 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1956 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1050,10 +1050,10 @@ Carr1956 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -1061,20 +1061,20 @@ Carr1956 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1957 (XYAXIS) {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
-  z = 1/(pixel-sin(1/pixel)-tan(1/pixel)) 
-  c = 1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
+  z = 1/(pixel-sin(1/pixel)-tan(1/pixel))
+  c = 1/(pixel-conj(1/pixel)-flip(1/pixel))
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c)*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -1082,20 +1082,20 @@ Carr1957 (XYAXIS) {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z|<=b1)*test1) || ((|n|>=b2)*(1-test1))
   ;SOURCE: 42carr.frm
 }
- 
-Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],  
+
+Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],
    ; Revised for compatability with Fractint v. 19.3 4/12/96
    ; Version of this formula in original 42carr.frm should be deleted.
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
-  z = 1/(pixel-sin(1/pixel)-tan(1/pixel)) 
-  c = 1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
+  z = 1/(pixel-sin(1/pixel)-tan(1/pixel))
+  c = 1/(pixel-conj(1/pixel)-flip(1/pixel))
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c+(-0.7456,0.2))*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -1103,19 +1103,19 @@ Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],
   ((|z|<=b1)*test1) || ((|n|>=b2)*(1-test1))
   ;SOURCE: 42carr.frm
 }
- 
-Carr1959 {; Modified Sylvie Gallet frm. [101324,3444], REVISED 4/12/96 
+
+Carr1959 {; Modified Sylvie Gallet frm. [101324,3444], REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
   z=pixel, c =pixel
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter>limit*(1/-pixel)), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter>limit*(1/-pixel)), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c)*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -1123,7 +1123,7 @@ Carr1959 {; Modified Sylvie Gallet frm. [101324,3444], REVISED 4/12/96
   ((|z|<=b1)*test1) || ((|n|>=b2)*(1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1960 {; Modified Sylvie Gallet Frm.
   z= c=1/(pixel-conj(1/pixel)-flip(1/pixel))
   compt=0, limit=real(p1), bailout=4
@@ -1135,7 +1135,7 @@ Carr1960 {; Modified Sylvie Gallet Frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1961 {; Modified Sylvie Gallet frm.
   z=1/(pixel-conj(1/pixel)-flip(1/pixel)), c=(-0.63,0.4)
   compt=0, limit=real(p1), bailout=4
@@ -1147,7 +1147,7 @@ Carr1961 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1962 {; Modified Sylvie Gallet frm.
   z =imag(pixel), c =tan(pixel)+sin(pixel)-1/pixel
   compt=0, limit=real(p1), bailout=4
@@ -1159,7 +1159,7 @@ Carr1962 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1963 {; Modified Sylvie Gallet frm.
   z= c =pixel-1/log(1/pixel)
   compt=0, limit=real(p1), bailout=4
@@ -1171,7 +1171,7 @@ Carr1963 {; Modified Sylvie Gallet frm.
   |real(z)|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1964 {; Modified Sylvie Gallet frm.
   z= c =pixel-1/sqrt(cos(1/pixel))
   compt=0, limit=real(p1), bailout=4
@@ -1183,7 +1183,7 @@ Carr1964 {; Modified Sylvie Gallet frm.
   |real(z)|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1965 {; Modified Sylvie Gallet frm.
   z= c =pixel
   compt=0, limit=real(p1), bailout=4
@@ -1195,7 +1195,7 @@ Carr1965 {; Modified Sylvie Gallet frm.
   |real(z)|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1966 {; Modified Sylvie Gallet frm.
   z= c =pixel
   compt=0, limit=real(p1), bailout=4
@@ -1207,7 +1207,7 @@ Carr1966 {; Modified Sylvie Gallet frm.
   |real(z)|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1967 {; Modified Sylvie Gallet frm.
   z=c=pixel
   compt=0, limit=real(p1), bailout=4
@@ -1219,9 +1219,9 @@ Carr1967 {; Modified Sylvie Gallet frm.
   |real(1-z)|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1969 {; Modified Sylvie Gallet frm.
-  z=c=pixel+(-0.743380900000982,-0.131850030300002) 
+  z=c=pixel+(-0.743380900000982,-0.131850030300002)
   compt=0, limit=real(p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -1231,9 +1231,9 @@ Carr1969 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1970 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(1.5/p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -1243,9 +1243,9 @@ Carr1970 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1971 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -1255,9 +1255,9 @@ Carr1971 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1972 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=sqrt(p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -1267,7 +1267,7 @@ Carr1972 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1973 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1276,18 +1276,18 @@ Carr1973 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = abs(p1/pixel)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
-  z = (z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1974 {; Modified Sylvie Gallet frm.
   c=z=pixel, d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/5)), bailout=4
@@ -1299,9 +1299,9 @@ Carr1974 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1975 {; Modified Sylvie Gallet frm.
-  z=exp(pixel), c=1+flip(imag(pixel))+conj(1/pixel) 
+  z=exp(pixel), c=1+flip(imag(pixel))+conj(1/pixel)
   d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/10)), bailout=4.9
   p=(-0.743380900000982,-0.131850030300002):
@@ -1312,7 +1312,7 @@ Carr1975 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1976 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1322,18 +1322,18 @@ Carr1976 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter=1, rad=6, center=(1.0,0.1)
   pix=exp(10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn=(center+rad/(pix-center)), limit=real(p1/(tan(1/pixel)))
-  test0=1, b1=16, b2=0.0001, test3=0: 
+  test0=1, b1=16, b2=0.0001, test3=0:
   test1=(iter<limit), test0=1-test0, test2=(iter!=limit)
   z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-10*pixel)/(4*z4 + (z4==0))
-  z=(z2+c)*test1+((z-z1)*(1-test1)) 
+  z=(z2+c)*test1+((z-z1)*(1-test1))
   test3=(test3 || (|z|>b1))
   z=(z*(1-(test3 && test0 && test1)))
   iter=iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1927 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -1344,7 +1344,7 @@ Carr1927 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z-1/pixel|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -1352,7 +1352,7 @@ Carr1927 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr1968 {; Modified Sylvie Gallet frm.
   z=c=pixel
   compt=0, limit=real(p1), bailout=4
@@ -1364,4 +1364,4 @@ Carr1968 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42carr.frm
 }
- 
+

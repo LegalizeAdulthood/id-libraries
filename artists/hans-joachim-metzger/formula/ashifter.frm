@@ -12,4 +12,4 @@ shifter01 {; After shift, switch from z*z to z*z*z
   |z| < test
   ;SOURCE: fract196.frm
 }
- 
+

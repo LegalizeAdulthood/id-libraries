@@ -5,7 +5,7 @@ jenn001 {; Arno Jennen
   |(z^1.12)|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn002 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=pixel+log(pixel-a):
@@ -13,7 +13,7 @@ jenn002 {; Arno Jennen
   |(z^(z+1.12))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn003 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=pixel+log(pixel-a):
@@ -21,7 +21,7 @@ jenn003 {; Arno Jennen
   |(z/(z+1.12))|<=(a*1.75)+(z*a)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn004 {; Arno Jennen
   a=(sin(pixel-1.25)+|sqr(pixel)|)/pixel
   z=exp(pixel^1.1)+log(pixel-(a^2)):
@@ -29,7 +29,7 @@ jenn004 {; Arno Jennen
   |(z/(z+1.12))|<=(a*1.75)+(z*a)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn005 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=pixel+log(pixel-a):
@@ -37,7 +37,7 @@ jenn005 {; Arno Jennen
   |(z^1.12)|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn006 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=pixel+log(pixel-a):
@@ -45,7 +45,7 @@ jenn006 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn007 {; Arno Jennen
          ; Revised for Fractint v20 by G. Martin
   a=(sin(|pixel-1.25|))<pixel
@@ -54,7 +54,7 @@ jenn007 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn008 {; Arno Jennen
   a=(cotanh(pixel-6.47)+|tanh(pixel)|)/pixel
   z=sin(pixel+a)+exp(pixel-a):
@@ -62,7 +62,7 @@ jenn008 {; Arno Jennen
   |(z^1.15)|<=(a*4.33)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn009 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel+8.76)-(cos(pixel*7.79))
@@ -71,7 +71,7 @@ jenn009 {; Arno Jennen
   |(z^(1-a))|<=(a*1.75)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn010 {; Arno Jennen
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel+0.44)-(log(pixel*6.59))
@@ -80,13 +80,13 @@ jenn010 {; Arno Jennen
   |(z^(1-a))|<=(a*1.15)
   ;SOURCE: je090801.frm
 }
- 
+
 jenn11 {; Arno Jennen
   z=(pixel/(|pixel+9.95|)):
   a1=pixel+cosxx(z)
-  a2=(a1+0.20)/pixel 
+  a2=(a1+0.20)/pixel
   z=(|z+pixel|)/(a1+a2)+sin(a2)
   |(z^(9.20-a1))|<=z
   ;SOURCE: je090801.frm
 }
- 
+

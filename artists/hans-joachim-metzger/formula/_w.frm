@@ -1,5 +1,5 @@
 Whatever_04m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -7,9 +7,9 @@ Whatever_04m (XYAXIS) {; Original formula Whatever_the_name
   |z|>=0.05
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_05m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -17,9 +17,9 @@ Whatever_05m {; Original formula Whatever_the_name
   |z|>=0.05
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_06m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -27,43 +27,43 @@ Whatever_06m (XYAXIS) {; Original formula Whatever_the_name
   |z|>=0.05
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_07m  {; Original formula Whatever_the_name
-               ; corrected and modified by 
+               ; corrected and modified by
                ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
   z=fn1(z)*fn2(z)+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_08m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=1/a1
   z=fn1(z)*fn2(z)+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_09m (XYAXIS) {; Original formula Whatever_the_name
-                       ; corrected and modified by 
+                       ; corrected and modified by
                        ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=p1/a1
   z=fn1(z)*fn2(z)+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Whatever_10m {; Original formula Whatever_the_name
-              ; corrected and modified by 
+              ; corrected and modified by
               ; Jo Weber [100424,35], 6/1996
   z = pixel:
   a1=sqr(z), a2=p1/a1
   z=fn1(z)*fn2(z)+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
- 
+
 Zeppo {; Mutation of 'Liar4'.
     ; Original formula by Chuck Ebbert [76306,1226]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -82,10 +82,10 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 Whatever_the_name (XAXIS) {
   z = pixel:
   z=z*z+(1/z*z)+pixel
   ;SOURCE: whatever.frm
 }
- 
+

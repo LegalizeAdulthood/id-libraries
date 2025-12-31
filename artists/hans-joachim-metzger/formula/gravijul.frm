@@ -33,7 +33,7 @@ pd-HC_Grav {; formula by P. DiGiorgi, May, 1998
   bailout == 0 && |w| < 100
   ;SOURCE: 98msg.frm
 }
- 
+
 pd-HC_Grav2 {; formula by P. DiGiorgi, May, 1998
              ; P. Carlson's Hi_Cycle method (modified)
              ; applied to Mark Christenson's Gravijul formula
@@ -69,4 +69,4 @@ pd-HC_Grav2 {; formula by P. DiGiorgi, May, 1998
   bailout == 0 && |w| < 100
   ;SOURCE: 98msg.frm
 }
- 
+

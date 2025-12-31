@@ -4,7 +4,7 @@ Gallet-9-01 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   |z| >= p1
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   z1 = c = pixel, mz1 = cabs(fn2(z1)), k = real(p1)*mz1
   bailout = real(p2), z = imag(p1):
@@ -19,7 +19,7 @@ Gallet-9-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Gallet-9-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -38,7 +38,7 @@ Gallet-9-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -57,7 +57,7 @@ Gallet-9-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-05 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   z1 = c = pixel , r1 = |real(p1)*z1|
   r2 = imag(p1)*imag(p1)
@@ -73,7 +73,7 @@ Gallet-9-05 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Gallet-9-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -92,7 +92,7 @@ Gallet-9-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p1 (must be > 0)
              ; Imag part of p1 must be > 0
@@ -112,7 +112,7 @@ Gallet-9-07 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   z1 = c = pixel, mz1 = cabs(fn2(z1)), k = real(p1)*mz1
   bailout = real(p2), z = imag(p1):
@@ -127,7 +127,7 @@ Gallet-9-02 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Gallet-9-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -146,7 +146,7 @@ Gallet-9-03 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -165,7 +165,7 @@ Gallet-9-04 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -184,7 +184,7 @@ Gallet-9-06 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+
 Gallet-9-08 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
              ; Bailout: real part of p2 (must be > 0)
              ; Real and Imag parts of p1 must be > 0
@@ -203,4 +203,4 @@ Gallet-9-08 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Aug 1997
   mz1 <= bailout
   ;SOURCE: gallet_9.frm
 }
- 
+

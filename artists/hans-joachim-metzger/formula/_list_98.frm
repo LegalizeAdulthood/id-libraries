@@ -6,7 +6,7 @@ gravijul {; r^(-2) Mark Christenson 1/25/98
   |z| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 gravijul4 {; variation of a Mark Christenson frm
   bailout = imag(p3), k = real(p3)
   z = abs(pixel):
@@ -16,4 +16,4 @@ gravijul4 {; variation of a Mark Christenson frm
   |z| < bailout
   ;SOURCE: 98msg.frm
 }
- 
+

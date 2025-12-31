@@ -74,13 +74,13 @@
   z=pixel, x=fn3(pixel)
   y=fn4(pixel)^3.14189
   a=(z^22)+x, b=(z^7)+y:
-  z=(fn1(a^b))+(fn2(b^a+b)) 
+  z=(fn1(a^b))+(fn2(b^a+b))
   |z|<=4
   ;SOURCE: new.frm
 }
 
 
-=03 { 
+=03 {
   z=c=pixel
   x=fn1(z-1/p1)
   y=fn2(x^(z)/p2):
@@ -96,7 +96,7 @@
   x=fn1(tan(z))+pixel
   y=fn2(cotan(z))+(pixel^pixel)
   l=(x^y)^22:
-  z=fn1(x)*fn2(y)*fn3(l) 
+  z=fn1(x)*fn2(y)*fn3(l)
   |z|<4
   ;SOURCE: new.frm
 }

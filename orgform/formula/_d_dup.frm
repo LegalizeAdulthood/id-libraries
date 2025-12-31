@@ -24,13 +24,13 @@ DeepSpaceProbe (XAXIS_NOPARM) {; Jon Osuch
 }
 
 
-DeepSpaceProbe (XAXIS_NOPARM) { 
+DeepSpaceProbe (XAXIS_NOPARM) {
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)+pixel
   z=cos(z)+pixel
   x=x+1
-  |z|<=4 
+  |z|<=4
   ;SOURCE: form1.frm
 }
 
@@ -46,7 +46,7 @@ DeepSpaceProbeC (XAXIS_NOPARM) {
     z=cos(z)+pixel
   ENDIF
   x=x+1
-  |z|<=4 
+  |z|<=4
   ;SOURCE: form1.frm
 }
 

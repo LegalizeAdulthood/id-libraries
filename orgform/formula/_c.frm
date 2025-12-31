@@ -1,9 +1,9 @@
 
 
 C {
-  z=pixel 
+  z=pixel
   c=3.141592653589793:
-  z = log(c*pixel*z) + z 
+  z = log(c*pixel*z) + z
   |z| <= 50
   ;SOURCE: hubert.frm
 }
@@ -1045,7 +1045,7 @@ C03-28 {; V.1.1 - earlier versions may be discarded
   Ty=(fn1(y*(y*y-3)))
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
-  |z|<=bailout  
+  |z|<=bailout
   ;SOURCE: chby28.frm
 }
 
@@ -4272,7 +4272,7 @@ c7manderiv {; Copyright Ben Leighton 1998
   q=pixel, a=1, b=flip(1), last = 0:
   a=a+ fn1(imag(pixel)*10*(1/imag(q)))
   b=b+ fn2(real(pixel)*10*(1/real(q)))
-  q=(q-a-b)^2 + pixel  
+  q=(q-a-b)^2 + pixel
   (a+b) <= 300
   ;SOURCE: 98msg.frm
 }
@@ -6072,7 +6072,7 @@ Ca04-28 {; V.1.1 - earlier versions may be discarded
   Ty=(fn1(b*(c*yy*(d*yy-1)+1)))
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
-  |z|<=bailout    
+  |z|<=bailout
   ;SOURCE: chby28.frm
 }
 
@@ -9852,25 +9852,25 @@ Ca10-30 {; V.1.1.1 - earlier versions may be discarded
 
 Candy {; (c) Jay Hill, 1998
        ; use outside=summ periodicity=0 float=y
-  done = 1, z = 0, zc = 0, c = pixel 
-  t4=8+4*c*(1+sqrt(-4*c-7)) 
+  done = 1, z = 0, zc = 0, c = pixel
+  t4=8+4*c*(1+sqrt(-4*c-7))
   IF (|t4|<=1)
     z=z+128*abs(imag(log((t4+sqrt(4.5)-1))))/pi
-    done=-1 
+    done=-1
   ELSE
     z=z+64
   ENDIF
   :             ; initialization.
-  zc=sqr(zc) + c 
+  zc=sqr(zc) + c
   IF (|zc| >= 4)
-    done=-1 
+    done=-1
   ENDIF
-  done >= 0 
+  done >= 0
   ;SOURCE: 98msg.frm
 }
 
 
-CANON1 {; 12/2/94 a,b,c are modified by fn(), z value is bailout 
+CANON1 {; 12/2/94 a,b,c are modified by fn(), z value is bailout
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)+(a*b*c)
   |z|<=4
@@ -9976,7 +9976,7 @@ cardo {; Giuseppe Zito
   d0 = -0.53239
   d4 = -0.823486
   d6 = 0.0245
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c1
@@ -9989,14 +9989,14 @@ cardo {; Giuseppe Zito
   s2 = x
   s1 = s1 +s2
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 +d4
   s0 = s0 *d6
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10250,11 +10250,11 @@ Celtic_Julia {; Copyright (c) Paul W. Carlson, 1998
 
 
 center_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
-        ; 
+        ;
         ; "circle & line thru center" coloring method for Julia sets
         ; p1 = c = Julia parameter
         ; p2 = x-circle center
@@ -10283,9 +10283,9 @@ center_jul {
 
 
 cenx=-ceny_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
         ;
         ; "2 opposing circles" coloring method for Julia sets
@@ -10316,11 +10316,11 @@ cenx=-ceny_jul {; Kerry Mitchell 26aug98
 
 
 cenx=ceny_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
-        ; 
+        ;
         ; "2 concentric circles" coloring method for Julia sets
         ; p1 = c = Julia parameter
         ; p2 = (both) circle center
@@ -10365,12 +10365,12 @@ cexp3 {; Giuseppe Zito
   d5 = 0.065463
   d8 = -0.626533
   d9 = 0.99893
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c5
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s0 = s0 /d3
@@ -10381,9 +10381,9 @@ cexp3 {; Giuseppe Zito
   s0 = s0 /d9
   s0 = s0 +x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10442,7 +10442,7 @@ chaos {; Giuseppe Zito
   d5 = 0.429136
   d7 = -0.664959
   d13 = -0.773096
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 /y
@@ -10450,7 +10450,7 @@ chaos {; Giuseppe Zito
   s1 = s1 -x
   s0 = s0 +s1
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s1 =d5
@@ -10469,9 +10469,9 @@ chaos {; Giuseppe Zito
   s0 = s0 /y
   s0 = s0 /y
   s0 = s0 +y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10482,8 +10482,8 @@ Chaos12 {; Peter Anders anders@physik.hu-berlin.de
   y=2*xo*yo+cy*xo
   z=x+y*i
   xo=x
-  yo=y           
-  |fn1(z)|<real(p2) 
+  yo=y
+  |fn1(z)|<real(p2)
   ;SOURCE: anders.frm
 }
 
@@ -10595,7 +10595,7 @@ ChaoticDualist4M {
 Chebyshev (XAXIS) {; By Alastair Scott
   z = pixel:
   z = pixel * cos(p1*(1.57059-z*(1+0.16667*z*z+0.075*z*z*z*z+0.44643*z*z*z*z*z*z+0.030309*z*z*z*z*z*z*z*z)))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: elliptic.frm
 }
 
@@ -10603,7 +10603,7 @@ Chebyshev (XAXIS) {; By Alastair Scott
 ChebyshevFN (XAXIS) {; Generalisation by Jon Horner
   z = pixel:
   z = pixel * fn1(p1*(1.57059-z*(1+0.16667*z*z+0.075*z*z*z*z+0.44643*z*z*z*z*z*z+0.030309*z*z*z*z*z*z*z*z)))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: elliptic.frm
 }
 
@@ -10614,7 +10614,7 @@ cheshire {; Giuseppe Zito
   c6 = -0.695646
   d1 = 0.964648
   d3 = -0.73963
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 +x
@@ -10623,14 +10623,14 @@ cheshire {; Giuseppe Zito
   s0 = s0 *c6
   s0 = s0 *x
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 +d1
   s0 = s0 *x
   s0 = s0 +d3
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10666,7 +10666,7 @@ ChZZ (XAXIS) {; Jm Collard-Richard
   z1=cosh(z)-zz
   z2=sinh(z)-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -10678,7 +10678,7 @@ circola {; Giuseppe Zito
   c11 = -0.239036
   c12 = 0.646753
   d8 = -0.646844
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 *c3
@@ -10689,15 +10689,15 @@ circola {; Giuseppe Zito
   s0 = s0 /y
   s0 = s0 +c11
   s0 = s0 +c12
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 /y
   s0 = s0 *x
   s0 = s0 +y
   s0 = s0 *d8
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10721,7 +10721,7 @@ classic-M1 {; Jay Hill, 1998
 classic-shift (XAXIS) {; Jay Hill, 1998
   continue = 1
   z = 0
-  zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq 
+  zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq
   :
   IF (|zc| > 40)
     continue = 0
@@ -10751,7 +10751,7 @@ classic-shift2 (XAXIS) {; Jay Hill, 1998
 classic-shift_ (XAXIS) {; Jay Hill, 1998
   continue = 1
   z = 0
-  zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq 
+  zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq
   :
   IF (|zc| > 40)
     continue = 0
@@ -10768,10 +10768,10 @@ classic_shift {; Jay Hill, 1998
                ; p1 = shift of first midget
                ; p2 = scaling factor of first midget relative to second
                ; p3 = shift of second midget
-               ; use  outside=summ periodicity=0 passes=1float=y 
+               ; use  outside=summ periodicity=0 passes=1float=y
   continue = 1
   z = 0
-  zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq 
+  zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq
   :
   IF (|zc| > 40)
     continue = 0
@@ -10791,10 +10791,10 @@ classic_shift_b {; Jay Hill, 1998
     ; use outside=summ periodicity=0 passes=1float=y
   done = 1, z = 0
   zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) * whitesq
-  s=|c| 
+  s=|c|
   t1=(256*s - 96)*s + 32*Real(c), t2=16*s + 32*Real(c) + 16
-  B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| 
-   z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) 
+  B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)|
+   z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1)
   IF (z>0)         ; for periods 1, 2, 3
     done=-1        ; color is set for c in a component, skip iterations
   ENDIF
@@ -10856,7 +10856,7 @@ clipover (XAXIS) {
   temp = z
   z = -(z^.5) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10867,7 +10867,7 @@ clips (XAXIS) {
   temp = z
   z = -(z^.5) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10882,7 +10882,7 @@ clown {; Giuseppe Zito
   c4 = 0.620626
   c7 = -0.644748
   d0 = 0.135564
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c1
@@ -10891,13 +10891,13 @@ clown {; Giuseppe Zito
   s0 = s0 +c4
   s0 = s0 /c7
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *y
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10947,7 +10947,7 @@ CmplxNewtghost {; Ron Barnett, 1998
 }
 
 
-CN_02_phc_r (XAXIS) {; Jo Weber, 8/1996 
+CN_02_phc_r (XAXIS) {; Jo Weber, 8/1996
    ; p2 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p2-1))
   evenodd = (evenodd == (count == 1))
@@ -10969,7 +10969,7 @@ CnFrc_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; imag(p2) = number of colors in a range
       ; Modified continued fraction formula
       ; This formula uses the Mandelbrot set equation in a modified
-      ; continued fraction, rendered with the Atan method. 
+      ; continued fraction, rendered with the Atan method.
   w = z = iter = range_num = bailout = 0
   c = pixel
   num_ranges = real(p3)
@@ -11002,7 +11002,7 @@ CnFrc_FncJ1_Mset {; by Jay Hill, 1998
                   ; imag(p1) not used
                   ; real(p2) = usually 1
                   ; imag(p2) usually 0
-  z=0, c=pixel 
+  z=0, c=pixel
   :
   k = z * z + c
   z = k - fn1(p2/(k+p2/(k+p2/(k+p2/(k+p2/(k+p2))))))
@@ -11020,7 +11020,7 @@ cnigel (XAXIS) {
   zp3 = zp2
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11032,7 +11032,7 @@ cntr1 (XAXIS) {
   z  = z * zp2 + zp1
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11044,7 +11044,7 @@ cntrpc (XYAXIS) {
   z  = z * zp1 - zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11063,7 +11063,7 @@ coin {; Giuseppe Zito
   c28 = -0.889618
   d0 = -0.111785
   d1 = -0.012423
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 -y
@@ -11087,16 +11087,16 @@ coin {; Giuseppe Zito
   s0 = s0 -x
   s0 = s0 +x
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s0 = s0 *y
   s0 = s0 /x
   s0 = s0 /y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11144,7 +11144,7 @@ Color01i {; New coloring technique #1i - same as #1, does inside too
 }
 
 
-Color05 {; (See formula "dmj-Mand-Pnt-Ang" for an update of this formula) 
+Color05 {; (See formula "dmj-Mand-Pnt-Ang" for an update of this formula)
          ; New coloring technique #5 (angle of closest approach)
          ; might want to turn off periodicity checking
          ; outside = decomp: angle of closest approach to p1
@@ -11185,7 +11185,7 @@ Color05i {; New coloring technique #5 (angle of closest approach)
 }
 
 
-Color11 {; (See formula "dmj-Mand-Cr2-Dec" for an update of this formula)  
+Color11 {; (See formula "dmj-Mand-Cr2-Dec" for an update of this formula)
          ; New coloring technique #11 (ring trap)
          ; outside = decomp: angle at closest approach to ring at p1
          ; p2r: unused
@@ -11235,7 +11235,7 @@ Color12 {; New coloring technique #12 (absolute decomposition)
 }
 
 
-Color13 (XAXIS) {; (See formula "dmj-Mand-Smooth" for an 
+Color13 (XAXIS) {; (See formula "dmj-Mand-Smooth" for an
                  ;  update of this formula)
    ; New coloring technique #13 (continuous color)
    ; outside = real: continuous color
@@ -11247,7 +11247,7 @@ Color13 (XAXIS) {; (See formula "dmj-Mand-Smooth" for an
   IF (real(p2) == 0)
     p2 = 128
   ENDIF
-  z = pixel, c = pixel, done = 0, il2 = 1/log(2.0) 
+  z = pixel, c = pixel, done = 0, il2 = 1/log(2.0)
   lp = log(log(real(p2))):
   z2 = sqr(z)
   z = z2 + c
@@ -11261,7 +11261,7 @@ Color13 (XAXIS) {; (See formula "dmj-Mand-Smooth" for an
 }
 
 
-Color13phc {; (See formula "dmj-Mand-SmoothPHC" for 
+Color13phc {; (See formula "dmj-Mand-SmoothPHC" for
             ;  an update of this formula)
    ; New coloring technique #13 (continuous color, PHC)
    ; outside = real: continuous color
@@ -11277,7 +11277,7 @@ Color13phc {; (See formula "dmj-Mand-SmoothPHC" for
   IF (real(p2) == 0)
     p2 = 128
   ENDIF
-  z = pixel, c = pixel, done = 0 
+  z = pixel, c = pixel, done = 0
   il2 = 1/log(2.0), lp = log(log(real(p2))):
   z2 = sqr(z)
   z = z2 + c
@@ -11296,7 +11296,7 @@ Color13phc {; (See formula "dmj-Mand-SmoothPHC" for
 
 
 Colorit-16JS {; (c) Jay Hill, 1998
-     ; angle=real(p1)+sqrt(imag(p1)) 
+     ; angle=real(p1)+sqrt(imag(p1))
      ; angle= log(Julia parameter)/pi
      ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11312,14 +11312,14 @@ Colorit-2rPanx {; (c) Jay Hill, 1998
                 ; p2 = pan view point
   IF (p1==0)
     p1=1
-  ENDIF 
+  ENDIF
   done = 1, iter=0, z = 0, zc = 0, dz=1
   c = exp(flip(pixel))+p2
   :                 ; initialization.
-  iter = iter+1     ; gotta count em 
+  iter = iter+1     ; gotta count em
   dz=2*zc*dz+1      ; derivative, dz/dc
   zc=sqr(zc) + c    ; standard MSet iteration
-  IF (|zc| >= 1024) ; Bailout 
+  IF (|zc| >= 1024) ; Bailout
     z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
     done=-1         ; Set flag to force an exit.
   ENDIF
@@ -11329,18 +11329,18 @@ Colorit-2rPanx {; (c) Jay Hill, 1998
 
 
 Colorit-3 {; (c) Jay Hill, 1998
-  b=p1                           ; p1=cos(a)+i*sin(a), a=light angle 
+  b=p1                           ; p1=cos(a)+i*sin(a), a=light angle
   IF(p1==0)
     p1=1
   ENDIF
   a=pi*p1/180, b=cos(a)+i*sin(a) ; p1= light angle (deg)
-  done = 1, iter=0, z = 0 
+  done = 1, iter=0, z = 0
   zc = 0, c = pixel, dz=1
   :                              ; initialization.
-  iter = iter+1                  ; gotta count em 
+  iter = iter+1                  ; gotta count em
   dz=3*sqr(zc)*dz+1              ; derivative, dz/dc
   zc=zc*sqr(zc) + c              ; standard MSet iteration
-  IF (|zc| >= 1024)              ; Bailout 
+  IF (|zc| >= 1024)              ; Bailout
     z = z -8 + ((sin(2*pi*iter/256)*Real(b*dz/zc))>0) + iter
     done=-1                      ; Set flag to force an exit.
   ENDIF
@@ -11363,7 +11363,7 @@ Colorit-3f {; (c) Jay Hill, 1998
   iter = iter+1          ; gotta count the iterations
   dz=3*sqr(zc)*dz+1      ; derivative, dz/dc, a slope for shading
   zc=zc*sqr(zc) + c      ; standard MSet cubic iteration  z=z^3+c
-  IF (|zc| >= 1024)      ; Bailout 
+  IF (|zc| >= 1024)      ; Bailout
     z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
     done=-1              ; Set flag to force an exit.
   ENDIF
@@ -11373,7 +11373,7 @@ Colorit-3f {; (c) Jay Hill, 1998
 
 
 Colorit-3fJS {; (c) Jay Hill, 1998
-              ; angle=real(p1)+sqrt(imag(p1)) 
+              ; angle=real(p1)+sqrt(imag(p1))
               ; angle= log(Julia parameter)/pi
               ; when real(p1)=0, Julia is on edge of Period 1 component
   A=(real(p1)+sqrt(imag(p1)))*sqrt(-1)
@@ -11386,7 +11386,7 @@ Colorit-3fJS {; (c) Jay Hill, 1998
 
 
 Colorit-3JS {; three corner Siegel disk (c) Jay Hill, 1998
-    ; angle=real(p1)+sqrt(imag(p1)) 
+    ; angle=real(p1)+sqrt(imag(p1))
     ; angle= log(Julia parameter)/pi
     ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11419,7 +11419,7 @@ Colorit-3r {; (c) Jay Hill, 1998
 
 
 Colorit-4JS {; four corner Siegel disk (c) Jay Hill, 1998
-     ; angle=real(p1)+sqrt(imag(p1)) 
+     ; angle=real(p1)+sqrt(imag(p1))
      ; angle= log(Julia parameter)/pi
      ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11431,7 +11431,7 @@ Colorit-4JS {; four corner Siegel disk (c) Jay Hill, 1998
 
 
 Colorit-5JS {; five corner Siegel disk (c) Jay Hill, 1998
-     ; angle=real(p1)+sqrt(imag(p1)) 
+     ; angle=real(p1)+sqrt(imag(p1))
      ; angle= log(Julia parameter)/pi
      ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11443,7 +11443,7 @@ Colorit-5JS {; five corner Siegel disk (c) Jay Hill, 1998
 
 
 Colorit-6JS {; six corner Siegel disk(c) Jay Hill, 1998
-     ; angle=real(p1)+sqrt(imag(p1)) 
+     ; angle=real(p1)+sqrt(imag(p1))
      ; angle= log(Julia parameter)/pi
      ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11455,7 +11455,7 @@ Colorit-6JS {; six corner Siegel disk(c) Jay Hill, 1998
 
 
 Colorit-8JS {; eight corner Siegel disk (c) Jay Hill, 1998
-     ; angle=real(p1)+sqrt(imag(p1)) 
+     ; angle=real(p1)+sqrt(imag(p1))
      ; angle= log(Julia parameter)/pi
      ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11467,8 +11467,8 @@ Colorit-8JS {; eight corner Siegel disk (c) Jay Hill, 1998
 
 
 Colorit-nJS {; n corner Siegel disk (c) Jay Hill, 1998
-  n=(real(p2)) ; z:=z^n+c 
-               ; angle=real(p1)+sqrt(imag(p1)) 
+  n=(real(p2)) ; z:=z^n+c
+               ; angle=real(p1)+sqrt(imag(p1))
                ; angle= log(Julia parameter)/pi
                ; when real(p1)=0, Julia is on edge of Period 1 component
   A=i*real(p1)+sqrt(-imag(p1))
@@ -11483,10 +11483,10 @@ Colorit-nJS {; n corner Siegel disk (c) Jay Hill, 1998
 Colorit2cove {; (c) Jay Hill, 1998
   done = 1, iter=0, z = 0, zc = 0, c = pixel, dz=1
   :                                   ; initialization.
-  iter = iter+1                       ; gotta count em 
+  iter = iter+1                       ; gotta count em
   dz=2*zc*dz+1                        ; derivative of z
   zc=sqr(zc) + c                      ; standard MSet iteration
-  IF (|zc| >= 1024)                   ; Bailout 
+  IF (|zc| >= 1024)                   ; Bailout
     z = z -8 + ((sin(2*pi*iter/256)*Real(dz/zc))>0) + iter
     done=-1                           ; Set flag to force an exit.
   ENDIF
@@ -11496,8 +11496,8 @@ Colorit2cove {; (c) Jay Hill, 1998
 
 
 ColoritC {; (c) Jay Hill, 1998
-          ; use outside=summ periodicity=0 
-  done = 1, z = 0, zc = 0, c = pixel, s=|c| 
+          ; use outside=summ periodicity=0
+  done = 1, z = 0, zc = 0, c = pixel, s=|c|
   t1=(256*s - 96)*s + 32*Real(c), t2=16*s + 32*Real(c) + 16
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)|
   z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1)
@@ -11591,8 +11591,8 @@ ComplexNewton_01 {; Jon Horner (ex-CAL) [ not sure about this one ]
 }
 
 
-ComplexNewton_02 (XAXIS) {; Jon Horner 
-                          ; modified by Jo Weber, 6/1996 
+ComplexNewton_02 (XAXIS) {; Jon Horner
+                          ; modified by Jo Weber, 6/1996
   pm1 = p1-1.51,  z = pixel :
   oldz = z
   z = (pm1*(z^p1) +1)/(p1 * z^pm1)
@@ -11601,8 +11601,8 @@ ComplexNewton_02 (XAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_02a (YAXIS) {; Jon Horner 
-                           ; modified by Jo Weber, 6/1996 
+ComplexNewton_02a (YAXIS) {; Jon Horner
+                           ; modified by Jo Weber, 6/1996
   pm1 = p1-1.51,  z = pixel :
   oldz = z
   z = (pm1*(z^p1) +1)/(p1 * z^pm1)
@@ -11611,8 +11611,8 @@ ComplexNewton_02a (YAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_03 (XAXIS) {; Jon Horner 
-                          ; modified by Jo Weber, 6/1996 
+ComplexNewton_03 (XAXIS) {; Jon Horner
+                          ; modified by Jo Weber, 6/1996
   pm1 = p1-2,  pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11621,8 +11621,8 @@ ComplexNewton_03 (XAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_03a (YAXIS) {; Jon Horner 
-                           ; modified by Jo Weber, 6/1996 
+ComplexNewton_03a (YAXIS) {; Jon Horner
+                           ; modified by Jo Weber, 6/1996
   pm1 = p1-2,  pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11631,8 +11631,8 @@ ComplexNewton_03a (YAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_04 (XAXIS) {; Jon Horner 
-                          ; modified by Jo Weber, 6/1996 
+ComplexNewton_04 (XAXIS) {; Jon Horner
+                          ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5,  pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11641,8 +11641,8 @@ ComplexNewton_04 (XAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_04a (YAXIS) {; Jon Horner 
-                           ; modified by Jo Weber, 6/1996 
+ComplexNewton_04a (YAXIS) {; Jon Horner
+                           ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5,  pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11651,8 +11651,8 @@ ComplexNewton_04a (YAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_05 (XAXIS) {; Jon Horner 
-                          ; modified by Jo Weber, 6/1996 
+ComplexNewton_05 (XAXIS) {; Jon Horner
+                          ; modified by Jo Weber, 6/1996
   pm1 = p1-1,  z = pixel :
   oldz = z
   z = (pm1*(z^p1) +1)/(p1 * z^pm1)
@@ -11661,8 +11661,8 @@ ComplexNewton_05 (XAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_05a (YAXIS) {; Jon Horner 
-                           ; modified by Jo Weber, 6/1996 
+ComplexNewton_05a (YAXIS) {; Jon Horner
+                           ; modified by Jo Weber, 6/1996
   pm1 = p1-1,  z = pixel :
   oldz = z
   z = (pm1*(z^p1) +1)/(p1 * z^pm1)
@@ -11671,8 +11671,8 @@ ComplexNewton_05a (YAXIS) {; Jon Horner
 }
 
 
-ComplexNewton_06 {; Jon Horner 
-                  ; modified by Jo Weber, 6/1996 
+ComplexNewton_06 {; Jon Horner
+                  ; modified by Jo Weber, 6/1996
   pm1 = p1-1.51, z = pixel :
   oldz = z
   z = (pm1*(z^p1) +1)/(p1 * z^pm1)
@@ -11681,8 +11681,8 @@ ComplexNewton_06 {; Jon Horner
 }
 
 
-ComplexNewton_07 {; Jon Horner 
-                  ; modified by Jo Weber, 6/1996 
+ComplexNewton_07 {; Jon Horner
+                  ; modified by Jo Weber, 6/1996
   pm1 = p1-2, pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11691,8 +11691,8 @@ ComplexNewton_07 {; Jon Horner
 }
 
 
-ComplexNewton_08 {; Jon Horner 
-                  ; modified by Jo Weber, 6/1996 
+ComplexNewton_08 {; Jon Horner
+                  ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5, pm2=p1-1, z = pixel :
   oldz = z
   z = (pm2*(z^p1) +1)/(p1 * z^pm1)
@@ -11701,9 +11701,9 @@ ComplexNewton_08 {; Jon Horner
 }
 
 
-ComplexNewton_09 {; Jon Horner 
+ComplexNewton_09 {; Jon Horner
                   ; modified by Jo Weber, 6/1996
-                  ; requires float=yes                      
+                  ; requires float=yes
   pm1 = p1-1.5, pm2=p1-1, z = pixel :
   oldz = z
   z = fn1((pm2*(z^p1) +1)/(p1 * z^pm1))
@@ -11712,7 +11712,7 @@ ComplexNewton_09 {; Jon Horner
 }
 
 
-ComplexNewton_10 {; Jon Horner 
+ComplexNewton_10 {; Jon Horner
                   ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5, pm2=p1-1, z = pixel :
   oldz = z
@@ -11722,7 +11722,7 @@ ComplexNewton_10 {; Jon Horner
 }
 
 
-ComplexNewton_11 {; Jon Horner 
+ComplexNewton_11 {; Jon Horner
                   ; modified by Jo Weber, 6/1996
   pm1 = p1-1.5, pm2=p1-1, z = pixel :
   oldz = z
@@ -11732,8 +11732,8 @@ ComplexNewton_11 {; Jon Horner
 }
 
 
-ComplexNewton_12 {; Jon Horner 
-                  ; modified by Jo Weber, 6/1996 
+ComplexNewton_12 {; Jon Horner
+                  ; modified by Jo Weber, 6/1996
   pm1 = p1-1, z = pixel :
   oldz = z
   z = (pm1*(z^p1) +0.5)/(p1 * z^pm1)
@@ -11748,12 +11748,12 @@ condo {; Giuseppe Zito
   d3 = 0.137632
   d4 = -0.261971
   d5 = 0.473992
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 +x
   s0 = s0 -d3
@@ -11764,9 +11764,9 @@ condo {; Giuseppe Zito
   s0 = s0 /s1
   s0 = s0 /x
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11839,7 +11839,7 @@ conic {; Kerry Mitchell 12may98
   z=cos(t)+flip(sin(t))
   iter>0
 ;******************************************************************
-;    Kerry Mitchell's explanation of his conic formulas 
+;    Kerry Mitchell's explanation of his conic formulas
 ;               (c) Kerry Mitchell, 1998
 ;
 ; Conic Sections
@@ -11857,7 +11857,7 @@ conic {; Kerry Mitchell 12may98
 ; where the parameters A through F determine the shape of the section, and x
 ; and y are the 2 spatial coordinates.  For example, the line y=x can be
 ; represented as
-; 
+;
 ; x - y = 0, or
 ; A = 0, B = 1, C = 0, D = -1, E = 0, F = 0.
 ;
@@ -11947,7 +11947,7 @@ conic {; Kerry Mitchell 12may98
 ;
 ; hyperbola centered at (h,k), semimajor axis alpha, semiminor axis beta,
 ; opening up/down:  (y-k)^2/beta^2 - (x-h)^2/alpha^2 = 1
-; 
+;
 ; coordinate rotation, from (u,v) to (x,y), through an angle theta:
 ; u = x*cos(theta) + y*sin(theta)
 ; v = -x*sin(theta) + y*cos(theta)
@@ -12399,7 +12399,7 @@ conic-near_man {; Kerry Mitchell 12may98
 ConjFlipJul_N {; Jm Collard-Richard
   z=pixel:
   z=conj(flip(z^p2))+p1
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -12407,7 +12407,7 @@ ConjFlipJul_N {; Jm Collard-Richard
 ConjFlipMand_N {; Jm Collard-Richard
   c=z=pixel:
   z=conj(flip(z^p1))+c
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -12432,7 +12432,7 @@ connectc {; Giuseppe Zito
   c12 = 0.378955
   c31 = -0.06281
   c33 = -0.473788
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s1 = y
@@ -12463,11 +12463,11 @@ connectc {; Giuseppe Zito
   s1 =c33
   s0 = s0 *s1
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -12493,7 +12493,7 @@ contest2 (xaxis) {; Kerry Mitchell
 contest3a (xaxis) {; Kerry Mitchell
                    ; starts at one critical point of the function
   c=pixel, z=(c+sqrt(c*(c-3)))/3:
-  z2=sqr(z), z=z*z2+c*(1+z-z2) 
+  z2=sqr(z), z=z*z2+c*(1+z-z2)
   |z| <= 32
   ;SOURCE: 97msg.frm
 }
@@ -12511,7 +12511,7 @@ contest3aa (xaxis) {; Kerry Mitchell
 contest3b (xaxis) {; Kerry Mitchell
                    ; starts at the other critical point of the function
   c=pixel, z=(c-sqrt(c*(c-3)))/3:
-  z2=sqr(z), z=z*z2+c*(1+z-z2) 
+  z2=sqr(z), z=z*z2+c*(1+z-z2)
   |z| <= 32
   ;SOURCE: 97msg.frm
 }
@@ -12618,7 +12618,7 @@ coral_M {
 }
 
 
-Cos1 (XAXIS) {  
+Cos1 (XAXIS) {
   c = z = pixel:
   z = (1-(z^cos(1.1-z))) + c + p1
   |z| <= 4
@@ -12627,9 +12627,9 @@ Cos1 (XAXIS) {
 
 
 Cos1z (XYAXIS) {
-  z = Pixel:  
-  z = cos(1/z) 
-  |z| <= 50 
+  z = Pixel:
+  z = cos(1/z)
+  |z| <= 50
   ;SOURCE: skinv151.frm
 }
 
@@ -12652,10 +12652,10 @@ Cos_Rings_Mset {; Modified version of P. Carlson's Cosh_Rings_Mset
 }
 
 
-CosDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = cos( z ) * pixel  
-  |z| <= b 
+CosDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = cos( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -12770,10 +12770,10 @@ Cosh_Rings_Mset {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-CosHDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = cosh( z ) * pixel 
-  |z| <= b 
+CosHDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = cosh( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -12834,7 +12834,7 @@ CosSinZZ (XAXIS) {; resol. sin(z)^sin(z)=cos(z)^cos(z) Jm Collard-Richard
   z1=ss-cc
   z2=(c+c*log(s))*ss+(s*log(c)+s)*cc
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -12848,7 +12848,7 @@ CosZ1 (XYAXIS) {; Resol. cos(z)^cos(z)=1 Jm Collard-Richard
   z1=cc-1
   z2=(-s*log(c)-s)*cc
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -12859,7 +12859,7 @@ CosZZ (XAXIS) { ; Jm Collard-Richard
   z1=cos(z)-zz
   z2=-sin(z)-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -12919,8 +12919,8 @@ CrazyNewton {; Jim Muth
 
 Crentura (YAXIS) {
   z = c = pixel + p1:
-  z = (1/sqr(z)) * c + pixel 
-  z = fn1(z) * z 
+  z = (1/sqr(z)) * c + pixel
+  z = fn1(z) * z
   |z| < 4
   ;SOURCE: altura.frm
 }
@@ -12928,8 +12928,8 @@ Crentura (YAXIS) {
 
 Crentura_2 (XAXIS) {
   z = c = pixel - 0.5:
-  z = (1/sqr(z)) * z + pixel 
-  z = fn1(z) * c 
+  z = (1/sqr(z)) * z + pixel
+  z = fn1(z) * c
   |z| < 4
   ;SOURCE: altura.frm
 }
@@ -12943,8 +12943,8 @@ Crescent (XAXIS_NOIMAG) {; M-Set to Moonworld
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel + p2 
-  a = log(|p2|)-12 
+  v = pixel + p2
+  a = log(|p2|)-12
   c = sqr(pixel):
   u = v
   v = (u + c/u)/2 + p2
@@ -12957,12 +12957,12 @@ Crescent (XAXIS_NOIMAG) {; M-Set to Moonworld
 Crescent_3 (XAXIS_NOIMAG) {; Generalized version of Crescent
                            ; (c) 1997 Bernd Lehnhoff
                            ; use floating point and periodicity=no!
-                           ; p2 is a perturbation  
+                           ; p2 is a perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
   v = pixel
-  a = log(|p2|)-12: 
+  a = log(|p2|)-12:
   u = v
   v = u-u/3*(1-(pixel/u)^3)+p2
   z = v - u
@@ -12974,13 +12974,13 @@ Crescent_3 (XAXIS_NOIMAG) {; Generalized version of Crescent
 Crescent_General (XAXIS_NOIMAG) {; Generalized version of Crescent
                                  ; (c) 1997 Bernd Lehnhoff
                                  ; use floating point and periodicity=no!
-                                 ; p2 is a perturbation  
+                                 ; p2 is a perturbation
                                  ; p3 is the degree of the root
   IF(p2==0)
     p2=0.5
   ENDIF
   v = pixel
-  a = log(|p2|)-12: 
+  a = log(|p2|)-12:
   u = v
   v = u-u/p3*(1-(pixel/u)^p3)+p2
   z = v - u
@@ -12992,7 +12992,7 @@ Crescent_General (XAXIS_NOIMAG) {; Generalized version of Crescent
 Cross {; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel:
   z = cos(z) + pixel
-  z = z + sqr(pixel) 
+  z = z + sqr(pixel)
   |z| <= 42
   ;SOURCE: hubert.frm
 }
@@ -13014,7 +13014,7 @@ crown (XAXIS) {
   z = z*zp2 - zp1
   zp2 = zp1^.5
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -13070,10 +13070,10 @@ crystal_M {
 
 
 cshell1 {; Giuseppe Zito c1=0.357057
-  z=pixel, c1 = 0.357057 
+  z=pixel, c1 = 0.357057
   :
   x = real(z), y = imag(z)
-  newx = x*x + c1*x -y 
+  newx = x*x + c1*x -y
   newy = x + y
   z = newx + flip(newy)
   |z|<4
@@ -13087,7 +13087,7 @@ CshZZ (XAXIS) {; Jm Collard-Richard
   z1=cos(z)-sinh(z)-zz
   z2=-sin(z)-cosh(z)-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -13143,7 +13143,7 @@ CSZZ (XAXIS) {; resol. cos(sin(z))=z^z     Jm Collard-Richard
   z1=cos(s)-zz
   z2=-c*sin(s)-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -13298,7 +13298,7 @@ CubicMandelbrotBP {
 Curfew {
   z = 0, c = pixel:
   z = z + c + p1
-  z = z * fn1((1/c)/(1/z)) 
+  z = z * fn1((1/c)/(1/z))
   |z| < 4
   ;SOURCE: korfu.frm
 }

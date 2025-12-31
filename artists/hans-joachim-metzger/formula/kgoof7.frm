@@ -6,4 +6,4 @@ oof7 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof7.frm
 }
- 
+

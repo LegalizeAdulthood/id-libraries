@@ -327,7 +327,7 @@ z=(z^x+c)*(cx+z)-p1
 mand2_fnpixexp {
 ;p2 is the pixel exponent (default=2)
 ;p3 is the bailout (default=4)
-;try p1=1 p2=2 to 8 fn=sin 
+;try p1=1 p2=2 to 8 fn=sin
 b=p3,b=b+(b==0)*4
 x=p2,x=x+(x==0)*2
 z=c=fn1(pixel^x):

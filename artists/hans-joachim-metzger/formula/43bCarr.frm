@@ -18,7 +18,7 @@ Carr3162 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3163 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -39,7 +39,7 @@ Carr3163 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3164 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Some optimizations made by G. Martin
@@ -60,7 +60,7 @@ Carr3164 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3165 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -80,7 +80,7 @@ Carr3165 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3166 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -100,7 +100,7 @@ Carr3166 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3167 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -121,7 +121,7 @@ Carr3167 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3168 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -142,7 +142,7 @@ Carr3168 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3169 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -162,7 +162,7 @@ Carr3169 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3170 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -182,7 +182,7 @@ Carr3170 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3171 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -202,7 +202,7 @@ Carr3171 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3172 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -222,7 +222,7 @@ Carr3172 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3173 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -242,7 +242,7 @@ Carr3173 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3174 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -263,7 +263,7 @@ Carr3174 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3175 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -285,7 +285,7 @@ Carr3175 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3176 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -307,7 +307,7 @@ Carr3176 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3177 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -329,7 +329,7 @@ Carr3177 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3178 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -350,7 +350,7 @@ Carr3178 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3179 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -372,7 +372,7 @@ Carr3179 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3180 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -394,7 +394,7 @@ Carr3180 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3181 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -416,7 +416,7 @@ Carr3181 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3182 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -437,7 +437,7 @@ Carr3182 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3183 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -459,7 +459,7 @@ Carr3183 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3184 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -482,7 +482,7 @@ Carr3184 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3185 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -504,7 +504,7 @@ Carr3185 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3186 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -525,7 +525,7 @@ Carr3186 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3187 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -544,7 +544,7 @@ Carr3187 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3188 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -563,7 +563,7 @@ Carr3188 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3189 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Some optimizations made by G. Martin
@@ -583,7 +583,7 @@ Carr3189 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3190 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -602,7 +602,7 @@ Carr3190 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3191 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -623,10 +623,10 @@ Carr3191 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
   cabs(|z|)<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
-Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996 
+
+Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
-		  ; Rewritten for if..else by George Martin 
+		  ; Rewritten for if..else by George Martin
 		  ; and Sylvie Gallet, 8/1/97
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -662,7 +662,7 @@ Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3193 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -683,7 +683,7 @@ Carr3193 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
   cabs(|z|)<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3194 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -703,7 +703,7 @@ Carr3194 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
   cabs(|z|)<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+
 Carr3195 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
 		  ; Rewritten for if..else by Sylvie Gallet 8/18/97
@@ -739,7 +739,7 @@ Carr3195 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
    |z| <= bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3196 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
@@ -759,4 +759,4 @@ Carr3196 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
   (|z|)<=bailout
   ;SOURCE: 43bcarr.frm
 }
- 
+

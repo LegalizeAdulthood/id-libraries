@@ -11,7 +11,7 @@ Rollo_1 {
   |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_2 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
@@ -25,7 +25,7 @@ Rollo_2 {
   |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_3 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
@@ -37,7 +37,7 @@ Rollo_3 {
   |z| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_4 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
@@ -51,7 +51,7 @@ Rollo_4 {
   (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_5 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
@@ -62,35 +62,35 @@ Rollo_5 {
   q =  fn2(z) - zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_7 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
   z = pixel, zp = p2
   a = (whitesq == 1), b = (whitesq == 0):
-  temp = z 
-  r = fn1(z)^e + zp 
-  q = fn2(z)^pi + zp 
+  temp = z
+  r = fn1(z)^e + zp
+  q = fn2(z)^pi + zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+
 Rollo_6 {
    ; These formulae, except Rollo_3, are PHC variations on Noel Giffins
    ; formulae. The formulae used can be found in Noel.frm
   z = pixel, zp = p1
   a = (whitesq == 1), b = (whitesq == 0):
-  temp = z 
-  r = fn1(z)^5 + zp 
-  q = fn2(z)^5 + zp 
+  temp = z
+  r = fn1(z)^5 + zp
+  q = fn2(z)^5 + zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
- 
+

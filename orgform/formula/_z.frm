@@ -28,7 +28,7 @@ z3-xw (XYAXIS_NOPARM) {; 1997 by Benno Schmid
 }
 
 
-z3-xy (XYAXIS_NOPARM) {; 1997 by Benno Schmid 
+z3-xy (XYAXIS_NOPARM) {; 1997 by Benno Schmid
                        ; Julia
   z=pixel
   c=p1:
@@ -65,7 +65,7 @@ z3-yz (XYAXIS_NOPARM) {; 1997 by Benno Schmid
 }
 
 
-z3-zw (XYAXIS_NOPARM) {; 1997 by Benno Schmid  
+z3-zw (XYAXIS_NOPARM) {; 1997 by Benno Schmid
                        ; Mandelbrot
                        ; calculates perturbed sets correctly
   z=p1
@@ -112,7 +112,7 @@ z4-yz (YAXIS_NOPARM) {; 1997 by Benno Schmid
 }
 
 
-z4-zw (XAXIS_NOPARM) {; 1997 by Benno Schmid  
+z4-zw (XAXIS_NOPARM) {; 1997 by Benno Schmid
                       ; Mandelbrot
                       ; calculates perturbed sets correctly
   z=p1, c=pixel:
@@ -147,7 +147,7 @@ z^3-2z-5=0 (XAXIS) {; Advanced Fractal Programming in C  - Stevens
 }
 
 
-Z_feigen (XAXIS) {; from the Zexpi with Feigenbaum's # 
+Z_feigen (XAXIS) {; from the Zexpi with Feigenbaum's #
   z = Pixel:
   z = z ^ 4.669201609102990671853 + pixel
   |z| <= 100
@@ -155,7 +155,7 @@ Z_feigen (XAXIS) {; from the Zexpi with Feigenbaum's #
 }
 
 
-Z_feigena (XAXIS) {; from the Zexpi with Feigenbaum's Alpha 
+Z_feigena (XAXIS) {; from the Zexpi with Feigenbaum's Alpha
   z = Pixel:
   z = z ^ 2.502907875095 + pixel
   |z| <= 100
@@ -171,7 +171,7 @@ Z_mt1 (XAXIS) {; Revised for Fractint v20 by G. Martin
 }
 
 
-Z_mt2 (XAXIS) {; Revised for Fractint v20 by G. Martin 
+Z_mt2 (XAXIS) {; Revised for Fractint v20 by G. Martin
   z = pixel:
   z = z ^ 3 + pixel
   |z| <= 100
@@ -190,7 +190,7 @@ ZAAR_1 (XAXIS) {
 ZAAR_2 {
   z = 0:
   z = sin((z + pixel) - c/3)
-  z = p1 + (z + z) 
+  z = p1 + (z + z)
   z = pixel + z
   ;SOURCE: damion.frm
 }
@@ -199,7 +199,7 @@ ZAAR_2 {
 ZAAR_3 (XAXIS) {
   z = 0:
   z = fn1(z + z * z ) + p1
-  z = (z * z) / (z + c) 
+  z = (z * z) / (z + c)
   z = pixel + z
   ;SOURCE: damion.frm
 }
@@ -214,31 +214,31 @@ ZAAR_4 {
 }
 
 
-Zack (XAXIS) {; Edited for Fractint v. 20 by George Martin, 10/98 
+Zack (XAXIS) {; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel
   r = rand:
-  z = (fn1(pixel) + sin(z)) / (sqr(z)) 
+  z = (fn1(pixel) + sin(z)) / (sqr(z))
   |z| <= 42
   ;SOURCE: hubert.frm
 }
 
 
 zapfl2 (XAXIS) {
-  z=pixel: 
+  z=pixel:
   z=(z*z+pixel)/z
   ;SOURCE: ratz.frm
 }
 
 
 zapfl2j (XAXIS) {
-  z=pixel: 
+  z=pixel:
   z=(z*z+p2)/z
   ;SOURCE: ratz.frm
 }
 
 
 zapfl3 (XAXIS) {
-  z=pixel: 
+  z=pixel:
   z=(pixel+z*z*z)/(z*z)
   |z|<=100
   ;SOURCE: ratz.frm
@@ -246,21 +246,21 @@ zapfl3 (XAXIS) {
 
 
 zapfl3jp1 {
-  z=pixel: 
+  z=pixel:
   z=(z*z*z+p1)/(z*z)
   ;SOURCE: ratz.frm
 }
 
 
 zapfl4p12 {
-  z=pixel: 
+  z=pixel:
   z=(z*z*z*z+(pixel*p1))/(z*z*z*p2)
   |z|<=4
   ;SOURCE: ratz.frm
 }
 
 
-zappa-1 {; by Miguel Fliguer 
+zappa-1 {; by Miguel Fliguer
   z=c=pixel:
   x=z*pixel+c
   y=c*pixel+z
@@ -278,7 +278,7 @@ Ze2 (XAXIS) {
   s1 = exp(1.,0.)
   s = s1 * s1
   z = Pixel:
-  z = z ^ s + pixel 
+  z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: skinner.frm
 }
@@ -335,12 +335,12 @@ zeta {; Riemann Zeta function approximation.
   IF(real(z)<=-1)
     z=2^(z + 1/2)*exp(z - 1)*3.14159265359^(z - 1/2)        \
         *(-(139/(51840*(1 - z)^3)) - 571/(2488320*(1 - z)^4)\
-        + 1/(288*(1 - z)^2)                                 \ 
-        + 1 + 1/(12*(1 - z)))*(1/3*2^(-(3*(1 - z))          \ 
+        + 1/(288*(1 - z)^2)                                 \
+        + 1 + 1/(12*(1 - z)))*(1/3*2^(-(3*(1 - z))          \
         - 5)*5^(z - 2)*(1 - z) +2^(z - 1) + 3^(z - 1)       \
-        + 4^(z - 1) +2^(-(3*(1 - z)) - 1)*5^(z - 1)         \ 
-        + 5^(z - 1) +6^(z - 1) + 7^(z - 1) + 8^(z - 1)      \ 
-        + 9^(z - 1) +10^(z - 1) + 11^(z - 1) + 12^(z - 1)   \ 
+        + 4^(z - 1) +2^(-(3*(1 - z)) - 1)*5^(z - 1)         \
+        + 5^(z - 1) +6^(z - 1) + 7^(z - 1) + 8^(z - 1)      \
+        + 9^(z - 1) +10^(z - 1) + 11^(z - 1) + 12^(z - 1)   \
         + 13^(z - 1) +14^(z - 1) + 15^(z - 1) + 16^(z - 1)  \
         + 17^(z - 1) +18^(z - 1) + 19^(z - 1) + 20^(z - 1)  \
         + 21^(z - 1) +22^(z - 1) + 23^(z - 1) + 24^(z - 1)  \
@@ -358,7 +358,7 @@ zeta {; Riemann Zeta function approximation.
         + 24^(-z) +25^(-z) + 26^(-z) + 27^(-z) + 28^(-z)    \
         + 29^(-z) +30^(-z) + 31^(-z) + 32^(-z) + 33^(-z)    \
         + 34^(-z) +35^(-z) + 36^(-z) + 37^(-z) + 38^(-z)    \
-        + 39^(-z) +2^(-(3*z) - 1)/5^z + 40^(1 - z)/(z - 1) + 1 
+        + 39^(-z) +2^(-(3*z) - 1)/5^z + 40^(1 - z)/(z - 1) + 1
   ENDIF
   z=z+c
   |z|<r
@@ -399,18 +399,18 @@ Zexpe2 (XAXIS) {
 }
 
 
-Zexpe_mandel (XAXIS) { 
+Zexpe_mandel (XAXIS) {
   z = Pixel:
   z = z ^ 2 + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: formulas.frm
 }
 
 
 ZexpeJulia (XAXIS) {
-  s = exp(1.,0.) 
+  s = exp(1.,0.)
   z = Pixel:
-  z = (z ^ s) + P1 
+  z = (z ^ s) + P1
   |z| <= 100
   ;SOURCE: skinv151.frm
 }
@@ -425,9 +425,9 @@ Zexpi (XAXIS) {; from the Waite Group Image Lab Zexpe with Pi insteadof e
 
 
 Zexpp (XAXIS) {
-  s = (3.1415926535,0.) 
+  s = (3.1415926535,0.)
   z = Pixel:
-  z = z ^ s + pixel 
+  z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: crocker.frm
 }
@@ -449,7 +449,7 @@ Zexprt2jul (XAXIS) {; Julia form of Zexprt2
 }
 
 
-Zexprt3 (XAXIS) { 
+Zexprt3 (XAXIS) {
   z = pixel:
   z = z ^ 1.732050807569 + pixel
   |z| <= 100
@@ -463,7 +463,7 @@ ZExpZ (xaxis) {; Jm Collard-Richard z=exp(z) z=(0.318..;+/- 1.337)
   z1=z0-z
   z2=z0-1
   z=z-(z1/z2)
-  0.0001<=|z1| 
+  0.0001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -563,7 +563,7 @@ Zing {; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel
   log2 = 2 ^ (pixel*z):
   z = cosh(z+pixel)
-  z = z + log2 
+  z = z + log2
   |z|<= 42
   ;SOURCE: hubert.frm
 }
@@ -599,7 +599,7 @@ zn-xw {; 1997 by Benno Schmid
 }
 
 
-zn-xy {; 1997 by Benno Schmid 
+zn-xy {; 1997 by Benno Schmid
   z=pixel, c=p1:
   z=z^p2+c
   |z| <= 16
@@ -634,7 +634,7 @@ zn-yz {; 1997 by Benno Schmid
 }
 
 
-zn-zw {; 1997 by Benno Schmid 
+zn-zw {; 1997 by Benno Schmid
   z=p1
   c=pixel:
   z=z^p2+c
@@ -665,17 +665,17 @@ Zppchco8 {
 }
 
 
-Zurreal { 
+Zurreal {
   z = pixel:
   z = fn1(z) + pixel
-  z = fn2(1/sqr(z))/z + p1 
+  z = fn2(1/sqr(z))/z + p1
   |z| <= 4
   ;SOURCE: surreal.frm
 }
 
 
 zwiebelp1 (ORIGIN) {
-  z=pixel: 
+  z=pixel:
   z=(z/imag(z)+p1*z*real(z))*conj(z)+pixel
   |z|<=4
   ;SOURCE: fkt.frm
@@ -683,7 +683,7 @@ zwiebelp1 (ORIGIN) {
 
 
 zwjebelp1c {
-  z=pixel: 
+  z=pixel:
   z=(z/imag(z)+p1*z*real(z))*conj(z)+p2
   |z|<=4
   ;SOURCE: fkt.frm
@@ -782,7 +782,7 @@ ZZINVCHZ (Xaxis) {; Jm Collard-Richard   - Use Float=Yes
   z1=zz-(1/ch)
   z2=(log(z)+1)*zz+(sh/(ch*ch))
   z=z-(z1/z2)
-  0.001<=|z1|  
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -796,7 +796,7 @@ ZZINVCZ (Xaxis) {; Jm Collard-Richard    -  Use  Float=Yes
   z1=zz-(1/c)
   z2=(log(z)+1)*zz-(s/(c*c))
   z=z-(z1/z2)
-  0.001<=|z1|  
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -833,7 +833,7 @@ zzz (XAXIS) {
   temp = z
   z = z^zp1 - zp2
   zp2 = zp1
-  zp1 = 1/temp 
+  zp1 = 1/temp
   |zp1| <= 4
   ;SOURCE: noel.frm
 }
@@ -848,7 +848,7 @@ ZZZZ1 (xaxis) {; Jm Collard-Richard      -- Use Float=Yes
   z1=zz-zz1-1
   z2=(l+1)*zz-(l+(z+1/z))*zz1
   z=z-(z1/z2)
-  0.001<=|z1|   
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 

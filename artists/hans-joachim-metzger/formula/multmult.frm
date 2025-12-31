@@ -7,4 +7,4 @@ multirot03-XZ-YW {; Jim Muth
   |z| <= 36
   ;SOURCE: 99msg.frm
 }
- 
+

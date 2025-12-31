@@ -1,6 +1,6 @@
 
 
-test (xyaxis) {; =phi 
+test (xyaxis) {; =phi
   z = ((sqrt(5) + 1)/2)/pixel:
   z =  z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
@@ -8,11 +8,11 @@ test (xyaxis) {; =phi
 }
 
 
-test { 
-  z = 0, c=pixel: 
-  z = sqr(z)+c 
-  c=c+p1/z 
-  |z| <= 4 
+test {
+  z = 0, c=pixel:
+  z = sqr(z)+c
+  c=c+p1/z
+  |z| <= 4
   ;SOURCE: quad.frm
 }
 
@@ -61,7 +61,7 @@ test2 {; Michael Theroux [71673,2767]
 }
 
 
-test3 (xyaxis) {; =phi 
+test3 (xyaxis) {; =phi
   z = ((sqrt(5) + 1)/2)/pixel:
   z =  z*z + pixel*((sqrt(5) + 1)/2)/((sqrt(5) - 1)/2)
   |z| <= 4
@@ -70,7 +70,7 @@ test3 (xyaxis) {; =phi
 
 
 TestSinMandC (XAXIS_NOPARM) {; Jon Osuch
-                             ; Try: p1=4, fn1=sin, fn2=sqr    
+                             ; Try: p1=4, fn1=sin, fn2=sqr
                              ; Rewritten for Fractint v. 20 by
                              ; George Martin, 10/98
   z  = p1
@@ -130,10 +130,10 @@ TjerDragon (ORIGIN) {; Mark Peterson
 }
 
 
-Tobey3 (XAXIS) { 
-  z=Pixel, c=Pixel-sqr(z): 
-  c=Pixel+c/z, z=c-z*pixel 
-  |z|<4 
+Tobey3 (XAXIS) {
+  z=Pixel, c=Pixel-sqr(z):
+  c=Pixel+c/z, z=c-z*pixel
+  |z|<4
   ;SOURCE: newform.frm
 }
 

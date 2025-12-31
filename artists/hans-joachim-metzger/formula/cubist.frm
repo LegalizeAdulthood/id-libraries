@@ -7,7 +7,7 @@ Block {
   round(z) < 4
   ;SOURCE: cubist.frm
 }
- 
+
 Block_2 {
   z = c = pixel:
   r = fn1(z) / floor(c)
@@ -17,7 +17,7 @@ Block_2 {
   round(z) < 4
   ;SOURCE: cubist.frm
 }
- 
+
 Block_3 {
   z = c = pixel:
   r = fn2(z) + p1
@@ -26,7 +26,7 @@ Block_3 {
   ceil(z) < 4
   ;SOURCE: cubist.frm
 }
- 
+
 Block_4 {
   z = c = pixel:
   r = tan(1/z) + p1
@@ -35,4 +35,4 @@ Block_4 {
   round(z) < 4
   ;SOURCE: cubist.frm
 }
- 
+

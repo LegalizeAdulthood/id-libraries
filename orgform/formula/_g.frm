@@ -1,18 +1,18 @@
 
 
 G-1-test002 {; Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
-  c = z = pixel, x = real(z), y = imag(z) 
-  x1 = x - p2*fn1(y+p3*fn2(y)) 
+  c = z = pixel, x = real(z), y = imag(z)
+  x1 = x - p2*fn1(y+p3*fn2(y))
   coracao=x1+flip(y1)
   y1 = y - p2*fn1(x+p3*fn2(x))
   z1 = c1 = 1.5*z, z2 = c2 = fn3(coracao)
-  l1 = real(p1), l2 = imag(p1) 
+  l1 = real(p1), l2 = imag(p1)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  z = z*(1-(t1||t2)) + z1*t1 + z2*t2 
-  c = c*(1-(t1||t2)) + c1*t1 + c2*t2 
+  t1 = (iter==l1), t2 = (iter==l2)
+  z = z*(1-(t1||t2)) + z1*t1 + z2*t2
+  c = c*(1-(t1||t2)) + c1*t1 + c2*t2
   z = z*z+c
   iter = iter+1
   |z| <= bailout
@@ -21,17 +21,17 @@ G-1-test002 {; Sylvie Gallet [101324,3444], 1996
 
 
 G-1-test005 {; Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel, x = real(z), y = imag(z)
   x1 = x - p2*fn1(y*y+p3*fn2(y)), coracao=x1+flip(y1)
   y1 = y - p2*fn1(x*x+p3*fn2(x))
   z1 = c1 = 1.5*z, z2 = c2 = fn3(coracao)
-  l1 = real(p1), l2 = imag(p1) 
+  l1 = real(p1), l2 = imag(p1)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  z = z*(1-(t1||t2)) + z1*t1 + z2*t2 
-  c = c*(1-(t1||t2)) + c1*t1 + c2*t2 
+  t1 = (iter==l1), t2 = (iter==l2)
+  z = z*(1-(t1||t2)) + z1*t1 + z2*t2
+  c = c*(1-(t1||t2)) + c1*t1 + c2*t2
   z = z*z+c
   iter = iter+1
   |z| <= bailout
@@ -40,17 +40,17 @@ G-1-test005 {; Sylvie Gallet [101324,3444], 1996
 
 
 G-1-test006 {; Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
-  c = z = pixel, x = real(z), y = imag(z) 
+  c = z = pixel, x = real(z), y = imag(z)
   x1 = x - p2*fn1(y*y+p3*fn2(y)), coracao=x1+flip(y1)
   y1 = y - p2*fn1(x*x+p3*fn2(x))
   z1 = c1 = 1.5*z, z2 = c2 = fn3((coracao)*pixel)
-  l1 = real(p1), l2 = imag(p1) 
+  l1 = real(p1), l2 = imag(p1)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  z = z*(1-(t1||t2)) + z1*t1 + z2*t2 
-  c = c*(1-(t1||t2)) + c1*t1 + c2*t2 
+  t1 = (iter==l1), t2 = (iter==l2)
+  z = z*(1-(t1||t2)) + z1*t1 + z2*t2
+  c = c*(1-(t1||t2)) + c1*t1 + c2*t2
   z = z*z+c
   iter = iter+1
   |z| <= bailout
@@ -59,17 +59,17 @@ G-1-test006 {; Sylvie Gallet [101324,3444], 1996
 
 
 G-1-test007 {; Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel, x = real(z), y = imag(z)
   x1 = x - p2*fn1(y*y+p3*fn2(y)), coracao=x1+flip(y1)
   y1 = y - p2*fn1(x*x+p3*fn2(x))
   z1 = c1 = 1.5*z, z2 = c2 = fn3((coracao)/pixel*pixel)
-  l1 = real(p1), l2 = imag(p1) 
+  l1 = real(p1), l2 = imag(p1)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  z = z*(1-(t1||t2)) + z1*t1 + z2*t2 
-  c = c*(1-(t1||t2)) + c1*t1 + c2*t2 
+  t1 = (iter==l1), t2 = (iter==l2)
+  z = z*(1-(t1||t2)) + z1*t1 + z2*t2
+  c = c*(1-(t1||t2)) + c1*t1 + c2*t2
   z = z*z+c
   iter = iter+1
   |z| <= bailout
@@ -78,17 +78,17 @@ G-1-test007 {; Sylvie Gallet [101324,3444], 1996
 
 
 G-1-test017 {; Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Edited for Fractint v20 by G. Martin
   c = z = pixel, x = real(z), y = imag(z)
   x1 = x - p2*fn1(y*y+p3*fn2(y)), coracao=x1+flip(y1)
   y1 = y - p2*fn1(x*x+p3*fn2(x))
   z1 = c1 = atan(fn3((coracao)*pixel))
-  l1 = real(p1), l2 = imag(p1) 
+  l1 = real(p1), l2 = imag(p1)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1) 
-  z = z*(1-(t1)) + z1*t1 
+  t1 = (iter==l1)
+  z = z*(1-(t1)) + z1*t1
   c = c*(1-(t1)) + c1*t1
   z = z*z+c
   iter = iter+1
@@ -393,47 +393,47 @@ Gallet-10-05 {; Modified Paul W. Carlson formula
 
 
 gallet-2-01 {; Sylvie Gallet [101324,3444], 1995
-  c = z = fn1(pixel), fn2c = fn2(c) : 
+  c = z = fn1(pixel), fn2c = fn2(c) :
   z = z*z+fn2c, z = fn1(z*z)*(z+pixel)+fn2c
   |z| <= 100
   ;SOURCE: gallet-2.frm
 }
 
 
-gallet-2-02 {; Sylvie Gallet [101324,3444], 1995 
-  a = pixel, z=a 
+gallet-2-02 {; Sylvie Gallet [101324,3444], 1995
+  a = pixel, z=a
   b = real(pixel), a2 = 3*a*a :
   z = z^3 - a2*z + b
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: gallet-2.frm
 }
 
 
-gallet-2-03 {; Sylvie Gallet [101324,3444], 1995 
-  a = pixel, z = -a 
+gallet-2-03 {; Sylvie Gallet [101324,3444], 1995
+  a = pixel, z = -a
   b = fn1(pixel), a2 = 3*a*a :
   z = z^3 - a2*z + b
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: gallet-2.frm
 }
 
 
-gallet-2-04 (XAXIS) {; Sylvie Gallet [101324,3444], 1995 
+gallet-2-04 (XAXIS) {; Sylvie Gallet [101324,3444], 1995
   a=pixel, z=a, b=0, a2=3*a*a :
   z = z^3 - a2*z + b
   b = b+.01
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: gallet-2.frm
 }
 
 
-gallet-2-05 {; Sylvie Gallet [101324,3444], 1995 
+gallet-2-05 {; Sylvie Gallet [101324,3444], 1995
              ; z -> cos(z^2)+sin(z^3)-1 = 0
              ; solution z = 0
   z = 1/pixel, test = (|z| < 100) :
   z2 = z*z, z3 = z2*z
   z = z-(cos(z2)+sin(z3)-1)/(-2*z*sin(z2)+3*z2*cos(z3))
-  (|z| >= real(p1)) && test  
+  (|z| >= real(p1)) && test
   ;SOURCE: gallet-2.frm
 }
 
@@ -504,11 +504,11 @@ gallet-2-09 {; Sylvie Gallet [101324,3444], 1995
 
 
 gallet-2-10 {; Sylvie Gallet [101324,3444], 1995
-             ; Halley's method applied to 
+             ; Halley's method applied to
              ; z -->  z^p1-z = 0
   z = pixel, a = p1-1, b = p1-2, ap1 = a*p1 :
   zb = z^b, za = z*zb, zp1 = z*za, n1 = zp1-z, n2 = p1*za-1
-  z = z - n1/(n2 - ap1*zb*n1/(2*n2)) 
+  z = z - n1/(n2 - ap1*zb*n1/(2*n2))
   |n1| >= 0.000001
   ;SOURCE: gallet-2.frm
 }
@@ -517,7 +517,7 @@ gallet-2-10 {; Sylvie Gallet [101324,3444], 1995
 gallet-2-11 {; Sylvie Gallet [101324,3444], 1995
   z = pixel, a = p1-1, b = p1-2, ap1 = a*p1 :
   zb = z^b, za = z*zb, zp1 = z*za, n1 = zp1-z, n2 = p1*za-1
-  z1 = n1/(n2 - ap1*zb*fn1(z)*n1/(2*n2)) 
+  z1 = n1/(n2 - ap1*zb*fn1(z)*n1/(2*n2))
   z = z-z1
   |z1| >= 0.000001
   ;SOURCE: gallet-2.frm
@@ -591,21 +591,21 @@ Gallet-3-04 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-Gallet-3-05 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, c = p1, bailout = real(p3) :
   test = (flip(c*z) >= 0)
-  a = (z-p2)*test, b = (z+flip(p2))*(1-test), z = (a+b)*c 
+  a = (z-p2)*test, b = (z+flip(p2))*(1-test), z = (a+b)*c
   (sqr(real(z)) < bailout) || (sqr(imag(z)) < bailout)
   ;SOURCE: gallet-3.frm
 }
 
 
-Gallet-3-06 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-06 {; Sylvie Gallet [101324,3444], 1996
              ; Revised for Fractint v20 by Sylvie Gallet
   z = pixel, c = p1, bailout = sqrt(real(p3)):
   IF (z*(c-z) >= 0)
-    z = z - p2 
-  ELSE  
+    z = z - p2
+  ELSE
     z = z + p2
   ENDIF
   z = z*c
@@ -618,14 +618,14 @@ Gallet-3-07 (YAXIS) {; Sylvie Gallet [101324,3444], 1996
                      ; Newton's method applied to
                      ; x -> sin(y)^2+cos(x)^3 = 0
                      ; y -> cos(x)^2+sin(y)^3 = 0
-  z = 0.05/pixel, x=real(z), y=imag(z) 
-  cx=cos(x), sx=sin(x), cy=cos(y), sy=sin(y) 
+  z = 0.05/pixel, x=real(z), y=imag(z)
+  cx=cos(x), sx=sin(x), cy=cos(y), sy=sin(y)
   cx2=cx*cx, cx3=cx2*cx, sy2=sy*sy, sy3=sy2*sy :
   d = 6*(cx*sy-4)     ; normal value -->  d = 9*(cx*sy-4)
   x = x+(sy3+3*sy*cx3-2*cx2)/(cx*sx*d)
   y = y-(cx3+3*cx*sy3-2*sy2)/(sy*cy*d)
   z = x + flip(y)
-  cx=cos(x), sx=sin(x), cy=cos(y), sy=sin(y) 
+  cx=cos(x), sx=sin(x), cy=cos(y), sy=sin(y)
   cx2=cx*cx, cx3=cx2*cx, sy2=sy*sy, sy3=sy2*sy
   |sy2+cx3+flip(cx2+sy3)| > 0.00001
   ;SOURCE: gallet-3.frm
@@ -680,7 +680,7 @@ Gallet-3-10 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel), p = p2/p1 :
   z = z*p
   z <= p1
@@ -688,7 +688,7 @@ Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-Gallet-3-12 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-12 {; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel), p = p1/p2 :
   z = z*p
   z <= p1
@@ -696,7 +696,7 @@ Gallet-3-12 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   z = pixel/(pixel*pixel+1) :
   x = real(z), y = imag(z)
   x1 = x - p1*fn1(y+p2*fn2(y))
@@ -707,18 +707,18 @@ Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-Gallet-3-14 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-14 {; Sylvie Gallet [101324,3444], 1996
   z = Pixel:
   z = fn1(z)+flip(fn2(z))
-  (|real(z)| <= 4) || (|imag(z)| <= 4) 
+  (|real(z)| <= 4) || (|imag(z)| <= 4)
   ;SOURCE: gallet-3.frm
 }
 
 
-Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996
   z = Pixel*(0.0,1.0) :
   n = sin(z)-z-pixel, z = z-n/(cos(z)-pixel)
-  |n| > real(p1) 
+  |n| > real(p1)
   ;SOURCE: gallet-3.frm
 }
 
@@ -1953,7 +1953,7 @@ game {; Giuseppe Zito
   c12 = 0.320233
   d4 = 0.388393
   d5 = -0.049251
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 -x
@@ -1966,21 +1966,21 @@ game {; Giuseppe Zito
   s0 = s0 +x
   s0 = s0 *c10
   s0 = s0 /c12
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 -d4
   s0 = s0 *d5
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 Gamma(XAXIS) {; first order gamma function from Prof. Jm
-              ; "It's pretty long to generate even on a 486-33 
-              ;  comp but there's a lot of corners to zoom in and 
+              ; "It's pretty long to generate even on a 486-33
+              ;  comp but there's a lot of corners to zoom in and
               ;  zoom and zoom...beautiful pictures :)"
   z=pixel, twopi=6.283185307179586, r=10:
   z=(twopi*z)^(0.5)*(z^z)*exp(-z)+pixel
@@ -1992,7 +1992,7 @@ Gamma(XAXIS) {; first order gamma function from Prof. Jm
 Gamma1(XAXIS) {; Jm Collard-Richard
   z=pixel, twopi=6.283185307179586, r=10:
   z=(twopi*z)^(0.5)*(z^z)*exp(-z)*pixel
-  |z|<=10   
+  |z|<=10
   ;SOURCE: jmcr2.frm
 }
 
@@ -2177,11 +2177,11 @@ gaussintr_jul {; Kerry Mitchell
 ;
 ; applicable to these formulas:
 ;     gaussintr_jul (above)
-;     gaussintt_jul 
-;     gaussinttot_jul 
-;     gaussintr_man 
-;     gaussintt_man 
-;     gaussinttot_man 
+;     gaussintt_jul
+;     gaussinttot_jul
+;     gaussintr_man
+;     gaussintt_man
+;     gaussinttot_man
 ;
 ;Gauss
 ;
@@ -2226,7 +2226,7 @@ gaussintr_jul {; Kerry Mitchell
 
 
 gaussintr_man {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -2265,7 +2265,7 @@ gaussintr_man {; Kerry Mitchell
 
 
 gaussintt_jul {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -2303,7 +2303,7 @@ gaussintt_jul {; Kerry Mitchell
 
 
 gaussintt_man {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -2340,7 +2340,7 @@ gaussintt_man {; Kerry Mitchell
 
 
 gaussinttot_jul {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Julia sets
@@ -2380,7 +2380,7 @@ gaussinttot_jul {; Kerry Mitchell
 
 
 gaussinttot_man {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -2428,7 +2428,7 @@ Gen_01 {; generalized type
 
 
 general {; try p2=0.3 , p1=4
-  z=pixel : 
+  z=pixel :
   z=(p2*z^p1+pixel)/(p2*z^(p1-1)+pixel)
   |z|<=10
   ;SOURCE: ratz.frm
@@ -2436,9 +2436,9 @@ general {; try p2=0.3 , p1=4
 
 
 general_jul-2circ {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
         ;
         ; "2 general circles" coloring method for Julia sets
@@ -2504,7 +2504,7 @@ general_jul-2lines {
 
 
 general_jul-c&l {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
@@ -2537,7 +2537,7 @@ general_jul-c&l {
 }
 
 
-general_man-2circ {; Kerry Mitchell 26aug98 
+general_man-2circ {; Kerry Mitchell 26aug98
         ;
         ; An explanation of Kerry Mitchell's 2 circle coloring method
         ;  is at the end of this formula
@@ -2577,21 +2577,21 @@ general_man-2circ {; Kerry Mitchell 26aug98
 ;
 ; 2 Circles Coloring Method
 ;
-; Several coloring schemes have been put together that color according 
+; Several coloring schemes have been put together that color according
 ; to the orbit's nearest approach to a specified point or curve.  This
 ; method extends that idea by coloring according to the orbit's nearest
 ; simultaneous approach to 2 specified circles.
 ;
 ; A circle in the x-y plane can be specified by (x - xcenter)^2 +
-; (y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+; (y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate
 ; of the center of the circle, and radius is the circle's radius.  For
 ; complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
 ;
 ; f(z) = |z - center| - radius^2 (using Fractint's || convention)
 ;
-; is a real-valued function that gives the relationship of z to the 
+; is a real-valued function that gives the relationship of z to the
 ; circle.  If f(z) < 0, then z is inside the circle.  A positive
-; value of f(z) means that z is outside of the circle, and f=0 means 
+; value of f(z) means that z is outside of the circle, and f=0 means
 ; that z is on the circle.
 ;
 ; Using 2 circles then results in 2 functions, fx(z) and fy(z).  One
@@ -2602,10 +2602,10 @@ general_man-2circ {; Kerry Mitchell 26aug98
 ; saved, and at the end of the iteration, "decomp=256" is used to color
 ; the pixel according to the polar angle of w.
 ;
-; In its most general form, this method requires 6 real parameters:  
+; In its most general form, this method requires 6 real parameters:
 ; 2 each for the x- and y-coordinates of the centers of the circles,
 ; and 2 for the radii of the 2 circles.  For Mandelbrot implementation,
-; this requires hardcoding the bailout value, which has been set to 
+; this requires hardcoding the bailout value, which has been set to
 ; 10^12.  For Julia implementations, the bailout is also hardcoded, but
 ; another 2 parameters are needed to specify the Julia parameter, c.
 ; The "general_jul" formula is written with a hardcoded value of c, to
@@ -2613,24 +2613,24 @@ general_man-2circ {; Kerry Mitchell 26aug98
 ;
 ; A great deal of choice can still be allowed by only using 4 parameters
 ; to choose the circles, thereby freeing the other 2 for picking c.
-; The "cenx=ceny_jul" method uses concentric circles (both having the 
-; same center).  The radii of the circles are independently chosen.  
-; A variation of this is the "cenx=-ceny_jul" formula, wherein the 
-; centers of the circles are placed symmetrically with respect to the 
+; The "cenx=ceny_jul" method uses concentric circles (both having the
+; same center).  The radii of the circles are independently chosen.
+; A variation of this is the "cenx=-ceny_jul" formula, wherein the
+; centers of the circles are placed symmetrically with respect to the
 ; origin of the complex plane.  Another variation uses the same radii
-; for both circles, but different centers.  In "offset_rx=ry_jul", 
-; this is accomplished by choosing a point on the plane.  One circle 
+; for both circles, but different centers.  In "offset_rx=ry_jul",
+; this is accomplished by choosing a point on the plane.  One circle
 ; is place a little outward of this point, and the other is a little
 ; inward of the chosen point.  The amount of shift along the radial
 ; line is 1 of the parameters.
-; 
+;
 ; Because of the wide variety of parameter settings, it's not possible
 ; to say what happens with the image as the circles are moved.  However,
 ; you'll get very different results if the circles don't intersect from
 ; when they do.  If they do intersect, you'll tend to see points in the
 ; image where all the colors come together (this corresponds to where
 ; the orbit found the intersection point).  Varied ribbon-like effects
-; can be seen when the circles are very close to each other--either 
+; can be seen when the circles are very close to each other--either
 ; concentric with slightly different radii, or offset by a small amount.
   ;SOURCE: 98msg.frm
 }
@@ -2679,18 +2679,18 @@ general_man-2lines {
 ;
 ; 2 Lines Coloring Method
 ;
-; Several coloring schemes have been put together that color according 
+; Several coloring schemes have been put together that color according
 ; to the orbit's nearest approach to a specified point or curve.  This
 ; method extends that idea by coloring according to the orbit's nearest
 ; simultaneous approach to 2 specified lines.
-; 
+;
 ; A line in the x-y plane can be specified by the standard form: a*x +
 ; b*y + c = 0, where the slope of the line = -a/b (when b=0, the line is
 ; vertical).  For complex numbers z = x+i*y, then function
 ;
 ; f(z) = a*real(z) + b*imag(z) + c
 ;
-; is a real-valued function that gives the relationship of z to the 
+; is a real-valued function that gives the relationship of z to the
 ; line.  If f(z) < 0, then z is on one side of the line, and if f(z) > 0,
 ; z is on the other side.  If f=0, then z is on the line.
 ;
@@ -2701,8 +2701,8 @@ general_man-2lines {
 ; sufficient to check for the smallest |w|.  This w is saved, and at the
 ; end of the iteration, "decomp=256" is used to color the pixel according
 ; to the polar angle of w.
-; 
-; In its most general form, this method requires 6 real parameters:  
+;
+; In its most general form, this method requires 6 real parameters:
 ; 3 (a, b, c) for each line.  For Mandelbrot implementation, this requires
 ; hardcoding the bailout value, which has been set to 10^12.  For Julia
 ; implementations, the bailout is also hardcoded, but another 2 parameters
@@ -2724,16 +2724,16 @@ general_man-2lines {
 ; when they do.  If they do intersect, you'll tend to see points in the
 ; image where all the colors come together (this corresponds to where
 ; the orbit found the intersection point).  Varied ribbon-like effects
-; can be seen when the lines are very close to each other--either 
+; can be seen when the lines are very close to each other--either
 ; parallel with a small gap between them, or with slightly different slopes.
-;        
+;
   ;SOURCE: 98msg.frm
 }
 
 
 general_man-c&l {
         ;
-        ; Kerry Mitchell's explanation of the "circle & line 
+        ; Kerry Mitchell's explanation of the "circle & line
         ;  coloring method" is at the end of this formula.
         ;
         ; "general circle & line" coloring method for Mandelbrot
@@ -2772,21 +2772,21 @@ general_man-c&l {
 ;
 ; Circle & Line Coloring Method
 ;
-; Several coloring schemes have been put together that color according 
+; Several coloring schemes have been put together that color according
 ; to the orbit's nearest approach to a specified point or curve.  This
 ; method extends that idea by coloring according to the orbit's nearest
 ; simultaneous approach to a circle and a line.
 ;
 ; A circle in the x-y plane can be specified by (x - xcenter)^2 +
-; (y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+; (y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate
 ; of the center of the circle, and radius is the circle's radius.  For
 ; complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
 ;
 ; f(z) = |z - center| - radius^2 (using Fractint's || convention)
 ;
-; is a real-valued function that gives the relationship of z to the 
+; is a real-valued function that gives the relationship of z to the
 ; circle.  If f(z) < 0, then z is inside the circle.  A positive
-; value of f(z) means that z is outside of the circle, and f=0 means 
+; value of f(z) means that z is outside of the circle, and f=0 means
 ; that z is on the circle.
 ;
 ; A line in the x-y plane can be specified by the standard form: a*x +
@@ -2795,7 +2795,7 @@ general_man-c&l {
 ;
 ; f(z) = a*real(z) + b*imag(z) + c
 ;
-; is a real-valued function that gives the relationship of z to the 
+; is a real-valued function that gives the relationship of z to the
 ; line.  If f(z) < 0, then z is on one side of the line, and if f(z) > 0,
 ; z is on the other side.  If f=0, then z is on the line.
 ;
@@ -2807,10 +2807,10 @@ general_man-c&l {
 ; w is saved, and at the end of the iteration, "decomp=256" is used to
 ; color the pixel according to the polar angle of w.
 ;
-; In its most general form, this method requires 6 real parameters:  
+; In its most general form, this method requires 6 real parameters:
 ; 2 for the x- and y-coordinates of the center of the circles and 1 for
 ; its radius, and 3 (a, b, c) for the line.  For Mandelbrot implementation,
-; this requires hardcoding the bailout value, which has been set to 
+; this requires hardcoding the bailout value, which has been set to
 ; 10^12.  For Julia implementations, the bailout is also hardcoded, but
 ; another 2 parameters are needed to specify the Julia parameter, c.
 ; The "general_jul" formula is written with a hardcoded value of c, to
@@ -2840,7 +2840,7 @@ general_man-c&l {
 GenInvJm1N1-J {; Jm Collard-Richard
   z=1/(pixel^p2):
   z=fn1(z^p2)*fn2(z^p2)+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2848,7 +2848,7 @@ GenInvJm1N1-J {; Jm Collard-Richard
 GenInvJm1N1-M {; Jm Collard-Richard
   c=z=1/(pixel^p2):
   z=fn1(z^p2)*fn2(z^p2)+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2856,7 +2856,7 @@ GenInvJm1N1-M {; Jm Collard-Richard
 GenInvJm1N2-J {; Jm Collard-Richard
   z=1/(pixel^p2):
   z=fn1(z)*fn2(z)+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2864,7 +2864,7 @@ GenInvJm1N2-J {; Jm Collard-Richard
 GenInvJm1N2-M {; Jm Collard-Richard
   c=z=1/(pixel^p2):
   z=fn1(z)*fn2(z)+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2873,7 +2873,7 @@ GenInvJmN-J {;Jm Collard-Richard
              ; Voir Rem de GenMand_N et InvJmN-J
   z=1/(pixel^p2):
   z=fn1(fn2(z^p2))+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2882,7 +2882,7 @@ GenInvJmN-M {; Jm Collard-Richard
              ; voir Rem de GenMand_N et InvJmN-M
   c=z=1/(pixel^p2):
   z=fn1(fn2(z^p2))+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2890,7 +2890,7 @@ GenInvJmN-M {; Jm Collard-Richard
 GenInvJul1_N {; Jm Collard-Richard
   z=1/pixel:
   z=fn1(z)*fn2(z)+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2898,7 +2898,7 @@ GenInvJul1_N {; Jm Collard-Richard
 GenInvJul_N {; Jm Collard-Richard (voir Rem de GenMand_N)
   z=1/pixel:
   z=fn1(fn2(z^p2))+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2914,7 +2914,7 @@ GenInvMand1_N {; Jm Collard-Richard
 GenInvMand_N {; Jm Collard-Richard (voir Rem de GenMand_N)
   c=z=1/pixel:
   z=fn1(fn2(z^p2))+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2922,7 +2922,7 @@ GenInvMand_N {; Jm Collard-Richard (voir Rem de GenMand_N)
 GenJul1_N {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)*fn2(z)+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2930,7 +2930,7 @@ GenJul1_N {; Jm Collard-Richard
 GenJul_N {; Jm Collard-Richard  (voir Rem de GenMand_N)
   z=pixel:
   z=fn1(fn2(z^p2))+fn3(fn4(p1))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2938,7 +2938,7 @@ GenJul_N {; Jm Collard-Richard  (voir Rem de GenMand_N)
 GenMand1_N {; Jm Collard-Richard
   c=z=pixel:
   z=fn1(z)*fn2(z)+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2948,7 +2948,7 @@ GenMand_N {;Jm Collard-Richard
            ; fn3=flip fn4=ident   etc ...
   c=z=pixel:
   z=fn1(fn2(z^p2))+fn3(fn4(c))
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2959,7 +2959,7 @@ geyser {; Giuseppe Zito
   c8 = 0.601532
   d0 = -0.308613
   d1 = -0.818563
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c1
@@ -2970,16 +2970,16 @@ geyser {; Giuseppe Zito
   s1 = s1 *y
   s1 = s1 +x
   s0 = s0 *s1
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -d1
   s1 = x
   s0 = s0 -s1
   s0 = s0 *y
   s0 = s0 /x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3449,14 +3449,14 @@ gift {; Giuseppe Zito
   d8 = -0.150311
   d13 = 0.466606
   d17 = -0.047804
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 *y
   s0 = s0 *c4
   s0 = s0 -c5
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 /x
   s0 = s0 *x
@@ -3472,9 +3472,9 @@ gift {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 -d17
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3504,14 +3504,14 @@ globe (XAXIS) {
   temp = z
   z = z^.5 - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
 
 Glow (XAXIS) {; Try params=2/50/0/0
-  c=z=pixel: 
-  z=z^Real(p1)+c 
+  c=z=pixel:
+  z=z^Real(p1)+c
   |Real(z)|<=Imag(p1)
   ;SOURCE: fractfun.frm
 }
@@ -3524,7 +3524,7 @@ GLYNN (XAXIS) {; Based on an illustration in Science PROBE!  and a
    ;
   z = pixel :
   z = z ^ p1 + p2
-  |z| <=4 
+  |z| <=4
   ;SOURCE: fract001.frm
 }
 
@@ -3575,7 +3575,7 @@ glynnout3 {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
 
 Gmandel_1 {; Sylvie Gallet 1995
            ; bailout = p1
-  z=pixel/(conj(pixel)+(0.0,1.0)) 
+  z=pixel/(conj(pixel)+(0.0,1.0))
   c=(1/pixel)/(flip(conj(pixel))-1.0) :
   z=z^2+c
   |z| <= p1
@@ -3585,7 +3585,7 @@ Gmandel_1 {; Sylvie Gallet 1995
 
 Gmandel_2_b {; Sylvie Gallet [101324,3444]
              ; Robert W. Carr [73753,2420], 1995
-  z = pixel/(conj(pixel)+(0.0,1.0)) 
+  z = pixel/(conj(pixel)+(0.0,1.0))
   c = (1/pixel)/(flip(conj(pixel))-1.0) :
   c = z+c/2.125, z = z^2+c
   |real(z)| <= 4
@@ -3595,7 +3595,7 @@ Gmandel_2_b {; Sylvie Gallet [101324,3444]
 
 Gmandel_3 {; Sylvie Gallet [101324,3444]
            ; Robert W. Carr [73753,2420], 1995
-  z = pixel/(conj(pixel)+(0.0,1.0)) 
+  z = pixel/(conj(pixel)+(0.0,1.0))
   c = (1/pixel)/(flip(conj(pixel))-1.0) :
   c = ((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z)
   z = z^2+c
@@ -3606,7 +3606,7 @@ Gmandel_3 {; Sylvie Gallet [101324,3444]
 
 Gmandel_3_b {; Sylvie Gallet [101324,3444]
              ; Robert W. Carr [73753,2420], 1995
-  z = pixel/(conj(pixel)+(0.0,1.0)) 
+  z = pixel/(conj(pixel)+(0.0,1.0))
   c = (1/pixel)/(flip(conj(pixel))-1.0) :
   z = z^2+c
   c = ((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z)
@@ -3621,7 +3621,7 @@ goat (XAXIS) {
   temp = z
   z = z*z + zp
   zp = (-temp)^.5
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -3631,7 +3631,7 @@ Gopalsamy1 {
   x = real(z), y = imag(z)
   x1 = -2*x*y + p1
   y = y*y - x*x
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
@@ -3642,7 +3642,7 @@ Gopalsamy2 {
   x = real(z), y = imag(z)
   x1 = -4*x*y + p1
   y = 4*y*y - x*x
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
@@ -3653,7 +3653,7 @@ Gopalsamy3 {
   x = real(z), y = imag(z)
   x1 = 3*x*y*y - x*x*x + p1
   y = y*y*y - 3*x*x*y
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
@@ -3664,7 +3664,7 @@ Gopalsamy4 {
   x = real(z), y = imag(z)
   x1 = -x*y + p1
   y = 2*y*y - 3*x*x
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
@@ -3677,7 +3677,7 @@ Gopalsamy5 {
   y1 = x*x - y*y
   x2 = -2*x1*y1 + p1
   y = y1*y1 - x1*x1
-  z = x2 + flip(y) 
+  z = x2 + flip(y)
   |z| <= 4
   ;SOURCE: reb003.frm
 }
@@ -3688,7 +3688,7 @@ GopalsamyExp {
   x = real(z), y = imag(z)
   x1 = -exp(x)*cos(y) + p1
   y = -exp(x)*sin(y)
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3701,7 +3701,7 @@ GopalsamyExp2 {
   y1 = exp(x)*sin(y)
   x2 = -2*x1*y1 + p1
   y = y1*y1 - x1*x1
-  z = x2 + flip(y) 
+  z = x2 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3725,7 +3725,7 @@ GopalsamySin {
   x = real(z), y = imag(z)
   x1 = -sin(x)*cosh(y) + p1
   y = -cos(x)*sinh(y)
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3738,7 +3738,7 @@ GopalsamySin2 {
   y1 = cos(x)*sinh(y)
   x2 = -2*x1*y1 + p1
   y = y1*y1 - x1*x1
-  z = x2 + flip(y) 
+  z = x2 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3749,7 +3749,7 @@ GopalsamySinh {
   x = real(z), y = imag(z)
   x1 = -sin(x)*cosh(y) + p1
   y = -cos(x)*sinh(y)
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3762,7 +3762,7 @@ GopalsamySinh2 {
   y1 = cosh(x)*sin(y)
   x2 = -2*x1*y1 + p1
   y = y1*y1 - x1*x1
-  z = x2 + flip(y) 
+  z = x2 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -3789,7 +3789,7 @@ graal {; Giuseppe Zito
   IF (real(p1)==0)
     d0 = -0.449887
   ENDIF
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /x
@@ -3797,7 +3797,7 @@ graal {; Giuseppe Zito
   s0 = s0 -c4
   s0 = s0 +c8
   s0 = s0 +c9
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -x
   s1 = y
@@ -3806,9 +3806,9 @@ graal {; Giuseppe Zito
   s0 = s0 *x
   s1 = y
   s0 = s0 +s1
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3819,11 +3819,11 @@ graft {; Giuseppe Zito
   d1 = 0.136092
   d4 = 0.052044
   d6 = 0.566749
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *d1
   s0 = s0 -x
@@ -3833,9 +3833,9 @@ graft {; Giuseppe Zito
   s1 = s1 *s2
   s1 = s1 /y
   s0 = s0 +s1
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3898,7 +3898,7 @@ graph-3 {; Tim Wegner
   incr = (max - min)/256
   z = min:
   z = z + incr
-  z < value 
+  z < value
   ;SOURCE: 96msg.frm
 }
 
@@ -4329,7 +4329,7 @@ gravity-dt2=pix {; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; set p1 to about 1 in magnitude, e.g, (1.0,0.1)
-        ; 
+        ;
   z1=1, z=p1, dt2=pixel, bailout=1000:
   z0=z1, z1=z, f=1/z-1/sqr(z)
   z=2*z1-z0+f*dt2
@@ -4343,7 +4343,7 @@ gravity-z=pix {; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; p1 = "time step", small in magnitude (about .1 or less)
-        ; 
+        ;
   z1=1, dt2=p1, z=pixel, bailout=1000:
   z0=z1, z1=z, f=1/z-1/sqr(z)
   z=2*z1-z0+f*dt2
@@ -4389,9 +4389,9 @@ Groucho {; Mutation of 'Fish2'.
 }
 
 
-Grunge { 
+Grunge {
   z = c = pixel:
-  z = z + p1 
+  z = z + p1
   c = fn1(c) + z
   c1 = imag(z)  / imag(c)
   z1 = real(z) / real(c)
@@ -4406,11 +4406,11 @@ gscarab {; Giuseppe Zito
   d0 = 0.695627
   d5 = -0.558278
   d8 = -0.071449
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *y
   s0 = s0 /x
@@ -4421,9 +4421,9 @@ gscarab {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 *x
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -4724,7 +4724,7 @@ gtc37 {; Modified J_TchebychevC4
 }
 
 
-gtc38 {; Modified J_TchebychevC5 
+gtc38 {; Modified J_TchebychevC5
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-5)+5))
   |z| < p1
@@ -4756,7 +4756,7 @@ gtc41 {; Modified J_TchebychevS2
 }
 
 
-gtc42 {; Modified J_TchebychevS3  
+gtc42 {; Modified J_TchebychevS3
   z = c = pixel:
   z = fn1(c*z*(z*z-2))
   |z| < p1
@@ -4772,7 +4772,7 @@ gtc43 {; Modified J_TchebychevS4
 }
 
 
-gtc44 {; Modified J_TchebychevS5 
+gtc44 {; Modified J_TchebychevS5
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-4)+3))
   |z| < p1
@@ -4820,7 +4820,7 @@ gtc49 {; Modified J_TchebychevT4
 }
 
 
-gtc50 {; Modified J_TchebychevT5    
+gtc50 {; Modified J_TchebychevT5
   z = c = pixel:
   z = fn1(c*(z*(z*z*(16*z*z-20)+5)))
   |z| < p1
@@ -4836,7 +4836,7 @@ gtc51 {; Modified J_TchebychevT6
 }
 
 
-gtc52 {; Modified J_TchebychevT7     
+gtc52 {; Modified J_TchebychevT7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(64*z*z-112)+56)-7))
   |z| < p1
@@ -4852,7 +4852,7 @@ gtc53 {; Modified J_TchebychevU2
 }
 
 
-gtc54 {; Modified J_TchebychevU3    
+gtc54 {; Modified J_TchebychevU3
   z = c = pixel:
   z = fn1(c*z*(8*z*z-4))
   |z| < p1
@@ -4868,7 +4868,7 @@ gtc55 {; Modified J_TchebychevU4
 }
 
 
-gtc56 {; Modified J_TchebychevU5    
+gtc56 {; Modified J_TchebychevU5
   z = c = pixel:
   z = fn1(c*z*(z*z*(32*z*z-32)+6))
   |z| < p1
@@ -4884,7 +4884,7 @@ gtc57 {; Modified J_TchebychevU6
 }
 
 
-gtc58 {; Modified J_TchebychevU7     
+gtc58 {; Modified J_TchebychevU7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(128*z*z-192)+80)-8))
   |z| < p1
@@ -4900,7 +4900,7 @@ gtc59 {; Modified M_TchebychevC2
 }
 
 
-gtc60 {; Modified M_TchebychevC3   
+gtc60 {; Modified M_TchebychevC3
   z = c = pixel:
   z = fn1(c*z*(z*z-3))
   |z| < p1
@@ -4932,7 +4932,7 @@ gtc63 {; Modified M_TchebychevC6
 }
 
 
-gtc64 {; Modified M_TchebychevC7     
+gtc64 {; Modified M_TchebychevC7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(z*z-7)+14)-7))
   |z| < p1
@@ -4964,7 +4964,7 @@ gtc67 {; Modified M_TchebychevS4
 }
 
 
-gtc68 {; Modified M_TchebychevS5    
+gtc68 {; Modified M_TchebychevS5
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-4)+3))
   |z| < p1
@@ -4980,7 +4980,7 @@ gtc69 {; Modified M_TchebychevS6
 }
 
 
-gtc70 {; Modified M_TchebychevS7     
+gtc70 {; Modified M_TchebychevS7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(z*z-6)+10)-4))
   |z| < p1
@@ -4996,7 +4996,7 @@ gtc71 {; Modified M_TchebychevT2
 }
 
 
-gtc72 {; Modified M_TchebychevT3   
+gtc72 {; Modified M_TchebychevT3
   z = c = pixel:
   z = fn1(c*z*(4*z*z-3))
   |z| < p1
@@ -5028,7 +5028,7 @@ gtc75 {; Modified M_TchebychevT6
 }
 
 
-gtc76 {; Modified M_TchebychevT7     
+gtc76 {; Modified M_TchebychevT7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(64*z*z-112)+56)-7))
   |z| < p1
@@ -5060,7 +5060,7 @@ gtc79 {; Modified M_TchebychevU4
 }
 
 
-gtc80 {; Modified M_TchebychevU5    
+gtc80 {; Modified M_TchebychevU5
   z = c = pixel:
   z = fn1(c*z*(z*z*(32*z*z-32)+6))
   |z| < p1
@@ -5076,7 +5076,7 @@ gtc81 {; Modified M_TchebychevU6
 }
 
 
-gtc82 {; Modified M_TchebychevU7     
+gtc82 {; Modified M_TchebychevU7
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(128*z*z-192)+80)-8))
   |z| < p1
@@ -5084,7 +5084,7 @@ gtc82 {; Modified M_TchebychevU7
 }
 
 
-Guanaco { 
+Guanaco {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   z = pixel, Root = 1:
@@ -5095,7 +5095,7 @@ Guanaco {
   z7 = z6 * z
   r = (3 * z4 + Root) / ( 4*z3)
   q =  z - p1*((z7-z)/((7.0*z6-1)-(42.0*z5)*(z7-z)/(14.0*z6-2)))
-  z = (r * whitesq ) + (q * (whitesq == 0)) 
+  z = (r * whitesq ) + (q * (whitesq == 0))
   (.004 <= |z4-Root| && whitesq) || (0.0001 <= |z7-z| && whitesq == 0)
   ;SOURCE: pablo.frm
 }
@@ -5103,7 +5103,7 @@ Guanaco {
 
 Guitar1 {
   z = pixel:
-  z = log(z) * 1.0 / (sin(z) ) 
+  z = log(z) * 1.0 / (sin(z) )
   |z| <= 50
   ;SOURCE: hubert.frm
 }
@@ -5111,7 +5111,7 @@ Guitar1 {
 
 Guitar2 {
   z=pixel:
-  z = log(z) * 1.0 / (sin(z) ) 
+  z = log(z) * 1.0 / (sin(z) )
   |z| <= 4
   ;SOURCE: hubert.frm
 }

@@ -29,7 +29,7 @@ oppangle_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 orthogonal_jul {
         ;
         ; For an explanation of Kerry Mitchell's "2 lines coloring
@@ -61,7 +61,7 @@ orthogonal_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 parallel_jul {
         ;
         ; For an explanation of Kerry Mitchell's "2 lines coloring
@@ -93,7 +93,7 @@ parallel_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 general_man { ; Kerry Mitchell 26aug98
 	;
         ; "2 general lines" coloring method for Mandelbrot

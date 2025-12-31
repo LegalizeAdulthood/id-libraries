@@ -5,7 +5,7 @@ jenn062 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-005.frm
 }
- 
+
 jenn063 {; Arno Jennen
   x=exp(pixel), y=cotan(1/(1/x/pixel))
   z=y-sin(cabs((pixel*0.5)+x)):
@@ -14,7 +14,7 @@ jenn063 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-005.frm
 }
- 
+
 jenn064 {; Arno Jennen
   c=p1
   d=0.5
@@ -23,7 +23,7 @@ jenn064 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-005.frm
 }
- 
+
 jenn065 {; Arno Jennen
   c=pixel*pixel*p1
   d=0.5^pixel
@@ -32,7 +32,7 @@ jenn065 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-005.frm
 }
- 
+
 jenn066 {; Arno Jennen
   z1=fn1(fn2((pixel)+p1))
   z2=(z1^2)+z1
@@ -42,4 +42,4 @@ jenn066 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-005.frm
 }
- 
+

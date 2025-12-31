@@ -6,7 +6,7 @@
 ;   more sophisticated variations of the original
 ;   multifrac13 or multifrac13a formula.
 ;   The formula names correspond to the par-files
-;   with the same number. 
+;   with the same number.
 ;   Suggestions, new par-files or own variations
 ;   are welcome.
 ; --------------------------------------------------

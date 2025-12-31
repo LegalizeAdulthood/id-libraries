@@ -14,7 +14,7 @@ Scarlotta3   { ; September 15, 2001
   z=pixel/pi,
   c=pixel,
   :
-  rz=c/z 
-  z=((rz)+sin(rz)), 
+  rz=c/z
+  z=((rz)+sin(rz)),
   cabs(z/( (sqrt(z*z-1) + z) )) > .5
 }

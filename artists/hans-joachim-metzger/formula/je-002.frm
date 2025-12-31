@@ -7,7 +7,7 @@ jenn044 {; Arno Jennen
   |(z^p2)|<=(a*p3)
   ;SOURCE: je-002.frm
 }
- 
+
 jenn045 {; Arno Jennen
   a1=(flip(pixel-p1)-|fn1(pixel)|)/pixel
   a2=a1/(flip(a1))
@@ -17,7 +17,7 @@ jenn045 {; Arno Jennen
   |(z^p2)|<=(a*p3)
   ;SOURCE: je-002.frm
 }
- 
+
 jenn046 {; Arno Jennen
   q=real(pixel)+(pixel^2.5)
   x=flip(pixel-p1)
@@ -25,18 +25,18 @@ jenn046 {; Arno Jennen
   z=(q^x)*(y^q):
   q=(z*p1)-(x*y)
   z=z+(q*x*y)^fn1(z)
-  |(z+z)|<=100  
+  |(z+z)|<=100
   ;SOURCE: je-002.frm
 }
- 
+
 jenn047 {; Arno Jennen
   q=exp(pixel)
   z=fn1(q^2):
   z=q^z
-  |(z)|<=100  
+  |(z)|<=100
   ;SOURCE: je-002.frm
 }
- 
+
 jenn048 {; Arno Jennen
   a=(sin(|flip(pixel/1.15)|))*pixel
   x=a+(a^(sin(pixel)))
@@ -46,12 +46,12 @@ jenn048 {; Arno Jennen
   |(z^a)|>(x*1.75)
   ;SOURCE: je-002.frm
 }
- 
+
 jenn049 {; Arno Jennen
   q=(sin(|sin(pixel/p1)|))*pixel
   z=fn1(q^2):
   z=q^z
-  |z|<=100  
+  |z|<=100
   ;SOURCE: je-002.frm
 }
- 
+

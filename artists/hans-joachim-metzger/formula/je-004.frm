@@ -5,7 +5,7 @@ jenn057 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-004.frm
 }
- 
+
 jenn058 {; Arno Jennen
   x=sin(pixel)
   z=log(p1/pixel):
@@ -14,7 +14,7 @@ jenn058 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-004.frm
 }
- 
+
 jenn059 {; Arno Jennen
   x=(sin(1/2/sin(pixel-tan(pixel/0.33))))+(pixel/(1/2/pixel))
   y=fn1(x)
@@ -23,7 +23,7 @@ jenn059 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-004.frm
 }
- 
+
 jenn060 {; Arno Jennen
   z=pixel^(1-pixel):
   za=fn1(z*(|fn2(z)*pixel+(fn3(e^4.8))|*0.015625*0.25))
@@ -35,7 +35,7 @@ jenn060 {; Arno Jennen
   |z|>4
   ;SOURCE: je-004.frm
 }
- 
+
 jenn061 {; Arno Jennen
   a=(0.25,1)*(log(pixel)^e)
   b=(0.25,1)*(log(a)^e)
@@ -45,4 +45,4 @@ jenn061 {; Arno Jennen
   |z|<=4
   ;SOURCE: je-004.frm
 }
- 
+

@@ -4,4 +4,4 @@ RCL_10 {; Ron Lewen, 76376,2567
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+

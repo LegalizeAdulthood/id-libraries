@@ -5,7 +5,7 @@
   |z| <= p2
   ;SOURCE: kg13.frm
 }
- 
+
 1301 {
   z = 1/pixel:
   z = fn1(z/pixel) * fn2(pixel)
@@ -13,7 +13,7 @@
   |z| <= p2
   ;SOURCE: kg13.frm
 }
- 
+
 1303 {
   z = 1/pixel:
   z = fn1(z/pixel) * fn2(pixel)
@@ -21,7 +21,7 @@
   |z| <= p2
   ;SOURCE: kg13.frm
 }
- 
+
 1304 {
   z = 1/pixel:
   z = fn1(z/pixel) / fn2(pixel)
@@ -29,18 +29,18 @@
   |z| <= p2
   ;SOURCE: kg13.frm
 }
- 
+
 1305 {
   z = pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
   ;SOURCE: kg13.frm
 }
- 
+
 1306 {
   z = 0.1/pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
   ;SOURCE: kg13.frm
 }
- 
+

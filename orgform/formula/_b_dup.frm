@@ -55,11 +55,11 @@ BirdOfPreyC (XAXIS_NOPARM) {
 }
 
 
-bubbles {; Formulas by Bob Carr and Paul Carlson 
+bubbles {; Formulas by Bob Carr and Paul Carlson
          ; combined and modified by Linda Allison
   z = c = pixel:
   z2 = c * (1 - z * z)/(1 + z * z)
-  z = fn1(z2) + fn2((z2 ^ 2)/p1)  
+  z = fn1(z2) + fn2((z2 ^ 2)/p1)
   |z| <= 100
   ;SOURCE: internet.frm
 }

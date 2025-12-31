@@ -13,9 +13,9 @@ multifrac56 {
   |z| < 4
   endif
   }
- 
+
 multifrac56 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -29,4 +29,4 @@ multifrac56 {
   |z| < 4
   endif
   }
- 
+

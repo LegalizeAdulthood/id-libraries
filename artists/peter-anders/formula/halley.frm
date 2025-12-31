@@ -73,7 +73,7 @@ Peter_1HalTan  { z=pixel,g=p2+1:
                             f2=1/(cos(z))^2
                             f3=2*sin(z)/(cos(z))^3
                             z=z-g*f1/(f2-f3*f1/(2*f2))
-                            |z-c| >0.000001}   
+                            |z-c| >0.000001}
 Peter_1HalTanF {z=pixel,g=p2+1:
                         c=z,
                         f1=tan(z)
@@ -87,7 +87,7 @@ Peter_1HalCot  { z=pixel,g=p2+1:
                         f2=-1/(sin(z))^2
                         f3=2*cos(z)/(sin(z))^3
                         z=z-g*f1/(f2-f3*f1/(2*f2))
-                        |z-c| >0.000001}                          
+                        |z-c| >0.000001}
 Peter_1HalCotF {z=pixel,g=p2+1:
                        c=z,
                        f1=cotan(z)
@@ -101,7 +101,7 @@ Peter_1HalLog{ z=pixel,g=p2+1:
                f2=1/z
                f3=-1/(z*z)
                z=z-g*f1/(f2-f3*f1/(2*f2))
-               |z-c| >0.000001}                          
+               |z-c| >0.000001}
 Peter_1HalLogF{ z=pixel,g=p2+1:
                 c=z,
                 f1=log(z)

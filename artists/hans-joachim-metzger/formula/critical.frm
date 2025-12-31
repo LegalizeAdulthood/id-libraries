@@ -6,4 +6,4 @@ MandelbrotMix4 {; Jim Muth
   |z| < l
   ;SOURCE: 99msg.frm
 }
- 
+

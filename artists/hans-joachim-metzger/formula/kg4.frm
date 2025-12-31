@@ -5,7 +5,7 @@
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+
 401 {
   z = x = pixel:
   z = fn1 (z) * fn2 (x)
@@ -13,7 +13,7 @@
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+
 403 {
   z = x = pixel:
   x = fn1 (z) * fn2 (x)
@@ -21,7 +21,7 @@
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+
 404 {
   z = x = pixel:
   x = fn1 (z) / fn2 (x)
@@ -29,4 +29,4 @@
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+

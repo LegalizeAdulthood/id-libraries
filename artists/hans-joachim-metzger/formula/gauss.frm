@@ -1,5 +1,5 @@
 gaussintr_man {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -35,9 +35,9 @@ gaussintr_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 gaussintt_jul {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Mandelbrot set
@@ -72,9 +72,9 @@ gaussintt_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 gaussinttot_jul {; Kerry Mitchell
-        ; See the end of gaussintr_jul for Kerry Mitchell's explanation 
+        ; See the end of gaussintr_jul for Kerry Mitchell's explanation
         ; of the development of these "gauss" formulas.
         ;
         ; Gaussian integer coloring of Julia sets
@@ -111,4 +111,4 @@ gaussinttot_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

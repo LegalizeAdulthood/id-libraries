@@ -20,7 +20,7 @@ JDG-7-01c {; Formula by Jim Deutch, Modified Sylvie Gallet frm
   t1
   ;SOURCE: sgjdg701.par
 }
- 
+
 JDG-7-01c {; Formula by Jim Deutch, Modified Sylvie Gallet frm
            ; image and 60 deg rotation w/ palette divided
   j = -0.5 + flip(0.5*sqrt(3)), j2 = conj(j)
@@ -43,4 +43,4 @@ JDG-7-01c {; Formula by Jim Deutch, Modified Sylvie Gallet frm
   t1
   ;SOURCE: sgjdg701.par
 }
- 
+

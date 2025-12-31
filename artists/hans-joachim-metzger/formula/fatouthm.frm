@@ -114,4 +114,4 @@ FrctnlExpMandelO2     { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   cpctr<cps || diverged==false
 }
- 
+

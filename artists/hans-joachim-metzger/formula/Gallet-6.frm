@@ -7,7 +7,7 @@ Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + p2*fn2(x - p3*fn3(y)))
@@ -17,7 +17,7 @@ Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    hx = p1*fn1(x + p2*fn2(y)), hy = p1*fn1(y + p2*fn2(x))
@@ -26,7 +26,7 @@ Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
     (mhx+mhy) >= p3 && mhx <= 1e35 && mhy <= 1e35
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    hx = p1*fn1(x + p2*fn2(y)), hy = p1*fn1(y + p2*fn2(x))
@@ -35,7 +35,7 @@ Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
     (mhx+mhy) >= p3 && mhx <= 1e35 && mhy <= 1e35
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
   x2 = x*x, y2 = y*y
@@ -46,7 +46,7 @@ Gallet-6-03 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y * fn2(p2*x) + fn3(p3*y))
@@ -56,7 +56,7 @@ Gallet-6-05 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-06 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    hx = p1*fn1(x + p2*fn2(x)), hy = p1*fn1(y + p2*fn2(y))
@@ -65,7 +65,7 @@ Gallet-6-06 {; Sylvie Gallet [101324,3444], 1996
     m >= p3 && m <= 1e30
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-07 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, h = p3, h2 = h + h
   n0 = - p1*fn1(p2*fn2(0)) :
@@ -75,7 +75,7 @@ Gallet-6-07 {; Sylvie Gallet [101324,3444], 1996
     m > 0.000001 && m <= 1e40
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-08 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) / fn3(p3*y))
@@ -85,7 +85,7 @@ Gallet-6-08 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 1024
   ;SOURCE: gallet-6.frm
 }
- 
+
 Gallet-6-09 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x ^ (p1 + y^(p2 + (x - p3*y)))
@@ -95,4 +95,4 @@ Gallet-6-09 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+

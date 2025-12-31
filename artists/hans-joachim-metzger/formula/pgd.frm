@@ -6,7 +6,7 @@ PhonyMandelJ {
   |z|<=127
   ;SOURCE: pderb.frm
 }
- 
+
 PhonyMandelM {
   c=pixel
   f=15/8
@@ -16,7 +16,7 @@ PhonyMandelM {
   |z|<=127
   ;SOURCE: pderb.frm
 }
- 
+
 PhonyMandelM {
   c=pixel
   f=15/8
@@ -26,4 +26,4 @@ PhonyMandelM {
   |z|<=127
   ;SOURCE: pderb.frm
 }
- 
+

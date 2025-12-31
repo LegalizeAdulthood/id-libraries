@@ -6,4 +6,4 @@ oof8 (XYAXIS) {; Revised for Fractint v20 by G. Martin
   |z| <= p2
   ;SOURCE: kgoof8.frm
 }
- 
+

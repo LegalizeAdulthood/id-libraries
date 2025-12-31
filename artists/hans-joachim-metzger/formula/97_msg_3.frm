@@ -11,7 +11,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -26,7 +26,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
@@ -42,7 +42,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -57,7 +57,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
@@ -76,7 +76,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -92,7 +92,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 IkenagaJUL {; formula from a letter from Joyce Haslam Mar 1993.
@@ -163,7 +163,7 @@ Carr3264 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
-rfr0ak1 {; Rolf Freericks 
+rfr0ak1 {; Rolf Freericks
   c = pixel
   h=z=p1
   :
@@ -459,9 +459,9 @@ Carr3195 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
    |z| <= bailout
   ;SOURCE: 97msg.frm
 }
-Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
-		  ; Rewritten for if..else by George Martin 
+		  ; Rewritten for if..else by George Martin
 		  ; and Sylvie Gallet, 8/1/97
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -497,7 +497,7 @@ Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: 97msg.frm
 }
-1 { 
+1 {
   z=c=1/pixel, sinc=sin(c):
   z=sqr(z*z) + c
   z=sin(z*z)*(z+pixel) + sinc
@@ -519,7 +519,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))

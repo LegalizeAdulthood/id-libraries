@@ -5,7 +5,7 @@ mfn2fn {
   |z| < p2
   ;SOURCE: fractals.frm
 }
- 
+
 mtofn {
   z=pixel:
   power = fn2(z)
@@ -13,4 +13,4 @@ mtofn {
   |z| < p2
   ;SOURCE: fractals.frm
 }
- 
+

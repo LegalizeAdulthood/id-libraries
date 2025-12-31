@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -14,19 +14,19 @@
    z = p1/pixel, c = fn1(z):
    z = (z*z) + c;
    z = z*z/c;
-   z <= p2 
+   z <= p2
 }
- 
+
    103 {
    z = pixel, c = p1/pixel:
    z =( (fn1(z) / c) + (fn2(z))^2) * z;
    z <=p2
-} 
+}
 
    104 {
    z = p1/pixel, x = fn1(z):
    z = (z*z) + x;
-   z = z*p2/x; 
+   z = z*p2/x;
     z <= 4
 }
 
@@ -53,7 +53,7 @@
    z = pixel^0.5:
    z = (((z*z) + (c-p1)) / ((z+z) + (c-p1)))^2;
    z <=p2;
-}   
+}
 
    109 {
    z = pixel, c = fn1(pixel):
@@ -100,7 +100,7 @@
    116 {
    z = pixel:
    z = fn1(z) + z^p1 + c;
-   z <= p2 
+   z <= p2
 }
 
    117 {

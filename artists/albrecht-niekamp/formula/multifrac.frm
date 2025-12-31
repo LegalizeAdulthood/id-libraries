@@ -74,7 +74,7 @@ multifrac7 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z+x-y)    
+  z = z^(z+x-y)
   |z| > (x2+y2)
   }
 
@@ -84,9 +84,9 @@ multifrac8 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
-  }  
+  }
 
 multifrac9 {
   z = pixel:
@@ -94,7 +94,7 @@ multifrac9 {
   x2 = x*x
   x = x2-y2-p1
   y = abs(x)*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
 
@@ -104,7 +104,7 @@ multifrac10 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p1
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
 
@@ -117,7 +117,7 @@ multifrac11 {
   z = sqr(z-x+y)
   |z| > (x2+y2+z)
   }
- 
+
 multifrac12 {
   z = pixel:
   y2 = y*y
@@ -137,7 +137,7 @@ multifrac13 {
   z = sqr(z)
   |z| > (x2+y2)
   }
- 
+
 multifrac13a {
   z = pixel:
   y2 = y*y
@@ -154,7 +154,7 @@ multifrac14 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > 4
   }
 
@@ -164,7 +164,7 @@ multifrac15 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -174,7 +174,7 @@ multifrac16 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z-x+y)    
+  z = sqr(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -184,7 +184,7 @@ multifrac17 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z)    
+  z = sqr(z)
   |z| > (x2*y2)
   }
 
@@ -194,7 +194,7 @@ multifrac18 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z+x-y)    
+  z = sqr(z+x-y)
   |z| > (x*y)
   }
 
@@ -204,7 +204,7 @@ multifrac19 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x*y)
   }
 
@@ -218,10 +218,10 @@ multifrac20 {
   else
   y=2*x*y-p1
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
- 
+
 multifrac21 {
   z = pixel:
   y2 = y*y
@@ -232,10 +232,10 @@ multifrac21 {
   else
   y=abs(x)*y*x-p2
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
- 
+
 multifrac22 {
   z = pixel:
   y2 = y*y
@@ -246,7 +246,7 @@ multifrac22 {
   else
   y=abs(x)*y*x-p2
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -393,10 +393,10 @@ multifrac33 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   w=2*x*w-p3
@@ -411,10 +411,10 @@ multifrac34 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   w=2*x*w-p3
@@ -429,10 +429,10 @@ multifrac35 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   y=abs(w)*x*y-p2
@@ -451,11 +451,11 @@ multifrac36 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -477,11 +477,11 @@ multifrac37 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -503,11 +503,11 @@ multifrac38 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -529,11 +529,11 @@ multifrac39 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x>y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -616,7 +616,7 @@ multifrac46 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z-x-y-w)
   else
@@ -635,7 +635,7 @@ multifrac47 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z-x-y-w)
   else
@@ -654,7 +654,7 @@ multifrac48 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z)-x-y-w
   else
@@ -673,7 +673,7 @@ multifrac49 {
   z2=fn3(z)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z2-x
   z = z^(z)-x-y
   else
@@ -692,7 +692,7 @@ multifrac50 {
   z2=fn3(z)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z2-x
   z = z^(z-x-y)
   else
@@ -729,7 +729,7 @@ multifrac52 {
   x2=fn1(x)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z^(z-x-y)
   else
   x=2*x2*y
@@ -786,7 +786,7 @@ multifrac55 {
   }
 
 multifrac56 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -802,7 +802,7 @@ multifrac56 {
   }
 
 multifrac57 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -818,7 +818,7 @@ multifrac57 {
   }
 
 multifrac58 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -926,7 +926,7 @@ multifrac64 {
   |z| > (x2+y2)
   }
 
- 
+
 multifrac65 {
   z = pixel:
   y2 = y*y
@@ -953,10 +953,10 @@ multifrac67 {
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -980,10 +980,10 @@ multifrac68 {
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif

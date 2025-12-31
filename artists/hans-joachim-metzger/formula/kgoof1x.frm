@@ -7,4 +7,4 @@ oof1x (XAXIS) {; Added variable "newpixel". G. Martin 6/29/99
   |z| <= p2
   ;SOURCE: kgoof1x.frm
 }
- 
+

@@ -14,7 +14,7 @@ Mind_2 {
   |z| <= 100
   ;SOURCE: physics.frm
 }
- 
+
 Mind_3 {
    ; This Fractint .FRM file (c) 1993 by:
    ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
@@ -28,7 +28,7 @@ Mind_3 {
   |z| <= 4
   ;SOURCE: physics.frm
 }
- 
+
 Mind_4 {
    ; This Fractint .FRM file (c) 1993 by:
    ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA
@@ -42,4 +42,4 @@ Mind_4 {
   |z| <= 4
   ;SOURCE: physics.frm
 }
- 
+

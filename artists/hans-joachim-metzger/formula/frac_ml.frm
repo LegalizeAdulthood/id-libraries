@@ -53,8 +53,8 @@ Nuclear_M_cq { ; p1, p3 parameters. c is Mandel parameter. Colored based on all
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0, 
-m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0, 
+  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0,
+m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0,
 qrl=1.5, q2=0.15
   qq2=0.0000001
   :
@@ -486,7 +486,7 @@ Nuclear_JColLogC { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                    ; periodicity=0. Colors from 4 ranges by finite attractors
                    ; and attracted to infinity. Uses a "logmap".
                    ; Variation: Log reversed for high iterations.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0, fi=3000
   qq=0.000001, bail=1000
@@ -617,10 +617,10 @@ classic_shift { ; Jay Hill, 1998
 ; p1 = shift of first midget
 ; p2 = scaling factor of first midget relative to second
 ; p3 = shift of second midget
-; use  outside=summ periodicity=0 passes=1float=y 
+; use  outside=summ periodicity=0 passes=1float=y
 continue = 1,
 z = 0,
-zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq 
+zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq
    :
 if (|zc| > 40)
     continue = 0
@@ -632,7 +632,7 @@ continue == 1
 gravijul { ; r^(-2) Mark Christenson 1/25/98
 ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
    z = pixel:
- 
+
    w = fn1(z)
    z = fn3(p1/fn2(w*w)) + p2
     |z| < p3
@@ -644,10 +644,10 @@ SECANT1{; Ray Girvan, March 1998
     ; needs two seed values z0, z1
     ; Newton-like images, perturbed by choice of z1,
     ; a relaxation factor p2, and a function fn2
-    ; inside the iteration loop 
+    ; inside the iteration loop
    z=pixel, z0=(0,0), z1=fn1(z)+p1:
    f0=z0*z0*z0*z0*z0-1
-   f1=z1*z1*z1*z1*z1-1 
+   f1=z1*z1*z1*z1*z1-1
    z=z-p2*f1*(z1-z0)/(f1-f0);
    z0=z1;
    z1=fn2(z),
@@ -852,20 +852,20 @@ Nuclear_M_k_1 { ; p1, p2 parameters. Use float=y. k is Mandel parameter,
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
-Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
+Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
               ; Use outside=real, float=y, periodicity=n,
               ; maxiter>=256, and logmap=0.
               ; For logmap effect put real(p2) minimum iteration,
               ; imag(p2) bigger than 1, e.g. 2.
               ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
               ; ranges.
               ; Use first for outside, second thru fourth for two
               ; critical points escape, one trapped...
               ; Coloring variant.
               ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -873,8 +873,8 @@ Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=10^(-7)
   :
@@ -1252,19 +1252,19 @@ FlexBalls_Mand {; Copyright (c) Paul W. Carlson, 1998
     z = z - iter
     bailout == 0 && |w| < 1000
 }
-Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
+Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
              ; Use outside=real, float=y, periodicity=n,
              ; maxiter>=256, and logmap=0.
              ; For logmap effect put real(p2) minimum iteration,
              ; imag(p2) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -1272,8 +1272,8 @@ Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -1580,7 +1580,7 @@ Nuclear_JColLogB { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                    ; and attracted to infinity. Uses a "logmap".
                    ; Variation: qq shrunk.
                    ; Suitable for deeper zooms.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.00000001, bail=1000
@@ -1682,8 +1682,8 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   tenthinvpixel = .1/newpixel
-  b6=conj(tenthinvpixel) 
-  b7=flip(.1*tenthinvpixel) 
+  b6=conj(tenthinvpixel)
+  b7=flip(.1*tenthinvpixel)
   b8=cabs(.02*tenthinvpixel+cabs(0.02*tenthinvpixel))
   b4=abs(newpixel^2)*conj(flip(newpixel^3))\
      -conj(tenthinvpixel-flip(0.1*tenthinvpixel))
@@ -1699,16 +1699,16 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
   :
   IF (iter == p1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)     
+    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)
   ELSEIF (iter == imagp1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.225*origz)   
+    c=(-0.7456,-0.13214)+conj(.225*origz)
   ELSEIF (iter == p2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.3375*origz)   
+    c=(-0.7456,-0.13214)+conj(.3375*origz)
   ELSEIF (iter == imagp2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.50625*origz)   
+    c=(-0.7456,-0.13214)+conj(.50625*origz)
   ENDIF
   z=z*z+c
   iter=iter+1
@@ -1895,7 +1895,7 @@ Nuclear_JulCol { ; p1, p2, p3 parameters. Use float=y, outside=real, logmap=0,
 Nuclear_JulCol { ; p1, p2, p3 parameters. Use float=y, outside=real,logmap=0,
                  ; periodicity=0. Colors from 4 ranges by finite attractors
                  ; and attracted to infinity.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
 r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.000001, bail=1000
@@ -2000,7 +2000,7 @@ Nuclear_Jul { ; p1, p2, p3 parameters. Use float=y.
   lastsqr<=1000000
 }
 Nuclear_Jul { ; p1, p2, p3 parameters. Use float=y.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2, 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2,
   r3ac=r3*ac, ack=k*ac
   z=pixel:
   z2=sqr(z)
@@ -2008,18 +2008,18 @@ Nuclear_Jul { ; p1, p2, p3 parameters. Use float=y.
   z=(r3a2*z3-a6*z2-r3ac*z-ac)/(r3*z+1)+ack,
   lastsqr<=1000000
 }
-Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based 
-             ; on all 3 critical points. Use outside=real, float=y, 
+Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
+             ; on all 3 critical points. Use outside=real, float=y,
              ; periodicity=n, maxiter>=256, and logmap=0.
              ; For logmap effect put real(p3) minimum iteration,
              ; imag(p3) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p3)
   p=imag(p3)
@@ -2027,8 +2027,8 @@ Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -2349,19 +2349,19 @@ gravijul4 { ;variation of a Mark Christenson frm
   z = fn4(p1/fn3(w*w)) + p2
   |z| < bailout
 }
-Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
+Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
              ; Use outside=real, float=y, periodicity=n,
              ; maxiter>=256, and logmap=0.
              ; For logmap effect put real(p1) minimum iteration,
              ; imag(p1) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p1)
   p=imag(p1)
@@ -2369,8 +2369,8 @@ Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -2672,14 +2672,14 @@ Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
   ENDIF
   done==0
 }
-FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                 ; by George Martin 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=sin(z)/cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
 }
 F'Cetjoz {; fn1 added by Jon Horner
   z=pixel, c=p1:
@@ -2734,7 +2734,7 @@ IslandOfChaos (XAXIS_NOPARM) {
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)/cosxx(z)+pixel
-  x=x+1 
+  x=x+1
   |z|<=4
 }
 zmincoszb {; David Walter
@@ -2756,8 +2756,8 @@ ManInTheOzone (XAXIS_NOPARM) {
   z=sqr(z)+pixel
   z=cos(z)+pixel
   z=sin(z)+pixel
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
 }
 Newt_Fnc_Julia {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
@@ -2893,7 +2893,7 @@ HyCycl_Julia {; Copyright (c) Paul W. Carlson, 1998
     bailout == 0 && |w| < 10000
 }
 051597-002a   {; Linda Allison May 15, 1997
-; stars modified by David Shanholtzer 
+; stars modified by David Shanholtzer
  z=0;
  c=log(sqr(sqr(pixel))*pixel)*0.4:
  z2=fn1(z)+c
@@ -3055,7 +3055,7 @@ gravibrot{ ; generalized r^(-2) by Mark "Bud" Christenson 3/13/98
 ; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
    z = p2
    c = pixel:
- 
+
    w = fn1(z)
    z = fn3(p1/fn2(w*w)) + c
     |z| < p3
@@ -3090,7 +3090,7 @@ Formulization { ; Copyright (c) Paul W. Carlson, 1998
 Newt8-JAtan-Mset {; (c) Jay R. Hill, 1998
 ; Newton method set up as a Mandelbrot set
 ; This formula searches for 8 roots of a function
-; Inspired by Paul Carlson's Newt5_Atan_Mset 
+; Inspired by Paul Carlson's Newt5_Atan_Mset
 ; p1=width of root finding
 ; p2=A=constant in formula
 ; F(w) = w^8 - A*w^7 - w*c + A*c
@@ -3124,7 +3124,7 @@ bailout == 0
 Newt6-JAtan-Mset {; (c) Jay R. Hill, 1998
          ; Newton method set up as a Mandelbrot set
          ; This formula searches for 6 roots of a function
-         ; Inspired by Paul Carlson's Newt5_Atan_Mset 
+         ; Inspired by Paul Carlson's Newt5_Atan_Mset
   ; p1=precision of root finding, try =.001
   ; p2=A=scaling constant in formula, try =1
   ; F(w)   = w^6 - A*w^5 - w*c + A*c
@@ -3812,12 +3812,12 @@ bubbleboth_jul { ; Kerry Mitchell
         iter > 0
         }
 3telescope {; (c) Jay Hill, 1998
-            ; use outside=summ periodicity=0 
+            ; use outside=summ periodicity=0
   done = 1, z = 0, zc = 0, c = pixel
   s=|c|, t1=(256*s - 96)*s + 32*Real(c)              ; period 1 test
   t2=16*s + 32*Real(c) + 16                          ; period 2 test
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| ; period 3 tests
-  z=z + 249*(t1<=3) + 250*(t2<=1)\ 
+  z=z + 249*(t1<=3) + 250*(t2<=1)\
        + 251*(t3<=1) + 252*(t4<=1)      ; set colors
   IF (z>0)                              ; for periods 1, 2, and 3.
     done=-1         ; color is set for c in a component, skip iterations
@@ -3838,4 +3838,4 @@ Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+

@@ -5,7 +5,7 @@ mc {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 moz {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -13,7 +13,7 @@ moz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 m1 {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -21,7 +21,7 @@ m1 {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 moc {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -29,7 +29,7 @@ moc {
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 mz {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -37,4 +37,4 @@ mz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+

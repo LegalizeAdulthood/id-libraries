@@ -76,7 +76,7 @@ yyt {
   z = zp1^z - zp2
   zp2 = zp1
   zp1 = p1/temp
-  (|zp2| <= 64) && (|z| <= huge) 
+  (|zp2| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 

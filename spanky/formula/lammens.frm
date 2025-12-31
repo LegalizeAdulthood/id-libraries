@@ -12,7 +12,7 @@
 ; From: Bert Lammens <Bert.Lammens@RUG.AC.BE>
 ; Subject: a formula file
 ; Lines: 67
-;  
+;
 ; Now that my exams are over, I really dug deep into fractint.
 ; And this is one of the results.
 ; I haven't had the time to think of original names, or to search for
@@ -20,13 +20,13 @@
 ; a bit.
 ; Warning : I made this file for fractint on a 486 DX2, with FPU.
 ;           I have no idea of calculation times on other platforms.
-;  
+;
 ; P.s. Ever tried to use statistical distributions in these formulas ?
 ;      (I'm still working on that one)
 ; -------------------------------------------------------------------------
 ; Remark : use float=n for most configurations.
 ;          don't forget to give a non-zero value to p2
- 
+
 New_number1 (XAXIS) { z = z1 = z2 = pixel, c1 = real(p1), c2 = imag(p1) :
                z1 = z1*z1+c1,
                z2 = z2*z2+c2,
@@ -75,7 +75,7 @@ New_number6  (XAXIS){ z = z1 = z2 = pixel, c1 = real(p1), c2 = imag(p1) :
                z = fn4(z1-pixel)*(1-fn3(z1))+fn3(z2)*fn4(z2-pixel),
                |z|< |p2|
                }
- 
+
 comment  { ; Lammens Bert  :
            ; Student Civil Engineering,
            ; University of Ghent, Belgium,

@@ -1,18 +1,18 @@
 ; From:  Albrecht.Niekamp@t-online.de (Albrecht Niekamp)
 ;   To:  <fractint@mailman.xmission.com>
 ; Date:  Thu, 13 Mar 2003 16:33:21 +0100
-; 
+;
 ; I am Albrecht (Al) from Duesseldorf, Germany...  This contribution is
 ; something I came upon when I was meditating about what could make a
 ; fractal look 3d. ---..  The 4-dimensional room can be seen as a warped
 ; 3-dimensional room and a "3d"fractal accordingly should be a warped
 ; version of the basic fractal.  The way it is warped of course is
 ; determined by the depth of the fractal.
-; 
+;
 ; Also I found out, that double iterating opens the possibilty to use the
 ; first pass for the "warp"factor and the second pass lets you control what
 ; is inside and what is outside.
-; 
+;
 ; I dont know if this has been done before, anyway I`ve never seen anything
 ; like it, and hope there will be a discussion about this.I know that T-dis
 ; has a great part in the 3d-effects, but T-dis alone doesnt do the job.
@@ -396,10 +396,10 @@ Multifrac_211 { ;  Albrecht Niekamp  feb,03
  out=real (p2)
  border=imag(p2)
  if (ismand)
-  z = 0 
+  z = 0
   c = pixel
  else
-  z = pixel 
+  z = pixel
   c = p3
  endif
  t=0
@@ -413,7 +413,7 @@ Multifrac_211 { ;  Albrecht Niekamp  feb,03
  t=t+1
  x = x2-y2-real(c)
  y = 2*x*y-imag(c)
- z = z^(z+x-y)    
+ z = z^(z+x-y)
  if (|z|>=border || t>out)
    u=fn1(t/fac)
    if (ismand)
@@ -433,7 +433,7 @@ Multifrac_211 { ;  Albrecht Niekamp  feb,03
    else
     z=z^z+c
   endif
- endif 
+ endif
  |z| <=bailout
  }
 
@@ -444,10 +444,10 @@ Multifrac_212 { ;  Albrecht Niekamp  feb,03
  out=real (p2)
  border=imag(p2)
  if (ismand)
-  z = 0 
+  z = 0
   c = pixel
  else
-  z = pixel 
+  z = pixel
   c = p3
  endif
  t=0
@@ -461,7 +461,7 @@ Multifrac_212 { ;  Albrecht Niekamp  feb,03
  t=t+1
  x = x2-y2-real(c)
  y = 2*x*y-imag(c)
- z = z^(z+x-y)    
+ z = z^(z+x-y)
  if (|z|>=border || t>out)
    u=2*(fn1(t/fac))
    if (ismand)
@@ -483,7 +483,7 @@ Multifrac_212 { ;  Albrecht Niekamp  feb,03
    else
     z=z^(z+x-y)
   endif
- endif 
+ endif
  |z| <=bailout
  }
 
@@ -494,7 +494,7 @@ Multifrac_213 { ;  Albrecht Niekamp  feb,03
  bailout=imag(p1)
  out=real (p2)
  border=imag(p2)
- z=pixel 
+ z=pixel
  c=p3
  t=0
  start=1
@@ -527,7 +527,7 @@ Multifrac_214 { ;  Albrecht Niekamp  feb,03
  bailout=imag(p1)
  out=real (p2)
  border=imag(p2)
- z=pixel 
+ z=pixel
  c=p3
  t=0
  start=1
@@ -560,7 +560,7 @@ Multifrac_215 { ;  Albrecht Niekamp  feb,03
  bailout=imag(p1)
  out=real (p2)
  border=imag(p2)
- z=pixel 
+ z=pixel
  c=p3
  t=0
  start=1
@@ -992,7 +992,7 @@ Multifrac_223 {
  endif
  if (start)
   t=t+1
-   if (|z|>=border) 
+   if (|z|>=border)
     u=2*(fn1(t/fac))
     z=z/u
     c=p3*u
@@ -1000,7 +1000,7 @@ Multifrac_223 {
    endif
    if (t>out)
     u=2*(fn2(t/fac))
-    z=0 
+    z=0
     c=pixel
     x=1
     start=0
@@ -1028,13 +1028,13 @@ Multifrac_224 {
  endif
  if (start)
   t=t+1
-  if (t>out) 
+  if (t>out)
     u=2*(fn1(t/fac))
     z=z/u
     c=p3*u
     start=0
    endif
-  if (|z|>=border)   
+  if (|z|>=border)
   u=2*(fn2(t/fac))
     z=z/u
     c=pixel

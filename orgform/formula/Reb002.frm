@@ -1,7 +1,7 @@
 ;------------------------------------------------;
 ; REB002.FRM                                     ;
 ; Ron Barnett 70153,1233                         ;
-;------------------------------------------------; 
+;------------------------------------------------;
 
    IkeGenM {	; Ron Barnett, 1993
    z = ((1-pixel)/(3*p1))^0.5:
@@ -16,13 +16,13 @@
    FrRbtGenM {; Ron Barnett, 1993
    z = pixel:
    z = p1*z*z*z + z*z + pixel, |z| <= 100
-   }   
+   }
 
    FrRbtGenJ {; Ron Barnett, 1993
    z = pixel:
    z = p1*z*z*z + z*z + p2, |z| <= 100
-   }   
-   
+   }
+
    IkeFrRbtGenM {; Ron Barnett, 1993
    z = 2*(1-pixel)/(3*p1):
    z = p1*z*z*z + (pixel-1)*z*z - pixel, |z| <= 100

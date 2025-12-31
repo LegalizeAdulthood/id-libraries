@@ -13,7 +13,7 @@ Carr2182 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2121 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=1/(pixel-asin(pixel))
   c=(-1.099,-0.2349)
@@ -28,7 +28,7 @@ Carr2121 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42ccarr.frm
 }
- 
+
 Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=(sqr(pixel))/(conj(2/pixel)*sin(2/pixel))
@@ -45,11 +45,11 @@ Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
   imag(flip(z))<=bailout
   ;SOURCE: 42vcarr.frm
 }
- 
+
 Carr2907 (XYAXIS) {; Halley PHC
                    ; passes=1 needs to be used with this PHC formula.
   b5=1/pixel
-  z=b5*(whitesq+b5*(whitesq==0)): 
+  z=b5*(whitesq+b5*(whitesq==0)):
   z5=z*z*z*z*z
   z6=z5*z
   z7=z6*z
@@ -57,7 +57,7 @@ Carr2907 (XYAXIS) {; Halley PHC
   0.0001<=|z7-z|
   ;SOURCE: 42ucarr.frm
 }
- 
+
 carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; Converted to if.else by Sylvie Gallet and George Martin 3/97
           ; passes=1 needs to be used with this PHC formula.
@@ -96,4 +96,4 @@ carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
    mz <= bailout
   ;SOURCE: ifs196.frm
 }
- 
+

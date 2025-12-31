@@ -6,7 +6,7 @@ gravijul {; r^(-2) Mark Christenson 1/25/98
   |z| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 gravijul-v2 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   z = pixel:
   w = fn1(real(z)), x = fn3(p1/fn2(w*w))
@@ -15,7 +15,7 @@ gravijul-v2 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   |z| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 gravijul-v3 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   z = pixel:
   w = fn1(z)
@@ -23,7 +23,7 @@ gravijul-v3 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   |z| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 gravijul-v4 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   z = pixel :
   w = fn1(1/z)
@@ -31,4 +31,4 @@ gravijul-v4 {; Variation on Mark Christenson's gravijul by Sylvie Gallet
   |z| < p3
   ;SOURCE: sg_gravj.par
 }
- 
+

@@ -1,6 +1,6 @@
 ; formulas accessed from my PARS, lumped in here for convenience.
-; Sources are noted ... thanks, folks 
-; 
+; Sources are noted ... thanks, folks
+;
 ; >>don CIS:76704,41
 
 ; from SKINNER.FRM - Lee Skinner
@@ -12,7 +12,7 @@ CGNewtonSinExp (XAXIS) {
         z2=sin(z)+z1-z;
         z=z-p1*z2/(cos(z)+z1), .0001 < |z2|
    }
-   
+
 Leeze (XAXIS) {
                        s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }

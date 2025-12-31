@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -50,10 +50,10 @@
   z = pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
-} 
+}
 
   1306 {
   z = 0.1/pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
-} 
+}

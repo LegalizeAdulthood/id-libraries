@@ -4,14 +4,14 @@ aa-diamand {
   (real(z)+imag(z))<p1
   ;SOURCE: eli.frm
 }
- 
+
 aa-z-to-c (XAXIS) {
   z = pixel, c = z:
   z = exp(c*log(z))
   |z| <= p1
   ;SOURCE: eli.frm
 }
- 
+
 aaa-deals {
   z = pixel, a=real(z), b=imag(z), i=((0-1)^0.5):
   x = real(z)
@@ -22,4 +22,4 @@ aaa-deals {
   |z|<p1
   ;SOURCE: eli.frm
 }
- 
+

@@ -4,4 +4,4 @@
   |z|<=10
   ;SOURCE: queratz.frm
 }
- 
+

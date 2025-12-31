@@ -18,5 +18,5 @@ contest5  {; Kerry Mitchell
          }
 
 ; "...God is in the details..." Linus C. Pauling
-; 
+;
 ; Nuke

@@ -7,7 +7,7 @@ multifrac4 {
   z = sqr(z+x+y)
   |z| > (x2+y2)
   }
- 
+
 multifrac4 {
   z = pixel:
   y2 = y*y
@@ -17,4 +17,4 @@ multifrac4 {
   z = sqr(z+x+y)
   |z| > (x2+y2)
   }
- 
+

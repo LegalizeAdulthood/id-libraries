@@ -24,16 +24,16 @@ la-uhr6   { ; Guy Marson <guy.marson@mnhn.lu> -- Tue, 21 May 2002 21:22:59
             ; lake-transformation = Sylvie Gallet, Jan 16, 2000
        ; requires: FractInt >20.0.6, periodicity=0' and 'passes=1'
        ; compilation: guy.marson@mnhn.lu (12.05.2002)
-       ; Try real(p1)=2, imag(p1)=0, real(p2)=1, imag(p2)=1, r(p3)=1, 
-       ; real(p5)=1, imag(p5)=0, fn1=ident, fn2=ident for standard Mandelbrot. 
-       ; A=real(p2), B=imag(p2), C=real(p3). If B=A*C then text is invisible, 
+       ; Try real(p1)=2, imag(p1)=0, real(p2)=1, imag(p2)=1, r(p3)=1,
+       ; real(p5)=1, imag(p5)=0, fn1=ident, fn2=ident for standard Mandelbrot.
+       ; A=real(p2), B=imag(p2), C=real(p3). If B=A*C then text is invisible,
        ; else=visible! Try e.g. A=1, B=0.75, C=1 for visible text.. (or B=1.15)
        ; imag part of p3: 0 = lake transform disabled
        ;                  any value between 0 and 100: water level in % of
        ;                  the screen height (0 = bottom, 100 = top)
        ; real part of p4: amplitude of the wave (try 0.2)
        ; imag part of p4: frequency (try 300)
-       ; real(p5) and imag(p5) are related to fn2.. 
+       ; real(p5) and imag(p5) are related to fn2..
        ; set the FractInt preView command (V) to: yes/1/1/yes/0/0
 ;
 ; Lake transformation:
@@ -54,7 +54,7 @@ if (real(p3) > 0 && real(p3) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
  pixel = z + z3rd
 endif
@@ -451,7 +451,7 @@ new2003 { ; Guy Marson <guy.marson@mnhn.lu>
 
 ny2004-4 { ; Guy Marson <guy.marson@mnhn.lu>
            ; Sat, 03 Jan 2004 21:17:56
-           ; fn1-fn4 ident = Mandelbrot 
+           ; fn1-fn4 ident = Mandelbrot
            ; with lake transformation from Sylvie Gallet, Jan 16, 2000
            ; ---
            ; real(p1) = merging of text (function dependent)
@@ -564,14 +564,14 @@ ny2004-4 { ; Guy Marson <guy.marson@mnhn.lu>
   }
 
 p1-p3    { ; Guy Marson <guy.marson@mnhn.lu>
-           ; Mon, 08 Dec 2003 01:07:24 
+           ; Mon, 08 Dec 2003 01:07:24
 z=c=(((pixel-p3)/p1)^p2):
 z=z*z+c
 |z| <=4
 }
 
 Bjax-b   { ; Guy Marson <guy.marson@mnhn.lu>
-           ; Mon, 19 Jan 2004 15:18:51 
+           ; Mon, 19 Jan 2004 15:18:51
            ; Bailout = imag(p2)
   z=c=2/pixel:
    z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c
@@ -580,7 +580,7 @@ Bjax-b   { ; Guy Marson <guy.marson@mnhn.lu>
 
 
 epsi-9   { ; Guy Marson <guy.marson@mnhn.lu>
-           ; Tue, 11 Apr 2006 19:28:06 
+           ; Tue, 11 Apr 2006 19:28:06
            ; epsiloncross test rotated 45 degrees (generalized by Guy Marson)
     z=c=pixel:
     z=z*z+c

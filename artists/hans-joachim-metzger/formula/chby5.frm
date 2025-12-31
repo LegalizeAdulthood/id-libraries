@@ -10,7 +10,7 @@ C06-05 {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby5.frm
 }
- 
+
 Ca06-05 {; V.1.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = ((a+5)xCa(5)-(a+2)Ca(4))/3
@@ -31,9 +31,9 @@ Ca06-05 {; V.1.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby5.frm
 }
- 
+
 P10-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP(9)-9P(8))/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -44,7 +44,7 @@ P10-05 {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby5.frm
 }
- 
+
 U10-05 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zU09-U08
@@ -59,4 +59,4 @@ U10-05 {; V.1.1 - earlier versions may be discarded
   bailout<=|z-oz|
   ;SOURCE: chby5.frm
 }
- 
+

@@ -13,7 +13,7 @@ PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 shifter01 {; After shift, switch from z*z to z*z*z
            ; Bradley Beacham  [74223,2745]
            ; Modified for if..else logic 3/18/97 by Sylvie Gallet
@@ -28,7 +28,7 @@ shifter01 {; After shift, switch from z*z to z*z*z
   |z| < test
   ;SOURCE: fract196.frm
 }
- 
+
 inandout14 {; Bradley Beacham  [74223,2745]
             ;p1 = Parameter (default 0), real(p2) = Bailout (default 4)
             ;The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -45,7 +45,7 @@ inandout14 {; Bradley Beacham  [74223,2745]
   |z| <= test
   ;SOURCE: snazzy.frm
 }
- 
+
 shifter02 {; After shift, flop sign of C on each iteration
            ; Bradley Beacham  [74223,2745]
            ; P1 = shift value, P2 varies bailout value
@@ -58,7 +58,7 @@ shifter02 {; After shift, flop sign of C on each iteration
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 shifter03 {; After shift, switch from fn1(z) to fn2(z)
            ; Bradley Beacham  [74223,2745]
            ; P1 = shift value, P2 varies bailout value
@@ -70,7 +70,7 @@ shifter03 {; After shift, switch from fn1(z) to fn2(z)
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 shifter04 {; After shift, switch from fn1(z*z) to fn2(z*z)
            ; Bradley Beacham  [74223,2745]
            ; P1 = shift value, P2 varies bailout value
@@ -82,7 +82,7 @@ shifter04 {; After shift, switch from fn1(z*z) to fn2(z*z)
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 shifter05 {; After shift, switch from z^p1 to z^p2
            ; Bradley Beacham  [74223,2745]
            ; P1 & P2 are exponents (try 2 and 3, for example)
@@ -95,7 +95,7 @@ shifter05 {; After shift, switch from z^p1 to z^p2
   |z| < 4
   ;SOURCE: snazzy.frm
 }
- 
+
 slider01 {; Bradley Beacham  [74223,2745]
           ; P1 = exponent A, P2 = exponent B
           ; P3 varies radius of bailout circle (default 2)
@@ -105,7 +105,7 @@ slider01 {; Bradley Beacham  [74223,2745]
   f < 1.0
   ;SOURCE: dons.frm
 }
- 
+
 slider02 {; Bradley Beacham  [74223,2745]
           ; P1 = exponent A, P2 = exponent B
           ; P3 varies radius of bailout circle (default 2)
@@ -115,7 +115,7 @@ slider02 {; Bradley Beacham  [74223,2745]
   f < 1.0
   ;SOURCE: dons.frm
 }
- 
+
 speed01 {; Speed chooses between functions, escape-time
          ; Bradley Beacham  [74223,2745]
          ; P1 is maximum speed for "slow"
@@ -131,8 +131,8 @@ speed01 {; Speed chooses between functions, escape-time
   |z| <= limit
   ;SOURCE: snazzy.frm
 }
- 
-speed02 {; Acceleration chooses between functions, 
+
+speed02 {; Acceleration chooses between functions,
          ; acceleration-limit-time
          ; Bradley Beacham  [74223,2745]
          ; P1 varies definition of acceleration
@@ -150,7 +150,7 @@ speed02 {; Acceleration chooses between functions,
   accel <= limit
   ;SOURCE: snazzy.frm
 }
- 
+
 wha01 {; Use a counter to gradually change size of value added
        ; Bradley Beacham  [74223,2745]
        ; P1 sets value of constant (try 0.01, for example)
@@ -161,7 +161,7 @@ wha01 {; Use a counter to gradually change size of value added
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 wha02 {; Use a counter to gradually change proportions of algorithms
        ; Bradley Beacham  [74223,2745]
        ; P1 sets starting value for k
@@ -173,7 +173,7 @@ wha02 {; Use a counter to gradually change proportions of algorithms
   |z| < limit
   ;SOURCE: snazzy.frm
 }
- 
+
 wha03 {; Use a counter to gradually change exponent
        ; Bradley Beacham  [74223,2745]
        ; P1 varies starting value for exponent
@@ -185,4 +185,4 @@ wha03 {; Use a counter to gradually change exponent
   |z| < limit
   ;SOURCE: snazzy.frm
 }
- 
+

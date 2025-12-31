@@ -12,7 +12,7 @@ multifrac59 {
   endif
   |z| > (x*y)
   }
- 
+
 multifrac59 {
   z =pixel:
   y2=fn2(y)
@@ -27,4 +27,4 @@ multifrac59 {
   endif
   |z| > (x*y)
   }
- 
+

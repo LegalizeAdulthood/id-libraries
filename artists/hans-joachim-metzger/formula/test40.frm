@@ -9,7 +9,7 @@ multifrac40 {
   z = z^(z-x-y-w)
   |z| > (x2*w2*y2)
   }
- 
+
 multifrac40 {
   z = pixel:
   y2 = y*y
@@ -21,4 +21,4 @@ multifrac40 {
   z = z^(z-x-y-w)
   |z| > (x2*w2*y2)
   }
- 
+

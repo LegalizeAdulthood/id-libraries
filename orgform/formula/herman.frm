@@ -1,5 +1,5 @@
 herman_man-polar {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; real(p1) = z exponent (use integer >= 2; m=n-1)
         ; imag(p1) = coloring speed (try 4)
@@ -55,7 +55,7 @@ herman_man-polar {; Kerry Mitchell 15feb98
 }
 
 herman_man-cart {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; real(p1) = z exponent (use integer >= 2; m=n-1)
         ; imag(p1) = coloring speed (try 4)
@@ -109,7 +109,7 @@ herman_man-cart {; Kerry Mitchell 15feb98
 }
 
 herman_jul-polar {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; p1 = Julia parameter
         ; real(p2) = z exponent (use integer >= 2; m=n-1)
@@ -152,7 +152,7 @@ herman_jul-polar {; Kerry Mitchell 15feb98
 }
 
 herman_jul-cart {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; p1 = Julia parameter
         ; real(p2) = z exponent (use integer >= 2; m=n-1)
@@ -245,36 +245,36 @@ herman_alpha {; Kerry Mitchell 15feb98
 ;            narrative copyright Kerry Mitchell 15feb98
 ;
 ; Applicable to these formulas:
-;           herman_alpha (above) 
+;           herman_alpha (above)
 ;           herman_man-polar
 ;           herman_man-cart
-;           herman_jul-polar 
-;           herman_jul-cart 
+;           herman_jul-polar
+;           herman_jul-cart
 ;
 ; Higher order Herman Rings
 ;
-; In Paul Derbyshire's posting about Herman Rings, he gave a formula 
+; In Paul Derbyshire's posting about Herman Rings, he gave a formula
 ; that was known to generate the rings:
 ;
 ; H(z) = alpha * z^2 * (z-c) / (1-c*z).
 ;
-; Paul's examples tended to resemble, in overall shape, Julia sets 
-; from the standard quadratic, f(z) = z^2 + c.  I surmised that this 
-; was due to the z^2 factor in H(z), and conjectured that higher 
-; order Herman Rings could be made by increasing the z exponent.  
-; Just going from z^2 to z^3 was interesting, but didn't result in 
+; Paul's examples tended to resemble, in overall shape, Julia sets
+; from the standard quadratic, f(z) = z^2 + c.  I surmised that this
+; was due to the z^2 factor in H(z), and conjectured that higher
+; order Herman Rings could be made by increasing the z exponent.
+; Just going from z^2 to z^3 was interesting, but didn't result in
 ; the same sort of dynamics that H(z) had.  So, I generalized H(z)
 ; into F(z):
 ;
 ; F(z) = alpha * z^n * g(z)^m, where
 ; g(z) = (z-c)/(1-c*z).
-; 
-; The formula that Paul used had n=2 and m=1.  I tried n=3 and m=1 
-; and determined it to be unsuccessful.  So, I tried n=3 and m=2, 
-; and decided that, in general, m should be equal to n-1 for higher 
+;
+; The formula that Paul used had n=2 and m=1.  I tried n=3 and m=1
+; and determined it to be unsuccessful.  So, I tried n=3 and m=2,
+; and decided that, in general, m should be equal to n-1 for higher
 ; order rings.
 ;
-; Finding the critical points for F is not as hard as it may seem.  
+; Finding the critical points for F is not as hard as it may seem.
 ; Using the derivative rules from calculus,
 ;
 ; F' = alpha * nz^(n-1) * g^m + alpha * z^n * mg'g^(m-1).
@@ -299,40 +299,40 @@ herman_alpha {; Kerry Mitchell 15feb98
 ;
 ; z = [c^2 + (2n-1)] +/- sqrt([c^2 - 1]*[c^2 - (2n-1)^2])] / (2nc).
 ;
-; Using this directly as the starting point for Mandelbrot-type 
-; images leads to discontinuities, where one root should be used 
-; instead of the other.  These discontinuities occur when real(c^2) 
+; Using this directly as the starting point for Mandelbrot-type
+; images leads to discontinuities, where one root should be used
+; instead of the other.  These discontinuities occur when real(c^2)
 ; = n^2 + m^2, and at the imaginary axis.  In the formulas below
 ; (herman_man and herman-alpha), they are automatically handled
 ; in the initialization.  Since Julia sets are not initialized
 ; using critical points, the herman_jul formulas lack this logic.
 ;
-; The rotation parameter, alpha, is what seems to determine whether 
-; or not Herman rings actually show up.  Two methods can be used to 
-; set alpha--cartesian and polar coordinates.  For the cartesian 
-; method (-cart formulas), the real and imaginary parts of alpha are 
-; input directly.  With the polar method (-polar formulas), the 
-; magnitude and polar angle of alpha are input.  This makes it very 
-; easy to specify rotation by an irrational angle.  Simply specify a 
-; *rational* number for the polar angle.  The irrationality of the 
-; rotation angle is expressed as an irrational number of turns, not 
-; radians.  Since the difference between turns and radians involves 
-; a factor of pi, which is irrational, using a rational number of 
+; The rotation parameter, alpha, is what seems to determine whether
+; or not Herman rings actually show up.  Two methods can be used to
+; set alpha--cartesian and polar coordinates.  For the cartesian
+; method (-cart formulas), the real and imaginary parts of alpha are
+; input directly.  With the polar method (-polar formulas), the
+; magnitude and polar angle of alpha are input.  This makes it very
+; easy to specify rotation by an irrational angle.  Simply specify a
+; *rational* number for the polar angle.  The irrationality of the
+; rotation angle is expressed as an irrational number of turns, not
+; radians.  Since the difference between turns and radians involves
+; a factor of pi, which is irrational, using a rational number of
 ; radians insures that the number of turns is irrational.  The effect
 ; of alpha can be show through the special Mandelbrot-type formula,
 ; herman_alpha.  Here, c is input through parameters and z is
 ; initialized accordingly.  The parameter alpha is varied by being
 ; set to the pixel value.
 ;
-; The following formulas all use the renormalization method to 
-; reduce banding.  In this implementation, the actual coloring is 
-; performed using the decomposition method.  This allows separate 
-; rendering of the orbits that get attracted to infinity and those 
-; that get attracted to 0.  After forming the decomposition angle 
-; based on the iteration count, those pixels that escape to infinity 
-; have their angle increased by pi.  This means that for the same 
-; iteration count, two pixels with different basins of attraction 
-; will be separarated by half of the color palette.  Those pixels 
+; The following formulas all use the renormalization method to
+; reduce banding.  In this implementation, the actual coloring is
+; performed using the decomposition method.  This allows separate
+; rendering of the orbits that get attracted to infinity and those
+; that get attracted to 0.  After forming the decomposition angle
+; based on the iteration count, those pixels that escape to infinity
+; have their angle increased by pi.  This means that for the same
+; iteration count, two pixels with different basins of attraction
+; will be separarated by half of the color palette.  Those pixels
 ; whose orbits are not attracted by either 0 or infinity are treated
 ; as inside pixels.
 ;

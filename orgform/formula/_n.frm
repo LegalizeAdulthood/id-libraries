@@ -48,9 +48,9 @@ N-XY-YZrotation {; Jim Muth, thanks to Benno
 }
 
 
-N1 (XYAXIS) {    
-  z=pixel:  
-  z=1/sin(1/(z*pixel))             
+N1 (XYAXIS) {
+  z=pixel:
+  z=1/sin(1/(z*pixel))
   |z|<=4
   ;SOURCE: fixrch.frm
 }
@@ -144,7 +144,7 @@ N3_1 (XAXIS) {
 }
 
 
-N3_1ch (XAXIS) { 
+N3_1ch (XAXIS) {
   z=pixel:
   z=1/cosh(1/((z^z)*pixel))+pixel
   |z|<=4
@@ -155,7 +155,7 @@ N3_1ch (XAXIS) {
 N3_1cosh (xyaxis) {
   z=pixel:
   z=1/cosh(1/((z^z)*pixel))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -171,7 +171,7 @@ N3_1sh (XAXIS) {
 N3_1sinh (xyaxis) {
   z=pixel:
   z=1/sinh(1/((z^z)*pixel))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -195,7 +195,7 @@ N3_2ch (XAXIS) {
 N3_2cosh (xyaxis) {
   z=pixel:
   z=1/cosh(1/((z^z)*pixel))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -211,7 +211,7 @@ N3_2sh (XAXIS) {
 N3_2sinh (xyaxis) {
   z=pixel:
   z=1/sinh(1/((z^z)*pixel))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -219,7 +219,7 @@ N3_2sinh (xyaxis) {
 N3_cosh (xyaxis) {
   z=pixel:
   z=1/sinh(1/((z^z)*pixel))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -227,7 +227,7 @@ N3_cosh (xyaxis) {
 N3_sinh (xyaxis) {
   z=pixel:
   z=1/sinh(1/((z^z)*pixel))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -256,7 +256,7 @@ N5 (XYAXIS) {
 }
 
 
-N5fn1[fn2] { 
+N5fn1[fn2] {
   z = pixel+1/fn1(p2 * fn2(pixel-p1)), Root = 1:
   z = (4 * z^5 + Root) / (5 * z^4)
   0.001 <= |z^5 - Root|
@@ -316,14 +316,14 @@ na1 {
   z=(pixel), t=(p1*(z+fn4(z-1)))/p2:
   z2=fn1(t)+whitesq,z3=fn4(z-(1-z))
   z=(z*fn2(z3))+fn3(z2)
-  |z|<4  
+  |z|<4
   ;SOURCE: ad99_1.frm
 }
 
 
 Natura (xyaxis) {; phi yoni
   z = pixel:
-  z = z*z*z + ((sqrt(5) + 1)/2) 
+  z = z*z*z + ((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -372,10 +372,10 @@ nearline-theta_jul {; Kerry Mitchell
 ;******************Kerry Mitchell's explanation of "nearline" formulas**
 ;  applicable to
 ;     nearline-theta_jul (above)
-;     nearline-theta_man 
-;     nearline01_jul 
-;     nearline02_jul 
-;     nearline03 
+;     nearline-theta_man
+;     nearline01_jul
+;     nearline02_jul
+;     nearline03
 ;
 ; narrative copyright Kerry Mitchell, 1998
 ;
@@ -405,7 +405,7 @@ nearline-theta_jul {; Kerry Mitchell
 ; variable space.  Decomposition wraps automatically, so no clipping is
 ; encountered if the color overruns the 0 - 255 index range.  And, the log
 ; function is only executed once per orbit, so the time penalty is minimal.
-; 
+;
 ; The general nature of this coloring is a series of lines, starting at the
 ; fractal boundary and heading to infinity, asymptotic to the angle theta.
 ; How these lines interact and intersect varies greatly with the choice of
@@ -416,7 +416,7 @@ nearline-theta_jul {; Kerry Mitchell
 ; at the origin after 1 iteration by making
 ;
 ; r = imag(c) * x - real(c) * y,
-; 
+;
 ; and clearly, r will be 0 at the origin at the first iteration.
 ; Similarly, if we define
 ;
@@ -448,7 +448,7 @@ nearline-theta_jul {; Kerry Mitchell
 
 
 nearline-theta_man {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Mandelbrot set with nearest approach to a given line
@@ -485,7 +485,7 @@ nearline-theta_man {; Kerry Mitchell
 
 
 nearline01_jul {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Julia sets with nearest approach to a given line
@@ -523,7 +523,7 @@ nearline01_jul {; Kerry Mitchell
 
 
 nearline02_jul {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Julia sets with nearest approach to a given line
@@ -561,7 +561,7 @@ nearline02_jul {; Kerry Mitchell
 
 
 nearline03_jul {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Julia sets with nearest approach to a given line
@@ -600,7 +600,7 @@ nearline03_jul {; Kerry Mitchell
 
 
 neon {; Jim Muth
-      ; Geo test copy 
+      ; Geo test copy
   z=c=pixel:
   z=z^1.045+(.02*z^(-2))+c
   |z| <= 100
@@ -649,7 +649,7 @@ nest {; Giuseppe Zito
   d10 = 0.215734
   d13 = 0.053922
   d14 = 0.437287
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
@@ -664,7 +664,7 @@ nest {; Giuseppe Zito
   s0 = s0 +c13
   s0 = s0 +y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -y
   s0 = s0 -x
@@ -679,9 +679,9 @@ nest {; Giuseppe Zito
   s1 = s1 *d14
   s0 = s0 *s1
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -694,14 +694,14 @@ nest1 {; Giuseppe Zito
   d0 = 0.898609
   d1 = 0.130754
   d9 = 0.29064
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s1 =c2
   s1 = s1 /c3
   s1 = s1 *c4
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 =d0
   s1 =d1
   s1 = s1 *y
@@ -710,9 +710,9 @@ nest1 {; Giuseppe Zito
   s0 = s0 +y
   s0 = s0 -x
   s0 = s0 +d9
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -724,7 +724,7 @@ nest2 {; Giuseppe Zito
   c7 = -0.714867
   c8 = -0.739509
   c14 = 0.100821
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 +x
@@ -737,13 +737,13 @@ nest2 {; Giuseppe Zito
   s0 = s0 +y
   s0 = s0 +x
   s0 = s0 -c14
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -901,12 +901,12 @@ New_Crescent (XAXIS_NOIMAG) {; M-Set to New_Crescent
                              ; starting with w1!
                              ; (c) 1997 Bernd Lehnhoff
                              ; use floating point and periodicity=no!
-                             ; p2 is a perturbation 
+                             ; p2 is a perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel + p2 
-  a = log(|p2|)-12: 
+  v = pixel + p2
+  a = log(|p2|)-12:
   u = v
   w = 1 - (pixel/u)^2
   v = u-u/2*w*(1+w/4)+p2
@@ -919,12 +919,12 @@ New_Crescent (XAXIS_NOIMAG) {; M-Set to New_Crescent
 New_Crescent_3 {; Generalized version of Crescent
                 ; (c) 1997 Bernd Lehnhoff
                 ; use floating point and periodicity=no!
-                ; p2 is a perturbation  
+                ; p2 is a perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
   v = pixel
-  a = log(|p2|)-12: 
+  a = log(|p2|)-12:
   u = v
   w = 1-(pixel/u)^3
   v=u-u/3*w*(1+w/3)+p2
@@ -937,14 +937,14 @@ New_Crescent_3 {; Generalized version of Crescent
 New_Crescent_G {; Generalized version of Crescent
                 ; (c) 1997 Bernd Lehnhoff
                 ; use floating point and periodicity=no!
-                ; p2 is a perturbation  
+                ; p2 is a perturbation
                 ; p3 is the degree of the root
   IF(p2==0)
     p2=0.5
   ENDIF
   v = pixel
-  a = log(|p2|)-12 
-  b = .5*(p3-1)/p3: 
+  a = log(|p2|)-12
+  b = .5*(p3-1)/p3:
   u = v
   w = 1-(pixel/u)^p3
   v=u-u/p3*w*(1+b*w)+p2
@@ -964,17 +964,17 @@ New_cron {
 }
 
 
-New_Moonworld {; based on the improved Newton formula 
+New_Moonworld {; based on the improved Newton formula
                ;   for quadratic polynomes
                ; (c) 1997 Bernd Lehnhoff
                ; use floating point and periodicity=no!
                ; p1 is the radicand
-               ; p2 is a perturbation 
+               ; p2 is a perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
   v = pixel
-  a = log(|p2|)-12: 
+  a = log(|p2|)-12:
   u = v
   w = 1-(p1/u)^2
   v = u-u/2*w*(1+w/4)+p2
@@ -988,11 +988,11 @@ New_Moonworld_3 {; Generalized version of New_Moonworld
                  ; (c) 1997 Bernd Lehnhoff
                  ; use floating point and periodicity=no!
                  ; p1 is the radicand
-                 ; p2 is the perturbation  
+                 ; p2 is the perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel 
+  v = pixel
   a = log(|p2|)-12:
   u = v
   w = 1-(p1/u)^3
@@ -1007,14 +1007,14 @@ New_Moonworld_G {; Generalized version of New_Moonworld
                  ; (c) 1997 Bernd Lehnhoff
                  ; use floating point and periodicity=no!
                  ; p1 is the radicand
-                 ; p2 is the perturbation  
+                 ; p2 is the perturbation
                  ; p3 is the degree of the root
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel 
+  v = pixel
   a = log(|p2|)-12
-  b = .5*(p3-1)/p3: 
+  b = .5*(p3-1)/p3:
   u = v
   w = 1-(p1/u)^p3
   v = u-u/p3*w*(1+b*w)+p2
@@ -1103,8 +1103,8 @@ New_number6 (XAXIS) {; use float=n for most configurations.
 
 
 newCGNewtonSinExp (XAXIS) {; replaced earlier version of this formula,
-                           ; where bailout test of .0000001 has been 
-                           ; changed to p2   
+                           ; where bailout test of .0000001 has been
+                           ; changed to p2
   z=pixel:
   z1=exp(z)
   z2=sin(z)+z1-z
@@ -1170,7 +1170,7 @@ newcpcb5 {
 
 newd01 {
   z = pixel:
-  a = pixel + p1  
+  a = pixel + p1
   b = pixel + fn1(p1)
   z = fn1(z*a) + p1
   z = b*z + pixel
@@ -1198,7 +1198,7 @@ newd03 {
 
 newd04 {
   z = pixel:
-  z = sinh(cos(z)*tan(z)*z) 
+  z = sinh(cos(z)*tan(z)*z)
   z = sqr(abs(z)) + p1
   z = z + pixel
   ;SOURCE: damion.frm
@@ -1297,7 +1297,7 @@ Newfunc2  {
   a=real(z)
   b=imag(z)
   IF ((|a| <= |b|+dis)&& (|a| > |b|-dis))
-    z=(z-pixel)^p1 
+    z=(z-pixel)^p1
   ELSE
     z=(z+pixel)^p2
   ENDIF
@@ -1308,7 +1308,7 @@ Newfunc2  {
 
 NewNewton_a {
   z = pixel+1/fn1(p2 * pixel-p1)  + 1/fn2(p2 * pixel), Root = 1:
-  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4)) 
+  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4))
   0.001<=|z^5-Root+1|
   ;SOURCE: bej3.frm
 }
@@ -1338,22 +1338,22 @@ Newron_2 {
   z = pixel:
   z = z + p1
   z = ((z*z)+1)/2*z
-  z = ((z*z) - 1) / fn1(z)-z 
+  z = ((z*z) - 1) / fn1(z)-z
   |z| < 4
   ;SOURCE: omicron.frm
 }
 
 
 newt {
-   ; Playing around with variations of the ht type. 
+   ; Playing around with variations of the ht type.
    ; This is a frog mutation.
-   ; Try values of P1 between 0.2 and 1.0 
+   ; Try values of P1 between 0.2 and 1.0
    ; Also try the imaginary component.
   z=pixel, zp = (0,0), huge=1.0e32:
   temp = z
   z = z*-z + zp
-  zp = p1/temp^.5 
-  (|zp| <= 4) && (|z| <= huge) 
+  zp = p1/temp^.5
+  (|zp| <= 4) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -1361,7 +1361,7 @@ newt {
 Newt12-JAtan-Mset {; (c) Jay R. Hill, 1998
      ; Newton method set up as a Mandelbrot set
      ; This formula searches for 12 roots of a function
-     ; Inspired by Paul Carlson's Newt5_Atan_Mset 
+     ; Inspired by Paul Carlson's Newt5_Atan_Mset
      ; p1=width of root finding
      ; p2=A=constant in formula
      ; F(w) = w^12 - A*w^11 - w*c + A*c
@@ -1374,7 +1374,7 @@ Newt12-JAtan-Mset {; (c) Jay R. Hill, 1998
   R=(-1)^(2/11), R2=sqr(R)
   root1 = A, root2 = c^(1/11), root3 = root2*R, root4 = root2*R2
   root5 = root4*R, root6 = root4*R2, root7 = root6*R, root8 = root6*R2
-  root9 = root8*R, root10 = root8*R2, root11 = root10*R 
+  root9 = root8*R, root10 = root8*R2, root11 = root10*R
   root12 = root10*R2
   w = 5*A/6
   :
@@ -1805,7 +1805,7 @@ Newt5_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
 Newt6-JAtan-Mset {; (c) Jay R. Hill, 1998
     ; Newton method set up as a Mandelbrot set
     ; This formula searches for 6 roots of a function
-    ; Inspired by Paul Carlson's Newt5_Atan_Mset 
+    ; Inspired by Paul Carlson's Newt5_Atan_Mset
     ; p1 = precision of root finding, try .001
     ; p2 = A = scaling constant in formula, try 1
     ; F(w) = w^6 - A*w^5 - w*c + A*c
@@ -1900,7 +1900,7 @@ Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
 Newt8-JAtan-Mset {; (c) Jay R. Hill, 1998
     ; Newton method set up as a Mandelbrot set
     ; This formula searches for 8 roots of a function
-    ; Inspired by Paul Carlson's Newt5_Atan_Mset 
+    ; Inspired by Paul Carlson's Newt5_Atan_Mset
     ; p1=width of root finding
     ; p2=A=constant in formula
     ; F(w) = w^8 - A*w^7 - w*c + A*c
@@ -1953,9 +1953,9 @@ Newt_ellipt_oops {; Tim Wegner - use float=yes and periodicity=0
 Newt_Exp_Inv (YAXIS) {; Sylvie Gallet
                       ; equation e^z-1 = 0
                       ; solution z = 0
-  z=(0,-1)/pixel : 
+  z=(0,-1)/pixel :
   z=z-1+exp(-1*z)
-  real(z) > real(p1) 
+  real(z) > real(p1)
   ;SOURCE: forummsg.frm
 }
 
@@ -2105,7 +2105,7 @@ NEWTMESH{; Ray Girvan, April 1996
    ; p2 = "zoom factor" for central motif
   k=p1
   z=p2*(tan(sin(real(pixel)))+flip(tan(sin(imag(pixel))))):
-  z1=z^k-1      ;  or any function z1 = f(z)    
+  z1=z^k-1      ;  or any function z1 = f(z)
   z2=k*z^(k-1)  ; its differential z2 = f'(z)
   z=z-(z1/z2)
   |z1| > 0.01
@@ -2180,7 +2180,7 @@ Newton-3 {
   z3 = z * z * z
   z4 = z3 * z
   z = zt - ((z4 - root) / (4 * z3))
-  zt = z 
+  zt = z
   |z| <= 4
   ;SOURCE: methods.frm
 }
@@ -2199,7 +2199,7 @@ Newton-3-alt {
   z3 = z * z * z
   z4 = z3 * z
   z = zt - ((z4 - root) / (4 * z3)) + c
-  zt = z 
+  zt = z
   |z| <= 4
   ;SOURCE: methods.frm
 }
@@ -2218,7 +2218,7 @@ Newton-3-test {
   z3 = z * z * z
   z4 = z3 * z
   z = zt - ((z4 - root) / (4 * z3))
-  zt = z 
+  zt = z
   |z - c| <= 4
   ;SOURCE: methods.frm
 }
@@ -2290,7 +2290,7 @@ Newton4 (XYAXIS) {; Mark Peterson
 }
 
 
-Newton4-3 (XYAXIS) {; Mark Peterson's Newton4 formula 
+Newton4-3 (XYAXIS) {; Mark Peterson's Newton4 formula
                     ; modified by Linda Allison
   z = pixel, Root = 7:
   z3 = z * z * z
@@ -2301,7 +2301,7 @@ Newton4-3 (XYAXIS) {; Mark Peterson's Newton4 formula
 }
 
 
-Newton4fn12 { 
+Newton4fn12 {
   z = pixel+1/(fn1(p2*pixel-p1))+1/(fn2(p2*pixel-p1)), Root = 1:
   z3 = z*z*z
   z4 = z3 * z
@@ -2311,17 +2311,17 @@ Newton4fn12 {
 }
 
 
-Newton5fn { 
+Newton5fn {
   z = pixel+1/fn1(p2 * pixel-p1) :
-  z = (4*z^5+1)/(5*z^4) 
+  z = (4*z^5+1)/(5*z^4)
   0.001<=|z^5-1|
   ;SOURCE: crazynwt.frm
 }
 
 
-Newton5fn12 { 
+Newton5fn12 {
   z = pixel+1/(2 * fn1(p2 * pixel-p1)) + 1/(2 * fn2(p2 * pixel-p1)) :
-  z = (4*z^5+1)/(5*z^4) 
+  z = (4*z^5+1)/(5*z^4)
   0.001<=|z^5-1|
   ;SOURCE: crazynwt.frm
 }
@@ -2448,7 +2448,7 @@ Newton_neg_real {
    ; Olds, Alberta, Canada
    ; T0M 1P0
   z = pixel:
-  z = (1 / z) 
+  z = (1 / z)
   z4 = z * z * z * z
   z = (-5 * z4 + 1) / (-4 * z4 * z)
   |real(z)| <= 4
@@ -2469,14 +2469,14 @@ Newton_poly2 {; Tim Wegner - use float=yes
 
 
 Newton_real {; Sylvie Gallet [101324,3444], 1996
-   ; Newton's method applied to   x^3 + y^2 - 1 = 0 
+   ; Newton's method applied to   x^3 + y^2 - 1 = 0
    ;                              y^3 - x^2 + 1 = 0
    ;                              solution (0,-1)
-   ; One parameter : real(p1) = bailout value 
-  z = pixel, x = real(z), y = imag(z) : 
-  xy = x*y                                
-  d = 9*xy+4, x2 = x*x, y2 = y*y        
-  c = 6*xy+2 
+   ; One parameter : real(p1) = bailout value
+  z = pixel, x = real(z), y = imag(z) :
+  xy = x*y
+  d = 9*xy+4, x2 = x*x, y2 = y*y
+  c = 6*xy+2
   x1 = x*c - (y*y2 - 3*y - 2)/x
   y1 = y*c + (x*x2 + 2 - 3*x)/y
   z = (x1+flip(y1))/d, x = real(z), y = imag(z)
@@ -2490,8 +2490,8 @@ newton_reel_1 (ORIGIN) {; Sylvie Gallet
   x2=x*x, y2=y*y, x3=x2*x, y3=y2*y     ; x -> x^3-y
   d=1+9*x2*y2                          ; y -> y^3+x
   x = (6*x3*y2 + 2*y3) / d             ; solution (0,0)
-  y = (6*x2*y3 - 2*x3) / d   
-  z = x+flip(y) 
+  y = (6*x2*y3 - 2*x3) / d
+  z = x+flip(y)
   |z|>=.01
   ;SOURCE: forummsg.frm
 }
@@ -2513,10 +2513,10 @@ Newton_reel_4 {; Sylvie Gallet [101324,3444], 1995
   x=real(z), y=imag(z)          ; (x^3 - 1)/y = 0
   x3 = x*x*x, y2 = y*y          ; (y^2 - 1)/x = 0
   xy = x3*y2, d = 5*xy+x3+y2-1  ; solution (1,1)
-  c = xy + x3 + 2*y2 - 1 
+  c = xy + x3 + 2*y2 - 1
   x1 = 2*x*c
   y1 = y*(c+4*x3-1)
-  z = (x1+flip(y1))/d 
+  z = (x1+flip(y1))/d
   |z-sol| >= p1
   ;SOURCE: gallet-1.frm
 }
@@ -2526,10 +2526,10 @@ Newton_reel_5 {; Sylvie Gallet [101324,3444], 1995
   z = pixel :                          ; x^3 + y^2 - 1 = 0
   x = real(z), y = imag(z), xy = x*y   ; y^3 - x^2 + 1 = 0
   d = 9*xy+4, x2 = x*x, y2 = y*y       ; solution (0,-1)
-  c = 6*xy+2 
+  c = 6*xy+2
   x1 = x*c - (y*y2 - 3*y - 2)/x
   y1 = y*c + (x*x2 + 2 - 3*x)/y
-  z = (x1+flip(y1))/d 
+  z = (x1+flip(y1))/d
   |z-(0,-1)| >= p1
   ;SOURCE: gallet-1.frm
 }
@@ -2547,7 +2547,7 @@ Newton_z2_ez {; appliquée à z^2+e^z-1 = 0
 
 
 Newton_z3+cosz {; Sylvie Gallet [101324,3444], 1995
-                ; equation (z^3)/3 + z + cos z = 1  
+                ; equation (z^3)/3 + z + cos z = 1
                 ; solution z = 0
   z = 15*pixel :
   z2 = z*z
@@ -2571,7 +2571,7 @@ Newton_z3_sinz2 {; copyright Sylvie Gallet
                  ; z -> z^3+sin(z^2)
                  ; solution z = 0
   z = pixel :
-  z2 = z*z   
+  z2 = z*z
   z = z - (z*z2+sin(z2))/(3*z2+2*z*cos(z2))
   |z| >= p1
   ;SOURCE: forummsg.frm
@@ -2749,7 +2749,7 @@ nigel (XAXIS) {
   zp3 = zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -2826,7 +2826,7 @@ NMERGE5 (XAXIS) {; Ray Girvan, May 1996
 
 
 NMERGE6 {; Ray Girvan, May 1996
-         ; organic look with Moire-like columns    
+         ; organic look with Moire-like columns
          ; use floating-point
          ; use periodicity=no - press [g] to enter
          ; based on z^3-1=0 Newton
@@ -2994,7 +2994,7 @@ NovaM {; Mandelbrot-like set for Nova.
        ; floating point. E.g. 0.0000001.
        ; The Nova Formulae, discovered by PGD.
        ; Freely distributable but may not be sold.
-  z=1  
+  z=1
   c=pixel:
   z2=z*z
   z3=z*z2
@@ -3015,7 +3015,7 @@ novan_jul {; Kerry Mitchell
            ; z = change in zc each iteration
   c=p1, zc=pixel, r=real(p2), nm1=imag(p2)-1, fac=1/(nm1+1):
   fp=zc^nm1, f=zc*fp-1, z=fac*f/fp+c
-  zc=zc-z 
+  zc=zc-z
   |z| > r
   ;SOURCE: 97msg.frm
 }
@@ -3029,7 +3029,7 @@ novan_man {; Kerry Mitchell
            ; z = change of zc each iteration
   zc=p1, c=pixel, r=real(p2), nm1=imag(p2)-1, fac=1/(nm1+1):
   fp=zc^nm1, f=zc*fp-1, z=fac*f/fp+c
-  zc=zc-z 
+  zc=zc-z
   |z| > r
   ;SOURCE: 97msg.frm
 }
@@ -3114,11 +3114,11 @@ NovenaM2 {; Another Mandelbrot-like set for Novena.
 }
 
 
-Nuclear_JColLog {; p1, p2, p3 parameters. Use float=y, outside=real, 
-                 ; logmap=0, periodicity=0. 
+Nuclear_JColLog {; p1, p2, p3 parameters. Use float=y, outside=real,
+                 ; logmap=0, periodicity=0.
                  ; Colors from 4 ranges by finite attractors
                  ; and attracted to infinity. Uses a "logmap".
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.000001, bail=1000
@@ -3217,13 +3217,13 @@ Nuclear_JColLog {; p1, p2, p3 parameters. Use float=y, outside=real,
 }
 
 
-Nuclear_JColLogB {; p1, p2, p3 parameters. Use float=y, outside=real, 
-                  ; logmap=0, ; periodicity=0. 
+Nuclear_JColLogB {; p1, p2, p3 parameters. Use float=y, outside=real,
+                  ; logmap=0, ; periodicity=0.
                   ; Colors from 4 ranges by finite attractors
                   ; and attracted to infinity. Uses a "logmap".
                   ; Variation: qq shrunk.
                   ; Suitable for deeper zooms.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.00000001, bail=1000
@@ -3322,12 +3322,12 @@ Nuclear_JColLogB {; p1, p2, p3 parameters. Use float=y, outside=real,
 }
 
 
-Nuclear_JColLogC {; p1, p2, p3 parameters. 
-                  ; Use float=y, outside=real, logmap=0, periodicity=0. 
+Nuclear_JColLogC {; p1, p2, p3 parameters.
+                  ; Use float=y, outside=real, logmap=0, periodicity=0.
                   ; Colors from 4 ranges by finite attractors
                   ; and attracted to infinity. Uses a "logmap".
                   ; Variation: Log reversed for high iterations.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0, fi=3000
   qq=0.000001, bail=1000
@@ -3427,7 +3427,7 @@ Nuclear_JColLogC {; p1, p2, p3 parameters.
 
 
 Nuclear_Jul {; p1, p2, p3 parameters. Use float=y.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=pixel:
   z2=sqr(z)
@@ -3438,11 +3438,11 @@ Nuclear_Jul {; p1, p2, p3 parameters. Use float=y.
 }
 
 
-Nuclear_JulCol {; p1, p2, p3 parameters. Use float=y, outside=real, 
-                ; logmap=0, periodicity=0. 
+Nuclear_JulCol {; p1, p2, p3 parameters. Use float=y, outside=real,
+                ; logmap=0, periodicity=0.
                 ; Colors from 4 ranges by finite attractors
                 ; and attracted to infinity.
-  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   m=maxit-1, m4=m/2, iter=0, done=0, iter2=0
   qq=0.000001, bail=1000
@@ -3540,19 +3540,19 @@ Nuclear_JulCol {; p1, p2, p3 parameters. Use float=y, outside=real,
 }
 
 
-Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
+Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
              ; Use outside=real, float=y, periodicity=n,
              ; maxiter>=256, and logmap=0.
              ; For logmap effect put real(p1) minimum iteration,
              ; imag(p1) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p1)
   p=imag(p1)
@@ -3560,8 +3560,8 @@ Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -3866,9 +3866,9 @@ Nuclear_M_a {; p2, p3 parameters. c is Mandel parameter.
 }
 
 
-Nuclear_M_a_-1 {; p2, p3 parameters. Use float=y. a is Mandel 
+Nuclear_M_a_-1 {; p2, p3 parameters. Use float=y. a is Mandel
                 ; parameter, critical point -1.
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=-1:
   z2=sqr(z)
@@ -3881,7 +3881,7 @@ Nuclear_M_a_-1 {; p2, p3 parameters. Use float=y. a is Mandel
 
 Nuclear_M_a_0 {; p2, p3 parameters. Use float=y. a is Mandel parameter,
                ; critical point 0.
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=0:
   z2=sqr(z)
@@ -3894,7 +3894,7 @@ Nuclear_M_a_0 {; p2, p3 parameters. Use float=y. a is Mandel parameter,
 
 Nuclear_M_a_1 {; p2, p3 parameters. Use float=y. a is Mandel parameter,
                ; critical point 1.
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=1:
   z2=sqr(z)
@@ -3905,20 +3905,20 @@ Nuclear_M_a_1 {; p2, p3 parameters. Use float=y. a is Mandel parameter,
 }
 
 
-Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
+Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
               ; Use outside=real, float=y, periodicity=n,
               ; maxiter>=256, and logmap=0.
               ; For logmap effect put real(p2) minimum iteration,
               ; imag(p2) bigger than 1, e.g. 2.
               ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
               ; ranges.
               ; Use first for outside, second thru fourth for two
               ; critical points escape, one trapped...
               ; Coloring variant.
               ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=pixel, c=p2, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -3926,8 +3926,8 @@ Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=10^(-7)
   :
@@ -4259,19 +4259,19 @@ Nuclear_M_aq {; p2, p3 parameters. c is Mandel parameter.
 }
 
 
-Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter. 
-             ; Colored based on all 3 critical points. 
+Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
+             ; Colored based on all 3 critical points.
              ; Use outside=real, float=y, periodicity=n,
              ; maxiter>=256, and logmap=0.
              ; For logmap effect put real(p2) minimum iteration,
              ; imag(p2) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -4279,8 +4279,8 @@ Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -4585,9 +4585,9 @@ Nuclear_M_c {; p1, p3 parameters. c is Mandel parameter.
 }
 
 
-Nuclear_M_c_-1 {; p1, p3 parameters. Use float=y. c is Mandel 
+Nuclear_M_c_-1 {; p1, p3 parameters. Use float=y. c is Mandel
                 ; parameter, critical point -1.
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=-1:
   z2=sqr(z)
@@ -4600,7 +4600,7 @@ Nuclear_M_c_-1 {; p1, p3 parameters. Use float=y. c is Mandel
 
 Nuclear_M_c_0 {; p1, p3 parameters. Use float=y. c is Mandel parameter,
                ; critical point 0.
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=0:
   z2=sqr(z)
@@ -4613,7 +4613,7 @@ Nuclear_M_c_0 {; p1, p3 parameters. Use float=y. c is Mandel parameter,
 
 Nuclear_M_c_1 {; p1, p3 parameters. Use float=y. c is Mandel parameter,
                ; critical point 1.
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=1:
   z2=sqr(z)
@@ -4624,19 +4624,19 @@ Nuclear_M_c_1 {; p1, p3 parameters. Use float=y. c is Mandel parameter,
 }
 
 
-Nuclear_M_cq {; p1, p3 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
+Nuclear_M_cq {; p1, p3 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
               ; Use outside=real, float=y, periodicity=n,
               ; maxiter>=256, and logmap=0.
               ; For logmap effect put real(p2) minimum iteration,
               ; imag(p2) bigger than 1, e.g. 2.
               ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
               ; ranges.
               ; Use first for outside, second thru fourth for two
               ; critical points escape, one trapped...
               ; Coloring variant.
-  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=pixel, k=p3, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -4644,8 +4644,8 @@ Nuclear_M_cq {; p1, p3 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=0.001, iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=0.0000001
   :
@@ -4977,18 +4977,18 @@ Nuclear_M_cq {; p1, p3 parameters. c is Mandel parameter.
 }
 
 
-Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based 
-             ; on all 3 critical points. Use outside=real, float=y, 
+Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
+             ; on all 3 critical points. Use outside=real, float=y,
              ; periodicity=n, maxiter>=256, and logmap=0.
              ; For logmap effect put real(p3) minimum iteration,
              ; imag(p3) bigger than 1, e.g. 2.
              ; Color 0 is for all critical points trapped.
-             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+             ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
              ; ranges.
              ; Use first for outside, second thru fourth for two
              ; critical points escape, one trapped...
              ; Edited for Fractint v. 20 by George Martin, 10/98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p3)
   p=imag(p3)
@@ -4996,8 +4996,8 @@ Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0 
+  qq=10^(-2), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(maxit/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0
   z3d2=0, qrl=1.5, q2=0.15
   :
   IF(z3done==0)
@@ -5302,9 +5302,9 @@ Nuclear_M_k {; p1, p2 parameters. k is Mandel parameter. Colored based
 }
 
 
-Nuclear_M_k_-1 {; p1, p2 parameters. Use float=y. k is Mandel 
+Nuclear_M_k_-1 {; p1, p2 parameters. Use float=y. k is Mandel
                 ; parameter, critical point -1.
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=-1:
   z2=sqr(z)
@@ -5317,7 +5317,7 @@ Nuclear_M_k_-1 {; p1, p2 parameters. Use float=y. k is Mandel
 
 Nuclear_M_k_0 {; p1, p2 parameters. Use float=y. k is Mandel parameter,
                ; critical point 0.
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=0:
   z2=sqr(z)
@@ -5330,7 +5330,7 @@ Nuclear_M_k_0 {; p1, p2 parameters. Use float=y. k is Mandel parameter,
 
 Nuclear_M_k_1 {; p1, p2 parameters. Use float=y. k is Mandel parameter,
                ; critical point 1.
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   z=1:
   z2=sqr(z)
@@ -5341,20 +5341,20 @@ Nuclear_M_k_1 {; p1, p2 parameters. Use float=y. k is Mandel parameter,
 }
 
 
-Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter. 
-              ; Colored based on all 3 critical points. 
+Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
+              ; Colored based on all 3 critical points.
               ; Use outside=real, float=y, periodicity=n,
               ; maxiter>=256, and logmap=0.
               ; For logmap effect put real(p2) minimum iteration,
               ; imag(p2) bigger than 1, e.g. 2.
               ; Color 0 is for all critical points trapped.
-              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate 
+              ; Colors 1-66, 67-129, 130-192, and 193-255 are separate
               ; ranges.
               ; Use first for outside, second thru fourth for two
               ; critical points escape, one trapped...
               ; Coloring variant.
               ; Edited for Fractint v. 20 by George Martin, 10,98
-  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2 
+  a=p1, c=p2, k=pixel, a2=a*a, ac=a*c, r3=sqrt(3), r3a2=r3*a2, a6=3*a2
   r3ac=r3*ac, ack=k*ac
   min=real(p2)
   p=imag(p2)
@@ -5362,8 +5362,8 @@ Nuclear_M_kq {; p1, p2 parameters. c is Mandel parameter.
     p=1
   ENDIF
   z1=0, z2=1, z3=-1
-  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0 
-  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0 
+  qq=10^(-3), iter=0, done=0, z2done=0, m=maxit-1, z1done=0, z3done=0
+  m2=floor(m/2), z1a=z1, z2a=z2, z3a=z3, flag=0, z1d2=0, z2d2=0, z3d2=0
   qrl=1.5, q2=0.15
   qq2=10^(-7)
   :
@@ -5699,7 +5699,7 @@ Nuke1 (xaxis) {; M.L. Newsted Jr.
   z = 0
   c = pixel         ; basic mandel upto here
   d = pixel:        ; add new variable
-  z = (z*z + c) / d ; slightly altered computation, highly 
+  z = (z*z + c) / d ; slightly altered computation, highly
                     ; different results
   ;SOURCE: 97msg.frm
 }
@@ -5712,7 +5712,7 @@ Nuke2 (xaxis) {; Jay Hill
 }
 
 
-Nwtbumps { 
+Nwtbumps {
   z = fn1(pixel/|pixel|)*fn2(p2*real(pixel)*imag(pixel)), Root = 1 :
   z = ((p1-1)*z^p1+Root)/(p1*z^(p1-1))
   .001 <= |z^p1-Root|
@@ -5720,7 +5720,7 @@ Nwtbumps {
 }
 
 
-Nwtbumps2 { 
+Nwtbumps2 {
   z = fn1(pixel/|pixel|)*fn2(p2*real(pixel)/imag(pixel)), Root = 1 :
   z = ((p1-1)*z^p1+Root)/(p1*z^(p1-1))
   .001 <= |z^p1-Root|
@@ -5728,8 +5728,8 @@ Nwtbumps2 {
 }
 
 
-Nwtbumps3 { 
-  z = pixel + fn1( fn2( fn3( (pixel/|pixel|) * exp( p2 * |pixel|)))) 
+Nwtbumps3 {
+  z = pixel + fn1( fn2( fn3( (pixel/|pixel|) * exp( p2 * |pixel|))))
   Root = 1 :
   z = ((p1-1)*z^p1+Root)/(p1*z^(p1-1))
   .001 <= |z^p1-Root|
@@ -5737,7 +5737,7 @@ Nwtbumps3 {
 }
 
 
-Nwtfn123 { 
+Nwtfn123 {
   z = fn1(fn2(fn3(p2*pixel)))+fn1(fn3(fn2(p2*pixel))), Root = 1 :
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -5746,7 +5746,7 @@ Nwtfn123 {
 
 
 Nwtfn12rot {; The factor exp(p1*...) rotates the pixels
-            ; according to their distance from the origin if p1 is 
+            ; according to their distance from the origin if p1 is
             ; chosen complex.
   z = pixel+1/fn1(p2*pixel*exp(p1*fn2(|pixel|))), Root = 1 :
   z = (4 * z^5 + Root) / (5 * z^4)
@@ -5755,8 +5755,8 @@ Nwtfn12rot {; The factor exp(p1*...) rotates the pixels
 }
 
 
-NwtMand2 { 
-   ; Note that floating-point is required to 
+NwtMand2 {
+   ; Note that floating-point is required to
    ; make this compute accurately
   z = pixel, Root = 1:
   f = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
@@ -5766,8 +5766,8 @@ NwtMand2 {
 }
 
 
-NwtMand3 { 
-   ; Note that floating-point is required to 
+NwtMand3 {
+   ; Note that floating-point is required to
    ; make this compute accurately
   f=pixel, z=pixel, Root = 1:
   f = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
@@ -5777,8 +5777,8 @@ NwtMand3 {
 }
 
 
-NwtMandM { 
-   ; Note that floating-point is required to 
+NwtMandM {
+   ; Note that floating-point is required to
    ; make this compute accurately
   z = pixel, Root = 1:
   f = ((pixel-1) * z^pixel + Root) / (pixel * z^(pixel-1))
@@ -5789,7 +5789,7 @@ NwtMandM {
 
 
 NwtNwt {; p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
-        ; Note that floating-point is required to 
+        ; Note that floating-point is required to
         ; make this compute accurately
   f=fn1(pixel), z = fn2(pixel), Root = 1:
   f = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
@@ -5800,9 +5800,9 @@ NwtNwt {; p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
 
 
 NwtNwtNwt {; p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
-           ; Note that floating-point is required to 
+           ; Note that floating-point is required to
            ; make this compute accurately
-  f=fn1(pixel), z = fn2(pixel), g = fn3(pixel) 
+  f=fn1(pixel), z = fn2(pixel), g = fn3(pixel)
   u=real(p1), v=imag(p1), Root = 1:
   g = ((u-1) * z^u + Root) / (u * z^(u-1))
   f = ((v-1) * g^v + Root) / (v * g^(v-1))
@@ -5812,7 +5812,7 @@ NwtNwtNwt {; p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
 }
 
 
-Nwtp+fn123 { 
+Nwtp+fn123 {
   z = pixel+fn1(fn2(fn3(p2*pixel)))+fn1(fn3(fn2(p2*pixel))), Root = 1:
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -5820,7 +5820,7 @@ Nwtp+fn123 {
 }
 
 
-Nwtsimpl { 
+Nwtsimpl {
   z = fn1(p2*pixel)/|pixel|, Root = 1 :
   z = ((p1-1)*z^p1+Root)/(p1*z^(p1-1))
   .001 <= |z^p1-Root|
@@ -5828,9 +5828,9 @@ Nwtsimpl {
 }
 
 
-Nwtsqzz { 
+Nwtsqzz {
    ; The factor exp(p1*...) rotates the pixels
-   ; according to their distance from the origin if p1 is 
+   ; according to their distance from the origin if p1 is
    ; chosen complex.
   z = pixel*fn1(p2*exp(p1*fn2(|pixel|)*imag(pixel))), Root = 1 :
   z = (4 * z^5 + Root) / (5 * z^4)
@@ -5839,7 +5839,7 @@ Nwtsqzz {
 }
 
 
-Nwtsqzz2 { 
+Nwtsqzz2 {
   z = pixel*fn1(p2*exp(p1*fn2(|pixel|*imag(pixel)))), Root = 1 :
   z = (4 * z^5 + Root) / (5 * z^4)
   .001 <= |z^5 - Root|
@@ -5847,7 +5847,7 @@ Nwtsqzz2 {
 }
 
 
-Nwttst { 
+Nwttst {
   z=pixel
   t = pixel*fn1(p2*|pixel|), Root = 1 :
   z = ((t-1)*z^t+Root)/(t*z^(t-1))
@@ -5856,7 +5856,7 @@ Nwttst {
 }
 
 
-Nwtvar1 { 
+Nwtvar1 {
   z = pixel, Root = 1 :
   z = ((p2-1)*z^p1+Root)/(p2*z^(p1-1))
   .001 <= |z^p1-Root|
@@ -5864,7 +5864,7 @@ Nwtvar1 {
 }
 
 
-Nwtvar3 { 
+Nwtvar3 {
   z = pixel, Root = 1 :
   z = (real(p1)*z^5+Root)/(5*z^4)
   .001 <= |imag(p1)*z^p2-Root|
@@ -5874,10 +5874,10 @@ Nwtvar3 {
 
 Nwtvar4 {; there are real & imag just to have more params !
          ; don't start whith this , it's a grown one.
-         ; To use it try to understand the basics it's 
+         ; To use it try to understand the basics it's
          ; made of.(var1 & p+fn123 &..)
-  f = pixel*fn3(exp(fn2(|pixel|)*imag(pixel)*0.1*(pixel-conj(pixel)))) 
-  z = f+fn1(fn2(fn3(imag(p1)*f)))+fn1(fn3(fn2(imag(p1)*f))) 
+  f = pixel*fn3(exp(fn2(|pixel|)*imag(pixel)*0.1*(pixel-conj(pixel))))
+  z = f+fn1(fn2(fn3(imag(p1)*f)))+fn1(fn3(fn2(imag(p1)*f)))
   Root = 1 :
   z = ((p2-1)*z^real(p1)+Root)/(p2*z^(real(p1)-1))
   .001 <= |z^real(p1)-Root|
@@ -5885,9 +5885,9 @@ Nwtvar4 {; there are real & imag just to have more params !
 }
 
 
-Nwtwav { 
-   ; pix/|pix| is a complex number with length 1 and the direction of 
-   ; the pixel.The faktor fn1(..) allows you to scale it the way 
+Nwtwav {
+   ; pix/|pix| is a complex number with length 1 and the direction of
+   ; the pixel.The faktor fn1(..) allows you to scale it the way
    ; you want.  fn1=ident ,p2=1 should be the normal Newton.
   z = pixel/|pixel|*fn1(p2*|pixel|), Root = 1 :
   z = ((p1-1)*z^p1+Root)/(p1*z^(p1-1))
@@ -6105,7 +6105,7 @@ NxZ (XAXIS) {
 }
 
 
-NY002 { 
+NY002 {
   z=pixel, c=fn1(z), zc=fn2(c+z):
   z=fn3(zc)-fn4((z*z)+c)
   |z|<16

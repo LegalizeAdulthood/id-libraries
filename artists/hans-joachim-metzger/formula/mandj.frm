@@ -9,4 +9,4 @@ mandel-julia {; Sylvie Gallet 1995
   |z|<=bailout
   ;SOURCE: mandj.frm
 }
- 
+

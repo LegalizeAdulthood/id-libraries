@@ -9,7 +9,7 @@ SGG081 {; 11.03.95
   |z|<=20
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG082 {; 11.03.95
         ; Revised for Fractint v20 by G. Martin
   z=x=pixel
@@ -21,7 +21,7 @@ SGG082 {; 11.03.95
   |z|<=7
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG083 {; 11.03.95
         ; Revised for Fractint v20 by G. Martin
   z=0, x=pixel
@@ -33,7 +33,7 @@ SGG083 {; 11.03.95
   |z|<=20
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG084 {; modCarr-730
         ; 05.03.95
   z=(1/pixel)-1/sqr(conj(0.5/pixel-1))+2.224
@@ -42,7 +42,7 @@ SGG084 {; modCarr-730
   |z| <=10
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG085 {; modCarr-725
         ; 04.03.95
   z=pixel*sqr(conj(0.5/pixel-1))
@@ -51,7 +51,7 @@ SGG085 {; modCarr-725
   |z| <=10
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG087 {; 15.03.95
   z=x=pixel:
   y=z
@@ -60,7 +60,7 @@ SGG087 {; 15.03.95
   |z|<=p2
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG088 {; 15.03.95
   z=1/pixel, x=real(pixel):
   y=conj(z)
@@ -69,21 +69,21 @@ SGG088 {; 15.03.95
   |z|<=4
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG089 {; 15.03.95
   z=pixel, x=pixel^sqr(pixel):
   z=cosxx(z)+x
   |z|<= 6
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG090 {; 15.03.95
   z=real(pixel), x=imag(pixel^sqr(pixel)):
   z=conj(cosxx(z)+x)
   |z|<=8
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG085 {; modCarr-725
         ; 04.03.95
   z=pixel*sqr(conj(0.5/pixel-1))
@@ -92,7 +92,7 @@ SGG085 {; modCarr-725
   |z| <=10
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG086 {; 13.03.95
   z=pixel, x=p1:
   z=cosxx(z^x+z)/x
@@ -100,7 +100,7 @@ SGG086 {; 13.03.95
   |z|<=12
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG086 {; 13.03.95
   z=pixel, x=p1:
   z=cosxx(z^x+z)/x
@@ -108,7 +108,7 @@ SGG086 {; 13.03.95
   |z|<=12
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG088 {; 15.03.95
   z=1/pixel, x=real(pixel):
   y=conj(z)
@@ -117,11 +117,11 @@ SGG088 {; 15.03.95
   |z|<=4
   ;SOURCE: guenzel1.frm
 }
- 
+
 SGG090 {; 15.03.95
   z=real(pixel), x=imag(pixel^sqr(pixel)):
   z=conj(cosxx(z)+x)
   |z|<=8
   ;SOURCE: guenzel1.frm
 }
- 
+

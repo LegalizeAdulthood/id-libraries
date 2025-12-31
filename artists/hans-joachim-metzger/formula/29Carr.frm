@@ -6,7 +6,7 @@ Carr1251 {; Modified ZEPPO frm of Brad Beacham
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1252 {; Modified ZEPPO frm of Brad Beacham
   z=1/(pixel*pixel*pixel)
   c=cotanh(sqr(1/pixel*0.91/pixel)):
@@ -15,7 +15,7 @@ Carr1252 {; Modified ZEPPO frm of Brad Beacham
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1253 {; Modified ZEPPO frm of Brad Beacham
   z=abs(1/(pixel*pixel*pixel))
   c=cosxx(sqr(1/pixel*0.91/pixel)):
@@ -24,7 +24,7 @@ Carr1253 {; Modified ZEPPO frm of Brad Beacham
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1254 {; Modified ZEPPO frm of Brad Beacham
   z=abs(1/(pixel*pixel*pixel))
   c=cosxx(sqr(1/pixel*0.91/pixel)):
@@ -33,7 +33,7 @@ Carr1254 {; Modified ZEPPO frm of Brad Beacham
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1255 {; Modified ZEPPO frm of Brad Beacham
   z=abs(1/(pixel*pixel*pixel))
   c=cosxx(sqr(0.56/pixel*1/pixel)):
@@ -42,7 +42,7 @@ Carr1255 {; Modified ZEPPO frm of Brad Beacham
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1256 {
   z=sqr(1/(pixel*pixel*pixel))
   c=exp(sqr(0.56/pixel*1/pixel)):
@@ -51,7 +51,7 @@ Carr1256 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1258 {
   z=conj(1/(pixel*pixel*pixel))
   c=cosxx(sqr(0.56/pixel*1/pixel)):
@@ -59,7 +59,7 @@ Carr1258 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1259 {
   z=conj(1/(pixel*pixel*pixel))
   c=cosxx(sqr(0.56/pixel*1/pixel)):
@@ -67,7 +67,7 @@ Carr1259 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1261 {
   z=conj(1/(pixel*pixel*pixel))
   c=cosxx(sqr(0.56/pixel*1/pixel)):
@@ -75,7 +75,7 @@ Carr1261 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1262 {
   z=sinh(pixel)
   c=cosxx(pixel):
@@ -83,7 +83,7 @@ Carr1262 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1263 {
   z=cotanh(pixel*pixel)
   c=cosxx(pixel):
@@ -91,7 +91,7 @@ Carr1263 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1264 {
   z=sqr(pixel*pixel)
   c=cosxx(sqr(1/pixel*0.91/pixel)):
@@ -100,7 +100,7 @@ Carr1264 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1265 {
   z=sqr(pixel*pixel)
   c=cosxx(sqr(1/pixel*0.91/pixel)):
@@ -109,7 +109,7 @@ Carr1265 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1266 {
   z=sqr(pixel*pixel)
   c=cosxx(sqr(1/pixel*0.91/pixel)):
@@ -117,7 +117,7 @@ Carr1266 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1267 {
   z=1.5-pixel
   c=cosxx(pixel-1.5):
@@ -125,7 +125,7 @@ Carr1267 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1268 {
   z=1.5-pixel
   c=cosxx(pixel-1.5):
@@ -133,7 +133,7 @@ Carr1268 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1269 {
   z=sqr(1.5-pixel)
   c=exp(pixel-1.5):
@@ -141,7 +141,7 @@ Carr1269 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1270 {
   z=sqr(0.5-pixel)
   c=sqr(pixel-1.5):
@@ -149,7 +149,7 @@ Carr1270 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1271 {
   z=sqr(sqr(sqr(0.5-pixel)))
   c=(sqr(pixel-1.5)):
@@ -157,7 +157,7 @@ Carr1271 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1272 {; Modified Tchebychev formula
   z=sqr(sqr(sqr(0.5-pixel)))
   c=z*z:
@@ -165,7 +165,7 @@ Carr1272 {; Modified Tchebychev formula
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1273 {
   z=sqr(sqr(sqr(2.5-pixel)))
   c=z-(pixel-1.5):
@@ -173,7 +173,7 @@ Carr1273 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1274 {; Modified Newton
   z=pixel, c=(1.099,0):
   z3=z*z*z
@@ -183,7 +183,7 @@ Carr1274 {; Modified Newton
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1275 {; Modified Newton
   z=abs(pixel), c=(1.099,0):
   z3=conj(z*z*z)
@@ -194,7 +194,7 @@ Carr1275 {; Modified Newton
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1276 {
   z=abs(pixel), c=cabs(sqr(flip(pixel))):
   c=c-c*1/z
@@ -202,7 +202,7 @@ Carr1276 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1277 {
   z=abs(pixel-1), c=cabs(sqr(conj(pixel))):
   c=c-c*1/z
@@ -210,105 +210,105 @@ Carr1277 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1278 {
   z=abs(sqr(pixel-1)), c=cabs(sqr(sqr(pixel))):
   z=2*cabs(z)-sqr(3*(z*4/c))
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1279 {
   z=abs(sqr(pixel-1)), c=cabs(sqr(sqr(pixel))):
   z=(2*cabs(z)-sqr(3*(z*4/c)))/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1280 {
   z=conj(sqr(1/pixel)), c=sqr(conj(1/pixel)):
   z=z-(z^(z^(1/z))-pixel)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1281 {
   z=conj(sqr(1/pixel)), c=sqr(conj(1/pixel)):
   z=z-(z^(z^(1/z*1/z))-pixel)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1282 {
   z=cosxx(pixel), c=cotanh(pixel):
   z=pixel^z*1/(pixel^c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1283 {
   z=sinh(pixel), c=tanh(pixel):
   z=(pixel*pixel^z)*(1/(pixel*pixel^c))
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1284 {
   z=cotanh(1/pixel-0.5), c=cosxx(pixel-1)
   z=(z-(cosxx(sqr(imag(z*z+c))))-z*1/c)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1285 {
   z=cotanh(1/pixel*0.91/pixel), c=cosxx(pixel*pixel)
   z=(z-(cosxx(sqr(conj(z*z*z+c))))-z*1/c)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1286 {
   z=flip(imag(pixel)), c=(1.099,0)+real(pixel):
   z=(conj(z*z)*1/c)+z*1/c
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1287 {
   z=flip(imag(pixel)), c=(1.099,0)+real(pixel):
   z=((conj(z*z)*1/c)+z*1/c)^pixel
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1288 {
   z=flip(imag(pixel)), c=(1.099,0)+real(pixel):
   z=(z-(conj(z*z*z*z)*1/c)+z*1/c)^pixel*pixel
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1289 {
   z=sqrt(pixel), c=log(pixel):
   z=((c/z)-pixel)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1290 {
   z=sqrt(pixel), c=log(pixel):
   z=((abs(z)/cabs(c))-pixel)/(pixel-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1291 {
   z=log(sqr(1/pixel)), c=1/sqr(log(pixel)):
   z=(z-(z^c^pixel))/(c*c-pixel)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1292 {
   z=log(sqr(1/pixel)), c=1/sqr(log(pixel)), c1=z/c^c/z:
   z=z*1/c1
@@ -316,7 +316,7 @@ Carr1292 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1293 {
   z=log(sqr(1/pixel)), c=1/sqr(log(pixel)), c1=z/c^c/z:
   z=z/c1
@@ -324,21 +324,21 @@ Carr1293 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1294 {
   z=1/sqr(sqr(pixel)), c=sqr(sqr(cosxx(pixel))):
   z=z-(z+c-conj(imag(z*1/c)))
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1295 {
   z=1/pixel, c=1/sqr(pixel):
   z=z-(z*pixel)-(c-(pixel/sqr(z*1/c)))
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1296 {
   z=1/pixel, c=(1/sqr(pixel)):
   z=z-(z*pixel)-(c-(pixel/sqr(z*1/c)))
@@ -346,14 +346,14 @@ Carr1296 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1297 {
   z=1/pixel, c=(1/sqr(pixel)):
   z=(z-(z*pixel))/((1.099,0)-c*c)
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1298 {
   z=real(pixel)+flip(imag(pixel))
   c=real(pixel)+conj(imag(pixel)):
@@ -361,7 +361,7 @@ Carr1298 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1299 {
   z=real(pixel)+flip(imag(pixel))
   c=real(pixel)+conj(imag(pixel)):
@@ -369,7 +369,7 @@ Carr1299 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1257 {
   z=sqrt(1/(pixel*pixel*pixel))
   c=sinh(sqr(0.56/pixel*1/pixel)):
@@ -378,7 +378,7 @@ Carr1257 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+
 Carr1260 {
   z=conj(1/(pixel*pixel*pixel))
   c=cosxx(sqr(0.56/pixel*1/pixel)):
@@ -386,4 +386,4 @@ Carr1260 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+

@@ -4,7 +4,7 @@ PD_202 {
   |z| <= p2
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_201 {
   z = pixel, test = p1:
   y = sqr(z*p1)
@@ -13,7 +13,7 @@ PD_201 {
   |z| <= (100 + p1)
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_203 {
   z=pixel
   x=real(pixel)
@@ -23,34 +23,34 @@ PD_203 {
   |z|<=p2
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_204 {
   z = c = pixel:
   z=fn1(z*z)+fn2(p2/c)
   |z|<4
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_205 {; Revised for Fractint v20 by G. Martin
   z = pixel, n = oldn = 1
   c = fn1(fn2(pixel)):
   z = fn3(z^((n + p1)/oldn)) - c
   oldn = n
   n = fn4(n + 1 + p2)
-  |real(z)| < p3 
+  |real(z)| < p3
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_205 {; Revised for Fractint v20 by G. Martin
   z = pixel, n = oldn = 1
   c = fn1(fn2(pixel)):
   z = fn3(z^((n + p1)/oldn)) - c
   oldn = n
   n = fn4(n + 1 + p2)
-  |real(z)| < p3 
+  |real(z)| < p3
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_206 {
   z1 = z2 = pixel:
   x = real(z1), y = imag(z1)
@@ -65,7 +65,7 @@ PD_206 {
   |z| <= (100 + p3)
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_207 {
   z = pixel
   x = real(pixel), y = imag(pixel)
@@ -74,7 +74,7 @@ PD_207 {
   |z| <= p3
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_208 {
   z = pixel
   x = real(pixel), y = imag(pixel)
@@ -83,7 +83,7 @@ PD_208 {
   |z| <= p2
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_209 {
   z = pixel, lastz = 0
   x = (real(sin(pixel)))^2
@@ -94,7 +94,7 @@ PD_209 {
   |z| <= p2
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_210 {
   a = fn1(pixel*pixel) - conj(pixel) + fn1(pixel)
   z = flip(a*a) / abs(a-pixel):
@@ -105,7 +105,7 @@ PD_210 {
   |z| <= p2
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_211 {
   a = (pixel*pixel), b = conj(1-pixel), c = flip(1-pixel)
   z = fn1(a*p1) - b - c:
@@ -116,7 +116,7 @@ PD_211 {
   |z| <= p3
   ;SOURCE: pdg02.frm
 }
- 
+
 PD_212 {
   z1 = fn1(pixel), z2 = fn2(1/pixel)
   x1 = real(z1), y1 = imag(z1)
@@ -128,4 +128,4 @@ PD_212 {
   (|z1| <= p2) || (|z2| <= p2)
   ;SOURCE: pdg02.frm
 }
- 
+

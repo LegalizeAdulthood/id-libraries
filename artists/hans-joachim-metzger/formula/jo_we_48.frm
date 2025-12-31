@@ -12,7 +12,7 @@ Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 JoWe_04b_XY {; Jo Weber [100424,35], 10/1996
              ; Added variable "newpixel". G. Martin 6/27/99
   bailout=p3
@@ -25,7 +25,7 @@ JoWe_04b_XY {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_04b_XY {; Jo Weber [100424,35], 10/1996
              ; Added variable "newpixel". G. Martin 6/27/99
   bailout=p3
@@ -38,7 +38,7 @@ JoWe_04b_XY {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_06m_04 {; Jo Weber [100424,35], 10/1996
              ; bailout = p3
   z = pixel
@@ -50,7 +50,7 @@ JoWe_06m_04 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_06m_05 {; Jo Weber [100424,35], 10/1996
              ; bailout = p3
   z = pixel*pixel-(1-pixel)
@@ -62,7 +62,7 @@ JoWe_06m_05 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_13 {; Jo Weber [100424,35], 10/1996
             ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -74,7 +74,7 @@ JoWe_XY_13 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_13a {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -86,7 +86,7 @@ JoWe_XY_13a {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_14a {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -98,7 +98,7 @@ JoWe_XY_14a {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_14b {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -110,7 +110,7 @@ JoWe_XY_14b {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_14c {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -122,7 +122,7 @@ JoWe_XY_14c {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_16 {; Jo Weber [100424,35], 10/1996
             ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -134,7 +134,7 @@ JoWe_XY_16 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17 {; Jo Weber [100424,35], 10/1996
             ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -146,7 +146,7 @@ JoWe_XY_17 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17a {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
              ; Added variable "newpixel". G. Martin 6/27/99
@@ -160,7 +160,7 @@ JoWe_XY_17a {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17a0 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -172,7 +172,7 @@ JoWe_XY_17a0 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17a2 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
               ; Added variable "newpixel". G. Martin 6/27/99
@@ -186,7 +186,7 @@ JoWe_XY_17a2 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17a3 {; Jo Weber [100424,35], 10/1996
               ; something by Sylvie Gallet or Brian E. Jones
               ; Added variable "newpixel". G. Martin 6/27/99
@@ -200,7 +200,7 @@ JoWe_XY_17a3 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17c {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
              ; Added variable "newpixel". G. Martin 6/27/99
@@ -214,7 +214,7 @@ JoWe_XY_17c {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17d {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
              ; Added variable "newpixel". G. Martin 6/27/99
@@ -228,7 +228,7 @@ JoWe_XY_17d {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_17e {; Jo Weber [100424,35], 10/1996
              ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -240,7 +240,7 @@ JoWe_XY_17e {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_PHC_14 {; Jo Weber [100424,35], 10/1996
                 ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -252,7 +252,7 @@ JoWe_XY_PHC_14 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_PHC_14c {; Jo Weber [100424,35], 10/1996
                  ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -264,7 +264,7 @@ JoWe_XY_PHC_14c {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+
 JoWe_XY_14 {; Jo Weber [100424,35], 10/1996
             ; something by Sylvie Gallet or Brian E. Jones
   bailout=p3
@@ -276,4 +276,4 @@ JoWe_XY_14 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_48.frm
 }
- 
+

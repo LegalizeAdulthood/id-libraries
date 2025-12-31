@@ -5,7 +5,7 @@ julfnzsqrd  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z= fn2(z) +z*z +c
   |z| <= real(P3)
 }
- 
+
 DuckOWar    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Tue, 18 May 2004 12:56:00
               ; Slightly different from "frenzy" (deleted).
@@ -15,4 +15,4 @@ DuckOWar    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   s = s/z + pixel
   |z| <= real(P1)
 }
- 
+

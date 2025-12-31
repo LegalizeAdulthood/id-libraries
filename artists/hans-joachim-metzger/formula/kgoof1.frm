@@ -6,4 +6,4 @@ oof1 (XAXIS) {
   |z| <= p2
   ;SOURCE: kgoof1.frm
 }
- 
+

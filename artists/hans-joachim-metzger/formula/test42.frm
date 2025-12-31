@@ -5,7 +5,7 @@ multifrac42 {
   z = z^(z-x-y)
   |z| > (x*y)
   }
- 
+
 multifrac42 {
   z = pixel:
   x = fn1(x)-y
@@ -13,4 +13,4 @@ multifrac42 {
   z = z^(z-x-y)
   |z| > (x*y)
   }
- 
+

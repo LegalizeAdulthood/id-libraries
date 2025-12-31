@@ -1,5 +1,5 @@
 FGZ   {
-;Check out the text file FGZ.DOC for 
+;Check out the text file FGZ.DOC for
 ;full details on this fractal family.
       z = c = pixel:
          z = z * z + c;

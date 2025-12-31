@@ -45,12 +45,12 @@ eightfold {; Giuseppe Zito
   d12 = 0.388134
   d13 = 0.077604
   d14 = -0.916567
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c1
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 +y
   s0 = s0 /d4
@@ -63,16 +63,16 @@ eightfold {; Giuseppe Zito
   s0 = s0 *d13
   s0 = s0 *d14
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 Element (xyaxis) {; phi lingam
   z = pixel:
-  z = z*z*z*z + ((sqrt(5) + 1)/2) 
+  z = z*z*z*z + ((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -91,16 +91,16 @@ Elliptic1 (XAXIS) {; By Alastair Scott
   z = pixel:
   z=pixel*(1.50000+z*z*(0.392669+\
      z*z*(0.220893+z*z*(0.153398+z*z*0.117445))))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: elliptic.frm
 }
 
 
 Elliptic2 (XAXIS) {; By Alastair Scott
   z = pixel:
-  z = pixel*(1.57079 - z*z*(0.392699 + z*z*(0.073631\ 
+  z = pixel*(1.57079 - z*z*(0.392699 + z*z*(0.073631\
        +z*z*(0.030680 + z*z*0.016778))))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: elliptic.frm
 }
 
@@ -534,7 +534,7 @@ emboss-iter_man {; Kerry Mitchell 11sep98
 ;        emboss-iter_jul
 ;        emboss-iter_newtex
 ;        emboss-iter_newtn
-;        emboss-iter_genjul 
+;        emboss-iter_genjul
 ;        emboss-iter_genman
 ;
 ; Embossing
@@ -629,7 +629,7 @@ emboss-iter_newtex {; Kerry Mitchell 10oct98
         ; For an explanation of Kerry Mitchell's "embossing" formulas,
         ;   see the end of formula "emboss-iter_man"
         ;
-        ; named changed from emboss-iter_newtexplog because that 
+        ; named changed from emboss-iter_newtexplog because that
         ;  name has more than the maximum 18 characters permitted
         ;  by Fractint. George Martin 10/98
         ;
@@ -1080,7 +1080,7 @@ ep20z5 {
 }
 
 
-ep20z7 { 
+ep20z7 {
   IF ((p1) == 0)
     p1 = (.03,1.1)
   ENDIF
@@ -1101,7 +1101,7 @@ ep20z7 {
 }
 
 
-ep20z9 {; modified DAmien Jones frm 
+ep20z9 {; modified DAmien Jones frm
   IF (real(p1) == 0)
     p1 = 1
   ENDIF
@@ -1240,8 +1240,8 @@ Eqn_5 {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-EqTrngl {; Here is another example of the Sierpinsky triangle, 
-         ; but this one is an equilateral Triangle.. once again, 
+EqTrngl {; Here is another example of the Sierpinsky triangle,
+         ; but this one is an equilateral Triangle.. once again,
          ; use p1=2 to get the triangle.. also
          ; you can use p1=(1.9,-.7) to get some strange thing
   z=pixel, j=(0, -1), k=(.8660, 0.5), l=(-0.8660, 0.5):
@@ -1270,8 +1270,8 @@ equ {
 }
 
 
-EULER {; Ray Girvan, May 1996 
-       ; after Szyszkowicz 
+EULER {; Ray Girvan, May 1996
+       ; after Szyszkowicz
        ; try p1=1, p2=0.005
   z=pixel, h=p1, k=p2:
   x=real(z), y=imag(z)
@@ -1482,7 +1482,7 @@ EXOTIC {; Paul Dickins - May 1993
 Exp02-01 {; V.1.1 - earlier versions may be discarded
           ; Copyright (c)1998,1999 Morgan L. Owens
           ; Chebyshev Types
-          ; Inspired by Clifford A. Pickover 
+          ; Inspired by Clifford A. Pickover
           ;
           ; Dynamic (Euler method)
           ; Exponential Integral
@@ -2655,7 +2655,7 @@ Exp04-06 {; V.1.1 - earlier versions may be discarded
   fdd=((z-5)*z/6+1)/ez
   oz=z
   z=z-r*f/(fd-fdd*f/(fd+fd))
-  bailout<=|z-oz|  
+  bailout<=|z-oz|
   ;SOURCE: chby6.frm
 }
 
@@ -5101,7 +5101,7 @@ exp1 (XAXIS) {
   temp = z
   z = -exp(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5530,7 +5530,7 @@ exp1x (XAXIS) {; From Noel Giffin noel@triumf.ca
   temp = z
   z = -exp(z) - zp
   zp = p1/temp
-  (|zp| <= huge && |z| <= huge) 
+  (|zp| <= huge && |z| <= huge)
   ;SOURCE: noel1.frm
 }
 
@@ -5540,7 +5540,7 @@ Exp2 (XAXIS) {; Jm Collard-Richard
   z1=exp(z*z)-exp(z)
   z2=2*z*exp(z*z)-exp(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5552,7 +5552,7 @@ Exp2Z (Xaxis) {; Jm Collard-Richard   ---- Use Float=Yes
   z1=exp2z-z
   z2=(2/(z^3))*exp2z-1
   z=z-(z1/z2)
-  0.001<=|z1|  
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5564,7 +5564,7 @@ Exp2Z2 (xaxis) {; Jm Collard-Richard   --- Use Float=yes
   z1=exp2z-z*z
   z2=(2/(z^3))*exp2z+z*(-2)
   z=z-(z1/z2)
-  0.001<=|z1|    
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5577,7 +5577,7 @@ Exp2ZZ (Xaxis) {; Jm Collard-Richard    --- Use Float=Yes
   z1=exp2z-zz-1
   z2=(2/(z^3))*exp2z-(log(z)+1)*zz
   z=z-(z1/z2)
-  0.001<=|z1|    
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5587,7 +5587,7 @@ Exp3(XAXIS) {; Jm Collard-Richard
   z1=exp(z^3)-exp(z)
   z2=3*z*z*exp(z^3)-exp(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5616,10 +5616,10 @@ Exp_z3 (XAXIS) {; S Gallet z -> exp (z)
 }
 
 
-ExpDog (YAXIS) { 
-  z = Pixel, b = p1+2:  
-  z = exp( z ) * pixel  
-  |z| <= b 
+ExpDog (YAXIS) {
+  z = Pixel, b = p1+2:
+  z = exp( z ) * pixel
+  |z| <= b
   ;SOURCE: newform.frm
 }
 
@@ -5762,7 +5762,7 @@ Explode_M_p3j {; by Jay Hill, 1998
   z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
   z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
   z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
- : 
+ :
   z=exp(z)+c/sqr(z+p)/(z+p)
   real(z)<=900000
   ;SOURCE: 98msg.frm
@@ -5787,7 +5787,7 @@ Explode_M_pj {; by Jay Hill, 1998
   z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
   z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
   z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
-  : 
+  :
   z=exp(z)+c/sqr(z+p)
   real(z)<=900000
   ;SOURCE: 98msg.frm
@@ -5802,7 +5802,7 @@ ExpSinZ (Xaxis) { ; Jm Collard-Richard --- Use Float=Yes
   z1=es-1
   z2=c*es
   z=z-(z1/z2)
-  0.001<=|z1|   
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5813,7 +5813,7 @@ ExpZ2 (xaxis)  {; Jm Collard-Richard
   z1=exp(z*z)-1
   z2=2*z*exp(z*z)
   z=z-(z1/z2)
-  0.0001<=|z1| 
+  0.0001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5824,7 +5824,7 @@ ExpZ_N (xaxis) {; Jm Collard-Richard  exp(z^n)=1 p1=n  float=yes
   z1=z0-1
   z2=p1*z^(p1-1)*z0
   z=z-(z1/z2)
-  0.0001<=|z1| 
+  0.0001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5834,7 +5834,7 @@ ExpZZ (XAXIS) {; Jm Collard-Richard
   z1=exp(z*log(z))-exp(z)
   z2=(log(z)+1)*exp(z*log(z))-exp(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5848,7 +5848,7 @@ ExSiCoZ (Xaxis) {; Jm Collard-Richard  --- Use Float=Yes
   z1=es-c
   z2=c*es+s
   z=z-(z1/z2)
-  0.001<=|z1|   
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -5887,12 +5887,12 @@ eyes {; Giuseppe Zito
   d15 = 0.926932
   d17 = 0.693057
   d20 = 0.398282
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 *x
   s0 = s0 -c3
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 -x
   s1 = x
@@ -5911,9 +5911,9 @@ eyes {; Giuseppe Zito
   s0 = s0 -d20
   s0 = s0 *x
   s0 = s0 +y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 

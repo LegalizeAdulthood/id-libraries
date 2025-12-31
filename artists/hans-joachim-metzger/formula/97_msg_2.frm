@@ -455,7 +455,7 @@ tent_inside { ; Sylvie Gallet [101324,3444], Apr 1997
    r = cabs(UV)
     abs(l-r) >= 0.001 && r < 4
   }
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
 c=z=pixel:
 z=z+(fn1(c^2)/fn2(z^2))/c^4,|z| <=6
 }
@@ -467,7 +467,7 @@ Lesfrm43    { ; Modified Sylvie Gallet formula
   beta = fn2(h/r) , alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :

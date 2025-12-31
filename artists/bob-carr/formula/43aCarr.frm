@@ -245,7 +245,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.144)+(c/10)-(|0.0035/c/21|) 
+z=z*z+(-0.7456,-0.144)+(c/10)-(|0.0035/c/21|)
 iter=iter+1
 |z|<=bailout
 }
@@ -262,7 +262,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
 iter=iter+1
 |z|<=bailout
 }
@@ -279,7 +279,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
 iter=iter+1
 |z|<=bailout
 }
@@ -296,7 +296,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
 iter=iter+1
 |z|<=bailout
 }
@@ -313,7 +313,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.132)+(c/8)+(0.0065/c/21) 
+z=z*z+(-0.7456,-0.132)+(c/8)+(0.0065/c/21)
 iter=iter+1
 |z|<=bailout
 }
@@ -330,7 +330,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z+(-0.7456,-0.132)+(c/8)+(0.0035/c/21) 
+z=z*z+(-0.7456,-0.132)+(c/8)+(0.0035/c/21)
 iter=iter+1
 |z|<=bailout
 }

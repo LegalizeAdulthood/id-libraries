@@ -1,4 +1,4 @@
-general_man { ; Kerry Mitchell 26aug98 
+general_man { ; Kerry Mitchell 26aug98
 	;
 	; "2 general circles" coloring method for Mandelbrot
 	; c = pixel = Mandelbrot parameter

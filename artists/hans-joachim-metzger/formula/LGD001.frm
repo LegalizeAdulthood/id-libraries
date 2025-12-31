@@ -19,7 +19,7 @@ LGDF0014 {; Created with FracText
   |z|<=4&&test==0
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0015 {; Created with FracText
           ; requires 'periodicity=0'
   c=z=pixel, x=real(z), y=imag(z)
@@ -40,7 +40,7 @@ LGDF0015 {; Created with FracText
   |z|<=p1&&test==0
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0003 {; A mangled Mandelbrot
           ; LGD (c)1996 [72332,507]
   c=z=pixel:
@@ -48,7 +48,7 @@ LGDF0003 {; A mangled Mandelbrot
   |z|<=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0012 {; What it is more again
           ; Use a big bailout (p1>1000000)
           ; LGD (c)1996 [72332,507]
@@ -57,7 +57,7 @@ LGDF0012 {; What it is more again
   |z|<=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0013 {; Another nothing
           ; LGD (c)1996 [72332,507]
   c=z=pixel:
@@ -66,7 +66,7 @@ LGDF0013 {; Another nothing
   |z|>=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0016 {; Return of the Son of Nothing
           ; LGD (c)1996 [72332,507]
   c=z=pixel:
@@ -75,7 +75,7 @@ LGDF0016 {; Return of the Son of Nothing
   |z|<=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0016 {; Return of the Son of Nothing
           ; LGD (c)1996 [72332,507]
   c=z=pixel:
@@ -84,7 +84,7 @@ LGDF0016 {; Return of the Son of Nothing
   |z|<=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0001 {; Inspired by Bob Carr
           ; LGD (c)1996 [72332,507]
   z=pixel
@@ -94,7 +94,7 @@ LGDF0001 {; Inspired by Bob Carr
   |z|<=4
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0006 {; What it is more
           ; Use a big bailout (p1>1000000)
           ; LGD (c)1996 [72332,507]
@@ -103,12 +103,12 @@ LGDF0006 {; What it is more
   |z|<=p1
   ;SOURCE: lgd001.frm
 }
- 
+
 LGDF0009 (XAXIS) {; TwoFace Formula
                   ; Modified Sylvie Gallet frm.
                   ; Modified Carr1971 formula
                   ; LGD 1-11-96
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -118,4 +118,4 @@ LGDF0009 (XAXIS) {; TwoFace Formula
   |z|<=bailout
   ;SOURCE: lgd001.frm
 }
- 
+

@@ -222,7 +222,7 @@ Carr-766 {
 }
 
 
-Carr-767 {; This is a modification of a formula I saw somewhere. 
+Carr-767 {; This is a modification of a formula I saw somewhere.
           ; If you know who's it is please let me know.
   c=z=1/(pixel^1.245):
   z=fn1(z^1.245)+fn2(c)

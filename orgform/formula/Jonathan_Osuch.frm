@@ -1,7 +1,7 @@
 
 
-IslandOfChaos(XAXIS_NOPARM)[float=y function=sqr/sin/cosxx] {; 
-    ; Jonathan Osuch <osuchj@avalon.net> 
+IslandOfChaos(XAXIS_NOPARM)[float=y function=sqr/sin/cosxx] {;
+    ; Jonathan Osuch <osuchj@avalon.net>
     ; Thu, 31 May 2007 19:57:54
     ; Generalized by Tobey J. E. Reed [76437,375]
     ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cosxx

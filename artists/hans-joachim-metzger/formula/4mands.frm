@@ -107,4 +107,4 @@ Four_Mandels {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+

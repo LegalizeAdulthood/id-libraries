@@ -131,7 +131,7 @@ Orbit1 {
     x = x - fn2(y)
     z = x + flip(y),
     Real(t) < Valst
-}    
+}
 
 Mac200 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
@@ -297,7 +297,7 @@ Mac216 {
   c = p2
   z = pixel:
     z = fn4( fn1(z) * fn2(x) + fn3(c) )
-    c = c + p3                
+    c = c + p3
     |z| < bailout
 }
 
@@ -654,7 +654,7 @@ Mac256 {
   z = pixel
   count = 0:
     count = count + 0.1
-    z = fn1(z * count) + c 
+    z = fn1(z * count) + c
     |z| < bailout
 }
 
@@ -663,7 +663,7 @@ Mac257 {
   c = z = pixel
   count = 0:
     count = count + 0.1
-    z = fn1(z * count) + c 
+    z = fn1(z * count) + c
     |z| < bailout
 }
 
@@ -673,7 +673,7 @@ Mac258 {
   z = pixel
   count = 0:
     count = count + p2
-    z = fn1(z * z) + fn2(count * count) + c 
+    z = fn1(z * z) + fn2(count * count) + c
     |z| < bailout
 }
 
@@ -682,7 +682,7 @@ Mac259 {
   c = z = pixel
   count = 0:
     count = count + p2
-    z = fn1(z * z) + fn2(count * count) + c 
+    z = fn1(z * z) + fn2(count * count) + c
     |z| < bailout
 }
 

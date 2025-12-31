@@ -177,7 +177,7 @@ U02-30 {; V.1.1 - earlier versions may be discarded
         ; U[0]=1
         ; U[1]=2z
         ; U[n+1]=2zU[n]-U[n-1]
-        ; 
+        ;
         ; = 2zU01-U00
   z=pixel*(p1==0)+p1
   r=p2, bailout=.0000001

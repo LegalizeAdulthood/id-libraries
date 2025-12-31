@@ -6,12 +6,12 @@ The accompanying parameter file (RCL.PAR) provides a simple
 example generated from each formula.
 
 Ron Lewen
-CIS: 76376,2567 
+CIS: 76376,2567
  }
 
 RCL_Cross1  { ; Ron Lewen
   ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-  ; -10/10/-7.5/7.5 to see a cross shape.  The larger 
+  ; -10/10/-7.5/7.5 to see a cross shape.  The larger
   ; lakes at the center of the cross have good detail
   ; to zoom in on.
   ; Use floating point.
@@ -23,7 +23,7 @@ RCL_Cross1  { ; Ron Lewen
 
 RCL_Cross2 { ; Ron Lewen
   ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-  ; -10/10/-7.5/7.5 to see a deformed cross shape. 
+  ; -10/10/-7.5/7.5 to see a deformed cross shape.
   ; The larger lakes at the center of the cross have
   ; good detail to zoom in on.
   ; Try corner=-1.58172/.976279/-1.21088/-.756799 to see
@@ -58,7 +58,7 @@ RCL_Logistic_1 (XAXIS) { ; Ron Lewen
 
 RCL_Pick1 (XAXIS) { ; Ron Lewen
   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
   ; Pickover's Computers, Pattern, Chaos and Beauty.
   ; Figures 9.9 - 9.13 can be found by zooming.
   ; Use floating point
@@ -82,10 +82,10 @@ RCL_Pick2_M (XAXIS) { ; Ron Lewen
     z=sin(z) + z^2 + pixel,
       |real(z)| < 100 || |imag(z)| < 100
   }
- 
+
 RCL_Pick2_J { ; Ron Lewen
   ;  A julia set based on the formula in Figure 8.9
-  ;  (p. 105) of Pickover's book.  Very similar to 
+  ;  (p. 105) of Pickover's book.  Very similar to
   ;  the Frontpiece for Appendix A.
   ;
   z=pixel:
@@ -201,7 +201,7 @@ RCL_Pick12 { ; Ron Lewen
 
 RCL_Pick13 { ; Ron Lewen
   ;
-  ;  Formula from Frontpiece for Appendix C 
+  ;  Formula from Frontpiece for Appendix C
   ;  and Credits in Pickover's book.
   ;  Set p1=(3,0) to generate the Frontpiece
   ;  for Appendix C and to (2,0) for Credits

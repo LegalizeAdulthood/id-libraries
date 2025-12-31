@@ -18,7 +18,7 @@
 ; transform them into their mandelbrot related sets..
 ; For the moment, i'm trying to do the escape time Fern, so if anyone have
 ; the correct funtion for it, please post it or send it directly to me.
-;  
+;
 ;                          Sincerely
 ;                                    Ramiro Perez (rperez@utpvm1.bitnet)
 
@@ -47,12 +47,12 @@ Twotrj{
     z=p1*z+p
     |z|<=100
 }
- 
+
 ; Now, here are formulas with three transformations
-;  
+;
 ; First, our old friend, the sierpinsky triangle
 ; Use p1=2 for the triangle, and p1=(1.3,.5) for a strange thing
-;  
+;
 Sierpinsky{
     z=pixel, j=(0, -1), k=(-1, 0):
     x=real(z),
@@ -85,10 +85,10 @@ EqTrngl{
     z=p1*z+p
     |z|<=100
 }
- 
+
 ; And finally, five transformations..
 ; Use p1=2 to get the image
- 
+
 Diamont{
     z=pixel, j=(0, -1), k=(-1, 0), l=(0, 1), m=(1, 0):
     x=real(z)

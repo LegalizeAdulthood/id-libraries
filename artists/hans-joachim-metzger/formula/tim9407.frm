@@ -8,4 +8,4 @@ Newton_elliptic {; Tim Wegner - use float=yes and periodicity=0
   p2 <= |z3 + p1*z2 + 1|  ; no need for sqr because sqr(z)==0 iff z==0
   ;SOURCE: fractint.frm
 }
- 
+

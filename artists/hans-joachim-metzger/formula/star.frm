@@ -189,7 +189,7 @@ starbail_jul {; Kerry Mitchell 09oct98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 starbail_man {; Kerry Mitchell 09oct98
         ;
         ; Kerry Mitchell's explanation of his "Star" formulas is at
@@ -383,11 +383,11 @@ starbail_man {; Kerry Mitchell 09oct98
 ;          narrative copyright Kerry Mitchell 09oct98
 ;
 ;  Related formulas:
-;    starbail_man  (above) 
+;    starbail_man  (above)
 ;    starbail_jul
 ;    starnear_man
 ;    starnear_jul
-;    star-inout 
+;    star-inout
 ;    star_km
 ;
 ; Seeing Stars
@@ -445,7 +445,7 @@ starbail_man {; Kerry Mitchell 09oct98
 ;
 ; The "starnear" formulas use a standard bailout condition--stop when the
 ; iterate gets too big, or leaves a very large circle.  Conversely, in the
-; "starbail" formulas, the bailout condition is built around a star.  If 
+; "starbail" formulas, the bailout condition is built around a star.  If
 ; the star is centered at the origin and is big enough, then you can
 ; essentially use the star instead of the traditional bailout circle.  This
 ; is what has been done in parameter set "starbail1".  The magnification
@@ -473,7 +473,7 @@ starbail_man {; Kerry Mitchell 09oct98
 ;************************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 starnear_jul {; Kerry Mitchell 09oct98
         ;
         ; See the end of formula starbail_man for Kerry Mitchell's
@@ -600,7 +600,7 @@ starnear_jul {; Kerry Mitchell 09oct98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 starnear_man {; Kerry Mitchell 09oct98
         ;
         ; See the end of formula starbail_man for Kerry Mitchell's
@@ -727,4 +727,4 @@ starnear_man {; Kerry Mitchell 09oct98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+

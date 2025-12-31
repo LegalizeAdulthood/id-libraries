@@ -9,11 +9,11 @@
 ; From: DAVID1@VAXB.MIDDLESEX.AC.UK
 ; Subject: Ramiro Perez Volterra .FRM
 ; Lines: 33
-;  
+;
 ; These are the Volterra-Lotka Formulas p 125 BOF received from Ramiro Perez:
 ;
 ; Regards David Walter London england.
- 
+
 comment {
   ; received from Ramiro Perez <RPEREZ@EARN.UTPVM1> 18 Aug 93
 }

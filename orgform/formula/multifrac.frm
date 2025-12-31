@@ -1,14 +1,14 @@
 ; Hi, I`m Albrecht Niekamp, Duesseldorf
 ; Niekamp@Online-club.de
-; 
+;
 ; This is my first try to publish formulas for the fractint users.
 ; These frm-files correspond to the par-files with the same .name.
-; The basic formula (Nr.13 or 13a) was first used on my Multifrac 
-; program for the good old AtariXL.  All other formulas are 
-; variations of this one.  Try yourself, You`ll see that they are 
-; very easy to edit.  Suggstions, new par-files or variations are 
+; The basic formula (Nr.13 or 13a) was first used on my Multifrac
+; program for the good old AtariXL.  All other formulas are
+; variations of this one.  Try yourself, You`ll see that they are
+; very easy to edit.  Suggstions, new par-files or variations are
 ; welcome.
-; 
+;
 ; --------------------------------------------------------------
 
 multifrac1 {
@@ -77,7 +77,7 @@ multifrac7 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z+x-y)    
+  z = z^(z+x-y)
   |z| > (x2+y2)
   }
 
@@ -87,9 +87,9 @@ multifrac8 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
-  }  
+  }
 
 multifrac9 {
   z = pixel:
@@ -97,7 +97,7 @@ multifrac9 {
   x2 = x*x
   x = x2-y2-p1
   y = abs(x)*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
 
@@ -107,7 +107,7 @@ multifrac10 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p1
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
 
@@ -120,7 +120,7 @@ multifrac11 {
   z = sqr(z-x+y)
   |z| > (x2+y2+z)
   }
- 
+
 multifrac12 {
   z = pixel:
   y2 = y*y
@@ -140,7 +140,7 @@ multifrac13 {
   z = sqr(z)
   |z| > (x2+y2)
   }
- 
+
 multifrac13a {
   z = pixel:
   y2 = y*y
@@ -157,7 +157,7 @@ multifrac14 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > 4
   }
 
@@ -167,7 +167,7 @@ multifrac15 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -177,7 +177,7 @@ multifrac16 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z-x+y)    
+  z = sqr(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -187,7 +187,7 @@ multifrac17 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z)    
+  z = sqr(z)
   |z| > (x2*y2)
   }
 
@@ -197,7 +197,7 @@ multifrac18 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = sqr(z+x-y)    
+  z = sqr(z+x-y)
   |z| > (x*y)
   }
 
@@ -207,7 +207,7 @@ multifrac19 {
   x2 = x*x
   x = x2-y2-p1
   y = 2*x*y-p2
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x*y)
   }
 
@@ -221,10 +221,10 @@ multifrac20 {
   else
   y=2*x*y-p1
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
- 
+
 multifrac21 {
   z = pixel:
   y2 = y*y
@@ -235,10 +235,10 @@ multifrac21 {
   else
   y=abs(x)*y*x-p2
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2+y2)
   }
- 
+
 multifrac22 {
   z = pixel:
   y2 = y*y
@@ -249,7 +249,7 @@ multifrac22 {
   else
   y=abs(x)*y*x-p2
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2*y2)
   }
 
@@ -396,10 +396,10 @@ multifrac33 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   w=2*x*w-p3
@@ -414,10 +414,10 @@ multifrac34 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   w=2*x*w-p3
@@ -432,10 +432,10 @@ multifrac35 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
-  w=x2-w2-p3  
+  w=x2-w2-p3
   z=sqr(z-x-y-w)
   else
   y=abs(w)*x*y-p2
@@ -454,11 +454,11 @@ multifrac36 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-p1 
+  x=x2-y2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -480,11 +480,11 @@ multifrac37 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -506,11 +506,11 @@ multifrac38 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x<y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -532,11 +532,11 @@ multifrac39 {
   y2 = y*y
   x2 = x*x
   w2 = w*w
-  x=x2-y2-w2-p1 
+  x=x2-y2-w2-p1
   if (x>y)
   y=abs(x)*x*y-p2
   if (y<w)
-  w=x2-w2-p3  
+  w=x2-w2-p3
   else
   w=y2-w2-p3
   endif
@@ -619,7 +619,7 @@ multifrac46 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z-x-y-w)
   else
@@ -638,7 +638,7 @@ multifrac47 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z-x-y-w)
   else
@@ -657,7 +657,7 @@ multifrac48 {
   w2=fn3(w)
   if (x2>y2)
   x = x2-y
-  y = y2-w 
+  y = y2-w
   w = w2-x
   z = z^(z)-x-y-w
   else
@@ -676,7 +676,7 @@ multifrac49 {
   z2=fn3(z)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z2-x
   z = z^(z)-x-y
   else
@@ -695,7 +695,7 @@ multifrac50 {
   z2=fn3(z)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z2-x
   z = z^(z-x-y)
   else
@@ -732,7 +732,7 @@ multifrac52 {
   x2=fn1(x)
   if (x2>y2)
   x = x2-y
-  y = y2-z 
+  y = y2-z
   z = z^(z-x-y)
   else
   x=2*x2*y
@@ -741,7 +741,7 @@ multifrac52 {
   endif
   |z| > (x*y)
   }
- 
+
 multifrac53 {
   z = pixel:
   y2=fn2(y)
@@ -789,7 +789,7 @@ multifrac55 {
   }
 
 multifrac56 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -805,7 +805,7 @@ multifrac56 {
   }
 
 multifrac57 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -821,7 +821,7 @@ multifrac57 {
   }
 
 multifrac58 {
-  z=p1 
+  z=p1
   c =pixel:
   y2=fn2(y)
   x2=fn1(x)
@@ -955,10 +955,10 @@ multifrac67 {
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -982,10 +982,10 @@ multifrac68 {
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -1007,11 +1007,11 @@ multifrac68 {
 
 ; --------------------------------------------------------------
 ; --------------------------------------------------------------
-; 
-; 
+;
+;
 ; is this post-fractint? Kinda pick up the pieces
 ; and make something new of it? I hope not.
-; 
+;
 ; It was supposed to be an update to Mandelmania
 ; but it turned out to become something different,
 ; more a tool then a formula. A tool to be used
@@ -1081,20 +1081,20 @@ multifrac68 {
 ; values, P6 is needed.
 ; Its a good idea to have a hardcopy available when doing the inputs, also
 ; some basic pars ready to modify.
-; 
+;
 ; There is one problem: Many_mods is n o t compatible
 ; with the lake effect, as they both define "c", applying the effect to "z"
 ; does not do the job and the image is partly distorted. P l e a s e tell me,
 ; if you
 ; see a solution, maybe only Sylvie can help.
-; 
-; 
+;
+;
 ; If you have questions or bugs to report, I will answer immediately and --
 ; please post your images.
-; 
+;
 ; Writing this was like a trip into a new country, and when you finally
 ; detect, that it's much more complex then it´s parts, well- that´s it.
-; 
+;
 
 Multifractal     { ; Albrecht Niekamp  -- Apr, 2003
 ;only integers as first input, second input 5 digits to the right

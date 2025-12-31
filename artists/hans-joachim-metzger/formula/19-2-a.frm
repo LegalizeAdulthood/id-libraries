@@ -7,7 +7,7 @@ Gallet-6-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 PD_412 {
   bailout = 4 + imag(p3)
   k = real(p3), z = z1 = pixel
@@ -19,7 +19,7 @@ PD_412 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg04.frm
 }
- 
+
 PD_413 {
   bailout = 4 + imag(p3)
   k = real(p3), z = z1 = pixel
@@ -31,7 +31,7 @@ PD_413 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg04.frm
 }
- 
+
 Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) * fn3(p3*y))
@@ -41,7 +41,7 @@ Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-6.frm
 }
- 
+
 Barnsley_PHC_3 {; formula adapted by Vincent Damion Presogna
   z = c = pixel
   c1 = p1*whitesq + c*(whitesq==0) , c2 = p2*(whitesq==0) :
@@ -50,18 +50,18 @@ Barnsley_PHC_3 {; formula adapted by Vincent Damion Presogna
     |z| < 4
   ;SOURCE: 96msg.frm
 }
- 
+
 BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
    ; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
- 
+
 Carr2182 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel
   c=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -77,30 +77,30 @@ Carr2182 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2433 {; Sylvie Gallet [101324,3444], Mod. BEJ
-          ; Revised for Fractint v20 by G. Martin 
+          ; Revised for Fractint v20 by G. Martin
   z=conj(conj(pixel/3-conj(0.10/pixel)))
   c=conj(pixel^3)-conj(0.10/pixel)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
 }
- 
+
 Carr2458 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   m3=cabs(newpixel+0.5)*conj(conj(newpixel^7))
   z=(m3-conj(0.10/newpixel)-sqr(flip(0.00510/newpixel)))-0.25:
@@ -109,7 +109,7 @@ Carr2458 (YAXIS) {; modified Jo Weber frm.
   |real(z-oldz)|>=|0.001|
   ;SOURCE: 42jcarr.frm
 }
- 
+
 Carr2559 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -126,7 +126,7 @@ Carr2559 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42lcarr.frm
 }
- 
+
 Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) + fn3(p3*y))
@@ -136,7 +136,7 @@ Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
              ; PTC formula
   cr = real(scrnpix) + imag(scrnpix)
@@ -151,7 +151,7 @@ Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 PD_207 {
   z = pixel
   x = real(pixel), y = imag(pixel)
@@ -160,8 +160,8 @@ PD_207 {
   |z| <= p3
   ;SOURCE: pdg02.frm
 }
- 
-Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+
+Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=flip(conj(1-pixel))*sqr(pixel)\
        -(conj(0.0005/pixel))-sqr(flip(0.03/pixel))
@@ -176,7 +176,7 @@ Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42bcarr.frm
 }
- 
+
 Carr2735 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
    ; passes 1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -196,27 +196,27 @@ Carr2735 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 96msg.frm
 }
- 
-BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13" 
-  z = pixel 
+
+BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13"
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(fn3(x)/y)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
- 
+
 BJ-Lesfrm13-005 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn3(x/y)/fn4(z)
   |z| <= 4
   ;SOURCE: modles13.frm
 }
- 
+
 Carr1989 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel-conj(pixel/5), p10=10*pixel, th1=tanh(1), c=z-0.099/pixel
@@ -234,7 +234,7 @@ Carr1989 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2025 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=(pixel)-conj(0.1/pixel)-flip(0.1/pixel)
@@ -242,15 +242,15 @@ Carr2025 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
-mans-galore-027 {; Variation on Sylvie Gallet formula. 
+
+mans-galore-027 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -266,17 +266,17 @@ mans-galore-027 {; Variation on Sylvie Gallet formula.
   |z| <= 16
   ;SOURCE: bej011.frm
 }
- 
+
 Lesfrm13 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: lesfrm13.frm
 }
- 
+
 a0a07 {; Revised 4/27/96 to eliminate superfluous "+c"
        ; Original version of this formula may be discarded
   z=pixel:
@@ -284,17 +284,17 @@ a0a07 {; Revised 4/27/96 to eliminate superfluous "+c"
   |z|<4
   ;SOURCE: new.frm
 }
- 
+
 BJ-SG-3-03-g {; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
+  x1 = x - p1*fn1(x*x+p2*fn2(y))
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
   z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: sg-bc-bj.frm
 }
- 
+
 cc3 {; Revised 4/27/96 to eliminate superfluous "+c"
      ; Original version of this formula may be discarded
   z=pixel, m=(z+1)+z, n=(z-1)+z
@@ -303,21 +303,21 @@ cc3 {; Revised 4/27/96 to eliminate superfluous "+c"
   |z|<=4
   ;SOURCE: new.frm
 }
- 
+
 Carr2330 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m = tan(newpixel) - tanh(newpixel)
   z = 2*m + flip(newpixel), c = (-0.7,0.2)
   d1 = -0.0003545/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct - d2, c = c*t + ct
   z = z^2.45 + c + sinh(z/6)
@@ -325,15 +325,15 @@ Carr2330 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |real(z)| <= bailout
   ;SOURCE: 42gcarr.frm
 }
- 
+
 kg1402 {
   z = y = pixel+p2:
-  z = fn1(z) / fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) / fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kg14.frm
 }
- 
+
 Carr1976 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
@@ -343,18 +343,18 @@ Carr1976 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter=1, rad=6, center=(1.0,0.1)
   pix=exp(10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn=(center+rad/(pix-center)), limit=real(p1/(tan(1/pixel)))
-  test0=1, b1=16, b2=0.0001, test3=0: 
+  test0=1, b1=16, b2=0.0001, test3=0:
   test1=(iter<limit), test0=1-test0, test2=(iter!=limit)
   z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-10*pixel)/(4*z4 + (z4==0))
-  z=(z2+c)*test1+((z-z1)*(1-test1)) 
+  z=(z2+c)*test1+((z-z1)*(1-test1))
   test3=(test3 || (|z|>b1))
   z=(z*(1-(test3 && test0 && test1)))
   iter=iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42carr.frm
 }
- 
+
 Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5
   c=sin(conj(-0.81256,-0.2495))
@@ -370,7 +370,7 @@ Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Gallet-3-03 {; Sylvie Gallet [101324,3444], 1996
   z = pixel :
   x = real(z), y = imag(z)
@@ -380,8 +380,8 @@ Gallet-3-03 {; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: gallet-3.frm
 }
- 
-Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996 
+
+Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   z = pixel/(pixel*pixel+1) :
   x = real(z), y = imag(z)
   x1 = x - p1*fn1(y+p2*fn2(y))
@@ -390,7 +390,7 @@ Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: gallet-3.frm
 }
- 
+
 BEJ_22 {
   z=pixel:
   z=z*z*z
@@ -399,15 +399,15 @@ BEJ_22 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 Tim's_Newton_a {
   z = pixel, z2 = z*z, z3 = z*z2:
-  num = (z3 + p1*z2 + 1)^.5      
-  denom = (1.5*z2 + p1*z)/num    
-  z = z - (num/denom)            
+  num = (z3 + p1*z2 + 1)^.5
+  denom = (1.5*z2 + p1*z)/num
+  z = z - (num/denom)
   z2 = z*z+c
   z3 = z*z2
-  p2 <= |z3 + p1*z2 + 1| 
+  p2 <= |z3 + p1*z2 + 1|
   ;SOURCE: bej's2.frm
 }
 Gallet-3-02 {; Sylvie Gallet [101324,3444], 1996
@@ -419,11 +419,11 @@ Gallet-3-02 {; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: gallet-3.frm
 }
- 
-Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996 
+
+Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel), p = p2/p1 :
   z = z*p
   z <= p1
   ;SOURCE: gallet-3.frm
 }
- 
+

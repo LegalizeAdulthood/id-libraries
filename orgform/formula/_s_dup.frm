@@ -1,7 +1,7 @@
 
 
 Sam_8 {; from SAM.FRM
-       ; fix by Ron Barnett [70153,1233]   
+       ; fix by Ron Barnett [70153,1233]
   z = c = Pixel:
   z = z^c
   ;SOURCE: fract003.frm
@@ -50,7 +50,7 @@ SinEggC (XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
 
 SinhEgg (XAXIS_NOPARM) {; Jon Osuch
                         ; Try p1=0, p2=4, fn1=sinh, fn2=sqr
-                        ; Edited for Fractint v. 20 by 
+                        ; Edited for Fractint v. 20 by
                         ; George Martin, 10/98
   z = p1
   x = |z|:
@@ -63,10 +63,10 @@ SinhEgg (XAXIS_NOPARM) {; Jon Osuch
 
 
 spider {
-  z=pixel, f=pixel: 
+  z=pixel, f=pixel:
   f=f/p2+z
   z=fn1(z^p1)+fn2(f)
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: test.frm
 }
 
@@ -104,7 +104,7 @@ Sterling2 (XAXIS) {; davisl
 
 
 Sterling2 (XAXIS) {
-  z = pixel:  
+  z = pixel:
   z = ((z/2.7182818)^z)/sqr(6.2631853*Z) + pixel
   |z| <= 4
   ;SOURCE: newforms.frm

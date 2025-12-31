@@ -5,7 +5,7 @@ Carr1540 {
   |real(z)| <=4
   ;SOURCE: 34carr.frm
 }
- 
+
 Carr1483 {; Julia?
   z=conj(1-pixel)/2.33^1.75
   c=imag(4.299,-1.2):
@@ -14,7 +14,7 @@ Carr1483 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1505 {; Julia?
   z=0.1/(pixel+pixel)/(flip(1/pixel))
   c=conj(pixel-1.5)/(z-1.2/(1/flip(pixel))):
@@ -23,7 +23,7 @@ Carr1505 {; Julia?
   |z| <=4
   ;SOURCE: 34carr.frm
 }
- 
+
 Carr1539 {; Julia
   z=((1-pixel)/0.413)+1.924
   c=z-1/conj(z*z)+conj(pixel-z):
@@ -32,7 +32,7 @@ Carr1539 {; Julia
   |real(z)| <=4
   ;SOURCE: 34carr.frm
 }
- 
+
 Carr1591 {; Spider type.
   z=1/acos(pixel+pixel)
   c=1/asin(pixel):
@@ -41,7 +41,7 @@ Carr1591 {; Spider type.
   |real(z)| <=4
   ;SOURCE: 35carr.frm
 }
- 
+
 Carr1630 {; Julia.
   z=(sqrt(pixel)^pixel)/sqr(sqr(1/asin(pixel)))
   c=acos(pixel)/acos(pixel+1/pixel):
@@ -50,7 +50,7 @@ Carr1630 {; Julia.
   |real(z)| <=4
   ;SOURCE: 36carr.frm
 }
- 
+
 Carr1699 {; Mandel type.
   c=(pixel)/(flip(1/pixel)-conj(1/pixel))
   z=(1/pixel)/(2*pixel-flip(1/pixel)-conj(1/pixel)):
@@ -58,4 +58,4 @@ Carr1699 {; Mandel type.
   |real(z)| <=4
   ;SOURCE: 37carr.frm
 }
- 
+

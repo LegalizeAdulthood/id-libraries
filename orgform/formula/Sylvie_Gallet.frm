@@ -26,7 +26,7 @@ if (real(p4) > 0 && real(p4) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
  pixel = z + z3rd
 endif
@@ -50,7 +50,7 @@ tmanlake   { ; lake-transform
 ;                  the screen height (0 = bottom, 100 = top)
 ; imag part of p2: amplitude of the wave (try 0.2)
 ; real part of p3: frequency (try 300)
-; imag part of p3: phase 
+; imag part of p3: phase
 ;
 ; Lake transformation
 ; -------------------
@@ -70,7 +70,7 @@ if (real(p2) > 0 && real(p2) <= 100)
   b = imag(conj(u)*z) / imag(conj(u)*v)
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2+imag(p3))) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2+imag(p3))) * v
   endif
  pixel = z + z3rd
 endif
@@ -82,6 +82,6 @@ t2=z3*z3+2*z1*z2
 t3=z2*z2+2*z3*z1
 z1=t1+c1,z2=t2-c2*c2,z3=t3+c3
 z=z1+z2+z3
-|z| < 8 
+|z| < 8
 }
 

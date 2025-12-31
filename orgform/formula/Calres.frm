@@ -1,19 +1,19 @@
 ; these formula are needed to generate some of the sample images shown
-; on Images pages 2 & 3 of the CALResCo web site http://www.calresco.force9.co.uk 
+; on Images pages 2 & 3 of the CALResCo web site http://www.calresco.force9.co.uk
 ; I am not the author of any of these formulae, all of which are taken from .FRM
-; files supplied with FRACTINT and/or FRACTXTRA packages. This collection is 
+; files supplied with FRACTINT and/or FRACTXTRA packages. This collection is
 ; assembled for the convenience of visitors to my Web site only and should not be
 ; incorporated into any collections without the original author's permission.
 ; Chris Lucas clucas@calresco.force9.co.uk
 
 3jRatz-fn {z = Pixel :; from FN-RATZ.FRM (author unknown)
-         z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) , 
+         z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) ,
          | z | <= 10 }
 
 3RDIM01  {;Mandelbrot from 4DFRACT.FRM (Gordon Lamb)
         z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+flip(imag(pixel)*p1):
-        
+
         z=z*z+c, |z|<=64}
 
 Hall-c {; Symmetry in Chaos from HALLWEEN.frm (Michael G. Wareman)
@@ -82,7 +82,7 @@ OK-18 {; from OVERKILL.FRM (c) Bradley Beacham
    v = fn2(z) + imag(v),
    |z| <= (5 + p1)
   }
-  
+
 pheonix(XAXIS)  {; from NOEL.FRM (Noel Griffin)
 ; Add conjugation and produce a great fractal even if it's spelt wrong.
       z = pixel, zp1 = zp2 = (0,0):

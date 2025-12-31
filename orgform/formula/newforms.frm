@@ -19,14 +19,14 @@
    }
 
 { The following is a formula taken from a Compuserve GIF file called RAMANUJAN1
-  as suggested by an equation in an article about the life and work of Indian 
+  as suggested by an equation in an article about the life and work of Indian
   mathematician Srinivasa Ramanujan in the book "The World of Mathematics" Vol.
   1, pp 366-376.}
 
   Ramanujan1(ORIGIN) {
        z = pixel:
        z = (cosh(p1 * sqr(z)) - sinh(p2 * sqr(z))/(p2 * sqr(z)))/z,
-       |z|<= 4   
+       |z|<= 4
 }
 
 { The following formula came from Tobey J. E. Reed when asked how he made his
@@ -37,7 +37,7 @@
        c = sqr(pixel)/z,
        c = z + c,
        z = sqr(z),
-       |z| < P1 
+       |z| < P1
   }
 
   LeeMandel2(XYAXIS) {

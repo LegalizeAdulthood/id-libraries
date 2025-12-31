@@ -12,7 +12,7 @@ multifrac54 {
   endif
   |z| > x
   }
- 
+
 multifrac54 {
   z = pixel:
   y2=fn2(y)
@@ -27,4 +27,4 @@ multifrac54 {
   endif
   |z| > x
   }
- 
+

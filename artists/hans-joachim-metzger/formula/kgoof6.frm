@@ -6,4 +6,4 @@ oof6 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof6.frm
 }
- 
+

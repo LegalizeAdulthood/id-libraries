@@ -1,8 +1,8 @@
-; 
+;
 ; -------------------------------------------------------------------------------------------------
-; 
+;
 ; I've been looking at such "inversion groups" (aka. "kleinian groups") with Fractint:
-; 
+;
 6Klein_Group(XYAXIS)  { ; Morgan L. Owens  <packrat@nznet.gen.nz>
                         ; Mon, 20 May 2002 19:38:59
 pi3=pi/3
@@ -38,15 +38,15 @@ ENDIF
 inside}
 
 ; -------------------------------------------------------------------------------------------------
-; 
-; In this example the accumulation points (where the images pile up on each 
-; other) all lie on a single circle. This is an accident due to the symmetry 
-; of the original mirrors' arrangement. In general, the curve is 
-; "nowhere-differentiable" in the jargon of a mid-1960s text where I first 
+;
+; In this example the accumulation points (where the images pile up on each
+; other) all lie on a single circle. This is an accident due to the symmetry
+; of the original mirrors' arrangement. In general, the curve is
+; "nowhere-differentiable" in the jargon of a mid-1960s text where I first
 ; came across the subject. Modern terminology would use "fractal".
-; 
-; I've just started on another where each pixel is coloured according to how 
-; many reflections a ray starting from that point goes through before 
+;
+; I've just started on another where each pixel is coloured according to how
+; many reflections a ray starting from that point goes through before
 ; escaping the system, but at the moment it's still a bit buggy:
 
 threecircles1   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
@@ -337,11 +337,11 @@ escaped==0
 }
 
 ; -------------------------------------------------------------------------------------------------
-; 
-; ...and while we're on the subject of Fractint formulae, can someone explain 
-; why it is that it's still possible after all this time for BoF to still 
-; contain things that haven't been reproduced in Fractint yet? You'd have 
-; thought that the two-dimensional Newton systems described therein would've 
+;
+; ...and while we're on the subject of Fractint formulae, can someone explain
+; why it is that it's still possible after all this time for BoF to still
+; contain things that haven't been reproduced in Fractint yet? You'd have
+; thought that the two-dimensional Newton systems described therein would've
 ; been:
 
 twodnewton   { ; Morgan L. Owens  <packrat@nznet.gen.nz>
@@ -364,7 +364,7 @@ z=nx+flip(ny)
 }
 
 ; (E.g. h=0.5, m=2)
-; 
+;
 ; -------------------------------------------------------------------------------------------------
 
 3Klein_Group(XAXIS)   { ; Morgan L. Owens <packrat@nznet.gen.nz>
@@ -925,8 +925,8 @@ endif
 inside}
 
 ; -------------------------------------------------------------------------------------------------
-; 
-; The problem is that the order in which pixels are calculated depends 
+;
+; The problem is that the order in which pixels are calculated depends
 ; critically on the drawing method used. The following formula SHOULD NOT work:
 
 swatch     { ; Morgan L. Owens <packrat@nznet.gen.nz>
@@ -942,37 +942,37 @@ swatch     { ; Morgan L. Owens <packrat@nznet.gen.nz>
 }
 
 ; And it won't if you use any drawing method other than (1) or (b).
-; 
+;
 ; -------------------------------------------------------------------------------------------------
-; 
-; This derives from a problem by Appollonius: Given three circles in the 
-; plane, find a fourth circle tangent to the given three. There are eight 
-; solutions in general, depending on whether the given circles are to be 
-; inside or outside the tangent circle; this one just picks the solution 
-; where all three are outside (I'll use imag(p5) to make this configurable 
+;
+; This derives from a problem by Appollonius: Given three circles in the
+; plane, find a fourth circle tangent to the given three. There are eight
+; solutions in general, depending on whether the given circles are to be
+; inside or outside the tangent circle; this one just picks the solution
+; where all three are outside (I'll use imag(p5) to make this configurable
 ; later, and figure out which circles need to have negative radii).
-; 
-; Every circle will be tangent to at least one other, and one of the circles 
-; will be tangent to the other three - further tangencies are the 
+;
+; Every circle will be tangent to at least one other, and one of the circles
+; will be tangent to the other three - further tangencies are the
 ; responsibility of the user.
-; 
-; This was a situation where I wish I had Mathematica to do the algebra for 
-; me. I banged my head for several hours, got stuck, went to 
-; http://mathworld.wolfram.com/, found that I'd pretty much done that, went 
-; back, realised what I was missing (two lines), fixed a coupla typos and the 
-; rest fell into place. Exercise for the reader: Solve the Appollonian 
+;
+; This was a situation where I wish I had Mathematica to do the algebra for
+; me. I banged my head for several hours, got stuck, went to
+; http://mathworld.wolfram.com/, found that I'd pretty much done that, went
+; back, realised what I was missing (two lines), fixed a coupla typos and the
+; rest fell into place. Exercise for the reader: Solve the Appollonian
 ; problem yourself, without peeking at the code or reference materials.
-; 
+;
 ; Parameters:
 ; real(p1), imag(p1), real(p2); centre and radius of first circle
 ; imag(p2), real(p3), imag(p3); centre and radius of second circle
 ; real(p4), imag(p4), real(p5); centre and radius of third circle
-; 
-; Like I said, imag(p5) will be getting a use soon. I might also do some 
-; extra checking to cope with collinear given circles (i.e., the tangent 
-; circle becomes a straight line). I take no responsibility if the first 
-; three circles overlap - though the tangent circle is still constructed, I 
-; can only invert in one circle at a time, and which one is used in regions 
+;
+; Like I said, imag(p5) will be getting a use soon. I might also do some
+; extra checking to cope with collinear given circles (i.e., the tangent
+; circle becomes a straight line). I take no responsibility if the first
+; three circles overlap - though the tangent circle is still constructed, I
+; can only invert in one circle at a time, and which one is used in regions
 ; of overlap is pretty arbitrary.
 
 4ApolloKlein1   { ; Morgan L. Owens  <packrat@nznet.gen.nz>

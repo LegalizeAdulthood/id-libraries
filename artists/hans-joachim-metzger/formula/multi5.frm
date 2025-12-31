@@ -623,7 +623,7 @@ Multifrac_228 {
   endif
   |z|<=bailout
   }
- 
+
 Multifrac_228 {
  fac=real(p1)
  bailout=imag(p1)
@@ -649,7 +649,7 @@ Multifrac_228 {
  endif
  |z|<=bailout
  }
- 
+
 Multifrac_204c {
   fac=real(p1)
   bailout=imag(p1)

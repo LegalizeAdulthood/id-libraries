@@ -60,32 +60,32 @@ m+j+n_2 {; Sylvie Gallet [101324,3444], 1997
 
 m+j+n_2+if {; Sylvie Gallet [101324,3444], 1996
   p0 = p3 - 1, odd = iter = wait = 0
-  z = cm = pixel * exp(-flip(imag(p1)) * 0.01745329252) / abs(real(p1)) 
+  z = cm = pixel * exp(-flip(imag(p1)) * 0.01745329252) / abs(real(p1))
   :
   odd = odd == wait
   IF (iter < 300)
     IF (wait == 0)
       z = z*z + cm
-    ENDIF 
+    ENDIF
     bailout = |z| <= 16
     IF (bailout == 0)
       z = 0, wait = 1, bailout = 1
-    ENDIF 
-  ELSE 
+    ENDIF
+  ELSE
     IF (iter == 300)
       IF (wait == 0)
         odd = 0, wait = 1
-      ENDIF 
+      ENDIF
       z = pixel, bailout = 1
-    ELSE 
+    ELSE
       IF (odd)
         zp0 = z^p0, d = zp0 * p3, n = zp0 * z - 1
         z = (-n/d+z), bailout = |n| > 0.000001
-      ELSE 
+      ELSE
         z = z*z+p2, bailout = |z| < 16
-      ENDIF 
-    ENDIF 
-  ENDIF 
+      ENDIF
+    ENDIF
+  ENDIF
   iter = iter + 1
   bailout
   ;SOURCE: 97msg.frm
@@ -443,7 +443,7 @@ M_TchebychevC2 {
 }
 
 
-M_TchebychevC3 {   
+M_TchebychevC3 {
   c = P1, z = Pixel:
   z = c*z*(z*z-3)
   |z|<100
@@ -475,7 +475,7 @@ M_TchebychevC6 {
 }
 
 
-M_TchebychevC7 {     
+M_TchebychevC7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(z*z-7)+14)-7)
   |z|<100
@@ -507,7 +507,7 @@ M_TchebychevS4 {
 }
 
 
-M_TchebychevS5 {    
+M_TchebychevS5 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z-4)+3)
   |z|<100
@@ -523,7 +523,7 @@ M_TchebychevS6 {
 }
 
 
-M_TchebychevS7 {     
+M_TchebychevS7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(z*z-6)+10)-4)
   |z|<100
@@ -539,7 +539,7 @@ M_TchebychevT2 {
 }
 
 
-M_TchebychevT3 {   
+M_TchebychevT3 {
   c = P1, z = Pixel:
   z = c*z*(4*z*z-3)
   |z|<100
@@ -571,7 +571,7 @@ M_TchebychevT6 {
 }
 
 
-M_TchebychevT7 {     
+M_TchebychevT7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
   |z|<100
@@ -603,7 +603,7 @@ M_TchebychevU4 {
 }
 
 
-M_TchebychevU5 {    
+M_TchebychevU5 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(32*z*z-32)+6)
   |z|<100
@@ -619,7 +619,7 @@ M_TchebychevU6 {
 }
 
 
-M_TchebychevU7 {     
+M_TchebychevU7 {
   c = P1, z = Pixel:
   z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8)
   |z|<100
@@ -825,22 +825,22 @@ maelstrom {; Giuseppe Zito
   c7 = -0.430757
   d0 = 0.222002
   d4 = 0.893133
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s1 =c1
   s0 = s0 *s1
   s0 = s0 -x
   s0 = s0 -c7
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -x
   s0 = s0 -d4
   s0 = s0 *y
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -933,10 +933,10 @@ magnet2m {; Chuck Ebbert.
 }
 
 
-Magnetik { 
+Magnetik {
   z = pixel + p1:
   z = (z-1)*(z+0.5)*(z*z+1)
-  z = (z*0.3) - ((z)/fn1(z)) 
+  z = (z*0.3) - ((z)/fn1(z))
   |z| < 4
   ;SOURCE: magnetik.frm
 }
@@ -945,7 +945,7 @@ Magnetik {
 Magnetik_2 {
   z = pixel + p1:
   z = (z-1)*((z*z) + z + 1.25)
-  z = (z*0.3) - ((z)/fn1(z)) 
+  z = (z*0.3) - ((z)/fn1(z))
   |z| < 4
   ;SOURCE: magnetik.frm
 }
@@ -954,7 +954,7 @@ Magnetik_2 {
 Magnetik_3 {
   z = pixel + p1:
   z = (z-1)*((z*z) + z + 0.05)
-  z = (z*0.3) - ((z)/fn1(z)) 
+  z = (z*0.3) - ((z)/fn1(z))
   |z| < 4
   ;SOURCE: magnetik.frm
 }
@@ -963,7 +963,7 @@ Magnetik_3 {
 Magnetik_4 {
   z = pixel + p1:
   z = (z*z*z) - 1
-  z = (z*0.3) - ((z)/fn1(z)) 
+  z = (z*0.3) - ((z)/fn1(z))
   |z| < 4
   ;SOURCE: magnetik.frm
 }
@@ -985,10 +985,10 @@ man-jul-BJ6a {; Modified Sylvie Gallet [101324,3444], 1995
   compt=0, limit = real(p1), bailout = 4
   p = (-0.743380900000982,-0.131850030300002) :
   test = (compt<limit)
-  num = (z3 + p2*z2 + 1)^.5      
-  denom = (1.5*z2 + p2*z)/num  
+  num = (z3 + p2*z2 + 1)^.5
+  denom = (1.5*z2 + p2*z)/num
   c = c*test+p*(1-test)
-  z = fn1(z) - (num/denom)           
+  z = fn1(z) - (num/denom)
   z2 = z*z
   z3 = z*z2
   z = z*z+c
@@ -998,9 +998,9 @@ man-jul-BJ6a {; Modified Sylvie Gallet [101324,3444], 1995
 }
 
 
-man-newt-man {; Sylvie Gallet [101324,3444], 1995 +R.B. 
-              ; tiny mod on original Mandel-Newton by Sylvie 
-              ; tweaked brainlessly by Robin Bussell 
+man-newt-man {; Sylvie Gallet [101324,3444], 1995 +R.B.
+              ; tiny mod on original Mandel-Newton by Sylvie
+              ; tweaked brainlessly by Robin Bussell
               ; to give a hybrid mandel-newton fractal
   z = pixel, c = z, iter = 1, test1 = 1
   rad = 3.1, center = (1.0,0.1)
@@ -1012,14 +1012,14 @@ man-newt-man {; Sylvie Gallet [101324,3444], 1995 +R.B.
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
   z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
-  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1)) 
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: forummsg.frm
 }
 
 
-man-newt-man2 {; Sylvie Gallet [101324,3444], 1995 +R.B. 
-               ; tiny mod on original Mandel-Newton by Sylvie 
-               ; tweaked brainlessly by Robin Bussell 
+man-newt-man2 {; Sylvie Gallet [101324,3444], 1995 +R.B.
+               ; tiny mod on original Mandel-Newton by Sylvie
+               ; tweaked brainlessly by Robin Bussell
                ; to give a hybrid mandel-newton fractal
   z = pixel, c = z, iter = 1, test1 = 1
    ;  rad = 3.1, center = (1.0,0.1)
@@ -1031,7 +1031,7 @@ man-newt-man2 {; Sylvie Gallet [101324,3444], 1995 +R.B.
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
   z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
-  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1)) 
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: forummsg.frm
 }
 
@@ -1227,7 +1227,7 @@ mand_0 {
 
 
 mand_1 {
-  z = c = pixel: 
+  z = c = pixel:
   z = z*z + c
   |z| <= 4
   ;SOURCE: phctutor.frm
@@ -1308,99 +1308,99 @@ Mand_Ellipse {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-MandConj01 (XAXIS) {; Paul J. Horn, see MandelConj.  
+MandConj01 (XAXIS) {; Paul J. Horn, see MandelConj.
                     ; This is a variation on a theme.
-  z = c = Pixel:   
+  z = c = Pixel:
   z = Sqr(z) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj02 (XAXIS) {; Paul J. Horn, see MandelConj. 
-                    ; Another variation on the theme. 
-  z = c = Pixel:   
+MandConj02 (XAXIS) {; Paul J. Horn, see MandelConj.
+                    ; Another variation on the theme.
+  z = c = Pixel:
   z = Sqr(Conj(z)) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj03 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj03 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr(conj(z))*conj(z) + Pixel
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj04 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj04 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr((z))*(z) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj05 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj05 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr(conj(z))*conj(z) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj06 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj06 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr(Sqr(conj(z))) + Pixel
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj07 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj07 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr(Sqr((z))) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj08 (XAXIS) {; Paul J. Horn 
-                    ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj08 (XAXIS) {; Paul J. Horn
+                    ; yet another variation on the theme
+  z = c = Pixel:
   z = Sqr(Sqr(conj(z))) + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj09 {; Paul J. Horn 
-            ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj09 {; Paul J. Horn
+            ; yet another variation on the theme
+  z = c = Pixel:
   z = (conj(z))^p1 + Pixel
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj10 {; Paul J. Horn 
-            ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj10 {; Paul J. Horn
+            ; yet another variation on the theme
+  z = c = Pixel:
   z = z^p1 + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandConj11 {; Paul J. Horn 
-            ; yet another variation on the theme 
-  z = c = Pixel:   
+MandConj11 {; Paul J. Horn
+            ; yet another variation on the theme
+  z = c = Pixel:
   z = (conj(z))^p1 + Conj(Pixel)
   |z| <= 4
   ;SOURCE: pjhcon.frm
@@ -1450,7 +1450,7 @@ mandel-julia {; Sylvie Gallet 1995
 
 mandel-lambdafn {; Sylvie Gallet [101324,3444], 1995
                  ; requires "periodicity=0" (<g> command)
-  c = z = pixel, lambda = (1.0,0.4) 
+  c = z = pixel, lambda = (1.0,0.4)
   pix2 = pixel*4+0.8, compt = 0, limit = real(p1) :
   test1 = (compt<limit), test2 = (compt!=limit)
   z = (z-pix2)*test2 + pix2
@@ -1464,7 +1464,7 @@ mandel-lambdafn {; Sylvie Gallet [101324,3444], 1995
 
 
 mandel-lambdafn-3 {; Sylvie Gallet [101324,3444], 1995
-                   ; requires "periodicity=0" 
+                   ; requires "periodicity=0"
   c = z = pixel, lambda = (1.0,0.4), test0 = 1, test3=0
   pix2 = pixel*4+0.8, iter= 0, limit = real(p1) :
   test1 = (iter<limit), test0 = 1-test0, test2 = (iter!=limit)
@@ -1520,7 +1520,7 @@ mandel-newton {; Sylvie Gallet [101324,3444], 1995-1996
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4+(z==0))
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: gallet-n.frm
@@ -1529,14 +1529,14 @@ mandel-newton {; Sylvie Gallet [101324,3444], 1995-1996
 
 mandel-newton-2 {; Sylvie Gallet [101324,3444], 1995-1996
    ; Formula designed for Fractint 19.2 and modified for Fractint 19.3
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
-  z = pixel, c = z, b1 = 16  
+  limit = real(p1), test0 = 1, test3=0, iter = 1
+  z = pixel, c = z, b1 = 16
   rad = 6, pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   center = (1.0,0.1), zn = center+rad/(pix-center), b2 = 0.0001 :
   test0 = 1-test0, test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z==0))
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
@@ -1554,7 +1554,7 @@ mandel-newton_a {; Modified Sylvie Gallet frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej3.frm
@@ -1570,7 +1570,7 @@ mandel-newton_j4 {; Modified Sylvie Gallet Frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = fn1(fn2(z*z+c)), z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+fn3(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+fn3(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(3.099,-3.099)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
@@ -1586,7 +1586,7 @@ mandel-newton_j5 {; Modified Sylvie Gallet Frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = fn1((z*z)/(zn)), z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+fn2(3.099,-3.099)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
@@ -1604,7 +1604,7 @@ mandel-newton_j6c {; Modified Sylvie Gallet Frm [101324,3444], 1995
   c=fn1(sin(conj(-0.81256,-0.1295)))
   z = (z-zn)*test2 + zn
   z2 = (z*z)-(zn), z4 = (z2*z2), z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(3.099,-3.099)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
@@ -1622,7 +1622,7 @@ mandel-newton_j6e {; Modified Sylvie Gallet Frm [101324,3444], 1995
   c=sin(conj(-0.81256,-0.1295))
   z = (z-zn)*test2 + zn
   z2 = fn1(z*z/c)-(zn), z4 = (z2*z2), z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(2.079,-2.079)
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
@@ -1640,9 +1640,9 @@ mandel-newton_j6g {; Modified Sylvie Gallet Frm [101324,3444], 1995
   c1=(-0.7056,-0.0086)
   c=fn1(fn2(conj(-0.80256,-0.1095)))
   z = (z-zn)*test2 + zn
-  z2 = (z^2+(-0.6956,0.10)+(test1/7*pixel)), z4 = (z2*z2) 
+  z2 = (z^2+(-0.6956,0.10)+(test1/7*pixel)), z4 = (z2*z2)
   z1 = (z4*z-1)/(4*z4)
-  z = (z2+(c))*test1 + (z-z1)*(1-test1) 
+  z = (z2+(c))*test1 + (z-z1)*(1-test1)
   iter = iter+(3.099,-3.099)
   ((|z2| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej4.frm
@@ -1660,7 +1660,7 @@ mandel-newton_j7c3 {; Sylvie Gallet [101324,3444], 1995
   c=fn1(sin(conj(-0.80256,-0.1095)))
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1) 
+  z = fn2(z2)+(c*test1) + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -1696,7 +1696,7 @@ Mandel[Fn||Fn] {; v18 - Jonathan Osuch
   ELSE
     z=pixel+fn2(z)
   ENDIF
-  x=|z| 
+  x=|z|
   x<=64
   ;SOURCE: parser.frm
 }
@@ -1827,18 +1827,18 @@ mandel_nest {; George Martin [76440,1143] with help from Sylvie Gallet
    ;     2 is half the size (linear; 1/4 the area size)
    ; imag(p1) is clockwise rotation of the image in degrees
    ; p2 - real portion moves image along the x axis, imag
-   ;     portion along the y axis. + = right,up. 
+   ;     portion along the y axis. + = right,up.
    ; real(p3) - iteration spacing. 256 and multiples causes
-   ;     nested images to have same coloring. Default 256 
+   ;     nested images to have same coloring. Default 256
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180:
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
   newpixel=newpixel*(1-test)+test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*newpixel
   z = z*z + c
   iter = iter + 1
@@ -2042,7 +2042,7 @@ Mandel_yz (ORIGIN) {; Variation with x und z variable
 MandelBar_3_c (xaxis) {; Jm Collard-Richard
   z=c=pixel:
   z=conj(z)^3+c
-  |z|<=4               
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2050,7 +2050,7 @@ MandelBar_3_c (xaxis) {; Jm Collard-Richard
 MandelBar_4_c (xaxis) {; Jm Collard-Richard
   z=c=pixel:
   z=conj(z)^4+c
-  |z|<=4               
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2058,7 +2058,7 @@ MandelBar_4_c (xaxis) {; Jm Collard-Richard
 MandelBar_N {; Jm Collard-Richard
   z=c=pixel:
   z=conj(z)^p1+c
-  |z|<=4               
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -2066,7 +2066,7 @@ MandelBar_N {; Jm Collard-Richard
 MandelBarFN (xaxis) {; Jm Collard-Richard
   z=c=pixel:
   z=c*fn1(conj(z))
-  |z|<=64              
+  |z|<=64
   ;SOURCE: jmcr1.frm
 }
 
@@ -2090,7 +2090,7 @@ Mandelbrot2 {
   z = x + flip(y), z = Sqr(z):
   z = z + Pixel
   z = Sqr(z)
-  LastSqr <= 4  
+  LastSqr <= 4
   ;SOURCE: 96msg.frm
 }
 
@@ -2170,7 +2170,7 @@ MandelbrotMix {; Jim Muth
 
 MandelbrotMix1 {; Jay Hill mod of Jim Muth eqn.
     ; both d and f must be non-zero, and b not equal f
-  c=pixel, a=real(p1), b=imag(p1), d=real(p2), f=imag(p2) 
+  c=pixel, a=real(p1), b=imag(p1), d=real(p2), f=imag(p2)
   z=(-a*b/f/d)^(1/(f-b)):  ; critical point
   z=(a*(z^b))+(d*(z^f))+c
   |z| <= 100
@@ -2343,20 +2343,20 @@ MandelbrotZC2 {; Jim Muth
 }
 
 
-MandelConj (XAXIS) {; Paul J. Horn, this was mentioned in Pickover's book 
-                    ; Computers, Chaos, Patterns and Beauty.  
+MandelConj (XAXIS) {; Paul J. Horn, this was mentioned in Pickover's book
+                    ; Computers, Chaos, Patterns and Beauty.
                     ; He didn't give the forumula, so I came up with this
-  z = c = Pixel:   
+  z = c = Pixel:
   z = Sqr(conj(z)) + Pixel
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
-MandelCosine (XYAXIS) { 
-  z = pixel:  
-  z = cos(z) * pixel 
-  |z| <= 50 
+MandelCosine (XYAXIS) {
+  z = pixel:
+  z = cos(z) * pixel
+  |z| <= 50
   ;SOURCE: fracv13r.frm
 }
 
@@ -2400,26 +2400,26 @@ MandelFnA (XYAXIS) {; from LambdaFn - Chuck Ebbert - from BUILTN.FRM
 }
 
 
-Mandelglass (XAXIS) { 
-  z = (0.5, 0.0): 
-  z = pixel * z * (1 - z) 
-  |z| <= 4 
+Mandelglass (XAXIS) {
+  z = (0.5, 0.0):
+  z = pixel * z * (1 - z)
+  |z| <= 4
   ;SOURCE: fracv13r.frm
 }
 
 
-MandelHypCosine (XYAXIS) { 
-  z = pixel: 
-  z = cosh(z) * pixel 
-  |z| <= 50 
+MandelHypCosine (XYAXIS) {
+  z = pixel:
+  z = cosh(z) * pixel
+  |z| <= 50
   ;SOURCE: fracv13r.frm
 }
 
 
-MandelHypSine (XYAXIS) { 
-  z = pixel:  
-  z = sinh(z) * pixel 
-  |z| <= 50 
+MandelHypSine (XYAXIS) {
+  z = pixel:
+  z = sinh(z) * pixel
+  |z| <= 50
   ;SOURCE: fracv13r.frm
 }
 
@@ -2429,7 +2429,7 @@ MandelIke {; Ron Barnett [70153,1233], 1996   Requires passes=1
    ; Ron Barnett, 1996
   z = pixel+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2*pixel:
-  z=whitesq*(z*z*z+(c-1)*z-c) + (whitesq==0)*(z*z+c) 
+  z=whitesq*(z*z*z+(c-1)*z-c) + (whitesq==0)*(z*z+c)
   |z|<=4
   ;SOURCE: phc.frm
 }
@@ -2485,7 +2485,7 @@ MandelLambda {; Jon Horner
 
 
 MandellambdaPwr {; This provide a "map" for LambdaPwr
-  z = (1/(p1+1))^(1/p1): 
+  z = (1/(p1+1))^(1/p1):
   z = pixel*z*(1 - z^p1)
   |z| <= 100
   ;SOURCE: reb003.frm
@@ -2518,35 +2518,35 @@ Mandellike1 (yaxis) {; Peter Anders anders@physik.hu-berlin.de
   y=2*xo*yo*(0,1)+imag(pixel)
   z=x+flip(y)
   xo=x
-  yo=y           
-  |fn1(z)|<real(p2) 
+  yo=y
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Mandellike10 {; Peter Anders anders@physik.hu-berlin.de 
+Mandellike10 {; Peter Anders anders@physik.hu-berlin.de
   xo=0, yo=0, cx=real(pixel), cy=imag(pixel):
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=fn2(x)
-  yo=fn2(y)        
+  yo=fn2(y)
   |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Mandellike11 {; Peter Anders anders@physik.hu-berlin.de 
+Mandellike11 {; Peter Anders anders@physik.hu-berlin.de
   xo=0, yo=0, cx=real(pixel), cy=imag(pixel):
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=x+p1
-  yo=y+p1        
+  yo=y+p1
   abs(fn1(x*x+y*y))<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Mandellike12 {; Peter Anders anders@physik.hu-berlin.de 
+Mandellike12 {; Peter Anders anders@physik.hu-berlin.de
   z=(0,0), c=pixel:
   z=z*z+c
   z=z^p1
@@ -2555,10 +2555,10 @@ Mandellike12 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Mandellike13 {; Peter Anders anders@physik.hu-berlin.de 
+Mandellike13 {; Peter Anders anders@physik.hu-berlin.de
   z=fn1(pixel), c=fn2(pixel), a=p1, b=p2, d=p3:
   z=z^a+c^b*z^d
-  z=fn3(z) 
+  z=fn3(z)
   |z|<100
   ;SOURCE: peterman.frm
 }
@@ -2570,8 +2570,8 @@ Mandellike2 (xaxis) {; Peter Anders anders@physik.hu-berlin.de
   y=2*xo*yo+imag(pixel)
   z=x+flip(y)
   xo=y
-  yo=x           
-  |fn1(z)|<real(p2) 
+  yo=x
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2579,7 +2579,7 @@ Mandellike2 (xaxis) {; Peter Anders anders@physik.hu-berlin.de
 Mandellike3 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=fn2(z)+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2587,7 +2587,7 @@ Mandellike3 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike4 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=fn2(z)*c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2595,7 +2595,7 @@ Mandellike4 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike5 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=fn2(z)*c+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2603,7 +2603,7 @@ Mandellike5 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike6 {; Peter Anders anders@physik.hu-berlin.de
   z=(0,0), c=fn2(pixel):
   z=z*z+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2611,7 +2611,7 @@ Mandellike6 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike7 {; Peter Anders anders@physik.hu-berlin.de
   z=(0,0), c=pixel, c=c^real(p1)-imag(p1):
   z=z*z+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2619,7 +2619,7 @@ Mandellike7 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike8 {; Peter Anders anders@physik.hu-berlin.de
   z=1/pixel, c=pixel:
   z=z*z+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2627,7 +2627,7 @@ Mandellike8 {; Peter Anders anders@physik.hu-berlin.de
 Mandellike9 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, c=1/pixel:
   z=z*z+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -2642,7 +2642,7 @@ MandEllipse {; Uses an ellipse rather then a circle for the bailout
 }
 
 
-MandelLog1 (XAXIS) {  
+MandelLog1 (XAXIS) {
   c = z = pixel:
   z = sqr(log(z^z)) + c + p1
   |z| <= 4
@@ -2691,15 +2691,15 @@ MandelMaxm {; generalized z^n by Bud 3/27/98
 
 MandelNone {; edited 5/6/96 for Orgform by George Martin
             ; Undefined symmetry "(None)" deleted
-  z = Pixel:  
-  z = sqr(z) + pixel 
+  z = Pixel:
+  z = sqr(z) + pixel
   |z| <= 4
   ;SOURCE: newform.frm
 }
 
 
 mandeloid {
-    ; By PGD, Aug 1997. p2 is bailout, make >4! 
+    ; By PGD, Aug 1997. p2 is bailout, make >4!
     ; Set p1 small to get normal-
     ; looking Mandelbrots with subtle mutations. p1=0 gives classic M-set.
     ; p1>.01 gives a noticeably altered M-set. Large values up to 3 give
@@ -2707,7 +2707,7 @@ mandeloid {
     ; Replaced variable "e" with "ee" 5/05/99. G. Martin
   c=pixel, z=c, a=0,  b=0, d=0, ee=0, f=0, g=0, h=0, i=0:
   z=sqr(z)+c+i
-  i=h 
+  i=h
   h=g
   g=f
   f=ee
@@ -2721,8 +2721,8 @@ mandeloid {
 
 
 MandelOrigin (ORIGIN) {
-  z = Pixel:  
-  z = sqr(z) + pixel 
+  z = Pixel:
+  z = sqr(z) + pixel
   |z| <= 4
   ;SOURCE: newform.frm
 }
@@ -2746,18 +2746,18 @@ MandelPMnew {; Jim Muth
 }
 
 
-mandels_galore (xaxis) {; Variation on Sylvie Gallet formula. 
+mandels_galore (xaxis) {; Variation on Sylvie Gallet formula.
                         ; George Martin [76440,1143]
    ; periodicity=0 must be set
    ; Try 50 or more for real(p1) - even multiples of
    ;    256 give interesting effects
    ; Try 1.2 - 1.8 for imag(p1)
    ; Try 1000 or more for Maximum Iterations (x menu)
-  z=c=pixel, iter=0 
+  z=c=pixel, iter=0
   nextzoom = iterspace = real(p1), magnification = imag(p1):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = z*z + c
   iter = iter + 1
@@ -2766,14 +2766,14 @@ mandels_galore (xaxis) {; Variation on Sylvie Gallet formula.
 }
 
 
-mandels_spiral {; Variation on George Martin's mandels_galore formula. 
+mandels_spiral {; Variation on George Martin's mandels_galore formula.
                 ; Sylvie Gallet [101324,3444], 1996
                 ; periodicity=0
-  z=c=pixel, iter=0 
+  z=c=pixel, iter=0
   nextzoom = iterspace = real(p1):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*(p2*c + p3)
   z = z*z + c
   iter = iter + 1
@@ -2782,18 +2782,18 @@ mandels_spiral {; Variation on George Martin's mandels_galore formula.
 }
 
 
-MandelSin1 (XAXIS) {  
+MandelSin1 (XAXIS) {
   c = z = pixel:
   z = sqr(z * sin(z)) + c + p1
-  |z| <= 4  
+  |z| <= 4
   ;SOURCE: robert.frm
 }
 
 
-MandelSine (XYAXIS) { 
-  z = Pixel:  
-  z = sin(z) * pixel 
-  |z| <= 50 
+MandelSine (XYAXIS) {
+  z = Pixel:
+  z = sin(z) * pixel
+  |z| <= 50
   ;SOURCE: fracv13r.frm
 }
 
@@ -2814,7 +2814,7 @@ MandelVar1 (XAXIS) {; try p1=0.367879441 (= 1/e)
 }
 
 
-MandelVar10 (XAXIS) {  
+MandelVar10 (XAXIS) {
   c = z = pixel:
   value1 = 1 + p1
   value2 = 1 + p2
@@ -2824,7 +2824,7 @@ MandelVar10 (XAXIS) {
 }
 
 
-MandelVar2 (XAXIS) {  
+MandelVar2 (XAXIS) {
   c = z = 1 / pixel:
   z = sqr( sqr(z*c)) + c + p1
   |z| <= 4
@@ -2840,7 +2840,7 @@ MandelVar3 (XAXIS) {; inverted MandelVar2
 }
 
 
-MandelVar4 (XAXIS) {  
+MandelVar4 (XAXIS) {
   c = z = pixel:
   z = sqr(z) + (1/c) + p1
   |z| <= 4
@@ -2848,7 +2848,7 @@ MandelVar4 (XAXIS) {
 }
 
 
-MandelVar5 (XAXIS) {  
+MandelVar5 (XAXIS) {
   c = z = pixel:
   z = sqr(z*cos(tan(c))) + exp(c) + p1
   |z| <= 4
@@ -2856,7 +2856,7 @@ MandelVar5 (XAXIS) {
 }
 
 
-MandelVar6 (XAXIS) {  
+MandelVar6 (XAXIS) {
   c = z = pixel:
   z = (sqr(1/sin(1+z)+ c))*c + c + p1
   |z| <= 4
@@ -2864,7 +2864,7 @@ MandelVar6 (XAXIS) {
 }
 
 
-MandelVar7 (XAXIS) {  
+MandelVar7 (XAXIS) {
   z = pixel:
   c = log(1+z)
   z = sqr(z) + c + p1
@@ -2873,7 +2873,7 @@ MandelVar7 (XAXIS) {
 }
 
 
-MandelVar8 (XAXIS) {   
+MandelVar8 (XAXIS) {
   c = z = pixel:
   z = ((z*c)/(z*c+2.718281828)+sin(z))^2 + c
   |z| <= 4
@@ -2881,7 +2881,7 @@ MandelVar8 (XAXIS) {
 }
 
 
-MandelVar9 (XAXIS) {  
+MandelVar9 (XAXIS) {
   z = pixel:
   c = z/(z*z+1)
   z = sin(z^4 + c) + real(c)
@@ -2903,16 +2903,16 @@ MandelXAxis (XAXIS) {; for Transparent3D
 
 
 MandelXY (XYAXIS) {
-  z = Pixel:  
-  z = sqr(z) + pixel 
+  z = Pixel:
+  z = sqr(z) + pixel
   |z| <= 4
   ;SOURCE: newform.frm
 }
 
 
 MandelY (YAXIS) {
-  z = Pixel:  
-  z = sqr(z) + pixel 
+  z = Pixel:
+  z = sqr(z) + pixel
   |z| <= 4
   ;SOURCE: newform.frm
 }
@@ -2959,7 +2959,7 @@ MandJulia {; Ron Barnett [70153,1233], 1996   Requires passes=1
    ; Ron Barnett, 1996
   z = pixel+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
-  z=z*z+c 
+  z=z*z+c
   |z|<=4
   ;SOURCE: phc.frm
 }
@@ -2969,7 +2969,7 @@ MandK {; Original formula is shown by comment. This is my attempt to
        ; reconstruct what was intended. George Martin, 5/20/97
     ; z^2=w^2=pixel^2:
     ; z^2*(w^2+z^2)=(p1)^2*(w^2)
-    ; |z|<=1000  
+    ; |z|<=1000
   z=w=pixel^2
   const=p1^2:
   z=(const*w)/(w+z)
@@ -2991,11 +2991,11 @@ MandKaleido {; Ron Barnett [70153,2133], 1996
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   r = cr - p3 * trunc((cr+0.10) / p3)
   tpi = 8*atan(1)
-  c = (sin(1/p3*tpi) + flip(cos(1/p3*tpi)))*(r == 0) 
+  c = (sin(1/p3*tpi) + flip(cos(1/p3*tpi)))*(r == 0)
   c1 = (sin(2/p3*tpi) + flip(cos(2/p3*tpi))) * (r == 1)
-  c2 = (sin(3/p3*tpi) + flip(cos(3/p3*tpi))) * (r == 2) 
+  c2 = (sin(3/p3*tpi) + flip(cos(3/p3*tpi))) * (r == 2)
   c3 = (sin(4/p3*tpi) + flip(cos(4/p3*tpi))) * (r == 3)
-  c4 = (sin(5/p3*tpi) + flip(cos(5/p3*tpi))) * (r == 4) 
+  c4 = (sin(5/p3*tpi) + flip(cos(5/p3*tpi))) * (r == 4)
   c5 = (sin(6/p3*tpi) + flip(cos(6/p3*tpi))) * (r == 5)
   c6 = (sin(7/p3*tpi) + flip(cos(7/p3*tpi))) * (r == 6)
   c7 = (sin(8/p3*tpi) + flip(cos(8/p3*tpi))) * (r == 7)
@@ -3019,7 +3019,7 @@ mandlyap {; P1 is the bailout
 }
 
 
-MandMand { 
+MandMand {
    ; Note that floating-point is required to make this compute accurately
   f=pixel, z=pixel:
   f=z*z+pixel
@@ -3038,7 +3038,7 @@ MandMix-x {; Jay Hill
 }
 
 
-MandMnzpwr {; shit xept p1=2 
+MandMnzpwr {; shit xept p1=2
    ; Note that floating-point is required to make this compute accurately
   f=pixel, z=pixel:
   f=z^p1+pixel
@@ -3174,7 +3174,7 @@ MandNewt12 {; Jim Muth
 }
 
 
-MandNwtM { 
+MandNwtM {
    ; Note that floating-point is required to make this compute accurately
   z = pixel, Root = 1:
   f=z*z+pixel
@@ -3215,9 +3215,9 @@ Mandp1 {; remember to turn on the inside options
 
 
 MandPerturb (XAXIS) {; z^2 + c + p3*z    try p3(real) = 0.5 or -0.5
-  z=pixel:  
-  z=z*z + pixel + real(p3)*real(z)+imag(p3)*imag(z)  
-  |z| <10  
+  z=pixel:
+  z=z*z + pixel + real(p3)*real(z)+imag(p3)*imag(z)
+  |z| <10
   ;SOURCE: internet.frm
 }
 
@@ -3244,9 +3244,9 @@ Mandring {; Jim Muth
 
 
 MandTang (XYAXIS) {
-  z = Pixel:  
-  z = sin(z) / cos(z) + Pixel 
-  |z| <= 4 
+  z = Pixel:
+  z = sin(z) / cos(z) + Pixel
+  |z| <= 4
   ;SOURCE: skinv151.frm
 }
 
@@ -3294,7 +3294,7 @@ ManI3I2(YAXIS) {; +
 }
 
 
-ManI3R2 { 
+ManI3R2 {
   c = z = pixel:
   q = sqr(z)
   z = imag(z*q) +flip(real(q)) + c
@@ -3309,13 +3309,13 @@ ManInTheOzone (XAXIS_NOPARM) {
   z=sqr(z)+pixel
   z=cosxx(z)+pixel
   z=sin(z)+pixel
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
 
-ManInTheOzoneC (XAXIS_NOPARM) { 
+ManInTheOzoneC (XAXIS_NOPARM) {
     ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=1:
   IF (x<10)
@@ -3325,13 +3325,13 @@ ManInTheOzoneC (XAXIS_NOPARM) {
   ELSE
     z=sin(z)+pixel
   ENDIF
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
 
-ManInTheOzoneC.1 (XAXIS_NOPARM) { 
+ManInTheOzoneC.1 (XAXIS_NOPARM) {
     ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=1:
   IF (x<10)
@@ -3341,8 +3341,8 @@ ManInTheOzoneC.1 (XAXIS_NOPARM) {
   ELSE
     z=sin(z)+pixel
   ENDIF
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
@@ -3374,7 +3374,7 @@ Manlam[Fn||Fn] {; v18 - Jonathan Osuch
   ELSE
     z=pixel*fn2(z)
   ENDIF
-  x=|z| 
+  x=|z|
   x<=64
   ;SOURCE: parser.frm
 }
@@ -3690,7 +3690,7 @@ Mans-G+SG-3-03 {; Test Variation on Sylvie Gallet formula
   y1 = y - p2*fn1(x+p3*fn2(x)):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test)  
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = (z+ x1+flip(y1))*z+c
   iter = iter + 1
@@ -3706,7 +3706,7 @@ Mans-G+SG-3-03b {; Test Variation on Sylvie Gallet formula
   y1 = y - p2*fn1(x+p3*fn2(x)):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test)  
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = (x1+flip(y1)) * (whitesq == 0) + (z*z + c) * whitesq
   iter = iter + 1
@@ -3715,7 +3715,7 @@ Mans-G+SG-3-03b {; Test Variation on Sylvie Gallet formula
 }
 
 
-mans-galore-011 {; Variation on Sylvie Gallet formula. 
+mans-galore-011 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel/(1.0,0.1), iter=0, x = real(z), y = imag(z)
@@ -3733,7 +3733,7 @@ mans-galore-011 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-012 {; Variation on Sylvie Gallet formula. 
+mans-galore-012 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3751,17 +3751,17 @@ mans-galore-012 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-013 {; Variation on Sylvie Gallet formula. 
-                 ; George Martin [76440,1143] 
-                 ; Modified Mans-Galore & Gallet 3-02  
+mans-galore-013 {; Variation on Sylvie Gallet formula.
+                 ; George Martin [76440,1143]
+                 ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
   nextzoom = iterspace = real(p1), magnification = imag(p1)
   x1 = x - p2*fn1(y+p3*fn2(y))
   y1 = y - p2*fn1(x+p3*fn2(x)):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test) + x1+flip(y1) 
-  z = z*(1 - test) + y1+flip(x1) 
+  z = z*(1 - test) + x1+flip(y1)
+  z = z*(1 - test) + y1+flip(x1)
   c = c*(1 - test) + test*magnification*c
   z = z*z + c
   iter = iter + 1
@@ -3770,11 +3770,11 @@ mans-galore-013 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-018 {; Variation on Sylvie Gallet formula. 
+mans-galore-018 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
                  ; Revised for Fractint v20 by G. Martin
-  z=c=pixel, iter=0, x = real(z), y = imag(z) 
+  z=c=pixel, iter=0, x = real(z), y = imag(z)
   nextzoom = iterspace = real(p1), magnification = imag(p1)
   x1 = x - p2*fn1(y+p3*fn2(y))
   y1 = y - p2*fn1(x+p3*fn2(x)):
@@ -3789,7 +3789,7 @@ mans-galore-018 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-019 {; Variation on Sylvie Gallet formula. 
+mans-galore-019 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3807,7 +3807,7 @@ mans-galore-019 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-020 {; Variation on Sylvie Gallet formula. 
+mans-galore-020 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3825,7 +3825,7 @@ mans-galore-020 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-021 {; Variation on Sylvie Gallet formula. 
+mans-galore-021 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3843,7 +3843,7 @@ mans-galore-021 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-022 {; Variation on Sylvie Gallet formula. 
+mans-galore-022 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3861,7 +3861,7 @@ mans-galore-022 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-024 {; Variation on Sylvie Gallet formula. 
+mans-galore-024 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel,  iter=0, x = real(z), y = imag(z)
@@ -3879,7 +3879,7 @@ mans-galore-024 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-027 {; Variation on Sylvie Gallet formula. 
+mans-galore-027 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3897,7 +3897,7 @@ mans-galore-027 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-029 {; Variation on Sylvie Gallet formula. 
+mans-galore-029 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3915,7 +3915,7 @@ mans-galore-029 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-032 {; Variation on Sylvie Gallet formula. 
+mans-galore-032 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = real(z), y = imag(z)
@@ -3933,10 +3933,10 @@ mans-galore-032 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-036 {; Variation on Sylvie Gallet formula. 
+mans-galore-036 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
-  z = pixel, c = pixel, x = real(z), y = imag(z) 
+  z = pixel, c = pixel, x = real(z), y = imag(z)
   nextzoom = iterspace = real(p1), magnification = imag(p1)
   x1 = x - p2*fn1(y+p3*fn2(y))
   y1 = y - p2*fn1(x+p3*fn2(x)):
@@ -3951,10 +3951,10 @@ mans-galore-036 {; Variation on Sylvie Gallet formula.
 }
 
 
-mans-galore-037 {; Variation on Sylvie Gallet formula. 
+mans-galore-037 {; Variation on Sylvie Gallet formula.
                  ; George Martin [76440,1143]
                  ; Modified Mans-Galore & Gallet 3-02
-  z = pixel, c = pixel, x = real(z), y = imag(z) 
+  z = pixel, c = pixel, x = real(z), y = imag(z)
   nextzoom = iterspace = real(p1), magnification = imag(p1)
   x1 = x - p2*fn1(y+p3*fn2(y))
   y1 = y - p2*fn1(x+p3*fn2(x)):
@@ -3984,12 +3984,12 @@ mantle {; Giuseppe Zito
   IF (real(p1)==0)
     c0 = -0.614927
   ENDIF
-  : 
+  :
   x = real(z), y = imag(z)
   newx = c0 + y
-  newy = x*x - y 
+  newy = x*x - y
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4   
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -4066,7 +4066,7 @@ ManzanaJ {; ao950@FreeNet.Carleton.CA (Paul Derbyshire)
 }
 
 
-ManzNwt { 
+ManzNwt {
    ; Note that floating-point is required to make this compute accurately
   z = pixel, Root = 1:
   f=z^p2+pixel
@@ -4167,7 +4167,7 @@ master {; Giuseppe Zito
   d0 = 0.004197
   d3 = 0.93075
   d5 = 0.210723
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c1
@@ -4175,16 +4175,16 @@ master {; Giuseppe Zito
   s1 = y
   s1 = s1 +c4
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
   s0 = s0 *d3
   s0 = s0 /y
   s0 = s0 -d5
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy 
+  newx < 4 && newx > -4 && newy < 4 && newy
   ;SOURCE: zg.frm
 }
 
@@ -4197,7 +4197,7 @@ matress {; Giuseppe Zito
   d5 = -0.458745
   d12 = -0.425805
   d15 = -0.36000001
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /c2
@@ -4205,7 +4205,7 @@ matress {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 -y
   s0 = s0 *c8
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /d1
   s0 = s0 +y
@@ -4222,9 +4222,9 @@ matress {; Giuseppe Zito
   s0 = s0 -y
   s0 = s0 +x
   s0 = s0 +y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -4232,7 +4232,7 @@ matress {; Giuseppe Zito
 Matsch^-1 {; davon ist der K-Matsch die Julia-Menge
   Grund=pixel+1/(fn1(p2*pixel)-p1)+1/(fn2(p2*pixel)-p1)
   z=Grund:
-  z=((Grund-1)*z^Grund+1)/(Grund*z^(Grund-1)) 
+  z=((Grund-1)*z^Grund+1)/(Grund*z^(Grund-1))
   0.001<=|z^Grund-1|
   ;SOURCE: crazynwt.frm
 }
@@ -4504,7 +4504,7 @@ mfnz {
 }
 
 
-MGen_Maxi {; generalized Minimax-Set 
+MGen_Maxi {; generalized Minimax-Set
            ; (p1 and p2 may not both be 0!)
            ; p1 = (-1,0) and p2 = (0,-1) gives Mpm
            ; p1 = (1,0)  and p2 = (0,-1) gives MConj
@@ -4537,7 +4537,7 @@ MGen_Maxi {; generalized Minimax-Set
 }
 
 
-MGen_Mini {; generalized Minimax-Set 
+MGen_Mini {; generalized Minimax-Set
            ; (p1 and p2 may not both be 0!)
            ; p1 = (-1,0) and p2 = (0,-1) gives Mpm
            ; p1 = (1,0)  and p2 = (0,-1) gives MConj
@@ -4614,7 +4614,7 @@ Mi_Mini {; an automatic Mix
 
 Michaelbrot (origin) {; based on Golden Mean
   z = pixel:
-  z = sqr(z) + ((sqrt(5) + 1)/2) 
+  z = sqr(z) + ((sqrt(5) + 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -4785,7 +4785,7 @@ minN-XY-YZrot {; Jim Muth, thanks to Benno
 }
 
 
-MiraSinPar {; Peter Anders anders@physik.hu-berlin.de 
+MiraSinPar {; Peter Anders anders@physik.hu-berlin.de
   xo=real(p1), yo=imag(p1), a=real(pixel), b=imag(pixel):
   f=a*xo+(2-2*a)*sin(xo)
   x=b*yo+f
@@ -4793,8 +4793,8 @@ MiraSinPar {; Peter Anders anders@physik.hu-berlin.de
   y=-xo+f
   z=x+y*(0,1)
   xo=x
-  yo=y        
-  |fn1(z)|<real(p2) 
+  yo=y
+  |fn1(z)|<real(p2)
   ;SOURCE: anders.frm
 }
 
@@ -4857,10 +4857,10 @@ MixSqrProJulib_2 {; Jim Muth
 }
 
 
-mixup { 
+mixup {
   z=fn1(pixel):
   z=sqr(z)+fn2(pixel)
-  |z|<= 4 
+  |z|<= 4
   ;SOURCE: test.frm
 }
 
@@ -4868,7 +4868,7 @@ mixup {
 MixUpJ   {; (c) Jay Hill, 1998
           ; make sure p1 <> p2 and w <> 0
   u=p1, v=p2, w=.5, x=v-u
-  c=p3    ; Julia parameter 
+  c=p3    ; Julia parameter
   z=pixel ; critical z=(-u/v/w)^(1/x)
   :
   z=z^u + w*z^v + c
@@ -4884,7 +4884,7 @@ MixUpJ2  {; (c) Jay Hill, 1998
   z=(-u/v/w)^(1/x)
   :
   z=z^u + w*z^v + c
-  |z| <= 1000 
+  |z| <= 1000
   ;SOURCE: Muth's FOTD 2005-10-15
 }
 
@@ -4927,7 +4927,7 @@ MJ_Mini(XAXIS_NOIMAG) {; an automatic Mix
 
 MJM-PHC004 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -4937,7 +4937,7 @@ MJM-PHC004 {
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * whitesq + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -4948,7 +4948,7 @@ MJM-PHC004 {
 
 
 MJM-PHC01 {
-  z = c = pixel 
+  z = c = pixel
   compt = 0, limit = real(p1), bailout = 4
   c1 = (0.34396372130558980 , 0.05608272738673762)
   c2 = (-0.72141758920523890 , 0.25918045895127010)
@@ -4956,7 +4956,7 @@ MJM-PHC01 {
   p = (-0.743380900000982,-0.131850030300002)
   test1 = (compt<limit), test2 = (compt!=limit)
   z = z * fn1(test1)
-  c = (b - delta * test1) * (whitesq == 0)\ 
+  c = (b - delta * test1) * (whitesq == 0)\
          + (c*test1+p*(1-test1)) * whitesq
   z = z*z+c
   compt = compt+1
@@ -4967,7 +4967,7 @@ MJM-PHC01 {
 
 MJM-PHC02 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -4978,8 +4978,8 @@ MJM-PHC02 {
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) \
         + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * whitesq\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * whitesq\
         + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -4991,7 +4991,7 @@ MJM-PHC02 {
 
 MJM-PHC03 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5000,10 +5000,10 @@ MJM-PHC03 {
   test = (iter == nextzoom)
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
-  newpixel = fn1(newpixel)*(1-test)\ 
+  newpixel = fn1(newpixel)*(1-test)\
        + test*reduction*(fn2(newpixel)-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\
             + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -5015,7 +5015,7 @@ MJM-PHC03 {
 
 MJM-PHC04 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5024,10 +5024,10 @@ MJM-PHC04 {
   test = (iter == nextzoom)
   test1 = (compt<limit)
   nextzoom = nextzoom + test*sqrt(iterspace)
-  newpixel = newpixel*(1-test)\ 
+  newpixel = newpixel*(1-test)\
        + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\
        + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -5039,7 +5039,7 @@ MJM-PHC04 {
 
 MJM-PHC05 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5048,10 +5048,10 @@ MJM-PHC05 {
   test = (iter == nextzoom)
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
-  newpixel = newpixel*(1-test)\ 
+  newpixel = newpixel*(1-test)\
        + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\
         + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -5063,7 +5063,7 @@ MJM-PHC05 {
 
 MJM-PHC06 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + fn1((real(p1)==0))
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5072,10 +5072,10 @@ MJM-PHC06 {
   test = fn3(iter == nextzoom)
   test1 = fn4(compt<limit)
   nextzoom = nextzoom + test*iterspace
-  newpixel = newpixel*(1-test)\ 
+  newpixel = newpixel*(1-test)\
        + test*flip(reduction)*fn2(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * (whitesq == 0)\
        + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -5087,7 +5087,7 @@ MJM-PHC06 {
 
 MJM-PHC07 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5097,10 +5097,10 @@ MJM-PHC07 {
   test = (iter == nextzoom)
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
-  newpixel = newpixel*(1-test)\ 
+  newpixel = newpixel*(1-test)\
       + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * whitesq\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * whitesq\
       + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -5112,7 +5112,7 @@ MJM-PHC07 {
 
 MJM-PHC08 {
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -5121,10 +5121,10 @@ MJM-PHC08 {
   test = (iter == nextzoom)
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
-  newpixel = newpixel*(1-test)\ 
+  newpixel = newpixel*(1-test)\
       + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
-  c = (c*(1 - test) + test*newpixel) * whitesq\ 
+  z = z*(1 - test)
+  c = (c*(1 - test) + test*newpixel) * whitesq\
       + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -5136,8 +5136,8 @@ MJM-PHC08 {
 
 MNDLPIER (XAXIS) {
   z=pixel-1:
-  z=sqr(z) +log(pixel) 
-  |z|<=4 
+  z=sqr(z) +log(pixel)
+  |z|<=4
   ;SOURCE: newform.frm
 }
 
@@ -5146,7 +5146,7 @@ Mnemonics {
   z = c = pixel:
   r = fn1(z) + p1
   q = atan(cos(z))/tan(sin(z)) + c
-  z = r * fn2(1/z * q) 
+  z = r * fn2(1/z * q)
   |z| < 4
   ;SOURCE: astral.frm
 }
@@ -5167,7 +5167,7 @@ Mod-August4 {; Modified Sylvie Gallet frm, Dec 1997
              ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0, sq2 = sqrt(2)
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-sq2) 
+  mz = abs(cabs(z1)-sq2)
   :
   IF (mz > 0.1)
     z2 = fn1(z1/z1)*fn2(z1)
@@ -5188,7 +5188,7 @@ Mod-August4 {; Modified Sylvie Gallet frm, Dec 1997
 }
 
 
-Modified_a { ; Gallet-3-11 Sylvie Gallet [101324,3444], 1996 
+Modified_a { ; Gallet-3-11 Sylvie Gallet [101324,3444], 1996
   z=fn1(pixel^p1/p2+p2*pixel/fn2(p1^pixel)), p=p2/p1:
   z = z*p
   (z+p) <= p1
@@ -5215,7 +5215,7 @@ Moe {; Mutation of 'Zexpe'.
 }
 
 
-MOne_Maxi {; generalized Minimax-Set (p1<>0!) 
+MOne_Maxi {; generalized Minimax-Set (p1<>0!)
            ; normal M-Set for p1=1
            ; p1 = -1 gives Mpm_Maxi
   z = a = pixel
@@ -5405,7 +5405,7 @@ mongo-13 {
 
 
 monkey (XAXIS) {; rlbagula
-  z = Pixel: 
+  z = Pixel:
   z = 1/(z*sin(1/z)+pixel)
   z = Sqr(z)
   LastSqr <= 4          ; Use LastSqr instead of recalculating
@@ -5414,7 +5414,7 @@ monkey (XAXIS) {; rlbagula
 
 
 monkey2 (XAXIS) {; rlbagula
-  z = Pixel:   
+  z = Pixel:
   z = 1/(sqr(z)*sin(1/sqr(z))+pixel)
   LastSqr <= 16         ; Use LastSqr instead of recalculating
   ;SOURCE: rbagula.frm
@@ -5422,7 +5422,7 @@ monkey2 (XAXIS) {; rlbagula
 
 
 monkey2i (XAXIS) {; rlbagula
-  z = Pixel:   
+  z = Pixel:
   z = (sqr(z)*sin(1/sqr(z))+pixel)
   LastSqr <= 16         ; Use LastSqr instead of recalculating
   ;SOURCE: rbagula.frm
@@ -5430,7 +5430,7 @@ monkey2i (XAXIS) {; rlbagula
 
 
 monkey3i (XAXIS) {; rlbagula
-  z = Pixel:   
+  z = Pixel:
   z = (z*sqr(z)*sin(1/(z*sqr(z)))+pixel)
   LastSqr <= 16         ; Use LastSqr instead of recalculating
   ;SOURCE: rbagula.frm
@@ -5438,7 +5438,7 @@ monkey3i (XAXIS) {; rlbagula
 
 
 monkey4i (XAXIS) {; rlbagula
-  z = Pixel:   
+  z = Pixel:
   z = (sqr(sqr(z))*sin(1/sqr(sqr(z)))+pixel)
   LastSqr <= 16         ; Use LastSqr instead of recalculating
   ;SOURCE: rbagula.frm
@@ -5465,7 +5465,7 @@ monument {; Giuseppe Zito
   z = pixel
   c0 = -0.97078
   c5 = 0.196811
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *x
@@ -5473,15 +5473,15 @@ monument {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 +c5
   s0 = s0 /y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -y
   s0 = s0 *x
   s0 = s0 *x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -5518,7 +5518,7 @@ Moo_3 {; requires periodicity=0
   z = pixel:
   z = z + p1
   r = tan(1/z) * pixel
-  z = fn1(z)/sqrt(r) 
+  z = fn1(z)/sqrt(r)
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
@@ -5528,21 +5528,21 @@ Moo_4 {
   z = pixel:
   z = z + p1
   r = tan(1/z) + pixel
-  z = fn1(z)/sqrt(r) 
+  z = fn1(z)/sqrt(r)
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
 
 
 Moo_PHC {; by Vincent Damion Presogna, Oct. 18, 1996
-  z = pixel 
-  halfe = e*(-0.5) 
+  z = pixel
+  halfe = e*(-0.5)
   quartere = e*(-.25):
   z = z + p1
   y = tan(1/z)
   r = y + pixel
   q = y * pixel
-  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq) 
+  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
@@ -5572,7 +5572,7 @@ Moonworld {; inspired by Heron's formula
     p2=0.5
   ENDIF
   a = log(|p2|)-12
-  c = sqr(p1): 
+  c = sqr(p1):
   u = v
   v = (u + c/u)/2 + p2
   z = v - u
@@ -5585,12 +5585,12 @@ Moonworld_3 {; Generalized version of Moonworld
              ; (c) 1997 Bernd Lehnhoff
              ; use floating point and periodicity=no!
              ; p1 is the radicand
-             ; p2 is the perturbation  
+             ; p2 is the perturbation
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel 
-  a = log(|p2|)-12: 
+  v = pixel
+  a = log(|p2|)-12:
   u = v
   v = u-u/3*(1-(p1/u)^3)+p2
   z = v - u
@@ -5603,13 +5603,13 @@ Moonworld_general {; Generalized version of Moonworld
                    ; (c) 1997 Bernd Lehnhoff
                    ; use floating point and periodicity=no!
                    ; p1 is the radicand
-                   ; p2 is the perturbation  
+                   ; p2 is the perturbation
                    ; p3 is the degree
   IF(p2==0)
     p2=0.5
   ENDIF
-  v = pixel 
-  a = log(|p2|)-12: 
+  v = pixel
+  a = log(|p2|)-12:
   u = v
   v = u-u/p3*(1-(p1/u)^p3)+p2
   z = v - u
@@ -5626,8 +5626,8 @@ MORPHS {; Ray Girvan
         ; p1=0.1, p2=6 for crabs
   z=pixel:
   z1=sin(z)-p1
-  z2=z1^p2-1 
-  z3=p2*(z1^(p2-1)) 
+  z2=z1^p2-1
+  z3=p2*(z1^(p2-1))
   z=z-(z2/z3)
   |z2| >= 0.00001
   ;SOURCE: 97msg.frm
@@ -5650,12 +5650,12 @@ Moth (XAXIS_NOPARM) {
   z=exp(z)+pixel
   z=log(z)+pixel
   x=x+1
-  |z|<=4 
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
 
-MothC (XAXIS_NOPARM) { 
+MothC (XAXIS_NOPARM) {
    ; Edited for Fractint v. 20 by George Martin 10/98
   z=p1, x=1:
   IF (x<10)
@@ -5665,8 +5665,8 @@ MothC (XAXIS_NOPARM) {
   ELSE
     z=log(z)+pixel
   ENDIF
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
@@ -5739,13 +5739,13 @@ mrosa {; Giuseppe Zito
   d3 = -0.99741298
   d4 = -0.667045
   d7 = -0.309879
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 -c2
   s0 = s0 -y
   s0 = s0 +x
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -x
   s0 = s0 *x
@@ -5754,9 +5754,9 @@ mrosa {; Giuseppe Zito
   s0 = s0 +s1
   s0 = s0 +d7
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -5814,7 +5814,7 @@ MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
 }
 
 
-MtNwt5_1/fn12 { 
+MtNwt5_1/fn12 {
   z = 1/fn1(p1 * pixel) + 1/fn2(p2 * pixel), Root = 1:
   z = (4 * z^5 + Root) / (5 * z^4)
   0.001 <= |z^5 - Root|
@@ -5822,7 +5822,7 @@ MtNwt5_1/fn12 {
 }
 
 
-MtNwt5_fn12 { 
+MtNwt5_fn12 {
   z = fn1(p1 * pixel) + fn2(p2 * pixel), Root = 1:
   z = (4 * z^5 + Root) / (5 * z^4)
   .001 <= |z^5 - Root|
@@ -5830,7 +5830,7 @@ MtNwt5_fn12 {
 }
 
 
-MtNwtfn1[fn2] { 
+MtNwtfn1[fn2] {
   z = fn1(fn2(p2*pixel)), Root = 1 :
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -5855,7 +5855,7 @@ mult1-5-XY-ZW {; draws all 6 planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=z^1.5+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -5879,7 +5879,7 @@ mult105-XY-ZW {; draws all 6 planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=(-z)^1.05+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -5934,7 +5934,7 @@ Multbrot {; Tom Schumm
 MultdBail {;p1 is dist switch, p2 is count switch
   z = c = pixel, x=0, m=1:
   x=x+1, t = z*z+c, d=|z|/4, do=1-d
-  g = (d<=p1)* (x<=p2)* (1.25), h=(d>p1)* (x<=p2)* (.9) 
+  g = (d<=p1)* (x<=p2)* (1.25), h=(d>p1)* (x<=p2)* (.9)
   i = (d<=p1)* (x>p2)* (1.1), j=(d>p1)* (x>p2)* (1)
   m =  (g+h+i+j)*m
   z = m*t
@@ -5962,7 +5962,7 @@ multi1-5-XY-ZW {; draws all 6 planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=z^1.5+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -5975,7 +5975,7 @@ multi20031 {; formula   draws many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=z^2.003+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -5988,7 +5988,7 @@ multi20031a {; draws all six planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=z^2.003+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 0from_ml.frm
 }
 
@@ -6000,7 +6000,7 @@ multi20032 {; Jim Muth   this is the formula
   f=exp(flip(imag(p1*.01745329251994)))
   z=f*real(pixel)+p2, c=ee*imag(pixel)+p3:
   z=z^2.003+c
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: 98msg.frm
 }
 
@@ -6071,7 +6071,7 @@ multigator2 {; Jim Muth
   f=exp(flip(imag(p1*.01745329251994)))
   z=f*real(pixel)+p2, c=ee*imag(pixel)+p3:
   z=(.5*(z^(-4)))+(-2*(z^(-2)))+c
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: 97msg.frm
 }
 
@@ -6081,7 +6081,7 @@ multirot-pm21 {; Jim Muth, best=ifif, fiif, fifi, iffi
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*fn3(real(pixel))+cos(a)*fn4(imag(pixel))+p3:
   z=(.1*(sqr(z)))+(10*(z^(-2)))+c
-  |z| <= 100  
+  |z| <= 100
   ;SOURCE: 97msg.frm
 }
 
@@ -6093,7 +6093,7 @@ multirot-XY-ZW {; draws all 6 planes and many rotations   NEW version
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=sqr(z)+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -6105,7 +6105,7 @@ multirot-XY-ZWa {; draws all 6 planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=sqr(z)+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 0from_ml.frm
 }
 
@@ -6117,7 +6117,7 @@ multirot-XZ-YW {; Jim Muth
   f=exp(flip(imag(p1*.01745329251994)))
   z=f*real(pixel)+p2, c=ee*imag(pixel)+p3:
   z=sqr(z)+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -6237,7 +6237,7 @@ multmin1-2-XY-ZW {; draws all 6 planes and many rotations
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
   z=(-z)^1.2+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 
@@ -6261,7 +6261,7 @@ multmin3-5-XZ-YW {; Jim Muth
   f=exp(flip(imag(p1*.01745329251994)))
   z=f*real(pixel)+p2, c=e*imag(pixel)+p3:
   z=(-z)^3.5+c
-  |z| < 36  
+  |z| < 36
   ;SOURCE: 99msg.frm
 }
 
@@ -6280,7 +6280,7 @@ murano {; Giuseppe Zito
   d15 = -0.27162501
   d19 = -0.562644
   d20 = 0.646236
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /c2
@@ -6302,7 +6302,7 @@ murano {; Giuseppe Zito
   s0 = s0 -c29
   s0 = s0 /c31
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /d1
   s0 = s0 +y
@@ -6321,9 +6321,9 @@ murano {; Giuseppe Zito
   s1 = y
   s0 = s0 *s1
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -6335,8 +6335,8 @@ Mutant_demo {; Oliver Klimek's TripleMutant formula
   w = z = bailout = iter = 0
   c = pixel
   pt1 = (2.5,2.5), pt2 = (-2.5,2.5), pt3 = (2.5,-2.5)
-  a1 = 1 / (|(pixel - pt1)|^2)    
-  a2 = 1 / (|(pixel - pt2)|^2)    
+  a1 = 1 / (|(pixel - pt1)|^2)
+  a2 = 1 / (|(pixel - pt2)|^2)
   a3 = 1 / (|(pixel - pt3)|^2)
   :
     ; find contribution of each function
@@ -6394,8 +6394,8 @@ Mutant_End {; Oliver Klimek's TripleMutant formula
             ; as modified by Paul Carlson, 1998
   w = z = bailout = iter = 0
   c = pixel
-  a1 = 1 / (|(pixel - p1)|^2)    
-  a2 = 1 / (|(pixel - p2)|^2)    
+  a1 = 1 / (|(pixel - p1)|^2)
+  a2 = 1 / (|(pixel - p2)|^2)
   a3 = 1 / (|(pixel - p3)|^2)
   :
     ; find contribution of each function
@@ -6451,8 +6451,8 @@ Mutant_Start {; Oliver Klimek's TripleMutant formula
               ; as modified by Paul Carlson, 1998
   w = z = bailout = iter = 0
   c = pixel
-  a1 = 1 / (|(pixel - p1)|^2)    
-  a2 = 1 / (|(pixel - p2)|^2)    
+  a1 = 1 / (|(pixel - p1)|^2)
+  a2 = 1 / (|(pixel - p2)|^2)
   a3 = 1 / (|(pixel - p3)|^2)
     ;
     ; find contribution of each function
@@ -6715,9 +6715,9 @@ MyFrac-pc-Lin2 {; Formulas by Bob Carr and Paul Carlson
 }
 
 
-MyFract-7 {;from the book *Fractal Creations* 
-           ; by Tim Wegner and Mark Peterson 
-           ; modified by Linda Allison 
+MyFract-7 {;from the book *Fractal Creations*
+           ; by Tim Wegner and Mark Peterson
+           ; modified by Linda Allison
   c = z = 1/pixel:
   z = fn1(z) + (c + P1/z)
   |z| <= P2

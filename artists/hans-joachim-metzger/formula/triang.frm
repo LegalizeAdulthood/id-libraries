@@ -102,9 +102,9 @@ triang_jul {; Kerry Mitchell 11feb98
 ;**********************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 triangcount_jul {; Kerry Mitchell 11feb98
-                 ; See the end of formula triang_jul for Kerry Mitchell's 
+                 ; See the end of formula triang_jul for Kerry Mitchell's
                  ; explanation of his "triangle" formulas
         ; p1 = Julia parameter
         ; real(p2) = bailout (try 1e12)
@@ -139,4 +139,4 @@ triangcount_jul {; Kerry Mitchell 11feb98
         ;
   ;SOURCE: 98msg.frm
 }
- 
+

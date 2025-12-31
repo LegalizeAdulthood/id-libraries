@@ -4,4 +4,4 @@ ScSkZCZZ (XYAXIS) {
   |z|<TEST
   ;SOURCE: fractint.frm
 }
- 
+

@@ -1,4 +1,4 @@
-Color11 {; (See formula "dmj-Mand-Cr2-Dec" for an update of this formula)  
+Color11 {; (See formula "dmj-Mand-Cr2-Dec" for an update of this formula)
          ; New coloring technique #11 (ring trap)
          ; outside = decomp: angle at closest approach to ring at p1
          ; p2r: unused
@@ -20,7 +20,7 @@ Color11 {; (See formula "dmj-Mand-Cr2-Dec" for an update of this formula)
    done >= 0
   ;SOURCE: 97msg.frm
 }
- 
+
 dmj-Mand-Pnt-Dec { ; outside = decomp: angle of closest z[n] to point at p1
         ; outside = atan will give a slightly different coloring.
         ; This is the angle relative to the origin.
@@ -54,11 +54,11 @@ dmj-Mand-Pnt-Dec { ; outside = decomp: angle of closest z[n] to point at p1
           z = point                     ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
   ;SOURCE: dmj-pub.frm
 }
- 
+
 dmj-Nova-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         ; This is the angle relative to the origin.
 
@@ -72,7 +72,7 @@ dmj-Nova-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         point = 0                       ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)       ; Compute rotation vector.
-        
+
         z = 1, c = pixel:               ; NovaM initialization.
         zsquared = sqr(z)
         zcubed = zsquared * z
@@ -90,8 +90,8 @@ dmj-Nova-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
           z = point                     ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
   ;SOURCE: dmj-pub.frm
 }
- 
+

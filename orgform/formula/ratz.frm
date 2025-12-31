@@ -1,8 +1,8 @@
 general { ;try p2=0.3 , p1=4
           z=pixel : z=(p2*z^p1+pixel)/(p2*z^(p1-1)+pixel),|z|<=10}
 
-Ratz-fn {z = Pixel :  
-         z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel ) , 
+Ratz-fn {z = Pixel :
+         z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel ) ,
          | z | <= 10 }
 
 ;schrott

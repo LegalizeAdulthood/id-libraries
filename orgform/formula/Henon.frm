@@ -5,7 +5,7 @@ Henon_M2 { ; p1 is a point in the Henon map. Screen coordinates are parameters '
   z = a - b*imag(z) - sqr(real(z)) + (0,1)*real(z),
   |z| < 1000000
 }
- 
+
 Henon_M3 { ; Henon map on complex numbers.
            ; p1 and p2 are a point in the Henon map. Screen coordinates are parameter 'b'.
            ; Escape pixels escaped radius 1000. Try non-standard inside options with
@@ -16,7 +16,7 @@ Henon_M3 { ; Henon map on complex numbers.
   z = z1,
   lastsqr+|w| < 1000000
 }
- 
+
 Henon_M4 { ; Screen coordinates are parameters 'a' and 'b'.
            ; Escape pixels escaped radius 1000. Try non-standard inside options with
            ; periodicity checking enabled. Composite view.
@@ -53,7 +53,7 @@ Henon_M4 { ; Screen coordinates are parameters 'a' and 'b'.
   ENDIF
   done == 0
 }
- 
+
 Henon_M5 { ; Henon map on complex numbers. Screen coordinates are parameter 'b'.
            ; Escape pixels escaped radius 1000. Try non-standard inside options with
            ; periodicity checking DISabled. Composite view.
@@ -100,7 +100,7 @@ Henon_M5 { ; Henon map on complex numbers. Screen coordinates are parameter 'b'.
   ENDIF
   done == 0
 }
- 
+
 Henon_J1 { ; Henon map on complex numbers.
            ; p1 and p2 are a and b. Screen coordinates are y. p3 is x.
            ; Escape pixels escaped radius 1000. Try non-standard inside options with
@@ -111,7 +111,7 @@ Henon_J1 { ; Henon map on complex numbers.
   z = z1,
   lastsqr+|w| < 1000000
 }
- 
+
 Henon_J2 { ; Henon map on complex numbers.
            ; p1 and p2 are a and b. Screen coordinates are real(x), real(y). p3 is imag(x), imag(y).
            ; Escape pixels escaped radius 1000. Try non-standard inside options with

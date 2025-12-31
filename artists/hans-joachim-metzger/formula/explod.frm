@@ -5,7 +5,7 @@ jc {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 j1 {
    ; see also alx1 in _a.frm - a formula formerly named j1, changed
    ; to avoid duplication of name with this formula.
@@ -15,7 +15,7 @@ j1 {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 jfnc {
   z=pixel, c=p1:
   z=sqr(z)+c
@@ -23,7 +23,7 @@ jfnc {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 jfnz {
   z=pixel, c=p1:
   z=sqr(z)+c
@@ -31,7 +31,7 @@ jfnz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 m1 {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -39,7 +39,7 @@ m1 {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 mfnz {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -47,7 +47,7 @@ mfnz {
   |z| <= 4
   ;SOURCE: explode.frm
 }
- 
+
 moc {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -55,4 +55,4 @@ moc {
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+

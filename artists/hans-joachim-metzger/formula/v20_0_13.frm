@@ -14,7 +14,7 @@ zx=z^x+p2
 z=(zx+p)/(zx-1)
 |z|<b
 }
- 
+
 magnet1jvar_exp2(XAXIS_NOIMAG) {
 ;the Mandelbrot-equivalent is similar to 'magnet1m'
 ;p1 is the basic Julia-perturbation, default=(0.5,0), shouldn't be 0
@@ -31,7 +31,7 @@ zx=z^x+p2
 z=(zx+p)/(zx-1)
 |z|<b
 }
- 
+
 mand_2exp2par_1(XAXIS_NOIMAG) {
 ;p1 and p3 are the perturbations of the first set
 ;(defaults=1 and -1 only if p1..p4 are all zero)
@@ -50,7 +50,7 @@ k=z^x2+c-p_2
 z=(j*k)/(j+k)
 |z|<b
 }
- 
+
 mand_a*2+b*4+c*6(XAXIS_NOIMAG) {
 ;p2 is the multiplier for z^2, p3 for for z^4, p4 for z^6 (default=all 1)
 ;p5 is the bailout (default=4)
@@ -64,4 +64,4 @@ z4=z2*z2
 z=z2*j+z4*k+z4*z2*l+c-p1
 |z|<b
 }
- 
+

@@ -40,7 +40,7 @@
   z = z^c - fn1 (c);
   |z| <= p1
 }
- 
+
  607 {
   z = c = pixel:
   z = z^c + fn1 (z+c);
@@ -57,7 +57,7 @@
   z = c = pixel:
   z = z^c - fn1 (z+c);
   |z| <= p1
-} 
+}
 
   610 {
   z = c = pixel:

@@ -7,7 +7,7 @@ DaliJack3 {
   |z| <= 4
   ;SOURCE: orman2.frm
 }
- 
+
 dmj-Mand-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
         ; outside = atan will give a slightly different coloring.
         ; This is the angle relative to p1.
@@ -41,11 +41,11 @@ dmj-Mand-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
           z = point - p1                ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
   ;SOURCE: dmj-pub.frm
 }
- 
+
 dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         ; This is the angle relative to p1.
 
@@ -59,7 +59,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         point = 0                       ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)       ; Compute rotation vector.
-        
+
         z = 0, c = pixel:               ; Mandelbrot initialization.
         z = sqr(z) + c                  ; Mandelbrot calculation.
 
@@ -74,8 +74,8 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
           z = point - p1                ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
   ;SOURCE: dmj-pub.frm
 }
- 
+

@@ -1,4 +1,4 @@
-Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   z = pixel/(pixel*pixel+1) :
   x = real(z), y = imag(z)
   x1 = x - p1*fn1(y+p2*fn2(y))
@@ -7,4 +7,4 @@ Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: gallet-3.frm
 }
- 
+

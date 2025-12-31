@@ -5,7 +5,7 @@ tracykoller1 {; Flower formula series for Tracy
   |z| <=4
   ;SOURCE: tracy.frm
 }
- 
+
 tracykoller2 {; Created by Jack A. Orman
               ; Copr. 1995
   z=1/pixel, c=cosxx(p2)/pixel:
@@ -13,7 +13,7 @@ tracykoller2 {; Created by Jack A. Orman
   |z| <=10
   ;SOURCE: tracy.frm
 }
- 
+
 tracykoller3 {; Created by Jack A. Orman
               ; Copr. 1995
   z=1/pixel, c=sqr(p2)/pixel:
@@ -21,7 +21,7 @@ tracykoller3 {; Created by Jack A. Orman
   |z| <=10
   ;SOURCE: tracy.frm
 }
- 
+
 tracykoller4 {; Created by Jack A. Orman
               ; Copr. 1995
   z=1/pixel, c=sqrt(p2)/pixel:
@@ -29,4 +29,4 @@ tracykoller4 {; Created by Jack A. Orman
   |z| <=10
   ;SOURCE: tracy.frm
 }
- 
+

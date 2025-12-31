@@ -4,14 +4,14 @@ mongo-02 {; TRY P1 REAL = -1, P2 = 5, FN1 = SQR, FN2 = RECIP
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-01 {
   z = c = pixel:
   z = p1 * fn1(z^z + c) + c/z
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-03 {
   z = c = pixel:
   a = (abs(z) > p1)  * (fn1(z) + c)
@@ -20,7 +20,7 @@ mongo-03 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-04 {
   z = c = pixel, test = p1/p2:
   a = fn1(z)
@@ -30,7 +30,7 @@ mongo-04 {
   |z| <= p1
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-05 {
   z = pixel, c = fn1(pixel):
   a = fn2(z)
@@ -40,7 +40,7 @@ mongo-05 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-06 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z = c = pixel, d = fn1(pixel):
   a = fn2(z)
@@ -50,7 +50,7 @@ mongo-06 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-07 {
   z = v = pixel:
   oldz = z
@@ -59,7 +59,7 @@ mongo-07 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-08 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z = v = pixel:
   a = fn1(z)
@@ -70,7 +70,7 @@ mongo-08 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-09 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z = v = pixel:
   a = fn1(z)
@@ -81,7 +81,7 @@ mongo-09 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-10 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z = y = x = pixel:
   a = fn1(z)
@@ -93,7 +93,7 @@ mongo-10 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-11 {
   z = y = x = pixel:
   a = (|y| <= p1) * fn1(y)
@@ -104,7 +104,7 @@ mongo-11 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-12 {
   z = pixel, c = (fn1(pixel) * p1):
   x = abs(real(z))
@@ -115,7 +115,7 @@ mongo-12 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+
 mongo-13 {
   z = pixel:
   v = fn1(z)
@@ -127,4 +127,4 @@ mongo-13 {
   |z| <= p2
   ;SOURCE: mongo.frm
 }
- 
+

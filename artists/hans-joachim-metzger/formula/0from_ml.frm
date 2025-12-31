@@ -12,7 +12,7 @@ MandelbrotBC2      { ; originally by several Fractint users
     Z=exp(e*(Z+flip(q)))+C
   |Z| < a
 }
- 
+
 MandelbrotBC2 {
   ; by several Fractint users
   e=p1, a=imag(p2)+100
@@ -25,9 +25,9 @@ MandelbrotBC2 {
       Z=Z+flip(2*PI)
     ENDIF
     Z=exp(e*(Z+flip(q)))+C
-  |Z| < a 
+  |Z| < a
 }
- 
+
 contest4 {; Kerry Mitchell
           ; slightly optimized version of Contest formula
           ; THIS IS THE ONE USED IN THE 1997 CONTEST
@@ -36,4 +36,4 @@ contest4 {; Kerry Mitchell
   |z| <= 4
   ;SOURCE: contest.frm
 }
- 
+

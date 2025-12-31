@@ -10,7 +10,7 @@ comment {
 
   The parameter file OVERKILL.PAR has many examples of the images I have
   created with these formulas, as well as lots of other fractal types.
-  
+
   I welcome any comments.  Reach me at:
 
     CIS: 74223,2745    Internet: 74223,2745@compuserve.com
@@ -19,9 +19,9 @@ comment {
                1343 S. Tyler
                Salt Lake City, Utah  84105
                U.S.A.
-  
+
   NOTE: You'll usually get more interesting results by using floating-point
-        math.  
+        math.
 }
 
 {-------------------------------------------------------------------------}
@@ -72,7 +72,7 @@ OK-05 {
 
 OK-06 { ;TRY FN1 = SQR, FN2 = SQR
    z = c = pixel, d = fn1(pixel):
-   z = fn2(z / d) + c 
+   z = fn2(z / d) + c
    |z| <= (5 + p1)
   }
 
@@ -161,7 +161,7 @@ OK-18 {
    v = fn2(z) + imag(v),
    |z| <= (5 + p1)
   }
-  
+
 OK-19 {
    a = b = z = pixel:
    a = fn1(b) + fn2(z);

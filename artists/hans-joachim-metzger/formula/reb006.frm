@@ -4,14 +4,14 @@ Cubicfn {; Ron Barnett, 1995
   |z| <= 4
   ;SOURCE: reb006.frm
 }
- 
+
 ikenagaoriginal {; Ron Barnett, 1994
   z = 0, c = pixel:
-  z = z*z*z + (c - 1)*z - c 
+  z = z*z*z + (c - 1)*z - c
   |z|<=100
   ;SOURCE: reb006.frm
 }
- 
+
 Phoenix {; Ron Barnett, 1993
          ; This is an old formula of mine which
          ; predates the current formuala in Fractint
@@ -22,8 +22,8 @@ Phoenix {; Ron Barnett, 1993
   y = 0:
   x1 = z*z + P1 + P2*y
   y = z
-  z = x1 
+  z = x1
   |z|<= 50
   ;SOURCE: reb006.frm
 }
- 
+

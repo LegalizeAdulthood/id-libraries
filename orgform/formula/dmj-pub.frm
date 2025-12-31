@@ -168,7 +168,7 @@ Comment { ; dmj--Read-Me-First dmj-pub.frm 1.0 - September 11, 1997
 	  ELSE
 	    done = -1
 	  ENDIF
-	  
+
 	ELSEIF (real(y) < 0.3)
 	  IF (imag(y) <= -0.05 && imag(y) > -0.2)
 	    IF (real(y) < -0.1 || real(y) > 0.2 || (real(y) > 0 && real(y) < 0.1))
@@ -191,7 +191,7 @@ Comment { ; dmj--Read-Me-First dmj-pub.frm 1.0 - September 11, 1997
 	      done = -1
 	    ENDIF
 	  ENDIF
-	  
+
 	ELSE
 	  IF (imag(y) > 0.1)
 	    IF (real(y) > 0.5 && real(y) < 0.6 && imag(y) > 0.2 && imag(y) < 0.3)
@@ -219,18 +219,18 @@ Comment { ; dmj--Read-Me-First dmj-pub.frm 1.0 - September 11, 1997
 	      done = -1
 	    ENDIF
 	  ENDIF
-	
+
 	ENDIF
-	
+
 	IF (done >= 0)
 	  y = (y - (0.05,-0.05)) * 1.02 + (0.05,-0.05)
-	  count2 = count2 + 1	
+	  count2 = count2 + 1
 	ELSE
 	  IF (count2 == 0)
 	    z = e - count
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0
 }
 
@@ -271,7 +271,7 @@ dmj-Mand-Pnt-Dst { ; outside = real: closest distance z[n] to point at p1
 	  z = sqrt(closest) * real(p3) - done ; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -309,7 +309,7 @@ dmj-Mand-Pnt-Dst-I { ; outside = real: closest distance z[n] to point at p1
 	  z = sqrt(closest) * real(p3) - done ; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -346,7 +346,7 @@ dmj-Mand-Pnt-Ang { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -383,7 +383,7 @@ dmj-Mand-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -420,7 +420,7 @@ dmj-Mand-Pnt-Dec { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -457,7 +457,7 @@ dmj-Mand-Pnt-Dec-I { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -494,7 +494,7 @@ dmj-Mand-Pnt-Itr { ; outside = real: n of closest z[n] to point at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -531,7 +531,7 @@ dmj-Mand-Pnt-Itr-I { ; outside = real: n of closest z[n] to point at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -547,7 +547,7 @@ dmj-Mand-Hyp-Dst { ; outside = real: closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -562,7 +562,7 @@ dmj-Mand-Hyp-Dst { ; outside = real: closest z[n] to hyperbola at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -578,7 +578,7 @@ dmj-Mand-Hyp-Dst-I { ; outside = real: closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -593,7 +593,7 @@ dmj-Mand-Hyp-Dst-I { ; outside = real: closest z[n] to hyperbola at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -610,7 +610,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -625,7 +625,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -642,7 +642,7 @@ dmj-Mand-Hyp-Ang-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -657,7 +657,7 @@ dmj-Mand-Hyp-Ang-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -674,7 +674,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -689,7 +689,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -706,7 +706,7 @@ dmj-Mand-Hyp-Dec-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -721,7 +721,7 @@ dmj-Mand-Hyp-Dec-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -737,7 +737,7 @@ dmj-Mand-Hyp-Itr { ; outside = real: n of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -752,7 +752,7 @@ dmj-Mand-Hyp-Itr { ; outside = real: n of closest z[n] to hyperbola at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -768,7 +768,7 @@ dmj-Mand-Hyp-Itr-I { ; outside = real: n of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -783,7 +783,7 @@ dmj-Mand-Hyp-Itr-I { ; outside = real: n of closest z[n] to hyperbola at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -802,7 +802,7 @@ dmj-Mand-Cir-Dst { ; outside = real: closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -818,7 +818,7 @@ dmj-Mand-Cir-Dst { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -837,7 +837,7 @@ dmj-Mand-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -853,7 +853,7 @@ dmj-Mand-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -873,7 +873,7 @@ dmj-Mand-Cir-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -889,7 +889,7 @@ dmj-Mand-Cir-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -909,7 +909,7 @@ dmj-Mand-Cir-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -925,7 +925,7 @@ dmj-Mand-Cir-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -945,7 +945,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -961,7 +961,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -981,7 +981,7 @@ dmj-Mand-Cir-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -997,7 +997,7 @@ dmj-Mand-Cir-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1016,7 +1016,7 @@ dmj-Mand-Cir-Itr { ; outside = real: n of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1032,7 +1032,7 @@ dmj-Mand-Cir-Itr { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1051,7 +1051,7 @@ dmj-Mand-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1067,7 +1067,7 @@ dmj-Mand-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1087,7 +1087,7 @@ dmj-Mand-Cr2-Dst { ; outside = real: closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1103,7 +1103,7 @@ dmj-Mand-Cr2-Dst { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1123,7 +1123,7 @@ dmj-Mand-Cr2-Dst-I { ; outside = real: closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1139,7 +1139,7 @@ dmj-Mand-Cr2-Dst-I { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1160,7 +1160,7 @@ dmj-Mand-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1176,7 +1176,7 @@ dmj-Mand-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1197,7 +1197,7 @@ dmj-Mand-Cr2-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1213,7 +1213,7 @@ dmj-Mand-Cr2-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1234,7 +1234,7 @@ dmj-Mand-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1250,7 +1250,7 @@ dmj-Mand-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1271,7 +1271,7 @@ dmj-Mand-Cr2-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1287,7 +1287,7 @@ dmj-Mand-Cr2-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1307,7 +1307,7 @@ dmj-Mand-Cr2-Itr { ; outside = real: n of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1323,7 +1323,7 @@ dmj-Mand-Cr2-Itr { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1343,7 +1343,7 @@ dmj-Mand-Cr2-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1359,7 +1359,7 @@ dmj-Mand-Cr2-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1378,7 +1378,7 @@ dmj-Mand-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1397,7 +1397,7 @@ dmj-Mand-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1416,7 +1416,7 @@ dmj-Mand-Pls-Dst-I { ; outside = real: closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1435,7 +1435,7 @@ dmj-Mand-Pls-Dst-I { ; outside = real: closest z[n] to cross at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1455,7 +1455,7 @@ dmj-Mand-Pls-Ang { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1474,7 +1474,7 @@ dmj-Mand-Pls-Ang { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1494,7 +1494,7 @@ dmj-Mand-Pls-Ang-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1513,7 +1513,7 @@ dmj-Mand-Pls-Ang-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1533,7 +1533,7 @@ dmj-Mand-Pls-Dec { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1552,7 +1552,7 @@ dmj-Mand-Pls-Dec { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1572,7 +1572,7 @@ dmj-Mand-Pls-Dec-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1591,7 +1591,7 @@ dmj-Mand-Pls-Dec-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1610,7 +1610,7 @@ dmj-Mand-Pls-Itr { ; outside = real: n of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1629,7 +1629,7 @@ dmj-Mand-Pls-Itr { ; outside = real: n of closest z[n] to cross at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1648,7 +1648,7 @@ dmj-Mand-Pls-Itr-I { ; outside = real: n of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1667,7 +1667,7 @@ dmj-Mand-Pls-Itr-I { ; outside = real: n of closest z[n] to cross at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1686,7 +1686,7 @@ dmj-Mand-Rct-Dst { ; outside = real: closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1705,7 +1705,7 @@ dmj-Mand-Rct-Dst { ; outside = real: closest z[n] to rectangle at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1724,7 +1724,7 @@ dmj-Mand-Rct-Dst-I { ; outside = real: closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1743,7 +1743,7 @@ dmj-Mand-Rct-Dst-I { ; outside = real: closest z[n] to rectangle at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1763,7 +1763,7 @@ dmj-Mand-Rct-Ang { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1782,7 +1782,7 @@ dmj-Mand-Rct-Ang { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1802,7 +1802,7 @@ dmj-Mand-Rct-Ang-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1821,7 +1821,7 @@ dmj-Mand-Rct-Ang-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1841,7 +1841,7 @@ dmj-Mand-Rct-Dec { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1860,7 +1860,7 @@ dmj-Mand-Rct-Dec { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1880,7 +1880,7 @@ dmj-Mand-Rct-Dec-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1899,7 +1899,7 @@ dmj-Mand-Rct-Dec-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1918,7 +1918,7 @@ dmj-Mand-Rct-Itr { ; outside = real: n of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1937,7 +1937,7 @@ dmj-Mand-Rct-Itr { ; outside = real: n of closest z[n] to rectangle at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1956,7 +1956,7 @@ dmj-Mand-Rct-Itr-I { ; outside = real: n of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1975,7 +1975,7 @@ dmj-Mand-Rct-Itr-I { ; outside = real: n of closest z[n] to rectangle at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1993,7 +1993,7 @@ dmj-Mand-Spi-Dst { ; outside = real: closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2011,7 +2011,7 @@ dmj-Mand-Spi-Dst { ; outside = real: closest z[n] to spiral at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2029,7 +2029,7 @@ dmj-Mand-Spi-Dst-I { ; outside = real: closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2047,7 +2047,7 @@ dmj-Mand-Spi-Dst-I { ; outside = real: closest z[n] to spiral at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2066,7 +2066,7 @@ dmj-Mand-Spi-Ang { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2084,7 +2084,7 @@ dmj-Mand-Spi-Ang { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2103,7 +2103,7 @@ dmj-Mand-Spi-Ang-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2121,7 +2121,7 @@ dmj-Mand-Spi-Ang-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2140,7 +2140,7 @@ dmj-Mand-Spi-Dec { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2158,7 +2158,7 @@ dmj-Mand-Spi-Dec { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2177,7 +2177,7 @@ dmj-Mand-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2195,7 +2195,7 @@ dmj-Mand-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2213,7 +2213,7 @@ dmj-Mand-Spi-Itr { ; outside = real: n of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2231,7 +2231,7 @@ dmj-Mand-Spi-Itr { ; outside = real: n of closest z[n] to spiral at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2249,7 +2249,7 @@ dmj-Mand-Spi-Itr-I { ; outside = real: n of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2267,7 +2267,7 @@ dmj-Mand-Spi-Itr-I { ; outside = real: n of closest z[n] to spiral at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2284,7 +2284,7 @@ dmj-Mand-Smooth(XAXIS) { ; outside = real: smooth iteration coloring
 	done = 2			; Iteration counter.
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2293,7 +2293,7 @@ dmj-Mand-Smooth(XAXIS) { ; outside = real: smooth iteration coloring
 	  z = (done + 2*il2*lp - il2*log(log(cabs(z)))) * real(p3) - done
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2314,7 +2314,7 @@ dmj-Mand-SmoothPHC { ; outside = real: smooth iteration coloring
 	done = 2			; Iteration counter.
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2327,7 +2327,7 @@ dmj-Mand-SmoothPHC { ; outside = real: smooth iteration coloring
 	  ENDIF
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2350,7 +2350,7 @@ dmj-Mand-SmoothX2 { ; outside = real: smooth iteration coloring
 	done = 2			; Iteration counter.
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2366,7 +2366,7 @@ dmj-Mand-SmoothX2 { ; outside = real: smooth iteration coloring
 	  z = z - done - 5		; Remove iteration count.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2386,7 +2386,7 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	az2 = |z|			; Save absolute value of first term.
 	z = sqr(z) + c			; Mandelbrot calculation.
@@ -2394,7 +2394,7 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	lowbound = abs(az2 - ac)	; Calculate lower bound for sum.
 	sum = sum + (cabs(z) - lowbound) / (az2+ac - lowbound)
 					; Ratio between bounds.
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (az2 > imag(p3))		; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2408,7 +2408,7 @@ dmj-Mand-Triangle(XAXIS) { ; outside = real: triangle inequality average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2428,7 +2428,7 @@ dmj-Mand-Triangl-I(XAXIS) { ; outside = real: triangle inequality average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(imag(p3)))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	az2 = |z|			; Save absolute value of first term.
 	z = sqr(z) + c			; Mandelbrot calculation.
@@ -2436,7 +2436,7 @@ dmj-Mand-Triangl-I(XAXIS) { ; outside = real: triangle inequality average
 	lowbound = abs(az2 - ac)	; Calculate lower bound for sum.
 	sum = sum + (cabs(z) - lowbound) / (az2+ac - lowbound)
 					; Ratio between bounds.
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (az2 > imag(p3) || done > maxit-2)	; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2450,7 +2450,7 @@ dmj-Mand-Triangl-I(XAXIS) { ; outside = real: triangle inequality average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2467,7 +2467,7 @@ dmj-Mand-ThetaW { ; outside = real: weighted decomposition average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(128))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2476,7 +2476,7 @@ dmj-Mand-ThetaW { ; outside = real: weighted decomposition average
 	  sum = sum + atan(abs(imag(z2)/real(z2)))*weight ; Sum up angles.
 	  weight = weight * 0.5		; Reduce weight.
 	ENDIF
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (|z| > 128)			; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2489,7 +2489,7 @@ dmj-Mand-ThetaW { ; outside = real: weighted decomposition average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2506,7 +2506,7 @@ dmj-Mand-ThetaW-I { ; outside = real: weighted decomposition average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(128))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2515,7 +2515,7 @@ dmj-Mand-ThetaW-I { ; outside = real: weighted decomposition average
 	  sum = sum + atan(abs(imag(z2)/real(z2)))*weight ; Sum up angles.
 	  weight = weight * 0.5		; Reduce weight.
 	ENDIF
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (|z| > 128 || done >= maxit-1) ; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2528,7 +2528,7 @@ dmj-Mand-ThetaW-I { ; outside = real: weighted decomposition average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2544,7 +2544,7 @@ dmj-Mand-ThetaW2 { ; outside = real: weighted decomposition average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(128))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2552,7 +2552,7 @@ dmj-Mand-ThetaW2 { ; outside = real: weighted decomposition average
 	  z2 = z-p2			; Offset to p2.
 	  sum = sum*0.5 + atan(abs(imag(z2)/real(z2))) ; Sum up angles.
 	ENDIF
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (|z| > 128)			; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2565,7 +2565,7 @@ dmj-Mand-ThetaW2 { ; outside = real: weighted decomposition average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2581,7 +2581,7 @@ dmj-Mand-ThetaW2-I { ; outside = real: weighted decomposition average
 	il2 = 1/log(2.0)		; Inverse log 2 (precalc).
 	lp = log(log(128))		; log(log bailout) (precalc).
 	f = -1				; No fractional iteration yet.
-	
+
 	z = pixel, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -2589,7 +2589,7 @@ dmj-Mand-ThetaW2-I { ; outside = real: weighted decomposition average
 	  z2 = z-p2			; Offset to p2.
 	  sum = sum*0.5 + atan(abs(imag(z2)/real(z2))) ; Sum up angles.
 	ENDIF
-	
+
 	done = done + 1			; Done one more iteration.
 	IF (|z| > 128 || done >= maxit-1) ; Point exceeds bailout.
 	  IF (f < 0)			; First time; let it go again.
@@ -2602,7 +2602,7 @@ dmj-Mand-ThetaW2-I { ; outside = real: weighted decomposition average
 	    done = -1			; Set flag to force an exit.
 	  ENDIF
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2643,7 +2643,7 @@ dmj-Nova-Pnt-Dst { ; outside = real: closest distance z[n] to point at p1
 	  z = sqrt(closest) * real(p3) - done ; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2684,7 +2684,7 @@ dmj-Nova-Pnt-Dst-I { ; outside = real: closest distance z[n] to point at p1
 	  z = sqrt(closest) * real(p3) - done ; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2724,7 +2724,7 @@ dmj-Nova-Pnt-Ang { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2764,7 +2764,7 @@ dmj-Nova-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2804,7 +2804,7 @@ dmj-Nova-Pnt-Dec { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2844,7 +2844,7 @@ dmj-Nova-Pnt-Dec-I { ; outside = decomp: angle of closest z[n] to point at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2884,7 +2884,7 @@ dmj-Nova-Pnt-Itr { ; outside = real: n of closest z[n] to point at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2924,7 +2924,7 @@ dmj-Nova-Pnt-Itr-I { ; outside = real: n of closest z[n] to point at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2940,7 +2940,7 @@ dmj-Nova-Hyp-Dst { ; outside = real: closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -2958,7 +2958,7 @@ dmj-Nova-Hyp-Dst { ; outside = real: closest z[n] to hyperbola at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -2974,7 +2974,7 @@ dmj-Nova-Hyp-Dst-I { ; outside = real: closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -2992,7 +2992,7 @@ dmj-Nova-Hyp-Dst-I { ; outside = real: closest z[n] to hyperbola at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3009,7 +3009,7 @@ dmj-Nova-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3027,7 +3027,7 @@ dmj-Nova-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3044,7 +3044,7 @@ dmj-Nova-Hyp-Ang-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3062,7 +3062,7 @@ dmj-Nova-Hyp-Ang-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3079,7 +3079,7 @@ dmj-Nova-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3097,7 +3097,7 @@ dmj-Nova-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3114,7 +3114,7 @@ dmj-Nova-Hyp-Dec-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3132,7 +3132,7 @@ dmj-Nova-Hyp-Dec-I { ; outside = decomp: angle of closest z[n] to hyperbola at p
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3148,7 +3148,7 @@ dmj-Nova-Hyp-Itr { ; outside = real: n of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3166,7 +3166,7 @@ dmj-Nova-Hyp-Itr { ; outside = real: n of closest z[n] to hyperbola at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3182,7 +3182,7 @@ dmj-Nova-Hyp-Itr-I { ; outside = real: n of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3200,7 +3200,7 @@ dmj-Nova-Hyp-Itr-I { ; outside = real: n of closest z[n] to hyperbola at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3219,7 +3219,7 @@ dmj-Nova-Cir-Dst { ; outside = real: closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3238,7 +3238,7 @@ dmj-Nova-Cir-Dst { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3257,7 +3257,7 @@ dmj-Nova-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3276,7 +3276,7 @@ dmj-Nova-Cir-Dst-I { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3296,7 +3296,7 @@ dmj-Nova-Cir-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3315,7 +3315,7 @@ dmj-Nova-Cir-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3335,7 +3335,7 @@ dmj-Nova-Cir-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3354,7 +3354,7 @@ dmj-Nova-Cir-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3374,7 +3374,7 @@ dmj-Nova-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3393,7 +3393,7 @@ dmj-Nova-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3413,7 +3413,7 @@ dmj-Nova-Cir-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3432,7 +3432,7 @@ dmj-Nova-Cir-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3451,7 +3451,7 @@ dmj-Nova-Cir-Itr { ; outside = real: n of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3470,7 +3470,7 @@ dmj-Nova-Cir-Itr { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3489,7 +3489,7 @@ dmj-Nova-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3508,7 +3508,7 @@ dmj-Nova-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3528,7 +3528,7 @@ dmj-Nova-Cr2-Dst { ; outside = real: closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3547,7 +3547,7 @@ dmj-Nova-Cr2-Dst { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3567,7 +3567,7 @@ dmj-Nova-Cr2-Dst-I { ; outside = real: closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3586,7 +3586,7 @@ dmj-Nova-Cr2-Dst-I { ; outside = real: closest z[n] to ring at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3607,7 +3607,7 @@ dmj-Nova-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3626,7 +3626,7 @@ dmj-Nova-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3647,7 +3647,7 @@ dmj-Nova-Cr2-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3666,7 +3666,7 @@ dmj-Nova-Cr2-Ang-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3687,7 +3687,7 @@ dmj-Nova-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3706,7 +3706,7 @@ dmj-Nova-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3727,7 +3727,7 @@ dmj-Nova-Cr2-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3746,7 +3746,7 @@ dmj-Nova-Cr2-Dec-I { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3766,7 +3766,7 @@ dmj-Nova-Cr2-Itr { ; outside = real: n of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3785,7 +3785,7 @@ dmj-Nova-Cr2-Itr { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3805,7 +3805,7 @@ dmj-Nova-Cr2-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3824,7 +3824,7 @@ dmj-Nova-Cr2-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3843,7 +3843,7 @@ dmj-Nova-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3865,7 +3865,7 @@ dmj-Nova-Pls-Dst { ; outside = real: closest z[n] to cross at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3884,7 +3884,7 @@ dmj-Nova-Pls-Dst-I { ; outside = real: closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3906,7 +3906,7 @@ dmj-Nova-Pls-Dst-I { ; outside = real: closest z[n] to cross at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3926,7 +3926,7 @@ dmj-Nova-Pls-Ang { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3948,7 +3948,7 @@ dmj-Nova-Pls-Ang { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -3968,7 +3968,7 @@ dmj-Nova-Pls-Ang-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -3990,7 +3990,7 @@ dmj-Nova-Pls-Ang-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4010,7 +4010,7 @@ dmj-Nova-Pls-Dec { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4032,7 +4032,7 @@ dmj-Nova-Pls-Dec { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4052,7 +4052,7 @@ dmj-Nova-Pls-Dec-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4074,7 +4074,7 @@ dmj-Nova-Pls-Dec-I { ; outside = decomp: angle of closest z[n] to cross at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4093,7 +4093,7 @@ dmj-Nova-Pls-Itr { ; outside = real: n of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4115,7 +4115,7 @@ dmj-Nova-Pls-Itr { ; outside = real: n of closest z[n] to cross at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4134,7 +4134,7 @@ dmj-Nova-Pls-Itr-I { ; outside = real: n of closest z[n] to cross at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4156,7 +4156,7 @@ dmj-Nova-Pls-Itr-I { ; outside = real: n of closest z[n] to cross at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4175,7 +4175,7 @@ dmj-Nova-Rct-Dst { ; outside = real: closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4197,7 +4197,7 @@ dmj-Nova-Rct-Dst { ; outside = real: closest z[n] to rectangle at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4216,7 +4216,7 @@ dmj-Nova-Rct-Dst-I { ; outside = real: closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4238,7 +4238,7 @@ dmj-Nova-Rct-Dst-I { ; outside = real: closest z[n] to rectangle at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4258,7 +4258,7 @@ dmj-Nova-Rct-Ang { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4280,7 +4280,7 @@ dmj-Nova-Rct-Ang { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4300,7 +4300,7 @@ dmj-Nova-Rct-Ang-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4322,7 +4322,7 @@ dmj-Nova-Rct-Ang-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4342,7 +4342,7 @@ dmj-Nova-Rct-Dec { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4364,7 +4364,7 @@ dmj-Nova-Rct-Dec { ; outside = decomp: angle of closest z[n] to rectangle at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4384,7 +4384,7 @@ dmj-Nova-Rct-Dec-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4406,7 +4406,7 @@ dmj-Nova-Rct-Dec-I { ; outside = decomp: angle of closest z[n] to rectangle at p
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4425,7 +4425,7 @@ dmj-Nova-Rct-Itr { ; outside = real: n of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4447,7 +4447,7 @@ dmj-Nova-Rct-Itr { ; outside = real: n of closest z[n] to rectangle at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4466,7 +4466,7 @@ dmj-Nova-Rct-Itr-I { ; outside = real: n of closest z[n] to rectangle at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4488,7 +4488,7 @@ dmj-Nova-Rct-Itr-I { ; outside = real: n of closest z[n] to rectangle at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4506,7 +4506,7 @@ dmj-Nova-Spi-Dst { ; outside = real: closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4527,7 +4527,7 @@ dmj-Nova-Spi-Dst { ; outside = real: closest z[n] to spiral at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4545,7 +4545,7 @@ dmj-Nova-Spi-Dst-I { ; outside = real: closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4566,7 +4566,7 @@ dmj-Nova-Spi-Dst-I { ; outside = real: closest z[n] to spiral at p1
 	  z = closest * real(p3) - done	; Return color in real part of z.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4585,7 +4585,7 @@ dmj-Nova-Spi-Ang { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4606,7 +4606,7 @@ dmj-Nova-Spi-Ang { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4625,7 +4625,7 @@ dmj-Nova-Spi-Ang-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4646,7 +4646,7 @@ dmj-Nova-Spi-Ang-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4665,7 +4665,7 @@ dmj-Nova-Spi-Dec { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4686,7 +4686,7 @@ dmj-Nova-Spi-Dec { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4705,7 +4705,7 @@ dmj-Nova-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4726,7 +4726,7 @@ dmj-Nova-Spi-Dec-I { ; outside = decomp: angle of closest z[n] to spiral at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4744,7 +4744,7 @@ dmj-Nova-Spi-Itr { ; outside = real: n of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4765,7 +4765,7 @@ dmj-Nova-Spi-Itr { ; outside = real: n of closest z[n] to spiral at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -4783,7 +4783,7 @@ dmj-Nova-Spi-Itr-I { ; outside = real: n of closest z[n] to spiral at p1
 	closest = 1e+38			; Closest approach so far.
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -4804,6 +4804,6 @@ dmj-Nova-Spi-Itr-I { ; outside = real: n of closest z[n] to spiral at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }

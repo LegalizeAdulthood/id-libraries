@@ -68,9 +68,9 @@ fdim2_jul {; Kerry Mitchell 26sep98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 fdim2_man {; Kerry Mitchell 26sep98
-        ; Kerry Mitchell's explanation of Fractal Dimension Coloring 
+        ; Kerry Mitchell's explanation of Fractal Dimension Coloring
         ;  is at the end of this formula
         ;
         ; real(p1) = coloring speed
@@ -179,4 +179,4 @@ fdim2_man {; Kerry Mitchell 26sep98
 ; this method.
   ;SOURCE: 98msg.frm
 }
- 
+

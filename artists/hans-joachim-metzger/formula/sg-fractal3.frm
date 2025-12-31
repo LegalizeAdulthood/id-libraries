@@ -1,6 +1,6 @@
 Fractint-9-29 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = fn1(log(pixel-0.025)) 
+               ; requires 'periodicity=0'
+  z = fn1(log(pixel-0.025))
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -17,16 +17,16 @@ Fractint-9-29 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/fn2((pixel+(0.0,.75))*Samba) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -43,17 +43,17 @@ Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = atanh(sqr(log(1+fn1(sqr(0.0,-0.65))\
        /fn2(sqr(log(pixel)))+fn3(cos(sin(0.0,.75)))*fn4(sqrt(Samba))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -70,16 +70,16 @@ Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = atanh(sqr(log(1+fn1(sqr(0.0,-0.65))\
        /fn2(sqr(log(pixel)))+fn3(cos(sin(0.0,.75)))*fn4(sqrt(Samba))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-40 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -94,15 +94,15 @@ Fractint-9-40 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(1+(0.0,-0.65)/fn3(fn4(pixel+(0.0,.75))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-41 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -117,15 +117,15 @@ Fractint-9-41 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(fn4(1+(fn3(0.0,-0.65)/(pixel+(0.0,.75)))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -140,15 +140,15 @@ Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(1+(0.0,-0.65)/fn3(fn4(fn2(pixel+fn1(0.0,.75)))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -163,10 +163,10 @@ Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(1+(0.0,-0.65)/fn3(fn4(fn2(pixel+fn1(0.0,.75)))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+

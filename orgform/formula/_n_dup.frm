@@ -3,7 +3,7 @@
 N11 (xyaxis) {
   z=pixel:
   z=1/cosh(1/(z*pixel))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -11,7 +11,7 @@ N11 (xyaxis) {
 N12 (xyaxis) {
   z=pixel:
   z=1/cosh(1/(z*pixel))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -19,7 +19,7 @@ N12 (xyaxis) {
 N16 (xaxis) {
   z=pixel:
   z=(sin(z*z*sin(1/(z*z))))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -27,7 +27,7 @@ N16 (xaxis) {
 N2_1 (xaxis) {
   z=pixel:
   z=sin(sinh(z*pixel))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -35,7 +35,7 @@ N2_1 (xaxis) {
 N2_2 (xaxis) {
   z=pixel:
   z=sin(sinh(z*pixel))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -43,7 +43,7 @@ N2_2 (xaxis) {
 N3 (xyaxis) {
   z=pixel:
   z=1/sin(1/((z^z)*pixel))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -51,7 +51,7 @@ N3 (xyaxis) {
 N3_1 (xyaxis) {
   z=pixel:
   z=1/sin(1/((z^z)*pixel)) + pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -59,7 +59,7 @@ N3_1 (xyaxis) {
 N3_2 (xyaxis) {
   z=pixel:
   z=1/sin(1/((z^z)*pixel)) * pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -67,7 +67,7 @@ N3_2 (xyaxis) {
 N4 (xaxis) {
   z=pixel:
   z=(1/sin(1/(z*pixel)))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -75,7 +75,7 @@ N4 (xaxis) {
 N5 (xaxis) {
   z=pixel:
   z=(1/sin(1/(z*pixel)))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -83,7 +83,7 @@ N5 (xaxis) {
 N6 (xyaxis) {
   z=pixel:
   z=(1/cos(1/(z*z)))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -91,7 +91,7 @@ N6 (xyaxis) {
 N7 (xyaxis) {
   z=pixel:
   z=(1/cos(1/(z*pixel)))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -99,7 +99,7 @@ N7 (xyaxis) {
 N8 (xaxis) {
   z=pixel:
   z=1/sinh(1/(z*pixel))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -107,7 +107,7 @@ N8 (xaxis) {
 N9 (xyaxis) {
   z=pixel:
   z=1/sinh(1/(z*pixel))+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -115,7 +115,7 @@ N9 (xyaxis) {
 N_n (xyaxis) {
   z=pixel:
   z=(1/sin(1/((z^n)*pixel)))
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
@@ -123,13 +123,13 @@ N_n (xyaxis) {
 N_n1 (xyaxis) {
   z=pixel:
   z=(1/sin(1/((z^n)*pixel)))*pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 
 
 Natura {; Michael Theroux [71673,2767]
-        ; Fix and generalization by  Ron Barnett [70153,1233]   
+        ; Fix and generalization by  Ron Barnett [70153,1233]
         ; phi yoni
         ; try p1 = 2.236067977 for the golden mean
   z = pixel:
@@ -177,7 +177,7 @@ NewtonSinExp (XAXIS) {; Chris Green
 No_name (xaxis) {
   z=pixel:
   z+z*z+(1/z*z)+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: formtype.frm
 }
 

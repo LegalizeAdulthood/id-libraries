@@ -12,7 +12,7 @@ multifrac23 {
   endif
   |z| > (x2*y2)
   }
- 
+
 multifrac23 {
   z = pixel:
   y2 = y*y
@@ -27,4 +27,4 @@ multifrac23 {
   endif
   |z| > (x2*y2)
   }
- 
+

@@ -16,7 +16,7 @@ Nova {; P1 is a parameter to do strange things to
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 Nova4 {; P1 is a parameter to do strange things to
        ; the formula. 0 gives the usual Newton for
        ; fourth root of 1. p2 is an inverse bailout,
@@ -36,7 +36,7 @@ Nova4 {; P1 is a parameter to do strange things to
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 Nova4M {; Mandelbrot-like set for Nova4.
         ; P2 is an inverse bailout,
         ; set this to a small nonzero value and use
@@ -55,7 +55,7 @@ Nova4M {; Mandelbrot-like set for Nova4.
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 Nova5M {; Mandelbrot-like set for Nova5.
         ; P2 is an inverse bailout,
         ; set this to a small nonzero value and use
@@ -76,14 +76,14 @@ Nova5M {; Mandelbrot-like set for Nova5.
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 NovaM {; Mandelbrot-like set for Nova.
        ; P2 is an inverse bailout,
        ; set this to a small nonzero value and use
        ; floating point. E.g. 0.0000001.
        ; The Nova Formulae, discovered by PGD.
        ; Freely distributable but may not be sold.
-  z=1  
+  z=1
   c=pixel:
   z2=z*z
   z3=z*z2
@@ -94,7 +94,7 @@ NovaM {; Mandelbrot-like set for Nova.
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+
 NovenaM {; Mandelbrot-like set for Novena.
          ; P2 is an inverse bailout,
          ; set this to a small nonzero value and use
@@ -112,4 +112,4 @@ NovenaM {; Mandelbrot-like set for Novena.
   |oz-z|>p2
   ;SOURCE: nova.frm
 }
- 
+

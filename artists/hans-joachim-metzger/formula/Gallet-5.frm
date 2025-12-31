@@ -20,7 +20,7 @@ Gallet-5-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-02 {; Sylvie Gallet [101324,3444], 1996
   sq3 = sqrt(3), sq32 = 0.5*sq3, l = real(p1), h = l*sq32, l3 = 3*l
   h2 = 2*h, h3 = 3*h, h4 = h2 + h2, l15 = 0.5*l3
@@ -44,7 +44,7 @@ Gallet-5-02 {; Sylvie Gallet [101324,3444], 1996
     |n| >= 0.000001
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-02 {; Sylvie Gallet [101324,3444], 1996
   sq3 = sqrt(3), sq32 = 0.5*sq3, l = real(p1), h = l*sq32, l3 = 3*l
   h2 = 2*h, h3 = 3*h, h4 = h2 + h2, l15 = 0.5*l3
@@ -68,7 +68,7 @@ Gallet-5-02 {; Sylvie Gallet [101324,3444], 1996
     |n| >= 0.000001
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-03 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x*x + p1*fn1((y) + fn2(p2*y))
@@ -78,7 +78,7 @@ Gallet-5-03 {; Sylvie Gallet [101324,3444], 1996
     |z| <= p3
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-04 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z)
   rp1 = real(p1), ip1 = imag(p1) :
@@ -91,7 +91,7 @@ Gallet-5-04 {; Sylvie Gallet [101324,3444], 1996
     |fx| > p2 || |fy| > p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z, y = conj(z) :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -100,7 +100,7 @@ Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) >= p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-06 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z, y = flip(z) :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -109,7 +109,7 @@ Gallet-5-06 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) <= p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-07 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z*(0,1), y = z*(0,-1) :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -118,7 +118,7 @@ Gallet-5-07 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) <= p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-07 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z*(0,1), y = z*(0,-1) :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -127,7 +127,7 @@ Gallet-5-07 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) <= p2
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) + fn3(p3*y))
@@ -137,7 +137,7 @@ Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = real(z), y = imag(z) :
    x1 = x - p1*fn1(y + fn2(p2*x) + fn3(p3*y))
@@ -147,7 +147,7 @@ Gallet-5-08 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 32
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-09 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   z = pixel * (whitesq - 0.5*(whitesq == 0 )) :
@@ -158,7 +158,7 @@ Gallet-5-09 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 64
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-10 {; Sylvie Gallet [101324,3444], 1996
   z = pixel :
    x = real(z), y = imag(z)
@@ -168,7 +168,7 @@ Gallet-5-10 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 64
   ;SOURCE: gallet-5.frm
 }
- 
+
 Gallet-5-11 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = z*(0.5), y = -z :
    hx = p1*fn1(x), hy = p1*fn2(y)
@@ -177,4 +177,4 @@ Gallet-5-11 {; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) <= p2
   ;SOURCE: gallet-5.frm
 }
- 
+

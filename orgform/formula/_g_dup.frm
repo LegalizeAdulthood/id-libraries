@@ -1,7 +1,7 @@
 
 
 Gamma (XAXIS) {; Jm Richard-Collard
-               ; try p1 = 6.2   
+               ; try p1 = 6.2
                ; note that p1 above is two times pi
   z = pixel:
   z = (p1*z)^(0.5)*(z^z)*exp(-z)+pixel
@@ -26,9 +26,9 @@ GLYNN (XAXIS) {; Based on an illustration in Science PROBE!  and a
                ; formula by Earl Glynn in Computers and the Imagination,
                ; by Clifford Pickover.   Try p1 = 1.5, p2 = -0.2
                ; Jon Horner, FRAC'Cetera
-  z = pixel : 
-  z = z ^ p1 - p2 
-  |z| <=4 
+  z = pixel :
+  z = z ^ p1 - p2
+  |z| <=4
   ;SOURCE: glynn.frm
 }
 

@@ -85,7 +85,7 @@
   bailout == 0  && |w| < 1000
   ;SOURCE: 97msg.frm
 }
- 
+
 3D_Balls_Mset (ORIGIN) {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -176,7 +176,7 @@
   bailout == 0  && |w| < 1000
   ;SOURCE: 97msg.frm
 }
- 
+
 3D_Phoenix_Spirals {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -256,7 +256,7 @@
   bailout == 0
   ;SOURCE: 97msg.frm
 }
- 
+
 3DStalks_Julia (ORIGIN) {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -344,7 +344,7 @@
   bailout == 0  && |w| < imag(p2)
   ;SOURCE: 97msg.frm
 }
- 
+
 3DStalks_Pokorny {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = Julia set coordinates
     ;   real(p2) = a factor controlling the width of the stalks
@@ -380,7 +380,7 @@
   bailout == 0  && |w| < imag(p2)
   ;SOURCE: 98msg.frm
 }
- 
+
 Astroid_Mset  {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -468,7 +468,7 @@ Astroid_Mset  {; Copyright (c) Paul W. Carlson, 1997
     bailout == 0  && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Bubbles_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = if both real(p1) and imag(p1) are zero
     ;              do Mset, otherwise do Julia set.
@@ -517,7 +517,7 @@ Bubbles_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < max_w
   ;SOURCE: 98msg.frm
 }
- 
+
 Carr2821b {; Modified Sylvie Gallet frm. [101324,3444],1996
            ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
            ; Optimized by Sylvie Gallet, April 1997
@@ -539,7 +539,7 @@ Carr2821b {; Modified Sylvie Gallet frm. [101324,3444],1996
   r <= bailout
   ;SOURCE: phctopng.frm
 }
- 
+
 Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = 0 if Mset, otherwise Julia set
     ; imag(p1) = maximum value of ratio (try 0.01 to 0.3)
@@ -577,7 +577,7 @@ Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Celtic_Julia {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -622,7 +622,7 @@ Celtic_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 CnFrc_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls size of elements (1 to 32)
     ; imag(p1)   not used
@@ -632,7 +632,7 @@ CnFrc_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; imag(p2) = number of colors in a range
       ; Modified continued fraction formula
       ; This formula uses the Mandelbrot set equation in a modified
-      ; continued fraction, rendered with the Atan method. 
+      ; continued fraction, rendered with the Atan method.
   w = z = iter = range_num = bailout = 0
   c = pixel
   num_ranges = real(p3)
@@ -657,7 +657,7 @@ CnFrc_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Cosh_Atan_Mset {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -728,7 +728,7 @@ Cosh_Atan_Mset {; Copyright (c) Paul W. Carlson, 1997
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Cosh_Rings_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;   real(p1) = a factor controlling the width of the rings
     ;   imag(p1)   not used
@@ -745,7 +745,7 @@ Cosh_Rings_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < p2
   ;SOURCE: 98msg.frm
 }
- 
+
 CoszzcM {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls size of elements
     ; imag(p1)   not used
@@ -776,7 +776,7 @@ CoszzcM {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 CSin_Atan_Julia {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -817,7 +817,7 @@ CSin_Atan_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: carlson.par
 }
- 
+
 Db2_Expos_Newt1 {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -870,7 +870,7 @@ Db2_Expos_Newt1 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p2)
   ;SOURCE: 98msg.frm
 }
- 
+
 Dbl_Exp_Newt1_J {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -933,7 +933,7 @@ Dbl_Exp_Newt1_J {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Dbl_Expos_Newt1 {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -991,7 +991,7 @@ Dbl_Expos_Newt1 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p2)
   ;SOURCE: 98msg.frm
 }
- 
+
 Dbl_Expos_Newt2 {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -1049,7 +1049,7 @@ Dbl_Expos_Newt2 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p2)
   ;SOURCE: 98msg.frm
 }
- 
+
 devil {; Copyright (c) Paul W. Carlson, 1998
        ; Based on one of Noel Giffin's formulas
   w = pixel
@@ -1069,7 +1069,7 @@ devil {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Eqn6_R4 {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = size factor
     ; imag(p1) = number of iterations to skip
@@ -1104,7 +1104,7 @@ Eqn6_R4 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Eqn_5 {; Copyright (c) Paul W. Carlson, 1998
     ; Always use float=y, outside=summ
     ;
@@ -1146,7 +1146,7 @@ Eqn_5 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Euler2_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; real(p3) = escape circle radius squared
     ; imag(p3) = number of iterations to skip
@@ -1180,7 +1180,7 @@ Euler2_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= rad2
   ;SOURCE: 98msg.frm
 }
- 
+
 Euler_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; real(p3) = escape circle radius squared
     ; imag(p3) = number of iterations to skip
@@ -1214,7 +1214,7 @@ Euler_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= rad2
   ;SOURCE: 98msg.frm
 }
- 
+
 fastmand {; Copyright (c) Paul W. Carlson, 1997
     ; This formula performs NO iterations if the point is
     ; in the large cardoid (the "lake") or the large
@@ -1265,7 +1265,7 @@ fastmand {; Copyright (c) Paul W. Carlson, 1997
     (bailout == 0) && |z| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 FB_EqnMoP {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1308,7 +1308,7 @@ FB_EqnMoP {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 FB_Halley_M4 {; Copyright (c) Paul W. Carlson, 1998
     ; Halley solution of w^4 - w - c = 0
     ; Always use float=y, outside=summ
@@ -1357,7 +1357,7 @@ FB_Halley_M4 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 FB_Halley_M42 {; Copyright (c) Paul W. Carlson, 1998
     ; Always use float=y, outside=summ
     ; p1 = relaxation factor
@@ -1405,7 +1405,7 @@ FB_Halley_M42 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 FB_Popcorn {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = h in popcorn formula
     ; imag(p1) = bailout value
@@ -1456,7 +1456,7 @@ FB_Popcorn {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p1)
   ;SOURCE: 98msg.frm
 }
- 
+
 Flex_Newt1_Mand {; Copyright (c) Paul Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1506,7 +1506,7 @@ Flex_Newt1_Mand {; Copyright (c) Paul Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Flex_Newt2_Mand {; Copyright (c) Paul Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1556,7 +1556,7 @@ Flex_Newt2_Mand {; Copyright (c) Paul Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_Cosh {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1598,7 +1598,7 @@ FlexBalls_Cosh {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_Cosww {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1640,7 +1640,7 @@ FlexBalls_Cosww {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_Mand {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1682,7 +1682,7 @@ FlexBalls_Mand {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_Mand {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1724,7 +1724,7 @@ FlexBalls_Mand {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_Pky {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p1) = radius of center of ring (0.01 to 10)
@@ -1770,7 +1770,7 @@ FlexBalls_Pky {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 FlexBalls_R4 {; Copyright (c) Paul W. Carlson, 1998
     ; p1 = radius of center of ring (0.01 to 10)
     ; p2 = one half thickness of ring (0.01 to p1)
@@ -1812,7 +1812,7 @@ FlexBalls_R4 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Fnww_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) controls elements size (usually 2 to 16))
     ; imag(p1) not used
@@ -1841,7 +1841,7 @@ Fnww_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && m < 100
   ;SOURCE: 98msg.frm
 }
- 
+
 Formulization {; Copyright (c) Paul W. Carlson, 1998
   z = w = iter = range_num = bailout = 0
   c = pixel
@@ -1870,7 +1870,7 @@ Formulization {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && m < 100
   ;SOURCE: 98msg.frm
 }
- 
+
 Four_Julias {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = size factor, upper left  quadrant
@@ -1879,9 +1879,9 @@ Four_Julias {; Copyright (c) Paul W. Carlson, 1998
     ; imag(p3) = size factor, lower right quadrant
     ;
     ; There are several things you CAN'T do with
-    ; the image, including: zooming in, rotating, moving it in 
-    ; any direction, and in general, anything that changes the 
-    ; location of any part of the image on the screen.  
+    ; the image, including: zooming in, rotating, moving it in
+    ; any direction, and in general, anything that changes the
+    ; location of any part of the image on the screen.
   c = p1
   z = bailout = iter = range_num = 0
   px = real(scrnpix), py = imag(scrnpix)
@@ -1965,7 +1965,7 @@ Four_Julias {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Four_Julias_Z {; Copyright (c) Paul W. Carlson, 1998
                ; Zooming added by Sylvie Gallet, 6/7/98
     ; p1       = Julia set coordinates
@@ -2065,7 +2065,7 @@ Four_Julias_Z {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Halley4_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   real(p1) = exponent of z (use integers, 4 thru 9)
@@ -2108,7 +2108,7 @@ Halley4_Mset {; Copyright (c) Paul W. Carlson, 1998
   |k| > 0.00000001
   ;SOURCE: 98msg.frm
 }
- 
+
 Halley7_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; Alyways use float=y, outdide=summ
     ; real(p1) = escape circle radius squared
@@ -2146,7 +2146,7 @@ Halley7_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e10
   ;SOURCE: 98msg.frm
 }
- 
+
 HyCycl_Julia {; Copyright (c) Paul W. Carlson, 1998
   z = w = iter = range_num = bailout = 0
   w = pixel
@@ -2176,7 +2176,7 @@ HyCycl_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 10000
   ;SOURCE: 98msg.frm
 }
- 
+
 Ibubs_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = if both real(p1) and imag(p1) are zero
     ;              do Mset, otherwise do Julia set.
@@ -2228,7 +2228,7 @@ Ibubs_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < max_w
   ;SOURCE: 98msg.frm
 }
- 
+
 Inv_Newtzz_Jul {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   p1 = Julia set coordinates
@@ -2264,7 +2264,7 @@ Inv_Newtzz_Jul {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| > 1.0e-10
   ;SOURCE: 98msg.frm
 }
- 
+
 Julia_Ellipse {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = ellipse real axis
@@ -2298,7 +2298,7 @@ Julia_Ellipse {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Lam_Fnc_3Way {; Copyright (c) Paul W. Carlson, 1998
     ;
     ; real(p1) = escape circle radius squared
@@ -2338,7 +2338,7 @@ Lam_Fnc_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= p2
   ;SOURCE: 98msg.frm
 }
- 
+
 Log_Ser_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = escape circle radius squared
     ; imag(p1) = number of iterations to skip
@@ -2374,7 +2374,7 @@ Log_Ser_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 LorentzM_FB {; Copyright (c) Paul W. Carlson, 1998
     ; keep p1 between 0 and 1, <0.7 is best, negative values mirror
     ; Re(p1)=Im(p1) -> 0 converges to standard Mandel rotated by 90
@@ -2424,7 +2424,7 @@ LorentzM_FB {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < test
   ;SOURCE: 98msg.frm
 }
- 
+
 Mag1_J2 {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = controls size of elements
@@ -2457,7 +2457,7 @@ Mag1_J2 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Mand_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   w = z = iter = range_num = bailout = 0
   c = pixel
@@ -2481,7 +2481,7 @@ Mand_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Mand_Ellipse {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = ellipse real axis
     ; imag(p1) = ellipse imag axis
@@ -2513,7 +2513,7 @@ Mand_Ellipse {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Mandel_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; Alyways use float=y, outdide=summ
     ; real(p1) = escape circle radius squared
@@ -2549,7 +2549,7 @@ Mandel_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= rad2
   ;SOURCE: 98msg.frm
 }
- 
+
 Mandel_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; Alyways use float=y, outdide=summ
     ; real(p1) = escape circle radius squared
@@ -2585,7 +2585,7 @@ Mandel_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= rad2
   ;SOURCE: 98msg.frm
 }
- 
+
 Mandel_Segs {; Copyright (c) Paul W. Carlson, 1998
     ;   real(p1) = stalk segment width factor
     ;   imag(p1) = stalk segment length factor
@@ -2625,7 +2625,7 @@ Mandel_Segs {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   real(p1) = controls the size of the squares (0.1 to 0.8)
@@ -2673,7 +2673,7 @@ Mandel_Squares {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Mutant_demo {; Oliver Klimek's TripleMutant formula
              ; as modified by Paul Carlson, 1998
     ; real(p1) = iteration count
@@ -2681,8 +2681,8 @@ Mutant_demo {; Oliver Klimek's TripleMutant formula
   w = z = bailout = iter = 0
   c = pixel
   pt1 = (2.5,2.5), pt2 = (-2.5,2.5), pt3 = (2.5,-2.5)
-  a1 = 1 / (|(pixel - pt1)|^2)    
-  a2 = 1 / (|(pixel - pt2)|^2)    
+  a1 = 1 / (|(pixel - pt1)|^2)
+  a2 = 1 / (|(pixel - pt2)|^2)
   a3 = 1 / (|(pixel - pt3)|^2)
   :
     ; find contribution of each function
@@ -2734,13 +2734,13 @@ Mutant_demo {; Oliver Klimek's TripleMutant formula
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Mutant_End {; Oliver Klimek's TripleMutant formula
             ; as modified by Paul Carlson, 1998
   w = z = bailout = iter = 0
   c = pixel
-  a1 = 1 / (|(pixel - p1)|^2)    
-  a2 = 1 / (|(pixel - p2)|^2)    
+  a1 = 1 / (|(pixel - p1)|^2)
+  a2 = 1 / (|(pixel - p2)|^2)
   a3 = 1 / (|(pixel - p3)|^2)
   :
     ; find contribution of each function
@@ -2790,13 +2790,13 @@ Mutant_End {; Oliver Klimek's TripleMutant formula
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Mutant_Start {; Oliver Klimek's TripleMutant formula
               ; as modified by Paul Carlson, 1998
   w = z = bailout = iter = 0
   c = pixel
-  a1 = 1 / (|(pixel - p1)|^2)    
-  a2 = 1 / (|(pixel - p2)|^2)    
+  a1 = 1 / (|(pixel - p1)|^2)
+  a2 = 1 / (|(pixel - p2)|^2)
   a3 = 1 / (|(pixel - p3)|^2)
     ;
     ; find contribution of each function
@@ -2846,7 +2846,7 @@ Mutant_Start {; Oliver Klimek's TripleMutant formula
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 MyEqn_Fnc_Jul {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = a factor controlling the size of the elements
@@ -2882,7 +2882,7 @@ MyEqn_Fnc_Jul {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 MyEqn_Julia {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = selects rendering method
@@ -2954,7 +2954,7 @@ MyEqn_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 97msg.frm
 }
- 
+
 Newt1_Rings_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Newton's solution of (w*w-1)*(w*w+c)=0
@@ -3018,7 +3018,7 @@ Newt1_Rings_Mset {; Copyright (c) Paul W. Carlson, 1998
   (bailout == 0) && |w| < real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt1_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -3062,7 +3062,7 @@ Newt1_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt1_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -3106,7 +3106,7 @@ Newt1_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt2_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
   c = pixel
   csqd = c * c
@@ -3159,7 +3159,7 @@ Newt2_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
   (bailout == 0) && |w| < real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt3_Atan_J {; Copyright (c) Paul Carlson, 1998
     ;
     ; p1 = max. |w - root| for early bailout
@@ -3195,7 +3195,7 @@ Newt3_Atan_J {; Copyright (c) Paul Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt3_Atan_Mset {; Original formula by Paul Carlson
                  ; with optimizations by Sylvie Gallet
     ; F(w)   = w^3 + (c - 1) * w - c
@@ -3245,7 +3245,7 @@ Newt3_Atan_Mset {; Original formula by Paul Carlson
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt5_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; F(w)   = w^5 - w^4 - w * c^2 + c^2
     ; F'(w)  = 5 * w^4 - 4 * w^3 - c^2
@@ -3298,7 +3298,7 @@ Newt5_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt5_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   real(p1) = a factor controlling the size of the stalks
@@ -3342,7 +3342,7 @@ Newt5_Stalks_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls element size try 0.01 to 2.0
     ; imag(p1)   not used
@@ -3395,7 +3395,7 @@ Newt7_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 10000000
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls element size try 0.5 to 16
     ; imag(p1)   not used
@@ -3435,7 +3435,7 @@ Newt_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 10000000
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt_Fnc_Julia {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = controls element size
@@ -3468,7 +3468,7 @@ Newt_Fnc_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Newt_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = controls element size
     ; imag(p1)   not used
@@ -3501,7 +3501,7 @@ Newt_Fnc_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Newton_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; Newton's method solution of w^k - 1 = 0
     ; Always use float=y, outside=summ
@@ -3539,7 +3539,7 @@ Newton_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 ORing_Series_Mset {; Copyright (c) Paul Carlson, 1998
     ; real(p1) = radius of large circle
     ; imag(p1) = number of iterations to skip
@@ -3589,7 +3589,7 @@ ORing_Series_Mset {; Copyright (c) Paul Carlson, 1998
   dist == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 ORing_Series_Mset {; Copyright (c) Paul Carlson, 1998
     ; real(p1) = radius of large circle
     ; imag(p1) = number of iterations to skip
@@ -3639,7 +3639,7 @@ ORing_Series_Mset {; Copyright (c) Paul Carlson, 1998
   dist == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 pc_popcorn_jul {; Copyright (c) Paul W. Carlson, 1998
     ; Always use float=yes
     ;
@@ -3677,7 +3677,7 @@ pc_popcorn_jul {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < imag(p1)
   ;SOURCE: 98msg.frm
 }
- 
+
 pc_series {; Carlson Series Formula
            ; Copyright (c) Paul W. Carlson, 1997
            ; Use float=y
@@ -3692,7 +3692,7 @@ pc_series {; Carlson Series Formula
   |z| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Petals_Barnsley1 {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = coordinates of the Julia set
     ;   real(p2) = radius of the circles - this controls
@@ -3744,7 +3744,7 @@ Petals_Barnsley1 {; Copyright (c) Paul W. Carlson, 1998
   d == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Petals_Barnsley1 {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = coordinates of the Julia set
     ;   real(p2) = radius of the circles - this controls
@@ -3796,7 +3796,7 @@ Petals_Barnsley1 {; Copyright (c) Paul W. Carlson, 1998
   d == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Petals_Julia {; Paul Carlson
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -3854,7 +3854,7 @@ Petals_Julia {; Paul Carlson
     d == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Petals_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -3928,7 +3928,7 @@ Petals_Mset {; Copyright (c) Paul W. Carlson, 1998
     d == 0 && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Phoenix_Atan {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   p1       = coordinates of the Julia set
@@ -3965,7 +3965,7 @@ Phoenix_Atan {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Phoenix_Function {; Copyright (c) Paul W. Carlson, 1998
     ;   p1       = coordinates of the Julia set
     ;   real(p2) = width factor
@@ -4003,7 +4003,7 @@ Phoenix_Function {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 100
   ;SOURCE: 98msg.frm
 }
- 
+
 PokornyConesJulia {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -4077,7 +4077,7 @@ PokornyConesJulia {; Copyright (c) Paul W. Carlson, 1997
     bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Popcorn_3Way {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = h in popcorn formula
     ; imag(p1) = bailout value
@@ -4121,7 +4121,7 @@ Popcorn_3Way {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| <= imag(p1)
   ;SOURCE: 98msg.frm
 }
- 
+
 popcorn_balls {; Copyright (c) Paul W. Carlson, 1998
     ; Always use float=y, outside=summ
     ; real(p1) = h in popcorn formula
@@ -4161,7 +4161,7 @@ popcorn_balls {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 popcorn_jul {; Paul Carlson, 1998
     ; Always use float=yes
     ;
@@ -4179,7 +4179,7 @@ popcorn_jul {; Paul Carlson, 1998
   |z| <= imag(p1)
   ;SOURCE: 98msg.frm
 }
- 
+
 Popcorn_R4 {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = h in popcorn formula
     ; imag(p1) = bailout value
@@ -4222,7 +4222,7 @@ Popcorn_R4 {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < imag(p1)
   ;SOURCE: 98msg.frm
 }
- 
+
 R4_Mand_Pok {; Copyright (c) Paul W. Carlson, 1998
     ; real(p1) = selects equation to iterate
     ;            1 = Mset of w = w * w + c (default)
@@ -4280,7 +4280,7 @@ R4_Mand_Pok {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Secant_Sin {; Copyright (c) Paul W. Carlson, 1998
     ;
     ; F(w) = sin(w) - p3
@@ -4320,7 +4320,7 @@ Secant_Sin {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Series_Balls_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;
     ; real(p1) = a factor controlling the size of the balls
@@ -4358,7 +4358,7 @@ Series_Balls_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 100
   ;SOURCE: 97msg.frm
 }
- 
+
 Shields_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   real(p1) = controls the size of the shields (0.1 to 0.8)
@@ -4402,7 +4402,7 @@ Shields_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < p3
   ;SOURCE: 98msg.frm
 }
- 
+
 Spir2_Trunc {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   p1       = Julia set coordinates
@@ -4442,7 +4442,7 @@ Spir2_Trunc {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Spir_Ang_Fnc {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   p1       = Julia set coordinates
@@ -4482,7 +4482,7 @@ Spir_Ang_Fnc {; Copyright (c) Paul W. Carlson, 1998
   (bailout == 0  && |w| < 4) || iter > real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Spir_Ang_Fnc {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   p1       = Julia set coordinates
@@ -4522,7 +4522,7 @@ Spir_Ang_Fnc {; Copyright (c) Paul W. Carlson, 1998
   (bailout == 0  && |w| < 4) || iter > real(p3)
   ;SOURCE: 98msg.frm
 }
- 
+
 Spir_Stalks_Jul {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   p1       = Julia set coordinates
@@ -4561,7 +4561,7 @@ Spir_Stalks_Jul {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Spir_Stalks_Jul {; Copyright (c) Paul W. Carlson, 1998
     ;
     ;   p1       = Julia set coordinates
@@ -4600,7 +4600,7 @@ Spir_Stalks_Jul {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 Tan_Spirals {; Copyright (c) Paul W. Carlson, 1997
   width = real(p2), ratio = 124 / width, w = pixel, z = 0
   iter = 0, toggle = -1:
@@ -4622,7 +4622,7 @@ Tan_Spirals {; Copyright (c) Paul W. Carlson, 1997
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 TBalls_Newt1_Mset {; Copyright (c) Paul W. Carlson, 1998
     ;  real(p1) = ball size factor
     ;  imag(p1) = iterations to skip
@@ -4704,7 +4704,7 @@ TBalls_Newt1_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+
 Truncated_Stalks {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -4770,7 +4770,7 @@ Truncated_Stalks {; Copyright (c) Paul W. Carlson, 1998
     ; set z to the index into the colormap and set the bailout flag.
     ;****************************************************
   IF (min_dist_to_axis < stalk_width && |w| < stalk_length && iter > 0)
-    z = index_factor * min_dist_to_axis\ 
+    z = index_factor * min_dist_to_axis\
         + range_num * colors_in_range + 1
     bailout = 1
   ENDIF
@@ -4795,7 +4795,7 @@ Truncated_Stalks {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 Two_Ellipse_Mset {; Copyright (c) Paul W. Carlson, 1998
     ; Parameters:
     ;   real(p1) = a factor controlling the width of the curves
@@ -4837,7 +4837,7 @@ Two_Ellipse_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 1000
   ;SOURCE: 98msg.frm
 }
- 
+
 TwoBallsJulia {; Copyright (c) Paul Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -4913,7 +4913,7 @@ TwoBallsJulia {; Copyright (c) Paul Carlson, 1998
   bailout == 0
   ;SOURCE: 97msg.frm
 }
- 
+
 TwoPieces {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -4970,7 +4970,7 @@ TwoPieces {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+
 Zf_Ang {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = controls size of the elements
@@ -5010,4 +5010,4 @@ Zf_Ang {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+

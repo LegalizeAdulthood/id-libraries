@@ -10,10 +10,10 @@
 ; Lines: 81
 ; Message-ID: <50ia8f$95v@krypto.zippo.com>
 ; X-Newsreader: Forte Free Agent 1.0.82
-; 
+;
 ; Here are some spirals to show my appreciation for the Masters: Paul,
 ; Linda and Phil.  Thanks for the great pics!
-; 
+;
 ; For those of you who use Fractint, here are the codes for the .par
 ; file and
 ; .frm files for these spirals.
@@ -25,7 +25,7 @@ BillTry3   {; Bill Rossi
     z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0)),
 
     |z| <= 4
- } 
+ }
 
 BillTry4   {; Bill Rossi
     z = pixel, c=p1:
@@ -34,4 +34,4 @@ BillTry4   {; Bill Rossi
     z = fn1(z) + c,
     z = fn2(c) + z,
     |z| <= 4
- } 
+ }

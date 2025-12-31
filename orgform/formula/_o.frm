@@ -4124,7 +4124,7 @@ octet {
   temp = z
   z = z^3 + zp
   zp = p1/temp
-  (|zp| <=64) && (|z| <= huge) 
+  (|zp| <=64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -4136,13 +4136,13 @@ octo (XYAXIS) {
   temp = z
   z = z^3 + zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
 
 offset_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
@@ -4179,9 +4179,9 @@ offset_jul {
 
 
 offset_rx=ry_jul {; Kerry Mitchell 26aug98
-        ; 
-        ; See the end of the formula general_man-2circ for 
-        ;    Kerry Mitchell's explanation of the "2 circles 
+        ;
+        ; See the end of the formula general_man-2circ for
+        ;    Kerry Mitchell's explanation of the "2 circles
         ;    coloring method".
         ;
         ; "2 offset circles" coloring method for Julia sets
@@ -4266,7 +4266,7 @@ OK-05 {
 
 OK-06 {; TRY FN1 = SQR, FN2 = SQR
   z = c = pixel, d = fn1(pixel):
-  z = fn2(z / d) + c 
+  z = fn2(z / d) + c
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
@@ -4589,7 +4589,7 @@ OK-37 {; ANOTHER DISECTED MANDELBROT
 
 
 OK-38 {; DISSECTED CUBIC MANDELBROT
-       ; TO GENERATE "STANDARD" CUBIC MANDELBROT, 
+       ; TO GENERATE "STANDARD" CUBIC MANDELBROT,
        ; SET P1 = 0,0 & ALL FN = IDENT
   z = pixel,  cx = fn1(real(pixel)), cy = fn2(imag(pixel)), k = 3 + p1:
   zx = real(z), zy = imag(z)
@@ -4685,7 +4685,7 @@ OK-45 {; ANOTHER LITTLE QUICKY
 
 okJ_05 {; Perturbed Julia set
         ; Julia parameter p1 is perturbed by p2*pixel
-        ; p2=0 -> no perturbation 
+        ; p2=0 -> no perturbation
         ; p3 = bailout
   z=pixel
   c=p1+p2*pixel:
@@ -4697,7 +4697,7 @@ okJ_05 {; Perturbed Julia set
 
 okJ_06 {; Generalized perturbed Julia set
         ; Julia parameter p1 is perturbed by p2*fn1(pixel)
-        ; p2=0 -> no perturbation 
+        ; p2=0 -> no perturbation
         ; p3 = bailout
   z=pixel
   c=p1+p2*fn1(pixel):
@@ -4707,7 +4707,7 @@ okJ_06 {; Generalized perturbed Julia set
 }
 
 
-okM_01 { 
+okM_01 {
   z=0
   c=pixel:
   z=z*z*z*z/(z*z+p1)+c
@@ -4782,11 +4782,11 @@ Olio {
 }
 
 
-Olio_2 (XAXIS) { 
+Olio_2 (XAXIS) {
   z = pixel, fpix = fn1(pixel) + p1:
-  z = z + pixel 
-  z = z * fpix 
-  z = fn2(1/z) 
+  z = z + pixel
+  z = z * fpix
+  z = fn2(1/z)
   |z| < 4
   ;SOURCE: olio.frm
 }
@@ -4795,26 +4795,26 @@ Olio_2 (XAXIS) {
 Olio_3 (XAXIS) {
   z = pixel, fpix = fn1(pixel) + p1:
   z = z*z + pixel
-  z = z * fpix 
-  z = fn2(1/z) 
+  z = z * fpix
+  z = fn2(1/z)
   |z| < 4
   ;SOURCE: olio.frm
 }
 
 
-Olio_4 (XAXIS) { 
+Olio_4 (XAXIS) {
   z = c = pixel:
-  z = sin(sqr(z)) * fn1(1/c) 
-  z = sin(z) + c   
+  z = sin(sqr(z)) * fn1(1/c)
+  z = sin(z) + c
   |z| < 4
   ;SOURCE: olio.frm
 }
 
 
-Olio_4_B (XAXIS) { 
+Olio_4_B (XAXIS) {
   z = c = pixel:
-  z = sin(sqr(z)) * fn1(1/sqr(z)) 
-  z = sin(z) + c   
+  z = sin(sqr(z)) * fn1(1/sqr(z))
+  z = sin(z) + c
   |z| < 4
   ;SOURCE: olio.frm
 }
@@ -4822,7 +4822,7 @@ Olio_4_B (XAXIS) {
 
 Olio_5 (XAXIS) {
   z = pixel, sqpix = sqrt(pixel) + p1:
-  z = (1/z+z) * sqpix 
+  z = (1/z+z) * sqpix
   z = (pixel - 1/z) + fn1(z)
   |z| < 4
   ;SOURCE: olio.frm
@@ -4862,7 +4862,7 @@ Olio_6_B (XAXIS) {
 Olio_Magnet (XAXIS) {
   z = pixel :
   z = z + p1 + 0.5
-  z = z * fn1(pixel) 
+  z = z * fn1(pixel)
   z = sqr(1/z)
   |z| < 4
   ;SOURCE: olio.frm
@@ -4889,7 +4889,7 @@ OMEN (XAXIS) {
 
 OMEN_2 (XAXIS) {
   Z = PIXEL:
-  Z = FN1(Z) + P1 
+  Z = FN1(Z) + P1
   Z = (Z*Z*Z+3*Z-1*Z+Z-1*Z-2 / 2*Z*Z+3*Z-2*Z+Z*Z-3*Z+3)^2
   ;SOURCE: the_omen.frm
 }
@@ -4897,8 +4897,8 @@ OMEN_2 (XAXIS) {
 
 OMEN_3 {
   Z = PIXEL:
-  Z = COSH(Z) + (Z - PIXEL)  
-  Z = (Z*Z + P1 - 1 / 2*Z + P1 -2) 
+  Z = COSH(Z) + (Z - PIXEL)
+  Z = (Z*Z + P1 - 1 / 2*Z + P1 -2)
   Z = SQR(SIN(Z)) / SQRT(Z)
   |Z| < 4
   ;SOURCE: the_omen.frm
@@ -4919,7 +4919,7 @@ OMEN_5 {
   Z = PIXEL:
   Z = Z * Z + P1
   Z = (Z*Z+3*Z-1*Z+Z-2) - (Z*Z+3*Z-2*Z-3)^2
-  Z = FN1(Z) + (PIXEL/3)    
+  Z = FN1(Z) + (PIXEL/3)
   |Z| < 8
   ;SOURCE: the_omen.frm
 }
@@ -4929,7 +4929,7 @@ OMEN_6 {
   Z = PIXEL:
   Z = Z * SIN(PIXEL) + P1
   Z = ((Z*Z+3*Z-1*Z+Z-2) - (Z*Z+3*Z-2*Z-3))^2
-  Z = (FN1(Z) + SQRT(PIXEL) + PIXEL)    
+  Z = (FN1(Z) + SQRT(PIXEL) + PIXEL)
   |Z| < 4
   ;SOURCE: the_omen.frm
 }
@@ -4948,7 +4948,7 @@ Omicron_2 {
   z = pixel :
   z = (1/sqr(z)) * (z - sqrt(z))
   z = z * fn1(z) + pixel
-  z = (z*z*z) * pixel + p1 
+  z = (z*z*z) * pixel + p1
   |z| < 16
   ;SOURCE: omicron.frm
 }
@@ -4993,7 +4993,7 @@ Omicron_6 {
 Omicron_7 {
   z = pixel:
   z = exp(z) * (z*acosh(z)) * (sqrt(z*z) + p1)
-  z = z + pixel 
+  z = z + pixel
   |z| < 4
   ;SOURCE: omicron.frm
 }
@@ -5020,19 +5020,19 @@ One_Piece {; (c) Jay Hill, 1998
   done = 1, z = 0, zc = 0, c = pixel
   s=|c|, t1=(256*s - 96)*s + 32*Real(c), t2=16*s + 32*Real(c) + 16
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|
-  t4=|8+4*c*(1+B)| 
+  t4=|8+4*c*(1+B)|
   z=z + 2*(t1<=3) + 2*(t2<=1) + 2*(t3<=1) + 2*(t4<=1)
   IF (z == 0)
     L1=2, L2=2
     IF ((4*c+3) !=0)
-      Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3) 
+      Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3)
       X3 = asinh(-16/X^3)/3, Zz = 2*(c+1)*c + 2
-      F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)| 
-      F=X*sinh(X3 + 2*Y), L2= 64*|(c*(F+1)*F + Zz)| 
+      F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)|
+      F=X*sinh(X3 + 2*Y), L2= 64*|(c*(F+1)*F + Zz)|
       z=z + 2*(L1<=1) + 2*(L2<=1)
-    ENDIF 
+    ENDIF
   ENDIF
-  IF (z>0) 
+  IF (z>0)
     done=-1       ; color is set for c in a component, skip iterations
   ENDIF
   :               ; initialization.
@@ -5048,30 +5048,30 @@ One_Piece {; (c) Jay Hill, 1998
 One_Piece_1 {; (c) Jay Hill, 1998
              ; use outside=summ periodicity=0 float=y
   done = 1, z = 0, zc = 0, c = pixel
-  s=|c| 
-  t1=((256*s - 96)*s + 32*Real(c)+24)/27 
+  s=|c|
+  t1=((256*s - 96)*s + 32*Real(c)+24)/27
   t2=16*s + 32*Real(c) + 16
-  B=sqrt(-4*c-7) 
+  B=sqrt(-4*c-7)
   t3=|8+4*c*(1-B)|
   z=z + 128*t2*(t2<=1) +115*((t1<=1) + (t3<=1))
   IF (z == 0)
     L1=2, L2=2
     IF ((4*c+3) !=0)
-      Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3) 
+      Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3)
       X3 = asinh(-16/X^3)/3, Zz = 2*(c+1)*c + 2
-      F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)| 
-      F=X*sinh(X3 - Y), L2= 64*|(c*(F+1)*F + Zz)| 
+      F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)|
+      F=X*sinh(X3 - Y), L2= 64*|(c*(F+1)*F + Zz)|
       z=z + 115*((L1<=1) + (L2<=1))
-    ENDIF 
+    ENDIF
   ENDIF
-  IF (z>0) 
+  IF (z>0)
     done=-1     ; color is set for c in a component, skip iterations
-  ELSE 
+  ELSE
     z=z+128
   ENDIF
   :             ; initialization.
   zc=5
-  IF (zc >= 4) 
+  IF (zc >= 4)
     done=-1     ; Set flag to force an exit.
   ENDIF
   done >= 0     ; Continue if the flag >=0.
@@ -5088,16 +5088,16 @@ One_Piece_M {; (c) Jay Hill, 1998
   ELSE
     t2=4*(c+1)
     t0=(1-sqrt(1-4*c))
-    B=sqrt(-4*c-7) 
-    t3=|8+4*c*(1-B)| 
+    B=sqrt(-4*c-7)
+    t3=|8+4*c*(1-B)|
     z=z + 2*(|t0|<=1) + 2*(|t2|<=1) + 2*(t3<=1)
     IF (z == 0)
       L1=2, L2=2
       IF ((4*c+3) !=0)
-        Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3) 
+        Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3)
         X3 = asinh(-16/X^3)/3, Zz = 2*(c+1)*c + 2
-        F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)| 
-        F=X*sinh(X3 - Y), L2= 64*|(c*(F+1)*F + Zz)| 
+        F=X*sinh(X3 + Y), L1= 64*|(c*(F+1)*F + Zz)|
+        F=X*sinh(X3 - Y), L2= 64*|(c*(F+1)*F + Zz)|
         z=z + 2*(L1<=1) + 2*(L2<=1)
       ENDIF
     ENDIF
@@ -5159,7 +5159,7 @@ oof1 (XAXIS) {
 oof10 {
   z = 1/pixel
   c = pixel:
-  z = c * fn1 (z*z) 
+  z = c * fn1 (z*z)
   |z| <= p2
   ;SOURCE: kgoof10.frm
 }
@@ -5167,8 +5167,8 @@ oof10 {
 
 oof11  {
   z = y = pixel:
-  z = fn1(z) * fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) * fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kgoof11.frm
 }
@@ -5389,7 +5389,7 @@ oof8 (XYAXIS) {; Revised for Fractint v20 by G. Martin
 
 
 oof8x (XYAXIS) {; Revised for Fractint v20 by G. Martin
-                ; Added variable "newpixel". G. Martin 6/29/99  
+                ; Added variable "newpixel". G. Martin 6/29/99
   newpixel = fn1 (pixel) + fn2 (pixel)
   z = newpixel:
   z = z^(fn2(1))
@@ -5402,7 +5402,7 @@ oof8x (XYAXIS) {; Revised for Fractint v20 by G. Martin
 
 oof9 {
   z = c = pixel:
-  z = c * fn1 (z*z) 
+  z = c * fn1 (z*z)
   |z| <= p2
   ;SOURCE: kgoof9.frm
 }
@@ -5411,7 +5411,7 @@ oof9 {
 oof9x {; Added variable "newpixel". G. Martin 6/29/99
   newpixel = |pixel| + pixel + fn2 (pixel)
   z = c = newpixel:
-  z = c * fn1 (z*z) 
+  z = c * fn1 (z*z)
   |z| <= p2
   ;SOURCE: kgoof9x.frm
 }
@@ -5451,7 +5451,7 @@ oppangle_jul {
 
 
 oppl {
-  z=pixel: 
+  z=pixel:
   z=pixel+sin(pixel*z)+z*z
   |z|<=4
   ;SOURCE: test.frm
@@ -5582,7 +5582,7 @@ z=c=pixel:
 
 
 Ormandel17_m {; Copr. 1995 by Jack A. Orman
-              ; assignment "zp=" moved higher up formula                                    
+              ; assignment "zp=" moved higher up formula
   z=c=pixel:
   temp=z
   zp=sqrt(temp)
@@ -5607,7 +5607,7 @@ Ormandel17a (YAXIS) {; Copr. 1995 by Jack A. Orman - revised by Sylvie Gallet
 }
 
 
-Ormandel17m {; Copr. 1995 by Jack A. Orman 
+Ormandel17m {; Copr. 1995 by Jack A. Orman
   zp = pixel^(1/6)
   z=c=pixel :
   temp=z
@@ -5660,7 +5660,7 @@ Ormandelbrot12 {; Copr. 1995 by Jack A. Orman
   ELSE
     z = fn1(z) + z
   ENDIF
-  x<=4 
+  x<=4
   ;SOURCE: orman.frm
 }
 
@@ -5957,7 +5957,7 @@ Ormandelbrot48 {
 Ormandelbrot49 {
   z = c =pixel, d=p1:
   z = sqr(z) + C + D
-  z <= 4 
+  z <= 4
   ;SOURCE: orman3.frm
 }
 
@@ -5976,7 +5976,7 @@ OrmanDelbrot5 {; Copr. 1995 by Jack Orman
 Ormandelbrot50 {; Mandel-Julia Hybrid
   z = c =pixel, d=p1:
   z = (sqr(z) + C)*(Sqr(z) + D)
-  z <= 4 
+  z <= 4
   ;SOURCE: orman3.frm
 }
 
@@ -5984,7 +5984,7 @@ Ormandelbrot50 {; Mandel-Julia Hybrid
 Ormandelbrot51 {; Mandel-Julia Hybrid
   z = c =pixel, d=p1:
   z = (sqr(z) + C)+(Sqr(z) + D)
-  z <= 4 
+  z <= 4
   ;SOURCE: orman3.frm
 }
 
@@ -6177,7 +6177,7 @@ Outer_Cres (XAXIS_NOIMAG) {; another M-Set to Moonworld
   v = pixel
   a = log(|pixel|)-12
   c = sqr(p1)
-  d = pixel - p1: 
+  d = pixel - p1:
   u = v
   v = (u + c/u)/2 + d
   z = v - u
@@ -6191,7 +6191,7 @@ Oval2 {; Giuseppe Zito
   z=pixel, c1 = real(p1), c2 = imag(p1):
   x = real(z), y = imag(z)
   newx = -y*y - c1
-  newy = x*y + 2.*y 
+  newy = x*y + 2.*y
   z = newx + flip(newy)
   newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm

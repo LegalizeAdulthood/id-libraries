@@ -1,5 +1,5 @@
 ; FOTDv4.frm
-; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.00 - 11.Apr.01. 
+; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.00 - 11.Apr.01.
 ; This is a companion file to FOTD_v4.par
 ; Compiled by Les St Cair.
 

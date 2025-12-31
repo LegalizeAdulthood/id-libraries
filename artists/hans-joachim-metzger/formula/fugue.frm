@@ -8,7 +8,7 @@ FUGUE_01 {; 11/29/94
   |b|<=16
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_03 {; 11/29/94
   z=pixel, a=p1, b=p2:
   z=fn1(z)*(a+b)
@@ -19,7 +19,7 @@ FUGUE_03 {; 11/29/94
   |b|<=16
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_03 {; 11/29/94
   z=pixel, a=p1, b=p2:
   z=fn1(z)*(a+b)
@@ -30,7 +30,7 @@ FUGUE_03 {; 11/29/94
   |b|<=16
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_04 {; 11/29/94
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)*(a+b+c)
@@ -43,7 +43,7 @@ FUGUE_04 {; 11/29/94
   |c|<=32
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_07 {; 11/29/94
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)+(a*b*c)
@@ -64,7 +64,7 @@ FUGUE_07 {; 11/29/94
   |c|<=512
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_08 {; 11/29/94
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)*(a*b*c)
@@ -85,7 +85,7 @@ FUGUE_08 {; 11/29/94
   |z|<=512
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_09 {; 11/29/94
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)+(a*b*c)
@@ -106,7 +106,7 @@ FUGUE_09 {; 11/29/94
   |z|<=512
   ;SOURCE: vp001.frm
 }
- 
+
 FUGUE_10 {; 11/29/94
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)+(a*b*c)
@@ -127,4 +127,4 @@ FUGUE_10 {; 11/29/94
   |z|<=512
   ;SOURCE: vp001.frm
 }
- 
+

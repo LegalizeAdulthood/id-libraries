@@ -13,7 +13,7 @@ LyapunovJulia         { ; Morgan L. Owens <packrat@nznet.gen.nz>
   z1=z1*z1+c1
   cabs(z0-z1)<bailout
 }
- 
+
 LyapunovMandel        { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Thu, 25 Jul 2002 20:49:19
   narg=real(p2)
@@ -26,4 +26,4 @@ LyapunovMandel        { ; Morgan L. Owens <packrat@nznet.gen.nz>
   z1=z1*z1+c1
   cabs(z0-z1)<bailout
 }
- 
+

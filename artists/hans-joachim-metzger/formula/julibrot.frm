@@ -8,7 +8,7 @@ SliceJB-new        { ; from John R. H. Goering, July 1999
   z=z^(p3)+c
   |z| <= 9
 }
- 
+
 SliceJB-new {; from John R. H. Goering, July 1999
   pix=pixel, u=real(pix), v=imag(pix), a=pi*real(p1),
   b=pi*imag(p1), g=pi*real(p2), d=pi*imag(p2), ca=cos(a),
@@ -19,7 +19,7 @@ SliceJB-new {; from John R. H. Goering, July 1999
   z=z^(p3)+c
   |z|<=9
   }
- 
+
 SliceJB-new {
   ; by John R. H. Goering, July 1999
   pix=pixel, u=real(pix), v=imag(pix), a=pi*real(p1),
@@ -31,7 +31,7 @@ SliceJB-new {
   z=z^(p3)+c
   |z| <= 9
 }
- 
+
 SliceJB2003-PT {; from John R.H.Goering's formula
 pix=pixel, u=real(pix), v=imag(pix), a=pi*real(p1),
 b=pi*imag(p1), g=pi*real(p2), d=pi*imag(p2), ca=cos(a),
@@ -42,7 +42,7 @@ s=v*sin(a), c=p+flip(q)+p3, z=r+flip(s)+(.000216,.074279):
 z=z^2.003+c
 |z|<=9
 }
- 
+
 SliceJB2003-PT {;adapted from John Goering, July 1999
   pix=pixel, u=real(pix), v=imag(pix), a=pi*real(p1),
   b=pi*imag(p1), g=pi*real(p2), d=pi*imag(p2), ca=cos(a),
@@ -53,4 +53,4 @@ SliceJB2003-PT {;adapted from John Goering, July 1999
   z=z^2.003+c
   |z|<=9
   }
- 
+

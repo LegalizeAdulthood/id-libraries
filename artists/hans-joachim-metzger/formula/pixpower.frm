@@ -9,7 +9,7 @@ PixelPower   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z = z^s +chaw,
   |z| <= |P3|
 }
- 
+
 PixelPower   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Fri, 13 Feb 2004 06:07:18
                ; (formula) Imajinaries yield asymmetry.
@@ -21,4 +21,4 @@ PixelPower   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z = z^s +chaw,
   |z| <= |P3|
 }
- 
+

@@ -6,7 +6,7 @@ MandNewt01 {; Jim Muth
   .00005 <= |a|
   ;SOURCE: 98msg.frm
 }
- 
+
 MandNewt03 {; Jim Muth
   z=c=pixel:
   a=z^3+(c-1)*z-c
@@ -15,7 +15,7 @@ MandNewt03 {; Jim Muth
   .0001 <= |a|
   ;SOURCE: 97msg.frm
 }
- 
+
 MandNewt05 {; Jim Muth
   z=c=fn1(pixel):
   a=z^2+(c-p1)*z-c
@@ -24,7 +24,7 @@ MandNewt05 {; Jim Muth
   p3 <= |a|
   ;SOURCE: 97msg.frm
 }
- 
+
 MandNewt06 {; Jim Muth
   z=c=(pixel*p1):
   a=z^3+(c-p2)*z-c
@@ -33,7 +33,7 @@ MandNewt06 {; Jim Muth
   .000000000000000000000000000001 <= |a|
   ;SOURCE: 97msg.frm
 }
- 
+
 MandNewt10 {; Jim Muth
             ; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z=g=pixel, a=real(p1), b=imag(p1), c=real(p2)
@@ -44,7 +44,7 @@ MandNewt10 {; Jim Muth
   f <= |h|
   ;SOURCE: 98msg.frm
 }
- 
+
 MandNewt12 {; Jim Muth
             ; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z=g=pixel, a=real(p1), b=imag(p1), c=real(p2)
@@ -55,7 +55,7 @@ MandNewt12 {; Jim Muth
   .0000000000000000000000000000005 <= |h|
   ;SOURCE: 98msg.frm
 }
- 
+
 F'M-SetInNewtonA (XAXIS) {; use float=yes
                           ; jon horner 100112,1700, 12 feb 93
   z = 0,  c = fn1(pixel),  cminusone = c-1:

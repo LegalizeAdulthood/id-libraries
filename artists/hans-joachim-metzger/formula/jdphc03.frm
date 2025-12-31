@@ -6,7 +6,7 @@ jdphc11 {; * copyright Jim Deutch, 1997
   (|z|<p3 && zr<zq)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc12 {; * copyright Jim Deutch, 1997
   z=pixel*whitesq + conj(pixel)*(whitesq==0):
   z=z*z*fn2(z*z)*p1-fn1(z*z*p2)
@@ -15,7 +15,7 @@ jdphc12 {; * copyright Jim Deutch, 1997
   (zr>p3 || zr>zq)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc13 {; * copyright Jim Deutch, 1997
   z=pixel*whitesq + flip(pixel)*(whitesq==0):
   z=z*fn2(z*z)*p1-fn1(z*z*p2)
@@ -24,7 +24,7 @@ jdphc13 {; * copyright Jim Deutch, 1997
   (zr>p3 || zr>zq*zq)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc16 {; * copyright Jim Deutch, 1997
   z=pixel:
   z1=|z|-flip(imag(z))
@@ -37,7 +37,7 @@ jdphc16 {; * copyright Jim Deutch, 1997
   t1*z1>t2*z2*p1
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc19 {; * copyright Jim Deutch, 1997
   w=whitesq*2-1
   z=pixel
@@ -49,7 +49,7 @@ jdphc19 {; * copyright Jim Deutch, 1997
   |z|<p1+4
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc20 {; * copyright Jim Deutch, 1997
   w=whitesq*2-1
   z=pixel
@@ -63,7 +63,7 @@ jdphc20 {; * copyright Jim Deutch, 1997
   real(z)<p1+4
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc21 {; * copyright Jim Deutch, 1997
   w=whitesq*2-1
   z=pixel
@@ -77,7 +77,7 @@ jdphc21 {; * copyright Jim Deutch, 1997
   real(z)<p1+4
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc22 {; * copyright Jim Deutch, 1997
   w=whitesq*2-1
   z=pixel
@@ -91,7 +91,7 @@ jdphc22 {; * copyright Jim Deutch, 1997
   real(z)<p1+4
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc24 {; * copyright Jim Deutch, 1997
   bail=real(p1)+4
   w=whitesq*2-1
@@ -106,7 +106,7 @@ jdphc24 {; * copyright Jim Deutch, 1997
   imag(z)<bail
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc30 {; * copyright Jim Deutch, 1997
   w1=whitesq*2-1             ; +1/-1
   w2=whitesq+flip(whitesq-1) ; (1,0)/(0,-1)
@@ -117,7 +117,7 @@ jdphc30 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc31 {; * copyright Jim Deutch, 1997
   w1=whitesq*2-1             ; +1/-1
   w2=whitesq+flip(whitesq-1) ; (1,0)/(0,-1)
@@ -128,7 +128,7 @@ jdphc31 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc32 {; * copyright Jim Deutch, 1997
   w1=whitesq*2-1            ; +1/-1
   w3=-.5+flip(sqrt(3)/2*w1) ; +/- 120 deg rot
@@ -138,7 +138,7 @@ jdphc32 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc33 {; * copyright Jim Deutch, 1997
   bail=real(p1)
   w1=whitesq*2-1            ; +1/-1
@@ -149,7 +149,7 @@ jdphc33 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc34 {; * copyright Jim Deutch, 1997
   bail=real(p1)
   w1=whitesq*2-1            ; +1/-1
@@ -161,7 +161,7 @@ jdphc34 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc35 {; * copyright Jim Deutch, 1997
   bail=real(p1)
   w1=whitesq*2-1            ; +1/-1
@@ -172,7 +172,7 @@ jdphc35 {; * copyright Jim Deutch, 1997
   (real(z)<bail)&&(imag(z)<bail)
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc36 {; * copyright Jim Deutch, 1997
   bail=real(p1)
   w1=whitesq*2-1             ; +1/-1
@@ -185,7 +185,7 @@ jdphc36 {; * copyright Jim Deutch, 1997
   |z|<bail
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc37 {; * modified OldManowar copyright Jim Deutch, 1997
   w1=whitesq*2-1            ; +1/-1
   w4=.5+flip(sqrt(3)/2*w1)  ; +/- 60 deg rot
@@ -199,7 +199,7 @@ jdphc37 {; * modified OldManowar copyright Jim Deutch, 1997
     |z| < test
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc38 {; * Mod of Chuck Ebbert's Liar4, by Jim Deutch
          ; X: X is as true as (p1+1) times Y
          ; Y: Y is as true as X is false
@@ -215,7 +215,7 @@ jdphc38 {; * Mod of Chuck Ebbert's Liar4, by Jim Deutch
   |z| <= 1
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc38b {; * Mod of Chuck Ebbert's Liar1, by Jim Deutch
           ; p1=center of rotation offset
           ; real(p2) = rotation (deg) default = 45
@@ -235,7 +235,7 @@ jdphc38b {; * Mod of Chuck Ebbert's Liar1, by Jim Deutch
   |z| <= 1
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc38c1 {; * Mod of Chuck Ebbert's Liar1, by Jim Deutch
            ; p1=center of rotation offset
            ; real(p2) = rotation (deg) default = 45
@@ -256,7 +256,7 @@ jdphc38c1 {; * Mod of Chuck Ebbert's Liar1, by Jim Deutch
   |z| <= 1
   ;SOURCE: jdphc03.frm
 }
- 
+
 jdphc39 {; * mod of Ent by Scott Taylor
          ; Try params=.5/.75 and the first function as exp.
          ; Zoom in on the swirls around the middle.  There's a
@@ -264,10 +264,10 @@ jdphc39 {; * mod of Ent by Scott Taylor
   bail=real(p2)
   w1=whitesq*2-1  ; +1/-1
   z = real(Pixel) + flip(imag(pixel))*w1
-  y = fn1(z) 
+  y = fn1(z)
   base = log(p1):
   z = y * log(z)/base
   |z| <= bail
   ;SOURCE: jdphc03.frm
 }
- 
+

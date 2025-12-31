@@ -8,9 +8,9 @@ Ca06-03 {; V.1.1.1 - earlier versions may be discarded
   |z|<100
   ;SOURCE: chby3.frm
 }
- 
+
 P06-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   const=p1, z=pixel:
   zz=z*z
@@ -18,4 +18,4 @@ P06-03 {; V.1.1 - earlier versions may be discarded
   |z|<100
   ;SOURCE: chby3.frm
 }
- 
+

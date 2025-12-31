@@ -7,15 +7,15 @@
 ; Distribution: world
 ; Organization: Splattersday
 ; Lines: 36
-;  
+;
 ; I finally managed to create some Fractint formulas "of my own"
 ; (thanks to Ramiro Perez's post on Frac-l).  I think I wouldn't
 ; be posting these if it wasn't for a boring flu that I got :-).
 ; Gotta do something to make everyone else feel bad too :-).
-; -- 
+; --
 ; Jussi Kantola from Paltamo, Finland  | I couldn't remember my name so I called
 ; email: jute@sday.pulp.nullnet.fi     | myself Jute.  It's weird being a Jute.
- 
+
 Mite(XAXIS) { ;  That mandel-thingy looks like mite, yes?  Or a rabbit :).
 z = pixel:
   z1 = z*z+pixel
@@ -23,7 +23,7 @@ z = pixel:
    z = z1+z2-(z1/z2)
 |z| <= 4
 }
- 
+
 MandelJulia(XAXIS) { ; Pretty sick.  Try your every fave julias for p1.
 ; Haven't we seen this before?!  This *can't* be original!
 z = 0, zj = pixel:

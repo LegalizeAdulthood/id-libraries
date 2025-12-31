@@ -3,7 +3,7 @@ comment {
 To see examples of images these FRACTINT formulas
 can create, download 43fcarr.par.
 
-I can be contacted on AOL with the screen name GENEALOGY1@aol.com, 
+I can be contacted on AOL with the screen name GENEALOGY1@aol.com,
 or CompuServe with the number 73753,2420
 
 --Bob Carr--

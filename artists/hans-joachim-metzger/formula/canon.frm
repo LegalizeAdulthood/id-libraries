@@ -1,4 +1,4 @@
-CANON1 {; 12/2/94 a,b,c are modified by fn(), z value is bailout 
+CANON1 {; 12/2/94 a,b,c are modified by fn(), z value is bailout
   z=pixel, c=1, a=p1, b=p2:
   z=fn1(z)+(a*b*c)
   |z|<=4
@@ -10,7 +10,7 @@ CANON1 {; 12/2/94 a,b,c are modified by fn(), z value is bailout
   |z|<=32
   ;SOURCE: canon.frm
 }
- 
+
 CANON6 {; 12/3/94
   z=pixel, c=z^2, a=p1, b=p2:
   z=fn1(z)-(a*b*c)
@@ -23,4 +23,4 @@ CANON6 {; 12/3/94
   |z|<=32
   ;SOURCE: canon.frm
 }
- 
+

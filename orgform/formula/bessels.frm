@@ -1,5 +1,5 @@
 BESSEL-1 {
-  ;This formula, and BESSEL-2 to BESSEL-4 are based on 
+  ;This formula, and BESSEL-2 to BESSEL-4 are based on
   ;formulas taken from the article on bessels from the
   ;Encyclopedia of Science.
       c = z = pixel:

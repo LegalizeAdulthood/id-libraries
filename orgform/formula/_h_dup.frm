@@ -66,10 +66,10 @@ heart {; Giuseppe Zito
   d12 = -0.39404
   d15 = -0.481785
   d16 = -0.216375
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 -y
   s0 = s0 *y
@@ -82,9 +82,9 @@ heart {; Giuseppe Zito
   s0 = s0 -d15
   s0 = s0 *d16
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 

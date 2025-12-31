@@ -5,24 +5,24 @@
   |z| < 11
   ;SOURCE: kg4.frm
 }
- 
+
 BJ-Lesfrm13-006 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = fn3(z*x)*p1*pi
-  y = fn4(z*y)*p2*pi 
+  y = fn4(z*y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
 }
- 
+
 Carr-63 {
   c=z=1/pixel:
   c=tanh(z^c)/z, c=(z*z*z*z*z) + (c/0.9), z=sqr(c*1/pixel)
   |z| <= 4
   ;SOURCE: carr-1.frm
 }
- 
+
 Celtic_Julia {; Copyright (c) Paul W. Carlson, 1998
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -67,7 +67,7 @@ Celtic_Julia {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0  && |w| < 4
   ;SOURCE: 98msg.frm
 }
- 
+
 gfpcau03 {; Formula by Gedeon Peteri
   z=flip(1/pixel):
   c=asin(imag(z)/cabs(z))
@@ -77,7 +77,7 @@ gfpcau03 {; Formula by Gedeon Peteri
   |z|<=p3
   ;SOURCE: fraczoo.frm
 }
- 
+
 gfpngl01 {; Formula by Gedeon Peteri
   z=fn1(pixel):
   c=asin(imag(z)/cabs(z))
@@ -85,25 +85,25 @@ gfpngl01 {; Formula by Gedeon Peteri
   |z|<=p3
   ;SOURCE: fraczoo.frm
 }
- 
+
 gtc08 {; Modified J_Laguerre3
   z = c = pixel:
   z = fn1((z*(z*(-z + 9) -18) + 6 ) / 6 + c)
   |z| < p1
   ;SOURCE: gfptch.frm
 }
- 
+
 Jm_07 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(fn2(fn3((z^z)*pixel)))*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
-Lesfrm01 (xaxis) { 
+
+Lesfrm01 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c)/fn2(z))/c^3
   |z| <=4
   ;SOURCE: les.frm
 }
- 
+

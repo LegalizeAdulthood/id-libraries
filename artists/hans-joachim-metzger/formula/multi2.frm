@@ -24,7 +24,7 @@ multifrac68 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac68 {
 z = pixel:
 y2 = y*y
@@ -51,17 +51,17 @@ z=fn2(z-x-y-w)
 endif
 |z| > (x2+w2+y2)
 }
- 
+
 multifrac68 {
   z = pixel:
   y2 = y*y
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -78,7 +78,7 @@ multifrac68 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac69 {
   z = pixel:
   y2 = y*y
@@ -105,7 +105,7 @@ multifrac69 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac69 {
 z = pixel:
 y2 = y*y
@@ -132,7 +132,7 @@ z=fn2(z-x-y-w)
 endif
 |z| > (x2+w2+y2)
 }
- 
+
 multifrac70 {
   z = pixel:
   y2 = y*y
@@ -159,7 +159,7 @@ multifrac70 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac70 {
 z = pixel:
 y2 = y*y
@@ -186,7 +186,7 @@ z=fn2(z-x-y-w)
 endif
 |z| > (x2+w2+y2)
 }
- 
+
 multifrac71 {
   z = pixel:
   y2 = y*y
@@ -213,7 +213,7 @@ multifrac71 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac71 {
 z = pixel:
 y2 = y*y
@@ -240,7 +240,7 @@ z=fn2(z-x-y-w)
 endif
 |z| > (x2+w2+y2)
 }
- 
+
 multifrac72 {
   z = pixel:
   y2 = y*y
@@ -267,7 +267,7 @@ multifrac72 {
   endif
   |z| > (x2+w2+y2)
   }
- 
+
 multifrac72 {
 z = pixel:
 y2 = y*y
@@ -294,7 +294,7 @@ z=fn2(z-x-y-w)
 endif
 |z| > (x2+w2+y2)
 }
- 
+
 multifrac73 {
   z = pixel:
   y2 = y*y
@@ -323,7 +323,7 @@ multifrac73 {
   endif
   phc_bailout
   }
- 
+
 multifrac73 {
 z = pixel:
 y2 = y*y
@@ -352,7 +352,7 @@ phc_bailout = |z| > (x2+y2+w2)
 endif
 phc_bailout
 }
- 
+
 multifrac74 {
   cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
@@ -383,7 +383,7 @@ multifrac74 {
   endif
   phc_bailout
   }
- 
+
 multifrac74 {
 cr=real(scrnpix)+2*imag(scrnpix)
 r=cr-4*trunc(cr/real(4))
@@ -414,7 +414,7 @@ phc_bailout = |z| > (x2+y2+w2)
 endif
 phc_bailout
 }
- 
+
 multifrac75 {
   z = pixel:
   y2 = y*y
@@ -447,7 +447,7 @@ multifrac75 {
   endif
   phc_bailout
   }
- 
+
 multifrac75 {
 z = pixel:
 y2 = y*y
@@ -480,7 +480,7 @@ phc_bailout = |z| > (x+w)
 endif
 phc_bailout
 }
- 
+
 multifrac76 {
   cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
@@ -515,7 +515,7 @@ multifrac76 {
   endif
   phc_bailout
   }
- 
+
 multifrac76 {
 cr=real(scrnpix)+2*imag(scrnpix)
 r=cr-4*trunc(cr/real(4))
@@ -550,7 +550,7 @@ phc_bailout = |z| > (x+y-w)
 endif
 phc_bailout
 }
- 
+
 multifrac77 {
   z = pixel:
   y2 = y*y
@@ -583,7 +583,7 @@ multifrac77 {
   endif
   phc_bailout
   }
- 
+
 multifrac77 {
 z = pixel:
 y2 = y*y
@@ -616,7 +616,7 @@ phc_bailout = |z| > (x+w)
 endif
 phc_bailout
 }
- 
+
 multifrac78 {
   cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
@@ -651,7 +651,7 @@ multifrac78 {
   endif
   ptc_bailout
   }
- 
+
 multifrac78 {
 cr=real(scrnpix)+2*imag(scrnpix)
 r=cr-4*trunc(cr/real(4))
@@ -686,7 +686,7 @@ ptc_bailout = |z| > (x+y-w)
 endif
 ptc_bailout
 }
- 
+
 multifrac79 {
   z = pixel:
   y2 = y*y
@@ -721,7 +721,7 @@ multifrac79 {
   endif
   ptc_bailout
   }
- 
+
 multifrac79 {
 z = pixel:
 y2 = y*y
@@ -756,7 +756,7 @@ ptc_bailout = |z| > (x+y-w)
 endif
 ptc_bailout
 }
- 
+
 multifrac80 {
   z = pixel:
   y2 = y*y
@@ -786,7 +786,7 @@ multifrac80 {
   endif
   ptc_bailout
   }
- 
+
 multifrac80 {
 z = pixel:
 y2 = y*y
@@ -816,7 +816,7 @@ ptc_bailout = |z| > (x-y)
 endif
 ptc_bailout
 }
- 
+
 multifrac81 {
   z = pixel:
   y2 = y*y
@@ -846,7 +846,7 @@ multifrac81 {
   endif
   ptc_bailout
   }
- 
+
 multifrac81 {
 z = pixel:
 y2 = y*y
@@ -876,7 +876,7 @@ ptc_bailout = |z| > (x-y)
 endif
 ptc_bailout
 }
- 
+
 multifrac82 {
   z = pixel:
   y2 = y*y
@@ -906,7 +906,7 @@ multifrac82 {
   endif
   ptc_bailout
   }
- 
+
 multifrac82 {
 z = pixel:
 y2 = y*y
@@ -936,7 +936,7 @@ ptc_bailout = |z| > (x-y)
 endif
 ptc_bailout
 }
- 
+
 multifrac83 {
   z = pixel:
   y2 = y*y
@@ -966,7 +966,7 @@ multifrac83 {
   endif
   ptc_bailout
   }
- 
+
 multifrac83 {
 z = pixel:
 y2 = y*y
@@ -996,7 +996,7 @@ ptc_bailout = |z| > (x-y)
 endif
 ptc_bailout
 }
- 
+
 multifrac84 {
   z = pixel:
   y2 = y*y
@@ -1026,7 +1026,7 @@ multifrac84 {
   endif
   ptc_bailout
   }
- 
+
 multifrac84 {
 z = pixel:
 y2 = y*y
@@ -1056,7 +1056,7 @@ ptc_bailout = |z| > (x*y)
 endif
 ptc_bailout
 }
- 
+
 multifrac85 {
   z = pixel:
   y2 = y*y
@@ -1086,7 +1086,7 @@ multifrac85 {
   endif
   ptc_bailout
   }
- 
+
 multifrac85 {
 z = pixel:
 y2 = y*y
@@ -1116,7 +1116,7 @@ ptc_bailout = |z| > (x-y)
 endif
 ptc_bailout
 }
- 
+
 multifrac86 {
   x2=x*x
   y2=y*y
@@ -1156,7 +1156,7 @@ multifrac86 {
   endif
   ptc_bailout
   }
- 
+
 multifrac86 {
 x2=x*x
 y2=y*y
@@ -1196,7 +1196,7 @@ ptc_bailout = |z| > (x*y)
 endif
 ptc_bailout
 }
- 
+
 multifrac87 {
   x2=x*x
   y2=y*y
@@ -1236,7 +1236,7 @@ multifrac87 {
   endif
   ptc_bailout
   }
- 
+
 multifrac87 {
 x2=x*x
 y2=y*y
@@ -1276,7 +1276,7 @@ ptc_bailout = |z| > (x*y)
 endif
 ptc_bailout
 }
- 
+
 multifrac88 {
   x2=x*x
   y2=y*y
@@ -1316,7 +1316,7 @@ multifrac88 {
   endif
   phc_bailout
   }
- 
+
 multifrac88 {
 x2=x*x
 y2=y*y
@@ -1356,7 +1356,7 @@ ptc_bailout = |z| > (x*y)
 endif
 phc_bailout
 }
- 
+
 multifrac89 {
   x2=x*x
   y2=y*y
@@ -1396,7 +1396,7 @@ multifrac89 {
   endif
   phc_bailout
   }
- 
+
 multifrac89 {
 x2=x*x
 y2=y*y
@@ -1436,7 +1436,7 @@ ptc_bailout = |z| > (x*y)
 endif
 phc_bailout
 }
- 
+
 multifrac90 {
   x2=x*x
   y2=y*y
@@ -1481,7 +1481,7 @@ multifrac90 {
   endif
   ptc_bailout
   }
- 
+
 multifrac90 {
 x2=x*x
 y2=y*y
@@ -1526,7 +1526,7 @@ ptc_bailout = |z| > (x-y-w)
 endif
 ptc_bailout
 }
- 
+
 multifrac91 {
   x2=x*x
   y2=y*y
@@ -1571,7 +1571,7 @@ multifrac91 {
   endif
   ptc_bailout
   }
- 
+
 multifrac91 {
 x2=x*x
 y2=y*y
@@ -1616,4 +1616,4 @@ ptc_bailout = |z| > (x-y-w)
 endif
 ptc_bailout
 }
- 
+

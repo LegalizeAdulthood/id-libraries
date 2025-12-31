@@ -11,7 +11,7 @@ multifrac22 {
   z = z^(z-x+y)
   |z| > (x2*y2)
   }
- 
+
 multifrac22 {
   z = pixel:
   y2 = y*y
@@ -22,7 +22,7 @@ multifrac22 {
   else
   y=abs(x)*y*x-p2
   endif
-  z = z^(z-x+y)    
+  z = z^(z-x+y)
   |z| > (x2*y2)
   }
- 
+

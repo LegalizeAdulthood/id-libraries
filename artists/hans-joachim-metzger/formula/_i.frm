@@ -15,4 +15,4 @@ inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   mz <= test
   ;SOURCE: fract196.frm
 }
- 
+

@@ -12,16 +12,16 @@
 ; References: <31F6FBEE.14D5@1stnet.net> <4t7i5n$l1h@toad.stack.urc.tue.nl>
 ;     <4t8651$g8l@nnrp1.news.primenet.com>
 ; X-Posted-By: lkmitch@usr10.primenet.com
-; 
+;
 ; Here are two Fractint parameter files and a formula file to generate the
 ; same zoom of the Mandelbrot set, using the standard bailout criterion
 ; (magnitude squared > 4) and the "strict" condition I mentioned in an
 ; earlier post:
-; 
+;
 ; magnitude of z > (1 + sqrt(1 + 4|c|))/2
-; 
+;
 ; Kerry Mitchell
-; 
+;
 ; -------------------------------
 ; --
 ; -------------------------------------------------------------------------------

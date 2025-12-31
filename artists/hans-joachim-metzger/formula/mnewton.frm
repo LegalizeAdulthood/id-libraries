@@ -7,4 +7,4 @@ MandelbrotInNewton(XAXIS) {; use float=yes: from CAL v4.0 by Tim Harris
   |(z-oldz)|>=|0.01|
   ;SOURCE: mnewton.frm
 }
- 
+

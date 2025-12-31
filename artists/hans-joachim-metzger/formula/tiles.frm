@@ -6,7 +6,7 @@ Tiled_A {   x = real(fn3(fn4(pixel))), y = imag(fn3(fn4(pixel))),
              z = z*z+c,
              |z| <= 128
          }
- 
+
 Tiled_A {   x = real(fn3(fn4(pixel))), y = imag(fn3(fn4(pixel))),
              d1 = real(p1), d2 = imag(p1),
              x = real(p3)*x - d1 - d1*floor((real(p3)*x-d1/2)/d1),
@@ -15,7 +15,7 @@ Tiled_A {   x = real(fn3(fn4(pixel))), y = imag(fn3(fn4(pixel))),
              z = z*z+c,
              |z| <= 128
          }
- 
+
 Tiled_C {   x = real(pixel), y = imag(pixel),
              d1 = real(p1), d2 = imag(p1),
              x = - x + d1 - d1*ceil((-x+d1/2)/d1),
@@ -24,7 +24,7 @@ Tiled_C {   x = real(pixel), y = imag(pixel),
              z = z*z+c,
              |z| <= 32
          }
- 
+
 Tiled_C {   x = real(pixel), y = imag(pixel),
              d1 = real(p1), d2 = imag(p1),
              x = - x + d1 - d1*ceil((-x+d1/2)/d1),
@@ -33,4 +33,4 @@ Tiled_C {   x = real(pixel), y = imag(pixel),
              z = z*z+c,
              |z| <= 32
          }
- 
+

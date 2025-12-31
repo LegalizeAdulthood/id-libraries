@@ -3,7 +3,7 @@
 T.B.Quest {
   z = c = pixel:
   z = z + p1
-  z = (z * fn1(sqrt(z))) / fn2(c) 
+  z = (z * fn1(sqrt(z))) / fn2(c)
   z = z  +  sqr(c)
   |z| < 4
   ;SOURCE: d-rock.frm
@@ -37,7 +37,7 @@ T02-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Clifford A. Pickover:
                  ; Dynamic
-                 ; 
+                 ;
                  ; T(n+1) = 2zT(n)-T(n-1)
                  ; T(0)  = 1
                  ; T(1)  = z
@@ -55,7 +55,7 @@ T02-03 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Julia)
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -73,7 +73,7 @@ T02-04 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Mandelbrot)
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -91,7 +91,7 @@ T02-05 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -112,7 +112,7 @@ T02-06 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Halley Method
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -133,7 +133,7 @@ T02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method
-                 ; 
+                 ;
                  ; T(n+1) = 2zT(n)-T(n-1)
                  ; T(0)  = 1
                  ; T(1)  = z
@@ -156,7 +156,7 @@ T02-08 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -178,7 +178,7 @@ T02-09 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler Method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -200,7 +200,7 @@ T02-10 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Mike Wareman:
         ; Secant Method
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -223,7 +223,7 @@ T02-11 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Julia)
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -241,7 +241,7 @@ T02-12 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Mandelbrot)
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -259,7 +259,7 @@ T02-13 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Halley Method with weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -281,7 +281,7 @@ T02-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method with weird bailout test
-                 ; 
+                 ;
                  ; T(n+1) = 2zT(n)-T(n-1)
                  ; T(0)  = 1
                  ; T(1)  = z
@@ -304,7 +304,7 @@ T02-15 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method with weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -325,7 +325,7 @@ T02-16 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Mike Wareman:
         ; Secant Method with weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -348,7 +348,7 @@ T02-17 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -372,7 +372,7 @@ T02-18 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -396,7 +396,7 @@ T02-19 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (Implicit Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -417,7 +417,7 @@ T02-20 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -438,7 +438,7 @@ T02-21 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler Method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -459,7 +459,7 @@ T02-22 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -481,7 +481,7 @@ T02-23 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -503,7 +503,7 @@ T02-24 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler Method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -524,7 +524,7 @@ T02-25 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler Method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -541,7 +541,7 @@ T02-25 {; V.1.1 - earlier versions may be discarded
 
 
 T02-26 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens 
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Kathy Roth:
         ; Dynamic (modified implicit Euler Method, gravitated)
@@ -4409,7 +4409,7 @@ t2 {
 
 t5 {; Revised 4/27/96 to eliminate superfluous "+c"
     ; Original version of this formula may be discarded
-  z=pixel: 
+  z=pixel:
   z=fn3(7/pixel)^(pixel*(1/pixel)), t=fn4(1/pixel)^(22/(1/pixel))
   z=fn1(z^1/z)*fn2(t^1/t)
   |z|<=4
@@ -4468,7 +4468,7 @@ tangent {; Scientific American puzzle.
 
 
 tangent_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
@@ -4753,7 +4753,7 @@ Tc02-02 (XAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Clifford A. Pickover:
                  ; Dynamic
-                 ; 
+                 ;
                  ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
                  ; Tc(0) = 1
                  ; Tc(1) = 2(x+1)
@@ -4771,7 +4771,7 @@ Tc02-03 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Rob Dem Braseem:
          ; Escape  (Julia)
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4789,7 +4789,7 @@ Tc02-04 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Rob Dem Braseem:
          ; Escape  (Mandelbrot)
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4807,7 +4807,7 @@ Tc02-05 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Chris Green:
          ; Newton Method
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4828,7 +4828,7 @@ Tc02-06 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Chris Green:
          ; Halley Method
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4850,7 +4850,7 @@ Tc02-07 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Bradley Beacham
          ; Cubic Method
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4873,7 +4873,7 @@ Tc02-08 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -4895,7 +4895,7 @@ Tc02-09 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified Euler Method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -4917,7 +4917,7 @@ Tc02-10 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Mike Wareman:
          ; Secant Method
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -4940,7 +4940,7 @@ Tc02-11 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Rob Dem Braseem:
          ; Escape  (Julia)
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4958,7 +4958,7 @@ Tc02-12 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Rob Dem Braseem:
          ; Escape  (Mandelbrot)
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4976,7 +4976,7 @@ Tc02-13 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Chris Green:
          ; Halley Method with weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -4998,7 +4998,7 @@ Tc02-14 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Bradley Beacham
          ; Cubic Method with weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -5021,7 +5021,7 @@ Tc02-15 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Chris Green:
          ; Newton Method with weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -5042,7 +5042,7 @@ Tc02-16 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Mike Wareman:
          ; Secant Method with weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5065,7 +5065,7 @@ Tc02-17 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Mike Wareman
          ; Secant Method with Girvan perturbations and weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5089,7 +5089,7 @@ Tc02-18 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Mike Wareman
          ; Secant Method with Girvan perturbations and weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5113,7 +5113,7 @@ Tc02-19 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (Implicit Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)
@@ -5134,7 +5134,7 @@ Tc02-20 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified implicit Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5155,7 +5155,7 @@ Tc02-21 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified implicit Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5176,7 +5176,7 @@ Tc02-22 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5198,7 +5198,7 @@ Tc02-23 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5220,7 +5220,7 @@ Tc02-24 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified implicit Euler Method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -5241,7 +5241,7 @@ Tc02-25 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified implicit Euler Method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)
@@ -9028,7 +9028,7 @@ tC1108 {; generalized CARR1108, by Caren Park
   c = fn2( p2 / (1 / p2)):
   z = (z * 1 / c) / (fn3 (pixel) - c * c)
   z = z / c
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: forummsg.frm
 }
 
@@ -9037,7 +9037,7 @@ tC1126 {; generalized CARR1126, by Caren Park
   z = fn1( p1) / (p1 + pixel)
   c = (fn1( 1 / pixel * p2 / pixel))/(0.3, 0.6):
   z = z + c - fn2 (imag( z))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: forummsg.frm
 }
 
@@ -9052,7 +9052,7 @@ tC1197 {; generalized CARR1197, by Caren Park
   z = (z * 1 / c)
   z2 = z3 - (z2 + z / c)
   z3 = z2 - (z3 + z2)
-  |real(z)| <= 100 
+  |real(z)| <= 100
   ;SOURCE: forummsg.frm
 }
 
@@ -9062,7 +9062,7 @@ tC1258 {; where fn1 = conj, fn2 = cosxx, fn3 = sqr,
   z = fn1( 1 / (pixel * pixel * pixel))
   c = fn2( fn3( 0.56 / pixel * 1 / pixel)):
   z = (fn4(imag(pixel/z)) * cabs(real(pixel/c))) / (pixel-c*c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: testcarr.frm
 }
 
@@ -9073,7 +9073,7 @@ tC1273 {; generalized CARR1273, by Caren Park
   z = fn1( fn2( fn3( p1 - pixel)))
   c = z - (pixel - p2):
   z = z * 1 / ( c * c - 1 / pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: forummsg.frm
 }
 
@@ -9085,7 +9085,7 @@ tC1293 {; generalized CARR1293, by Caren Park
   c1= z / c^c / z:
   z = z / c1
   z = (z - (z^c1)) / (c * c - pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: forummsg.frm
 }
 
@@ -9097,11 +9097,11 @@ tcar {; Giuseppe Zito
   d18 = 0.92012
   d21 = 0.348672
   d22 = -0.71811002
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 -c1
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 -d1
   s0 = s0 *x
@@ -9115,9 +9115,9 @@ tcar {; Giuseppe Zito
   s0 = s0 +y
   s0 = s0 *d21
   s0 = s0 *d22
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -9154,8 +9154,8 @@ Techno1 (xyaxis) {; Peter Anders anders@physik.hu-berlin.de
   y=fn2(yo)*imag(pixel)
   z=x+y*(0,1)
   xo=x
-  yo=y           
-  |fn1(z)|<real(p2) 
+  yo=y
+  |fn1(z)|<real(p2)
   ;SOURCE: anders.frm
 }
 
@@ -9166,8 +9166,8 @@ Techno2 (xyaxis) {; Peter Anders anders@physik.hu-berlin.de
   y=fn2(yo)+imag(Pixel)
   z=x+y*(0,1)
   xo=x
-  yo=y           
-  |fn1(z)|<real(p2) 
+  yo=y
+  |fn1(z)|<real(p2)
   ;SOURCE: anders.frm
 }
 
@@ -9236,7 +9236,7 @@ TESS1A {; Ray Girvan / 1995
 TESS2 {; Ray Girvan  -  03.04.95
        ; repeating fractal
        ; use continous colour palette
-       ; try p1=(1, 0.4)  
+       ; try p1=(1, 0.4)
   i=(0,1)
   z=0.5*tan(sin(real(pixel)))+i*0.5*tan(sin(imag(pixel))), c=p1:
   z=c*sin(z)
@@ -9246,7 +9246,7 @@ TESS2 {; Ray Girvan  -  03.04.95
 
 
 test {; Edited for Fractint v. 20 by George Martin, 10/98
-      ; The error in the formula as originally written rendered 
+      ; The error in the formula as originally written rendered
       ; it trivial. This is what the author intended.
   z=pixel, c=p1:
   z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / (16 * (z+c))
@@ -9293,7 +9293,7 @@ Test0323 {; Jim Muth
 Test0622 {; Jim Muth
   z=p1, c=fn1(pixel)+p2:
   z=sqr(z)+c
-  |z| <16  
+  |z| <16
   ;SOURCE: 98msg.frm
 }
 
@@ -9308,7 +9308,7 @@ Test0622a {; Jim Muth
 
 
 test1 (xyaxis) {; =phi
-  c = pixel 
+  c = pixel
   z = ((sqrt(5) + 1)/2):
   z =  z*z + pixel*((sqrt(5) + 1)/2) + c
   |z| <= 4
@@ -9363,7 +9363,7 @@ Test17 {; Jim Muth
 }
 
 
-test2 (xyaxis) {; =phi 
+test2 (xyaxis) {; =phi
   z = ((sqrt(5) + 1)/2)/pixel:
   z =  z*z*z + pixel*((sqrt(5) + 1)/2)
   |z| <= 4
@@ -9382,7 +9382,7 @@ test3 {; Michael Theroux [71673,2767]
 }
 
 
-test667 { 
+test667 {
   z=pixel:
   z=fn1(p1/z)/fn2(p2/pixel)
   |z|<4
@@ -9391,8 +9391,8 @@ test667 {
 
 
 test97c {; Dewey Odhner
-         ; Using the following formula with parameter (0, -1) I get 
-         ; a fractal with threefold symmetry that contains miniatures 
+         ; Using the following formula with parameter (0, -1) I get
+         ; a fractal with threefold symmetry that contains miniatures
          ; of itself and of the M-set.
   c = Pixel, d = p1*flip(Pixel), z = Sqr(c)+d:
   z = Sqr(Sqr(z)+c)+d
@@ -9410,11 +9410,11 @@ test_formula {
 }
 
 
-testm { 
-  z = 0, c=pixel: 
-  z = sqr(z)+c 
-  c=c+(p1 * (|z| <= p2)) 
-  |z| <= 4 
+testm {
+  z = 0, c=pixel:
+  z = sqr(z)+c
+  c=c+(p1 * (|z| <= p2))
+  |z| <= 4
   ;SOURCE: quad.frm
 }
 
@@ -9455,7 +9455,7 @@ tetrate {
 
 Tetratephi (xyaxis) {; ?
   z  = c = ((sqrt(5) +1)/2)/pixel:
-  z = c^z + ((sqrt(5) +1)/2) 
+  z = c^z + ((sqrt(5) +1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -9475,7 +9475,7 @@ texp1 (XAXIS) {
   temp = z
   z = -exp(z) - zp
   zp = c/temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -9513,7 +9513,7 @@ TgSinZ (XAXIS) {; Jm Collard-Richard
   z1=sin(z)/cos(z)-sin(z)
   z2=1+(sin(z)/cos(z))^2-cos(z)
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -9523,7 +9523,7 @@ TgZ (XAXIS) {; Jm Collard-Richard
   z1=sin(z)/cos(z)
   z2=1+z1*z1
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -9533,7 +9533,7 @@ TgZz (XAXIS) {; Jm Collard-Richard
   z1=sin(z)/cos(z)-z
   z2=(sin(z)/cos(z))^2
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -9565,7 +9565,7 @@ threefea {; Giuseppe Zito
   c6 = 0.742865
   c7 = 0.081965
   d1 = -0.393971
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *y
@@ -9576,14 +9576,14 @@ threefea {; Giuseppe Zito
   s0 = s0 -c7
   s0 = s0 -x
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *d1
   s0 = s0 *x
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -9600,7 +9600,7 @@ tile2j1j2 {; tiled backgrounds, 2 iterations of 2 julias, sum of angles
   z1=x1+(0.0,1.0)*y1, z2=x2+(0.0,1.0)*y2, r=0:
   z1=sqr(z1)+c1, z2=sqr(z2)+c2
   z1=sqr(z1)+c1, z2=sqr(z2)+c2
-  z=fn1(z1)*fn2(z2) 
+  z=fn1(z1)*fn2(z2)
   |z| < r
   ;SOURCE: 97msg.frm
 }
@@ -9644,7 +9644,7 @@ tile3j1j2 {; tiled backgrounds, 3 iterations of 2 julias, sum of angles
   z1=sqr(z1)+c1, z2=sqr(z2)+c2
   z1=sqr(z1)+c1, z2=sqr(z2)+c2
   z1=sqr(z1)+c1, z2=sqr(z2)+c2
-  z=fn1(z1)*fn2(z2) 
+  z=fn1(z1)*fn2(z2)
   |z| < r
   ;SOURCE: 97msg.frm
 }
@@ -9708,7 +9708,7 @@ TILING1 {; Ray Girvan, April 1997 (as posted in Fractal-Art, 4/7/97)
          ; try iteration z=flip(c)*sin(z) also
          ; try p1=(1,0.4), p2=(0.5,0)
          ; (p2 is a scaling factor)
-  z = p2*(tan(cos(Real(pixel)))+flip(tan(sin(Imag(pixel))))) 
+  z = p2*(tan(cos(Real(pixel)))+flip(tan(sin(Imag(pixel)))))
   c=p1:
   z = c*sin(z)
   |z| <= 64
@@ -9738,41 +9738,41 @@ Tim's_fract {; Example of a more or less random formula
 
 
 Tim's_Newton {; Modified Newt_ellipt_oops by Tim Wegner
-              ; Use floating point. 
+              ; Use floating point.
   z = pixel, z2 = z*z, z3 = z*z2:
-  num = (z3 + fn1(p1)*z2 + 1)^.5      
-  denom = (1.5*z2 + p1*z)/num    
-  z = z - (num/denom)            
+  num = (z3 + fn1(p1)*z2 + 1)^.5
+  denom = (1.5*z2 + p1*z)/num
+  z = z - (num/denom)
   z2 = z*z+c
   z3 = z*z2
-  fn2(p2) <= |z3 + p1*z2 + 1| 
+  fn2(p2) <= |z3 + p1*z2 + 1|
   ;SOURCE: bej's2.frm
 }
 
 
 Tim's_Newton_a {
   z = pixel, z2 = z*z, z3 = z*z2:
-  num = (z3 + p1*z2 + 1)^.5      
-  denom = (1.5*z2 + p1*z)/num    
-  z = z - (num/denom)            
+  num = (z3 + p1*z2 + 1)^.5
+  denom = (1.5*z2 + p1*z)/num
+  z = z - (num/denom)
   z2 = z*z+c
   z3 = z*z2
-  p2 <= |z3 + p1*z2 + 1| 
+  p2 <= |z3 + p1*z2 + 1|
   ;SOURCE: bej's2.frm
 }
 
 
 Tim's_Newton_b {; Modified Newt_ellipt_oops by Tim Wegner
-                ; Use floating point. 
+                ; Use floating point.
   z = pixel, z2 = z*z, z3 = z*z2
   t = (4 * (real(p2)<=0) + real(p2) * (0<p2) ):
-  num = (z3 + fn1(p1)*z2 + 1)^.5      
-  denom = (1.5*z2 + p1*z)/num    
-  z = z - (num/denom)            
+  num = (z3 + fn1(p1)*z2 + 1)^.5
+  denom = (1.5*z2 + p1*z)/num
+  z = z - (num/denom)
   z = sqr(z) + p1
   z2 = z*z+c
   z3 = z*z2
-  fn2(p2+t) <= |z3 + p1*z2 + 1| 
+  fn2(p2+t) <= |z3 + p1*z2 + 1|
   ;SOURCE: bej's2.frm
 }
 
@@ -9817,7 +9817,7 @@ timserror {; Chuck Ebbert                    added 12 Jan 1993
 Tinsel {
   z = pixel, v = sin(e)/cos(pi):
   r = z + v + p1
-  z = r * fn1(z)^fn2(1/z) 
+  z = r * fn1(z)^fn2(1/z)
   |r| >= 0.000001 && round(|v|) < 4
   ;SOURCE: tinsel.frm
 }
@@ -9826,32 +9826,32 @@ Tinsel {
 Tinsel_2 {
   z = pixel:
   r = tan(1/z) + p1
-  z = fn1(z) *  fn2(r) 
+  z = fn1(z) *  fn2(r)
   |z| < 4
   ;SOURCE: tinsel.frm
 }
 
 
 Tinsel_3 {
-  z = pixel, c = real(pixel) * imag(pixel): 
-  r = tan(1/z)  + p1 
+  z = pixel, c = real(pixel) * imag(pixel):
+  r = tan(1/z)  + p1
   z = fn2(r)/fn1(z) * c + p2
-  |z| < 4 
+  |z| < 4
   ;SOURCE: tinsel.frm
 }
 
 
 Tinsel_3_PHC {
-  z = pixel, c = real(pixel) * (whitesq == 0) + imag(pixel) * whitesq: 
-  r = tan(1/z)  + p1 
+  z = pixel, c = real(pixel) * (whitesq == 0) + imag(pixel) * whitesq:
+  r = tan(1/z)  + p1
   z = fn2(r)/fn1(z) * c + p2
-  |z| < 4 
+  |z| < 4
   ;SOURCE: tinsel.frm
 }
 
 
 Tinsel_4 {
-  z = pixel: 
+  z = pixel:
   x = real(z), y =imag(z)
   xr = z * fn1(1/y) + 3
   yq = z / fn2(1/x) ^ e
@@ -9862,11 +9862,11 @@ Tinsel_4 {
 
 
 Tinsel_5 {
-  z = pixel: 
+  z = pixel:
   x = real(z), y =imag(z)
-  xr = x * fn1(z) 
-  yq = z * fn2(1/y) 
-  z  = xr * yq 
+  xr = x * fn1(z)
+  yq = z * fn2(1/y)
+  z  = xr * yq
   |z| < 4
   ;SOURCE: tinsel.frm
 }
@@ -9888,12 +9888,12 @@ tivoli {; Giuseppe Zito
   d33 = -0.105733
   d34 = -0.495095
   d39 = -0.620228
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *y
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -x
   s0 = s0 *y
@@ -9927,9 +9927,9 @@ tivoli {; Giuseppe Zito
   s0 = s0 *d39
   s0 = s0 -y
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10038,7 +10038,7 @@ TjerMandelTangent {; Fractal Creations example (revised for v.16)
 }
 
 
-TjerMTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula -- Lee Skinner  
+TjerMTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula -- Lee Skinner
                   ; Modified and Generalized by Tobey J. E. Reed [76437,375]
   z = pixel:
   z = (pixel ^ z + pixel) + fn1(pixel)
@@ -10124,7 +10124,7 @@ TobeyHalley (XYAXIS) {; Chris Green. Halley's formula applied to x^7-x=0.
 }
 
 
-TobeyHalleySin (XYAXIS) {; Chris Green. Halley's formula applied 
+TobeyHalleySin (XYAXIS) {; Chris Green. Halley's formula applied
                          ;to sin(x)=0.
     ; Generalized by Tobey J. E. Reed [76437,375]
     ; Use floating point.
@@ -10237,7 +10237,7 @@ TobeyWineglass (XAXIS) {; Pieter Branderhorst
   c = z = pixel:
   z = z * z + c
   c = (1+flip(imag(fn1(c)))) * real(fn1(c)) / 3 + z
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: fract003.frm
 }
 
@@ -10246,7 +10246,7 @@ torta {; Giuseppe Zito
   z = pixel
   c7 = 0.018957
   c11 = 0.413481
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
@@ -10257,11 +10257,11 @@ torta {; Giuseppe Zito
   s0 = s0 +x
   s0 = s0 *c11
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -10300,7 +10300,7 @@ Tovaglia {; Giuseppe Zito
   s1 = t3 + x
   s2 = x/s1
   s3 = (x - s2) * t10
-  newx = s3 - y  
+  newx = s3 - y
   newy = x
   z = newx + flip(newy)
   newx < 4 && newx > -4 && newy < 4 && newy > -4
@@ -10369,7 +10369,7 @@ tpet {
   temp = z
   z = -cos(z) - zp
   zp = p1/temp
-  (|zp| <= 64) && (|z| <= huge) 
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10379,7 +10379,7 @@ tpet1 {
   temp = z
   z = cos(z) - zp
   zp = p1/temp
-  (|zp| <= 64) && (|z| <= huge) 
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10389,7 +10389,7 @@ tpet2 {
   temp = z
   z = cos(z) + zp
   zp = p1/temp
-  (|zp| <= 4) && (|z| <= huge) 
+  (|zp| <= 4) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10476,7 +10476,7 @@ tree(XAXIS) {; Try a different order of the terms.
   z = zp1*zp1  - zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10991,7 +10991,7 @@ triang_jul {; Kerry Mitchell 11feb98
 
 
 triang_man {; Kerry Mitchell 11feb98
-            ; See the end of formula triang_jul for Kerry Mitchell's 
+            ; See the end of formula triang_jul for Kerry Mitchell's
             ; explanation of his "triangle" formulas
         ; real(p1) = bailout (try 1e12)
         ; imag(p1) = unused
@@ -11028,7 +11028,7 @@ triang_man {; Kerry Mitchell 11feb98
 
 
 triangcount_jul {; Kerry Mitchell 11feb98
-                 ; See the end of formula triang_jul for Kerry Mitchell's 
+                 ; See the end of formula triang_jul for Kerry Mitchell's
                  ; explanation of his "triangle" formulas
         ; p1 = Julia parameter
         ; real(p2) = bailout (try 1e12)
@@ -11066,7 +11066,7 @@ triangcount_jul {; Kerry Mitchell 11feb98
 
 
 triangcount_man {; Kerry Mitchell 11feb98
-                 ; See the end of formula triang_jul for Kerry Mitchell's 
+                 ; See the end of formula triang_jul for Kerry Mitchell's
                  ; explanation of his "triangle" formulas
         ; real(p1) = bailout (try 1e12)
         ; imag(p1) = unused
@@ -11169,7 +11169,7 @@ trick (XAXIS) {; An different method to work in a second function
   temp = z
   z = sin(z)*z - zp
   zp = (temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11416,12 +11416,12 @@ trinity {; Giuseppe Zito
   c1 = 0.70424
   d2 = 0.416143
   d9 = -0.2668
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 /c1
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *y
   s1 =d2
@@ -11435,9 +11435,9 @@ trinity {; Giuseppe Zito
   s1 = x
   s0 = s0 +s1
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11464,7 +11464,7 @@ TripleMutant{; Mandelbrot mutated by a combination of fn1, fn2 and fn3
              ; inverse square of the distance to the current pixel
   z=0
   c=pixel
-  a1=1/(|(pixel-p1)|^2)    ; calclulate the inverse square for 
+  a1=1/(|(pixel-p1)|^2)    ; calclulate the inverse square for
   a2=1/(|(pixel-p2)|^2)    ; all three points
   a3=1/(|(pixel-p3)|^2):
   z=z*z+a1*fn1(z)+a2*fn2(z)+a3*fn3(z)+c  ; the functions are added
@@ -11476,14 +11476,14 @@ TripleMutant{; Mandelbrot mutated by a combination of fn1, fn2 and fn3
 TripleMutant2 {; Mandelbrot mutated by a combination of fn1, fn2 and fn3
                ; "sitting" at the points p1, p2 and p3
                ;  Not the iterated formula is modified
-               ;  but the constant c 
+               ;  but the constant c
   z=0
   c=pixel
-  a1=1/(|(pixel-p1)|^2)   
-  a2=1/(|(pixel-p2)|^2)    
+  a1=1/(|(pixel-p1)|^2)
+  a2=1/(|(pixel-p2)|^2)
   a3=1/(|(pixel-p3)|^2):
   c=c+a1*fn1(c)+a2*fn2(c)+a3*fn3(c)
-  z=z*z+c   
+  z=z*z+c
   |z|<=8
   ;SOURCE: 98msg.frm
 }
@@ -11492,7 +11492,7 @@ TripleMutant2 {; Mandelbrot mutated by a combination of fn1, fn2 and fn3
 Trispine (XAXIS) {; Edited for Fractint v. 20 by George Martin
   z = pixel:
   z = sin(z + pixel)
-  z = z + lambda + pixel 
+  z = z + lambda + pixel
   |z| <= 42
   ;SOURCE: hubert.frm
 }
@@ -11755,31 +11755,31 @@ trmoe-9 {
 
 TROPFISH (XAXIS) {
   z=pixel-cos(pixel)-p1:
-  z=sqr(z)+sinh(pixel)-p2  
-  |Z|<=4 
+  z=sqr(z)+sinh(pixel)-p2
+  |Z|<=4
   ;SOURCE: newform.frm
 }
 
 
-TrueColor {; formula to place a pseudo-continuous 
-           ; iteration value in the real portion 
-           ; of z. 
-  z = c = pixel 
-  i = 0 
+TrueColor {; formula to place a pseudo-continuous
+           ; iteration value in the real portion
+           ; of z.
+  z = c = pixel
+  i = 0
   zb = 0
   bailout = p1:
   IF (|z| <= bailout)
-    z = z*z + c 
+    z = z*z + c
     i = i + 1
   ENDIF
   IF (|z| > bailout)
-    zb = z 
+    zb = z
     z = z*z + c ; These extra iterations
     z = z*z + c ; are added as suggested
                 ; by L. Vepstas to minimize
                 ; the error function
     z = i - log(log(cabs(z)))/log(2)
-  ENDIF        
+  ENDIF
   |zb| <= bailout
   ;SOURCE: 97msg.frm
 }
@@ -11850,7 +11850,7 @@ Truncated_Stalks {; Copyright (c) Paul W. Carlson, 1998
     ; set z to the index into the colormap and set the bailout flag.
     ;****************************************************
   IF (min_dist_to_axis < stalk_width && |w| < stalk_length && iter > 0)
-    z = index_factor * min_dist_to_axis\ 
+    z = index_factor * min_dist_to_axis\
         + range_num * colors_in_range + 1
     bailout = 1
   ENDIF
@@ -11911,7 +11911,7 @@ tsept {; Why not try this change on all the good formula so far?
   z = z*z - zp2
   zp2 = zp1
   zp1 = p1/temp
-  (|zp1| <= 64) && (|z| <= huge) 
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -11978,7 +11978,7 @@ tstar {; For the star fractal as well it makes a dramatic change.
   temp = z
   z = z*z + zp
   zp = p1/conj(temp)
-  (|zp| <= 64) && (|z| <= huge) 
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -11992,10 +11992,10 @@ tulip {; Giuseppe Zito
   d12 = -0.849073
   d14 = -0.255493
   d15 = -0.470536
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d2
   s0 = s0 *x
@@ -12007,9 +12007,9 @@ tulip {; Giuseppe Zito
   s0 = s0 -x
   s0 = s0 +d14
   s0 = s0 -d15
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -12124,8 +12124,8 @@ Two_Plus_E {; (c) Jay Hill, 1998
     IF ((4*c+3) !=0)
       Y=pi*sqrt(-1)/1.5, X = 2*sqrt((4*c+3)/3)
       X3 = asinh(-16/X^3)/3, Zz = 2*(c+1)*c + 2
-      F=X*sinh(X3 + Y), L1= 8*((c*(F+1)*F + Zz)) 
-      F=X*sinh(X3 - Y), L2= 8*((c*(F+1)*F + Zz)) 
+      F=X*sinh(X3 + Y), L1= 8*((c*(F+1)*F + Zz))
+      F=X*sinh(X3 - Y), L2= 8*((c*(F+1)*F + Zz))
       t2=L1*(|L1|<=1) + L2*(|L2|<=1)
       IF ((|L1|<=1) + (|L2|<=1))
         c=t2/4000-1.98536
@@ -12134,7 +12134,7 @@ Two_Plus_E {; (c) Jay Hill, 1998
   ENDIF
   :                  ; initialization.
   zc=sqr(zc) + c     ; standard MSet iteration
-  IF (|zc| >= 800) 
+  IF (|zc| >= 800)
     done=-1          ; Set flag to force an exit.
   ENDIF
   done >= 0          ; Continue if the flag >=0.
@@ -12222,7 +12222,7 @@ TwoBallsJulia {; Copyright (c) Paul Carlson, 1998
 TwoFace (XAXIS) {; Modified Sylvie Gallet frm.
                  ; Modified Carr1971 formula
                  ; LGD 1-11-96
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(-0.743380900000982,-0.131850030300002):
   test=(compt<limit)
@@ -12375,7 +12375,7 @@ TwoIkes {; Ron Barnett [70153,1233], 1996  Requires passes=1
    ; Ron Barnett, 1996
   z = p1*whitesq*(pixel+p3)+p2*(whitesq==0)*((1-pixel)/3)^0.5
   c = pixel:
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=4
   ;SOURCE: phc.frm
 }
@@ -12390,7 +12390,7 @@ TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
   if (r>=0.5)
     z=c*z*(z-1)
   endif
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -12399,7 +12399,7 @@ TwoMands {; Ron Barnett [70153,1233], 1996  Requires passes=1
    ; p3 will shift the two mandelbrot sets wrt to each other
    ; Ron Barnett, 1996
   z = c = pixel+(whitesq==0)*p3:
-  z=whitesq*(z^p1+c)+(whitesq==0)*(z^p2+c) 
+  z=whitesq*(z^p1+c)+(whitesq==0)*(z^p2+c)
   |z|<=4
   ;SOURCE: phc.frm
 }

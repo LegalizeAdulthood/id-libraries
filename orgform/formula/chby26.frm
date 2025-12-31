@@ -21,7 +21,7 @@
 
 
 T02-26 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens 
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Kathy Roth:
         ; Dynamic (modified implicit Euler Method, gravitated)
@@ -1564,7 +1564,7 @@ La02-26 {; V.1.1 - earlier versions may be discarded
          ; La[n+1] = ((a+2n+1-z)La[n]-(a+n)La[n-1])/(n+1)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p2, c=a+2, b=c*(a+1)/2, 
+  a=p2, c=a+2, b=c*(a+1)/2,
   t=p1, bailout=real(p3), z=pixel, v=imag(p3):
   x=real(z), y=imag(z)
   Tx=(fn1(x*(x/2-c)+b))
@@ -2144,7 +2144,7 @@ Sc02-26 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Kathy Roth:
          ; Dynamic (modified implicit Euler Method, gravitated)
-         ; 
+         ;
          ; Schlafi Polynomials
          ; Sc[0] = 0
          ; Sc[1] = 0

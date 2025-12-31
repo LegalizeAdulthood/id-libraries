@@ -2,10 +2,10 @@
   z0 = p1, h = real(p2), w = imag(p2), b = real(p3)
   x0 = real(z0), y0 = imag(z0), w2 = w/2
   z1 = z0 + flip(b), r1 = w2 - b, zc = z0 + w2 + flip(h-w2)
-  z1c = z1 - zc 
+  z1c = z1 - zc
   theta = acos (r1/cabs(z1c)) + atan (imag(z1c) / real(z1c))
   xc = real(zc), yc = imag(zc), tanth = tan(theta)
-  z = pixel, x = real(z), y = imag(z) 
+  z = pixel, x = real(z), y = imag(z)
   exp1 = (x0-x)/tanth + y0 + b, exp2 = (x-xc)*tanth + yc
   chr21 = ( abs(cabs(z-zc)-(w-b)/2) < b/2 ) &&  \
           ( y > y0+h-w2 || y > exp2 ) \
@@ -64,21 +64,21 @@ BEJ-N141 {
   ;SOURCE: 96msg.frm
 }
 
-BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13" 
-  z = pixel 
+BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13"
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(x/fn3(y))
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
 
 BJ-Lesfrm13-004 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z*z), y = fn2(z*z):
   x = fn3(x)*p1*pi
-  y = fn4(y)*p2*pi 
+  y = fn4(y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -88,9 +88,9 @@ BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
    ; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
@@ -99,9 +99,9 @@ BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
    ; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
@@ -146,14 +146,14 @@ Carr2330 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   m = tan(newpixel) - tanh(newpixel)
   z = 2*m + flip(newpixel), c = (-0.7,0.2)
   d1 = -0.0003545/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct - d2, c = c*t + ct
   z = z^2.45 + c + sinh(z/6)
@@ -336,7 +336,7 @@ Carr2763 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 
 Carr2763_hm {; Modified Sylvie Gallet frm. [101324,3444],1996
    ; passes=1 needs to be used with this PHC formula.
-   ; modified Carr2763 using "FracText" (alpha-3) 
+   ; modified Carr2763 using "FracText" (alpha-3)
    ; by Jan Maarten van der Valk
    ; places the text "BOB CARR 1996" in bottom right corner
    ; Added variable "newpixel". G.Martin 6/15/99
@@ -434,9 +434,9 @@ F_TEXT_A2Z {; Les St Clair 1996
    ; Created using "FracText" (alpha-1) by Jan Maarten van der Valk
    ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
    ; suggested default values for fn1|fn2|fn3 are exp|ident|ident
-  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z) 
-  xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x 
-  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x, xx=2.00000*x 
+  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z)
+  xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x
+  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x, xx=2.00000*x
   xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x, x1=1.50000*x
   chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)
   chra1 = chra1&&(y<(xa+11.80000)&&y<(-xa+-6.56754))
@@ -462,7 +462,7 @@ F_TEXT_A2Z {; Les St Clair 1996
                 -0.40000)<0.10000)&&(x>2.63104)&&(y<1.90000||y>2.00000))
   chrg7 = chrg7||(x>2.63104&&x<3.13104&&y<1.90000&&y>1.70000)
   chrh1 = ( (y<0.70000) && (y>0.50000))
-  chrh1 = (x<-3.30000 || x>-2.90000 || chrh1)\ 
+  chrh1 = (x<-3.30000 || x>-2.90000 || chrh1)\
           && (x>-3.50000 && x<-2.70000)
   chri2 = x>-2.50000 && x<-2.30000
   chrj3 = (cabs(sqrt(|z+(1.80000,-0.40000)|)\
@@ -470,7 +470,7 @@ F_TEXT_A2Z {; Les St Clair 1996
   chrj3 = chrj3||(x>-1.70000&&y>0.35000)&&x<-1.50000
   chrk4 = (x<-1.10000)
   chrk4 = chrk4 || (y<(xk+2.38333)&&y>(xk+2.02278))
-  chrk4 = chrk4 || (y>(-xk+-1.18333)&&y<(-xk+-0.82278)\ 
+  chrk4 = chrk4 || (y>(-xk+-1.18333)&&y<(-xk+-0.82278)\
           && y<(xk+2.38333))&&x>-1.30000
   chrl5 = (x<-0.21519||y<0.30000)&&x>-0.41519&&x<0.18481
   chrm6 = (y>-xm+2.06204&&y<-xm+2.60055)
@@ -572,16 +572,16 @@ FRACTEST {; TEST formula by Les St Clair 1996
      ; Created using "FracText" by Jan Maarten van der Valk
      ; Two formulas "FRAC" and "TEXT" have been amalgamated
      ; There is an error in the way the program handles the letter "C"
-  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x 
-  xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x 
-  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x 
+  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x
+  xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x
+  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x
   xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
   x1=1.50000*x
   chrf1 = (y<1.25000&&y>1.15000)||(y>1.60000)
   chrf1 = ((x<-1.15000)||chrf1)&&((x>-1.25000)&&(x<-0.75000))
   chrr2 = (y<1.25000&&y>1.15000)||y>1.60000||x<-0.60000
   chrr2 = chrr2&&((x>-0.70000) && (x<-0.40000))
-  chrr2 = chrr2 || ((cabs(sqrt(|z+(0.40000,-1.42500)|)-0.22500)<0.05000)\ 
+  chrr2 = chrr2 || ((cabs(sqrt(|z+(0.40000,-1.42500)|)-0.22500)<0.05000)\
                    && (x>-0.40000))
   chrr2 = chrr2||(y<1.20000&&y<-xr+0.45000&&y>-xr+0.22639)
   chra3 = (y>(xa+0.60877)||y>(-xa+2.47500))||(y<1.10000&&y>1.00000)
@@ -596,7 +596,7 @@ FRACTEST {; TEST formula by Les St Clair 1996
   chrt4 = y>0.20000&&x>0.61180&&x<1.21180
   chrt4 = chrt4||(x>0.86180&&x<0.96180)
   test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)\
-             *real(y<1.70000)) 
+             *real(y<1.70000))
   test2 = 1 - fn2(real(chrt1||chre2||chrx3||chrt4)*real(y>-0.70000)\
               *real(y<0.30000))
   z = 1+(0,-.65)/fn3(pixel+(0.0,.75)) :
@@ -606,7 +606,7 @@ FRACTEST {; TEST formula by Les St Clair 1996
 }
 
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -620,8 +620,8 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -739,7 +739,7 @@ FraKtint {; Modified Sylvie Gallet formula
 Frantic_2 {
   z = c = pixel + p1:
   r = z * (1/fn1(z)) + p2
-  z = fn2(r) * z + c 
+  z = fn2(r) * z + c
   round(|Z|) <= 4
   ;SOURCE: schizo_2.frm
 }
@@ -841,7 +841,7 @@ FT_195_SOLID { ; Creates "Fractint 19.5" solid text fixed to screen
 
 Fzpcophs {
   z = pixel, f = pixel ^ (1. / sinh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -1018,7 +1018,7 @@ graph-3 {; Tim Wegner
   incr = (max - min)/256
   z = min:
   z = z + incr
-  z < value 
+  z < value
   ;SOURCE: 96msg.frm
 }
 
@@ -1090,7 +1090,7 @@ JD-SG-06 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
 }
 
 JDCarr2289b  {; Modified Carr/Gallet frm. Jim Deutch 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Added variable "newpixel". G. Martin 6/29/99
   y=((imag(scrnpix)/(imag(scrnmax)-1)))*imag(scrnmax)/real(scrnmax)-.85
@@ -1216,10 +1216,10 @@ JoWe_xy_06 {; Jo Weber, 9/1996
   ;SOURCE: 96msg.frm
 }
 
-kgexp2 { 
+kgexp2 {
   z = Pixel, c=fn1(z):
   z = z ^ 2.71828182845905 - c + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
@@ -1252,10 +1252,10 @@ Lesfrm01r {; Les St Clair, 1996
 }
 
 Lesfrm13 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: lesfrm13.frm

@@ -1,4 +1,4 @@
-REB004L { ;    REB004L 
+REB004L { ;    REB004L
   ; Ron Barnett, 1993
   ; floating point required
    z = pixel:

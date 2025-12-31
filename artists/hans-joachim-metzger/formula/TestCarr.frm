@@ -8,10 +8,10 @@ tC1197 {; generalized CARR1197, by Caren Park
   z = (z * 1 / c)
   z2 = z3 - (z2 + z / c)
   z3 = z2 - (z3 + z2)
-  |real(z)| <= 100 
+  |real(z)| <= 100
   ;SOURCE: forummsg.frm
 }
- 
+
 Carr1298 {
   z=real(pixel)+flip(imag(pixel))
   c=real(pixel)+conj(imag(pixel)):
@@ -19,4 +19,4 @@ Carr1298 {
   |real(z)| <=100
   ;SOURCE: 29carr.frm
 }
- 
+

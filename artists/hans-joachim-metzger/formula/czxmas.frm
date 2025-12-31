@@ -28,4 +28,4 @@ CoszzcM {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+

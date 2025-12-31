@@ -13,7 +13,7 @@ Carr2802 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2803 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b3=(conj(conj(0.25+0.1/pixel)))
@@ -30,7 +30,7 @@ Carr2803 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2804 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=pixel-conj(0.01/pixel)-flip(0.001/pixel)+0.4
@@ -48,7 +48,7 @@ Carr2804 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2806 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=2*pixel+1.75/log(cos(0.1/pixel+0.025))*(tan(0.1/pixel-0.025))
@@ -65,7 +65,7 @@ Carr2806 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2807 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=|pixel^5|-conj(conj(sqrt(pixel)+log(pixel)))/15-conj(0.1/pixel)
@@ -82,7 +82,7 @@ Carr2807 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2808 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=conj(conj(|pixel^5|))-conj(conj(sqrt(pixel)+log(pixel)))/\
@@ -98,10 +98,10 @@ Carr2808 {; Modified Sylvie Gallet frm. [101324,3444],1996
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+pp2
   z=z*z+c-0.087
   iter=iter+1
-  |z|<=bailout 
+  |z|<=bailout
   ;SOURCE: 96msg.frm
 }
- 
+
 Carr2809 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=flip(flip(conj(conj(0.25+pixel^5))-conj(conj(sqrt(pixel)+\
@@ -120,7 +120,7 @@ Carr2809 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2810 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=conj(conj(pixel)^7/conj(pixel)^1.5)-conj(0.1/pixel)
@@ -137,7 +137,7 @@ Carr2810 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2811 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b3=conj(0.05/pixel-flip(0.05/pixel))
@@ -156,7 +156,7 @@ Carr2811 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2812 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=(-0.8206,-0.149)
@@ -174,7 +174,7 @@ Carr2812 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2813 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=tan(pixel)-(((0.3,0.6)/2+pixel)/(0.20/pixel))
@@ -191,7 +191,7 @@ Carr2813 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2814 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   r=(cabs(pixel/2))
@@ -211,7 +211,7 @@ Carr2814 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2815 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   r=(cabs(pixel/2+(0.025/pixel)))
@@ -231,7 +231,7 @@ Carr2815 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2816 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=tanh(2*pixel)-(((0.3,-0.6)+pixel^4)-(conj(0.20/pixel)))
@@ -248,7 +248,7 @@ Carr2816 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2817 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b1=1/(conj(pixel)-(cos(7/pixel)+sin(1/pixel)-conj(0.1/pixel)))+0.285
@@ -266,7 +266,7 @@ Carr2817 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2818 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b5=pixel-1/log(1/pixel/0.71)/(0.85/pixel+2.324)
@@ -283,7 +283,7 @@ Carr2818 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2819 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b2=pixel-conj(0.1/pixel-flip(0.1/pixel))
@@ -303,7 +303,7 @@ Carr2819 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2820 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b2=pixel-conj(0.1/pixel-flip(0.1/pixel))
@@ -323,7 +323,7 @@ Carr2820 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; Converted to if.else by Sylvie Gallet and George Martin 3/97
           ; passes=1 needs to be used with this PHC formula.
@@ -362,7 +362,7 @@ Carr2821 {; Modified Sylvie Gallet frm. [101324,3444],1996
    mz <= bailout
   ;SOURCE: ifs196.frm
 }
- 
+
 Carr2822 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=pixel-conj(0.1/pixel)-flip(0.001/pixel)
@@ -379,7 +379,7 @@ Carr2822 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2823 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=(conj(conj(0.25-pixel^4))-conj(0.1/pixel)+sinh(0.001/pixel))
@@ -396,7 +396,7 @@ Carr2823 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2825 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   z=flip(conj(cabs((pixel/2))))+0.4
@@ -404,7 +404,7 @@ Carr2825 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))\
      +flip(imag(0.03750/pixel)))*whitesq
   z=(|z|/5)+z*z+c-0.09/pixel
@@ -412,15 +412,15 @@ Carr2825 {; Modified Sylvie Gallet frm.
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2827 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
-  c=(-0.7456,-0.132)/2 
+  c=(-0.7456,-0.132)/2
   z=flip(conj(cabs((0.25+pixel))))-conj(0.1/pixel-flip(0.01/pixel))^5
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))\
     +flip(imag(0.03750/pixel)))*whitesq
   z=(|z|/5)+z*z+c-0.1/pixel
@@ -428,7 +428,7 @@ Carr2827 {; Modified Sylvie Gallet frm.
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2828 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -438,7 +438,7 @@ Carr2828 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)\
     +((z*(1-test))+flip(imag(0.03750/newpixel)))*whitesq
   z=(|z|/5)+z*z+c-0.1/newpixel
@@ -446,7 +446,7 @@ Carr2828 (YAXIS) {; Modified Sylvie Gallet frm.
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2829 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -458,14 +458,14 @@ Carr2829 (YAXIS) {; Modified Sylvie Gallet frm.
   b8=0.09/newpixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2830 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -476,14 +476,14 @@ Carr2830 (YAXIS) {; Modified Sylvie Gallet frm.
   b8=0.1/newpixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2832 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   z=(conj(conj(cabs(pixel)))^5/(flip(asinh(pixel))))-conj(0.1/pixel)
@@ -492,14 +492,14 @@ Carr2832 {; Modified Sylvie Gallet frm.
   b8=0.1/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2833 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   c=|pixel^8|-flip(0.1/pixel)
@@ -507,14 +507,14 @@ Carr2833 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2834 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   c=conj(conj(|pixel^15|))-conj(0.1/pixel)
@@ -522,14 +522,14 @@ Carr2834 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2835 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   c=flip(flip(|pixel^15|))-conj(0.1/pixel)
@@ -537,14 +537,14 @@ Carr2835 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2836 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   c=(-0.275,0.45)
@@ -553,14 +553,14 @@ Carr2836 {; Modified Sylvie Gallet frm.
   b8=0.13/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2837 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   z=pixel*(-1)^(pixel>0)
@@ -569,14 +569,14 @@ Carr2837 {; Modified Sylvie Gallet frm.
   b8=0.13/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2839 {; Modified Sylvie Gallet frm. [101324,3444],1996
           ; passes=1 needs to be used with this PHC formula.
   b4=(-0.7456,-0.132)
@@ -593,7 +593,7 @@ Carr2839 {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   ;SOURCE: 42scarr.frm
 }
- 
+
 Carr2831 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
   z=(flip(abs(pixel))^4/(flip(asinh(pixel))))-conj(0.1/pixel)
@@ -602,11 +602,11 @@ Carr2831 {; Modified Sylvie Gallet frm.
   b8=0.1/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
   |z|<=16
   ;SOURCE: 42scarr.frm
 }
- 
+

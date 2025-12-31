@@ -10,7 +10,7 @@ davidsmask {
   0.000001 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+
 oof7 (XYAXIS) {
   z = pixel:
   z = z^(fn1(z^(p1)))
@@ -19,11 +19,11 @@ oof7 (XYAXIS) {
   |z| <= p2
   ;SOURCE: kgoof7.frm
 }
- 
+
 1001 {
   z = pixel:
   z = z^(z+p1) + c
   |z| <= p2
   ;SOURCE: kg10.frm
 }
- 
+

@@ -118,7 +118,7 @@ JDFancyFract {; requires Fractint 19.5
   out*|z|+in<test*out+z*in
   ;SOURCE: jdmask1.frm
 }
- 
+
 JDMaskHand {; requires Fractint 19.5
   row=imag(scrnpix)
   col=real(scrnpix)
@@ -239,7 +239,7 @@ JDMaskHand {; requires Fractint 19.5
   out*|z|+in<test*out+z*in
   ;SOURCE: jdmask1.frm
 }
- 
+
 JDMaskMoonStar {; requires Fractint 19.5
   row=imag(scrnpix)
   col=real(scrnpix)
@@ -308,7 +308,7 @@ JDMaskMoonStar {; requires Fractint 19.5
   out*|z|+in<test*out+z*in
   ;SOURCE: jdmask1.frm
 }
- 
+
 JDMaskSmile {; requires Fractint 19.5
   row=imag(scrnpix)
   col=real(scrnpix)
@@ -418,4 +418,4 @@ JDMaskSmile {; requires Fractint 19.5
   out*|z|+in<test*out+z*in
   ;SOURCE: jdmask1.frm
 }
- 
+

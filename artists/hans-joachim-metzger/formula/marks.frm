@@ -9,7 +9,7 @@ MarksBug   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z=a*sqr(z) +c,
   LastSqr<= imag(P1)
 }
- 
+
 MarksMandel  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
              ; Thu, 05 Feb 2004 11:05:00
              ; Documentation could read as z(n+1)=c^(ex-1)*z*z +c.

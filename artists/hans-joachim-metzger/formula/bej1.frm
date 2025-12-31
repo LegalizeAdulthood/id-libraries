@@ -8,7 +8,7 @@ BEJ3 {
   |z|<=3
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ6 {
   z=(0), c=pixel:
   zsqr^2*z+const
@@ -18,7 +18,7 @@ BEJ6 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_22 {
   z=pixel:
   z=z*z*z
@@ -27,7 +27,7 @@ BEJ_22 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_23 {
   z=pixel:
   z1=(z*z)^(z-z)*z
@@ -37,7 +37,7 @@ BEJ_23 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_25 {
   z=pixel:
   z1=z*z*z
@@ -47,7 +47,7 @@ BEJ_25 {
   |z|<=4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N13 {; Revised for Fractint v. 20 by George Martin
          ; Second line was
          ; z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
@@ -61,7 +61,7 @@ BEJ_N13 {; Revised for Fractint v. 20 by George Martin
   |z| <4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N24 {
   z=pixel, c=pixel:
   z1=z*z
@@ -70,7 +70,7 @@ BEJ_N24 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
             ; Fourth line began
             ; z3=z^(zsqr=z*z)
@@ -84,7 +84,7 @@ BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_N4 {
   z=c=pixel:
   zsqr=z*z
@@ -95,7 +95,7 @@ BEJ_N4 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_New1 {
   z=pixel, root=1:
   z=z*z/p1
@@ -108,7 +108,7 @@ BEJ_New1 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
               ; For FN1 check out
   z= pixel, c =(-0.7456,3.245)
@@ -119,7 +119,7 @@ BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel)
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   z7=z*z*z
   z8=(z+c)^pixel/(z*z+(zn*z2)/z7)
@@ -130,7 +130,7 @@ BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej's.frm
 }
- 
+
 CGhalley (XYAXIS) {; Chris Green -- Halley's formula
    ; P1 real usually 1 to 1.5, P1 imag usually zero. Use floating point.
   z=(1,1):
@@ -141,7 +141,7 @@ CGhalley (XYAXIS) {; Chris Green -- Halley's formula
   0.0001 <= |z7-z-pixel|
   ;SOURCE: fractint.frm
 }
- 
+
 CGNewtonSinExp (XAXIS) {
   z=pixel:
   z1=exp(z)
@@ -150,7 +150,7 @@ CGNewtonSinExp (XAXIS) {
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 moc {
   z=0, c=pixel:
   z=sqr(z)+c
@@ -158,7 +158,7 @@ moc {
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 BJ-BC1974 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   c=z=pixel, d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/5)), bailout=4
@@ -170,4 +170,4 @@ BJ-BC1974 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: bej's.frm
 }
- 
+

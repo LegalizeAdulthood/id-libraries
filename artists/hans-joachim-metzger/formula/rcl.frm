@@ -7,7 +7,7 @@ RCL_1 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_1 (XAXIS) {; Ron Lewen
                ; An interesting Biomorph inspired by Pickover's
                ; Computers, Pattern, Choas and Beauty.
@@ -17,7 +17,7 @@ RCL_1 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_2 (XAXIS) {; Ron Lewen
                ; A biomorph flower?  Simply a change in initial
                ; conditions from RCL_1 above
@@ -27,7 +27,7 @@ RCL_2 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_3 (XAXIS) {; Ron Lewen
                ; A seemingly endless vertical pattern.  The most activity
                ; is around the center of the image.
@@ -37,10 +37,10 @@ RCL_3 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Cross1 {; Ron Lewen
             ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-            ; -10/10/-7.5/7.5 to see a cross shape.  The larger 
+            ; -10/10/-7.5/7.5 to see a cross shape.  The larger
             ; lakes at the center of the cross have good detail
             ; to zoom in on.
             ; Use floating point.
@@ -49,10 +49,10 @@ RCL_Cross1 {; Ron Lewen
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_Cross1 {; Ron Lewen
             ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-            ; -10/10/-7.5/7.5 to see a cross shape.  The larger 
+            ; -10/10/-7.5/7.5 to see a cross shape.  The larger
             ; lakes at the center of the cross have good detail
             ; to zoom in on.
             ; Use floating point.
@@ -61,10 +61,10 @@ RCL_Cross1 {; Ron Lewen
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_Cross2 {; Ron Lewen
             ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-            ; -10/10/-7.5/7.5 to see a deformed cross shape. 
+            ; -10/10/-7.5/7.5 to see a deformed cross shape.
             ; The larger lakes at the center of the cross have
             ; good detail to zoom in on.
             ; Try corner=-1.58172/.976279/-1.21088/-.756799 to see
@@ -75,7 +75,7 @@ RCL_Cross2 {; Ron Lewen
   |z| <= 4
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Mandel (XAXIS) {; Ron Lewen
    ; The traditional Mandelbrot formula with a different
    ; escape condition.  Try p1=(1,0).  This is basically the M-Set
@@ -86,10 +86,10 @@ RCL_Mandel (XAXIS) {; Ron Lewen
   sin(z) <= p1
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick1 (XAXIS) {; Ron Lewen
                    ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-                   ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+                   ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
                    ; Pickover's Computers, Pattern, Chaos and Beauty.
                    ; Figures 9.9 - 9.13 can be found by zooming.
                    ; Use floating point
@@ -98,7 +98,7 @@ RCL_Pick1 (XAXIS) {; Ron Lewen
   abs(z) < 40
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick10 (XAXIS) {; Ron Lewen
                     ;  Variation of Figure 9.18 (p.134) from Pickover's
                     ;  Book.  Generates an interesting Biomorph.
@@ -107,7 +107,7 @@ RCL_Pick10 (XAXIS) {; Ron Lewen
   abs(z) < 8
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick11 (XAXIS) {; Ron Lewen
                     ; Formula from Figure 8.3 (p. 98) of Pickover's
                     ; book.  Generates a biomorph.  Figure 8.3 is a
@@ -119,7 +119,7 @@ RCL_Pick11 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick12 {; Ron Lewen
             ; Formula from Figure 12.7 (p. 202) of Pickover's
             ; book.
@@ -129,9 +129,9 @@ RCL_Pick12 {; Ron Lewen
   abs(real(z)) < 10 || abs(imag(z)) < 10
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick13 {; Ron Lewen
-            ; Formula from Frontpiece for Appendix C 
+            ; Formula from Frontpiece for Appendix C
             ; and Credits in Pickover's book.
             ; Set p1=(3,0) to generate the Frontpiece
             ; for Appendix C and to (2,0) for Credits
@@ -141,9 +141,9 @@ RCL_Pick13 {; Ron Lewen
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_Pick13 {; Ron Lewen
-            ; Formula from Frontpiece for Appendix C 
+            ; Formula from Frontpiece for Appendix C
             ; and Credits in Pickover's book.
             ; Set p1=(3,0) to generate the Frontpiece
             ; for Appendix C and to (2,0) for Credits
@@ -153,7 +153,7 @@ RCL_Pick13 {; Ron Lewen
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 RCL_Pick3 (XAXIS) {; Ron Lewen
    ; Generates Figure 9.18 (p. 134) from Pickover's book.
    ; Set maxiter >= 1000 to see good detail in the spirals
@@ -163,7 +163,7 @@ RCL_Pick3 (XAXIS) {; Ron Lewen
   abs(z) < 8
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick4 (XAXIS) {; Ron Lewen
    ; Variation of formula for Figure 9.18 (p. 134) from Pickover's
    ; book.
@@ -173,7 +173,7 @@ RCL_Pick4 (XAXIS) {; Ron Lewen
   |z| <= 4
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick5 (XAXIS) {; Ron Lewen
                    ; Adapted from Pickover's Biomorph Zoo Collection in
                    ; Figure 8.7 (p. 102).
@@ -182,7 +182,7 @@ RCL_Pick5 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick6 (XAXIS) {; Ron Lewen
                    ; Adapted from Pickover's Biomorph Zoo Collection in
                    ; Figure 8.7 (p. 102).
@@ -191,7 +191,7 @@ RCL_Pick6 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick7 (XAXIS) {; Ron Lewen
                    ; Adapted from Pickover's Biomorph Zoo Collection in
                    ; Figure 8.7 (p. 102).
@@ -200,7 +200,7 @@ RCL_Pick7 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick8 (XAXIS) {; Ron Lewen
                    ; Adapted from Pickover's Biomorph Zoo Collection in
                    ; Figure 8.7 (p. 102).
@@ -209,7 +209,7 @@ RCL_Pick8 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick9 (XAXIS) {; Ron Lewen
                    ; Adapted from Pickover's Biomorph Zoo Collection in
                    ; Figure 8.7 (p. 102).
@@ -218,7 +218,7 @@ RCL_Pick9 (XAXIS) {; Ron Lewen
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Quaternion_J (ORIGIN) {; Ron Lewen
    ; From Pseudocode 10.5 (p. 169) of Pickover's book.
    ; Looks at Julia set for a0,a2 plane.  p1 selects
@@ -234,7 +234,7 @@ RCL_Quaternion_J (ORIGIN) {; Ron Lewen
   (a0^2+a1^2+a2^2+a3^2) <= 2
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Quaternion_M (XAXIS) {; Ron Lewen
    ; From Pseudocode 10.5 (p. 169) of Pickover's book.
    ; Looks at Mandelbrot set for a0,a2 plane.
@@ -248,7 +248,7 @@ RCL_Quaternion_M (XAXIS) {; Ron Lewen
   (a0^2+a1^2+a2^2+a3^2) <= 2
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Pick2_M (XAXIS) {; Ron Lewen
    ; Generates a biomorph of a Pseudo-Mandelbrot set with
    ; extra tails.  Part of Pickover's Biomorph Zoo Collection
@@ -263,7 +263,7 @@ RCL_Pick2_M (XAXIS) {; Ron Lewen
   |real(z)| < 100 || |imag(z)| < 100
   ;SOURCE: rcl.frm
 }
- 
+
 RCL_Logistic_1 (XAXIS) {; Ron Lewen
                         ; Based on logistic equation  x -> c(x)(1-x) used
                         ; to model animal populations.  Try p1=(3,0.1) to
@@ -273,4 +273,4 @@ RCL_Logistic_1 (XAXIS) {; Ron Lewen
   |z| <= 1
   ;SOURCE: rcl.frm
 }
- 
+

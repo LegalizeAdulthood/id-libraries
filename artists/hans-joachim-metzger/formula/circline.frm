@@ -1,9 +1,9 @@
 center_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
-        ; 
+        ;
         ; "circle & line thru center" coloring method for Julia sets
         ; p1 = c = Julia parameter
         ; p2 = x-circle center
@@ -29,7 +29,7 @@ center_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 general_jul { ; Kerry Mitchell 26aug98
 	;
 	; "2 general circles" coloring method for Julia sets
@@ -56,7 +56,7 @@ general_jul { ; Kerry Mitchell 26aug98
           endif
         iter>0
         }
- 
+
 general_jul { ; Kerry Mitchell 26aug98
 	;
         ; "2 general lines" coloring method for Julia
@@ -86,7 +86,7 @@ general_jul { ; Kerry Mitchell 26aug98
           endif
         iter>0
         }
- 
+
 general_jul { ; Kerry Mitchell 27aug98
 	;
         ; "general circle and line" coloring method for Julia
@@ -114,8 +114,8 @@ general_jul { ; Kerry Mitchell 27aug98
           endif
         iter>0
         }
- 
-general_man { ; Kerry Mitchell 26aug98 
+
+general_man { ; Kerry Mitchell 26aug98
 	;
 	; "2 general circles" coloring method for Mandelbrot
 	; c = pixel = Mandelbrot parameter
@@ -141,7 +141,7 @@ general_man { ; Kerry Mitchell 26aug98
           endif
         iter>0
         }
- 
+
 general_man { ; Kerry Mitchell 26aug98
 	;
         ; "2 general lines" coloring method for Mandelbrot
@@ -171,7 +171,7 @@ general_man { ; Kerry Mitchell 26aug98
           endif
         iter>0
         }
- 
+
 general_man { ; Kerry Mitchell 27aug98
 	;
         ; "general circle and line" coloring method for Mandelbrot
@@ -199,9 +199,9 @@ general_man { ; Kerry Mitchell 27aug98
           endif
         iter>0
         }
- 
+
 offset_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
@@ -235,9 +235,9 @@ offset_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 tangent_jul {
-        ; 
+        ;
         ; For Kerry Mitchell's explanation of the "circle & line"
         ;    coloring method, see the end of formula
         ;    general_man-c&l
@@ -270,4 +270,4 @@ tangent_jul {
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

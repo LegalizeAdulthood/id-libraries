@@ -14,7 +14,7 @@ Carr2171 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2172 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(conj(0.5-pixel)*conj(pixel)-sinh(0.10/pixel)-flip(0.010/pixel))
   z=(flip(imag(1-pixel))/log(tan(pixel))\
@@ -31,7 +31,7 @@ Carr2172 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2175 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(flip(0.010/pixel))
   c=(-1.099,-0.63659)
@@ -47,7 +47,7 @@ Carr2175 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2179 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-1/tan(0.0010/pixel))^2.5
   c=sin(conj(-0.655,-0.3509))
@@ -63,7 +63,7 @@ Carr2179 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2181 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-((tan(pixel)+sin(pixel)-1/pixel))
   c=pixel-1/log(pixel-((tan(pixel)+sin(pixel)-1/pixel)))
@@ -79,7 +79,7 @@ Carr2181 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2186 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=z5, z5=(pixel+pixel)-1/log(flip(pixel-1/sin(conj(0.010/pixel))))^2.5
   c=(pixel+pixel)-1/log(flip(pixel-1/sin(conj(0.010/pixel))))^2.5
@@ -95,7 +95,7 @@ Carr2186 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2187 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=z5, z5=(pixel+pixel)-1/log(flip(pixel-1/sin(conj(0.010/pixel))))^2.5
   c=flip(pixel+pixel)-1/log(flip(pixel-1/sin(conj(0.010/pixel))))^2.5
@@ -111,7 +111,7 @@ Carr2187 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2188 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-sqrt(sqrt(pixel-conj(0.10/pixel)-flip(0.010/pixel)))
   c=sin(conj(-0.5545,-0.30009))
@@ -127,7 +127,7 @@ Carr2188 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2189 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=sqr(flip(2*(1-pixel))\
       -sqrt(sqrt(3*pixel-(0.10/pixel)-flip(0.010/pixel))))
@@ -144,7 +144,7 @@ Carr2189 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2190 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(2*pixel+0.72)-1/log(pixel-1/sin(0.010/pixel))
   c=sin(conj(-0.81256,-0.3095))
@@ -160,7 +160,7 @@ Carr2190 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2193 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=(2*pixel+0.4)-1/log(pixel-log(0.010/pixel))
   d1=(conj(0.0002550/pixel)), d4=4*d1
@@ -175,7 +175,7 @@ Carr2193 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2194 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(3*pixel+0.4)-(1/log(4*pixel-log(0.010/pixel)))
   c=sin((pixel+0.4)-(1/log(pixel-log(0.010/pixel))))
@@ -191,7 +191,7 @@ Carr2194 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2196 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(flip(0.001250/pixel)))
   c=sin(conj(-0.763,-0.3509))
@@ -207,7 +207,7 @@ Carr2196 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2198 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel-tanh(pixel)/(sqrt(log((tan(pixel)+sin(pixel-1)-2.75/pixel))))
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(tanh(0.00025250/pixel)))
@@ -223,7 +223,7 @@ Carr2198 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2203 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel^2.3/(sqrt(log((tan(1-pixel)+sin(pixel-1)-2.75/pixel))))
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(tanh(0.0025250/pixel)))
@@ -239,7 +239,7 @@ Carr2203 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2173 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-1.099,-0.2149)
   z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel))
@@ -255,7 +255,7 @@ Carr2173 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2174 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-1.099,-0.2249)
   z=abs(pixel)*(sqr(pixel))-sinh(0.10/pixel)-sqr(flip(0.00010/pixel))
@@ -271,7 +271,7 @@ Carr2174 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2175 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(flip(0.010/pixel))
   c=(-1.099,-0.63659)
@@ -287,7 +287,7 @@ Carr2175 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2176 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
   d1=(conj(0.00004550/pixel)), d4=4*d1
@@ -302,7 +302,7 @@ Carr2176 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2177 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-flip(0.010/pixel)-conj(0.10/pixel)+2/pixel)
   c=pixel+pixel
@@ -318,7 +318,7 @@ Carr2177 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5
   c=sin(conj(-0.81256,-0.2495))
@@ -334,7 +334,7 @@ Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2180 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(3*pixel)-1/log(pixel-1/tan(0.0010/pixel))^3.5
   c=sin(conj(-0.7445,-0.3509))
@@ -350,7 +350,7 @@ Carr2180 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2182 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel
   c=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -366,7 +366,7 @@ Carr2182 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2183 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel
   c=(1-pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -382,7 +382,7 @@ Carr2183 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2184 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel+pixel
   z=(1-pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -398,7 +398,7 @@ Carr2184 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2185 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sqrt(pixel)+pixel
   z=z5, z5=flip(1-pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
@@ -416,7 +416,7 @@ Carr2185 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <=bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2191 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(2*pixel+0.72)-1/log(pixel-1/sin(0.010/pixel))
   c=sin(conj(-0.81256,-0.3095))
@@ -432,7 +432,7 @@ Carr2191 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2192 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=(2*pixel+0.4)-1/log(pixel-log(0.010/pixel))
   d1=(conj(0.0002550/pixel)), d4=4*d1
@@ -447,7 +447,7 @@ Carr2192 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2195 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(flip(0.0060/pixel))
   c=((2*pixel)-0.45/log(sin(pixel-log(1/log(0.005550/pixel)))))
@@ -463,7 +463,7 @@ Carr2195 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2196 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(flip(0.001250/pixel)))
   c=sin(conj(-0.763,-0.3509))
@@ -479,7 +479,7 @@ Carr2196 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2197 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel-tanh(pixel)/log((tan(pixel)+sin(pixel-1)-2.75/pixel))
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(tanh(0.00025250/pixel)))
@@ -495,7 +495,7 @@ Carr2197 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2199 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(tanh(0.0025250/pixel)))
   c=(conj(pixel)+flip(pixel))-1/log(pixel-1/sin(0.010/pixel))
@@ -511,7 +511,7 @@ Carr2199 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2200 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel-tanh(pixel)/(sqrt(log((tan(pixel)+sin(pixel-1)-2.75/pixel))))
   d1=(conj(0.0002550/pixel)), d4=4*d1
@@ -526,7 +526,7 @@ Carr2200 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2201 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel-tanh(pixel)/(sqrt(log((tan(pixel)+sin(pixel-1)-2.75/pixel))))
   d1=(conj(0.0002550/pixel)), d4=4*d1
@@ -541,7 +541,7 @@ Carr2201 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2202 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel*cabs(pixel)/(sqrt(log((tan(1-pixel)+sin(pixel-1)-2.75/pixel))))
   z=(acos(1-pixel+pixel)^2-(conj(0.10/pixel))-(tanh(0.0025250/pixel)))
@@ -557,7 +557,7 @@ Carr2202 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+
 Carr2204 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=tan(pixel+0.72)*conj(pixel)-1/log(pixel-1/sin(0.0010/pixel))
   c=pixel-conj(0.010/pixel)-flip(0.010/pixel)
@@ -573,4 +573,4 @@ Carr2204 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42dcarr.frm
 }
- 
+

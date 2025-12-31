@@ -12,7 +12,7 @@ multifrac60{
   endif
   |z| > (x-y)
   }
- 
+
 multifrac60{
   z =pixel:
   y2=fn2(y)
@@ -27,4 +27,4 @@ multifrac60{
   endif
   |z| > (x-y)
   }
- 
+

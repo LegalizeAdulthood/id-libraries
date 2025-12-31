@@ -624,7 +624,7 @@ DJD_BE0 {;1999 David Dollevoet
     ELSE
       Q1 = PIXEL
     ENDIF
-  Q1R = REAL(Q1) 
+  Q1R = REAL(Q1)
   IF (Q1R >= 0)
       R1R = 1
     ELSE
@@ -760,7 +760,7 @@ DJD_BH0 {;1999 David Dollevoet
   Y = FN2(Y)+FN3(Y)
   IF (XM < S1I)
       Z = X
-    ELSE 
+    ELSE
       Z = X*Q2R+Y*Q2I
       X = Z
     ENDIF
@@ -776,7 +776,7 @@ DJD_BI0 {;1999 David Dollevoet
       Q1 = PIXEL
     ENDIF
   Q1R = REAL(Q1)
-  IF (Q1R >= 0)  
+  IF (Q1R >= 0)
       R1R = 1
     ELSE
       R1R = 0
@@ -818,7 +818,7 @@ DJD_BJ0 {;1999 David Dollevoet
       Q1 = PIXEL
     ENDIF
   Q1R = REAL(Q1)
-  IF (Q1R >= 0)  
+  IF (Q1R >= 0)
       R1R = 1
     ELSE
       R1R = 0
@@ -1108,7 +1108,7 @@ DJD_BP0  {;1999 David Dollevoet
       Q2 = PIXEL
     ENDIF
   Q2R = REAL(Q2), Q2I = IMAG(Q2)
-  Z = PIXEL                                                       
+  Z = PIXEL
   :
   ZR = REAL(Z), ZI = IMAG(Z)
   ZAR = FN1(1-ABS(ZR*R1R+ZI)), ZAI = FN1(Q1I-ABS(1+ZR*R1R-ZI))
@@ -1246,7 +1246,7 @@ DJD_BR1 {;1999 David Dollevoet
         ELSE
           Z = UW-VW
         ENDIF
-    ENDIF  
+    ENDIF
   Z = ABS(Z)
   Z = FN4(Z)*S1I
   Z > S1R
@@ -1304,7 +1304,7 @@ DJD_BR2 {;1999 David Dollevoet
         ELSE
           Z = UW-VW
         ENDIF
-    ENDIF  
+    ENDIF
   Z = ABS(Z)
   Z = FN4(Z)
   Z > S1R
@@ -1397,7 +1397,7 @@ DJD_BS1 {;1999 David Dollevoet
       Z = WM-UM
     ELSE
       Z = WM-VM
-    ENDIF  
+    ENDIF
   Z = ABS(Z)*S1I
   Z > S1R
   }
@@ -1428,7 +1428,7 @@ DJD_BT2 {;1999 David Dollevoet
     ELSE
       Q2 = PIXEL
     ENDIF
-  Q2R = REAL(Q2), Q2I = IMAG(Q2)  
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
   N = 0, NN = 0
   Z = FN1(PIXEL), ZM = |Z|, X = REAL(Z), Y = IMAG(Z)
   :
@@ -1488,7 +1488,7 @@ DJD_CA0 {;2000 David Dollevoet
     ELSE
       Q2 = PIXEL
     ENDIF
-  Q2R = REAL(Q2), Q2I = IMAG(Q2)  
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
   N = 0, NN = 0
   Z = FN1(PIXEL), ZM = |Z|, X = REAL(Z), Y = IMAG(Z)
   :
@@ -1548,7 +1548,7 @@ DJD_CB0 {;2000 David Dollevoet
     ELSE
       Q2 = PIXEL
     ENDIF
-  Q2R = REAL(Q2), Q2I = IMAG(Q2)  
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
   IF (REAL(P1) || IMAG(P1) || REAL(P2) || IMAG(P2))
       SHIFTRESIZE = SHIFTRESIZE
     ELSE
@@ -1608,7 +1608,7 @@ DJD_CB1 {;2000 David Dollevoet
     ELSE
       Q2 = PIXEL
     ENDIF
-  Q2R = REAL(Q2), Q2I = IMAG(Q2)  
+  Q2R = REAL(Q2), Q2I = IMAG(Q2)
   IF (REAL(P1) || IMAG(P1) || REAL(P2) || IMAG(P2))
       SHIFTRESIZE = SHIFTRESIZE
     ELSE
@@ -1808,7 +1808,7 @@ DJD_DA1 {;2001 David Dollevoet
   P3RMODELA = FLOOR(P3RMODEL/10)
   P3RMODELB = P3RMODEL-P3RMODELA*10
   P3RBAILOUTCOUNT = FLOOR((ABS(P3R)-P3RMODEL)*10)+1
-  P3IBAILOUTRESIZE = ABS(P3I) 
+  P3IBAILOUTRESIZE = ABS(P3I)
   X = REAL(PIXEL), Y = IMAG(PIXEL)
   COUNT = 0, SHIFTEXECCOUNT = 0, SHIFTCOUNT = 0
   :
@@ -1938,7 +1938,7 @@ DJD_DA1 {;2001 David Dollevoet
   P3RMODELA = FLOOR(P3RMODEL/10)
   P3RMODELB = P3RMODEL-P3RMODELA*10
   P3RBAILOUTCOUNT = FLOOR((ABS(P3R)-P3RMODEL)*10)+1
-  P3IBAILOUTRESIZE = ABS(P3I) 
+  P3IBAILOUTRESIZE = ABS(P3I)
   X = REAL(PIXEL), Y = IMAG(PIXEL)
   COUNT = 0, SHIFTEXECCOUNT = 0, SHIFTCOUNT = 0
   :

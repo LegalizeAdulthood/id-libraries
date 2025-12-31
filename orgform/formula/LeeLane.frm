@@ -27,7 +27,7 @@ LL2-01  { ; overlay LL1-06 and LL1-09
 	  z = fn2(p1*fn1(z))
 	  PHC_bailout = |z| < b2
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-02  { ; overlay LL1-08 and LL1-11
 	z = pixel,c = fn2(z^p1),b1 = p2+3,b2 = p2+1:
@@ -38,7 +38,7 @@ LL2-02  { ; overlay LL1-08 and LL1-11
           z = p1*fn2(z*z*z*fn1(z)) + fn1(fn2(fn3(z)))
 	  PHC_bailout = z < b2
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-03  { ; overlay LL1-11 and LL1-06
 	z = pixel,c = (p1+1)*fn2(z*z*z),b1 = p2+3,b2 = p2+1:
@@ -47,9 +47,9 @@ LL2-03  { ; overlay LL1-11 and LL1-06
 	  PHC_bailout = z < b2
 	ELSE
 	  z = fn1(z)*z*z+c
-	  PHC_bailout = |z| < b1	
+	  PHC_bailout = |z| < b1
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 LL2-04  { ; overlay LL1-09 and LL1-08
 	z = pixel,c = fn2(z^p1),b1 = p2+3,b2 = p2+1:

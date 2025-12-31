@@ -98,7 +98,7 @@ Eyeball(XAXIS_NOPARM) {; Jon Osuch
     ; Try p1=0, p2=4, fn1=sqr, fn2=sinh
     z    = p1,
     x    = 1:
-    if (x  <  10) 
+    if (x  <  10)
         z=fn1(z) + pixel
     endif
     if (10 <= x)
@@ -140,7 +140,7 @@ FractalFenderC(XAXIS_NOPARM) {; Jon Osuch
     ; Try p1=0, p2=4, fn1=cosh, fn2=sqr
     ; Note:  use floating point
     ; Spectacular!
-    z  = p1, 
+    z  = p1,
     x  = |z|:
     if (1<x)
         z = fn1(z)+pixel
@@ -334,7 +334,7 @@ SinhEgg(XAXIS_NOPARM) {; Jon Osuch
 {=========================================================================}
 
 TestSinMandC(XAXIS_NOPARM) {;Jon Osuch
-     ; Try: p1=4, fn1=sin, fn2=sqr    
+     ; Try: p1=4, fn1=sin, fn2=sqr
      z  = p1,
      x  = |z|:
     if (1<x)

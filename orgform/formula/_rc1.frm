@@ -716,7 +716,7 @@ Carr1079 {
   z=1/pixel, c=1/pixel*0.91/pixel:
   z=z*1/sin(c)
   z=(z+(1/pixel-sin(c)))/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -724,7 +724,7 @@ Carr1079 {
 Carr1080 {
   z=1/pixel, c=cosxx(z/pixel)*sqr(1/pixel):
   z=(2*z+(4/pixel-sqrt(c)))/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -732,7 +732,7 @@ Carr1080 {
 Carr1081 {
   z=1/pixel, c=cotanh(z/pixel)*sqr(1/pixel):
   z=(2*z+(4/pixel-sqrt(c)))/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -740,7 +740,7 @@ Carr1081 {
 Carr1082 {
   z=1/pixel, c=cosxx(z^z/pixel-2):
   z=((z*1/(c^c))/(pixel-c*c))/1.45
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -749,7 +749,7 @@ Carr1083 {
   z=pixel, c=z^(cosxx(2.524)/pixel):
   z=z/c
   z=(z*1/c)/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -757,7 +757,7 @@ Carr1083 {
 Carr1084 {
   z=1/pixel, c=1/z^(z/pixel):
   z=(z*1/c)/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -765,7 +765,7 @@ Carr1084 {
 Carr1085 {
   z=4/pixel, c=(z/pixel)/(z^(-z/pixel)):
   z=(z*1/c)/(pixel-c*c)
-  |real(z)| <=100    
+  |real(z)| <=100
   ;SOURCE: 25carr.frm
 }
 
@@ -798,7 +798,7 @@ Carr1088 {
 }
 
 
-Carr1089 { 
+Carr1089 {
   z=1/pixel*0.91/pixel, c=1.75/pixel:
   z=((1.099,0)-z)/(pixel-c*c)
   |z| <=100
@@ -1003,7 +1003,7 @@ Carr1110 {
 Carr1111 {
   z=1/pixel*0.91/pixel, c=cabs(1/pixel)/cotanh(1.099,0):
   z=(sqr(conj(z*1/c))+(pixel))
-  |real(z)| <=100          
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1011,7 +1011,7 @@ Carr1111 {
 Carr1112 {
   z=1/pixel*0.91/pixel, c=cabs(1/pixel*1/pixel)/cotanh(1.099,0):
   z=((sqr(conj(z*1/c))+(pixel*pixel)))/(pixel-z*1/c)
-  |real(z)| <=100          
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1019,65 +1019,65 @@ Carr1112 {
 Carr1113 {
   z=cabs(1/pixel), c=cabs(1/pixel)/tanh(1.099,0):
   z=((sqr(conj(z*1/c))+(pixel*pixel)))/(pixel-z/c)
-  |real(z)| <=100          
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1114 {
-  z=(1/pixel)/(1.099,0), c=(pixel-0.5)/(1.099,0): 
+  z=(1/pixel)/(1.099,0), c=(pixel-0.5)/(1.099,0):
   z=sqr(z)+conj((pixel-c)-1)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1115 {
-  z=(1/pixel)/(1.099,0), c=(pixel-0.5)/(1.099,0): 
+  z=(1/pixel)/(1.099,0), c=(pixel-0.5)/(1.099,0):
   z=(sqr(z)+conj((pixel-c)-1))/(pixel-z/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1116 {
-  z=(1/pixel)/(2.0,0), c=(pixel-0.5)/(2.0,0): 
+  z=(1/pixel)/(2.0,0), c=(pixel-0.5)/(2.0,0):
   z=(sqr(conj(z*1/c))+conj((pixel-c)-1))/(pixel-z*z+c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1117 {
-  z=(2.0,0)/(1/pixel), c=(2.0,0)/(pixel-0.5): 
+  z=(2.0,0)/(1/pixel), c=(2.0,0)/(pixel-0.5):
   z=(sqr(conj(z))+conj((pixel-c)-1))/(pixel-z*1/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1118 {
-  z=(2.3,0)/(1/pixel), c=(2.3,0)/(pixel-0.67): 
+  z=(2.3,0)/(1/pixel), c=(2.3,0)/(pixel-0.67):
   z=(sqr(conj(z-1/pixel))+conj((pixel-z/c)-1))/(pixel-z*1/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1119 {
   z=(2.3,0)/(4/pixel), c=(2.3,0)/(pixel-0.67):
-  z=z*1/c 
+  z=z*1/c
   z=(sqr(conj(z-1/pixel))+conj((pixel-z/c)-1))/(pixel-z*1/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
 
 Carr1120 {
   z=(0.3,0)/(4/pixel), c=1/(pixel-0.87):
-  z=(z/c)/(pixel-c*c) 
+  z=(z/c)/(pixel-c*c)
   z=(sqr(conj(z-1/pixel))+conj((pixel-z/c)-1))/(pixel-z*1/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1086,7 +1086,7 @@ Carr1121 {
   z=(0.9,0)/(4/pixel), c=1.23/(pixel-0.87):
   z=z*1/c
   z=(pixel-z*z)/((pixel-c*c)+1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1095,7 +1095,7 @@ Carr1122 {
   z=(0.3,0.6)/(3/pixel), c=1.63/(pixel-0.87):
   z=(z*z+c)/1.34
   z=(pixel-z*z)/((pixel-c*c)+1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1103,7 +1103,7 @@ Carr1122 {
 Carr1123 {
   z=(1.099,0)/(pixel-(1.099,0)), c=1/pixel:
   z=pixel-((z-1)/z+exp(z))/(pixel-(z*1/c))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1112,7 +1112,7 @@ Carr1124 {
   z=(1.099,0)/(pixel-(1.099,0)), c=exp(1/pixel*0.91/pixel):
   z=(z*1/c+1/pixel)/(pixel-conj(c*c))
   z=z*1/c
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1121,7 +1121,7 @@ Carr1125 {
   z=exp(1.099,0)/(pixel-(1.099,0)), c=exp(1/pixel*0.91/pixel):
   z=(z*1/c+1/pixel)/(pixel-conj(c*c))
   z=z*z*z+c
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1130,7 +1130,7 @@ Carr1126 {
   z=exp(1.099,0)/((1.099,0)+pixel)
   c=(exp(1/pixel*0.91/pixel))/(0.3,0.6):
   z=z+c-abs(imag(z))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1139,7 +1139,7 @@ Carr1127 {
   z=exp(1.099,0)/((1.099,0)+pixel)
   c=(exp(1/pixel*0.91/pixel))/(0.3,0.6):
   z=(z+c-abs(imag(z)))/(pixel-c*c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1148,7 +1148,7 @@ Carr1128 {
   z=exp(2.099,0)/((1.099,0)+pixel)
   c=(exp(1/pixel*0.91/pixel))/(1.099,0):
   z=(z+c-abs(imag(z)))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1157,7 +1157,7 @@ Carr1129 {
   z=sqrt(2.099,0)/((1.099,0)+pixel)
   c=(exp(1/pixel*0.91/pixel))/(1.099,0):
   z=(z+c-abs(imag(z)))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1166,7 +1166,7 @@ Carr1130 {
   z=sqrt((1.099,0)+pixel)/(1.099,0)
   c=(exp(1/pixel*0.91/pixel))/(1.099,0):
   z=(z+c-abs(imag(z)))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1175,7 +1175,7 @@ Carr1131 {
   z=sqrt((1.099,0)+pixel)/(1.099,0)
   c=(1/pixel*0.91/pixel)/(1.099,0):
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1184,7 +1184,7 @@ Carr1132 {
   z=cotanh((1.099,0)+pixel)/(1.099,0)
   c=(1/pixel*0.91/pixel)/(1.099,0):
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1194,7 +1194,7 @@ Carr1133 {
   c=(1/pixel*0.91/pixel)/(1.099,0):
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1204,7 +1204,7 @@ Carr1134 {
   c=exp(1/pixel*0.91/pixel)/sinh(1.099,0):
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
   z=(z+c-abs(imag(conj(z))))/(1/pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1214,7 +1214,7 @@ Carr1135 {
   c=sqr(pixel)/sqr(1/(1.099,0)):
   z=c-z*(1.099,0)
   z=c-z*pixel
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1224,7 +1224,7 @@ Carr1136 {
   c=sqr(pixel)/sqr(1/(1.099,0)):
   z=pixel-(c-z*(1.099,0))
   z=(1.099,0)-(c-z*pixel)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 26carr.frm
 }
 
@@ -1237,7 +1237,7 @@ Carr1137 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+pixel
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 26carr.frm
 }
 
@@ -1250,7 +1250,7 @@ Carr1138 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+(pixel)
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 26carr.frm
 }
 
@@ -1263,7 +1263,7 @@ Carr1139 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=(z*z)+(pixel*pixel*pixel)
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 26carr.frm
 }
 
@@ -1412,7 +1412,7 @@ Carr1155 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+(pixel)
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 27carr.frm
 }
 
@@ -1426,7 +1426,7 @@ Carr1156 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z)+(pixel/(1.099,0))
   x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: 27carr.frm
 }
 
@@ -1561,7 +1561,7 @@ Carr1172 {; Modified Noel Giffin formula
   temp=z
   z=z*z-zp
   zp=sin(-temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: 27carr.frm
 }
 
@@ -1571,7 +1571,7 @@ Carr1173 {; Ditto above
   temp=real(z)
   z=exp(z*z+zp)
   zp=z-(cosxx(1/temp))
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 27carr.frm
 }
 
@@ -1784,7 +1784,7 @@ Carr1192 {; Modified (Modified Newton; Tim Wegner)
           ; from MISCBLB.FRM
   z=1/pixel, z2=z*z+c, z3=z*(cosxx(z2))
   c=cosxx(1/pixel*0.91/pixel):
-  z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)      
+  z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)
   z2=z*z/c*c
   z3=z*z2
   p2<=|z3+p1*z2+1|
@@ -2074,7 +2074,7 @@ Carr1219 {
   z=1/(pixel*pixel), c=imag(cosxx(1/pixel)):
   z=z-(pixel-z*z)/(pixel-c*c)
   c=(1+flip(imag(c)))*real(c)/2+z
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
 
@@ -2083,7 +2083,7 @@ Carr1220 {
   z=1/(pixel*pixel*pixel)
   c=pixel-sqr(imag(cosxx(1/pixel))):
   z=c-z*pixel
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
 
@@ -2093,7 +2093,7 @@ Carr1221 {
   z1=cosxx(pixel), c1=cosxx(pixel):
   z=z*z1+c
   z=z1*z+c1
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 28carr.frm
 }
 
@@ -2331,7 +2331,7 @@ Carr1247 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z*1/c)+pixel
   x=|real(z)|
-  x<=4 
+  x<=4
   ;SOURCE: 28carr.frm
 }
 
@@ -2346,7 +2346,7 @@ Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
   ENDIF
   z=sqr(z/c)+(pixel*pixel)
   x=|real(z)|
-  x<=100 
+  x<=100
   ;SOURCE: 28carr.frm
 }
 
@@ -2360,7 +2360,7 @@ Carr1248x (XAXIS_NOPARM) {; Modified Lee Skinner frm.
   ENDIF
   z=sqr(z/c)+(pixel*pixel)
   x=|real(z/c)|
-  x<=100 
+  x<=100
   ;SOURCE: car1248x.frm
 }
 
@@ -2831,7 +2831,7 @@ Carr1300 {; based on formulas by Brad Beacham and Gordon Lamb
   b=(z*1/c)*(shift<count)
   count=count+1/pixel
   z=z-(a+b+c)/(pixel-c*c)
-  |real(z)| <=100  
+  |real(z)| <=100
   ;SOURCE: 30carr.frm
 }
 
@@ -2844,7 +2844,7 @@ Carr1301 {; based on formulas by Brad Beacham and Gordon Lamb
   b=(z*1/c)*(shift<count)
   count=count+sqr(1/pixel)
   z=z-((a+b)*1/c)/(pixel-c*c)
-  |real(z)| <=100  
+  |real(z)| <=100
   ;SOURCE: 30carr.frm
 }
 
@@ -2857,7 +2857,7 @@ Carr1302 {; based on formulas by Brad Beacham and Gordon Lamb
   b=(z*1/c)*(shift<count)
   count=count/(cosxx(1/pixel))
   z=z-((a+b)*1/c)/(pixel-c*c)
-  |real(z)| <=100  
+  |real(z)| <=100
   ;SOURCE: 30carr.frm
 }
 
@@ -2871,7 +2871,7 @@ Carr1303 {; based on formulas by Brad Beacham and Gordon Lamb
   count=count/(cosxx(sqr(2.5/pixel)))
   z=(z-sqr(a+b)^c)/(pixel*pixel+c)
   z=(pixel-z*z)/(pixel-c*c)
-  |real(z)| <=100  
+  |real(z)| <=100
   ;SOURCE: 30carr.frm
 }
 
@@ -3351,7 +3351,7 @@ Carr1354 {
 }
 
 
-Carr1355 {; Carr-brot 
+Carr1355 {; Carr-brot
   z=log(3.1416)+1/pixel:
   z=z-(sqr(z)+pixel)
   |z| <= 4
@@ -3722,7 +3722,7 @@ Carr1396 {
 Carr1397 {
   z=sqrt(1/pixel)/pixel, c=sqrt(0.3,0.6)-1.32:
   z=z-(z^pixel+c)+1/c
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 31carr.frm
 }
 
@@ -3730,14 +3730,14 @@ Carr1397 {
 Carr1398 {
   z=sqrt(1/pixel)/pixel, c=sqrt(0.3,0.6)-1.32:
   z=(z*z+c)/(z*1/c)
-  |real(z)| <=100 
+  |real(z)| <=100
   ;SOURCE: 31carr.frm
 }
 
 
-Carr1399 {; Mark Peterson; Mod. by T.J.E. Reed; Modified 
+Carr1399 {; Mark Peterson; Mod. by T.J.E. Reed; Modified
   z=pixel:
-  z=tan(z*z)+(-0.74543, 0.2)+0.02    
+  z=tan(z*z)+(-0.74543, 0.2)+0.02
   |z| <= 4
   ;SOURCE: 31carr.frm
 }
@@ -3768,27 +3768,27 @@ Carr1402 {; Julia (I think??)
 
 
 Carr1403 {; Modified T.J.E. Reed formula;Julia
-  c=z=pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z    
+  c=z=pixel:
+  z=z*z+c
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1404 {; Modified T.J.E. Reed formula; Julia
-  c=z=pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z    
+  c=z=pixel:
+  z=z*z+c
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1405 {; Modified T.J.E. Reed formula; Julia
-  c=z=pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/6+z    
+  c=z=pixel:
+  z=z*z+c
+  c=(1+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
@@ -3796,133 +3796,133 @@ Carr1405 {; Modified T.J.E. Reed formula; Julia
 
 Carr1406 {; Julia (?) that produces math errors.
           ; Modified T.J.E. Reed formula
-  c=z=pixel/0.995:   
-  z=z*z+c   
-  c=(0.5+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/9+z    
+  c=z=pixel/0.995:
+  z=z*z+c
+  c=(0.5+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1407 {; Ditto above
-  z=pixel/0.995, c=(-0.74543,0.2):   
-  z=z*z+c   
-  c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/7+z    
+  z=pixel/0.995, c=(-0.74543,0.2):
+  z=z*z+c
+  c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/7+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1408 {; Ditto above
-  z=pixel/0.995, c=(-1.09989,0.595927):   
-  z=z*z+c   
-  c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/9+z    
+  z=pixel/0.995, c=(-1.09989,0.595927):
+  z=z*z+c
+  c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1409 {; Ditto above.
-  z=pixel/0.995, c=1/pixel:   
-  z=z*z+c   
-  c=(1+flip(imag(cosh(sqrt(flip(c))))))*real(sqrt(conj(tanh(c))))/9+z    
+  z=pixel/0.995, c=1/pixel:
+  z=z*z+c
+  c=(1+flip(imag(cosh(sqrt(flip(c))))))*real(sqrt(conj(tanh(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1410 {; Ditto above
-  z=pixel-1, c=sqr(1/pixel):   
-  z=z*z+(0.3,0.6)   
-  c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/7.9+z    
+  z=pixel-1, c=sqr(1/pixel):
+  z=z*z+(0.3,0.6)
+  c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/7.9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1411 {; Ditto above.
-  z=pixel, c=sqrt(sqr(z*z*z*z)):   
-  z=z*z+c   
-  c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/9+z    
+  z=pixel, c=sqrt(sqr(z*z*z*z)):
+  z=z*z+c
+  c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1412 {; Ditto above.
-  z=pixel, c=(-0.7549,0.209981):   
-  z=z*z+c   
-  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+tan(z-0.2)    
+  z=pixel, c=(-0.7549,0.209981):
+  z=z*z+c
+  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+tan(z-0.2)
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1413 {; Ditto above.
-  z=pixel, c=(-0.745,0.213):   
+  z=pixel, c=(-0.745,0.213):
   z=z^2+c
-  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z    
+  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1414 {; Ditto above.
-  z=tan(pixel), c=conj(-0.89895,0.377913):   
+  z=tan(pixel), c=conj(-0.89895,0.377913):
   z=z^2+c
-  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z    
+  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1415 {; Ditto above.
-  z=tan(pixel), c=asinh(-0.89895,0.377913):   
+  z=tan(pixel), c=asinh(-0.89895,0.377913):
   z=z^2+c
-  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z    
+  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1416 {; Ditto above.
-  z=tan(pixel), c=1.224*(-0.89895,0.577913):   
+  z=tan(pixel), c=1.224*(-0.89895,0.577913):
   z=z^2+c
-  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z    
+  c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1417 {; Ditto above.
-  z=tan(cosxx(pixel)), c=1.224*(1.2,-0.09):   
+  z=tan(cosxx(pixel)), c=1.224*(1.2,-0.09):
   z=z^2+c
-  c=cotan(1+imag(conj(sqrt(c))))*tan(real(conj(sqrt(c))))/9+z    
+  c=cotan(1+imag(conj(sqrt(c))))*tan(real(conj(sqrt(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1418 {; Ditto above.
-  z=tan(cosxx(pixel)), c=1.224*(abs(imag(pixel))):   
+  z=tan(cosxx(pixel)), c=1.224*(abs(imag(pixel))):
   z=z^2+sin(pixel)
-  c=cotan(1+imag(1/conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z    
+  c=cotan(1+imag(1/conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1419 {; Julia frm ?
-  z=pixel, c=1/pixel:   
+  z=pixel, c=1/pixel:
   z=z*z+(-0.7564,0.21978)+sin(sqrt(z-0.51))
-  c=conj(real(sqrt(c)))*flip(imag(sqrt(c)))/9+z    
+  c=conj(real(sqrt(c)))*flip(imag(sqrt(c)))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1420 {; Julia ?
-  z=cosxx(pixel):   
+  z=cosxx(pixel):
   z=((z*z)+0.5)+(1/log(real(pixel*pixel-1.5))-1.55)
   |z| <= 4
   ;SOURCE: 32carr.frm
@@ -3930,40 +3930,40 @@ Carr1420 {; Julia ?
 
 
 Carr1421 {; Modified BUILTN.FRM Julia
-  z=pixel  
+  z=pixel
   c=((-0.7456,0.39562)*(|(-0.7456,0.2)|<=0)+(-0.7456,0.2) ):
   z=sqr(z*z)+c
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1422 {; Modified BUILTN.FRM Julia
-  z=pixel  
+  z=pixel
   c=((-0.7456,0.39562)*(|(-0.7456,0.2)|<=0)+(-0.7456,0.2) ):
   z=(z*z)+c
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <= 4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1423 {; Modified BUILTN.FRM Julia
-  z=pixel  
+  z=pixel
   c=((1.099,0)*(|(-0.7456,0.42362)|<=0)+sqr(-0.7456,0.42362) ):
   z=(z*z)+(0.4,0.35)
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <=4
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1424 {; Modified BUILTN.FRM Julia
-  z=((1-pixel)/2.5^0.75)  
+  z=((1-pixel)/2.5^0.75)
   c=((1.099,0)*(|(-0.7456,0.42362)|<=0)+sqr(-0.7456,0.42362) ):
   z=(z*z)+(-1.76,-0.014)
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <=4
   ;SOURCE: 32carr.frm
 }
@@ -3975,7 +3975,7 @@ Carr1425 {; Modified BUILTN.FRM Manowar
   oldz=z
   z=sqr(oldz)+z1+c
   z1=oldz
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <= t
   ;SOURCE: 32carr.frm
 }
@@ -3987,7 +3987,7 @@ Carr1426 {; Modified BUILTN.FRM Manowar
   oldz=z
   z=sqr(oldz)+z1+c
   z1=oldz
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <= t
   ;SOURCE: 32carr.frm
 }
@@ -3999,18 +3999,18 @@ Carr1427 {; Modified BUILTN.FRM Manowar
   oldz=z
   z=sqr(oldz)+z1+c
   z1=oldz
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z| <= t
   ;SOURCE: 32carr.frm
 }
 
 
 Carr1428 {; Julia,Modified BUILTN.FRM Julia
-  z=pixel 
+  z=pixel
   c=((0.3,0.6)*(|(1/pixel)|<=0)+(1/pixel))
   t=(4*(real(1/pixel)<=0)+real(1/pixel)*(0<1/pixel)):
   z=sqr(z)+c
-  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z 
+  c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z
   |z|<=t
   ;SOURCE: 32carr.frm
 }
@@ -6661,7 +6661,7 @@ Carr1694 {; Mandel type.
 }
 
 
-Carr1695 {; Julia 
+Carr1695 {; Julia
   z=1/(pixel+5*pixel)
   c=1/pixel-conj(pixel):
   z=z*z+c
@@ -8232,7 +8232,7 @@ Carr1862 {; Mandelbrot.
 }
 
 
-Carr1863 {; Carr-brot-2. 
+Carr1863 {; Carr-brot-2.
   z=log(3.1416)+conj(1/pixel):
   z=z-(sqr(z)+pixel)
   |z| <=4
@@ -8240,7 +8240,7 @@ Carr1863 {; Carr-brot-2.
 }
 
 
-Carr1864 {; Carr-brot-3. 
+Carr1864 {; Carr-brot-3.
   z=sqrt(5.1416)+(1/pixel):
   z=z-(sqr(z)+(pixel))
   z=z*z+z
@@ -8249,7 +8249,7 @@ Carr1864 {; Carr-brot-3.
 }
 
 
-Carr1865 {; Carr-brot-4 
+Carr1865 {; Carr-brot-4
   z=1/(pixel-sqrt(conj(pixel))-log(pixel)):
   z=z-(sqr(z)+(pixel))
   |sin(z)| <=4
@@ -8318,7 +8318,7 @@ Carr1871 {; Modified Newton.
 }
 
 
-Carr1872 {; Modified Sylvie Gallet formula.  
+Carr1872 {; Modified Sylvie Gallet formula.
   z=conj(1/pixel), c=1/(pixel-conj(1/pixel)-flip(1/pixel))
   compt=0, limit=real(0.3,0.6), bailout=4
   p=(-0.743380900000982,-0.131850030300002):
@@ -8331,7 +8331,7 @@ Carr1872 {; Modified Sylvie Gallet formula.
 }
 
 
-Carr1873 {  
+Carr1873 {
   c1=1/(pixel-sin(1/pixel))
   z1=c1-conj(1/pixel)
   c=1/(pixel-(z1+c1)/pixel)
@@ -8538,7 +8538,7 @@ Carr1900 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((z2+c)/(|c|))*test1 + (z-z1)*(1-test1) 
+  z = ((z2+c)/(|c|))*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
@@ -8617,7 +8617,7 @@ Carr1904 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((pixel-z2+c)/(pixel-c*c))*test1 + (z-z1)*(1-test1) 
+  z = ((pixel-z2+c)/(pixel-c*c))*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
@@ -8637,7 +8637,7 @@ Carr1905 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((z^4)*(c^4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((z^4)*(c^4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
@@ -8657,7 +8657,7 @@ Carr1906 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((z4)*(c^4)+(-0.7456,0.2))*test1 + (z-z1)*(1-test1) 
+  z = ((z4)*(c^4)+(-0.7456,0.2))*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+(1.099,0)
@@ -8677,7 +8677,7 @@ Carr1907 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (sqr(sqr(z)+c^4)-c)*test1 + (z-z1)*(1-test1) 
+  z = (sqr(sqr(z)+c^4)-c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
@@ -8697,7 +8697,7 @@ Carr1908 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 * z * z) / (1/sin(z) + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 * z * z) / (1/sin(z) + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
@@ -8717,7 +8717,7 @@ Carr1909 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 * z * z) / (1/cotanh(z) + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 * z * z) / (1/cotanh(z) + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
@@ -8737,7 +8737,7 @@ Carr1910 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = ((4 *sin(z2)) / (z + 4) + c)*test1 + (z-z1)*(1-test1) 
+  z = ((4 *sin(z2)) / (z + 4) + c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 && test0 && test1))
   iter = iter+1
@@ -8757,7 +8757,7 @@ Carr1911 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(test3 && test0 && test1)))
   iter = iter+1
@@ -8777,7 +8777,7 @@ Carr1912 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(cabs(test3 && test0 && test1))))
   iter = real(iter)+(1.099,0.0)
@@ -8797,7 +8797,7 @@ Carr1913 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = 0.79*(z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-tanh(cabs(test3 && test0 && test1))))
   iter = real(iter)+(1.099,0.0)
@@ -8817,7 +8817,7 @@ Carr1914 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (z2+c-0.099/pixel)*test1 + ((z-z1)*(1-test1)) 
+  z = (z2+c-0.099/pixel)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
@@ -8837,7 +8837,7 @@ Carr1915 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (real(z2)*z4+c)*test1 + ((z-z1)*(1-test1)) 
+  z = (real(z2)*z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
@@ -8857,7 +8857,7 @@ Carr1916 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
-  z = (sqr(z1)*z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z = (sqr(z1)*z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+(1.099,0.0)
@@ -8876,7 +8876,7 @@ Carr1917 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -8896,7 +8896,7 @@ Carr1918 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -8916,7 +8916,7 @@ Carr1919 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   c=z+c/2.125
   test3 = (test3 || (|z|>b1))
@@ -8937,7 +8937,7 @@ Carr1920 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -8957,7 +8957,7 @@ Carr1921 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -8977,7 +8977,7 @@ Carr1922 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -8997,7 +8997,7 @@ Carr1923 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9017,7 +9017,7 @@ Carr1924 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   c=z+c/2.125
   test3 = (test3 || (|z|>b1))
@@ -9038,7 +9038,7 @@ Carr1925 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9058,7 +9058,7 @@ Carr1926 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z4+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9078,7 +9078,7 @@ Carr1927 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z-1/pixel|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9098,7 +9098,7 @@ Carr1928 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+1/c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9118,7 +9118,7 @@ Carr1929 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9138,7 +9138,7 @@ Carr1930 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0)) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6 + (z6==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9155,10 +9155,10 @@ Carr1931 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (4.0,0.4)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9175,10 +9175,10 @@ Carr1932 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7564,0.21978)+(c/10))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9195,10 +9195,10 @@ Carr1933 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7564,0.21978)+(c/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9215,10 +9215,10 @@ Carr1934 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+(-0.7456,0.10)+(c/7*pixel))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9235,10 +9235,10 @@ Carr1935 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9255,10 +9255,10 @@ Carr1936 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9275,10 +9275,10 @@ Carr1937 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9295,10 +9295,10 @@ Carr1938 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9315,10 +9315,10 @@ Carr1939 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9335,10 +9335,10 @@ Carr1940 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9355,10 +9355,10 @@ Carr1941 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9375,10 +9375,10 @@ Carr1942 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9396,10 +9396,10 @@ Carr1943 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9417,10 +9417,10 @@ Carr1944 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9438,10 +9438,10 @@ Carr1945 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c+real(z/5))*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9459,10 +9459,10 @@ Carr1946 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9480,10 +9480,10 @@ Carr1947 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9501,10 +9501,10 @@ Carr1948 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9523,10 +9523,10 @@ Carr1949 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9545,10 +9545,10 @@ Carr1950 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = ((4 *z2) / (z + 4) + c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9566,10 +9566,10 @@ Carr1951 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = ((4 *z2) / (z + 4) + c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9587,10 +9587,10 @@ Carr1952 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9609,10 +9609,10 @@ Carr1953 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9631,10 +9631,10 @@ Carr1954 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9652,10 +9652,10 @@ Carr1955 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9673,10 +9673,10 @@ Carr1956 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = real(p1)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
@@ -9692,13 +9692,13 @@ Carr1957 (XYAXIS) {; Modified Sylvie Gallet frm.   REVISED 4/12/96
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
-  z = 1/(pixel-sin(1/pixel)-tan(1/pixel)) 
-  c = 1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
+  z = 1/(pixel-sin(1/pixel)-tan(1/pixel))
+  c = 1/(pixel-conj(1/pixel)-flip(1/pixel))
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c)*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -9708,19 +9708,19 @@ Carr1957 (XYAXIS) {; Modified Sylvie Gallet frm.   REVISED 4/12/96
 }
 
 
-Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],  
+Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],
    ; Revised for compatability with Fractint v. 19.3 4/12/96
    ; Version of this formula in original 42carr.frm should be deleted.
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
-  z = 1/(pixel-sin(1/pixel)-tan(1/pixel)) 
-  c = 1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
+  z = 1/(pixel-sin(1/pixel)-tan(1/pixel))
+  c = 1/(pixel-conj(1/pixel)-flip(1/pixel))
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter<limit), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c+(-0.7456,0.2))*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -9730,18 +9730,18 @@ Carr1958 (XYAXIS) {; Modified Sylvie Gallet frm. [101324,3444],
 }
 
 
-Carr1959 {; Modified Sylvie Gallet frm. [101324,3444], REVISED 4/12/96 
+Carr1959 {; Modified Sylvie Gallet frm. [101324,3444], REVISED 4/12/96
    ; Revised for compatability with Fractint v. 19.3
    ; Version of this formula in original 42carr.frm should be deleted.
    ; limit = real portion of P1    (requires periodicity=0)
    ; iter <= limit ==> Mandelbrot set of  z^7+c
    ; iter >  limit ==> Newton's method applied to  z^6-1 = 0
-  limit = real(p1), test0 = 1, test3=0, iter = 1 
+  limit = real(p1), test0 = 1, test3=0, iter = 1
   z=pixel, c =pixel
   b1 = 64, b2 = 0.000001, zn = pixel :
-  test1 = (iter>limit*(1/-pixel)), test2=(iter!=limit), test0 = 1-test0 
+  test1 = (iter>limit*(1/-pixel)), test2=(iter!=limit), test0 = 1-test0
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z 
+  z2 = z*z, z4 = z2*z2, n = z4*z2-1, d = 4*z4*z
   z = (z*n+z+c)*test1 + (z-n/(d + (d==0)))*(1-test1)
   test3 = (test3 || (|z|>b1))
   z = z*(1-(test3 * test0 * test1))
@@ -9869,7 +9869,7 @@ Carr1968 {; Modified Sylvie Gallet frm.
 
 
 Carr1969 {; Modified Sylvie Gallet frm.
-  z=c=pixel+(-0.743380900000982,-0.131850030300002) 
+  z=c=pixel+(-0.743380900000982,-0.131850030300002)
   compt=0, limit=real(p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -9882,7 +9882,7 @@ Carr1969 {; Modified Sylvie Gallet frm.
 
 
 Carr1970 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(1.5/p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -9895,7 +9895,7 @@ Carr1970 {; Modified Sylvie Gallet frm.
 
 
 Carr1971 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=real(p1/pixel), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -9908,7 +9908,7 @@ Carr1971 {; Modified Sylvie Gallet frm.
 
 
 Carr1972 {; Modified Sylvie Gallet frm.
-  c=z=pixel 
+  c=z=pixel
   compt=0, limit=sqrt(p1), bailout=4
   p=(-0.743380900000982,-0.131850030300002) :
   test=(compt<limit)
@@ -9928,11 +9928,11 @@ Carr1973 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = (center+rad/(pix-center)), limit = abs(p1/pixel)
-  test0 = 1, b1 = 16, b2 = 0.0001, test3=0: 
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0)) 
-  z = (z2+c)*test1 + ((z-z1)*(1-test1)) 
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4 + (z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
   test3 = (test3 || (|z|>b1))
   z = (z*(1-(test3 && test0 && test1)))
   iter = iter+1
@@ -9955,7 +9955,7 @@ Carr1974 {; Modified Sylvie Gallet frm.
 
 
 Carr1975 {; Modified Sylvie Gallet frm.
-  z=exp(pixel), c=1+flip(imag(pixel))+conj(1/pixel) 
+  z=exp(pixel), c=1+flip(imag(pixel))+conj(1/pixel)
   d=log(1/pixel-conj(1/pixel))
   compt=0, limit=(abs(p1/10)), bailout=4.9
   p=(-0.743380900000982,-0.131850030300002):
@@ -9977,11 +9977,11 @@ Carr1976 {; Modified Sylvie Gallet frm.   REVISED 4/12/96
   iter=1, rad=6, center=(1.0,0.1)
   pix=exp(10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn=(center+rad/(pix-center)), limit=real(p1/(tan(1/pixel)))
-  test0=1, b1=16, b2=0.0001, test3=0: 
+  test0=1, b1=16, b2=0.0001, test3=0:
   test1=(iter<limit), test0=1-test0, test2=(iter!=limit)
   z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-10*pixel)/(4*z4 + (z4==0))
-  z=(z2+c)*test1+((z-z1)*(1-test1)) 
+  z=(z2+c)*test1+((z-z1)*(1-test1))
   test3=(test3 || (|z|>b1))
   z=(z*(1-(test3 && test0 && test1)))
   iter=iter+1
@@ -10201,7 +10201,7 @@ Carr1987 {; Modified Sylvie Gallet frm.
 
 Carr1988 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
-  z=c=1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  z=c=1/(pixel-conj(1/pixel)-flip(1/pixel))
   p10=10*pixel, th1=tanh(1)
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
@@ -10365,7 +10365,7 @@ Carr1998 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1

@@ -11,14 +11,14 @@ January {; Sylvie Gallet, Dec 1997
   ELSE
     z2 = z1*z1
     z1 = ((1,-1)*z2*z2 + (7,1)*z1) / (2*z1*z2 + 6)
-    mz = abs(cabs(z1)-1) 
+    mz = abs(cabs(z1)-1)
     cont = 1
     iter = iter + 1
   ENDIF
   cont
   ;SOURCE: 97msg.frm
 }
- 
+
 May-2 {; Sylvie Gallet, Dec 1997
        ; Newton's method applied to z^3 - 1 = 0
        ; Use decomp = 256 and periodicity = 0
@@ -45,7 +45,7 @@ May-2 {; Sylvie Gallet, Dec 1997
   cont
   ;SOURCE: 98msg.frm
 }
- 
+
 New2 {; Sylvie Gallet, Dec 1997
       ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
@@ -68,4 +68,4 @@ New2 {; Sylvie Gallet, Dec 1997
    cont
    ;SOURCE: calendar.frm
 }
- 
+

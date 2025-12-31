@@ -1,10 +1,10 @@
 
 
-Carr-01 { 
+Carr-01 {
   z = Pixel, z = cosxx(z):
   z = z + Pixel
   z = sqr(z)
-  |z| <=4          
+  |z| <=4
   ;SOURCE: carr.frm
 }
 
@@ -67,7 +67,7 @@ Carr-03 {
 
 
 Carr-04 {
-  c = z = 1 / pixel 
+  c = z = 1 / pixel
   z = cosh(z) + c
   |z| <= 4
   ;SOURCE: carr.frm
@@ -75,7 +75,7 @@ Carr-04 {
 
 
 Carr-05 {
-  a=(0,0), b=(0,0): 
+  a=(0,0), b=(0,0):
   z=z+1
   anew=sqr(a)-sqr(b)+pixel
   b=2.0*a*b+p1
@@ -580,7 +580,7 @@ Carr-14 {; modified fnzp fnpix
   z = 1 / tan(1 / pixel) +p1
   c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
   z = fn1(z) * fn2(z)
-  |z| <=64 
+  |z| <=64
   ;SOURCE: carr.frm
 }
 
@@ -648,10 +648,10 @@ Carr-149 {
 
 Carr-15 (xaxis) {; Mark Peterson modified(Zoom all the way out & look)
                  ; Edited for Fractint v20 by G. Martin
-  z = log(pixel), z = cosxx(z): 
+  z = log(pixel), z = cosxx(z):
   z = z + cosxx(pixel)
   z = sqr(z)
-  Lastsqr <=4 
+  Lastsqr <=4
   ;SOURCE: carr.frm
 }
 
@@ -1109,7 +1109,7 @@ Carr-194 {
 Carr-195 {
   z=c=1/pixel:
   z=z*z*z/5 + sqr(z) + (-flip(c))
-  |z| <=100 
+  |z| <=100
   ;SOURCE: carr.frm
 }
 
@@ -2210,7 +2210,7 @@ Carr-309 {; Great Crystals
 }
 
 
-Carr-31 {; Carr-24 Modified       
+Carr-31 {; Carr-24 Modified
   c=z=1/pixel:
   z=(z*z*z*z*z*z) + c
   |z| <= 4
@@ -2729,7 +2729,7 @@ Carr-367 {
 
 Carr-368 {; Distance Estimator works with this FRM
   c=z=sqr(1/fn2(1/pixel-1.5)):
-  z=z*z*z+c 
+  z=z*z*z+c
   |z| <=10
   ;SOURCE: 08carr.frm
 }
@@ -2835,7 +2835,7 @@ Carr-379 {
 
 
 Carr-38 {; Modified Julia formula from BUILTIN.FRM file
-  c=cosxx(1/pixel) 
+  c=cosxx(1/pixel)
   c=((0.4,0.8) ^ (|p1|<=0)) + p1
   t=(4^(real(p2)<=0) + real(p2) ^ (0<p2)):
   z= sqr(z*z*z*z*z*z) + c
@@ -4596,7 +4596,7 @@ Carr-571 {
 Carr-572 {
   z=1/conj(pixel-p1), c=sin(z/pixel)^conj(z/pixel):
   z=z*z+(c-p2)
-  |z| <=10 
+  |z| <=10
   ;SOURCE: carr.frm
 }
 
@@ -6400,7 +6400,7 @@ Carr-766 {
 }
 
 
-Carr-767 {; This is a modification of a formula I saw somewhere. 
+Carr-767 {; This is a modification of a formula I saw somewhere.
           ; If you know who's it is please let me know.
   c=z=1/(pixel^1.245):
   z=fn1(z^1.245)+fn2(c)
@@ -6859,7 +6859,7 @@ Carr-817 {; Modified SJMAND01
 Carr-818 {; Modified SJMAND01
   z=flip(1/(1.899*imag(pixel)+flip(real(pixel)*1.724)))
   c=conj(1/(2.788+imag(pixel)+flip(real(pixel)*2.524))):
-  z=abs(z*z+c) 
+  z=abs(z*z+c)
   z=real(z*z+c)
   |z| <=10
   ;SOURCE: 20carr.frm

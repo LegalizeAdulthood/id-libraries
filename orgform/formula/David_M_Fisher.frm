@@ -56,7 +56,7 @@ BILL13 (yaxis) { ; Bill Rossi
    z=pixel,pi=3.142857142857:
      z=fn1(z)/fn2(z)-(fn3(z)*pi),
      z=fn4((z)^pi),
-   |z| <= 4 }    
+   |z| <= 4 }
 
 Fatso {
   z=x=1/pixel, c= fn1 (z):
@@ -66,7 +66,7 @@ Fatso {
   ;SOURCE: fractint.frm
 }
 
-a0 {; (c) by Miguel Fliguer 
+a0 {; (c) by Miguel Fliguer
 z=c=pixel:
 z=fn1(z/fn2(z/fn3(z/fn4(z))))+c
 |z|<4
@@ -117,10 +117,10 @@ Gallet-3-06 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-3.frm
 }
 
-Zurreal { 
+Zurreal {
   z = pixel:
   z = fn1(z) + pixel
-  z = fn2(1/sqr(z))/z + p1 
+  z = fn2(1/sqr(z))/z + p1
   |z| <= 4
   ;SOURCE: surreal.frm
 }
@@ -153,14 +153,14 @@ F'M-SetInNewtonA(XAXIS) {; use float=yes
     |(z-oldz)|>=|0.01|
   }
 
-2Ratz-fn {z = Pixel :  
-          z = (z * z * fn1(z) * p1 + Pixel )/(z * fn2(z) * p1 + Pixel ) , 
+2Ratz-fn {z = Pixel :
+          z = (z * z * fn1(z) * p1 + Pixel )/(z * fn2(z) * p1 + Pixel ) ,
           | z | <= 10 }
 
-Zurreal { 
+Zurreal {
   z = pixel:
   z = fn1(z) + pixel
-  z = fn2(1/sqr(z))/z + p1 
+  z = fn2(1/sqr(z))/z + p1
   |z| <= 4
   ;SOURCE: surreal.frm
 }
@@ -230,8 +230,8 @@ newton_reel_1 (ORIGIN) {; Sylvie Gallet
   x2=x*x , y2=y*y , x3=x2*x , y3=y2*y  ; x -> x^3-y
   d=1+9*x2*y2                          ; y -> y^3+x
   x = (6*x3*y2 + 2*y3) / d             ; solution (0,0)
-  y = (6*x2*y3 - 2*x3) / d   
-  z = x+flip(y) 
+  y = (6*x2*y3 - 2*x3) / d
+  z = x+flip(y)
   |z|>=.01
 }
 
@@ -380,7 +380,7 @@ Mandel[Fn||Fn] {; v18 - Jonathan Osuch
   ELSE
     z=pixel+fn2(z)
   ENDIF
-  x=|z| 
+  x=|z|
   x<=64
   ;SOURCE: parser.frm
 }
@@ -439,4 +439,4 @@ a3 {
 GenInvMand1_N   { ; Jm Collard-Richard
   c=z=1/pixel:
   z=fn1(z)*fn2(z)+fn3(fn4(c))
-  |z|<=4  } 
+  |z|<=4  }

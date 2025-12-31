@@ -1,7 +1,7 @@
 
 
 P02-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (Euler method)
@@ -23,7 +23,7 @@ P02-01 {; V.1.1 - earlier versions may be discarded
 
 
 P02-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; Chebyshev Types:
                  ; Inspired by Clifford A. Pickover:
                  ; Dynamic
@@ -59,7 +59,7 @@ P02-03 {; V.1.1 - earlier versions may be discarded
 
 
 P02-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Mandelbrot)
@@ -77,7 +77,7 @@ P02-04 {; V.1.1 - earlier versions may be discarded
 
 
 P02-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method
@@ -98,7 +98,7 @@ P02-05 {; V.1.1 - earlier versions may be discarded
 
 
 P02-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Halley Method
@@ -120,7 +120,7 @@ P02-06 {; V.1.1 - earlier versions may be discarded
 
 
 P02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method
@@ -143,7 +143,7 @@ P02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P02-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
@@ -165,7 +165,7 @@ P02-08 {; V.1.1 - earlier versions may be discarded
 
 
 P02-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler Method)
@@ -187,7 +187,7 @@ P02-09 {; V.1.1 - earlier versions may be discarded
 
 
 P02-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Mike Wareman:
         ; Secant Method
@@ -210,7 +210,7 @@ P02-10 {; V.1.1 - earlier versions may be discarded
 
 
 P02-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Julia)
@@ -228,7 +228,7 @@ P02-11 {; V.1.1 - earlier versions may be discarded
 
 
 P02-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Rob Dem Braseem:
         ; Escape  (Mandelbrot)
@@ -246,7 +246,7 @@ P02-12 {; V.1.1 - earlier versions may be discarded
 
 
 P02-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Halley Method with weird bailout test
@@ -268,7 +268,7 @@ P02-13 {; V.1.1 - earlier versions may be discarded
 
 
 P02-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method with weird bailout test
@@ -291,7 +291,7 @@ P02-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P02-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method with weird bailout test
@@ -312,7 +312,7 @@ P02-15 {; V.1.1 - earlier versions may be discarded
 
 
 P02-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Mike Wareman:
         ; Secant Method with weird bailout test
@@ -335,7 +335,7 @@ P02-16 {; V.1.1 - earlier versions may be discarded
 
 
 P02-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
@@ -359,7 +359,7 @@ P02-17 {; V.1.1 - earlier versions may be discarded
 
 
 P02-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
@@ -383,7 +383,7 @@ P02-18 {; V.1.1 - earlier versions may be discarded
 
 
 P02-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (Implicit Euler method)
@@ -404,7 +404,7 @@ P02-19 {; V.1.1 - earlier versions may be discarded
 
 
 P02-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler method)
@@ -425,7 +425,7 @@ P02-20 {; V.1.1 - earlier versions may be discarded
 
 
 P02-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler method)
@@ -446,7 +446,7 @@ P02-21 {; V.1.1 - earlier versions may be discarded
 
 
 P02-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
@@ -468,7 +468,7 @@ P02-22 {; V.1.1 - earlier versions may be discarded
 
 
 P02-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
@@ -490,7 +490,7 @@ P02-23 {; V.1.1 - earlier versions may be discarded
 
 
 P02-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler Method)
@@ -511,7 +511,7 @@ P02-24 {; V.1.1 - earlier versions may be discarded
 
 
 P02-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified implicit Euler Method)
@@ -656,7 +656,7 @@ P02-30 {; V.1.1 - earlier versions may be discarded
 
 
 P03-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -670,7 +670,7 @@ P03-01 {; V.1.1 - earlier versions may be discarded
 
 
 P03-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (5zP02-2P01)/3
   bailout=p1+4, z=pixel:
   z=z*(5*z*z-3)/2
@@ -680,7 +680,7 @@ P03-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P03-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   const=p1, z=pixel:
   z=z*(5*z*z-3)/2+const
@@ -690,7 +690,7 @@ P03-03 {; V.1.1 - earlier versions may be discarded
 
 
 P03-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   const=pixel, z=p1:
   z=z*(5*z*z-3)/2+const
@@ -700,7 +700,7 @@ P03-04 {; V.1.1 - earlier versions may be discarded
 
 
 P03-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP(2)-2P(1))/3
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -714,7 +714,7 @@ P03-05 {; V.1.1 - earlier versions may be discarded
 
 
 P03-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -729,7 +729,7 @@ P03-06 {; V.1.1 - earlier versions may be discarded
 
 
 P03-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 5zP02-2P01)/3
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -745,7 +745,7 @@ P03-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P03-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -759,7 +759,7 @@ P03-08 {; V.1.1 - earlier versions may be discarded
 
 
 P03-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -773,7 +773,7 @@ P03-09 {; V.1.1 - earlier versions may be discarded
 
 
 P03-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   bailout=real(p2)/10000, z=pixel, oz=p1
   fz=p1*(5*p1*p1-3)/2:
@@ -788,7 +788,7 @@ P03-10 {; V.1.1 - earlier versions may be discarded
 
 
 P03-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   const=p1, z=pixel:
   z=z*(5*z*z-3)/2*const
@@ -798,7 +798,7 @@ P03-11 {; V.1.1 - earlier versions may be discarded
 
 
 P03-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   const=pixel, z=p1:
   z=z*(5*z*z-3)/2*const
@@ -808,7 +808,7 @@ P03-12 {; V.1.1 - earlier versions may be discarded
 
 
 P03-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -823,7 +823,7 @@ P03-13 {; V.1.1 - earlier versions may be discarded
 
 
 P03-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 5zP02-2P01)/3
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -839,7 +839,7 @@ P03-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P03-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP(2)-2P(1))/3
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -853,7 +853,7 @@ P03-15 {; V.1.1 - earlier versions may be discarded
 
 
 P03-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   bailout=real(p2)/10000, z=pixel, oz=p1
   fz=p1*(5*p1*p1-3)/2:
@@ -868,7 +868,7 @@ P03-16 {; V.1.1 - earlier versions may be discarded
 
 
 P03-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   z=pixel, oz=0
   fz=0
@@ -884,7 +884,7 @@ P03-17 {; V.1.1 - earlier versions may be discarded
 
 
 P03-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   z=pixel, oz=0
   fz=0
@@ -900,7 +900,7 @@ P03-18 {; V.1.1 - earlier versions may be discarded
 
 
 P03-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -913,7 +913,7 @@ P03-19 {; V.1.1 - earlier versions may be discarded
 
 
 P03-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -926,7 +926,7 @@ P03-20 {; V.1.1 - earlier versions may be discarded
 
 
 P03-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -939,7 +939,7 @@ P03-21 {; V.1.1 - earlier versions may be discarded
 
 
 P03-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -953,7 +953,7 @@ P03-22 {; V.1.1 - earlier versions may be discarded
 
 
 P03-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -967,7 +967,7 @@ P03-23 {; V.1.1 - earlier versions may be discarded
 
 
 P03-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -980,7 +980,7 @@ P03-24 {; V.1.1 - earlier versions may be discarded
 
 
 P03-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1072,7 +1072,7 @@ P03-30 {; V.1.1 - earlier versions may be discarded
 
 
 P04-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1087,7 +1087,7 @@ P04-01 {; V.1.1 - earlier versions may be discarded
 
 
 P04-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (7zP03-3P02)/4
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -1098,7 +1098,7 @@ P04-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P04-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   const=p1, z=pixel:
   zz=z*z
@@ -1109,7 +1109,7 @@ P04-03 {; V.1.1 - earlier versions may be discarded
 
 
 P04-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   const=pixel, z=p1:
   zz=z*z
@@ -1120,7 +1120,7 @@ P04-04 {; V.1.1 - earlier versions may be discarded
 
 
 P04-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP(3)-3P(2))/4
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1134,7 +1134,7 @@ P04-05 {; V.1.1 - earlier versions may be discarded
 
 
 P04-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1149,7 +1149,7 @@ P04-06 {; V.1.1 - earlier versions may be discarded
 
 
 P04-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 7zP03-3P02)/4
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1166,7 +1166,7 @@ P04-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P04-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1181,7 +1181,7 @@ P04-08 {; V.1.1 - earlier versions may be discarded
 
 
 P04-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1196,7 +1196,7 @@ P04-09 {; V.1.1 - earlier versions may be discarded
 
 
 P04-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -1213,7 +1213,7 @@ P04-10 {; V.1.1 - earlier versions may be discarded
 
 
 P04-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   const=p1, z=pixel:
   zz=z*z
@@ -1224,7 +1224,7 @@ P04-11 {; V.1.1 - earlier versions may be discarded
 
 
 P04-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   const=pixel, z=p1:
   zz=z*z
@@ -1235,7 +1235,7 @@ P04-12 {; V.1.1 - earlier versions may be discarded
 
 
 P04-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1250,7 +1250,7 @@ P04-13 {; V.1.1 - earlier versions may be discarded
 
 
 P04-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 7zP03-3P02)/4
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1267,7 +1267,7 @@ P04-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P04-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP(3)-3P(2))/4
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1281,7 +1281,7 @@ P04-15 {; V.1.1 - earlier versions may be discarded
 
 
 P04-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -1298,7 +1298,7 @@ P04-16 {; V.1.1 - earlier versions may be discarded
 
 
 P04-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   z=pixel, oz=0
   fz=3/8
@@ -1315,7 +1315,7 @@ P04-17 {; V.1.1 - earlier versions may be discarded
 
 
 P04-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   z=pixel, oz=0
   fz=3/8
@@ -1332,7 +1332,7 @@ P04-18 {; V.1.1 - earlier versions may be discarded
 
 
 P04-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1347,7 +1347,7 @@ P04-19 {; V.1.1 - earlier versions may be discarded
 
 
 P04-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1362,7 +1362,7 @@ P04-20 {; V.1.1 - earlier versions may be discarded
 
 
 P04-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1377,7 +1377,7 @@ P04-21 {; V.1.1 - earlier versions may be discarded
 
 
 P04-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1392,7 +1392,7 @@ P04-22 {; V.1.1 - earlier versions may be discarded
 
 
 P04-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -1407,7 +1407,7 @@ P04-23 {; V.1.1 - earlier versions may be discarded
 
 
 P04-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -1422,7 +1422,7 @@ P04-24 {; V.1.1 - earlier versions may be discarded
 
 
 P04-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1525,7 +1525,7 @@ P04-30 {; V.1.1 - earlier versions may be discarded
 
 
 P05-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1540,7 +1540,7 @@ P05-01 {; V.1.1 - earlier versions may be discarded
 
 
 P05-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (9zP04-4P03)/5
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -1551,7 +1551,7 @@ P05-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P05-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   const=p1, z=pixel:
   zz=z*z
@@ -1562,7 +1562,7 @@ P05-03 {; V.1.1 - earlier versions may be discarded
 
 
 P05-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   const=pixel, z=p1:
   zz=z*z
@@ -1573,7 +1573,7 @@ P05-04 {; V.1.1 - earlier versions may be discarded
 
 
 P05-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP(4)-4P(3))/5
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1587,7 +1587,7 @@ P05-05 {; V.1.1 - earlier versions may be discarded
 
 
 P05-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1602,7 +1602,7 @@ P05-06 {; V.1.1 - earlier versions may be discarded
 
 
 P05-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 9zP04-4P03)/5
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1619,7 +1619,7 @@ P05-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P05-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1634,7 +1634,7 @@ P05-08 {; V.1.1 - earlier versions may be discarded
 
 
 P05-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1649,7 +1649,7 @@ P05-09 {; V.1.1 - earlier versions may be discarded
 
 
 P05-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -1666,7 +1666,7 @@ P05-10 {; V.1.1 - earlier versions may be discarded
 
 
 P05-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   const=p1, z=pixel:
   zz=z*z
@@ -1677,7 +1677,7 @@ P05-11 {; V.1.1 - earlier versions may be discarded
 
 
 P05-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   const=pixel, z=p1:
   zz=z*z
@@ -1688,7 +1688,7 @@ P05-12 {; V.1.1 - earlier versions may be discarded
 
 
 P05-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1703,7 +1703,7 @@ P05-13 {; V.1.1 - earlier versions may be discarded
 
 
 P05-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 9zP04-4P03)/5
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1720,7 +1720,7 @@ P05-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P05-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP(4)-4P(3))/5
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1734,7 +1734,7 @@ P05-15 {; V.1.1 - earlier versions may be discarded
 
 
 P05-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -1751,7 +1751,7 @@ P05-16 {; V.1.1 - earlier versions may be discarded
 
 
 P05-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   z=pixel, oz=0
   fz=0
@@ -1768,7 +1768,7 @@ P05-17 {; V.1.1 - earlier versions may be discarded
 
 
 P05-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   z=pixel, oz=0
   fz=0
@@ -1785,7 +1785,7 @@ P05-18 {; V.1.1 - earlier versions may be discarded
 
 
 P05-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1800,7 +1800,7 @@ P05-19 {; V.1.1 - earlier versions may be discarded
 
 
 P05-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1815,7 +1815,7 @@ P05-20 {; V.1.1 - earlier versions may be discarded
 
 
 P05-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1830,7 +1830,7 @@ P05-21 {; V.1.1 - earlier versions may be discarded
 
 
 P05-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1845,7 +1845,7 @@ P05-22 {; V.1.1 - earlier versions may be discarded
 
 
 P05-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -1860,7 +1860,7 @@ P05-23 {; V.1.1 - earlier versions may be discarded
 
 
 P05-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -1875,7 +1875,7 @@ P05-24 {; V.1.1 - earlier versions may be discarded
 
 
 P05-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1978,7 +1978,7 @@ P05-30 {; V.1.1 - earlier versions may be discarded
 
 
 P06-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -1993,7 +1993,7 @@ P06-01 {; V.1.1 - earlier versions may be discarded
 
 
 P06-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (11zP05-5P04)/6
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -2004,7 +2004,7 @@ P06-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P06-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   const=p1, z=pixel:
   zz=z*z
@@ -2015,7 +2015,7 @@ P06-03 {; V.1.1 - earlier versions may be discarded
 
 
 P06-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   const=pixel, z=p1:
   zz=z*z
@@ -2026,7 +2026,7 @@ P06-04 {; V.1.1 - earlier versions may be discarded
 
 
 P06-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP(5)-5P(4))/6
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2040,7 +2040,7 @@ P06-05 {; V.1.1 - earlier versions may be discarded
 
 
 P06-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2055,7 +2055,7 @@ P06-06 {; V.1.1 - earlier versions may be discarded
 
 
 P06-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (11zP05-5P04)/6
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2072,7 +2072,7 @@ P06-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P06-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2087,7 +2087,7 @@ P06-08 {; V.1.1 - earlier versions may be discarded
 
 
 P06-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2102,7 +2102,7 @@ P06-09 {; V.1.1 - earlier versions may be discarded
 
 
 P06-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -2119,7 +2119,7 @@ P06-10 {; V.1.1 - earlier versions may be discarded
 
 
 P06-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   const=p1, z=pixel:
   zz=z*z
@@ -2130,7 +2130,7 @@ P06-11 {; V.1.1 - earlier versions may be discarded
 
 
 P06-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   const=pixel, z=p1:
   zz=z*z
@@ -2141,7 +2141,7 @@ P06-12 {; V.1.1 - earlier versions may be discarded
 
 
 P06-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2156,7 +2156,7 @@ P06-13 {; V.1.1 - earlier versions may be discarded
 
 
 P06-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (11zP05-5P04)/6
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2173,7 +2173,7 @@ P06-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P06-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP(5)-5P(4))/6
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2187,7 +2187,7 @@ P06-15 {; V.1.1 - earlier versions may be discarded
 
 
 P06-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -2204,7 +2204,7 @@ P06-16 {; V.1.1 - earlier versions may be discarded
 
 
 P06-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   z=pixel, oz=0
   fz=-5/16
@@ -2221,7 +2221,7 @@ P06-17 {; V.1.1 - earlier versions may be discarded
 
 
 P06-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   z=pixel, oz=0
   fz=-5/16
@@ -2238,7 +2238,7 @@ P06-18 {; V.1.1 - earlier versions may be discarded
 
 
 P06-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2253,7 +2253,7 @@ P06-19 {; V.1.1 - earlier versions may be discarded
 
 
 P06-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2268,7 +2268,7 @@ P06-20 {; V.1.1 - earlier versions may be discarded
 
 
 P06-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2283,7 +2283,7 @@ P06-21 {; V.1.1 - earlier versions may be discarded
 
 
 P06-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2298,7 +2298,7 @@ P06-22 {; V.1.1 - earlier versions may be discarded
 
 
 P06-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (11zP05-5P04)/6
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -2313,7 +2313,7 @@ P06-23 {; V.1.1 - earlier versions may be discarded
 
 
 P06-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -2328,7 +2328,7 @@ P06-24 {; V.1.1 - earlier versions may be discarded
 
 
 P06-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2431,7 +2431,7 @@ P06-30 {; V.1.1 - earlier versions may be discarded
 
 
 P07-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2446,7 +2446,7 @@ P07-01 {; V.1.1 - earlier versions may be discarded
 
 
 P07-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (13zP06-6P05)/7
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -2457,7 +2457,7 @@ P07-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P07-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   const=p1, z=pixel:
   zz=z*z
@@ -2468,7 +2468,7 @@ P07-03 {; V.1.1 - earlier versions may be discarded
 
 
 P07-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   const=pixel, z=p1:
   zz=z*z
@@ -2479,7 +2479,7 @@ P07-04 {; V.1.1 - earlier versions may be discarded
 
 
 P07-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP(6)-6P(5))/7
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2493,7 +2493,7 @@ P07-05 {; V.1.1 - earlier versions may be discarded
 
 
 P07-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2508,7 +2508,7 @@ P07-06 {; V.1.1 - earlier versions may be discarded
 
 
 P07-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (13zP06-6P05)/7
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2525,7 +2525,7 @@ P07-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P07-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2540,7 +2540,7 @@ P07-08 {; V.1.1 - earlier versions may be discarded
 
 
 P07-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2555,7 +2555,7 @@ P07-09 {; V.1.1 - earlier versions may be discarded
 
 
 P07-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -2572,7 +2572,7 @@ P07-10 {; V.1.1 - earlier versions may be discarded
 
 
 P07-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   const=p1, z=pixel:
   zz=z*z
@@ -2583,7 +2583,7 @@ P07-11 {; V.1.1 - earlier versions may be discarded
 
 
 P07-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   const=pixel, z=p1:
   zz=z*z
@@ -2594,7 +2594,7 @@ P07-12 {; V.1.1 - earlier versions may be discarded
 
 
 P07-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2609,7 +2609,7 @@ P07-13 {; V.1.1 - earlier versions may be discarded
 
 
 P07-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (13zP06-6P05)/7
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2626,7 +2626,7 @@ P07-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P07-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP(6)-6P(5))/7
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2640,7 +2640,7 @@ P07-15 {; V.1.1 - earlier versions may be discarded
 
 
 P07-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -2657,7 +2657,7 @@ P07-16 {; V.1.1 - earlier versions may be discarded
 
 
 P07-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   z=pixel, oz=0
   fz=0
@@ -2674,7 +2674,7 @@ P07-17 {; V.1.1 - earlier versions may be discarded
 
 
 P07-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   z=pixel, oz=0
   fz=0
@@ -2691,7 +2691,7 @@ P07-18 {; V.1.1 - earlier versions may be discarded
 
 
 P07-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2706,7 +2706,7 @@ P07-19 {; V.1.1 - earlier versions may be discarded
 
 
 P07-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2721,7 +2721,7 @@ P07-20 {; V.1.1 - earlier versions may be discarded
 
 
 P07-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2736,7 +2736,7 @@ P07-21 {; V.1.1 - earlier versions may be discarded
 
 
 P07-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2751,7 +2751,7 @@ P07-22 {; V.1.1 - earlier versions may be discarded
 
 
 P07-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (13zP06-6P05)/7
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -2766,7 +2766,7 @@ P07-23 {; V.1.1 - earlier versions may be discarded
 
 
 P07-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -2781,7 +2781,7 @@ P07-24 {; V.1.1 - earlier versions may be discarded
 
 
 P07-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2884,7 +2884,7 @@ P07-30 {; V.1.1 - earlier versions may be discarded
 
 
 P08-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2899,7 +2899,7 @@ P08-01 {; V.1.1 - earlier versions may be discarded
 
 
 P08-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (15zP07-7P06)/8
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -2910,7 +2910,7 @@ P08-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P08-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   const=p1, z=pixel:
   zz=z*z
@@ -2921,7 +2921,7 @@ P08-03 {; V.1.1 - earlier versions may be discarded
 
 
 P08-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   const=pixel, z=p1:
   zz=z*z
@@ -2932,7 +2932,7 @@ P08-04 {; V.1.1 - earlier versions may be discarded
 
 
 P08-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP(7)-7P(6))/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2946,7 +2946,7 @@ P08-05 {; V.1.1 - earlier versions may be discarded
 
 
 P08-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2961,7 +2961,7 @@ P08-06 {; V.1.1 - earlier versions may be discarded
 
 
 P08-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (15zP07-7P06)/8
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -2978,7 +2978,7 @@ P08-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P08-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -2993,7 +2993,7 @@ P08-08 {; V.1.1 - earlier versions may be discarded
 
 
 P08-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3008,7 +3008,7 @@ P08-09 {; V.1.1 - earlier versions may be discarded
 
 
 P08-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -3025,7 +3025,7 @@ P08-10 {; V.1.1 - earlier versions may be discarded
 
 
 P08-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   const=p1, z=pixel:
   zz=z*z
@@ -3036,7 +3036,7 @@ P08-11 {; V.1.1 - earlier versions may be discarded
 
 
 P08-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   const=pixel, z=p1:
   zz=z*z
@@ -3047,7 +3047,7 @@ P08-12 {; V.1.1 - earlier versions may be discarded
 
 
 P08-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3062,7 +3062,7 @@ P08-13 {; V.1.1 - earlier versions may be discarded
 
 
 P08-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (15zP07-7P06)/8
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3079,7 +3079,7 @@ P08-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P08-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP(7)-7P(6))/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3093,7 +3093,7 @@ P08-15 {; V.1.1 - earlier versions may be discarded
 
 
 P08-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -3110,7 +3110,7 @@ P08-16 {; V.1.1 - earlier versions may be discarded
 
 
 P08-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   z=pixel, oz=0
   fz=35/128
@@ -3127,7 +3127,7 @@ P08-17 {; V.1.1 - earlier versions may be discarded
 
 
 P08-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   z=pixel, oz=0
   fz=35/128
@@ -3144,7 +3144,7 @@ P08-18 {; V.1.1 - earlier versions may be discarded
 
 
 P08-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3159,7 +3159,7 @@ P08-19 {; V.1.1 - earlier versions may be discarded
 
 
 P08-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3174,7 +3174,7 @@ P08-20 {; V.1.1 - earlier versions may be discarded
 
 
 P08-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3189,7 +3189,7 @@ P08-21 {; V.1.1 - earlier versions may be discarded
 
 
 P08-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3204,7 +3204,7 @@ P08-22 {; V.1.1 - earlier versions may be discarded
 
 
 P08-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (15zP07-7P06)/8
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -3219,7 +3219,7 @@ P08-23 {; V.1.1 - earlier versions may be discarded
 
 
 P08-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -3234,7 +3234,7 @@ P08-24 {; V.1.1 - earlier versions may be discarded
 
 
 P08-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3337,7 +3337,7 @@ P08-30 {; V.1.1 - earlier versions may be discarded
 
 
 P09-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3352,7 +3352,7 @@ P09-01 {; V.1.1 - earlier versions may be discarded
 
 
 P09-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (17zP08-8P07)/9
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -3363,7 +3363,7 @@ P09-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P09-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   const=p1, z=pixel:
   zz=z*z
@@ -3374,7 +3374,7 @@ P09-03 {; V.1.1 - earlier versions may be discarded
 
 
 P09-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   const=pixel, z=p1:
   zz=z*z
@@ -3385,7 +3385,7 @@ P09-04 {; V.1.1 - earlier versions may be discarded
 
 
 P09-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP(8)-8P(7))/9
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3399,7 +3399,7 @@ P09-05 {; V.1.1 - earlier versions may be discarded
 
 
 P09-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3414,7 +3414,7 @@ P09-06 {; V.1.1 - earlier versions may be discarded
 
 
 P09-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (17zP08-8P07)/9
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3431,7 +3431,7 @@ P09-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P09-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3446,7 +3446,7 @@ P09-08 {; V.1.1 - earlier versions may be discarded
 
 
 P09-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3461,7 +3461,7 @@ P09-09 {; V.1.1 - earlier versions may be discarded
 
 
 P09-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -3478,7 +3478,7 @@ P09-10 {; V.1.1 - earlier versions may be discarded
 
 
 P09-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   const=p1, z=pixel:
   zz=z*z
@@ -3489,7 +3489,7 @@ P09-11 {; V.1.1 - earlier versions may be discarded
 
 
 P09-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   const=pixel, z=p1:
   zz=z*z
@@ -3500,7 +3500,7 @@ P09-12 {; V.1.1 - earlier versions may be discarded
 
 
 P09-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3515,7 +3515,7 @@ P09-13 {; V.1.1 - earlier versions may be discarded
 
 
 P09-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (17zP08-8P07)/9
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3532,7 +3532,7 @@ P09-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P09-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP(8)-8P(7))/9
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3546,7 +3546,7 @@ P09-15 {; V.1.1 - earlier versions may be discarded
 
 
 P09-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -3563,7 +3563,7 @@ P09-16 {; V.1.1 - earlier versions may be discarded
 
 
 P09-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   z=pixel, oz=0
   fz=0
@@ -3580,7 +3580,7 @@ P09-17 {; V.1.1 - earlier versions may be discarded
 
 
 P09-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   z=pixel, oz=0
   fz=0
@@ -3597,7 +3597,7 @@ P09-18 {; V.1.1 - earlier versions may be discarded
 
 
 P09-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3612,7 +3612,7 @@ P09-19 {; V.1.1 - earlier versions may be discarded
 
 
 P09-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3627,7 +3627,7 @@ P09-20 {; V.1.1 - earlier versions may be discarded
 
 
 P09-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3642,7 +3642,7 @@ P09-21 {; V.1.1 - earlier versions may be discarded
 
 
 P09-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3657,7 +3657,7 @@ P09-22 {; V.1.1 - earlier versions may be discarded
 
 
 P09-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (17zP08-8P07)/9
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -3672,7 +3672,7 @@ P09-23 {; V.1.1 - earlier versions may be discarded
 
 
 P09-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -3687,7 +3687,7 @@ P09-24 {; V.1.1 - earlier versions may be discarded
 
 
 P09-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3790,7 +3790,7 @@ P09-30 {; V.1.1 - earlier versions may be discarded
 
 
 P10-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3805,7 +3805,7 @@ P10-01 {; V.1.1 - earlier versions may be discarded
 
 
 P10-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (19zP09-9P08)/10
   bailout=p1+4, z=pixel:
   zz=z*z
@@ -3816,7 +3816,7 @@ P10-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P10-03 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   const=p1, z=pixel:
   zz=z*z
@@ -3827,7 +3827,7 @@ P10-03 {; V.1.1 - earlier versions may be discarded
 
 
 P10-04 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   const=pixel, z=p1:
   zz=z*z
@@ -3838,7 +3838,7 @@ P10-04 {; V.1.1 - earlier versions may be discarded
 
 
 P10-05 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP(9)-9P(8))/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3852,7 +3852,7 @@ P10-05 {; V.1.1 - earlier versions may be discarded
 
 
 P10-06 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3867,7 +3867,7 @@ P10-06 {; V.1.1 - earlier versions may be discarded
 
 
 P10-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (19zP09-9P08)/10
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3884,7 +3884,7 @@ P10-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P10-08 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3899,7 +3899,7 @@ P10-08 {; V.1.1 - earlier versions may be discarded
 
 
 P10-09 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -3914,7 +3914,7 @@ P10-09 {; V.1.1 - earlier versions may be discarded
 
 
 P10-10 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -3931,7 +3931,7 @@ P10-10 {; V.1.1 - earlier versions may be discarded
 
 
 P10-11 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   const=p1, z=pixel:
   zz=z*z
@@ -3942,7 +3942,7 @@ P10-11 {; V.1.1 - earlier versions may be discarded
 
 
 P10-12 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   const=pixel, z=p1:
   zz=z*z
@@ -3953,7 +3953,7 @@ P10-12 {; V.1.1 - earlier versions may be discarded
 
 
 P10-13 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3968,7 +3968,7 @@ P10-13 {; V.1.1 - earlier versions may be discarded
 
 
 P10-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (19zP09-9P08)/10
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3985,7 +3985,7 @@ P10-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P10-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP(9)-9P(8))/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -3999,7 +3999,7 @@ P10-15 {; V.1.1 - earlier versions may be discarded
 
 
 P10-16 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   bailout=real(p2)/10000, z=pixel, oz=p1
   zz=p1*p1
@@ -4016,7 +4016,7 @@ P10-16 {; V.1.1 - earlier versions may be discarded
 
 
 P10-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   z=pixel, oz=0
   fz=-63/256
@@ -4033,7 +4033,7 @@ P10-17 {; V.1.1 - earlier versions may be discarded
 
 
 P10-18 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   z=pixel, oz=0
   fz=-63/256
@@ -4050,7 +4050,7 @@ P10-18 {; V.1.1 - earlier versions may be discarded
 
 
 P10-19 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -4065,7 +4065,7 @@ P10-19 {; V.1.1 - earlier versions may be discarded
 
 
 P10-20 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -4080,7 +4080,7 @@ P10-20 {; V.1.1 - earlier versions may be discarded
 
 
 P10-21 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -4095,7 +4095,7 @@ P10-21 {; V.1.1 - earlier versions may be discarded
 
 
 P10-22 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -4110,7 +4110,7 @@ P10-22 {; V.1.1 - earlier versions may be discarded
 
 
 P10-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (19zP09-9P08)/10
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -4125,7 +4125,7 @@ P10-23 {; V.1.1 - earlier versions may be discarded
 
 
 P10-24 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -4140,7 +4140,7 @@ P10-24 {; V.1.1 - earlier versions may be discarded
 
 
 P10-25 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -4342,9 +4342,9 @@ Pablo {
    ; Any comments or question?
    ; E-Mail: Damion_P@Compuserve.com  -or- MDROCC@earthlink.net
   z = c = pixel:
-  r = fn1(tan(1/z)+ c) + p1 
+  r = fn1(tan(1/z)+ c) + p1
   q = fn2(flip(atan(z)) + c) + p2
-  z = (q * (whitesq == 0)) + (r * (whitesq == 1)) 
+  z = (q * (whitesq == 0)) + (r * (whitesq == 1))
   |z| < 4
   ;SOURCE: pablo.frm
 }
@@ -4626,7 +4626,7 @@ Pc02-02 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic
-         ; 
+         ;
          ; Pc[0] = 1
          ; Pc[1] = 2z-1
          ; Pc[n+1] = ((2((n+1)z-n)-1)Pc[n]-nPc[n-1])/(n+1)
@@ -8615,7 +8615,7 @@ pcut {; Giuseppe Zito
   d12 = 0.40633699
   d16 = 0.91389698
   d22 = -0.064093
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c2
@@ -8630,7 +8630,7 @@ pcut {; Giuseppe Zito
   s0 = s0 -y
   s1 =c18
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +d1
   s1 = x
@@ -8649,9 +8649,9 @@ pcut {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 +x
   s0 = s0 -d22
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -8792,7 +8792,7 @@ pd301_cd    {; Formula by P. DiGiorgi - December 97
   point = 0                               ; Point of that closest approach.
   done = 2                                ; Iteration counter.
   r = (0,1) ^ (real(p2)/90)               ; Compute rotation vector.
-  
+
   z = pixel:                              ; fractal calculation.
   c = .15*(fn1(z) + fn2(z) + 1.5)
   z = fn3(z*z) + fn4(c)
@@ -8859,7 +8859,7 @@ PD_205 {; Revised for Fractint v20 by G. Martin
   z = fn3(z^((n + p1)/oldn)) - c
   oldn = n
   n = fn4(n + 1 + p2)
-  |real(z)| < p3 
+  |real(z)| < p3
   ;SOURCE: pdg02.frm
 }
 
@@ -9298,7 +9298,7 @@ pd_wpp_orig {; formula by P. DiGiorgi
 Peace_Magnet_PHC {
   z = r = pixel, c1 = p1 - 1, c2 = p1 - 2:
   r = ((z*z + (p2 - 1)) / (2*z + (p2 - 2)))^2
-  z = (z*z + c1)/(z+z+c2) 
+  z = (z*z + c1)/(z+z+c2)
   z = (z*z * (whitesq == 1)) + (r * z * (whitesq == 0))
   |z| < 100
   ;SOURCE: beck.frm
@@ -9309,7 +9309,7 @@ Peace_PHC {
   z = pixel:
   r = ((z*z + (p1 - 1)) / (2*z + (p1 - 2)))^2
   q = fn1(z) * fn2(z) + p2
-  z = (r * (whitesq == 1)) + (q * (whitesq == 0))  
+  z = (r * (whitesq == 1)) + (q * (whitesq == 0))
   |z| < 100
   ;SOURCE: beck.frm
 }
@@ -9320,8 +9320,8 @@ peacock (XAXIS) {
   z = pixel, zp = (0,0):
   temp = z
   z = -cos(z) - zp
-  zp = temp 
-  |zp| <= 4 
+  zp = temp
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -9352,7 +9352,7 @@ penta (XAXIS) {
   temp = z
   z = z*z - zp
   zp = conj(temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -9363,7 +9363,7 @@ penta2 (XAXIS) {
   temp = z
   z = z*z - zp
   zp = conj(temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -9373,8 +9373,8 @@ pentet {
   z = pixel, zp = (0,0), huge=1.0e32:
   temp = z
   z = z*z - zp
-  zp = p1/conj(temp) 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = p1/conj(temp)
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -9570,8 +9570,8 @@ petcock (XAXIS) {
   z = pixel, zp = (0,0):
   temp = z
   z = -cos(z) - zp
-  zp = 1/temp 
-  |zp| <=64 
+  zp = 1/temp
+  |zp| <=64
   ;SOURCE: noel.frm
 }
 
@@ -9579,15 +9579,15 @@ petcock (XAXIS) {
 Peter_104M {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=fn1(z^2)*fn2(c)*z
-  abs(z)<=4 
+  abs(z)<=4
   ;SOURCE: anders.frm
 }
 
 
-Peter_1A01 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A01 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -9603,7 +9603,7 @@ Peter_1A02 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
 Peter_1A03 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  |fn1(z)|>real(p2) 
+  |fn1(z)|>real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -9616,111 +9616,111 @@ Peter_1A04 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1A05 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A05 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  |fn1(real(z))-fn2(imag(z))|<real(p2) 
+  |fn1(real(z))-fn2(imag(z))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A06 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A06 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  abs(fn1(real(z))-fn2(imag(z)))<real(p2) 
+  abs(fn1(real(z))-fn2(imag(z)))<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A07 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A07 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  |fn1(real(z))-fn2(imag(z))|>real(p2) 
+  |fn1(real(z))-fn2(imag(z))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A08 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A08 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z+c
-  abs(fn1(real(z))-fn2(imag(z)))>real(p2) 
+  abs(fn1(real(z))-fn2(imag(z)))>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A09 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A09 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   d=z
   z=z*z+c
-  |fn1(real(z))-fn1(real(d))|>real(p2) 
+  |fn1(real(z))-fn1(real(d))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A10 {; Peter Anders anders@physik.hu-berlin.de 
-  z=p1, c=pixel:
-  d=z
-  z=z*z+c          
-  |fn1(imag(z))-fn1(imag(d))|>real(p2) 
-  ;SOURCE: peterman.frm
-}
-
-
-Peter_1A11 {; Peter Anders anders@physik.hu-berlin.de 
-  z=p1, c=pixel:
-  d=z
-  z=z*z+c          
-  |fn1(real(z))-fn1(real(d))|<real(p2) 
-  ;SOURCE: peterman.frm
-}
-
-
-Peter_1A12 {; Peter Anders anders@physik.hu-berlin.de 
-  z=p1, c=pixel:
-  d=z
-  z=z*z+c          
-  |fn1(imag(z))-fn1(imag(d))|<real(p2) 
-  ;SOURCE: peterman.frm
-}
-
-
-Peter_1A13 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A10 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   d=z
   z=z*z+c
-  abs(fn1(real(z))-fn1(real(d)))>real(p2) 
+  |fn1(imag(z))-fn1(imag(d))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A14 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A11 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   d=z
   z=z*z+c
-  abs(fn1(imag(z))-fn1(imag(d)))>real(p2) 
+  |fn1(real(z))-fn1(real(d))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A15 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A12 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   d=z
   z=z*z+c
-  abs(fn1(real(z))-fn1(real(d)))<real(p2) 
+  |fn1(imag(z))-fn1(imag(d))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1A16 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A13 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   d=z
-  z=z*z+c          
-  abs(fn1(imag(z))-fn1(imag(d)))<real(p2) 
+  z=z*z+c
+  abs(fn1(real(z))-fn1(real(d)))>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_1HalCos {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1A14 {; Peter Anders anders@physik.hu-berlin.de
+  z=p1, c=pixel:
+  d=z
+  z=z*z+c
+  abs(fn1(imag(z))-fn1(imag(d)))>real(p2)
+  ;SOURCE: peterman.frm
+}
+
+
+Peter_1A15 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
+  z=p1, c=pixel:
+  d=z
+  z=z*z+c
+  abs(fn1(real(z))-fn1(real(d)))<real(p2)
+  ;SOURCE: peterman.frm
+}
+
+
+Peter_1A16 {; Peter Anders anders@physik.hu-berlin.de
+  z=p1, c=pixel:
+  d=z
+  z=z*z+c
+  abs(fn1(imag(z))-fn1(imag(d)))<real(p2)
+  ;SOURCE: peterman.frm
+}
+
+
+Peter_1HalCos {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cos(z)
@@ -9732,7 +9732,7 @@ Peter_1HalCos {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalCosF {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalCosF {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cos(z)
@@ -9740,12 +9740,12 @@ Peter_1HalCosF {; Peter Anders anders@physik.hu-berlin.de
   f3=-cos(z)
   z=z-g*f1/(f2-f3*f1/(2*f2))
   z=z+cos(z)/sin(z)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: halley.frm
 }
 
 
-Peter_1HalCot {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalCot {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cotan(z)
@@ -9764,12 +9764,12 @@ Peter_1HalCotF {; Peter Anders anders@physik.hu-berlin.de
   f2=-1/(sin(z))^2
   f3=2*cos(z)/(sin(z))^3
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: halley.frm
 }
 
 
-Peter_1HalLog {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalLog {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=log(z)
@@ -9781,19 +9781,19 @@ Peter_1HalLog {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalLogF {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalLogF {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=log(z)
   f2=1/z
   f3=-1/(z*z)
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: halley.frm
 }
 
 
-Peter_1HalPoly {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalPoly {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=real(p1), g=p2+1:
   c=z
   f1=z^r-1
@@ -9805,7 +9805,7 @@ Peter_1HalPoly {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalPolyII {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalPolyII {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=real(p1), g=p2+1:
   c=z
   f1=z^r-1
@@ -9922,7 +9922,7 @@ Peter_1HalPolyRII {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalPolyRIII {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalPolyRIII {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=(z^p1)-(z^p2)
@@ -9986,7 +9986,7 @@ Peter_1HalPolyRVII {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalPolyX {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalPolyX {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=real(p1), g=p2+1:
   c=z
   f1=z^r-1
@@ -9998,7 +9998,7 @@ Peter_1HalPolyX {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalSin {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalSin {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)
@@ -10010,19 +10010,19 @@ Peter_1HalSin {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_1HalSinF {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalSinF {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)
   f2=cos(z)
   f3=-sin(z)
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: halley.frm
 }
 
 
-Peter_1HalTan {; Peter Anders anders@physik.hu-berlin.de 
+Peter_1HalTan {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tan(z)
@@ -10041,22 +10041,22 @@ Peter_1HalTanF {; Peter Anders anders@physik.hu-berlin.de
   f2=1/(cos(z))^2
   f3=2*sin(z)/(cos(z))^3
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: halley.frm
 }
 
 
 Peter_2A01 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  |fn1(z)|<real(p2) 
+  z=z*z+c
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
 Peter_2A02 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
+  z=z*z+c
   abs(fn1(z))<real(p2)
   ;SOURCE: peterman.frm
 }
@@ -10064,48 +10064,48 @@ Peter_2A02 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
 
 Peter_2A03 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  |fn1(z)|>real(p2) 
+  z=z*z+c
+  |fn1(z)|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
 Peter_2A04 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
+  z=z*z+c
   abs(fn1(z))>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A05 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A05 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  |fn1(real(z))-fn2(imag(z))|<real(p2) 
+  z=z*z+c
+  |fn1(real(z))-fn2(imag(z))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A06 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A06 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  abs(fn1(real(z))-fn2(imag(z)))<real(p2) 
+  z=z*z+c
+  abs(fn1(real(z))-fn2(imag(z)))<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A07 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A07 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  |fn1(real(z))-fn2(imag(z))|>real(p2) 
+  z=z*z+c
+  |fn1(real(z))-fn2(imag(z))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A08 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A08 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
-  z=z*z+c           
-  abs(fn1(real(z))-fn2(imag(z)))>real(p2) 
+  z=z*z+c
+  abs(fn1(real(z))-fn2(imag(z)))>real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -10113,35 +10113,35 @@ Peter_2A08 {; Peter Anders anders@physik.hu-berlin.de
 Peter_2A09 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  |fn1(real(z))-fn1(real(d))|>real(p2) 
+  z=z*z+c
+  |fn1(real(z))-fn1(real(d))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A10 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A10 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  |fn1(imag(z))-fn1(imag(d))|>real(p2) 
+  z=z*z+c
+  |fn1(imag(z))-fn1(imag(d))|>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A11 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A11 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  |fn1(real(z))-fn1(real(d))|<real(p2) 
+  z=z*z+c
+  |fn1(real(z))-fn1(real(d))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A12 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A12 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  |fn1(imag(z))-fn1(imag(d))|<real(p2) 
+  z=z*z+c
+  |fn1(imag(z))-fn1(imag(d))|<real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -10149,17 +10149,17 @@ Peter_2A12 {; Peter Anders anders@physik.hu-berlin.de
 Peter_2A13 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  abs(fn1(real(z))-fn1(real(d)))>real(p2) 
+  z=z*z+c
+  abs(fn1(real(z))-fn1(real(d)))>real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A14 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A14 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  abs(fn1(imag(z))-fn1(imag(d)))>real(p2) 
+  z=z*z+c
+  abs(fn1(imag(z))-fn1(imag(d)))>real(p2)
   ;SOURCE: peterman.frm
 }
 
@@ -10167,22 +10167,22 @@ Peter_2A14 {; Peter Anders anders@physik.hu-berlin.de
 Peter_2A15 (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  abs(fn1(real(z))-fn1(real(d)))<real(p2) 
+  z=z*z+c
+  abs(fn1(real(z))-fn1(real(d)))<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2A16 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2A16 {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel:
   d=z
-  z=z*z+c          
-  abs(fn1(imag(z))-fn1(imag(d)))<real(p2)  
+  z=z*z+c
+  abs(fn1(imag(z))-fn1(imag(d)))<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_2HalCos^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCos^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cos(z)*cos(z)+p1
@@ -10194,7 +10194,7 @@ Peter_2HalCos^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalCosCosH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCosCosH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cos(z)*cosh(z)+p1
@@ -10219,7 +10219,7 @@ Peter_2HalCosH/Tan {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalCosH^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCosH^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cosh(z)*cosh(z)+p1
@@ -10231,7 +10231,7 @@ Peter_2HalCosH^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalCosHTanH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCosHTanH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cosh(z)*tanh(z)+p1
@@ -10245,7 +10245,7 @@ Peter_2HalCosHTanH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalCosTan {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCosTan {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tan(z)*cos(z)+p1
@@ -10259,7 +10259,7 @@ Peter_2HalCosTan {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalCosTanH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalCosTanH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tanh(z)*cos(z)+p1
@@ -10273,7 +10273,7 @@ Peter_2HalCosTanH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSin^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSin^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)*sin(z)+p1
@@ -10285,7 +10285,7 @@ Peter_2HalSin^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinCos {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinCos {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)*cos(z)+p1
@@ -10297,7 +10297,7 @@ Peter_2HalSinCos {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinCosH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinCosH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)*cosh(z)+p1
@@ -10322,7 +10322,7 @@ Peter_2HalSinH/Tan {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinH^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinH^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sinh(z)*sinh(z)+p1
@@ -10334,7 +10334,7 @@ Peter_2HalSinH^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinHCos {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinHCos {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sinh(z)*cos(z)+p1
@@ -10346,7 +10346,7 @@ Peter_2HalSinHCos {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinHCosH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinHCosH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sinh(z)*cosh(z)+p1
@@ -10358,7 +10358,7 @@ Peter_2HalSinHCosH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinHTanH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinHTanH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tanh(z)*sinh(z)+p1
@@ -10372,7 +10372,7 @@ Peter_2HalSinHTanH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinLog {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinLog {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)*log(z)+p1
@@ -10383,7 +10383,7 @@ Peter_2HalSinLog {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinSinH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinSinH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sinh(z)*sin(z)+p1
@@ -10395,7 +10395,7 @@ Peter_2HalSinSinH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinTan {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinTan {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(z)*tan(z)+p1
@@ -10409,7 +10409,7 @@ Peter_2HalSinTan {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalSinTanH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalSinTanH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tanh(z)*sin(z)+p1
@@ -10423,7 +10423,7 @@ Peter_2HalSinTanH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTan^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTan^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tan(z)*tan(z)+p1
@@ -10435,7 +10435,7 @@ Peter_2HalTan^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTanCosH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTanCosH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=cosh(z)*tan(z)+p1
@@ -10462,7 +10462,7 @@ Peter_2HalTanH/Tan (Yaxis) {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTanH^2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTanH^2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tanh(z)*tanh(z)+p1
@@ -10473,7 +10473,7 @@ Peter_2HalTanH^2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTanLog {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTanLog {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=log(z)*tan(z)+p1
@@ -10484,7 +10484,7 @@ Peter_2HalTanLog {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTanSinH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTanSinH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tan(z)*sinh(z)+p1
@@ -10498,7 +10498,7 @@ Peter_2HalTanSinH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2HalTanTanH {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2HalTanTanH {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=tan(z)*tanh(z)+p1
@@ -10514,7 +10514,7 @@ Peter_2HalTanTanH {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aLog {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aLog {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*log(z)+p2
@@ -10525,7 +10525,7 @@ Peter_2Halz^aLog {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aLog2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aLog2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, g=p2+1:
   c=z
   f1=z^a*log(z)+p2
@@ -10536,7 +10536,7 @@ Peter_2Halz^aLog2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aLog3 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aLog3 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*log(z)+pixel
@@ -10547,7 +10547,7 @@ Peter_2Halz^aLog3 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aSin {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aSin {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*sin(z)+p2
@@ -10558,7 +10558,7 @@ Peter_2Halz^aSin {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aSin2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aSin2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, g=p2+1:
   c=z
   f1=z^a*sin(z)+p2
@@ -10569,7 +10569,7 @@ Peter_2Halz^aSin2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aSin3 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aSin3 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*sin(z)+pixel
@@ -10580,7 +10580,7 @@ Peter_2Halz^aSin3 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aSin7 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aSin7 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, g=p2+1:
   c=z
   z=z-(z^a*sin(z)+p2)/(a*z^(a-1)*sin(z)+z^a*cos(z))
@@ -10589,7 +10589,7 @@ Peter_2Halz^aSin7 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aTan {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aTan {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*tan(z)+p2
@@ -10600,7 +10600,7 @@ Peter_2Halz^aTan {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aTan2 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aTan2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, g=p2+1:
   c=z
   f1=z^a*tan(z)+p2
@@ -10611,7 +10611,7 @@ Peter_2Halz^aTan2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_2Halz^aTan3 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_2Halz^aTan3 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, g=p2+1:
   c=z
   f1=z^a*tan(z)+pixel
@@ -10622,71 +10622,71 @@ Peter_2Halz^aTan3 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_3A01 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A01 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
-  z=z*z+c           
-  |real(z)|<100  || |imag(z)|<100 
+  z=z*z+c
+  |real(z)|<100  || |imag(z)|<100
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A02 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A02 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
-  z=z*z+c           
-  abs(real(z))<100  ||  abs(imag(z))<100 
+  z=z*z+c
+  abs(real(z))<100  ||  abs(imag(z))<100
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A03 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A03 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
-  z=z*z+c           
-  |real(z)|<100 && |imag(z)|<100 
+  z=z*z+c
+  |real(z)|<100 && |imag(z)|<100
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A04 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A04 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
-  z=z*z+c           
-  abs(real(z))<100 && abs(imag(z))<100 
+  z=z*z+c
+  abs(real(z))<100 && abs(imag(z))<100
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A05 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A05 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
-  z=-z*z+c           
-  |fn1(z)|<real(p2) 
+  z=-z*z+c
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A06 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A06 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=z*z-c
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A07 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A07 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=(z+c)*(z+c)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A08 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A08 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=(z-c)*(z+c)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-Peter_3A09 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3A09 {; Peter Anders anders@physik.hu-berlin.de
   z=p1, c=pixel:
   z=(z-c)*(z-c)
   |fn1(z)|<real(p2)
@@ -10694,9 +10694,9 @@ Peter_3A09 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-Peter_3P02 {; Peter Anders anders@physik.hu-berlin.de 
+Peter_3P02 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel:
-  z=z^z           
+  z=z^z
   abs(fn1(z))<real(p2)
   ;SOURCE: anders.frm
 }
@@ -10726,7 +10726,7 @@ phc+3mandels {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-phc+4mandels {; Sylvie Gallet [101324,3444], 1996 
+phc+4mandels {; Sylvie Gallet [101324,3444], 1996
               ; Requires passes=1
   iter = 0, limit = trunc(maxit/2)*(maxit<400) + 200 * (maxit >= 400)
   z = c = pixel * (whitesq + p1 * (whitesq==0))
@@ -10799,7 +10799,7 @@ PHC-Frame-Robert {; Ron Barnett [70153,1233], 1996  Requires passes=1
     +(whitesq==0)*(p1*real(pixel)+flip(imag(pixel)))
   c=whitesq*(p2+p1*real(pixel)+flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)+flip(imag(pixel)*p1)):
-  z=z*z*z/5+z*z+c 
+  z=z*z*z/5+z*z+c
   |z|<=100
   ;SOURCE: phc.frm
 }
@@ -10810,7 +10810,7 @@ PHC-Ikenaga01 {; Ron Barnett [70153,1233], 1996  Requires passes=1
     +(whitesq==0)*(p1*real(pixel)+flip(imag(pixel)))
   c=whitesq*(p2+p1*real(pixel)+flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)+flip(imag(pixel)*p1)):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: phc.frm
 }
@@ -10822,7 +10822,7 @@ PHC-Ikenaga02 {; Ron Barnett [70153,1233], 1996  Requires passes=1
   c=whitesq*(p2+p1*real(pixel)+flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)+flip(imag(pixel)*p1))
   z=conj(z), c=conj(c):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: phc.frm
 }
@@ -10833,13 +10833,13 @@ PHC-Ikenaga03 {; Ron Barnett [70153,1233], 1996  Requires passes=1
     +(whitesq==0)*(p1*real(pixel)-flip(imag(pixel)))
   c=whitesq*(p2+p1*real(pixel)-flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)-flip(imag(pixel)*p1)):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: phc.frm
 }
 
 
-PHC-m+j+n-01 {; Sylvie Gallet [101324,3444], 1996 
+PHC-m+j+n-01 {; Sylvie Gallet [101324,3444], 1996
   ; real(p1) = size of the Mandelbrot set
   ; imag(p1) = rotation angle (degrees): negative = clockwise
   ; p2 = parameter for the Julia set
@@ -10866,13 +10866,13 @@ PHC-Manowar01 {; Ron Barnett [70153,1233], 1996  Requires passes=1
   c=whitesq*(p2+p1*real(pixel)+flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)+flip(imag(pixel)*p1)):
   z=z*z+z1+c
-  z1=z 
+  z1=z
   |z|<=100
   ;SOURCE: phc.frm
 }
 
 
-PHC-PHOENIX {; Ron Barnett, 1996        
+PHC-PHOENIX {; Ron Barnett, 1996
              ; Typo in bailout corrected, G. Martin 6/98
   z = (whitesq==0)*flip(pixel)+whitesq*(pixel+p3)
   x1 = 0
@@ -10891,7 +10891,7 @@ PHC-Spider01 {; Ron Barnett [70153,1233], 1996  Requires passes=1
   c=whitesq*(p2+p1*real(pixel)+flip(imag(pixel)))\
     +(whitesq==0)*(p2+real(pixel)+flip(imag(pixel)*p1)):
   z=z*z+c
-  c=c/2+z 
+  c=c/2+z
   |z|<=100
   ;SOURCE: phc.frm
 }
@@ -11072,7 +11072,7 @@ phcdd4 {
   z=z+pixel*(whitesq==0)
   t=(fn3(z)+whitesq)^P1
   z=fn2(cos(1-z)+sin(1/z))*1-fn1(1/z*sin(t)+fn4(t))
-  |z|<=4  
+  |z|<=4
   ;SOURCE: ad4.frm
 }
 
@@ -11091,7 +11091,7 @@ phcjx22y {
 phcsary6 {; from spacemandel_phc by Damion presogna, 11/18/96
           ; modified by alex dukay 11/22/96
   z=pixel, r=(pixel*whitesq):
-  r=fn1(1/z)+r 
+  r=fn1(1/z)+r
   m=fn2((1-(z*z))*imag(flip(z)))
   z=(m*(whitesq)+(r-1))
   |z|<4||2<|r|
@@ -11102,7 +11102,7 @@ phcsary6 {; from spacemandel_phc by Damion presogna, 11/18/96
 phcsary7 {; from spacemandel_phc by Damion presogna, 11/18/96
           ; modified by alex dukay 11/22/96
   z=pixel, r=(pixel*whitesq):
-  r=fn1(1/z)+r 
+  r=fn1(1/z)+r
   m=fn2((1-(z*z))*imag(flip(z)))
   z=(m*(whitesq))+(r-1)
   |z|<=4
@@ -11227,8 +11227,8 @@ pheon2 (XAXIS) {
   temp = z
   z  = z*z - zp2
   zp2 = zp1
-  zp1 = conj(temp) 
-  |zp1| <= 4 
+  zp1 = conj(temp)
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11240,7 +11240,7 @@ pheonabs (XAXIS) {
   z  = z*z - abs(zp2)
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11252,7 +11252,7 @@ pheonix (XAXIS) {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -11265,7 +11265,7 @@ pheot {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = p1/conj(temp)
-  (|zp1| <= 64) && (|z| <= huge) 
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -11278,7 +11278,7 @@ pheot1 {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = p1/conj(temp)
-  (|zp1| <= bail) && (|z| <= huge) 
+  (|zp1| <= bail) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -11302,7 +11302,7 @@ phi01 (xyaxis) {; try inside=maxiter and outside=imag on these
 
 
 phi02 (xyaxis) {; try inside=maxiter and outside=imag on these
-  c = pixel 
+  c = pixel
   z = ((sqrt(5) + 1)/2):
   z =  z*z + pixel*((sqrt(5) + 1)/2) + c
   |z| <= 4
@@ -11387,14 +11387,14 @@ Phoenix {; Ron Barnett, 1993
   y = 0:
   x1 = z*z + P1 + P2*y
   y = z
-  z = x1 
+  z = x1
   |z|<= 50
   ;SOURCE: reb006.frm
 }
 
 
 Phoenix2-1 {
-   ; This is the Phoenix formula as described by 
+   ; This is the Phoenix formula as described by
    ; Shigehiro Ushiki.  The other formulas come from
    ; Fractal programming in C.
    ; (c) 1993 by:
@@ -11607,7 +11607,7 @@ picasso {; Giuseppe Zito
   d11 = -0.99330801
   d12 = 0.070017
   d20 = -0.039135
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
@@ -11622,7 +11622,7 @@ picasso {; Giuseppe Zito
   s0 = s0 +c13
   s0 = s0 +y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -y
   s0 = s0 -x
@@ -11643,9 +11643,9 @@ picasso {; Giuseppe Zito
   s0 = s0 *d20
   s0 = s0 -y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11655,13 +11655,13 @@ picassof {; Giuseppe Zito
   c4 = -0.768977
   d2 = -0.364262
   d12 = 0.579906
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 *x
   s0 = s0 -y
   s0 = s0 +c4
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *d2
   s0 = s0 +y
@@ -11670,9 +11670,9 @@ picassof {; Giuseppe Zito
   s0 = s0 +y
   s0 = s0 /y
   s0 = s0 -d12
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11685,7 +11685,7 @@ pienza {; Giuseppe Zito
   c11 = -0.599758
   c13 = 0.21419
   d0 = 0.016549
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
@@ -11700,14 +11700,14 @@ pienza {; Giuseppe Zito
   s0 = s0 +c13
   s0 = s0 +y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -y
   s0 = s0 -x
   s0 = s0 +y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -11767,9 +11767,9 @@ pif9 {
 Pig_Tails {
   z = c = pixel:
   z = z + p1
-  q = fn2(z)^e 
+  q = fn2(z)^e
   r = fn1(z) * q
-  z = tan(r / q) * z + c 
+  z = tan(r / q) * z + c
   |z| < 4
   ;SOURCE: big_pig.frm
 }
@@ -11777,7 +11777,7 @@ Pig_Tails {
 
 Pigalleto {
   z = c = pixel:
-  r = fn1((1/z) / z) + p1 
+  r = fn1((1/z) / z) + p1
   z = fn2(z / r)
   z = z + c
   |z| < 4 + p2
@@ -11788,7 +11788,7 @@ Pigalleto {
 Piglet {
   z = c = pixel, p = pixel + p1:
   z = z * z * p
-  r = tan((1/z) / c)  
+  r = tan((1/z) / c)
   z = fn2(z) + fn1(r)
   |z| < 4 + p2
   ;SOURCE: big_pig.frm
@@ -11797,14 +11797,14 @@ Piglet {
 
 Pigs {
   z = pixel:
-  r = z * fn1(z)^e   
+  r = z * fn1(z)^e
   z = (fn2(z) / r) + p1
   |z| < 4
   ;SOURCE: big_pig.frm
 }
 
 
-Pilsner {; Revised for Fractint v20 by G. Martin  
+Pilsner {; Revised for Fractint v20 by G. Martin
   z = 0, c = pixel, ppix = pixel^(-1) + p1:
   z = (z*1/ppix) * fn1(ppix)
   z = fn2(z) + c
@@ -11847,13 +11847,13 @@ piram {; Giuseppe Zito
   d3 = -0.462973
   d5 = -0.906456
   d8 = -0.145095
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 +x
   s0 = s0 *y
   s0 = s0 -c3
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +x
   s0 = s0 *d3
@@ -11862,36 +11862,36 @@ piram {; Giuseppe Zito
   s0 = s0 -x
   s0 = s0 -d8
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
-pixey00 (XAXIS_NOPARM) {     
+pixey00 (XAXIS_NOPARM) {
   z = pixel + p1:
   z = z*z + pixel
-  z <= 4 
+  z <= 4
   ;SOURCE: pixey.frm
 }
 
 
-pixey01 {     
+pixey01 {
   z = pixel + p1:
   z = z^2.71828182845905 + pixel
-  z <= 4 
+  z <= 4
   ;SOURCE: pixey.frm
 }
 
 
-pixey02 {; Added variable "newpixel". G. Martin 6/29/99     
+pixey02 {; Added variable "newpixel". G. Martin 6/29/99
   newpixel = pixel
   z = newpixel + p1, c = newpixel:
   temp = z
   z = z*z + newpixel + c
   newpixel = temp
-  z <= 4 
+  z <= 4
   ;SOURCE: pixey.frm
 }
 
@@ -11901,49 +11901,49 @@ pixey03 {
   x = real(z + p1), y = imag(z + p2):
   x = fn1(x*x - fn2(y*y))
   y = fn3(y*y - fn4(x*x))
-  z = x*x + y*y 
+  z = x*x + y*y
   |z| <= 4
   ;SOURCE: pixey.frm
 }
 
 
 pixey04 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z*2.71828182845905) + fn2(c)  
+  z = fn1(z*2.71828182845905) + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
 
 
 pixey05 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z^2.71828182845905) + fn2(c)  
+  z = fn1(z^2.71828182845905) + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
 
 
 pixey06 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z)^2.71828182845905 + fn2(c)  
+  z = fn1(z)^2.71828182845905 + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
 
 
 pixey07 {
-  z = pixel + p1 
+  z = pixel + p1
   c = pixel:
-  z = fn1(z-1/pixel)^2.71828182845905 + fn2(c)  
+  z = fn1(z-1/pixel)^2.71828182845905 + fn2(c)
   |z| <= 16
   ;SOURCE: pixey.frm
 }
 
 
-pixey08 { 
+pixey08 {
   z = pixel + p1
   c = pixel - fn1(z):
   c = pixel + c/z
@@ -11953,7 +11953,7 @@ pixey08 {
 }
 
 
-pixey09 { 
+pixey09 {
   z = pixel + p1
   c = fn1(pixel - fn2(z)):
   z = c - z*pixel
@@ -11971,7 +11971,7 @@ pixey10 {
 }
 
 
-pixey11 { 
+pixey11 {
   z = fn1(pixel + p1)
   c = fn2(pixel - sqr(z)):
   z = (c - z*pixel)/(pixel - c*c)
@@ -11980,7 +11980,7 @@ pixey11 {
 }
 
 
-pixey12 { 
+pixey12 {
   z =fn1(pixel + p1)
   c =fn2(pixel - sqr(z)):
   z =c + z^2.71828182845905 - 1
@@ -11989,7 +11989,7 @@ pixey12 {
 }
 
 
-pixey13 { 
+pixey13 {
   z = fn1(pixel + p1)
   c = fn2(pixel - sqr(z)):
   z = z^2.71828182845905 + c
@@ -12001,7 +12001,7 @@ pixey13 {
 PixJack {
    z = pixel, c = p1:
    z = z*z + c * pixel
-   z <= 4 
+   z <= 4
    ;SOURCE: orman3.frm
 }
 
@@ -12009,12 +12009,12 @@ PixJack {
 PixJack2 {
    z = pixel, c = p1, d=c/pixel:
    z = z*z + c + d
-   z <= 4 
+   z <= 4
    ;SOURCE: orman3.frm
 }
 
 
-PixNwt { 
+PixNwt {
   z = pixel, Root = fn1(p2 * pixel):
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -12022,7 +12022,7 @@ PixNwt {
 }
 
 
-PixNwt1/ { 
+PixNwt1/ {
   z = pixel, Root = 1/(2*fn1(p2 * pixel)) + 1/(2*fn2(p2 * pixel)):
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -12030,7 +12030,7 @@ PixNwt1/ {
 }
 
 
-PixNwtpwr { 
+PixNwtpwr {
   z = pixel, Root = pixel^p2 :
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1))
   .001 <= |z^p1 - Root|
@@ -12345,7 +12345,7 @@ PokornyConesJulia {; Copyright (c) Paul W. Carlson, 1997
 
 polar {; Kerry Mitchell 14nov98
        ;
-       ; Kerry Mitchell's explanation of his "Polar Curves" formulas 
+       ; Kerry Mitchell's explanation of his "Polar Curves" formulas
        ; is at the end of this formula
        ;
        ; draws polar curve r = cabs(a*fn1(b*theta))^n+r0
@@ -12404,7 +12404,7 @@ polar {; Kerry Mitchell 14nov98
     z=cos(t)+flip(sin(t))
   ENDIF
   done==0
-;*****Kerry Mitchell's explanation of his "Polar Curves" formulas****** 
+;*****Kerry Mitchell's explanation of his "Polar Curves" formulas******
 ;
 ;              copyright Kerry Mitchell 14nov98
 ;
@@ -12482,7 +12482,7 @@ polar {; Kerry Mitchell 14nov98
 
 
 polar-inout_jul {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -12563,7 +12563,7 @@ polar-inout_jul {; Kerry Mitchell 14nov98
 
 
 polar-inout_man {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -12642,7 +12642,7 @@ polar-inout_man {; Kerry Mitchell 14nov98
 
 
 polar-near_jul { ; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -12723,7 +12723,7 @@ polar-near_jul { ; Kerry Mitchell 14nov98
 
 
 polar-near_man {; Kerry Mitchell 14nov98
-        ; 
+        ;
         ; Kerry Mitchell's explanation of his "Polar Curves" formulas
         ; is at the end of formula "polar"
         ;
@@ -12804,7 +12804,7 @@ polar-near_man {; Kerry Mitchell 14nov98
 Polka {
   z = c = pixel:
   z = z + p1
-  c = fn1(c) 
+  c = fn1(c)
   z = fn2((z*z+c-2)/(2*z+c+1))
   |z| < 4
   ;SOURCE: gestalt.frm
@@ -12814,19 +12814,19 @@ Polka {
 pollen {; Giuseppe Zito
   z = pixel
   d2 = -0.547846
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *y
   s0 = s0 +d2
   s0 = s0 *x
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -12897,7 +12897,7 @@ PolyRIII {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-PolyTestI {; Peter Anders anders@physik.hu-berlin.de 
+PolyTestI {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=p1:
   c=z
   f1=z^r-1
@@ -12909,7 +12909,7 @@ PolyTestI {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-PolyTestII {; Peter Anders anders@physik.hu-berlin.de 
+PolyTestII {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=p1:
   c=z
   f1=sin(z)
@@ -12921,7 +12921,7 @@ PolyTestII {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-PolyTestIII {; Peter Anders anders@physik.hu-berlin.de 
+PolyTestIII {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, r=p1:
   c=z
   f1=z^(r+1)-z
@@ -12933,7 +12933,7 @@ PolyTestIII {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-pop01 { 
+pop01 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -12946,7 +12946,7 @@ pop01 {
 }
 
 
-pop02 { 
+pop02 {
   h = (0.05 * ((p1)<=0))
   k = (3.00 * ((p2)<=0))
   x = real(pixel) + p1, y = imag(pixel) + p2:
@@ -12959,7 +12959,7 @@ pop02 {
 }
 
 
-pop03 { 
+pop03 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.00 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -12972,20 +12972,20 @@ pop03 {
 }
 
 
-pop04 { 
+pop04 {
   h = (0.10 * ((p1)<=0) + (p1) * (0<p1))
   k = (5.00 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
   a = x - h*fn1((y) + fn2(k*y))
   b = y - h*fn1((x) + fn2(k*x))
   x = a, y = b
-  z = fn3(x) * fn4(y) *  fn3(x) * fn4(y)  
+  z = fn3(x) * fn4(y) *  fn3(x) * fn4(y)
   |z| <= 64
   ;SOURCE: pop.frm
 }
 
 
-pop05 { 
+pop05 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.00 * ((p2)<=0) + (p2) * (0<p2))
   c = pixel
@@ -12999,7 +12999,7 @@ pop05 {
 }
 
 
-pop06 { 
+pop06 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.00 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -13012,7 +13012,7 @@ pop06 {
 }
 
 
-pop07 { 
+pop07 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -13025,7 +13025,7 @@ pop07 {
 }
 
 
-pop08 { 
+pop08 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -13038,7 +13038,7 @@ pop08 {
 }
 
 
-pop09 { 
+pop09 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -13342,7 +13342,7 @@ pr27 {
 
 pr31 {
   c=z=pixel, t=(fn1(pixel+whitesq)+1):
-  z=fn4(fn2(t)/real(fn3(z*whitesq)))+c      
+  z=fn4(fn2(t)/real(fn3(z*whitesq)))+c
   |z|<4
   ;SOURCE: ad5.frm
 }
@@ -13360,9 +13360,9 @@ PrecognaJ {
    ; p1 is Julia parameter.
    ; Precogna.frm, formulas PrecognaJ, PrecognaM
    ; Copyright (C) 1997 PGD.
-   ; Distribute it as you see fit, as long as these comments remain 
-   ; attached and the two formulas unaltered. Formulas you derive from 
-   ; these by changing anything, and images and par files generated with 
+   ; Distribute it as you see fit, as long as these comments remain
+   ; attached and the two formulas unaltered. Formulas you derive from
+   ; these by changing anything, and images and par files generated with
    ; this, are yours to do with as you please.
   z=pixel, p=0, c=p1:
   t=sqr(p)*p+sqr(z)+c
@@ -13377,9 +13377,9 @@ PrecognaM (XAXIS) {
    ; p1 is Julia parameter.
    ; Precogna.frm, formulas PrecognaJ, PrecognaM
    ; Copyright (C) 1997 PGD.
-   ; Distribute it as you see fit, as long as these comments remain 
-   ; attached and the two formulas unaltered. Formulas you derive from 
-   ; these by changing anything, and images and par files generated with 
+   ; Distribute it as you see fit, as long as these comments remain
+   ; attached and the two formulas unaltered. Formulas you derive from
+   ; these by changing anything, and images and par files generated with
    ; this, are yours to do with as you please.
   z=0, p=0, c=pixel:
   t=sqr(p)*p+sqr(z)+c
@@ -13446,19 +13446,19 @@ PRN_04 {; Paul Novak, 1996
 proof {; Giuseppe Zito
   z = pixel
   c0 = 0.49834201
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 -y
   s0 = s0 /y
   s0 = s0 /y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4   
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13595,7 +13595,7 @@ PropPlIm {
 }
 
 
-Prueba_000 { 
+Prueba_000 {
   z=fn1(pixel), c=fn2(pixel):
   z=fn2(p1/z^4) - fn1(p2/z^2) + c
   |z|<64
@@ -13627,7 +13627,7 @@ Prueba_003 {; Bill Decker mod 10/98 of Prueba_000
 }
 
 
-Prueba_pop {; (c) by Miguel Fliguer 
+Prueba_pop {; (c) by Miguel Fliguer
   z=c=pixel, step1=p1, step2=p2:
   rz=real(z)
   iz=imag(z)
@@ -13638,7 +13638,7 @@ Prueba_pop {; (c) by Miguel Fliguer
 
 
 pseudo-iain {; use decomp=256
-  zc=pixel, c=p1, bailout=real(p2), range=imag(p2) 
+  zc=pixel, c=p1, bailout=real(p2), range=imag(p2)
   iter=1:
   iter=iter+1, zc=sqr(zc)+c, test=fn1(zc)
   IF (test<range)
@@ -13658,7 +13658,7 @@ PseudoLambda {
   x = real(z), y = imag(z)
   x1 = -p1*(x - x*x + y*y) + p2
   y = -p1*(y - 2*x*y)
-  z = x1 + flip(y) 
+  z = x1 + flip(y)
   |z| <= 100
   ;SOURCE: reb003.frm
 }
@@ -13753,7 +13753,7 @@ psycho (XAXIS) {
   temp = z
   z = z*z - zp
   zp = sin(-temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -13927,14 +13927,14 @@ purse {; Giuseppe Zito
   d4 = -0.930929
   d7 = -0.301807
   d8 = -0.593822
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 /c3
   s0 = s0 +x
   s0 = s0 /y
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 /d4
   s0 = s0 +x
@@ -13943,9 +13943,9 @@ purse {; Giuseppe Zito
   s0 = s0 /x
   s0 = s0 /x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -13985,7 +13985,7 @@ pwr-bug-4 {
 px1 {
   z=pixel, t=fn1(real(z+p3)), x=z+(z/pi), y=z+(z/pi):
   x=(x*p1)
-  y=(y*p2)/pi 
+  y=(y*p2)/pi
   z=fn4(x-1)+fn3(y)
   z=(fn2(whitesqr==0)*x)-(fn3(whitesqr)+z)
   |z|>=4

@@ -64,13 +64,13 @@ xlty_jul {; Kerry Mitchell
     zc=sqr(zc)+c
   ENDIF
   iter>0
-;*********Kerry Mitchell's explanation of "fraction" formulas******** 
+;*********Kerry Mitchell's explanation of "fraction" formulas********
 ;           narrative copyright Kerry Mitchell, 1998
 ;
 ;  Formulas covered by this explanation:
 ;     xlty_jul (above)
 ;     xlty_man
-;     heart_jul     
+;     heart_jul
 ;     heart_man
 ;
 ; Fun with fractions
@@ -303,7 +303,7 @@ xp8 {; Edited for Fractint v. 20 by George Martin, 10/98
   a=real(z), b=imag(z+p1), c=real(z-p2)
   d=imag(z), f=imag(z+p3)
   g=fn4(a+c)/(b+d)
-  b=-fn2(b+f) 
+  b=-fn2(b+f)
   z=a/fn3(g+whitesq)
   |z|<4
   ;SOURCE: ad5.frm

@@ -4,4 +4,4 @@ Fzppchco {
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+

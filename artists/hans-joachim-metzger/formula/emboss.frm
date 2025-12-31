@@ -96,7 +96,7 @@ emboss-iter_jul {; Kerry Mitchell 11sep98
   done==0
   ;SOURCE: emboss.frm
 }
- 
+
 emboss-iter_man {; Kerry Mitchell 11sep98
         ;
         ; An explanation of Kerry Mitchell's "embossing" formulas
@@ -202,7 +202,7 @@ emboss-iter_man {; Kerry Mitchell 11sep98
 ;        emboss-iter_jul
 ;        emboss-iter_newtex
 ;        emboss-iter_newtn
-;        emboss-iter_genjul 
+;        emboss-iter_genjul
 ;        emboss-iter_genman
 ;
 ; Embossing
@@ -290,13 +290,13 @@ emboss-iter_man {; Kerry Mitchell 11sep98
 ;
   ;SOURCE: emboss.frm
 }
- 
+
 emboss-iter_newtex {; Kerry Mitchell 10oct98
         ;
         ; For an explanation of Kerry Mitchell's "embossing" formulas,
         ;   see the end of formula "emboss-iter_man"
         ;
-        ; named changed from emboss-iter_newtexplog because that 
+        ; named changed from emboss-iter_newtexplog because that
         ;  name has more than the maximum 18 characters permitted
         ;  by Fractint. George Martin 10/98
         ;
@@ -384,7 +384,7 @@ emboss-iter_newtex {; Kerry Mitchell 10oct98
   done==0
   ;SOURCE: emboss.frm
 }
- 
+
 emboss-iter_newtn {; Kerry Mitchell 11sep98
         ;
         ; For an explanation of Kerry Mitchell's "embossing" formulas,
@@ -476,4 +476,4 @@ emboss-iter_newtn {; Kerry Mitchell 11sep98
   done==0
   ;SOURCE: emboss.frm
 }
- 
+

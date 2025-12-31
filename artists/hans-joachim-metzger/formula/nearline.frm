@@ -1,5 +1,5 @@
 nearline-theta_man {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Mandelbrot set with nearest approach to a given line
@@ -33,9 +33,9 @@ nearline-theta_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 nearline01_jul {; Kerry Mitchell
-        ; See the end of nearline_theta_jul for Kerry Mitchell's 
+        ; See the end of nearline_theta_jul for Kerry Mitchell's
         ; explanation of the development of these "nearline" formulas.
         ;
         ; color Julia sets with nearest approach to a given line
@@ -70,4 +70,4 @@ nearline01_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

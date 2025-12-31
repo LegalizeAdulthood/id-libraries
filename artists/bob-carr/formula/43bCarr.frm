@@ -575,7 +575,7 @@ iter=iter+1
 cabs(|z|)<=bailout
 }
 
-Carr3192(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr3192(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
 d=log(1/pixel-cos(1/pixel))

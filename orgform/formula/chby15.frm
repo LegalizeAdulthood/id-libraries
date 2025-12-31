@@ -23,7 +23,7 @@ T02-15 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method with weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -537,7 +537,7 @@ C10-15 {; V.1.1 - earlier versions may be discarded
 
 
 P02-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Chris Green:
         ; Newton Method with weird bailout test
@@ -557,7 +557,7 @@ P02-15 {; V.1.1 - earlier versions may be discarded
 
 
 P03-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP(2)-2P(1))/3
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -570,7 +570,7 @@ P03-15 {; V.1.1 - earlier versions may be discarded
 
 
 P04-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (7zP(3)-3P(2))/4
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -583,7 +583,7 @@ P04-15 {; V.1.1 - earlier versions may be discarded
 
 
 P05-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (9zP(4)-4P(3))/5
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -596,7 +596,7 @@ P05-15 {; V.1.1 - earlier versions may be discarded
 
 
 P06-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP(5)-5P(4))/6
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -609,7 +609,7 @@ P06-15 {; V.1.1 - earlier versions may be discarded
 
 
 P07-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP(6)-6P(5))/7
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -622,7 +622,7 @@ P07-15 {; V.1.1 - earlier versions may be discarded
 
 
 P08-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP(7)-7P(6))/8
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -635,7 +635,7 @@ P08-15 {; V.1.1 - earlier versions may be discarded
 
 
 P09-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP(8)-8P(7))/9
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -648,7 +648,7 @@ P09-15 {; V.1.1 - earlier versions may be discarded
 
 
 P10-15 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP(9)-9P(8))/10
   r=p1, bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1143,7 +1143,7 @@ Tc02-15 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Chris Green:
          ; Newton Method with weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)

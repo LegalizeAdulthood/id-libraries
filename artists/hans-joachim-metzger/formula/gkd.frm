@@ -1,6 +1,6 @@
 oHiram           { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ;   Thu, 11 Mar 2004 04:44:00
-                   ; 
+                   ;
             ;-------------------
             ; p1real = a (0<a<1)
             ;-------------------
@@ -12,7 +12,7 @@ oHiram           { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
    z = x + flip(y)
  n == n
  }
- 
+
 oLauwerier       { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ;   Thu, 11 Mar 2004 04:44:00
                    ; from "Algorithmen fuer Chaos und Fraktale", p.131
@@ -30,7 +30,7 @@ oLauwerier       { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
    z = x + flip(y)
  tmp == tmp
  }
- 
+
 Rot3d_D3_Jul     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ;   Thu, 23 Jan 2003 02:56:29 (ver. 2)
                    ;   Tue, 21 Jan 2003 00:22:26 (ver. 1)
@@ -88,7 +88,7 @@ Rot3d_D3_Jul     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
    j = j + 1
  tiefnum >= m && p5 >= i
  }
- 
+
 Rot3d_D3_Man     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ;   Thu, 23 Jan 2003 02:56:29 (ver. 2)
                    ;   Tue, 21 Jan 2003 00:22:26 (ver. 1)
@@ -146,4 +146,4 @@ Rot3d_D3_Man     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
    j = j + 1
  tiefnum >= m && p5 >= i
  }
- 
+

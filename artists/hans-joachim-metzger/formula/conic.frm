@@ -16,7 +16,7 @@ conic {; Kerry Mitchell 12may98
   z=cos(t)+flip(sin(t))
   iter>0
 ;******************************************************************
-;    Kerry Mitchell's explanation of his conic formulas 
+;    Kerry Mitchell's explanation of his conic formulas
 ;               (c) Kerry Mitchell, 1998
 ;
 ; Conic Sections
@@ -34,7 +34,7 @@ conic {; Kerry Mitchell 12may98
 ; where the parameters A through F determine the shape of the section, and x
 ; and y are the 2 spatial coordinates.  For example, the line y=x can be
 ; represented as
-; 
+;
 ; x - y = 0, or
 ; A = 0, B = 1, C = 0, D = -1, E = 0, F = 0.
 ;
@@ -124,7 +124,7 @@ conic {; Kerry Mitchell 12may98
 ;
 ; hyperbola centered at (h,k), semimajor axis alpha, semiminor axis beta,
 ; opening up/down:  (y-k)^2/beta^2 - (x-h)^2/alpha^2 = 1
-; 
+;
 ; coordinate rotation, from (u,v) to (x,y), through an angle theta:
 ; u = x*cos(theta) + y*sin(theta)
 ; v = -x*sin(theta) + y*cos(theta)
@@ -132,7 +132,7 @@ conic {; Kerry Mitchell 12may98
 ;*******************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 conic-bail_man { ; Kerry Mitchell 12may98
       ; Replaced variable "e" with "ee" 5/6/99, G. Martin
       ; See formula "conic" for Kerry Mitchell's explanation of his
@@ -154,7 +154,7 @@ conic-bail_man { ; Kerry Mitchell 12may98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 conic-count_jul16 {; Kerry Mitchell 12may98
       ; Replaced variable "e" with "ee" 5/6/99, G. Martin
       ; See formula "conic" for Kerry Mitchell's explanation of his
@@ -183,7 +183,7 @@ conic-count_jul16 {; Kerry Mitchell 12may98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 conic-mag_jul2 {; Kerry Mitchell 12may98
       ; Replaced variable "e" with "ee" 5/6/99, G. Martin
       ; See formula "conic" for Kerry Mitchell's explanation of his
@@ -209,7 +209,7 @@ conic-mag_jul2 {; Kerry Mitchell 12may98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 conic-near_juli {; Kerry Mitchell 12may98
       ; Replaced variable "e" with "ee" 5/6/99, G. Martin
       ; See formula "conic" for Kerry Mitchell's explanation of his
@@ -238,4 +238,4 @@ conic-near_juli {; Kerry Mitchell 12may98
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

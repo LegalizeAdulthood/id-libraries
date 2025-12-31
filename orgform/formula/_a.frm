@@ -52,7 +52,7 @@ a-0a-a2 {
 
 a-0a1 {; Revised 4/27/96 to eliminate superfluous "+c"
        ; Original version of this formula may be discarded
-  z=pixel, y=z^fn1(1-z), x=(z^z)/(z-p1): 
+  z=pixel, y=z^fn1(1-z), x=(z^z)/(z-p1):
   z=fn3(z^fn4(y))*fn2(z*(1/x))
   |z|<5
   ;SOURCE: new.frm
@@ -67,7 +67,7 @@ a-a2 {
 }
 
 
-a0 {; (c) by Miguel Fliguer 
+a0 {; (c) by Miguel Fliguer
   z=c=pixel:
   z=fn1(z/fn2(z/fn3(z/fn4(z))))+c
   |z|<4
@@ -95,7 +95,7 @@ a0006 {
 
 
 a0009 {
-  z=pixel, y=z^fn1(1-z), x=(z^z)/3.141591: 
+  z=pixel, y=z^fn1(1-z), x=(z^z)/3.141591:
   z=fn3(z^fn4(y))*fn2(z*(1/x))
   |z|<5
   ;SOURCE: ad1_miss.frm
@@ -214,7 +214,7 @@ a0b5 {
 }
 
 
-a1 { 
+a1 {
   z=pixel, x=log(z), y=cos(z)*(cos(z+sqrz)*z)
   v=(z*(z+1)/exp(z))^cosh(x):
   z=(z*fn3(y)/fn1(z)^fn4(v))^fn2(x)+c
@@ -380,7 +380,7 @@ aaa-deals {
 
 
 aaa-dealsFix1 {; from DAN.FRM
-               ; fix by Ron Barnett [70153,1233] 
+               ; fix by Ron Barnett [70153,1233]
   z = pixel, a=real(z), b=imag(z), i=((0,-1)^0.5):
   x = real(z), y = imag(z), u = x*x + y*y + a
   v = (0,-2)*x*y + b
@@ -391,7 +391,7 @@ aaa-dealsFix1 {; from DAN.FRM
 
 
 aaa-dealsFix2 {; from DAN.FRM
-               ; fix by Ron Barnett [70153,1233] 
+               ; fix by Ron Barnett [70153,1233]
   z = pixel, a=real(z), b=imag(z), i=((0,1)^0.5):
   x = real(z), y = imag(z), u = x*x + y*y + a
   v = (0,2)*x*y + b
@@ -602,7 +602,7 @@ AbsJulia2 (origin) {; Peter Anders anders@physik.hu-berlin.de
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=abs(x)
-  yo=abs(y)        
+  yo=abs(y)
   |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)
   ;SOURCE: peterman.frm
 }
@@ -619,7 +619,7 @@ AbsJulia3 (origin) {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-AbsLambdaJ1 {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaJ1 {; Peter Anders (anders@physik.hu-berlin.de)
   cx=real(p1), cy=imag(p1), xo=real(pixel), yo=imag(pixel):
   x=cx*(xo-xo*xo+yo*yo)-cy*(yo-2*xo*yo)
   y=cy*(xo-xo*xo+yo*yo)+cx*(yo-2*xo*yo)
@@ -630,7 +630,7 @@ AbsLambdaJ1 {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaJ2 {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaJ2 {; Peter Anders (anders@physik.hu-berlin.de)
   cx=real(p1), cy=imag(p1), xo=real(pixel), yo=imag(pixel):
   x=cx*(xo-xo*xo+yo*yo)-cy*(yo-2*xo*yo)
   y=cy*(xo-xo*xo+yo*yo)+cx*(yo-2*xo*yo)
@@ -641,7 +641,7 @@ AbsLambdaJ2 {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaJ3 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaJ3 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de)
   cx=real(p1), cy=imag(p1), xo=real(pixel), yo=imag(pixel):
   x=cx*abs(xo-xo*xo+yo*yo)-cy*abs(yo-2*xo*yo)
   y=cy*abs(xo-xo*xo+yo*yo)+cx*abs(yo-2*xo*yo)
@@ -652,7 +652,7 @@ AbsLambdaJ3 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaJ4 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaJ4 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de)
   cx=real(p1), cy=imag(p1), xo=real(pixel), yo=imag(pixel):
   x=cx*|xo-xo*xo+yo*yo|-cy*|yo-2*xo*yo|
   y=cx*|yo-2*xo*yo|+cy*|xo-xo*xo+yo*yo|
@@ -663,7 +663,7 @@ AbsLambdaJ4 (xaxis) {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaM1 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaM1 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de)
   xo=0.5, yo=0, cx=real(pixel), cy=imag(pixel):
   x=cx*(xo-xo*xo+yo*yo)-cy*(yo-2*xo*yo)
   y=cy*(xo-xo*xo+yo*yo)+cx*(yo-2*xo*yo)
@@ -674,7 +674,7 @@ AbsLambdaM1 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaM2 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaM2 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de)
   xo=0.5, yo=0, cx=real(pixel), cy=imag(pixel):
   x=cx*(xo-xo*xo+yo*yo)-cy*(yo-2*xo*yo)
   y=cy*(xo-xo*xo+yo*yo)+cx*(yo-2*xo*yo)
@@ -685,7 +685,7 @@ AbsLambdaM2 (ORIGIN) {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaM3 {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaM3 {; Peter Anders (anders@physik.hu-berlin.de)
   xo=0.5, yo=0, cx=real(pixel), cy=imag(pixel):
   x=cx*abs(xo-xo*xo+yo*yo)-cy*abs(yo-2*xo*yo)
   y=cy*abs(xo-xo*xo+yo*yo)+cx*abs(yo-2*xo*yo)
@@ -696,7 +696,7 @@ AbsLambdaM3 {; Peter Anders (anders@physik.hu-berlin.de)
 }
 
 
-AbsLambdaM4 {; Peter Anders (anders@physik.hu-berlin.de) 
+AbsLambdaM4 {; Peter Anders (anders@physik.hu-berlin.de)
   xo=0.5, yo=0, cx=real(pixel), cy=imag(pixel):
   x=cx*|xo-xo*xo+yo*yo|-cy*|yo-2*xo*yo|
   y=cx*|yo-2*xo*yo|+cy*|xo-xo*xo+yo*yo|
@@ -712,24 +712,24 @@ AbsMandel {; Peter Anders anders@physik.hu-berlin.de
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=abs(x)
-  yo=abs(y)        
+  yo=abs(y)
   |fn1(x)|<real(p2) &&  |fn1(y)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-AbsMandel2 {; Peter Anders anders@physik.hu-berlin.de 
+AbsMandel2 {; Peter Anders anders@physik.hu-berlin.de
   xo=0, yo=0, cx=real(pixel), cy=imag(pixel):
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=abs(x)
-  yo=abs(y)        
+  yo=abs(y)
   |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)
   ;SOURCE: peterman.frm
 }
 
 
-AbsMandel3 {; Peter Anders anders@physik.hu-berlin.de 
+AbsMandel3 {; Peter Anders anders@physik.hu-berlin.de
   xo=0, yo=0, cx=real(pixel), cy=imag(pixel):
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
@@ -753,10 +753,10 @@ ABSMandelbrot (XAXIS){; Ramsay Burt - based on Mark Peterson Mandelbrot
 Absolem {
   z = 0, c = pixel:
   z = z + p1
-  z = (z * z) * (1/c) 
+  z = (z * z) * (1/c)
   z = fn1(z) * fn2(1/z)
-  z = z + c 
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
 
@@ -764,10 +764,10 @@ Absolem {
 Absolem_2 {
   z = 0, c = pixel:
   z = z + p1
-  z = (z * z) * (1/c) 
+  z = (z * z) * (1/c)
   z = fn1(z) * fn2(1/c)
-  z = z + c 
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
 
@@ -775,17 +775,17 @@ Absolem_2 {
 Absolem_SRand {
   z = 0, c = pixel:
   z = z + p1
-  z = (srand(z) * z) * (1/z) 
+  z = (srand(z) * z) * (1/z)
   z = fn1(z) * fn2(1/c)
-  z = z + c  
-  |z| <= 4 
+  z = z + c
+  |z| <= 4
   ;SOURCE: korfu.frm
 }
 
 
 Absolute {
   z=pixel:
-  z=abs(z) 
+  z=abs(z)
   |z|<=32
   ;SOURCE: sample.frm
 }
@@ -944,7 +944,7 @@ ai5 {
 }
 
 
-Airreal (XYAXIS) { 
+Airreal (XYAXIS) {
   z = c = pixel:
   z = (1/z)^3/(1/c)^2 + p1
   z = (fn1(c^2)/fn2(z^2))/c + pixel
@@ -977,7 +977,7 @@ aj6 {
 }
 
 
-Ajax {;the Final Effort 
+Ajax {;the Final Effort
   z=c=2/pixel:
   z =(z^(real(p1)))*(c^(real(p2))) + c
   |z| <=4
@@ -1042,7 +1042,7 @@ ajen006 {; Arno Jennen
 ajen007 {; Arno Jennen
          ; Changed to work under Fractint v 20.0 by George Martin
          ; Third line was z=(cosxx^z/(z+21))+flip(z)
-         ; I'm not sure what was intended 
+         ; I'm not sure what was intended
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel)+sqr(pixel-a):
   z=flip(z)
@@ -1083,7 +1083,7 @@ ajen010 {; Arno Jennen
 ajen11 {; Arno Jennen
   z=(pixel/(|pixel+9.95|)):
   a1=pixel+cosxx(z)
-  a2=(a1+0.20)/pixel 
+  a2=(a1+0.20)/pixel
   z=(|z+pixel|)/(a1+a2)+sin(a2)
   |(z^(9.20-a1))|<=z
   ;SOURCE: je090801.frm
@@ -1720,7 +1720,7 @@ Alpha02-28 {; V.1.1 - earlier versions may be discarded
             ; Dynamic (modified implicit Euler Method, popped)
             ;
             ; Alpha Integral
-            ; Alpha[0] = exp(-z)/z  
+            ; Alpha[0] = exp(-z)/z
             ; Alpha[1] = exp(-z)(1-1/z)/z
             ; Alpha[n+1] = (exp(-z)-(n+1)Alpha[n])/z
             ;
@@ -5193,7 +5193,7 @@ AMINO_1 {
   z = z * fn1(z) + pixel
   z = z + p1
   z = z + pixel
-  z = z * z + c / z   
+  z = z * z + c / z
   |z| <= 4
   ;SOURCE: damion.frm
 }
@@ -5213,7 +5213,7 @@ AMINO_3 {
   z = pixel:
   z = z*z*z/pixel + p1
   z = rand * z  +  z
-  z = fn1(z) 
+  z = fn1(z)
   |z| <= 64
   ;SOURCE: damion.frm
 }
@@ -5229,7 +5229,7 @@ AMINO_4 {
 
 AMINO_5 {
   z = pixel:
-  z = (|Z| - z) + z * z + p1 
+  z = (|Z| - z) + z * z + p1
   z = fn1(z) - fn2(z)
   z = pixel + sqrt(z)
   |z| < 4
@@ -5241,7 +5241,7 @@ AMINO_6 {
   z = pixel :
   z = z + pixel
   z = fn1(z + z) + pixel
-  z = sqrt(z * z) 
+  z = sqrt(z * z)
   ;SOURCE: damion.frm
 }
 
@@ -5249,7 +5249,7 @@ AMINO_6 {
 AMINO_7 (XAXIS) {
   z = pixel :
   z = z + c / sqrt(2)
-  z = sin(cos(z) + z) + (z + c)  
+  z = sin(cos(z) + z) + (z + c)
   z = fn1(z) + pixel
   ;SOURCE: damion.frm
 }
@@ -5284,7 +5284,7 @@ Anacron (XAXIS) {
 Anacron_2 (XAXIS) {
   z = pixel :
   z = (z/2*z) + fn1(z) + pixel
-  z = fn1(z) - sqrt(z) 
+  z = fn1(z) - sqrt(z)
   |z| < 4
   ;SOURCE: omicron.frm
 }
@@ -5340,7 +5340,7 @@ andy06 {
 }
 
 
-andy07 { 
+andy07 {
   bailout = 40
   z = c = pixel:
   z = p1 + fn1(c) / fn1(z + c) + p2 + fn2(c) / fn2(z + c)
@@ -5662,7 +5662,7 @@ Andy128 {
 }
 
 
-andy13 { 
+andy13 {
   z = z + c, c = pixel^(p1 + p2):
   a = p1 * z + fn1(p1)
   b = p1 * c + fn2(p2)
@@ -5890,7 +5890,7 @@ andy37 {
 }
 
 
-andy38 { 
+andy38 {
   bailout = 200
   z = c = pixel, p1 = (1,0):
   z = fn1(z^2/p1^2 + c^2/p2^2)
@@ -6127,7 +6127,7 @@ andy60 {
 
 andy61 {
   bailout = 200
-  z = c = pixel 
+  z = c = pixel
   a =  1 + 1 / c
   z = c + a:
   z = p1 * fn1(p1 + a) + p2 * fn2(p2 + a)
@@ -6236,7 +6236,7 @@ Andy71 {
 Andy72 {
   z = c = pixel^fn1(p1):
   z = z - c/z^c
-  |z| <= 40     
+  |z| <= 40
   ;SOURCE: andy_2.frm
 }
 
@@ -6473,7 +6473,7 @@ AnotherTwoIkes {; Ron Barnett [70153,1233], 1996   Requires passes=1
    ; Ron Barnett, 1996
   z =whitesq*((1-pixel)/p1)^(1/(p1-1))\
      +(whitesq==0)*((1-pixel-p3*(whitesq==0))/p2)^(1/(p2-1)):
-  z=whitesq*(z^p1+(pixel-1)*z-pixel)+(whitesq==0)*(z^p2+(pixel-1)*z-pixel) 
+  z=whitesq*(z^p1+(pixel-1)*z-pixel)+(whitesq==0)*(z^p2+(pixel-1)*z-pixel)
   |z|<=4
   ;SOURCE: phc.frm
 }
@@ -6518,7 +6518,7 @@ antizerr-yz {; 1997 by Benno Schmid
 ao6 {; Revised 4/27/96 to eliminate superfluous "+c"
      ; Original version of this formula may be discarded
   z=pixel:
-  z=fn1(z-1)^fn3(p2)+p1 
+  z=fn1(z-1)^fn3(p2)+p1
   |z|>4
   ;SOURCE: new.frm
 }
@@ -6532,10 +6532,10 @@ ap1 {
 }
 
 
-apflmatsch { 
+apflmatsch {
   z=pixel:
   z=sqr(z)+pixel
-  |z*fn1(p1*fn2(p2*pixel/|pixel|))| <= 4 
+  |z*fn1(p1*fn2(p2*pixel/|pixel|))| <= 4
   ;SOURCE: test.frm
 }
 
@@ -6578,18 +6578,18 @@ as8 {
 
 
 Astral {
-  z = c = pixel: 
+  z = c = pixel:
   r = round(fn1(z) + p1)
-  z = (r*1/z)^fn2(c)  
+  z = (r*1/z)^fn2(c)
   |z| < 4
   ;SOURCE: astral.frm
 }
 
 
 Astral_2 {
-  z = c = pixel: 
+  z = c = pixel:
   r = fn1(round(z) + p1)
-  z = (r*1/z)^fn2(c)  
+  z = (r*1/z)^fn2(c)
   |z| < 4
   ;SOURCE: astral.frm
 }
@@ -7272,7 +7272,7 @@ atom {; Giuseppe Zito
   c6 = -0.681499
   d0 = -0.187797
   d7 = 0.722431
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 *c1
@@ -7280,7 +7280,7 @@ atom {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 -y
   s0 = s0 -c6
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
   s0 = s0 +x
@@ -7289,9 +7289,9 @@ atom {; Giuseppe Zito
   s0 = s0 +x
   s0 = s0 *y
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -7318,7 +7318,7 @@ August {; Sylvie Gallet, Dec 1997
         ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0, sq2 = sqrt(2)
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-sq2) 
+  mz = abs(cabs(z1)-sq2)
   :
   IF (mz > 0.1)
     z2 = z1*z1
@@ -7454,115 +7454,115 @@ ave8rootcount_j {; Kerry Mitchell 12feb98
 ;
 ; Applicable to the following formulas:
 ;     ave8rootcount_j (above)
-;     ave8rootcount_m 
-;     ave8triangcount_j 
-;     ave8triangcount_m 
-;     ave8xlty_jul 
-;     ave8xlty_man 
-;     ave8z1gtz2_jul 
-;     ave8z1gtz2_man 
+;     ave8rootcount_m
+;     ave8triangcount_j
+;     ave8triangcount_m
+;     ave8xlty_jul
+;     ave8xlty_man
+;     ave8z1gtz2_jul
+;     ave8z1gtz2_man
 ;
 ; Average
 ;
-; Due to the discrete nature of fractal rendering, most 
-; fractals exhibit some sort of banding artifacts.  That 
-; is, formulas tend to be iterated until "something happens", 
-; and then the pixel is colored.  There can appear a sharp 
-; border between pixels where the iteration stopped at step 
-; n, versus nearby pixels that survived until step n+1.  
-; This discontinuity can even occur if the coloring is based 
+; Due to the discrete nature of fractal rendering, most
+; fractals exhibit some sort of banding artifacts.  That
+; is, formulas tend to be iterated until "something happens",
+; and then the pixel is colored.  There can appear a sharp
+; border between pixels where the iteration stopped at step
+; n, versus nearby pixels that survived until step n+1.
+; This discontinuity can even occur if the coloring is based
 ; on something other than the iteration count.
 ;
-; Averaging is one way to reduce this banding.  The bands of 
-; color are dependent upon the iteration count, which is 
-; related to the escape radius, or bailout value.  Changing 
-; the bailout will move the bands in or out from the fractal, 
-; and may slightly change their shape.  Moving the bands is 
+; Averaging is one way to reduce this banding.  The bands of
+; color are dependent upon the iteration count, which is
+; related to the escape radius, or bailout value.  Changing
+; the bailout will move the bands in or out from the fractal,
+; and may slightly change their shape.  Moving the bands is
 ; the basis of this method.
-; 
-; For quadratic formulas (Mandelbrot and Julia sets), squaring 
-; the bailout will move the bands out approximately one band 
-; width.  To see this, assume that the orbit escaped at the 
-; 17th iteration, using a escape radius of 100.  The magnitude 
-; of the iterate is between 100 and 10,000 (or else it would 
-; have escaped before or after iteration 17).  The magnitude 
-; of the next iteration will be between 10,000 and 1e8 (100 
-; squared and 10,000 squared).  Now, changing the escape 
-; radius to 10,000 (100 squared) means that the orbit will 
-; escape at the next iteration, or that what was the 17th 
+;
+; For quadratic formulas (Mandelbrot and Julia sets), squaring
+; the bailout will move the bands out approximately one band
+; width.  To see this, assume that the orbit escaped at the
+; 17th iteration, using a escape radius of 100.  The magnitude
+; of the iterate is between 100 and 10,000 (or else it would
+; have escaped before or after iteration 17).  The magnitude
+; of the next iteration will be between 10,000 and 1e8 (100
+; squared and 10,000 squared).  Now, changing the escape
+; radius to 10,000 (100 squared) means that the orbit will
+; escape at the next iteration, or that what was the 17th
 ; iteration band has moved outward 1 band width.
-; 
-; To see how this works with fractals, assume that a string 
+;
+; To see how this works with fractals, assume that a string
 ; of pixels is colored thusly with a given bailout value:
-; 
+;
 ; r g g g b b b
-; 
-; where "r" indicates red, "g" means green, and "b" is 
-; blue.  Increasing the bailout value moves the band outward, 
+;
+; where "r" indicates red, "g" means green, and "b" is
+; blue.  Increasing the bailout value moves the band outward,
 ; giving this string of colors:
-; 
+;
 ; r r g g g b b
-; 
+;
 ; Averaging the two:
-; 
+;
 ; r g g g b b b  first
 ; r r g g g b b  second
 ; r y g g c b b  average
-; 
-; where "y" means dark yellow and "c" means dark cyan.  The 
-; hard boundary between red and green has now been smoothed 
-; by the inclusion of a (dark) yellow pixel, and the line 
-; between green and blue has been smoothed through a (dark) 
-; cyan pixel.  In reality, more than two bailouts should be 
-; used to get a smoothly varying image.  Also, when using a 
-; bit-mapped fractal generator (Fractint), be aware that the 
-; averaging takes place in color index space, not color space, 
-; so it is important to use a smoothly varying color map.
-; 
-; The "ave8template" formula shows the basic functionality, 
-; using 8 different bailouts.  Call the lowest bailout r1, 
-; and choose it such that it is much larger than the size 
-; of the parameter (say, 100).  Then the width of this 
-; iteration band is from 100 to 10,000.  That is, all orbits 
-; that escape will have magnitudes between 100 and 10,000.  
-; The goal is to pick several other bailout values that will 
-; equally span this space.  Since the high end of the range 
-; is r1^2 or r1*r1^1, 8 even steps can be made by choosing 
-; bailouts of
-; 
-; r = r1 * r1^(i/8), 
 ;
-; for i from 1 to 8.  In practice, r1 and the next 7 steps 
-; are used, since the eighth bailout will overlap the first 
-; one.  Given the bailout values, 8 different iteration 
+; where "y" means dark yellow and "c" means dark cyan.  The
+; hard boundary between red and green has now been smoothed
+; by the inclusion of a (dark) yellow pixel, and the line
+; between green and blue has been smoothed through a (dark)
+; cyan pixel.  In reality, more than two bailouts should be
+; used to get a smoothly varying image.  Also, when using a
+; bit-mapped fractal generator (Fractint), be aware that the
+; averaging takes place in color index space, not color space,
+; so it is important to use a smoothly varying color map.
+;
+; The "ave8template" formula shows the basic functionality,
+; using 8 different bailouts.  Call the lowest bailout r1,
+; and choose it such that it is much larger than the size
+; of the parameter (say, 100).  Then the width of this
+; iteration band is from 100 to 10,000.  That is, all orbits
+; that escape will have magnitudes between 100 and 10,000.
+; The goal is to pick several other bailout values that will
+; equally span this space.  Since the high end of the range
+; is r1^2 or r1*r1^1, 8 even steps can be made by choosing
+; bailouts of
+;
+; r = r1 * r1^(i/8),
+;
+; for i from 1 to 8.  In practice, r1 and the next 7 steps
+; are used, since the eighth bailout will overlap the first
+; one.  Given the bailout values, 8 different iteration
 ; flags are initialized to 0.
-; 
-; At each iteration, the overall iteration counter is 
-; incremented, and an overall variable is recorded, which 
-; tracks the relevant quantity (iteration, how many times 
-; real(z) is less than imag(z), etc.).  Checking for escape 
-; is doing by sequentially stepping through the 8 bailout 
-; values.  If bailout 1 is exceeded, then set iteration 
-; counter 1 to the current iteration and set variable 1 
-; to the value of the overall variable.  If all the 
+;
+; At each iteration, the overall iteration counter is
+; incremented, and an overall variable is recorded, which
+; tracks the relevant quantity (iteration, how many times
+; real(z) is less than imag(z), etc.).  Checking for escape
+; is doing by sequentially stepping through the 8 bailout
+; values.  If bailout 1 is exceeded, then set iteration
+; counter 1 to the current iteration and set variable 1
+; to the value of the overall variable.  If all the
 ; bailouts have not yet been exceeded, continuing iterating.
-; 
-; When all the bailouts have been exceeded, compute the 
-; average of all the specific variables (variable 1, variable 
-; 2, etc.).  Then, use that average as the coloring parameter.  
-; If the pixel in question turns out the be an inside pixel, 
+;
+; When all the bailouts have been exceeded, compute the
+; average of all the specific variables (variable 1, variable
+; 2, etc.).  Then, use that average as the coloring parameter.
+; If the pixel in question turns out the be an inside pixel,
 ; color using the overall variable.
-; 
-; If the image is to be rendered simply using a smoothed 
-; iteration count, then a method similar to Linas Vepstas' 
-; renormalization is preferable.  However, if the variable 
-; used for coloring does not lend itself to a simple 
-; renormalization analysis, then the present method will 
-; work very well.  The number of averages can easily be 
-; changed to any appropriate amount.  However, when using 
-; a bit-mapped generator, it will not be beneficial to 
-; use an extreme number of averages, as the image will 
-; still be limited to the number of colors available 
+;
+; If the image is to be rendered simply using a smoothed
+; iteration count, then a method similar to Linas Vepstas'
+; renormalization is preferable.  However, if the variable
+; used for coloring does not lend itself to a simple
+; renormalization analysis, then the present method will
+; work very well.  The number of averages can easily be
+; changed to any appropriate amount.  However, when using
+; a bit-mapped generator, it will not be beneficial to
+; use an extreme number of averages, as the image will
+; still be limited to the number of colors available
 ; in the generator.
 ;
 ;ave8template { ; Kerry Mitchell 13feb98

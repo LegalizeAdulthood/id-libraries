@@ -6,7 +6,7 @@ JoWe55c36a {; from a modified Carr-formula
   |z| <=p3
   ;SOURCE: jo_we_71.frm
 }
- 
+
 JoWe55c36b {; from a modified Carr-formula
             ; 6/1997 JoWeber CIS [100424,35]
   c=z1=z2=p1/pixel:
@@ -16,4 +16,4 @@ JoWe55c36b {; from a modified Carr-formula
   |z| <=p3
   ;SOURCE: jo_we_71.frm
 }
- 
+

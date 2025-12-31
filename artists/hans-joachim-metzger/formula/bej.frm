@@ -6,7 +6,7 @@ BEJ_22 {
   |z|<4
   ;SOURCE: bej's.frm
 }
- 
+
 BEJ_M9 {; Revised for Fractint v. 20 by George Martin
         ; first line was
         ; fn1(z)=pixel:
@@ -18,4 +18,4 @@ BEJ_M9 {; Revised for Fractint v. 20 by George Martin
   |z*z+c|<4
   ;SOURCE: bejones.frm
 }
- 
+

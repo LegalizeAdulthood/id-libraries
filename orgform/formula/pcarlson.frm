@@ -566,7 +566,7 @@ Cdp_Jul_Mand {; Copyright (c) Paul W. Carlson, 1998
     prev_w = w
     IF (r < max_r && iter > 0)
         bailout = 1
-        z = colors_in_range_1 * r / max_r + range_num * colors_in_range + 1 
+        z = colors_in_range_1 * r / max_r + range_num * colors_in_range + 1
     ENDIF
     range_num = range_num + 1
     IF (range_num == num_ranges)
@@ -2191,8 +2191,8 @@ Mutant_demo { ; Oliver Klimek's TripleMutant formula
     w = z = bailout = iter = 0
     c = pixel
     pt1 = (2.5,2.5),  pt2 = (-2.5,2.5),  pt3 = (2.5,-2.5)
-    a1 = 1 / (|(pixel - pt1)|^2)    
-    a2 = 1 / (|(pixel - pt2)|^2)    
+    a1 = 1 / (|(pixel - pt1)|^2)
+    a2 = 1 / (|(pixel - pt2)|^2)
     a3 = 1 / (|(pixel - pt3)|^2)
     :
     ; find contribution of each function
@@ -2248,8 +2248,8 @@ Mutant_End { ; Oliver Klimek's TripleMutant formula
                  ; as modified by Paul Carlson, 1998
     w = z = bailout = iter = 0
     c = pixel
-    a1 = 1 / (|(pixel - p1)|^2)    
-    a2 = 1 / (|(pixel - p2)|^2)    
+    a1 = 1 / (|(pixel - p1)|^2)
+    a2 = 1 / (|(pixel - p2)|^2)
     a3 = 1 / (|(pixel - p3)|^2)
     :
     ; find contribution of each function
@@ -2303,8 +2303,8 @@ Mutant_Start { ; Oliver Klimek's TripleMutant formula
                    ; as modified by Paul Carlson, 1998
     w = z = bailout = iter = 0
     c = pixel
-    a1 = 1 / (|(pixel - p1)|^2)    
-    a2 = 1 / (|(pixel - p2)|^2)    
+    a1 = 1 / (|(pixel - p1)|^2)
+    a2 = 1 / (|(pixel - p2)|^2)
     a3 = 1 / (|(pixel - p3)|^2)
     ;
     ; find contribution of each function

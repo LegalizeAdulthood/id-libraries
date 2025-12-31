@@ -44,10 +44,10 @@ vase {; Giuseppe Zito
   d4 = 0.580719
   d5 = -0.749466
   d9 = 0.794345
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -x
   s0 = s0 -y
@@ -55,9 +55,9 @@ vase {; Giuseppe Zito
   s0 = s0 +d4
   s0 = s0 -d5
   s0 = s0 *d9
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -185,12 +185,12 @@ veil {; Giuseppe Zito
   c1 = 0.71361
   d3 = 0.752888
   d13 = 0.110017
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c1
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -y
   s0 = s0 *d3
@@ -209,9 +209,9 @@ veil {; Giuseppe Zito
   s2 = s2 -x
   s1 = s1 *s2
   s0 = s0 +s1
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 

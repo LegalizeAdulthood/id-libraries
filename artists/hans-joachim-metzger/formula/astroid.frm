@@ -77,7 +77,7 @@ astroid {; Kerry Mitchell 14nov98
 ;************************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 astroid-inout_jul {; Kerry Mitchell 14nov98
         ;
         ; Kerry Mitchell's explanation of his "Astroid" formulas is
@@ -128,7 +128,7 @@ astroid-inout_jul {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 astroid-inout_man {; Kerry Mitchell 14nov98
         ;
         ; Kerry Mitchell's explanation of his "Astroid" formulas is
@@ -178,7 +178,7 @@ astroid-inout_man {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 astroid-near_jul { ; Kerry Mitchell 14nov98
         ;
         ; Kerry Mitchell's explanation of his "Astroid" formulas is
@@ -229,7 +229,7 @@ astroid-near_jul { ; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+
 astroid-near_man {; Kerry Mitchell 14nov98
         ;
         ; Kerry Mitchell's explanation of his "Astroid" formulas is
@@ -279,4 +279,4 @@ astroid-near_man {; Kerry Mitchell 14nov98
   done==0
   ;SOURCE: 98msg.frm
 }
- 
+

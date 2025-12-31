@@ -8,4 +8,4 @@ FractalFenderC (XAXIS_NOPARM) {; Spectacular!
    x <= 4
   ;SOURCE: fract196.frm
 }
- 
+

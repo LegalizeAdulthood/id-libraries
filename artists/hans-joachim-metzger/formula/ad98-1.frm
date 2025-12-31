@@ -8,7 +8,7 @@ CDualist20 {
   |z+1|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 CDualist21 {
   bailout=p1
   z=pixel:
@@ -20,7 +20,7 @@ CDualist21 {
   |z|<=bailout
   ;SOURCE: ad978-1.frm
 }
- 
+
 CDualist3M {
   bailout=pixel
   z=pixel:
@@ -32,14 +32,14 @@ CDualist3M {
   |z|<=|bailout|
   ;SOURCE: ad978-1.frm
 }
- 
+
 nct0 {
   z=pixel, x=real(z), y=real(z):
   z=(fn2(z*(fn1(1-((x+y)+(y*y)))))+whitesq)
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 phcjx22y {
   z=pixel:
   z=fn1(1/z)*whitesq
@@ -49,7 +49,7 @@ phcjx22y {
   |z|>=p3
   ;SOURCE: ad978-1.frm
 }
- 
+
 phnax4 {
   z=pixel, t=p1:
   r=fn1(log(log(z)))
@@ -60,7 +60,7 @@ phnax4 {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 pn10zyy {
   z=pixel:
   d=(fn2(z-1)*(fn1(z+whitesq)))/p1
@@ -68,7 +68,7 @@ pn10zyy {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 pn12zy {
   z=pixel:
   d=(fn2(z-1)*(fn1(z+whitesq)))/p1
@@ -76,7 +76,7 @@ pn12zy {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 pn8z {
   z=pixel:
   d=((z-1)*(fn1(1/pixel)))/p1
@@ -84,7 +84,7 @@ pn8z {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 pr19 {
   z=pixel, t=z/1-(whitesq):
   z=fn1((z+whitesq)*(p1))
@@ -95,7 +95,7 @@ pr19 {
   |z|<4
   ;SOURCE: ad5.frm
 }
- 
+
 pxtest8 {
   u=(sqr(p1)+whitesq)
   z=pixel :
@@ -107,7 +107,7 @@ pxtest8 {
   |z|<p3
   ;SOURCE: ad978-1.frm
 }
- 
+
 ra3 {
   c=z=pixel, b=fn3(fn2(z)), k=real(p1)*b, o=imag(p1):
   z=fn4(fn4(z)+c)+o
@@ -121,7 +121,7 @@ ra3 {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 sra4 {
   z=pixel, b=fn2(z), k=real(p1)*b, o=imag(p1):
   z1=fn4(fn4(z))+(b*o)
@@ -135,7 +135,7 @@ sra4 {
   |z|<4
   ;SOURCE: ad978-1.frm
 }
- 
+
 w1 {
   z=pixel, a=real(p1), b=imag(p1):
   h=z^a+((-h)*z-1)
@@ -144,7 +144,7 @@ w1 {
   |z|<a || |z|<b
   ;SOURCE: ad978-1.frm
 }
- 
+
 w1a {; Eliminated superfluous variable "e". G. Martin
   z=pixel:
   a=real(p1), b=imag(p1), c=real(p2), d=real(p3)
@@ -154,7 +154,7 @@ w1a {; Eliminated superfluous variable "e". G. Martin
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 w1b {
   z=pixel, a=real(p1), b=imag(p1):
   h=z^a+((-b)*z-1)
@@ -163,7 +163,7 @@ w1b {
   |z|<a && |z|<b
   ;SOURCE: ad978-1.frm
 }
- 
+
 w1d {
   z=pixel, a=real(p1), b=imag(p1):
   h=(z*a)*((-b)*z-1)
@@ -172,7 +172,7 @@ w1d {
   |z|<a || |z|<b
   ;SOURCE: ad978-1.frm
 }
- 
+
 w2 {
   z=pixel, b=(p1*fn2(z)/p2), k=real(p1)*b, o=imag(p1):
   z=fn1(real(z))+flip(imag(z))
@@ -185,7 +185,7 @@ w2 {
   |z|<real(p1) && |z|<imag(p1)
   ;SOURCE: ad978-1.frm
 }
- 
+
 w3 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   z=pixel:
   a=real(p1), b=fn1(imag(p1)), c=real(p2)
@@ -196,7 +196,7 @@ w3 {; Replaced variable "e" with "ee" 5/05/99. G. Martin
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 yxs12 {
   z=pixel, x=(tan(z)+whitesq), y=cos(z)
   x2=(1/x)*p2, y2=(1/y)*p3, x3=x2*y, y3=y2*x:
@@ -207,7 +207,7 @@ yxs12 {
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 yxs15 {
   z=pixel, x=tan(z), y=cosxx(z):
   d=fn4(x*y)
@@ -217,7 +217,7 @@ yxs15 {
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+
 yxs5 {; Revised for Fractint v20 by G. Martin
   z=pixel, x=fn1(pixel), y=fn2(1-tan(z)):
   x2=fn3(x/(-2)*y), y3=fn3(z^(-2)*y)
@@ -228,4 +228,4 @@ yxs5 {; Revised for Fractint v20 by G. Martin
   |z|<=4
   ;SOURCE: ad978-1.frm
 }
- 
+

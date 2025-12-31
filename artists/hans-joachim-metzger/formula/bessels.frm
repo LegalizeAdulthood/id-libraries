@@ -12,4 +12,4 @@ BESSEL-4 {
   |z| <= 100
   ;SOURCE: bessels.frm
 }
- 
+

@@ -4,7 +4,7 @@ Carr-183 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-184 {
   z=c=1/pixel:
   z=(sqr(z*1/pixel)) + c
@@ -13,7 +13,7 @@ Carr-184 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-185 {
   z=c=sqr(1/pixel):
   z=(sqr(z*1/pixel)) + c
@@ -21,7 +21,7 @@ Carr-185 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-186 {
   z=c=1/pixel:
   z=(cotanh(z*pixel)) + c
@@ -29,7 +29,7 @@ Carr-186 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-187 {
   z=c=1/pixel:
   z=c*sqr(1/z)
@@ -37,7 +37,7 @@ Carr-187 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-188 {
   z=c=1/pixel:
   z=c*sqr(1/z)
@@ -45,7 +45,7 @@ Carr-188 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-189 {
   z=c=1/pixel:
   z=c*sqr(1/z)
@@ -53,14 +53,14 @@ Carr-189 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-190 {
   z=c=1/pixel/pixel:
   z=sqr(z) + c
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-192 {
   z=c=1/pixel/pixel:
   z=sin(z) + c
@@ -68,7 +68,7 @@ Carr-192 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-193 {
   z=c=1/pixel:
   z=z*z*z + (c-1)*z-c
@@ -76,21 +76,21 @@ Carr-193 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-194 {
   z=c=1/pixel:
   z=z*z*z/5 + sqr(z) + flip(c)
   |z| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-195 {
   z=c=1/pixel:
   z=z*z*z/5 + sqr(z) + (-flip(c))
-  |z| <=100 
+  |z| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-196 {
   z=c=1/pixel:
   z=c*(2*z*z-1)
@@ -98,7 +98,7 @@ Carr-196 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-197 {
   z=c=1/pixel:
   z=sqr(z) + c/pixel/flip(c)
@@ -108,7 +108,7 @@ Carr-197 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-198 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -116,7 +116,7 @@ Carr-198 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-199 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -124,7 +124,7 @@ Carr-199 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-200 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -132,7 +132,7 @@ Carr-200 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-201 {
   z=c=pixel:
   z=sqr(z) + c
@@ -140,7 +140,7 @@ Carr-201 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-202 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -148,18 +148,18 @@ Carr-202 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-203 {
   z=c=1/pixel:
   z=(sqr(z)+c)/(z-1)+c
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-204 {
   z=c=pixel:
   z=(sqr(z)+c)/(z-1)+c
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+

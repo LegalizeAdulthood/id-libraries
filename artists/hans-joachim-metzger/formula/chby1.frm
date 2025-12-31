@@ -10,7 +10,7 @@ C03-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 C04-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC03-C02
@@ -24,7 +24,7 @@ C04-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 C05-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC04-C03
@@ -38,7 +38,7 @@ C05-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 C08-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC07-C06
@@ -52,7 +52,7 @@ C08-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 Ca06-01 {; V.1.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = ((a+5)xCa(5)-(a+2)Ca(4))/3
@@ -67,7 +67,7 @@ Ca06-01 {; V.1.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 Ca09-01 {; V.1.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = (2(a+8)xCa(8)-(2a+7)Ca(7))/9
@@ -84,7 +84,7 @@ Ca09-01 {; V.1.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 He02-01 {; V.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; Chebyshev Types:
@@ -105,7 +105,7 @@ He02-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 L02-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
@@ -126,7 +126,7 @@ L02-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 L03-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ((5-z)L(2)-2L(1))/3
@@ -139,7 +139,7 @@ L03-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 La08-01 {; V.1.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = ((a+15-z)La(7)-(a+7)La(6))/8
@@ -155,9 +155,9 @@ La08-01 {; V.1.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 P03-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (5zP02-2P01)/3
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -168,9 +168,9 @@ P03-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 P06-01 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
@@ -182,7 +182,7 @@ P06-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 S05-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zS04-S03
@@ -196,7 +196,7 @@ S05-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 S06-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zS05-S04
@@ -210,7 +210,7 @@ S06-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 S10-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zS09-S08
@@ -224,7 +224,7 @@ S10-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 T03-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zT02-T01
@@ -237,7 +237,7 @@ T03-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 T07-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zT06-T05
@@ -251,7 +251,7 @@ T07-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 U03-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zU02-U01
@@ -264,7 +264,7 @@ U03-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 U04-01 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zU03-U02
@@ -278,7 +278,7 @@ U04-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+
 Uc06-01 {; V.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = 2z(2z-1)U05-U04
@@ -293,4 +293,4 @@ Uc06-01 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby1.frm
 }
- 
+

@@ -10,7 +10,7 @@ davidsmask {
   0.000001 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+
 ex1csecdav {
   del = P1 + 0.0001
   z = pixel:
@@ -20,7 +20,7 @@ ex1csecdav {
   0.0001 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+
 Ex20Newc (XAXIS) {
   z = pixel, c = pixel:
   z2 = z*z + p1
@@ -34,7 +34,7 @@ Ex20Newc (XAXIS) {
   0.1 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+
 ex4cwithP1temple {; Amended for Fractint v20 by G. Martin
   z = pixel:
   ex = exp(z)
@@ -45,7 +45,7 @@ ex4cwithP1temple {; Amended for Fractint v20 by G. Martin
   0.01 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+
 newdavidsmask (XAXIS) {
   c = pixel
   z = pixel:
@@ -55,7 +55,7 @@ newdavidsmask (XAXIS) {
   0.000001 <= |fz|
   ;SOURCE: davweird.frm
 }
- 
+
 newdavidsmasksec (XAXIS) {
   h =  0.00001
   c = pixel
@@ -68,7 +68,7 @@ newdavidsmasksec (XAXIS) {
   0.000001 <= |fz|
   ;SOURCE: davweird.frm
 }
- 
+
 ex4csecdav {
   del = P2 + 0.0001
   z = pixel
@@ -80,4 +80,4 @@ ex4csecdav {
   0.01 <= |n|
   ;SOURCE: davweird.frm
 }
- 
+

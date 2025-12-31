@@ -1,6 +1,6 @@
 
 
-u-draw01 {; Bradley Beacham, Jon Horner 
+u-draw01 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel*pixel), y = imag(pixel*pixel), c = z = 0:
@@ -14,7 +14,7 @@ u-draw01 {; Bradley Beacham, Jon Horner
 }
 
 
-u-draw02 {; Bradley Beacham, Jon Horner 
+u-draw02 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -22,13 +22,13 @@ u-draw02 {; Bradley Beacham, Jon Horner
   b = y - h*fn1(y + fn2(k*x))
   x = a
   y = b
-  z = fn3(a) + fn4(b) 
+  z = fn3(a) + fn4(b)
   |z| <= 16
   ;SOURCE: u-draw.frm
 }
 
 
-u-draw03 {; Bradley Beacham, Jon Horner 
+u-draw03 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -36,13 +36,13 @@ u-draw03 {; Bradley Beacham, Jon Horner
   b = y - (h+pixel)*fn1(y + fn2(k*x))
   x = a
   y = b
-  z = fn3(a) + fn4(b) 
+  z = fn3(a) + fn4(b)
   |z| <= 16
   ;SOURCE: u-draw.frm
 }
 
 
-u-draw04 {; Bradley Beacham, Jon Horner 
+u-draw04 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -50,13 +50,13 @@ u-draw04 {; Bradley Beacham, Jon Horner
   b = y - h*fn1(x + fn2(k*x))
   x = a
   y = b
-  z = fn3(x) * fn4(y) 
+  z = fn3(x) * fn4(y)
   |z| <= 16
   ;SOURCE: u-draw.frm
 }
 
 
-u-draw05 {; Bradley Beacham, Jon Horner 
+u-draw05 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel*pixel), y = imag(pixel*pixel):
@@ -64,13 +64,13 @@ u-draw05 {; Bradley Beacham, Jon Horner
   b = y - h*fn1(x + fn2(k*x))
   x = a
   y = b
-  z = fn3(x) * fn4(y) 
+  z = fn3(x) * fn4(y)
   |z| <= 16
   ;SOURCE: u-draw.frm
 }
 
 
-u-draw06 {; Bradley Beacham, Jon Horner 
+u-draw06 {; Bradley Beacham, Jon Horner
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel*pixel), y = imag(pixel*pixel):
@@ -78,7 +78,7 @@ u-draw06 {; Bradley Beacham, Jon Horner
   b = y - h*fn1(x*x + fn2(k*x))
   x = a
   y = b
-  z = fn3(x) * fn4(y) 
+  z = fn3(x) * fn4(y)
   |z| <= 16
   ;SOURCE: u-draw.frm
 }
@@ -99,22 +99,22 @@ u-draw07 {; same as popcmplx00
 }
 
 
-u-draw10_00 {; via terrora.frm, cf u-draw3_01                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw10_00 {; via terrora.frm, cf u-draw3_01
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
        - imag(z) * real(c+p3)) + pixel
   |z| <= 48
   ;SOURCE: u-draw10.frm
 }
 
 
-u-draw10_01 {; via terrora.frm, cf u-draw3_02                              
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw10_01 {; via terrora.frm, cf u-draw3_02
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
        - imag(z) * real(c+p3)) + pixel
   z = z * z + c
   |z| <= 48
@@ -122,7 +122,7 @@ u-draw10_01 {; via terrora.frm, cf u-draw3_02
 }
 
 
-u-draw10_01a {; adapted from 42ccarr.frm by Bob Carr, 
+u-draw10_01a {; adapted from 42ccarr.frm by Bob Carr,
               ; from Sylvie Gallet orig, cf u-draw4_01
   c=fn1(pixel+p1)
   z=flip(imag(fn2(pixel)))*fn3(pixel)\
@@ -142,10 +142,10 @@ u-draw10_01a {; adapted from 42ccarr.frm by Bob Carr,
 
 
 u-draw10_02 {; via terrora.frm, cf u-draw3_02
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p1) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p1)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p1)\
       - imag(z+p2) * real(c)) + 1/pixel
   z = z * z + c
   |z| <= 48
@@ -153,7 +153,7 @@ u-draw10_02 {; via terrora.frm, cf u-draw3_02
 }
 
 
-u-draw10_02a {; adapted from 42ccarr.frm by Bob Carr, 
+u-draw10_02a {; adapted from 42ccarr.frm by Bob Carr,
               ; from Sylvie Gallet orig, u-draw4_02
   c=fn1(pixel+p1)
   z=imag((.33)-pixel)*sqr(pixel)-conj((.1*p2)/pixel)-(.01*p2)/pixel
@@ -171,7 +171,7 @@ u-draw10_02a {; adapted from 42ccarr.frm by Bob Carr,
 }
 
 
-u-draw10_03 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw10_03 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; via Bob Carr
              ; passes=1 needs to be used with this PHC formula.
   z=fn1(pixel+p1)-conj(fn2(0.1/pixel-flip(0.01/pixel)))+0.3
@@ -209,7 +209,7 @@ u-draw10_03a {; adapted from 42ccarr.frm by Bob Carr
 }
 
 
-u-draw10_04 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw10_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; via  Carr2799
              ; passes=1 needs to be used with this PHC formula.
   c=0.8*pixel^5/(sqr(pixel))+0.4
@@ -221,9 +221,9 @@ u-draw10_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
   bailout=16, iter=0, pp2=pixel/2500:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+pp2-0.00015
-  z = fn1(real(z+p1)) * fn2(real(c+p2))\ 
+  z = fn1(real(z+p1)) * fn2(real(c+p2))\
      - fn1(imag(z+p1)) * imag(c) + flip(imag(z))
-  z = fn3(real(z+p1)) + fn4(flip(real(z+p2) * imag(c+p1)\ 
+  z = fn3(real(z+p1)) + fn4(flip(real(z+p2) * imag(c+p1)\
      - imag(z+p2) * real(c))) + 1/pixel
   z=z*z+c
   iter=iter+1
@@ -306,7 +306,7 @@ u-draw10_08 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-u-draw10_09 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw10_09 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3128
              ; passes=1 needs to be used with this PHC formula.
              ; Add variable "newpixel". G. Martin 6/27/99
@@ -351,7 +351,7 @@ u-draw10_10 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-u-draw11_00 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw11_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -670,7 +670,7 @@ u-draw12_04 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-u-draw12_05 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw12_05 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024, u-draw4b_04, u-draw6_06
   b5=flip((pixel+p1)^pi)-cabs((pixel+p2)^e)\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -689,7 +689,7 @@ u-draw12_05 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw12_06 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw12_06 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024, u-draw4b_04, u-draw6_06
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -725,7 +725,7 @@ u-draw12_07 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw13_00 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw13_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024, u-draw4b_04, u-draw6_06
   z=flip((fn1(real(pixel+p1))^e))-fn2(imag(pixel+p1)^pi)\
          -conj(0.01/real(pixel+p2)-flip(0.001/imag(pixel)))-0.3
@@ -743,7 +743,7 @@ u-draw13_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw13_01 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw13_01 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024, u-draw4b_04, u-draw6_06
   z=flip((fn1(real(pixel+p1))^e))-fn2(imag(pixel+p1)^7)\
        -conj(0.01/real(pixel+p2)-flip(0.001/imag(pixel)))-0.3
@@ -761,11 +761,11 @@ u-draw13_01 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw13_02 {; via terrora.frm                              
-  z = fn1(fn2(fn3(fn4(pixel)))),  c = z ^ (z-1) :      
+u-draw13_02 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))),  c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c) - imag(z+p1) * imag(c) + flip(imag(z))
-  z = real(z+p2) + flip(real(z) * imag(c+p2)\ 
+  z = real(z+p2) + flip(real(z) * imag(c+p2)\
        - imag(z) * real(c)) + pixel
   z = z * z + c
   |z| <= 100
@@ -773,8 +773,8 @@ u-draw13_02 {; via terrora.frm
 }
 
 
-u-draw13_03 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw13_03 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p1) * imag(c+p2) + flip(imag(z))
   z = real(z) + flip(real(z) * imag(c) - imag(z) * real(c)) + 1/pixel
@@ -783,7 +783,7 @@ u-draw13_03 {; via terrora.frm
 }
 
 
-u-draw13_04 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw13_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr3024, u-draw4b_04, u-draw6_06
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -802,7 +802,7 @@ u-draw13_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw14_00 {; via popcornjuliacomplex 
+u-draw14_00 {; via popcornjuliacomplex
              ; by Jon Horner & Bradley Beacham - May 1995
   x = real(pixel), y = imag(pixel), c = pixel:
   a = x - fn1((y+p1) + fn2(3*y))/20
@@ -815,7 +815,7 @@ u-draw14_00 {; via popcornjuliacomplex
 }
 
 
-u-draw14_01 {; via popcornjuliacomplex 
+u-draw14_01 {; via popcornjuliacomplex
              ; by Jon Horner & Bradley Beacham - May 1995
   x = real(pixel+p1+p2), y = imag(pixel+p1+p2), c = pixel:
   a = x - fn1((y) + fn2(3*y))/20
@@ -828,12 +828,12 @@ u-draw14_01 {; via popcornjuliacomplex
 }
 
 
-u-draw14_02 { 
+u-draw14_02 {
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
   c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
-  l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0: 
+  l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
   tt = 1 - (t1||t2||t3||t4||t5)
@@ -846,7 +846,7 @@ u-draw14_02 {
 }
 
 
-u-draw14_03 { 
+u-draw14_03 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -864,7 +864,7 @@ u-draw14_03 {
 }
 
 
-u-draw14_04 { 
+u-draw14_04 {
   z=(fn1(1/pixel+p1)^e)-fn2(conj((1/pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -882,7 +882,7 @@ u-draw14_04 {
 }
 
 
-u-draw14_05 { 
+u-draw14_05 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7))\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -903,7 +903,7 @@ u-draw14_05 {
 }
 
 
-u-draw14_06 { 
+u-draw14_06 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7))\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -924,7 +924,7 @@ u-draw14_06 {
 }
 
 
-u-draw14_07 { 
+u-draw14_07 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -945,7 +945,7 @@ u-draw14_07 {
 }
 
 
-u-draw14_08 { 
+u-draw14_08 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7))\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn3(z)-fn4(|0.1/z|)
@@ -1015,7 +1015,7 @@ u-draw14_10 {; Gallet-8-12: Sylvie Gallet, sylvie_gallet@compuserve.com
 }
 
 
-u-draw15_00 { 
+u-draw15_00 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3)
   c=fn3(fn4(z)-(|0.1/z|))
@@ -1034,7 +1034,7 @@ u-draw15_00 {
 }
 
 
-u-draw15_01 { 
+u-draw15_01 {
   z=(fn1(real(pixel+p1)^e))-fn2(conj(imag(pixel+p1)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3)
   c=fn3(fn4(z+p2))^(z-1)
@@ -1053,7 +1053,7 @@ u-draw15_01 {
 }
 
 
-u-draw15_02 {  
+u-draw15_02 {
   z=(fn1(real(pixel+p1)^e))-fn2(conj(imag(pixel+p1)^7)\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3)
   c=fn3(fn4(z+p2))^(z-1)
@@ -1072,7 +1072,7 @@ u-draw15_02 {
 }
 
 
-u-draw15_03 { 
+u-draw15_03 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7)\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3)
   c=fn3(fn4(z)-(|0.1/z|))
@@ -1091,7 +1091,7 @@ u-draw15_03 {
 }
 
 
-u-draw15_04 { 
+u-draw15_04 {
   z=(fn1(pixel+p1)^e)-fn2(conj((pixel+p2)^7)\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3)
   c=fn3(fn4(z)-(|0.1/z|))
@@ -1110,7 +1110,7 @@ u-draw15_04 {
 }
 
 
-u-draw15_05 { 
+u-draw15_05 {
   z=fn1(pixel+p1)^e-fn2(conj(pixel+p2)^e)
   c=fn3(fn4(z)-(|0.1/z|))
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
@@ -1128,9 +1128,9 @@ u-draw15_05 {
 }
 
 
-u-draw15_06 { 
+u-draw15_06 {
   z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e))
-  c=z-(|0.1/z|) 
+  c=z-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1146,7 +1146,7 @@ u-draw15_06 {
 }
 
 
-u-draw15_07 { 
+u-draw15_07 {
   z=fn1(pixel+p1)^e-fn2(conj(pixel+p2)^e)
   c=fn3(fn4(z)-(|0.1/z|))
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
@@ -1165,8 +1165,8 @@ u-draw15_07 {
 
 
 u-draw16_00 {
-  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e)) 
-  c=z-(|0.1/z|) 
+  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e))
+  c=z-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1182,9 +1182,9 @@ u-draw16_00 {
 }
 
 
-u-draw16_01 { 
-  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e)) 
-  c=z-(|0.1/z|) 
+u-draw16_01 {
+  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e))
+  c=z-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1201,9 +1201,9 @@ u-draw16_01 {
 }
 
 
-u-draw16_02 { 
-  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e)) 
-  c=z-(|0.1/z|) 
+u-draw16_02 {
+  z=fn1(fn2(pixel+p1)^e)-fn3(fn4(conj(pixel+p2)^e))
+  c=z-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1219,7 +1219,7 @@ u-draw16_02 {
 }
 
 
-u-draw16_03 { 
+u-draw16_03 {
   z=fn1(pixel+p1)^e-fn2(conj(pixel+p2)^e)
   c=fn3(fn4(z)-(|0.1/z|))
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
@@ -1273,9 +1273,9 @@ u-draw16_05 {
 }
 
 
-u-draw16_06 { 
-  z=fn1(real(fn2(flip(pixel)+p1)^5))-fn3(fn4(imag(pixel+p2))^pi) 
-  c=z^(z-1) 
+u-draw16_06 {
+  z=fn1(real(fn2(flip(pixel)+p1)^5))-fn3(fn4(imag(pixel+p2))^pi)
+  c=z^(z-1)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1286,7 +1286,7 @@ u-draw16_06 {
   z = real(z) * real(c) - imag(z) * imag(c) + flip(imag(z))
   z = real(z) + flip(real(z) * imag(c) - imag(z) * real(c)) + 1/pixel
   z = z * z + (-0.75,-0.15)+flip(conj(c/10))
-      ; z = real(z) * flip(imag(c/pixel)) 
+      ; z = real(z) * flip(imag(c/pixel))
   iter = iter+1
   (z-pixel)<=96
   ;SOURCE: u-draw16.frm
@@ -1311,9 +1311,9 @@ u-draw16_07 {; Add variable "newpixel". G. Martin 6/27/99
 }
 
 
-u-draw16_08 { 
-  z=fn1(fn2(pixel+p1)^2)-fn3(fn4(conj(pixel+p2)^5)) 
-  c=z^(z-1) 
+u-draw16_08 {
+  z=fn1(fn2(pixel+p1)^2)-fn3(fn4(conj(pixel+p2)^5))
+  c=z^(z-1)
   c1 = 1.5*z,  c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1329,7 +1329,7 @@ u-draw16_08 {
 }
 
 
-u-draw16_09 { 
+u-draw16_09 {
   z=(fn1(pixel+p1)^e)-conj((pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn2(z)-(|0.1/z|)
@@ -1348,7 +1348,7 @@ u-draw16_09 {
 }
 
 
-u-draw16_10 { 
+u-draw16_10 {
   z=(fn1(pixel+p1)^e)-conj((pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn2(z)-(|0.1/z|)
@@ -1369,11 +1369,11 @@ u-draw16_10 {
 
 
 u-draw16_11 {
-  z = pixel 
+  z = pixel
   x=fn1(real(z))
   y=fn2(imag(z))
   one1 = (x*x+p1) + (y*y+p2):
-  x = (2 - one1) * y 
+  x = (2 - one1) * y
   y = (2 - one1) * x
   z = fn3(x) + flip(fn4(y))
   |z|<=64
@@ -1381,7 +1381,7 @@ u-draw16_11 {
 }
 
 
-u-draw17_00 {  
+u-draw17_00 {
   z=(fn1(pixel+p1)^e)-conj((pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=fn2(z)-(|0.1/z|)
@@ -1401,12 +1401,12 @@ u-draw17_00 {
 
 
 u-draw18_00 {
-  z = pixel 
+  z = pixel
   c= z^(z-1)
   x=fn1(real(z+p1*p2))
   y=fn2(imag(z+p2*p1))
   one1 = (x*x) + (y*y):
-  x = (2 - one1) * y 
+  x = (2 - one1) * y
   y = (2 - one1) * x
   z = fn3(x) + flip(fn4(y)) + c
   z = z * z + c
@@ -1415,15 +1415,15 @@ u-draw18_00 {
 }
 
 
-u-draw18_00a { 
-  z = pixel 
+u-draw18_00a {
+  z = pixel
   c= z^(z-1)
   x=fn1(real(z+p1*p2))
   y=fn2(imag(z+p2*p1)):
   one1 = (x*x) + (y*y)
-  x = (2 - one1) * y 
+  x = (2 - one1) * y
   y = (2 - one1) * x
-  z = fn3(x) + flip(fn4(y)) 
+  z = fn3(x) + flip(fn4(y))
   z = z * z + c
   |z|<=64
   ;SOURCE: u-draw18.frm
@@ -1431,8 +1431,8 @@ u-draw18_00a {
 
 
 u-draw18_01 {; Sylvie Gallet, Bob Carr
-  z=fn1(fn2(pixel+p1)^e)-fn3(conj(pixel+p2)^7) 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(pixel+p1)^e)-fn3(conj(pixel+p2)^7)
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1481,8 +1481,8 @@ u-draw18_03 {; A "many-man" variation by P. DiGiorgi
 
 
 u-draw18_04 {; Sylvie Gallet, Bob Carr
-  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^7 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^7
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1594,8 +1594,8 @@ u-draw20_00 {; credits Sylvie Gallet and Bob Carr
 
 
 u-draw20_01 {; credits Sylvie Gallet and Bob Carr
-  z=fn1(fn2(sinh(pixel+p1))^pi)-fn3(pixel+p2)^5 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(sinh(pixel+p1))^pi)-fn3(pixel+p2)^5
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1635,9 +1635,9 @@ u-draw20_03 {
   x=fn1(real(sinh(z+p1*p2)))
   y=fn2(imag(sqrt(z+p2*p1)))
   one1 = (x*x) + (y*y):
-  x = (2 - one1) * y 
+  x = (2 - one1) * y
   y = (2 - one1) * x
-  z = fn3(1/x) + flip(fn4(1/y)) 
+  z = fn3(1/x) + flip(fn4(1/y))
   |z|<=64
   ;SOURCE: u-draw20.frm
 }
@@ -1645,7 +1645,7 @@ u-draw20_03 {
 
 u-draw20_04 {; credits Sylvie Gallet and Bob Carr
   z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^9
-  c=fn4(z)-(|0.1/z|) 
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1703,8 +1703,8 @@ u-draw21_00 {; Don Archer
 
 u-draw21_01 {; Don Archer
              ; derived from formulas by Sylvie Gallet and Bob Carr
-  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^pi 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^pi
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -1720,7 +1720,7 @@ u-draw21_01 {; Don Archer
 }
 
 
-u-draw21_02 {; Don Archer 
+u-draw21_02 {; Don Archer
              ; derived from formulas by Sylvie Gallet and Bob Carr
   z=flip(fn1(pixel+p1)^2)-cabs(fn2(pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1729,7 +1729,7 @@ u-draw21_02 {; Don Archer
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
-  t = 1 - (t1||t2||t3||t4||t5) 
+  t = 1 - (t1||t2||t3||t4||t5)
   z = z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
   z = z * z + (-0.75, -0.15) + flip(conj(c/10))
   c = z * c/pixel
@@ -1739,7 +1739,7 @@ u-draw21_02 {; Don Archer
 }
 
 
-u-draw21_03 {; Don Archer '97 
+u-draw21_03 {; Don Archer '97
              ;  derived from formulas by Sylvie Gallet and Bob Carr
              ; Add variable "newpixel". G. Martin 6/27/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -1749,7 +1749,7 @@ u-draw21_03 {; Don Archer '97
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
-  t = 1 - (t1||t2||t3||t4||t5) 
+  t = 1 - (t1||t2||t3||t4||t5)
   z = z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
   z = z * z + (-.75, -.15) + flip(conj(c/10))
   c = z * c/newpixel
@@ -1759,7 +1759,7 @@ u-draw21_03 {; Don Archer '97
 }
 
 
-u-draw21_04 {; Don Archer '97 
+u-draw21_04 {; Don Archer '97
              ; derived from formulas by Sylvie Gallet and Bob Carr
   z = cabs(fn3((pixel+p1)^4))-fn4(pixel^7)
   c = flip(fn3(pixel+p2)^3)-cabs(fn4(pixel))^6
@@ -1767,7 +1767,7 @@ u-draw21_04 {; Don Archer '97
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
-  t = 1 - (t1||t2||t3||t4||t5) 
+  t = 1 - (t1||t2||t3||t4||t5)
   z= z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
   z=sinh(z)
   z= z * z + flip(conj(c/10))
@@ -1778,7 +1778,7 @@ u-draw21_04 {; Don Archer '97
 }
 
 
-u-draw21_05 {; Don Archer '97 
+u-draw21_05 {; Don Archer '97
              ; derived from formulas by Sylvie Gallet and Bob Carr
   z = cabs(fn3((pixel+p1)^4))-fn4(pixel^7)
   c = flip(fn3(pixel+p2)^3)-cabs(fn4(pixel))^6
@@ -1786,10 +1786,10 @@ u-draw21_05 {; Don Archer '97
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
-  t = 1 - (t1||t2||t3||t4||t5) 
+  t = 1 - (t1||t2||t3||t4||t5)
   z = z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
   z= tanh(z)
-  z= z * z + flip(conj(c/10)) 
+  z= z * z + flip(conj(c/10))
   c= z * c/pixel
   iter=iter+1
   (z-pixel)<=16
@@ -1797,7 +1797,7 @@ u-draw21_05 {; Don Archer '97
 }
 
 
-u-draw21_06 {; Don Archer '97 
+u-draw21_06 {; Don Archer '97
              ; derived from formulas by Sylvie Gallet and Bob Carr
   z=fn1(fn2(cotan(fn3(pixel+p1))^e))\
       -conj(sinh(pixel+p2)^7)-conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1817,7 +1817,7 @@ u-draw21_06 {; Don Archer '97
 }
 
 
-u-draw22_00 {; Don Archer '97 
+u-draw22_00 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr, Tim Wegner
   z=fn1(fn2(pixel+p1)^e)-conj(fn3(pixel+p2)^7)-conj(0.01/pixel-flip(0.001/pixel))-0.3
   c=z^(z-1)-fn4(|0.1/z|)
@@ -1837,7 +1837,7 @@ u-draw22_00 {; Don Archer '97
 }
 
 
-u-draw22_01 {; Don Archer '97 
+u-draw22_01 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1855,7 +1855,7 @@ u-draw22_01 {; Don Archer '97
 }
 
 
-u-draw22_02 {; Don Archer '97 
+u-draw22_02 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
          -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1873,7 +1873,7 @@ u-draw22_02 {; Don Archer '97
 }
 
 
-u-draw23_00 {; Don Archer '97 
+u-draw23_00 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^e))-fn2(conj((pixel+p2)^(e*e*e)))\
          -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1891,7 +1891,7 @@ u-draw23_00 {; Don Archer '97
 }
 
 
-u-draw23_01 {; Don Archer '97 
+u-draw23_01 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^e))-fn2(conj((pixel+p2)^(e*e*e)))\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -1909,19 +1909,19 @@ u-draw23_01 {; Don Archer '97
 }
 
 
-u-draw23_02 {; Don Archer '97 
+u-draw23_02 {; Don Archer '97
              ; var. Tim's Error via Chuck Ebbert's builtin.frm
   z = c = pixel :
-  z = real(fn1(z + p1)) * real(c)\ 
+  z = real(fn1(z + p1)) * real(c)\
         - imag(fn2(z + p1)) * imag(c) + flip(imag(z))
-  z = fn3(real(z + p2))\ 
+  z = fn3(real(z + p2))\
         + flip(real(z) * imag(fn4(c + p2)) - imag(z) * real(c)) + pixel
   |z| <= 16
   ;SOURCE: u-draw23.frm
 }
 
 
-u-draw24_00 {; Don Archer '97 
+u-draw24_00 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^e))-fn2(conj((pixel+p2)^(e*e*e)))
   c=fn3(z)-fn4(|0.1/z|)
@@ -1938,7 +1938,7 @@ u-draw24_00 {; Don Archer '97
 }
 
 
-u-draw24_01 {; Don Archer '97 
+u-draw24_01 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+pi)^e+p1))-fn2(conj((pixel+pi)^(e*e*e+p2)))
   c=fn3(z)-fn4(|0.1/z|)
@@ -1997,7 +1997,7 @@ u-draw25_00 {; Don Archer '97 -- ideas Sylvie Gallet, Bob Carr
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
   t4=(iter==l4), t5=(iter==l5)
-  t=1-(t1||t2||t3||t4||t5) 
+  t=1-(t1||t2||t3||t4||t5)
   z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
   z=(c^4)^(real(1)-(1,0))*(0.01+z^2)+(c/6)+(-0.6856,-0.132)
   iter=iter+1
@@ -2054,7 +2054,7 @@ u-draw26_01 {; Don Archer '97 -- ideas Sylvie Gallet, Bob Carr
 }
 
 
-u-draw26_02 {; Don Archer '97 
+u-draw26_02 {; Don Archer '97
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+e+p1)^e))-fn2(conj((pixel*pi+p2)^(7)))
   c=fn3(z)-fn4(|0.1/z|)
@@ -2064,7 +2064,7 @@ u-draw26_02 {; Don Archer '97
   t4=(iter==l4), t5=(iter==l5)
   t=1-(t1||t2||t3||t4||t5)
   z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5
-  z = z * z + (-0.7496,-0.132) + c 
+  z = z * z + (-0.7496,-0.132) + c
   iter=iter + 1
   (z-pixel)<=16
   ;SOURCE: u-draw26.frm
@@ -2188,7 +2188,7 @@ u-draw28_00 {; Don Archer '97 -- ideas Sylvie Gallet, Bob Carr
 }
 
 
-u-draw28_01 {; Don Archer '97 
+u-draw28_01 {; Don Archer '97
              ; ideas Tim Wegner, Sylvie Gallet, Bob Carr
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c=fn3(z) - fn4(|0.1/z|)
@@ -2207,7 +2207,7 @@ u-draw28_01 {; Don Archer '97
 }
 
 
-u-draw28_02 {; Don Archer '97 
+u-draw28_02 {; Don Archer '97
              ; ideas Tim Wegner, Sylvie Gallet, Bob Carr
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c = fn3(z) - fn4(|0.1/z|)
@@ -2226,7 +2226,7 @@ u-draw28_02 {; Don Archer '97
 }
 
 
-u-draw28_03 {; Don Archer '97 
+u-draw28_03 {; Don Archer '97
              ; ideas Tim Wegner, Sylvie Gallet, Bob Carr
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c = fn3(z) - fn4(|0.1/z|)
@@ -2245,7 +2245,7 @@ u-draw28_03 {; Don Archer '97
 }
 
 
-u-draw29_00 {; Don Archer '98 
+u-draw29_00 {; Don Archer '98
              ; ideas Tim Wegner, Sylvie Gallet, Bob Carr
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c = fn3(z) - fn4(|0.1/z|)
@@ -2264,7 +2264,7 @@ u-draw29_00 {; Don Archer '98
 }
 
 
-u-draw29_01 {; Don Archer '98 
+u-draw29_01 {; Don Archer '98
              ; ideas Tim Wegner, Sylvie Gallet, Bob Carr
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c = fn3(z) - fn4(|0.1/z|)
@@ -2283,7 +2283,7 @@ u-draw29_01 {; Don Archer '98
 }
 
 
-u-draw29_02 {; Don Archer '98 
+u-draw29_02 {; Don Archer '98
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -2320,7 +2320,7 @@ u-draw29_03 {; Don Archer '98 -- ideas Sylvie Gallet, Bob Carr
 }
 
 
-u-draw29_04 {; Don Archer '98 
+u-draw29_04 {; Don Archer '98
              ; ideas Sylvie Gallet, Bob Carr
   z=flip((fn1(pixel+p1)^2))-fn2(conj((pixel+p2)^7))\
         -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -2356,7 +2356,7 @@ u-draw29_05 {; Don Archer '98 -- ideas Sylvie Gallet, Bob Carr
 }
 
 
-u-draw29_06 {; Don Archer '98 
+u-draw29_06 {; Don Archer '98
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c=fn3(z) - fn4(|0.1/z|)
   c1=1.5*1/z, c2=2.25*1/z, c3=3.375*1/z, c4=5.0625*1/z, c5=6.25*1/z
@@ -2372,7 +2372,7 @@ u-draw29_06 {; Don Archer '98
 }
 
 
-u-draw29_07 {; Don Archer '98 
+u-draw29_07 {; Don Archer '98
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c=fn3(z) - fn4(|0.1/z|)
   c1=1.5*1/z, c2=2.25*1/z, c3=3.375*1/z, c4=5.0625*1/z, c5=6.25*1/z
@@ -2390,11 +2390,11 @@ u-draw29_07 {; Don Archer '98
 }
 
 
-u-draw2_01 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = pixel:  
+u-draw2_01 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = pixel:
   z = sin(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + pixel
   |z| <= 48
   ;SOURCE: u-draw2.frm
@@ -2427,14 +2427,14 @@ u-draw30_00 {; Don Archer '98
 }
 
 
-u-draw30_01 {; Don Archer '98 
+u-draw30_01 {; Don Archer '98
   z=fn1(sinh(0.33-fn2(tanh(pixel+p1))))/(0.33-tan(3*pixel+p2))
   c=fn3(z) - fn4(|0.1/z|)
   w1= 1.5*z, w2=2.25*z, w3=3.375*z, w4=5.0625*z, w5=6.25*z
   count=0:
   y=1-(count==1000||count==1500||count==2000||count==2500||count==3000)
   z = z * y
-  c = c * y + w1*(count==1000) + w2*(count==1500)\ 
+  c = c * y + w1*(count==1000) + w2*(count==1500)\
      + w3*(count==2000) + w4*(count==2500) + w5*(count==3000)
   z = real(z) * real(c) - imag(z) * imag(c) + flip(imag(z))
   z = real(z) + flip(real(z) * imag(c) - imag(z) * real(c)) + pixel
@@ -2451,7 +2451,7 @@ u-draw30_02 {; Don Archer '98
   count=0:
   y=1-(count==1000||count==1500||count==2000||count==2500||count==3000)
   z = z * y
-  c = c * y + w1*(count==1000) + w2*(count==1500)\ 
+  c = c * y + w1*(count==1000) + w2*(count==1500)\
        + w3*(count==2000) + w4*(count==2500) + w5*(count==3000)
   z = real(z) * real(c) - imag(z) * imag(c) + flip(imag(z))
   z = real(z) + flip(real(z) * imag(c) - imag(z) * real(c)) + pixel
@@ -2595,22 +2595,22 @@ u-draw33_07 {; Don Archer '98
 }
 
 
-u-draw3_01 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw3_01 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + 1/pixel
   |z| <= 48
   ;SOURCE: u-draw3.frm
 }
 
 
-u-draw3_02 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw3_02 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + 1/pixel
   z = z * z + c
   |z| <= 48
@@ -2618,11 +2618,11 @@ u-draw3_02 {; via terrora.frm
 }
 
 
-u-draw3_03 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw3_03 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
        - imag(z) * real(c)) + 1/pixel
   z = z ^ e + c
   |z| <= 48
@@ -2630,11 +2630,11 @@ u-draw3_03 {; via terrora.frm
 }
 
 
-u-draw3_04 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-draw3_04 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + pixel
   z = z ^ e + c
   |z| <= 48
@@ -2642,11 +2642,11 @@ u-draw3_04 {; via terrora.frm
 }
 
 
-u-draw3_05 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))),  c = z^e :  
+u-draw3_05 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))),  c = z^e :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + pixel
   z = z * z + c
   |z| <= 48
@@ -2654,11 +2654,11 @@ u-draw3_05 {; via terrora.frm
 }
 
 
-u-draw3_06 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))),  c = z ^ (z-1) :      
+u-draw3_06 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))),  c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
        - imag(z) * real(c)) + pixel
   z = z * sinh(z) + c
   |z| <= 100
@@ -2725,7 +2725,7 @@ u-draw4a_01 {; via archdon.frm
   z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z^e)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
        - imag(z) * real(c)) + 1/pixel
   |z| <= 48
   ;SOURCE: u-draw4a.frm
@@ -2733,51 +2733,51 @@ u-draw4a_01 {; via archdon.frm
 
 
 u-draw4a_02 {; via archdon.frm
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = (sinh(z))^e
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + 1/pixel
   |z| <= 48
   ;SOURCE: u-draw4a.frm
 }
 
 
-u-draw4a_03 {; via archdon.frm  
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
-  z = sinh(z) ^ e/pixel 
-  z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z)) 
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
-        - imag(z) * real(c)) + pixel 
+u-draw4a_03 {; via archdon.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
+  z = sinh(z) ^ e/pixel
+  z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
+        - imag(z) * real(c)) + pixel
   z =  z * z + c
-  |z| <= 64  
+  |z| <= 64
   ;SOURCE: u-draw4a.frm
 }
 
 
-u-draw4a_04 {   
-  z = fn1(real(fn2(pixel))) + fn3(flip(imag(fn4(pixel)))), c = z ^ (z-1) :  
-  z = sinh(z)  
-  z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z)) 
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3) - imag(z) * real(c))  
+u-draw4a_04 {
+  z = fn1(real(fn2(pixel))) + fn3(flip(imag(fn4(pixel)))), c = z ^ (z-1) :
+  z = sinh(z)
+  z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3) - imag(z) * real(c))
     ; z = z * z + c
-  |z| <= 64  
+  |z| <= 64
   ;SOURCE: u-draw4a.frm
 }
 
 
-u-draw4a_05 {   
-  z = fn1(real(fn2(pixel))) + fn3(flip(imag(fn4(pixel)))), c = z^(z-1):  
-  z = sinh(z)  
-  z = (z+p1) * (c+p2) - imag(z) * imag(c) + flip(imag(z)) 
-  z = (z+p1) + flip((z+p2) * imag(c) - imag(z) * real(c)) + pixel 
+u-draw4a_05 {
+  z = fn1(real(fn2(pixel))) + fn3(flip(imag(fn4(pixel)))), c = z^(z-1):
+  z = sinh(z)
+  z = (z+p1) * (c+p2) - imag(z) * imag(c) + flip(imag(z))
+  z = (z+p1) + flip((z+p2) * imag(c) - imag(z) * real(c)) + pixel
   z = z * z  + c
-  |z| <= 64  
+  |z| <= 64
   ;SOURCE: u-draw4a.frm
 }
 
 
-u-draw4b_01 {; Variation on Sylvie Gallet formula. 
+u-draw4b_01 {; Variation on Sylvie Gallet formula.
              ; George Martin [76440,1143]
              ; Modified Mans-Galore & Gallet 3-02
   z=c=pixel, iter=0, x = fn3(real(z)), y = fn4(imag(z))
@@ -2795,7 +2795,7 @@ u-draw4b_01 {; Variation on Sylvie Gallet formula.
 }
 
 
-u-draw4b_02 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw4b_02 {; Modified Sylvie Gallet frm. [101324,3444],1996,
              ; Carr2821/ct03
   b5=(pixel + p1)-conj(0.1/pixel)
   b4=(pixel + p2)-flip(0.1/pixel)-conj(0.001/pixel)
@@ -2873,7 +2873,7 @@ u-draw5_01 {; Modified Sylvie Gallet frm. [101324,3444],1996; carr3034
 }
 
 
-u-draw6_01 {;Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw6_01 {;Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024,  u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -2894,7 +2894,7 @@ u-draw6_01 {;Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw6_02 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw6_02 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr2821/ct04/u-draw4b_03
   b5=(pixel+p1)-conj(0.1/pixel)
   b4=(pixel+p2)-flip(0.1/pixel)-conj(0.001/pixel)
@@ -2922,14 +2922,14 @@ u-draw6_03 {; cf u-draw4_01
   z = pixel+ p1, c = z ^ (z-1) :
   z = sinh(z*p2)
   z = real(fn1(z)) * real(c) - imag(fn2(z)) * imag(c) + flip(imag(z))
-  z = real(fn3(z)) + flip(real(z) * imag(c)\ 
+  z = real(fn3(z)) + flip(real(z) * imag(c)\
        - imag(fn4(z)) * real(c)) + 1/pixel
   |z| <= 48
   ;SOURCE: u-draw6.frm
 }
 
 
-u-draw6_04 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw6_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -2948,7 +2948,7 @@ u-draw6_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw6_05 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw6_05 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -2967,7 +2967,7 @@ u-draw6_05 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw6_06 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw6_06 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs(conj((pixel+p2)^7))\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3092,7 +3092,7 @@ u-draw6t_05 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-u-draw7_00 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw7_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel)^2)-cabs((pixel)^7)\
         -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3114,7 +3114,7 @@ u-draw7_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw7_01 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw7_01 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs((pixel+p2)^7)\
         -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3136,7 +3136,7 @@ u-draw7_01 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw7_02 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw7_02 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04
   b5=flip((pixel+p1)^2)-cabs((pixel+p2)^7)\
        -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3158,7 +3158,7 @@ u-draw7_02 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw7_03 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw7_03 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04, u-draw6_06
   b5=flip((pixel+p1)^2)-cabs((pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3177,7 +3177,7 @@ u-draw7_03 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-draw7_04 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw7_04 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr3024, u-draw4b_04, u-draw6_06
   b5=flip((pixel+p1)^2)-cabs((pixel+p2)^7)\
      -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -3215,8 +3215,8 @@ u-draw8_00 {; Modified Sylvie Gallet frm. [101324,3444],1996
 
 
 u-draw8_01 {; Modified Sylvie Gallet frm. [101324,3444],1996
-  z=fn1(pixel + real(p1)) * fn2(pixel + imag(p1))\ 
-     * fn3(pixel + real(p2)) * fn4(pixel + imag(p2))  
+  z=fn1(pixel + real(p1)) * fn2(pixel + imag(p1))\
+     * fn3(pixel + real(p2)) * fn4(pixel + imag(p2))
   c=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   d1=(conj(0.0002550/pixel)), d4=4*d1
   z1=1.5*z+d1, z2=2.25*z+d1, z3=3.375*z+d1, z4=11.0625*z+d1
@@ -3233,8 +3233,8 @@ u-draw8_01 {; Modified Sylvie Gallet frm. [101324,3444],1996
 
 
 u-draw8_02 {; Modified Sylvie Gallet frm. [101324,3444],1996
-  z=fn1(pixel + real(p1)) * fn2(pixel + imag(p1))\ 
-      * fn3(pixel + real(p2)) * fn4(pixel + imag(p2))  
+  z=fn1(pixel + real(p1)) * fn2(pixel + imag(p1))\
+      * fn3(pixel + real(p2)) * fn4(pixel + imag(p2))
   c=flip(imag(0.33-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   d1=(conj(0.0002550/pixel)), d4=4*d1
   z1=1.5*z+d1, z2=2.25*z+d1, z3=3.375*z+d1, z4=11.0625*z+d1
@@ -3268,7 +3268,7 @@ u-draw8_03 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-u-draw9_00 {; Modified Sylvie Gallet frm. [101324,3444],1996, 
+u-draw9_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
             ; Carr2821/ct04/u-draw4b_03
   b5=(pixel+p1)-conj(0.1/pixel)
   b4=(pixel+p2)-flip(0.1/pixel)-conj(0.001/pixel)
@@ -3283,7 +3283,7 @@ u-draw9_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
       ; z=(|z|/5)+z^e+c-0.09/pixel
   z = real(z+1) * real(c) - imag(z) * imag(c) + flip(imag(z))
-  z = real(z-1) + flip(real(z) * imag(c3)\ 
+  z = real(z-1) + flip(real(z) * imag(c3)\
         - imag(z) * real(c)) + 1/pixel
   iter=iter+1
   |z|<=bailout
@@ -3291,22 +3291,22 @@ u-draw9_00 {; Modified Sylvie Gallet frm. [101324,3444],1996,
 }
 
 
-u-test02 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1):  
+u-test02 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1):
   z = sin(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + pixel
   |z| <= 48
   ;SOURCE: u-draw2.frm
 }
 
 
-u-test03 {; via terrora.frm                            
-  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :  
+u-test03 {; via terrora.frm
+  z = fn1(fn2(fn3(fn4(pixel)))), c = z ^ (z-1) :
   z = sinh(z)
   z = real(z+p1) * real(c+p2) - imag(z+p3) * imag(c) + flip(imag(z))
-  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\ 
+  z = real(z+p1) + flip(real(z+p2) * imag(c+p3)\
         - imag(z) * real(c)) + pixel
   |z| <= 48
   ;SOURCE: u-draw2.frm
@@ -3350,11 +3350,11 @@ U02-02 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Clifford A. Pickover:
                  ; Dynamic
-                 ; 
+                 ;
                  ; U(n+1) = 2zU(n)-U(n-1)
                  ; U(0)  = 1
                  ; U(1)  = 2z
-                 ; 
+                 ;
                  ; = 2zU01-U00
   bailout=p1+4, z=pixel:
   z=4*z*z-1
@@ -3372,7 +3372,7 @@ U02-03 {; V.1.1 - earlier versions may be discarded
         ; U(n+1) = 2zU(n)-U(n-1)
         ; U(0)  = 1
         ; U(1)  = 2z
-        ; 
+        ;
         ; = 2zU01-U00
   const=p1-1, z=pixel:
   z=4*z*z+const
@@ -3964,7 +3964,7 @@ U02-30 {; V.1.1 - earlier versions may be discarded
         ; U[0]=1
         ; U[1]=2z
         ; U[n+1]=2zU[n]-U[n-1]
-        ; 
+        ;
         ; = 2zU01-U00
   z=pixel*(p1==0)+p1
   r=p2, bailout=.0000001
@@ -7709,7 +7709,7 @@ U10-30 {; V.1.1 - earlier versions may be discarded
 u4 {
   z=pixel, t=fn1(z^(2.2)), u=sin(z*z/(z+.2)), n=flip(z-real(log(z))):
   z=(fn2(z*z/(z+.2))/asin(z-flip(log(z))))^fn3(t+u+n)
-  |z|<=4                         
+  |z|<=4
   ;SOURCE: new.frm
 }
 
@@ -12262,7 +12262,7 @@ ULI_6 {
 
 union {; Giuseppe Zito
   z = pixel
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 +y
@@ -12272,11 +12272,11 @@ union {; Giuseppe Zito
   s0 = s0 +s1
   s0 = s0 -y
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 

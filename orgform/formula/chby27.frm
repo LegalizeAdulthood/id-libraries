@@ -1745,7 +1745,7 @@ La02-27 {; V.1.1 - earlier versions may be discarded
          ; La[n+1] = ((a+2n+1-z)La[n]-(a+n)La[n-1])/(n+1)
          ;
          ; = ((a+3-z)La(1)-(a+1)La(0))/2
-  a=p2, c=a+2, b=c*(a+1)/2, 
+  a=p2, c=a+2, b=c*(a+1)/2,
   t=p1, bailout=real(p2), z=pixel, x=real(pixel)
   y=imag(pixel), h=imag(p2):
   newx=x-h*sin(y+tan(3*y))

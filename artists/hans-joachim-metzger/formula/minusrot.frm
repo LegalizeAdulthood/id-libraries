@@ -8,4 +8,4 @@ M-O-rotation {; Jim Muth
   |z| <=25
   ;SOURCE: 97msg.frm
 }
- 
+

@@ -5,7 +5,7 @@ Carr1451 {; Creates Julia.
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1452 {
   z=flip(pixel*pixel), c=conj(pixel*pixel):
   z=(z*z)+c-1.49
@@ -13,7 +13,7 @@ Carr1452 {
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1453 {; Modified ManP1IMJ
   z=pixel, c=(0.3,0.6):
   z=sqr(z)
@@ -22,7 +22,7 @@ Carr1453 {; Modified ManP1IMJ
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1454 {; Modified ManP1IMJ
   z=flip(pixel), c=(0.3,0.6):
   z=sqr(z)
@@ -31,7 +31,7 @@ Carr1454 {; Modified ManP1IMJ
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1455 {; Modified ManP1IMJ
   z=pixel, c=sqr(0.3,0.6):
   z=z*z
@@ -40,7 +40,7 @@ Carr1455 {; Modified ManP1IMJ
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1456 {; Modified ManP1IMJ
   z=pixel, c=(-0.7456,0.2):
   z=z*z
@@ -49,7 +49,7 @@ Carr1456 {; Modified ManP1IMJ
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1457 {; Julia
   z=(1-pixel)/2^pixel, c=pixel:
   z=sqr(z)
@@ -59,7 +59,7 @@ Carr1457 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1458 {; Julia
   z=pixel, c=(0.9/-3.48)-0.88/pixel:
   z=z*z+c
@@ -68,7 +68,7 @@ Carr1458 {; Julia
   |z|<=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1459 {; Julia
   z=cosxx(pixel), c=(-0.6456,0.33):
   z=z*z+(c)
@@ -76,7 +76,7 @@ Carr1459 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1460 {
   z=pixel, c=sinh(0.3,0.6):
   z=conj(sqr(z)+c)*conj(z+0.5)*conj(c-0.95)
@@ -84,7 +84,7 @@ Carr1460 {
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1461 {
   z=pixel, c=tanh(pixel):
   z=conj(sqr(z)+c)*conj(z+0.75)*conj(c-0.95)
@@ -92,7 +92,7 @@ Carr1461 {
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1462 {
   z=pixel, c=cosh(pixel):
   z=conj(sqr(z)+c)*conj(z+1)*conj(c-0.95)
@@ -100,7 +100,7 @@ Carr1462 {
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1463 {
   z=pixel, c=cosh(pixel):
   z=conj(sqr(z)+c)*conj(z+1)*conj(c-0.95)
@@ -108,42 +108,42 @@ Carr1463 {
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1464 {; Faceted Glass modified Mandel
   z=c, c=pixel:
   z=z*z+c
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1465 {; Julia
   z=pixel:
   z=z*z+(-0.7456,0.2)
   |cosxx(z)| <= 4 || |conj(z)| <= 4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1466 {; Faceted Glass InvMandel
   z=c, c=1/pixel:
   z=z*z+c
   |cabs(z)| <= 4 || |asin(z)| <= 4 || |sin(z)| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1467 {; ConjMandel creates Faceted Glass
   z=c, c=conj(pixel):
   z=z*z+c
   |cabs(z)| <= 4 || |asin(z)| <= 4 || |sin(z)| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1468 {; TanMandel creates Faceted Glass
   z=c, c=tan(pixel):
   z=z*z+c
   |cabs(z)| <= 4 || |cosxx(z)| <= 4 || |sinh(z)| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1469 {; Julia
   z=pixel+flip(-0.5), c=(-1.7621,-0.0141):
   z=(z*z)+(c)
@@ -151,7 +151,7 @@ Carr1469 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1470 {; Same as 1469 but "cart before the horse".
   z=z1, z1=pixel+flip(-0.5), c=(-1.7621,-0.0141):
   z=(z*z)+(c)
@@ -159,7 +159,7 @@ Carr1470 {; Same as 1469 but "cart before the horse".
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1471 {; Faceted Glass Julia
   z=z1, z1=conj(pixel*pixel)+flip(-0.5), c=(-1.7621,-0.2141):
   z=(z*z)+(c)
@@ -167,7 +167,7 @@ Carr1471 {; Faceted Glass Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1472 {; Faceted Glass Julia
   z=z1, z1=cosxx(pixel*pixel)+flip(-0.5), c=(-1.7621,-0.2141):
   z=(z*z)+(c)
@@ -175,7 +175,7 @@ Carr1472 {; Faceted Glass Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1473 {; Faceted Glass Julia
   z=z1, z1=sqr(1/pixel*1/pixel*pixel)+flip(-0.5), c=(1.1,0.9):
   z=(z*z)+(c)
@@ -183,14 +183,14 @@ Carr1473 {; Faceted Glass Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1474 {; BatMandelbrot, Faceted Glass
   z=c, c=(conj(1/pixel)^2.32)-1.25:
   z=z*z+c
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1475 {; Julia
   z=(flip(1/pixel)^2.32)-1.25, c=z:
   z=z*z+c
@@ -198,7 +198,7 @@ Carr1475 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1476 {; Julia??
   z=(cosxx(pixel)^2.32)-1.25, c=conj(z):
   z=z*z+c
@@ -206,7 +206,7 @@ Carr1476 {; Julia??
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1477 {; ??-Julia-??
   z=tan(1/exp(pixel)^2.32)-1.25, c=conj(z):
   z=z*z+c
@@ -214,7 +214,7 @@ Carr1477 {; ??-Julia-??
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1478 {; Julia
   z=conj(cosxx(pixel)^2.32)-1.25, c=(0.9/-2.48)-conj(0.2/pixel):
   z=z*z+c
@@ -222,7 +222,7 @@ Carr1478 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1479 {; A REALLY different Julia ??
   z=1/(pixel*conj(5/pixel-0.724))
   c=(0.3,0.6):
@@ -231,7 +231,7 @@ Carr1479 {; A REALLY different Julia ??
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1480 {; Julia??
   z=1/(pixel+pixel-(5/pixel-0.724))
   c=flip(z*pixel):
@@ -240,7 +240,7 @@ Carr1480 {; Julia??
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1481 {; Julia?
   z=conj(1-pixel)/2.33^1.75
   c=(conj(tan(1/pixel))^1.32)-1.25:
@@ -249,7 +249,7 @@ Carr1481 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1482 {; Julia?
   z=conj(1-pixel)/2.33^1.75
   c=(-0.7456,0.2315):
@@ -258,7 +258,7 @@ Carr1482 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1483 {; Julia?
   z=conj(1-pixel)/2.33^1.75
   c=imag(4.299,-1.2):
@@ -267,7 +267,7 @@ Carr1483 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1484 {; Julia?
   z=(pixel+pixel)/(sqr(1/pixel))
   c=((pixel-1.5)^1.637)/(z-1.2/pixel):
@@ -276,7 +276,7 @@ Carr1484 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1485 {; Julia? Faceted Glass
   z=z1, z1=(pixel+pixel)/(flip(1/pixel*0.91/pixel+0.2/pixel))
   c=1/conj(pixel-1.5)/(conj(z)-1.4/pixel):
@@ -285,7 +285,7 @@ Carr1485 {; Julia? Faceted Glass
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1486 {; Julia, Faceted Glass.
   z=z1, z1=(pixel+pixel)/(flip(1/pixel*0.91/pixel+4/pixel))
   c=conj(pixel-1.5)/(flip(z)-1.4/pixel):
@@ -294,7 +294,7 @@ Carr1486 {; Julia, Faceted Glass.
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1487 {; Julia
   z=(pixel+pixel)/(1/flip(1/pixel*0.91/pixel+0.9/pixel))
   c=conj(pixel-1.5)/(flip(z)-3.4/pixel):
@@ -303,7 +303,7 @@ Carr1487 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1488 {; Faceted Glass Julia
   z=z1, z1=(pixel+pixel)/(1/flip(1/pixel*0.91/pixel+0.9/sqr(pixel)))
   c=c1, c1=conj(pixel-1.5)/(flip(z)-3.4/pixel):
@@ -312,7 +312,7 @@ Carr1488 {; Faceted Glass Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1489 {; Julia
   z=(pixel+pixel)/(flip(1/pixel))
   c=z*(pixel)/flip(pixel-0.1):
@@ -321,7 +321,7 @@ Carr1489 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1490 {; Julia
   z=(pixel+pixel-1)/(flip(1/-pixel))
   c=z*(pixel+1)/flip(pixel-0.1):
@@ -330,7 +330,7 @@ Carr1490 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1491 {; Julia
   z=(pixel+pixel-1)/(flip(1/-pixel))
   c=z*sqr(pixel-1)/flip(pixel-0.1):
@@ -339,7 +339,7 @@ Carr1491 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1492 {; Julia
   z=(pixel+pixel-1)/(flip(1/pixel*0.91/pixel))
   c=z*sqr(pixel)/flip(1.099,0):
@@ -348,7 +348,7 @@ Carr1492 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1493 {; VERY different Julia
   z=1/(pixel+pixel)/(cosxx(1/pixel*4/pixel))
   c=z*conj(pixel)/((-1.76,-0.014)/(3/pixel)):
@@ -357,7 +357,7 @@ Carr1493 {; VERY different Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1495 {; Julia
   z=1/(pixel+pixel)/(cotan(1/pixel*4/pixel))
   c=z*1/conj(pixel+pixel)/((sqr(z-0.25)*pixel)/(6/pixel)):
@@ -366,7 +366,7 @@ Carr1495 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1496 {; Julia
   z=1/(pixel+pixel)/(tan(sqr(1/pixel*4/pixel)))
   c=z*1/(pixel+pixel)/((sqr(pixel*z-1.55)*pixel)/(6/pixel)):
@@ -375,7 +375,7 @@ Carr1496 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1497 {; Julia
   z=sqr(1-pixel)/(2^pixel-0.5)
   c=z*1/conj(pixel+pixel)/(pixel/(6/pixel)):
@@ -386,7 +386,7 @@ Carr1497 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1498 {; Julia?
   z=1/(pixel*conj(5/pixel-0.724))
   c=pixel+(-0.7456,0.2):
@@ -397,7 +397,7 @@ Carr1498 {; Julia?
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1499 {; Julia
   z=1/(pixel+pixel-(5/pixel-0.724))
   c=flip(z*pixel):
@@ -406,7 +406,7 @@ Carr1499 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+
 Carr1494 {; Julia
   z=1/(pixel+pixel)/(cotan(1/pixel*4/pixel))
   c=z*1/conj(pixel+pixel)/((-5.742,-0.009)/(6/pixel)):
@@ -415,4 +415,4 @@ Carr1494 {; Julia
   |z| <=4
   ;SOURCE: 33carr.frm
 }
- 
+

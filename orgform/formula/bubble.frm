@@ -48,7 +48,7 @@ bubbleboth_jul {; Kerry Mitchell
   ENDIF
   iter > 0
 ;*******Kerry Mitchell's description of "bubble formulas"***********
-;              narrative copyright Kerry Mitchell, 1998 
+;              narrative copyright Kerry Mitchell, 1998
 ;  Applies to:
 ;     bubbleboth_jul (above)
 ;     bubbleboth_man

@@ -6,7 +6,7 @@ BEJ-N219 {; Revised by G. Martin to eliminate assignment to "pixel"
   |imag(z)|<4
   ;SOURCE: bj-phc02.frm
 }
- 
+
 Gallet-4-02 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, h = p1, a = p2 :
    x = real(z), y = imag(z)
@@ -16,7 +16,7 @@ Gallet-4-02 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 16
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-14 {; Sylvie Gallet [101324,3444], 1996
              ; Hypercomplex Newton formula applied to h^p2 - 1 = 0
    ; h(0) = real(pixel) + i*imag(pixel) + j*real(p1) + k*imag(p1)
@@ -31,7 +31,7 @@ Gallet-4-14 {; Sylvie Gallet [101324,3444], 1996
     |na| + |nb| >= 0.000001
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
              ; PTC formula
   cr = real(scrnpix) + imag(scrnpix)
@@ -46,7 +46,7 @@ Gallet-4-06 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-01 {; Sylvie Gallet [101324,3444], 1996
   z = pixel, h = p1, a = p2 :
    x = real(z), y = imag(z)
@@ -56,7 +56,7 @@ Gallet-4-01 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-03 {; Sylvie Gallet [101324,3444], 1996
   z2 = 0, z1 = c = pixel :
    z = fn1(z1) + p1*real(c)*fn2(z1) + p2*imag(c)*z2
@@ -64,7 +64,7 @@ Gallet-4-03 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-04 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   z = pixel * whitesq + (whitesq == 0 ) / pixel :
@@ -75,7 +75,7 @@ Gallet-4-04 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-05 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   z = pixel :
@@ -86,7 +86,7 @@ Gallet-4-05 {; Sylvie Gallet [101324,3444], 1996
     |z| <= 4
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-07 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   z = 10 * pixel, bailout = real(p3)
@@ -96,7 +96,7 @@ Gallet-4-07 {; Sylvie Gallet [101324,3444], 1996
     abs(real(z)) < bailout || abs(imag(z)) < bailout
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-08 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   z = pixel * (whitesq - (whitesq == 0))
@@ -106,7 +106,7 @@ Gallet-4-08 {; Sylvie Gallet [101324,3444], 1996
     abs(real(z)) < bailout || abs(imag(z)) < bailout
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-09 {; Sylvie Gallet [101324,3444], 1996
   p = (0,1) * p1, bailout = p2
   a = pixel + p, b = pixel - p :
@@ -116,7 +116,7 @@ Gallet-4-09 {; Sylvie Gallet [101324,3444], 1996
     |a| + |b| <= bailout
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-10 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   p = (0,1) * p1 * ((0,1) * whitesq - (whitesq == 0))
@@ -128,7 +128,7 @@ Gallet-4-10 {; Sylvie Gallet [101324,3444], 1996
     |z| <= p3
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-11 {; Sylvie Gallet [101324,3444], 1996
   p = (0,1) * p1, bailout = p2
   a = pixel + p, b = pixel - p :
@@ -138,7 +138,7 @@ Gallet-4-11 {; Sylvie Gallet [101324,3444], 1996
     |a| <= bailout || |b| <= bailout
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-11 {; Sylvie Gallet [101324,3444], 1996
   p = (0,1) * p1, bailout = p2
   a = pixel + p, b = pixel - p :
@@ -148,7 +148,7 @@ Gallet-4-11 {; Sylvie Gallet [101324,3444], 1996
     |a| <= bailout || |b| <= bailout
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-12 {; Sylvie Gallet [101324,3444], 1996
              ; PHC formula
   p = p1 * ((0,1) * whitesq - (whitesq == 0))
@@ -160,7 +160,7 @@ Gallet-4-12 {; Sylvie Gallet [101324,3444], 1996
     |z| <= p3
   ;SOURCE: gallet-4.frm
 }
- 
+
 Gallet-4-13 {; Sylvie Gallet [101324,3444], 1996
              ; Hypercomplex Mandel formula
    ; c = real(pixel) + i*imag(pixel) + j*real(p1) + k*imag(p1)
@@ -173,4 +173,4 @@ Gallet-4-13 {; Sylvie Gallet [101324,3444], 1996
     |a| + |b| <= 128
   ;SOURCE: gallet-4.frm
 }
- 
+

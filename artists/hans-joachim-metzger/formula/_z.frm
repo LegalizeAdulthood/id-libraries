@@ -16,7 +16,7 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 MyEqn_Julia-sg {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = selects rendering method
@@ -56,7 +56,7 @@ MyEqn_Julia-sg {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: sg_misc.frm
 }
- 
+
 Zf_Ang {; Copyright (c) Paul W. Carlson, 1998
     ; p1       = Julia set coordinates
     ; real(p2) = controls size of the elements
@@ -96,4 +96,4 @@ Zf_Ang {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0 && |w| < 1.0e20
   ;SOURCE: 98msg.frm
 }
- 
+

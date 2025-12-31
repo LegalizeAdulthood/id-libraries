@@ -9,7 +9,7 @@ F'Liar4C {; by Chuck Ebbert - 76302,1226
    ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel), p = p1 + 1 :
   z = 1-abs(imag(z)*p-real(z))+fn2(1-abs(1-real(z)-imag(z)))
-  fn3(abs(z)) <= p2 
+  fn3(abs(z)) <= p2
   ;SOURCE: nuliar.frm
 }
 
@@ -24,7 +24,7 @@ FGZ {
    ; Olds, Alberta, Canada
    ; T0M 1P0
    ;
-   ; Check out the text file FGZ.DOC for 
+   ; Check out the text file FGZ.DOC for
    ; full details on this fractal family.
   z = c = pixel:
   z = z * z + c
@@ -108,13 +108,13 @@ FGZ-Julia {
 
 
 fish (XAXIS) {
-   ; Lets not completely rule out a constant either. 
+   ; Lets not completely rule out a constant either.
    ; Add one to the Trillium
   z=c=pixel, zp = (0,0):
   temp = z
   z = z*z - zp + c
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -160,7 +160,7 @@ FlyingSquirrel (XAXIS_NOPARM) {; Jon Osuch
    ; Try p1=0, p2=4, fn1=sin, fn2=cosxx, fn3=sqr
    ; Edited for Fractint v. 20 by George Martin, 10/98
   z  = p1
-  x  = |z|:  
+  x  = |z|:
   z=fn1(z) / fn2(z) + pixel
   z  = fn3(z)+pixel
   x  = |z|
@@ -174,7 +174,7 @@ FlyingSquirrel (XAXIS_NOPARM) {; Edited for Fractint v. 20
   z=p1, x=|z|:
   z=sin(z)/cos(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 
@@ -194,21 +194,21 @@ FlyingSquirrelC (XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
 }
 
 
-FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                 ; by George Martin, 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=sin(z)/cos(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 
 
 fn*z+z {
   z=pixel+fn1(fn2(fn3(pixel)))+fn1(fn3(fn2(pixel))) :
-  z=p1*fn4(z)*z+p2*z 
+  z=p1*fn4(z)*z+p2*z
   |z|<=4
   ;SOURCE: smuus.frm
 }
@@ -247,42 +247,42 @@ fnzpfnpix {; Chuck Ebbert.
 }
 
 
-Form3 (XAXIS) { 
-  z = Pixel, c = Pixel: 
-  z = c * z * ( 1 - z ) 
-  |z| < 4 
+Form3 (XAXIS) {
+  z = Pixel, c = Pixel:
+  z = c * z * ( 1 - z )
+  |z| < 4
   ;SOURCE: newform.frm
 }
 
 
-Form4 (XAXIS) { 
-  z = Pixel, c = P1: 
-  z = c * z * ( 1 - z ) 
-  |z| < 4 
+Form4 (XAXIS) {
+  z = Pixel, c = P1:
+  z = c * z * ( 1 - z )
+  |z| < 4
   ;SOURCE: newform.frm
 }
 
 
-Form5 (XAXIS) { 
-  z = Pixel, c = Pixel: 
-  z = 1 / ( sqr(z) + c ) 
-  |z| < 4 
+Form5 (XAXIS) {
+  z = Pixel, c = Pixel:
+  z = 1 / ( sqr(z) + c )
+  |z| < 4
   ;SOURCE: newform.frm
 }
 
 
-Form6 (XAXIS) { 
-  z = Pixel, c = Pixel: 
-  z = z^6 + sqr(z) + c 
-  |z| < 4 
+Form6 (XAXIS) {
+  z = Pixel, c = Pixel:
+  z = z^6 + sqr(z) + c
+  |z| < 4
   ;SOURCE: newform.frm
 }
 
 
-Form7 (XYAXIS) { 
-  z = Pixel, c = Pixel: 
-  z = ( c * sqr( sqr(z) + 1 ) ) / ( z * ( sqr(z) - 1) ) 
-  |z| < 4 
+Form7 (XYAXIS) {
+  z = Pixel, c = Pixel:
+  z = ( c * sqr( sqr(z) + 1 ) ) / ( z * ( sqr(z) - 1) )
+  |z| < 4
   ;SOURCE: newform.frm
 }
 
@@ -304,7 +304,7 @@ FractalFender2 (XAXIS_NOPARM) {; Jon Osuch
                                ; Try p1=0, p2=4, fn1=cosxx, fn2=sqr
      ; Edited for Fractint v. 20 by George Martin, 10/98
   z = p1
-  x = |z|:  
+  x = |z|:
   z=fn1(z)+pixel
   z = fn2(z)+pixel
   x = |z|
@@ -334,7 +334,7 @@ FractalFenderC (XAXIS_NOPARM) {; Jon Osuch
                                ; Note:  use floating point
                                ; Spectacular!
      ; Edited for Fractint v. 20 by George Martin, 10/98
-  z = p1 
+  z = p1
   x = |z|:
   IF (x>1)
     z = fn1(z)+pixel
@@ -350,7 +350,7 @@ Frog (XAXIS_NOPARM) {; Jon Osuch
                      ; Try p1=0, p2=4, fn1=tanh, fn2=sqr
      ; Edited for Fractint v. 20 by George Martin, 10/98
   z = p1
-  x = |z|:     
+  x = |z|:
   z=fn1(z) + pixel
   z = fn2(z)+pixel
   x = |z|
@@ -363,7 +363,7 @@ Frog (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=|z|:
   z=sinh(z)/cosh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 
@@ -374,7 +374,7 @@ frog (XAXIS) {
   temp = z
   z = z*z + zp
   zp = temp^.5
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -395,14 +395,14 @@ FrogC (XAXIS_NOPARM) {; Jon Osuch
 }
 
 
-FrogC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FrogC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                       ; by George Martin, 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=sinh(z)/cosh(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 

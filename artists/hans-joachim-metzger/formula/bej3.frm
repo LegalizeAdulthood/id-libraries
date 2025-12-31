@@ -7,7 +7,7 @@ BJ_Newton1 {
   .0004<|z+Root|
   ;SOURCE: bej3.frm
 }
- 
+
 gallet-2-07b {; Modified Sylvie Gallet frm [101324,3444], 1995
               ; (sin z)^p1 + z = 0 solution = 0
   z = pixel, c=pixel:
@@ -18,7 +18,7 @@ gallet-2-07b {; Modified Sylvie Gallet frm [101324,3444], 1995
   |z1| >= 0.000001
   ;SOURCE: bej3.frm
 }
- 
+
 gallet-2-07e {; Modified Sylvie Gallet frm [101324,3444], 1995
               ; (sin z)^p1 + z = 0 solution = 0
   z = pixel, c=pixel, Root=1:
@@ -29,7 +29,7 @@ gallet-2-07e {; Modified Sylvie Gallet frm [101324,3444], 1995
   |z1-Root| >= 0.000001
   ;SOURCE: bej3.frm
 }
- 
+
 mandel-newton_a {; Modified Sylvie Gallet frm [101324,3444], 1995
   z = pixel, c = z, iter = 1
   rad = 3.1, center = (-3.6,-3.0)
@@ -39,16 +39,16 @@ mandel-newton_a {; Modified Sylvie Gallet frm [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bej3.frm
 }
- 
+
 NewNewton_a {
   z = pixel+1/fn1(p2 * pixel-p1)  + 1/fn2(p2 * pixel), Root = 1:
-  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4)) 
+  z = (4 * z^5 + Root) / fn1(fn2(4*z^5+1)/(5*z^4))
   0.001<=|z^5-Root+1|
   ;SOURCE: bej3.frm
 }
- 
+

@@ -3,7 +3,7 @@
 BackwardBrot {; formula, Jim Muth
   z=c=pixel:
   z=p1^(z^p2)+(p3*c)
-  |z| <16  
+  |z| <16
   ;SOURCE: 98msg.frm
 }
 
@@ -53,7 +53,7 @@ bail_out02 (xAxis) {
 }
 
 
-bail_out03 (xAxis) {; xAxis won't do for fn=exp. 
+bail_out03 (xAxis) {; xAxis won't do for fn=exp.
                     ; Use bail_out03exp instead
   z = c = pixel:
   z = z^2 + c
@@ -185,8 +185,8 @@ banner1 {; Giuseppe Zito
 }
 
 
-Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna 
-  z = c = pixel: 
+Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna
+  z = c = pixel:
   z1 = z - 1
   z2 = z + 1
   rz = real(z)
@@ -194,14 +194,14 @@ Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna
   t2 = ((z2) * p1) * ((rz) <  0)
   t3 = ((z1) * c + p2) * ((rz) >= 0) ;; t3 & t4 => Barnsleym1
   t4 = ((z2) * c + p2) * ((rz) < 0)
-  z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0)) 
+  z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0))
   |z| < 4
   ;SOURCE: beck.frm
 }
 
 
-Barnsley_PHC_2 {; formula adapted by Vincent Damion Presogna 
-  z = c = pixel: 
+Barnsley_PHC_2 {; formula adapted by Vincent Damion Presogna
+  z = c = pixel:
   z1 = z - 1
   z2 = z + 1
   rz = real(z)
@@ -209,7 +209,7 @@ Barnsley_PHC_2 {; formula adapted by Vincent Damion Presogna
   t2 = ((z2) * p1) * ((rz) <  0)
   t3 = ((z1) * c + p2) * ((rz) >= 0) ;; t3 & t4 => Barnsleym1
   t4 = ((z2) * c + p2) * ((rz) < 0)
-  z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0)) 
+  z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0))
   |z| < 4
   ;SOURCE: 96msg.frm
 }
@@ -315,18 +315,18 @@ BasicNewton {; Jim Muth
 }
 
 
-Bat { 
+Bat {
   z = pixel:
-  z = fn1 (log(sin(z))) 
+  z = fn1 (log(sin(z)))
   |z| <= 42
   ;SOURCE: hubert.frm
 }
 
 
 Beck {
-  z = pixel, sp = sin(sqr(pixel)): 
-  r = z * (fn1(1/z) /sp) + p1  
-  q = fn2(z) * sp + p2 
+  z = pixel, sp = sin(sqr(pixel)):
+  r = z * (fn1(1/z) /sp) + p1
+  q = fn2(z) * sp + p2
   z = r * (whitesq == 1) + q * (whitesq == 0)
   |z| <= 4
   ;SOURCE: beck.frm
@@ -339,7 +339,7 @@ bee {; Giuseppe Zito
   c2 = -0.321228
   c4 = -0.57989001
   c6 = -0.209068
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 *c1
@@ -350,11 +350,11 @@ bee {; Giuseppe Zito
   s0 = s0 *x
   s0 = s0 /y
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -383,7 +383,7 @@ BEJ {
   x = (1.5+z^p1)^(1/p1)
   z = z*(1+y)/(1-x) + p2
   z=fn1(z)+c
-  z=fn2(z)-c 
+  z=fn2(z)-c
   |z| <4
   ;SOURCE: bej's.frm
 }
@@ -615,7 +615,7 @@ BEJ-N198 {
 
 BEJ-N199 {
   z=c=pixel, zc=pixel/sqr(pixel*.5):
-  c=((zc/p1)/(zc/sqrt(z))) * (whitesq == 0)\ 
+  c=((zc/p1)/(zc/sqrt(z))) * (whitesq == 0)\
     + ((zc/p2)/(zc/sqrt(abs(z)))) * whitesq
   z=z*z+c
   |imag(z)|<4
@@ -651,7 +651,7 @@ BEJ-N219 {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N221 {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N221 {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=sqr(pixel)*-abs(cosxx(pixel))
   z=c=newpixel/p1:
   z=fn1(z)*z+c
@@ -660,7 +660,7 @@ BEJ-N221 {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N223a {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N223a {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=sqr(pixel)
   z=newpixel, c=newpixel^z:
   z=fn1(z)*z+((c+newpixel)^c)
@@ -669,7 +669,7 @@ BEJ-N223a {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N224 {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N224 {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=flip(-abs(pixel*(pixel*1)))
   z=newpixel, c=fn1(newpixel^z)*.05:
   z=sinh(z*z)*fn2((c*c)*(z*c))+(z*pi)
@@ -679,16 +679,16 @@ BEJ-N224 {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N227 {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N227 {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=pixel*(fn1(pixel*pi))
   z = newpixel, c = fn1(flip(newpixel^fn3(z))):
-  z = fn2(z * z) + c 
+  z = fn2(z * z) + c
   |z| < 16
   ;SOURCE: bej0015.frm
 }
 
 
-BEJ-N229e {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N229e {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=flip(-abs(pixel*sqrt(pixel*1)))
   z=sqr(newpixel), c=cotan(newpixel^fn1(z)):
   z=fn3(z*z)+(acos(c+newpixel)/fn2(c))
@@ -697,7 +697,7 @@ BEJ-N229e {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N229f {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N229f {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=flip(-abs(pixel*sqrt(pixel*1)))
   z=sqr(newpixel), c=cotan(newpixel^fn1(z)):
   z=fn3(sin(z*z))+(acos(c+newpixel)/fn2(c))
@@ -706,7 +706,7 @@ BEJ-N229f {; Revised by G. Martin to eliminate assignment to "pixel"
 }
 
 
-BEJ-N229l {; Revised by G. Martin to eliminate assignment to "pixel" 
+BEJ-N229l {; Revised by G. Martin to eliminate assignment to "pixel"
   newpixel=flip(-abs(pixel*sqrt(pixel*1)))
   z=sqr(atan(sqrt(newpixel))), c=cotan(newpixel^fn1(z)):
   z=fn3(sqr(sin(z*z)))+(acos(c+newpixel)/fn2(c))
@@ -940,7 +940,7 @@ BESSEL-1 {
    ; P.O. Box 1856
    ; Olds, Alberta, Canada
    ; T0M 1P0
-   ; This formula, and BESSEL-2 to BESSEL-4 are based on 
+   ; This formula, and BESSEL-2 to BESSEL-4 are based on
    ; formulas taken from the article on bessels from the
    ; Encyclopedia of Science.
   c = z = pixel:
@@ -1769,7 +1769,7 @@ Beta03-07 {; V.1.1 - earlier versions may be discarded
 Beta03-08 {; V.1.1 - earlier versions may be discarded
            ; Copyright (c)1998,1999 Morgan L. Owens
            ; = Beta[3] = (-exp(-z)-3Beta[2])/z
- t=p1, bailout=4, z=pixel:  
+ t=p1, bailout=4, z=pixel:
   x=real(z), y=imag(z)
   ex=exp(x), ey=exp(y)
   x2=x*x, y2=y*y
@@ -5355,8 +5355,8 @@ Betacron_2 {
 Betacron_3 {
   z = pixel:
   z = sqr(z) + ((z*z)*0.75) + pixel
-  z = (1 / z + sqrt(z)) - pixel 
-  z = fn1(z) 
+  z = (1 / z + sqrt(z)) - pixel
+  z = fn1(z)
   |z| < 4
   ;SOURCE: omicron.frm
 }
@@ -5371,7 +5371,7 @@ bfly (XYAXIS) {
   z  = z * zp1 + zp2
   zp2 = zp1
   zp1 = temp
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5383,7 +5383,7 @@ bfly1 (XAXIS) {
   temp = z
   z = -exp(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5394,7 +5394,7 @@ bfly2 (XAXIS) {
   temp = z
   z = 1-exp(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5405,7 +5405,7 @@ bfly3 (XAXIS) {
   temp = z
   z = 1-cos(z) - zp
   zp = conj(temp)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5413,8 +5413,8 @@ bfly3 (XAXIS) {
 Bhakti {
   z = pixel:
   z = z + p1
-  r = fn2(z) * z  
-  q = z^pi 
+  r = fn2(z) * z
+  q = z^pi
   z = fn1(z) * (r/q)
   |z| <= 4
   ;SOURCE: shakti.frm
@@ -5425,7 +5425,7 @@ Bif+pi {; Peter Anders (anders@physik.hu-berlin.de)
         ; replaced "pi" with "approxpi". G. Martin, 7/9/99
   z=p1, c=pixel, approxpi=3.14159265:
   z=z+c*fn1(approxpi*z)
-  |fn2(z)|<real(p2) 
+  |fn2(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5434,7 +5434,7 @@ Bif=pi {; Peter Anders (anders@physik.hu-berlin.de)
         ; replaced "pi" with "approxpi". G. Martin, 7/9/99
   z=p1, c=pixel, approxpi=3.14159265:
   z=c*fn1(approxpi*z)
-  |fn2(z)|<real(p2) 
+  |fn2(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5442,7 +5442,7 @@ Bif=pi {; Peter Anders (anders@physik.hu-berlin.de)
 Biflambda {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   z=c*fn1(z)*(1-fn1(z))
-  |fn2(z)|<real(p2) 
+  |fn2(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5450,7 +5450,7 @@ Biflambda {; Peter Anders (anders@physik.hu-berlin.de)
 Bifmay {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel, b=imag(p2):
   z=c*z/((1+z)^b)
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5458,7 +5458,7 @@ Bifmay {; Peter Anders (anders@physik.hu-berlin.de)
 Bifstewart {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   z=c*fn1(z)*fn1(z)-1
-  |fn2(z)|<real(p2) 
+  |fn2(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5466,7 +5466,7 @@ Bifstewart {; Peter Anders (anders@physik.hu-berlin.de)
 Bifurcation {; Peter Anders (anders@physik.hu-berlin.de)
   z=p1, c=pixel:
   z=z+c*fn1(z)*(1-fn1(z))
-  |fn2(z)|<real(p2) 
+  |fn2(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -5513,7 +5513,7 @@ BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
   tmp1=fn1(z)^fn2(z)
   tmp2=fn3(z)^fn4(z)
-  z=(tmp1/tmp2) 
+  z=(tmp1/tmp2)
   |z| <= 4
   ;SOURCE: jpl1.frm
 }
@@ -5682,7 +5682,7 @@ billsfn3 {
 }
 
 
-billsfn4 {; Bill Decker, 1999 
+billsfn4 {; Bill Decker, 1999
   z = p1, temp = pixel :
   z = fn1(temp^p2)
   IF (5 < z)
@@ -5719,7 +5719,7 @@ billsfv4 {
 BillTry3 {; Bill Rossi, billatny@nyiq.net
   z = pixel, c=p1:
   z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0))
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: billspir.frm
 }
 
@@ -5728,7 +5728,7 @@ BillTry4 {; Bill Rossi
   z = pixel, c=p1:
   z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0))
   z = fn1(z) + c, z = fn2(c) + z
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: billspir.frm
 }
 
@@ -5919,7 +5919,7 @@ BJ-BC1924pt3 {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
   z = (z-zn)*test2 + zn
-  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel) 
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel)
   z = (z2+c)*test1 + ((z-z1)*(1-test1))
   z7=z*z*z
   z8=(z+c)^pixel/(z*z+(zn*z2)/z7)
@@ -5971,18 +5971,18 @@ BJ-BC1974-h {; Modified Bob Carr frm from a modified Sylvie Gallet frm.
 }
 
 
-BJ-BC1997b (XAXIS) {; Modified Bob Carr 
+BJ-BC1997b (XAXIS) {; Modified Bob Carr
                     ; modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
   bailout=16, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   z=fn1(z)*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4 
+  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
@@ -5990,18 +5990,18 @@ BJ-BC1997b (XAXIS) {; Modified Bob Carr
 }
 
 
-BJ-BC1997c (XAXIS) {; Modified Bob Carr 
+BJ-BC1997c (XAXIS) {; Modified Bob Carr
                     ; modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
   bailout=16, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   z=z*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4))+fn1(c1*t1)+fn2(c2*t2)+fn3(c3*t3)+fn4(c4*t4) 
+  c=c*(1-(t1||t2||t3||t4))+fn1(c1*t1)+fn2(c2*t2)+fn3(c3*t3)+fn4(c4*t4)
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
@@ -6009,11 +6009,11 @@ BJ-BC1997c (XAXIS) {; Modified Bob Carr
 }
 
 
-BJ-BC1997d (XAXIS) {; Modified Bob Carr 
+BJ-BC1997d (XAXIS) {; Modified Bob Carr
                     ; modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
@@ -6021,7 +6021,7 @@ BJ-BC1997d (XAXIS) {; Modified Bob Carr
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   z=z*(1-(t1||t2||t3||t4))
   c=c*(1-(t1||t2||t3||t4))+fn1(c1*t1)+fn2(fn1(c2*t2))\
-      +fn3(fn2(fn1(c3*t3)))+fn4(fn3(fn2(fn1(c4*t4)))) 
+      +fn3(fn2(fn1(c3*t3)))+fn4(fn3(fn2(fn1(c4*t4))))
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
@@ -6029,18 +6029,18 @@ BJ-BC1997d (XAXIS) {; Modified Bob Carr
 }
 
 
-BJ-BC1997e (XAXIS) {; Modified Bob Carr 
+BJ-BC1997e (XAXIS) {; Modified Bob Carr
                     ; modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
   bailout=16, iter=0 :
   t1=fn1(iter==l1), t2=fn2(iter==l2), t3=fn3(iter==l3), t4=fn4(iter==l4)
   z=z*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4 
+  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
@@ -6048,11 +6048,11 @@ BJ-BC1997e (XAXIS) {; Modified Bob Carr
 }
 
 
-BJ-BC1997f (XAXIS) {; Modified Bob Carr 
+BJ-BC1997f (XAXIS) {; Modified Bob Carr
                     ; modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
@@ -6061,7 +6061,7 @@ BJ-BC1997f (XAXIS) {; Modified Bob Carr
   c=(-0.7456,-.0186)
   c=sin(conj(-0.81256,-0.1295))+p3
   z=z*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4 
+  c=c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 +c4*t4
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
@@ -6069,7 +6069,7 @@ BJ-BC1997f (XAXIS) {; Modified Bob Carr
 }
 
 
-BJ-BC1997g (XAXIS) {; Modified Bob Carr modified Sylvie Gallet frm. 
+BJ-BC1997g (XAXIS) {; Modified Bob Carr modified Sylvie Gallet frm.
                     ; [101324,3444],1996
        ; here are some combos for the fn's:
    ;fn1:          fn2:             fn3:      fn4:
@@ -6081,14 +6081,14 @@ BJ-BC1997g (XAXIS) {; Modified Bob Carr modified Sylvie Gallet frm.
    ; ident        sqr,log,conj     ident     conj
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
   bailout=16, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   z=z*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4))+fn1((c1*t1)+(c2*t2))+fn2(fn1(fn1(c3*t3)))+fn3(fn2(fn1(c4*t4))) 
+  c=c*(1-(t1||t2||t3||t4))+fn1((c1*t1)+(c2*t2))+fn2(fn1(fn1(c3*t3)))+fn3(fn2(fn1(c4*t4)))
   z=fn4(fn3(fn2(fn1(flip(z)))))
   z=z*z+c
   iter=iter+1
@@ -6097,7 +6097,7 @@ BJ-BC1997g (XAXIS) {; Modified Bob Carr modified Sylvie Gallet frm.
 }
 
 
-BJ-BC1997h (XAXIS) {;Modified Bob Carr modified Sylvie Gallet frm. 
+BJ-BC1997h (XAXIS) {;Modified Bob Carr modified Sylvie Gallet frm.
                     ; [101324,3444],1996
                     ; Edited for Fractint v. 20 by George Martin 10/98
      ; here are some combos for the fn's:
@@ -6110,14 +6110,14 @@ BJ-BC1997h (XAXIS) {;Modified Bob Carr modified Sylvie Gallet frm.
    ;    ident        sqr,log,conj     ident     conj
   z=pixel, c=pixel
   z1=c1=(1.5*z), z2=c2=(2.25*z), z3=c3=(3.375*z), z4=c4=(5.0625*z)
-  l1=real(p1) 
+  l1=real(p1)
   l2=imag(p1)
   l3=real(p2)
   l4=imag(p2)
   bailout=16, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   z=z*(1-(t1||t2||t3||t4))
-  c=c*(1-(t1||t2||t3||t4))+fn1((c1*t1)+(c2*t2))+fn2(fn1(fn1(c3*t3)))+fn3(fn2(fn1(c4*t4))) 
+  c=c*(1-(t1||t2||t3||t4))+fn1((c1*t1)+(c2*t2))+fn2(fn1(fn1(c3*t3)))+fn3(fn2(fn1(c4*t4)))
   z=fn3(fn2(fn1(flip(z))))
   z=z*z+c
   iter=iter+1
@@ -6129,7 +6129,7 @@ BJ-BC1997h (XAXIS) {;Modified Bob Carr modified Sylvie Gallet frm.
 BJ-JDfrm010m2 {; Brian Jones [102702,2213], 1996  Requires passes=1
                ; Modified Lee Skinner/Jim Deutch frm
                ; Eliminated assignment to "pixel". G. Martin, 6/27/99
-  c = (((whitesq==0)*fn1(pixel*(3/sqrt(pixel))))-whitesq) * pixel\ 
+  c = (((whitesq==0)*fn1(pixel*(3/sqrt(pixel))))-whitesq) * pixel\
           + whitesq * -pixel
   z = 0:
   z = z*z + c
@@ -6141,7 +6141,7 @@ BJ-JDfrm010m2 {; Brian Jones [102702,2213], 1996  Requires passes=1
 BJ-JDfrm010m3 {; Brian Jones [102702,2213], 1996    Requires passes=1
                ; Modified Lee Skinner/Jim Deutch frm
                ; Eliminated assignment to "pixel". G. Martin, 6/27/99
-  c = (((whitesq==0)*fn1(pixel*fn2(3/sqrt(pixel))))-whitesq) * pixel\ 
+  c = (((whitesq==0)*fn1(pixel*fn2(3/sqrt(pixel))))-whitesq) * pixel\
           + whitesq * -pixel
   z = 0:
   z = z*z + c
@@ -6171,22 +6171,22 @@ BJ-Lamda*2-a {; Brian Jones [102702,2213], 1996  Requires passes=1
 }
 
 
-BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13" 
-  z = pixel 
+BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13"
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(fn3(x)/y)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
 
 
-BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13" 
-  z = pixel 
+BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13"
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(x/fn3(y))
   |z| <= 4
   ;SOURCE: 96msg.frm
@@ -6194,10 +6194,10 @@ BJ-Lesfrm13-002 {; Modified Les St Clair formula "Lesfrm13"
 
 
 BJ-Lesfrm13-003 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z*z), y = fn2(z*z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6205,10 +6205,10 @@ BJ-Lesfrm13-003 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-004 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z*z), y = fn2(z*z):
   x = fn3(x)*p1*pi
-  y = fn4(y)*p2*pi 
+  y = fn4(y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6216,10 +6216,10 @@ BJ-Lesfrm13-004 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-005 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn3(x/y)/fn4(z)
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6227,10 +6227,10 @@ BJ-Lesfrm13-005 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-006 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z), y = fn2(z):
   x = fn3(z*x)*p1*pi
-  y = fn4(z*y)*p2*pi 
+  y = fn4(z*y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6238,10 +6238,10 @@ BJ-Lesfrm13-006 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-007 {; Les St Clair, 1996
-  z = pixel, c = z*pixel 
+  z = pixel, c = z*pixel
   x = fn1(z), y = fn2(z):
   x = x*p1*pi-c
-  y = y*p2*pi-c 
+  y = y*p2*pi-c
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6249,11 +6249,11 @@ BJ-Lesfrm13-007 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-008 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x1 = fn1(z), y1 = fn2(z)
   x2 = fn3(z*z), y2 = fn4(z*z):
   x1 = x1*p1*pi
-  y1 = y1*p2*pi 
+  y1 = y1*p2*pi
   z = x1*x2/y1*y2
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -6261,29 +6261,29 @@ BJ-Lesfrm13-008 {; Les St Clair, 1996
 
 
 BJ-Lesfrm13-012 {; Les St Clair, 1996
-  z = pixel, c=(-0.7456,-.0186) 
+  z = pixel, c=(-0.7456,-.0186)
   x = fn1(z), y = fn2(z):
   c=sin(conj(-0.81256,-0.1295))
   x = x*p1*pi-c
-  y = y*p2*pi-c 
+  y = y*p2*pi-c
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
 }
 
 
-BJ-Man-Galore-g (xaxis) {; Modified Variation on Sylvie Gallet formula. 
+BJ-Man-Galore-g (xaxis) {; Modified Variation on Sylvie Gallet formula.
    ; George Martin [76440,1143]
    ; periodicity=0 must be set
    ; Try 50 or more for real(p1) - even multiples of
    ;    256 give interesting effects
    ; Try 1.2 - 1.8 for imag(p1)
    ; Try 1000 or more for Maximum Iterations (x menu)
-  z=c=pixel, iter=0 
+  z=c=pixel, iter=0
   nextzoom = iterspace = real(p1), magnification = imag(p1):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = fn1(z*z*z+c)
   iter = iter + 1
@@ -6307,7 +6307,7 @@ BJ-man-julz-002 {; Sylvie Gallet [101324,3444], 1995
 
 
 BJ-man-julz-004 {; Sylvie Gallet [101324,3444], 1995
-  c = z = fn1((((0.3,0.6)+pixel)/(0.20/-pixel))*(0.1,1.0)) 
+  c = z = fn1((((0.3,0.6)+pixel)/(0.20/-pixel))*(0.1,1.0))
   compt=0, limit = real(p1), bailout = 4
   p = (-0.743380900000982,-0.131850030300002) :
   test = (compt<limit)
@@ -6321,7 +6321,7 @@ BJ-man-julz-004 {; Sylvie Gallet [101324,3444], 1995
 
 BJ-man-lam-fn-6 {; Sylvie Gallet [101324,3444], 1995
                  ; requires "periodicity=0" (<g> command)
-  c = z = fn1(pixel*sqr(1.0,0.1)), lambda = (1.0,0.4) 
+  c = z = fn1(pixel*sqr(1.0,0.1)), lambda = (1.0,0.4)
   pix2 = pixel*4+0.8, compt = 0, limit = real(p1) :
   test1 = (compt<limit), test2 = (compt!=limit)
   z = (z-pix2)*test2 + pix2
@@ -6337,8 +6337,8 @@ BJ-man-lam-fn-6 {; Sylvie Gallet [101324,3444], 1995
 BJ-man-lam-fn-9b {; Sylvie Gallet [101324,3444], 1995
                   ; requires "periodicity=0" (<g> command)
   c=z=fn1(conj(sin(pixel*(1.0,0.1)/p2)))/(1.0,0.1)\
-      -fn3(conj(sin(pixel*(1.0,0.1)/p2))) 
-  lambda = (1.0,0.4)/p3 
+      -fn3(conj(sin(pixel*(1.0,0.1)/p2)))
+  lambda = (1.0,0.4)/p3
   pix2 = fn2(pixel*4+0.8), compt = 0, limit = real(p1):
   test1 = (compt<limit), test2 = (compt!=limit)
   z = (z-pix2)*test2 + pix2
@@ -6356,7 +6356,7 @@ BJ-MandJulia {; Brian Jones [102702,2213], 1996  Requires passes=1
   z = pixel+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=fn1(z*z)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6367,7 +6367,7 @@ BJ-MandJulia-a {; Brian Jones [102702,2213], 1996   Requires passes=1
   z = pixel+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=fn1(z+z)+fn2(z*c)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6378,7 +6378,7 @@ BJ-MandsJulia {; Brian Jones [102702,2213], 1996   Requires passes=1
   z = pixel+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=fn1(z+z)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6391,7 +6391,7 @@ BJ-MandsJulia-b {; Brian Jones [102702,2213], 1996  Requires passes=1
   z = (pixel * pixel)+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=fn1(z+z)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6404,7 +6404,7 @@ BJ-MandsJulia-b-2 {; Brian Jones [102702,2213], 1996  Requires passes=1
   z = (pixel * flip(fn1(pixel*3)))+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=sin(z+z)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6415,7 +6415,7 @@ BJ-MandsJulia-b-4 {; Brian Jones [102702,2213], 1996  Requires passes=1
   z = (pixel * flip(fn1(pixel*3)))+(whitesq==0)*p3
   c = whitesq*p1*pixel + (whitesq==0)*p2:
   z=sin(z+z)*pi
-  z=z*z+c 
+  z=z*z+c
   |z|<4
   ;SOURCE: phc.frm
 }
@@ -6526,8 +6526,8 @@ BJ-SG-3-02-a {; Modified Sylvie Gallet [101324,3444], 1996
 BJ-SG-3-03-g {; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
+  x1 = x - p1*fn1(x*x+p2*fn2(y))
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
   z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: sg-bc-bj.frm
@@ -6538,9 +6538,9 @@ BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
    ; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: 96msg.frm
 }
@@ -6549,9 +6549,9 @@ BJ-SG-3-03-gb {; Brian E. Jones [102702,2213]
 BJ-SG-3-03-gd {; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
-  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0) + c * whitesq 
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = fn3(x1+flip(y1))  
+  x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0) + c * whitesq
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = fn3(x1+flip(y1))
   |z| <= 4
   ;SOURCE: bj-phc02.frm
 }
@@ -6561,8 +6561,8 @@ BJ-SG-3-03-gda {; Modified Sylvie Gallet [101324,3444], 1996
   z = pixel, c = sin(conj(-0.81256,-0.1295)) :
   x = real(z), y = imag(z)
   x1 = x - p1*fn1(x*x+p2*fn2(y)) * fn3((whitesq == 0) + (c/(x+y)) * whitesq)
-  y1 = y - p1*fn1(y*y+p2*fn2(x)) 
-  z = x1+flip(y1)  
+  y1 = y - p1*fn1(y*y+p2*fn2(x))
+  z = x1+flip(y1)
   |z| <= 4
   ;SOURCE: bj-phc02.frm
 }
@@ -6584,14 +6584,14 @@ BJ-SG-5-07-a {; Modified Gallet 5-07
   z = pixel, x = z*(0,1), y = (whitesq == 0) + (z*(0,-1)) * whitesq:
   hx = p1 * fn1(x), hy = p1*fn2(y)
   x = x + hy, y = y + hx
-  z = x + flip(y) 
+  z = x + flip(y)
   (|hx|+|hy|) <= p2
   ;SOURCE: 96msg.frm
 }
 
 
 BJ-SG-5-07-c {; Modified Gallet 5-07
-              ; Sylvie Gallet [101324,3444], 1996 
+              ; Sylvie Gallet [101324,3444], 1996
   z = pixel, x = fn3(z*(0,1)), y = fn4(z*(0,-1)) :
   hx = p1*fn1(x), hy = p1*fn2(y)
   x = x + hy, y = y + hx
@@ -6620,7 +6620,7 @@ BJ-SG-8-1205b {; Sylvie Gallet [101324,3444], Mar 1997
 BJ-SG-G-1-a {; Modified Sylvie Gallet [101324,3444], 1996
    ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
   c = z = pixel
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z)
   z3 = c3 = fn3(3.375*z), z4 = c4 = fn4(5.0625*z)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6635,13 +6635,13 @@ BJ-SG-G-1-a {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-d {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Edited for Fractint v. 20 by George Martin 10/98
   c = z = pixel
   c1=sin(conj(-0.81256,-0.1295))/p3
   c = fn1(c1)
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
   z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6656,13 +6656,13 @@ BJ-SG-G-1-d {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-e {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Edited for Fractint v. 20 by George Martin 10/98
-  c = z = pixel 
+  c = z = pixel
   c1=sin(conj(-0.81256,-0.1295))/p3
   c = fn1(c1)
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
   z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6677,13 +6677,13 @@ BJ-SG-G-1-e {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-f {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Edited for Fractint v. 20 by George Martin 10/98
   c = z = pixel
   c1=sin(conj(-0.81256,-0.1295))/p3
   c = fn1(c1)
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
   z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6698,18 +6698,18 @@ BJ-SG-G-1-f {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g020 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
-  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   z5 = c5 = z*z*z, z6 = c6 = z*z*z*z*z*z*z*z*z
-  l1 = real(p1), l2 = imag(p1) 
-  l3 = real(p2), l4 = imag(p2) 
+  l1 = real(p1), l2 = imag(p1)
+  l3 = real(p2), l4 = imag(p2)
   l5 = real(p3), l6 = imag(p3)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  t3 = (iter==l3), t4 = (iter==l4) 
+  t1 = (iter==l1), t2 = (iter==l2)
+  t3 = (iter==l3), t4 = (iter==l4)
   t5 = (iter==l5), t6 = (iter==l6)
   z=z*(1-(t1||t2||t3||t4))+z1*t1+z2*t2+z3*t3+z4*t4+fn1(z5*t5)+fn3(z6*t6)
   c=c*(1-(t1||t2||t3||t4))+c1*t1+c2*t2+c3*t3+c4*t4+fn2(c5*t5)+fn4(c6*t6)
@@ -6721,18 +6721,18 @@ BJ-SG-G-1-g020 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g021 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel, c0=(0.08638,-0.4922)
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
-  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   z5 = c5 = z*z*z, z6 = c6 = fn1(z1*z2*z3*z4*z5)
-  l1 = real(p1), l2 = imag(p1) 
-  l3 = real(p2), l4 = imag(p2) 
+  l1 = real(p1), l2 = imag(p1)
+  l3 = real(p2), l4 = imag(p2)
   l5 = real(p3), l6 = imag(p3)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  t3 = (iter==l3), t4 = (iter==l4) 
+  t1 = (iter==l1), t2 = (iter==l2)
+  t3 = (iter==l3), t4 = (iter==l4)
   t5 = (iter==l5), t6 = (iter==l6)
   z = fn2(z*(1-(t1||t2||t3||t4))+z1*t1+z2*t2+z3*t3+z4*t4+z5*t5+z6*t6)
   c = fn3(c*(1-(t1||t2||t3||t4))+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5+c6*t6)
@@ -6744,17 +6744,17 @@ BJ-SG-G-1-g021 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g023 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel, c0=(0.08638,-0.4922)
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z) 
-  z3 = c3 = fn3(3.375*z), z4 = c4 = fn4(5.0625*z) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z)
+  z3 = c3 = fn3(3.375*z), z4 = c4 = fn4(5.0625*z)
   z5 = c5 = z*z*z, z6 = c6 = z1*z2*z3*z4*z5
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   l5 = real(p3), l6 = imag(p3)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  t3 = (iter==l3), t4 = (iter==l4) 
+  t1 = (iter==l1), t2 = (iter==l2)
+  t3 = (iter==l3), t4 = (iter==l4)
   t5 = (iter==l5), t6 = (iter==l6)
   z = z*(1-(t1||t2||t3||t4))+z1*t1+z2*t2+z3*t3+z4*t4+z5*t5+z6*t6
   c = c*(1-(t1||t2||t3||t4))+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5+c6*t6
@@ -6766,18 +6766,18 @@ BJ-SG-G-1-g023 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g024 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel, c0=(0.08638,-0.4922)
-  z1 = c1 = 1.5*z, z2 = c2 = fn1(2.25*z) 
-  z3 = c3 = fn2(3.375*z), z4 = c4 = fn3(5.0625*z) 
+  z1 = c1 = 1.5*z, z2 = c2 = fn1(2.25*z)
+  z3 = c3 = fn2(3.375*z), z4 = c4 = fn3(5.0625*z)
   z5 = c5 = fn4(7.0268*z), z6 = c6 = z1*z2*z3*z4*z5
-  l1 = real(p1), l2 = imag(p1) 
-  l3 = real(p2), l4 = imag(p2) 
+  l1 = real(p1), l2 = imag(p1)
+  l3 = real(p2), l4 = imag(p2)
   l5 = real(p3), l6 = imag(p3)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  t3 = (iter==l3), t4 = (iter==l4) 
+  t1 = (iter==l1), t2 = (iter==l2)
+  t3 = (iter==l3), t4 = (iter==l4)
   t5 = (iter==l5), t6 = (iter==l6)
   z = z*(1-(t1||t2||t3||t4))+z1*t1+z2*t2+z3*t3+z4*t4+z5*t5+z6*t6
   c = c*(1-(t1||t2||t3||t4))+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5+c6*t6
@@ -6789,10 +6789,10 @@ BJ-SG-G-1-g024 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g028 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.0,1.0)
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z)
   z3 = c3 = fn3(3.375*z), z4 = c4 = fn4(z*c*z)*pixel
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6807,10 +6807,10 @@ BJ-SG-G-1-g028 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g029 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.0,1.0)
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z*c*z3)*pixel
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6825,10 +6825,10 @@ BJ-SG-G-1-g029 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g030 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*pixel
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6843,10 +6843,10 @@ BJ-SG-G-1-g030 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g031 {; Modified  Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6861,10 +6861,10 @@ BJ-SG-G-1-g031 {; Modified  Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g032 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = (3*pixel)-conj(0.001/pixel-flip(0.01/pixel))+1/pixel
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*pixel
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6879,10 +6879,10 @@ BJ-SG-G-1-g032 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g033 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   z=conj(sin(1/pixel-3.594)), c=conj((1/pixel)*(-3.9764,-0.1824))
-  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6897,10 +6897,10 @@ BJ-SG-G-1-g033 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g034 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z*z*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5*z*z*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6915,10 +6915,10 @@ BJ-SG-G-1-g034 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g035 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z*z), z2 = c2 = fn2(2.25*z1*z) 
+  z1 = c1 = fn1(1.5*z*z), z2 = c2 = fn2(2.25*z1*z)
   z3 = c3 = fn3(3.375*z2*z), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16 , iter = 0 :
@@ -6933,10 +6933,10 @@ BJ-SG-G-1-g035 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g038 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z*z), z2 = c2 = fn2(2.25*z1*z*z*z) 
+  z1 = c1 = fn1(1.5*z*z), z2 = c2 = fn2(2.25*z1*z*z*z)
   z3 = c3 = fn3(3.375*z2*z*z*z*z), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6951,11 +6951,11 @@ BJ-SG-G-1-g038 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g047 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z/z/z), z2 = c2 = fn2(sqrt(2.25*z1)) 
-  z3 = c3 = fn3(conj(3.375*z2))*(1/pixel) 
+  z1 = c1 = fn1(1.5*z/z/z), z2 = c2 = fn2(sqrt(2.25*z1))
+  z3 = c3 = fn3(conj(3.375*z2))*(1/pixel)
   z4 = c4 = fn4(z1*c2*z3)*((0.1,1.0)/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6970,11 +6970,11 @@ BJ-SG-G-1-g047 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g051 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
   z1 = c1 = fn1(1.5*z*z*z*z), z2 = c2 = fn2(sqrt(2.25*z1))
-  z3 = c3 = fn3(conj(3.375*z2))*(1/pixel) 
+  z3 = c3 = fn3(conj(3.375*z2))*(1/pixel)
   z4 = c4 = fn4(conj(sin(z1*c2*z3)*(1/pixel)))
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -6989,10 +6989,10 @@ BJ-SG-G-1-g051 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g052 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(z*z*z), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(z*z*z), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z1*c2*z3)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -7007,10 +7007,10 @@ BJ-SG-G-1-g052 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g053 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5/(z*z*z)), z2 = c2 = fn2(2.25*z1) 
+  z1 = c1 = fn1(1.5/(z*z*z)), z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = fn4(z*z*z)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -7025,7 +7025,7 @@ BJ-SG-G-1-g053 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g060 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = sqr(conj(0.75*(pixel)))
   z1 = c1 = fn1(1.5/(z*z*z*z))/p3, z2 = c2 = fn2(2.25*z1*z*z)
@@ -7043,7 +7043,7 @@ BJ-SG-G-1-g060 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g062 {;Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = sqr(conj(0.75*(pixel*pixel)))*(0.1,1.0)
   z1 = c1 = fn1(1.5/(z*z*z*z*z*z*z*z))/p3, z2 = c2 = fn2(2.25*z1*z*z)
@@ -7061,10 +7061,10 @@ BJ-SG-G-1-g062 {;Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g067 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
-  c = z = fn4((((0.3,0.6)+pixel)/(0.20/-pixel))*(0.1,1.0)) 
-  z1 = c1 = fn1(conj(sin(0.0742,-0.0391)))*(1.5*z) 
+  c = z = fn4((((0.3,0.6)+pixel)/(0.20/-pixel))*(0.1,1.0))
+  z1 = c1 = fn1(conj(sin(0.0742,-0.0391)))*(1.5*z)
   z2 = c2 = fn2(2.25*z1)
   z3 = c3 = fn3(3.375*z2), z4 = c4 = (z*z*z)*(1/pixel)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
@@ -7080,10 +7080,10 @@ BJ-SG-G-1-g067 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g069 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = fn1(1.5*z)*(0.1,1.0), z2 = c2 = fn2(2.25*z1)*(0.1,1.0) 
+  z1 = c1 = fn1(1.5*z)*(0.1,1.0), z2 = c2 = fn2(2.25*z1)*(0.1,1.0)
   z3 = c3 = fn3(3.375*z2)*(0.1,1.0), z4 = c4 = fn4(z1*c2*z3)*pixel
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -7098,19 +7098,19 @@ BJ-SG-G-1-g069 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g070 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
   c = z = pixel*(0.1,1.0)
-  z1 = c1 = 1.5*z, z2 = c2 = fn1(fn3(2.25*z1)) 
-  z3 = c3 = 3.375*z2, z4 = c4 = fn2(fn4(5.0625*z3))^z*z*z  
+  z1 = c1 = 1.5*z, z2 = c2 = fn1(fn3(2.25*z1))
+  z3 = c3 = 3.375*z2, z4 = c4 = fn2(fn4(5.0625*z3))^z*z*z
   z5 = c5 = z*z*z, z6 = c6 = z*z*z*z*z*z*z*z*z
-  l1 = real(p1), l2 = imag(p1) 
-  l3 = real(p2), l4 = imag(p2)  
+  l1 = real(p1), l2 = imag(p1)
+  l3 = real(p2), l4 = imag(p2)
   l5 = real(p3), l6 = imag(p3)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2) 
-  t3 = (iter==l3), t4 = (iter==l4) 
-  t5 = (iter==l5), t6 = (iter==l6) 
+  t1 = (iter==l1), t2 = (iter==l2)
+  t3 = (iter==l3), t4 = (iter==l4)
+  t5 = (iter==l5), t6 = (iter==l6)
   z = z*(1-(t1||t2||t3||t4||t5||t6))+z1*t1+z2*t2+z3*t3+z4*t4+z5*t5+z6*t6
   c = c*(1-(t1||t2||t3||t4||t5||t6))+c1*t1+c2*t2+c3*t3+c4*t4+c5*t5+c6*t6
   iter = iter+1
@@ -7121,21 +7121,21 @@ BJ-SG-G-1-g070 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g071 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Added variable "newpixel". G. Martin, 6/27/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-   ; Borrowed, not stolen from Bob Carr   
-  m=conj(0.0130/newpixel)+flip(0.0020/newpixel)+tanh(0.0010/newpixel) 
-  z=(newpixel+(newpixel^2.18)+m^6)-0.5                                
-  c=cabs(sqr(2*(newpixel)-m))                                      
-  z1 = c1 = 1.5*z, z2 = c2 = fn1(2.25*z1) 
-  z3 = c3 = fn4(3.375*z2), z4 = c4 = fn2(5.0625*z3)^fn3(z*z*z) 
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2) 
+   ; Borrowed, not stolen from Bob Carr
+  m=conj(0.0130/newpixel)+flip(0.0020/newpixel)+tanh(0.0010/newpixel)
+  z=(newpixel+(newpixel^2.18)+m^6)-0.5
+  c=cabs(sqr(2*(newpixel)-m))
+  z1 = c1 = 1.5*z, z2 = c2 = fn1(2.25*z1)
+  z3 = c3 = fn4(3.375*z2), z4 = c4 = fn2(5.0625*z3)^fn3(z*z*z)
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
-  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4) 
-  z = z*(1-(t1||t2||t3||t4||t5||t6)) + z1*t1 + z2*t2 + z3*t3 + z4*t4 
-  c = c*(1-(t1||t2||t3||t4||t5||t6)) + c1*t1 + c2*t2 + c3*t3 + c4*t4 
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4||t5||t6)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4||t5||t6)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
   iter = iter+1
   z = z*z+c
   |z| <= bailout
@@ -7144,16 +7144,16 @@ BJ-SG-G-1-g071 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-g074 {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
-  c = z = pixel, lambda = (1.0,0.4), pix2 = pixel*4+0.8 
+  c = z = pixel, lambda = (1.0,0.4), pix2 = pixel*4+0.8
   compt = 0, limit = real(p1)
-  z1 = c1 = (1.5*z)+fn1((z-pix2)*test2 + pix2 / ((z*z+c-z2)*test1+z2)) 
-  z2 = c2 = 2.25*z 
-  z3 = c3 = fn2((z-pix2)*test2 + pix2 / ((z*z+c-z2)*test1+z2)) 
+  z1 = c1 = (1.5*z)+fn1((z-pix2)*test2 + pix2 / ((z*z+c-z2)*test1+z2))
+  z2 = c2 = 2.25*z
+  z3 = c3 = fn2((z-pix2)*test2 + pix2 / ((z*z+c-z2)*test1+z2))
   z4 = c4 = fn3((z-pix2)*test2 + pix2 / ((z*z+c-z2)*test1+z2))
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
-  bailout = 4096 - 4032*test1 
+  bailout = 4096 - 4032*test1
   iter = 0, pix2 = pixel*4+0.8, compt = 0, limit = real(p3) :
   t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
   test1 = (compt<limit), test2 = (compt!=limit)
@@ -7169,13 +7169,13 @@ BJ-SG-G-1-g074 {; Modified Sylvie Gallet [101324,3444], 1996
 
 
 BJ-SG-G-1-h {; Modified Sylvie Gallet [101324,3444], 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Edited for Fractint v. 20 by George Martin 10/98
   c = z = pixel
   c1=sin(conj(-0.81256,-0.1295))/p3
   c = fn1(c1)
-  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z 
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
   z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
   bailout = 16, iter = 0 :
@@ -7292,7 +7292,7 @@ BJ-SG-man-newt-dd {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = fn1(z*z)/(z*z*z), z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: msg-1.frm
@@ -7308,7 +7308,7 @@ BJ-SG-man-newt-ee {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z+c, z4 = fn1(z2*z2), z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7328,7 +7328,7 @@ BJ-SG-man-newt-gg {; Modified Sylvie Gallet [101324,3444], 1995
   y1 = y - p2*fn1(x*x+p2*fn2(x))
   z = x1+flip(y1)
   z2 = z*z+c, z4 = fn1(z2*z2), z1 = (z4*z-1)/(4*z4)
-  z = (z2)*test1 + (z-z1)*(1-test1) 
+  z = (z2)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7344,7 +7344,7 @@ BJ-SG-man-newt-h {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7360,7 +7360,7 @@ BJ-SG-man-newt-j {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7376,7 +7376,7 @@ BJ-SG-man-newt-k {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7392,7 +7392,7 @@ BJ-SG-man-newt-l {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: sg-bc-bj.frm
@@ -7408,7 +7408,7 @@ BJ-SG-man-newt-p {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: msg-1.frm
@@ -7424,7 +7424,7 @@ BJ-SG-MaNewt-001 {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bejones.frm
@@ -7440,7 +7440,7 @@ BJ-SG-MaNewt-014 {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 96msg.frm
@@ -7456,7 +7456,7 @@ BJ-SG-MaNewt-024 {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bejones.frm
@@ -7464,7 +7464,7 @@ BJ-SG-MaNewt-024 {; Modified Sylvie Gallet [101324,3444], 1995
 
 
 BJ-SG-MaNewt-026 {; Modified Sylvie Gallet [101324,3444], 1995
-                  ; Unmatched parentheses error corrected by George 
+                  ; Unmatched parentheses error corrected by George
                   ; Martin, 5/4/98
   z = pixel * fn1(rad/p2), c = z, iter = 1
   rad = 3.1, center = (1.0,0.1)
@@ -7474,7 +7474,7 @@ BJ-SG-MaNewt-026 {; Modified Sylvie Gallet [101324,3444], 1995
   test1 = (iter<limit), test2=(iter!=limit)
   z = (z-zn)*test2 + zn
   z2 = z*z, z4 = z2*z2, z1 = (z4*z-1)/(4*z4)
-  z = (z2+c)*test1 + (z-z1)*(1-test1) 
+  z = (z2+c)*test1 + (z-z1)*(1-test1)
   iter = iter+1
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: bejones.frm
@@ -7598,7 +7598,7 @@ BJ-SG8-1404a{; Modified Sylvie Gallet frm by Brian E. Jones
    z = 0, c = zn = pixel, zmin = p1, k = flip(2*pi/zmin):
    zn = zn*zn + c, znc = cabs(real(zn))
    IF (znc < zmin)
-     zmin = znc, z = exp(znc*k) 
+     zmin = znc, z = exp(znc*k)
    ENDIF
    znc <= 4
   ;SOURCE: bj-sg8.frm
@@ -7638,7 +7638,7 @@ BJ-Zexpe-004e {
 
 BJ-Zexpe-008 {
   s = fn1(exp(1.,0.)*(p1*p2)), z = pixel:
-  z = z ^ s + pixel 
+  z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: bej0015.frm
 }
@@ -7646,7 +7646,7 @@ BJ-Zexpe-008 {
 
 BJ-Zexpe-009 {
   s = fn1(exp(1.,0.)*fn2(p1*p2)), z = pixel:
-  z = z ^ s + pixel 
+  z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: bej0015.frm
 }
@@ -7654,7 +7654,7 @@ BJ-Zexpe-009 {
 
 BJ-Zexpe-010 {
   s = exp(p1)^fn1(p2), z = pixel:
-  z = z ^ s + pixel 
+  z = z ^ s + pixel
   |z| <= 100
   ;SOURCE: bej0015.frm
 }
@@ -7664,7 +7664,7 @@ BJ-Zexpe-016 {
   z = fn1(pixel), s = (exp(1.,0.)*fn2(p1*p2)), Root = 1:
   z3 = ((z^ s + pixel)*z*z)
   z4 = z3 * z
-  z = (3 * z4 + Root) / (4 * z3) 
+  z = (3 * z4 + Root) / (4 * z3)
   .004 <= |z4 - Root|
   ;SOURCE: bej0015.frm
 }
@@ -7674,7 +7674,7 @@ BJ-Zexpe-018 {
   z = pixel, s = (exp(1.,0.)*fn2(p1*p2)), Root = 1:
   z3 = fn1(z*z)^ s + pixel
   z4 = z3 * z * z
-  z5 = (3 * z4 + Root) / (4 * z3) 
+  z5 = (3 * z4 + Root) / (4 * z3)
   z = z*z + pixel
   .004 <= |z| != |z4 - Root|
   ;SOURCE: bej0015.frm
@@ -7747,11 +7747,11 @@ blossom {; Giuseppe Zito
   d3 = 0.926185
   d8 = 0.144419
   d16 = 0.617725
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /y
   s0 = s0 +x
@@ -7763,9 +7763,9 @@ blossom {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 -x
   s0 = s0 -d16
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -7776,7 +7776,7 @@ bmandala {; Giuseppe Zito
   d0 = -0.061291
   d1 = 0.06278
   d4 = -0.589975
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -y
@@ -7784,16 +7784,16 @@ bmandala {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 -x
   s0 = s0 -c9
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s0 = s0 -d4
   s1 = x
   s0 = s0 *s1
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -7935,7 +7935,7 @@ bof60_man {; Kerry Mitchell 04feb98
   zc=0, c=pixel, iter=1, r=|zc|
   maxr=real(p1), minr=maxr:
   iter=iter+1, zc=sqr(zc)+c, r=|zc|
-; 
+;
 ;       check to see if iterate is closer to origin
 ;         if so, remember this minimum distance
 ;
@@ -7975,7 +7975,7 @@ bof6162_jul {; Kerry Mitchell 04feb98
   zc=pixel, c=p1, iter=1, r=|zc|, maxr=real(p2)
   minr=maxr, scale61=imag(p2), weighttot=real(p3)+imag(p3)
   weight61=real(p3)/weighttot, weight62=imag(p3)/weighttot:
-; 
+;
 ;       check to see if iterate is closer to origin
 ;         if so, remember this iterate & iteration count
 ;
@@ -8275,10 +8275,10 @@ bof62_man {; Kerry Mitchell 04feb98
 
 
 BOFMaps61-65 {; A variation on Newton's method
-              ; Use 0/-0.5 for P1, and Floating Point to 
+              ; Use 0/-0.5 for P1, and Floating Point to
               ; create the fractals used for
-              ; maps 61 through 65, on pages 90 and 91, 
-              ; in "The Beauty of Fractals".             
+              ; maps 61 through 65, on pages 90 and 91,
+              ; in "The Beauty of Fractals".
   z=Pixel:
   z2=z*z
   z3=z*z*z
@@ -8290,10 +8290,10 @@ BOFMaps61-65 {; A variation on Newton's method
 
 
 BOFMaps75-76 {; A variation on Newton's method
-              ; Use 0/0.25 for P1, and Floating Point to 
+              ; Use 0/0.25 for P1, and Floating Point to
               ; create the fractals used for
-              ; maps 75 and 76, on pages 114 and 115, 
-              ; in "The Beauty of Fractals". 
+              ; maps 75 and 76, on pages 114 and 115,
+              ; in "The Beauty of Fractals".
   z=Pixel:
   z2=z*z
   z3=z*z*z
@@ -8304,10 +8304,10 @@ BOFMaps75-76 {; A variation on Newton's method
 
 
 BOFMaps77-78 {; Another variation on Newton's method
-              ; Use 0/0 for P1, and Floating Point to 
+              ; Use 0/0 for P1, and Floating Point to
               ; create the fractals used for
-              ; maps 77 and 78, on pages 116 nad 117, 
-              ; in "The Beauty of Fractals"       
+              ; maps 77 and 78, on pages 116 nad 117,
+              ; in "The Beauty of Fractals"
   z=Pixel:
   z2=z*z
   z3=z*z*z
@@ -8327,7 +8327,7 @@ bok001 (XAXIS) {
 }
 
 
-bok002 (XAXIS) { 
+bok002 (XAXIS) {
   z = c = pixel
   x = 1:
   z = sqr(z) - c - (x >= p1)
@@ -8337,7 +8337,7 @@ bok002 (XAXIS) {
 }
 
 
-bok003 (XAXIS) { 
+bok003 (XAXIS) {
   z = c = pixel
   x = 1:
   z = sqr(z) + c + fn1(x*z*(x >= p1))
@@ -8377,7 +8377,7 @@ bok005 (XAXIS) {
 }
 
 
-bok006 (XAXIS) { 
+bok006 (XAXIS) {
   z = c = pixel
   x = 1:
   z = sqr(z) + c - fn1(z) * (x >= p1)
@@ -8426,7 +8426,7 @@ bok011 (XAXIS) {
 }
 
 
-boksleym1 (XAXIS) {; Becomes formula barnsleym1 for fn1=fn2=identity 
+boksleym1 (XAXIS) {; Becomes formula barnsleym1 for fn1=fn2=identity
   z = c = pixel:
   x = real(z)
   z = c*fn1(z-1)*(x>=0) + c*fn2(z+1)*(x<0)
@@ -8435,7 +8435,7 @@ boksleym1 (XAXIS) {; Becomes formula barnsleym1 for fn1=fn2=identity
 }
 
 
-boksleym2 {; Becomes formula barnsleym2 for fn1=fn2=identity 
+boksleym2 {; Becomes formula barnsleym2 for fn1=fn2=identity
   z = c = pixel:
   x = real(z)*imag(c) + real(c)*imag(z)
   z = c*fn1(z-1)*(x>=0) + c*fn2(z+1)*(x<0)
@@ -8444,14 +8444,14 @@ boksleym2 {; Becomes formula barnsleym2 for fn1=fn2=identity
 }
 
 
-boksleym3 (XAXIS) {; Becomes formula barnsleym3 for fn1=fn2=identity 
+boksleym3 (XAXIS) {; Becomes formula barnsleym3 for fn1=fn2=identity
   z = c = pixel:
   x = real(z)
   z1 = sqr(real(z)) - sqr(imag(z)) - 1
   z2 = (0,1) * 2 * real(z) * imag(z)
   z3 = real(c) * real(z)
   z4 = (0,1) * imag(c) * real(z)
-  z = fn1(z1 + z2) * (x > 0) + fn2(z1 + z3 + z2 + z4) * (x <= 0)     
+  z = fn1(z1 + z2) * (x > 0) + fn2(z1 + z3 + z2 + z4) * (x <= 0)
   |z| <= 4+p2
   ;SOURCE: bokonon.frm
 }
@@ -8484,10 +8484,10 @@ boro {; Giuseppe Zito
   d1 = 0.92069
   d5 = 0.393206
   d10 = 0.997747
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 /d1
   s0 = s0 /x
@@ -8499,9 +8499,9 @@ boro {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 /x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -8510,18 +8510,18 @@ bpattern {; Giuseppe Zito
   z = pixel
   c0 = 0.479298
   c8 = -0.822801
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 /y
   s0 = s0 /y
   s0 = s0 -y
   s0 = s0 +c8
-  newx = s0 
+  newx = s0
   s0 = x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -8530,7 +8530,7 @@ Brahmin {
   z = pixel:
   z = z + p1
   r = tan(1/z)^fn1(e)
-  z = r * fn2(z) 
+  z = r * fn2(z)
   |z| <= 4
   ;SOURCE: shakti.frm
 }
@@ -8539,7 +8539,7 @@ Brahmin {
 brbl {; Formula uses PHC to cast "soft" shadow
       ; October 1996 by Jan Maarten van der Valk
       ; 'periodicity=0' and 'passes=1' recommended
-      ; Tanks to Sylvie Gallet, Paul Carlson, Jan M. v.d. Valk 
+      ; Tanks to Sylvie Gallet, Paul Carlson, Jan M. v.d. Valk
       ; (c) guy.marson@mnhn.lu
       ; Added variable "newpixel". G. Martin 6/27/99
   x=real(scrnpix)/real(scrnmax), y=(imag(scrnmax)-imag(scrnpix))/(rea\
@@ -8929,7 +8929,7 @@ bsh18 {; by Kovari Janos
 bsh19 {; by Kovari Janos
        ; reconstruction of an old formula
   z = pixel:
-  z = fn1(fn2(fn3(z))) + fn1(fn3(fn2(z)))\ 
+  z = fn1(fn2(fn3(z))) + fn1(fn3(fn2(z)))\
     + fn2(fn1(fn3(z))) + fn2(fn3(fn1(z)))\
     + fn3(fn1(fn2(z))) + fn3(fn2(fn1(z)))
   |z| <= p1
@@ -8948,7 +8948,7 @@ bsh20 {; by Kovari Janos
 
 bshng01 {; by Kovari Janos
   z = pixel, c = pixel:
-  c = z - (c+p1)^(p2) 
+  c = z - (c+p1)^(p2)
   z = (z + c)^2 + pixel
   |z| <=4
   ;SOURCE: bshng.frm
@@ -9065,7 +9065,7 @@ bshng102 {; by Kovari Janos
   k = p1/1.333333333
   pixel2 = real(pixel)*k + flip(imag(pixel)*k) + p3
   IF ((sqr(real(pixel)) + sqr(imag(pixel))) <= sqr(real(p1)))
-    c = pixel2/k/k 
+    c = pixel2/k/k
     z = pixel2/k/k
   ELSE
     c = p2
@@ -9087,7 +9087,7 @@ bshng103 {; by Kovari Janos
 
 
 bshng104 {; by Kovari Janos
-  c = real(pixel) + flip(real(pixel))\ 
+  c = real(pixel) + flip(real(pixel))\
         - imag(pixel) + flip(fn1(imag(pixel)))
   z = pixel:
   z = z^2 + c
@@ -9154,7 +9154,7 @@ bshng12 {; by Kovari Janos
 
 bshng13 {; by Kovari Janos
   z = pixel:
-  z = (z + pixel)^p1 
+  z = (z + pixel)^p1
   |z| >= p2
   ;SOURCE: bshng.frm
 }
@@ -9265,8 +9265,8 @@ bshng25 {; by Kovari Janos
   z = zm = zj = pixel:
   zm = zm*zm + pixel
   zj = zj*zj + p1
-  IF (zm >= 0) 
-    z = zj 
+  IF (zm >= 0)
+    z = zj
   ELSE
     z = zm
   ENDIF
@@ -9371,7 +9371,7 @@ bshng35 {; by Kovari Janos
   i = i + 1
   IF ((zm < p2) && (i > 10))
     z = zj
-  ELSE 
+  ELSE
     z = zm
   ENDIF
   |z| <= p3
@@ -9525,15 +9525,15 @@ bshng48 {; by Kovari Janos
          ; Edited by George Martin to correct typos
   z1 = z2 = z = pixel, i1 = i2 = 0:
   IF (|z1| >= 0)
-    i1 = 1  
+    i1 = 1
   ELSE
     z1 = p1/(z1 + 1/z1^2) - p2/(1/z1^2) + pixel
-  ENDIF  
+  ENDIF
   IF (|z2| >= 4)
     i2 = 1
-  ELSE 
+  ELSE
     z2 = z2^2 + p3
-  ENDIF  
+  ENDIF
   z = z2*whitesq + z1*(1-whitesq)
   (i1 == 1) && (i2 == 1)
   ;SOURCE: bshng.frm
@@ -9545,7 +9545,7 @@ bshng49 {; by Kovari Janos
   zm = (zm^2)/i1 + pixel
   zj = (zj^2)/i2 + p1
   i1 = i1 + real(p2)
-  i2 = i2 + imag(p2) 
+  i2 = i2 + imag(p2)
   z = zm + zj
   |z| <= p3
   ;SOURCE: bshng.frm
@@ -9599,7 +9599,7 @@ bshng52b {; by Kovari Janos
 
 
 bshng53 (XAXIS) {; by Kovari Janos
-     ; Edited by George Martin to try to reach author's intent     
+     ; Edited by George Martin to try to reach author's intent
      ; The corrected line is shown by a comment
   z = pixel, c1 = c2 = 0:
   c1 = (real(pixel^2))/real(p1)
@@ -9735,7 +9735,7 @@ bshng66 (YAXIS) {; by Kovari Janos
 
 
 bshng67 {; by Kovari Janos
-  p = pixel/fn1(pixel), q = (pixel - p)/p, z = pixel:      
+  p = pixel/fn1(pixel), q = (pixel - p)/p, z = pixel:
   z = fn2(z) + q
   |z| <= p1
   ;SOURCE: bshng.frm
@@ -9760,7 +9760,7 @@ bshng69 {; by Kovari Janos
 
 bshng70 {; by Kovari Janos
   p = 1/pixel, q = fn1(pixel), c = p * q, z = pixel:
-  z = (z + c)*(z + p1) 
+  z = (z + c)*(z + p1)
   |z| <= p2
   ;SOURCE: bshng.frm
 }
@@ -9957,7 +9957,7 @@ bshng88 {; by Koavri Janos
 
 bshng89 {; by Kovari Janos
   z = pixel:
-  z = z^((abs(cabs(real(pixel))) + 1)/(abs(cabs(imag(pixel))) + 1))\ 
+  z = z^((abs(cabs(real(pixel))) + 1)/(abs(cabs(imag(pixel))) + 1))\
         + real(pixel)/imag(pixel)
   |z| <= p1
   ;SOURCE: bshng.frm
@@ -9976,7 +9976,7 @@ bshng91 {; by Kovari Janos
   z = pixel:
   zlast = z
   z = z^(real(p1))
-  z = z + abs(cabs(real(zlast/z + p2)))\ 
+  z = z + abs(cabs(real(zlast/z + p2)))\
         + flip(abs(cabs(real(z/zlast + p2))))
   |z| <= p3
   ;SOURCE: bshng.frm
@@ -10075,7 +10075,7 @@ bshng97-o {; by Kovari Janos
 bshng98 {; by Kovari Janos
   c = pixel
   c = fn1(pixel)*fn2(pixel)
-  IF (|c| > 1) 
+  IF (|c| > 1)
     k = c - p1
   ELSE
     k = c + p1
@@ -10147,7 +10147,7 @@ bubbleboth_jul {; Kerry Mitchell
   ENDIF
   iter > 0
 ;*******Kerry Mitchell's description of "bubble formulas"***********
-;              narrative copyright Kerry Mitchell, 1998 
+;              narrative copyright Kerry Mitchell, 1998
 ;  Applies to:
 ;     bubbleboth_jul (above)
 ;     bubbleboth_man
@@ -10314,7 +10314,7 @@ Bubbles_Julia_Mset {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-bubbles_la {; Formulas by Bob Carr and Paul Carlson 
+bubbles_la {; Formulas by Bob Carr and Paul Carlson
             ; combined and modified by Linda Allison
   z = c = pixel:
   z2 = c * (1 - z * z)/(1 + z * z)
@@ -10379,7 +10379,7 @@ bubblesGrav {; adapted from Paul Carlson
 
 
 BUG01 (XAXIS) {
-  z = 0: 
+  z = 0:
   z = pixel + z + p1
   z = z^z + fn1(z^5)
   ;SOURCE: damion.frm
@@ -10387,7 +10387,7 @@ BUG01 (XAXIS) {
 
 
 BUG02 (XAXIS) {
-  z = 0: 
+  z = 0:
   z = pixel + z + p1
   z = fn1(z) + z^z + c
   ;SOURCE: damion.frm
@@ -10406,7 +10406,7 @@ BUG03 (XAXIS) {
 BUG04 (XAXIS) {
   z = 0:
   z = pixel + z + p1
-  z = fn1(z ^ z) + z^5 
+  z = fn1(z ^ z) + z^5
   ;SOURCE: damion.frm
 }
 
@@ -10414,7 +10414,7 @@ BUG04 (XAXIS) {
 BUG05 (XYAXIS) {
   z = 0:
   z = sin(z) + cos(pixel) + c + p1
-  z = z ^ fn1(z) + z  
+  z = z ^ fn1(z) + z
   ;SOURCE: damion.frm
 }
 
@@ -10423,7 +10423,7 @@ BUG06 (XAXIS) {; replaced "pi" with "approxpi". G. Martin, 7/9/99
   z = 0:
   approxpi = 3.141592654
   z = z * z + sqr(sin(approxpi))
-  z = fn1(z) + z ^ z  
+  z = fn1(z) + z ^ z
   z = z + pixel
   ;SOURCE: damion.frm
 }
@@ -10436,14 +10436,14 @@ butter {; Giuseppe Zito
   d2 = 0.26837
   d4 = -0.24802
   d5 = -0.979016
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c1
   s0 = s0 *x
   s1 = y
   s0 = s0 -s1
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /y
   s0 = s0 -d2
@@ -10453,9 +10453,9 @@ butter {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 /y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 

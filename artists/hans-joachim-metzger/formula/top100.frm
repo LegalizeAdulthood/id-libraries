@@ -5,13 +5,13 @@
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Bjax {
   z=c=2/pixel:
   z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c
   ;SOURCE: fractint.frm
 }
- 
+
 CGNewtonSinExp (XAXIS) {
   z=pixel:
   z1=exp(z)
@@ -20,7 +20,7 @@ CGNewtonSinExp (XAXIS) {
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+
 dafrm21 {
   z = pixel:
   x = real(z), y = imag(z)
@@ -32,7 +32,7 @@ dafrm21 {
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 FractalFenderC (XAXIS_NOPARM) {; Spectacular!
     ; Modified for if..else logic 3/18/97 by Sylvie Gallet
    z = p1, x = |z| :
@@ -43,14 +43,14 @@ FractalFenderC (XAXIS_NOPARM) {; Spectacular!
    x <= 4
   ;SOURCE: fract196.frm
 }
- 
+
 Fzppfnpo {; Lee Skinner
   z = pixel, f = (pixel)^(pixel):
   z = fn1(z) + f
   |z| <= 50
   ;SOURCE: fractint.frm
 }
- 
+
 GopalsamyFn {
   z = pixel:
   x = real(z), y = imag(z)
@@ -62,7 +62,7 @@ GopalsamyFn {
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 Halley (xyaxis) {; Chris Green. Halley's formula applied to x^7-x=0.
    ; P1 real usually 1 to 1.5, P1 imag usually zero. Use floating point.
    ; Setting P1 to 1 creates the picture on page 277 of Pickover's book
@@ -74,7 +74,7 @@ Halley (xyaxis) {; Chris Green. Halley's formula applied to x^7-x=0.
   0.0001 <= |z7-z|
   ;SOURCE: fractint.frm
 }
- 
+
 inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    ; p1 = Parameter (default 0), real(p2) = Bailout (default 4)
    ; The next line sets test=4 if real(p2)<=0, else test=real(p2)
@@ -92,7 +92,7 @@ inandout02 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
   mz <= test
   ;SOURCE: fract196.frm
 }
- 
+
 inandout04 {; Modified for if..else logic 3/21/97 by Sylvie Gallet
     ; p1 = Parameter (default 1), real(p2) = Bailout (default 4)
     ; The next line sets k=default if p1=0, else k=p1
@@ -116,21 +116,21 @@ inandout04 {; Modified for if..else logic 3/21/97 by Sylvie Gallet
    mz <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Jm_19 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z)*pixel*fn2(fn3(z)+pixel)
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Jm_21 {; generalized Jm Collard-Richard type
   z=pixel, t=p1+4:
   z=fn1(z^pixel)*pixel
   |z|<=t
   ;SOURCE: fractint.frm
 }
- 
+
 Liar4 {; by Chuck Ebbert.
        ; X: X is as true as (p1+1) times Y
        ; Y: Y is as true as X is false
@@ -142,14 +142,14 @@ Liar4 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 OK-04 {; TRY FN2 = SQR, DIFFERENT FUNCTIONS FOR FN1
   z = 0, c = fn1(pixel):
   z = fn2(z) + c
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-35 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    z = pixel, k = 1 + p1, test = 10 + p2 :
    v = fn1(z), x = z*v, y = z/v
@@ -161,7 +161,7 @@ OK-35 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 OK-40 {; DISECTED OK-39
        ; (ASSUMING YOU USE OK-39 WITH FN1= IDENT & FN2 = SQR...)
   z = pixel, cx = fn1(real(pixel)), cy = fn2(imag(pixel)), k = 2 + p1:
@@ -174,7 +174,7 @@ OK-40 {; DISECTED OK-39
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-42 {; MUTATION OF FN + FN
   z = pixel, p1x = real(p1)+1, p1y = imag(p1)+1
   p2x = real(p2)+1, p2y = imag(p2)+1:
@@ -185,7 +185,7 @@ OK-42 {; MUTATION OF FN + FN
   |z| <= 20
   ;SOURCE: fractint.frm
 }
- 
+
 OK-43 {; DISSECTED SPIDER
    ; TO GENERATE "STANDARD" SPIDER, SET P1 = 0,0 & ALL FN = IDENT
   z = c = pixel, k = 2 + p1:
@@ -198,7 +198,7 @@ OK-43 {; DISSECTED SPIDER
   |z| <  (10 + p2)
   ;SOURCE: fractint.frm
 }
- 
+
 phoenix_m {; Mandelbrot style map of the Phoenix curves
   z=x=y=nx=ny=x1=y1=x2=y2=0:
   x2 = sqr(x), y2 = sqr(y)
@@ -208,7 +208,7 @@ phoenix_m {; Mandelbrot style map of the Phoenix curves
   |z| <= 4
   ;SOURCE: fractint.frm
 }
- 
+
 REB004M {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
@@ -222,7 +222,7 @@ REB004M {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 REB005G {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
@@ -236,7 +236,7 @@ REB005G {; Ron Barnett, 1993
   |z| <= 100
   ;SOURCE: fractint.frm
 }
- 
+
 Zeppo {; Mutation of 'Liar4'.
     ; Original formula by Chuck Ebbert [76306,1226]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -255,7 +255,7 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 F'M-SetInNewtonA (XAXIS) {; use float=yes
                           ; jon horner 100112,1700, 12 feb 93
   z = 0,  c = fn1(pixel),  cminusone = c-1:

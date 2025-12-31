@@ -4,4 +4,4 @@ NxZ (XAXIS) {
   |z|<=4
   ;SOURCE: fixrch.frm
 }
- 
+

@@ -5,37 +5,37 @@
   |z| <= 100
   ;SOURCE: frac_art.frm
 }
- 
+
 MandelbrotZC {; Jim Muth
   z=p3, c=pixel:
   z=(real(p1)*(z^imag(p1)+c))+(real(p2)*(c^imag(p2)+z))
   |z| <= 100
   ;SOURCE: 97msg.frm
 }
- 
+
 test {; Edited for Fractint v. 20 by George Martin, 10/98
-      ; The error in the formula as originally written rendered 
+      ; The error in the formula as originally written rendered
       ; it trivial. This is what the author intended.
   z=pixel, c=p1:
   z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / (16 * (z+c))
   |z| < 100
   ;SOURCE: tchebych.frm
 }
- 
-apflmatsch { 
+
+apflmatsch {
   z=pixel:
   z=sqr(z)+pixel
-  |z*fn1(p1*fn2(p2*pixel/|pixel|))| <= 4 
+  |z*fn1(p1*fn2(p2*pixel/|pixel|))| <= 4
   ;SOURCE: test.frm
 }
- 
+
 njutn-j {
   z=pixel:
   z=(z/imag(z)*z/real(z)*z*z*z+p1)
   |z|<=4
   ;SOURCE: test.frm
 }
- 
+
 spider {; Chuck Ebbert                       added 12 Jan 1993
         ; p1=initial perturbation of z
         ; bailout is real(p2) (default 4)
@@ -46,10 +46,10 @@ spider {; Chuck Ebbert                       added 12 Jan 1993
   |z| <= t
   ;SOURCE: builtn2.frm
 }
- 
+
 polar {; Kerry Mitchell 14nov98
        ;
-       ; Kerry Mitchell's explanation of his "Polar Curves" formulas 
+       ; Kerry Mitchell's explanation of his "Polar Curves" formulas
        ; is at the end of this formula
        ;
        ; draws polar curve r = cabs(a*fn1(b*theta))^n+r0
@@ -108,7 +108,7 @@ polar {; Kerry Mitchell 14nov98
     z=cos(t)+flip(sin(t))
   ENDIF
   done==0
-;*****Kerry Mitchell's explanation of his "Polar Curves" formulas****** 
+;*****Kerry Mitchell's explanation of his "Polar Curves" formulas******
 ;
 ;              copyright Kerry Mitchell 14nov98
 ;
@@ -183,7 +183,7 @@ polar {; Kerry Mitchell 14nov98
 ;*************************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 acc_man_mod {; Modified Sylvie Gallet formula
              ; Modified acceleration_man.frm (generalized by Les St Clair)
              ; use fn1=cabs, fn2=abs for default behaviour
@@ -199,17 +199,17 @@ acc_man_mod {; Modified Sylvie Gallet formula
   r < 4 && fn2(l - r) >= 0.001
   ;SOURCE: 97msg.frm
 }
- 
+
 9 {
   z=pixel:
   z=(pixel*imag(z)+z)*z/real(z)+p1*pixel
   |z|<=4
   ;SOURCE: test.frm
 }
- 
+
 Karts          { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Sun, 15 Feb 2004 04:04:22
-                 ; 
+                 ;
   z = fn1(pixel), chaw=fn2(pixel), ex=P1, iter=0, t=P2
   if(t==(0,0))
       t=|sqrt(0,2)|
@@ -254,4 +254,4 @@ Karts          { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   chaw=chaw/see +z
   |z| <= t
 }
- 
+

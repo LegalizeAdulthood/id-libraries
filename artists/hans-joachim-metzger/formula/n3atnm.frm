@@ -47,4 +47,4 @@ Newt3_Atan_Mset {; Original formula by Paul Carlson
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+

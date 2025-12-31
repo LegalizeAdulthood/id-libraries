@@ -6,7 +6,7 @@ multifrac44 {
   z = sqr(z)-x-y-w
   |z| > (x*y*w)
   }
- 
+
 multifrac44 {
   z = pixel:
   x = fn1(x)-y
@@ -15,4 +15,4 @@ multifrac44 {
   z = sqr(z)-x-y-w
   |z| > (x*y*w)
   }
- 
+

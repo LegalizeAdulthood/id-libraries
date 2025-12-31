@@ -18,7 +18,7 @@ C02-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+
 C05-13 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC04-C03
@@ -32,7 +32,7 @@ C05-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+
 C08-13 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC07-C06
@@ -46,7 +46,7 @@ C08-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+
 C10-13 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC09-C08
@@ -60,7 +60,7 @@ C10-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+
 H06-13 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2(xH(5)-5H(4))
@@ -75,7 +75,7 @@ H06-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+
 L08-13 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ((15-z)L(7)-7L(6))/8
@@ -88,4 +88,4 @@ L08-13 {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby13.frm
 }
- 
+

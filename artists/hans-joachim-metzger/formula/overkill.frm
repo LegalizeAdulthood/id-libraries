@@ -7,7 +7,7 @@ OK-26 {
   |z| <= k
   ;SOURCE: overkill.frm
 }
- 
+
 OK-42 {; MUTATION OF FN + FN
   z = pixel, p1x = real(p1)+1, p1y = imag(p1)+1
   p2x = real(p2)+1, p2y = imag(p2)+1:
@@ -18,21 +18,21 @@ OK-42 {; MUTATION OF FN + FN
   |z| <= 20
   ;SOURCE: fractint.frm
 }
- 
+
 OK-04 {; TRY FN2 = SQR, DIFFERENT FUNCTIONS FOR FN1
   z = 0, c = fn1(pixel):
   z = fn2(z) + c
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-21 {
   z = pixel, c = fn1(pixel):
   z = fn2(z) + c
   fn3(z) <= p1
   ;SOURCE: fractint.frm
 }
- 
+
 OK-34 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    z = pixel, c = fn1(pixel) * p1, test = 10 + p2 :
    x = abs(real(z)), y = abs(imag(z))
@@ -44,7 +44,7 @@ OK-34 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 OK-43 {; DISSECTED SPIDER
    ; TO GENERATE "STANDARD" SPIDER, SET P1 = 0,0 & ALL FN = IDENT
   z = c = pixel, k = 2 + p1:
@@ -57,7 +57,7 @@ OK-43 {; DISSECTED SPIDER
   |z| <  (10 + p2)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-01 {; TRY P1 REAL = 10000, FN1 = SQR
   z = 0, c = pixel:
   z = (c^z) + c
@@ -65,7 +65,7 @@ OK-01 {; TRY P1 REAL = 10000, FN1 = SQR
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-35 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    z = pixel, k = 1 + p1, test = 10 + p2 :
    v = fn1(z), x = z*v, y = z/v
@@ -77,7 +77,7 @@ OK-35 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 OK-08 {
   z = pixel, c = fn1(pixel):
   z = z^z / fn2(z)
@@ -85,7 +85,7 @@ OK-08 {
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-22 {
   z = v = pixel:
   v = fn1(v) * fn2(z)
@@ -93,7 +93,7 @@ OK-22 {
   |z| <= (5 + p1)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    z = y = x = pixel, k = 1 + p1, test = 5 + p2 :
    a = fn1(z)
@@ -106,7 +106,7 @@ OK-32 {; Modified for if..else logic 3/19/97 by Sylvie Gallet
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 OK-36 {; DISSECTED MANDELBROT
    ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
   z = pixel, cx = fn1(real(z)), cy = fn2(imag(z)), k = 2 + p1:
@@ -117,7 +117,7 @@ OK-36 {; DISSECTED MANDELBROT
   |z| <  (10 + p2)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-12 {; TRY FN1 = SQR, FN2 = SQR
   z = c = pixel:
   z = fn1(z) + c
@@ -125,7 +125,7 @@ OK-12 {; TRY FN1 = SQR, FN2 = SQR
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-02 {; TRY FN1 = COTAN
   z = c = pixel, k = 1 + p1:
   z = (c^z) + c
@@ -133,7 +133,7 @@ OK-02 {; TRY FN1 = COTAN
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-03 {; TRY P1 REAL = 500, FN1 = COS, FN2 = SQR
   z = c = pixel:
   z = fn1(z)/c
@@ -141,21 +141,21 @@ OK-03 {; TRY P1 REAL = 500, FN1 = COS, FN2 = SQR
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-05 {
   z = pixel, k = -2,2 + p1:
   z = (z^k + z) / k
   (1 + p2) <= |z|
   ;SOURCE: overkill.frm
 }
- 
+
 OK-06 {; TRY FN1 = SQR, FN2 = SQR
   z = c = pixel, d = fn1(pixel):
-  z = fn2(z / d) + c 
+  z = fn2(z / d) + c
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-07 {
   z = 0, c = pixel:
   z = c * (z + c)
@@ -163,7 +163,7 @@ OK-07 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-09 {
   z = c = pixel, d = fn1(pixel), k = 1 + p1:
   z = z^c * k
@@ -171,7 +171,7 @@ OK-09 {
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-10 {
   z = 0, c = pixel, k1 = 1 + p1, k2 = 1 + p2:
   z = (z * k1) + c
@@ -179,7 +179,7 @@ OK-10 {
   |z| <= (k2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-11 {; TRY FN1 = SQR, FN2 = SQR
   z = 0, v = pixel:
   z = fn1(v) + z
@@ -187,7 +187,7 @@ OK-11 {; TRY FN1 = SQR, FN2 = SQR
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-13 {; TRY FN1 = SQR, FN2 = SQR
   z = 0, c = fn1(pixel) :
   z = fn1(z) + c
@@ -195,7 +195,7 @@ OK-13 {; TRY FN1 = SQR, FN2 = SQR
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-14 {; FOUR FUNCTIONS TO PLAY WITH HERE.  GO CRAZY.
   z = 0, c = pixel :
   z = fn1(z+c) + c
@@ -205,7 +205,7 @@ OK-14 {; FOUR FUNCTIONS TO PLAY WITH HERE.  GO CRAZY.
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-15 {
   z = 0, v = pixel :
   z = fn1(v*z) + v
@@ -213,7 +213,7 @@ OK-15 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-16 {
   z = v = pixel :
   z = fn1(z)^v
@@ -221,7 +221,7 @@ OK-16 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-17 {
   z = c = pixel, r = real(pixel), i = imag(pixel):
   z = z^r + z^i + c
@@ -229,7 +229,7 @@ OK-17 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-18 {
   z = v = pixel:
   z = fn1(v) + real(z)
@@ -237,7 +237,7 @@ OK-18 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-19 {
   a = b = z = pixel:
   a = fn1(b) + fn2(z)
@@ -246,7 +246,7 @@ OK-19 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-20 {
   a = b = c = z = pixel:
   a = fn1(b) + c^z
@@ -255,21 +255,21 @@ OK-20 {
   |z| <= (5 + p1)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-23 {
   z = c = pixel, k = 1 + p1:
   z = k * fn1(z^z + c) + c/z
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-24 {; TRY P1 REAL = -2, FN1 = SQR, FN2 = RECIP
   z = 0, c = pixel, k = 1 + p1:
   z = fn2(fn1(z) + c) + (k * z)
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-25 {
   z = c = pixel, k = 1 + p1:
   a = (abs(z) > k)  * (fn1(z) + c)
@@ -278,7 +278,7 @@ OK-25 {
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-27 {
   z = pixel, c = fn1(pixel), k = 1 + p1:
   a = fn2(z)
@@ -288,7 +288,7 @@ OK-27 {
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-28 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   z = c = pixel, d = fn1(pixel), k = p1:
   a = fn2(z)
@@ -298,7 +298,7 @@ OK-28 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-29 {
   z = v = pixel, k = 1 + p1:
   oldz = z
@@ -307,7 +307,7 @@ OK-29 {
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-30 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   z = v = pixel, k = .5 + p1:
   a = fn1(z)
@@ -318,7 +318,7 @@ OK-30 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-31 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   z = v = pixel, k = .1 + p1:
   a = fn1(z)
@@ -329,7 +329,7 @@ OK-31 {; Replaced variable "e" with "ee", 5/7/99. G. Martin
   |z| <= (5 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-33 {
   z = y = x = pixel, k = 1 + p1:
   a = (|y| <= k) * fn1(y)
@@ -340,7 +340,7 @@ OK-33 {
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-37 {; ANOTHER DISECTED MANDELBROT
    ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
   z = pixel, c = fn1(fn2(z)), cx = real(c), cy = imag(c), k = 2 + p1:
@@ -351,9 +351,9 @@ OK-37 {; ANOTHER DISECTED MANDELBROT
   |z| <  (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-38 {; DISSECTED CUBIC MANDELBROT
-       ; TO GENERATE "STANDARD" CUBIC MANDELBROT, 
+       ; TO GENERATE "STANDARD" CUBIC MANDELBROT,
        ; SET P1 = 0,0 & ALL FN = IDENT
   z = pixel,  cx = fn1(real(pixel)), cy = fn2(imag(pixel)), k = 3 + p1:
   zx = real(z), zy = imag(z)
@@ -363,14 +363,14 @@ OK-38 {; DISSECTED CUBIC MANDELBROT
   |z| <  (4 + p2)
   ;SOURCE: fractint.frm
 }
- 
+
 OK-39 {; JUST AN EXPERIMENT
   z = pixel, c = fn1(z), k = p1:
   z = fn2(z*c + k) + c
   |z| <= (20 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-40 {; DISECTED OK-39
        ; (ASSUMING YOU USE OK-39 WITH FN1= IDENT & FN2 = SQR...)
   z = pixel, cx = fn1(real(pixel)), cy = fn2(imag(pixel)), k = 2 + p1:
@@ -383,7 +383,7 @@ OK-40 {; DISECTED OK-39
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-41 {; DISECTED MANDELLAMBDA
   z = 0.5 + p1, lx = fn1(real(pixel)), ly = fn2(imag(pixel)):
   zx = real(z), zy = imag(z)
@@ -393,7 +393,7 @@ OK-41 {; DISECTED MANDELLAMBDA
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-44 {; DISECTED MANOWAR
    ; TO GENERATE "STANDARD" MANOWAR, SET P1 = 0,0 & ALL FN = IDENT
   z = pixel, z1x = cx = real(pixel), z1y = cy = imag(pixel)
@@ -406,7 +406,7 @@ OK-44 {; DISECTED MANOWAR
   |z| <= (10 + p2)
   ;SOURCE: overkill.frm
 }
- 
+
 OK-45 {; ANOTHER LITTLE QUICKY
   z = pixel, c = fn1(pixel), ka = 1 + p1, kb = 1 + p2:
   a = fn2(z), b = fn3(z)
@@ -414,4 +414,4 @@ OK-45 {; ANOTHER LITTLE QUICKY
   |z| <= 10
   ;SOURCE: overkill.frm
 }
- 
+

@@ -8,14 +8,14 @@ Carr2381 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2382 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -25,14 +25,14 @@ Carr2382 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2383 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -42,14 +42,14 @@ Carr2383 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2384 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -59,14 +59,14 @@ Carr2384 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2385 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -75,14 +75,14 @@ Carr2385 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2386 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -92,14 +92,14 @@ Carr2386 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2387 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -109,14 +109,14 @@ Carr2387 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2388 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -126,14 +126,14 @@ Carr2388 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2389 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -145,15 +145,15 @@ Carr2389 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2390 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -165,15 +165,15 @@ Carr2390 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2391 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -185,15 +185,15 @@ Carr2391 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2392 {; Modified Brian Jones frm.
   z=d, d=(pixel-conj(0.10/pixel-flip(0.010/pixel)))
   c=pixel
@@ -203,15 +203,15 @@ Carr2392 {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*pixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2393 {; Modified Brian Jones frm.
   z=c=real(pixel)+flip(imag(pixel))-conj(0.10/pixel)-flip(0.10/pixel)
   x=real(z), y=imag(z), x1=x-p2*fn1(y*y+p3*fn2(y))
@@ -228,7 +228,7 @@ Carr2393 {; Modified Brian Jones frm.
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2394 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -248,7 +248,7 @@ Carr2394 (YAXIS) {; Modified Brian Jones frm.
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2395 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -268,7 +268,7 @@ Carr2395 (YAXIS) {; Modified Brian Jones frm.
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2396 (YAXIS) {; Modified Brian Jones frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -288,8 +288,8 @@ Carr2396 (YAXIS) {; Modified Brian Jones frm.
   |z|<=bailout
   ;SOURCE: 42icarr.frm
 }
- 
-Carr2397 {; Modified Brian E. Jones frm. mans-galore-012 
+
+Carr2397 {; Modified Brian E. Jones frm. mans-galore-012
   z=c=conj(flip(2*pixel))
   iter=0, x=real(z), y=imag(z)
   nextzoom=iterspace=real(p1), magnification=imag(p1)
@@ -304,8 +304,8 @@ Carr2397 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
-Carr2398 {; Modified Brian E. Jones frm. mans-galore-012 
+
+Carr2398 {; Modified Brian E. Jones frm. mans-galore-012
   z=c=(pixel-(conj(0.050/pixel)+flip(conj(0.0010/pixel)))^4)
   iter=0, x=real(z), y=imag(z)
   nextzoom=iterspace=real(p1), magnification=imag(p1)
@@ -320,7 +320,7 @@ Carr2398 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2399 {; Modified Brian E. Jones frm. mans-galore-012
   z=c=conj(pixel/2)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00510/pixel))
   iter=0, x=real(z), y=imag(z)
@@ -336,7 +336,7 @@ Carr2399 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2400 {; Modified Brian E. Jones frm. mans-galore-012
   z=pixel-(conj(0.10/pixel)+flip(conj(0.010/pixel)))
   c=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00510/pixel))
@@ -353,7 +353,7 @@ Carr2400 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2401 {; Modified Brian E. Jones frm. mans-galore-012
   z=pixel
   c=atan(pixel)*2+conj(pixel/3)
@@ -370,7 +370,7 @@ Carr2401 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2402 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -385,12 +385,12 @@ Carr2402 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   z=z*(1-test)+x1+flip(y1)
   c=c*(1-test)+test*magnification*c
   z=z*z+c
-    ; c=log(1+z) 
+    ; c=log(1+z)
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2403 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -409,7 +409,7 @@ Carr2403 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2404 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -428,7 +428,7 @@ Carr2404 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2405 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -447,7 +447,7 @@ Carr2405 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2406 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -466,7 +466,7 @@ Carr2406 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2407 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -485,7 +485,7 @@ Carr2407 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2408 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -503,7 +503,7 @@ Carr2408 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2409 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -521,7 +521,7 @@ Carr2409 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2410 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -540,7 +540,7 @@ Carr2410 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2411 {; Modified Brian E. Jones frm. mans-galore-012
   z=d3, d3=pixel*2
   c=pixel*2
@@ -557,7 +557,7 @@ Carr2411 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2412 {; Modified Brian E. Jones frm. mans-galore-012
           ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
   r=(conj(pixel/2))
@@ -576,7 +576,7 @@ Carr2412 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2413 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
     ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -599,7 +599,7 @@ Carr2413 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2414 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
       ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -621,7 +621,7 @@ Carr2414 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2415 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
     ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -643,7 +643,7 @@ Carr2415 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2416 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
      ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
                   ; Added variable "newpixel". G.Martin 6/15/99
@@ -666,7 +666,7 @@ Carr2416 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2417 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -687,7 +687,7 @@ Carr2417 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2418 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -708,7 +708,7 @@ Carr2418 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2419 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -729,7 +729,7 @@ Carr2419 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2420 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -750,7 +750,7 @@ Carr2420 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2421 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -771,7 +771,7 @@ Carr2421 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2422 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -790,20 +790,20 @@ Carr2422 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2423 {; Modified Sylvie Gallet frm.
   z=c=pixel
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2424 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -823,7 +823,7 @@ Carr2424 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2425 {; Modified Brian E. Jones frm. mans-galore-012
   m=(cabs(pixel/4+pixel/3))
   z=(2*pixel^4)-m-sin(0.8*pixel-flip(0.01/pixel))+conj(0.1275/pixel)
@@ -841,7 +841,7 @@ Carr2425 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+
 Carr2426 {; Modified Brian E. Jones frm. mans-galore-012
   z=pixel/(cabs(0.3/pixel))
   c=pixel*2
@@ -859,4 +859,4 @@ Carr2426 {; Modified Brian E. Jones frm. mans-galore-012
   |z|<=16
   ;SOURCE: 42icarr.frm
 }
- 
+

@@ -11,7 +11,7 @@ PD_411 {; Modified for IF..ELSE logic by Sylvie Gallet, 05/20/97
    abs(real(z)) <= bailout && abs(imag(z)) <= bailout
   ;SOURCE: phctopng.frm
 }
- 
+
 PD_411 {; Modified for IF..ELSE logic by Sylvie Gallet, 05/20/97
    bailout = sqrt(4 + imag(p3))
    k = real(p3), z = z1 = pixel
@@ -25,7 +25,7 @@ PD_411 {; Modified for IF..ELSE logic by Sylvie Gallet, 05/20/97
    abs(real(z)) <= bailout && abs(imag(z)) <= bailout
   ;SOURCE: phctopng.frm
 }
- 
+
 PD_412 {
   bailout = 4 + imag(p3)
   k = real(p3), z = z1 = pixel
@@ -37,7 +37,7 @@ PD_412 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg04.frm
 }
- 
+
 PD_412 {
   bailout = 4 + imag(p3)
   k = real(p3), z = z1 = pixel
@@ -49,7 +49,7 @@ PD_412 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg04.frm
 }
- 
+
 PD_413 {
   bailout = 4 + imag(p3)
   k = real(p3), z = z1 = pixel
@@ -61,7 +61,7 @@ PD_413 {
   (|real(z)| <= bailout) && (|imag(z)| <= bailout)
   ;SOURCE: pdg04.frm
 }
- 
+
 PD_414 {; PHC version of PD_207
   bailout = 4 + p3
   z = z1 = pixel
@@ -74,7 +74,7 @@ PD_414 {; PHC version of PD_207
   |z| <= bailout
   ;SOURCE: pdg04.frm
 }
- 
+
 PD_414 {; PHC version of PD_207
   bailout = 4 + p3
   z = z1 = pixel
@@ -87,4 +87,4 @@ PD_414 {; PHC version of PD_207
   |z| <= bailout
   ;SOURCE: pdg04.frm
 }
- 
+

@@ -41,11 +41,11 @@ field2_jul {; Kerry Mitchell
 ;
 ; It relates to the following formulas:
 ;    field2_jul (above)
-;    field3_jul 
-;    field4_jul 
-;    field2_man 
-;    field3_man 
-;    field4_man 
+;    field3_jul
+;    field4_jul
+;    field2_man
+;    field3_man
+;    field4_man
 ;
 ;Field
 ;
@@ -89,7 +89,7 @@ field2_jul {; Kerry Mitchell
 ;**********************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 field2_man {; Kerry Mitchell
         ; See the end of field2_jul for Kerry Mitchell's explanation of
         ; the development of these "field" formulas.
@@ -130,4 +130,4 @@ field2_man {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

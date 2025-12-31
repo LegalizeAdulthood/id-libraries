@@ -25,7 +25,7 @@ T02-17 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
-        ; 
+        ;
         ; T(n+1) = 2zT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = z
@@ -635,7 +635,7 @@ C10-17 {; V.1.1 - earlier versions may be discarded
 
 
 P02-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types
         ; Inspired by Mike Wareman
         ; Secant Method with Girvan perturbations and weird bailout test
@@ -658,7 +658,7 @@ P02-17 {; V.1.1 - earlier versions may be discarded
 
 
 P03-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 5zP02-2P01)/3
   z=pixel, oz=0
   fz=0
@@ -673,7 +673,7 @@ P03-17 {; V.1.1 - earlier versions may be discarded
 
 
 P04-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 7zP03-3P02)/4
   z=pixel, oz=0
   fz=3/8
@@ -689,7 +689,7 @@ P04-17 {; V.1.1 - earlier versions may be discarded
 
 
 P05-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ( 9zP04-4P03)/5
   z=pixel, oz=0
   fz=0
@@ -705,7 +705,7 @@ P05-17 {; V.1.1 - earlier versions may be discarded
 
 
 P06-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (11zP05-5P04)/6
   z=pixel, oz=0
   fz=-5/16
@@ -721,7 +721,7 @@ P06-17 {; V.1.1 - earlier versions may be discarded
 
 
 P07-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (13zP06-6P05)/7
   z=pixel, oz=0
   fz=0
@@ -737,7 +737,7 @@ P07-17 {; V.1.1 - earlier versions may be discarded
 
 
 P08-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (15zP07-7P06)/8
   z=pixel, oz=0
   fz=35/128
@@ -753,7 +753,7 @@ P08-17 {; V.1.1 - earlier versions may be discarded
 
 
 P09-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (17zP08-8P07)/9
   z=pixel, oz=0
   fz=0
@@ -769,7 +769,7 @@ P09-17 {; V.1.1 - earlier versions may be discarded
 
 
 P10-17 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; = (19zP09-9P08)/10
   z=pixel, oz=0
   fz=-63/256
@@ -1294,7 +1294,7 @@ Tc02-17 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Mike Wareman
          ; Secant Method with Girvan perturbations and weird bailout test
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)

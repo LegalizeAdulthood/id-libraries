@@ -296,7 +296,7 @@ else
 endif
 |z|<=ba
 }
- 
+
 Multifractal_3    { ;  Albrecht Niekamp  090603
 ;only integers as first input, second input 5 digits to the right
 ;real(p2) 5digits: shape, outside, in1, in2, in3
@@ -600,4 +600,4 @@ else
 endif
 |z|<=ba
 }
- 
+

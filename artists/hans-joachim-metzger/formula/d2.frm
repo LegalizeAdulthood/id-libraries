@@ -4,4 +4,4 @@ Fractal3 {
   |z|<4
   ;SOURCE: 1st.frm
 }
- 
+

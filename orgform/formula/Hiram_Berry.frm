@@ -67,7 +67,7 @@ JulibrotSlice1+2i  { ; Hiram Berry <burningb@burningbridges.com>
 
 
 SliceJulibrot2   { ; Hiram Berry <burningb@burningbridges.com>
-                   ;  Fri, 5 Mar 2004 16:46:23 
+                   ;  Fri, 5 Mar 2004 16:46:23
                    ;  draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
   a=pi*real(p1*0.0055555555555556),
@@ -81,7 +81,7 @@ SliceJulibrot2   { ; Hiram Berry <burningb@burningbridges.com>
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 
@@ -104,7 +104,7 @@ SliceJulibrot2a  { ; Hiram Berry <burningb@burningbridges.com>
   r=u*sg+v*term5, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 

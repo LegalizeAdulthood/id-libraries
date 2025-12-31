@@ -22,4 +22,4 @@ Trans_Atan_Mset {; Copyright (c) Paul W. Carlson, 1998
   bailout == 0
   ;SOURCE: 98msg.frm
 }
- 
+

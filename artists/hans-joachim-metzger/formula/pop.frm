@@ -1,4 +1,4 @@
-pop01 { 
+pop01 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -9,8 +9,8 @@ pop01 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop02 { 
+
+pop02 {
   h = (0.05 * ((p1)<=0))
   k = (3.00 * ((p2)<=0))
   x = real(pixel) + p1, y = imag(pixel) + p2:
@@ -21,8 +21,8 @@ pop02 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop03 { 
+
+pop03 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.00 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -33,20 +33,20 @@ pop03 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop04 { 
+
+pop04 {
   h = (0.10 * ((p1)<=0) + (p1) * (0<p1))
   k = (5.00 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
   a = x - h*fn1((y) + fn2(k*y))
   b = y - h*fn1((x) + fn2(k*x))
   x = a, y = b
-  z = fn3(x) * fn4(y) *  fn3(x) * fn4(y)  
+  z = fn3(x) * fn4(y) *  fn3(x) * fn4(y)
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop05 { 
+
+pop05 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.00 * ((p2)<=0) + (p2) * (0<p2))
   c = pixel
@@ -58,8 +58,8 @@ pop05 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop07 { 
+
+pop07 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -70,8 +70,8 @@ pop07 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop08 { 
+
+pop08 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -82,8 +82,8 @@ pop08 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
-pop09 { 
+
+pop09 {
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))
   k = (3.0 * ((p2)<=0) + (p2) * (0<p2))
   x = real(pixel), y = imag(pixel):
@@ -94,4 +94,4 @@ pop09 {
   |z| <= 64
   ;SOURCE: pop.frm
 }
- 
+

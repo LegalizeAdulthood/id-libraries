@@ -40,4 +40,4 @@ pd_lm_x   {; Formula by P. DiGiorgi, 7/97
   exit
   ;SOURCE: pd_lm.frm
 }
- 
+

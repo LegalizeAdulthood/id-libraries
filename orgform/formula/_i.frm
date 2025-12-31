@@ -78,7 +78,7 @@ ICEZ (XAXIS) {; Jm Collard-Richard
   z1=c*ex-1
   z2=-s*ex+c*ex
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -92,7 +92,7 @@ ICEZZ (XAXIS) {; cos(z)*z^z=1  Jm Collard-Richard
   z1=c*zz-1
   z2=c*(log(z)+1)-s*zz
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -106,7 +106,7 @@ ICHZ (XAXIS) {; resolution  cosh(z)*exp(z)=1 sol=0  Jm Collard-Richard
   z1=ch*ex-1
   z2=sh*ex+ch*ex
   z=z-(z1/z2)
-  0.001<=|z1| 
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -120,23 +120,23 @@ ICHZZ (XAXIS) {; resolution  cosh(z)*z^z=1    Jm Collard-Richard
   z1=ch*zz-1
   z2=sh*zz+(log(z)+1)*ch
   z=z-(z1/z2)
-  0.001<=|z1|  
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
 
 IfElse01 {; adapted from R. Barnett's formula
   z=y=c=pixel, w=0:
-  IF(w) 
+  IF(w)
     z=fn1(real(y))+flip(imag(y))
     w=0
-  ELSE 
+  ELSE
     z=(y*p1)
-    w=w+1 
+    w=w+1
   ENDIF
   z=z^p2+(p3*c)
   y=z
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: 97msg.frm
 }
 
@@ -150,7 +150,7 @@ IfElse03 {; Jim Muth
     z=(y*a), w=w+1
   ENDIF
   z=z^b+c, y=z
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: 97msg.frm
 }
 
@@ -166,7 +166,7 @@ IfElsefn1fn2fn3 (XAXIS_NOPARM) {
     z=fn3(z)+pixel
   ENDIF
   x=x+1
-  |z|<=4 
+  |z|<=4
   ;SOURCE: choice.frm
 }
 
@@ -256,7 +256,7 @@ IfThenElsefn1fn2 (XAXIS_NOPARM) {
   ELSE
     z=fn2(z)+pixel
   ENDIF
-  x=|z| 
+  x=|z|
   x<=4
   ;SOURCE: choice.frm
 }
@@ -269,7 +269,7 @@ IfThenfn1fn2 (XAXIS_NOPARM) {
     z=fn1(z)
   ENDIF
   z=fn2(z)+pixel
-  x=|z| 
+  x=|z|
   x<=4
   ;SOURCE: choice.frm
 }
@@ -297,7 +297,7 @@ Ikeda {; Standard:c1=.4, c2=.9, c3=6;rho=1
 
 IkeFrRbtGenJ {; Ron Barnett, 1993
   z = pixel:
-  z = p1*z*z*z + (p2-1)*z*z - p2 
+  z = p1*z*z*z + (p2-1)*z*z - p2
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -305,7 +305,7 @@ IkeFrRbtGenJ {; Ron Barnett, 1993
 
 IkeFrRbtGenM {; Ron Barnett, 1993
   z = 2*(1-pixel)/(3*p1):
-  z = p1*z*z*z + (pixel-1)*z*z - pixel 
+  z = p1*z*z*z + (pixel-1)*z*z - pixel
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -313,7 +313,7 @@ IkeFrRbtGenM {; Ron Barnett, 1993
 
 IkeGenJ {; Ron Barnett, 1993
   z = pixel:
-  z =p1*z*z*z + (p2-1)*z - p2 
+  z =p1*z*z*z + (p2-1)*z - p2
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -321,7 +321,7 @@ IkeGenJ {; Ron Barnett, 1993
 
 IkeGenM {; Ron Barnett, 1993
   z = ((1-pixel)/(3*p1))^0.5:
-  z =p1*z*z*z + (pixel-1)*z - pixel 
+  z =p1*z*z*z + (pixel-1)*z - pixel
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -333,7 +333,7 @@ IkeJulia {; Ron Barnett [70153,1233], 1996  Requires passes=1
    ; Ron Barnett, 1996
   z = whitesq*((1-pixel)/3)^0.5+(whitesq==0)*(pixel+p3)
   c = whitesq*p1*pixel + (whitesq==0)*p2:
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=4
   ;SOURCE: phc.frm
 }
@@ -422,7 +422,7 @@ IkenagaFN (XAXIS) {; Jon Horner
                    ; derived from Ikenaga
   z = (0,0), c = fn1(pixel):
   z = z * z * z + z * (c-1) - c
-  |z| <=4 
+  |z| <=4
   ;SOURCE: ikenaga.frm
 }
 
@@ -462,12 +462,12 @@ IkenagaJUL1+ (ORIGIN) {; formula from an article by Joyce Haslam
 IkenagaMap (XAXIS) {; Ron Barnett, 1993
                     ; based upon the Ikenaga function described
                     ; in Dewdneys's The Armchair Universe.
-                    ; The initial starting point allows the 
+                    ; The initial starting point allows the
                     ; function to provide a
-                    ; "map" for the corresponding Julia 
-                    ; function (Julike ) 
-  z = ((1-pixel)/3)^0.5: 
-  z = z*z*z + (pixel-1)*z - pixel 
+                    ; "map" for the corresponding Julia
+                    ; function (Julike )
+  z = ((1-pixel)/3)^0.5:
+  z = z*z*z + (pixel-1)*z - pixel
   |z| <= 4
   ;SOURCE: reb001.frm
 }
@@ -475,12 +475,12 @@ IkenagaMap (XAXIS) {; Ron Barnett, 1993
 
 Ikenagamj {; Ron Barnett, 1997
   IF(ismand)
-    z = ((1-pixel)/3)^0.5, c = pixel 
+    z = ((1-pixel)/3)^0.5, c = pixel
   ELSE
     z = pixel, c = p1
   ENDIF
   :
-  z = z*z*z + (c-1)*z - c 
+  z = z*z*z + (c-1)*z - c
   |z| <= 4
   ;SOURCE: 97msg.frm
 }
@@ -488,7 +488,7 @@ Ikenagamj {; Ron Barnett, 1997
 
 IkenagaNewtmj {; Ron Barnett, 1997
   IF(ismand)
-    z = ((1-pixel)/3)^0.5, c = pixel 
+    z = ((1-pixel)/3)^0.5, c = pixel
   ELSE
     z = pixel, c = p1
   ENDIF
@@ -509,7 +509,7 @@ IkenagaNewtmj {; Ron Barnett, 1997
 
 ikenagaoriginal {; Ron Barnett, 1994
   z = 0, c = pixel:
-  z = z*z*z + (c - 1)*z - c 
+  z = z*z*z + (c - 1)*z - c
   |z|<=100
   ;SOURCE: reb006.frm
 }
@@ -555,70 +555,70 @@ IkeNewtMand {; Ron Barnett, 1993
 
 
 ilvfn12rot {
-   ; Exp( p1 * fn(|pixel|* ... )..) rotates the Pixels 
+   ; Exp( p1 * fn(|pixel|* ... )..) rotates the Pixels
    ; according to their distance from the origin when
-   ; p1 is chosen complex (real (p1) translates them). 
+   ; p1 is chosen complex (real (p1) translates them).
   Ground = pixel+1/fn1(p2*pixel*exp(p1*fn2(|pixel|)))
   z=Ground:
   z=sqr(z)+Ground
-  |z|<=4 
+  |z|<=4
   ;SOURCE: ilvi.frm
 }
 
 
-Ilvifn1-iw { 
-  z = Pixel + 1/(fn1(p2*Pixel) - p1):  
-  z = sqr(z) +  Pixel + 1/(fn1(p2*Pixel) - p1) 
-  | z | <= 4 
+Ilvifn1-iw {
+  z = Pixel + 1/(fn1(p2*Pixel) - p1):
+  z = sqr(z) +  Pixel + 1/(fn1(p2*Pixel) - p1)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
 Ilvifn1-iw1 {
-  z = Pixel + fn1(p2*Pixel - p1):  
-  z = sqr(z) +  Pixel + fn1(p2*Pixel - p1) 
-  | z | <= 4 
+  z = Pixel + fn1(p2*Pixel - p1):
+  z = sqr(z) +  Pixel + fn1(p2*Pixel - p1)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
 Ilvifn1-iw3 {
-  z = 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1):  
-  z = sqr(z) + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1) 
-  | z | <= 4 
+  z = 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1):
+  z = sqr(z) + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
 Ilvifn1-iw5 {
-  z = 1/fn1(p1*Pixel) + 1/fn2(p2*Pixel):  
-  z = sqr(z) + 1/fn1(p1*Pixel) + 1/fn2(p2*Pixel) 
-  | z | <= 4 
+  z = 1/fn1(p1*Pixel) + 1/fn2(p2*Pixel):
+  z = sqr(z) + 1/fn1(p1*Pixel) + 1/fn2(p2*Pixel)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
 Ilvifn1fn2-iw {; don't fuaget float to puute akkurattly !
-  z = Pixel + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1):  
-  z = sqr(z) +  Pixel + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1) 
-  | z | <= 4 
+  z = Pixel + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1):
+  z = sqr(z) +  Pixel + 1/(fn1(p2*Pixel) - p1) + 1/(fn2(p2*Pixel) - p1)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
 Ilvifn1fn2-j {; don't fuaget float to puute akkurattly !
-  z = Pixel + 1/(fn1(p2*Pixel)) + 1/(fn2(p2*Pixel)):  
-  z = sqr(z) +  p1 + 1/(fn1(p2*p1)) + 1/(fn2(p2*p1)) 
-  | z | <= 4 
+  z = Pixel + 1/(fn1(p2*Pixel)) + 1/(fn2(p2*Pixel)):
+  z = sqr(z) +  p1 + 1/(fn1(p2*p1)) + 1/(fn2(p2*p1))
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
 
-ilvp+fn123 { 
+ilvp+fn123 {
   Ground = pixel+fn1(fn2(fn3(p2*pixel)))+fn1(fn3(fn2(p2*pixel)))
   z=Ground:
   z=sqr(z)+Ground
-  |z|<=4 
+  |z|<=4
   ;SOURCE: ilvi.frm
 }
 
@@ -627,19 +627,19 @@ ilvsqzz {; p1<0 complex,  ident, log
   Ground = pixel*fn1(p2*exp(p1*fn2(|pixel|)*imag(pixel)))
   z=Ground:
   z=sqr(z)+Ground
-  |z|<=4 
+  |z|<=4
   ;SOURCE: ilvi.frm
 }
 
 
-ilvwav { 
-   ;pix/|pix| is a complex number with length 1 and the direction of 
-   ;the pixel.The faktor fn1(..) allows you to scale it the way 
+ilvwav {
+   ;pix/|pix| is a complex number with length 1 and the direction of
+   ;the pixel.The faktor fn1(..) allows you to scale it the way
    ;you want.  fn1=ident, p1=1 should be the normal Mandl.
   Ground = pixel/|pixel|*fn1(p1 * |pixel|)
   z=Ground:
   z=sqr(z)+Ground
-  |z|<=4 
+  |z|<=4
   ;SOURCE: ilvi.frm
 }
 
@@ -901,11 +901,11 @@ inandout14 {; Bradley Beacham  [74223,2745]
 }
 
 
-Incdbail { 
+Incdbail {
   z = c = pixel, m = fn3(z), n = fn4(z):
-  t = fn1(z) + fn2(z)                                                 
+  t = fn1(z) + fn2(z)
   d = z-t
-  z=((d<=p1)*(z+(m/z)))+((d>p1)*(d<=(2*p1))*(t))+((d>(2*p1))*(z-(n/z))) 
+  z=((d<=p1)*(z+(m/z)))+((d>p1)*(d<=(2*p1))*(t))+((d>(2*p1))*(z-(n/z)))
   d <= p2
   ;SOURCE: ron1.frm
 }
@@ -919,14 +919,14 @@ inner {; Giuseppe Zito
   d10 = 0.153357
   d13 = 0.107895
   d15 = -0.438812
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 +y
   s1 = x
   s1 = s1 *c6
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 -d2
   s0 = s0 -y
@@ -939,9 +939,9 @@ inner {; Giuseppe Zito
   s0 = s0 -d13
   s0 = s0 -x
   s0 = s0 +d15
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -960,7 +960,7 @@ inter {; Giuseppe Zito
   d17 = -0.80042
   d18 = 0.078989
   d21 = 0.104922
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s1 = x
@@ -971,7 +971,7 @@ inter {; Giuseppe Zito
   s0 = s0 +c10
   s0 = s0 *c11
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 = y
   s1 =d2
   s1 = s1 *y
@@ -984,9 +984,9 @@ inter {; Giuseppe Zito
   s0 = s0 -d17
   s0 = s0 -d18
   s0 = s0 -d21
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -1072,8 +1072,8 @@ InvCosSq (XAXIS) {
   test = (p1+3):
   z1 = cosxx(z) * cosxx(z)
   zde = 1 +  (imag(z1)*imag(z1) )
-  z = (real(z1) / zde) - (imag(z1) / zde)   
-  |z| < test 
+  z = (real(z1) / zde) - (imag(z1) / zde)
+  |z| < test
   ;SOURCE: skinv13r.frm
 }
 
@@ -1119,42 +1119,42 @@ InvExpZ_N (xaxis) {; Jm Collard-Richard
   z1=z0-1
   z2=p1*z^(p1-1)*z0
   z=z-(z1/z2)
-  0.0001<=|z1|     
+  0.0001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
 
 InvFNJmN-J {; Jm Collard-Richard
   z=1/(pixel^p2):
-  z=fn1(z^p2)+fn2(p1) 
+  z=fn1(z^p2)+fn2(p1)
   ;SOURCE: jmcr1.frm
 }
 
 
 InvFNJmN-M (xaxis) {; Jm Collard-Richard
   c=z=1/(pixel^p1) :
-  z=fn1(z^p1)+fn2(c)  
+  z=fn1(z^p1)+fn2(c)
   ;SOURCE: jmcr1.frm
 }
 
 
 InvFNMandelBar_N (xaxis) {; Jm Collard-Richard
   c=z=1/pixel :
-  z=fn1(conj(z)^p1)+fn2(c) 
+  z=fn1(conj(z)^p1)+fn2(c)
   ;SOURCE: jmcr1.frm
 }
 
 
 InvJm1-J {; Jm Collard-Richard  Ceci n'est *pas* InvJulia2
   z=1/(pixel*pixel):
-  z=z*z+p1      
+  z=z*z+p1
   ;SOURCE: jmcr1.frm
 }
 
 
 InvJm1-M (xaxis) {; Ceci n'est *pas* InvMand2  Jm Collard-Richard
   c=z=1/(pixel*pixel):
-  z=z*z+c       
+  z=z*z+c
   ;SOURCE: jmcr1.frm
 }
 
@@ -1162,7 +1162,7 @@ InvJm1-M (xaxis) {; Ceci n'est *pas* InvMand2  Jm Collard-Richard
 InvJmBarN-J {; Jm Collard-Richard   Ceci n'st pas InvJulBar_N
   z=1/(pixel^p2):
   z=conj(z)^p2+p1
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -1170,7 +1170,7 @@ InvJmBarN-J {; Jm Collard-Richard   Ceci n'st pas InvJulBar_N
 InvJmBarN-M {; Jm Collard-Richard     Ceci n'est pas InvMandBar_N
   c=z=1/(pixel^p1):
   z=conj(z)^p1+c
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -1178,7 +1178,7 @@ InvJmBarN-M {; Jm Collard-Richard     Ceci n'est pas InvMandBar_N
 InvJmN-J {; Jm Collard-Richard   Ceci n'est pas InvJuliaN
   z=1/(pixel^p2):
   z=z^p2+p1
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -1186,7 +1186,7 @@ InvJmN-J {; Jm Collard-Richard   Ceci n'est pas InvJuliaN
 InvJmN-M {; Jm Collard-Richard    Ceci n'est pas InvMandelN
   c=z=1/(pixel^p1):
   z=z^p1+c
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -1194,21 +1194,21 @@ InvJmN-M {; Jm Collard-Richard    Ceci n'est pas InvMandelN
 InvJulia_N {; Jm Collard-Richard
   z=1/pixel:
   z=z^p2+p1
-  |z|<=4                    
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
 
 InvJuliaBar_2 {; Jm Collard-Richard
   z=1/pixel:
-  z=conj(z)^2+p1           
+  z=conj(z)^2+p1
   ;SOURCE: jmcr1.frm
 }
 
 
 InvJuliaBar_N {; Jm Collard-Richard
   z=1/pixel:
-  z=conj(z)^p2+p1          
+  z=conj(z)^p2+p1
   ;SOURCE: jmcr1.frm
 }
 
@@ -1224,7 +1224,7 @@ InvMand {
 InvMand_N {; Jm Collard-Richard
   z=c=1/pixel:
   z=z^p1+c
-  |z|<=4                    
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -1239,14 +1239,14 @@ InvMandel (XAXIS) {; Mark Peterson
 
 InvMandelBar_2_c (xaxis) {; Jm Collard-Richard
   c=z=1/pixel :
-  z=conj(z)*conj(z)+c 
+  z=conj(z)*conj(z)+c
   ;SOURCE: jmcr1.frm
 }
 
 
 InvMandelBar_N (xaxis) {; Jm Collard-Richard
   c=z=1/pixel :
-  z=conj(z)^p1+c           
+  z=conj(z)^p1+c
   ;SOURCE: jmcr1.frm
 }
 
@@ -1258,7 +1258,7 @@ INVZZCHZ (Xaxis) {; Jm Collard-Richard  - Use FLOAT=YES
   z1=(1/zz)-cosh(z)
   z2=((log(z)+1)*zz)*(-1)*(1/(zz*zz))-sinh(z)
   z=z-(z1/z2)
-  0.001<=|z1|     
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -1270,7 +1270,7 @@ INVZZCZ (xaxis) {; Jm Collard-Richard   -   use FLOAT=YES
   z1=(1/zz)-cos(z)
   z2=((log(z)+1)*zz)*(-1)*(1/(zz*zz))+sin(z)
   z=z-(z1/z2)
-  0.001<=|z1|   
+  0.001<=|z1|
   ;SOURCE: jmcr2.frm
 }
 
@@ -1280,22 +1280,22 @@ iplumb {; Giuseppe Zito
   c0 = 0.574984
   d0 = 0.711239
   d3 = -0.222274
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s1 = y
   s1 = s1 -y
   s1 = s1 +y
   s0 = s0 +s1
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 /x
   s0 = s0 *d3
   s0 = s0 /x
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -1326,7 +1326,7 @@ IslandOfChaos (XAXIS_NOPARM) {
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)/cosxx(z)+pixel
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: choice.frm
 }
@@ -1340,7 +1340,7 @@ IslandOfChaosC (XAXIS_NOPARM) {
   ELSE
     z=sin(z)/cosxx(z)+pixel
   ENDIF
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: choice.frm
 }
@@ -1354,7 +1354,7 @@ IslandOfChaosC.1 (XAXIS_NOPARM) {
   ELSE
     z=tan(z)+pixel
   ENDIF
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: choice.frm
 }

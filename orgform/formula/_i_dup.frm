@@ -61,7 +61,7 @@ InvMandel (XAXIS) {; Mark Peterson
 
 InvMandel (XAXIS) {; Mark Peterson
                    ; try p1 = 1, fn1 = sqr
-  c = z = p1 / pixel: 
+  c = z = p1 / pixel:
   z = fn1(z) + c
   |z| <= (p2 + 4)
   ;SOURCE: improv2.frm
@@ -73,7 +73,7 @@ IslandOfChaos (XAXIS_NOPARM) {
   z=p1, x=1:
   z=sqr(z)+pixel
   z=sin(z)/cos(z)+pixel
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: form1.frm
 }
@@ -117,7 +117,7 @@ IslandOfChaosC (XAXIS_NOPARM) {
   ELSE
     z=sin(z)/cos(z)+pixel
   ENDIF
-  x=x+1 
+  x=x+1
   |z|<=4
   ;SOURCE: form1.frm
 }

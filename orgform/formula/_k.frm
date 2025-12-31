@@ -174,7 +174,7 @@ kcenter_jul {
 
 kfact2_jul {; formula file for patchwork
   z=pixel, c=p1, kfac=real(p2), dt=imag(p2)*pi, t=0, k=kfac:
-  r=cos(t), kr=k*r, z=fn1(z*kr)/kr 
+  r=cos(t), kr=k*r, z=fn1(z*kr)/kr
   z=sqr(z)+c, t=t+dt, k=k*kfac
   |z| < 4
   ;SOURCE: 97msg.frm
@@ -183,8 +183,8 @@ kfact2_jul {; formula file for patchwork
 
 kg1401 {
   z = y = pixel-p2:
-  z = fn1(z) * fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) * fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kg14.frm
 }
@@ -192,8 +192,8 @@ kg1401 {
 
 kg1402 {
   z = y = pixel+p2:
-  z = fn1(z) / fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) / fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kg14.frm
 }
@@ -201,8 +201,8 @@ kg1402 {
 
 kg1403 {
   z = y = pixel*p2:
-  z = fn1(z) * fn2(y) 
-  y = fn1(y) * fn2(z)   
+  z = fn1(z) * fn2(y)
+  y = fn1(y) * fn2(z)
   |z| <= p1
   ;SOURCE: kg14.frm
 }
@@ -210,8 +210,8 @@ kg1403 {
 
 kg1404 {
   z = y = pixel/p2:
-  z = fn1(z) / fn2(y) 
-  y = fn1(y) * fn2(z)   
+  z = fn1(z) / fn2(y)
+  y = fn1(y) * fn2(z)
   |z| <= p1
   ;SOURCE: kg14.frm
 }
@@ -221,7 +221,7 @@ kg1501 {
   z = pixel:
   a = z ^ p1
   b = 1 / a
-  z = fn1(a) * fn2(b) 
+  z = fn1(a) * fn2(b)
   |z| <= p2
   ;SOURCE: kg15.frm
 }
@@ -231,7 +231,7 @@ kg1502 {
   z = 1/pixel:
   a = z ^ p1
   b = 1 / a
-  z = fn1(a) * fn2(b) 
+  z = fn1(a) * fn2(b)
   |z| <= p2
   ;SOURCE: kg15.frm
 }
@@ -239,8 +239,8 @@ kg1502 {
 
 kg1601 {
   z = y = pixel-z:
-  z = fn1(z) * fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) * fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kg16.frm
 }
@@ -248,8 +248,8 @@ kg1601 {
 
 kg1602 {
   z = y = pixel+z:
-  z = fn1(z) / fn2(y) 
-  y = fn1(y) / fn2(z)   
+  z = fn1(z) / fn2(y)
+  y = fn1(y) / fn2(z)
   |z| <= p1
   ;SOURCE: kg16.frm
 }
@@ -257,8 +257,8 @@ kg1602 {
 
 kg1603 {
   z = y = pixel+1/z:
-  z = fn1(z) * fn2(y) 
-  y = fn1(y) * fn2(z)   
+  z = fn1(z) * fn2(y)
+  y = fn1(y) * fn2(z)
   |z| <= p1
   ;SOURCE: kg16.frm
 }
@@ -266,8 +266,8 @@ kg1603 {
 
 kg1604 {
   z = y = pixel/z:
-  z = fn1(z) / fn2(y) 
-  y = fn1(y) * fn2(z)   
+  z = fn1(z) / fn2(y)
+  y = fn1(y) * fn2(z)
   |z| <= p1
   ;SOURCE: kg16.frm
 }
@@ -311,8 +311,8 @@ kg1704 {; Karl Geigl 100327,156
 
 kg1801 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) 
-  y = p1 / pixel        
+  z = fn1(fn2(z) + pixel)
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -320,8 +320,8 @@ kg1801 {; Karl Geigl 100327,156
 
 kg1802 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) - pixel) 
-  y = p1 / pixel        
+  z = fn1(fn2(z) - pixel)
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -329,8 +329,8 @@ kg1802 {; Karl Geigl 100327,156
 
 kg1803 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) 
-  y = p1 * pixel        
+  z = fn1(fn2(z) + pixel)
+  y = p1 * pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -338,8 +338,8 @@ kg1803 {; Karl Geigl 100327,156
 
 kg1804 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) * pixel) 
-  y = p1 - pixel        
+  z = fn1(fn2(z) * pixel)
+  y = p1 - pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -347,8 +347,8 @@ kg1804 {; Karl Geigl 100327,156
 
 kg1805 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) - y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) + pixel) - y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -356,8 +356,8 @@ kg1805 {; Karl Geigl 100327,156
 
 kg1806 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) + y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) + pixel) + y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -365,8 +365,8 @@ kg1806 {; Karl Geigl 100327,156
 
 kg1807 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) * y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) + pixel) * y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -374,8 +374,8 @@ kg1807 {; Karl Geigl 100327,156
 
 kg1808 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) + pixel) / y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) + pixel) / y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -383,8 +383,8 @@ kg1808 {; Karl Geigl 100327,156
 
 kg1809 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) * pixel) + y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) * pixel) + y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -392,8 +392,8 @@ kg1809 {; Karl Geigl 100327,156
 
 kg1810 {; Karl Geigl 100327,156
   z = y = pixel:
-  z = fn1(fn2(z) - pixel) - y 
-  y = p1 / pixel        
+  z = fn1(fn2(z) - pixel) - y
+  y = p1 / pixel
   |z| <= p1
   ;SOURCE: kg18.frm
 }
@@ -437,8 +437,8 @@ kg1904 {
 
 kg2001 {
   z = y = pixel:
-  z = fn1(z) + fn2(z-y) 
-  y = p1 / z-y  
+  z = fn1(z) + fn2(z-y)
+  y = p1 / z-y
   |z| <= p1
   ;SOURCE: kg20.frm
 }
@@ -446,8 +446,8 @@ kg2001 {
 
 kg2002 {
   z = y = pixel:
-  z = fn1(z) + fn2(z+y) 
-  y = y*y / z*z-y       
+  z = fn1(z) + fn2(z+y)
+  y = y*y / z*z-y
   |z| <= p1
   ;SOURCE: kg20.frm
 }
@@ -455,8 +455,8 @@ kg2002 {
 
 kg2003 {
   z = y = pixel:
-  z = fn1(z) + fn2(z*z-y) 
-  y = p1*z / z-y        
+  z = fn1(z) + fn2(z*z-y)
+  y = p1*z / z-y
   |z| <= p1
   ;SOURCE: kg20.frm
 }
@@ -464,8 +464,8 @@ kg2003 {
 
 kg2004 {
   z = y = pixel:
-  z = fn1(z) + fn2(z-y*y) 
-  y = p1*y / z-y        
+  z = fn1(z) + fn2(z-y*y)
+  y = p1*y / z-y
   |z| <= p1
   ;SOURCE: kg20.frm
 }
@@ -551,198 +551,198 @@ kg2205 {
 }
 
 
-kgexp1 { 
+kgexp1 {
   z = Pixel:
   z = z ^ 2.71828182845905 + c + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp10 { 
+kgexp10 {
   z = Pixel:
   z = z + 2.71828182845905 ^ c + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp11 { 
+kgexp11 {
   z = Pixel:
   z = z ^ 2.71828182845905 + c ^ 2.71828182845905
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp12 { 
+kgexp12 {
   z = pixel:
   z = z ^ 2.71828182845905 + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp13 { 
+kgexp13 {
   z = Pixel:
   z = z ^ 2.71828182845905 + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp14 { 
+kgexp14 {
   z = Pixel:
   z = z ^ 2.71828182845905 + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp2 { 
+kgexp2 {
   z = Pixel, c=fn1(z):
   z = z ^ 2.71828182845905 - c + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp3 { 
+kgexp3 {
   z = Pixel, c=fn1(z):
   z = z ^ 2.71828182845905 + c * pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp4 { 
+kgexp4 {
   z = Pixel, c=fn1(z):
   z = z ^ 2.71828182845905 + c ^ pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp5 { 
+kgexp5 {
   z = Pixel:
   z = z ^0.5 * z ^ 2.71828182845905 + c + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp6 { 
+kgexp6 {
   z = Pixel:
   z = c ^ 2.71828182845905 * z ^ pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp7 { 
+kgexp7 {
   z = Pixel:
   z = z + c - 2.71828182845905 ^z
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp8 { 
+kgexp8 {
   z = Pixel:
   z = z ^ 2.71828182845905 + c ^ pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgexp9 {; Revised for Fractint v20 by G. Martin 
+kgexp9 {; Revised for Fractint v20 by G. Martin
   z = Pixel:
   z = z ^ (-2.71828182845905) + pixel
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgexp.frm
 }
 
 
-kgfunc1 { 
+kgfunc1 {
   z = Pixel:
   z = z ^ 2 + c
   z = fn1(z)
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc10 { 
+kgfunc10 {
   z = Pixel:
   z = (22/7)  / fn1(z) * z + c * fn2(z)
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc2 { 
+kgfunc2 {
   z = Pixel:
   z = z ^ 2 + c + pixel
   z = fn1(z)
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc3 { 
+kgfunc3 {
   z = Pixel:
   z = z ^ 2 + c
   c = fn1(z)
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc4 { 
+kgfunc4 {
   z = Pixel:
   z = z ^ 2 + c + pixel
   z = fn1(c)
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc5 { 
+kgfunc5 {
   z = Pixel:
   z = (22/7) *  fn1(z) + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc6 { 
+kgfunc6 {
   z = Pixel:
   z = (22/7) / fn1(z) + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc7 { 
+kgfunc7 {
   z = Pixel:
   z = (22/7) *  fn1(z) * z + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc8 { 
+kgfunc8 {
   z = Pixel:
   z = (22/7) * z / fn1(z) + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
 
-kgfunc9 { 
+kgfunc9 {
   z = Pixel:
   z = (22/7)  / fn1(z) * z + c
-  |z| <= 100 
+  |z| <= 100
   ;SOURCE: kgfunc.frm
 }
 
@@ -752,7 +752,7 @@ kilroy (XAXIS) {; The sign change trick makes a small change here
   temp = z
   z = z*z - zp
   zp = (temp)^.5
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -773,11 +773,11 @@ kissing {; Giuseppe Zito
   d17 = -0.224033
   d20 = 0.996985
   d22 = 0.729132
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /x
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *x
   s1 = y
@@ -793,15 +793,15 @@ kissing {; Giuseppe Zito
   s0 = s0 -d22
   s0 = s0 -y
   s0 = s0 *y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 kleep1 {
-  z=pixel: 
+  z=pixel:
   z=(z/imag(z)-z/real(z))*p1*conj(z)+pixel
   |z|<=4
   ;SOURCE: fkt.frm
@@ -823,7 +823,7 @@ Klesmer {
   z1 = fn1(z) + pixel
   z2 = fn2(z) + pixel
   z3 = (c * (1/z))
-  z = z3 * (z1/z2) 
+  z = z3 * (z1/z2)
   |z| < 4
   ;SOURCE: gestalt.frm
 }
@@ -850,19 +850,19 @@ kmoe-02 {; by Kirsten Moe. Rewritten for Orgform by G. Martin, 7/14/97
 
 
 kmoe-03 {; by Kirsten Moe. Rewritten by G. Martin for Orgform 7/14/97
-  z=pixel 
-  x=cos(sqr(z))       
+  z=pixel
+  x=cos(sqr(z))
   z=3/(x-3)*imag(z)
-  z<12 
+  z<12
   ;SOURCE: kmoe-03.frm
 }
 
 
-Knot {; Giuseppe Zito c1=.95 
+Knot {; Giuseppe Zito c1=.95
   z=pixel, c1=real(p1):
   x = real(z), y = imag(z)
-  newx = -y 
-  newy = c1*x*x*x -x -y 
+  newx = -y
+  newy = c1*x*x*x -x -y
   z = newx + flip(newy)
   newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
@@ -987,7 +987,7 @@ koffset_rx=ry_jul {; adapted from Kerry Mitchell
 
 Komplexmatsch {
   z=pixel+1/fn1(p2*pixel)+1/fn2(p2*pixel):
-  z=((p1-1)*z^p1+1)/(p1*z^(p1-1)) 
+  z=((p1-1)*z^p1+1)/(p1*z^(p1-1))
   0.001<=|z^p1-1|
   ;SOURCE: crazynwt.frm
 }
@@ -996,7 +996,7 @@ Komplexmatsch {
 Korfu (YAXIS) {
   z = c = pixel:
   z = z + p1
-  c = c/fn1(z) 
+  c = c/fn1(z)
   z = z * fn2(c)
   |z| < 4
   ;SOURCE: korfu.frm
@@ -1042,7 +1042,7 @@ kpassion_balls {; variant of Paul W. Carlson and Kerry Mitchell
     ; These values will usually be in the range 0.001 to 0.1
     ;****************************************************
   ball_size = real(p1)
-  index_factor = (colors_in_range - 1) / ball_size 
+  index_factor = (colors_in_range - 1) / ball_size
   :
     ;****************************************************
     ; The equation being iterated.  Almost any equation

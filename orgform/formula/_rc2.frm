@@ -7,7 +7,7 @@ Carr2000 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -73,10 +73,10 @@ Carr2003a {; Modified Sylvie Gallet frm. [101324,3444], 1996
            ; requires "periodicity=0" (<g> command)
            ; imag(p1) = scale of the Julia set
            ; p2 = center of the Julia set
-           ; p3 = param for the Julia set 
+           ; p3 = param for the Julia set
   z = c = pixel
   c1 = p3
-  z1=imag(p1-cos(pixel))*z-p2, iter=0 
+  z1=imag(p1-cos(pixel))*z-p2, iter=0
   limit=real(p1), bailout = 16 :
   test = (iter==limit)
   z=fn1(z*(1-test))+fn2(z1*test), c=fn3(c*(1-test))+fn4(c1*test)
@@ -91,10 +91,10 @@ Carr2003b {; Modified Sylvie Gallet frm. [101324,3444], 1996
            ; requires "periodicity=0" (<g> command)
            ; imag(p1) = scale of the Julia set
            ; p2 = center of the Julia set
-           ; p3 = param for the Julia set 
+           ; p3 = param for the Julia set
   z = c = pixel
   c1 = p3
-  z1=imag(p1-cos(pixel))*z-p2, iter=0 
+  z1=imag(p1-cos(pixel))*z-p2, iter=0
   limit=real(p1), bailout = 16:
   test = (iter==limit)
   z=z*fn1(1-test)+fn2(z1*test), c=fn3(c*(1-test)+(c1*test))
@@ -157,7 +157,7 @@ Carr2007 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -172,7 +172,7 @@ Carr2008 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -188,7 +188,7 @@ Carr2009 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=cos(imag(p1)), l3=real(p2), l4=cos(imag(p2))
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -204,7 +204,7 @@ Carr2010 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=cos(imag(p1)), l3=real(p2), l4=cos(imag(p2))
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+(c+(-0.3,0.6))
   iter=iter+1
@@ -220,7 +220,7 @@ Carr2011 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=cos(imag(p1)), l3=real(p2), l4=cos(imag(p2))
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c+(0.35776,-0.08294)
   iter=iter+1
@@ -235,7 +235,7 @@ Carr2012 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -250,7 +250,7 @@ Carr2013 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -265,7 +265,7 @@ Carr2014 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=flip(conj(z*z))+c
   iter=iter+1
@@ -280,7 +280,7 @@ Carr2015 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=flip(conj(z*z))+c-p0
   iter=iter+1
@@ -295,7 +295,7 @@ Carr2016 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z2=z*z, z=z2*z/5+z2+c
   iter=iter+1
@@ -310,7 +310,7 @@ Carr2017 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
@@ -321,7 +321,7 @@ Carr2017 {; Modified Sylvie Gallet frm. [101324,3444],1996
 
 Carr2018 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-1/log(10*pixel)*(sinh(0.1/pixel))
-  c=sqrt(pixel-conj(0.135/pixel))+pixel 
+  c=sqrt(pixel-conj(0.135/pixel))+pixel
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0 :
@@ -432,7 +432,7 @@ Carr2025 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -448,7 +448,7 @@ Carr2026 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z2=z*z, z=real(z)*z2/5+z2+c-0.087
   iter=iter+1
@@ -464,7 +464,7 @@ Carr2027 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -480,7 +480,7 @@ Carr2028 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -496,7 +496,7 @@ Carr2029 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -512,7 +512,7 @@ Carr2030 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -528,7 +528,7 @@ Carr2031 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   c=z+c/2.125
   z=z*z+c-0.087
@@ -545,7 +545,7 @@ Carr2032 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -577,12 +577,12 @@ Carr2034 {; Modified Sylvie Gallet frm. [101324,3444],1996
   d2=tan(p01)/sq, d=conj(sq)/cos(sq)
   d1=d^(pixel-1), z=pixel-conj(0.10*d1)+d2
   c=(-0.7456,-0.171)
-  c1=1.5*z, c2=2.25*z 
+  c1=1.5*z, c2=2.25*z
   c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -598,7 +598,7 @@ Carr2035 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
@@ -614,7 +614,7 @@ Carr2036 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c+0.057
   iter=iter+1
@@ -630,7 +630,7 @@ Carr2037 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c+0.057
   iter=iter+1
@@ -727,7 +727,7 @@ Carr2042 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2043 {; Modified Sylvie Gallet frm.  
+Carr2043 {; Modified Sylvie Gallet frm.
   c=(0.3,0.6)
   z=pixel
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -803,7 +803,7 @@ Carr2046 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2047 {; Modified Sylvie Gallet frm. 
+Carr2047 {; Modified Sylvie Gallet frm.
   z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel)
   c=(-0.7456,-0.13)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -822,7 +822,7 @@ Carr2047 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2048 {; Modified Sylvie Gallet frm. 
+Carr2048 {; Modified Sylvie Gallet frm.
   z=conj((0.3,0.6)*(pixel))*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel)
   c=(-0.7456,-0.13)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -841,7 +841,7 @@ Carr2048 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2049 {; Modified Sylvie Gallet frm. 
+Carr2049 {; Modified Sylvie Gallet frm.
   z=c=conj((0.3,0.6)*(pixel))*sqr(pixel)\
        -conj(0.010/pixel)-flip(0.010/pixel)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -860,7 +860,7 @@ Carr2049 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2050 {; Modified Sylvie Gallet frm. 
+Carr2050 {; Modified Sylvie Gallet frm.
   z=c=sinh((-0.7456,0.2)*(pixel))*sqr(pixel)\
         -conj(0.010/pixel)-flip(0.010/pixel)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -879,7 +879,7 @@ Carr2050 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2051 {; Modified Sylvie Gallet frm. 
+Carr2051 {; Modified Sylvie Gallet frm.
   c=pixel*sqr(pixel)+conj(0.00010/pixel)\
       +flip(0.00010/pixel)+tanh(0.00010/pixel)
   z=pixel-conj(0.010/pixel)-flip(0.010/pixel)
@@ -996,7 +996,7 @@ Carr2058 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2059 {; Modified Sylvie Gallet frm.   
+Carr2059 {; Modified Sylvie Gallet frm.
   z=pixel+1/sqrt(0.0010/pixel)*(tan(0.0010/pixel))
   c=pixel-1/log(0.010/pixel)*(1/tan(0.10/pixel))
   compt=0, limit=real(p1/(1/cos(pixel/5))), bailout=4
@@ -1010,7 +1010,7 @@ Carr2059 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2060 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2060 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1026,7 +1026,7 @@ Carr2060 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2061 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2061 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.10/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1042,7 +1042,7 @@ Carr2061 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2062 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2062 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=pixel*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1058,7 +1058,7 @@ Carr2062 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2063 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2063 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=pixel*sqr(pixel)-conj(0.10/pixel)-sqr(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1074,7 +1074,7 @@ Carr2063 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2064 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2064 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=pixel*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1090,7 +1090,7 @@ Carr2064 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2065 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2065 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=flip(imag(pixel))
   z=pixel*sqr(pixel)-(sqr(conj(0.10/pixel)))-sqr(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1106,7 +1106,7 @@ Carr2065 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2066 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2066 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=flip(imag(sqr(pixel)))
   z=pixel*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1122,7 +1122,7 @@ Carr2066 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2067 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2067 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=1.33*(pixel)
   z=conj(pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1138,7 +1138,7 @@ Carr2067 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2068 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2068 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1154,7 +1154,7 @@ Carr2068 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2069 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2069 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sinh(conj(pixel*pixel))
   z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1170,7 +1170,7 @@ Carr2069 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2070 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2070 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sqr(conj(0.75*(pixel*pixel)))
   z=conj(pixel)*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*conj(z)
@@ -1186,7 +1186,7 @@ Carr2070 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2071 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2071 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*conj(z)
@@ -1202,7 +1202,7 @@ Carr2071 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2072 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2072 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=conj(flip(pixel))*pixel
   z=flip(imag(1-pixel))*sqr(pixel)\
       -(conj(0.10/pixel))-sqr(flip(0.010/pixel))
@@ -1219,7 +1219,7 @@ Carr2072 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2073 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2073 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel*sqr(pixel)-(conj(0.10/pixel))-sqr(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*conj(z)
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
@@ -1306,7 +1306,7 @@ Carr2078 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2079 {;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2079 {;Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=conj(pixel)*sqr(pixel)-sqr(conj(0.010/pixel))-(flip(0.10/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
@@ -1321,7 +1321,7 @@ Carr2079 {;Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2080 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2080 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=flip(imag(1-pixel))*sqr(conj(pixel))\
       -(conj(0.10/pixel))-flip(0.010/pixel)
@@ -1338,7 +1338,7 @@ Carr2080 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2081 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2081 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=flip(imag(1-pixel))*pixel*conj(pixel)\
         -(conj(0.10/pixel))-flip(0.010/pixel)
@@ -1355,7 +1355,7 @@ Carr2081 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2082 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2082 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sqr(pixel)/(conj(pixel))
   z=flip(imag(1-pixel))*pixel*conj(pixel)\
         -(conj(0.10/pixel))-flip(0.010/pixel)
@@ -1372,7 +1372,7 @@ Carr2082 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2083 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2083 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sqr(sqr(sinh(pixel)))/conj(pixel)
   z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1388,7 +1388,7 @@ Carr2083 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2084 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2084 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sqr(sqr(sinh(pixel)))/conj(pixel)
   z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1404,7 +1404,7 @@ Carr2084 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2085 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2085 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=sinh(pixel)^5/conj(pixel)^1.5
   z=pixel*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1420,7 +1420,7 @@ Carr2085 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2086 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2086 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=conj(pixel-0.33)
   z=conj(pixel-0.33)*sqr(pixel)-(conj(0.10/pixel))+sqr(flip(0.010/pixel))
   z1 = 2.25*z, z2 = 3.25*z, z3 = 5.375*z, z4 = 10.0625*z
@@ -1436,7 +1436,7 @@ Carr2086 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2087 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2087 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel
   z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   z1 = 2.25*z, z2 = 3.25*z, z3 = 5.375*z, z4 = 10.0625*z
@@ -1452,7 +1452,7 @@ Carr2087 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=flip(conj(1-pixel))*sqr(pixel)\
        -(conj(0.0005/pixel))-sqr(flip(0.03/pixel))
@@ -1469,7 +1469,7 @@ Carr2088 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2089 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2089 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=flip(conj(1-pixel))*sqr(pixel)\
       -(conj(0.0005/pixel))-sqr(flip(0.09/pixel))
@@ -1486,7 +1486,7 @@ Carr2089 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2090 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2090 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=conj(-0.8006,-0.149)
   z=flip(1/acos(1-pixel))*sqr(pixel)\
        -(conj(0.0005/pixel))-sqr(flip(0.09/pixel))
@@ -1503,7 +1503,7 @@ Carr2090 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2091 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2091 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=conj(-0.8006,-0.149)
   z=flip(1/atan(1-pixel))*sqr(pixel)\
         -(conj(0.005/pixel))-sqr(flip(0.09/pixel))
@@ -1520,7 +1520,7 @@ Carr2091 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2092 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2092 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=pixel*conj(pixel^2)-conj(0.10/pixel)-(0.0450/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1536,7 +1536,7 @@ Carr2092 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2093 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2093 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=sqr(1-pixel)*sqr(pixel)-sqr(conj(0.010/pixel))-(flip(0.10/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
@@ -1551,7 +1551,7 @@ Carr2093 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2094 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2094 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.63,-0.4)
   z=acos(1-pixel)^2-(conj(0.10/pixel))-(flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1567,7 +1567,7 @@ Carr2094 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2095 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2095 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.63,-0.4)
   z=acos(1-pixel)^2-(conj(0.10/pixel))-sqr(asin(0.10/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1583,7 +1583,7 @@ Carr2095 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2096 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2096 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=pixel-conj(0.10/pixel-flip(0.010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1599,7 +1599,7 @@ Carr2096 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2097 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2097 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 6.0625*z
@@ -1615,7 +1615,7 @@ Carr2097 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2098 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2098 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-1.099,0.235)
   z=flip(pixel)*conj(pixel+0.433)\
        -conj(0.010/pixel)-sqr(flip(0.0010/pixel))
@@ -1632,7 +1632,7 @@ Carr2098 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2099 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2099 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(conj(tan(pixel)))-conj(0.10/pixel)-flip(0.010/pixel)
   z=flip(pixel)*conj(sqr(pixel+0.433))\
       -(conj(0.10/pixel))-sqr(flip(0.010/pixel))
@@ -1649,7 +1649,7 @@ Carr2099 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2100 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2100 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=(conj(tan(pixel)))-sqr(conj(0.10/pixel))-sqr(flip(0.020/pixel))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1665,7 +1665,7 @@ Carr2100 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2101 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2101 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel-1/((log(tan(pixel))^10)+pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
@@ -1680,7 +1680,7 @@ Carr2101 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2102 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2102 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1696,7 +1696,7 @@ Carr2102 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2103 {; Modified Sylvie Gallet frm. 
+Carr2103 {; Modified Sylvie Gallet frm.
   z=c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
   compt=0, limit=real(p1*cos(pixel/5)), bailout=4
   p=(-0.743380900000982,-0.131850030300002):
@@ -1709,7 +1709,7 @@ Carr2103 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2104 {; Modified Sylvie Gallet frm. 
+Carr2104 {; Modified Sylvie Gallet frm.
   z=flip(1-pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel)
   c=(-0.8006,-0.149)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -1717,7 +1717,7 @@ Carr2104 {; Modified Sylvie Gallet frm.
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z*z+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -1728,7 +1728,7 @@ Carr2104 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2105 {; Modified Sylvie Gallet frm. 
+Carr2105 {; Modified Sylvie Gallet frm.
   z=flip(1+pixel)*sqr(conj(pixel))-conj(0.10/pixel)+flip(0.010/pixel)
   c=(-0.63,-0.4)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -1736,7 +1736,7 @@ Carr2105 {; Modified Sylvie Gallet frm.
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z*z+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -1747,14 +1747,14 @@ Carr2105 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2106 {; Modified Sylvie Gallet frm. 
+Carr2106 {; Modified Sylvie Gallet frm.
   z=c=pixel-2/(sinh(0.10/pixel)-sqr(tanh(0.010/pixel)))
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z*z+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -1765,7 +1765,7 @@ Carr2106 {; Modified Sylvie Gallet frm.
 }
 
 
-Carr2107 {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2107 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.8006,-0.149)
   z=pixel-1/(sinh(0.10/pixel)-sqr(cosh(0.0250/pixel)))
   z1 = 1.5*z, z2 = 2.25*z, z3 = 3.375*z, z4 = 5.0625*z
@@ -1788,7 +1788,7 @@ Carr2108 {; Modified Sylvie Gallet frm.
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z2+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -1807,7 +1807,7 @@ Carr2109 {; Modified Sylvie Gallet frm.
   zn = center+rad/(pix-center), limit = real(p1)
   test0 = 1, b1 = 16, b2 = 0.0001, test3=0 :
   test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
-  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2 
+  z = (z-zn)*test2 + zn, z2 = z*z, z4 = z2*z2
   z1 = (z4*z-1)/(4*z4+(z4==0))
   z = (z2+c)*test1 + (z-z1)*(1-test1)
   test3 = (test3 || (|z|>b1))
@@ -2978,7 +2978,7 @@ Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2178a {; Modified Bob Carr 
+Carr2178a {; Modified Bob Carr
            ; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5
   c=sin(conj(-0.81256,-0.2495))
@@ -4572,7 +4572,7 @@ Carr2266 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2267 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  r = newpixel*8, j = flip(3.5*newpixel-0.5)+conj(newpixel-0.6) 
+  r = newpixel*8, j = flip(3.5*newpixel-0.5)+conj(newpixel-0.6)
   p5 = 0.45*newpixel
   z=tanh(newpixel)-1/sqrt(j+0.5550/j-conj(0.030/newpixel)\
       -flip(0.0550/newpixel)+2/r)
@@ -4594,7 +4594,7 @@ Carr2267 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2268 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  r = newpixel*8, j = flip(3.5*newpixel-0.9)+conj(newpixel-0.9) 
+  r = newpixel*8, j = flip(3.5*newpixel-0.9)+conj(newpixel-0.9)
   p5 = 0.18*newpixel
   z=tanh(2*newpixel)-1/sqrt(j+0.5550/j-conj(0.030/newpixel)\
       -flip(0.0550/newpixel)+2/r)
@@ -4616,7 +4616,7 @@ Carr2268 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2269 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  r = newpixel*8, j = flip(3.5*newpixel-0.9)+conj(newpixel-0.9) 
+  r = newpixel*8, j = flip(3.5*newpixel-0.9)+conj(newpixel-0.9)
   p5 = 0.18*newpixel
   z=conj(flip(2*newpixel))-1/sqrt(j+0.5550/j-conj(0.030/newpixel)\
      -flip(0.0550/newpixel)+2/r)
@@ -5439,7 +5439,7 @@ Carr2310 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2311 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
-  m1 = 1/newpixel, m = conj(m1) 
+  m1 = 1/newpixel, m = conj(m1)
   m2 = sqr(sqr(0.125*newpixel + cabs(newpixel^4.9)))
   z = m2 - tanh(newpixel/3)^2 - conj(tan(newpixel^4.3)) + sqr(m/(1.5*m1))
   c = sin(-0.87446,0.189)
@@ -5740,9 +5740,9 @@ Carr2326 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z5 = 7.59375*z+d1
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct, c = c*t + ct
   z = z^2.2 + c + sinh(0.25*z)
@@ -5758,14 +5758,14 @@ Carr2327 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   c = sqr(0.1*newpixel/conj(0.009*newpixel-cos(1/newpixel)-conj(1/newpixel)))-0.35
   z=abs(newpixel*8)/(sqr(2*newpixel)-flip(5/newpixel)+1/newpixel+conj(1/newpixel))-0.15
   d1 = -0.00499917/newpixel + flip(0.0001/newpixel), d5 = 5*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct, c = c*t + ct
   z = z*z + c + sinh(0.25*z)
@@ -5781,14 +5781,14 @@ Carr2328 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z = newpixel - flip(0.01/newpixel)-conj(0.1/newpixel) + 0.285
   c = conj(flip(sqr(sqr(newpixel-conj(0.15/newpixel)))))
   d1 = -0.0013899/newpixel + flip(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*th1*t + ct - d2, c = c*t + ct
   z = z*z + c + sinh(0.25*z)
@@ -5804,14 +5804,14 @@ Carr2329 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   m = sin(newpixel) + sinh(newpixel) + cabs(newpixel) + conj(newpixel)
   z = m + flip(newpixel), c = 2*newpixel
   d1 = -0.0005045/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct - d2, c = c*t + ct
   z = z*z + c
@@ -5827,14 +5827,14 @@ Carr2330 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   m = tan(newpixel) - tanh(newpixel)
   z = 2*m + flip(newpixel), c = (-0.7,0.2)
   d1 = -0.0003545/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
-  l1 = real(p1), l2 = imag(p1), l3 = real(p2) 
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
   l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct - d2, c = c*t + ct
   z = z^2.45 + c + sinh(z/6)
@@ -5850,13 +5850,13 @@ Carr2331 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   m = sqr(cosh(newpixel)) - sqr(cos(newpixel))
   z = 2*m + flip(newpixel), c = (-0.7,0.2)
   d1 = -0.0003545/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
-  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1 
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
   z4 = 3.375*z+d1, z5 = 5.0625*z+d1
   l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2), l5 = 300
   bailout = 16, iter = 0 :
-  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3 
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
   t4 = iter==l4, t5 = iter==l5
-  t = 1-(t1||t2||t3||t4) 
+  t = 1-(t1||t2||t3||t4)
   ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
   z = z*t + ct - d2, c = c*t + ct
   z = z^2.45 + c + sinh(z/6)
@@ -6293,7 +6293,7 @@ Carr2356 (YAXIS) {; Modified Sylvie Gallet frm.
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m1 = 1/newpixel, m = conj(m1)
   m2 = sqr(sqr(1.125*newpixel + cabs(newpixel^4.9))) - 0.3
-  z = c = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\ 
+  z = c = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\
           + sqr(cos(m/6)/sin(m1/4))
   d1 = -0.00035056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6313,7 +6313,7 @@ Carr2357 (YAXIS) {; Modified Sylvie Gallet frm.
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m1 = 1/newpixel, m = conj(m1)
   m2 = sqr(sqr(1.125*newpixel + cabs(newpixel^4.9))) - 0.3
-  z = c = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\ 
+  z = c = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\
           + sqr(cos(m/6)/sin(m1/4))
   d1 = -0.00035056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6333,9 +6333,9 @@ Carr2358 (YAXIS) {; Modified Sylvie Gallet frm.
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m1 = 1/newpixel, m = conj(m1)
   m2 = sqr(sqr(1.125*newpixel + cabs(newpixel^4.9))) - 0.3
-  z = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\ 
+  z = m2 - tanh(newpixel)^2 - conj(tan(newpixel^4.3))\
       + sqr(cos(m/6)/sin(m1/4))
-  c = m2 - sinh(newpixel)*2 - flip(sin(newpixel^4.3))\ 
+  c = m2 - sinh(newpixel)*2 - flip(sin(newpixel^4.3))\
       + sqr(cotan(m/6)/flip(m1/4))
   d1 = -0.00035056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6356,7 +6356,7 @@ Carr2359 (YAXIS) {; Modified Sylvie Gallet frm.
   m1 = 1/newpixel, m = conj(m1)
   m2 = sqr(sqr(1.125*newpixel + cabs(newpixel^4.9))) - 0.6
   m3 = sqr(cotan(m/6)/flip(m1/4))
-  z = c = 1.6*m2 - sinh(newpixel/3.3)*2.3 - flip(imag(newpixel^4.3))\ 
+  z = c = 1.6*m2 - sinh(newpixel/3.3)*2.3 - flip(imag(newpixel^4.3))\
           + m3 - 0.2
   d1 = -0.00035056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6466,7 +6466,7 @@ Carr2364 (YAXIS) {; Modified Sylvie Gallet frm.
 Carr2365 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
-  z = c = sinh(newpixel^2)\ 
+  z = c = sinh(newpixel^2)\
           - cabs(4*newpixel-conj(1/(newpixel*150))-flip(0.001/newpixel))
   d1 = -0.00075056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6485,7 +6485,7 @@ Carr2366 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   z = tanh(newpixel) - cabs(newpixel/1.3-conj(0.01/newpixel)-flip(0.001/newpixel))
-  c = sinh(newpixel/2)\ 
+  c = sinh(newpixel/2)\
       - cabs(newpixel-conj(1/(newpixel*15))-flip(0.001/newpixel)) + 0.3
   d1 = -0.00095056/newpixel + flip(0.0001/newpixel)
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6579,7 +6579,7 @@ Carr2371 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m = conj(tanh(conj(sinh(newpixel+flip(0.0035/newpixel)))))
-  c = cabs(newpixel+flip(0.0055/newpixel))\ 
+  c = cabs(newpixel+flip(0.0055/newpixel))\
       - 1/log(newpixel-1/tan(0.001/newpixel))^4.8
   z = 2*m + newpixel - flip(0.0035/newpixel)
   d1 = -0.00015956/newpixel + flip(0.0001/newpixel)
@@ -6672,7 +6672,7 @@ Carr2376 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   m = sinh(newpixel+flip(0.0035/newpixel))
-  z = 2.5*tanh(newpixel^3.5)\ 
+  z = 2.5*tanh(newpixel^3.5)\
       - sin(0.001/newpixel-tan(0.01/newpixel))+conj(0.001/newpixel)+0.135
   c = m + 3*tan(newpixel-flip(0.0035/newpixel))
   d1 = flip(-0.00014756/newpixel) + 0.0001/newpixel
@@ -6729,7 +6729,7 @@ Carr2379 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel = -abs(real(pixel)) + flip(imag(pixel))
   c = (-0.7806,-0.135)
-  z = (newpixel/2)^1.25\ 
+  z = (newpixel/2)^1.25\
       - 1/(atan(0.1/newpixel) - sqr(acos(0.025/newpixel)))^3 + 0.15
   d1 = flip(-0.00029756/newpixel) + 0.0001/newpixel
   iter = 0, nextzoom = iterspace = real(p1) :
@@ -6772,7 +6772,7 @@ Carr2381 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6790,7 +6790,7 @@ Carr2382 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6808,7 +6808,7 @@ Carr2383 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6826,7 +6826,7 @@ Carr2384 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6843,7 +6843,7 @@ Carr2385 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6861,7 +6861,7 @@ Carr2386 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6879,7 +6879,7 @@ Carr2387 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6897,7 +6897,7 @@ Carr2388 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(1-test) 
+  z=z*(1-test)
   c=c*(1-test)+flip(d1)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -6917,9 +6917,9 @@ Carr2389 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
@@ -6938,9 +6938,9 @@ Carr2390 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
@@ -6959,9 +6959,9 @@ Carr2391 (YAXIS) {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*newpixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
@@ -6978,9 +6978,9 @@ Carr2392 {; Modified Brian Jones frm.
   z1=c1=1.5*z, z2=c2=fn3((coracao)*pixel)
   l1= real(p1), l2=imag(p1)
   bailout=16, iter=0:
-  t1=(iter==l1), t2=(iter==l2) 
-  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+  t1=(iter==l1), t2=(iter==l2)
+  z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+  c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
   z=z*z+c
   iter=iter+1
   |z|<=bailout
@@ -7069,7 +7069,7 @@ Carr2396 (YAXIS) {; Modified Brian Jones frm.
 }
 
 
-Carr2397 {; Modified Brian E. Jones frm. mans-galore-012 
+Carr2397 {; Modified Brian E. Jones frm. mans-galore-012
   z=c=conj(flip(2*pixel))
   iter=0, x=real(z), y=imag(z)
   nextzoom=iterspace=real(p1), magnification=imag(p1)
@@ -7086,7 +7086,7 @@ Carr2397 {; Modified Brian E. Jones frm. mans-galore-012
 }
 
 
-Carr2398 {; Modified Brian E. Jones frm. mans-galore-012 
+Carr2398 {; Modified Brian E. Jones frm. mans-galore-012
   z=c=(pixel-(conj(0.050/pixel)+flip(conj(0.0010/pixel)))^4)
   iter=0, x=real(z), y=imag(z)
   nextzoom=iterspace=real(p1), magnification=imag(p1)
@@ -7170,7 +7170,7 @@ Carr2402 (YAXIS) {; Modified Brian E. Jones frm. mans-galore-012
   z=z*(1-test)+x1+flip(y1)
   c=c*(1-test)+test*magnification*c
   z=z*z+c
-    ; c=log(1+z) 
+    ; c=log(1+z)
   iter=iter+1
   |z|<=16
   ;SOURCE: 42icarr.frm
@@ -7602,7 +7602,7 @@ Carr2423 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -7726,21 +7726,21 @@ Carr2429 {; Modified Brian E. Jones frm. mans-galore-012
 
 
 Carr2430 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=c=0.55*((2*newpixel-flip(0.010/newpixel)-conj(0.10/newpixel)))
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+(1.099,0.0)
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7748,21 +7748,21 @@ Carr2430 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2431 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=c=conj(conj(newpixel/2-conj(0.10/newpixel)))
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+(2.099,0.0)
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7770,7 +7770,7 @@ Carr2431 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2432 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=conj(conj(newpixel/2-conj(0.10/newpixel)))
@@ -7783,9 +7783,9 @@ Carr2432 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1.2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7793,20 +7793,20 @@ Carr2432 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2433 {; Sylvie Gallet [101324,3444], Mod. BEJ
-          ; Revised for Fractint v20 by G. Martin 
+          ; Revised for Fractint v20 by G. Martin
   z=conj(conj(pixel/3-conj(0.10/pixel)))
   c=conj(pixel^3)-conj(0.10/pixel)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7814,21 +7814,21 @@ Carr2433 {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2434 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=c=newpixel-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^6
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
   y1=y-p2*fn1(x+p3*fn2(x)), iter=1
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7836,22 +7836,22 @@ Carr2434 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2435 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=cabs(2*newpixel)-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^6
   c=newpixel-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^6
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1.2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7859,7 +7859,7 @@ Carr2435 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2436 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=cabs(2*newpixel)-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^2+0.4
@@ -7867,14 +7867,14 @@ Carr2436 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
   y1=y-p2*fn1(x+p3*fn2(x)), iter=1
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7882,7 +7882,7 @@ Carr2436 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2437 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=cabs(2*newpixel)-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^2+0.4
@@ -7890,14 +7890,14 @@ Carr2437 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
   y1=y-p2*fn1(x+p3*fn2(x)), iter=1
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1.5
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7905,22 +7905,22 @@ Carr2437 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2438 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=((newpixel-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel))))^2)^4
   c=(-0.7456,0.2)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7928,22 +7928,22 @@ Carr2438 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2439 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=cabs(2*newpixel)-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel)))^2+0.3
   c=(-0.7456,0.2)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7951,22 +7951,22 @@ Carr2439 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2440 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=((newpixel-1/(tanh(0.10/newpixel)-sqr(sinh(0.0250/newpixel))))^2)^4
   c=(-1.099,-0.3249)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+3
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7974,22 +7974,22 @@ Carr2440 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2441 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=((cabs(3*newpixel)-1/(conj(0.10/newpixel)-sqr(flip(0.0250/newpixel))))^2)^4
   c=(-1.099,-0.3249)/2
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+4
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -7997,22 +7997,22 @@ Carr2441 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2442 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=sinh(newpixel^2)-1/log(newpixel-(0.10/newpixel)-flip(0.0010/newpixel))
   c=sin(conj(-0.7896,-0.1309)/3)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1.5
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -8020,22 +8020,22 @@ Carr2442 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2443 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   z=(newpixel-(conj(0.10/newpixel)+flip(conj(0.010/newpixel)))^4)
   c=(-0.7456,-0.3815)/1.7
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -8043,7 +8043,7 @@ Carr2443 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 
 Carr2444 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   m3=conj(0.10/newpixel)
@@ -8051,15 +8051,15 @@ Carr2444 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
   c=(-1.099,-0.2249)
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
-  y1=y-p2*fn1(x+p3*fn2(x)), iter=1 
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  y1=y-p2*fn1(x+p3*fn2(x)), iter=1
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+1
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -8068,7 +8068,7 @@ Carr2444 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 Carr2445 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=-abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   m3=conj(0.10/newpixel)
   z=(conj(0.5-newpixel)*sqr(cabs(newpixel))-m3-sqr(flip(0.00510/newpixel)))-0.44:
@@ -8080,7 +8080,7 @@ Carr2445 (YAXIS) {; modified Jo Weber frm.
 
 
 Carr2446 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
-                  ; Revised for Fractint v20 by G. Martin 
+                  ; Revised for Fractint v20 by G. Martin
                   ; Added variable "newpixel". G.Martin 6/15/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   m3=conj(0.10/newpixel)
@@ -8089,14 +8089,14 @@ Carr2446 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
   x=real(z), y=imag(z)
   x1=x-p2*fn1(y+p3*fn2(y))
   y1=y-p2*fn1(x+p3*fn2(x)), iter=1
-  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1) 
+  rad=fn1(3.1*fn3(x1+flip(y1))), center=(1.0,0.1)
   pix=fn2(10*newpixel+(5.0,-3.4))*(-0.1,-0.95)
   zn=center+fn4(rad)/(pix-center)
   limit=real(p1), b1=16, b2=0.0001:
   test1=(iter<limit), test2=(iter!=limit)
-  z=(z-zn)*test2+zn  
+  z=(z-zn)*test2+zn
   z2=z*z, z4=z2*z2, z1=(z4*z-1)/(4*z4)
-  z=(z2+c)*test1+(z-z1)*(1-test1)  
+  z=(z2+c)*test1+(z-z1)*(1-test1)
   iter=iter+2
   ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
   ;SOURCE: 42jcarr.frm
@@ -8105,7 +8105,7 @@ Carr2446 (YAXIS) {; Sylvie Gallet [101324,3444], Mod. BEJ
 
 Carr2447 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=-abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   m3=conj(0.10/newpixel)
   z=(cabs(0.5-newpixel)*sqr(conj(newpixel))-m3-sqr(flip(0.00510/newpixel)))-0.3:
@@ -8118,7 +8118,7 @@ Carr2447 (YAXIS) {; modified Jo Weber frm.
 
 Carr2448 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=1/(newpixel-1/log(0.0010/newpixel)-cos(0.010/newpixel+1.25)-conj(0.10/newpixel)):
   oldz=z
@@ -8130,7 +8130,7 @@ Carr2448 (YAXIS) {; modified Jo Weber frm.
 
 Carr2449 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=(newpixel-flip(0.0010/newpixel)-cabs(0.010/newpixel)-conj(0.10/newpixel)):
   oldz=z
@@ -8142,7 +8142,7 @@ Carr2449 (YAXIS) {; modified Jo Weber frm.
 
 Carr2450 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=flip(0.33-sin(newpixel))*sqr(newpixel)-conj(0.10/newpixel)-flip(0.010/newpixel):
   oldz=z
@@ -8154,7 +8154,7 @@ Carr2450 (YAXIS) {; modified Jo Weber frm.
 
 Carr2451 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=newpixel-conj(0.090/newpixel-flip(0.010/newpixel)):
   oldz=z
@@ -8166,7 +8166,7 @@ Carr2451 (YAXIS) {; modified Jo Weber frm.
 
 Carr2452 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=newpixel-((tan(1/newpixel)+sin(1/newpixel)-flip(1/newpixel))):
   oldz=z
@@ -8178,7 +8178,7 @@ Carr2452 (YAXIS) {; modified Jo Weber frm.
 
 Carr2453 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=cabs(newpixel)-(((0.3,0.6)+newpixel)/(0.20/newpixel)):
   oldz=z
@@ -8190,7 +8190,7 @@ Carr2453 (YAXIS) {; modified Jo Weber frm.
 
 Carr2454 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=newpixel*sqr(newpixel)-conj(0.010/newpixel)-flip(0.010/newpixel):
   oldz=z
@@ -8202,7 +8202,7 @@ Carr2454 (YAXIS) {; modified Jo Weber frm.
 
 Carr2455 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   m3=flip(cabs(1-newpixel))*sqr(conj(newpixel))
   z=m3-(conj(0.10/newpixel))-flip(0.010/newpixel):
@@ -8215,7 +8215,7 @@ Carr2455 (YAXIS) {; modified Jo Weber frm.
 
 Carr2456 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=sqr(newpixel)/(conj(newpixel)):
   oldz=z
@@ -8227,7 +8227,7 @@ Carr2456 (YAXIS) {; modified Jo Weber frm.
 
 Carr2457 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=flip(cabs(1+newpixel))-flip(0.010/newpixel):
   oldz=z
@@ -8239,7 +8239,7 @@ Carr2457 (YAXIS) {; modified Jo Weber frm.
 
 Carr2458 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   m3=cabs(newpixel+0.5)*conj(conj(newpixel^7))
   z=(m3-conj(0.10/newpixel)-sqr(flip(0.00510/newpixel)))-0.25:
@@ -8252,7 +8252,7 @@ Carr2458 (YAXIS) {; modified Jo Weber frm.
 
 Carr2459 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=abs(conj(newpixel))-0.15:
   oldz=z
@@ -8264,7 +8264,7 @@ Carr2459 (YAXIS) {; modified Jo Weber frm.
 
 Carr2460 (YAXIS) {; modified Jo Weber frm.
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=conj(conj(newpixel*newpixel-flip(0.010/newpixel)-conj(0.10/newpixel))):
   oldz=z
@@ -8277,7 +8277,7 @@ Carr2460 (YAXIS) {; modified Jo Weber frm.
 Carr2461 (YAXIS) {; modified Jo Weber frm.
      ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
                   ; Added variable "newpixel". G.Martin 6/15/99
-  newpixel=-abs(real(pixel))+flip(imag(pixel)) 
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
   pm1=p1-1
   z=(1.5*newpixel^9)-cabs(0.08*newpixel-flip(0.01/newpixel))+conj(0.0535/newpixel)\
     +0.09:
@@ -8412,7 +8412,7 @@ Carr2468 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=(sqr(z*z)+c)
   iter=iter+1
@@ -8427,7 +8427,7 @@ Carr2469 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=(z^5+c)
   iter=iter+1
@@ -8442,7 +8442,7 @@ Carr2470 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -8457,7 +8457,7 @@ Carr2471 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/pixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/pixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -8474,7 +8474,7 @@ Carr2472 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/newpixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/newpixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=z^2+c
   iter=iter+1
@@ -12791,7 +12791,7 @@ Carr2697 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/newpixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/newpixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=z^2+c+0.08/newpixel
   iter=iter+1
@@ -12810,7 +12810,7 @@ Carr2698 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/newpixel)) 
+  z=(z*(1-test))+flip(imag(0.03750/newpixel))
   c=c*(1-test)+d1+test*(p2*c+p3)
   z=z^2+c+0.1
   iter=iter+1
@@ -14144,7 +14144,7 @@ Carr2763 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 
 Carr2763_hm {; Modified Sylvie Gallet frm. [101324,3444],1996
    ; passes=1 needs to be used with this PHC formula.
-   ; modified Carr2763 using "FracText" (alpha-3) 
+   ; modified Carr2763 using "FracText" (alpha-3)
    ; by Jan Maarten van der Valk
    ; places the text "BOB CARR 1996" in bottom right corner
    ; Added variable "newpixel". G.Martin 6/15/99
@@ -15090,7 +15090,7 @@ Carr2808 {; Modified Sylvie Gallet frm. [101324,3444],1996
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+pp2
   z=z*z+c-0.087
   iter=iter+1
-  |z|<=bailout 
+  |z|<=bailout
   ;SOURCE: 96msg.frm
 }
 
@@ -15477,7 +15477,7 @@ Carr2825 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))\
      +flip(imag(0.03750/pixel)))*whitesq
   z=(|z|/5)+z*z+c-0.09/pixel
@@ -15489,12 +15489,12 @@ Carr2825 {; Modified Sylvie Gallet frm.
 
 Carr2827 {; Modified Sylvie Gallet frm.
           ; passes=1 needs to be used with this PHC formula.
-  c=(-0.7456,-0.132)/2 
+  c=(-0.7456,-0.132)/2
   z=flip(conj(cabs((0.25+pixel))))-conj(0.1/pixel-flip(0.01/pixel))^5
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))\
     +flip(imag(0.03750/pixel)))*whitesq
   z=(|z|/5)+z*z+c-0.1/pixel
@@ -15513,7 +15513,7 @@ Carr2828 (YAXIS) {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test)) 
+  z=(z*(1-test))
   c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)\
     +((z*(1-test))+flip(imag(0.03750/newpixel)))*whitesq
   z=(|z|/5)+z*z+c-0.1/newpixel
@@ -15534,7 +15534,7 @@ Carr2829 (YAXIS) {; Modified Sylvie Gallet frm.
   b8=0.09/newpixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -15553,7 +15553,7 @@ Carr2830 (YAXIS) {; Modified Sylvie Gallet frm.
   b8=0.1/newpixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -15570,7 +15570,7 @@ Carr2831 {; Modified Sylvie Gallet frm.
   b8=0.1/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -15587,7 +15587,7 @@ Carr2832 {; Modified Sylvie Gallet frm.
   b8=0.1/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -15603,7 +15603,7 @@ Carr2833 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
@@ -15619,7 +15619,7 @@ Carr2834 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
@@ -15635,7 +15635,7 @@ Carr2835 {; Modified Sylvie Gallet frm.
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c
   iter=iter+1
@@ -15652,7 +15652,7 @@ Carr2836 {; Modified Sylvie Gallet frm.
   b8=0.13/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -15669,7 +15669,7 @@ Carr2837 {; Modified Sylvie Gallet frm.
   b8=0.13/pixel:
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=z*(test==0) 
+  z=z*(test==0)
   c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
   z=(|z|/5)+z*z+c-b8
   iter=iter+1
@@ -17007,7 +17007,7 @@ Carr2906 {; Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2907 (XYAXIS) {; Halley PHC
                    ; passes=1 needs to be used with this PHC formula.
   b5=1/pixel
-  z=b5*(whitesq+b5*(whitesq==0)): 
+  z=b5*(whitesq+b5*(whitesq==0)):
   z5=z*z*z*z*z
   z6=z5*z
   z7=z6*z
@@ -17020,7 +17020,7 @@ Carr2907 (XYAXIS) {; Halley PHC
 Carr2908 (XYAXIS) {; Halley
                    ; passes=1 needs to be used with this PHC formula.
   b5=(pixel)
-  z=b5*(whitesq+2*b5*(whitesq==0)): 
+  z=b5*(whitesq+2*b5*(whitesq==0)):
   z5=z*z*z*z*z
   z6=z5*z
   z7=z6*z
@@ -17341,7 +17341,7 @@ Carr2924 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 
 
-Carr2925 {; Modified-inandout04 
+Carr2925 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -17359,7 +17359,7 @@ Carr2925 {; Modified-inandout04
 }
 
 
-Carr2926 {; Modified-inandout04 
+Carr2926 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))

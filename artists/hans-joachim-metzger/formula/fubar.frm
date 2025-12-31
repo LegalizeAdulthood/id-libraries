@@ -16,7 +16,7 @@ Zeppo {; Mutation of 'Liar4'.
    |z| <= 1
   ;SOURCE: fract196.frm
 }
- 
+
 Chico {; Mutation of 'M-SetInNewton'. Mutated by Bradley Beacham [74223,2745]
        ; Original formula by Jon Horner [100112,1700]
        ; For 'M-SetInNewton' set FN1 & FN2 =IDENT and P1 & P2 = default
@@ -32,7 +32,7 @@ Chico {; Mutation of 'M-SetInNewton'. Mutated by Bradley Beacham [74223,2745]
   0.01 <= |(z-oldz)|
   ;SOURCE: dons.frm
 }
- 
+
 Curly {; Mutation of 'Natura'. Mutated by Bradley Beacham [74223,2745]
        ; Original formula by Michael Theroux [71673,2767]
        ; For 'Natura', set FN1 & FN2 =IDENT and P1 & P2 = default
@@ -46,7 +46,7 @@ Curly {; Mutation of 'Natura'. Mutated by Bradley Beacham [74223,2745]
   |z| <= test
   ;SOURCE: dons.frm
 }
- 
+
 Groucho {; Mutation of 'Fish2'.
     ; Original formula by Dave Oliver via Tim Wegner
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -71,7 +71,7 @@ Groucho {; Mutation of 'Fish2'.
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Harpo {; Mutation of 'Gopalsamy3'. Mutated by Bradley Beacham [74223,2745]
    ; Original formula by Ron Barnett [70153,1233]
    ; For 'Gopalsamy3' with Ron's suggested parameters,
@@ -89,7 +89,7 @@ Harpo {; Mutation of 'Gopalsamy3'. Mutated by Bradley Beacham [74223,2745]
   |z| <= test
   ;SOURCE: dons.frm
 }
- 
+
 Larry {; Mutation of 'Michaelbrot' and 'Element'
     ; Original formulas by Michael Theroux [71673,2767]
     ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -114,7 +114,7 @@ Larry {; Mutation of 'Michaelbrot' and 'Element'
    |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Moe {; Mutation of 'Zexpe'.
      ; Original formula by Lee Skinner [75450,3631]
      ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -132,7 +132,7 @@ Moe {; Mutation of 'Zexpe'.
   |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+
 Moe {; Mutation of 'Zexpe'.
      ; Original formula by Lee Skinner [75450,3631]
      ; Modified for if..else logic 3/19/97 by Sylvie Gallet
@@ -150,4 +150,4 @@ Moe {; Mutation of 'Zexpe'.
   |z| <= test
   ;SOURCE: fract196.frm
 }
- 
+

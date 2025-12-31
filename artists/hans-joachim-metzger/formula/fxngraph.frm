@@ -22,7 +22,7 @@ fxn_pixel             { ; Hiram Berry <burningb@burningbridges.com>
   :
   1==0
 }
- 
+
 sqr_pixel             { ; Hiram Berry <burningb@burningbridges.com>
                         ;  Fri, 7 May 2004 00:51:06
           ; use a complex rendering palette (+-3bit centered on color 141)
@@ -48,4 +48,4 @@ sqr_pixel             { ; Hiram Berry <burningb@burningbridges.com>
   :
   1==0
 }
- 
+

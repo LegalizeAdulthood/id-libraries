@@ -169,7 +169,7 @@ iter=iter+1
 
 dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
                    ; This is the angle relative to the origin.
- 
+
         IF (imag(p2) == 0)                ; Invalid value for aspect ratio.
           p2 = (0,1) + real(p2)                ; Substitute a default value.
         ENDIF
@@ -183,10 +183,10 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
         point = 0                        ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)        ; Compute rotation vector.
-        
+
         z = 0, c = pixel:                ; Mandelbrot initialization.
         z = sqr(z) + c                        ; Mandelbrot calculation.
- 
+
         done = done + 1                        ; Done one more iteration.
         z2 = (z-p1) * r                        ; Offset to p1 and rotate.
         z2 = real(z2) + flip(imag(z2) * imag(p2)) ; Distort aspect.
@@ -199,13 +199,13 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
           z = point                        ; Return closest point.
           done = -1                        ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                        ; Continue if the flag is clear.
 }
 
 dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
                    ; This is the angle relative to p1.
- 
+
         IF (real(p3) == 0)                ; Invalid value for color scale.
           p3 = 75 + flip(imag(p3))        ; Substitute a default value.
         ENDIF
@@ -216,10 +216,10 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         point = 0                        ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)        ; Compute rotation vector.
-        
+
         z = 0, c = pixel:                ; Mandelbrot initialization.
         z = sqr(z) + c                        ; Mandelbrot calculation.
- 
+
         done = done + 1                        ; Done one more iteration.
         z2 = (z-p1) * r                        ; Offset to p1 and rotate.
         d = abs(imag(z2) * real(z2))        ; Compute hyperbolic distance.
@@ -231,13 +231,13 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
           z = point - p1                ; Return closest point.
           done = -1                        ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                        ; Continue if the flag is clear.
 }
 
 dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
                    ; This is the angle relative to the origin.
- 
+
         IF (real(p3) == 0)                ; Invalid value for color scale.
           p3 = 75 + flip(imag(p3))        ; Substitute a default value.
         ENDIF
@@ -248,10 +248,10 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
         point = 0                        ; Point of that closest approach.
         done = 2                        ; Iteration counter.
         r = (0,1) ^ (real(p2)/90)        ; Compute rotation vector.
-        
+
         z = 0, c = pixel:                ; Mandelbrot initialization.
         z = sqr(z) + c                        ; Mandelbrot calculation.
- 
+
         done = done + 1                        ; Done one more iteration.
         z2 = (z-p1) * r                        ; Offset to p1 and rotate.
         d = abs(imag(z2) * real(z2))        ; Compute hyperbolic distance.
@@ -263,7 +263,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
           z = point                        ; Return closest point.
           done = -1                        ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                        ; Continue if the flag is clear.
 }
 
@@ -319,7 +319,7 @@ January_gen  { ; Modified Sylvie Gallet "january" formula
           ; Based on Scott Burns equation solver applied to z^3-1 = 0
           ; Use decomp = 256
           ; generalized by Les St Clair, Dec 1997
-          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp 
+          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp
           ; for default behaviour
   z1 = pixel, iter = 0
   a = 23*(0,0.0245436)       ; 23 * 2i pi / 256
@@ -382,7 +382,7 @@ Lesfrm30 { ; Modified Sylvie Gallet formula
    x1 = x + p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y + p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi  , y = (y1*pi)/(x*x*x)
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
   }
 
@@ -390,7 +390,7 @@ Lesfrm34 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1^pi , y = y1^pi
    z = (x + flip(y))^pi
@@ -401,7 +401,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -416,7 +416,7 @@ Lesfrm43    { ; Modified Sylvie Gallet formula
   beta = fn2(h/r) , alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :

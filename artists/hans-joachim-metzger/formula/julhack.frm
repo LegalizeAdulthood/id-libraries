@@ -9,7 +9,7 @@ z=z*z+y+p
 y=z*z/y
 |z|<b
 }
- 
+
 j_cspiralbullet(XAXIS_NOIMAG) {
 ;needs floating point!
 ;default for p1=0.4
@@ -19,7 +19,7 @@ z=y/z+p
 y=z*y-p
 |z|<1e6
 }
- 
+
 j_quasijoint(XAXIS_NOIMAG) {
 ;the formula isn't Julia-like, but the formations and its behavior is
 ;default for p1=0.18, also try -0.2
@@ -32,4 +32,4 @@ z=z*z+y+p
 y=z*z-y
 |z|<b
 }
- 
+

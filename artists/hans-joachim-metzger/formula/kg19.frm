@@ -5,7 +5,7 @@ kg1901 {
   |z| <= p2
   ;SOURCE: kg19.frm
 }
- 
+
 kg1902 {
   z=1+pixel, c=p1-c:
   z=fn1(z+c)+fn2(c+z)
@@ -13,7 +13,7 @@ kg1902 {
   |z| <= p1
   ;SOURCE: kg19.frm
 }
- 
+
 kg1903 {
   z=z+1/pixel, c=1/pixel:
   z=1/fn1(z)+1/c
@@ -21,7 +21,7 @@ kg1903 {
   |z| <= p1
   ;SOURCE: kg19.frm
 }
- 
+
 kg1904 {
   z=1/pixel, c=pixel/p1:
   z=fn1(z)+c
@@ -29,4 +29,4 @@ kg1904 {
   |z| <= p1
   ;SOURCE: kg19.frm
 }
- 
+

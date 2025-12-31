@@ -13,7 +13,7 @@ H04-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby14.frm
 }
- 
+
 U02-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Copyright (c)1998,1999 Morgan L. Owens
                  ; Chebyshev Types:
@@ -35,7 +35,7 @@ U02-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby14.frm
 }
- 
+
 U03-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = 2zU02-U01
@@ -50,4 +50,4 @@ U03-14 (XYAxis) {; V.1.1 - earlier versions may be discarded
   bailout<=sqrt(|(|z|)-(|oz|)|)
   ;SOURCE: chby14.frm
 }
- 
+

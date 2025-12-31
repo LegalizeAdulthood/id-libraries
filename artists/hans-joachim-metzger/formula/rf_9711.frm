@@ -14,14 +14,14 @@ rfr0a41 {; Rolf Freericks
   PHC_bailout
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a51 {; Rolf Freericks
   z=pixel:
   z=(z*z-p1)/p2*z
   |z|<=4
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a53 {; Rolf Freericks
   z=zh=pixel:
   zh2=zh*zh
@@ -36,7 +36,7 @@ rfr0a53 {; Rolf Freericks
   |z|>=p2
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a72 {; Rolf Freericks
          ; requires floating point
          ; try integer for "nice erros"
@@ -48,7 +48,7 @@ rfr0a72 {; Rolf Freericks
   |z|>=p2
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a81 {; Rolf Freericks
   z=pixel, fourp2=4*p2:
   z2=z*z
@@ -58,7 +58,7 @@ rfr0a81 {; Rolf Freericks
   |z|<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a84 {; Rolf Freericks
   z=sqr(pixel), fourp2=4*p2:
   z2=z*z
@@ -68,28 +68,28 @@ rfr0a84 {; Rolf Freericks
   |z|<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a91 {; Rolf Freericks
   z=pixel:
   z=z*sqr(z)-p1
   z<=p2
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a92 {; Rolf Freericks
   z=pixel:
   z=z*sqr(z)-p1
   abs(z)<=p2
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a93 {; Rolf Freericks
   z=pixel:
   z=z-((z*z-p1)/(2*z))*sin(2*z)-p2
   z<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0aa1 {; Rolf Freericks
   z=pixel:
   z=z*z-p1
@@ -97,7 +97,7 @@ rfr0aa1 {; Rolf Freericks
   |z|<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0ab1 {; Rolf Freericks
   zh=z=pixel:
   z=z*z-fn1(zh)
@@ -106,7 +106,7 @@ rfr0ab1 {; Rolf Freericks
   |z|<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0ab2 {; Rolf Freericks
   zh=z=pixel, zh=fn1(zh+p1):
   z=z*z-zh
@@ -114,11 +114,11 @@ rfr0ab2 {; Rolf Freericks
   |z|<=p3
   ;SOURCE: gal2.par
 }
- 
+
 rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
          ; Complex-form of SPIDERJUL
          ; float=yes
-         ; modified by Rolf Freericks 
+         ; modified by Rolf Freericks
          ; the original is cited at the end
   z = pixel, c = p1
   IF (whitesq)
@@ -137,11 +137,11 @@ rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
     ;  |z| <= 4
   ;SOURCE: gal2.par
 }
- 
+
 rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
          ; Complex-form of SPIDERJUL
          ; float=yes
-         ; modified by Rolf Freericks 
+         ; modified by Rolf Freericks
          ; the original is cited at the end
   z = pixel
   IF (whitesq)
@@ -165,8 +165,8 @@ rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
     ;  |z| <= 4
   ;SOURCE: gal2.par
 }
- 
-rfr0ah1 {; Rolf Freericks 
+
+rfr0ah1 {; Rolf Freericks
   z = pixel
   c=p1
   :
@@ -176,8 +176,8 @@ rfr0ah1 {; Rolf Freericks
   |z| <= 4
   ;SOURCE: gal2.par
 }
- 
-rfr0ak1 {; Rolf Freericks 
+
+rfr0ak1 {; Rolf Freericks
   c = pixel
   h=z=p1
   :
@@ -186,7 +186,7 @@ rfr0ak1 {; Rolf Freericks
   |fn2(z)| >p2
   ;SOURCE: gal2.par
 }
- 
+
 rfr09u0 {
   z1=z=pixel, z2=sqr(z), out=4*(p2<=0)+p2*(p2>0):
   z1=z1*z1+p1+(-1.1,0.25)
@@ -195,7 +195,7 @@ rfr09u0 {
   |z|<out
   ;SOURCE: gal2.par
 }
- 
+
 rfr0a71 {; Rolf Freericks, rfreericks@compuserve.com
          ; requires floating point
          ; try integer for "nice erros"
@@ -208,4 +208,4 @@ rfr0a71 {; Rolf Freericks, rfreericks@compuserve.com
   |z|>=p2
   ;SOURCE: gal2.par
 }
- 
+

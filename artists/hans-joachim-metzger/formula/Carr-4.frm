@@ -4,7 +4,7 @@ Carr-145 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-147 {
   z=c=1/pixel:
   z=(flip(z*z)) + c
@@ -12,7 +12,7 @@ Carr-147 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-149 {
   z=c=1/pixel:
   z=sqr(flip(z*z*z)) + c
@@ -20,7 +20,7 @@ Carr-149 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-150 {
   z=c=1/pixel:
   z=sqr(flip(z*z*z)) + c
@@ -28,14 +28,14 @@ Carr-150 {
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-151 {; Dr. Chaosbrot 1 Modified
   z=c=pixel:
   z=sqr(z*z) + (((sqrt(5)+1)/2)+c)
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-152 {
   z=c=1/pixel:
   z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c)
@@ -43,7 +43,7 @@ Carr-152 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-153 {
   z=c=1/pixel:
   z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c)
@@ -51,7 +51,7 @@ Carr-153 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-154 {
   z=c=1/pixel:
   z=sqr(flip(z)) + c
@@ -60,7 +60,7 @@ Carr-154 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-155 {
   z=c=1/pixel:
   z=sqr(flip(z)) + c
@@ -69,7 +69,7 @@ Carr-155 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-156 {
   z=c=pixel:
   z=sqr(flip(z)) + c
@@ -78,7 +78,7 @@ Carr-156 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-157 {
   z=c=pixel:
   z=sqr(flip(z*z)) + c
@@ -87,7 +87,7 @@ Carr-157 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-158 {
   z=c=1/pixel:
   z=sqr(flip(z)) + c/pixel
@@ -96,7 +96,7 @@ Carr-158 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-159 {
   z=c=1/sqr(pixel):
   z=sqr(z) + c
@@ -104,7 +104,7 @@ Carr-159 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-160 {
   z=c=sqr(pixel):
   z=sqr(z) + c
@@ -112,7 +112,7 @@ Carr-160 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-161 {
   z=c=sqr(pixel):
   z=sqr(z*z) + c
@@ -120,7 +120,7 @@ Carr-161 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-162 {
   z=c=sqr(1/pixel):
   z=sqr(z*z) + c
@@ -128,7 +128,7 @@ Carr-162 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-163 {
   z=c=sin(1/pixel):
   z=sqr(z*z) + c
@@ -136,7 +136,7 @@ Carr-163 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-164 {
   z=c=sin(pixel):
   z=sqr(z*z) + c
@@ -144,7 +144,7 @@ Carr-164 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-165 {
   z=c=sin(pixel):
   z=sqr(z*z) + c
@@ -153,4 +153,4 @@ Carr-165 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+

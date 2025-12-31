@@ -16,21 +16,21 @@ z=z*z-c
 |0.0001|<z
 }
 
-BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13" 
- z = pixel 
+BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13"
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = fn4(x/fn3(y))
  |z| <= 4
 }
 
 BJ-Lesfrm13-004 { ; Modified Les St Clair formula, 1996
                   ; modified by Brian E. Jones
- z = pixel 
+ z = pixel
  x = fn1(z*z) , y = fn2(z*z):
  x = fn3(x)*p1*pi
- y = fn4(y)*p2*pi 
+ y = fn4(y)*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -39,14 +39,14 @@ BJ-SG-3-03-gb { ;Brian E. Jones [102702,2213]
                           ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
- x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = x1+flip(y1)  
+ x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = x1+flip(y1)
  |z| <= 4
 }
 
 BJ-SG-5-07-c { ; Modified Gallet 5-07
-	       ; Sylvie Gallet [101324,3444], 1996 
+	       ; Sylvie Gallet [101324,3444], 1996
   z = pixel , x = fn3(z*(0,1)) , y = fn4(z*(0,-1)) :
    hx = p1*fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
@@ -100,7 +100,7 @@ F_TEXT_A2Z { ; Les St Clair 1996
           ; Created using "FracText" (alpha-1) by Jan Maarten van der Valk
           ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
           ; suggested default values for fn1|fn2|fn3 are exp|ident|ident
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)
@@ -173,8 +173,8 @@ FRACTEST { ; TEST formula by Les St Clair 1996
           ; Created using "FracText" by Jan Maarten van der Valk
           ; Two formulas "FRAC" and "TEXT" have been amalgamated
           ; There is an error in the way the program handles the letter "C"
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, 
-xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x,
+xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chrf1 = (y<1.25000&&y>1.15000)||(y>1.60000)
@@ -193,7 +193,7 @@ chre2 = ((x<-0.50000)||chre2)&&((x>-0.60000)&&(x<-0.10000))
 chrx3 = (y<xx+-0.60000&&y>xx+-0.82361)||(y>-xx+0.20000&&y<-xx+0.42361)
 chrt4 = y>0.20000&&x>0.61180&&x<1.21180
 chrt4 = chrt4||(x>0.86180&&x<0.96180)
-test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000)) 
+test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000))
 test2 = 1 - fn2(real(chrt1||chre2||chrx3||chrt4)*real(y>-0.70000)*real(y<0.30000))
 z = 1+(0,-.65)/fn3(pixel+(0.0,.75)) :
 z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
@@ -201,7 +201,7 @@ z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
 }
 
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-          ; requires 'periodicity=0' 
+          ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2 , x=real(z) , y=imag(z) , x1=x*1.8 , x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -215,8 +215,8 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
    z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
     (|n|>=0.0001) && test
@@ -343,14 +343,14 @@ Gallet-3-07 (YAXIS) {; Sylvie Gallet [101324,3444], 1996
                 ; Newton's method applied to
                 ; x -> sin(y)^2+cos(x)^3 = 0
                 ; y -> cos(x)^2+sin(y)^3 = 0
- z = 0.05/pixel , x=real(z) , y=imag(z) 
- cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+ z = 0.05/pixel , x=real(z) , y=imag(z)
+ cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
  cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy :
  d = 6*(cx*sy-4)     ; normal value -->  d = 9*(cx*sy-4)
  x = x+(sy3+3*sy*cx3-2*cx2)/(cx*sx*d)
  y = y-(cx3+3*cx*sy3-2*sy2)/(sy*cy*d)
  z = x + flip(y)
- cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+ cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
  cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy
  |sy2+cx3+flip(cx2+sy3)| > 0.00001
 }
@@ -452,7 +452,7 @@ r=q/p1
 z=z+r,|z| <=4
 }
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
 c=z=pixel:
 z=z+(fn1(c^2)/fn2(z^2))/c^4,|z| <=6
 }
@@ -465,17 +465,17 @@ Lesfrm12 { ; Les St Clair, 1996
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
 
 LesPHCfrm04 { ; Les St Clair [101461,2032], 1996  Requires passes=1
               ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-              ; Earl Glynn 
+              ; Earl Glynn
         z = pixel:
         x = 1 - abs(imag(z)-real(z))
         z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -490,18 +490,18 @@ mandel_nest{; George Martin [76440,1143]
 	    ;     2 is half the size (linear; 1/4 the area size)
 	    ; imag(p1) is clockwise rotation of the image in degrees
             ; p2 - real portion moves image along the x axis, imag
-	    ;     portion along the y axis. + = right,up. 
+	    ;     portion along the y axis. + = right,up.
 	    ; real(p3) - iteration spacing. 256 and multiples causes
-	    ;     nested images to have same coloring. Default 256 
+	    ;     nested images to have same coloring. Default 256
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180:
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = c*(1 - test) + test*newpixel
   z = z*z + c
   iter = iter + 1
@@ -575,26 +575,26 @@ merryxms_01 { ; Les St Clair [101461.2032@compuserve.com] December 1996
   z =c*pixel:
   z=z*z+p1
   |z|<4&&test0==0
-  }	
+  }
 
 Moo { ;; Requires Periodicity=0
 z = pixel:
 z = z + p1
-r = tan(1/z) + pixel 
-z = fn1(z)/sqrt(r)^e 
-|z| < 4                 
+r = tan(1/z) + pixel
+z = fn1(z)/sqrt(r)^e
+|z| < 4
 }
 
 Moo_PHC {; by Vincent Damion Presogna, Oct. 18, 1996
-         ; optimised by George Martin 
-  z = pixel 
-  halfe = e*(-0.5) 
+         ; optimised by George Martin
+  z = pixel
+  halfe = e*(-0.5)
   quartere = e*(-.25):
   z = z + p1
   y = tan(1/z)
   r = y + pixel
   q = y * pixel
-  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1) 
+  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1)
   |z| <= 4
 }
 

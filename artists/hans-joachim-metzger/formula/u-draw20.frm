@@ -1,6 +1,6 @@
 u-draw18_04 {; Sylvie Gallet, Bob Carr
-  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^7 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(sinh(pixel+p1))^e)-fn3(pixel+p2)^7
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -14,7 +14,7 @@ u-draw18_04 {; Sylvie Gallet, Bob Carr
   |z|<=16
   ;SOURCE: u-draw18.frm
 }
- 
+
 u-draw20_00 {; credits Sylvie Gallet and Bob Carr
   z=fn1(fn2(tan(fn3(pixel+p1))^e))-conj(tan(pixel+p2)^7)\
       -conj(0.01/pixel-flip(0.001/pixel))-0.3
@@ -32,10 +32,10 @@ u-draw20_00 {; credits Sylvie Gallet and Bob Carr
   |z|<=16
   ;SOURCE: u-draw20.frm
 }
- 
+
 u-draw20_01 {; credits Sylvie Gallet and Bob Carr
-  z=fn1(fn2(sinh(pixel+p1))^pi)-fn3(pixel+p2)^5 
-  c=fn4(z)-(|0.1/z|) 
+  z=fn1(fn2(sinh(pixel+p1))^pi)-fn3(pixel+p2)^5
+  c=fn4(z)-(|0.1/z|)
   c1 = 1.5*z, c2=2.25*z, c3=3.375*z, c4 =5.0625*z, c5=6.25*z
   l1=1000, l2=1500, l3=2000, l4=2500, l5=3000, iter=0 :
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3)
@@ -49,4 +49,4 @@ u-draw20_01 {; credits Sylvie Gallet and Bob Carr
   |z|<=16
   ;SOURCE: u-draw20.frm
 }
- 
+

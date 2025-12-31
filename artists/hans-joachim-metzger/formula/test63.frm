@@ -16,7 +16,7 @@ multifrac63 {
   endif
   |z| > (x*y*w)
   }
- 
+
 multifrac63 {
   z = pixel:
   y2=fn2(y+p1)
@@ -35,4 +35,4 @@ multifrac63 {
   endif
   |z| > (x*y*w)
   }
- 
+

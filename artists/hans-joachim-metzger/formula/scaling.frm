@@ -44,4 +44,4 @@ CompareRayfilMandl    { ; Hiram Berry <burningb@burningbridges.com>
   ENDIF
   ins_col
 }
- 
+

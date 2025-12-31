@@ -12,7 +12,7 @@ V-Euler {
   |z|<=p2
   ;SOURCE: davfav1.frm
 }
- 
+
 marlinZZa (XAXIS) {; Prof Jm using Newton-Raphson method
                    ; use floating point with this one
   z=pixel, solution=1:
@@ -22,7 +22,7 @@ marlinZZa (XAXIS) {; Prof Jm using Newton-Raphson method
   0.05 <= |solution-z1|
   ;SOURCE: davfav1.frm
 }
- 
+
 zmincosz (XAXIS) {
   z = pixel:
   fz = z - cos(z)
@@ -31,4 +31,4 @@ zmincosz (XAXIS) {
   0.0001 <= |fz|
   ;SOURCE: davfav1.frm
 }
- 
+

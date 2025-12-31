@@ -1,5 +1,5 @@
 ;
-;       These formulafile is from Karl Geigl 100327,156. 
+;       These formulafile is from Karl Geigl 100327,156.
 ;
 
 
@@ -7,7 +7,7 @@
   z = pixel:
   a = z ^ p1
   b = 1 / a
-  z = fn1(a) * fn2(b) 
+  z = fn1(a) * fn2(b)
   |z| <= p2
 }
 
@@ -15,7 +15,7 @@
   z = 1/pixel:
   a = z ^ p1
   b = 1 / a
-  z = fn1(a) * fn2(b) 
+  z = fn1(a) * fn2(b)
   |z| <= p2
 }
 

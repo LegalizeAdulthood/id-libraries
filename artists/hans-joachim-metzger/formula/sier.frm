@@ -9,7 +9,7 @@ jhgraphs1  { ; Jos Hendriks <jos@hexaedre-fr.com>
   real(Pixel)+real(p3))-imag(Pixel)|<imag(p3)||\
   |real(Pixel)|<.001|||imag(Pixel)|<.001
  }
- 
+
 jhparabola { ; Jos Hendriks <jos@hexaedre-fr.com>
              ; Mon, 23 Dec 2002 21:01:01
              ; draws a parabola.  Thickness depends on p1.
@@ -17,18 +17,18 @@ jhparabola { ; Jos Hendriks <jos@hexaedre-fr.com>
   :
   |real(Pixel)^2-imag(Pixel)-1.25|<p1
  }
- 
+
 Jhsierpinski { ; Jos Hendriks <jos@hexaedre-fr.com>
                ; Sun, 29 Dec 2002 21:30:14
                ; escape time formula for the Sierpinski triangle
-  z=Pixel: 
-  IF (real(z)<.5 && imag(z)>.5) 
-    z=2*z-(0,1) 
-  ELSEIF(real(z)>.5) 
-    z=2*z-(1,0) 
-  ELSE 
-    z=2*z 
-  ENDIF 
-  |z|<p1 
+  z=Pixel:
+  IF (real(z)<.5 && imag(z)>.5)
+    z=2*z-(0,1)
+  ELSEIF(real(z)>.5)
+    z=2*z-(1,0)
+  ELSE
+    z=2*z
+  ENDIF
+  |z|<p1
  }
- 
+

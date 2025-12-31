@@ -11,4 +11,4 @@ Jh_square     { ; Jos Hendriks <jos@hexaedre-fr.com>
   z=a*a+flip(b*b)+c
   real(z)<p2 && imag(z)<p2
  }
- 
+

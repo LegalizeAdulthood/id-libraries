@@ -15,7 +15,7 @@ Carr1981 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1983 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel , p10=10*pixel, th1 = tanh(1)
@@ -33,7 +33,7 @@ Carr1983 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1984 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
@@ -51,7 +51,7 @@ Carr1984 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1986 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=(-0.7456,0.2), p10=10*pixel, th1=tanh(1)
@@ -69,7 +69,7 @@ Carr1986 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1987 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=1/pixel, c=1/pixel, p10=10*pixel, th1=tanh(1)
@@ -87,7 +87,7 @@ Carr1987 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1990 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=(pixel-conj(pixel/5)), c=(-0.7456,0.2)-0.099/pixel
@@ -106,7 +106,7 @@ Carr1990 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1999 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z = c = pixel+1/log(pixel)
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
@@ -119,7 +119,7 @@ Carr1999 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2002 {; Modified Sylvie Gallet frm. [101324,3444], 1996
           ; requires "periodicity=0" (<g> command)
           ; imag(p1) = scale of the Julia set
@@ -136,7 +136,7 @@ Carr2002 {; Modified Sylvie Gallet frm. [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2003 {; Modified Sylvie Gallet frm. [101324,3444], 1996
           ; requires "periodicity=0" (<g> command)
           ; imag(p1) = scale of the Julia set
@@ -153,21 +153,21 @@ Carr2003 {; Modified Sylvie Gallet frm. [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2017 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=(pixel)-1/log(conj(0.5/pixel-1))
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2035 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-((1/pixel)/(1/log(cos(0.01/pixel))))-conj(0.105/pixel)
   c=(-0.7456,-0.171)
@@ -175,14 +175,14 @@ Carr2035 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2036 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-((1/pixel)/(1/log(cos(0.01/pixel))))-flip(imag(0.305/pixel))
   c=(-0.38652609,0.575229)+0.010/pixel
@@ -190,14 +190,14 @@ Carr2036 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c+0.057
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2040 {; Modified Sylvie Gallet frm.
   z=pixel, c=pixel-conj(0.10/pixel)-flip(0.10/pixel)
   iter = 1, rad = 6, center = (1.0,0.1)
@@ -214,7 +214,7 @@ Carr2040 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1978 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=(-0.7456,0.2), p10=10*pixel
@@ -232,7 +232,7 @@ Carr1978 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1982 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
@@ -250,7 +250,7 @@ Carr1982 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1987 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
   z=1/pixel, c=1/pixel, p10=10*pixel, th1=tanh(1)
@@ -268,10 +268,10 @@ Carr1987 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1988 {; Modified Sylvie Gallet frm.
           ; Revised for Fractint v20 by G. Martin
-  z=c=1/(pixel-conj(1/pixel)-flip(1/pixel)) 
+  z=c=1/(pixel-conj(1/pixel)-flip(1/pixel))
   p10=10*pixel, th1=tanh(1)
   iter = 1, rad = 6, center = (1.0,0.1)
   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
@@ -287,7 +287,7 @@ Carr1988 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1993 {; Modified Sylvie Gallet frm.
   z=imag(pixel), c=pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
   compt=0, limit=real(p1*cos(pixel/5)), bailout=4
@@ -299,7 +299,7 @@ Carr1993 {; Modified Sylvie Gallet frm.
   |z|<=bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1995 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Added variable "newpixel". G. Martin, 6/27/99
   newpixel=real(pixel)+flip(abs(imag(pixel)))
@@ -312,7 +312,7 @@ Carr1995 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1996 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel, c1=1.5*z, c2=2.25*z, c3=3.375*z, p0=0.099/pixel
   l1=real(p1), l2=imag(p1), l3=real(p2), bailout=16, iter=0 :
@@ -323,7 +323,7 @@ Carr1996 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |real(z)| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1997 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel, c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
@@ -335,20 +335,20 @@ Carr1997 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   |real(z)| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr1998 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel, c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
   |real(z)| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2000 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
                   ; Some optimizations made by G. Martin
   z=c=pixel-1/log(cos(1/pixel))
@@ -356,14 +356,14 @@ Carr2000 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2001 {; Modified Sylvie Gallet frm. [101324,3444], 1996
           ; requires "periodicity=0" (<g> command)
           ; imag(p1) = scale of the Julia set
@@ -379,7 +379,7 @@ Carr2001 {; Modified Sylvie Gallet frm. [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2003 {; Modified Sylvie Gallet frm. [101324,3444], 1996
           ; requires "periodicity=0" (<g> command)
           ; imag(p1) = scale of the Julia set
@@ -396,7 +396,7 @@ Carr2003 {; Modified Sylvie Gallet frm. [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2004 {; Modified Sylvie Gallet frm. [101324,3444], 1996
           ; requires "periodicity=0" (<g> command)
           ; imag(p1) = scale of the Julia set
@@ -413,7 +413,7 @@ Carr2004 {; Modified Sylvie Gallet frm. [101324,3444], 1996
   |z| <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2006 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=c=pixel-1/log(sinh(1/pixel))
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
@@ -426,21 +426,21 @@ Carr2006 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2007 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=pixel, z=pixel+1/log(pixel)
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2010 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   pp1=1/pixel, z=1/(pixel-real(pp1)+flip(imag(pp1)*2.924))
   c=1/(pixel-conj(pp1)-flip(pp1))
@@ -448,45 +448,45 @@ Carr2010 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=cos(imag(p1)), l3=real(p2), l4=cos(imag(p2))
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4) 
+  t=1-(t1||t2||t3||t4)
   z=z*t, c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+(c+(-0.3,0.6))
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2012 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel+1/log(pixel), c=pixel
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2016 (XAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel, c=(-0.3,0.6)
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2 = pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z2=z*z, z=z2*z/5+z2+c
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2018 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-1/log(10*pixel)*(sinh(0.1/pixel))
-  c=sqrt(pixel-conj(0.135/pixel))+pixel 
+  c=sqrt(pixel-conj(0.135/pixel))+pixel
   c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0 :
@@ -497,7 +497,7 @@ Carr2018 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2019 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-1/log(10*pixel)*(sinh(0.1/pixel))
   c=(-0.7456,-0.13)
@@ -511,7 +511,7 @@ Carr2019 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2020 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel+sqrt(10*pixel)*(tan(0.1/pixel))
   c=(-0.7456,-0.13)
@@ -525,7 +525,7 @@ Carr2020 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2021 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-1/log(cos(0.1/pixel))
   c=(-0.7456,-0.13)
@@ -539,7 +539,7 @@ Carr2021 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2022 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel+1/log(cos(0.1/pixel-0.025))*(tan(0.1/pixel-0.025))
   c=(-0.7456,-0.13)
@@ -554,7 +554,7 @@ Carr2022 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2023 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel+1/log(cos(0.1/pixel-0.025))*(tan(0.1/pixel-0.025))
   c=(-0.87456,-0.13)
@@ -568,7 +568,7 @@ Carr2023 {; Modified Sylvie Gallet frm. [101324,3444],1996
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2025 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=(pixel)-conj(0.1/pixel)-flip(0.1/pixel)
@@ -576,14 +576,14 @@ Carr2025 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2026 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.13)
   z=(pixel)-conj(0.1/pixel)-flip(0.1/pixel)
@@ -591,14 +591,14 @@ Carr2026 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z2=z*z, z=real(z)*z2/5+z2+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2027 {; Modified Sylvie Gallet frm. [101324,3444],1996
   c=(-0.7456,-0.171), p10=0.1/pixel
   z=(pixel)-conj(p10)-flip(p10)-cabs(p10)-tan(p10)
@@ -606,14 +606,14 @@ Carr2027 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2028 {; Modified Sylvie Gallet frm. [101324,3444],1996
   p10=10*pixel, z=pixel-1/log(sqrt(p10)*(tan(1/p10)))
   c=(-0.7456,-0.171)
@@ -621,14 +621,14 @@ Carr2028 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2030 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=sin(pixel)-log(sqrt(0.1/pixel)*cos(log(0.1/pixel)))
   c=(-0.7456,-0.171)
@@ -636,14 +636,14 @@ Carr2030 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2032 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=(pixel)-(conj(sqrt(0.1/pixel))/cos(sqrt(0.1/pixel)))/cosxx(pixel)
   c=(-0.7456,-0.171)
@@ -651,32 +651,32 @@ Carr2032 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2034 {; Modified Sylvie Gallet frm. [101324,3444],1996
   p01=0.1/pixel, sq=sqrt(p01)
   d2=tan(p01)/sq, d=conj(sq)/cos(sq)
   d1=d^(pixel-1), z=pixel-conj(0.10*d1)+d2
   c=(-0.7456,-0.171)
-  c1=1.5*z, c2=2.25*z 
+  c1=1.5*z, c2=2.25*z
   c3=3.375*z, c4=5.0625*z
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c-0.087
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2037 {; Modified Sylvie Gallet frm. [101324,3444],1996
   z=pixel-log(cos(0.01/pixel))/pixel-1/log(flip(imag(0.305/pixel)))
   c=(-0.38652609,0.575229)+0.010/pixel
@@ -684,14 +684,14 @@ Carr2037 {; Modified Sylvie Gallet frm. [101324,3444],1996
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0, pp2=pixel/imag(p2):
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
-  t=1-(t1||t2||t3||t4), z=z*t 
+  t=1-(t1||t2||t3||t4), z=z*t
   c=c*t + c1*t1 + c2*t2 + c3*t3 + c4*t4 + pp2
   z=z*z+c+0.057
   iter=iter+1
   (|real(z)|) <= bailout
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2039 {; Modified Sylvie Gallet frm.
   z = pixel+1/log(10*pixel)
   c = (-0.7456,-0.13)
@@ -709,7 +709,7 @@ Carr2039 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 Carr2042 {; Modified Sylvie Gallet frm.
   z=pixel-1/log(0.00000001)/pixel-conj(0.010/pixel)
   c=pixel-(0.00000001-z)/cosxx(1/log(0.00000001-z))
@@ -727,13 +727,13 @@ Carr2042 {; Modified Sylvie Gallet frm.
   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
   ;SOURCE: 42acarr.frm
 }
- 
+
 JoWe_04b (XYAXIS) {; Jo Weber [100424,35], 6/1996
                    ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=pixel*(-1)^(pixel>0)
   z = newpixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+newpixel
   ;SOURCE: jo_we_32.frm
 }
- 
+

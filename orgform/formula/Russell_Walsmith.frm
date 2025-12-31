@@ -163,7 +163,7 @@ z < 10000 }
 C4G           { ; Russell Walsmith <russw@lycos.com> <russwals@hotmail.com>
                 ; Wed, 05 Feb 2003 19:43:02
                 ; http://www.fibonacci-arrays.com/
-                ; p1 is (plus or minus) 1 or i 
+                ; p1 is (plus or minus) 1 or i
 x=real(pixel), y=imag(pixel)*p1
 a=b=0:
 a1 = a^2-p1^2*b^2
@@ -393,7 +393,7 @@ z < 64 }
 
 TMan        { ; Russell Walsmith <russw@lycos.com> <russwals@hotmail.com>
               ; Fri, 17 Jan 2003 11:12:25
-              ; http://www.fibonacci-arrays.com/Triternions.pdf 
+              ; http://www.fibonacci-arrays.com/Triternions.pdf
   c1=real(pixel),c2=imag(pixel),c3=p1
   z1=z2=z3=0:
   t1=z1*z1+2*z2*z3
@@ -431,9 +431,9 @@ z=(z1^2+z2^2+z3^2)^.5
 z < 64 }
 
 
-Triternions   { ; Russell Walsmith <russw@lycos.com> 
-                ; Sun, 26 Jun 2005 21:06:30 
-                ; http://www.fibonacci-arrays.com/ 
+Triternions   { ; Russell Walsmith <russw@lycos.com>
+                ; Sun, 26 Jun 2005 21:06:30
+                ; http://www.fibonacci-arrays.com/
 c1=real(pixel), c2=imag(pixel), c3=p1
 x=y=v=0:
      a = x^2+2*y*v
@@ -444,18 +444,18 @@ x=y=v=0:
 z < 1000 }
 
 
-MsetCset1   { ; Russell Walsmith <russw@lycos.com> 
-              ; Fri, 04 Nov 2005 21:15:57 
-              ; http://www.fibonacci-arrays.com/ 
+MsetCset1   { ; Russell Walsmith <russw@lycos.com>
+              ; Fri, 04 Nov 2005 21:15:57
+              ; http://www.fibonacci-arrays.com/
            ; toggle fn1 between 'ident' and 'conj'
 z=0, c=(pixel):
   z=fn1(z^2+c)
 z < 4 }
 
 
-MsetCset2   { ; Russell Walsmith <russw@lycos.com> 
-              ; Fri, 04 Nov 2005 21:15:57 
-              ; http://www.fibonacci-arrays.com/ 
+MsetCset2   { ; Russell Walsmith <russw@lycos.com>
+              ; Fri, 04 Nov 2005 21:15:57
+              ; http://www.fibonacci-arrays.com/
            ; toggle p1 between '1' and '-1'
 x=real(pixel),y=imag(pixel)
 x1=y1=0:
@@ -466,9 +466,9 @@ z=x1^2+y1^2
 z < 4 }
 
 
-3d_C-set    { ; Russell Walsmith <russw@lycos.com> 
-              ; Fri, 04 Nov 2005 21:15:57 
-              ; http://www.fibonacci-arrays.com/ 
+3d_C-set    { ; Russell Walsmith <russw@lycos.com>
+              ; Fri, 04 Nov 2005 21:15:57
+              ; http://www.fibonacci-arrays.com/
            ; periodicity=no, outside=summ
            ; maxit > p5real*(p5imag+1)
   ;--------------------------------------------
@@ -525,8 +525,8 @@ z < 4 }
   }
 
 
-tc-set    { ; Russell Walsmith <russw@lycos.com> 
-              ; Tue, 15 Nov 2005 23:29:53 
+tc-set    { ; Russell Walsmith <russw@lycos.com>
+              ; Tue, 15 Nov 2005 23:29:53
            ; periodicity=no, outside=summ
            ; maxit > p5real*(p5imag+1)
   ;--------------------------------------------
@@ -583,8 +583,8 @@ tc-set    { ; Russell Walsmith <russw@lycos.com>
   }
 
 
-MetaT-set   { ; Russell Walsmith <russw@lycos.com> 
-              ; Wed, 23 Nov 2005 00:40:27 
+MetaT-set   { ; Russell Walsmith <russw@lycos.com>
+              ; Wed, 23 Nov 2005 00:40:27
            ;periodicity=no, outside=summ
            ;maxit > p5real*(p5imag+1)
   ;--------------------------------------------
@@ -593,7 +593,7 @@ MetaT-set   { ; Russell Walsmith <russw@lycos.com>
   ;p2real: Far clipping plane
   ;p2imag: Near clipping plane
   ;p3real: Pixel^2 coefficient
-  ;p3imag: 
+  ;p3imag:
   ;p4real: z1(0)
   ;p4imag: Bailout
   ;p5real: Maxiter per slice
@@ -643,8 +643,8 @@ MetaT-set   { ; Russell Walsmith <russw@lycos.com>
   }
 
 
-T_C_morph   { ; Russell Walsmith <russw@lycos.com> 
-              ; Fri, 25 Nov 2005 21:47:41 
+T_C_morph   { ; Russell Walsmith <russw@lycos.com>
+              ; Fri, 25 Nov 2005 21:47:41
            ;periodicity=no, outside=summ
            ;maxit > p5real*(p5imag+1)
   ;--------------------------------------------
@@ -653,7 +653,7 @@ T_C_morph   { ; Russell Walsmith <russw@lycos.com>
   ;p2real: Far clipping plane
   ;p2imag: Near clipping plane
   ;p3real: Constant coefficient
-  ;p3imag: 
+  ;p3imag:
   ;p4real: z1(0)
   ;p4imag: Bailout
   ;p5real: Maxiter per slice

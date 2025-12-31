@@ -1,5 +1,5 @@
 Fractint-5 {; Sylvie Gallet [101324,3444], 1996
-            ; requires 'periodicity=0' 
+            ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025)), x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -14,15 +14,15 @@ Fractint-5 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = fn2(z*z)*(z*z), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-6 {; Sylvie Gallet [101324,3444], 1996
-            ; requires 'periodicity=0' 
+            ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -38,15 +38,15 @@ Fractint-6 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = fn2(fn3(z*z)*fn4(z*z)), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-10 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -62,18 +62,18 @@ Fractint-9-10 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95), rad = 3.1, center = (1.0,0.1) 
+  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95), rad = 3.1, center = (1.0,0.1)
   move = center+rad/(pix-center)
   test = 1 - fn2((move/p1)/(real(f||r||a||c||t1||i||n||t2)\
-       *real(y>-0.225)*real(y<0.225))) 
+       *real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -87,16 +87,16 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-12 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -110,16 +110,16 @@ Fractint-9-12 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))^3, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -133,16 +133,16 @@ Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))^3, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -156,16 +156,16 @@ Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025^3)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -180,16 +180,16 @@ Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025^3)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -204,16 +204,16 @@ Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-16 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025^33)))), x=real(z)
   y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -228,16 +228,16 @@ Fractint-9-16 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = fn2(1 - (real(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = fn2(1 - (real(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))
   z = 1+fn3((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = fn4(z*z)*(z*z), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+
 Fractint-9-20 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(fn2(pixel)-fn3(0.025)), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -253,10 +253,10 @@ Fractint-9-20 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
   ;SOURCE: bej012.frm
 }
- 
+

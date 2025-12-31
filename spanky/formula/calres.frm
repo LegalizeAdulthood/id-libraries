@@ -32,7 +32,7 @@ pheonix (XAXIS) {
   z  = z*z - zp2
   zp2 = zp1
   zp1 = conj(temp)
-  |zp1| <= 4 
+  |zp1| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -50,7 +50,7 @@ htd {
   temp = z
   z = zp1*zp1 - zp2
   zp2 = zp1
-  zp1 = p1/temp 
-  (|zp1| <= 64) && (|z| <= huge) 
+  zp1 = p1/temp
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }

@@ -13,4 +13,4 @@ acc_man_mod {; Modified Sylvie Gallet formula
   r < 4 && fn2(l - r) >= 0.001
   ;SOURCE: 97msg.frm
 }
- 
+

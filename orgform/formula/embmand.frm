@@ -86,8 +86,8 @@
         ;
         if (iter3 == maxit)
           done = 1
-          z = (0.2*other + slope*pixel)/(slope+0.1) 
-        endif     
+          z = (0.2*other + slope*pixel)/(slope+0.1)
+        endif
         ;
         ; continue if nothing happened
         ;

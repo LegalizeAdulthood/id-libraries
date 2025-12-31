@@ -7,4 +7,4 @@ oof7x (XYAXIS) {; Added variable "newpixel". G. Martin 6/29/99
   |z| <= p2
   ;SOURCE: kgoof7x.frm
 }
- 
+

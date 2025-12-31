@@ -6,11 +6,11 @@ contest4 {; Kerry Mitchell
   |z| <= 4
   ;SOURCE: contest.frm
 }
- 
+
 c5 {
   z=pixel, x=fn3(1/z+1), y=fn4(1/z-1):
   z=(fn1(z/x)*fn2(z/y))+c
   |z|<4
   ;SOURCE: ad1.frm
 }
- 
+

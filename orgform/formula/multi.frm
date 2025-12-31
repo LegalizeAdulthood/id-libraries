@@ -1,7 +1,7 @@
 ; ----------------------start-frms------------------------------
 ; Formulas by Albrecht Niekamp, Duesseldorf
 ;            <Albrecht.niekamp@t-online.de>
-; 
+;
 ; All formulas ending "a" are a basic variation, where
 ; x and y values are set to zero in the initial sequence.
 ; The formulas which are something in between Mandel and Julia,
@@ -3543,7 +3543,7 @@ multifrac91 {
 ; ----------------------start-frms------------------------------
 ; Formulas by Albrecht Niekamp, Duesseldorf
 ;            <Albrecht.niekamp@t-online.de>
-; 
+;
 ; All formulas ending "a" are a basic variation, where
 ; x and y values are set to zero in the initial sequence.
 ; The formulas which are something in between Mandel and Julia,
@@ -3884,7 +3884,7 @@ Multifrac_207 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_208 {
   fac=real(p1)
   bailout=imag(p1)
@@ -3909,7 +3909,7 @@ Multifrac_208 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_209 {
   fac=real(p1)
   bailout=imag(p1)
@@ -3931,7 +3931,7 @@ Multifrac_209 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_210 {
   fac=real(p1)
   bailout=imag(p1)
@@ -3954,7 +3954,7 @@ Multifrac_210 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_211 {
   fac=real (p1)
   bailout=imag(p1)
@@ -4001,7 +4001,7 @@ Multifrac_211 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_212 {
   fac=real (p1)
   bailout=imag(p1)
@@ -4050,7 +4050,7 @@ Multifrac_212 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_213 {
   ;p3=julia seed
   fac=real (p1)
@@ -4082,7 +4082,7 @@ Multifrac_213 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_214 {
   ;p3=julia seed
   fac=real (p1)
@@ -4114,7 +4114,7 @@ Multifrac_214 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_214 {
   ;p3=julia seed
   fac=real (p1)
@@ -4146,7 +4146,7 @@ Multifrac_214 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_215 {
   ;p3=julia seed
   fac=real (p1)
@@ -4178,7 +4178,7 @@ Multifrac_215 {
   endif
   |z| <=bailout
   }
-  
+
 Multifrac_216f {
   fac=real(p1)
   bailout=imag(p1)
@@ -4201,7 +4201,7 @@ Multifrac_216f {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_216 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4224,7 +4224,7 @@ Multifrac_216 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_216a {
   fac=real(p1)
   bailout=imag(p1)
@@ -4276,7 +4276,7 @@ Multifrac_217 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_217a {
   fac=real(p1)
   bailout=imag(p1)
@@ -4304,7 +4304,7 @@ Multifrac_217a {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_218 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4332,7 +4332,7 @@ Multifrac_218 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_218a {
   fac=real(p1)
   bailout=imag(p1)
@@ -4359,7 +4359,7 @@ Multifrac_218a {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_218ab {
   fac=real(p1)
   bailout=imag(p1)
@@ -4387,7 +4387,7 @@ Multifrac_218ab {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_219 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4417,7 +4417,7 @@ Multifrac_219 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_219a {
   fac=real(p1)
   bailout=imag(p1)
@@ -4447,7 +4447,7 @@ Multifrac_219a {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_219c {
   fac=real(p1)
   bailout=imag(p1)
@@ -4477,7 +4477,7 @@ Multifrac_219c {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_219d {
   fac=real(p1)
   bailout=imag(p1)
@@ -4507,7 +4507,7 @@ Multifrac_219d {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_220 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4541,7 +4541,7 @@ Multifrac_220 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_220a {
   fac=real(p1)
   bailout=imag(p1)
@@ -4575,7 +4575,7 @@ Multifrac_220a {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_223 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4610,7 +4610,7 @@ Multifrac_223 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_224 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4645,7 +4645,7 @@ Multifrac_224 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_225 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4669,7 +4669,7 @@ Multifrac_225 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_226 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4698,7 +4698,7 @@ Multifrac_226 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_227 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4722,7 +4722,7 @@ Multifrac_227 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_228 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4748,7 +4748,7 @@ Multifrac_228 {
   endif
   |z|<=bailout
   }
-  
+
 Multifrac_229 {
   fac=real(p1)
   bailout=imag(p1)
@@ -4792,8 +4792,8 @@ Multifrac_229 {
 ;
 ; Not all of the variations are fully tested.
 ; --------------------------------------------------------------
-  
-  
+
+
 Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
   ; Multifrac variations Albrecht Niekamp
   ; p1: Julia seed
@@ -4808,48 +4808,48 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
   ; center  = (x  , y)
   ; magxmag = (mag, xmagfactor)
   ; rotskew = (rot, skew)
-  
+
   bailout = real(p2)
-  
+
   if (imag(p2) > 0 && imag(p2) <= 100)
-  
+
     level = imag(p2) / 100         ; water level
     ampl = real(p3)                ; amplitude of the wave
     freq = imag(p3)                ; frequency
-  
+
     angle = real(rotskew * pi / 180)
     exp_irot = exp(-flip(angle))
     h = 1 / real(magxmag)
     w = h / 0.75 * imag(magxmag)
     tanskew = tan(imag(rotskew * pi / 180))
-  
+
     u = 2 * w * exp_irot
     v = 2 * h * (tanskew + flip(1)) * exp_irot
-  
+
     z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-  
+
     z = pixel - z3rd
-  
+
     b = imag(conj(u)*z) / imag(conj(u)*v)
-  
+
     if (b <= level)
       dy = level - b
       z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
     endif
-  
+
     z = z + z3rd
-  
+
   else
     z = pixel
   endif
-  
+
   if (ismand)
     c = z
   else
     c = p1
   endif
   :
-  
+
   ; multifrac3
     y2=y*y
     x2=x*x
@@ -4858,8 +4858,8 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
     z = sqr(z)+x+y
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.02.4 or later
 ;
@@ -4909,8 +4909,8 @@ Multi_lake2 {
     z = z^(z+x-y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.02.4 or later
 ;
@@ -4965,8 +4965,8 @@ Multi_lake3 {
     endif
     |z| <= bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.02.4 or later
 ;
@@ -5021,8 +5021,8 @@ Multi_lake3a {
     endif
     |z| <= bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5076,8 +5076,8 @@ Multi_lake3b {
     z=z*z-x-y
     |z| <= bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5136,8 +5136,8 @@ Multi_lake3c {
     z=z*z-x-y
     |z| <= bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5187,8 +5187,8 @@ Multi_lake4 {
     z = z^(z+x-y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multi_lake5 {
   ;
@@ -5236,8 +5236,8 @@ Multi_lake5 {
     z = sqr(z+x2+y2)
     |z| <= bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multilake_6 {
   ; p1: all layers
@@ -5246,7 +5246,7 @@ Multilake_6 {
   ; real part of p3: amplitude of the wave (try 0.2)
   ; imag part of p3: frequency (try 300)
   ; p4:third axis layers 2,3
-  
+
   cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
   bailout = real(p2)
@@ -5339,8 +5339,8 @@ Multilake_6 {
     endif
     phc_bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multilake_7 {
   ; p1: all layers
@@ -5444,8 +5444,8 @@ Multilake_7 {
     endif
     phc_bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5495,8 +5495,8 @@ Multi_lake8 {
     z = (z+x-y)^z
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5546,8 +5546,8 @@ Multi_lake9 {
     z = z^(z+x+y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5597,8 +5597,8 @@ Multi_lake10 {
     z =(z+x)^(z-y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 ; This file requires fractint 20.0.6 or later
 ;
@@ -5648,8 +5648,8 @@ Multi_lake11 {
     z =(z-x)^(z-y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multi_lake12 {
   ;
@@ -5697,8 +5697,8 @@ Multi_lake12 {
     z =(z*x)^(z*y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multi_lake13 {
   ;
@@ -5746,8 +5746,8 @@ Multi_lake13 {
     z =(z+x)^(z*y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multi_lake14   { ;additional 3d effect
   ;
@@ -5799,8 +5799,8 @@ Multi_lake14   { ;additional 3d effect
     z =(z+x)^(z*y)
     |z| <=bailout
     }
-  
-  
+
+
 ; --------------------------------------------------------------
 Multi_lake15   { ;additional 3d effect
   ;

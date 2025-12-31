@@ -6,7 +6,7 @@ JDfrm010 {; Jim Deutch [104074,3171], 1996.  The Original PHC formula
   |z| < 4
   ;SOURCE: phc.frm
 }
- 
+
 JDfrm021a {; Jim Deutch [104074,3171], 1996   Requires passes=1
   a = pixel, r = |a|, b = abs(a)
   q = conj(flip(b)) / real(r)
@@ -18,7 +18,7 @@ JDfrm021a {; Jim Deutch [104074,3171], 1996   Requires passes=1
   |z| - 4 < 10000000 * whitesq
   ;SOURCE: phc.frm
 }
- 
+
 JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
              ; resolution specific - 1024x768
              ; p1 = 1st julia parameters
@@ -33,7 +33,7 @@ JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
   |z| < 4
   ;SOURCE: phc_1.frm
 }
- 
+
 JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
              ; resolution specific - 1024x768
              ; p1 = 1st julia parameters
@@ -48,7 +48,7 @@ JDfrm031SF7 {; Jim Deutch: generalized 2-Julia pseudo-HiColor
   |z| < 4
   ;SOURCE: phc_1.frm
 }
- 
+
 JD-LS0 {; Lee Skinner [75450,3631], 1996  Requires passes=1
         ; Eliminated assignment to "pixel". G. Martin 6/29/99
   f1 = sin(.5*pixel)
@@ -59,7 +59,7 @@ JD-LS0 {; Lee Skinner [75450,3631], 1996  Requires passes=1
   |z| < 4
   ;SOURCE: phc.frm
 }
- 
+
 JD-SG-01 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
      ; Mandel: z^(p1+1) + c , inverted Newton: z^p1 - 1 = 0
      ; use p2 to adjust the size of the inverted Newton set
@@ -72,7 +72,7 @@ JD-SG-01 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   (|z| <= b1 && whitesq) || (|n| >= b2 && whitesq == 0)
   ;SOURCE: phc.frm
 }
- 
+
 JD-SG-02 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
      ; Mandel: z^2 + c, inverted Newton: z^p1 - 1 = 0
      ; use p2 to adjust the size of the inverted Newton set
@@ -85,7 +85,7 @@ JD-SG-02 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   (|z| <= b1 && whitesq) || (|n| >= b2 && whitesq == 0)
   ;SOURCE: phc.frm
 }
- 
+
 JD-SG-03 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
      ; Mandel: z^(p1+1) + c , Newton: z^p1 - 1 = 0
      ; use p2 to adjust the size of the inverted Newton set
@@ -97,7 +97,7 @@ JD-SG-03 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   (|z| <= b1 && whitesq) || (|n| >= b2 && whitesq == 0)
   ;SOURCE: phc.frm
 }
- 
+
 JD-SG-04 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
     ; use p1 and p2 to adjust the inverted Mandel
   z = c = pixel * whitesq + (p1 / (pixel+p2)) * (whitesq==0) :
@@ -105,7 +105,7 @@ JD-SG-04 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   |z| < 4
   ;SOURCE: phc.frm
 }
- 
+
 manjul_lace {; Requires passes=1   George Martin, 1996
              ; Modified for IF..ELSE logic by Sylvie Gallet, March 1997
              ; If Real(p1) is:
@@ -121,4 +121,4 @@ manjul_lace {; Requires passes=1   George Martin, 1996
   |z| <= 4
   ;SOURCE: ifs196.frm
 }
- 
+

@@ -31,8 +31,8 @@ dmj-Mand-Pnt-Ang-I { ; outside = decomp: angle of closest z[n] to point at p1
           z = point - p1                ; Return closest point.
           done = -1                     ; Set flag to force an exit.
         ENDIF
-        
+
         done >= 0                       ; Continue if the flag is clear.
   ;SOURCE: dmj-pub.frm
 }
- 
+

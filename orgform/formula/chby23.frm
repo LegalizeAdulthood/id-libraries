@@ -24,7 +24,7 @@ T02-23 {; V.1.1 - earlier versions may be discarded
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
-        ; 
+        ;
         ; T(n+1) = 2xT(n)-T(n-1)
         ; T(0)  = 1
         ; T(1)  = x
@@ -561,7 +561,7 @@ C10-23 {; V.1.1 - earlier versions may be discarded
 
 
 P02-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ; Chebyshev Types:
         ; Inspired by Clifford A. Pickover:
         ; Dynamic (modified Euler method)
@@ -582,7 +582,7 @@ P02-23 {; V.1.1 - earlier versions may be discarded
 
 
 P03-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 5zP02-2P01)/3
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -595,7 +595,7 @@ P03-23 {; V.1.1 - earlier versions may be discarded
 
 
 P04-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 7zP03-3P02)/4
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -609,7 +609,7 @@ P04-23 {; V.1.1 - earlier versions may be discarded
 
 
 P05-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = ( 9zP04-4P03)/5
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -623,7 +623,7 @@ P05-23 {; V.1.1 - earlier versions may be discarded
 
 
 P06-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (11zP05-5P04)/6
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -637,7 +637,7 @@ P06-23 {; V.1.1 - earlier versions may be discarded
 
 
 P07-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (13zP06-6P05)/7
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -651,7 +651,7 @@ P07-23 {; V.1.1 - earlier versions may be discarded
 
 
 P08-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (15zP07-7P06)/8
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -665,7 +665,7 @@ P08-23 {; V.1.1 - earlier versions may be discarded
 
 
 P09-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (17zP08-8P07)/9
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -679,7 +679,7 @@ P09-23 {; V.1.1 - earlier versions may be discarded
 
 
 P10-23 {; V.1.1 - earlier versions may be discarded
-        ; Copyright (c)1998,1999 Morgan L. Owens        
+        ; Copyright (c)1998,1999 Morgan L. Owens
         ;  = (19zP09-9P08)/10
   t=p1, bailout=4, z=fn3(pixel):
   x=real(z), y=imag(z)
@@ -1149,7 +1149,7 @@ Tc02-23 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Clifford A. Pickover:
          ; Dynamic (modified Euler method)
-         ; 
+         ;
          ; Tc(n+1) = 2(2z-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(z+1)

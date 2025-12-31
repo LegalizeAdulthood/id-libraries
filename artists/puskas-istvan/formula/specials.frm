@@ -98,7 +98,7 @@ endif
 
 mandnewtonswitch {
 ;needs floating point!
-;entering 'periodicity=no' recommended 
+;entering 'periodicity=no' recommended
 ;p1 defines the iteration number when the Newton iteration
 ;starts with the 'z' value reached by the Mandelbrot (default=2)
 ;p2 is the Newton order (default=3)

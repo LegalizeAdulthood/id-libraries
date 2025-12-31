@@ -22,9 +22,9 @@ root_jul {; Kerry Mitchell 11feb98
 ;
 ; Applies to these formulas:
 ;   root_jul (above)
-;   root_man 
-;   rootcount_jul 
-;   rootcount_man 
+;   root_man
+;   rootcount_jul
+;   rootcount_man
 ;
 ; Root
 ;
@@ -60,7 +60,7 @@ root_jul {; Kerry Mitchell 11feb98
 ;**********************************************************************
   ;SOURCE: 98msg.frm
 }
- 
+
 rootcount_jul {; Kerry Mitchell 11feb98
                ; See the end of formula root_jul for Kerry Mitchell's
                ; explanation of his "root" formulas
@@ -100,4 +100,4 @@ rootcount_jul {; Kerry Mitchell 11feb98
         ;
   ;SOURCE: 98msg.frm
 }
- 
+

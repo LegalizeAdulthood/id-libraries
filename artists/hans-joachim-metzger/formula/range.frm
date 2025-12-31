@@ -40,7 +40,7 @@ range-r-1_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-r-2_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -83,7 +83,7 @@ range-r-2_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-r-3_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -126,7 +126,7 @@ range-r-3_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-x-1_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -175,7 +175,7 @@ range-x-1_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-x-3_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -224,7 +224,7 @@ range-x-3_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-y-2_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -273,7 +273,7 @@ range-y-2_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+
 range-y-3_jul {; Kerry Mitchell
         ; See the end of range-r_jul for Kerry Mitchell's explanation of
         ; his "range" formulas
@@ -322,4 +322,4 @@ range-y-3_jul {; Kerry Mitchell
   iter>0
   ;SOURCE: 98msg.frm
 }
- 
+

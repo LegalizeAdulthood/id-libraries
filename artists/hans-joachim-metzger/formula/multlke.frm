@@ -12,48 +12,48 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
   ; center  = (x  , y)
   ; magxmag = (mag, xmagfactor)
   ; rotskew = (rot, skew)
-  
+
   bailout = real(p2)
-  
+
   if (imag(p2) > 0 && imag(p2) <= 100)
-  
+
     level = imag(p2) / 100         ; water level
     ampl = real(p3)                ; amplitude of the wave
     freq = imag(p3)                ; frequency
-  
+
     angle = real(rotskew * pi / 180)
     exp_irot = exp(-flip(angle))
     h = 1 / real(magxmag)
     w = h / 0.75 * imag(magxmag)
     tanskew = tan(imag(rotskew * pi / 180))
-  
+
     u = 2 * w * exp_irot
     v = 2 * h * (tanskew + flip(1)) * exp_irot
-  
+
     z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-  
+
     z = pixel - z3rd
-  
+
     b = imag(conj(u)*z) / imag(conj(u)*v)
-  
+
     if (b <= level)
       dy = level - b
       z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
     endif
-  
+
     z = z + z3rd
-  
+
   else
     z = pixel
   endif
-  
+
   if (ismand)
     c = z
   else
     c = p1
   endif
   :
-  
+
   ; multifrac3
     y2=y*y
     x2=x*x
@@ -62,7 +62,7 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
     z = sqr(z)+x+y
     |z| <=bailout
     }
- 
+
 Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
  ; Multifrac variations Albrecht Niekamp
  ; p1: Julia seed
@@ -72,54 +72,54 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
  ;                  the screen height (0 = bottom, 100 = top)
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
- 
+
  ; This formula uses the new predefined variables:
  ; center  = (x  , y)
  ; magxmag = (mag, xmagfactor)
  ; rotskew = (rot, skew)
- 
+
  bailout = real(p2)
- 
+
  if (imag(p2) > 0 && imag(p2) <= 100)
- 
+
    level = imag(p2) / 100         ; water level
    ampl = real(p3)                ; amplitude of the wave
    freq = imag(p3)                ; frequency
- 
+
    angle = real(rotskew * pi / 180)
    exp_irot = exp(-flip(angle))
    h = 1 / real(magxmag)
    w = h / 0.75 * imag(magxmag)
    tanskew = tan(imag(rotskew * pi / 180))
- 
+
    u = 2 * w * exp_irot
    v = 2 * h * (tanskew + flip(1)) * exp_irot
- 
+
    z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
- 
+
    z = pixel - z3rd
- 
+
    b = imag(conj(u)*z) / imag(conj(u)*v)
- 
+
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
- 
+
    z = z + z3rd
- 
+
  else
    z = pixel
  endif
- 
+
  if (ismand)
    c = z
  else
    c = p1
  endif
  :
- 
- ; multifrac3 
+
+ ; multifrac3
    y2=y*y
    x2=x*x
    x=x2-y2-real(p1)
@@ -127,7 +127,7 @@ Multi_lake1  { ; Sylvie Gallet, Jan 16, 2000
    z = sqr(z)+x+y
    |z| <=bailout
    }
- 
+
 Multi_lake10 {
   ;
   ; p1: Julia seed
@@ -174,13 +174,13 @@ Multi_lake10 {
     z =(z+x)^(z-y)
     |z| <=bailout
     }
- 
-Multi_lake10 { 
+
+Multi_lake10 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
- ; real part of p3: amplitude 
+ ; imag part of p2: water level in % of the screen height
+ ; real part of p3: amplitude
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
  if (imag(p2) > 0 && imag(p2) <= 100)
@@ -199,7 +199,7 @@ Multi_lake10 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -218,10 +218,10 @@ Multi_lake10 {
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z =(z+x)^(z-y)    
+   z =(z+x)^(z-y)
    |z| <=bailout
    }
- 
+
 Multi_lake11 {
   ;
   ; p1: Julia seed
@@ -268,8 +268,8 @@ Multi_lake11 {
     z =(z-x)^(z-y)
     |z| <=bailout
     }
- 
-Multi_lake11 { 
+
+Multi_lake11 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -293,7 +293,7 @@ Multi_lake11 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -312,10 +312,10 @@ Multi_lake11 {
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z =(z-x)^(z-y)    
+   z =(z-x)^(z-y)
    |z| <=bailout
    }
- 
+
 Multi_lake12 {
   ;
   ; p1: Julia seed
@@ -362,8 +362,8 @@ Multi_lake12 {
     z =(z*x)^(z*y)
     |z| <=bailout
     }
- 
-Multi_lake12 { 
+
+Multi_lake12 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -387,7 +387,7 @@ Multi_lake12 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -406,10 +406,10 @@ Multi_lake12 {
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z =(z*x)^(z*y)    
+   z =(z*x)^(z*y)
    |z| <=bailout
    }
- 
+
 Multi_lake13 {
   ;
   ; p1: Julia seed
@@ -456,8 +456,8 @@ Multi_lake13 {
     z =(z+x)^(z*y)
     |z| <=bailout
     }
- 
-Multi_lake13 { 
+
+Multi_lake13 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -481,7 +481,7 @@ Multi_lake13 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -500,10 +500,10 @@ Multi_lake13 {
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z =(z+x)^(z*y)    
+   z =(z+x)^(z*y)
    |z| <=bailout
    }
- 
+
 Multi_lake14   { ;additional 3d effect
   ;
   ; p1: Julia seed
@@ -554,8 +554,8 @@ Multi_lake14   { ;additional 3d effect
     z =(z+x)^(z*y)
     |z| <=bailout
     }
- 
-Multi_lake14 { ;additional 3d effect 
+
+Multi_lake14 { ;additional 3d effect
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -580,7 +580,7 @@ Multi_lake14 { ;additional 3d effect
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -602,10 +602,10 @@ Multi_lake14 { ;additional 3d effect
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z =(z+x)^(z*y)    
+   z =(z+x)^(z*y)
    |z| <=bailout
    }
- 
+
 Multi_lake15   { ;additional 3d effect
   ;
   ; p1: Julia seed
@@ -656,8 +656,8 @@ Multi_lake15   { ;additional 3d effect
     z =(z*x)^(z*y)
     |z| <=bailout
     }
- 
-Multi_lake15 { ;additional 3d effect 
+
+Multi_lake15 { ;additional 3d effect
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -682,7 +682,7 @@ Multi_lake15 { ;additional 3d effect
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -704,10 +704,10 @@ Multi_lake15 { ;additional 3d effect
    x2 = x*x
    x = x2-y2+imag(c)
    y = 2*x*y+real(c)
-   z =(z*x)^(z*y)   
+   z =(z*x)^(z*y)
    |z| <=bailout
    }
- 
+
 Multi_lake2 {
   ;
   ; p1: Julia seed
@@ -754,12 +754,12 @@ Multi_lake2 {
     z = z^(z+x-y)
     |z| <=bailout
     }
- 
-Multi_lake2 { 
+
+Multi_lake2 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
@@ -779,7 +779,7 @@ Multi_lake2 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -798,10 +798,10 @@ Multi_lake2 {
    x2 = x*x
    x = x2-y2-real(p1)
    y = 2*x*y-imag(p1)
-   z = z^(z+x-y)    
+   z = z^(z+x-y)
    |z| <=bailout
    }
- 
+
 Multi_lake3 {
   ;
   ; p1: Julia seed
@@ -853,8 +853,8 @@ Multi_lake3 {
     endif
     |z| <= bailout
     }
- 
-Multi_lake3 { 
+
+Multi_lake3 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -878,7 +878,7 @@ Multi_lake3 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -892,7 +892,7 @@ Multi_lake3 {
  x=0
  y=0
  :
- ; multifrac 20 variation 
+ ; multifrac 20 variation
    y2 = y*y
    x2 = x*x
    x = x2-y2-c
@@ -901,11 +901,11 @@ Multi_lake3 {
    z = z^(z-x-y)
    else
    y=2*x*y-p1
-   z = z^(z-x+y)    
+   z = z^(z-x+y)
    endif
    |z| <= bailout
    }
- 
+
 Multi_lake3c {
   ;
   ; p1: Julia seed
@@ -961,12 +961,12 @@ Multi_lake3c {
     z=z*z-x-y
     |z| <= bailout
     }
- 
-Multi_lake3c { 
+
+Multi_lake3c {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
@@ -987,7 +987,7 @@ Multi_lake3c {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1005,7 +1005,7 @@ Multi_lake3c {
  x=0
  y=0
  :
- ; multifrac 20 variation 
+ ; multifrac 20 variation
    y2 = y*y
    x2 = x*x
    x = x2-y2-c
@@ -1017,7 +1017,7 @@ Multi_lake3c {
    z=z*z-x-y
    |z| <= bailout
    }
- 
+
 Multi_lake3c {
   ;
   ; p1: Julia seed
@@ -1073,12 +1073,12 @@ Multi_lake3c {
     z=z*z-x-y
     |z| <= bailout
     }
- 
-Multi_lake3c { 
+
+Multi_lake3c {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
@@ -1099,7 +1099,7 @@ Multi_lake3c {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1117,7 +1117,7 @@ Multi_lake3c {
  x=0
  y=0
  :
- ; multifrac 20 variation 
+ ; multifrac 20 variation
    y2 = y*y
    x2 = x*x
    x = x2-y2-c
@@ -1129,7 +1129,7 @@ Multi_lake3c {
    z=z*z-x-y
    |z| <= bailout
    }
- 
+
 Multi_lake4 {
   ;
   ; p1: Julia seed
@@ -1176,12 +1176,12 @@ Multi_lake4 {
     z = z^(z+x-y)
     |z| <=bailout
     }
- 
-Multi_lake4 { 
+
+Multi_lake4 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
@@ -1201,7 +1201,7 @@ Multi_lake4 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1215,15 +1215,15 @@ Multi_lake4 {
  x=0
  y=0
  :
- ; multifrac7 
+ ; multifrac7
    y2 = y*y
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z = z^(z+x-y)    
+   z = z^(z+x-y)
    |z| <=bailout
    }
- 
+
 Multi_lake5 {
   ;
   ; p1: Julia seed
@@ -1270,8 +1270,8 @@ Multi_lake5 {
     z = sqr(z+x2+y2)
     |z| <= bailout
     }
- 
-Multi_lake5 { 
+
+Multi_lake5 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -1295,7 +1295,7 @@ Multi_lake5 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1309,7 +1309,7 @@ Multi_lake5 {
  x=0
  y=0
  :
- ;multifrac13 
+ ;multifrac13
    y2 = y*y
    x2 = x*x
    x = x2-y2-real(c)
@@ -1317,7 +1317,7 @@ Multi_lake5 {
    z = sqr(z+x2+y2)
    |z| <= bailout
    }
- 
+
 Multi_lake8 {
   ;
   ; p1: Julia seed
@@ -1364,12 +1364,12 @@ Multi_lake8 {
     z = (z+x-y)^z
     |z| <=bailout
     }
- 
-Multi_lake8 { 
+
+Multi_lake8 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  bailout = real(p2)
@@ -1389,7 +1389,7 @@ Multi_lake8 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1403,15 +1403,15 @@ Multi_lake8 {
  x=0
  y=0
  :
- ; multifrac7 
+ ; multifrac7
    y2 = y*y
    x2 = x*x
    x = x2-y2-real(p1)
    y = 2*x*y-imag(p1)
-   z = (z+x-y)^z    
+   z = (z+x-y)^z
    |z| <=bailout
    }
- 
+
 Multi_lake9 {
   ;
   ; p1: Julia seed
@@ -1458,8 +1458,8 @@ Multi_lake9 {
     z = z^(z+x+y)
     |z| <=bailout
     }
- 
-Multi_lake9 { 
+
+Multi_lake9 {
  ;
  ; p1: Julia seed
  ; real part of p2: bailout value
@@ -1483,7 +1483,7 @@ Multi_lake9 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
  else
@@ -1497,15 +1497,15 @@ Multi_lake9 {
  x=0
  y=0
  :
- ; multifrac7 
+ ; multifrac7
    y2 = y*y
    x2 = x*x
    x = x2-y2-real(c)
    y = 2*x*y-imag(c)
-   z = z^(z+x+y)    
+   z = z^(z+x+y)
    |z| <=bailout
    }
- 
+
 Multilake_6 {
   ; p1: all layers
   ; real part of p2: bailout value
@@ -1513,7 +1513,7 @@ Multilake_6 {
   ; real part of p3: amplitude of the wave (try 0.2)
   ; imag part of p3: frequency (try 300)
   ; p4:third axis layers 2,3
-  
+
   cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
   bailout = real(p2)
@@ -1606,16 +1606,16 @@ Multilake_6 {
     endif
     phc_bailout
     }
- 
+
 multilake_6 {
  ; p1: all layers
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  ; p4:third axis layers 2,3
- 
- cr=real(scrnpix)+2*imag(scrnpix)  
+
+ cr=real(scrnpix)+2*imag(scrnpix)
  r=cr-4*trunc(cr/real(4))
  bailout = real(p2)
  if (r==0)
@@ -1635,12 +1635,12 @@ multilake_6 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
    else
    z=pixel
-   endif 
+   endif
   if (ismand)
    c = z
    else
@@ -1663,7 +1663,7 @@ multilake_6 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
    else
@@ -1673,7 +1673,7 @@ multilake_6 {
    c = z
   else
    c = p1
-  endif 
+  endif
  else
    z=pixel
    c=p1
@@ -1689,12 +1689,12 @@ multilake_6 {
    if (r==0)
    y=2*y2*x2-imag(c)
    z=fn1(z+x+y)
-   phc_bailout = |z| <(bailout-(x2*y2))  
+   phc_bailout = |z| <(bailout-(x2*y2))
    elseif (r==1)
    y=2*y2*x2-imag(c)
    w=2*w2*x2-real(p4)
    z=fn1(z+x+y+w)
-   phc_bailout = |z| < (bailout-(x2*y2*w2))  
+   phc_bailout = |z| < (bailout-(x2*y2*w2))
    elseif (r==2)
    y=2*y2*x2-imag(c)
    w=2*w2*y2-imag(p4)
@@ -1707,7 +1707,7 @@ multilake_6 {
    endif
    phc_bailout
    }
- 
+
 Multilake_7 {
   ; p1: all layers
   ; real part of p2: bailout value
@@ -1810,25 +1810,25 @@ Multilake_7 {
     endif
     phc_bailout
     }
- 
+
 multilake_7 {
  ; p1: all layers
  ; real part of p2: bailout value
- ; imag part of p2: water level in % of the screen height 
+ ; imag part of p2: water level in % of the screen height
  ; real part of p3: amplitude of the wave (try 0.2)
  ; imag part of p3: frequency (try 300)
  ; real part of p4: amplitude second lake
  ; imag part of p4: frequency second lake
  ; p5: third axis, layers 2 and 3
  ;
- cr=real(scrnpix)+2*imag(scrnpix)  
+ cr=real(scrnpix)+2*imag(scrnpix)
  r=cr-4*trunc(cr/real(4))
  bailout = real(p2)
  if (r==0)
   if (imag(p2) > 0 && imag(p2) <= 100)
-   level = imag(p2) / 100        
-   ampl = real(p3)                
-   freq = imag(p3)               
+   level = imag(p2) / 100
+   ampl = real(p3)
+   freq = imag(p3)
    angle = real(rotskew * pi / 180)
    exp_irot = exp(-flip(angle))
    h = 1 / real(magxmag)
@@ -1841,12 +1841,12 @@ multilake_7 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
    else
    z=pixel
-   endif 
+   endif
   if (ismand)
    c = z
    else
@@ -1854,9 +1854,9 @@ multilake_7 {
   endif
  elseif (r==1)
   if (imag(p2) > 0 && imag(p2) <= 100)
-   level = imag(p2) / 100         
-   ampl = real(p4)              
-   freq = imag(p4)          
+   level = imag(p2) / 100
+   ampl = real(p4)
+   freq = imag(p4)
    angle = real(rotskew * pi / 180)
    exp_irot = exp(-flip(angle))
    h = 1 / real(magxmag)
@@ -1869,7 +1869,7 @@ multilake_7 {
    b = imag(conj(u)*z) / imag(conj(u)*v)
    if (b <= level)
      dy = level - b
-     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+     z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
    endif
    z = z + z3rd
    else
@@ -1879,7 +1879,7 @@ multilake_7 {
    c = z
   else
    c = p1
-  endif 
+  endif
  else
    z=pixel
    c=p1
@@ -1895,12 +1895,12 @@ multilake_7 {
    if (r==0)
    y=2*y2*x2-imag(c)
    z=fn1(z+x+y)
-   phc_bailout = |z| <(bailout-(x2*y2))  
+   phc_bailout = |z| <(bailout-(x2*y2))
    elseif (r==1)
    y=2*y2*x2-imag(c)
    w=2*w2*x2-real(p5)
    z=fn1(z+x+y+w)
-   phc_bailout = |z| < (bailout-(x2*y2*w2))  
+   phc_bailout = |z| < (bailout-(x2*y2*w2))
    elseif (r==2)
    y=2*y2*x2-imag(c)
    w=2*w2*y2-imag(p5)
@@ -1913,4 +1913,4 @@ multilake_7 {
    endif
    phc_bailout
    }
- 
+

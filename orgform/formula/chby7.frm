@@ -25,7 +25,7 @@ T02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method
-                 ; 
+                 ;
                  ; T(n+1) = 2zT(n)-T(n-1)
                  ; T(0)  = 1
                  ; T(1)  = z
@@ -649,7 +649,7 @@ C10-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; Chebyshev Types:
                  ; Inspired by Bradley Beacham
                  ; Cubic Method
@@ -671,7 +671,7 @@ P02-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P03-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 5zP02-2P01)/3
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -686,7 +686,7 @@ P03-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P04-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 7zP03-3P02)/4
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -702,7 +702,7 @@ P04-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P05-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = ( 9zP04-4P03)/5
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -718,7 +718,7 @@ P05-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P06-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (11zP05-5P04)/6
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -734,7 +734,7 @@ P06-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P07-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (13zP06-6P05)/7
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -750,7 +750,7 @@ P07-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P08-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (15zP07-7P06)/8
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -766,7 +766,7 @@ P08-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P09-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (17zP08-8P07)/9
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -782,7 +782,7 @@ P09-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
 
 
 P10-07 (XYAxis) {; V.1.1 - earlier versions may be discarded
-                 ; Copyright (c)1998,1999 Morgan L. Owens        
+                 ; Copyright (c)1998,1999 Morgan L. Owens
                  ; = (19zP09-9P08)/10
   bailout=real(p2)/10000, z=pixel:
   zz=z*z
@@ -1348,7 +1348,7 @@ Tc02-07 {; V.1.1 - earlier versions may be discarded
          ; Chebyshev Types:
          ; Inspired by Bradley Beacham
          ; Cubic Method
-         ; 
+         ;
          ; Tc(n+1) = 2(2x-1)Tc(n)-Tc(n-1)
          ; Tc(0) = 1
          ; Tc(1) = 2(x+1)

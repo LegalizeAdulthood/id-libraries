@@ -130,7 +130,7 @@ JoWe-SG-8-12a {; Sylvie Gallet [101324,3444], Mar 1997
   z <= bailout
   ;SOURCE: 97msg.frm
 }
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
 c=z=pixel:
 z=z+(fn1(c^2)/fn2(z^2))/c^4,|z| <=6
 }
@@ -188,7 +188,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -198,7 +198,7 @@ Lesfrm34 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1^pi , y = y1^pi
    z = (x + flip(y))^pi
@@ -211,7 +211,7 @@ Lesfrm30 { ; Modified Sylvie Gallet formula
    x1 = x + p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y + p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi  , y = (y1*pi)/(x*x*x)
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
   }
 ai5 {
@@ -480,10 +480,10 @@ BirdOfPrey (XAXIS_NOPARM) { ; Optimized by Sylvie Gallet
     |z| <= 4
   }
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -565,32 +565,32 @@ Carr3024 {; Modified Sylvie Gallet frm. [101324,3444],1996
 }
 m+j+n_2+if {; Sylvie Gallet [101324,3444], 1996
   p0 = p3 - 1, odd = iter = wait = 0
-  z = cm = pixel * exp(-flip(imag(p1)) * 0.01745329252) / abs(real(p1)) 
+  z = cm = pixel * exp(-flip(imag(p1)) * 0.01745329252) / abs(real(p1))
   :
   odd = odd == wait
   IF (iter < 300)
     IF (wait == 0)
       z = z*z + cm
-    ENDIF 
+    ENDIF
     bailout = |z| <= 16
     IF (bailout == 0)
       z = 0, wait = 1, bailout = 1
-    ENDIF 
-  ELSE 
+    ENDIF
+  ELSE
     IF (iter == 300)
       IF (wait == 0)
         odd = 0, wait = 1
-      ENDIF 
+      ENDIF
       z = pixel, bailout = 1
-    ELSE 
+    ELSE
       IF (odd)
         zp0 = z^p0, d = zp0 * p3, n = zp0 * z - 1
         z = (-n/d+z), bailout = |n| > 0.000001
-      ELSE 
+      ELSE
         z = z*z+p2, bailout = |z| < 16
-      ENDIF 
-    ENDIF 
-  ENDIF 
+      ENDIF
+    ENDIF
+  ENDIF
   iter = iter + 1
   bailout
   ;SOURCE: 97msg.frm

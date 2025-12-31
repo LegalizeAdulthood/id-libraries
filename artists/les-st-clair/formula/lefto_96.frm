@@ -160,7 +160,7 @@ jowe_13 {; Jo Weber, July 1996
   z=fn1(z)-c/fn2(z)
 }
 
-JoWe_xy_01 {   ; Jo Weber [100424,35] 9/1996 
+JoWe_xy_01 {   ; Jo Weber [100424,35] 9/1996
                ; p1 is bailout
                   z = pixel, bailout=p1:
                   x=real(z), y=imag(z),
@@ -220,10 +220,10 @@ z=z+r,|z| <=6
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -278,7 +278,7 @@ Lesfrm29 { ; Les St Clair, 1996
    x1 = x - p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y - p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi  , y = (y1*pi)/x
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
 }
 
@@ -296,11 +296,11 @@ z = z*z+c
 
 LesPHCfrm03 { ; Les St Clair [101461,2032], 1996  Requires passes=1
               ; PHC from LF_13 & LF_29 mod.
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z)
  v = real(z) , w = imag(z) :
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  v1 = v - p1*fn1(w + fn2(p2*v) + fn3(p3*w))
  w1 = w - p1*fn1(v + fn2(p2*w) + fn3(p3*v))
  v = v1*pi  , w = (w1*pi)/v
@@ -310,7 +310,7 @@ LesPHCfrm03 { ; Les St Clair [101461,2032], 1996  Requires passes=1
 
 LesPHCfrm04 {; Les St Clair [101461,2032], 1996  Requires passes=1
              ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-             ; Earl Glynn 
+             ; Earl Glynn
   z = pixel:
   x = 1 - abs(imag(z)-real(z))
   z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -319,14 +319,14 @@ LesPHCfrm04 {; Les St Clair [101461,2032], 1996  Requires passes=1
 }
 
 Moo_PHC {; by Vincent Damion Presogna, Oct. 18, 1996
-  z = pixel 
-  halfe = e*(-0.5) 
+  z = pixel
+  halfe = e*(-0.5)
   quartere = e*(-.25):
   z = z + p1
   y = tan(1/z)
   r = y + pixel
   q = y * pixel
-  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq) 
+  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq)
   |z| <= 4
 }
 

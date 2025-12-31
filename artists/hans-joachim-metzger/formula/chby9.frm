@@ -11,7 +11,7 @@ C04-09 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby9.frm
 }
- 
+
 C08-09 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zC07-C06
@@ -25,7 +25,7 @@ C08-09 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby9.frm
 }
- 
+
 Uc03-09 {; V.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = 2z(2z-1)U02-U01
@@ -39,4 +39,4 @@ Uc03-09 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby9.frm
 }
- 
+

@@ -7,4 +7,4 @@ Gallet-PHC3-03b {; Sylvie Gallet [101324,3444], 1996
   |z| <= 4
   ;SOURCE: bj-phc02.frm
 }
- 
+

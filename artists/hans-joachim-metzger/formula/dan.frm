@@ -4,4 +4,4 @@ aaaa (XAXIS) {
   |z| <= p1
   ;SOURCE: dan.frm
 }
- 
+

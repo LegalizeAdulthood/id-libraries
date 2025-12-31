@@ -6,7 +6,7 @@
 ;   more sophisticated variations of the original
 ;   multifrac13 or multifrac13a formula.
 ;   The formula names correspond to the par-files
-;   with the same number. 
+;   with the same number.
 ;   Suggestions, new par-files or own variations
 ;   are welcome.
 ; --------------------------------------------------
@@ -16,10 +16,10 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -42,10 +42,10 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-x2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -68,10 +68,10 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-w2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -94,10 +94,10 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-w2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -120,10 +120,10 @@
   x2 = x*x
   w2 = w*w
   if (x2>y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-w2-p2
   if (y2>w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -146,10 +146,10 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=x2-y2-p1 
+  x=x2-y2-p1
   y=y2-w2-p2
   if (y2<w2)
-  w=w2-x2-p3  
+  w=w2-x2-p3
   else
   w=w2-y2-p3
   endif
@@ -169,17 +169,17 @@
   phc_bailout
   }
   multifrac74 {
-  cr=real(scrnpix)+2*imag(scrnpix)  
+  cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
   z = pixel:
   y2 = y*y
   x2 = x*x
   w2 = w*w
   if (r<2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
   if (r==0)
-  w=2*w2-x2-p3  
+  w=2*w2-x2-p3
   else
   w=2*w2-y2-p3
   endif
@@ -204,15 +204,15 @@
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-x2-p3 
+  w=2*w2-x2-p3
   z=fn1(z+x+y+w)
   phc_bailout = |z| > (x*y)
   elseif (y2<w2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-y2-p3  
+  w=2*w2-y2-p3
   z=fn1(z+x+y+w)
   phc_bailout = |z| > (x*w)
   elseif (x2<w2)
@@ -232,22 +232,22 @@
   }
 
 multifrac76 {
-  cr=real(scrnpix)+2*imag(scrnpix)  
+  cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
   z = pixel:
   y2 = y*y
   x2 = x*x
   w2 = w*w
   if (r==0)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-x2-p3 
+  w=2*w2-x2-p3
   z=fn1(z+x+y+w)
   phc_bailout = |z| > (x*y*w)
   elseif (r==1)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-y2-p3  
+  w=2*w2-y2-p3
   z=fn1(z+x+y-w)
   phc_bailout = |z| > ((x*y)/w)
   elseif (r==2)
@@ -271,15 +271,15 @@ multifrac77 {
   x2 = x*x
   w2 = w*w
   if (x2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-x2-p3 
+  w=2*w2-x2-p3
   z=fn1(z+x+y+w)
   ptc_bailout = |z| > (x*y*w)
   elseif (y2<w2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-y2-p3  
+  w=2*w2-y2-p3
   z=fn2(z+x+y+w)
   ptc_bailout = |z| > (x*w)
   elseif (x2<w2)
@@ -298,22 +298,22 @@ multifrac77 {
   phc_bailout
   }
 multifrac78 {
-  cr=real(scrnpix)+2*imag(scrnpix)  
+  cr=real(scrnpix)+2*imag(scrnpix)
   r=cr-4*trunc(cr/real(4))
   z = pixel:
   y2 = y*y
   x2 = x*x
   w2 = w*w
   if (r==0)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-x2-p3 
+  w=2*w2-x2-p3
   z=fn1(z+x+y+w)
   ptc_bailout = |z| > (x*y*w)
   elseif (r==1)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-y2-p3  
+  w=2*w2-y2-p3
   z=fn2(z+x+y-w)
   ptc_bailout = |z| > ((x*y)/w)
   elseif (r==2)
@@ -339,15 +339,15 @@ multifrac78 {
   w2 = w*w
   if (whitesq)
   if (X2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-x2-p3 
+  w=2*w2-x2-p3
   z=fn1(z+x+y+w)
   ptc_bailout = |z| > (x*y*w)
   else
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-w2-p2
-  w=2*w2-y2-p3  
+  w=2*w2-y2-p3
   z=fn2(z+x+y-w)
   ptc_bailout = |z| > ((x*y)/w)
   endif
@@ -373,12 +373,12 @@ multifrac78 {
   x2 = x*x
   if (whitesq)
   if (X2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn1(z+x+y)
   ptc_bailout = |z| > (x*y)
   else
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn2(z+x-y)
   ptc_bailout = |z| > (x/y)
@@ -402,12 +402,12 @@ multifrac78 {
   x2 = x*x
   if (whitesq)
   if (X2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x*y)
   else
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| < (x/y)
@@ -432,12 +432,12 @@ multifrac82 {
   x2 = x*x
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x*y)
   else
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -462,12 +462,12 @@ multifrac83 {
   x2 = x*x
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=2*y2-x2-p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x*y)
   else
-  x=2*x2-y2-p1 
+  x=2*x2-y2-p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -492,12 +492,12 @@ multifrac84 {
   x2 = x*x
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x-y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -522,12 +522,12 @@ multifrac85 {
   x2 = x*x
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   ptc_bailout = |z| > (x*y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   ptc_bailout = |z| > (y-x)
@@ -561,12 +561,12 @@ multifrac86 {
   endif:
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x-y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -600,12 +600,12 @@ multifrac87 {
   endif:
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x-y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -639,12 +639,12 @@ multifrac88 {
   endif:
   if (whitesq)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x-y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -678,12 +678,12 @@ multifrac89 {
   endif:
   if (whitesq)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   z=fn1(z+x+y)
   phc_bailout = |z| > (x-y)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   z=fn2(z+x-y)
   phc_bailout = |z| > (y-x)
@@ -718,13 +718,13 @@ multifrac90 {
   endif:
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   w=2*w2-x2+p3
   z=fn1(z+x+y+w)
   phc_bailout = |z| > (-x-y-w)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   w=w2*x2-p3
   z=fn2(z+x+y-w)
@@ -762,13 +762,13 @@ multifrac91 {
   endif:
   if ((x2*y2)<0)
   if (X2<y2)
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=2*y2-x2+p2
   w=2*w2-x2+p3
   z=fn1(z+x+y+w)
   phc_bailout = |z| > (-x-y-w)
   else
-  x=2*x2-y2+p1 
+  x=2*x2-y2+p1
   y=y2*x2-p2
   w=w2*x2-p3
   z=fn2(z+x+y-w)

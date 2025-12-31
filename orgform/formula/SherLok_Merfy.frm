@@ -51,7 +51,7 @@ PixelPowerAdd  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Karts          { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Sun, 15 Feb 2004 04:04:22
-                 ; 
+                 ;
   z = fn1(pixel), chaw=fn2(pixel), ex=P1, iter=0, t=P2
   if(t==(0,0))
       t=|sqrt(0,2)|
@@ -100,7 +100,7 @@ Karts          { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Club_Lambda    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Wed, 25 Feb 2004 15:46:17
-                 ; 
+                 ;
   z=fn1(pixel), c=fn2(pixel), t=|P1|:
   z = z*(1-z) -conj(z) +c
   ;c = c/2 +z,
@@ -110,7 +110,7 @@ Club_Lambda    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Butterfly(YAXIS)  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                     ; Wed, 10 Mar 2004 19:30:38
-                    ; 
+                    ;
   z=(0,0), c=flip(-pixel):
   temp = sqr(z)
   z = temp*z -conj(temp) +c
@@ -151,43 +151,43 @@ Hearty     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
  ; imod=remainder(num_notes/iter)
   iter=iter+1,
   if(imod>-1 && imod< 8 )
-        note= 11 
+        note= 11
   elseif(imod> 6 && imod< 19 )
-        note= 13 
+        note= 13
   elseif(imod> 17 && imod< 22 )
-        note= 17 
+        note= 17
   elseif(imod> 20 && imod< 27 )
-        note= 19 
+        note= 19
   elseif(imod> 25 && imod< 34 )
-        note= 16 
+        note= 16
   elseif(imod> 32 && imod< 41 )
-        note= 23 
+        note= 23
   elseif(imod> 39 && imod< 52 )
-        note= 31 
+        note= 31
   elseif(imod> 50 && imod< 55 )
-        note= 29 
+        note= 29
   elseif(imod> 53 && imod< 60 )
-        note= 23 
+        note= 23
   elseif(imod> 58 && imod< 67 )
-        note= 31 
+        note= 31
   elseif(imod> 65 && imod< 74 )
-        note= 11 
+        note= 11
   elseif(imod> 72 && imod< 85 )
-        note= 9 
+        note= 9
   elseif(imod> 83 && imod< 88 )
-        note= 13 
+        note= 13
   elseif(imod> 86 && imod< 93 )
-        note= 17 
+        note= 17
   elseif(imod> 91 && imod< 100 )
-        note= 13 
+        note= 13
   elseif(imod> 98 && imod< 107 )
-        note= 29 
+        note= 29
   elseif(imod> 105 && imod< 118 )
-        note= 51 
+        note= 51
   elseif(imod> 116 && imod< 121 )
-        note= 59 
+        note= 59
   elseif(imod> 119 && imod< 128 )
-        note= 44 
+        note= 44
   endif,
   z=s*(z-flip(note/mean))*(flip(note/mean)-z)
   |z| <= t
@@ -201,43 +201,43 @@ Hearty-2   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   s=z=fn1(real(-1/pixel) +flip(imag(-.5/pixel))), iter=-1:
   iter=iter+1,
   if(iter>-1 && iter< 7 )
-        note= 11 
+        note= 11
   elseif(iter> 6 && iter< 18 )
-        note= 13 
+        note= 13
   elseif(iter> 17 && iter< 21 )
-        note= 17 
+        note= 17
   elseif(iter> 20 && iter< 26 )
-        note= 19 
+        note= 19
   elseif(iter> 25 && iter< 33 )
-        note= 16 
+        note= 16
   elseif(iter> 32 && iter< 40 )
-        note= 23 
+        note= 23
   elseif(iter> 39 && iter< 51 )
-        note= 31 
+        note= 31
   elseif(iter> 50 && iter< 54 )
-        note= 29 
+        note= 29
   elseif(iter> 53 && iter< 59 )
-        note= 23 
+        note= 23
   elseif(iter> 58 && iter< 66 )
-        note= 31 
+        note= 31
   elseif(iter> 65 && iter< 73 )
-        note= 11 
+        note= 11
   elseif(iter> 72 && iter< 84 )
-        note= 10 
+        note= 10
   elseif(iter> 83 && iter< 87 )
-        note= 13 
+        note= 13
   elseif(iter> 86 && iter< 92 )
-        note= 17 
+        note= 17
   elseif(iter> 91 && iter< 99 )
-        note= 13 
+        note= 13
   elseif(iter> 98 && iter< 106 )
-        note= 29 
+        note= 29
   elseif(iter> 105 && iter< 117 )
-        note= 51 
+        note= 51
   elseif(iter> 116 && iter< 120 )
-        note= 59 
+        note= 59
   elseif(iter> 119 && iter< 127 )
-        note= 44 
+        note= 44
   elseif(iter>= 127 )
         iter = -1
   endif,
@@ -249,52 +249,52 @@ Hearty-2   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Rock(XYAXIS)   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Mon, 15 Mar 2004 01:42:13
-                 ; 
+                 ;
   z=z-z, c=fn1(pixel), iter=-1:
   iter=iter+1,
   if(iter>-1 && iter< 7 )
-        note= 11 
+        note= 11
   elseif(iter> 6 && iter< 18 )
-        note= 13 
+        note= 13
   elseif(iter> 17 && iter< 21 )
-        note= 17 
+        note= 17
   elseif(iter> 20 && iter< 26 )
-        note= 19 
+        note= 19
   elseif(iter> 25 && iter< 33 )
-        note= 16 
+        note= 16
   elseif(iter> 32 && iter< 40 )
-        note= 23 
+        note= 23
   elseif(iter> 39 && iter< 51 )
-        note= 31 
+        note= 31
   elseif(iter> 50 && iter< 54 )
-        note= 29 
+        note= 29
   elseif(iter> 53 && iter< 59 )
-        note= 23 
+        note= 23
   elseif(iter> 58 && iter< 66 )
-        note= 31 
+        note= 31
   elseif(iter> 65 && iter< 73 )
-        note= 11 
+        note= 11
   elseif(iter> 72 && iter< 84 )
-        note= 9 
+        note= 9
   elseif(iter> 83 && iter< 87 )
-        note= 13 
+        note= 13
   elseif(iter> 86 && iter< 92 )
-        note= 17 
+        note= 17
   elseif(iter> 91 && iter< 99 )
-        note= 13 
+        note= 13
   elseif(iter> 98 && iter< 106 )
-        note= 29 
+        note= 29
   elseif(iter> 105 && iter< 117 )
-        note= 51 
+        note= 51
   elseif(iter> 116 && iter< 120 )
-        note= 59 
+        note= 59
   elseif(iter> 119 && iter< 127 )
-        note= 44 
+        note= 44
   endif
   if(iter>= 127 )
         iter=-1
   endif
-  temp=note* 19 / 459 
+  temp=note* 19 / 459
   z=(z+temp)*(z-temp)*(z+flip(temp))*(z-flip(temp))/c
   |z| <= real(P1)
 }
@@ -307,47 +307,47 @@ Rock       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z=z-z, c=fn1(pixel), iter=-1:
   iter=iter+1,
   if(iter>-1 && iter< 14 )
-        note= 11 
+        note= 11
   elseif(iter> 13 && iter< 36 )
-        note= 13 
+        note= 13
   elseif(iter> 35 && iter< 42 )
-        note= 17 
+        note= 17
   elseif(iter> 41 && iter< 52 )
-        note= 19 
+        note= 19
   elseif(iter> 51 && iter< 66 )
-        note= 16 
+        note= 16
   elseif(iter> 65 && iter< 80 )
-        note= 23 
+        note= 23
   elseif(iter> 79 && iter< 102 )
-        note= 31 
+        note= 31
   elseif(iter> 101 && iter< 108 )
-        note= 29 
+        note= 29
   elseif(iter> 107 && iter< 118 )
-        note= 23 
+        note= 23
   elseif(iter> 117 && iter< 132 )
-        note= 31 
+        note= 31
   elseif(iter> 131 && iter< 146 )
-        note= 11 
+        note= 11
   elseif(iter> 145 && iter< 168 )
-        note= 10 
+        note= 10
   elseif(iter> 167 && iter< 174 )
-        note= 13 
+        note= 13
   elseif(iter> 173 && iter< 184 )
-        note= 17 
+        note= 17
   elseif(iter> 183 && iter< 198 )
-        note= 13 
+        note= 13
   elseif(iter> 197 && iter< 212 )
-        note= 29 
+        note= 29
   elseif(iter> 211 && iter< 234 )
-        note= 51 
+        note= 51
   elseif(iter> 233 && iter< 240 )
-        note= 59 
+        note= 59
   elseif(iter> 239 && iter< 254 )
-        note= 44 
+        note= 44
   elseif(iter>= 254 )
         iter=-1
   endif,
-  note=note* 19 / 460 
+  note=note* 19 / 460
   z=(z+note)*(z-note)*(z+flip(note))*(z-flip(note))/c
   |z| <= real(P1)
 }
@@ -376,41 +376,41 @@ Square       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Tool        { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Mon, 29 Mar 2004 08:41:42
-              ; 
+              ;
   z = z-z, iter=-1, c=fn2(fn1(pixel)):
   iter=iter+1,
   if(iter>-1  && iter< 3 )
-        note= 47 
+        note= 47
   elseif(iter> 2  && iter< 5 )
-        note= 23 
+        note= 23
   elseif(iter> 4  && iter< 16 )
-        note= 37 
+        note= 37
   elseif(iter> 15  && iter< 21 )
-        note= 29 
+        note= 29
   elseif(iter> 20  && iter< 24 )
-        note= 31 
+        note= 31
   elseif(iter> 23  && iter< 26 )
-        note= 29 
+        note= 29
   elseif(iter> 25  && iter< 37 )
-        note= 31 
+        note= 31
   elseif(iter> 36  && iter< 42 )
-        note= 23 
+        note= 23
   elseif(iter> 41  && iter< 45 )
-        note= 31 
+        note= 31
   elseif(iter> 44  && iter< 47 )
-        note= 29 
+        note= 29
   elseif(iter> 46  && iter< 58 )
-        note= 41 
+        note= 41
   elseif(iter> 57  && iter< 63 )
-        note= 47 
+        note= 47
   elseif(iter> 62  && iter< 66 )
-        note= 43 
+        note= 43
   elseif(iter> 65  && iter< 68 )
-        note= 47 
+        note= 47
   elseif(iter> 67  && iter< 79 )
-        note= 23 
+        note= 23
   elseif(iter> 78  && iter< 84 )
-        note= 31 
+        note= 31
   elseif(iter>= 84 )
         iter=-1
   endif,
@@ -460,7 +460,7 @@ FunkRNot   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Extend     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
              ; Sun, 4 Apr 2004 10:28:36
-             ; 
+             ;
   z=fn1(pixel), c=fn2(pixel):
   z= z*z +fn3(z) +c
   |z| <= real(P1)
@@ -547,7 +547,7 @@ julfnzsqrd  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 BrohTweak   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Sat, 07 Feb 2004 13:50:00
-              ; 
+              ;
   z=fn1(pixel), c=fn2(pixel), a=y=1, x=2, b=imag(P2), t=|sqrt((0,2))|
   if(real(P1)!=0)
      x=real(P1)
@@ -591,7 +591,7 @@ FractAnimation  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Extension       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                   ; Sun, 14 Mar 2004 15:11:00
-                  ; 
+                  ;
   z=fn1(pixel), c=fn2(pixel), d=P1:
   z= z*z +conj(z) -c
   |z| <=4
@@ -600,7 +600,7 @@ Extension       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 Stock           { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                   ; Wed, 17 Mar 2004 15:15:00
-                  ; 
+                  ;
   z=z-z, c=fn1(pixel), iter=-1:
   iter=iter+1,
   if(iter== 0 )

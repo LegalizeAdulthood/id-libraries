@@ -6,4 +6,4 @@ MuthMath   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z=1/z +z^(-2) +c,
   |z| <= real(P1)
 }
- 
+

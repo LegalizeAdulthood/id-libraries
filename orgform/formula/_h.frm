@@ -4556,7 +4556,7 @@ Halley_n {; Halley applied to z^n-1, compare with builtin newtbasin.
 }
 
 
-Halley_n_r {; Relaxed Halley applied to z^n-1, 
+Halley_n_r {; Relaxed Halley applied to z^n-1,
             ; compare with builtin newtbasin.
             ; p1: n (may be complex).
             ; p2: relaxation coefficient (may be complex).
@@ -4589,7 +4589,7 @@ Halley_test32 {; Peter Anders anders@physik.hu-berlin.de
   f2=r*z^(r-1)
   f3=r*(r-1)*z^(r-2)
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |z|<p1 
+  |z|<p1
   ;SOURCE: halley.frm
 }
 
@@ -4613,7 +4613,7 @@ Halley_test42 {; Peter Anders anders@physik.hu-berlin.de
   f2=r*z^(r-1)
   f3=r*(r-1)*z^(r-2)
   z=z-g*f1/(f2-f3*f1/(2*f2))
-  |z-d|<p1 
+  |z-d|<p1
   ;SOURCE: halley.frm
 }
 
@@ -4698,7 +4698,7 @@ halleySin (XYAXIS) {; Chris Green. Halley's formula applied to sin(x)=0.
 }
 
 
-HalSin[tan[z]] {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[tan[z]] {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, g=p2+1:
   c=z
   f1=sin(tan(z)+p2)+p1
@@ -4709,7 +4709,7 @@ HalSin[tan[z]] {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-HalSin[z^a+b] {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[z^a+b] {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, b=p2, g=p2+1:
   c=z
   f1=sin(z^a+b)
@@ -4720,7 +4720,7 @@ HalSin[z^a+b] {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-HalSin[z^a+b]Pix1 {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[z^a+b]Pix1 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, b=p2, g=p2+1:
   c=z
   f1=sin(z^a+b)
@@ -4731,7 +4731,7 @@ HalSin[z^a+b]Pix1 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-HalSin[z^a+b]Pix2 {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[z^a+b]Pix2 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, b=pixel, g=p2+1:
   c=z
   f1=sin(z^a+b)
@@ -4742,7 +4742,7 @@ HalSin[z^a+b]Pix2 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-HalSin[z^a+b]Pix3 {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[z^a+b]Pix3 {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=pixel, b=pixel, g=p2+1:
   c=z
   f1=sin(z^a+b)
@@ -4753,7 +4753,7 @@ HalSin[z^a+b]Pix3 {; Peter Anders anders@physik.hu-berlin.de
 }
 
 
-HalSin[z^c+b]^a {; Peter Anders anders@physik.hu-berlin.de 
+HalSin[z^c+b]^a {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=real(p1), c=imag(p1), b=p2, g=p2+1:
   c=z
   f1=sin((z^c+b)^a)
@@ -9713,11 +9713,11 @@ heartop {; Giuseppe Zito
   d5 = -0.458745
   d12 = -0.425805
   d15 = -0.271625
-  : 
-  x = real(z), y = imag(z) 
+  :
+  x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /c2
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /d1
   s0 = s0 +y
@@ -9731,9 +9731,9 @@ heartop {; Giuseppe Zito
   s1 = s1 -d15
   s0 = s0 *s1
   s0 = s0 /x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -9815,36 +9815,36 @@ herman_alpha {; Kerry Mitchell 15feb98
 ;            narrative copyright Kerry Mitchell 15feb98
 ;
 ; Applicable to these formulas:
-;           herman_alpha (above) 
+;           herman_alpha (above)
 ;           herman_man-polar
 ;           herman_man-cart
-;           herman_jul-polar 
-;           herman_jul-cart 
+;           herman_jul-polar
+;           herman_jul-cart
 ;
 ; Higher order Herman Rings
 ;
-; In Paul Derbyshire's posting about Herman Rings, he gave a formula 
+; In Paul Derbyshire's posting about Herman Rings, he gave a formula
 ; that was known to generate the rings:
 ;
 ; H(z) = alpha * z^2 * (z-c) / (1-c*z).
 ;
-; Paul's examples tended to resemble, in overall shape, Julia sets 
-; from the standard quadratic, f(z) = z^2 + c.  I surmised that this 
-; was due to the z^2 factor in H(z), and conjectured that higher 
-; order Herman Rings could be made by increasing the z exponent.  
-; Just going from z^2 to z^3 was interesting, but didn't result in 
+; Paul's examples tended to resemble, in overall shape, Julia sets
+; from the standard quadratic, f(z) = z^2 + c.  I surmised that this
+; was due to the z^2 factor in H(z), and conjectured that higher
+; order Herman Rings could be made by increasing the z exponent.
+; Just going from z^2 to z^3 was interesting, but didn't result in
 ; the same sort of dynamics that H(z) had.  So, I generalized H(z)
 ; into F(z):
 ;
 ; F(z) = alpha * z^n * g(z)^m, where
 ; g(z) = (z-c)/(1-c*z).
-; 
-; The formula that Paul used had n=2 and m=1.  I tried n=3 and m=1 
-; and determined it to be unsuccessful.  So, I tried n=3 and m=2, 
-; and decided that, in general, m should be equal to n-1 for higher 
+;
+; The formula that Paul used had n=2 and m=1.  I tried n=3 and m=1
+; and determined it to be unsuccessful.  So, I tried n=3 and m=2,
+; and decided that, in general, m should be equal to n-1 for higher
 ; order rings.
 ;
-; Finding the critical points for F is not as hard as it may seem.  
+; Finding the critical points for F is not as hard as it may seem.
 ; Using the derivative rules from calculus,
 ;
 ; F' = alpha * nz^(n-1) * g^m + alpha * z^n * mg'g^(m-1).
@@ -9869,40 +9869,40 @@ herman_alpha {; Kerry Mitchell 15feb98
 ;
 ; z = [c^2 + (2n-1)] +/- sqrt([c^2 - 1]*[c^2 - (2n-1)^2])] / (2nc).
 ;
-; Using this directly as the starting point for Mandelbrot-type 
-; images leads to discontinuities, where one root should be used 
-; instead of the other.  These discontinuities occur when real(c^2) 
+; Using this directly as the starting point for Mandelbrot-type
+; images leads to discontinuities, where one root should be used
+; instead of the other.  These discontinuities occur when real(c^2)
 ; = n^2 + m^2, and at the imaginary axis.  In the formulas below
 ; (herman_man and herman-alpha), they are automatically handled
 ; in the initialization.  Since Julia sets are not initialized
 ; using critical points, the herman_jul formulas lack this logic.
 ;
-; The rotation parameter, alpha, is what seems to determine whether 
-; or not Herman rings actually show up.  Two methods can be used to 
-; set alpha--cartesian and polar coordinates.  For the cartesian 
-; method (-cart formulas), the real and imaginary parts of alpha are 
-; input directly.  With the polar method (-polar formulas), the 
-; magnitude and polar angle of alpha are input.  This makes it very 
-; easy to specify rotation by an irrational angle.  Simply specify a 
-; *rational* number for the polar angle.  The irrationality of the 
-; rotation angle is expressed as an irrational number of turns, not 
-; radians.  Since the difference between turns and radians involves 
-; a factor of pi, which is irrational, using a rational number of 
+; The rotation parameter, alpha, is what seems to determine whether
+; or not Herman rings actually show up.  Two methods can be used to
+; set alpha--cartesian and polar coordinates.  For the cartesian
+; method (-cart formulas), the real and imaginary parts of alpha are
+; input directly.  With the polar method (-polar formulas), the
+; magnitude and polar angle of alpha are input.  This makes it very
+; easy to specify rotation by an irrational angle.  Simply specify a
+; *rational* number for the polar angle.  The irrationality of the
+; rotation angle is expressed as an irrational number of turns, not
+; radians.  Since the difference between turns and radians involves
+; a factor of pi, which is irrational, using a rational number of
 ; radians insures that the number of turns is irrational.  The effect
 ; of alpha can be show through the special Mandelbrot-type formula,
 ; herman_alpha.  Here, c is input through parameters and z is
 ; initialized accordingly.  The parameter alpha is varied by being
 ; set to the pixel value.
 ;
-; The following formulas all use the renormalization method to 
-; reduce banding.  In this implementation, the actual coloring is 
-; performed using the decomposition method.  This allows separate 
-; rendering of the orbits that get attracted to infinity and those 
-; that get attracted to 0.  After forming the decomposition angle 
-; based on the iteration count, those pixels that escape to infinity 
-; have their angle increased by pi.  This means that for the same 
-; iteration count, two pixels with different basins of attraction 
-; will be separarated by half of the color palette.  Those pixels 
+; The following formulas all use the renormalization method to
+; reduce banding.  In this implementation, the actual coloring is
+; performed using the decomposition method.  This allows separate
+; rendering of the orbits that get attracted to infinity and those
+; that get attracted to 0.  After forming the decomposition angle
+; based on the iteration count, those pixels that escape to infinity
+; have their angle increased by pi.  This means that for the same
+; iteration count, two pixels with different basins of attraction
+; will be separarated by half of the color palette.  Those pixels
 ; whose orbits are not attracted by either 0 or infinity are treated
 ; as inside pixels.
 ;
@@ -9912,7 +9912,7 @@ herman_alpha {; Kerry Mitchell 15feb98
 
 
 herman_jul-cart {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; p1 = Julia parameter
         ; real(p2) = z exponent (use integer >= 2; m=n-1)
@@ -9954,7 +9954,7 @@ herman_jul-cart {; Kerry Mitchell 15feb98
 
 
 herman_jul-polar {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; p1 = Julia parameter
         ; real(p2) = z exponent (use integer >= 2; m=n-1)
@@ -10040,7 +10040,7 @@ herman_jul-polar-r {; Kerry Mitchell 15feb98
 
 
 herman_man-cart {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; real(p1) = z exponent (use integer >= 2; m=n-1)
         ; imag(p1) = coloring speed (try 4)
@@ -10095,7 +10095,7 @@ herman_man-cart {; Kerry Mitchell 15feb98
 
 
 herman_man-polar {; Kerry Mitchell 15feb98
-        ; See the end of the formula herman_alpha for Kerry Mitchell's  
+        ; See the end of the formula herman_alpha for Kerry Mitchell's
         ;  explanation of his "herman" formulas.
         ; real(p1) = z exponent (use integer >= 2; m=n-1)
         ; imag(p1) = coloring speed (try 4)
@@ -10208,10 +10208,10 @@ hermanm_alpha {; Kerry Mitchell 16feb98
 ;
 ;  Applicable formulas are:
 ;      hermanm_alpha (above)
-;      hermanm_jul-cart 
-;      hermanm_man-cart 
-;      hermanm_jul-polar 
-;      hermanm_man-polar 
+;      hermanm_jul-cart
+;      hermanm_man-cart
+;      hermanm_jul-polar
+;      hermanm_man-polar
 ;
 ; Variations on Herman Rings
 ;
@@ -10241,13 +10241,13 @@ hermanm_alpha {; Kerry Mitchell 16feb98
 ;
 ; This adjustment of the critical point is made in the formula
 ; initialization.
-; 
+;
 ; The parameter alpha can be selected in two ways, either using
 ; cartesian or polar coordinates.  The advantage to polar coordinates
 ; is that entering an irrational rotation angle is easy; enter a
 ; *rational* polar angle for alpha, and the rotation angle (which
 ; involves a factor of pi) will be irrational.
-; 
+;
 ; Five formulas are included:  2 Mandelbrot types (cartesian and
 ; polar), 2 Julia types (cartesian and polar), and 1 Mandelbrot
 ; type where c is explicitly specified and alpha takes on the
@@ -10498,7 +10498,7 @@ hexaflower {; Giuseppe Zito
   d0 = 0.10496
   d1 = 0.011968
   d9 = 0.229837
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 +x
@@ -10508,29 +10508,29 @@ hexaflower {; Giuseppe Zito
   s0 = s0 +y
   s0 = s0 *c7
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s0 = s0 /y
   s0 = s0 +y
   s0 = s0 +x
   s0 = s0 -d9
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 hflip {
-   ; A little non-standard math-function 
+   ; A little non-standard math-function
    ; produces chaotic bands like the
    ; conjugate function but the symmetry is now skew.
   z = pixel, zp=(0,0):
   temp = z
   z = z*z +  zp
-  zp = flip(temp) 
-  |zp| <= 4 
+  zp = flip(temp)
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10540,8 +10540,8 @@ hflip2 {
   z = pixel^2, zp=(0,0):
   temp = z
   z = z*z +  zp
-  zp = flip(temp) 
-  |zp| <= 4 
+  zp = flip(temp)
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10588,7 +10588,7 @@ Hill001b {; Flattened cardioid by Jay R. Hill, 1998
           ; Cubic Mandelbrot set fractal, transformed
           ; Two parameters: real & imaginary perturbations of z(0)
   p = exp(Pixel)/sqrt(3), c=p*(1-sqr(p)), z = p1
-  x=(real(Pixel)<0), iter=0: 
+  x=(real(Pixel)<0), iter=0:
   z = z*sqr(z) + c, iter=iter+1
   (lastsqr+5*x*(iter>250)) <= 4
   ;SOURCE: 98msg.frm
@@ -10599,7 +10599,7 @@ Hill001b1 {; Flattened cardioid by Jay R. Hill, 1998
            ; Cubic Mandelbrot set fractal, transformed
            ; Two parameters: real & imaginary perturbations of z(0)
   p = exp(Pixel)/sqrt(3), c=p*(1-sqr(p)), z = p1
-  x=(real(Pixel)<0), iter=0: 
+  x=(real(Pixel)<0), iter=0:
   z = z*sqr(z) + c, iter=iter+1
   (lastsqr+5*x*(iter>1)) <= 4
   ;SOURCE: 98msg.frm
@@ -10715,7 +10715,7 @@ HRing_J256 {; This thing is capable of generating Herman rings for alpha
             ; equal to exp(2*pi*i*a), a irrational.
             ; p1: alpha. p2: c. p3: Orbit trap radius about 0, reciprocal is
             ; used for infinity.
-            ; Color variant: stretches to 
+            ; Color variant: stretches to
             ; maxiter outside, decomp-128'd inside.
             ; Use outside=real, logmap=0, periodicity=0.
   z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
@@ -10756,9 +10756,9 @@ HRing_J256 {; This thing is capable of generating Herman rings for alpha
 
 HRing_J256b {; This thing is capable of generating Herman rings for alpha
              ; equal to exp(2*pi*i*a), a irrational.
-             ; p1: alpha. p2: c. p3: Orbit trap radius 
+             ; p1: alpha. p2: c. p3: Orbit trap radius
              ; about 0, reciprocal is used for infinity.
-             ; Color variant: stretches to 
+             ; Color variant: stretches to
              ; maxiter inside, decomp-128'd outside.
              ; Use outside=real, logmap=0, periodicity=0.
   z=pixel, a=p1, c=p2, r=real(p3), rr=1/r, iter=0, done=0:
@@ -10877,8 +10877,8 @@ hroot (XAXIS) {
   z = pixel^0.5, zp=(0,0):
   temp = z
   z = z*z +  zp
-  zp = temp 
-  |zp| <= 4 
+  zp = temp
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -10888,40 +10888,40 @@ hsqr (XYAXIS) {
   z = pixel^2, zp=(0,0):
   temp = z
   z = z*z +  zp
-  zp = temp 
-  |zp| <= 4 
+  zp = temp
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
 
 ht {
-   ; Ah! You can use a variable in the 
+   ; Ah! You can use a variable in the
    ; inversion but now check for overflow.
-   ; Good results are found when the real part 
+   ; Good results are found when the real part
    ; of p1 is in the range 0.1->1.0
    ; With some sort of special value aprox. 0.148148...
    ; Setting the imaginary part as well causes very strange fractals
   z = pixel, zp=temp=(0,0), huge=1.0e32:
   temp = z
   z = z*z + zp
-  zp = p1/temp 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
 
 ht1 {
-   ; Ah! You can use a variable in the 
+   ; Ah! You can use a variable in the
    ; inversion but now check for overflow.
-   ; Good results are found when the real part 
+   ; Good results are found when the real part
    ; of p1 is in the range 0.1->1.0
    ; With some sort of special value aprox. 0.148148...
    ; Setting the imaginary part as well causes very strange fractals
   z = pixel, zp=temp=(0,0), huge=1.0e32:
   temp = z
   z = z*z + zp
-  zp = p1/temp 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10931,8 +10931,8 @@ htc {
   z = c = pixel, zp=(0,0), huge=1.0e32:
   temp = z
   z = z*z + zp
-  zp = c*p1/temp 
-  (|zp| <= 64) && (|z| <= huge) 
+  zp = c*p1/temp
+  (|zp| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10943,8 +10943,8 @@ htd {
   temp = z
   z = zp1*zp1 - zp2
   zp2 = zp1
-  zp1 = p1/temp 
-  (|zp1| <= 64) && (|z| <= huge) 
+  zp1 = p1/temp
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10954,7 +10954,7 @@ htexp1 {
   z = pixel, bail=real(p2), zp = (0,0), huge=1.e32:
   temp = z
   z = -exp(z) - zp
-  zp = p1/temp 
+  zp = p1/temp
   (|zp| <=bail && |z| <=huge)
   ;SOURCE: noel.frm
 }
@@ -10965,7 +10965,7 @@ htexp2 {
   z = pixel, bail=real(p2), zp = (0,0), huge=1.e32:
   temp = z
   z = exp(z) - zp
-  zp = p1/temp 
+  zp = p1/temp
   (|zp| <=bail && |z| <=huge)
   ;SOURCE: noel.frm
 }
@@ -10976,7 +10976,7 @@ htexp3 {
   z = pixel, bail=real(p2), zp = (0,0), huge=1.e32:
   temp = z
   z = exp(z) + zp
-  zp = p1/temp 
+  zp = p1/temp
   (|zp| <=bail && |z| <=huge)
   ;SOURCE: noel.frm
 }
@@ -10988,7 +10988,7 @@ htgen {
   temp = z
   z = z*z + zp1
   zp1 = p1/temp
-  (|zp1| <= bail) && (|z| <= huge) 
+  (|zp1| <= bail) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -10998,8 +10998,8 @@ htjul_inv {
   temp = z
   z = z*z + zp2
   zp2 = zp1
-  zp1 = p1/temp*temp 
-  (|zp2| <= huge) && (|z| <= huge) 
+  zp1 = p1/temp*temp
+  (|zp2| <= huge) && (|z| <= huge)
   ;SOURCE: fract182.frm
 }
 
@@ -11009,8 +11009,8 @@ htjulia {; A new mandelbrot julia type from Noel Giffin.
   temp = z
   z = z*z + zp2
   zp2 = zp1
-  zp1 = p1/temp*temp 
-  (|zp2| <= huge) && (|z| <= huge) 
+  zp1 = p1/temp*temp
+  (|zp2| <= huge) && (|z| <= huge)
   ;SOURCE: fract182.frm
 }
 
@@ -11021,8 +11021,8 @@ htree (XAXIS) {
   temp = z
   z = zp1*zp1  - zp2
   zp2 = zp1
-  zp1 = p1/temp 
-  (|zp1| <= 64) && (|z| <= huge) 
+  zp1 = p1/temp
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -11031,34 +11031,34 @@ htz0 {; From Noel Giffin noel@triumf.ca
       ; some unusual julia intializations
   z = pixel^3:
   z = z*z + p1
-  (|z| <= 4.) 
+  (|z| <= 4.)
   ;SOURCE: noel1.frm
 }
 
 
 htzi {; From Noel Giffin noel@triumf.ca
-      ; some unusual julia intializations 
+      ; some unusual julia intializations
   z =(1.0,1.0)/pixel^4:
   z = z^2 + p1
-  |z| <=32767.0 
+  |z| <=32767.0
   ;SOURCE: noel1.frm
 }
 
 
 htzsin {; From Noel Giffin noel@triumf.ca
-        ; some unusual julia intializations 
+        ; some unusual julia intializations
   z = sin(pixel)^4:
-  z = z*z + p1 
-  |z| <=4.0 
+  z = z*z + p1
+  |z| <=4.0
   ;SOURCE: noel1.frm
 }
 
 
 htzsini {; From Noel Giffin noel@triumf.ca
-         ; some unusual julia intializations 
+         ; some unusual julia intializations
   z = 1/sin(pixel)^4:
   z = z*z + p1
-  |z| <=4.0 
+  |z| <=4.0
   ;SOURCE: noel1.frm
 }
 
@@ -11071,27 +11071,27 @@ hualp (XAXIS) {; (c) Copyright 1996 by Manfred W.Rupp
 }
 
 
-hybrid-J {; An unusual hybrid julia type alternating 
+hybrid-J {; An unusual hybrid julia type alternating
           ; between two constants. Noel Giffin
   z = pixel, zp1 = p1, zp2 = p2:
   z = z*z + zp2
   temp = zp2
   zp2 = zp1
-  zp1 = temp 
-  |z| <= 4.0 
+  zp1 = temp
+  |z| <= 4.0
   ;SOURCE: noel2.frm
 }
 
 
-hybrid-M {; A hybrid mandelbrot/julia type where the calculation 
-          ; alternates between a mandelbrot calculation and a Julia. 
+hybrid-M {; A hybrid mandelbrot/julia type where the calculation
+          ; alternates between a mandelbrot calculation and a Julia.
           ; Noel Giffin
   z = zp1 = pixel, zp2 = p1:
   z = z*z + zp2
   temp = zp2
   zp2 = zp1
-  zp1 = temp 
-  |z| <= 4.0 
+  zp1 = temp
+  |z| <= 4.0
   ;SOURCE: noel2.frm
 }
 
@@ -11132,8 +11132,8 @@ hydra (XAXIS) {
   z = pixel, zp = (0,0):
   temp = z
   z = z*z + zp
-  zp = temp 
-  |zp| <= 4 
+  zp = temp
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 

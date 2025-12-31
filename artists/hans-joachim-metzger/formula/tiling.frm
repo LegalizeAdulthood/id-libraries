@@ -37,7 +37,7 @@ JDTileJulia {; Tiling Mandelbrot, Jim Deutch, 1996
   |z|<4
   ;SOURCE: tiling.frm
 }
- 
+
 JDTileMandel {;Tiling Mandelbrot, Jim Deutch, 1996
    ; NOTE!:
    ; imag(p3)=tiling order
@@ -77,7 +77,7 @@ JDTileMandel {;Tiling Mandelbrot, Jim Deutch, 1996
   |z|<4
   ;SOURCE: tiling.frm
 }
- 
+
 JDTileMandelB {; Tiling Mandelbrot, Jim Deutch, 1996
    ; NOTE!:
    ; real(p3)=resolution: 320, 640, 800, 1024, 1200
@@ -120,4 +120,4 @@ JDTileMandelB {; Tiling Mandelbrot, Jim Deutch, 1996
   |z|<4
   ;SOURCE: tiling.frm
 }
- 
+

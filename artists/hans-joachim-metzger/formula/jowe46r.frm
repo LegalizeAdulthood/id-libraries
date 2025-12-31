@@ -4,13 +4,13 @@ JoWe_06m_01 {; Jo Weber [100424,35], 10/1996
   z=a1+pixel
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_06m_02 {; Jo Weber [100424,35], 10/1996
   z = pixel:
   z=fn1(z)*fn1(z)*p2-pixel
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_06m_03a {; Jo Weber [100424,35], 10/1996
               ; bailout = p2
   z = pixel
@@ -20,7 +20,7 @@ JoWe_06m_03a {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_06m_03b {; Jo Weber [100424,35], 10/1996
               ; bailout = p2
   z = pixel
@@ -30,7 +30,7 @@ JoWe_06m_03b {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_06m_03b {; Jo Weber [100424,35], 10/1996
               ; bailout = p2
   z = pixel
@@ -40,7 +40,7 @@ JoWe_06m_03b {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_06m_05o {; Jo Weber [100424,35], 10/1996
               ; bailout = p1
   z = pixel
@@ -49,7 +49,7 @@ JoWe_06m_05o {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_xy_10 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -63,7 +63,7 @@ JoWe_xy_10 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_xy_11 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -77,7 +77,7 @@ JoWe_xy_11 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+
 JoWe_xy_12 {; Jo Weber [100424,35], 10/1996
             ; bailout = p3
   z = c = pixel
@@ -91,4 +91,4 @@ JoWe_xy_12 {; Jo Weber [100424,35], 10/1996
   |z|<=bailout
   ;SOURCE: jo_we_46.frm
 }
- 
+

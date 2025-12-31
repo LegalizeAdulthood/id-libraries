@@ -19114,7 +19114,7 @@ p_p1 = (-11,-1.1)
 p_p2 = (-1,-15)
 p_p3 = (-1.95,0)
 ; Function: r
- 
+
 ; User-selectable Lake parameters:
 ; -------------------------------
 ; real part of p2: 0 = lake transform disabled

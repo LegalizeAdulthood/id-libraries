@@ -6,4 +6,4 @@ CGNewtonSinExp (XAXIS) {
   .0001 < |z2|
   ;SOURCE: fractint.frm
 }
- 
+

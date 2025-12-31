@@ -2,15 +2,15 @@
 Scarlotta    { ;Rui S. Parracho
   z=c=pixel,
   :
-  rz=fn1(z) 
-  z=c*((rz)+sin(rz)), 
+  rz=fn1(z)
+  z=c*((rz)+sin(rz)),
   cabs(z)<= 512
   }
 
 Scarlotta2   { ;Rui S. Parracho
   z=pixel/pi, c=pixel,
   :
-  rz=c/z, z=((rz)+sin(rz)), 
+  rz=c/z, z=((rz)+sin(rz)),
   cabs(z)<= 512
   }
 
@@ -18,12 +18,12 @@ Scarlotta3   { ; September 15, 2001
                ;Rui S. Parracho
   z=pixel/pi, c=pixel,
   :
-  rz=c/z, z=((rz)+sin(rz)), 
+  rz=c/z, z=((rz)+sin(rz)),
   cabs(z/( (sqrt(z*z-1) + z) )) > .5
   }
 
 int700       { ;Rui S. Parracho
-  z=pixel,  
+  z=pixel,
   if (|p1|==0), r=(-3.6,1.1), else, r=p1, endif
   :
   oz=z, sz=z-z^3/3+z^5/120, f=z*z*sz,
@@ -38,7 +38,7 @@ Qubex        { ;Rui S. Parracho
   d=pixel, ad3=a/3, bd2=b/2, ta=2*a
   z=(-b+sqrt(b*b-4*a*c))/ta
   :
-  z2=z*z, z3=z2*z, 
+  z2=z*z, z3=z2*z,
   z=ad3*z3+bd2*z2+c*z+d,
   |z| <= 256
   }
@@ -60,7 +60,7 @@ cubicQueues  { ; September 01, 2001
   IF(|p1|==0), a=(3,0), ELSE, a=p1, ENDIF
   IF(|p2|==0), b=(2,0), ELSE, b=p2, ENDIF
   IF(|p3|==0), c=(1,0), ELSE, c=p3, ENDIF
-  d=pixel, 
+  d=pixel,
   z=1/3*a+1/3*c+1/3*b+1/3*sqrt(a^2-a*c-a*b+c^2-b*c+b^2)
   :
   z=(z-a)*(z-b)*(z-c)+d,
@@ -106,8 +106,8 @@ newcube      { ;Rui S. Parracho
   if (cabs(p2)==0), b=1, else, b=p2, endif
   if (cabs(p3)==0), c=pixel, else, c=p3, endif
   a2=a*a, b2=b*b, c2=c*c,
-  ab=a*b, ac=a*c, bc=b*c, 
-  m=a+b+c, n=ab+bc+ac, o=a*b*c, 
+  ab=a*b, ac=a*c, bc=b*c,
+  m=a+b+c, n=ab+bc+ac, o=a*b*c,
   det=sqrt(a2+b2+c2-10*n),
   u=(det-2*m)/6,
   v=(-det-2*m)/6,
@@ -121,7 +121,7 @@ newcube      { ;Rui S. Parracho
 autosquare   { ;Rui S. Parracho
   if (cabs(p1)==0), a=1, else, a=p1, endif
   if (cabs(p2)==0), b=1, else, b=p2, endif
-  c=pixel, 
+  c=pixel,
   if (cabs(p3)==0), r=p1, else, r=p3, endif
   g=z=(-b)/(2*a)
   :
@@ -133,9 +133,9 @@ autosquare   { ;Rui S. Parracho
 marmelo      { ;Rui S. Parracho
   IF(|p1|==0), r=pixel, ELSE, r=p1, ENDIF
   IF(|p2|==0), x0=(-1,1), ELSE, x0=p2, ENDIF
-  IF(|p3|==0), a=real(pixel), b=imag(pixel), 
+  IF(|p3|==0), a=real(pixel), b=imag(pixel),
   ELSE, a=real(p3), b=imag(p3), ENDIF
-  z=x1=pixel, 
+  z=x1=pixel,
   amb=a-b, apb=a+b, tamb=2*amb, tapb=2*apb
   :
   fx0=sin(amb*x0)/tamb-sin(x0*apb)/tapb+pixel,
@@ -147,8 +147,8 @@ marmelo      { ;Rui S. Parracho
 
 muitomas     { ;Rui S. Parracho
   IF(|p1|==0), r=1, ELSE, r=p1, ENDIF    ;relaxation
-  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF 
-  IF(|p3|==0), b=fn2(pixel), ELSE, b=p2, ENDIF 
+  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF
+  IF(|p3|==0), b=fn2(pixel), ELSE, b=p2, ENDIF
   c=fn3(pixel), z=pixel,  bail=0
   p=9*a*c-3*b*b, q=2*b*b*b-9*a*b*c+27*a*a*pixel
   :
@@ -162,9 +162,9 @@ muitomas     { ;Rui S. Parracho
 
 muitominos   { ;Rui S. Parracho
   IF(|p1|==0), r=1, ELSE, r=p1, ENDIF    ;relaxation
-  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF 
-  IF(|p3|==0), b=fn2(pixel), ELSE, b=p2, ENDIF 
-  c=fn3(pixel), z=pixel,  bail=0, p=9*a*c-3*b*b, 
+  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF
+  IF(|p3|==0), b=fn2(pixel), ELSE, b=p2, ENDIF
+  c=fn3(pixel), z=pixel,  bail=0, p=9*a*c-3*b*b,
   q=2*b*b*b-9*a*b*c+27*a*a
   :
   fz0= a*z*z*z+b*z*z+c*z+pixel,
@@ -178,9 +178,9 @@ muitominos   { ;Rui S. Parracho
 
 outravez     { ;Rui S. Parracho
   IF(|p1|==0), r=1, ELSE, r=p1, ENDIF    ;relaxation
-  IF(|p2|==0), a=3, ELSE, a=p2, ENDIF 
-  IF(|p3|==0), b=7, ELSE, b=p3, ENDIF 
-  c=pixel, bail=0, 
+  IF(|p2|==0), a=3, ELSE, a=p2, ENDIF
+  IF(|p3|==0), b=7, ELSE, b=p3, ENDIF
+  c=pixel, bail=0,
   z=(sqrt(4*b*b-12*a*c)-2*b)/6/a,
   :
   oz=z, fz= a*z*z*z+b*z*z+c*z+pixel,
@@ -191,8 +191,8 @@ outravez     { ;Rui S. Parracho
 
 ultravez     { ;Rui S. Parracho
   IF(|p1|==0), r=1, ELSE, r=p1, ENDIF    ;relaxation
-  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF 
-  IF(|p3|==0), b=fn2(pixel), ELSE, b=p3, ENDIF 
+  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF
+  IF(|p3|==0), b=fn2(pixel), ELSE, b=p3, ENDIF
   c=fn3(pixel), z=(sqrt(4*b*b-12*a*c)-2*b)/6/a,
   bail=0, p=9*a*c-3*b*b
   :
@@ -212,7 +212,7 @@ volvox       { ;Rui S. Parracho
 
 valoil       { ;Rui S. Parracho
   IF(|p1|==0), z=pixel, ELSE, z=p1, Endif
-  c=pixel 
+  c=pixel
   :
   z=c*((z-1/z)*log(z)-z+log(2*pi)/2)
   |z|<= 1256
@@ -220,8 +220,8 @@ valoil       { ;Rui S. Parracho
 
 maisominos   { ;Rui S. Parracho
   IF(|p1|==0), r=1, ELSE, r=p1, ENDIF    ;relaxation
-  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF 
-  IF(|p3|==0), b=fn2(pixel), ELSE, b=p3, ENDIF 
+  IF(|p2|==0), a=fn1(pixel), ELSE, a=p2, ENDIF
+  IF(|p3|==0), b=fn2(pixel), ELSE, b=p3, ENDIF
   c=fn3(pixel), z=pixel,  bail=0
   :
   fz0= z*z*z+a*z*z+b*z+c,
@@ -232,7 +232,7 @@ maisominos   { ;Rui S. Parracho
   }
 
 Beliza       { ;Rui S. Parracho
-  IF(|p1|==0), c=pixel, ELSE, c=p1, ENDIF    
+  IF(|p1|==0), c=pixel, ELSE, c=p1, ENDIF
   IF(|p2|==0), z=pixel, ELSE, z=p2, ENDIF
   bail=0, a=c*5/8, ta=2*a, b=c*35/16, fb=4*b
   :
@@ -243,7 +243,7 @@ Beliza       { ;Rui S. Parracho
 
 int08        { ;Rui S. Parracho
   z=pixel
-  IF(|p1|==0), r=1.7, ELSE, r=p1, ENDIF  
+  IF(|p1|==0), r=1.7, ELSE, r=p1, ENDIF
   :
   oz=z, z2=z*z, z3=z2*z, f=log(z3),
   g=3*z2/(z3), z=z-r*f/g
@@ -254,14 +254,14 @@ int269       { ;Rui S. Parracho
   z=pixel,
   if (cabs(p1)==0), k=2.9, else, k=(p1), endif
   :
-  oz=z, f=.5*(sin(z))^2, 
+  oz=z, f=.5*(sin(z))^2,
   g=sin(z)*cos(z),
   z=z-k*f/g
   cabs(z-oz)> .00000001
   }
 
 int253       { ;Rui S. Parracho
-  z=pixel, 
+  z=pixel,
   if (cabs(p1)==0), r=1, else, r=(p1), endif
   :
   oz=z
@@ -270,8 +270,8 @@ int253       { ;Rui S. Parracho
   cabs(z-oz)> .00000001
   }
 
-int252       { ;Rui S. Parracho 
-  z=pixel,oz=0 
+int252       { ;Rui S. Parracho
+  z=pixel,oz=0
   if (cabs(p1)==0), t=1, else, t=(p1), endif
   if (cabs(p2)==0), r=3, else, r=(p2), endif
   if (cabs(p3)==0), s=5, else, s=(p1), endif
@@ -284,7 +284,7 @@ int252       { ;Rui S. Parracho
   }
 
 int304       { ;Rui S. Parracho
-  z=c=pixel, 
+  z=c=pixel,
   if (cabs(p1)==0), k=1, else, k=(p1), endif
   :
   oz=z, z2=z*z, z3=z2*z
@@ -335,8 +335,8 @@ rsp_0300w2   { ;Rui S. Parracho
   if (whitesq), r=r1, else, r=r2, endif
   z=pixel
   :
-  z2=z*z, z3=z*z2, fz=z3+c2*z+tc*z2+tc3, 
-  gz=3*z2+c2/z+ttc*z, z=z-r*fz/gz, 
+  z2=z*z, z3=z*z2, fz=z3+c2*z+tc*z2+tc3,
+  gz=3*z2+c2/z+ttc*z, z=z-r*fz/gz,
   cabs(fz) > .00000001
   }
 
@@ -363,7 +363,7 @@ rsp_0400w1   { ;Rui S. Parracho
   cabs(fz)/.0000001 > 1
   }
 
-rsp04w01     { ;Rui S. Parracho 
+rsp04w01     { ;Rui S. Parracho
   c=pixel
   if (cabs(p1)==0), r=1,  else, r=p1, endif
   if (cabs(p2)==0), z=(1.0,1.0), else, z=p2, endif
@@ -375,7 +375,7 @@ rsp04w01     { ;Rui S. Parracho
   cabs(f) > .00000001
   }
 
-rsp04w03     { ;Rui S. Parracho 
+rsp04w03     { ;Rui S. Parracho
   ;periodicity off
   if (cabs(p1)==0), r=1,  else, r=p1, endif
   if (cabs(p2)==0), z=pi/2, else, z=p2, endif
@@ -386,7 +386,7 @@ rsp04w03     { ;Rui S. Parracho
   cabs(f) > .00000001
   }
 
-rsp_04w5     { ;Rui S. Parracho 
+rsp_04w5     { ;Rui S. Parracho
   c=pixel
   if (cabs(p2)==0), a=(1.0,1.0), else, a=p2, endif
   if (cabs(p3)==0), b=(-1.0,-1.0), else, b=p3, endif
@@ -503,7 +503,7 @@ rsp_halley002 { ;Rui S. Parracho
 
 rsp_ruif1    { ;Rui S. Parracho
   z=100*pixel,d=3*pixel
-  c=pixel,p=6*c, q=11*c*c, r=p*c*c,  s=2*p, 
+  c=pixel,p=6*c, q=11*c*c, r=p*c*c,  s=2*p,
   if (cabs(p1)==0), w=1.5, else, w=(p1), endif
   :
   z2=z*z, z3=z*z2, f=z3+p*z2+q*z+r+d
@@ -513,7 +513,7 @@ rsp_ruif1    { ;Rui S. Parracho
   }
 
 rsp_ruif2    { ;Rui S. Parracho
-  z=0, c=pixel, m=6*c, n=11*c*c, o=m*c*c, 
+  z=0, c=pixel, m=6*c, n=11*c*c, o=m*c*c,
   p=2*m, d=3*pixel, oz=0
   if (cabs(p1)==0), r=1.5, else, r=(p1), endif
   :
@@ -523,8 +523,8 @@ rsp_ruif2    { ;Rui S. Parracho
   }
 
 rsp_0300h2   { ;Rui S. Parracho
-  z=100000*pixel, c=pixel,p=6*c, 
-  q=11*c*c, r=p*c*c, s=2*p, 
+  z=100000*pixel, c=pixel,p=6*c,
+  q=11*c*c, r=p*c*c, s=2*p,
   if (cabs(p1)==0), r=1, else, r=(p1), endif
   :
   z2=z*z, z3=z*z2
@@ -535,8 +535,8 @@ rsp_0300h2   { ;Rui S. Parracho
   }
 
 rsp_0300h3   { ;Rui S. Parracho
-  z=10000*pixel, c=pixel,p=6*c, 
-  q=11*c*c, r=p*c*c, s=2*p, 
+  z=10000*pixel, c=pixel,p=6*c,
+  q=11*c*c, r=p*c*c, s=2*p,
   if (cabs(p1)==0), r=(.5375,-0.7875), else, r=(p1), endif
   if (cabs(p2)==0), s=(.3375,-0.10625), else, s=(p2), endif
   :
@@ -586,13 +586,13 @@ rsp_0400h1   { ;Rui S. Parracho
   z=x*(x3+3*x2*y+3*x*y2+y^3)+c
   |z|<256
   }
-  
+
 rsp_04w4h1   { ;Rui S. Parracho
   if (cabs(p1)==0), c=pixel, else, c=p1, endif
   z=pixel
   :
   z2=z*z, z3=z2*z,
-  dz=z*cos(z)+sin(z)+3*z2,  
+  dz=z*cos(z)+sin(z)+3*z2,
   z=-z3/sin(c*z),
   cabs(dz) > .000000001
   }
@@ -607,7 +607,7 @@ rsp_04w4h2   { ;Rui S. Parracho
   |t-ot| > .000000001
   }
 
-rsp_05h01    { ;Rui S. Parracho  
+rsp_05h01    { ;Rui S. Parracho
   if (cabs(p1)==0), p=pixel, else, p=p1, endif
   if (cabs(p2)==0), a=pixel, else, a=p2, endif
   if (cabs(p3)==0), b=pixel, else, b=p3, endif
@@ -620,7 +620,7 @@ rsp_05h01    { ;Rui S. Parracho
   |z-oz|>.000000064
   }
 
-rsp_05h02    { ;Rui S. Parracho 
+rsp_05h02    { ;Rui S. Parracho
   c=pixel
   if (cabs(p1)==0), a=pixel, else, a=p1, endif
   if (cabs(p2)==0), b=pixel, else, b=p2, endif
@@ -636,11 +636,11 @@ rsp_05h03    { ;Rui S. Parracho
   if (cabs(p2)==0), c=pixel, else, c=p2, endif
   :
   z2=z*z, z3=z2*z, z=-z3/sin(c*z),
-  dz=z*cos(z)+sin(z)+3*z*z,  
+  dz=z*cos(z)+sin(z)+3*z*z,
   cabs(dz) > .000000001
   }
 
-rsp_05h04    { ;Rui S. Parracho 
+rsp_05h04    { ;Rui S. Parracho
   z=c=pixel, oz=bail=0
   if (cabs(p1)==0), n=1.01, else, n=p1, endif
   :
@@ -660,14 +660,14 @@ rsp_05h05    { ;Rui S. Parracho
   sz=fz*fz*fz+u*fz*fz+v*fz+w
   tz=sz*sz*sz+u*sz*sz+v*sz+w
   :
-  q=(tz-sz)/cabs(sz-fz), 
+  q=(tz-sz)/cabs(sz-fz),
   q2=q*q, a=q*tz+(q+q2)*sz+q2*fz
   b=(2*q+1)*tz+(1+2*q+q2)*sz+q2*fz
   c=(q+1)*sz, oz=z,
   detm=y*(b-sqrt(b*b-4*a*c)),
   detp=y*(b+sqrt(b*b+4*a*c)),
   if(cabs(detp)>cabs(detm)), r=detm, else, r=detp, endif
-  z=z-(tz-sz)*2*c/r, fz=sz, sz=tz, 
+  z=z-(tz-sz)*2*c/r, fz=sz, sz=tz,
   tz=tz*tz*tz+u*tz*tz+v*tz+w
   |z-oz|> .000000001
   }
@@ -686,7 +686,7 @@ Autocube     { ;Rui S. Parracho
 
 rsp_0711h1   { ;Rui S. Parracho
   if (cabs(p1)==0), n=8, else, n=(round(cabs(p1))), endif ;points on star
-  nm1=n-1, nm2=n-2, a=n*nm1, 
+  nm1=n-1, nm2=n-2, a=n*nm1,
   if (cabs(p2)==0), c=pixel, else, c=p2, endif ;slices with high p1
   if (cabs(p3)==0), r=1.5, else, r=p3, endif  ; looked good with 1.0
   z=pixel, oz=f=f1=f2=0
@@ -702,7 +702,7 @@ Schwartian   { ;Rui S. Parracho
   if (cabs(p2)==0), k=1, else, k=(p2), endif
   if (cabs(p3)==0), test=4, else, test=(p3), endif
   :
-  f=z*z*z+fn1(z), 
+  f=z*z*z+fn1(z),
   g=3*z*z+fn2(z), h=6*z+c
   z=z-r*(k/g-3*h*h/2/g/g)/f
   cabs(z)< test

@@ -372,8 +372,8 @@ Mandelbrot (XAXIS) {; Mark Peterson
 
 
 Mandelbrot (XAXIS) {
-  z = Pixel:  
-  z = sqr(z) + pixel 
+  z = Pixel:
+  z = sqr(z) + pixel
   |z| <= 4
   ;SOURCE: newforms.frm
 }
@@ -419,8 +419,8 @@ ManInTheOzone (XAXIS_NOPARM) {
   z=sqr(z)+pixel
   z=cos(z)+pixel
   z=sin(z)+pixel
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: form1.frm
 }
 
@@ -439,7 +439,7 @@ ManInTheOzone (XAXIS_NOPARM) {; Jon Osuch
 }
 
 
-ManInTheOzoneC (XAXIS_NOPARM) { 
+ManInTheOzoneC (XAXIS_NOPARM) {
    ; Edited for Fractint v. 20 by George Martin 10/98
   z=p1, x=1:
   IF (x<10)
@@ -449,18 +449,18 @@ ManInTheOzoneC (XAXIS_NOPARM) {
   ELSE
     z=sin(z)+pixel
   ENDIF
-  x=x+1 
-  |z|<=4 
+  x=x+1
+  |z|<=4
   ;SOURCE: form1.frm
 }
 
 
-manowar { 
+manowar {
   z=pixel, g=pixel, f=pixel:
   g = f
   f = z
-  z = fn1(z^p1) + fn2(p2*g) + pixel 
-  |z|<=4 
+  z = fn1(z^p1) + fn2(p2*g) + pixel
+  |z|<=4
   ;SOURCE: test.frm
 }
 
@@ -495,7 +495,7 @@ mask {; Giuseppe Zito c1=0.538999 , c2 = 1.629151
 
 
 Michaelbrot {; Michael Theroux [71673,2767]
-             ; Fix and generalization by  Ron Barnett [70153,1233]   
+             ; Fix and generalization by  Ron Barnett [70153,1233]
              ; Try p1 = 2.236067977 for the golden mean
              ; based on Golden Mean
   z = pixel:
@@ -507,7 +507,7 @@ Michaelbrot {; Michael Theroux [71673,2767]
 
 MixUp {; (c) Jay Hill, 1998
        ; make sure p1 <> p2 and p3 <> 0
-  u=p1, v=p2, w=p3 
+  u=p1, v=p2, w=p3
   c=pixel/w, x=v-u, z=(-u/v/w)^(1/x):
   z=z^u + w*z^v + c
   |z| <= 1000
@@ -559,7 +559,7 @@ multirot-XY-ZW {; Jim Muth, best=ifif, fiif, fifi, iffi    OLD version
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2
   c=cos(b)*fn3(real(pixel))+cos(a)*fn4(imag(pixel))+p3:
   z=sqr(z)+c
-  |z| <= 36  
+  |z| <= 36
   ;SOURCE: 98msg.frm
 }
 

@@ -28,7 +28,7 @@ peacock {; Giuseppe Zito
   d8 = -0.200256
   d11 = 0.180210:
   x = real(z), y = imag(z)
-  s1 = c0*y/x 
+  s1 = c0*y/x
   newx = c6 * y * s1 * c9 + y
   t1 = x
   t2  = ((d2/x)/y)*t1+d6

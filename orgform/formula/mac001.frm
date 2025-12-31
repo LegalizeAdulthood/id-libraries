@@ -12,7 +12,7 @@ comment  { MandelBroot de tres puntas.}
 Mand001 (xaxis) { ; p1 = 16
       bailout = ( 16 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = z2 * z2 + c,
       |z| <= bailout
 }
@@ -21,7 +21,7 @@ comment  { Mandelbroot de cinco puntas.}
 Mand002 (xaxis)  { ; p1 = 64
       bailout = ( 64 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = z2 * z2 * z2 + c,
       |z| <= bailout
 }
@@ -30,7 +30,7 @@ comment  { Mandelbroot de dos puntas.}
 Mand003 (xaxis)  { ; p1 = 64
       bailout = ( 64 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = z2 * z + c,
       |z| <= bailout
 }
@@ -38,7 +38,7 @@ Mand003 (xaxis)  { ; p1 = 64
 Mand004 (xaxis)  { ; p1 = 10000
       bailout = ( 10000 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
       c = z = Pixel:
-      z2 = z * z * z  
+      z2 = z * z * z
       z = z2 * z2 * z2 + c,
       |z| <= bailout
 }
@@ -53,7 +53,7 @@ Mand005 { ; p1 = 4
 Mand006 (xaxis)  { ; p1 = 64
       bailout = ( 64 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
       c = z = fn1(Pixel):
-      z2 = z * z  
+      z2 = z * z
       z = z2 * z + c,
       |z| <= bailout
 }
@@ -145,7 +145,7 @@ Mand013 (xaxis) { ; p1 = 16
 Manv001 (xaxis)  {
       bailout = ( 64 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = z2 * z2 * z2 + P1 * z2 * z2 + P2 * z2 + c,
       |z| <= bailout
 }
@@ -153,7 +153,7 @@ Manv001 (xaxis)  {
 Manv002 (xaxis)  {
       bailout = ( 4 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = (p1 - z2) * (z2 - p2) + c,
       |z| <= bailout
 }
@@ -161,7 +161,7 @@ Manv002 (xaxis)  {
 Msin001 (xaxis)  {
       bailout = ( 4 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z = sin(p1 - z2) * sin(z2 - p1) + c,
       |z| <= bailout
 }
@@ -176,8 +176,8 @@ Msin002 (xaxis)  {
 Newt001 (xaxis)  {
       bailout = ( 16 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       z = Pixel:
-      z2 = z * z  
-      z3 = z * z2  
+      z2 = z * z
+      z3 = z * z2
       z = (2 * z3 + p1) / (3 * z2),
       |z| <= bailout
 }
@@ -185,7 +185,7 @@ Newt001 (xaxis)  {
 Newt002 (xaxis)  {
       bailout = ( 16 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       c = z = Pixel:
-      z2 = z * z  
+      z2 = z * z
       z3 = z * z2
       z = (2 * z3 + p1) / (3 * z2) + c,
       |z| <= bailout
@@ -194,8 +194,8 @@ Newt002 (xaxis)  {
 Newt003 (xaxis)  {
       bailout = ( 16 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       c = z = Pixel:
-      z2 = z * z  
-      z3 = z * z2  
+      z2 = z * z
+      z3 = z * z2
       z = (2 * z3 + c) / (3 * z2) + p1,
       |z| <= bailout
 }
@@ -203,8 +203,8 @@ Newt003 (xaxis)  {
 Newt004 (xaxis)  {
       bailout = ( 256 * ( p3 <= 0 ) ) + ( p3 * ( 0 < p3 ) )
       z = Pixel:
-      z2 = z * z  
-      z3 = z2 * z  
+      z2 = z * z
+      z3 = z2 * z
       z6 = z3 * z3
       zf = z6 - p1 * z2 * z2
       zd = 6 * z3 * z2 - 3 * p1 * z3
@@ -215,7 +215,7 @@ Newt004 (xaxis)  {
 Arana01 (XAXIS) {   ;p1=0.4444444 => Arana?, p2=4
       bailout = ( 4 * ( p2 <= 0 ) ) + ( p2 * ( 0 < p2 ) )
       c = z = Pixel:
-      z = z * z * z + c  
+      z = z * z * z + c
       c = p1 * c + z,
       |z| <= bailout
 }
@@ -223,7 +223,7 @@ Arana01 (XAXIS) {   ;p1=0.4444444 => Arana?, p2=4
 Arana02 (XAXIS) { ; p2 = 16
       bailout = ( 16 * ( p2 <= 0 ) ) + ( p2 * ( 0 < p2 ) )
       c = z = Pixel:
-      z = z * z * z * z + c  
+      z = z * z * z * z + c
       c = p1 * c + z,
       |z| <= bailout
 }
@@ -436,7 +436,7 @@ Sierpin9 { ; Sierpinski
     |z| < bailout
 }
 
-Ran001 { 
+Ran001 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   srand(p2)
   c = z = pixel + rand:
@@ -444,7 +444,7 @@ Ran001 {
     |z| < bailout
 }
 
-Ran002 { 
+Ran002 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   srand(p2)
   c = p3
@@ -563,7 +563,7 @@ Mac013 {
     |z| < bailout
 }
 
-Mac014 { 
+Mac014 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = z = pixel:
@@ -572,7 +572,7 @@ Mac014 {
     |z| < bailout
 }
 
-Mac015 { 
+Mac015 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = p3
@@ -582,7 +582,7 @@ Mac015 {
     |z| < bailout
 }
 
-Mac016 { 
+Mac016 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = z = pixel:
@@ -591,7 +591,7 @@ Mac016 {
     |z| < bailout
 }
 
-Mac017 { 
+Mac017 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = p3
@@ -639,7 +639,7 @@ Mac021 {
     |z| < bailout
 }
 
-Mac022 { 
+Mac022 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = p3
@@ -653,7 +653,7 @@ Mac022 {
     |z| < bailout
 }
 
-Mac023 { 
+Mac023 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = z = pixel:
@@ -666,7 +666,7 @@ Mac023 {
     |z| < bailout
 }
 
-Mac024 { 
+Mac024 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = p3
@@ -675,7 +675,7 @@ Mac024 {
     |z| < bailout
 }
 
-Mac025 { 
+Mac025 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte = p2 + 1
   c = z = pixel:
@@ -683,7 +683,7 @@ Mac025 {
     |z| < bailout
 }
 
-Mac026a { 
+Mac026a {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte1 = p2
   corte2 = p3
@@ -696,7 +696,7 @@ Mac026a {
     |z| < bailout
 }
 
-Mac027a { 
+Mac027a {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte1 = p2
   corte2 = p3
@@ -708,7 +708,7 @@ Mac027a {
     |z| < bailout
 }
 
-Mac026 { 
+Mac026 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte1 = real(p2)
   corte2 = imag(p2)
@@ -721,7 +721,7 @@ Mac026 {
     |z| < bailout
 }
 
-Mac027 { 
+Mac027 {
   bailout = ( 4 * ( p1 <= 0 ) ) + ( p1 * ( 0 < p1 ) )
   corte1 = real(p2)
   corte2 = imag(p2)

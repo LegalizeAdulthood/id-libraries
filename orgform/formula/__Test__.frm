@@ -1,10 +1,10 @@
-FourMandelbrots  { ; http://members.tripod.com/vismath7/proceedings/barrallo.htm 
+FourMandelbrots  { ; http://members.tripod.com/vismath7/proceedings/barrallo.htm
   z=1+i, c=pixel:
   z = c*(z^2+1/z^2)
-  |z| < 1000  
+  |z| < 1000
 }
 
-SierpinskiNet  { ; http://members.tripod.com/vismath7/proceedings/barrallo.htm 
+SierpinskiNet  { ; http://members.tripod.com/vismath7/proceedings/barrallo.htm
   z=0.2*abs(pixel^3):
   IF (imag(z) > 0.5)
      z=2*real(z)+(2*imag(z)-1)*I
@@ -13,6 +13,6 @@ SierpinskiNet  { ; http://members.tripod.com/vismath7/proceedings/barrallo.htm
   ELSE
      z=2*real(z)+2*imag(z)*I
   ENDIF
-  |z| <= 100 
+  |z| <= 100
 }
 

@@ -8,7 +8,7 @@ z=z*z+(c-p2),
 Carr-572{
 z=1/conj(pixel-p1),c=sin(z/pixel)^conj(z/pixel):
 z=z*z+(c-p2),
-|z| <=10 
+|z| <=10
   ;SOURCE: 05carr.frm
   ;SOURCE: to-bob-6.frm
 }

@@ -52,7 +52,7 @@ gpcyc01 {;Cycloid
    }
 
 ;The general equation of a DAMPED VIBRATION CURVE is
-;y=ae^-kx * sin(bx+c) where k>0.  
+;y=ae^-kx * sin(bx+c) where k>0.
 
 gpdvc01 {;Damped vibration curve
    z=fn1(1/pixel):
@@ -89,7 +89,7 @@ gplob01 {;Lemniscate of Bernoulli
    |z|<=4 + p2
    }
 
-;The polar equation of the LIMACON OF PASCAL is 
+;The polar equation of the LIMACON OF PASCAL is
 ;r=2a*cos(t)+b
 
 gplop01  {;Limacon of Pascal

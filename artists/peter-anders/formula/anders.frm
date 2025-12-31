@@ -4,7 +4,7 @@
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:  ; p2<>1<>-1<>0
   IF (real(z/c)<imag(p1))
-    z = z*(1-z)*c + z*(1+z)*c 
+    z = z*(1-z)*c + z*(1+z)*c
   ELSE
     z = z*(1-z)*c
   ENDIF
@@ -12,11 +12,11 @@
   ;SOURCE: anders.frm
 }
 
-2mandel32 {; Peter Anders anders@physik.hu-berlin.de 
+2mandel32 {; Peter Anders anders@physik.hu-berlin.de
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:
   IF (real(z/c)<imag(p1))
-    z = 2*z*z  
+    z = 2*z*z
   ELSE
     z = z*z+c
   ENDIF
@@ -29,7 +29,7 @@ Chaos12 {cx=real(pixel),cy=imag(pixel),xo=0,yo=-cy/2:
          y=2*xo*yo+cy*xo;
          z=x+y*i;
          xo=x;
-         yo=y;           
+         yo=y;
          |fn1(z)|<real(p2) }
 
 Techno1 (xyaxis) {xo=real(p1),yo=imag(p1):
@@ -37,7 +37,7 @@ Techno1 (xyaxis) {xo=real(p1),yo=imag(p1):
                   y=fn2(yo)*imag(pixel);
                   z=x+y*(0,1);
                   xo=x;
-                  yo=y;           
+                  yo=y;
                   |fn1(z)|<real(p2) }
 
 Techno2 (xyaxis) {xo=real(p1),yo=imag(p1):
@@ -45,7 +45,7 @@ Techno2 (xyaxis) {xo=real(p1),yo=imag(p1):
                   y=fn2(yo)+imag(Pixel);
                   z=x+y*(0,1);
                   xo=x;
-                  yo=y;           
+                  yo=y;
                   |fn1(z)|<real(p2) }
 
 MiraSinPar { xo=real(p1),yo=imag(p1),a=real(pixel),b=imag(pixel):
@@ -55,7 +55,7 @@ MiraSinPar { xo=real(p1),yo=imag(p1),a=real(pixel),b=imag(pixel):
              y=-xo+f;
              z=x+y*(0,1);
              xo=x;
-             yo=y;        
+             yo=y;
              |fn1(z)|<real(p2) }
 
 f1 { c=pixel,n=0,z=imag(p1):
@@ -84,7 +84,7 @@ Peter_104M{z=p1,c=pixel:
            abs(z)<=4 }
 
 Peter_3P02 { z=pixel:
-             z=z^z;           
+             z=z^z;
              abs(fn1(z))<real(p2)}
 
 Sierpinsky{ ;As you see, it's not my formula

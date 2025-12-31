@@ -12,7 +12,7 @@ multifrac61 {
   endif
   |z| > (x*y)
   }
- 
+
 multifrac61 {
   z =pixel:
   y2=tan(y)
@@ -27,4 +27,4 @@ multifrac61 {
   endif
   |z| > (x*y)
   }
- 
+

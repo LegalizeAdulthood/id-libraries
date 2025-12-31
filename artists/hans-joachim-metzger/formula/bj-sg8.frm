@@ -12,7 +12,7 @@ BJ-SG-8-1205b {; Sylvie Gallet [101324,3444], Mar 1997
   z <= bailout
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-0701 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
@@ -34,7 +34,7 @@ BJ-SG8-0701 {; Modified Sylvie Gallet frm by Brian E. Jones
   |zn| <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-0702 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
@@ -56,7 +56,7 @@ BJ-SG8-0702 {; Modified Sylvie Gallet frm by Brian E. Jones
   |zn| <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-0703 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0
@@ -78,7 +78,7 @@ BJ-SG8-0703 {; Modified Sylvie Gallet frm by Brian E. Jones
   |zn| <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-1401 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
@@ -91,7 +91,7 @@ BJ-SG8-1401 {; Modified Sylvie Gallet frm by Brian E. Jones
    znc <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-1402 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
@@ -104,7 +104,7 @@ BJ-SG8-1402 {; Modified Sylvie Gallet frm by Brian E. Jones
    znc <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-1403 {; Modified Sylvie Gallet frm by Brian E. Jones
              ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
              ; Requires periodicity = 0 and decomp = 256
@@ -117,16 +117,16 @@ BJ-SG8-1403 {; Modified Sylvie Gallet frm by Brian E. Jones
    znc <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+
 BJ-SG8-1404a{; Modified Sylvie Gallet frm by Brian E. Jones
              ; Requires periodicity = 0 and decomp = 256
              ; 0 < p1 <= 1
    z = 0, c = zn = pixel, zmin = p1, k = flip(2*pi/zmin):
    zn = zn*zn + c, znc = cabs(real(zn))
    IF (znc < zmin)
-     zmin = znc, z = exp(znc*k) 
+     zmin = znc, z = exp(znc*k)
    ENDIF
    znc <= 4
   ;SOURCE: bj-sg8.frm
 }
- 
+

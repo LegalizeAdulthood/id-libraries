@@ -10,45 +10,45 @@ Hearty     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
  ; imod=remainder(num_notes/iter)
   iter=iter+1,
   if(imod>-1 && imod< 8 )
-        note= 11 
+        note= 11
   elseif(imod> 6 && imod< 19 )
-        note= 13 
+        note= 13
   elseif(imod> 17 && imod< 22 )
-        note= 17 
+        note= 17
   elseif(imod> 20 && imod< 27 )
-        note= 19 
+        note= 19
   elseif(imod> 25 && imod< 34 )
-        note= 16 
+        note= 16
   elseif(imod> 32 && imod< 41 )
-        note= 23 
+        note= 23
   elseif(imod> 39 && imod< 52 )
-        note= 31 
+        note= 31
   elseif(imod> 50 && imod< 55 )
-        note= 29 
+        note= 29
   elseif(imod> 53 && imod< 60 )
-        note= 23 
+        note= 23
   elseif(imod> 58 && imod< 67 )
-        note= 31 
+        note= 31
   elseif(imod> 65 && imod< 74 )
-        note= 11 
+        note= 11
   elseif(imod> 72 && imod< 85 )
-        note= 9 
+        note= 9
   elseif(imod> 83 && imod< 88 )
-        note= 13 
+        note= 13
   elseif(imod> 86 && imod< 93 )
-        note= 17 
+        note= 17
   elseif(imod> 91 && imod< 100 )
-        note= 13 
+        note= 13
   elseif(imod> 98 && imod< 107 )
-        note= 29 
+        note= 29
   elseif(imod> 105 && imod< 118 )
-        note= 51 
+        note= 51
   elseif(imod> 116 && imod< 121 )
-        note= 59 
+        note= 59
   elseif(imod> 119 && imod< 128 )
-        note= 44 
+        note= 44
   endif,
   z=s*(z-flip(note/mean))*(flip(note/mean)-z)
   |z| <= t
 }
- 
+

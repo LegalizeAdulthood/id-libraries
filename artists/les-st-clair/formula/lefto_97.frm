@@ -141,7 +141,7 @@ dmj-Mand-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -157,7 +157,7 @@ dmj-Mand-Cr2-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -176,7 +176,7 @@ dmj-Nova-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -195,7 +195,7 @@ dmj-Nova-Cir-Itr-I { ; outside = real: n of closest z[n] to ring at p1
 	  z = point - done		; Return iteration of closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -216,7 +216,7 @@ dmj-Nova-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
 	radius = sqr(imag(p3))		; Calculate radius squared.
-	
+
 	z = 1, c = pixel:		; NovaM initialization.
 	zsquared = sqr(z)
 	zcubed = zsquared * z
@@ -235,7 +235,7 @@ dmj-Nova-Cr2-Ang { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -402,7 +402,7 @@ JulibrotInvZ {; Jim Muth
     |z| <= 100
 }
 
-Lesfrm11 { 
+Lesfrm11 {
   c=z=pixel:
   z=z+(((fn1(z)-P1)*fn2(z))/fn3(c)),
   |z|<4
@@ -412,7 +412,7 @@ Lesfrm34 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1^pi , y = y1^pi
    z = (x + flip(y))^pi
@@ -423,7 +423,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -434,7 +434,7 @@ Lesfrm36 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3(p3*y)*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3(p3*x)*fn1(p3*x))
    x = x1*pi*e , y = y1*pi*e
    z = (x + flip(y))*pi*e
@@ -464,7 +464,7 @@ Lesfrm42    { ; Modified Sylvie Gallet formula
   beta = fn2(h/r) , alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :
@@ -481,7 +481,7 @@ Lesfrm43    { ; Modified Sylvie Gallet formula
   beta = fn2(h/r) , alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :

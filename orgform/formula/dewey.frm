@@ -10,9 +10,9 @@
 ; Distribution: world
 ; Message-ID: <436n25$3ut@netnews.upenn.edu>
 ; NNTP-Posting-Host: picard.mipg.upenn.edu
- 
+
 ; formula:
- 
+
 Dragonbat(XAXIS) {; Dewey Odhner
   c = Pixel, z = Sqr(Pixel)+Pixel:
    z = Sqr(Sqr(z)+c)-c

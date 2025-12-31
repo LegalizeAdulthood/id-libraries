@@ -5,35 +5,35 @@
   |z| <=10
   ;SOURCE: carr.frm
 }
- 
+
 Carr-02A {
   c=z=1/pixel:
   z=sqr(z) + .33
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-02B {
   c=z=1/pixel:
   z=sqr(z^z) + .33
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-02C {
   c=z=1/pixel:
   z=sqr(conj(z^z^z^z^z)) + .33
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-02D {
   c=z=(1/pixel)/pixel-0.25:
   z=sqr(z) + 0.33
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-02E {; Try using Distance Estimator function on this formula
   c=z=1/pixel:
   z=sqr(z) + c
@@ -41,16 +41,16 @@ Carr-02E {; Try using Distance Estimator function on this formula
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-03 {
   c = z = 1 / pixel:
   z = sin((z*z) - (aa3*z)) +b
   |z| <= (p2 + 3)
   ;SOURCE: carr.frm
 }
- 
+
 Carr-05 {
-  a=(0,0), b=(0,0): 
+  a=(0,0), b=(0,0):
   z=z+1
   anew=sqr(a)-sqr(b)+pixel
   b=2.0*a*b+p1
@@ -61,7 +61,7 @@ Carr-05 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-06 {; was OK-03 and was modified
   z = c = pixel:
   z = cosxx(z)/c
@@ -69,21 +69,21 @@ Carr-06 {; was OK-03 and was modified
   |z| <= (5 + p1)
   ;SOURCE: carr.frm
 }
- 
+
 Carr-09 {; was OK-04 and was modified
   z = 0, c = cosxx(pixel):
   z = sqr(z) + c
   |z| <= (5 + p1)
   ;SOURCE: carr.frm
 }
- 
+
 Carr-10 {
   c=z= 1/pixel:
   z=(tanh(z)*tanh(1/z)*z) + c
   |z| <=(5 + p1)
   ;SOURCE: carr.frm
 }
- 
+
 Carr-11 {
   c=z=1/pixel:
   z=sqr(z*(z+1.918)) + c
@@ -91,7 +91,7 @@ Carr-11 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-12 {
   c=z=sqr(pixel):
   z=sqr(z) + 2*c
@@ -99,28 +99,28 @@ Carr-12 {
   |z| <= 4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-74 {
   c=z=1/pixel:
   z=(3.334/sin(z*z)) + (c/pixel)
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-83 {
   z=c=1/pixel:
   z=sin(z*z) + (conj(1/pixel))/(0.33/c)
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-84 {
   z=c=1/pixel:
   z=sin(z*z) + ((tanh(1/pixel))/(0.33/c))
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-85 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -128,7 +128,7 @@ Carr-85 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-87 {
   z=c=1/pixel:
   z=sqr(z) + c
@@ -137,7 +137,7 @@ Carr-87 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-90 {
   z=c=1/pixel:
   z=sqr(z) + sqr(c-5)
@@ -146,7 +146,7 @@ Carr-90 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-900 {
   z=cotanh(pixel+1)/imag(1/pixel-0.334)
   c=sqr(sqr(sqr(pixel*1/pixel))):
@@ -154,7 +154,7 @@ Carr-900 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-902 {
   z=sinh(pixel+1)/imag(1/pixel-0.334)
   c=sqr(sqr(sqr(pixel*1/pixel))):
@@ -162,7 +162,7 @@ Carr-902 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-903 {
   z=1/(pixel*pixel)
   c=imag(1/pixel*0.91/pixel):
@@ -170,7 +170,7 @@ Carr-903 {
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 Carr-905 {; Modified Richard frm
   z=1/pixel, c=pixel-sqr(z):
   c=pixel +c/z
@@ -178,7 +178,7 @@ Carr-905 {; Modified Richard frm
   |real(z)| <=100
   ;SOURCE: carr.frm
 }
- 
+
 PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
    ; p1 = step size (default 0.05), p2 = parameter (default 3)
    ; p3 = bailout value (default 4)
@@ -194,7 +194,7 @@ PopCornJulCplx {; Jon Horner & Bradley Beacham - May 1995
   |z| < test
   ;SOURCE: snazzy.frm
 }
- 
+
 Primal {; Rollo Silver
         ; Select p1 such that 0. <= p1 <= 1.
   z = c = Pixel, t = real(p1), test = (p2+10)*(p2+10):
@@ -204,4 +204,4 @@ Primal {; Rollo Silver
   |z| <= test
   ;SOURCE: primal.frm
 }
- 
+

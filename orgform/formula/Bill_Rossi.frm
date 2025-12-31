@@ -41,4 +41,4 @@ afract006 (yaxis) {; Bill Rossi <BillatNY@aol.com>
    z = fn1(z) + fn2(z),
    z = fn3(z) / fn4(z),
    |z| <= 4
-  } 
+  }

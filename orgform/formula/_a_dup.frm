@@ -18,7 +18,7 @@ A1 (XAXIS) {
 }
 
 
-a1 {; (c) by Miguel Fliguer 
+a1 {; (c) by Miguel Fliguer
   z=c=pixel:
   z=fn1(p1*z/fn2(p2+z/fn3(p3-z/fn1(z))))+c
   |z|<4
@@ -31,7 +31,7 @@ AbsJulia (origin) {; Peter Anders anders@physik.hu-berlin.de
   x=xo*xo-yo*yo+cx
   y=2*xo*yo+cy
   xo=abs(x)
-  yo=abs(y)        
+  yo=abs(y)
   |fn1(x)|<real(p2) &&  |fn1(y)|<real(p2)
   ;SOURCE: peterman.frm
 }

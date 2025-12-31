@@ -4,7 +4,7 @@ MandelbrotCube {; Jim Muth  real(c),imag(c)
   |z| <= 16
   ;SOURCE: 99msg.frm
 }
- 
+
 MandelbrotMix4 {; Jim Muth
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2), g=1/f
   h=1/d, j=1/(f-b), z=(-a*b*g*h)^j, k=real(p3)+1
@@ -13,7 +13,7 @@ MandelbrotMix4 {; Jim Muth
   |z| < l
   ;SOURCE: 99msg.frm
 }
- 
+
 MandelbrotMix4 {; Jim Muth
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2), g=1/f
   h=1/d, j=1/(f-b), z=(-a*b*g*h)^j, k=real(p3)+1
@@ -22,14 +22,14 @@ MandelbrotMix4 {; Jim Muth
   |z| < l
   ;SOURCE: 99msg.frm
 }
- 
+
 JimsCompMand {; Jim Muth
   z=c=pixel:
   z=z^p1*(c^(p2-1))+c
   |z| <= p3+100
   ;SOURCE: 97msg.frm
 }
- 
+
 MandelbrotBC1      { ; by several Fractint users
   e=p1, a=imag(p2)+100
   p=real(p2)+PI
@@ -43,7 +43,7 @@ MandelbrotBC1      { ; by several Fractint users
     Z=exp(e*(Z+flip(q)))+C
   |Z| < a
 }
- 
+
 MandelbrotBC1   { ; by several Fractint users
   e=p1, a=imag(p2)+100
   p=real(p2)+PI
@@ -57,7 +57,7 @@ MandelbrotBC1   { ; by several Fractint users
     Z=exp(e*(Z+flip(q)))+C
   |Z| < a
 }
- 
+
 MandelbrotBC1 {
   ; by several Fractint users
   f=p1, a=imag(p2)+100
@@ -72,7 +72,7 @@ MandelbrotBC1 {
   Z=exp(f*(Z+flip(q)))+C
   |Z|
 }
- 
+
 MandelbrotBC2      { ; originally by several Fractint users
                      ; and then modified by Jim Muth
   e=p1, a=imag(p2)+100
@@ -87,7 +87,7 @@ MandelbrotBC2      { ; originally by several Fractint users
     Z=exp(e*(Z+flip(q)))+C
   |Z| < a
 }
- 
+
 MandelbrotBC2 {
   ; by several Fractint users
   e=p1, a=imag(p2)+100
@@ -100,9 +100,9 @@ MandelbrotBC2 {
       Z=Z+flip(2*PI)
     ENDIF
     Z=exp(e*(Z+flip(q)))+C
-  |Z| < a 
+  |Z| < a
 }
- 
+
 MandelbrotMix2     { ; Jim Muth
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
   g=1/f, h=1/d, j=1/(f-b), z=(((-a*b*g*h)^j)+(p4)),
@@ -110,7 +110,7 @@ MandelbrotMix2     { ; Jim Muth
   z=k*((a*(z^b))+(d*(z^f)))+c,
   |z| < l
 }
- 
+
 MandelbrotMix2 {
   ; Jim Muth
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
@@ -119,7 +119,7 @@ MandelbrotMix2 {
   z=k*((a*(z^b))+(d*(z^f)))+c,
   |z| < l
 }
- 
+
 MandelbrotMix3a    { ; Jim Muth
   z=real(p5), c=fn1(pixel), a=real(p1), b=imag(p1),
   d=real(p2), f=imag(p2), g=real(p3), h=imag(p3),
@@ -127,7 +127,7 @@ MandelbrotMix3a    { ; Jim Muth
   z=(a*(z^b))+(d*(z^f))+(g*(z^h))+(j*(z^k))+c,
   |z| <= l
 }
- 
+
 MandelbrotMix3a {
   ; Jim Muth
   z=real(p5), c=fn1(pixel), a=real(p1), b=imag(p1),
@@ -136,7 +136,7 @@ MandelbrotMix3a {
   z=(a*(z^b))+(d*(z^f))+(g*(z^h))+(j*(z^k))+c,
   |z| <=l
 }
- 
+
 Multirot-XY-ZW-new { ; Jim Muth
       ; draws 6 planes and rotations
       ; when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
@@ -147,7 +147,7 @@ Multirot-XY-ZW-new { ; Jim Muth
   z=z^(p2)+c,
   |z| <= 36
 }
- 
+
 multirot-XY-ZW-new {; draws 6 planes and rotations
 ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
 ;when fn1-2=f,i, then p1 0,0=M, 0,90=R, 90,0=P, 90,90=J
@@ -156,7 +156,7 @@ z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p3,
 c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p4:
 z=z^(p2)+c,
 |z| <= 36  }
- 
+
 multirot-XY-ZW-new {; draws 6 planes and rotations
 ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
 ;when fn1-2=f,i, then p1 0,0=M, 0,90=R, 90,0=P, 90,90=J
@@ -165,7 +165,7 @@ z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p3,
 c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p4:
 z=z^(p2)+c,
 |z| <= 36  }
- 
+
 multirot-XY-ZW-new {
   ; draws 6 planes and rotations
   ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
@@ -176,7 +176,7 @@ multirot-XY-ZW-new {
   z=z^(p2)+c,
   |z| <= 36
 }
- 
+
 Multirot-XZ-YW-new { ; Jim Muth
       ; 0,0=para, 90,0=obl, 0,90=elip, 90,90=rect
   e=exp(flip(real(p1*.01745329251994))),
@@ -185,7 +185,7 @@ Multirot-XZ-YW-new { ; Jim Muth
   z=z^(p2)+c,
   |z| <= 36
 }
- 
+
 multirot-XZ-YW-new {; Jim Muth
 ; 0,0=para, 90,0=obl, 0,90=elip, 90,90=rect
 e=exp(flip(real(p1*.01745329251994))),
@@ -193,7 +193,7 @@ f=exp(flip(imag(p1*.01745329251994))),
 z=f*real(pixel)+p3, c=e*imag(pixel)+p4:
 z=z^(p2)+c,
 |z| <= 36  }
- 
+
 multirot-XZ-YW-new {
   ; Jim Muth
   ; 0,0=para, 90,0=obl, 0,90=elip, 90,90=rect
@@ -203,7 +203,7 @@ multirot-XZ-YW-new {
   z=z^(p2)+c,
   |z| <= 36
 }
- 
+
 OblateMix2         { ; Jim Muth
   z=real(pixel)+flip(real(p3)),
   c=fn1(flip(imag(pixel)))+imag(p3),
@@ -211,9 +211,9 @@ OblateMix2         { ; Jim Muth
   z=(a*(z^b))+(d*(z^f))+c,
   |z| <= 100
 }
- 
+
 SliceJulibrot2   { ; Hiram Berry <burningb@burningbridges.com>
-                   ;  Fri, 5 Mar 2004 16:46:23 
+                   ;  Fri, 5 Mar 2004 16:46:23
                    ;  draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
   a=pi*real(p1*0.0055555555555556),
@@ -227,9 +227,9 @@ SliceJulibrot2   { ; Hiram Berry <burningb@burningbridges.com>
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
- 
+
 SliceJulibrot2     { ; Jim Muth
                      ; draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
@@ -246,7 +246,7 @@ SliceJulibrot2     { ; Jim Muth
   z=sqr(z)+c
   |z| <= 9
 }
- 
+
 SliceJulibrot2 {
   ; draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
@@ -261,9 +261,9 @@ SliceJulibrot2 {
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
- 
+
 SliceJulibrot4     { ; Jim Muth
                      ; draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
@@ -280,7 +280,7 @@ SliceJulibrot4     { ; Jim Muth
   z=z^(p5)+c
   |z| <= 9
 }
- 
+
 SliceJulibrot4 {
   ; draws most slices of Julibrot
   pix=pixel, u=real(pix), v=imag(pix),
@@ -295,9 +295,9 @@ SliceJulibrot4 {
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=z^(p5)+c
-  |z| <= 9 
+  |z| <= 9
 }
- 
+
 MandNewt04 {; Jim Muth
   z=c=pixel:
   a=z^3+(c-1)*z-c
@@ -306,7 +306,7 @@ MandNewt04 {; Jim Muth
   p3 <= |a|
   ;SOURCE: 98msg.frm
 }
- 
+
 Multimin-XY-ZW-new { ; Jim Muth
       ; draws 6 planes and rotations
       ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
@@ -317,7 +317,7 @@ Multimin-XY-ZW-new { ; Jim Muth
   z=(-z)^(p2)+c,
   |z| <= 36
 }
- 
+
 multimin-XY-ZW-new {
   ; draws 6 planes and rotations
   ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
@@ -326,9 +326,9 @@ multimin-XY-ZW-new {
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p3,
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p4:
   z=(-z)^(p2)+c,
-  |z| <= 36 
+  |z| <= 36
 }
- 
+
 multimin-XZ-YW-new {
   ; Jim Muth
   ; 0,0=para, 90,0=obl, 0,90=elip, 90,90=rect
@@ -338,7 +338,7 @@ multimin-XZ-YW-new {
   z=(-z)^(p2)+c,
   |z| <= 36
 }
- 
+
 LyapunovMandel        { ; Morgan L. Owens <packrat@nznet.gen.nz>
                         ; Thu, 25 Jul 2002 20:49:19
   narg=real(p2)
@@ -351,4 +351,4 @@ LyapunovMandel        { ; Morgan L. Owens <packrat@nznet.gen.nz>
   z1=z1*z1+c1
   cabs(z0-z1)<bailout
 }
- 
+

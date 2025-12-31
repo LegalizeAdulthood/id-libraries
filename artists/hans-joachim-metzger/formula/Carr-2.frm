@@ -6,7 +6,7 @@ Carr-100 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-101 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c^c)
@@ -15,7 +15,7 @@ Carr-101 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-102 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c*pixel)
@@ -24,7 +24,7 @@ Carr-102 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-103 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c^pixel)
@@ -33,7 +33,7 @@ Carr-103 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-104 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c^pixel)
@@ -42,7 +42,7 @@ Carr-104 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-105 {
   z=c=pixel:
   z=sqr(z) + sqr(c*c)
@@ -51,7 +51,7 @@ Carr-105 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-106 {
   z=c=pixel:
   z=sqr(z) + sqr(c*c)
@@ -60,7 +60,7 @@ Carr-106 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-107 {
   z=c=pixel:
   z=sqr(z*z) + (c*c)
@@ -69,7 +69,7 @@ Carr-107 {
   |z| <=4
   ;SOURCE: carr-2.frm
 }
- 
+
 Carr-108 {
   z=c=pixel:
   z=sqr(z*z) + (c*c)
@@ -78,7 +78,7 @@ Carr-108 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-110 {
   z=c=pixel:
   z=sqr(z*z) + (c*c)
@@ -87,14 +87,14 @@ Carr-110 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-76 {
   c=z=pixel:
   z=(sin(z*z)) + ((sin(c-0.33))/pixel)
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-79 {
   c=z=pixel:
   z=(sin(z*z)) + ((sin(c+8.9))/pixel)
@@ -102,7 +102,7 @@ Carr-79 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-86 {
   z=c=pixel:
   z=sqr(z) + c
@@ -110,7 +110,7 @@ Carr-86 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-89 {
   z=c=pixel:
   z=sqr(z) + sqr(c)
@@ -119,7 +119,7 @@ Carr-89 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-95 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c*c)
@@ -128,7 +128,7 @@ Carr-95 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-96 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c*c)
@@ -137,7 +137,7 @@ Carr-96 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-98 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c*c)
@@ -146,7 +146,7 @@ Carr-98 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+
 Carr-99 {
   z=c=pixel:
   z=sqr(z*z) + sqr(c*c)
@@ -155,4 +155,4 @@ Carr-99 {
   |z| <=4
   ;SOURCE: carr.frm
 }
- 
+

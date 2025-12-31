@@ -9,7 +9,7 @@ Coslider {
   |imag(z)|<127
   ;SOURCE: pderb.frm
 }
- 
+
 FNslider {
   z=pixel
   d=8
@@ -21,4 +21,4 @@ FNslider {
   |imag(z)|<127
   ;SOURCE: pderb.frm
 }
- 
+

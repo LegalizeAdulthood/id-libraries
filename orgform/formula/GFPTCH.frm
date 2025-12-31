@@ -225,7 +225,7 @@ gtc37 {;J_TchebychevC4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc38 {;J_TchebychevC5 - modified by Gedeon Peteri 
+gtc38 {;J_TchebychevC5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-5)+5))
   |z| < p1
@@ -249,7 +249,7 @@ gtc41 {;J_TchebychevS2 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc42 {;J_TchebychevS3 - modified by Gedeon Peteri  
+gtc42 {;J_TchebychevS3 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z-2))
   |z| < p1
@@ -261,7 +261,7 @@ gtc43 {;J_TchebychevS4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc44 {;J_TchebychevS5 - modified by Gedeon Peteri 
+gtc44 {;J_TchebychevS5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-4)+3))
   |z| < p1
@@ -297,7 +297,7 @@ gtc49 {;J_TchebychevT4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc50 {;J_TchebychevT5 - modified by Gedeon Peteri    
+gtc50 {;J_TchebychevT5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*(z*(z*z*(16*z*z-20)+5)))
   |z| < p1
@@ -309,7 +309,7 @@ gtc51 {;J_TchebychevT6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc52 {;J_TchebychevT7 - modified by Gedeon Peteri     
+gtc52 {;J_TchebychevT7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(64*z*z-112)+56)-7))
   |z| < p1
@@ -321,7 +321,7 @@ gtc53 {;J_TchebychevU2 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc54 {;J_TchebychevU3 - modified by Gedeon Peteri    
+gtc54 {;J_TchebychevU3 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(8*z*z-4))
   |z| < p1
@@ -333,7 +333,7 @@ gtc55 {;J_TchebychevU4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc56 {;J_TchebychevU5 - modified by Gedeon Peteri    
+gtc56 {;J_TchebychevU5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(32*z*z-32)+6))
   |z| < p1
@@ -345,7 +345,7 @@ gtc57 {;J_TchebychevU6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc58 {;J_TchebychevU7 - modified by Gedeon Peteri     
+gtc58 {;J_TchebychevU7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(128*z*z-192)+80)-8))
   |z| < p1
@@ -357,7 +357,7 @@ gtc59 {;M_TchebychevC2 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc60 {;M_TchebychevC3 - modified by Gedeon Peteri   
+gtc60 {;M_TchebychevC3 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z-3))
   |z| < p1
@@ -381,7 +381,7 @@ gtc63 {;M_TchebychevC6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc64 {;M_TchebychevC7 - modified by Gedeon Peteri     
+gtc64 {;M_TchebychevC7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(z*z-7)+14)-7))
   |z| < p1
@@ -405,7 +405,7 @@ gtc67 {;M_TchebychevS4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc68 {;M_TchebychevS5 - modified by Gedeon Peteri    
+gtc68 {;M_TchebychevS5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z-4)+3))
   |z| < p1
@@ -417,7 +417,7 @@ gtc69 {;M_TchebychevS6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc70 {;M_TchebychevS7 - modified by Gedeon Peteri     
+gtc70 {;M_TchebychevS7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(z*z-6)+10)-4))
   |z| < p1
@@ -429,7 +429,7 @@ gtc71 {;M_TchebychevT2 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc72 {;M_TchebychevT3 - modified by Gedeon Peteri   
+gtc72 {;M_TchebychevT3 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(4*z*z-3))
   |z| < p1
@@ -453,7 +453,7 @@ gtc75 {;M_TchebychevT6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc76 {;M_TchebychevT7 - modified by Gedeon Peteri     
+gtc76 {;M_TchebychevT7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(64*z*z-112)+56)-7))
   |z| < p1
@@ -477,7 +477,7 @@ gtc79 {;M_TchebychevU4 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc80 {;M_TchebychevU5 - modified by Gedeon Peteri    
+gtc80 {;M_TchebychevU5 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(32*z*z-32)+6))
   |z| < p1
@@ -489,7 +489,7 @@ gtc81 {;M_TchebychevU6 - modified by Gedeon Peteri
   |z| < p1
   }
 
-gtc82 {;M_TchebychevU7 - modified by Gedeon Peteri     
+gtc82 {;M_TchebychevU7 - modified by Gedeon Peteri
   z = c = pixel:
   z = fn1(c*z*(z*z*(z*z*(128*z*z-192)+80)-8))
   |z| < p1

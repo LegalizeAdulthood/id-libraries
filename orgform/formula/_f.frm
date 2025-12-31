@@ -12,7 +12,7 @@ F'ABSJulia (ORIGIN) {; Ramsay Burt
 F'ABSJuliaBio (ORIGIN) {; Ramsay Burt - alternative bailout by Jon Horner
   z = pixel, c = p1 :
   z = ABS(fn1(z)) + c
-  |real(z)| <=4 ||  |imag(z)| <= 4 
+  |real(z)| <=4 ||  |imag(z)| <= 4
   ;SOURCE: burt.frm
 }
 
@@ -38,7 +38,7 @@ F'ABSMandelBio {; Ramsay Burt - alternative bailout by Jon Horner
                 ; use float=yes
   z = (0,0), c = pixel :
   z = ABS(fn1(z)) + c
-  |real(z)| <=4  ||  |imag(z)| <= 4 
+  |real(z)| <=4  ||  |imag(z)| <= 4
   ;SOURCE: burt.frm
 }
 
@@ -293,7 +293,7 @@ F'Icon-Even {; Generalization by Jon Horner - 100112,1700
 F'Icon-Odd (XYAXIS) {; Generalization by Jon Horner - 100112,1700
                      ; of formula by Ramiro Perez (rperez@ns.pa)
                      ; ODD degrees produce an EVEN no. of features
-                     ; real(p3) varies the degree 
+                     ; real(p3) varies the degree
                      ; for originals set fn1=conj, fn2=ident
   z1=fn2(pixel), z=0, l=real(p1), a=imag(p1), b=real(p2), g=imag(p2):
   zm = z1 ^ real(p3)
@@ -346,7 +346,7 @@ F'Liar1A {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel):
   z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
-  |z| <= p1 
+  |z| <= p1
   ;SOURCE: liar.frm
 }
 
@@ -358,7 +358,7 @@ F'Liar1C {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel):
   z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
-  fn2(abs(z))<p1 
+  fn2(abs(z))<p1
   ;SOURCE: liar.frm
 }
 
@@ -370,7 +370,7 @@ F'Liar1D {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel):
   z = p1 - abs(imag(z)-real(z) ) + flip(p2 - abs(1-real(z)-imag(z) ) )
-  |z| <1 
+  |z| <1
   ;SOURCE: liar.frm
 }
 
@@ -381,7 +381,7 @@ F'Liar2 {; Generalization by Jo. Horner of Chuck Ebert Formula
   z = fn1(pixel):
   x = 1 - abs(imag(z)-real(z))
   z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
-  |z| <= p1 
+  |z| <= p1
   ;SOURCE: form2.frm
 }
 
@@ -395,7 +395,7 @@ F'Liar2A {; by Chuck Ebbert - 76302,1226
   z = fn1(pixel):
   x = p1 - abs(imag(z)-real(z))
   z = fn2(p1 - abs(p1-real(x)-imag(z) ) ) + real(x)
-  |z| <= p2 
+  |z| <= p2
   ;SOURCE: nuliar.frm
 }
 
@@ -404,14 +404,14 @@ F'Liar3 {; by Chuck Ebbert - 76302,1226
          ; generalization by Jon Horner 100112,1700 (FRAC'Cetera)
          ; X: X is true to P1 times the extent that Y is true
          ; Y: Y is true to the extent that X is false.
-         ; Sequential reasoning.  P1 usually 0 to 1.  
+         ; Sequential reasoning.  P1 usually 0 to 1.
          ; P1=1 is Liar2 formula.
          ; x(n+1) = 1 - abs(p1*y(n)-x(n) )
          ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) )
   z = fn1(pixel):
   x = 1 - abs(imag(z) * p1 - real(z) )
   z = fn2(1 - abs(1-real(x)-imag(z) ) ) + real(x)
-  |z| <= p2 
+  |z| <= p2
   ;SOURCE: nuliar.frm
 }
 
@@ -424,7 +424,7 @@ F'Liar4C {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel), p = p1 + 1, pp = p2 + 1:
   z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)))
-  |imag(z)| <= pp || |real(z)| <= pp 
+  |imag(z)| <= pp || |real(z)| <= pp
   ;SOURCE: liar.frm
 }
 
@@ -545,11 +545,11 @@ F'ULI_9 {; by Jon Horner - 100112,1700 - FRAC'Cetera
 }
 
 
-f1 {; Peter Anders anders@physik.hu-berlin.de 
+f1 {; Peter Anders anders@physik.hu-berlin.de
   c=pixel, n=0, z=imag(p1):
   n=n+1
   z=(fn1(c))^n*z
-  abs(fn2(z)) <= real(p1) 
+  abs(fn2(z)) <= real(p1)
   ;SOURCE: anders.frm
 }
 
@@ -588,20 +588,20 @@ f2_J {
 }
 
 
-f3 {; Peter Anders anders@physik.hu-berlin.de 
+f3 {; Peter Anders anders@physik.hu-berlin.de
   x=real(p2), y=imag(p2), c=pixel, n=0, z=1:
   n=n+1
   z=(c^x+y)^n*z
-  abs(fn2(z)) <= real(p1) 
+  abs(fn2(z)) <= real(p1)
   ;SOURCE: anders.frm
 }
 
 
-f8 {; Peter Anders anders@physik.hu-berlin.de 
+f8 {; Peter Anders anders@physik.hu-berlin.de
   x=real(p2), y=imag(p2), c=pixel, n=0, z=0:
   n=n+1
   z=(c^x+y)^n+z
-  |fn2(z)| <= real(p1) 
+  |fn2(z)| <= real(p1)
   ;SOURCE: anders.frm
 }
 
@@ -610,9 +610,9 @@ F_TEXT_A2Z {; Les St Clair 1996
    ; Created using "FracText" (alpha-1) by Jan Maarten van der Valk
    ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
    ; suggested default values for fn1|fn2|fn3 are exp|ident|ident
-  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z) 
-  xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x 
-  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x, xx=2.00000*x 
+  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z)
+  xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x
+  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x, xx=2.00000*x
   xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x, x1=1.50000*x
   chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)
   chra1 = chra1&&(y<(xa+11.80000)&&y<(-xa+-6.56754))
@@ -638,7 +638,7 @@ F_TEXT_A2Z {; Les St Clair 1996
                 -0.40000)<0.10000)&&(x>2.63104)&&(y<1.90000||y>2.00000))
   chrg7 = chrg7||(x>2.63104&&x<3.13104&&y<1.90000&&y>1.70000)
   chrh1 = ( (y<0.70000) && (y>0.50000))
-  chrh1 = (x<-3.30000 || x>-2.90000 || chrh1)\ 
+  chrh1 = (x<-3.30000 || x>-2.90000 || chrh1)\
           && (x>-3.50000 && x<-2.70000)
   chri2 = x>-2.50000 && x<-2.30000
   chrj3 = (cabs(sqrt(|z+(1.80000,-0.40000)|)\
@@ -646,7 +646,7 @@ F_TEXT_A2Z {; Les St Clair 1996
   chrj3 = chrj3||(x>-1.70000&&y>0.35000)&&x<-1.50000
   chrk4 = (x<-1.10000)
   chrk4 = chrk4 || (y<(xk+2.38333)&&y>(xk+2.02278))
-  chrk4 = chrk4 || (y>(-xk+-1.18333)&&y<(-xk+-0.82278)\ 
+  chrk4 = chrk4 || (y>(-xk+-1.18333)&&y<(-xk+-0.82278)\
           && y<(xk+2.38333))&&x>-1.30000
   chrl5 = (x<-0.21519||y<0.30000)&&x>-0.41519&&x<0.18481
   chrm6 = (y>-xm+2.06204&&y<-xm+2.60055)
@@ -803,7 +803,7 @@ Fatso {
 }
 
 
-faulty1 {; based on formulas by Brad Beacham and Gordon Lamb  
+faulty1 {; based on formulas by Brad Beacham and Gordon Lamb
   z=real(pixel)+flip(imag(pixel))
   c=real(pixel)+flip(imag(pixel))
   count = 1, shift = p1:
@@ -811,12 +811,12 @@ faulty1 {; based on formulas by Brad Beacham and Gordon Lamb
   b = (z*z*z) * (shift < count)
   count = count + 1
   z =  a + b + c
-  |z| < 64  
+  |z| < 64
   ;SOURCE: faulty.frm
 }
 
 
-faulty2 {; based on formulas by Brad Beacham and Gordon Lamb  
+faulty2 {; based on formulas by Brad Beacham and Gordon Lamb
   z=real(pixel)+flip(imag(pixel)*p1)
   c=p1*real(pixel)+flip(imag(pixel))
   count = 1, shift = p2:
@@ -824,20 +824,20 @@ faulty2 {; based on formulas by Brad Beacham and Gordon Lamb
   b = (z*z*z) * (shift < count)
   count = count + 1
   z =  a + b + c
-  |z| < 64  
+  |z| < 64
   ;SOURCE: faulty.frm
 }
 
 
-faulty3 {                                          
+faulty3 {
   z = pixel/p1, c = pixel:
-  z = z^2.71828182845905 + c   
+  z = z^2.71828182845905 + c
   |z| <= 4
   ;SOURCE: faulty.frm
 }
 
 
-faulty4 {  
+faulty4 {
   z = pixel + p1, c = pixel:
   z = z^2.71828182854905 + sqr(pixel) + c
   |z| < 16
@@ -846,7 +846,7 @@ faulty4 {
 
 
 faulty5 {; Eliminated variable "e' - now a predefined variable
-  z = pixel + p1, c = pixel: 
+  z = pixel + p1, c = pixel:
   z = z*z^e / (z^e + c) + c
   |z| <= 64
   ;SOURCE: faulty.frm
@@ -1101,7 +1101,7 @@ fcut {; Giuseppe Zito
   z = pixel
   c1 = -0.527756
   d1 = -0.407508
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /c1
@@ -1111,15 +1111,15 @@ fcut {; Giuseppe Zito
   s0 = s0 +s1
   s0 = s0 *y
   s0 = s0 /y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 *d1
   s0 = s0 -x
   s0 = s0 +y
   s0 = s0 -y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -1197,7 +1197,7 @@ fdim2_jul {; Kerry Mitchell 26sep98
 
 
 fdim2_man {; Kerry Mitchell 26sep98
-        ; Kerry Mitchell's explanation of Fractal Dimension Coloring 
+        ; Kerry Mitchell's explanation of Fractal Dimension Coloring
         ;  is at the end of this formula
         ;
         ; real(p1) = coloring speed
@@ -1441,7 +1441,7 @@ February {; Sylvie Gallet, Dec 1997
   IF (m1 <= limit)
     mk = abs(cabs(z1-k)-sqr2)
     IF (mk <= limit)
-      z = exp((2 + c*mk)*a) 
+      z = exp((2 + c*mk)*a)
       cont = 0
     ELSE
       z = exp(c*m1*a)
@@ -1475,7 +1475,7 @@ fermenta {; Giuseppe Zito
   c0 = 0.092168
   c4 = -0.413274
   d0 = 0.92219
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 /y
@@ -1483,12 +1483,12 @@ fermenta {; Giuseppe Zito
   s0 = s0 +c4
   s0 = s0 /y
   s0 = s0 +y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -1573,7 +1573,7 @@ FFCpm (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin 10/98
     z=cosh(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: ffcpm.frm
 }
 
@@ -1783,7 +1783,7 @@ FGZ-Internals {; Michael G. Wareman
 
 FGZ-J {; Jay Hill
        ; p1 is the Julia set parameter
-  z = pixel, c = p1: 
+  z = pixel, c = p1:
   z = z * z + c
   z = (3 * z * z) / (z + 3) + c
   |z| <= 36
@@ -2292,7 +2292,7 @@ FGZ-Julia_var2 {; (c) Jay Hill, 1998
 
 
 FGZ-M {; Jay Hill
-  c = pixel, 
+  c = pixel,
   z=-sqrt(-c): ; approximate critical point
   z = z * z + c
   z = (3 * z * z) / (z + 3) + c
@@ -2302,7 +2302,7 @@ FGZ-M {; Jay Hill
 
 
 FGZ-Mand {; (c) Jay Hill, 1998
-  IF( |p3| == 0) 
+  IF( |p3| == 0)
     p3 = 16
   ENDIF
   c=pixel, z=sqrt(-c), bailout = real(p3):
@@ -2405,11 +2405,11 @@ field2_jul {; Kerry Mitchell
 ;
 ; It relates to the following formulas:
 ;    field2_jul (above)
-;    field3_jul 
-;    field4_jul 
-;    field2_man 
-;    field3_man 
-;    field4_man 
+;    field3_jul
+;    field4_jul
+;    field2_man
+;    field3_man
+;    field4_man
 ;
 ;Field
 ;
@@ -2686,8 +2686,8 @@ fieldq2_man {
 
 
 Fingers (XAXIS) {; Try params=2/50/0/0
-  c=z=pixel: 
-  z=z^Real(p1)+c 
+  c=z=pixel:
+  z=z^Real(p1)+c
   Real(z)<=Imag(p1)
   ;SOURCE: fractfun.frm
 }
@@ -2742,7 +2742,7 @@ Five_Point {; Newton variant
 
 
 Flames {; Jim Muth
-        ; Posted in Fractal-Art, 4/25/97 
+        ; Posted in Fractal-Art, 4/25/97
   c=pixel, z=2*(pixel):
   z=fn1(z)+c+fn2(c)
   c=fn3(c)
@@ -3123,7 +3123,7 @@ flip2_man_j (ORIGIN) {
 }
 
 
-flip2_man_m { 
+flip2_man_m {
   z=0, q = pixel:
   q = flip(q)
   z = flip(sqr(z) + q)
@@ -3132,7 +3132,7 @@ flip2_man_m {
 }
 
 
-flip3_man_j { 
+flip3_man_j {
   z = pixel:
   z = 1/flip(sqr(z) + p1)
   |z| <= 4
@@ -3140,7 +3140,7 @@ flip3_man_j {
 }
 
 
-flip3_man_m (XAXIS) { 
+flip3_man_m (XAXIS) {
   z = 0:
   z = 1/flip(sqr(z) + pixel)
   |z| <= 4
@@ -3151,7 +3151,7 @@ flip3_man_m (XAXIS) {
 FlipConjJul_N {; Jm Collard-Richard
   z=pixel:
   z=flip(conj(z^p2))+p1
-  |z|<=4         
+  |z|<=4
   ;SOURCE: dons.frm
 }
 
@@ -3159,7 +3159,7 @@ FlipConjJul_N {; Jm Collard-Richard
 FlipConjMand_N {; Jm Collard-Richard
   c=z=pixel:
   z=flip(conj(z^p1))+c
-  |z|<=4         
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -3297,24 +3297,24 @@ FlyC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin 10/98
 }
 
 
-FlyingSquirrel (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FlyingSquirrel (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                ; by George Martin 10/98
   z=p1, x=|z|:
   z=sin(z)/cosxx(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
 
-FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                 ; by George Martin 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=sin(z)/cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -3326,15 +3326,15 @@ FlyingSquirrelC.1 (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=tan(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
 
 fn {
   z = fn1(Pixel) + 1/fn2(Pixel - p1) :
-  z = sqr(z) + fn1(Pixel) + 1/fn2(Pixel - p1) 
-  | z | <= 4 
+  z = sqr(z) + fn1(Pixel) + 1/fn2(Pixel - p1)
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
@@ -3377,7 +3377,7 @@ Fn+Fn {; Jon Horner/Chuck Ebbert
 }
 
 
-Fn1 (XAXIS) {  
+Fn1 (XAXIS) {
   c = z = pixel:
   z = fn1(z) + c + p1
   ;SOURCE: robert.frm
@@ -3393,56 +3393,56 @@ fn1+fn2 (XYAXIS) {; Sylvie Gallet 101324.3444@compuserve.com, 1995
 }
 
 
-Fn2 (XAXIS) {  
+Fn2 (XAXIS) {
   c = z = pixel:
   z = fn1(z)*fn2(z*z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn3 (XAXIS) {  
+Fn3 (XAXIS) {
   c = z = pixel:
   z = fn2(z)*fn2(z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn4 (XAXIS) {  
+Fn4 (XAXIS) {
   c = z = pixel:
   z = fn1(z)*fn1(z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn4Inv (XAXIS) {  
+Fn4Inv (XAXIS) {
   c = z = pixel:
   z = 1/(fn1(z)*fn1(z)+c)
   ;SOURCE: robert.frm
 }
 
 
-Fn5 (XAXIS) {  
+Fn5 (XAXIS) {
   c = z = pixel:
   z = fn2(z*z)*fn2(z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn6 (XAXIS) {  
+Fn6 (XAXIS) {
   c = z = pixel:
   z = fn1(z*z)*fn2(z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn7 (XAXIS) {  
+Fn7 (XAXIS) {
   c = z = pixel:
   z = fn2(z*z)*fn1(z*z) + c
   ;SOURCE: robert.frm
 }
 
 
-Fn8 (XAXIS) {  
+Fn8 (XAXIS) {
   c = z = pixel:
   z = fn3(z)*fn2(z)*fn1(z) + c
   ;SOURCE: robert.frm
@@ -3451,8 +3451,8 @@ Fn8 (XAXIS) {
 
 fn[1/c] {
   z = fn1(Pixel) + fn2(1/(Pixel - p1)) :
-  z = sqr(z) + fn1(Pixel) + fn2(1/(Pixel - p1)) 
-  | z | <= 4 
+  z = sqr(z) + fn1(Pixel) + fn2(1/(Pixel - p1))
+  | z | <= 4
   ;SOURCE: ilvi.frm
 }
 
@@ -3492,7 +3492,7 @@ FnDog (XYAXIS) {; Scott Taylor
 FnGAMMA (Xaxis) {; Jm Collard-Richard
   z=pixel, twopi=6.283185307, r=10:
   z=fn1((twopi*z)^(0.5)*(z^z)*exp(-z))+fn2(pixel)
-  |z|<=r    
+  |z|<=r
   ;SOURCE: jmcr2.frm
 }
 
@@ -3509,35 +3509,35 @@ fnglynn {; Mutation of GLYNN, by Bradley Beacham  [74223,2745]
 
 FnInvJuliaBar_N1 {; Jm Collard-Richard
   z=1/pixel:
-  z=fn1(conj(z)^p2)+fn2(p1) 
+  z=fn1(conj(z)^p2)+fn2(p1)
   ;SOURCE: jmcr1.frm
 }
 
 
 FnInvJuliaBar_N2 {; Jm Collard-Richard
   z=1/pixel:
-  z=fn1(conj(z))^p2+fn2(p1) 
+  z=fn1(conj(z))^p2+fn2(p1)
   ;SOURCE: jmcr1.frm
 }
 
 
 FnInvJuliaBar_N3 {; Jm Collard-Richard
   z=1/pixel:
-  z=(fn1(conj(z))^p2)+fn2(p1) 
+  z=(fn1(conj(z))^p2)+fn2(p1)
   ;SOURCE: jmcr1.frm
 }
 
 
 FNInvMandelBar_N (xaxis) {; Jm Collard-Richard
   c=z=1/pixel :
-  z=conj(fn1(z))^p1+fn2(c)    
+  z=conj(fn1(z))^p1+fn2(c)
   ;SOURCE: jmcr1.frm
 }
 
 
 FnJuliaBar_N {; Jm Collard-Richard
   z=pixel:
-  z=fn1(conj(z))^p2+fn2(p1) 
+  z=fn1(conj(z))^p2+fn2(p1)
   ;SOURCE: jmcr1.frm
 }
 
@@ -3545,14 +3545,14 @@ FnJuliaBar_N {; Jm Collard-Richard
 FnMandelBar (xaxis) {; Jm Collard-Richard
   z=c=pixel :
   z=c*conj(fn1(z))
-  |z|<=64              
+  |z|<=64
   ;SOURCE: jmcr1.frm
 }
 
 
 fnrecip {
   z=c=pixel:
-  z=fn1(1/(z))*c 
+  z=fn1(1/(z))*c
   |z|<=100
   ;SOURCE: sample.frm
 }
@@ -3702,7 +3702,7 @@ Formula {; Giuseppe Zito
   d5 = -0.458745
   d12 = -0.425805
   d15 = -0.36000001
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 /c2
@@ -3710,7 +3710,7 @@ Formula {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 -y
   s0 = s0 *c8
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 /d1
   s0 = s0 +y
@@ -3727,9 +3727,9 @@ Formula {; Giuseppe Zito
   s0 = s0 -y
   s0 = s0 +x
   s0 = s0 +y
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: 99msg.frm
 }
 
@@ -3746,7 +3746,7 @@ Formula2 {; Giuseppe Zito
   d10 = 0.215734
   d13 = 0.053922
   d14 = 0.437287
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 -x
@@ -3761,7 +3761,7 @@ Formula2 {; Giuseppe Zito
   s0 = s0 +c13
   s0 = s0 +y
   s0 = s0 -x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 -y
   s0 = s0 -x
@@ -3776,9 +3776,9 @@ Formula2 {; Giuseppe Zito
   s1 = s1 *d14
   s0 = s0 *s1
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: 99msg.frm
 }
 
@@ -3813,14 +3813,14 @@ Formulization {; Copyright (c) Paul W. Carlson, 1998
 }
 
 
-fossil {; Giuseppe Zito 
+fossil {; Giuseppe Zito
   z = pixel
   c0 = -0.893218
   c3 = 0.999049
   c4 = -0.826461
   d4 = -0.017745
   d5 = -0.034349
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c3
@@ -3828,27 +3828,27 @@ fossil {; Giuseppe Zito
   s0 = s0 /y
   s0 = s0 /x
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +d4
   s0 = s0 *d5
   s0 = s0 *y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
 four (XYAXIS) {
-   ; A square root initialization of the octo 
+   ; A square root initialization of the octo
    ; will halve the number of arms
   z = pixel^.5,zp=(0,0):
   temp = z
   z = z^3 - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -3877,7 +3877,7 @@ Four_deep {; (c) Jay Hill, 1998
   ENDIF
   :                 ; initialization.
   zc=sqr(zc) + c    ; standard MSet iteration
-  IF (|zc| >= 800) 
+  IF (|zc| >= 800)
     done=-1         ; Set flag to force an exit.
   ENDIF
   done >= 0         ; Continue if the flag >=0.
@@ -4010,9 +4010,9 @@ Four_Julias {; Copyright (c) Paul W. Carlson, 1998
     ; imag(p3) = size factor, lower right quadrant
     ;
     ; There are several things you CAN'T do with
-    ; the image, including: zooming in, rotating, moving it in 
-    ; any direction, and in general, anything that changes the 
-    ; location of any part of the image on the screen.  
+    ; the image, including: zooming in, rotating, moving it in
+    ; any direction, and in general, anything that changes the
+    ; location of any part of the image on the screen.
   c = p1
   z = bailout = iter = range_num = 0
   px = real(scrnpix), py = imag(scrnpix)
@@ -4324,7 +4324,7 @@ FourierJ {; Julia Set of FourierM
 FourierM {; First three terms of a Fourier series
           ; p1 and p2: coefficients of the sine waves
           ; bailout fixed at 8
-  z=0 
+  z=0
   c=pixel:
   z=p1*sin(z)+p2*sin(2*z)+c
   |z|<=8
@@ -4401,22 +4401,22 @@ Fractal7 {
 }
 
 
-FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20
                               ; by George Martin, 10/98
   z=p1, x=|z|:
   z=cosh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
 
 FractalFender2 (XAXIS_NOPARM) {; Edited for Fractint v. 20
-                               ; by George Martin, 10/98  
+                               ; by George Martin, 10/98
   z=p1, x=|z|:
   z=cosxx(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -4428,7 +4428,7 @@ FractalFender2C (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -4440,7 +4440,7 @@ FractalFender2C.1 (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=cos(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -4464,7 +4464,7 @@ FractalFenderCarr (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=cosxx(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: spcb.frm
 }
 
@@ -4477,7 +4477,7 @@ FractalFenderCaSk (XAXIS_NOPARM) {; Edited for Fractint v. 20
     z=fn1(z)+pixel
   ENDIF
   z=fn2(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: spec.frm
 }
 
@@ -4487,19 +4487,19 @@ FractalFenderTwo (XAXIS_NOPARM) {; Edited for Fractint v. 20
   z=p1, x=|z|:
   z=cos(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 
 
-FractalFenderTwoC (XAXIS_NOPARM) {; Edited for Fractint v. 20 
+FractalFenderTwoC (XAXIS_NOPARM) {; Edited for Fractint v. 20
                                   ; by George Martin, 10/98
   z=p1, x=|z|:
   IF (x>1)
     z=cos(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: form1.frm
 }
 
@@ -4549,16 +4549,16 @@ FRACTEST {; TEST formula by Les St Clair 1996
      ; Created using "FracText" by Jan Maarten van der Valk
      ; Two formulas "FRAC" and "TEXT" have been amalgamated
      ; There is an error in the way the program handles the letter "C"
-  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x 
-  xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x 
-  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x 
+  z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x
+  xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x
+  xq=1.40000*x, xr=2.00000*x, xv=3.50000*x, xw=4.00000*x
   xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
   x1=1.50000*x
   chrf1 = (y<1.25000&&y>1.15000)||(y>1.60000)
   chrf1 = ((x<-1.15000)||chrf1)&&((x>-1.25000)&&(x<-0.75000))
   chrr2 = (y<1.25000&&y>1.15000)||y>1.60000||x<-0.60000
   chrr2 = chrr2&&((x>-0.70000) && (x<-0.40000))
-  chrr2 = chrr2 || ((cabs(sqrt(|z+(0.40000,-1.42500)|)-0.22500)<0.05000)\ 
+  chrr2 = chrr2 || ((cabs(sqrt(|z+(0.40000,-1.42500)|)-0.22500)<0.05000)\
                    && (x>-0.40000))
   chrr2 = chrr2||(y<1.20000&&y<-xr+0.45000&&y>-xr+0.22639)
   chra3 = (y>(xa+0.60877)||y>(-xa+2.47500))||(y<1.10000&&y>1.00000)
@@ -4573,7 +4573,7 @@ FRACTEST {; TEST formula by Les St Clair 1996
   chrt4 = y>0.20000&&x>0.61180&&x<1.21180
   chrt4 = chrt4||(x>0.86180&&x<0.96180)
   test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)\
-             *real(y<1.70000)) 
+             *real(y<1.70000))
   test2 = 1 - fn2(real(chrt1||chre2||chrx3||chrt4)*real(y>-0.70000)\
               *real(y<0.30000))
   z = 1+(0,-.65)/fn3(pixel+(0.0,.75)) :
@@ -4628,7 +4628,7 @@ Fractint {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-5 {; Sylvie Gallet [101324,3444], 1996
-            ; requires 'periodicity=0' 
+            ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025)), x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -4643,7 +4643,7 @@ Fractint-5 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = fn2(z*z)*(z*z), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4652,7 +4652,7 @@ Fractint-5 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-6 {; Sylvie Gallet [101324,3444], 1996
-            ; requires 'periodicity=0' 
+            ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4668,7 +4668,7 @@ Fractint-6 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = fn2(fn3(z*z)*fn4(z*z)), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4677,7 +4677,7 @@ Fractint-6 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-10 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4693,10 +4693,10 @@ Fractint-9-10 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95), rad = 3.1, center = (1.0,0.1) 
+  pix = (10*pixel+(5.0,-3.4))*(-0.1,-0.95), rad = 3.1, center = (1.0,0.1)
   move = center+rad/(pix-center)
   test = 1 - fn2((move/p1)/(real(f||r||a||c||t1||i||n||t2)\
-       *real(y>-0.225)*real(y<0.225))) 
+       *real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4705,7 +4705,7 @@ Fractint-9-10 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -4719,8 +4719,8 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4729,7 +4729,7 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-12 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -4743,8 +4743,8 @@ Fractint-9-12 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4753,7 +4753,7 @@ Fractint-9-12 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))^3, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -4767,8 +4767,8 @@ Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4777,7 +4777,7 @@ Fractint-9-13 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025^3)))), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4792,8 +4792,8 @@ Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = fn2(1 - (real(fn3(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)))
   z = 1+fn4((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4802,7 +4802,7 @@ Fractint-9-15 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-16 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(flip(log(sqrt(pixel-0.025^33)))), x=real(z)
   y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4817,8 +4817,8 @@ Fractint-9-16 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = fn2(1 - (real(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225)) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = fn2(1 - (real(f||r||a||c||t1||i||n||t2))*real(y>-0.225)*real(y<0.225))
   z = 1+fn3((0.0,-0.65)/(pixel+(0.0,.75))) :
   z2 = fn4(z*z)*(z*z), z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4827,7 +4827,7 @@ Fractint-9-16 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-20 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(fn2(pixel)-fn3(0.025)), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4843,7 +4843,7 @@ Fractint-9-20 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4852,7 +4852,7 @@ Fractint-9-20 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-21 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(fn2(pixel)-fn3(0.025)^fn4(3)), x=real(z), y=imag(z)
   x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
@@ -4868,7 +4868,7 @@ Fractint-9-21 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/(pixel+(0.0,.75)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4877,7 +4877,7 @@ Fractint-9-21 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-26 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = fn1(sinh(log(pixel-0.025))), Bossa = real(z), Nova = imag(z)
   Bossa1 = Bossa - p1*fn1(Nova+p2*fn2(Nova))
   Nova1 = Nova -  p1*fn1(Bossa+p2*fn2(Bossa))
@@ -4895,7 +4895,7 @@ Fractint-9-26 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/fn2(pixel+(0.0,.75))*(fn3(Bossa1)+flip(fn4(Nova1))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4904,8 +4904,8 @@ Fractint-9-26 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-29 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = fn1(log(pixel-0.025)) 
+               ; requires 'periodicity=0'
+  z = fn1(log(pixel-0.025))
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -4922,7 +4922,7 @@ Fractint-9-29 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = 1+(0.0,-0.65)/fn2((pixel+(0.0,.75))*Samba) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4931,8 +4931,8 @@ Fractint-9-29 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-30 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel) , Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -4949,7 +4949,7 @@ Fractint-9-30 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(1+fn2(0.0,-0.65)/fn3((pixel+(0.0,.75))*Samba)) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4958,8 +4958,8 @@ Fractint-9-30 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-33 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -4976,7 +4976,7 @@ Fractint-9-33 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(1+fn2(0.0,-0.65)/fn3((pixel+(0.0,.75))/fn4(Samba))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -4985,8 +4985,8 @@ Fractint-9-33 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-34 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -5003,7 +5003,7 @@ Fractint-9-34 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(1+fn2(0.0,-0.65)/fn3(pixel)+(0.0,.75)*Samba) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -5012,8 +5012,8 @@ Fractint-9-34 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
-  z = pixel-0.025 
+               ; requires 'periodicity=0'
+  z = pixel-0.025
   Bossa = pixel^p1/p2 + p2^pixel/(p1*pixel), Nova = p2/p1
   Samba = Bossa*Nova
   x=real(z), y=imag(z), x1=x*1.8, x3=3*x
@@ -5030,7 +5030,7 @@ Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = atanh(sqr(log(1+fn1(sqr(0.0,-0.65))\
        /fn2(sqr(log(pixel)))+fn3(cos(sin(0.0,.75)))*fn4(sqrt(Samba))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
@@ -5040,7 +5040,7 @@ Fractint-9-38 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-40 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -5055,7 +5055,7 @@ Fractint-9-40 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(1+(0.0,-0.65)/fn3(fn4(pixel+(0.0,.75))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -5064,7 +5064,7 @@ Fractint-9-40 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-41 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -5079,7 +5079,7 @@ Fractint-9-41 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(fn4(1+(fn3(0.0,-0.65)/(pixel+(0.0,.75)))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -5088,7 +5088,7 @@ Fractint-9-41 {; Sylvie Gallet [101324,3444], 1996
 
 
 Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
-               ; requires 'periodicity=0' 
+               ; requires 'periodicity=0'
   z = pixel-0.025, x=real(z), y=imag(z), x1=x*1.8, x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -5103,7 +5103,7 @@ Fractint-9-42 {; Sylvie Gallet [101324,3444], 1996
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
   t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
-  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)) 
+  test = 1 - (real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))
   z = fn1(fn2(1+(0.0,-0.65)/fn3(fn4(fn2(pixel+fn1(0.0,.75)))))) :
   z2 = z*z, z4 = z2*z2, n = z4*z2-1, z = z-n/(6*z4*z)
   (|n|>=0.0001) && test
@@ -5263,7 +5263,7 @@ Frantic {
   z = c = pixel + p1
   bail = round(|z|):
   r = z * (1/fn1(z)) + p2
-  z = fn2(r) * z + c 
+  z = fn2(r) * z + c
   bail <= 4
   ;SOURCE: schizo.frm
 }
@@ -5272,7 +5272,7 @@ Frantic {
 Frantic_2 {
   z = c = pixel + p1:
   r = z * (1/fn1(z)) + p2
-  z = fn2(r) * z + c 
+  z = fn2(r) * z + c
   round(|Z|) <= 4
   ;SOURCE: schizo_2.frm
 }
@@ -5305,10 +5305,10 @@ frm-C1 {
 }
 
 
-frm-C2 { 
-  z = 0, c = pixel: 
-  z = sqr(z) + c 
-  |z| < 4 
+frm-C2 {
+  z = 0, c = pixel:
+  z = sqr(z) + c
+  |z| < 4
   ;SOURCE: frmtutor.frm
 }
 
@@ -5333,7 +5333,7 @@ Frog (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
   z=p1, x=|z|:
   z=tanh(z)+pixel
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -5344,7 +5344,7 @@ FrogC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
     z=tanh(z)+pixel
   ENDIF
   z=sqr(z)+pixel, x=|z|
-  x<=4 
+  x<=4
   ;SOURCE: choice.frm
 }
 
@@ -5359,7 +5359,7 @@ From_Jiho1 {; Jiho Kim
 
 FrRbtGenJ {; Ron Barnett, 1993
   z = pixel:
-  z = p1*z*z*z + z*z + p2 
+  z = p1*z*z*z + z*z + p2
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -5379,7 +5379,7 @@ frtan (XAXIS) {
   temp = z
   z = -tan(z) - zp
   zp = temp
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -5851,7 +5851,7 @@ fungus001 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn1(x)
-  z = z * z +c 
+  z = z * z +c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5871,7 +5871,7 @@ fungus003 {
   z=c=pixel, x=imag(c), y=imag(fn2(z)):
   x = z + x / sqr(y)
   y = c + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5881,7 +5881,7 @@ fungus004 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn3(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5891,7 +5891,7 @@ fungus004a {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / y
   y = fn2(z) + fn3(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5901,7 +5901,7 @@ fungus004b {
   z=pixel, c=(-0.75,0.1234), x=imag(c), y=imag(z):
   x = z + x / y
   y = fn2(z) + fn3(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5911,7 +5911,7 @@ fungus005 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / sqrt(sqr(y))
   y = z + fn1(fn2(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5952,7 +5952,7 @@ fungus009 {
   w = z + x / fn2(y)
   x = z + fn1(y)
   y = y * w + x
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5962,7 +5962,7 @@ fungus01 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -5973,7 +5973,7 @@ fungus010 {
   w = z + x / fn2(y)
   x = z + fn1(y)
   y = y ^ w + x
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5984,7 +5984,7 @@ fungus011 {
   c = z + x / sqr(y) * (real(p1) / imag(p1))
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -5995,7 +5995,7 @@ fungus012 {
   c = z + x / sqr(y*y) * (real(p1) / imag(p1))
   x = z + y / fn2(y)
   y = z - x / fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6006,7 +6006,7 @@ fungus013 {
   c = z - x / sqr(y*y) * (real(p1) ^ imag(p1))
   x = z + y / fn2(y)
   y = z + x / fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6056,7 +6056,7 @@ fungus018 {
   z=c=pixel, x=imag(c), y=imag(z), w=(x*y):
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z * z + (c - w) 
+  z = z * z + (c - w)
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6066,7 +6066,7 @@ fungus018a {
   z=c=pixel, x=imag(c), y=imag(z), w=(x*y):
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z * z + (c * fn3(w)) 
+  z = z * z + (c * fn3(w))
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6087,7 +6087,7 @@ fungus02 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn3(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6120,7 +6120,7 @@ fungus021 {
   x=imag(c), y=imag(z):
   x = z + x / y
   y = fn3(z) + fn2(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6131,7 +6131,7 @@ fungus022 {
   x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = y * y + x 
+  z = y * y + x
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6141,7 +6141,7 @@ fungus023 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn1(y^x)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6151,7 +6151,7 @@ fungus024 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z  * (whitesq == 0) + (z + c) * whitesq 
+  z = z  * (whitesq == 0) + (z + c) * whitesq
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6161,7 +6161,7 @@ fungus025 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / x * fn2(y)
   y = z * fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6171,7 +6171,7 @@ fungus026 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / fn3(x) * fn2(y)
   y = z * fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6192,7 +6192,7 @@ fungus028 {
   x=imag(c), y=imag(z):
   x = z / fn3(x) * fn2(y)
   y = z * fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6202,7 +6202,7 @@ fungus029 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / fn3(x) * fn2(y)
   y = z / fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6224,7 +6224,7 @@ fungus030 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / fn3(x) / fn2(y)
   y = z / fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6234,7 +6234,7 @@ fungus031 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z ^ fn3(x) ^ fn2(y)
   y = z ^ fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6244,7 +6244,7 @@ fungus032 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z ^ fn3(x) * fn2(y)
   y = z / fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6254,7 +6254,7 @@ fungus033 {
   z = c = pixel, x=imag(c), y=imag(z):
   x = z / x / y
   y = fn3(z) / fn2(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6284,7 +6284,7 @@ fungus036 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / fn2(y^y)
   y = z + fn1(y/y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6294,7 +6294,7 @@ fungus037 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / fn2(y/y)
   y = z + fn1(y/y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6304,7 +6304,7 @@ fungus038 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / sqr(y)
   y = z + fn1(y/y)
-  z = z * z + fn2(c) 
+  z = z * z + fn2(c)
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6314,7 +6314,7 @@ fungus039 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / fn2(y)
   y = z / fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6326,7 +6326,7 @@ fungus04 {
   x=imag(c), y=imag(z):
   x = z + x / y
   y = fn3(z) + fn2(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6346,7 +6346,7 @@ fungus041 {; newt test
   z=c=pixel, x=imag(c), y=imag(z), Root = 1:
   x = z + x / fn2(y)
   y = z + fn3(fn1(y))
-  z3 = z * z + z 
+  z3 = z * z + z
   z4 = z3 * y
   z = (3 * z4 + Root) / (4 * z3)
   .004 <= |z4 - Root|
@@ -6381,7 +6381,7 @@ fungus044 {
   l = r
   x = z + x / fn2(y)
   y = z + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   UV = (5,5) - fn3(abs((5,5)) - fn4(abs(z)))
   r = tan(cabs(UV))
   abs(l-r) >= 0.001 && r < 4
@@ -6395,7 +6395,7 @@ fungus045 {; mod fungus21
   l = r
   x = z + x / y
   y = fn3(z) + fn2(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   UV = (5,5) - abs((5,5) - abs(z))
   r = cabs(UV)
   abs(l-r) >= 0.001 && r < 4
@@ -6418,7 +6418,7 @@ fungus047 {; x
   x = z + x / fn2(y)
   y = z + fn1(y)
   c = z / fn3(z) / p1
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6430,7 +6430,7 @@ fungus048 {
   y = z + y / fn2(x)
   v = z + v / fn3(w)
   w = z + w / fn4(v)
-  z = (z-(y+w)) * (z+(y-w)) + (c-(x+v)) 
+  z = (z-(y+w)) * (z+(y-w)) + (c-(x+v))
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6450,7 +6450,7 @@ fungus05 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / x * fn2(y)
   y = z * fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6480,7 +6480,7 @@ fungus051 {
   z=c=sin(conj(pixel)), x=imag(c), y=imag(z):
   x = z + x / fn2(y)
   y = z + fn3(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
 }
@@ -6489,7 +6489,7 @@ fungus051 {
 fungus052 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y)
-  y = z * whitesq + (fn1(y)) * (whitesq == 0) 
+  y = z * whitesq + (fn1(y)) * (whitesq == 0)
   z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
@@ -6499,7 +6499,7 @@ fungus052 {
 fungus052a {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y+z)
-  y = z * whitesq + (fn1((y+z)+(x+z))) * (whitesq == 0) 
+  y = z * whitesq + (fn1((y+z)+(x+z))) * (whitesq == 0)
   z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
@@ -6509,7 +6509,7 @@ fungus052a {
 fungus053 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / fn2(y+z)
-  y=z*whitesq + (fn1(fn3((y+z)-(c+x))+fn4((x+z)-(y+z))))*(whitesq == 0) 
+  y=z*whitesq + (fn1(fn3((y+z)-(c+x))+fn4((x+z)-(y+z))))*(whitesq == 0)
   z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
@@ -6519,7 +6519,7 @@ fungus053 {
 fungus054 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / (fn1(fn2((y+z)+(c-x))+fn3((x-z)+(y+z))))
-  y = z * fn4(y) 
+  y = z * fn4(y)
   z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
@@ -6529,7 +6529,7 @@ fungus054 {
 fungus054a {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z + x / (fn1(fn2((y+z)+(c-x))+fn3((x-z)+(y+z))))
-  y = z * whitesq + (fn4(y)) * (whitesq == 0) 
+  y = z * whitesq + (fn4(y)) * (whitesq == 0)
   z = z * z + c
   |z|<4
   ;SOURCE: 0fungus.frm
@@ -6550,7 +6550,7 @@ fungus06 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = z / fn3(x) * fn2(y)
   y = z * fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6562,7 +6562,7 @@ fungus07 {
   x=imag(c), y=imag(z):
   x = z / fn3(x) * fn2(y)
   y = z * fn4(fn1(y))
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6572,7 +6572,7 @@ fungus08 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / x) / fn2(y)
   y = z + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6582,7 +6582,7 @@ fungus09 {
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / fn2(y)
   y = z + fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
@@ -6592,16 +6592,16 @@ fungus10 {; Originally posted with name fungus010
   z=c=pixel, x=imag(c), y=imag(z):
   x = fn3(z / fn4(x)) / fn2(y)
   y = z / fn1(y)
-  z = z * z + c 
+  z = z * z + c
   |z|<4
   ;SOURCE: fungus.frm
 }
 
 
-fuzzy {; To center this on your screen use 
-       ; the command corners=-2/3/2.5/-1.5 
+fuzzy {; To center this on your screen use
+       ; the command corners=-2/3/2.5/-1.5
   a=real(pixel), b=imag(pixel):
-  x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y 
+  x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y
   sqr(abs(a*a)+abs(b*b))<=p1
   ;SOURCE: fuzzy.frm
 }
@@ -6609,7 +6609,7 @@ fuzzy {; To center this on your screen use
 
 Fzpcocoh {
   z = pixel, f = 1. / cosh(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6617,7 +6617,7 @@ Fzpcocoh {
 
 Fzpcopch {
   z = pixel, f = pixel ^ (cosh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6625,7 +6625,7 @@ Fzpcopch {
 
 Fzpcopcs {
   z = pixel, f = pixel ^ (1. / cosxx(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6633,7 +6633,7 @@ Fzpcopcs {
 
 Fzpcopct {
   z = pixel, f = pixel ^ (cosxx(pixel) / sin(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z|<= 50
   ;SOURCE: skinner.frm
 }
@@ -6641,7 +6641,7 @@ Fzpcopct {
 
 Fzpcophc {
   z = pixel, f = pixel ^ (1. / cosh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6649,7 +6649,7 @@ Fzpcophc {
 
 Fzpcophs {
   z = pixel, f = pixel ^ (1. / sinh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6665,7 +6665,7 @@ Fzpcopht {
 
 Fzpcopse {
   z = pixel, f = pixel ^ (1. / sin(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6673,7 +6673,7 @@ Fzpcopse {
 
 Fzpcopsh {
   z = pixel, f = pixel ^ (sinh(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6681,7 +6681,7 @@ Fzpcopsh {
 
 Fzpcopsq {
   z = pixel, f = pixel ^ (sqr(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6689,7 +6689,7 @@ Fzpcopsq {
 
 Fzpcopta {
   z = pixel, f = pixel ^ (sin(pixel) / cosxx(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z|<= 50
   ;SOURCE: skinner.frm
 }
@@ -6705,7 +6705,7 @@ Fzpcopth {
 
 Fzpcoseh {
   z = pixel, f = 1. / sinh(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6737,7 +6737,7 @@ Fzppchco {
 
 Fzppchex {
   z = pixel, f = exp (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6745,7 +6745,7 @@ Fzppchex {
 
 Fzppchlo {
   z = pixel, f = log (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6753,7 +6753,7 @@ Fzppchlo {
 
 Fzppchsh {
   z = pixel, f = sinh (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6761,7 +6761,7 @@ Fzppchsh {
 
 Fzppchsi {
   z = pixel, f = sin (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6769,7 +6769,7 @@ Fzppchsi {
 
 Fzppchsq {
   z = pixel, f = sqr (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6777,7 +6777,7 @@ Fzppchsq {
 
 Fzppcoch {
   z = pixel, f = cosh (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6785,7 +6785,7 @@ Fzppcoch {
 
 Fzppcocs {
   z = pixel, f = 1. / cosxx(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6793,7 +6793,7 @@ Fzppcocs {
 
 Fzppcoct {
   z = pixel, f = cosxx(pixel) / sin(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z|<= 50
   ;SOURCE: skinner.frm
 }
@@ -6801,7 +6801,7 @@ Fzppcoct {
 
 Fzppcoex {
   z = pixel, f = exp (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6809,7 +6809,7 @@ Fzppcoex {
 
 Fzppcohs {
   z = pixel, f = sinh (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6833,7 +6833,7 @@ Fzppcolo {
 
 Fzppcopc {
   z = pixel, f = pixel ^ (cosxx(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6841,7 +6841,7 @@ Fzppcopc {
 
 Fzppcope {
   z = pixel, f = pixel ^ (exp(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6849,7 +6849,7 @@ Fzppcope {
 
 Fzppcopl {
   z = pixel, f = pixel ^ (log(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6857,7 +6857,7 @@ Fzppcopl {
 
 Fzppcopo {
   z = pixel, f = (pixel) ^ (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6865,7 +6865,7 @@ Fzppcopo {
 
 Fzppcopr {
   z = pixel, f = pixel ^ (1. / pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6873,7 +6873,7 @@ Fzppcopr {
 
 Fzppcops {
   z = pixel, f = pixel ^ (sin(pixel) ):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6881,7 +6881,7 @@ Fzppcops {
 
 Fzppcore {
   z = pixel, f = 1. / (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6889,7 +6889,7 @@ Fzppcore {
 
 Fzppcos {
   z = pixel, f = cosxx (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6897,7 +6897,7 @@ Fzppcos {
 
 Fzppcose {
   z = pixel, f = 1. / sin(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6905,7 +6905,7 @@ Fzppcose {
 
 Fzppcosh {
   z = pixel, f = cosh (pixel):
-  z = cosh (z) + f 
+  z = cosh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6913,7 +6913,7 @@ Fzppcosh {
 
 Fzppcosi {
   z = pixel, f = sin (pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6937,7 +6937,7 @@ Fzppcosr {
 
 Fzppcota {
   z = pixel, f = sin(pixel) / cosxx(pixel):
-  z = cosxx (z)  + f 
+  z = cosxx (z)  + f
   |z|<= 50
   ;SOURCE: skinner.frm
 }
@@ -6953,7 +6953,7 @@ Fzppcoth {
 
 Fzppexch {
   z = pixel, f = cosh (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6961,7 +6961,7 @@ Fzppexch {
 
 Fzppexco {
   z = pixel, f = cosxx (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6969,7 +6969,7 @@ Fzppexco {
 
 Fzppexlo {
   z = pixel, f = log (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6977,7 +6977,7 @@ Fzppexlo {
 
 Fzppexp {
   z = pixel, f = exp (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6985,7 +6985,7 @@ Fzppexp {
 
 Fzppexsh {
   z = pixel, f = sinh (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -6993,7 +6993,7 @@ Fzppexsh {
 
 Fzppexsi {
   z = pixel, f = sin (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7001,7 +7001,7 @@ Fzppexsi {
 
 Fzppexsq {
   z = pixel, f = sqr (pixel):
-  z = exp (z)  + f 
+  z = exp (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7081,7 +7081,7 @@ Fzppfnth {; Lee Skinner
 
 Fzppshch {
   z = pixel, f = cosh (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7089,7 +7089,7 @@ Fzppshch {
 
 Fzppshco {
   z = pixel, f = cosxx (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7097,7 +7097,7 @@ Fzppshco {
 
 Fzppshex {
   z = pixel, f = exp (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7105,7 +7105,7 @@ Fzppshex {
 
 Fzppshlo {
   z = pixel, f = log (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7113,7 +7113,7 @@ Fzppshlo {
 
 Fzppshsi {
   z = pixel, f = sin (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7121,7 +7121,7 @@ Fzppshsi {
 
 Fzppshsq {
   z = pixel, f = sqr (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7129,7 +7129,7 @@ Fzppshsq {
 
 Fzppsich {
   z = pixel, f = cosh (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7137,7 +7137,7 @@ Fzppsich {
 
 Fzppsico {
   z = pixel, f = cosxx (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7145,16 +7145,16 @@ Fzppsico {
 
 Fzppsiex {
   z = pixel, f = exp (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
 
 
 Fzppsilo {
-  z = pixel 
-  f = log (pixel):  
-  z = sin (z)  + f 
+  z = pixel
+  f = log (pixel):
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinv151.frm
 }
@@ -7162,16 +7162,16 @@ Fzppsilo {
 
 Fzppsinh {
   z = pixel, f = sinh (pixel):
-  z = sinh (z) + f 
+  z = sinh (z) + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
 
 
 Fzppsire {
-  z = pixel 
-  f = 1. / (pixel):  
-  z = sin (z)  + f 
+  z = pixel
+  f = 1. / (pixel):
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinv151.frm
 }
@@ -7179,7 +7179,7 @@ Fzppsire {
 
 Fzppsish {
   z = pixel, f = sinh (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7187,16 +7187,16 @@ Fzppsish {
 
 Fzppsisq {
   z = pixel, f = sqr (pixel):
-  z = sin (z)  + f 
+  z = sin (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
 
 
 Fzppsqex {
-  z = pixel 
-  f = exp (pixel):  
-  z = sqr (z)  + f 
+  z = pixel
+  f = exp (pixel):
+  z = sqr (z)  + f
   |z| <= 50
   ;SOURCE: skinv151.frm
 }
@@ -7204,7 +7204,7 @@ Fzppsqex {
 
 Fzppsqlo {
   z = pixel, f = log (pixel):
-  z = sqr (z)  + f 
+  z = sqr (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7212,7 +7212,7 @@ Fzppsqlo {
 
 Fzppsqsh {
   z = pixel, f = sinh (pixel):
-  z = sqr (z)  + f 
+  z = sqr (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }
@@ -7220,7 +7220,7 @@ Fzppsqsh {
 
 Fzppsqsi {
   z = pixel, f = sin (pixel):
-  z = sqr (z)  + f 
+  z = sqr (z)  + f
   |z| <= 50
   ;SOURCE: skinner.frm
 }

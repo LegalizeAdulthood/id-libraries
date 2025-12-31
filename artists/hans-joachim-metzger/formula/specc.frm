@@ -10,4 +10,4 @@ SpecC (XAXIS_NOPARM) {
    x <= 4
   ;SOURCE: skinner.frm
 }
- 
+

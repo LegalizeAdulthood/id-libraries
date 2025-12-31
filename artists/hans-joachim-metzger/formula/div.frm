@@ -7,4 +7,4 @@ Div        { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z=(z*z +c)/P2 +P3
   |z| <= real(P1)
 }
- 
+

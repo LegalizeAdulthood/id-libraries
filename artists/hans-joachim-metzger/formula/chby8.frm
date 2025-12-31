@@ -10,7 +10,7 @@ C03-08 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby8.frm
 }
- 
+
 Ca10-08 {; V.1.1.1 - earlier versions may be discarded
          ; Copyright (c)1998,1999 Morgan L. Owens
          ; = ((a+9)xCa(9)-(a+4)Ca(8))/5
@@ -31,7 +31,7 @@ Ca10-08 {; V.1.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby8.frm
 }
- 
+
 L08-08 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = ((15-z)L(7)-7L(6))/8
@@ -44,7 +44,7 @@ L08-08 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby8.frm
 }
- 
+
 S07-08 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = zS06-S05
@@ -58,7 +58,7 @@ S07-08 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby8.frm
 }
- 
+
 T04-08 {; V.1.1 - earlier versions may be discarded
         ; Copyright (c)1998,1999 Morgan L. Owens
         ; = 2zT03-T02
@@ -72,4 +72,4 @@ T04-08 {; V.1.1 - earlier versions may be discarded
   |z|<=bailout
   ;SOURCE: chby8.frm
 }
- 
+

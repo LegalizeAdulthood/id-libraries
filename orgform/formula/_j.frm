@@ -101,8 +101,8 @@ J-decomp15 {; 15-ary decomp (c) Jay Hill 1997
   IF (|z| >= 100)        ; Point exceeds bailout.
     done = -1            ; Set flag to force an exit.
     y=.5*imag(log(z))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=15*y
     z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -124,8 +124,8 @@ J-decomp3 {; Trinary decomp (c) Jay Hill 1997
   IF (|z| >= 100)        ; Point exceeds bailout.
     done = -1            ; Set flag to force an exit.
     y=.5*imag(log(z))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=3*y
     z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -148,8 +148,8 @@ J-decomp31 {; 31-ary decomp (c) Jay Hill 1997
   IF (|z| >= 10000)      ; Point exceeds bailout.
     done = -1            ; Set flag to force an exit.
     y=.5*imag(log(z))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=31*y
     z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -173,8 +173,8 @@ J-decomp63 {; 63-ary decomp (c) Jay Hill 1997
   IF (|z| >= 10000)      ; Point exceeds bailout.
     done = -1            ; Set flag to force an exit.
     y=.5*imag(log(z))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=63*y
     z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -195,8 +195,8 @@ J-decomp7 {; 7-ary decomp (c) Jay Hill 1997
   IF (|z| >= 100)        ; Point exceeds bailout.
     done = -1            ; Set flag to force an exit.
     y=.5*imag(log(z))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=7*y
     z=w - iter - 8       ; Sylvie Gallet's suggestion
@@ -234,12 +234,12 @@ J-in-Jello {; Jay Hill, 1998
   done = 1
   IF( whitesq)
     z = 0, zc = c = (p3*pixel+p2)
-    s=|c|, t1=(256*s - 96)*s + 32*Real(c) 
+    s=|c|, t1=(256*s - 96)*s + 32*Real(c)
     t2=16*s + 32*Real(c) + 16
               ; component tests
-    B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| 
+    B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)|
               ; set colors
-    z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) 
+    z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1)
     IF (z>0)  ; for periods 1, 2, 3
       done=-1 ; color is set, skip iterations
     ENDIF
@@ -574,7 +574,7 @@ J_TchebychevC4 {
 }
 
 
-J_TchebychevC5 { 
+J_TchebychevC5 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z-5)+5)
   |z|<100
@@ -606,7 +606,7 @@ J_TchebychevS2 {
 }
 
 
-J_TchebychevS3 {  
+J_TchebychevS3 {
   c = pixel, z = P1:
   z = c*z*(z*z-2)
   |z|<100
@@ -622,7 +622,7 @@ J_TchebychevS4 {
 }
 
 
-J_TchebychevS5 { 
+J_TchebychevS5 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z-4)+3)
   |z|<100
@@ -670,7 +670,7 @@ J_TchebychevT4 {
 }
 
 
-J_TchebychevT5 {    
+J_TchebychevT5 {
   c = pixel, z = P1:
   z = c*(z*(z*z*(16*z*z-20)+5))
   |z|<100
@@ -686,7 +686,7 @@ J_TchebychevT6 {
 }
 
 
-J_TchebychevT7 {     
+J_TchebychevT7 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z*(64*z*z-112)+56)-7)
   |z|<100
@@ -702,7 +702,7 @@ J_TchebychevU2 {
 }
 
 
-J_TchebychevU3 {   
+J_TchebychevU3 {
   c = pixel, z = P1:
   z = c*z*(8*z*z-4)
   |z|<100
@@ -718,7 +718,7 @@ J_TchebychevU4 {
 }
 
 
-J_TchebychevU5 {    
+J_TchebychevU5 {
   c = pixel, z = P1:
   z = c*z*(z*z*(32*z*z-32)+6)
   |z|<100
@@ -734,7 +734,7 @@ J_TchebychevU6 {
 }
 
 
-J_TchebychevU7 {     
+J_TchebychevU7 {
   c = pixel, z = P1:
   z = c*z*(z*z*(z*z*(128*z*z-192)+80)-8)
   |z|<100
@@ -940,7 +940,7 @@ janet {
   z = sin(z) - zp2
   zp2 = zp1
   zp1 = p1/temp
-  (|zp2| <= 4 && |z| <= huge) 
+  (|zp2| <= 4 && |z| <= huge)
   ;SOURCE: noel.frm
 }
 
@@ -958,7 +958,7 @@ January {; Sylvie Gallet, Dec 1997
   ELSE
     z2 = z1*z1
     z1 = ((1,-1)*z2*z2 + (7,1)*z1) / (2*z1*z2 + 6)
-    mz = abs(cabs(z1)-1) 
+    mz = abs(cabs(z1)-1)
     cont = 1
     iter = iter + 1
   ENDIF
@@ -972,7 +972,7 @@ January-2 {; Sylvie Gallet, Dec 1997
            ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-1) 
+  mz = abs(cabs(z1)-1)
   :
   IF (mz >= 0.1)
     z2 = z1*z1
@@ -994,7 +994,7 @@ January-3 {; Sylvie Gallet, Dec 1997
            ; Use decomp = 256 and periodicity = 0
   z1 = pixel, iter = 0
   a = real(p1)*(0,0.0245436)    ; real(p1) * 2i pi / 256
-  mz = abs(cabs(z1)-1) 
+  mz = abs(cabs(z1)-1)
   :
   IF (mz >= 0.1)
     z2 = z1*z1
@@ -1015,7 +1015,7 @@ January_gen  { ; Modified Sylvie Gallet "january" formula
           ; Based on Scott Burns equation solver applied to z^3-1 = 0
           ; Use decomp = 256
           ; generalized by Les St Clair, Dec 1997
-          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp 
+          ; use p1(real)=6, p2(real)=10, fn1=abs, fn2=cabs & fn3=exp
           ; for default behaviour
   z1 = pixel, iter = 0
   a = 23*(0,0.0245436)       ; 23 * 2i pi / 256
@@ -1085,7 +1085,7 @@ jcamp08 {
   c = pixel
   z = 0
   :
-  z=1-.5*z^2+(1/24)*z^4-(1/720)*z^6+(1/40320)*z^8\ 
+  z=1-.5*z^2+(1/24)*z^4-(1/720)*z^6+(1/40320)*z^8\
       -(1/3628800)*z^10+c
   |z| <= real(p1)
   ;SOURCE: 98msg.frm
@@ -1097,7 +1097,7 @@ jcamp09 {
   z = 0
   t = 1
   :
-  z = t^(imag(p1))*(1 - .5*(z-c)^2 + (1/24)*(z-c)^4 - (1/720)*(z-c)^6\ 
+  z = t^(imag(p1))*(1 - .5*(z-c)^2 + (1/24)*(z-c)^4 - (1/720)*(z-c)^6\
         + (1/40320)*(z-c)^8 - (1/3628800)*(z-c)^10)
   t = t + real(p2)
   |z| <= real(p1)
@@ -1341,7 +1341,7 @@ JD-SG-09 {; Sylvie Gallet [101324,3444], 1996  Requires passes=1
 
 
 JDCarr2289b  {; Modified Carr/Gallet frm. Jim Deutch 1996
-   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, 
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
    ; periodicity=0
    ; Added variable "newpixel". G. Martin 6/29/99
   y=((imag(scrnpix)/(imag(scrnmax)-1)))*imag(scrnmax)/real(scrnmax)-.85
@@ -1674,7 +1674,7 @@ JDfrm031SF1 {; Jim Deutch: generalized 2-Julia Pseudo-HiColor
   count = (count + 1) * (count != 1599)
   evenodd = (evenodd == (count == 1))
   oddeven = (evenodd == 0)
-  z = pixel + p3*evenodd 
+  z = pixel + p3*evenodd
   p = p1*evenodd + p2*oddeven:
   z=z*z + p
   |z| < 4
@@ -2626,7 +2626,7 @@ jdphc39 {; * mod of Ent by Scott Taylor
   bail=real(p2)
   w1=whitesq*2-1  ; +1/-1
   z = real(Pixel) + flip(imag(pixel))*w1
-  y = fn1(z) 
+  y = fn1(z)
   base = log(p1):
   z = y * log(z)/base
   |z| <= bail
@@ -2908,66 +2908,66 @@ JDWhatzit4 {; Jim Deutch [104074,3171], 1996 requires 19.5
 }
 
 
-Jeff1 {; Revised for Fractint v20 by G. Martin 
-  z = Pixel:  
-  z = fn1(z) + pixel 
-  |z| <= 4 
+Jeff1 {; Revised for Fractint v20 by G. Martin
+  z = Pixel:
+  z = fn1(z) + pixel
+  |z| <= 4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff2 { 
-  z = Pixel:  
+Jeff2 {
+  z = Pixel:
   z = fn1((z+(22/7^(fn2(1/4)))) + fn3(22/7-1/3)) + pixel
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff3 {; Revised for Fractint v20 by G. Martin 
-  z = Pixel:  
-  z = fn1(-z + sqrt(-2)/z^2) + pixel 
-  |z| <= 4 
+Jeff3 {; Revised for Fractint v20 by G. Martin
+  z = Pixel:
+  z = fn1(-z + sqrt(-2)/z^2) + pixel
+  |z| <= 4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff4 { 
-  z = Pixel:  
+Jeff4 {
+  z = Pixel:
   z = fn1(z + p^e * (fn2(z^2-z^3))) + pixel
-  |z| <=6 
+  |z| <=6
   ;SOURCE: jeff.frm
 }
 
 
-Jeff5 {; Revised for Fractint v20 by G. Martin 
-  z = Pixel:  
-  z = ((-z + fn1(z^2 - 4)) / 2) + pixel 
-  |z| <=4 
+Jeff5 {; Revised for Fractint v20 by G. Martin
+  z = Pixel:
+  z = ((-z + fn1(z^2 - 4)) / 2) + pixel
+  |z| <=4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff6 { 
-  z = Pixel:  
-  z = fn1((z^2-z^3)*(p-e)) + pixel 
-  |z| <=4 
+Jeff6 {
+  z = Pixel:
+  z = fn1((z^2-z^3)*(p-e)) + pixel
+  |z| <=4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff7 {; Revised for Fractint v20 by G. Martin 
-  z = Pixel:  
-  z = fn1(z^2+z^3) * (fn2(z/z^4)/2) + z * fn3((z^(-5)/z)/2) + pixel 
-  |z| <=4 
+Jeff7 {; Revised for Fractint v20 by G. Martin
+  z = Pixel:
+  z = fn1(z^2+z^3) * (fn2(z/z^4)/2) + z * fn3((z^(-5)/z)/2) + pixel
+  |z| <=4
   ;SOURCE: jeff.frm
 }
 
 
-Jeff8 {; Revised for Fractint v20 by G. Martin 
-  z = Pixel:  
-  z = fn1(pi^2+z^3) * (fn2(e/z^4)/2) + z * fn3((e^(-5)/pi)/2) + pixel 
-  |z| <=4 
+Jeff8 {; Revised for Fractint v20 by G. Martin
+  z = Pixel:
+  z = fn1(pi^2+z^3) * (fn2(e/z^4)/2) + z * fn3((e^(-5)/pi)/2) + pixel
+  |z| <=4
   ;SOURCE: jeff.frm
 }
 
@@ -3148,7 +3148,7 @@ jenn019 {; Arno Jennen
 
 
 jenn020 {; Arno Jennen
-         ; Revised for Fractint v20 by G. Martin 
+         ; Revised for Fractint v20 by G. Martin
   a=(sin(|pixel-1.25|))<pixel
   z=(pixel)+sqr(pixel-a):
   z=flip(z)
@@ -3189,7 +3189,7 @@ jenn023 {; Arno Jennen
 jenn024 {; Arno Jennen
   z=(pixel/(|pixel+9.95|)):
   a1=pixel+cosxx(z)
-  a2=(a1+0.20)/pixel 
+  a2=(a1+0.20)/pixel
   z=(|z+pixel|)/(a1+a2)+sin(a2)
   |(z^(9.20-a1))|<=z
   ;SOURCE: je-001.frm
@@ -3401,7 +3401,7 @@ jenn046 {; Arno Jennen
   z=(q^x)*(y^q):
   q=(z*p1)-(x*y)
   z=z+(q*x*y)^fn1(z)
-  |(z+z)|<=100  
+  |(z+z)|<=100
   ;SOURCE: je-002.frm
 }
 
@@ -3410,7 +3410,7 @@ jenn047 {; Arno Jennen
   q=exp(pixel)
   z=fn1(q^2):
   z=q^z
-  |(z)|<=100  
+  |(z)|<=100
   ;SOURCE: je-002.frm
 }
 
@@ -3430,7 +3430,7 @@ jenn049 {; Arno Jennen
   q=(sin(|sin(pixel/p1)|))*pixel
   z=fn1(q^2):
   z=q^z
-  |z|<=100  
+  |z|<=100
   ;SOURCE: je-002.frm
 }
 
@@ -3628,7 +3628,7 @@ jenn074 {; Arno Jennen
   x=1/fn1(pixel)
   y=(x*x)+pixel
   z=y=pixel:
-  z=fn1(sqr(y)*sqr(z))+pixel 
+  z=fn1(sqr(y)*sqr(z))+pixel
   |z|<=4
   ;SOURCE: je-006.frm
 }
@@ -3638,7 +3638,7 @@ jenn075 {; Arno Jennen
   x=(1+pixel)/fn1(pixel)
   y=((x*x)/fn1(x))+pixel
   z=y=pixel:
-  z=asin(fn1(y)*sqr(z))+pixel 
+  z=asin(fn1(y)*sqr(z))+pixel
   |z|<=4
   ;SOURCE: je-006.frm
 }
@@ -3649,7 +3649,7 @@ jenn076 {; Arno Jennen
   x1=(1+pixel)/pixel
   y=(x*x*x)-x1
   z=y=pixel:
-  z=sqr(sqr(y)*fn1(z))+pixel 
+  z=sqr(sqr(y)*fn1(z))+pixel
   |z|<=4
   ;SOURCE: je-006.frm
 }
@@ -3659,7 +3659,7 @@ jenn077 {; Arno Jennen
   x=pixel
   y=x+fn1((x*fn1(x)))
   z=x=y=pixel-sqr(pixel):
-  z=asin(fn1(y)*sqr(z))+pixel 
+  z=asin(fn1(y)*sqr(z))+pixel
   |z|<=4
   ;SOURCE: je-006.frm
 }
@@ -3711,7 +3711,7 @@ jenn082 {; Arno Jennen
 jenn11 {; Arno Jennen
   z=(pixel/(|pixel+9.95|)):
   a1=pixel+cosxx(z)
-  a2=(a1+0.20)/pixel 
+  a2=(a1+0.20)/pixel
   z=(|z+pixel|)/(a1+a2)+sin(a2)
   |(z^(9.20-a1))|<=z
   ;SOURCE: je090801.frm
@@ -3745,7 +3745,7 @@ jfnz {
 }
 
 
-JGen_Maxi {; generalized Minimax-JuliaSet 
+JGen_Maxi {; generalized Minimax-JuliaSet
            ; (p1 and p2 may not both be 0!)
            ; p3 is the constant!
            ; p1 = (-1,0) and p2 = (0,-1) gives Jpm
@@ -3779,7 +3779,7 @@ JGen_Maxi {; generalized Minimax-JuliaSet
 }
 
 
-JGen_Mini {; generalized Minimax-JuliaSet 
+JGen_Mini {; generalized Minimax-JuliaSet
            ; (p1 and p2 may not both be 0!)
            ; p3 is the constant!
            ; p1 = (-1,0) and p2 = (0,-1) gives Jpm
@@ -3947,7 +3947,7 @@ JJ_Maxi {; an automatic Mix
   v = qz + b
   IF(|u|<|v|)
     z = v
-  ELSE  
+  ELSE
     z = u
   ENDIF
   |z|<bailout
@@ -4222,7 +4222,7 @@ Jm_27a {; generalized Jm Richard-Collard type
 Jm_28 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)^fn2(z)+pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4230,7 +4230,7 @@ Jm_28 (xaxis) {; Jm Collard-Richard
 Jm_29 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)^fn2(z)*pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4238,7 +4238,7 @@ Jm_29 (xaxis) {; Jm Collard-Richard
 Jm_30 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z+pixel)^fn2(z+pixel)
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4246,7 +4246,7 @@ Jm_30 (xaxis) {; Jm Collard-Richard
 Jm_31 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z*pixel)^fn2(z*pixel)
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4254,7 +4254,7 @@ Jm_31 (xaxis) {; Jm Collard-Richard
 Jm_32 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z+pixel)^fn2(z*pixel)
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4262,7 +4262,7 @@ Jm_32 (xaxis) {; Jm Collard-Richard
 Jm_33 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z*pixel)^fn2(z*pixel)*pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4270,7 +4270,7 @@ Jm_33 (xaxis) {; Jm Collard-Richard
 Jm_34 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z*pixel)^fn2(z*pixel)+pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4278,7 +4278,7 @@ Jm_34 (xaxis) {; Jm Collard-Richard
 Jm_35 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z+pixel)^fn2(z+pixel)+pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4286,7 +4286,7 @@ Jm_35 (xaxis) {; Jm Collard-Richard
 Jm_36 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z+pixel)^fn2(z+pixel)*pixel
-  |z|<=4        
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4294,7 +4294,7 @@ Jm_36 (xaxis) {; Jm Collard-Richard
 Jm_37 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(pixel)^fn2(z)
-  |z|<=4       
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4302,7 +4302,7 @@ Jm_37 (xaxis) {; Jm Collard-Richard
 Jm_38 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)^fn2(pixel)
-  |z|<=4       
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4310,7 +4310,7 @@ Jm_38 (xaxis) {; Jm Collard-Richard
 Jm_39 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)^fn2(1/z)+pixel
-  |z|<=4       
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4318,7 +4318,7 @@ Jm_39 (xaxis) {; Jm Collard-Richard
 Jm_40 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)^pixel+pixel^fn2(z)
-  |z|<=4       
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4326,7 +4326,7 @@ Jm_40 (xaxis) {; Jm Collard-Richard
 Jm_46 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=exp(-p1*z*z*cos(p2))*cos(p1*z*z*sin(p2))+pixel
-  |z|<=4  
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4334,7 +4334,7 @@ Jm_46 (xaxis) {; Jm Collard-Richard
 Jm_47 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(p1*z)/fn2(p2*z)+pixel
-  |z|<=4 
+  |z|<=4
   ;SOURCE: jmcr2.frm
 }
 
@@ -4342,7 +4342,7 @@ Jm_47 (xaxis) {; Jm Collard-Richard
 Jm_50 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=fn1(z)/fn2(z)+fn3(pixel)
-  |z|<=P1      
+  |z|<=P1
   ;SOURCE: jmcr2.frm
 }
 
@@ -4350,7 +4350,7 @@ Jm_50 (xaxis) {; Jm Collard-Richard
 Jm_51 (xaxis) {; Jm Collard-Richard
   z=pixel, c=z^fn2(pixel):
   z=fn1(z)+c
-  |z|<=25      
+  |z|<=25
   ;SOURCE: jmcr2.frm
 }
 
@@ -4359,7 +4359,7 @@ Jm_52 (xaxis) {; Jm Collard-Richard    -Use FLOAT
   z=pixel, c=z^fn2(pixel):
   z=fn1(z)+c
   c=fn3(c)+fn4(z)
-  |z|<=25     
+  |z|<=25
   ;SOURCE: jmcr2.frm
 }
 
@@ -4368,7 +4368,7 @@ Jm_53 (xaxis) {; Jm Collard-Richard  -  Use Float
   c=z=pixel:
   z=fn1(z)+c
   c=fn2(c)+fn3(z)
-  |z|<=25     
+  |z|<=25
   ;SOURCE: jmcr2.frm
 }
 
@@ -4386,7 +4386,7 @@ Jm_55 (xaxis) {; JM Collard-Richard
   f1=z^p1
   f2=z^p2
   z=fn1(f1)*fn2(f2)+pixel
-  |z|<=25      
+  |z|<=25
   ;SOURCE: jmcr2.frm
 }
 
@@ -4396,7 +4396,7 @@ Jm_56 (xaxis) {; Jm Collard-Richard
   f1=z^p1
   f2=z^p2
   z=fn1(f1)/fn2(f2)+pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4406,7 +4406,7 @@ Jm_57 (xaxis) {; Jm Collard-Richard
   f1=1/(z^p1)
   f2=1/(z^p2)
   z=fn1(f1)*fn2(f2)+pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4416,7 +4416,7 @@ Jm_58 (xaxis) {; Jm Collard-Richard
   f1=1/(z^p1)
   f2=1/(z^p2)
   z=fn1(f1)/fn2(f2)+pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4426,7 +4426,7 @@ Jm_59 (xaxis) {; Jm Collard-Richard
   f1=1/(z^p1)
   f2=1/(z^p2)
   z=(fn1(f1)/fn2(f2))*pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4436,7 +4436,7 @@ Jm_60 (xaxis) {; Jm Collard-Richard
   f1=(z^p1)
   f2=(z^p2)
   z=(fn1(f1)/fn2(f2))*pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4446,7 +4446,7 @@ Jm_61 (xaxis) {; Jm Collard-Richard
   f1=1/(z^p1)
   f2=1/(z^p2)
   z=fn1(f1)*fn2(f2)*pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4456,7 +4456,7 @@ Jm_62 (xaxis) {; Jm Collard-Richard
   f1=(z^p1)
   f2=(z^p2)
   z=fn1(f1)*fn2(f2)*pixel
-  |z|<=stop    
+  |z|<=stop
   ;SOURCE: jmcr2.frm
 }
 
@@ -4493,9 +4493,9 @@ JMask {; Ron Barnett, 1993
 }
 
 
-JMask2 {; Ron Barnett, 1995      
+JMask2 {; Ron Barnett, 1995
   z = fn1(pixel):
-  z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3 
+  z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3
   |z| <= 4
   ;SOURCE: reb006.frm
 }
@@ -4557,7 +4557,7 @@ joie {; Giuseppe Zito
   z = pixel
   c9 = 0.833795
   d3 = 0.844719
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 /x
@@ -4565,13 +4565,13 @@ joie {; Giuseppe Zito
   s0 = s0 +c9
   s0 = s0 *x
   s0 = s0 *y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 *x
   s0 = s0 -d3
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4   
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -4798,7 +4798,7 @@ JoWe55c10 {; from a modified Carr-formula
            ; 5/1997 JoWeber CIS [100424,35]
   z1=c1=fn1(1/pixel)
   z2=c2=fn2(1/pixel):
-  z=(fn1(z1*z1) + tan(z1) + c1)*whitesq+(fn2(z2*z2)\ 
+  z=(fn1(z1*z1) + tan(z1) + c1)*whitesq+(fn2(z2*z2)\
      + tan(z2) + c2)*(whitesq==0)
   z1=z
   z2=z
@@ -5049,7 +5049,7 @@ JoWe55d36a {; from a modified Carr-formula
 
 JoWe_01 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
-  a1=sqr(z), a2=1/a1, a3=1/(sqr(a1)) 
+  a1=sqr(z), a2=1/a1, a3=1/(sqr(a1))
   z=a1+a2+a3+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5058,7 +5058,7 @@ JoWe_01 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_02 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2:
-  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
+  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
   z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5066,7 +5066,7 @@ JoWe_02 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 
 JoWe_02_1 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
-  a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1)) 
+  a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1))
   z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel
   ;SOURCE: jo_we_33.frm
 }
@@ -5084,7 +5084,7 @@ JoWe_02_PHC (XYAXIS) {; Jo Weber [100424,35], 1996  Requires passes=1
 JoWe_02a (XAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2:
-  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
+  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
   z=(fn1(a1)+fn1(a2)*fn1(a3))*pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5093,7 +5093,7 @@ JoWe_02a (XAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_03 (XAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2:
-  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
+  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
   z=(fn1(a1)+fn2(a2)+fn1(a3))*z
   ;SOURCE: jo_we_32.frm
 }
@@ -5128,7 +5128,7 @@ JoWe_03_PHC_n1 {; Jo Weber [100424,35], 1996    Requires passes=1
 JoWe_03a (XAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2:
-  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
+  a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
   z=(fn1(a1)+fn1(a2)+fn1(a3))*z
   ;SOURCE: jo_we_32.frm
 }
@@ -5144,7 +5144,7 @@ JoWe_03m {; Jo Weber [100424,35], 6/1996
 
 JoWe_04 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5171,7 +5171,7 @@ JoWe_04a (XYAXIS) {; Jo Weber [100424,35], 6/1996
   newpixel=abs(real(pixel)) + flip(imag(pixel))
   newpixel=real(newpixel) + flip(abs(imag(newpixel)))
   z = newpixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+newpixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5192,7 +5192,7 @@ JoWe_04b (XYAXIS) {; Jo Weber [100424,35], 6/1996
                    ; Added variable "newpixel". G. Martin 6/27/99
   newpixel=pixel*(-1)^(pixel>0)
   z = newpixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=a1+a2+newpixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5224,7 +5224,7 @@ JoWe_04b_XY {; Jo Weber [100424,35], 10/1996
 
 JoWe_04c (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel:
-  a1=fn1(z), a2=p1/a1 
+  a1=fn1(z), a2=p1/a1
   z=fn2(a1)+fn3(a2)+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5241,7 +5241,7 @@ JoWe_04c_PHC (XYAXIS) {; Jo Weber [100424,35], 1996  Requires passes=1
 JoWe_05 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=a1+a2+pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5267,7 +5267,7 @@ JoWe_05m2 {; Jo Weber [100424,35] 9/1996
 JoWe_06 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=a1+a2
   ;SOURCE: jo_we_32.frm
 }
@@ -5387,7 +5387,7 @@ JoWe_06m_PHC_2 {; Jo Weber [100424,35], 10/1996
 JoWe_07 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=a1+a2-pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5396,7 +5396,7 @@ JoWe_07 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)*pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5405,7 +5405,7 @@ JoWe_08 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_09 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)/pixel
   ;SOURCE: jo_we_32.frm
 }
@@ -5414,7 +5414,7 @@ JoWe_09 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_10 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p = 1*(|p1|<0)+p1:
-  a1 = fn1(z), a2=p/a1 
+  a1 = fn1(z), a2=p/a1
   z = (a1+a2)^pixel
   |z|>=0.1
   ;SOURCE: jo_we_32.frm
@@ -5424,7 +5424,7 @@ JoWe_10 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_10a (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=fn2(p)/a1 
+  a1=fn1(z), a2=fn2(p)/a1
   z=(a1+a2)^pixel
   |z|>=0.1
   ;SOURCE: jo_we_35.frm
@@ -5434,7 +5434,7 @@ JoWe_10a (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_10b (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=fn2(p/a1) 
+  a1=fn1(z), a2=fn2(p/a1)
   z=(a1+a2)^pixel
   |z|>=0.1
   ;SOURCE: jo_we_35.frm
@@ -5444,7 +5444,7 @@ JoWe_10b (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_11 (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1 :
-  a1=fn1(z), a2=p/a1 
+  a1=fn1(z), a2=p/a1
   z=(a1+a2)^pixel
   |z|<=4
   ;SOURCE: jo_we_32.frm
@@ -5454,7 +5454,7 @@ JoWe_11 (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_11a (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=fn2(p)/a1 
+  a1=fn1(z), a2=fn2(p)/a1
   z=(a1+a2)^pixel
   |z|<=4
   ;SOURCE: jo_we_35.frm
@@ -5464,7 +5464,7 @@ JoWe_11a (XYAXIS) {; Jo Weber [100424,35], 6/1996
 JoWe_11b (XYAXIS) {; Jo Weber [100424,35], 6/1996
   z = pixel
   p=1*(|p1|<0)+p1:
-  a1=fn1(z), a2=fn2(p/a1) 
+  a1=fn1(z), a2=fn2(p/a1)
   z=(a1+a2)^pixel
   |z|<=4
   ;SOURCE: jo_we_35.frm
@@ -5606,7 +5606,7 @@ JoWe_22_PHC  {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_22_PHC_1  {; Jo Weber [100424,35] 9/1996 
+JoWe_22_PHC_1  {; Jo Weber [100424,35] 9/1996
                 ; needs passes=1
   z = c = pixel:
   z=(z*z+c)*whitesq+(sqr(z)+p1)*(whitesq==0)
@@ -5615,7 +5615,7 @@ JoWe_22_PHC_1  {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_22_PHC_4  {; Jo Weber [100424,35] 9/1996 
+JoWe_22_PHC_4  {; Jo Weber [100424,35] 9/1996
                 ; needs passes=1
   z = c = pixel
   temp = p2:
@@ -5646,7 +5646,7 @@ JoWe_25 {; Jo Weber [100424,35] 11/1996
 }
 
 
-JoWe_25_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_25_PHC {; Jo Weber [100424,35] 9/1996
              ; needs passes=1
   z = c = pixel, temp=sqr(z):
   a=temp*z+c
@@ -5676,7 +5676,7 @@ JoWe_26_28_PHC {; Jo Weber [100424,35] 11/1996
 }
 
 
-JoWe_26_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_26_PHC {; Jo Weber [100424,35] 9/1996
              ; needs passes=1
   z = c = pixel, temp=sqr(z):
   a=temp*z
@@ -5687,7 +5687,7 @@ JoWe_26_PHC {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_27 {; Jo Weber [100424,35] 9/1996 
+JoWe_27 {; Jo Weber [100424,35] 9/1996
   z = pixel
   bailout=p3:
   z=fn1((p1+sqrt(z))/(p2*z-1))
@@ -5696,7 +5696,7 @@ JoWe_27 {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_27_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_27_PHC {; Jo Weber [100424,35] 9/1996
              ; needs passes=1
    z = pixel:
    a=p1*fn1(z)
@@ -5768,7 +5768,7 @@ JoWe_28_5 {; Jo Weber [100424,35] 11/1996
 }
 
 
-JoWe_28_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_28_PHC {; Jo Weber [100424,35] 9/1996
              ; needs passes=1
    z = pixel:
    a=p1*fn1(z)
@@ -5809,7 +5809,7 @@ JoWe_29 {; Jo Weber [100424,35] 11/1996
 }
 
 
-JoWe_29_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_29_PHC {; Jo Weber [100424,35] 9/1996
              ; needs passes=1
    z = pixel:
    a=p1*fn1(z)
@@ -6935,7 +6935,7 @@ JoWe_What_03m2_PHC {; Jo Weber [100424,35], 10/1996
 }
 
 
-JoWe_What_03m3_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_What_03m3_PHC {; Jo Weber [100424,35] 9/1996
                     ; needs passes=1
   z = c = pixel:
   a1=sqr(z)+c
@@ -6956,7 +6956,7 @@ JoWe_What_03m_PHC {; Jo Weber [100424,35], 9/1996
 }
 
 
-JoWe_What_04_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_What_04_PHC {; Jo Weber [100424,35] 9/1996
                   ; needs passes=1
   z = pixel:
   z=(fn1(z)*z)*whitesq+(1/z*z)*(whitesq==0)+pixel
@@ -6965,7 +6965,7 @@ JoWe_What_04_PHC {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_What_04m {; Jo Weber [100424,35] 9/1996 
+JoWe_What_04m {; Jo Weber [100424,35] 9/1996
   z = pixel:
   a1=1/fn1(z)
   z=a1+pixel
@@ -6973,7 +6973,7 @@ JoWe_What_04m {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_What_04m_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_What_04m_PHC {; Jo Weber [100424,35] 9/1996
                    ; needs passes=1
   z = pixel:
   a1=sqr(z), a2=1/fn2(z)
@@ -6982,7 +6982,7 @@ JoWe_What_04m_PHC {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_What_05m_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_What_05m_PHC {; Jo Weber [100424,35] 9/1996
                    ; needs passes=1
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -6992,7 +6992,7 @@ JoWe_What_05m_PHC {; Jo Weber [100424,35] 9/1996
 }
 
 
-JoWe_What_07m_PHC {; Jo Weber [100424,35] 9/1996 
+JoWe_What_07m_PHC {; Jo Weber [100424,35] 9/1996
                    ; needs passes=1
   z = pixel:
   a1=sqr(z), a2=1/a1
@@ -7012,7 +7012,7 @@ JoWe_what_10_PHC {; Jo Weber [100424,35], 1996  Requires passes=1
 }
 
 
-JoWe_xy_01 {; Jo Weber [100424,35] 9/1996 
+JoWe_xy_01 {; Jo Weber [100424,35] 9/1996
             ; p1 is bailout
   z = pixel, bailout=p1:
   x=real(z), y=imag(z)
@@ -8382,7 +8382,7 @@ JulI3R2 (YAXIS) {
 
 juli^-1 (XAXIS) {;From this Newton is the Julia-Set
   z=pixel:
-  z=((pixel-1)*z^pixel+1)/(pixel*z^(pixel-1)) 
+  z=((pixel-1)*z^pixel+1)/(pixel*z^(pixel-1))
   0.001<=|z^pixel-1|
   ;SOURCE: crazynwt.frm
 }
@@ -8399,7 +8399,7 @@ julia {
 }
 
 
-Julia+LambdaFn=PHC { 
+Julia+LambdaFn=PHC {
   z = pixel:
   r = p1 * fn1(z)
   q = z^2 + p2
@@ -8474,7 +8474,7 @@ Julia_N {; Jm Collard-Richard
          ; rentrer p1=c et p2 la puissance
   z=pixel:
   z=z^p2+p1
-  |z|<=4                   
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -8493,7 +8493,7 @@ JULIA_RI (ORIGIN) {; try p1=.3
 JuliaBar_2 (xaxis) {; Jm Collard-Richard
   z=pixel:
   z=conj(z)^2+p1
-  |z|<=4                   
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
@@ -8501,16 +8501,16 @@ JuliaBar_2 (xaxis) {; Jm Collard-Richard
 JuliaBar_N {; Jm Collard-Richard
   z=pixel:
   z=conj(z)^p2+p1
-  |z|<=4                   
+  |z|<=4
   ;SOURCE: jmcr1.frm
 }
 
 
 JuliaConj (Origin) {; Paul J. Horn - a conjugate Julia (I think)
    ; try real part of p1 = -1.1 and imag part of p1 = .09
-  z = pixel:   
+  z = pixel:
   z = Sqr(conj(z)) + P1
-  |z| <= 4          
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
@@ -8556,9 +8556,9 @@ JuliaP {; Julia form of Prop formula. Is almost Origin symetrical.
 
 
 JuliaPerturb {; z^2 + c + p3*z   try p1 = (-0.0125,0.639)
-  z=pixel:  
+  z=pixel:
   z=z*z + p1 + real(p3)*real(z)+imag(p3)*imag(z)
-  |z| < 10 
+  |z| < 10
   ;SOURCE: internet.frm
 }
 
@@ -8624,16 +8624,16 @@ JulibrotZpwr {; Jim Muth
 
 JuliConj01 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
                      ; Try real(p1) = -.93, imag(p1) = .3, map = blues
-  z = pixel: 
+  z = pixel:
   z = Sqr(z) + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj02 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
                      ; Try real(p1) = .3, imag(p1) = .25, map = neon
-  z = pixel: 
+  z = pixel:
   z = Sqr(Conj(z)) + Conj(P1)
   |z| <= 4
   ;SOURCE: pjhcon.frm
@@ -8642,81 +8642,81 @@ JuliConj02 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
 
 JuliConj03 {; Paul J. Horn - a conjugate Julia (I think)
             ; Try real(p1) = .40, imag(p1) = 0, map = glasses2
-  z = pixel: 
+  z = pixel:
   z = Sqr(conj(z))*conj(z) + P1
-  |z| <= 4 
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj04 {; Paul J. Horn - a conjugate Julia (I think)
-            ;Try real(p1) = .53, imag(p1) = .63, map = volcano 
-  z = pixel: 
+            ;Try real(p1) = .53, imag(p1) = .63, map = volcano
+  z = pixel:
   z = Sqr(z)*z + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj05 {; Paul J. Horn - a conjugate Julia (I think)
             ; Try real(p1) = .6, imag(p1) = .4, map = chroma
-  z = pixel:   
+  z = pixel:
   z = Sqr(conj(z))*conj(z) + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj06 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
                      ; Try real(p1) = .99, imag(p1) = .72
-  z = pixel:   
+  z = pixel:
   z = Sqr(Sqr((conj(z)))) + P1
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj07 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
                      ; Try real(p1) = -.245, imag(p1) = .44, map = royal
-  z = pixel:   
+  z = pixel:
   z = Sqr(Sqr(z)) + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj08 (Origin) {; Paul J. Horn - a conjugate Julia (I think)
                      ; Try real(p1) = -1, imag(p1) = .11, map = blues
-  z = pixel:   
+  z = pixel:
   z = Sqr(Sqr((conj(z)))) + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj09 {; Paul J. Horn - a conjugate Julia (I think)
    ; Try real(p1) = -.677, imag(p1) = .333, real(p2) = 9, map = blues
-  z = pixel:   
+  z = pixel:
   z = (conj(z))^P2 + P1
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj10 {; Paul J. Horn - a conjugate Julia (I think)
    ; Try real(p1) = .1005, imag(p1) = .68, real(p2) = 5, map = chroma
-  z = pixel:   
+  z = pixel:
   z = (z)^P2 + Conj(P1)
-  |z| <= 4           
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
 
 JuliConj11 {; Paul J. Horn - a conjugate Julia (I think)
    ; Try real(p1) = -.37, imag(p1) = .6, real(p2) = 6, map = volcano
-  z = pixel:   
+  z = pixel:
   z = (conj(z))^P2 + Conj(P1)
-  |z| <= 4          
+  |z| <= 4
   ;SOURCE: pjhcon.frm
 }
 
@@ -8731,17 +8731,17 @@ Julike {; Ron Barnett, 1993
 
 
 julioid {
-    ; By PGD, Aug 1997. p2 is Julia parameter. 
+    ; By PGD, Aug 1997. p2 is Julia parameter.
     ; Set p1 small to get normal-
     ; looking Julias with subtle mutations. p1=0 gives a classic J-set.
-    ; p1 more than an amount dependent on p2 gives 
-    ; a noticeably altered J-set. 
+    ; p1 more than an amount dependent on p2 gives
+    ; a noticeably altered J-set.
     ; (p2 near M-set edge very sensitive.) Large values up to 3 give
     ; interesting results. Imaginary numbers warp symmetry.
     ; Replaced variable "e" with "ee" 5/05/99. G. Martin
   c=p2, z=pixel, a=0,  b=0, d=0, ee=0, f=0, g=0, h=0, i=0:
   z=sqr(z)+c+i
-  i=h 
+  i=h
   h=g
   g=f
   f=ee
@@ -8757,7 +8757,7 @@ julioid {
 Julitile1 {; Based on an idea by Ray Girvan
   z = fn1(real(pixel))+p1*fn2(imag(pixel)) :
   z = z * z + p2
-  |z| <=4 
+  |z| <=4
   ;SOURCE: julitile.frm
 }
 
@@ -8766,7 +8766,7 @@ Julitile2XY (XYaxis) {; force x/y symmetry - Jon Horner
   z = (0,0)
   z = fn1(real(pixel))+p1*fn2(imag(pixel)) :
   z = z * z + p2
-  |real(z)| <=10 || |imag(z)| <=10  
+  |real(z)| <=10 || |imag(z)| <=10
   ;SOURCE: julitile.frm
 }
 
@@ -8774,7 +8774,7 @@ Julitile2XY (XYaxis) {; force x/y symmetry - Jon Horner
 Julitile3b {; No sym - Jon Horner
   z = fn1(real(pixel))+p1*fn2(imag(pixel)) :
   z = z * z + p2
-  |real(z)| <=10 || |imag(z)| <=10    
+  |real(z)| <=10 || |imag(z)| <=10
   ;SOURCE: julitile.frm
 }
 
@@ -8782,7 +8782,7 @@ Julitile3b {; No sym - Jon Horner
 Julitile3c {; Jon Horner
   z = fn1(real(pixel))+p1*fn2(imag(pixel)), c = pixel:
   z = z * z + c
-  |real(z)| <=10 || |imag(z)| <=10    
+  |real(z)| <=10 || |imag(z)| <=10
   ;SOURCE: julitile.frm
 }
 
@@ -8792,7 +8792,7 @@ Julitile3d {; Jon Horner
   z = fn1(real(pixel)) + c*fn2(imag(pixel))
   test = p1 + 10:
   z = z * z + p2
-  |real(z)| <=test || |imag(z)| <=test    
+  |real(z)| <=test || |imag(z)| <=test
   ;SOURCE: julitile.frm
 }
 
@@ -8801,7 +8801,7 @@ Julitile3e {; Jon Horner
   z = c = pixel
   z = fn1(real(pixel)) + c*fn2(imag(pixel)):
   z = z ^ p1 + p2
-  |real(z)| <=10   || |imag(z)| <=10      
+  |real(z)| <=10   || |imag(z)| <=10
   ;SOURCE: julitile.frm
 }
 
@@ -8849,7 +8849,7 @@ July-4th {; July-4th (c) Jay Hill 1997
   iter = 0            ; Sylvie Gallet's suggestion
   zc=z = 0, c = pixel ; Mandelbrot initialization.
   t1=(1-sqrt(1-4*c)), t2=4*(c+1)
-  B=sqrt(-4*c-7), t3=8+4*c*(1-B), t4=8+4*c*(1+B) 
+  B=sqrt(-4*c-7), t3=8+4*c*(1-B), t4=8+4*c*(1+B)
   z = 242*(|t1|<=1) + 243*(|t2|<=1) + 244*(|t3|<=1)\
         + 245*(|t4|<=1)
   IF (z>0)            ; for periods 1, 2 and 3
@@ -8861,8 +8861,8 @@ July-4th {; July-4th (c) Jay Hill 1997
   IF (|zc| >= 256)    ; Bailout at 100
     done=-1           ; Set flag to force an exit.
     y=.5*imag(log(zc))/pi
-    IF (y<0) 
-      y=y+1 
+    IF (y<0)
+      y=y+1
     ENDIF
     w=3*y
     z=w - iter - 8    ; Sylvie Gallet's suggestion
@@ -8945,7 +8945,7 @@ Justin5 {; A power series
   z = n = 0
   x = pixel
   c = p1:
-  y = z   
+  y = z
   n = n + 1
   z = z + (n*(x-c)^n)/(4^n*(sqr(n)+1))
   |z-y| >= .000001

@@ -1,6 +1,6 @@
 { ======================================================================== }
 {              File distributed with FRAC'Cetera Vol 2 Iss 8               }
- 
+
 {==========================================================================
  =  Downloaded from CIS 13 May 93 by Jon Horner (FRAC'Cetera) as part of  =
  =  FRXTRA.ZIP      Author: Dan Goldwater       CIS: 71320,675            =

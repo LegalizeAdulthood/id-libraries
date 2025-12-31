@@ -11,14 +11,14 @@
 ; Organization: The National Capital FreeNet
 ; Date: Thu, 4 May 1995 06:45:52 GMT
 ; Lines: 48
-; 
+;
 ; Use this one, not the earlier one. If you don't want to re-download it
 ; change "formulaname=PhonyMandel" to "formulaname=PhonyMandelJ" in your copy.
-; 
-; 
+;
+;
 ; The formula file must be named 'pgd.frm'
 ; Note: this formula can be slow. If you have fractint 19, use floating point.
-; 
+;
 ; --
 ;     .*.  "Clouds are not spheres, mountains are not cones, coastlines are not
 ;  -()  <  circles, and bark is not smooth, nor does lightning travel in a

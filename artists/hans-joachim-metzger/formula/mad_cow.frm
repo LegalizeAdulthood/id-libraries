@@ -9,15 +9,15 @@ Moo {; Requires Periodicity=0
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
- 
-Lister_M {; Might need periodicity=0 
+
+Lister_M {; Might need periodicity=0
   z = c = pixel:
-  r = tan(e/z)/c  
-  z = r * fn1(z) - p1 
+  r = tan(e/z)/c
+  z = r * fn1(z) - p1
   |z| < 4
   ;SOURCE: lister.frm
 }
- 
+
 Moo_2 {; requires periodicity=0
        ; revision 6/10/96 by G. Martin for Orgform of a Vincent Presogna
        ; formula of the same name
@@ -31,25 +31,25 @@ Moo_2 {; requires periodicity=0
   |z| < 4
   ; SOURCE: mad_cow.frm
 }
- 
+
 Moo_3 {; requires periodicity=0
   z = pixel:
   z = z + p1
   r = tan(1/z) * pixel
-  z = fn1(z)/sqrt(r) 
+  z = fn1(z)/sqrt(r)
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
- 
+
 Moo_4 {
   z = pixel:
   z = z + p1
   r = tan(1/z) + pixel
-  z = fn1(z)/sqrt(r) 
+  z = fn1(z)/sqrt(r)
   |z| < 4
   ;SOURCE: mad_cow.frm
 }
- 
+
 Mooey {
    ; revision 6/10/96 by G. Martin for Orgform of a Vincent Presogna
    ; formula of the same name
@@ -62,4 +62,4 @@ Mooey {
   |z| < 4
   ; SOURCE: mad_cow.frm
 }
- 
+

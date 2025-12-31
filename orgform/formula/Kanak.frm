@@ -18,7 +18,7 @@
 	z = sqr(pixel*z)+p1^z
 }
 
-0018 { 
+0018 {
 	z = pixel:
 	z = sqr(pixel*z)+z^p1
 }

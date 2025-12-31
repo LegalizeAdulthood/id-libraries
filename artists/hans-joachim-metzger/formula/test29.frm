@@ -9,7 +9,7 @@ multifrac29 {
   w = sqr(w-x-y-z)
   |w| > (x2+z2)
   }
- 
+
 multifrac29 {
   w = pixel:
   y2 = y*y
@@ -21,4 +21,4 @@ multifrac29 {
   w = sqr(w-x-y-z)
   |w| > (x2+z2)
   }
- 
+

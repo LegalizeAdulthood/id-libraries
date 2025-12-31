@@ -561,7 +561,7 @@ C03-28 {; V.1.1 - earlier versions may be discarded
   Ty=(fn1(y*(y*y-3)))
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
-  |z|<=bailout  
+  |z|<=bailout
 }
 
 
@@ -1269,7 +1269,7 @@ Ca04-28 {; V.1.1 - earlier versions may be discarded
   Ty=(fn1(b*(c*yy*(d*yy-1)+1)))
   x=x-t*Ty, y=y+t*Tx
   z=x+flip(y)
-  |z|<=bailout    
+  |z|<=bailout
 }
 
 
@@ -2712,7 +2712,7 @@ Alpha02-28 {; V.1.1 - earlier versions may be discarded
             ; Dynamic (modified implicit Euler Method, popped)
             ;
             ; Alpha Integral
-            ; Alpha[0] = exp(-z)/z  
+            ; Alpha[0] = exp(-z)/z
             ; Alpha[1] = exp(-z)(1-1/z)/z
             ; Alpha[n+1] = (exp(-z)-(n+1)Alpha[n])/z
             ;

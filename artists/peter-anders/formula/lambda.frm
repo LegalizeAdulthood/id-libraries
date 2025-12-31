@@ -52,7 +52,7 @@ TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
   if (r>=0.5)
     z=c*z*(z-1)
   endif
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 

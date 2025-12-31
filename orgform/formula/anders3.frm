@@ -1,6 +1,6 @@
 Comment {
-; This file is divided into 2 parts : the parameter part right here and 
-; the formula part. The formula part is divided into 5 parts 
+; This file is divided into 2 parts : the parameter part right here and
+; the formula part. The formula part is divided into 5 parts
 ; representing 5 different formula files. If you'll cut this file to separate
 ; the formula files you'll have to remove the ''-prefixes before
 ; the formula entries. Not all formulas are required by the parameters,
@@ -10,7 +10,7 @@ Comment {
 ; Peter Anders
 ; anders@physik.hu-berlin.de
 ;
-; Please send me a mail about your impressions of my fractals 
+; Please send me a mail about your impressions of my fractals
 ; and maybe some improvements.
 ; I would be pleased also about formulas or parameters by anyone else.
 }
@@ -21,7 +21,7 @@ Comment {
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:  ; p2<>1<>-1<>0
   IF (real(z/c)<imag(p1))
-    z = z*(1-z)*c + z*(1+z)*c 
+    z = z*(1-z)*c + z*(1+z)*c
   ELSE
     z = z*(1-z)*c
   ENDIF
@@ -29,11 +29,11 @@ Comment {
   ;SOURCE: anders.frm
 }
 
-2mandel32 {; Peter Anders anders@physik.hu-berlin.de 
+2mandel32 {; Peter Anders anders@physik.hu-berlin.de
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:
   IF (real(z/c)<imag(p1))
-    z = 2*z*z  
+    z = 2*z*z
   ELSE
     z = z*z+c
   ENDIF
@@ -46,7 +46,7 @@ Chaos12 {cx=real(pixel),cy=imag(pixel),xo=0,yo=-cy/2:
          y=2*xo*yo+cy*xo;
          z=x+y*i;
          xo=x;
-         yo=y;           
+         yo=y;
          |fn1(z)|<real(p2) }
 
 Techno1 (xyaxis) {xo=real(p1),yo=imag(p1):
@@ -54,7 +54,7 @@ Techno1 (xyaxis) {xo=real(p1),yo=imag(p1):
                   y=fn2(yo)*imag(pixel);
                   z=x+y*(0,1);
                   xo=x;
-                  yo=y;           
+                  yo=y;
                   |fn1(z)|<real(p2) }
 
 Techno2 (xyaxis) {xo=real(p1),yo=imag(p1):
@@ -62,7 +62,7 @@ Techno2 (xyaxis) {xo=real(p1),yo=imag(p1):
                   y=fn2(yo)+imag(Pixel);
                   z=x+y*(0,1);
                   xo=x;
-                  yo=y;           
+                  yo=y;
                   |fn1(z)|<real(p2) }
 
 MiraSinPar { xo=real(p1),yo=imag(p1),a=real(pixel),b=imag(pixel):
@@ -72,7 +72,7 @@ MiraSinPar { xo=real(p1),yo=imag(p1),a=real(pixel),b=imag(pixel):
              y=-xo+f;
              z=x+y*(0,1);
              xo=x;
-             yo=y;        
+             yo=y;
              |fn1(z)|<real(p2) }
 
 f1 { c=pixel,n=0,z=imag(p1):
@@ -101,7 +101,7 @@ Peter_104M{z=p1,c=pixel:
            abs(z)<=4 }
 
 Peter_3P02 { z=pixel:
-             z=z^z;           
+             z=z^z;
              abs(fn1(z))<real(p2)}
 
 Sierpinsky{ ;As you see, it's not my formula
@@ -185,7 +185,7 @@ Comment  {
                    z=pixel,root=p2,g=p3+1:
                    c=z,
                    z=z-g*(cos(z))^2*(tan(z)-root),
-                   |z-c| >0.000001}   
+                   |z-c| >0.000001}
 1NewTanF(XYAXIS){ ; tan(z)-p2=0
                   z=pixel,root=p2,g=p3+1:
                   c=z,
@@ -195,7 +195,7 @@ Comment  {
                   z=pixel,root=p2,g=p3+1:
                   c=z,
                   z=z+g*(sin(z))^2*(cotan(z)-root),
-                  |z-c| >0.000001}                          
+                  |z-c| >0.000001}
 1NewCotF(XYAXIS){ ; cotan(z)-p2=0
                   z=pixel,root=p2,g=p3+1:
                   c=z,
@@ -205,7 +205,7 @@ Comment  {
           z=pixel,root=p2,g=p3+1:
           c=z,
           z=z-g*z*(log(z)-root),
-          |z-c| >0.000001}                          
+          |z-c| >0.000001}
 1NewLogF{ ; log(z)-p2=0
             z=pixel:
             c=z,
@@ -292,135 +292,135 @@ NewWrongFu2{q=pixel^real(p2)-imag(p2),a=real(q),b=imag(q),r=p1:
               z=z-g*(z^r+c)/(r*z^(r-1))
               |z-d|>p1}
 1PixelPolyIV{z=c=pixel,r=p2+1,g=p3+1:
-             d=z 
+             d=z
              z=z-g*(z^r+c)/(r*z^(r-1))
              |z-d|<p1 }
 3NewPolyR5{z=fn1(fn2(pixel)),r=p1,root=p2+1,g=p3+1:
-           c=z, 
+           c=z,
            z=z-g*((z^r-root)/(r*z^(r-1))),
            |z-c| >0.000001}
 3NewPolyR6{z=fn1(pixel^real(p2)+imag(p2)),r=p1,g=p3+1:
-           c=z, 
+           c=z,
            z=z-g*((z^r-1)/(r*z^(r-1))),
            |z-c| >0.000001}
 2NewSinCos(XYAxis){ ; sin(z)*cos(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(sin(z)*cos(z)-root)/(cos(z)*cos(z)-sin(z)*sin(z))
                     |z-c| >0.000001}
 2NewCosTan(XYAxis){ ; tan(z)*cos(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(tan(z)*cos(z)-root)/(cos(z)*(tan(z)*tan(z)+1)-sin(z)*tan(z))
                     |z-c| >0.000001}
 2NewSinTan(XYAxis){ ; sin(z)*tan(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
      z=z-g*(sin(z)*tan(z)-root)/(cos(z)*tan(z)+sin(z)*(tan(z)*tan(z)+1))
                     |z-c| >0.000001}
 2NewSinSinH(XYaxis){; sinh(z)*sin(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(sinh(z)*sin(z)-root)/(cos(z)*sinh(z)+sin(z)*cosh(z))
                     |z-c| >0.000001}
 2NewSinHCos(XYaxis){ ;sinh(z)*cos(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(sinh(z)*cos(z)-root)/(cos(z)*cosh(z)-sin(z)*sinh(z))
                      |z-c| >0.000001}
 2newSinCosH(XYaxis){ ; sin(z)*cosh(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(sin(z)*cosh(z)-root)/(cos(z)*cosh(z)+sin(z)*sinh(z))
                      |z-c| >0.000001}
 2newCosCosH{; cos(z)*cosh(z)-p2=0
             z=pixel,root=p2,g=p3+1:
-            c=z, 
+            c=z,
     z=z-g*(cos(z)*cosh(z)-root)/(cos(z)*sinh(z)-sin(z)*cosh(z))
             |z-c| >0.000001}
 2newTanSinH(XYaxis){ ; tan(z)*sinh(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(tan(z)*sinh(z)-root)/(sinh(z)*(tan(z)*tan(z)+1)+cosh(z)*tan(z))
                      |z-c| >0.000001}
 2newTanCosH(XYaxis){; cosh(z)*tan(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(cosh(z)*tan(z)-root)/(sinh(z)*tan(z)+cosh(z)*(tan(z)*tan(z)+1))
                     |z-c| >0.000001}
 2newSinTanH(XYaxis){ ; tanh(z)*sin(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(tanh(z)*sin(z)-root)/(cos(z)*tanh(z)+sin(z)*(1-tanh(z)*tanh(z)))
                      |z-c| >0.000001}
 2newCosTanH(XYaxis){; tanh(z)*cos(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(tanh(z)*cos(z)-root)/(cos(z)*(1-tanh(z)*tanh(z))-sin(z)*tanh(z))
                     |z-c| >0.000001}
 2newTanTanH{; tan(z)*tanh(z)-p2=0
             z=pixel,root=p2,g=p3+1:
-            c=z, 
+            c=z,
     z=z-g*(tan(z)*tanh(z)-root)/((tan(z)*tan(z)+1)*tanh(z)+tan(z)*(1-tanh(z)*tanh(z)))
             |z-c| >0.000001}
 2newSinHCosH(XYaxis){ ; sinh(z)*cosh(z)-p2=0
                       z=pixel,root=p2,g=p3+1:
-                      c=z, 
+                      c=z,
     z=z-g*(sinh(z)*cosh(z)-root)/(cosh(z)*cosh(z)+sinh(z)*sinh(z))
                       |z-c| >0.000001}
 2newSinHTanH(XYaxis){; tanh(z)*sinh(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(tanh(z)*sinh(z)-root)/(sinh(z)*(1-tanh(z)*tanh(z))+cosh(z)*tanh(z))
                      |z-c| >0.000001}
 2newCosHTanH(XYaxis){; cosh(z)*tanh(z)-p2=0
                      z=pixel,root=p2,g=p3+1:
-                     c=z, 
+                     c=z,
     z=z-g*(cosh(z)*tanh(z)-root)/(cosh(z)*(1-tanh(z)*tanh(z))+sinh(z)*tanh(z))
                      |z-c| >0.000001}
 2newSin^2(XYAxis){ ; sin(z)*sin(z)-p2=0
                    z=pixel,root=p2,g=p3+1:
-                   c=z, 
+                   c=z,
     z=z-g*(sin(z)*sin(z)-root)/(2*cos(z)*sin(z))
                    |z-c| >0.000001}
 2newCos^2(XYAxis){ ; cos(z)*cos(z)-p2=0
                    z=pixel,root=p2,g=p3+1:
-                   c=z, 
+                   c=z,
     z=z+g*(cos(z)*cos(z)-root)/(2*cos(z)*sin(z))
                    |z-c| >0.000001}
 2newTan^2(XYAxis){; tan(z)*tan(z)-p2=0
                   z=pixel,root=p2,g=p3+1:
-                  c=z, 
+                  c=z,
     z=z-g*(tan(z)*tan(z)-root)*(cos(z)*cos(z)*cos(z))/(2*sin(z))
                   |z-c| >0.000001}
 2newCosH^2(XYaxis){ ; cosh(z)*cosh(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(cosh(z)*cosh(z)-root)/(2*cosh(z)*sinh(z))
                     |z-c| >0.000001}
 2newSinH^2(XYaxis){ ; sinh(z)*sinh(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(sinh(z)*sinh(z)-root)/(2*cosh(z)*sinh(z))
                     |z-c| >0.000001}
 2newTanH^2(XYaxis){ ; tanh(z)*tanh(z)-p2=0
                     z=pixel,root=p2,g=p3+1:
-                    c=z, 
+                    c=z,
     z=z-g*(tanh(z)*tanh(z)-root)*(cosh(z)*cosh(z)*cosh(z))/(2*sinh(z))
                     |z-c| >0.000001}
 2newSin[z^a+b]{ ; sin(z^p1-p2)=0
                 z=pixel,a=p1,b=p2g=p3+1:
-                c=z, 
+                c=z,
                 z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
                 |z-c| >0.000001}
 2newSin[z^c+b]^a{ ; sin((z^p1-p2)^p3)=0
                   z=pixel,a=p3,c=p1,b=p2:
-                  c=z, 
+                  c=z,
     z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
                   |z-c| >0.0001}
 2newSin[tan[z]]{; sin(tan(z)-p2)-p1=0
                 z=pixel,g=p3+1:
-                c=z, 
+                c=z,
     z=z-g*(sin(tan(z)-p2)-p1)/(cos(tan(z)-p2)*(tan(z)*tan(z)+1))
                 |z-c| >0.000001}
 2newSinH/Tan(XYaxis){; (sinh(z)/tan(z))-p2=0
@@ -450,92 +450,92 @@ NewWrongFu2{q=pixel^real(p2)-imag(p2),a=real(q),b=imag(q),r=p1:
                     |z-c| >0.000001}
 2newSin[z^Pixel+b]{; sin(z^pixel+b)=0
                    z=pixel,a=pixel,b=p2,g=p3+1:
-                   c=z, 
+                   c=z,
                    z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
                    |z-c| >0.000001}
 2newSin[z^a+Pixel]{; sin(z^a+pixel)=0
                    z=pixel,a=p1,b=pixel,g=p2+1:
-                   c=z, 
+                   c=z,
                    z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
                    |z-c| >0.000001}
 2newSin[z^Pixel+Pixel](Xaxis){; sin(z^pixel+pixel)=0
                               z=pixel,a=pixel,b=pixel,g=p3+1:
-                              c=z, 
+                              c=z,
                               z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b)),
                               |z-c| >0.000001}
 2newSin[z^c+b]^Pixel{ ; sin((z^p1-p2)^pixel)=0
                       z=pixel,a=pixel,c=p1,b=p2:
-                      c=z, 
+                      c=z,
     z=z-(sin((z^c+b)^a))/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a)),
                       |z-c| >0.0001}
 2newSin[z^pixel+b]^a{; sin((z^pixel-p2)^p1)=0
                      z=pixel,a=p1,c=pixel,b=p2:
-                     c=z, 
+                     c=z,
     z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a)),
                      |z-c| >0.0001}
 2newSin[z^c+pixel]^a{; sin((z^p1+pixel)^p2)=0
                      z=pixel,a=p2,c=p1,b=pixel:
-                     c=z, 
+                     c=z,
     z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a)),
                      |z-c| >0.0001}
 2newSin[z^c+b]^aPixel(Xaxis){ ; sin((z^pixel+pixel)^pixel)=0
                              z=pixel,a=pixel,c=pixel,b=pixel:
-                             c=z, 
+                             c=z,
     z=z-sin((z^c+b)^a)/( c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a)),
                              |z-c| >0.0001}
 2newz^aSin {; z^p1*sin(z)-p2=0
             z=pixel,a=p1,root=p2,g=p3+1:
-            c=z, 
+            c=z,
             z=z-g*(z^a*sin(z)-root)/(a*z^(a-1)*sin(z)+z^a*cos(z)),
             |z-c| >0.000001}
 2newz^aTan {; z^a*tan(z)-p2=0
               z=pixel,a=p1,root=p2,g=p3+1:
-              c=z, 
+              c=z,
     z=z-g*(z^a*tan(z)-root)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
               |z-c|>0.000001}
 2newz^aLog { ; z^a*log(z)-p2=0
              z=pixel,a=p1,root=p2,g=p3+1:
-             c=z, 
+             c=z,
              z=z-g*(z^a*log(z)-root)/(a*z^(a-1)*log(z)+z^a/z)
              |z-c|>0.000001}
 2newSinLog { ; sin(z)*log(z)-p2=0
              z=pixel,root=p2,g=p3+1:
-             c=z, 
+             c=z,
              z=z-g*(sin(z)*log(z)-root)/(sin(z)/z+cos(z)*log(z))
              |z-c| >0.000001}
 2newTanLog {; log(z)*tan(z)-p2=0
             z=pixel,root=p2,g=p3+1:
-            c=z, 
+            c=z,
             z=z-g*(log(z)*tan(z)-root)/(tan(z)/z+log(z)*(tan(z)*tan(z)+1))
             |z-c| >0.000001}
 2newz^pixelSin{ ; z^pixel*sin(z)-p2=0
                 z=pixel,a=pixel,root=p2,g=p3+1:
-                c=z, 
+                c=z,
                 z=z-g*(z^a*sin(z)-root)/(a*z^(a-1)*sin(z)+z^a*cos(z))
                 |z-c| >0.000001}
 2newz^pixelTan{ ; z^pixel*tan(z)-p2=0
                 z=pixel,a=pixel,root=p2,g=p3+1:
-                c=z, 
+                c=z,
                 z=z-g*(z^a*tan(z)-root)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
                 |z-c| >0.000001}
 2newz^pixelLog{; z^pixel*log(z)-p2=0
                 z=pixel,a=pixel,root=p2,g=p3+1:
-                c=z, 
+                c=z,
                 z=z-g*(z^a*log(z)-root)/(a*z^(a-1)*log(z)+z^a/z)
                 |z-c| >0.000001}
 2newz^aSin2{; z^p1*sin(z)-pixel=0
             z=pixel,a=p1,g=p2+1:
-            c=z, 
+            c=z,
             z=z-g*(z^a*sin(z)-pixel)/(a*z^(a-1)*sin(z)+z^a*cos(z))
             |z-c| >0.000001}
 2newz^aTan2{;z^p1*tan(z)-pixel
              z=pixel,a=p1,g=p3+1:
-             c=z, 
+             c=z,
     z=z-g*(z^a*tan(z)-pixel)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
              |z-c| >0.000001}
 2newz^aLog2{; z^p1*log(z)-pixel=0
             z=pixel,a=p1,g=p2+1:
-            c=z, 
+            c=z,
             z=z-g*(z^a*log(z)-pixel)/(a*z^(a-1)*log(z)+z^a/z)
             |z-c| >0.000001}
 2newtonDoublePoly{z=pixel , a=p1 , b=p2 , root=p3+1:
@@ -547,23 +547,23 @@ NewWrongFu2{q=pixel^real(p2)-imag(p2),a=real(q),b=imag(q),r=p1:
                      zz=z
                      z=z-(sin(z)-root1)/cos(z)
                      z=z-(asin(z)-root2)*sqrt(1-z*z)
-                     |z-zz|>0.00000001}    
+                     |z-zz|>0.00000001}
 1NewPolyRVIII{z=pixel , c=fn1(pixel) , a=p1 , b=p2 , d=p3:
               zz=z
               z=z-(z^a-c^b*z^d)/(a*z^(a-1)+c^b*d*z^(d-1))
-              |z-zz|>0.00000001} 
+              |z-zz|>0.00000001}
 2ChangePoly1{z=fn1(pixel),a=real(p1),wechsel=imag(p1)
              root1=p2+1,root2=p3+1:
              zz=z
              x=(z^a-root1)/(a*z^(a-1))
              y=(z^a-root2)/(a*z^(a-1))
-             z=z-((x)*(wechsel<real(z))+(y)*(real(z)<= wechsel)) 
+             z=z-((x)*(wechsel<real(z))+(y)*(real(z)<= wechsel))
              |z-zz|>0.000000001}
 2ChangePoly2{z=fn1(pixel),a=real(p1),wechsel=imag(p1),root1=p2+1,root2=p3+1:
              zz=z
              x=(z^a-root1)/(a*z^(a-1))
              y=(z^a-root2)/(a*z^(a-1))
-             z=z-((x)*(wechsel<|z|)+(y)*(|z|<= wechsel)) 
+             z=z-((x)*(wechsel<|z|)+(y)*(|z|<= wechsel))
              |z-zz|>0.000000001}
 2newtonMandel{z=fn1(pixel),c=fn2(pixel),a=p1:
               zz=z
@@ -591,7 +591,7 @@ NewWrongFu2{q=pixel^real(p2)-imag(p2),a=real(q),b=imag(q),r=p1:
 3NewtonLike4{z=fn1(pixel),a=p1,b=p2+1:
              zz=z
              z=z-((z^a-1)/(a*z^(a-1)))
-             z=fn2(z/|z|)*|z| 
+             z=fn2(z/|z|)*|z|
              |z-zz|>0.00000001}
 2newtonPower1{z=fn1(pixel),c=fn2(pixel),a=p1:
               zz=z
@@ -663,176 +663,176 @@ NewWrongFu2{q=pixel^real(p2)-imag(p2),a=real(q),b=imag(q),r=p1:
 
 ;-------------------------------------- formula file peterman.frm --------------------------------------------
 Peter_1A01(XAXIS) { z=p1, c=pixel:
-                    z=z*z+c;           
+                    z=z*z+c;
                     |fn1(z)|<real(p2) }
 Peter_1A02(XAXIS){z=p1, c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   abs(fn1(z))<real(p2)}
 Peter_1A03(XAXIS){z=p1, c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   |fn1(z)|>real(p2) }
 Peter_1A04(XAXIS){z=p1, c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   abs(fn1(z))>real(p2)}
 Peter_1A05{ z=p1, c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        |fn1(real(z))-fn2(imag(z))|<real(p2) }
 Peter_1A06{ z=p1, c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        abs(fn1(real(z))-fn2(imag(z)))<real(p2) }
 Peter_1A07{ z=p1, c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        |fn1(real(z))-fn2(imag(z))|>real(p2) }
 Peter_1A08{ z=p1, c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        abs(fn1(real(z))-fn2(imag(z)))>real(p2) }
 Peter_1A09(XAXIS) { z=p1, c=pixel:
                     d=z;
-                    z=z*z+c,          
+                    z=z*z+c,
        |fn1(real(z))-fn1(real(d))|>real(p2) }
 Peter_1A10 { z=p1, c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(imag(z))-fn1(imag(d))|>real(p2) }
 Peter_1A11 { z=p1, c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(real(z))-fn1(real(d))|<real(p2) }
 Peter_1A12 { z=p1, c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(imag(z))-fn1(imag(d))|<real(p2) }
 Peter_1A13 (XAXIS) { z=p1, c=pixel:
                      d=z;
-                     z=z*z+c,          
+                     z=z*z+c,
        abs(fn1(real(z))-fn1(real(d)))>real(p2) }
 Peter_1A14 { z=p1, c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        abs(fn1(imag(z))-fn1(imag(d)))>real(p2) }
 Peter_1A15 (XAXIS) { z=p1, c=pixel:
                      d=z;
-                     z=z*z+c,          
+                     z=z*z+c,
        abs(fn1(real(z))-fn1(real(d)))<real(p2) }
 Peter_1A16 { z=p1, c=pixel:
              d=z;
-             z=z*z+c,          
-       abs(fn1(imag(z))-fn1(imag(d)))<real(p2) }          
+             z=z*z+c,
+       abs(fn1(imag(z))-fn1(imag(d)))<real(p2) }
 Peter_2A01(XAXIS){z=c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   |fn1(z)|<real(p2) }
 Peter_2A02(XAXIS){z=c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   abs(fn1(z))<real(p2)}
 Peter_2A03(XAXIS){z=c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   |fn1(z)|>real(p2) }
 Peter_2A04(XAXIS){z=c=pixel:
-                  z=z*z+c;           
+                  z=z*z+c;
                   abs(fn1(z))>real(p2)}
 Peter_2A05{ z=c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        |fn1(real(z))-fn2(imag(z))|<real(p2) }
 Peter_2A06{ z=c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        abs(fn1(real(z))-fn2(imag(z)))<real(p2) }
 Peter_2A07{ z=c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        |fn1(real(z))-fn2(imag(z))|>real(p2) }
 Peter_2A08{ z=c=pixel:
-            z=z*z+c;           
+            z=z*z+c;
        abs(fn1(real(z))-fn2(imag(z)))>real(p2) }
 Peter_2A09(XAXIS){z=c=pixel:
                   d=z;
-                  z=z*z+c,          
+                  z=z*z+c,
        |fn1(real(z))-fn1(real(d))|>real(p2) }
 Peter_2A10 { z=c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(imag(z))-fn1(imag(d))|>real(p2) }
 Peter_2A11 { z=c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(real(z))-fn1(real(d))|<real(p2) }
 Peter_2A12 { z=c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        |fn1(imag(z))-fn1(imag(d))|<real(p2) }
 Peter_2A13(XAXIS){z=c=pixel:
                   d=z;
-                  z=z*z+c,          
+                  z=z*z+c,
        abs(fn1(real(z))-fn1(real(d)))>real(p2) }
 Peter_2A14 { z=c=pixel:
              d=z;
-             z=z*z+c,          
+             z=z*z+c,
        abs(fn1(imag(z))-fn1(imag(d)))>real(p2) }
 Peter_2A15(XAXIS){z=c=pixel:
                   d=z;
-                  z=z*z+c,          
+                  z=z*z+c,
        abs(fn1(real(z))-fn1(real(d)))<real(p2) }
 Peter_2A16 { z=c=pixel:
              d=z;
-             z=z*z+c,          
-       abs(fn1(imag(z))-fn1(imag(d)))<real(p2) }                          
+             z=z*z+c,
+       abs(fn1(imag(z))-fn1(imag(d)))<real(p2) }
 Peter_3A01 { z=p1, c=pixel:
-             z=z*z+c;           
+             z=z*z+c;
              |real(z)|<100  || |imag(z)|<100 }
 Peter_3A02 { z=p1, c=pixel:
-             z=z*z+c;           
+             z=z*z+c;
        abs(real(z))<100  ||  abs(imag(z))<100 }
 Peter_3A03 { z=p1, c=pixel:
-             z=z*z+c;           
+             z=z*z+c;
        |real(z)|<100 && |imag(z)|<100 }
 Peter_3A04 { z=p1, c=pixel:
-             z=z*z+c;           
+             z=z*z+c;
        abs(real(z))<100 && abs(imag(z))<100 }
 Peter_3A05{ z=p1, c=pixel:
-            z=-z*z+c;           
+            z=-z*z+c;
             |fn1(z)|<real(p2) }
 Peter_3A06{ z=p1, c=pixel:
-            z=z*z-c;           
+            z=z*z-c;
             |fn1(z)|<real(p2) }
 Peter_3A07{ z=p1, c=pixel:
-            z=(z+c)*(z+c);           
+            z=(z+c)*(z+c);
             |fn1(z)|<real(p2) }
 Peter_3A08{ z=p1, c=pixel:
-            z=(z-c)*(z+c);           
+            z=(z-c)*(z+c);
             |fn1(z)|<real(p2) }
 Peter_3A09{ z=p1, c=pixel:
-            z=(z-c)*(z-c);           
+            z=(z-c)*(z-c);
             |fn1(z)|<real(p2) }
 AbsMandel{xo=0,yo=0,cx=real(pixel),cy=imag(pixel):
           x=xo*xo-yo*yo+cx;
           y=2*xo*yo+cy;
           xo=abs(x);
-          yo=abs(y);        
+          yo=abs(y);
           |fn1(x)|<real(p2) &&  |fn1(y)|<real(p2)}
 AbsJulia(origin){cx=real(p1),cy=imag(p1),xo=real(pixel),yo=imag(pixel):
                  x=xo*xo-yo*yo+cx;
                  y=2*xo*yo+cy;
                  xo=abs(x);
-                 yo=abs(y);        
+                 yo=abs(y);
                  |fn1(x)|<real(p2) &&  |fn1(y)|<real(p2)}
 Mandellike1(yaxis){xo=real(p1),yo=imag(p1):
                    x=(xo*xo-yo*yo)*(0,1)+real(pixel);
                    y=2*xo*yo*(0,1)+imag(pixel);
                    z=x+flip(y);
                    xo=x;
-                   yo=y;           
+                   yo=y;
                    |fn1(z)|<real(p2) }
 Mandellike2(xaxis){xo=real(p1),yo=imag(p1):
                    x=xo*xo-yo*yo+real(pixel);
                    y=2*xo*yo+imag(pixel);
                    z=x+flip(y)
                    xo=y;
-                   yo=x;           
+                   yo=x;
                    |fn1(z)|<real(p2) }
 Mandellike3 {z=p1,c=pixel:
              z=fn2(z)+c;
              |fn1(z)|<real(p2) }
 Mandellike4 {z=p1,c=pixel:
              z=fn2(z)*c;
-             |fn1(z)|<real(p2) }        
+             |fn1(z)|<real(p2) }
 Mandellike5 {z=p1,c=pixel:
              z=fn2(z)*c+c;
              |fn1(z)|<real(p2) }
@@ -852,13 +852,13 @@ AbsMandel2 { xo=0,yo=0,cx=real(pixel),cy=imag(pixel):
              x=xo*xo-yo*yo+cx;
              y=2*xo*yo+cy;
              xo=abs(x);
-             yo=abs(y);        
+             yo=abs(y);
              |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)}
 AbsJulia2(origin){cx=real(p1),cy=imag(p1),xo=real(pixel),yo=imag(pixel):
                   x=xo*xo-yo*yo+cx;
                   y=2*xo*yo+cy;
                   xo=abs(x);
-                  yo=abs(y);        
+                  yo=abs(y);
                   |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)}
 AbsMandel3 { xo=0,yo=0,cx=real(pixel),cy=imag(pixel):
              x=xo*xo-yo*yo+cx;
@@ -876,13 +876,13 @@ Mandellike10 { xo=0,yo=0,cx=real(pixel),cy=imag(pixel):
                x=xo*xo-yo*yo+cx;
                y=2*xo*yo+cy;
                xo=fn2(x);
-               yo=fn2(y);        
+               yo=fn2(y);
                |fn1(x)|<real(p2)  ||  |fn1(y)|<real(p2)}
 Mandellike11 { xo=0,yo=0,cx=real(pixel),cy=imag(pixel):
                x=xo*xo-yo*yo+cx;
                y=2*xo*yo+cy;
                xo=x+p1;
-               yo=y+p1;        
+               yo=y+p1;
                abs(fn1(x*x+y*y))<real(p2)}
 Mandellike12 { z=(0,0),c=pixel:
                z=z*z+c;
@@ -890,7 +890,7 @@ Mandellike12 { z=(0,0),c=pixel:
                abs(fn1(z))<real(p2)}
 Mandellike13{ z=fn1(pixel) , c=fn2(pixel) , a=p1 , b=p2 , d=p3:
               z=z^a+c^b*z^d
-              z=fn3(z) 
+              z=fn3(z)
               |z|<100}
 
 ;------------------------------------- formula file lambda.frm ----------------------------------------
@@ -947,7 +947,7 @@ TwoLogistic {; Peter Anders (anders@physik.hu-berlin.de)
   if (r>=0.5)
     z=c*z*(z-1)
   endif
-  |fn1(z)|<real(p2) 
+  |fn1(z)|<real(p2)
   ;SOURCE: lambda.frm
 }
 
@@ -1093,7 +1093,7 @@ Peter_1HalTan  { z=pixel,g=p2+1:
                             f2=1/(cos(z))^2
                             f3=2*sin(z)/(cos(z))^3
                             z=z-g*f1/(f2-f3*f1/(2*f2))
-                            |z-c| >0.000001}   
+                            |z-c| >0.000001}
 Peter_1HalTanF {z=pixel,g=p2+1:
                         c=z,
                         f1=tan(z)
@@ -1107,7 +1107,7 @@ Peter_1HalCot  { z=pixel,g=p2+1:
                         f2=-1/(sin(z))^2
                         f3=2*cos(z)/(sin(z))^3
                         z=z-g*f1/(f2-f3*f1/(2*f2))
-                        |z-c| >0.000001}                          
+                        |z-c| >0.000001}
 Peter_1HalCotF {z=pixel,g=p2+1:
                        c=z,
                        f1=cotan(z)
@@ -1121,7 +1121,7 @@ Peter_1HalLog{ z=pixel,g=p2+1:
                f2=1/z
                f3=-1/(z*z)
                z=z-g*f1/(f2-f3*f1/(2*f2))
-               |z-c| >0.000001}                          
+               |z-c| >0.000001}
 Peter_1HalLogF{ z=pixel,g=p2+1:
                 c=z,
                 f1=log(z)

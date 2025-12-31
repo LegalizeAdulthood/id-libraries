@@ -97,7 +97,7 @@ MandelbrotN {
   ; Jim Muth
   b=p1, z=p2, c=p3+pixel:
   z=z^(b)+c,
-  |z| <= 16 
+  |z| <= 16
 }
 
 MandNewt06 {
@@ -106,7 +106,7 @@ MandNewt06 {
   a=z^3+(c-p2)*z-c
   b=p3*z^2+c-1
   z=z-1*a/b
-  0.000000000000000000000000000001 <= |a| 
+  0.000000000000000000000000000001 <= |a|
 }
 
 MandNewt04 {
@@ -115,7 +115,7 @@ MandNewt04 {
   a=z^3+(c-1)*z-c
   b=p1*z^2+c-1
   z=z-p2*a/b
-  p3 <= |a| 
+  p3 <= |a|
 }
 
 multimin-XY-ZW-new {
@@ -126,14 +126,14 @@ multimin-XY-ZW-new {
   z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p3,
   c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p4:
   z=(-z)^(p2)+c,
-  |z| <= 36 
+  |z| <= 36
 }
 
 MandelbrotCube {
   ; Jim Muth  real(c),imag(c)
   z=p1, c=pixel+p2:
   z=z*(sqr(z))+c,
-  |z| <= 16 
+  |z| <= 16
 }
 
 MandelbrotMix2way {
@@ -141,7 +141,7 @@ MandelbrotMix2way {
   z=0,0, c=pixel,
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2):
   z=(a*(z^b))+(d*(z^f))+c,
-  |z| <= 100 
+  |z| <= 100
 }
 
 MandNewt12 {
@@ -151,7 +151,7 @@ MandNewt12 {
   h=z^a+(g-1)*(z-b)
   j=c*z^d+g
   z=z-e*h/(f*j),
-  .0000000000000000000000000000005 <= |h| 
+  .0000000000000000000000000000005 <= |h|
 }
 
 MandNewt01 {
@@ -160,7 +160,7 @@ MandNewt01 {
   a=z^3+(c-1)*z-(p1*c)
   b=3*z^2+(p2*c-1)
   z=z-p3*a/b
-  .00005 <= |a| 
+  .00005 <= |a|
 }
 
 OblateVB {
@@ -169,14 +169,14 @@ OblateVB {
   c=flip(imag(pixel))+imag(p1),
   a=sqr(p2):
   z=sqr(z)+c,
-  |z| <= a 
+  |z| <= a
 }
 
 SnakeTree {
   ; Jim Muth
   z=pixel:
   z=(-z)^1.095+3.4
-  |z| <= 100 
+  |z| <= 100
 }
 
 SliceJulibrot {
@@ -188,7 +188,7 @@ SliceJulibrot {
   q=u*cg*sd+v*(ca*cb*cd-ca*sb*sg*sd), r=u*sg+v*ca*sb*cg,
   s=v*sin(a), c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 SliceJulibrot2 {
@@ -205,7 +205,7 @@ SliceJulibrot2 {
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 Rectangular {
@@ -213,7 +213,7 @@ Rectangular {
   z=flip(real(pixel))+p1,
   c=flip(imag(pixel))+p2:
   z=sqr(z)+c,
-  |z| <= 16 
+  |z| <= 16
 }
 
 SliceJulibrot3 {
@@ -230,7 +230,7 @@ SliceJulibrot3 {
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+sqrt(p4):
   z=sqr(z)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 SliceJulibrot4 {
@@ -247,7 +247,7 @@ SliceJulibrot4 {
   r=u*sg+v*ca*sb*cg, s=v*sin(a),
   c=p+flip(q)+p3, z=r+flip(s)+p4:
   z=z^(p5)+c
-  |z| <= 9 
+  |z| <= 9
 }
 
 MandelbrotBC2 {
@@ -262,7 +262,7 @@ MandelbrotBC2 {
       Z=Z+flip(2*PI)
     ENDIF
     Z=exp(e*(Z+flip(q)))+C
-  |Z| < a 
+  |Z| < a
 }
 
 MandelbrotMix5way {
@@ -271,5 +271,5 @@ MandelbrotMix5way {
   a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
   g=real(p3), h=imag(p3), j=real(p4), k=imag(p4):
   z=(a*(z^b))+(d*(z^f))+(g*(z^h))+(j*(z^k))+c,
-  |z| <= 100 
+  |z| <= 100
 }

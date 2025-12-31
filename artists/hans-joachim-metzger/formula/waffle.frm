@@ -12,7 +12,7 @@ Waffle     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z = sqr(z) +c,
   LastSqr <=real(P1)
 }
- 
+
 Waffle     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
              ; Mon, 26 Apr 2004 12:13:54
              ; Very productive for icons. Ex-president Clinton
@@ -27,4 +27,4 @@ Waffle     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z = sqr(z) +c,
   LastSqr <=real(P1)
 }
- 
+

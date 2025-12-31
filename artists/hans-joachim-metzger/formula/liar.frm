@@ -9,7 +9,7 @@ Liar4 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 Liar3 {; by Chuck Ebbert.
    ; X: X is true to P1 times the extent that Y is true
    ; Y: Y is true to the extent that X is false.
@@ -22,7 +22,7 @@ Liar3 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 F'Liar1 {; Generalization by Jon Horner of Chuck Ebbert formula.
          ; X: X is as true as Y
          ; Y: Y is as true as X is false
@@ -43,7 +43,7 @@ Liar1 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: fractint.frm
 }
- 
+
 Liar2 {; by Chuck Ebbert.
        ; Same as Liar1 but use sequential reasoning, calculating
        ; new y value using new x value.
@@ -55,13 +55,13 @@ Liar2 {; by Chuck Ebbert.
   |z| <= 1
   ;SOURCE: liar.frm
 }
- 
+
 F'Liar2 {; Generalization by Jo. Horner of Chuck Ebert Formula
          ; x(n+1) = 1 - abs(y(n)-x(n! )
          ; y(n+1) = 1 - abs((1-x(n+1) )-y(n) )
   z = fn1(pixel):
   x = 1 - abs(imag(z)-real(z))
   z = flip(1 - abs(1-real(x)-imag(z) ) ) + real(x)
-  |z| <= p1 
+  |z| <= p1
   ;SOURCE: form2.frm
 }

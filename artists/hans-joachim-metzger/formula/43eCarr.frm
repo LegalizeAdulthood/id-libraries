@@ -17,7 +17,7 @@ Carr3278 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3279 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -37,7 +37,7 @@ Carr3279 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3280 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -57,7 +57,7 @@ Carr3280 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3281 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -79,7 +79,7 @@ Carr3281 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3282 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -101,7 +101,7 @@ Carr3282 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3283 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -123,14 +123,14 @@ Carr3283 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3284 (YAXIS) {; Modified Sylvie Gallet frm.1996
 		  ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   d=sqrt(1/newpixel-cosxx(1/newpixel))
-  b6=conj(0.01/newpixel), b7=flip(0.01/newpixel) 
+  b6=conj(0.01/newpixel), b7=flip(0.01/newpixel)
   b8=sin(0.003/newpixel-flip(0.003/newpixel))
   b4=abs(conj(conj(newpixel^2)))*conj(flip(newpixel^3))\
       -conj(0.01/newpixel-flip(0.001/newpixel))
@@ -148,7 +148,7 @@ Carr3284 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3285 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -171,7 +171,7 @@ Carr3285 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3286 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -181,7 +181,7 @@ Carr3286 (YAXIS) {; Modified Sylvie Gallet frm.1996
   m3=cabs(newpixel)*conj(conj(newpixel)), m4=(-0.7456,-0.132)
   b4=m4/2-b8-0.25/m3, b8=sin(0.003/newpixel-flip(0.003/newpixel))
   b9=conj(0.01/b4*b8^2-flip(0.01/b4*b8))
-  b5=(0.75*flip(m3)^2-conj(0.01/newpixel))-b7-b8+b9+0.35 
+  b5=(0.75*flip(m3)^2-conj(0.01/newpixel))-b7-b8+b9+0.35
   c=whitesq*b4^0.75-(whitesq==0)*b4
   z=whitesq*b5-(whitesq==0)*b5^0.75
   c1=1.5*z^1.2, c2=2.25*z, c3=3.375*z, c4=5.0625*z
@@ -194,7 +194,7 @@ Carr3286 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3287 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -216,7 +216,7 @@ Carr3287 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3288 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -239,7 +239,7 @@ Carr3288 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3289 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -262,7 +262,7 @@ Carr3289 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3290 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -287,7 +287,7 @@ Carr3290 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3291 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -310,7 +310,7 @@ Carr3291 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3292 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -333,7 +333,7 @@ Carr3292 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3293 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -356,8 +356,8 @@ Carr3293 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
- 
+
+
 Carr3295 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -378,7 +378,7 @@ Carr3295 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3296 (YAXIS) {; Modified Sylvie Gallet frm.1996
 		  ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -399,7 +399,7 @@ Carr3296 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3297 (XAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -420,7 +420,7 @@ Carr3297 (XAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3298 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -441,7 +441,7 @@ Carr3298 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3299 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -463,7 +463,7 @@ Carr3299 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3300 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -485,7 +485,7 @@ Carr3300 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3301 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -507,7 +507,7 @@ Carr3301 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3302 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -529,7 +529,7 @@ Carr3302 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3303 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -551,7 +551,7 @@ Carr3303 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3304 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -573,7 +573,7 @@ Carr3304 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3305 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -595,7 +595,7 @@ Carr3305 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3306 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -618,7 +618,7 @@ Carr3306 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3307 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -640,7 +640,7 @@ Carr3307 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3308 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -662,7 +662,7 @@ Carr3308 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3309 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -684,7 +684,7 @@ Carr3309 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3311 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -707,7 +707,7 @@ Carr3311 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3312 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -730,7 +730,7 @@ Carr3312 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3313 (YAXIS) {; Modified Sylvie Gallet frm.1996
 		  ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -755,7 +755,7 @@ Carr3313 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 97msg.frm
 }
- 
+
 Carr3314 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -777,7 +777,7 @@ Carr3314 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3315 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -799,7 +799,7 @@ Carr3315 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3310 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -823,7 +823,7 @@ Carr3310 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+
 Carr3294 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; passes=1 needs to be used with this PHC formula
                   ; Some optimizations made by G. Martin
@@ -846,4 +846,4 @@ Carr3294 (YAXIS) {; Modified Sylvie Gallet frm.1996
   |z|<=bailout
   ;SOURCE: 43ecarr.frm
 }
- 
+

@@ -70,7 +70,7 @@
 }
 
 
-004 { 
+004 {
   z = pixel:
   z = pixel + fn1(z)  + p1
   |z| <=100
@@ -110,7 +110,7 @@
 }
 
 
-009 { 
+009 {
   z = pixel:
   z = (Z+PIXEL) + C +p1
   Z = fn1(Z)
@@ -129,7 +129,7 @@
 
 010 {
   Z = PIXEL:
-  Z = Z*Z*Z 
+  Z = Z*Z*Z
   Z = fn1(z) + fn2(c) + p1
   ;SOURCE: damion.frm
 }
@@ -143,7 +143,7 @@
 }
 
 
-012 { 
+012 {
   z = pixel:
   z = Sin(cos(z)) * Tan(cotan(z)) + p1
   z = pixel + z
@@ -170,7 +170,7 @@
 
 015 (XYAXIS) {
   z = pixel:
-  z = fn1(z+c) * (z-c) + atan(z) 
+  z = fn1(z+c) * (z-c) + atan(z)
   z = Cos(z) + pixel  + p1
   |z| <=128
   ;SOURCE: damion.frm
@@ -179,7 +179,7 @@
 
 016 {
   z = pixel:
-  z = sin(z+c) * (z-c) + fn1(z) 
+  z = sin(z+c) * (z-c) + fn1(z)
   z = cos(z) + p1
   ;SOURCE: damion.frm
 }
@@ -332,7 +332,7 @@
 }
 
 
-030 { 
+030 {
   z = pixel:
   a = pixel + a <= z
   b = pixel + a >= Sqrt(z)
@@ -375,7 +375,7 @@
 034 {
   z = pixel:
   a = fn1(z) + c
-  b = z*z + pixel  
+  b = z*z + pixel
   z = sin((a + z) / (b + z)) + p1
   ;SOURCE: damion.frm
 }
@@ -488,7 +488,7 @@
 
 
 051597-002a {; Linda Allison May 15, 1997
-             ; stars modified by David Shanholtzer 
+             ; stars modified by David Shanholtzer
   z=0
   c=log(sqr(sqr(pixel))*pixel)*0.4:
   z2=fn1(z)+c
@@ -612,7 +612,7 @@
 }
 
 
-1 { 
+1 {
   z=c=1/pixel, sinc=sin(c):
   z=sqr(z*z) + c
   z=sin(z*z)*(z+pixel) + sinc
@@ -647,7 +647,7 @@
 }
 
 
-100296-005 {; Linda Allison 
+100296-005 {; Linda Allison
             ; note by LStC: This formula used for "Egyptian" images
   z = pixel:
   z = (fn1(1/z ^ p3))/p1 + (fn2(1/z ^ p3))/p2
@@ -708,7 +708,7 @@
   z = p1/pixel, c = fn1(z):
   z = (z*z) + c
   z = z*z/c
-  z <= p2 
+  z <= p2
   ;SOURCE: kg1.frm
 }
 
@@ -724,7 +724,7 @@
 104 {; These formulafiles are from Karl Geigl 100327,156.
   z = p1/pixel, x = fn1(z):
   z = (z*z) + x
-  z = z*p2/x 
+  z = z*p2/x
   z <= 4
   ;SOURCE: kg1.frm
 }
@@ -736,7 +736,7 @@
   z = pixel:
   z = fn1 (p1/fn2(z))
     ; fn1 < p2  [ORIGINAL BAILOUT LINE]
-  z < p2 
+  z < p2
   ;SOURCE: kg1.frm
 }
 
@@ -887,7 +887,7 @@
 116 {; These formulafiles are from Karl Geigl 100327,156.
   z = pixel:
   z = fn1(z) + z^p1 + c
-  z <= p2 
+  z <= p2
   ;SOURCE: kg1.frm
 }
 
@@ -1128,14 +1128,14 @@
 13h {; Modified Sylvie Gallet frm.
      ; Added variable "newpixel". G. Martin, 6/27/99
   newpixel=-flip(-abs(pixel*(fn1(sqrt(pixel*1)))))
-  z = newpixel 
-  c = fn2(sqrt(flip(pixel^z))) * (0.0803645521966,0.01745329252) 
+  z = newpixel
+  c = fn2(sqrt(flip(pixel^z))) * (0.0803645521966,0.01745329252)
   d1=(0.00099475/-newpixel)+(flip(0.00010/newpixel))
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/newpixel))* (whitesq == 0)\ 
-      + (fn4(atanh(abs(sqr(newpixel))))) * whitesq 
+  z=(z*(1-test))+flip(imag(0.03750/newpixel))* (whitesq == 0)\
+      + (fn4(atanh(abs(sqr(newpixel))))) * whitesq
   c=c*(1-test)+d1+test*(p2*c)
   z=fn3(z^2)+(c/p3)-0.1/newpixel
   iter=iter+1
@@ -1152,7 +1152,7 @@
   iter=0, nextzoom=iterspace=real(p1):
   test=(iter==nextzoom)
   nextzoom=nextzoom+test*iterspace
-  z=(z*(1-test))+flip(imag(0.03750/newpixel)) * (z^2+c-0.1/newpixel) 
+  z=(z*(1-test))+flip(imag(0.03750/newpixel)) * (z^2+c-0.1/newpixel)
   c=c*(1-test)+d1+test*(-flip(abs(p2*c+p3)))
   z=z^2+c-0.1/newpixel
   iter=iter+1
@@ -1202,12 +1202,12 @@
   z=pixel, root=p2, g=p3+1:
   c=z
   z=z+g*(cos(z)-root)/sin(z)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: peternew.frm
 }
 
 
-1NewCot (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+1NewCot (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                   ; cotan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
@@ -1217,12 +1217,12 @@
 }
 
 
-1NewCotF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+1NewCotF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                    ; cotan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
   z=z+g*(sin(z))^2*(cotan(z)-root)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: peternew.frm
 }
 
@@ -1237,12 +1237,12 @@
 }
 
 
-1NewLogF {; Peter Anders anders@physik.hu-berlin.de 
+1NewLogF {; Peter Anders anders@physik.hu-berlin.de
           ; log(z)-p2=0
   z=pixel:
   c=z
   z=z-g*z*(log(z)-root)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: peternew.frm
 }
 
@@ -1289,7 +1289,7 @@
 }
 
 
-1NewPolyRIII (XAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+1NewPolyRIII (XAXIS) {; Peter Anders anders@physik.hu-berlin.de
   z=pixel, a=p1, b=p2, g=p3+1:
   c=z
   z=z-g*(((z^a)-(z^b))/((a*z^(a-1))-(b*z^(b-1))))
@@ -1343,7 +1343,7 @@
 }
 
 
-1NewSin (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+1NewSin (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                   ; sin(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
@@ -1353,17 +1353,17 @@
 }
 
 
-1NewSinF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de  
+1NewSinF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                    ; sin(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
   z=z-g*(sin(z)-root)/cos(z)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: peternew.frm
 }
 
 
-1NewTan (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de  
+1NewTan (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                   ; tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
@@ -1373,12 +1373,12 @@
 }
 
 
-1NewTanF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de 
+1NewTanF (XYAXIS) {; Peter Anders anders@physik.hu-berlin.de
                    ; tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
   c=z
   z=z-g*(cos(z))^2*(tan(z)-root)
-  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001 
+  |real(z)-imag(c)| >0.000000001 || |imag(z)-imag(c)| >0.000000001
   ;SOURCE: peternew.frm
 }
 
@@ -1391,7 +1391,7 @@
 }
 
 
-1PixelPolyII {; Peter Anders anders@physik.hu-berlin.de 
+1PixelPolyII {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel, r=p2+1, g=p3+1:
   z=z-g*(z^r+c)/(r*z^(r-1))
   |z|<p1
@@ -1410,7 +1410,7 @@
 
 1PixelPolyIV {; Peter Anders anders@physik.hu-berlin.de
   z=c=pixel, r=p2+1, g=p3+1:
-  d=z 
+  d=z
   z=z-g*(z^r+c)/(r*z^(r-1))
   |z-d|<p1
   ;SOURCE: peternew.frm
@@ -1450,10 +1450,10 @@
   z0 = p1, h = real(p2), w = imag(p2), b = real(p3)
   x0 = real(z0), y0 = imag(z0), w2 = w/2
   z1 = z0 + flip(b), r1 = w2 - b, zc = z0 + w2 + flip(h-w2)
-  z1c = z1 - zc 
+  z1c = z1 - zc
   theta = acos (r1/cabs(z1c)) + atan (imag(z1c) / real(z1c))
   xc = real(zc), yc = imag(zc), tanth = tan(theta)
-  z = pixel, x = real(z), y = imag(z) 
+  z = pixel, x = real(z), y = imag(z)
   exp1 = (x0-x)/tanth + y0 + b, exp2 = (x-xc)*tanth + yc
   chr21 = ( abs(cabs(z-zc)-(w-b)/2) < b/2 ) &&  \
           ( y > y0+h-w2 || y > exp2 ) \
@@ -1620,7 +1620,7 @@
 
 214 {; These formulafiles are from Karl Geigl 100327,156.
   z = (1/pixel)^3:
-  z = (z+22/7) * (z-22/7) 
+  z = (z+22/7) * (z-22/7)
   z < 5
   ;SOURCE: kg2.frm
 }
@@ -1628,7 +1628,7 @@
 
 215 {; These formulafiles are from Karl Geigl 100327,156.
   z = (1/pixel)^3:
-  z = (z+22/7) / (z-22/7) 
+  z = (z+22/7) / (z-22/7)
   z < 5
   ;SOURCE: kg2.frm
 }
@@ -1636,7 +1636,7 @@
 
 216 {; These formulafiles are from Karl Geigl 100327,156.
   z = pixel:
-  z = z * (1-z) * c 
+  z = z * (1-z) * c
   z < 2
   ;SOURCE: kg2.frm
 }
@@ -1644,7 +1644,7 @@
 
 217 {; These formulafiles are from Karl Geigl 100327,156.
   z = pixel:
-  z = z * (1+z) * c 
+  z = z * (1+z) * c
   z < 3
   ;SOURCE: kg2.frm
 }
@@ -1656,7 +1656,7 @@
   zz=z
   x=(z^a-root1)/(a*z^(a-1))
   y=(z^a-root2)/(a*z^(a-1))
-  z=z-((x)*(wechsel<real(z))+(y)*(real(z)<= wechsel)) 
+  z=z-((x)*(wechsel<real(z))+(y)*(real(z)<= wechsel))
   |z-zz|>0.000000001
   ;SOURCE: peternew.frm
 }
@@ -1668,7 +1668,7 @@
   zz=z
   x=(z^a-root1)/(a*z^(a-1))
   y=(z^a-root2)/(a*z^(a-1))
-  z=z-((x)*(wechsel<|z|)+(y)*(|z|<= wechsel)) 
+  z=z-((x)*(wechsel<|z|)+(y)*(|z|<= wechsel))
   |z-zz|>0.000000001
   ;SOURCE: peternew.frm
 }
@@ -1721,10 +1721,10 @@
 }
 
 
-2jRatz-fn {; try fn=ident , p1 < 1 
-  z = Pixel :  
-  z = (z * z * fn1(z) * p1 + p2 )/(z * fn2(z) * p1 + p2 ) 
-  | z | <= 10 
+2jRatz-fn {; try fn=ident , p1 < 1
+  z = Pixel :
+  z = (z * z * fn1(z) * p1 + p2 )/(z * fn2(z) * p1 + p2 )
+  | z | <= 10
   ;SOURCE: fn-ratz.frm
 }
 
@@ -1733,7 +1733,7 @@
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:  ; p2<>1<>-1<>0
   IF (real(z/c)<imag(p1))
-    z = z*(1-z)*c + z*(1+z)*c 
+    z = z*(1-z)*c + z*(1+z)*c
   ELSE
     z = z*(1-z)*c
   ENDIF
@@ -1742,11 +1742,11 @@
 }
 
 
-2mandel32 {; Peter Anders anders@physik.hu-berlin.de 
+2mandel32 {; Peter Anders anders@physik.hu-berlin.de
            ; Edited for Fractint v. 20 by George Martin, 10/98
   z=p2, c=pixel:
   IF (real(z/c)<imag(p1))
-    z = 2*z*z  
+    z = 2*z*z
   ELSE
     z = z*z+c
   ENDIF
@@ -1755,10 +1755,10 @@
 }
 
 
-2newCos^2 (XYAxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newCos^2 (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                     ; cos(z)*cos(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z+g*(cos(z)*cos(z)-root)/(2*cos(z)*sin(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1768,7 +1768,7 @@
 2newCosCosH {; Peter Anders anders@physik.hu-berlin.de
              ; cos(z)*cosh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(cos(z)*cosh(z)-root)/(cos(z)*sinh(z)-sin(z)*cosh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1788,10 +1788,10 @@
 }
 
 
-2newCosH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newCosH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; cosh(z)*cosh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(cosh(z)*cosh(z)-root)/(2*cosh(z)*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1801,7 +1801,7 @@
 2newCosHTanH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                        ; cosh(z)*tanh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(cosh(z)*tanh(z)-root)/(cosh(z)*(1-tanh(z)*tanh(z))\
     +sinh(z)*tanh(z))
   |z-c| >0.000001
@@ -1809,10 +1809,10 @@
 }
 
 
-2NewCosTan (XYAxis) {; Peter Anders anders@physik.hu-berlin.de 
+2NewCosTan (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; tan(z)*cos(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tan(z)*cos(z)-root)/(cos(z)*(tan(z)*tan(z)+1)-sin(z)*tan(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1822,7 +1822,7 @@
 2newCosTanH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; tanh(z)*cos(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tanh(z)*cos(z)-root)/(cos(z)*(1-tanh(z)*tanh(z))-sin(z)*tanh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1874,17 +1874,17 @@
 2newSin[tan[z]] {; Peter Anders anders@physik.hu-berlin.de
                  ; sin(tan(z)-p2)-p1=0
   z=pixel, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(tan(z)-p2)-p1)/(cos(tan(z)-p2)*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSin[z^a+b] {; Peter Anders anders@physik.hu-berlin.de 
+2newSin[z^a+b] {; Peter Anders anders@physik.hu-berlin.de
                 ; sin(z^p1-p2)=0
   z=pixel, a=p1, b=p2g=p3+1:
-  c=z 
+  c=z
   z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1894,17 +1894,17 @@
 2newSin[z^a+Pixel] {; Peter Anders anders@physik.hu-berlin.de
                     ; sin(z^a+pixel)=0
   z=pixel, a=p1, b=pixel, g=p2+1:
-  c=z 
+  c=z
   z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSin[z^c+b]^a {; Peter Anders anders@physik.hu-berlin.de 
+2newSin[z^c+b]^a {; Peter Anders anders@physik.hu-berlin.de
                   ; sin((z^p1-p2)^p3)=0
   z=pixel, a=p3, c=p1, b=p2:
-  c=z 
+  c=z
   z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
   |z-c| >0.0001
   ;SOURCE: peternew.frm
@@ -1917,20 +1917,20 @@
      ; G. Martin for Orgform to comply with Fractint's 18 character
      ; limit on formula names
   z=pixel, a=pixel, c=pixel, b=pixel:
-  c=z 
+  c=z
   z=z-sin((z^c+b)^a)/( c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
   |z-c| >0.0001
   ;SOURCE: peternew.frm
 }
 
 
-2newSin[z^c+b]^Pix {; Peter Anders anders@physik.hu-berlin.de 
+2newSin[z^c+b]^Pix {; Peter Anders anders@physik.hu-berlin.de
                     ; sin((z^p1-p2)^pixel)=0
      ; Formerly called "2newSin[z^c+b]^Pixel" - name truncated by
      ; G. Martin for Orgform to comply with Fractint's 18 character
      ; limit on formula names
   z=pixel, a=pixel, c=p1, b=p2:
-  c=z 
+  c=z
   z=z-(sin((z^c+b)^a))/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
   |z-c| >0.0001
   ;SOURCE: peternew.frm
@@ -1943,7 +1943,7 @@
      ; G. Martin for Orgform to comply with Fractint's 18 character
      ; limit on formula names
   z=pixel, a=p2, c=p1, b=pixel:
-  c=z 
+  c=z
   z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
   |z-c| >0.0001
   ;SOURCE: peternew.frm
@@ -1957,7 +1957,7 @@
      ; limit on formula names and to correct name conflict with
      ; an earlier formula named "2newSin[z^pixel+b]"
   z=pixel, a=p1, c=pixel, b=p2:
-  c=z 
+  c=z
   z=z-sin((z^c+b)^a)/(c*z^(c-1)*a*(z^c+b)^(a-1)*cos((z^c+b)^a))
   |z-c| >0.0001
   ;SOURCE: peternew.frm
@@ -1967,7 +1967,7 @@
 2newSin[z^Pixel+b] {; Peter Anders anders@physik.hu-berlin.de
                     ; sin(z^pixel+b)=0
   z=pixel, a=pixel, b=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -1980,37 +1980,37 @@
      ; G. Martin for Orgform to comply with Fractint's 18 character
      ; limit on formula names
   z=pixel, a=pixel, b=pixel, g=p3+1:
-  c=z 
+  c=z
   z=z-g*sin(z^a+b)/(a*z^(a-1)*cos(z^a+b))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSin^2 (XYAxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newSin^2 (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                     ; sin(z)*sin(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(z)*sin(z)-root)/(2*cos(z)*sin(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2NewSinCos (XYAxis) {; Peter Anders anders@physik.hu-berlin.de 
+2NewSinCos (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; sin(z)*cos(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(z)*cos(z)-root)/(cos(z)*cos(z)-sin(z)*sin(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSinCosH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newSinCosH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; sin(z)*cosh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(z)*cosh(z)-root)/(cos(z)*cosh(z)+sin(z)*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2031,30 +2031,30 @@
 }
 
 
-2newSinH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newSinH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; sinh(z)*sinh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sinh(z)*sinh(z)-root)/(2*cosh(z)*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2NewSinHCos (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2NewSinHCos (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; sinh(z)*cos(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sinh(z)*cos(z)-root)/(cos(z)*cosh(z)-sin(z)*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSinHCosH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newSinHCosH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                        ; sinh(z)*cosh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sinh(z)*cosh(z)-root)/(cosh(z)*cosh(z)+sinh(z)*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2064,7 +2064,7 @@
 2newSinHTanH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                        ; tanh(z)*sinh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tanh(z)*sinh(z)-root)/(sinh(z)*(1-tanh(z)*tanh(z))\
     +cosh(z)*tanh(z))
   |z-c| >0.000001
@@ -2072,10 +2072,10 @@
 }
 
 
-2newSinLog {; Peter Anders anders@physik.hu-berlin.de 
+2newSinLog {; Peter Anders anders@physik.hu-berlin.de
             ; sin(z)*log(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(z)*log(z)-root)/(sin(z)/z+cos(z)*log(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2085,27 +2085,27 @@
 2NewSinSinH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; sinh(z)*sin(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sinh(z)*sin(z)-root)/(cos(z)*sinh(z)+sin(z)*cosh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2NewSinTan (XYAxis) {; Peter Anders anders@physik.hu-berlin.de 
+2NewSinTan (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; sin(z)*tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(sin(z)*tan(z)-root)/(cos(z)*tan(z)+sin(z)*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newSinTanH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newSinTanH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; tanh(z)*sin(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tanh(z)*sin(z)-root)/(cos(z)*tanh(z)+sin(z)*(1-tanh(z)*tanh(z)))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2115,7 +2115,7 @@
 2newTan^2 (XYAxis) {; Peter Anders anders@physik.hu-berlin.de
                     ; tan(z)*tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tan(z)*tan(z)-root)*(cos(z)*cos(z)*cos(z))/(2*sin(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2125,7 +2125,7 @@
 2newTanCosH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; cosh(z)*tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(cosh(z)*tan(z)-root)/(sinh(z)*tan(z)+cosh(z)*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2145,10 +2145,10 @@
 }
 
 
-2newTanH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newTanH^2 (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                      ; tanh(z)*tanh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tanh(z)*tanh(z)-root)*(cosh(z)*cosh(z)*cosh(z))/(2*sinh(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2158,17 +2158,17 @@
 2newTanLog {; Peter Anders anders@physik.hu-berlin.de
             ; log(z)*tan(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(log(z)*tan(z)-root)/(tan(z)/z+log(z)*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newTanSinH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de 
+2newTanSinH (XYaxis) {; Peter Anders anders@physik.hu-berlin.de
                       ; tan(z)*sinh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tan(z)*sinh(z)-root)/(sinh(z)*(tan(z)*tan(z)+1)+cosh(z)*tan(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2178,7 +2178,7 @@
 2newTanTanH {; Peter Anders anders@physik.hu-berlin.de
              ; tan(z)*tanh(z)-p2=0
   z=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(tan(z)*tanh(z)-root)/((tan(z)*tan(z)+1)*tanh(z)\
     +tan(z)*(1-tanh(z)*tanh(z)))
   |z-c| >0.000001
@@ -2266,7 +2266,7 @@
 2newz^aLog {; Peter Anders anders@physik.hu-berlin.de
             ; z^a*log(z)-p2=0
   z=pixel, a=p1, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*log(z)-root)/(a*z^(a-1)*log(z)+z^a/z)
   |z-c|>0.000001
   ;SOURCE: peternew.frm
@@ -2276,7 +2276,7 @@
 2newz^aLog2 {; Peter Anders anders@physik.hu-berlin.de
              ; z^p1*log(z)-pixel=0
   z=pixel, a=p1, g=p2+1:
-  c=z 
+  c=z
   z=z-g*(z^a*log(z)-pixel)/(a*z^(a-1)*log(z)+z^a/z)
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2286,7 +2286,7 @@
 2newz^aSin {; Peter Anders anders@physik.hu-berlin.de
             ; z^p1*sin(z)-p2=0
   z=pixel, a=p1, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*sin(z)-root)/(a*z^(a-1)*sin(z)+z^a*cos(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2296,7 +2296,7 @@
 2newz^aSin2 {; Peter Anders anders@physik.hu-berlin.de
              ; z^p1*sin(z)-pixel=0
   z=pixel, a=p1, g=p2+1:
-  c=z 
+  c=z
   z=z-g*(z^a*sin(z)-pixel)/(a*z^(a-1)*sin(z)+z^a*cos(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2306,7 +2306,7 @@
 2newz^aTan {; Peter Anders anders@physik.hu-berlin.de
             ; z^a*tan(z)-p2=0
   z=pixel, a=p1, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*tan(z)-root)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
   |z-c|>0.000001
   ;SOURCE: peternew.frm
@@ -2316,7 +2316,7 @@
 2newz^aTan2 {; Peter Anders anders@physik.hu-berlin.de
              ; z^p1*tan(z)-pixel
   z=pixel, a=p1, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*tan(z)-pixel)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2326,17 +2326,17 @@
 2newz^pixelLog {; Peter Anders anders@physik.hu-berlin.de
                 ; z^pixel*log(z)-p2=0
   z=pixel, a=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*log(z)-root)/(a*z^(a-1)*log(z)+z^a/z)
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2newz^pixelSin {; Peter Anders anders@physik.hu-berlin.de 
+2newz^pixelSin {; Peter Anders anders@physik.hu-berlin.de
                 ; z^pixel*sin(z)-p2=0
   z=pixel, a=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*sin(z)-root)/(a*z^(a-1)*sin(z)+z^a*cos(z))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -2346,17 +2346,17 @@
 2newz^pixelTan {; Peter Anders anders@physik.hu-berlin.de
                 ; z^pixel*tan(z)-p2=0
   z=pixel, a=pixel, root=p2, g=p3+1:
-  c=z 
+  c=z
   z=z-g*(z^a*tan(z)-root)/(a*z^(a-1)*sin(z)+z^a*(tan(z)*tan(z)+1))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
 }
 
 
-2Ratz-fn {; try fn=ident , p1 < 1 
-  z = Pixel :  
-  z = (z * z * fn1(z) * p1 + Pixel )/(z * fn2(z) * p1 + Pixel ) 
-  | z | <= 10 
+2Ratz-fn {; try fn=ident , p1 < 1
+  z = Pixel :
+  z = (z * z * fn1(z) * p1 + Pixel )/(z * fn2(z) * p1 + Pixel )
+  | z | <= 10
   ;SOURCE: fn-ratz.frm
 }
 
@@ -2442,7 +2442,7 @@
 }
 
 
-39man (XAXIS) {; Tentative Copyright Ben Leighton 
+39man (XAXIS) {; Tentative Copyright Ben Leighton
      ; (this is likely to have been done at some time somewhere)
   z=a=pixel:
   a=pixel+(flip(a)-z)
@@ -3207,7 +3207,7 @@
 
 
 3jp1cvar {
-  c=pixel+1/fn1(real(p1)*fn2(pixel))+1/fn2(real(p1)*fn1(pixel)) 
+  c=pixel+1/fn1(real(p1)*fn2(pixel))+1/fn2(real(p1)*fn1(pixel))
   z=c:
   z=(p2+imag(p1)*z*z*conj(z))/(p2+imag(p1)*z*conj(z))
   |z|<=10
@@ -3215,10 +3215,10 @@
 }
 
 
-3jRatz-fn {; try fn=ident, p1 < 1 
-  z = Pixel :  
-  z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) 
-  | z | <= 10 
+3jRatz-fn {; try fn=ident, p1 < 1
+  z = Pixel :
+  z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 )
+  | z | <= 10
   ;SOURCE: fn-ratz.frm
 }
 
@@ -3262,7 +3262,7 @@
 
 3NewPolyR5 {; Peter Anders anders@physik.hu-berlin.de
   z=fn1(fn2(pixel)), r=p1, root=p2+1, g=p3+1:
-  c=z 
+  c=z
   z=z-g*((z^r-root)/(r*z^(r-1)))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -3271,7 +3271,7 @@
 
 3NewPolyR6 {; Peter Anders anders@physik.hu-berlin.de
   z=fn1(pixel^real(p2)+imag(p2)), r=p1, g=p3+1:
-  c=z 
+  c=z
   z=z-g*((z^r-1)/(r*z^(r-1)))
   |z-c| >0.000001
   ;SOURCE: peternew.frm
@@ -3312,7 +3312,7 @@
   z=fn1(pixel), a=p1, b=p2+1:
   zz=z
   z=z-((z^a-1)/(a*z^(a-1)))
-  z=fn2(z/|z|)*|z| 
+  z=fn2(z/|z|)*|z|
   |z-zz|>0.00000001
   ;SOURCE: peternew.frm
 }
@@ -3365,10 +3365,10 @@
 }
 
 
-3Ratz-fn {; try fn=ident, p1 < 1 
-  z = Pixel :  
-  z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel ) 
-  | z | <= 10 
+3Ratz-fn {; try fn=ident, p1 < 1
+  z = Pixel :
+  z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel )
+  | z | <= 10
   ;SOURCE: fn-ratz.frm
 }
 
@@ -3385,7 +3385,7 @@
 3RDIM02 {; Tetration
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=c^z 
+  z=c^z
   |z|<=32
   ;SOURCE: 4dfract.frm
 }
@@ -3400,10 +3400,10 @@
 }
 
 
-3RDIM04 {; Tetrated function     
+3RDIM04 {; Tetrated function
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=fn1(c)^z 
+  z=fn1(c)^z
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -3422,16 +3422,16 @@
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1)
   z=conj(z), c=conj(c):
-  z=fn1(z)+c 
+  z=fn1(z)+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
 
 
 3RDIM08 {; Mandelbar
-  z=p1*real(pixel)+flip(imag(pixel)) 
+  z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+p1*flip(imag(pixel)):
-  z=conj(z*z)+c 
+  z=conj(z*z)+c
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -3439,7 +3439,7 @@
 
 3RDIM10 {; Mandelbrot power function
   z=flip(imag(pixel)), c=p2+real(pixel):
-  z=(fn1(z)+c)^p1 
+  z=(fn1(z)+c)^p1
   |z|<=4
   ;SOURCE: 4dfract.frm
 }
@@ -3448,7 +3448,7 @@
 3RDIM13 {; Mandelbrot function
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=1/fn1(z)+c 
+  z=1/fn1(z)+c
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -3457,7 +3457,7 @@
 3RDIM14 {; Mandelbrot lambda function
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=c/fn1(z) 
+  z=c/fn1(z)
   |z|<=64
   ;SOURCE: 4dfract.frm
 }
@@ -3467,7 +3467,7 @@
                    ; floating point required
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=z*z*z/5+z*z+c 
+  z=z*z*z/5+z*z+c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -3477,7 +3477,7 @@
                     ; floating point required
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(p3)+flip(imag(p3)*p1):
-  z=z*z*z/5+z*z+c 
+  z=z*z*z/5+z*z+c
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -3487,7 +3487,7 @@
                 ; floating point required
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -3497,7 +3497,7 @@
                  ; floating point required
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(p3)+flip(imag(p3)*p1):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -3508,7 +3508,7 @@
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1)
   z=conj(z), c=conj(c):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -3519,7 +3519,7 @@
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(p3)+flip(imag(p3)*p1)
   z=conj(z), c=conj(c):
-  z=z*z*z+(c-1)*z-c 
+  z=z*z*z+(c-1)*z-c
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -3530,7 +3530,7 @@
   z=z1=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
   z=z*z+z1+c
-  z1=z 
+  z1=z
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -3541,7 +3541,7 @@
   z=z1=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(p3)+flip(imag(p3)*p1):
   z=z*z+z1+c
-  z1=z 
+  z1=z
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -3552,7 +3552,7 @@
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(pixel)+flip(imag(pixel)*p1):
   z=z*z+c
-  c=c/2+z 
+  c=c/2+z
   |z|<=100
   ;SOURCE: reb005.frm
 }
@@ -3563,7 +3563,7 @@
   z=p1*real(pixel)+flip(imag(pixel))
   c=p2+real(p3)+flip(imag(p3)*p1):
   z=z*z+c
-  c=c/2+z 
+  c=c/2+z
   |z|<=100
   ;SOURCE: reb007.frm
 }
@@ -3578,12 +3578,12 @@
 
 
 3telescope {; (c) Jay Hill, 1998
-            ; use outside=summ periodicity=0 
+            ; use outside=summ periodicity=0
   done = 1, z = 0, zc = 0, c = pixel
   s=|c|, t1=(256*s - 96)*s + 32*Real(c)              ; period 1 test
   t2=16*s + 32*Real(c) + 16                          ; period 2 test
   B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| ; period 3 tests
-  z=z + 249*(t1<=3) + 250*(t2<=1)\ 
+  z=z + 249*(t1<=3) + 250*(t2<=1)\
        + 251*(t3<=1) + 252*(t4<=1)      ; set colors
   IF (z>0)                              ; for periods 1, 2, and 3.
     done=-1         ; color is set for c in a component, skip iterations
@@ -3652,7 +3652,7 @@
   c24 = -0.698232
   d1 = -0.32712901
   d6 = -0.107867
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
   s0 = s0 -y
@@ -3669,15 +3669,15 @@
   s0 = s0 /y
   s0 = s0 +y
   s0 = s0 +c24
-  newx = s0 
+  newx = s0
   s0 = y
   s0 = s0 +d1
   s0 = s0 -x
   s0 = s0 *d6
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3780,20 +3780,20 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   shift = r*space
   rot = flip(rot)
   z=real(pixel+shift)+flip(imag(pixel+shift))
-  c=rot+real(pixel+shift)+flip(imag(pixel+shift)):        
+  c=rot+real(pixel+shift)+flip(imag(pixel+shift)):
   z=z*z+c
   |z|<=48
   ;SOURCE: reb008.frm
@@ -3809,20 +3809,20 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   shift = r*space
   rot = flip(rot)
   z=(1-rot)*real(pixel+shift)+flip(imag(pixel+shift))
-  c=rot+real(pixel+shift)+flip(imag(pixel+shift)*(1-rot)):        
+  c=rot+real(pixel+shift)+flip(imag(pixel+shift)*(1-rot)):
   z=z*z+c
   |z|<=48
   ;SOURCE: reb008.frm
@@ -3838,20 +3838,20 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   shift = space*r + flip(space*r)
   rot = flip(rot)
   z=real(pixel+shift)+flip(imag(pixel+shift))
-  c=rot+real(pixel+shift)+flip(imag(pixel+shift)):        
+  c=rot+real(pixel+shift)+flip(imag(pixel+shift)):
   z=z*z+c
   |z|<=48
   ;SOURCE: reb008.frm
@@ -3867,20 +3867,20 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   shift = space*r + flip(space*r)
   rot = flip(rot)
   z=(1-rot)*real(pixel+shift)+flip(imag(pixel+shift))
-  c=rot+real(pixel+shift)+flip(imag(pixel+shift)*(1-rot)):        
+  c=rot+real(pixel+shift)+flip(imag(pixel+shift)*(1-rot)):
   z=z*z+c
   |z|<=48
   ;SOURCE: reb008.frm
@@ -3896,7 +3896,7 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   hpi = atan(1)
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
@@ -3904,15 +3904,15 @@
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   xr = cos(rot*hpi), yr = sin(rot*hpi)
   shift = xr + flip(yr)
   loc = space*r
   rot = flip(rot)
   z=real(pixel*shift-loc)+flip(imag(pixel*shift-loc)),
-  c=rot+real(pixel*shift-loc)+flip(imag(pixel*shift-loc)):        
+  c=rot+real(pixel*shift-loc)+flip(imag(pixel*shift-loc)):
   z=z*z+c, |z|<=48
   ;SOURCE: reb008.frm
 }
@@ -3927,7 +3927,7 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   hpi = atan(1)
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
@@ -3935,15 +3935,15 @@
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = 0*(r == 0) +  1/rp3 * (r == 1)
   rot = rot + 2/rp3 * (r == 2) +  3/rp3 * (r == 3)
-  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5) 
-  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7) 
+  rot = rot + 4/rp3 * (r == 4) +  5/rp3 * (r == 5)
+  rot = rot + 6/rp3 * (r == 6) +  7/rp3 * (r == 7)
   rot = rot +8/rp3 * (r == 8)
   xr = cos(rot*hpi), yr = sin(rot*hpi)
   shift = xr + flip(yr)
   loc = space*r
   rot = flip(rot)
   z=(1-rot)*real(pixel*shift-loc)+flip(imag(pixel*shift-loc)),
-  c=rot+real(pixel*shift-loc)+flip(imag(pixel*shift-loc)*(1-rot)):        
+  c=rot+real(pixel*shift-loc)+flip(imag(pixel*shift-loc)*(1-rot)):
   z=z*z+c, |z|<=48
   ;SOURCE: reb008.frm
 }
@@ -3958,15 +3958,15 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = r == 0 +  (rp3-1)/rp3 * (r == 1)
   rot = rot + (rp3-2)/rp3 * (r == 2) +  (rp3-3)/rp3 * (r == 3)
-  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5) 
-  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7) 
+  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5)
+  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7)
   rot = rot +(rp3-8)/rp3 * (r == 8)
   shift = r*space
   z=real(pixel+shift)+flip(imag(pixel+shift)*rot)
@@ -3986,15 +3986,15 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
   space = imag(p3)
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = r == 0 +  (rp3-1)/rp3 * (r == 1)
   rot = rot + (rp3-2)/rp3 * (r == 2) +  (rp3-3)/rp3 * (r == 3)
-  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5) 
-  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7) 
+  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5)
+  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7)
   rot = rot +(rp3-8)/rp3 * (r == 8)
   shift = space*r + flip(space*r)
   z=real(pixel+shift)+flip(imag(pixel+shift)*rot)
@@ -4014,7 +4014,7 @@
    ;      7 slices       5    4    7
    ;      8 slices       6    5    8
    ;      9 slices       6    5    9
-   ;  Use imag portion of p3 to set slice spacing   
+   ;  Use imag portion of p3 to set slice spacing
   hpi = atan(1)
   cr = p1*real(scrnpix) + p2*imag(scrnpix)
   rp3 = real(p3)
@@ -4022,8 +4022,8 @@
   r = cr - rp3 * trunc((cr+0.10) / rp3)
   rot = r == 0 +  (rp3-1)/rp3 * (r == 1)
   rot = rot + (rp3-2)/rp3 * (r == 2) +  (rp3-3)/rp3 * (r == 3)
-  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5) 
-  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7) 
+  rot = rot + (rp3-4)/rp3 * (r == 4) +  (rp3-5)/rp3 * (r == 5)
+  rot = rot + (rp3-6)/rp3 * (r == 6) +  (rp3-7)/rp3 * (r == 7)
   rot = rot +(rp3-8)/rp3 * (r == 8)
   xr = cos((1-rot)*hpi), yr = sin((1-rot)*hpi)
   shift = xr + flip(yr)
@@ -4144,14 +4144,14 @@
 
 
 4jp1c {
-  z=pixel: 
+  z=pixel:
   z=(p2+p1*z*z*z*conj(z))/(p2+p1*z*z*conj(z))
   ;SOURCE: queratz.frm
 }
 
 
 4p1 {
-  z=pixel: 
+  z=pixel:
   z=(pixel+p1*z*z*z*conj(z))/(pixel+p1*z*z*conj(z))
   ;SOURCE: queratz.frm
 }
@@ -4167,7 +4167,7 @@
   d2 = -0.539712
   d11 = -0.83891
   d16 = -0.644658
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 +c2
@@ -4178,7 +4178,7 @@
   s0 = s0 *s1
   s0 = s0 +y
   s0 = s0 +c13
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 +d1
   s0 = s0 *d2
@@ -4195,9 +4195,9 @@
   s0 = s0 *y
   s0 = s0 *d16
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -4559,7 +4559,7 @@
 902 {
   z = z^p1 + x^p1 + y^1 + c
   x = p2*z*x + c
-  y = p2*z*y + c 
+  y = p2*z*y + c
   z < 5
   ;SOURCE: kg9.frm
 }
@@ -4642,8 +4642,8 @@
 
 
 96 (ORIGIN) {; Sylvie Gallet [101324,3444], 1995
-  z = pixel, c=(-0.63,-0.4) 
-  r1 = 0.10, dr = 0.05, c1 = (-0.15,0.15) 
+  z = pixel, c=(-0.63,-0.4)
+  r1 = 0.10, dr = 0.05, c1 = (-0.15,0.15)
   r2 = 4*r1+dr, c2 = c1-3*r1-dr
   test1=(cabs(sqrt(|z-c1|)-r1-dr/2)<dr/2)
   test2=(r2<sqrt(|z-c2|))&&(sqrt(|z-c2|)<r2+dr)&&(z-c2>2*r1)&&imag(z-c2)<0

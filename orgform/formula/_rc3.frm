@@ -575,7 +575,7 @@ Carr3029 {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z*z+(c-1)*(z-c) 
+  z=z*z*z+(c-1)*(z-c)
   iter=iter+1
   (imag(z)-cabs(2*real(z)))^3<=32-sqr(real(z)+sin(imag(z)))
   ;SOURCE: 42ycarr.frm
@@ -593,7 +593,7 @@ Carr3030 {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z*z+(c-1)*(z-c/8) 
+  z=z*z*z+(c-1)*(z-c/8)
   iter=iter+1
   (imag(z)-cabs(2*real(z)))^3<=32-sqr(real(z)+sin(imag(z)))
   ;SOURCE: 42ycarr.frm
@@ -1196,7 +1196,7 @@ Carr3061 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  b4=flip(conj(abs((newpixel*newpixel)))) 
+  b4=flip(conj(abs((newpixel*newpixel))))
   b5=newpixel-conj(asin(newpixel+newpixel+0.32))
   c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
   z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -1216,7 +1216,7 @@ Carr3062 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  b4=flip(conj(abs((newpixel^0.5)))) 
+  b4=flip(conj(abs((newpixel^0.5))))
   b5=flip(imag(newpixel))-conj(asin(newpixel*3+0.32))\
       -flip(0.01/b4-conj(0.1/b4))
   c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
@@ -1237,7 +1237,7 @@ Carr3063 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  b4=flip(conj(abs((newpixel^0.5)))) 
+  b4=flip(conj(abs((newpixel^0.5))))
   b5=conj(newpixel*newpixel)/flip(1-newpixel)
   c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
   z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -1257,7 +1257,7 @@ Carr3064 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
-  b4=flip(conj(abs((newpixel^0.5)))) 
+  b4=flip(conj(abs((newpixel^0.5))))
   b5=flip(newpixel*newpixel)/conj(1-newpixel)
   c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
   z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -1834,7 +1834,7 @@ Carr3092 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z*z+(c-0.75-conj(0.05/newpixel))*z-(c)^3 
+  z=z*z*z+(c-0.75-conj(0.05/newpixel))*z-(c)^3
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 42zcarr.frm
@@ -2508,7 +2508,7 @@ Carr3122 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   b4=flip(conj(newpixel*newpixel))/(cabs(conj(newpixel)))
   c=whitesq*(b4)-(whitesq==0)*flip(cabs(b4^3))
   z=whitesq*(b5)-(whitesq==0)*(b5)^2
-  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=cabs(5.0625*z) 
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=cabs(5.0625*z)
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
@@ -2754,7 +2754,7 @@ Carr3134 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.144)+(c/10)-(|0.0035/c/21|) 
+  z=z*z+(-0.7456,-0.144)+(c/10)-(|0.0035/c/21|)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2774,7 +2774,7 @@ Carr3135 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2794,7 +2794,7 @@ Carr3136 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2814,7 +2814,7 @@ Carr3137 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21) 
+  z=z*z+(-0.7456,-0.132)+(c/8)-(0.0035/c/21)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2834,7 +2834,7 @@ Carr3138 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.132)+(c/8)+(0.0065/c/21) 
+  z=z*z+(-0.7456,-0.132)+(c/8)+(0.0065/c/21)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2854,7 +2854,7 @@ Carr3139 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
-  z=z*z+(-0.7456,-0.132)+(c/8)+(0.0035/c/21) 
+  z=z*z+(-0.7456,-0.132)+(c/8)+(0.0035/c/21)
   iter=iter+1
   |z|<=bailout
   ;SOURCE: 43acarr.frm
@@ -2919,7 +2919,7 @@ Carr3142 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
   b5=abs(newpixel^3)-(|flip(0.01/newpixel-conj(0.3/newpixel))|)+0.4
   c=whitesq*(b4)-(whitesq==0)*b4
   z=whitesq*(b5)-(whitesq==0)*b5^2
-  c1=1.5*cabs(z/2), c2=2.25*conj(z/2), c3=3.375*flip(z/2), c4=5.0625*abs(z) 
+  c1=1.5*cabs(z/2), c2=2.25*conj(z/2), c3=3.375*flip(z/2), c4=5.0625*abs(z)
   l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
   bailout=16, iter=0:
   t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
@@ -3999,9 +3999,9 @@ Carr3191 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996  2821
 }
 
 
-Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
-		  ; Rewritten for if..else by George Martin 
+		  ; Rewritten for if..else by George Martin
 		  ; and Sylvie Gallet, 8/1/97
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
@@ -5133,7 +5133,7 @@ Carr3241 (YAXIS) {; Modified Sylvie Gallet frm.1996
     c = -b4
   ENDIF
   imagp1=imag(p1), imagp2=imag(p2)
-  c5=flip(abs(d/70*newpixel)) 
+  c5=flip(abs(d/70*newpixel))
   bailout=16, iter=0:
   IF (iter == p1)
     z = 0
@@ -6131,7 +6131,7 @@ Carr3284 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   d=sqrt(1/newpixel-cosxx(1/newpixel))
-  b6=conj(0.01/newpixel), b7=flip(0.01/newpixel) 
+  b6=conj(0.01/newpixel), b7=flip(0.01/newpixel)
   b8=sin(0.003/newpixel-flip(0.003/newpixel))
   b4=abs(conj(conj(newpixel^2)))*conj(flip(newpixel^3))\
       -conj(0.01/newpixel-flip(0.001/newpixel))
@@ -6184,7 +6184,7 @@ Carr3286 (YAXIS) {; Modified Sylvie Gallet frm.1996
   m3=cabs(newpixel)*conj(conj(newpixel)), m4=(-0.7456,-0.132)
   b4=m4/2-b8-0.25/m3, b8=sin(0.003/newpixel-flip(0.003/newpixel))
   b9=conj(0.01/b4*b8^2-flip(0.01/b4*b8))
-  b5=(0.75*flip(m3)^2-conj(0.01/newpixel))-b7-b8+b9+0.35 
+  b5=(0.75*flip(m3)^2-conj(0.01/newpixel))-b7-b8+b9+0.35
   c=whitesq*b4^0.75-(whitesq==0)*b4
   z=whitesq*b5-(whitesq==0)*b5^0.75
   c1=1.5*z^1.2, c2=2.25*z, c3=3.375*z, c4=5.0625*z
@@ -8142,8 +8142,8 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   tenthinvpixel = .1/newpixel
-  b6=conj(tenthinvpixel) 
-  b7=flip(.1*tenthinvpixel) 
+  b6=conj(tenthinvpixel)
+  b7=flip(.1*tenthinvpixel)
   b8=cabs(.02*tenthinvpixel+cabs(0.02*tenthinvpixel))
   b4=abs(newpixel^2)*conj(flip(newpixel^3))\
      -conj(tenthinvpixel-flip(0.1*tenthinvpixel))
@@ -8159,16 +8159,16 @@ Carr3371 (YAXIS) {; Modified Sylvie Gallet frm.1996
   :
   IF (iter == p1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)     
+    c=(-0.7456,-0.13214)+conj(.15*origz^1.2)
   ELSEIF (iter == imagp1)
     z=0
-    c=(-0.7456,-0.13214)+conj(.225*origz)   
+    c=(-0.7456,-0.13214)+conj(.225*origz)
   ELSEIF (iter == p2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.3375*origz)   
+    c=(-0.7456,-0.13214)+conj(.3375*origz)
   ELSEIF (iter == imagp2)
     z=0
-    c=(-0.7456,-0.13214)+conj(.50625*origz)   
+    c=(-0.7456,-0.13214)+conj(.50625*origz)
   ENDIF
   z=z*z+c
   iter=iter+1
@@ -8377,7 +8377,7 @@ Carr3380 (YAXIS) {; Modified Sylvie Gallet frm.1996
 Carr3381 {; MJM-PHC02 Brian E. Jones modified
   z =pixel^3
   c=conj(conj(pixel))*(pixel^4)+tanh(0.1/pixel)-sinh(0.1/pixel)-conj(0.125/pixel)
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1)+(real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -8387,7 +8387,7 @@ Carr3381 {; MJM-PHC02 Brian E. Jones modified
   test1=(compt<limit)
   nextzoom=nextzoom+test*iterspace
   newpixel=newpixel*(1-test)+test*reduction*(newpixel-p2)*exp(rotation)
-  z=z*(1-test) 
+  z=z*(1-test)
   c=(c*(1-test)+test*newpixel)*whitesq+(c*test1+p*(1-test1))*(whitesq==0)
   z=z*z+c
   iter=iter+1
@@ -8400,7 +8400,7 @@ Carr3381 {; MJM-PHC02 Brian E. Jones modified
 Carr3382 {; MJM-PHC02 Brian E. Jones modified
   c =pixel^3-conj(0.1/pixel)
   z=conj(conj(pixel))*(pixel^4)+tanh(0.1/pixel)-sinh(0.1/pixel)-conj(0.125/pixel)
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1)+(real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -8424,7 +8424,7 @@ Carr3383 {; MJM-PHC02 Brian E. Jones modified
           ; Some optimizations made by G. Martin
   c=pixel^5-conj(0.15/pixel)
   z=pixel^4-conj(0.01/pixel-flip(0.01/pixel))-conj(0.1/pixel)-0.2
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1)+(real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -8448,7 +8448,7 @@ Carr3384 {; MJM-PHC02 Brian E. Jones modified
           ; Some optimizations made by G. Martin
   z=conj(conj(pixel))^4-conj(0.1/pixel)-flip(0.01/pixel)+sin(0.1/pixel)-0.1/pixel
   c=pixel^4-tanh(0.1/pixel)
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1)+(real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -9395,7 +9395,7 @@ Carr3430 (YAXIS) {; Modified Sylvie Gallet frm.1996
 }
 
 
-Carr3431 (YAXIS) {; Modified Sylvie Gallet frm.                   
+Carr3431 (YAXIS) {; Modified Sylvie Gallet frm.
                   ; Added variable "newpixel". G. Martin 6/13/99
   newpixel=-abs(real(pixel))+flip(imag(pixel))
   b1=0.1/newpixel

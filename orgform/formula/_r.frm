@@ -102,9 +102,9 @@ R4_Mandel {; Copyright (c) Paul W. Carlson, 1998
 
 R_&_B {
   z = c = pixel:
-  c = fn1(c) + z 
+  c = fn1(c) + z
   z = z + p1
-  z = z / c  
+  z = z / c
   |z| < 6
   ;SOURCE: gestalt.frm
 }
@@ -126,7 +126,7 @@ ra3 {
 
 
 Rabadon {; Revised by George Martin to correct commented out calculations
-  z = pixel/2 
+  z = pixel/2
   q = z^sin(pixel)
   g = pixel:
   z = z^q/g
@@ -348,32 +348,32 @@ range-r_jul {; Kerry Mitchell
   iter>0
 
 ;**************************************************************
-;**** Kerry Mitchell's explanation of his "range" formulas **** 
+;**** Kerry Mitchell's explanation of his "range" formulas ****
 ; The formulas are:
 ;     range-r_jul (above)
-;     range-r-1_jul 
-;     range-r-2_jul 
-;     range-r-3_jul 
-;     range-x_jul 
-;     range-x-1_jul 
-;     range-x-2_jul 
-;     range-x-3_jul 
-;     range-y_jul 
-;     range-y-1_jul 
-;     range-y-2_jul 
-;     range-y-3_jul 
-;     rangecount-r_jul 
-;     rangecount-r-1_jul 
-;     rangecount-r-2_jul 
-;     rangecount-r-3_jul 
-;     rangecount-x_jul 
-;     rangecount-x-1_jul 
-;     rangecount-x-2_jul 
-;     rangecount-x-3_jul 
-;     rangecount-y_jul 
-;     rangecount-y-1_jul 
-;     rangecount-y-2_jul 
-;     rangecount-y-3_jul 
+;     range-r-1_jul
+;     range-r-2_jul
+;     range-r-3_jul
+;     range-x_jul
+;     range-x-1_jul
+;     range-x-2_jul
+;     range-x-3_jul
+;     range-y_jul
+;     range-y-1_jul
+;     range-y-2_jul
+;     range-y-3_jul
+;     rangecount-r_jul
+;     rangecount-r-1_jul
+;     rangecount-r-2_jul
+;     rangecount-r-3_jul
+;     rangecount-x_jul
+;     rangecount-x-1_jul
+;     rangecount-x-2_jul
+;     rangecount-x-3_jul
+;     rangecount-y_jul
+;     rangecount-y-1_jul
+;     rangecount-y-2_jul
+;     rangecount-y-3_jul
 ;
 ; the following narrative is copyright Kerry Mitchell, 1998
 ;
@@ -414,7 +414,7 @@ range-r_jul {; Kerry Mitchell
 ; way of looking at it is that, by choosing a range centered around c,
 ; the orbit of 0 will fall into the range on the first iteration.  The
 ; formulas range-r-2 and -3 use the second and third iterations,
-; respectively, so their bases are |sqr(c)+c| and |sqr(sqr(c)+c)+c|.  
+; respectively, so their bases are |sqr(c)+c| and |sqr(sqr(c)+c)+c|.
 ;
 ; This method opens itself up to many variations.  For example, instead
 ; of monitoring the magnitude of the iterate, the real or imaginary
@@ -436,7 +436,7 @@ range-r_jul {; Kerry Mitchell
 ; scale factor is available to convert the count into a useable angle.
 ; This method seems to work especially well when the range width is
 ; increased, to increase the hit count and make more colors available.
-; 
+;
 ;*********************************************************************
   ;SOURCE: 98msg.frm
 }
@@ -1419,7 +1419,7 @@ rangecount-y_jul {; Kerry Mitchell
 
 Raphaelbrot (xyaxis) {; phi
   z = pixel:
-  z = sqr(z) + ((sqrt(5) - 1)/2) 
+  z = sqr(z) + ((sqrt(5) - 1)/2)
   |z| <= 4
   ;SOURCE: drcha.frm
 }
@@ -1432,29 +1432,29 @@ rat {
   z = z*z - zp2
   zp2 = zp1
   zp1 = (temp/zp1)*p1
-  (|zp1| <= 64) && (|z| <= huge) 
+  (|zp1| <= 64) && (|z| <= huge)
   ;SOURCE: noel.frm
 }
 
 
-Ratz { 
+Ratz {
   z=pixel:
   z=(p1*fn1(z)^p2+pixel)/(p1*fn2(z)^(p2-1)+pixel)
-  |z|<=10 
+  |z|<=10
   ;SOURCE: test.frm
 }
 
 
 Ratz-fn {
-  z = Pixel :  
-  z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel ) 
-  | z | <= 10 
+  z = Pixel :
+  z = (z * z * z * fn1(z) * p1 + Pixel )/(z * z * fn2(z) * p1 + Pixel )
+  | z | <= 10
   ;SOURCE: ratz.frm
 }
 
 
 ratz1p12 {
-  z=pixel: 
+  z=pixel:
   z=p1*z/pixel+p2
   |z|<=10
   ;SOURCE: ratz.frm
@@ -1462,7 +1462,7 @@ ratz1p12 {
 
 
 ratz2j {
-  z=pixel: 
+  z=pixel:
   z=(z*z+p1)/(z+p1)
   |z|<=10
   ;SOURCE: ratz.frm
@@ -1470,7 +1470,7 @@ ratz2j {
 
 
 ratz3jp12 {
-  z=pixel: 
+  z=pixel:
   z=(z*z*z*p1+p2)/(z*z*p1+p2)
   |z|<=10
   ;SOURCE: ratz.frm
@@ -1478,7 +1478,7 @@ ratz3jp12 {
 
 
 ratz3p12 {
-  z=pixel: 
+  z=pixel:
   z=(z*z*z*p1+pixel)/(z*z*p2+pixel)
   |z|<=10
   ;SOURCE: ratz.frm
@@ -1486,7 +1486,7 @@ ratz3p12 {
 
 
 ratz6j {
-  z=pixel: 
+  z=pixel:
   z=(z*z*z*z*z*z+p1)/(z*z*z*z*z+p1)
   ;SOURCE: ratz.frm
 }
@@ -1554,7 +1554,7 @@ RCL_15 (XAXIS) {; Ron Lewen, 76376,2567
                 ; Adapted from Pickover's Biomorph Zoo Collection in
                 ; Figure 8.7 (p. 102).
   z=pixel:
-  z=z^2.71828 + pixel     
+  z=z^2.71828 + pixel
   |real(z)| <= 100 || |imag(z)| <= 100
   ;SOURCE: rclpar.frm
 }
@@ -1695,7 +1695,7 @@ RCL_9 (XAXIS) {; Ron Lewen, 76376,2567
 
 RCL_Cosh (XAXIS) {; Ron Lewen, 76376,2567
                   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-                  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+                  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
                   ; Pickover's Computers, Pattern, Chaos and Beauty.
                   ; Figures 9.9 - 9.13 can be found by zooming.
                   ; Use floating point
@@ -1731,7 +1731,7 @@ RCL_Cosh_J {; Ron Lewen, 76376,2567
 
 RCL_Cross1 {; Ron Lewen
             ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-            ; -10/10/-7.5/7.5 to see a cross shape.  The larger 
+            ; -10/10/-7.5/7.5 to see a cross shape.  The larger
             ; lakes at the center of the cross have good detail
             ; to zoom in on.
             ; Use floating point.
@@ -1744,7 +1744,7 @@ RCL_Cross1 {; Ron Lewen
 
 RCL_Cross2 {; Ron Lewen
             ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-            ; -10/10/-7.5/7.5 to see a deformed cross shape. 
+            ; -10/10/-7.5/7.5 to see a deformed cross shape.
             ; The larger lakes at the center of the cross have
             ; good detail to zoom in on.
             ; Try corner=-1.58172/.976279/-1.21088/-.756799 to see
@@ -1782,7 +1782,7 @@ RCL_Mandel (XAXIS) {; Ron Lewen
 
 RCL_Pick1 (XAXIS) {; Ron Lewen
                    ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-                   ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+                   ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
                    ; Pickover's Computers, Pattern, Chaos and Beauty.
                    ; Figures 9.9 - 9.13 can be found by zooming.
                    ; Use floating point
@@ -1828,7 +1828,7 @@ RCL_Pick12 {; Ron Lewen
 
 
 RCL_Pick13 {; Ron Lewen
-            ; Formula from Frontpiece for Appendix C 
+            ; Formula from Frontpiece for Appendix C
             ; and Credits in Pickover's book.
             ; Set p1=(3,0) to generate the Frontpiece
             ; for Appendix C and to (2,0) for Credits
@@ -1842,7 +1842,7 @@ RCL_Pick13 {; Ron Lewen
 
 RCL_Pick2_J {; Ron Lewen
              ; A julia set based on the formula in Figure 8.9
-             ; (p. 105) of Pickover's book.  Very similar to 
+             ; (p. 105) of Pickover's book.  Very similar to
              ; the Frontpiece for Appendix A.
   z=pixel:
   z=sin(z) + z^2 + p1
@@ -1981,7 +1981,7 @@ REB004A {; Ron Barnett, 1993
 
 REB004AJulia {; Ron Barnett, 1995
   z = pixel:
-  z =p1*fn1(z) + p1*p1*fn2(p2*z) + p3 
+  z =p1*fn1(z) + p1*p1*fn2(p2*z) + p3
   |z| <= 100
   ;SOURCE: reb007.frm
 }
@@ -1990,7 +1990,7 @@ REB004AJulia {; Ron Barnett, 1995
 REB004B {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = pixel + p1*(z/2 + z*z/6 + z*z*z/12) 
+  z = pixel + p1*(z/2 + z*z/6 + z*z*z/12)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -1999,7 +1999,7 @@ REB004B {; Ron Barnett, 1993
 REB004C {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = p2 + p1*(z/2 + z*z/6 + z*z*Z/12) 
+  z = p2 + p1*(z/2 + z*z/6 + z*z*Z/12)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2007,7 +2007,7 @@ REB004C {; Ron Barnett, 1993
 
 REB004D {; Ron Barnett, 1993
   z = pixel:
-  z = pixel + fn1(2*z+1)/(2*z+p1) 
+  z = pixel + fn1(2*z+1)/(2*z+p1)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2016,8 +2016,8 @@ REB004D {; Ron Barnett, 1993
 REB004E {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = pixel + fn1(2*z+1)/(2*z+p1) 
-  z = z + fn2(4*z+1)/(4*z+p2) 
+  z = pixel + fn1(2*z+1)/(2*z+p1)
+  z = z + fn2(4*z+1)/(4*z+p2)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2025,7 +2025,7 @@ REB004E {; Ron Barnett, 1993
 
 REB004F {; Ron Barnett, 1993
   z = pixel:
-  z = p2 + fn1(2*z+1)/(2*z+p1) 
+  z = p2 + fn1(2*z+1)/(2*z+p1)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2034,8 +2034,8 @@ REB004F {; Ron Barnett, 1993
 REB004G {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = p2 + fn1(2*z+1)/(2*z+p1) 
-  z = z + fn2(4*z+1)/(4*z+p1) 
+  z = p2 + fn1(2*z+1)/(2*z+p1)
+  z = z + fn2(4*z+1)/(4*z+p1)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2044,7 +2044,7 @@ REB004G {; Ron Barnett, 1993
 REB004H {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = pixel + fn1(3/z - z/4) 
+  z = pixel + fn1(3/z - z/4)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2053,7 +2053,7 @@ REB004H {; Ron Barnett, 1993
 REB004I {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
-  z = p1 + fn1(3/z - z/4) 
+  z = p1 + fn1(3/z - z/4)
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2063,7 +2063,7 @@ REB004J {; Ron Barnett, 1993
          ; floating point required
   z = pixel:
   x = flip(pixel + fn1(3/z - z/4))
-  z = x*z + pixel 
+  z = x*z + pixel
   |z| <= 100
   ;SOURCE: reb004.frm
 }
@@ -2093,7 +2093,7 @@ REB004LJulia {; Ron Barnett, 1995
               ; floating point required
   z = pixel:
   x = flip(pixel + fn1(p1/z - z/(p2+1)))
-  z = x*z + p3 
+  z = x*z + p3
   |z| <= 100
   ;SOURCE: reb007.frm
 }
@@ -2147,7 +2147,7 @@ REB005B {; Ron Barnett, 1993
   y1 = -fn2(const + y)*y/const
   x2 = x1*x1 - y1*y1 + p1
   y2 = 2*x1*y1
-  z = x2 + flip(y2) 
+  z = x2 + flip(y2)
   |z| <= 100
   ;SOURCE: reb005.frm
 }
@@ -2162,7 +2162,7 @@ REB005C {; Ron Barnett, 1993
   y1 = -fn2(const + y)*y/const
   x2 = x1*x1 - y1*y1 + p2
   y2 = 2*x1*y1
-  z = x2 + flip(y2) 
+  z = x2 + flip(y2)
   |z| <= 100
   ;SOURCE: reb005.frm
 }
@@ -2177,7 +2177,7 @@ REB005D {; Ron Barnett, 1993
   y1 = -fn2((const + y)*y/const)
   x2 = x1*x1 - y1*y1 + p2
   y2 = 2*x1*y1
-  z = x2 + flip(y2) 
+  z = x2 + flip(y2)
   |z| <= 100
   ;SOURCE: reb005.frm
 }
@@ -2231,7 +2231,7 @@ REB005G {; Ron Barnett, 1993
 REBRefInd1 {; Ron Barnett, 1993
             ; Use floating point
   z = pixel:
-  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + pixel 
+  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + pixel
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -2240,7 +2240,7 @@ REBRefInd1 {; Ron Barnett, 1993
 REBRefInd1Julia {; Ron Barnett, 1995
                  ; Use floating point
   z = pixel:
-  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + p3 
+  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + p3
   |z| <= 100
   ;SOURCE: reb007.frm
 }
@@ -2258,7 +2258,7 @@ REBRefInd2 {; Ron Barnett, 1993
 REBRefInd3 {; Ron Barnett, 1993
             ; Use floating point
   z = pixel:
-  z = (z*z-1)/(z*z+2)*fn1(z) + p1 
+  z = (z*z-1)/(z*z+2)*fn1(z) + p1
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -2278,7 +2278,7 @@ REBRefInd4Julia {; Ron Barnett, 1995
                  ; Use floating point
   z = pixel:
   z = flip(z)
-  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + p3 
+  z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + p3
   |z| <= 100
   ;SOURCE: reb007.frm
 }
@@ -2288,7 +2288,7 @@ REBRefInd5 {; Ron Barnett, 1993
             ; Use floating point
   z = pixel:
   z = flip(z)
-  z = (z*z-1)/(z*z+2)*fn1(z)*fn2(z) + p1 
+  z = (z*z-1)/(z*z+2)*fn1(z)*fn2(z) + p1
   |z| <= 100
   ;SOURCE: reb002.frm
 }
@@ -2296,7 +2296,7 @@ REBRefInd5 {; Ron Barnett, 1993
 
 Recipfn {
   z=c=pixel:
-  z=1/(fn1(z))*c 
+  z=1/(fn1(z))*c
   |z|<=100
   ;SOURCE: sample.frm
 }
@@ -2304,7 +2304,7 @@ Recipfn {
 
 RecipIke {; Ron Barnett, 1993
   z = pixel:
-  z = 1/(z*z*z + (p1-1)*z - p1) 
+  z = 1/(z*z*z + (p1-1)*z - p1)
   |z| <= 4
   ;SOURCE: reb001.frm
 }
@@ -2416,8 +2416,8 @@ red {; Kerry Mitchell 07sep98
 
 
 ReEntry (XAXIS) {; Try params=2/1000/0/0
-  c=z=pixel: 
-  z=z^Real(p1)+c 
+  c=z=pixel:
+  z=z^Real(p1)+c
   1/Imag(p1)<=|z^c|
                  ; "Shields up!  Hull temperature approaching critical!"
   ;SOURCE: fractfun.frm
@@ -2617,7 +2617,7 @@ rfr0ab2 {; Rolf Freericks
 rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
          ; Complex-form of SPIDERJUL
          ; float=yes
-         ; modified by Rolf Freericks 
+         ; modified by Rolf Freericks
          ; the original is cited at the end
   z = pixel, c = p1
   IF (whitesq)
@@ -2641,7 +2641,7 @@ rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
 rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
          ; Complex-form of SPIDERJUL
          ; float=yes
-         ; modified by Rolf Freericks 
+         ; modified by Rolf Freericks
          ; the original is cited at the end
   z = pixel
   IF (whitesq)
@@ -2667,7 +2667,7 @@ rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
 }
 
 
-rfr0ah1 {; Rolf Freericks 
+rfr0ah1 {; Rolf Freericks
   z = pixel
   c=p1
   :
@@ -2679,7 +2679,7 @@ rfr0ah1 {; Rolf Freericks
 }
 
 
-rfr0ak1 {; Rolf Freericks 
+rfr0ak1 {; Rolf Freericks
   c = pixel
   h=z=p1
   :
@@ -2907,7 +2907,7 @@ ringc_jul-alt {; Kerry MItchell 07sep98
   IF ((r>=r1)&&(r<=r2))
     done=1
     t=(r-r1)*fac
-    IF (trunc(iter/2)==(iter/2)) 
+    IF (trunc(iter/2)==(iter/2))
       t=t+pi
     ENDIF
     z=cos(t)+flip(sin(t))
@@ -2952,10 +2952,10 @@ ringmaster {; Giuseppe Zito
   d0 = -0.161309
   d3 = -0.727477
   d8 = 0.280948
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = y
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *x
   s0 = s0 +d3
@@ -2964,9 +2964,9 @@ ringmaster {; Giuseppe Zito
   s0 = s0 *d8
   s0 = s0 *y
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -2980,7 +2980,7 @@ ripples {; Giuseppe Zito
   d1 = -0.277046
   d2 = 0.909756
   d7 = -0.868067
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 *c1
@@ -2994,7 +2994,7 @@ ripples {; Giuseppe Zito
   s1 = s1 -c11
   s0 = s0 *s1
   s0 = s0 /x
-  newx = s0 
+  newx = s0
   s0 =d0
   s0 = s0 *d1
   s0 = s0 /d2
@@ -3004,16 +3004,16 @@ ripples {; Giuseppe Zito
   s0 = s0 *s1
   s0 = s0 -d7
   s0 = s0 -x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
 
-Robert1 (XAXIS) {  
+Robert1 (XAXIS) {
   c = z = pixel:
-  z = ((z+c)+(z*z+c*c)+(z*z*z+c*c*c)) + c 
+  z = ((z+c)+(z*z+c*c)+(z*z*z+c*c*c)) + c
   |z| <= 4
   ;SOURCE: robert.frm
 }
@@ -3087,7 +3087,7 @@ Rollo_5 {
   q =  fn2(z) - zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
 
@@ -3097,12 +3097,12 @@ Rollo_6 {
    ; formulae. The formulae used can be found in Noel.frm
   z = pixel, zp = p1
   a = (whitesq == 1), b = (whitesq == 0):
-  temp = z 
-  r = fn1(z)^5 + zp 
-  q = fn2(z)^5 + zp 
+  temp = z
+  r = fn1(z)^5 + zp
+  q = fn2(z)^5 + zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
 
@@ -3112,12 +3112,12 @@ Rollo_7 {
    ; formulae. The formulae used can be found in Noel.frm
   z = pixel, zp = p2
   a = (whitesq == 1), b = (whitesq == 0):
-  temp = z 
-  r = fn1(z)^e + zp 
-  q = fn2(z)^pi + zp 
+  temp = z
+  r = fn1(z)^e + zp
+  q = fn2(z)^pi + zp
   zp = temp
   z = (q * a) + (r * b)
-  |zp| <= 4 
+  |zp| <= 4
   ;SOURCE: rollo.frm
 }
 
@@ -3146,9 +3146,9 @@ root_jul {; Kerry Mitchell 11feb98
 ;
 ; Applies to these formulas:
 ;   root_jul (above)
-;   root_man 
-;   rootcount_jul 
-;   rootcount_man 
+;   root_man
+;   rootcount_jul
+;   rootcount_man
 ;
 ; Root
 ;
@@ -3291,7 +3291,7 @@ rootcount_man {; Kerry Mitchell 11feb98
 }
 
 
-roote (XAXIS) {; from the Zexpi with square root of e 
+roote (XAXIS) {; from the Zexpi with square root of e
   z = Pixel:
   z = z ^ 1.648721270697 + pixel
   |z| <= p1
@@ -3299,7 +3299,7 @@ roote (XAXIS) {; from the Zexpi with square root of e
 }
 
 
-roote3 (XAXIS) {; from the Zexpi with cube root of e 
+roote3 (XAXIS) {; from the Zexpi with cube root of e
   z = Pixel:
   z = z ^ 1.395612425086 + pixel
   |z| <= p1
@@ -3310,7 +3310,7 @@ roote3 (XAXIS) {; from the Zexpi with cube root of e
 Rootura {
   z = pixel, pix = pixel + p1:
   z = (1/sqrt(z)) + pix
-  z = fn1(z) * z - pixel 
+  z = fn1(z) * z - pixel
   |z| < 4
   ;SOURCE: altura.frm
 }
@@ -3323,7 +3323,7 @@ rosa2 {; Giuseppe Zito
   c9 = -0.297657
   c10 = -0.188083
   d1 = 0.956228
-  : 
+  :
   x = real(z), y = imag(z)
   s0 = x
   s0 = s0 +c1
@@ -3332,12 +3332,12 @@ rosa2 {; Giuseppe Zito
   s0 = s0 *c10
   s0 = s0 *y
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 = x
   s0 = s0 -d1
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3346,7 +3346,7 @@ Rota4 {; Agustin Martin Barbero   II-1998
        ; p1 deforming factor (expands black areas? Usually leave it 0)
        ; p2 = Bailout - 4      if u use imag(p3)=1, p2 should be high
        ;       but not too much...
-       ; real(p3) scale factor for deformation waves. Keep it high if 
+       ; real(p3) scale factor for deformation waves. Keep it high if
        ;   you want to see the big picture like an z^n + c formula
        ; imag(p3) exponent of z^n + c (no need to explain this)
   z=pixel
@@ -3362,8 +3362,8 @@ royal1 (XYAXIS) {
   z = pixel,  zp = (0,0):
   temp = z
   z = z*z  - cos(zp)
-  zp = conj(temp) 
-  |zp| <= 4 
+  zp = conj(temp)
+  |zp| <= 4
   ;SOURCE: noel.frm
 }
 
@@ -3374,7 +3374,7 @@ royal2 (XYAXIS) {
   temp = z
   z = z*z  - zp2
   zp2 = cos(zp1)
-  zp1 = conj(temp) 
+  zp1 = conj(temp)
   |zp1| <= 4
   ;SOURCE: noel.frm
 }
@@ -3390,11 +3390,11 @@ rseal {; Giuseppe Zito
   d9 = 0.977766
   d12 = -0.197748
   d14 = -0.941167
-  : 
+  :
   x = real(z), y = imag(z)
   s0 =c0
   s0 = s0 -y
-  newx = s0 
+  newx = s0
   s0 =d0
   s1 = x
   s0 = s0 *s1
@@ -3409,9 +3409,9 @@ rseal {; Giuseppe Zito
   s0 = s0 *y
   s0 = s0 *d14
   s0 = s0 +x
-  newy = s0 
+  newy = s0
   z = newx + flip(newy)
-  newx < 4 && newx > -4 && newy < 4 && newy > -4 
+  newx < 4 && newx > -4 && newy < 4 && newy > -4
   ;SOURCE: zg.frm
 }
 
@@ -3428,7 +3428,7 @@ RSP_10060 {; rsp 28jul98
     d2=p1*p2
   ENDIF
   g=p2, h=p3
-  dsq= g*(h*(2*(1-g)-h) + g*(2-d2*g) ) + h*h 
+  dsq= g*(h*(2*(1-g)-h) + g*(2-d2*g) ) + h*h
   :
   w2=w*w, fnc=w2*w2-w-c, der=4*w*w2-1, k=1*fnc/(der-12*w2*fnc/der/2)
   w=w-k
@@ -3589,7 +3589,7 @@ RSP_10063 {; rsp 28jul98
     wr=real(w), awr=abs(wr)
     wi=imag(w), awi=abs(wi)
     IF (awr>=awi)
-      dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1) 
+      dist=(awr-d2)*(awr-d2)+(awi-d1)*(awi-d1)
       adjust=1
     ELSE
       dist=(awr-d1)*(awr-d1)+(awi-d2)*(awi-d2)
@@ -3618,7 +3618,7 @@ RSP_10063 {; rsp 28jul98
 
 
 rsp_1010 {
-  z=a=pixel 
+  z=a=pixel
   c=a*(a*a-1)/(a*a*a*a-3*a*a+1):
   z=z*z+c/a
   |z|<=64
@@ -3627,7 +3627,7 @@ rsp_1010 {
 
 
 rsp_1011 {
-  z=pixel, a=(pixel*(|p1|<=0)+p1) 
+  z=pixel, a=(pixel*(|p1|<=0)+p1)
   c=a*(a*a-1)/(a*a*a*a-3*a*a+1):
   z=z*z+c/a
   |z|<=64
@@ -3651,7 +3651,7 @@ rsp_1012 {; *RSP 24MAY98
   bail=(64*(|p2|<=0)+(p2))
   z=(pixel*(|p1|<=0)+(2.5*pixel))
   a=(pixel*(|p1|<=0)+p1)
-  b=sqr(a): 
+  b=sqr(a):
   c=(b-1)/(b*(b-z)+1)
   y=real(z*c)
   x=flip(imag(c/z+1))
@@ -3707,7 +3707,7 @@ rsp_1171 {; *RSP 11NOV98
 
 rsp_3080 {; *RSP 29MAY98
   z=pixel
-  n=p1: 
+  n=p1:
   z=z^n*sin(1/z)
   ;SOURCE: 98msg.frm
 }
@@ -3715,7 +3715,7 @@ rsp_3080 {; *RSP 29MAY98
 
 rsp_3090 {; *RSP 29MAY98
   z=pixel
-  n=p1: 
+  n=p1:
   z=z^n*sin(n/z)
   ;SOURCE: 98msg.frm
 }
@@ -3724,7 +3724,7 @@ rsp_3090 {; *RSP 29MAY98
 rsp_3091 {; *RSP 29MAY98
   z=pixel
   bail=(64*(|p2|<=0)+p2)
-  n=(1*(|p1|<=0)+p1): 
+  n=(1*(|p1|<=0)+p1):
   z=z^n*sin(n/z)
   |z|<=bail
   ;SOURCE: 98msg.frm
@@ -3743,10 +3743,10 @@ rsp_3170 {; RSP 23MAY98
 
 
 rsp_4060 {; RSP 27JUN98
-  z=(1,1), c=100*pixel: 
+  z=(1,1), c=100*pixel:
   zz=sqr(z)
   f=(4*zz*z-3*z)+c, g=12*zz-3
-  z=z-p1*f/g 
+  z=z-p1*f/g
  .0001<|f|
   ;SOURCE: 98msg.frm
 }
@@ -3755,7 +3755,7 @@ rsp_4060 {; RSP 27JUN98
 rsp_5010 {; RSP 23MAY98
           ; P1 IS ZOOM OUT CANT BE ZERO
           ; P2 IS BAILOUT VALUE
-  z=c=p1*pixel: 
+  z=c=p1*pixel:
   f=1/tanh(z)
   g=log(sinh(z))
   z=z-f/g
@@ -3911,7 +3911,7 @@ rsp_may002{
   z=10*pixel
   a=z, an=1, n=i=0
   :
-  i=i+.5, n=a-i 
+  i=i+.5, n=a-i
   an=an*n/(z^n), oz=z
   z=1+z+an
   |z-oz|>.00001
@@ -3923,7 +3923,7 @@ rsp_may005 {
   z=w=c=pixel, n=p1
   :
   w=w*w+c, z=(w-floor(w))*n
-  |w|<p2  
+  |w|<p2
   ;SOURCE: 99msg.frm
 }
 
@@ -3988,7 +3988,7 @@ rsp_may012 {; Added variable "ee", 7/26/99. G. Martin
 
 
 rspf_4032 {; RSP 06JUN98
-  z=4*pixel: 
+  z=4*pixel:
   zz=sqr(z)
   f=4*zz*z-3*z
   g=12*zz-3
@@ -4000,7 +4000,7 @@ rspf_4032 {; RSP 06JUN98
 
 
 rspf_4050 {; RSP 06JUN98
-  c=50*pixel, z=(1,1): 
+  c=50*pixel, z=(1,1):
   zz=sqr(z)
   f=zz*zz*z-zz*z+c
   g=5*zz*zz-3*zz
@@ -4031,7 +4031,7 @@ RSQ-TIT-MJ {; P1 is the Mandelbrot/Julia coordinates (real & imaginary)
   M=P2 ; (Only the REAL NEED BE USED... quite different if IMAGINARY GIVEN
   K=1-M ; % Julia given from Mandelbrot
   z = Pixel:
-  z = (M*(sqr(z)+pixel))+(K*(sqr(z)+J)) 
+  z = (M*(sqr(z)+pixel))+(K*(sqr(z)+J))
   |z| <= 4
     ;Equation entries of 1st image: p1 real=-0.05; p1 imaginary=0.65
     ;                               p2 real= 0.1 ; p2 imaginary=0 (always)
@@ -4040,10 +4040,10 @@ RSQ-TIT-MJ {; P1 is the Mandelbrot/Julia coordinates (real & imaginary)
 
 
 Runge01 {; RSPF010 22MAY98
-  z=c=pixel 
+  z=c=pixel
   h=real(p1)       ; step size start with whole + /- numbers
   b=imag(p1):      ; bailout value
-  k1=fn1(z)+c 
+  k1=fn1(z)+c
   xb=real(z)+h/2
   yb=flip(imag(z))+h*k1/2
   k2=fn1(xb+yb)

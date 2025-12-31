@@ -7,7 +7,7 @@ FlipRNot   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   c = fn3(c)
   LastSqr <= real(P1)
 }
- 
+
 FunkRNot   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
              ; Sun, 4 Apr 2004 10:35:21
              ; The imaje is the same in this case.
@@ -21,4 +21,4 @@ FunkRNot   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
   z = sqr(z) +temp
   LastSqr <= real(P1)
 }
- 
+

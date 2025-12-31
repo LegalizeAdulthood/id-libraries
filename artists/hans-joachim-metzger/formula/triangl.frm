@@ -84,7 +84,7 @@ tri-fn+fn {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
    mz1 <= b11
   ;SOURCE: triangl.frm
 }
- 
+
 tri-julia {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
            ; Thanks to Kerry Mitchell for the idea!
            ; real(p1) = bailout (10^10 recommended)
@@ -107,7 +107,7 @@ tri-julia {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
   mz1 <= bailout
   ;SOURCE: triangl.frm
 }
- 
+
 tri-mandel {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
             ; Thanks to Kerry Mitchell for the idea!
             ; real(p1) = bailout (10^10 recommended)
@@ -129,7 +129,7 @@ tri-mandel {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
   mz1 <= bailout
   ;SOURCE: triangl.frm
 }
- 
+
 tri-julia-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
              ; Thanks to Kerry Mitchell for the idea!
              ; real(p1) = bailout (1024 recommended)
@@ -226,7 +226,7 @@ tri-julia-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
   mz1 <= b11
   ;SOURCE: triangl.frm
 }
- 
+
 tri-mandel-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
               ; Thanks to Kerry Mitchell for the idea!
               ; real(p1) = bailout (1024 recommended)
@@ -311,4 +311,4 @@ tri-mandel-2 {; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
    mz1 <= b11
   ;SOURCE: triangl.frm
 }
- 
+

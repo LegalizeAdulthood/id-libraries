@@ -6,7 +6,7 @@ JoWe_58_1 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_2 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -15,7 +15,7 @@ JoWe_58_2 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_3 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -25,7 +25,7 @@ JoWe_58_3 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_4 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -35,7 +35,7 @@ JoWe_58_4 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_5 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -45,7 +45,7 @@ JoWe_58_5 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_5_1 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -55,7 +55,7 @@ JoWe_58_5_1 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_6 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -65,7 +65,7 @@ JoWe_58_6 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 JoWe_58_7 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -75,7 +75,7 @@ JoWe_58_7 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
 jowe_62 {; by Jo Weber [100424,35], 11/1996
   z=pixel
   bailout=p3:
@@ -89,4 +89,4 @@ jowe_62 {; by Jo Weber [100424,35], 11/1996
   |z|<=bailout
   ;SOURCE: jo_we_53.frm
 }
- 
+
