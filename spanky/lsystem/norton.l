@@ -2,7 +2,7 @@
 ; To:MX%"noel@triumf.ca"
 ; CC:
 ; Subj:Oops!  Missing file Norton.l
-; 
+;
 ; Return-Path: <mcworter@midohio.net>
 ; Received: from mail.midohio.net by REG.TRIUMF.CA (MX V4.0-1 VAX) with SMTP;
 ;           Wed, 19 Mar 1997 11:01:17 PST

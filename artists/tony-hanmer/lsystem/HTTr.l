@@ -26,7 +26,7 @@ tr20001v { ; Anthony Hanmer 2003
   }
 
 tr20001w { ; Anthony Hanmer 26/8/2003
-  Angle 6 ; 
+  Angle 6 ;
   ; Just for the heck of it...!
   Axiom c9f++c12f++c14f
   f=f+f|f++g|f|g
@@ -34,7 +34,7 @@ tr20001w { ; Anthony Hanmer 26/8/2003
   }
 
 tr20001x { ; Anthony Hanmer 26/8/2003
-  Angle 6 ; 
+  Angle 6 ;
   ; Just for the heck of it...!
   Axiom c9f++c12f++c14f
   f=g|f|g+f|f++f
@@ -42,7 +42,7 @@ tr20001x { ; Anthony Hanmer 26/8/2003
   }
 
 tr20001y { ; Anthony Hanmer 26/8/2003
-  Angle 6 ; 
+  Angle 6 ;
   ; Just for the heck of it...!
   Axiom c9f++c12f++c14f
   f=g|f|g+f|f++g|f|g
@@ -50,7 +50,7 @@ tr20001y { ; Anthony Hanmer 26/8/2003
   }
 
 tr20001z { ; Anthony Hanmer 26/8/2003
-  Angle 6 ; 
+  Angle 6 ;
   ; Just for the heck of it...!
   Axiom c9f++c12f++c14f
   f=f|f|g+f|f++f|f|g
@@ -1319,7 +1319,7 @@ tr30078# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 78th 3x3 triangular HTile, 70th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=ggg++ggg++f++f|f++f--f|f++f++ff++ggg  
+  f=ggg++ggg++f++f|f++f--f|f++f++ff++ggg
   g=ggg
   }
 
@@ -1327,14 +1327,14 @@ tr30079# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 79th 3x3 triangular HTile, 71st dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=fgg++ggg++g++f|f++f--f|f++f++ff++ggg  
+  f=fgg++ggg++g++f|f++f--f|f++f++ff++ggg
   g=ggg
   }
 
 tr30080# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 80th 3x3 triangular HTile, 72nd dust
   Axiom c9f++c12f++c14f
-  f=ggg++fgg++g++f|f++f--f|f++f++ff++ggg  
+  f=ggg++fgg++g++f|f++f--f|f++f++ff++ggg
   g=ggg
   }
 
@@ -1342,14 +1342,14 @@ tr30081# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 81st 3x3 triangular HTile, 73rd dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=gfg++ggg++f++f|f++f--f|f++f++gf++ggg  
+  f=gfg++ggg++f++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
 tr30082# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 82nd 3x3 triangular HTile, 74th dust
   Axiom c9f++c12f++c14f
-  f=ggg++gfg++f++f|f++f--f|f++f++gf++ggg  
+  f=ggg++gfg++f++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
@@ -1357,7 +1357,7 @@ tr30083# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 83rd 3x3 triangular HTile, 75th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=ggf++ggg++f++f|f++f--f|f++f++fg++ggg  
+  f=ggf++ggg++f++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
@@ -1365,7 +1365,7 @@ tr30084# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 84th 3x3 triangular HTile, 76th dust
   ; One of my VERY best HTs:  pure simplicity
   Axiom c9f++c12f++c14f
-  f=ggg++ggf++f++f|f++f--f|f++f++fg++ggg  
+  f=ggg++ggf++f++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
@@ -1373,35 +1373,35 @@ tr30085# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 85th 3x3 triangular HTile, 77th dust
   ; One of my VERY best HTs:  cool
   Axiom c9f++c12f++c14f
-  f=ffg++ggg++g++f|f++f--f|f++f++gf++ggg  
+  f=ffg++ggg++g++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
 tr30086# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 86th 3x3 triangular HTile, 78th dust
   Axiom c9f++c12f++c14f
-  f=ggg++ffg++g++f|f++f--f|f++f++gf++ggg  
+  f=ggg++ffg++g++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
 tr30087# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 87th 3x3 triangular HTile, 79th dust
   Axiom c9f++c12f++c14f
-  f=fgg++gfg++g++f|f++f--f|f++f++gf++ggg  
+  f=fgg++gfg++g++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
 tr30088# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 88th 3x3 triangular HTile, 80th dust
   Axiom c9f++c12f++c14f
-  f=gfg++fgg++g++f|f++f--f|f++f++gf++ggg  
+  f=gfg++fgg++g++f|f++f--f|f++f++gf++ggg
   g=ggg
   }
 
 tr30089# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 89th 3x3 triangular HTile, 81st dust
   Axiom c9f++c12f++c14f
-  f=gff++ggg++f++f|f++f--f|f++f++gg++ggg  
+  f=gff++ggg++f++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
@@ -1409,7 +1409,7 @@ tr30090# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 90th 3x3 triangular HTile, 82nd dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=ggg++gff++f++f|f++f--f|f++f++gg++ggg  
+  f=ggg++gff++f++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
@@ -1417,14 +1417,14 @@ tr30091# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 91st 3x3 triangular HTile, 83rd dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=gfg++ggf++f++f|f++f--f|f++f++gg++ggg  
+  f=gfg++ggf++f++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
 tr30092# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 92nd 3x3 triangular HTile, 84th dust
   Axiom c9f++c12f++c14f
-  f=ggf++gfg++f++f|f++f--f|f++f++gg++ggg  
+  f=ggf++gfg++f++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
@@ -1433,14 +1433,14 @@ tr30093# { ; Anthony Hanmer 19/10/2002
   ; One of my VERY best HTs:
   ; sort of a Cantor Dust variation tile
   Axiom c9f++c12f++c14f
-  f=fgf++ggg++g++f|f++f--f|f++f++fg++ggg  
+  f=fgf++ggg++g++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
 tr30094# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 94th 3x3 triangular HTile, 86th dust
   Axiom c9f++c12f++c14f
-  f=ggg++fgf++g++f|f++f--f|f++f++fg++ggg  
+  f=ggg++fgf++g++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
@@ -1448,7 +1448,7 @@ tr30095# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 95th 3x3 triangular HTile, 87th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=fgg++ggf++g++f|f++f--f|f++f++fg++ggg  
+  f=fgg++ggf++g++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
@@ -1456,7 +1456,7 @@ tr30096# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 96th 3x3 triangular HTile, 88th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=ggf++fgg++g++f|f++f--f|f++f++fg++ggg  
+  f=ggf++fgg++g++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
@@ -1464,42 +1464,42 @@ tr30097# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 97th 3x3 triangular HTile, 89th dust
   ; Same as tr30096...
   Axiom c9f++c12f++c14f
-  f=ggf++fgg++g++f|f++f--f|f++f++fg++ggg  
+  f=ggf++fgg++g++f|f++f--f|f++f++fg++ggg
   g=ggg
   }
 
 tr30098# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 98th 3x3 triangular HTile, 90th dust
   Axiom c9f++c12f++c14f
-  f=ggg++fff++g++f|f++f--f|f++f++gg++ggg  
+  f=ggg++fff++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
 tr30099# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 99th 3x3 triangular HTile, 91st dust
   Axiom c9f++c12f++c14f
-  f=fgg++gff++g++f|f++f--f|f++f++gg++ggg  
+  f=fgg++gff++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
 tr30100# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 100th 3x3 triangular HTile, 92nd dust
   Axiom c9f++c12f++c14f
-  f=gfg++fgf++g++f|f++f--f|f++f++gg++ggg  
+  f=gfg++fgf++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
 tr30101# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 101st 3x3 triangular HTile, 93rd dust
   Axiom c9f++c12f++c14f
-  f=ggf++ffg++g++f|f++f--f|f++f++gg++ggg  
+  f=ggf++ffg++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
 tr30102# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 102nd 3x3 triangular HTile, 94th dust
   Axiom c9f++c12f++c14f
-  f=gff++fgg++g++f|f++f--f|f++f++gg++ggg  
+  f=gff++fgg++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
@@ -1507,7 +1507,7 @@ tr30103# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 103rd 3x3 triangular HTile, 95th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=fgf++gfg++g++f|f++f--f|f++f++gg++ggg  
+  f=fgf++gfg++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 
@@ -1515,7 +1515,7 @@ tr30104# { ; Anthony Hanmer 19/10/2002
   Angle 6 ; 104th 3x3 triangular HTile, 96th dust
   ; One of my VERY best HTs
   Axiom c9f++c12f++c14f
-  f=ffg++ggf++g++f|f++f--f|f++f++gg++ggg  
+  f=ffg++ggf++g++f|f++f--f|f++f++gg++ggg
   g=ggg
   }
 

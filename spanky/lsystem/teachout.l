@@ -18,26 +18,26 @@
 ; To: NOEL_GIFFIN <noel@triumf.ca>
 ; Subject: Gary Teachout's lsystems
 ; Content-Type: multipart/mixed; boundary="------------33F299553F2"
-; 
-; 
+;
+;
 ; Some of Gary's lsystems are so weird I added some of his comments in
 ; hopes somebody might understand what he's talking about.  His plant-like
 ; lsystems grow very very slowly but look more realistic than others I
 ; have seen.
-; 
+;
 ; ===============================================================
 ; Content-Type: text/plain; charset=us-ascii; name="teachout.l"
 ; Content-Transfer-Encoding: 7bit
 ; Content-Disposition: inline; filename="teachout.l"
-; 
+;
 ; Gary Teachout's lsystems converted to Fractint lsystem syntax by William McWorter
 ; Those lsystems with a * by Gary's name were written by Gary.
-; 
+;
 ; The dragon, c-curve, tri2m, leaf and fern, all use a delay to simulate size
 ; limit recursion.  Hex-7-b is just the Gosper tiling (FlowSnake) with
 ; gingerbread.  Peano-c is just the third form of the Peano curve, I included
 ; this one because I didn't see it among the other l-system files.
-; 
+;
 ; The dragon, c-curve, and fern look best at high res and high orders.
 ; I like the leaf and maple best at the orders just lower than where they
 ; fill in solid.  Most of these require floating point mode.
@@ -410,7 +410,7 @@ Tri-2-e { ; Gary Teachout *
   }
 
 
-Tri-99-a  { ; Gary Teachout 
+Tri-99-a  { ; Gary Teachout
   Angle 24
   Axiom x
   x=++++y----f----z|---@q2f@iq2+++z--f------x---@q2f@iq2-----y+++@q2f@iq2+++++x++++f++++w|+++@q2f@iq2---w++f++x
@@ -566,7 +566,7 @@ Tri-4-f { ; Gary Teachout
   Angle 12
   Axiom x
   x=++fy-fp++fp---fx---fp-fy+++fp+fx
-  y=--fx+fp--fp+++fy+++fp+fx---fp-fy ; fy--fp--fx+fp+++fy+++@1.25fp--fp@i1.25+fx-- ; 
+  y=--fx+fp--fp+++fy+++fp+fx---fp-fy ; fy--fp--fx+fp+++fy+++@1.25fp--fp@i1.25+fx-- ;
   f=
   p=fp
   }

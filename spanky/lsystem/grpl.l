@@ -9,7 +9,7 @@ _README {; Anthony Hanmer 2001
          ; the Angles could be changed by an arbitrarily small amount,
          ; resulting in smooth transitions from one to the next -
          ; and ANIMATIONS.
-         ; Changing the ratio in the same way would give a different series 
+         ; Changing the ratio in the same way would give a different series
          ; of animations.  And combining these 2 sets of changes
          ; would result in a third series.
   }
@@ -316,7 +316,7 @@ pl04+ {  ; Anthony Hanmer 2001
 
 pl04-- {  ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series begins
-  Axiom x; 
+  Axiom x;
   x=f[+!@.6180339887499x-x]
   }
 
@@ -328,7 +328,7 @@ pl04++ {  ; Anthony Hanmer 2001
 
 pl04--- {  ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series begins
-  Axiom x; 
+  Axiom x;
   x=f[+!@.6180339887499x!-x]
   }
 
@@ -707,13 +707,13 @@ pl04af { ; Anthony Hanmer 2001
 
 pl04ag { ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.6180339887499x!!-x]
   }
 
 pl04ag! {; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+!@.6180339887499x!!-x]
   }
 
@@ -761,150 +761,150 @@ pl04ak { ; Anthony Hanmer 2001
 
 pl04al { ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.6180339887499x[@.5f]!-x]
   }
 
 pl04am { ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.6180339887499x!-x[@.5f]]
   }
 
 pl04an { ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.6180339887499x[@.5f]!+x]
   }
 
 pl04ao { ; Anthony Hanmer 2001
   Angle 4; Golden Ratio plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.6180339887499x!+x[@.5f]]
   }
 
 pl04ap {  ; Anthony Hanmer 2001
   Angle 4 ; Golden Ratio plant series
-  Axiom +x; 
+  Axiom +x;
   x=f[+!@iq2x[@iq2f]!--x]
   }
 
 pl04aq {  ; Anthony Hanmer 2001
   Angle 4 ; Golden Ratio plant series
-  Axiom +x; 
+  Axiom +x;
   x=f[+!@iq2x!--[@.5f]x]
   }
 
 pl04ar {  ; Anthony Hanmer 2001
   Angle 4 ; Golden Ratio plant series
-  Axiom +x; 
+  Axiom +x;
   x=f[+!@iq2x!--x[+!@iq2f]]
   }
 
 pl05- {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl05+ {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl05-- {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl05++ {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl05+++ {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
 
 pl05a {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!--x]
   }
 
 pl05a! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!--x]
   }
 
 pl05b {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++x]
   }
 
 pl05b!1 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x++x]
   }
 
 pl05b!2 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++x]
   }
 
 pl05c {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]!
   }
 
 pl05c! { ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!-x]!
   }
 
 pl05d {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]!
   }
 
 pl05d! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]!
   }
 
 pl05e {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!--x]!
   }
 
 pl05e! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!--x]!
   }
 
 pl05f {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++x]!
   }
 
 pl05f! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++x]!
   }
@@ -952,175 +952,175 @@ pl05j! { ; Anthony Hanmer 2001
   }
 
 pl05k {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!-x]
   }
 
 pl05k! {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!-x]
   }
 
 pl05l {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!+x]
   }
 
 pl05l! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!+x]
   }
 
 pl05m {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!--x]
   }
 
 pl05n {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!++x]
   }
 
 pl05n! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!++x]
   }
 
 pl05o {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!-x]!
   }
 
 pl05o! { ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!-x]!
   }
 
 pl05p {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!+x]!
   }
 
 pl05p! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!+x]!
   }
 
 pl05q {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!--x]!
   }
 
 pl05q! { ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!--x]!
   }
 
 pl05r {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++@.6180339887499x!++x]!
   }
 
 pl05r! { ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f[++!@.6180339887499x!++x]!
   }
 
 pl05s {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+f[+@.6180339887499x!-x]
   }
 
 pl05s!1 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+f[+!@.6180339887499x!-x]
   }
 
 pl05s!2 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+!f[+@.6180339887499x!-x]
   }
 
 pl05t {  ; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+f[+@.6180339887499x!+x]
   }
 
 pl05t!1 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+f[+!@.6180339887499x!+x]
   }
 
 pl05t!2 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+!f[+@.6180339887499x!+x]
   }
 
 pl05t!3 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f+!f[+!@.6180339887499x!+x]
   }
 
 pl05u {  ;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-f[+@.6180339887499x!-x]
   }
 
 pl05u!1 {;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-f[+!@.6180339887499x!-x]
   }
 
 pl05u!2 {;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-!f[+@.6180339887499x!-x]
   }
 
 pl05u!3 {;Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-!f[+!@.6180339887499x!-x]
   }
 
 pl05v!1 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-f[+!@.6180339887499x!+x]
   }
 
 pl05v!2 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-!f[+@.6180339887499x!+x]
   }
 
 pl05v!3 {; Anthony Hanmer 2001
-  Angle 5; Golden Ratio plant series 
+  Angle 5; Golden Ratio plant series
   Axiom x
   x=f-!f[+!@.6180339887499x!+x]
   }
@@ -3456,31 +3456,31 @@ pl08iq2+ {; Anthony Hanmer 2001
   }
 
 pl10- {   ; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl10+ {   ; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl10-- {   ; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl10++ {   ; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl10+++ {   ; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
@@ -3516,43 +3516,43 @@ pl10c! {  ; Anthony Hanmer 2001
   }
 
 pl10iq2- {; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!-x]
   }
 
 pl10iq2+ {; Anthony Hanmer 2001
-  Angle 10; Golden Ratio plant series 
+  Angle 10; Golden Ratio plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!+x]
   }
 
 pl12- {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl12+ {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl12-- {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl12++ {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl12+++ {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
@@ -3576,31 +3576,31 @@ pl12b! {  ; Anthony Hanmer 2001
   }
 
 pl12c {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-@1.6180339887499x]
   }
 
 pl12d {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+@1.6180339887499x]
   }
 
 pl12e {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 pl12f {   ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 pl12f! {  ; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }
@@ -3612,193 +3612,193 @@ pl12q  {  ; Anthony Hanmer 2001
   }
 
 pl12iq2- {; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!-x]
   }
 
 pl12iq2+ {; Anthony Hanmer 2001
-  Angle 12; Golden Ratio plant series 
+  Angle 12; Golden Ratio plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!+x]
   }
 
 pl14- {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl14+ {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl14-- {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl14++ {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl14+++ {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
 
 pl14a {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++x]
   }
 
 pl14a! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++x]
   }
 
 pl14b {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+++x]
   }
 
 pl14b! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+++x]
   }
 
 pl14c {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++++x]
   }
 
 pl14c! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++++x]
   }
 
 pl14d {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+++++x]
   }
 
 pl14d! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+++++x]
   }
 
 pl14e {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++++++x]
   }
 
 pl14f {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++++++++x]
   }
 
 pl14f! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++++++++x]
   }
 
 pl14g {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+++++++++x]
   }
 
 pl14g! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+++++++++x]
   }
 
 pl14h {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++++++++++x]
   }
 
 pl14h! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++++++++++x]
   }
 
 pl14i {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+++++++++++x]
   }
 
 pl14i! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+++++++++++x]
   }
 
 pl14j {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!++++++++++++x]
   }
 
 pl14j! {  ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!++++++++++++x]
   }
 
 pl14k {   ; Anthony Hanmer 2001
-  Angle 14; Golden Ratio plant series 
+  Angle 14; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+++++++++++++x]
   }
 
 pl16- {   ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl16+ {   ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl16-- {   ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl16++ {   ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl16+++ {   ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
@@ -4308,169 +4308,169 @@ pl16ap! { ; Anthony Hanmer 2001
   }
 
 pl16aq {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-@1.6180339887499x]
   }
 
 pl16ar {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+@1.6180339887499x]
   }
 
 pl16as {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-@.6180339887499x]
   }
 
 pl16at {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+@.6180339887499x]
   }
 
 pl16at! { ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+@.6180339887499x]
   }
 
 pl16au {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 pl16av {  ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 pl16av! { ; Anthony Hanmer 2001
-  Angle 16; Golden Ratio plant series 
+  Angle 16; Golden Ratio plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }
 
 pl18- {   ; Anthony Hanmer 2001
-  Angle 18; Golden Ratio plant series 
+  Angle 18; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl18+ {   ; Anthony Hanmer 2001
-  Angle 18; Golden Ratio plant series 
+  Angle 18; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl18-- {  ; Anthony Hanmer 2001
-  Angle 18; Golden Ratio plant series 
+  Angle 18; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl18++ {  ; Anthony Hanmer 2001
-  Angle 18; Golden Ratio plant series 
+  Angle 18; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl18+++ {  ; Anthony Hanmer 2001
-  Angle 18; Golden Ratio plant series 
+  Angle 18; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
 
 pl20- {   ; Anthony Hanmer 2001
-  Angle 20; Golden Ratio plant series 
+  Angle 20; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl20+ {   ; Anthony Hanmer 2001
-  Angle 20; Golden Ratio plant series 
+  Angle 20; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl20-- {  ; Anthony Hanmer 2001
-  Angle 20; Golden Ratio plant series 
+  Angle 20; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl20++ {  ; Anthony Hanmer 2001
-  Angle 20; Golden Ratio plant series 
+  Angle 20; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl20+++ {  ; Anthony Hanmer 2001
-  Angle 20; Golden Ratio plant series 
+  Angle 20; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
 
 pl22- {   ; Anthony Hanmer 2001
-  Angle 22; Golden Ratio plant series 
+  Angle 22; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl22+ {   ; Anthony Hanmer 2001
-  Angle 22; Golden Ratio plant series 
+  Angle 22; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl22-- {  ; Anthony Hanmer 2001
-  Angle 22; Golden Ratio plant series 
+  Angle 22; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl22++ {  ; Anthony Hanmer 2001
-  Angle 22; Golden Ratio plant series 
+  Angle 22; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl22+++ {  ; Anthony Hanmer 2001
-  Angle 22; Golden Ratio plant series 
+  Angle 22; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
 
 pl24- {   ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-x]
   }
 
 pl24+ {   ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+x]
   }
 
 pl24-- {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x-x]
   }
 
 pl24++ {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x+x]
   }
 
 pl24+++ { ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+x]
   }
@@ -4938,55 +4938,55 @@ pl24al! { ; Anthony Hanmer 2001
   }
 
 pl24am {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-@1.6180339887499x]
   }
 
 pl24an {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+@1.6180339887499x]
   }
 
 pl24an! { ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+@1.6180339887499x]
   }
 
 pl24ao {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!-@.6180339887499x]
   }
 
 pl24ap {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@.6180339887499x!+@.6180339887499x]
   }
 
 pl24ap! { ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@.6180339887499x!+@.6180339887499x]
   }
 
 pl24aq {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 pl24ar {  ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 pl24ar! { ; Anthony Hanmer 2001
-  Angle 24; Golden Ratio plant series 
+  Angle 24; Golden Ratio plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }

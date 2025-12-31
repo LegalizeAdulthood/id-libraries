@@ -1,7 +1,7 @@
 ; This last posting for now should be called Maze09.l
-; (They're all variations on William McWorter's Maze09, and playing with only 
+; (They're all variations on William McWorter's Maze09, and playing with only
 ; the top half gave me the inspiration for Horizons.)
-; 
+;
 ; Tony Hanmer
 
 T184 { ; Anthony Hanmer 2000
@@ -175,21 +175,21 @@ T215b { ; Anthony Hanmer 2000
 T220 { ; Anthony Hanmer 2000
   Angle 36 ; Looking to William McWorter's Maze09
   Axiom f
-  
+
 f=ff+++++++++f++++++++f++++++++++++++++++f--------ff--------f------------------f++++++++f---------ff
   }
 
 T221 { ; Anthony Hanmer 2000
   Angle 36 ; Looking to William McWorter's Maze09
   Axiom f
-  
+
 f=f+++++++++f++++++++f++++++++++++++++++f--------ff--------f------------------f++++++++f---------ff
   }
 
 T222 { ; Anthony Hanmer 2000
   Angle 36 ; Looking to William McWorter's Maze09
   Axiom f
-  
+
 f=ff+++++++++f++++++++f++++++++++++++++++f--------ff--------f------------------f++++++++f---------f
   }
 

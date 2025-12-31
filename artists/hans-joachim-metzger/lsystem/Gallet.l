@@ -5,7 +5,7 @@ Untitled { ; William McWorter
   x=fx-fy-fx+fy+fx+fy-fx-fy+
   y=-fx+fy+fx-fy-fx-fy+fx+fy
   }
-Flower { ; 
+Flower { ;
 Angle 30
 Axiom F
 F=+a-b-kk-eee-hhhhh-iiiiiiii-jjjjjjjjjjjjj

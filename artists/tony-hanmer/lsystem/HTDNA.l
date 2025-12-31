@@ -4,7 +4,7 @@ _README { ; Anthony Hanmer 17/11/2002
   f=f     ; tile, simply copy the required sequence, and switch on the desired "genes"
           ; (line segments) by changing g or G to f or F for each.  (Sequences for
           ; 6x6 and larger tiles surpass Fractint's 160-character line length limit
-          ; for L-systems.)  There are many different ways of programming each 
+          ; for L-systems.)  There are many different ways of programming each
           ; sequence; the main thing is that it covers the entire tile space
           ; evenly with no overlaps.  These are probably the most efficient
           ; DNA sequences for these tiles, though if one wished to, one could

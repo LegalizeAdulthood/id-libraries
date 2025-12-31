@@ -9,7 +9,7 @@ _README {; Anthony Hanmer 2001
          ; the Angles could be changed by an arbitrarily small amount,
          ; resulting in smooth transitions from one to the next -
          ; and ANIMATIONS.
-         ; Changing the ratio in the same way would give a different series 
+         ; Changing the ratio in the same way would give a different series
          ; of animations.  And combining these 2 sets of changes
          ; would result in a third series.
 
@@ -317,7 +317,7 @@ gq04+ {  ; Anthony Hanmer 2001
 
 gq04-- {  ; Anthony Hanmer 2001
   Angle 4; "Avg of Golden Ratio + iq2" plant series begins
-  Axiom x; 
+  Axiom x;
   x=f[+!@.66257038494x-x]
   }
 
@@ -329,7 +329,7 @@ gq04++ {  ; Anthony Hanmer 2001
 
 gq04--- {  ; Anthony Hanmer 2001
   Angle 4; "Avg of Golden Ratio + iq2" plant series begins
-  Axiom x; 
+  Axiom x;
   x=f[+!@.66257038494x!-x]
   }
 
@@ -708,13 +708,13 @@ gq04af { ; Anthony Hanmer 2001
 
 gq04ag { ; Anthony Hanmer 2001
   Angle 4; "Avg of Golden Ratio + iq2" plant series
-  Axiom x; 
+  Axiom x;
   x=f[+@.66257038494x!!-x]
   }
 
 gq04ag! {; Anthony Hanmer 2001
   Angle 4; "Avg of Golden Ratio + iq2" plant series
-  Axiom x; 
+  Axiom x;
   x=f[+!@.66257038494x!!-x]
   }
 
@@ -761,109 +761,109 @@ gq04ak {; Anthony Hanmer 2001
   }
 
 gq05- {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq05+ {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq05-- {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq05++ {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq05+++ {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
 
 gq05a {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!--x]
   }
 
 gq05a! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!--x]
   }
 
 gq05b {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++x]
   }
 
 gq05b!1 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x++x]
   }
 
 gq05b!2 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++x]
   }
 
 gq05c {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]!
   }
 
 gq05c! { ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!-x]!
   }
 
 gq05d {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]!
   }
 
 gq05d! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]!
   }
 
 gq05e {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!--x]!
   }
 
 gq05e! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!--x]!
   }
 
 gq05f {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++x]!
   }
 
 gq05f! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++x]!
   }
@@ -911,175 +911,175 @@ gq05j! { ; Anthony Hanmer 2001
   }
 
 gq05k {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!-x]
   }
 
 gq05k! {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!-x]
   }
 
 gq05l {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!+x]
   }
 
 gq05l! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!+x]
   }
 
 gq05m {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!--x]
   }
 
 gq05n {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!++x]
   }
 
 gq05n! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!++x]
   }
 
 gq05o {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!-x]!
   }
 
 gq05o! { ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!-x]!
   }
 
 gq05p {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!+x]!
   }
 
 gq05p! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!+x]!
   }
 
 gq05q {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!--x]!
   }
 
 gq05q! { ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!--x]!
   }
 
 gq05r {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++@.66257038494x!++x]!
   }
 
 gq05r! { ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[++!@.66257038494x!++x]!
   }
 
 gq05s {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+f[+@.66257038494x!-x]
   }
 
 gq05s!1 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+f[+!@.66257038494x!-x]
   }
 
 gq05s!2 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+!f[+@.66257038494x!-x]
   }
 
 gq05t {  ; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+f[+@.66257038494x!+x]
   }
 
 gq05t!1 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+f[+!@.66257038494x!+x]
   }
 
 gq05t!2 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+!f[+@.66257038494x!+x]
   }
 
 gq05t!3 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f+!f[+!@.66257038494x!+x]
   }
 
 gq05u {  ;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-f[+@.66257038494x!-x]
   }
 
 gq05u!1 {;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-f[+!@.66257038494x!-x]
   }
 
 gq05u!2 {;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-!f[+@.66257038494x!-x]
   }
 
 gq05u!3 {;Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-!f[+!@.66257038494x!-x]
   }
 
 gq05v!1 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-f[+!@.66257038494x!+x]
   }
 
 gq05v!2 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-!f[+@.66257038494x!+x]
   }
 
 gq05v!3 {; Anthony Hanmer 2001
-  Angle 5; "Avg of Golden Ratio + iq2" plant series 
+  Angle 5; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f-!f[+!@.66257038494x!+x]
   }
@@ -3377,31 +3377,31 @@ gq08iq2+ {; Anthony Hanmer 2001
   }
 
 gq10- {   ; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq10+ {   ; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq10-- {   ; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq10++ {   ; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq10+++ {   ; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
@@ -3437,43 +3437,43 @@ gq10c! {  ; Anthony Hanmer 2001
   }
 
 gq10iq2- {; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!-x]
   }
 
 gq10iq2+ {; Anthony Hanmer 2001
-  Angle 10; "Avg of Golden Ratio + iq2" plant series 
+  Angle 10; "Avg of Golden Ratio + iq2" plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!+x]
   }
 
 gq12- {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq12+ {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq12-- {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq12++ {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq12+++ {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
@@ -3497,31 +3497,31 @@ gq12b! {  ; Anthony Hanmer 2001
   }
 
 gq12c {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-@i.66257038494x]
   }
 
 gq12d {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+@i.66257038494x]
   }
 
 gq12e {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 gq12f {   ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 gq12f! {  ; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }
@@ -3533,193 +3533,193 @@ gq12q  {  ; Anthony Hanmer 2001
   }
 
 gq12iq2- {; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!-x]
   }
 
 gq12iq2+ {; Anthony Hanmer 2001
-  Angle 12; "Avg of Golden Ratio + iq2" plant series 
+  Angle 12; "Avg of Golden Ratio + iq2" plant series
   Axiom x ; overlap by enlarging ratio
   x=f[+@iq2x!+x]
   }
 
 gq14- {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq14+ {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq14-- {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq14++ {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq14+++ {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
 
 gq14a {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++x]
   }
 
 gq14a! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++x]
   }
 
 gq14b {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+++x]
   }
 
 gq14b! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+++x]
   }
 
 gq14c {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++++x]
   }
 
 gq14c! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++++x]
   }
 
 gq14d {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+++++x]
   }
 
 gq14d! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+++++x]
   }
 
 gq14e {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++++++x]
   }
 
 gq14f {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++++++++x]
   }
 
 gq14f! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++++++++x]
   }
 
 gq14g {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+++++++++x]
   }
 
 gq14g! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+++++++++x]
   }
 
 gq14h {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++++++++++x]
   }
 
 gq14h! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++++++++++x]
   }
 
 gq14i {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+++++++++++x]
   }
 
 gq14i! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+++++++++++x]
   }
 
 gq14j {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!++++++++++++x]
   }
 
 gq14j! {  ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!++++++++++++x]
   }
 
 gq14k {   ; Anthony Hanmer 2001
-  Angle 14; "Avg of Golden Ratio + iq2" plant series 
+  Angle 14; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+++++++++++++x]
   }
 
 gq16- {   ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq16+ {   ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq16-- {   ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq16++ {   ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq16+++ {   ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
@@ -4229,169 +4229,169 @@ gq16ap! { ; Anthony Hanmer 2001
   }
 
 gq16aq {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-@i.66257038494x]
   }
 
 gq16ar {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+@i.66257038494x]
   }
 
 gq16as {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-@.66257038494x]
   }
 
 gq16at {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+@.66257038494x]
   }
 
 gq16at! { ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+@.66257038494x]
   }
 
 gq16au {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 gq16av {  ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 gq16av! { ; Anthony Hanmer 2001
-  Angle 16; "Avg of Golden Ratio + iq2" plant series 
+  Angle 16; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }
 
 gq18- {   ; Anthony Hanmer 2001
-  Angle 18; "Avg of Golden Ratio + iq2" plant series 
+  Angle 18; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq18+ {   ; Anthony Hanmer 2001
-  Angle 18; "Avg of Golden Ratio + iq2" plant series 
+  Angle 18; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq18-- {  ; Anthony Hanmer 2001
-  Angle 18; "Avg of Golden Ratio + iq2" plant series 
+  Angle 18; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq18++ {  ; Anthony Hanmer 2001
-  Angle 18; "Avg of Golden Ratio + iq2" plant series 
+  Angle 18; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq18+++ {  ; Anthony Hanmer 2001
-  Angle 18; "Avg of Golden Ratio + iq2" plant series 
+  Angle 18; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
 
 gq20- {   ; Anthony Hanmer 2001
-  Angle 20; "Avg of Golden Ratio + iq2" plant series 
+  Angle 20; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq20+ {   ; Anthony Hanmer 2001
-  Angle 20; "Avg of Golden Ratio + iq2" plant series 
+  Angle 20; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq20-- {  ; Anthony Hanmer 2001
-  Angle 20; "Avg of Golden Ratio + iq2" plant series 
+  Angle 20; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq20++ {  ; Anthony Hanmer 2001
-  Angle 20; "Avg of Golden Ratio + iq2" plant series 
+  Angle 20; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq20+++ {  ; Anthony Hanmer 2001
-  Angle 20; "Avg of Golden Ratio + iq2" plant series 
+  Angle 20; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
 
 gq22- {   ; Anthony Hanmer 2001
-  Angle 22; "Avg of Golden Ratio + iq2" plant series 
+  Angle 22; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq22+ {   ; Anthony Hanmer 2001
-  Angle 22; "Avg of Golden Ratio + iq2" plant series 
+  Angle 22; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq22-- {  ; Anthony Hanmer 2001
-  Angle 22; "Avg of Golden Ratio + iq2" plant series 
+  Angle 22; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq22++ {  ; Anthony Hanmer 2001
-  Angle 22; "Avg of Golden Ratio + iq2" plant series 
+  Angle 22; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq22+++ {  ; Anthony Hanmer 2001
-  Angle 22; "Avg of Golden Ratio + iq2" plant series 
+  Angle 22; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
 
 gq24- {   ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-x]
   }
 
 gq24+ {   ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+x]
   }
 
 gq24-- {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x-x]
   }
 
 gq24++ {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x+x]
   }
 
 gq24+++ { ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+x]
   }
@@ -4859,55 +4859,55 @@ gq24al! { ; Anthony Hanmer 2001
   }
 
 gq24am {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-@i.66257038494x]
   }
 
 gq24an {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+@i.66257038494x]
   }
 
 gq24an! { ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+@i.66257038494x]
   }
 
 gq24ao {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!-@.66257038494x]
   }
 
 gq24ap {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@.66257038494x!+@.66257038494x]
   }
 
 gq24ap! { ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@.66257038494x!+@.66257038494x]
   }
 
 gq24aq {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!-@iq2x]
   }
 
 gq24ar {  ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+@iq2x!+@iq2x]
   }
 
 gq24ar! { ; Anthony Hanmer 2001
-  Angle 24; "Avg of Golden Ratio + iq2" plant series 
+  Angle 24; "Avg of Golden Ratio + iq2" plant series
   Axiom x
   x=f[+!@iq2x!+@iq2x]
   }

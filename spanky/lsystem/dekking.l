@@ -39,7 +39,7 @@ Dekking3err {
   f=
   g=
   }
-  
+
 Dekking2 { ; Penrose's rhombus tiling
   Angle 10
   Axiom k
@@ -92,7 +92,7 @@ Dekking5 { ; Dekking's boundary of the Twindragon
   z=-f+zfw
   }
 
-Dekking { ; Dekking's Church 
+Dekking { ; Dekking's Church
   ; Advances in Math, vol. 44, 1982, pp. 78-104
   Angle 4
   Axiom C32WC06ZC15YC06X
@@ -191,7 +191,7 @@ Dekking2&Med {
   f=
   a=fa
   }
-  
+
 Dekking2 { ; Penrose's rhombus tiling
   Angle 10
   Axiom k

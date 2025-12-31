@@ -41,9 +41,9 @@ PT4    {; Jaume Bartrol°
         ; Broccoli-Like Phythagoras Tree
         ; From "Chaos and Fractals" by Peitgen, JÅrgens and Saupe
         ; Figure 2.67, p. 130
-        ; Using D, \nn and /nn 
+        ; Using D, \nn and /nn
         ; .532 is 1/(2cos20¯)
-Angle 3 ; Only to avoid errors, we do not use this angle 
+Angle 3 ; Only to avoid errors, we do not use this angle
 Axiom D\90D[A]\90D[B]\90D
 A=/20@.532D[A]\90D[B]\90D\90D
 B=/160@.532D\90D[A]\90D[B]\90D
@@ -69,7 +69,7 @@ PT6    {; Jaume Bartrol°
         ; Inspired on Figures 2.64 and 2.65, p. 128 and 129
         ; Construction with a triangle of sides 3, 4 and 5
         ; Using D, \nn and /nn, 53.13¯ is acos(3/5)
-Angle 3 ; Only to avoid errors, we do not use this angle 
+Angle 3 ; Only to avoid errors, we do not use this angle
 Axiom D\90D[A]\90D[B]\90D
 A=/53.13@.6D[P]\90D[Q]\90D\90D
 B=/143.13@.8D\90D[P]\90D[Q]\90D
@@ -97,7 +97,7 @@ PT8    {; Jaume Bartrol°
         ; Inspired on Figures 2.64 and 2.65, p. 128 and 129
         ; Construction with a triangle of angles 40¯, 50¯ and 90¯
         ; Using D, \nn and /nn, .643 is cos50¯
-Angle 3 ; Only to avoid errors, we do not use this angle  
+Angle 3 ; Only to avoid errors, we do not use this angle
 Axiom D\90D[A]\90D[B]\90D
 A=/50@.643D[A]\90D[B]\90D\90D
 B=/140@.766D\90D[A]\90D[B]\90D
@@ -108,7 +108,7 @@ PT9    {; Jaume Bartrol°
         ; Phytagorean Tree constructed over a rectangle
         ; From "Chaos and Fractals" by Peitgen, JÅrgens and Saupe
         ; Inspired on Figures 2.64 and 2.65, p. 128 and 129
-        ; .866 is sqrt(3)/2 
+        ; .866 is sqrt(3)/2
 Angle 12
 Axiom F+++FF[A]+++F[B]+++FF
 A=--@.5FF[A]+++F[B]+++FF+++F
@@ -120,9 +120,9 @@ PT10   {; Jaume Bartrol°
         ; Broccoli-Like Phythagoras Tree over a rectangle
         ; From "Chaos and Fractals" by Peitgen, JÅrgens and Saupe
         ; Inspired on Figure 2.67, p. 130
-        ; Using D, \nn and /nn 
+        ; Using D, \nn and /nn
         ; .532 is 1/(2cos20¯)
-Angle 3 ; Only for to avoid errors, we not use this angle 
+Angle 3 ; Only for to avoid errors, we not use this angle
 Axiom DD\90D[A]\90DD[B]\90D
 A=/20@.532D[A]\90DD[B]\90D\90DD
 B=/160@.532DD\90D[A]\90DD[B]\90D
@@ -177,7 +177,7 @@ PT14   {; Jaume Bartrol°
         ; Phytagorean Tree, using G and over a rectangle
         ; From "Chaos and Fractals" by Peitgen, JÅrgens and Saupe
         ; Inspired on Figures 2.64 and 2.65, p. 128 and 129
-        ; .866 is sqrt(3)/2 
+        ; .866 is sqrt(3)/2
 Angle 12
 Axiom F+++FF[A]+++G[B]+++FF
 A=--@.5FF[A]+++G[B]+++FF+++G
@@ -204,7 +204,7 @@ PT16   {; Jaume Bartrol°
         ; From "Chaos and Fractals" by Peitgen, JÅrgens and Saupe
         ; Inspired on Figure 2.67, p. 130
         ; .532 is 1/2(cos20ß)
-Angle 3 ; Only for to avoid errors, we not use this angle 
+Angle 3 ; Only for to avoid errors, we not use this angle
 Axiom D\90D[A]\90M[B]\90D
 A=/20@.532D[A]\90M[B]\90D\90M
 B=/160@.532M\90D[A]\90M[B]\90D
@@ -221,7 +221,7 @@ F=@.3F+@I.3@Q.21F--F+@IQ.21@.7F@I.7
 
 
 ROT2    {; Jaume Bartrol°
-         ; Row Of Trees inspired on 
+         ; Row Of Trees inspired on
          ; "The Algorithmic Beauty Of Plants", p. 46, 47 and 48
 Angle 5
 Axiom F
@@ -230,7 +230,7 @@ F=@.3F+@I.3@Q.21F--F+@IQ.21@.7F@I.7
 
 
 ROT3    {; Jaume Bartrol°
-         ; Row Of Trees inspired on 
+         ; Row Of Trees inspired on
          ; "The Algorithmic Beauty Of Plants", p. 46, 47 and 48
 Angle 30
 Axiom F
@@ -239,7 +239,7 @@ F=@.3F+++++++@I.3@Q.21F--------------F+++++++@IQ.21@.7F@I.7
 
 
 ROT4    {; Jaume Bartrol°
-         ; Row Of Trees inspired on 
+         ; Row Of Trees inspired on
          ; "The Algorithmic Beauty Of Plants", p. 46, 47 and 48
 Angle 3  ; Only for to avoid errors, we not use this angle
 Axiom D
@@ -248,7 +248,7 @@ D=@.3D\86@I.3@Q.21D/172D\86@IQ.21@.7D@I.7
 
 
 ROT5    {; Jaume Bartrol°
-         ; Row Of Trees inspired on 
+         ; Row Of Trees inspired on
          ; "The Algorithmic Beauty Of Plants", p. 46, 47 and 48
 Angle 3  ; Only for to avoid errors, we not use this angle
 Axiom D
@@ -257,7 +257,7 @@ D=@.3D\88@I.3@Q.21D/176D\88@IQ.21@.7D@I.7
 
 
 ROT6    {; Jaume Bartrol°
-         ; Row Of Trees inspired on 
+         ; Row Of Trees inspired on
          ; "The Algorithmic Beauty Of Plants", p. 46, 47 and 48
 Angle 3  ; Only for to avoid errors, we not use this angle
 Axiom D

@@ -7,14 +7,14 @@ _README {; Anthony Hanmer2001
 Feather { ; Ole Jorgensen original
   Angle 30; (colours removed)
   Axiom F
-  X=-F[-X]-F[-X] 
+  X=-F[-X]-F[-X]
   F=+F[-X]-F[-X]
   }
 
 Feather01 { ; Ole Jorgensen original
   Angle 6   ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-F[-X]-F[-X] 
+  X=-F[-X]-F[-X]
   F=+F[-X]-F[-X]
   }
 
@@ -28,7 +28,7 @@ Feather01! { ; Ole Jorgensen original
 Feather02 { ; Ole Jorgensen original
   Angle 8   ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-F[-X]-F[-X] 
+  X=-F[-X]-F[-X]
   F=+F[-X]-F[-X]
   }
 
@@ -42,7 +42,7 @@ Feather02! { ; Ole Jorgensen original
 Feather03 { ; Ole Jorgensen original
   Angle 16  ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-F[-X]-F[-X] 
+  X=-F[-X]-F[-X]
   F=+F[-X]-F[-X]
   }
 
@@ -56,14 +56,14 @@ Feather03! { ; Ole Jorgensen original
 Feather03a { ; Ole Jorgensen original
   Angle 16   ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-<10F[-X]-F>10[-X] 
+  X=-<10F[-X]-F>10[-X]
   F=+<10F[-X]-F>10[-X]
   }
 
 Feather04 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.6180339887499X]+F[-@.6180339887499X] 
+  X=-F[-@.6180339887499X]+F[-@.6180339887499X]
   F=+F[-@.6180339887499X]-F[-@.6180339887499X]
   }
 
@@ -77,7 +77,7 @@ Feather04! { ; Ole Jorgensen original
 Feather05 { ; Ole Jorgensen original
   Angle 16  ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-F[-X]+F[-X] 
+  X=-F[-X]+F[-X]
   F=+F[-X]-F[-X]
   }
 
@@ -91,7 +91,7 @@ Feather05! { ; Ole Jorgensen original
 Feather06 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@iq2X]+F[-@iq2X] 
+  X=-F[-@iq2X]+F[-@iq2X]
   F=+F[-@iq2X]-F[-@iq2X]
   }
 
@@ -105,7 +105,7 @@ Feather06! { ; Ole Jorgensen original
 Feather07 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.6180339887499X]+F[-@.6180339887499X] 
+  X=-F[-@.6180339887499X]+F[-@.6180339887499X]
   F=+F[-@.6180339887499X]-F[+@.6180339887499X]
   }
 
@@ -119,21 +119,21 @@ Feather07! { ; Ole Jorgensen original
 Feather07a { ; Ole Jorgensen original
   Angle 4    ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.6X]+F[-@.6X] 
+  X=-F[-@.6X]+F[-@.6X]
   F=+F[-@.6X]-F[+@.6X]
   }
 
 Feather07b { ; Ole Jorgensen original
   Angle 4    ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.65X]+F[-@.65X] 
+  X=-F[-@.65X]+F[-@.65X]
   F=+F[-@.65X]-F[+@.65X]
   }
 
 Feather08 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.5X]+F[-@.5X] 
+  X=-F[-@.5X]+F[-@.5X]
   F=+F[-@.5X]-F[-@.5X]
   }
 
@@ -147,7 +147,7 @@ Feather08! { ; Ole Jorgensen original
 Feather09 { ; Ole Jorgensen original
   Angle 6   ; altered by Anthony Hanmer 2001
   Axiom F
-  X=-F[-@.6180339887499X]+F[-@.6180339887499X] 
+  X=-F[-@.6180339887499X]+F[-@.6180339887499X]
   F=+F[-@.6180339887499X]-F[+@.6180339887499X]
   }
 
@@ -161,7 +161,7 @@ Feather09! { ; Ole Jorgensen original
 Feather10 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[-@.6180339887499X]+F[-@.6180339887499X] 
+  X=-F[-@.6180339887499X]+F[-@.6180339887499X]
   F=+F[+@.6180339887499X]-F[+@.6180339887499X]
   }
 
@@ -252,7 +252,7 @@ Feather21 { ; Ole Jorgensen original
 Feather22 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[+@.6180339887499X]+F[-@.6180339887499X] 
+  X=-F[+@.6180339887499X]+F[-@.6180339887499X]
   F=+F[-@.6180339887499X]-F[+@.6180339887499X]
   }
 
@@ -266,7 +266,7 @@ Feather23 { ; Ole Jorgensen original
 Feather24 { ; Ole Jorgensen original
   Angle 4   ; altered by Anthony Hanmer 2001
   Axiom +F
-  X=-F[+@.6180339887499X]++F[-@.6180339887499X] 
+  X=-F[+@.6180339887499X]++F[-@.6180339887499X]
   F=+F[-@.6180339887499X]-F[+@.6180339887499X]
   }
 

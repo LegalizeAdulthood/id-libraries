@@ -1,4 +1,4 @@
-; fml_2000-04.l, a collection of l-systems posted to the 
+; fml_2000-04.l, a collection of l-systems posted to the
 ; Fractint mail list during April 2000
 ; compiled by Les St Clair <les.stclair@btinternet.com>
 
@@ -7,7 +7,7 @@
 ;Subject: (fractint) Time for some more L-Systems, 1
 ;Date: 04 Apr 2000 11:16:10 GEST
 
-README {   ; These l-systems, which I have called "Horizons", are all based 
+README {   ; These l-systems, which I have called "Horizons", are all based
 on
   Angle 8  ; a horizontal line of length 2-5 segments, with a"growth" up off
   Axiom f  ; it, which usually retraces itself to return to the horizon.

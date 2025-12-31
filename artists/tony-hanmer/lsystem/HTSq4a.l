@@ -53,9 +53,9 @@ _README {; Anthony Hanmer 2000-2003
          ;          Tr3 - 416
          ;          Tr3a- 25
          ;          Tr4 - 205
-         ;          Tr4a- 
+         ;          Tr4a-
          ;          Tr5 - 47
-         ;          Tr5a- 
+         ;          Tr5a-
          ;          Sq2 - 73
          ;          Sq2a- 17
          ;          Sq3 - 636
@@ -64,7 +64,7 @@ _README {; Anthony Hanmer 2000-2003
          ;          Sq4a- 480
          ;          Sq5 - 1220
          ;          Sq5a- 31
-         ;          Sq6 - 4725  
+         ;          Sq6 - 4725
          ;   Approx. TL - 10308 as of 3/6/2004
          }
 
@@ -979,7 +979,7 @@ sq40046# { ; Anthony Hanmer 7/10/2002
   ; 41274- - exterior variations on these;
   ; 4 - vertical versions of all the above.
   Axiom c53f+g+c12f
-  ; (Axiom note:  see Sq30006) 
+  ; (Axiom note:  see Sq30006)
   f=fff+g+f-g-f|f+g-ff-g-f|f-g-f|f+gg+fff-g+f
   g=gggg
   }

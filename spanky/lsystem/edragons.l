@@ -40,7 +40,7 @@ ADH236e { ; Anthony Hanmer 2000
 
 ADH236f { ; Anthony Hanmer 2000
   Angle 4 ; diamond, 2 colours
-  Axiom 
+  Axiom
 c9f+c12f+c9f+c12f++c12f-c9f-c12f-c9fc12f-c9f-c12f+c9f-c12f-c9f+c12f-c9f-c12f+c9f-c12f-c9f++c9f+c12f+c9f-c12f+c9f+c12f-c9f+c12f+c9f-c12f+c9f+c12f
   f=ff+f+f++ff++f+f+f
   }
@@ -59,21 +59,21 @@ ADH271b { ; Anthony Hanmer 2000
 
 ADH271c { ; Anthony Hanmer 2000
   Angle 6 ; Hexagon 1
-  Axiom 
+  Axiom
 c9f++c14f++c12f---c9f++c14f++c12f---c9f++c14f++c12f---c9f++c14f++c12f---c9f++c14f++c12f---c9f++c14f++c12f
   f=f+f+++f++f
   }
 
 ADH271d { ; Anthony Hanmer 2000
   Angle 6 ; Hexagon 2
-  Axiom 
+  Axiom
 c9f++c14f++c12f---c12f++c14f++c9f---c9f++c14f++c12f---c12f++c14f++c9f---c9f++c14f++c12f---c12f++c14f++c9f
   f=f+f+++f++f
   }
 
 ADH271e { ; Anthony Hanmer 2000
   Angle 6 ; Hexagon 3
-  Axiom 
+  Axiom
 c14f+f+f+f+f+f+++f-f-f-f-f-f--c9f--c12f+++c12f--c9f+++c9f--c12f+++c12f--c9f+++c9f--c12f+++c12f--c9f
   f=f+f+++f++f
   }
@@ -116,7 +116,7 @@ ADH489g { ; Anthony Hanmer 2000
 
 ADH489h { ; Anthony Hanmer 2000
   Angle 4 ; diamond, 2 colours
-  Axiom 
+  Axiom
 c9f+c12f+c9f+c12f++c12f-c9f-c12f-c9fc12f-c9f-c12f+c9f-c12f-c9f+c12f-c9f-c12f+c9f-c12f-c9f++c9f+c12f+c9f-c12f+c9f+c12f-c9f+c12f+c9f-c12f+c9f+c12f
   f=f+f+f++f+f++ff+ff
   }
@@ -153,7 +153,7 @@ ADH494e { ; Anthony Hanmer 2000
 
 ADH494f { ; Anthony Hanmer 2000
   Angle 4 ; diamond, 2 colours
-  Axiom 
+  Axiom
 c9f+c12f+c9f+c12f++c12f-c9f-c12f-c9fc12f-c9f-c12f+c9f-c12f-c9f+c12f-c9f-c12f+c9f-c12f-c9f++c9f+c12f+c9f-c12f+c9f+c12f-c9f+c12f+c9f-c12f+c9f+c12f
   f=f+ff++ff+f+f++f+f
   }

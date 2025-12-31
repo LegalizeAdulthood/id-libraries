@@ -5,7 +5,7 @@ Alien { ; William McWorter
   f=
   }
 
-AmmannPoly {     
+AmmannPoly {
      ;; by Philippe Hurbain
      ;; Same as AmmanPolyColor, showing only the
      ;; pentagon/hexagon tiling
@@ -219,7 +219,7 @@ Frame { ; William McWorter
   Y=+FX+FX+FXFY-FYFXFY-FY-FY
   }
 
-Grid { 
+Grid {
   Angle 4; Allow turns of 90=360/4 degrees
   Axiom f; Birth string is the symbol f (see text below)
   f=f[+f][-f]f; Replacement string for f (see text below)
@@ -246,14 +246,14 @@ Grid1 { ; William McWorter
   g=
   }
 
-Hex { 
+Hex {
   Angle 6  ; Turns are 60=360/6 degrees
   Axiom f  ; Birth string is f
-  f=-f+f+g[+f+f]- ; Replacement string for f 
+  f=-f+f+g[+f+f]- ; Replacement string for f
   g=gg  ; Replacement string for g (see text below)
   }
 
-Hex1 { 
+Hex1 {
   Angle 6
   Axiom f
   f=-f+f+f[+f+f+f]-
@@ -266,7 +266,7 @@ Hilbert {       ; Ken Philip, from The Science of Fractal Images
   angle 4
   }
 
- Hilbert1 { 
+ Hilbert1 {
   axiom z
   z=-c32Yc15f+c32Xc15Fc32X+c15Fc32Y-
   x=-YF+XFX+FY-
@@ -274,7 +274,7 @@ Hilbert {       ; Ken Philip, from The Science of Fractal Images
   angle 4
   }
 
-Hiway { 
+Hiway {
   Angle 4
   Axiom fx
   x=fx+fy
@@ -293,7 +293,7 @@ Hiway {
   Y=Fx-[---@.5gw+++c40@q2fz]-fy
   z=fz
   w=gw
-  } 
+  }
 
 Hiwayint { ; William McWorter
   Angle 4
@@ -368,7 +368,7 @@ Isocepent-2 { ; William McWorter
   f=
   }
 
-isocright { 
+isocright {
   Angle 8
   Axiom x
   x=+y-f-y+
@@ -484,7 +484,7 @@ Pentigree { ; William McWorter
   F=F-F++F+F-F-F
   }
 
-Pentive { 
+Pentive {
   Angle 10
   Axiom W
   F=
@@ -517,7 +517,7 @@ Pentive2 {
   v=--fz++++fw--fu
   }
 
-Pentive3 { 
+Pentive3 {
   Angle 10
   Axiom q
   f=
@@ -585,7 +585,7 @@ Sierpinski { ; William McWorter
   R=-L+F+L-
   }
 
-Sierpinski1 { 
+Sierpinski1 {
   Angle 8
   Axiom z
   z=x
@@ -753,7 +753,7 @@ Tiling1 {
   f=
   }
 
-Trigrid { 
+Trigrid {
   Angle 3
   Axiom f
   f=f+f-f-ff+f+f-f

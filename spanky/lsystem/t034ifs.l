@@ -323,7 +323,7 @@ ADH4047aw { ; Anthony Hanmer 2001
   }
 
 ADH4047ax {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=f[+[@.5x]x]
   }
@@ -377,7 +377,7 @@ ADH4047bc { ; Anthony Hanmer 2001
   }
 
 ADH4047bd {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]x]
   }
@@ -389,7 +389,7 @@ ADH4047bd1 {; Anthony Hanmer 2001
   }
 
 ADH4047be {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]+x]
   }
@@ -401,25 +401,25 @@ ADH4047be1 {; Anthony Hanmer 2001
   }
 
 ADH4047bf {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]+x]!
   }
 
 ADH4047bg {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]x]
   }
 
 ADH4047bh {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+++[@.5x]x]
   }
 
 ADH4047bi {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]-x]
   }
@@ -438,7 +438,7 @@ ADH4047bj1 {; Anthony Hanmer 2001
 
 ADH4047bk {; Anthony Hanmer 2001
   Angle 6  ; avg of GR + iq2
-  Axiom x 
+  Axiom x
   x=f[+[@.662570385x]++x]
   }
 
@@ -455,7 +455,7 @@ ADH4047bl1 {; Anthony Hanmer 2001
   }
 
 ADH4047bm {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]--x]
   }
@@ -467,37 +467,37 @@ ADH4047bm1 {; Anthony Hanmer 2001
   }
 
 ADH4047bn {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[@.5x]+++x]
   }
 
 ADH4047bo {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]-x]
   }
 
 ADH4047bp {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]++x]
   }
 
 ADH4047bq {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]--x]
   }
 
 ADH4047br {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]---x]
   }
 
 ADH4047bs {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[@.5x]+x]
   }
@@ -515,7 +515,7 @@ ADH4047bt {; Anthony Hanmer 2001
   }
 
 ADH4047bu {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f+[+[@.5x]-x]
   }
@@ -527,7 +527,7 @@ ADH4047bu1 {; Anthony Hanmer 2001
   }
 
 ADH4047bv {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f+[+[@.5x]+++x]
   }
@@ -539,7 +539,7 @@ ADH4047bv1 {; Anthony Hanmer 2001
   }
 
 ADH4047bw {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f+[+[@.5x]-x]
   }
@@ -581,7 +581,7 @@ ADH4047bz1 {; Anthony Hanmer 2001
   }
 
 ADH4047ca {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f[+[@.5x]x]
   }
@@ -593,7 +593,7 @@ ADH4047ca1 {; Anthony Hanmer 2001
   }
 
 ADH4047cb {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f[+[@.5x]+x]
   }
@@ -605,19 +605,19 @@ ADH4047cb1 {; Anthony Hanmer 2001
   }
 
 ADH4047cc {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f[++[@.5x]++x]
   }
 
 ADH4047cc1 {; Anthony Hanmer 2001
-  Angle 5   ; 
+  Angle 5   ;
   Axiom x   ; colour 1
   x=<1f[++[@.5x]++>1x]
   }
 
 ADH4047cd {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f[+[@.5x]--x]
   }
@@ -629,7 +629,7 @@ ADH4047cd1 {; Anthony Hanmer 2001
   }
 
 ADH4047ce {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f+[+[@.5x]-x]
   }
@@ -641,7 +641,7 @@ ADH4047ce1 {; Anthony Hanmer 2001
   }
 
 ADH4047cf {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=f[+[@.5x]x]-x
   }
@@ -671,7 +671,7 @@ ADH4047ch1 {; Anthony Hanmer 2001
   }
 
 ADH4047ci {; Anthony Hanmer 2001
-  Angle 5  ; 
+  Angle 5  ;
   Axiom x
   x=f[+[x]-@.5x]
   }
@@ -683,7 +683,7 @@ ADH4047ci1 {; Anthony Hanmer 2001
   }
 
 ADH4047cj {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+[x]-@.5x]
   }
@@ -695,7 +695,7 @@ ADH4047cj1 {; Anthony Hanmer 2001
   }
 
 ADH4047ck {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+[x]-@.5x]
   }
@@ -707,31 +707,31 @@ ADH4047ck1 {; Anthony Hanmer 2001
   }
 
 ADH4047cl {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=fx[+[@.5x]x]
   }
 
 ADH4047cm {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=f[+![@.5x]x]
   }
 
 ADH4047cn {; Anthony Hanmer 2001
-  Angle 3  ; 
+  Angle 3  ;
   Axiom x
   x=f[+![@.5x]x]
   }
 
 ADH4047co {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+![@.5x]x]
   }
 
 ADH4047cp {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=f[+![@.5x]+x]
   }
@@ -743,31 +743,31 @@ ADH4047cq {; Anthony Hanmer 2001
   }
 
 ADH4047cr {; Anthony Hanmer 2001
-  Angle 4  ; 
+  Angle 4  ;
   Axiom x
   x=f[+![@.5x]++x]
   }
 
 ADH4047cs {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+![@.5x]+x]
   }
 
 ADH4047ct {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+![@.6180339887499x]-x]
   }
 
 ADH4047cu {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+![@.5x]+++x]
   }
 
 ADH4047cv {; Anthony Hanmer 2001
-  Angle 6  ; 
+  Angle 6  ;
   Axiom x
   x=f[+![@.5x]-x]
   }
@@ -779,7 +779,7 @@ ADH4047cw {; Anthony Hanmer 2001
   }
 
 ADH4047cx {; Anthony Hanmer 2001
-  Angle 8  ; 
+  Angle 8  ;
   Axiom x
   x=f[+![@.5x]++x]
   }

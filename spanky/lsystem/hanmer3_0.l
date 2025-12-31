@@ -1,27 +1,27 @@
 
-;It? amazing how living in a place where the electricity exists for about 6 
-;hours a day, and where one doesn? have instant computer access, can be 
+;It? amazing how living in a place where the electricity exists for about 6
+;hours a day, and where one doesn? have instant computer access, can be
 ;conducive to "thought experiments".
-;The sets of  l-systems (adh119-123) which I am sending separately are all 
-;derived from only one original formula, upon which I stumbled on Feb. 13, 
-;and then thought about extensively when the power was off.  I varied the 
-;angles from the original 4 (90 degrees) to 3, 5, 6 and 8, and played with 
-;the formula each time until the results were satisfactory, and deleted the 
-;failures.  Most of the pieces have n-fold or n/2-fold rotational symmetry (n 
-;being the Angle), but a number of them also change this symmetry from order 
+;The sets of  l-systems (adh119-123) which I am sending separately are all
+;derived from only one original formula, upon which I stumbled on Feb. 13,
+;and then thought about extensively when the power was off.  I varied the
+;angles from the original 4 (90 degrees) to 3, 5, 6 and 8, and played with
+;the formula each time until the results were satisfactory, and deleted the
+;failures.  Most of the pieces have n-fold or n/2-fold rotational symmetry (n
+;being the Angle), but a number of them also change this symmetry from order
 ;to order.
 ;
-;I certainly wouldn? say that I have mastered l-systems yet - I? still 
-;playing, and rarely can I actually produce a formula which does what I WANT. 
-;  The alternative - spewing out experiments and deleting the unsuccessful 
+;I certainly wouldn? say that I have mastered l-systems yet - I? still
+;playing, and rarely can I actually produce a formula which does what I WANT.
+;  The alternative - spewing out experiments and deleting the unsuccessful
 ;ones - is enough for now.
 ;
-;Each of the following sets of l-systems (including the one below, a 
-;miscellaneous collection, to be called Hanmer03.l)  should be saved in a 
-;text editor as a text file named *.l (the * being names adh119, 120, 121, 
+;Each of the following sets of l-systems (including the one below, a
+;miscellaneous collection, to be called Hanmer03.l)  should be saved in a
+;text editor as a text file named *.l (the * being names adh119, 120, 121,
 ;122, 123).  Then Fractint can read them.
 ;
-;Enjoy - simpler than other formula types but capable of surprising richness 
+;Enjoy - simpler than other formula types but capable of surprising richness
 ;nonetheless.
 ;
 ;Tony Hanmer
@@ -307,7 +307,7 @@ ADH127b { ; Anthony Hanmer 2000
 
 ADH127c { ; Anthony Hanmer 2000
   Angle 4 ;
-  Axiom 
+  Axiom
 f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f
   f=+ff--g-g+ff
   }
@@ -379,7 +379,7 @@ ADH135a { ; Anthony Hanmer 2000
   Axiom [f-f+f]++[f-f+f]++[f-f+f]++[f-f+f]
   f=fff+++fff-ffff+fff---fff
   }
-  
+
 ADH119 { ; Anthony Hanmer 2000
   Angle 4 ;  The one that started it all...
   Axiom f

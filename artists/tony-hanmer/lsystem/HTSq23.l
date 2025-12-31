@@ -53,9 +53,9 @@ _README {; Anthony Hanmer 2000-2003
          ;          Tr3 - 416
          ;          Tr3a- 25
          ;          Tr4 - 205
-         ;          Tr4a- 
+         ;          Tr4a-
          ;          Tr5 - 47
-         ;          Tr5a- 
+         ;          Tr5a-
          ;          Sq2 - 73
          ;          Sq2a- 17
          ;          Sq3 - 636
@@ -64,7 +64,7 @@ _README {; Anthony Hanmer 2000-2003
          ;          Sq4a- 480
          ;          Sq5 - 1220
          ;          Sq5a- 31
-         ;          Sq6 - 4725  
+         ;          Sq6 - 4725
          ;   Approx. TL - 10308 as of 3/6/2004
          }
 
@@ -159,7 +159,7 @@ sq20001r { ; Anthony Hanmer 26/8/2003
   ; Usable for all HTs with 1) x-axis reflectional symmetry
   ; and with 2) all ext f on 1 straight line; and for all
   ; a-p HTs meeting condition 2.  Wild!
-  ; The resulting tile has 1/2 the area of the original tile 
+  ; The resulting tile has 1/2 the area of the original tile
   ; it was derived from:  1/8 Sq for non-a-p HTs,
   ; 1/4 Sq for a-p types.  Designation letter:  r for reflection.
   Axiom c53f+c2f+c12f+c14f
@@ -212,7 +212,7 @@ sq20002m { ; Anthony Hanmer 5/10/2002
   }
 
 sq20002r { ; Anthony Hanmer 30/8/2003
-  Angle 4 ; 
+  Angle 4 ;
   Axiom +c53f+g+c12f
   f=g|f|g+g+f|f-g+g|f|g
   g=gg
@@ -620,7 +620,7 @@ sq20018^ { ; Anthony Hanmer 19/10/2002
 
 sq20018k { ; Anthony Hanmer 19/10/2002
   Angle 4 ; 18th 2x2 square HTile (sf)
-  Axiom f ; Colour 
+  Axiom f ; Colour
   f=gg+gg+gg+>1f+gf|fg+<1f+gg
   g=gg
   }
@@ -1158,7 +1158,7 @@ sq20037# { ; Anthony Hanmer 22/10/2002
   }
 
 sq20038^ { ; Anthony Hanmer 22/10/2002
-  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust   
+  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust
   ; X-axis reflectional symmetry
   Axiom c9f;+c47f+c12f+c14f
   f=gg+fg+gg+g+ff|gg+f+gg
@@ -1166,28 +1166,28 @@ sq20038^ { ; Anthony Hanmer 22/10/2002
   }
 
 sq20038k { ; Anthony Hanmer 22/10/2002
-  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust   
+  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust
   Axiom f ; Colour 1
   f=gg+>1fg+gg+g+ff|gg+<1f+gg
   g=gg
   }
 
 sq20038l { ; Anthony Hanmer 22/10/2002
-  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust   
+  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust
   Axiom f ; Colour 2
   f=gg+>1fg+gg+g+>1f<1f|gg+<1f+gg
   g=gg
   }
 
 sq20038m { ; Anthony Hanmer 22/10/2002
-  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust   
+  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust
   Axiom f ; Colour 3
   f=gg+>1fg+gg+g+<1f>1f|gg+<1f+gg
   g=gg
   }
 
 sq20038n { ; Anthony Hanmer 22/10/2002
-  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust   
+  Angle 4 ; 38th 2x2 square HTile, 21st (sf) dust
   Axiom f ; Colour 4
   f=gg+>1fg+gg+g+<1f<1f|gg+>1f+gg
   g=gg
@@ -1411,7 +1411,7 @@ sq20050m { ; Anthony Hanmer 23/10/2002
 
 sq20051^ { ; Anthony Hanmer 23/10/2002
   Angle 4 ; 51st 2x2 square HTile, 32nd (sf) dust
-  Axiom f ; 
+  Axiom f ;
   f=fg+gg+gg+g+ff|gg+g+gf
   g=gg
   }
@@ -1672,7 +1672,7 @@ sq20061n { ; Anthony Hanmer 25/10/2002
 sq20062 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/2 a square tile
   ; (45a)
-  Axiom f ; 
+  Axiom f ;
   f=gg+f+gg|f+f|g+g+g+gg+gg+gf
   g=gg
   }
@@ -1707,7 +1707,7 @@ sq20062n { ; Anthony Hanmer 25/10/2002
 
 sq20063 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/2 a square tile
-  Axiom f ; 
+  Axiom f ;
   f=gg+g+gf|g+g|f+g+g+fg+gf+gg
   g=gg
   }
@@ -1743,7 +1743,7 @@ sq20063n { ; Anthony Hanmer 25/10/2002
 sq20064 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/2 a square tile
   ; (63a)
-  Axiom f ; 
+  Axiom f ;
   f=gg+gg+g+gf|g+g|f+g+g+fg+gf
   g=gg
   }
@@ -1779,7 +1779,7 @@ sq20064n { ; Anthony Hanmer 25/10/2002
 sq20065 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/4 a square tile
   ; BUT a repeat of Sq20015!
-  Axiom f ; 
+  Axiom f ;
   f=gg+gg+g+gg|f+f|g+g+g+gf+fg
   g=gg
   }
@@ -1815,7 +1815,7 @@ sq20065n { ; Anthony Hanmer 25/10/2002
 sq20066 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/2 a square tile
   ; (63c)
-  Axiom f ; 
+  Axiom f ;
   f=gg+gf+gg+g+gf|g+g|f+g+g+fg
   g=gg
   }
@@ -1843,7 +1843,7 @@ sq20066m { ; Anthony Hanmer 25/10/2002
 
 sq20066n { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/2 a square tile
-  Axiom f ; Colour 
+  Axiom f ; Colour
   f=gg+g>1f+gg+g+g<1f|g+g|<1f+g+g+>1fg
   g=gg
   }
@@ -1851,7 +1851,7 @@ sq20066n { ; Anthony Hanmer 25/10/2002
 sq20067 { ; Anthony Hanmer 25/10/2002
   Angle 4 ; Variation on 1/4 a square tile
   ; (15a)
-  Axiom f ; 
+  Axiom f ;
   f=gg+fg+gg+g+gg|f+f|g+g+g+gf
   g=gg
   }
@@ -2326,7 +2326,7 @@ sq20085k { ; Anthony Hanmer 9/9/2003
 sq20085l { ; Anthony Hanmer 9/9/2003
   Angle 4 ; 2x2 square tile...
   Axiom f ; A new sfd
-  ; One of my best HTs, colour 
+  ; One of my best HTs, colour
   f=>1f+!g>1f|!g<1f+g+gg+g<1f+gg+gg
   g=gg
   }
@@ -2334,7 +2334,7 @@ sq20085l { ; Anthony Hanmer 9/9/2003
 sq20085m { ; Anthony Hanmer 9/9/2003
   Angle 4 ; 2x2 square tile...
   Axiom f ; A new sfd
-  ; One of my best HTs, colour 
+  ; One of my best HTs, colour
   f=>1f+!g<1f|!g>1f+g+gg+g<1f+gg+gg
   g=gg
   }
@@ -2342,7 +2342,7 @@ sq20085m { ; Anthony Hanmer 9/9/2003
 sq20085n { ; Anthony Hanmer 9/9/2003
   Angle 4 ; 2x2 square tile...
   Axiom f ; A new sfd
-  ; One of my best HTs, colour 
+  ; One of my best HTs, colour
   f=>1f+!g<1f|!g<1f+g+gg+g>1f+gg+gg
   g=gg
   }

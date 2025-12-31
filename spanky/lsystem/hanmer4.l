@@ -1,5 +1,5 @@
 ;
-;Just a random set of L-systems from the last while of playing.  Save these 
+;Just a random set of L-systems from the last while of playing.  Save these
 ;as hanmer4.l
 ;
 ;Tony Hanmer
@@ -505,14 +505,14 @@ ADH107h17d { ; Anthony Hanmer 2000
 
 ADH107h17e { ; Anthony Hanmer 2000
   Angle 8 ;
-  Axiom 
+  Axiom
 f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f
   f=+f++x--x+f++x++x+f+
   }
 
 ADH107h17e1 { ; Anthony Hanmer 2000
   Angle 8 ;
-  Axiom 
+  Axiom
 [f--@.75f--@.75f--@.75f--@.75f]++[f--@.75f--@.75f--@.75f--@.75f]++[f--@.75f--@.75f--@.75f--@.75f]++[f--@.75f--@.75f--@.75f--@.75f]
   f=+f++x--x+f++x++x+f+
   }

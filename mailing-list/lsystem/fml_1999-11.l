@@ -1,4 +1,4 @@
-; fml_1999-11.l, a collection of l-systems posted to the 
+; fml_1999-11.l, a collection of l-systems posted to the
 ; Fractint mail list during November 1999
 ; compiled by Les St Clair <les.stclair@btinternet.com>
 

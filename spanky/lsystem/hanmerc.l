@@ -1,8 +1,8 @@
-;... In the course of learning more about Hausdorff dimension from Morgan L. 
-;Owens, I have also been instructed in simplifying my L-systems containing 
+;... In the course of learning more about Hausdorff dimension from Morgan L.
+;Owens, I have also been instructed in simplifying my L-systems containing
 ;the unnecessary "undefined x".
-;SO, here is the replacement for hanmerc.l, which I recently posted, 
-;containing Morgan's better versions of my 2 favourite discoveries.  Please 
+;SO, here is the replacement for hanmerc.l, which I recently posted,
+;containing Morgan's better versions of my 2 favourite discoveries.  Please
 ;name this file hanmerc.l and remove the previos one.
 
 ;Tony Hanmer,

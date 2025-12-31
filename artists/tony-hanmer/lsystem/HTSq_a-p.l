@@ -1,5 +1,5 @@
 README {  ; Anthony Hanmer 15/8/2003
-  Angle 4 ; 
+  Angle 4 ;
   Axiom f
   f=f
   ; The standard repository of all "a-p" types of the HT Squares,
@@ -1917,7 +1917,7 @@ sq40046# { ; Anthony Hanmer 7/10/2002
   ; 41274- - exterior variations on these;
   ; 4 - vertical versions of all the above.
   Axiom c53f+g+c12f
-  ; (Axiom note:  see Sq30006) 
+  ; (Axiom note:  see Sq30006)
   f=fff+g+f-g-f|f+g-ff-g-f|f-g-f|f+gg+fff-g+f
   g=gggg
   }
@@ -3177,7 +3177,7 @@ sq41229# { ; Anthony Hanmer 15/8/2003
 
 sq41230# { ; Anthony Hanmer 15/8/2003
   Angle 4 ; 4x4 square HTile, all-lines-parallel dust, tiles in only 2
-  ; One of my 
+  ; One of my
  best HTs, using a modified Sq4 DNA
   Axiom c53f+g+c12f
   f=FFFF+G+ggff|fffg+G+fg|gf+GG+GGGG+G+ffgg|gggf+G+gf|fg+GG+GGGG

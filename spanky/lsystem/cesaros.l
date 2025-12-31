@@ -1,11 +1,11 @@
-;Another set, all based to varying degrees on the Cesaro and Double Cesaro 
-;Curves.  (Here also lurk all the strings with which I have produced 15 
+;Another set, all based to varying degrees on the Cesaro and Double Cesaro
+;Curves.  (Here also lurk all the strings with which I have produced 15
 ;L-system alphabets recently.)
 ;
 ;Save this as Cesaros.l
 ;
-;(Sorry, I just realised that some lines will be too long for the text box 
-;I'm writing in.  The extra line-end marks, if there are any in your received 
+;(Sorry, I just realised that some lines will be too long for the text box
+;I'm writing in.  The extra line-end marks, if there are any in your received
 ;version, should be removed and the lines restored to full length.)
 ;
 ;Tony Hanmer
@@ -36,14 +36,14 @@ ADH155c { ; Anthony Hanmer 2000
 
 ADH155d { ; Anthony Hanmer 2000
   Angle 36 ; Double Cesaro variation
-  Axiom 
+  Axiom
 f+++++++++f------------------f+++++++++f------------------f+++++++++f------------------f+++++++++f------------------f
   f=f++++++++f----------------f++++++++f
   }
 
 ADH155dcol1 { ; Anthony Hanmer 2000
   Angle 36 ; Double Cesaro variation, coloured
-  Axiom 
+  Axiom
 c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f
   f=f++++++++f----------------f++++++++f
   }

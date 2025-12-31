@@ -20,7 +20,7 @@ _READ_ME {; Anthony Hanmer, set discovered 6/2000
           ; ((n of *groups* of fs)-1)^(Iteration n)x(n of axiom fs).
 
           ; NB some earlier examples of this infinite set of tiles are known -
-          ; see The Fractal Geometry of Nature, by Mandelbrot, pp. 50-55; 
+          ; see The Fractal Geometry of Nature, by Mandelbrot, pp. 50-55;
           ; but here it has been much more fully developed.
           ;
           ; Current total:  769 items, of which symmetries:
@@ -3233,7 +3233,7 @@ ST40371 { ; Anthony Hanmer 7/2002
 ST40372* { ; Anthony Hanmer 7/2000
   Angle 4 ; nc; and 4 together make a tile
   Axiom c9f+c10f+c12f+c14f
-  f=f+fff-f-fff+ff+f+f-ff-f-f+f+ff-f-fff-f+ff-f+fff+f+ff-f-f+f+ff+f-f-ff-fff+f+fff-f  
+  f=f+fff-f-fff+ff+f+f-ff-f-f+f+ff-f-fff-f+ff-f+fff+f+ff-f-f+f+ff+f-f-ff-fff+f+fff-f
   }
 
 ST40373* { ; Anthony Hanmer 7/2002
@@ -3507,7 +3507,7 @@ ST40416* { ; Anthony Hanmer 7/2002
   Angle 4 ; nc; and 4 together make a tile
   Axiom c9f+c10f+c12f+c14f
   f=f+f|f+f+ff|ff+f|ff+ff|ff-f-f|f-f
-  ; also known as 
+  ; also known as
   }
 
 ST40417* { ; Anthony Hanmer 7/2002

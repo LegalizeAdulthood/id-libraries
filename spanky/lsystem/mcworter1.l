@@ -1,9 +1,9 @@
-; 
+;
 ; The file mcworter1.l does not overlap mcworter.l so should be a
 ; separate file.
-; 
+;
 ; William
-; 
+;
 
 Dragon0001 {
   Angle 4
@@ -38,7 +38,7 @@ Dragon001 {
   Angle 12
   Axiom r
   r=x
-  
+
   p=fp
   f=
   }
@@ -74,7 +74,7 @@ Pentive&Med {
   p=fp
   }
 
-Trigrid&Med { 
+Trigrid&Med {
   Angle 6
   Axiom r
   r=xf
@@ -82,7 +82,7 @@ Trigrid&Med {
   y=y-f-xf+f+fy+ffxf- ; -fxfpfp+fy+fp+fx-fp-fy
   }
 
-PreLace&Med { 
+PreLace&Med {
   Angle 12
   Axiom r
   r=s
@@ -418,8 +418,8 @@ Maze08 {
 Maze07 {
   Angle 4
   Axiom x
-  x=fxfy+fyfxfy+fyfx-fx-fxfyfx-fxfy+ 
-  y=-fxfy+fyfxfy+fy+fyfx-fxfyfx-fxfy 
+  x=fxfy+fyfxfy+fyfx-fx-fxfyfx-fxfy+
+  y=-fxfy+fyfxfy+fy+fyfx-fxfyfx-fxfy
   f=
   }
 

@@ -15,7 +15,7 @@ z=-
 y=+
 }
 
-Hextarb { ; "Hexagonal Star b" 
+Hextarb { ; "Hexagonal Star b"
 angle 6   ; by Michael A. Rouse, 1996
 axiom s ; to make things start at
 s=Lf++Lf++Lf     ; order 1

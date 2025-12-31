@@ -1,6 +1,6 @@
-;Here are some more sets of L-Systems.  This one and the next one should be 
+;Here are some more sets of L-Systems.  This one and the next one should be
 ;combined into one file called horizons.l
-;If there are any long lines which have been cut into 2, you should restore 
+;If there are any long lines which have been cut into 2, you should restore
 ;these to single lines in a text editor.
 ;
 ;Tony Hanmer
@@ -1598,7 +1598,7 @@ ADH397b { ; Anthony Hanmer 2000
 
 ADH397c { ; Anthony Hanmer 2000
   Angle 16
-  Axiom 
+  Axiom
 c09f++c12f++c09f++c12f++c09f++c12f++c09f++c12f++++++++c09f--c12f--c09f--c12f--c09f--c12f--c09f--c12f
   f=+++f++f++++++++f--f+++++fff
   }
@@ -2764,42 +2764,42 @@ ADH495a { ; Anthony Hanmer 2000
 ADH496 { ; Anthony Hanmer 2000
   Angle 20
   Axiom f
-  
+
 f=f+++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++f+++++ff
   }
 
 ADH496a { ; Anthony Hanmer 2000
   Angle 20
   Axiom +++++f++++++++++f
-  
+
 f=f+++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++f+++++ff
   }
 
 ADH497 { ; Anthony Hanmer 2000
   Angle 20
   Axiom f
-  
+
 f=+++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++f+++++fff
   }
 
 ADH497a { ; Anthony Hanmer 2000
   Angle 20
   Axiom +++++f++++++++++f
-  
+
 f=+++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++f+++++fff
   }
 
 ADH498 { ; Anthony Hanmer 2000
   Angle 20
   Axiom f
-  
+
 f=f+++++ff++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++ff+++++fff
   }
 
 ADH498a { ; Anthony Hanmer 2000
   Angle 20
   Axiom +++++f++++++++++f
-  
+
 f=f+++++ff++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++f++++++++++f++++++++++ff+++++fff
   }
 

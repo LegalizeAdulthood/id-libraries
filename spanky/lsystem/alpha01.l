@@ -1,6 +1,6 @@
-;Here is the first of my 15 L-system fonts!  I'll send the rest if no changes 
-;are suggested for this one - any changes I make to it I'll make to the 
-;others, and then release them.  Save this file (minus the map at the end) as 
+;Here is the first of my 15 L-system fonts!  I'll send the rest if no changes
+;are suggested for this one - any changes I make to it I'll make to the
+;others, and then release them.  Save this file (minus the map at the end) as
 ;Alpha01.l
 ;- Tony Hanmer
 
@@ -213,7 +213,7 @@ ADH156_o2 { ; Anthony Hanmer 2000
 
 ADH156_o3 { ; Anthony Hanmer 2000
   Angle 36 ; Cesaro variation alphabet:  o (3)
-  Axiom 
+  Axiom
 d\40d\40d\40d\40d\40d\40d\40d\40d/180d/40d/40d/40d/40d/40d/40d/40d/40d/40d
   d=d\80d/160d\80d
   }
@@ -407,14 +407,14 @@ ADH156_% { ; Anthony Hanmer 2000
 
 ADH156_# { ; Anthony Hanmer 2000
   Angle 36 ; Cesaro variation alphabet:  #
-  Axiom 
+  Axiom
 dd/180dd\90dd\90dd/180dd\90dd/180dd\90dd\90dd/180dd\90dd/180dd\90dd\90dd/180dd\90dd/180dd\90dd\90dd/180dd\90
   d=d\80d/160d\80d
   }
 
 ADH156_* { ; Anthony Hanmer 2000
   Angle 36 ; Cesaro variation alphabet:  *
-  Axiom 
+  Axiom
 \60ddd\180ddd\120ddd\180ddd\120ddd\180ddd\120ddd\180ddd\120ddd\180ddd\120ddd\180ddd\120ddd\180dd
   d=d\80d/160d\80d
   }
