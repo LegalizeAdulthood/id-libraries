@@ -1,15 +1,3 @@
-frm:Moo {; Requires Periodicity=0
-     ; significant speedup of MOO, artists take note!!!
-     ; Revised 6/8/96 for orgform, speedup using halfe suggested
-     ;  by Tim Wegner
-  halfe = e*(-.5), z = pixel:
-  z = z + p1
-  r = tan(1/z) + pixel
-  z = fn1(z)*r^halfe   ; was z = fn1(z)/sqrt(r)^e
-  |z| < 4
-  ;SOURCE: mad_cow.frm
-}
-
 sgmoo01            { ; Copyright Sylvie Gallet [101324,3444], 1996
                      ; Formula by Vincent Damion Presogna
                      ; 9 min 38 at 1600x1200 on a P166
