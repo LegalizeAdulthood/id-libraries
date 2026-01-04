@@ -1,0 +1,165 @@
+test               {
+  reset type=manowar corners=-0.08344978/-0.0769254/0.44483054/0.44972223
+  maxiter=1000 potential=255/10000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot1           {
+  reset type=manowar corners=-0.08344978/-0.0769254/0.44483054/0.44972223
+  maxiter=1000 potential=255/10000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot2           {
+  reset type=manowarj corners=-0.557037/0.593328/-0.804966/0.75073
+  params=-0.144204289/0.03105440735 maxiter=10000 potential=255/2000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+forcontpot1        {
+  reset type=manowarj corners=-2.5/1.499996/-1.49998/1.5
+  params=-0.144003779/0.03197082875 maxiter=10000 logmap=yes
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+contpot3           {
+  reset type=manowarj corners=-1.163008/-0.618984/-0.203968/0.204009
+  params=-0.144003779/0.03197082875 maxiter=10000 potential=255/2000/100
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+contpot4           {
+  reset type=manowarj
+  corners=-1.8513681/-1.7394397/-0.1735431/-0.0595658/-1.8750494/-0.1103114
+  params=-0.144003779/0.03197082875 maxiter=10000 potential=255/5000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot5           {
+  reset type=manowar
+  corners=-0.74543424/-0.70508967/0.2526356/0.2895259/-0.75195423/0.265193
+  float=y maxiter=10000 potential=255/15000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot6           {
+  reset type=mandel
+  corners=-0.6298455/-0.5011353/-0.7221274/-0.5905004/-0.6484522/-0.6961519
+  maxiter=1000 potential=255/3000/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot3dxformBW   { ; params to get good 3d BW transform from .pot file
+  3d=yes filename=fract082.pot scalexyz=90/90 roughness=30 waterline=0
+  filltype=6 lightsource=1/-1/1 ambient=20 rotation=60/30/0
+  perspective=300 xyshift=0/0 xyadjust=5/-12 colors=@altern
+  }
+
+contpot8           { ; good for 3d xform
+  reset type=julia
+  corners=2.116777/-2.145321/0.291752/-0.252742/-0.085993/1.019007
+  params=-1.03608741/0.3607442715 maxiter=2500 potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot9           { ; good for 3d xform
+  reset type=julia
+  corners=1.918751/-2.000706/0.927504/-0.874456/-0.064305/1.289638
+  params=-0.2981757295/0.8878375815 maxiter=2000 potential=255/500/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot10          { ; demonstrates using zoom box to fit diamond shaped julia
+                     ; into square screen.  good for 3d transform
+  reset type=julia
+  corners=2.257814/-2.284209/0.26301/-0.245051/-0.267992/0.932705
+  params=-1.211822775/0.406304527 float=y maxiter=2500
+  potential=255/600/1000/16bit colors=@rainbow.map
+  }
+
+contpot11          { ; good 3d xform julia
+                     ;               
+  reset type=julia passes=1
+  corners=1.833728/-1.857959/0.7976/-0.758221/-0.103591/1.179099
+  params=-0.378192275958949/0.821726531023489 float=y maxiter=1500
+  potential=255/600/1000/16bit
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+contpot12          { ; good 3d xform julia
+                     ;               
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.275215546432062/0.709660787483691 float=y maxiter=1000
+  potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot1       { ; good for lighted 3d xforms
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.378192275958949/0.821726531023489 float=y maxiter=1500
+  potential=255/500/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot2       { ; good for lighted 3d xforms
+  reset type=julia
+  corners=1.918751/-2.000706/0.927504/-0.874456/-0.064305/1.289638
+  params=-0.2981757295/0.8878375815 maxiter=2000 potential=255/500/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot3       { ; good for lighted 3d xforms
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.275215546432062/0.709660787483691 float=y maxiter=1000
+  potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot4       { ; good for lighted 3d xforms
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.293221113994134/0.68264363289698 float=y maxiter=1000
+  potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot5       { ; good for lighted 3d xforms
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.320229465337242/0.691649351092547 float=y maxiter=1000
+  potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot6       { ; good for lighted 3d xforms
+  reset type=julia
+  corners=-0.174608/0.182404/-1.323035/1.323012/-1.766191/0.803487
+  params=-0.2926216775/0.9801332955 maxiter=2000 potential=255/600/100
+  colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
+  4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
+  }
+
+goodcontpot7       { ; good for lighted 3d xforms
+  reset type=marksjulia
+  corners=0.461479/-0.52223/-2.072893/1.990586/-1.085575/-0.321088
+  params=0.738329498/0.659792453/2 maxiter=1000
+  potential=255/1000/1000/16bit colors=@rainbow.map
+  }
+

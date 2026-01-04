@@ -1,0 +1,155 @@
+;  .par files by several people. they were in lots of small files and i 
+;  glommed them together.
+;
+
+Fungus Julia       { ; Appears 3-D-like
+  reset type=mandel
+  corners=0.374571215/0.374892855/0.101239137/0.101473788
+  colors=000m`d<3>yTfNre<5>TxzMrb<14>HyZMr`<10>StEHeZBTU5FPLpa<13>2JBOqb<4>aj`\
+  Lqb<11>0`jMob<8>HOgMpZ<5>J_9Ogc<2>XBhLrb<10>2ugRm`<3>kRPMnb<8>MFdLBeMldMefMZ\
+  iNp`<7>_UIQpa<6>q_VNqW<2>Tk8
+  }
+
+fn(z*z) cosh       {
+  reset type=fn(z*z) function=cosh corners=-4.0/3.997803/-2.99585/3.0
+  potential=255/200/200
+  colors=000z60<6>z10z00z00y00<80>10x10x00y00y11x<77>vv3ww2xx1yy1yy0zz0<75>z70
+  }
+
+spinn!             { ; KOOL
+  reset type=mandel
+  corners=-1.860573959007317/-1.860573958653414/-0.000000933438606/-0.00000093\
+  3177796 float=y maxiter=1500 inside=0
+  colors=000<7>000000201<2>A33C34E44G55I66K77<2>Q98S99U99W99YA9<7>mCBoCBqBA<2>\
+  v97w97y77<2>z11z00z00<9>z00z00x02<28>20w00y00z<10>00z<6>ffzllzsszzzz00z<6>00\
+  z<6>ffzllzsszzzz00z<6>00z<6>ffzllzsszzzz00K00M00O00Q11S22U44W66Y98_<2>LKePOg\
+  TRiXUk`Yldam00z<8>00e00c00b<14>00O00O00N00N00M<21>00B00B009<17>0000000000000\
+  00<15>000
+  }
+
+1                 {  this .PAR by many different people. 
+  reset type=magnet1m
+  corners=3.071042/-0.552958/-2.462936/2.369064/-0.552958/2.369064 float=y
+  inside=-100 outside=summ
+  colors=000zzz000mmm000ggg000aaaAA0WWWK0KQQQKK0MMMU0UHHHUU0BBBc0c666cc0000m0m\
+  000mm0000000c0c000zz2555c8cBBBzz0HHH000LLL000PPPF00SSSK00VVVP00ZZZU00aaaZ00e\
+  eec00iiih00mmmmP0qqqmU0uuuwZ0zzzwc0zzzwm0wwwwm0xxxzz0xxxyyyyyyz00<3>z00<13>z\
+  z0333<14>777zz0<14>0zhBBB<14>FFF0Uz<13>u25
+  }
+
+b2                 {
+  reset type=fn*z+z function=sin
+  corners=-1.252052/-3.553708/-1.786789/1.827537/-3.553708/1.827537
+  params=1/0/1 inside=-100 outside=imag
+  colors=000z00z00000<126>00z000<18>A00
+  }
+
+b3                 {
+  reset type=manzzpwr
+  corners=-0.2218076/-0.2500277/0.1234845/0.1611112/-0.2500277/0.1611112
+  params=0/0/2 inside=-100 outside=mult
+  colors=000zb0<17>z30z00y00<30>D66<21>wwwzzzzyx<22>yJDxHAwHB<6>pJGoKHnKImKIkJ\
+  HjJH<27>000<8>HHH
+  }
+
+b4                 {
+  reset type=manzzpwr
+  corners=0.213996/-0.518004/-0.491911/0.484089/-0.518004/0.484089
+  params=0/0/2 inside=-100 outside=mult
+  colors=000Vk4<5>bx6524<8>nPh001<11>KXdM_hN_h<36>w6g<3>oDHmFAmFA<32>xcb<8>3xR\
+  <24>yJOxJO240<5>BH3
+  }
+
+b5                 {
+  reset type=magnet1j
+  corners=3.63427/0.011614/-2.406361/2.423847/0.011614/2.423847
+  inside=-100 outside=imag periodicity=0
+  colors=000w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzU\
+  GSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT0\
+  0zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA\
+  0<15>zz0<4>zk0
+  }
+
+b6                 {
+  reset type=marksjulia corners=-0.285351/0.402637/0.320878/0.836883
+  params=0.1/0.9 inside=bof60 outside=mult
+  colors=000zzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlL\
+  ccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z\
+  70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<11>wj4
+  }
+
+b7                 {
+  reset type=mandel
+  corners=0.324477449/0.324969469/-0.0356733967/-0.0357658789/0.32469889/-0.03\
+  5968747
+  colors=000nVj<2>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`\
+  UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmT\
+  lLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7\
+  >z70zG0<12>zz0zw0zt0
+  }
+
+b8                 {
+  reset type=manzzpwr corners=0.145705/-0.694295/-0.56/0.56/-0.694295/0.56
+  params=0/0/2 maxiter=3000 inside=-100 outside=real
+  colors=000zzzzzzzzz000lnrjkqzzzdfm000Zaj<5>IN`FKZAEO57C000<6>zkk<6>z66zzzG00\
+  G40G8000z<10>zc0<4>zY2000zV3<5>zN5000zL6zJ7zI7zG8<11>nKI000FzFVVVjjjzzzgMO<1\
+  2>VR_TR`TR`zzzURazzzVRazzzWRazzz000zzz000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z\
+  0KKK<3>___ccchhhmmmssszzzzz0<6>z0Gz00<3>zz0nx6buCP0ZFpP<3>0zz<2>0GzVVz<3>zVz\
+  <3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhhzlh000zzz000zzz000zzz000zzz000z\
+  zz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz<19>yzzyzzzzz<10>zzz
+  }
+
+flower2            { ; whooooot
+  reset type=formula formulafile=fractint.frm formulaname=dragon
+  corners=-1.053459/-0.899252/0.01186/0.127524
+  colors=000rr8vv4zz0<8>EfH<22>000966<14>z00<11>000<17>zJ7zI7zG8<11>nKI000FzFV\
+  VVjjjzzzgMO<12>VR_TR`TR`zzzURazzzVRazzzWRazzz000zzz000zz0zzz0z0LLLz00<5>zz00\
+  00555<2>EEE0z0KKK<5>hhh
+  }
+
+crackle            { ; red on blue mandelbrot crackle
+  reset type=mandel corners=-1.3590633/-1.312692/0.0556883/0.0904668
+  float=y maxiter=300 colors=@volcano3.map
+  }
+
+test               { ; You guessed it!                      Peter Morela
+  reset type=ifs ifsfile=fractint.ifs ifs=fern
+  corners=-8.0/7.999649/-1.000244/11.0
+  colors=000DGT<4>jQ1<2>bgO`lVWmZ<5>5np<3>pky<2>Avk<5>l7KhGaeOrPKq9Hp<5>Mjy<4>\
+  11`1cR<6>GlJ<2>_J8OSFC`M<7>J7XOFWSNWXVVbXb`bVUor_lfGKp<4>`fYwL6<6>fgSdeQdhTf\
+  Se<5>dhWWcBAHB<6>agTQB8<3>acRa0pMC9J`APcGUeL_hQgYifbdef_G3xPInXXdFny<2>Zkalc\
+  E`Vg<4>dhXJEP<3>`dUK5XRJWYXVKlWQkVVkV_jVcWL<3>deS
+  }
+
+original           {
+  reset type=mandel passes=1 corners=-2.5/1.5/-1.5/1.5 float=y outside=0
+  distest=1/71 colors=000zzz
+  }
+
+The-Inner          { ; O
+  reset type=barnsleyj2
+  corners=-1.918013/1.917999/-2.376137/2.203781/-4.475362/-2.376137
+  params=-1/1000 inside=bof60 outside=mult potential=512/512/1000
+  colors=000tYPnMK<2>nRNoTPnRM<5>eD4cA0cB3cC7cDAdFE<9>T22R00R00<10>H46G57F56<7\
+  >523312000b00BEf<17>jlumnvopvqrv<2>wxvzzvzzr<5>zzU<8>r00<14>066<39>B2jB2kA3i\
+  <8>39Q29O1AM0BJ0BJ0BJ<4>0AI0AI2AI<24>sFLuFLwFLzGMzHMzIM<30>zuUzwUzxUzzVzyV<1\
+  5>zfV
+  }
+
+Upper-Max          { ; !
+  reset type=barnsleyj2 passes=b
+  corners=2.657777/0.375435/-4.613771/-0.979405/-0.04383/-1.853532
+  params=60/50 inside=bof60 outside=mult potential=256/256/1000
+  colors=000dIG<5>000xXV<7>oTRnTRnTR<19>bATtVToVY<9>oVToVTpUSpTS<61>27B16A16B<\
+  34>B2jB2kA3i<10>1AM0BJ0BJ<5>0AI0AI2AI<26>wFLzGMzHM<29>zrTztUzuUzwUzxUzzV<15>\
+  zgV
+  }
+test               { ; This is a plasma par file
+  reset type=plasma corners=-2.0/2.0/-1.5/1.5 params=2 float=y
+  }
+
+original           {
+  reset type=mandel passes=1 corners=-2.5/1.5/-1.5/1.5 float=y outside=0
+  distest=1/71 colors=000zzz
+  }
+

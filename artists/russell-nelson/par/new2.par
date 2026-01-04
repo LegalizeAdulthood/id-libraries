@@ -1,0 +1,564 @@
+Lo_Iteration_Unity { ; (c)1993 Peter Moreland 100012,3213
+                     ; Thanks to Lee Skinner for the palette <g>.
+                     ; Gee! an image from a low iteration value *2*
+  reset=1732 type=unity passes=t
+  corners=-31.914182/31.914182/-2.438782/2.438782/-11.277216/-29.954578
+  float=y maxiter=2 inside=bof60 invert=7.47995/0/0 distest=3/5
+  periodicity=0
+  colors=MgCMgC<19>zz9<60>2I10H00I1<8>4WH<4>MU`YUzUTh<6>cOheNgeOg<24>rnlso\
+  ltpluqlvrl<2>yvmzwnyvn<46>C2W<8>V6aY7bZ9`<14>zg0<13>nGDmDEmCDmBDmACl8B<2\
+  >r6C<15>IfCKfC
+  }
+
+Whoops!...         { ; (c)1993 Peter Moreland 100012,3213
+  reset type=tetrate
+  corners=14.461735/13.215283/-24.011641/13.987361/-4.312982/0.903194
+  params=1/4 float=y maxiter=1000 inside=epsiloncross outside=mult
+  potential=255/511/0 invert=2.94417/0/0 decomp=256
+  colors=000QEF<11>G2JF0KF0K<4>F0LG0LG0LG0MG0MH0M<52>T0bU0cU0cV1cV2d<60>zz\
+  zzzzzzy<60>zz1zz0zy0yx0<45>QFF
+  }
+
+Necklace_Tetrate   { ; (c)1993 Peter Moreland 100012,3213
+  reset type=tetrate
+  corners=-0.287747/-0.14327/-1.109801/0.348847/-0.939205/-0.245288
+  params=1/4 float=y maxiter=1000 inside=epsiloncross outside=mult
+  potential=255/511/0 invert=2.94417/0/0 decomp=256
+  colors=000QEF<11>G2JF0KF0K<4>F0LG0LG0LG0MG0MH0M<52>T0bU0cU0cV1cV2d<60>zz\
+  zzzzzzy<60>zz1zz0zy0yx0<45>QFF
+  }
+
+Lasers_scanning... { ; (c)1993 Peter Moreland 100012,3213
+  reset type=tetrate
+  corners=-1.598639/-1.793737/-0.132176/0.126728/-1.793737/0.126728
+  maxiter=60 inside=epsiloncross outside=mult potential=255/511/0
+  invert=2.94417/0/0 decomp=256
+  colors=000kPK<7>zg0<13>nGDmDEmCDmBDmACl8B<2>r6C<15>IfC<21>zz9<60>2I10H00\
+  I1<8>4WH<4>MU`YUzUTh<6>cOheNgeOg<27>uqlvrlwslxumyvmzwn<47>C2W<8>V6aY7bZ9\
+  `<5>iNM
+  }
+
+Heart_of_Hearts    { ; (c)1993 Peter Moreland 100012,3213
+                     ; Cycle this one!
+  reset type=tetrate
+  corners=-0.867281/-2.001575/-0.761237/0.744018/-2.001575/0.744018
+  maxiter=60 inside=epsiloncross outside=mult potential=255/511/0
+  invert=2.94417/0/0 decomp=256
+  colors=000dGU<10>xe2zg0ye1<12>nGDmDEmCDmBDmACl8B<2>r6C<15>IfC<21>zz9<60>\
+  2I10H00I1<8>4WH<4>MU`YUzUTh<6>cOheNgeOg<27>uqlvrlwslxumyvmzwn<47>C2W<8>V\
+  6aY7bZ9``BZbEW
+  } 
+
+testNoMig          {
+  reset=1732 type=mandel passes=1
+  corners=-1.41095628/-1.40095597/-0.003750347/0.003749982 float=y
+  maxiter=500 inside=0
+  }
+
+Viagem             {
+  reset type=mandel passes=b
+  corners=-0.733220818/-0.733208926/0.288257966/0.288266862 maxiter=500
+  colors=CCC000KX5<3>KZ5J_4KZ4<20>y2C<15>VIU<4>s9I<35>W3BV2AX6B<7>ocKrhMrhM<60\
+  >thuuivugv<8>wPmxMlxMk<43>pY4<2>Kgy<2>KgxJgwIguHhr<16>BjfBjfBhf<3>AffAffAdf<\
+  4>9af
+  }
+
+Viagem_00          {
+  video=af2 savename=frmig_00
+  reset type=mandel passes=b
+  corners=-0.733220818/-0.73321487798/0.28826241585/0.288266862
+  maxiter=500
+  }
+
+Viagem_01          {
+  video=af2 savename=frmig_01
+  reset type=mandel passes=b
+  corners=-0.733220818/-0.73321487798/0.288257966/0.28826241215
+  maxiter=500
+  }
+
+Viagem_10          {
+  video=af2 savename=frmig_10
+  reset type=mandel passes=b
+  corners=-0.73321487402/-0.733208934/0.28826241585/0.288266862
+  maxiter=500
+  }
+
+Viagem_11          {
+  video=af2 savename=frmig_11
+  reset type=mandel passes=b
+  corners=-0.73321487402/-0.733208934/0.288257966/0.28826241215
+  maxiter=500
+  }
+
+Acrobat            { ; (C)1993 Peter Moreland
+                     ; Blantyre House, Cossack SQ, Nailsworth, Gloucs, UK.
+  reset type=tetrate
+  corners=5.348342/13.023263/30.474829/24.450408/11.003036/22.935237
+  float=y maxiter=20000 outside=imag distest=256/100 finattract=y
+  periodicity=0
+  colors=000WMD<19>G2JF0KF0K<4>F0LG0LG0LG0MG0MH0M<52>T0bU0cU0cV1cV2d<60>zz\
+  zzzzzzy<60>zz1zz0zy0yx0<37>XNC
+  }
+
+Martian            { ; Use this to make the 3-d globe.  Do it overnight!
+                     ; (c) Lee H. Skinner, 1993
+ reset type=fn(z)+fn(pix) function=sinh/sinh passes=1
+ passes=1 corners=1.17861178/1.178766702/0.582658831/0.582775023 float=y
+ maxiter=1023 inside=maxiter video=SF7
+ colors=000kOPkMN000kJK<18>yKV<5>fF_hEcjDhXJ9<29>mK0<5>_NAXOCXPC<34>WnSVoTUmS\
+ <16>5B8386386<29>TM4UN3UN3UN3<5>TO1XJ9<3>VJDD0M<28>83T74U63U<6>00X<10>SOgVRi\
+ XTh<10>pfhrhgrhg<15>mWZmWZmUXlSUlQS
+ }
+
+Dummy              { ; Generate, save colors as globe.map, throw away .Gif!
+ reset type=mandel corners=-2.499725/-1.667725/0.85919/1.48319 inside=maxiter
+ colors=000iJIiJJjSKjNKkSK<2>zfMtpezzzzzzvZOqJPqJJrJDsJ6<3>kPIiRLeTIaWGYZD<3>\
+ dGV<2>jDhXJ9<29>mK0<4>cN7aN9_N9<17>0SA<9>TgNWiPZiP<3>jlR<2>_REWJ9UI9<8>GD8FD\
+ 8FD8<30>UX5VY4VX4<12>WK8XJ9WJA<4>UIEzzz<5>zzyozz<7>LGS<19>BDhACiBDi<22>pfhrh\
+ grhg<19>lTX
+ }
+
+Globe              { ; Use Martian.gif as the 3-d source.
+                     ; (c) Lee H. Skinner, 1993
+ 3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+ scalexyz=90/100 roughness=5 waterline=0 filltype=2 ambient=20
+ perspective=0 xyshift=0/0 colors=@globe.map
+ }
+
+
+GlacialLake        { ; Sawtooth National Forest
+                     ; (C) 1993, Lee H. Skinner
+  reset=1720 type=barnsleym3 passes=1 video=SF7
+  corners=-0.23304/-0.058772/0.261725/0.392429 maxiter=499 fillcolor=7
+  inside=zmag outside=imag logmap=yes
+  colors=000cPE<4>ZH0EEE<3>OONGQ_EQZBQYYYX<7>ppn<15>CCGGc6<10>0G5ZJE<6>zgF\
+  <8>YKEUHDSGC<6>AB7<12>svcsvcsvcsvc<9>aXO<4>h`MjaMkbLmbK<7>zjF<7>fREUPF<2\
+  >OI5<15>zd3<11>XREUPFUPF<34>P9NO8OPAN<3>UGJVHIZHG<6>zO0<5>cG9_EBWEDSDF<4\
+  >L0K0G5<5>6Q58R5BT5<7>Wf6<7>Op7<4>He6 cyclerange=40/255
+  }
+
+
+Hangover           { ; Oh, What a Headache!
+                     ; (C) Lee H. Skinner, 1993
+  reset=1720 type=fn(z)+fn(pix) function=sin/cosh passes=1
+  corners=0.03612347/0.03877584/1.29710943/1.29909872
+  params=0.7/0.333/0.5/0.5 float=y maxiter=100 bailout=50 inside=bof60
+  colors=000U0R<5>F0FKF0<6>hZ0<7>KF000A<6>00k<7>00AA00<6>z00<7>A00<6>2r00z\
+  00u0<7>0A0<6>eXU<7>0A0AKK<6>mmK<7>AKMFF0<6>zz0<7>FF0F00<6>z0A<7>F00FFF<6\
+  >zzz<7>FFF0FK<6>0Um<7>0FKPF0<6>mK0<7>PF0FKA<5>NSIPUKOTJ<6>FKA00K<4>57j79\
+  p78l<6>00K0D1<6>1aA<7>1F0KF1<6>hZ0<6>OI0KF0F0F<6>Z0UX0T
+  }
+
+CondosInTheCity    { ; Downtown Manhatten
+                     ; (C) Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm formulaname=Jm_20
+  passes=1 corners=0.16517/0.72069/2.014541/2.431181 float=y video=SF7
+  maxiter=1023 inside=0 logmap=yes periodicity=0
+  colors=000C1vF0N0Q9DFzUci2Ya<7>84F90S<15>zh6<54>zC3zB2zB2yB2<17>a82`82Z8\
+  2Y72W71V71<5>N51L40L40<76>h7Sh7Sh7R<53>zA0E5XD3i
+  }
+
+shelob's_lair      { ; (C) Lee. H. Skinner, 1993
+ reset type=spider passes=1 corners=-2.5/1.5/-1.5/1.5 float=y
+ maxiter=1023 inside=maxiter potential=255/511/0 periodicity=0
+ colors=000tR0z00<35>q00q00p00o00<212>000z`0
+ }
+
+balloons           { ; (C) Lee H. Skinner, 1993
+ reset type=formula formulafile=fractint.frm formulaname=LeeMandel3
+ passes=1 corners=-0.713978/-0.38409/0.120979/0.368395 float=y
+ maxiter=1023 inside=0 logmap=yes
+ colors=000zzzcTPKunNNNVc5ctRhJ3YA7zETQHTaG`U`hFASzg56XkE5qV7Hj7mz6H0P0<2>4fR\
+ z00<3>hYOGFM<2>LcQE5XD3iC1v8QX0hiFKHEXD<2>AUB9TA7R96P9<2>2H60E50E5<57>_e3_e3\
+ `e3`e3ae3<39>zo0zo0zn0<35>uJ0uI0uH0tG0tE0tD0tC0<58>A00 cyclerange=2/255
+ }
+
+grid               { ; (C) Lee H. Skinner, 1993
+ reset type=lyapunov corners=3.7635553/3.8511926/3.2310525/3.2967805
+ params=321/0.5 float=y maxiter=40 inside=0 logmap=yes
+ colors=000ODD<23>x11z00z10<12>zR0
+ }
+
+Panties            {  ; R-Rated Fractal, (C) Lee H. Skinner, 1993
+ reset type=fn*fn function=sin/cos passes=1
+ corners=0.881653/2.257653/0.105419/1.137419 float=y maxiter=1023
+ inside=0 logmap=yes
+ colors=zcKoAA<3>zLLzLzzzLzzz<3>BBBEEEHHH<4>___ccchhhmmmssszzz<44>Vzz<2>Vbzhh\
+ z<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07S\
+ EES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKO\
+ SKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8\
+ GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB\
+ <2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGz0oz_1zq0<2>zU0zq0zE000e0e00eee00<2>l\
+ 77
+ }
+
+NewPostageStamp              { ; (C) Lee H. Skinner, 1993
+ reset type=mandel passes=1
+ corners=-23.651336/1.172904/-17.209494/1.408686 float=y maxiter=1023
+ inside=0 logmap=yes
+ colors=000zzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>\
+ VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<\
+ 3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSK\
+ MSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG\
+ <2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>F\
+ BGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGKCC<6>FFF00e0e00eee0\
+ 0e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccc<2>sss
+ }
+
+birds_01           {
+ reset type=fn+fn function=log/sin passes=1
+ corners=2.996874/6.194994/0.002655/2.399994 params=1/0/1 float=y
+ maxiter=1023 bailout=100 inside=maxiter logmap=yes potential=255/511/0
+ colors=000vvk<4>rskqrlpqloploolnol<20>VYnUXoTWnSVnRUm<7>MkC<9>98F<4>k3L<4>g3\
+ Q<2>nk2<12>OHC<7>8Qj5So5So<12>4_e4Ye5Ve6Sf<5>0CT<2>CFdGHiIHh<2>RHc<7>toN<11>\
+ TTI<8>mZW<2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<8>QbGSeDWbL<4>nL\
+ z<5>jExiCwjJlkQamYQ<11>fSm_Sj<4>TLrleV<6>deh
+ } 
+
+bridges            {
+ reset type=fn+fn function=log/sin passes=1
+ corners=3.824888/4.138878/2.078113/2.313603 params=1/0/1 float=y
+ maxiter=1023 bailout=100 inside=maxiter logmap=yes potential=255/511/0
+ colors=000dEh<56>F3I<5>b3Og3QiIIkXAnk2<11>RKBOHCOHC<29>o00<14>lfSpjQtoN<11>T\
+ TI<8>mZW<2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<9>SeD<5>nLz<5>jEx\
+ iCwjJlkQamYQ<11>fSm_Sj<4>TLrleV<5>eef
+ } 
+
+cogs               {
+ reset type=formula formulafile=fractint.frm formulaname=scottsic
+ passes=1 corners=1.6674/1.961663/0.655304/0.876 float=y maxiter=1023
+ inside=maxiter potential=255/511/0
+ colors=0005Tn<10>4Zf4_e4Ye5Ve6Sf<5>0CT<2>CFdGHiIHh<2>RHc<7>toN<11>TTI<8>mZW<\
+ 2>Ygw<3>2WP<14>7iO<12>qgxgieYlM<9>3LJKZA`l0<4>47c<8>QbGSeDWbL<4>nLz<5>jExiCw\
+ jJlkQamYQ<11>fSm_Sj<4>TLrleV<6>dehvvk<4>rskqrlpqloploolnol<20>VYnUXoTWnSVnRU\
+ m<7>MkC<9>98F<4>k3L<4>g3Q<2>nk2<12>OHC<7>8Qj5So5So
+ }
+
+TheBlobInTheForest {
+ reset type=formula formulafile=ownfile.frm formulaname=RCL_10 passes=1
+ corners=0.334593/1.1708/-0.635859/-0.008704 float=y inside=255
+ potential=255/128/0
+ colors=000ECCCCCACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<2\
+ 0>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC\
+ <10>WCCUCCSBA<3>H400K30UZ
+ }
+
+LightBulbAlien     {
+ reset type=formula formulafile=ownfile.frm formulaname=RCL_10 passes=1
+ corners=-2.189386/2.120959/-1.97565/1.257109 float=y inside=255
+ potential=255/128/0
+ colors=000QCC<7>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<2\
+ 0>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC\
+ <9>YCCG41UCCPLe
+ }
+
+frogs              {
+ reset type=fn+fn function=sin/sqr passes=1
+ corners=-1.382504/-0.806509/-0.216/0.216 params=1/0/-1 float=y
+ maxiter=1023 bailout=8192 inside=maxiter logmap=yes potential=255/511/0
+ colors=00005DECkTKegSZMAQgSZnFZe8bW1fJBRW1fIUaTTfdSkyIvTIEyIvaVONj0<2>zpVhXh\
+ MQFMAIaQF<3>xEJuMGrUDz8HP7Ez8HrSr<4>UZJ_hUfreK2PW1Th0X<2>w0CT86Q9Ju5Dk4Pa3`R\
+ 1mG1j61gTco<2>Cl1<2>naufZvZWxRKzrd`<2>VSqFNcPYhTiUXuEc3iX0caFs_Mx`XaahF`VbZG\
+ zKpc<3>FxV<2>Sx2P`BecL<2>VZycO`lDB<2>txSrfSe4DmQT<2>dYY<3>IueWqkToiPlgXbjX8b\
+ lJpu8s<3>NeL<2>VdYCakCZcCWV0O06TS<3>xvimujbtkFuHF`F`FDT0PfDatQn<2>qVTpWLqbH<\
+ 2>rw3_oKMt7<3>TajfSmuHqhi0<3>oY_<3>t48<2>2B0<3>G3VcrNbtJfrJcyP<2>oWL<2>eRUaP\
+ XXVR<2>Jl7<3>sfMpPGl6A<2>yY2<2>hAH<2>CpT<2>Lx_2b7HnA4GU<2>rfRfkKVqD<2>xXufXs\
+ PWqRcrUltW27<3>WtV_hhdXw<2>5GWoB1fWQYpouF5<2>YLN<2>x4ggDt7Ej<2>nzB<3>FvZjXx4\
+ Jay`SVLd
+ }
+
+rainbow            {
+ reset type=formula formulafile=ownfile.frm formulaname=scskzczz
+ passes=1 corners=0.4366/1.600867/0.615518/1.4888 maxiter=1023
+ inside=maxiter potential=255/511/0
+ colors=0004BOz00z20<5>z10z00z20<11>zT0zW0zX0<8>zb0zc0zf0<4>zz0<8>zz0<5>0l10l\
+ 2<26>0k3<7>DFkFAqFAq<9>FAqFAqGAqHAqHAqIAqIAq<7>_5ub4vb4v<22>b4vb4vc3wd2x<13>\
+ f0zf0ze0z<89>d0zc0zemvF3`
+ }
+
+ferncave           {
+ reset type=mandelfn function=sinh passes=1
+ corners=0.73349/2.310074/-0.593658/0.588394 maxiter=1023 inside=0
+ logmap=yes
+ colors=0002Q00O02Y04L07a0HK0S_0Q00<14>w00z00z30<13>zh0zk0zl0<10>zw0zx0zx0zx0\
+ <124>T1YT1YS0ZR0_<33>10y10y00z00z11y<31>PPa0O01P0
+ } scorpio            {
+ reset type=mandelfn function=sinh passes=1
+ corners=0.985488/0.98735428/0.25159299/0.25299197 float=y maxiter=16383
+ bailout=8192 inside=0 logmap=yes
+ colors=000gJG<9>f3Xe1Zd1Zc1Zb1Y<4>`1X_1X_1XZ1WZ1WZ1W<9>U1TU1TT1SS1S<15>C6IA7\
+ HA8G<3>99E99E9AF<10>FLQFMRFMRFMR<22>GQaGQaGQaGQaHR`<45>zz0zz0zy0<101>z00gMDg\
+ KF
+ } 
+
+aspen              {
+ reset type=mandelfn function=sinh passes=1
+ corners=0.4413/0.635393/0.847906/0.9934 float=y maxiter=2047 inside=0
+ logmap=yes
+ colors=000FFk<12>PPa0O01P02Q00O02Y04L07a0HK0S_0Q00<14>w00z00z30<13>zh0zk0zl0\
+ <10>zw0zx0zx0zx0<124>T1YT1YS0ZR0_<33>10y10y00z00z11y<17>FFk
+ } 
+
+ferns              {
+ reset type=mandelfn function=sinh passes=1
+ corners=-0.1972/0.197195/1.204216/1.5 float=y maxiter=2047 inside=0
+ logmap=old
+ colors=000l7B<9>OK2b`3rq5rSDq1M<24>y2Ky2Ky3L<22>yP`yM_<20>yhpyjqwip<20>1EB<3\
+ 1>1a21b11c11d01c4<10>3Lp<5>ZZq<34>yg2zh0zh0<52>t3Dq4Do5C
+ }
+
+demon              {
+ reset type=fn+fn function=log/cosxx passes=1 corners=-3.0/5.0/-3.0/3.0
+ params=1/0/1 float=y maxiter=1023 bailout=100 inside=maxiter logmap=old
+ potential=255/511/0
+ colors=000xhC<89>xoFwpGwoG<46>L5FK3EK3E<55>lEElEEmEEnFEnFEnFEnFExdA<49>xhC
+ }
+
+guardian           {
+ reset type=fn+fn function=log/cosxx passes=1
+ corners=2.489563/4.081757/1.98494/3.178696 params=1/0/1 maxiter=1023
+ bailout=100 inside=maxiter logmap=old potential=255/511/0
+ colors=000xhC<95>xoFwpGwoG<46>L5FK3EK3E<55>lEElEEmEEnFEnFEnFEnFExdA<43>xhC
+ }
+
+Glass_eyed_alien   {
+ reset type=fn+fn function=log/cosxx passes=1
+ corners=-3.040213/5.580477/-3.232759/3.232759 params=1/0/1 float=y
+ maxiter=1023 bailout=4 inside=maxiter potential=255/511/0
+ colors=000_L_FM`<29>qqr9HY<125>aPGgQGbQG<71>sV5sV5sV6<6>sV8EkD<8>Gr8AIYBJZCK\
+ Z
+ }
+
+peacock            { ; (C)  Lee H. Skinner, 1993      Cycle this one!
+ reset type=mandel passes=1
+ corners=-0.2349564/-0.23243777/-0.82714025/-0.82525128 params=0.5/1
+ float=y maxiter=2047 inside=0 logmap=yes periodicity=0
+ colors=000fTZ<2>hgU<3>GuP<15>fiL<8>DKC<2>T_2<2>A8l<6>_AKcAGhjEmn9<11>Vip<12>\
+ tD8<3>xZ4<8>d9sa6y_6v<8>DER<11>ZKf<8>xsK<7>9c7<13>ct1<3>RZ2NT2KQ2<3>6C4o4I<1\
+ 2>4gJ<8>6Po7Ms9Os<8>Vfk<12>zKP<3>W1p<6>hBA<14>ygy<7>TRH<11>ew8gz7gsB<5>e9c<2\
+ >fO_
+ }
+
+Asteroid          {
+  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  passes=1 corners=4.438653/6.212828/1.925411/3.256043 params=1/1 float=y
+  maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
+  jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX_
+  } 
+
+BlackPearl         {
+  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  passes=1 corners=5.212091/5.2438275/2.4160863/2.4398886 params=1/1
+  float=y maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZzFhzKJ<2>yzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
+  jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX_
+  } 
+
+Rose               {
+  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  passes=1 corners=4.963746/5.332775/2.231113/2.507885 params=1/1 float=y
+  maxiter=1023 inside=0
+  colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
+  jTx<2>XCNa6Ef04<10>zoB<11>0_0<22>i9lk7ok7o<115>7qw7qw8qv<52>YbcVb`IX_
+  }
+
+Noname_1           {
+  reset type=tim's_error function=sin
+  corners=-0.0078856823/0.0090992662/0.01118987221/-0.01072327081/0.009074\
+  0063/-0.0107307152 float=y maxiter=25 bailout=10 outside=real
+  invert=0.0199485/0/0 decomp=256 biomorph=256
+  colors=cOhcOheNg<28>uqlvrlwslxumyvmzwn<47>C2W<8>V6aY7bZ9`<14>zg0<13>nGDm\
+  DEmCDmBDmACl8B<2>r6C<15>IfC<21>zz9<60>2I10H00I1<8>4WH<4>MU`YUzUTh<5>bPh
+  }
+
+Tiger_Tails          { ; Tiger tails waving in the air
+                     ; (c) 1993  Lee H. Skinner
+ reset type=manowarj passes=1 video=SF7
+ corners=0.084659/0.133449/0.0149314/0.0515047 float=y logmap=yes
+ colors=000VewzKK111zKK111zKK111zKK111zKK111zKK111zKK111zKK111zKJ111zKJ111zKJ\
+ 111zKJ111zKJ111zKJ111zKJ111zKJ111zKI111zjI111zjI112zjI113zjH114zjH114zkH115z\
+ kH116zkH117zkH118zkH118zkG119zkG11AzlG11BzlG11CzlG11CzlG11DzlG11EzlF11FzlF11\
+ GzmF11GzmF11HzmF11IzmF11JzmE11JzmE11KzmE11LznE11MznE11NznE11NznE11OznD11PznD\
+ 11QznD11RzoD11RzoD11SzoD11TzoD11UzoC11VzoC11VzoC11WzpC11XzpC11YzpC11YzpB11Zz\
+ pB11_zpB11`zpB11azqB11azqB11bzqB11czqA11dzqA11ezqA11ezqA11fzrA11gzrA11hzr911\
+ izr9
+ }
+
+tick               { 
+ reset type=marksmandelpwr function=sqr passes=1 maxiter=2047 float=y 
+ inside=0 logmap=y 
+ corners=-1.08950555/-1.0891397/-0.00013721/0.000137091 
+ colors=000zt5<12>zt1zs0ys1<2>vs6zm8<7>hXa<3>KOpukCUY0<6>baMdbQcbQ<7>WZXVYYUX\ 
+ ZTWZSVY<20>22L00K00K<10>A0KB0KD0J<41>u0Gw1Fw1F<117>z00zt5zt5 
+ }
+
+frog               { 
+ reset type=marksmandelpwr function=sqr passes=1 maxiter=2047 float=y 
+ inside=0 logmap=y
+ corners=-1.08927233176/-1.08926876824/-0.00000133632/0.00000133632
+ colors=000z01<5>z00zt5<12>zt2zt1zt1zs0ys1<2>vs6zm8<6>jZYh2ah7ahCaZEe<2>WIPUK\
+ JUNG<2>VX6<3>GM3CJ38F24C1080zo5nAnyGf<4>vj0<4>0JQLWgehz<6>QNqNJoMIm<10>40K<6\
+ >A0KB0KD0J<62>y01z10x1C<89>z01 
+ }  
+ 
+mite               { 
+ reset type=marksmandelpwr function=sqr passes=1 maxiter=2047 float=y 
+ inside=0 logmap=y 
+ corners=-1.090649/-1.08950482/-0.000428538/0.000429154 
+ colors=000zt5<10>zt2zt1zt1zs0ys1<2>vs6zm8<3>qeNwMp<11>00CznA0Bz<2>0J_<3>0m0z\ 
+ z0<3>nmA<4>IiW<19>13L00K00K<67>v0Ew1Dw1Dw1D<103>z00zt5zt5 
+ }  
+ 
+roach              { 
+ reset type=marksmandelpwr function=sqr passes=1 maxiter=2047 float=y 
+ inside=0 logmap=y
+ corners=-1.08925528145/-1.08925143445/-0.000001443/0.000001443 
+ colors=000z02<11>z00zt5<12>zt2zt1zt1zs0ys1<2>vs6zm8<7>hXabVezTw<10>D7L95Ylfz\ 
+ zoKLPzL2sB3h14g0jj0Q02Az<15>Aly<5>jWs<7>57U<2>52N60K70K<46>u0Gw1Fw1F<104>z02 
+ } 
+
+bug                {
+  reset=1732 type=manzpower corners=-2.0/2.0/-1.5/1.5 params=0/0/1
+  float=y outside=real
+  }
+
+sal005             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+  reset type=barnsleyj2 passes=b corners=-2.0/2.0/-1.5/1.5
+  params=0.6/1.1 float=y maxiter=255 fillcolor=254 inside=2
+  potential=255/250/0
+  colors=000gL9mJ9<6>lHR<4>BWI<6>xMo<5>_BDkJ7vQ1<2>Isd<2>Ce0<6>QSr<5>gcrid\
+  rjYo<3>lAe<3>d7Ec77_A8<2>PJ9<3>U1tha9VaLIaX8GHEURBNLIuB<4>9NG7ct8S_I53<3\
+  >AEEGkOCWKSk8<2>DOE80P<3>8DHhWE<4>EIGdNYOJPaz3NbAPVV<2>CJJ1CO5EKLcN<6>9J\
+  Gqtj<5>JQNDLJ5_n<4>8JL1Cr<3>7GNxfd<3>ILLQCc<2>CFMVHH<4>EGGBGG9je8VTipUXc\
+  PKSKcRe<6>CHJxa4<5>FJFHZBJ44<3>AEEhMBWKDKIFhnV<4>ELIhG7<6>CGFiIk<3>FGMhJ\
+  k<2>HGOlpm<6>DKKyiRBmh<2>8ONM_9<4>AJFlf6<4>EKFhW60cw4Savl3XWAulFdaGhlEhq\
+  7c3v<6>8b5E_6KX7000000aO8
+  }
+
+sal006             { ; (c) 1993 Richard H. Sherry CIS:76264,752
+  reset type=barnsleyj1 passes=b corners=-2.0/2.000012/-1.499989/1.5
+  params=1.5/0.3 maxiter=255 fillcolor=253 potential=255/150/0
+  invert=0.9/0/0
+  colors=000222000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SN\
+  C<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<29>444
+  } 
+
+WiredMandel             {
+                     ; (C) Lee H. Skinner, 1993
+  reset=1611 type=magnet2m passes=1
+  corners=0.22128795/0.22928795/-1.03858768/-1.03258768 float=y
+  inside=0 logmap=old
+  colors=000NaL<6>RwEzXeJDQ<10>P93NBKS8BQDV<3>q9jMJR<6>fzFJES<13>5ZFKDT<2>\
+  NAWJESO9X<4>U5cQOV<4>VWXJGS<6>LdYMhZLHQ<7>ep5ICV<4>85lKKR<4>PrINDP<7>xG0\
+  LHT<6>ZleJGVJJYzz`<23>pT0ROAUS3JDU<10>NFoOGqQCT<4>x4_HMZ<2>AlsLDS<14>wGI\
+  DRT6dUJFR<10>Jh9Ik7GIQ<3>3dFcaRyzPJDT<7>R7aNHSRLRu_GRNZ<2>orvKFU<9>VhoPN\
+  W<2>fpiSFT`IVLLU<2>UibHFO<4>7P2JGS<5>MYM
+  }
+
+PhoenixIslands     { ; Tropical Atoll
+                     ; (C) Lee H. Skinner, 1993
+  reset=1729 type=phoenix passes=1
+  corners=-0.732989/0.819011/0.133776/1.297776 params=0.56667/-0.5
+  float=y maxiter=1023 bailout=100 inside=0 logmap=yes
+  colors=000zzz00K<16>ECsCCs<20>CqsCssCsq<16>CsKCsIAqH<4>0bB<15>gohjpjlpk<\
+  4>zsu<6>ts_ssWssU<7>ssEssCssC<74>r88q77q77q77<65>z00qCsoCs
+  }
+
+tear3              { ; Peter Moreland (c)1993
+  reset type=mandel(fn||fn) function=flip/cosxx
+  corners=0.475442/-1.999253/0.548436/-1.307591 params=5.4/2/0.5
+  float=y maxiter=5000 bailout=50 decomp=256 distest=200/71
+  finattract=y
+  colors=0009OZJNXRNXMQYSTZKRdRVcYUYfUYUX`UYe_Z_eYXiYXe`Xh`YeZ`iY`ea`ia`ac\
+  _gd`Z`ffafadhgfgn`Zsa_nd`tcanbdsbdnffuffikinlitliZbkdbkafmfinaisnjlujkhl\
+  qimsllmplmnompommmpqnpmoqppqunprtruupnptwrtqtxutuxtuxwutvyyvwuxzzzz<24>z\
+  zz311522343642334534356654931D31962D52964D74784A83D92FC2A95D95BC5ED54799\
+  795ACA9ADA9AD9ED9AADDBDADEEDDG31H62L72H74L75P75HA3L93ID3LF3H95LA5HD6LD6Q\
+  C6HB8LB8ID9ME9HACHEDLEDPB8SB9PE9TE9QFCUFCFG6EHBJG3MG3IG6MH5NK6PI3UH3RK3T\
+  L3PI4TH6QL5TM5UO6IH9MHAIKAMLAIHEMIDILDMLEQHATHAPLAULAPIDTIDQLEULEMPESPC3\
+  7J5EJCEI4ESAEQIEIPFJHEO6GMEHKFPM6IR9KTCPUIHHLIHJLIMLHHILLILHKMMLLRLILPKT\
+  PKJLQQMQLPSRRRXE6XDAYL5YQ6dP6YKDdKCZPDeRCZMHdMIYPI`PIXTIaSJXQLaQLXTMaTLe\
+  RLYMRZTQfTQkTNlURUXJUXSYWEfXA_YMdXN`XTfYTecSmXUlfS4FW6IX8MX
+  }
+
+Youch!             { ; peter moreland 100012,3213, 17 jan 93
+                     ;
+  reset type=fn(z*z) function=exp
+  corners=-21.372979/25.526741/8.789141/-4.328859/1.799901/-22.118179
+  float=y maxiter=300 potential=255/200/200
+  colors=000zzY<32>zz1zz0zy0yx0<46>REDQDEPCEPBFOAF<7>G2JF0KF0K<11>I0NI0NI0\
+  NI0OI0OI0P<33>Q0XR0YR0YR0ZR0Z<6>T0bT0bU1bU2c<62>zzzzzzzzy<26>zzZ
+  }
+
+Avacado_Bug        { ; Tropical Atoll transmorphed into a pink avacado bug
+                     ; (C) R. H. SHERRY 1993
+  reset=1729 type=phoenix corners=-0.732989/0.818995/0.133777/1.297776
+  params=0.56667/-0.5 maxiter=1023 bailout=100 inside=6 logmap=yes
+  invert=0.3/0/0
+  colors=000KHEJQDIQDGPDFKDJJCCEWBEWAD`9Dd7Ci4Cn<6>69m99H<17>w7v<13>qEn`bf\
+  <29>BODBODCPE<14>OROOVVPRP<11>ZSXUbt<20>ZSYl4`<8>`OX_QX_I`<6>ZRX6OP<44>Z\
+  SXpbb<28>ZSXyqt<10>qjm_MH<10>LHE
+  } 
+
+PaperMoon          { ; (C) Lee H. Skinner, 1993
+  reset type=cmplxmarksmand passes=1
+  corners=-1.958518/1.177482/-0.546926/1.805074 params=0/0/0/1 float=y
+  maxiter=1023 inside=0 logmap=yes
+  colors=00000Eme0<3>eL0<5>sle<39>5Jx3Iy2Hy0Gz0Gz<47>00S<3>S0S<3>S00<3>SS0\
+  <3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQ\
+  SKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>\
+  0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG\
+  8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000\
+  <6>000
+  }
+
+Zoom4              { ; No Description
+                     ; (C) Lee H. Skinner, 1993
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=richard1 passes=1 float=no video=SF7
+  corners=-0.403326333/-0.402899504/0.623393595/0.623713613
+  maxiter=500 fillcolor=7 inside=zmag outside=summ logmap=yes
+  colors=000zzIChe<2>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<4>L0K<3\
+  >4J5<17>Q`5Sa6R`6<17>0G5<7>wgF<8>XKDUHDSGC<6>AB7<12>svcsvcsvcsvc<9>aXO<1\
+  5>zjF<13>RCCEEE<13>kki<11>IILDDG<4>005SNCQL9OI5<6>eYJg_LiaNkcPneR<4>zpa<\
+  12>UPFHGMEDLAAK<3>ALQAOSARUBUWBXY<2>Bec cyclerange=2/255
+  }
+
+ButtrScotchStrings { ; Alien Musical Instrument
+                     ; (C) Lee H. Skinner, 1993
+  reset=1611 type=complexnewton passes=1
+  corners=-0.942097/3.057903/-0.322547/2.677453
+  params=1.5/4.6/0.25/0.75 float=y inside=0 logmap=yes periodicity=0
+  colors=000KK0<11>WB9XAAZ99<16>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1\
+  zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<24>FFF
+  }
+
+Wormwood           { ; Rotten Wood
+                     ; (C) Lee H. Skinner, 1993
+                     ; From a zoom into Peter Moreland's Caterpillar Planet
+  reset=1720 type=barnsleym1 passes=1
+  corners=0.905186/1.040873/-0.289316/-0.47023/1.040873/-0.47023
+  maxiter=50 bailout=12123 inside=bof60 decomp=256 periodicity=-256
+  colors=000421<28>vPF<30>110000001<29>Z0_`0a_0`<27>102001000000<30>v00<30\
+  >100000001<30>00z<30>002000000210
+  }
+
+MossyWood          { ; Moss growing on rotten wood
+                     ; (C) Lee H. Skinner, 1993
+                     ; Will take a long time to generate, but it's  nice!
+  reset=1732 type=fn(z)+fn(pix) function=cosxx/sqr passes=1
+  corners=0.324413976/0.325175684/1.357493574/1.358064855 float=y
+  maxiter=1023 inside=0 logmap=yes bailout=50
+  colors=000PaO<132>zk9zk9zj9<106>hJ7M`Q<10>PaO
+  }
+
+GoodLuckRoad       { ; A Trail of Four-Leaf Clovers
+                     ; (C) Lee H. Skinner, 1993
+  reset=1720 type=sqr(1/fn) function=sin passes=1
+  corners=0.288798/1.082196/0.546241/1.54123 float=y maxiter=1023
+  bailout=7168 inside=maxiter logmap=yes potential=255/511/0
+  colors=0005vF3zEKJG<25>e5qf4sf4s<43>G3JG3JG4J<3>G5JG5KG5KG5LG5M<65>51y40\
+  z51z<36>rqlsrltsn<4>zzz<5>00_000KJF<49>FWZ
+  }

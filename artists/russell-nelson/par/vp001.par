@@ -1,0 +1,251 @@
+;for "vp001.frm"
+
+fugue_01_1         { ; sin
+                     ; 11/29/94
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_01
+  function=sin passes=t corners=-2/2/-1.5/1.5
+  params=-0.74543000000000004/0.11301/1.6180000000000001/-0.61799999999999\
+  999 float=y maxiter=4000 inside=maxiter potential=255/256/512
+  colors=000yyx<134>TTSTTSSRQ<6>J77H44I65<6>VRJ<7>8ua5yd5xc<8>CfP<12>6Oa<1\
+  0>hkL<2>DDH<4>rrY<6>kCG<3>UMUVOS998<35>000zzy
+  }
+
+fugue_04_1         { ; sin/sin/sin/sin
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_04
+  function=sin/sin/sin/sin passes=t
+  corners=1.307962/-1.30796/-1.743946/1.743943/-1.30796/1.743943
+  params=0.61799999999999999/-1.6180000000000001/1.6180000000000001/-0.617\
+  99999999999999 maxiter=4000 inside=maxiter potential=255/256/512
+  colors=@astral6.map
+  }
+
+fugue_04_2         { ; sin/cotanh/sin/cotanh
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_04
+  function=sin/cotanh/sin/cotanh passes=t
+  corners=1.307962/-1.30796/-1.743946/1.743943/-1.30796/1.743943
+  params=0.61799999999999999/-1.6180000000000001/1.6180000000000001/-0.617\
+  99999999999999 maxiter=4000 inside=maxiter potential=255/256/512
+  colors=@astral6.map
+  }
+
+fugue_04_3         { ; sin/cotanh/sin/cotanh
+                     ; eps;imag
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_04
+  function=sin/cotanh/sin/cotanh passes=t
+  corners=-4.650645/4.650633/-2.540654/2.540643
+  params=0.61799999999999999/-1.6180000000000001/1.6180000000000001/-0.617\
+  99999999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000000000zzz<135>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12\
+  >6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<33>000
+  }
+
+fugue_03_1         { ; sin/cotanh/sin
+                     ; eps;imag
+                     ; fpu
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_03
+  function=sin/cotanh/sin passes=t
+  corners=-2.12065/2.120645/-2.295406/2.295392
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000000000zzz<135>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12\
+  >6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<33>000
+  }
+
+fugue_03_2         { ; cotanh/sin/sin
+                     ; eps;imag
+                     ; fpu
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_03
+  function=cotanh/sin/sin passes=t
+  corners=-3.759399/3.759399/-2.819548/2.819549
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 float=y maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12>6Ob<10\
+  >hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+fugue_03_3         { ; cotanh/cotanh/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_03
+  function=cotanh/cotanh/cotanh passes=t
+  corners=-3.759399/3.759391/-2.819542/2.819549
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12>6Ob<10\
+  >hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+fugue_03_4         { ; cos/cos/cos           
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_03
+  function=cos/cos/cos passes=t
+  corners=-3.158692/0.02925867/-1.195481/1.195491
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12>6Ob<10\
+  >hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+fugue_01_4         { ; sinh
+                     ; max;imag
+                     ; fpu math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_01
+  function=sinh passes=t corners=-2/2.000004/-2.216816/0.7831855
+  params=0.61799999999999999/0.61799999999999999/0.61799999999999999/0.617\
+  99999999999999 float=y maxiter=4000 inside=maxiter outside=imag
+  potential=255/256/512
+  colors=000000000zzz<135>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12\
+  >6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<33>000
+  }
+
+fugue_07_1         { ; nov29,94
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_07
+  function=cotanh/sin/cotanh/cotanh passes=t
+  corners=-4.575956/4.575947/6.101268/-6.101277/4.575947/-6.101277
+  params=0.61799999999999999/-0.61799999999999999/1.6180000000000001/-1.61\
+  80000000000001 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000VRK<7>8ub5ye5xd<8>CfQ<12>6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT\
+  999<35>000zzz<135>TTTTTTSRR<6>J78H45I66<5>TOI
+  }
+
+fugue_07_2         { ; nov29,94
+                     ; Zen and the art of Fractals
+                     ; cotanh/sqr/cos/sin
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_07
+  function=cotanh/sqr/cos/sin passes=t
+  corners=-2/2.000012/-1.500014/1.5
+  params=4/0.61799999999999999/2/-0.98699999999999999 maxiter=4000
+  inside=epsiloncross outside=imag potential=255/256/512
+  colors=000LLL<86>000zzz<38>ppp<8>2y0<5>WAV<9>1o1<12>kdb<88>aig
+  }
+
+fugue_08_1         { ; all cotanh
+                     ; pi;e;pi;e
+                     ; int math
+                     ; 11/30/94
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_08
+  function=cotanh/cotanh/cotanh/cotanh passes=t
+  corners=-2/2.000012/-1.499989/1.5
+  params=3.14159265358979/2.71828182845905/3.14159265358979/2.718281828459\
+  05 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000kkk<76>TTTTTTSRR<6>J78H45I66<6>VRK<7>8ub5ye5xd<8>CfQ<12>6Ob<10\
+  >hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<11>wwwvvvtuu<22>0XI<3>79E93\
+  D93D<14>AEF
+  }
+
+fugue_07_3         {
+                     ; int math
+                     ; 11/30/94
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_07
+  function=cotanh/sin/sqr/sin passes=t
+  corners=-1.614034/0.6440516/-0.7824389/0.9111192
+  params=3.14159265358979/-1.6180000000000001/2.71828182845905/-0.61799999\
+  999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000eeeeeeeee<2>eecffbffagg`ggZ<14>nmIonGonG<52>s2Hs2Hr3H<48>8kY7l\
+  Z7lZ7lZ<61>7q48r39q5<21>jKqlItlIt<29>fYrUUU000e_r
+  }
+
+fugue_10_2         {
+                     ; int math
+                     ; 11/30/94
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_10
+  function=cotanh/sin/sin/cotanh passes=t
+  corners=0.28739029/-0.28079152/-0.39982826/0.3577295/-0.28079152/0.35772\
+  95
+  params=1.6180000000000001/3.14159265358979/2.71828182845905/-0.617999999\
+  99999999 maxiter=10000 inside=epsiloncross outside=imag
+  potential=255/256/512
+  colors=000000A4p<41>jRTqVOkRS<6>rVOkOA<14>rVO3_t<20>pVP5KS<51>rVO95v<30>\
+  qVPFuP<45>rVO35k<22>hQS78j<4>73p00072r
+  }
+
+fugue_09_01        { ; cotanh/sin/cotanh/sin
+  reset=1821 type=formula formulafile=fugue.frm formulaname=FUGUE_09
+  function=cotanh/sin/cotanh/sin passes=t
+  corners=-1.093878/0.4581062/-0.5820135/0.5819955
+  params=-3.1415999999999999/2.71828182845905/3.14159265358979/-0.61799999\
+  999999999 maxiter=4000 inside=epsiloncross outside=imag
+  potential=255/256/512 colors=000eee<169>000zzz<82>eee
+  }
+
+fugue_03_5         { ; cotanh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=cotanh/sin/cotanh passes=t
+  corners=-3.759399/3.75939/-2.819542/2.819549
+  params=-8/-1.6180000000000001/2.71828182845905/-0.61799999999999999
+  maxiter=4000 inside=epsiloncross outside=imag potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<4>MDDKABJ78H45I66<6>VRK<8>5ye<8>BhSCfQCeR<11>\
+  6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+fugue_03_6         { ; cosh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=cosh/sin/cotanh passes=t
+  corners=-1.529025/1.529009/0.4242011/2.71773
+  params=-8/-4.258/3.14159265358979/-0.61799999999999999 maxiter=4000
+  inside=epsiloncross outside=imag potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<4>MDDKABJ78H45I66<6>VRK<8>5ye<8>BhSCfQCeR<11>\
+  6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+dec2fugue3_1       { ; cosh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=cosh/sin/cotanh passes=t
+  corners=0.4087221/-0.12248367/1.67675245/1.75261927/0.18105262/1.9802887\
+  4 params=-8/-4.258/3.14159265358979/-0.61799999999999999
+  maxiter=4000 inside=epsiloncross outside=imag potential=255/256/512
+  colors=000fff<57>TTTTTTSRR<6>J78H45I66<6>VRK<8>5ye<9>CfQ<12>6Ob<10>hkM<2\
+  >DDI<4>rrZ<6>kCH<3>UMVVOT999<35>000zzz<76>fff
+  }
+
+dec2fugue3_2       { ; cotanh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=cotanh/sin/cotanh passes=t
+  corners=-0.22301048/0.223008692/1.45653284/1.68254912/-0.170893371/1.387\
+  08168 params=-8/-4.258/3.14159265358979/-0.61799999999999999
+  maxiter=4000 inside=epsiloncross outside=imag potential=255/256/512
+  colors=000<2>111111000000zzz<76>ffffffffffffeeeeee<53>TTTTTTSRR<6>J78H45\
+  I66<6>VRK<8>5ye<9>CfQ<12>6Ob<10>hkM<2>DDI<4>rrZ<6>kCH<3>UMVVOT999<29>222
+  }
+
+dec2fugue3_3       { ; cotanh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=cotanh/sin/cotanh passes=t
+  corners=-0.153560579/0.0194509625/1.46004158/1.54774803/-0.13335377/1.43\
+  309039 params=-8/-4.258/3.14159265358979/-0.61799999999999999
+  maxiter=4000 inside=epsiloncross outside=imag potential=255/256/512
+  colors=@topo.map
+  }
+
+dec2fugue3_4       { ; sinh/sin/cotanh
+                     ; eps;imag
+                     ; int math
+  reset=1821 type=formula formulafile=fugue.frm formulaname=fugue_03
+  function=sinh/sin/cotanh passes=t
+  corners=-0.150944948/0.150941432/-0.053009212/0.0530743003/-0.0932046771\
+  /-0.130021334
+  params=-16/-4.258/3.14159265358979/-0.61799999999999999 maxiter=4000
+  inside=epsiloncross outside=imag potential=255/256/512
+  colors=@default.map
+  }
+

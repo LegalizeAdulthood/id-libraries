@@ -1,0 +1,121 @@
+comment {
+FROM:	INTERNET:fractint@lists.xmission.com, INTERNET:fractint@lists.xmission.com
+TO:	(unknown), INTERNET:fractint@lists.xmission.com
+DATE:	9/13/99 11:12 p
+
+Re:	(fractint) v20.0
+} 
+
+comment { ramblings by Mark "Bud" Christenson 9/13/99
+
+[NOTE: This message can be saved as a text file and accessed 
+by Fractint v19.6 and above without modification, *but* I forgot if it 
+should be a par or a frm.  It has been quite a while since I posted.]
+
+As promised, a couple of examples of what evolver can do. 
+Of course, you can come to the same solution without the 
+automated help, but for most, especially novices, this will 
+be a real time saver. 
+
+For reference, I used random mode (just because it's easier 
+than the x/y mode in its current state) on one complex parameter 
+at a time, with limits (typically) starting at 1 and with a slow 
+convergence factor of 0.9 (1.0 if I wasn't ready to converge yet). 
+
+Here's the first pair:
+}
+
+g608-1y            { ; vaguely vaginal - (c) 10/13/98 Mark "Bud" Christenson
+                     ; de g608-1p /f2
+  reset=1930 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=conj/tanh/cosxx passes=t
+  center-mag=0/0/0.75/1.3333 params=3/-0.9/2/-1/0.3/0 float=y
+  maxiter=300 inside=60 outside=atan decomp=142 periodicity=0
+  viewwindows=2/1/yes/0/0 cyclerange=1/128 sound=off
+  colors=000bgobgpagr<3>hlujnvlpw<3>tvyvwyxyzzzz<25>`C`_A_Z8Z<2>W2WV0VU0U<\
+  8>L0LK0KJ0J<2>G0GF0FG1F<40>tr`us`vua<3>zzc<2>zsZzpYxpZ<3>pldmlfkkg<2>ehl\
+  cgmcgnzJC<3>z85z53z32z00<51>60050040030020000000000K<19>AATBBTBBU<4>EFVE\
+  GVFHV<3>HKXHKYILY<8>MQeNRfNRg<6>RXkSYlSZl<4>Xco
+  }
+
+g608-5y            { ; de gj08-1y /evol:pn- (c) 9/12/99 Mark "Bud" Christenson
+                     ;
+  reset=1930 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=conj/tanh/cosxx passes=t
+  center-mag=0/0/0.75/1.3333
+  params=2.428948942533646/0.002276985992004183/3.717297585985901/0.730640\
+  2783288064/0.3404527573473312/-0.002013992736594746 float=y
+  maxiter=300 inside=60 outside=atan decomp=142 periodicity=0
+  viewwindows=2/1/yes/0/0 cyclerange=1/128 sound=off
+  colors=000bgobgpagr<3>hlujnvlpw<3>tvyvwyxyzzzz<25>`C`_A_Z8Z<2>W2WV0VU0U<\
+  8>L0LK0KJ0J<2>G0GF0FG1F<40>tr`us`vua<3>zzc<2>zsZzpYxpZ<3>pldmlfkkg<2>ehl\
+  cgmcgnzJC<3>z85z53z32z00<51>60050040030020000000000K<19>AATBBTBBU<4>EFVE\
+  GVFHV<3>HKXHKYILY<8>MQeNRfNRg<6>RXkSYlSZl<4>Xco
+  }
+
+comment { 
+
+While the second image lacks the sex appeal of its parent, 
+it has a complex charm of its own. 
+
+Here's the second pair:
+}
+
+g608-2r            { ; de g608-1d /f3 - (c) 11/15/98 Mark "Bud" Christenson
+  reset=1930 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=ident/cotan/cabs passes=b
+  center-mag=0/0/0.45/1.3333
+  params=3/-2/2/-1/0.3/0 float=y maxiter=300 inside=60 outside=atan
+  decomp=256 periodicity=0 viewwindows=2/1/yes/0/0 cyclerange=0/255
+  sound=off
+  colors=LK0<14>`60a50b40c30d20e10<4>o00q00r00<3>z00<5>o00m00k00i00g00<16>\
+  QFFPGGOHHNIIMJJKKK<22>fff<3>jjjlllnnn<2>sss<3>llljjjiii<19>QQQPPPOOO<2>L\
+  LLKKKKKL<9>BPWAQX9QY<3>5Ta4Ub3Vc<3>1Zi1_k1am<3>0gu0iv0jx0kz<3>0er0dq0bo<\
+  3>0Yh0Xf1We<14>FNQGNPHMOIMNJLMKKK<15>`XLaYLbZLc_Ld`LeaLgbM<3>ohQqjRrlT<3\
+  >zsX<4>qjSoiRmgQkeP<23>KK0
+  }
+
+g608-5z            { ; de g608-2r /evol:pn - (c) 9/12/99 Mark "Bud" Christenson
+  reset=1930 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=ident/cotan/cabs passes=b
+  center-mag=0/0/0.45/1.3333
+  params=1.8/-1.02/3.46/-0.41/0.113/0.129 float=y maxiter=300
+  inside=60 outside=atan decomp=256 periodicity=0
+  viewwindows=2/1/yes/0/0 cyclerange=0/255 sound=off
+  colors=LK0<14>`60a50b40c30d20e10<4>o00q00r00<3>z00<5>o00m00k00i00g00<16>\
+  QFFPGGOHHNIIMJJKKK<22>fff<3>jjjlllnnn<2>sss<3>llljjjiii<19>QQQPPPOOO<2>L\
+  LLKKKKKL<9>BPWAQX9QY<3>5Ta4Ub3Vc<3>1Zi1_k1am<3>0gu0iv0jx0kz<3>0er0dq0bo<\
+  3>0Yh0Xf1We<14>FNQGNPHMOIMNJLMKKK<15>`XLaYLbZLc_Ld`LeaLgbM<3>ohQqjRrlT<3\
+  >zsX<4>qjSoiRmgQkeP<23>KK0
+  }
+
+comment { 
+
+Admittedly, the initial image in the second case is a rather 
+bland item I came across while flipping through functions 
+looking for promising candidate Gallet-6-08 types; but the 
+Evolver can take you from one interesting case to another 
+as well.  
+
+Navigating the possibilities is a bit slower than 
+sitting at the console brute-forcing my way through, but 
+the advantage is that you can do other things while Fractint 
+does the work.  I did both of these in 30-40 minutes, making 
+selections between bites at dinner (something only a bachelor 
+or someone with a very understanding or similarly addicted 
+mate can get away with), watching the idiot box, folding 
+laundry, etc. 
+
+Finally, in case you have comitted the unforgivable sin of 
+not having this wonderful frm in your posession, here it is:
+}
+
+frm:Gallet-6-08 { ; Sylvie Gallet, 1996
+z = pixel , x = real(z) , y = imag(z) :
+x1 = x - p1*fn1(y + fn2(p2*x) / fn3(p3*y))
+y1 = y - p1*fn1(x + fn2(p2*y) / fn3(p3*x))
+x = x1 , y = y1
+z = x + flip(y)
+|z| <= 1024
+}
+

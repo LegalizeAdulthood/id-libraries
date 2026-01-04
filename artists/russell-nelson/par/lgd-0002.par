@@ -1,0 +1,445 @@
+1.Read_This<F2>    { ; All images are (c) 1995-1996 Loren G. Dobert
+; No commercial use without permission (as usual).
+; Most of the formulas (that aren't mine) used in these images
+; should be available on CIS in the usual place. Thanks to
+; everyone who has contributed to the great collection of formulas
+; that make these images possible.
+; Any images that are derivative of other people's work (hope they
+; don't mind) have proper credit given for the original image, it's
+; creator, and the file it came from.
+; Tell me what you think:
+; CIS: 72332,507
+; AOL: LorenD3207
+; Hope you like 'em, I did most of 'em 1994-1996 or thereabouts.
+; You should also have the formula file called LGD001.FRM and a
+; set of GIF thumbnails to go with this set of PARs.
+; Remember to hit F2 to see other comments and credits.
+  reset=1920 type=mandel passes=2 corners=-2.5/1.5/-1.5/1.5 params=0/0
+  float=y
+  }
+
+LGDP0033           { ; Overpressure Wave
+                     ; from "Liquid Chaos" (ckp0631 in ckp650.par)
+                     ; 2-28-95 LGD
+                     ; "Six pounds of overpressure wave seemed to glue him
+                     ; to the wall, just protect and you'll survive"
+                     ;       -Jethro Tull
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=barnsleym1
+  corners=-0.107263699/-0.0766157331/0.0221069988/-0.0187568331/-0.0766157\
+  331/-0.0187568331 params=9.1375097499999995/0.23412450000000001
+  float=y maxiter=100 bailout=12123 inside=bof60 invert=0.0926831/0/0
+  decomp=256 periodicity=-256
+  colors=xqHyrH<2>zzLzxLzuKzsKzrK<3>zhIzeHzbHz_GzXF<11>z07<15>0j0<28>Bzs<2\
+  >FttHqtJouLmuMkv<5>XZxYWy_UyaRzbQw<13>q4Bs27r28<29>MDdKEfKEf<77>`A1a90aA\
+  0<36>xpG cyclerange=0/255
+  }
+
+LGDP0034           { ; Bill Gates
+                     ; Windows, Get It?
+                     ; From "Close Up, Waffle Iron", (ckp0563 in ckp575.par)
+                     ; 3-8-95 LGD
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=barnsleyj2
+  corners=1.03871943/1.43040574/-0.07566473/-0.648353491/1.45461705/-0.630\
+  194909 params=0.0050000000000000001/1.5 float=y maxiter=20
+  bailout=22 inside=bof60 outside=summ
+  colors=JKfLLhMMiONk<14>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<1\
+  4>zyyzzz<19>uu0<16>zzwzzzyyy<23>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>Os\
+  zPuzOty<30>1BR09P19Q<10>IJe cyclerange=0/255
+  }
+
+LGDP0035           { ; Red Nodules
+                     ; From "Beginning of Space", (ckp0566 in ckp575.par)
+                     ; 3-8-95 LGD
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=barnsleym2
+  corners=-0.0700108558/-0.0101781518/1.20037542/1.24524995
+  params=0.16550000000000001 float=y maxiter=20 bailout=22
+  inside=bof60 outside=summ
+  colors=s0L<26>P90000<29>000zwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>\
+  zyyzzz<19>uu0<16>yyvzzzyyy<23>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszP\
+  uzOty<3>Mnut0L cyclerange=0/255
+  }
+
+LGDP0036           { ; Dark Theater
+                     ; From I_Guess_this_film_
+                     ; just isn't Popular... (aaa111.par)
+                     ; Peter Moreland
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=manlam(fn||fn) function=sqr/conj passes=2
+  corners=-0.9299441263/-0.9869595385/0.5252667994/0.4741639871/-0.9259403\
+  384/0.5199283889 params=1.76/0/10 float=y maxiter=500 bailout=90
+  outside=mult colors=000CCC<101>yyyzzzyyy<123>000000000000000<21>BBB
+  }
+
+LGDP0037           { ; Spike Star
+                     ; From "Quilt" - Fear not, the Comforter cometh.
+                     ; A. Lee (lee7.par)
+                     ; 7-25-95 LGD
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=richard1 passes=2
+  corners=0.634745885/0.614458685/-0.0135499182/0.0134996818/0.614458685/0\
+  .0134996818 params=0.579568/0.7321056/0.6776354/0.4542897/0/0
+  float=y outside=real
+  colors=00000z<81>yy2yy1zz0zz0zy0<81>z10z00z00y01<82>00z
+  }
+
+LGDP0038           { ; Reactor Core
+                     ; from "Ceiling Corner" in ckp0346
+                     ; much of the fun here is in watching it be created...
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=mandnewt.frm
+  formulaname=f'm-setinnewtonc function=sin passes=b
+  corners=-1.614438/4.760044/3.386118/-3.336501/4.760044/-3.336501
+  params=0.555555/0.12345679/0/0/0/0 maxiter=500 inside=maxiter
+  potential=255/50/500 periodicity=-1
+  colors=000rG3<6>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<\
+  12>ziF<13>K8C413000<15>svcsvcsvcsvc<4>jiWhfUfdTebS<3>_TMYRKWPJUMHSJF<6>E\
+  Ab<6>7Nu5Px5Nu<5>A5c<5>H9Q<4>QIPSKPUNS<2>_VZ`Y`b`cdcf<4>nru<2>ikk000ege<\
+  10>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY\
+  <6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0 cyclerange=0/255
+  }
+
+LGDP0039           { ; Evil Mars Face
+                     ; from Tumor, Malignant fractal
+                     ; Slack.par, Brad Beacham
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=julzzpwr
+  corners=-0.59567227918/-0.59521675065/0.31187906564/0.31010102153/-0.594\
+  65482775/0.31052246372 params=0/0/2 float=y potential=256/12000/0
+  colors=000A00<2>300000020<14>0c0<15>zzz<15>0c0<15>000<14>mX0pZ0q`4<9>wrf\
+  wsjxunxvrzcc<11>sNNzccyaaxZZzcc<10>h00zzzE90<3>000<14>`0sc0wd3w<13>xvyzz\
+  zywz<14>c0w<15>000<14>`00c00d44<13>zzz<15>c00<8>I00A00D00
+  }
+
+LGDP0040           { ; Corundum Eyes
+                     ; from ckp1298 - "Star Sapphireyes"
+                     ; recolor from JO_WE_04:Jowe_408
+                     ; With iris eyelids - LGD 2-19-96
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1730 type=barnsleyj2
+  corners=-4.172708/4.112363/3.872523/-3.888678/2.535294/-5.07148
+  params=0.8571652003910001/-0.4628683181225498 float=y maxiter=20
+  bailout=50 inside=bof60 outside=summ
+  colors=000<45>10810820920A<10>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW\
+  3DX4EX4EY<9>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>Tgv\
+  UgvVhvWhwXiw<2>Zky_ly_ly`myamy<3>dpzdpzeqzeqzfrz<9>mwy000<101>000
+  cyclerange=0/255
+  }
+
+LGDP0041           { ; Elrathia
+                     ; From ckp1259 - "Fan Trilobyte and Family"
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout02
+  function=asin/cotan
+  corners=-0.48744339/0.23566775/-0.28216389/0.26016946
+  params=0.02/0.001/17/0/0/0 float=y decomp=256
+  colors=aab__a__a<18>CCLAAKAAK<22>BE`000BEb<12>NPhf3J<2>k7Il8Hm9GoAFpBE<2\
+  >uGDwHCxIBzKAzMB<2>zUFKLOz_H<9>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBE\
+  cBEbBEb000BE`<25>BBLAAKCDKEGJ<14>eeeccd cyclerange=0/255
+  }
+
+LGDP0042           { ; Mammillary Mandelbrot #1
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cos/cos/cos passes=3
+  corners=-0.082075872/0.081840888/1.7273553/1.5087996/0.081840888/1.50879\
+  96 params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000000zzxzzz000<28>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0z\
+  x<23>0z0<14>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<21>zz0000000
+  }
+
+LGDP0043           { ; Mammillary Mandelbrot #2
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cos/cos/cos passes=3
+  corners=0.002952909003/-0.00297781793/1.561175639/1.556727593
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000zz0000<3>000000002<27>00w00z20z<27>w0zz0zz0x<27>z00<14>401zW0<\
+  31>zz0yz0wz0<29>1z0<13>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<20>zw0
+  }
+
+LGDP0044           { ; Harpactocarcinus
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotan/tan/atan passes=3
+  corners=-5.621808/-2.619866/1.994248/-2.008341/-2.619866/-2.008341
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000000zzxzzz000<28>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0z\
+  x<23>0z0<14>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<21>zz0000000
+  }
+
+LGDP0045           { ; Recursive Evil Cats
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotan/tan/atan passes=3
+  corners=-1.993693/1.141487/2.081961/-2.098279/1.141487/-2.098279
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000000zzxzzz000<28>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0z\
+  x<23>0z0<14>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<21>zz0000000
+  }
+
+LGDP0046           { ; Winged Selenite
+                     ; (H. G. Wells version)
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotan/tan/atan passes=3
+  corners=-1.3663532/-0.37563627/0.662783/-0.6581729/-0.37563627/-0.658172\
+  9 params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000000zzxzzz000<28>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0z\
+  x<23>0z0<14>Tz0Vz0Wz0Xz0<29>zz0000<9>z00<21>zz0000000
+  }
+
+LGDP0047           { ; Black Moth
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotanh/tanh/atanh passes=3
+  corners=-1.230004/2.277393/2.01989/-2.015772/2.277393/-2.015772
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000<4>000000002<27>00w00z20z<27>w0zz0zz0x<26>z03z00z20<13>zU0zW0z\
+  W0<30>zz0yz0wz0<29>1z0<13>Tz0Vz0Wz0Xz0<29>zz0<10>z00<21>zz0
+  }
+
+LGDP0048           { ; Night Wings
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotanh/tanh/cabs passes=3
+  corners=-1.639884/1.867514/2.01989/-2.015772/1.867514/-2.015772
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000<4>000000002<27>00w00z20z<27>w0zz0zz0x<26>z03z00z20<13>zU0zW0z\
+  W0<30>zz0yz0wz0<29>1z0<13>Tz0Vz0Wz0Xz0<29>zz0<10>z00<21>zz0
+  }
+
+LGDP0049           { ; Darkside Sunset
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=flip/cotan/cabs passes=3
+  corners=-1.309387/1.296108/0.8364662/-2.161454/1.296108/-2.161454
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000<8>000000200<25>w00z00z00<62>zz0zzz<61>zV1zU0zU0zT0<28>z10z00z\
+  00y00<30>c00b11a11`22_22<19>KCC
+  }
+
+LGDP0050           { ; Worse Than Giger
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=cotanh/cotan/atanh passes=3
+  corners=-2.407165/1.908762/2.509991/-2.455975/1.908762/-2.455975
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000<8>000000200400600900<4>700M00<14>s00u00w00z00z00z10<61>zz0000\
+  <94>z00z00y00<30>c00b11a11`22_22<19>KCC
+  }
+
+LGDP0051           { ; Superbowl XXX
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=tan/cotanh/atan passes=3
+  corners=-2.407165/1.908762/2.478915/-2.487052/1.908762/-2.487052
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=00F003000<15>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<1\
+  5>c00<14>300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbq\
+  oesqjusovupwxvyzzzxvyupwsovqjuoesmbqkYpiWogOmeMkcKi<2>Y8fW4dU2cS0`<4>I0R\
+  G0PG0NC0L<4>20B009007005005<13>00c<15>zzz<15>00c<13>005
+  }
+
+LGDP0052           { ; Mardi Gras Mask
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=tanh/tanh/tanh passes=3
+  corners=-2.407165/1.908762/2.478915/-2.487052/1.908762/-2.487052
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000003000<15>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<1\
+  5>c00<14>300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbq\
+  oesqjusovupwxvyzzzxvyupwsovqjuoesmbqkYpiWogOmeMkcKi<2>Y8fW4dU2cS0`<4>I0R\
+  G0PG0NC0L<4>20B009007005005<13>00c<15>zzz<15>00c<13>005
+  }
+
+LGDP0053           { ; Attack of the Killer Robots
+                     ; 
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=sin/sin/sin passes=3
+  corners=1.0271849/1.5127094/0.27984405/-0.27880737/1.5127094/-0.27880737
+  params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000U00<10>300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmi\
+  WokYpmbqoesqjusovupwxvyzzzxvyupwsovqjuoesmbqkYpiWogOmeMkcKi<2>Y8fW4dU2cS\
+  0`<4>I0RG0PG0NC0L<4>20B009007005005<13>00c<15>zzz<15>00c<15>000<15>0cc<1\
+  5>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<2>X00
+  }
+
+LGDP0054           { ; An Alien's worst nightmare
+                     ; As in Alien, the movies
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=dons.frm formulaname=inandout01
+  function=sin/log/sinh passes=3
+  corners=0.25925108/0.72411166/0.27366132/-0.26121389/0.72411166/-0.26121\
+  389 params=2e-007/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  distest=5/71/800/600 finattract=y
+  colors=000000S00<10>000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmi\
+  WokYpmbqoesqjusovupwxvyzzzxvyupwsovqjuoesmbqkYpiWogOmeMkcKi<2>Y8fW4dU2cS\
+  0`<4>I0RG0PG0NC0L<4>20B009007005005<13>00c<15>zzz<15>00c<15>000<15>0cc<1\
+  5>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<2>X00
+  }
+
+LGDP0055           { ; ant1, Nebulae
+                     ; Let it run long enough and it looks like a plasma
+                     ; Modified Volcano.map
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=ant corners=-1/1/-1/1 params=1/1000000000/256/1/1/0
+  float=y
+  colors=000<13>X88_99a88<14>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0\
+  zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+LGDP0056           { ; ant2, Snakes & Ladders
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=ant corners=-1/1/-1/1 params=1/1000000000/256/2/1/0
+  float=y
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+LGDP0057           { ; ant5, Always makes a lattice
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=ant passes=t corners=-1/1/-1/1
+  params=110110110/1000000000/1/1/1/0 float=y
+  colors=000z00<3>K000z0<3>0K000z<3>00Kccc<238>ccc
+  }
+
+LGDP0058           { ; ant6, Red Square
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=ant passes=t corners=-1/1/-1/1
+  params=11011/1000000000/1/1/1/0 float=y colors=@default.map
+  }
+
+LGDP0059           { ; Basidechenella
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=inandout.frm
+  formulaname=inandout02 function=sinh/cotanh passes=3
+  corners=-0.7661869/0.2562306/-0.38475098/0.38206217
+  params=0.07000000000000001/0/12/0/0/0 float=y outside=real
+  colors=000000KKK<11>RRRSSSTTTUUUUUU<31>bbbcccaho<9>fkqglrflr<148>JQUQW`J\
+  QU<10>HNUGMUGMUFMUFMU<3>EKUDJVCKUCKTBLS<2>8MP6KM<12>FRU
+  }
+
+LGDP0060           { ; Bat & Full moon
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=inandout.frm
+  formulaname=inandout04 function=cotan passes=3
+  corners=2.293681/-2.297524/-3.074261/3.047345/-2.297524/3.047345
+  params=0.71828182845905/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  outside=0 distest=5/71/800/600 finattract=y
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+LGDP0061           { ; Four Eyes, Glasses from hell
+                     ; 
+                     ; (c) 1995 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=cmplxmarksjul corners=-1.712/1.712/-1.284/1.284
+  params=-1.2550000000000101/-0.014999999999994299/1 float=y
+  maxiter=12000 inside=0 potential=255/1000/1
+  colors=000000_2s<17>l0im0hn0gn0fo0e<4>r1bs1as2`t2_t2Zu2Z<8>x6Sx7Rx7Qy8Qy\
+  8Py9O<6>zDJzDIzEHzEHzFGzGG<13>xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<15>il\
+  0hm0gn0fn0eo0<4>br1as1`s2_t2Zt2Zu2<8>Sx6Rx7Qx7Qy8Py8Oy9<6>JzDIzDHzEHzEGz\
+  FGzG<13>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<15>0il0hm0gn0fn0eo<4>1br1as\
+  2`s2_t2Zt2Zu<8>6Sx7Rx7Qx8Qy8Py9Oy<6>DJzDIzEHzEHzFGzGGz<13>Q7xR6xS6xT5wT5\
+  wU5w<5>Z2t
+  }
+
+LGDP0062           { ; Goggles
+                     ; For a weird aviator
+                     ; Variation on FIRESTRM.MAP
+                     ; Are those reflections, or the weird aviator's eyes?
+                     ; (c) 1995 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=cmplxmarksjul passes=t
+  corners=-1.984599/1.989605/-0.14439986/0.15942486/-0.6996606/-1.8583655
+  params=-0.50000000000000999/-0.96499999999998798/1 float=y
+  maxiter=12000 inside=0 potential=255/1000/1
+  colors=000000_2t<17>k0jl0im0hn0gn0f<4>q1cr1bs1as2`t2_<2>u2Yv3Xv3Xv4Ww4V<\
+  17>zEHzEHzFGzGGzHF<12>xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<14>jk0il0hm0g\
+  n0fn0<4>cq1br1as1`s2_t2<2>Yu2Xv3Xv3Wv4Vw4<17>HzEHzEGzFGzGFzH<12>7xQ6xR6x\
+  S5wT5wT5wU<5>2tZ2t_2s_2s`1ra<14>0jk0il0hm0gn0fn<4>1cq1br1as2`s2_t<2>2Yu3\
+  Xv3Xv4Wv4Vw<17>EHzEHzFGzGGzHFz<12>Q7xR6xS6xT5wT5wU5w<4>Y3u
+  }
+
+LGDP0063           { ; Cracked Glasses
+                     ; Tony ran over his glasses
+                     ; He ran over his teeth, too
+                     ; Variation of NEON.MAP
+                     ; (c) 1995 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset type=cmplxmarksjul
+  corners=-0.8229012/0.8229012/-1.715214/1.715214/-1.877018/-0.3097252
+  params=-0.55279120500760093/0.80011731732782221/1 float=y
+  maxiter=12000 inside=epsiloncross outside=0 potential=255/1000/1
+  colors=000000www0IY0KV0MSwww0PN<7>0c000000P<55>zz0<30>220000003<11>00k<1\
+  5>000000000000<30>zKU<4>pHPnGOjFN<22>211000001<45>00y00z02w<6>0Fc
+  cyclerange=0/255
+  }
+LGDP0064           { ; Hell's Angel
+                     ; Just be glad it's headed away (or is it?!?!)
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1920 type=formula formulafile=inandout.frm
+  formulaname=inandout04 function=atan passes=3
+  corners=1.888179/-1.017025/-1.934707/1.938899/-1.017025/1.938899
+  params=0.71828182845905/0/4/0/0/0 float=y maxiter=250 inside=bof60
+  outside=0 distest=5/71/800/600 finattract=y
+  colors=000F55H55O66<11>oCCACCCCC<18>mCmoCooCn<24>p0GiCCiCCuk0<2>xC0z00yC\
+  0xO0w_0uk0<2>xC0z00yC0xO0w_0uk0<2>xC0z00yC0xO0w_0uk0<2>xC0z00yC0xO0w_0uk\
+  0<2>xC0z00yC0xO0w_0uk0<2>xC0z00yC0xO0w_0uk0<2>xC0z00yC0xO0w_0uk0<2>xC0z0\
+  0yC0xO0w_0uk0<3>z00<3>CCs<20>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEs\
+  sCsqC<19>sECsCCqCC<5>eCC
+  }
+

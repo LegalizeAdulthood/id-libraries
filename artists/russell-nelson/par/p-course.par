@@ -1,0 +1,142 @@
+;Packet: CISFORUM
+;Date: 11-12-94 (20:23)             Number: 91734
+;From: Don Archer 71544,657         Refer#: NONE
+;  To: All                           Recvd: NO
+;Subj: DA: Par_for_the_course         Conf: (4) 4:Fractal Sou
+;---------------------------------------------------------------------------
+;This message board needs more action! So I hope to post from
+;time to time a fractal "par_for_the_course," probably just as
+;an ego trip. This one's a quickie, a simple but elegant
+;monochrome. I hope others join me. - DA
+
+fract786           { ; Copyright 1994, Donald Archer, CIS 71544,657
+  reset type=lambda(fn||fn) function=flip/conj corners=-4/4/-3/3
+  params=0.65000000000000002/2/3.1000000000000001 float=y
+  inside=maxiter invert=1/0.6667/0 decomp=256
+  colors=sss<113>000000111<124>zzzzzzyyy<11>sss
+  }
+
+fract786-a         { ; Copyright 1994, Donald Archer, CIS 71544,657
+                     ; Mutated a bit by Brad Beacham
+  reset=1827 type=lambda(fn||fn) function=ident/conj
+  corners=-1.1463419/0.97869458/-1.853248/1.735687/-2.1040179/-0.576347
+  params=0.65000000000000002/2/3.1000000000000001 float=y
+  inside=maxiter invert=1/0.6667/0 decomp=256 biomorph=0
+  colors=gT0<28>ZK0ZK0ZK0ZK0YJ0YJ0<71>H20H20G10F10<14>000000110<29>VG0WH0X\
+  I0YJ0ZK0<26>yj0zk0zk0zk0<64>gT0 cyclerange=0/255
+  }
+
+786add            { ; Based on fract786 Donald Archer CIS 71544,657
+                     ; modified Mark Fountain CIS 74023,221
+                     ; variation:  use Tesseral
+  reset type=lambda(fn||fn) function=flip/conj passes=b
+  corners=6.759751/-3.50948/-6.966597/6.725711/-3.50948/6.725711
+  params=0.65000000000000002/2/3.1000000000000001 float=y
+  fillcolor=255 inside=maxiter invert=1/0.6667/0 decomp=256 biomorph=0
+  colors=CCCpmftohxqj<6>Y1X<15>jAPksk<2>qsqsssssq<19>ssEssCsqC<19>sECsCCqC\
+  C<21>ACCCCC<21>sCs<20>ECsCCsCEs<10>C_sCasCas<13>0ee<11>PIZRGYTEXWCWYCV<3\
+  >eCe0eeiCi<4>sCs<19>GCsECsDEl<3>6MK4PC4PC<19>J_QK`RNaS<6>lld
+  }
+
+LG509              { ; Mark Fountain 74023,221
+  reset=1720 type=mandel passes=1
+  corners=-1.768535398896702/-1.768535393521613/0.0003496465514668082/0.00\
+  03496505827168207 float=y maxiter=32000
+  colors=000S04<7>w04008<14>w0800C<14>w0C00G<14>w0G00K<2>C0K<66>XLrYMsXNq<\
+  14>BCG9BD9BD<62>y3Ly3Lx3L<16>o6M3FO<7>39QO00<8>w00004<5>O04
+  }
+
+LG540              { ; Mark Fountain 74023,221
+  reset=1810 type=formula formulafile=fractint.frm
+  formulaname=LeeMandel1 passes=1
+  corners=-1.102631450407e-005/-1.813326995534e-005/-4.737970304766e-005/4\
+  .737970296924e-006/-1.813326995534e-005/4.737970296924e-006 float=y
+  maxiter=1000 inside=0 potential=128/10000/0
+  colors=000z30z20z10z00<32>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z11<2\
+  9>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<25>z40
+  }
+
+LG323              { ; Mark Fountain CompuServe 74023,221
+  reset=1720 type=mandel passes=1
+  corners=-1.88480548082717/-1.88480546782705/4.334548162873573e-005/4.335\
+  523162873421e-005 float=y maxiter=30000 inside=bof60
+  colors=000NO`MP_<11>`acbbdccdeeeede<12>YSgXRhWSg<5>TVbTVaVXb<13>zzz<13>Z\
+  NrXKqWKq<32>2BX2BX3CX<61>yidzjeyje<38>M9_K8ZK8Z<24>NBOWQUee`<9>RVWQOd<5>\
+  NOa
+  }
+
+LG334              { ; Mark Fountain CompuServe 74023,221
+  reset=1720 type=mandel passes=1
+  corners=-1.631243321412186/-1.6312433214112774/-3.2476597672856937e-003/\
+  3.2377998679142186e-013 float=y maxiter=30000 inside=bof60
+  colors=zz0MPs<12>NdyOfzOex<18>bEMcCJcCJ<14>pGNqHOpIO<7>cSPbUP_04<5>w0400\
+  8<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0O00S<14>w0S00W<14>w0W00_<\
+  14>w0_00c<14>w0c00g<14>w0g00k<4>K0k<18>MOs
+  }
+
+LG323a             { ; Mark Fountain CompuServe 74023,221
+                     ; Different map added by Brad Beacham
+  reset=1720 type=mandel passes=1
+  corners=-1.88480548082717/-1.88480546782705/4.334548162873573e-005/4.335\
+  523162873421e-005 float=y maxiter=30000 inside=bof60
+  colors=000MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CA\
+  S970BAS960A9S86098T75087T75076T64065U54055U43044U43033V32022V22011V11000\
+  W000<2>210220210330320440420540530650530760640870740980850A80850B90960CA\
+  0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH0GA0LH0GA0MI0HB0NJ0IB0OK\
+  0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ0OF0XR0PG0YS0QG0ZT0RH0_U\
+  0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_0XL0h`0YM0ia0ZM0jb0_M0kc\
+  1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0soBjU0tqDkV0urEmW0vtFnX0wu\
+  HoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0usLkW0tqLjV0spLiU0rnLhT0qm\
+  LgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ibKYM0haKXL0g`KXL0f_KWL0eZ\
+  KVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZTLQH0YSLPH0XSLOG0WRMOG0VQ\
+  MNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJOHC0
+  }
+
+fr384var           { ; 0:00:39.28 - Cats
+                     ; Copyright 1993. Don Archer. All rights reserved.
+  reset=1820 type=formula formulafile=da.frm formulaname=dafrm21
+  function=sinh/log
+  corners=0.034047952/0.00661865864/0.599933268/0.6682695/-0.00862798528/0\
+  .656834517 params=4 float=y maxiter=255 inside=maxiter
+  potential=255/300/900 decomp=256 biomorph=1
+  colors=000UA0l9I<13>l9Il9InjmtmwTX7<6>ohfSU5<4>fHPRT2<6>a26QU2<6>SG9aWAm\
+  VIMQUHKvOT8<6>A8mEZ7HY6KX4WS4<2>mFDKX4KX4EZ78`AHZJ5WU<3>5`Y6b_6aZ<27>144\
+  133122000100310<29>rUD<30>211000010121242UA0474<18>NXM4OMP_O<4>UfTVhUVgU\
+  <30>000u6I<14>u6I cyclerange=0/0
+  }
+  
+fr384.var_b        { ; variation on don archer's fr384.var - no fpu
+                     ; one little switch
+  reset=1820 type=formula formulafile=da.frm formulaname=dafrm21
+  function=sinh/log passes=g
+  corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
+  1/0.676968634 params=4 inside=maxiter potential=255/300/900
+  decomp=256 biomorph=1
+  colors=91B<4>E63G71G72<35>PUUPUUPTT<34>N11M00O00<4>X00Z00`20<6>kB0mC0nE0\
+  oF0<5>vN0wO0wQ0<2>yT0zU0zW0zX0<6>zc0yd0ye0xf1xg2<8>olAmmBlmBkmC<5>anI_nI\
+  YnJWnKUnLTnM<9>9jU7jV5iV3hW1hX<3>0d_0c_0b`0b`0aa<8>0Rf0Qg0Pg0Og<8>0Ck0Ak\
+  09k08k06k<3>01l00l00l00l00l0Jg<7>vn`<4>ymXzmXzlWzlV<6>zgQygPyfOxeNwdM<5>\
+  rZHqYHoXG<4>hRBgQAfPAeO9cN9<7>QC2
+  }
+
+NeitherCatsOrEels  { ; And now for something completely different...
+                     ; (c) 1994 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1827 type=formula formulafile=da.frm formulaname=dafrm21
+  function=cotan/tan passes=t
+  corners=-1.223815/3.030197/-3.091271/3.426882/-2.821085/-0.9615789
+  float=y invert=1.28866/0/0 decomp=256
+  colors=0004ko<6>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllum\
+  mu<20>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKEEJFFJGGIHI\
+  <25>5jn
+  }
+
+fr383var       { ; 0:00:42:18 - Luvbirds
+                 ; Copyright 1993 Donald Archer. All rights reserved
+  reset=1820 type=formula formulafile=da.frm formulaname=dafrm21
+  function=sqr/log
+  corners=0.0765809441/0.0060439612/0.547148369/0.722881357/-0.0331642035/\
+  0.693475233 params=12 float=y potential=255/300/900
+  colors=000<15>000c80<14>c80T9H<19>`S5TBI<13>abXT9HadY<2>cj`kll<53>000000\
+  111<61>stusturst<60>000
+  }

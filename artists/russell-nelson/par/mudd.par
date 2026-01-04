@@ -1,0 +1,159 @@
+Poppy              { ; Halley
+  reset=1900 type=formula formulafile=fractint.frm formulaname=halley
+  corners=-0.130544186/0.132712662/-0.0326579809/0.0348080993/-0.068140804\
+  8/-0.115828633 params=2/4/3/7/0/0 maxiter=1410065407 inside=zmag
+  outside=mult potential=256/23/9000
+  colors=CCCkFz<3>z0z<16>zgJzjGzlEznC<3>zy1wz0<10>2z00z3<10>0zx3wz<12>s7zw\
+  3zz0z<18>zlEzq9<2>zy1wz0<10>2z00z3<10>0zx3wz<12>s7zw3zz0z<16>zgJzjGzlEzn\
+  C<3>zy1wz0<10>2z00z3<10>0zx3wz<12>s7zw3zz0z<16>zgJzjGzlEznC<3>zy1wz0<10>\
+  2z00z3<10>0zx3wz<9>gJz
+  }
+
+topillogical       { ; Kinda funky
+  reset=1900 type=manowar
+  corners=-0.0790264723/-0.0442104723/0.0818657648/0.107977765
+  params=0/0 float=y maxiter=333 inside=0 outside=summ logmap=-23
+  colors=000CCT88Q44N000<15>WWW<14>000<15>z00<15>000<15>0zz<15>000<15>00z<\
+  15>000<15>zz0<15>000<15>0z0<15>000<15>z0z<14>40400K<15>zzz<11>GGV
+  }
+
+soap               { ; kinda soapy.
+  reset=1900 type=manowar
+  corners=-0.07174553801/-0.06701056201/0.09491645398/0.09846768601
+  params=1e-005/0.00023 float=y maxiter=333 bailoutest=imag inside=0
+  outside=summ logmap=-23
+  colors=000F4CDAABACFEFD8CB7FH8FH4CDADDACGAHJ8FDCDFADFACHEFHEIJBHJ9DFCDFC\
+  FKIJHADJEFI27ICDICGRJJLEFJCGKGLMBHMAFM9DJFJKEINIJJGIQMMLEJLEIOINPIJPFFLG\
+  JLGINEJNEHSHHUOONHLOGKOGHPFJPHLQFHRJNRHMSGJPKMUJOUHLZIK_LLZLPZLNJAKSKLSI\
+  K_NN_QNTMNVKMeUNSMJVMNYQRZOQUQPTRUTMQQIR_QQk_RbSWaQTdUPaQReMMfPNgRNfNPdU\
+  SfPPfRQmVPdTTeVUeXUeVVkZUhSSiRQiTQkZVm`ViUSkUQi_XmbXkTSkVSkXSgaah__kVUkX\
+  UmVSmXSnbZdWYmVUmXUmaUiQQkRQdXYmXWlbVoXUoZUkSSoXWoZWkTToWRkcboZYo`YneXqZ\
+  Wq`WoVUncao_ZneZqZYq`YqbYmYYmVVqXUq_TsaYs`WrbWjeesb_tdYsdasf`ufZuaYnifse\
+  cuc_pmlsjeuidwfawhaxjbxiexlfxlixojuomxrpxvuxyx000<27>000zzz00000e0000eee\
+  00e0eeL0eeeLLL00z0000zzz00z0zzz0zzz200002202004<2>6023240063077087158026\
+  45908857C19C07C04988B4CC6773CD3C969C69B8CF27F8F
+  }
+
+Checkers           { ; Checkered boundary
+  reset=1900 type=mandel passes=b
+  corners=-1.2500826795302/-1.2500825695243/0.00629081091059846/0.00629089\
+  146952577 params=0/0 float=y maxiter=5000 fillcolor=0 inside=zmag
+  outside=real logmap=yes decomp=32 biomorph=0
+  colors=00000M<13>zzz<25>000K0K<18>zcz<8>CCS<19>5zz<13>2IV1ES1BQ17N14L00I\
+  <2>88GAAFBAG<35>x1gz0hz3i<13>zvyzzzxvv<13>`44Z00Z44<13>zzz<16>00U<3>000<\
+  13>zzz<16>ZARccc<3>ccc
+  }
+
+lion               { ; A cartoon lion. Really.
+                     ; by Mudd
+  reset=1900 type=tim's_error function=atan passes=b
+  corners=0.23545568/-0.73884993/-0.5299492/0.5211485/-0.73884993/0.521148\
+  5 params=0.2/0.001 float=y maxiter=300 inside=maxiter
+  potential=255/255/0 decomp=36
+  colors=000fd`<4>eb_da_da_c`_c__<5>aXY`WY`VY_VY_UY_UX<45>J2Phha<75>m`Phha\
+  m`O<28>oXJlYS<65>vB5eda<5>OCWhha<4>fe`
+  }
+
+Eve                { ; "Pure" math indeed.
+  reset=1900 type=tim's_error function=asin passes=b
+  corners=-0.81585371/-0.32818927/0.42487637/-0.44208257/-0.32818927/-0.44\
+  208257 params=0.2/0.002 maxiter=600 inside=maxiter
+  potential=255/249/6 invert=0.168034/0/0 decomp=256
+  colors=000nhZ<111>qMErLDqME<121>iPUmkb<16>nh_
+  }
+
+Ice9               { ; Nice crystals.
+  reset=1900 type=manowarj
+  corners=-0.612675502/-0.524513213/0.105199406/0.0763322521/-0.567080844/\
+  0.0444065288 params=-0.05861709298965517/0.09590588551055276 float=y
+  maxiter=333 bailoutest=real inside=bof61 outside=imag logmap=-23
+  distest=1/42/1024/768
+  colors=000333<119>yyyzzzyyy<123>000000000000000<3>222
+  }
+
+Evergreen          { ; Riot o' growth
+  reset=1900 type=manowarj
+  corners=-0.275719648/-0.226919648/-0.0781435463/-0.0415435463
+  params=-0.2490868093079975/-7.509141581959678e-005 float=y
+  maxiter=666 bailoutest=real inside=zmag outside=summ logmap=-23
+  distest=1/42/1024/768 finattract=y
+  colors=000422hLG<26>2uajKJ<7>sFnhLG<21>Dg`hKF<8>TD4iJH<7>e8SM7DiKG<6>dKE\
+  gKIcJD<16>SI8RH7RH7RH7<28>R8EQ7FQ8F<18>haWiKH<21>n_djKI<12>zBodNG<4>DdKi\
+  KG<27>bJPiKG<20>uHL
+  }
+
+Microshot          {
+  reset=1900 type=magnet2m
+  corners=1.593628638/1.601413496/0.3171751737/0.3230138171
+  params=0.00023/0.00017 float=y maxiter=2069 inside=period
+  outside=real potential=223/1023/1 decomp=64 biomorph=3 periodicity=0
+  colors=000777<111>yyyzzzyyy<123>000000000000000<11>666
+  }
+
+
+Bhodishrine        { ; Painfully slow, but nice in hi-rez.
+                     ; By Mudd
+  reset=1820 type=mandel
+  corners=-0.25233025833120737/-0.25233025756965399/0.76687930323850095/0.\
+  76687930295695461/-0.25233025791713287/0.76687930269324611
+  params=0/0 float=y maxiter=1410065407 inside=bof61
+  distest=1/33/1024/768 finattract=y
+  colors=000zkk<63>z00z00y01<80>10y10y00z00z11z<80>yyzyyzzzzzzzzyy<17>zkk
+  }
+
+Buddha             { ; Zoom on BhodiShrine.  Even slower, but, uh.. "..cosmic."
+                     ; By Mudd
+  reset=1820 type=mandel
+  corners=-0.25233025808255261/-0.25233025796222713/0.76687930315830488/0.\
+  76687930311382058/-0.25233025801712883/0.76687930307215457
+  params=0/0 float=y maxiter=1410065407 inside=bof61
+  distest=1/33/1024/768 finattract=y
+  colors=000zkk<63>z00z00y01<80>10y10y00z00z11z<80>yyzyyzzzzzzzzyy<17>zkk
+  }
+
+Dendruff           { ; Ewiche Blumenkraft
+  reset=1800 type=julia corners=-0.382592/0.382592/-0.286944/0.286944
+  params=-1.14378461399009/-0.2794261607909174 float=y maxiter=6666
+  bailout=2 inside=epsiloncross outside=real invert=0.0032/0/0
+  colors=000070<13>000000000000000<124>0y00z00y0<108>080
+  }
+
+Decoframe          {
+  reset=1820 type=julia passes=t
+  corners=-1.411301/1.411258/-1.058483/1.058478
+  params=0.033721923828125/-0.0723491907119751 maxiter=9999
+  bailoutest=or inside=0 outside=imag biomorph=256
+  colors=000ZZZ<53>yyyzzzyyy<123>000000000000000<69>ZZZ
+  }
+
+Trident            {
+  reset=1900 type=mandel
+  corners=0.3499791517581511/0.3499791607466841/0.58107167922195346/0.5810\
+  716795152957/0.3499791548531657/0.58107167509682223
+  params=0.1/1e-005 float=y maxiter=1000 bailout=3 bailoutest=imag
+  inside=period outside=imag logmap=yes
+  colors=000020010<8>40840950A60B<18>G0VH0XG0W<15>000<7>0Uc<6>101100<29>h0\
+  A<15>301000001<29>A0h<15>103000110<29>wZ0<16>000<30>0D00D00C0<11>030
+  }
+
+Urn                { ; Don't know why I like this, but here it is anyway.
+                     ; by Mudd
+  reset=1900 type=tim's_error function=tanh passes=t
+  corners=0.0727169186/-0.0106836417/-0.0441102663/0.0458636968/-0.0106836\
+  417/0.0458636968 params=0.2/0.001 float=y maxiter=300 inside=0
+  outside=real potential=255/255/0 invert=0.139001/0/0 decomp=36
+  colors=00080950A<8>00c<5>0Pc0Uc0Wd<7>0mm<7>00K<7>F0K<5>303000000<13>90DA\
+  0EA0EB0E<11>I0JJ0JK0KK0L<13>T0kU0mT0l<13>20M00K00J<13>042050050<14>00000\
+  0010<13>0D0<15>wU0<7>wc0<7>U00<7>000<5>40850A509<6>102000100<21>c00<13>A\
+  08
+  }
+
+Ithaca             { ; The Heaventree of stars hung with humid nightblue fruit.
+                     ; (Not really, but it has a ring to it, doesn't it?)
+  reset=1900 type=mandphoenixclx
+  corners=-0.243807077/-0.241550982/-0.204970062/-0.203232825
+  params=0/0/0.42/0.00023/0 bailoutest=imag inside=0 biomorph=23
+  colors=000XNC<20>G2JF0KF0K<4>F0LG0LG0LG0MG0MH0M<52>T0bU0cU0cV1cV2d<60>zz\
+  zzzzzzy<60>zz1zz0zy0yx0<36>XOC
+  }
+

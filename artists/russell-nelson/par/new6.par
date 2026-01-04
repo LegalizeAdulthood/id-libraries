@@ -1,0 +1,1098 @@
+Carr1390-F               { ; A Leopard spotted Julia?
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1390
+  corners=-1.640016/1.639992/-1.230009/1.229999 params=0/0/0/0/0/0
+  maxiter=1150 inside=bof60 outside=real
+  colors=000000```<11>zzz<12>```000000000UMF<11>zo`<13>UMF000000000UU0<12>\
+  ww0<13>UU0000<165>000
+  }
+
+Carr1406               { ; Julia with errors in her ways.
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1406
+  passes=b
+  corners=0.4114807/-1.400513/-1.214265/1.201731/-1.400513/1.201731
+  params=0/0/0/0/0/0 maxiter=1150 inside=bof60 outside=real
+  colors=000000000```<11>zzz<12>```000000000UMF<11>zo`<13>UMF000000000UM0<\
+  12>ww0<13>UU0000<164>000
+  }
+
+Splotch!	   { ; Cycle.  "The immense influence of Heinz-Otto Peitgen"
+  reset=1800 type=formula formulafile=jute.frm formulaname=Mite
+  corners=-1.3120789/-0.76807937/-0.20398845/0.20400878 float=y
+  maxiter=1000 inside=0
+  colors=000zZ0zzzyY0qsqwX0hlhuW0_e_sV0RYRqU0IRI<3>zzz<4>gP00H0eN00I0cM00K\
+  0aL00L0_K00N0YJ00P0WI00Q0UH00S0SG00T0QF00V0OE00W0MD00Y0KB00Z0IA00`0G900b\
+  0E800c0C700e0A600f08500h06400i04300k02200m0<46>02k00m00m<141>zzz
+  }
+
+Carr1471-F               { ; Awesome "FACETED GLASS" Julia !!!!!
+                           ; (C) 1995 Robert W. Carr
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1471
+  corners=-0.44101036/0.10299218/0.86697825/1.2749802
+  params=0/0/0/0/0/0 float=y maxiter=1150 inside=bof60 outside=real
+  colors=0008CE<9>011000100<22>l00q50<10>zg0<11>W00UMF<14>zo`<15>UMF7F0<23\
+  >wfC<22>7F00EC<12>021010000000<77>000000011122<11>BHJCILBHJ<2>9DF
+  }
+
+ How-do-they-do-it? {
+  reset=1920 type=mandel
+  corners=-0.13667158/-0.120287348/0.98180533/0.994093698 params=0/0
+  maxiter=255 inside=0 colors=@volcano.map
+  }
+
+Horiz.Hold         { ; by Dewey Odhner. Public domain.
+                     ; the original
+                     ; http://spanky.triumf.ca/fractint/fractint.html
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999996416785918\
+  148134530430458843562012392471211940405947277366380516671161895619483871\
+  9021305389817240974903756614325041160443974/0/3.3e+242
+  params=0/0 float=y maxiter=3000 inside=0
+}
+
+hha                { ; Based on Horiz.Hold by Dewey Odhner. Public domain.
+                     ; horizontal stripes, looks like a bug at low rez
+                     ; Frank Gentges AK4R gentges@itd.nrl.navy.mil
+                     ; 332 hours on a 50 mhz 486 at 1024x768
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999996416785918\
+  148134530430458843562012392471211940405947277366380516671161895619483871\
+  902130538981724097490375661432504116044424758/0.0/1.586538e+243
+  params=0/0 float=y maxiter=10000000 inside=0
+  colors=00000U0Ka0Ri<3>zzezz0<2>z00e00L00zzLzL0wA5<2>zz0<4>zup<12>000<4>z\
+  00<3>000434<6>zzR<6>qkl<2>zzw<2>00001312724B<4>55M<4>7zk7qa<4>68d34`00X<\
+  5>zzz<6>zLP<6>000<10>zzz<6>zz0<3>zdd<5>z66<3>zu9<3>zzz<9>pK0<7>AAu<4>zww\
+  <8>312<6>U8LzzO<5>zZh<4>zqZzuXzwkzzz67y<4>cer<5>zzz<5>zzU<7>s00<8>000wrS\
+  <3>wwmzzpukh<3>U0F<3>zcd000www000UUUZKDpUKzsZ
+  }
+
+hhb                { ; Based on Horiz.Hold by Dewey Odhner. Public domain.
+                     ; zoom out a little, a baby Mandelbrot!
+                     ; Frank Gentges AK4R gentges@itd.nrl.navy.mil
+                     ; 465 hours on a 50 mhz 486 at 1280x1024
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999996416785918\
+  148134530430458843562012392471211940405947277366380516671161895619483871\
+  902130538981724097490375661432504116044397/0.0/3e+240 params=0/0
+  float=y maxiter=30000 inside=0
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0\
+  zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30\
+  >zy0zz0xz0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+hhc                { ; Based on Horiz.Hold by Dewey Odhner. Public domain.
+                     ; zoom in slightly from hhb
+                     ; Frank Gentges AK4R gentges@itd.nrl.navy.mil
+                     ; 703 hours on a 50 mhz 486 at 1024 x 768
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999996416785918\
+  148134530430458843562012392471211940405947277366380516671161895619483871\
+  9021305389817240974903756614325041160443417/0.0/6e+241
+  params=0/0 float=y maxiter=30000 inside=0
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0\
+  zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30\
+  >zy0zz0xz0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+Sparkler           { ; Jonathan Osuch [73277,1432]
+                     ; This is a slow one <G>
+  reset=1920 type=mandel passes=1
+  corners=0.06437201585062357/0.06437201585100726/0.65897810125441247/0.65\
+  897810125470024 params=0/0 float=y maxiter=40000 inside=0 logmap=131
+  colors=000A0A<93>m0mzy0<30>z20z00z00<12>z000z0<111>z00
+  }
+
+ckp0196            { ; "FractalBacterium"
+                     ; 00:18:37.12
+                     ; 07 jan 93 .. caren park
+  reset type=mandel
+  corners=-1.860573960060161/-1.860573960049842/-0.00000093435225437/-0.000000\
+  93435362487/-1.860573960055975/-0.00000093435773633 float=y maxiter=1500
+  inside=maxiter
+  colors=000005<5>007017037<13>4S4<13>1A1181171151131000313717A20<12>cAP<10>H4\
+  3E30A2A<2>000<15>hh0<15>000<3>00D00H22I<10>PP`<9>33H00E00A<2>000300700A00<12\
+  >rZ0<11>400A00<2>000<15>0pp<12>0BB077044000222<14>hhh<15>000<20>005
+  }
+
+Carr1668-F               {
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1668
+  corners=-1.514765/1.485249/2.000002/-2.000016/1.485249/-2.000016
+  float=y maxiter=311500 inside=bof60 outside=real
+  colors=000011000<3>700900C00<17>l00q50<10>zg0<11>W00FJU<13>W`xXazXbv<13>\
+  `y4`z0`z4<13>`pv`oz`pv<13>`z4`z0`y3<14>Xaw<27>347235223112000<62>0000000\
+  11122<11>BHJCILBHJ<12>122
+  }
+
+
+Carr1690-F               { ; Beautiful InvMandel
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1690
+  corners=-2.003808/4.422862/-2.314636/2.505367 float=y maxiter=311500
+  inside=bof60 outside=real distest=1/71/640/480
+  colors=070bZN<9>070F00<11>c00<7>ww0<7>0`7<6>THnXFtZGu_GvUMF<10>zo`<12>UM\
+  F000<158>0004A2<13>zo`<4>faP
+  }
+
+Carr1697-F-1            { ; Most unusual Mandelbrot !!!!!
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1697
+  corners=-1.630114/1.630113/-1.222596/1.222575 float=y maxiter=311500
+  inside=bof60 outside=real invert=0.5/0/0 periodicity=6
+  colors=000<7>0000FM<6>0UhFPV<6>`oz700<6>U00070<7>zo`F00<7>`00UMF<6>zo`0`\
+  h<7>ohoFFF<6>`zo<11>000<167>000
+  }
+
+mr_fractal         { ; psycadelic voodoo fractal man!!
+                     ; mutated phoenix fractal
+                     ; scary stuff!
+  reset=1920 type=phoenix
+  corners=-0.047375798/0.62490576/0.44823003/-0.44815618/0.62490576/-0.448\
+  15618 params=0.4524741868247779/-1.104874463621301/0
+  colors=000_PE4Ue<8>2de1fe1fe<2>4fe4ee6``<4>IC8L72LEA<5>Qvw<15>QgK<4>hJj<\
+  6>JSu<10>DV_CWYDVX<13>dA6gLHkXT<3>W9i<6>q8Z<5>d6c<9>Hqh<3>c4h<11>SseQqdQ\
+  vd<10>N``MY_MY_<11>DiO<2>Ojm_fWkbE<10>n1pcQiSob<3>hDc<6>keSljQkiQ<14>nNd\
+  <11>oerrgtrft<6>qTmd__SgL<14>dHfeFheFf<10>`OH
+  }
+
+Carr1710-F               { ; SPLAT !!! InvMandelbrot
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1710
+  corners=-0.8722268/3.772522/-1.510481/1.973081 float=y
+  maxiter=311500 inside=bof60 outside=real
+  colors=070zo`<15>070F00<11>c00<7>ww0<7>0`7<6>THnXFtZGu_GvUMF<10>zo`<12>U\
+  MF000<158>0004A2<12>vlZ
+  }
+
+newton_reel_1 {
+  reset=1900 type=formula formulafile=newforms.frm
+  formulaname=newton_reel_1 passes=1
+  corners=2.9124425/3.2419103/4.2595665/1.5249489/4.343669/2.3512669
+  params=0/0/0/0/0/0 float=y maxiter=500 logmap=5 invert=1/1/0
+  colors=0004BE<19>7BV8CW8EX<16>7kx<13>uoQ<69>iNZiNZiNY<54>R4BR4BS4C<37>j7\
+  _k8`k8`k8`<30>oI`
+  } 
+
+feathers           { ; .
+                     ; Copyright Lee H. Skinner 1995
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=newton_reel_1 passes=1
+  corners=1.1939936/1.4848519/0.76930068/0.98744447 params=0/0/0/0/0/0
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzz0G`<16>zzj<7>QR7LM1IK1<2>7D0<19>3A03A03B0<5>3E03E03F13G2<9>\
+  4O44P45Q56Q6<3>8Q89Q9AQ9BQ9CQ9<27>fP1hO0iO1<10>tLCuLDuLDuLD<16>uLBuKBuKB\
+  uJAuJA<41>z00z00y00<50>G00L20Q50<6>u2Cv2Aw28 cyclerange=2/255
+  }
+
+j_reel_1           { ; copyright Sylvie Gallet
+  reset=1900 type=formula formulafile=newforms.frm
+  formulaname=j_reel_1 passes=1
+  corners=-9.683794/9.683809/-7.262832/7.262846 params=150/0/0/0/0/0
+  inside=0 decomp=256
+  colors=AmUM_E0YG`bJ<2>IhehV9jO5mH1jd9og6tk2`dPUgaNknafJ<2>LwfgeC<2>jtBbU\
+  L<2>Q3m_ZDTVEdaFa`IZ_MZM6Q50WQ`LDzYdK<2>6pgfMKfgMdcAaf8Zi6c`D`_EXZF_OXSA\
+  raaSXahSbyMLKNOJPSIQVH<3>Ymw_idbeMea3<3>gMjwVY<3>c`xMds<2>ffhnXmwNsXVp6b\
+  lUS`rHPTIL2JH71RAiB<3>11mSCWrOE<3>CLU7bZFhZtIy<3>1hj<2>JVpPQrTKn<2>c0`c3\
+  ab6c<3>mjMmZanMq<3>94MD9HMgR0nfjgQnmdrtsMXM0RXk63TiwUMOH5`fXC<2>iFCVdMJg\
+  X6kgcLB`39HhhZaK<2>B_gjaL<2>ydkibRmcfpm_zzwpaJzaQn`Fv_IfaRfbefctlSCY9eae\
+  I<2>Nt`TRBEGAWYRKTeWYRKUe8QtbCKjR7oG2pw2OXV4SnTfMFlW1re`cHVfM9xZifGllKpr\
+  PZdG<2>BmUvPMiXBlRApL9AWBjeE<2>vtKfePgiahno_VJSORKHZXhDNoEDwGbiQZqdKNENJ\
+  M30XePLcCUjaO<2>vaxbYL<2>PJne_L<2>_RmgXJiSQkMYeUM<2>`5qiCkfcHefNfO9f96hd\
+  C<2>qoCbaDZaEVaFXlXObv
+  }
+
+newt_z3_sinz2      { ; copyright Sylvie Gallet
+  reset=1900 type=formula formulafile=newforms.frm
+  formulaname=Newton_z3_sinz2 passes=1
+  corners=0.29770798/0.95418888/-0.24432531/0.67161928/0.094387151/0.02676\
+  8796 params=0.001/0/0/0/0/0 float=y maxiter=1000 inside=255
+  invert=0.5/0.6/0.2
+  colors=000<23>0mm<26>WNbYLaZKa`IaaHa<8>k2am0`m2`<24>tugtwgrwg<25>3nl0mm0\
+  mm<26>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQS\
+  KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>\
+  GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGB\
+  DGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000 cyclerange=0/205
+  }
+
+SpiderTurtleBeacon { ; Can you see them?
+                     ; Copyright by Lee H. Skinner, 1995
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=Newton_z3_sinz2 passes=1
+  corners=1.6261766/1.9446993/0.39746623/0.63635824
+  params=2.71828182845905/-1/0/0/0/0 float=y maxiter=1023 inside=bof61
+  outside=real logmap=yes periodicity=0
+  colors=000zzdPZBP00z2HoDY`FXLbV0YRznJwcIsTGoMEkEC<5>_00<9>M33K44L45<76>s\
+  jktkltkk<26>taEu`CvaCwcDxeD<30>cEebDfbDfaDf<38>EWXDXWEXW<14>XhKYhJZiI_iI\
+  `jH<19>zt0
+  }
+
+Carr1791-F              { ; Radiation from Evil Zrar.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1791
+  corners=-7.250815/6.185011/8.957207/-8.957228/6.185011/-8.957228
+  float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1795-F             { ; Evil Zrar's pet, Zron.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1795
+  corners=-0.38026187/0.50172344/1.09121588/0.189615044/0.37002124/0.09583\
+  8399 float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1795-F-1           { ; Pet Zron's son, Zronnie.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1795
+  corners=-0.395064033/-0.248678419/0.301254083/0.238724406/-0.312350965/0\
+  .190969995 float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1795-F-2           { ; Zrar's beautiful wife, Zran-na-na.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1795
+  corners=0.65417948/0.11602929/-0.35541486/0.36211872/0.11602929/0.362518\
+  72 float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1797-F               { ; Evil Zrar's brother, Brad Skinner.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1797
+  corners=-5.146984/6.837773/8.090302/-7.889374/6.837773/-7.889374
+  float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1798-F               { ; Evil Zrar's Master, Tim Tyler.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1798
+  corners=-6.151583/6.80053/8.634732/-8.634752/6.80053/-8.634752
+  float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Carr1799-F               { ; Evil Zrar's Advisor, Jonathan NoSuch
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1799
+  corners=-4.357367/8.59477/8.634747/-8.634768/8.59477/-8.634768
+  float=y maxiter=311500 inside=bof60 outside=real
+  colors=000Waz<13>068F00<11>c00<7>ww0<7>0`7<4>LNaPKhRJk<2>XFtUMF<10>zo`<1\
+  2>UMF000<174>000
+  }
+
+Newt_exp_inv       { ; Sylvie Gallet
+                     ; The Science of Fractal Images, page 16
+  reset=1900 type=formula formulafile=newforms.frm
+  formulaname=Newt_Exp_Inv passes=1
+  corners=-0.580448/0.580448/-0.2750961/0.5955759 params=-40/0/0/0/0/0
+  float=y maxiter=450 inside=255 logmap=yes
+  colors=00000j0e0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<5>zbjFjj<5>zjjFrj<4>rrjzywcccWW\
+  Wz000z0zz000zz0z0zzmmm cyclerange=0/254
+  }
+
+explosion          { ; Sylvie Gallet 1995
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Gmandel_1
+  corners=-8.529035/8.099895/-2.248645/10.6888 params=100/0/0/0/0/0
+  float=y maxiter=1000 inside=bof61 outside=imag periodicity=6
+  colors=KKKKWY<40>mmyISR<35>bZBISR<36>8`DISS<19>1LkISR<58>Il`ISR<43>KF`KF\
+  `ISRKE`<4>KDaLCbKCbICcHCd
+  }
+
+mandel-newton   { ; Copyright Sylvie Gallet, 1995
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=mandel-newton passes=1
+  corners=-2.294809/0.7282977/-1.140604/1.126726 params=100/0/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=00000A<13>5mm<14>1m40m00k0<13>8D09A0BA0<14>mK0<16>A00<14>XI0A00<4\
+  5>ww0xx0xx0<109>zzz00c
+  }
+
+test-a              { ; Merry Christmas
+  reset=1921 type=formula formulafile=newforms.frm formulaname=1
+  corners=6.158939/-3.82196/-6.954476/6.353389/-3.82196/6.353389
+  float=y maxiter=1023 inside=bof60 outside=real
+  colors=000<12>000F00<12>eF75M3<9>7`F`UM<11>zp`7M3<9>Fw`F00<11>w0C<31>000\
+  000000<145>000
+  }
+
+test-alt               { ; Merry Christmas--Faster than "test"?
+  reset=1921 type=formula formulafile=newforms.frm formulaname=1-alt
+  corners=6.158939/-3.82196/-6.954476/6.353389/-3.82196/6.353389
+  float=y maxiter=1023 inside=bof60 outside=real
+  colors=000<12>000F00<12>eF75M3<9>7`F`UM<11>zp`7M3<9>Fw`F00<11>w0C<31>000\
+  000000<145>000
+  }
+
+man-newt-man   { ;Robin Bussell edits Sylvie's formula
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=man-newt-man passes=1
+  corners=-2.294809/0.7282977/-1.140604/1.126726 params=100/0/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=00000A<13>5mm<14>1m40m00k0<13>8D09A0BA0<14>mK0<16>A00<14>XI0A00<4\
+  5>ww0xx0xx0<109>zzz00c
+  }
+
+man-newt-man2   { ;Sylvie Gallet updates Robin's file.
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=man-newt-man2 passes=1
+  corners=-2.294809/0.7282977/-1.140604/1.126726 params=100/0/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=00000A<13>5mm<14>1m40m00k0<13>8D09A0BA0<14>mK0<16>A00<14>XI0A00<4\
+  5>ww0xx0xx0<109>zzz00c
+  }
+
+mandel-newton-2    { ; Copyright Sylvie Gallet, 1995
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=mandel-newton-2
+  corners=-2.167321/1.090338/-1.228561/1.214683 params=100/0/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=00000A<13>5mm<12>2mA1m71m40m00k0<13>8D09A0BA0<14>mK0<16>A00<14>XI\
+  0A00<45>ww0xx0xx0<109>zzz00c
+  }
+
+96                 { ; Copyright Sylvie Gallet [101324,3444], 1995
+  reset=1920 type=formula formulafile=newforms.frm formulaname=96
+  corners=-1.495992/1.496005/-1.121997/1.122 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=0
+  colors=0rr077GC0IE0KF0<7>aU0cW0dY0<12>zz0<14>jB0i70f70<14>000<15>S5NU8MW\
+  CLYFJaNG<10>zz0<15>XX8WW8TU8<8>BD69B5795574354033<4>2NN2RR2VV2ZZ3bb<5>4z\
+  z<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000000320650<2>EA0
+  cyclerange=2/255
+  }
+
+Christmas 95       { ; Christmas Card for 1995 by David Walter
+  reset=1920 type=barnsleym1
+  corners=0.628874863/0.724419895/-0.86951184/-0.99690522/0.724419895/-0.9\
+  9690522 params=0/0 float=y maxiter=511
+  colors=000LLz0e00eee00e0eeL0zzzLLLLLzLzLz0GzLL0zGz0GeL0z0Gz0GeL0eL00zGeL\
+  00zG0zGSSSz0Gzzz<2>zzzssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00\
+  G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG\
+  8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBG\
+  B<2>BGFBGGBFGBDGBCGXXc<2>UMV_hn<2>aen
+  }
+
+Creation           { ; C David Walter 100013,2775
+                     ; My all time favourite--just after the Big Bang whirls
+                     ; the Universe into being - close to Tim Wegner's
+                     ;'Fractal Creations' cover picture.
+                     ; A joyous colorful fractal to warm you when cold
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=richard8
+  corners=-0.6039307204/-0.5982085996/1.18284445/1.19804365/-0.6091663754/\
+  1.18982532 params=0/0/0/0/0/0 float=y maxiter=1023 bailout=50
+  inside=0
+  colors=000ww3<3>zz0zz0zy0<81>z10z00z00y01<80>10y10y00z00z11y<77>vv4
+  }
+
+gallet-2-12-1      { ; Copyright Sylvie Gallet [101324,3444], 1995 00:08
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=gallet-2-12 passes=1
+  corners=-8.852124/8.877202/-4.940743/8.356252 params=0/0/0/0/0/0
+  float=y maxiter=200 inside=0 outside=real
+  colors=z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>000<2\
+  >0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2\
+  >00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL\
+  0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L0\
+  0zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z0\
+  0e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz\
+  0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0z\
+  zzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<2\
+  4>ccc
+  }
+
+gallet-2-12-2      { ; Copyright Sylvie Gallet [101324,3444], 1995 00:08
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=gallet-2-12 passes=1
+  corners=-20.2389/20.26397/-14.42965/15.9475 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=0 outside=atan
+  colors=vvj<4>ttgttfttettdsscssb<5>rrYqqXqqXqpWpoW<32>bKEbJDbICaHBaGA<15>\
+  U00U00T01<34>4CL4DL3DM3DN2EN<8>2GJ2GJ2GI2GH0FP<24>4L54L45M36M3<23>QcF_AT\
+  <3>XXQwwr<24>jjejjejjf<29>wwuwwuwwt<10>uuk
+  }
+
+Alien'sMask        {; Ideal for Halloween - scare daylights out of the kids.
+                    ; Newton's cubic using P1
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=davidsmask
+  corners=-0.14446356/0.22336044/0.25014108/-0.24029092/0.22336044/-0.2402\
+  9092 params=-0.6/0/0/0/0/0 float=y maxiter=3000
+  colors=000CCC<3>55533300arl0KwA<2>KwAz00000000zUAU2TzUWsNNzhfwAU`DM<5>fP\
+  Wwl6<3>wrSz00<2>z00900<13>w95pUKzsZ00L00e00z<2>0zzzzezz0<2>z00e00L00z0Lz\
+  L0wA5<14>whwzeZ<14>_JA0B0<14>KwAqiw<14>JAJCKs<14>gpwLB2<14>oe00Az<30>A5A\
+  VAV<14>wKwAVV<14>Ayxwww<24>EEE
+  }
+
+Quiz               { ; Sylvie Gallet [101324,3444], 1996
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
+  corners=-0.925021519/-0.857617567/-0.94772172/-0.897168756
+  params=0/0/0/0/0/0 float=y decomp=256
+  colors=000zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjj<5\
+  >zjVFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrr<5\
+  >zrbFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<5>zbjFjj<5>zjjFrj<4>rrjzyycc\
+  dWWWz000z0zz000zz0z0zzzzz00j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFN\
+  F<5>zNFFVF<5>zVFFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNNV\
+  N<5>zVNFbN<5>zbNFjN<4>rjN
+  }
+
+quiz-2             {; Sylvie Gallet [101324,3444], 1996
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
+  passes=1 corners=1.001838661/1.00934581/-0.9314279084/-0.9257975468
+  params=0/0/0/0/0/0 float=y maxiter=500 outside=real
+  colors=000<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz<15>zz1<1\
+  5>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000000kkk650<3>GC0IE0KF0MG0OI0RK0<4\
+  >aU0cW0dY0<12>zz0<15>i70<15>000
+  }
+
+quiz-3              { ; George Martin [76440,1143], 1996
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
+  corners=-0.98898077/-0.74507856/1.010632/0.82771927
+  params=0/0/0/0/0/0
+  colors=CCCw00ICsGCsECsCCs<20>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<1\
+  9>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCC\
+  C<21>sCs<16>MCs
+  }
+
+quiz-4             { ; George Martin [76440,1143], 1996
+  reset=1920 type=formula formulafile=newforms.frm formulaname=quiz
+  corners=-1.0323511/-0.78846741/0.989169/0.80625623
+  params=0/0/0/0/0/0 float=y
+  colors=CCCw00ICsGCsECsCCs<20>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<1\
+  9>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCC\
+  C<21>sCs<16>MCs
+  }
+
+AlienGasMask       { ; from quiz-4, George Martin [76440,1143], 1996
+                     ; Loren G. Dobert, 72332,507
+  reset=1920 type=formula formulafile=newforms.frm formulaname=quiz
+  passes=2
+  corners=0.81979835/1.1205159/0.954221702/0.809934043/0.99731457/0.717544\
+  208 params=0/0/0/0/0/0 float=y inside=startrail
+  colors=000E0l<5>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz1Fy\
+  2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60x<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz1Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+GigerBaby          { ; from quiz-4, George Martin [76440,1143], 1996
+                     ; Loren G. Dobert, 72332,507
+                     ; Sorry, that's what it looks like
+  reset=1920 type=formula formulafile=newforms.frm formulaname=quiz
+  passes=3
+  corners=0.81980401/1.1205238/0.954236746/0.809944749/0.99732024/0.717544\
+  913 params=0/0/0/0/0/0 inside=startrail
+  colors=000c00<8>401zW0<31>zz0yz0wz0<29>1z0<13>Tz0Vz0Wz0Xz0<29>zz0000<9>z\
+  00<21>zz0000<3>000000002<27>00w00z20z<27>w0zz0zz0x<27>z00<4>g00
+  }
+
+LiquidChaos        { ; from quiz-4, George Martin [76440,1143], 1996
+                     ; Loren G. Dobert, 72332,507
+  reset=1920 type=formula formulafile=newforms.frm formulaname=quiz
+  passes=3
+  corners=-0.018277099/0.02469055926/0.3580728179/0.2889557159/0.030367594\
+  91/0.293213477 params=0/0/0/0/0/0 float=y inside=zmag
+  distest=4/71/800/600 finattract=y
+  colors=000E0l<5>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz1Fy\
+  2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60x<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz1Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+DontStareTooLong   { ; from quiz-4, George Martin [76440,1143], 1996
+                     ; Loren G. Dobert, 72332,507
+  reset=1920 type=formula formulafile=newforms.frm formulaname=quiz
+  passes=3
+  corners=-0.0006492688088/0.0006626415671/0.02985937686/0.02811016302/0.0\
+  006626415671/0.02811016302 params=0/0/0/0/0/0 float=y inside=zmag
+  outside=0 distest=4/71/800/600 finattract=y
+  colors=000E0l<5>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ<2>0Jn08u20x<6>v04z20<5>zm\
+  0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz1Fy\
+  2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60x<6\
+  >z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz1Lz\
+  0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0E\
+  q03x60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+Carr1971-F             { ; From a modified Sylvie Gallet frm.
+                         ; Julia shaped like Mandel !!
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1971
+  corners=-1.748873/0.8632508/-0.9996326/0.9594606 params=100/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=000D7I<10>3UeF6I<12>jQhE6G<33>pxiJ7G<5>wMMD6G<43>RwoXGFpSDLFPTAYa\
+  `gD5G<43>tH6D5G<4>I5HE5GJ5H<11>T6KD6G<44>jxYD5H<24>N6x
+  }
+
+test-b               { ; Lee Skinner problem PAR
+  reset=1920 type=fn*z+z function=sin
+  corners=-6.500014/9.499971/-6.00001/6 params=-1/0/-1/0 maxiter=1023
+  bailout=8192 inside=0 logmap=old symmetry=none
+  colors=d00jSWY7MY4JX1FYaq<11>DLUZcr<10>dwoYap<9>ONRN70<204>M8FZ`o<7>YDD
+  }
+
+Two-Face           { ; From Carr1971-F From a modified Sylvie Gallet frm.
+                     ; Julia shaped like Mandel !!
+  reset=1920 type=formula formulafile=newforms.frm formulaname=carr1971
+  corners=-2.039412/1.735832/-1.323023/1.50841
+  params=0/864183165/0/0/0/0 float=y maxiter=500 logmap=yes
+  periodicity=0
+  colors=000D7I<10>3UeF6I<12>jQhE6G<33>pxiJ7G<5>wMMD6G<43>RwoXGFpSDLFPTQYa\
+  `gD5G<43>tH6D5G<4>I5HE5GJ5H<11>T6KD6G<44>jxYD5H<24>N6x
+  }
+
+Moulee             { ; From Carr1971-F
+                     ; From a modified Sylvie Gallet frm. (very modified)
+                     ; Take a Madelbrot & Julia, use a moulee on them,
+                     ; and this is what you get
+  reset=1920 type=formula formulafile=newforms.frm formulaname=twoface
+  corners=-1.748873/0.863251/-0.9996326/0.9594606 params=0/22/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=000D7I<10>3UeF6I<12>jQhE6G<33>pxiJ7G<5>wMMD6G<43>RwoXGFpSDLFPTQYa\
+  `gD5G<43>tH6D5G<4>I5HE5GJ5H<11>T6KD6G<44>jxYD5H<24>N6x
+  }
+
+Gallet-3-01        { ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=Gallet-3-01 corners=-2.182418/0.9535844/-1.176002/1.176
+  params=100/150/200/0/0/0 float=y maxiter=300 periodicity=0
+  colors=000CCC<2>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zzz<15>\
+  000<15>zn0<15>000<15>zzz<15>004<14>I0qK0uJ0r<12>308204333<14>zzz<11>GGG
+  }
+
+Mandelcave         { ; Par and image Copyright 1996 Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=gallet-3-01 passes=1
+  corners=-2.182418/0.9535845/-1.176002/1.176 params=100/150/200/0/0/0
+  float=y maxiter=1023 inside=bof60 outside=real periodicity=0
+  colors=d00`81<2>TB1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT27\
+  R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS9`Q<3>9_O<7>eJ0fK0h\
+  L0<2>WO5m4Gn3Co2Ap28q16<2>z01<7>e71b81a82<3>V86T97Q89<4>B0J<5>CDKCFLCGL<\
+  46>c7b<11>0ZL<8>7bW8cX9dZAd`<6>H_sIZvJZxKZzKZy<18>E2eD0cD0b<17>20I11G20E
+  cyclerange=144/255
+  }
+
+wow                { ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+                     ; Wow!!
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=mandel-newton-2 passes=1
+  corners=-2.161209/1.09645/-1.22219/1.221054 params=100/0/0/0/0/0
+  float=y maxiter=500 logmap=yes periodicity=0
+  colors=000z00<6>TB1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47\
+  R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS9`Q<3>9_OUD0<11>a83\
+  z00H73_0iG73oHYD640UWB55JO07366M65264I7317217008238568<13>0iz<5>m4T<2>U0\
+  VO8VM9T<12>XfZ<6>zlp<92>000 cyclerange=106/107
+  }
+
+Carr1998-F             { ; From a modified Sylvie Gallet frm.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1998
+  corners=-1.718614/1.078701/-1.048994/1.048992 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000066<13>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<15>004<12\
+  >G0jH0nI0qK0uJ0rI0n<11>308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>0\
+  00033
+  }
+
+Carr1998-Fa             { ; From a re-modified Sylvie Gallet frm.
+                          ; Remodified by Russ Nelson per Chuck Ebert
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr1998a
+  corners=-1.718614/1.078701/-1.048994/1.048992 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000066<13>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<15>004<12\
+  >G0jH0nI0qK0uJ0rI0n<11>308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>0\
+  00033
+  }
+
+Gallet-3-01a       { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; modified formula per Chuck Ebert
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=Gallet-3-01a corners=-2.182418/0.9535844/-1.176002/1.176
+  params=100/150/200/0/0/0 float=y maxiter=300 periodicity=0
+  colors=000CCC<2>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zzz<15>\
+  000<15>zn0<15>000<15>zzz<15>004<14>I0qK0uJ0r<12>308204333<14>zzz<11>GGG
+  }
+
+firstpoint         { ; well outside "Dragon's Horn",
+                     ; CKP0825, 19 march 1994 .. caren park
+  reset=1921 type=complexnewton
+  center-mag=2.26748/0.983434/0.001693671/1/34.999
+  params=1.5/4.6/0.25/0.75 float=y maxiter=500 inside=maxiter
+  logmap=yes periodicity=0
+  colors=kFE<14>g3Fg2Ff1Ge1H<8>T2TR2UP2VN2WL2XJ2YH3_F3aC3c94e<2>00z<16>O14\
+  P11S11<4>d22g22h22<3>r33t33u22w22x11z00<8>zH0zJ0zJ0<107>zw8zw8zw8zw8zw8<\
+  8>xr9xq9xp9wo9wn9<44>kGE cyclerange=0/255
+  }
+
+lastpoint          { ; ending point inside "Dragon's Horn"
+                     ; CKP0825, 19 march 1994 .. caren park
+  reset=1824 type=complexnewton
+  corners=2.267471133144/2.267480702341/0.983419070497/0.983448295489/2.26\
+  7460550059/0.983433181278 params=1.5/4.6/0.25/0.75 float=y inside=0
+  logmap=yes periodicity=0
+  colors=kFE<14>g3Fg2Ff1Ge1H<10>P2VN2WL2XJ2YH3_F3aC3c94e<2>00z<16>O14P11S1\
+  1<4>d22g22h22j22<2>r33t33u22w22x11z00<8>zH0zJ0zJ0<109>zw8zw8zw8zw8zw8<45\
+  >kGE cyclerange=0/255
+  }
+
+Carr2036-F            { ; Fractal Trout fly? 
+                        ; From a modified Sylvie Gallet frm.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr2036
+  corners=-1.352864/-0.02319927/-0.28332149/0.71392736
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=000<8>000<17>0oz<18>00000088C<9>XTR_VT`XV<7>kki<6>`XV_VTWSR<6>88C\
+  000800<9>f00<10>800000000MF7<12>zo`<12>MF7000000800<12>f00<4>oo0<7>0wh<7\
+  >oo0<5>`00<9>93F00000093F<11>`Fz<5>0hU<5>`Fz<12>800000<24>000
+  }
+
+Prismatic Spring   { ; The Grand Yellowstone Hot Pool
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; A deep zoom into Bob Carr's Fishing Lure
+                     ; Formula of Sylvie Gallet modified by Bob Carr
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr2036 passes=1
+  corners=0.01584712369683/0.01585669879539/0.009145303159371/0.0091524544\
+  83292 params=100/150/200/250/0/0 float=y maxiter=1023 inside=0
+  logmap=128 periodicity=0
+  colors=000z00<14>c00a00Z00<4>K00V30<6>nR2tV2<3>vc4ve5wf5wh6xj6xn7yp8zr9<\
+  5>mmBklBikCfjCbhB_fA<7>8R2<10>0jqT0N<3>bIU<12>ESsCTuCVq<3>9_Z8aU8aS9`R9`\
+  Q9`P<2>JUGNRDQQE<11>z7Z<3>zzzlgj0R0<5>6S67S79UV<15>zi0<3>z7R<4>U0VO8V00V\
+  XLZ3dtPW10TNANEBSECYEDcN<3>GJhLMiRQjXUk<5>zzz<16>ziezhdzgbye`<12>h80<8>W\
+  61V52T52R42<6>D11A00A03<19>00z cyclerange=2/255
+  }
+
+float_eq_no        {
+  reset=1920 type=formula formulafile=les.frm formulaname=lesfrm05
+  function=cosxx corners=-16.5395/16.5395/-12.40461/12.40464
+  params=1/0/0/0/0/0 maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAwww<78>BLLAKK8PP<2>0cc<9>zz0<15>z00<35>F00zrc<41>MD7LB6LB6<61>\
+  000kkk
+  }
+
+float_eq_yes       {
+  reset=1920 type=formula formulafile=les.frm formulaname=lesfrm05
+  function=cosxx corners=-16.53951/16.53949/-12.40461/12.40464
+  params=1/0/0/0/0/0 float=y maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAwww<78>BLLAKK8PP<2>0cc<9>zz0<15>z00<35>F00zrc<41>MD7LB6LB6<61>\
+  000kkk
+  }
+
+Carr2178-F           { ; From a modified Sylvie Gallet frm.
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr2178
+  corners=-0.774083/0.6693814/-0.53639/0.5462084
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=000XlC`q6ew0<9>7`F<6>5O45M37N8<9>X`w<5>INaGLYGPY<9>Fw`<10>5M3UNF<\
+  9>tsb<7>UU7<12>zyn<8>770000007<9>0Zf<6>0ta0w`2p_<5>GEVI7UI8W<11>7Mx<8>zz\
+  0<8>`00<12>0000000wM<10>070<12>0wM<8>`00<12>0F0<17>7Mx00020028Q<6>5Fj<4>\
+  SfI
+  }
+
+Les5i03            { ; Taffy Sculpture
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05 function=cosxx passes=1
+  corners=0.38408226/0.54238856/1.3368836/1.4555886 params=1/0/0/0/0/0
+  maxiter=500 inside=zmag outside=atan periodicity=0
+  colors=AAAa00<14>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3>rttqs\
+  soss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0<10>z00<17>b00
+  }
+
+Les5i05            { ; Red Cable
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05 function=cosxx passes=1
+  corners=-0.80382615/-0.00028586388/1.9682624/2.570935
+  params=1/0/0/0/0/0 maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAzW0<7>z00<33>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3\
+  >rttqssoss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0zb0zZ0
+  }
+
+Les5i06            { ; Granite Mountain
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05 function=cosxx passes=1
+  corners=-0.69965136/-0.56145501/2.2273532/2.3309788
+  params=1/0/0/0/0/0 maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAQhj<9>Bce<2>7at5`z5`y<18>6Tc6Tb6Sa7R_<10>CFEDDCCGF<6>0cc<8>tx4\
+  qss<3>kRq<8>Ylm<2>Ujk0Fz0Zzzz0<15>z00<35>F00zrc<41>MD7LB6LB6<61>000kkkww\
+  w<3>uuutuusttrtt cyclerange=68/255
+  }
+
+Les5i11            { ; A Ray of Light
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05 function=cosxx passes=1
+  corners=0.09726346/1.37496/-1.1919891/-0.23370194 params=1/0/0/0/0/0
+  maxiter=500 inside=zmag outside=atan periodicity=0
+  colors=AAAzW0<7>z00<33>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3\
+  >rttqssoss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0zb0zZ0
+  }
+
+Les5i03a           { ; Taffy Sculpture
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05_a function=cosxx passes=1
+  corners=0.38408226/0.54238856/1.3368836/1.4555886 params=1/0/0/0/0/0
+  maxiter=500 inside=zmag outside=atan periodicity=0
+  colors=AAAa00<14>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3>rttqs\
+  soss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0<10>z00<17>b00
+  }
+
+Les5i05a           { ; Red Cable
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05_a function=cosxx passes=1
+  corners=-0.80382615/-0.00028586388/1.9682624/2.570935
+  params=1/0/0/0/0/0 maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAzW0<7>z00<33>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3\
+  >rttqssoss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0zb0zZ0
+  }
+
+Les5i06a           { ; Granite Mountain
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05_a function=cosxx passes=1
+  corners=-0.69965136/-0.56145501/2.2273532/2.3309788
+  params=1/0/0/0/0/0 maxiter=500 inside=zmag outside=atan
+  periodicity=0
+  colors=AAAQhj<9>Bce<2>7at5`z5`y<18>6Tc6Tb6Sa7R_<10>CFEDDCCGF<6>0cc<8>tx4\
+  qss<3>kRq<8>Ylm<2>Ujk0Fz0Zzzz0<15>z00<35>F00zrc<41>MD7LB6LB6<61>000kkkww\
+  w<3>uuutuusttrtt cyclerange=68/255
+  }
+
+Les5i11a           { ; A Ray of Light
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=lesfrm05_a function=cosxx passes=1
+  corners=0.09726346/1.37496/-1.1919891/-0.23370194 params=1/0/0/0/0/0
+  maxiter=500 inside=zmag outside=atan periodicity=0
+  colors=AAAzW0<7>z00<33>I00XI0k_0<2>yq9<5>um_<36>MD7LB6LB6<61>000<4>uvv<3\
+  >rttqssoss<33>2_b0Za0Za<11>3UW4UW6VV<33>tx4zz0zv0zf0zb0zZ0
+  }
+
+Carr1973-F             { ; From a modified Sylvie Gallet frm.
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1973
+  corners=-2.165184/1.020333/-1.214655/1.174483 params=100/0 float=y
+  maxiter=500 logmap=yes periodicity=0
+  colors=000E00<4>000<2>000AKK<13>oyyrrr<5>moomoolnnlnnkmm<55>DMMCMMCLLBLL\
+  AKK<3>0cc<9>zz0<15>z00<16>d00b00a00_00`00a00<9>zz0<17>6_F<4>CVQEUSFUT<16\
+  >_Fx`FzaGx<29>vu3ww1zz0<13>b40`00Y00<5>H00
+  }
+
+c103905            { ; Mountain Night Inside a Globular Cluster
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Thanks to formula gurus Sylvie Gallet and Bob Carr
+                     ; Use Fractint version 19.2, not 19.21
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr1939 passes=1
+  corners=0.5440978919/0.5465345594/0.1597221227/0.1615496234
+  params=100/0/0/0/0/0 float=y maxiter=500 logmap=yes invert=0.5/0/0
+  periodicity=0
+  colors=0000zzgkCejDciD`hE<8>FW6CV57R37R4BQ6FP8CPAOAZRA`UBb<2>aGXdIUdJT<5\
+  >aOk<7>OU`MV_MVXMWTMXPNYL<2>GYMEZNCZN9_OUD0WE0XF0UR0`H0<4>hL0dM2gW3<3>SW\
+  7<2>PJANEBMACK5DH3FE2HB0J<12>DSMKVJRXGUYlea9pd6sf3zi0<3>z7R<3>`1UU0VMAVI\
+  GW<2>0bd<8>0ec<15>zz0<6>zk3zi3zg4ze5<17>z3Fz0Gz0G<62>TB1<4>tV2<3>vc4ve4w\
+  f5<2>xl7xn7yp8zr9<7>ikC
+  }
+
+c216701            { ; Smoking Stalks (Grass Fire)
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr2167 passes=1
+  corners=-0.739428/-0.34856721/0.834605817/0.864474334/-0.613055/0.666508\
+  492 params=100/150/200/250/0/0 float=y maxiter=300 periodicity=0
+  colors=000<3>O0NM0M<10>_CW`DX`EX<2>bHYcJZcJZ<26>XSeWSfXTf<15>znpymo<15>a\
+  KH_IEZIE<13>BC7<9>QF7SG8TI8UK8VM8WO8<6>UW1TY0VY0<11>wf6zg7zf7<15>zB4zB3x\
+  93<15>K63<13>g32i21i42i73f94cB5<4>PUC<2>gNC<13>N58L38L38<13>9G18H09H0<15\
+  >JN0KN0LO1LP1LQ1LR1MS0NRPOQP
+  }
+
+c216702            { ; Cauldron, Cauldron, Boil and Bubble
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Robert Carr, MD
+                     ; Inspired by Sylvie Gallet
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr2167 passes=1
+  corners=0.64198262/1.2604807/0.0122775438/0.0595414843/0.84195526/-0.054\
+  352624 params=100/150/200/250/0/0 float=y maxiter=300 periodicity=0
+  colors=0008Zz<23>72O60M605C0B<13>_CW`DX`EX<2>bHYcJZcJZ<26>XSeWSfXTf<15>z\
+  np<20>UIESGCQGC<7>DD8BC7CC7<2>HD7ID7KE7MF6<10>dN3fO2jT8<3>zmWoT0<11>zU7<\
+  8>zU6zR6zO6zL5zJ5<3>zB4z93x93<4>k83i83h93<8>RIAPJBOKE<3>GOREPMCQG<3>4zK<\
+  9>ut4ww2zz0<8>ZE3V84U84<12>H84G95FA4<6>9G1
+  }
+
+c216703            { ; Temple to the Underworld
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Robert Carr, MD
+                     ; Inspired by Sylvie Gallet
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr2167 passes=1
+  corners=-0.062828909/0.42621612/-0.176532685/-0.139161197/0.095288989/-0\
+  .387356539 params=100/150/200/250/0/0 float=y maxiter=300
+  periodicity=0
+  colors=000_Ob_ObYOv<8>XQkXRiXRhWSfXTf<15>znpymo<7>lYXkWVjVU<13>N7C<13>0T\
+  0<10>VD6SC7PA8N88L78J57<11>9918A08C09F0<11>GL0HL0IM0JN0KN0LO1<5>IC7H9TG5\
+  AE0C<7>U7NW8OZBR<3>lOf<4>fG`pHdzJhzbldId<2>cJgXKb<9>FD7<6>QF7SG8TI8UK8VM\
+  8WO8<6>UW1TY0VY0<10>ue6wf6xm6zu7zl7zb7<13>zB4z93x93<9>_83X83T83<2>H73<11\
+  >iOEgKM<3>rrr0OWf94cB5`E6YI7 cyclerange=64/255
+  }
+
+c216704            { ; Lake in the Clouds
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Robert Carr, MD
+                     ; Inspired by Sylvie Gallet
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=carr2167 passes=1
+  corners=-0.084163587/0.58232146/-0.639499427/-0.588568457/0.13132417/-0.\
+  926816418 params=100/150/200/250/0/0 float=y maxiter=300 logmap=128
+  periodicity=0
+  colors=0005NQaIB<9>N58L38L38<13>9G18H09H0<15>JN0KN0LO1LP1LQ1LR1MS0NRP<3>\
+  I0HO0NM0M<10>_CW`DX`EX<2>bHYcJZcJZ<26>XSeWSfXTf<15>znpymo<14>aKH_IEZIC<1\
+  3>BC7<5>KE7LE7OF7QF7<5>WR6XT5YV5_X4ZX4<3>VY0<11>wf6zg7zf7<15>zB4z93x92<1\
+  5>K63<13>g32i21i42i73f94cB5<4>PUC<2>gNC<2>bJB cyclerange=2/255
+  }
+
+Car1973            { ; From a modified Sylvie Gallet frm.
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1973a
+  corners=-2.165184/1.020333/-1.214655/1.174483 params=100/0 float=y
+  maxiter=500 logmap=yes periodicity=0
+  colors=000E00<4>000<2>000AKK<13>oyyrrr<5>moomoolnnlnnkmm<55>DMMCMMCLLBLL\
+  AKK<3>0cc<9>zz0<15>z00<16>d00b00a00_00`00a00<9>zz0<17>6_F<4>CVQEUSFUT<16\
+  >_Fx`FzaGx<29>vu3ww1zz0<13>b40`00Y00<5>H00
+  }
+
+Car1973m           { ; From a modified Sylvie Gallet frm.
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1973ma
+  corners=-2.165184/1.020333/-1.214655/1.174483 params=100/0 float=y
+  maxiter=500 logmap=yes periodicity=0
+  colors=000E00<4>000<2>000AKK<13>oyyrrr<5>moomoolnnlnnkmm<55>DMMCMMCLLBLL\
+  AKK<3>0cc<9>zz0<15>z00<16>d00b00a00_00`00a00<9>zz0<17>6_F<4>CVQEUSFUT<16\
+  >_Fx`FzaGx<29>vu3ww1zz0<13>b40`00Y00<5>H00
+  }
+test-ROTATE          {
+  reset=1920 type=mandel
+  corners=-1.4049010572785340/-1.4049010570122210/0.0000000001773671/\
+  -0.0000000001777160/-1.4049010570122210/-0.0000000001777160
+  params=1/0 float=y maxiter=10000 inside=0
+  colors=@default.map
+  }
+
+test1-ROTATE         {
+  reset=1920 type=mandel
+  corners=-1.4049010572785341/-1.4049010570122209/1.7736767914648328e-01/-\
+  1.777165791464833e-01/-1.4049010570122209/-1.777165791464833e-01
+  params=1/0 float=y maxiter=10000 inside=0 colors=@default.map
+  }
+
+test2-ROTATE       {
+  reset=1920 type=mandel
+  center-mag=-1.40490105714537700/-0.00000000000017445/7.509955e+009/1/-90
+  params=1/0 float=y maxiter=10000 inside=0 colors=@default.map
+  }
+
+test-CORNERS        {
+  reset=1920 type=mandel
+  corners=-1.4049010572785341/-1.4049010570122209/1.773676737779522e-01/-1\
+  .7771658451501439e-01/-1.4049010570122209/-1.7771658451501439e-01
+  params=1/0 float=y maxiter=10000 inside=0
+  colors=default.map
+  }
+
+c217806            { ; Coral Chasm
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Robert Carr, MD
+  reset=1920 type=formula formulafile=NEWFORMS.frm
+  formulaname=carr2178 passes=1
+  corners=-0.0524721421/0.0121459262/-0.216739488/-0.168275937
+  params=100/150/200/250/0/0 float=y maxiter=1023 inside=0 logmap=128
+  periodicity=0
+  colors=000UUk<14>d8ee6df6a<9>x14z00z10<10>z_0tS2nK4<2>X2CIWLzkxkg6PS0AP1\
+  KM2R_aznp<8>rLV<11>WA5NTOKSN<2>AMI<13>D83E61E71<18>DA1C00<51>kT5<2>tbA<3\
+  >oRAmNCmOF<6>i__Habhcegeithk<3>xkUylPxdP<3>q6Ol0I<2>Y00Y65_95G00aC5jIAeI\
+  4<7>ug1wI1a80<3>te1ka1bY1TT2LV2RX2P_2<2>GN1<2>LQ6<2>YaH<2>ziF<2>ajbTkjAl\
+  rCmzIitOdn<6>TVl
+  }
+
+Bad_Head_Day?      { ; Ever had one of those days?
+                     ; By Jonathan Osuch [73277,1432]
+                     ; This is a slow one.
+                     ;  Version 1921 Patchlevel 22
+  reset=1921 type=manlam(fn||fn) function=sqrt/cos passes=1
+  center-mag=+2.96853387542126300/+0.00038114232461102/26547.1
+  params=0/0/0.5 float=y maxiter=10000 bailoutest=real inside=0
+  logmap=11
+  colors=00e000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0<15>\
+  000GA4<12>2v10z00w0<14>000<15>00z<3>00i00a<8>000<16>z0Xv0Vr0Tp0Sn0R<12>0\
+  00<15>p0w<15>000<15>zzz<14>444
+  }
+
+Carr2289-F           { ; From a modified Sylvie Gallet frm.
+                       ;  Version 1921 Patchlevel 22
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr2289
+  corners=-0.6675049/0.6648699/-0.50270801/0.49657301
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=00000L012<12>AFSBGUAFS<14>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>UFw\
+  <2>sff0o`000<14>zo`<15>000000<14>KAc<15>0z`<14>Zky`jzaky<14>svc<15>WFu<1\
+  5>zo`<15>0F0MMU<13>_mx`hz<30>CHS
+  }
+
+NutcrackerMonsters { ; Microscopic Creatures Battling With Nutcrackers
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1920 type=mandphoenixclx passes=1
+  corners=-0.2813104698/-0.2742954917/0.1535485472/0.1588097809
+  params=0/0/0.5/0/0 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzz1R1<2>4P45P55N5<8>A0A<19>c5be6de7c<2>f9bfAbgBc<11>kNh04V<33\
+  >xvx<2>_XXRONIFD963B75<3>HBD<9>z00<2>zR0NYxPZvQYvz_0zh0<13>zhezgixgh<14>\
+  UfKReIOcIMbHJaGG_FDYC<7>MQCOPCONC<7>J09<8>hD7kF6lG4mH2oJ0<5>xP0zQ0zR0<13\
+  >ud0te0uf0<8>wo0xq0xq0<6>yx0zz0zy5zwBzuH<7>zzzMKLIJGHLHGMI<9>MYy
+  cyclerange=115/255
+  }
+
+ckp1423            { ; "Uncertainty"
+                     ; 00:01:38.49 .. 22 march 1996 .. caren park
+  reset=1921 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-03 function=cotan/abs
+  center-mag=-0.993292/-0.903921/2.87904/1/-44.998
+  params=2.95/0.4/10/1 float=y maxiter=255 outside=atan periodicity=0
+  colors=406<2>307207208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3\
+  DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<5>M_qM`rN`rNasObs<4>SfvT\
+  gvUgvVhvWhw<4>_ly_ly`myamyany<2>dpzdpzeqzeqzfrz<8>mvymwynwynxyoxy<4>qyyr\
+  yxryxsywsyw<4>vzuvzuuyt<63>000000100<29>L80M91L91<6>G50F40E40E40<2>D32C2\
+  2C22B12A12<10>506 cyclerange=0/255
+  }
+
+ckp1416            { ; "Beachball"
+                     ; 00:00:54.00 .. 27 february 1996 .. caren park
+  reset=1921 type=formula formulafile=les.frm formulaname=lesfrm10
+  function=atanh/cosh center-mag=0.6656/0.161489/0.05409605/1/-90
+  params=10/0.5 float=y fillcolor=60 potential=255/300/0
+  colors=cozAMeANf<4>DQjERkFSlFSlGTmGUm<4>KYpLZqM_qM`rN`rNas<5>SfvTgvUgvVh\
+  vWhw<3>Zky_ly_ly`myamyanybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qy\
+  yryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tlS\
+  skRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAfS9eR9dQ8dQ8<12>UG\
+  1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<14>307207208209<11>03F03\
+  G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9Me
+  }
+
+ckp1379            { ; "Glass Wall"
+                     ; 00:04:24.85 .. 16 february 1996 .. caren park
+  reset=1921 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-03 function=tan/sin
+  center-mag=1.99728/1.99745/0.1048442/1.0988/180
+  params=0.4/3.141592652589793/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=3CW<12>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXoKYp<5>NasObsPctQdtQdu<2>T\
+  gvUgvVhvWhwXiw<2>Zky_ly_ly`myamy<3>dpzdpzeqzeqzfrz<8>mvymwynwynxyoxy<4>q\
+  yyryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tl\
+  SskRsjQsiPshO<2>rgNqfMqeLpdKpcJ<5>mZGlYFkYEjXDiWC<3>gTAfS9eR9dQ8dQ8<12>U\
+  G1TF1SE1SE1RD1<14>G50F40E40E40<2>D32C22C22B12A12<15>20820820920A<10>03F0\
+  3G03H03I03J<3>05L06M06N17O17P<7>2CV cyclerange=0/255
+  }
+
+TheBrain           { ; inverted julia
+                     ; by Jim Deutch
+                     ; try cycling colors to see those thoughts swirlaround
+  reset=1920 type=julia corners=-9.358712/8.3743/-6.381292/6.918467
+  params=-0.5025032795965672/0.5333889648318291 invert=0.5/0/0.1
+  finattract=y periodicity=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hll00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00S<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+sp_18              { ; "Pyrites"   L.StClair/gallet-3-02 formula t=01m03s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-02 function=sin/cotanh passes=1
+  center-mag=-2.06327/1.97271/1.068999 params=-1/0.33/12/-0.45/0/0
+  float=y maxiter=200 inside=zmag outside=atan periodicity=0
+  colors=zk0<253>000zk0 cyclerange=0/255
+  }
+
+sp_18_m      { ; "Pyrites"        L.StClair/gallet-3-02 formula t=01m03s
+               ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+               ; Les St Clair 101461.2032@compuserve.com 1996
+               ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-02 function=sin/cotanh passes=1
+  center-mag=-2.06327/1.97271/1.068999 params=-1/0.33/12/-0.45/0/0
+  float=y maxiter=200 inside=zmag outside=atan periodicity=0
+  colors=zk0<191>F00<61>000zk0 cyclerange=0/255
+  }
+
+sp_09       { ; "Hot Chocolate"  L.StClair/gallet-3-13 formula t=00m32s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-13 function=exp/recip passes=1
+  center-mag=0.156499/0.756469/2.198833/1/90 params=6/-0.2/0/-3.3/0/0
+  float=y maxiter=255 outside=atan periodicity=0 colors=A11<254>ztr
+  cyclerange=0/255
+  }
+
+sp_09m       { ; "Hot Chocolate"  L.StClair/gallet-3-13 formula t=00m32s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-13 function=exp/recip passes=1
+  center-mag=0.156499/0.756469/2.198833/1/90 params=6/-0.2/0/-3.3/0/0
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=A11<19>F21<19>K71<171>zmh<27>zto<14>ztr
+  cyclerange=0/255
+  }
+
+?               { ; (c) Sylvie Gallet [101324,3444], 1996
+  reset=1921 type=julia passes=1
+  corners=-3.269046/2.840528/-1.431967/3.150214
+  params=-0.5025032795965672/0.5333889648318291 float=y maxiter=500
+  inside=0 outside=imag invert=0.5/0/0.1 finattract=y periodicity=0
+  colors=000G0Q<21>50A000<21>0BH0CI0CI0CI<27>1Rc1Sd1Te2Uf3Uf<43>jpdkqdlrdm\
+  scntc<9>xyb<7>1Uf<14>123000000<30>z00sKS<6>zA0<15>zz0<11>xD2s92<7>X3SY2W\
+  R1ZO0bN0`L0ZK0W<8>G0Q
+  }
+
+Vertige         { ; (c) Sylvie Gallet [101324,3444], 1996
+  reset=1921 type=julia passes=1
+  corners=-1.2624973/-0.73707388/0.36077102/0.75483859
+  params=-0.5025032795965672/0.5333889648318291 float=y maxiter=1000
+  inside=0 outside=imag invert=0.5/0/0.1 finattract=y periodicity=0
+  colors=0007Xf<53>xyb<7>1Uf<14>123000000<30>z00sKS<6>zA0<15>zz0<11>xD2sD2\
+  <7>X3SU2WR1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<19>50A000<29>0FN0GO0HP0IP0JQ<\
+  18>1Te1Ue1Uf2Uf<3>6Wf
+  }
+
+sp_09m2      { ; "Hot Chocolate"  L.StClair/gallet-3-13 formula t=00m32s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-13 function=exp/recip passes=1
+  center-mag=0.156499/0.756469/2.198833/1/90 params=6/-0.2/0/-3.3/0/0
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=A11<18>E11F21<18>J61K72<170>ylgzmh<26>zsnzto<14>ztr
+  cyclerange=0/255
+  }

@@ -1,0 +1,128 @@
+; MVB002.PAR by Mike Vande Bunt, November 1992    CIS:70421,1550
+;
+; All of these fractals are designed to be viewed on a 256 color VGA
+; display.  If you are using a 16 color display you may want to 
+: change FillColor=255 to whatever value is black on your monitor.
+;
+; These fractals all use either Boundary-Trace or Tesseral drawing 
+; styles, and are meant to be watched as they are being drawn.  The
+; completed fractal images are meant to be viewed, but much of the
+; beauty of these works is in the drawing method itself.
+;
+; Factors such as floating point that are machine-specific have been
+; left out of this file so that they may be set to produce the best 
+; results on your system.
+;
+; You may wish to try different palettes for these, but the results 
+; are often not as pleasing as when FillColor is set to normal. 
+; Changing the value of FillColor can produce interesting results (try
+; white or light grey).  If you are using a laptop LCD display, using
+; a bright color for FillColor may give a better display.
+;
+
+More_mondrian      { ; Another fractal in the style of Piet Mondrian
+                     ; 1992, by Mike Vande Bunt
+  reset type=julia passes=t corners=0.425953/1.113952/-0.921883/-0.405883
+  params=-0.1056338279/0.87933211 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+Mondrian_Three     { ; Minimalism at it's best.  (Least?)
+                     ; 1992, by Mike Vande Bunt
+  reset type=julia passes=t
+  corners=0.6936747/0.7550441/-0.6652438/-0.6192167
+  params=-0.1056338279/0.87933211 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+Jack_Frost         { ; He's just outside your window . . .
+                     ; 1992, by Mike Vande Bunt
+  reset type=julia passes=b corners=0.009533/0.353534/-0.454679/-0.196678
+  params=-0.1031299235/0.92286018 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+Window_Too         { ; Another leaded glass or stained glass window design.
+                     ; 1992, by Mike Vande Bunt
+  reset type=julia passes=b
+  corners=0.0195154/0.1034516/-0.3275823/-0.2646299
+  params=-0.1031299235/0.92286018 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+Whatzit-001        { ; Hard to describe -- Take a look
+                     ; 1992, by Mike Vande Bunt
+  reset type=magnet2m passes=b corners=-0.1813/0.5259/0.557138/1.087538
+  fillcolor=255 inside=-100 colors=@default.map
+  }
+
+Whatzit-002        { ; Arc sections and lines.
+                     ; 1992, by Mike Vande Bunt
+  reset type=magnet2m passes=b
+  corners=-0.189554/-0.016997/0.644684/0.774102 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+New_Webs           { ; Gossamer spider webs.
+                     ; 1992, by Mike Vande Bunt
+  reset type=magnet2j passes=b corners=-8.0/8.0/-6.0/6.0
+  params=-0.103275104562991/0.709392919225826 fillcolor=255 inside=-100
+  periodicity=0 colors=@default.map
+  }
+
+Mind_Bender        { ; More fun with boundry tracing
+                     ; 1992, by Mike Vande Bunt
+  reset type=manowarj passes=b
+  corners=-0.066476/0.947372/-0.614937/0.14548
+  params=-0.734981984/0.2777406275 maxiter=42 fillcolor=255 inside=-100
+  }
+
+Mondrian_Map       { ; A fractal tesselation in the style of Piet Mondrian
+                     ; 1992, by Mike Vande Bunt
+  reset type=manowarj passes=t
+  corners=-2.645041/1.510138/-1.571723/1.544692
+  params=-0.734981984/0.2777406275 fillcolor=255 biomorph=2
+  colors=@default
+  }
+
+Forest_Canopy     { ; Looking up at a tree . . . sort of.
+                     ; 1992, by Mike Vande Bunt
+  reset type=mandel passes=b
+  corners=-0.2989645/-0.1996326/0.7343655/0.8088541 maxiter=555
+  fillcolor=255 inside=-100 biomorph=2 colors=@default.map
+  }
+
+Mind_Bender-2      { ; This would make a nice art-glass window
+                     ; 1992, by Mike Vande Bunt
+  reset type=manowarj passes=b corners=0.68089/0.89178/-0.250315/-0.092145
+  params=-0.734981984/0.2777406275 maxiter=42 fillcolor=255 inside=-100
+  colors=@default.map
+  }
+
+Flora              { ; Watch these flowers "bloom" as they are drawn!
+                     ; 1992, by Mike Vande Bunt
+  reset type=lambda passes=b corners=0.453308/1.573305/-0.188288/0.651729
+  params=0.85/0.6 maxiter=42 fillcolor=255 inside=-100 colors=@default.map
+  }
+
+Medal              { ; This one is quite different with floating point on.
+                     ; 1992, by Mike Vande Bunt
+  reset type=mandelfn function=cotan passes=b
+  corners=-1.953461/1.946686/-1.468857/1.462036 maxiter=42 fillcolor=255
+  inside=-100 colors=@default.map
+  }
+
+Bond's_Gun         { ; Looking down the barrel . . .  (don't use FPU)
+                     ; 1992, by Mike Vande Bunt
+  reset type=mandelfn function=cotan passes=b
+  corners=-1.953461/1.946686/-1.468857/1.462036 maxiter=42 fillcolor=255
+  inside=maxiter colors=@default
+  }
+
+Magnet             { ; Simple, Elegant, Fast.
+                     ; 1992, by Mike Vande Bunt  70421,1550
+  reset type=magnet2m passes=b corners=-1.032/3.232/-1.599/1.599
+  maxiter=10000 fillcolor=255 inside=-100 colors=@default.map
+  }
+
+

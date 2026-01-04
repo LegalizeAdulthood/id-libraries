@@ -1,0 +1,94 @@
+;All of these use the formula "inandout07" by Bradley Beacham (It
+;is included in this file if you don't have a copy of "Zsa-Zsa2.frm")
+;Also requires Fractint 19.x
+;enjoy!
+;
+;Shane Richards 100354,2137
+
+
+
+
+
+Aquaduct           {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=conj/cotan/flip
+  corners=-8.01148/8.055624/-4.974724/7.075603 params=0.05/1/0/0/0/0
+  float=y inside=bof61 outside=atan
+  colors=000ui0<9>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<\
+  15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<3>vl0
+  }
+
+Refraction         {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=conj/conj/flip
+  corners=-2.713491/2.757635/-1.102072/3.001272 params=0.05/1/0/0/0/0
+  float=y inside=bof61 outside=atan
+  colors=000ui0<9>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<\
+  15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<3>vl0
+  }
+
+Spades             {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=conj/conj/sqr
+  corners=-2.2321839/1.1146562/0.22995511/0.78221442/-1.292406/-1.023082
+  params=0.05/1/0/0/0/0 float=y inside=bof61 outside=atan
+  colors=000tt2<11>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>\
+  4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<\
+  14>zz0<14>jB0i70f70<14>000<15>S5N<15>zz0xx1vv1
+  }
+
+Refraction2        {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=conj/conj/sqr
+  corners=-2.713491/2.757635/-1.102072/3.001272 params=0.05/1/0/0/0/0
+  float=y inside=bof61 outside=atan
+  colors=000ui0<9>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<\
+  15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<3>vl0
+  }
+
+Doorknob_display   {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=conj/cotanh/flip
+  corners=0.8115507/-0.8482446/-4.892417/5.061847/-3.225626/3.980089
+  params=0.05/1/1/1/0/0 float=y inside=bof61 outside=atan
+  colors=000CRJ8QG5OE7RG9UIBXKDYM<2>KfTMhVNjXPlZSo`UqbVtdZvg`yibzkaxi`tgZp\
+  eYmbWjaVgZTcWS`U<2>PQNONLNJKMGHLCEK8CL9FMAIOALOAO<3>WDaXEe_Fh`FkcFo<2>iI\
+  yjIzhHzhGwfFreEocCkbBhaAc_8_Z9VYAR<4>SG4RI5QJ7PK7OL9NO9MPBLQBKSDJTE<7>4w\
+  3<2>7k59g5Ad6C`6EX8EU8GQAHO8IM5JK4LI1LG0LG0MH1MI1LK2JN7HR9GWE<3>9jS7nV6r\
+  _4ub2zf1zi0zm0zk1zi<2>5nb6k_7fX8cVA_TBZQ<3>GPHHNEIKCKH9LJ9NK9MOBMRDLVELY\
+  HKaJKdMJgNJkQ<2>HuVHxXGz_GxXGuW<2>FkPEhNFdLDaIEYHEVFESCDO9DL8CI533000033\
+  35667BAAEDDIGEMKIQOKTSNXVP_ZSdaUgdXkiYnlarocvscvscvscvsasp`qnZpk<5>PcWNa\
+  TM_RLYO<2>FRG<2>PKFTIFXFF_CFbAFe9Ig8K<3>r5Vt4Xv3`<5>f5Ec5Ba6AZ8AX99UAATD\
+  9QEBNGALIA000LMCNOGPQJSSMUVOXWSZZV`_Yca`fddiff<3>untrmqnlnkilhgidfeadcZb\
+  aWa_S_WPYUMWSIVOFTM
+  }
+
+Perimeter          {
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=log/flip/conj passes=1
+  corners=1.1294348/2.0704684/-0.70811644/-0.0023412696
+  params=0.05/-0.02/0/0/0/0 float=y inside=bof61 outside=atan
+  colors=000ui0<9>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<\
+  15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<3>vl0
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

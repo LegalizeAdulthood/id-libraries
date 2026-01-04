@@ -1,0 +1,103 @@
+Fluer              { ; funky farmers sowing seeds of ... discontent ?
+  reset=1920 type=formula formulafile=damion.frm formulaname=bug05
+  function=sin passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof60 colors=@startup.map
+  }
+
+The_Edge           {
+  reset=1920 type=formula formulafile=damion.frm formulaname=zaar_4
+  function=recip passes=b
+  center-mag=-0.0312805/-0.00391134/1.253133/1/-90 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof60 colors=@startup.map
+  }
+
+Bent_Buffont       {
+  reset=1920 type=formula formulafile=damion.frm formulaname=018
+  function=sin passes=1
+  corners=0.708603307/0.7097108654/0.19407220458/0.19490287338
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=bof60
+  colors=@electric.map
+  }
+
+Bullet             { ; The blue sky 
+  reset=1920 type=formula formulafile=damion.frm formulaname=zaar_3
+  function=cos center-mag=0/0/0.6666667 params=0/0/0/0/0/0 float=y
+  maxiter=500 inside=bof60 colors=@patriot.map
+  }
+
+Caribou            {
+  reset=1920 type=formula formulafile=damion.frm formulaname=ZAAR_1
+  function=log passes=b center-mag=0/0/0.6666667 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=startrail
+  colors=000<15>z_I<8>StTOtU<5>0f`0da<7>VNkZKlbIl<5>y4eu2dq0bm0a<12>0UN0WM\
+  <10>eu9iu8<3>wl3<2>le0ib0e`1<10>0BC09D<2>B2HF0II0J<10>vQU<11>FrfBtg7vg3v\
+  f0te0rd<15>uGO<5>_2IX0HT0F<7>0J70M6<5>L_0Pb0Sd1<7>tx8qx9<14>0ON0MO<8>V0W\
+  Z0X<5>rFb<15>0qP0tO3vN7yMAyL<12>qU9<7>RA2
+  }
+
+slylk              {
+  reset=1920 type=formula formulafile=damion.frm formulaname=001
+  function=sin passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof61 colors=@ooh.map
+  }
+
+Tin_Foil           {
+  reset=1920 type=formula formulafile=fractint.frm formulaname=Bali
+  function=sin/sqr passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof60 outside=atan decomp=16
+  colors=200100333<14>zzz<12>TCC<2>zzz<12>CTC<2>zzz<12>CCT<2>zzz<12>TTC<2>\
+  zzz<12>TCT<2>zzz<12>CTT<2>zzz<12>hCC<2>zzz<12>ChC<2>zzz<12>CCh<2>zzz<12>\
+  hhC<2>zzz<12>hCh<2>zzz<12>Chh<2>zzz<2>zzzkkzkzkzzkzkkWWzWzWzzWzWWGGzGzGz\
+  zGzGG00z0z0zz0z00<26>300
+  }
+
+mandelated         {
+  reset=1920 type=formula formulafile=damion.frm formulaname=zaar_4
+  function=sin passes=b corners=-1.4592/-1.2608/0.86231969/1.0111197
+  params=0/0/0/0/0/0 float=y maxiter=1000 colors=@electric.map
+  }
+
+tendrilite         {
+  reset=1920 type=mandel passes=b
+  corners=0.294454067403/0.294479489038/0.0165708991358/0.0165899653619
+  params=0/0 float=y maxiter=500 colors=@startup.map
+  }
+
+slime              {
+  reset=1920 type=mandel passes=1
+  corners=0.2944657650630952878/0.2944657650631161787/0.016578488211779370\
+  6/0.0165784882117950387 params=0/0 float=y maxiter=5000
+  colors=@startup.map
+  }
+
+jacobs_ladder      { ; if picasso was...
+  reset=1920 type=formula formulafile=damion.frm formulaname=AMINO_5
+  function=acos/tan passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y inside=bof60 colors=@satin2.map
+  }
+
+trilobite          { ; feelin'a little crabby ?
+  reset=1920 type=formula formulafile=damion.frm formulaname=AMINO_7
+  function=sin passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y inside=bof60 colors=@startup.map
+  }
+
+sklylks            { ; will b whutz they iz
+  reset=1920 type=formula formulafile=damion.frm formulaname=001
+  function=sin passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof61 colors=@ooh.map
+  }
+
+Maurice            { ; A chivaliac thing
+  reset=1920 type=formula formulafile=damion.frm formulaname=AMINO_7
+  function=sin passes=b corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0
+  float=y maxiter=500 inside=bof60 colors=@satin2.map
+  }
+
+Retro              { ; is that the rocket or the 60's ?
+  reset=1920 type=formula formulafile=damion.frm formulaname=AMINO_7
+  function=exp passes=b corners=-4.091887/-0.09188661/-1.5/1.5
+  params=0/0/0/0/0/0 float=y maxiter=500 inside=bof61
+  colors=@goodega.map
+  }
+

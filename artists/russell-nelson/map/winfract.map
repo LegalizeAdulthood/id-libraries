@@ -1,0 +1,118 @@
+
+ WinFrac
+
+ Start     Length     Name                   Class
+ 0001:0000 02854H     WINFRACT_TEXT          CODE
+ 0002:0000 03B4AH     CMDFILES_TEXT          CODE
+ 0003:0000 01B9AH     MISCRES_TEXT           CODE
+ 0004:0000 06EE0H     FRACTALS_TEXT          CODE
+ 0005:0000 00000H     FRACTALP_TEXT          CODE
+ 0005:0000 025E2H     FRACSUBR_TEXT          CODE
+ 0006:0000 010F2H     MPMATH_C_TEXT          CODE
+ 0007:0000 00763H     mpmath_a_TEXT          CODE
+ 0008:0000 05B87H     _TEXT                  CODE
+ 0009:0000 0097AH     FPU087_TEXT            CODE
+ 000A:0000 00411H     fpu387_TEXT            CODE
+ 000B:0000 001BCH     F16_TEXT               CODE
+ 000C:0000 00555H     CALCMAND_TEXT          CODE
+ 000D:0000 00795H     CALMANFP_TEXT          CODE
+ 000E:0000 00279H     NEWTON_TEXT            CODE
+ 000F:0000 03A68H     LORENZ_TEXT            CODE
+ 0010:0000 00108H     TESTPT_TEXT            CODE
+ 0011:0000 04F54H     PARSER_TEXT            CODE
+ 0012:0000 00BEEH     JB_TEXT                CODE
+ 0013:0000 01C36H     LSYS_TEXT              CODE
+ 0014:0000 00192H     LSYSA_TEXT             CODE
+ 0015:0000 007BAH     PLOT3D_TEXT            CODE
+ 0016:0000 00A9AH     $3D_TEXT               CODE
+ 0017:0000 00E66H     LOADFILE_TEXT          CODE
+ 0018:0000 003D4H     DECODER_TEXT           CODE
+ 0019:0000 0132EH     ENCODER_TEXT           CODE
+ 001A:0000 00464H     GIFVIEW_TEXT           CODE
+ 001B:0000 000F8H     TGAVIEW_TEXT           CODE
+ 001C:0000 04EC4H     LINE3D_TEXT            CODE
+ 001D:0000 0041EH     PROFILE_TEXT           CODE
+ 001E:0000 06884H     CALCFRAC_TEXT          CODE
+ 001F:0000 00224H     fracsuba_TEXT          CODE
+ 0020:0000 00B8CH     MAINFRAC_TEXT          CODE
+ 0021:0000 0246EH     WINDOS_TEXT            CODE
+ 0022:0000 0034CH     wgeneral_TEXT          CODE
+ 0023:0000 00E2AH     MATHTOOL_TEXT          CODE
+ 0024:0000 010F0H     DIALOG_TEXT            CODE
+ 0025:0000 01E3EH     DIALOG2_TEXT           CODE
+ 0026:0000 002E4H     SELECT_TEXT            CODE
+ 0027:0000 000BFH     CMDFILES5_DATA         FAR_DATA
+ 0028:0000 00143H     MISCRES5_DATA          FAR_DATA
+ 0029:0000 0008EH     FRACTALS5_DATA         FAR_DATA
+ 002A:0000 02610H     FRACTALP5_DATA         FAR_DATA
+ 002B:0000 000CEH     LORENZ5_DATA           FAR_DATA
+ 002C:0000 0018EH     PARSER5_DATA           FAR_DATA
+ 002D:0000 00044H     JB5_DATA               FAR_DATA
+ 002E:0000 00067H     LSYS5_DATA             FAR_DATA
+ 002F:0000 00032H     LOADFILE5_DATA         FAR_DATA
+ 0030:0000 02010H     DECODER5_DATA          FAR_DATA
+ 0031:0000 0026BH     LINE3D5_DATA           FAR_DATA
+ 0032:0000 001A2H     CALCFRAC5_DATA         FAR_DATA
+ 0033:0000 00D2CH     FAR_BSS                FAR_BSS
+ 0034:0000 00010H     NULL                   BEGDATA
+ 0034:0010 081AAH     _DATA                  DATA
+ 0034:81BC 00039H     _DATA2                 DATA
+ 0034:81F6 0000EH     CDATA                  DATA
+ 0034:8204 00000H     XIFB                   DATA
+ 0034:8204 00000H     XIF                    DATA
+ 0034:8204 00000H     XIFE                   DATA
+ 0034:8204 00000H     XIB                    DATA
+ 0034:8204 00010H     XI                     DATA
+ 0034:8214 00000H     XIE                    DATA
+ 0034:8214 00000H     XPB                    DATA
+ 0034:8214 00004H     XP                     DATA
+ 0034:8218 00000H     XPE                    DATA
+ 0034:8218 00000H     XCB                    DATA
+ 0034:8218 00000H     XC                     DATA
+ 0034:8218 00000H     XCE                    DATA
+ 0034:8218 00000H     XCFB                   DATA
+ 0034:8218 00000H     XCF                    DATA
+ 0034:8218 00000H     XCFE                   DATA
+ 0034:8218 0000CH     DBDATA                 DATA
+ 0034:8224 00002H     XIQC                   DATA
+ 0034:8226 007B8H     CONST                  CONST
+ 0034:89DE 00019H     HDR                    MSG
+ 0034:89F7 00361H     MSG                    MSG
+ 0034:8D58 00002H     PAD                    MSG
+ 0034:8D5A 00001H     EPAD                   MSG
+ 0034:8D60 00B86H     _BSS                   BSS
+ 0034:98E6 00000H     XOB                    BSS
+ 0034:98E6 00000H     XO                     BSS
+ 0034:98E6 00000H     XOE                    BSS
+ 0034:98F0 0257AH     c_common               BSS
+
+ Origin   Group
+ 0034:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0025:0000 About                   About
+ 0023:08D4 CoordBoxDlg             CoordBoxDlg
+ 0001:068A MainWndProc             MainWndProc
+ 0023:0DA0 MTWndProc               MTWndProc
+ 0024:0746 OpenDlg                 OpenDlg
+ 0021:132A PrintAbort              PrintAbort
+ 0021:12D6 PrintAbortDlg           PrintAbortDlg
+ 0021:0FA0 PrintDlg                PrintDlg
+ 0024:03F0 SaveAsDlg               SaveAsDlg
+ 0025:185C Select3D                Select3D
+ 0025:1AA2 Select3DPlanar          Select3DPlanar
+ 0025:1C70 Select3DSpherical       Select3DSpherical
+ 0025:12BC SelectCycle             SelectCycle
+ 0025:0E22 SelectDoodads           SelectDoodads
+ 0025:0536 SelectFracParams        SelectFracParams
+ 0025:03EE SelectFractal           SelectFractal
+ 0025:15B2 SelectFullScreen        SelectFullScreen
+ 0025:099A SelectImage             SelectImage
+ 0025:00BA Status                  Status
+ 0024:0000 StatusBoxProc           StatusBoxProc
+ 0023:065C ZoomBarDlg              ZoomBarDlg
+ 0023:05FC ZoomBarProc             ZoomBarProc
+ 0008:4FD0 ___ExportedStub         ___ExportedStub
+
+Program entry point at 0008:0011

@@ -1,0 +1,233 @@
+{FROM:	INTERNET:fractint@lists.xmission.com, INTERNET:fractint@lists.xmission.com
+TO:	"'fractint@lists.xmission.com'", INTERNET:fractint@lists.xmission.com
+DATE:	1/14/00 3:42 PM
+
+Re:	(fractint) GREGSMAN.PAR
+}
+ 
+NeedleSharp        { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=b
+  center-mag=3.14159/0.5/1.5 params=0/0/1/0/100/0 float=y maxiter=1023
+  colors=@gamma1.map 
+  }
+
+CosineCaves        { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=cos passes=b center-mag=0/0/0.3
+  params=0/0/0/1/100/0 float=y maxiter=1023 colors=@gamma1.map 
+  }
+
+Stalags            { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=cos passes=b center-mag=0/0/1.5
+  params=0/0/0/1/100/0 float=y maxiter=1023 colors=@gamma1.map 
+  }
+
+XMarksTheSpot      { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM3 function=sin/sinh passes=t
+  center-mag=0/0/2.2 params=0/0/1/0/100/0 float=y maxiter=1023
+  colors=@default.map 
+  }
+
+HolesHolesHoles    { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM3 function=recip/ident corners=-2/2/-1.5/1.5
+  params=0/0/0/1/2/0 float=y
+  colors=000007<13>00z<15>zzz<15>0z0<15>000<15>0z0<15>zzz<15>z00<15>000<15\
+  >z00<15>zzz<15>z0z<15>000<15>z0z<14>zzz<14>00y<15>000000003 
+  }
+
+Bacteria           { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM3 function=cotanh/ident corners=-2/2/-1.5/1.5
+  params=0/0/0/1/2/0 float=y colors=@chroma.map 
+  }
+
+TheBodySnatchers   { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM3 function=recip/tan corners=-2/2/-1.5/1.5
+  params=0/0/0/1/2/0 float=y
+  colors=000007<13>00z<15>zzz<15>0z0<15>000<15>0z0<15>zzz<15>z00<15>000<15\
+  >z00<15>zzz<15>z0z<15>000<15>z0z<14>zzz<14>00y<15>000000003 
+  }
+
+Pteradactyl        { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM3 function=cosxx/tanh
+  center-mag=1.19904e-014/7.54952e-015/0.666667 params=0/0/0/1/2/0
+  float=y colors=@goodega.map 
+  }
+
+Sharps             { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=t
+  corners=-3.353384/3.353384/-2.515038/2.515038 params=0/0/0/1/2/0
+  float=y maxiter=1500 colors=@default.map 
+  }
+
+DeformedPropeller  { ; ©2000 Greg McClure
+                     ; ... or an ameba
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  corners=-3.316301/3.316301/-2.487226/2.487226 params=0/0/-0.5/1/2/0
+  float=y maxiter=2500 colors=@default.map 
+  }
+
+MoreTeeth          { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  corners=-1.764272/1.764272/-1.323204/1.323204 params=0/0/-1/0/2/0
+  float=y maxiter=2500 colors=@default.map 
+  }
+
+HalfBone           { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=cos
+  corners=-3.752144/3.752144/-2.814108/2.814108 params=0/0/1/0/2/0
+  float=y maxiter=2500 colors=@paintjet.map 
+  }
+
+Crabby             { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=cos
+  corners=-2.666667/2.666667/-2.5/1.5 params=0/0/0/1/4/0 float=y
+  maxiter=2500 colors=@chroma.map 
+  }
+
+BentForest         { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM1 function=sin passes=t
+  center-mag=4.44089e-016/3.88578e-014/0.503851 params=0/1/1/0/100000/0
+  float=y maxiter=100
+  colors=000007<13>00z<15>zzz<15>0z0<15>000<15>0z0<15>zzz<15>z00<15>000<15\
+  >z00<15>zzz<15>z0z<15>000<15>z0z<14>zzz<14>00y<15>000000003 
+  }
+
+Flowers            { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM3 function=cotanh/ident passes=t
+  corners=-2/2/-1.5/1.5 params=0/0/0/1/6/0 float=y
+  colors=CCC00NGCG<19>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
+  ssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq\
+  <9>CsY 
+  }
+
+FloralExplosion    { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  center-mag=+2.04465566172460300/+1.08238157000345400/242.7522
+  params=0/0/1/0/8/0 float=y maxiter=300
+  colors=000006<13>00y<15>zzy<15>0z0<15>000<15>0z03z2<14>zzy<15>z00<15>000\
+  <15>z00z32<14>zzy<15>z0y<15>000302<14>z0y<14>zzy<14>00x<15>000000002
+  }
+
+FireworksTwirlers  { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  center-mag=0.7533/0.317449/39.7435 params=0/0/0/1/8/0 float=y
+  maxiter=300 colors=@froth6.map 
+  }
+
+ColorCircles       { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsJuliaM1 function=sin
+  center-mag=-0.995305/-0.726514/1.71821 params=-1/1.25/1/0/64/0
+  float=y maxiter=1500
+  colors=000<15>z00<15>000<15>zV0<15>000<15>zz0<15>000<15>0z0<15>000<15>0z\
+  z<15>000<15>zzz<15>000<15>z0z<15>000<15>z00<14>000 
+  }
+
+Curtains           { ; ©2000 Greg McClure
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM3 function=sin/cosxx
+  center-mag=3.11502/1.40808/0.5681818 params=0/0/0/1/100/0 float=y
+  maxiter=100 colors=@goodega.map 
+  }
+
+FlowerBlownUp      { ; ©2000 Greg McClure
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  center-mag=+1.73634095796676300/+1.21011864406779700/905.7971
+  params=0/0/1/0/100/0 float=y maxiter=1023
+  colors=000<15>z00<15>100310<14>zV0<15>110330<14>zz0<15>010030<14>0z0<15>\
+  011033<14>0zz<15>001003<14>00z<14>004101303<14>z0z<15>111333<14>zzz<14>4\
+  44
+  }
+
+FractalGlue        { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  corners=-0.128/0.128/-0.096/0.096 params=0/0/1/0.2/2/0 float=y
+  maxiter=2500 colors=@default.map 
+  }
+
+FractalGlueCloseup { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin
+  corners=-0.0128/0.0128/-0.0096/0.0096 params=0/0/1/0.2/2/0 float=y
+  maxiter=500 colors=@default.map 
+  }
+
+YouNameIt          { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=t
+  center-mag=3.87104/0.731484/7.74311 params=0/0/1/0.2/8/0 float=y
+  maxiter=500 colors=@volcano.map 
+  }
+
+Digestion          { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=b corners=-4/4/-3/3
+  params=0/0/2/1/100000/0 float=y maxiter=1023 colors=@default.map 
+  }
+
+Volcanos           { ; ©2000 Greg McClure
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelS3 function=sin/cosxx center-mag=0/0/0.2
+  params=0/0/0/1/100/0 float=y maxiter=100 colors=@froth616.map 
+  }
+
+DecompX            { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelP1 function=conj center-mag=0/0/0.6
+  params=0/0/3/0/100/0 float=y decomp=256 colors=@blues.map 
+  }
+
+BlackLight         { ; ©2000 Greg McClure
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelP1 function=recip corners=-2/2/-1.5/1.5
+  params=0/0/-13/0/100/0 float=y decomp=256 colors=@blues.map 
+  }
+
+ItsRightHere       {
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=t
+  center-mag=+0.00000000000000000/+0.00000000000000000/100
+  params=0/0/0/1.1/100/0 float=y maxiter=1023 colors=@default.map 
+  }
+
+OrMaybeHere        {
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=sin passes=2
+  center-mag=-1.11022e-016/8.32667e-017/6.666667
+  params=0/0/0.75/0.75/100/0 float=y maxiter=1023
+  colors=000000200400600A00D00H00M00Q00<2>f00l00s00z00z00<3>z30z40z60<2>zD\
+  0zF0zI0zL0<2>zV0zV0<2>zX0zY0z_0z`0<2>zg0zj0zm0zp0zs0zv0zz0zz0<3>sz0oz0lz\
+  0hz0cz0_z0<2>Jz0Dz06z00z00z00y00w20u40s60oA0lD0hH0cM0_Q<2>0Jf0Dl06s00z00\
+  z00z20z40z60zA0zD0zH0zM0zQ0z<2>f0zl0zs0zz0zz0zz0zz2zz4zz6zzAzzDzzHzzMzzQ\
+  z<2>zfzzlzzszzzzzzz<3>sssooolllhhhccc___<2>JJJDDD666000000000222444666AA\
+  ADDDHHHMMMQQQ<2>ffflllssszzzzzz<3>zszzozzlzzhzzczz_z<2>zJzzDzz6zz0zz0z<3\
+  >s0zo0zl0zh0zc0z_0z<2>J0zD0z60z00z00z00y02w04u06s0Ao0Dl0Hh0Mc0Q_<2>0fJ0l\
+  D0s60z00z00z02z04z06z0Az0Dz0Hz0Mz0Qz0<2>fz0lz0sz0zz0<4>zv0zu0zs0<2>zl0zj\
+  0zg0zd0<2>zW0<3>zT0zS0zQ0zP0<2>zI0zF0zC0z90z60z30z00z00y00w00u00<2>j00f0\
+  0a00W00R00<3>000000
+  }
+
+FractalRainbow     {
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelM1 function=cosxx passes=3
+  center-mag=1.23949/-0.367666/10.41667 params=0/0/0.5/0.5/100/0
+  float=y maxiter=1023 colors=@default.map 
+  }

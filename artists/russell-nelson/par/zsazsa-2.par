@@ -1,0 +1,330 @@
+comment {
+  This Fractint parameter file is by Bradley Beacham, and is copyright (c)
+  March 1995.  ALL RIGHTS RESERVED.  You may not use it for commercial
+  purposes without my explicit prior consent.  I encourage you to copy and
+  distribute it, but only if it is unaltered.
+
+  Many of these parameters need to use the formulas in ZSAZSA.FRM;
+  if you don't have those formulas, they won't work.  Also, most require
+  Fractint version 19.0 or higher to work properly.
+
+  I welcome any comments.  Reach me at:
+
+    CIS: 74223,2745    Internet: 74223.2745@compuserve.com
+
+    U.S. Mail: Bradley Beacham
+               1343 S. Tyler St.
+               Salt Lake City, Utah  84105
+               U.S.A.
+
+  NOTE -- Most of these images REQUIRE floating point math.
+
+}
+
+Mask               { ; knitting that he didn't notice.  He
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=tan passes=2
+  corners=0.767975/-0.2539247/-0.6812664/0.6812664/-0.2539247/0.6812664
+  params=1.5/0/-0.21/0/0/0 float=y potential=256/200/0
+  invert=0.266/0.255319/0 
+  colors=000602<13>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>rqstttsrt<13>`\
+  LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>043022023<14>6Zk<5>OenSgnV\
+  hoYjp<6>ttt<15>6Zk<15>000301
+  }
+
+Swirlies           { ; of the truck and started honking his
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=sin passes=2
+  corners=0.060359839/0.4587059/0.38655279/0.68531233
+  params=1.5/0/-0.21/0/0/0 float=y inside=bof61
+  colors=000NhXLgXJeW<22>254243122000111223<20>QTbRVcSWeUXfVYf<4>dch<2>``h\
+  Z_hXZhVYgTXf<24>110<23>ePFgQGgRH<3>iVOjXQjWP<3>iSJhRHfQG<24>000<24>ZWK_X\
+  LaXL<4>maP<2>g`Oe_NcZN`YM_XL<21>553332221000011<23>HbUIdVKeV<4>VlZ<2>PiY
+  }
+
+Tragedy            { ; driver's attention.  "Pull over," yelled
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout1
+  function=ident passes=2
+  corners=-2.886144/0.6012632/2.347368/-2.302508/0.6012632/-2.302508
+  params=1.1/0/1.15/0/0/0 float=y inside=bof61
+  colors=000842421000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>\
+  003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<12>B63
+  }
+
+Glynnvert_1        { ; was driving and knitting when a
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=ident passes=2
+  corners=-1.234125/0.3044187/1.034959/-1.016433/0.3044187/-1.016433
+  params=1.75/0/-0.35/0/0/0 float=y inside=bof60 outside=real
+  invert=0.030272/-0.733998/0 
+  colors=000zyezQokRVeluzcPhxoTqmvOYwUOjQcznEzdTpgJzcAtbFzE6SVDwI9fC8`RBZD\
+  CR96dJ2SG4V74CC46539314010000110360930950JA0KK07J0GS0JK0NI0RS0Ie0UY0NX0d\
+  P0hk3mh8q_AzfBU_LYaJybKjxcP_dhTrk_vaUhxyVzzy_hzrwZc_zmYyzaXZXzzyzzWNxyMf\
+  WNPaCwRSSnFaVCTz6Xm8pi6Ze0Oz0hi0PS0Xe0SZ0Zb0ZH0GU0AD0SA0BB07B0C908904601\
+  30003207407B0II0JA0RN0FK0_b0pt0OM0am0xV0Zu0Wx0Ty0zi0ze3ay2YzAzdA`cOpvEzt\
+  JgxblYN`yayznizUnri_zRZiyhiYjkdvywhwyuzpyzXzRqsxGam`ZXOyzYWzDthNXhDyy7hy\
+  4xq0xz0bx0dV0S_0Tb0Va1Kd0dh0GZ1SB1HN2H815D223100101343646C47AB7K68H67K8I\
+  gFMTJF`NKRSLqKHSQTzFEoX_mpOiUQuuWXe_ZdYyvXnOWxzxYgVkeyykwxwzlhzxzwpSVzzw\
+  yuUtyznwzuzZfdzXeyzv`zjph_TdLuwQqXoXhVXwTRvZbyUEtYXoVQsaWcECpQIvFIRFAgOM\
+  cECdAHZ77X9AH98747B278022343A73E95K98973HH7WH6S94YIDrGDZN9ia8PNGzV9zLBtZ\
+  ExSPnkSwJSzdCyNdjsYzjSszd`ajzZprzxzxozyTzzwzgizYwczmwfm
+  }
+
+Glynnvert_2        { ; policeman noticed that one of the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=ident passes=2
+  corners=-0.619038799/-0.655036958/0.185820149/-0.00597699524/-0.53993552\
+  5/0.0803490966 params=1.75/0/-0.35/0/0/0 float=y inside=bof60
+  outside=real invert=0.030272/-0.733998/0
+  colors=000B85<12>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15\
+  >zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033343764
+  }
+
+Here               { ; turned on his flashing lights, but the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=mandel passes=b
+  corners=-1.6240752202/-1.6239225034/0.00010177330957/-0.00010184909043/-\
+  1.6239225034/-0.00010184909043 params=0.3/0 float=y bailoutest=and
+  fillcolor=40 
+  colors=000Zq0<6>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70\
+  <14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>79557435403\
+  3077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<7>Vp0
+  }
+
+Succotash          { ; policeman pulled his car up to the side
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout1
+  function=tan passes=2
+  corners=0.871722357/0.852947481/1.3248482/0.98152056/1.02976068/1.114130\
+  5 params=2/0/0.53/0/0/0 float=y inside=bof60 decomp=64
+  colors=0000jN<13>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332333<14>zzz\
+  <15>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>0gg<15>000<15\
+  >0pQ0mP
+  }
+
+Solarmanite_3      { ; turned on his siren.  Finally the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=exp passes=2
+  corners=0.639718872/0.734000472/-0.068305688/-0.19401449/0.734000472/-0.\
+  19401449 params=3/0/-0.65/0/0/0 float=y outside=atan
+  colors=000`0Q<24>y01z00z00z00<125>zz0zz1zz3<28>zzxzzzxxz<28>33z00z00z<35\
+  >_0R
+  }
+
+Fibercation        { ; He would stick his arms through the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout2
+  function=ident/cos passes=2
+  corners=-0.4167309/0.8472691/0.54770284/1.4957028
+  params=1.5/0/-0.03/0/0/0 float=y inside=period outside=real
+  colors=000099<2>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>\
+  332333<14>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg\
+  <11>0BB
+  }
+
+Fire_Demon         { ; steering wheel, knitting with his hands
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout1
+  function=sinh passes=b
+  corners=-1.238884/-1.090084/0.099209926/-0.099190074/-1.090084/-0.099190\
+  074 params=1.5/0/-0.2/0/0/0 float=y inside=bof61
+  colors=000Z2n<17>uq8wt5xw3zz0yx1<5>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6\
+  >2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<3>t8Wv7Wv9W\
+  <23>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000AA\
+  C<2>J3SM0YN0_<6>Y0p
+  }
+
+Gumby_On_Acid      { ; policeman pulled up behind the truck and
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=julfn+zsqrd function=cabs passes=2
+  corners=-1.171494/0.3805056/0.1592354/1.323235 params=-0.74/1
+  float=y bailout=4 fillcolor=0 
+  colors=000z00<14>zvvzzzxvw<11>e5Oc0Kd1K<10>uFCvHCxIBzKAzMB<14>zzU<15>9C`\
+  ADaBEc<46>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<14>v12
+  }
+
+CharlesAtlasFlexes { ; soon became obsessed with knitting.
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=mandel(fn||fn) function=sqrt/sqr passes=2
+  corners=-1.2174292/-1.3394452/-0.081165217/0.081522783/-1.3394452/0.0815\
+  22783 params=0/0/0.01 float=y 
+  colors=000vNY<16>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<12\
+  >xu2<11>000AAC<2>J3SM0YN0_<5>W0mY0pZ2n<17>uq8wt5xw3zz0yx1<5>sg7qe9nd9<13\
+  >0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>SH\
+  S<4>eHXhGYjEY<3>t8Wv7Wv9W<5>vLX
+  }
+
+Ernest_Borgenine   { ; could knit and drive at the same time.
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=phoenixcplx passes=2
+  corners=-1.244775/1.249694/1.672578/-1.653382/1.249694/-1.653382
+  params=0.45/0/-0.32/0/0 float=y decomp=256
+  colors=ZNC<3>WLAVL9VK9VK9<10>OF4NE4ME4LD4KD4<2>JB3IB3HA3GA2G92<20>100000\
+  100<31>OF5OG5PG5PH5QH5<5>UK8VK8VL8VL9<3>YNAZOA_OB_OC<5>bREcSEdSFdTG<6>hW\
+  JhWJiXKiXLiYMjYMkZNkZOk_O<11>peVpeWpeWpfXqfY<2>rhZrh_si`siasjb<5>tletmft\
+  mgtnhunh<13>wurwuswvuwvvwvvwvwwuvwuvwtuwts<28>qf_qfZqeYqeXpdXpdW<5>naTna\
+  Sm`Sl`R<2>kZPkZOkYOjYO<9>eTIdTHdSGdSGcRGcRF<6>_OC cyclerange=0/255
+  }
+
+Uma_Thurman        { ; trucker.  "PULL OVER!" repeated the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout3
+  function=ident/recip passes=2
+  corners=1.1843912/1.3333704/0.10042691/-0.098212095/1.3333704/-0.0982120\
+  95 params=1.5/0/-0.2/0/0/0 float=y outside=atan
+  colors=0000An<4>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsmmsmmtllumm\
+  u<20>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCK\
+  DDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<27>0Cn
+  }
+
+Tribble_Canyon     { ; the policeman.  "What?" asked the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout3
+  function=sqrt/asin passes=2
+  corners=0.594241549/0.647877824/0.0358164421/-0.0356985915/0.647877824/-\
+  0.0356985915 params=1.5/0/-0.8/0/0/0 float=y
+  colors=000066033000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>\
+  332333<14>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<4>0DD0GG0JJ0MM0OO0RR<5>\
+  0gg<12>099
+  }
+
+Gift_Wrap          { ; and steering with his arms.  One day he
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=julfn+exp function=sqr passes=2
+  corners=-1.390338/0.8496621/0.2017362/1.881736 params=0/0 float=y
+  bailoutest=and outside=atan decomp=256 
+  colors=0005Es<6>6Ax79y99x<16>nCY<4>MRTK`aIkj<6>Alj8mk8lk8jk8ik8gk<16>kLO\
+  <6>41Jc6f<8>5xs<7>B03<12>D0ZE0aE2Z<7>8OA<13>lvi<2>kogklfkiejfdjdc<9>fDUr\
+  nCrqSsth<21>aB8<18>GjY<5>zog<2>N0T<23>H3p`_c<2>8qM<4>3Pq2Jx3Js<8>FOBGO6H\
+  Q6<12>ZwG`sJ
+  }
+
+Patches            { ; didn't even notice when the policeman
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=glynnout3
+  function=sqrt/asin passes=2
+  corners=0.9006184/0.69250965/-0.13743565/0.14004268/0.69250965/0.1400426\
+  8 params=1.5/0/-0.8/0/0/0 float=y 
+  colors=000YICrGCZN8ia7PNFzV8zLAtZDxSOnkRwJRzdByNcjsXzjRszc`aizZorzwzxnzy\
+  SzzvzghzYvczlwflzydzQnkRUeltzcOhxnTqlvOXwUNjQbznDzdSpgIzc9tbEzE5SVCwI8fC\
+  7`RAZDBR95dJ1SG3V73CC36529304000000100350920940J90KJ07I0GR0JJ0NH0RR0Id0U\
+  X0NW0dO0hj3mg8qZAzeBUZLY`JyaKjwcPZdhSrkZvaThxxVzyy_gzrvZcZzmXyz`XZWzzxzz\
+  VNxxMfVNP`CwQSSmFaUCTy6Xl8ph6Zd0Oy0hh0PR0Xd0SY0Za0ZG0GT0AC0S90BA07A0C808\
+  80450120003207407B0II0JA0RN0FK0_b0pt0OM0am0xV0Zu0Wx0Ty0zi0ze2ay1Yz9zd9`c\
+  NpvDztIgxalYM`y`yzmizTnrh_zQZixhiXjkcvyvhwxuzoyzWzRpsxFam_ZXNyzXWzCthMXh\
+  Cyy6hy3xq0xz0bx0dV0S_0Tb0Va0Kd0dh0GZ0SB0HN1H805D123000001243546B479B7J68\
+  G67J8IfFMSJF_NKQSLpKHRQTyFEnX_lpOhUQtuWWe_YdYxvXmOWwzxXgVjeyxkwwwzkhzwzw\
+  oSVyzwxuUsyzmwztzZedzWeyyv`yjpg_TcLuvQqWoXgVXvTRuZbxUEsYXnVQraWbECoQIuFI\
+  QFAfOMbECcAHY77W9AG98647A277021342A72E94K97972HH6WH5S93
+  }
+
+Maculated_2        { ; truck driver was so intent on his
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=julfn+zsqrd function=cabs passes=2
+  corners=-0.02620103035/-0.07716133669/0.8789173221/0.9410239125/-0.07435\
+  790401/0.943126487 params=-0.14/1 float=y bailout=50 bailoutest=real
+  outside=real logmap=19 
+  colors=000Q0d<3>W0mY0pZ2n<15>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>\
+  `0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<\
+  10>77l88lAAl<23>wwbzzazyazwa<27>ppqooqoornnrnnsmmsmmtllummu<20>000<16>P0\
+  b
+  }
+
+Golf_Pants         { ; truck's lights wasn't working.  The
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=log/flip/conj passes=2
+  corners=1.227115/-1.149212/0.5019096/-1.280335
+  params=0.05/-0.02/0/0/0/0 float=y inside=bof61
+  colors=14Jvv`zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>ApW8tU8qU<1\
+  4>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<15>0Tz<14>06M47K<12>rs_
+  }
+
+The_Planet_Mongo   { ; horn.  This finally got the truck
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout07 function=recip/flip/conj passes=1
+  corners=-2.713491/2.757635/-2.1322/1.971144
+  params=0.05/-0.02/0/0/0/0 float=y inside=bof61 outside=atan
+  colors=000rZ0<6>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<\
+  15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<6>sb0
+  }
+
+EarLobeOfHurricane { ; After a while, he discovered that he
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout09 function=sin/conj passes=2
+  corners=-0.13762099/0.15524459/-0.11689681/0.10277224
+  params=1.035/-0.1/0/0/0/0 float=y inside=zmag outside=atan
+  colors=000xvbzwbwtb<8>SHS<4>eHXhGYjEY<4>v7W<24>yubywbxu`<8>peNocLncL<10>\
+  bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000<3>G5NN0_G5NP0aG5N<4>V3iZ2n_5l<\
+  14>rkDtnAuq8wt5xw3zz0<6>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz\
+  <5>PmnMklJjjGhhDgf<2>8c_<23>vub
+  }
+
+Woof_1             { ; policeman.  "No sir," the truck driver
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout12 function=flip/conj passes=1
+  corners=-1.017465/1.176142/-0.8526322/0.7925726
+  params=0.3/0.8/0.06/-0.15/0/0 float=y inside=bof60
+  colors=333cKKzR0<6>OOO<6>SSSTTTTTTTTT<46>yyyzzzyyy<45>UUUTTTTTTTTT<5>PPP\
+  OOOOOOOOO<2>LLLLLLKKKKKKKKKJJJ<26>777777777777777<40>333333444<25>999AAA\
+  AAABBBBBB<10>GGGGGGHHHIII<2>JJJ
+  }
+
+Woof_2             { ; answered, "it's a cardigan."
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm
+  formulaname=inandout12 function=flip/conj passes=1
+  corners=-1.017465/1.176142/-0.8526322/0.7925726
+  params=0.3/0.8/0.06/-0.15/0/0 float=y inside=bof60
+  invert=0.274201/0.0793386/-0.0300298 
+  colors=0001NN1Rd2VV<7>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>0\
+  00<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8\
+  VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<2>1JJ
+  }
+
+Bouquet            { ; A truck driver learned how to knit and
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1900 type=formula formulafile=zsazsa.frm formulaname=limerick
+  function=sqr/asin passes=2
+  corners=1.5238289/1.3076883/0.32724015/1.0399886/1.1038991/0.8871466
+  params=0/0/0/0/0/0 float=y inside=bof61 decomp=128
+  colors=000dHb<14>yw2zz0yw1<3>ul5tj6sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6\
+  >2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<3>t8Wv7Wv9W\
+  <23>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000AA\
+  C<2>J3SM0YN0_<5>W0mY0pZ2n<3>cEd
+  }
+

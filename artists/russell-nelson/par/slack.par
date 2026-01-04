@@ -1,0 +1,242 @@
+comment {
+
+  *** SLACK.PAR ***
+
+  This FractInt parameter file is by Bradley Beacham, (c) 1993.
+
+  Consider it FREEWARE; I encourage you to copy and distribute it, but
+  only if it is unaltered.
+
+  FLOATING POINT vs INTEGER MATH:  If your PC doesn't have a math
+  coprocessor, you will probably find Fractint's integer math to be faster.
+  On my 486 DX, I find that floating point math is almost always faster, so
+  that is the default mode on most of these parameters.  Usually you can
+  switch to integer math, if you wish, with no significant change to the
+  image.  Just hit the 'F' key after loading the parameter.
+
+  For a few of these parameters, though, the choice *does* make a difference
+  in the final image.  For these cases, I have put either (F) or (I) in the
+  first comment line to show you the suggested math mode to use.
+  
+  I welcome any comments.  I'm B.BEACHAM on GEnie, and my postal address is:
+     
+        Bradley Beacham
+        1343 S. Tyler
+        Salt Lake City, Utah  84105
+        U.S.A.
+  
+}
+
+
+Provocative_Wiggle { ; Banned in Utah                                     (F)
+  reset=1820 type=halley
+  corners=0.0004115947/1.496539/0.0047634081/0.97724621
+  params=4/2/0.31830000000000003 float=y decomp=128 periodicity=0
+  colors=000xo`zpa<16>haQg`Pf_OeZNdYNcXM<7>VQG000<30>ppp<13>VVVTTTRRRPPPNN\
+  N<5>EEECCCAAA888777<3>000PFF<27>vcDwdDxeDzfCyfCxeC<29>PFF0A0<15>Zc0<5>LS\
+  0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<28>wn_
+  }
+
+Third_Nostril      { ; Opening soon
+  reset=1820 type=frothybasin
+  corners=-0.2034293/2.556571/0.06094324/2.130943 params=6 float=y
+  invert=0.057936/0/0
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<1\
+  2>000
+  }
+
+Fish_Trap          { ; Pretty pretty
+  reset=1820 type=tetrate passes=t
+  corners=0.489091572/1.06960001/2.76312836/2.1154569/1.00895691/2.0699745\
+  8 params=6/3 float=y inside=epsiloncross outside=mult
+  colors=000gMY<8>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P\
+  11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<\
+  23>wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<5>fK`
+  }
+
+InnerEarInfection  { ; With handy wiring layout                           (I)
+  reset=1820 type=tim's_error function=flip passes=t
+  corners=-1.463318/1.71929/-1.175959/1.138665
+  params=0.31830979999999998/0.31830979999999998 inside=epsiloncross
+  potential=256/220/0 invert=0.385771/0.135952/-0.157756
+  colors=00006G0DX<3>P0R<4>d5Ah66j55<8>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz\
+  <52>z_AyZAwX9<8>gH3eF2eF2<23>w30x30y20y20z10z10<69>311211000
+  cyclerange=0/255
+  }
+
+Porgie_Tirebiter   { ; No Mudhead in this one
+  reset=1820 type=lambda(fn||fn) function=sin/sqr passes=t
+  corners=-1.377136/1.378204/-1.032791/1.032852
+  params=1/0.10000000000000001/1 float=y maxiter=500
+  inside=epsiloncross logmap=yes biomorph=0
+  colors=000cEdN3cfK`gMYhPW000kVR<7>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>L\
+  CCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwb\
+  zzazyazwa<31>nnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<2>bBg
+  }
+
+Quux               { ; Say what?                                          (F)
+  reset=1820 type=mandel(fn||fn) function=tan/sin passes=t
+  corners=-4.20580918/-3.62043379/-0.23377671/0.0956602947/-4.1532038/-0.3\
+  03917213 params=1/2/10 float=y bailout=500 inside=bof60 outside=mult
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<12>000
+  }
+
+Fire_Walk_With_Me  { ; Jeez, this sucker's kinda creepy-like...
+  reset=1820 type=julia(fn||fn) function=sinh/sqr passes=t
+  corners=-0.8972016/0.5305104/0.951808/-0.951808/0.5305104/-0.951808
+  params=0.10000000000000001/0/0.90000000000000002 float=y
+  inside=epsiloncross outside=real invert=0.237952/-0.183346/0
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<12>000
+  }
+
+Moth_Eggs          { ; Amphibious moth eggs, yet...                       (F)
+  reset=1820 type=sqr(1/fn) function=cosxx passes=t
+  corners=1.12033081/1.1690979/1.51419067/1.55075073 float=y
+  bailout=20 inside=epsiloncross outside=real biomorph=0
+  colors=000RRR<15>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0\
+  A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF222<29>ppp<14>TTT
+  }
+
+Rhett_Glare        { ; The bum's bursting in air
+  reset=1820 type=mandphoenix passes=t
+  corners=0.128731608/0.137040675/0.980883539/0.980417609/0.131944895/0.97\
+  6597369 params=0/0/-4 float=y inside=bof61
+  colors=000Vhe<29>xyb<7>1Uf000<14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03\
+  <8>O0b000<15>000110111221221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1\
+  Uf2Uf<27>Uhe
+  }
+
+Isle_Of_Lucy       { ; I'm SO sorry...
+  reset=1820 type=newtbasin passes=t
+  corners=-1.0774395/-0.41939152/0.52383634/1.0173723 params=4/1
+  float=y inside=epsiloncross decomp=256
+  colors=IIIGGGEEE<2>88EzXf44E22E00F<24>00x00z01z<28>Puz<31>1BR09P19Q<13>M\
+  MiONkQPk<13>wwyzzzzwx<14>z0Nv0M<18>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>y\
+  yvzzzyyywwwuuu000sss<17>KKK cyclerange=0/255
+  }
+
+Landscape          { ; Through a Glass Brick.  Color cycle this one!  Now!
+  reset=1820 type=popcornjul passes=t
+  corners=-14.42308/14.42308/-10.57692/10.57692 params=5 float=y
+  decomp=256
+  colors=000<30>ppp<14>TTTRRRPPPNNNMMM<12>000PFF<27>vcDwdDxeDzfCyfCxeC<29>\
+  PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF
+  cyclerange=0/255
+  }
+
+Argyle             { ; Explicit Socks
+  reset=1820 type=popcornjul
+  corners=-1.452829/1.452829/0.07768247/-0.07768247/-0.3305221/-1.3854736
+  params=2 float=y decomp=256
+  colors=000221<7>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000\
+  <14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<17>111
+  }
+
+Jewel_Of_Denial    { ; No, REALLY, my apologies...
+  reset=1820 type=popcornjul passes=t
+  corners=-12.86539/12.86539/-9.434613/9.434613 params=3.5 float=y
+  invert=3.52564/0/0 decomp=256
+  colors=00080D<13>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6\
+  >LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>w\
+  wbzzazyazwa<31>nnsmmsmmtllummu<20>000<4>70B cyclerange=0/255
+  }
+
+Pizza_Dimension    { ; King me
+  reset=1820 type=popcornjul passes=t
+  corners=-3.3979072/-3.7318481/3.54197666/3.58862233/-3.5410247/3.7285593\
+  7 params=4 float=y potential=256/400/0 invert=3.52564/0/0
+  colors=0000I0<8>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB\
+  0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>7955\
+  74354033077<13>4zz<15>zz0<15>z1z<15>000<5>0G0
+  }
+
+Dingle_Balls       { ; On an alien's dashboard
+  reset=1820 type=spider passes=t
+  corners=-1.866296/0.2884813/1.43553/-1.437506/0.2884813/-1.437506
+  params=-0.36299999999999999 float=y maxiter=300 bailout=50
+  inside=bof60 outside=real logmap=-4 invert=0.437963/-0.977546/0
+  colors=000KKK<11>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0\
+  A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF222<29>ppp<18>MMM
+  }
+
+Tumor              { ; Malignant fractal
+  reset=1820 type=julzzpwr
+  corners=-0.5919031442/-0.5963793343/0.3053004675/0.3180326453/-0.5996260\
+  179/0.3155976325 params=0/0/2 float=y potential=256/12000/0
+  colors=000A70<2>000<14>`0sc0wd3w<13>xvyzzzywz<14>c0w<15>000<14>`00c00d44\
+  <13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<15>000<15>pZ0<14>yxvzzz\
+  zyw<13>q`4pZ0mX0<10>E90
+  }
+
+Delicate_Arch      { ; No, not THE Delicate Arch..
+  reset=1820 type=complexnewton passes=t
+  corners=-4.4699211/-3.7256017/0.49851843/-0.49390738/-3.7256017/-0.49390\
+  738 params=3.3333333333333335/0/1 float=y bailout=50 outside=real
+  invert=0.279752/-3.27552/0 periodicity=0
+  colors=000708304000<15>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>z\
+  X0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>0\
+  00<15>p0w<12>A0B
+  }
+
+Spray              { ; Lettuce spray?
+  reset=1820 type=complexnewton passes=t
+  corners=-3.63296203/-3.5366545/-0.382294305/-0.622230983/-3.48312171/-0.\
+  582081392 params=3.3333333333333335/0/1 float=y bailout=50
+  inside=epsiloncross outside=real periodicity=0
+  colors=257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6>Lf0<7\
+  >000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<7>000<7>zzz<7>000<7>zWW<7\
+  >000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3jZ<7>000
+  cyclerange=0/255
+  }
+
+Tierra_Del_Fuego   { ; Somewhere near the far-flung Isles of Langerhans
+  reset=1820 type=mandelfn function=sinh passes=t
+  corners=-0.62343738/-1.1387654/-0.34449801/0.34260599/-1.1387654/0.34260\
+  599 float=y inside=epsiloncross potential=256/200/0 invert=1/0/0
+  colors=000Oed<2>1Uf000<14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03<8>O0b0\
+  00<15>000110111221221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<5\
+  8>xyb<2>bmd00Z
+  }
+
+Brooch             { ; With Star Sapphires
+  reset=1820 type=julfn+zsqrd function=sqr
+  corners=-0.5470211/0.5470211/0.7293614/-0.7293614/0.5470211/-0.7293614
+  params=0.1885/-0.10050000000000001 float=y inside=bof60
+  colors=00000K<7>00c<15>zzz<15>00c<14>003000000<34>teBufCwgCyiDyiD<8>zqDz\
+  qDypD<77>050<13>0c0<15>zzz<15>0c0<14>030000002<5>00H
+  }
+
+Shiva_VS_Megalon   { ; I have NO idea...
+  reset=1820 type=manfn+exp function=recip passes=t
+  corners=-2.3914048/-3.1076331/0.041952665/0.99692384/-3.1076331/0.996923\
+  84 params=3.1415926000000001 float=y bailout=20 inside=epsiloncross
+  outside=real invert=0.281536/-2.28985/0 biomorph=0
+  colors=000vl0<11>i70<15>000<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>35403307\
+  7<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<14>YQ0`S0aU0<1\
+  4>zz0<2>wp0
+  }
+
+Australia          { ; Throw another fractal on the barbie
+  reset=1820 type=sierpinski passes=t
+  corners=26.17068/0.5466932/-22.3765/23.17726/0.5466932/23.17726
+  float=y bailout=50 inside=epsiloncross potential=256/4000/0
+  invert=0.230533/0.5/0.4
+  colors=000K32K21L00<9>900700600400300100000<20>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr\
+  5Cq4Cp4Co3B<2>l5Ek5Fj5Gi5Hh6Ig6J<5>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<29>zqPzs\
+  OzsP<29>zyxzzzyzz<45>FzgDzfDyf<43>K53
+  }
+
+Nausea             { ; Uuurrrppp!
+  reset=1820 type=quatjul
+  corners=-1.29098808/-1.3150815/-0.014823006/-0.143192052/-1.23804457/-0.\
+  0854143512 params=-0.745/0/0.10000000000000001/0.01 float=y
+  bailout=100 inside=bof60 outside=summ periodicity=0
+  colors=000Ja0<6>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874777<6\
+  >zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7\
+  >3jZ<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6\
+  >Lf0
+  }
+

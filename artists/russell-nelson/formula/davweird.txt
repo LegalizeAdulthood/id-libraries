@@ -1,0 +1,101 @@
+Comment = {
+
+I think Newton's Secant method of solving non-linear equations is a very useful
+method for creating Fractal Patterns, and I would like to share this with you,
+my Fractint friends.
+
+The basic iterative equation to solve f{z(n)} = 0 is:
+z(n+1) = z(n) - f{z(n)}/f'{z(n)}, and I'm sure you know that f' is the
+derivative  - the slope of the curve f{z(n)} at z(n).
+
+I understand this by visualising a set of axes - f{z(n)} is the `y' axis, and
+z the `x' axis. I think of the curve  starting in the bottom left quadrant,
+moving to the bottom right, and then zooming up into the top right quadrant.
+The solution f{z(n)} = 0 is the value of z where the curve crosses the z axis.
+Put z(0), the first guess at the solution to the right of the crossing point.
+Draw a line vertically upwards from z(0) to meet the curve f{z(n)} at f{z(0)},
+and draw the tangent there.   Slide down the tangent until you hit the z axis
+at z(1), and you've completed the first iteration, which is hopefully closer to
+the solution than your first guess.  Now go up from z(1), hit the curve and
+slide down the tangent f'{z(1)}to the z axis at z(2), which should be still
+nearer the solution.  Repeat until f{z(n)} is as close to zero as desired, i.e.
+until f{z(n)} <= Tolerance, say 0.0001, and our equation is solved.  And
+already we have one thing we can change to change the picture - the Tolerance-
+the greater the tolerance the more iterations.
+
+The next thing we can do is to change the slope - say by adding P1, so the
+slope is f'{z(n)}+ P1, and this will change the number f iterations to achieve
+a solution.  The equation is now:  z(n+1) = z(n) - f{z(n)}/[f'{z(n)}+ P1].
+
+The third thing we can do it to compute  the derivative f'{z(n)}, and one way
+of doing this is to use f'{z(n)}= [f{z(n + h)} - f{z(n)}]/h, where he is
+usually quite small like 0.0001.  So we create the slope from its secant - and
+this is called Newton's Secant Method.  By changing the value of h we can
+change the  picture - now we have three ways of changing the picture - vary P1,
+h or the tolerance.
+
+The slope can also be calculated using:  f'{z(n)}= [f{z(n)} - f{z(n - h)}]/h.
+Both these methods suffer an error of he order of h times the second derivative
+f''{z(n)}, which can be quite large - but it doesn't really matter for creating
+pictures.
+
+If we add the two equations and divide by two we get
+f'{z(n)}= [f{z(n + h)} - f{z(n - h)}]/2h, which is much more accurate having an
+error of the order of h squared .times the third derivative f'''{z(n)} - and of
+course if you're dealing with a cubic, this is zero!!!  But of course varying h
+using this method doesn't change the slope and therefore the picture much - so
+it's just quite interesting!!!  The formulae in davweird.frm for the cubic
+fz = (z-1)*(z - c + 0.5)*(z + c + 0.5), having the slope
+fdashz = 3*z*z - c*c - 0.75, using the analytical and the secant methods are:
+
+ANALYTICAL:}
+
+newdavidsmask(XAXIS) = {
+c = pixel,
+z = pixel:
+fz = (z-1)*(z - c + 0.5)*(z + c + 0.5);
+fdashz = 3*z*z - c*c - 0.75;
+z = z - fz/(fdashz - P1);
+0.000001 <= |fz|
+}
+comment={newdavidsmasksec is computed using the Newton's secant version of
+newdavidsmask; the derivative is computed from the fundamental definition
+{f(z+h)-f(z)}/h.
+
+
+SECANT:}
+
+newdavidsmasksec(XAXIS) = {
+h =  0.00001,
+c = pixel,
+z = pixel:
+zplh = z + h;
+fz = (z-1)*(z - c + 0.5)*(z + c + 0.5);
+fzplh = (zplh-1)*(zplh - c + 0.5)*(zplh + c + 0.5);
+fdashz = (fzplh - fz)/h;
+z = z - fz/(fdashz - P1);
+0.000001 <= |fz|
+}
+
+comment={
+This cubic is an extremely rich source of pictures including some in
+davweird.par, which have also been published in:
+
+1) Walter, D.J.,`Computer Art Representing the Behaviour of the Newton-Raphson
+method'. Computers and Graphics, Vol 17, No 4 pp. 487-488, 1993.
+
+2) Walter, D.J., `Systemised Serendipity for Producing Computer Art'. Computers
+and Graphics, Vol 17, No 6, pp 699-700, 1993.
+
+The astonishingly accurate Richardson's method for f'(z) is used in:
+
+3) Walter, D.J.,`Computer Art from Newton's, Secant and Richardson's Methods'
+Computers and Graphics, Vol 18 No 1, pp127-131, 1994.
+
+Your homework is to make the Winged Temple look like it `should' as published
+in (1).  I don't have the original here in Hong Kong - and using my saved .PAR
+file gets a different picture.  If you use any of these ideas or pictures in
+davweird.* I WOULD like some credit or boodle - ENJOY! -
+
+David Walter [100013,2775] Hong Kong 1 Janary 1996 ole.
+}

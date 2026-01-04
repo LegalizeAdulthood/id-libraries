@@ -1,0 +1,15 @@
+BILL13 (yaxis) {; Bill Rossi
+  z=pixel,pi=3.142857142857:
+    z=fn1(z)/fn2(z)-(fn3(z)*pi),
+    z=fn4((z)^pi),
+  |z| <= 4
+}
+
+Design60           { ; Bill Rossi
+  reset=1920 type=formula formulafile=fractint.frm formulaname=BILL13
+  function=sqr/sin/atanh/sqrt passes=b
+  center-mag=-4.44089e-016/2.498e-016/2.186586/1.6705
+  params=0/0/0/0/0/0 float=y potential=256/300/1
+  colors=000_IT`LV<4>aLVaQV<50>lxfzzz<52>`HVzzz<51>R0Jzzz<24>S2Kzzz<16>S2K\
+  zzz<20>S2Kzzz<19>S2KzzzS2K
+  }

@@ -1,0 +1,483 @@
+{FROM:	INTERNET:fractint@lists.xmission.com, INTERNET:fractint@lists.xmission.com
+TO:	"'fractint@lists.xmission.com'", INTERNET:fractint@lists.xmission.com
+DATE:	1/14/00 7:13 PM
+
+Re:	(fractint) GMANTEST.PAR
+}
+ 
+testmm1            { ; 10.7 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelm1 function=sqr corners=-2.5/1.5/-1.5/1.5
+  params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
+  }
+
+testmm2-1          { ; 11.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelm2 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmm2-2          { ; 11.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelm2 function=zero/sqr
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmm3-1          { ; 11.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelm3 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmm3-2          { ; 11.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelm3 function=zero/sqr
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testjm1            { ; 07.1 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliam1 function=sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjm2-1          { ; 07.8 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliam2 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjm2-2          { ; 07.7 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliam2 function=zero/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjm3-1          { ; 07.7 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliam3 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjm3-2          { ; 07.8 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliam3 function=zero/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testmp1-1          { ; 10.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp1 function=sqr corners=-2.5/1.5/-1.5/1.5
+  params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
+  }
+
+testmp1-2          { ; 10.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp1 function=ident corners=-2.5/1.5/-1.5/1.5
+  params=0/0/2/0/2/0 float=y maxiter=1023 symmetry=xaxis
+  }
+
+testmp2-1          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp2 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp2-2          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp2 function=zero/sqr
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp2-3          { ; 10.8 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp2 function=ident/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp2-4          { ; 10.9 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp2 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp3-1          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp3 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp3-2          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp3 function=zero/sqr
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp3-3          { ; 10.8 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp3 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp4-1          { ; 10.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp4 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp4-2          { ; 10.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp4 function=zero/sqr
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp4-3          { ; 10.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp4 function=ident/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmp4-4          { ; 10.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelp4 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testjp1-1          { ; 06.9 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap1 function=sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp1-2          { ; 06.8 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap1 function=ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp2-1          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap2 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp2-2          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap2 function=zero/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp2-3          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap2 function=ident/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp2-4          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap2 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp3-1          { ; 07.6 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap3 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp3-2          { ; 07.6 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap3 function=zero/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp3-3          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap3 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp4-1          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap4 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp4-2          { ; 07.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap4 function=zero/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp4-3          { ; 07.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap4 function=ident/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjp4-4          { ; 07.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliap4 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testms1            { ; 10.6 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels1 function=ident corners=-2.5/1.5/-1.5/1.5
+  params=0/0/1/0/2/0 float=y maxiter=1023 symmetry=xaxis
+  }
+
+testms2-1          { ; 11.1 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels2 function=ident/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms2-2          { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels2 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms3-1          { ; 11.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels3 function=ident/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms3-2          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels3 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms4-1          { ; 11.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels4 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms4-2          { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels4 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms5-1          { ; 11.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels5 function=sqr/zero
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testms5-2          { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandels5 function=zero/ident
+  corners=-2.5/1.5/-1.5/1.5 params=0/0/0/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testjs1            { ; 07.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias1 function=ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs2-1          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias2 function=ident/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs2-2          { ; 07.3 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias2 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs3-1          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias3 function=ident/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs3-2          { ; 07.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias3 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs4-1          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias4 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs4-2          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias4 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs5-1          { ; 07.6 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias5 function=sqr/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjs5-2          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjulias5 function=zero/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/0/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testmf1-1          { ; 11.1 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelf1 function=ident/sqr
+  center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmf1-2          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelf1 function=sqr/ident
+  center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testjf1-1          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliaf1 function=ident/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjf1-2          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliaf1 function=sqr/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testmf2-1          { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelf2 function=ident/sqr
+  center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmf2-2          { ; 10.9 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelf2 function=sqr/ident
+  center-mag=-0.5/0/0.6666667 params=0/0/1/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testmf2-3          { ; 17.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsmandelf2 function=exp/log
+  center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testjf2-1          { ; 07.5 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliaf2 function=ident/sqr corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjf2-2          { ; 07.4 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliaf2 function=sqr/ident corners=-2/2/-1.5/1.5
+  params=0.3/0.6/1/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testjf2-3          { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliaf2 function=exp/log corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testme2            { ; 16.4 s
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelE2 function=log center-mag=-0.5/0/0.6666667
+  params=0/0/2/0/2/0 float=y maxiter=1023 symmetry=xaxis
+  }
+
+testme3-1          { ; 17.0 s
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelE3 function=log/zero
+  center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testme3-2          { ; 17.0 s
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelE3 function=zero/log
+  center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testme4            { ; 17.0 s
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelE4 function=zero/log
+  center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testme5            { ; 17.0 s
+  reset=1960 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelE5 function=zero/log
+  center-mag=-0.5/0/0.6666667 params=0/0/2/0/2/0 float=y maxiter=1023
+  symmetry=xaxis
+  }
+
+testje2            { ; 11.0 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliae2 function=log corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testje3-1          { ; 11.1 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliae3 function=log/zero corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testje3-2          { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliae3 function=zero/log corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testje4            { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliae4 function=zero/log corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+
+testje5            { ; 11.2 s
+  reset=1920 type=formula formulafile=gregsman.frm
+  formulaname=gregsjuliae5 function=zero/log corners=-2/2/-1.5/1.5
+  params=0.3/0.6/2/0/2/0 float=y maxiter=1023 symmetry=origin
+  }
+

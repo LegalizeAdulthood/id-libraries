@@ -1,0 +1,3892 @@
+Subj:  Modified Lesfrm13...		Section: Fractal Sources
+  To:  Brian E. Jones, 102702,2213	01 July 1996 01:11:27
+From:  Les St Clair, 101461,2032	#143586
+
+Hi Brian,
+
+>>Here are 3 of my favorite pars from the modification I did on your
+"Lesfrm13" formula.
+You're good at this<g>
+I look forward to the .par file.
+
+Just one thing, the extra opening brace in the second line of each .par
+screwed up Fractint for me, I think they should be removed, just leaving the
+semi-colon.
+
+Meanwhile, here's one back at ya!
+This one would have have looked good in my "Hypnotic.par" which I uploaded
+over the weekend.
+z
+cheers, Les
+
+LS-BJ-LS_01        { ; Based on Brian E.Jones BJ-Lesfrm13-02 formula t=04m22s
+                     ; by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486DX2-66 and video mode SF5 640x480 256c
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-lesfrm13-002 function=asin/log/ident/cosh
+  center-mag=0.934868/-0.0532872/0.9617486 params=3.3/0.8/-3.2/0.8
+  float=y maxiter=1000 inside=zmag outside=atan
+  colors=0E_<4>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>A\
+  pW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<12>1EI14J1AJ17J14J<15>zpg<15>z_0<15\
+  >0Tz<8>0Fa cyclerange=0/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Refractions in Fractint?		Section: Fractal Sources
+  To:  All				03 July 1996 20:19:01
+From:  Lee Skinner, 75450,3631		#143726
+
+   Here's a little beauty that almost looks like a raytraced image:
+
+mflsqb6            { ; Blue Balls
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=+0.37705723686064570/-0.62906718602473410/18.08753/1/-90
+  params=0/0/0.15 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000I0K<2>I4P00000700F00N<5>DBgFDkHFoKHsKJs<5>KXoKZnLamLdm<2>Lmm<1\
+  3>dmnfmofmo<208>zzz
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  no builtin's?			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	03 July 1996 23:28:06
+From:  Hans-Joachim Weber, 100424,35	#143749
+
+Well,
+someone asked, 
+"Why don't the fractalers use the builtin-formulas?".
+Sylvie did and I do too.
+Enjoy -- Jo --
+
+
+jowe_fn1           { ; 0:10:21.22     DX4-100                  Jo Weber, 1996  
+                     ; broken piece
+  reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
+  corners=-1.242294/-0.74745662/0.78821842/2.5569385/-1.9131382/1.6826773
+  params=0.3/0.75/1/-2 float=y maxiter=100 inside=bof60 invert=1/0/0
+  colors=0000Q5<21>021000110<34>sk0<2>xoEzqJypF<2>tl0<34>220000100<34>s00<\
+  2>x99zDDyAA<2>t00<34>200010020<39>0i7<4>0tO<3>0nG0lD0k9<18>0R5
+  }
+
+jowe_fn2           { ; 0:04:31.61     DX4-100                  Jo Weber, 1996  
+                     ; frightened at the blue hole
+  reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
+  corners=-10.48328/5.036716/-6.305632/5.334368 params=0.3/0.75/1/-2
+  float=y maxiter=100 inside=bof60 potential=255/255/0 invert=1/0/0
+  colors=000110<3>HD3KG4OJ4RL5VO6YR6`T7dW8fY8i_9<2>peArfAthBviBwjBxkCylC<3\
+  >zlCzlCylCykC<2>uhBsgBqeAodAmb9<3>bU7_S7WP6<2>MH4IE3EB2A82751110000<7>CC\
+  6DD6EE7FF7HH8<6>NNBNNBOOCOOCOOC<5>OOCOOCNNBMMB<8>EE7DD6BB5<5>331110110<7\
+  >DD6EE7FF7GG8HH8<5>MMBNNBOOCOOCOOCOOC<5>OOCNNBNNBMMBLLA<3>II9HH8FF7<2>CC\
+  6AA5994773663<3>000<7>BN5CP6ES7FU7GX8<3>KdALeAMgBMhBNiBNjBOkC<5>OlCOlCOk\
+  C<2>MhBLfALeAKcAJa9<2>GW8ET7DR6CO6AL5<4>371241001002<5>99PBBSCCWDDZFFa<2\
+  >IIjJJlKKoLLqMMs<4>OOyOOzOOzPPzOOz<3>NNwNNvMMtMMs<2>JJlIIjHHgGGd<2>CCWBB\
+  S99P88L66H55D33A226210
+  }
+
+jowe_fn3           { ; 0:05:58.00     DX4-100                  Jo Weber, 1996  
+                     ; shelter in an icy world
+  reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
+  corners=-11.65284/-0.01283861/9.155738/-6.364262/-0.01283861/-6.364262
+  params=0.3/0.75/1/-2 float=y maxiter=100 bailoutest=and inside=bof60
+  invert=1/0/0
+  colors=000Z0Z<5>E0FB0C708304000<15>zzz<14>444<14>HNeIPhIOe<13>800400000<\
+  15>zX0<15>000<15>ut0<15>000GA4<15>0fI<14>103<13>I9hKAkJAh<13>000<15>g01<\
+  13>B03804402<15>u0u<5>a0a
+  }
+
+jowe_fn4           { ; 0:09:02.50     DX4-100                  Jo Weber, 1996  
+                     ; cool
+  reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
+  corners=-0.71945785/-0.99361522/0.64733295/2.9228708/-1.9104127/2.235272\
+  7 params=0.3/0.75/1/-2 float=y maxiter=100 bailoutest=and
+  inside=bof60 invert=1/0/0
+  colors=0008HE<3>756756<12>GDeGDgHEjIFlHEj<14>756756<11>biUelWhoYjr_mu`<1\
+  5>756756<13>M7bO7dO8f<2>M7_L7YJ6W<9>858756756<15>dlh<12>DDDBAA9787567568\
+  67<10>PMNQNOSOPTPQUQR<14>967756856<15>`GM<7>NAEC67<14>zUO<9>SFDPDCMBAJ99\
+  F88C67856756<13>AkYAn_Bp`<4>9bS9_Q9XO9UM8QK8NI8KG
+  }
+
+jowe_fn5           { ; 0:04:10.14     DX4-100                  Jo Weber, 1996  
+                     ; hot cocks
+  reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
+  corners=2.349594/-0.9258677/-2.633102/-1.061648/0.4161295/-0.05514973
+  params=0.3/0.75/1/-2 float=y maxiter=100 bailoutest=and inside=bof60
+  invert=1/0/0
+  colors=00088C448004<14>I0qK0uJ0r<12>308204333<14>zzz<15>000<15>z0G<15>00\
+  0<15>zzz<15>000<15>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<12>CCG
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Dangerous Plants			Section: Fractal Sources
+  To:  All				04 July 1996 21:42:08
+From:  Lee Skinner, 75450,3631		#143787
+
+Here's a nasty situation to be caught up in:
+
+mflsqd9            { ; Carniverous Venus Fly-Traps
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; deep zoom into an image by Sylvie Gallet
+  reset=1930 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=+0.34737361575612640/-0.30272415678320210/3414.853
+  params=0/0/0.15 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzzMYHPXFOWI<4>JSRIRTHQW<5>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc\
+  3zi0z_7zREzHK<11>W0Y<2>e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2\
+  JY2HX1<3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<6>zsl<15>O01<16>oD1qE1q\
+  F1<16>zjA<17>GU5DT4AS47R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8a\
+  U8aS9`Q<2>9_P9_O9ZO9YO<4>KYI cyclerange=2/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Paisley fractal			Section: Fractal Sources
+  To:  All				04 July 1996 21:42:10
+From:  Lee Skinner, 75450,3631		#143788
+
+I used to think that paisley patterns were not really fractals, but ...
+
+mflsqe3            { ; Paisley
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=+0.26836293828319100/-0.02274432826813944/3635.43
+  params=0/0/0.15 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzzKTP<3>GPYFO_EO`<2>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_\
+  7zREzHK<11>W0Y<2>e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2HX1\
+  <3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<6>zsl<15>O01<16>oD1qE1qF1<16>\
+  zjA<17>GU5DT4AS47R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS9`\
+  Q<2>9_P9_O9ZO9YO<6>PXFOWI<2>LUN cyclerange=2/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  hypnotic				Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	06 July 1996 08:02:09
+From:  Hans-Joachim Weber, 100424,35	#143866
+
+Hi Les,
+here is a
+hpnotic whirl      { ; 0:11:07.18 486DX4-100MHz   by Jo Weber, 1996
+                     ; try color cycling #9 out
+  reset=1930 type=fn(z)+fn(pix) function=exp/exp
+  center-mag=-0.19718149946935720/-3.08661586864911500/87.82205/1/-9.917/-\
+  0.147 params=-1.2/5/0.01/1 float=y maxiter=1023 bailout=20
+  bailoutest=real inside=maxiter invert=1/0/0
+  colors=400E3D<2>000<2>AE3DJ4HN5KR6MV7PZ8Sa9UdAVgBXiBYjBZlC_lC_mC_lCZlCYj\
+  BXiBVgBUdA<3>KR6HN5DJ4<3>000<4>RBUWDZ_FcdHhhJlkKpnMspNurNxtOytOzuPztOztO\
+  yrNxpNunMskKphJl<2>WDZRBUM9O<3>000<2>IE3OJ4UN5ZR6cV7hZ8la9pdAsgBuiBxjByl\
+  CzlCzmCzlCylCxjBuiBsgBpdA<3>ZR6UN5OJ4<3>000<3>O00U00Z00c00h00l00p00s00u0\
+  0x00y00z00<3>x00u00s00p00<3>Z00U00O00<3>000<3>O00U00Z00c00h00l00p00s00u0\
+  0x00y00z00<3>x00u00s00p00<3>Z00U00O00<3>000<7>H00J00K00M00<3>O00P00O00<2\
+  >N00M00K00<6>700200000<4>MBUQDZTFcXHh_JlbKpdMsfNugNxiOyiOzjPziOziOygNxfN\
+  udMsbKp<3>QDZMBUH9O<3>000<2>E3DJ4HN5LR6P<3>dA`gBbiBdjBflCglCgmChlCglCgjB\
+  fiBd<2>a9YZ8VV7S<2>I4H
+  }
+
+Bye -- Jo --
+
+;; ************************************************************************ ;;
+
+Subj:  modles13				Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	08 July 1996 01:11:04
+From:  Brian E. Jones, 102702,2213	#143946
+
+Hi Les,
+	Your "Into the Mystic" image is COOL!  
+
+>>I loved the mods you did to LESFRM13 and the .par file.<<
+
+Thank you Les.
+
+>>Meanwhile, I'm working on a .par based on your modified formulas. I'm
+starting to see stuff which is quite different from your images, so I think it
+will be worthwhile.<<
+
+Can't wait to see them!
+
+>> Mind you, this could go on forever (LS modified BJ modified LS etc..)<g><<
+
+I've often wondered how far it actually could go!<G>
+
+I'll probably be uploading my new original par in a few weeks.  In the
+meantime, here's one that will be included. It's not all that great, as well
+as the rest of them, but, it's one of the better ones.
+
+
+Untitled018            {
+  reset=1920 type=formula formulafile=96_msg_2.frm formulaname=BEJ-N141
+  function=cabs/sqr passes=1
+  center-mag=0.0382892/-6.525e-005/0.08716982/1/90 outside=atan
+  colors=000U86<12>z_K<15>444<15>zvn<15>I8F<10>ibfleiohlrkounr<15>8F8<13>w\
+  xfwxf<6>XcXT`WPYUMUS<6>05A<15>cru<15>444<15>zvn<15>YCI<15>zee<15>A00<13>\
+  zzg<12>ZKGXHEUDBS99P56M13P34R55
+  }
+
+Brian
+
+;; ************************************************************************ ;;
+
+Subj:  modles13				Section: Fractal Sources
+  To:  Brian E. Jones, 102702,2213	09 July 1996 00:30:05
+From:  Les St Clair, 101461,2032	#143988
+
+Hi Brian,
+
+<<I'll probably be uploading my new original par in a few weeks.  In the
+meantime, here's one that will be included...Untitled018 >>
+
+Nice effects! but beware the dreaded "integer artifacts". I've become quite
+paranoid about these lately and will no longer generate images without the
+floating point on ( in fact I have added float=y to my sstools.ini).
+Don't get me wrong, I love the effects that can be created, but I can't handle
+the fact that these images may not generate properly with future versions of
+Fractint.
+
+Fear not, for there is beauty within your formula (even with the floating
+point turned on<g>) -
+
+This image reminds me of Swallows swooping and diving for insects over a small
+lake as a Mandelbrot sun sinks in the west, the evening twilight reflected on
+the ripples in the water (or something like that!)
+
+
+ls_bj_frm_01       { ; "Swallows" by Les St Clair [101461,2032] 1996 t=03m53s
+                     ; formula by Brian E.Jones
+                     ; t=time using 486DX2-66 and video SF7 (1024x768 256c)
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=bej-n141 function=recip/sin passes=1
+  center-mag=1.32293/0.158056/1.89393 float=y inside=bof61
+  outside=atan
+  colors=040GVj<3>0Tz<14>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<1\
+  5>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<10>K\
+  Vf
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Paisley fractal			Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		10 July 1996 16:51:16
+From:  Jim J. Deutch, 104074,3171	#144074
+
+Hi Lee --
+
+Paisley?  You thought that looked like paisley?  It immediately suggested a
+painting by JRR Tolkien to me. Here's my best (so far) re-interpretation:
+
+hobbiton6b         { ; By Jim Deutch
+                     ; from a Lee H. Skinner par mflsqe3 "paisley"
+  reset=1930 type=mandel(fn||fn) function=flip/sqr passes=1
+  center-mag=+0.26851490847801840/-0.03227204462192970/5492.996/1.3348/6.7\
+  01/-2.973 params=0/0/0.15 float=y maxiter=255 bailoutest=or inside=0
+  logmap=yes
+  colors=0D9zzzKTP<3>GPYFO_EO`<2>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_\
+  7zREzHK<11>W0Y<2>e8fhBilElpHp<9>zlp<5>zTfcPdmMmcJh_Gb<7>Lbi<5>ziB<11>MZ2\
+  JY2HX1<3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<6>zsl<15>O01<16>oD1qE1q\
+  F1<16>zjA<13>QY7OX6LW6JV5GU5<2>7R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DS\
+  z<5>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<2>LUN cyclerange=2/255
+  }
+
+Jim Deutch
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  All				11 July 1996 18:59:14
+From:  Lee Skinner, 75450,3631		#144182
+
+  Here again for quick reference is Tim's graph-3 formula based on Sylvie's
+  discoveries of creating graphs:
+
+  3d Graphs are resolution dependent, so here are 2 similar renderings, one
+  for 1024x768, the other at 1600x1200.  Generate at the higher resolution
+  that you have.  First generate the 3-D Template:
+
+ComplexSinGraph    { ; 3d Template for Splashing Cliffs
+                     ; generate template at either 1024x768 or 1600x1200
+                     ; then generate the appropriate 3d Ttansform
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=graph-3
+  function=sin passes=1 center-mag=0/0/0.2 params=-10/10 float=y
+  periodicity=0
+  colors=0bzAOzUdzmuzGCEJ70<77>dK0dK0dK0dK0dL0eL0<26>mU0nV0oX0<10>zx7<9>Fj\
+  2<2>0eJ<5>kwptzvzzz<23>zpa<4>jdWgaVcZT`WSYUR<6>AAK000000ddd<62>hZN
+  }
+
+Splashing_Cliffs   { ; This par for 1024x768 only
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  3d=yes scalexyz=90/90 roughness=96 waterline=0 filltype=2 video=sf7
+  randomize=5 ambient=20 rotation=60/30/0 perspective=0 xyshift=0/0
+  colors=0bzAOzUdzmuzGCEJ70<77>dK0dK0dK0dK0dL0eL0<26>mU0nV0oX0<10>zx7<9>Fj\
+  2<2>0eJ<5>kwptzvzzz<23>zpa<4>jdWgaVcZT`WSYUR<6>AAK000000ddd<62>hZN
+  }
+
+Splashing_Cliffs2  { ; This par for 1600x1200 only
+                     ; select your specific 1600x1200 video mode
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  3d=yes scalexyz=90/90 roughness=150 waterline=0 filltype=2
+  randomize=6 ambient=20 rotation=60/30/0 perspective=0 xyshift=0/0
+  colors=0bzAOzUdzmuzGCEJ70<77>dK0dK0dK0dK0dL0eL0<26>mU0nV0oX0<10>zx7<9>Fj\
+  2<2>0eJ<5>kwptzvzzz<23>zpa<4>jdWgaVcZT`WSYUR<6>AAK000000ddd<62>hZN
+  }
+
+Lee Skinner
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		11 July 1996 22:56:12
+From:  Sylvie Gallet, 101324,3444	#144202
+
+Hi Lee,
+
+>>   Here again for quick reference is Tim's graph-3 formula based on 
+>> Sylvie's discoveries of creating graphs:
+
+  Our formulas don't perform the same thing. In Graph-3 , each pixel is
+  colored according to the value of the real part of sin(pixel), using the
+  complex sine function. The 3D transform shoxs the surface defined by:
+	x = real(pixel),  y = imag(pixel),  z = real(sin(x+i*y))
+  note: the ComplexSinGraph par should use maxiter=256.
+
+  My formula - Graph-2, see below - draws the graph of *real* functions, for
+  example: x --> sin(x) where both the variable (x) and the result are real
+  numbers.   Since it uses the new ceil() and round() functions, you can't
+  run it with Fractint 19.3 (I upload Graph.gif in new images for those who
+  are interested).
+
+	-  Sylvie
+
+graph-2            { ; Version 1930 Patchlevel 15
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=graph-2
+  function=sin/abs/ceil/log passes=1 center-mag=0/0/0.2
+  params=0.002/0.001 float=y maxiter=99 inside=255
+  colors=000hhhzK0zzz0zKzzzzzzzzz0Kzzzz<5>zzzww0zzz<236>zzz000
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		11 July 1996 23:10:00
+From:  Les St Clair, 101461,2032	#144207
+
+<<Here again for quick reference is Tim's graph-3 formula based on Sylvie's
+discoveries of creating graphs:>>
+<<ComplexSinGraph     3d Template for Splashing Cliffs>>
+
+Wonderful! - Do you have any others?
+
+I'd almost forgotten what fun 3d transform (& overlay) was...
+As they say on a well known childrens TV programme in the UK - "Here's one I
+made earlier" (1994 to be precise!)
+
+- Les
+
+;  Author: Les St Clair (101461.2032@compuserve.com)
+;  3D-transformation parameter file to re-created "ASTRAL PLANE" image
+
+144207_1st_image   { ; Save as SPOTS.GIF to be used later for 3d overlay
+		     ; Les StClair 1994 101461.2032@compuserve.com 		
+  reset=1100 type=fn(z*z) function=cotan savename=spots.gif
+  corners=-1.2232056/-0.43890381/0.477416992/0.504608154/-0.95402527/0.118\
+  392944 potential=255/200/0
+  colors=000332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>\
+  ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c\
+  <2>E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4\
+  >zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8\
+  >VHI<7>zH0<7>WED
+  }
+
+144207_2nd_image   { ; Save as BIGFOOT.GIF to be used later for 3d overlay
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  reset=1800 type=fn(z*z) function=sinh savename=bigfoot.gif
+  corners=-1.06756976305/-1.06762878237/-0.905112103533/-0.904877551286/-1\
+  .06770158638/-0.904933146202 float=y potential=255/1000/50
+  colors=0005Px<6>A5c<3>F7UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>e\
+  YJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnC\
+  ql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9\
+  YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000775<13>svcsvcsvcsvc<13>UMHSJFQIJ<5\
+  >EAb<6>7Nu
+  }
+
+144207_background  { ; restore image then hit @ key and go to overlay stages>
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  reset=1800 type=mandel
+  corners=-3.905013/-2.034885/-0.7012891/0.7012997 maxiter=255
+  inside=zmag decomp=255 savename=BACK.GIF
+  colors=000bZP<4>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8SH9QJANKBLMC\
+  I<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<\
+  6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF<\
+  3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C4130007\
+  75<13>svcsvcsvcsvc<7>daR
+  }
+
+144207_First_3D    { ; xforms 1st image to 3D sphere & overlays on backgrnd
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  3d=overlay filename=spots.gif sphere=y latitude=-90/90
+  longitude=180/0 radius=30 scalexyz=90/30 roughness=30 waterline=0
+  filltype=2 ambient=20 perspective=0 xyshift=-30/28
+  }
+
+144207_Second_3D   { ; xforms 2nd image to 3D sphere & overlays on backgrnd
+		     ; Les StClair 1994 101461.2032@compuserve.com
+  3d=overlay filename=bigfoot.gif sphere=y latitude=-90/90
+  longitude=180/0 radius=70 scalexyz=90/70 roughness=30 waterline=0
+  filltype=2 ambient=20 perspective=0 xyshift=10/-8
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	12 July 1996 00:24:07
+From:  Lee Skinner, 75450,3631		#144215
+
+Les,
+
+>>Wonderful! - Do you have any others?
+
+Other what? 3d Transforms?  There are many on Fractal Frenzy in the \LEES3D
+directory.
+
+Here's another based on Tim's graph-3:
+
+RecipTemplate      { ; 3d Template for Sandstone_Pool
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=graph-3
+  function=recip passes=1 center-mag=0/0/0.2 params=-10/10 float=y
+  periodicity=0
+  colors=0bz0aVzzx<4>keZM00<14>J78I89I89I89<84>S11T00T10<11>`H1aJ2bJ2<7>iJ\
+  2jJ2kK1lL0<14>wp5xr5yu6zx7<4>bq5Yp4Wn4<13>0M0<19>zrf<3>zpa<4>jdWgaVcZT`W\
+  SYUR<6>AAK000000ddd<34>faV
+  }
+
+Sandstone_Pool     { ; roughness is set to 150 for 1600x1200
+                     ; - change it to 96 for 1024x768
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  3d=yes scalexyz=90/90 roughness=150 waterline=0 filltype=2
+  randomize=1 ambient=20 rotation=0/20/75 perspective=68 xyshift=0/0
+  xyadjust=-12/-4
+  colors=0bz0aVzzx<4>keZM00<14>J78I89I89I89<84>S11T00T10<11>`H1aJ2bJ2<7>iJ\
+  2jJ2kK1lL0<14>wp5xr5yu6zx7<4>bq5Yp4Wn4<13>0M0<19>zrf<3>zpa<4>jdWgaVcZT`W\
+  SYUR<6>AAK000000ddd<34>faV
+  }
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  My first formula			Section: Fractal Sources
+  To:  All				12 July 1996 16:47:20
+From:  Jim J. Deutch, 104074,3171	#144252
+
+Hi all!
+
+We may all regret this (esp. my wife <g>), but I have begun to delve into the
+wonderful world of formulas.  This here is the first one that did something
+interesting and probably (maybe) original.  Go back to default zoom (Z F6 F4)
+to see the two complete mandels.  Looks much better at higher resolutions.
+
+overlay01          { ; by Jim Deutch. MUST use passes=1!
+                     ; not really resolution-independent
+                     ; my first successful formula - weird, tho <g>
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JDfrm010
+  passes=1
+  center-mag=-0.00001622068965519/+0.75086683417085420/4909.18 float=y
+  maxiter=255 inside=0
+  colors=G00<9>z00<19>zz0<19>0z0<19>0zz<19>00z<19>z0z<8>K06W00<9>WW0<9>0W0\
+  <9>0WW<9>00W<9>W0W<9>W00<9>zWW<9>zzW<9>WzW<9>Wzz<9>WWz<9>zWz<9>zWW<3>P66\
+  zzz
+  }
+
+overlay02          { ; by Jim Deutch. Another view. Use passes=1!
+                     ; not really resolution-independent
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JDfrm010
+  passes=1
+  center-mag=-0.00003134796238240/-0.74709798994974900/1960.784
+  float=y maxiter=1024 inside=0
+  colors=G00<9>z00<19>zz0<19>0z0<19>0zz<19>00z<19>z0z<8>K06W00<9>WW0<9>0W0\
+  <9>0WW<9>00W<9>W0W<9>W00<9>zWW<9>zzW<9>WzW<9>Wzz<9>WWz<9>zWz<9>zWW<3>P66\
+  zzz
+  }
+
+
+Jim
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	12 July 1996 19:39:15
+From:  Sylvie Gallet, 101324,3444	#144260
+
+Hi Les,
+
+>> Well yes, but I was thinking specifically of  "mathematical" curves. 
+  Here are two great classics.
+
+	-  Sylvie
+
+Interferences      { ; (c) Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=Interferences center-mag=0/0/0.6666667
+  params=-2.06/2.06/31.4159265358979/0 float=y maxiter=255 inside=0
+  colors=000PAU<157>XapXapXapYbpYbpYbp<90>hzz
+  }
+Interferences-3d   { ; (c) Sylvie Gallet [101324,3444], 1996
+                     ; Generate at 1024x768
+  3d=yes scalexyz=90/90 roughness=10 waterline=0
+  filltype=2 ambient=20 rotation=50/30/20 perspective=200 xyshift=5/5
+  }
+Wave               { ; (c) Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=wave
+  center-mag=0/0/0.6666667 params=-2.65/12.2/12/0 float=y maxiter=255
+  inside=0 colors=000M7R<253>hzz
+  }
+Wave-3d            { ; (c) Sylvie Gallet [101324,3444], 1996
+                     ; Generate at 1024x768
+  3d=yes scalexyz=90/90 roughness=100 waterline=0
+  filltype=6 lightsource=1/-1/1 ambient=20 rotation=50/30/20
+  perspective=200 xyshift=5/5
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	12 July 1996 21:54:00
+From:  Sylvie Gallet, 101324,3444	#144269
+
+Les,
+
+Yet another one:
+
+	-  Sylvie
+
+saddle             {; (c) Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=saddle
+  center-mag=8.88178e-016/-4.44089e-016/0.4374698 params=-9.5/9.5
+  float=y maxiter=255 inside=0 periodicity=0
+  colors=000F5P<157>XapXapXapYbpYbpYbp<90>hzz
+  }
+saddle-3d          { ; (c) Sylvie Gallet [101324,3444], 1996
+                     ; Generate at 1024x768
+  3d=yes scalexyz=60/60 roughness=200 waterline=0
+  filltype=2 ambient=20 rotation=50/30/20 perspective=0 xyshift=0/0
+  xyadjust=0/-15 colors=000F5P<157>XapXapXapYbpYbpYbp<90>hzz
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Graphs of Complex Sine		Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	13 July 1996 13:02:18
+From:  Les St Clair, 101461,2032	#144309
+
+Hi Sylvie,
+
+<<Interferences-3d>>
+<<Wave-3d>>
+<<saddle-3d>>
+
+They're all excellent - but "Wave" is particularly stunning!
+Is there no end to your talents? ;-)
+
+This one doesn't have the smooth mathematical beauty of your images, but I
+like it anyway...
+
+
+Metropolis         { ; Image for Metropolis_3d transform - Les St Clair 1996
+                     ; image previously coded "LF13_07"
+                     ; Les St Clair 101461.2032@compuserve.com
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=lesfrm13
+  function=asin/asinh passes=1 center-mag=0.012432/4.95e-005/0.2676312
+  params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
+  outside=atan savename=metropol.gif
+  colors=000<15>z00<15>000F70<12>qR0tT0wU0zV0<15>F70000<15>zz0<15>000583<1\
+  5>bzT<15>583080<15>0z0<15>080084<15>0zz<15>084005<15>00z<15>00550C<12>P0\
+  qR0tS0wT0z<7>H0a cyclerange=0/255
+  }
+
+Metropolis_3d      { ; "City of the Future" - Les St Clair 1996
+                     ; Enjoy watching Metropolis under construction!
+                     ; Les St Clair 101461.2032@compuserve.com
+  3d=yes filename=metropol.gif scalexyz=90/90 roughness=200
+  waterline=0 filltype=2 ambient=20 rotation=50/30/20 perspective=0
+  xyshift=7/10
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  2D IFS/Landscape Overlay		Section: Fractal Sources
+  To:  All				16 July 1996 17:36:14
+From:  Lee Skinner, 75450,3631		#144470
+
+  Here is a way to create a 2-D overlay using two of Jim Deutch's images
+(Sunset9 and Ginkgo).  If you already have these images, they will still have
+to be regenerated as slight modifications have been made to each. The
+resulting overlay shows an IFS tree in a sunset (or dawn) landscape. The
+necessary files to create Gingko (an IFS entry: Baobab) and Sunset9 (the
+formula Carr2330) are also given below.
+
+
+
+sunset9            { ; Sunset by Jim Deutch
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=carr2330 passes=1
+  center-mag=-0.342058/0.260915/21.82773/0.9545/-172.619/-0.072
+  params=100/150/200/250 float=y maxiter=200 periodicity=0
+  colors=000BVLU00<2>dIBhOFjTL<6>xutzzzzzz<81>xyb<7>1Uf<14>123000000<12>Q0\
+  0S00S30<7>KU0<6>kNLcQLdTJUQVSRNUNNUPNTNOTPJSRDeR9oN4zK0<12>zz0<11>xD2s92\
+  <7>X3SU2WR1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<19>50A000<16>09D
+  }
+
+Ginkgo             { ; Baobab formula by Jim Deutch
+  reset=1930 type=ifs ifsfile=96_msg_2.ifs ifs=baobab
+  center-mag=+0.61755371200000010/+1.18386840950000000/1.477267/0.9998
+  params=0 maxiter=750
+  colors=000BVLU00<2>dIBhOFjTL<6>xutzzzzzz<81>xyb<7>1Uf<14>123000000<12>Q0\
+  0S00S30<7>KU0<6>kNLcQLdTJUQVSRNUNNUPNTNOTPJSRDeR9oN4zK0<12>zz0<11>xD2s92\
+  <7>X3SU2WR1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<19>50A000<16>09D
+  }
+
+Dawn               { ; 2-D overlay by Lee Skinner
+  3d=overlay scalexyz=90/90 roughness=0 waterline=0 filltype=2
+  transparent=0/1 ambient=20 rotation=0/0/0 perspective=0 xyshift=0/0
+  colors=000BVLU00<2>dIBhOFjTL<6>xutzzzzzz<81>xyb<7>1Uf<14>123000000<12>Q0\
+  0S00S30<7>KU0<6>kNLcQLdTJUQVSRNUNNUPNTNOTPJSRDeR9oN4zK0<12>zz0<11>xD2s92\
+  <7>X3SU2WR1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<19>50A000<16>09D
+  }
+
+ INSTRUCTIONS:
+
+ 1. Generate Sunset9 and Ginkgo and then save them.
+ 2. Press <@>, select 'dawn.par', and then select 'dawn'
+ 3. Select 'ginkgo.gif' as the file for 3D Transform.
+ 4. Press <Enter>'s until the image starts generating.
+ 5. Immediately press <Esc> (see 'load incomplete' message).
+ 6. Press <r> and reload Sunset9.
+ 7. Press <#> and again select 'ginkgo.gif' as the file for 3D Transform
+ 8. Press <Enters>'s again until the image starts generating.
+ 9. When image is done, save it as 'dawn.gif'.
+
+Lee Skinner
+
+
+Subj:  2D IFS/Landscape Overlay		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		17 July 1996 01:03:06
+From:  Lee Skinner, 75450,3631		#144486
+
+Jonathan Osuch mentions that the instructions to build dawn.gif can be
+simplified somewhat with the following fix:
+
+Aha, in the Dawn par change 3d=yes to 3d=overlay and then it will work as
+expected.
+
+1. Generate Sunset9 and Ginkgo and then save them. 2. Press <r> and reload
+Sunset9. 3. Press <@>, select 'dawn.par', and then select 'dawn' 4. Select
+'ginkgo.gif' as the file for 3D Transform. 5. Press <Enters>'s again until
+the image starts generating. 6. When image is done, save it as 'dawn.gif'.
+
+Thanks, Jonathan!
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  All				17 July 1996 23:41:23
+From:  Lee Skinner, 75450,3631		#144520
+
+  Welcome to Fractint's latest discovered feature: Pseudo HiColor. Download
+JD10.ZIP to find out more about it.  Here are a couple of formulas - they are
+resolution (video mode) dependent.
+
+
+To generate the following three pars at 1600x1200, change the formulaname to
+JD-LS01 and change the video=SF7 to whatever key sets your 1600x1200.
+[compilers note: formula name in this par has been changed to "JD-LS0", for
+ resolution independence]
+
+jdls100            { ; Pseudo HiColor Example 1 - 1024x768
+                     ; time 0:01:30 on a Pentium 166
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JD-LS0
+  passes=1 center-mag=1.05796/7.77156e-015/0.4538687 float=y video=SF7
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000Fb`zotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU6<56>z00zz0t\
+  wA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z00xJ8vbG<6>y\
+  DEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<43>wV6W0z
+  cyclerange=2/255
+  }
+
+jdls101            { ; Pseudo HiColor Example 2 - 1024x768
+                     ; time 0:02:12 on a Pentium 166
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JD-LS0
+  passes=1 center-mag=0.0621924/1.29734/1.436293 float=y maxiter=1023
+  inside=0 logmap=yes symmetry=none video=SF7
+  colors=000Fb`wW6wV6wV6W0zzotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU\
+  6<56>z00zz0twA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z\
+  00xJ8vbG<6>yDEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<40>w\
+  W6 cyclerange=2/255
+  }
+
+jdls102            { ; Pseudo HiColor Example 3 - 1024x768
+                     ; time 0:01:00 on a Pentium 166
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JD-LS0
+  passes=1 center-mag=0.642752/1.18237/14.36293 float=y maxiter=1023
+  inside=0 logmap=yes symmetry=none video=SF7
+  colors=000Fb`wX7<4>wV6W0zzotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU\
+  6<56>z00zz0twA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z\
+  00xJ8vbG<6>yDEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<37>w\
+  Y7 cyclerange=2/255
+  }
+
+ Download JD10.ZIP for 25 more pseudo hicolor pars.
+
+ Download still more 1024x768 Pseudo HiColor Images from GRAPHDEV - 17
+ are now available.  Of these, 7 are in the par file of 25 images in
+ jd10.zip. These are available for downloading now from lib 1:
+
+   1JD10005.GIF, 1JD10013.GIF, 1JD10015.GIF, 1JD10016.GIF, 1JD10018.GIF,
+   1JD10022.GIF, and 1JD10023.GIF.
+
+ The other 10 will be available in a par file that I will upload soon,
+ but may be downloaded as images immediately:
+
+   1B60A000.GIF, 1B60I000.GIF, 1B60R000.GIF, 1B60S000.GIF, 1B61A000.GIF,
+   1DECO000.GIF, 1ZMAT000.GIF, 1ZMRL000.GIF, 1ZMSU000.GIF, 1ZMSU003.GIF
+
+ Lee H. Skinner
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		18 July 1996 15:16:08
+From:  Jan Maarten van der Valk, 100256,3721#144530
+
+Hi, Lee and Jim,
+
+What a great feature!
+Here's a modification of your formula. The par's colors are from a replenished
+copy of K.A. Eastwood's GOODEGA.MAP, which results in an image of only 16
+unique colors. Could the par's color data be compressed? It has 16 copies of
+identical blocks.
+
+I congratulate you on discovering this very attractive feature.
+Jan Maarten
+
+
+jdlsjm             { ; Pseudo HiColor - 1024x768
+                     ; time 0:45:15 on a 486 DX2
+                     ; Par and Image by Jan Maarten van der Valk
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  float=y maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zz\
+  LzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e0\
+  0L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2\
+  >z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzz\
+  ezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2\
+  >0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2\
+  >00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL\
+  0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L0\
+  0zzLzL000e00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zz
+  cyclerange=2/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		18 July 1996 17:36:17
+From:  Jim J. Deutch, 104074,3171	#144537
+
+Hi Lee - 
+
+<<convention for less confusion and to implement this standard for easier
+implementation of batch files, as the formulas are resolution dependent:>> 
+
+Good thinking, but hopefully a stopgap for v19: see George's message.
+
+Haven't had a chance to run you pars: had a backup scheduled last night.
+Here's an entry of my own (obediently following your standard):
+[compilers note: formula name in this par has been changed to "JDfrm021a",
+ for resolution independence]
+
+GardenMania        { ; (c) Jim Deutch 1997: pseudo-hicolor: 1024x768
+                     ; You must use passes=1
+                     ; change countreset in the formula to use other resolution
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=JDfrm021a
+  passes=1 center-mag=2.88658e-015/-2.66454e-015/0.8168946 float=y
+  maxiter=100000 outside=imag logmap=yes
+  colors=0000K00e0cU0e00m0ceL0pGFNAVkAAmhzpKpsAevmWzzLzr00ez<2>AWeDSZGOSKK\
+  K0ezSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQSKOSKMSKKSMK<36>yxbzzcyyc<35>HICFGBDGBCGBBGB<2>BGF\
+  BGGBFGBDGBCGZ00<5>z00z30
+  }
+
+
+Jim Deutch
+
+;; ************************************************************************ ;;
+
+Subj:  ALLENS.PAR			Section: Fractal Sources
+  To:  Robert W. Carr, 73753,2420	19 July 1996 03:56:13
+From:  Les St Clair, 101461,2032	#144586
+
+Hi Bob,
+
+<<  It's probably a good idea to include the colors in your par file rather
+than the name of a map file. >>
+
+Yes, and talking of colours -  here's a map that I pinched from Lee Skinner
+and applied to Allen's very interesting "centipede" image. 
+(Hi Allen - I know you've seen this one before, but I still like it!)
+
+centipede_mod      { ; Allens.par - a different view by Les St Clair t=21m52s
+                     ; using color .map by Lee Skinner
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  reset=1930 type=fn(z)+fn(pix) function=sin/exp passes=1
+  center-mag=-2.12418/1.65939/0.756979/1/27.499 params=1/0/1/0 float=y
+  maxiter=1501 bailoutest=imag inside=bof60 outside=0 logmap=yes
+  colors=000a`p<3>jdpmfophp<2>wmszotznp<10>vX4sW4qU4oT4<2>dJ4`G5XD5T96S96<\
+  7>IB7HB7HB7<2>HD9HE9HF9HG9IG9<14>LS9MT9OV9<2>Ub9<7>ld8nd8qe7sf7<17>aAC`8\
+  D_6DZ4EY2EW0F<3>YQ`YXfYcmYjsXqz<13>P00<37>G00G10G10G20H20<26>MG1MG1NF1<1\
+  2>RH2RH2SH2TI2<4>XJ2XK2YK2ZL3ZL5<4>XOFWPHWPIWPJ<3>aVJzb0dYJ<3>tf9<2>ui6v\
+  k5vl4wn3qjB<2>YX_RVq<3>_Zq
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372119 July 1996 12:59:08
+From:  Lee Skinner, 75450,3631		#144594
+
+Jan,
+
+>>I also like color cycling these images a lot. A great effect is when color
+streams with opposite directions overlap.<<
+
+Yes.  Sometimes if you do it manually one step at a time, it has an
+interesting kaleidoscope effect such as my 6b60a000.gif (downloadable from
+graphdev):
+[compilers note: formula name in this par has been changed to "JDfrm010",
+ for resolution independence]
+
+
+b60a000            { ; t0:02:07 (times are for 1600x1200 on Pentium-166Mh)
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=jdfrm010 passes=1 video=SF7
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof60 outside=atan logmap=yes
+  colors=000xj9<5>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxh\
+  B<9>zdD<9>ObFKaFGaFC`GA_H<10>2Ke2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74\
+  <3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<5>rX7pU9oRAmNCmOF<6>i__<3>thkz0\
+  0<3>YL6<2>i`WtuxtiZugLu`T<2>d8ee6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<8>wj9
+  }
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		19 July 1996 16:38:22
+From:  Jim J. Deutch, 104074,3171	#144603
+
+Hi!
+
+Here's my newest pseudo-HiColor formula and par.  The formula is a generalized
+one: it makes two julia sets, each with its own parameters, and has a third
+parameter that slides them around the plane wrt each other, so you can line
+up the interesting bits however you like.
+
+I couldn't wait to collect a bunch of nice pars for it before uploading:
+there's only one here, but I'm sure there's a lot of good images in there
+somewhere...
+
+I didn't use Sylvie's great suggestion about p3==resolution, because I ran
+out of parameters!
+[compilers note: formula name in this par has been changed to "JDfrm031", for
+ resolution independence]
+
+
+twisters_d         { ; Jim Deutch 1996
+                     ; use passes=1 and 1024x768
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=JDfrm031 passes=1
+  center-mag=-0.489028/0.165829/2.898551
+  params=-0.52/0.52/-0.52/0.516/0.2/0.2 float=y maxiter=512 logmap=6 video=SF7
+  colors=0000UK<26>RM1SL0VN0<2>`S0cU0cT2<16>U7hW7lZ8o<3>000<3>V8iS7eQ7b<16\
+  >d93eA0cA0<15>310000000<22>000000011122<84>bvv<9>0zz<9>Qbb<22>000
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372119 July 1996 16:52:06
+From:  Bill Jemison, 70400,2537		#144605
+
+Jan,
+
+I ran your par last nite in 1024x768x16 mode (SF3), and I was very puzzled by
+what I got. The image was predominently brown, orange, red, blue and small
+patches of green. Examination of the color pallet via <e> showed that there
+were clearly colors evident in the image that were not in the pallet, but
+there was not much detail showing. Examination of the image made it difficult
+at first to determine whether there were more than 16 colors or not. Then I
+started playing around and got some astounding results! These occurred after
+I removed the logmap=yes from the .par.
+
+If you can run in 16 color mode SF3 try these two pars. I have the jd-ls-jm
+formula in a 16_color.frm so you may need to change those references to
+fractint.frm. Test_1 is the par file I generated from yours, but in 16 color
+mode. Test_2 is exactly the same except with logmap=yes removed. So now we
+have PSEUDO-256COLOR !!!
+
+test_1             {
+                     ;  Version 1930 Patchlevel 13
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  float=y maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z0Lz cyclerange=2/255
+  }
+
+test_2             {
+                     ;  Version 1930 Patchlevel 13
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  float=y maxiter=1023 inside=0 symmetry=none
+  colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z0Lz cyclerange=2/255
+  }
+
+Bill
+
+;; ************************************************************************ ;;
+
+Subj:  3D Transforms			Section: Fractal Sources
+  To:  All				21 July 1996 16:42:05
+From:  Les St Clair, 101461,2032	#144670
+
+Inspired by Lee and Sylvie's mathematical transformations, I've embarked on a
+3d .par file. This image, from the work in progress, particularly appealed to
+me. Thanks to Brian Jones for the formula.
+
+
+L3DT_13            { ; image for L3DT_13_3D    LStC [use 1024x768] t=00m51s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+                     ; based on Brian E.Jones formula BJ-LESFRM13-004
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-lesfrm13-004 function=tan/recip/ident/cos
+  center-mag=0.00862294/0.383509/0.8076226/1/2.5 params=2/0.5/1/1
+  float=y maxiter=1000 inside=bof61 outside=atan potential=255/255/0
+  savename=l3dt_13.gif
+  colors=000A4M<63>xPz000211522<4>UAA<14>N9N<10>zJ9<28>zu2zw1zx1zz0yz0<3>s\
+  x0rw0qv0pv0nu0<33>8_06_05Z03Z02Y00X0<62>01D00E00E10F<9>93L
+  }
+
+L3DT_13_3D         { ; "Magic Forest"          LStC [use 1024x768] t=01m06s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  3d=yes filename=l3dt_13.gif scalexyz=110/120 roughness=180
+  waterline=0 ambient=20 rotation=-40/40/-35 perspective=0 xyshift=0/0
+  xyadjust=7/3 savename=forest.gif
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  manjul_lace			Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		23 July 1996 01:03:22
+From:  George Martin, 76440,1143	#144735
+
+Lee,
+
+>No params=
+
+Ouch. I ran the image with the my test version of fractint which has the
+whitesq variable, so no need for a param command. The entry should read
+
+mandel_outline { ; (c) George Martin, 1996 [76440,1143]
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=manjul_lace
+  float=y video=sf7 params=0/0/0/0/1024/0
+  passes=1 center-mag=-0.5647/0.067873/5.50839/1.0001 maxiter=500
+  colors=00000G<13>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
+  0yz<45>02z00z00y<44>00H
+  }
+
+I think with p3 set at 0, the evenodd/oddeven combo would not reset properly
+at the beginning of each line, and the intermeshing would be in vertical
+columns instead of a checkerboard effect. At 1024x768, it is hard to see
+the difference, however.
+
+BTW, I see several of your par entries set p3 to 1600 and video to sf7. My
+sense of how the template works would require that these two entries match,
+i.e. if video is sf7, p3 should be 1024. Am I right, Sylvie?
+
+George
+
+;; ************************************************************************ ;;
+
+Subj:  Mandel(fn||fn)			Section: Fractal Sources
+  To:  All				23 July 1996 03:12:19
+From:  Don Archer, 71544,657		#144741
+
+Here's a rare find for you intrepid Mandel(fn||fn) explorers.
+
+lune               { ; (c) 1996 Donald Archer 71544,657
+  reset=1930 type=mandel(fn||fn) function=conj/cosh
+  center-mag=-0.42174955083166750/+1.59423689240268600/1185.434/1.0454/-79\
+  .999 params=3.33/-3.34/0.0007 float=y maxiter=1024 periodicity=0
+  colors=keW<10>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta000BMZ<4>L4R<8>VHI<\
+  7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<1\
+  3>K8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5\
+  c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<14>QK8WPB<9>WPBWPBXQD<8>k\
+  eW
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  manjul_lace			Section: Fractal Sources
+  To:  George Martin, 76440,1143	24 July 1996 01:15:09
+From:  Les St Clair, 101461,2032	#144791
+
+<<mandel_outline ; (c) George Martin, 1996 [76440,1143]>>
+
+Very nice image, George.
+It seems to me that the deeper you zoom into the boundary between the two
+images the more pronounced the phc effect becomes. Here's a couple of zooms
+into your "mandel_outline" image -
+
+btw, has anyone tried printing any phc images?
+Does the dithering effect seen on the screen translate well to an inkjet's
+output? (I will try it for myself, but just thought I'd ask in case anyone had
+perfected a printing technique). 
+Also, George, if I want to run your formula/image using a very high resolution
+"disk-video" mode, do I just set the value using p3, even if the number is
+very large?
+
+thanks, Les
+
+mandel_outline_z1  { ; Les St Clair [101461,2032]  1996  t=09m45s
+                     ; Zoom and re-color of George Martin's "mandel_outline"
+                     ; t=time using 486DX2-66 & video SF7 (1024x768)
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=0.000799958/0.561556/102.0553/1/-50 params=0/0/0/0/1024/0
+  float=y maxiter=500 video=sf7
+  colors=000J7Z<7>`Fw<6>5oP<10>007000000000A00<10>c00<16>A00000000UDG<10>z\
+  z0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<2>BB8EFAIIDLLG<10>zyn<15>\
+  UMH00000000053M<10>5Px<6>5wP<5>5Ur5Px5Ms<6>53M000000000b`c<5>nru<15>OI5<\
+  6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK000000A3M<2>H6W
+  }
+
+mandel_outline_z2  { ; Les St Clair [101461,2032]  1996  t=15m06s
+                     ; Zoom and re-color of George Martin's "mandel_outline"
+                     ; t=time using 486DX2-66 & video SF7 (1024x768)
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.0391729/0.55581/64.5358/1/32.499 params=0/0/0/0/1024/0
+  float=y maxiter=500 video=sf7
+  colors=000J7Z<7>`Fw<6>5oP<10>007000000000A00<10>c00<16>A00000000UDG<10>z\
+  z0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<2>BB8EFAIIDLLG<10>zyn<15>\
+  UMH00000000053M<10>5Px<6>5wP<5>5Ur5Px5Ms<6>53M000000000b`c<5>nru<15>OI5<\
+  6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK000000A3M<2>H6W
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  manjul_lace			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	24 July 1996 03:59:20
+From:  Lee Skinner, 75450,3631		#144796
+
+Les,
+
+ >>mandel_outline_z1   ; Les St Clair [101461,2032]  1996  t=09m45s
+ >>mandel_outline_z2   ; Les St Clair [101461,2032]  1996  t=15m06s
+ >>   ; Zooms and re-colors of George Martin's "mandel_outline"
+
+Very good zooms, Les.  While these two images are actually outside the
+boundaries of George's mandel_outline, they are both within my mjlc003 image
+in lhs_phc2.par.  They tempted me to explore further:
+(times are for 1600x1200 on a Pentium-166)
+
+mjlc016            { ; t0:13:55   Spaceship Mandelbrot  (PHC)
+                     ; Zoom into Les St Clair's mandel_outline_z1
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=+0.00211673357442279/+0.56117533072305930/1266.71
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=0000rUkNk<2>gBfe6df6a<9>x14z00z10z31y52<6>yW3x_4x`4<24>yrCzsDzrFz\
+  qGzoI<2>ymJymKxlKwkK<24>gWTgVUgVW<8>_SrZRpYQnXPl<79>FBCFBCEABEAA<2>F97F9\
+  6G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<4>ynFynHyoKyoMypP<12>yyw\
+  zzzyvy<7>mRl cyclerange=2/255
+  }
+
+mjlc017            { ; t0:07:38   Desert Splendor  (PHC)
+                     ; Zoom into Les St Clair's mandel_outline_z2
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.06020769595650197/+0.55875349281886730/512.6517
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000zz0wZc<26>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94R\
+  I4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3\
+  aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z10z31y52y62\
+  <11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  manjul_lace			Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		25 July 1996 03:23:14
+From:  Les St Clair, 101461,2032	#144828
+
+<< While these two images are actually outside the boundaries of George's
+mandel_outline, they are both within my mjlc003 image in lhs_phc2.par.>>
+
+In fact, I zoomed right out of George's image to see the whole Julia then
+zoomed back in again. So I guess it's a panned-zoom!
+I'm only part way through your "lhs_phc2.par", but "zmsu000" and "zmsu004"
+are current favourites.
+
+<<mjlc016             ; t0:13:55   Spaceship Mandelbrot  (PHC)>>
+This one brings a Pink Floyd title to mind - "Set the controls for the heart
+of the Sun"
+
+<<mjlc017             ; t0:07:38   Desert Splendor  (PHC)>>
+Beautiful - The cacti, and the sun beating down in the blue sky!
+
+Why stop when you're having fun? -
+
+DSN                { ; "Deep Space Nebula" Les StClair (PHC)  t=14m04s
+                     ; Zoom into Lee Skinner's Desert Splendor
+                     ; t=time using 486DX2-66 & video SF7 (1024x768)
+                     ; Les St Clair 1996 (Formula by George Martin)
+  reset=1930 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05897768745619422/+0.55751499461703210/5376.817/1/-12.5
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes
+  colors=000023<8>0AF0AG0BH0CI0CI0CJ<7>0DK0DK0DJ<7>08C07B069<5>001000113<4\
+  >58G6AJ6BL7CN<2>9FT9GUAHWAIXBIYBJZ<2>BJ_CK`BJ_BJ_<3>AIXAHW9GU<4>6BL6AJ58\
+  G<4>113000000<10>6C46D46D47E4<4>8G58G58G58G58G58G5<3>7E46D46C45B35B3<9>0\
+  00<5>R6AV7CZ8Db9FeAGiBIlBJ<3>uENwENxFOyFO<2>zFOzFOyFOxEOwEN<2>pDLnCKkBI<\
+  3>Y8DU7BP6AL58<2>713000000<10>AC4AD4BD4<3>DF5DG5DG5DG5DG5<2>DG5DF5CF5CE4\
+  BE4<2>AC49B38A3793782<4>220110111333777CCC<3>UUUYYY```dddhhh<2>pppsssuuu\
+  wwwxxxyyy<2>zzzzzzyyyxxx<3>qqqooolll<2>bbbZZZVVVRRRMMM<2>999444011
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  manjul_lace			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	25 July 1996 16:25:07
+From:  Lee Skinner, 75450,3631		#144847
+
+Les,
+
+>>Why stop when you're having fun? -
+
+Here's another from my next par file:
+
+mjlc046            { ; t0:13:57  Spider Web Dewdrops  (PHC)
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24756944125615350/-0.43213678672174160/275593
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000BTTz00<30>ZJE<6>wgF<8>XKDUHDSGC<4>GD9DC8DG7<2>BV4<2>ObE<6>7vc<\
+  2>zq0<4>7c7<4>JREFOF<2>38M<6>uI1<4>zaBzhD<11>961<5>ze7<4>vWWuT`v_e<3>zzx\
+  <13>GRX<2>GT`GUaGU`<31>FX2EY0EY0<18>8GG<3>OJSSKVWKZ_Kb<5>zIz<2>zvt<10>zt\
+  D<5>zYAzU9zT8<17>z00 cyclerange=2/255
+  }
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  Don's Moon In Space		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		25 July 1996 20:56:17
+From:  Les St Clair, 101461,2032	#144854
+
+Hi Lee,
+
+Very nice overlay!
+
+I think the process you described can be simplified a little by deleting the
+recorded colours from the overlay stage (or set "record colors?=n" when
+generating the par). This way, when the overlay promts for a colour map,
+just pressing return automatically loads the colours from the saved
+"lune1.gif". (therefore no need to save and re-load color maps). I've written
+the "savename=" and "filename=" into the par to make the process even easier.
+(well it works for me anyway<g>), so here it is again -
+
+1. Generate Donald Archer's lune1.gif  (identical to lune.gif except that
+color 0 is black and passes=1)
+
+lune1              { ; (c) 1996 Donald Archer 71544,657
+  reset=1930 type=mandel(fn||fn) function=conj/cosh passes=1
+  center-mag=-0.42174955083166750/+1.59423689240268600/1185.434/1.0454/-79\
+  .999 params=3.33/-3.34/0.0007 float=y maxiter=1024 periodicity=0 savename=lune1.gif
+  colors=000hbV<9>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta000BMZ<4>L4R<8>VH\
+  I<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF\
+  <13>K8C413000<15>svcsvcsvcsvc<10>_UMYRKXQKWPJUMHSJF<6>EAb<6>7Nu5Px5Nu<5>\
+  A5c<2>D6WE7UG8SH9QJANKBLMCLOEK<6>`Yab`cffi<3>nru<14>QK8WPB<9>WPBWPBXQD<8\
+  >keW
+  }
+
+2.  Save lune1.gif (just press <s>, the savename is written in the .par)
+
+3.  Copy from Fractal Frenzy:\1024\cophs\1cophs13.gif or generate the par
+
+cophs13            { ; Galaxies [LOAD THEN PRESS<a>, MAKE STARFIELD 100,200,5]
+                     ; Par and Image Copyright 1993-1996 by Lee H. Skinner
+  reset=1720 type=formula formulafile=96_msg_2.frm
+  formulaname=fzpcophs passes=1
+  center-mag=+0.44106348984999330/+0.80340682423720140/51823.54
+  params=0/0/0/0/0/0 float=y maxiter=1023 inside=0 logmap=yes
+  colors=000TtS<3>Awv<2>aHQ`LO_PL<3>c80``ZaicQJeEKvfJTlIYsHbfHP<2>y9M3xUAU\
+  UIx_26MVPQ<2>CiUhXTqjXzy`cRNg_KbVSdfVgrYWJXRKdMLlq70_ITZGYXEb_PkhQHqY9ze\
+  0NqVWKNRMLMOIfCRm5UdOQ<2>scTcOegTvONNARKULW<2>6RpWUL<2>Ez8bERe9Uh4XXJHTJ\
+  9PK0KUb2epcUZfdhjosMMb7PqUHK<2>7B5zLPhGVpDa`JJ<2>_I0Lcb4yqYFS<2>O0aaSN<2\
+  >ftGdKXhLdlNlt6HfYYlmfV_GOq7aVXcfdPAGC17gEMo9Iw3EMa_6ujYJK<2>PJ5gs670JRM\
+  MHPJ7SGecTjxYK90fJR<2>yIZKaO3uNjVWufbOEjdPO<2>rgLjRTu_YfKLlLHsNDaETb9Xc3\
+  aePW<2>thpWFL<2>H16RWaSpF19DXSP<2>KrNRVVGfavWuVUVOdaHphMKa6Mn9KeTMR<2>3V\
+  ZNAN<6>WDYB0B<7>G3UH4XH5X<2>G9WNGYUN_`Vagbe<5>zzU<10>z99<3>yOcxSkzUp<6>y\
+  rw<4>zfK<3>GfHFeCEc6JhDOnK
+  }
+
+4.  With the above image on the screen press <a> and generate a starfield of
+cophs13.gif with starfield parameters  of 100, 200, 5. 
+
+5.  Now generate the 2-D overlay of Donald Archer's moon with the spiral
+galaxy starfield in the background! Press <@> to execute the following par,
+and select lune1.gif for the overlay:
+
+night              { ; Star Pattern (c) 1996 by Lee H. Skinner 75450,3631
+                     ; Lune Overlay (c) 1996 by Donald Archer 71544,657
+  3d=overlay scalexyz=100/100 roughness=0 waterline=0 filltype=2
+  transparent=36/37 ambient=20 rotation=0/0/0 perspective=0
+  xyshift=0/0 xyadjust=-13/14 filename=lune1.gif
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+
+Subj:  FRACTAL INLAY...			Section: Fractal Sources
+  To:  ALL				26 July 1996 17:21:26
+From:  Robert W. Carr, 73753,2420	#144896
+
+Hi Everybody,
+
+Looks to me like a FRACTAL INLAY on Wood. Am I spending to much time in
+the sun do you think?
+
+--Bob Carr--
+
+
+Carr2579-F       { ; From a modified Sylvie Gallet frm.
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=Carr2579
+  center-mag=-0.0140546/-1e-006/0.2025841/1/180 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000H84<12>hMB<14>H84F73FB7<14>zo`<15>FB7000F73<12>eLAhMBiOD<13>ym\
+  Zzo`ymZ<14>hMBfLAdKA<13>F73000000<13>e0F<11>zz0<11>g50e00b00<14>000UUZ<2\
+  0>nnuoownls<11>fABf67e33d00e32f64<13>zo`<15>Q00F73
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Round function			Section: Fractal Sources
+  To:  All				27 July 1996 18:21:14
+From:  Les St Clair, 101461,2032	#144937
+
+Here's my first dabble with the new rounding function from Fractint 19.4 -
+
+I've modified an old formula to include the "round" function. You can use the
+variable <P1> to control the influence of the rounding function. Small values
+for p1 gives largest effect, larger values (100-1000+) reduce the effect.
+
+
+lf_01r_01          { ; "Hatchling" Les St Clair [101461,2032] 1996 t=03m49s
+                     ; Requires Fractint 19.4 or later
+                     ; t=time using 4DX2-66 & video sf7 (1024x768)
+                     ; color map from Carr2579
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=lesfrm01r
+  function=sin/sqr passes=1
+  center-mag=8.88178e-016/-4.44089e-016/0.4923928/1/-90 params=4/4
+  float=y maxiter=300 outside=atan
+  colors=000H84<12>hMB<14>H84F73FB7<14>zo`<15>FB7000F73<12>eLAhMBiOD<13>ym\
+  Zzo`ymZ<14>hMBfLAdKA<13>F73000000<13>e0F<11>zz0<11>g50e00b00<14>000UUZ<2\
+  0>nnuoownls<7>hNQhKNgHJgDFfABf67e33d00<2>g96iD9jGBlJDmMG<8>zo`<15>Q00F73
+  }
+
+lf_01r_04          { ; "Snow-capped Peaks" Les St Clair 1996       t=12m23s
+                     ; Requires Fractint 19.4 or later
+                     ; t=time using 4DX2-66 & video sf7 (1024x768)
+                     ; color map from Carr1986
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Lesfrm01r
+  function=tan/cotanh passes=1 center-mag=-0.0250784/1.26588/0.990869
+  params=20/0 float=y maxiter=1000 inside=bof60 outside=summ
+  colors=0052BG<10>4KUU`k<14>`owhhh<14>zzzF00<14>h00<15>000UMF<14>zo`<15>F\
+  FFHUF<14>hzM<15>0F0<15>zz0F00<13>f00h00i21<14>w`F<23>211000000<4>0000000\
+  11122<3>46857968A79B7BD<4>BGJUMF<14>zo`18B<2>2AF
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Giant Mushroom			Section: Fractal Sources
+  To:  All				29 July 1996 04:21:17
+From:  Lee Skinner, 75450,3631		#144972
+
+Here is an interesting zoom into Bob Carr's latest fractal posting:
+
+c257909            { ; t0:22:23  Giant Mushroom
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Robert Carr, MD
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=carr2579 passes=1
+  center-mag=0.385611/-1e-006/5.834855/1/-90 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000SZ0ZH0P00z2BzSDzYFzcH<4>xhTwiWxkXymZzo`<4>tfTsdRqaP<4>eNDbJA`I\
+  9<11>F73000000<13>e0F<11>zz0<11>g50e00b00<7>I00G00F34<7>0W`<14>rsovuqxwr\
+  zyt<11>wfCve8vc4ua0ub3<12>yuqzwuxus<19>F73<13>hMB<14>H84F73FB7<14>zo`<15\
+  >FB7000F73<12>eLAhMBiOD<3>nVJU0` cyclerange=7/254
+  }
+
+Lee Skinner
+
+;; ************************************************************************ ;;
+
+Subj:  2 phc's from my next par		Section: Fractal Sources
+  To:  All				01 August 1996 21:08:06
+From:  Lee Skinner, 75450,3631		#145107
+
+Here are a couple of (1024x768) PHC pars from my next upload (lhs_phc5.zip).  Formulas are in Sylvie's 
+sg-phc-1.zip:
+  (Note: Times are 1600x1200 on a Pentium 166)
+
+dg51008            { ; t0:26:25  Bathesphere in Kelp Forest
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=JD-SG-05 passes=1
+  center-mag=-1.27927410395549300/-0.05616394688241640/985.3273
+  params=0.9/2.5/0.7777777777777778/2.5/1024/0 float=y maxiter=1023
+  inside=0 logmap=yes symmetry=none video=sf7
+  colors=R0S0I7KG6OE5SC4<3>v2At7IrDQ<2>tS_uXcvagwfkwknxpryuvzzz<35>JfuHetH\
+  dr<7>EZhEYfDYeDYd<9>BTTASRARQAQPAQP<3>BPNBPNBOMBNM<20>121000000<70>000DB\
+  B<12>EC9EC9DC8<3>BV4<9>svc<7>dc7<5>FOFJNF<2>caEkfDrkDzqCzmC<8>v8A<9>z08
+  }
+
+sg_6a14            { ; t0:52:46  Joshua Tree on Watermark
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=jd-sg-06 passes=1
+  center-mag=-0.55204102118722210/+0.47736083011901150/356087.2
+  params=0.5/0.3/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=20
+  symmetry=none periodicity=0 video=sf7
+  colors=00005zv49x3Az1B<4>z4N<2>g5U<8>m8m<37>vn4vo3vp2wr0wr0wr0<42>yy0zz0\
+  zy0<18>zU0zS0yQ1yO1yM1yK1zI1<3>zN1zO1yO1<17>gD1<4>L82L03<5>G98DB9EBA<7>S\
+  0EN6JHDOHGQHKS<5>jQe<9>N_xK`zKaz<6>Gfz<3>cfz<4>swz<4>r`1<2>i`2f`3c`4``5Z\
+  _6<8>8TC<3>DP8FO7HL7JI6<3>jA5<4>t58 cyclerange=2/255
+  }
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  KNIGHT'S BLAZON...		Section: Fractal Sources
+  To:  ALL				02 August 1996 04:19:15
+From:  Robert W. Carr, 73753,2420	#145128
+
+Looks to me for all the world like a KNIGHT'S BLAZON. Probably that of
+Sir Robert Carr of Eshott (circa 1530) <G>.
+
+--Bob Carr--
+
+
+Carr2599-F               { ; From a modified Sylvie Gallet frm.
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Carr2599
+  center-mag=-0.000155054/-0.00329438/0.8383807 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000BBD<2>333`UM<14>zo`000<13>ZFx<10>0hh<10>0h0<10>zz0<9>f50d00`00\
+  <9>000000<8>ZFw<11>0zz<8>0U0<10>zz0<11>`IrZFwXEs<15>203000000``h<13>7Mw<\
+  11>oow<13>000<15>h00<12>7Mw<12>``h<6>HHKBBD
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Round() function			Section: Fractal Sources
+  To:  Timothy Wegner, 71320,675	04 August 1996 18:25:07
+From:  Sylvie Gallet, 101324,3444	#145212
+
+Tim,
+
+>> That's what it did in my test the first time, which started with a 
+>> negative integer and added .1 repeatedly.
+
+  The decimal or the binary ".1" ?
+
+>> The issue may be that Fractint uses 64 bit double numbers, and the 
+>> coprocessor uses 80 bit numbers.
+
+  BTW, how are they coded (sign bit, exponent, mantissa)?
+  Whatever the representation used (64 or 80 bits), a decimal number ending by
+  ".5" should be translated to a binary number ending by ".1" and I don't
+  understand how a bit could be lost in a 64 bits <-> 80 bits conversion.
+  The odd thing is that the problem occurs exactly for one of these numbers
+  out of two.
+  Do you have a way to display the numbers as they are coded in memory?
+
+>> Seems to me, that for any of the rounding functions, behavior at the 
+>> boundary must be considered random, since one can't guarantee to the 
+>> last bit whether the number is at, above, or below the exact boundary.
+
+  At least for round() - the others seem to work correctly. 
+  IMO, it's important that even round() works at the boundaries since formula
+  writers may want to use it - exactly as Jim did - for testing the parity of
+  an integer. Though you don't like this idea, I think it would be better to
+  release a 19.499999... <G!> version with your fix.
+
+>> Can you come up with a test formula that shows the behavior of the 
+>> various functions but isn't critically dependent on boundary behavior?
+
+  The par "test-round-funct" draws 2 graphs at a time - here, floor (red) and
+  ceil (green).  You can change the 2 first functions to trunc and round.
+
+	-  Sylvie
+
+
+test-round-funct   {
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=graph
+  function=floor/ceil/flip/flip passes=1 center-mag=0/0/0.2
+  params=0.002/0.001 float=y maxiter=99 inside=255
+  colors=000hhhzK0zzz0zKzzzzzzzzz0Kzzzz<5>zzzww0zzz<236>zzz000
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  All				05 August 1996 04:33:20
+From:  Les St Clair, 101461,2032	#145239
+
+Hi Everyone,
+
+Here's a bit of fun with 3D_Transform.
+Based on Brian Jones modified Sylvie Gallet "Fractint" idea, this
+3d_transform looks like the name "Fractint" has been carved in rock!
+Restore the "fractint.gif" image and hit the <s> key (savename=fractint.gif
+is written into the .par), then use the image for the 3d_transform. Enjoy!
+
+- Les
+
+
+Fractint_gif       { ; Generate at 1024x768 save as "Fractint.gif"   t=08m29s
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=sinh/cabs/atan
+  center-mag=-1.08813/0.105609/1.054746 float=y symmetry=none
+  periodicity=0 savename=fractint.gif
+  colors=000pfU<7>QIA000<2>000QG7<10>zUA<4>xr2ww0xq2<3>zUA<8>KG1000000000F\
+  wU<12>5K30005K3<10>FwU000000BGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`Fw<12>\
+  DGMBGJ9EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4>GJUG\
+  JVFLV<5>9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<4>JSBMTDOUFRVHUXIXYK_ZMb_O<\
+  4>gfThhUhgU<6>jbRkaRmcS<5>zo`wlZsiW
+  }
+
+Fractint_in_Rock   { ; 3d_transform of "Fractint.gif" - Les St Clair t=10m24s
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  3d=yes filename=fractint.gif scalexyz=85/90 roughness=200
+  waterline=0 filltype=2 ambient=20 rotation=-30/-30/0 perspective=0
+  xyshift=-6/-8
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Mandel+Julia+Newton		Section: Fractal Sources
+  To:  All				06 August 1996 16:58:18
+From:  Sylvie Gallet, 101324,3444	#145323
+
+Hi Everybody,
+
+  Lee dreamed of it, I did it!
+
+  The following formulas draw a Mandelbrot with two other fractals visible in
+  odd or even bands - the Mandelbrot have no colors, only concentric
+  boundaries to separate the other two fractals.
+
+  For each pixel, the 300 first iterations are used to determine whether it's
+  inside or outside of the Mandel set and in that case, in which band (odd or
+  even). Then, z is re-initialized to pixel and the Julia or Newton algorithms
+  are used until the orbit escapes or maxiter is reached.
+
+  In m+j+n_2, I just swapped the Julia and Newton roles.
+
+  Enjoy!
+
+	-  Sylvie
+
+
+MJN-1001         { ; Copyright Sylvie Gallet [101324,3444], 1996
+                   ; 3 hrs 13 mins on a Pentium 166 at 1600x1200
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=m+j+n
+  passes=1 periodicity=0
+  center-mag=-0.78252900000000000/-0.21069500000000000/28.49976
+  params=1/0/-0.7927/-0.1608/5/0 float=y maxiter=1023 inside=0
+  colors=0005fJ5fH6fF<4>5X34U04T1<14>7ET<21>F97F96G85G74<3>I00<8>V92WA2XB2\
+  YD3ZF4<17>vkJwmKwmM<12>ypwypyyny<14>e6d<4>n4O<5>zoI<35>7X_<17>zmt<12>zYd\
+  zXbzWazU_xT_<18>C2_<24>8`b7bc7bb<9>5fK
+  }
+
+MJN-1002         { ; Copyright Sylvie Gallet [101324,3444], 1996
+                   ; 3 hrs 23 mins on a Pentium 166 at 1600x1200
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=m+j+n
+  center-mag=-0.81625800000000000/-0.19764900000000000/116.7696
+  params=1/0/-0.7927/-0.1608/5/0 float=y maxiter=1023 inside=0
+  passes=1 logmap=305 periodicity=0
+  colors=000AOD6QD<6>3SD3SE4TF<10>AZQB_RC`SDaUEbV<13>SuhUwjUwi<20>AcG9bF8a\
+  D7`B<5>1V20U01T0<14>UA0<13>re0sh0uj0wm0wm1<33>wwlwwmwvj<15>zh0<16>zZV<25\
+  >dB2cA0cA0<13>XE0WE0VE0UF0TF1<5>LB9KAAKAA<13>BNCAODAOD9OD<7>6QD
+  cyclerange=2/255
+  }
+
+MJN2-101         { ; Copyright Sylvie Gallet [101324,3444], 1996
+                   ; 3 hrs 08 mins on a Pentium 166 at 1600x1200
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1 center-mag=0.126281/0.645246/3.893961
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=00KcK1<2>`E100K<29>0FY0FY0GY0HY0HY<3>0KZ1LZ3M_<29>lon<14>4ic<12>1\
+  XG1WE1VC0UA2TA4R9<12>W21Z00Z02<20>m8m<37>vn4vo3vp2wr0vr0ur0<29>Kh4<18>wv\
+  1<18>dM1
+  }
+
+MJN2-102         { ; Copyright Sylvie Gallet [101324,3444], 1996
+                   ; 3 hrs 12 mins on a Pentium 166 at 1600x1200
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1 center-mag=0.128428/0.677766/38.93961
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=00KcK1<2>`E100K<29>0FY0FY0GY0HY0HY<3>0KZ1LZ3M_<29>lon<14>4ic<12>1\
+  XG1WE1VC0UA2TA4R9<12>W21Z00Z02<20>m8m<37>vn4vo3vp2wr0vr0ur0<29>Kh4<18>wv\
+  1<18>dM1
+  }
+
+MJN2-103         { ; Copyright Sylvie Gallet [101324,3444], 1996
+                   ; 3 hrs 24 mins on a Pentium 166 at 1600x1200
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  center-mag=+0.12133550650000000/+0.66458958400000000/225.6883
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  passes=1 logmap=300 periodicity=0
+  colors=000wre<6>wmN<15>cM9<8>wh4<10>_J4XG5XH5<13>_gG`iH_gI<8>RWJPUKOUJ<8\
+  >AR8<20>vueywgyve<13>xsOwrMwrM<45>ETaDSbESb<13>ZPU`OT`OT<29>wqtxruwpu<16\
+  >fHueEtfIt<10>usywwzwwx<5>wsh
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Pseudo HiColor Is Here!		Section: Fractal Sources
+  To:  Jim J. Deutch, 104074,3171	06 August 1996 17:29:21
+From:  Jim J. Deutch, 104074,3171	#145325
+
+Hi everyone -
+
+Here's a couple of new PHC images.  I'm working on other stuff now, so I
+won't wait until I have enough for a whole .par <g>
+
+JDfrm03801          { ; Magnetic Orbit
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JDfrm038
+  passes=1 center-mag=4.44089e-015/2.22045e-015/0.1848415
+  params=0/-5/1/0/1024/0 float=y maxiter=255 outside=atan
+  colors=000z00z00z00<7>N00P00S00X00Z00a00f00i03n08p0Ds3Ix8LzGPzNU<2>ziiza\
+  fxUanNZdGUU8SL1NB0L10G00B008003001<5>00000000100600B00D00I00N00P<2>00d00\
+  f00k00p00u00x00z<17>00z01z03z<11>0zz<5>0zzLzz0zz<4>0zz0zz0zx0zu<2>0zf0zd\
+  <2>0zP0zN0zI0zD0zB0z60z1<28>1z06z0Bz0Dz0Iz0Nz0Pz0<2>dz0fz0kz0pz0uz0xz0zz\
+  0<5>zz0zz0zx0zs0zp0zk0zi0zd0za0zX0zU0zP0zN0zL0zG0zD0z80z60z10<22>z01z06z\
+  08z0Dz0Gz0Lz0Nz0Pz0Uz0Xz0az0dz0iz0kz0pz0sz0xz0z<7>z0zz0uz0sz0nz0kz0fz0dz\
+  0Zz0Uz0Sz0Nz0Lz0Gz0Bz08z03z01
+  }
+
+JDfrm03802          { ; The Well
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JDfrm038
+  passes=1 center-mag=-0.413146/0.263048/3.875969
+  params=-0.52/0.52/1/0/1024/0 float=y maxiter=255 outside=atan
+  logmap=4
+  colors=G00Jz0<5>0z0<19>0zz<19>00z<19>z0z<8>K06W00<9>WW0<9>0W0<9>0WW<9>00\
+  W<9>W0W<9>W00<9>zWW<9>zzW<9>WzW<9>Wzz<9>WWz<9>zWz<9>zWW<3>P66zzzK00<8>z0\
+  0<19>zz0<12>Mz0
+  }
+
+
+Jim
+
+;; ************************************************************************ ;;
+
+Subj:  bej0462				Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		07 August 1996 01:21:26
+From:  Brian E. Jones, 102702,2213	#145359
+
+Hi Lee,
+
+Here's the corrected par BEJ0462:
+
+BEJ0462            { ; "A.C. Jobim's Wave"                       t=0:16:31.03
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=bej-0041-a passes=1
+  center-mag=+4.45283205060437900/+7.90375618177823000/3103.285/1/-134.999
+  float=y maxiter=2500 inside=0 symmetry=none periodicity=0
+  colors=0070DK<4>007G7S<19>VDqWEsXEtXFv_Hr<9>zdF<8>_HqXFuWEt<17>G7S<3>ww0\
+  <4>MF`<8>0U`<5>JNsMMwOQw<5>`oz<8>I00<6>ztk<8>U00<10>z``<4>000<53>0000000\
+  29<19>0ip0kr0mt0ow0pq0ql<6>0vC0w70vD<6>0pq0ow0mt<12>0GN
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Cool 3-D transform		Section: Fractal Sources
+  To:  All				09 August 1996 00:33:00
+From:  Brian E. Jones, 102702,2213	#145514
+
+Hi All,
+
+Here's a cool 3-D transform done on Damion Presogna's "Cubist-30" image.
+To me it looks like either fog around a mountain scene, or blowing snow
+around some mountains.  Thanks to VDP for the image, and Les St. Clair for
+the 3-D parameters!
+
+Mountain_Gif       { ; use 1024x768 - Save as Mountain.gif 
+                     ; Damion Presogna's "Cubist-30" image.                      
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=block_2
+  function=sqrt/ceil passes=1
+  corners=1.0100489/1.9991398/1.0798435/1.8216617 params=0/0 float=y
+  maxiter=1023 outside=atan periodicity=0 savename=mountain.gif
+  colors=000036<2>14B15C17E18F29G2CI2DJ<3>3NP3QQ4UR4WT<5>5p_6ta6yb6yc6td<2\
+  >7ig7fi8bi8_j8Wk8Ul9Qm<2>9IpAGpADrACrA9s<2>B6uB4uC4v<2>C3xDIx<4>EKyELzEM\
+  zFNzFPzFQzFSzGTzGWzGXz<5>IkyImyIpyIsxJvxJzxJzw<2>KpuKmuKkt<2>LcrLarM_pMX\
+  pMWoMTn<4>OMiOLiOKg<4>PIbQ8a<2>Q9YRAXRBWRCURDT<4>TMMTOKTRJ<3>UaDUdCVhBVj\
+  9<2>Wu5WyUWyV<2>XnYXjYXhZYd_<4>ZRcZOdZMe_Ke_If<5>`Aja9ka9l<2>b7nb7nb8o<4\
+  >cCrdDrdFs<2>eLteOueQueTvfWv<3>ggxgjxgnxgqxhuyhyyhyy<2>inzijzigzjdz<4>kQ\
+  zkOzkLzlJzlHz<5>m9yn8yn8yn7yn7xo5x<2>o6wp7wp8wp9vpAvqCuqEuqFt<5>sVqsYqs`\
+  pscotgotintmntpmutluyluykutjvpjvmivih<2>wafwZewVdxSdxPc<2>yIayF`yE_<4>z7\
+  W
+  }
+
+Mountain_Fog       { ; or is it Mountain snow storm? 3-D transform of VDP's
+                     ; "Cubist-30" image. Cool image Damion!
+                     ; 3-D parameters are taken from Les St. Clair's 
+                     ; "Fractint-In-Rock" 3-D transform image
+  3d=yes filename=mountain.gif scalexyz=85/90 roughness=200
+  waterline=0 filltype=2 ambient=20 rotation=-30/-30/0 perspective=0
+  xyshift=-6/-8
+  }
+
+Enjoy!
+Brian
+
+;; ************************************************************************ ;;
+
+Subj:  Cool 3-D transform		Section: Fractal Sources
+  To:  Brian E. Jones, 102702,2213	10 August 1996 10:48:10
+From:  Les St Clair, 101461,2032	#145612
+
+Hi Brian,
+
+>>Here's a cool 3-D transform done on Damion Presogna's "Cubist-30" image.<<
+
+Here's a variation using spherical projection:
+
+
+SBP                { ; "Small Blue Planet" - Les St Clair 1996     t=04m39s
+                     ; 3d_Spherical_transform for "mountain.gif"
+                     ; t=time using 486DX2-66 @ 1024x768
+  3d=yes filename=mountain.gif sphere=y latitude=-90/90
+  longitude=180/18 radius=110 scalexyz=90/110 roughness=85 waterline=0
+  filltype=5 lightsource=1/2/4 randomize=5 ambient=75 perspective=0
+  xyshift=0/0
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	09 August 1996 02:34:05
+From:  Loren G. Dobert, 72332,507	#145528
+
+I enjoyed the "Fractint in rock" image enough to fiddle with it a bit to
+create this:
+
+Fractint_gif-LGD   { ; Modification by Loren Dobert [72332,507]
+                     ; Generate at 1024x768 save as "Fractlgd.gif" t=08m29s
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=cosh/atanh/sqrt
+  center-mag=0.0116083/0.699111/1.648041 float=y symmetry=none
+  periodicity=0 savename=fractlgd.gif
+  colors=000p0Pz00<10>000<9>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<3>FwU<12>5K3\
+  5K35K3<9>EsSFwUEiRDVNBGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`Fw<12>DGMBGJ9\
+  EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4>GJUGJVFLV<5\
+  >9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<3>GR9JSBMTDOUFRVH<2>_ZMb_Oc`P<4>hh\
+  U<5>icSjcRjbRkaRmcS<5>zo`wlZsiW
+  }
+
+This works great with any of the posted 3d transforms.
+
+L.D.
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Loren G. Dobert, 72332,507	10 August 1996 10:48:12
+From:  Les St Clair, 101461,2032	#145613
+
+Hi Loren,
+
+>>I enjoyed the "Fractint in rock" image enough to fiddle with it a bit to
+create this:<<
+
+Nice variation.
+...now if only I could figure out Sylvie's technique for drawing those
+letters!
+
+Meanwhile, here's another 3d_transform for your "Fractint_gif-LGD" image.
+It could be the grand finale of a firework display...
+
+Fractint_gif-LGD3d { ; "Fractint Fireworks" by Les St Clair 1996 t=03m55s
+                     ; 3d_transform of Loren Dobert's "Fractint_gif-LGD"
+                     ; t=time using 486DX2-66 and 1024x768 res.
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  3d=yes filename=fractlgd.gif sphere=y latitude=-90/90
+  longitude=180/0 radius=142 scalexyz=90/142 roughness=16 waterline=0
+  filltype=2 transparent=2/44 ambient=20 perspective=0 xyshift=0/-19
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Cool 3-D transform		Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	10 August 1996 19:31:17
+From:  Brian E. Jones, 102702,2213	#145625
+
+Hi Les,
+
+I'm glad you liked my image.  
+
+Lee was right, your image looks like an icy moon around one of the outer
+planets.  That inspired me to give it one more transform.  Thias one looks
+either like a planet very near the sun, or the sun itself.  I can't make up
+my mind.  If it's the sun, there's not very much flare activity going on with
+it.
+
+Inner_Planet_gif   { ; Generate at 1024x768 save as "InnrPlnt.gif" t=01m26s.
+                     ; From Damion's "Cubist-30" image
+                     ; Brian E. Jones 102702,2213@Cserve.com
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=block_2
+  function=sqrt/ceil passes=1 center-mag=1.50459/1.45075/2.696078
+  params=0/0 float=y maxiter=1023 outside=atan periodicity=0
+  savename=innrplnt.gif
+  colors=000<11>m70q80u90zA0zC0<12>zk0zn0zp0zr0<2>zx0zz0zz1<29>zzxzzzzzz<6\
+  1>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<26>s22
+  }
+
+Inner_Planet_3-d   { ; 3d_trnsfrm of "InnrPlnt.gif" use 1024x768 res.
+                     ; Could this be a missing planet between Mercury & Venus?
+                     ; Modification of Les St. Clair's "SMB" image 
+                     ; Brian E. Jones 102702,2213@Cserve.com
+  3d=yes filename=innrplnt.gif sphere=y latitude=-90/90
+  longitude=180/18 radius=110 scalexyz=90/110 roughness=85 waterline=0
+  filltype=2 randomize=5 ambient=75 perspective=0 xyshift=0/0
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Cool 3-D transform               Section: Fractal Sources
+  To:  Brian E. Jones, 102702,2213	11 August 1996 02:16:17
+From:  Les St Clair, 101461,2032	#145640
+
+Hi Brian,
+
+>>Inner_Planet_3-d    ; 3d_trnsfrm of "InnrPlnt.gif" use 1024x768 res.
+                  ; Could this be a missing planet between Mercury & Venus?<<
+
+I'd go with your second description, kind of looks like a picture of the sun,
+taken from a solar obervatory.
+
+I applied "light source" to your image and now I think we have "Io",
+companion moon to Europa. This is the moon with lots of volcanic activity,
+whose surface is stained black, orange and yellow with sulphur!
+
+By the way, I believe Aurthur C. Clarke published a book about terra-forming
+Mars. He used many computer generated landscapes produced using a fractal
+landscape program called "Vista Pro" - does anybody out there have any
+experience with this program?
+
+Io_3d             { ; 3d_transform of "InnrPlnt.gif" use 1024x768  t=04m50s
+                    ; "Io, Moon of Jupiter" by Les St Clair [101461,2032] 1996
+                    ; 3d_transform for Brian E. Jones "Inner Planet" image
+                    ; t=time using 486DX2-66 and video=SF7
+  3d=yes filename=innrplnt.gif sphere=y latitude=-90/90
+  longitude=180/30 radius=100 scalexyz=90/100 roughness=90 waterline=0
+  filltype=5 lightsource=-1/1/1 randomize=2 ambient=88
+  perspective=0 xyshift=0/0
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Cubist .par & .frm		Section: Fractal Sources
+  To:  Vincent Presogna, 76455,2222	11 August 1996 00:35:11
+From:  Les St Clair, 101461,2032	#145636
+
+Hi Damion,
+
+Loved the new formulas (the best use yet of the new rounding funcions).
+Favourites from the new collection are cubist_09 & cubist_33 and, oh...yes,
+the favourite name has to be "Spelling Bumba Clot" (your mind works in a very
+strange way<g>)
+
+cubist_09 has so much happening in it that I just had to try a couple of
+zooms. These two are strictly for 3d_transforming though (I'm having a kind
+of 3d_weekend!):
+
+Cubist_09_Z01      { ; Zoom of Vincent Presogna's "Tulane Ma Qua"  t=07m54s
+                     ; Use 1024x768 and savename=cub09_z1.gif for 3d_transform
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=block_4
+  function=tan
+  corners=0.70082392/0.84284816/0.10749566/0.54124753/0.54375175/0.3169252\
+  2 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023 inside=bof60
+  outside=atan savename=cub09_z1.gif
+  colors=000A8TEHaIQj3Yq9e_FYI0L0<3>yrB<4>z00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4\
+  >zAz<9>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>5u0<9>5B0<8>zz0<12>eL2dH2bE2`A3aA\
+  3<19>u8Bw7Cw8Cv8Dv9E<12>zCmzCmzCmzzzYXc<6>7qw<20>P4VQ1TS4U<9>r_f<8>Uq1Xq\
+  2_q4<8>40B<6>50H00E32J65O
+  }
+
+Cubist_09_Z01_3d   { ; 3d_transform of "Cubist_09_Z01" Les St Clair  t=01m08s
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+                     ; based on Damion Vincent Presogna's "Tulane Ma Qua"
+  3d=yes filename=cub09_z1.gif scalexyz=80/95 roughness=600
+  waterline=0 ambient=20 rotation=40/20/0 perspective=0 xyshift=14/59
+  }
+
+Cubist_09_Z02      { ; Zoom of Vincent Presogna's "Tulane Ma Qua"  t=03m47s
+                     ; Use 1024x768 and savename=cub09_z2.gif for 3d_transform
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=block_4
+  function=tan
+  corners=0.885664417/0.786699591/0.150996478/0.183400728/0.834483039/0.21\
+  9238314 params=0/0/0.113/0/-0.125/0 float=y maxiter=1023
+  inside=bof60 outside=atan savename=cub09_z2.gif
+  colors=000TE`<3>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>5u0<9>5B0<8>zz0<14>bE2`A\
+  3aA3<19>u8Bw7Cw8Cv8Dv9E<11>yBjzCmzCmzCmzzzYXc<6>7qw<20>P4VQ1TS4U<9>r_f<8\
+  >Uq1Xq2_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yqbe_FYI0L0<3>yrB<4>z00<6>Gk0<2>ns\
+  1zz0<4>z66<7>Y0L<4>zAz<4>ZEd
+  }
+
+Cubist_09_Z02_3d   { ; 3d_transform of "Cubist_09_Z02" Les St Clair  t=01m06s
+                     ; t=time using 486DX2-66 and video=SF7 1024x768
+                     ; based on Damion Vincent Presogna's "Tulane Ma Qua"
+  3d=yes filename=cub09_z2.gif scalexyz=90/90 roughness=500
+  waterline=0 ambient=20 rotation=40/45/0 perspective=0 xyshift=0/0
+  xyadjust=29/40
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  formula for palette grid		Section: Fractal Sources
+  To:  Ken Conrad, 71561,2331		11 August 1996 08:43:06
+From:  Sylvie Gallet, 101324,3444	#145650
+
+Hi Ken,
+
+>> I would like to generate an ordered array of 250 to 256 color palette 
+>> squares which will fill the fractal window. This grid will be arranged 
+>> in a logical order of escape colors, similar to the palette editor, with
+>> color number one at top left to color number 256 in the lower right.
+
+  I've already done exactly what you wish. Since it uses trunc(), the formula
+  requires Fractint 19.4.
+
+	-  Sylvie
+
+
+palette            { ; Sylvie Gallet [101324,3444]
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=palette
+  corners=-0.05015674/15.94984/16/0 float=y maxiter=256 inside=0
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<5>zbjFjj<5>zjjFrj<4>rrjzywccdWW\
+  Wz000z0zz000zz0z0zzzzz
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Framed Mandelbrot...		Section: Fractal Sources
+  To:  ALL				12 August 1996 20:27:19
+From:  Robert W. Carr, 73753,2420	#145702
+
+Hi Everybody,
+
+This Mandelbrot variant comes with it's own frame. It's the first time I've
+ever used >>pixel^450<< in a formula.
+
+--Bob Carr--
+
+
+Carr2664-F      { ; From a modified Sylvie Gallet frm.
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Carr2664
+  center-mag=-0.00991492/-0.00799996/0.8920959 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=00052A<9>ZFw<11>0ww<11>00U<10>000000<10>zz0<11>0U0<23>sve<8>0Zc<6\
+  >000<13>CILDKNFIL<14>`00<15>yfF<15>Zd0<15>zo`<15>MMU000<14>d00<14>NLSMMU\
+  LLS<13>112000000315
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  formula for palette grid		Section: Fractal Sources
+  To:  Ken Conrad, 71561,2331		13 August 1996 20:08:12
+From:  Les St Clair, 101461,2032	#145751
+
+Hi Ken,
+
+>> I haven't seen many comments here about printed output from Fractint, is
+this an uncommon act, or am I unique...<<
+
+I use an Epson Stylus Color, it will give 720x720dpi with the appropriate
+paper. I have been very pleased with the output and have a few framed fractal
+images in my office. I haven't tried the Fractint print ouptput, but perfer
+to use a Windows photo-manipulation package (such as Photoshop), although
+just about any Windows program will give good output due to direct use of the
+windows printer driver for the Epson (or other specified printer).
+
+The problem that you are seeing, as you may know, is due to the difference
+between the colour mixing techniques employed for Monitors (additive mixing)
+and printers (subtractive mixing). Coloured lights, or light emitting
+phosphors, of three primary colours (RGB), combine to produce white light.
+The areas where two colours overlap produce the secondary colours (CMY).
+Colour printers do the reverse, i.e. mixtures of CMY are used in combination
+to produce RGB, or all three together to produce black. It is for this reason
+that the colour output from a printer rarely matches that seen on a monitor.
+
+Sylvie's solution should be very useful to all fractal print enthusiasts
+(she's a geniuns, isn't she!!). I've used a different technique to compare
+on-screen color maps with the printed output -
+
+.map_selector_tool { ; CP Mandel for MAP viewing. PRESS F2 for instructions
+                     ; Restore image> press <E>, press PgDown 4/5 times>
+                     ; Press <enter> then <L> to select & view colour MAPs
+                     ; Les StClair 1995
+  reset=1920 type=mandel corners=-7.967518/1.818761/-4.984508/2.355201
+  params=0/0 potential=255/400/0 colors=@default.map
+  }
+
+If you patch this .par into "Fractint.par" it will appear as the first option
+when you select <@> When you press <e>, the palette editor is called. Press
+PgDown to re-size the palette editor until it fills about 2/3 of the screen
+area. The upper right corner displays a small CP Mandelbrot. Hitting <L> loads
+in the chosen color.map. The saved screen images can then be used to give a
+printed output record for the various color maps. The only difficulty is
+grabbing the full screen DOS image, for this you will need some additional
+utility (I have used "Screen Thief" in the past).
+...come to think of it, perhaps the Fractint developers may consider adding
+a "print screen" option to v.20???
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  allens2.par			Section: Fractal Sources
+  To:  All				17 August 1996 10:45:22
+From:  George Martin, 76440,1143	#145868
+
+Hi,
+
+Allen responded to my recent message be sending me the following, which
+contains the Martian color coding rather than the reference to sweater.map.
+If you don't have that map file, you will want to paste this into allens2.par
+
+
+eyeball            { ; light entering an eyeball
+  reset=1930 type=formula formulafile=96_msg_2.frm formulaname=cubic
+  center-mag=0.559654/5.55112e-016/2.464608 params=0/0 float=y
+  maxiter=250 inside=startrail
+  colors=000w9dHnnzH9vcJHZEPmADUvoO`ZmHA6MNpXY2zIsLmkQHabVI49Np4RDNT7N7Hnx\
+  brbog1IsM9x9ryXt5btrYS6_1`aqitNO2UovcOMCNt8qKhf6jZ3YuVga8mV_JsT0x927XIxH\
+  8dN3dkI3IqrYCHz2rp5jBnJncqNxgBeglr`6zm6FcxrOH5mjoVOOqwdK7zGP5g14n1TCeBKj\
+  ZkpsdRsbvQCKuGjeSQMeIe`68WOL6zjGl_pDWx6e_F5HARLZUTbLY9x`3i_Mt2b0qBCqd`Ix\
+  UZMgTqhH0rFJhNiPFxzwjkjoIqVaXQJekv7xrafehrgmKlVSnVM`YOQ4QG_cCi1yyoEE_UZB\
+  88iNX1tkCY9bGlTkW__OQ2JF2iJTrv9ohnKt7y`THHcB3XERhOreX35nF0jWGDoDoRkcXfCg\
+  JqpGDvYD4j7bYeGBH2fyLAQUe3_4qPSitKYeA0mnUADf71krF74OoRKPOAY6lays7jI2TRqY\
+  maNcXOZWaXZ0cIQIygkugvY`O5Qqnc7FfV0`hK`mFTbylj64N2Y2_IpJVJzO4gVNleqzFXqV\
+  P6TGRXKDK3UK5jabdIskESRwYUsbKvMUjZ4cs1VlY0SwUYaATtfwOOr_OfLYnd4fJuBiaN`Q\
+  `fZSgBaetulhpjHQZWiCB246WCLyBO4LwGCbIMNvN7KdzSaGDdpL_bNpCOmcL_tLxP3cTuip\
+  aBEEO6MQREg2k712ZP`ovBalsD113zVKlmBei1Yn7obhAU7yCAZTz7C
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-on-the-rocks		Section: Fractal Sources
+  To:  Hans-Joachim Weber, 100424,35	17 August 1996 14:16:03
+From:  Les St Clair, 101461,2032	#145878
+
+Hi Jo,
+
+>>I like this 3-d image. Very good work.<<
+Thanks Jo.
+BTW, I've been working on a 3d-transform.par (one of these day's I'll finish
+it)!
+
+Also, I liked your latest upload (jowe_38), you got some interesting effects
+using the new rounding functions, Here's a zoom into my favourite -
+
+jowe3840_zoom      { ; Zoom into Jo Weber's "jowe3840" by Les StClair t=07m54s
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=jowe_13
+  function=trunc/sqr passes=1
+  corners=-0.976933/0.976933/-0.7257835/0.739616 params=0.1/0.5
+  float=y maxiter=1023 inside=bof60
+  colors=000QLZ<7>Se`<12>V8pV6rV3sW0uV1q<9>FB5<10>zlH<9>KH8<6>pu9<11>IG8K4\
+  5<18>sQj<2>oOdmObkN`iMZhLX<13>KA5000<112>000000202<13>N0UP0XP2X<5>QIZ
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  phc-error!?			Section: Fractal Sources
+  To:  All				18 August 1996 06:22:22
+From:  Hans-Joachim Weber, 100424,35	#145917
+
+Hi,
+on my screen there are lines from the bottom to the top of the image
+(resolution is SF7).
+Can anyone tell me, why?
+Is it because of the use of decomp=256?
+Thanks -- Jo --
+[compilers note: formula name in this par has been changed to
+ "JoWe_CN_02_PHC", for resolution independence]
+ 
+jowe4032           { ; 0:05:47.10
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JoWe_CN_02_PHC
+  passes=1 center-mag=1.38908/0.2386/0.6666712 params=0.01/-0.3/1024/0
+  maxiter=1023 inside=maxiter decomp=256
+  colors=LSUZch0I0ZchZchYbgg0zYbg<77>LRVLRVMQU<25>_8C<5>GGIDHJCII<15>1R70S\
+  60S7<43>gmrhmshms<67>ndDZdhZdh
+  }
+
+jowe4033           { ; 0:09:59.08
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JoWe_CN_02_PHC
+  passes=1 center-mag=1.38893/0.11735/0.6666712 params=0.2/5/1024/0
+  maxiter=1023 inside=maxiter decomp=256
+  colors=000dBI<8>pWTrZVs`WucYveZxh`<5>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<\
+  4>4P73O62N51M40L3<2>DT3IW3LY3<6>bg3jl3sq2<10>000AACD8HG5N<5>gZp<6>cEibBg\
+  cEd<11>rkDtnAuq8wt5xw3zz0<4>ul5tj6sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>\
+  2gq<10>dtz<5>PmnMklJjjGhhDgf<2>8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<3>t8Wv7Wv\
+  9W<2>vFX
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  phc-error!?			Section: Fractal Sources
+  To:  All				18 August 1996 06:22:22
+From:  Hans-Joachim Weber, 100424,35	#145917
+
+Hi,
+on my screen there are lines from the bottom to the top of the image
+(resolution is SF7).
+Can anyone tell me, why?
+Is it because of the use of decomp=256?
+Thanks -- Jo --
+
+Subj:  phc-error!?			Section: Fractal Sources
+  To:  Hans-Joachim Weber, 100424,35	18 August 1996 14:38:28
+From:  Les St Clair, 101461,2032	#145944
+
+Hi Jo,
+
+Try this -
+(I just bumped the P2 value up from 1024 to 1025)
+
+regards, Les
+
+jowe4032           { ; 0:05:47.10
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JoWe_CN_02_PHC
+  passes=1 center-mag=1.38908/0.2386/0.6666712 params=0.01/-0.3/1025/0
+  maxiter=1023 inside=maxiter decomp=256
+  colors=LSUZch0I0ZchZchYbgg0zYbg<77>LRVLRVMQU<25>_8C<5>GGIDHJCII<15>1R70S\
+  60S7<43>gmrhmshms<67>ndDZdhZdh
+  }
+
+jowe4033           { ; 0:09:59.08
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=JoWe_CN_02_PHC
+  passes=1 center-mag=1.38893/0.11735/0.6666712 params=0.2/5/1025/0
+  maxiter=1023 inside=maxiter decomp=256
+  colors=000dBI<8>pWTrZVs`WucYveZxh`<5>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<\
+  4>4P73O62N51M40L3<2>DT3IW3LY3<6>bg3jl3sq2<10>000AACD8HG5N<5>gZp<6>cEibBg\
+  cEd<11>rkDtnAuq8wt5xw3zz0<4>ul5tj6sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>\
+  2gq<10>dtz<5>PmnMklJjjGhhDgf<2>8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<3>t8Wv7Wv\
+  9W<2>vFX
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	22 August 1996 18:24:31
+From:  Loren G. Dobert, 72332,507	#146100
+
+Here's a couple more "Fractint Titles". These are an interesting variation
+with the fractal *within* the letters of the word FRACTINT. Hitting "Z" and
+changing the third parameter changes the fractal that appears in the letters.
+I had a good time fooling around with these. I did a bunch of them, here are
+five.
+
+I think any of these would be a good replacement for the default mandelbrot
+that appears when Fractint is first run. Any chance Tim would agree? <g>
+
+Fractint_Title1    { ; Modification by Loren G. Dobert [72332,507] (c) 1996
+                     ; No commercial use without permission
+                     ; Original by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=cotan/cosxx/cos
+  center-mag=5.82312/-0.0979398/0.5053637/1/145 float=y symmetry=none
+  periodicity=0
+  colors=000000z00<9>00H<18>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>\
+  02z00z00y<59>002000000
+  }
+
+Fractint_Title2    { ; Modification by Loren G. Dobert [72332,507] (c) 1996
+                     ; No commercial use without permission
+                     ; Original by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=cosh/cosxx/asinh
+  center-mag=0.0100266/0.613671/1.84758 float=y symmetry=none
+  periodicity=0
+  colors=00000000z<11>H7GJ8CK98MA4RD5<4>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<\
+  3>FwU<12>5K35K35K3<9>EsSFwUEiRDVNBGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`F\
+  w<12>DGMBGJ9EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4\
+  >GJUGJVFLV<5>9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<3>GR9JSBMTDOUFRVH<2>_Z\
+  Mb_Oc`P<4>hhU<5>icSjcRjbRkaRmcS<5>zo`wlZsiW
+  }
+
+Fractint_Title5    { ; Modification by Loren G. Dobert [72332,507] (c) 1996
+                     ; No commercial use without permission
+                     ; Original by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=exp/cosxx/sinh
+  center-mag=0.0128484/0.0293766/2.158387 float=y symmetry=none
+  periodicity=0
+  colors=00000000z<11>H7GJ8CK98MA4RD5<4>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<\
+  3>FwU<12>5K35K35K3<9>EsSFwUEiRDVNBGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`F\
+  w<12>DGMBGJ9EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4\
+  >GJUGJVFLV<5>9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<3>GR9JSBMTDOUFRVH<2>_Z\
+  Mb_Oc`P<4>hhU<5>icSjcRjbRkaRmcS<5>zo`wlZsiW
+  }
+
+Fractint_Title6    { ; Fractint Version 20 under construction
+                     ; Modification by Loren G. Dobert [72332,507] (c) 1996
+                     ; No commercial use without permission
+                     ; Original by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=exp/cosxx/tan passes=t
+  center-mag=0.0128484/0.0293766/2.158387 float=y fillcolor=1
+  symmetry=none periodicity=0
+  colors=00000000z<10>G6KH7GJ8CK98MA4<5>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<\
+  3>FwU<12>5K35K35K3<9>EsSFwUEiRDVNBGJ<11>5Fj<4>`zo<4>5Fj<9>`Fz<3>0oo<4>`F\
+  w<12>DGMBGJ9EL<5>12Z00`000000<13>K00z00000DLL<11>1tt0ww1rs<6>DMRFHNFHO<4\
+  >GJUGJVFLV<5>9YZ8__7bb<6>0ww<8>2ZN3XJ3UF4SB4P75M3<3>GR9JSBMTDOUFRVH<2>_Z\
+  Mb_Oc`P<4>hhU<5>icSjcRjbRkaRmcS<5>zo`wlZsiW
+  }
+
+Fractint_Title8    { ; Modification by Loren G. Dobert [72332,507] (c) 1996
+                     ; No commercial use without permission
+                     ; Original by Les St Clair [101461,2032] 1996
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=exp/cosxx/atanh
+  center-mag=0.00439441/0.0124631/2.325848/1/-35 float=y symmetry=none
+  periodicity=0
+  colors=000000z02<3>zz0Wz00z00WV00zz02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz\
+  00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z0\
+  2<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00\
+  z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz\
+  00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z0\
+  2<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00\
+  z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz\
+  00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z0\
+  2<3>zz0
+  }
+
+I hope everyone likes them,
+L.D.
+
+;; ************************************************************************ ;;
+
+Subj:  cannot recalc picture		Section: Fractal Sources
+  To:  Jonathan Osuch, 73277,1432	23 August 1996 06:57:19
+From:  Sylvie Gallet, 101324,3444	#146116
+
+Hi Jonathan,
+
+  I saved the par from the correct gif and changed the reset= to 1820. When
+  you run the par under Fractint 19.2, the 3rd parameter is incremented! If
+  you save the new par, it will have reset=1920 and the new value of the
+  exponent.
+
+	-  Sylvie
+
+brochade-1         { ; 3rd param == 1
+  reset=1820 type=marksjulia passes=b
+  corners=-0.17199171/0.1720134/-0.12901402/0.12899798
+  params=0.1/0.9/1 fillcolor=51 inside=zmag outside=real
+  colors=WPJww1<6>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsv\
+  c<4>jiWhfUfdTebS<4>YRKUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<4>G8SH9QJBQ<3>QIPSK\
+  PUNS<2>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSY\
+  UR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N\
+  3JL0KL1KM2KN3KO4J<12>zz0
+  }
+
+brochade-2         { ; 3rd param == 2
+  reset=1820 type=marksjulia passes=b
+  corners=-0.17199715/0.17201885/-0.12901402/0.12899798
+  params=0.1/0.9/2 fillcolor=51 inside=zmag outside=real
+  colors=WPJww1<6>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsv\
+  c<4>jiWhfUfdTebS<4>YRKUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<4>G8SH9QJBQ<3>QIPSK\
+  PUNS<2>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSY\
+  UR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N\
+  3JL0KL1KM2KN3KO4J<12>zz0
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Loren G. Dobert, 72332,507	23 August 1996 17:03:31
+From:  Les St Clair, 101461,2032	#146129
+
+Hi Loren,
+
+>>Here's a couple more "Fractint Titles"<<
+Excellent. I love them - especially  "Fractint Version 20 under construction"
+(very clever!)
+
+>>I think any of these would be a good replacement for the default mandelbrot
+that appears when Fractint is first run.<<
+I'm sure you know, but just in case<g> ...you can have Fractint open with any
+saved .gif, just specify the filename and path in "sstools.ini", e.g.
+"filename=c:\fractint\title.gif". The next time you run Fractint it will open
+with your favourite fractal (or title screen).
+
+Anyway, your new titles got me fiddling again - so here's another 3d_Fractint
+transform. Save the first image, Fractitle5, as "fractle5.gif" (savename is
+written in the par for convenience). Then do the 3d_transform. I think the
+"Fractint" letters look curled up like those little cellophane fishes that
+you get in Christmas crackers!
+
+- Les
+
+p.s. I assume you've already checked out Brian Jones "BEJ012.PAR"? it contains
+a wonderful collection of "Fractint" fractals (that's where I *borrowed* the
+Fractint for my "Fractint-in-rock")
+
+Fractitle5         { ; image for Fractitle5_3d LStC [use 1024x768] t=00m54s
+                     ; Modification by Les St Clair [101461,2032] 1996
+                     ; Original "Fract_Title5" by Loren G. Dobert
+                     ; based on Brian E. Jones "Fractint-9-11" formula
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=fractint-9-11 function=sqr/cotanh/asin
+  center-mag=1.18669/-0.093911/1.268178/1/14.999 float=y maxiter=1000
+  inside=bof60 outside=summ symmetry=none periodicity=0 savename=fractle5.gif
+  colors=000D5M<6>SBi<4>_ohawhdvb<5>ss0<7>UFh<7>U15U00W00<6>h00<6>ww0<8>M0\
+  0UMF<10>zpa<9>UMF53M<9>`hw<13>58M000<86>000```<9>www<8>```93F<8>SBh<8>93\
+  FYQI<7>zpa<7>YQI93FB4I
+  }
+
+Fractitle5_3d      { ; "Curly Fractint"        LStC [use 1024x768] t=01m03s
+                     ; Les St Clair 101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+                     ; 3d_transform for "Fractitle5"
+  3d=yes filename=fractle5.gif scalexyz=100/110 roughness=90
+  waterline=0 ambient=20 rotation=50/30/0 perspective=0 xyshift=7/15
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractal package...		Section: Fractal Sources
+  To:  ALL				24 August 1996 22:02:03
+From:  Robert W. Carr, 73753,2420	#146166
+
+A nice FRACTAL surprise package complete with two fancy bows.
+
+--Bob Carr--
+
+
+Carr2669-F        { ; From a modified Sylvie Gallet frm.
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=carr2669
+  center-mag=0.000733158/0.0163728/0.8762889/1/90
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=000CC986A40B<6>50H00E<2>A8TEHaIQj3Yqbe_FYIFU7GU3<2>yrB<2>zM4<4>S6\
+  0_R0<2>Gk0<2>ns1zz0<3>zH5<3>T4C<9>zAz<9>6IJ<7>zzP<7>B8S<6>5rz<8>7Ua8R_8O\
+  X9LUBJS<16>t00<15>xo0ys0yv0zz0xv0<17>P00<14>c09d0Ad2C<19>smm93F<9>svc<15\
+  >MBe<13>oXe<17>F00
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  New Fractal Texture...		Section: Fractal Sources
+  To:  ALL				28 August 1996 19:01:05
+From:  Robert W. Carr, 73753,2420	#146303
+
+The image created here looks for all the world like storm clouds and a
+rainbow overlying a Mandelbrot.
+
+Be patient with this image, it takes awhile to finish and the effects are not
+seen till completion. Use the highest resolution you have. The time on a
+Pentium 166 with 1600 X1200 resolution is 30 minutes.
+
+--Bob Carr--
+
+
+Carr2694-F         { ; From a modified Sylvie Gallet frm.
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Carr2694
+  center-mag=-0.000650913/-0.00022389/0.8037833 params=100/150/200/250
+  float=y maxiter=1296 periodicity=0
+  colors=000<2>AAA000<6>000PPXPPZQRa000TWh<4>`hzUMF<8>zo`<10>UMF000<19>XFw\
+  <6>0zz<6>zz0<5>i90f00b26<7>5Pw<6>HzWNzX<5>XFj<6>0HK<9>0ow<13>0a40`00a4<1\
+  3>0ow<19>022000000<14>```<9>7Pw<5>UYfX_j<14>000ww0<13>WWSUUUUSX<7>\
+  UFw<6>BGJ
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Jennen_3d			Section: Fractal Sources
+  To:  Arno Jennen, 100665,1467		31 August 1996 13:23:08
+From:  Les St Clair, 101461,2032	#146417
+
+Hi Arno,
+
+Enjoyed your .par file, Especially "Fract10" amd "Fract11".
+The formulas that you used for "Fractal1-3" produce some nice wave/ ripple
+effects - just right for 3d_transform!
+
+Here's a couple I made from your original images:
+
+- Les
+
+
+Fractal1_mod       { ; image for fractal1_mod_3d       [use 1024x768] t=06m35s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; Arno Jennen's "Fractal1" - recoloured by Les St Clair
+                     ; save as "frac1mod.gif" 
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=jenn001
+  function=sin passes=1 corners=-2.849328/2.849328/-2.136996/2.136996
+  float=y maxiter=1024 inside=bof60 savename=frac1mod.gif
+  colors=40612D<3>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9M\
+  eAMeANfANgBOh<6>GTmGUmHVnIWoJXpKYp<6>ObtPcuQduQdvRevSfv<2>VhvWhwXiwYixZj\
+  x<3>amyamybnybnycoy<5>grzhszhsy<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<4>vz\
+  uvzuuyt<63>000000100<19>G50G60H60H60I60<5>L80M91L91<6>G50F40E40E40<2>D32\
+  C22C22B12A12<13>307207208209<6>12D
+  }
+
+Fractal1_mod_3d    { ; "Ice Caves" - Les St Clair      [use 1024x768] t=01m08s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; 3d_transform for frac1mod.gif
+                     ; original 2d image by Arno Jennen
+  3d=yes filename=frac1mod.gif scalexyz=130/100 roughness=200
+  waterline=0 ambient=20 rotation=180/45/0 perspective=0 xyshift=-14/3
+  }
+
+Fractal2_mod       { ; image for fractal2_mod_3d       [use 1024x768] t=05m26s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; Arno Jennen's "Fractal2" - recoloured by Les St Clair
+                     ; save as "frac2mod.gif" 
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=jenn001
+  function=tan corners=-2/2/-1.5/1.5 float=y maxiter=1024 inside=bof60
+  savename=frac2mod.gif
+  colors=000<5>D00F00G00<6>T00V00V10<28>qa9rcAqbA<29>F21D00D03<15>00x<29>0\
+  02000100<30>z0p<15>W0R000<29>IaIJcJJcJ<42>222212101000100
+  }
+
+Fractal2_mod_3d    { ; "Sand Dune City" - Les St Clair [use 1024x768] t=06m01s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; 3d_transform for frac2mod.gif
+                     ; original 2d image by Arno Jennen
+  3d=yes filename=frac2mod.gif scalexyz=90/110 roughness=100
+  waterline=0 filltype=2 ambient=20 rotation=-45/-45/30 perspective=0
+  xyshift=0/-8
+  }
+
+Fractal3_mod       { ; image for fractal3_mod_3d       [use 1024x768] t=04m59s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; Arno Jennen's "Fractal3" - recoloured by Les St Clair
+                     ; save as "frac3mod.gif" 
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=jenn002
+  function=sin corners=-2.808989/2.808989/-2.106742/2.106742 float=y
+  maxiter=1024 inside=bof60  savename=frac3mod.gif
+  colors=0002WN2WN2WN1XO<39>D83D72E61F61<23>d1Me1Ng0Oi0P<3>p0Tr0Uq0U<30>40\
+  2<31>rZU<16>F78<30>zzZxxY<16>0CC<45>1VM
+  }
+
+Fractal3_mod_3d    { ; "Hot Lava"       - Les St Clair [use 1024x768] t=01m09s
+                     ; t=time using 486DX2-66 and video=SF7
+                     ; 3d_transform for frac3mod.gif
+                     ; original 2d image by Arno Jennen
+  3d=yes filename=frac3mod.gif scalexyz=90/110 roughness=100
+  waterline=0 ambient=20 rotation=-45/-45/30 perspective=0
+  xyshift=0/-10
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  more m+j+n			Section: Fractal Sources
+  To:  All				31 August 1996 16:22:04
+From:  Lee Skinner, 75450,3631		#146421
+
+  A few weeks ago, Sylvie introduced the m+j+n formula and posted 5 examples
+here.  Since then, no others have appeared, although Brian Jones indicated he
+was going to play with this idea which alternates a julia image and a newton
+image in alternate bands of a mandelbrot.  Here are 5 zooms I made into one of
+Sylvie's examples.  Slow, but worth the wait!
+
+6lsmjn01           { ; t=  3:13:33.61  Party Atmosphere
+                     ; m+j+n formula by Sylvie Gallet [101324,3444]
+                     ; on a P166 at 1600x1200  Aug 31, 1996  09:10:19
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1
+  center-mag=+0.14124461587304230/+0.67917091194182790/276.0131
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=000r_RzZV<7>zmm<2>LarnYt<3>bHz<7>zz9<7>zKc<6>8`5<15>t00<15>COZ<31\
+  >sw1<15>0mw<14>`4Wc0Ud0X<5>k0sm0wm3u<13>yvPzzMywL<11>kI4jE3iA2h61e64<6>N\
+  3P<6>jFbv2h<5>W9ZNAXVCUZDSMTQSTOZSLX`MlRGsQDzPA<6>zu2zz0xs6<5>f8fc0mZ7n<\
+  6>0ww<7>ewK<7>0c0<5>j_N
+  }
+
+6lsmjn02           { ; t=  3:17:48.23
+                     ; m+j+n formula by Sylvie Gallet [101324,3444]
+                     ; on a P166 at 1600x1200  Aug 31, 1996  09:10:20
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1
+  center-mag=+0.13696146602150390/+0.68067813503164640/985.7611
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=000r_RzZV<7>zmm<2>LarnYt<3>bHz<7>zz9<7>zKc<6>8`5<15>t00<15>COZ<31\
+  >sw1<15>0mw<14>`4Wc0Ud0X<5>k0sm0wm3u<13>yvPzzMywL<11>kI4jE3iA2h61e64<6>N\
+  3P<6>jFbv2h<5>W9ZNAXVCUZDSMTQSTOZSLX`MlRGsQDzPA<6>zu2zz0xs6<5>f8fc0mZ7n<\
+  6>0ww<7>ewK<7>0c0<5>j_N
+  }
+
+6lsmjn03           { ; t=  3:15:25.99
+                     ; m+j+n formula by Sylvie Gallet [101324,3444]
+                     ; on a P166 at 1600x1200  Aug 31, 1996  09:10:20
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1
+  center-mag=+0.13757104510713470/+0.67991845591664010/4312.705
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=000seE<6>kI4jE3iA2h61e64<6>N3P<6>jFbv2h<5>W9ZNAXVCUZDSMTQSTOZSLX`\
+  MlRGsQDzPA<6>zu2zz0xs6<5>f8fc0mZ7n<6>0ww<7>ewK<7>0c0<7>zZV<7>zmm<7>bHz<7\
+  >zz9<7>zKc<6>8`5<15>t00<15>COZ<31>sw1<15>0mw<14>`4Wc0Ud0X<5>k0sm0wm3u<13\
+  >yvPzzMywL<3>tiF
+  }
+
+6lsmjn04           { ; t=  3:28:17.05
+                     ; m+j+n formula by Sylvie Gallet [101324,3444]
+                     ; on a P166 at 1600x1200  Aug 31, 1996  09:10:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1
+  center-mag=+0.14296281868761590/+0.67859481388507590/11931.69
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=000kI4jE3iA2h61<4>V5GL000dyUFo<5>0ww<7>ewK<7>0c0<7>zZV<7>zmm<2>La\
+  rnYt<3>bHz<7>zz9<7>zKc<6>8`5<3>KS40P0JT1d`2zh3<2>eC2<4>t00<13>ILV<11>7lU\
+  <9>`lFdkDelC<9>sw1<15>0mw<14>`4Wc0Ud0X<5>k0sm0wm3u<13>yvPzzMywL<10>lL6N3\
+  P<6>jFbv2h<5>W9ZNAXVCUZDSMTQSTOZSLX`MlRGsQDzPA<6>zu2zz0xs6<5>f8fc0mZ7n
+  cyclerange=12/255
+  }
+
+6lsmjn05           { ; t=  3:24:47.15  Bright Sun
+                     ; m+j+n formula by Sylvie Gallet [101324,3444]
+                     ; on a P166 at 1600x1200  Aug 31, 1996  09:10:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=m+j+n_2
+  passes=1
+  center-mag=+0.13674541661508900/+0.68145752625565600/15402.52
+  params=1/0/-0.7927/-0.1608/7/0 float=y maxiter=1023 inside=0
+  logmap=300 periodicity=0
+  colors=000WaG<3>zZV<2>zdaz00<3>zmFlVnZYpLar<12>zz9<7>zKc<6>8`5<15>t00<6>\
+  `BFZC9XD8UED<4>FL0<11>R_KTaMUbL<18>sw1<9>Lqa<3>LicLgcMecNcc<17>f0d<14>uc\
+  ZvfYvjW<2>yvPzzMywL<11>kI4jE3iA2h61e64<6>N3P<6>jFbv2h<5>W9ZNAXVCUZDSMTQS\
+  TOZSLX`MlRGsQDzPA<6>zu2zz0xs6<5>f8fc0mZ7n<6>0ww<7>ewK<7>0c0<2>OaC
+  }
+
+Lee Skinner
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	31 August 1996 17:26:18
+From:  Les St Clair, 101461,2032	#146425
+
+Hi again Sylvie,
+
+>> What about a "K" for tomorrow???? ;-)))<<
+
+I revise my pevious comment, you're an *excellent* teacher!!
+
+Please mark my homework.  Do I get a Gold star?<g>
+
+
+AKT                { ; Zoom into "fraKtint" - Les St Clair        t=06m14s
+                     ; Let's take a closer look at that "K"
+                     ; Thanks to Sylvie Gallet for the Lessons!
+                     ; t=time using 486DX2-66 and video SF7 (1024x768)
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Fraktint
+  center-mag=-0.0753861/-0.0312907/2.469868 float=y
+  colors=000<5>D00F00G00<6>T00V00V10<28>qa9rcAqbA<29>F21D00D03<15>00x<29>0\
+  02000100<30>z0p<15>W0R000<29>IaIJcJJcJ<42>222212101000100
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Transparent overlay...		Section: Fractal Sources
+  To:  Lee Skinner, 75450,3631		31 August 1996 22:11:07
+From:  Robert W. Carr, 73753,2420	#146438
+
+Hi Lee,
+
+The fractal overlay in this image is a transparency where the under lying
+image shows thru.
+
+--Bob Carr--
+
+Carr2709-F         { ; From a modified Sylvie Gallet frm.
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=Carr2709
+  center-mag=-0.00429477/0.00349599/0.8256175 params=100/150/200/250
+  float=y maxiter=647 periodicity=0
+  colors=000B00<10>d00<14>NLSMMULLS<13>112000000<11>ZFw<11>0ww<10>05W00U22\
+  V<21>ssy<19>2CU<14>VEkXFmYHj<14>hh0000<11>Q00HKNGJMFIL<14>`00<15>yfF<14>\
+  fe1ee0ee1<30>MMU000<2>800
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  VistaPro legalities		Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	02 September 1996 20:15:14
+From:  Loren G. Dobert, 72332,507	#146511
+
+Les,
+
+After a little thought, I figured I'd send you this:
+
+Castles            { ; Three castles with a double moat
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+                     ; Modified from someone's PAR, but I forget whose (sorry)
+                     ; Use to create a landscape for Vista Pro
+  reset=1920 type=formula formulafile=96_msg_2.frm formulaname=kgexp2
+  function=cosxx
+  center-mag=-0.67027/-0.70791/2.390424/0.7809/-103.304/-9.497 float=y
+  inside=maxiter potential=222/333/0 viewwindows=4.2/0.75/yes/514/514
+  colors=000<27>V99W99W99<7>aBBbBBcBBdCCeCCeCC<11>kDDkDDkEEkEEkEE<3>kEElEE\
+  kEE<10>iDDiDDiDDhDDhDDgCC<6>dBBcBBbBBaBB`BB<2>Z99Y99X99W99V88<8>N66M66K6\
+  6<16>100000001<14>C4HD4IE4JE4KF4KG4L<18>R8`S8`S9aS9a<4>V9dV9dV9dV9eVAe<1\
+  4>XAgXAgWAg<8>U9eU9dU9dU9cU9c<7>Q8_Q8ZP8YP7XO7W<10>I5NH5MG5LF4KE4K<4>B3F\
+  A3E93D82C72B729<7>001
+  }
+
+Notice I have the viewwindows set to 514x514. This is the size of a large VP
+DEM file. When you import a file into VP, it uses the color value of each
+pixel as the elevation value, color 0=0 meters, color 255=4096 meters (I'm
+pretty sure of those numbers. Doesn't really matter, just remember lower color
+numbers equal lower elevations). You need to generate this file in Fractint,
+then save the GIF. You'll need a graphics program to convert to PCX, the file
+format VP can read. Then, in VP, set your DEM size to 514x514 and then use the
+IMP EXP function and pick the PCX->DEM option and pick your file. It'll ask
+you to remove steps? and you should answer yes. The file should load and
+you'll see the landscape. You can render it then to see what it looks like.
+I started a river at the midway point between the castles and let it flow
+until it created both moats and ran off the map (takes a while). I have a VP
+DEM session file saved, but it's over 1.2MB normal, 600K zipped. If you want
+it, let me know.
+
+The best, "normal" looking landscapes are created from plasma fractals, but
+VP can do this internally with the "fractal mountains" and "fractal islands"
+function. It also has a julia generator, but Fractint is much faster at those.
+For other landscapes, you'll just have to experiment. Some look good, some
+don't.
+By the way, I checked, and my Marsface DEM hadn't as yet been released in the
+VRLI libs, but considering we just had a holiday weekend, I figure it should
+be out this week sometime.
+
+L.D.
+
+;; ************************************************************************ ;;
+
+Subj:  sstools.ini for ver 19.5		Section: Fractal Sources
+  To:  All				03 September 1996 05:57:00
+From:  Lee Skinner, 75450,3631		#146532
+
+Fractint 19.5 will be available on Tuesday, September 3.  I am sharing here
+some additions that I have made to my sstools.ini file that use new features
+in Fractint 19.5, particularly the new comments command that allows one to
+automatically put all sorts of info in the par files.  It works both
+interactively with the <b> command, or in batch mode using makepar.
+
+  Here is part of my revised sstools.ini file:
+
+  showdot=bright                                                  ;
+  comment=t=$calctime$/\
+        _/\
+        on_a_P166_at_$xdots$x$ydots$__$date$__$time$/\
+        Par_and_Image_Copyright_$year$_by_Lee_H._Skinner          ;
+  recordcolors=y                                                  ;
+
+This comment helped generate the following par automatically with the
+exception of the description and formula credit.  I am using line 1 of the
+comment to share calctime and description so that users can see the calctimes
+when they choose which image to generate.
+
+6ptc_mjn           { ; t=  0:04:27.60  Mandel-Julia-Newton PTC example
+                     ; Formula by Sylvie Gallet
+                     ; on a P166 at 1600x1200  Aug 25, 1996  07:37:54
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1940 type=formula formulafile=96_msg_2.frm formulaname=ptc+mjn
+  passes=1 center-mag=0/0/0.6666667 params=0.9/1.1/6/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000nZt_GItQESPHefCOISXTZfceGDTHJ`IQiEfgQBJ<2>xNAINZLclOtzJLBOZ1VX\
+  Fjw88GY0QjkS5aUQxpWRMJc`GQDR`JXlPcLIK<2>doGHFMKOONzQQeSENGDcABt4Kg4IHI<2\
+  >Sl9PHQZRVi``jlrrBvKunNNNVcPctRbAPzETQHTaR`l`h0OqFASzg56XkE5qV7Hj7mz6H0P\
+  0<2>4fRz00<3>hYOGFM<2>LcQE5XD3iC1v8QX0hiFKHEXD<8>2N60L50M5<32>Gv9<3>Xsf<\
+  2>ugx<2>KXgIadGf`REQcMVpU_UVPMCS<2>iSoM6V<2>h1zEWIDuETAZfEltIzGPLHfLJxKI\
+  ENizQOTTR`WG9G<2>KI0DEEAL6JWJOtGKEU<2>a`tH6MK5NN4PrJ6bP326LCniITPLoUnzzm\
+  UCIJLLVKOfJe70D9NBBP9ESGKI<2>Jx9TCZPET<2>sapFAbFDtNDLVJMyl6CFR9OX5XbGAJ<\
+  2>MKA_GQtQVKBV<2>aNxKEP<2>ZacHHN<2>NmUXXeowzG8TI9`ZMcsawCBQ9FV6K_KYDPx4L\
+  5DR2594P31UFRbGjtRGXbPh
+  }
+
+Lee
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372104 September 1996 21:48:03
+From:  Sylvie Gallet, 101324,3444	#146589
+
+Bpnjour Jan,
+
+>> Of course for Sylvie (such a reassuring thought to have her around) this 
+>> will be a piece of cake. Maybe she can give us some clues if we should 
+>> fail in this "how 2 model" quest. <g>
+
+  Eureka!!!  Try this (and play with p1, p2 and p3).
+	p1 = lower left corner coordinates
+	p2 = height, width
+	p3 = thickness
+
+	-  Sylvie
+
+2                  { ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; t=  0:00:04.76 at 320x200 on a Pentium 166
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=2
+  center-mag=-0.171899/-4.77e-007/1.516897 float=y maxiter=255
+  params=-0.5/-0.5/1/0.5/0.1
+  inside=0 periodicity=0
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372104 September 1996 22:27:17
+From:  Sylvie Gallet, 101324,3444	#146591
+
+Hi again Jan,
+
+  Here is another version.  Try zooming, panning and rotating the image.
+
+	-  Sylvie
+
+
+2-2                { ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; t=  0:00:05.22 at 320x200 on a Pentium 166
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=2-2
+  center-mag=-0.612957/7.75e-007/1.336491 params=0.75/0.25/1/0.5/0.1/0
+  float=y maxiter=255 inside=0 periodicity=0
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372105 September 1996 03:42:29
+From:  Les St Clair, 101461,2032	#146603
+
+Hi Jan,
+
+>>Anyone feel an urge to create a nice par that may accompany FracText?<<
+
+Firstly, I would like to say that your program (e-mailed to me by Sylvie -
+thanks!) is, or should I say "has the potential to be" a *masterpiece*
+I never cease to be amazed by the talent and ingenuity out there!!
+
+meanwhile, back to business - I have done a few short tests and everything
+looked good. So I set about creating the "nice par" that you were looking for.
+Unfortunately I seem to have come across a small bug. The letter "C" as
+generated by your program is actually rendered as an "O" when I have tested
+it.
+
+As your program is (presently) restricted to one user defined line of text,
+I created a formula by amalgamating two individual runs - one for "FRAC" and
+the other for "TEXT"  (see formula "FRACTEST"). I then created the
+accompanying "fraOtext.par" (I haven't polished it off because of the "error",
+but you should get the idea)
+
+I have also checked the following -
+1. the individually created  "FRAC" .frm
+2. using periodicity=0
+3. using passes=1
+All give the same problem.
+
+Please check it out and come back.
+
+regards, Les
+
+>>Editor's note, a manual fix for the formula error was provided by
+  Sylvie Gallet (the fixed version appears in this compilation):
+
+Subj:  Fractint-in-Rock			Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	06 September 1996 16:30:27
+From:  Sylvie Gallet, 101324,3444	#146668
+
+Hi Les,
+
+>>  Unfortunately I seem to have come across a small bug. The letter "C" as
+>> generated by your program is actually rendered as an "O" when I have 
+>> tested it.
+
+  Your formula has the following line:
+
+chrc4 = (cabs(sqrt(|z+(-1.24708,-1.20000)|)-0.45000)<0.05000)&&(x<1.24708||y>xc+-0.74708||y<-xc+1.74708)
+
+  The correct line should be:
+chrc4 = (cabs(sqrt(|z+(-1.24708,-1.20000)|)-0.45000)<0.05000)&&(y>xc+-0.04708||y<-xc+2.44708)
+
+  with -0.04708 = -1.24708*xc - (-1.20000)
+  and   2.44708 =  1.24708*xc - (-1.20000)
+
+	-  Sylvie
+
+
+fraOtext         { ; FRACTEXT title [error with letter C!] t=  0:07:14.67
+                     ; error in formula was fixed for this compliation
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=FRACTEST function=ident/ident/tan
+  center-mag=0.933054/0.273278/0.8503401/1/-17.5 float=y
+  colors=000I_I8F8<14>222212101000100200<4>D00F00G00<6>T00V00V10<28>qa9rcA\
+  qbA<29>F21D00D03<15>00x<29>002000100<30>z0p<15>W0R000<29>IaIJcJJcJ<25>9H\
+  9
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  FRM vs PAR			Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	06 September 1996 02:31:00
+From:  Loren G. Dobert, 72332,507	#146640
+
+Sylvie,
+
+You posted this formula a while back as something that shouldn't be written
+as it violates some kind of rule, but still works in Fractint.
+
+<<Don't_do_that! ;{ 
+ pixel = e^pixel
+ z = fn1(pixel)
+  |z| <= 16
+ }
+
+	-  Sylvie
+
+George: don't add it to the ORGFORM compilation!>>
+
+As a matter of fact, I've created the following image:
+
+LGDP0102           { ; Hummingbirds
+                     ; (c) 1996 Loren G. Dobert [72332,507]
+                     ; No commercial use without permission
+  reset=1940 type=formula formulafile=96_msg_2.frm
+  formulaname=Don't_do_that! function=log passes=2
+  corners=-2.219834/1.469051/2.45285/-2.465664/1.469051/-2.465664
+  float=y finattract=y periodicity=0
+  colors=000000000zF2zj100UK0FF0Fz02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z\
+  00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3\
+  >zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2\
+  >000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z\
+  00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3\
+  >zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2\
+  >000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0000<2\
+  >0000J4KS0Pa0Kk0Sz0000z02<3>zz0Wz00z00WV00z<2>000z02<3>zz0Wz00z00WV00z<2\
+  >000z02<3>zz0
+  }
+
+I guess this formula doesn't include a ":" (colon) and that is what is wrong
+with it, but it still works. You used this as an example to Tim when he was
+trying to solve the whole Formula-Parameter in the same file problem.
+Since you didn't want George to add it to ORGFORM, then I would assume you
+don't want it floating around. Is there a way it can be fixed and still
+create the image, or should I just chuck that one and leave it at that?
+
+Thanks,
+L.D.
+
+>>Editor's note
+  Sylvie Gallet posted a "corrected" version of the formula to allow Loren's
+  .par file to work. This version is included in this collection.
+
+;; ************************************************************************ ;;
+
+Subj:  FracText				Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372106 September 1996 06:56:30
+From:  Les St Clair, 101461,2032	#146651
+
+Jan,
+
+I hope you don't mind a new thread for this one, but I think the program
+you're working on is already excellent and there will be a *lot* of interest
+when it goes public.
+
+Meanwhile, back to your development -
+
+1. At present, the program will produce one line of user defined text.
+I have produced a formula which has four lines of text (to display the
+alphabet). I did it by stitching together four formulas that were generated
+using FracText, they were "ABCDEFG.frm", "HIJKLMN.fm", "OPQRSTU.frm" and
+"VWXYZ.frm" - perhaps there's a clue in what I've done and you could modify
+your program to do likewise? The formula "F_text_A2Z" is the result (is this
+the longest Fractint formula, ever, or what!!)
+
+
+[George Martin - please don't add this to Orgform just yet as this formula
+contains a bug. I don't want to fix it manually (even if I knew how<g>)
+because it's needed to show Jan where the bug is in his program! - thanks]
+
+2. Here's a couple of .pars which display the alphabet. You will notice that
+all of the letters, except "C" work perfectly. Do you have a fix for the "C"
+bug?
+
+>>Editor's note, a manual fix for the formula error was provided 
+  (the fixed version appears in this compilation):
+
+Fractext_A2Z_02    { ; "Fractext A-Z" [error with letter C!] t=  0:06:49.08
+                     ; error in formula was fixed for this compliation
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=F_TEXT_A2Z function=exp/abs/recip
+  center-mag=-0.122324/-0.108958/0.6470679 float=y
+  colors=0006p440B<5>40B40B40C40D<3>50H00E<2>A8TEHaIQj3Yqbe_FYI0L0<3>yrB<4\
+  >z00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4>zAz<9>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>\
+  5u0<9>5B0<8>zz0<14>bE2`A3aA3<19>u8Bw7Cw8Cv8Dv9E<11>yBjzCmzCmzCmzzzYXc<6>\
+  7qw<20>P4VQ1TS4U<9>r_f<8>Uq1Xq2_q4Xk4
+  }
+
+Fractext_A2Z_03    { ; "Psychedelic A-Z"[errror letter C!]   t=  0:07:35.69
+                     ; error in formula was fixed for this compliation
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=F_TEXT_A2Z function=cosh/cabs/asinh
+  center-mag=-0.122324/-0.108958/0.3474708 float=y
+  colors=000zj0F0zA0c70V209<3>20990I409j0zU0cN0VE0I709z0zc0cV0VI0I909z0jc0\
+  UV0NI0E907z0Vc0KV0FI09904z0Fc0AV07I04902KKK```qqqz000z000zzzzzzzzVVcKKVF\
+  FI99944zbVcPKVJFIB9954zjVcUKVNFIE9974zrVcZKVRFIG9984zzVccKVVFII9994rzVZc\
+  KRVFGI9894jzVUcKNVFEI9794bzVPcKJVFBI9594VzVKcKFVF9I9494VzbKcPFVJ9IB495Vz\
+  jKcUFVN9IE497VzrKcZFVR9IG498VzzKccFVV9II499VrzKZcFRV9GI489VjzKUcFNV9EI47\
+  9VbzKPcFJV9BI459VVzKKcFFV99I449bVzPKcJFVB9I549jVzUKcNFVE9I749rVzZKcRFVG9\
+  I849zVzcKcVFVI9I949zVrcKZVFRI9G948zVjcKUVFNI9E947zVbcKPVFJI9B945TTTiiizz\
+  zzz00zzz0zzV0z00c00V00I00900zF0cA0V70I40920zzzcK0VF0I90940zj0cU0VN0IE097\
+  0zz0cc0VV0II0990jz0Uc0NV0EI0790Vz0Kc0FV09I0490Fz0Ac07V04I02900z00c00V00I\
+  00900zF0cA0V70I40920zV0cK0VF0I90940zj0cU0VN0IE0970zz0cc0VV0II0990jz0Uc0N\
+  V0EI0790Vz0Kc0FV09I0490Fz0Ac07V04I02900z00c00V00I
+  }
+
+3. The two images in the above .par files are plain text on a fractal
+background. For some reason I can't invert this to have the fractal inside the
+text (like Loren's or Brian's originas) but I can get it to work with smaller
+text (just one line). If I try the same parameters with this formula I just
+get a blue screen!! (perhaps I screwed something up when I stitched it all
+together?)
+
+4. Lee Skinner, Loren Dobert and myself are all wondering if the formula can
+be changed so as to have a "user defined" fractal as the background instead of
+the "Newton" - what do you think?
+
+5. I cant get the option "FormF=formulafilename" to work, can you check this?
+
+6. er, that's enough for now (time for bed...zzzzzzzzzzzz)
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  PHC...				Section: Fractal Sources
+  To:  ALL				07 September 1996 21:28:18
+From:  Robert W. Carr, 73753,2420	#146717
+
+A PHC with a little different twist.
+
+--Bob Carr--
+
+Carr2735-F         { ; From a modified Sylvie Gallet frm.
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=Carr2735
+  passes=1 center-mag=-0.000168323/-7.46504e-007/4.355671
+  params=100/150/200/250 float=y maxiter=647 periodicity=0
+  colors=000xxxyyyzzz<8>H7U<5>2bv0hz0ez<6>6Rx7Pw6Mp<5>137000112<14>KBW<14>\
+  ssz<4>eefbbbZZZ<8>000TTT<13>g22h00j03<6>x3Oz4Rz7P<6>yWH<7>pJT<6>000000<1\
+  4>FQo<6>XFw<7>h00<4>700<11>BGJCILEKO<12>WjrXltWjr<14>BGJWOG<13>svc<15>UM\
+  Fhhh<11>www
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  FracText				Section: Fractal Sources
+  To:  Les St Clair, 101461,2032	11 September 1996 16:30:04
+From:  Jan Maarten van der Valk, 100256,3721#146839
+
+Hi Les,
+
+I fiddled around with your FraOtext some more and came up with this frm/par
+set. Initialization f2=1/(32*pixel) ALMOST aligns the 2 variations of the
+fractal, when f1=sin(.5*pixel). I do not have a clue why this is, but I sure
+like to know. I might then be able to get an exact alignment.
+
+George, if your listening; please do not include this one in orgform, because
+it may be improved.
+
+For the word 'FRACTAL' I used the following FracText definitions:
+    formn= FractalText
+    formf= frctltxt.frm
+    ftext= fra<-.15>ct<-.15>al
+    scale= .15
+    tface= .25
+    y-pos= .65
+    x-pos= .03
+    scrfx= on
+    init2= f1=sin(.5*pixel)
+    init2= f2=1/(32*pixel)
+    init2= pixel=(test==0)*f1+(test!=0)*f2
+    init2= z=1+(0,-0.65)/fn3(pixel+(0,0.75))
+    fcalc= z2=z*z, z4=z2*z2, n=z4*z2-1, z=z-n/(6*z4*z)
+    bailo= |n|>=.0001
+    ;textb= off         ;New "textbail" parameter to block
+                        ;automated "&&test==0"
+                        ;Remove &&test==0 manually with FracText à2
+
+For the word 'TEXT' I used these definitions:
+    formn= FractalText2
+    formf= frctltxt.frm
+    ftext= text
+    scale= .285
+    tface= .3
+    y-pos= .15
+    x-pos= .028
+
+Furthermore, I borrowed :-) your amalgamation method to combine the 2 words.
+
+Arrivederci
+
+Jan Maarten
+
+
+FractalText        { ;par and colors by Les St Clair
+                     ;modified by Jan Maarten van der Valk
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=FractalText function=ident/ident/tan
+  center-mag=0.268861/0.188047/1.497078/1/-17.5 float=y
+  colors=000I_I8F8<14>222212101000100200<4>D00F00G00<6>T00V00V10<24>mW7nY8\
+  oZ8p`9qa9rcA<26>L73J52I42G31F21D00<4>A0I90L80P70S70W60_<6>00x<29>0020001\
+  00<30>z0p<15>W0R000<27>HZHH`HIaIJcJJcJ<25>9H9
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  FracText				Section: Fractal Sources
+  To:  Jan Maarten van der Valk, 100256,372111 September 1996 19:20:04
+From:  Jim J. Deutch, 104074,3171	#146841
+
+Hi Jan --
+
+I haven't had a chance to actually *try* it yet, but from the descriptions on
+the title screen, FracText seems to be way, way cool!
+
+Rather than try to incorporate all the neat features (replace/add new formula
+etc) that you're working out into my (newly renamed) FracMask program, I was
+wondering if you might want to take my code and add it to FracText, instead.
+
+The basic idea is that you start with a b&w bitmap, and wind up with a formula
+that puts one image in the black portions and another in the white portions.
+The original bitmap is generally small, so it stretches the result to fit
+at whatever resolution you are running in fractint.
+
+So far, it only does the "fixed" version, using scrnpix and scrnmax, but with
+a little study of your/Sylvie's formulas, I should be able to figure out how
+to do the other, too.
+
+If you're writing in some version of Basic, the code should port very easily
+(I use VB for everything, these days).  If you're a C programmer, the
+collaboration will be more difficult, as I am not (yet!).
+
+Jim Deutch
+
+Here's an example of my output:
+
+
+fractintText1        { ;  
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=fractmask08
+  center-mag=-0.65035084990890180/+0.47818407918067230/361.1529/1/137.498
+  float=y maxiter=700
+  colors=000W4G<14>201000008<28>00v00w00y00z02z<30>0zz<3>czz<3>0zz<31>0z88\
+  z0<28>vz0wz0yz0zz0zy0<30>zG0z0G<30>zFyzGzzFy<17>z8Xz8Wx7V<13>X4H
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  just another phc			Section: Fractal Sources
+  To:  All				14 September 1996 11:00:11
+From:  Hans-Joachim Weber, 100424,35	#146920
+
+Just another phc!
+
+three_spikes_and_a_mandel { ;   0:08:50.96
+                     ; on a 486DX4-100 at 1280x1024  Sep 14, 1996  11:41:35
+                     ; Par and Image Copyright 1996 by Jo Weber
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=JoWe_06m_PHC function=sqr/sqr passes=1
+  corners=-2.552028/2.13994/-1.759488/1.759488 float=y maxiter=1023
+  inside=bof60 outside=real symmetry=xaxis
+  colors=000H00<2>O00<10>000UMF<8>zo`<10>UMF000<19>XFw<14>0oz<14>XFw<13>21\
+  4000000<14>0ow<13>0a40`00a4<13>0ow<19>022000000<77>000000200<4>E00
+  }
+
+-- Jo --
+
+;; ************************************************************************ ;;
+
+Subj:  PHC Mandel Jet...		Section: Fractal Sources
+  To:  ALL				14 September 1996 13:17:21
+From:  Robert W. Carr, 73753,2420	#146924
+
+This is an image of a PHC Mandel Jet crashing into it's own sonic boom.
+Images such as these carry a grave prognostic sign. They show that 
+their creator has turned into a Fractal Nerd.
+
+--Bob Carr--
+
+
+Carr2763-F         { ; From a modified Sylvie Gallet frm.
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=Carr2763
+  passes=1 center-mag=-0.0531879/-1e-006/0.6303995/1/180
+  params=100/150/200/250 float=y maxiter=647 invert=0.25/0/0
+  periodicity=0
+  colors=000ADGBFHBGJ<14>WjrXltWjr<14>BGJWOG<13>svc<15>UMFhhh<14>zzz<8>H7U\
+  <5>2bv0hz0ez<6>6Rx7Pw6Mp<5>137000112<14>KBW<14>ssz<4>eefbbbZZZ<8>000TTT<\
+  13>g22h00j03<6>x3Oz4Rz7P<6>yWH<7>pJT<6>000000<14>FQo<6>XFw<7>h00<4>700<8\
+  >ACE
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Carr2110-formula			Section: Fractal Sources
+  To:  Robert Carr, 73753,2420		15 September 1996 10:59:01
+From:  Hans-Joachim Weber, 100424,35	#146943
+
+Hi Bob,
+
+your formulas are fascinating.
+Here are three images using your carr2110.
+Great with different colormaps,
+they will change the look in an astonishing way.
+-- Jo --
+
+jw_c110a           { ;   0:07:07.59
+                     ; using carr2110
+                     ; on a 486DX4-100 at 1280x1024  Sep 15, 1996  11:26:42
+                     ; Par and Image Copyright 1996 by Jo Weber
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=carr2110
+  center-mag=0/0/0.9861933/1/180 params=-500/300/-200/100 float=y
+  maxiter=1023 fillcolor=50 inside=bof60 outside=real symmetry=yaxis
+  colors=000<25>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWga\
+  VcZT`WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0Db2D<14>zVF<14>b2Da0\
+  D`0D<4>W0B000000T0A<9>J06J06H06<5>B03A03903803702<7>000E5M<8>93FOI5<15>z\
+  pa<14>OI5000<4>000
+  }
+
+jw_c110b           { ;   0:07:06.03
+                     ; using carr2110
+                     ; on a 486DX4-100 at 1280x1024  Sep 15, 1996  11:27:45
+                     ; Par and Image Copyright 1996 by Jo Weber
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=carr2110
+  center-mag=0/0/0.9861933/1/180 params=-500/300/-200/100 float=y
+  maxiter=1023 inside=bof60 outside=real symmetry=yaxis
+  colors=000M00O00<10>000UMF<8>zo`<10>UMF000<19>XFw<14>0oz<14>XFw<13>21400\
+  0000<14>0ow<13>0a40`00a4<13>0ow<19>022000000<77>000000200<6>J00
+  }
+
+jw_c110c           { ;   0:03:26.69
+                     ; using carr2110
+                     ; on a 486DX4-100 at 1280x1024  Sep 15, 1996  11:28:06
+                     ; Par and Image Copyright 1996 by Jo Weber
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=carr2110
+  passes=b center-mag=0/0/0.9861933/1/180 params=-500/300/-200/100
+  float=y maxiter=1023 fillcolor=50 inside=bof60 symmetry=yaxis
+  colors=WPJnru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>A\
+  LQAOSARUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN\
+  3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc\
+  <4>jiWhfUfdTebS<3>ZUMYRKUMHSJF<6>EAb<6>7Nu5Px5Nu<5>A5c<4>G8SH9QJBQ<3>QIP\
+  SKPUNS<2>_VZ`Y`b`cdcf<3>lor
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  PHC Mandel Jet...		Section: Fractal Sources
+  To:  Robert W. Carr, 73753,2420	15 September 1996 20:00:06
+From:  Les St Clair, 101461,2032	#146954
+
+Bob,
+
+>>This is an image of a PHC Mandel Jet crashing into it's own sonic boom.<<
+
+Super(sonic) image, Bob!
+
+This image, and a few from your recent "par-athon", just cry out to be rotated
+(usually clockwise by 90ø). I kept wanting to stand the monitor on its side.
+Weird!
+
+Anyway, with (more than) a little help from Jan Maarten's "FracText" program,
+you can finally have a *real* hallmark in your images!! (look closely at the
+bottom right corner of this modification to your Carr2763 formula and .par)
+
+cheers, Les
+
+
+Carr2763-F_hm      { ; "Carr2763 with Bob Carr Hallmark!"    t=  2:58:17.02
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 15, 1996 at 17:15:03 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=carr2763_hm passes=1
+  center-mag=-0.0531879/-1e-006/0.6303995/1/180 params=100/150/200/250
+  float=y maxiter=647 invert=0.25/0/0 periodicity=0
+  colors=000ADGBFHBGJ<14>WjrXltWjr<14>BGJWOG<13>svc<15>UMFhhh<14>zzz<8>H7U\
+  <5>2bv0hz0ez<4>4Vy5Tx6Rx7Pw6Mp<5>137000112<13>JAUKBWMEY<13>ssz<4>eefbbbZ\
+  ZZ<8>000TTT<13>g22h00j03<6>x3Oz4Rz7P<6>yWH<7>pJT<6>000000<13>EOlFQoIOp<5\
+  >XFw<7>h00<4>700<8>ACE
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Gallet-4 FRMs and PARs		Section: Fractal Sources
+  To:  All				15 September 1996 22:21:18
+From:  Sylvie Gallet, 101324,3444	#146956
+
+Hi,
+
+  Here are 3 pars from my next par file.
+
+  Enjoy!
+
+   -  Sylvie
+
+
+SG4_0103           { ; .                                     t=  0:00:52.29
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-4-01 function=cabs/sin passes=1
+  center-mag=0.0183518/0.0250201/3.32755 params=0/0/0/5 float=y
+  outside=atan periodicity=0
+  colors=000000FFK<9>000<31>mmz<31>000<31>zzu<31>000<2>665000<27>zzu<29>22\
+  2000000<31>mmz<18>LLQ cyclerange=0/255
+  }
+
+SG4_0602           { ; A PTC 32-bit image                   t=  0:03:26.85
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-4-06 function=sqr/conj passes=1
+  center-mag=-0.00637204/0.0237808/0.8164408/1/-14.999
+  params=1/1.3/0.9/1 float=y maxiter=255 inside=bof61 outside=atan
+  decomp=256
+  colors=E82<3>000<4>ID0LG0OI0RL0VN0YQ0`S0<2>gY0iZ0l`0na0pc0<2>tf0uf0uf0<3\
+  >vg0vg0ug0<2>rd0pc0ob0m`0k_0<4>ZQ0WO0SL0<4>B80860430000221<4>KHDOKGRNIUP\
+  K<2>bXQeZSg`TjbVldW<3>si`tjauka<4>vlbvlbulbuka<2>qh_ofZmeX<2>f_TdYRaWPZT\
+  N<3>MJFJGDGDACA8875543100110<7>PI0RK0UM0WO0YQ0`R0<3>gX0hY0iY0<2>k_0l`0l`\
+  0m`0<4>jZ0iZ0hY0gX0<2>bT0`R0YP0<2>RK0PI0MG0JE0<4>430210110<2>CA2GE3JH4MK\
+  4<4>aX8d_8fa9<3>ohAqjBrkBslBumC<2>voCvoCvoCvoCvnCunC<2>qjBpiBnhAlfA<2>e`\
+  8bY8_W7XT7UQ6<3>HF3DC2A82651210000<4>IA3MC3PE4SG4WI5<4>hQ7kS8mT8oU8<2>sX\
+  9tX9uY9vY9vY9<2>vY9vY9uY9tX9<3>nU8lT8jR7<5>VI5SG4OE4LC3IA3
+  cyclerange=0/255
+  }
+
+SG4_0701           { ; A PHC image                          t=  0:02:40.22
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-4-07 passes=1
+  center-mag=-3.55271e-015/1.77636e-015/0.106359
+  params=0/1.5/25/25/1000/0 float=y maxiter=100 inside=bof60
+  outside=atan decomp=256
+  colors=aZz<12>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<5>0FF0HH0II0\
+  JK<7>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYV\
+  z_Xz cyclerange=0/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Rainbow Par			Section: Fractal Sources
+  To:  All				16 September 1996 01:05:17
+From:  Jim J. Deutch, 104074,3171	#146962
+
+Hi everyone --
+
+I'm glad I didn't log on earlier: just captured half-a-dozen pars off the
+messages and I'm sure I won't be able to work on my own any more tonight....
+
+Luckily, I managed to complete this one before getting swamped with everyone
+else's creativity.
+
+It shows a translucent rainbow with stormclouds.  If you use passes=g, the
+rainbow won't appear at all until the last pass.
+
+This is the kind of thing I was originally thinking of when I inadvertently
+invented PHC.  Don't quite know what to call it though: "Fixed Tranparent
+Overlay Mask Formulas" is not too catchy....and FTOM is even worse.....
+
+Anyway, this is also related to all the FracText activity of late, and may
+satify my promise to Lee that it would be possible to make the letters using
+Pseudo HiColor on a solid background.
+
+I began with a Carr-modified Gallet frm (naturally...)
+
+Jim Deutch
+
+PS: on a related note, I tried the technique first with Carr2330, and wound
+up with too big a formula for the fractint parser.
+
+JDrainbow1            { ; Storm & Rainbow, copyright Jim Deutch 1996
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=jdcarr2289b
+  center-mag=-0.20661000000000000/+0.08380559999999999/33.30812/1.9175/-17\
+  0.169/-4.117 params=100/150/200/250 float=y maxiter=255
+  periodicity=0
+  colors=000YCOVBISAFR9HP9K<2>AAP<2>PBW<7>wAJ<9>wZJwaJwbK<4>ukPtmRtnR<4>vu\
+  SwwTvvT<3>orXnqYkpW<7>Kc9<5>JbYIaaIaeH`jH`k<2>KarKatL`vNaxP`xS_wV_w<4>e`\
+  w<3>dTwdRwdQwcPvbMvaLv_Kt`Js_IrYGpYGpXGnWFkWFiWFi<2>UDbUC`SB_<4>G8NE7LA6\
+  I84D226B5HG8NLAVPCa<3>fKxhPyjUyhPyfKx<2>UEgPCaLAVG8NB5H226000KMFM8CKMFJ8\
+  7HH7JB7GD7QFBKEBSKCGD7GD7GF7KIMNLAMK9LI8KMFJE7HC7HC7HCAIDDHDHHEIGDFJFGHE\
+  JKGHMIKOKNMHKJFFHDCHEJMHBWTQeed_XUTNJXRO_UTdZZZUTUPNNIFGB7KE8QKHTNN<2>`U\
+  b<2>NHHGB7KE8PHFTKKPIIOHIXUZLHJKGI<3>FFJIHMMJRPKURNXUO_XQcZRe`TgcXjf_mXU\
+  ZbYjXTcRNZJHR99HFDNKGROKXTN`WQcTL`<2>G8PF8NF8ND7MD7LB7JB7JA6I95H85F85F64\
+  D000<4>11122422624634846A46C47C58D
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Gallet-4 FRMs and PARs		Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	16 September 1996 03:57:19
+From:  Les St Clair, 101461,2032	#146966
+
+Hi Sylvie,
+
+Great new images (and quick too!)
+
+Oh yes, and some new Sylvie formulas to play with -
+
+SG4_0103_mod       { ; "Here's Looking at You, Kid!"         t=  0:02:51.42
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 16, 1996 at 03:39:25 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-4-01 function=cabs/sin passes=1
+  center-mag=0.22431/0.213734/10.51506 params=-0.22/0/0/5 float=y
+  outside=atan periodicity=0
+  colors=bea406307307<3>20A21A21B11B11C<6>03F03G03H03I03J<3>05L06M06N17O17\
+  P<7>2CV3CW3DX4EX4EY<9>9MeAMeANfANgBOh<6>GTmGUmHVnIWoJXpKYp<6>ObtPcuQduQd\
+  vRevSfv<2>VhvWhwXiwYixZjx<3>amyamybnybnycoy<5>grzhszhsy<5>mvymwynwynxyox\
+  y<4>qyyryxryxsywsyw<4>vzuvzuuyt<63>000000100<19>G50G60H60H60I60<5>L80M91\
+  L91<6>G50F40E40E40<2>D32C22C22B12A12<10>506 cyclerange=0/255
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  PHC "Spheres" still life		Section: Fractal Sources
+  To:  All				18 September 1996 05:53:05
+From:  Brian E. Jones, 102702,2213	#147050
+
+Here's a PHC of a modified Sylvie Gallet 3-03 frm depicting 3 spheres and a
+conical object. Looks great at 1600 x 1200 resolution!
+
+Brian
+
+Spheres           { ; Still Life Spheres
+                        ; © Brian E. Jones 1996
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=BJ-SG-3-03-gb function=tan/sinh passes=1
+  center-mag=-4.50216/0.49619/0.2159539/1/-90 params=3.141/0.4/10/0.5
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=000<5>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaV\
+  cZT`WSYUR<4>HGM93F<4>C4J000<28>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D\
+  <25>B03A03903803702<7>000E5M<8>93FOI5<15>zpa<14>OI5000<24>000
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  New formulas...			Section: Fractal Sources
+  To:  All				18 September 1996 12:16:30
+From:  Sylvie Gallet, 101324,3444	#147059
+
+Hi Folks,
+
+  I can't wait to post them... :-)
+
+  The formulas need some optimizations but it won't change the images.
+
+	-  Sylvie
+
+
+SG5_0101           { ; With a Mandel fractal 1               t=  0:12:06.77
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-5-01 passes=1 center-mag=0/0/0.6666667
+  params=0.5/0/1/2/0/0 float=y maxiter=255 inside=bof60 outside=atan
+  decomp=256 periodicity=0
+  colors=saI<11>vn4vo3vp2wr0vr0ur0<29>Kh4<18>wv1<24>ZA1Y81V84R77N7A00K<11>\
+  06U07V08W09W09W<15>0KZ1LZ3M_<29>lon<14>4ic<12>1XG1WE1VC0UA2TA4R9<12>W21Z\
+  00Z02<20>m8m<25>s`J cyclerange=0/255
+  }
+
+SG5_0102           { ; With a Mandel fractal 2               t=  0:02:48.62
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-5-01 passes=1
+  center-mag=3.785e-006/-9.25e-007/0.6666663
+  params=0.5/0/-2.5/-2/0.5/-0.2 float=y maxiter=255 inside=0
+  decomp=256 periodicity=0
+  colors=BnkAnl8mm<27>1Te1Sd1Rd0Qc0Pc<4>3Qc4Qc5Qc5Rd6Rd7Rd<35>VahWahXbiXci\
+  <5>ZdiZdi_eh`fh<14>wwm<14>4nm<20>3YT2XS2WR1VQ0UP<14>IbPKcPKcQ<20>bvkcwmb\
+  wl<30>0Z0<15>zwK<20>Dnj cyclerange=0/255
+  }
+
+SG5_0201           { ; With a Newton fractal                 t=  0:03:24.27
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=Gallet-5-02 passes=1 center-mag=0/2.22045e-016/0.3786667
+  params=1/0/1.5/1/1/0.35 float=y maxiter=255 inside=0 outside=real
+  colors=j6lQU6lcB<2>P7NnlLhjZahl5SPfc9<2>16FtnYsmykh7<2>KO4pmQkkhcY5MH3XY\
+  E8HMgbE<2>31_xDro3`od9<2>YBH`jCmK0lgOd_dWSumg6<2>QL1hfDXZKLRRMZNI7CifE<2\
+  >AHZdPRtrCsvIrzOxzresMQy`sc7<2>n48toI<2>qtqknG<2>LqhUdR3UjZeIDWUiiL<2>AS\
+  zet4Qz1lgIc_UVSendB<2>V8PZWODDdgnPVofpn7<2>cn9nc5hT3bH1TrF1vNjjB`eFR`JHW\
+  N9SGboLLp_3qnN0XfkE<2>0b_nnD<2>UkVsrNrvbtbEuQLvDTnlMhi`afo1HopSrOJbqoKnp\
+  XjrikgJ<2>JMtpmG<2>bjgmjIffTZac4bBum8vl9xjArX4pE0VeUEEQbaOKPd1CviqF<2>Dz\
+  dmqNftbUe93XBtaGtOPuAYqiD<2>gUYVW64C5ofMjZ`dQopeFkXNfNVkQRa1kIWbokC<2>Z`\
+  RbfGKZQ1Q_qjG<2>hZgmeTfWnsU4q80gdYUVxja8`P9RBBVHC`SJG4ViqEZuLqo`wnGzmQj_\
+  5YMXK8x<3>ml4`b5RX4dZKOJX73jidOZVeupKwrYytkEUucjCMeH4`MGvjfyerirjbI<2>F3\
+  nYlCAiHGNAHKTonEimLclShd7<2>7AAsd8<2>nACrcHoTSmIa cyclerange=0/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  New formulas...			Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	18 September 1996 14:18:31
+From:  Sylvie Gallet, 101324,3444	#147064
+
+
+  Here are the revised formulas + another image.
+
+	-  Sylvie
+
+
+SG5_0202           { ; With a Newton fractal 2               t=  0:03:05.65
+                     ; Copyright Sylvie Gallet [101324,3444], Sep 1996
+                     ; On a Pentium 166 at 1600 x 1200
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=gallet-5-02 passes=1 center-mag=0/4.44089e-016/0.3786667
+  params=1.2/0/3/3/1/-0.5 float=y maxiter=255 inside=0
+  colors=DGS<2>Gdvx0FH9GLADQCABAE<2>3H1PKJ<2>xvNMVHWqGTOPicWzsbO8J<2>u9OB8\
+  U88f59sVBBmE3EDaGIuS9VfBguDuJTWPmjAIS<2>1muQgsELH<2>JxE7ED0L7HJT<2>Voz0C\
+  pJEKPLMWSPKXFRvBVZRmy`BCN<2>4QcDMFD_BEn7P6I`4Im2JPNE`aAmp6L1sawpZZCuy6NE\
+  I<2>rYHEIcFSzF9`HAsQd_1PICCJ<2>9QMLKNTWSahXR7Id6Is5H`M_y_qIPNOeTSKGfXEP8\
+  K<2>x5QEIKFTMHcPIGXNOkSXzLLPTYW`kcIKS<2>XuvLBDUE7AGW7Pj4YyIIYNSnUTVjnhDK\
+  GDWDEhAQ5vI8HDHO<2>DgeJQXPhk61uYJFsVBCIQ<2>8loDJI<2>DpGPJhAXM6vRG8L<2>QA\
+  WHAJLCLPFNHNcMbyIASNCbSFmOFL_NPkVTD9HCPHEBGFDFGFD_aFtyIgnEAAX7Ck4EzIFL<2\
+  >YaVuZsB7G<2>249AXB7v3LKK<2>itSKIURTfYcsABxGHDKR7O`17BU1FfSUYgpntDKG9L<2\
+  >SCWQJIbVJofKGOEKdAOu6DFLDMPEUTEIPGSWIbcTP9if0B9I<2>5FHN`fPB1LOXUckbtzNE\
+  S<2>qWxO8K<2>t5SNBG<2>sK7njFOH4R8Od8Us8_M8EV8Ac96AYT6wc
+  cyclerange=0/255
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  PHC "Spheres" still life		Section: Fractal Sources
+  To:  Brian E. Jones, 102702,2213	19 September 1996 20:21:28
+From:  Les St Clair, 101461,2032	#147105
+
+Hi Brian,
+
+>>Spheres           ; Still Life Spheres
+
+Superb image!
+
+>>BJ-SG-3-03-gb  ;Brian E. Jones [102702,2213]
+                          ;Modified Sylvie Gallet [101324,3444], 1996<<
+
+You have worked your magic on yet another formula.
+
+>> ; © Brian E. Jones 1996<<
+BTW - what ASCII code did you use for the copyright symbol?
+
+Finally, here's some "spheres variations" -
+
+cheers, Les
+
+Spheres_var1       { ; "Boules"                              t=  0:02:05.17
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 19, 1996 at 19:26:57 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-sg-3-03-gb function=tanh/log passes=1
+  center-mag=1.07614/1.25843/0.1931906/1/-90 params=3.141/0.4/10/0.5
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=0000403444645856A67D89FAAHDBJHCMKDOPDQUESY<4>Gby<3>FVcESYDQUDOPCM\
+  KBJHAHD9FA7D86A6585464344450<4>WD0`F0dG0iI0<2>sN0vP0xR0yS0zU0zV0yU0yS0xR\
+  0<2>pM0mK0iI0dG0`F0<4>A6045006606607708808A09C09F0AI<2>0CV0DZ0Dd<2>0Ft0G\
+  y0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C08A0880770660662679A7ED8KH9PKBVOD_SGdVJhZ\
+  NmaR<2>vldxpiysozwtzzyywtysnxpi<2>peWmaRhZNdVJ_SGVODPKBKH9ED89A7267376<2\
+  >KH7PL7VO8`S9dVAiZB<2>siFvlHxpIysKywLzzNywLysKxpI<2>peEmbCiZBdVA`S9<5>37\
+  6365865D66I67N69S6BW6E_7Ic7Lg7Qj7Vm7Zo7cq7h<2>s8ys8tr7nq7ho7cm7Z<2>c7LA4\
+  0<3>W40`40d40i40<2>s40v40x40y40z40<3>x40<2>p40m40i40d40`40<4>A40440040<1\
+  5>0z0<14>080
+  }
+
+Spheres_var2       { ; "Pop-rivet"                           t=  0:02:00.73
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 19, 1996 at 19:31:13 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-sg-3-03-gb function=exp/cos passes=1
+  center-mag=2.90397/0.180206/0.3238233/1/-62.499
+  params=3.141/0.4/10/0.5 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=000<5>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaV\
+  cZT`WSYUR<4>HGM93F<4>C4J000<28>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D\
+  <22>E03D03C03B03A03<10>000E5M<8>93FOI5<15>zpa<14>OI5000<24>000
+  }
+
+Spheres_var3       { ; "Shimmer and Shake"                   t=  0:02:26.76
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 19, 1996 at 19:40:34 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-sg-3-03-gb function=tanh/cos passes=1
+  center-mag=2.33746/2.2503/0.2855985/1/-135 params=3/0/1/50 float=y
+  maxiter=300 outside=atan periodicity=0
+  colors=000644611<2>O44U55Z66c77h88l99pAAsBBuBBxBByCCzCC<3>xBBuBBsBBpAA<3\
+  >Z66U55O44<3>000<14>zmm<14>674241000<3>99OBBUDDZFFcHHhJJlKKpMMsNNuNNxOOy\
+  OOzPPzOOyOOyNNxNNuMMsKKp<3>DDZBBU99O<3>000<2>IE3OJ4UN5ZR6cV7hZ8la9pdAsgB\
+  uiBxjBylCzlCzmCzlCylCxjBuiBsgBpdA<3>ZR6UN5OJ4<3>000<31>000<4>00Q00V00Z00\
+  b00f<4>00r00r00s00r00r<2>00l00i00e00b00Z<2>00L00G00A005000<5>L3PO3TR4WU4\
+  ZW4aY5d_5e`5ga5ha5ib5ia5ia5h`5g_5eY5dW4a<3>L3PI2LE2H<3>000<2>IEEOJJUNNZR\
+  RcVVhZZlaapddsgguiixjjyllzllzmmzllyllxjjuiisggpdd<3>ZRRUNNOJJIEEC99
+  }
+
+Spheres_var4       { ; "Who moved the balls?"                t=  0:02:23.46
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 19, 1996 at 20:02:26 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=bj-sg-3-03-gb function=tan/sinh passes=1
+  center-mag=-4.3811/1.40415/0.2522826/1/-90 params=4.5/0.4/10/0.5
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=000<5>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaV\
+  cZT`WSYUR<4>HGM93F<4>C4J000<28>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D\
+  <24>C03B03A03903803<8>000E5M<8>93FOI5<15>zpa<14>OI5000<24>000
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Overlaying Text			Section: Fractal Sources
+  To:  All				21 September 1996 13:15:30
+From:  Les St Clair, 101461,2032	#147166
+
+Hi Everyone,
+
+Whilst working with Jan Maarten van der Valk's "FracText" program I looked at
+ways to overlay the text onto *any* fractal background.
+
+This can be achived by saving the desired text as a .gif then using Fractint's
+3d_overlay facility (<#> key). Additionally, I devised a technique for placing
+a "shadow" behind the text to produce a more prominent effect.
+
+Here are the steps (formulas and .par files are included with this message):
+
+1. Use the formula "FT_195_solid" to generate the "solid" text. The formula
+has a Newton fractal background, but because the text is "fixed" to the screen
+it is possible to zoom into a solid color area for the background (this avoids
+"breakthrough" caused by pixels of the fractal which happen to be colored the
+same as the solid text). The text is colored black to form the "shadow".
+
+Here's the .par - save it as "ft195_sh.gif" (savename= is written in the par,
+so just press <s> when generated):
+
+1_FT195_SHADOW     { ; "Fractint 19.5 Shadow for overlay"    t=  0:00:34.55
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:29:25 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm 
+  formulaname=FT_195_SOLID function=exp/ident/ident passes=t periodicity=0
+  center-mag=-1.06996/-1.33516/17.82531 float=y savename=ft195_sh.gif
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+2. Use the formula "FT_195_inverse" to generate the "fractal-inside text"
+image. Here's the .par - save it as "ft195_tx.gif" (savename= is written in
+the par, so just press <s> when generated):
+
+2_FT195_TEXT       { ; "Fractint 19.5 Text for overlay"      t=  0:01:37.38
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:33:30 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=FT_195_INVERSE function=exp/ident/ident passes=t
+  center-mag=0/0/0.6666667 float=y savename=ft195_tx.gif periodicity=0
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+3. Generate the background image (or use any image you like!)
+Here's the .par for my background (it looks like the wheels of a locomotive!):
+
+3_FT195_BACKGROUND { ; "Background image for Text Overlay"   t=  0:00:45.21
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:24:32 hours
+  reset=1950 type=fn(z)+fn(pix) function=sinh/recip passes=t
+  corners=-1.9123809/-2.7055433/10.834987/9.6865963/-1.6548126/10.503646
+  params=0/0/1/0 maxiter=4 fillcolor=2 inside=zmag outside=mult
+  savename=ft195_bk.gif
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+4. Now for the overlay stages -
+For the first overlay stage I used the following technique:
+Use <#> to call Fractint's 3d_overlay feature.
+Select 3d fill type to "just draw the points"
+Set x-axis rotation, y-axis rotation & z-axis rotation all to zero (this will
+give the desired 2d-overlay!)
+Set x-axis scaling factor &  y-axis scaling factor to 100% (so that the
+overlaying .gif is the same size as the image you're working with)
+Set surface roughness to zero
+Set x-shift with perspective & y-shift with perspective as required in order
+to position the text in the desired location (this example uses x=4, y=10).
+Set first transparent color=2 and last transparent color=255 (this will
+eliminate all colors except the solid text)
+
+Here's the .par:
+
+4_FT195_OVERLAY_1  { ; "Text Overlay Stage 1 - Shadow"       t=  0:00:39.16
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:53:22 hours
+  3d=overlay filename=ft195_sh.gif scalexyz=100/100 roughness=0
+  waterline=0 transparent=2/255 ambient=20 rotation=0/0/0
+  perspective=0 xyshift=4/10
+  }
+
+5. Here's the second overlay stage -
+The paramaters are the same as for the first overlay except for the text
+position and the transparent colors. In order to get the "shadow" effect it is
+necessary to "off-set" the overlaying text a little above and to the left of
+the shadow. This is achieved by re-setting x-shift with perspective & y-shift
+with perspective relative to the original co-ordiantes (the shadow used x=4,
+y=10 this text uses x=3, y=12).
+Set first transparent color=1 and last transparent color=1 (this will
+eliminate the background colour just leaving the fractal text).
+Here's the .par:
+
+5_FT195_OVERLAY_2  { ; "Text Overlay Stage 2 - Text"         t=  0:00:39.27
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:55:27 hours
+  3d=overlay filename=ft195_tx.gif scalexyz=100/100 roughness=0
+  waterline=0 transparent=1/1 ambient=20 rotation=0/0/0 perspective=0
+  xyshift=3/12
+  }
+
+That's it, have fun!
+Now you can use FracText to make those Christmas Greetings and Fractal
+Birthday Cards!
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Gallet-4				Section: Fractal Sources
+  To:  Sylvie Gallet, 101324,3444	24 September 1996 04:26:16
+From:  Les St Clair, 101461,2032	#147220
+
+Hi Sylvie,
+
+>> I'm not very patient...<<
+Nor me...here's a taster from my "Sylvie-2.par", based on your wonderful
+Gallet-4 series of formulas:
+
+S2P-wip-01         { ; "Strange looking Creature"            t=  0:14:02.89
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 24, 1996 at 04:02:49 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=Gallet-4-11 function=cotanh/ident passes=1
+  center-mag=5.15679/-3.04448/3.251938/1/-45 params=2/-1.3/55/-2
+  float=y maxiter=500 inside=0 outside=atan decomp=256
+  colors=788<12>AkYAn_Bp`An_<14>756756<14>HEjIFlHEj<14>756756<12>elWhoYjr_\
+  mu`jr_<13>A88756756<13>M7bO7dO8fO7d<13>858756756<15>dlh<14>978756756<12>\
+  QNOSOPTPQUQRTPQ<13>967756856<15>`GM<7>NAE000C67<14>zUO<14>C67856756
+  cyclerange=0/255
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  HoHum				Section: Fractint Sources
+  To:  Timothy Wegner, 71320,675	26 September 1996 01:53:21
+From:  Jonathan Osuch, 73277,1432	#147259
+
+Tim,
+
+I know this isn't up to the high standards of recent PARs, but it is good
+therapy <G>.
+
+HoHum              { ; ;
+                     ;  Jonathan Osuch [73277,1432]
+                     ;  Sep 25, 1996 at 19:20:41
+  reset=1950 type=lambda(fn||fn) function=atanh/exp passes=1
+  center-mag=+0.01692200000000077/-0.02511373675365403/0.7861475/1/-90
+  params=1/0.1/1 float=y maxiter=2000 inside=0 logmap=yes
+  periodicity=10 colors=000zk0<131>zA0zA0z90y80<116>D00000000
+  }
+
+Before I started working on this image, I had given some thought to combining
+the palette editor and color cycling.  Or, rather, being able to call the
+palette editor when color cycling and vice versa.  Doing this image reinforced
+the utility of this.
+
+Jonathan
+
+;; ************************************************************************ ;;
+
+Subj:  PHC Mandel variant...		Section: Fractint Sources
+  To:  ALL				26 September 1996 16:47:06
+From:  Robert W. Carr, 73753,2420	#147277
+
+An interesting pentagonal PHC Mandelbrot variant.
+
+--Bob--
+
+
+Carr2793-F        { ; From a modified Sylvie Gallet frm.
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=Carr2793
+  passes=1 center-mag=0.0934727/-1e-006/0.858401/1/90
+  params=100/150/200/250 float=y maxiter=647 periodicity=0
+  colors=000000000E58E24F00AJG8KA707<10>zWC<3>rLPpJTnIS<18>O0OZYE<6>wgF<18\
+  >WMF<15>svc<15>GJBz00<6>zU9zaBzhDzpF<20>UNFaYW<5>rrp<7>TTUQQRPPR<13>88F7\
+  7F78I<14>7Ny<6>F9YG7UJBU<14>sxb<7>MMM000<12>2BT2CV3EX<14>Dav<8>EDL
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Puzzle				Section: Fractint Sources
+  To:  All				26 September 1996 23:27:06
+From:  Hans-Joachim Weber, 100424,35	#147287
+
+Hi,
+solve the puzzle  ;-)
+
+-- Jo --
+
+
+puzzle             { ;   0:03:32.57
+                     ; on a 486DX4-100 at 1280x1024  Sep 27, 1996  00:04:15
+                     ; Par and Image Copyright 1996 by Jo Weber
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=jowe_xy_06 function=sinh/sin passes=1
+  savename=puzzle
+  center-mag=1.25098/0/0.1666667 params=0.5/0.5/0.5/0.5 float=y
+  maxiter=1023 inside=bof60 outside=real potential=255/255/255
+  colors=HKK<10>MVZNW`NV_<16>EEGA78966DDF<3>B9AB89977<30>HQOIQOIRPJRPJSQ<5\
+  >MVTNWUNWUOWU<6>FD8EA5FB5<31>ra7tb8teC<3>rqV<9>LFD<18>hZU<5>MHF<2>KGEJFD\
+  IFCHEBIFC<21>_WN`XOaYPbZQc_R<17>sobtpcsnb<21>C72A50A61<12>GJJ
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Fractint with Win95		Section: Fractint Sources
+  To:  Timothy Wegner, 71320,675	28 September 1996 02:14:00
+From:  Les St Clair, 101461,2032	#147325
+
+Tim,
+
+>>Tims_Random_Formula<<
+
+Of course I just had to give it a try!
+
+Les_rf01           { ; "From Tims_Random_Formula"            t=  0:01:52.16
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 28, 1996 at 01:38:40 hours
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=tims_random_formul
+  center-mag=0.278616/1.13368/16.15563/1/-22.5 float=y maxiter=200
+  outside=atan potential=255/400/0
+  colors=348237<2>56B67D78F89HAAJ<16>XSpZUrYUq<11>MK`<2>MHPMFLMEHNCCKBBIA9\
+  F87<4>MCGODHPFH<3>VPIXRIZUJ_WK<16>zzZxxY<16>0CC<45>MiYNjZNiZ<25>GFDFECFD\
+  BEBAF99<6>BB5zzzAC49C48D3<2>AC4BB4DB5<3>H86I76K67L58<21>`1R`1Sa1Tb0Ua0U`\
+  0T<22>E08C07B07907<3>125
+  }
+
+- Les
+
+;; ************************************************************************ ;;
+
+Subj:  Rainbow Par			Section: Fractal Sources
+  To:  Loren G. Dobert, 72332,507	30 September 1996 14:24:11
+From:  Jim J. Deutch, 104074,3171	#147372
+
+Loren -
+
+ARRGGHH!  You're right!  Now that I *know* you're right, the rainbow "looks"
+all wrong to me -- I must've been brain dead.
+
+Here's a corrected version.  I gave it a new name...not trying to cover up my
+mistakes - just make good on 'em!
+
+Jim Deutch
+
+JDrainbow1b            { ; Storm & Rainbow, copyright Jim Deutch 1996
+                     ; rainbow colors corrected on suggestion of Loren Dobert
+  reset=1950 type=formula formulafile=96_msg_2.frm
+  formulaname=jdcarr2289b
+  center-mag=-0.20661000000000000/+0.08380559999999999/33.30812/1.9175/-17\
+  0.169/-4.117 params=100/150/200/250 float=y maxiter=255
+  periodicity=0
+   colors=000U00<2>00U<2>0KK4HLC4K<3>G1_I0cI1c<11>BKYAMXAMW<12>ARD<3>ATL<4>\
+  GUHIUGJVFKVFMVDNVDOVC<4>VXBWXBWXBWYBWYBWYD<4>WVBWUBWTBWSBWRBWRBWPB<4>WLB\
+  WKBWLB<15>W4CW2DW2E<15>OCb<3>eKygPziUzgPzeKy<2>TEhOCbKAWF8OA5I127000JMGL\
+  8DJMGI88GH8IB8FD8PFCJECRKDFD8FD8FF8JINMLBLKAKI9JMGIE8GC8GC8GCBHDEGDIGEJF\
+  DGIFHGEKJGILILNKOLHLIFGGDDGEKLHCVTRdeeZXVSNKWRPZUUcZ_YUUTPOMIGFB8JE9PKIS\
+  NO<2>_Uc<2>MHIFB8JE9OHGSKLOIJNHJWU_KHKJGJ<3>EFKHHNLJSOKVQNYTO`WQdYRf_Thb\
+  Xke_nWU_aYkWTdQN_IHS89IEDOJGSNKYSNaVQdSLa<2>F8QE8OE8OC7NC7MA7KA7K96J85I7\
+  5G75G54E000<2>00000001212512714724936B36D37D48E
+  }
+
+;; ************************************************************************ ;;
+
+Subj:  Hope for river city		Section: Fractint Sources
+  To:  Timothy Wegner, 71320,675	30 September 1996 15:54:11
+From:  Lee Skinner, 75450,3631		#147379
+
+Tim,
+
+>>Can you dig out for me one or two of the similar encoder bug examples you
+found before?<<
+
+You think I hold on to stuff like that<g>?  I sent you and Bert several
+examples over a year ago, but both of you said you didn't want to bother
+fixing it, so I got rid of the examples.  I just kept the repanned images,
+and didn't keep notes on how many rows or columns they were panned.
+
+But as I mentioned here a few days ago, Damion's latest par has a good
+example for a 1600x1200 encoder bug:
+
+Schizo_2_45        { ; Bad Knit Kilt
+                     ; Created By Damion On Sep 25, 1996 at 16:25:11
+                     ; Par and Image Copyright(c) 1996 by Vincent Damion Preso
+                     ;   0:27:23.15 @ 1024x768 on a 486DX2-66
+  reset=1950 type=formula formulafile=96_msg_2.frm formulaname=Frantic_2
+  function=ceil/sin passes=1
+  center-mag=+0.33478367518279460/+0.54190047895697560/1010.525
+  params=0/0/0/0 float=y maxiter=1023 logmap=17 periodicity=0
+  colors=000E1XR1Yr2_e2a33cG3dT4fp4hc5j55kI6mV6on7q`7r78tK8vy9xk9yZAV9ATNB\
+  SvBQiCOXCMCDLPDJtEHgEF1FEEFCRGArG8eH73H5GI3TI1pJ0bJX5KZIK`0LbmLc`Me7MgLN\
+  ixNjkOlZOnAPpNPqvQsiQuXRwCRxPSztSUgTT1TREUPRUNrVMdVK30IGzGUzFoyDbyB5x9Jx\
+  8zw6mw4`v28v1LuWxuYkt_ZtaAsbNsdvrfirhWqiCqkPpmtpofop1orEntSnvqmwdmy3lVHl\
+  UUkSokQbjO6jNJiLziJmhH`hG8gELgCxfAkf9Ye7Ae5Nd3vd2hc0WcXCbZQb`saafac1`eF`\
+  gS_hq_jdZl4ZnHYoUYqoXsbXu6WvJ0xz0zm1V_1T82RL2Px3Oj3MY4KA4IO5Hu5Fh6DW6BD7\
+  AQ78s86f84293F91SAWqAYdB_4B`HCbUCdoDfaDg6EiJEkzFmlFn_Gp8GrMHtwHujIwYIyBJ\
+  0OJUuKShKQ0LPDLNQMLsMJfNI2NGFOESOCqPBcP94Q7HQ5VR4nR2aS06SXKTZyT_lUa_Uc9V\
+  eMVfw0hjzjYzlBymOyouxqhxs0wtDwvQvxsvzeuV2uTFtRTtQpsOcsM4rKIrJVqHnqFapD7p\
+  CKoAyo8ln6_n59m3Mm1wlWjlYXkZBk`Ojbujdgie0igDhiRhkrglegn2fpGfrTespeucdw5d\
+  yIczVcUnbSabR7aPKaNy`Ll`KZ_I9_GMZEwZDiYBXY9BX7PX6tW4000
+  cyclerange=0/0
+  }
+
+I fixed it by panning the image left a couple of columns after 50% of it had
+generated since the bug occurs near the bottom.  The bug occurs in disk-video
+mode as well.
+
+Lee
+
+;; ************************************************************************ ;;
+
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort by Message number }  
+

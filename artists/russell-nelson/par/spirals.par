@@ -1,0 +1,116 @@
+
+Newsgroups: sci.fractals
+Path: unixg.ubc.ca!news.bc.net!vanbc.wimsey.com!scipio.cyberstore.ca!math.ohio-
+state.edu!cs.utexas.edu!news.tamu.edu!news.utdallas.edu!corpgate!bcarh189.bnr.c
+a!nott!cunews!freenet.carleton.ca!FreeNet.Carleton.CA!ao950
+From: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+Subject: Spirals! Lotsa spirals! Fractint PAR file
+Message-ID: <D790BM.oJ@freenet.carleton.ca>
+Sender: ao950@freenet2.carleton.ca (Paul Derbyshire)
+Reply-To: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
+Organization: The National Capital FreeNet
+Date: Tue, 18 Apr 1995 20:45:21 GMT
+Lines: 101
+
+
+
+The recent posting with the "tri" threefold julia zoom inspired me to
+experiment with zooming parts of double spirals from the (squared) M-set,
+and I found an interesting zoom sequence. I don't think it beats Tri, in
+colors or in beauty, but here it is:
+
+
+1_Fern             { ; Spiral from Seahorse Valley, using neon.map
+  reset=1900 type=mandel
+  corners=-0.74756651/-0.73756651/0.1377948852/0.1452948852 float=y
+  maxiter=2000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000
+  }
+
+2_LongPeacockTail  { ; Part of the spiral
+                     ; A variant of neon.map used here
+  reset=1900 type=mandel
+  corners=-0.742581377/-0.741581377/0.14345589773/0.14420589773
+  float=y maxiter=2000 inside=0
+  colors=000<30>xEazFcyFb<29>212000000<14>000011023<27>4Yp5_r5Zq<30>122000\
+  000<14>000110330<29>zz0<30>220000000<29>000
+  }
+
+3_DoubleSpiral     { ; Check the colors...!
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74223857886/-0.74210257886/0.14373918791/0.14384118791
+  float=y maxiter=2000 inside=0
+  colors=000<3>000110330<29>zz0<30>220000000<28>000001001002002<55>01T02U0\
+  2U03U03V<43>3Vk4Wl4Xn4Yp5_r<31>122000000<10>000
+  }
+
+4a_Double,double   { ; Double double spiral!
+                     ;
+  reset=1900 type=mandel
+  corners=-0.742210261061/-0.742201557061/0.1437905439558/0.1437970719557
+  float=y maxiter=2000 inside=0
+  colors=0003PH<13>122000000<14>000101303<29>z0z<30>202000000<28>000010010\
+  020020<55>0T10U20U20U30V3<43>3kV4lW4nX4pY5r_<16>3RI
+  }
+
+5a_Ruby_Spiral     { ; Part of double double spiral
+                     ; Two words: color cycling
+  reset=1900 type=mandel
+  corners=-0.74220814227041/-0.74220727187043/0.14379545767265/0.143796110\
+  47266 float=y maxiter=2000 inside=0
+  colors=000j3Uk3Uk3V<2>p4Yr5_q5Z<15>R3IH3P<13>212000000<14>000110330<29>z\
+  z0<30>220000000<28>000100100200200<55>T01U02U02U03V03<40>j3T
+  }
+
+6a_Doubled_Again   { ; Double spiral in double double spiral
+                     ; Colors. They're FAN-tastic.
+  reset=1900 type=mandel
+  corners=-0.742207409989421/-0.742207332349765/0.143795779488884/0.143795\
+  837718642 float=y maxiter=2000 inside=0
+  colors=000X07<38>k3Vl4Wn4Xp4Yr5_<31>212000000<14>000011033<29>0zz<30>022\
+  000000<28>000100100200200<55>T01U02U02U03V03<3>W06
+  }
+
+7a_Triple-Double   { ; Really complex bunch of spirals
+                     ; Pastel colors for Easter
+  reset=1900 type=mandel
+  corners=-0.742207384104675/-0.742207362365606/0.143795799357509/0.143795\
+  815661842 float=y maxiter=2000 inside=0
+  colors=000GGW<13>JJbKKcKKcLKc<43>o5Yo5Yn6Y<77>0xx<29>022000000<18>000001\
+  001112112<57>FFV
+  }
+
+8a_CloudySpiral    { ; Center of the really complex bunch of spirals.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7422073742039409/-0.7422073723343734/0.1437958063660888/0.143\
+  7958077682642 float=y maxiter=2000 inside=0 logmap=yes
+  colors=000101<56>K0KK0KK0KK0LK1LK1L<121>9Rw9RwASw<52>zzz<14>000
+  }
+
+9a_PurpleQuartet   { ; Fourfold spirals
+                     ;
+  reset=1900 type=mandel
+  corners=-0.7422073735645488/-0.7422073729737334/0.14379580684562712/0.14\
+  379580728872024 float=y maxiter=2000 inside=0 logmap=256
+  colors=000QQQ<5>000<183>bJTcKUcKUcLVdMV<51>zzz<7>UUU
+  }
+
+_10a_EmeraldMandel { ; The center... a mini Mandelbrot surrounded by emerald.
+                     ;
+  reset=1900 type=mandel
+  corners=-0.74220737334515263/-0.74220737326527053/0.14379580705662953/0.\
+  14379580711656303 float=y maxiter=2000 inside=0 logmap=380
+  colors=000<178>JbTKcUKcULcVMdV<51>zzz<14>000<4>000
+  }
+
+
+
+--
+Cheers,      |  "There was a sale. The biggest going-out-of-business sale you
+________PGD__|  ever saw... But in the end, some of us decided not to buy."
+   ___  ~~~                                                  --Needful Things
+__| * |_______  ASGND Full Silly and Ysiggian _______________________________
+

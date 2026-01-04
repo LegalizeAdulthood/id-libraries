@@ -1,0 +1,119 @@
+HypnoSquare        { ; A spiraling square from Mangnet1J -- Try Color Cycling!
+  reset type=magnet1j corners=-1.676369/-0.076369/1.253862/2.453862
+  params=1/1 maxiter=1500 inside=0
+  colors=00000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0\
+  <5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0\
+  zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4\
+  >00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500000\
+  00500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500
+  }
+
+PizzaPie           { ; A pizza pie made from a formula file - LeeMandel2
+                     ; Courtesy of Tobey Reed
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel2
+  corners=-1.236312/1.248775/-0.948825/0.911276 params=12 inside=0
+  decomp=128
+  colors=000aS_<7>rZXUHlrZX<13>hd`geagcc<4>_Zva_o<7>dTS<7>8Ws<14>jiMghO<9>al7`\
+  m5alA<5>YlYXkaYlY<7>Ti_cRVn7P<13>mNtdtslMq<9>Z2J<10>IcOGgPGgR<12>EgrDfuECdMR\
+  P
+  }
+
+Popcorn-Feather    { ; A feather like fractal found in Popcorn
+  reset type=popcornjul corners=-1.476563/-0.742905/0.866272/1.404633
+  maxiter=50 inside=0 symmetry=none colors=@DEFAULT.MAP
+  }
+
+Popcorn-Fern       { ; A fern-like shape found in Popcorn
+  reset type=popcornjul corners=-0.556641/0.551651/1.083466/1.891006
+  maxiter=50 inside=0 symmetry=none colors=@default.map
+  }
+
+Popcorn-ArtDeco    { ; A strange shape found in Popcorn
+  reset type=popcornjul corners=-0.513306/-0.310379/1.665283/1.805725
+  maxiter=50 inside=0 symmetry=none colors=@default.map
+  }
+
+MandelSwastika     { ; A swastika found in the Mandelbrot!
+  reset type=mandel
+  corners=-0.536420755/-0.536417408/-0.61395463/-0.613946246/-0.53642335/-0.61\
+  3951065 float=y maxiter=32000 inside=0
+  colors=000O00<77>z00000<126>00z000<46>O00
+  }
+
+StarMandel         { ; A star-like shape highlighted with the color map
+  reset type=mandel
+  corners=-1.25574226/-1.25565656/0.402161226/0.402222788 maxiter=1500
+  inside=0
+  colors=0000za0zP0zC0nz<4>0n00az<4>0a00Pz<4>0P00Cz<4>0C000n<2>00Cvvvrrriiieee\
+  YYYTTTLLLHHH888444v00r00i00e00Y00T00L00H008004000v00r00i00e00Y00T00L00H0zywc\
+  cdWWWz000z0zz000zz0z0zzzzz00W0W0WW0W00W0W0WWkkkkrkdmwzzn<2>zzCznz<4>zn0zaz<4\
+  >za0zPz<4>zP0zCz<4>zC0z0n<2>z0Cnzz<4>nz0nnz<4>nn0naz<4>na0nPz<4>nP0nCz<4>nC0\
+  n0z<4>n00azz<4>az0anz<4>an0aaz<4>aa0aPz<4>aP0aCz<4>aC0a0z<4>a00Pzz<4>Pz0Pnz<\
+  4>Pn0Paz<4>Pa0PPz<4>PP0PCz<4>PC0P0z<4>P00Czz<4>Cz0Cnz<4>Cn0Caz<4>Ca0CPz<4>CP\
+  0CCz<4>CC0C0z<4>C000zn
+  }
+
+Deep-Mandelbrot    { ; Note the magnification -- 13 Trillion!
+                     ; I used a Cyrix 387 25 MHz chip to zoom this deep
+  reset type=mandel
+  corners=-1.999999779397176/-1.999999779396949/-0.00000000000007706/0.0000000\
+  0000007674 float=y maxiter=5000 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz
+  }
+
+Discontinuity      { ; A strange discontinuity in this Julia
+                     ; Made from on old FRACTINT DEM-J
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=0.3/0.6 float=y
+  maxiter=1500 inside=0 distest=1534/71
+  colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0
+  }
+
+Circles            { ; From HalleySin Formula
+  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  corners=-0.9872622/-0.8880619/-0.0372072/0.0371932 params=0.1 float=y
+  maxiter=5000 inside=0
+  colors=00000L<3>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>\
+  z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<\
+  5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000500A<4>00z<5\
+  >0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A\
+  <4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A
+  }
+
+Freeway_Cloverleaf { ; A Freeway interchange south of Saturn's Rings
+  reset type=lyapunov corners=3.82/3.87/3.82/3.8575 params=8/0.5
+  maxiter=50
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+Ropes              { ; A rope-like fractal which has a 3-D appearance
+  reset type=formula formulafile=\FRACTINT\bofmaps.frm
+  formulaname=BOFMaps61-65 corners=-2.0/2.0/-1.5/1.5 params=0/-0.5 float=y
+  maxiter=5000 inside=0
+  colors=000zV0<2>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500000005\
+  00A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A005\
+  0000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z0\
+  0<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>\
+  zz0<5>z00<4>A0050000500A<4>00z<5>0zz<5>zz0zo0ze0
+  }
+
+Popcorn-Spiral     { ; Another Spiral
+  reset type=popcornjul
+  corners=-0.81866624/-0.81249833/1.271337/1.517169/-0.94154951/1.3969
+  params=0.05 float=y maxiter=32000 inside=0 symmetry=none
+  colors=00000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0\
+  <5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0\
+  zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4\
+  >00z<5>0zz<5>zz0<5>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500000\
+  00500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500
+  }
+
+StarBurst          { ; Interesting curves around the square corners
+  reset type=formula formulafile=fractint.frm formulaname=richard11
+  center-mag=-6.5e-007/-5.2e-006/0.0416797 params=0.9/1/0.2/0.1
+  maxiter=125 inside=zmag outside=summ potential=255/275/0
+  colors=0000KN<58>GYKGYKHZJIZJ<39>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroE\
+  rnDsmC<17>sECrCCqCC<11>UCCSCDQCDOCEMCEKCFICFGCG<21>GCWFCXFCXECYECZ<20>DCrCCs\
+  CEs<12>CcsCesChtCku<4>CzzCzz
+  }
+

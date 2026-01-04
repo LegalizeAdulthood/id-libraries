@@ -1,0 +1,1304 @@
+
+lesifs009          { ; "Christmas Tree with Lights"         t=  0:06:46.73
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Nov 21, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=ifs ifsfile=les.ifs ifs=lesifs009
+  center-mag=-0.28121945000000000/+5.14996337500000000/0.1558758/0.9998/14\
+  7.578 params=1 float=y maxiter=10000
+  colors=0000zF0zFzNIz00SDzzz9z8zzX0zz88zzXNmzzzz0ZzaN0kzc0zzZ0000<236>000
+  cyclerange=6/41
+  }
+
+IFS:lesifs009 { ; Les St Clair 11/98
+            ; ported from Fdesign
+0.400000 -0.430769 0.266667 0.302564 3.370081 6.471119 0.091635
+-0.466667 -0.817949 -0.600000 0.415385 4.342217 1.955171 0.265941
+0.473743 -0.213001 -0.768943 0.284002 -0.108457 4.979621 0.295278
+-0.048962 -0.059929 -0.050651 0.008561 -3.009826 5.185175 0.023253
+-0.061893 -0.053325 -0.051265 0.034959 -0.250403 4.560843 0.028896
+0.026178 -0.040175 -0.078535 -0.028135 1.966656 5.866811 0.022291
+-0.000000 -0.029329 -0.088827 -0.021655 -0.726490 3.026234 0.013907
+-0.088827 -0.045495 -0.088827 0.016922 2.037453 3.302222 0.041070
+-0.088827 -0.045495 -0.000000 0.030556 2.037453 1.349467 0.014489
+-0.065446 -0.055648 -0.052357 -0.004281 0.670731 7.727941 0.014899
+-0.032723 -0.038526 -0.065446 -0.000000 2.195090 8.820071 0.016340
+-0.039267 -0.051367 -0.078535 -0.004281 -3.697907 3.847955 0.020878
+-0.045812 -0.059929 -0.111258 -0.004281 2.900863 6.813558 0.025504
+-0.006545 -0.051367 -0.124347 -0.000000 3.099650 3.605853 0.040710
+-0.032723 -0.051367 -0.091624 -0.000000 2.861876 1.955493 0.022938
+-0.094776 -0.065346 -0.000000 0.065346 3.176909 -0.061160 0.030986
+-0.094776 -0.065346 -0.000000 0.065346 -2.258020 2.268096 0.030986
+}
+
+sngod007.gif       { ; image(c)1999 Jim Weaver
+  reset=1960 type=manlam(fn||fn) function=exp/ident passes=t
+  center-mag=-5.20478/-1.59872e-014/0.1696683/1/-90 params=0/0/1
+  float=y maxiter=255 bailoutest=manh inside=bof60 outside=real
+  invert=1/0.9/0
+  colors=000112000<26>325325325436534423<8>wuu<9>aQH_MDYJ9VF4SD4<5>421445<\
+  7>UOFYRG`THdWJfXJ<5>oaI<4>jTFiSEhQDgOCfMBeKB<7>Y54X33Y65<13>skYuo`un`<4>\
+  riYqhYogX<29>553432221000101<18>K4AL4BM5BN6B<25>uaEwcExdEzfFyeF<26>N9CL8\
+  CK7CI5BH5AG59F49E4873D<8>213
+  }
+
+lesprl11.gif       { ; image(c)1999 Jim Weaver
+  reset=1960 type=formula formulafile=_l.frm formulaname=Lesfrm16
+  function=ident/tanh passes=t
+  center-mag=-1.36786866382967500/+0.91810921134873150/165.8727/1/22.5
+  params=1.6/0/1.5/0 float=y maxiter=255 inside=bof60
+  colors=`__<11>100<24>W0OX0P_0R`0Sa0Tc0U<30>_0lZ0mY0l<29>102000000<8>U32X\
+  43_43c54d74<11>uX1wZ1x`1zc0zc1zd3<12>zjNzjPxgP<10>V0JMKI<19>bK2cK1cL2<28\
+  >gbahcchcc<29>vvvwwwutt<5>cbb cyclerange=0/255
+  }
+
+TubeSnakeBoogie    { ; image(c)1999 Jim Weaver  (sierp002.gif)
+  reset=1960 type=formula formulafile=_s.frm formulaname=Sierpinsky
+  passes=t center-mag=1.07028/-0.102733/0.3268516/1/99.999
+  params=1.13/0.2 float=y inside=bof60 invert=1/-0.333/0 periodicity=0
+  colors=000wjTxkTzmU<3>viRugQsfQqdP<5>dVJbUIZRG<13>542000001<6>B97CA8EBA<\
+  16>dXSfZUf_V<21>trqusrvut<2>yxxzzzzyz<5>vsvurutptsosrmrpkq<2>qmsrnsrnsro\
+  ssot<13>yyyzzzyyy<16>eThdRgcQgbPf<12>TAYS8XS8X<24>739628628628<13>617617\
+  706705<4>601510611<13>RBFSCGUDHVEIWFIXHJ<23>viS
+  }
+
+frm:Regula_falsi2{
+     IF(|p1|==0)
+    z=pixel
+     ELSE
+    z=p1
+     ENDIF
+ x0=(1,1), c=x1=pixel:
+ fx0=x0*x0+pixel,
+ fx1=x1*x1+pixel,
+ z=z-p2*(x1-x0)*fx1/(fx1-fx0),
+ x2=z, x0=x1, x1=x2
+.0000001<|(x2)|
+}
+
+
+artic_borielus     { ;   0:01:42.71
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=rspf0001.frm
+  formulaname=regula_falsi2 passes=1
+  center-mag=2.34742/3.75783/0.1866667
+  params=0.6360972930082095/-0.9834589678640095/0.3860896633808405/-0.4948\
+  576311532945 float=y maxiter=1000 periodicity=0
+  colors=000E0l<3>j0Gr08z00z60<3>za0zi0zq0zy0tz0<3>Pz0Hz0Ex5<3>3jT0gZ0_c0R\
+  i0Jn08u20x<3>Z0Sf0Kn0Cv04z20<4>ze0zm0zu0xz0<4>Lz0Fy2<3>5mQ2jW0bb0Sh0Jn08\
+  u20x<3>Z0Sf0Kn0Cv04z20<4>ze0zm0zu0xz0<4>Lz0Fy2<3>5mQ2jW0bb0Sh0Eq03x60t<3\
+  >b0Oj0Gr08z00z60<3>za0zi0zq0zy0tz0<3>Pz0Hz0Ex5<3>3jT0gZ0Ye0Nk0Eq03x60t<3\
+  >b0Oj0Gr08z00z60<3>za0zi0zq0zy0tz0<3>Pz0Hz0Ex5<3>3jT0gZ0Sh0Jn08u20x<3>Z0\
+  Sf0Kn0Cv04z20<4>ze0zm0zu0xz0<4>Lz0Fy2<3>5mQ2jW0bb0Sh0Jn08u20x<3>Z0Sf0Kn0\
+  Cv04z20<4>ze0zm0zu0xz0<4>Lz0Fy2<3>5mQ2jW0bb0Sh0Eq03x60t<3>b0Oj0Gr08z00z6\
+  0<3>za0zi0zq0zy0tz0<3>Pz0Hz0Ex5<4>0gZ0Ye0Nk0Eq03x60t
+  }
+
+Diatom03           { ;   0:00:07.09
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=phoenix corners=-1.428754/1.501351/-1.08696/1.110619
+  params=-0.1131412701803644/1.007232886745811/3 float=y maxiter=500
+  inside=0 periodicity=0 sound=off
+  colors=000000<3>MCFSFIXIMbLQhPU<3>qYbs_duafxdi<3>`_bVY`PXZ<2>7ST<3>6HV6F\
+  V6CW69W<3>TVUZ`TdfT<2>vxQ<22>jWViVViUW<2>gQWfOXgOchOjiPq<8>eftehudju<2>c\
+  pvbswcrw<8>mdwocwpaw<2>sYwuWxuWw<8>xYixYgxYe<3>zZZ<8>zWczWdzWd<3>zVgzUhx\
+  Vi<8>fhsdjtbku<2>XpxVrzUrw<8>CjTAiQ8hM<3>0d8<8>OS_QQbTPe<3>cJseHvhFy<23>\
+  tNktNjuNj<3>wOgxPfxPd<9>sNGrNDrMB<2>pL3oL0oM4<7>kR`kSejTi<2>iVuhWziTz<3>\
+  oGypGypHz
+  }
+
+Diatom04           { ;   0:00:11.20
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=phoenix
+  corners=0.58559508/1.0635/-0.18337951/0.17504917
+  params=-1.534632404553362/0.2930387279885251/2 float=y maxiter=500
+  inside=0 periodicity=0 sound=off
+  colors=000055033000<9>P00R00U00<2>`00c00d44<7>qaareetii<2>xvvzzzyvv<8>lO\
+  OjKKiGG<3>c00<9>F00D00A00<2>300000020<8>0P00R00U0<3>0c0<9>bqbfsfjtj<3>zz\
+  z<9>OlOKjKGiG<3>0c0<9>0F00D00A0<2>030000002<8>00P00R00U<3>00c<9>bbqffsjj\
+  t<3>zzz<9>OOlKKjGGi<3>00c<9>00F00D00A<2>003000022<8>0PP0RR0UU<3>0cc<9>bq\
+  qfssjtt<3>zzz<9>OllKjjGii<3>0cc<12>088
+  }
+
+tendril            { ;   0:00:09.89
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-1.553436/1.54718/-1.168488/1.163071
+  params=0.7379772331919308/1.510155613879818 inside=0
+  potential=256/1000/0 sound=off
+  colors=p0w<9>K0NH0JD0F<3>000<9>bbbfffjjj<3>zzz<9>OOOKKKGGG<3>000L00<8>k0\
+  0<4>z00<2>p00l00h00d00a00<3>N00J00F00<3>000<9>bL0fN0jP0<3>zX0<9>OC0KA0G8\
+  0<3>000<9>__0cb0gf0<3>ut0<9>ML0II0FE0<3>000GA4<7>7c26g25k2<2>2v10z00w0<8\
+  >0O00K00G0<3>000<9>00b00f00j<3>00z<4>00e00a00X<3>00H00D00900400030100070\
+  3<8>d0Lg0Nk0P<3>z0X<9>O0CK0AG08<3>000<11>b0hf0li0pm0s
+  }
+
+tendril2           { ;   0:00:15.76
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-1.069138/1.056442/-0.8013306/0.7993317
+  params=1.070110171819208/0.6295440229499191 inside=0
+  potential=256/1000/0 sound=off
+  colors=p0w<9>K0NH0JD0F<3>000<9>bbbfffjjj<3>zzz<9>OOOKKKGGG<3>000L00<8>k0\
+  0<4>z00<2>p00l00h00d00a00<3>N00J00F00<3>000<9>bL0fN0jP0<3>zX0<9>OC0KA0G8\
+  0<3>000<9>__0cb0gf0<3>ut0<9>ML0II0FE0<3>000GA4<7>7c26g25k2<2>2v10z00w0<8\
+  >0O00K00G0<3>000<9>00b00f00j<3>00z<4>00e00a00X<3>00H00D00900400030100070\
+  3<8>d0Lg0Nk0P<3>z0X<9>O0CK0AG08<3>000<11>b0hf0li0pm0s
+  }
+
+tendril3           { ;   0:00:12.47
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-1.069138/1.056442/-0.8013306/0.7993317
+  params=1.157911923581652/1.151074831385235 inside=0
+  potential=256/1000/0 sound=off
+  colors=000fzy<2>gzzgzzfyz<3>cwybvybuyatx<2>cpvdoufnt<3>ohpqfosen<2>y`kz_\
+  jzZizXhzWg<3>tRcrQboPa<3>eMZcMYaLX<2>ZKWYKWYLV<3>ZMVZMV_NV<3>_QV_RVZSWZT\
+  W<3>UYYSZYR_Y<3>Nd_Me`Mf`<3>NjaOkbPlb<3>UocVocWoc<3>YpbYpbYpb<3>XoaXoaXn\
+  `<3>Yl_YkZZjZ<2>ahXagXbfWbeWcdV<2>dbUdaUc`T<3>`YS_XSZXS<3>UVSTVTSUT<3>RU\
+  URUVRUV<3>SVYTWYTWZ<2>TY`SZaSZbR_cR`c<3>ObfNcgNchNdhMei<3>PgkPgkQgk<3>Vh\
+  lWhlXhl<3>Zfj_fj_ei<3>YcfYbeXad<3>XX`XW_XVZ<2>_SW_QU`PT`ORaNQ<2>bJNbILaH\
+  KaGJ<3>VDGTCFRCE<3>IACGACEAC<3>BCCBCCBDDCEDCEE<3>GJHHKIILJ<3>HSPGTQFVR<3\
+  >9aX7bZ5d_3fa2gb2id1kf2lg2ni3oj<3>DtpGuqKvr<3>Xyv_ywazxczx
+  }
+
+tendril4           { ;   0:00:16.04
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-1.069138/1.056442/-0.8013306/0.7993317
+  params=1.02640766624958/0.7111505172887355 inside=0
+  potential=256/1000/0 sound=off
+  colors=000fzygzz<3>fyzeyzdxz<2>avyauxasxarwbqvbpv<4>lhqofpqeo<3>yZjzXizW\
+  hzUfzTe<3>tOarM`oL_<3>eIXcIWaHV<2>YGUXGTXHT<3>YISYISZJS<2>_MT_NTZOT<2>XR\
+  UWSVUUV<3>PZXN_XM`Y<3>Le_Lf_Lh_<3>PkaRlaSma<3>WoaXoaXoa<2>YoaYo`Xo`<3>Wm\
+  _WmZWlZ<3>YiXZhWZgW_fV<3>bbTcaTc`S<3>bYRaXQ`WQ<3>XTQVTQUSQ<3>RSRRRRQRR<3\
+  >RSURSURSV<3>SUYSVYSVZ<2>QYaPYbPZbOZcN_d<3>LbgLchLch<3>OejPejQfk<3>VfkWf\
+  kXfj<3>ZdiZchZcg<3>X_dWZcWYb<3>WTYWSXXRW<3>_MQ`KP`JO<3>aEIaDH`CG<3>U9DS8\
+  CQ7B<3>G69E59D68B68<3>979989A9A<3>EDDFFEGGFGHGHJH<2>GOLFQNDSP<3>7ZV5`X4b\
+  Z2d_1fa<3>0mg2ni3pk6ql8rn<3>MwsPxtTxu<3>czx
+  }
+
+tendril5           { ;   0:00:14.23
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-1.877457/1.866684/-1.413223/1.408035
+  params=0.4615710928678242/1.059488784447767 inside=0 outside=summ
+  potential=256/1000/0 sound=off
+  colors=000avs<3>fywgyxgyx<3>izzjzzkzz<3>nyzoyzqyz<3>uvxwvxxuw<3>zrtzrtzq\
+  s<3>wnpvmouln<3>niklhjjhj<3>dfgcefaef<3>YccYccXbb<2>VbaUb`Ub`Ub`<4>SbZRc\
+  ZRcY<3>PeYPeYPfX<3>PgWQhWQhV<4>TkUTkUTkU<2>WlTWmSXmSXnSYnS<4>`pQ`pQaqQ<3\
+  >cqPdqPdqP<2>drOdrOdrPcqPcqP<2>aqP`qQ`pQ_pRZpRYpR<3>VnTUnUTmU<2>SlXRlXRk\
+  YQjZ<2>QiaPhaPgbPfcPed<3>PbgOagOah<3>OYkOXkOWl<3>OSmPRmPQmQPmQOm<2>SLmTK\
+  lTJlUIkVHk<3>XEhYDgZCf<3>`9``8_a7Z<3>b5Ub4Tb3R<3>a3La2K`2I_1G_1F<3>V2AU2\
+  9S27<3>M44L53J62<3>F91EA0DB0<3>BF1BH1AI2<3>9N58P68Q7<3>5WC4YD3ZF<3>1dL1e\
+  N0gO0hQ<2>2kV3lX5mZ6n_<3>FrfIshKsi<2>StmUuoWupYuq
+  }
+
+tendril6           { ;   0:00:06.15
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=lambdafn function=sin
+  corners=-2.192383/2.185532/-1.651001/1.64534
+  params=0.593533127842036/1.295030640583514 inside=0 outside=real
+  potential=256/1000/0 sound=off
+  colors=000Nzj<3>JziIzhHzhGzgFzgDzf<32>ILEIJDIIC<3>JD9KC8KB7<3>K53K32K21L\
+  00<7>B00A00900<3>300100000<14>b47e48h48<3>r5At6Bw6Bz7C<2>y7Cx6Cw6Cv6Cv6C\
+  <3>r5Cq4Cp4Co3B<3>k5Fj5Gi5Hh6Ig6J<3>i7Nj7Oj7P<3>m9Un9VnAW<15>wGmwGnxGoxH\
+  pyHqzIs<24>zjVzkUzlT<3>zqPzsOzsP<25>zxszxtzyvzywzyxzzz<37>Ozk
+  }
+
+Octo_lair          { ;   0:01:46.17
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=mandel
+  corners=-0.1567387665/-0.1499777345/0.6709617299/0.6486054741/-0.1435198\
+  275/0.6533734281 params=0.3001312295907468/-0.6930259102145452
+  float=y maxiter=1000 bailout=200 inside=bof60 logmap=yes sound=off
+  colors=000000<3>EI9IMBLRE<3>_hOcmQfqTjvVmvWpwY<230>Q39Q39Q29<3>P189fNNNm
+  }
+
+pre_suposed        { ;   0:00:05.98
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=julia
+  corners=1.293952/-1.29395/-1.725277/1.725259/-1.29395/1.725259
+  params=0.3471588837608122/0.04094990254592253 float=y maxiter=500
+  outside=summ logmap=old decomp=256 sound=off
+  colors=000<5>110220220320330<153>xv7xv7yw7yw7zx8<32>wd6vc6vc6<2>va6v`6wY\
+  5<3>yM1zJ0yJ0<32>A30830720<3>000P2VN2W
+  }
+
+pre_suposed2       { ;   0:00:04.67
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=julia
+  corners=1.293952/-1.29395/-1.725277/1.725259/-1.29395/1.725259
+  params=-0.05962232904475441/-0.7613511930685677 float=y maxiter=500
+  outside=summ logmap=old decomp=256
+  colors=000<5>110220220320330<153>xv7xv7yw7yw7zx8<32>wd6vc6vc6<2>va6v`6wY\
+  5<3>yM1zJ0yJ0<32>A30830720<3>000P2VN2W
+  }
+
+pre_suposed3       { ;   0:00:12.74
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=julia
+  corners=0.7558175/0.34633924/-0.11099748/0.43497354/0.34633924/0.4349735\
+  4 params=-0.7741521914062766/-0.1695057388005541 float=y maxiter=500
+  outside=summ logmap=old decomp=256 sound=off
+  colors=000<5>110220220320330<153>xv7xv7yw7yw7zx8<32>wd6vc6vc6<2>va6v`6wY\
+  5<3>yM1zJ0yJ0<32>A30830720<3>000P2VN2W
+  }
+
+figura_02          { ;   0:00:11.04
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=mandel passes=1
+  corners=-0.134107825406/-0.134012936409/0.649692964738/0.649764131486
+  params=-0.315530869472335/-0.554734946745201 float=y maxiter=10000
+  inside=0 sound=off
+  colors=000055033000<9>P00R00U00<2>`00c00d44<3>kLLlPPnUU<3>tiiummwrrxvvzz\
+  z<9>lOOjKKiGG<3>c00<9>F00D00A00<2>300000020<8>0P00R00U0<3>0c0<9>bqbfsfjt\
+  j<3>zzz<9>OlOKjKGiG<3>0c0<9>0F00D00A0<2>030000002<8>00P00R00U<3>00c<9>bb\
+  qffsjjt<3>zzz<9>OOlKKjGGi<3>00c<9>00F00D00A<2>003000022<8>0PP0RR0UU<3>0c\
+  c<9>bqqfssjtt<3>zzz<9>OllKjjGii<3>0cc<12>088
+  }
+
+figura_03          { ;   0:00:09.23
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+                     ; It's another HT varient this time applied to the 
+pheonix
+  reset=2000 type=formula formulafile=_p.frm formulaname=pheot
+  passes=1 corners=-1.608463/1.608463/-1.206347/1.206347
+  params=0.04597613452558978/0.0008087405011139156 float=y maxiter=256
+  inside=2 logmap=7 periodicity=0 sound=off
+  colors=000iGF<3>c00<9>F00D00A00<2>300000020<8>0P00R00U0<3>0c0<9>bqafsejt\
+  i<3>zzy<9>OlNKjJGiF<3>0c0<9>0F00D00A0<2>030000001<8>00O00Q00T<3>00b<9>bb\
+  pffrjjs<3>zzy<9>OOkKKiGGh<3>00b<9>00E00C009<2>002000021<8>0PO0RQ0UT<3>0c\
+  b<9>bqpfsrjts<3>zzy<9>OlkKjiGih<3>0cb<9>0FE0DC0A9<2>032000200<8>P00R00U0\
+  0<2>`00c00d43<7>qa`redtih<2>xvuzzyyvu<9>jKJ
+  }
+
+figura_04          { ;   0:07:22.70
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=quartc
+  passes=1 corners=-3.299331/0.153637/-0.05399222/2.535734
+  params=0.3891043733024079/0.3467055269020661 float=y maxiter=1024
+  inside=zmag outside=15 periodicity=0 sound=off
+  colors=p0w<9>K0NH0JD0F<3>000<9>bbbfffjjj<3>zzz<9>OOOKKKGGG<3>000L00<8>k0\
+  0<4>z00<2>p00l00h00d00a00<3>N00J00F00<3>000<9>bL0fN0jP0<3>zX0<9>OC0KA0G8\
+  0<3>000<9>__0cb0gf0<3>ut0<9>ML0II0FE0<3>000GA4<7>7c26g25k2<2>2v10z00w0<8\
+  >0O00K00G0<3>000<9>00b00f00j<3>00z<4>00e00a00X<3>00H00D00900400030100070\
+  3<8>d0Lg0Nk0P<3>z0X<9>O0CK0AG08<3>000<3>D0FG0JK0M<2>T0YX0a_0ec0hf0lf0lf0\
+  l
+  }
+
+figura_06          { ;   0:00:10.43
+                     ; Created Jan 02, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_h.frm formulaname=ht1 passes=1
+  corners=-1.426323/1.426323/-1.069742/1.069742
+  params=0.117040009765923/-0.06646931363872188 float=y maxiter=256
+  logmap=7 periodicity=0 sound=off
+  colors=p0w304000<9>bbbfffjjj<3>zzz<9>OOOKKKGGG<3>000L00<8>k00<4>z00<2>p0\
+  0l00h00d00a00<3>N00J00F00<3>000<9>bL0fN0jP0<3>zX0<9>OC0KA0G80<3>000<9>__\
+  0cb0gf0<3>ut0<9>ML0II0FE0<3>000GA4<7>7c26g25k2<2>2v10z00w0<8>0O00K00G0<3\
+  >000<9>00b00f00j<3>00z<4>00e00a00X<3>00H00D009004000301000703<8>d0Lg0Nk0\
+  P<3>z0X<9>O0CK0AG08<3>000<6>N0QQ0UT0Y<3>f0lj0om0sm0s<12>708
+  }
+
+{FROM:	INTERNET:fractint@lists.xmission.com, INTERNET:fractint@lists.xmission.com
+TO:	"Fractal mailing list", INTERNET:fractint@lists.xmission.com
+DATE:	1/6/00 2:54 PM
+
+Re:	(fractint) new coloring method / new flattening method
+
+ 
+Hi,
+
+I would like to present two (in my opinion) new METHODS for fractals.
+
+1. The first is a method to color fractals.
+Using outside=iter can often result in very boring fractals with
+large monochrome areas.
+One way to enhance the image is using outside=atan.
+The following code offers an alternative color smoothing scheme
+that create effects very different and independent from outside =atan :
+
+;---------------------------------------------------------------------------
+
+}
+
+colorfrm { ;special colour smoothing scheme by Karl Scherer!
+          ; can be applied to ANY EXISTING MATH FORMULA
+         loop=0, begin=1, rounds=1 , ;(Karl's additional vars)
+         z=0:                        ;your settings
+IF (begin==1)         
+         ;====== insert your formula here =====================  
+         z=...
+         ;====== end of your formula ========================== 
+         r=|z|-8                     ; equivalent to |z|<8
+         IF (r>=0)
+           begin=2, rounds=r ; >>> try rounds =r/2 etc! <<<
+         ENDIF
+ELSE
+         loop=loop+1
+ENDIF
+loop<rounds
+}  
+;---------------------------------------------------------------------------
+
+----------------------------
+
+
+2. The second Method is a method to flatten images that have rotational
+symmetry around (0,0).
+You can imagine the process as cutting the plane along the positive x-axis
+and stretching the sheet such that the unit circle to become the x-axis
+and the origin (0,0) spreads out at (any x, - infinity).
+A star-shaped pattern for example then turns into a pattern that repeats in
+x direction and changes constantly in y-direction (ideal for wallpaper-type
+images
+and cloth-designs).
+You will find totally new appeal in many old point-symmetric fractals,
+especially those that
+allow deep zooming at (0,0)!
+
+
+flatfrm  { ; by Karl Scherer (angle,radius) => (x,y)
+           ; radius stretched such that (0,0) => (0,-infinity) 
+          c=pi/5, x=imag(pixel),y=real(pixel)
+          x=2*c*x, y=c*y, r=2^(-x), v=r*cos(y), 
+          w=r*sin(y), p=v+flip(w), {Karl's settings
+          z=0:               {your settings
+;=========== insert your formula here ======================
+         z=...
+;=========== end of your formula ============================
+         |z|<8000            {your bailout
+}
+
+I suggest to Tim Wegener to add to the FRACTINT HOME PAGE a now option 
+a METHODS besides the existing FORMULAS and PARAMETER
+directories.
+This METHODS directory shall contain tools, methods (like my coloring
+scheme and my flattening scheme), tips and
+fractal code that may be used in all sorts of fractals.
+I think this would help other fractint users enormously.
+
+Next suggestion: Built my coloring method right into the next FRACTINT
+version!
+
+
+MandelbrotMix4 {; Jim Muth - Feb. 3, 1999
+a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
+g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
+k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
+z=k*((a*(z^b))+(d*(z^f)))+c,
+|z| < l
+}
+
+pkpeaks.gif        { ; image(c)2000 Jim Weaver
+  reset=1960 type=formula formulafile=fractint.frm formulaname=ok-36
+  function=cotan/cosxx/cosh/cosxx passes=t
+  center-mag=1.85462/1.9603/17.86519/1/105 params=0.2/0/0/0 float=y
+  maxiter=25 inside=bof60 outside=atan
+  colors=D7LC05<21>50UA5WC7WE9X<6>MH_NI_NJ`<5>SNaSObTObTPbUPb<14>aXeaYfaYf\
+  bYf<32>njkkjn<23>mqumrvlps<2>gjjeggcef<16>3EI0CG0DH<4>0IJ0JK1LL1NL<5>0ZK\
+  0XK0VK<7>02C63C<6>YPI<4>rhAreAqaAqZB<16>C6E20C<3>BAIDCJDBJDAKD8KD5M<22>p\
+  ps<17>C04
+  }
+
+ok20eps9.gif       { ; image(c)2000 Jim Weaver
+  reset=1960 type=formula formulafile=fractint.frm formulaname=OK-20
+  function=sin/atan passes=t
+  center-mag=-6.86666/-1.29674e-013/0.1440395/1/-90 params=100/0
+  float=y maxiter=125 inside=startrail invert=1/-0.1/0 decomp=256
+  periodicity=0
+  colors=000ozC<2>zz0<15>z1z<15>000<8>0N00Q00T00W00Z0<2>0f0<15>zz0<15>zzz<\
+  15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ\
+  8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<11>kzG
+  }
+
+3rdCoast.gif       { ; image(c)2000 Jim Weaver
+  reset=1960 type=mandel(fn||fn) function=log/flip passes=t
+  center-mag=+1.60533291452199800/-1.33498883875210200/1.18619/1/45
+  params=0/0/0.7541600000000001 float=y maxiter=255 inside=bof60
+  decomp=256 periodicity=0
+  colors=000700<11>`00c00d44<13>zzz<3>snNukDsh3qe0<2>kX0aU0<9>I00<8>000300\
+  000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupw\
+  xvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0C<4>\
+  B02900700500005<13>00c<15>zzz<15>EEcBBa88Z<2>00S<9>003000022<14>0cc<15>z\
+  zz<15>0c0<14>030000200500
+  }
+
+frm:Mandel_lake {
+; p1 = not used
+
+; real part of p2: not used
+; imag part of p2: 0 = lake transform disabled
+;                  any value between 0 and 100: water level in % of
+;                  the screen height (0 = bottom, 100 = top)
+
+; real part of p3: amplitude of the wave (try 0.2)
+; imag part of p3: frequency (try 300)
+
+; New predefined variables
+; center  = (x,   y)
+; magxmag = (mag, xmagfactor)
+; rotskew = (rot,  skew)
+
+if (imag(p2) > 0 && imag(p2) <= 100)
+  angle = real(rotskew * pi / 180)
+
+  dxc = sin(angle) * (1-0.02*imag(p2)) / real(magxmag)
+  dyc = cos(angle) * (1-0.02*imag(p2)) / real(magxmag)
+  lake_center = center - dxc - flip(dyc)
+
+  a = real(p3) , f = imag(p3)
+  if (angle != 0)
+    pixel = (pixel - lake_center) * e^flip(angle) + lake_center
+  endif
+  y = imag(pixel)
+  if (y < imag(lake_center))
+    dy = imag(lake_center) - y
+    y = 2 * imag(lake_center) - y
+    y = y + a * dy * sin (f * dy^0.2)
+    pixel = real(pixel) + flip(y)
+  endif
+  if (angle != 0)
+    pixel = (pixel - lake_center) * e^flip(-angle) + lake_center
+  endif
+endif
+
+; Classic mandel formula
+  z = c = pixel
+:
+  z = z*z + c
+  |z| <= 4
+}
+
+mandel_lake_01     { ; .                           t=  0:00:08.45
+                     ; Copyright Sylvie Gallet, Jan 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=Mandel_lake center-mag=-0.444738/0/0.6666671
+  params=0/0/0/40/0.5/150 float=y inside=atan outside=real
+  decomp=256 cyclerange=0/255 sound=off
+  colors=GXf<4>CSbCRaBQ`BQ`BP`<7>5HU4GT3FT<2>1CQ0CQ2DR<32>ortp\
+  surtvsuwuwwvxx<3>uyytyytxy<28>esyesydsy<3>brybqzbox<24>fMXfL\
+  WgJVgIU<2>eFQdEPbDO<6>S6GQ5FO4E<2>K1BJ0AJ1B<26>CWeBXfBYgBZh<\
+  2>9bl<12>hrtktunuu<3>yzx<31>VnrUnrUnrTmrSmr<4>OhnNgnMfmMelLd\
+  kKcj<4>HYg
+  }
+
+fr_clock           { ; Martin Rodenberg moon@germanynet.de
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=jm_25 function=sinh/log passes=1
+  center-mag=+1.01305489025157200/-0.0034013417216\
+  4564/124673.3/1.1454/52.778/9.107 params=900/300
+  float=y maxiter=900000 colors=@volcano.map
+  }
+
+
+frm:Mandel_lake { ; Sylvie Gallet, Jan 16, 2000
+;
+; p1: Julia seed
+; real part of p2: bailout value
+; imag part of p2: 0 = lake transform disabled
+;                  any value between 0 and 100: water level in % of
+;                  the screen height (0 = bottom, 100 = top)
+; real part of p3: amplitude of the wave (try 0.2)
+; imag part of p3: frequency (try 300)
+
+; This formula uses the new predefined variables:
+; center  = (x  , y)
+; magxmag = (mag, xmagfactor)
+; rotskew = (rot, skew)
+
+bailout = real(p2)
+
+; Lake transformation
+; -------------------
+
+if (imag(p2) > 0 && imag(p2) <= 100)
+
+  level = imag(p2) / 100         ; water level
+  ampl = real(p3)                ; amplitude of the wave
+  freq = imag(p3)                ; frequency
+
+  angle = real(rotskew * pi / 180)
+  exp_irot = exp(-flip(angle))
+  h = 1 / real(magxmag)
+  w = h / 0.75 * imag(magxmag)
+  tanskew = tan(imag(rotskew * pi / 180))
+
+; The complex numbers u and v are defined as follow:
+;   u = bottom_right_corner - bottom_left_corner
+;   v = top_left_corner - bottom_left_corner
+
+  u = 2 * w * exp_irot
+  v = 2 * h * (tanskew + flip(1)) * exp_irot
+
+; Bottom_left_corner:
+  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
+
+  z = pixel - z3rd
+
+; solves the equation z = a*u + b*v which is equivalent to the system:
+;   re_z = a * re_u + b * re_v
+;   im_z = a * im_u + b * im_v
+; the solution (a,b) is:
+;       | re_z   re_v |        | re_u   re_z |
+;       | im_z   im_v |        | im_u   im_z |
+;   a = ---------------    b = ---------------
+;       | re_u   re_v |        | re_u   re_v |
+;       | im_u   im_v |        | im_u   im_v |
+;
+; Only b is used and 0 <= b <= 1
+;   b = 0  <==>  pixel at the bottom of the screen
+;   b = 1  <==>  pixel at the top of the screen
+;
+; Since the formula parser uses complex numbers, I thought the
+; easiest way to calculate b was:
+
+  b = imag(conj(u)*z) / imag(conj(u)*v)
+
+; the heart of the lake transform:
+  if (b <= level)
+    dy = level - b
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+  endif
+
+  z = z + z3rd
+
+else
+  z = pixel
+endif
+
+; Classic mandel/julia formula
+if (ismand)
+  c = z
+else
+  c = p1
+endif
+:
+z = z*z + c
+|z| <= bailout
+}
+
+mandel_lake_01     { ; .                           t=  0:00:02.86
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.444738/0/0.6666671
+  params=0/0/512/40/0.3/200 float=y inside=atan
+  outside=real decomp=256 cyclerange=0/255 sound=off
+  colors=GXf<3>DTcCSbCRa<3>AO_AN_9MZ<4>5HV4GU3FT<3>0CQ<32>mqso\
+  rtpsu<2>uwwvxxvxx<2>uyytyytxy<29>esydsydsy<2>brybqzbox<24>fM\
+  XfLWgJV<3>eFQdEPbDO<6>S6GR5FP4EN3DL2CK1BJ0A<23>DSaDTbDUcCVdC\
+  WeBXf<3>Aak9blCcm<7>Ymr`nrbps<3>nuuqvvtxwvywyzx<30>WnrVnrUnr\
+  <3>RkqRkpQjp<5>LdkKcjJbiJaiI_hIZhHYg
+  }
+
+mandel_lake_02     { ; .                           t=  0:00:02.58
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.5/0.135678/0.6666667
+  params=0/0/1024/45/0.3/300 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_03     { ; .                           t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-1.2699/-0.168032/36.72672/1/-32.5/30.396
+  params=0/0/4/40/0.3/200 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_04     { ; .                           t=  0:00:01.59
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=n passes=1
+  center-mag=0/0.331658/0.6666667
+  params=0.3322884012539185/-0.03768844221105527/2/40/0.3/200
+  float=y maxiter=300 inside=0 decomp=256 cyclerange=0/255
+  sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+GiraSol01          { ;   0:00:11.20 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
+  potential=255/300/100 decomp=256 rseed=3141 cyclerange=0/255
+  sound=off
+  colors=DGN000100000300<3>800H00<4>H00<2>K00M00N00P00Q00<5>Z00_00a00<2>e0\
+  0f10f20<23>sRAsSBtTB<2>uWDvXDvZG<3>tiSskUrnXqq_ptb<6>WaTTZSQWQ<2>HOMELKD\
+  KJ<3>AFFAEE9DD8BB<2>ABDBBEBDH<3>CLTCNVDPY<3>DXhDZkE`nEbqFdt<5>DObDMZDJW<\
+  3>C8K97F<2>9BFFD9EFA<5>Z`PbdSegU<3>svc<2>svc<4>fj`cg_aeZ<3>RVWOSVLPUIMTF\
+  JSFJS<3>TEKWDI_BGbAEeCDgEC<2>rL8rL8uN7xP5<3>lE8iB9f89c5A<3>U7ES8GQ9HNAJL\
+  BKLCMKEO<3>UPWXSYZV_c`b<3>oljrolurnrplnmkikk<6>YWPWUMVRI<3>OI5<3>YRD`TFb\
+  WH<3>kcPneRqgT<2>xn_wm_vlZ<14>GIO
+  }
+
+GiraSol02          { ;   0:00:07.14 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
+  184270758 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=DGN000100000300<3>800H00<4>H00<2>K00M00N00P00Q00<5>Z00_00a00<2>e0\
+  0f10f20<23>sRAsSBtTB<2>uWDvXDvZG<3>tiSskUrnXqq_ptb<6>WaTTZSQWQ<2>HOMELKD\
+  KJ<3>AFFAEE9DD8BB<2>ABDBBEBDH<3>CLTCNVDPY<3>DXhDZkE`nEbqFdt<5>DObDMZDJW<\
+  3>C8K97F<2>9BFFD9EFA<5>Z`PbdSegU<3>svc<2>svc<4>fj`cg_aeZ<3>RVWOSVLPUIMTF\
+  JSFJS<3>TEKWDI_BGbAEeCDgEC<2>rL8rL8uN7xP5<3>lE8iB9f89c5A<3>U7ES8GQ9HNAJL\
+  BKLCMKEO<3>UPWXSYZV_c`b<3>oljrolurnrplnmkikk<6>YWPWUMVRI<3>OI5<3>YRD`TFb\
+  WH<3>kcPneRqgT<2>xn_wm_vlZ<14>GIO
+  }
+
+GiraSol03          { ;   0:00:06.64 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
+  500625627 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=DGN000100000300<3>800H00<4>H00<2>K00M00N00P00Q00<5>Z00_00a00<2>e0\
+  0f10f20<23>sRAsSBtTB<2>uWDvXDvZG<3>tiSskUrnXqq_ptb<6>WaTTZSQWQ<2>HOMELKD\
+  KJ<3>AFFAEE9DD8BB<2>ABDBBEBDH<3>CLTCNVDPY<3>DXhDZkE`nEbqFdt<5>DObDMZDJW<\
+  3>C8K97F<2>9BFFD9EFA<5>Z`PbdSegU<3>svc<2>svc<4>fj`cg_aeZ<3>RVWOSVLPUIMTF\
+  JSFJS<3>TEKWDI_BGbAEeCDgEC<2>rL8rL8uN7xP5<3>lE8iB9f89c5A<3>U7ES8GQ9HNAJL\
+  BKLCMKEO<3>UPWXSYZV_c`b<3>oljrolurnrplnmkikk<6>YWPWUMVRI<3>OI5<3>YRD`TFb\
+  WH<3>kcPneRqgT<2>xn_wm_vlZ<14>GIO
+  }
+
+
+GiraSol09          { ;   0:00:14.89 on PIII(500)
+                     ; Created Jan 14, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+                     ; parameters created on Feb 10, 1997
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
+  params=9.602374340037233/10.23746452223274/1.03568376720481/0.1582873012\
+  482067 float=y maxiter=255 inside=0 potential=255/300/100 decomp=256
+  rseed=3141 cyclerange=0/255 sound=off
+  colors=CCCzsGzzz<3>mwmjwjfvf<3>UsU<7>isi<4>sss<16>ssM<4>ssC<16>sMC<4>sCC\
+  <17>KCC<4>ACCCCC<15>gCgiCikCk<3>sCs<16>MCs<4>CCs<16>Cis<4>Css<5>Csg<4>Cs\
+  YECE<15>iCi<4>sCs<16>MCs<4>CCs<16>Cis<4>Css<8>Csa<4>CsS<4>qsI
+  }
+
+GiraSol14          { ;   0:00:06.31 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
+  params=10.16553239539781/10.97274697103794/0.3815195165868103/-0.8091799\
+  676503802 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000CC0<13>jj0mm0oo0<3>zz0<14>PP0MM0KK0<3>AA00A0<14>0j00m00o0<3>0z\
+  0<14>0P00M00K0<3>0A0A00<14>j00m00o00<3>z00<14>P00M00K00<3>A000A0<14>0j00\
+  m00o0<3>0z0<14>0P00M00K0<3>0A0AAA<14>jjjmmmooo<3>zzz<14>PPPMMMKKK<3>AAA0\
+  A0<14>0j00m00o0<3>0z0<18>0F0
+  }
+
+GiraSol16          { ;   0:00:06.65 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
+  params=9.058565019684439/11.41270180364391/0.9988479262672814/0.04411755\
+  729850135 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000nn0<2>zz0<9>OO0KK0GG0<3>000<9>0b00f00j0<3>0z0<9>0O00K00G0<3>00\
+  0<9>b0bf0fj0j<3>z0z<8>S0SO0OK0K<3>40400K<6>RRaVVdZZf<3>nnrrruvvwzzz<8>SS\
+  bOO`KKY<3>44N000<10>MMM<4>WWW<8>DDDBBB999<3>000<9>b00f00j00<3>z00<9>O00K\
+  00G00<3>000<9>0bb0ff0jj<3>0zz<9>0OO0KK0GG<3>000<9>00b00f00j<3>00z<9>00O0\
+  0K00G<3>000<11>jj0
+  }
+
+GiraSol18          { ;   0:00:06.59 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=-0.0499561/-0.0341588/0.1374567/1/74.998
+  params=8.336008789330728/11.13449507126072/-0.1694616534928431/0.7781487\
+  472151858 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=200333<9>fff<4>zzz<3>pkkmggkcc<3>`OOYKKWGGTCC<2>zzz<3>kpkgmgckc<3\
+  >O`OKYKGWGCTC<2>zzz<3>kkpggmcck<3>OO`KKYGGWCCT<2>zzz<3>ppkmmgkkc<3>``OYY\
+  KWWGTTC<2>zzz<3>pkpmgmkck<3>`O`YKYWGWTCT<2>zzz<3>kppgmmckk<3>O``KYYGWWCT\
+  T<2>zzz<3>tkksggqcc<3>mOOkKKjGGhCC<2>zzz<3>ktkgsgcqc<3>OmOKkKGjGChC<2>zz\
+  z<3>kktggsccq<3>OOmKKkGGjCCh<2>zzz<3>ttkssgqqc<3>mmOkkKjjGhhC<2>zzz<3>tk\
+  tsgsqcq<3>mOmkKkjGjhCh<2>zzz<3>kttgsscqq<3>OmmKkkGjjChh<2>zzz<2>zzzkkzkz\
+  kzzkzkkWWzWzWzzWzWWGGzGzGzzGzGG00z0z0zz0z00<27>100
+  }
+
+Breed_Pool     { ;   0:01:10.63 on PIII(500)
+                     ; Created Jan 13, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=1920 type=formula formulafile=frac_ml.frm
+  formulaname=zmincoszb passes=t
+  corners=-14.01561/4.918662/9.808842/-15.43685/4.918662/-15.43685
+  params=-25.9299/0.5927 float=y inside=zmag outside=summ
+  invert=-0.884945219275491/0.580370494705039/-0.595080416272469
+  periodicity=0 rseed=3141 sound=off
+  colors=G0G<21>plpqnqsps<3>zzz<21>EQbCPaAN`<3>0GW<22>nq6ps5su4uv2wx1yz0zz\
+  0<21>bECaCD`AD<3>W0G<22>tQquRswSuxTvyUxzVz<6>zWtzWszWq<13>zWbzWazW`<2>zW\
+  XzWWxVX<21>C6tA5u74w52x31y10z00z<22>IJWJKVJLUKMSLNRMOP<27>z00
+  }
+
+Spec_Tral           { ;   0:02:15.06 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=gregman2.frm
+  formulaname=gregsmandels3 function=cos/cotan passes=t
+  center-mag=+2.32876830288676600/-0.33422447351784550/12042.16/1/-59.999
+  params=-0.965514084292123/0.4783165990173039/-1.406323435163427/-0.38892\
+  78847621082/7/0 float=y maxiter=1000 logmap=9 sound=off
+  colors=070oF0<3>qF0qF0qF0qF0qF0<3>hF2fF3dI3<3>WU5TX6R_6<2>Kh8<3>Yj2ak1dl\
+  0hm0lm0on0qo0<2>qq0qq0qp0<3>qg0qe0qb0<3>qU1qS2qQ3<3>qH8qFAqFB<3>qFGqFIqF\
+  H<5>qF9qF8qF7<2>qF3qF2qH0<6>qP0qQ0qS0<3>qX0qg0qq7qq7<3>qiBqgCqdC<5>mSIlQ\
+  IkOJ<3>hGNgFNfFO<3>bFSaFTaFS<6>_FL_FK_FJZFIZFHZFG<5>XMAXN9XO8<3>VT4VV3VW\
+  2UX1UY0UZ0T`0<10>QY0PX0PX0OW0OW0<3>MU1MU2MU2<3>KR3KQ3KP3<3>KJ3LI3LH3LF3<\
+  5>MF3MF3MF3<2>MF3NF3PF3<3>WF0YG0_J0<3>gU0iX0k_0mb0oe0qh0qk0<10>hR0gP0fN0\
+  <2>cH0bF0aF0<2>ZF0XF0XF0<5>`F0`F0aF0<2>cF0cF0bF0<7>YF0
+  }
+
+OM-2               { ;   0:00:06.54 on PIII(500)
+                     ; Created Jan 14, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=mandel
+  center-mag=-0.83184573249999990/+0.20622975750000000/7421.471/1/-27.625
+  params=0/0 float=y maxiter=2000 logmap=121 rseed=3141 sound=off
+  colors=000L00<3>T00W00Y00Z00`00c00e80<2>jE0kF0mI0oK0pM0qP0sS0tU0uW0vZ0wa\
+  0xe0<2>zm0zp0zt0zv0zy0zv0zt0zp0<2>xg0xe0wa0vZ0uW0tU0sS0qP0pM0oK0mI0kF0<3\
+  >e80c00`00Z00Y00<3>P00N00L00I00I00<3>R00T00W00Y00Z00`00c00e80<2>jE0kF0mI\
+  0oK0pM0qP0sS0tU0uW0vZ0wa0xe0<2>zm0zp0zt0zv0zy0zv0zt0zp0<2>xg0xe0wa0vZ0uW\
+  0tU0sS0qP0pM0oK0mI0kF0<3>e80c00`00Z00Y00<3>P00N00L00I00I00<3>R00T00W00Y0\
+  0Z00`00c00e80<2>jE0kF0mI0oK0pM0qP0sS0tU0uW0vZ0wa0xe0<2>zm0zp0zt0zv0zy0zv\
+  0zt0zp0<2>xg0xe0wa0vZ0uW0tU0sS0qP0pM0oK0mI0kF0<3>e80c00`00Z00Y00<3>P00N0\
+  0L00I00I00<3>R00T00W00Y00Z00`00c00e80<2>jE0kF0mI0oK0pM0qP0sS0tU0uW0vZ0wa\
+  0xe0<2>zm0zp0zt0zv0zy0zv0zt0zp0<2>xg0xe0wa0vZ0uW0tU0sS0qP0pM0oK0mI0kF0<3\
+  >e80c00`00Z00Y00<2>R00
+  }
+
+OM-3               { ;   0:00:10.71 on PIII(500)
+                     ; Created Jan 14, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=mandel
+  center-mag=-0.83192252672778080/+0.20619000812253980/1321972/1/-30.124
+  params=0/0 float=y maxiter=5000 logmap=318 rseed=3141 sound=off
+  colors=000zsO<26>zxszxtzyvzywzyxzzz<42>JziIzhHzhGzgFzgDzf<38>JD9KC8KB7<3\
+  >K53K32K21L00<7>B00A00900<3>300100000<14>b47e48h48<3>r5At6Bw6Bz7C<2>y7Cx\
+  6Cw6Cv6Cv6C<3>r5Cq4Cp4Co3B<3>k5Fj5Gi5Hh6Ig6J<3>i7Nj7Oj7P<4>n9VnAWoAX<13>\
+  vFlwGmwGn<2>yHqzIszJr<29>zqP
+  }
+
+GiraSol01c         { ;   0:00:11.37 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+                     ; parameters created on Feb 10, 1997
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
+  potential=255/300/100 decomp=256 rseed=3141 cyclerange=0/255
+  sound=off
+  colors=000Nzj<3>JziIzhHzhGzgFzgDzf<32>ILEIJDIIC<3>JD9KC8KB7<3>K53K32K21L\
+  00<7>B00A00900<3>300100000<14>b47e48h48<3>r5At6Bw6Bz7C<2>y7Cx6Cw6Cv6Cv6C\
+  <3>r5Cq4Cp4Co3B<3>k5Fj5Gi5Hh6Ig6J<3>i7Nj7Oj7P<3>m9Un9VnAW<15>wGmwGnxGoxH\
+  pyHqzIs<24>zjVzkUzlT<3>zqPzsOzsP<25>zxszxtzyvzywzyxzzz<37>Ozk
+  }
+
+GiraSol02c         { ;   0:00:10.93 on PIII(500)
+                     ; Created Jan 14, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+                     ; parameters created on Feb 10, 1997
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
+  184270758 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000Nzj<3>JziIzhHzhGzgFzgDzf<38>JD9KC8KB7<3>K53K32K21L00<7>B00A009\
+  00<3>300100000<14>b47e48h48<3>r5At6Bw6Bz7C<2>y7Cx6Cw6Cv6Cv6C<3>r5Cq4Cp4C\
+  o3B<3>k5Fj5Gi5Hh6Ig6J<3>i7Nj7Oj7P<4>n9VnAWoAX<13>vFlwGmwGn<2>yHqzIszJr<2\
+  3>zjVzkUzlT<3>zqPzsOzsP<25>zxszxtzyvzywzyxzzz<37>Ozk
+  }
+
+GiraSol03c         { ;   0:00:06.64 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
+  500625627 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=z00v00<4>c07_08W09<2>K0DG0FE0J<4>80a60e50i<2>10u00y10u<4>80b90ZA0\
+  V<3>G0F<4>9Q88V76_5<2>3o21t00z01u0<4>8W79R8AM9<3>G0F<6>P0OQ0PR0Q<3>W0V<5\
+  >O0NM0LL0K<3>G0F<4>Z08b07f05<2>r02v00z00v00<4>c07_08W09<2>K0DG0FE0J<4>80\
+  a60e50i<2>10u00y10u<4>80b90ZA0V<3>F0FG0F<4>9Q88V76_5<2>3o21t00z01u0<4>8W\
+  79R8AM9<3>G0F<5>O0NP0OQ0P<3>W0V<5>jVFm_CodArj7<2>zz0zx4<4>zkUzhZzfc<3>zW\
+  xzWy<5>cWj_WgWWe<3>GWV<6>GWV<4>GWV<5>bjifmljon<3>zzy<5>zWVzRQzML<3>z00z0\
+  1<7>z0Mz0Pz0Sz0V
+  }
+
+GiraSol04c         { ;   0:00:06.48 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=7.413708914456619/9.865077669606618/0.4196371349223304/0.24654683\
+  06527907 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000nn0<2>zz0<9>OO0KK0GG0<3>000<9>0b00f00j0<3>0z0<9>0O00K00G0<3>00\
+  0<9>b0af0ej0i<3>z0y<8>S0RO0NK0J<3>40300J<9>bbiffljjn<3>zzy<8>SSaOOZKKX<3\
+  >44M000<9>KKJMMLOON<3>WWV<8>DDCBBA998665<2>000<9>b00f00j00<3>z00<9>O00K0\
+  0G00<3>000<9>0ba0fe0ji<3>0zy<9>0ON0KJ0GF<3>000<9>00a00e00i<3>00y<9>00N00\
+  J00F<3>000<11>jj0
+  }
+
+GiraSol05c         { ;   0:00:07.58 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=8.358806115909299/10.33103427228614/0.1211661122470779/1.03636585\
+  5891598 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=KIf<3>NOeOPeORePSeQUd<5>FFLDDHBAE<3>400<2>A00C00C00<6>I00J00K00<3\
+  >O00<3>iXSodZtmezul<3>nYUlSPiMK<2>`46`00<2>S00P00N12<3>C8C9AF6CH3DK0FM<3\
+  >JTGOXET`C<3>hj6ll5po3tq2xt0<3>nY0lT0jN0<3>`00<3>mVQpbWtjawqhzyn<3>zkZyg\
+  VydR<2>yUF<3>yHL<4>jFOgEOdEP<3>TBRQASN9SK8TG7U<3>A7I87E67B578375<3>8HC9J\
+  EAMFBOH<3>ROcVOiZOobOu<3>i_tkbsfZm<3>MIPHEJ000B9D657000<7>JNVLQZOTb<3>Xc\
+  r<9>CFLADH8AE<3>000232<4>3DS4FY4Hb<3>5Pw<3>acjiggrkczo`<3>OYoFUs5Pw<3>2B\
+  Q17H149000CC9<7>bbVfeYii`<3>wvk<2>rRf<7>IDgJFgKGg
+  }
+
+GiraSol06c         { ;   0:00:06.48 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=0.0937903/-0.570553/0.1052088/1/74.998
+  params=8.851222266304514/10.8673970763268/0.4967574083681753/0.479860835\
+  5967892 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyze\
+  yzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0L\
+  d00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyze\
+  yzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0L\
+  d00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyze\
+  yzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0L\
+  d00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyze\
+  yzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0L\
+  d00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyze\
+  yzz0zzdzzyezy0zyLey00y0Ld00KLLK000e0dzLKzLdzLyzeyzz0zzdzzyezy0zyLey00y0L\
+  d00KLLKccb<14>ccb
+  }
+
+GiraSol24          { ;   0:00:15.00 on PIII(500)
+                     ; Created Jan 21, 2000 by Rui Parracho
+                     ; email-to:rparracho@aol.com
+                     ; parameters created on Feb 10, 1997
+  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  function=recip/cos passes=1
+  center-mag=-0.0499561/-0.0341588/0.09577934/1/74.997
+  params=10.57115390484329/10.59776604510636/1.198774681844539/-0.59155247\
+  65770442 float=y maxiter=255 inside=0 potential=255/300/100
+  decomp=256 rseed=3141 cyclerange=0/255 sound=off
+  colors=000zzW<48>ob4oa3na3n`2n`2n_1mZ0<134>G10G10F00<61>000
+  }
+
+frm:JDG-7-01c {; Formula by Jim Deutch, Modified Sylvie Gallet frm
+           ; image and 60 deg rotation w/ palette divided
+  j = -0.5 + flip(0.5*sqrt(3)), j2 = conj(j)
+  IF (whitesq)
+    z = pixel
+  ELSE
+    z = -j2*pixel
+  ENDIF
+  :
+  x = z*j , y = z*j2
+  x1 = x - p1*fn1(y + fn2(p2*z))
+  y1 = y - p1*fn1(z + fn2(p2*x))
+  z1 = z - p1*fn1(x + fn2(p2*y))
+  z = z1 + x1*j + y1*j2
+  t1 = (|z| <= 32)
+  t = t1 || (whitesq == (imag(z) >= 0))
+  IF (t==0)
+    z = conj(z)
+  ENDIF
+  t1
+  ;SOURCE: sgjdg701.par
+}
+
+frm:z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
+               ; February 5, 2000
+;
+; Newtbasin for (z-p1) * (z-p2) * (z-p3)
+; Use periodicity=0 and outside=real
+;
+  y = pixel , z = stop = 0
+  iter = 0
+  :
+  num = (y-p1)*(y-p2)*(y-p3)
+  den = 3*sqr(y) - 2*(p1+p2+p3)*y + (p1*p2 + p1*p3 + p2*p3)
+  y = y - num / den
+  if (cabs(y-p1) <= 0.001)
+    z = 0 , stop = 1
+  elseif (cabs(y-p2) <= 0.001)
+    z = 1 , stop = 1
+    elseif (cabs(y-p3) <= 0.001)
+    z = 2 , stop = 1
+  endif
+  if (stop == 1)
+    z = z - iter - 7
+  endif
+  iter = iter + 1
+  stop == 0
+}
+
+Newt_basin_z3-1    { ; .                                    t=  0:00:03.46
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=_newtbas.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=1/0/-0.5/0.8660254037844/-0.5/-0.8660254037844 float=y
+  outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+Newt_basin_z3-z    { ; .                                    t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=_newtbas.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=0/0/1/0/-1/0 float=y outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+built-in_newtbasin { ; .                                    t=  0:00:00.77
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=newtbasin passes=1 center-mag=0/0/0.6666667
+  params=3/0 float=y periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+frm:z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
+               ; February 5, 2000
+;
+; Newtbasin for (z-p1) * (z-p2) * (z-p3)
+; Use periodicity=0 and outside=real
+;
+  y = pixel , z = stop = 0
+  iter = 0
+  :
+  num = (y-p1)*(y-p2)*(y-p3)
+  den = 3*sqr(y) - 2*(p1+p2+p3)*y + (p1*p2 + p1*p3 + p2*p3)
+  y = y - num / den
+  if (cabs(y-p1) <= 0.001)
+    z = 0 , stop = 1
+  elseif (cabs(y-p2) <= 0.001)
+    z = 1 , stop = 1
+    elseif (cabs(y-p3) <= 0.001)
+    z = 2 , stop = 1
+  endif
+  if (stop == 1)
+    z = z - iter - 7
+  endif
+  iter = iter + 1
+  stop == 0
+}
+
+Newt_basin_z3-1    { ; .                                    t=  0:00:03.46
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=_newtbas.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=1/0/-0.5/0.8660254037844/-0.5/-0.8660254037844 float=y
+  outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+Newt_basin_z3-z    { ; .                                    t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=_newtbas.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=0/0/1/0/-1/0 float=y outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+built-in_newtbasin { ; .                                    t=  0:00:00.77
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=newtbasin passes=1 center-mag=0/0/0.6666667
+  params=3/0 float=y periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+00020401           { ; CalcTime   0:01:02.72 at 800x600 on a P166
+                     ; Image Copyright 04 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=y passes=1 center-mag=-0.715895/0.45576/6.666667
+  params=-2/0.05/2/50/0.2/300 float=y maxiter=647 decomp=256
+  biomorph=1
+  colors=fhYmphorkmohoqjlognqilnfmphknemohkmdlogjlclnfjlbkneikbkmdhkajlchj\
+  `jlbgi_ikbgiZhkafhYhj`fhYgi_egXgiZ<14>acQ`bP`bP`bP<3>_aN_`MZ`MZ`MZ_L_aMa\
+  cO_aMYZJ<4>WYHWXHWXHVXGVXG<2>RTEQSEQSFQSG<3>WZR<3>CDA675454565<3>A96CA6D\
+  B6<2>OKCOKANJ8MI5<3>SM5UN5VO5<2>_S4<8>njQplSqoV<3>xwc<6>bmXZkWWiV<2>MeSJ\
+  cRHcRD`P9ZO9XN8UL<3>7QJ7PI7OH7NG6MG6LF<2>APJ8MH6JE4FB<4>3A7396286<3>1437\
+  76787898<3>OQPLNMIKIFGEEFD<4>HIHIJHJKI<2>LMKMNLOQONOM<40>ormpsnqto<2>svq\
+  twrruotvrqtnsvqqsmruppsmruoprlqtnorkqsmoqjpsmnqiprl
+  }
+
+00020801           { ; CalcTime   0:00:44.59 at 800x600 on a P166
+                     ; Image Copyright 08 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=y center-mag=0/0/0.6666667 params=1/1/1/35/0.4/300 float=y
+  inside=atan outside=atan decomp=256 biomorph=1
+  colors=acdqstnpsprrmoqoqplnononkmmmnljlkkmjikijkhhjgijegiehicfhcghaegaff\
+  _df_deYdeYcdWccXbbUbbVaaSaaT``P``R__N__PYYLZZNXXJYYLWWHXXJVUFWWHUTDVVFTS\
+  BUUDRQ8TSBRP8SRAQO8SR9QN8RP9PM8PN8<11>E83D73C52<2>921800911<8>KGHLIJMKL<\
+  2>QPQRQSQPPUUVPONWXZPOLZ`bONJUWWNMIPQPNMGKKIMLEFEALKCGE9MKCHE8OKCIE7PLBJ\
+  E5RLBMG5SLBPI6UMASK7VMAVM8XN9aQAaTFbXKe_M<2>ljWnn_rrbtvezzf<3>haFcW8ZP0<\
+  2>TL0RJ0QJ0<3>MG0LF0KE0<2>HC0<4>`YJeaNifR<3>zxf<4>ZYOTSKNNG<3>000<4>000<\
+  4>SRJYXNcaR<3>zxf<4>ZYOTSKNNG<3>000<4>000<4>000344000788000BCC000FGG556J\
+  KKBBCNOPGHIQSTMNOUWXSSUY_`XY_bceeghhilikmkknkmonnqmoqqqtoqsttwqsuwwzsuxv\
+  vyrtwuvyrtvtuxqsvsuxprurtworurtvnqt
+  }
+
+00020804           { ; CalcTime   0:01:16.12 at 800x600 on a P166
+                     ; Image Copyright 08 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=y center-mag=-0.130163/0.75626/6.666667
+  params=3.270271919919431/4.941831720938749/1.230036317026276/44.00323496\
+  200446/0.3323038422803431/250.1119113742485 float=y maxiter=647
+  inside=atan outside=real decomp=128 biomorph=1
+  colors=urp054032000<16>000<3>000111222<36>gjfhkgilh<3>nql000kkkzwwxutzww\
+  xusyvvwtryvuvtrxutvsqxusurpwtrurovtrtqntsqspnrrpqompqoonlnonmmklnmkljjmk\
+  ikihkjgjhejieigcihchfahgage_ff_fdYedYedWdcXccUbbVbbSaaTaaP``R``N__P__LYY\
+  NZZJXXLYYHWWJXXFUVHWWDTUFVVBSTDUU8QRBST7PQARS8QR9RS7PQ8QR7MN7PQ6JK7MN5GH\
+  6JK5FE8IH5DABHD6B6EG9A82HF5DA3JG5GC4LH6JE5NI6MG5PJ7PI6RK7SK7<2>XN9aQAaTF\
+  bXKe_M<2>ljWnn_rrbtvezzf<3>haFcW8ZP0<2>TL0RJ0QJ0<15>A70960860<3>43003202\
+  1000<3>000000000<3>000<4>0FA0IC0LF<3>Jb_NgdSli<2>fzz<3>Jb_DXT7RM0LF<5>07\
+  5
+  }
+
+00021001           { ; uses found_object7.map by Kathy Roth
+                     ; CalcTime   0:00:34.25 at 800x600 on a P166
+                     ; Image Copyright 10 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=n center-mag=0/0/0.6666667
+  params=-0.1302591021454512/0.04721518601031524/16.60734885708182/45.2768\
+  9443647572/-0.2630573442793054/300.8947111423078 float=y inside=fmod
+  decomp=256 biomorph=1 cyclerange=0/255
+  colors=000dgWbXN<8>NJDLICJGB<3>CA7<6>RMGTOHVQI<3>bXN<3>QMGNJEKHCHEA<3>UP\
+  HXSJ_ULbXN<4>QMFNJDKHC<3>985<4>985<3>A96A96`VM<3>B97<3>CA8CA8000<3>00000\
+
+  0111<28>oooqqqsss<3>zzz<27>AAA888666444222000<57>000000000<2>000111332<2\
+  3>ldTnfUphV<3>xn_<7>jbShaRdfW
+  }
+
+00021501           { ; CalcTime   0:00:24.33 at 800x600 on a P166
+                     ; Image Copyright 15 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=n center-mag=0/0/0.6666667 params=0.4/0.1253/24/45/0.2/350
+  float=y maxiter=647 decomp=64 biomorph=1
+  colors=aAECMA<2>BI9BH8BH8<3>AE79D6DE6<3>UI9YJAaLBeMCgODjQF<2>nVJ<3>vdByg\
+  8yh5yi3<14>yuhyukyvn<2>yywzzzxww<9>bRS`NPYKL<2>SACP68P68<18>aBHbBHcBIcCI\
+  dCJeCJdCIcBHbBF`AC<3>X86W75U63<21>sjTtlUunV<2>ytZzv_yv_<24>ZumYunXun<2>U\
+  upStqRrp<13>CNYBLX9JV<3>5AQ<3>77E86B858945A32<4>A96AA7AC8AD9AEA<4>DMGEOH\
+  FQIFRKGTLHVMHWOIYPJ_R<3>KcPKdOKeOKfNLhM<6>enBhoAkp8<3>wt1<6>Zf8Vd9SbA<3>\
+  DVF<5>CNB
+  }
+
+00022501           { ; uses jacco200.map
+                     ; CalcTime   0:00:59.92 at 800x600 on a P166
+                     ; Image Copyright 25 Feb 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  ismand=n center-mag=0/0/0.6666667 params=0.2/0.5/36/45/0.2/250
+  float=y inside=bof60 outside=imag decomp=128 biomorph=1
+  colors=zzzfdeZWYTPRNJMJEHFAC957957634422<2>200<13>`00c00e00<3>o00<9>ub0v\
+  f0wj0<3>zz0<3>zk0zg0zc0<3>zO0<25>zq0zr0zt0<2>zw0zw1zw3<3>zw9zwAzuA<13>mL\
+  AlJAkGAjEAiBAh8Bf59d17<8>P13N13L13<3>E11K00N00<3>U00V00W00<6>b00c00d00<7\
+  >i00j00k00<2>m00m00m22<3>oDDpGGpHG<10>oa6nc5ne4<2>nk1mm0mm3<10>uuevvhwwl\
+  <3>zzz<4>zzzzai<3>znbzqazt_zxY<12>zyqzyrzyt<2>zyxzzzzzyzywzxvzwt<3>xiZxf\
+  TwbN<3>uP0uQ2uN2
+  }
+
+00031301           { ; CalcTime   0:01:55.29 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsJuliaLB
+  function=sin/sqr passes=1
+  center-mag=-1.11022e-016/8.32667e-017/4.901961
+  params=0.7679677724539934/0.5938444166386914/1.724112674336985/0.3137455\
+  366679892/0.1925107577745903/-0.1541032135990478 float=y maxiter=647
+  inside=startrail outside=imag decomp=128 biomorph=1
+  colors=400<3>H13K14O25<6>`MHbPJdSK<3>lcS<3>YRIVOFRKD<3>B62<5>HGCIIEJKG<2\
+  >MPLORNNQN<3>HMJGLIEKHDJGBHF<47>`eS`eSafTafTbgTchU<10>TZOSYNRXM<15>IOHHO\
+  HHNHHNG<9>CJECIEBID<3>AHDAHDAHDAHDAHD<3>CJFDKGEKHFLH<3>LQMMROOTP<3>WZWZ`\
+  Y`b`<3>kkinnlqqorqo<3>qpnppnpom<3>mmklljkji<2>igfheefcc<3>aXZ_VXZTV<3>SJ\
+  OQGMODJMBHK8FI5C<4>I8EI8EI9EIAEIAEIBF<5>IFGIGGIGGIHGIIG<2>KLJLNKMOLNQMOR\
+  N<3>SXRTYSV_U<5>`debega`c_WZ
+  }
+
+00031302           { ; CalcTime   0:00:18.62 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsJuliaLB
+  function=sin/sqr center-mag=-1.11022e-016/8.32667e-017/4.901961
+  params=0.1441084017456588/0.1204412976470229/0.8471938230536821/-0.16844\
+  69130527665/0.988982818079165/1.371883297219764 float=y maxiter=647
+  inside=atan outside=atan decomp=256 biomorph=1
+  colors=tlqUVJQRE<2>GD0<3>UOFYQI_RK<4>k`Xmb_pda<3>zll<8>dNKbKH_HE<3>Q50<3\
+  >WF8YIAZKC<9>jcSkeUmgW<3>rob<12>TOIRMGPJE<2>JD9GA7D74<2>IEBKHDJGC<3>HEBG\
+  DAFDA<3>B97A86975<3>432221110000000000<2>221332533<3>A86B97DA8<3>KFCMHDO\
+  IEQKFRMHSMH<8>la_ncapdc<3>zll<9>aNJZKGXHD<3>M60<6>bUOeXSg`V<3>qnhwpu<3>g\
+  TXcNRZHK<3>G67C33700<3>OENSISWLY<2>hWnhWn<3>iYojZoj_o<6>ogrpispjs<4>uqvv\
+  swwux<2>yyyzzzyyy<3>xxxwwxwwx<4>tsusrurrt<6>mkplkokjojinihmhfmigmnkqsouy\
+  zt<6>YZO
+  }
+
+00031303           { ; CalcTime   0:01:23.26 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  function=sin/sqr passes=1 center-mag=-0.425532/-0.200334/4.901961
+  params=1/0.5/1/0.5/1/0.5 float=y maxiter=647 inside=bof60
+  outside=imag decomp=256 biomorph=1
+  colors=000bTo<7>VJkUIjTGj<2>QChPBhPCh<23>TmtTotTpu<3>Uww<43>6CR5BR5AQ49P\
+  37O<33>114113112<2>000000111<2>444555444<14>O6EP6ER6F<3>W7IY8J_9K<3>hFSk\
+  GTmIV<3>wOb<3>nIXlHWjFU<3>`9O<39>76O66O66O<3>25N121121121xvy<21>cVo
+  }
+
+00031304           { ; CalcTime   0:01:38.15 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  function=sin/sqr passes=1 center-mag=-0.425532/-0.200334/4.901961
+  params=0.6861171300393689/0.7144535660878323/1.409466841639454/0.1006653\
+  035065767/1.349589526047548/-0.3188421277504807 float=y maxiter=647
+  inside=epsiloncross outside=imag decomp=256 biomorph=1
+  colors=hem7AG58E25B<3>76A86A96A<3>97E97F88H<2>98K97LA7MA6NB6O<7>F3YF2ZG2\
+  _G1`H1aI0c<43>705704603602601510<11>M9COADPAE<3>VEIWFIXHJ<20>seRtfRuhS<2\
+  >xkTzmUylU<24>XJ9WI8VG7<2>SD4QB3RC4<29>haYibZic_<3>lfc90AVSYdaiSQV`YdPNS\
+  XU_MKOSQVJHLOMRGFIKIMDCEGEHA9BBAC767768434323000<3>VQWbWcjbkrissjt<24>9B\
+  I
+  }
+
+00031305           { ; CalcTime   0:00:49.55 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  function=sin/sqr passes=1 center-mag=-0.21663/-0.240505/5.921845
+  params=0.575273903622547/1.397457808160649/1.880001220740379/1.416684469\
+  130528/1.360820337534715/0.3451796014282663 float=y maxiter=647
+  inside=period outside=imag decomp=256 biomorph=1
+  colors=000UIj<3>QChPBhPCh<23>TmtTotTpu<3>Uww<43>6CR5BR5AQ49P37O<33>11411\
+  3112<2>000000111<2>444555444<14>O6EP6ER6F<3>W7IY8J_9K<3>hFSkGTmIV<3>wOb<\
+  3>nIXlHWjFU<3>`9O<39>76O66O66O<3>25N121121121xvy<30>VJk
+  }
+
+00031306           { ; CalcTime   0:02:48.08 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  function=sin/sqr passes=1 center-mag=-0.226212/-0.213441/6.142992
+  params=1.56129642628254/1.772011474959563/0.9198583941160314/0.923841059\
+  602649/2.207983642078921/-0.4486373485518967 float=y maxiter=647
+  inside=bof60 outside=atan decomp=256 biomorph=1
+  colors=000UIj<3>QChPBhPCh<23>TmtTotTpu<3>Uww<43>6CR5BR5AQ49P37O<33>11411\
+  3112<2>000000111<2>444555444<14>O6EP6ER6F<3>W7IY8J_9K<3>hFSkGTmIV<3>wOb<\
+  3>nIXlHWjFU<3>`9O<39>76O66O66O<3>25N121121121xvy<30>VJk
+  }
+
+00031307           { ; CalcTime   0:07:55.38 at 800x600 on a P166
+                     ; Image Copyright 13 Mar 2000 by Ton Koppens
+                     ; e-mail:t.koppens@hccnet.nl
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  function=sin/sqr passes=t
+  center-mag=-0.18655042677651150/-0.08245017094325222/61.42992
+  params=1.56129642628254/1.772011474959563/0.9198583941160314/0.923841059\
+  602649/2.207983642078921/-0.4486373485518967 float=y maxiter=647
+  inside=bof60 outside=atan decomp=256 biomorph=1
+  colors=000UIj<3>QChPBhPCh<23>TmtTotTpu<3>Uww<43>6CR5BR5AQ49P37O<33>11411\
+  3112<2>000000111<2>444555444<14>O6EP6ER6F<3>W7IY8J_9K<3>hFSkGTmIV<3>wOb<\
+  3>nIXlHWjFU<3>`9O<39>76O66O66O<3>25N121121121xvy<30>VJk
+  }
+

@@ -1,0 +1,171 @@
+julibr-4           { ; Version 2002 Patchlevel 3
+reset=2002 type=julibrot julibrotfromto=1/-5/-3/1
+julibrot3d=400/200/30/7/10/24 julibroteyes=2 orbitname=lambdafn
+function=cosxx center-mag=-0.111348/0.0243878/3.840627/0.3505
+params=0/0 float=y maxiter=8 bailout=60
+colors=000l00<8>f00e00d00<26>JDDIDDHEEGEEFFFFFFFFF<24>p33r33s22<2>x11z00\
+z10<24>zn0zp0zr0<2>zx0zz0zz1<24>zznzzpzzr<2>zzxzzzzzz<57>zX5zX4zW3zW2zV1\
+<27>z50z40z30z20z10z00<18>m00
+}
+
+hmmm1              {;  Version 2002 Patchlevel 3
+reset=2002 type=tim's_error function=tanh
+center-mag=-0.0832708/-0.0086031/1.84347/0.75/90/3.88578058618804789e-01\
+6 params=0/0 float=y inside=maxiter potential=255/255/0
+colors=000400<3>200200210<3>131141042<3>0850960A7<3>0FB0HC0ID<6>1TO1UP1W\
+Q<2>2`W2aX3cZ3d_3fa<4>5mh5ni6ok<2>7so8tp9tq<3>BxuBxvCyw<3>FzyFzzGzz<3>Jz\
+zKzzKyz<3>NwyOvyPux<3>SrtTqtUos<2>WlpXjoXimYglZfk<10>fQVgPUhNShMRiKPjIO<\
+4>mCHnBFn9E<5>r47r36s36<3>u02u01v01<3>w00w00x00<3>y20y21y32<3>z74z84z95<\
+4>zFAzGCzHD<3>zNIzPKzRL<9>we`wfawhc<3>unitojtpk<3>rtpqurqvs<3>nxvnywmyx<\
+3>jzzizzizz<3>fyzeyzeyz<4>aux`tw_sv<3>XosWmrWlp<3>TglSejRdi<12>HLQHKPGIN\
+<6>BADB8CA7B<3>836735724<5>401
+}
+
+frm:Bjax-b {; Bailout = imag(p2)
+z=c=2/pixel:
+z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c
+|z| <=imag(p2)
+}
+
+
+bjax-1             { ; Version 2002 Patchlevel 3
+reset=2003 type=formula formulafile=bjax.frm formulaname=bjax-b
+center-mag=0/0/0.38/1/90/3.88578058618804789e-016 params=2/0/2/8
+float=y inside=atan proximity=2 outside=fmod periodicity=0
+colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+uR`v<2>SbyTczSby<61>000
+}
+
+bjax-2             { ; Version 2002 Patchlevel 3
+reset=2003 type=formula formulafile=bjax.frm formulaname=bjax-b
+center-mag=0.976264/-1.34489/18.29394/1/-110.000000000000128/2.039410307\
+29737349e-013 params=1.5/0/2/20 float=y inside=atan proximity=2
+outside=fmod periodicity=0
+colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+uR`v<2>SbyTczSby<61>000
+}
+
+The_Wheel_of_Life2 { ; time=19:12--SF3 on a P II 400
+                     ; Fractal of the Day Jan 18, '04 zoomed
+                     ; with rotated Leather Gem color map
+                     ;  - Hal Lane 04/01/19
+reset=2003 type=formula formulafile=pastengo.par
+formulaname=mandelbrotbc1 function=floor
+passes=1
+center-mag=+1.74225596554302200/-0.00475135722486870\
+/1.010771e+008/1/-24.9999998026450712/7.054525103911\
+13563e-006 params=2.003/0/1040/0 float=y
+maxiter=1500 inside=0 outside=fmod
+periodicity=10 sound=off
+colors=000XkG<3>hoAkp8nq6<2>wt1<6>Zf8Vd9SbA<3>DVF<4>\
+CPCCNBCMA<2>BI9BH8BH8<3>AE79D6DE6<3>UI9YJAaLBeMCgODj\
+QF<9>tgGuiGvjG<2>ypGzrFzrK<3>yufxukxvqwww<3>rhh`F0`F\
+0<5>UA0T90S80R80Q70P60<3>L30K30J20I10I10<16>UB2UB2VC\
+2<3>YE3<3>Q82O61M41<3>Q71R81S91fM5<3>iO5jP5kQ6<9>UB3\
+S92Q82<3>I10931A00<3>VK0_P0dU0<3>zm0<3>zb0z_0zX0zU0<\
+3>`F0UC0O80H40<2>A4773A73C<3>56K47M48O39Q2AS<8>9QaAS\
+bATc<3>E`hFbiGdi<3>JklKmmJkj<7>CURBSOAQM<3>6GB5E86G9\
+<9>EWHFYIGZJ<2>JdMKfNLhM<2>UkH
+}
+ 
+frm:MandelbrotBC1 { ; by several Fractint users
+e=p1, a=imag(p2)+100
+p=real(p2)+PI
+q=2*PI*fn1(p/(2*PI))
+r=real(p2)-q
+Z=C=Pixel:
+Z=log(Z)
+IF(imag(Z)>r)
+Z=Z+flip(2*PI)
+ENDIF
+Z=exp(e*(Z+flip(q)))+C
+|Z|<a }
+
+julibr-1           { ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=-1.95/-2.1/-3.7/-3.5
+  julibrot3d=128/2950/-150/10/10/24 julibroteyes=5 orbitname=julzpower
+
+  center-mag=-0.48413661150000000/-0.40476939050000000/527.0799/0.9997
+  params=0/0/-3/0 maxiter=3 bailout=4 bailoutest=and
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-2           { ; Version 2002 Patchlevel 3
+
+  reset=2002 type=julibrot julibrotfromto=-1/-0.45/0/0.4567
+  julibrot3d=430/2950/-200/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=0.491043/1.04115/42.72229/1.0007 params=0/0/-4/0
+  maxiter=6 bailout=10
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-3           { ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=-0.3/0.8/0.75/-0.65
+  julibrot3d=128/2920/-200/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=0.0803076/0.0143114/15.24308 params=0/0/-3/0 maxiter=2
+  bailout=1
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-4           { ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=1/-5/-3/1
+  julibrot3d=400/200/30/7/10/24 julibroteyes=2 orbitname=lambdafn
+  function=cosxx center-mag=-0.111348/0.0243878/3.840627/0.3505
+  params=0/0 float=y maxiter=8 bailout=60
+  colors=000l00<8>f00e00d00<26>JDDIDDHEEGEEFFFFFFFFF<24>p33r33s22<2>x11z00\
+  z10<24>zn0zp0zr0<2>zx0zz0zz1<24>zznzzpzzr<2>zzxzzzzzz<57>zX5zX4zW3zW2zV1\
+  <27>z50z40z30z20z10z00<18>m00
+  }
+
+julibr-5           { ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=2/-1/-2/1
+  julibrot3d=200/1250/100/5/10/24 julibroteyes=-5.2
+  orbitname=julzpower 3dmode=lefteye
+  center-mag=0.192334/-0.243114/13.7054 params=0/0/3/0 maxiter=3
+  bailout=200 bailoutest=or cyclerange=25/32
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+

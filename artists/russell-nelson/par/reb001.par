@@ -1,0 +1,214 @@
+LaceyMandelbrot    { ; Part of a Mandelbrot tablecloth
+  reset type=formula formulafile=reb001.frm formulaname=IkenagaMap
+  corners=0.6553227/0.6750347/0.1378442/0.1526282 float=y maxiter=512
+  inside=0
+  colors=000`j_<7>fgQg8Z<37>4Czh8Y<30>L21h9Z<15>UYYh8Z<37>whYh8Y<15>aO2h8Z<35>\
+  pfMh9Z<9>cJeh9ZbKe<30>NnyMpzMpy<18>_ja
+  }
+
+OrientalMask      { ; I hope it's just a mask
+  reset type=formula formulafile=reb001.frm formulaname=Mask
+  function=log/sinh/cosh corners=-2.0/2.000005/-1.500014/1.5
+  params=0/1/0/1 maxiter=512 inside=16 decomp=256 colors=@sunburst.map
+  }
+
+RecordsAreUs     { ; Use color cycling to run the juke box
+  reset type=formula formulafile=reb001.frm formulaname=JMask
+  function=log/sinh corners=-0.847999/0.848012/-0.63602/0.635996
+  params=0/1/0.1/0.1 maxiter=512 inside=0 decomp=256 colors=@neon.map
+  }
+
+Spotlight          { ; Modern Art
+  reset type=formula formulafile=reb001.frm formulaname=jmask
+  function=log/cosh corners=-2.0/2.0/-1.5/1.5 params=0/1/-1 float=y
+  maxiter=500 inside=0 potential=255/200/500
+  colors=000L0e<27>00z00z11y<82>zz0zz0zy0<81>z10z00z00y01<53>M0d
+  }
+
+BlueLace           { ; As seen on the ice planet
+  reset type=formula formulafile=reb001.frm formulaname=Julike
+  corners=-0.356265/-0.156258/-0.425744/-0.275739 params=0.6/0.37 float=y
+  maxiter=500 inside=bof60 decomp=256
+  colors=000Kzz<13>2zz0zz0yz<45>02z00z00y<59>002000000000<29>00k00m01m<29>0ky0\
+  mz1mz<30>zzz<31>Lzz
+  }
+
+PolySpirals        { ; Sand painting from an unknown tribe
+  reset type=formula formulafile=reb001.frm formulaname=Julike
+  corners=0.539836/0.93983/-0.162542/0.137468 params=-0.67/0.04 float=y
+  maxiter=500 inside=0
+  colors=G00gb_<4>edcpUC<115>ICEsVC<95>XwdsVC<27>iaWsVCiaX<3>gb_
+  }
+
+BrainScan          { ; Alien brain
+  reset type=formula formulafile=reb001.frm formulaname=jmask
+  function=sqr/tan passes=t
+  corners=-0.397605/1.712159/0.761581/0.553623/0.461733/-0.384211
+  params=1/0/0.3 inside=0 potential=256/300/100
+  colors=000L6C<2>J5CJ5CK4B<20>P38b11Q38<17>U26rMG<68>toTtoTunS<76>uX8uX8tW9<5\
+  6>M7C
+  }
+
+UglyBird           { ; Only a mother could love it
+  reset type=formula formulafile=reb001.frm
+  formulaname=julike corners=-2.0/2.000012/-1.500014/1.5 params=0.69/0.15
+  inside=0 colors=000<29>uT0wU0wU0<45>E12C03D03<29>b09c0Ac0Ac0A<36>C42
+  }
+
+WiseOwl            { ; You can almost hear it Hoot! 
+  reset type=formula formulafile=reb001.frm
+  formulaname=PseudoZeePi corners=2.561815/-3.438185/-4.0/4.0/-3.438185/4.0
+  params=4/0/1 float=y inside=0 logmap=yes potential=255/300/500
+  colors=000wZ0wZ0<29>220000000<29>uT0wU0wU0<29>210000000<29>uaTwcUwcU<29>2210\
+  00000<29>wk9zmAzmA<27>321000000000<29>uX0
+  }
+
+
+Baroque            { ; Mandelbrot baroque
+  reset type=formula formulafile=reb001.frm formulaname=Mask
+  function=tan/tan/tanh corners=-2.0/2.0/-1.5/1.5 params=0/1/0/1 float=y
+  inside=0 logmap=yes potential=255/300/500
+  colors=000zk0<117>Y0KY0KY0KY0KX0K<131>000
+  }
+
+IcePalace          { ; On a world far away from yesterday and tomorrow
+  reset type=formula formulafile=reb001.frm formulaname=mask
+  function=sinh/cotanh/tanh passes=t
+  corners=-5.902821/0.097179/2.954553/-3.014855/0.097179/-3.014855
+  params=1/0/1 float=y inside=0 logmap=yes potential=255/300/500
+  colors=000cUz<102>ANUANUANUANUANUANT<145>000
+  }
+
+Silver&Gold        { ; Spirals from precial metals
+  reset type=formula formulafile=reb001.frm formulaname=Julike
+  corners=-1.424/1.424/-1.068/1.068 params=0.628/0.001 float=y inside=0
+  logmap=yes
+  colors=000000000000<29>kkwmmzlly<31>000<45>xiJzkKyjK<29>241020000<2>420
+  }
+
+Assymetry          { ; The lite and the dark side
+  reset type=formula formulafile=reb001.frm formulaname=PseudoZeePi
+  corners=2.088302/-1.967698/-2.704/2.704/-1.967698/2.704
+  params=2/0/0.4/0.01 float=y maxiter=512 inside=0 logmap=yes
+  colors=000245<71>UryVszXsz<14>zzz<6>qzzpzzpzy<52>yh2zg0zg0<94>000000011<3>24\
+  4
+  }
+
+Jewelry            { ; Jewelry display case
+  reset type=formula formulafile=reb001.frm formulaname=ZeePi
+  corners=2.352201/0.392765/-1.319552/1.319552/0.392765/1.319552
+  params=1.8/0/1.03 float=y maxiter=1024 inside=0 logmap=yes
+  colors=000bbl<22>223000000<29>wk9zmAzmA<27>321000000000<29>w00z00z00<29>3000\
+  00000<29>0w00z00z0<29>030000000<29>kkwmmzmmz<5>ddn
+  }
+
+Chaos              { ; A galaxy in formation
+  reset type=formula formulafile=reb001.frm formulaname=IkeNewtMand
+  corners=-2.554332/1.701668/0.00199/3.19399 params=1.99 float=y
+  maxiter=1024 inside=0 periodicity=24
+  colors=000eMi<39>yyxzzyzzx<60>zz1zz0zy0zy0<61>G10F00F00F00F00<14>J0AJ0AJ0BK0\
+  BK0CK0C<37>U0`U0`U0aV1bV1bW2b<18>eLi
+  }
+
+Butterfly          { ; Harbinger of summer
+  reset type=formula formulafile=reb001.frm formulaname=zeepi passes=t
+  corners=-3.351097/2.648903/4.0/-4.0/2.648903/-4.0 params=1.1/0/0.395
+  float=y maxiter=1024 inside=0 outside=real logmap=yes
+  colors=CCCNakK_lGYm<8>NdaOe_Qe_<10>nja<2>vTN<7>T15<11>Id_<12>14j<13>fYcj`bk`\
+  a<12>xmDynBymB<13>yT3xWO<2>Jppdm5<12>ouk<7>P4E<8>tJ0<14>Of_<8>_WkaUmbTndRpdS\
+  o<11>XcU`fK<3>m0ia1ZP2O<13>XyX<3>qRj<2>pNb<4>laA<8>GyXGsbGmh<9>QSupqC<14>pi4\
+  ph3qe6qb9r_C
+  }
+
+Precious           { ; A silver and gold spiral
+  reset type=formula formulafile=reb001.frm
+  formulaname=zeepi corners=-1.327097/0.624903/-1.846022/-0.382022
+  params=1.3/0/0.7/0.1 float=y maxiter=1024 inside=0 outside=real
+  periodicity=24 colors=000<62>mmzmmzlly<61>000000100<61>zmAzmAylA<61>000
+  }
+
+HungryAlien        { ; I'm watching you
+  reset type=formula formulafile=reb001.frm formulaname=PseudoZeePi
+  corners=-2.043/-0.579/0.976/-0.976/-0.579/-0.976 params=1.8/0/1 float=y
+  maxiter=1024 inside=0 potential=255/500/500 periodicity=24
+  colors=G00ZqZ<49>eiZeiZdhY<127>D28<21>vk`<2>neTkcQjbQ<31>B0B<14>mAZ
+  }
+
+Chromosoma         { ; Chromosomes of an alien life-form
+  reset type=formula formulafile=reb001.frm
+  formulaname=ikenewtmand passes=t
+  corners=-1.1135523/-1.1022371/0.27940781/0.28789421 params=1.8/-0.49
+  float=y inside=255
+  colors=0000z00y10y30x50v80uB<2>0nO0lS0iX0f`<2>0Ym0Vq0St0Pv<2>0Gz0Ey0By09x07u\
+  05s03p02l<2>01_00W00R00M<2>03A0570750920B0<2>0J00M10P3<2>0YC0`G0cL<2>0lY0nb0\
+  qf0sk0un0vr0xu0yw0yy0zz0zz0zz0yy0yw0xu0vr0un0sk<2>0lY0iU0fP0cL0`G<2>0S60P30M\
+  1<2>0E00B0092074<3>01I00M00R<2>01c01h02l03p05s07u09x0By0Ez0Gz0Jy<2>0St<2>0`i\
+  0ce0f`<2>0nO0qJ0sF0uB0v80x50y30y10z00z00z00y10y30x50v80uB<2>0nO0lS0iX0f`<2>0\
+  Ym0Vq0St0Pv<2>0Gz0Ey0By09x07u05s03p02l<2>01_00W00R00M<2>03A0570750920B0<2>0J\
+  00M10P3<2>0YC0`G0cL<2>0lY0nb0qf0sk0un0vr0xu0yw0yy0zz0zz0zz0yy0yw0xu0vr0un0sk\
+  <2>0lY0iU0fP0cL0`G<2>0S60P30M1<2>0E00B0092074<3>01I00M00R<2>01c01h02l03p05s0\
+  7u09x0By0Ez0Gz0Jy<2>0St<2>0`i0ce0f`<2>0nO0qJ0sF0uB0v80x5<2>0z0
+  }
+
+MandelMania        { ; Mandelbrot meets Newton
+  reset type=formula formulafile=reb001.frm formulaname=IkeNewtJul
+  passes=t corners=-31.99/31.99/-23.9925/23.9925 params=2/0/-0.67/0.04
+  float=y maxiter=1024 inside=0 periodicity=24
+  colors=000dYM<10>zpa<12>UPFMJIEDLAAK<4>AOSARUBUWBXYB__Bba<5>DtnDqm<14>14RC6Q\
+  O8O<5>VHI<7>zH0<7>WEDSDFRAG<3>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<9>UH\
+  D<7>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<18>005SNC<5>bXK
+  }
+
+BallInSpiral       { ; Carved in wood look
+  reset type=formula formulafile=reb001.frm
+  formulaname=jmask function=sin/cosh passes=t
+  corners=-0.859063/-0.110007/0.490577/1.052369 params=1/0.5/-0.92/0.3
+  float=y inside=bof60
+  colors=000XYK<16>VLCUKBVKB<22>qbOrcPqcP<19>WNAUM9UM9<19>hCCiBDiBDiBD<44>UM93\
+  IG<13>3LK
+  }
+
+BirdShell          { ; The hatching of a bird from Hades
+  reset type=formula formulafile=reb001.frm formulaname=pseudozeepi
+  passes=t corners=-6.171687/6.372313/-5.970332/3.437668
+  params=1/-2/-0.01/0.05 float=y maxiter=256 inside=bof60
+  colors=0009HI<12>SHBUIAUIA<27>YbMYbNYcNYcNYbN<22>VLCUKBVKB<22>qbOrcPqcP<19>W\
+  NAUM9UM9<19>hCCiBDiBDiBD<44>UM93IG<30>5PR5PR5PR5PR5PR<8>5MO5MO5MO5MO5LN5LN<1\
+  1>5IK5IK5IK5HJ6HJ7HI
+  }
+
+SpiralsAreUs       { ; The Medussa of spirals
+  reset type=formula formulafile=reb001.frm
+  formulaname=recipike passes=t
+  corners=-0.7775/-0.7507992/0.133309/0.4037/-0.8976893/0.293614
+  params=-0.3/0.5/4 float=y maxiter=256 inside=0
+  colors=000oQ0<25>210000000<27>qZRs`SuaTwcUwcU<27>653432221000000<27>sh8ui9wk\
+  9zmAzmA<25>752541321000000000<29>uX0wZ0wZ0<29>220000000<29>uT0wU0wU0<2>qR0
+  }
+
+AlienFlower        { ; From a Different Time and Place
+  reset type=formula formulafile=reb001.frm formulaname=RecipIke passes=t
+  corners=-4.656/4.656/-3.672905/3.311095 params=-0.376/0.376/4 float=y
+  maxiter=1024 inside=-100 potential=255/300/500
+  colors=0000B0<3>030000000<29>kkwmmzmmz<29>223000000<29>wk9zmAzmA<27>32100000\
+  0000<29>w00z00z00<29>300000000<29>0w00z00z0<24>0D0
+  }
+
+Network            { ; Slice of brain tissue from an alien
+  reset type=formula formulafile=reb001.frm
+  formulaname=Frame-RbtJ passes=t corners=-0.272/0.272/-0.204/0.204
+  params=-1.6/0.69 float=y maxiter=256 inside=-100 outside=mult
+  colors=000KN1<2>MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>\
+  MF0OF1<14>wEa<14>PE1<15>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<10>IHEJHAKG6LG2MF0O\
+  H1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1JT2JV3<7>Fk8<10>KP1
+  }
+
+MandelWhat         { ; S. Dali's Mandelbrot
+  reset type=formula formulafile=reb001.frm formulaname=Frame-RbtM
+  passes=t
+  corners=-4.08243147/-4.07889672/0.1279768/0.3916942/-4.23543363/0.2953637
+  float=y maxiter=1024 inside=zmag
+  colors=000000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUwcU<27>65343222100\
+  0000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0wZ0wZ0<29>220
+  }
+

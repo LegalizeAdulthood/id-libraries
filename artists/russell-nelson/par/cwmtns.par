@@ -1,0 +1,51 @@
+;; CWMTNS.PAR - 5/14/93 Carol Walske
+
+;; 3 base fractals - 2 julfn+zsqrd + 1 lyapunov - 
+;; 3 sets of 3D params
+;; 3D treatment creates a small moon hanging low over mountains
+
+1-Mtns1            { ; 1st fractal - for 3D (julfn+zsqrd)
+  reset type=julfn+zsqrd function=cosxx passes=1 savename=mtns1
+  corners=-0.96962/-0.150879/1.242172/0.698486/-0.414139/0.501144
+  params=-0.5/0.5 maxiter=1000 inside=0 potential=255/500/0/16bit
+  colors=000aSn<18>pZtBGc<40>MmyMnzMozNpz<6>PvzBGc<42>T9yT9zU9zU9z<12>_6zGIrLK\
+  zQMzCGd<12>STxTUzVVz<10>hezBGc<24>TdyUeyVfzVgzWhz<7>apzbqzbqzcqz<5>hpzipzjoy\
+  kox<13>wlgxlfylezkcykcxjcKKf<22>aSm
+  }
+
+2-Mtns2            { ; 2nd fractal - for 3D overlay (julfn+zsqrd)
+  reset type=julfn+zsqrd function=cosxx passes=1 savename=mtns2
+  corners=-0.61235/-0.049652/1.31163/0.195282/0.125854/0.326843
+  params=-0.5/0.5 maxiter=1000 inside=0 potential=255/500/0/16bit
+  colors=000aSn<18>pZtBGc<40>MmyMnzMozNpz<6>PvzBGc<42>T9yT9zU9zU9z<12>_6zGIrLK\
+  zQMzCGd<12>STxTUzVVz<10>hezBGc<24>TdyUeyVfzVgzWhz<7>apzbqzbqzcqz<5>hpzipzjoy\
+  kox<13>wlgxlfylezkcykcxjcKKf<22>aSm
+  }
+
+3-Moon             { ; Lyapunov to make moon over mountains
+                     ; with thanks to Caren Park for this lyapunov
+  reset type=lyapunov passes=t corners=3.112604/3.356604/3.612216/3.795216
+  params=-26629/0.5/0.2 float=y maxiter=3 inside=maxiter logmap=14
+  biomorph=256 periodicity=-1 colors=@altern savename=moon
+  }
+
+4-Mtns1-3D         { ; 3D params for 1st set of mountains
+  3d=yes filename=mtns1.pot scalexyz=100/100 roughness=200 waterline=0
+  filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
+  xyshift=0/0 xyadjust=0/-25 colors=@altern
+  }
+
+5-Mtns2-3D         { ; 3D params for 2nd overlay of mountains
+  3d=yes filename=mtns2.pot scalexyz=130/130 roughness=150 waterline=0
+  filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
+  xyshift=0/0 xyadjust=-10/-63 colors=@altern
+  }
+
+6-Moon-3D          { ; 3D params to put moon into scene
+  3d=yes filename=moon.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=12 scalexyz=90/12 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=4/18
+  colors=@altern
+  }
+
+

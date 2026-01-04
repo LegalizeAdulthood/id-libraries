@@ -1,0 +1,507 @@
+BOF_Fig.01         { ; Beauty of Fractals - Lorenz_3D/ Page 2
+                     ; Stefan Hundhammer  100020,2642
+  reset type=lorenz corners=-15.0/15.001877/-0.003281/30.0
+  params=0.02/5/15/1 inside=0
+  }
+
+BOF_Fig.02         { ; Beauty of Fractals - Mandel / Page 9
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-2.244382/0.718561/-1.142418/1.079788 float=y
+  maxiter=2500 inside=0 colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.03         { ; Beauty of Fractals - Julia / Page 10
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.8/1.8/-1.8/1.8 params=-0.12375/0.56508
+  float=y maxiter=2500 inside=0
+  colors=000vvv<117>000000000000000<26>DDDccc<103>ccc
+  }
+
+BOF_Fig.04         { ; Beauty of Fractals - Julia / Page 10
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.4/1.4/-1.4/1.4 params=-0.12/0.74 float=y
+  maxiter=2500 inside=0
+  colors=000xxx<2>yyyzzzyyy<123>000000000000000<15>888ccc<103>ccc
+  }
+
+BOF_Fig.05         { ; Beauty of Fractals - Feigenbaum/ Page 11
+                     ; Stefan Hundhammer  100020,2642
+  reset type=bifurcation corners=1.9/3.000001/0.000005/1.34
+  params=1000/0.66 maxiter=2500 inside=0 outside=255 colors=@default.map
+  }
+
+BOF_Fig.06         { ; Beauty of Fractals - Julia / Page 12
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=-0.481762/-0.531657
+  maxiter=2500 inside=0 colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.07         { ; Beauty of Fractals - Julia / Page 12
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=-0.39054/-0.58679
+  maxiter=2500 inside=0 colors=000jjj<93>000000000000000<50>QQQccc<103>ccc
+  }
+
+BOF_Fig.08         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.3/1.3/-1.3/1.3 params=0.27334/0.00742
+  inside=0 colors=000kkk<95>000000000000000<48>OOO
+  }
+
+BOF_Fig.09         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.8/1.8/-1.8/1.8 params=-1.25 inside=0
+  colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.10         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=-0.11/0.6557 inside=0
+  colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.11         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=0.11031/-0.67037
+  inside=0 colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.12         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=0/1 inside=0
+  colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.13         { ; Beauty of Fractals - Julia / Page 14
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=-0.194/0.6557 inside=0
+  colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.14         { ; Beauty of Fractals - Julia / Page 15
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.7/1.7/-1.7/1.7 params=-0.15652/1.03225
+  inside=0 colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.15         { ; Beauty of Fractals - Julia / Page 15
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.8/1.8/-1.8/1.8 params=-0.74543/0.11301
+  inside=0 colors=000yyy<123>000000000000000<20>BBB
+  }
+
+BOF_Fig.24         { ; Beauty of Fractals - Mandelfn exp / Page 34
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandelfn function=exp
+  corners=-2.654053/6.401749/6.496613/-6.748962/6.401749/-6.748962
+  maxiter=250 inside=0 colors=000yyy<123>000000000000000<120>www
+  }
+
+BOF_Fig.31      { ; Beauty of Fractals - IDENT*SQR Binary decomposition/ Page 42
+                  ; Stefan Hundhammer  100020,2642
+  reset type=fn*fn function=ident/sqr
+  corners=-3.18071/3.176529/-2.385437/2.387314 maxiter=250 inside=0
+  decomp=1 colors=000BBn
+  }
+
+BOF_Fig.33         { ; Beauty of Fractals - Mandel BOF60/ Page 60
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-2.175482/0.621832/-1.048992/1.048992
+  maxiter=2500 inside=bof60 outside=0 colors=000FFF
+  }
+
+BOF_Fig.34         { ; Beauty of Fractals - Mandel BOF61/ Page 61
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-2.175482/0.62183/-1.048992/1.048992
+  maxiter=2500 inside=bof61 outside=0 colors=000BBn
+  }
+
+BOF_Fig.53a        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-8.0/8.0/-6.0/6.0 params=-1 float=y
+  maxiter=500 inside=0 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53b        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-8.0/8.0/-6.0/6.0 params=-0.1 float=y
+  maxiter=500 inside=0 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53c        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 float=y maxiter=2500
+  finattract=y periodicity=0 colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53d        { ; Beauty of Fractals - Magnet Julia / Page 134
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=1 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53e        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=1.2 float=y
+  maxiter=2500 finattract=y periodicity=0 colors=@default.map
+  }
+
+BOF_Fig.53f        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=1.6 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53g        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=2 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53h        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=2.5 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53i        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-6.0/4.0/-5.0/5.0 params=2.9 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53j        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-4.315822/5.324178/-4.840877/4.799123
+  params=3 float=y maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53k        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-3.983677/4.936323/-4.52263/4.39737
+  params=3.1 float=y maxiter=2500 inside=0 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.53l        { ; Beauty of Fractals - Magnet Julia / Page 134
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-4.0/6.0/-5.0/5.0 params=4 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.54b        { ; Beauty of Fractals - Magnet Mandel / Page 137
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=1.86/2.15/1.5/1.8 float=y maxiter=2500
+  inside=0 colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.54c        { ; Beauty of Fractals - Magnet Mandel / Page 137
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=-1.0/3.5/-2.25/2.25 maxiter=2500 inside=0
+  colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.54d        { ; Beauty of Fractals - Magnet Mandel / Page 137
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet2m corners=-1.0/2.65/-2.0/2.0 float=y maxiter=2500
+  inside=0 finattract=y colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.54e        { ; Beauty of Fractals - Magnet Mandel / Page 137
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet2m corners=1.92/1.97/0.88/0.93 maxiter=2500 inside=0
+  finattract=y colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Fig.54f        { ; Beauty of Fractals - Magnet Mandel / Page 137
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet2m corners=-0.8/3.5/-2.0/2.0 float=y maxiter=2500
+  inside=0 finattract=y colors=000yyy<123>000000000000000<125>zzz
+  }
+
+BOF_Map.01         { ; Beauty of Fractals - Magnet Mandel / Page 45
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=-1.5/4.5/-2.25/2.25 float=y maxiter=2500
+  inside=0 finattract=y
+  colors=000zh0<12>zx0zz0zz0zz0zz0<44>2z00z00y1<43>02x00z00z<43>T0VU0UU0UV0U<4\
+  3>z0Zz0Zz1Y<42>zY1zZ0z_0z`0<4>zf0
+  }
+
+BOF_Map.02         { ; Beauty of Fractals - Magnet Mandel / Page 45
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=1.86/2.21/1.51/1.77 float=y maxiter=2500
+  inside=0 finattract=y
+  colors=000zj0<10>zx0zz0zz0zz0zz0<44>2z00z00y1<43>02x00z00z<43>T0VU0UU0UV0U<4\
+  3>z0Zz0Zz1Y<42>zY1zZ0z_0z`0<6>zi0
+  }
+
+BOF_Map.03         { ; Beauty of Fractals - Magnet Julia / Page 46
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-7.23083/8.47317/-6.123507/5.956493 params=4
+  float=y maxiter=2500 finattract=y periodicity=0
+  colors=000S0XS0WT0V<8>Z0U_0U`0V<35>z0Zz0Zz1Y<42>zY1zZ0z_0z`0<18>zx0zz0zz0zz0\
+  zz0<44>2z00z00y1<43>02x00z00z<40>R0X
+  }
+
+BOF_Map.04         { ; Beauty of Fractals - Magnet Julia / Page 46
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=0.42/1.98/3.67/2.5 params=-0.1 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000xO00bOxO00aPxP00aPxP00`QxQ00`QxQ00_RxR00_RxR00ZSxS00ZSxS00YTxT00YT\
+  xT00XUxU00XUxU00WVxV00WVxV00VWxW00VWxW00UXxX00UXxX00TYxY00TYxY00SZxZ00SZxZ00\
+  R_x_00R_x_00Q`x`00Q`x`00Paxa00Paxa00Obxb00Obxb00Ncxc00Ncxc00Mdxd00Mdxd00Leye\
+  00Leye00Kfyf00Kfyf00Jgyg00Jgyg00Ihyh00Ihyh00Hiyi00Hiyi00Gjyj00Gjyj00Fkyk00Fk\
+  yk00Elyl00Elyl00Dmym00Dmym00Cnyn00Cnyn00Boyo00Boyo00Apyp00Apyp009qyq009qyq00\
+  8ryr008ryr007sys007sys006tyt006tyt005uyu005uyu004vyv004vyv003wyw003wyw002xyx\
+  002xyx001yyy001yzz0zW00WWw000z0w000z0w000y1w100y1w100x2w200x2w200w3w300w3w30\
+  0v4w400v4w400u5w500u5w500t6w600t6w600s7w700s7w700r8w800r8w800q9w900q9w900pAw\
+  A00pAwA00oBwB00oBwB00nCwC00nCwC00mDwD00mDwD00lEwE00lEwE00kFwF00kFwF00jGwG00j\
+  GwG00iHwH00iHwH00hIwI00hIwI00gJwJ00gJwJ00fKwK00fKwK00eLxL00eLxL00dMxM00dMxM0\
+  0cNxN00cNxN00bO
+  }
+
+BOF_Map.05         { ; Beauty of Fractals - Magnet Julia / Page 46
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-0.5/1.5/-1.45/0.7 params=1.09582/2.07142
+  float=y maxiter=2500 finattract=y periodicity=0
+  colors=000ze0<14>zx0zz0zz0zz0zz0<44>2z00z00y1<43>02x00z00z<43>T0VU0UU0UV0U<4\
+  3>z0Zz0Zz1Y<42>zY1zZ0z_0z`0<2>zd0
+  }
+
+BOF_Map.06         { ; Beauty of Fractals - Magnet Julia / Page 46
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1j corners=-2.1/-0.3/-0.5/0.5625 params=1.21/0.01
+  float=y maxiter=2500 finattract=y periodicity=0
+  colors=00080q<31>T0VU0UU0UV0U<43>z0Zz0Zz1Y<42>zY1zZ0z_0z`0<18>zx0zz0zz0zz0zz\
+  0<44>2z00z00y1<43>02x00z00z<10>70r
+  }
+
+BOF_Map.07         { ; Beauty of Fractals - Magnet Julia / Page 47
+  reset type=magnet2j corners=-15.0/15.0/-11.0/11.0 params=2 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00\
+  L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e\
+  00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z0\
+  0e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>\
+  z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<\
+  2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz\
+  0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzze\
+  zz0<2>z00e00L00zzLzL0zL0ccc<29>ccc
+  }
+
+BOF_Map.08         { ; Beauty of Fractals - Magnet Julia / Page 47
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet2j corners=-3.2/3.8/-3.3/1.9 params=1.2/2 float=y
+  maxiter=2500 finattract=y periodicity=0
+  colors=000Z_L<32>INiIMiHMjHMjGLiBGz<61>98Bzw6<19>iY1JzI<60>7P7HKW<14>EILeuT<\
+  17>FKLoUt<34>XOb
+  }
+
+BOF_Map.11         { ; Beauty of Fractals - Magnet Mandel / Page 48
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=1.2882/1.2963/0.9695/0.9753 maxiter=2500
+  inside=0 finattract=y
+  colors=000BBn<68>zz0zz0zy0<81>z10z00z00y01<82>00z00z11y<12>BBo
+  }
+
+BOF_Map.13         { ; Beauty of Fractals - Magnet Mandel / Page 48
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=1.2906981/1.291136/0.97277/0.973098 float=y
+  maxiter=2500 inside=0 finattract=y
+  colors=000066<27>0OO0PP0PP1PP<44>xT1zU0zU0<62>mh7zh7<6>zjAccc<103>ccc
+  }
+
+BOF_Map.14         { ; Beauty of Fractals - Magnet Mandel / Page 49
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=1.9116/1.9784/0.88/0.93 float=y maxiter=2500
+  inside=0 finattract=y
+  colors=00000d<26>00zzz0<61>110000000000<109>000000001002<47>00c
+  }
+
+BOF_Map.16         { ; Beauty of Fractals - Magnet Mandel / Page 49
+                     ; Stefan Hundhammer  100020,2642
+  reset type=magnet1m corners=-1.2/3.2/-1.65/1.65 float=y maxiter=2500
+  inside=0 finattract=y
+  colors=00000d<26>00zzz0<61>110000000000<109>000000001002<47>00c
+  }
+
+BOF_Map.18         { ; Beauty of Fractals - Julia / Page 51
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.2/1.2 params=0.32/0.043 inside=0
+  colors=0002O2<28>abacccccc<45>d61e50e50e50<45>mK0000<21>000
+  }
+
+BOF_Map.20         { ; Beauty of Fractals - Julia / Page 52
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=-0.12375/0.56508
+  inside=bof60
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<16>sKC
+  }
+
+BOF_Map.22         { ; Beauty of Fractals - Julia / Page 52
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-1.5/1.5/-1.5/1.5 params=-0.39054/-0.58679
+  inside=bof60
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<16>sKC
+  }
+
+BOF_Map.24         { ; Beauty of Fractals - Julia / Page 52
+                     ; Stefan Hundhammer  100020,2642
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=-0.11/0.67
+  inside=bof60 colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<52>z_A
+  }
+
+BOF_Map.26         { ; Beauty of Fractals - Mandel / Page 78
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-2.4/0.8/-1.2/1.2 inside=0
+  colors=0000fK<29>02x00z00z<43>T0VU0UU0UV0U<43>z0Zz0Zz1Y<23>zJG
+  }
+
+BOF_Map.27         { ; Beauty of Fractals - Mandel / Page 78
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.1992/-0.1295399/1.0148001/1.06707 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<52>z_A
+  }
+
+BOF_Map.29         { ; Beauty of Fractals - Mandel / Page 79
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.95/-0.8833303/0.2499998/0.3 inside=0
+  colors=000DQB<64>8m1FFF<82>MQ9
+  }
+
+BOF_Map.30         { ; Beauty of Fractals - Mandel / Page 79
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.713/-0.4082/0.49216/0.71429 inside=0
+  colors=000PVe<25>7Nyzi0<62>PNLzi0zi1zi1PNL<6>KKOMLN<46>cVW
+  }
+
+BOF_Map.33         { ; Beauty of Fractals - Mandel / Page 80
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-1.781/-1.7639999/-0.0000003/0.013 inside=0
+  colors=000ssg<14>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>Cqs\
+  CssCsq<8>Cs_CsYECE<8>WCW
+  }
+
+BOF_Map.36         { ; Beauty of Fractals - Mandel / Page 81
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.75104/-0.7407997/0.1051103/0.11536
+  maxiter=500 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+BOF_Map.38         { ; Beauty of Fractals - Mandel / Page 82
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.74758/-0.74623995/0.10671043/0.10779
+  maxiter=1000 inside=0
+  colors=000kkk<29>2yy0zz0yz<29>02z00z00y<29>002000000<61>0Wy0Xz0Xz0Yz<28>0yz0\
+  zz0zz1zz<30>NzzOyyPyyQxxRxx<25>kkk
+  }
+
+BOF_Map.40         { ; Beauty of Fractals - Mandel / Page 83
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.746541001/-0.746377841/0.107573612/0.107678
+  maxiter=1000 inside=0
+  colors=zzzzzz<30>0fX<30>xyyzzzzzz<14>zzzzyzzwz<29>z0z<30>zxzzzzzzz<14>zzzyyz\
+  wwz<29>00z<30>xxzzzzzzz<29>zzz
+  }
+
+BOF_Map.42         { ; Beauty of Fractals - Mandel / Page 84
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.74591/-0.74447967/0.11195979/0.11339
+  maxiter=500 inside=0
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+BOF_Map.44         { ; Beauty of Fractals - Mandel / Page 85
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.745538/-0.745053869/0.11288001/0.113236001
+  maxiter=1000 inside=0
+  colors=000zYN<3>zG3uD0zB0kA0<5>IA0DA0AA0zzzuuu<18>000zzWrrT<6>cc0<13>CC0AA06\
+  60440azaXzXSzSNzNJxJIzIDzD8z83z30z00n00f00_00T00N00I0zzzuuu<3>iiifffbbbZZZVV\
+  VRRRNNNIIIDDD7770000zz0hn0cj0`c0YZ<3>0OO0LL0IH0GF0EB0BA067zzzuuu<3>iiifffbbb\
+  ZZZVVVRRRNNNIIIDDD777000zzazzUzrRrmPnkNilJfiEcj8eb9gW9iP8uJ6YG4RC3M50E30zzzu\
+  uu<3>iiifffbbbZZZVVVRRRNNNIIIDDD777000WzVRzRNvMLqKJxJHqGEpDBmA8n76z53n50u00_\
+  00T00N00I0<2>080050030000zz0z0z0zzzzZrrTooPmmLllHkkDii7ff3cc0bb0<2>VV0SS0NN0\
+  zzuxxsuuqssoppk<11>NNILLGKKE<2>DD8AA5884663552aza<2>NzNJzJGzG<2>7z75z52z20z0\
+  0k0<6>0D0JKBSQHYWMa_QdbSfdVigXkiXniZqeWzbT
+  }
+
+BOF_Map.45         { ; Beauty of Fractals - Mandel / Page 86
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.745468/-0.745385082/0.112979222/0.113039
+  maxiter=1000 inside=0
+  colors=0008ze8z08Le8L0mezmeLm0zm0L8ez8eL80z80LVOuVOuWOtjjo<3>ojoLLzojmzzezz0\
+  zLezL0LzeLz0LLeLL0zezzeLz0zz0LzzzLeLL0zL0Lzeeze0z0ez00LeeLe0L0eL00ezzezLeLze\
+  LL0zz0zL0Lz0LLezeez0eLeeL00ze0z00Le0L0eezeeLe0ze0L0ez0eL00z00L0z0<3>0zz<2>0G\
+  znuQ<20>VpBzzd<14>zoCzye<4>ztcyscwrb<31>GNQzze<13>znczmcylcxkb<17>nW_ztezmez\
+  ge<2>uOesIepBe<11>bN_AAm<3>BCpTLzBCqzzezz0zLezL0TzeTz0TLeTL0zezzeLz0zz0LCHxT\
+  eLT0zT0Lzeeze0z0ez00TeeTe0T0eT00mzzmzLmLzmLL8zz8zL8Lz8LLmzemz0mLemL0
+  }
+
+BOF_Map.48         { ; Beauty of Fractals - Mandel / Page 86
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel
+  corners=-0.745435599/-0.745421557/0.113004087/0.113013901 maxiter=1000
+  inside=0
+  colors=000sP7<12>yO1zN0zN1<54>zyxzzzzzzzzz<66>4Yz3Xz3Xz3Xz<110>rP8
+  }
+
+BOF_Map.49         { ; Beauty of Fractals - Mandel / Page 86
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.7454301/-0.7454289/0.1130076/0.1130085
+  float=y maxiter=1000 inside=0
+  colors=0000Xz<38>0yz0zz0zz1zy<82>zz0zz0yy1<82>00z00z01z<41>0Wz
+  }
+
+BOF_Map.58         { ; Beauty of Fractals - Mandel / Page 89
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-1.254024/-1.25286115/0.046252422/0.047125001
+  maxiter=1000 inside=0
+  colors=000kzf<59>YzOXzNXzNWyNWxM<60>000000001<60>00y00z01z12z<58>jxgkzfkzfkz\
+  fkzf
+  }
+
+BOF_Fig.38a        { ; Beauty of Fractals - Mandel decomp / Page 74
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-2.183293/0.808707/-1.122/1.122 float=y
+  maxiter=250 inside=0 decomp=1 colors=000FFF
+  }
+
+BOF_Fig.38b        { ; Beauty of Fractals - Mandel decomp / Page 74
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-0.1956824/-0.1288801/1.0095681/1.0596699
+  float=y maxiter=250 inside=0 decomp=1 colors=000FFF
+  }
+
+BOF_Fig.38c        { ; Beauty of Fractals - Mandel decomp invers/ Page 75
+                     ; Stefan Hundhammer  100020,2642
+  reset type=mandel corners=-1.580874/4.045479/-2.155934/2.063831
+  maxiter=250 inside=0 invert=1/0/0 decomp=1 colors=@volcano.map
+  }
+
+BOF_Fig.44         { ; Beauty of Fractals - Magnet Julia / Page 99
+                     ; Stefan Hundhammer  100020,2642
+  reset type=newtbasin corners=-2.0/2.0/-1.5/1.5 float=y maxiter=2500
+  inside=0 decomp=2 finattract=y colors=000FFF
+  }
+
+BOF_Map.66         { ; Beauty of Fractals - Newton / Page 91
+                     ; Stefan Hundhammer  100020,2642
+  reset type=newton corners=-2.0/2.0/-1.5/1.5 params=4/10 float=y
+  maxiter=2500 inside=0 decomp=8
+  colors=000zz0fp0<18>DN0BL0CL0<25>a_7b`8a`8<28>2EA0DB0DB<32>PPP<10>333000009<\
+  38>003zs1<38>rQB<5>PPP<7>KFFqY0<32>yy0
+  }
+

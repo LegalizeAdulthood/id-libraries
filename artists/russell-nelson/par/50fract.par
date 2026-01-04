@@ -1,0 +1,594 @@
+;The time estimates on these fractals are for a 1024x768x256 resolution
+;screen on a 486DX computer.  Your mileage may vary.
+
+Lg745              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:24
+  reset=1920 type=mandelfn function=sin passes=1
+  corners=-3.5685062579251/-3.5685055779251/-2.604532409927e-007/2.4954675\
+  900729e-007 params=0/0 float=y maxiter=10000 inside=0 biomorph=44
+  colors=000bWZlbfvjoECE<7>tVjQJFfTKxbQBBB<5>NNLDADPPN<6>bbYed_fdZ<11>wdLy\
+  eJxbJ<8>g6JQ8G7BC<6>4TH000<69>ZxwCDB<4>USG<32>j73j73j83<37>VXL1J10K0BAA<\
+  8>XA4BAA<12>`F19AA<9>GGAHH9JHITOQ
+  }
+
+Lg740              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:18
+  reset=1920 type=manlam(fn||fn) function=tanh/sqr passes=1
+  corners=0.1808950525/0.1788546917/1.028033482/1.017162501/0.1853785934/1\
+  .022055427 params=0/0/10 float=y maxiter=500 inside=epsiloncross
+  outside=real
+  colors=000gEL000cDJ<18>211000000<6>000000222<12>bbbeeefceg`ehYe<13>xdeze\
+  ezce<13>q8`<11>fbdeeeccc<13>000<9>000<14>z0e<13>HmeDqeAsi<3>0zz2xv4vr<14\
+  >eee<13>HHHFFFCCC<3>000<23>000000200<29>zKU<8>iFM
+  }
+
+Lg738              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:19
+  reset=1920 type=manlam(fn||fn) function=cos/recip passes=1
+  corners=7.298343029276/7.298345886782/-1.072529215291e-006/1.07060081721\
+  8e-006 params=0/0/10 float=y maxiter=10000 inside=0
+  colors=zz0Xin<6>Onw<20>nqcprbpqa<17>fLD<2>95C<8>SOM<11>6a`4bb2cc0ee2ee<1\
+  1>Rf_TfZWgYZgXahW<13>xx3zz0zy2<12>raXq__q__S04<7>w04008<14>w0800C<14>w0C\
+  00G<14>w0G00K<14>w0K00O<11>k0O<21>PEgOFhPGh<12>ccfeeedef<5>Yim
+  }
+
+Lg732              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:26
+  reset=1920 type=mandelfn function=sin passes=1
+  corners=76.913694/77.051294/-0.051590423/0.051609577 params=0/0
+  float=y maxiter=1000 inside=zmag outside=real
+  colors=000joP<5>oqO<9>mON<16>mNHT1F<9>k3P<13>XULVVLTVM<13>0ee<2>4eb5ea6c\
+  _<13>N00<14>iXB<8>z00<14>`lT<31>2sg<47>vPS<3>KdR<37>jnP
+  }
+
+Lg730              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 5:08
+  reset=1920 type=(c)Marksmandelpwr function=sqr passes=1
+  corners=-1.082040782/-1.078818647/0.002151450905/-0.002144729059/-1.0788\
+  18647/-0.002144729059 params=0/0 float=y maxiter=10000 fillcolor=99
+  inside=zmag outside=real
+  colors=CCCgCg<5>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<19>GCsE\
+  CsDEl<3>6MK4PC4PC<19>J_QK`RNaS<9>xqj<6>Y1X<15>jAPksk<2>qsqsssssq<19>ssEs\
+  sCsqC<19>sECsCCqCC<21>ACCCCC<14>eCe
+  }
+
+Lg720              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:24
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=Fzpfnseh function=exp passes=1
+  corners=-1.70947733/-1.60782707/-0.906138986/-1.00136184/-1.62717627/-1.\
+  01587374 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
+  colors=CCCqYM<4>t_C<14>27C<16>NCePDgQEg<18>phorjprjn<18>tnAuo7uqE<2>uw_<\
+  6>_oM<6>szj<6>OUo<26>H2U<22>ClWBoXCnY<5>NbcP`eP_e<26>X3SY1RY1R<12>f8Rg9R\
+  fBR<23>4wR<3>pU3nV5lX8hTm<13>pYO
+  }
+
+Lg715              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:11
+  reset=1920 type=manowarj passes=1
+  corners=-0.717334784/1.08926244/1.11236779/-1.08937709/0.98987776/-1.163\
+  9156 params=0/0 float=y inside=zmag outside=real
+  invert=0.0824742/0/0
+  colors=CCC9ro<5>8cnR6R<4>cBNR8R<5>tUKMAS<7>NsPN6S<20>ghBO6S<14>uXbM6T<18\
+  >RRmM7T<17>7hmM7S<14>AfVRDY<2>f`oM5S<19>3BEN5T<17>k0xM7S<21>bpmcsneZ7O5S\
+  <14>uEMN8S<11>hrRN7T<9>aRbM6SbTc<11>tqp<8>9vo9to
+  }
+
+Lg708              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:34
+  reset=1920 type=formula formulafile=fractint.frm formulaname=cubic
+  passes=1
+  corners=-0.4140136571772764/-0.4140136571637833/-5.100920327900198e-012/\
+  5.0189088432180263e-012 params=1/0/0/0/0/0 float=y maxiter=10000
+  inside=0 outside=real
+  colors=zz0_Tj<8>Xul<4>9g9<12>Y`Y___Z__<19>4HU<3>LmHbW9tD0<12>uTBvVCuVD<1\
+  8>KHZIG`IG`<20>9I`8J`9J`<18>j6I<6>zbb<14>82h<18>AgvTdpl`j<3>lskmxlkvj<14\
+  >GOFDLCCLJ<5>0Nx<2>Rxr<13>Ay8<16>lQD_yG_sQ`l`<3>ciF<3>`Dj<3>_Pj
+  }
+
+Lg706              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:46
+  reset=1920 type=manlam(fn||fn) function=sin/ident passes=1
+  corners=-2.238889593927315e-009/2.233176974985838e-009/1.543048525720901\
+  /1.543048529074951 params=0/0/700 float=y maxiter=5000 fillcolor=0
+  inside=0 logmap=6
+  colors=CCC9SG<14>K`R<10>xqj<6>Y1X<15>jAPksk<2>qsqsssssq<19>ssEssCsqC<19>\
+  sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<\
+  19>GCsECsDEl<3>6MK4PC4PC<4>8SG
+  }
+
+Lg702              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:54
+  reset=1920 type=manlam(fn||fn) function=tanh/cotan passes=1
+  corners=0.11220058573/0.11283546573/2.0700619497/2.0705381097
+  params=0/0/10 float=y maxiter=20000 inside=maxiter outside=real
+  colors=000y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0z\
+  z1<29>zzxzzzzzz<29>zkX<3>zjl<15>1QY<5>IGCLE8LE9<16>KUdJVfJUe<15>MAFz10z0\
+  0z00
+  }
+
+Lg696              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:13
+  reset=1920 type=barnsleyj2 passes=2
+  corners=-0.0601611358/0.05996676856/0.07338362609/-0.07301923298/0.05335\
+  828212/-0.07797559781 params=0.6/0.8 float=y inside=zmag
+  invert=0.0233126/0/0
+  colors=CCCotT<2>osQsoC<18>sECsCCqCC<21>ACCCCC<21>sCs<3>kCsjCrhCp<15>HCR<\
+  5>AbI8gG8gG<59>qN2<3>I90<18>dL`fMbfNb<30>ixwjzxjzx<35>ntT
+  }
+
+Lg691              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:23
+  reset=1720 type=barnsleyj2 passes=2
+  corners=-2.137863/2.146563/-0.06752975/0.072345885/-0.6626103/-2.0345338
+  params=0.6/0.8 float=y maxiter=200 inside=bof60 decomp=256
+  colors=000YSHdXIkbK98C<9>KNGXukGFE<3>njPPP9ff6xy2A7C<14>qA2<2>RRU<8>H3zJ\
+  9cLGH<7>M7aN5dO6e<11>cTq<10>FBZ<6>whb<2>cub<8>FFa<3>WorDiS<10>Ev0<8>EPH<\
+  7>GUL<2>wKz<14>hX`fYZfYY<10>ZZNY_LWXK<8>A43<9>UnTXsW`redqoH3OI5NAH`CSy98\
+  B<7>HG0ECK<4>hdzDCG<6>njmABC<9>bxEMCB_I9nO7CBC<7>kkBBAG<5>ZTfGQKOhTECDLH\
+  ESNG
+  }
+
+Lg686              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:07
+  reset=1920 type=manlam(fn||fn) function=cos/tanh passes=1
+  corners=-0.084722188/0.0855105/6.2229134/6.350588 params=0/0/10
+  float=y maxiter=10000 inside=0 outside=imag
+  colors=000IKM<5>HI9<11>C6Q<18>Klc<4>4WN<11>ro9<3>ttVuv`uuY<4>yoI<13>11Z<\
+  20>ijIlmHllJ<13>iMo<10>0HZTS_<21>TeQ<4>iZN<4>fUceTggbP<16>xKjyIlyIl<40>t\
+  VasW`sW`rW_rW_<3>oWXoWXmWY<10>INj<10>IKO
+  }
+
+Lg680              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:12
+  reset=1920 type=manlam(fn||fn) function=cos/ident passes=2
+  corners=-0.0207070256/0.0209088096/0.959035691/0.990247567
+  params=0/0/10 float=y inside=0
+  colors=000T5iS5jR4k<21>eexfgyfgy<35>t8Tu7St7S<6>mCSMEe<5>LVoILWDUN8bDIBX\
+  <3>171OC`<6>eH5QGd<6>vmfUDa<2>rGSQBa<3>f7Mg5nSDg<4>wJyLFY<3>FS5OIZ<3>Xf8\
+  LId<6>9ycKGe<3>8ZlSAe<2>j1kRMd<3>ky`OE`rnFQHW<4>_V7bY2c`3<2>fj9<7>4A6<6>\
+  6aU<5>wQ7rQ9<9>Hyw<23>sJMuHKuHK<32>U6h
+  }
+
+Lg674              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:26
+  reset=1821 type=mandel(fn||fn) function=sin/cos passes=1
+  corners=-1.62479/-1.32479/0.19999347/-0.20000653/-1.32479/-0.20000653
+  params=0/0/0.5 float=y inside=bof60 outside=real
+  colors=CCCsgC<14>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>\
+  Cs_CsYECE<20>sCs<19>GCsECsDEl<3>6MK4PC4PC<19>J_QK`RNaS<9>xqj<6>Y1X<15>jA\
+  Pksk<2>qsqsssssq<19>ssEssCsqC<3>siC
+  }
+
+Lg673              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:12
+  reset=1920 type=formula formulafile=fractint.frm formulaname=Jm_01
+  function=sin/sqr passes=1
+  corners=1.77922535/1.78922535/-0.00375/0.00375 params=0/0/0/0/0/0
+  float=y maxiter=10000 inside=period outside=real
+  colors=CCCmWd<3>Y1X<15>jAPksk<2>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>A\
+  CCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<19>GCsECsDEl<3\
+  >6MK4PC4PC<19>J_QK`RNaS<9>xqjujhqbf
+  }
+
+Lg663              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:04
+  reset=1920 type=sqr(fn) function=log passes=2
+  corners=16.18359/12.84993/-2.227834/2.217053/12.84993/2.217053
+  float=y maxiter=200 inside=epsiloncross outside=real decomp=256
+  colors=000000000<30>xx0zz0yy0<29>220000000<29>000000200<29>zKU<3>sIRqHQq\
+  HQ<32>t66t66t77<25>hQKhRLgSMfSM<27>458pAp<19>lNX000<5>000
+  }
+
+Lg655              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:26
+  reset=1920 type=mandel passes=1
+  corners=-1.4013334187445812/-1.4013334187333799/0.025473224479542166/0.0\
+  25473224487943154 params=0/0 float=y maxiter=20000 inside=0
+  colors=000E0k<18>00z00z11z<82>zzzzzzzyy<82>z00z00y01<62>F0k
+  }
+
+Lg649              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:41
+  reset=1920 type=mandel passes=1
+  corners=-1.749195268439241/-1.749195265554408/2.3434145178350147e-006/2.\
+  3433826495890609e-006/-1.749195267385433/2.3420093006401655e-006
+  params=0/0 float=y maxiter=32767 inside=0 outside=real
+  distest=-3/50/1024/768
+  colors=0zz034<2>044045265<20>zmE<26>ZXZ00zXV`WVaVUbTTc<18>cA8d86d86<8>_5\
+  E_5F_6G<14>fIXgJZhL_<10>uluwowwov<6>wsowtnutn<15>Bsy<23>EXg<5>dOX<27>rQl\
+  rQlqPm<23>VDyUCzSIu<3>IiY<4>adO011<12>034
+  }
+
+Lg644              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 15:58
+  reset=1821 type=manlam(fn||fn) function=cos/recip passes=1
+  corners=5.59614250885/5.59615866612/-6.06508542567e-006/6.05286526309e-0\
+  06 params=0/0/10 float=y maxiter=30000 inside=0
+  colors=000h66<9>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z\
+  10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFFFFFF<18>g66
+  }
+
+Lg640              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:05
+  reset=1920 type=lambdafn function=sinh passes=2
+  corners=-1.952/1.952/-1.464/1.464 params=1/0.4 float=y maxiter=10000
+  inside=epsiloncross outside=real
+  colors=000RZq<6>emxhpzlehqVRvK8<2>NS2<13>qqRtsTtqTtoUtmVZWkZVlZUmUAM<10>\
+  M0G<3>iX5N0G<17>fEU`AQ<25>fNEfOEfPF<7>gaVhcXfcX<15>7OP<22>ZOc`Pd`Pd<12>m\
+  _V<19>A_o8Zq8Yo<15>279156157<16>D5OE6PD7Q<6>1Ga<14>`5b<3>CLj<5>PXp
+  }
+
+Lg635              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:10
+  reset=1920 type=lambdafn function=sinh passes=1
+  corners=-0.2/0.2/-0.15/0.15 params=1/0.4 float=y invert=0.05/0/0
+  decomp=256
+  colors=000YCC<16>DBBKCC<9>58L37M37M<32>ITbITbIUa<12>I_TI_TJ_U<38>ibvjcwj\
+  cv<25>lFGmEEmEE<28>XTSXUTWUTWUT<25>7LV7LV7MVEIg<34>E2jhCC<7>_CC
+  }
+
+Lg623              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:02
+  reset=1920 type=popcornjul passes=2
+  corners=0.626635348/0.70623402/-0.420201422/-0.361852187
+  params=2.71828182845905 float=y outside=real invert=3.88995/0/0
+  decomp=256
+  colors=000mcQ<35>zo_ID3<39>AeeID3<85>IZ_ID3IZ_<11>IacNH6<74>lcQ
+  }
+
+Lg622              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:02
+  reset=1920 type=popcornjul passes=2
+  corners=-0.7955976/0.7963758/-0.5819741/0.5850106
+  params=2.71828182845905 float=y outside=real invert=3.88995/0/0
+  decomp=256
+  colors=000JCS<6>T32ELi<6>ZeMwWpOIdaIXoHPEJl<11>o`sBIj<12>78JBJg<4>7RGDJk\
+  <11>fVRFKg<4>aUIya9CIj<13>`EIFKj<5>f`XI2zCIk<11>QIUBKlRISSIRUHP<6>gGWElg\
+  <3>GweKPnUWqcctBJl<11>IafBJl<10>0UlFMi<7>ltGCLk<6>MfZEJi<11>nb1WNYpSJEMi\
+  <5>_jMDJk<14>f`JGGo<2>Y8zCIk<12>QQVBIj<11>5UFAMi<5>2lRLKl<2>oRoCHi<3>HDV
+  }
+
+Lg589              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:16
+  reset=1920 type=phoenix passes=1
+  corners=0.18511564048632/0.18511619645696/0.6761073738205/0.676113013536\
+  5/0.18511313357206/0.6761107163728 params=0.56667/-0.5/0 float=y
+  maxiter=1000 inside=zmag decomp=256
+  colors=0000K0<8>020000000<14>000110330<29>zz0<30>220000000<29>000000200<\
+  29>zKU<11>cDJaCIaEI<16>UsB<2>TofSmqRmq<9>HsiGthHsh<19>cQgeOfeMg<9>`0sQTl\
+  Fud<13>WTr0U0<3>0M0
+  }
+
+Lg588              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:04
+  reset=1920 type=barnsleyj1 passes=t
+  corners=-2.086996/2.129697/-1.617267/1.545252
+  params=1.041997879743576/0.07365942001342773 float=y maxiter=5000
+  fillcolor=256 inside=epsiloncross decomp=256
+  colors=000EPP<40>ZxwCDB<12>vqPDAB<9>uKSFKG<3>bzfABA<11>YPEMNJ<2>zziBLPEW\
+  cHfr9BC<11>EQkAFA<6>Im99B9<8>0K0BAA<8>XA4BAA<12>`F19AA<9>GGAHH9JHI<3>vjo\
+  ECE<7>tVjQJFfTKxbQBBB<5>NNLDADPPN<6>bbYed_fdZ<11>wdLyeJxbJ<8>g6JQ8G7BC<6\
+  >4TH000<27>EOO
+  }
+
+Lg556              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 3:29
+  reset=1920 type=formula formulafile=fractint.frm formulaname=cubic
+  passes=1
+  corners=2.2998879177762352e-009/2.3011536139368787e-009/2.96117976642667\
+  64/2.9611797664319188/2.2977390453362975e-009/2.9611797664295345
+  params=1/0/0/0/0/0 float=y maxiter=10000 inside=0
+  colors=0zzF9F<4>LG5NI3OI3<19>jC3<2>`JI0M0<9>020000000<14>000110330<29>zz\
+  0<30>220000000<29>000000200<29>zKU<22>I69G58G59<20>KEXLFZLFaLFdLFgKGj<11\
+  >lS5UGEA3O<3>E8H
+  }
+
+Lg549              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:28
+  reset=1810 type=formula formulafile=fractint.frm
+  formulaname=halleySin passes=1
+  corners=-0.9622759547/-0.9556391547/-0.002511441509/0.002466158491
+  params=0.1/0/0/0/0/0 float=y maxiter=350 inside=bof60
+  colors=000rBh<6>y9hz8iyJf<2>vrX<26>lhU00UkgT<50>TOMTOMTON<34>bIZbIZaJZ<5\
+  1>4lh4lh5kh<19>KYac708Sd<23>WKf8SdXJf<20>qCh
+  }
+
+Lg546              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:36
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=Fzpfnseh function=sin passes=1
+  corners=-4.156867/-3.104792/0.3537807/1.1428373 params=0/0/0/0/0/0
+  float=y inside=epsiloncross outside=summ
+  colors=000oLJ<3>g6JQ8G7BC<6>4TH000<69>ZxwCDB<12>vqPDAB<9>uKSFKG<3>bzfABA\
+  <11>YPEMNJ<2>zziBLPEWcHfr9BC<11>EQkAFA<6>Im99B9<8>0K0BAA<8>XA4BAA<12>`F1\
+  9AA<9>GGAHH9JHI<3>vjoECE<7>tVjQJFfTKxbQBBB<5>NNLDADPPN<6>bbYed_fdZ<11>wd\
+  LyeJxbJ<3>pOJ
+  }
+
+Lg545              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 2:11
+  reset=1920 type=formula formulafile=fractint.frm formulaname=cubic
+  passes=1
+  corners=1.8090382924399811e-005/1.8090555958135297e-005/2.96117626201684\
+  03/2.9611762621466156 params=1/0/0/0/0/0 float=y maxiter=10000
+  inside=0
+  colors=zz0X59U55<5>Z59_4A_6A<10>cSIJojGvk<10>hW8xbJ<8>g6JQ8G7BC<6>4TH000\
+  <27>EOO<2>X5Z<4>15C<13>0bb<17>tAe<16>EUS<10>tQ3<7>JNI<11>3Zv<7>RIuGP_<4>\
+  BQ_AQ_9R_9S_<19>Bn_CpZCpZ<11>Awg7m_3bS<6>lH8<2>gXd<2>EQC<8>AJdr5l<8>Z5D
+  }
+
+Lg540              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:04
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=LeeMandel1 passes=1
+  corners=-1.102631450407e-005/-1.813326995534e-005/-4.737970304766e-006/4\
+  .737970296924e-006/-1.813326995534e-005/4.737970296924e-006
+  params=0/0/0/0/0/0 float=y maxiter=1000 inside=0
+  potential=128/10000/0
+  colors=000z30z20z10z00<32>c00b11a11`22_22<23>GEEFFFFFFFFF<29>x11z00z10<2\
+  9>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<25>z40
+  }
+
+Lg539              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:40
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=LeeMandel2 passes=1
+  corners=-0.10291110453627/-0.10290822360441/-0.14822713015535/-0.1482240\
+  5476468/-0.10291154358832/-0.14822654475261 params=0/0/0/0/0/0
+  float=y maxiter=10000 inside=0
+  colors=zz0mAP<27>Xpsn7M<21>vmBUXd9xxn8L<7>rR7n6M<23>vT5n8M<19>Wy9n7N<19>\
+  ncvn6N<23>bTsB2Yn6M<45>89EpKGsZAn6M<4>o8Pp8Qn6Mp9Q<12>tEYuFZuFZuGZ<24>oW\
+  b
+  }
+
+Lg536              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:18
+  reset=1920 type=formula formulafile=fractint.frm formulaname=cubic
+  passes=1
+  corners=1.6887951252e-005/2.049958440159e-005/2.961175830121/2.961178538\
+  846 params=1/0/0/0/0/0 float=y maxiter=10000 inside=0
+  colors=z00GLU<10>vpF<3>GQt<7>Mwx<2>nLy<15>mdi<9>5sL<6>xpW<8>YqkUrmSil<4>\
+  H0g<8>QUA<5>2do<13>vmi<14>Eju<5>kOR<4>yYT<12>62f<14>_K1<9>1dg<7>EIWGFUGF\
+  U<9>PC_QB`QDa<8>SVkTYmUZh<6>ak8cm2cm4<12>i`Xj__lKZo4Yn4Xl4Va7Bd59GKX<12>\
+  tdwDJU<8>IKJ
+  }
+
+Lg530              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 2:14
+  reset=1920 type=mandel passes=1
+  corners=-1.100403059119937/-1.1004030589609588/0.2380640964054882/0.2380\
+  6409644622489/-1.1004030590822911/0.23806409635519515 params=0/0
+  float=y maxiter=32767 inside=0
+  colors=zz0Mkq<2>Nts_vclyO<7>rcP<7>vrb<5>`L6bLX<3>`UscHM<10>iDX_FQ<2>L6dc\
+  HO<9>_PgPxGcPMcXMdeLcHM<13>qMIaHO<11>3Ju_KO<6>6hdcHM<6>fLKnh8cNO<5>hxa`K\
+  L<10>2z9VRYL`icIN<14>UaabIM<11>R_UcKO<12>exvbLR`QWZVacIL<11>YW6eGQ<5>r7r\
+  zuz_SN<2>MxTcGN<13>`2a_0caHM<14>0VMbHO<2>YHVcOIWHX<4>NHgLIjLKj<8>Mhp
+  }
+
+Lg524              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:07
+  reset=1920 type=julia passes=2
+  corners=-9.70000000061e-006/9.69999999939e-006/-7.27500000543e-006/7.274\
+  99999457e-006 params=-1.256808067285729/0.03915524200680617 float=y
+  maxiter=20000
+  colors=000oxj<13>4qu<16>lK9oI6oI6<17>oXBoYBqHQ<3>zKU<30>211000000<14>000\
+  010030<29>0z0<30>020000000<14>000110330<7>JJ0LL0LL2<19>JYoIZrJZr<32>yyhv\
+  yhsyi
+  }
+
+Lg516              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:06
+  reset=1920 type=lambda(fn||fn) function=sin/sqr passes=1
+  corners=-4/4/-3/3 params=0.1690140845070921/1.033402922755757/10
+  float=y outside=imag
+  colors=00005T<54>4oj02S<9>6OM01S<35>Wat00S<47>KdY00SLeY<3>NiZNiZOh_<24>h\
+  NwhNwhNv<27>ZHhZHhZHhZHhZHg<33>fEZ04T
+  }
+
+Lg509              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 9:21
+  reset=1920 type=mandel passes=1
+  corners=-1.768535398896658/-1.768535393521658/0.0003496465514668082/0.00\
+  03496505827168207 params=0/0 float=y maxiter=32000
+  colors=000S04<7>w04008<14>w0800C<14>w0C00G<14>w0G00K<2>C0K<66>XLrYMsXMq<\
+  14>BCG9BD9BD<62>y3Ly3Lx3L<16>o6M3FO<7>39QO00<8>w00004<5>O04
+  }
+
+Lg500              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:32
+  reset=1920 type=julia passes=1
+  corners=-0.002170924236/0.002170924236/-0.001628193177/0.001628193177
+  params=-1.400837054053712/0.000103340292283296 float=y maxiter=32767
+  logmap=-3
+  colors=000Rs4sJhuMf<2>fWVa_QZTQ<2>N5P<2>6Q7<2>tPxnFxh5y00rCwtEdvHLxXxQej\
+  YoXfEVafuQ<2>za3<3>VE6<2>L5e<28>GKmFLnFLnFLn<69>CowCowCov<34>5fY4eX4eX4e\
+  X<51>G_PmIamNQmSDd8kW3ibGe<2>4RGnVUpl9mN`mXOlgAafaoGbrKSq7cv0TYVQHl1oFlq\
+  Hj
+  }
+
+Lg498              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 3:38
+  reset=1920 type=mandel passes=1
+  corners=-0.93027077441043915/-0.93027077433289207/0.24630047710075981/0.\
+  24630047715892006 params=0/0 float=y maxiter=32767 inside=0
+  logmap=-10
+  colors=000C__<11>CZCBY9CYA<17>VmhXnjXni<14>XiH0f0<9>0z0<30>020000213<11>\
+  ZNc<9>ZSi000<127>z00F_jE_lC`o<6>C_a
+  }
+
+Lg494              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:45
+  reset=1920 type=magnet1m passes=1
+  corners=1.25852537435/1.25869766667/0.891861617201/0.891930773144/1.2585\
+  5420473/0.891823176691 params=0/0 float=y maxiter=30000 inside=0
+  colors=000BhD<8>8k1<12>5qi<14>JcmKbmMXh<10>mtrpwspws<57>kY4jX3jX3jX3<53>\
+  UAC<11>Vla<36>KYyJXzJXy<35>BgF
+  }
+
+Lg480              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 1:49
+  reset=1920 type=magnet1m passes=1
+  corners=1.25302398/1.21222398/-0.0271714034/0.0272285966/1.21222398/0.02\
+  72285966 params=0/0 float=y maxiter=10000 inside=0
+  colors=000CshBui<59>hKXiJWiJX<8>bCj<12>Jr0<8>5``000chs<17>TOnXVp<41>7BgA\
+  Dh<45>HQaIR`GNb<16>P4WLDZ<29>Crh
+  }
+
+Lg473              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:09
+  reset=1720 type=mandel passes=2
+  corners=-1.9999991175912699/-1.9999991175834575/-2.9271699585469118e-012\
+  /2.932205041453013e-012 params=0/0 float=y maxiter=30000
+  inside=bof60 outside=real symmetry=none
+  colors=000PWU<7>MfaMDKE8M63OUJL<12>qpnVLL<8>ozeSHJ<15>71AIWW7kiQHI<2>GJF\
+  QHL<3>DFXTIJ<10>TbRSdSUJK<13>nugTKK<9>MoVLDHC9F35CTIJ<14>`kATIL<15>dZyTI\
+  J<22>Ne4UHL<11>n8iSIIo7k<5>z2x<16>Pd_MgYMfZ<17>_DrRHJ<19>FHMSGERF8TIJ<9>\
+  QVT
+  }
+
+Lg471              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 3:42
+  reset=1920 type=magnet2m passes=1
+  corners=0.862790686822/0.862774548517/-1.44218295492/-1.44208515246/0.86\
+  2737931852/-1.44211261496 params=0/0 float=y maxiter=10000
+  fillcolor=0 outside=2 logmap=-5
+  colors=000rv7rLZ<3>NQnvNZ<6>XktlRVXK__ZUNfT000MVu<4>609<7>YPdQHWI9NvCWuA\
+  Wt8VuCJp36mCfa4rsUR<2>Zx9F`PxWNwhEvu4wJW<6>h6bkPR<2>6eCyJX<6>u6dnKYbK_RJ\
+  bxPV<6>mzIsKW<6>CQRuNW<5>VhRpHR<3>D24wPV<5>fxPsHamDhg9owTW<2>ovYaXUDiSs_\
+  fmoruQcqWklasuOZ<6>UqtkRQ<2>4n8tGW<3>`0_pQOgXGvKV<6>VKIxNW<6>klUqQR<3>Im\
+  5oPV<2>LeQyIZ<5>v1vmJV<2>EESuKU<6>ULAxPU<6>ozCtOR<3>Xc4yCMy3BwOW<6>ipVrO\
+  W<5>CpUlXZ_ibMvfvMY<3>iVgCfDqPY<5>0uoNu2oKW<4>1KUrMX<4>KWdyRIxZ3rOV<5>Cq\
+  Pzz0vbK
+  }
+
+Lg470              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:36
+  reset=1720 type=formula formulafile=fractint.frm
+  formulaname=LeeMandel2 passes=1
+  corners=-0.223855413/-0.211825338/0.05342191596/0.06244447235
+  params=0/0/0/0/0/0 float=y maxiter=20000 inside=bof60 outside=real
+  symmetry=none
+  colors=CCCasa<7>qsqsssssq<6>sscrrappZ<9>YZ5WX2TU4<6>69L<19>VA`XBaXBa<3>U\
+  DaUEaVG`<21>nrK<23>T9h<2>1we<13>sjX<2>glMC_s<8>CqsCssCsq<8>Cs_CsYECE<20>\
+  sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<10>_s_
+  }
+
+Lg439              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 4:46
+  reset=1920 type=magnet2m passes=t
+  corners=1.91928241/1.97336241/0.884498228/0.925058229 params=0/0
+  float=y maxiter=2000 inside=zmag outside=summ symmetry=none
+  colors=000TRs<7>WMsXLrXMp<17>ijHjlEjlF<4>jnOmNEmOFw0w400<13>w00004<14>w0\
+  4008<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0O<30>InBGpAGpC<17>5xu<\
+  53>SSs
+  }
+
+Lg431              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 0:57
+  reset=1920 type=mandel passes=1
+  corners=-0.2440793287592231/-0.2440793510388924/-0.755637394946017/-0.75\
+  5637429018706/-0.2440793203060771/-0.755637406021818 params=0/0
+  float=y maxiter=30000 logmap=yes
+  colors=000XlL<21>jx5jx5jw6<59>sHftGgsHgrIfqJe6fL<2>3eN<4>yka<50>21I00H00\
+  H<65>9Sl9SlATk<35>WkM
+  }
+
+Lg384              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 23:09
+                     ; "Betty Boop"
+  reset=1720 type=manfn+zsqrd function=sin passes=1
+  corners=-1.2895477633/-1.2902036353/-0.00042960337612/0.00044489262388/-\
+  1.2902036353/0.00044489262388 params=0/0 float=y maxiter=30000
+  inside=bof60
+  colors=000JegFhmAlsVVL<6>2cQU`PPgUJnZVLURCbM3lTST<2>BKrigKtvIOd`Dop<6>ZZ\
+  X<3>Cs2<5>fpk<4>4ja<7>SNr<4>odAZLMI1Y<7>Rr8<7>ZEO<6>99v<5>6oR<4>eyT<6>D_\
+  Y<2>WOb<5>XKz<4>cMy<5>8fK<5>zwd<7>jU5<6>Lw7<3>3iu5Tb7CK<6>CH_<4>VXsL0F<4\
+  >TKLlXloYpSVMLXNEZO`UK<5>oO8rN6wngZWN<5>TgddTJjSGqQDzlSbvmgUGpUBzV5cYL<3\
+  >wmMZRL<2>aFO_SN`QPbOSjQBvM1Z_G<2>Zr1aQL<4>t5MdUK<2>yXHgTLqRM`XO<4>mlcZR\
+  RYNXXJcVWP<6>1lrKZU4cbYWL<4>OgMVXQR_WNba
+  }
+
+Lg334              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 4:59
+  reset=1720 type=mandel passes=1
+  corners=-1.631243321412186/-1.6312433214112774/-3.2476597672856937e-013/\
+  3.2377998679142186e-013 params=0/0 float=y maxiter=30000
+  inside=bof60
+  colors=zz0MPs<12>NdyOfzOex<18>bEMcCJcCJ<14>pGNqHOpIO<7>cSPbUP_04<5>w0400\
+  8<14>w0800C<14>w0C00G<14>w0G00K<14>w0K00O<14>w0O00S<14>w0S00W<14>w0W00_<\
+  14>w0_00c<14>w0c00g<14>w0g00k<4>K0k<18>MOs
+  }
+
+Lg323              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 3:22
+  reset=1720 type=mandel passes=1
+  corners=-1.88480548082711/-1.88480546782711/4.334548162873573e-005/4.335\
+  52316287342e-005 params=0/0 float=y maxiter=30000 inside=bof60
+  colors=000NO`MP_<11>`acbbdccdeeeede<12>YSgXRhWSg<5>TVbTVaVXb<13>zzz<13>Z\
+  NrXKqWKq<32>2BX2BX3CX<61>yidzjeyje<38>M9_K8ZK8Z<24>NBOWQUee`<9>RVWQOd<5>\
+  NOa
+  }
+
+Lg293              { ; (c)Mark Fountain
+                     ; CompuServe 74023,221
+                     ; 12:51
+  reset=1720 type=mandel passes=1
+  corners=-0.7024343717222/-0.7024250332887/-0.3502919628751/-0.3502849590\
+  499 params=0/0 float=y maxiter=32767 inside=bof60 logmap=-5
+  finattract=y
+  colors=000PWT<3>UYkWZpVZn<17>8mEql9<13>894<10>2ah1dl1ek<19>BzK<8>sAt<9>t\
+  nH<9>sEC<4>A2R<9>hZx<22>28`gh1<8>V_NTYQTYQ<17>cMD_EWV5n<2>TSQ<15>AEkEEFD\
+  FEEFEEFGFFGEGFGFHFGHGGHHGGHGIHHFHHHIHHIHJIIGIIIJIIJIKJJHJJJJJLKJLKKIKKKK\
+  KMKLJMKLLLLLLNLMKNLMMMMMMOMNLOMNNNNNNPNOMNOO8Iu<2>c5R<17>OULNWKOWO
+  }
+

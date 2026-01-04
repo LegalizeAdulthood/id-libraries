@@ -1,0 +1,608 @@
+; this .PAR file (c)opyright 1994, Paul Derbyshire
+; Most entries take <30 min on a slow 386
+; Freely distributable. Try to keep some credit to moi though :) Enjoy!
+
+JuliaAcc           { ; J-set from accumulation point: TipoWhy
+                     ; Try color cycling!
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.1093314951383/0.894944851574297 maxiter=32767 inside=0
+  logmap=yes
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+JuliaAccx          { ; JuliaAcc zoom 1
+                     ; Try color cycling!
+  reset type=julia corners=-0.488/0.488/-0.366/0.366
+  params=-0.1093314951383/0.894944851574297 maxiter=32767 inside=0
+  logmap=yes
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+JuliaAccxa         { ; JuliaAcc zoom 2
+                     ; Try color cycling!
+  reset type=julia corners=-0.066368/0.066368/-0.0497756/0.049776
+  params=-0.1093314951383/0.894944851574297 maxiter=32767 inside=0
+  logmap=yes
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+JuliaAccxaz        { ; JuliaAcc zoom 3
+                     ; Try color cycling!
+  reset type=julia corners=-0.0090264/0.0090261/-0.0067696/0.0067697
+  params=-0.1093314951383/0.894944851574297 maxiter=32767 inside=0
+  logmap=yes
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+JuliaAccxazf       { ; JuliaAcc zoom 4
+                     ; Try color cycling!
+  reset type=julia corners=-0.00122772/0.0012279/-0.00092027/0.00092068
+  params=-0.1093314951383/0.894944851574297 maxiter=32767 inside=0
+  logmap=yes
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+Tipofilament       { ; Near the 3-MM. Press TAB for a surprise!
+                     ; Try color-cycling!
+  reset type=mandel
+  corners=-1.740062382657377/-1.740062382499301/0.028175339714163/0.0281753398\
+  3271 float=y
+  colors=0000`M<12>0a20b02b0<25>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<9>62`
+  }
+
+Tipofilament2      { ; Near the 3-MM. Press TAB for a surprise!
+                     ; Try color-cycling!
+  reset type=mandel
+  corners=-1.740062382580122/-1.740062382578525/0.0281753397785713/0.028175339\
+  77978497 float=y
+  colors=0000`M<12>0a20b02b0<25>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<9>62`
+  }
+
+Luminescent        { ; Guess where this is? Zoom out & find out!
+                     ; Try color-cycling!
+  reset type=mandel corners=-1.22331151/-1.2224513/0.316675831/0.317320719
+  colors=00092o<28>112000000<30>PULPULOUL<38>0`c0000``<22>0a20b02b0<18>hs0
+  }
+
+Shiny_Julia        { ; A branch-tip Julia from Why-zone.
+                     ; Try color-cycling!
+  reset type=julia corners=-1.568/1.568/-1.175983/1.176 params=0/1
+  maxiter=1000 bailout=64 decomp=256
+  colors=000734<6>000000100<60>vISwJTwJTwKU<61>zzzzzzzyy<59>xLVxKUwJTvJT<53>83\
+  4
+  }
+
+Conch              { ; A shell. Actually, a 256-decomped seahorse tail.
+                     ; Try color-cycling!
+  reset type=mandel
+  co               ; Try color-cycling!
+  reset type=mandel corners=0.34706508/0.35706466/0.57696781/0.58446771
+  maxiter=1000
+  colors=000000<37>xxQzzRzyR<45>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVcycling!
+  reset type=mandel
+   colors=000000<37>xxQzzRzyR<45>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w\
+  00<31>000
+  }
+
+Fourfuzz           { ; Crackofour zoom: weird thing on a filament.
+                     ; Try color-cycling!
+  reset type=mandel corners=0.34996674/0.349992041/0.581063187/0.581082154
+  maxiter=2000 logmap=yes
+  colors=000000<37>xxQzzRzyR<45>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w\
+  00<31>000
+  }
+
+Fourfuzzoom.Swirl  { ; Crackofour zoom: weird thing on a filament.
+                     ; Try color-cycling!
+  reset type=mandel
+  corners=0.349971678/0.349985072/0.581068465/0.581078507 maxiter=2000
+  logmap=yes
+  colors=000000<37>xxQzzRzyR<45>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w\
+  00<31>000
+  }
+
+Fourfuzzoom_R      { ; Different colors.
+                     ; Try color-cycling!
+  reset type=mandel
+  corners=0.349971678/0.349985072/0.581068465/0.581078507 maxiter=2000
+  logmap=yes
+  colors=000toU<36>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w00<30>2000000\
+  00<37>xxQzzRzyR<7>uqU
+  }
+
+Fourfuzzoom2       { ; Zoomed more.
+                     ; Try color-cycling!
+  reset type=mandel
+  corners=0.34997763825/0.34997897765/0.58107308449/0.58107408869 float=y
+  maxiter=2000 logmap=yes
+  colors=000toU<36>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w00<30>2000000\
+  00<37>xxQzzRzyR<7>uqU
+  }
+
+FourfuzzJulia      { ; A J-set from the middle of Fourfuzzoom2
+                    ; Try color-cycling!
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.349978307946191/0.581073586587652 maxiter=2000 logmap=yes
+  colors=000toU<36>YCeXAfXAf<45>5WQ4XP5XP<45>xWLzVKzVK<35>z00y00w00<30>2000000\
+  00<37>xling!
+  reset type=julia corners=-0.128/0.128/-0.096001/0.096
+  params=0.349978307946191/0.581073586587652 maxiter=2000 logmap=yes
+  colors=000o00<26>200000000<37>xxQzzRzyR<13>qjWpiWpiW<48>8pZ7q_7p_<48>1210000\
+  01<32>UUz<30>t12u00s00q00
+  }
+
+FourfuzzJ_Zoom2    { ; A J-set from the middle of Fourfuzzoom2
+                     ; Try color-cycling!
+  reset type=julia corners=-0.026624/0.0266243/-0.0199685/0.0199678
+  params=0.349978307946191/0.581073586587652 maxiter=2000 logmap=yes
+  colors=000442<34>xxQzzRzyR<13>qjWpiWpiW<48>8pZ7q_7p_<48>121000001<32>UUz<30>\
+  t12u00s00<28>200000000110331
+  }
+
+FourfuzzJ_Zoom3    { ; A J-set from the middle of Fourfuzzoom2
+                     ; Try color-cycling!
+  reset type=julia corners=-0.00457921/0.00457951/-0.00343536/0.00343415
+  params=0.349978307946191/0.581073586587652 maxiter=2000 logmap=yes
+  colors=000qjW<5>liWkiWjjW<42>8pZ7q_7p_<48>121000001<32>UUz<30>t12u00s00<28>2\
+  00000000<37>xxQzzRzyR<12>rkV
+  }
+
+FourfuzzJ_Zoom4    { ; A J-set from the middle of Fourfuzzoom2
+                     ; Try color-cyR<12>rkV
+  }
+
+Swizzle-Brot       { ; A Julia set from near a 3-spiral on the 3-MM.
+                     ; Try color-cycling!
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-1.758663325/0.01207275875 maxiter=2000
+  colors=000qv0<2>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<29>112000000<30>PULPULOU\
+  L<38>0`c0rners=-0.172/0.171999/-0.129/0.129
+  params=-1.758663325/0.01207275875 maxiter=2000 logmap=yes
+  colors=000eUM<35>D2nC1oB1pA1q92r<30>112000000<30>PULPULOUL<39>0`c0``<22>0a20\
+  b02b0<25>wy0zz0zy0<29>z20z01z01<21>f0L
+  }
+
+Fluorescent_Spiral { ; Part of the M-set, near S407969/0.20157959
+  maxiter=3000 inside=0
+  colors=000o00<26>200000000<37>xxQzzRzyR<13>qjWpiWpiW<48>8pZ7q_7p_<48>1210000\
+  01<32>UUz<30>t12u00s00q00
+  }
+
+Fluorobrot         { ; Zoom of Fluorescent Spiral; a minibrot.
+                     ; Try coloWpiW<48>8pZ7q_7p_<48>1210000\
+  01<32>UUz<30>t12u00s00q00
+  }
+
+FluoroJ            { ; Julia from Fluoro-minibrot.
+                     ; Try color-cycling!
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.814812836000XlX<26>8pZ7q_7p_<48>121000001<32>UUz<30>t12u00s00<28>200000000<37>\
+  xxQzzRzyR<13>qjWpiWpiW<20>YlX
+  }
+
+FluoroJ_Zoom2      { ; Julia from Fluoro-minibrot.
+                     ; Try color-cycling!
+  reset type=julia corners=-0.012800         ; Try color-cycling!
+  reset type=julia corners=-0.0128004/0.012799/-0.0096007/0.0095998
+  params=-0.814802836/0.1977031225 maxiter=3000 inside=0
+  colors=0007z0<3>2z00z00z0<61>01y00z10y<41>l14n22n44o77o99<94>yy1zz0yz0<40>8z\
+  0
+  }
+
+FluoroJ_Perturb2   { ; Julia from Fluoro-minibrot, c perturbed, not as mu.0096007/0.0095998
+  params=-0.814837836/0.1977131225 maxiter=3000 inside=0 logmap=yes
+  colors=000zzX<31>zz1zz0zy0yx0<58>G2JF0KF0K<4>F0LG0LG0LG0MG0MH0M<52>T0bU0cU0c\
+  V1cV2d<60>zzzzzzzzy<27>zzY
+  }
+
+FluoroJ_Perturb4   { ; Julia from Fluoro-minibrot, c perturbed differently.
+                     ; Try color-cycling!
+  reset type=julia co00z10\
+  <29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<24>z50
+  }
+
+Edgeo5             { ; Edge of a five bud Julia. Five bud of a 2-bud.
+                     ; Try color-cycling!
+  reset type=julia passes=0`c0``<22>0a20b02b0<25>wy0zz0zy0<2\
+  9>z20z01z01<21>f0LeUM<35>D2nC1oB1pA1q92r<24>21D
+  }
+
+Fuzzsnake          { ; A colorful view of snakezone.
+                     ; Try color cycling!
+  reset type=mand
+  10S0<36>0zY<3>6md
+  }
+
+Fourzone           { ; Queer colors, eh?
+                     ; Try color cycling!
+  reset type=mandel corners=0.272207/0.479982/-0.707135/-0.551303
+  colors=000aCJ<38>111000000000<59>Xe0Yf0Yf1Yf2<44>eRsfQufQu<45>xdkyejyd000000<60>Xe0Yf0Yf1Yf2<44>eRsfQufQu<45>xdkyejydi<29>xLVxKUwJTvJT<61>0\
+  00
+  }
+
+3iFilament         { ; 3horse zoom: a filament near a spiral.
+                     ; Try color cycling!
+  reset type=mandel
+  corners=-1.76937325/-1.76902797/0mandel
+  corners=-1.76920232/-1.76916809/0.0035514422/0.0035771038 maxiter=2000
+  logmap=yes
+  colors=000000<60>Xe0Yf0Yf1Yf2<44>eRsfQufQu<45>xdkyejydi<29>xLVxKUwJTvJT<61>0\
+  00
+  }
+
+3iiDiamond         { ; In every Horsite, you'll find  { ; A J-set from the diamond's middle.
+                     ; Try color cycling!
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-1.76918574237799/0.00356570445146083 maxiter=2000 logmap=yes
+  colors=0000146083 maxiter=2000 logmap=yes
+  colors=0000IG<14>0O10P00P01P0<68>ybCzcDzcDzcE<52>zzqzzqyyq<61>00z00z00y<44>0\
+  IH
+  }
+
+3iiJset3           { ; The center of the Julia contains a diamond.
+                     ; Try color cycling!
+  reset type=julia corners=-0.0100004/0.0100002/-0.0075/0.0074998
+  params=-1.76918574237799/0.00356570445146083 maxiter=2000 logmap=yes
+  colors=0000IG<14>0O10P00P01P0<68>ybCzcDzcDzcE<52>zzqzzqyyq<61>00z00z00y<44>0\
+  IH
+  }
+
+Fuzzy3             { ; Part of the 0000IG<14>0O10P00P01P0<68>ybCzcDzcDzcE<52>zzqzzqyyq<61>00z00z00y<44>0\
+  IH
+  }
+
+Fuzzyglow          { ; Fuzzy3 zoom 2rs=000fxH<48>JnlImmImmIlm<61>kIwkIwkIv<60>zHJzHJzIJ<61>lz8lz8lz9<10>fxG
+  }
+
+FuzzyhJulia        { ; Fuzzy3 zone Julia.
+                     ; Try color cycling!
+  reset typems=-1.77643040045681/0.00319915171843905 maxiter=2000 logmap=yes
+  colors=000xPH<51>lz8lz8lz9<60>JnlImmImmIlm<61>kIwkIwkIv<60>zHJzHJzIJ<8>xOI
+  }
+
+FuzzyJ2            { ; Fuzzy julia zoom 1
+                     ; Try color cycling!
+  res5 maxiter=2000 logmap=yes
+  colors=000xPH<51>lz8lz8lz9<60>JnlImmImmIlm<61>kIwkIwkIv<60>zHJzHJzIJ<8>xOI
+  }
+
+FuzzyJ5.Starburst! { ; Fuzzy julia zoom 4
+                     ; Try color cycling!
+  reset type=julia corners=-0.00167407/0.  corners=-1.37370912/-1.37284891/-0.08617818/-0.085533291 maxiter=2000
+  logmap=yes
+  colors=000X9M<17>Y1PY1PZ2Q<32>j8Yj8YkAX<18>taMtbMraO<30>FFwDFxCEyBEzCDx<29>Q\
+  BC<4>CEk<12>NAd000OAc<16>`6V<4>REbPFdNHfLJhJKjGMk<7>0Zz<12>ISJKRFKQF<20>VJIV\
+  JIVIIVIIVHI<17>W9L
+  }
+
+Zone:weird_4       { ; Thers=000Y4O<5>Y1PY1PZ2Q<32>j8Yj8YkAX<18>taMtbMraO<30>FFwDFxCEyBEzCDx<29>QB\
+  C<4>CEk<12>NAd000OAc<16>`6V<4>REbPFdNHfLJhJKjGMk<7>0Zz<12>ISJKRFKQF<20>VJIVJ\
+  IVIIVIIVHI<29>X4O
+  }
+
+Zone:weird_Julia1  { ; J-set from the minibrot.
+                     ; Try color cycling
+  reset type=julico0lor cycling!
+  reset type=mandel passes=b
+  corners=-1.268043/-1.2408437/0.3739402/0.3943401
+  colors=000000<30>zKU<30>211000000<14>0000100303739402/0.3943401
+  colors=000211000<15>000010030<29>0z0<30>020000000<14>000110330<29>zz0<19>OO0
+  }
+
+Starplants         { ; Weird stuff near a minibrot.
+                     ; Try color creset type=julia corners=-0.0127999/0.0127995/-0.0096008/0.0095997
+  params=0.265335394106394/0.488703024001671 maxiter=5123 logmap=yes
+  colors=000000iOS<38>zf0zf0ye0<66>110000010<54>HxbIzcIzc<56>XBkXBkXBj<26>hOS
+  cyclerange=2/255
+  }
+
+test >ZZJ<4>TMESKEOJNKJVHJcDJk8It<5>IKn
+  }
+
+curlzone           { ; Back crack of 3-mini-mandelbrot.
+                     ; Try color-cycling
+  reset type=mandel
+  corners=-1.7498369/-1.74933685/-0.000187466/0.000187417 maxiter=5000
+  logmap=yes
+  coloing
+  reset type=mandel passes=b
+  corners=-1.268043/-1.2408437/0.3739402/0.3943401 maxiter=1500
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>000110\
+  330<29>zz0<30>220000000<29>000
+  }
+
+scept1      eUkiSq<10>mbsmUsnds<18>wwwajr<13>YssYssYrs<44>RBeQAdQAdQAd<10>TD`TD`TD_UE\
+  Z<11>WHVXHVXIUYIT<14>`MO`MOaNNaON<33>SwmRynRyn<11>QwkQwjQvjPviPvi<7>OtfOtfOs\
+  fOsfOse<19>Lo`
+  }
+
+Firebud            { ; T8>tO8<11>Y5B<13>b62b62aE7<6>Wzb<16>z00<14>v00CRf<2>4Ir9NnERj
+  }
+
+Bifurweird         { ; Logistic equation zoom.
+                     ; Try color cycling!
+  reset type=bifurcation corners=2.7351823/2.7472789/0.6329938/0.7070065
+  params=1/0.66 maxiter=1500
+  colors=000vIT<14>zHJzHJzIJ<61>lz8lz8lz9<60>JnlImmImmIlm<61>kIwkIwkIv<44>vIU
+  }
+
+Icybifur           { ; Logistic equation.
+                     ; Try color cycling!
+  rol         { ; Chaos!
+                     ; Try color cycling!
+  reset type=kamtorus corners=-1.0/0.999451/-0.748962/0.75
+  params=1.3/0.05/1.5/1500 maxiter=32767
+  colors=           ; Try color cycling!
+  reset type=kamtorus corners=-1.0/0.999451/-0.748962/0.75
+  params=1.3/0.06/2/1500 maxiter=32767
+  colors=000pVT<4>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md0007jf<10>OAzTHzZPzcWz<6>\
+  zSZ<29>zV2zW0zV0<29>4
+  }
+
+Tissue_Sample      { ; Looks like something under a doctor's microscope.
+                     ; Try color cycling!
+  reset type=kamtorus corners=0.215652/0.557022/0.561676/0.817596
+  params=1.3/0.01/4/5000 maxiter=32767
+  colors=000zz6<144>tIRsHSsHSrHSrHS<102>0KzYe3Ye4
+  }
+
+Fireball           { ; Looks pretty hot.
+               1/3.072159
+  params=2/0.05/15/1000 maxiter=32767
+  colors=000i8Yj8Yj8Yj8Y<20>tbM<5>kYUjYViXWhWXfVY<21>FFwDFxCEyBEzCDx<29>QBC<4>\
+  CEk<12>NAd000OAc<16>`6V<4>REbPFdNHfLJhJKjGMk<7>0Zz<1000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
+  }
+
+Stalagzone         { ; Really odd 3-D KamTorus.
+                     ; Try color cycling!
+  rese.225501/0.375501
+  maxiter=1000
+  colors=000sQW<7>tIQtIQsKR<39>ewmexmdwn<84>DhqDhqEip<58>sn`Kp0<29>8Nn8No9Op<2\
+  2>JPq
+  }
+
+Molten_Julia_Set   { ; The decomp combined with the colors is cool.
+               40 decomp=256
+  colors=UmhRlgTnf<55>pWZpWZoV_<97>G0_G0_H2`<34>SmuSnuTmt<55>`ZX000kkk
+  cyclerange=2/255
+  }
+
+ShinyBrot          { ; 256-decomped full-brot ima the tip of the spike.
+                     ; Try color cycling
+  reset type=mandel corners=-1.91601174/-1.90601216/-0.00375003/0.00374987
+  maxiter=2000 logmap=old
+  colors=000K0f<29>U0zU0zU0y<78>z0Jz0Jy0J<76>000000001<61>K0e
+t from spike, with continuous potential.
+                     ; DEFINITELY try color cycling!
+  reset type=julia corners=-2.0/1.999997/-1.499996/1.5
+  params=-1.431175585/1.             ; Try color cycling: hit - and then type 3.
+  reset type=julia corners=-2.0/1.999997/-1.499996/1.5 params=0.11/0.66
+  maxiter=1500 potential=255/1000/127
+  colors=000000000<62>vISwJTwJTwKU<61>zzzzzzzyy<59>xLVxf10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<61>a0t
+  }
+
+Flowering          {
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.5137673885/-0.5176127795 maxiter=500 logmap=yes
+  colors=>zzz7mP3nR
+  }
+
+Corona             { ;  
+                     ;  
+  reset type=mandel corners=-2.5/1.5/-1.5/1.5 maxiter=3000 inside=0
+  logmap=yes
+  colors=000<109>WXyXYzXYzXYz<44>aimbjl`ll_nlYqm<9>mShoPgoPg<12>rTZsUYrVX<10>d\
+  mFboDcoG<2>fnP<47>zzz7mP3Dizzzoom           { ;  
+                     ;  
+  reset type=julia corners=-0.1/0.1/-0.075/0.075
+  params=-0.2100682295/-0.824466486 maxiter=3000 inside=0 logmap=yes
+  colors=0KzdHJ<13>bBPbBPbCP<49>amE`nD`nD`nD<77>cMAcMAbMB<30>LK`KKaKKaKKa<68>0\
+  Kz_Ae`Ad
+  }
+
+Megavoltz          { ;  
+                     ;  
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.16751538034043/1.04130123324709 maxiter=3000 inside=0
+  logmap=yes
+  colors=000FET<2>EES8>DIgAJiAJh<22>UC3VB1UC3<14>FdfDfiDdi<5>BNcAKbBEgC8mD2s<3>d6m<21>haz<10>A\
+  wm<18>8VX<9>cHY
+  }
+
+Megazzcenter       { ;  
+                     ;  
+  reset type=julia corners=-0.0200004mp=yes
+  colors=zzzFET<2>EESEESFES<16>_KdDFV<43>iQli reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=-0.167494858871476/1.04129505994976 maxiter=1000 inside=0
+  colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  ta1s<29>s`OtbMs
+
+
+Inside-out         { ; The M-set inverted about a seahorse tail.
+  reset=1821 type=mandel corners=-2.836449/1.836448/-1.071201/2.433472
+  maxiter=5000 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
+  8q1
+  }
+
+Inside-out_zoom1   { ; A mandelblob becomes visible
+  reset=1821 type=mandel corners=-1.490654/0.490654/-0.3397017/1.14628
+  maxiter=5000 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000sNW<21>wM_wM_wN_<177>`q__r`_q`<13>jWjkUkjUj<24>Ao28p08p0<5>\
+  8q1
+  }
+
+Inside-out_zoom2   { ; Mandelblob close-up
+  reset=1821 type=mandel
+  corners=-1.0068282/-0.16675352/-0.19454689/0.4355092 maxiter=5000
+  logmap=yes invert=0.001/-0.745816/0.105092
+  colors=000000EmE<101>EfnEfnEfnEfnEfn<41>DdnCcoD`m<4>MMbOI_OI_<82>OnoPopN\
+  kl<8>07D6W46X4
+  }
+
+Inside-out_zoom3   { ; A bud on Mandelblob.
+                     ; Equiv. to the big front bud, somewhat rotated
+  reset=1821 type=mandel passes=t
+  corners=-0.83462238/-0.69012953/0.041052012/0.14942166 maxiter=1000
+  inside=255 logmap=yes invert=0.001/-0.745816/0.105092
+  colors=AAA6HH<7>0GF0GF1HG<74>8KX9LY9LYALZALZ<25>LNhLNhLNhLOiLOi<14>JUsJU\
+  sLVt<34>tuwuuwttv<66>UGVUGVTHW<10>SOc000 cyclerange=1/254
+  }
+
+Inside-out_zoom4   { ; Note the 'dent' in the right-hand superbud.
+                     ;  
+  reset=1821 type=mandel
+  corners=-0.7496431756/-0.7434334509/0.103067074/0.107724368
+  maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
+  colors=000<126>zz0000<126>0wc
+  }
+
+Inside-out_zoom5   { ; The 'dent' is actually the M-set back crack!
+                     ;  
+  reset=1821 type=mandel
+  corners=-0.7453780818/-0.7443100091/0.1046219882/0.10542304276
+  maxiter=200 inside=0 invert=0.001/-0.745816/0.105092
+  colors=000074<111>0wc000<125>zz0000<13>064
+  }
+
+Reef               { ; Mandelbrot zoom
+                     ; 3 minutes on a 386/25
+                     ; Try color cycling
+  reset=1821 type=mandel
+  corners=-0.43181238/-0.26781131/0.56955203/0.69255172 maxiter=1000
+  inside=0
+  colors=000z00<60>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<61>z00
+  }
+
+Firewhirl          { ; Julia set
+                     ; 2 min.
+                     ; Try color cycling
+  reset=1821 type=julia corners=-2/2/-1.5/1.5
+  params=-0.36407727189362049/0.60117465071380138 maxiter=10000
+  inside=0 logmap=yes
+  colors=000k6d<19>d9xcAzcAz<61>yyzzzzzzzzzy<60>zz1zz0zz0zy0<60>z10z00z00z\
+  01<38>l6c
+  }
+
+Coral              { ; Julia set
+                     ; 17 min.
+                     ; Try color cycling
+  reset=1821 type=julia corners=-1.28/1.28/-0.96/0.96
+  params=-0.36407727189362049/0.60117465071380138 maxiter=10000
+  inside=0 logmap=yes invert=0.05/0/0
+  colors=000JUt<39>JUsJUsJUsIUrIUrIUr<44>BWcBWcCVd<44>X8rX8rY9s<20>cJxcJxb\
+  Kv<35>aR6aR5bS6<22>jbLjbLkaK<28>pJF
+  }
+
+Fuzzybrot          { ; Mini Mandelbrot
+  reset=1821 type=mandel
+  corners=-1.865951/-1.85595142/-0.00375002995/0.00374986976 inside=0
+  colors=0002HK<41>E2CF1BF1BG1BH1B<14>T3GU4HU4HU4H<50>kLS<10>iuA<20>TYlSWn\
+  SWn<62>2v22v23v2<23>Qq7Rp8Rp8Rp9<12>QnH
+  }
+
+Floating           { ; Julia set
+  reset=1821 type=julia
+  corners=-0.10000014/0.10000029/-0.075000249/0.074999977
+  params=-1.8609448801726103/0.00051378458738327026 maxiter=10000
+  inside=0 logmap=yes
+  colors=000nRQ<19>gQigQifRj<30>DrxDrxEqy<45>ZDyZDyYEx<33>Vhk<27>8ER8DR9CQ\
+  <32>J1CJ1CK2D<10>T3GU4HU4HU4H<37>fGP
+  }
+
+Coastline          { ; A coastline with offshore islands and whirlpools...
+                     ; Mandelbrot closeup, three minutes on a 386/25
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=-0.834526641/-0.790495174/-0.209159218/-0.177246151
+  maxiter=2000 logmap=yes
+  colors=0000K00Zc<108>0Ac0Ac0Bc<78>KmKKmKKlK<60>0K0
+  }
+
+Island             { ; An offshore island
+       { ; A mini Mandelbrot
+                     ; Mandelbrot, zoom of Coastline, 15 min on 325
+                     ; Try color cycling!
+  reset=1821 type=mayclerange=2/255
+  }
+
+Bullseye!          { ; Julia set with interior coloring
+                     ; Try color cycling!
+                     ; 15 min on 325
+  reset=1821 type=julia corners=-2/2/-1.5/1.5
+  params=-0.46496263891458511/0.53840357251465321 maxiter=2000
+  inside=127 outside=0 finattract=y periodicity=0
+  colors=000OEL<40>h97h97iA8<74>jkkjlllmk<94>SelSelSdk<36>OEL
+  }
+
+Wavie              { ; Waves along a shore...
+                     ; Mandelbrot image
+                     ; Color cycle it!
+  reset=1821 type=mandel                   ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285614885/0.286475096/0.0112969242/0.0119418129
+  maxiter=10000 inside=0 logmap=yes
+  colors=000dGT<18>uGR<9>gNX000<93>A4EA4EB5FC5F<25>Z2FZ2F`3G<24>y4cz4cy4b<\
+  9>t4_s4_s4_s4_s4Zs4Z<56>z00
+  }
+
+Firestar           { ; 7 min.
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285654873/0.285729285/0.0114007536/0.0114565399
+  maxiter=10000 inside=0 logmap=yes
+  colors=000zz0<55>k5N<52>Kw2Kx2Ly3<28>UyGUyGVyHWyI<21>xyxzzzzzz<86>zz0
+  }
+
+LaceCradle         { ; A lace pattern holding a mini Mandelbrot
+                     ; Mandelbrot image, zoom of Vineleaf    17 min.
+                     ; Try color cycling!
+  reset=1821 type=mandel
+  corners=0.285685636/0.285690101/0.0114355236/0.0114388708
+  maxiter=20000 inside=0 logmap=yes
+  colors=00000z<40>xTFzUDzUD<35>VUTUUUUUUUUU<38>SGURFVRGV<23>bvjcxkcxk<36>\
+  Q_fQZfPYePYdPYcOYb<62>00z
+  }
+
+Flower             { ; Mandelbrot image
+  reset type=mandel corners=-0.48376281/-0.47975345/0.61292032/0.61593054
+  maxiter=3000
+  colors=000aYV<20>eRsfQufQu<45>xdkyejydi<29>xLVxKUwJTvJT<60>111000000000<59>X\
+  e0Yf0Yf1Yf2<22>aZU
+  }
+
+s1z1Minibrot       { ; A large mini Mandelbrot
+                     ; color cycle!
+  reset type=mandel corners=-0.1808746/-0.1343577/1.0147586/1.0496752
+  maxiter=3000
+  colors=000mkd<27>yfOzeNzeNzdN<63>z1bz0cz0cy0c<64>00k01k12k<49>WoyXqzXqzXqyYq\
+  y000Yqx<32>lkd
+  }
+
+s1z2Cloudwhorl     { ; Near minibrot rear, on filamet
+                     ; color cycle!
+  reset type=mandel
+  corners=-0.154435266/-0.154411454/1.03084887/1.03086672 maxiter=3000
+  colors=000q00<19>c00b11a11`22_22<23>G9>iDKwNh<91>iDKdLS<15>fJQmZQ<76>fQx
+  }
+
+Spikabrot          { ; A tiny brot on the front spike, near the tip.
+                     ; Try color-cycling!
+  reset type=mandel corners=-1.9422713/-1.93983205/-0.00091488/0.0009149zzzzz<4>v\
+  vy
+  }
+
+Fourbrot           { ; A mini Mandelbrot on a 4-elephant.
+                     ; Try color-cycling!
+  reset type=mandel corners=0.34706508/0.35706466/0.57696781/0.58446771
+  maxiter=1000 colors=@st      ; Try color-cycling!
+  reset type=mandel corners=-1.8003769/-1.7227764/-0.0290996/0.0290999
+  colors=0000aA<4>0a20b02b0<25>wy0zz0zy0<29>z20z01z01<61>A1q92r92q<17>41N
+  }
+

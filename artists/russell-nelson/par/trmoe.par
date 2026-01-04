@@ -1,0 +1,437 @@
+trm-01           { ; improved with work
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-1
+  passes=t center-mag=0.000621378/-0.00841367/3.664488 fillcolor=215
+  inside=bof61 invert=-1/0/0 decomp=256 biomorph=125 rseed=-7606
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vu\
+  K<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-02          { ; gold and silver on silk
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=flip/cotanh passes=t
+  center-mag=0.0464627/-0.0158471/0.2660247/1/-90 params=-0.025/-3
+  float=y inside=bof60 outside=summ invert=-3/0/0 decomp=256
+  biomorph=12 rseed=17362
+  colors=rrz<5>rryrryrryrrxrqxrqx<95>kbR00K0rxzU5<102>xdCxdCwcC<37>hN70000\
+  00
+  }
+
+trm-03             { ; spiral galaxy
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/asinh
+  center-mag=+0.83419979438631110/+1.50486354241229100/7376.728/1/90
+  params=3.025/1.036 float=y maxiter=300
+  colors=000H00<7>`00c00d44<13>zzz<3>snNukDsh3qe0<2>kX0aU0<9>I00<8>0003000\
+  00003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupwx\
+  vyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0C<4>B\
+  02900700500005<13>00c<15>zzz<2>tpvrmtrjs<10>bEc`BaY8Z<2>R0S<10>000<15>0c\
+  c<15>zzz<15>0c0<14>030000200<4>F00
+  }
+
+trm-04             { ; now we're having fun
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=recip/cosxx passes=t
+  center-mag=9.34009/0.433785/0.2054009/1/90 params=3.025/1.036
+  float=y maxiter=300 fillcolor=25 inside=bof60 outside=real
+  colors=000H00<7>`00c00d44<13>zzz<3>snNukDsh3qe0<2>kX0aU0<9>I00<8>0003000\
+  00003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupwx\
+  vyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0C<4>B\
+  02900700500005<13>00c<15>zzz<2>tpvrmtrjs<10>bEc`BaY8Z<2>R0S<10>000<15>0c\
+  c<15>zzz<15>0c0<14>030000200<4>F00
+  }
+
+trm-05             { ; Siamese Twins
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/recip center-mag=-6.22278/-0.027098/0.6170212
+  params=3.14159265358979/-0.314159265358979 float=y maxiter=3125
+  fillcolor=25 inside=bof60 outside=real
+  colors=0000MZ<30>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vuK<27>I21G00G00F0\
+  000F006<3>00200000000F<56>0We0Xe0Xf0Xf<14>0M_
+  }
+
+trm-06             { ; Propeller
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/sqr center-mag=0.178215/-0.0694249/0.1972913/1/90
+  params=3.14159265358979/-2.71828182845905 float=y maxiter=3125
+  fillcolor=1 inside=bof60 outside=real invert=5/0/0 decomp=256
+  biomorph=0 rseed=-7606
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vu\
+  K<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-07             { ; color cycle fun
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-5
+  passes=b center-mag=0/-2.84217e-014/0.04167969 params=125/-3
+  maxiter=250 fillcolor=110 invert=1/0/0 decomp=256 biomorph=75
+  rseed=-7606
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z00zF<2>0zy<2>0GyVVy<3>z\
+  Vyzz0<12>cU00U6<2>0w0B0`<12>zzg<9>00E00J00R<2>01R01R02R03R<15>0ER0EQ0DP<\
+  14>04A04A04B<2>14Czj0<8>zu0zw0zx0zz0zz0<25>zj0B8`<19>GAl<2>00E0F0<12>0m0\
+  <14>0F0BGCBGE00E<4>00l<3>00E000000
+  }
+
+trm-08          {; radiation
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-6
+  center-mag=0.0421257/0.129766/0.2246605 float=y maxiter=1500
+  inside=bof61 outside=imag decomp=128
+  colors=000H00<7>`00c00d43<13>zzy<3>snMukCsh2qe0<2>kX0aU0<9>I00<8>0003000\
+  00002004<5>D0JF0LJ0O<3>Q0YS0_U2bW4c<2>aGgcKheMjgOliWnkYombpoerqjtsouupvx\
+  vxzzyyvwwptvorujpsenqblpYjoWhmOfkMdiKb<2>f8Xd4Vc2T`0R<4>R0HP0FN0FL0B<4>B\
+  01900700500004<13>00b<15>zzy<2>tpurmsrjr<10>bEb`B`Y8Y<2>R0R<10>000021<14\
+  >0cb<15>zzy<15>0c0<14>030000200<4>F00
+  }
+
+trm-09             { ; crochet
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/recip passes=b
+  center-mag=-6.26648/0.0809201/0.3224181/1/90 params=125/-3 float=y
+  fillcolor=115 inside=bof61 decomp=256 biomorph=125 rseed=-7606
+  colors=00008O<2>0CQ0DR2ES<13>eee<13>eeeeeedcc<10>TFFSDDP00<3>SSS<3>P0000\
+  P<7>PPP<6>00Pww0<8>KK0A00<7>c00b``<4>eee<13>AAR88Q55O22M00KRSf<4>YZf__f`\
+  `eaaebceddeeee<6>MPbJMaHK`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>\
+  ZhZA00<23>dddfffedd<18>A0003K<22>__c<12>00K<5>07N
+  }
+
+trm-10             { ; twins on silk
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/recip center-mag=-12.5376/-0.0465821/0.6484826
+  params=3.14159265358979/-1 float=y fillcolor=215 inside=bof60
+  decomp=256 biomorph=125 rseed=-7606
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vu\
+  K<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-11             { ; elegant
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-4
+  center-mag=0.171673/6.66134e-016/1.008976/-1/270 float=y maxiter=250
+  fillcolor=35 inside=bof60 outside=mult decomp=128 biomorph=75
+  rseed=-7606
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-12          { ; nice colors
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-7
+  function=sinh/cosxx passes=t
+  center-mag=0.00421243/-0.00232331/0.6465504
+  params=0.000258/2.71828182845905 float=y maxiter=45000 fillcolor=1
+  inside=bof60 outside=imag decomp=256 colors=@primaryc.map
+  }
+
+trm-13        { ; I like this
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-7
+  function=cosxx/tan center-mag=-0.018015/-0.0265115/1.225163
+  params=3.1417/2.71828182845905 float=y maxiter=45000 fillcolor=1
+  inside=bof60 outside=imag decomp=256
+  colors=000700F00<5>RP0UU0VS0<12>s20u00w0000G<20>07k08m08l<22>79I8AG8AG<2\
+  2>00G000<4>000U0AK00<12>m00<23>N00L00L0AK0Aa08ww0ww1<3>ok1mh1ic1<3>UK0<5\
+  >kdDohGpiI<4>ysTzrVK00<18>XPYYR_XQY<12>K00hlz00S<22>07mEESm00<20>U00
+  }
+
+trm-14      { ; strange gasket
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=flip center-mag=-0.172327/-7.005e-006/0.2014926 float=y
+  inside=bof60 decomp=256 finattract=y rseed=-7606
+  colors=00w<67>zzVrzV<34>00R70S<25>q_AU00<7>jfCmlEmkE<42>U40G80<29>uuuwww\
+  vvv<32>322100000000000
+  }
+
+trm-15    { ; worth more work
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=asinh center-mag=-0.172327/-7.005e-006/0.253305 float=y
+  inside=bof60 decomp=256 finattract=y
+  colors=K00wwG<9>cU000A<6>FFc<6>00Amm0<3>AA0<14>eee<13>33m00n00j<11>XXg__\
+  fbbfeeecdf<13>0Lz0Gz<4>0czzjV<2>yqLxtHxwEwzAwzA<31>wdTS00<3>w00S07S00S70\
+  K000cK<4>0S0<4>0dSUKA<5>F00<5>XLE00A<13>A0m<23>40G80G<8>m00FG0<7>2S80UA0\
+  8G<6>G8E<2>95E63E42E10FcU0<9>utE
+  }
+
+trm-16             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=trunc center-mag=0.00311074/-7.005e-006/1.364116/1/90
+  float=y inside=bof60 decomp=256 finattract=y rseed=-7606
+  colors=0000aQ<3>0mZ<20>062030000<21>111222000bVM<2>bVMbVMcXP<3>hfcjigjig\
+  <17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfciebifb<4>ifcifcifb<59>k\
+  bR000<8>000161<31>1H1171161030<11>0_O
+  }
+
+trm-17             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=exp center-mag=-0.329507/-0.00921741/1.435905 float=y
+  inside=bof60 decomp=256 rseed=-7606
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-18        { ; hand painted
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=cosxx/recip center-mag=4.95176/0.188621/1.398912
+  params=2.71828182845905/-2.71828182845905 float=y maxiter=3125
+  fillcolor=25 inside=bof60 outside=real decomp=256
+  colors=000000110O20<4>J61I71I73<18>HPdHQfHPf<19>45u34v33w33w<105>ynGynGx\
+  mG<78>573463352341<10>000
+  }
+
+trm-19             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=sinh center-mag=0.402769/-0.0339454/0.4374529/1/90 float=y
+  inside=bof60 decomp=256 finattract=y rseed=-7606
+  colors=0000U0<2>0w0K0000P<3>00m<28>00MK00dG0z70eG0K000I0<2>0z0<2>0K000K<\
+  3>VVz<3>00Kzz0<12>cU00U70h50w20U0B0a<12>zzh<8>66IF00<5>m00h20<2>U30P40K5\
+  0F6007m07g<4>0Am<2>04U02N02M<3>01I00H01H<2>02F<7>04m<3>14Dzj0<8>zu0zw0zx\
+  0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0<14>0F0BGDBGF00F<4>00m<3>00F0000\
+  00
+  }
+
+trm-20             { ; in the wind tunnel
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=log center-mag=3.63799e-012/0.00107008/11.462 float=y
+  inside=bof60 potential=255/175/100 decomp=256 finattract=y
+  rseed=-7606
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<13>0DS0DS0ES0ER0\
+  DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>\
+  0m0<14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-21             { ; fiery pinwheel
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-2
+  function=atanh/recip
+  center-mag=+8.14504363121900000/-0.12661026398412620/14847.77/1/180
+  params=2.71828182845905/3.14159265358979 float=y maxiter=300
+  fillcolor=25 inside=bof60 outside=real rseed=-7606
+  colors=000J42I21G00G00F0000F006<3>00200000000F<56>0We0Xe0Xf0Xf<46>00K0rx\
+  r00<4>q00q10q10q20q20<94>vvJI00vuK<25>L63
+  }
+
+trm-22             { ; cloud rider
+  reset=1960 type=fn(z)+fn(pix) function=recip/cosxx
+  center-mag=1.58451/0.00880741/2.756245/1/50
+  params=2.71828182845905/3.14159265358979/3.14159265358979/2.718281828459\
+  05 float=y maxiter=300 fillcolor=25 inside=bof60 outside=real
+  rseed=-7606
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<13>0DS0DS0ES0ER0\
+  DQ<14>04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>\
+  0m0<14>0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-23             { ; cross-eyed bear
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=acosh center-mag=0.172484/-0.000333189/12.32525/1/90
+  float=y inside=bof60 potential=255/175/100 decomp=256 finattract=y
+  rseed=-7606
+  colors=000j0zz0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>Vz\
+  V<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00y<3>Z`t00rgiq<6>ff\
+  geeeeedddcdcb<10>YUQXTOXTP<14>ddceeeeee<11>ddcddcccbbba<3>dddeeedcc<6>TO\
+  KRMHRNH<12>baBccAbbA<10>PPC00044288KDDU<3>00IWWB<5>aaBccAbbA<12>FIADGBCG\
+  BBGB<2>BGFBGGBFGBDGBCG000<5>000eee00e<14>eee<10>FFsCCt99u66v33x00zG0z000
+  }
+
+trm-24             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-9
+  center-mag=-4.5e-007/-1.045e-005/0.4734804 float=y maxiter=300
+  inside=bof60 outside=atan decomp=256 rseed=-7606
+  colors=U00<22>B00A00B00<21>a00c00c00<72>B00B00B00B00C00<79>l00m00l00<23>\
+  C00A00A00<20>K00
+  }
+
+trm-25             { ; layers
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-9
+  center-mag=-3.2215e-005/-7.985e-006/1.079795 inside=zmag
+  outside=imag invert=1.484137615/0/0 rseed=-7606 colors=@trmoe3.map
+  }
+
+trm-26             { ; tropical fish
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-4
+  passes=b center-mag=0/0/0.6666667 float=y maxiter=250 fillcolor=35
+  inside=bof60 outside=mult decomp=128 biomorph=75 rseed=-7606
+  colors=00000e<5>eeeLL_00ULzL<2>K00zzLkbR000555<3>HHHKKKOOOSSSWWW___ccchh\
+  hmmmssszzz00zG0zW0zK0z<20>VVz<3>zVz<3>zVVzbVKKKXGA<9>ww0KzK<9>zzzUAA<7>w\
+  zK<5>zzzUAA<6>wzK<3>zzsUAA<5>wzKUAA<15>zzASSEz00z11z33z55<30>wwA00GwwA<3\
+  1>y41y21wwA<7>8Gz8GG<2>8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<\
+  2>BGFBGGBFGBDGBCG030000<5>F00
+  }
+
+trm-27             { ; flower glow
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-10
+  center-mag=0.0012953/-0.000758574/0.1494493 float=y outside=atan
+  rseed=-7606
+  colors=000F00<22>w0000G<20>07k08m08l<22>79I8AG8AG<22>00G000<4>000U0A<40>\
+  K0Aa08ww0<24>zrVK00<34>hlz00S<22>07mEESm00<20>U00E00
+  }
+
+trm-28             { ; interesting variation
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-10
+  center-mag=0.0012953/-0.000758574/1.737783 float=y outside=atan
+  biomorph=1 rseed=-7606
+  colors=000F00<22>w0000G<20>07k08m08l<22>79I8AG8AG<22>00G000<4>000U0A<40>\
+  K0Aa08ww0<24>zrVK00<34>hlz00S<22>07mEESm00<20>U00E00
+  }
+
+trm-29             { ; heart like a wheel
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-11
+  function=asin/cosxx center-mag=0.215049/-0.00781908/0.5564634/1/90
+  float=y maxiter=300 inside=bof60 outside=atan decomp=256 biomorph=0
+  rseed=-7606
+  colors=U00<22>B00A00B00<19>_00`00a00c00c00c00<70>B00B00B00B00B00<80>l00m\
+  00l00<23>C00A00A00<20>K00
+  }
+
+trm-30             { ; feels  happy
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-8
+  function=cosxx center-mag=0.00311074/-7.005e-006/1.046802/1/90
+  float=y inside=bof60 decomp=256 finattract=y rseed=-7606
+  colors=K00wwG<9>cU000A<6>FFc<6>00Amm0<3>AA0<14>eee<14>00n00j<9>SShUUgXXg\
+  __fbbfeee<13>3My0Lz0Gz<4>0czzjV<2>yqLxtHxwEwzAwzA<31>wdTS00<3>w00S07S00S\
+  70K000cK<4>0S0<4>0dSUKA<5>F00<5>XLE00A<13>A0m<23>40G80G<8>m00FG0<7>2S80U\
+  A08G<6>G8E<2>95E63E42E10FcU0<9>utE
+  }
+
+trm-31             { ; killer bee
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-11
+  function=cosxx/sin passes=b
+  center-mag=0.0814179/-3.55271e-015/0.4512617 float=y fillcolor=215
+  inside=bof61 decomp=256 biomorph=125 rseed=-7606
+  colors=00008O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<4>eddfcc<11>P99O66M33K\
+  0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<4>YZf__f``eaaebceddeeee<6>MPbJMaH\
+  K`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<23>dddfffedd<18>A\
+  0003K<22>__c<12>00K<5>07N
+  }
+
+trm-32             { ; chandelier
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=cosxx/recip center-mag=0.00909874/0.451986/2.276971
+  outside=atan rseed=-7606
+  colors=00008O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<3>ecceddfcc<10>RCCP99O\
+  66M33K0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<3>XYfYZf__f``eaae<2>eee<6>M\
+  PbJMaHK`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<21>aaacbbdd\
+  dfffedd<18>A0003K<22>__c<12>00K<5>07N
+  }
+
+trm-33             { ; twister
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=cosxx/recip center-mag=0.0786189/5.77628/0.1801696
+  outside=atan rseed=-7606
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vu\
+  K<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-34      {; basket weave
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=sqrt/cosxx center-mag=0.0246049/-0.00425512/1.366582
+  outside=atan colors=@trmoe3.map
+  }
+
+trm-35                 { ; I like this but don't know what to call it
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-13
+  function=recip/cosxx/sqrt
+  center-mag=-0.591362/-2.3095e-005/0.5850504/1/90 outside=atan
+  colors=00408O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<4>eddfcc<11>P99O66M33K\
+  0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<4>YZf__f``eaaebceddeeee<6>MPbJMaH\
+  K`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<23>dddfffedd<18>A\
+  0003K<22>__c<12>00K<5>07N
+  }
+
+trm-36 {; anchor? pendulum?
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-13
+  function=recip/cosxx/cabs
+  center-mag=-1.36656/-1.168e-005/0.4161825/1/90 outside=atan
+  colors=00A0LW<6>00K33UK00<26>cUUdWWdXXdYY<3>ecceddfcc<10>RCCP99O66M33K00\
+  00K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<3>XYfYZf__f``eaae<2>eee<6>MPbJMaHK`\
+  FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<21>aaacbbdddfffedd<\
+  18>A0003K<22>__c<12>00K<28>0`a0ab0bc0cd0ee<5>0OX
+  }
+
+trm-37             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-13
+  function=recip/cosxx/acosh
+  center-mag=0.0680957/3.25e-007/1.182335/1/90 outside=atan
+  rseed=-7606
+  colors=00A08O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<4>eddfcc<11>P99O66M33K\
+  0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<4>YZf__f``eaaebceddeeee<6>MPbJMaH\
+  K`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<23>dddfffedd<18>A\
+  0003K<22>__c<12>00K<5>07N
+  }
+
+trm-38             { ; button
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=round/sqr
+  center-mag=+0.00000577999999984/-0.00000700499999995/76.59278
+  float=y outside=mult rseed=-7606
+  colors=00008O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<4>eddfcc<11>P99O66M33K\
+  0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<4>YZf__f``eaaebceddeeee<6>MPbJMaH\
+  K`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<23>dddfffedd<18>A\
+  0003K<22>__c<12>00K<5>07N
+  }
+
+trm-39             {; austere for a fractal, but I like it
+  reset=1960 type=lambdafn function=sqrt
+  center-mag=0.125453/-0.185907/0.1284772
+  params=3.14159265358979/3.14159265358979 float=y maxiter=300
+  inside=zmag outside=real logmap=-4 decomp=256 rseed=-7606
+  colors=00008O<25>0ee<13>00K33UK00<26>cUUdWWdXXdYY<4>eddfcc<11>P99O66M33K\
+  0000K<5>bbd<8>GGUEESBBR88P55O22M00KRSf<4>YZf__f``eaaebceddeeee<6>MPbJMaH\
+  K`FI`DG_<2>DH_EI_GK_<2>LO`MP`NQ`OR`PS`<11>eee<2>ZhZA00<23>dddfffedd<18>A\
+  0003K<22>__c<12>00K<5>07N
+  }
+
+trm-40            {; squares
+  reset=1960 type=lambdafn function=abs
+  center-mag=-0.000290598/-0.000413068/0.1182595
+  params=3.14159265358979/3.14159265358979 float=y maxiter=300
+  inside=zmag outside=real logmap=-4 decomp=256
+  colors=00008N<2>0CP0DQ2ER<13>eed<13>eedeeddcb<10>TFESDCP00<3>SSR<3>P0000\
+  O<7>PPO<6>00Oww0<8>KK0A00<7>c00b`_<4>eed<13>AAQ88P55N22L00JRSe<4>YZe__e`\
+  `daadbcddddeed<6>MPaJM`HK_FI_DGZ<2>DHZEIZGKZ<2>LO_MP_NQ_OR_PS_<11>eed<2>\
+  ZhYA00B10<22>ddcffeedc<18>A0003J<22>__b<12>00J<5>07M
+  }
+
+trm-41             {
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-14
+  function=cosxx center-mag=0.100102/-0.193158/0.2423231 inside=period
+  outside=atan rseed=15858
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVzz\
+  z0<12>cU00U7<2>0w0B0a<12>zzh<9>00F00K00S<2>01S01S02S03S<15>0ES0ER0DQ<14>\
+  04B04B04C<2>14Dzj0<8>zu0zw0zx0zz0zz0<25>zj0B8a<19>GAm<2>00F0F0<12>0m0<14\
+  >0F0BGDBGF00F<4>00m<3>00F000000
+  }
+
+trm-42             { ; interesting mandelbrot variation
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-14
+  function=conj center-mag=-0.769883/0.0190299/0.9936313
+  maxiter=601500 inside=bof60 outside=real rseed=-7606
+  colors=00000F<56>0We0Xe0Xf0Xf<46>00K0rxr00<4>q00q10q10q20q20<94>vvJI00vu\
+  K<27>I21G00G00F0000F006<3>002000000
+  }
+
+trm-43             { ; splat 
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=cosxx/recip passes=b center-mag=0/0/0.6666667 float=y
+  fillcolor=110 inside=bof60 outside=real decomp=256 rseed=15858
+  colors=0000U0<2>0w0K00<6>z00<27>K00zG0<2>zz0<3>0z0<3>0zy<2>0GyVVy<3>zVyz\
+  z0<12>cU00U6<2>0w0B0`<12>zzg<9>00E00J00R<2>01R01R02R03R<13>0DR0DR0ER0EQ0\
+  DP<14>04A04A04B<2>14Czj0<8>zu0zw0zx0zz0zz0<25>zj0B8`<19>GAl<2>00E0F0<12>\
+  0m0<14>0F0BGCBGE00E<4>00l<3>00E000000
+  }
+
+trm-44             { ; butterfly in jade & ivory
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-13
+  function=cosxx/conj/exp center-mag=-0.00120188/-0.00300626/2.466991
+  float=y maxiter=1500 fillcolor=110 inside=bof60 decomp=256
+  rseed=15858
+  colors=000<2>000161<31>1H1171161030<16>0mZ<20>062030000<21>111222000bVM<\
+  2>bVMbVMcXP<3>hfcjigjig<17>e_TdZSdZT<10>e`Ve`Ve`WeaX<13>llkmmmmmm<13>jfc\
+  iebifb<4>ifcifcifb<59>kbR000<5>000
+  }
+
+trm-45             { ; Kicking into Warp Drive
+  reset=1960 type=formula formulafile=trmoe1.frm formulaname=trmoe-12
+  function=log/cosxx center-mag=2.41713/-0.100823/0.1809379 float=y
+  fillcolor=110 inside=bof60 rseed=15858
+  colors=jjzpowvut<15>_SPYQMYQM<4>`TM`TM`TM`UNaUO<24>jjj00A<3>00K00N00N<47\
+  >00Ar00<4>q00q10q10q20q20<94>vvJI00vuK<27>I21G00G00F0000F006<3>002000000
+  }
+

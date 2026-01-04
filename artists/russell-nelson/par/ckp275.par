@@ -1,0 +1,300 @@
+;; ckp275.par (images 251 through 275),  29 January 1993
+;;
+;; Here are my current contributions to PARs for Tomorrow (V18.0)...
+;; Any duplications are entirely
+;; unintentional...  With any luck, a few of these will find
+;; their way into the postcard/poster world before spring of
+;; '93...  Comments pro and con will be sent to their appropriate
+;; locations...
+
+;; A few here were inspirations from other creations, and have been
+;; (I hope) accorded appropriate acknowledgement...  My thanx to
+;; Bill Potter (BP.PAR) for his contributions...
+
+;; Time listed on the first line reflects creation on a 486-50
+;; running 1024x768x256 colors...   ALL of these images look best
+;; when created with a 256-color or better video and 1024x768 or
+;; better resolution...  I have no idea how they will look at
+;; lower resolutions or lower color densities...  Happy viewing!
+
+;; caren park
+;; park computer services
+;; 1107 lewis lane southeast
+;; issaquah, washington  98027-4706
+
+;; PS:  Please do not use these images commercially without
+;; dropping me a quick message requesting inclusion in your
+;; fine product BEFORE you go to market...
+
+ckp0251            { ; "Reflective Drop-002"
+                     ; 00:07:51.16
+                     ; 19 jan 93 .. caren park
+  reset type=fn*fn function=cosxx/sqr passes=b
+  corners=-11.0370674/-10.9570674/-0.03/0.03 float=y maxiter=32000
+  fillcolor=200 inside=bof61 logmap=4 decomp=128 distest=3000/71
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0252            { ; "Reflective Drips"
+                     ; 00:02:42.63
+                     ; 19 jan 93 .. caren park
+  reset type=fn*fn function=cosxx/sqr passes=b
+  corners=-11.186865/-10.790065/-0.0410603/0.0410603 float=y maxiter=32000
+  fillcolor=200 inside=bof61 logmap=4 decomp=128 distest=3000/71
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0253            { ; "Necklace-003"
+                     ; 00:53:12.21
+                     ; 19 jan 93 .. caren park
+  reset type=formula formulafile=fractint.frm formulaname=fzppfnpo
+  corners=-1.55194503/-1.54389888/0.0054899/-0.0052418/-1.54389888/-0.0052418
+  params=0.666/-1/0.666/-0.5 maxiter=1000 fillcolor=200 inside=bof60
+  outside=mult decomp=64
+  colors=00000A00D00H<11>PP`<9>33H00E00A<2>000300700A00<12>rZ0<11>400A00<2>000\
+  <14>0mm0mm0mm<11>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<13>1A1181\
+  171151131000313717A20<12>cAP<10>H43E30A2A<2>000<15>hh0<15>000003006
+  }
+
+ckp0254            { ; "Oh No Owl"
+                     ; 01:20:23.70
+                     ; 24 jan 93 .. caren park
+  reset type=formula formulafile=fractint.frm formulaname=fzppfnpo
+  passes=t corners=0.430874/-1.39638/-1.218162/1.218178/-1.39638/1.218178
+  params=0.666/-1/0.666/-0.5 maxiter=1000 fillcolor=200 inside=bof60
+  outside=mult decomp=64
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0255            { ; "Insect Antennae"
+                     ; 00:13:51.41
+                     ; 24 jan 93 .. caren park
+  reset type=formula formulafile=fractint.frm formulaname=fzppfnpo
+  passes=b corners=-0.6536468/-0.6216956/1.494306/1.5182616
+  params=0.666/-1/0.666/-0.5 maxiter=1000 fillcolor=200 inside=bof60
+  outside=mult decomp=64
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0256            { ; "Octopus' Garden"
+                     ; 00:03:23.88
+                     ; 25 jan 93 .. caren park
+  reset type=spider passes=b
+  corners=-0.1233386/-0.0537333/0.2214786/0.128672/-0.0537333/0.128672
+  maxiter=1000 fillcolor=200 inside=bof60 outside=mult invert=0.229998/0/0
+  decomp=64 periodicity=4
+  colors=0000ff<2>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<13>\
+  2A2292171151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<1\
+  1>0cc
+  }
+
+ckp0257            { ; "Tower Of Power #2"
+                     ; 00:01:02.95 .. 26 jan 93 .. caren park
+                     ; .. inspired by BP:BGFISHCO
+  reset type=mandel
+  corners=-2.00003369/-1.99724115/0.00203108/-0.00202262/-1.99724115/-0.002022\
+  62 float=y maxiter=32767 logmap=yes potential=255/2750/0 decomp=255
+  colors=000A0B<2>000<15>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<1\
+  5>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>000<15>p0\
+  w<11>D0F
+  }
+
+ckp0258            { ; "BrownStr"
+                     ; 00:09:14.31 .. 26 jan 93 .. caren park
+                     ; .. BP:BrownStr with Rainbow2 color map
+  reset type=mandel
+  corners=-0.74544133402/-0.74541182844/-0.11300137512/-0.11301610036/-0.74543\
+  761177/-0.11299737715 float=y maxiter=32767 inside=79
+  colors=WPJ5Nu<5>A5cB5`<3>G8SH9QIAQ<4>SKP<3>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_\
+  LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc\
+  7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJ\
+  MAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc<4>jiWhfUfdTebS<3>ZUMYRKUMHSJF<6>E\
+  Ab<7>5Px
+  }
+
+ckp0259            { ; "Alien Butterfly"
+                     ; 00:12:54.12
+                     ; 16 nov 92 .. caren park
+  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  passes=2 corners=0.773408/1.029408/-0.096/0.096 params=0.5 float=y
+  maxiter=500 bailout=800 inside=maxiter periodicity=-1
+  colors=000F7N<9>IAR73B<18>Ru661B<65>aUm61B<75>fmF81C<17>nGZ61B<28>DRP61BERQ<\
+  28>Lpc
+  }
+
+ckp0260            { ; "Tentacle"
+                     ; 00:10:11.76
+                     ; 06 nov 92 .. caren park
+  reset type=mandel
+  corners=0.266201595/0.266274003/-0.0034371018/-0.0033828132 inside=0
+  decomp=64
+  colors=CCCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_C\
+  sYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<20>ssC
+  }
+
+ckp0261            { ; "Picasso Orb"
+                     ; 00:04:05.35
+                     ; 06 nov 92 .. caren park
+  reset type=formula formulafile=fractint.frm formulaname=halley
+  corners=-7.80556/7.805584/-5.854149/5.854142 params=6 inside=bof61
+  outside=imag decomp=256
+  colors=WX3kNL<13>ph5pj4ni6<4>cfGHZcaeI<8>J__ny1<6>LbYvkD<14>J_`i8F<21>IZ`bC6\
+  <2>PRQLWWF9_<20>HYaHZaGXk<16>H_b<2>KPRMLNLOQMLNLOQVZ2<26>i3P<4>HZ3<3>9mQ7qW7\
+  pX<13>1_p1Zq2Zp<29>hMA<8>Q7_O6aN8_<12>IOG<2>wRZ<4>iDT<4>kMN
+  }
+
+ckp0262            { ; "Milk Splat"
+                     ; 00:01:04.38
+                     ; 06 nov 92 .. caren park
+  reset type=fn*z+z function=cosxx
+  corners=-8.107376/8.200413/-7.014127/7.264315 params=17/16/15/100
+  maxiter=32000 inside=0 potential=255/200/32000
+  colors=000www<23>zzz333<5>AAABBBBBB<10>HHHIIIIIIIII<14>PPPPPPPPPPPPPPP<3>RRR\
+  RRRRRRRRRSSS<179>vvv
+  }
+
+ckp0263            { ; "Star Flake"
+                     ; 00:01:07.34
+                     ; 06 nov 92 .. caren park
+  reset type=fn(z)+fn(pix) function=sqr/sqr
+  corners=7.547096/-7.82599/11.16906/-12.387074/13.319843/3.472848
+  params=0/0/345/832 maxiter=32000 inside=0 potential=255/200/32000
+  colors=N0US3_<7>`EhY9eU4aU4bU4b<10>l`p<2>_Cg`Dh<2>bIicKjdMkeOlgRl<4>l`pjWogR\
+  m<32>xwyxxyyyyyyyyyy<40>jeijeijeijeijei<86>idhG0L<29>N0VN0VO0WP0X<4>V4bT3`Q1\
+  Y<2>R2Z
+  }
+
+ckp0264            { ; "Fun House Mirror"
+                     ; 00:04:02.83
+                     ; 08 nov 92 .. caren park
+  reset type=lyapunov corners=-0.163606/3.628394/0.882511/3.726511
+  params=432/0.7/4 float=y maxiter=2 inside=0
+  colors=000MIRBX0<7>Gfg<3>006<6>hWj<5>Ro8<37>DWYCVZDVZ<31>watybuxbu<36>KbTZO2\
+  <35>_rT<3>sTT<32>UxpTyqTyp<40>OX5
+  }
+
+ckp0265            { ; "Nautilus Birth"
+                     ; 00:02:35.66
+                     ; 08 nov 92 .. caren park
+  reset type=mandel
+  corners=-0.760944275/-0.76074104/-0.089700854/-0.090670664/-0.760405675/-0.0\
+  90419222 maxiter=500 inside=0
+  colors=000ggg<8>bbbaaaaaaaaa<20>QQQ000<47>000LLVNNXPPZSSaTTb<3>aakddneeoggqj\
+  jollvnnxqqzsszqqzooyllv<2>ggqeeobbl<2>XXfUUcTTb<2>LLVNNXPPZSSa<2>XXfZZhaak<2\
+  >ggqjjtkkunnxppzsszqqz<2>kkuiisffp<4>XXfUUUTTT<2>LLLNNNPPPSSS<2>XXXZZZaaa<2>\
+  gggjjjkkk<2>sss<10>XXXUUUTTT<2>LLLNNNPPPSSS<2>XXXZZZaaa<2>gggjjjkkk<2>sss<8>\
+  ___YYYWWWTTTSSSPPPNNNKKK<12>kkknnnpppsssqqq<9>XXXUUUTTT<2>LLLmmm<2>kkkjjjjjj\
+  jjj<3>ggg
+  }
+
+ckp0266            { ; "Lend Me An Ear"
+                     ; 00:00:33.34
+                     ; 08 nov 92 .. caren park
+  reset type=manfn+exp function=log
+  corners=-2.778183/1.121964/-1.524582/1.40387 float=y maxiter=500
+  inside=0 potential=256/256/0 decomp=256 finattract=y
+  colors=000K00<78>z70W80<4>M60<8>y70<11>G60<11>u000K0<15>0z0<8>0F0<8>Bj0Cm0Dq\
+  0Fu0Er0Dn0<6>4Q03N02J00F01I02L0<10>Gq0Ht0Iw0Kz0Jw0It0<10>4M03J02G00C00C00C0<\
+  49>00KOSKMSK
+  }
+
+ckp0267            { ; "Open Wide"
+                     ; 00:00:46.36
+                     ; 08 nov 92 .. caren park
+  reset type=manfn+exp function=log
+  corners=0.039551/0.648376/0.401566/-0.407715/0.648376/-0.407715 float=y
+  maxiter=500 inside=0 potential=256/256/0 decomp=256 finattract=y
+  colors=000<7>zz0<15>KF0<15>sp0<15>KF0<15>us0<13>KF0<8>yz0<11>FF0<11>um000F<6\
+  >00z<14>00K00H00G<2>00A<9>00m<11>00F<15>00m<21>00H0B2<44>00KOSKMSK
+  }
+
+ckp0268            { ; "All In A Row"
+                     ; 00:02:10.17
+                     ; 08 nov 92 .. caren park
+  reset type=manfn+exp function=recip
+  corners=-0.501007/0.426971/-0.410294/-1.359833/0.290466/-1.463333
+  float=y maxiter=500 inside=0 potential=256/256/0 decomp=256 finattract=y
+  colors=000T6A<12>4Tf2Vi2Vh<31>4X95Y74XC<30>ULH<4>sxOULI<28>FUrEVtEUs<15>QEXM\
+  Jd<42>alQbmPakP<11>mj6jjD<20>WLsVJvWPm<8>No9<7>brUZpO<20>ZNY
+  }
+
+ckp0269            { ; "Step This Way"
+                     ; 00:00:41.80
+                     ; 08 nov 92 .. caren park
+  reset type=barnsleym3
+  corners=1.322019/1.172338/-1.289134/-0.795512/1.031186/-0.901367
+  params=0.3/1.1 float=y maxiter=500 inside=0 potential=256/256/0
+  decomp=256 finattract=y
+  colors=000li5<5>xw1zz0zz0zz0zz0S2jS2idTi<9>7fS<8>kbd<14>3yp<4>8si9rh8mj<3>8U\
+  n<13>L`6L`3NY7<10>`9ca7fc6g<7>l3g<9>Qjb<11>qwF<5>grR<15>sGh<2>I1S<8>B9_B9_CD\
+  ZDHZELZ00U<7>31y<6>52P63O<3>85q95y85v<12>05F3M5<9>0l7<10>0J0III<13>kkk<13>DD\
+  DQHD<10>jf6
+  }
+
+ckp0270            { ; "Blorp"
+                     ; 02:32:43.68
+                     ; 24 jan 93 .. caren park
+  reset type=fn*fn function=cosxx/sqr passes=b
+  corners=-17.3225648/-17.2345929/-0.0084919/0.0084919 float=y
+  maxiter=32000 fillcolor=200 inside=bof61 logmap=4 decomp=128
+  distest=3000/71
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0271            { ; "Bloop"
+                     ; 02:33:26.71
+                     ; 24 jan 93 .. caren park
+  reset type=fn*fn function=cosxx/sqr passes=1
+  corners=-11.06064103/-11.05892199/-0.00064464/0.00064464 float=y
+  maxiter=32000 fillcolor=200 inside=bof61 logmap=4 decomp=128
+  distest=3000/71
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<\
+  15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+ckp0272            { ; "Bayou Roots"
+                     ; 01:27:58.52
+                     ; 07 nov 92 .. caren park
+  reset type=mandel
+  corners=-0.245068503/-0.241492102/-0.640965365/-0.636798477/-0.245780269/-0.\
+  640015013 params=0.333/1.666 float=y maxiter=32767 bailout=100 inside=0
+  logmap=yes
+  colors=000ZKQ<4>jPo<9>MF0<9>kfC<9>MF0<8>XX_ZZdYX`<5>RLDPJ9OH5MF0ME4<7>T3eU1j\
+  U2f<8>MF0<8>w70<6>MF0<8>ww1<9>MF0<9>wEc<9>MF0<9>zpa<9>MF0<8>He8Gh9He8<7>LI1M\
+  F0LG6<8>5Px<8>KG6MF0PJ5<8>kmn<9>MF0<9>zV0<9>MF0<9>zeb<9>MF0<3>WJL
+  }
+
+ckp0273            { ; "Church Ceiling"
+                     ; 00:09:20.19 .. 29 jan 93 .. caren park
+                     ;
+  reset type=formula formulafile=fractint.frm formulaname=richard1
+  corners=1.079249329/1.079001336/0.0001261609/0.0001604761/1.079142483/0.0002\
+  673666 float=y maxiter=10000 inside=6 potential=255/600/500
+  colors=000ooo<30>000PFF<29>xeDzfCyfC<29>RGEPFFQFF<13>cRFeSFdSF<13>RGFPFFPFF<\
+  14>cPFcPFbOF<13>PFFSNC<29>xo`zpaypa<28>WQG000000<30>ppp
+  }
+
+ckp0274            { ; "Portal-002"
+                     ; 00:00:40.38
+                     ; 08 nov 92 .. caren park
+  reset type=manzpower
+  corners=6.13350256/6.13053117/21.2645971/21.2102607/6.15851431/21.231248
+  params=11/6/4.555/12.666 float=y maxiter=32000 bailout=100 inside=255
+  potential=255/128/0 decomp=256 biomorph=0
+  colors=LSUeGj<38>5Dt<6>p9X<53>YGoYGoYHn<43>NqTMrTMsSLtRMtR<16>ieVkdVlcVnbWma\
+  Wk_V<18>B3D91C91C<60>G7_
+  }
+
+ckp0275            { ; "Gossamer"
+                     ; 00:01:48.65 .. 08 nov 92 .. caren park
+                     ;
+  reset type=popcorn
+  corners=4.883453/5.301437/3.628723/6.594162/3.584366/5.330185 params=0.5
+  colors=000aVf<27>`UfXPf`Uf<118>XQfccc<103>ccc
+  }
+

@@ -1,0 +1,363 @@
+;; cp1075.par (images 1051 through 1075), 10 December 1994
+;;
+;; Here are my current contributions to Fractint (V18.24)...
+;; Any duplications are entirely unintentional...  With any luck, a
+;; few of these will find their way into the postcard/poster world
+;; before the world comes to an end...
+
+;; CDs are now available containing most of CKPxxxx images...
+;; Comments pro and con will be sent to their appropriate locations...
+
+;; A few images here were inspirations from other creations, and
+;; have been (I hope) accorded appropriate acknowledgement...
+
+;; Time listed on the first line reflects creation on a 486-50
+;; running 1024x768x256 colors...   ALL of these images look best
+;; when created with a 256-color or better video and 1024x768 or
+;; better resolution...  I have no idea how they will look at
+;; lower resolutions or lower color densities...  Happy viewing!
+
+;; caren park
+;; park computer services
+;; 485 front street north, suite a
+;; issaquah, washington  98027-2900
+;; CIS:  76544,567
+
+;; PS:  Please do not use these images commercially without
+;; dropping me a quick message requesting inclusion in your
+;; fine product BEFORE you go to market...
+
+ckp1051            { ; "Point X"
+                     ; 00:02:00:73 .. 14 november 1994 .. caren park
+  reset=1827 type=fn*z+z function=recip
+  corners=15.862735/-15.871345/-0.11671326/0.23727524/-15.507255/15.559695
+  params=100/200/5100/-21072 maxiter=32000 inside=0
+  potential=255/200/32000 invert=0.5/0/0
+  colors=80G___<15>xxxzzzzzyzzx<33>pX2oW0oW0<43>O13N04N04M05<31>80G80G80G8\
+  0G80H<40>1AT1AU1AU0BV1CV<28>aeibfibfi<10>prorspqro<20>TTTRRRSSS<3>YYY
+  }
+
+a1052              { ; 2D for ckp1052
+                     ; 00:01:36.06 .. 14 november 1994 .. caren park
+  reset=1827 type=fn*z+z function=conj
+  corners=0.741284049/-0.936432288/0.0673448655/0.0860595184/-0.917183575/\
+  0.896124704 params=100/5/100/1072 maxiter=32000 inside=0
+  potential=255/200/32000 invert=0.5/0/0
+  colors=00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJ\
+  IgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>\
+  02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<25>qqppppppqooqoornnrnnsnntmmtllu\
+  mmu<20>000<4>70B
+  }
+
+ckp1052            { ; "Mesa Fractali"
+                     ; 00:02:16.49 .. 14 november 1994 .. caren park
+  3d=yes filename=a1052.gif scalexyz=95/95 roughness=95 waterline=0
+  filltype=1 ambient=20 rotation=35/0/0 perspective=0 xyshift=0/0
+  colors=000vti<12>qqppppppqooqoor<3>mmtllummu<20>000<15>N0_P0aQ0cS0fT0hV0\
+  kW0mY0p<14>peIqhFrkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00\
+  P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl\
+  <23>wwbzzazyazwa<9>wug000vth
+  }
+
+ckp1053            { ; "Bad Day?"
+                     ; 00:03:41.46 .. 17 november 1994 .. caren park
+  reset=1821 type=manfn+zsqrd function=cosxx
+  corners=0.6701889/-0.7729113/-1.721939/1.697861/-0.7729113/1.697861
+  params=0.0097000000000000003 maxiter=32000 inside=bof61 outside=summ
+  potential=255/300/150 invert=0.05/0/0 decomp=256
+  colors=80GSYe<7>aeibfibfi<8>mpnoqnprorspqro<20>TTTRRRSSS<20>xxxzzzzzy<2>\
+  yxuywsyvqyvoxun<23>r`9q_7qZ5pY4pX2oW0<2>nV0mU0lT0lS0kS0<37>O13N04N04M05<\
+  29>80G80G80G80G80G<3>80I71I71I71I71J<30>19R1AS1AS1AT1AT1AU1AU0BV<19>PWd0\
+  00
+  }
+
+ckp1054            { ; "Color Wheel"
+                     ; 00:01:45.07 .. 25 november 1994 .. caren park
+  reset=1827 type=lambda(fn||fn) function=flip/conj
+  corners=-0.80131047/-0.871436994/-0.04775497308/0.0494871411/-0.87143699\
+  4/0.04574705979 params=0.65000000000000002/2/3.1000000000000001
+  float=y fillcolor=255 inside=maxiter invert=1/0.6667/0 decomp=256
+  biomorph=0 colors=@rainbow.map cyclerange=0/255
+  }
+
+ckp1055            { ; "A Patchwork Blue"
+                     ; 00:08:15.65 .. 28 november 1994 .. caren park
+  reset=1827 type=lambda(fn||fn) function=flip/conj passes=b
+  corners=-4/4/-3/3 params=0.25/1/1.1000000000000001 float=y
+  inside=maxiter invert=1/0.6667/0 decomp=256
+  colors=00zppp00qqqq00rrrr00ssss00tttt00tttt00uuuu00vvvv00wwww00xxxx00yyy\
+  y00zzzzzzz00zyyy00yxxx00xwww00wvvv00vttt00tsss00srrr00rqqq00qppp00onnn00\
+  nmmm00mlll00lkkk00jjjj00ihhh00hggg00gfff00eeee00dccc00cbbb00baaa00a```00\
+  ____00ZYYY00YXXX00XWWW00VVVV00UUUU00TSSS00SRRR00QQQQ00PPPP00OOOO00NMMM00\
+  LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00EEEE00DDDD00CBBB00AAAA00999900888800\
+  7777005555004444003333002222000<3>00111100222200333300444400555500555500\
+  666600777700888800999900AAAA00AAAA00BBBB00CCCC00DDDD00EEEE00FFFF00FFFF00\
+  GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMMM00NNNN00OOOO00PPPP00QQQQ00\
+  QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWWW00XXXX00YYYY00ZZZZ00____00\
+  ____00````00aaaa00bbbb00cccc00dddd00eeee00eeee00ffff00gggg00hhhh00iiii00\
+  jjjj00jjjj00kkkk00llll00mmmm00nnnn00oooo00oooo00p
+  }
+
+ckp1056            { ; "Punk Rainbow 1994"
+                     ; 00:08:15.65 .. 28 november 1994 .. caren park
+  reset=1827 type=lambda(fn||fn) function=flip/conj passes=b
+  corners=-4/4/-3/3 params=0.25/1/1.1000000000000001 float=y
+  inside=maxiter invert=1/0.6667/0 decomp=256
+  colors=KKKWWW<7>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>0\
+  00<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0Xv0Vr0Tp0Sn0R\
+  <12>000<15>p0w<15>000<3>GGGOOOSSS
+  }
+
+ckp1057            { ; "Peacock Lips"
+                     ; 00:08:15.65 .. 28 november 1994 .. caren park
+  reset=1827 type=lambda(fn||fn) function=flip/conj passes=b
+  corners=-4/4/-3/3 params=0.25/1/1.1000000000000001 float=y
+  inside=maxiter invert=1/0.6667/0 decomp=256
+  colors=00d0K0<15>0z0<14>0N00K01J0<13>I20K00M00<14>z00<13>80r40v20x00z<6>\
+  00f00a<4>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K00M00<14>z00<\
+  14>N00K00J01<13>20I00K00M<14>00z<14>00N00K01J<13>0I2
+  }
+
+ckp1058            { ; "Infinite Four-Leaf"
+                     ; 00:01:46.12 .. 28 november 1994 .. caren park
+  reset=1827 type=lambda(fn||fn) function=recip/sin
+  corners=0.66544948956/0.6677988384/0.00143673118044/-0.00142647816866/0.\
+  6676695958/-0.00152340999797
+  params=0.65000000000000002/2/3.1000000000000001 float=y bailout=5
+  inside=maxiter invert=1/0.6667/0 decomp=256 biomorph=0
+  colors=`uz<12>zzz<44>5zz3zz2zz0zz0yz<43>05z03z02z00z00y<59>0030020000000\
+  00<29>00k00m01m<29>0ky0mz1mz<16>Ztz cyclerange=0/255
+  }
+
+ckp1059            { ; "Lighthouse of the Vortex"
+                     ; 00:07:56.97 .. 29 november 1994 .. caren park
+  reset=1827 type=formula formulafile=formulas.frm
+  formulaname=inandout04 function=sqr
+  corners=-1.145015/0.4038108/-0.5881153/0.5747173
+  params=1.0389999999999999/0.050955 float=y
+  colors=005<7>00I005<2>00200000000000200300J<17>00k00m01m<29>0ky0mz1mz<30\
+  >zzz<44>5zz3zz2zz0zz0yz<43>05z03z02z00z00y<56>006 cyclerange=9/255
+  }
+
+ckp1060            { ; "What Do You See?"
+                     ; 00:02:19.18 .. 02 december 1994 .. caren park
+  reset=1730 type=formula formulafile=formulas.frm formulaname=402
+  function=log/ident
+  corners=1.55339/-0.08714555/-1.458255/1.458255/-0.08714555/1.458255
+  float=y inside=bof61 outside=real potential=222/444/0
+  colors=EFE<5>`a_<8>ghfhigiigijg<31>yxtzyuzyt<3>yumytkxsiwrg<21>qZ6pY4pX2\
+  oW0oW0<43>O13N04N04M05<7>I08I08I08I08I08<2>G08G08G08G07F07<58>000000111<\
+  38>TUT000<2>BBA cyclerange=0/255
+  }
+
+ckp1061            { ; "Iceberg Fall"
+                     ; 00:02:15.17 .. 02 december 1994 .. caren park
+  3d=yes filename=ckp1060.gif scalexyz=95/95 roughness=95 waterline=0
+  filltype=1 ambient=20 rotation=55/0/0 perspective=0 xyshift=0/0
+  colors=00PrbE<4>qZ6pY4pX2oW0oW0<43>O13N04N04M05<7>I08I08I08I08I08<2>G08G\
+  08G08G07F07<58>000000111<36>STSSTSTUTUVTVWU<16>fgeghfhigiigijgjjh<30>yxt\
+  zyuzyt<3>yumytkxsiwrg<14>sdI cyclerange=0/255
+  }
+
+ckp1062            { ; "Medallion on Velvet"
+                     ; 00:03:26.19 .. 02 december 1994 .. caren park
+  reset=1821 type=cmplxmarksmand
+  corners=-1.043751/2.208817/2.137562/-2.205987/2.208817/-2.205987
+  params=0/0/1 float=y bailout=1000 inside=bof60 invert=0.5/0/0
+  decomp=32
+  colors=1x10z0<15>000<15>00z<14>000<16>z0Xv0Vr0Tp0Sn0R<12>000<15>p0w<15>0\
+  00<3>GGGOOO<9>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000\
+  <15>ut0<15>000GA4<12>2v1 cyclerange=0/255
+  }
+
+ckp1063            { ; "Inside the Klein"
+                     ; 00:10:17.31 .. 06 december 1994 .. caren park
+                     ; variation on fr384.var_b by don lebow 76704,41
+                     ; which is a variation on don archer's fr384.var
+                     ;   - no fpu ... one little switch
+  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  function=sinh/log
+  corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
+  1/0.676968634 params=4 inside=maxiter potential=255/300/900
+  decomp=256 biomorph=1
+  colors=000rfM<2>qeLpdKpcJobInaH<2>m_GmZGlYFkYE<2>hVBhUBgUAgTAfS9<7>_M6ZL\
+  5YK5YK4XJ4WI3<3>TF1SE1SE1RD1QC1<13>G50F40E40E40<2>D32C22C22B12A12<14>307\
+  207208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAM\
+  eANfANgBOh<6>GTmGUmHVnIWnJXo<10>QduReuSfvTgvUgvVhv<2>XixYjxZkx_ly_ly<6>d\
+  qzeqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<\
+  15>zwgzvfzvfzuezud<3>ysays`yr_yq_<10>tlSskRsjQsiPshOsgN
+  }
+
+ckp1064            { ; "Steel Logo"
+                     ; 00:10:17.31 .. 06 december 1994 .. caren park
+                     ; variation on fr384.var_b by don lebow 76704,41
+                     ; which is a variation on don archer's fr384.var
+                     ;   - no fpu ... one little switch
+  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  function=sinh/log
+  corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
+  1/0.676968634 params=4 inside=maxiter potential=255/300/900
+  decomp=256 biomorph=1
+  colors=000I70<2>G50F40E40E40<2>D32C22C22B12A12<14>307207208209<11>03F03G\
+  03H03I03J<3>05L06M06N17O17P<7>2CV3CW3DX4EX4EY<9>9MeAMeANfANgBOh<6>GTmGUm\
+  HVnIWnJXo<10>QduReuSfvTgvUgvVhv<2>XixYjxZkx_ly_ly<6>dqzeqzfrzgrzhszhsz<5\
+  >mvymwynwynxyoxy<4>qyyryxryxsywsyw<8>xzsxzsxzrxzrxzq<15>zwgzvfzvfzuezud<\
+  3>ysays`yr_yq_<10>tlSskRsjQsiPshO<4>qeLpdKpcJobInaH<2>m_GmZGlYFkYE<2>hVB\
+  hUBgUAgTAfS9<7>_M6ZL5YK5YK4XJ4WI3<3>TF1SE1SE1RD1QC1<9>J70
+  }
+
+ckp1065            { ; "Chivas at Light"
+                     ; 00:10:17.31 .. 06 december 1994 .. caren park
+                     ; variation on fr384.var_b by don lebow 76704,41
+                     ; which is a variation on don archer's fr384.var
+                     ;   - no fpu ... one little switch
+  reset=1827 type=formula formulafile=da.frm formulaname=dafrm21
+  function=sinh/log
+  corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
+  1/0.676968634 params=4 inside=maxiter potential=255/300/900
+  decomp=256 biomorph=1
+  colors=KKKII0<4>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0Xv0Vr0Tp0S\
+  n0R<12>000<15>p0w<15>000<3>GGGOOO<9>zzz<15>000L00<13>z00<2>p00l00h00d00a\
+  00<9>000<15>zX0<15>000<15>ut0<9>ML0
+  }
+
+ckp1066            { ; "Show them the Future, the Past"
+                     ; 00:03:22.68 .. 07 december 1994 .. caren park
+  reset=1730 type=manlam(fn||fn) function=recip/ident
+  corners=-0.5812695/0.5815832/0.7765137/-0.7765135/0.5815832/-0.7765135
+  params=5 float=y maxiter=20 bailout=100 inside=bof60 outside=real
+  invert=0.5/0/0 decomp=128 biomorph=1
+  colors=000<28>000<4>ZUMe_RmfX<8>LJNHGMEDLAAKACL<12>CniCqkDtn<6>8Xc7Ta9Q`\
+  <5>L4R<8>VHI<7>zH0<7>WEDSDFRAG<2>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6\
+  >KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5\
+  Px5Nu<5>A5cB5`<6>KBLMCIOEK<3>WQUYSX_VZ`Y`<2>ffihilleVtk_qiZ
+  cyclerange=36/255
+  }
+
+ckp1067            { ; "Escher Dysansphere"
+                     ; 00:02:42.69 .. 07 december 1994 .. caren park
+  reset=1730 type=manlam(fn||fn) function=flip/cos
+  corners=-0.7750783/0.775392/-0.5823851/0.5823853
+  params=-0.4587/0/550 float=y maxiter=20 bailout=100 inside=bof60
+  outside=real invert=0.5/0/0 decomp=128 biomorph=1
+  colors=000<83>000000012<11>5HT6IV6JX6KZ7L`7Nb<4>8Rj9Sk9TmAUoAVp<6>BZwC_x\
+  C_xC_y<4>C`zccc<126>ccc
+  }
+
+ckp1068            { ; "Illusional Hubcap"
+                     ; 00:02:43.02 .. 07 december 1994 .. caren park
+  reset=1730 type=manlam(fn||fn) function=flip/cos
+  corners=-0.7750783/0.775392/-0.5823851/0.5823853
+  params=-0.4587/0/125 float=y maxiter=20 bailout=100 inside=bof60
+  outside=real invert=0.5/0/0 decomp=128 biomorph=1
+  colors=000<30>000AAK<4>AOSARUBUWBXYB__Bba<5>Dtn<6>8XcB42<21>gF8<3>SDF<3>\
+  N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<4>bNK332<14>svcsvcsvcs\
+  vc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5cB5`<6>KBLMCIOEK<3>WQUYSX_VZ`Y`<6>\
+  nru<15>OI5<2>VOBXQD_TFbVH<6>riVukXwmZzpawn`<3>jdWgaVcZT`WSYUR<5>EDL
+  cyclerange=32/255
+  }
+
+ckp1069            { ; "Iron Cross de Mandelbrot"
+                     ; 00:03:25.48 .. 07 december 1994 .. caren park
+  reset=1827 type=mandel
+  corners=-1.99641227779/-1.99634238565/-2.61600846608e-005/2.63393376012e\
+  -005 float=y maxiter=32000 bailoutest=and inside=255 logmap=yes
+  decomp=255
+  colors=000555006444003333002222000<2>00111100222200333300444400555500566\
+  600777700888800999900AAAA00AAAA00BBBB00CCCC00DDDD00EEEE00FFFF00FFFF00GGG\
+  G00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMMM00NNNN00OOOO00PPPP00QQQQ00QQQ\
+  Q00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWWW00XXXX00YYYY00ZZZZ00____00___\
+  _00````00aaaa00bbbb00cccc00dddd00eeee00eeee00ffff00gggg00hhhh00iiii00jjj\
+  j00jjjj00kkkk00llll00mmmm00nnnn00oooo00oooo00pppp00qqqq00rrrr00ssss00ttt\
+  t00tttt00uuuu00vvvv00wwww00xxxx00yyyy00zzzzzzz00zyyy00yxxx00xwww00wvvv00\
+  vttt00tsss00srrr00rqqq00qppp00onnn00nmmm00mlll00lkkk00jjjj00ihhh00hggg00\
+  gfff00eeee00dccc00cbbb00baaa00a```00____00ZYYY00YXXX00XWWW00VVVV00UUUU00\
+  TSSS00SRRR00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00\
+  EEEE00DDDD00CBBB00AAAA009999008888007777005555004000
+  cyclerange=3/254
+  }
+
+ckp1070            { ; "Pan Splat"
+                     ; 00:02:09.74 .. 07 december 1994 .. caren park
+  reset=1827 type=mandel
+  corners=-1.99641149149/-1.99634317191/-2.556946616e-005/2.57487191e-005
+  float=y maxiter=32000 inside=255 logmap=yes decomp=255
+  colors=00z00wwww00xxxx00yyyy00zzzzzzz00zyyy00yxxx00xwww00wvvv00vttt00tss\
+  s00srrr00rqqq00qppp00onnn00nmmm00mlll00lkkk00jjjj00ihhh00hggg00gfff00eee\
+  e00dccc00cbbb00baaa00a```00____00ZYYY00YXXX00XWWW00VVVV00U00U00TSSS00SRR\
+  R00QQQQ00PPPP00OOOO00NMMM00LLLL00KKKK00JJJJ00IHHH00HGGG00FFFF00EEEE00DDD\
+  D00CBBB00AAAA009999008888007777005555004444003333002222000<3>00111100222\
+  200333300444400555500555500666600777700888800999900AAAA00AAAA00BBBB00CCC\
+  C00DDDD00EEEE00FFFF00FFFF00GGGG00HHHH00IIII00JJJJ00KKKK00LLLL00LLLL00MMM\
+  M00NNNN00OOOO00PPPP00QQQQ00QQQQ00RRRR00SSSS00TTTT00UUUU00VVVV00VVVV00WWW\
+  W00XXXX00YYYY00ZZZZ00____00____00````00aaaa00bbbb00cccc00dddd00eeee00eee\
+  e00ffff00gggg00hhhh00iiii00jjjj00jjjj00kkkk00llll00mmmm00nnnn00oooo00ooo\
+  o00pppp00qqqq00rrrr00ssss00tttt00tttt00uuuu00v000
+  }
+
+ckp1071            { ; "Julia's Big Bang"
+                     ; 00:02:28.47 .. 07 december 1994 .. caren park
+  reset=1827 type=julia(fn||fn) function=atan/sqr
+  corners=-1.440256/1.440256/-1.080192/1.080192
+  params=-0.47999999999999998/-0.59999999999999998/0.044999999999999998
+  float=y bailoutest=or inside=zmag
+  colors=000BB0<2>330000003<14>00r<15>000<15>r00<15>000<15>0pp<12>0BB07704\
+  4000222<14>hhh<15>000<27>007017037<13>4S4<13>1A1181171151131000<15>rAr<1\
+  5>000<15>hh0<10>EE0
+  }
+
+ckp1072            { ; "Wheel with Identity Problem"
+                     ; 00:01:47.82 .. 07 december 1994 .. caren park
+  reset=1827 type=formula formulafile=dons.frm formulaname=inandout04
+  function=tan
+  corners=0.00309197776/-0.0108840361/-0.0559183047/0.0600842082/-0.057620\
+  601/0.0250317893 params=12/0.5 float=y maxiter=50 inside=period
+  potential=256/500/0
+  colors=00d<5>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K00M00<14>\
+  z00<14>N00K00J01<13>20I00K00M<14>00z<14>00N00K01J<13>0I20K00M0<14>0z0<14\
+  >0N00K01J0<13>I20K00M00<14>z00<13>80r40v20x00z<6>00f
+  }
+
+a1073              { ; 2d for ckp1072
+                     ; 00:17:46.43 .. 08 december 1994 .. caren park
+  reset=1821 type=formula formulafile=formulas.frm formulaname=f'liar1
+  function=abs
+  corners=-0.08402437/1.105278/-3.694721/4.652428/-3.652035/1.075091
+  params=4/3/2/1 inside=bof60 outside=mult decomp=256
+  colors=BE_BBO<3>BBLAAKCDK<14>kuC<15>AAK<15>z00<14>zvvzzzxvw<11>e5Oc0Kd1K\
+  <10>uFCvHCxIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzzyyz<21>bco`bo`bo<22>DGd\
+  BEcBEc<3>BE`BE`BDZ<17>BBO
+  }
+
+ckp1073            { ; "I WANT a Cookie NOW"
+                     ; 00:05:34.22 .. 08 december 1994 .. caren park
+  3d=yes filename=a1073.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=100 scalexyz=90/100 roughness=30 waterline=0 filltype=2
+  ambient=20 perspective=0 xyshift=0/0
+  colors=301<15>z0Xv0Vr0Tp0Sn0R<12>000<15>p0w<15>000<15>zzz<15>000L00<13>z\
+  00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<1\
+  4>000<15>00z<14>000 cyclerange=0/255
+  }
+
+ckp1074            { ; "Arrowheads"
+                     ; 00:09:03.04 .. 08 december 1994 .. caren park
+  reset=1821 type=formula formulafile=formulas.frm formulaname=f'liar1
+  function=sqrt
+  corners=0.3676936/0.65359789/-0.52440876/1.4821078/-0.48999858/0.6221755\
+  2 params=1/2/3/4 inside=bof60 outside=mult decomp=256
+  colors=000i45<2>s12w10z00<14>zvuzzyxvv<12>c0J<3>i6Hk7Hl8Gm9FoAE<3>uGCwHB\
+  xIAzK9zMA<14>zzT<15>9C_AD`BEb<46>xxxzzyyyy<45>DGcBEbBEb<29>BBKAAJCDJEGI<\
+  14>eed<14>AAJ<9>f56
+  }
+
+ckp1075            { ; "Steel Bath"
+                     ; 00:13:50.69 .. 10 december 1994 .. caren park
+  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  function=sin/log
+  corners=0.0326144695/0.0371544361/0.594347477/0.677842975/-0.00583332777\
+  /0.64556694 params=4 inside=maxiter potential=255/300/900 decomp=256
+  biomorph=1
+  colors=000<18>000<15>0pp<12>0BB077044000222<14>hhh<15>000<155>00A<2>000<\
+  12>000
+  }
+

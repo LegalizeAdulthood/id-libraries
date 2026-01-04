@@ -1,0 +1,68 @@
+
+Path: unixg.ubc.ca!vanbc.wimsey.com!news.mindlink.net!agate!news.Stanford.EDU!m
+orrow.stanford.edu!jumpjibe.stanford.edu!beale
+From: beale@jumpjibe.stanford.edu (John Beale)
+Newsgroups: sci.fractals
+Subject: dog images in qjulia, .par file
+Date: 6 Mar 1995 06:00:20 GMT
+Organization: Stanford University
+Lines: 53
+Distribution: world
+Message-ID: <3je8dk$be6@morrow.stanford.edu>
+NNTP-Posting-Host: jumpjibe.stanford.edu
+Keywords: fractint .par dog figure
+
+
+Fractal image of a dog (?), with .PAR file
+
+Background: I wrote a little program to use Fractint in batch mode to
+generate animations of a fixed region of a fractal, while varying the
+parameters (tracing out a sort of circle in 4-D parameter space).  I
+then make FLC files, which the very nifty and free DISPLAY v1.87 program
+for DOS can both generate and play automatically, from a set of GIFs.
+These animations are kind of interesting in their own right, but at 6
+MB are a bit large to post anywhere :-).
+
+Here a few zooms into an interesting frame of one such FLC, in the
+form of a PAR file.  There is a figure here which looks rather like a
+particular kind of small dog with a squarish muzzle and a little
+goatee, maybe you know the kind I'm thinking of. Although, this one is
+of the unicorn variety and seems to have a bit of dragon blood mixed
+in, so maybe I'm just getting carried away by imagination. Well, I
+think it looks kind of neat anyway.
+
+-John Beale <beale@jumpjibe.stanford.edu>
+
+
+-----parameter file for Fractint follows------------------------------
+
+quat3      { ; wide variety of curious shapes, 'stretched' regions
+             ; March 1995  by John Beale <beale@jumpjibe.stanford.edu>
+  reset=1720 type=quatjul
+  corners=0.6219958/1.0093238/0.0067763442/0.29727235
+  params=-0.741302/0.00306/0.115555/0.052555\
+  9999998 float=y periodicity=0
+  colors=000idX<2>nhcpjfoch<4>e2w<29>2sw0uv1uv<40>egngfmgem<24>bHWbHWbHX<4\
+  2>W5wV4xV3zqF2<44>tYluZnuZn<34>hRMgQLgQLgPL<10>bKO
+  }
+
+terrier1   { ; dogs discovered leaping through a julia quaternion
+  reset=1720 type=quatjul
+  corners=0.869580931/0.788242051/0.17847072/0.28692256/0.788242051/0.2869\
+  2256
+  params=-0.741302/0.00306/0.115555/0.052556 float=y periodicity=0
+  colors=000ln`<63>7Qcln`<9>kiWkhWln`khV<52>dH6dG6cF5bF5<28>AC3AC3AC4<44>Q\
+  RaRSbRSbRSb<40>eCZ
+  }
+
+terrier2   { ; close up of a figure which looks like a poodle, kind of
+  reset=1720 type=quatjul
+  corners=0.853683472/0.822123986/0.195678185/0.237757499/0.822123986/0.23\
+  7757499
+  params=-0.741302/0.00306/0.115555/0.052556 float=y periodicity=0
+  colors=000O57<43>jAEk5B<32>J21I10J31<18>hfXjiZjiZ<102>000455<4>200200300\
+  <41>O57
+  }
+
+
+

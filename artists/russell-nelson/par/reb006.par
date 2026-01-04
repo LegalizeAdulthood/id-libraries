@@ -1,0 +1,186 @@
+;------------------------------------------;
+; REB006.PAR                               ;
+; All images Copyright (c) by Ron Barnett  ;
+; 70153,1233                               ;
+; For private use only                     ;
+; For commercial use, please ask.          ;
+;------------------------------------------;
+
+Icky               { ; Ikenaga
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb006.frm
+  formulaname=ikenagaoriginal passes=b
+  corners=-1.955097/1.180903/-1.176/1.176 float=y maxiter=256
+  fillcolor=170 inside=epsiloncross potential=255/600/500
+  colors=CCC00A<125>U0UU0UU0T<52>U01U00U00U10<64>v`0va0vb0wc0xc0zc0
+  }
+
+Gateway            { ; Gateway into Spring
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb006.frm
+  formulaname=ikenagaoriginal
+  corners=0.311803905/0.372239105/0.37514384/0.42047024 float=y
+  maxiter=256 inside=zmag outside=mult
+  colors=jjVvqTvpT<4>ogSneSlcRjaR<4>aRQ`OPZMPXJPVHP<3>QBOP9NO8NN6MM5M<4>L3\
+  KL3KL4J<3>O6IP7HQ9H<5>XIEYJEZKE_ME`OD<3>bUBcVBdWBdXBdYA<3>c_8b`8b`8a`8``\
+  7<7>PX5NW5LV4JV4HU4<5>8Q26Q25P24P23P1<6>1S01T02U0<4>6`07a09c0<2>Dg0Ei0Gk\
+  0Il0<2>Np0Oq0Pr0Qs0Rt0<3>Vv0Vv0Wu0<2>Wt1Ws1Wr1Vq1Vo2<2>Tj2Sh3Qf3<11>CG6B\
+  E6BD7<5>959949A49A3A<3>E4BF4CG5CI6C<3>PAERCETDFVFFWGG<4>eOHfQIhRIiTJkUJ<\
+  3>oYKoZLp_Lp_Mp_M<2>p`No`No_O<2>lZPkZPjYPiXP<4>cTQaTR`SR_RSZRS<3>VQTVPTU\
+  PTUPTUQT<4>VTUVTUWVU<2>ZYV__Va`VbbVdcV<4>kkVmmVnnVpoV<2>tsVutVvtV<2>xvUx\
+  vUxuUxuU<3>wrT
+  }
+
+Neon               { ; Neon Jungle
+                     ; Ron Barnett 70153,1233, Copyright 1994
+  reset=1820 type=formula formulafile=reb006.frm
+  formulaname=ikenagaoriginal passes=b
+  corners=0.17825667/0.33505667/0.38584146/0.50344146 float=y
+  maxiter=256 fillcolor=170 inside=epsiloncross potential=255/600/500
+  colors=000_0R<2>O0b000<13>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>\
+  0000zz<14>z_0000<14>000zz0<14>0z0000<14>000m_m<14>zz0000<14>000000200<29\
+  >z00sKS<6>zA0<15>zz0<14>w03<4>c0N
+  }
+
+Uh-Oh              { ; You Name It
+                     ; Copyright 1994, Ron Barnett
+  reset=1820 type=formula formulafile=reb001.frm formulaname=Mask
+  function=cos/tan/sinh
+  corners=-3.608718/-0.1847084/-1.284013/1.283999 params=1 float=y
+  maxiter=256 inside=0 potential=256/220/500
+  colors=000zfT<205>D87D87D87C87C77C77<42>000
+  }
+
+Circle             { ; Circle of Darkness
+                     ; Copyright 1994, Ron Barnett
+  reset=1820 type=mandphoenix
+  corners=-1.76373365/-1.74653365/0.00895584551/0.0218558455 float=y
+  maxiter=32000 inside=0 outside=summ invert=1e-005/-1.75696/0.018476
+  colors=000ZYH<16>430530<30>xJTzKUyKU<30>642<29>wK0vK0<29>nlkmmmmml<29>vd\
+  2wc0vb0<29>nlkmmmmml<30>uuVvvUuuU<11>__I
+  }
+
+MandelStorm        { ; From the farthest depths of Ikenaga
+                     ; Copyright 1994, Ron Barnett
+  reset=1820 type=formula formulafile=reb001.frm
+  formulaname=IkenagaMap
+  corners=0.15282277729/0.153061797126/0.311563953738/0.31156132504/0.1529\
+  10086203/0.3114475416457 float=y maxiter=32000 logmap=yes
+  colors=000333122<31>axaczcbyb<28>652430431<29>Y9aZAcZAc<28>544332343<30>\
+  JaxKczKby<28>676554654<31>vUP<28>544
+  }
+
+MandelJewel        { ; Found in Deep Icky
+                     ; Copyright 1994, Ron Barnett
+  reset=1820 type=formula formulafile=reb001.frm
+  formulaname=IkenagaMap
+  corners=-0.000285254786853/-0.00108078514695/0.0632748707962/0.062730773\
+  483/-0.000310479006178/0.0633085030886 float=y maxiter=1024
+  inside=zmag outside=summ logmap=yes
+  colors=000lOC<2>bJ9ZH8VF7RD6MB5<4>000<5>RD6VF7ZH8bJ9eLAiNBlOC<3>uTEwUFxV\
+  FyVF<2>zVFzVFyVFxUFwUF<2>pRDnPCkOChMB<2>YH8UF7PC6LA5H84C63731220110<3>IF\
+  5MJ6PM7TP8<3>e`BhbCjdDmfD<2>rjFskFslFtlFtmG<2>skFrjFpiEnhEmfDjdDhbC<2>_V\
+  AXS9TP8PM7MJ6<2>982<21>aT9cUAbTA<22>A31<2>L63O73R84U94XA5<2>cD6eD6gE7iE7\
+  jF7kF7<4>lF7lF7kF7<3>eD6cC6`C6<4>N73K63G52<2>610200100<11>`5Bd6Cf6Dh7Di7\
+  D<7>000000<4>b6B<5>M36J35F24<3>100310731C63<3>UF7YH8`J9dKAhMB<2>pRDsSEuT\
+  EwUFxUFyVF<2>zVFzVFyVFxVF<4>oQD
+  }
+
+TwinSpirals        { ; Great Zoom into Mandellambda!
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=mandellambda
+  corners=1.02288342/1.02656388/0.24532414/0.24923557 maxiter=512 inside=0
+  colors=XKB<49>U31U31U42<66>5rb5rb6rb<4>Aq``nX<8>`tXauYauYauY<115>XKB
+  cyclerange=0/255
+  }
+
+Cornfield          { ; All it needs are crows!
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=barnsleym1
+  corners=-0.6424803/-0.6241355/-1.0832896/-0.897202/-0.72522/-0.9730039
+  colors=000H_uI`vIawJbwJcwKdx<2>LgyAV0<12>CX2DX2DX2EX3EX3<18>H`6I`6I`7Ia7Ia8J\
+  a8<4>KcALcALdAMdAMdB<7>PgDPgEPhEPhEQhF<20>WoNXoNXpNYpNYpO<8>`sR`tRatRatRbtRb\
+  tR<2>etRetRftRftRgtR<22>ttRutRutRutQ<5>utN
+  }
+
+
+SpaceFlower        { ; From the Fractal Gardener
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset=1828 type=formula formulafile=reb006.frm formulaname=cubicfn
+  function=ident corners=-2/2.000007/-1.500014/1.5 params=0/10/0/0/0/0
+  maxiter=32000 potential=255/200/32000 colors=@neon.map
+  }
+
+seahorse           { ; For the Fractal Aquarium
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset=1828 type=formula formulafile=rcl.frm
+  formulaname=rcl_logistic_1
+  corners=0.432275/0.63786733/-0.0254789/-0.299564/0.63786733/-0.299564
+  params=3/0.1/0/0/0/0 maxiter=1024 inside=0
+  colors=0006JF<20>7D97D97DA<124>1mn1mn1mm<94>NsP5LH<7>6JF
+  }
+
+LampShade          { ; Custom designed for your study
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset=1828 type=formula formulafile=reb006.frm formulaname=cubicfn
+  function=recip
+  corners=-2.001567/0.9984343/2.00001/-2.000016/0.9984343/-2.000016
+  params=1/0/0/0/0/0 maxiter=1000 potential=256/300/100
+  colors=000800bZL<17>jE2Vrc<44>ObPThbNaP<52>LK3LJ2LJ4Bnm<8>7moVrc<42>YJJV\
+  qc<39>I3IVrc<15>VbgVahV`hW_iVqb<15>a_N cyclerange=2/255
+  }
+
+birds              { ; Birds in flight from the Phoenix
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=formula formulafile=reb006.frm formulaname=Phoenix
+  corners=-0.1710369/-0.0718574/0.3163391/0.390742 params=0/0/1
+  maxiter=1024 inside=0
+  colors=000TCS<9>TEU3Ji<12>2Ji2Ji3Kj<48>gumgumftl<176>TDS
+  }
+
+Flight             { ; Flaming Birds
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=lyapunov passes=t
+  corners=2.805682/3.29989/3.40177/4.236431/2.58296/3.698733
+  params=49/0.99 float=y inside=0 colors=@volcano.map
+  }
+
+Twirl              { ; From the Mandelbrot function
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset type=mandel
+  corners=-1.2499807677/-1.2499691693/0.009695079/0.0095431145/-1.2499037395/0\
+  .0095922476 float=y maxiter=10000 inside=0 colors=@neon.map
+  }
+
+Phoenix            { ; Classic Twin Phoenix Birds from different formula 
+                     ; Ron Barnett 70153,1233, Copyright 1993
+  reset=1900 type=formula formulafile=reb006.frm formulaname=phoenix
+  corners=-1.496/1.496/-1.122/1.122 params=0.56667/0/-0.5/0/0/0
+  float=y maxiter=256
+  colors=G00<3>H00I00K00L00<4>U00W00Z00`00b00e10<2>k60mA0oE0qI0sO0<2>wg0xm\
+  0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e10<4>U00S00Q00O00M0\
+  0L00K00I00<2>G00G00G00G00G00H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60mA\
+  0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e1\
+  0<4>U00S00Q00O00M00L00K00I00<2>G00G00G00G00G00H00H00<2>L00M00O00Q00<4>`0\
+  0b00e10g20i40k60mA0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI\
+  0oE0mA0k60i40g20e10<4>U00S00Q00O00M00L00K00I00<2>G00G00G00G00G00H00H00<2\
+  >L00M00O00Q00<4>`00b00e10g20i40k60mA0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw\
+  0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e10<4>U00S00Q00O00M00L00K00I00<3>G00
+  }
+
+ForestFire         { ; Forest Fire out of control
+                     ; Ron Barnett 70153,1233, Copyright 1995
+  reset=1900 type=mandelfn function=cosxx
+  corners=-6.515209/-6.4728129/0.0239688/0.0557555 params=0/0 float=y
+  maxiter=1024 bailout=2500 inside=0
+  colors=G00<3>H00I00K00L00<4>U00W00Z00`00b00e10<2>k60mA0oE0qI0sO0<2>wg0xm\
+  0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e10<4>U00S00Q00O00M0\
+  0L00K00I00<2>G00G00G00G00G00H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60mA\
+  0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e1\
+  0<4>U00S00Q00O00M00L00K00I00<2>G00G00G00G00G00H00H00<2>L00M00O00Q00<4>`0\
+  0b00e10g20i40k60mA0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0wg0v`0<2>qI\
+  0oE0mA0k60i40g20e10<4>U00S00Q00O00M00L00K00I00<2>G00G00G00G00G00H00H00<2\
+  >L00M00O00Q00<4>`00b00e10g20i40k60mA0oE0qI0sO0<2>wg0xm0yr0zw0zy0zz0zy0zw\
+  0yr0xm0wg0v`0<2>qI0oE0mA0k60i40g20e10<4>U00S00Q00O00M00L00K00I00<3>G00
+  }
+

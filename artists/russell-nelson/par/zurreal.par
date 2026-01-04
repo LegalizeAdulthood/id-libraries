@@ -1,0 +1,145 @@
+; Fractint PARameter file by Les St Clair, 101461.2032@compuserve.com, 1996
+;
+; All images require the formula "ZURREAL" which can be found in the
+; Fractint formula file "SURREAL.FRM" by Vincent Damion Presogna [76455,2222]
+; It is reproduced here for convenience:
+;
+;    Zurreal { 
+;    z = pixel:
+;    z = fn1(z) + pixel
+;    z = fn2(1/sqr(z))/z + p1 
+;    |z| <= 4
+;    }
+;
+; Credit: Many of the colour MAPs used here have been extracted from Fractals
+; previously created by Bob Carr [75753,2420]
+; WARNING: the images "discovery", "fractal_blossoms" and "hawk" contain
+; integer artifacts which will dissapear if float=y is selected. Consequently,
+; they may not be properly rendered in versions of Fractint other than 19.2
+
+
+
+yin_and_yang       { ; Les St Clair 1996 101461.2032@compuserve.com  t=0m35s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=exp/sin passes=1
+  corners=-0.016780763/-0.27064712/0.044430635/0.38291911/-0.27064712/0.38\
+  291911 params=0/3/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=000<25>000000112<8>8CF9EHAFIBHKCILDKN<3>JEHLDFMCEOBD<8>`00<15>yfF\
+  <12>bd3ad2_d1Zd0Zb3<13>YGrYFvWGr<14>0`0<15>ww0000<115>000
+  }
+
+darth_vader        { ; Les St Clair 1996 101461.2032@compuserve.com  t=0m28s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=sin/tan
+  corners=-0.3527562/-1.682384/-0.8993467/0.8734904/-1.682384/0.8734904
+  params=2/0/0/0/0/0 float=y potential=255/200/0
+  colors=100`70Z40W00BGJ<22>111000000000<52>f00000<94>000000011122<11>AFHB\
+  GJAFH<14>000<22>l00q50<10>zg0<8>cB0
+  }
+
+discovery          { ; Les St Clair 1996 101461.2032@compuserve.com  t=2m23s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=cosh/cotan passes=1
+  corners=-0.1827113241/-0.3412809159/0.0215353679/-0.0770433258/-0.192475\
+  6381/0.0345610667 params=0.71/-1.33/0/0/0/0 inside=0
+  potential=255/300/0
+  colors=011G49<4>311000033<22>0xz<15>077<15>1IP1JQ000<45>000000122<12>BGJ\
+  FJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<4>W13V24U25U36T36S37<\
+  4>N5BM6CJ5A
+  }
+
+eruption           { ; Les St Clair 1996 101461.2032@compuserve.com  t=3m24s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=acos/tan passes=1
+  corners=0.81310392/1.8013228/-0.86839655/0.98003504/0.28161557/-0.159745\
+  4 params=0/0/0/0/0/0 float=y potential=255/200/0
+  colors=100`70Z40W00BGJ<22>111000000000<52>f00000<94>000000011122<11>AFHB\
+  GJAFH<14>000<22>l00q50<10>zg0<8>cB0
+  }
+
+trumpets           { ; Les St Clair 1996 101461.2032@compuserve.com  t=2m27s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=atan/tan passes=1
+  corners=0.831041362/0.853561698/0.536195655/0.588917072/0.813842402/0.55\
+  9127601 params=0/0/0/0/0/0 float=y potential=255/200/0
+  colors=QXbPW`RZd<9>_nx`oz_mx<21>777FFF<23>zo`<22>FFF<24>yUF<22>FFF<14>`0\
+  0sss00F<23>0oz<21>02H00F000<23>h00<22>000FFF<9>OUZ
+  }
+
+fractal_blossoms   { ; Les St Clair 1996 101461.2032@compuserve.com  t=12m18s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=cotanh/tan passes=1
+  corners=-0.34059593/0.20409856/-1.2975836/-0.16226056/-0.68945602/-0.832\
+  42938 params=0.33/-0.22/0/0/0/0 inside=123 potential=255/300/0
+  colors=000<115>000000112<8>8CF9EHAFIBHKCILDKN<4>LDFMCEOBDPABR8AS78<5>`00\
+  <15>yfF<12>bd3ad2_d1Zd0Zb3<13>YGrYFvWGr<14>0`0<15>ww0000<25>000
+  }
+
+hawk               { ; Les St Clair 1996 101461.2032@compuserve.com  t=1m52s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=exp/sin passes=1
+  corners=-5.360404/-3.391637/3.162357/-3.329882/-1.535373/-1.937684
+  params=-0.7/-1.33/0/0/0/0 inside=0 potential=255/300/0
+  invert=2.3/0/0
+  colors=0110EI<20>1Te1Uf000<30>000000122<12>BGJFJV<13>W`uXawW_u<14>H5S<24\
+  >zo`<22>cUA<8>000<22>`00<4>W13V24U25U36T36S37<4>N5BM6CJ5A<6>000<23>0xz<1\
+  5>077<8>0DH
+  }
+
+targets            { ; Les St Clair 1996 101461.2032@compuserve.com  t=0m47s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=cosh/cotan passes=1
+  corners=0.9776865/-2.6634717/-1.805221/1.0529023/-1.7050297/1.7717341
+  params=0.71/-1.33/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=011311000<23>0xz<15>077<15>1IP1JQ000<45>000000122<12>BGJFJV<13>W`\
+  uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<3>X12W13V24U25U36<2>R38Q49P49O\
+  5AN5BM6C<5>513
+  }
+
+vapour_trail       { ; Les St Clair 1996 101461.2032@compuserve.com  t=1m25s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=zurreal
+  function=cosxx/cos passes=1
+  corners=-0.66787393/-0.13959773/-1.024043/-1.2774919/-0.35603903/-1.4398\
+  229 params=0.54/0.1/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=08B9DG<18>111000000000<52>f00000<94>0000000220450680AE<9>1Uf<12>0\
+  67045022000100<22>l00q50<10>zg0<11>W00BGJ<2>AEH
+  }
+
+alpine_horns       { ; Les St Clair 1996 101461.2032@compuserve.com  t=1m35s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=Zurreal
+  function=exp/sin passes=1
+  corners=-2.668361/0.9056037/-1.353829/1.326645
+  params=-2/0.002/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=000<5>D00F00G00<6>T00V00V10<28>qa9rcAqbA<29>F21D00D03<15>00x<29>0\
+  02000100<30>z0p<15>W0R000<29>IaIJcJJcJ<42>222212101000100
+  }
+
+dolphin_nose       { ; Les St Clair 1996 101461.2032@compuserve.com  t=0m52s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=Zurreal
+  function=recip/sin passes=1
+  corners=0.7675846/0.24626894/0.2820806/0.97716814/0.24626894/0.97716814
+  params=-2/-0.6/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=08BU00<15>f00000<94>0000000220450680AE<9>1Uf<12>067045022000100<2\
+  2>l00q50<10>zg0<11>W00BGJ<22>111000000000<35>T00
+  }
+
+daisy_chain        { ; Les St Clair 1996 101461.2032@compuserve.com  t=4m28s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=Zurreal
+  function=sqr/asin passes=1
+  corners=0.917917552/0.839306378/-0.12226266/-0.40324622/1.02448963/-0.26\
+  435877 params=0.5/0.5/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=011qfZ<4>zo`<22>cUA<8>000<22>`00<4>W13V24U25U36T36S37<4>N5BM6CJ5A\
+  <6>000<23>0xz<15>077<30>1Te1Uf000<30>000000122<12>BGJFJV<13>W`uXawW_u<14\
+  >H5S<18>odZ
+  }
+
+jagged_little_pill { ; Les St Clair 1996 101461.2032@compuserve.com  t=3m18s
+  reset=1920 type=formula formulafile=surreal.frm formulaname=Zurreal
+  function=recip/acos passes=1
+  corners=2.142711/-0.716496/2.161643/0.01723817
+  params=0.5/0.5/0/0/0/0 float=y inside=0 potential=255/300/0
+  colors=011dVBcUA<8>000<22>`00<4>W13V24U25U36T36S37<4>N5BM6CJ5A<6>000<23>\
+  0xz<15>077<30>1Te1Uf000<30>000000122<12>BGJFJV<13>W`uXawW_u<14>H5S<24>zo\
+  `<20>eWC
+  }
+

@@ -1,0 +1,186 @@
+;   
+;	Barnsley fractals 
+;	please send comments
+;	Karl Geigl, CIS 100327,156
+;
+;
+
+b01                 { ; special tool
+  reset type=barnsleyj2 passes=b
+  corners=-3.491997/3.491984/-3.49201/3.491997 params=1234567/9876543
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=000000gXH<7>zpZ<14>SL3PI0MF0LG1<13>7Oq5Pu6Pr<8>GILHIHIHDJH9KG5LG1\
+  MF0OH0<13>kmk<13>QK4OI1MF0<4>KP0KR0JT1JV2<6>Gi6Fk7Gi6<6>KV3KT2KR1KP0KN0<\
+  2>MH0MF0LI0<13>EqhDtkEqh<12>KL4LI1MF0<15>zH0<15>MF0<15>ww0<15>MF0OF0<14>\
+  wE`<14>PE0<3>YO9000bTD
+  }
+
+b02                  { ; flying wheels
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5
+  params=123456/12 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000EDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6\
+  QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE\
+  <6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kk\
+  i<18>005332<17>zpa<12>UPFMJI
+  }
+
+b03                { ; bring it together
+  reset type=barnsleyj2
+  corners=-4.29787/-0.2978733/-0.6686116/2.331384 params=333/123456789
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=000D66<7>XGGZHH`IIbJJdKKeLLgMM<5>oQQpQQpQQ<2>rRRrRRrRRrRRrRR<3>pQ\
+  QoQQnPPmPPkOOjNN<4>bJJ`IIZHHXGGUFFSEE<10>000<8>BNNDQQESSFUU<3>JbbKddLeeM\
+  gg<5>QooQppQpp<2>RrrRrrRrrRrrRrr<3>QppQooPnnPmmOkkNjj<4>JbbI``HZZGXXFUUE\
+  SS<8>255122221<7>NNBQQDSSEUUF<3>bbJddKeeLggM<5>ooQppQppQ<2>rrRrrRrrRrrRr\
+  rR<3>ppQooQnnPmmPkkOjjN<4>bbJ``IZZHXXGUUFSSE<10>000<8>BBNDDQEESFFU<3>JJb\
+  KKdLLeMMg<5>QQoQQpQQp<2>RRrRRrRRrRRrRRr<3>QQpQQoPPnPPmOOkNNj<4>JJbII`HHZ\
+  GGXFFUEES<10>000<3>A55
+  }
+
+b04                { ; cutted wheels
+  reset type=barnsleyj2 passes=t corners=-2/1.999997/-1.499996/1.5
+  params=222/33 maxiter=155 inside=maxiter potential=222/222/888
+  colors=@mish9.map
+  }
+
+b05                  { ; connector
+  reset type=barnsleyj2 corners=-7.055999/7.056025/-7.056005/7.055999
+  params=3456/33 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000DC8AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kki<18>005\
+  332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7\
+  Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16\
+  >2I6IIAZJE<6>wgF<8>XKDUHDSGC<4>FC8
+  }
+
+b06                  { ; needles and ...
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5 params=33/99
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=00055h<2>00h<15>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3\
+  FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>\
+  p0w<15>000<15>zzz<3>jjj<3>ddjccjbbjaaj__j<19>66h
+  }
+
+b07                { ; broken wheel
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5 params=22/1
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=000NQPKNLJKGHICFF6CC2GD4KE7NE7RFAUGCZHEaJHfKJ<2>qNPuOSzQTzRVzSXzT\
+  ZzSXzRTyPQtOMpMJkLFhKCcI9ZI7TI5PI3JJ1CJ08J02J02K04L2<4>9OIBPMBPO9RT7TX5V\
+  a3Xd1Zh<2>0du0bq0_m0Yi1Xf1V`3TY4QU6PQ7MK4LF2LB0J60J20H00H00I00J20J43MC6O\
+  LBQTESaJViMXqQZz<3>dgzgizllz<6>XXzVVvTSpPSkNQe<2>GMPDLKAJE7I97J97L99NFBP\
+  KCRQFUVGW`JYeK_jMbpOdvRfz<2>WlzUjzShzQezOcxLasKZnIXiFUdFS`CPWANQ7KL6IH3G\
+  C031000224<2>DDHHHMKKRONVRQZVUcZXia`lecqigvmjzomzspz<2>spzpnznlzkjzhhxfg\
+  ubdqacoY`kVZiTYfPWcMT_LSYHPUENSFNMFMHEMAEL5FK1EK0FJ0<7>dL0aK0<5>BG0<5>9H\
+  09I59J89JDBLFEOIIQLLSNOURRXRUZV<7>uqnrnlnlkljjjhiffhdcgaae_`eWYcUWbRT`NR\
+  _LPZJNYFLXCIWEKYGN_IPaKRdNUgOXiRZlS`nUbpXetZgv`ixbkz<2>iszgpzfnzclwbhs<2\
+  >V`fTYaSWZPTU
+  }
+
+b08                  { ; double spoon
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5
+  params=222/222 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000EDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6\
+  QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE\
+  <6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE<13>kk\
+  i<18>005332<17>zpa<12>UPFMJI
+  }
+
+b09                  { ; fix it
+  reset type=barnsleyj2 passes=b corners=-2/1.999997/-1.499996/1.5
+  params=333333333/2 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7\
+  >14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6\
+  IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zjF<13>RCCEEE\
+  <13>kki<18>005332<17>zpa<11>XRH
+  }
+
+b10                  { ; xyz
+  reset type=barnsleyj2 passes=b corners=-2/1.999997/-1.499996/1.5
+  params=66666/12 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000RCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWB\
+  XY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>S\
+  DF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<1\
+  0>svcsvc<20>200pdJ<5>zjF<12>UFC
+  }
+
+b11                { ; frisbee under construction
+  reset type=barnsleyj2 passes=b
+  corners=0.86915374/1.1305625/-0.097526074/0.0985201 params=22/22
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=000VVU<6>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6\
+  >DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4\
+  >L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>sv\
+  csvc<20>200pdJ<5>zjF<13>RCCEEE<5>TTS
+  }
+
+b12                 { ; new hub
+  reset type=barnsleyj2 passes=t
+  corners=0.91364104/1.099763/-0.63956207/0.66372436/0.35506475/0.10518378
+  params=33/33 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000WHCUFCRCCEEE<13>kki<18>005332<17>zpa<12>UPFMJIEDLAAK<3>ALQAOSA\
+  RUBUWBXY<6>DqlDtnCqm<2>BghAdg9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>z\
+  H0<8>SDF<4>L0KB8D1H5<19>Q`5Sa6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB700\
+  0HIC<10>svcsvc<20>200pdJ<5>zjF<10>ZKD
+  }
+
+b13                 { ; 2 bells
+  reset type=barnsleyj2 passes=t
+  corners=0.861264646/1.13407546/-0.121751666/0.122742474/0.842092037/-0.0\
+  962251425 params=66666/12 maxiter=155 inside=maxiter
+  potential=222/222/888
+  colors=000444<27>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<2>TY0QW0OU0\
+  LS0JQ0<7>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcR100ibR<14>UPF111333
+  }
+
+b14                 { ; hub in the night
+  reset type=barnsleyj2
+  corners=0.50167525/1.4507762/-0.35622537/0.35558897 params=33/33
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=000U00<14>200000001<30>00z<30>002000100<30>wPF<31>000<31>a0a000_0\
+  _<13>I0IH0HG0GF0FD0DC0C<8>101000100<30>w00<14>W00
+  }
+
+b15                 { ; 2 mirror system
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5 params=4/12
+  maxiter=155 inside=maxiter potential=222/222/888
+  colors=0000FF<5>0OO0QQ0TT0VV4YY<3>PhgUjj`mmeoojrrptttwwzzzwxy<6>OggJeeFb\
+  b<2>0WW0TT0RQ0OO<5>0FF0ED0CC0BB089<4>012000202616<2>E2DH2GK3JN3MQ4P<5>g6\
+  gj7jk9kkDk<3>pRpqVrrYrrartetuhuvlvvpwxsxywyzzzzxzytywqxwmwvivufusbss_srW\
+  sqSqpPpnLonHnlEllAlj7jh6hd6db5bZ5ZX4XT4TR4RN3NL3LH2HF2FB1B<3>000<8>55065\
+  0660670<2>880990CB0<3>PP0TT4WW9ZZFbbMefRiiYmmbppi<2>zzzxxvttpqqjnndjjZfg\
+  SccN``G<2>QQ0<3>CC0990880<14>000300722A23E44H44L65O67S88V98ZAAaAAeCChDDm\
+  EEoFFtGG<4>uUUvXXw_`wbbveexhhwkkynnxqqzttywwzzzzxxzuuyrrzooxllyiiwffxccx\
+  `awYYwVVuSSvPPuMMuJJtGGqFFmEEjDDeCC<4>P77L65I55<4>000<4>0770890AA0CC0DD
+  }
+
+b16                 { ; 2 wheels
+  reset type=barnsleyj2 corners=-2/1.999997/-1.499996/1.5
+  params=555555/12 maxiter=155 inside=maxiter potential=222/222/888
+  colors=000RZlS`nUbpXetZgv`ixbkz<2>iszgpzfnzclwbhs<2>V`fTYaSWZPTUNQPKNLJK\
+  GHICFF6CC2GD4KE7NE7RFAUGCZHEaJHfKJ<2>qNPuOSzQTzRVzSXzTZzSXzRTyPQtOMpMJkL\
+  FhKCcI9ZI7TI5PI3JJ1CJ08J02J02K04L2<4>9OIBPMBPO9RT7TX5Va3Xd1Zh<2>0du0bq0_\
+  m0Yi1Xf1V`3TY4QU6PQ7MK4LF2LB0J60J20H00H00I00J20J43MC6OLBQTESaJViMXqQZz<3\
+  >dgzgizllz<6>XXzVVvTSpPSk<2>INVGMPDLKAJE7I97J97L99NFBPKCRQFUVGW`JYeK_jMb\
+  pOdvRfz<2>WlzUjzShzQezOcxLasKZnIXiFUdFS`CPWANQ7KL6IH3GC031000224<2>DDHHH\
+  MKKRONVRQZVUcZXia`lecqigvmjzomzspz<2>spzpnznlzkjzhhxfgubdqacoY`kVZiTYfPW\
+  cMT_LSYHPUENSFNMFMHEMAEL5FK1EK0FJ0<7>dL0aK0<5>BG0<5>9H09I59J89JDBLFEOIIQ\
+  LLSNOURRXRUZV<7>uqnrnlnlkljjjhiffhdcgaae_`eWYcUWbRT`NR_LPZJNYFLXCIWEKYGN\
+  _IPaKRdNUgOXi
+  }
+
+b17                 { ; frisbee
+  reset type=barnsleyj2 passes=b corners=-22/22/-22/22 params=1/1
+  float=y maxiter=155 inside=maxiter potential=222/222/888
+  colors=000000gXI<7>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2\
+  MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1JT2JV3<6>Gi7Fk8Gi7<6>KV4KT3KR2KP1K\
+  N1<2>MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>MF0OF1<\
+  14>wEa<14>PE1<3>YOA000bTE
+  }
+
+b18                { ; cutted ring
+  reset type=barnsleyj2 passes=b corners=-9.328/9.328/-9.328/9.328
+  params=5/5 float=y maxiter=155 inside=maxiter potential=222/222/888
+  colors=000_30<5>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH3FE4EI4DL3000<4>0005k\
+  20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>000<15>zzz<3>\
+  jjj<3>ddjccjbbjaaj__j<22>22h00h10e<14>G73I80K70<6>Y40
+  }
+

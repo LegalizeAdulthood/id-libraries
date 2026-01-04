@@ -1,0 +1,134 @@
+{
+Thore,
+
+At the end of this message you will find a message I got from
+bg570@FreeNet.Carleton.CA (Bob Beland) back in June of 97. It tells the whole
+story on COLORS=.
+
+I wrote a Pascal procedure to do the translation but I can't seem to fine it
+right now. Maybe on my other computer ...
+
+Bill Decker
+
+
+thbernt@online.no on 10/17/99 04:07:19 PM
+
+Please respond to fractint@lists.xmission.com
+
+To:   fractint@xmission.com
+cc:    (bcc: William J Decker/CIV/CSC)
+Subject:  (fractint) colors= parameter
+
+In FRACTINT.DOC we find the following description of the COLORS=
+parameter in parfiles:
+
+COLORS=colorspecification specifies the colors directly. The value of
+"colorspecification" is rather long (768 characters for 256 color
+modes), and its syntax is not documented here.  This form of the
+COLORS=
+command is not intended for manual use - it exists for use by the <B>
+
+I need the syntax for this parameter for the next version of my Fractint
+Screen Saver. Can anyone help me? (Tim?)
+
+Thore Berntsen
+Norway
+
+If You want a screen saver for Fractint please go to :
+
+http://home.sol.no/~thbernt/Fintsave.htm
+
+Bill Decker (wdecker@nospam.com) writes:
+      > I'd like to add the capability to write Fractint PAR files from a
+      > fractal generating program. As part of the PAR I need to generate a
+      > COLORS statement. However, I find the following in the Fractint
+      > documentation file:
+      >
+      > COLORS=colorspecification specifies the colors directly. The value of
+      > "colorspecification" is rather long (768 characters for 256 color
+      > modes), and its syntax is not documented here.  This form of the COLORS=
+      > command is not intended for manual use - it exists for use by the <B>
+      > command when saving the description of a nice image.
+      >
+      > Could someone direct me to the source of the syntax description?
+
+Use the Source, Luke...
+
+or, reverse engineer. Notice that it says 768 characters. That is exactly
+three times 256 the number of colors. It seems, then, that it stores each
+color as a three character code. What's more, each character probably
+represents one component, red, green, and blue. I would suggest making
+a palette in Fractint that has the first 64 colors greys from black to
+white, then black to red, black to green, and black to blue. Then save it
+in a par file and see what comes out. In fact I did it myself:
+}
+
+test1              {
+  reset=1930 type=mandel center-mag=-0.5/0/0.6666667 params=0/0
+  float=y maxiter=5000 inside=0 logmap=yes periodicity=0
+  colors=000<62>zzzzzzzyy<61>z00000<62>0z0000<62>00z
+  }
+
+{
+Well, this is a surprise. Definitely not 768 characters. But, perhaps
+straight sequences of colors get compressed with an interpolation thing.
+The 61 and 62 stuff looks like it might mean "the 62 colors between can be
+interpolated"...
+
+So, I make another palette, same as before but alternating colors: one
+from the greys, one from the reds, one from the greens, one from the blues...
+}
+
+test2              {
+  reset=1930 type=mandel center-mag=-0.5/0/0.6666667 params=0/0
+  float=y maxiter=5000 inside=0 logmap=yes periodicity=0
+  colors=000<2>00011110001000122220002000233330003000344440004000455550005\
+  0005666600060006777700070007888800080008999900090009AAAA000A000ABBBB000B\
+  000BCCCC000C000CDDDD000D000DEEEE000E000EFFFF000F000FGGGG000G000GHHHH000H\
+  000HIIII000I000IJJJJ000J000JKKKK000K000KLLLL000L000LMMMM000M000MNNNN000N\
+  000NOOOO000O000OPPPP000P000PQQQQ000Q000QRRRR000R000RSSSS000S000STTTT000T\
+  000TUUUU000U000UVVVV000V000VWWWW000W000WXXXX000X000XYYYY000Y000YZZZZ000Z\
+  000Z____000_000_````000`000`aaaa000a000abbbb000b000bcccc000c000cdddd000d\
+  000deeee000e000effff000f000fgggg000g000ghhhh000h000hiiii000i000ijjjj000j\
+  000jkkkk000k000kllll000l000lmmmm000m000mnnnn000n000noooo000o000opppp000p\
+  000pqqqq000q000qrrrr000r000rssss000s000stttt000t000tuuuu000u000uvvvv000v\
+  000vwwww000w000wxxxx000x000xyyyy000y000yzzzz000z000z
+  }
+
+{
+Now obviously \ is used to break lines longer than 80 characters, because
+it only appears at the ends of split lines.
+Note the first part: 000<2>000. The first four colors were black. So, 000
+is black. The 2 must be to interpolate the four from the first and last. I
+was right.
+At the end, the last 12 characters are: zzzz000z000z
+zzz
+z00
+0z0
+00z
+
+The colors were: white, red, green, blue.
+So, I was right about one character for one RGB value. And they are in the
+order: red, green, blue. And 0 means zero, and z means 64.
+
+In order from 0 to 64, the letter codes are:
+
+0-9  zero to nine
+A-Z  ten to 36
+_    37
+`    38   (reverse apostrophe typically found with tilde (~))
+a-z  39-64
+
+xxx<12>yyy means that after color xxx there are twelve more colors, then
+color yyy, and the twelve are continuous gradations from xxx to yyy, so
+the first should be xxx plus one thirteenth (yyy-xxx), and so on.
+xxx\   means line break, ignore the \ and all contiguous following whitespace
+and consider the string conjoined.
+
+There you have it. I reverse engineered the syntax of "colors="
+
+--
+* Bill Decker                        | Customary disclaimer ... etc. *
+* wdecker@csc.com                    | Computer Sciences Corporation *
+*     < It isn't procrastination if you put it off right away. >     *
+}

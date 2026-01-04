@@ -1,0 +1,86 @@
+; I've come out of the computer room.  Here a few .PAR files that occurred
+; ov a period of about a year.  I would be very much interested in any 
+; comments that anyone may have.  Send the comments and I'll tell you why
+; they interest me.  
+; Nelson HInmancompuserve: 70743,1651
+;              internet:   nhinman@agsm.ucla.edu
+;              GEnie:      n.hinman4
+; 
+;the flip.frm formula file is included for your edification
+;
+curly-mandel       { ; warped mandelbrot
+  reset type=mandel passes=1 corners=-1.941856/0.906144/-0.450263/0.450263
+  params=0.8 float=y maxiter=10000 inside=bof61 outside=mult finattract=y
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000
+  }
+
+mand-func          { ; warped mandelbrot
+  reset type=mandelfn function=cosxx passes=1
+  corners=-0.0570391/0.0069609/-0.444676/0.444676/-1.5930391/-0.444676
+  float=y maxiter=10000 inside=bof61 outside=mult finattract=y
+  }
+
+formflip           { ; uses the flip.par this one takes a while
+  reset type=formula formulafile=flip.frm formulaname=flip0_man_j
+  corners=-2.0/2.000012/-1.500014/1.5 float=y maxiter=10000 inside=bof60
+  outside=real decomp=256 biomorph=2
+  colors=000ONB<7>J_4Ia3Ia4<16>LeTLeUMdVNcWOcX_Ka<12>AYqdHZ<11>Y8fdHZ<22>yLq`L\
+  X<5>DnFdHY<16>kK1dHZ<21>yGJeFa<3>i7meKX<8>rj9`HZ<5>BDZdJZ<14>ouYbKX<9>At3vzE\
+  cJ_<11>PhmeIY<8>tYOcHZbI_`J_bH`_K`<19>8_j<10>U3PX0MX1M<12>PMB
+  }
+
+whatisit           {  ;where did this come from?
+  reset type=cmplxmarksjul corners=-2.0/2.0/-1.5/1.5 params=0.3/-0.5/1
+  float=y maxiter=10000 potential=50/35/20 invert=1/0.103/-0.103
+  }
+
+cmplx001           {
+  reset type=cmplxmarksjul corners=-2.0/2.0/-1.5/1.5 params=0.3/-0.5/1
+  float=y maxiter=10000 potential=50/35/20 invert=1/0.103/-0.103
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGhlmaeVSWH<2>\
+  nG300k_OP
+  }
+
+cmpls002           { ; built with marks mandel
+                     ; N H 
+  reset type=cmplxmarksjul corners=-2.0/2.0/-1.5/1.5 params=0.3/-0.5/1
+  float=y maxiter=10000 potential=50/35/20 invert=1/0.103/-0.103
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGhlmaeVSWH<2>\
+  nG300k_OP
+  }
+
+sqr001             { ; sqr with cos
+  reset type=sqr(1/fn) function=cos
+  corners=-1.575714/1.566025/-0.947952/0.952377/-0.96907/-0.947952
+  bailout=9 outside=imag potential=6/19/0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+
+sqr002             { ; sqr with cos 
+  reset type=sqr(1/fn) function=cos
+  corners=-1.575714/1.566025/-0.947952/0.952377/-0.96907/-0.947952
+  outside=imag potential=9/23/5
+  }
+
+

@@ -1,0 +1,331 @@
+;These pars explore some of the possibilites of pseudo-hicolor julia sets.
+;Timings are in minutes and seconds on a P100
+
+Julia2s001         { ;Starfish whirlpool (c) Jim Deutch, 1996 1:56
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.394984/0.218593/2.207506
+  params=-0.52/0.52/-0.5570000000000001/0.659/0/0 float=y maxiter=512
+  outside=real
+  colors=0009mzB5L<5>J9`KAcJDc<13>1w`0zP<12>zP0<12>XWq<4>cKmzmK<4>ymK<3>xg\
+  `weewfa<2>vlPunKunKtoK<2>vu5zw0<26>KA0MUc<4>z00<4>XMl<13>kBymAzlAx<20>85\
+  E64B449236248<9>AFSBGUAFS<14>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>YFw<2>s\
+  ff0o`000<14>zo`<15>000000<5>84G
+  }
+
+Julia2s002         { ;Breakers (c) Jim Deutch, 1996 5:12
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.571386/0.0107337/3.344034
+  params=-0.52/0.52/-0.83/0.165/0.13/0.2 float=y maxiter=512 logmap=7
+  colors=000<4>P00<2>RR7JX4Ac0Oc5bcA<4>zP0<9>cUe<3>zzz<3>cKmzmK<4>ymK<3>xg\
+  `weewfa<2>vlPunKunKtoK<2>vu5zw0<26>KA0MUc<4>z00<4>XMl<13>kBymAzlAx<20>85\
+  E64B449236248<9>AFSBGUAFS<14>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>YFw<2>s\
+  ff0o`000<14>zo`<15>000000<5>84G9mzB5L<5>J9`KAcJDc<10>5ma
+  }
+
+Julia2s003         { ;Galaxies Colliding (c) Jim Deutch, 1996 1:45
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.40249/0.0107337/1.779026
+  params=-0.52/0.52/-0.83/0.28/0.13/0.2 float=y maxiter=512 logmap=7
+  colors=000359<4>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>YFw<2>sff0o`000<14>z\
+  o`<15>000000<5>84G9mzB5L<5>J9`KAcJDc<9>6ja5ma500<3>P00<2>RR7JX4Ac0Oc5bcA\
+  <4>zP0<9>cUe<3>zzz<3>cKmzmK<4>ymK<3>xg`weewfa<2>vlPunKunKtoK<2>vu5zw0<26\
+  >KA0MUc<4>z00<4>XMl<13>kBymAzlAx<20>85E64B449236248<9>AFSBGUAFS<8>46B
+  }
+
+Julia2s004         { ;Tropical Reef (c) Jim Deutch, 1996 2:17
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.368652/0.258543/2.616431
+  params=-0.508/0.62/-0.52/0.52/0/0 float=y maxiter=4096
+  colors=zzz300113<4>84G000B5L<5>J9`<3>UU0<3>BXb<3>6ja5ma500<3>P00<2>RR7JX\
+  4Ac0Oc5bcA<4>zP0<9>cUe<3>zzz<3>cKmzmKzmKzmKymK<5>hA0<4>rgGunKunKtoK<2>vu\
+  5zw0<13>dY0<4>0A0<4>PG0<2>KA0MUc<4>z00<4>XMl<13>kBymAzlAx<20>85E64B44923\
+  6248<9>AFSBGUAFS<7>57D46B347<3>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>YFw<2\
+  >sff0o`000<14>zo`<15>000000 cyclerange=2/255
+  }
+
+Julia2s005         { ;Watercolor Falls (c) Jim Deutch, 1996 0:27
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.180534/0.220932/23.14402
+  params=-1.702/0.002/-1.7/0/0/-0.04 float=y maxiter=255 outside=mult
+  colors=81KS9HVTIYlc1qdkYnQqOEdwy2a7hTkg4Jeq8h1NDxxXshjY9FPxrGzWXep18k7kR\
+  agvMeETkjQxL2e1qatlZx`Yv28zaBPJ`h`hiSGJMciyI7ak4d`ILbb__t941ylqyOyE9IIQO\
+  R111DfHEA6Y8VD8q4YHJTNwzRXVYWUKItetLc55hv6`psXkDJxcMsN73btZmOyZSqaqEdxiw\
+  iGRN3iz1P3C4ZusZjjToBvdH22XFXTjJMD8cIyLh7WyNiAltZiDXBW8AFdvJ_keE_bgXsQMf\
+  Gw09hHMVrVpofqYZH66I3y07A9Aw7DYLa3LKkP7kSgPbw8Qor158FJKMuTZoFXT4vTymAga5\
+  40tnHWGOq5shSr8NbBv2`VbJ0pxUDLMrX4OIv8bczv_wuqxZ2zIXOI_ScpLGCTsZaYszD920\
+  3F8kwPLKwZfBw4ps`773NEkX46RoOh2spec1peo4AW9tZyw3cLLl1lTBhN3ejz8f6p5fpotE\
+  RWf`UBRL`82KSJ_vJ1mRZAsndRYaFz9BYEMA0oo9CCFbuv`Bcgd27LneH70hLN4MIJBYQ5ds\
+  F9yYho2MV5fPfgRdhXXvQ5C7SPBay5SyXfI079UpcouP_PIBlK89iI4umBPHz1knoQBvP2R2\
+  rZOw2aueGApG_AE86IrSi15mu1iErfQNxx7xNSpWthhCEqBBBPb1UGyL_AulmDyFhf8Mq6`6\
+  XajpxXUUm9fvWryp`VnVRmc3rNV0khhrsXz76JcQgC4471aijeRJ6_v
+  cyclerange=2/255
+  }
+
+Julia2s006         { ;Looking at You (c) Jim Deutch, 1996 0:19
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.415038/0.016106/0.3073496/1/-90 params=0/0/0/0/1/0
+  float=y maxiter=255 inside=epsiloncross outside=atan
+  colors=00000k00exsexnexjexU0xej<2>xexsex<2>fewXbv<2>Xvv<3>XvX<3>vvX<3>vX\
+  X<3>vXvpXviXvbXvYXvOWu<2>Ouu<3>OuO<3>uuO<3>uOO<3>uOumOudOuWOuPOuEPt<2>Et\
+  t<3>EtE<3>ttE<3>tEE<3>tEtiEtZEtPEtGFs7Jp<2>7pp<2>7pJJp7<2>pp7<3>p77<3>p7\
+  p<3>87p6Gg<2>6gg<2>6gFFg6<2>gg6<3>g66<3>g6gY6gP6gF6g76g5CY<2>4ZZ<3>4Z4KZ\
+  4RZ4ZZ4<2>ZC4Z4C<2>Z4Z<3>55Y39P3KP3PP<2>3P99P3KP3PP3<2>P93P3EP3KP3PK3PE3\
+  PCCC<7>vvvoqy<2>oyy<2>oyqoyoqyo<2>yyo<3>yoo<3>yoy<3>ooysuzsvzsxzszzszxsz\
+  vwyzdccWWW00z0z00zzz00z0zzz0zzzwyzdccWWW00z0z00zzz00z0zzz0zzz0k00kkk00k0\
+  kkk0kkkkrkwmd00W0W00WWW00W0WWW0ejx<2>exx<3>exe<2>sxe
+  cyclerange=2/255
+  }
+
+Julia2s007         { ;See the Doves? (c) Jim Deutch, 1996 0:32
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.521971/0.745121/1.817346/1/-90
+  params=0.25/0/0.25/0/1/0 float=y maxiter=255 inside=epsiloncross
+  outside=atan
+  colors=00000k00exsexnexjexU0xej<2>xex<3>fewXbv<2>Xvv<3>XvX<3>vvX<3>vXX<3\
+  >vXvpXviXvbXvYXvOWu<2>Ouu<3>OuO<3>uuO<3>uOO<3>uOumOudOuWOuPOuEPt<2>Ett<3\
+  >EtE<3>ttE<3>tEE<3>tEtiEtZEtPEtGFs7Jp<2>7pp<2>7pJJp7<2>pp7<3>p77<3>p7p<3\
+  >87p6Gg<2>6gg<2>6gFFg6<2>gg6<3>g66<3>g6gY6gP6gF6g76g5CY<2>4ZZ<3>4Z4KZ4RZ\
+  4ZZ4<2>ZC4Z4C<2>Z4Z<3>55Y39P3KP3PP<2>3P99P3KP3PP3<2>P93P3EP3KP3PK3PE3PCC\
+  C<7>vvvoqy<2>oyy<2>oyqoyoqyo<2>yyo<2>yroyooyoryotyowyoy<3>ooysuzsvzsxzsz\
+  zszxszvwyzdccWWW00z0z00zzz00z0zzz0zzzwyzdccWWW00z0z00zzz00z0zzz0zzz0k00k\
+  kk00k0kkk0kkkkrkwmd00W0W00WWW00W0WWW0ejx<2>exx<3>exe<2>sxe
+  cyclerange=2/255
+  }
+
+
+Julia2s008         { ;Nice zoom into Julia2s003 (c) Jim Deutch, 1996 2:48
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.232681/-0.336792/2.415234
+  params=-0.508/0.52/-0.83/0.28/0.13/0.2 float=y maxiter=4096
+  colors=000300347<3>0007Mw<4>e00<4>zz0<4>UFw00`<5>`oz<4>YFw<2>sff0o`000<1\
+  4>zo`<15>000000<5>84G9mzB5L<5>J9`KAcJDc<9>6ja5ma500<3>P00<2>RR7JX4Ac0Oc5\
+  bcA<4>zP0<9>cUe<3>zzz<3>cKmzmK<4>ymK<3>xg`weewfa<2>vlPunKunKtoK<2>vu5zw0\
+  <26>KA0MUc<4>z00<4>XMl<13>kBymAzlAx<20>85E64B449236248<9>AFSBGUAFS<8>46B
+  cyclerange=2/255
+  }
+
+Julia2s009         { ;Twist My Eyes (c) Jim Deutch, 1996 2:59
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.388106/0.237996/2.380952
+  params=-0.52/0.52/-0.52/0.52/0.1/0 float=y maxiter=255
+  colors=0000U0<8>87G94IA4K<6>KAc<6>BXb<4>000<4>P00<2>RR7JX4Ac0<6>mF0<6>cN\
+  K<3>000<4>oetiVqcKmzmK<5>000<5>whY<7>000<7>oj0<19>KA0MUc<4>z00<4>XMl<10>\
+  hDv<3>000<3>f9q<17>85E64B449236248<9>AFSBGUAFS<6>58F<19>xz0<19>0o`000<14\
+  >zo`<12>CA7
+  }
+
+Julia2s010         { ;Turbulence (c) Jim Deutch, 1996 0:54
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.344288/0.360902/10.41667
+  params=0.3/-0.681/-0.357/0.82/0.4/0.3 float=y maxiter=255
+  colors=81obJ0pxUDLMrX4OIv8bczv_wuqxZ2zIXOI_ScpLGCTsZaYszD9203F8kwPLKwZfB\
+  w4ps`773NEkX46RoOh2spec1peo4AW9tZyw3cLLl1lTBhN3ejz8f6p5fpotERWf`UBRL`82K\
+  SJ_vJ1mRZAsndRYaFz9BYEMA0oo9CCFbuv`Bcgd27LneH70hLN4MIJBYQ5dsF9yYho2MV5fP\
+  fgRdhXXvQ5C7SPBay5SyXfI079UpcouP_PIBlK89iI4umBPHz1knoQBvP2R2rZOw2aueGApG\
+  _AE86IrSi15mu1iErfQNxx7xNSpWthhCEqBBBPb1UGyL_AulmDyFhf8Mq6`6XajpxXUUm9fv\
+  Wryp`VnVRmc3rNV0khhrsXz76JcQgC4471aijeRJ6_vS9HVTIYlc1qdkYnQqOEdwy2a7hTkg\
+  4Jeq8h1NDxxXshjY9FPxrGzWXep18k7kRagvMeETkjQxL2e1qatlZx`Yv28zaBPJ`h`hiSGJ\
+  MciyI7ak4d`ILbb__t941ylqyOyE9IIQOR111DfHEA6Y8VD8q4YHJTNwzRXVYWUKItetLc55\
+  hv6`psXkDJxcMsN73btZmOyZSqaqEdxiwiGRN3iz1P3C4ZusZjjToBvdH22XFXTjJMD8cIyL\
+  h7WyNiAltZiDXBW8AFdvJ_keE_bgXsQMfGw09hHMVrVpofqYZH66I3y07A9Aw7DYLa3LKkP7\
+  kSgPbw8Qor158FJKMuTZoFXT4vTymAga540tnHWGOq5shSr8NbBv2`V
+  }
+
+Julia2s011         { ;Lightning Bugs (c) Jim Deutch, 1996 1:16
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.444444/-0.947368/13.33333
+  params=-1.17/0.312/0.417/0.305/0/0.7 float=y maxiter=255
+  colors=00080c70c60c<3>1Db0Gb0AW03O00G008000000000300800D00D02E15FA77G40N\
+  03K0<3>Q60W20a00<7>zz0<7>cPtYEqS3mnXK<2>K8A90700400000580BI5H<2>kSY<4>B0\
+  D309005000000100700<4>cU0<14>G20E00D00<2>800ADcI7WQ1O<2>n00<3>R1bL5l<4>Q\
+  1qR0rT0sU0s<2>X0v<2>00F00000D90RK0cV0q<14>20K00I00G<3>006<11>00U<6>00H00\
+  F00F00E10D42C<15>li0<14>4aR1aT0`V<2>0Z`000<2>10750A90C<9>nZ`<10>80C40900\
+  70D0<3>03700900A<3>00I00K00N10Q<3>70`
+  }
+
+Julia2s012         { ;Curtain (c) Jim Deutch, 1996 0:44
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=-0.06790403966695016/+0.23091557566455970/146.2702
+  params=-1.702/0.002/-1.7/0/0/-0.04 float=y maxiter=255 outside=mult
+  colors=000222<10>222<4>U00<4>22A<4>00m<5>517<7>c0z<5>E1N92H52A033055<13>\
+  0gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332<3>CCC\
+  FFFJJJ<8>zzz<15>000<15>zQZ cyclerange=2/255
+  }
+
+Julia2s013         { ;moreiters (c) Jim Deutch, 1996 ~20:00
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.0250391/0.496241/4.901961/1/0/4.998
+  params=0.28/0.471/0.28/0.47/0/0 float=y maxiter=2047 logmap=11
+  colors=000<22>zU0<39>210000000<10>000000001102<36>E0Z<4>zK0<4>H0f<6>K0mK\
+  0mK1l<20>KEUJETIDR<14>000<16>kp1zz0<2>eb0<4>zK0<3>bK0WL0RI0<4>000<4>Kz0<\
+  4>0DL<9>0ez<8>0HQ<4>zK0<4>VV0<3>zz0WW0000
+  }
+
+julia2s014         { ;Twist Counter Twist (c) Jim Deutch 1996 7:10
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  corners=-0.25946082/0.28453918/0.29348744/0.70148744
+  params=-0.52/0.52/0.13/-0.6/-0.3/-0.2 float=y maxiter=512 logmap=6
+  colors=0000OAKQbKPazOK<6>oTLmUMmUN<5>mZUwPKm_X<6>mee<15>0007Mw<3>Z4C<5>v\
+  qCtRL<2>oTLmUMmUNmVOmWPJQm<2>`oz<4>YFw<2>sff0o`000<14>zo`<15>000000<5>84\
+  G9mzB5L<5>J9`KAcJDc<13>1w`0zP<13>HluIkwKjw<3>PfuQetRdtSbt<7>cKmsvU<14>YI\
+  vWFxXHu<14>zo0<7>j_0gY0gX1<9>pIL<9>yu2zz0yv3<9>eDd<8>ONc
+  }
+
+julia2s015         { ;Formal Garden Gone Wild (c) Jim Deutch 1996 3:01
+                     ; Not a julia
+  reset=1930 type=formula formulafile=phc_1.frm formulaname=jdfrm021a
+  passes=1 video=sf7 corners=-10.11185/10.27112/-21.16566/20.42693
+  params=0/0/0/0/1024/0 float=y maxiter=100000 inside=bof60
+  outside=real logmap=yes
+  colors=0000005UcUU0W00m0cWL0pGFaAVpAArhzpKpsAevmWzzLzr00ez<2>AWeDSZGOSKK\
+  K0ezSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQ<2>SKK<37>yxbzzcyyc<31>MMGLLFKKEIJDHICFGBDGBCGBBGB\
+  <2>BGFBGGBFGBDGBCGZ00<5>z00z30
+  }
+
+julia2s016         { ;Lightsail Transit (c) Jim Deutch 1996 0:33
+                     ; Not a Julia!
+  reset=1930 type=formula formulafile=phc_1.frm formulaname=jdfrm021a
+  passes=1 video=sf7 corners=-20.05027/23.51796/-20.2997/12.37647
+  params=0/0/0/0/1024/0 float=y maxiter=100000 outside=imag logmap=yes
+  invert=0.5/0.05/0
+  colors=0000005UcUU0W00m0cWL0pGFaAVpAArhzpKpsAevmWzzLzr00ez<2>AWeDSZGOSKK\
+  K0ezSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3\
+  >zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hl\
+  z00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ES\
+  S<2>EHSKKS<2>QKSSKSSKQ<2>SKK<37>yxbzzcyyc<31>MMGLLFKKEIJDHICFGBDGBCGBBGB\
+  <2>BGFBGGBFGBDGBCGZ00<5>z00z30
+  }
+
+julia2s017           { ;Blueberry Swirl (c) Jim Deutch 1996 3:10
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=JDfrm031SF7 passes=1 video=sf7
+  center-mag=-0.414555/0.207169/4.026667
+  params=0.48/-0.22/-0.6/0.44/0.15/0.3 float=y maxiter=1023 logmap=4
+  colors=000<5>0K0<5>`NF<10>V9eU7hW7lZ8o<3>000<3>V8iS7eQ7b<16>d93eA0cA0<15\
+  >310000000<11>cV0fY0i`0mc0ja0<13>344<80>bvv<9>0zz<9>Qbb<21>2220000UK<26>\
+  RM1
+  }
+
+julia2s018           { ;Horsehead Nebula (c) Jim Deutch 1996 2:33
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=JDfrm031SF7 passes=1 video=sf7
+  center-mag=0.596178/0.389015/1.428974/1/17.499
+  params=0.1/-0.6/-0.6/-0.6/-0.15/0.2 float=y maxiter=255
+  colors=000<5>0K06K2<8>eme<8>W7lZ8o<2>92D<10>btuezzevu<9>eE8d93eA0<16>310\
+  000000<11>cV0fY0i`0mc0ja0<13>344<80>bvv<9>0zz<9>Qbb<21>2220000UK<26>RM1
+  }
+
+julia2s019           { ;Try color cycling THIS! (c) Jim Deutch 1996 0:15
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=JDfrm031SF7 passes=1 video=sf7
+  center-mag=-2.22045e-016/4.44089e-016/0.4862155 params=-2/0/2/0/0/0
+  float=y maxiter=255 outside=atan
+  colors=000zzz000TzzVzzXzz_szaazcMzeAzg2zi0zj4zlEzmSzogzqyzqzzszzszzuzz<2\
+  >vzzvwzvezvQzuCzu3yt0ss3msBgqObpdYouSmzOlzJjzFizBgz8ez6cz3az2_i0XT0VE0T5\
+  1R02O24M96KL9I`CGqGEzK<2>9zZ8zc6zi5zo4zt3mz2Wz1Hz16z01z01z07z0Iz0Yz1nz1z\
+  z<6>9zzBpzD_zEKzG8zI2zK0zM5zPGzRUzTjzVzzXzz_zzazw<3>izajtWlcRmNMoAIq2Eq0\
+  As48sD5uQ3uf1ux0vz0vz0vz1vz2uz4uz7tzAsxDsfHqQLpDQo4Vm0_l2ejAjiOpgcvetzcz\
+  z<6>OzzMjzKUzIGzG5zE0zC2zB8z9Kz8_z6pz5zz<3>1zz1zz0zz0zz0nz0Yz0Iz17z11v21\
+  p36j4He5W_6mV8zQ9zLBzH<2>Gz7Iz4Kz2Mq1P`0RL0T90V21X03_55aE7cTAeiEgzIizM<3\
+  >ozfqzlqzqsuwsdzuOzuBzu3zv0zv3zvCzvQzuezuwztzzszzszz<4>lyzjgziSzgEze4zc0\
+  za2z_AzXMzVazTszRzzOzzMzz<4>CzZBkU9VP8GK66G50C4193862J41Z21o10z00z00z00z\
+  20z3<2>2zB3oF4YJ5JO68S81Y90bB6gDGmEVsGkyIzzKzzMzz
+  }
+
+julia2s020           { ;End Of The Rainbow (c) Jim Deutch 1996 0:16
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=JDfrm031SF7 passes=1 video=sf7
+  center-mag=0/-1.33227e-015/0.4344427 params=-1/1/1/-1/0/0 float=y
+  maxiter=255 outside=atan
+  colors=G00<9>z00<19>zz0<19>0z0<19>0zz<19>00z<19>z0z<8>K06W00<9>WW0<9>0W0\
+  <9>0WW<9>00W<9>W0W<9>W00<9>zWW<9>zzW<9>WzW<9>Wzz<9>WWz<9>zWz<9>zWW<3>P66\
+  zzz
+  }
+
+julia2s021         { ;Pseudo-Carr Julia (c) Jim Deutch 1996 2:41
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=3.33067e-016/1.11022e-015/1.008926/1/-74.998
+  params=0.2/-0.58/0.2/-0.54/0/0 float=y maxiter=255
+  colors=00000000201805D09G0CL0DN0GR0IU0IR0KN0KJ0LE0MA0O40O00P00Q04T2AU8<3\
+  >R_PVaTZaR`cQdcNfdMheLkeHnfGpgEriDtiAxj8zk6zk2zl0zm0zm0zn0zm0zk0zj0zg0zf\
+  0xd0tc0r`0p_0nY0kX0hU0fT0dQ0`P0ZM0XL0UI0QG0ND0LC0H90D70A30B50D90EA0HC4JD\
+  6LGAMIBNKEPLGQOJTPL<2>XURYWTZXV`YX<2>daaecbfeegffjgh<2>mlmononmnmlmkjkji\
+  jgfg<3>`_`_Z_YXYXWXUTUTSTQPQPOPMLMLKLHGHGFG<2>878656212000<134>000
+  }
+
+julia2s022           { ;Lake in the Clouds (c) Jim Deutch 1996 6:58
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=JDfrm031SF7 passes=1 video=sf7
+  center-mag=-0.984157/-0.388105/0.1040123/2.4899/95
+  params=0.2/-0.58/0.2/-0.54/0/0.2 float=y maxiter=255 invert=0.5/0/0
+  colors=000000<4>08U0AS0BQ0DO0FL<6>0K03L26M5<3>0_0<3>TWK<6>h_B<5>0Tc<5>q_\
+  0<5>8be<13>zzz<12>mjalh_mi`<15>yyxzzzyyy<39>222000000<113>000
+  }
+
+julia2s023           { ;Eye of the Storm (c) Jim Deutch 1996 ?5:00
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.383412/-0.0367851/4.266667
+  params=-0.2/-0.8/-0.8/-0.2/0/0.5 float=y maxiter=255
+  colors=000<4>K00<5>0A0<2>030000000000000000<25>zUU<2>qchngnkkshoyago<4>0\
+  00<5>Erw<3>3sw0zz<33>0zzwyz<149>zzz2tb4ta
+  }
+
+julia2s024          { ;Sforzando (c) Jim Deutch 1996 ?3:30
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.383412/-0.0367851/2.213191
+  params=-0.2/-0.8100000000000001/-0.8/-0.2/0/0.4 float=y maxiter=255
+  colors=00000F00U<5>A50<2>0A0<2>030000000000<2>``0uu0zz0uu0ie3<2>J99<15>w\
+  E1zF0zH0<14>soBrrCss8tt4uu0<13>0_z0ez0jz<25>uu0<24>3Xw0Wz0Wz<34>00z00z11\
+  z<67>yyzzzzzzzzzz<11>zzz2tb4ta
+  }
+
+julia2s025         { ; Electric Bonsai (c) Jim Deutch 1996 0:39
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.0248255/-0.281083/0.8170191
+  params=-0.2/-0.8/-0.8/-0.2/0/0.5 float=y maxiter=255
+  colors=000000<3>N00J00E00920430060670C90IC0MD0SE0XG0TD0NA0J70<2>400700C2\
+  2E33J66<3>WCCZDDbGGeIIjJJlLLqMMqIUqCbq6lo0uo0zu4yzDu<2>zehzkozqxzuzzzzvz\
+  zluzahqSXbGLP67A0000790LN4Xa7koCxzEzz<3>0zz<34>0zzzzz<149>zzz0zn0zl
+  }
+
+julia2s026           { ;Tilt-a-Whirl     (c) Jim Deutch 1996 0:40
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.0376176/-0.041005/0.8130081/1/-14.999
+  params=0.2/-0.6/-0.8/0.2/0/0 float=y maxiter=255 outside=real
+  colors=000Q7Y<8>85E64B449236248<9>AFSBGUAFS<14>0007Mw<4>e00<4>zz0<4>UFw0\
+  0`<5>`oz<4>YFw<2>sff0o`000<14>zo`<15>000000<5>84G9mzB5L<5>J9`KAcJDc<9>6j\
+  a5ma500<3>P00<2>RR7JX4Ac0Oc5bcA<4>zP0<9>cUe<3>zzz<3>cKmzmK<4>ymK<3>xg`we\
+  ewfa<2>vlPunKunKtoK<2>vu5zw0<26>KA0MUc<4>z00<4>XMl<13>kBymAzlAx<10>R7_
+  }
+
+julia2s027           { ;Pegasus Unwinged (c) Jim Deutch 1996 ?2:00
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm031sf7 passes=1 video=sf7
+  center-mag=0.262333/-0.176746/1.306734/1/-42.5
+  params=0.2/-0.6/-0.8/0.2/0/0.6 float=y maxiter=255 outside=real
+  colors=000Z2B<6>0MM<7>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>f\
+  aP<13>654332222<3>CCCFFFJJJ<8>zzz<15>000<15>zQZ<15>000<7>L0OUKe<8>MATL9R\
+  N7W<2>U0m<2>I0OD0FB0C<3>000<4>0DD0GG0JJ0MM5KLAHJ<5>c0A
+  }

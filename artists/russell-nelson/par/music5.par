@@ -1,0 +1,144 @@
+JingleBells        { ; R. M. Forno 1999/10/16
+  reset=2000 type=threeply center-mag=0/0/0.0001666667
+  params=-81.87/-5.8765/3.14159265358979 float=y hertz=150
+  sound=y/fm/quant polyphony=9 wavetype=1 decay=6 sustain=15
+  srelease=3 scalemap=2/2/4/4/4/7/7/7/9/9/11/11 orbitdelay=1800
+  showorbit=yes
+  }
+
+MajorKey           { ; R. M. Forno 1999/10/16
+  reset=2000 type=rossler3d passes=d center-mag=0/10/0.03333333/1.3333
+  params=0.04/0.2/0.2/5.7 float=y rotation=60/30/0 perspective=0
+  xyshift=0/0 hertz=150 sound=y/fm/quant polyphony=9 wavetype=1
+  decay=6 sustain=15 srelease=3 scalemap=1/1/3/3/5/6/6/8/8/10/12/12
+  orbitdelay=1800 showorbit=yes
+  }
+
+MinorKey           { ; R. M. Forno 1999/10/16
+  reset=2000 type=quadruptwo center-mag=14.6706/17.4394/0.01366061
+  params=34/1/5 float=y hertz=150 sound=y/fm/quant polyphony=9
+  wavetype=4 decay=6 sustain=15 srelease=3
+  scalemap=1/1/3/3/5/6/6/8/9/9/11/11 orbitdelay=1800 showorbit=yes
+  }
+
+AnotherMinorKey    { ; R. M. Forno 1999/10/16
+  reset=2000 type=quadruptwo center-mag=14.6706/17.4394/0.01366061
+  params=23/0.83/1.32 float=y hertz=100 sound=x/fm/quant polyphony=9
+  decay=6 sustain=15 srelease=3 scalemap=1/1/3/3/5/6/6/8/9/9/11/11
+  orbitdelay=1600 showorbit=yes
+  }
+
+Pentatonic         { ; R. M. Forno 1999/10/16
+  reset=2000 type=chip passes=d center-mag=0/0/0.001754386
+  params=3.14159265358979/2.71828182845905/-9 float=y hertz=110
+  sound=y/fm/quant polyphony=9 wavetype=1 attack=3 decay=5 sustain=15
+  srelease=3 scalemap=2/2/4/4/4/7/7/9/9/11/11/11 orbitdelay=1400
+  showorbit=yes
+  }
+
+Minimalist         { ; R. M. Forno 1999/10/16
+  reset=2000 type=martin passes=d center-mag=0/0/0.04166667 params=0.5
+  float=y hertz=110 sound=y/fm/quant polyphony=4 wavetype=3 attack=3
+  decay=5 sustain=15 srelease=3 scalemap=1/1/3/3/5/6/6/8/8/10/10/12
+  orbitdelay=1300 showorbit=yes
+  }
+
+who_knows          { ; Bruce Nepple  10/20/99
+                          ; try with chip, popcorn, hopalong, etc
+  reset=2000 type=rossler3d center-mag=0/10/0.03333333/1.3333
+  params=0.04/0.2/0.2/5.7 float=y rotation=60/30/0 perspective=0
+  xyshift=0/0 hertz=220 sound=x/fm/quant attenuate=low polyphony=9
+  wavetype=1 decay=5 sustain=11 scalemap=1/12/5/8/10/12/8/1/5/10/1/8
+  orbitdelay=1500
+    }
+
+Too.Much.Sake      { ; Too much indeed ...
+                     ; by Miguel Fliguer 1999
+                     ; fliguer@hotmail.com
+  reset=2000 type=quadruptwo passes=1
+  corners=0.1759285/1.51249/-7.974027/2.283977/-4.28299/-3.526999
+  params=8/2/5 float=y maxiter=20 bailout=64 inside=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=110 sound=x/fm/quant polyphony=3
+  wavetype=1 attack=6 decay=9 sustain=6 srelease=4
+  scalemap=11/4/7/9/2/2/4/7/2/4/7/9 orbitdelay=2700
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Marimba.Fiesta     { ; nice ...
+                     ; by Miguel Fliguer 1999
+                     ; fliguer@hotmail.com
+                     ; 
+  reset=2000 type=latoocarfian function=recip/sin/recip/sin passes=1
+  corners=-2.656128/3.605536/-0.6630742/0.3554989/-56.26256/-28.24804
+  params=1/2/3/1 float=y maxiter=20 bailout=64 inside=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=330 sound=y/fm/quant polyphony=9
+  attack=2 decay=9 sustain=3 srelease=3
+  scalemap=11/4/7/9/2/2/4/7/2/4/7/9 orbitdelay=1900
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Nuke_Oldfield      { ; Mike Oldfield goes to Chernobyl
+                     ; A bit boring if you wait for it to complete :-)
+                     ; by Miguel Fliguer - 1999
+                     ; fliguer@hotmail.com
+  reset=2000 type=threeply
+  center-mag=-2.50111e-012/1.64846e-012/0.002102011/0.5941/-43.403/-3.177
+  params=-24/3/-31 float=y hertz=11 sound=z/fm/quant polyphony=3
+  wavetype=1 attack=9 decay=9 sustain=12 srelease=12
+  scalemap=2/2/4/4/7/7/9/9/11/11/2/4 orbitdelay=2000
+  colors=000zs0<7>zw0zw0zx0<2>zy0zz0zy0<119>z20z20z10<3>z00z00z00<110>zr0
+  }
+
+
+One.hand.clapping  {
+                     ; by Miguel Fliguer 2000
+                     ; 
+  reset=2000 type=chip passes=1
+  corners=-13.10752/12.61111/-9.90906/9.379912 params=0.1/0.1/-0.1
+  float=y maxiter=20 bailout=64 inside=3 viewwindows=4.2/0.75/yes/0/0
+  hertz=110 sound=z/fm/quant polyphony=9 wavetype=5 attack=4 decay=12
+  sustain=4 srelease=4 scalemap=1/3/5/8/10/12/12/10/8/5/3/1
+  orbitdelay=1800
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Shaved.penguins    {
+                     ; by Miguel Fliguer 2000
+                     ; 
+  reset=2000 type=chip passes=1
+  corners=-13.10752/12.61111/-9.90906/9.379912 params=0.0001/0.01/0.01
+  float=y maxiter=20 bailout=64 inside=3 viewwindows=4.2/0.75/yes/0/0
+  hertz=55 sound=y/fm/quant polyphony=5 attack=7 decay=15 sustain=0
+  srelease=0 scalemap=1/3/5/8/10/12/12/10/8/5/3/1 orbitdelay=2000
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+

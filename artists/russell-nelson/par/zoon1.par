@@ -1,0 +1,186 @@
+spikey             { ; 4 way spikes of mandel lake way inside
+  reset type=mandel passes=1
+  corners=-1.2505704600815031/-1.2505704600696912/0.40375122889433812/0.40\
+  375122890787762 float=y maxiter=1280 inside=0
+  colors=000000PPPF00SSSK00VVVP00<8>jc0000000pg0<2>ud0wc0zzzwm0wwwwm0xxxzz\
+  0xxxyyyyyyz00<3>z00<13>zz0333<14>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14\
+  >NNNU0U<14>z00RRR<14>VVVzVz<14>zz0ZZZ<14>bbb000<13>u00kkkfff<6>hhhzzz000\
+  mmm000gggA0AaaaAA0WWWK0KQQQKK0MMMU0UHHHUU0BBBc0c666cc0000m0m000mm0000000\
+  c0c000zz2555c8cBBBzz0HHH000LLL
+  }
+
+_crank              { ; Zoonipithicus (c)1993 Comments to: M. Kunoff 72234,2100
+  reset=1730 type=mandel passes=1
+  corners=-0.204755009292/-0.204743781433/0.6730824640414/0.6730908986683
+  float=y maxiter=256
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<2>bbj000<24>000
+  }
+
+crank2             {
+  reset=1730 type=mandel passes=1
+  corners=-0.20474721200918/-0.20474697833887/0.67308959876269/0.673089774\
+  41569 float=y maxiter=20000 inside=0 colors=@volcano.map
+  }
+
+crank3             { ;  
+  reset=1730 type=mandel passes=1
+  corners=-0.204747125896074/-0.204747063309894/0.673089663172583/0.673089\
+  710234788 float=y maxiter=20000 inside=0 colors=@neon.map
+  }
+
+crank4             {
+  reset=1730 type=mandel passes=1
+  corners=-0.204747099956149/-0.204747088576846/0.6730896822705563/0.67308\
+  96908300767 float=y maxiter=20000 inside=0
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>\
+  000<15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+crank-final        {
+  reset=1730 type=mandel passes=1
+  corners=-0.2047470950618239/-0.2047470934155425/0.6730896859030339/0.673\
+  0896871417706 float=y maxiter=20000 inside=0
+  colors=000151131000<15>rAr<15>000<15>hh0<15>000<15>00r<15>000<15>r00<15>\
+  000<15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<13>4S4<15>171
+  }
+
+zoom-nest          { ; good for many possible zooms - Note: may take awhile
+  reset=1730 type=julia passes=1
+  corners=-0.25219941/0.22482893/-0.18872229/0.16916558
+  params=-0.094348279684611527/0.65455604371950615 float=y
+  maxiter=2000 inside=0
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<2>bbj000<24>000
+  }
+
+skeletal1          { ; amazing what can be found just in the mandelbrot
+  reset=1730 type=mandel passes=1
+  corners=-0.47521220465815/-0.47521148701034/0.097170330424508/0.09717101\
+  0302107 float=y maxiter=20000 inside=0 logmap=yes
+  invert=0.391999/0/0
+  colors=000660<13>hh0<15>000<15>00r<15>000<15>r00<15>000<15>0pp<12>0BB077\
+  044000222<14>hhh<15>000<27>007017037<13>4S4<13>1A1181171151131000<15>rAr\
+  <15>000330
+  }
+
+skeletal2          { ;  
+  reset=1730 type=mandel passes=1
+  corners=-0.475211893186371/-0.475211797780585/0.0971706235095709/0.09717\
+  07138940869 float=y maxiter=20000 inside=0 logmap=yes
+  invert=0.391999/0/0
+  colors=000EEE<4>000<27>007017037<13>4S4<13>1A1181171151131000<15>rAr<15>\
+  000<15>hh0<15>000<15>00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222<\
+  14>hhh<9>HHH
+  }
+
+skeletal3          { ;  
+  reset=1730 type=mandel passes=1
+  corners=-0.475211857001186/-0.475211835364709/0.0971706592922929/0.09717\
+  06797900571 float=y maxiter=20000 inside=0 logmap=yes
+  invert=0.391999/0/0
+  colors=000005<5>007017037<13>4S4<13>1A1181171151131000<15>rAr<15>000<15>\
+  hh0<15>000<15>00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222<14>hhh<\
+  15>000<20>005
+  }
+
+pheonix1           { ;  
+  reset=1810 type=phoenix passes=1
+  corners=0.362353146/0.457927883/0.614679456/0.65795207/0.375976741/0.596\
+  508741 params=0.56667000000000001/-0.5 maxiter=2560 inside=0
+  colors=000F0K<59>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0<58>G2JF0KF\
+  0KF0KF0K
+  }
+
+Fountain           { ; of life maybe?
+  reset=1810 type=phoenix passes=1
+  corners=0.3936640431831/0.3936677057802/0.636867018238/0.636933163982/0.\
+  3936336141077/0.636907603557 params=0.56667000000000001/-0.5 float=y
+  maxiter=25600 inside=0
+  colors=000HHH<4>___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0G\
+  zVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hz\
+  z<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ES\
+  E<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKO\
+  SKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE\
+  8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDG\
+  BCGBBGB<2>BGFBGGBFGBDGBCG000<6>00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzL\
+  zzzLzzz000555<2>EEE
+  }
+
+sea2sea            { ; incredible zoom on mandel with strange z pars
+  reset=1720 type=mandel passes=1
+  corners=-0.468179464/-0.46714288/0.547005236/0.547782421
+  params=0.080000000000000002/-0.41999999999999998 float=y
+  maxiter=1280 inside=0
+  colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI\
+  <17>xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4\
+  Uw5Tw5<9>MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0\
+  hm0gn0fn0eo0ep<11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5\
+  wU5w<5>Z2t
+  }
+
+temple             { ; newton religion..number9...number9...number9
+  reset=1810 type=complexnewton passes=1
+  corners=-0.863533586/-0.673550353/0.1117471258/-0.1197901562/-0.68400172\
+  7/-0.1276286865
+  params=-20/0.00087600000000000004/5/1.5669999999999999 float=y
+  maxiter=32560 inside=0 invert=0.068/-0.840125/0 finattract=y
+  periodicity=0 colors=@lchmap1.map
+  }
+
+WEGO               { ; into the mandel we go wego
+  reset=1810 type=mandel
+  corners=-0.12817128662/-0.12804048005/0.839965469089/0.840063574015
+  float=y maxiter=2560 inside=0
+  colors=000KJE<23>TsNUuOUuO<4>VrNS6M<52>h5hR6K<20>QOUQPUR7KQQV<25>PkfOlgP\
+  jg<12>b8md5nd5n<43>vdcwebwebwea<40>rQ0<4>H5B<7>KHE
+  }
+
+whirl              { ; a whirl of possible zooms
+  reset=1730 type=mandel passes=1
+  corners=-0.0943622221414/-0.0943451364493/0.65454473747/0.654557572636
+  float=y maxiter=2000 inside=0
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<2>bbj000<24>000
+  }
+
+whirl2             { ; a whirl of possible zooms
+  reset=1730 type=julia passes=1
+  corners=-0.25219941/0.22482893/-0.18872229/0.16916558
+  params=-0.094348279684611527/0.65455604371950615 float=y
+  maxiter=2000 inside=0
+  colors=00000j0j0jj0j00j0j0jjkkkkrkdmwW000W0WW000WW0W0WWFNF<5>zNFFVF<5>zV\
+  FFbF<5>zbFFjF<5>zjFFrF<5>zrFFzF<5>zzFFFN<5>zFNFNN<5>zNNFVN<5>zVNFbN<5>zb\
+  NFjN<5>zjNFrN<5>zrNFzN<5>zzNFFV<5>zFVFNV<5>zNVFVV<5>zVVFbV<5>zbVFjV<5>zj\
+  VFrV<5>zrVFzV<5>zzVFFb<5>zFbFNb<5>zNbFVb<5>zVbFbb<5>zbbFjb<5>zjbFrb<5>zr\
+  bFzb<5>zzbFFj<5>zFjFNj<5>zNjFVj<5>zVjFbj<2>bbj000<24>000
+  }
+
+BlazingMandel      { ; quite electric
+  reset=1100 type=plasma passes=1 corners=-1/1/-1/1
+  colors=000PR5<9>9N57N545v<15>6M81dXxLf<13>9N7XVO<22>7N5m5JStF<19>7O5f2G<\
+  6>AL6_EqQH`GKL1JH<7>6N6rPp<3>eOdBrMCtLCtL<13>9ZK<5>51D<10>Ojp<8>_S9<16>J\
+  78J68K5A<16>L3WL3XK6W<15>7gRKB5<14>Zrb<13>gV6<9>SR5DM6QR5
+  }
+
+BeautifulMandel    {
+  reset=1600 type=mandel passes=1
+  corners=-1.258643275907027/-1.258643271150472/0.3739098910414899/0.37390\
+  98946062111 float=y maxiter=30000
+  colors=000XgmWgmVfl<3>VfEUPW<4>8ZN<4>ora<3>PIOYYFfn6jX6nE6<4>FvQoHk<6>r0\
+  U<2>hDSdIRbMT<5>LngIsjHwN<2>h5Cf6Nd7Ya8i<7>28R<5>oA9<2>IS4ZQNoOfXhnumu<2\
+  >e`c<5>unx<2>N0nf7E<5>diWcpZdlX<4>jOJ<3>nWDH1r<2>tZU<7>Owl<2>n04<6>GoDQg\
+  J__P<6>`0vgAenLP<7>02g<6>J3S<4>krmcDY<4>Qaa<4>z_P<7>hrU<2>5Ns_w`HEPCNsPV\
+  gbbV<4>OHQKCOJYTHsYZxG<6>rA`u2cu3a<5>uDO<4>C8U<2>LUhOamPXj<4>Y6W<4>ekJ<7\
+  >rX5<7>4fM_ip<3>Yhnzzz
+  }
+

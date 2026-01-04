@@ -1,0 +1,213 @@
+pearls             {
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=PseudoZeePi
+  center-mag=-1.5816/1.0165e-005/2.241321/0.8123/-90 params=5/0/0/0
+  float=y maxiter=250 inside=maxiter
+  colors=CCC000w3y000z7r000zIg000zSY000zbN000zlD000zy0000gz0000Nz00002z000\
+  00zI0000zb0000zw000Fky000WVy000kFy000z0y000zAo000zLd000zVV000zeK000znB00\
+  0zy0000gz0000Nz00002z00000zI0000zb0000zw000Fky000WVy000kFy000z0y000zAo00\
+  0zLd000zVV000zeK000znB000zy0000gz0000Nz00002z00z80000zT0000zm000Boy000R_\
+  y000gJy000w3y000z7r000zIg000zSY000zbN000zlD000zv3000lz0000Sz00007z00000z\
+  D0000zY0000zr000Boy000R_y000gJy000w3y000z7r000zIg000zSY000zbN000zlD000zy\
+  0000gz0000Nz00002z00000zI0000zb0000zw000Fky000WVy000kFy000z0y000zAo000zL\
+  d000zVV000zeK000znB000zy0000gz0000Nz00002z00000zI0000zb0000zw000Fky000WV\
+  y000kFy000z0y000zAo000zLd000zVV000zeK000znB000zy0000gz0000Nz00002z00000z\
+  I0000zb0001ys000Boy000R_y000gJy000w3y000z7r000zIg000zSY000zbN000zlD000zv\
+  3000lz0000Sz00007z00000zD0000zY0000zr000Boy000R_y000gJy
+  }
+
+comet              { ; zoom out and enjoy
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=PsudoMandel
+  center-mag=2.24219/7.27512e-012/1.073906/0.4484 float=y maxiter=250
+  inside=startrail colors=@goodega.map
+  }
+
+intersection       { ; zoom in and enjoy
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=NewtonSinExp center-mag=-5e-008/1.5e-007/0.04167969
+  params=8/0 float=y maxiter=250000 inside=startrail
+  colors=@chroma.map
+  }
+
+test               { ; eyeball
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
+  center-mag=-1.08713/-1.919e-005/0.4869119 params=1/0/1/0 float=y
+  maxiter=100 inside=zmag outside=0
+  colors=000wwztuxwwzsuxvvyrtwuvyrtvtuxqsvsuxprurtworurtvnqtqsvmqsprumpsor\
+  ulprnqtkormqsjoqmpsinqlprhmpkorhmojoqgloinqflnhmpeknhmodkmglocjlflnbjlek\
+  nbikdkmahkcjl`hjbjl_gibikZgiahkYfh`hjYfh_giXegZgiWegYfhVdfYfhUceXegTceWe\
+  gTbdVdfSbdUceRacTceQabTbdP`bSbdO`aRacN_aQabNZ`P`bMZ_O`aLY_N_aKYZNZ`JXZMZ\
+  _IXYLY_IWYKYZHWXJXZGVWIXYFUWIWYEUVHWXDTVGVWDTUFUWCSTEUVBSTDTVARSDTU9RSCS\
+  T8QRBST7PQARS8QR9RS7PQ8QR7MN7PQ6JK7MN5GH6JK4DD5GH3AA4DD277<7>aAQ<9>fzz<2\
+  >MlhFha8cW0ZP0XO<13>032000000<76>000pru
+  }
+
+chinese            { ; Chinese Pagoda in rising sun
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
+  passes=b center-mag=-0.755723/-8.165e-006/0.1199828/1/-90
+  params=1.1/0/100/0 float=y maxiter=79 inside=zmag outside=atan
+  colors=CCC0Vg<2>0Nk0000Gp<4>03x00z00040v<5>G0j000K0f<5>X0U000`0Q<5>l0E00\
+  0p0A<3>x02z00z00000z40<5>zG0000zK0<5>zW0000z_0<5>zk0000zo0<5>zz0000vz0<5\
+  >jz0000fz0<5>Vz0000Rz0<5>Gz0000Fy3<2>Dv8000BuB<7>6nN1004mQ<3>2jW1iY0gZ00\
+  00bb<5>0Nk0000In0Gp<4>03x00020x<5>E0l000I0h<5>U0X000Z0S<5>j0G000n0C<5>z0\
+  0000z20<5>zE0000zI0<5>zU0000zY0<5>zi0000zm0<5>zy0000xz0<5>lz0000hz0<5>Xz\
+  0000Tz0<5>Hz0000Fy2<5>BuB000AsE<5>6nN0004mQ<3>2jW1iY0gZ0000bb0_c0Ye
+  }
+
+Delta flyer        { ; Plane flying 
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
+  center-mag=-13.9009/-2.3455e-005/0.1917456/0.7763 params=0.5/0.5/0/0
+  inside=bof60
+  colors=000yYK<2>zaMzcNzcN<19>zLLyKLyJLxILwHL<8>q8Jq8Jp9J<32>QTGPUFPUG<17\
+  >RGgRFiRFjSEk<5>S9kT8kT9k<28>pskqtkqtk<2>rtkrtjrth<11>upJvoGuoG<27>UiHUi\
+  HViI<18>em`Ui_<17>cmqJWIJPPIIW<18>OJC<9>uXJ
+  }
+
+Breakthro          { ; Comet breaking through
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=pseudozeepi
+  center-mag=1.09633/1.3885e-005/0.2683494/1.0229/180
+  params=4/0/0.75/0 maxiter=64 inside=zmag outside=atan
+  colors=CCCE0l<5>z00z60<6>zy0
+  }
+
+Mad Kilroy         { ; He's fuming
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=mandel
+  center-mag=-0.248505/-9.5e-008/0.7013462/0.8956/-90 params=0.5/0
+  float=y maxiter=1000 bailout=2 bailoutest=real inside=bof61
+  colors=zzzBuBzzz0gZzzz03xzzzU0Xzzzz00zzzzU0zzzzy0zzzXz0
+  }
+
+ET in love         { ; with flowers
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=magnet1m
+  center-mag=+1.32707355242566500/+0.00000000000000222/0.5426486/1.0815/-9\
+  0 params=0/0 float=y maxiter=50 bailout=1000 inside=bof61
+  colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0
+  }
+
+Wave               { ; Zoom in on its start!
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  passes=t center-mag=-7179.22/-5735.44/0.0001403842/0.6836
+  params=0.4/0.5/0/0 float=y maxiter=2000 inside=zmag outside=mult
+  colors=000Lez00z0Le00LLLLe0ezLLzLezLzzezzz0zzezzzezz0zz
+  }
+
+Snail              { ; taken from Wave
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  center-mag=-186.893/43.3554/0.0148996/0.4463 params=0.4/0.5/0/0
+  float=y maxiter=10 inside=zmag outside=mult
+  colors=000KCa<11>MfuPfqSem
+  }
+
+Crystal            { ; Crystal ball breaking
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  center-mag=-0.755723/-8.165e-006/0.1199828/1/-90 params=1.25/0/88/0
+  float=y maxiter=153 inside=zmag outside=atan
+  colors=000zzz<10>zzz000zzz000
+  }
+
+Alien Cop          { ; Colour cycle , watch expression change
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=mandel passes=b
+  center-mag=-1.30695/-9.5e-008/9.0915/0.8956/90 params=0.5/0 float=y
+  maxiter=250 bailout=2 inside=bof61
+  colors=000Y0z<6>W0yW00<2>W01W01Y0zY0z
+  }
+
+abitmorework       { ; abitmorework
+                     ; abitmorework
+  reset=1930 type=popcornjul
+  corners=-2.995387/3.08402/0.045841759/-0.061944795/0.08606394/2.9466303
+  params=0.02 float=y maxiter=300 logmap=yes finattract=y
+  periodicity=0
+  colors=000L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL000e00L00e00z<2\
+  >0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2\
+  >00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL\
+  0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L0\
+  0zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z0\
+  0e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz\
+  0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc0\
+  0L00e00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00
+  }
+
+Oops               { ; Thats broken it!!
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=popcornjul
+  corners=4.102289/-4.146271/0.072481956/-0.15077043/-0.2702447/-4.1574601
+  params=0.6 float=y maxiter=7 logmap=yes finattract=y periodicity=0
+  colors=00000z00100y00200x00300w00400v00500u00600t00700s00800r00900q00A00\
+  p00B00o00C00n00D00m00E00l00F00k00G00j00H00i00I00h00J00g00K00f00L00e00M00\
+  d00N00c00O00b00P00a00Q00`00R00_00S00Z00T00Y00U00X00V00W00W00V00X00U00Y00\
+  T00Z00S00_00R00`00Q00a00P00b00O00c00N00d00M00e00L00f00K00g00J00h00I00i00\
+  H00j00G00k00F00l00E00m00D00n00C00o00B00p00A00q00900r00800s00700t00600u00\
+  500v00400w00300x00200y00100z00000z00000y00100x00200w00300v00400u00500t00\
+  600s00700r00800q00900p00A00o00B00n00C00m00D00l00E00k00F00j00G00i00H00h00\
+  I00g00J00f00K00e00L00d00M00c00N00b00O00a00P00`00Q00_00R00Z00S00Y00T00X00\
+  U00W00V00V00W00U00X00T00Y00S00Z00R00_00Q00`00P00a00O00b00N00c00M00d00L00\
+  e00K00f00J00g00I00h00H00i00G00j00F00k00E00l00D00m00C00n00B00o00A00p00900\
+  q00800r00700s00600t00500u00400v00300w00200x00100y00000z
+  }
+
+Slice              { ; of Milky way , zoom in and explore
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=popcornjul
+  corners=230.9377/-230.9817/6.211923/-6.290211/-13.9242/-230.6648
+  params=0.6 float=y maxiter=700 inside=startrail logmap=yes
+  finattract=y periodicity=0
+  colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0
+  }
+
+A Drop             { ; in the Ocean
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=popcornjul
+  corners=-58.49273/58.44873/-58.67737/58.59908/62.35395/92.2675
+  params=0.6 float=y maxiter=70 inside=maxiter outside=real logmap=yes
+  finattract=y periodicity=0 colors=000000<13>00S
+  }
+
+Easter             { ; Egg
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=popcornjul
+  corners=-2.995387/3.08402/0.045841759/-0.061944795/0.08606394/2.9466303
+  params=0.02 float=y maxiter=300 logmap=yes finattract=y
+  symmetry=xyaxis periodicity=0
+  colors=000zzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohe
+  }
+
+Spiral             { ; from egg but different colour map
+                     ; Allen Goodchild 101365.1707
+  reset=1930 type=popcornjul
+  corners=-0.25462593/0.26577131/-1.372823116/-1.382049645/0.0091462668/-1\
+  .124515616 params=0.02 float=y maxiter=300 logmap=yes finattract=y
+  symmetry=xyaxis periodicity=0
+  colors=000U`K5XluZpbrJ7Od8PBxBLOvCyhVUrwVoUK8kMMkaRdwON
+  }
+
+
+eyeball            { ; light entering an eyeball
+  reset=1930 type=formula formulafile=fractint.frm formulaname=cubic
+  center-mag=0.559654/5.55112e-016/2.464608 params=0/0 float=y
+  maxiter=250 inside=startrail
+  colors=000w9dHnnzH9vcJHZEPmADUvoO`ZmHA6MNpXY2zIsLmkQHabVI49Np4RDNT7N7Hnx\
+  brbog1IsM9x9ryXt5btrYS6_1`aqitNO2UovcOMCNt8qKhf6jZ3YuVga8mV_JsT0x927XIxH\
+  8dN3dkI3IqrYCHz2rp5jBnJncqNxgBeglr`6zm6FcxrOH5mjoVOOqwdK7zGP5g14n1TCeBKj\
+  ZkpsdRsbvQCKuGjeSQMeIe`68WOL6zjGl_pDWx6e_F5HARLZUTbLY9x`3i_Mt2b0qBCqd`Ix\
+  UZMgTqhH0rFJhNiPFxzwjkjoIqVaXQJekv7xrafehrgmKlVSnVM`YOQ4QG_cCi1yyoEE_UZB\
+  88iNX1tkCY9bGlTkW__OQ2JF2iJTrv9ohnKt7y`THHcB3XERhOreX35nF0jWGDoDoRkcXfCg\
+  JqpGDvYD4j7bYeGBH2fyLAQUe3_4qPSitKYeA0mnUADf71krF74OoRKPOAY6lays7jI2TRqY\
+  maNcXOZWaXZ0cIQIygkugvY`O5Qqnc7FfV0`hK`mFTbylj64N2Y2_IpJVJzO4gVNleqzFXqV\
+  P6TGRXKDK3UK5jabdIskESRwYUsbKvMUjZ4cs1VlY0SwUYaATtfwOOr_OfLYnd4fJuBiaN`Q\
+  `fZSgBaetulhpjHQZWiCB246WCLyBO4LwGCbIMNvN7KdzSaGDdpL_bNpCOmcL_tLxP3cTuip\
+  aBEEO6MQREg2k712ZP`ovBalsD113zVKlmBei1Yn7obhAU7yCAZTz7C
+  }
+

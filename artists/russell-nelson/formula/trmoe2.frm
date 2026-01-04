@@ -1,0 +1,94 @@
+trmoe-01{
+	z=c=pixel,c=c+5:
+	if(c<=10)
+	z=z*cos(z+c)+1/c
+	elseif(c<=20)
+	z=(cos(z)*tan(z)*atanh(z))+cosxx(c)
+	else
+	z=(sqrt(z)*z)+cosh(c)
+	endif
+	|z|<=256
+	}
+trmoe-02{
+	z=c=pixel:
+	z=fn1(z)*p1
+	}
+trmoe-03{
+	z=c=1/pixel:
+	z=fn1(z)*p1
+	}
+trmoe-04{
+	z=flip(imag(cosh(sqr(pixel))))*1/pixel
+	c=pixel+sqr(atan(z*z+1)):
+	z=(z-(z*1/c)+sqr(1/pixel))/(pixel-z*z+c)
+	|z|<=256
+	}
+trmoe-05{
+	z=pixel,c=1/pixel
+	x=(z+c)*sin(c)
+	y=cos(x*z):
+	z=z*(x*y)/abs(x)+c
+	}
+trmoe-06{
+	z=(pixel*7.5)/2,c=sqr(z)*.00915
+	x=cosxx(c/z),y=tanh(z*c):
+	z=(z*1/c)*x+atanh(sqr(sqr(1/y)))
+	|z|<=4
+	}
+trmoe-07{
+	z=1/pixel*1.066,c=flip(sqr(z))*.1865
+	z=(z+z)*c*z*z*z/cosxx(c+(z*z))+c
+	|z|<4
+	}
+trmoe-08{
+	z=pixel*-.1792, c=flip(cosxx(tan(sqr(z))))
+	z=1/z*atan(cos(real(imag(z*c))))+c/-.1792
+	|z|>.1792
+	}
+trmoe-09{
+	z=-14.83/pixel,c=z^(z-.1483)
+	z=(z*z*z)*cosxx(flip(z*c))+c+1.483
+	|z|<.1483
+	}
+trmoe-010{
+	z=Pixel/12.20, c=flip(atanh(conj(sqr(12, -20))))
+	x=1.210*(z+c), y=(x*z)/.122*z:
+	z=(z*fn1(x*y)-fn2(y*x))*c
+	|z|<=1.22
+	}
+trmoe-011{
+	z=c=pixel:
+	z=fn1(z)*fn2(z)*fn3(z)*1/z+c
+	|z|<=4
+	}
+trmoe-012{
+	z=1/pixel-0.99,c=fn1(pixel):
+	z=fn2(z)*.218+c
+	|z|<=4
+	}
+trmoe-013{
+	z=c=pixel,c=c+5:
+	if(imag(c)<=200)
+	z=z*fn2(z+c)+1/c
+	elseif(imag(c)<=400)
+	z=fn1(z)*fn2(z)*fn3(z)*1/z+c
+	elseif(imag(c)<=600)
+	z=flip(fn1(fn2(fn3(pixel))))*1/pixel
+	else
+	z=1/z*atan(fn1(fn2(fn3(z*c))))+c/-.1792
+	endif
+	|z|<=256
+	}
+trmoe-014{
+	z=pixel,c=pixel/2
+	z=fn1(z)*fn2(z)*fn3(z)*1/z+c
+	|z|<=4
+	}
+trmoe-15{
+	z=pixel:
+	z=fn1(fn2(z))
+	}
+	
+	
+	
+	

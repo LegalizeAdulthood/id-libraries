@@ -1,0 +1,86 @@
+
+iains01              {; (C) Iain G. Stirling t=6:39.64
+                      ; P133 1024 x 768
+  reset=2000 type=mandel(fn||fn) function=sqr/conj passes=1
+  corners=0.0395084635/0.109417318/-0.650925903/-0.598494262
+  params=0/0/9 float=y maxiter=100 bailoutest=or inside=fmod
+  outside=255 periodicity=-256 colors=zzz<247>111111111<3>0000KU
+  }
+
+iains02              {; (C) Iain G. Stirling t=1:37.82
+                      ; P133 1024 x 768
+  reset=2000 type=julia passes=1
+  corners=-1.568/1.567997/-1.175982/1.176002
+  params=-0.77285766/-0.095993042 maxiter=100 inside=fmod
+  proximity=0.015 outside=0 periodicity=-256 colors=zzz<254>000
+  }
+
+iains03              {; (C) Iain G. Stirling t=1:34.85
+                      ; P133 1024 x 768
+  reset=2000 type=newton passes=1
+  corners=0.90839761/1.0215496/-0.455563682/-0.370699682 params=6
+  float=y maxiter=15 inside=fmod proximity=0.5 periodicity=-256
+  colors=zzz<7>XbmT_lQXj<3>AKcvvv<239>000
+  }
+
+iains04              {; (C) Iain G. Stirling t=3:41.18
+                      ; P133 1024 x 768
+  reset=2000 type=julia passes=1
+  corners=0.19279681/0.31113281/0.512317611/0.601069611
+  params=-0.7387588245570118/0.1409069307481326 float=y maxiter=120
+  inside=fmod proximity=0.2 decomp=2 periodicity=-256
+  colors=00wWWWmnnz00<229>zx0zx0zx0<3>zz0zzz<2>zzz000<2>000zzz<6>zzz
+  }
+
+iains05              {; (C) Iain G. Stirling t=6:09.15
+                      ; P133 1024 x 768
+  reset=2000 type=lambda passes=1
+  corners=0.76708786109/0.76720752245/0.721526708819/0.721616454842
+  params=0.947996089931572/0.3430247718383337 float=y bailout=12399
+  inside=fmod proximity=0.11 periodicity=-256
+  colors=000<57>uuuvvvwwwxxxyyyzzz<2>yzzyzzxyzwyy<95>2Vd2Vd1Vd<87>000
+  }
+
+iains06              {; (C) Iain G. Stirling t=3:43.82
+                      ; P133 1024 x 768
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=Jm_ducks passes=1
+  center-mag=-1.02556688172043000/+0.71858867014341600/8438.819
+  params=23/0 float=y maxiter=100 inside=fmod proximity=0.008 decomp=2
+  colors=000UWWmnnzzz<97>d2Md2Ld1L<95>101101000<53>000
+  }
+
+iains07              {; (C) Iain G. Stirling t=1:23.76
+                      ; P133 1024 x 768
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=CGNewton3 passes=1
+  center-mag=+0.02824245917605415/+0.00269181904510192/492.06
+  params=1.8/0 float=y maxiter=18 inside=fmod proximity=0.02
+  decomp=256
+  colors=ccczz0z00000zzzccczz0z00000mmm000<9>0CP0DR0FU<3>0Kc<9>`hodjphmr<3\
+  >www<9>NZkJXjFUh<3>0Kc<9>08F07D05A<2>023000012<8>0CP0DR0FU<3>0Kc<9>`hodj\
+  phmr<3>www<9>NZkJXjFUh<3>0Kc<9>08F07D05A<2>023000012<8>0CP0DR0FU<3>0Kc<9\
+  >`hodjphmr<3>www<9>NZkJXjFUh<3>0Kc<9>08F07D05A<2>023000012<8>0CP0DR0FU<3\
+  >0Kc<9>`hodjphmr<3>www<9>kkkjjjhhh<3>ccczz0z00000ccczzz
+  }
+
+iains08              {; (C) Iain G. Stirling t=2:24.56
+                      ; P133 1024 x 768
+  reset=2000 type=julia passes=1
+  center-mag=0.228303/-0.483871/3.875969
+  params=-0.68466362/0.310020983 float=y maxiter=60 inside=fmod
+  proximity=0.02 decomp=64 colors=zzz<254>000
+  }
+
+iains09              {; (C) Iain G. Stirling t=2:41.48
+                      ; P133 1024 x 768
+                      ; Colours based on lkmtch12.map
+  reset=2000 type=formula formulafile=_n.frm formulaname=NY002
+  function=sin/sqr/sinh/cosh passes=1
+  center-mag=-0.42776939483971880/-0.61914425806451700/135.0989
+  float=y maxiter=30 inside=fmod proximity=0.05
+  colors=222EA6ME6MIEUMEQE2aM6aQEiUEeM2qU6yY6yaEmUAqaMyeMyiUmaQeYQeUIYQIaY\
+  UaaaaeiiiieaYqiaymayqimiezzz<74>4R_3R_2QZ1QZ<138>022012011<2>01100028E24\
+  6
+  }
+

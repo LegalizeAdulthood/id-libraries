@@ -1,0 +1,678 @@
+
+comment {
+ The following parameter entries in this file all use the following
+ formula which may be appended to your newforms.frm file, or placed in
+ another formula file (edit all "formulafile=newforms.frm" strings in
+ this file to reflect that formula file).
+
+Primal {; Rollo Silver
+  ; Select p1 such that 0. <= p1 <= 1.
+  z = c = Pixel, t = real(p1), test = (p2+10)*(p2+10):
+   zsq = z*z
+   zcu = zsq*z
+   z = (1.-t)*zsq + t*zcu + c
+   |z| <= test
+  }
+
+ The figures refer to the 31 figures in the article The Primal
+ Heterotope by Rollo Silver in the October 1994 issue of Amygdala.
+ Additional pars are from further explorations by Lee Skinner.  All
+ colorings are by Lee Skinner.  Amygdala (a newletter of Fractals and
+ the Mandelbrot Set) is available from Rollo Silver at Box 219, San
+ Cristobal, NM  87564; USA.  The Primal formula provides via the t
+ parameter, a continuous series of fractals that go from the Mandelbrot
+ Set (t=0.) to the Cuboc Mandelbrot Set (t=1.).  There are no
+ slip-planes in this fractal like those found in Manzpower, which can
+ also create a continuous series of fractals between the two referred
+ sets.
+
+ The following 3 sequences are movies, based on the t parameter:
+
+ 1) p000000 through p100000 (42 frames, same colors, co-ordinates, dwell)
+
+ 2) p1258a1 through p1270a1 (6 frames, sames colors, co-ordinates, dwell)
+
+ 2) p28_001 through p50_001 (5 frames, sames colors, dwell, last 2 frames
+    have shifted co-ordinates)
+
+ Zoom sequences:  Although pcm_001 and each frame of the last two movies
+ is also a zoom of a frame in the first movie, there are two other zoom
+ sequences included:
+
+ 1) p012000 and p12_001 through p12_004  (5 frames)
+
+ 2) p008175 and p8175a1 through p8175a5  (6 frames)
+
+ ------------------------------------------------------------------------
+}
+
+p000000            { ; Primal Heterotope Fig. 1 - The Mandelbrot Set
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 float=y
+  maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p007200            { ; Fig. 2
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417
+  params=0.07199999999999999 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p007300            { ; mentioned in article, but no figure
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.073
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p007500            { ; mentioned in article, but no figure
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.075
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008000            { ; mentioned in article, but no figure
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.08
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008100            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.081
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008150            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.0815
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008164            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.08164
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008165            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.08165
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008175            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.08175
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008200            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.082
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008300            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.083
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p008500            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417
+  params=0.08500000000000001 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p009000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.09
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p010000            { ; Fig. 3
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012000            { ; Fig. 5: The Intruder Approaches The Set
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.12
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012300            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.123
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012500            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.125
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012550            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1255
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012580            { ; Fig. 10: The Intruder Menaces The Set
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+                     ;  (Image in article is printed in reverse)
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1258
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012595            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.12595
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012600            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.126
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012620            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1262
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012660            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1266
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012700            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.127
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p012850            { ; Fig. 18: The Fountain in Perspective
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.1285
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p013000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.13
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p013500            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.135
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p014000            { ; Fig. 19: The Major Collision Impends
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.14
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p014200            { ; Fig. 20: The Major Collision
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.142
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p015000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.15
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p016000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.16
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p017000            { ; Fig. 21: Coalescence
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.17
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p019000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.19
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p021000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.21
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p022000            { ; Fig. 22: Buds Emerge
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.22
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p028000            { ; Fig. 23: Ovoid with Buds
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.28
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p030000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.3
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p032000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.32
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p040000            { ;
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.4
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p050000            { ; Fig. 29: Almost Complete: The Big Picture
+                     ; Par and Image Copyright 1995 by Lee H. Skinner
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=0.5
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p100000            { ; Fig. 30: The Cubic Mandelbrot Set, Complete
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-12.7271/2.884022/-5.85417/5.85417 params=1 float=y
+  maxiter=4095 inside=0 logmap=yes
+  colors=0009dXzv0<11>z50z00x00<11>VBBSCCQCCOCC<3>GCCECCECC<162>DrFDrGDrGD\
+  rHDrH<48>JifsgCseC cyclerange=2/255
+  }
+
+p10_001            { ; Fig. 4: The Intruder
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-9.005834/-6.959153/-0.7675051/0.7675051 params=0.1
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=50001Q<6>G_dT_3oZCzv0<11>z50z00x00<4>k55i66h66<29>FBAECBECBECB<5>\
+  EEBEEBEEBEEBEFBEFB<37>EVCEVCFWDGXD<27>duWevXeuX<29>XROWPNXON<21>o2Wp0Xp0\
+  X<50>IksIKY cyclerange=2/255
+  }
+
+p1258a1            { ; Fig. 11: Imminent Collision
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417
+  params=0.1258 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p12595a            { ; Fig. 12: The Collision Begins
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417
+  params=0.12595 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p1260a1            { ; Fig. 13: Compression and Inflation
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417 params=0.126
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p1262a1            { ; Fig. 14: A Common Head            
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417
+  params=0.1262 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p1266a1            { ; Fig. 15: Coalescence              
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417
+  params=0.1266 float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p1270a1            { ; Fig. 16: Separation               
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.673069/-3.111957/-0.585417/0.585417 params=0.127
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=0000001AbGe6<2>8L95IIF0J<7>jgYnm_ts`zya<12>z`9zZ6zX6<10>zB3z93x93\
+  <13>V32S21S21<7>O21O21O21O21O21<3>N21N21N32N43<11>KCCKCDKDF<12>IMYHN_HN_\
+  <51>BXiBXiBXjBYjBYjBYj<86>1zz cyclerange=2/255
+  }
+
+p1285a1            { ; Fig. 17: The Fountain             
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-4.348176/-2.955664/-0.05246391/0.99192
+  params=0.1285 float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzNdoF0M<11>HVbHXcG_dT_3oZCzv0<11>z50z00x00<4>k55i66h66<29>FB\
+  AECBECBECB<5>EEBEEBEEBEEBEFBEFB<37>EVCEVCFWDGXD<27>duWevXeuX<29>XROWPNXO\
+  N<21>o2Wp0Xp0X<42>Oco cyclerange=2/255
+  }
+
+p12_001            { ; Fig. 6: The Intruder Close Up     
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-6.6726395/-5.6735278/-0.37466688/0.37466688
+  params=0.12 float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzNdoF0T<4>HEWHHXIKYIMZIO_IQ`<3>G_dT_3oZCzv0<11>z50z00x00<4>k\
+  55i66h66<29>FBAECBECBECB<5>EEBEEBEEBEEBEFBEFB<37>EVCEVCFWDGXD<27>duWevXe\
+  uX<29>XROWPNXON<21>o2Wp0Xp0X<42>Oco cyclerange=2/255
+  }
+
+p12_002            { ; Fig. 7: The Ugliest Fractal (Rollo Silver, 1994)
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-6.35425461/-6.25434345/-0.00815580114/0.0667775749
+  params=0.12 float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzNep<4>Jjr72g<5>FSdHXcG_dT_3oZCzv0<11>z50z00x00<4>k55i66h66<\
+  19>P99OA9OA9OA9<9>LD9KD9KDAKDB<28>GJgGKhGKh<46>PcqPcqPcqQcqQcq<96>zzz
+  cyclerange=2/255
+  }
+
+p12_003            { ; Fig. 8: The Jet                                 
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-6.29402949/-6.28044157/0.00315957611/0.0133505152
+  params=0.12 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z001N1<5>4I44H44H44H4<8>182071271<8>RG0TI0WL1ZO1aR205Z<11>zzc<\
+  13>z`9zZ6zX6<10>zB3z93x93<13>V32S21S21<7>O21O21O21O21O21<12>K21K21K31K41\
+  <32>E`9<4>D_cD_bD``<4>0R6<2>hh4<16>yh1zi0yi1<29>7ie5ig5ig<31>3iw2hx2hy1g\
+  z cyclerange=2/255
+  }
+
+p12_004            { ; Fig. 9: The Jewel                               
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1
+  corners=-6.28799905/-6.286640258/0.005875601633/0.006894695547
+  params=0.12 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z001N1<5>4I44H44H44H4<8>182071271<8>RG0TI0WL1ZO1aR205Z<10>tub<\
+  22>yyBd0nd2m<3>fBfgDdhGciIb<12>zqG<14>S93Q62P52O42N32M21<2>L21K31K31J41J\
+  51<19>7I46J55L53N51Q63R65S6<4>D`7<5>0J0E`pgQh0EbD_bD``<4>0R6<2>hh4oh4vh4\
+  s`4pW4mB3<5>sHbtJisJi<4>mNhkOhkOh<46>FWyEXzEXzDYzCZz<11>3gy2hx2hy1gz
+  cyclerange=2/255
+  }
+
+p21_001            { ;  
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=primal
+  passes=1 corners=-3.174003/-2.073843/0.24911605/1.074236 params=0.21
+  float=y maxiter=1023 inside=0 logmap=yes
+  colors=000zzzQR0zu0zq0<3>zW0zQ0zJ0zD0z60z00<6>n13l13j13i13g13<8>V28T28R2\
+  8P39N39<5>A3F74G74G<11>G4NH4OI4PJ4QJ4R<7>K4XK4YL5ZM6_<26>UPsVPsVQtWRuWRu\
+  <149>LszsgCseC cyclerange=2/255
+  }
+
+p28_001            { ; Fig. 24: Rod-Like Appendage
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-1.837198/-0.344026/-2.126396/-1.006517 params=0.28
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzLS_cUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhNTd cyclerange=2/255
+  }
+
+p30_001            { ; Fig. 25: An Ithyphallic Appendage
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-1.837198/-0.344026/-2.126396/-1.006517 params=0.3
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzgbzcUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhTTd cyclerange=2/255
+  }
+
+p32_001            { ; Fig. 26: Ithyphallic Hypertrophy
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-1.837198/-0.344026/-2.126396/-1.006517 params=0.32
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzgbzcUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhTTd cyclerange=2/255
+  }
+
+p40_001            { ; Fig. 27: The Enantiomorphic Urge
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-1.590671/-0.09749845/-1.963878/-0.8439992
+  params=0.4 float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzgbzcUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhTTd cyclerange=2/255
+  }
+
+p50_001            { ; Fig. 28: Almost Complete        
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-1.26757/0.225602/-1.827513/-0.7076336 params=0.5
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzgbzcUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhTTd cyclerange=2/255
+  }
+
+p8175a1            { ; Beginning a Zoom on the Early Intruder
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-10.148136/-9.4937614/-0.24539048/0.24539048
+  params=0.08175 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z0005O00UAEZ<8>tub<22>yyBd0nd2m<3>fBfgDdhGciIb<12>zqG<14>S93Q6\
+  2P52O42N32M21<2>L21K31K31J41J51<19>7I46J55L53N51Q63R65S6<4>D`7<5>0J0E`pg\
+  Qh0EbD_bD``<4>0R6<2>hh4oh4vh4s`4pW4mB3<5>sHbtJisJi<4>mNhkOhkOh<46>FWyEXz\
+  EXzDYzCZz<11>3gy2hx2hy1gz1N1<5>4I44H44H44H4<8>182071271<8>RG0TI0WL1ZO1aR\
+  2 cyclerange=2/255
+  }
+
+p8175a2            { ; Aha, There is Something Here
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-9.58337654/-9.55654718/-0.0100610096/0.0100610096
+  params=0.08175 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z00891<6>RG0TI0WL1ZO1aR205O00UAEZ<8>tub<22>yyBd0nd2m<3>fBfgDdh\
+  GciIb<12>zqG<14>S93Q62P52O42N32M21<2>L21K31K31J41J51<19>7I46J55L53N51Q63\
+  R65S6<4>D`7<5>0J0E`pgQh0EbD_bD``<4>0R6<2>hh4oh4vh4s`4pW4mB3<5>sHbtJisJi<\
+  4>mNhkOhkOh<46>FWyEXzEXzDYzCZz<11>3gy2hx2hy1gz1N1<5>4I44H44H44H4<8>18207\
+  1271581 cyclerange=2/255
+  }
+
+p8175a3            { ;  
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1
+  corners=-9.568024434603/-9.568017070206/0.001661150071891/0.001666673369\
+  745 params=0.08175 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z00mQY<9>zqG<14>S93Q62P52O42N32M21<2>L21K31K31J41J51I51<2>H74H\
+  86H97HA9HBA<28>F_nE`pE`p<13>IbmIbmIbmIbmIbmIbm<157>kzz
+  cyclerange=2/255
+  }
+
+p8175a4            { ;  
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1
+  corners=-9.5680210644678/-9.5680204311297/0.0016636880387717/0.001664163\
+  0423871 params=0.08175 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z00iyy<4>jyykzzmQY<9>zqGxnGvkFQJaQO0LL0S80jXA<7>S93Q62P52O42N3\
+  2M21<2>L21K31K31J41J51I51<2>H74H86H97HA9HBA<28>F_nE`pE`p<13>IbmIbmIbmIbm\
+  IbmIbm<150>ixy cyclerange=2/255
+  }
+
+p8175a5            { ; Arrival at Destination
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1
+  corners=-9.5680207641867/-9.56802073251979/0.00166391418050544/0.0016639\
+  3793068621 params=0.08175 float=y maxiter=4095 inside=0 logmap=yes
+  colors=000Z00duw<31>jyykzzmQYkTXiWcgZTl`RscPtfNpcP<4>VIZJJaTR0LL0S80gFnw\
+  `0<4>dJ1`G1ZF1<4>O81L61L91<6>HV8<5>HJBHHCHFDHDEHEG<2>GHKGHMGIOGJQGKS<14>\
+  GXwFYzFYz<143>syysyytzz cyclerange=2/255
+  }
+
+pcm_001            { ; Fig. 31: The Cubic Set's Head
+                     ; Par and Image Copyright by Lee H. Skinner, 1995
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
+  passes=1 corners=-0.78054/0.780572/0.3754676/1.546302 params=1
+  float=y maxiter=4095 inside=0 logmap=yes
+  colors=500zzzgbzcUz<2>EMO<6>GT0<9>zv0<11>z50z00x00<4>k55i66h66<19>P99OA9\
+  OA9OA9<4>NB9NBANBAMBBMBB<17>J9JI8JI8JI8JI8K<48>9Ne9NeANe<99>zzzTXkTYlSXl\
+  RVlPUhTTd cyclerange=2/255
+  }
+

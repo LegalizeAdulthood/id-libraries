@@ -1,0 +1,493 @@
+
+comment {    Please Read:
+
+             THIS PAR FILE IS SET FOR SCREEN RESOLUTION 1024x768 ONLY
+               (However, times are for 1600x1200 on Pentium-166Mh.
+
+             All formulas must run with passes=1.
+
+             Images may contain artifacts if they are saved and
+             restarted.
+
+             Thumbnails may appear very different from the images.
+
+             To use for other resolutions:
+
+             1. Use your editor to CHANGE the 5th entry in each parameter
+                (params=) field from /1024 to /1600, /1280, /800, /640,
+                or /320 (or interactively use the Fractint Z-Screen to
+                reset parameter p3).
+
+                                  AND
+
+             2. Use your editor to CHANGE all occurances of =sf7 to
+                =sf9 or whatever function key calls your desired
+                resolution as specified in your fractint.cfg file
+                (or interactively use the <del> key to reset your
+                screen resolution)
+
+ The calculation times are given for images generated at 1600x1200 on a P166.
+ Use this table to get an idea of the calculation time on your computer:
+                                          courtesy: Sylvie Gallet
+
++---------+----------+----------+----------+----------+-----------+-----------+
+!         ! 320x200  ! 640x480  ! 800x600  ! 1024x768 ! 1280x1024 ! 1600x1200 !
++---------+----------+----------+----------+----------+-----------+-----------+
+! DX2-66  ! t / 6.2  ! t / 1.3  ! t x 1.2  ! t x 1.9  !  t x 3.2  !  t x 4.8  !
++---------+----------+----------+----------+----------+-----------+-----------+
+! DX4-100 ! t / 9.4  !  t / 2   ! t x 1.2  ! t x 1.3  !  t x 2.1  !  t x 3.2  !
++---------+----------+----------+----------+----------+-----------+-----------+
+!  P-100  !  t / 20  ! t / 4.2  ! t / 2.7  ! t / 1.7  !   t x 1   !  t x 1.5  !
++---------+----------+----------+----------+----------+-----------+-----------+
+!  P-166  !  t / 30  ! t / 6.2  !  t / 4   ! t / 2.5  !  t / 1.5  !   t = 1   !
++---------+----------+----------+----------+----------+-----------+-----------+
+
+     This file uses the following pseudo hicolor formula
+
+  MANJUL_LACE (George Martin [76440,1143] ) - 34 images (Skinner)
+  available in phc_1.zip or orgfrm.zip (downloadable from Graphdev lib 4)
+
+  34 Par Sets Included
+
+        }
+
+mjlc016            { ; t0:13:55  Spaceship Mandelbrot
+                     ; Zoom into Les St Clair's mandel_outline_z1
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=+0.00211673357442279/+0.56117533072305930/1266.71
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=0000rUkNk<2>gBfe6df6a<9>x14z00z10z31y52<6>yW3x_4x`4<24>yrCzsDzrFz\
+  qGzoI<2>ymJymKxlKwkK<24>gWTgVUgVW<8>_SrZRpYQnXPl<79>FBCFBCEABEAA<2>F97F9\
+  6G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<4>ynFynHyoKyoMypP<12>yyw\
+  zzzyvy<7>mRl cyclerange=2/255
+  }
+
+mjlc017            { ; t0:07:38  Desert Splendor
+                     ; Zoom into Les St Clair's mandel_outline_z2
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.06020769595650197/+0.55875349281886730/512.6517
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000zz0wZc<26>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94R\
+  I4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3\
+  aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z10z31y52y62\
+  <11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c cyclerange=2/255
+  }
+
+mjlc018            { ; t0:10:44
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05789473964132329/+0.55704200379686890/5961.067
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000znJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z1\
+  0z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<4>zoI
+  }
+
+mjlc019            { ; t0:10:37  Flowers for Kerri
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05897476987569645/+0.55753007100846540/10253.03
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000y_c<29>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4P\
+  S<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3\
+  cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z10z31y52y62<11\
+  >sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaa
+  }
+
+mjlc020            { ; t0:09:17  Flowers for Shannon
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.06244997629028518/+0.55917453452818770/8818.146
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000uYb<24>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4P\
+  S<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3\
+  cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z10z31y52y62<11\
+  >sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<2>vZb
+  }
+
+mjlc021            { ; t0:10:06  Flowers for Jaycie
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05809722594779840/+0.55706960799332820/43831.37
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000znJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z1\
+  0z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<4>zoI
+  }
+
+mjlc022            { ; t0:13:12
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.06248061411952702/+0.55917075129146590/64839.31
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000f6a<9>x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA\
+  <17>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4P\
+  S<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3\
+  cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d
+  }
+
+mjlc023            { ; t0:13:07  Bright Sun
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.06234841756002054/+0.55914389031074130/88181.46
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000q3H<3>x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA\
+  <17>zaay_cy_c<28>YNWXMVWNV<14>6lV<5>fuimvlsxozzryyr<34>6FW<12>ACKBCJBBIC\
+  BHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzyp\
+  z<10>n_p<3>e6d<5>o3L
+  }
+
+mjlc024            { ; t0:11:14  Flowers for Amanda
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811438572841039/+0.55707603949575520/277413.8
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000znJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z1\
+  0z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<4>zoI
+  }
+
+mjlc025            { ; t0:13:12
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811786045081532/+0.55707617779208560/1755783
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_\
+  c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4PS<4>4HX3FZ4F\
+  Y5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>\
+  ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<11>z00
+  }
+
+mjlc026            { ; t0:12:52
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811356814666806/+0.55707604550863920/2039807
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000u2Bv17x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA\
+  <17>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4P\
+  S<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3\
+  cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<7>s2E
+  }
+
+mjlc027            { ; t0:10:38
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811470434482469/+0.55707689332527280/2774138
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000vi9vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<1\
+  0>YaSPaO<3>6jJ<6>5X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>\
+  F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p\
+  <3>e6d<10>x14z00z10z31y52y62<11>sSCrUDrVDrWD<9>uhA
+  }
+
+mjlc028            { ; t0:11:33  Flowers for Amy
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811752981114011/+0.55707441601709530/1333720
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000zoI<12>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z1\
+  0z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<3>zqG
+  }
+
+mjlc029            { ; t0:13:24
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811374849558180/+0.55707343591701530/1429968
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000pbroaqn_p<3>e6d<10>x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<7>qds
+  }
+
+mjlc030            { ; t0:14:25  Tri-Section
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811763248978836/+0.55707645319602330/1.111255e+007
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_\
+  c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4PS<4>4HX3FZ4F\
+  Y5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>\
+  ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<11>z00
+  }
+
+mjlc031            { ; t0:11:17  Flowers for Dominiques
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.05811798371328623/+0.55707441038125150/4257305
+  params=0/0/0/0/1024/0 float=y maxiter=1023 logmap=yes video=sf7
+  colors=000zoI<12>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5\
+  X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10>x14z00z1\
+  0z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<3>zqG
+  }
+
+mjlc032            { ; t0:08:46
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.311475/-0.391135/15.73266 params=0/0/0/0/1024/0
+  float=y maxiter=1023 inside=0 logmap=yes video=sf7 symmetry=none
+  colors=000ylPxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxh\
+  B<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6F\
+  W7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zq\
+  zz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zu\
+  A<17>zaay_cy``<9>yk7yl4xl5wl7<12>xiA cyclerange=2/255
+  }
+
+mjlc033            { ; t0:05:16
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.36521838213746300/-0.41540387002596470/314.6532
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000xjqtIzGPLHfLJxKIENizQOTTR`WG9G<2>KI0DEEAL6JWJOtGKEU<2>a`tH6MK5\
+  NN4PrJ6bP326LCniITPLoUnzzmUCIJLLVKOfJe70D9NBBP9ESGKI<2>Jx9TCZPET<2>sapFA\
+  bFDtNDLVJMyl6CFR9OX5XbGAJ<2>MKA_GQtQVKBV<2>aNxKEP<2>ZacHHN<2>NmUXXeowzG8\
+  TI9`ZMcsawCBQ9FV6K_KYDPx4L5DR2594P31UFRbGjtRGXbPhnZt_GItQESPHefCOISXTZfc\
+  eGDTHJ`IQiEfgQBJ<2>xNAINZLclOtzJLBOZ1VXFjw88GY0QjkS5aUQxpWRMJc`GQDR`JXlP\
+  cLIK<2>doGHFMKOONzQQeSENGDcABt4Kg4IHI<2>Sl9PHQZRVi``jlrrBvKunNNNVcPctRbA\
+  PzETQHTaR`l`hFASzg56XkE5qV7Hj7mz6H0P0<2>4fRz00<3>hYOGFM<2>LcQE5XD3iC1v8Q\
+  X0hiFKHEXD<8>2N60L50M5<32>Gv9<3>Xsf<2>ugx<2>KXgIadGf`REQcMVpU_UVPMCS<2>i\
+  SoM6V<2>h1zEWIDuETAZfEl cyclerange=2/255
+  }
+
+mjlc034            { ; t0:16:16  Through the Mandel-Glass  
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.36468435346096720/-0.41433524195871630/8216.169
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=0A0xjq<22>SfwRfwOfw<5>0bzREQcMVpU_UVPMCS<2>iSoM6V<2>h1zEWIDuETAZf\
+  EltIzGPLH0LJxKIENf00zc0R`2GUXHCBGcAEG9Ct8AL68_JOtGKEU<2>a`tH6MK5NN4PrJ6b\
+  P326LCniITPLoUnzzmUCIJLLVKOfJe70D9NBBP9ESGKI<2>Jx9TCZPET<2>sapFAbFDtNDLV\
+  JMyl6CFR9OX5XbGAJ<2>MKA_GQtQVKBV<2>aNxKEP<2>ZacHHN<2>NmUXXeowzG8TI9`ZMcs\
+  awCBQ9FV6K_KYDPx4L5DR2594P31UFRbGjtRGXbPhnZt_GItQESPHefCOISXTZfceGDTHJ`I\
+  QiEfgQBJ<2>xNAINZLclOtzJLBOZ1VXFjw88GY0QjkS5aUQxpWRMJc`GQDR`JXlPcLIK<2>d\
+  oGHFMKOONzQQeSENGDcABt4Kg4IHI<2>Sl9PH0<8>zAP<7>E5q<20>EJJFKHFMH<4>EZG<8>\
+  zzB<10>zz0 cyclerange=2/255
+  }
+
+mjlc035            { ; t0:10:26
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.23854482225699470/-0.42632996670945820/128.9562
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=0zrN0PER6<11>0T4aKK<5>O00<9>zT4<6>ESO<2>CPcBNiDLc<5>MC4OA1<34>zb4\
+  <25>421100100<44>d20d20e20e20f21<43>x41y52x73<2>wD5vF6uF6<16>bA1`90`90<1\
+  8>JQ5IR6HR6GR6FR6 cyclerange=2/255
+  }
+
+mjlc036            { ; t0:28:00
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.23844136334951070/-0.42211199888865040/948.2077
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=xOyaPYER6<11>0T4aKK<5>O00<9>zT4<6>ESO<3>0Kc<11>FOVHOUHOU<20>DXC<9\
+  >v`4<4>jT3hS3fR3dQ3aO3<14>421100100000<43>d20d20e20e20f21<38>v41<8>v_Lvc\
+  NvdOufP<18>`90<18>JQ5IR6HR6GR6FR6 cyclerange=2/255
+  }
+
+mjlc037            { ; t0:09:30  Deep Pool
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24687326430945380/-0.43228009427493630/914.0722
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=0ujN0PfE2<4>zT4<6>ESO<2>CPcBNiDLc<5>MC4OA1<34>zb4<25>421100100<77\
+  >z00z00y00<29>dA1cA1b91<14>H11F02F02<28>_D2_D2`C2<5>bB1
+  cyclerange=2/255
+  }
+
+mjlc038            { ; t0:09:33  Evening
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24754102501730150/-0.43164869159876560/2596.796
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoI<35>7X_<17>zmt<14>zWazU_xT_<18>C2_<24>8`b7bc7bb<8>5fM5fK5fJ\
+  5fH6fF<4>5X34U04T1<14>7ET<21>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>\
+  ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<9>v17 cyclerange=2/255
+  }
+
+mjlc039            { ; t0:14:49
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24683677465328720/-0.43250272758849940/1896.415
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoIu2Bv17x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9\
+  zuA<2>zrFzqGznJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6\
+  >5X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I\
+  00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<7>s2E
+  cyclerange=2/255
+  }
+
+mjlc040            { ; t0:11:01
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24651158331124200/-0.43191617447349990/3264.544/1/-90
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoIzwn<3>zzszoI<39>zoIyoIwnJ<13>bgQ<6>0N0<22>0fk<7>zmt<14>zWaz\
+  U_xT_<18>C2_<24>8`b7bc7bb<8>5fM5fK5fJ5fH6fF<4>5X34U04T1<14>7ET<18>EAAE99\
+  GBA<15>zmT<18>zwm cyclerange=2/255
+  }
+
+mjlc041            { ; t0:07:07
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24793146433828360/-0.43250754522741590/3746.197
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoIwZc<26>YNWXMVVNX<11>5du<5>IkvKlwOmw<8>zzz<9>Ivk<2>ZYezAczsb\
+  zA`zrZzJYzqWz0UzpTz0RzoPz6OwmOt0OpjOm0OjgPf0PcdP`0PXaPU0QRZQN0QKWQH0QDTR\
+  D9QCROCGMBPKBKIANG<2>9KA8I89H8<6>GB5GA5G84<3>I21I00J10<10>ZC3`D3aE3cF4eI\
+  4gL4<6>ug1zj1yn0<46>y33x14x14<34>yTOyUPyVR<13>yts<4>x_c
+  cyclerange=2/255
+  }
+
+mjlc042            { ; t0:08:58
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24763645591919260/-0.43213422580406040/13272.56
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000BTTz21z00<31>ZJE<6>wgF<8>XKDUHDSGC<4>GD9DC8DG7<2>BV4<2>ObE<6>7\
+  vc<2>zq0<4>7c7<4>JREFOF<2>38M<6>uI1<4>zaBzhD<11>961<5>ze7<4>vWWuT`v_e<3>\
+  zzx<13>GRX<2>GT`GUaGU`<31>FX2EY0EY0<18>8GG<3>OJSSKVWKZ_Kb<5>zIz<2>zvt<10\
+  >ztD<5>zYAzU9zT8<15>z41 cyclerange=2/255
+  }
+
+mjlc043            { ; t0:12:54
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24757149439222820/-0.43214314887969900/77166.03
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000BTTz00<31>ZJE<6>wgF<8>XKDUHDSGC<4>GD9DC8DG7<2>BV4<2>ObE<6>7vc<\
+  2>zq0<4>7c7<4>JREFOF<2>38M<6>uI1<4>zaBzhD<11>961<5>ze7<4>vWWuT`v_e<3>zzx\
+  <13>GRX<2>GT`GUaGU`<31>FX2EY0EY0<18>8GG<3>OJSSKVWKZ_Kb<5>zIz<2>zvt<10>zt\
+  D<5>zYAzU9zT8<16>z21 cyclerange=2/255
+  }
+
+mjlc044            { ; t0:33:21
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24650084358068680/-0.43231097826017190/22051.34
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoIu2Bv17x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9\
+  zuA<2>zrFzqGznJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6\
+  >5X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I\
+  00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<7>s2E
+  cyclerange=2/255
+  }
+
+mjlc045            { ; t0:19:58
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24714311565067600/-0.43248161757070190/13944.23
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000zoIl4S<6>x14z00z10z31y52y62<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9\
+  zuA<2>zrFzqGznJ<11>zaay_cy_c<28>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6\
+  >5X34U04T94RI4PS<4>4HX3FZ4FY5FX6FW<12>ACKBCJBBICBHCBG<8>F97F96G85G74<3>I\
+  00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<2>j5V
+  cyclerange=2/255
+  }
+
+mjlc046            { ; t0:13:57  Spider Web Dewdrops  
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24756944125615350/-0.43213678672174160/275593
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000BTTz00<30>ZJE<6>wgF<8>XKDUHDSGC<4>GD9DC8DG7<2>BV4<2>ObE<6>7vc<\
+  2>zq0<4>7c7<4>JREFOF<2>38M<6>uI1<4>zaBzhD<11>961<5>ze7<4>vWWuT`v_e<3>zzx\
+  <13>GRX<2>GT`GUaGU`<31>FX2EY0EY0<18>8GG<3>OJSSKVWKZ_Kb<5>zIz<2>zvt<10>zt\
+  D<5>zYAzU9zT8<17>z00 cyclerange=2/255
+  }
+
+mjlc047            { ; t0:15:35
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24756656028873630/-0.43213995308816260/1926119
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=000BTTz72<2>z21z00z00<30>ZJE<6>wgF<8>XKDUHDSGC<4>GD9DC8DG7<2>BV4<\
+  2>ObE<6>7vc<2>zq0<4>7c7<4>JREFOF<2>38M<6>uI1<4>zaBzhD<11>961<5>ze7<4>vWW\
+  uT`v_e<3>zzx<13>GRX<2>GT`GUaGU`<31>FX2EY0EY0<18>8GG<3>OJSSKVWKZ_Kb<5>zIz\
+  <2>zvt<10>ztD<5>zYAzU9zT8<12>z83 cyclerange=2/255
+  }
+
+mjlc048            { ; t0:25:22
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.24648284400688050/-0.43228798241411780/106016.1
+  params=0/0/0/0/1024/0 float=y maxiter=2047 inside=0 logmap=96 video=sf7
+  symmetry=none
+  colors=000zoIIvk<2>ZYezAczsbzA`zrZzJYzqWz0UzpTz0RzoPz6OwmOt0OpjOm0OjgPf0\
+  PcdP`0PXaPU0QRZQN0QKWQH0QDTRD9QCROCGMBPKBKIANG<2>9KA8I89H8<6>GB5GA5G84<3\
+  >I21I00J10<10>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<46>y33x14x14<34>yTOyUPyVR<1\
+  3>yts<4>x_c<27>YNWXMVVNX<11>5du<5>IkvKlwOmw<8>zzz<8>Mwl
+  cyclerange=2/255
+  }
+
+mjlc049            { ; t0:35:10  Visitors from the Sky
+  reset=1940 type=formula formulafile=_m.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.23732804204607570/-0.42177599777203980/4558.691
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes video=sf7
+  symmetry=none
+  colors=xOyaPYER6<11>0T4aKK<5>O00<9>zT4<6>ESO<3>0Kc<11>FOVHOUHOU<20>DXC<9\
+  >v`4<4>jT3hS3fR3dQ3aO3<14>421100100000<43>d20d20e20e20f21<38>v41<8>v_Lvc\
+  NvdOufP<18>`90<18>JQ5IR6HR6GR6FR6 cyclerange=2/255
+  }
+

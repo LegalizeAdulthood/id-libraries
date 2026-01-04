@@ -1,0 +1,677 @@
+Center-Universe        { ; The Center of the Universe
+  reset type=lambda corners=-0.54826/0.571737/-0.551546/0.28847 
+  params=0.85/0.6 
+  colors=00000e<39>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<10>lzz 
+  } 
+  
+Face-inthe-Fractal     { ; This is a test file from CI$ 
+  reset type=julibrot corners=-2.0/2.000007/-1.499996/1.3 
+  params=-0.85/-0.85/0.23/-0.23 
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
+  utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonpo\
+  nnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhh\
+  hghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabb\
+  bacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYX\
+  WWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQ\
+  QPQQ
+  } 
+
+Fungus Julia       { ; Appears 3-D-like
+  reset type=mandel
+  corners=0.374571215/0.374892855/0.101239137/0.101473788
+  colors=000m`d<3>yTfNre<5>TxzMrb<14>HyZMr`<10>StEHeZBTU5FPLpa<13>2JBOqb<4>aj`\
+  Lqb<11>0`jMob<8>HOgMpZ<5>J_9Ogc<2>XBhLrb<10>2ugRm`<3>kRPMnb<8>MFdLBeMldMefMZ\
+  iNp`<7>_UIQpa<6>q_VNqW<2>Tk8
+  }
+
+MtMand             { ; Continuous Potential: Used for MTMAND.GIF Height field.
+  reset type=mandel corners=-0.1992/-0.1099914/1.0000046/1.06707 float=y
+  maxiter=1500 potential=255/2200/1000/16bit
+  }
+
+MtMand Moon        { ; Julia set corresponding to MtMand mountain
+  reset type=julia corners=-1.568/1.568/-1.176/1.176
+  params=-0.1545957/1.03353730000001 float=y maxiter=256
+  potential=255/1000/500
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGxxz<6>zzz
+  }
+
+Deep_mandl_156   { ; Large magnification of Mandelbrot curve 
+  reset type=mandel 
+  corners=-0.3740234439637/-0.3740234266779/0.6597855774327/0.6597855903723
+  float=y maxiter=20000 inside=0 
+  colors=000muG<8>ltFRCC<142>KucKucKtc<57>CHy<7>ryI<32>muG 
+  }
+
+plate13            { ; From "Fractal Programming in C"
+  reset type=julia corners=-2.0/2.0/-1.5/1.5 params=-0.743036/0.113467
+  inside=zmag outside=0
+  colors=000czc<4>czcUmUUmUUmUKcK<9>KcKAUA<10>AUA0K0<116>0K0
+  }
+
+btmbug1  { ; streaks in fill -- bug from Wesley Loewer
+  reset video=f4 type=mandel passes=b corners=-2.5/1.5/0.0/1.5
+  }
+
+btmbug2  { ; not filled correctly in bottom left of lake - Bug from WL
+  reset video=f3 type=mandel passes=b
+  corners=-2.030151/0.96985/2.0/-2.0/0.96985/-2.0
+  }
+
+torn   { ; First ever observed "tearing" of a fractal appears next to lake
+  reset type=manowarj passes=1
+  corners=0.300271/-0.323728/-0.415976/0.416004/-0.323728/0.416004
+  maxiter=500 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGaUj`VlspK`2t\
+  <3>`Kp
+  }
+
+b-line-mode          { ; Example of displaying boundary lines--B.Smurf
+  reset Type=mandel passes=b
+  corners=-1.02027775/-1.01977757/0.367312998/0.367687725 maxiter=256
+  fillcolor=254 inside=254 logmap=yes
+  colors=00000K<13>zzz<22>888A5AD3DG3GJ3JM2M<17>zcz<8>CCS<19>5zz<17>14L00I22I5\
+  5H88GAAF<36>x1gz0hz3i<14>zzz<14>`44Z00Z44<13>zzz<16>00U<3>000<13>zzz<18>W4NR\
+  0G000000
+  }
+
+t-line-mode        { ; Example of displaying tesseral lines--B.Smurf
+  reset type=mandel passes=t
+  corners=-1.02027775/-1.01977757/0.367312998/0.367687725 maxiter=256
+  fillcolor=254 inside=254 logmap=yes
+  colors=00044O<12>zzz<22>888A5AD3DG3GJ3JM2M<17>zcz<8>CCS<19>5zz<17>14L00I22I5\
+  5H88GAAF<36>x1gz0hz3i<14>zzz<14>`44Z00Z44<13>zzz<16>00U<3>000<13>zzz<18>W4NR\
+  0G00000000K
+  } 
+
+Islands            { ; Islands in the ocean
+reset type=plasma center-mag=0/0/0.666667 params=45/1/1 maxiter=200
+  inside=bof60 outside=0 logmap=old
+colors=BCEBCI<2>DBIDBIDCH<11>FNAGO9IPA<2>OTDQVEQVE<3>QVE<7>O3C<13>G3CG3CH4C<\
+18>SF8TG8UH9<27>rgLshMshMshM<4>shMshMrgMqfM<21>YPMKFd<13>7RG<4>azx<2>azx<3>E\
+Uf<7>7RK6QH7QJ<14>NBlCOSDNS<11>Ekj<2>DNP<12>8PK7QJ7QL<14>KXy<5>6LP<6>Q9p<5>L\
+  EfUIxUIy cyclerange=136/253
+  }
+
+Evil_Eye           { ; This became necessary Peter -- Plagerism controversy
+                     ; Dick Sherry 76264,752
+  reset type=manzzpwr passes=1
+  corners=-1.3220264/-1.2721166/0.0273428/-0.0273428/-1.2721166/-0.0273428
+  params=0/0/2 float=y maxiter=500 inside=0 potential=255/511/0
+ colors=000<178>000S00FZH<3>6H7ppp<3>UUUhhUhhT<10>NF4giT<15>OJ5MH3MH3<30>050i\
+       N9hMA
+  }
+
+
+SMOKIE_WATCHES_YOU { ; FROM "EVIL EYE" BY DICK SHERRY ;) CREDIT WHERE IT'S DUE <G>.
+                     ; PETER MORELAND 100012,3213
+  reset type=manzzpwr
+  corners=-1.1636446/-1.1216571/0.0233138/-0.0226915/-1.1216571/-0.0226915
+  params=1/0/2 float=y maxiter=500 inside=0 potential=255/511/0
+  colors=000hMA000<177>000S0000z<3>6H7ppp<3>UUUhhUhhT<10>NF4giT<11>TPBSOARM8PL\
+  7OJ5MH3<2>LG3KG3JF3IF3IF2<24>050iN9
+  }
+
+Cool_Mandelbrot   {; From a Beginner Fractal Hunter!
+  reset type=mandel 
+  corners=-0.7328483/-0.7128491/0.2780953/0.2930951
+  }
+
+INCA DINKA         { ; YOU SHAMED ME INTO HALF AN HOUR OR SO....
+                     ; (C) 1992 Peter Moreland
+  reset type=fn+fn function=cos/tan passes=t
+  corners=-0.344/0.344/0.297411/0.813411 params=1/0/1 float=y maxiter=100
+  bailout=64 fillcolor=9 finattract=y
+  colors=000JCFICFHBGvhj<11>KDLGAIB1T<34>GNKWLFjJAjH5<24>600QzI<26>CF0vkH<43>8\
+  EGYd4Xb5V`6<5>IEF<2>PPIx2H<5>MAGJN5<6>GCF2jJ<3>CNHEHGIKe<8>GCKia3<17>OKJlig<\
+  19>699_EA<16>KCF
+  }
+
+Fractint_Challenge { ; Color map challenge image
+                     ; Help find the best color map for this image!
+  reset type=manowar corners=-0.658435/-0.6488269/-0.00459571/0.00459571
+  params=1.414 float=y maxiter=1000 inside=zmag outside=0
+  colors=000JiH<12>HaPKHY<3>G3fG0hH1g<43>ahSahSbgR<74>dICdICcJB<78>4y64y\
+  66x5<9>Ou3<19>KiG
+  }
+
+Fractal Garden #12 { ; The fountain in my garden, all lit up
+                     ; Ronald C. Lewen, 76376,2567
+  reset type=tim's_error function=sqr
+  corners=-0.90439594/-0.89939958/0.0051017/-0.0049915/-0.89939958/-0.0049915
+  inside=0
+  colors=000div<11>PCjpvb<18>wmQwlPxkOxkNwjMviK<11>la2<20>BOu9NxANv<24>p97<\
+  10>T0F<2>7hV<23>RyhSziSxh<11>a`U
+  }
+
+
+Fractint_Challenge { ; Color map challenge image
+                     ; Help find the best color map for this image!
+  reset type=manowar corners=-0.658435/-0.6488269/-0.00459571/0.00459571
+  params=1.414  maxiter=1000 inside=zmag outside=0
+  colors=000JiH<12>HaPKHY<3>G3fG0hH1g<43>ahSahSbgR<74>dICdICcJB<78>4y64y\
+  66x5<9>Ou3<19>KiG
+  } 
+
+Challenge_1        { ; My choice of colors
+                     ; Dick Sherry
+  reset type=manowar corners=-0.65843499/-0.64883697/-0.00458425/0.0045957
+  params=1.414 maxiter=1000 inside=zmag outside=0
+  colors=000g`P<12>UPF000<29>nnnpppooo<30>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0\
+  <14>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<15>haQ
+  }
+
+Challenge_2        { ; Approx attempt suggesting orig colors
+                     ; Dick Sherry
+  reset type=manowar corners=-0.65843499/-0.64883697/-0.00458425/0.0045957
+  params=1.414 maxiter=1000 inside=zmag outside=0
+  colors=000LCg<2>MCkNDmMDl<14>59OBPI<30>bbObbObaO<26>QPEPODQLDRIDSFDUCD<12>_G\
+  B`GB`GB`GBaHAaHA<9>fJ9gK8fK8<14>S85CNA<60>KhM<2>4w6<15>DQ6<14>JiH<12>7IAFCO<\
+  12>KCe
+  }
+
+
+Challenge_3        { ; Color map challenge image
+                     ; Help find the best color map for this image!
+  reset type=manowar corners=-0.658435/-0.6488269/-0.00459571/0.00459571
+  params=1.414 float=y maxiter=1000 inside=zmag outside=0
+  colors=000KN1<2>MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>\
+  MF0OF1<14>wEa<14>PE1<4>_QCbTEdVGgXIi_K<6>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<12\
+  >KG6LG2MF0OH1<12>ikikmljki<12>QK5OI2MF0<3>LN0KP1KR1JT2JV3<7>Fk8<10>KP1
+  }
+
+Amoeba             { ; Give Spock the shuttlecraft, McCoy'll never make it!
+                     ; Jim Long, 71161,3112 & Guy Hammer, 72315,465
+  reset type=mandel passes=t
+  corners=-0.5503515806/-0.5503099226/0.6259311287/0.6259623557 float=y
+  maxiter=300 inside=zmag
+  colors=000703<14>z0X<15>000<15>p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l00h0\
+  0d00a00<9>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>0\
+  00301
+  }
+
+Eerie              { ; Copied from a GIF file
+  reset type=manfn+zsqrd function=cosh
+  corners=-2.327794/-0.201045/-0.795452/0.798778 float=y maxiter=1000
+  bailout=100 inside=bof60 distest=256/71
+  colors=00053565767888789AB999BBBBCBCDCDBDDEFDDDFDGEFGFFGGEGGIIGHIHGJHHIIJIJH\
+  JJIIKJLJKKKLKLJLLKLLNNLLMMMLNMMNNNNNMONNOOOOONPOQOOPPPPPRPQPQQPRQPQRPRRPRRSS\
+  RRTRRSSRRTRSTRUSTTTTTTVUTVUUSUUUVUUVUWUVWVVWWVVWVXVWXWWWVXWXWYXXVXXXXXZXYWXY\
+  YYYXXZXXZZ_YY_Y_ZZ_Y_Z_Z``Z___ZZ`ZZ``_`_``Z`````ba`ab``b`baaaaacab`caacacbbb\
+  bbdbcadbbdbdcccccedcdecccdedddedcceededeeceedeeffeeefdeffgegfffffheggfgfggeg\
+  gfgghfhgghfiggghihhhgigihhhighiijhjiiihjhjiijikijjkikjjjikikjjkjljkkljlkkkjl\
+  jlkkkljmkkklmlllllmkmlmlmlmlnlmmmlmmnmmolnnnmomnnomonnnnnomononononpnooonooo\
+  ponpooopnqooppnppoppqpproqqqprpqqpqrqqqqqrqqsprrrqsqrrqrsrrrrrsrrtqsssrtrsss\
+  sq<2>ssutssstrussttrttstttsusuttutututvtuvtvuuuuuvuuwtvvvuwwuuvvtvvuvvvuwuwv\
+  vwvwvwvvwwxvxwwwwwxwwyxwwwxvywwywxxxwxxxxxyxxzwyyxywzxxyywyyxyyyyyzxzyxzzyzx\
+  yzyzzxzzyzzz
+  }
+
+
+Energy_field_ahead { ; It's matching our speed exactly captain, phasers ready..
+                     ; (C)1992 Pete Moreland (Thanks for the pallette Dick <g>)
+  reset type=lambda(fn||fn) function=cotan/sqr passes=b
+  corners=-5.828981/5.772975/8.428218/-8.545129/6.494892/-8.006947
+  params=1.6776/1.97654/4 float=y maxiter=1000 bailout=1000
+  fillcolor=9 inside=-102 decomp=255
+  colors=000000<4>888000BBB<23>ppp<31>000PFF<27>vcDwdDxeDzfCyfCxeC<29>PFF0\
+  A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF
+  }
+
+Now_this_is_Whacky { ; Can you guys explain the empty area to me?
+                     ; (C)1992 Pete Moreland (Thanks for the pallette Dick <g>)
+  reset type=lambda(fn||fn) function=recip/sin passes=b
+  corners=-5.828979/5.776749/8.430283/-8.545136/6.494797/-8.006775
+  params=1.6776/1.97654/8 float=y maxiter=500 bailout=32 fillcolor=9
+  inside=-102 decomp=255
+  colors=000000<4>888000BBB<23>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0\
+  <14>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF
+  }
+
+Beaches            { ; Walking on the beaches looking at the pea.... sand <g>
+                     ; (c)1992 Peter Moreland  100012,3213
+  reset type=magnet2m
+  corners=1.4630634/1.7030294/-0.8244536/-0.762975/1.5199413/-0.9002913
+  params=1.222/2 float=y maxiter=10000 inside=maxiter outside=real
+  logmap=yes periodicity=-1
+  colors=000gXI<7>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<12>KG6LG2MF0OH1<12>ikikmljk\
+  i<12>QK5OI2MF0<3>LN0KP1KR1JT2JV3<7>Fk8<11>KN1LL0LJ0MH0MF0LI1<13>EqiDtlEqi<12\
+  >KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>MF0OF1<14>wEa<14>PE1<6>dVG
+  cyclerange=0/255
+  }
+
+Liar4a{ ; Liar formula near x=0, y=0
+  reset type=formula formulafile=liar.frm
+  formulaname=Liar4 passes=1
+  corners=0.00000000021455/0.00000000263637\
+   /-0.0000000158479/0.0000000176826\
+   /-0.00000001555682/0.0000000020973
+   params=1e-08 float=y logmap=-20
+   colors=000555HHHSSS888BBBKKKcccEEEOOOhhhmmmWWW___ssszzz000555<3>\
+   HHHKKKOOOSSSWWW___ccchhhmmmssszzz777<3>QQQ<3>JJJ<3>sss<3>```<3>\
+   ggg<2>GGGZZZ<3>ggg<3>ddd<3>vvv<3>mmm<3>ppp<2>bbbjjj<2>nnnoooooo\
+   <2>mmm<3>xxx<2>tttssssss<2>uuu<2>lll333<2>999BBBBBB<2>888<3>PPP\
+   <2>JJJHHHHHH<2>KKK<2>777GGGGGG<2>KKK<3>III<3>QQQ<2>NNNMMMNNN<2>\
+   OOOLLLKKK
+}
+
+Twin_Sun_Set....   { ; (c)1992 Peter Moreland 100012,3213
+                     ; Address: Blantyre House, Cossack Square,
+                     ;          Nailsworth, Gloucestershire,
+                     ;          England GL6 0DB
+  reset type=fn(z)+fn(pix) function=cosxx/cosxx
+  corners=-2.63207014/-2.637028/-3.2676404/-3.26625333/-2.63452077/-3.2643\
+  729 params=0.7/5/1/0.5 float=y maxiter=500 bailout=500
+  colors=000mNf<31>eDpdCqdDq<2>fFofGngHngHn<2>iKkjKkjLjkMjkMi<20>xaYxbYycX\
+  ycXybXyaX<43>gGnfFofFofFo<84>zbSzbSyaT<11>vYWvYXvWZ<13>m3z<13>mNgnPenOe<\
+  2>mNf
+  }
+
+
+Youch!             { ;
+                     ;
+  reset type=fn(z*z) function=exp
+  corners=-21.372979/25.526741/8.789141/-4.328859/1.799901/-22.118179
+  float=y maxiter=300 potential=255/200/200
+  colors=000zzY<32>zz1zz0zy0yx0<46>REDQDEPCEPBFOAF<7>G2JF0KF0K<11>I0NI0NI0\
+  NI0OI0OI0P<33>Q0XR0YR0YR0ZR0Z<6>T0bT0bU1bU2c<62>zzzzzzzzy<26>zzZ
+  }
+
+
+tear3              { ; Peter Moreland (c)1993
+  reset type=mandel(fn||fn) function=flip/cosxx
+  corners=0.475442/-1.999253/0.548436/-1.307591 params=5.4/2/0.5
+  float=y maxiter=5000 bailout=50 decomp=256 distest=200/71
+  finattract=y
+  colors=0009OZJNXRNXMQYSTZKRdRVcYUYfUYUX`UYe_Z_eYXiYXe`Xh`YeZ`iY`ea`ia`ac\
+  _gd`Z`ffafadhgfgn`Zsa_nd`tcanbdsbdnffuffikinlitliZbkdbkafmfinaisnjlujkhl\
+  qimsllmplmnompommmpqnpmoqppqunprtruupnptwrtqtxutuxtuxwutvyyvwuxzzzz<24>z\
+  zz311522343642334534356654931D31962D52964D74784A83D92FC2A95D95BC5ED54799\
+  795ACA9ADA9AD9ED9AADDBDADEEDDG31H62L72H74L75P75HA3L93ID3LF3H95LA5HD6LD6Q\
+  C6HB8LB8ID9ME9HACHEDLEDPB8SB9PE9TE9QFCUFCFG6EHBJG3MG3IG6MH5NK6PI3UH3RK3T\
+  L3PI4TH6QL5TM5UO6IH9MHAIKAMLAIHEMIDILDMLEQHATHAPLAULAPIDTIDQLEULEMPESPC3\
+  7J5EJCEI4ESAEQIEIPFJHEO6GMEHKFPM6IR9KTCPUIHHLIHJLIMLHHILLILHKMMLLRLILPKT\
+  PKJLQQMQLPSRRRXE6XDAYL5YQ6dP6YKDdKCZPDeRCZMHdMIYPI`PIXTIaSJXQLaQLXTMaTLe\
+  RLYMRZTQfTQkTNlURUXJUXSYWEfXA_YMdXN`XTfYTecSmXUlfS4FW6IX8MX
+  }
+
+Clock_Face         { ; (c) 1993 Richard H. Sherry CIS: 76264,752
+                     ; Mitch, if you can get your jeweler to do this in gold,
+                     ; jade, mother of pearl and ivory, you'll have a winner.
+                     ; Dick
+  reset type=newton center-mag=-3.88578e-014/-1.5099e-014/0.367647
+  params=12 float=y maxiter=256 inside=0 outside=imag logmap=-3
+  periodicity=0
+  colors=000ddd<5>nnnpppooo<30>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0\
+  <15>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<21>bbb
+  }
+
+The_Final_Curtain  { ; Regrets, I have a few, but then again, Sid Lives! <g>.
+                     ; (c)1993 Peter Moreland,  CIS Address 100012,3213
+                     ; WARNING V18.00 of public release will be required!
+  reset type=manlam(fn||fn) function=sqr/conj
+  corners=-1.078314/-0.623828/0.775666/0.47905/-0.772323/0.367679
+  params=1.76/0/10 float=y maxiter=500 bailout=90
+  colors=LSU6KM<58>inujovinu<162>JSUJRUJRTIRTIRTHRT<24>8MP
+  }
+
+Dr_Strange         { ; Opens the portal to the "other" side...
+                     ; (C)1993 Peter Moreland 100012,3213
+  reset type=fn(z)+fn(pix) function=cosxx/cosxx
+  corners=-2.63207014/-2.637028/-3.2676404/-3.26625333/-2.63452077/-3.2643\
+  729 params=0.7/5/1/0.5 float=y maxiter=500 bailout=500
+  colors=000BEd<3>9GbV0z<19>fFofGngHngHn<2>iKkjKkjLjkMjkMi<20>xaYxbYycXycX\
+  ybXyaX<41>hHmgGngGngGn<67>00B00B00C<65>G9jHAkHAj<9>CEe
+  }
+
+Who_pulled_the.... { ; Plug!  Oh well, there goes the galaxy...
+                     ; (C)1993 Peter Moreland 100012,3213
+                     ; WARNING! V18.00 of fractint will be required!
+  reset type=frothybasin
+  corners=0.4968056/0.6382582/0.3680705/0.5064456/0.4813085/0.3887334
+  params=6 float=y maxiter=5000 decomp=256 distest=5/71 finattract=y
+  colors=0000zz<40>0MMz00<40>M00z0z<40>M0M0z0<40>0M000z<40>00Mzz0<40>MM000\
+  0000000
+  }
+
+Roll_over_Leonardo { ; ..... (C)1993 Peter Moreland 100012,3213
+  reset=1732 type=sierpinski
+  corners=-0.071562/0.189148/0.1986818/0.2176911/0.029137/0.3777027
+  float=y maxiter=500 bailout=250 inside=bof60
+  invert=0.00133292/0.00390103/0.0120119 decomp=256 periodicity=0
+  colors=000yyy<246>000zzz<5>yyy
+  }
+
+
+ButterFly_NOT!     { ; These guys just wont make it...
+                     ; (c)1992 Peter Moreland 100012,3213
+  reset type=barnsleym1 passes=t
+  corners=0.949053/1.505151/-0.297036/-1.038499/1.505151/-1.038499
+  bailout=12123 decomp=256 periodicity=-256
+  colors=g0J<57>10y10y00z00z11y<77>vv4ww3xx2yy2yy1zz0<83>z10z00z00y01<22>h\
+  0I
+  }
+
+Notodentidae_NOT     {
+  reset type=barnsleym1 passes=b
+  corners=0.949053/1.505153/-0.297052/-1.038499/1.505153/-1.038499
+  bailout=12123 periodicity=-256
+  colors=000000OU0<4>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>\
+  ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<8>JQ0
+  } 
+
+feb11-2            {; You'll need to find a palette !!
+  reset type=formula formulafile=ownfile.frm formulaname=M-SetInNewton   
+  corners=0.492221/0.526621/-0.0129/0.0129 float=y inside=0
+  }
+
+Plasma             { ; 05:48:30.34 -- Problem PAR file?
+                     ; 06 jan 93 .. caren park
+  reset type=lyapunov passes=1 corners=2.0/4.0/2.5/4.0 params=-44/0.5
+  float=y maxiter=5 inside=zmag logmap=yes periodicity=-1
+  colors=00E<11>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0\
+  yz<43>05z03z02z00z00y<47>00F cyclerange=0/255
+  }
+
+MandelNewt1        { ; Requires mandnewt.frm
+  reset type=formula formulafile=ownfile.frm
+  formulaname=M-SetInNewton
+  corners=1.0353559/1.0632334/0.9461724/0.9670805 float=y maxiter=256
+  inside=bof60 outside=summ potential=255/5e+006/2000
+  viewwindows=4.2/0.75/yes/0/0
+  colors=000K86<25>M27IJ4<170>sx`IJ4<11>IM4IH4<41>K86
+  }
+
+MandelNewt1_x        { ; Requires mandnewt.frm
+                     ; Dick Sherry, 76264,752
+  reset type=formula formulafile=ownfile.frm
+  formulaname=m-setinnewton center-mag=-0.540109/-0.107203/0.2 float=y
+  maxiter=256 inside=bof60 outside=summ potential=255/10000/750
+  viewwindows=4.2/0.75/yes/0/0
+  colors=0007QX7MR8JL1Cr<3>7GNxfd<3>ILLQCc<2>CFMVHH<4>EGGBGG9je8VTipUXcPKS\
+  KcRe<6>CHJxa4<5>FJFHZBJ44<3>AEEhMBWKDKIFhnV<4>ELIhG7<6>CGFiIk<3>FGMhJk<2\
+  >HGOlpm<6>DKKyiRBmh<2>8ONM_9<4>AJFlf6<4>EKFhW60cw4Savl3XWAulFdaGhlEhq7c3\
+  v<6>8b5<6>mJ9<6>lHR<4>BWI<6>xMo<5>_BDkJ7vQ1<2>Isd<2>Ce0<6>QSr<5>gcridrjY\
+  o<3>lAe<3>d7Ec77_A8<2>PJ9<3>U1tha9VaLIaX8GHEURBNLIuB<4>9NG7ct8S_I53<3>AE\
+  EGkOCWKSk8<2>DOE80P<3>8DHhWE<4>EIGdNYOJPaz3NbAPVV<2>CJJ1CO5EKLcN<6>9JGqt\
+  j<5>JQNDLJ5_n0006Tb
+  }
+ 
+smn001             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=F'M-SetInNewtonA function=cos
+  corners=-1.875587/1.124426/1.928016/-1.927987/1.124426/-1.927987
+  params=3.5 maxiter=256 inside=0 outside=imag logmap=yes
+  potential=255/200/25 periodicity=0
+  colors=000PV0<10>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>00\
+  0PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0Xb0V`0000RX0
+  }
+
+smn002             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=F'M-SetInNewtonA function=cos
+  corners=-2.07096/-1.206543/-1.973031/-0.91141/-2.288377/-1.693584
+  params=3.5 maxiter=256 inside=0 outside=imag logmap=yes
+  potential=255/200/25 periodicity=0
+  colors=000PV0<10>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>00\
+  0PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0Xb0V`0000RX0
+  }
+
+smn003             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=M-SetInNewton
+  corners=2.281164/-2.225502/-3.004437/3.004455/-2.225502/3.004455
+  params=5 maxiter=256 inside=0 outside=imag logmap=yes
+  potential=255/200/25 periodicity=0
+  colors=000bT8<6>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0PP0\
+  OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<13>nd1pf0\
+  oe1<3>gY5000cU7
+  }
+
+smn004             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=M-SetInNewton
+  corners=0.231649/2.578315/1.564434/-1.564443/2.578315/-1.564443
+  params=3.14167/0/2.5 maxiter=256 inside=0 outside=imag logmap=yes
+  potential=255/300/50 periodicity=0
+  colors=000000`R9<5>PFF<15>zfD<14>SHE05F0FM<14>ILdKMfJMe<13>0FKAA0<15>PP0\
+  PP0OO0<13>AA0SNC<29>xo`zpaypa<28>WQG000000<29>nnnpppooo<30>000PFF<13>nd1\
+  pf0oe1<3>gY5000cU7
+  }
+
+064                {
+  reset type=mandelfn function=cos passes=t
+  corners=-0.547153/0.038623/0.439889/-0.341553/0.038623/-0.341553
+  params=10/6 float=y maxiter=300 fillcolor=1 inside=0 outside=imag
+  potential=255/100/0 invert=1/0/0
+  }
+
+068                {
+  reset type=mandelfn function=sin passes=t
+  corners=-0.19034/0.194264/0.131562/-0.381511/0.194264/-0.381511
+  params=10/6 bailout=8 fillcolor=0 inside=0 outside=mult logmap=-3
+  invert=1/0/0 decomp=256
+  }
+
+075                {
+  reset type=mandelfn function=sin passes=t
+  corners=3.399247/-3.408285/-6.816575/2.264871/-3.408285/2.264871
+  params=10/6 float=y maxiter=100 bailout=20 fillcolor=8 inside=0
+  outside=imag potential=255/200/0 invert=10/0/0
+  }
+
+
+t17072             {
+  reset type=fn*z+z function=tanh
+  corners=-2.272003/2.271972/0.913952/4.321954 params=1/0/1     
+  bailout=100   inside=-100 outside=real
+  }
+
+t17098             {
+  reset type=fn+fn function=cosh/tan
+  corners=1.951054/-2.314731/1.611759/-1.591725 params=1/1/1/1
+  inside=maxiter outside=real potential=255/100/0 invert=1/0/0
+  }
+
+t172103            {
+  reset type=julia
+  corners=0.00000000144727/0.00000001013079/0.00000006863766/0.0000000751503
+  params=-1.99638307902007/-1.87891552013716e-017 float=y  maxiter=1000
+  fillcolor=0 inside=0
+  }
+
+MandelJuliaNewton  { ; Mandel and Julia sets in a Newton type
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=F'M-SetInNewtonB function=sin passes=1
+  corners=-0.154982/0.561116/-1.383121/-1.165965/-0.001421/-1.587868
+  params=5/0/5e-05 float=y maxiter=255 logmap=-3 periodicity=0
+  colors=@topo.map
+  }
+
+FilledJulInNewt    { ; very unusual moire patterns
+  reset=1732 type=formula formulafile=ownfile.frm
+  formulaname=F'M-SetInNewtonC function=recip passes=1
+  corners=1.58517118/1.60600974/-0.17013562/-0.14358796/1.57993019/-0.1631\
+  4762 params=5/0/0.001 float=y maxiter=500 logmap=-3
+  colors=@gamma1.map
+  }
+
+
+saf002             { ; Chaoitic Layupanov
+                     ; (c) 1993 Richard H. Sherry, CIS:76264,752
+  reset=1732 type=lyapunov passes=1
+  corners=3.426544/3.651664/3.410975/3.579815 params=6/0.00687321/10
+  float=y maxiter=2 inside=0 logmap=yes periodicity=0
+  colors=000riW<5>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeD\
+  zfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<22>phV
+  }
+
+saf003             { ; 3D spherical Layupanov
+                     ; (c) 1993 Richard H. Sherry, CIS:76264,752
+  3d=yes filename=saf002.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=100 scalexyz=90/100 roughness=10 waterline=0 filltype=2
+  ambient=20 perspective=0 xyshift=0/0
+  colors=000riW<5>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeD\
+  zfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<22>phV
+  } 
+
+Double_Helix       { ; Doc, gotta couple of rogue Chromos in here!
+                     ; (c)1993 Peter Moreland 100012,3213
+  reset type=hypercomplexj function=exp
+  corners=0.284489/0.170602/0.666589/0.818439/0.170602/0.818439
+  params=-0.745/0/0.113/0.05 float=y maxiter=250 bailout=100
+  inside=bof60 decomp=256 distest=1/71 biomorph=0 periodicity=0
+  colors=000rno<20>soptpqsno<19>_AMZ7KX7J<8>D38A26825513312000<26>20120131\
+  2412<31>X6IY7JZ9L<10>mchofjofj<117>rno
+  }
+
+Flaked_Gold        { ; museum exhibit from a dig, dig it!
+                     ; (c)1993 Peter Moreland 100012,3213
+  reset type=hypercomplexj function=exp
+  corners=0.7493203/0.6248833/-0.1634917/0.0821069/0.5866357/0.0534212
+  params=-0.745/0/0.113/0.05 float=y maxiter=250 bailout=100
+  inside=bof60 decomp=256 distest=1/71 biomorph=0 periodicity=0
+  colors=000kf6<38>I4IH3JG2JF0KF0K<9>H0MH0MH0NI0NI0NI0O<45>T0aT0bT0bU0cU0c\
+  <62>zzzzzzzzy<60>zz1zz0zy0yx0<16>lg6
+  }
+
+bug01              { ; "Two Lines" try T and G -- 24 feb 93 .. caren park
+  reset type=sqr(1/fn) function=cosxx passes=t
+  corners=-9.4670086/-9.3850574/2.0369179/2.0989464 float=y
+  maxiter=256 inside=0 outside=summ
+  colors=000r89<2>y01<44>DGmCHnCHm<47>I12J00J00<47>yK0zL0zN1<13>zzLzxLyuuL\
+  <15>zGz<14>zLE<7>zze<5>zzOzzLxzM<20>6zv<19>oBB
+  }
+
+cbug01             { ; w/ float=no rhs 2-25 -- 24 feb 93 .. caren park
+  reset type=sqr(1/fn) function=cosxx passes=t
+  corners=-9.4670105/-9.3890076/2.0380707/2.0989533 maxiter=256
+  inside=0 outside=summ
+  colors=000Ca`<2>9da8da9b_<23>C8AD79E79<39>qe8qe8pd8<45>KAAKAALBA<41>sg8s\
+  g8rf8<40>K9B<15>zz6<14>MFA96G<15>B_Z
+  }
+
+cbug02             { ; w/ float=yes rhs 2-25 passes=g 24 feb 93 .. caren park
+  reset type=sqr(1/fn) function=cosxx
+  corners=-9.4670105/-9.3890076/2.0380707/2.0989533 float=y
+  maxiter=256 inside=0 outside=summ viewwindows=4.2/0.75/yes/0/0
+  colors=000Ca`<2>9da8da9b_<23>C8AD79E79<39>qe8qe8pd8<45>KAAKAALBA<41>sg8s\
+  g8rf8<40>K9B<15>zz6<14>MFA96G<15>B_Z
+  } 
+
+Manowarj           { ; Kinda purty ain't it?  BG Dodson 1992 71636,1075
+  reset type=manowarj passes=b corners=-2.5/1.5/-1.5/1.5 float=y
+  maxiter=32000 fillcolor=200 inside=bof60 outside=mult decomp=64
+  distest=1/10000 periodicity=4
+  colors=000151131000<15>rAr<15>000<15>hh0<14>330000003<14>00r<15>000<15>r00<1\
+  5>000<15>0pp<14>044000222<14>hhh<14>333000000<26>007017037<13>4S4<15>171
+  }
+
+PurpleFaze         { ; fails at 320 x 240
+  reset type=julfn+exp function=cosxx passes=b
+  corners=-5.243507/-1.403609/1.84/-1.84/-1.403609/-1.84 float=y
+  maxiter=32000 fillcolor=200 inside=bof61 logmap=4 decomp=128
+  distest=3000/71
+  colors=000F0K<58>T0bU0cU0cV1cV2d<60>zzzzzzzzy<60>zz1zz0zy0yx0<58>G2JF0KF0K<2\
+  >F0K
+  }
+
+sai001             { ; Boundry trace
+  reset=1732 type=newton passes=b corners=-0.2/0.2/-0.15/0.15 params=2
+  maxiter=256 fillcolor=241 inside=-100 outside=summ logmap=yes
+  potential=255/500/25 periodicity=0
+  colors=000```<8>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc\
+  0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<19>ZZZ
+  }
+
+s3i001             { ; Spherical 3D of sai001
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=20 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=000```<8>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc\
+  0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<19>ZZZ
+  } 
+
+Dino_heads...      { ; Run the 3D PAR on the GIF this file generates...
+                     ; (C)1993 Peter Moreland 100012,3213
+  reset type=manfn+zsqrd function=tan
+  corners=0.030874/-4.063888/0.697056/-2.375017 params=1.3/0.75443
+  float=y maxiter=32000 inside=0 potential=255/300/150 decomp=256
+  biomorph=0 colors=000nmu<253>000
+  }
+
+In_the_Land_of.... { ; Mordor, where the shadows..........................
+                     ; Run this 3D par on the other file -- Dino_Heads!
+                     ; (C)1993 Peter Moreland 100012,3213
+  3d=yes scalexyz=350/350 roughness=200 waterline=0 filltype=2
+  ambient=20 rotation=60/30/0 perspective=0 xyshift=-55/35
+  colors=000nmv<253>000
+  }
+
+Hi_Tim_this_one... { ; I think you'll like <g>. (C)1993 Peter Moreland
+                     ; 100012,3213
+  reset type=hypercomplex function=exp passes=1
+  corners=-1.38284756/-1.38985234/-5.10519207/-5.08976125/-1.40480462/-5.0\
+  8092665 params=1.3/1/1.5/1.11 float=y maxiter=250 bailout=100
+  inside=bof60 decomp=256 biomorph=0 periodicity=0
+  colors=KPNBzz<4>5zz3zz2zz0zz0yz<39>0Bz09z08z06z05z03z02z00z<60>002000000\
+  000<29>00k00m01m<29>0ky0mz1mz<30>zzz<38>Czz
+  }
+
+sah001             { ; Julia necessary for next 2 3D's
+                     ; (c) 1993 Richard H. Sherry CIS:76264,752
+  reset=1732 type=julia corners=-1.496/1.496/-1.122/1.122
+  params=-0.64542768150568/0.439879689365625 maxiter=256 inside=0
+  logmap=yes periodicity=0
+  colors=000WWW<18>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0\
+  A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<11>YYY
+  }
+
+sah002             { ; Spherical 3D - light source
+                     ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; use sah001.gif from above
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=10 waterline=0 filltype=5
+  lightsource=-2/1/2 ambient=20 perspective=0 xyshift=0/0
+  colors=000WWW<18>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0\
+  A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<11>YYY
+  }
+
+sah003             { ; Spherical 3D - Surface fill
+                     ; (c) 1993 Richard H. Sherry CIS:76264,752
+                     ; use sah001.gif from above
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=10 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=000WWW<18>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0\
+  A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<11>YYY
+  } 
+
+spca000               {
+  reset=1720 type=formula formulafile=ownfile.frm formulaname=SpecC
+  passes=1 corners=-3.686852/1.747458/-2.037866/2.037866 float=y
+  function=cosh/cosxx maxiter=1023 inside=0 logmap=yes video=sf7
+  colors=000xjqFASzg56XkE5qV7Hj7mz6H0P0<2>4fRz00<3>hYOGFM<2>LcQE5XD3iC1v8Q\
+  X0hiFKHEXD<8>2N60L50M5<32>Gv9<3>Xsf<2>ugx<2>KXgIadGf`REQcMVpU_UVPMCS<2>i\
+  SoM6V<2>h1zEWIDuETAZfEltIzGPLHfLJxKIENizQOTTR`WG9G<2>KI0DEEAL6JWJOtGKEU<\
+  2>a`tH6MK5NN4PrJ6bP326LCniITPLoUnzzmUCIJLLVKOfJe70D9NBBP9ESGKI<2>Jx9TCZP\
+  ET<2>sapFAbFDtNDLVJMyl6CFR9OX5XbGAJ<2>MKA_GQtQVKBV<2>aNxKEP<2>ZacHHN<2>N\
+  mUXXeowzG8TI9`ZMcsawCBQ9FV6K_KYDPx4L5DR2594P31UFRbGjtRGXbPhnZt_GItQESPHe\
+  fCOISXTZfceGDTHJ`IQiEfgQBJ<2>xNAINZLclOtzJLBOZ1VXFjw88GY0QjkS5aUQxpWRMJc\
+  `GQDR`JXlPcLIK<2>doGHFMKOONzQQeSENGDcABt4Kg4IHI<2>Sl9PHQZRVi``jlrrBvKunN\
+  NNVcPctRbAPzETQHTaR`l`h cyclerange=2/255
+  }
+
+

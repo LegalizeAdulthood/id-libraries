@@ -1,0 +1,289 @@
+;
+; pars for Fractint 18.2 ... take 10 (who woulda thot)
+;
+; all images are to the best of my knowledge original and are
+;             Copyright (c)1994, don lebow
+;                 All Rights Reserved
+;
+; drafted at 640 x 480 x 256, but higher res is recommended for most.
+;
+; formulas not found in the default FRACTINT.FRM are included in the
+; updated dons.frm (thanks, folks)
+; 
+; enjoy...
+;
+; >>don CIS:76704,41
+;
+;
+radiator           {
+  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  function=cotan/cotan passes=b
+  corners=-3.740128/-3.1606322/0.37789734/-0.39476379/-3.1606322/-0.394763\
+  79 params=-1/0/1 float=y potential=256/200/0
+  colors=000Zkq<8>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>r\
+  qstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>043022023<14>\
+  6Zk<15>ttt<5>bmq
+  }
+
+underneath         {
+  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  function=sin/conj passes=1
+  corners=0.0892157/-1.287282/0.9223632/-0.9129672/-1.287282/-0.9129672
+  params=-1/0/1 float=y outside=summ potential=256/64/0
+  colors=000nnn<12>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>\
+  ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>\
+  000<15>zzzvvvrrr
+  }
+
+well-connected     {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=geninvmand1_n function=sinh/sin/sqr/ident passes=t
+  corners=-2.242152/2.242152/-1.681614/1.681614 float=y maxiter=25
+  inside=epsiloncross potential=256/256/128 
+  colors=000ECR<7>URvXTzYVz<14>yxx<15>XTzVRvTQsTQrSPqROo<8>9BJ79F57B357033\
+  <15>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<1\
+  5>zz0<13>443437<3>CAN cyclerange=45/250
+  }
+
+sanity-claus       { ; don't ask me... I just work here
+                     ; of course you know there ain't no sanity clause
+  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  function=sinh/cosh passes=b
+  corners=-1.1144018/-1.3724018/-0.172/0.172/-1.3724018/0.172
+  params=-1/0/1 float=y outside=summ potential=256/64/0
+  colors=000ABD<7>100<23>iJAjKBlK9<4>vP0<3>oN7mM9kLC<22>620420210000111<2>\
+  652763874A95BA6<3>HG9IH9KIALJBMLC<8>ZWJ_XKbYK<4>vdP<2>laOh`Nd_M`YL_XK<17\
+  >BB6995884663552331220000010<23>HbTIdUIeX<4>Nnn<2>MjdLhaKgZJeVIcU<23>121\
+  000110<17>MOWNPXOQZPS_QTaRVbSWd<6>dcg<2>``gZ_gXZgVYfTXe<15>BCF
+  }
+
+where's-curly?      { ; sorry
+  reset=1820 type=formula formulafile=dons.frm formulaname=curly
+  function=cotanh/conj passes=1
+  corners=-31.99/31.99/-25.79325/22.19184
+  params=0.20000000000000001/0/0.20000000000000001 float=y decomp=256
+  colors=000ttt<14>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>04302202\
+  3<14>6Zk<15>ttt<5>bmqZkqWjpThoQgo<5>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>0\
+  00<14>WGdZIg_Kg<13>rqs
+  }
+
+sweet-mandala      {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=FlipConjJul_N passes=t
+  corners=-2.336449/2.336449/-1.752336/1.752336 params=2/0/12 float=y
+  inside=zmag outside=summ potential=256/64/0 
+  colors=200333<14>zzz<12>TCC<2>zzz<12>CTC<2>zzz<12>CCT<2>zzz<12>TTC<2>zzz\
+  <12>TCT<2>zzz<12>CTT<2>zzz<12>hCC<2>zzz<12>ChC<2>zzz<12>CCh<2>zzz<12>hhC\
+  <2>zzz<12>hCh<2>zzz<12>Chh<2>zzz<2>zzzkkz<25>b00<16>100
+  }
+
+squeeze-play       { ; golly ... monday morning already?
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=geninvmand1_n function=flip/tanh/sqr/ident passes=t
+  corners=0.603565829/0.561994717/0.38287844/0.77330082/0.370911876/0.6554\
+  9418 float=y maxiter=50 potential=256/800/0 
+  colors=0004OO000000000waI<15>q7C<16>B`a9ab8`c<27>3Un3Un5Wo<12>Llx`8l<7>u\
+  mz<11>HRGEPCDOHDONCNS<3>sLf<28>Lqn<13>0R7KHA<7>Cx_<7>107<2>k2J<19>X8tX8u\
+  Y9t<15>cEsVGjMHa<18>BiT<20>4PO
+  }
+
+bridgework         {
+  reset=1820 type=fn(z*z) function=log passes=t
+  corners=2.72232/1.15464/-1.032203/1.058037/1.15464/1.058037 float=y
+  maxiter=50 fillcolor=128 inside=zmag potential=256/256/0
+  colors=000uuiwwj<5>zzlzzmzzl<2>yykyykxxjwwj<4>ppdnncllajj_<6>UUNRRLOOJLL\
+  HIIE<5>000<6>DB2FC2HD2JE2LF2<4>SL3TM3VM4<3>_Q4`R4`S5<2>bT5cT5cU5cU5<2>dU\
+  5dU5cT5<2>bT5aS5`S5_R5_R4<6>RK3QJ3OI3MG3<2>HD2FB2DA1B81971<4>000<5>B99DA\
+  ADBC<16>GVmGWpGXrGYuGZwH`z<21>JGIKFFJEE<8>211132<4>9IFALHBOJDRLEUN<4>KfX\
+  LhZMj`NlaOnc<2>RsgRthSuiSwjSxj<4>UzlUzmUzl<2>UykTykTxjSwj<2>RrfQqePpdOnc\
+  Nla<6>FWPEUNDRLBOJ<7>000<4>FFDIIFLLHOOJRRL<4>ccVffXhhZjj`<2>ppdqqessgtth
+  }
+
+probe              {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=geninvmand1_n function=sin/cosxx/cos/ident passes=1
+  corners=-0.013015655/-0.91867965/-0.6128064/0.5947456/-0.91867965/0.5947\
+  456 float=y maxiter=50 potential=256/222/0 
+  colors=00c<37>002000000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz\
+  5zz3zz2zz0zz<42>08z06z05z03z02z00z<21>00d
+  }
+
+interior-6         {
+  reset=1820 type=formula formulafile=dons.frm formulaname=moe
+  function=cosxx/cosxx passes=b
+  corners=-1.4824107/-2.4463947/-0.6400745/0.6452375/-2.4463947/0.6452375
+  params=1 float=y potential=256/256/0 
+  colors=000ccc<7>zzz<6>00z<15>zz0<15>z00<15>00z<15>0z0<15>z0z<14>N0NK0KJ1\
+  L<11>4Og3Qi2Sk0Um0Vm0Wm<10>0im0jm0km0mm0mm0ln<13>0cz<15>zzz<30>zd2zc0zd0\
+  <14>zz0<14>z40z00x22<13>ZZZ
+  }
+
+dots-it            {
+  reset=1820 type=fn(z*z) function=tan passes=b corners=-4/4/-3/3
+  float=y fillcolor=128 inside=maxiter potential=256/256/0 
+  colors=000LE2<14>pT5<29>EA2D92B81971<4>000<5>B99DAADBC<18>GXrGYuGZwH`zH`\
+  x<20>JGIKFFJEE<8>211132<4>9IFALHBOJDRLEUN<3>JcVKfXLhZMj`<2>PpdQqeRsgRthS\
+  uiSwj<5>UzlUzmUzl<2>UykTykTxjSwj<2>RrfQqePpdOncNla<6>FWPEUNDRLBOJ<7>000<\
+  5>IIFLLHOOJRRLUUN<3>ccVffXhhZjj`<2>ppdqqessgtthuuiwwj<5>zzlzzmzzl<2>yyky\
+  ykxxjwwj<4>ppdnncllajj_<5>WWPUUNRRLOOJ<7>000<5>B91DA2FB2HC2JD2
+  }
+
+bright-side        {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=geninvmand1_n function=flip/tanh/sqr/ident passes=b
+  corners=0.98492622/1.3419838/-1.3456892/0.55670266/0.20031885/-0.2995460\
+  2 params=1/1/1/1 float=y maxiter=50 decomp=256
+  colors=000<2>000waI<15>q7C<16>B`a9ab8`c<27>3Un3Un5Wo<12>Llx`8l<7>umz<11>\
+  HRGEPCDOHDONCNS<3>sLf<28>Lqn<13>0R7KHA<7>Cx_<7>107<2>k2J<19>X8tX8uY9t<15\
+  >cEsVGjMHa<18>BiT<21>4OO cyclerange=2/255
+  }
+
+telescope          { ; contemplating Mt. Fuji
+  reset=1820 type=formula formulafile=dons.frm formulaname=ok-26
+  function=cosh passes=b
+  corners=-1.053285/2.21013/2.20381/-2.147409/2.21013/-2.147409
+  float=y outside=real potential=255/200/0 
+  colors=000Zkq<8>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>r\
+  qstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>043022023<14>\
+  6Zk<15>ttt<5>bmq
+  }
+
+two                {
+  reset=1820 type=fn+fn function=tanh/flip passes=b
+  corners=2.834732/-2.513763/-3.642853/3.490799/-2.513763/3.490799
+  params=1.5/0/1 maxiter=50 potential=256/200/0 
+  colors=000764<2>321110112<11>FJKGKLHLNJMOKOP<8>TZaU_bVacWbdXce<9>dlpemqe\
+  nq<5>irvirvjswjswjtx<3>lvzlvzlvzlvzlvz<12>kuykuyktxjtxjswjsw<3>hqugptgos\
+  forenq<5>ahl`hk_gi<6>U_bTZaSY_RWZQVXPUW<5>JNOILMHKLFIJEHIDFGCEF<9>000<13\
+  >LGCNHDOJEPKF<7>`SLaTMbUNcVNdWO<10>pdVqeVqeW<5>viYviYwjZwjZxjZ<3>zl_zl_z\
+  l`zl`zl`<12>yk_yk_xk_xjZwjZwjZ<3>uhXtgXsgXrfWqeW<6>k`Sj_RhZQ<4>cVObUNaTM\
+  _SLZRK<13>FC9EA8C97A86975
+  }
+
+roundabout               {  
+  reset=1820 type=formula formulafile=dons.frm formulaname=REB005E
+  function=cotanh/cotanh passes=b
+  corners=2.180876/-1.567896/-0.57960004/-0.04406122/0.5742597/1.5625552
+  params=0.20000000000000001/0.5 float=y outside=summ
+  potential=256/64/0
+  colors=000zzz<15>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15\
+  >zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>zxw
+  }
+
+wildlife    {
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-40
+  function=tanh/sin/cotan/flip passes=1
+  corners=2.424932/-2.568904/-0.01077842/-3.146261 float=y
+  outside=real decomp=256
+  colors=200333<14>zzz<12>TCC<2>zzz<12>CTC<2>zzz<12>CCT<2>zzz<12>TTC<2>zzz\
+  <12>TCT<2>zzz<12>CTT<2>zzz<12>hCC<2>zzz<12>ChC<2>zzz<12>CCh<2>zzz<12>hhC\
+  <2>zzz<12>hCh<2>zzz<12>Chh<2>zzz<2>zzzkkz<25>b00<16>100
+  }
+
+very-metal-newtons { ; non oops
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=newton_elliptic passes=b
+  corners=-0.26753572/-0.4300515/-0.1324775/0.13223162/-0.4300515/0.132231\
+  62 params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
+  decomp=256
+  colors=ppp333<119>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000000<3>222
+  }
+
+powerglide         {
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=newt_ellipt_oops passes=b
+  corners=-0.1038383/30.53054/9.014215/31.99
+  params=2/1/0.20000000000000001 float=y inside=zmag decomp=256
+  periodicity=0
+  colors=qrqzzz<15>000<15>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<15\
+  >004<10>E0cF0gG0jH0nI0qK0u<11>50G40C308204000<15>zzz<15>000<15>z0G<15>00\
+  0<13>rrr cyclerange=0/255
+  }
+
+flutterby          {
+  reset=1820 type=formula formulafile=dons.frm formulaname=ok-21
+  function=cotan/conj/cosh passes=b
+  corners=-3.3401502/-2.9321502/0.2594739/-0.2845261/-2.9321502/-0.2845261
+  params=1/2 float=y inside=bof61 outside=real decomp=256
+  colors=000332<14>zzy<15>000<15>z0F<15>000<15>zzy<15>000<2>0870BA0ED0HG0J\
+  I<8>0gf<12>087065032000443<14>zzy<15>000<15>zn0<15>000<15>zzy<15>003<12>\
+  G0iH0mI0pK0tJ0qI0m<12>203
+  }
+
+
+final-approach     { ; a (slow) oddity
+  reset=1820 type=formula formulafile=dons.frm formulaname=reb005e
+  function=cosh/cosxx passes=b
+  corners=-1.1510081/-0.93943524/1.5294893/0.92777431/-0.78595978/1.042843\
+  4 params=1/0.5/-1 maxiter=16 decomp=256 periodicity=0
+  colors=0Uz<25>0Uz0Uz2Vz<22>ztk<20>MooKooIooGnpGnpGoo<4>GslFtkGsk<21>nXUp\
+  VTqTQ<9>zC0<20>sswrvzrvz<88>7`z7_z6_z6Zz5Zz<5>2Wz2Wz2Wz2Wz2Wz<10>0Uz
+  }
+
+angle-of-repose    {
+  reset=1820 type=formula formulafile=dons.frm formulaname=sjmand05
+  function=tan passes=b corners=-12.68066/16.73111/-13.332/8.726821
+  params=0/0.20000000000000001/0.10000000000000001/0.75 float=y
+  maxiter=50 decomp=128
+  colors=fpz0Uz<2>0Uz0Uz2Vz<22>ztk<22>IooGnpGnp<5>GslFtkGsk<21>nXUpVTqTQ<9\
+  >zC0<20>sswrvzrvz<99>1Vz0Uz0Uz0Uz<32>0Uz
+  }
+
+flutterby-2        { ; zoom out
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-21
+  function=cos/cotan/cosh passes=b
+  corners=-3.589984/0.4100156/-1.550104/1.449896 params=1/2 float=y
+  inside=bof61 outside=real decomp=256
+  colors=000<15>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7\
+  >0gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15>004<15>faP<14>332
+  }
+
+massteria          { ; tim's newton elliptic oops
+  reset=1820 type=formula formulafile=dons.frm
+  formulaname=newt_ellipt_oops passes=b
+  corners=-1.19548/1.22052/-1.676355/0.1356451
+  params=2/1/0.20000000000000001/-1 float=y maxiter=16 inside=zmag
+  decomp=256 periodicity=0
+  colors=XmXZoIaq2Rki<2>CnaQaYLSJGH4RrQNy4`oOgs0N_aFOS7CHUec<2>RNDRek<2>CN\
+  hScmOWoKOrJad6SX_`d<2>o3IYck<2>hFkQce<2>ADOQnn<2>AxwdTRnA5mNbuDCDU9GhP1d\
+  2Vnh<2>XxYaeeh__pTTZTac9R3et`i`fgQmeFVcg<2>TGUGjZ1hMLkcBkW1kNdlfnnaxpXRf\
+  c<2>CPF_f_eaNFviVZwbZ_jMOs8BRYfNKaI5WZkf<2>mmQVkeVk_VkUWkNVdjVYiWRgYcn`W\
+  qcNtMhiDegVbgWTcdQln3nMkfDja3iWMkbDkT3kJck`lkQukEailigmqeoEcgWcn<2>`EyaO\
+  ki0lZoncsqhwu_omespSc_PWOLNCOplHumAznOkk<2>3nhUkpTkuRjz`ikfgjmeiSnd<2>Iw\
+  JnN2Y_g<2>i0ThqYvxJanMbWajFRV`fVP`VDVbib<2>zbBeDi7Yn6erhenv_qcigmgbSXYOI\
+  KK25ajg<2>wfWBT__q6RLpz`8Bo6YYp`KuhomwtpWnl<2>_ypPbb<2>69COan<2>06ySakOS\
+  kKHleilqfmT`e<2>L3MLcQAV4Xbl<2>b9qV`k<2>W3nSee<2>IMMSefSlbOZaLTXHMR<2>9Y\
+  L<2>OzyXjxfVwpFvw9R<3>4pL53IXn__qObtChdhwXe
+  }
+
+souvenir           {  
+  reset=1820 type=formula formulafile=dons.frm formulaname=ok-31
+  function=exp/conj passes=b
+  corners=-2.811938/1.031812/2.543287/-2.581713/1.031812/-2.581713
+  params=0.75/-0.20000000000000001 float=y inside=zmag outside=real
+  potential=256/500/0 periodicity=0
+  colors=00016Jpjdsmcvoc<9>j_ShZQgXPeWNdUMcSKcSK<10>QC6PA5NBw<6>O9GO9AMF8<\
+  12>O945NI<10>NA5phvuEj<29>P95ugK<12>QB5pV1<7>RB440CE58AxQrLR<13>Q95osS<6\
+  >RE7BV6<17>OA4_ux<27>OA5cG2<22>O94ZszTWX2rR<9>AcKAbJB`IB_HCYGDXG<3>CQDBO\
+  DALC<9>404lhe cyclerange=2/255
+  }
+
+fragmentary        {  
+  reset=1820 type=barnsleyj2 passes=1 corners=-2/2.000012/-1.500014/1.5
+  params=-1/0.75 float=y inside=zmag outside=real potential=256/350/0
+  invert=-1/0/0 
+  colors=00024K<21>AgXBiYBiY<28>4ll3mm4mm<10>PevRdwRcw<3>O_ubaV<14>vHFxFDw\
+  FD<24>TJPc1t<15>81h62g62f<8>68Y59W7CU<5>MVHPYER`CUd9VdB<15>qtj<12>Dhl<2>\
+  vFj<2>kRV<27>MJvLIwKIxJHzLIy<10>gWkiYikZhm`goaf<4>zh_<5>eBP<5>22J
+  }
+
+milspec            {
+  reset=1820 type=barnsleym1 passes=b
+  corners=0.6263892/-0.6282114/-1.1464563/-2.0874067 params=1/1
+  float=y potential=255/255/0
+  colors=000ZE8<6>jKC<5>vP0<2>qO6oN8mMAkLDjKC<24>000<24>ZWK_XLbYL<4>vdQ<2>\
+  laPh`Od_N`YM_XL<17>BB7996885664553332221000<2>1432653764974B8<17>HbUIdVI\
+  eY<4>Nno<2>MjeLhbKg_JeWIcV<19>386375254243122000<18>MOXNPYOQ_PS`QTbRVcSW\
+  e<6>dch<2>``hZ_hXZhVYgTXf<16>ACD9AC89A779667<3>100<16>XD8
+  }
+

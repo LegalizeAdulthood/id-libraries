@@ -1,0 +1,272 @@
+Pollution          { ; On a smoggy day you can...
+                     ; Ron Barnett 1993
+  reset=1800 type=hypercomplexj function=sqr
+  corners=-0.00823641725/0.00823641725/-0.74891471/0.74891471/-0.721264319\
+  /0.20178916
+  params=-0.54929675235109121/0.2475852060301533/0.29999999999999999/-0.20\
+  000000000000001 float=y inside=bof60 periodicity=0
+  colors=000L4M<3>O6JP7IQ9IRAH<5>YJEZKE_ME`OEaPE<5>dXDdYDdZEdZE<2>b`Eb`Fa`\
+  F``F_`GY_GX_G<5>NWJLVKJVKHULGTLESM<4>6QO5PP4PP3PQ2PQ<5>1ST1TT2UT<4>6`U7a\
+  V9cV<2>DgVEiVGkVIlV<3>OqVPrUQsURtUSuU<2>VvTVvTWuSWuS<3>WrQVqQVoP<2>TjOSh\
+  NQfN<11>CGHBEGBDGABG<4>95E94EA4EA3E<3>E4DF4DG5DI6D<3>PAERCETDFVFFWGGYIG<\
+  3>eOIfQJhRJiTKkUL<3>oYOoZPp_Qp_Rp_Sp`Tp`Up`U<4>lZ_kZ`jYaiXb<6>`Si_RjZRkY\
+  QlXQmWQn<2>UPqUPqUQrUQs<3>VTvVTvWVw<2>ZYx__xa`ybbydcy<2>hhyjjzkky<5>tsxu\
+  txvtxvuwwuwxvv<2>xutxutxtsxsr<2>vppunosmn<2>ogknejlcijah<6>ZMaXJ`VH_UFZS\
+  EYRCXQAWP9UO7U<2>M5RL4QL4PL3OL3NL3M
+  }
+
+Hand               { ; Alien hand trapped in a web
+                     ; Ron Barnett 1993
+  reset=1800 type=julia passes=t
+  corners=-0.00514158507918/-0.00513032107918/-0.03000955419036/-0.0300011\
+  0619036 params=0.40037575601172043/0.14097839320220043 float=y
+  maxiter=4096 inside=epsiloncross logmap=yes
+  colors=064BKz037<14>4Vv097<13>0pd073<14>5wU172<14>DzI271<14>Oy9460<14>Zt\
+  2550<14>jk0640<14>s`1730<14>yQ7711<14>zFG703<14>x6S604<14>q1b505<14>h0m3\
+  06<14>X3u217<14>MAz127<13>BJv
+  }
+
+Sunset             { ; Sunset over the bay
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004A function=cosxx/cosxx
+  corners=0.0015547391/-0.118356309/0.477620325/0.374734926/-0.090998292/0\
+  .354216439 params=2 float=y maxiter=256 inside=zmag
+  colors=000N0i<4>C0dA0b80a60_40Y20W10U<3>00M00K10I20G<2>70C90AC09<2>K07N0\
+  7Q07T07V07Y08<2>d0Bf0Cg0D<3>j0Kk0Mj0O<2>i0Th0Vf0X<4>`0c_0dZ0dZ0eY0f<3>X0\
+  fX0fY0f<10>g0ah0`h0`h0`h0`h0_<2>f0_e0`c0`<3>X0aV0aS0a<4>H0aF0aE0`<3>90Z8\
+  0Y80X80V80U<4>C0LD0JF0I<4>L08M07N05O04O02<2>P00P00O00<3>L01K02J04<2>H09G\
+  0BF0E<3>F0OF0RG0UH0X<2>M0eO0gR0j<2>Z0qa0sd0ti0wl0xo0y<2>u0zw0zx0zy0z<2>z\
+  0xz0wy0vx0u<2>s0qq0pn0o<5>_0iY0hW0hU0gS0g<3>N0fM0fM0fM0fM0f<6>S0gT0gU0f<\
+  2>W0eX0eX0dX0c<2>X0`X0_W0ZV0Y<9>L0NK0MK0M<2>J0LJ0LK0M<3>N0OO0PP0R<4>W0XX\
+  0ZX0_Y0aZ0b<3>Y0gX0hW0h<3>P0i
+  }
+
+Meltdown           { ; Mandelbrot Meltdown
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004A function=sqr/tan passes=t
+  corners=-3.205567/2.202433/-1.575739/2.480261 params=0.5/0.5/1
+  float=y inside=bof60 logmap=yes
+  colors=z0Yz0l<7>z0`z0W<20>z01z00z10<40>zy0zz0xz0<39>2z00z00z0<40>0zx0zz0\
+  yz<40>01z00z10z<40>y0zz0zz0y<7>z0m
+  }
+
+ArtSchool          { ; Watch them paint before your eyes
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004A function=ident/tan passes=b
+  corners=-4.001955/-0.001955034/-1.5/1.5
+  params=0.29999999999999999/-1/1 float=y maxiter=1024 inside=zmag
+  decomp=256
+  colors=000ZAc<28>544332343<30>JaxKczKby<28>676554654<31>vUP<29>333122233\
+  <30>axaczcbyb<28>652430431<30>ZAc
+  }
+
+Amazon             { ; In the jungle
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004D function=sin
+  corners=-1.72335498/-1.64015483/0.559151216/0.621551252
+  params=3.14159265358979 float=y inside=epsiloncross biomorph=10
+  colors=000k00s00sG0<6>0G00W0<6>sW0sk0<6>0k0008<6>s08sG8<6>0G80W8<6>sW8sk\
+  8<6>0k800G<6>s0GsGG<6>0GG0WG<6>sWGskG<6>0kG00O<6>s0OsGO<6>0GO0WO<6>sWOsk\
+  O<6>0kO00W<6>s0WsGW<6>0GW0WW<6>sWWskWkkWckW0NWOkW<2>0kW00c<6>s0csGc<6>0G\
+  c0Wc<6>sWcskc<6>0kc00k<6>s0ksGk<6>0Gk0Wk<6>sWkskk<6>0kk00s<6>s0ssGs<6>0G\
+  s0Ws<6>sWssks<6>0ks800<3>c00
+  }
+
+Monster            { ; Sea monster
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004B passes=t
+  corners=0.893827129/0.973613113/-1.6578524/-1.7642337/0.973613113/-1.764\
+  2337 params=1 float=y maxiter=256 inside=bof60
+  colors=000mjm<28>d2vc0wb0v<29>lknmmmmlm<29>v2vw0wv0v<29>506304305<29>10u\
+  00w00w<28>215323324<30>K0wK0v<29>lknmmmmlm
+  }
+
+Dragon             { ; Not your ordinary fractal dragon
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=reb004c
+  corners=-4.809504/2.873952/5.04727/-5.197338/2.873952/-5.197338
+  params=1/0/0.96999999999999997/-1.8 float=y maxiter=256 inside=0
+  colors=313321320310542531520753741730974962940B85B72B50DA6D83D60FB7F93F7\
+  0HD8HA4H80JE9JC4J90LFALD5LA0NHBNE5NB0PICPF6PC0RKDRG6RD0SLESI7SE0UNFUJ7UF\
+  0WOGWK8WG0YQHYL8YH0_RI_M9_I0aSJaO9aJ0cUKcPAcK0eVLeQAeL0gXMgRBgM0iYNiSBiN\
+  0k_OkUCkO0m`PmVCmP0obQoWDoQ0qcRqXDqR0seSsZEsS0tfSt_EtS0vgTv`EvT0xiUxaFxU\
+  0zjVzbFzV01310300302521510503731710704942920905B52B20B06D63D30D07F73F30F\
+  08H84H40H09J94J40J0ALA5L50L0BNB5N50N0CPC6P60P0DRD6R60R0ESE7S70S0FUF7U70U\
+  0GWG8W80W0HYH8Y80Y0I_I9_90_0JaJ9a90a0KcKAcA0c0LeLAeA0e0MgM30330352551550\
+  5737717707949929909B5BB2BB0BD6DD3DD0DF7FF3FF0FH8HH4HH0HJ9JJ4JJ0JLALL5LL0\
+  LNBNN5NN0NPCPP6PP0PRDRR6RR0RSESS7SS0SUFUU7UU0UWGWW8WW0WYHYY8YY0Y_I__9__0\
+  _aJaa9aa0acKccAcc0ceLeeAee0egMggBgg0giNiiBii0ikOkkCkk0kmPmmCmm0moQooDoo0\
+  oqRqqDqq0qsSssEss0stSttEtt0tvTvvEvv0vxUxxFxx0xzVzzFzz0z
+  }
+
+Fountain           { ; Not necessarily water
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=reb004e function=tan/sqr passes=1
+  corners=-0.1311144/-1.511114/-0.92/0.92/-1.511114/0.92 params=2/0/4
+  float=y maxiter=5000 inside=epsiloncross
+  colors=000EDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7\
+  >zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13\
+  >K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8U\
+  G8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jd\
+  WgaVcZT`WSYUR<4>HGM
+  }
+
+Connection         { ; Fiber optic ultachip under high magnification
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=reb004f function=cos
+  corners=-5.647062/-1.391062/-1.596/1.596 params=0.5 float=y
+  maxiter=1024 inside=epsiloncross potential=256/300/500
+  colors=0002DO<10>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<27>256\
+  134122000111<27>ZTq_Us`VubXwcZwbYu<25>876764652430220232<30>0Tw<17>2EQ
+  }
+
+Amazon2            { ; Julia's view of the jungle
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004F function=sin corners=-2/2/-1.5/1.5
+  params=3.14159265358979/0/-1.7/0.59999999999999998 float=y
+  inside=epsiloncross biomorph=10
+  colors=000k00s00sG0<6>0G00W0<6>sW0sk0<6>0k0008<6>s08sG8<6>0G80W8<6>sW8sk\
+  8<6>0k800G<6>s0GsGG<6>0GG0WG<6>sWGskG<6>0kG00O<6>s0OsGO<6>0GO0WO<6>sWOsk\
+  O<6>0kO00W<6>s0WsGW<6>0GW0WW<6>sWWskW<6>0kW00c<6>s0csGc<6>0Gc0Wc<6>sWcsk\
+  c<6>0kc00k<6>s0ksGk<6>0Gk0Wk<6>sWkskk<6>0kk00s<6>s0ssGs<6>0Gs0Ws<6>sWssk\
+  s<6>0ks800<3>c00
+  }
+
+Lagoon             { ; Jungle lagoon as viewed from the trees
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004G function=sinh/sqr passes=1
+  corners=-2.062454/-1.518464/-11.9876/-13.22127/-1.518464/-13.22127
+  params=0.90000000000000002/0/-0.38/1.1499999999999999 float=y
+  inside=bof60 biomorph=10
+  colors=213xl0zrLzn01310301510502720703930903B30B04D40D05F50F05H50H06J60J\
+  07L70L07N70N08P80P09R90R09S90S0AUA0U0AWA0W0BYB0Y0C_C0_0CaC0a0DcD0c0EeE0e\
+  0EgE0g0FiF0i0GkG0k0GmG0m0HoH0o0IqI0q0IsI0s0JtJ0t0JvJ0v0KxK0x0LzL0z010331\
+  520542730753930963B40B84D50D95F60FA5H60HB6J70JC7L80LD7N90NF8PA0PG9RA0RH9\
+  SB0SIAUC0UJAWD0WKBYD0YMC_E0_NCaF0aODcG0cPEeH0eQEgH0gRFiI0iSGkJ0kUGmK0mVH\
+  oK0oWIqL0qXIsM0sYJtN0tZJvN0v`KxO0xaLzP0z312301513502724703935903B36B04D4\
+  8D05F59F06H5AH06J6BJ07L7CL08N7DN09P8FP0AR9GR0AS9HS0BUAIU0CWAJW0DYBKY0D_C\
+  M_0EaCNa0FcDOc0GeEPe0HgEQg0HiFRi0IkGSk0JmGUm0KoHVo0KqIWq0LsIXs0MtJYt0NvJ\
+  Zv0NxK`x0OzLaz0P331330551540762760983970BA3B90DB4DA0FD5FC0HF5HD0JG6JF0LI\
+  7LH0NK7NI0PL8PK0RN9RL0SP9SN0UQAUO0WSAWQ0YUBYR0_VC_T0aXCaU0cZDcW0e_EeY0ga\
+  EgZ0icFi`0kdGka0mfGmc0ohHod0qiIqf0skIsg0tmJti0vnJvj0xpK
+  }
+
+Aluvium            { ; Excavation at the cliff's edge
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004H function=sinh
+  corners=-1.50464461/-1.35292327/0.9623035/0.820175589/-1.38180353/0.7985\
+  15392 float=y maxiter=1024 inside=0
+  colors=000FRd<17>676554654<31>vUP<29>333122233<30>axaczcbyb<28>652430431\
+  <29>Y9aZAcZAc<28>544332343<30>JaxKczKby<9>FSf
+  }
+
+Seashell           { ; Sea shells on the beach
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004I function=sinh corners=-8/8/-6/6
+  params=0.82999999999999996/0.46999999999999997 float=y maxiter=1024
+  inside=0 outside=mult
+  colors=000YI0<5>rZ0<11>400A00<2>000<15>0pp<12>0BB077044000222<14>hhh<15>\
+  000<27>007017037<13>4S4<13>1A1181171151131000313717A20<12>cAP<10>H43E30A\
+  2A<2>000<15>hh0<15>000<3>00D00H22I<10>PP`<9>33H00E00A<2>000300700A00<5>U\
+  G0
+  }
+
+Maw                { ; I think its hungry
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004J function=ident
+  corners=-1.682432/1.682432/-2.518085/0.005563244 float=y
+  maxiter=1024 inside=0
+  colors=000jU0<9>400A00<2>000<15>0pp<12>0BB077044000222<14>hhh<15>000<27>\
+  007017037<13>4S4<13>1A1181171151131000313717A20<12>cAP<10>H43E30A2A<2>00\
+  0<15>hh0<15>000<3>00D00H22I<10>PP`<9>33H00E00A<2>000300700A00<12>rZ0nX0
+  }
+
+Fish               { ; Translucent fish after feeding
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004K function=ident
+  corners=-1.085398/1.226206/2.778357/-1.221643/1.226206/-1.221643
+  params=0.25/1.3500000000000001 float=y maxiter=1024 inside=bof60
+  colors=000YI0<5>rZ0<11>400A00<2>000<15>w0K<15>000<15>hhh<15>000<23>00600\
+  6216<18>mR4<17>000<15>mAP<15>000<15>hh0<15>000<3>00D00H22I<10>PP`<9>33H0\
+  0E00A<2>000300700A00<5>UG0
+  }
+
+Robot              { ; R2D2's cousin
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004L function=sinh corners=-4/4/-3/3 params=-1/0/-2
+  float=y maxiter=256 inside=0 decomp=256
+  colors=000<13>GKLHLNJMOKOP<6>RXZSY_TZaU_bVacWbd<10>dlpemqenq<5>irvirvjsw\
+  jswjtx<4>lvzlvzlvzlvzlvzlvz<9>luykuykuyktxjtxjsw<5>gptgosforenqemq<11>Wb\
+  dVacU_b<4>PUWOTVNSUMQSLPRKOP<6>CEFADE9BC8AA<5>111000110<12>LGCNHDOJEPKF<\
+  8>aTMbUNcVNdWOeXP<9>pdVqeVqeW<5>viYviYwjZwjZxjZ<4>zl_zl`zl`zl`zl`zl`<9>y\
+  l_yk_yk_xk_xjZwjZ<5>tgXsgXrfWqeWqeV<13>bUNaTM_SLZRKYQK<12>FC9EA8C97A86<5\
+  >110
+  }
+
+Spring             { ; Springtime in fairie land
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=reb004l function=recip
+  corners=0.82725943/1.3624564/-0.0838250143/-0.54303224/1.2403498/-0.6346\
+  1217 params=3/3 float=y maxiter=256 inside=0
+  colors=UVzNU0<3>RU0ST0TT0US0VS0<4>WQ1WP1VP1<2>UM2UM2TL2SK3<12>CA6B96B97<\
+  5>959949A49<5>F1CG1CI0C<12>e0Hf0Ih1Ii1Jk1J<3>o3Ko3Lp4Lp5M<3>p7No8No8On9O\
+  mAO<4>gEPfEQeFQdGRcHR<6>WMTVNTVNT<5>URUURUVSU<4>ZUV_UVaUV<5>iVVkVVlUV<5>\
+  uUVvTVvTV<4>xRUxRUxQUxPT<2>vNTuMTsMT<2>oKSnJSlIRjHR<8>VBPUAOS9OR8OQ7O<3>\
+  M5MM5ML4LL3LL3K<2>L2JM1JM1JN1IO0I<12>a0Db0Cb1C<2>d2Bd2Bd3Ad3Ad49<5>`77_8\
+  7Y97<4>RC5PD5NE5LF4JG4<6>8L26M25M24N2<2>2P11P11Q11R1<2>1S02T02T03T04U0<5\
+  >BV0DV0EV0GV0IV0KV0LV0
+  }
+
+Jaws               { ; Ron Barnett, 1993
+  reset=1810 type=formula formulafile=reb004.frm
+  formulaname=reb004m function=cos/tanh
+  corners=-3.125898/0.3888503/-1.296336/-1.4885401/-1.768331/-3.106426
+  params=0/0.040000000000000001 float=y maxiter=256 inside=0
+  colors=0000Tw<29>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<27>256\
+  134122000111<27>ZTq_Us`VubXwcZwbYu<25>876764652430220232<29>1Su
+  }
+
+Violet             { ; Violet cellophane on a hot plate
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004M function=cos/cos corners=-2/2/-1.5/1.5 float=y
+  maxiter=256 inside=0 potential=256/300/500
+  colors=000Ucz<102>NAUNAUNAUNAUNAUNAT<145>000
+  }
+
+Hive               { ; Termite colony
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004M function=cos/cos
+  corners=-2.4316999/-0.33662856/0.49940458/1.4484442/-2.1330132/0.1011556\
+  9 float=y maxiter=256 inside=0 potential=256/300/500
+  colors=000wZ0wZ0<29>220000000<29>uT0wU0wU0<29>210000000<27>qZRs`SuaTwcUw\
+  cU<27>653432221000000<27>sh8ui9wk9zmAzmA<25>752541321000000000<29>uX0
+  }
+
+Blueness           { ; Ripples of blue
+                     ; Ron Barnett, 1993
+  reset=1800 type=formula formulafile=reb004.frm
+  formulaname=REB004M function=cos/cos
+  corners=-0.413859526/-0.574094492/0.664761358/0.828559982/-0.550167454/0\
+  .846505261 float=y maxiter=256 inside=0 potential=256/300/500
+  colors=0000Tw<29>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<29>122\
+  000111<29>`VubXwcZw<28>652430220<30>1Su
+  }
+

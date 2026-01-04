@@ -1,0 +1,204 @@
+Subj:  Overlaying Text			Section: Fractal Sources
+  To:  All				Saturday, September 21, 1996 8:15:30 a
+From:  Les St Clair, 101461,2032	#147166
+
+Hi Everyone,
+
+Whilst working with Jan Maarten van der Valk's "FracText" program I looked at ways to overlay the text onto *any* 
+fractal background.
+
+This can be achived by saving the desired text as a .gif then using Fractint's 3d_overlay facility (<#> key).
+Additionally, I devised a technique for placing a "shadow" behind the text to produce a more prominent effect.
+
+Here are the steps (formulas and .par files are included with this message):
+
+1. Use the formula "FT_195_solid" to generate the "solid" text. The formula has a Newton fractal background, but 
+because the text is "fixed" to the screen, it is possible to zoom into a solid color area for the background (this avoids 
+"breakthrough" caused by pixels of the fractal which happen to be colored the same as the solid text).
+The text is colored black to form the "shadow".
+
+Here's the .par - save it as "ft195_sh.gif" (savename= is written in the par, so just press <s> when generated):
+
+1_FT195_SHADOW     { ; "Fractint 19.5 Shadow for overlay"    t=  0:00:34.55
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:29:25 hours
+  reset=1950 type=formula formulafile=ft_over.frm 
+  formulaname=FT_195_SOLID function=exp/ident/ident passes=t periodicity=0
+  center-mag=-1.06996/-1.33516/17.82531 float=y savename=ft195_sh.gif
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+2. Use the formula "FT_195_inverse" to generate the "fractal-inside text" image.
+Here's the .par - save it as "ft195_tx.gif" (savename= is written in the par, so just press <s> when generated):
+
+2_FT195_TEXT       { ; "Fractint 19.5 Text for overlay"      t=  0:01:37.38
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:33:30 hours
+  reset=1950 type=formula formulafile=ft_over.frm
+  formulaname=FT_195_INVERSE function=exp/ident/ident passes=t
+  center-mag=0/0/0.6666667 float=y savename=ft195_tx.gif periodicity=0
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+3. Generate the background image (or use any image you like!)
+Here's the .par for my background (it looks like the wheels of a locomotive!):
+
+3_FT195_BACKGROUND { ; "Background image for Text Overlay"   t=  0:00:45.21
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:24:32 hours
+  reset=1950 type=fn(z)+fn(pix) function=sinh/recip passes=t
+  corners=-1.9123809/-2.7055433/10.834987/9.6865963/-1.6548126/10.503646
+  params=0/0/1/0 maxiter=4 fillcolor=2 inside=zmag outside=mult
+  savename=ft195_bk.gif
+  colors=000000Z0S<12>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0\
+  Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ\
+  <7>0Nk0Km0In0Gp<4>03x00z20x<13>U0X
+  }
+
+4. Now for the overlay stages -
+For the first overlay stage I used the following technique:
+Use <#> to call Fractint's 3d_overlay feature.
+Select 3d fill type to "just draw the points"
+Set x-axis rotation, y-axis rotation & z-axis rotation all to zero (this will give the desired 2d-overlay!)
+Set x-axis scaling factor &  y-axis scaling factor to 100% (so that the overlaying .gif is the same size as the image 
+you're working with)
+Set surface roughness to zero
+Set x-shift with perspective & y-shift with perspective as required in order to position the text in the desired location 
+(this example uses x=4, y=10).
+Set first transparent color=2 and last transparent color=255 (this will eliminate all colors except the solid text)
+
+Here's the .par:
+
+4_FT195_OVERLAY_1  { ; "Text Overlay Stage 1 - Shadow"       t=  0:00:39.16
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:53:22 hours
+  3d=overlay filename=ft195_sh.gif scalexyz=100/100 roughness=0
+  waterline=0 transparent=2/255 ambient=20 rotation=0/0/0
+  perspective=0 xyshift=4/10
+  }
+
+5. Here's the second overlay stage -
+The paramaters are the same as for the first overlay except for the text position and the transparent colors. In order to 
+get the "shadow" effect it is necessary to "off-set" the overlaying text a little above and to the left of the shadow. This is 
+achieved by re-setting x-shift with perspective & y-shift with perspective relative to the original co-ordiantes (the 
+shadow used x=4, y=10 this text uses x=3, y=12).
+Set first transparent color=1 and last transparent color=1 (this will eliminate the background colour just leaving the 
+fractal text).
+Here's the .par:
+
+5_FT195_OVERLAY_2  { ; "Text Overlay Stage 2 - Text"         t=  0:00:39.27
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
+                     ; parameters created on Sep 21, 1996 at 10:55:27 hours
+  3d=overlay filename=ft195_tx.gif scalexyz=100/100 roughness=0
+  waterline=0 transparent=1/1 ambient=20 rotation=0/0/0 perspective=0
+  xyshift=3/12
+  }
+
+That's it, have fun!
+Now you can use FracText to make those Christmas Greetings and Fractal Birthday Cards!
+
+- Les
+
+-------------- cut here for formulas -------- save as "ft_over.frm" ------
+
+FT_195_SOLID { ; Creates "Fractint 19.5" solid text fixed to screen
+     ; Les St Clair 101461.2032@compuserve.com - 1996
+     ; Created using "FracText" (alpha-4) by Jan Maarten van der Valk
+     ; "periodicity=0" and "passes=1" recommended
+  x=real(scrnpix)/real(scrnmax), y=(imag(scrnmax)-imag(scrnpix))/real(scrn\
+  max), z=x+flip(y)
+  chrF1 = x<0.18||(y<0.525&&y>0.495)||y>0.54&&x>0.15&&x<0.228
+  xr=2*x
+  chrR2 = y<0.525&&y>0.495||y>0.54||x<0.264&&x>0.234&&x<0.288||(abs(cabs(z\
+  +(-0.288,-0.5325))-0.0225)<0.015&&x>0.288)||(y<0.51&&y<-xr+1.101&&y>-xr+\
+  1.03392)
+  xa=3*x
+  chrA3 = y>xa-0.63937||y>-xa+1.6845||(y<0.498&&y>0.468)&&y<xa-0.5445&&y<-\
+  xa+1.77937
+  xc=1*x
+  chrC4 = abs(cabs(z+(-0.49712,-0.51))-0.045)<0.015&&(x<0.49712||y>xc+0.01\
+  288||y<-xc+1.00712)
+  chrT5 = y>0.54&&x>0.54555&&x<0.63555||(x>0.57555&&x<0.60555)
+  chrI6 = x>0.64155&&x<0.67155
+  xn=2.5*x
+  chrN7 = x>0.67755&&x<0.70755||(x>0.72555&&x<0.75786)||(y>-xn+2.26387&&y<\
+  -xn+2.34465)
+  chrT8 = y>0.54&&x>0.76386&&x<0.85386||(x>0.79386&&x<0.82386)
+  test1 = chrF1||chrR2||chrA3||chrC4||chrT5||chrI6||chrN7||chrT8&&y>0.45&&\
+  y<0.57
+  x1=1.5*x
+  chr19 = y<x1-0.15167&&y>x1-0.20719&&y>-x/1.5+0.60667||(x>0.38733&&x<0.41\
+  813)
+  chr910 = abs(cabs(z+(-0.46783,-0.3227))-0.0273)<0.0154&&y<0.3227||abs(ca\
+  bs(z+(-0.46783,-0.3773))-0.0273)<0.0154||(x>0.47973&&x<0.51053&&y>0.3227\
+  &&y<0.3773)
+  chrDT11 = y<0.3108&&x>0.51753&&x<0.54833
+  chr512 = abs(cabs(z+(-0.60573,-0.3304))-0.035)<0.0154&&(y<0.3304||x>0.60\
+  573)||(x>0.55533&&y>0.35&&x<0.65613&&(x<0.58613||y>0.3892||(y<0.3808&&x<\
+  0.60573)))
+  test2 = chr19||chr910||chrDT11||chr512&&y>0.28&&y<0.42
+  test = test1||test2
+  f1=sin(.5*pixel)
+  f2=1/(32*pixel)
+  pixel=(test==0)*f1+(test!=0)*f2
+  z=1+(0,-0.65)/fn3(pixel+(0,0.75)):
+  z2=z*z, z4=z2*z2, n=z4*z2-1, z=z-n/(6*z4*z)
+  |n|>=.0001&&test==0
+  }
+
+FT_195_INVERSE { ; Creates "Fractint 19.5" inverse text fixed to screen
+     ; Les St Clair 101461.2032@compuserve.com - 1996
+     ; Created using "FracText" (alpha-4) by Jan Maarten van der Valk
+     ; "periodicity=0" and "passes=1" recommended
+  x=real(scrnpix)/real(scrnmax), y=(imag(scrnmax)-imag(scrnpix))/real(scrn\
+  max), z=x+flip(y)
+  chrF1 = x<0.18||(y<0.525&&y>0.495)||y>0.54&&x>0.15&&x<0.228
+  xr=2*x
+  chrR2 = y<0.525&&y>0.495||y>0.54||x<0.264&&x>0.234&&x<0.288||(abs(cabs(z\
+  +(-0.288,-0.5325))-0.0225)<0.015&&x>0.288)||(y<0.51&&y<-xr+1.101&&y>-xr+\
+  1.03392)
+  xa=3*x
+  chrA3 = y>xa-0.63937||y>-xa+1.6845||(y<0.498&&y>0.468)&&y<xa-0.5445&&y<-\
+  xa+1.77937
+  xc=1*x
+  chrC4 = abs(cabs(z+(-0.49712,-0.51))-0.045)<0.015&&(x<0.49712||y>xc+0.01\
+  288||y<-xc+1.00712)
+  chrT5 = y>0.54&&x>0.54555&&x<0.63555||(x>0.57555&&x<0.60555)
+  chrI6 = x>0.64155&&x<0.67155
+  xn=2.5*x
+  chrN7 = x>0.67755&&x<0.70755||(x>0.72555&&x<0.75786)||(y>-xn+2.26387&&y<\
+  -xn+2.34465)
+  chrT8 = y>0.54&&x>0.76386&&x<0.85386||(x>0.79386&&x<0.82386)
+  test1 = chrF1||chrR2||chrA3||chrC4||chrT5||chrI6||chrN7||chrT8&&y>0.45&&\
+  y<0.57
+  x1=1.5*x
+  chr19 = y<x1-0.15167&&y>x1-0.20719&&y>-x/1.5+0.60667||(x>0.38733&&x<0.41\
+  813)
+  chr910 = abs(cabs(z+(-0.46783,-0.3227))-0.0273)<0.0154&&y<0.3227||abs(ca\
+  bs(z+(-0.46783,-0.3773))-0.0273)<0.0154||(x>0.47973&&x<0.51053&&y>0.3227\
+  &&y<0.3773)
+  chrDT11 = y<0.3108&&x>0.51753&&x<0.54833
+  chr512 = abs(cabs(z+(-0.60573,-0.3304))-0.035)<0.0154&&(y<0.3304||x>0.60\
+  573)||(x>0.55533&&y>0.35&&x<0.65613&&(x<0.58613||y>0.3892||(y<0.3808&&x<\
+  0.60573)))
+  test2 = chr19||chr910||chrDT11||chr512&&y>0.28&&y<0.42
+  test = test1||test2
+  test=(test==0)
+  f1=sin(.5*pixel)
+  f2=1/(32*pixel)
+  pixel=(test==0)*f1+(test!=0)*f2
+  z=1+(0,-0.65)/fn3(pixel+(0,0.75)):
+  z2=z*z, z4=z2*z2, n=z4*z2-1, z=z-n/(6*z4*z)
+  |n|>=.0001&&test==0
+  }
+
+

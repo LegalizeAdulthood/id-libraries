@@ -1,0 +1,1051 @@
+variant2 of ?      { ; Jim Deutch
+                     ; Zoomed on the doohicky & set Bailout = 300
+  reset=1920 type=julia passes=1
+  corners=-0.78134559/0.96524308/0.47620325/-0.095685757/0.12193306/-0.128\
+  16827 params=-0.5025032795965672/0.5333889648318291 float=y
+  maxiter=500 bailout=300 inside=0 outside=imag invert=0.5/0/0.1
+  finattract=y periodicity=0
+  colors=000G0Q<21>50A000<21>0BH0CI0CI0CI<26>1Qb1Rc1Sd1Te2Uf<43>iodjpdkqdl\
+  rdmsc<10>xyb<7>1Uf<14>123000000<30>z00sKS<6>zA0<15>zz0<11>xD2s92<7>X3TU2\
+  WR1ZO0bN0`L0ZK0W<8>G0Q
+  }
+
+variant4 on ?      { ; Jim Deutch
+                     ; Bailout 4, and
+  reset=1920 type=julia passes=1
+  corners=0.19799593/-0.1990151/0.84002613/-0.57902872/0.73621829/0.122356\
+  32 params=-0.5025032795965672/0.5333889648318291 float=y maxiter=500
+  bailout=4 bailoutest=and inside=0 outside=imag invert=0.5/0/0.1
+  finattract=y periodicity=0
+  colors=0U0r00<3>z00sKS<6>zA0<15>zz0<11>xD2s92<7>X3SU2WR1ZO0bN0`L0ZK0W<7>\
+  G0RG0QG0QG0PF0P<19>50A000<21>0BH0CI0CI0CI<25>1Pa1Qb1Rc1Sd1Te<10>CZfD_EE_\
+  e<31>iodjpdkqdlrdmsc<10>xyb<7>1Uf<14>123000000<25>p00
+  }
+
+
+sp_01          { ; "Globes"         L.StClair/gallet-3-13 formula t=00m36s
+                 ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                 ; Les St Clair 101461.2032@compuserve.com 1996
+                 ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-13 function=conj/asin passes=1
+  center-mag=0.0289104/-1.02564/1.847743/1/-47.498
+  params=100/-0.2/33/-3/0/0 float=y maxiter=255 outside=atan
+  periodicity=0
+  colors=za0EEEzi0DDDzq0CCCzy0BBBtz0AAAlz0999dz0888Xz0777Pz0666Hz0555Exy44\
+  4BuB3339qH2226nN1113kT0000gZ0bb0000ShCCC1110Jn<28>012000100<51>x10z20z50\
+  <14>xz0<16>www<14>60t<15>z60<23>310000000```Ex5___BuBZZZ9qHYYY6nNXXX3nTW\
+  WW0gZVVV0YeUUU0NkTTT0EqSSS03xRRR60tQQQE0lPPPM0dOOOU0XNNNb0OMMMj0GLLLr0FK\
+  KKz00JJJz60IIIzE0HHHzM0GGGzU0FFF cyclerange=0/255
+  }
+
+sp_02         { ; "Nebula"         L.StClair/gallet-3-13 formula t=00m47s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-13 function=acosh/tan passes=1
+  center-mag=+0.00032308525194892/-0.99998658154419330/902.6336/1/-42.5
+  params=1/100/-12/1.3/0/0 float=y maxiter=300 inside=zmag
+  outside=atan
+  colors=011<13>BGJFJV<13>W`uXawW_u<14>H5S<24>zo`<22>cUA<8>000<22>`00<4>W1\
+  3V24U25U36T36S37<4>N5BM6CJ5A<6>000<23>0xz<15>077<30>1Te1Uf000<31>000
+  }
+
+sp_03         { ; "Constellations" L.StClair/gallet-3-15 formula t=02m38s
+                     ; t=time using 486-DX2-66 & video SF5 (640x480x256c)
+                     ; Les St Clair 101461.2032@compuserve.com 1996
+                     ; Image created using formula by Sylvie Gallet
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=Gallet-3-15 passes=1
+  center-mag=0.970137/0.626237/34.28588/1/-22.499 params=1/1/0/0/0/0
+  float=y inside=zmag outside=atan
+  colors=000_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yqbe_FYI0L0<3>yrB<4>z00<6>Gkk<2\
+  >ns1zz0<4>z66<7>Y0L<4>zAz<9>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>5u0<9>5B0<9>\
+  zz0<14>bE2`A3aA3<19>u8Bw7Cw8Cv8Dv9E<11>yBjzCmzCmzCmzzzYXc<6>7qw<20>P4SQ1\
+  TS4U<9>r_f<8>Uq1Xq2
+  }
+Starlight_02       { ; Modified version of sp_60 from sylvie.par t=21m30s
+                     ; zoomed out and rotated (t=time using 640x480x256c)
+                     ; uses gallet-03-07 formula (from gallet-03.frm)
+                     ; Les St Clair 101461.2032@compuserve.com - 1996
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=gallet-3-07 passes=1
+  corners=0.975316729/0.954119437/1.7560703/-0.17134123/1.89284324/0.53570\
+  162 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
+  colors=00Ezzz_DX<6>r_f<8>Uq1Xq2_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yq<10>z22z\
+  00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4>zAz<9>6IJ<7>zzP<7>B8S<6>5rz<12>9IR<16>5u\
+  0<9>5B0<8>zz0<12>eL2dH2bE2`A3aA3<19>u8Bw7Cw8Cv8Dv9E<12>zCmzCmzCmzzzYXc<6\
+  >7qw<20>P4VQ1TS4UV7V
+  }
+
+Carr2322            { ; From a modified Sylvie Gallet frm.
+                           ;  Version 1921 Patchlevel 24
+  reset=1921 type=formula formulafile=newforms.frm formulaname=Carr2322
+  corners=1.688785/-1.788925/1.299513/-1.30877 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000000<14>e00<14>M00000<13>3AS3BU5BX<9>UFw<15>5BW3BV3AS<10>012002\
+  112<19>DGhENj<9>UFw<12>52B<9>KJbMSd<9>`hz<15>77MKBh<11>p8Tr8Ru8Qx7Px4Ru4\
+  U<9>WEtUFwRIs<8>7oJ4sF2wB0z70wC1tG<6>6Yj6Vo7Ss7Px7Nt<14>000<12>knY000000
+  }
+
+galore1            {
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=mandels_galore passes=1
+  corners=-1.542903/0.8390772/-0.8932255/0.8932598
+  params=256/1.7/0/0/0/0 float=y maxiter=3072 periodicity=0
+  colors=00000e<5>00e<6>00zzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00\
+  z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2\
+  >Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0SS<3\
+  >0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKLSK\
+  K<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0G\
+  G<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBB\
+  G<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGWWWz000zzzz\
+  000zz0z0zzzzz
+  }
+
+galore2            {
+  reset=1920 type=formula formulafile=newforms.frm
+  formulaname=mandels_galore passes=1
+  corners=-1.542903/0.8390773/-0.8932255/0.8932598
+  params=256/1.2/0/0/0/0 float=y maxiter=3072 periodicity=0
+  colors=00000e<5>00e<6>00z<32>00zzzp<30>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>\
+  hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>\
+  ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQS\
+  KOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<3>\
+  GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBGGB\
+  DGBCGBBGB<2>BGFBGGBFGBDGBCGWWWz000z0zz000zz0z0zzzzz
+  }
+
+Mandel_Nest        { ; 12 Deep!
+                     ; Copyright 1996 by Lee H. Skinner
+                     ; Based on Sylvie & George's formula
+                     ; 12 mins on P166 (1600x1200)
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=G-2_variation passes=1
+  center-mag=-0.613881/2.22045e-016/0.8820956 params=50/1.3 float=y
+  maxiter=600 inside=0 logmap=yes symmetry=none periodicity=0
+  colors=0009YNOSyKPyGLz<2>SBp<3>KAK<3>5fB<4>vzG<19>NFTQGR<13>g7be6d<24>yo\
+  GzqEzqE<4>zsLztMzuOzuQ<12>zywzzzyyy<14>XbeV`cU_c<9>OWWOWVNWUNWUNWT<18>Gd\
+  JGdJGcJ<27>MCKNBLNBLOAMOAM<14>F47E36E59<14>Ebz<4>azz0gjAXSL_a<3>z00zz0zB\
+  A<2>zSQzX0<3>zsQzyvwvvssvjaxeKzgFk<2>z00VYxRVy cyclerange=2/255
+  }
+
+spiral             {; (c) Sylvie Gallet [101324,3444], 1996
+                    ; 34 mins 50 at 1600x1200 (P166)
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=mandels_spiral passes=1
+  corners=-1.69038/0.6916001/-0.8932255/0.8932598
+  params=128/0/1.2/0.1/-0.05/-0.06 float=y maxiter=2304 periodicity=0
+  colors=0F0<62>yy0zz0zy0<61>z000F0<62>yy0zz0zy0<61>m00
+  }
+
+Laughing_Dog       { ; Jonathan Osuch [73277,1432]
+                     ;  Version 1921 Patchlevel 28
+  reset=1921 type=mandel(fn||fn) function=sqrt/exp passes=1
+  center-mag=+0.01378131325614913/+0.26781998369336040/4823.773/1.3776/-75
+  params=0/0/1 float=y maxiter=1000 bailoutest=and inside=0 logmap=6
+  colors=00000z<10>0CNXZL<2>bUCeS9fTC<10>ylktlSnm8nnt<6>1yT<3>NNZ8FF<206>0\
+  C8mbEk`JiYPiWN
+  }
+
+Carr2330-F-1        { ; Rocket breaking surface of water.
+                      ; From a modified Sylvie Gallet frm.
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Carr2330
+  center-mag=0.00264859/0.061045/4.148524/1/180 params=100/150/200/250
+  float=y maxiter=300 periodicity=0
+  colors=000000<13>d00<17>33813915D<8>7Kr7MwAOu<7>``j<9>778<9>ffkjjollvnnx\
+  qqzsszqqzooyllv<2>ggqeeobbl<2>XXfUUcTTb<2>LLV<2>SSaUUcVVd<5>ggqjjtkkunnx\
+  ppzsszqqz<2>kkuiisffp<4>XXfUUUTTT<2>LLL<2>SSSUUUVVV<5>gggjjjkkk<2>sss000\
+  <14>KAc<8>XudYzeXtd<7>KAc<12>000700<6>c00<7>UFz<7>zz0<7>700000<14>e00<7>\
+  M9_KAcH9Y<5>000
+  }
+
+in_focus_1         { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m01s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-21.65642/-44.00815/13.76609/-6.26779/-20.08678/11.67324
+  params=2.0090998/0/1.0090998/0 float=y maxiter=3200 logmap=yes
+  potential=100/100/3200
+  colors=WWWzz0zx0yu0xq0wl0ug0sa0qV0oP0lJ0iD1g91d51a21Y02V02S02P23M53J93GE\
+  4<4>5g63m62r7<2>0z80z90zA0xA1uB2pB3lC<3>COEEIFHDGK8HN4HQ2IT0JW0JZ0Ka2Ld6\
+  M<2>mKOoRPrXPtbQuhRwmSxrTyvTzyU<2>zzWzwXytYxpZvk_ue_<3>lIbiCcf8dc4e`1fY0\
+  fV0gR1hO3hL6iIAjFGkDLk<2>6cm4in3nn2so1vp0yp0zq0zq0yr0wr1ts2os<3>ATuCNvFH\
+  vICwK7wO3wR1xU0xX0x_1xb3ye7yhBy<2>pSzrYztdzvizwozyszzwzzyzzzzzzzzyzzwzys\
+  zwozviztdz<2>mMzkGyhBye7yb3y_1xX0xU0xR1xO3wK7wICwFHv<4>4jt2os1ts0wr0yr0z\
+  q0zq0yp1vp2so3nn4in6cm8YmARlDLkGFjIAjL6iO3hR1hV0gY0f`1f<2>iCc<3>s_`ue_vk\
+  _xpZ<2>zzW<2>zyUyvTxrTwmSuhRtbQrXPoRPmKOjFN<2>a2LZ0KW0JT0JQ2IN4HK8HHDGEI\
+  F<3>5fD3lC2pB1uB0xA0zA0z90z8<2>2r7<4>BQ5DK4GE4J93M53P23S02V02Y02a21<2>iD\
+  1lJ0<2>sa0ug0wl0xq0yu0zx0zz0zz0 cyclerange=8/255
+  }
+
+in_focus_2         { ; Zoom of Alex Dukay's "2645" by Les St Clair t=01m57s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-31.26355/-17.55605/18.9017/0.6250363/-17.55605/0.6250363
+  params=2.0090998/0/1.0090998/0 float=y maxiter=3200 logmap=yes
+  potential=100/100/3200
+  colors=WWWzz0<3>DK4<9>2t70x80z80z90zA0xA1uB2pB3lC<3>COEEIFHDGK8HN4HQ2IT0\
+  JW0JZ0Ka2Ld6M<2>mKOoRPrXPtbQuhRwmSxrTyvTzyU<2>zzWzwXytYxpZvk_ue_<3>lIbiC\
+  cf8dc4e`1fY0fV0gR1hO3hL6iIAjFGkDLk<2>6cm4in3nn2so1vp0yp0zq0zq0yr0wr1ts2o\
+  s<3>ATuCNvFHvICwK7wO3wR1xU0xX0x_1xb3ye7yhBy<2>pSzrYztdzvizwozyszzwzzyzzz\
+  zzzzzyzzwzyszwozviztdz<2>mMzkGyhBye7yb3y_1xX0xU0xR1xO3wK7wICwFHv<4>4jt2o\
+  s1ts0wr0yr0zq0zq0yp1vp2so3nn4in6cm8YmARlDLkGFjIAjL6iO3hR1hV0gY0f`1f<2>iC\
+  c<3>s_`ue_vk_xpZ<2>zzW<2>zyUyvTxrTwmSuhRtbQrXPoRPmKOjFN<2>a2LZ0KW0JT0JQ2\
+  IN4HK8HHDGEIF<3>5fD3lC2pB1uB0xA0zA0z90z8<2>2r7<4>BQ5DK4GE4J93M53P23S02V0\
+  2Y02a21<2>iD1lJ0<2>sa0ug0wl0xq0yu0zx0zz0zz0qV0oP0lJ0iD1g91d51a21Y02V02S0\
+  2P23M53J93GE4 cyclerange=8/255
+  }
+
+ad2xtr01           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m26s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-2.36057/2.367421/3.188898/-3.11509/2.367421/-3.11509
+  params=2.0090998/0/1.0090998/0 float=y maxiter=3200 logmap=yes
+  potential=100/100/3200
+  colors=QXb<6>Wgp0_k<14>02H00F000<23>h00<22>000FFF<10>PW`Xir<2>_nx`oz_mx<\
+  21>777FFF<23>zo`<22>FFF<24>yUF<22>FFF<14>`00sss00F<23>0oz<5>0am
+  cyclerange=8/255
+  }
+
+ad2xtr02           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=01m59s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-12.27258/3.3739/10.53329/-10.32869/3.3739/-10.32869
+  params=2.0090998/0/1.0090998/0 float=y maxiter=3200 logmap=yes
+  potential=100/100/3200
+  colors=08B<5>1KS1MV1MW1NX1OY<2>1Uf<12>067045022000100<22>l00q50<10>zg0<1\
+  1>W00BGJ<22>111000000000<52>f00000<94>000000022 cyclerange=8/255
+  }
+
+ad2xtr03           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m03s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-33.78058232/-33.74536314/0.5182966046/0.4753741216/-33.74730062\
+  /0.4739210114 params=2.0090998/0/1.0090998/0 float=y maxiter=3200
+  logmap=yes potential=100/100/3200
+  colors=000<9>000YHYXHW<6>QobQsbOnZ<7>FB5<10>zlH<9>KH8<6>pu9<11>IG8K45<18\
+  >sQj<2>oOdmObkN`iMZhLX<13>KA5000<143>000 cyclerange=8/255
+  }
+
+ad2xtr04           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m03s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-14.71711/-6.398266/-1.226058/1.296627/-12.93322/-3.604585
+  params=2.0090998/0/1.0090998/0 float=y maxiter=3200 logmap=yes
+  potential=100/100/3200
+  colors=000zzzYXc<4>Fkq6dm<7>9IR<16>5u0<9>5B0<8>zz0<14>bE2`A3aA3<19>u8Bw7\
+  Cw8Cv8Dv9E<11>yBjzCmzCmzCmBnt7qw<20>P4VQ1TS4U<9>r_f<8>Uq1Xq2_q4<8>40B<6>\
+  50H00E<2>A8TEHaIQj3Yqbe_FYI0L0<3>yrB<4>z00<6>Gk0<2>ns1zz0<4>z66<7>Y0L<4>\
+  zAz<9>6IJ<7>zzP<7>B8S<6>5rz<3>6go cyclerange=8/255
+  }
+
+ad2xtr05           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m47s
+                     ; t=time using 486-DX2-66 and video SF5 (640x480 256c)
+  reset=1920 type=formula formulafile=newforms.frm formulaname=t6
+  function=exp/log/asin passes=1
+  corners=-33.65824303/-33.78127879/0.48778869/0.4036392546/-33.66214417/0\
+  .4929902198 params=2.0090998/0/1.0090998/0 float=y maxiter=3200
+  logmap=yes potential=100/100/3200
+  colors=WWW0NJ<4>1HB1G91F82E7<2>2B33A2392391<4>650640730730820821<3>A04B0\
+  5C07<2>D0BE0CF0EG0G<7>L0VM0WN1YO1_O2aP2c<3>S5kT5lU6nV7oV8q<4>ZCw_Dx`ExaF\
+  y<7>gOzgPzhQy<3>kVvlWulXs<2>n`ooanoblpcj<7>tlWumVunTuoR<5>xsFxtExuCyuByv\
+  9<2>zw5<17>z0w<5>y3ox3nx4lx5j<12>rGNrHLqIJpJH<7>lT5kU4jV3iW2iX2hZ1<7>bg0\
+  ah0ai1<3>Ym4Yn5Xo7<2>VqBUrCTsESsG<6>NwTMxVLxWKxY<5>GyiFzkFyl<5>BxuAxvAxw\
+  9wx9wx8vy<5>5sz5rz4qz4pz3oy<3>2lv2ku2js<2>1go1fn0el0cj<13>0OL
+  cyclerange=8/255
+  }
+
+DNA-Mandel-Newton  { ; Modified Sylvie Gallet formula (C)opyright B.Jones 1996
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=bj-sg-manewt-014 function=cosh/log
+  center-mag=-3.75469/2.22045e-016/0.8912656 params=25/0 float=y
+  symmetry=none periodicity=0
+  colors=000<11>000ztq<10>zkdzjcyha<10>nPF000000000800<9>c00<5>zjc<5>7`F<6\
+  >93F00000093F<8>SBh<6>Fw`<6>SBh<8>008000000000008<10>7F`<5>`00<6>oo0<8>7\
+  `F<10>93F000000000077<10>Zc0<6>zym<12>nPF000<65>000
+  }
+
+ee075              { ; Left Profile
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77399519472774680/+0.02057768376306867/9.185045e+011
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=384 symmetry=xaxis  
+  colors=000zzz1MZ1RZ1WZ<9>zo_<8>WcD<4>0K0<2>OY3Vb3bh2<2>zz0<3>zm9z`AzNCz0\
+  CzcC<18>z5Az39z39<39>aEc<3>AVy<3>OKdRH_UH_<3>fEb<16>_Ut<2>WTlUSiUSg<14>H\
+  Y2<6>NXJA0KD2P<6>XXv<3>vm4<3>od7<3>kH6nA5KCNWOcj_hzh0rT0Y00c24jANo6Cv8Hm\
+  6K<3>ZMX<3>L5LO7TR9`<2>e_iolqzzzzsoyldajs<4>EXy```QUf3YXZZRbdKkjEtp7<2>O\
+  a4GX3DS20N0<9>E_Kw00<2>pIAmOEjUHg_LYNOOAR1BU1CW1DZ1HZ
+  cyclerange=2/255
+  }
+
+ee089              { ; Connections
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77399519472069530/+0.02057768376134166/1.881989e+012/1/-90
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=384 symmetry=xaxis
+  colors=000zzz1MZ1RZ1WZ<9>zo_<8>WcD<4>0K0<2>OY3Vb3bh2<2>zz0<3>zm9z`AzNCz0\
+  CzcC<18>z5Az39z39<39>aEc<3>AVy<3>OKdRH_UH_<3>fEb<16>_Ut<2>WTlUSiUSg<14>H\
+  Y2<6>NXJA0KD2P<6>XXv<3>vm4<3>od7<3>kH6nA5KCNWOcj_hzh0rT0Y00<3>v8H<2>W2S<\
+  5>zy0N0YnlG<3>0ifoqp<7>EXy```QUf3YXZZRbdKkjEtp7<2>Oa4GX3DS20N0<9>E_Kw00<\
+  2>pIAmOEjUHg_LYNOOAR1BU1CW1DZ1HZ cyclerange=2/255
+  }
+
+6ee092             { ; Creatures of the Hydra World
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; 3 hrs 20 min @ 1600x1200 on a Pentium 166Mh
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77906464536804860/+0.02303501720348285/1.377113e+007
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=256 symmetry=xaxis
+  colors=0000eVlE7<2>z84j63<16>Gg9z00z00IMZKHdLJjNHpPFv<5>dH_gHWkLP<2>zZ2<\
+  2>zK5<14>z_4z`3x_4<13>X8Wzc2<5>z00WCY__G0XJUOPwEV<9>vBavBbuAcuAdw9ex9ez8\
+  dhEBR70zP0Z0Tz00zq0zl0sg0ah0<2>0K0<3>4_S5`Z6bf<4>EHdtDa79Z45W00T<11>_6dY\
+  6a<9>EFaBGaBHb<10>APi9Qj9Ri<6>7_b7`a9``<5>O`QR`PV`N<6>ze0<5>z`0<2>P60<7>\
+  z20<2>Z55<2>Q8IV9cKBRxCYaJ5lYCzi0<3>pADm00oBP<2>uhl<5>WclRblOb`<2>F`0<3>\
+  CXDBVHDTGGRF<3>smBwJAb00gG8 cyclerange=2/255
+  }
+
+mafn018            { ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=recip/exp
+  center-mag=-0.12803083570367140/+0.36833408215169820/4890.105
+  params=0/0.4995/2 float=y maxiter=1023 inside=0 logmap=103 passes=1
+  colors=000wI2<4>zz8zz0<3>cESY1ZU0c<8>0mw<8>0z0<4>ZV0eP0lI0sB0z40<5>e2Xa1\
+  aY1gU0mX7o<3>kZwnehw0h<3>zs8<3>zeQzw0<2>sVd<7>0cm<7>V5`Z0Z`0W<6>o64r70rB\
+  2<7>zmK<8>c8c<7>N8kK9mKDh<7>Jm0<8>zc0<8>zA0<8>0cz<4>h0c<2>zz0<3>xL0<2>c0\
+  c<4>9J`<3>dFP<4>ziy<5>4wY<3>`0l<4>voZ<2>sTYqLXpDXn5WnAW<8>izc<4>zz0<5>0U\
+  0<10>M3WP0ZP0_<7>U0mm00<2>t00w00w91
+  }
+
+LF14_06            { ; "Solar Prominence"     Les St Clair 1996   t=09m00s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm14
+  function=abs/sqr passes=1
+  corners=-0.0434556784/-0.549875688/0.667077482/0.213172832/-0.0078926497\
+  1/0.61966011 params=0.1/0.2/0.3/0.4 float=y maxiter=300 inside=0
+  outside=atan
+  colors=100<2>210220210330320440420540530650530760640870740980850A80850B9\
+  0960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH0GA0LH0GA0MI0HB0NJ\
+  0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ0OF0XR0PG0YS0QG0ZT\
+  0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_0XL0h`0YM0ia0ZM0jb\
+  0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0soBjU0tqDkV0urEmW0vt\
+  FnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0usLkW0tqLjV0spLiU0rn\
+  LhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ibKYM0haKXL0g`KXL0f_\
+  KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZTLQH0YSLPH0XSLOG0WR\
+  MOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJOHC0MJPHB0LIPGB0KH\
+  PFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BAS960A9S86098T75087\
+  T75076T64065U54055U43044U43033V32022V22011V11000W000
+  cyclerange=0/255
+  }
+
+LF14_15            { ; "Kryptonite Caverns"   Les St Clair 1996   t=26m47s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm14
+  function=sin/exp passes=1
+  corners=1.01550464/0.992696476/-0.0236399937/0.0067708874/0.992696476/0.\
+  0067708874 params=-2/0/-2/0 float=y inside=bof61 outside=summ
+  colors=000xxx<2>zzz07B<94>0du<6>zz0<24>000<15>zz0<22>000<2>1112223334444\
+  44<76>www
+  }
+
+ee108              { ; Fancy Spiral
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; 3 hrs 19 min @ 1600x1200 on a Pentium 166Mh
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77904812620967230/+0.02301428936548295/3.47486e+008/1/-90
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=192 symmetry=xaxis
+  colors=000zzz<38>PFvRFs<43>X8Wzc2<5>z00<8>x9RwAUwBXvC_vC`<3>uAcuAdw9ex9e\
+  z8d<5>zq0<10>5`Z6bf<4>EHd<3>00T<11>_6dY6a<9>EFaBGaBHb<10>APi9Qj9Ri<6>7_b\
+  7`a9``<5>O`QR`PV`N<6>ze0<5>z`0<2>P60<7>z20<2>Z55<4>KBRMCY<2>zi0<3>pADm00\
+  oBP<2>uhl<5>WclRblOb`<2>F`0<2>DYAzyz cyclerange=2/255
+  }
+
+sunset4_cr2        { ; From Carr's 30000 feet
+  reset=1900 type=formula formulafile=fractint.frm
+  formulaname=carr2289 center-mag=-0.221314/0.0963268/24.33602/1.2323
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=000B0J<11>50A000<29>0FN0GO0HP0IP0IQ<18>1Te1Ue1Uf2Uf<28>Vid0OdXjd<\
+  27>xyb<7>1Uf<11>18BHA8MF0<3>cW4wm5zz6qi7zzMC00<24>z00sKS<6>zA0<15>zz0<11\
+  >xD2s92<7>X3SU2WR1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<6>C0K
+  }
+
+6ee092             { ; Creatures of the Hydra World
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; 3 hrs 20 min @ 1600x1200 on a Pentium 166Mh
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77906464536804860/+0.02303501720348285/1.377113e+007
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=256 symmetry=xaxis
+  colors=0000eVlE7<2>z84j63<16>Gg9z00z00IMZKHdLJjNHpPFv<5>dH_gHWkLP<2>zZ2<\
+  2>zK5<14>z_4z`3x_4<13>X8Wzc2<5>z00WCY__G0XJUOPwEV<9>vBavBbuAcuAdw9ex9ez8\
+  dhEBR70zP0Z0Tz00zq0zl0sg0ah0<2>0K0<3>4_S5`Z6bf<4>EHdtDa79Z45W00T<11>_6dY\
+  6a<9>EFaBGaBHb<10>APi9Qj9Ri<6>7_b7`a9``<5>O`QR`PV`N<6>ze0<5>z`0<2>P60<7>\
+  z20<2>Z55<2>Q8IV9cKBRxCYaJ5lYCzi0<3>pADm00oBP<2>uhl<5>WclRblOb`<2>F`0<3>\
+  CXDBVHDTGGRF<3>smBwJAb00gG8 cyclerange=2/255
+  }
+
+mafn018            { ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=recip/exp
+  center-mag=-0.12803083570367140/+0.36833408215169820/4890.105
+  params=0/0.4995/2 float=y maxiter=1023 inside=0 logmap=103 passes=1
+  colors=000wI2<4>zz8zz0<3>cESY1ZU0c<8>0mw<8>0z0<4>ZV0eP0lI0sB0z40<5>e2Xa1\
+  aY1gU0mX7o<3>kZwnehw0h<3>zs8<3>zeQzw0<2>sVd<7>0cm<7>V5`Z0Z`0W<6>o64r70rB\
+  2<7>zmK<8>c8c<7>N8kK9mKDh<7>Jm0<8>zc0<8>zA0<8>0cz<4>h0c<2>zz0<3>xL0<2>c0\
+  c<4>9J`<3>dFP<4>ziy<5>4wY<3>`0l<4>voZ<2>sTYqLXpDXn5WnAW<8>izc<4>zz0<5>0U\
+  0<10>M3WP0ZP0_<7>U0mm00<2>t00w00w91
+  }
+
+ee110              { ; Sea_Caves
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; 1 hr 30 min @ 1600x1200 on a Pentium 166Mh in DOS
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77415750545692270/+0.02262807410057662/1.977835e+008
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=yes symmetry=xaxis
+  colors=000zzzz00IMZKHdLJjNHpPFv<5>dH_gHWkLP<2>zZ2<2>zK5<14>z_4z`3x_4<13>\
+  X8Wzc2<5>z00WCY0SG0XJUOPwEV<9>vBavBbuAcuAdw9ex9ez8dhEBR70zP0Z0Tz00zq0zl0\
+  sg0ah0<2>0K0<3>4_S5`Z6bf<4>EHdtDa79Z45W00T<11>_6dY6a<9>EFaBGaBHb<10>APi9\
+  Qj9Ri<6>7_b7`a9``<5>O`QR`PV`N<6>ze0<5>z`0<2>P60<7>z20<2>Z55<4>KBRMCY<2>z\
+  i0<3>pADm00oBP<2>uhl<5>WclRblOb`<2>F`0<3>CXDBVHDTG<12>j63<16>Gg9z00
+  cyclerange=2/255
+  }
+
+ee124              { ; Mating Green Lizards, Early Evening,
+                     ;  Great Sand Dunes National Monument -
+                     ; (Sangre de Cristo Mountains in background)
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; 1 hr 15 min @ 1600x1200 on a Pentium 166Mh in DOS
+  reset=1720 type=manzpower passes=1
+  center-mag=-0.77415750486484520/+0.02262807766887909/1.337098e+010
+  params=0/0/15.15426224147926/0 float=y maxiter=1023 bailout=100
+  inside=0 logmap=yes symmetry=xaxis
+  colors=000zzzz00IMZKHdLJjNHpPFv<5>dH_gHWkLP<2>zZ2<2>zK5<14>z_4z`3x_4<13>\
+  X8Wzc2<5>z00WCY0SG0XJUOPwEV<9>vBavBbuAcuAdw9ex9ez8dhEBR70zP0Z0Tz00zq0zl0\
+  sg0ah0<2>0K0<3>4_S5`Z6bf<4>EHdtDa79Z45W00T<11>_6dY6a<9>EFaBGaBHb<10>APi9\
+  Qj9Ri<6>7_b7`a9``<5>O`QR`PV`N<6>ze0<5>z`0<2>P60<7>z20<2>Z55<4>KBRMCY<2>z\
+  i0<3>pADm00oBP<2>uhl<5>WclRblOb`<2>F`0<3>CXDBVHDTG<12>j63<16>Gg9z00
+  cyclerange=2/255
+  }
+
+X1_sunset7         {
+  reset=1930 type=formula formulafile=carr1.frm formulaname=carr2330
+  center-mag=-0.372562/0.200786/5.312116/1.3756/-165.708/-3.371
+  params=100/150/200/250 float=y maxiter=300 periodicity=0
+  colors=0AA0CC1EE4HH9JJFLLOOO<2>EJJBIIAHH7EE5DD4BB2AA2AA188<2>05504404404\
+  4<43>0000A01A01B0<4>4F05F06H07I08J1AJ1AK1CL2EL2FN2IO3JP3LP4OR4PS5SU5UU7X\
+  V7`X8aX9eZAg`AkaBoaCqcDmaBgZAaV8XU7SR5OO4SP4ZR5cS5kV7qX7z`9z`8z`7xZ7sV7o\
+  U7kR7iP6eN6aL5ZJ5XI5UF5<2>LA4NA3<2>VD2XE2`F1cH1gI1iJ0<3>zO0kN0ZL0OK0FJ09\
+  I04H07H0CH0JH0SH0aH0oI0mH0kH0iF0gF0c0A<5>K0UPJLVNCaR6iV2q`0ze0xa0sZ0qU1m\
+  R2kO4gK7iN5iP4kS2mV1<2>se0vi0vg0se0sc0q`0qZ1oX1mU2mS2kR3kO5iN6iL7gJ9eIAe\
+  HDcEFcDIaCKeFDiK7mO4qU1vZ0ze0z`0xU0vP0<2>oB2qK1sV0vi0zz0zz0<4>oo0ee0XX0P\
+  P1JJ1DD2994LLL<3>IIIHHHFFF<4>BAAAAAA99999888777777<5>4330DA0CA0BA
+  }
+
+X1_sunset9        {
+  reset=1930 type=formula formulafile=carr1.frm formulaname=carr2330
+  passes=1
+  center-mag=-0.34269/0.255988/21.82773/0.9545/-172.619/-0.072
+  params=100/150/200/250 float=y maxiter=200 periodicity=0
+  colors=00009E<11>0FN0GO0HP0IP0IQ<18>1Te1Ue1Uf2Uf<58>xyb<7>1Uf<14>1230000\
+  00<12>Q00S00S30<7>KU0<6>kNL<2>OVM<5>VUD<2>zK0<12>zz0<11>xD2s92<7>X3SU2WR\
+  1ZO0bN0`L0ZK0W<7>G0RG0QG0QG0PF0P<19>50A000<16>09D
+  }
+
+BigRoom            { ; Caverns of Lanakila
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo_2
+  function=sqrt passes=1 center-mag=-0.627604/-0.936209/10.04167
+  params=0/0 float=y maxiter=1024 inside=zmag outside=summ
+  finattract=y periodicity=0
+  colors=000000000<5>___oie<14>V88T55U55<13>uDBwECwGC<12>yk2ym1zp0zs0zw0zz\
+  0<10>xH2<15>000<7>000<3>D08H0AJ09<8>d00<25>F7JD8KA9J<2>0BG<29>1Sc1Sd1Te1\
+  Ue1Uf2Uf<53>svbtwbuwd<2>zzm<6>fZgcUf_Rb<8>000000zaF
+  }
+
+LF16_06            { ; "Saturn Rising"        Les St Clair 1996   t=12m18s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=cotanh/cosxx passes=1
+  corners=0.627921678/0.839381961/-0.811087195/-0.541693505/0.574738409/-0\
+  .740176169 params=1/1/1/0.08 float=y inside=bof61 outside=atan
+  colors=74EKAd<7>52B<9>KJbMSd<9>`hz<15>77MKBh<9>k9Wm8Up8Tr8Ru8Qx7Px4R<10>\
+  WEtUFwRIs<10>2wB0z70wC<5>5da5`f6Yj6Vo7Ss7Px<7>4CU3BR39N27K27K<3>27KWYNWY\
+  NknY27K27K27KWYN<2>acRdfTgjVknY000000000<14>e00<14>M00000<13>3AS3BU5BX<9\
+  >UFw<15>5BW3BV3AS<10>012000112<19>DGhENj<9>UFw<3>MBh
+  }
+
+LF16_07            { ; "Golden Cascade"       Les St Clair 1996   t=19m03s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=tanh/abs passes=1
+  corners=-1.4193653/0.55649072/-0.21652994/1.8926935/-1.7204844/0.1849622\
+  1 params=-0.5/1/1/1.1 float=y inside=bof61 outside=atan
+  periodicity=0
+  colors=000579<2>8DGAFIBHKDKNDJM<12>F22G00E00<7>100000000<14>zzz<15>00000\
+  0<30>zo`<44>432221110000000000<77>000111123<11>CIMDKNCJM<14>000
+  }
+
+Carr2381-F        { ; GOD OF FRACTALS
+                    ; From a modified Sylvie Gallet frm.
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Carr2381
+  corners=1.433003/-1.430725/1.073915/-1.073881
+  params=128/0/1.2/0.1/-0.05/-0.06 float=y maxiter=2304 periodicity=0
+  colors=000<4>000UUU___oie<12>YDDWBAV88T55U55<13>uDBwECwGC<12>yk2ym1zp0zs\
+  0zw0zz0<10>xH2<15>000<7>000<3>D08H0AJ09<8>d00<23>H6IG7IF7JD8KA9J<2>0BG<3\
+  1>1Te1Ue1Uf2Uf<53>svbtwbuwd<2>zzm<6>fZgcUf_Rb<8>000000zaF000
+  }
+
+sgmoo02            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 8 min 25 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 center-mag=1.10441/1.24248/19.516 params=0/0
+  float=y maxiter=511 inside=0 outside=summ periodicity=0
+  colors=000777<13>zzz<15>000<15>zn0<15>000<15>zzz<15>004<14>I0qK0uJ0r<12>\
+  308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000333
+  }
+
+sgmoo04            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 55 min 25 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 periodicity=0
+  center-mag=+0.97480553128526660/+0.88827126994974900/733.023
+  params=0/0 float=y maxiter=511 inside=0
+  colors=000C00<11>_00yA0<15>xEBwFCxD8yC4zA0<15>zz0<6>yY1yU1xQ1wM1<3>s52<5\
+  >b1N_0RW0VS0ZO0b<14>203000000<10>553000<7>000001001012013<47>1Te1Ue1Uf2U\
+  f<58>xyb<7>1Uf<15>123000200<3>A00
+  }
+
+sgmoo07            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 18 min 36 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 center-mag=0.390349/1.38901/27.7216
+  params=0/0 float=y maxiter=511 inside=0 logmap=5 periodicity=0
+  colors=000AAAAAA<15>zm0<15>999<15>z`0<15>888<14>1Z10`00_0<14>777<15>0e0<\
+  15>484<15>0`0<14>373444444<91>000
+  }
+
+sgmoo08            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 15 min 51 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 periodicity=0
+  center-mag=-0.59299821306580270/+0.82826162319235610/42.24564
+  params=0/0 float=y maxiter=511 inside=0 logmap=2
+  colors=000X57<9>wh1zm0zl0<7>vY0uW0sV0<13>NC9KAAKBA<19>1X10Z00Z1<29>68a77\
+  c77c<98>000000100<60>NK8
+  }
+LF16_06            { ; "Saturn Rising"        Les St Clair 1996   t=12m18s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=cotanh/cosxx passes=1
+  corners=0.627921678/0.839381961/-0.811087195/-0.541693505/0.574738409/-0\
+  .740176169 params=1/1/1/0.08 float=y inside=bof61 outside=atan
+  colors=74EKAd<7>52B<9>KJbMSd<9>`hz<15>77MKBh<9>k9Wm8Up8Tr8Ru8Qx7Px4R<10>\
+  WEtUFwRIs<10>2wB0z70wC<5>5da5`f6Yj6Vo7Ss7Px<7>4CU3BR39N27K27K<3>27KWYNWY\
+  NknY27K27K27KWYN<2>acRdfTgjVknY000000000<14>e00<14>M00000<13>3AS3BU5BX<9\
+  >UFw<15>5BW3BV3AS<10>012000112<19>DGhENj<9>UFw<3>MBh
+  }
+
+LF16_07            { ; "Golden Cascade"       Les St Clair 1996   t=19m03s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=tanh/abs passes=1
+  corners=-1.4193653/0.55649072/-0.21652994/1.8926935/-1.7204844/0.1849622\
+  1 params=-0.5/1/1/1.1 float=y inside=bof61 outside=atan
+  periodicity=0
+  colors=000579<2>8DGAFIBHKDKNDJM<12>F22G00E00<7>100000000<14>zzz<15>00000\
+  0<30>zo`<44>432221110000000000<77>000111123<11>CIMDKNCJM<14>000
+  }
+
+Carr2381-F        { ; From a modified Sylvie Gallet frm.
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Carr2381
+  corners=1.433003/-1.430725/1.073915/-1.073881
+  params=128/0/1.2/0.1/-0.05/-0.06 float=y maxiter=2304 periodicity=0
+  colors=000<4>000UUU___oie<12>YDDWBAV88T55U55<13>uDBwECwGC<12>yk2ym1zp0zs\
+  0zw0zz0<10>xH2<15>000<7>000<3>D08H0AJ09<8>d00<23>H6IG7IF7JD8KA9J<2>0BG<3\
+  1>1Te1Ue1Uf2Uf<53>svbtwbuwd<2>zzm<6>fZgcUf_Rb<8>000000zaF000
+  }
+
+sgmoo02            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 8 min 25 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 center-mag=1.10441/1.24248/19.516 params=0/0
+  float=y maxiter=511 inside=0 outside=summ periodicity=0
+  colors=000777<13>zzz<15>000<15>zn0<15>000<15>zzz<15>004<14>I0qK0uJ0r<12>\
+  308204333<14>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000333
+  }
+
+sgmoo04            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 55 min 25 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 periodicity=0
+  center-mag=+0.97480553128526660/+0.88827126994974900/733.023
+  params=0/0 float=y maxiter=511 inside=0
+  colors=000C00<11>_00yA0<15>xEBwFCxD8yC4zA0<15>zz0<6>yY1yU1xQ1wM1<3>s52<5\
+  >b1N_0RW0VS0ZO0b<14>203000000<10>553000<7>000001001012013<47>1Te1Ue1Uf2U\
+  f<58>xyb<7>1Uf<15>123000200<3>A00
+  }
+
+sgmoo07            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 18 min 36 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 center-mag=0.390349/1.38901/27.7216
+  params=0/0 float=y maxiter=511 inside=0 logmap=5 periodicity=0
+  colors=000AAAAAA<15>zm0<15>999<15>z`0<15>888<14>1Z10`00_0<14>777<15>0e0<\
+  15>484<15>0`0<14>373444444<91>000
+  }
+
+sgmoo08            { ; Copyright Sylvie Gallet [101324,3444], 1996
+                     ; Formula by Vincent Damion Presogna
+                     ; 15 min 51 at 1600x1200 on a P166
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
+  function=ident passes=1 periodicity=0
+  center-mag=-0.59299821306580270/+0.82826162319235610/42.24564
+  params=0/0 float=y maxiter=511 inside=0 logmap=2
+  colors=000X57<9>wh1zm0zl0<7>vY0uW0sV0<13>NC9KAAKBA<19>1X10Z00Z1<29>68a77\
+  c77c<98>000000100<60>NK8
+  }
+
+sgmi022            { ; Threatening Eye In the Sky
+                     ; Par and Image copyright 1996 by Lee H. Skinner
+                     ; Formula by Damion, Inspired by Sylvie's sgmoo04
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  function=ident passes=1
+  center-mag=-0.36577249783925740/+1.21228394478776700/654.8797
+  params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
+  colors=000zf0j_0B6l<2>L5gP4eS4b<5>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<4>l\
+  ElpHpqKp<8>zlp<4>zbgz_ez_d<13>ylFiLbiMdiNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O\
+  9ZO9YO<21>E2Ha20xmD<8>YeM<4>GZA<9>7V37V38V3<32>chAdhAdh9<6>gi6hj5g54<8>T\
+  B1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R37R4<2>JOANMCRLE\
+  VJGYJK<2>hIWhJYhK_
+  }
+
+sgmi031            { ; At a Loss for a Good Description
+                     ; Par and Image copyright 1996 by Lee H. Skinner
+                     ; Formula by Damion, Inspired by Sylvie's sgmoo04
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  function=ident passes=1
+  center-mag=-0.36491035731312750/+1.21132084292850700/36802.51
+  params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
+  colors=000zf0j_0B6l<2>L5gP4eS4b<5>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<4>l\
+  ElpHpqKp<8>zlp<4>zbgz_ez_d<13>ylFiLbiMdiNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O\
+  9ZO9YO9WO<11>BFFBEECCDDBC<6>O20xmD<8>YeM<4>GZA<9>7V37V38V3<32>chAdhAdh9<\
+  6>gi6hj5g54<8>TB1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R3\
+  7R4<2>JOANMCRLEVJGYJK<2>hIWhJYhK_
+  }
+
+LF16_04            { ; "Mandelbrot Jewel"     Les St Clair 1996   t=02m15s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=lesfrm16
+  function=asinh/cosh passes=1
+  corners=-0.374923303/0.465543283/-0.2639087/0.16192926/-0.276757555/-0.3\
+  9479637 params=0.33/-0.5/0.22/0.005 float=y inside=bof61
+  outside=atan
+  colors=06M<4>18P19Q19R1AS1AT2BT<8>6G_6H`7Ia7Jb8Kc<4>ANfANgBOhCPi<3>FSlFS\
+  lGTmGUmHVn<3>LZqLZqM_rM`rNas<3>QduQdvRevSfv<2>VhvWhwXiwYixZjx<13>grzhszh\
+  sy<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<4>vzuvzuuyt<63>000000100<17>F50F5\
+  0G50G60H60<5>K70L80L80M91L91<6>G50F40E40E40<2>D32C22C22B12A12<13>3072072\
+  08209<11>03F03G03H03I03J<3>05L
+  }
+
+ckp1458            { ; "Perspective in Wonderland"
+                     ; 00:01:58.64 .. 22 may 1996 .. caren park
+                     ; derived and recolored from KG13:1375
+                     ;  Version 1930 Patchlevel 4
+  reset=1920 type=formula formulafile=_num.frm formulaname=1306
+  function=acos/acos/cos center-mag=0/0/18.45631 params=1.8/0 float=y
+  inside=maxiter potential=222/333/3
+  colors=cozDQj<4>GUmHVnIWnJXoKYp<8>PctQduReuSfvTgv<4>XixYjxZkx_ly_ly<2>an\
+  ybozdpz<2>eqzfrzgrzhszhsz<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<8>xzsxzsxz\
+  rxzrxzq<13>zwhzwhzwgzvfzvfzue<4>ysays`yr_yq_<10>tlSskRsjQsiPshO<3>qfMqeL\
+  pdKpcJobI<3>m_GmZGlYFkYE<2>hVBhUBgUAgTAfS9<16>TF1SE1SE1RD1QC1<13>G50F40E\
+  40E40<2>D32C22C22B12A12<14>307207208209<11>03F03G03H03I03J<3>05L06M06N17\
+  O17P<7>2CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<2>CPi
+  }
+
+LF16_06            { ; "Saturn Rising"        Les St Clair 1996   t=12m18s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=cotanh/cosxx passes=1
+  corners=0.627921678/0.839381961/-0.811087195/-0.541693505/0.574738409/-0\
+  .740176169 params=1/1/1/0.08 float=y inside=bof61 outside=atan
+  colors=74EKAd<7>52B<9>KJbMSd<9>`hz<15>77MKBh<9>k9Wm8Up8Tr8Ru8Qx7Px4R<10>\
+  WEtUFwRIs<10>2wB0z70wC<5>5da5`f6Yj6Vo7Ss7Px<7>4CU3BR39N27K27K<3>27KWYNWY\
+  NknY27K27K27KWYN<2>acRdfTgjVknY000000000<14>e00<14>M00000<13>3AS3BU5BX<9\
+  >UFw<15>5BW3BV3AS<10>012000112<19>DGhENj<9>UFw<3>MBh
+  }
+
+LF16_07            { ; "Golden Cascade"       Les St Clair 1996   t=19m03s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
+  function=tanh/abs passes=1
+  corners=-1.4193653/0.55649072/-0.21652994/1.8926935/-1.7204844/0.1849622\
+  1 params=-0.5/1/1/1.1 float=y inside=bof61 outside=atan
+  periodicity=0
+  colors=000579<2>8DGAFIBHKDKNDJM<12>F22G00E00<7>100000000<14>zzz<15>00000\
+  0<30>zo`<44>432221110000000000<77>000111123<11>CIMDKNCJM<14>000
+  }
+
+sgmi022            { ; Threatening Eye In the Sky
+                     ; Par and Image copyright 1996 by Lee H. Skinner
+                     ; Formula by Damion, Inspired by Sylvie's sgmoo04
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  function=ident passes=1
+  center-mag=-0.36577249783925740/+1.21228394478776700/654.8797
+  params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
+  colors=000zf0j_0B6l<2>L5gP4eS4b<5>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<4>l\
+  ElpHpqKp<8>zlp<4>zbgz_ez_d<13>ylFiLbiMdiNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O\
+  9ZO9YO<21>E2Ha20xmD<8>YeM<4>GZA<9>7V37V38V3<32>chAdhAdh9<6>gi6hj5g54<8>T\
+  B1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R37R4<2>JOANMCRLE\
+  VJGYJK<2>hIWhJYhK_
+  }
+
+sgmi031            { ; At a Loss for a Good Description
+                     ; Par and Image copyright 1996 by Lee H. Skinner
+                     ; Formula by Damion, Inspired by Sylvie's sgmoo04
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  function=ident passes=1
+  center-mag=-0.36491035731312750/+1.21132084292850700/36802.51
+  params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
+  colors=000zf0j_0B6l<2>L5gP4eS4b<5>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<4>l\
+  ElpHpqKp<8>zlp<4>zbgz_ez_d<13>ylFiLbiMdiNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O\
+  9ZO9YO9WO<11>BFFBEECCDDBC<6>O20xmD<8>YeM<4>GZA<9>7V37V38V3<32>chAdhAdh9<\
+  6>gi6hj5g54<8>TB1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R3\
+  7R4<2>JOANMCRLEVJGYJK<2>hIWhJYhK_
+  }
+
+LF16_04            { ; "Mandelbrot Jewel"     Les St Clair 1996   t=02m15s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=lesfrm16
+  function=asinh/cosh passes=1
+  corners=-0.374923303/0.465543283/-0.2639087/0.16192926/-0.276757555/-0.3\
+  9479637 params=0.33/-0.5/0.22/0.005 float=y inside=bof61
+  outside=atan
+  colors=06M<4>18P19Q19R1AS1AT2BT<8>6G_6H`7Ia7Jb8Kc<4>ANfANgBOhCPi<3>FSlFS\
+  lGTmGUmHVn<3>LZqLZqM_rM`rNas<3>QduQdvRevSfv<2>VhvWhwXiwYixZjx<13>grzhszh\
+  sy<5>mvymwynwynxyoxy<4>qyyryxryxsywsyw<4>vzuvzuuyt<63>000000100<17>F50F5\
+  0G50G60H60<5>K70L80L80M91L91<6>G50F40E40E40<2>D32C22C22B12A12<13>3072072\
+  08209<11>03F03G03H03I03J<3>05L
+  }
+
+Lister_zoom_01     { ; "Underwater Volcano"                       t=26m36s
+                     ; Zoom of Vincent Damien Presogna's "2_Dragons"
+                     ; by Les St Clair  101461.2032@compuserve.com  1996
+                     ; t=time using 486DX2-66 and video mode SF5 (640x480)
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  function=ident passes=1 center-mag=1.115/1.05175/5.988652/1/54.999
+  params=0/0 float=y maxiter=500 inside=zmag periodicity=0
+  colors=000<5>UAA<14>N9N<10>zJ9<28>zu2zw1zx1zz0yz0<39>B`09`08_06_05Z03Z02\
+  Y00X0<60>02D02D01D00E00E10F<74>xPz000kkk
+  }
+
+sgmi050            { ; Jack's Beanstalk
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Damion, Inspired by Sylvie's sgmoo04
+                     ; 41.4 minutes @1600x1200 on Pentium 166Mh
+  reset=1930 type=formula formulafile=fractint.frm formulaname=moo
+  function=ident passes=1
+  center-mag=-0.40194858138624490/+1.20710791624452500/1013.922
+  params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
+  colors=000PXG<14>BLf<7>S7`V5_Z6W<3>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<4>\
+  lElpHpqKp<8>zlp<7>zMbk`b_Gb<7>LbiPbjTckegS<2>ziB<11>MZ2JY2HX1<5>0O0<5>DU\
+  1FV2IW2KX3MY3P_4<13>Tc7Tc7Ud8Vd8<7>bg9<10>f95g54e64<7>TB1<4>tV2<3>vc4ve5\
+  wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R37R4<2>JOANMCRLEVJGYJK<2>hIW<4>iN\
+  f<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXF
+  }
+
+Cypress_tree       { ; Grew on a very windy hilltop...
+  reset=1930 type=ifs ifsfile=trees.ifs ifs=cypress
+  center-mag=+0.60921478350000000/+1.18900299200000000/1.488558/0.9996
+  params=0 maxiter=500
+  colors=0000V00z0FkFUWVVGj0F_XDORCCKA0N86R5C<3>KA0<3>W60<7>WW0SW0PW0<5>LE\
+  0KA0ID2<5>0WJ<3>0WW<9>00W<9>W0W<9>W00<9>zWW<9>zzW<9>WzW<9>Wzz<9>WWz<9>zW\
+  z<9>zWW<3>P66000K00<8>z00<19>zz0<19>0z0<19>0zz<19>00z<12>d0z
+  }
+
+Palm_forest        { ; A whole forest in one fractal.
+  reset=1930 type=ifs ifsfile=trees.ifs ifs=forest1
+  center-mag=+0.29216003400000000/+0.34255981500000000/0.4911991/1.412/45
+  params=0 float=y maxiter=2000
+  colors=000FzDEyD<3>0A0<2>4b36l55j4<3>0c0QB0<58>vO0wP0wP0wP0<112>UK0TK0TJ\
+  0SJ0SJ0<57>110KA0UK0
+  }
+
+Tree_real!         { ; Looks very realistic.  Fall colors
+  reset=1930 type=ifs ifsfile=trees.ifs ifs=Tree_Real!
+  center-mag=+1.44921875000000000/+1.74437713800000000/0.6831246/1/45/-0.1\
+  26 params=0 float=y maxiter=1000
+  colors=000xS3i00xW3<3>ya3yb3yd3yf3<6>zr3mU0<2>mU0mU0kT0<13>eQ0<2>zK0<2>c\
+  P0<22>UK0<2>zK0<2>RJ0RJ0<2>zK0<2>OH1OH1NH1<2>zK0<2>LG1<2>zK0<2>IE1<11>DC\
+  1<2>zK0<2>AA1<5>891<2>zK0<2>581<5>371<2>zK0eF0<2>zK0<2>152<12>672<2>zK0<\
+  2>882<2>982<2>zK0<2>B92<16>IB2<2>zK0<2>KC2<3>LD2<2>zK0<2>ND2<12>SF2<2>zK\
+  0<2>UG2<5>WH2<2>zK0<2>YI2<13>cK3wC3<2>wH3xJ3xK3xL3xN3xP3FA1
+  }
+
+BEJ0321            { ; Modified G.Martin & S.Gallet's formulas
+  reset=1930 type=formula formulafile=modmods1.frm
+  formulaname=mans-galore-022 function=cosh/sin/ident
+  center-mag=0.0646028/0.0991602/0.06836534
+  params=25/1.4/5e-005/0/17/17 float=y maxiter=200 outside=atan
+  symmetry=none periodicity=0
+  colors=0006AB<5>BHJ<7>xxx<7>aaa000000B00<13>W00Y00_00a00d00<3>l00q50<10>\
+  zg0<11>W00000<13>TEsVFwVKs<6>ZuTZzPYtT<3>WXiWRnVLrVFwTFw<4>IJwGKwDLwAMw8\
+  Nw5Pw<7>NkePncRqaUtZUrVVpR<5>_b4``0c_2<6>zUF<8>qq0000000000C00<12>Z00`00\
+  `02<26>UEuUFwUHu<19>PoAUj8<4>ww0<8>`00<10>700000<6>69A
+  }
+
+LES_CN_01          { ; ComplexNewton - Les St Clair 101461.2032@compuserve.com
+  reset=1930 type=complexnewton passes=1
+  center-mag=-37.02061620387976000/+5.44558754475936700/1.190476/1/-90
+  params=0.03/-12/-6/1 float=y maxiter=200 inside=bof60 outside=real
+  periodicity=0
+  colors=000TN9RK7OI5000<33>000KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zp\
+  a<4>jdWgaVcZT`WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0Db2D<14>zVF\
+  <14>b2Da0D`0D<4>W0B000000T0A<16>C03B03A03903803<8>000E5M<8>93FOI5<15>zpa\
+  <11>WPC
+  }
+
+LES_CN_02          { ; ComplexNewton - Les St Clair 101461.2032@compuserve.com
+  reset=1930 type=complexnewton passes=1
+  center-mag=+3.35297404388704800/+0.42728435146443630/1.51405
+  params=0.006/-12/-3.4/14 float=y maxiter=300 inside=bof60
+  outside=real periodicity=0
+  colors=000<25>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWga\
+  VcZT`WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0Db2D<14>zVF<14>b2Da0\
+  D`0D<4>W0B000000T0A<9>J06J06H06<5>B03A03903803702<7>000E5M<8>93FOI5<15>z\
+  pa<14>OI5000<4>000
+  }
+
+jowe_cn1           {
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=complexnewton_01 passes=1
+  center-mag=111.437/-25.4237/0.02380952 params=-0.1/-6 float=y
+  maxiter=1000 inside=bof60
+  colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
+  z<15>000<15>zn0<15>000<15>zzz<15>004<14>I0qK0uJ0r<13>204
+  }
+
+jowe_cn2           {
+  reset=1930 type=complexnewton passes=1
+  center-mag=+2.73806820992640400/+1.00890646062045300/11.08577
+  params=0.006/-5.34/-5.5/14 float=y maxiter=300 inside=bof60
+  outside=real periodicity=0
+  colors=000bVH<9>zpa<14>OI5000<30>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNk\
+  cPneR<4>zpa<4>jdWgaVcZT`WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0D\
+  b2D<14>zVF<14>b2Da0D`0D<4>W0B000000T0A<9>J06J06H06<5>B03A03903803702<7>0\
+  00E5M<8>93FOI5<4>_TF
+  }
+
+Mexsq014           { ; 0:19 at 1600x1200 (P166)
+                     ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-0.66330523847021840/-0.02358354400000000/404.8263
+  params=0/0/0.2 float=y maxiter=1023 inside=0
+  colors=000skS<2>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000AA\
+  C<2>J3SM0YN0_<5>W0mY0pZ2n<17>uq8wt5xw3zz0yx1<5>sg7qe9nd9<13>0LL<23>0Xh0Y\
+  i0Zi0_j0`k<6>2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY\
+  <3>t8Wv7Wv9W<23>yubywbxua<4>tmU
+  }
+
+Mexsq022           { ; 0:15
+                     ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-0.94426257264703610/+0.04213881247304677/1809.34
+  params=0/0/0.2 float=y maxiter=1023 inside=0
+  colors=000LLU<13>LKl<9>Lmm<15>LPeLNdLMcLKbLJaLH`LF_<11>Jc7<10>zmP<7>zVAz\
+  S8xQ8<9>Z00<7>V0QU0UV1V<6>a9acBccBc<14>r0Z<11>vm3wr0vp0<14>ZA0<30>2O00P0\
+  1Q0<35>al0cm0cm0<26>IP0LLO<2>LLS
+  }
+
+Mexsq023           { ; 0:17
+                     ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-0.66155003184952870/-0.02551997842814071/1946.28
+  params=0/0/0.2 float=y maxiter=1023 inside=0
+  colors=000cm0<26>IP0LLO<17>LKl<9>Lmm<15>LPeLNdLMcLKbLJa<7>M5T0K0<15>zmP<\
+  12>zYPzXPzWPzUQxUQuTQ<12>QMONLONLO<14>RJOSJOSJOTJOTJO<18>cHScHTdHTeGUfIT\
+  <11>uf8wh7xj5zm3zj5<13>n4jm0mk2j<6>UKP0P0<37>cm0
+  }
+
+Mexsq032           { ; 0:08
+                     ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-0.91863732965217220/+0.05545282414620707/5030.059/-1/180
+  params=0/0/0.2 float=y maxiter=1023 inside=0
+  colors=000Ua0<13>IP0LLO<17>LKl<9>Lmm<15>LPeLNdLMcLKbLJa<5>L9W<3>3L1<14>z\
+  mP<12>zYPzXPzWPzUQxUQuTQ<12>QMONLONLO<14>RJOSJOSJOTJOTJO<18>cHScHTdHTeGU\
+  fIT<11>uf8wh7xj5zm3zj5<13>n4jm0mk2j<6>UKP0P0<36>al0cm0cm0<11>Ub0
+  }
+
+Mexsq037           { ; 0:30
+                     ; Copyright Sylvie Gallet [101324,3444], 1996
+  reset=1930 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-0.66491928385805800/-0.02551515660711031/13547.85
+  params=0/0/0.2 float=y maxiter=1023 inside=0
+  colors=000z_7zREzHK<11>W0Y<4>lElpHpqKp<8>zlp<7>zMbk`b_Gb<7>LbiPbjTckegS<\
+  2>ziB<11>MZ2JY2HX1<5>0O0<5>DU1FV2IW2KX3MY3P_4<13>Tc7Tc7Ud8Vd8<7>bg9<10>f\
+  95g54e64<7>TB1<4>tV2<3>vc4ve5wf5<2>xl7xn7yp8zr9<10>ciD`hEYgD<9>AT47R37R4\
+  <2>JOANMCRLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<5>NXG\
+  PXFPXG<14>BLf<7>S7`V5_Z6W<3>l9IoHFrPC<3>zi0
+  }
+
+ginkgo             {
+  reset=1930 type=ifs ifsfile=fractint.ifs ifs=baobab
+  center-mag=+0.61627197250000000/+1.18386840950000000/1.477267/0.9998
+  params=0 maxiter=500 colors=000B`HU00<2>dIBhOFjTL<7>zzz000<238>000
+  }
+
+jowe3104           { ; 0:01:12.44
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=whatever_01 center-mag=4.4645e-005/1.0105e-005/0.6666712
+  maxiter=500 inside=maxiter potential=255/255/555
+  colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
+  z<15>000<15>zn0<15>000<15>zzz<15>004<12>G0jH0nI0qK0uJ0rI0n<12>204
+  }
+
+LF19_05            { ; "Aorta"                Les St Clair 1996   t=04m21s
+                     ; Image by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm19
+  function=conj/cos passes=1
+  corners=0.035698275/-2.0293561/0.71258768/-0.44958166/-0.14988001/0.9600\
+  254 params=10/0/-3.3/0.4 float=y inside=bof61 outside=atan
+  colors=000LKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<4>\
+  HGM93F<4>C4J000<31>U0AV0BW0BX0CY0C<2>`0Da0Db2D<14>zVF<14>b2Da0D`0D<3>X0B\
+  W0BV0BU0BT0A<16>C03B03A03903803<8>000E5M<8>93FOI5<15>zpa<14>OI5000<33>00\
+  0KJR
+  }
+
+what001            { ; Jonathan Osuch 1996 [73277,1432]
+                     ;  Version 1930 Patchlevel 13
+  reset=1930 type=mandel passes=1
+  center-mag=-0.764343/0.001153/35.97543/0.2198/-88.061/-20.147
+  params=1.3/0 float=y maxiter=1000 bailout=1 bailoutest=manh
+  inside=zmag outside=atan
+  colors=00eX00<9>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>ut0<15>000G\
+  A4<12>2v10z00w0<14>000<15>00z<3>00i00a<8>000<16>z0Xv0Vr0Tp0Sn0R<12>000<1\
+  5>p0w<15>000<15>zzz<15>000L00<2>U00
+  }
+
+what002            { ; Jonathan Osuch 1996 [73277,1432]
+                     ;  Version 1930 Patchlevel 13
+  reset=1930 type=mandel passes=1
+  center-mag=-0.75188952056416770/+0.05631148589864191/150.1427/0.1878/-85\
+  .318/45.12 params=1.3/0 float=y maxiter=1000 bailout=1
+  bailoutest=manh inside=zmag
+  colors=00e0s0<13>000<15>00z<3>00i00a<8>000<16>z0Xv0Vr0Tp0Sn0R<12>000<15>\
+  p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000\
+  <15>ut0<15>000GA4<12>2v10z00w0
+  }
+
+what003            { ; Jonathan Osuch 1996 [73277,1432]
+                     ;  Version 1930 Patchlevel 13
+  reset=1930 type=mandel passes=1
+  center-mag=-0.74988119250016580/+0.03824389895982341/1745.846/0.1878/-85\
+  .318/45.12 params=1.3/0 float=y maxiter=1000 bailout=1
+  bailoutest=manh inside=zmag
+  colors=00e0o0<12>000<15>00z<3>00i00a<8>000<16>z0Xv0Vr0Tp0Sn0R<12>000<15>\
+  p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000\
+  <15>ut0<15>000GA4<12>2v10z00w00s0
+  }
+mitosis            { ; Zoom into Frac-test042 by Brian Jones
+                     ; Par and Image Copyright by Lee H. Skinner, 1996
+  reset=1930 type=formula formulafile=fractint.frm
+  formulaname=fractint-9-41 function=tan/tan/tan/atanh passes=1
+  center-mag=-7.27596e-012/3527.71/0.0008814505 float=y maxiter=1000
+  inside=bof60 logmap=yes symmetry=none periodicity=0
+  colors=000OI5000<30>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4\
+  >jdWgaVcZT`WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0Db2D<14>zVF<14\
+  >b2Da0D`0D<4>W0B000000T0A<16>C03B03A03903803<8>000E5M<8>93FOI5<15>zpa<13\
+  >RK7
+  }
+
+jowe3202           {
+  reset=1930 type=formula formulafile=fractint.frm formulaname=jowe_02
+  function=tan/sqr passes=b center-mag=7.558e-005/1.177e-005/0.4884565
+  params=0.3/-0.03/1/-1 maxiter=1023 inside=maxiter
+  potential=255/255/555
+  colors=000a81<8>hI0hJ0iK0iL0jM0<12>qa1rb1rb1<5>tg2uh3ui3ui3vj3vj4<4>wl5w\
+  l6wl6wl6wl7wl7<4>xj9xj9wiA<4>wfCweDwdDvcDvbEvaE<4>uXHtWHtVIsTIsSJ<19>h6S\
+  h5Sg5T<6>b1Wb0Wa0W`0X<8>U1_U1_T1_S2_R2`R3`<15>FIbFJbELb<16>5c`4d`4e`4f`<\
+  6>1jZ1kZ1kY1kY<6>0lW0lV0kV<6>0hS0hR0gR0fR<7>2_N2ZM2XM<12>8IG8HF9GFAFE<5>\
+  D8CE7BE7B<5>I28J28K17L17L17<9>T03T03U13<4>Y32Z41Z51_61`61a71
+  }
+
+BJ-LSC13-006       { ; Modified Les St Clair Formula "LSC13" 
+                                  { ; (C) copyright Brian E. Jones 1996
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=BJ-Lesfrm13-001 function=log/flip/cabs/tanh
+  center-mag=0/0/0.4666667 params=3.3/0.8/-3.2/0.3 float=y
+  maxiter=1000 inside=zmag outside=atan
+  colors=ond<2>zyn<15>UMH00000000053M<10>5Px<6>5wP<5>5Ur5Px5Ms<6>53M000000\
+  000b`c<5>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK00000\
+  0A3M<4>L8a000O9d<5>`Fw<6>5oP<10>007000000000A00<10>c00<16>A00000000UDG<1\
+  0>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<2>BB8EFAIIDLLG<6>kja
+  cyclerange=0/255
+  }
+
+BJ-LSC13-008       { ; Modified Les St Clair Formula "LSC13" 
+                                  { ; (C) copyright Brian E. Jones 1996
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=BJ-Lesfrm13-001 function=sqr/sqrt/cabs/ident
+  center-mag=0/0/0.4666667 params=3.3/0.8/-3.2/0.3 float=y
+  maxiter=1000 inside=zmag outside=atan
+  colors=yxmxvlutjsrhpnelkb<2>ZYSUTOONJ<3>000<6>L00N00Q00S00T00V00<2>X00X0\
+  0X00X00W00<2>S00Q00N00<7>000<3>0KO0OU0TZ0Xc0`h0cl0fp0is0ku0mx0ny0oz0oz0o\
+  z0ny0mx0ku0is0fp0cl0`h0Xc<6>000<4>HOTLTZOXbQ`gTckVgoXirZku<2>`oyapz`oy`n\
+  x_mwZkuXirVgo<2>OXbLTZHOT<4>000<14>X00<12>923724524335000<5>GGHJJJLLMNNO\
+  <3>SSTTTUTTVUUV<3>RRSQQROOPNNO<2>GGHEEEBBB889<2>000653CA7IFBOKEUOHZTLcXO\
+  h`QlcTpgVsiXukZxm_yn`zo`zpayo`yn`xm_ukZsiXpgVlcTh`QcXOZTLUOHOKEIFBCA7653\
+  022<14>0Zd<6>0IM0GJ0EG0CD09B<2>023000000<2>IIEONJUTOZYS000cbWhg_lkbpnesr\
+  hutjxvlyxm<2>zyn cyclerange=0/255
+  }
+
+BJ-LSC13-009       { ; Modified Les St Clair Formula "LSC13" 
+                                  { ; (C) copyright Brian E. Jones 1996
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=bj-lesfrm13-002 function=asin/log/cotanh/sin
+  corners=-2/2/-1.660267/1.339733 params=3.3/0.8/-3.2/0.3 float=y
+  maxiter=1000 inside=zmag outside=atan
+  colors=z10`dd<37>DMMCMMCLLCLLAKK<3>0cc<9>zz0<15>z00<12>j00h00g00e00d00<2\
+  >_00<12>o`QpcSqfUsiWsiWrhV<43>LC7KB6KA6KA6<43>621521521421421<5>210s10<6\
+  >710AKKCMMGQQMWWUcccmmoyyrrr<5>moomoolnnlnnkmm<16>`ee
+  }
+
+LS-BJ-LS_01        { ; Based on Brian E.Jones BJ-Lesfrm13-02 formula t=04m22s
+                     ; by Les St Clair 101461.2032@compuserve.com
+                     ; t=time using 486DX2-66 and video mode SF5 640x480 256c
+  reset=1930 type=formula formulafile=newforms.frm
+  formulaname=bj-lesfrm13-002 function=asin/log/ident/cosh
+  center-mag=0.934868/-0.0532872/0.9617486 params=3.3/0.8/-3.2/0.8
+  float=y maxiter=1000 inside=zmag outside=atan
+  colors=0E_<4>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>A\
+  pW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<12>1EI14J1AJ17J14J<15>zpg<15>z_0<15\
+  >0Tz<8>0Fa cyclerange=0/255
+  }
+

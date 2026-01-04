@@ -1,0 +1,332 @@
+comment {
+  This Fractint parameter file is by Bradley Beacham, and is copyright (c)
+  February 1995.  ALL RIGHTS RESERVED.  You may not use it for commercial
+  purposes without my explicit prior consent.  I encourage you to copy and
+  distribute it, but only if it is unaltered.
+
+  Many of these parameters need to use the formulas in ZSAZSA.FRM;
+  if you don't have those formulas, they won't work.
+
+  I welcome any comments.  Reach me at:
+
+    CIS: 74223,2745    Internet: 74223.2745@compuserve.com
+
+    U.S. Mail: Bradley Beacham
+               1343 S. Tyler St.
+               Salt Lake City, Utah  84105
+               U.S.A.
+
+  NOTE -- Most of these images REQUIRE floating point math.
+
+}
+
+
+Solarmanite_1      { ; I happened to overhear what you were saying.  It
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=mandel passes=b
+  corners=-1.74390339273/-1.74387867982/0.00573711052469/0.00575564520506
+  float=y fillcolor=33 decomp=32
+  colors=000xw0zz0<14>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>\
+  LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>\
+  zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<12>vu0
+  }
+
+Crackle            { ; behind.  I was just about to say 'To hell with
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=tan passes=2
+  corners=-0.388724298/0.461134811/0.10519244/0.58347534/-0.312350812/0.00\
+  33611241 params=1.5/0/-0.21 float=y outside=imag
+  colors=000YR6`T7dW8fY8i_9<2>peArfAthBviBwjB<4>zsKzqIzoFylCykC<2>uhBsgBqe\
+  AodAmb9<3>bU7_S7WP6<2>MH4IE3EB2A82751202000<6>I6LL7ON8QP8T<3>XBaZCc_Cd<3\
+  >dEjeEkeEkfElgHliKlkOl<2>gHleEkdEjcDhbDg<3>XB`VAZTAXR9VP8S<5>A3C82951620\
+  3300<4>M44Q55U55X66_77b77<2>k99m99pAArAAsBBuBBwBBxCCyCCyCC<2>zMM<2>yCC<2\
+  >uBBtBBrAApAA<2>i99f88c77`77Y66<5>C22811400000120251<5>BN5CP6ES7FU7GX8<3\
+  >KdALeAMgBMhBNiB<2>OlC<2>YlM<2>OlC<3>MhBLfALeAKcAJa9<2>GW8ET7DR6CO6AL5<4\
+  >371241001002<5>99PBBSCCWDDZFFa<2>IIjJJlKKoLLqMMs<3>OOxOOyQQySSyUUzSSzQQ\
+  zOOy<2>NNvMMtMMsLLqKKo<5>DDZCCWBBS<4>33A226210110<3>HD3KG4OJ4RL5VO6
+  }
+
+Lungs              { ; farther and farther behind, and was just about
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=ident passes=2
+  corners=-0.14346746444/-0.13721172503/0.60762551948/0.61114611858/-0.142\
+  90528582/0.60687594799
+  params=1.65/0/-0.3 float=y outside=imag
+  colors=000prsttt<15>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<\
+  13>rqstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>043022023\
+  <14>6Zk<13>mqr
+  }
+
+Solarmanite_2      { ; amazed me because it happened to me too!  I was
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=exp passes=2
+  corners=0.639718872/0.734000472/-0.068305688/-0.19401449/0.734000472/-0.\
+  19401449 params=3/0/-0.65 float=y decomp=64
+  colors=000ff0<4>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<1\
+  5>033<15>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<9>bb\
+  0
+  }
+
+Chains             { ; weirdest experience at the track today!  I wasn't
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=barnsleym1 passes=1
+  corners=1.038253053/1.031002342/-0.09135742253/-0.08168980786/1.03100234\
+  2/-0.08168980786 params=-9/-3 float=y maxiter=100 bailout=100
+  inside=bof60
+  colors=A18fS0E2B<7>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795\
+  574354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<13>8880004\
+  44000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<4>817
+  cyclerange=2/255
+  }
+
+E-Z-Chair          { ; this, I quit' when I felt something go SWOOSH
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=glynnout2 function=sqr/ident passes=2
+  corners=1.314388/-1.46787/-1.864932/1.844745/-1.46787/1.844745
+  params=1.5/0/-0.82 float=y potential=256/1000/0
+  colors=14J14J<15>vp4<15>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>\
+  14J<15>zpg<15>z_0<15>0Tz<14>06M47K<14>zza<15>d9M<14>4ot1rw1ou<13>17M
+  }
+
+Sunrise_Surprise   { ; ease!"  The first horse turned to the second
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=glynnout3
+  function=ident/ident passes=2
+  corners=0.530760491/0.782501777/0.9490006372/0.9572193514/0.617442371/0.\
+  8334247969 params=1.5/0/-1 float=y periodicity=0
+  colors=000509<15>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6\
+  >LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>w\
+  wbzzazyazwa<31>nnsmmsmmtllummu<20>000<2>406
+  }
+
+Borogove           { ; race track.  The first horse said "I had the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=lambdafn function=exp passes=1
+  corners=-23.82374/37.76755/-15.62506/30.56841 params=3/-0.5 float=y
+  invert=2.8/0/0 decomp=256
+  colors=LE0RNNKD0QMOJD0PLOJD0OKOIC0NJOHC0MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HE\
+  QD90GERC80FDRC80ECRB70DBSA70CAS970BAS960A9S86098T75087T75076T64065U54055\
+  U43044U43033V32022V22011V11000W000<3>21022021033032044042054053065053076\
+  0640870740980850A80850B90960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG\
+  0F90KH0GA0LH0GA0MI0HB0NJ0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ\
+  0OF0WQ0OF0XR0PG0YS0QG0ZT0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ\
+  0XL0g_0XL0h`0YM0ia0ZM0jb0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rn\
+  AiT0soBjU0tqDkV0urEmW0vtFnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vt\
+  LmW0usLkW0tqLjV0spLiU0rnLhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jb\
+  KZM0ibKYM0haKXL0g`KXL0f_KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_U\
+  KRI0ZTLQH0YSLPH0XSLOG0WRMOG0VQMNF0UPMMF0TONME0SNN cyclerange=0/255
+  }
+
+Ashtray_Heart      { ; A couple of race horses were standing at the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=glynnout3
+  function=ident/recip passes=b
+  corners=-1.6964606/-1.4404606/1.0143506/1.2063506
+  params=1.5/0/0.3 float=y fillcolor=1 logmap=16
+  colors=000UdoD0K<10>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P1\
+  1<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<2\
+  3>wwbzzazyazwa<31>nnsmmsmmtllummu<20>000<3>50970BA0GB0I
+  cyclerange=2/255
+  }
+
+New_Toots          { ; up my back, and I won by two lengths!"  A
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout06 function=sqr/sinh/sqr passes=b
+  corners=-0.599365336/-0.529376472/0.294638904/0.347130552 float=y
+  fillcolor=1
+  colors=000AAC<2>J3SM0YN0_<5>W0mY0pZ2n<19>xw3zz0yx1<5>sg7qe9nd9<13>0LL<23\
+  >0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<9>DgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY\
+  <4>v7W<25>ywb<9>peNocLncL<10>bVJ<6>9RC<5>3O62N51M40L34N3<11>xu2<11>000
+  cyclerange=0/255
+  }
+
+Grundle            { ; than I ever have, and won the race!"  The second
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=limerick
+  function=sqr/log passes=2
+  corners=-1.40927725948/-1.40924401532/0.0459517901345/0.0459767232545
+  params=12 float=y inside=0 outside=real
+  colors=000ruc<5>xyb<7>1Uf000<15>000100301<14>W6GY7H_6F<4>j13m00o00<4>z00\
+  rKS<2>rDGrACr78r44s74<2>xJ1zN0zQ0zT0zX0x_0zb0<6>zz0<14>w03<8>O0b<7>000<1\
+  2>1Sb<6>zv0<8>000<4>024025035046<43>1Te1Ue1Uf2Uf<51>quc
+  }
+
+Skritch            { ; excuse me, I wasn't intending to eavesdrop, but
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=limerick
+  function=sqr/log passes=2
+  corners=0.98186408136/0.99200451867/0.23982169856/0.22499525991/0.992631\
+  32961/0.2254653681 params=12 float=y decomp=256
+  colors=00055D<2>99PBBSCCWDDZFFa<2>IIjJJlKKoLLqMMs<3>OOxOOyQQySSyUUzSSzQQ\
+  zOOy<2>NNvMMtMMsLLqKKo<5>DDZCCWBBS<4>33A226210110<3>HD3KG4OJ4RL5VO6YR6`T\
+  7dW8fY8i_9<2>peArfAthBviBwjB<4>zsKzqIzoFylCykC<2>uhBsgBqeAodAmb9<3>bU7_S\
+  7WP6<2>MH4IE3EB2A82751202000<6>I6LL7ON8QP8T<3>XBaZCc_Cd<3>dEjeEkeEkfElgH\
+  liKlkOl<2>gHleEkdEjcDhbDg<3>XB`VAZTAXR9VP8S<5>A3C829516203300<4>M44Q55U5\
+  5X66_77b77<2>k99m99pAArAAsBBuBBwBBxCCyCCyCC<2>zMM<2>yCC<2>uBBtBBrAApAA<2\
+  >i99f88c77`77Y66<5>C22811400000120251<5>BN5CP6ES7FU7GX8<3>KdALeAMgBMhBNi\
+  B<2>OlC<2>YlM<2>OlC<3>MhBLfALeAKcAJa9<2>GW8ET7DR6CO6AL5<4>37124100100222\
+  633A
+  }
+
+There              { ; horse and said with astonishment, "Well I'll be
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=glynnout1
+  function=sqr passes=2
+  corners=-0.60694925/-0.38596724/0.42707679/0.1324341/-0.38596724/0.13243\
+  41 params=3/0/-0.585 float=y decomp=32
+  colors=000nqs<5>RhoNfnJdmGbmDal9_l6Zk<7>3IO3FL3EJ<8>000<3>K07P09S0A<6>m0\
+  I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<13>3230000\
+  21<14>0WJ<15>ttt<15>0WJ<13>043022023<14>6Zk<15>ttt<2>kps
+  }
+
+Martian_Dartboard  { ; to give up, and then I felt something go SWOOSH
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=glynnout1
+  function=sqr passes=2 corners=-1.424/1.424/-1.068/1.068
+  params=3/0/-0.585 float=y decomp=32 periodicity=0
+  colors=000zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zzz<15\
+  >000<15>zn0<15>000<15>zzz<15>004<12>G0jH0nI0qK0uJ0rI0n<11>308204333<13>v\
+  vv
+  }
+
+Blob               { ; bar, having a few drinks after a hard day at the
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=lyapunov passes=2
+  corners=3.54327124/3.4736102/3.736623201/3.728230421/3.5222218/3.7646891\
+  21 params=32/0.5 float=y
+  colors=000B60<20>WH0XI0YJ0ZK0_L0<25>yj0zk0zk0zk0<94>ZK0ZK0ZK0ZK0YJ0YJ0<7\
+  1>H20H20G10F10<13>110000110<8>A50
+  }
+
+Solarmanite_4      { ; running at the dog races, losing badly, and
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout11 function=sqr/sinh/ident passes=2
+  corners=-0.7508558531/-0.7319153969/0.2052209059/0.2008028325/-0.7419166\
+  136/0.19330192 params=0/-0.2 float=y
+  colors=000jjj<11>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5\
+  N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<1\
+  5>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<2>nnn
+  }
+
+Irispiral          { ; horse replied "That IS weird.  The same thing
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout06 function=cotan/ident/sin passes=2
+  corners=-1.09458971/-1.00645196/0.1807958089/0.1759759954/-1.06054661/0.\
+  135405007 float=y periodicity=0
+  colors=000laL<8>bVJ<6>9RC<5>3O62N51M40L34N3<11>xu2<11>000AAC<2>J3SM0YN0_\
+  <5>W0mY0pZ2n<19>xw3zz0yx1<5>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10\
+  >dtz<9>DgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<4>v7W<25>ywb<9>peNocLncL\
+  mbL
+  }
+
+Submissle          { ; almost quit running.  But then I felt something
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout06 function=cotan/ident/sin passes=2
+  corners=-1.0974409/-0.7080169/0.25979609/-0.25943591/-0.7080169/-0.25943\
+  591 float=y periodicity=0
+  colors=000AAC<2>J3SM0YN0_<5>W0mY0pZ2n<15>rkDtnAuq8wt5xw3zz0<6>sg7qe9nd9<\
+  13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<5>PmnMklJjjGhhDgf<2>8c_<25>zwbwtb\
+  <8>SHS<4>eHXhGYjEY<4>v7W<24>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62\
+  N51M40L3<12>xu2<11>000 cyclerange=0/255
+  }
+
+Thumb_Print        { ; damned!  A talking dog!"
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout06 function=ident/ident/sin passes=2
+  corners=-0.616933813/-0.568201068/0.640077016/0.722380867/-0.638895874/0\
+  .669359763 float=y
+  colors=000ZVI<5>9RC<5>3O62N51M40L34N3<11>xu2<11>000AAC<2>J3SM0YN0_<5>W0m\
+  Y0pZ2n<19>xw3zz0yx1<5>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<9\
+  >DgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<4>v7W<25>ywb<9>peNocLncL<10>bV\
+  J
+  }
+
+Five-Shooter       { ; right up my back, and I started running faster
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout08 function=sin/recip/sqr passes=2
+  corners=-1.1963395/-0.67515552/0.34965286/-0.34525914/-0.67515552/-0.345\
+  25914 params=2 float=y potential=255/400/0
+  colors=000553553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14\
+  >000000200<29>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>000110111221221<4>4\
+  42
+  }
+
+Champagne_Fountain { ; running well, falling farther and farther
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout10 function=log/ident passes=2
+  corners=-1.3297518/-0.76191182/0.37915866/-0.37796134/-0.76191182/-0.377\
+  96134 params=-0.005 float=y inside=zmag logmap=3
+  colors=14J0Mm<9>06M47K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<1\
+  4>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<15>0Tz<3>0N\
+  o
+  }
+
+Jimmy_Durante      { ; happened to me a few weeks ago!  I was running
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout13 function=exp/exp passes=2
+  corners=1.5514204/1.9460619/1.078116/1.3740971
+  params=1.4/0/0.25/-1.3 float=y potential=255/500/0
+  colors=KB0<11>WH0XI0YJ0ZK0_L0<25>yj0zk0zk0zk0<94>ZK0ZK0ZK0ZK0YJ0YJ0<71>H\
+  20H20G10F10<14>000000110<17>JA0 cyclerange=0/255
+  }
+
+SunFlar            { ; go SWOOSH up my back, and I won my race with
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm
+  formulaname=inandout09 function=zero/flip passes=2
+  corners=-0.38837823/0.29824612/0.61499979/-0.60506046/0.44443546/-0.4954\
+  1846 params=1.01/0.3 float=y inside=bof60 periodicity=0
+  colors=000kVR<9>xw3zz0yx1<5>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10\
+  >dtz<9>DgfBfdAeb8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<4>v7W<25>ywb<9>peNocLncL\
+  <10>bVJ<6>9RC<5>3O62N51M40L34N3<11>xu2<11>000AAC<2>J3SM0YN0_<5>W0mY0pZ2n\
+  <8>jST
+  }
+
+Pyramid_Power_4   {  ; greyhound came walking up and said "Please
+                     ; (c) 1995 Bradley Beacham  [74223,2745]
+                     ; No commercial use without permission
+  reset=1821 type=formula formulafile=zsazsa.frm formulaname=fnglynn
+  function=ident passes=1
+  corners=-0.64092140115/-0.640912449324/0.01131911483493/0.01133423341188\
+  /-0.6409254354095/0.0113244938477 params=1.5/0/-0.2 float=y maxiter=300
+  colors=000zeV<7>g0W<3>n1n<12>0000300500802C0<8>IcpKgvMhs<13>ov4rx0vy0zz0\
+  <15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<4>927B29C2A\
+  D2B<6>Q3LS4NT6MU9L<2>`KHbOFcQF<15>zz0<9>YZ6TU8<3>LM6JK6HI6FG6DF5<4>354E6\
+  4<3>u0M<2>n7Dk9AhB7eE4bE5<3>TE7<3>000<5>000<8>jg2ol3tq3zv4
+  }
+

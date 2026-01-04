@@ -1,0 +1,69 @@
+
+1of9               { ; Nine Crescent Moons
+                     ; Multiple Overlay - Generate this one first
+                     ;   use same color palette throughout
+                     ; (C) Lee H. Skinner, 1993
+  reset=1720 type=mandel passes=1 video=SF7
+  corners=-1.459384/-0.683384/-0.291/0.291 float=y maxiter=1023
+  inside=0 logmap=yes
+  colors=0000zh<4>0zw0zz0xz<23>00z<2>00z00z10z20z<83>y0zz0zz0zz0z<2>y0yy0y\
+  x0xw0w<91>000VVVzzzzWWz00zW0zW0zj0zz0<6>0z00z00z0<14>0ze
+  }
+
+2of9               { ; Overlay #1 on top of #1
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=75
+  scalexyz=90/75 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=9/0
+  }
+
+3of9               { ; Overlay #2 on top of #2
+                     ;  note: all others overlay #1
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=50
+  scalexyz=90/50 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=13/0
+  }
+
+4of9               { ; Overlay #1 on top of #3
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=15
+  scalexyz=90/15 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=-31/0
+  }
+
+5of9               { ; Overlay #1 on top of #4
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=15
+  scalexyz=90/15 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=18/10
+  }
+
+6of9               { ; Overlay #1 on top of #5
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=15
+  scalexyz=90/15 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=18/-10
+  }
+
+7of9               { ; Overlay #1 on top of #6
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=7
+  scalexyz=90/7 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=-9/41
+  }
+
+8of9               { ; Overlay #1 on top of #7
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=7
+  scalexyz=90/7 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=-9/-41
+  }
+
+9of9               { ; Overlay #1 on top of #8
+                     ; (C) Lee H. Skinner, 1993
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=7
+  scalexyz=90/7 roughness=0 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0 xyadjust=-30/0
+  }
+

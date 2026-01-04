@@ -1,0 +1,420 @@
+			INFORMATION RE ORGFRM.ZIP
+
+
+
+0RGFRM.ZIP includes the following:
+
+	ORGFORM.DOC - this document
+	
+	ORGFORM.EXE - a program to build and maintain an organized Fractint 
+		      formula directory
+	
+	_*.FRM      - various files containing Fractint formulas, created
+		      from the files on my hard drive as of 9/12/95. These 
+		      include virtually all formulas uploaded to the
+		      Graphics Developers Forum of CompuServe through that
+		      date. There are more that 2200 formulas in these files.
+
+	Fractint is a freeware fractal generating program ((C) The Stone Soup 
+Group) available from Library 4 of the Graphics Developers Forum of 
+CompuServe as FRAINT.EXE. If you are not familiar with Fractint, you should 
+download the program and prepare to have your life become a shambles. ORGFORM
+is a utility to deal with certain DOS text files used by Fractint. These 
+files have an extension ".frm" and contain formulas which Fractint can use to
+generate fractal images. For an excellent description of how these formulas
+are structured and how peoople with a creative turn of mind can compose 
+original formulas, see Bradley Beacham's tutorial, available in the same 
+forum Library as Fractint under the name FRMTUT.ZIP.
+
+	Those who create formulas are not lacking in energy. Some users have
+created hundreds of formulas, and more are posted to the CompuServe forum
+regularly. These postings are essentially unregulated, which is only proper,
+but as a result the accumulated postings contain many copies because formulas
+are reposted for various reasons. In addition, and more worrisome, is the
+fact that there is no standardized naming conventions for formulas, and 
+there are many cases where a formula name has been used again for a 
+completely different formula.
+
+	My goal has been twofold: first, develop a set a formula files 
+containing unique formula entries only; and, second, organize the files so 
+that different formulas with the same name are readily identifiable. 
+The result is ORGFORM (ORGanize FORMulas).
+
+
+=================
+ORGFORM.EXE v. 1
+=================
+
+	ORGFORM is (c) George G. Martin, 1995. The program is freeware.
+The program may be distributed for private use without notice to the
+author. However, no commercial use of the program may be made unless the 
+author's consent has been obtained. My CompuServe number is 76440,1143.
+Please let me know if you have any comments or suggestions. Although no
+registration is required, if you let me know by E-Mail that you are a user
+of the program and give me a return E-Mail address, I will let you know
+when (and if) later versions of the program are posted.
+
+	No representation or warranty of any kind is made with respect to
+this program. 
+
+	INPUT: Command line syntax is ORGFORM [path\inputfiles... ]
+
+	Any number of arguments can be used, and standard DOS filename 
+wildcards are permitted.
+
+	EXAMPLE: orgform  *.frm  c:\temp\a*.frm
+    
+	will take all formula files in the current directory and all formula 
+files beginning with "a" in the temp directory as input. HOWEVER: no matter 
+what arguments are used, the program will not open any input file  
+which does not have an extension ".frm", and also any file whose name 
+begins with an underscore (e.g. a.doc and _a.frm would not be opened, even 
+if the command line argument were *.*).
+
+	Input files are opened only for purposes of reading them; they are
+not changed by ORGFORM.
+
+	OUTPUT: The program reads each formula entry from the input files, and
+copies it to a file with the name _?.frm, depending on the first letter of 
+the formula (e.g. a formula named George would be copied to _g.frm); if the
+output file does not exist, it will be created. Formulas beginning with 
+numbers are added to _num.frm, and with non-alpha characters to _chr.frm.
+If the file exists, the formula will be added to the file; existing 
+entries will not be affected. If a formula with the same name is present in 
+the output file, the program checks to see if the symmetry and formula math 
+are the same - if they are, the formula is not added to the file, thus 
+avoiding the accumulation of identical entries. If the symmetry or math is 
+not the same, the formula is added to a file with the name _?_dup.frm 
+(e.g. if a formula George was found but had different math, the new George 
+would be added to _g_dup.frm). When a formula is added to a file, a comment 
+is inserted in the formula entry showing the name of the source file. 
+
+	The comments and text in an input file appearing between formula 
+entries are ignored by the program - only the formula entries themselves 
+(including the comments contained within the entries) are written to the 
+output file.
+
+	All output files are written to the current directory. 
+
+	After the processing of the formulas is completed, the program
+rewrites each output file to put the formula entries into alphabetical order.
+In effect, the output files are a multi-volume encyclopedia of the formulas 
+which you have. When others upload formulas, you can run them through 
+ORGFORM, and only those entries which you don't have will be extracted and 
+added to the output files.
+
+=================================         
+FORMULAS INCLUDED IN THIS PACKAGE
+=================================
+
+	I ran ORGFORM on my formulas directory, and the resulting output
+files are included in orgfrm.zip. The directory has about 130 formula 
+files containing about 7000 formulas. Certain files are compilations of
+other files (often easily identified by their size, which tend to be much
+larger than original source files); I renamed these with extension ".~rm" 
+and ran ORGFORM first on the original source files, in order to get these
+formulas into the output files first. I then renamed the compilations back
+to ".frm" and reran ORGFORM, picking up any formulas in them which had not
+already be extracted in the first run. The resulting output files contain
+about 2300 entries - more than 2/3 of my formulas directory consisted of
+copies of other existing formulas!
+
+	The directory listing of my formulas directory is at the end of
+this document. Virtually all of these files were obtained from Library 4
+of the Graphics Developers Forum of CompuServe.
+
+================================
+COMMENTS ON "SAME NAME" FORMULAS
+================================
+
+Here is a summary of the *_dup.frm files included in orgfrm.zip. These are
+comments about formulas which have the same name as other formulas. The 
+subheadings are formula names; the explanatory text uses the names of the 
+source files, but without the .frm extension.
+
+a1
+     a1 and ad1 (2 entries) all are different.
+
+barnsleym1
+     From builtn and builtn2. Latter is commented as "changed", and
+     has a c = pixel initializer.
+
+birdofprey(xaxis noparm)
+     fractint and form1 have actual functions (different), select
+     has a generalized fn call.
+
+birdofpreyc(xaxis_noparm)
+     choice and form1 have actual functions (different), fract001
+     has a generalized fn call.
+
+bogus1
+     fractint and improved have different formulas
+
+carr-107
+     -xmas- has a much different version than carr
+
+carr-906
+     There are two versions in carr. They are not the same.
+
+CGhalley(xaxis)
+     fractint and improved have different versions
+
+Cubic(xaxis)
+     fractint and improved have different versions
+
+Daisy(Origin)
+     fractint and improved have different versions
+
+DeepSpaceProbe(xaxis_noparm)
+     select has a fn option. choice and form1 have specific
+     functions, but different (cos v. cosxx).
+
+DeepSpaceProbeC(xaxis_noparm)
+     choice and form1 have specific functions, but different (cos
+     v. cosxx). Select and fract001 each provide generalized fn options,
+     but the bailout is different (p2 v. 4).
+
+DeltaLog (xaxis)
+     fractint and improved have different versions.
+
+DpSpaceProbeTwoC(XAXIS_NOPARM)
+     select has fn options, choice has specific functions.
+
+Dragon(origin)
+     fractint and improved have different versions.
+
+Element(xyaxis)
+     fract001 is a generalization of drcha.
+
+Ent
+     fractint and improved have different versions.
+     
+Ent2
+     fractint and improved have different versions (improved
+generalizes the bailout).
+
+EvilEyeC(XAXIS_NOPARM)
+     choice and form1 have specific but different functions (cos v.
+     cosxx); select generalizes.
+
+Eyeball(XAXIS_NOPARM)
+     select generalizes choice.
+
+Fly(XAXIS_NOPARM)
+     select generalizes choice.
+
+FlyC(XAXIS_NOPARM)
+     fract001 generalizes choice
+
+FlyingSquirrel(XAXIS_NOPARM), 
+     choice and form1 have different functions (cos v cosxx).
+     select generalizes the formula.
+
+FlyingSquirrelC(XAXIS_NOPARM)
+     choice and form1 have different functions (cos v cosxx).
+     fract001 generalizes the formula.
+     
+fnxzpz
+     builtn and ebbert; similar but different formulas.
+
+fnzpfnpix
+     ebbert, builtn and builtn2. Slight changes.
+
+FractalFender(XAXIS_NOPARM), FractalFender2(XAXIS_NOPARM),
+FractalFender2C(XAXIS_NOPARM) 
+     select generalizes choice.
+
+FractalFenderC(XAXIS_NOPARM)
+     select generalizes fractint
+
+Frog(XAXIS_NOPARM), FrogC(XAXIS_NOPARM),
+ManInTheOzone(XAXIS_NOPARM)
+     select generalizes choice and form1 (which have different
+     functions).
+
+Fzpcopht, Fzpcopth, Fzppcoht, Fzppcoth
+     skinner and fract001 have different initializations.
+
+Fzppfncs, Fzppfnct, Fzppfnre, Fzppfnse, Fzppfnsr, Fzppfnta,
+Gamma(XAXIS), HalleySin(XYAXIS), HyperMandel, InvMandel(XAXIS),
+Jm_ducks(XAXIS), LeeMandel1(XYAXIS), LeeMandel2(XYAXIS),
+LeeMandel3(XAXIS), Mandel3, MandelTangent, MyFractal, 
+Newton4(XYAXIS), NewtonSinExp(XAXIS), Richard1(XYAXIS),
+Richard10(XYAXIS), Richard2(XYAXIS), Richard3(XAXIS),
+Richard4(XAXIS), Richard5(XAXIS), Richard6(XYAXIS),
+Richard7(XAXIS), Richard8(XYAXIS), Richard9(XAXIS),
+Sterling(XAXIS), Sterling2(XAXIS), Sterling3(XAXIS),
+Wineglass(XAXIS), ZZ(XAXIS), ZZa(XAXIS) 
+     improved generalizes fractint.
+
+Fzppfnpo
+     improved doubles one of the variables in the initialization of
+     a fractint formula.
+
+Halley (XYAXIS)
+     improved generalizes fractint. 
+
+halley6
+     builtn2 changes builtn.
+
+hypercomplex   
+     A version of this as used in a forum message is different than
+     the one in builtn.
+
+IfElsefn1fn2fn3(XAXIS_NOPARM), IfThenElsefn1fn2(XAXIS_NOPARM),
+IfThenfn1fn2(XAXIS_NOPARM)  
+     select generalize choice.
+
+IslandOfChaos(XAXIS_NOPARM)
+     form1 and choice use different functions (cos v. cosxx);
+     select generalizes.
+
+IslandOfChaosC(XAXIS_NOPARM)
+     form1 and choice use different functions (cos v. cosxx);
+     fract002 generalizes.
+
+J_Laguerre6, M_Laguerre6
+    form1 and tchebych. The formulas are the same. tchebych is an
+    error - it has a line break in the middle of an expression. form1
+    doesn't work either, but is too large to edit with the DOS edit
+    command.
+
+Jm_01, Jm_02, Jm_03, Jm_04, Jm_05, Jm_06, Jm_07, Jm_08, Jm_09,
+Jm_10, Jm_11, Jm_12, Jm_13, Jm_14, Jm_15, Jm_16, Jm_17, Jm_18,
+Jm_19, Jm_20, Jm_21, Jm_22, Jm_23, Jm_24, Jm_25, Jm_26, Jm_27
+     identical set of formulas in fractint and jmcr2. The latter
+     declares xaxis symmetry for each of them. In addition, improved has
+     a different version of Jm_27. (jmcr2 also has many additional
+     formulas in this series).
+
+julia, lambdafnorfn, mandel
+     builtn2 makes changes to builtn.
+
+lambdafn
+     builtn2 makes a change to builtn (adds a leading zero to a
+     floating point number).
+
+
+magnet1m, magnet2m
+     different formulas in ebbert and builtn. The ebbert formula
+     also declares xaxis symmetry.
+
+Mandelbrot(XAXIS)
+     improved generalizes fractint. Each of these use a"Lastsqr"
+     feature to speed the calculation. frmtutor writes the classic
+     mandelbrot formula in the traditional way.
+
+ManInTheOzoneC(XAXIS_NOPARM)
+     choice and form1 use different functions (cos v. cosxx)
+
+Michaelbrot
+     fract002 generalizes drcha. Also drcha shows origin symmetry.
+
+Moth(XAXIS_NOPARM)
+     select and choice are different
+
+Mothra (XAXIS)
+     fractint and form1 contain different formulas. The appear to
+     be the same math, but the presentation is quite different.
+
+Natura, Raphaelbrot
+     fract002 generalizes drcha. Also, drcha declares xyaxis
+     symmetry.
+
+001, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012
+     new_d generalizes damion. For 001, 003, and 005, both sets
+     declare yzxis symmetry. kgnew has a different formula in each case.
+
+ 002
+     new_d generalizes damion and damion2. All 3 declare yzxis
+     symmetry. kgnew has a different formula.
+
+013, 014, 015, 016, 017
+     new_d generalizes damion2. 014 declares pi_sym, 014 xaxis
+     symmetry, and 017 xyaxis symmetry in both of these. kgnew has a
+     different formula in each case.
+
+018, 019 (PI_SYM), 020 (XYAXIS), 021, 022, 023, 024, 025, 026,
+027(XYAXIS)
+     new_d generalizes damion2.
+
+01-Carr, 02-Carr, 03-Carr, 04-Carr, 05-Carr, 06-Carr, 07-Carr, 
+08-Carr, 09-Carr, 11-Carr, 12-Carr, 13-Carr, 14-Carr
+     carr and 01carr contain different formulas. NOTE - in my
+     Carr.frm, 12-carr was missing the closing brace.
+
+Phoenix
+     phoeni and reb006 have different versions.
+
+REB004N
+     NOTA BENE - formulas.frm contains about 44 entries crammed
+     onto one line of text beginning with this formula. A text editor is
+     needed to break the lines appropriately. When I did this, all the
+     formulas which emerged out of the rubble were already included from
+     other files
+
+Sam_8
+     fract003 is described as a fix of sam, and it appears to be
+     so.
+
+SGG005
+     Formula is in guenzel and 941227. The difference is in the
+     bailout test, which in guenzel is stated as an absolute value.
+
+SinEgg(XAXIS_NOPARM), SinEggC(XAXIS_NOPARM)
+     fract003 generalizes choice.
+
+SinhEgg(XAXIS_NOPARM)
+     select generalizes choice.
+
+test
+     contained in tchebych, drcha, formulas(with bad line breaks,
+     subsequently corrected and deleted), quad and fract003.
+
+test1, test2
+     fract003 fixes and generalizes drcha.
+
+test3
+     fractint fixes and generalizes drcha.
+
+TestSinMandC(XAXIS_NOPARM), TurtleC(XAXIS_NOPARM)
+     select generalizes choice.
+
+tetrate
+     similar but different formulas in ebbert and builtn.
+
+WaldoTwinsC(XAXIS_NOPARM)
+     different functions in form1 and choice (cos v. cosxx).
+
+
+=======================================================
+Formula files on my hard disk as of September 12, 1995
+=======================================================
+
+-XMAS-.FRM      01CARR.FRM      1ST.FRM         22CARR.FRM      23CARR.FRM  
+26CARR.FRM      27CARR.FRM      28CARR.FRM      29CARR.FRM      30CARR.FRM  
+31CARR.FRM      32CARR.FRM      33CARR.FRM      3DFRACT.FRM     4DFRACT.FRM 
+9312.FRM        941227.FRM      A1.FRM          AD1.FRM         BBFAVES.FRM 
+BIZARRE.FRM     BUILTN.FRM      BUILTN2.FRM     CANON.FRM       CARR.FRM    
+CHOICE.FRM      DA.FRM          DA00.FRM        DA01.FRM        DAMAND3D.FRM
+DAMION.FRM      DAMION2.FRM     DAN.FRM         DN2ND.FRM       DONS.FRM    
+DONS2.FRM       DONS9.FRM       DRCHA.FRM       EASTEGG.FRM     EASTER95.FRM
+EBBERT.FRM      ELI.FRM         EXPLODE.FRM     FAULTY.FRM      FISH.FRM    
+FIXRCH.FRM      FLIP.FRM        FORM1.FRM       FORM2.FRM       FORMULAS.FRM
+FRAC2.FRM       FRACT001.FRM    FRACT002.FRM    FRACT003.FRM    FRACTINT.FRM
+FRM-A.FRM       FRMTUTOR.FRM    FUBAR.FRM       F_LIAR.FRM      GUENZEL.FRM 
+GUENZEL1.FRM    HUGHES.FRM      IMPROVED.FRM    INANDOUT.FRM    J-CARR.FRM  
+JACK5.FRM       JAX.FRM         JMCR1.FRM       JMCR2.FRM       KG10.FRM    
+KG11.FRM        KG4.FRM         KG7.FRM         KG8.FRM         KG9.FRM     
+KGEXP.FRM       KGNEW.FRM       KGOOF1.FRM      KGOOF2.FRM      LAMTET.FRM  
+LEE.FRM         LEE2.FRM        LIAR.FRM        LIMERICK.FRM    MANDNEWT.FRM
+MONGO.FRM       NEWCPC.FRM      NEW_D.FRM       ORMAN.FRM       OVERKILL.FRM
+PHOENI.FRM      PJHCON.FRM      POP.FRM         POSTCARD.FRM    PRIMAL.FRM  
+QUAD.FRM        QUERTY.FRM      RB.FRM          RBFAVE.FRM      RCL.FRM     
+RCLPAR.FRM      REB001.FRM      REB002.FRM      REB003.FRM      REB004.FRM  
+REB005.FRM      REB006.FRM      RON1.FRM        SAM.FRM         SELECT.FRM  
+SHIFTER.FRM     SJMAND01.FRM    SKINNER.FRM     SLIDER.FRM      SNAZZY.FRM  
+SPCB.FRM        SYMMIC.FRM      TCHEBYCH.FRM    TIM.FRM         TIM9407.FRM 
+TRACY.FRM       ULI.FRM         VP001.FRM       VP002.FRM       WHATEVER.FRM
+WILSON.FRM      ZEPPO.FRM       ZSAZSA.FRM  
+

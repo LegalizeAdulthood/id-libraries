@@ -1,0 +1,1302 @@
+
+comment {    Please Read:
+
+             THIS PAR FILE IS SET FOR SCREEN RESOLUTION 1024x768 ONLY
+               (However, times are for 1600x1200 on Pentium-166Mh.
+
+             All formulas must run with passes=1.
+
+             Images may contain artifacts if they are saved and
+             restarted.
+
+             Thumbnails may appear very different from the images.
+
+             To use for other resolutions:
+
+             1. Use your editor to CHANGE the 5th entry in each parameter
+                (params=) field from /1024 to /1600, /1280, /800, /640,
+                or /320 (or interactively use the Fractint Z-Screen to
+                reset parameter p3).
+
+                                  AND
+
+             2. Use your editor to CHANGE all occurances of =sf7 to
+                =sf9 or whatever function key calls your desired
+                resolution as specified in your fractint.cfg file
+                (or interactively use the <del> key to reset your
+                screen resolution)
+
+ The calculation times are given for images generated at 1600x1200 on a P166.
+ Use this table to get an idea of the calculation time on your computer:
+                                          courtesy: Sylvie Gallet
+
++---------+----------+----------+----------+----------+-----------+-----------+
+!         ! 320x200  ! 640x480  ! 800x600  ! 1024x768 ! 1280x1024 ! 1600x1200 !
++---------+----------+----------+----------+----------+-----------+-----------+
+! DX2-66  ! t / 6.2  ! t / 1.3  ! t x 1.2  ! t x 1.9  !  t x 3.2  !  t x 4.8  !
++---------+----------+----------+----------+----------+-----------+-----------+
+! DX4-100 ! t / 9.4  !  t / 2   ! t x 1.2  ! t x 1.3  !  t x 2.1  !  t x 3.2  !
++---------+----------+----------+----------+----------+-----------+-----------+
+!  P-100  !  t / 20  ! t / 4.2  ! t / 2.7  ! t / 1.7  !   t x 1   !  t x 1.5  !
++---------+----------+----------+----------+----------+-----------+-----------+
+!  P-166  !  t / 30  ! t / 6.2  !  t / 4   ! t / 2.5  !  t / 1.5  !   t = 1   !
++---------+----------+----------+----------+----------+-----------+-----------+
+
+     This file uses the following 7 pseudo hicolor formulas
+
+  JDFRM010 (Jim Deutch [104074,3171] )      - 17 images (Skinner)
+  JD-LS0   (Lee Skinner [75450,3631] )      -  3 images (Skinner)
+  JD-SG-01 (Sylvie Gallet [101324,3444] )   -  2 images (Skinner)
+  JD-SG-02 (Sylvie Gallet [101324,3444] )   -  2 images (Skinner)
+  JD-SG-03 (Sylvie Gallet [101324,3444] )   -  2 images (Skinner)
+  JD-SG-04 (Sylvie Gallet [101324,3444] )   - 44 images (Skinner)
+  MANJUL_LACE (George Martin [76440,1143] ) - 16 images (Skinner)
+
+  86 Par Sets Included
+        }
+
+jdls100            { ; t0:03:47  Previously posted on Graphdev Lib 4
+                     ; Pseudo HiColor Example 1
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Lee Skinner
+  reset=1930 type=formula formulafile=phc_1.frm formulaname=jd-ls0
+  passes=1 video=sf7 center-mag=1.05796/7.77156e-015/0.4538687 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none params=0/0/0/0/1024/0
+  colors=000Fb`zotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU6<56>z00zz0t\
+  wA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z00xJ8vbG<6>y\
+  DEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<43>wV6W0z
+  cyclerange=2/255
+  }
+
+jdls101            { ; t0:05:38  Previously posted on Graphdev Lib 4
+                     ; Pseudo HiColor Example 2
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Lee Skinner
+  reset=1930 type=formula formulafile=phc_1.frm formulaname=jd-ls0
+  passes=1 video=sf7 center-mag=0.0621924/1.29734/1.436293 float=y
+  inside=0 logmap=yes symmetry=none params=0/0/0/0/1024/0 maxiter=1023
+  colors=000Fb`wW6wV6wV6W0zzotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU\
+  6<56>z00zz0twA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z\
+  00xJ8vbG<6>yDEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<40>w\
+  W6 cyclerange=2/255
+  }
+
+jdls103            { ; t0:27:20  Previously posted on Graphdev Lib 4
+                     ; Pseudo HiColor Example 3
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Lee Skinner
+  reset=1930 type=formula formulafile=phc_1.frm formulaname=jd-ls0
+  passes=1 video=sf7 center-mag=0.642752/1.18237/14.36293 float=y
+  inside=0 logmap=yes symmetry=none params=0/0/0/0/1024/0 maxiter=1023
+  colors=000Fb`wX7<4>wV6W0zzotzkF8P00K0zOmz88U00<5>uT9uX8vaqwf5wk4xp3yu2wU\
+  6<56>z00zz0twA<7>9WI0QM<4>Wch<3>unn<4>sYj<9>zmK<9>DO0<2>FXI<4>ziF<3>zA3z\
+  00xJ8vbG<6>yDEz9Dy9E<14>g7be6df6a<4>k5Ml4Jl5J<33>vj9vk9wm8wo8xq9vpA<37>w\
+  Y7 cyclerange=2/255
+  }
+
+b60a000            { ; t0:02:07  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof60 outside=atan logmap=yes
+  colors=000xj9<5>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxh\
+  B<9>zdD<9>ObFKaFGaFC`GA_H<10>2Ke2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74\
+  <3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<5>rX7pU9oRAmNCmOF<6>i__<3>thkz0\
+  0<3>YL6<2>i`WtuxtiZugLu`T<2>d8ee6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<8>wj9
+  }
+
+b60a001            { ; t0:04:26
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.00327979/0.896588/2.367877 float=y maxiter=1023
+  inside=bof60 outside=atan logmap=yes
+  colors=000e32<4>h21i21i42<6>iOB<6>iOMiPOiRP<6>ia_jcajc_<11>qS0<9>QG0NE0N\
+  F1<12>KSKJUMKTN<13>bGYdFZeGX<10>pU6qW3qW3<12>vf3wg3uf6<10>RShTTg<3>aZjc`\
+  kd`l<5>eer<2>znpzllzkhyic<3>xcM<5>wTAvR8vP6uN4sM4<6>_C5XA6UA6<2>LA6HB7EB\
+  7BC7CC7<8>QF7SG8TI8<2>WO8XQ8WQ7UQ0SQ5RR3PR2<4>RU5<10>zg7<11>cM7<9>z0000Y\
+  V94<18>e42
+  }
+
+b60i000            { ; t0:02:00  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof60 outside=imag logmap=yes
+  colors=000`fI<4>uuu<3>uiQtfHrb7p_0<8>O01<16>w01z00z20<15>yh9<12>ylazmdyl\
+  d<16>`He<12>GTrEUsCTu<4>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<3>KTPJSRIRU\
+  <6>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<2>e8fhBilElpH\
+  p<7>xfpzzzyipzlp<5>zTfcPdmMmcJh_Gb<2>UPe5Sf<3>LbiSccZdYysk<2>xkKwhAwhA<4\
+  >zf7<6>LR4<6>0E0<8>QW2TY3TY3<7>WdB
+  }
+
+b60r000            { ; t0:02:00  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof60 outside=real logmap=yes
+  colors=000xhB<6>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20\
+  zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB
+  }
+
+b60r001            { ; t0:06:07
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/0.83369/4.196237 float=y maxiter=1023
+  inside=bof60 outside=real logmap=yes
+  colors=000xhB<6>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20\
+  zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB
+  }
+
+b60s000            { ; t0:02:00  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof60 outside=summ logmap=yes
+  colors=000zzzzfE<2>iUEcPDYLDSGCQFB<4>DC80009E47I0<3>PXE<6>zyzzvWzr0<2>pk\
+  3lh4hf5dc7`a8WZA<4>DS2FR68O30L0<4>ZIb<19>r58s46t34v23x12z00<17>zIb<9>zWR\
+  zXPzYP<17>ztc<3>zxuzzzyyz<17>oguoftnetmdslds<13>SixQjyPjx<14>0t_<15>cw5f\
+  x3gx3<53>zz0
+  }
+
+b61a000            { ; t0:02:04  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=bof61 outside=atan logmap=yes
+  colors=000zzzyipzlp<5>zTfcPdmMmcJh_Gb<2>UPe5Sf<3>LbiSccZdYysk<2>xkKwhAwh\
+  A<4>zf7<6>LR4<6>0E0<8>QW2TY3TY3<7>WdB<5>uuu<3>uiQtfHrb7p_0<8>O01<16>w01z\
+  00z20<15>yh9<12>ylazmdyld<16>`He<12>GTrEUsCTu<4>9_Z8aU8aS9`Q<2>9_P9_O9ZO\
+  9YO<6>PXFOWI<3>KTPJSRIRU<6>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_7zRE\
+  zHK<11>W0Y<2>e8fhBilElpHp<7>xfp
+  }
+
+deco000            { ; t0:01:47  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=0 logmap=yes decomp=256
+  colors=000ZJ0_QZ`Wcabiain`ptXqz<5>YasZZqZWp_TnaSmcQleOk<33>I12H00H00<3>G\
+  00G10G10G20H20<26>MG1MG1NF1<12>RH2RH2SH2TI2<6>YK2ZL3ZL5<5>WPHWPJXQJ<3>bW\
+  JdYJh_G<2>tf9<2>ui6vk5vl4wn3qjB<2>YX_RVq<8>jdpmfophp<2>wmszotznp<10>vX4s\
+  W4qU4oT4<2>dJ4`G5XD5T96S96<7>IB7HB7HB7<4>HF9HG9IG9JH9KI9<12>LS9MT9OV9<2>\
+  Ub9<7>ld8nd8qe7sf7<21>Y2EW0FX6KYDP
+  }
+
+zmat000            { ; t0:10:09  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=zmag outside=atan logmap=yes
+  colors=000i51f51c40<22>E30D20D20<7>B20B10C44<11>Xcu<20>z00<26>8806904901\
+  A02B0<15>YX0<6>DLG<14>zX6<28>84F<17>wj6zm5zm6<58>z71z61x61<4>k51
+  }
+
+zmim000            { ; t0:10:11
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=zmag outside=imag logmap=yes
+  colors=000xhB<6>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20\
+  zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB
+  }
+
+zmim001            { ; t0:18:07
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.091318/0.816079/2.717236 float=y maxiter=1023
+  inside=zmag outside=imag logmap=yes
+  colors=000xhB<6>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20\
+  zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB
+  }
+
+zmrl000            { ; t0:10:04  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=zmag outside=real logmap=yes
+  colors=000Vb9VcAWdB<5>uuu<3>uiQtfHrb7p_0<8>O01<16>w01z00z20<15>yh9<12>yl\
+  azmdyld<16>`He<12>GTrEUsCTu<4>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<3>KTP\
+  JSRIRU<6>BLf<5>NBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0z_7zREzHK<11>W0Y<2>e8fhB\
+  ilElpHp<7>xfpzzzyipzlp<5>zTfcPdmMmcJh_Gb<2>UPe5Sf<3>LbiSccZdYysk<2>xkKwh\
+  AwhA<4>zf7<6>LR4<6>0E0<8>QW2TY3TY3<4>Ua8
+  }
+
+zmsu000            { ; t0:10:04  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
+  inside=zmag outside=summ logmap=yes
+  colors=000zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0F\
+  b<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo\
+  8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY\
+  0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB<6>yeC
+  }
+
+zmsu001            { ; t0:08:23
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=0.0611335/0.896588/3.854683 float=y maxiter=1023
+  inside=zmag outside=summ logmap=yes
+  colors=000zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0F\
+  b<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo\
+  8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY\
+  0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB<6>yeC
+  }
+
+zmsu002            { ; t0:07:32
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=-0.25339936994798840/+0.65815081583709110/38.54683
+  float=y maxiter=1023 inside=zmag outside=summ logmap=yes
+  colors=000zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0F\
+  b<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo\
+  8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY\
+  0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxhB<6>yeC
+  }
+
+zmsu003            { ; t0:01:28  Previously uploaded image on GraphDev
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=+0.00004400994114728/+1.00334360926112700/243.9673
+  float=y maxiter=1023 inside=zmag outside=summ logmap=yes
+  colors=000iEN<8>PE1<15>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<10>IHEJHAKG6LG2M\
+  F0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR1JT2JV3<7>Fk8<9>KR2KP1KN1LL1LJ0MH0MF\
+  0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>MF0OF1<14>wEa<4>k\
+  EQ
+  }
+
+zmsu004            { ; t0:39:43
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Jim Deutch
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jdfrm010 passes=1 video=sf7 params=0/0/0/0/1024/0
+  center-mag=+0.13035665251985660/+0.64841427596992100/38.54683
+  float=y maxiter=1023 inside=zmag outside=summ logmap=yes
+  colors=000000E62L93<3>ze7v2At7IrDQsITtNX<2>wfj<6>zzz<2>jnpdjl_fhUadRZb<2\
+  >GRXGRYGSZGT`<18>1xb0zc0yc<34>8GG<3>OJSSKVWKZ_Kb<5>zIz<2>zvt<2>zpFzoFzmF\
+  zlE<7>nL3lH1mH1<10>xG3zF4zD4<6>z21z00z00<30>ZJE<6>zzF<12>OIBLEAID9GD9DC8\
+  <3>BV4FX7K_BObE<9>zq0<10>FOFP517IC38M<3>q7WrAStE0<5>zaBzhD<2>W_DZ_JaZQYU\
+  LT9Q<3>000
+  }
+
+jdsg100            { ; t0:04:39
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-01 passes=1 video=sf7
+  center-mag=2.22045e-015/-1.77636e-015/0.4775549 params=6/0/2/0/1024/0
+  float=y maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=900ycwbfg<3>tkl<5>zE7<3>c32<20>wcDjeDygE<5>M2QhM0zhsLhnnEzzBd0ZKC\
+  IhxhYylPxfOwQNoWITkjLlrCmzIitOdn<22>d8ee6df6a<9>x14z00z10<13>sSCrUDrVDrW\
+  D<11>vj9vk9wm8wo8xq9<8>ejDciD`hDYgD<4>M`9Wb8<5>PTBNSCMQDKOEJNG<2>JKJIJLK\
+  IL<3>WCOZAP`9Pb8Pd7Pf6P<4>p0T<10>e1LdNL<3>YI5WG1WF1<5>S85R75R75<6>T75T75\
+  U66V66<2>X66Y65_95<12>yn0<5>rX7pU9oRAmNCmOF<3>kVR<3>Hab<3>Yef
+  cyclerange=2/255
+  }
+
+jdsg101            { ; t0:07:44
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-01 passes=1 video=sf7
+  center-mag=0.869553/0.387713/3.511433 params=6/0/2/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000ylPH42I21I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_\
+  cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KO\
+  EzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3\
+  H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74H53 cyclerange=2/255
+  }
+
+jdsg200            { ; t0:14:13
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-02 passes=1 video=sf7
+  center-mag=-0.632896/4.44089e-016/0.85918 params=6/0/5/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=900ycwfgh<2>tkl<5>zE7<3>c32<20>wcDjeDygE<5>M2QhM0zhsLhnnEzzBd0ZKC\
+  IhxhYylPxfOwQNoWITkjLlrCmzIitOdn<22>d8ee6df6a<9>x14z00z10<13>sSCrUDrVDrW\
+  D<11>vj9vk9wm8wo8xq9<8>ejDciD`hDYgD<4>M`9Wb8<5>PTBNSCMQDKOEJNG<2>JKJIJLK\
+  IL<3>WCOZAP`9Pb8Pd7Pf6P<4>p0T<10>e1LdNL<3>YI5WG1WF1<5>S85R75R75<6>T75T75\
+  U66V66<2>X66Y65_95<12>yn0<5>rX7pU9oRAmNCmOF<3>kVR<3>Hab<4>bfg
+  cyclerange=2/255
+  }
+
+jdsg201            { ; t0:26:14
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-02 passes=1 video=sf7
+  center-mag=-1.06575/3.33067e-016/3.423325 params=6/0/5/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=900ycwfgh<2>tkl<5>zE7<3>c32<20>wcDjeDygE<5>M2QhM0zhsLhnnEzzBd0ZKC\
+  IhxhYylPxfOwQNoWITkjLlrCmzIitOdn<22>d8ee6df6a<9>x14z00z10<13>sSCrUDrVDrW\
+  D<11>vj9vk9wm8wo8xq9<8>ejDciD`hDYgD<4>M`9Wb8<5>PTBNSCMQDKOEJNG<2>JKJIJLK\
+  IL<3>WCOZAP`9Pb8Pd7Pf6P<4>p0T<10>e1LdNL<3>YI5WG1WF1<5>S85R75R75<6>T75T75\
+  U66V66<2>X66Y65_95<12>yn0<5>rX7pU9oRAmNCmOF<3>kVR<3>Hab<4>bfg
+  cyclerange=2/255
+  }
+
+jdsg300            { ; t0:07:45
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-03 passes=1 video=sf7 float=y
+  center-mag=-1.11022e-016/1.11022e-016/0.8503401 params=8/0/0/0/1024/0
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=900ycwM2QhM0zhsLhnnEzzBd0ZKCIhxhYylPxfOwQNoWITkjLlrCmzIitOdn<22>d\
+  8ee6df6a<9>tG4vH0uI0<18>N`CLbDKcC<10>6o14q04q0<76>S94S94SA5<35>D11C00D00\
+  <24>fC4hD5iF5<13>wcDjeDygE<4>T9O cyclerange=2/255
+  }
+
+jdsg301            { ; t0:06:17
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-03 passes=1 video=sf7
+  center-mag=0.372633/0.890821/2.273637 params=8/0/0/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=900ycwM2QhM0zhsLhnnEzzBd0ZKCIhxhYylPxfOwQNoWITkjLlrCmzIitOdn<22>d\
+  8ee6df6a<9>tG4vH0uI0<18>N`CLbDKcC<10>6o14q04q0<76>S94S94SA5<35>D11C00D00\
+  <24>fC4hD5iF5<13>wcDjeDygE<4>T9O cyclerange=2/255
+  }
+
+jdsg400            { ; t0:03:19
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7 float=y
+  center-mag=-1.01207/8.88178e-016/0.646946 params=0.75/0/2/0/1024/0
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000ylPXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzz\
+  r<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7E\
+  U<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>um\
+  ptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay\
+  _cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhA cyclerange=2/255
+  }
+
+jdsg401            { ; t0:08:10
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.441549/0.682212/4.756956 params=0.75/0/2/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000ylPxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>ze\
+  Dzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7E\
+  V7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6\
+  >umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>z\
+  aay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhA cyclerange=2/255
+  }
+
+jdsg402            { ; t0:32:29
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.20112136235990190/+0.67012301700060570/30.10731
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwk8<9>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxh\
+  B<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6F\
+  W7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zq\
+  zz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zu\
+  A<17>zaay_cy``<9>yk7yl4xl5wl7<4>wk8 cyclerange=2/255
+  }
+
+jdsg403            { ; t0:12:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.385444/0.609573/27.65672 params=0.75/0/2/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000ylPxi9<3>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxh\
+  B<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6F\
+  W7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zq\
+  zz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zu\
+  A<17>zaay_cy``<9>yk7yl4xl5wl7<10>xj9 cyclerange=2/255
+  }
+
+jdsg404            { ; t0:09:15
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.41185555308289810/+0.59292672251796220/78.57022
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwj9<7>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxh\
+  B<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6F\
+  W7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zq\
+  zz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zu\
+  A<17>zaay_cy``<9>yk7yl4xl5wl7<6>wk9 cyclerange=2/255
+  }
+
+jdsg405            { ; t0:27:13
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.20355861713103040/+0.67682686512967870/301.0731
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPxl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KO\
+  EzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3\
+  H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6\
+  >ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>v\
+  j9vk9wm8wo8xq9zuA<17>zaay_cy``<10>yl4 cyclerange=2/255
+  }
+
+jdsg406            { ; t0:16:18
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.21868067514280490/+0.65272625408714340/155.1923
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwl7<9>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzz\
+  XbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7wl7 cyclerange=2/255
+  }
+
+jdsg407            { ; t0:13:05
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.22268896218254130/+0.65252203603587260/746.117
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPvj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiA\
+  xhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_\
+  A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F9\
+  7F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv\
+  <5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<10>vi9 cyclerange=2/255
+  }
+
+jdsg408            { ; t0:08:41
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.21410284597677890/+0.65632694078060170/746.117
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwl7<10>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzz\
+  zXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2\
+  Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug\
+  1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9v\
+  k9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7 cyclerange=2/255
+  }
+
+jdsg409            { ; t0:12:18
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.22199829026667550/+0.65341182483357780/8675.779
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPyiD<2>yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h\
+  7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6\
+  HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF\
+  4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrV\
+  DrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<6>yhG cyclerange=2/255
+  }
+
+jdsg410            { ; t0:13:38
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.21379120971899780/+0.65418802540150260/902.2811
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwl7<9>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzz\
+  XbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2I\
+  d1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1\
+  zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk\
+  9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7wl7 cyclerange=2/255
+  }
+
+jdsg411            { ; t0:15:49
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.22241179934251750/+0.65153387862736570/3587.101
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPvj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiA\
+  xhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_\
+  A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F9\
+  7F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv\
+  <5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<10>vi9 cyclerange=2/255
+  }
+
+jdsg412            { ; t0:19:24
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.22415747819782880/+0.65143327436631870/4337.89
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPvj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiA\
+  xhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_\
+  A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F9\
+  7F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv\
+  <5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<10>vi9 cyclerange=2/255
+  }
+
+jdsg413            { ; t0:17:28
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=-0.22400215971857410/+0.65127254005626890/17778.24
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPvj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiA\
+  xhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_\
+  A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F9\
+  7F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv\
+  <5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<10>vi9 cyclerange=2/255
+  }
+
+jdsg414            { ; t0:13:36
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=0.419133/0.208847/12.93892 params=0.75/0/2/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none
+  colors=000ylPxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7\
+  >zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7E\
+  V7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz0\
+  0<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<1\
+  7>zaay_cy``<9>yk7yl4xl5wl7<13>xiA cyclerange=2/255
+  }
+
+jdsg415            { ; t0:30:48
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.38471946182696230/+0.26802005694400570/62.20634
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7\
+  >zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7E\
+  V7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz0\
+  0<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<1\
+  7>zaay_cy``<9>yk7yl4xl5wl7<13>xiA cyclerange=2/255
+  }
+
+jdsg416            { ; t0:27:40
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37538982280257200/+0.27134510423053760/254.944
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPzdX<2>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c\
+  20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EY\
+  aSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00\
+  z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<13>zeW cyclerange=2/255
+  }
+
+jdsg417            { ; t0:18:38
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37555990104961430/+0.27432209414788250/1044.853
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPzdX<2>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c\
+  20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EY\
+  aSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00\
+  z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<13>zeW cyclerange=2/255
+  }
+
+jdsg418            { ; t0:20:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37246578524765190/+0.27445295084754610/1225.692
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPzdX<2>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c\
+  20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EY\
+  aSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00\
+  z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<13>zeW cyclerange=2/255
+  }
+
+jdsg419            { ; t0:32:29
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37779708414532510/+0.27473429275182260/1874.588
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPxj9<5>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxh\
+  B<7>zeDzzr<4>V0_A0f<7>zDJ<3>gWz<3>7BN<3>3G`2Id2IX<3>3F0<2>4FF5FK6FP7EV7E\
+  U<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>um\
+  ptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay\
+  _cy``<9>yk7yl4xl5wl7<8>wj9 cyclerange=2/255
+  }
+
+jdsg420            { ; t0:34:00
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37998193547271500/+0.27401458090367330/2089.705
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPsZC<9>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr\
+  <4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU\
+  <22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWDrXD cyclerange=2/255
+  }
+
+jdsg421            { ; t0:34:08
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37714947851235610/+0.27196013071895610/2549.44
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPynL<13>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrW\
+  DrXDsZC<15>gjH<4>znJzmK<8>zcuzazzavzbr<16>zzl<13>JQC<14>ufCxhBxhB<5>yeCy\
+  oXzzr<4>p0_<2>QGZOMYTUVYaSPaO<5>0K0<10>0Fb<6>6FW7EV7EV7EU<3>8DQ8DP7DN<12\
+  >1B20A01A0<13>P70R61S72<4>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<5>ynI
+  cyclerange=2/255
+  }
+
+jdsg422            { ; t0:35:22
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37154343783099930/+0.27079550609195090/1874.588
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPzlM<9>zaay_cy``<9>yk7yl4xl5wl7<18>O00c20zb90FY0`Tz00h7BQFM0\
+  _KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<\
+  3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL\
+  4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<1\
+  1>vj9vk9wm8wo8xq9zuA<6>zmL cyclerange=2/255
+  }
+
+jdsg423            { ; t0:14:05
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37327038618558290/+0.27226110112818210/1613.57
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPziR<6>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c\
+  20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EY\
+  aSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00\
+  z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<9>zjQ cyclerange=2/255
+  }
+
+jdsg424            { ; t0:22:42
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37993850010500880/+0.27253155575504670/1225.692
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwj9<7>xhAxhAxhAxhAxhAxhA<11>xhBxhBxgBygCyfCyfC<2>zeD<12>KcI\
+  GbJF`J<5>8KJ6HJ6HL<19>8Dz<8>ACRBCNBCJCBFDBE<6>F97F96G85G74<3>I00<11>ZC3`\
+  D3aE3cF4eI4gL4<6>ug1zj1yn0<18>yptypwyou<27>z00<12>tOAtQBsSCrUD<13>vj9vk9\
+  wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<6>wk9 cyclerange=2/255
+  }
+
+jdsg425            { ; t0:35:27
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.38035841021401430/+0.26967668130982780/1482.233
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi\
+  9xiAxiAxhAxhAXMVCNDO00c20zb9<2>z00h7BQFM<4>d00nM5xhB<7>zeDzzr<4>V0_A0fmk\
+  Inf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G\
+  85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6\
+  d<10>x14z00z10<15>rVD cyclerange=2/255
+  }
+
+jdsg426            { ; t0:32:48
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.38012159587942100/+0.27420535688611270/7463.233
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPsZC<9>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr\
+  <4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU\
+  <22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWDrXD cyclerange=2/255
+  }
+
+jdsg427            { ; t0:29:07
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37999310830525150/+0.27375755217419420/10771.68
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPsZC<9>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr\
+  <4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU\
+  <22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWDrXD cyclerange=2/255
+  }
+
+jdsg428            { ; t0:30:08
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.38009206767914590/+0.27358832829018930/15365.48
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPsZC<9>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr\
+  <4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU\
+  <22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWDrXD cyclerange=2/255
+  }
+
+jdsg429            { ; t0:43:49
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37958769409607090/+0.27441050093417520/12149.45
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPsZC<9>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr\
+  <4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU\
+  <22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>ump\
+  tuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrVDrWDrXD cyclerange=2/255
+  }
+
+jdsg430            { ; t0:17:36
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37303163557556170/+0.27205609254297510/9381.22
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPziR<6>zaay_cy``<9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c\
+  20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EY\
+  aSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00\
+  <11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00\
+  z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<9>zjQ cyclerange=2/255
+  }
+
+jdsg431            { ; t0:12:34
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37295411914373670/+0.27247302355328720/10212.47
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPygJ<4>yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h\
+  7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6\
+  HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF\
+  4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<13>sSCrUDrV\
+  DrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<4>yfM cyclerange=2/255
+  }
+
+jdsg432            { ; t0:39:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.38028415143476720/+0.26942459896359600/7126.119
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPs`C<7>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>xi9\
+  xiAxiAxhAxhAXMVCNDO00c20zb9<2>z00h7BQFM<4>d00nM5xhB<7>zeDzzr<4>V0_A0fmkI\
+  nf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G8\
+  5G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrnv<5>e6d\
+  <10>x14z00z10<13>sSCrUDrVDrWD<2>s_C cyclerange=2/255
+  }
+
+jdsg433            { ; t0:33:05
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37963010936061730/+0.27436739035149900/62626.02
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPx93<9>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7\
+  yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d0\
+  00hzxhB<7>zeDzzr<3>aDc<7>PaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7E\
+  U<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzzVZz77<5\
+  >umptuxrnv<5>e6d<10>x14z00z10<2>y73 cyclerange=2/255
+  }
+
+jdsg434            { ; t0:37:07
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37962873669833420/+0.27440418537110790/121494.5
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPwF6<6>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7\
+  yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d0\
+  00hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0F\
+  b<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <20>zqzz00<6>umptuxrnv<5>e6d<10>x14z00z10<5>wD5 cyclerange=2/255
+  }
+
+jdsg435            { ; t1:29:14
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37952024558946860/+0.27441605780590520/76895.24
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000zzztcB<5>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<9\
+  >zzr<10>YaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G85\
+  G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<10\
+  >x14z00z10<13>sSCrUDrVDrWD<4>taB cyclerange=2/255
+  }
+
+jdsg436            { ; t0:29:58
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37963179773522540/+0.27440834540504130/1214945
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=000ylPy52<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk\
+  7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d\
+  000hzxhB<7>zeDzzr<4>V0_A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0\
+  Fb<6>6FW7EV7EV7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn\
+  0<20>zqz<5>wsyvtyutytuxrnv<5>e6d<10>x14z00z10z31 cyclerange=2/255
+  }
+
+jdsg437            { ; t0:54:19
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37951044258450790/+0.27440516812763920/565406.2
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000zzzrXD<10>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<\
+  9>zzr<10>YaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G8\
+  5G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<1\
+  0>x14z00z10<13>sSCrUDrVDrWD cyclerange=2/255
+  }
+
+jdsg438            { ; t1:02:59
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37950445667882400/+0.27441942015676420/630288.9
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000zzzrUD<13>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<\
+  9>zzr<10>YaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G8\
+  5G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<1\
+  0>x14z00z10<13>sSC cyclerange=2/255
+  }
+
+jdsg439            { ; t0:43:43
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37965498145212130/+0.27437490147811380/147702.9
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=060ylPwD5<7>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cx_c<39>0_\
+  K<16>ieC<9>NcHGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb1Fa2F`<3>4Nk4Qn4Qm<13>5K_6JZ\
+  5HX<10>12C00A20A<10>S83V92WA2<3>aE3cF4eI4<7>ug1zj1<2>zmH<3>enI<13>xpwzqz\
+  zqz<2>xrzwsyunw<5>gIhdCe`0`<8>uWFw_DwVAwQ7xL4<6>xB4 cyclerange=2/255
+  }
+
+jdsg440            { ; t0:49:33
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37965158286988780/+0.27437348981247340/419610.5
+  params=0.75/0/2/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none
+  colors=060ylPnYo<2>gIhdCe`0`<8>uWFw_DwVAwQ7xL4<6>xB4<8>sSCrUDrVDrWD<11>v\
+  j9vk9wm8wo8xq9zuA<17>zaay_cx_c<39>0_K<16>ieC<9>NcHGbJ<6>8KJ6HJ6HM<3>3H`2\
+  Id1Hc0Fb1Fa2F`<3>4Nk4Qn4Qm<13>5K_6JZ5HX<10>12C00A20A<10>S83V92WA2<3>aE3c\
+  F4eI4<7>ug1zj1<2>zmH<3>enI<13>xpwzqzzqz<2>xrzwsyunwshtpcr
+  cyclerange=2/255
+  }
+
+jdsg441            { ; t0:53:53
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37950844572107270/+0.27440429782108130/2914465
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000zzzrXD<10>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>YNWXMVVNX<13>0hz<\
+  9>zzr<10>YaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F97F96G8\
+  5G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzypz<10>n_p<3>e6d<1\
+  0>x14z00z10<13>sSCrUDrVDrWD cyclerange=2/255
+  }
+
+jdsg442            { ; t1:48:50
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37951104447166210/+0.27442560254382760/369688.7
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000zzzy73<10>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy_c<28>Y\
+  NWXMVVNX<13>0hz<9>zzr<10>YaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7E\
+  V7EU<22>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<19>ypwzqzyp\
+  z<10>n_p<3>e6dz6ah5Y<8>x14z00z10z31y52 cyclerange=2/255
+  }
+
+jdsg443            { ; t1:37:50
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by Sylvie Gallet
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=jd-sg-04 passes=1 video=sf7
+  center-mag=+0.37952311283253170/+0.27442257100490800/1482540
+  params=0.75/0/2/0/1024/0 float=y maxiter=2047 inside=0 logmap=192
+  symmetry=none
+  colors=000230trQwvQzzPzzUzzZmyI<10>QUv<6>B9X86U460<18>ly0<2>sp0um0uj0<5>\
+  gU0eR0bO2<7>L0II0K<5>4GV2IU0LS0OQ<11>Us2Wq0Yn0<10>yLYyI`vGctDfqAjo8ll5jj\
+  2fg0ce0`<11>CI0AJ0<3>0PC0RE2SH5UK7VN<7>RJj<11>t1Cv09y06y23v50t80<15>HpzF\
+  svCvr<3>2jb0hZ0eW<7>IJ0LH0NE3<3>W31Z00b29<5>zIzzUzzezzrz<2>smnpkimiejg`n\
+  jTrmLvpD<2>WyF<3>Nm0Lj0<8>0LW0I_2Fb4Cf<4>FRz<3>OCbQF_<3>lDB<5>rlN
+  cyclerange=2/255
+  }
+
+mjlc000            { ; t0:01:51
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1 center-mag=0/1.11022e-016/0.8780942
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzxhB<7>zeDzzr<4>V0\
+  _A0fmkInf9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc0Fb<6>6FW7EV7EV7EU<22>F\
+  97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqzz00<6>umptuxrn\
+  v<5>e6d<10>x14z00z10<13>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<\
+  9>yk7yl4xl5wl7<11>xi9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc001            { ; t0:20:58
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.503298/0.072566/17.56188 params=0/0/0/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none video=sf7
+  colors=000zzzsQpyzz<17>Whn<11>ziB<11>MZ2JY2HX1<3>6R13Q12P10O0<5>DU1FV2IW\
+  2KX3MY3P_4<6>Ra5WcB<7>zyz<5>hVSePMbLJ<5>O01<16>oD1qE1qF1<11>w`7xb8xb8<6>\
+  yi9yj9ykAymB<6>yxKzzMxyM<7>hlPfjQdjR<15>FahD`jD_k<14>n69p46s23v00q00<8>0\
+  08<10>GDZIFaJEcLDcNBbP9aS7`V5_<4>l9IoHFrPC<2>xc3zi0zh2<18>lElpHpqKprNp
+  cyclerange=2/255
+  }
+
+mjlc002            { ; t0:03:20
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-1.08826/0.077885/5.105199 params=0/0/0/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none video=sf7
+  colors=000ylPf00cM0zUE0FY0hcz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc003            { ; t0:03:37
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.0451259/0.549678/3.136051 params=0/0/0/0/1024/0
+  float=y maxiter=1023 inside=0 logmap=yes symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc004            { ; t0:09:55
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.53113378863789840/+0.11749230275229380/129.1315
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000zzzu2Bv17x14z00<12>tOAtQBsSCrUD<2>rXDrYDs_DsaD<12>zzA<17>zaay_\
+  cy_c<28>YNWXMVVNX<12>3fw0hz0hz<44>0BO1AN1AL<3>16D05B05B<13>EABEAAE99F98F\
+  97F96<2>H53H42I21I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0<20>zqz<20>zxmzylz\
+  ykzzj cyclerange=2/255
+  }
+
+mjlc005            { ; t0:12:43
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.40355/0.28457/18.23285 params=0/0/0/0/1024/0 float=y
+  maxiter=1023 inside=0 logmap=yes symmetry=none video=sf7
+  colors=000ifu<10>VUg<12>wloznpzllzkhyic<3>xcM<2>xZG<5>VG4jI4zL4<9>PB5LA6\
+  HB7EB7BC7<9>QF7SG8TI8<2>WO8XQ8WQ7UQ0SQ5RR3PR2<4>RU5<10>zg7<11>cM7<9>z00<\
+  2>k31f52a62X83Y73<18>h21i21i42<6>iOB<6>iOMiPOiRP<6>ia_jcajc_<11>qS0<9>QG\
+  0NE0NF1<12>KSKJUMKTN<13>bGYdFZeGX<10>pU6qW3qW3<12>vf3wg3uf6reAzzz
+  cyclerange=2/255
+  }
+
+mjlc006            { ; t0:13:54
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.03768086253908674/+0.45340441100917410/31.36051
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc007            { ; t0:04:53
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.09974671294358965/+0.68534510777024590/98.79192
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc008            { ; t0:03:18
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-1.05087557376360100/-0.00009080245871611/105.917
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=0007R3KTP<3>GPYFO_EO`<2>BLf<4>LDcNBbPB`<7>jILmJJpKHsLFuMFvOFxPFzR\
+  EyNGwJJuFM<9>W0Y<2>e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2H\
+  X1<3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<6>zsl<15>O01<16>oD1qE1qF1<1\
+  6>zjA<17>GU5DT4AS47R4BQ6DQ7FP8<2>RLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS\
+  9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<2>LUN cyclerange=2/255
+  }
+
+mjlc009            { ; t0:09:56
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.04092475937460893/+0.43582584524917410/257.0533
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc010            { ; t0:18:10
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.02406713155722322/+0.46728692917431170/257.0533
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc011            { ; t0:10:35
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.03667525452007486/+0.43616977000954100/2570.533
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc012            { ; t0:14:25
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-1.05015128377123600/+0.00000368984719214/2118.34
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=0007R3KTP<3>GPYFO_EO`<2>BLf<4>LDcNBbPB`<7>jILmJJpKHsLFuMFvOFxPFzR\
+  EyNGwJJuFM<9>W0Y<2>e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2H\
+  X1<3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<6>zsl<15>O01<16>oD1qE1qF1<1\
+  6>zjA<17>GU5DT4AS47R4BQ6DQ7FP8<2>RLEVJGYJK<2>hIW<4>iNf<7>DSz<5>9_Z8aU8aS\
+  9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<2>LUN cyclerange=2/255
+  }
+
+mjlc013            { ; t0:14:21
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-0.10582388245389360/+0.68419695862652490/987.9192
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=000ylPf00cM0tDc0FY0ecz00h7BQFf0_KOEzzzXbU6d000hzzq0<2>qkFnhKihO<4\
+  >JkjWMbf0Tq0LV0_A0fzvIsd9lN0f`EYaSPaOGbJ<6>8KJ6HJ6HM<3>3H`2Id1Hc<2>15A00\
+  0126<2>5BO7EV7EV<23>F97F96G85G74<3>I00<11>ZC3`D3aE3cF4eI4gL4<6>ug1zj1yn0\
+  <11>yo_yobyqf<2>ywuzzzzzz<9>uvytuxrnv<5>e6dg6ah5Y<3>s4Lv3Iz2E<4>z24z31y5\
+  2<11>sSCrUDrVDrWD<11>vj9vk9wm8wo8xq9zuA<17>zaay_cy``<9>yk7yl4xl5wl7<11>x\
+  i9xiAxiAxhAxhAXMVCND cyclerange=2/255
+  }
+
+mjlc014            { ; t0:11:20
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-1.05041816888798800/+0.00020921061254260/10919.28
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=0007R3KTP<3>GPYFO_EO`<2>BLf<4>LDcNBbPB`<7>jILmJJpKHsLFuMFvOFxPFzR\
+  EyNGwJJuFM<9>W0Y<2>e8fhBilElpHp<9>zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2H\
+  X1<3>6R13Q12P10O0<5>DU1FV2IW2KX3MY3P_4<6>Ra5<5>tpeQsle`ivlf<13>O01<16>oD\
+  1qE1qF1<16>zjA<17>GU5DT4AS47R4BQ6DQ7FP8<2>RLEVJGYJK<2>hIW<4>iNf<7>DSz<5>\
+  9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<2>LUN cyclerange=2/255
+  }
+
+mjlc015            { ; t0:12:29
+                     ; Par and Image Copyright 1996 by Lee H. Skinner
+                     ; Formula by George Martin
+  reset=1930 type=formula formulafile=phc_1.frm
+  formulaname=manjul_lace passes=1
+  center-mag=-1.05050934912530900/+0.00017590837419700/63484.17
+  params=0/0/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=yes
+  symmetry=none video=sf7
+  colors=0007R3DSz<5>9_Z8aU8aS9`Q<2>9_P9_O9ZO9YO<6>PXFOWI<4>JSRIRTHQW<5>BL\
+  f<4>LDcNBbPB`<7>jILmJJpKHsLFuMFvOFxPFzREyNGwJJuFM<9>W0Y<2>e8fhBilElpHp<9\
+  >zlp<7>zMbmJb_Gb<7>Lbi<5>ziB<11>MZ2JY2HX1<3>6R13Q12P10O0<5>DU1FV2IW2KX3M\
+  Y3P_4<6>Ra5<5>tpeQsle`ivlf<13>O01<16>oD1qE1qF1<16>zjA<17>GU5DT4AS47R4BQ6\
+  DQ7FP8<2>RLEVJGYJK<2>hIW<4>iNf<6>HRx cyclerange=2/255
+  }
+

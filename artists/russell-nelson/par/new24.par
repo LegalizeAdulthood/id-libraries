@@ -1,0 +1,1001 @@
+fractiles          {;  p1=Mandelbrot set coordinates
+  reset=2000 type=formula formulafile=jim.frm
+  formulaname=Mosaic function=tan/tan/tan/tan
+  center-mag=4.44089e-015/-3.16414e-015/0.1392427/1/-3\
+  9.999 params=-1.76/0 float=y maxiter=95
+  bailout=25 inside=0 logmap=yes symmetry=none
+  periodicity=10 sound=off
+  colors=000IVBEVBMZCUaDdA2<3>GU5AY5Ia9<3>kmNrpRysU<3>\
+  ZihSflLdpEat8_wRkWiw5nmOscfdAV<3>lWSn`RpfRrkQspQ<3>d\
+  RI`KGYEF<3>`U3`Y0Rb1Hg1<2>PK`RClWFk<3>lRkqUkuXky_k<3\
+  >YcVRdQKeMDfI6gEAbBEY9HU7<3>_S4dS3iS2mS2<3>eZec_odch\
+  <3>gpKgtEhw8hz2<3>uvMxvQmcRcLR8isNkSal1<3>ioJkpNmpSo\
+  qWqq_<3>mbelZfkVgjShbOQVL7<3>LNRJNWHN`FNd<3>SZnVapM_\
+  hDY`4XU<3>7HM8DK99I96H<3>58W48Z38b38e<2>vzhoC`<3>cME\
+  `P8ZR3c0G<4>PKQ<2>GVV<3>WSO_RMcQLgPJkPIiYIheI<3>hISh\
+  CUh7WVEG<2>1VK<3>EskHyqUWee2UZWgTxt<3>LQoVQrcQu<3>H9\
+  y<3>_d4<3>OoTLr_IueFxkDzq<2>kKl<3>feZejVdoSctP<3>hkf\
+  iijjgokeslcw<2>HSu<3>9bo7dn5gm3il<6>rKe
+  }
+
+frm:Mosaic {;  p1=Mandelbrot set coordinates
+z=c=p1+.05*(fn1(fn2(real(pixel)))+\
+flip(fn3(fn4(imag(pixel))))):
+z=sqr(z)+c,
+|z| <= 100
+}
+
+3rdCoast.gif       { ; image(c)2000 Jim Weaver
+  reset=1960 type=mandel(fn||fn) function=log/flip passes=t
+  center-mag=+1.60533291452199800/-1.33498883875210200/1.18619/1/45
+  params=0/0/0.7541600000000001 float=y maxiter=255 inside=bof60
+  decomp=256 periodicity=0
+  colors=000700<11>`00c00d44<13>zzz<3>snNukDsh3qe0<2>kX0aU0<9>I00<8>000300\
+  000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupw\
+  xvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0C<4>\
+  B02900700500005<13>00c<15>zzz<15>EEcBBa88Z<2>00S<9>003000022<14>0cc<15>z\
+  zz<15>0c0<14>030000200500
+  }
+
+Fins               { ; image(c)2000 JimWeaver
+  reset=1960 type=formula formulafile=_i.frm formulaname=inandout13
+  function=sinh/sqr passes=t
+  center-mag=-0.626395/0.463283/3.369305/1/-12.498 params=1/0/0/0
+  float=y inside=epsiloncross invert=0.1/-0.4/0 periodicity=0
+  colors=0000c0<14>030000200<13>`00c00d44<13>zzz<3>snNukDsh3qe0<2>kX0aU0<9\
+  >I00<8>000300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmb\
+  qoesqjusovupwxvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0\
+  IP0GN0GL0C<4>B02900700500005<13>00c<15>zzz<15>EEcBBa88Z<2>00S<9>00300002\
+  2<14>0cc<15>zzz<14>4d4
+  }
+
+g303004.gif        { ; image(c)2000 JimWeaver
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=g-3-03-m function=log/conj passes=b
+  center-mag=0.990512/-1.19193/1.94364/1/87.5 params=0.11/0.03/0.4/0
+  float=y inside=bof60 outside=real periodicity=0
+  colors=000nP0<3>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
+  K6HI6FG6DF5<2>795574354033077<13>4zz<15>zz0<15>z1z<15>000<7>0K00N00Q00T0\
+  0W0<3>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<9>oS0
+  }
+
+kchn17a1.gif       { ; image(c)2000 JimWeaver
+  reset=1960 type=formula formulafile=fract196.frm
+  formulaname=inandout04 function=cabs passes=b
+  center-mag=0.0402045/-0.0677868/2.994378/1/-77.5
+  params=0.9399999999999999/-0.58/100/0 float=y maxiter=255
+  inside=bof60 periodicity=0
+  colors=000pnnwuu<9>aQH_MDYJ9VF4SD4<5>421445<7>UOFYRG`THdWJfXJ<5>oaI<4>jT\
+  FiSEhQDgOCfMBeKB<7>Y54X33Y65<13>skYuo`un`<4>riYqhYogX<29>553432221000101\
+  <18>K4AL4BM5BN6B<25>uaEwcExdEzfFyeF<26>N9CL8CK7CI5BH5AG59F49E4873D<7>214\
+  213112000000000<24>325325325436534423<6>jhh
+  }
+
+Wave               { ; image(c)2000 JimWeaver  (etch02z.gif)
+  reset=1960 type=formula formulafile=_i.frm formulaname=inandout06
+  function=atanh/asinh/sin passes=b
+  center-mag=-1.04373304461890100/+0.05870978187343233/1250.463/0.9786/-11\
+  5.201/-13.313 params=0/0/0/0 float=y inside=bof60
+  colors=000yeCxbBu_9sX8oU7lR5<2>ZI2UF1OC1<3>000000<3>O82UA3ZC5cE7hG9lIBoK\
+  EsMGuOJxQMySPyTSzVVyTSySPxQMuOJsMGoKElIB<2>ZC5UA3O82<3>000000610C21I31O4\
+  3U55Z67c7Ah8Dl9HoALsBOuCTxDXyEazFfzGjyFeyEaxDXuCTsBOoALl9Hh8Dc7AZ67U55O4\
+  3I31<2>000000500901E02I04<3>Y0I`0Mb0Se0Wg0ai0gj0mj0tk0yj0tj0mi0gg0ae0Wb0\
+  S`0MY0IU0EQ0AM07I04E02<2>000000300601901<2>I07K0AM0EO0HQ0LS0O<3>V0fW0jV0\
+  f<2>T0TS0OQ0LO0HM0D<4>901<2>000000<3>602703905<2>C0BD0EE0GE0JF0M<2>G0V<4\
+  >E0GD0EC0BB09A07<3>401300100<4>000001001002003<7>00E00F00E<6>004640<2>OG\
+  0UK0ZO0cS0hW0lZ0ob0sf0uj0xn0yr0yv0zz0yv0yr0xn0uj0sf0ob0lZ0<2>ZO0UK0OG0<3\
+  >000000<2>I90OC1UF1ZI2cL3hO4lR5oU7sX8u_9xbB<2>zjFzhE
+  }
+
+April1980          {; Mandelbrot discovered it in 3/80
+  reset=2000 type=mandellambda passes=1
+  corners=2.963/2.971/0.263/0.271 params=0/0 float=y maxiter=1023
+  inside=255 outside=15 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=@default.map
+  }
+
+
+6041302.GIF        { ; Nacht und Nebel                      t=  0:39:57.97
+                     ; Copyright Sylvie Gallet, Apr 14, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=-3.05548/9.30136/3.942029/1/-109.999
+  params=-1/1/2/-1.5/0/0 float=y maxiter=2000 bailout=25 inside=0
+  symmetry=none periodicity=0 sound=off
+  colors=RRRTTT<41>FFFFFFFFF<3>DDDCCCCCC<3>888777666<3>555555555<2>555\
+  555666777<18>HHHIIIIII<4>MMMMMMNNN<41>_________<4>bbbbbbccc<5>dddeee\
+  eeeffffff<19>llllllmmm<2>nnnnnnmmm<69>TTT
+  }
+
+60311002.GIF       { ; .                                    t=  0:47:42.59
+                     ; Copyright Sylvie Gallet, Apr 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+2.88673055761374900/-3.59466658910688800/2.528976e+011
+  params=1/-1.5/-3/0.5/0/0 float=y maxiter=1600 bailout=25
+  inside=0 logmap=104 symmetry=none periodicity=10 sound=off
+  colors=0A54F6<9>FU8GW9HX9<2>KaALbAOcA<4>elEhnFlpG<3>zwJ<8>zeFzcEzaE<\
+  3>zUB<7>zi5zk4zm4<2>zs1zu0zu1<24>zynzypzyr<2>zyxzzzzzz<163>3E5
+  }
+
+60401A03.GIF       { ; .                                    t=  0:24:32.45
+                     ; Copyright Sylvie Gallet, Apr 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+72.39005639767717000/+0.00000005358312205/18109.86
+  params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
+  inside=0 logmap=47 symmetry=none periodicity=10 sound=off
+  colors=000zzz046<8>0MX<3>0Uh1Xk1Wi<8>7FM7EK8CH<2>A69B46D46<18>nAJpAK\
+  rAL<2>xBNzCOzDO<17>zjOzlOznO<3>zvO<22>zKPzIPzHP<3>z9Qz7Qz6Rz4Rz2Rz0S\
+  <25>C3AA39838<2>236045046<17>0DK0EK0EL0FL0FM<21>2Q`2Ra2Rb2Sb2Sc2Td<7\
+  >AYfBZfCZf<23>_kd`ldald<3>end<15>07B
+  }
+
+60401A08.GIF       { ; .                                    t=  1:01:32.91
+                     ; Copyright Sylvie Gallet, Apr 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+72.39004428961769000/-0.00001110987082908/1.185761e+011/\
+  1.0003 params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
+  inside=0 logmap=144 symmetry=none periodicity=10 sound=off
+  colors=000<9>0KU0MX0O_<3>1Xk<5>4MX5LU5JS<3>8CH9AF98CA69B46<5>N5BP6CR\
+  6D<10>m9Ko9Lq9M<2>wAOzBPzCP<16>zfUzhVzjVzlWznW<2>ztXzvYzv_<4>zwizxkz\
+  xm<3>zzv<9>zVbzS`zOZ<2>zFTzBRz9Q<3>z2Rz0Sx0R<24>C3AA39838<2>23604504\
+  6<15>0CI0DJ0DK0EK0EL0FL<22>2Q`2Ra2Rb2Sb2Sc<2>4Ue5Ve6We7We8Xf<27>_kd`\
+  ldald<3>end<15>07B
+  }
+
+60401B04.GIF       { ; .                                    t=  2:29:42.95
+                     ; Copyright Sylvie Gallet, Apr 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+72.47170030731296000/-0.04740244275976058/1503.494/1/-90
+  params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
+  inside=0 logmap=75 symmetry=none periodicity=10 sound=off
+  colors=000zzz0Sb<23>0CI0BH0BG<2>09E08D08D08D<9>059058058<2>047047058\
+  <15>0DK0EK0EL0FL0FM<21>2Q`2Ra2Rb2Sb2Sc2Td<9>CZfD_fE_f<13>SflTflUgmVh\
+  m<3>Zjo_jp`kpakqblrcmrcmr<26>HTbGSbFRa<2>CO_CNZCMX<7>BDKBBJBAH<2>B7C\
+  A5AB46<3>J59L5AN5B<3>T5DV5EX5E<4>d7Hf7Ih7J<3>o8Lq8Ls9M<2>x9OzAPzCP<1\
+  4>zhZzjZzm_<3>zvb<2>zqazpazpb<12>www
+  }
+
+60401B07.GIF       { ; .                                    t=  2:18:43.14
+                     ; Copyright Sylvie Gallet, Apr 11, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+72.47183790716201000/-0.04891345439138522/75333.13/1/119\
+  .999 params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
+  inside=0 logmap=140 symmetry=none periodicity=10 sound=off
+  colors=000000025<86>1P_1P`1P`1Q`1Qa<3>2Sc3Tc4Td<3>6Ud7Ve8Ve<26>Zlt_m\
+  t`nu<2>cpwcpwbov<17>NZgMYfLXe<3>IUcHTbGSb<3>CO_CNZCMX<7>BDKBBJBAH<2>\
+  B7CA5AB46<3>J59L5AN5B<3>T5DV5EX5E<4>d7Hf7Ih7J<3>o8Lq8Ls9M<2>x9OzAPzC\
+  P<14>zhZzjZzm_<3>zvb<2>zqazpazpb<12>www
+  }
+
+6041301.GIF        { ; .                                    t=  2:54:43.98
+                     ; Copyright Sylvie Gallet, Apr 14, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+1.16611516126891800/+0.26169401064720740/3.96582e+007
+  params=1/1.8/-1/-0.5/0/0 float=y maxiter=4000 bailout=25
+  inside=0 logmap=378 periodicity=0 sound=off
+  colors=000zzz05F<29>8IR8IR9JS<29>IR_JS`JS`KSaKSa<2>LTbLUbNWd<3>VclYe\
+  n_gp<3>hpy<4>UajQYg<32>_fp`gq`gq`hqahq<2>birbirdks<3>lsxnuzksx<3>_gp\
+  WdmUbl<9>COYANX8LV<2>2HR0FP0GQ<3>8NXAPZCR`<3>KZh<3>CTbASa8Q_<3>0KU<2\
+  >L0B<11>kCNmDOpEPrFQtGRwHS<25>xnXxoXxpYxrYxsYxtYyvZzx_<21>www
+  }
+
+6041307.GIF        { ; .                                    t=  1:07:14.20
+                     ; Copyright Sylvie Gallet, Apr 14, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=-1.02154424034962000/+3.34908648639290700/1.443724e+008
+  params=-1/1/2/-1.5/0/0 float=y maxiter=2000 bailout=25 inside=0
+  symmetry=none periodicity=0 sound=off
+  colors=00PTgv<3>WiwXjwYjx<23>nwynwyoxy<3>qyyryxryxsywsyw<3>uzuuzuvzt\
+  <3>wztwzsxzs<4>xypxyoxynxxnxxmxxl<13>xsbxrbxraxraxr`<3>wpYwpYwoX<5>t\
+  lStkRsjQsiPshO<2>rgNqfMqeLpdKpcJ<4>n_HmZGlYFkYEjXD<3>hUBgTAfS9<8>_L5\
+  ZK4ZK4<4>UG2UG2TF1<2>QC1PC1PB1OB1NA1<8>H60G50F40<2>E41D31D32C22C22<2\
+  >A12913913814814<3>606506507<2>307308208209209<7>12D12E02E<3>03H03I0\
+  3J<3>05L06M06N<3>28R29R29S<2>2BU3CV3DX<7>7Jb8Kc8Ld<3>ANfBNgBOg<6>GTm\
+  HUnHVn<3>LZqM_rM`r<3>PctPcuQduQdvRevSfv
+  }
+
+6041403.GIF        { ; .                                    t=  0:57:25.08
+                     ; Copyright Sylvie Gallet, Apr 14, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=+2.53408422974110600/-5.58614796935317300/786.2559/1/105
+  params=1/0.55/-1/0.65/8/0 float=y maxiter=5000 inside=0
+  logmap=74 symmetry=none periodicity=0 sound=off
+  colors=000`NC<22>rgOshOsiP<3>wmRxnRxoSypSzqT<3>xoPxnOwlN<4>qeIodHnbG\
+  <2>jZDiXCjYE<23>vtpwuqwvs<2>yyxzzzyxx<14>bSNaQL_NI<2>WHBUE8UF8<4>ZLC\
+  _ND`OE<3>cTHcUIdVJ<11>oidpkeqlgrnisoj<2>vspwurvsp<2>pkinhfmfclda<8>W\
+  KFUHDSFA<2>M83K50K50<8>RA9SAASBB<5>XEHYFIZGJ_HK_HK<4>cLPdMQdNR<2>fQT\
+  gQUgRUgRV<59>zzw
+  }
+
+frm:MandelbrotMix4 {; Jim Muth
+a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
+g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
+k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
+z=k*((a*(z^b))+(d*(z^f)))+c,
+|z| < l
+}
+
+StarBK3D.gif       { ; generate and save this image first....
+                     ; image(c)2000 Jim Weaver
+  reset=1960 type=mandelcloud passes=t
+  center-mag=-0.33415666398458920/-0.11654631378666610/0.9733577/1.5407/67\
+  .148/-14.814 params=75 float=y maxiter=20000
+  colors=000pX4<9>xn7yp8yqAyqCyqD<13>sqknsqprq<8>CCs<4>88b88Z77U<3>2260000\
+  00<8>10`20e000kkkD7g<3>xbz<9>51U<5>64565885B<37>wowxsx<13>A00<15>m00o00o\
+  03<14>z0z<2>z0oz0kz2i<3>wDa<16>ZDm<4>IBs03w<8>0Bb1B`3BZ<12>O53Q40R50<18>\
+  mQ3nR3nS3oU3pW3
+  }
+
+Star3D.gif         { ; this should turn StarBK3D into somethin' cool(CYCLE IT)
+                     ; image(c)2000 Jim Weaver
+  3d=yes filename=starbk3d.gif scalexyz=100/100 roughness=150
+  waterline=0 transparent=0/1 ambient=20 rotation=70/45/0
+  perspective=100 xyshift=0/0 colors=@jc216.map
+  }
+
+Easteregg          { ; Mods to Moire Mask
+                     ; Easter Egg (C) 1999 P. Kyle
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  center-mag=-7455.29/-7455.39/0.0001798271/1/44.999
+  params=0.1300804/0/2.71828182845905/0.01 float=y maxiter=647
+  inside=maxiter outside=real logmode=fly potential=255/334/0
+  invert=6/0/0
+  colors=110<46>00z<30>112110332<30>zzz<30>222000002<30>00z<30>002000110<4\
+  6>zz0
+  }
+
+tesseral           { ; ;
+                     ; This image was generated in a PII300 64MB RAM
+                     ; Apr 19, 2000, 11:45:21 calctime  0:00:07.80.
+                     ; Paste left by Fernando Bresslau bresslau@ozdobe.org
+                     ;  Version 2000 Patchlevel 9
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=sin passes=t
+  center-mag=-1.01781036168132900/+0.88593235071707930/10752.69
+  params=-4/-2/-3/-1/0/0 float=y maxiter=2000 fillcolor=0 inside=0
+  viewwindows=4.2/0.75/yes/683/512 sound=off
+  colors=000zP0<7>aP5ZP5WP6<3>JP8FQ9CQ7<3>0P0<4>1VD1WF2YI<3>3aS3bV4dY4e`4f\
+  c<3>LlTPmQUnN<3>itBmv8rw6vy3zz0<4>ye1ya1yY1<3>xH2<9>N61J51F41<3>000<4>00\
+  0<2>000<3>D08H0AJ09<4>Y0Q_0Tb0W<2>k0fn0io4j<3>rLosPpsUq<3>wiuxmvyrxyvyzz\
+  z<4>bbfYYbTTZ<2>FENA9J7AI3AH0BG<3>0DJ0EK0EL0FM<4>AAIC9HE8H<3>M4DO3CQ2CS1\
+  BU0A<4>LBLJDNIFQ<3>BNY9P_8Rb6Td4Vf<42>jpbkqblqb<3>ptbqubrubsvbtwb<2>xyjz\
+  zmzzj<7>zzLzzHzzE<2>zz4zz0zx0<5>zj1zh1zf1<5>yS3
+  }
+
+
+6m019141           { ;                                       t=4704:58:34.18
+                     ; on a P300 at 1600x1200  Apr 22, 2000  20:43:02
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=mandel passes=1
+  center-mag=-0.743643835164816022194831/0.13182593159912230048051/1.41289\
+  4e+019 params=0/0 float=y maxiter=1048575 fillcolor=0 inside=0
+  logmap=522700
+  colors=000<157>kKWlKXlKX<2>mLXmLYmLW<6>tMFuMDvMA<3>zN0<3>OB6E78H68<3>T08\
+  <3>dD8gG8jK8mN8pR7<3>udCwgDwkA<2>zy0<4>zyZ<3>zzz<3>dss_qqUpo<3>8hg<3>8RT\
+  8MQ8IM8DI88E85B<21>Jz0
+  }
+
+6M19141B           { ; Sylvie Gallet, Apr 21, 2000          t=4704:58:34.18
+                     ; <sylvie_gallet@compuserve.com>
+  colors=0J2yuU<2>yxdzzhzzh<120>vwxvwxvwxvwxvwxvwxuvy<31>ARg8Qf7Pf<3>0Kc<2\
+  0>gmpinqkpqmqr<3>vwvxyvzzw<6>ioigmgeke<3>WeYUdWRbU<2>KYOHWLHUJ<3>EMBDK9C\
+  I7<2>AA0<3>RF4VH5ZI6cK7<3>l`BndCphD<3>zzH<7>www
+  }
+
+6027000l.GIF       { ; Blue Grotto                 t=  0:46:27.08
+                     ; Copyright Sylvie Gallet, Apr 22, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=mmix4-lake-0270 function=recip passes=1
+  center-mag=-0.40374468230415920/+2.08435374453009100/2.65758\
+  7e+010/1/-132.5 params=0/0/40/0/0.2/300 float=y
+  maxiter=1200 inside=0 logmap=139 symmetry=none sound=off
+  colors=000<3>046058068<12>0CI0DJ0DK<7>0HO1IP1IQ1JR1JR<13>2Q`\
+  2Ra2Rb<3>3Td4Ue5Ve<3>9YfAYfBZf<3>G`gIahJbh<15>fqsgrtist<3>ow\
+  xqxyryytzz<25>CbnAan8`m<2>3Yl1Xk1Wi<8>7FM7EK8CH<2>A69B46D46<\
+  17>m9No9Oq9P<2>wASzBTzCT<3>zKSzMRzNR<3>zUTzWUzYU<3>zeYzgYzhZ\
+  zjZ<3>zr`ztazvb<22>zKTzISzHS<3>z9Qz7Qz6Rz4Rz2Rz0S<29>437
+  }
+
+6025700l.GIF       { ; Fireworks Over The Seine    t=  0:25:14.09
+                     ; Copyright Sylvie Gallet, Apr 23, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=MMix4-lake-0257 function=ident passes=1
+  center-mag=+72.31044472088888000/+0.16149902668392410/5.4510\
+  81e+009/1/15.001/-0.004 params=0/0/40/0/0.2/300 float=y
+  maxiter=2000 periodicity=0 sound=off
+  colors=000666333000<86>000<4>000A00000000000710<3>G60I70L90<\
+  3>VG0YI1_K2<6>mW4oY4qZ4<3>zf6<11>SF3PC2MA2<3>A00000<4>000<2>\
+  000<3>VM5bS6jX7rb8zhA<3>RK5ID3972000<3>000<3>m_4zh5kY4<2>000\
+  <74>999
+  }
+
+frm:MMix4-lake-0257 { ; 6000401 - Formula by Sylvie Gallet & Jim Muth
+; MandelbrotMix4 parameters (hard-coded):
+; -------------------------
+p_p1 = (1,100)
+p_p2 = (-2,0.01)
+p_p3 = (35,0)
+; Function: i
+
+; User-selectable Lake parameters:
+; -------------------------------
+; real part of p2: 0 = lake transform disabled
+;                  any value between 0 and 100: water level in % of
+;                  the screen height (0 = bottom, 100 = top)
+; imag part of p2: phase
+; real part of p3: amplitude of the wave (try 0.2)
+; imag part of p3: frequency (try 300)
+
+; Lake transformation (Sylvie Gallet)
+; -------------------
+
+if (real(p2) > 0 && real(p2) <= 100)
+  level = real(p2) / 100         ; water level
+  phase = imag(p2)               ; phase
+  ampl = real(p3)                ; amplitude of the wave
+  freq = imag(p3)                ; frequency
+  angle = real(rotskew * pi / 180)
+  exp_irot = exp(-flip(angle))
+  h = 1 / real(magxmag)
+  w = h / 0.75 * imag(magxmag)
+  tanskew = tan(imag(rotskew * pi / 180))
+  u = 2 * w * exp_irot
+  v = 2 * h * (tanskew + flip(1)) * exp_irot
+  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
+  z = pixel - z3rd
+  b = imag(conj(u)*z) / imag(conj(u)*v)
+  if (b <= level)
+    dy = level - b
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2 + phase)) * v
+  endif
+  pixel = z + z3rd
+endif
+
+; Modified MandelbrotMix4 formula (Jim Muth)
+; -------------------------------
+
+a = real(p_p1) , b = imag(p_p1) , d = real(p_p2) , f = imag(p_p2)
+g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j ,
+k = real(p_p3) + 1 , l = imag(p_p3) + 100 , c = fn1(pixel)
+:
+z = k*(a*(z^b) + d*(z^f)) + c
+|z| < l
+}
+
+frm:MMix4-lake-0270 { ; 6000417 - Formula by Sylvie Gallet & Jim Muth
+; MandelbrotMix4 parameters (hard-coded):
+; -------------------------
+p_p1 = (1,1.1)
+p_p2 = (-1,-1.11)
+p_p3 = (0,0)
+; Function: r
+
+; User-selectable Lake parameters:
+; -------------------------------
+; real part of p2: 0 = lake transform disabled
+;                  any value between 0 and 100: water level in % of
+;                  the screen height (0 = bottom, 100 = top)
+; imag part of p2: phase
+; real part of p3: amplitude of the wave (try 0.2)
+; imag part of p3: frequency (try 300)
+
+; Lake transformation (Sylvie Gallet)
+; -------------------
+
+if (real(p2) > 0 && real(p2) <= 100)
+  level = real(p2) / 100         ; water level
+  phase = imag(p2)               ; phase
+  ampl = real(p3)                ; amplitude of the wave
+  freq = imag(p3)                ; frequency
+  angle = real(rotskew * pi / 180)
+  exp_irot = exp(-flip(angle))
+  h = 1 / real(magxmag)
+  w = h / 0.75 * imag(magxmag)
+  tanskew = tan(imag(rotskew * pi / 180))
+  u = 2 * w * exp_irot
+  v = 2 * h * (tanskew + flip(1)) * exp_irot
+  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
+  z = pixel - z3rd
+  b = imag(conj(u)*z) / imag(conj(u)*v)
+  if (b <= level)
+    dy = level - b
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2 + phase)) * v
+  endif
+  pixel = z + z3rd
+endif
+
+; Modified MandelbrotMix4 formula (Jim Muth)
+; -------------------------------
+
+a = real(p_p1) , b = imag(p_p1) , d = real(p_p2) , f = imag(p_p2)
+g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j ,
+k = real(p_p3) + 1 , l = imag(p_p3) + 100 , c = fn1(pixel)
+:
+z = k*(a*(z^b) + d*(z^f)) + c
+|z| < l
+}
+
+kaleidoscope       { ; Kaleidoscope (c)Tom Conally, 4/2000
+	     		 ; cycle color for kaleidoscope effect
+                     ; t=26.04sec on p400                      
+                     ; Version 2000 Patchlevel 9
+                      reset=2000 type=julia(fn||fn) function=exp/sqr passes=1
+  center-mag=+0.31781005849828920/-1.32276153613428900/8.573609/1.0309
+  params=0/0/8 float=y maxiter=1000 bailout=128 bailoutest=manh
+  fillcolor=1 outside=real logmap=yes decomp=32
+  colors=WWWXNM<3>XjKWpJYEN<11>mgYnjZol_<3>uwcXDN<12>KWMJXMIZM<3>EdLXCN<9>\
+  OIJNJJNKJ<3>JMHJMGING<3>EQEZCO<4>jBYlBZoA`<3>y9hQELJGIBJFXCN<6>aIHaJGbKF\
+  <3>dNBeNAfO9<2>hR6XEM<3>ZOIZQH_TGWCN<14>CENAEN9EN<3>3FOXEN<2>XKNWDNXMN<3\
+  >WUMWWMWYMV_LLVKAPJ<10>eHChGCkGB<3>wC8<4>aIPXJTTKW<3>AQj<4>AiW<2>AuN<4>C\
+  eQCbQC_R<3>EOTFLUFIVGEVGBW<3>KLKMNHNQEOSBPV8RY4<13>RhfRiiRik<3>SmwkbK<12\
+  >qYkrYmrXp<3>uVy<3>umqtrnvov<2>jos
+  }
+
+
+VermilionSea        { ; by Lee Fairbanks            Version 2000 Patchlevel 9
+                               ; t = 0:02:35.44  at SF7 on a P450 
+  reset=2000 type=formula formulaname=ManLakefnfn  function=sin/sqr passes=1
+  center-mag=-0.44460231995307970/-0.00931963494133049/68.50907
+   params=0/0/4/85/0.3/200
+  float=y maxiter=32000 inside=0
+  colors=000JCz<8>Q7xR6xS6xT5wT5wU5w<5>Z2t_2t_2s`2sa1r<16>m0hn0gn0fo0ep0e<\
+  9>u3Yu3Xv3W<10>y8Oy9NzAM<14>zJCzKBzLBzMAzMA<6>xS6wT5wT5wU5<5>tZ2t_2s_2s`\
+  2ra1<16>hm0gn0fn0eo0ep0<9>Yu3Xu3Wv3<10>Oy8Ny9MzA<14>CzJBzKBzLAzMAzM<6>6x\
+  S5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<9>3Yu3Xu3Wv<10>8Oy9NyAMz\
+  <13>JDz
+  }
+
+frm:ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet with 
+Mandel(fn||fn)
+                            ; function=fn1/fn2            
+                            ; p1 = Julia seed
+                            ; real(p2) = bailout value
+                            ; imag part of p2: 0 = lake transform disabled
+                            ; any value between 0 and 100: water level in % of
+                            ; screen height (0 = bottom, 100 = top)
+                            ; real part of p3: amplitude of the wave (try 0.2)
+                            ; imag part of p3: frequency (try 300)            
+               
+
+bailout = real(p2),  shift = 0.5
+
+; Lake transformation
+; -------------------
+
+if (imag(p2) > 0 && imag(p2) <= 100)
+
+  level = imag(p2) / 100         ; water level
+  ampl = real(p3)                ; amplitude of the wave
+  freq = imag(p3)                ; frequency
+
+  angle = real(rotskew * pi / 180)
+  exp_irot = exp(-flip(angle))
+  h = 1 / real(magxmag)
+  w = h / 0.75 * imag(magxmag)
+  tanskew = tan(imag(rotskew * pi / 180))
+
+; The complex numbers u and v are defined as follow:
+;   u = bottom_right_corner - bottom_left_corner
+;   v = top_left_corner - bottom_left_corner
+
+  u = 2 * w * exp_irot
+  v = 2 * h * (tanskew + flip(1)) * exp_irot
+
+; Bottom_left_corner:
+  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
+
+  z = pixel - z3rd
+
+; solves the equation z = a*u + b*v which is equivalent to the system:
+;   re_z = a * re_u + b * re_v
+;   im_z = a * im_u + b * im_v
+; the solution (a,b) is:
+;       | re_z   re_v |        | re_u   re_z |
+;       | im_z   im_v |        | im_u   im_z |
+;   a = ---------------    b = ---------------
+;       | re_u   re_v |        | re_u   re_v |
+;       | im_u   im_v |        | im_u   im_v |
+;
+; Only b is used and 0 <= b <= 1
+;   b = 0  <==>  pixel at the bottom of the screen
+;   b = 1  <==>  pixel at the top of the screen
+;
+; Since the formula parser uses complex numbers, I thought the
+; easiest way to calculate b was:
+
+  b = imag(conj(u)*z) / imag(conj(u)*v)
+
+; the heart of the lake transform:
+  if (b <= level)
+    dy = level - b
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+  endif
+
+  z = z + z3rd
+
+else
+  z = pixel
+endif
+
+; Classic mandel/julia formula
+if (ismand)
+  c = z
+else
+  c = p1
+endif
+
+:  ; (the all important colon - now iterate the following)
+
+if (z*z <= shift)
+  z = fn1(z) + c
+else
+  z = fn2(z) + c
+endif
+|z| <= bailout
+}
+
+2layer-1           { ; Multi-layered effect
+                     ; Just a simple julia
+                     ; by Miguel Fliguer (c) 2000
+  reset=2000 type=julia center-mag=-0.338028/-0.319415/3.875969
+  params=-0.3593114241001558/-0.6017223382045935 float=y
+  maxiter=2000000000 sound=off
+  colors=000P0GQ0H<11>f0Ag09h09i08k07<4>q04s04t03<2>x01z00z20<16>zh0\
+  zj0zm0<3>zw00NK<46>LYSMYSMZT<63>omcomcpmc<2>qndroepmd<12>HGNEDMBBK\
+  <3>00F<61>P0G
+  }
+
+2layer-2           { ; Multi-layered effect - 2
+                     ; Just a simple julia
+                     ; by Miguel Fliguer (c) 2000
+  reset=2000 type=julia center-mag=-0.353575/-0.351952/6.056202
+  params=-0.3466153364632231/-0.6091966597077251 float=y
+  maxiter=2000000000 bailout=2 inside=bof61 sound=off
+  colors=000<2>800B01B01<13>201201101000<5>002003003004004105<8>60T7\
+  0V70Y<3>A0h<9>40H40F30C<3>000<9>`L0dO0hQ0<3>wZ0<9>NE0JB0F90<3>000<\
+  10>0800900A0<2>0D00D00C0<4>080070060<2>040040040040040<21>00000000\
+  0<3>101102102203000<9>0IP0KR0MU<3>0Uc<9>0CF0AD08A<2>023000202<8>P0\
+  PR0RU0U<3>c0c<9>F0FD0DA0A<3>000<9>EV0FZ0Ha0<2>Lj0Nn0Mk0<13>101
+  }
+
+One.hand.clapping  {
+                     ; by Miguel Fliguer 2000
+                     ; 
+  reset=2000 type=chip passes=1
+  corners=-13.10752/12.61111/-9.90906/9.379912 params=0.1/0.1/-0.1
+  float=y maxiter=20 bailout=64 inside=3 viewwindows=4.2/0.75/yes/0/0
+  hertz=110 sound=z/fm/quant polyphony=9 wavetype=5 attack=4 decay=12
+  sustain=4 srelease=4 scalemap=1/3/5/8/10/12/12/10/8/5/3/1
+  orbitdelay=1800
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Shaved.penguins    {
+                     ; by Miguel Fliguer 2000
+                     ; 
+  reset=2000 type=chip passes=1
+  corners=-13.10752/12.61111/-9.90906/9.379912 params=0.0001/0.01/0.01
+  float=y maxiter=20 bailout=64 inside=3 viewwindows=4.2/0.75/yes/0/0
+  hertz=55 sound=y/fm/quant polyphony=5 attack=7 decay=15 sustain=0
+  srelease=0 scalemap=1/3/5/8/10/12/12/10/8/5/3/1 orbitdelay=2000
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+6ml06101           { ; .                           t=  0:03:41.86
+                     ; Copyright Sylvie Gallet, May 10, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=MMix4-lake-0061 function=ident passes=1
+  center-mag=+1.44519368957052900/+0.14160825065617150/76615.3\
+  3/1/-34.999 params=0/0/36/0/0.2/200 float=y maxiter=2500
+  inside=0 periodicity=0 sound=off
+  colors=000<3>20530630840950B<10>O76Q85S85<3>ZC3`D3aF3<7>nQ5o\
+  S5qT5rV5tW5vY6<9>xiCxjDylE<2>yoGzqHzqJ<16>xufxuhxvi<2>wwnwwp\
+  vvqvvsuuu<171>mcK
+  }
+
+6ml13902           { ; .                           t=  1:35:22.02
+                     ; Copyright Sylvie Gallet, May 01, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=mmix4-lake-0139b function=ident passes=1
+  center-mag=+1.88255488398907100/-0.02668502674302770/1.76539\
+  1e+010/1/30 params=0/0/27/0/0.3/200 float=y maxiter=2000
+  inside=0 cyclerange=0/255 sound=off
+  colors=YHE<2>cGI<3>kTXmX`o_drch<13>KITIGSFFR<3>58M26L38M<3>5\
+  HR6JS7LU<4>DW`EYbF_cGaeHcfJfhLhi<3>Zmoanpeor<3>stw<2>rrrrqpq\
+  qnppl<17>edHdcFcbE<3>``6`_4_Z2ZY0<16>HJ0GI0FH0EG0CF0<8>C60C5\
+  0C40C30C20D10C01<3>N05Q07S08V09Y0B`0C<8>hKOiNQjPRkSSlUUmWVnZ\
+  X<3>rgZsi_tk_<3>xubyxbzzc<3>zuRztOzrK<3>vgEudCtaB<3>pQ4nN2mM\
+  2<5>dG4cF4aE5<3>XA6W97U87T77<3>iV9m`AqfAulBzrC<9>aiD_hEXgE<2\
+  >QdENcFNbF<3>JXCJVBIUB<3>CM4AK28H0<3>9C19B19A1A82<2>A21A00C3\
+  1<4>OI9<3>WHD
+  }
+
+6ml22701           { ; Feerie a Versailles         t=  0:07:12.15
+                     ; Copyright Sylvie Gallet, Apr 24, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=MMix4-lake-0227 function=recip passes=1
+  center-mag=+2.86077719777997400/+0.00103133600044388/715138.\
+  4/1/7.5 params=0/0/37/0/0.7/200 float=y maxiter=1000
+  bailout=25 inside=0 logmap=15 symmetry=none
+  periodicity=10 sound=off
+  colors=00040C<3>709808808<3>C04E14H24<8>fF3hG2kI2nJ2qL2tM2uO\
+  2wQ1<7>xf5yh6yj6yl7yn7zq8<6>zvDzwEzwEzxFzyG<3>zzNzzPzzR<5>yy\
+  `yybyycxxexxfxxh<3>wwnwwpvvqvvsuuu<3>sttrttqtt<18>SljRliQkiP\
+  khNjh<12>6ea5e`3d`2d_0cZ<104>02L02L01L<3>00KFFF00K<6>00G00F0\
+  0F<3>00C00G<3>30D
+  }
+
+6ml30001           { ; Wildfire I                  t=  0:16:25.36
+                     ; Copyright Sylvie Gallet, May 21, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=mmix4-lake-0300 function=recip passes=1
+  center-mag=+1.92711632140873700/+0.06885607469174922/1352.02\
+  8/1/-32.499 params=0/0/35/0/0.3/150 float=y maxiter=2000
+  inside=0 periodicity=0 sound=off
+  colors=000<5>403504604<3>907500<5>M71P81S92<3>cF2fG2iI2<3>vO\
+  2<9>wh5xj6xl6<2>xr7yu8yuA<14>xvhxvkxvm<2>xvtwwwwww<10>uuutuu\
+  tuutuu<3>qttpttnss<10>_nnZnmXmm<4>RliQkiPkh<3>JifIifGhe<4>Ag\
+  c9fb7fb<3>2d_0cZ0cZ<103>02L02L01L<3>01K01K01K<6>00G00F00E<3>\
+  00C00G
+  }
+
+6ml30301           { ; .                           t=  0:59:25.38
+                     ; Copyright Sylvie Gallet, May 24, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=MMix4-lake-0303 function=recip passes=1
+  center-mag=+2.79125975335705300/+5.69700602216168700/7496.93\
+  7/1/140 params=0/0/34/0/0.25/180 float=y maxiter=2000
+  inside=0 logmap=90 periodicity=0 sound=off
+  colors=zz0zK66P8AUA<15>dmNfnNhoO<2>nsRpuSpuU<8>vxlvxowxq<2>y\
+  ywzzzyzz<11>boz`nzZmz<3>RiyPhxNgx<3>EcvBauB`rA_o9ZlAZl<10>Rg\
+  sShtUiu<5>cowdqxfqxhsxisykuymvz<3>mwqlwolvl<15>isChsAhs7hs5h\
+  s3gr0<5>co0bn0an0am0`m0_l0<20>M`2L`2L_2<4>GX3FW3EV3DU3CT3BT3\
+  <3>7P46P46P4<3>6O46O46N4<7>3F22E22D1<2>1A10901A0<8>DP1FR1GT1\
+  <2>KY1M_2N_2<24>kt8lu8mv9<2>py9rzArzD<12>wzp
+  }
+
+6ml30401           { ; .                           t=  0:15:27.15
+                     ; Copyright Sylvie Gallet, May 25, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=mmix_lak.frm
+  formulaname=MMix4-lake-0304 function=recip passes=1
+  center-mag=+4.02785545745316800/+1.79514268564319900/167449.\
+  1/1/10 params=0/0/34/0/0.3/200 float=y maxiter=2000
+  inside=0 periodicity=0 sound=off
+  colors=000L11K000CP<3>0BO0BO0BO<48>829819819<2>818907B07<3>J\
+  46L55N65<3>XA3_B3bC3dE2gF2<3>pK1rM0rO0<4>uZ3v`4vb5<2>xi6xk7x\
+  k7<6>yrCysDytDyuEyvF<16>zwczwdzwfzwh<3>zwmzvozvpzvrzvszuu<11\
+  7>L11
+  }
+
+6ml13901           { ; Water Cave                            t=  1:39:47.86
+                     ; on a P233 at 1600x1200  May 28, 2000  08:51:02
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0139 function=ident passes=1
+  center-mag=-0.12947867499869180/-0.31327946717538240/587.3575/1/-2.5
+  params=0/0/33.33/0/0.2/300 float=y maxiter=6000 bailout=25 inside=0
+  logmap=17 symmetry=none periodicity=10
+  colors=000zyxzzz<3>sww<2>zzz<3>rwzovzhswaosVkpNgl<2>8lh<3>AWVASSBOO<2>CB\
+  EDED<2>KOANR9QU8TY7Wa6<3>go2js1nw0<7>NW9KSAGPB<3>2AG<8>4RW5TX5VZ<3>6ae6b\
+  g6di<2>7jn8lp8ln<3>8ld8mb8m_<3>9nQ<4>qx6zz1<3>zzz<3>jqdfo_blU<3>Mb8<2>LT\
+  8LQ8LP8<3>LL8LK7LI7LH6LG6<3>KB4KA4J83<3>J32J21J11J00<12>b35d36e36f36<3>l\
+  48m48n48<3>r38s38s48<4>tA8tB8tC8<7>xO8xP8xQ8yR8<3>zY6zZ6zZ6<28>zu7zv7zv7\
+  <3>zz8<3>zpEznFzkH<25>zxv
+  }
+
+6ml16201           { ; Venice Bridge                         t=  2:48:55.27
+                     ; on a P233 at 1600x1200  May 28, 2000  08:51:30
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0162 function=ident passes=1
+  center-mag=-0.88912937958200310/-0.00031214697624702/7944.202/1/-87.498
+  params=0/0/33.33/0/0.2/300 float=y maxiter=1400 bailout=25 inside=0
+  logmap=9 symmetry=none periodicity=10
+  colors=5005106D0<25>QY0RZ0R_0<3>Vc0Wd0Xf1<5>Vd3Vc3Uc4<3>T`5S_6SZ6<52>G66\
+  G56F56<3>E26<3>e63l72s81zA0<3>z90z90zA0<8>zS4zU4zW5<2>za6yc7wb7<13>MOEJN\
+  EGMF<3>5HH<3>7QQ8SS8VV<3>BccCffChhDjj<3>dsskuurwwzzz<3>jqdfo_blU<2>ReE<3\
+  >OTCNQCNPC<3>PJ9QI9QG8<2>SC6TA5WD6ZF7aI8eLAhMB<3>rbBtfBwjBzoA<3>zw6zz4zz\
+  0<4>zj2zg2zc2<3>zS4zP5zL5zI6zE6wE6tD6qC6<3>kA5iA5fA5<9>921
+  }
+
+6ml17702           { ; Moonlight Arch                        t=  1:07:43.42
+                     ; on a P233 at 1600x1200  May 28, 2000  08:51:45
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0177 function=ident passes=1
+  center-mag=+2.15632695764063200/-0.01595275250755705/968.5468/1/72.499
+  params=0/0/33.33/0/0.2/300 float=y maxiter=3000 bailout=25 inside=0
+  logmap=13 symmetry=none periodicity=10
+  colors=000oua<2>Ywu<5>OpvNnvLmw<3>Ehx<3>8Th7Pd5L`<2>08P<4>BLHDNGGQEITDLV\
+  BNY9<29>Mg2Mg2Mg2Mg2Lh1<40>ul1vl1wl1xl1yl1zm0<29>zF0zE0zD0<2>zA0z80z82<1\
+  1>z5Yz4_z4bz3ez3g<3>z2r<3>zmxzzzruz<3>N`zFWz6Qz<3>SLmYKicJf<3>pKcsKbvKaz\
+  L`<3>zOUzPSzPR<3>zSJzTHzTFzUD<3>nI9jF8gC6<3>V01<2>yB3<14>yfAyhByjB<2>ypD\
+  ysEytF<2>zwHzwIzvK<3>zuQuuW
+  }
+
+6ml17704           { ; Forest Fire                           t=  2:24:01.53
+                     ; on a P233 at 1600x1200  May 28, 2000  08:52:01
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0177 function=ident passes=1
+  center-mag=+2.17856216587067300/-0.02305697921457523/2260.564/1/-94.998
+  params=0/0/33.33/0/0.2/300 float=y maxiter=3000 bailout=25 inside=0
+  logmap=29 symmetry=none periodicity=10
+  colors=000qLA<3>d95a64Z33V01<2>yB3<14>yfAyhByjB<2>ypDysEytF<2>zwHzwIzvK<\
+  3>zuQ<3>cvnYwuXvu<4>OpvNnvLmw<3>Ehx<3>8Th7Pd5L`<2>08P<4>BLHDNGGQEITDLVBN\
+  Y9<29>Mg2Mg2Mg2Mg2Lh1<40>ul1vl1wl1xl1yl1zm0<29>zF0zE0zD0<2>zA0z80z82<11>\
+  z5Yz4_z4bz3ez3g<3>z2r<3>zmxzzzruz<3>N`zFWz6Qz<3>SLmYKicJf<3>pKcsKbvKazL`\
+  <3>zOUzPSzPR<6>zUDwRCtOB
+  }
+
+6ml19701           { ; Woodsy Pond                           t=  0:48:40.64
+                     ; on a P233 at 1600x1200  May 28, 2000  08:52:15
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0197 function=ident passes=1
+  center-mag=17.0819/2.64481/12.64048/1/180 params=0/0/33.33/0/0.2/300
+  float=y maxiter=2000 bailout=25 inside=0 logmap=29 symmetry=none
+  periodicity=10 rseed=3141
+  colors=000bF7<3>SE6QE5NE5KE5HD4HD4<3>HN4HQ4HS4<3>Jb4Jd4Jg4<3>JT4JP4JQ4<6\
+  >KV4KW4KX4<2>KZ4L_4N_4P`4R`4<3>6dQ0eW0dZ<3>0`j0_m0Zp<2>0Vz<3>V_Ya`RiaKqb\
+  Dyd5<26>yF2yF2yE2<2>yB2xB3vB5<5>mEFkFHjFI<3>cIQbIS`JTZJV<4>jaelehnij<3>x\
+  ys<8>dmnblm_jm<3>SfkQdjNcjLai<3>CXUAWQ7VM<2>0QA<3>6XM8ZQA_T<2>FebHgeLhf<\
+  4>bokepliqm<2>tupxwrzyt<5>zxZzxVzwR<2>zwGzvCztC<4>xiCxgCxdCwbCw`CvYB<8>w\
+  RJwQJwQK<3>wMOwLPwLQwKRxJS<3>pF`nEblDd<3>d8n<4>gC`gDYhDV<3>jHJkIGkJDlKA<\
+  3>zH9<7>eG7
+  }
+
+6ml20303           { ; Indian Camp                           t=  0:48:25.60
+                     ; on a P233 at 1600x1200  May 28, 2000  08:52:34
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0203 function=ident passes=1
+  center-mag=+0.99702774956984290/+0.00004870298086398/9.999487e+007/1/-67\
+  .499 params=0/0/33.33/0/0.2/300 float=y maxiter=1000 bailout=25
+  inside=0 logmap=43 symmetry=none periodicity=10 rseed=3141
+  colors=000eQI<5>kaWmbYnd_<3>rliLnk<3>pvuyxxzzz<2>8cZ<3>0aP<3>VgJbiIjjGrl\
+  FznD<3>zX7zT5zO4zK2zF0<4>zA0z80<12>z5Yz4_z4bz3ez3g<3>z2r<3>zmxzzzruz<3>N\
+  `zFWz6Qz<3>SLmYKicJf<3>pKcsKbvKazL`<13>zVCzWAzX8<3>y_0<21>ypBypCyqC<3>yt\
+  FzuGzvGzwH<3>zvNzuPzuQ<3>cvnYwuXvu<4>OpvNnvLmw<3>Ehx<3>8Th7Pd8Pb<4>ETSFT\
+  PGUNHULIVJ<3>NY9<3>UQ9WO9YM9_K9<3>fGHgFJiELkDNmCP<3>WKGSMENOBJQ9ES6<3>8_\
+  67a65d5<2>0k0<12>AS7BQ8BP8<2>EKAFIBGGA<2>JB7K95MA5<5>_I8aJ9bKBcMDdOG
+  }
+
+6ml23801           { ; Cut-up Scene                          t=  0:41:06.43
+                     ; on a P233 at 1600x1200  May 28, 2000  08:52:49
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0238 function=ident passes=1
+  center-mag=2.93098/-3.64397/12.21837/1/4.998
+  params=0/0/33.33/0/0.2/300 float=y maxiter=1600 bailout=25 inside=0
+  logmap=4 symmetry=none periodicity=10
+  colors=000zvL<2>zuQ<3>cvnYwuXvu<3>QqvOpvNnv<2>IjwGiwGgt<7>8MV7KR6HO5EK4B\
+  H<3>003<5>1A61B71D7<3>1KA1LB1NB1PC2RD<15>2c42d42e32f32g21h12g13e2<32>Oj1\
+  Pj1Pj1Qj1Rk0<41>qqkrqlrqm<3>urrvsswst<3>zty<3>zUszNqzGpz9nz2lz2oz2r<3>zm\
+  xzzzruz<3>N`zFWz6Qz<3>SLmYKicJf<3>pKcsKbvKazL`<13>zVCzWAzX8<3>y_0<21>ypB\
+  ypCyqC<6>zwHzwIzvK
+  }
+
+6ml26701           { ; Landscape                             t= 24:47:43.25
+                     ; on a P233 at 1600x1200  May 28, 2000  08:53:12
+                     ; Image Copyright 2000 by Lee H. Skinner ver=2000
+                     ;  Version 2000 Patchlevel 8
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mmix4-lake-0267 function=recip passes=1
+  center-mag=-1.82119694643630500/+6.28079334345163400/40.52967/1/-135
+  params=0/0/33.33/0/0.2/300 float=y maxiter=6000 bailout=25
+  inside=bof61 logmap=yes symmetry=none periodicity=10
+  colors=000ywwxssvooKRksgg<4>lOOkKKiGG<3>c00<9>F00D00A00<2>300000020<8>0P\
+  00R00U0<3>0c0<9>bqbfrfjtj<3>zzz<9>OlOKkKGiG<3>0c0<9>0F00D00A0<2>03000000\
+  2<8>00P00R00U<3>00c<9>bbqffrjjt<3>zzzYhJssxoovkkuZa0ccr__pWWoSSPOOl<3>88\
+  f44e00c<3>00U00S00P00N00K0LI0OF<10>0PM0QN0QO<3>0RR<3>0``0cc3dd<8>bqqfrrj\
+  tt<3>zzz<9>OllKkkGii<3>0cc<9>0FF0DD0AA<2>033000200<8>P00R00U00<2>`00c00d\
+  44<13>zzz
+  }
+
+Deep Zoom Jay Hill {
+  reset=1950 type=mandel
+ 
+center-mag=-0.22815549365396181921458337174522594168584633202/1.11514250\
+  8039937359745738033504392908720827794353/1.7e+044 params=0/0 float=y
+  maxiter=99999
+ 
+colors=CCCssS<6>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<16>\
+ 
+Cks<13>DFHECEECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
+  ssq<11>ssU
+  }
+
+60603001           { ; .                           t=  0:22:43.74
+                     ; Copyright Sylvie Gallet, Jun 04, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=recip passes=1
+  center-mag=+0.14474493913701920/+0.33715906123071150/8294.11\
+  5/1/155 params=1/-4/1/-5/-20/0 float=y maxiter=2400
+  bailout=25 inside=bof60 logmap=5 symmetry=none
+  periodicity=10 sound=off
+  colors=333302<6>Q4LU5NX5Q<3>j8`<3>z8W<2>zCO<3>zVGz_EzeCzkAzo\
+  8<9>SuePvhLwl<3>7zz<3>7bs7Xr7Rp<2>79j63h86f77d69a<3>79Q89N89\
+  K<2>AAA<37>nmmonnpooqpprqq<2>ssssssrrs<8>mkomjoljo<3>ifmhelg\
+  dk<14>KCSJARH8Q<3>A0K<8>S2MU2MW2MY3N_3Na3Nc4O<9>q8Ys8Zt8_<2>\
+  x9bzAczDd<8>zfqzirzlt<3>zzz<27>NN_MMZKKY<2>GGUFFTFFS<3>DDOCC\
+  NBBLAAK99I<12>000
+  }
+
+60603002           { ; .                           t=  1:57:36.39
+                     ; Copyright Sylvie Gallet, Jun 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=recip passes=1
+  center-mag=+0.14827537372617890/+0.33596638473633280/4763.32\
+  4/1/12.499 params=1/-4/1/-5/-20/0 float=y maxiter=2400
+  bailout=25 inside=bof60 logmap=15 symmetry=none
+  periodicity=10 sound=off
+  colors=333U5N<3>f7Yj8`n8_<2>z8W<2>zCO<3>yUGyZEydCyjAzp8<9>Sv\
+  ePvhLwl<3>7zz<3>7bs7Xq7Rp7Ln<3>8HX8FT8EO9DK9CFAAA<51>tttuuuv\
+  vv<2>yyyzzzyyy<25>KCSJARH8Q<3>A0K<8>S2MU2MW2MY3N_3Na3Nc4O<9>\
+  q8Ys8Zt8_<2>x9bzAczDd<8>zfqzirzlt<3>zzz<11>ccoaan__mYYlWWk<4\
+  >PPfOOeNNdMMcKKb<10>EEREEQDDP<5>99H88G77E77D66B55A<3>3352231\
+  12000<7>Q4L
+  }
+
+60603004           { ; .                           t=  0:37:20.96
+                     ; Copyright Sylvie Gallet, Jun 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=recip passes=1
+  center-mag=+0.31458818347111160/+0.00000000000000000/7603.65\
+  7/1/180 params=1/-4/1/-5/-20/0 float=y maxiter=2400
+  bailout=25 inside=bof60 logmap=5 symmetry=none
+  periodicity=10 cyclerange=1/45 sound=off
+  colors=333<2>j8`<3>z8W<2>zCO<2>yPIyUHy_G<3>zwB<8>UxeQyhMyl<3\
+  >7zz<3>7bs7Xq7Rp<3>63h63f<3>21F118000<4>555666777<2>BBBCCCEE\
+  EGGG<20>mmmnnnppp<2>uuuwwwwvw<29>ZTbYSaXRaWQ`VP_<2>RKWQIVOGU\
+  MET<3>G6OE4NC2MA0K<8>S2MU2MW2MY3N_3N<4>g5Ri6Sj6Tk6U<3>q8Ys8Z\
+  t8_<2>x9bzAczDd<8>zfqzirzlt<2>zwyzzzxxy<10>ccoaan__m<3>TTiSS\
+  hQQg<3>MMcKKbJJa<8>FFSEEREEQ<11>55A559448<3>112000313<6>Q4LU\
+  5NX6Q`6Tc7Vf7Y
+  }
+
+frm:MandelbrotMix4 {; Jim Muth
+a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
+g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
+k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
+z=k*((a*(z^b))+(d*(z^f)))+c,
+|z| < l
+}
+
+{ Hello ! I just returned from a dangerous exploration of the 
+complex plane (more precisely, in the MandelbrotMix4 forest), 
+in search of the man-eater Midget of Destiny. Not one, not two,
+but three of them are presented here for your viewing pleasure.
+Please don't feed them. Let me know if you like them.
+
+Miguel Fliguer - Buenos Aires, Argentina
+Franktal Gallery - http://members.xoom.com/fliguer/franktal.html
+}
+
+Brandelmoth        { ; by Miguel Fliguer - 2000
+                     ; Formula by Jim Muth / Palette by Sylvie Gallet
+  reset=2000 type=formula formulafile=miguel.frm
+  formulaname=MandelbrotMix4 function=flip
+  center-mag=+3.05614004131027300/+1.53696288441299100/109780.7/1/2.499
+  params=0.57/-1.57/-4.89/-4.76/90/13 float=y maxiter=250000 inside=0
+  sound=off passes=1
+  colors=000369<3>5AE6BF6CH7DI7EJ8FL<10>BJSBJTBJU<3>DLWEMXGNY<6>TYfV_hX`i<\
+  2>aemcgocgo<9>lmpmnpnopooppppqqq<4>llnkkmjjliikhhjggj<39>55E44D33C<2>00A\
+  00A11B<42>ffiggjiik<9>rrssstttu<2>wwwxxxxxv<3>xvmxukxthxtfxsdyra<9>ylLyk\
+  JyjH<2>yhCxgAxgA<11>nW2mV2lU1<4>fQ0eP0dO0bN0aM0`M0<3>VI0UH0TG0<10>B60950\
+  740<2>210001112<3>357
+  }
+
+Caterpil           { ; by Miguel Fliguer - 2000
+                     ; Formula by Jim Muth / Palette by Sylvie Gallet 
+                     ;  
+  reset=2000 type=formula formulafile=miguel.frm
+  formulaname=MandelbrotMix4 function=flip passes=1
+  center-mag=+0.52963950292242410/+0.37627214620209390/566041.4/1/9.999
+  params=0.5788445692312387/-1.573107089449751/-4.889614551225318/-4.76659\
+  4439527574/90.79049043244729/13.00161748100223 float=y
+  maxiter=250000 inside=0 sound=off
+  colors=000QF0<8>B60950740<2>210001112<8>5AE6BF6CH7DI7EJ8FL<10>BJSBJTBJU<\
+  3>DLWEMXGNY<6>TYfV_hX`i<2>aemcgocgo<9>lmpmnpnopooppppqqq<4>llnkkmjjliikh\
+  hjggj<39>55E44D33C<2>00A00A11B<42>ffiggjiik<9>rrssstttu<2>wwwxxxxxv<3>xv\
+  mxukxthxtfxsdyra<9>ylLykJyjH<2>yhCxgAxgA<11>nW2mV2lU1<4>fQ0eP0dO0bN0aM0`\
+  M0<6>RF0
+  }
+
+MoneyTalks         { ; by Miguel Fliguer - 2000
+                     ;  Formula by Jim Muth / Palette by Sylvie Gallet
+                     ; 
+  reset=2000 type=formula formulafile=miguel.frm
+  formulaname=MandelbrotMix4 function=asinh passes=1
+  center-mag=-1.38432676730081300/+0.12551625916458630/995.8741/1/54.999
+  params=4.836795630148042/-3.046331819235659/-2.526959119020869/-1.048449\
+  403567842/3.689199170981574/4.560207448037486 float=y maxiter=200000
+  inside=0 sound=off
+  colors=000yra<9>ylLykJyjH<2>yhCxgAxgA<11>nW2mV2lU1<4>fQ0eP0dO0bN0aM0`M0<\
+  3>VI0UH0TG0<10>B60950740<2>210001112<8>5AE6BF6CH7DI7EJ8FL<10>BJSBJTBJU<3\
+  >DLWEMXGNY<6>TYfV_hX`i<2>aemcgocgo<9>lmpmnpnopooppppqqq<4>llnkkmjjliikhh\
+  jggj<39>55E44D33C<2>00A00A11B<42>ffiggjiik<9>rrssstttu<2>wwwxxxxxv<7>xsd
+  }
+

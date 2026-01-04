@@ -1,0 +1,784 @@
+
+comment { ------  SNAZZY.PAR  ---------------
+
+  This Fractint parameter file and its resulting images are Copyright (C)
+  1995 by Bradley Beacham.  ALL RIGHTS RESERVED.   Consider it freeware; I
+  encourage you to copy and distribute the file, so long as it remains
+  unchanged.  It may *not* be used for commercial purposes without my
+  explicit prior consent.
+
+  Several of these images use color palettes (or modifications of them)
+  that were created by other people.  Special thanks to Lee Skinner, Ron
+  Black, Ron Barnett and Jack Orman for their colorful help.
+
+  All of these images call for formulas from the file SNAZZY.FRM.  If you
+  don't have the formulas, the pars won't work.
+
+  Most of these images require Fractint version 19 or higher.  You *might*
+  get something with an earlier version, but it probably won't look right.
+
+  Computation times listed in the comments are for my 486DX 33-Mhz at
+  1024 X 768 resolution.  I often fuss around with an image as it is being
+  created, so my times might be somewhat high.
+
+  For more information, read the accompanying file SNAZZY.DOC.
+
+  As always, I welcome any mail, E- or otherwise. I am:
+
+    CompuServe:  74223,2745
+
+    Internet  :  74223.2745@compuserve.com
+
+    Snail Mail:  Bradley Beacham
+                 1343 S. Tyler St.
+                 Salt Lake City, Ut  84105-2122
+                 USA
+
+}
+
+
+Barbara_Eden       { ; BRISKET: Buy a beef brisket, and cut away most
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 3 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=log/tan/ident/flip passes=2
+  corners=-3.66858/6.769097/2.297609/0.8065118/0.8047102/-3.666779
+  params=0.75/0/0/0/0/0 float=y potential=255/400/0
+  colors=000yvw<12>c0K<11>uFCwHCxIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzzyyz\
+  <45>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<15>zzz
+  }
+
+Behbahanizadeh     { ; liquid smoke all over the meat. Prepare a meat rub
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 3 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha01
+  passes=b
+  corners=0.434307517/0.395457338/0.367596881/0.308069214/0.448894732/0.34\
+  814726 params=0/-0.01/0/0/0/0 float=y fillcolor=64 logmap=9
+  periodicity=0
+  colors=000hPW<11>yw2zz0yw1<20>b3O`0Q_0N<4>R04P00P11<6>LCCKDDKEEJFFJGG<2>\
+  HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsm\
+  msmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<6>gMY
+  }
+
+Feather_Dance      { ; it.)  Scatter one or two handfuls of smoke chips
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 4 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha01
+  corners=0.31588098/0.48664558/0.45196474/0.2242786/0.48664558/0.2242786
+  params=0/-0.01/0/0/0/0 float=y inside=0 periodicity=0
+  colors=0000B4<20>`d4be4fi4<3>xw3zz0<13>jPGiMHfLJ<2>XGPUFSTFS<6>J9ZH8_H8_\
+  <26>BYaBZaA_b9`c<16>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oor\
+  nnrnnsmmsmmtllummu<20>000<15>N0_
+  }
+
+Linda_Blair        { ; Remove the meat from the grill and wrap in heavy
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 4 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  corners=-0.79746722/-0.2111549/0.3905283/-0.39122146/-0.2111549/-0.39122\
+  146 params=4/0/-0.78/0/0/0 float=y potential=255/800/0 periodicity=0
+  colors=G00U00<2>O00M00L00K00I00<3>G00G00H00H00H00<5>Q00S00U00W00Z00`00b0\
+  0<2>i50k60mA0oE0qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i4\
+  0g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b0\
+  0e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i4\
+  0g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b0\
+  0e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i4\
+  0g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b0\
+  0e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i4\
+  0g20<4>W00
+  }
+
+Party_Lights       { ; : Cook until translucent:
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 5 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=sin/ident passes=2
+  corners=-4.279224/3.785294/-3.024194/3.024194 params=2/0/2/0/100/0
+  float=y inside=bof60
+  colors=00087F<10>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>\
+  000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>00321343765B
+  }
+
+Saurobrot          { ; :   4 tablespoons red wine vinegar
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 5 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha01
+  corners=-2.145642/0.9903579/-1.176/1.176 params=-0.017/0/0/0/0/0
+  float=y inside=0
+  colors=G00`00b00<2>i50k60mA0oE0qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO\
+  0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M0\
+  0O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO\
+  0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M0\
+  0O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO\
+  0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H00H00<2>L00M0\
+  0O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO\
+  0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<3>K00I00I00<2>G00G00H00H00H00<5>Q0\
+  0S00U00W00Z00
+  }
+
+Apples             { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 6 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  passes=2 corners=1.068/-1.068/-1.424/1.424/-1.068/1.424
+  params=1/0/-0.6/0/0/0 float=y maxiter=500 inside=0
+  potential=255/975/0 periodicity=0
+  colors=000IB6<20>gY9i_Aja9<5>so4ur3wv2zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6\
+  FG6DF5<4>354<2>0BB<13>YNE`OEbPEeQFfTEhWD<6>tp4vs3xv2zz0zw3zs7zoBzkF<22>R\
+  S8<4>000<15>0f0<15>zz0<4>zzJzzNyxN<13>aUG_RGYPFWMESKD<6>000<12>TN0WO0YQ0\
+  `S0aU0<14>zz0<14>jB0i70f70<13>310
+  }
+
+Sumo_Gargoyle      { ; :   3/4 teaspoon dry mustard
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 6 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  passes=2 corners=-1.207106/1.036894/1.496/-1.496/1.036894/-1.496
+  params=4/0/-0.78/0/0/0 float=y inside=0 potential=255/800/0
+  periodicity=0
+  colors=G00I00<2>G00G00H00H00H00<5>Q00S00U00W00Z00`00b00<2>i50k60mA0oE0qI\
+  0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S0\
+  0Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI\
+  0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S0\
+  0Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI\
+  0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S0\
+  0Q00<4>I00H00H00<3>G00G00H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI\
+  0<3>wg0xm0yr0zw0zy0zz0zy0zw0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S0\
+  0Q00<4>I00
+  }
+
+Nina_Hagen         { ; against the grain, and serve with a good barbeque
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 7 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/recip passes=2
+  corners=0.5028461594/0.4899880376/0.8866362755/0.88012147/0.5013443422/0\
+  .8886386984 params=2/0/2/0/0/0 float=y inside=0 potential=255/700/0
+  colors=000yy0<14>XX8VW8TU8RS8PQ7<8>795574354033077<13>4zz<15>zz0<15>z1z<\
+  15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f7\
+  0<14>000<15>S5N<15>zz0
+  }
+
+Beehive            { ; (but not all) of the outside fat. Rub 1 tablespoon
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 11 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=sin/ident passes=2
+  corners=2.6102417/2.51111722/1.7891727/1.4864395/2.71986881/1.6430032
+  params=2/0/2/0/100/0 float=y inside=bof60
+  colors=IA0<13>WH0XI0YJ0ZK0_L0<25>yj0zk0zk0zk0<94>ZK0ZK0ZK0ZK0YJ0YJ0<71>H\
+  20H20G10F10<14>000000110<15>H90 cyclerange=0/255
+  }
+
+Owl                { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 14 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=log/sqr/ident/flip passes=2
+  corners=0.66236853/-0.33603701/3.647744/-3.341096/3.6575854/-0.3458789
+  params=0/0/2.5/0/0/0 float=y inside=0
+  colors=000444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15\
+  >zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15>zz\
+  0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<13>888
+  }
+
+Cresting           { ; mixture into the brisket, and let it stand at room
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 15 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha02
+  passes=2 corners=-2.190688/1.089312/-1.214975/1.245025
+  params=0/0/0/0.01/0/0 float=y inside=bof60 periodicity=0
+  colors=000vq8wt5xw3zz0<4>ul5tj6sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq\
+  <10>dtz<7>JjjGhhDgfBfdAeb8c_8c_<2>CdaEebFfbGgcHgc<4>NkfPlgPlg<20>dtnetnf\
+  uogvp<23>zzzwb_<8>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<1\
+  2>xu2<11>000AAC<2>J3SM0YN0_<5>W0mY0pZ2n<16>tnA
+  }
+
+Left_Turn          { ; coals are gone, usually 4 to 5 hours.
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 15 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha01
+  passes=2 corners=-0.62716403/-0.43463923/0.53646564/0.68085924
+  params=0.001/0/0/0/0/0 float=y inside=0 periodicity=0
+  colors=000AAC<5>00o<3>C6jF8iGAh<7>WTYYWW`XU<3>ocK<6>xw3zz0yx1<5>sg7qe9nd\
+  9<14>0JR<12>0RZ0S_0T`0Ua0Ub<5>0Xh0Yi0Zi0_j0`k<6>2gq<4>KmtOnuTov<4>ntz<5>\
+  YntVmsUlr<21>0RX<15>ZQUWLTSHS<4>eHXhGYjEY<4>v7W<24>yubywbxu`<8>peNocLncL\
+  <10>bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000
+  }
+
+Diced              { ; After the coals are covered in a fine white ash,
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 19 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=speed01
+  function=ident/sqr
+  corners=-0.6471447085/-0.6339212329/0.5506906698/0.5547006814/-0.6443090\
+  629/0.5469098089 params=1/0/0/0/0/0 float=y inside=0
+  colors=000mFa<3>uR_wUZwXW<6>ws4<7>KKg<8>wmp<3>Ykl<10>TKXTHWRIW<14>0ZZ<9>\
+  Z8R<3>RKXPNZPO_<11>KbsJdtJevIgxIgx<30>4WU0UT<15>00v<15>Lf0<15>c0N<14>sWM\
+  uZLtZL<14>SUX<15>unQ<4>MKA<4>442oVTteL<4>c0N<2>IReEXiAcmEYlHTlLNkRGh<2>e\
+  3c<2>kCb
+  }
+
+Galaxy_1           { ; allow a heavy smoke to escape from the vent holes.
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 20 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/ident passes=2
+  corners=-0.02932260053/-0.007792211261/1.128957288/1.13871027/-0.0262530\
+  9146/1.12486461 params=4/0/2/0/2/0 float=y
+  colors=CCCCCJ<4>CDX<20>oo_qq`ss_<10>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>\
+  sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssC\
+  sq<19>CsECsCEsEGsGIsI
+  }
+
+Surfer_Gothic      { ; :   1 tablespoon lemon juice
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 26 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/log passes=2
+  corners=0.3589179/0.59359356/0.1559992/-0.15690168/0.59359356/-0.1569016\
+  8 params=2/0/2/0/6/0 float=y inside=bof60 outside=real
+  colors=000ddj<16>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P\
+  00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lA\
+  Al<23>wwbzzazyazwa<31>nnsmmsmmtllummu<2>ffm
+  }
+
+Twila              { ; :   2 shakes Tabasco sauce (or to taste...)
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 30 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=2
+  corners=-0.5966654474/-0.5878077525/0.61974995569/0.62042683708/-0.59380\
+  15803/0.61593146622 params=92/0/0/0/0/0 float=y maxiter=500
+  periodicity=0
+  colors=000zzb<9>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<1\
+  5>zzz<15>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<4>zzf
+  }
+
+Noam_Chomsky       { ; sauce.  (The pink edge you will see on the outside
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 31 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/log passes=2
+  corners=0.57404416747/0.56601264025/0.16734596819/0.17630671817/0.566851\
+  65768/0.17693598124 params=2/0/2/0/3/0 float=y maxiter=160
+  outside=atan logmap=9
+  colors=000AAl<23>wwbzzazyazwa<31>nnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ\
+  2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFN\
+  OFOQ<27>0ty<33>02l00k00k<11>88l
+  }
+
+Firemen            { ; over the coals, then add the grill and the meat.
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 33 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha02
+  passes=2 corners=-0.041140228/0.11117977/0.79982504/0.91406504
+  params=0/0/0.01/0/0/0 float=y inside=0 periodicity=0
+  colors=G00sO0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H0\
+  0H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw\
+  0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G00H0\
+  0H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy0zw\
+  0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<3>K00I00I00<2>G00G00H0\
+  0H00H00<5>Q00S00U00W00Z00`00b00<2>i50k60mA0oE0qI0<3>wg0xm0yr0zw0zy0zz0zy\
+  0zw0yr0xm0<3>sO0qI0oE0mA0k60i40g20<3>Y00W00U00S00Q00<4>I00H00H00<3>G00G0\
+  0H00H00<2>L00M00O00Q00<4>`00b00e10g20i40k60<2>qI0<3>wg0xm0yr0zw0zy0zz0zy\
+  0zw0yr0xm0<2>tV0
+  }
+
+Galaxy_2           { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 35 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/ident passes=2
+  corners=0.52820956105/0.53031333645/0.33049873618/0.33123835031/0.528611\
+  90541/0.32996227703 params=3/0/2/0/0/0 float=y inside=0 logmap=16
+  colors=000QNn<2>XTz<15>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<15>\
+  0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<10>OLj
+  }
+
+Pink_Horn          { ; : Add:
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 37 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter04
+  function=sqr/ident passes=2
+  corners=-0.0202910607/0.0567471826/0.735901348/0.748613366/0.00134093832\
+  /0.707058683 params=75/0/0/0/0/0 float=y inside=0 periodicity=0
+  colors=000hpk<4>zyyzzz<31>kKk<12>nrUotSowRpzPoxP<19>R8KP6KO3KM0JM0K<18>4\
+  0r30t00v10x00z<29>Puz<8>JhpIgoHenGdmGbkFaj<17>1BR09P19Q<13>MMiONkQPk<13>\
+  wwyzzzzwx<14>z0N<14>000<14>EXLCYLA_K<8>dnh
+  }
+
+Prince             { ; :   1 1/2 cups catsup
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 38 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=speed01
+  function=ident/sqr passes=2
+  corners=-0.336552751/-0.314248751/0.701439005/0.718167005
+  params=1/0/0/0/0/0 float=y inside=0
+  colors=000MMt<2>OOxOOyQQySSyUUzSSzQQzOOy<2>NNvMMtMMsLLqKKo<5>DDZCCWBBS<4\
+  >33A226210110<3>HD3KG4OJ4RL5VO6YR6`T7dW8<3>ncApeArfAthBviBwjB<4>zsKzqIzo\
+  FylCykC<2>uhBsgBqeAodAmb9<3>bU7_S7WP6<2>MH4IE3EB2A82751202000<6>I6LL7ON8\
+  QP8T<3>XBaZCc_Cd<3>dEjeEkeEkfElgHliKlkOl<2>gHleEkdEj<2>aDe_CdZCbXB`VAZTA\
+  X<2>N7PK6NI6KF5HD4F<3>203300<5>Q55U55X66_77<3>k99m99pAArAAsBBuBBwBBxCCyC\
+  CyCC<2>zMM<2>yCC<2>uBBtBBrAApAA<2>i99f88c77`77Y66<5>C22811400000120251<5\
+  >BN5CP6ES7FU7GX8<3>KdALeAMgBMhBNiB<2>OlC<2>YlM<2>OlC<3>MhBLfALeAKcAJa9<2\
+  >GW8ET7DR6CO6AL5<4>371241001002<5>99PBBSCCWDDZFFa<2>IIjJJlKKoLLqMMs
+  }
+
+Galaxy_3           { ; When smoke stops (45 minutes to an hour) remove
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 39 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider01
+  function=ident/ident passes=2
+  corners=-0.566585119/-0.517855391/0.531050933/0.567598229
+  params=2/0/1.9/0/0/0 float=y inside=0
+  colors=000C0`<4>I0qK0uJ0r<12>308204333<14>zzz<15>000<15>z0G<15>000<15>zz\
+  z<15>000<15>0gg<15>000<15>zzz<15>000<15>zn0<15>000<15>zzz<15>004<8>B0Y
+  }
+
+M                  { ; at 250 degrees F for 4 to 6 hours.  Don't peek!
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 39 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  passes=2
+  corners=-1.459266/-0.4412817/0.6786562/-0.6786562/-0.4412817/-0.6786562
+  params=0/0/-0.001/0/0/0 float=y inside=0 periodicity=0
+  colors=000cUj<6>NqzOszPuz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<\
+  14>000<14>EXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<17>UDLSBKR8KP6KO3KM0J<2>K\
+  0OJ0QK0Q<30>w0S<7>eRh
+  }
+
+Frazzle            { ; After the smoke begins, cover the barbeque and
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 41 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/ident passes=2
+  corners=0.36170067478/0.36129096232/0.9428261377/0.9553757335/0.35552937\
+  231/0.951054541 params=2/0/3/0/0/0 float=y logmap=15
+  colors=000S0f<2>W0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDD\
+  KEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazy\
+  azwa<31>nnsmmsmmtllummu<20>000<17>Q0d
+  }
+
+Serpentine         { ; :   5 tablespoons Worchestershire sauce
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 42 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqr/ident/flip passes=2
+  corners=-1.984129/-0.4587758/0.9675693/-1.066235/-0.4587758/-1.066235
+  params=0/0/0/0/0/0 float=y inside=0
+  colors=000AcmEYlHTlLNkRGh<2>e3c<7>uR_wUZwXW<6>ws4<7>KKg<8>wmp<3>Ykl<10>T\
+  KXTHWRIW<14>0ZZ<9>Z8R<3>RKXPNZPO_<11>KbsJdtJevIgxIgx<30>4WU0UT<15>00v<15\
+  >Lf0<15>c0N<14>sWMuZLtZL<14>SUX<15>unQ<4>MKA<4>442oVTteL<4>c0N<2>IReEXi
+  }
+
+My_Pal_Foot-Foot   { ; hot.  Your meat will look almost black on the
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 43 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider01
+  function=conj/flip passes=2
+  corners=0.35931840289/0.35889673247/-0.59016381247/-0.59080991133/0.3594\
+  7672899/-0.59037491394 params=2/0/2/0/0/0 float=y inside=bof60
+  logmap=13
+  colors=000nRQ<5>uWVwWVxXWzYXzZV<14>zz0<45>330220012<23>0Pl0Qn0Tp<4>0iz<4\
+  >0Vq0Ro0Qm<23>022000010<40>0q0<5>fz0<5>0o0<24>020000100<36>lRQ
+  }
+
+Dendrite_Corona    { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 46 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider01
+  function=cabs/ident passes=2
+  corners=0.2741081563/0.289904797/1.167659327/1.170979534/0.2782012475/1.\
+  162201872 params=3/0/3/0/2/0 float=y inside=0
+  colors=000J0T<8>W0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDD\
+  KEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazy\
+  azwa<31>nnsmmsmmtllummu<20>000<11>H0R
+  }
+
+Mwowm              { ; Remove from oven and open foil - it will be very
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 46 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=speed02
+  function=sin/ident passes=2
+  corners=-1.62613003/-1.61013643/0.0105896831/-0.0107351169/-1.61013643/-\
+  0.0107351169 params=0/0/12/0/0/0 float=y inside=0 periodicity=0
+  colors=14JsiX<10>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>ApW8tU8qU<14>1\
+  4J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<15>0Tz<14>06M47K<14>zza<3>u\
+  mY
+  }
+
+Parsley            { ; BODACIOUS BARBEQUE SAUCE:
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 46 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  passes=2
+  corners=-0.68826263/-0.39532787/0.622435226/0.5805874/-0.56271916/0.4550\
+  43929 params=0/0/0.01/0/0/0 float=y inside=0 logmap=5 periodicity=0
+  colors=000dBI<8>pWTrZVs`WucYveZxh`<5>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<\
+  4>4P73O62N51M40L3<2>DT3IW3LY3<6>bg3jl3sq2<10>000AACD8HG5N<5>gZp<6>cEibBg\
+  cEd<11>rkDtnAuq8wt5xw3zz0<6>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10\
+  >dtz<5>PmnMklJjjGhhDgf<2>8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<4>v7W<3>vFX
+  }
+
+Whammy_1           { ; Simmer 20 minutes, then strain.  Best if made at
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 47 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=inandout14 function=ident/sin passes=2
+  corners=-0.769500165/-0.735359185/0.0229954424/-0.0225258642/-0.73535918\
+  5/-0.0225258642 params=0/0/0/0/0/0 float=y maxiter=1023 inside=0
+  logmap=16
+  colors=000D8HG5NJ3SM0Y<4>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<5>sg7qe9nd9<\
+  13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>\
+  SHS<4>eHXhGYjEY<3>t8Wv7Wv9W<23>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73\
+  O62N51M40L3<12>xu2<11>000AAC
+  }
+
+Peter_Max          { ; :   3 slices onion - chopped
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 47 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter02
+  function=ident passes=2
+  corners=0.2600443078/0.2950883928/0.4393368211/0.4552113281/0.265040415/\
+  0.4326753448 params=5/0/0/0/0/0 float=y inside=bof60
+  colors=14Jtm7<14>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>\
+  zpg<15>z_0<15>0Tz<14>06M47K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4
+  }
+
+One_For_Jon        { ; Serve with cornbread and fresh veggies.  People
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 53 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/tan/tan/tan passes=2
+  corners=-0.8147804/0.8147804/-5.703463/5.703463/-5.703463/0.8147804
+  params=0/0/0/0/0/0 float=y periodicity=0
+  colors=000_5l<14>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00\
+  P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl\
+  <23>wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n
+  }
+
+Boil               { ; chili powder, sugar, and black pepper.  Rub this
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 54 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqr/ident/cosh passes=b
+  corners=1.10277/-1.618879/-1.814433/1.814433/-1.618879/1.814433
+  params=0/0/0/0/0/0 float=y fillcolor=1 periodicity=0
+  colors=000M00mQ0<6>qU0qV0qW0qX0qY0<3>s_0s`0sa0sb0sb0sc0td0<29>yyhyzjyzky\
+  zm<2>yyqyxszwtzvvzvwzuyztyztzzsz<36>uT7uT6uS4uS3uR1<5>sN0sN0sM0rL0rK0qJ0\
+  <4>pG0pF0pE0oE0oD0nC0<9>k50k50j40i30<2>h10h00h00g00<7>d00d00c00b00<9>Z00\
+  Z00Y00X00<6>U00U00T00S00<9>N00N00N00N00N00<5>Q00Q00R00S00<6>V00V00W00X00\
+  <3>Y00Z10Z10_20_20<5>b60b70c80c80d90dA0eA0eB0<3>gE0hE0hF0hG0<2>iI0iJ0jJ0\
+  kK0<5>mO0
+  }
+
+Ouch               { ; will think you grew up in Texas!
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 57 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=1 corners=-0.33412245/0.10619755/0.63327065/0.96351065
+  params=101/0/0/0/0/0 float=y maxiter=500 inside=0 periodicity=0
+  colors=000_5l<14>rkDtnAuq8wt5xw3zz0<6>sg7qe9nd9<13>0LL<23>0Xh0Yi0Zi0_j0`\
+  k<6>2gq<10>dtz<5>PmnMklJjjGhhDgf<2>8c_<25>zwbwtb<8>SHS<4>eHXhGYjEY<4>v7W\
+  <24>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73O62N51M40L3<12>xu2<11>000AA\
+  C<2>J3SM0YN0_<5>W0mY0pZ2n
+  }
+
+Nhgh               { ; outside, but it will be tender.  Cut thinly
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 58 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha01
+  passes=2
+  corners=-1.5113642/-0.67136421/0.5549917/-0.5650083/-0.67136421/-0.56500\
+  83 params=0.001/0.001/0/0/0/0 float=y maxiter=1000 inside=0
+  periodicity=0
+  colors=0008jk8ik8gk<8>TWZWUYZTY<5>qMS<3>PAMH7KA4K41Jc6f<8>5xs<7>B03<2>B0\
+  AC0DC0H<8>D1uE2zE4p<2>BDN<3>8OA<13>lvi<2>kogklfkiejfdjdc<9>fDUrnC<17>fNF\
+  eLGdJF<3>aB8<18>GjY<5>zog<3>N0U<22>H3p`_c<3>7kS<3>3Pq2Jx3Js<8>FOBGO6HQ6<\
+  12>ZwG`sJC0V<8>E7lF8nF9pGAsJAr<12>nCY<4>c6ffuw<9>8lk
+  }
+
+Angel              { ; VALERIE BEACHAM'S BARBEQUED BEEF BRISKET RECIPE
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 58 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=asin/sqr/ident/flip passes=2
+  corners=0.89201734/0.30395984/2.653136/-1.463268/2.6561902/0.3009051
+  params=0/0/0/0/0/0 float=y inside=bof61
+  colors=00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJ\
+  IgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>\
+  02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<4\
+  >70B
+  }
+
+Slump              { ; :   1/4 teaspoon liquid smoke
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 59 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider01
+  function=conj/flip passes=2
+  corners=-1.03686119/-1.06652538/-0.3458954762/-0.34686393366/-1.04707544\
+  /-0.33227647406 params=2/0/2/0/0/0 float=y inside=bof61 logmap=8
+  colors=000R00<19>xI0zJ0zN0<11>zz0<14>w03<8>O0b<8>dJMfLKhMI<8>zc0<4>442<2\
+  >553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>00000\
+  0200<18>c00
+  }
+
+Little_Wing        { ; there will be a lot of juices.  Put meat in oven
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 60 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter04
+  function=sqr/ident passes=2
+  corners=-0.750611398/-0.806484403/0.153817106/0.0230151494/-0.707940741/\
+  0.0969228963 params=12/0/0/0/0/0 float=y inside=bof60 periodicity=0
+  colors=0000iz<4>0Vq0Ro0Qm<23>022000010<40>0q0<5>fz0<5>0o0<24>020000100<4\
+  1>rVUtVUuWVwWVxXWzYX<14>zx2zz0yy0<44>330220012<23>0Pl0Qn0Tp<3>0ex
+  }
+
+Bobbish            { ; of 1 teaspoon each of onion salt, garlic salt,
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 60 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=tan/ident passes=2 corners=-1.28/1.28/-0.96/0.96
+  params=3/0/3/0/100/0 float=y inside=bof60 invert=0.5/0/0
+  colors=14Jyw`<14>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>ApW8tU8qU<14>1\
+  4J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<15>0Tz<14>06M47K<14>zza
+  }
+
+Lilies_and_Macrame { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 60 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider02
+  function=ident/ident passes=2
+  corners=-1.76424825906/-1.76510918751/0.0099787064993/0.00927228907513/-\
+  1.76421911294/0.00993984500415 params=2/0/2.055/0/0/0 float=y
+  inside=0 logmap=24
+  colors=000Icm<11>ttt<15>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg\
+  _Kg<13>rqstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<13>04302\
+  2023<14>6Zk<2>Fbl
+  }
+
+Gaping_Maw         { ; cover and blow on the coals and smoke chips to
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 61 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=inandout14 function=ident/ident passes=2
+  corners=-0.569786631334/-0.569749447318/-0.2607384549679/-0.260760471910\
+  2/-0.569762676956/-0.2607703941384 params=0/0/0/0/0/0 float=y
+  inside=zmag periodicity=0
+  colors=000haP<14>xo`zpaypa<29>UPF222<29>ppp<14>TTTRRRPPPNNNMMM<12>000PFF\
+  <29>xeDzfCyfC<30>PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<13>\
+  f`O
+  }
+
+Sproing            { ; :   3/4 teaspoon powdered ginger
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 63 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=slider01
+  function=ident/ident passes=2
+  corners=-0.391600399/-0.387179119/0.9129860203/0.9070909803/-0.387179119\
+  /0.9070909803 params=2/0/2.71828182845905/0/0/0 float=y inside=0
+  logmap=27
+  colors=0000Y0<2>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB\
+  0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>7955\
+  74354033077<13>4zz<15>zz0<15>z1z<15>000<11>0W0
+  }
+
+M2                 { ; :
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 64 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter02
+  function=sin passes=2
+  corners=-0.55151351/-0.669612898/-0.535683111/-0.325832749/-0.694757464/\
+  -0.344691173 params=100/0/0/0/0/0 float=y periodicity=0
+  colors=000SSS<6>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N\
+  <15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15\
+  >zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<7>WWW
+  }
+
+Noble_Rot          { ; is from the liquid smoke and the pre-grill rub.)
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 67 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=2
+  corners=-0.577839102/-0.5724065302/0.48869424655/0.47904112988/-0.571249\
+  8801/0.47990861737 params=101/0/0/0/0/0 float=y maxiter=500 inside=0
+  periodicity=0
+  colors=14JSXZ<6>0Tz<14>06M47K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<1\
+  5>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<7>WX\
+  V
+  }
+
+Have_A_Cow         { ; restart them.  If necessary, add more chips.  Turn
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 72 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqr/ident/flip passes=2
+  corners=-0.47728651/0.48112506/-3.378731/3.330149/-3.352521/0.4549147
+  params=0/0/1/0/0/0 float=y inside=zmag periodicity=0
+  colors=M00b50<7>eB0eC0fC0gD0<6>iI0iJ0jJ0kK0<14>qU0qV0qW0qX0qY0<3>s_0s`0s\
+  a0sb0sb0sc0td0<29>yyhyzjyzkyzm<2>yyqyxszwtzvvzvwzuyztyztzzsz<36>uT7uT6uS\
+  4uS3uR1<5>sN0sN0sM0rL0rK0qJ0<4>pG0pF0pE0oE0oD0nC0<9>k50k50j40i30<2>h10h0\
+  0h00g00<7>d00d00c00b00<9>Z00Z00Y00X00<6>U00U00T00S00<9>N00N00N00N00N00<5\
+  >Q00Q00R00S00<6>V00V00W00X00<4>Z10Z10_10_20`30`40a40a50
+  }
+
+Truculent_Cowboys  { ; :   3 tablespoons water
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 73 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqr/ident/flip passes=2
+  corners=0.323569348/0.393060684/0.11513069/0.60157002/0.115095349/0.3930\
+  9602 params=0/0/0/0/9/0 float=y inside=0 invert=1.06175/0/0
+  periodicity=0
+  colors=14JZ`U<6>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>ApW8tU8q\
+  U<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<15>z_0<15>0Tz<14>06M47K<6>WX\
+  S
+  }
+
+Timothy_Leary      { ; :   5 tablespoons brown sugar
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 84 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/ident/ident/flip passes=2
+  corners=-0.59445476/0.39107554/-3.402402/3.496309/-3.5510451/0.5397185
+  params=0/0/0/0/0/0 float=y maxiter=250 inside=zmag
+  colors=000zgJ<10>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0a\
+  U0<14>zz0<14>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6H\
+  I6FG6DF5<2>795574354033077<13>4zz<15>zz0<3>zkF
+  }
+
+Cruise_Ship        { ; temperature while you prepare the coals.
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 88 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=wha03
+  passes=2
+  corners=-1.546408/-0.70640801/0.5650083/-0.5549917/-0.70640801/-0.554991\
+  7 params=0/0/0.001/0/0/0 float=y maxiter=500 periodicity=0
+  colors=00000F<14>eB0<9>iI0iJ0jJ0kK0<15>qV0qW0qX0qY0qY0<3>s`0sa0sb0sb0sc0\
+  td0<29>yyhyzjyzkyzm<2>yyqyxszwtzvvzvwzuy<2>zsz<38>uS4uS3uR1tR0tQ0<5>sM0r\
+  L0rK0qJ0qJ0<5>pE0oE0oD0nC0nC0<8>k50k50j40i30<2>h10h00h00g00<7>d00d00c00b\
+  00<9>Z00Z00Y00X00<6>U00U00T00S00<10>N00N00N00N00O00<4>Q00Q00R00S00<6>V00\
+  V00W00X00<4>Z00
+  }
+
+Sun_Worship        { ; :   1 heaping teaspoon chili powder
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 91 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter03
+  function=sqr/cotan passes=2
+  corners=-1.20866732/-1.18161465/0.264222444/0.346843176/-1.23858631/0.30\
+  411443 params=10/0/0/0/0/0 float=y inside=bof60 decomp=256
+  periodicity=0
+  colors=000mm0<35>330220012<23>0Pl0Qn0Tp<4>0iz<4>0Vq0Ro0Qm<23>022000010<4\
+  0>0q0<5>fz0<5>0o0<24>020000100<41>rVUtVUuWVwWVxXWzYX<14>zx2zz0yy0<7>nn0
+  }
+
+Lee_Skinner        { ; meat over, cover, and let smoke again for 45
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 103 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=2
+  corners=-0.57562212756/-0.57626740663/0.48213023929/0.48122992273/-0.575\
+  42227608/0.48186377064 params=101/0/0/0/0/0 float=y maxiter=500
+  inside=0 periodicity=0
+  colors=000S7i<12>ApW8tU8qU<14>14J<15>w0z<15>7Hh7Kf<13>1bF0dD1cD<6>9UI<4>\
+  VMg<2>iIeoGdtFczDbzGc<2>zRgzUizXjz_kzam<3>zmrzptxno<8>fQ6<3>XG4VD3VF6<4>\
+  sZ0<10>zg3<2>sd6qb7na8l_9iZB<11>GIO<11>zza<15>d9M<14>4ot1rw1ou<14>14J<15\
+  >vp4<15>V0kU4j
+  }
+
+Pharaoh2           { ; :   1 tablespoon butter
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 106 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqrt/sin/sin passes=2
+  corners=-0.6799104/0.3864519/-3.888368/3.576171/-3.878998/0.377083
+  params=0/0/0/0/0/0 float=y inside=0 periodicity=0
+  colors=000zz0<12>0Yz<3>8Mr<4>37U<3>OA`UBbXFb<11>xyb<13>JfK<17>AAz<14>ss8\
+  <16>0zz<14>z_0<16>zz0<14>0z0<15>jajm_mnaj<12>yx3zz0yx0<23>G00<22>z00sKS<\
+  6>zA0<14>zw0
+  }
+
+Peter_Min          { ; :   1 clove garlic - minced
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 107 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=2
+  corners=-0.575977062874/-0.576168564613/0.48161176502/0.4812883412/-0.57\
+  5890760068/0.48149669461 params=101/0/0/0/0/0 float=y maxiter=500
+  inside=bof61 periodicity=0
+  colors=000hYC<7>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>7955743540330\
+  77<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`\
+  S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<6>fUD
+  }
+
+Little_Richard     { ; aluminum foil.  Close all foil seams tightly, as
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 112 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=popcornjulcplx function=sin/sqr/ident/flip passes=2
+  corners=-0.38885281/-0.92579977/1.231256/-2.527376/1.2219894/-0.9165339
+  params=0.02/0/0/0/0/0 float=y inside=bof60
+  colors=00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJ\
+  IgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>\
+  02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<25>qqppppppqooqoor<3>mmtllummu<20\
+  >000<4>70B
+  }
+
+Farcy_Buds         { ; barbeque.  (Coals directly under the meat will char
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 113 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter05
+  passes=2
+  corners=-0.130845018729/-0.130169550205/0.757440240037/0.756353782565/-0\
+  .130080350475/0.756420682364 params=3/0/2/0/100/0 float=y
+  inside=bof61 logmap=43 periodicity=0
+  colors=000s0ww0z<15>7Hh7Kf<13>1bF0dD1cD<6>9UI<4>VMg<2>iIeoGdtFczDbzGc<2>\
+  zRgzUizXjz_kzam<3>zmrzptxno<8>fQ6<3>XG4VD3VF6<4>sZ0<10>zg3<2>sd6qb7na8l_\
+  9iZB<11>GIO<11>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>ApW8tU8qU\
+  <14>14J<13>p1u
+  }
+
+LeeSkinnerOnAcid   { ; minutes to an hour.  Repeat this process until the
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 120 minutes
+                     ; Note: Lee says the only acid he takes is ascorbic<g>
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter01
+  passes=2
+  corners=-0.57562212756/-0.57626740663/0.48213023929/0.48122992273/-0.575\
+  42227608/0.48186377064 params=101/0/0/0/0/0 float=y maxiter=500
+  inside=bof61 periodicity=0
+  colors=14Jza6z`3z_0<15>0Tz<14>06M47K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<1\
+  5>vp4<15>V0k<14>ApW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<15>14J<15>zpg<12>z\
+  b8
+  }
+
+Whammy_2           { ; least 2 hours ahead.  Makes 2 1/2 cups.
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 121 minutes
+  reset=1920 type=formula formulafile=snazzy.frm
+  formulaname=inandout14 function=ident/sin passes=2
+  corners=-0.7444396338/-0.7417149104/0.001818725577/-0.001814238957/-0.74\
+  17149104/-0.001814238957 params=0/0/0/0/0/0 float=y maxiter=1023
+  inside=0 logmap=16
+  colors=000D8HG5NJ3SM0Y<4>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<5>sg7qe9nd9<\
+  13>0LL<23>0Xh0Yi0Zi0_j0`k<6>2gq<10>dtz<7>JjjGhhDgfBfdAeb8c_<25>zwbwtb<8>\
+  SHS<4>eHXhGYjEY<3>t8Wv7Wv9W<23>yubywbxu`<8>peNocLncL<10>bVJ<6>9RC<4>4P73\
+  O62N51M40L3<12>xu2<11>000AAC
+  }
+
+Ella               { ; push them to the outside perimeter of the
+                     ; (C) 1995 by Bradley Beacham, All Rights Reserved
+                     ; My time about 134 minutes
+  reset=1920 type=formula formulafile=snazzy.frm formulaname=shifter05
+  passes=2
+  corners=-0.1064752688/-0.1010527343/0.7682017352/0.7653027093/-0.1031316\
+  239/0.7637435421 params=3/0/2/0/101/0 float=y maxiter=250 inside=0
+  logmap=19 periodicity=0
+  colors=000JJo<11>ss8<16>0zz<14>z_0<16>zz0<14>0z0<15>jajm_mnaj<12>yx3zz0y\
+  x0<23>G00<22>z00sKS<6>zA0<15>zz0<12>0Yz<3>8Mr<4>37U<3>OA`UBbXFb<11>xyb<1\
+  3>JfK<17>AAzDDvGGs
+  }
+

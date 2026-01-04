@@ -1,0 +1,177 @@
+;Fractint parameter files from Sam Costy-Bennett, 72754,1062
+;use them and enjoy!
+;6/22/94
+
+
+scb016        { ; Indian Mandala 1
+                     ; 4-19-94
+                     ; sam costy-bennett
+  reset=1800 type=fn(z)+fn(pix) function=cos/recip passes=t
+  corners=-0.40758097/0.43882197/-0.21259528/0.18643153 params=1/0/1
+  inside=epsiloncross potential=255/225/200
+  colors=000`VLRIOTA2XQbdPVWTc<3>vhDRPk<6>bFzQPh<6>LCZNPf<5>3IL8FCRUi<3>Zj\
+  effbxxWSOj<4>eAsDVKdNitKhTNRWK8UTd<5>qm9QMd<2>S8OSLiVGiYBiQNQRJ6TWc<3>ht\
+  EXGYc5MQSd<4>OaC4I6RPj<3>XLqZJsbYOof2XK_<2>t04QOhJYmPLf<5>J3X<6>g5D<2>qk\
+  j<3>p9V<5>90y<5>weE<5>2kr<7>j8H<5>QB3MC0KvZ<3>nuW<3>jfg<6>7Zi<4>bOw<5>EK\
+  9y6x<2>btNM`f4Gz<4>j7C<3>P_x<3>aGweBvjKspUovckrbjn`hiZf<7>I7l<4>NUr<3>AZ\
+  L<5>97q<4>tpQ<4>iGc<6>1DV<2>8`hBimBbi<4>70OFPN000
+  }
+
+scb017        { ; two insects in love
+                     ; 4-16-94
+                     ; the view from below
+                     ; sam costy-bennett
+  reset=1733 type=mandel(fn||fn) function=sin/sqr corners=-4/4/-3/3
+  params=0/0/20 float=y maxiter=500 inside=bof60 potential=255/225/200
+  decomp=256 periodicity=0
+  colors=00000e0e00eee00e0eeL0ZnN<5>epFAgi<2>AgPAgn<26>1_BAgo<29>SaPAfn<28\
+  >5BKAgn<29>Rl7Bel<9>RLAAgn<20>ARUAgoAQT<5>9LN<3>53N<15>9NiAPkAQlBSnBToCV\
+  q<14>6zo<3>Yr1<19>brIcrJcrKdrLdrMeqN<2>alO_jPZhQXfRWdRUbS
+  cyclerange=7/255
+  }
+
+scb018        { ; Rings within rings.
+                     ; 4-16-94
+                     ; messing with the fn+fn types
+                     ; sam costy-bennett
+  reset type=fn*fn function=recip/sqr passes=b
+  corners=-4/4.002258/-3.000122/3 float=y maxiter=1000 fillcolor=0
+  inside=zmag outside=imag decomp=128 distest=20/71 biomorph=1
+  finattract=y periodicity=0
+  colors=000RVk<24>enseotfptfpteosdnr<31>MWNMWNNWN<56>yoB<10>J4Q<40>6uY<2>\
+  Mbq<50>LB5LB5LB6<24>IFR
+  }
+
+scb019        { ; Redhearts
+                     ; 4-16-94
+                     ; messing with the fn+fn types
+                     ; sam costy-bennett
+  reset type=fn*fn function=conj/cotanh passes=b
+  corners=-4/4.002258/-3.000122/3 float=y maxiter=1000 fillcolor=0
+  inside=bof60 outside=imag decomp=128 distest=20/71 biomorph=1
+  finattract=y periodicity=0 colors=@blend.map
+  }
+
+scb020        { ; It's the other side of Event Horizon
+                     ; 4-23-94
+                     ; messing with the fn+fn types
+                     ; sam costy-bennett
+  reset type=fn*fn function=cosh/recip passes=t
+  corners=-3.424/3.424/-1.028941/1.028941 float=y maxiter=4
+  bailout=400 fillcolor=255 inside=bof60 outside=imag decomp=8
+  distest=1/90 biomorph=1 periodicity=0
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
+  >ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+scb021        { ; It's the other side of Event Horizon
+                     ; 4-23-94
+                     ; messing with the fn+fn types
+                     ; sam costy-bennett
+  reset type=fn*fn function=cosh/recip passes=t
+  corners=-3.424/3.424/-1.028941/1.028941 float=y maxiter=4
+  bailout=400 fillcolor=255 inside=bof60 outside=imag decomp=8
+  distest=1/90 biomorph=1 periodicity=0
+  colors=nnn<21>7n7<20>ln7nn7nl7<19>n97n77n79<19>n7ln7nl7l<19>979777779<19\
+  >77l77n79n<19>7ln7nn9nn<21>pnnnnn<21>7n7<20>ln7nn7nl7<19>n97n77n79<9>n7T
+  }
+
+scb022        { ; Glowing Tombstones
+                     ; 4-22-94
+                     ; messing with the fn+fn types
+                     ; sam costy-bennett
+  reset type=fn*fn function=cosh/sqr passes=b
+  corners=-0.43517701/0.43517701/0.22154747/0.67746053 float=y
+  maxiter=16 bailout=8 fillcolor=0 inside=bof61 outside=imag
+  invert=0.6/0/0 periodicity=0
+  colors=CCCCs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsq\
+  sssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCss\
+  Csq<7>Csa
+  }
+
+scb024        { ; open star center
+                     ; messing with FN(Z*Z), slope@50, bailout@255
+                     ; sam costy-bennett
+  reset=1733 type=fn(z*z) function=sin passes=1 corners=-4/4/-3/3
+  float=y maxiter=500 inside=epsiloncross outside=mult
+  potential=256/50/255 decomp=256
+  colors=gebiLJiNKiKJhPK<18>`uX<46>b7eb6eb5ec3fb3ea3d`3b_3a<2>X5YW6XV8W<19\
+  >A`B8b98b9<60>bTbcSccSccSc<50>XoPXpOXpOWqNWqO<26>HbxGazGaz<2>Iaw
+  cyclerange=0/255
+  }
+
+scb025        { ; Kaleidoscope Time, try color cycling
+                     ; messing with FN(Z*Z), slope@50, bailout@255
+                     ; sam costy-bennett
+  reset=1733 type=fn(z*z) function=cosh passes=t
+  corners=-1.696/1.696/-1.272/1.272 float=y maxiter=500
+  inside=epsiloncross outside=mult potential=256/200/255 decomp=256
+  finattract=y periodicity=0
+  colors=TC9<42>ucguchvdivdiuehteg<9>mfbTcOlfa<23>VhObEJ<11>WdOVfOTVr<9>Vg\
+  Qi6n<46>VhOgKO<24>VgOVhOSgJ<8>VhOi5r<51>VhOuxS<4>ZjOwMCtPE
+  cyclerange=0/255
+  }
+
+scb026        { ; Crosshairs in the center.
+                     ; 4-17-94
+                     ; String Pearls permutations
+                     ; sam costy-bennett
+  reset=1800 type=fn*z+z function=cos passes=1
+  corners=2.515663/3.720021/-0.47860002/0.46413803 params=1/0/1
+  maxiter=200 inside=epsiloncross potential=256/75/200 decomp=32
+  biomorph=1
+  colors=000YK9<9>iD59ZH<42>442BZI<11>ecdAZH<41>tNtAZH<31>uxh9ZH<33>c`W9ZH\
+  <16>CQJ9ZHDPK<21>DKJDKJDKJCJIDJIEJI<28>jAV
+  }
+
+scb027        { ; Flower on side.
+                     ; 4-21-94
+                     ; from Tims Error, thanks.
+                     ; sam costy-bennett
+  reset=1800 type=tim's_error function=tan passes=t
+  corners=-2.316448/0.609548/-1.124297/1.0037 params=0.25 maxiter=50
+  inside=0 potential=255/270/0 invert=1.5/0/0
+  }
+
+scb028        { ; Bug caught in the Pincers of Scrutiny
+                     ; 4-20-94
+                     ; sam costy-bennett
+  reset=1800 type=fn(z)+fn(pix) function=sinh/recip
+  corners=-0.40758097/0.43882197/-0.21259528/0.18643153
+  params=9.1375097499999995/-0.23412450000000001/96/128 maxiter=50
+  inside=bof60 potential=255/225/200 invert=0.0926831/0/0 decomp=256
+  colors=@chroma.map
+  }
+
+scb029        { ; Pipe clog. It's all I could think of!
+                     ; 4-20-94
+                     ; sam csoty-bennett
+  reset=1800 type=fn(z)+fn(pix) function=cotanh/recip
+  corners=-0.40758097/0.43882197/-0.21259528/0.18643153
+  params=9.1375097499999995/-0.23412450000000001/96/128 maxiter=50
+  inside=bof60 potential=255/225/200 invert=0.0926831/0/0 decomp=256
+  colors=CCCCYs<9>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECs\
+  CCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>E\
+  CsCCsCEs<8>CWs
+  }
+
+scb030        { ; Lots of little Mandels
+                     ; 4-24-94
+                     ; sam costy-bennett
+  reset=1800 type=fn*z+z function=sin passes=b
+  corners=2.4313111/2.8167133/-0.22223293/0.21249175 params=1/0/1
+  maxiter=50 fillcolor=0 inside=bof60 outside=imag
+  potential=256/200/100 invert=1.6/0/0 decomp=125 colors=@glasses5.map
+  }
+
+scb023             { ; Turtle shell pieces
+                     ; 4-30-94
+                     ; sam costy-bennett
+  reset=1800 type=lambda(fn||fn) function=exp/sqr
+  corners=-1.441956/1.444153/-1.081573/1.081879
+  params=0.55000000000000004/0.025000000000000001/0.80000000000000004
+  maxiter=50 inside=bof60 outside=25 finattract=y
+  colors=CCCsECsCC<22>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<\
+  20>sCs<20>ECsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssssq<19>ssEs\
+  sCsqC<18>sGC
+  }
