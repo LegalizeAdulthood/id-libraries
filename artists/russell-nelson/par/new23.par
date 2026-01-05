@@ -62,26 +62,11 @@ TubeSnakeBoogie    { ; image(c)1999 Jim Weaver  (sierp002.gif)
   706705<4>601510611<13>RBFSCGUDHVEIWFIXHJ<23>viS
   }
 
-frm:Regula_falsi2{
-     IF(|p1|==0)
-    z=pixel
-     ELSE
-    z=p1
-     ENDIF
- x0=(1,1), c=x1=pixel:
- fx0=x0*x0+pixel,
- fx1=x1*x1+pixel,
- z=z-p2*(x1-x0)*fx1/(fx1-fx0),
- x2=z, x0=x1, x1=x2
-.0000001<|(x2)|
-}
-
-
 artic_borielus     { ;   0:01:42.71
                      ; Created Jan 02, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=rspf0001.frm
-  formulaname=regula_falsi2 passes=1
+  reset=2000 type=formula formulafile=new23.frm
+  formulaname=Regula_falsi2 passes=1
   center-mag=2.34742/3.75783/0.1866667
   params=0.6360972930082095/-0.9834589678640095/0.3860896633808405/-0.4948\
   576311532945 float=y maxiter=1000 periodicity=0
@@ -291,7 +276,7 @@ pheonix
 figura_04          { ;   0:07:22.70
                      ; Created Jan 02, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=frac_ml.frm formulaname=quartc
+  reset=2000 type=formula formulafile=noel.frm formulaname=quartc
   passes=1 corners=-3.299331/0.153637/-0.05399222/2.535734
   params=0.3891043733024079/0.3467055269020661 float=y maxiter=1024
   inside=zmag outside=15 periodicity=0 sound=off
@@ -357,58 +342,50 @@ ENDIF
 loop<rounds
 }  
 ;---------------------------------------------------------------------------
-
-----------------------------
-
-
-2. The second Method is a method to flatten images that have rotational
-symmetry around (0,0).
-You can imagine the process as cutting the plane along the positive x-axis
-and stretching the sheet such that the unit circle to become the x-axis
-and the origin (0,0) spreads out at (any x, - infinity).
-A star-shaped pattern for example then turns into a pattern that repeats in
-x direction and changes constantly in y-direction (ideal for wallpaper-type
-images
-and cloth-designs).
-You will find totally new appeal in many old point-symmetric fractals,
-especially those that
-allow deep zooming at (0,0)!
+; 
+; ----------------------------
+; 
+; 
+; 2. The second Method is a method to flatten images that have rotational
+; symmetry around (0,0).
+; You can imagine the process as cutting the plane along the positive x-axis
+; and stretching the sheet such that the unit circle to become the x-axis
+; and the origin (0,0) spreads out at (any x, - infinity).
+; A star-shaped pattern for example then turns into a pattern that repeats in
+; x direction and changes constantly in y-direction (ideal for wallpaper-type
+; images
+; and cloth-designs).
+; You will find totally new appeal in many old point-symmetric fractals,
+; especially those that
+; allow deep zooming at (0,0)!
 
 
 flatfrm  { ; by Karl Scherer (angle,radius) => (x,y)
            ; radius stretched such that (0,0) => (0,-infinity) 
           c=pi/5, x=imag(pixel),y=real(pixel)
           x=2*c*x, y=c*y, r=2^(-x), v=r*cos(y), 
-          w=r*sin(y), p=v+flip(w), {Karl's settings
-          z=0:               {your settings
+          w=r*sin(y), p=v+flip(w), ;Karl's settings
+          z=0:               ;your settings
 ;=========== insert your formula here ======================
          z=...
 ;=========== end of your formula ============================
-         |z|<8000            {your bailout
+         |z|<8000            ;your bailout
 }
 
-I suggest to Tim Wegener to add to the FRACTINT HOME PAGE a now option 
-a METHODS besides the existing FORMULAS and PARAMETER
-directories.
-This METHODS directory shall contain tools, methods (like my coloring
-scheme and my flattening scheme), tips and
-fractal code that may be used in all sorts of fractals.
-I think this would help other fractint users enormously.
+; I suggest to Tim Wegener to add to the FRACTINT HOME PAGE a now option 
+; a METHODS besides the existing FORMULAS and PARAMETER
+; directories.
+; This METHODS directory shall contain tools, methods (like my coloring
+; scheme and my flattening scheme), tips and
+; fractal code that may be used in all sorts of fractals.
+; I think this would help other fractint users enormously.
+; 
+; Next suggestion: Built my coloring method right into the next FRACTINT
+; version!
 
-Next suggestion: Built my coloring method right into the next FRACTINT
-version!
-
-
-MandelbrotMix4 {; Jim Muth - Feb. 3, 1999
-a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
-g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
-k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
-z=k*((a*(z^b))+(d*(z^f)))+c,
-|z| < l
-}
 
 pkpeaks.gif        { ; image(c)2000 Jim Weaver
-  reset=1960 type=formula formulafile=fractint.frm formulaname=ok-36
+  reset=1960 type=formula formulafile=fractint.frm formulaname=OK-36
   function=cotan/cosxx/cosh/cosxx passes=t
   center-mag=1.85462/1.9603/17.86519/1/105 params=0.2/0/0/0 float=y
   maxiter=25 inside=bof60 outside=atan
@@ -441,58 +418,12 @@ ok20eps9.gif       { ; image(c)2000 Jim Weaver
   zz<15>0c0<14>030000200500
   }
 
-frm:Mandel_lake {
-; p1 = not used
-
-; real part of p2: not used
-; imag part of p2: 0 = lake transform disabled
-;                  any value between 0 and 100: water level in % of
-;                  the screen height (0 = bottom, 100 = top)
-
-; real part of p3: amplitude of the wave (try 0.2)
-; imag part of p3: frequency (try 300)
-
-; New predefined variables
-; center  = (x,   y)
-; magxmag = (mag, xmagfactor)
-; rotskew = (rot,  skew)
-
-if (imag(p2) > 0 && imag(p2) <= 100)
-  angle = real(rotskew * pi / 180)
-
-  dxc = sin(angle) * (1-0.02*imag(p2)) / real(magxmag)
-  dyc = cos(angle) * (1-0.02*imag(p2)) / real(magxmag)
-  lake_center = center - dxc - flip(dyc)
-
-  a = real(p3) , f = imag(p3)
-  if (angle != 0)
-    pixel = (pixel - lake_center) * e^flip(angle) + lake_center
-  endif
-  y = imag(pixel)
-  if (y < imag(lake_center))
-    dy = imag(lake_center) - y
-    y = 2 * imag(lake_center) - y
-    y = y + a * dy * sin (f * dy^0.2)
-    pixel = real(pixel) + flip(y)
-  endif
-  if (angle != 0)
-    pixel = (pixel - lake_center) * e^flip(-angle) + lake_center
-  endif
-endif
-
-; Classic mandel formula
-  z = c = pixel
-:
-  z = z*z + c
-  |z| <= 4
-}
-
 mandel_lake_01     { ; .                           t=  0:00:08.45
                      ; Copyright Sylvie Gallet, Jan 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_lake.frm
+  reset=2000 type=formula formulafile=new23.frm
   formulaname=Mandel_lake center-mag=-0.444738/0/0.6666671
   params=0/0/0/40/0.5/150 float=y inside=atan outside=real
   decomp=256 cyclerange=0/255 sound=off
@@ -505,106 +436,20 @@ mandel_lake_01     { ; .                           t=  0:00:08.45
 
 fr_clock           { ; Martin Rodenberg moon@germanynet.de
   reset=2000 type=formula formulafile=fractint.frm
-  formulaname=jm_25 function=sinh/log passes=1
+  formulaname=Jm_25 function=sinh/log passes=1
   center-mag=+1.01305489025157200/-0.0034013417216\
   4564/124673.3/1.1454/52.778/9.107 params=900/300
   float=y maxiter=900000 colors=@volcano.map
   }
 
 
-frm:Mandel_lake { ; Sylvie Gallet, Jan 16, 2000
-;
-; p1: Julia seed
-; real part of p2: bailout value
-; imag part of p2: 0 = lake transform disabled
-;                  any value between 0 and 100: water level in % of
-;                  the screen height (0 = bottom, 100 = top)
-; real part of p3: amplitude of the wave (try 0.2)
-; imag part of p3: frequency (try 300)
-
-; This formula uses the new predefined variables:
-; center  = (x  , y)
-; magxmag = (mag, xmagfactor)
-; rotskew = (rot, skew)
-
-bailout = real(p2)
-
-; Lake transformation
-; -------------------
-
-if (imag(p2) > 0 && imag(p2) <= 100)
-
-  level = imag(p2) / 100         ; water level
-  ampl = real(p3)                ; amplitude of the wave
-  freq = imag(p3)                ; frequency
-
-  angle = real(rotskew * pi / 180)
-  exp_irot = exp(-flip(angle))
-  h = 1 / real(magxmag)
-  w = h / 0.75 * imag(magxmag)
-  tanskew = tan(imag(rotskew * pi / 180))
-
-; The complex numbers u and v are defined as follow:
-;   u = bottom_right_corner - bottom_left_corner
-;   v = top_left_corner - bottom_left_corner
-
-  u = 2 * w * exp_irot
-  v = 2 * h * (tanskew + flip(1)) * exp_irot
-
-; Bottom_left_corner:
-  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-
-  z = pixel - z3rd
-
-; solves the equation z = a*u + b*v which is equivalent to the system:
-;   re_z = a * re_u + b * re_v
-;   im_z = a * im_u + b * im_v
-; the solution (a,b) is:
-;       | re_z   re_v |        | re_u   re_z |
-;       | im_z   im_v |        | im_u   im_z |
-;   a = ---------------    b = ---------------
-;       | re_u   re_v |        | re_u   re_v |
-;       | im_u   im_v |        | im_u   im_v |
-;
-; Only b is used and 0 <= b <= 1
-;   b = 0  <==>  pixel at the bottom of the screen
-;   b = 1  <==>  pixel at the top of the screen
-;
-; Since the formula parser uses complex numbers, I thought the
-; easiest way to calculate b was:
-
-  b = imag(conj(u)*z) / imag(conj(u)*v)
-
-; the heart of the lake transform:
-  if (b <= level)
-    dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
-  endif
-
-  z = z + z3rd
-
-else
-  z = pixel
-endif
-
-; Classic mandel/julia formula
-if (ismand)
-  c = z
-else
-  c = p1
-endif
-:
-z = z*z + c
-|z| <= bailout
-}
-
 mandel_lake_01     { ; .                           t=  0:00:02.86
                      ; Copyright Sylvie Gallet, Jan 16, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_lake.frm
-  formulaname=mandel_lake ismand=y passes=1
+  reset=2000 type=formula formulafile=new23.frm
+  formulaname=Mandel_lake ismand=y passes=1
   center-mag=-0.444738/0/0.6666671
   params=0/0/512/40/0.3/200 float=y inside=atan
   outside=real decomp=256 cyclerange=0/255 sound=off
@@ -620,8 +465,8 @@ mandel_lake_02     { ; .                           t=  0:00:02.58
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_lake.frm
-  formulaname=mandel_lake ismand=y passes=1
+  reset=2000 type=formula formulafile=new23.frm
+  formulaname=Mandel_lake ismand=y passes=1
   center-mag=-0.5/0.135678/0.6666667
   params=0/0/1024/45/0.3/300 float=y maxiter=300 inside=0
   decomp=256 cyclerange=0/255 sound=off
@@ -634,8 +479,8 @@ mandel_lake_03     { ; .                           t=  0:00:02.80
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_lake.frm
-  formulaname=mandel_lake ismand=y passes=1
+  reset=2000 type=formula formulafile=new23.frm
+  formulaname=Mandel_lake ismand=y passes=1
   center-mag=-1.2699/-0.168032/36.72672/1/-32.5/30.396
   params=0/0/4/40/0.3/200 float=y maxiter=300 inside=0
   decomp=256 cyclerange=0/255 sound=off
@@ -648,8 +493,8 @@ mandel_lake_04     { ; .                           t=  0:00:01.59
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_lake.frm
-  formulaname=mandel_lake ismand=n passes=1
+  reset=2000 type=formula formulafile=new23.frm
+  formulaname=Mandel_lake ismand=n passes=1
   center-mag=0/0.331658/0.6666667
   params=0.3322884012539185/-0.03768844221105527/2/40/0.3/200
   float=y maxiter=300 inside=0 decomp=256 cyclerange=0/255
@@ -661,7 +506,7 @@ mandel_lake_04     { ; .                           t=  0:00:01.59
 GiraSol01          { ;   0:00:11.20 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
@@ -679,7 +524,7 @@ GiraSol01          { ;   0:00:11.20 on PIII(500)
 GiraSol02          { ;   0:00:07.14 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
@@ -697,7 +542,7 @@ GiraSol02          { ;   0:00:07.14 on PIII(500)
 GiraSol03          { ;   0:00:06.64 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
@@ -717,7 +562,7 @@ GiraSol09          { ;   0:00:14.89 on PIII(500)
                      ; Created Jan 14, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=9.602374340037233/10.23746452223274/1.03568376720481/0.1582873012\
@@ -731,7 +576,7 @@ GiraSol09          { ;   0:00:14.89 on PIII(500)
 GiraSol14          { ;   0:00:06.31 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=10.16553239539781/10.97274697103794/0.3815195165868103/-0.8091799\
@@ -746,7 +591,7 @@ GiraSol14          { ;   0:00:06.31 on PIII(500)
 GiraSol16          { ;   0:00:06.65 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.2813068/1/74.996
   params=9.058565019684439/11.41270180364391/0.9988479262672814/0.04411755\
@@ -762,7 +607,7 @@ GiraSol16          { ;   0:00:06.65 on PIII(500)
 GiraSol18          { ;   0:00:06.59 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.1374567/1/74.998
   params=8.336008789330728/11.13449507126072/-0.1694616534928431/0.7781487\
@@ -780,7 +625,7 @@ GiraSol18          { ;   0:00:06.59 on PIII(500)
 Breed_Pool     { ;   0:01:10.63 on PIII(500)
                      ; Created Jan 13, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=1920 type=formula formulafile=frac_ml.frm
+  reset=1920 type=formula formulafile=new23.frm
   formulaname=zmincoszb passes=t
   corners=-14.01561/4.918662/9.808842/-15.43685/4.918662/-15.43685
   params=-25.9299/0.5927 float=y inside=zmag outside=summ
@@ -794,8 +639,8 @@ Breed_Pool     { ;   0:01:10.63 on PIII(500)
 Spec_Tral           { ;   0:02:15.06 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=gregman2.frm
-  formulaname=gregsmandels3 function=cos/cotan passes=t
+  reset=2000 type=formula formulafile=gregsman.frm
+  formulaname=GregsMandelS3 function=cos/cotan passes=t
   center-mag=+2.32876830288676600/-0.33422447351784550/12042.16/1/-59.999
   params=-0.965514084292123/0.4783165990173039/-1.406323435163427/-0.38892\
   78847621082/7/0 float=y maxiter=1000 logmap=9 sound=off
@@ -842,7 +687,7 @@ GiraSol01c         { ;   0:00:11.37 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.65099/11.22061/0.29423/1.56705 float=y maxiter=255 inside=0
@@ -858,7 +703,7 @@ GiraSol02c         { ;   0:00:10.93 on PIII(500)
                      ; Created Jan 14, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.298409985656301/10.32303842280343/-0.3491851557969909/0.7128086\
@@ -873,7 +718,7 @@ GiraSol02c         { ;   0:00:10.93 on PIII(500)
 GiraSol03c         { ;   0:00:06.64 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.169164098025453/10.30903042695395/0.03971221045564133/0.6810388\
@@ -891,7 +736,7 @@ GiraSol03c         { ;   0:00:06.64 on PIII(500)
 GiraSol04c         { ;   0:00:06.48 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=7.413708914456619/9.865077669606618/0.4196371349223304/0.24654683\
@@ -907,7 +752,7 @@ GiraSol04c         { ;   0:00:06.48 on PIII(500)
 GiraSol05c         { ;   0:00:07.58 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=8.358806115909299/10.33103427228614/0.1211661122470779/1.03636585\
@@ -925,7 +770,7 @@ GiraSol05c         { ;   0:00:07.58 on PIII(500)
 GiraSol06c         { ;   0:00:06.48 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=0.0937903/-0.570553/0.1052088/1/74.998
   params=8.851222266304514/10.8673970763268/0.4967574083681753/0.479860835\
@@ -948,7 +793,7 @@ GiraSol24          { ;   0:00:15.00 on PIII(500)
                      ; Created Jan 21, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
                      ; parameters created on Feb 10, 1997
-  reset=2000 type=formula formulafile=_j.frm formulaname=jdg-7-01c
+  reset=2000 type=formula formulafile=_j.frm formulaname=JDG-7-01c
   function=recip/cos passes=1
   center-mag=-0.0499561/-0.0341588/0.09577934/1/74.997
   params=10.57115390484329/10.59776604510636/1.198774681844539/-0.59155247\
@@ -957,60 +802,11 @@ GiraSol24          { ;   0:00:15.00 on PIII(500)
   colors=000zzW<48>ob4oa3na3n`2n`2n_1mZ0<134>G10G10F00<61>000
   }
 
-frm:JDG-7-01c {; Formula by Jim Deutch, Modified Sylvie Gallet frm
-           ; image and 60 deg rotation w/ palette divided
-  j = -0.5 + flip(0.5*sqrt(3)), j2 = conj(j)
-  IF (whitesq)
-    z = pixel
-  ELSE
-    z = -j2*pixel
-  ENDIF
-  :
-  x = z*j , y = z*j2
-  x1 = x - p1*fn1(y + fn2(p2*z))
-  y1 = y - p1*fn1(z + fn2(p2*x))
-  z1 = z - p1*fn1(x + fn2(p2*y))
-  z = z1 + x1*j + y1*j2
-  t1 = (|z| <= 32)
-  t = t1 || (whitesq == (imag(z) >= 0))
-  IF (t==0)
-    z = conj(z)
-  ENDIF
-  t1
-  ;SOURCE: sgjdg701.par
-}
-
-frm:z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
-               ; February 5, 2000
-;
-; Newtbasin for (z-p1) * (z-p2) * (z-p3)
-; Use periodicity=0 and outside=real
-;
-  y = pixel , z = stop = 0
-  iter = 0
-  :
-  num = (y-p1)*(y-p2)*(y-p3)
-  den = 3*sqr(y) - 2*(p1+p2+p3)*y + (p1*p2 + p1*p3 + p2*p3)
-  y = y - num / den
-  if (cabs(y-p1) <= 0.001)
-    z = 0 , stop = 1
-  elseif (cabs(y-p2) <= 0.001)
-    z = 1 , stop = 1
-    elseif (cabs(y-p3) <= 0.001)
-    z = 2 , stop = 1
-  endif
-  if (stop == 1)
-    z = z - iter - 7
-  endif
-  iter = iter + 1
-  stop == 0
-}
-
 Newt_basin_z3-1    { ; .                                    t=  0:00:03.46
                      ; Copyright Sylvie Gallet, Feb 05, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
-  reset=2000 type=formula formulafile=_newtbas.frm
+  reset=2000 type=formula formulafile=new23.frm
   formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
   params=1/0/-0.5/0.8660254037844/-0.5/-0.8660254037844 float=y
   outside=real periodicity=0 sound=off
@@ -1021,7 +817,7 @@ Newt_basin_z3-z    { ; .                                    t=  0:00:02.80
                      ; Copyright Sylvie Gallet, Feb 05, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
-  reset=2000 type=formula formulafile=_newtbas.frm
+  reset=2000 type=formula formulafile=new23.frm
   formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
   params=0/0/1/0/-1/0 float=y outside=real periodicity=0 sound=off
   colors=00000e0e0wWe000<250>000
@@ -1036,37 +832,11 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
   colors=00000e0e0wWe000<250>000
   }
 
-frm:z3_newtbasin { ; Written by Sylvie Gallet for Kirsteen Duncan
-               ; February 5, 2000
-;
-; Newtbasin for (z-p1) * (z-p2) * (z-p3)
-; Use periodicity=0 and outside=real
-;
-  y = pixel , z = stop = 0
-  iter = 0
-  :
-  num = (y-p1)*(y-p2)*(y-p3)
-  den = 3*sqr(y) - 2*(p1+p2+p3)*y + (p1*p2 + p1*p3 + p2*p3)
-  y = y - num / den
-  if (cabs(y-p1) <= 0.001)
-    z = 0 , stop = 1
-  elseif (cabs(y-p2) <= 0.001)
-    z = 1 , stop = 1
-    elseif (cabs(y-p3) <= 0.001)
-    z = 2 , stop = 1
-  endif
-  if (stop == 1)
-    z = z - iter - 7
-  endif
-  iter = iter + 1
-  stop == 0
-}
-
 Newt_basin_z3-1    { ; .                                    t=  0:00:03.46
                      ; Copyright Sylvie Gallet, Feb 05, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
-  reset=2000 type=formula formulafile=_newtbas.frm
+  reset=2000 type=formula formulafile=new23.frm
   formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
   params=1/0/-0.5/0.8660254037844/-0.5/-0.8660254037844 float=y
   outside=real periodicity=0 sound=off
@@ -1077,7 +847,7 @@ Newt_basin_z3-z    { ; .                                    t=  0:00:02.80
                      ; Copyright Sylvie Gallet, Feb 05, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 320 x 200
-  reset=2000 type=formula formulafile=_newtbas.frm
+  reset=2000 type=formula formulafile=new23.frm
   formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
   params=0/0/1/0/-1/0 float=y outside=real periodicity=0 sound=off
   colors=00000e0e0wWe000<250>000
@@ -1096,7 +866,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 04 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=y passes=1 center-mag=-0.715895/0.45576/6.666667
   params=-2/0.05/2/50/0.2/300 float=y maxiter=647 decomp=256
   biomorph=1
@@ -1113,7 +883,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 08 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=y center-mag=0/0/0.6666667 params=1/1/1/35/0.4/300 float=y
   inside=atan outside=atan decomp=256 biomorph=1
   colors=acdqstnpsprrmoqoqplnononkmmmnljlkkmjikijkhhjgijegiehicfhcghaegaff\
@@ -1131,7 +901,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 08 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=y center-mag=-0.130163/0.75626/6.666667
   params=3.270271919919431/4.941831720938749/1.230036317026276/44.00323496\
   200446/0.3323038422803431/250.1119113742485 float=y maxiter=647
@@ -1151,7 +921,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 10 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=n center-mag=0/0/0.6666667
   params=-0.1302591021454512/0.04721518601031524/16.60734885708182/45.2768\
   9443647572/-0.2630573442793054/300.8947111423078 float=y inside=fmod
@@ -1167,7 +937,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 15 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=n center-mag=0/0/0.6666667 params=0.4/0.1253/24/45/0.2/350
   float=y maxiter=647 decomp=64 biomorph=1
   colors=aAECMA<2>BI9BH8BH8<3>AE79D6DE6<3>UI9YJAaLBeMCgODjQF<2>nVJ<3>vdByg\
@@ -1183,7 +953,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 25 Feb 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_m.frm formulaname=Mandel_lake
+  reset=2000 type=formula formulafile=new23.frm formulaname=Mandel_lake
   ismand=n center-mag=0/0/0.6666667 params=0.2/0.5/36/45/0.2/250
   float=y inside=bof60 outside=imag decomp=128 biomorph=1
   colors=zzzfdeZWYTPRNJMJEHFAC957957634422<2>200<13>`00c00e00<3>o00<9>ub0v\
@@ -1198,7 +968,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsJuliaLB
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsJuliaLB
   function=sin/sqr passes=1
   center-mag=-1.11022e-016/8.32667e-017/4.901961
   params=0.7679677724539934/0.5938444166386914/1.724112674336985/0.3137455\
@@ -1216,7 +986,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsJuliaLB
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsJuliaLB
   function=sin/sqr center-mag=-1.11022e-016/8.32667e-017/4.901961
   params=0.1441084017456588/0.1204412976470229/0.8471938230536821/-0.16844\
   69130527665/0.988982818079165/1.371883297219764 float=y maxiter=647
@@ -1234,7 +1004,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsMandelP3
   function=sin/sqr passes=1 center-mag=-0.425532/-0.200334/4.901961
   params=1/0.5/1/0.5/1/0.5 float=y maxiter=647 inside=bof60
   outside=imag decomp=256 biomorph=1
@@ -1247,7 +1017,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsMandelP3
   function=sin/sqr passes=1 center-mag=-0.425532/-0.200334/4.901961
   params=0.6861171300393689/0.7144535660878323/1.409466841639454/0.1006653\
   035065767/1.349589526047548/-0.3188421277504807 float=y maxiter=647
@@ -1263,7 +1033,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsMandelP3
   function=sin/sqr passes=1 center-mag=-0.21663/-0.240505/5.921845
   params=0.575273903622547/1.397457808160649/1.880001220740379/1.416684469\
   130528/1.360820337534715/0.3451796014282663 float=y maxiter=647
@@ -1277,7 +1047,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsMandelP3
   function=sin/sqr passes=1 center-mag=-0.226212/-0.213441/6.142992
   params=1.56129642628254/1.772011474959563/0.9198583941160314/0.923841059\
   602649/2.207983642078921/-0.4486373485518967 float=y maxiter=647
@@ -1291,7 +1061,7 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
                      ; Image Copyright 13 Mar 2000 by Ton Koppens
                      ; e-mail:t.koppens@hccnet.nl
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=_g.frm formulaname=GregsMandelP3
+  reset=2000 type=formula formulafile=gregsman.frm formulaname=GregsMandelP3
   function=sin/sqr passes=t
   center-mag=-0.18655042677651150/-0.08245017094325222/61.42992
   params=1.56129642628254/1.772011474959563/0.9198583941160314/0.923841059\
@@ -1301,4 +1071,3 @@ built-in_newtbasin { ; .                                    t=  0:00:00.77
   3112<2>000000111<2>444555444<14>O6EP6ER6F<3>W7IY8J_9K<3>hFSkGTmIV<3>wOb<\
   3>nIXlHWjFU<3>`9O<39>76O66O66O<3>25N121121121xvy<30>VJk
   }
-

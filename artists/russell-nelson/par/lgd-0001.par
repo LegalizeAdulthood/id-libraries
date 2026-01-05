@@ -236,7 +236,7 @@ LGDP0014           { ; Alien Gas Mask
                      ; from quiz-4, George Martin [76440,1143], 1996
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=2
   corners=0.81979835/1.1205159/0.954221702/0.809934043/0.99731457/0.717534\
   208 params=0/0/0/0/0/0 float=y inside=startrail
@@ -253,7 +253,7 @@ LGDP0015           { ; Giger Baby
                      ; Sorry, that's what it looks like
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=3
   corners=0.81980401/1.1205238/0.954236746/0.809944749/0.99732024/0.717544\
   913 params=0/0/0/0/0/0 inside=startrail
@@ -265,7 +265,7 @@ LGDP0016           { ; Slice of Chaos
                      ; from quiz-4, George Martin [76440,1143], 1996
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=3
   corners=-0.018277099/0.02469055926/0.3580728179/0.2889557159/0.030367394\
   91/0.293213477 params=0/0/0/0/0/0 float=y inside=zmag
@@ -282,7 +282,7 @@ LGDP0017           { ; Dont Stare Too Long
                      ; from quiz-4, George Martin [76440,1143], 1996
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=3
   corners=-0.0006492688088/0.0006626415671/0.02985937686/0.02811016302/0.0\
   006626415671/0.02811016302 params=0/0/0/0/0/0 float=y inside=zmag
@@ -299,7 +299,7 @@ LGDP0018           { ; Sun Diamond
                      ; from quiz-4, George Martin [76440,1143], 1996
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=3
   corners=-0.0025301468935964/-0.0025298403513801/0.62547057854775/0.62546\
   981484087/-0.0025296699590935/0.62546994263508 params=0/0/0/0/0/0
@@ -316,7 +316,7 @@ LGDP0019           { ; Knotted
                      ; from quiz-4, George Martin [76440,1143], 1996
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=quiz
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Quiz
   passes=3
   corners=-0.00310006019445/-0.00301890607681/0.627221575748/0.62720299507\
   3/-0.0030507544705/0.627171583835 params=0/0/0/0/0/0 float=y
@@ -344,7 +344,7 @@ LGDP0021           { ; Two-Face
                      ; From Carr1971-F From a modified Sylvie Gallet frm.
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm formulaname=carr1971
+  reset=1920 type=formula formulafile=newforms.frm formulaname=Carr1971
   corners=-2.039412/1.735832/-1.323023/1.50841
   params=0/864183165/0/0/0/0 float=y maxiter=500 logmap=yes
   periodicity=0
@@ -371,8 +371,8 @@ LGDP0023           { ; Carcharodon megalodon
                      ; From Gallet-3-03-04
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset=1920 type=formula formulafile=forum.frm
-  formulaname=gallet-3-03 function=tan/sin passes=1
+  reset=1920 type=formula formulafile=gallet-3.frm
+  formulaname=Gallet-3-03 function=tan/sin passes=1
   corners=1.72214803/1.74803769/1.6019145/1.8672507/1.60242474/1.7475274
   params=2.95/0.4/10/1/0/0 float=y maxiter=255 outside=atan
   periodicity=0
@@ -477,7 +477,7 @@ LGDP0029           { ; Hexagon Limit
                      ; Square Limit & Circle Limit.
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
-  reset type=formula formulafile=liar.frm formulaname=liar4 passes=t
+  reset type=formula formulafile=liar.frm formulaname=Liar4 passes=t
   corners=4.6357240209663301e-009/4.7586619777770066e-009/4.71031746049332\
   12e-009/4.6843583500935401e-009/4.6841033518143303e-009/4.63663847425332\
   95e-009 params=1e-008 float=y logmap=-20
@@ -494,7 +494,7 @@ LGDP0030           { ; Starflower Variation
                      ; (c) 1996 Loren G. Dobert [72332,507]
                      ; No commercial use without permission
   reset=1732 type=formula formulafile=mandnewt.frm
-  formulaname=f'm-setinnewtona function=cos
+  formulaname=F'M-SetInNewtonA function=cos
   corners=-1.257519/1.239276/1.599504/-1.599503/1.239276/-1.599503
   params=2.0150000000000001 maxiter=256 inside=0 outside=imag
   logmap=yes potential=255/200/25 periodicity=0

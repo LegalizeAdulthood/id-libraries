@@ -1,3 +1,4 @@
+{
 These formulas have been obtained from recently declassified
 TOP SECRET files of the KGB, the FBI, the CIA and the Ocala,
 Florida Police Department.
@@ -260,19 +261,22 @@ z=(1.099,0)-(c-z*pixel);
 |real(z)| <=100 
 }
 
-Carr1137  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(1.099,0),x=|z|:
+Carr1137  (XAXIS_NOPARM) {;FractalFenderC modified
+z=(pixel)/(1.099,0),x=|z|:
 (z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
 z=sqr(z)+pixel,
 x=|z|,
 x<=4 }
 
-Carr1138  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(2.099,0),x=|z|:
+Carr1138  (XAXIS_NOPARM) {;FractalFenderC modified
+z=(pixel)/(2.099,0),x=|z|:
 (z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
 z=sqr(z)+(pixel),
 x=|z|,
 x<=4 }
 
-Carr1139  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(2.099,0),x=|z|:
+Carr1139  (XAXIS_NOPARM) {;FractalFenderC modified
+z=(pixel)/(2.099,0),x=|z|:
 (z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
 z=(z*z)+(pixel*pixel*pixel),
 x=|z|,

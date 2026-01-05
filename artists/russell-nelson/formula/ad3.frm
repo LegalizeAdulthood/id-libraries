@@ -126,6 +126,7 @@ z=pixel:
 pixel=whitesqr*fn1((pixel))/(whitesqr==0)
 z=(fn3(pixel+fn4(pixel)))
 |z|>=4
+}
 h4{
 z=pixel,t=1-fn1(1-z),n=1/fn2(z-1):
 z=fn3(t+z)*fn4(n+t)-z

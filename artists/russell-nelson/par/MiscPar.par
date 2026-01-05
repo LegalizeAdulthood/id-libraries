@@ -21,15 +21,8 @@ zKzzKyz<3>NwyOvyPux<3>SrtTqtUos<2>WlpXjoXimYglZfk<10>fQVgPUhNShMRiKPjIO<\
 <6>BADB8CA7B<3>836735724<5>401
 }
 
-frm:Bjax-b {; Bailout = imag(p2)
-z=c=2/pixel:
-z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c
-|z| <=imag(p2)
-}
-
-
 bjax-1             { ; Version 2002 Patchlevel 3
-reset=2003 type=formula formulafile=bjax.frm formulaname=bjax-b
+reset=2003 type=formula formulafile=Guy_Marson.frm formulaname=Bjax-b
 center-mag=0/0/0.38/1/90/3.88578058618804789e-016 params=2/0/2/8
 float=y inside=atan proximity=2 outside=fmod periodicity=0
 colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
@@ -37,49 +30,13 @@ uR`v<2>SbyTczSby<61>000
 }
 
 bjax-2             { ; Version 2002 Patchlevel 3
-reset=2003 type=formula formulafile=bjax.frm formulaname=bjax-b
+reset=2003 type=formula formulafile=Guy_Marson.frm formulaname=Bjax-b
 center-mag=0.976264/-1.34489/18.29394/1/-110.000000000000128/2.039410307\
 29737349e-013 params=1.5/0/2/20 float=y inside=atan proximity=2
 outside=fmod periodicity=0
 colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
 uR`v<2>SbyTczSby<61>000
 }
-
-The_Wheel_of_Life2 { ; time=19:12--SF3 on a P II 400
-                     ; Fractal of the Day Jan 18, '04 zoomed
-                     ; with rotated Leather Gem color map
-                     ;  - Hal Lane 04/01/19
-reset=2003 type=formula formulafile=pastengo.par
-formulaname=mandelbrotbc1 function=floor
-passes=1
-center-mag=+1.74225596554302200/-0.00475135722486870\
-/1.010771e+008/1/-24.9999998026450712/7.054525103911\
-13563e-006 params=2.003/0/1040/0 float=y
-maxiter=1500 inside=0 outside=fmod
-periodicity=10 sound=off
-colors=000XkG<3>hoAkp8nq6<2>wt1<6>Zf8Vd9SbA<3>DVF<4>\
-CPCCNBCMA<2>BI9BH8BH8<3>AE79D6DE6<3>UI9YJAaLBeMCgODj\
-QF<9>tgGuiGvjG<2>ypGzrFzrK<3>yufxukxvqwww<3>rhh`F0`F\
-0<5>UA0T90S80R80Q70P60<3>L30K30J20I10I10<16>UB2UB2VC\
-2<3>YE3<3>Q82O61M41<3>Q71R81S91fM5<3>iO5jP5kQ6<9>UB3\
-S92Q82<3>I10931A00<3>VK0_P0dU0<3>zm0<3>zb0z_0zX0zU0<\
-3>`F0UC0O80H40<2>A4773A73C<3>56K47M48O39Q2AS<8>9QaAS\
-bATc<3>E`hFbiGdi<3>JklKmmJkj<7>CURBSOAQM<3>6GB5E86G9\
-<9>EWHFYIGZJ<2>JdMKfNLhM<2>UkH
-}
- 
-frm:MandelbrotBC1 { ; by several Fractint users
-e=p1, a=imag(p2)+100
-p=real(p2)+PI
-q=2*PI*fn1(p/(2*PI))
-r=real(p2)-q
-Z=C=Pixel:
-Z=log(Z)
-IF(imag(Z)>r)
-Z=Z+flip(2*PI)
-ENDIF
-Z=exp(e*(Z+flip(q)))+C
-|Z|<a }
 
 julibr-1           { ; Version 2002 Patchlevel 3
   reset=2002 type=julibrot julibrotfromto=-1.95/-2.1/-3.7/-3.5

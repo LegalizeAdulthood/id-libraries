@@ -198,7 +198,6 @@ billsfv4  {
   ENDIF
   z < 100
   }
-  }
 
 bills-rotate3 {
   a = real(p1), b = imag(p1)
@@ -502,8 +501,6 @@ z=z-p3*a/b
 .000000000000000000000000000001 <= |a|
 }
 
-  }
-
 gfphsp01  {;r=-a/(t^2)
    z=fn1(pixel), a=real(p3), b=imag(p3):
    z=fn2(z^p1) + p2*fn3(-a/(z*z))
@@ -559,20 +556,6 @@ rsp_a304 { ; 3/99     R Parracho
   oz=z, z=z*z+c,test=|z|/|oz|
   |test|<1 || |test|>2
 }
-
-BJ1: If real(Z) >= 0
-  Then Z=(Z-1)*C
-  Else Z=Z(Z+1)*C
-
-BJ2: If real(Z)*imag(C) + real(C)*imag(Z) >= 0
-  Then Z=(Z-1)*C
-  Else Z=(Z+1)*C
-
-BJ3: Re(Z) >= 0
-  Then Z=(real(Z)^2 - imag(Z)^2 - 1) + (2*real(Z)*imag(Z))i
-  Else Z=(real(Z)^2 - imag(Z)^2 - 1 + real(C)*real(Z)) + 
-(2*real(Z)*imag(Z) + imag(C)*real(Z)))i.
-
 
 rsp_may002{
     z=10*pixel
@@ -739,16 +722,6 @@ z=z^2+(-0.748800289672,-0.1350036189)-0.0000230
 iter=iter+1
 (conj(|z|))<=bailout
 }
-
-SimplePendulumG{
-bailout=real(p2)+4
-dt=real(p1)
-z=pixel
-pi2=Pi+Pi:
-x=real(z)
-y=imag(z)
-z=x+y*dt+flip(y+fn1(pi2*x)*dt)
-|z|<=bailout}
 
 ObliqueManPlus {;Jim Muth
 z=p1+pixel, c=p2+(p3*pixel):
@@ -1092,16 +1065,6 @@ y=fn3(zx*p1y+zy*p1x)+fn4(zx*p2y+zy*p2x),
 z=(|x+flip(y)|)+(x+flip(y))+(-0.7456,-0.132)+(x+flip(y))/10,
 |z|<=4
 }
-
-SimplePendulumG{
-bailout=real(p2)+4
-dt=real(p1)
-z=pixel
-pi2=Pi+Pi:
-x=real(z)
-y=imag(z)
-z=x+y*dt+flip(y+fn1(pi2*x)*dt)
-|z|<=bailout}
 
 starnear_man { ; Kerry Mitchell 09oct98
         ;
@@ -1507,12 +1470,11 @@ z=sqr(z)+c,
 |z| <= 100
 }
 
-comment
-{
+comment {
   Andrew Orphi Coppin, 10 May 2000AD
 }
 
-BrotBC = { ; Z^2.5 + C
+BrotBC { ; Z^2.5 + C
            ; real(p1) = phase shift.
 
   p = real(p1)
@@ -1523,7 +1485,7 @@ BrotBC = { ; Z^2.5 + C
   |Z| < 4
 }
  
-MandelbrotBC = { ; Z = Z^E + C
+MandelbrotBC { ; Z = Z^E + C
   e=p1
   p=real(p2)+PI
   q=2*PI*trunc(p/(2*PI))
@@ -1537,7 +1499,7 @@ MandelbrotBC = { ; Z = Z^E + C
   |Z|<4
 }
 
-JuliaBC = { ; Z = Z^E + C
+JuliaBC { ; Z = Z^E + C
   e=p1
   p=real(p2)+PI
   q=2*PI*trunc(p/(2*PI))
@@ -1773,4 +1735,3 @@ endif
 |z| <= bailout
 }
 
-

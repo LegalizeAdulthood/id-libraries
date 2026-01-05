@@ -3,7 +3,7 @@
 ; Ron Barnett 70153,1233                         ;
 ;------------------------------------------------; 
 
-JMask2 = {      ; Ron Barnett, 1995      
+JMask2 {      ; Ron Barnett, 1995      
       z = fn1(pixel):
       z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3, |z| <= 4
    }
@@ -15,7 +15,7 @@ sjjulike01 {; Ron Barnett, 1995
         z = z*z*z + (c - 1)*z - c, |z|<=100
       }
    
-PolyGenJulia = {  ; Ron Barnett, 1995
+PolyGenJulia {  ; Ron Barnett, 1995
                 ;p1 must not be zero
                 ;zero can be simulated with a small
                 ;value for p1
@@ -24,13 +24,13 @@ PolyGenJulia = {  ; Ron Barnett, 1995
    z=p1*z*z*z+p2*z*z+(p3-1)*z-p3,|z| <= 100
    }
 
-REBRefInd1Julia = {  ; Ron Barnett, 1995
+REBRefInd1Julia {  ; Ron Barnett, 1995
                 ; Use floating point
    z = pixel:
    z = (z*z-p1)/(z*z+p2)*fn1(z)*fn2(z) + p3, |z| <= 100
    }
 
-REBRefInd4Julia = {  ; Ron Barnett, 1995
+REBRefInd4Julia {  ; Ron Barnett, 1995
                 ; Use floating point
    z = pixel:
    z = flip(z);
@@ -43,12 +43,12 @@ FoamJulia {; Ron Barnett, 1995
    z = p3*(x - 1/sqr(x) + p2), |z| <= 100
    }
 
-REB004AJulia = {; Ron Barnett, 1995
+REB004AJulia {; Ron Barnett, 1995
    z = pixel:
    z =p1*fn1(z) + p1*p1*fn2(p2*z) + p3, |z| <= 100
    }
 
-REB004LJulia = {; Ron Barnett, 1995
+REB004LJulia {; Ron Barnett, 1995
               ; floating point required
    z = pixel:
    x = flip(pixel + fn1(p1/z - z/(p2+1)));
@@ -134,3 +134,7 @@ SJIKENAGA03JULIA {; Ron Barnett, 1995
 
 
 
+JMask2 {      ; Ron Barnett, 1995      
+      z = fn1(pixel):
+      z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3, |z| <= 4
+   }

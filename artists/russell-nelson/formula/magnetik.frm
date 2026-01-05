@@ -16,7 +16,8 @@ Vincent Presogna
 CompuServe: 76455,2222
 ;; By Vincent Damion Presogna
 ;; 76455,2222@compuserve.com
-;; Jan. 4th, 1996}
+;; Jan. 4th, 1996
+}
 
 Magnetik { 
 z = pixel + p1:
@@ -53,4 +54,3 @@ b = (z-1)*(z+0.5)*((z*z)+1)
 z = z + ((a*z)/(a*z+(0.25*(-1))+(1-p1)*(b*z)/((b*z)-(0.5)*(-1))))
 |z| < 4
 }
-

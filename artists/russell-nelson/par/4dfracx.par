@@ -16,7 +16,7 @@ Stalagtites        { ; Watch em grow.
                      ; Tetrated function - cz-plane - fn1=sin
                      ; 0:11:27
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim04
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM04
   function=sin passes=b
   corners=-1.894851904/-1.889306091/0.609918201/0.6160769091 float=y
   maxiter=5000 logmap=4
@@ -26,7 +26,7 @@ Squiggle           { ; Mandelbrot lambda - zc-plane - fn1=exp
                      ; ;
                      ; 0:01:17
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND05
   function=exp passes=b
   corners=0.10237874/0.28957185/2.2229614/2.4171928 params=0/0/-1
   float=y maxiter=10000
@@ -39,7 +39,7 @@ Hook               { ; Now, to catch that fractal fish - a fractal fish hook!
                      ; Alternatively, a fractal scorpion's tail.
                      ; ;
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand04
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND04
   function=log passes=b
   corners=-0.631782377/-0.658073286/0.138723393/0.156593454/-0.658073286/0\
   .156593454 params=0/0/1 float=y maxiter=5000
@@ -57,7 +57,7 @@ Oscillograph       { ; A fractal waveform!
                      ; ;
                      ; 0:03:29
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-0.0439652405/0.0428982691/0.098473979/-0.098473979/0.0428982691\
   /-0.098473979 params=0/0/0/2 float=y maxiter=32767 logmap=8
@@ -69,7 +69,7 @@ Medusa             { ; A multi snake-headed monster
                      ; ;
                      ; 0:06:51
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin
   corners=-1.14838272/-1.18013492/0.798158992/0.869318378/-1.18013492/0.86\
   9318378 params=0/0/0/0.5 float=y maxiter=5000 outside=real logmap=17
@@ -95,7 +95,7 @@ Fingers            { ; Repeating pattern with fn1=exp
                      ; ;
                      ; 0:00:28
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=exp
   corners=-0.7575769/7.255191/12.95286/-12.95286/7.255191/-12.95286
   params=0/0/1 float=y maxiter=1000 biomorph=0
@@ -109,7 +109,7 @@ Snakepit           { ; Dont fall in here!
                      ; ;
                      ; 0:12:30
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-1.1519772719/-1.1463617661/0.8514423195/0.8485713715/-1.1472925\
   623/0.8469469518 params=0/0/0/0.5 float=y maxiter=32767 logmap=28
@@ -123,7 +123,7 @@ Wriggler           { ; ;
                      ; Mandelbrot lambda function - cz-plane - fn1=sin
                      ; 0:11:37
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-1.147517923/-1.139574337/0.8601286125/0.8532440754/-1.139574337\
   /0.8532440754 params=0/0/0/0.5 float=y maxiter=32767 logmap=28
@@ -138,7 +138,7 @@ Neon-galaxy        { ; Fantasy beyond the Milky Way!
                      ; Mandelbrot function - fn1=cosh (zc-plane)
                      ; 2:48:36
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand03
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND03
   function=cosh corners=-1.4714884/-1.1274643/1.2202122/1.4781919
   maxiter=1000 inside=0
   colors=000L00<9>r00<15>000<15>0pp<12>0BB077044000222<14>hhh<15>000<27>00\
@@ -166,7 +166,7 @@ Illusion           { ; A perspective puzzler
                      ; Mandelbrot power function - zc-plane
                      ; 0:03:16
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand10
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND10
   function=cosh corners=-1.614751/1.621314/-1.086117/-0.5762037
   params=0/1 float=y maxiter=1000 potential=255/2000/5000
   colors=000D63<3>RD7eqJVF8<9>JFeIFiHFlFEpGFoHGn<8>RR`6D4<9>QuJKDEdRSyde15\
@@ -195,7 +195,7 @@ Fractus            { ; A fractal rainbow cactus
                      ; Mandelbrot power function - zc-plane
                      ; 0:02:06
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand10
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND10
   function=sqr
   corners=-0.97138712/-0.93657112/0.0633820287/0.0894940287 params=0/1
   float=y maxiter=5000 potential=255/2000/2000
@@ -223,7 +223,7 @@ Fleur              { ; Fleur de Lys
                      ; Perturbed Mandelbrot - zc-plane.
                      ; 0:10:03
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand12
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND12
   passes=1
   corners=0.65449065794/0.65541773497/0.54280187554/0.54360780812
   params=0/-0.5/-0.5 float=y maxiter=25000
@@ -241,7 +241,7 @@ Tentacloid         { ; Octopus's party.
                      ; Perturbed Mandelbrot
                      ; 0:7:06
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand12
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND12
   passes=b
   corners=0.65113325577/0.65062190351/0.52660923565/0.52898165995/0.649766\
   47393/0.52701874614 params=0/-0.5/-0.5 float=y maxiter=5000
@@ -256,7 +256,7 @@ Whirlpool          { ; En Bretagne - France
                      ; Look up Britanny, France in your atlas!
                      ; 0:31:28
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand12
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND12
   corners=0.63122574/0.6360841155/0.5224284354/0.5278117524
   params=0/-0.5/-0.5 float=y maxiter=25000
   colors=000000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z0z0z0000S08Y8BaAE\
@@ -276,7 +276,7 @@ Ribbon             { ; Alternatively - metal shavings.
                      ; ;
                      ; 0:08:38
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand01
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND01
   passes=1 corners=-1.421398982/-1.41488895/0.0723504815/0.0822806163
   params=0/0/-0.75 float=y maxiter=32767 logmap=25 decomp=256
   colors=000002<27>00E00E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>\
@@ -341,7 +341,7 @@ Fairground         { ; Fantasy by night.
                      ; Mandelbrot function - fn1=cosh
                      ; 2:58:19
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand03
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND03
   function=cosh corners=-1.4701432/-1.1261191/1.2202122/1.4781919
   maxiter=1000 inside=0
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
@@ -358,7 +358,7 @@ Mandel-valley      { ; Topological Mandelbrot
                      ; Mandelbar in zc-plane
                      ; 1:20:08
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand08
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND08
   passes=1
   corners=0.1832087268/0.2633684835/0.5295771809/0.4516196905/0.1893712035\
   /0.4545257702 params=1 float=y maxiter=10000 logmap=34
@@ -371,7 +371,7 @@ Fireworks          { ; Light up the night sky.
                      ; ;
                      ; 0:13:48
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin
   corners=-0.69619153/-0.49723908/0.16937524/-0.16937524/-0.49723908/-0.16\
   937524 params=0/0/0/1 float=y maxiter=1000 logmap=14
@@ -384,7 +384,7 @@ Aurora             { ; The Borealis like you've never seen it before!
                      ; ;
                      ; 0:05:00
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin
   corners=-2.491791/-0.149987/1.331368/-1.331368/-0.149987/-1.331368
   params=0/0/0/1 float=y maxiter=1000
@@ -397,7 +397,7 @@ Plankton           { ; A drop of water under the microscope?
                      ; ;
                      ; 1:13:06
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-0.118469235/-0.1014146078/-1.26824242/-1.38299419/-0.1084020997\
   /-1.45649131 params=0/0/0/1 float=y maxiter=32767 logmap=27
@@ -409,7 +409,7 @@ Coral              { ; Brittle-looking fractal spirals.
                      ; ;
                      ; 0:43:51
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-0.1120596837/-0.1100147313/-1.328022497/-1.348320007/-0.1110435\
   137/-1.355738758 params=0/0/0/1 float=y maxiter=32767 logmap=48
@@ -435,7 +435,7 @@ Bug                { ; Not the kind of thing you'd like to find in your bed!
                      ; ;
                      ; 2:49:19
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-0.1063462516739/-0.1052994122324/-1.272862168/-1.282268248/-0.1\
   063523893519/-1.29694175 params=0/0/0/1 float=y maxiter=32767
@@ -448,7 +448,7 @@ Spiral-dragons     { ; Mandelbrot lambda - cz-plane - fn1=sin
                      ; ;
                      ; 0:35:24
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=3rdim05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=3RDIM05
   function=sin passes=1
   corners=-1.1789073602/-1.1784826226/0.8060081754/0.8045743235/-1.1784826\
   226/0.8045743235 params=0/0/0/0.5 float=y maxiter=32767 logmap=86
@@ -461,7 +461,7 @@ Reflections        { ; Repeating pattern with fn1=sin
                      ; ;
                      ; 0:04:38
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND05
   function=sin corners=-3.125/3.125/-2.34375/2.34375 params=0/0/1
   float=y maxiter=1000 biomorph=0
   }
@@ -470,7 +470,7 @@ Leaves2            { ; Another leaf-type montage
                      ; fn1=sin
                      ; 0:00:35
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND05
   function=sin
   corners=0.215014218/0.229527449/1.912914416/2.196348646/0.155550745/2.18\
   7193546 params=0/0/1 float=y maxiter=1000 biomorph=0
@@ -484,7 +484,7 @@ Symmetry           { ; (of the fractal kind)
                      ; fn1=sinh
                      ; 0:02:15
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND05
   function=sinh corners=-3.125/3.125/-2.34375/2.34375 params=0/0/1
   float=y maxiter=1000 logmap=yes biomorph=0
   }
@@ -493,7 +493,7 @@ Sunset             { ; Reflections in a fractal whirlpool.
                      ; ;
                      ; 1:25:07
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand03
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND03
   function=cosh corners=-0.92604325/-0.68109812/1.1462954/1.329977
   float=y maxiter=1000 periodicity=4
   colors=0000000e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
@@ -510,7 +510,7 @@ Alien-tree         { ; Nothing like it here on Earth.
                      ; Tetrated function - zc-plane - fn1=sinh
                      ; 0:06:09
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand04
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND04
   function=sinh corners=-1.0484311/-0.56528501/-1.7535393/-1.1165067
   params=0/0/1 float=y maxiter=1000 logmap=4 biomorph=0
   }
@@ -519,7 +519,7 @@ Vapour-trails      { ; Perturbed Mandelbrot
                      ; ;
                      ; 0:02:57
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand12
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND12
   passes=b corners=0.6621028781/0.6634049526/0.5397577667/0.5410241982
   params=0/-0.5/-0.5 float=y maxiter=25000
   colors=0000St<12>0ky0mz1mz<30>zzz<42>8zz6zz5zz3zz2zz0zz<42>08z06z05z03z0\
@@ -530,7 +530,7 @@ Spiral-angles      { ; Like a stylised scorpion's sting
                      ; Mandelbrot power - zc-plane - fn1=sqr
                      ; 0:12:57
                      ; Copyright - Gordon Lamb 04/94
-  reset=1820 type=formula formulafile=4dfract.frm formulaname=sjmand10
+  reset=1820 type=formula formulafile=4dfract.frm formulaname=SJMAND10
   function=sqr
   corners=-0.03162700121/-0.02732963519/0.268046720884/0.268079743781
   params=0/1/0.25 float=y maxiter=1000 logmap=24

@@ -42,16 +42,6 @@ Gallet-8-03 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    |zn| <= 4
    }
 
-; Gallet-8-03 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
-              ; Requires periodicity = 0
-              ; Version for Fractint 19.5
-   z = c = zn = pixel :
-   zn = zn*zn + c
-   test = |zn| < |z|
-   z = zn*0.6*test + z*(test==0)
-   |zn| <= 4
-   }
-
 Gallet-8-04 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
               ; Requires periodicity = 0
               ; p1 = exponent
@@ -204,22 +194,6 @@ Gallet-8-12 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    z = z + pinv
    z <= bailout
    }
-
-; Gallet-8-12 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
-              ; Requires periodicity = 0
-              ; Version for Fractint 19.5
-  h = cabs(pixel) , pinv = 1/p1
-  bailout = 2*p1 , r = real(p2) , ir = imag(p2)
-  beta = asin(h/r) , alpha = asin(h/(r*ir))
-  z = pixel * (((h - sqrt(r*r - h*h) * tan(beta - alpha)) / h) * (h < r) \
-      + (h >= r))
-  center = round(p1*z) * pinv
-  test = cabs(z-center) < 0.45*pinv
-  z = cabs(center) + p1 * (test == 0)
-  :
-  z = z + pinv
-  z <= bailout
-  }
 
 Gallet-8-13 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
               ; Requires periodicity = 0

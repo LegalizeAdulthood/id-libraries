@@ -1,3 +1,4 @@
+{
 To see examples of images these formulas can create, download
 42HCARR.PAR
 
@@ -7,6 +8,7 @@ Genealogy1.
 If you have comments or questions please feel free to contact me.
 
 --Bob Carr--
+}
 
 Carr2332{ ;Modified Sylvie Gallet frm.
 z = pixel , c = sqr(cos(pixel))-cosh(pixel)

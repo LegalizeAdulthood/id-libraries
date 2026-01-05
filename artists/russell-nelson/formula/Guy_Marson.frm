@@ -448,3 +448,10 @@ new2003 { ; Guy Marson <guy.marson@mnhn.lu>
   |z| <=4
   }
 
+Bjax-b   { ; Guy Marson <guy.marson@mnhn.lu>
+           ; Mon, 19 Jan 2004 15:18:51
+           ; Bailout = imag(p2)
+  z=c=2/pixel:
+   z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c
+|z| <=imag(p2)
+}

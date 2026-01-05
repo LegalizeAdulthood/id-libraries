@@ -1,4 +1,4 @@
-ConformalMapping = {
+ConformalMapping {
 	c = pixel, RealZ = Real(c), ImagZ = Imag(c):
 		RealZ = Sqr(RealZ) + (RealZ * ImagZ) + Real(c);
 		ImagZ = Sqr(ImagZ) + (RealZ * ImagZ) + Imag(c);
@@ -6,30 +6,30 @@ ConformalMapping = {
 	|z| < 4
 }
 
-Something (xaxis) = {
+Something (xaxis) {
 	z = pixel:
 	z = pixel + z*z + 1/z/z,
 	|z| <= 4
 }
 
-Somethingelse (xyaxis) = {
+Somethingelse (xyaxis) {
 	z = 1:
 	z = pixel * (z*z + 1/z/z),
 	|z| <= 1000000
 }
 
-JSomethingelse (xyaxis) = {
+JSomethingelse (xyaxis) {
 	z = pixel:
 	z = p1 * (z*z + 1/z/z),
 	|z| <= 1000000
 }
 
-No_name(xaxis) = {
+No_name(xaxis) {
 	z = pixel:
 	z=z+z*z+(1/z*z)+pixel,
 	|z| <= 4
 }
-comment = {
+comment {
 It seems not so ugly at first glance and lot of corners to zoom in.
 Try this:
   Corners		x		y
@@ -38,7 +38,7 @@ bottom-right      -0.978384	  -0.751678
 center		  -1.07838	  -0.67668
 }
 
-Whatever_the_name(XAXIS) = {
+Whatever_the_name(XAXIS) {
 	z = pixel:
 	z=z*z+(1/z*z)+pixel,
 }
@@ -587,7 +587,7 @@ gallet-2-12 {   ; Sylvie Gallet [101324,3444], 1995
   |sy*sy+cx+flip(cx*cx+sy)|>=0.000001
 }
 
-davidsmask = {
+davidsmask {
 c = pixel,
 c2 = c*c,c75 = c2 + 0.75, c25 = c2 - 0.25,
 c75p1 = c75 + p1,
@@ -1208,13 +1208,13 @@ ComplexNewton_01m    {; Jon Horner (ex-CAL) [ not sure about this one ]
 		    |(z-oldz)|>=0.000001
   }
 
-Whatever_01(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=z*z+(1/z*z)+pixel,
    }
 
-Whatever_01_m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01_m(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           a1=z*z, a2=1/a1, a=a1+a2,
@@ -2417,7 +2417,7 @@ iter=iter+1
 (|real(z)|)<=bailout
 }
 
-JoWe_xy_06 = { ; Jo Weber, 9/1996
+JoWe_xy_06 { ; Jo Weber, 9/1996
               z = pixel:
               x=real(z), y=imag(z),
               x=x+fn1(z)^p1, y=y-fn2(z)^p2
@@ -3536,4 +3536,3 @@ iter=iter+1
 imag(flip(z))<=bailout
 }
 
-

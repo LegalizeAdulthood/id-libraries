@@ -1041,7 +1041,7 @@ rand_generic_floatb {  ; ****   PARAMETER 1 MUST BE > 0	 ****
                 z = srand(z):
                 z = fn1(z) + fn2(pixel);
                 |z| <= real(pp1)
-                } <
+                }
 
 
 Carr2958 {; Modified Sylvie Gallet frm. [101324,3444],1996
@@ -1779,7 +1779,7 @@ dmj-Mand-TC003 {
   done == 0
 }
 
-multifract1 = { ; Ron Barnett, January 1999
+multifract1 { ; Ron Barnett, January 1999
    ; Use decomp = 256 or outside = atan
    ; Use imag(p3) to change the color spread
    zc = z = c = pixel
@@ -1937,4 +1937,3 @@ default:
   endparam
 }
 
-

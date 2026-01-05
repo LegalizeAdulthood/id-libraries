@@ -2,7 +2,8 @@ Barn Storming  { ; For Les St. Clair
                  ; Created By Damion On Nov 01, 1996 at 12:14:47
                  ; Par and Image Copyright(c) 1996 by Vincent Damion Presogna
                  ;   ?:??:??.?? @ 1024x768 on a 486DX2-66
-  reset=1950 type=formula formulaname=Barnsley_PHC passes=1 center-mag=0/0/0.6666667
+  reset=1950 type=formula formulaname=Barnsley_PHC formulafile=96_msg_3.frm
+  passes=1 center-mag=0/0/0.6666667
   params=0.6/1.1/0/0 float=y maxiter=1024; 
   colors=00000000m0m0m0000c0c0c00<7>mm0<7>00w5Kt7Ss9ZrAcqBgqDlpDooDooDerDa\
   tDZt<4>DOxDMxDLx<3>DFzDDzDDzDDv<2>CCqBBpBBoBBnBBn<5>AAiAAiAAhAAhHHd<2>OO\
@@ -14,7 +15,8 @@ Barn Storming2 { ; For Les St. Clair -- same par diff frm
                  ; Created By Damion On Nov 01, 1996 at 12:14:47
                  ; Par and Image Copyright(c) 1996 by Vincent Damion Presogna
                  ;   ?:??:??.?? @ 1024x768 on a 486DX2-66
-  reset=1950 type=formula formulaname=Barnsley_PHC_3 passes=1 center-mag=0/0/0.6666667
+  reset=1950 type=formula formulaname=Barnsley_PHC_3 formulafile=96_msg_3.frm
+  passes=1 center-mag=0/0/0.6666667
   params=0.6/1.1/0/0 float=y maxiter=1024; 
   colors=00000000m0m0m0000c0c0c00<7>mm0<7>00w5Kt7Ss9ZrAcqBgqDlpDooDooDerDa\
   tDZt<4>DOxDMxDLx<3>DFzDDzDDzDDv<2>CCqBBpBBoBBnBBn<5>AAiAAiAAhAAhHHd<2>OO\
@@ -27,7 +29,7 @@ BARNS_01           { ; "Will-o-the-Wisp" PHC                 t=  0:02:51.04
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:02:33 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.2366189/1.753563/1.066866/-0.9557258/1.753563/-0.9557258
   params=4.22/4.33/1.3/0.3 float=y maxiter=1024 outside=atan
   potential=255/400/0
@@ -47,7 +49,7 @@ BARNS_02           { ; "Subdividing Spheres" PHC             t=  0:10:05.06
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:06:36 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.359753/1.633481/0.713394/-0.98491/1.633481/-0.98491
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=mSS<6>c00<14>300<15>lT7<15>paXpaYpb_qb`qcbrdd<11>TRMRQKOOIMNGKMF<\
@@ -60,7 +62,7 @@ BARNS_03           { ; "World-wide Web" PHC                  t=  0:06:15.14
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:07:06 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=0.07494613/1.883922/0.6067729/-1.805195/1.883922/-1.805195
   params=0.22/1.33/1.3/0.3 float=y maxiter=1024 outside=atan
   potential=255/400/0
@@ -75,7 +77,7 @@ BARNS_04           { ; "Folds in the Picture" PHC            t=  0:13:59.04
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:07:36 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1 corners=-2/2/-1.5/1.5
+  formulaname=Barnsley_PHC_3 passes=1 corners=-2/2/-1.5/1.5
   params=4000/0/0.05/0 float=y maxiter=1024 inside=bof61 outside=atan
   colors=L99<3>VEEXFFZGF<5>iNKkPLlQMmRM<2>pVOqWOrXOrYOrZOs_Ps`P<2>rYOrXOqW\
   OpVO<2>mRNlQMkPLiNKgMK<5>XFFVEESDDQBBPBB<2>I88G77D66A55<2>311000000<2>44\
@@ -93,7 +95,7 @@ BARNS_05           { ; "Lights in the Undergrowth" PHC       t=  0:02:36.87
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:08:16 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-0.91369425/-1.3495416/0.505051359/0.452540361/-1.045394/0.68065\
   1045 params=1.5/2/-0.8/0.45 float=y maxiter=1024 outside=atan
   potential=255/2000/0
@@ -113,7 +115,7 @@ BARNS_06           { ; "Width of a Circle" PHC               t=  0:10:08.74
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:08:45 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-1.739038/-0.1629557/1.429847/-0.6715968/-0.1629557/-0.6715968
   params=3.142/0/0.15/0.66 float=y maxiter=1024 inside=bof61
   outside=atan
@@ -127,7 +129,7 @@ BARNS_07           { ; "Secret Passage Tunnel with a River and Ball" PHC
                      ; (c) 1996 by Julia St Clair c/o101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:09:17 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   corners=-1.1638799/-0.87600006/0.087292922/-0.29654692/-0.87600006/-0.29\
   654692 params=0/5.6/0.9/-0.3 float=y maxiter=1024 outside=atan
   colors=CDKAAK<15>z00<14>zvvzzzxvw<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvH\
@@ -140,7 +142,7 @@ Barnland           { ; t=  0:02:09.24
                      ; on a P166 at 1600x1200  Nov 03, 1996  09:44:25
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=1.19062/0.000233772/7.764013/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=hSZ<10>YNWXMVVNX<13>0hz<9>zzr<10>YaSPaO<3>6jJ<6>5X34U04T94RI4PS<4\
@@ -155,7 +157,7 @@ aliens             { ; t=  0:00:34.00
                      ; on a P166 at 1024x768  Nov 09, 1996  10:01:12
                      ; Par and Image Copyright 1996 by Russell E. Nelson
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=-1.29226/-0.0811234/7.226592/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=vDY<6>uAcuAdvAdw9ex9ez8d<4>zi7zh0zl0sg0ah0<2>0K0<3>4_S5`Z6bf<4>EH\
@@ -169,7 +171,7 @@ interlaced         { ; t=  0:01:22.00
                      ; on a P166 at 1024x768  Nov 09, 1996  10:04:20
                      ; Par and Image Copyright 1996 by Russell E. Nelson
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=-1.18953549201200100/+0.00012796244695621/457.3793/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=000000zzyxFR<6>wDWwDXwDYwCYwCZvC_<3>uAbuAcvAcw9dx9dz8c<5>zq0zl0sg\
@@ -182,7 +184,7 @@ sails              { ; t=  0:13:20.94
                      ; on a P166 at 1600x1200  Nov 03, 1996  11:24:58
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=-1.0014/0.335437/9.728105/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=000000zzzvBavBbuAc<2>w9ex9ez8d<5>zq0zl0sg0ah0<2>0K0<3>4_S5`Z6bf<4\
@@ -195,7 +197,7 @@ screws             { ; t=  0:02:09.20
                      ; on a P166 at 1600x1200  Nov 03, 1996  11:25:12
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=-1.20332110722411400/-0.01004501335774409/45.73793/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=000HSJHRIILE<7>KB7K96K85K64K53K32K21L00<7>B00A00900700600400<2>00\
@@ -208,7 +210,7 @@ YellowKite         { ; t=  0:22:49.96
                      ; on a P166 at 1600x1200  Nov 03, 1996  11:25:21
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=barnsley_phc_3 passes=1
+  formulaname=Barnsley_PHC_3 passes=1
   center-mag=-0.97464941040545840/+0.34094998212972140/61.57028/1/-90
   params=-3/1.1/0.6899999999999999/0 float=y maxiter=1024 outside=atan
   colors=000000zzzvBavBbuAc<2>w9ex9ez8d<2>zVL<2>zz0wq0sg0ah0<2>0K01O02S04W\
@@ -223,7 +225,7 @@ G5_08_35           { ; "Spacewarp"                           t=  0:02:43.29
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 08, 1996 at 03:40:11 hours
   reset=1950 type=formula formulafile=gallet-5.frm
-  formulaname=gallet-5-08 function=atanh/atan/sqr passes=1
+  formulaname=Gallet-5-08 function=atanh/atan/sqr passes=1
   center-mag=-0.895001/-0.426373/0.4128634/1/74.999
   params=4/0/0.8/0/-1/0 float=y maxiter=255 inside=bof60 outside=atan
   decomp=256 periodicity=0
@@ -238,7 +240,7 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 08, 1996 at 03:54:57 hours
   reset=1950 type=formula formulafile=gallet-5.frm
-  formulaname=gallet-5-08 function=atanh/atan/ident passes=1
+  formulaname=Gallet-5-08 function=atanh/atan/ident passes=1
   center-mag=0.030048/-0.13293/0.3688898/1/74.998
   params=4/0/0.8/0/-1/0 float=y maxiter=255 inside=bof60 outside=atan
   decomp=256 periodicity=0
@@ -249,7 +251,7 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
   }
 
 JDflk04           { ;copyright 1996, Jim Deutch   00:01:32
-  reset=1950 type=formula formulafile=newforms.frm formulaname=jdfrmf31
+  reset=1950 type=formula formulafile=newforms.frm formulaname=JDFrmF31
   passes=1 center-mag=-0.0355271/-0.0165666/0.531984/1/-25 float=y
   maxiter=255 periodicity=0
   colors=00P<3>000<28>0Sr0Tt0Vu<10>0ky0mz1mz<30>zzz<44>5zz3zz2zz0zz0yz<43>\
@@ -266,7 +268,7 @@ JDflk14            { ;copyright 1996, Jim Deutch   00:01:26
 
 JDflk19            { ;copyright 1996, Jim Deutch   00:03:44
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=jdfrmf26g function=atan
+  formulaname=JDFrmF26g function=atan
   center-mag=-1.02002e-015/8.60423e-016/22.24282 params=-1.5/0/28/0
   float=y maxiter=255
   colors=0002622A23G34K46Q66W67a78c89i9AmABsBCwCGzG<2>SzSWzWazaczc<4>wzw00\
@@ -302,7 +304,7 @@ winter             { ;   0:22:42.70
                      ; on a 486DX4-100 at 1280x1024  Nov 09, 1996  20:03:50
                      ; Par and Image Copyright 1996 by Jo Weber
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=jowe_c_28_5 function=abs/flip/exp passes=1
+  formulaname=JoWe_C_28_5 function=abs/flip/exp passes=1
   center-mag=2.0581/0.0588136/18.1156/0.7174
   params=400/-65/100/-70/1/0 float=y maxiter=300 inside=bof60
   outside=summ
@@ -314,7 +316,7 @@ winter             { ;   0:22:42.70
   }
 
 C2500-F      { ; From a modified Sylvie Gallet frm.
-  reset=1930 type=formula formulafile=newforms.frm formulaname=carr2500
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Carr2500
   center-mag=-0.00777868/0.0348682/1.015896/1/180
   params=100/150/200/250 float=y maxiter=300 periodicity=0
   colors=000<2>0008000003AA07B<22>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<1\
@@ -322,7 +324,7 @@ C2500-F      { ; From a modified Sylvie Gallet frm.
   }
 
 C2500-F      { ; From a modified Sylvie Gallet frm.
-  reset=1930 type=formula formulafile=newforms.frm formulaname=carr2500
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Carr2500
   center-mag=-0.00777868/0.0348682/1.015896/1/180
   params=100/150/200/250 float=y maxiter=300 periodicity=0
   colors=000<2>0008000003AA07B<22>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<1\
@@ -349,7 +351,7 @@ Carr2917-F        { ; PHC Fractal Party Plate
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 14, 1996 at 01:09:41 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2917 passes=1
+  formulaname=Carr2917 passes=1
   center-mag=-0.00669517/0.000487929/1.194297/1/95
   params=10/300/400/63 float=y maxiter=647 outside=atan periodicity=0
   colors=022245478000000000AFHEKN<11>`ow<24>5NV4MU4OW<14>0ow<30>012000000<\
@@ -362,7 +364,7 @@ Carr2917-F        { ; PHC Fractal Party Plate
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 14, 1996 at 03:06:45 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2917 passes=1
+  formulaname=Carr2917 passes=1
   center-mag=-0.00669517/0.000487929/1.194297/1/95
   params=10/15000/400/550 float=y maxiter=647 periodicity=0
   colors=000<5>000CEQCBNC8K97F<2>9BFFD9EFA<11>svc<2>svc<8>X`YUYXRVWOSVLPUI\
@@ -387,7 +389,7 @@ c2922-17           { ; Bend of the River               t=  0:23:36.53
                      ; Formula by Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=-0.39239685478214310/-0.18464324533800480/140.1993/1/90
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=0001zz0iN<13>000<5>OJ0SM0VP0YT0<8>zy0yu0wp0ul0<2>jR0<2>QI0JF0CA0<\
@@ -401,7 +403,7 @@ c2922-03           { ; Primordial Soup du Jour         t=  1:10:29.70
                      ; Formula ny Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=0.551358/0.170454/6.261983/1/90 params=200/300/400/550
   float=y maxiter=647 logmode=fly periodicity=0
   colors=000083G79<3>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg<15>000<15>0\
@@ -415,7 +417,7 @@ c2922-16           { ; Stegosaurus at Storm Lake       t=  1:50:39.82
                      ; Formula by Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=+0.45945777566692740/+0.28831391488387680/46.04399/1/90
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=000083OAD<5>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg<15>000<15>0\
@@ -429,7 +431,7 @@ c1922-18           { ; Moonlight on the Water          t=  1:41:53.56
                      ; Formula by Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=+0.47326232066935560/+0.30997341810040140/291.4177/1/90
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=000083OAD<5>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg<15>000<15>0\
@@ -443,7 +445,7 @@ c1922-19           { ; Die Moldau                      t=  1:31:29.90
                      ; Formula by Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=+0.47269876634590930/+0.27041200949627390/221.3653/1/90
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=000083OAD<5>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg<15>000<15>0\
@@ -457,7 +459,7 @@ c1922-21           { ; Window Vista                    t=  0:34:21.74
                      ; Formula by Robert Carr
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2922 passes=1
+  formulaname=Carr2922 passes=1
   center-mag=+0.75366564157509260/-0.37516137877735300/1931.819/1/90
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=00000z0D7<11>0pQ<2>0fL0Ik0PW0XG<9>000430860CA0<7>cP0<6>zy0<4>qb0<\
@@ -506,7 +508,7 @@ Eggs               { ; Another egg lurking behind the first      t=  0:06:11.68
                      ; Formula by Sylvie Gallet, eggs found by Brian Jones 
                      ; on a P166 at 1600x1200
                      ; Par and Image Copyright 1996 by Brian E. Jones
-  reset=1950 type=formula formulafile=gallet-5.frm
+  reset=1950 type=formula formulafile=96_msg_3.frm
   formulaname=BJ-SG-5-07-a function=log/sqr passes=1
   center-mag=-1.44329e-015/-0.344037/0.7575758 params=0.15/0/75/0
   float=y maxiter=255 inside=0 periodicity=0
@@ -520,7 +522,7 @@ G5_05_03           { ; "Easter Egg"                          t=  0:07:26.99
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 10, 1996 at 14:09:04 hours
   reset=1950 type=formula formulafile=gallet-5.frm
-  formulaname=gallet-5-05 function=cos/cotan passes=1
+  formulaname=Gallet-5-05 function=cos/cotan passes=1
   center-mag=3.18624/-1.9984e-015/1.679703 params=0.05/0.33/0.6/0.14
   float=y maxiter=1000 inside=0 outside=atan symmetry=none
   periodicity=0
@@ -548,7 +550,7 @@ BJSG5-07c_01       { ; "Fractal Flower Bud"                  t=  0:04:59.79
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 24, 1996 at 23:43:10 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=bj-sg-5-07-c function=log/sqr/ident/zero
+  formulaname=BJ-SG-5-07-c function=log/sqr/ident/zero
   center-mag=0.0315673/-0.161524/0.7041646 params=0.15/0/75/0 float=y
   maxiter=255 inside=0 periodicity=0
   colors=000HCS<11>X`tZcwZcw<15>nru<3>dhibef_bdY_aVXZ<11>000<4>BA8ECAGEBIF\
@@ -561,7 +563,7 @@ BJSG5-07c_02       { ; "Tropical Delight"                    t=  0:17:55.61
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Nov 26, 1996 at 00:18:38 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=bj-sg-5-07-c function=sqr/cos/tan/cosh
+  formulaname=BJ-SG-5-07-c function=sqr/cos/tan/cosh
   center-mag=0.0971757/-0.538488/0.8956172/1/34.999
   params=0.164/0.06/30/0 float=y maxiter=255 inside=bof61
   periodicity=0
@@ -577,7 +579,7 @@ Tropical_Flower    { ; Flower from a Tropical Paradise          t=  1:25:06.04
                      ; on a P166 at 1600x1200
                      ; Par and Image Copyright 1996 by Brian E. Jones
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=bj-sg-5-07-c function=tan/tanh/tanh/tan passes=1
+  formulaname=BJ-SG-5-07-c function=tan/tanh/tanh/tan passes=1
   center-mag=0/0/0.6666667 params=0.164/0.06/30/0 float=y maxiter=255
   inside=bof61 periodicity=0
   colors=000tVCuWCvXD<2>ucMufOthRskUrnXqq_ptb<11>HOMELKDKJ<5>9DD8BB8BB9BCA\
@@ -592,7 +594,7 @@ Zoom_Tropical_flwr { ; Zoom into the tropical flower             t=  1:25:14.33
                      ; on a P166 at 1600x1200
                      ; Par and Image Copyright 1996 by Brian E. Jones
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=bj-sg-5-07-c function=tan/tanh/tanh/tan passes=1
+  formulaname=BJ-SG-5-07-c function=tan/tanh/tanh/tan passes=1
   center-mag=1.56348/0.200167/10.41667/1/45 params=0.164/0.06/30/0
   float=y maxiter=255 inside=bof61 periodicity=0
   colors=000XSYZV_c`b<5>urnrplnmkikk<12>OI5<6>eYJg_LiaNkcPneR<3>xn_wm_vlZ<\
@@ -638,7 +640,7 @@ C2960_Z01          { ; "Zoom into Carr2960"                 t=  1:10:59.14
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 04, 1996 at 02:35:58 hours
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2960 passes=1
+  formulaname=Carr2960 passes=1
   center-mag=+1.12649911350378000/+0.01210225470106491/136.1205
   params=200/300/400/550 float=y maxiter=2000 periodicity=0
   colors=GBRHCS<11>X`tZcwZcw<15>nru<4>bef_bdY_aVXZSVWQST<9>000<18>f`V<9>JC\
@@ -651,7 +653,7 @@ C2960_Z01          { ; "Zoom into Carr2960"                 t=  1:10:59.14
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; Formula by Robert Carr, M.D.
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2960 passes=1
+  formulaname=Carr2960 passes=1
   center-mag=-1.57614191819668600/-1.20718662347242900/57.43561
   params=200/300/400/550 float=y maxiter=647 logmode=fly periodicity=0
   colors=000000TeI<4>ns_svcuuRwsEzq0<6>WZASWBORAJM8EH6000<2>000052zFzC0000\
@@ -680,7 +682,7 @@ G5_08_16_cos       { ; "Rendezvous with Rama"                t=  0:05:36.36
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 04, 1996 at 20:21:55 hours
   reset=1950 type=formula formulafile=gallet-5.frm
-  formulaname=gallet-5-08 function=atanh/atan/cos passes=1
+  formulaname=Gallet-5-08 function=atanh/atan/cos passes=1
   center-mag=-0.03088/-0.0945516/7.434382/1/90
   params=0.4/3/4.5/0/-3.142/14 float=y maxiter=255 inside=bof60
   outside=atan decomp=256 periodicity=0
@@ -695,7 +697,7 @@ G5_08_16           { ; "Rendezvous with Rama"                t=  0:05:36.36
                      ; (c) 1996 by Les St Clair 101461.2032@compuserve.com
                      ; parameters created on Dec 04, 1996 at 20:21:55 hours
   reset=1950 type=formula formulafile=gallet-5.frm
-  formulaname=gallet-5-08 function=atanh/atan/tan passes=1
+  formulaname=Gallet-5-08 function=atanh/atan/tan passes=1
   center-mag=-0.03088/-0.0945516/7.434382/1/90
   params=0.4/3/4.5/0/-3.142/14 float=y maxiter=255 inside=bof60
   outside=atan decomp=256 periodicity=0
@@ -710,7 +712,7 @@ Arborea            { ; Botanical Moon of Mongo         t=  1:34:21.89
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2771 passes=1
+  formulaname=Carr2771 passes=1
   center-mag=-0.02881967106998759/+0.02981137336556958/605.4402/1/-145
   params=100/150/200/250 float=y maxiter=647 symmetry=none
   periodicity=0
@@ -723,7 +725,7 @@ c282125            { ; Okefenokee Swamp Reflections         t=  1:32:08.74
                      ; on a P166 at 1600x1200  Dec 09, 1996  10:40:46
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=+0.38465429961157220/+0.27611876665510210/52664.5
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000F0L<3>300<10>0000FM50T95U<4>XVta_s<4>zzzvtermLnf0<6>944I88SCC<\
@@ -738,7 +740,7 @@ c280805            { ; Pinacles and Tidal Flats             t=  1:34:34.90
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; PHC Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2808 passes=1
+  formulaname=Carr2808 passes=1
   center-mag=+0.45976212197060580/-0.11783191879175140/40.20916/1/50
   params=100/150/200/250 float=y maxiter=647 periodicity=0
   colors=000D0F<10>d0j<15>000<3>0AA0DD0GG0JJ0MM<7>0gg<15>000<15>0pQ<15>000\
@@ -752,7 +754,7 @@ c282118            { ; Brushy Creek Sink Cave Entrance      t=  1:56:26.96
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; PHC Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=-0.09082404998006753/-0.43554291991188540/538.5103
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=00006hwvkzynwtosoppGd<5>_HsXIvXLv<2>XVsXYsX`rXcrV`o<2>PUgMSdKP`<7\
@@ -767,7 +769,7 @@ c282119            { ; Crags in the Clouds                  t=  1:05:51.23
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; PHC Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=+0.39367386184323520/+0.26770615547612610/1986.614
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000MSd<8>38I16F04A025700<4>J00L00L01<7>H8BH8CH7E<6>H1RI0TH0R<15>9\
@@ -779,7 +781,7 @@ c282119            { ; Crags in the Clouds                  t=  1:05:51.23
 
 tweedum_66           {
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=ormandel17 function=tanh/cosxx passes=1
+  formulaname=Ormandel17 function=tanh/cosxx passes=1
   center-mag=-0.375025/0.281282/10.68009/0.9997
   params=2.71828182845905/0/3.14159265358979/0 maxiter=2147483647
   potential=255/200/4
@@ -802,7 +804,7 @@ c282127            { ; Everglades in Moonlight            t=  1:34:11.10
                      ; on a P166 at 1600x1200  Dec 09, 1996  14:00:26
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=+0.38451624473919750/+0.27626657621556310/66605.1
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000010000232<10>5Pw<6>zo`<5>5Pw<6>000CC9<14>zyn<4>i_sfVtdVt<10>Bb\
@@ -816,7 +818,7 @@ c282129            { ; Bristlecone Pine Ridge               t=  1:47:52.66
                      ; on a P166 at 1600x1200  Dec 09, 1996  17:13:10
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=-0.09300941600424580/-0.43495558569898760/10205.24
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000B9D657000<13>Xcr<15>000232<10>5Pw<6>zo`<5>5Pw<6>000CC9<14>zynw\
@@ -830,7 +832,7 @@ c282137            { ; Sunset at Blue Bayou                t=  2:03:34.94
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=-0.09263540198595445/-0.43494033758054920/57957.18/1/-22.5
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000YdA<5>zz0<10>`00<8>w_hzcmzbj<6>zQMyOIyKK<4>x4R<7>S6TO7TK7TG7UC\
@@ -845,7 +847,7 @@ c282138            { ; Autumn Reflections in Red Rock Canyon    t=  2:01:09.50
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=-0.09284554087033015/-0.43505255624716830/460422.7/1/9.999
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000XYsX`rXcr<3>PUgMSdKP`<7>000<4>A00C00C00<12>O00<6>zul<7>cAB`46`\
@@ -860,7 +862,7 @@ c282140            { ; Appalachian Storm near Lake Lure     t=  1:59:13.67
                      ; Image Copyright 1996 by Lee H. Skinner ver=1950
                      ; Formula by Robert Carr, MD
   reset=1950 type=formula formulafile=newforms.frm
-  formulaname=carr2821 passes=1
+  formulaname=Carr2821 passes=1
   center-mag=-0.09266894411502580/-0.43508618804926850/679882.4
   params=200/300/400/550 float=y maxiter=647 periodicity=0
   colors=000yUF<7>x4R<7>S6TO7TK7TG7UC5M83F42763A00003C<5>0O0<8>ZOobOudRu<3\
@@ -869,4 +871,3 @@ c282140            { ; Appalachian Storm near Lake Lure     t=  1:59:13.67
   00000C00<13>O00<6>zul<7>cAB`46`00<11>0000FM<12>zz0<10>`00<7>zyn<7>yYJ
   }
 
-

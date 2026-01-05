@@ -1,5 +1,5 @@
 fractiles          {;  p1=Mandelbrot set coordinates
-  reset=2000 type=formula formulafile=jim.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=Mosaic function=tan/tan/tan/tan
   center-mag=4.44089e-015/-3.16414e-015/0.1392427/1/-3\
   9.999 params=-1.76/0 float=y maxiter=95
@@ -18,13 +18,6 @@ fractiles          {;  p1=Mandelbrot set coordinates
   iijjgokeslcw<2>HSu<3>9bo7dn5gm3il<6>rKe
   }
 
-frm:Mosaic {;  p1=Mandelbrot set coordinates
-z=c=p1+.05*(fn1(fn2(real(pixel)))+\
-flip(fn3(fn4(imag(pixel))))):
-z=sqr(z)+c,
-|z| <= 100
-}
-
 3rdCoast.gif       { ; image(c)2000 Jim Weaver
   reset=1960 type=mandel(fn||fn) function=log/flip passes=t
   center-mag=+1.60533291452199800/-1.33498883875210200/1.18619/1/45
@@ -38,7 +31,7 @@ z=sqr(z)+c,
   }
 
 Fins               { ; image(c)2000 JimWeaver
-  reset=1960 type=formula formulafile=_i.frm formulaname=inandout13
+  reset=1960 type=formula formulafile=new24.frm formulaname=inandout13
   function=sinh/sqr passes=t
   center-mag=-0.626395/0.463283/3.369305/1/-12.498 params=1/0/0/0
   float=y inside=epsiloncross invert=0.1/-0.4/0 periodicity=0
@@ -50,8 +43,8 @@ Fins               { ; image(c)2000 JimWeaver
   }
 
 g303004.gif        { ; image(c)2000 JimWeaver
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=g-3-03-m function=log/conj passes=b
+  reset=1960 type=formula formulafile=new24.frm
+  formulaname=G-3-03-M function=log/conj passes=b
   center-mag=0.990512/-1.19193/1.94364/1/87.5 params=0.11/0.03/0.4/0
   float=y inside=bof60 outside=real periodicity=0
   colors=000nP0<3>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6J\
@@ -72,7 +65,7 @@ kchn17a1.gif       { ; image(c)2000 JimWeaver
   }
 
 Wave               { ; image(c)2000 JimWeaver  (etch02z.gif)
-  reset=1960 type=formula formulafile=_i.frm formulaname=inandout06
+  reset=1960 type=formula formulafile=new24.frm formulaname=inandout06
   function=atanh/asinh/sin passes=b
   center-mag=-1.04373304461890100/+0.05870978187343233/1250.463/0.9786/-11\
   5.201/-13.313 params=0/0/0/0 float=y inside=bof60
@@ -99,8 +92,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 14, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=-3.05548/9.30136/3.942029/1/-109.999
   params=-1/1/2/-1.5/0/0 float=y maxiter=2000 bailout=25 inside=0
   symmetry=none periodicity=0 sound=off
@@ -113,8 +106,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+2.88673055761374900/-3.59466658910688800/2.528976e+011
   params=1/-1.5/-3/0.5/0/0 float=y maxiter=1600 bailout=25
   inside=0 logmap=104 symmetry=none periodicity=10 sound=off
@@ -126,8 +119,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+72.39005639767717000/+0.00000005358312205/18109.86
   params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
   inside=0 logmap=47 symmetry=none periodicity=10 sound=off
@@ -141,8 +134,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+72.39004428961769000/-0.00001110987082908/1.185761e+011/\
   1.0003 params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
   inside=0 logmap=144 symmetry=none periodicity=10 sound=off
@@ -157,8 +150,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+72.47170030731296000/-0.04740244275976058/1503.494/1/-90
   params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
   inside=0 logmap=75 symmetry=none periodicity=10 sound=off
@@ -173,8 +166,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 11, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+72.47183790716201000/-0.04891345439138522/75333.13/1/119\
   .999 params=1/100/-2/0.01/35/0 float=y maxiter=1800 bailout=25
   inside=0 logmap=140 symmetry=none periodicity=10 sound=off
@@ -188,8 +181,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 14, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+1.16611516126891800/+0.26169401064720740/3.96582e+007
   params=1/1.8/-1/-0.5/0/0 float=y maxiter=4000 bailout=25
   inside=0 logmap=378 periodicity=0 sound=off
@@ -203,8 +196,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 14, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=-1.02154424034962000/+3.34908648639290700/1.443724e+008
   params=-1/1/2/-1.5/0/0 float=y maxiter=2000 bailout=25 inside=0
   symmetry=none periodicity=0 sound=off
@@ -221,8 +214,8 @@ April1980          {; Mandelbrot discovered it in 3/80
                      ; Copyright Sylvie Gallet, Apr 14, 2000
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=+2.53408422974110600/-5.58614796935317300/786.2559/1/105
   params=1/0.55/-1/0.65/8/0 float=y maxiter=5000 inside=0
   logmap=74 symmetry=none periodicity=0 sound=off
@@ -232,14 +225,6 @@ April1980          {; Mandelbrot discovered it in 3/80
   KFUHDSFA<2>M83K50K50<8>RA9SAASBB<5>XEHYFIZGJ_HK_HK<4>cLPdMQdNR<2>fQT\
   gQUgRUgRV<59>zzw
   }
-
-frm:MandelbrotMix4 {; Jim Muth
-a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
-g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
-k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
-z=k*((a*(z^b))+(d*(z^f)))+c,
-|z| < l
-}
 
 StarBK3D.gif       { ; generate and save this image first....
                      ; image(c)2000 Jim Weaver
@@ -261,7 +246,7 @@ Star3D.gif         { ; this should turn StarBK3D into somethin' cool(CYCLE IT)
 
 Easteregg          { ; Mods to Moire Mask
                      ; Easter Egg (C) 1999 P. Kyle
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=new24.frm formulaname=Ca10-08
   center-mag=-7455.29/-7455.39/0.0001798271/1/44.999
   params=0.1300804/0/2.71828182845905/0.01 float=y maxiter=647
   inside=maxiter outside=real logmode=fly potential=255/334/0
@@ -275,8 +260,8 @@ tesseral           { ; ;
                      ; Apr 19, 2000, 11:45:21 calctime  0:00:07.80.
                      ; Paste left by Fernando Bresslau bresslau@ozdobe.org
                      ;  Version 2000 Patchlevel 9
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=sin passes=t
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=sin passes=t
   center-mag=-1.01781036168132900/+0.88593235071707930/10752.69
   params=-4/-2/-3/-1/0/0 float=y maxiter=2000 fillcolor=0 inside=0
   viewwindows=4.2/0.75/yes/683/512 sound=off
@@ -314,8 +299,8 @@ tesseral           { ; ;
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
-  formulaname=mmix4-lake-0270 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0270 function=recip passes=1
   center-mag=-0.40374468230415920/+2.08435374453009100/2.65758\
   7e+010/1/-132.5 params=0/0/40/0/0.2/300 float=y
   maxiter=1200 inside=0 logmap=139 symmetry=none sound=off
@@ -331,7 +316,7 @@ tesseral           { ; ;
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MMix4-lake-0257 function=ident passes=1
   center-mag=+72.31044472088888000/+0.16149902668392410/5.4510\
   81e+009/1/15.001/-0.004 params=0/0/40/0/0.2/300 float=y
@@ -341,112 +326,6 @@ tesseral           { ; ;
   000<3>VM5bS6jX7rb8zhA<3>RK5ID3972000<3>000<3>m_4zh5kY4<2>000\
   <74>999
   }
-
-frm:MMix4-lake-0257 { ; 6000401 - Formula by Sylvie Gallet & Jim Muth
-; MandelbrotMix4 parameters (hard-coded):
-; -------------------------
-p_p1 = (1,100)
-p_p2 = (-2,0.01)
-p_p3 = (35,0)
-; Function: i
-
-; User-selectable Lake parameters:
-; -------------------------------
-; real part of p2: 0 = lake transform disabled
-;                  any value between 0 and 100: water level in % of
-;                  the screen height (0 = bottom, 100 = top)
-; imag part of p2: phase
-; real part of p3: amplitude of the wave (try 0.2)
-; imag part of p3: frequency (try 300)
-
-; Lake transformation (Sylvie Gallet)
-; -------------------
-
-if (real(p2) > 0 && real(p2) <= 100)
-  level = real(p2) / 100         ; water level
-  phase = imag(p2)               ; phase
-  ampl = real(p3)                ; amplitude of the wave
-  freq = imag(p3)                ; frequency
-  angle = real(rotskew * pi / 180)
-  exp_irot = exp(-flip(angle))
-  h = 1 / real(magxmag)
-  w = h / 0.75 * imag(magxmag)
-  tanskew = tan(imag(rotskew * pi / 180))
-  u = 2 * w * exp_irot
-  v = 2 * h * (tanskew + flip(1)) * exp_irot
-  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-  z = pixel - z3rd
-  b = imag(conj(u)*z) / imag(conj(u)*v)
-  if (b <= level)
-    dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2 + phase)) * v
-  endif
-  pixel = z + z3rd
-endif
-
-; Modified MandelbrotMix4 formula (Jim Muth)
-; -------------------------------
-
-a = real(p_p1) , b = imag(p_p1) , d = real(p_p2) , f = imag(p_p2)
-g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j ,
-k = real(p_p3) + 1 , l = imag(p_p3) + 100 , c = fn1(pixel)
-:
-z = k*(a*(z^b) + d*(z^f)) + c
-|z| < l
-}
-
-frm:MMix4-lake-0270 { ; 6000417 - Formula by Sylvie Gallet & Jim Muth
-; MandelbrotMix4 parameters (hard-coded):
-; -------------------------
-p_p1 = (1,1.1)
-p_p2 = (-1,-1.11)
-p_p3 = (0,0)
-; Function: r
-
-; User-selectable Lake parameters:
-; -------------------------------
-; real part of p2: 0 = lake transform disabled
-;                  any value between 0 and 100: water level in % of
-;                  the screen height (0 = bottom, 100 = top)
-; imag part of p2: phase
-; real part of p3: amplitude of the wave (try 0.2)
-; imag part of p3: frequency (try 300)
-
-; Lake transformation (Sylvie Gallet)
-; -------------------
-
-if (real(p2) > 0 && real(p2) <= 100)
-  level = real(p2) / 100         ; water level
-  phase = imag(p2)               ; phase
-  ampl = real(p3)                ; amplitude of the wave
-  freq = imag(p3)                ; frequency
-  angle = real(rotskew * pi / 180)
-  exp_irot = exp(-flip(angle))
-  h = 1 / real(magxmag)
-  w = h / 0.75 * imag(magxmag)
-  tanskew = tan(imag(rotskew * pi / 180))
-  u = 2 * w * exp_irot
-  v = 2 * h * (tanskew + flip(1)) * exp_irot
-  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-  z = pixel - z3rd
-  b = imag(conj(u)*z) / imag(conj(u)*v)
-  if (b <= level)
-    dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2 + phase)) * v
-  endif
-  pixel = z + z3rd
-endif
-
-; Modified MandelbrotMix4 formula (Jim Muth)
-; -------------------------------
-
-a = real(p_p1) , b = imag(p_p1) , d = real(p_p2) , f = imag(p_p2)
-g = 1/f , h = 1/d , j = 1/(f-b) , z = (-a*b*g*h)^j ,
-k = real(p_p3) + 1 , l = imag(p_p3) + 100 , c = fn1(pixel)
-:
-z = k*(a*(z^b) + d*(z^f)) + c
-|z| < l
-}
 
 kaleidoscope       { ; Kaleidoscope (c)Tom Conally, 4/2000
 	     		 ; cycle color for kaleidoscope effect
@@ -467,7 +346,8 @@ kaleidoscope       { ; Kaleidoscope (c)Tom Conally, 4/2000
 
 VermilionSea        { ; by Lee Fairbanks            Version 2000 Patchlevel 9
                                ; t = 0:02:35.44  at SF7 on a P450 
-  reset=2000 type=formula formulaname=ManLakefnfn  function=sin/sqr passes=1
+  reset=2000 type=formula formulaname=ManLakefnfn formulafile=new24.frm
+  function=sin/sqr passes=1
   center-mag=-0.44460231995307970/-0.00931963494133049/68.50907
    params=0/0/4/85/0.3/200
   float=y maxiter=32000 inside=0
@@ -477,95 +357,6 @@ VermilionSea        { ; by Lee Fairbanks            Version 2000 Patchlevel 9
   S5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<9>3Yu3Xu3Wv<10>8Oy9NyAMz\
   <13>JDz
   }
-
-frm:ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet with 
-Mandel(fn||fn)
-                            ; function=fn1/fn2            
-                            ; p1 = Julia seed
-                            ; real(p2) = bailout value
-                            ; imag part of p2: 0 = lake transform disabled
-                            ; any value between 0 and 100: water level in % of
-                            ; screen height (0 = bottom, 100 = top)
-                            ; real part of p3: amplitude of the wave (try 0.2)
-                            ; imag part of p3: frequency (try 300)            
-               
-
-bailout = real(p2),  shift = 0.5
-
-; Lake transformation
-; -------------------
-
-if (imag(p2) > 0 && imag(p2) <= 100)
-
-  level = imag(p2) / 100         ; water level
-  ampl = real(p3)                ; amplitude of the wave
-  freq = imag(p3)                ; frequency
-
-  angle = real(rotskew * pi / 180)
-  exp_irot = exp(-flip(angle))
-  h = 1 / real(magxmag)
-  w = h / 0.75 * imag(magxmag)
-  tanskew = tan(imag(rotskew * pi / 180))
-
-; The complex numbers u and v are defined as follow:
-;   u = bottom_right_corner - bottom_left_corner
-;   v = top_left_corner - bottom_left_corner
-
-  u = 2 * w * exp_irot
-  v = 2 * h * (tanskew + flip(1)) * exp_irot
-
-; Bottom_left_corner:
-  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
-
-  z = pixel - z3rd
-
-; solves the equation z = a*u + b*v which is equivalent to the system:
-;   re_z = a * re_u + b * re_v
-;   im_z = a * im_u + b * im_v
-; the solution (a,b) is:
-;       | re_z   re_v |        | re_u   re_z |
-;       | im_z   im_v |        | im_u   im_z |
-;   a = ---------------    b = ---------------
-;       | re_u   re_v |        | re_u   re_v |
-;       | im_u   im_v |        | im_u   im_v |
-;
-; Only b is used and 0 <= b <= 1
-;   b = 0  <==>  pixel at the bottom of the screen
-;   b = 1  <==>  pixel at the top of the screen
-;
-; Since the formula parser uses complex numbers, I thought the
-; easiest way to calculate b was:
-
-  b = imag(conj(u)*z) / imag(conj(u)*v)
-
-; the heart of the lake transform:
-  if (b <= level)
-    dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
-  endif
-
-  z = z + z3rd
-
-else
-  z = pixel
-endif
-
-; Classic mandel/julia formula
-if (ismand)
-  c = z
-else
-  c = p1
-endif
-
-:  ; (the all important colon - now iterate the following)
-
-if (z*z <= shift)
-  z = fn1(z) + c
-else
-  z = fn2(z) + c
-endif
-|z| <= bailout
-}
 
 2layer-1           { ; Multi-layered effect
                      ; Just a simple julia
@@ -633,7 +424,7 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MMix4-lake-0061 function=ident passes=1
   center-mag=+1.44519368957052900/+0.14160825065617150/76615.3\
   3/1/-34.999 params=0/0/36/0/0.2/200 float=y maxiter=2500
@@ -648,8 +439,8 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
-  formulaname=mmix4-lake-0139b function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0139B function=ident passes=1
   center-mag=+1.88255488398907100/-0.02668502674302770/1.76539\
   1e+010/1/30 params=0/0/27/0/0.3/200 float=y maxiter=2000
   inside=0 cyclerange=0/255 sound=off
@@ -668,7 +459,7 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MMix4-lake-0227 function=recip passes=1
   center-mag=+2.86077719777997400/+0.00103133600044388/715138.\
   4/1/7.5 params=0/0/37/0/0.7/200 float=y maxiter=1000
@@ -686,8 +477,8 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
-  formulaname=mmix4-lake-0300 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0300 function=recip passes=1
   center-mag=+1.92711632140873700/+0.06885607469174922/1352.02\
   8/1/-32.499 params=0/0/35/0/0.3/150 float=y maxiter=2000
   inside=0 periodicity=0 sound=off
@@ -703,7 +494,7 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MMix4-lake-0303 function=recip passes=1
   center-mag=+2.79125975335705300/+5.69700602216168700/7496.93\
   7/1/140 params=0/0/34/0/0.25/180 float=y maxiter=2000
@@ -721,7 +512,7 @@ Shaved.penguins    {
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=mmix_lak.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MMix4-lake-0304 function=recip passes=1
   center-mag=+4.02785545745316800/+1.79514268564319900/167449.\
   1/1/10 params=0/0/34/0/0.3/200 float=y maxiter=2000
@@ -736,8 +527,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:51:02
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0139 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0139 function=ident passes=1
   center-mag=-0.12947867499869180/-0.31327946717538240/587.3575/1/-2.5
   params=0/0/33.33/0/0.2/300 float=y maxiter=6000 bailout=25 inside=0
   logmap=17 symmetry=none periodicity=10
@@ -753,8 +544,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:51:30
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0162 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0162 function=ident passes=1
   center-mag=-0.88912937958200310/-0.00031214697624702/7944.202/1/-87.498
   params=0/0/33.33/0/0.2/300 float=y maxiter=1400 bailout=25 inside=0
   logmap=9 symmetry=none periodicity=10
@@ -769,8 +560,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:51:45
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0177 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0177 function=ident passes=1
   center-mag=+2.15632695764063200/-0.01595275250755705/968.5468/1/72.499
   params=0/0/33.33/0/0.2/300 float=y maxiter=3000 bailout=25 inside=0
   logmap=13 symmetry=none periodicity=10
@@ -785,8 +576,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:52:01
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0177 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0177 function=ident passes=1
   center-mag=+2.17856216587067300/-0.02305697921457523/2260.564/1/-94.998
   params=0/0/33.33/0/0.2/300 float=y maxiter=3000 bailout=25 inside=0
   logmap=29 symmetry=none periodicity=10
@@ -801,8 +592,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:52:15
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0197 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0197 function=ident passes=1
   center-mag=17.0819/2.64481/12.64048/1/180 params=0/0/33.33/0/0.2/300
   float=y maxiter=2000 bailout=25 inside=0 logmap=29 symmetry=none
   periodicity=10 rseed=3141
@@ -819,8 +610,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:52:34
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0203 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0203 function=ident passes=1
   center-mag=+0.99702774956984290/+0.00004870298086398/9.999487e+007/1/-67\
   .499 params=0/0/33.33/0/0.2/300 float=y maxiter=1000 bailout=25
   inside=0 logmap=43 symmetry=none periodicity=10 rseed=3141
@@ -836,8 +627,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:52:49
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0238 function=ident passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0238 function=ident passes=1
   center-mag=2.93098/-3.64397/12.21837/1/4.998
   params=0/0/33.33/0/0.2/300 float=y maxiter=1600 bailout=25 inside=0
   logmap=4 symmetry=none periodicity=10
@@ -852,8 +643,8 @@ Shaved.penguins    {
                      ; on a P233 at 1600x1200  May 28, 2000  08:53:12
                      ; Image Copyright 2000 by Lee H. Skinner ver=2000
                      ;  Version 2000 Patchlevel 8
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mmix4-lake-0267 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MMix4-lake-0267 function=recip passes=1
   center-mag=-1.82119694643630500/+6.28079334345163400/40.52967/1/-135
   params=0/0/33.33/0/0.2/300 float=y maxiter=6000 bailout=25
   inside=bof61 logmap=yes symmetry=none periodicity=10
@@ -883,8 +674,8 @@ Cks<13>DFHECEECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
   center-mag=+0.14474493913701920/+0.33715906123071150/8294.11\
   5/1/155 params=1/-4/1/-5/-20/0 float=y maxiter=2400
   bailout=25 inside=bof60 logmap=5 symmetry=none
@@ -902,8 +693,8 @@ Cks<13>DFHECEECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
   center-mag=+0.14827537372617890/+0.33596638473633280/4763.32\
   4/1/12.499 params=1/-4/1/-5/-20/0 float=y maxiter=2400
   bailout=25 inside=bof60 logmap=15 symmetry=none
@@ -921,8 +712,8 @@ Cks<13>DFHECEECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a PII 300 at 1600 x 1200
                      ;  Version 2000 Patchlevel 6
-  reset=2000 type=formula formulafile=fractint.frm
-  formulaname=mandelbrotmix4 function=recip passes=1
+  reset=2000 type=formula formulafile=new24.frm
+  formulaname=MandelbrotMix4 function=recip passes=1
   center-mag=+0.31458818347111160/+0.00000000000000000/7603.65\
   7/1/180 params=1/-4/1/-5/-20/0 float=y maxiter=2400
   bailout=25 inside=bof60 logmap=5 symmetry=none
@@ -936,14 +727,6 @@ Cks<13>DFHECEECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsss\
   5NX6Q`6Tc7Vf7Y
   }
 
-frm:MandelbrotMix4 {; Jim Muth
-a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
-g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
-k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
-z=k*((a*(z^b))+(d*(z^f)))+c,
-|z| < l
-}
-
 { Hello ! I just returned from a dangerous exploration of the 
 complex plane (more precisely, in the MandelbrotMix4 forest), 
 in search of the man-eater Midget of Destiny. Not one, not two,
@@ -956,7 +739,7 @@ Franktal Gallery - http://members.xoom.com/fliguer/franktal.html
 
 Brandelmoth        { ; by Miguel Fliguer - 2000
                      ; Formula by Jim Muth / Palette by Sylvie Gallet
-  reset=2000 type=formula formulafile=miguel.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MandelbrotMix4 function=flip
   center-mag=+3.05614004131027300/+1.53696288441299100/109780.7/1/2.499
   params=0.57/-1.57/-4.89/-4.76/90/13 float=y maxiter=250000 inside=0
@@ -971,7 +754,7 @@ Brandelmoth        { ; by Miguel Fliguer - 2000
 Caterpil           { ; by Miguel Fliguer - 2000
                      ; Formula by Jim Muth / Palette by Sylvie Gallet 
                      ;  
-  reset=2000 type=formula formulafile=miguel.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MandelbrotMix4 function=flip passes=1
   center-mag=+0.52963950292242410/+0.37627214620209390/566041.4/1/9.999
   params=0.5788445692312387/-1.573107089449751/-4.889614551225318/-4.76659\
@@ -987,7 +770,7 @@ Caterpil           { ; by Miguel Fliguer - 2000
 MoneyTalks         { ; by Miguel Fliguer - 2000
                      ;  Formula by Jim Muth / Palette by Sylvie Gallet
                      ; 
-  reset=2000 type=formula formulafile=miguel.frm
+  reset=2000 type=formula formulafile=new24.frm
   formulaname=MandelbrotMix4 function=asinh passes=1
   center-mag=-1.38432676730081300/+0.12551625916458630/995.8741/1/54.999
   params=4.836795630148042/-3.046331819235659/-2.526959119020869/-1.048449\

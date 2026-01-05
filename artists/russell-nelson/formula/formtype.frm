@@ -147,5 +147,3 @@ lz11_sin(xyaxis) {z=(z^pixel)*sin(z^pixel) , |z|<=4 }
 
 lz1l_sinh(xyaxis) {z=(z^pixel)*sinh(z^pixel) , |z|<=4 }
 
- 
-

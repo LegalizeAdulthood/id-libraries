@@ -1,4 +1,4 @@
-BillTry3   {; Bill Rossi
+BillTry3   {; Bill Rossi
     z = pixel, c=p1:
     z = ((z-1) * c * (real(p1)>=0)) + ((z+1) * |c|/c * (real(p1)<0)),
     |z| <= 4
@@ -13,7 +13,7 @@ BillTry4   {; Bill Rossi
  }
 
 Spiral5            { ; Bill Rossi
-  reset=1930 type=formula formulafile=fractint.frm
+  reset=1930 type=formula formulafile=billspir.frm
   formulaname=BillTry3
   center-mag=0.804207/-0.784405/2.099061 params=0.7/1.2 float=y
   decomp=256
@@ -21,7 +21,7 @@ Spiral5            { ; Bill Rossi
   }
 
 Spiral6            { ; Bill Rossi
-  reset=1930 type=formula formulafile=fractint.frm
+  reset=1930 type=formula formulafile=billspir.frm
   formulaname=BillTry4
   function=asin/cabs center-mag=0.728742/0.805388/14.03035
   params=0/1.9 float=y decomp=256
@@ -31,7 +31,7 @@ Spiral6            { ; Bill Rossi
   }
 
 Spiral7            { ; Bill Rossi
-  reset=1930 type=formula formulafile=fractint.frm
+  reset=1930 type=formula formulafile=billspir.frm
   formulaname=BillTry4
   function=ident/conj center-mag=0.580726/-0.490818/1.007049
   params=0/1.25 float=y decomp=256
@@ -41,7 +41,7 @@ Spiral7            { ; Bill Rossi
   }
 
 Spiral8            { ; Bill Rossi
-  reset=1930 type=formula formulafile=fractint.frm
+  reset=1930 type=formula formulafile=billspir.frm
   formulaname=BillTry4
   function=exp/cotan center-mag=-0.505632/0.305509/4.219409
   params=0/1.7 float=y decomp=256

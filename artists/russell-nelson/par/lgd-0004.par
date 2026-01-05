@@ -14,7 +14,7 @@
 ;
 ;
 ;
-  reset=1950 type=formula formulafile=LGD001.frm formulaname=LGDF0014
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0014
   passes=3 center-mag=-1.13453/-0.29701/2.781486 float=y inside=bof60
   outside=mult periodicity=0
   colors=000vxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcRKK<3>zkk<7>z00<49>z\
@@ -29,7 +29,7 @@
 LGDP0101           { ; X-Files guest star
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1940 type=formula formulafile=lgd001.frm formulaname=lgdf0003
+  reset=1940 type=formula formulafile=lgd001.frm formulaname=LGDF0003
   function=exp passes=b
   corners=-0.9199997/0.9199997/0.05706649/1.437066 params=234/0
   float=y maxiter=500 inside=bof60 outside=atan
@@ -39,7 +39,7 @@ LGDP0101           { ; X-Files guest star
 LGDP0102           { ; Hummingbirds
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1940 type=formula formulafile=LGD001.frm
+  reset=1940 type=formula formulafile=lgd001.frm
   formulaname=Don't_do_that! function=log passes=2
   corners=-2.219834/1.469051/2.45285/-2.465664/1.469051/-2.465664
   float=y finattract=y periodicity=0
@@ -60,8 +60,8 @@ LGDP0103           { ; Fractint Title5
                      ; Original by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
                      ; Which was all started by Sylvie Gallet
-  reset=1940 type=formula formulafile=forum.frm
-  formulaname=fractint-9-11 function=exp/cosxx/sinh
+  reset=1940 type=formula formulafile=newforms.frm
+  formulaname=Fractint-9-11 function=exp/cosxx/sinh
   center-mag=0.0128484/0.0293766/2.158387 float=y symmetry=none
   periodicity=0
   colors=00000000z<11>H7GJ8CK98MA4RD5<4>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<\
@@ -77,8 +77,8 @@ LGDP0104           { ; Fractint Title6 - Fractint Version 20 under construction
                      ; Original by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
                      ; Which was all started by Sylvie Gallet
-  reset=1940 type=formula formulafile=forum.frm
-  formulaname=fractint-9-11 function=exp/cosxx/tan passes=t
+  reset=1940 type=formula formulafile=newforms.frm
+  formulaname=Fractint-9-11 function=exp/cosxx/tan passes=t
   center-mag=0.0128484/0.0293766/2.158387 float=y fillcolor=1
   symmetry=none periodicity=0
   colors=00000000z<10>G6KH7GJ8CK98MA4<5>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<\
@@ -91,7 +91,7 @@ LGDP0104           { ; Fractint Title6 - Fractint Version 20 under construction
 LGDP0105           { ; Nested Madelbrot #1
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1940 type=formula formulafile=_m.frm formulaname=mandel_nest
+  reset=1940 type=formula formulafile=96_msg_1.frm formulaname=mandel_nest
   passes=3 center-mag=-0.636027/2.22045e-016/0.8503401
   params=1.25/0/-0.1/0/16/0 float=y maxiter=10000 periodicity=0
   colors=000z00700<13>z00000<14>zz0000<14>0z0000<14>00z000<14>kz0000<14>zW\
@@ -102,7 +102,7 @@ LGDP0105           { ; Nested Madelbrot #1
 LGDP0106           { ; Nested Madelbrot #2
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1940 type=formula formulafile=_m.frm formulaname=mandel_nest
+  reset=1940 type=formula formulafile=96_msg_1.frm formulaname=mandel_nest
   passes=3 center-mag=-0.516473/0.00919948/1.497078
   params=1.25/0/-0.1/0/16/0 float=y maxiter=10000 periodicity=0
   colors=000z00700<13>z00000<14>zz0000<14>0z0000<14>00z000<14>kz0000<14>zW\
@@ -113,7 +113,7 @@ LGDP0106           { ; Nested Madelbrot #2
 LGDP0107           { ; Nested Madelbrot #3
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1940 type=formula formulafile=_m.frm formulaname=mandel_nest
+  reset=1940 type=formula formulafile=96_msg_1.frm formulaname=mandel_nest
   passes=3 center-mag=-0.516473/0.00571594/1.497078
   params=1.25/2.5/-0.1/0/16/0 float=y maxiter=10000000 periodicity=0
   colors=000000<14>z00<15>00z000<14>z00<15>0z0000<14>z00<15>0zz000<14>z00<\
@@ -125,7 +125,7 @@ LGDP0108           { ; Nested Madelbrot #4
                      ; ;
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=_m.frm formulaname=mandel_nest
+  reset=1950 type=formula formulafile=96_msg_1.frm formulaname=mandel_nest
   passes=3 center-mag=-0.636027/2.22045e-016/0.8503401
   params=1.25/2/-0.1/0/16/0 float=y maxiter=10000 periodicity=0
   colors=000000<28>00w00z00z<63>y01z00z10z10<6>z50000<35>0xx0zz0zx<23>0z0<\
@@ -136,7 +136,7 @@ LGDP0109           { ; Eponymous
                      ; ;
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=LGD001.frm formulaname=LGDF0015
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0015
   function=recip passes=3
   corners=-1.059247/3.818802/-2.564982/1.093554 params=1e+020/0
   float=y maxiter=500 inside=bof60 outside=atan
@@ -148,7 +148,7 @@ LGDP0110           { ; Uglier, older brother of X-Files guest star
                      ; And it's not happy
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0003
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0003
   function=exp passes=3
   corners=-0.6527369/0.6573426/0.30877471/1.2913344 params=2/0 float=y
   maxiter=500 inside=bof60 outside=atan
@@ -159,7 +159,7 @@ LGDP0111           { ; I'd rather meet a Borg
                      ; From Xmas Quilt by Jack A. Orman
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=_d.frm formulaname=dalijack3
+  reset=1950 type=formula formulafile=orman2.frm formulaname=DaliJack3
   function=cotanh/cotan/sin/exp savename=LGDP0111
   center-mag=-1.32243/-8.413e-005/0.2611238/1/-90 potential=255/200/0
   colors=00009F0AI<2>0CV0DZ0Dd<2>0Ft0Gy0Ft<2>0Dd0DZ0CV0BQ0BM0AI09F09C<2>07\
@@ -249,7 +249,7 @@ LGDP0117           { ; "Cult"
                      ; I never noticed the phantoms of her mind...
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0016
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0016
   function=tan/cotan passes=3
   center-mag=-0.173684/0.0332916/0.3505017/1/-90
   params=1000000/0/0.04/0 float=y maxiter=1500
@@ -262,7 +262,7 @@ LGDP0118           { ; "Process"
                      ; The center of the information war...
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0016
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0016
   function=flip/sqr passes=3
   center-mag=0.00939362/-0.0152924/0.6372664/1/-90
   params=1000000/0/0.6535897899999999/0 float=y maxiter=1500
@@ -311,7 +311,7 @@ LGDP0121           { ; "Morter"
                      ; If we lost an eye we will be sad...
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0016
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0016
   function=recip/abs passes=2
   center-mag=-0.0248938/0.0109804/0.3929392/1/-90
   params=1000000/0/0.04/-0.05 float=y maxiter=1500 inside=bof60
@@ -323,7 +323,7 @@ LGDP0122           { ; "Amnesia"
                      ; For reasons untold...
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0016
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0016
   function=cotan/cabs passes=3
   center-mag=0.467017/-0.00101485/2.284959/1/-90
   params=1000000/0/0.6535897899999999/0 float=y maxiter=1500
@@ -355,7 +355,7 @@ LGDP0124           { ; Cyclic
                      ; ;
                      ; (c) 1996 Loren G. Dobert [CIS:72332,507]
                      ; No commercial use without permission
-  reset=1950 type=formula formulafile=lgd001.frm formulaname=lgdf0016
+  reset=1950 type=formula formulafile=lgd001.frm formulaname=LGDF0016
   function=tanh/cosh passes=2
   center-mag=-0.0248938/0.0109804/0.2319585/1/-90
   params=1000000/0/0.04/0 float=y maxiter=1500 inside=bof60

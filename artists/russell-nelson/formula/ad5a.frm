@@ -314,7 +314,10 @@ ELSEIF(fn1(b)<=a/p3)
 z=(fn3(fn1(a)+fn2(b-(z^p3/z)))/fn4(z)+whitesq)
 ELSE
 z=(fn3(fn1(z*(a)+whitesq)*fn2(b/(z^p3/a)))/fn4(z))
-ENDIFep20z0{
+ENDIF
+|z|<4
+}
+ep20z0{
 z=pixel,a=cotan(z)^p2,b=z*(p1-tan(z/p3)):
 z=(fn3(fn1(a)+fn2(b-(z^p3/z)))/fn4(z)+whitesq)
 |z-1|<4
@@ -524,4 +527,3 @@ z3=fn2(x+whitesq)-(p2*(u+whitesq)+cos(z))
 z=fn4(z1+(sin(z2+tan(z))))
 |z|<4
 }
-

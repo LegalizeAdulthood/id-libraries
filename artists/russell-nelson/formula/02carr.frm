@@ -1,3 +1,4 @@
+{
 Some years back, in my youth, while I was working as a student for Isaac Newton (we all
 called him "Mr. Newt" or Izzy Newt), I noted there were materials Izzy would create on
 paper, look at them, then say "Nahhhh". He would then crumble up these scraps of

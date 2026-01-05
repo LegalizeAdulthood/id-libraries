@@ -66,7 +66,7 @@ Vertigo            { ; (c)1994 Peter Moreland 100012,3213
   }
 
 'V'                { ; (c)1994 Peter Moreland 100012,3213
-  reset=1825 type=formula formulafile=dons.frm formulaname=zeppo
+  reset=1825 type=formula formulafile=dons.frm formulaname=Zeppo
   function=sqr/tan
   corners=7.854907/4.865663/-12.6488/12.16228/-5.130535/4.665127
   params=2.2000000000000002/0.75/3/1.5 float=y maxiter=10000
@@ -387,7 +387,7 @@ Mono_Montage       { ; (c)1995 Peter Moreland 100012,3213
                      ; 22.1.95
                      ; Uses Lee's formula
   reset=1825 type=formula formulafile=newforms.frm
-  formulaname=fractalfenderc
+  formulaname=FractalFenderC
   corners=-1.477996/-0.53051955/0.6240158/-0.6392861/-0.53051955/-0.639286\
   1 params=1.222/6.0000000000000002e-005 float=y maxiter=10000
   inside=bof60 outside=summ logmap=yes invert=0.00219723/0/0
@@ -399,7 +399,7 @@ ThePointyHeaded... { ; (c)1995 Peter Moreland 100012,3213
                      ; Uses Lee's formula
                      ; Fern_Men_Were_Angry,_So_Shouted_A_Lot_as_they_Marched!
   reset=1825 type=formula formulafile=skinner.frm
-  formulaname=fractalfenderc
+  formulaname=FractalFenderC
   corners=-0.8748522504/-0.8895028541/-0.12387835935/-0.12307719101/-0.880\
   5110285/-0.11633332185 params=1.222/6.0000000000000002e-005 float=y
   maxiter=32000 inside=bof60 outside=summ logmap=yes
@@ -512,7 +512,7 @@ frosty-barnsley    {;(c) 1995 don lebow
 
 W-Carr-746*          {
   reset=1821 type=formula
-  formulafile=newforms.FRM formulaname=Carr-746
+  formulafile=newforms.frm formulaname=Carr-746
   passes=b corners=-1.583432/4.252982/-2.263269/2.194713 float=y
   maxiter=1150 inside=bof60 outside=real distest=10/71
   colors=111<11>BBBCCCBFG<6>1Wj0Yn0_p<5>0hz<7>`57e00h00<5>w00<9>0mZ<5>0dg<\
@@ -520,7 +520,7 @@ W-Carr-746*          {
   }
 
 adagio-dolente     {;ok-36 by brad beacham is in v19 Fractint.frm
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-36
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-36
   function=cosxx/cos/log/tanh passes=b
   corners=-31.99/31.99/-23.9925/23.9925 params=1/0/0/0/0/0 float=y
   potential=256/128/0
@@ -539,7 +539,7 @@ introvert-eye      {
   444<12>FK`GMbHNeIPhIOe<13>800400000<15>zX0<15>000440 }
 
 life's-a-beach     {;requires Fractint v19.x
-  reset=1900 type=formula formulafile=fractint.frm formulaname=ok-43
+  reset=1900 type=formula formulafile=fractint.frm formulaname=OK-43
   function=sin/asin/abs passes=b
   corners=-0.0145439298/0.0269400272/-0.75390017/0.0046982175/-0.363736932\
   /-0.2883095 params=0.2/-1/0/0/0/0 float=y inside=zmag
@@ -549,7 +549,7 @@ life's-a-beach     {;requires Fractint v19.x
   }
 
 easter95           {; Jo Weber,  CIS 100424,35
-  reset=1910 type=formula formulafile=liar.frm formulaname=f'liar1
+  reset=1910 type=formula formulafile=liar.frm formulaname=F'Liar1
   function=conj
   corners=-1.528745/2.530048/0.79603385/0.21620607/0.2107378/-1.5232766
   params=0.85/0/0/0/0/0 float=y maxiter=5000 inside=maxiter
@@ -624,13 +624,13 @@ MUSIC2             { ; Interesting music-2hrs.-toggle<o> to shorten
 
 18boftest          {
   reset=1820 type=formula formulafile=fractint.frm
-  formulaname=mandelbrot corners=-1.999997/1.999998/-1.499996/1.5
+  formulaname=Mandelbrot corners=-1.999997/1.999998/-1.499996/1.5
   params=0/0/0/0/0/0 float=y inside=bof60 colors=@default.map
   }
 
 19boftest          {
   reset=1910 type=formula formulafile=fractint.frm
-  formulaname=mandelbrot corners=-1.999997/1.999998/-1.499996/1.5
+  formulaname=Mandelbrot corners=-1.999997/1.999998/-1.499996/1.5
   params=0/0/0/0/0/0 float=y inside=bof60 colors=@default.map
   }
 
@@ -761,7 +761,7 @@ Disappearing_Moon  { ; Par and Image Copyright Lee H. Skinner, 1995
                      ; From LaceyMoon by William Jemison
                      ; Hide Color Pallette then cycle colors by 1 to kill 
                      ; moon
-  reset=1920 type=formula formulafile=fractint.frm
+  reset=1920 type=formula formulafile=new5.frm
   formulaname=shifter01 passes=1
   corners=0.357348368108/0.357379257816/0.646128963576/0.646152130857
   params=101/0/0/0/0/0 float=y maxiter=1023 inside=bof61 logmap=yes
@@ -1004,7 +1004,7 @@ Carr1313-F               {;Looks like Faceted Glass (distorted)
   }
 
 Carr1313-F-detail1 { ; Looks like Faceted Glass - detail
-  reset=1900 type=formula formulafile=newforms.frm formulaname=carr1313
+  reset=1900 type=formula formulafile=newforms.frm formulaname=Carr1313
   corners=-0.0891487598/-0.106878698/-0.0850343108/-0.0614201427/-0.106878\
   698/-0.0614201427 params=0/0/0/0/0/0 maxiter=1150 inside=bof60
   outside=real
@@ -1024,7 +1024,7 @@ Carr1328-F               {
 
 blur013            { ; A Fractal Behind Frosted Glass
                      ; Copyright Lee H. Skinner, 1993
-  reset=1720 type=formula formulafile=fractint.frm
+  reset=1720 type=formula formulafile=new5.frm
   formulaname=FractalFenderC passes=1
   corners=-0.7310449356015521/-0.7310449356014386/0.655875065832294/0.6558\
   750658323792 float=y maxiter=1023 inside=0 logmap=512

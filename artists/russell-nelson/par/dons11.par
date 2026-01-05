@@ -17,7 +17,7 @@ comment {
   }
 
 whose-fault        {
-  reset=1820 type=formula formulafile=dons.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
   function=cosh passes=t
   corners=0.2546688/-4.130987/-29.1153/28.27555/-28.87178/9.719961
   params=0.01/0.20000000000000001/0.5/0.20000000000000001 float=y
@@ -32,7 +32,7 @@ whose-fault        {
   }
 
 insight            {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-11
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-11
   function=flip/sinh passes=1
   corners=2.634669/-2.71758/-3.410488/3.468937/-2.71758/3.468937
   params=1 float=y inside=zmag potential=256/500/128
@@ -42,7 +42,7 @@ insight            {
   }
 
 three-way          {
-  reset type=formula formulafile=dons.frm formulaname=harpo
+  reset type=formula formulafile=dons.frm formulaname=Harpo
   function=exp/tan passes=b
   corners=-1.01198/1.334696/1.564289/-1.564659/1.334696/-1.564659
   params=0.20000000000000001/0/-1 float=y inside=zmag
@@ -55,7 +55,7 @@ three-way          {
   }
 
 persephone         {
-  reset=1820 type=formula formulafile=dons.frm formulaname=spcz
+  reset=1820 type=formula formulafile=dons.frm formulaname=SPCZ
   passes=b
   corners=0.8255704/3.071608/1.491783/-1.502934/3.071608/-1.502934
   float=y outside=real potential=256/256/0
@@ -77,7 +77,7 @@ adagio-dolente     {
   }
 
 slinky             {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-36
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-36
   function=tanh/exp/flip/cosxx passes=b
   corners=-2.851778/2.86116/-4.689418/-0.4047141 params=1 float=y
   potential=256/256/0
@@ -129,7 +129,7 @@ orbital-velocity   {
   }
 
 sneak-preview      {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-42
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-42
   function=sin/cotan/sinh/sinh passes=b
   corners=-7.142857/7.142857/-5.198879/5.515407
   params=0.20000000000000001/0.5 float=y potential=256/64/0 
@@ -150,7 +150,7 @@ minds-eye          {
   }
 
 quasi-elegant      {
-  reset=1820 type=formula formulafile=dons.frm formulaname=spcz
+  reset=1820 type=formula formulafile=dons.frm formulaname=SPCZ
   passes=b
   corners=-0.64252369/-0.79517531/-0.10172735/0.10180814/-0.79517531/0.101\
   80814 float=y outside=real potential=256/256/0
@@ -260,7 +260,7 @@ rose-window        {
   }
 
 blue-impact        {
-  reset=1820 type=formula formulafile=dons.frm formulaname=harpo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
   function=recip/recip passes=b
   corners=3.87507/-2.888359/-4.499962/4.517944/-2.888359/4.517944
   params=0.10000000000000001 float=y decomp=256

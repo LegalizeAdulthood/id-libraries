@@ -19,7 +19,7 @@ RecordsAreUs     { ; Use color cycling to run the juke box
   }
 
 Spotlight          { ; Modern Art
-  reset type=formula formulafile=reb001.frm formulaname=jmask
+  reset type=formula formulafile=reb001.frm formulaname=JMask
   function=log/cosh corners=-2.0/2.0/-1.5/1.5 params=0/1/-1 float=y
   maxiter=500 inside=0 potential=255/200/500
   colors=000L0e<27>00z00z11y<82>zz0zz0zy0<81>z10z00z00y01<53>M0d
@@ -41,7 +41,7 @@ PolySpirals        { ; Sand painting from an unknown tribe
   }
 
 BrainScan          { ; Alien brain
-  reset type=formula formulafile=reb001.frm formulaname=jmask
+  reset type=formula formulafile=reb001.frm formulaname=JMask
   function=sqr/tan passes=t
   corners=-0.397605/1.712159/0.761581/0.553623/0.461733/-0.384211
   params=1/0/0.3 inside=0 potential=256/300/100
@@ -51,7 +51,7 @@ BrainScan          { ; Alien brain
 
 UglyBird           { ; Only a mother could love it
   reset type=formula formulafile=reb001.frm
-  formulaname=julike corners=-2.0/2.000012/-1.500014/1.5 params=0.69/0.15
+  formulaname=Julike corners=-2.0/2.000012/-1.500014/1.5 params=0.69/0.15
   inside=0 colors=000<29>uT0wU0wU0<45>E12C03D03<29>b09c0Ac0Ac0A<36>C42
   }
 
@@ -72,7 +72,7 @@ Baroque            { ; Mandelbrot baroque
   }
 
 IcePalace          { ; On a world far away from yesterday and tomorrow
-  reset type=formula formulafile=reb001.frm formulaname=mask
+  reset type=formula formulafile=reb001.frm formulaname=Mask
   function=sinh/cotanh/tanh passes=t
   corners=-5.902821/0.097179/2.954553/-3.014855/0.097179/-3.014855
   params=1/0/1 float=y inside=0 logmap=yes potential=255/300/500
@@ -111,7 +111,7 @@ Chaos              { ; A galaxy in formation
   }
 
 Butterfly          { ; Harbinger of summer
-  reset type=formula formulafile=reb001.frm formulaname=zeepi passes=t
+  reset type=formula formulafile=reb001.frm formulaname=ZeePi passes=t
   corners=-3.351097/2.648903/4.0/-4.0/2.648903/-4.0 params=1.1/0/0.395
   float=y maxiter=1024 inside=0 outside=real logmap=yes
   colors=CCCNakK_lGYm<8>NdaOe_Qe_<10>nja<2>vTN<7>T15<11>Id_<12>14j<13>fYcj`bk`\
@@ -122,7 +122,7 @@ Butterfly          { ; Harbinger of summer
 
 Precious           { ; A silver and gold spiral
   reset type=formula formulafile=reb001.frm
-  formulaname=zeepi corners=-1.327097/0.624903/-1.846022/-0.382022
+  formulaname=ZeePi corners=-1.327097/0.624903/-1.846022/-0.382022
   params=1.3/0/0.7/0.1 float=y maxiter=1024 inside=0 outside=real
   periodicity=24 colors=000<62>mmzmmzlly<61>000000100<61>zmAzmAylA<61>000
   }
@@ -136,7 +136,7 @@ HungryAlien        { ; I'm watching you
 
 Chromosoma         { ; Chromosomes of an alien life-form
   reset type=formula formulafile=reb001.frm
-  formulaname=ikenewtmand passes=t
+  formulaname=IkeNewtMand passes=t
   corners=-1.1135523/-1.1022371/0.27940781/0.28789421 params=1.8/-0.49
   float=y inside=255
   colors=0000z00y10y30x50v80uB<2>0nO0lS0iX0f`<2>0Ym0Vq0St0Pv<2>0Gz0Ey0By09x07u\
@@ -161,7 +161,7 @@ MandelMania        { ; Mandelbrot meets Newton
 
 BallInSpiral       { ; Carved in wood look
   reset type=formula formulafile=reb001.frm
-  formulaname=jmask function=sin/cosh passes=t
+  formulaname=JMask function=sin/cosh passes=t
   corners=-0.859063/-0.110007/0.490577/1.052369 params=1/0.5/-0.92/0.3
   float=y inside=bof60
   colors=000XYK<16>VLCUKBVKB<22>qbOrcPqcP<19>WNAUM9UM9<19>hCCiBDiBDiBD<44>UM93\
@@ -169,7 +169,7 @@ BallInSpiral       { ; Carved in wood look
   }
 
 BirdShell          { ; The hatching of a bird from Hades
-  reset type=formula formulafile=reb001.frm formulaname=pseudozeepi
+  reset type=formula formulafile=reb001.frm formulaname=PseudoZeePi
   passes=t corners=-6.171687/6.372313/-5.970332/3.437668
   params=1/-2/-0.01/0.05 float=y maxiter=256 inside=bof60
   colors=0009HI<12>SHBUIAUIA<27>YbMYbNYcNYcNYbN<22>VLCUKBVKB<22>qbOrcPqcP<19>W\
@@ -179,7 +179,7 @@ BirdShell          { ; The hatching of a bird from Hades
 
 SpiralsAreUs       { ; The Medussa of spirals
   reset type=formula formulafile=reb001.frm
-  formulaname=recipike passes=t
+  formulaname=RecipIke passes=t
   corners=-0.7775/-0.7507992/0.133309/0.4037/-0.8976893/0.293614
   params=-0.3/0.5/4 float=y maxiter=256 inside=0
   colors=000oQ0<25>210000000<27>qZRs`SuaTwcUwcU<27>653432221000000<27>sh8ui9wk\

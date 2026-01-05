@@ -43,7 +43,7 @@ test               {
 test               {
   reset=1800 type=mandel
   corners=-0.68892732/-0.666138205/-0.440253624/-0.423135012
-  params=0.5/0.5 float=y maxiter=1500 colors=@000.MAP cyclerange=1/127
+  params=0.5/0.5 float=y maxiter=1500 colors=@000.map cyclerange=1/127
   }
 
 test               {
@@ -309,20 +309,20 @@ julianice!         { ; swirly
                      ; kewl enuff
   reset=1821 type=julia corners=-1.555554/1.586882/-1.188399/1.169626
   params=-0.79000000000000004/0.14499999999999999 maxiter=2000
-  inside=0 colors=@
+  inside=0
   }
 
 vroomjul           { ; swirly...inside the set
                      ; kewl enuff i guess
   reset=1821 type=julia
   corners=-0.6851141/0.6623467/-0.4930524/0.5185846
-  params=-1.2007000000000001/0.155 maxiter=3000 inside=0 colors=@
+  params=-1.2007000000000001/0.155 maxiter=3000 inside=0
   }
 
 juliadood          {
   reset=1821 type=julia corners=-2/1.999996/-1.49998/1.5
   params=0.20000000000000001/0.20000000000000001 maxiter=500
-  inside=bof61 outside=imag colors=@FLORI.MAP
+  inside=bof61 outside=imag colors=@flori.map
   }
 
 juliadood 2        {

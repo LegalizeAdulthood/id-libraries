@@ -143,4 +143,3 @@ PopCornJulCplx   { ; Jon Horner & Bradley Beacham - May 1995
       |z| < test
 }
 
-

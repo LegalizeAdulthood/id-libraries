@@ -1,16 +1,16 @@
-Here are some fractals that I created while playing with Fractint.
-**Any comments (positive or negative) would be helpful.**
-
-Note fractal 4 and 6 need the inside color set to bof60 when using 
-the formula file.
-
-Daryl N.
-
-**************************************************************************
-Compuserve mail number -> 102032,2620
-Or also on compuserve "go graphdev" and write me a message in fractal
-sources "Daryl., 102032,2620"
-**************************************************************************
+; Here are some fractals that I created while playing with Fractint.
+; **Any comments (positive or negative) would be helpful.**
+; 
+; Note fractal 4 and 6 need the inside color set to bof60 when using 
+; the formula file.
+; 
+; Daryl N.
+; 
+; **************************************************************************
+; Compuserve mail number -> 102032,2620
+; Or also on compuserve "go graphdev" and write me a message in fractal
+; sources "Daryl., 102032,2620"
+; **************************************************************************
 
 Fractal4{;Must! Press x to get to menu to set inside to bof60**
 z=c=pixel:

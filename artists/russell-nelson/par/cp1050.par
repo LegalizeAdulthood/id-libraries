@@ -29,7 +29,7 @@
 
 ckp1026            { ; "Crystal Space"
                      ; 00:01:48.76 .. 15 august 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
+  reset=1826 type=formula formulafile=inandout.frm
   formulaname=inandout03 function=recip/log
   corners=0.238915109/0.307801407/-0.025574871/0.026089853
   params=1.5/1.3 float=y potential=256/400/0
@@ -40,7 +40,7 @@ ckp1026            { ; "Crystal Space"
 
 ckp1027            { ; "Pinwheel"
                      ; 00:07:15.94 .. 15 august 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
+  reset=1826 type=formula formulafile=inandout.frm
   formulaname=inandout04 function=conj passes=2
   corners=-0.777884/0.8321795/-0.6360739/0.5714738
   params=1.01/0.29999999999999999 float=y outside=real periodicity=0
@@ -51,7 +51,7 @@ ckp1027            { ; "Pinwheel"
 
 ckp1028            { ; "Indian Feathers"
                      ; 00:07:15.94 .. 15 august 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
+  reset=1826 type=formula formulafile=inandout.frm
   formulaname=inandout04 function=conj passes=2
   corners=-0.777884/0.8321795/-0.6360739/0.5714738
   params=1.01/0.29999999999999999 float=y outside=real periodicity=0
@@ -60,7 +60,7 @@ ckp1028            { ; "Indian Feathers"
 
 ckp1029            { ; "Untitled, #1029"
                      ; 00:07:15.94 .. 15 august 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
+  reset=1826 type=formula formulafile=inandout.frm
   formulaname=inandout04 function=conj passes=2
   corners=-0.777884/0.8321795/-0.6360739/0.5714738
   params=1.01/0.29999999999999999 float=y outside=real periodicity=0
@@ -116,8 +116,8 @@ ckp1034            { ; "Sunday Morning, after Saturday Night"
 
 ckp1035            { ; "Rosewind Flower"
                      ; 00:03:35.58 .. 31 august 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=f'm-setinnewtonc function=conj passes=2
+  reset=1826 type=formula formulafile=fractint.frm
+  formulaname=F'M-SetInNewtonC function=conj passes=2
   corners=-7.749592/1.161077/-10.33927/10.52111/-14.55474/-1.265745
   params=6/0/0.019990000000000001 float=y maxiter=512 inside=0
   logmap=3
@@ -161,8 +161,8 @@ ckp1038            { ; "Brown Bear, with Tie"
 
 ckp1039            { ; "Crystal Rose"
                      ; 00:05:57.57 .. 05 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=f'm-setinnewtonc function=conj passes=2
+  reset=1826 type=formula formulafile=fractint.frm
+  formulaname=F'M-SetInNewtonC function=conj passes=2
   corners=-3.096869/0.4975935/-3.830345/4.584502/-5.841989/-0.170185
   params=6/0/0.019990000000000001 float=y maxiter=512 inside=0
   logmap=3
@@ -173,8 +173,8 @@ ckp1039            { ; "Crystal Rose"
 
 ckp1040            { ; "BenoitSpider Web"
                      ; 00:09:32.99 .. 06 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=f'm-setinnewtonc function=conj passes=2
+  reset=1826 type=formula formulafile=fractint.frm
+  formulaname=F'M-SetInNewtonC function=conj passes=2
   corners=-1.7281841/-1.2393372/0.68812252/1.8325417/-2.1015204/1.1859043
   params=6/0/0.019990000000000001 float=y maxiter=512 inside=0
   logmap=3
@@ -205,7 +205,7 @@ ckp1041            { ; "Green Wave"
 
 ckp1042            { ; "HypNautilus"
                      ; 00:06:13.16 .. 09 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
+  reset=1826 type=formula formulafile=inandout.frm
   formulaname=inandout04 function=tan
   corners=0.5146426/-0.7161823/-0.8237343/0.8173655/-0.7161823/0.8173655
   params=1/0.33000000000000002/0.5 float=y inside=zmag decomp=256
@@ -214,8 +214,8 @@ ckp1042            { ; "HypNautilus"
 
 ckp1043            { ; "Mustache Moths"
                      ; 00:24:10.91 .. 24 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=cgnewtonsinexp
+  reset=1826 type=formula formulafile=fract01.frm
+  formulaname=CGNewtonSinExp
   corners=-1.5792977623/-1.5787874628/-0.00014941074091/0.00014956087433
   params=1.5008900000000001/-0.050000000000000003 float=y
   maxiter=32767 bailout=2000 inside=0
@@ -229,8 +229,8 @@ ckp1043            { ; "Mustache Moths"
 
 ckp1044            { ; "Interference Patterns"
                      ; 00:38:43.02 .. 24 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=cgnewtonsinexp
+  reset=1826 type=formula formulafile=fract01.frm
+  formulaname=CGNewtonSinExp
   corners=-1.5790752318/-1.5789690895/-3.1017981275e-005/3.1168114695e-005
   params=1.5008900000000001/-0.050000000000000003 float=y
   maxiter=32767 bailout=2000 inside=0
@@ -244,8 +244,8 @@ ckp1044            { ; "Interference Patterns"
 
 ckp1045            { ; "Fantasy Trellis"
                      ; 00:13:03.89 .. 25 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=cgnewtonsinexp
+  reset=1826 type=formula formulafile=fract01.frm
+  formulaname=CGNewtonSinExp
   corners=-9.461868/-6.694862/1.440995/-1.440995/-6.694862/-1.440995
   params=1/-0.050000000000000003 float=y maxiter=32767 bailout=2000
   inside=0
@@ -257,8 +257,8 @@ ckp1045            { ; "Fantasy Trellis"
 
 ckp1046            { ; "Fantasy Web"
                      ; 00:13:03.89 .. 25 september 1994 .. caren park
-  reset=1826 type=formula formulafile=formulas.frm
-  formulaname=cgnewtonsinexp
+  reset=1826 type=formula formulafile=fract01.frm
+  formulaname=CGNewtonSinExp
   corners=-9.461868/-6.694862/1.440995/-1.440995/-6.694862/-1.440995
   params=1/-0.050000000000000003 float=y maxiter=32767 bailout=2000
   inside=0

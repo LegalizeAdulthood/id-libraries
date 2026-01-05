@@ -1,3 +1,4 @@
+{
 Some years back, Al Einstein and I were graduate students together.
 We were both chronically short of coins. We devised a scheme to rip
 off a BINGO game at the local Olde Folk's Home. We tried formula
@@ -372,7 +373,8 @@ z=(exp(z)*1/c)/(pixel-c*c);
 |real(z)| <=100
 }
 
-Carr1247 FractalFenderC modified(XAXIS_NOPARM) {;Modified Lee Skinner frm.
+Carr1247 (XAXIS_NOPARM) {;FractalFenderC modified
+; Modified Lee Skinner frm.
 z=(pixel)/(5.8,2.01),
 x=|real(z)|,c=cosxx(sqr(1/pixel)):
 (z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
@@ -381,7 +383,8 @@ x=|real(z)|,
 x<=4 
 }
 
-Carr1248 FractalFenderC modified(XAXIS_NOPARM) {;Modified Lee Skinner frm.
+Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
+;Modified Lee Skinner frm.
 z=imag(sqr(pixel)),
 x=|real(z)|,c=cosxx(sqr(pixel)):
 (z=imag(cosxx(z)+pixel))*(1<x)+(z=z)*(x<=1),

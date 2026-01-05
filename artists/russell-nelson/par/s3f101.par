@@ -1,28 +1,28 @@
-			=   NOTE on timings in this file - from Jon Horner :                       =
-  =                                                                          =
-  =   These timings are not shown for macho reasons,  but in the hope that   =
-  =   others will add/contribute information about timings with  different   =
-  =   CPU/FPU combinations.  This will help pinpoint the r-e-a-l-l-y sloow   =
-  =   stuff,  where it might make more sense to distribute the .GIF rather   =
-  =   than the .PAR.  It could also be useful for finding out  the  extent   =
-  =   to which factors other than CPU/FPU influence the speed - e.g. diff-   =
-  =   erent video cards coupled with the *same* CPU/FPU.                     =
-  =                                                                          =
-  =   In order to minimize space in the .PAR set, I suggest a code - viz.:   =
-  =                                                                          =
-  =     CPU     CLOCK        FPU       RES & COLS                            =
-  =    XT = X | 8Mhz = 8 | NONE = NO | Per        | Fractint = 160 | Time    =
-  =   286 = 2 |  etc.    | AMD  = A1 | Fractint   | version  = 171 |         =
-  =   386 = 3 |          | INTEL= I1 | video      | number   = 172 |         =
-  =   486 = 4 |          | IIT  = I2 | table      | see note       |         =
-  =   SX add X           | CYRIX= CY |                                       =
-  =                      | ULSI = U1 |                                       =
-  =                                                                          =
-  =   so typical data might be:  4|33|I1|SF5|172 1m47.37s  (may drop 10ths)  =
-  =                                                                          =
-  =   Note: it's important to record the Fractint version so as to separate  =
-  =   improvements due to hardware from those due to SSG speedups.           =
-  ============================================================================
+; =   NOTE on timings in this file - from Jon Horner :                       =
+; =                                                                          =
+; =   These timings are not shown for macho reasons,  but in the hope that   =
+; =   others will add/contribute information about timings with  different   =
+; =   CPU/FPU combinations.  This will help pinpoint the r-e-a-l-l-y sloow   =
+; =   stuff,  where it might make more sense to distribute the .GIF rather   =
+; =   than the .PAR.  It could also be useful for finding out  the  extent   =
+; =   to which factors other than CPU/FPU influence the speed - e.g. diff-   =
+; =   erent video cards coupled with the *same* CPU/FPU.                     =
+; =                                                                          =
+; =   In order to minimize space in the .PAR set, I suggest a code - viz.:   =
+; =                                                                          =
+; =     CPU     CLOCK        FPU       RES & COLS                            =
+; =    XT = X | 8Mhz = 8 | NONE = NO | Per        | Fractint = 160 | Time    =
+; =   286 = 2 |  etc.    | AMD  = A1 | Fractint   | version  = 171 |         =
+; =   386 = 3 |          | INTEL= I1 | video      | number   = 172 |         =
+; =   486 = 4 |          | IIT  = I2 | table      | see note       |         =
+; =   SX add X           | CYRIX= CY |                                       =
+; =                      | ULSI = U1 |                                       =
+; =                                                                          =
+; =   so typical data might be:  4|33|I1|SF5|172 1m47.37s  (may drop 10ths)  =
+; =                                                                          =
+; =   Note: it's important to record the Fractint version so as to separate  =
+; =   improvements due to hardware from those due to SSG speedups.           =
+; ============================================================================
 
 
 s3f001             { ; (c) 1993, Richard H. Sherry, CIS:76264,752  
@@ -47,7 +47,7 @@ s3f101             { ; 3X|18|CY|SF5|180  00h03m46.42s
 
 s3f102             { ; 3X|18|CY|SF5|180  00h11m30.34s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Cubic
+  reset=1800 type=formula formulaname=Cubic formulafile=fractint.frm
   corners=-2.345889/2.396046/3.16129/-3.16129/2.396046/-3.16129
   params=5/0/3 float=y maxiter=256 inside=0 potential=253/250/0
   colors=000JSj<146>B84IIp<6>HGk<3>D`VBfQBeP<12>0I0<14>5hL6jN8iQ<8>SWy<2>N\
@@ -56,7 +56,7 @@ s3f102             { ; 3X|18|CY|SF5|180  00h11m30.34s
 
 s3f103             { ; 3X|18|CY|SF5|180  00h02m49.15s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=FnDog
+  reset=1800 type=formula formulaname=FnDog formulafile=fractint.frm
   function=exp passes=b
   corners=-16.98062/1.139384/12.22433/-11.93567/1.139384/-11.93567
   params=2 float=y maxiter=255 fillcolor=253 inside=253
@@ -68,7 +68,7 @@ s3f103             { ; 3X|18|CY|SF5|180  00h02m49.15s
 
 s3f104             { ; 3X|18|CY|SF5|180  00h03m22.33s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=FnDog
+  reset=1800 type=formula formulaname=FnDog formulafile=fractint.frm
   function=log
   corners=0.763940429/2.33194328/1.15814638/-1.13444696/2.42886626/-1.0617\
   5472 params=2 float=y maxiter=255 fillcolor=253 inside=253
@@ -79,7 +79,7 @@ s3f104             { ; 3X|18|CY|SF5|180  00h03m22.33s
 
 s3f105             { ; 3X|18|CY|SF5|180  00h05m04.87s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=FnDog
+  reset=1800 type=formula formulaname=FnDog formulafile=fractint.frm
   function=cos corners=2.661831/1.281831/-0.92/0.92/1.281831/0.92
   float=y maxiter=255 fillcolor=253 inside=253 potential=253/400/0
   colors=000tWg<14>l4Il3Hm6J<3>pGQpJSpKTqLU<13>ztrWvE<21>yvrtaA<21>zvq4Vp<\
@@ -89,7 +89,7 @@ s3f105             { ; 3X|18|CY|SF5|180  00h05m04.87s
 
 s3f106             { ; 3X|18|CY|SF5|180  00h03m52.89s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=FnDog
+  reset=1800 type=formula formulaname=FnDog formulafile=fractint.frm
   function=cotanh
   corners=4.219283/-4.146967/-5.622492/5.532508/-4.146967/5.532508
   float=y maxiter=255 fillcolor=253 inside=253 potential=253/400/0
@@ -99,7 +99,7 @@ s3f106             { ; 3X|18|CY|SF5|180  00h03m52.89s
 
 s3f107             { ; 3X|18|CY|SF5|180  00h18m53.89s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=ZZ
+  reset=1800 type=formula formulaname=ZZ formulafile=fractint.frm
   corners=0.5318369/5.219337/3.125/-3.125/5.219337/-3.125 params=3/0/1
   float=y maxiter=256 inside=0 potential=253/250/0
   colors=000DH79G6D3K<4>7D88FZ<10>6F8MBE<14>7F6GGF<7>7F7z3R<8>BE8J50<2>9D5\
@@ -112,7 +112,7 @@ s3f107             { ; 3X|18|CY|SF5|180  00h18m53.89s
 s3f108             { ; 3X|18|CY|SF5|180  00h13m05.97s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
   reset=1800 type=formula 
-  formulaname=Richard8
+ formulaname=Richard8 formulafile=fractint.frm
   corners=0.55743349/0.95743349/0.95229645/1.2522965 params=3/0/6
   float=y maxiter=256 inside=0 potential=253/250/0
   colors=000ube<6>ztrWvE<21>yvrtaA<21>zvq4Vp<9>utsqDs<17>ztsstt<11>zvstTO<\
@@ -130,7 +130,7 @@ s3f109             { ; 3X|18|CY|SF5|180  05h20m37.65s
 
 s3f110             { ; 3X|18|CY|SF5|180  00h39m13.56s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cotanh
   corners=-0.7994975/4.360503/3.44/-3.44/4.360503/-3.44
   params=3.1499999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -142,7 +142,7 @@ s3f110             { ; 3X|18|CY|SF5|180  00h39m13.56s
 
 s3f111             { ; 3X|18|CY|SF5|180  00h22m55.61s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cotanh passes=1
   corners=1.449649/3.1670554/3.0690572/0.76393183/3.2726911/0.64960219
   params=3.1499999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -153,7 +153,7 @@ s3f111             { ; 3X|18|CY|SF5|180  00h22m55.61s
 
 s3f112             { ; 3X|18|CY|SF5|180  00h22m03.15s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cotanh passes=1
   corners=2.17131738/2.52853792/3.11648673/2.63702065/2.55051014/2.6132400\
   9 params=3.1499999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -165,7 +165,7 @@ s3f112             { ; 3X|18|CY|SF5|180  00h22m03.15s
 
 s3f113             { ; 3X|18|CY|SF5|180  00h04m12.71s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=exp
   corners=-2.947272/5.306148/5.50228/-5.50228/5.306148/-5.50228
   params=3.1499999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -177,7 +177,7 @@ s3f113             { ; 3X|18|CY|SF5|180  00h04m12.71s
 
 s3f114             { ; 3X|18|CY|SF5|180  00h03m49.75s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_25
+  reset=1800 type=formula formulaname=Jm_25 formulafile=fractint.frm
   function=log/sin
   corners=1.571875/-0.1321252/-1.136/1.136/-0.1321252/1.136
   params=-0.31416699999999997/0/1.2154 float=y maxiter=256
@@ -188,7 +188,7 @@ s3f114             { ; 3X|18|CY|SF5|180  00h03m49.75s
 
 s3f115             { ; 3X|18|CY|SF5|180  00h03m24.43s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_25
+  reset=1800 type=formula formulaname=Jm_25 formulafile=fractint.frm
   function=cos/cosxx corners=-4.343817/4.967659/-3.491803/3.491803
   params=-0.31416699999999997/0/1.2154 float=y maxiter=256
   fillcolor=253 inside=253 potential=253/250/0
@@ -200,7 +200,7 @@ s3f115             { ; 3X|18|CY|SF5|180  00h03m24.43s
 
 s3f116             { ; 3X|18|CY|SF5|180  00h06m30.90s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_25
+  reset=1800 type=formula formulaname=Jm_25 formulafile=fractint.frm
   function=cos/cosxx passes=b
   corners=-1.80616125/-1.1536608/-1.2252371/-0.52869375/-1.90560188/-1.092\
   6496 params=-0.31416699999999997/0/1.2154 float=y maxiter=256
@@ -211,7 +211,7 @@ s3f116             { ; 3X|18|CY|SF5|180  00h06m30.90s
 
 s3f117             { ; 3X|18|CY|SF5|180  00h09m32.49s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cosxx passes=b
   corners=-1.708888/-0.6170317/0.727904/-0.727904/-0.6170317/-0.727904
   params=-1.0149999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -223,7 +223,7 @@ s3f117             { ; 3X|18|CY|SF5|180  00h09m32.49s
 
 s3f118             { ; 3X|18|CY|SF5|180  00h10m07.03s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cosxx passes=2
   corners=-1.509322/-1.4001364/0.0727904/-0.0727904/-1.4001364/-0.0727904
   params=-1.0149999999999999/0/1.5 float=y maxiter=256 fillcolor=253
@@ -235,7 +235,7 @@ s3f118             { ; 3X|18|CY|SF5|180  00h10m07.03s
 
 s3f119             { ; 3X|18|CY|SF5|180  00h12m46.16s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_20
+  reset=1800 type=formula formulaname=Jm_20 formulafile=fractint.frm
   function=cosxx passes=1
   corners=-1.44707887/-1.42043758/0.075742569/0.0402208538/-1.42043758/0.0\
   402208538 params=-1.0149999999999999/0/1.5 float=y maxiter=256
@@ -246,7 +246,7 @@ s3f119             { ; 3X|18|CY|SF5|180  00h12m46.16s
 
 s3f120             { ; 3X|18|CY|SF5|180  00h17m00.02s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=sinh/cos/log
   corners=0.79617555/-0.043824451/-0.56/0.56/-0.043824451/0.56
   params=-3.14167/0/2.2153999999999998 float=y maxiter=256
@@ -258,7 +258,7 @@ s3f120             { ; 3X|18|CY|SF5|180  00h17m00.02s
 
 s3f121             { ; 3X|18|CY|SF5|180  00h09m57.76s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=sinh/cos/log
   corners=1.33749345/1.26437985/-0.0487424/0.0487424/1.26437985/0.0487424
   params=-3.14167/0/2.2153999999999998 float=y maxiter=256
@@ -271,7 +271,7 @@ s3f121             { ; 3X|18|CY|SF5|180  00h09m57.76s
 
 s3f122             { ; 3X|18|CY|SF5|180  00h09m58.20s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=sinh/cos/log passes=b
   corners=1.304211985/1.302904129/-0.0008719040512/0.0008719040512/1.30290\
   4129/0.0008719040512 params=-3.14167/0/2.2153999999999998 float=y
@@ -284,7 +284,7 @@ s3f122             { ; 3X|18|CY|SF5|180  00h09m58.20s
 
 s3f123             { ; 3X|18|CY|SF5|180  00h06m13.48s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=cosh/exp/sinh
   corners=-3.112457/6.367543/6.32/-6.32/6.367543/-6.32
   params=4.1500000000000004/0/-4.1500000000000004 float=y maxiter=256
@@ -296,7 +296,7 @@ s3f123             { ; 3X|18|CY|SF5|180  00h06m13.48s
 
 s3f124             { ; 3X|18|CY|SF5|180  00h06m08.84s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=cosh/exp/sinh passes=b
   corners=0.070259583/-0.44615685/-3.5784658/-5.4243169/0.77035821/-4.5119\
   307 params=4.1500000000000004/0/-4.1500000000000004 float=y
@@ -309,7 +309,7 @@ s3f124             { ; 3X|18|CY|SF5|180  00h06m08.84s
 
 s3f125             { ; 3X|18|CY|SF5|180  00h06m52.80s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=cosh/exp/sinh passes=b
   corners=-0.483561814/-0.664385517/-4.17642458/-4.2399959/-0.518144116/-4\
   .13031485 params=4.1500000000000004/0/-4.1500000000000004 float=y
@@ -322,7 +322,7 @@ s3f125             { ; 3X|18|CY|SF5|180  00h06m52.80s
 
 s3f126             { ; 3X|18|CY|SF5|180  00h12m17.65s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=exp/tan/cosxx passes=t
   corners=1.541527/-2.527598/-2.533692/2.891808/-2.527598/2.891808
   params=-1.5/0/1.1000000000000001 float=y maxiter=256 fillcolor=253
@@ -333,7 +333,7 @@ s3f126             { ; 3X|18|CY|SF5|180  00h12m17.65s
 
 s3f127             { ; 3X|18|CY|SF5|180  00h30m15.01s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=exp/tan/cosxx
   corners=0.12176155/0.54156498/0.28062426/-0.27911365/0.54156498/-0.27911\
   365 params=-1.5/0/1.1000000000000001 float=y maxiter=256
@@ -347,7 +347,7 @@ s3f127             { ; 3X|18|CY|SF5|180  00h30m15.01s
 
 s3f128             { ; 3X|18|CY|SF5|180  00h06m14.32s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=log/tanh/cosh passes=t
   corners=-0.97343911/-0.98721674/0.83869935/1.2607116/-1.18096495/1.11540\
   05 params=-1.5/0/1.1000000000000001 float=y maxiter=256
@@ -358,7 +358,7 @@ s3f128             { ; 3X|18|CY|SF5|180  00h06m14.32s
 
 s3f129             { ; 3X|18|CY|SF5|180  00h05m10.15s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=ident/cotan/exp passes=b corners=-2/2/-1.5/1.5 float=y
   maxiter=256 fillcolor=253 inside=253 potential=253/250/0
   invert=1/0/0
@@ -372,7 +372,7 @@ s3f129             { ; 3X|18|CY|SF5|180  00h05m10.15s
 
 s3f130             { ; 3X|18|CY|SF5|180  00h28m59.39s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=ident/cotan/exp
   corners=0.82102034/1.4450203/0.416/-0.416/1.4450203/-0.416 float=y
   maxiter=256 fillcolor=253 inside=253 potential=253/250/0
@@ -383,7 +383,7 @@ s3f130             { ; 3X|18|CY|SF5|180  00h28m59.39s
 
 s3f131             { ; 3X|18|CY|SF5|180  00h15m22.99s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Gamma
+  reset=1800 type=formula formulaname=Gamma formulafile=fractint.frm
   corners=-3.353686/-1.992138/0.9076983/-0.9076983/-1.992138/-0.9076983
   params=57/0/-32 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/250/0
@@ -393,7 +393,7 @@ s3f131             { ; 3X|18|CY|SF5|180  00h15m22.99s
 
 s3f132             { ; 3X|18|CY|SF5|180  00h13m51.88s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Gamma
+  reset=1800 type=formula formulaname=Gamma formulafile=fractint.frm
   corners=-2.5269782/-2.43513365/0.061229696/-0.061229696/-2.43513365/-0.0\
   61229696 params=57/0/-32 float=y maxiter=256 fillcolor=253
   inside=253 potential=253/250/0
@@ -404,7 +404,7 @@ s3f132             { ; 3X|18|CY|SF5|180  00h13m51.88s
 
 s3f133             { ; 3X|18|CY|SF5|180  00h14m21.28s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_19
+  reset=1800 type=formula formulaname=Jm_19 formulafile=fractint.frm
   function=sinh/cos/log
   corners=1.307896487/1.301608717/-0.0041918464/0.0041918464/1.301608717/0\
   .0041918464 params=-3.14167/0/2.2153999999999998 float=y maxiter=256
@@ -416,7 +416,7 @@ s3f133             { ; 3X|18|CY|SF5|180  00h14m21.28s
 
 s3f134             { ; 3X|18|CY|SF5|180  00h08m06.97s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_18
+  reset=1800 type=formula formulaname=Jm_18 formulafile=fractint.frm
   function=sin/cosxx/conj
   corners=-5.348837/5.348837/-4.011628/4.011628
   params=-0.31416699999999997/0.20000000000000001/2.0145/0.299999999999999\
@@ -428,7 +428,7 @@ s3f134             { ; 3X|18|CY|SF5|180  00h08m06.97s
 
 s3f135             { ; 3X|18|CY|SF5|180  00h09m22.55s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_18
+  reset=1800 type=formula formulaname=Jm_18 formulafile=fractint.frm
   function=sin/cosxx/conj
   corners=3.4247648/3.233347/-0.15228416/0.15307026/3.233347/0.15307026
   params=-0.31416699999999997/0.20000000000000001/2.0145/0.299999999999999\
@@ -439,7 +439,7 @@ s3f135             { ; 3X|18|CY|SF5|180  00h09m22.55s
 
 s3f136             { ; 3X|18|CY|SF5|180  00h09m05.35s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_14
+  reset=1800 type=formula formulaname=Jm_14 formulafile=fractint.frm
   function=sin/sinh/log
   corners=-0.3136238/1.405446/1.146047/-1.146047/1.405446/-1.146047
   params=-0.30141669999999998/0.251/1.0214000000000001/-0.2014700000000000\
@@ -459,7 +459,7 @@ s3f136             { ; 3X|18|CY|SF5|180  00h09m05.35s
 
 s3f137             { ; 3X|18|CY|SF5|180  00h08m32.29s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Jm_14
+  reset=1800 type=formula formulaname=Jm_14 formulafile=fractint.frm
   function=sin/sinh/log
   corners=0.54559454/0.79790814/-0.0946176/0.0946176
   params=-0.30141669999999998/0.251/1.0214000000000001/-0.2014700000000000\
@@ -503,7 +503,7 @@ s3f141             { ; 3X|18|CY|SF5|180  00h19m59.96s
 
 s3f142             { ; 3X|18|CY|SF5|180  00h05m08.69s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_09
+  reset type=formula formulaname=Jm_09 formulafile=fractint.frm
   function=sin/conj/sinh/cosh
   corners=2.083384/-0.08906003/-0.9710086/0.9438714/-0.08906003/0.9438714
   params=-0.29999999999999999/21/4/1 float=y bailout=512 fillcolor=253
@@ -515,7 +515,7 @@ s3f142             { ; 3X|18|CY|SF5|180  00h05m08.69s
 
 s3f145             { ; 3X|18|CY|SF5|180  00h01m38.43s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_04
+  reset type=formula formulaname=Jm_04 formulafile=fractint.frm
   function=cosxx/sinh/sqr/tanh
   corners=-2.336449/2.336449/-1.752336/1.752336
   params=-3.1539999999999999/0/5.5549999999999997 float=y bailout=512
@@ -531,7 +531,7 @@ s3f145             { ; 3X|18|CY|SF5|180  00h01m38.43s
 
 s3f149             { ; 3X|18|CY|SF5|180  00h02m59.22s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Halley
+  reset type=formula formulaname=Halley formulafile=fractint.frm
   corners=-2/2/-1.5/1.5
   params=1.1124000000000001/0/2.0124499999999999/0.29999999999999999
   float=y bailout=512 fillcolor=253 inside=253 potential=253/500/0
@@ -545,7 +545,7 @@ s3f149             { ; 3X|18|CY|SF5|180  00h02m59.22s
 
 s3f150             { ; 3X|18|CY|SF5|180  00h13m10.59s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Fzppfnse
+  reset type=formula formulaname=Fzppfnse formulafile=fractint.frm
   function=cosxx
   corners=-1.387514/1.742905/2.111216/-2.062675/1.742905/-2.062675
   params=-0.29999999999999999/0/6 float=y bailout=512 fillcolor=253
@@ -558,7 +558,7 @@ s3f150             { ; 3X|18|CY|SF5|180  00h13m10.59s
 
 s3f138             { ; 3X|18|CY|SF5|180  00h19m09.98s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Gamma
+  reset=1800 type=formula formulaname=Gamma formulafile=fractint.frm
   passes=b
   corners=-1.162991787/-1.144375229/0.5750363006/0.591722336/-1.164299123/\
   0.5767794155 params=0.31415670000000001/-5.2214 float=y maxiter=256
@@ -634,7 +634,7 @@ s3f151             { ; 3X|18|CY|SF5|180  00h05m27.76s
 
 s3f152             { ; 3X|18|CY|SF5|180  00h26m55.90s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Fzpcopcs
+  reset type=formula formulaname=Fzpcopcs formulafile=skinner.frm
   corners=-0.99927273/-0.45527273/1.7256482/2.1336482 params=1/0/3
   float=y maxiter=256 fillcolor=253 inside=bof60 outside=real
   potential=253/400/0 biomorph=0
@@ -669,7 +669,7 @@ s3f154             { ; 3X|18|CY|SF5|180  00h21m04.62s
 
 s3f155             { ; 3X|18|CY|SF5|180  00h19m28.93s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_02
+  reset type=formula formulaname=Jm_02 formulafile=fractint.frm
   function=tan
   corners=0.37582449571/0.37485469841/-0.8225979709/-0.8145485413/0.371611\
   64249/-0.8169808332 params=-0.31416699999999997 float=y bailout=512
@@ -704,7 +704,7 @@ s3f157             { ; 3X|18|CY|SF5|180  00h04m24.67s
 
 s3f158             { ; 3X|18|CY|SF5|180  00h05m26.15s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_ducks
+  reset type=formula formulaname=Jm_ducks formulafile=fractint.frm
   passes=t corners=-0.86995305/-0.66995305/-1.0395094/-0.88950939
   params=1/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/400/0
@@ -717,7 +717,7 @@ s3f158             { ; 3X|18|CY|SF5|180  00h05m26.15s
 
 s3f159             { ; 3X|18|CY|SF5|180  00h12m13.43s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_12
+  reset type=formula formulaname=Jm_12 formulafile=fractint.frm
   function=cosh/exp/sinh
   corners=0.11605865/0.96515032/-3.26619739/-3.34990197/0.46190985/-3.7273\
   3232 params=-0.29999999999999999/0/2 float=y maxiter=256
@@ -729,8 +729,8 @@ s3f159             { ; 3X|18|CY|SF5|180  00h12m13.43s
 
 s3f160             { ; 3X|18|CY|SF5|180  00h09m53.44s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderC function=cosh/sqr passes=b
+  reset=1800 type=formula formulafile=fractnt4.frm
+ formulaname=FractalFenderC function=cosh/sqr passes=b
   corners=0.24669181/0.72654181/0.32272463/-0.31707537/0.72654181/-0.31707\
   537 params=0/0/4 float=y maxiter=256 fillcolor=253 inside=253
   decomp=256
@@ -740,7 +740,7 @@ s3f160             { ; 3X|18|CY|SF5|180  00h09m53.44s
 
 s3f161             { ; 3X|18|CY|SF5|180  00h04m11.98s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_12
+  reset type=formula formulaname=Jm_12 formulafile=fractint.frm
   function=exp/ident/log
   corners=-1.0096346/-0.48423361/-5.8292802/-5.5057069/-1.6243961/-6.51636\
   73 params=-0.29999999999999999/0/2 float=y maxiter=256 fillcolor=253
@@ -752,7 +752,7 @@ s3f161             { ; 3X|18|CY|SF5|180  00h04m11.98s
 
 s3f162             { ; 3X|18|CY|SF5|180  00h04m11.70s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=exp/cos/log/cosh passes=b
   corners=-2.0315781/-1.4966828/0.56701677/0.14715129/-1.6374803/0.0415531\
   22 params=-0.251/0/4 float=y maxiter=256 fillcolor=253 inside=253
@@ -763,7 +763,7 @@ s3f162             { ; 3X|18|CY|SF5|180  00h04m11.70s
 
 s3f163             { ; 3X|18|CY|SF5|180  00h08m38.35s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cos/tan/ident/exp
   corners=-7.347802/5.059237/5.008291/-4.730601/1.7934/-7.179979
   params=4/0/-0.84999999999999998 float=y maxiter=256 fillcolor=253
@@ -774,7 +774,7 @@ s3f163             { ; 3X|18|CY|SF5|180  00h08m38.35s
 
 s3f164             { ; 3X|18|CY|SF5|180  00h27m19.73s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cos/tan/ident/exp
   corners=-0.40998855/-1.1409188/2.403815/-0.2087826/0.58092348/1.082599
   params=4/0/-0.84999999999999998 float=y maxiter=256 fillcolor=253
@@ -785,7 +785,7 @@ s3f164             { ; 3X|18|CY|SF5|180  00h27m19.73s
 
 s3f165             { ; 3X|18|CY|SF5|180  00h09m46.28s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_02
+  reset type=formula formulaname=Jm_02 formulafile=fractint.frm
   function=tan
   corners=0.3863486144/0.3766506414/-0.856084356/-0.775590061/0.3442200821\
   /-0.79991298 params=-0.31416699999999997 float=y bailout=512
@@ -799,7 +799,7 @@ s3f165             { ; 3X|18|CY|SF5|180  00h09m46.28s
 
 s3f166             { ; 3X|18|CY|SF5|180  00h24m39.91s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cotan/sin/cos/tanh
   corners=5.024989/-5.024989/-6.699986/6.699986/-5.024989/6.699986
   params=2.5/0/-1 float=y maxiter=256 fillcolor=253 inside=253
@@ -811,7 +811,7 @@ s3f166             { ; 3X|18|CY|SF5|180  00h24m39.91s
 
 s3f167             { ; 3X|18|CY|SF5|180  00h22m39.58s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cotan/sin/cos/tanh
   corners=-1.875996/1.875996/1.801447/4.615441 params=2.5/0/-1 float=y
   maxiter=256 fillcolor=253 inside=253 potential=253/250/0
@@ -823,7 +823,7 @@ s3f167             { ; 3X|18|CY|SF5|180  00h22m39.58s
 
 s3f168             { ; 3X|18|CY|SF5|180  00h09m36.77s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cotan/sin/cos/tanh passes=1
   corners=-0.9832685/0.06728925/2.1565153/2.9444336 params=2.5/0/-1
   float=y maxiter=256 fillcolor=253 inside=253 potential=253/250/0
@@ -835,7 +835,7 @@ s3f168             { ; 3X|18|CY|SF5|180  00h09m36.77s
 
 s3f169             { ; 3X|18|CY|SF5|180  00h03m27.48s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_11a
+  reset type=formula formulaname=Jm_11a formulafile=fractint.frm
   function=cotan/sin/cos/tanh passes=b
   corners=-0.042562503/0.25159367/3.4447441/3.6653612 params=2.5/0/-1
   float=y maxiter=256 fillcolor=253 inside=253 potential=253/250/0
@@ -848,7 +848,7 @@ s3f169             { ; 3X|18|CY|SF5|180  00h03m27.48s
 
 s3f170             { ; 3X|18|CY|SF5|180  00h13m51.88s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Gamma
+  reset=1800 type=formula formulaname=Gamma formulafile=fractint.frm
   corners=-2.5269782/-2.43513365/0.061229696/-0.061229696/-2.43513365/-0.0\
   61229696 params=57/0/-32 float=y maxiter=256 fillcolor=253
   inside=253 potential=253/250/0
@@ -863,7 +863,7 @@ s3f170             { ; 3X|18|CY|SF5|180  00h13m51.88s
 
 s3f171             { ; 3X|18|CY|SF5|180  00h13m13.61s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Gamma
+  reset=1800 type=formula formulaname=Gamma formulafile=fractint.frm
   corners=-2.4929282958/-2.4861555351/0.0252329295/0.02866447417/-2.492137\
   2434/0.02417819294 params=57/0/-32 float=y maxiter=256 fillcolor=253
   inside=253 potential=253/400/0
@@ -878,8 +878,8 @@ s3f171             { ; 3X|18|CY|SF5|180  00h13m13.61s
 
 s3f172             { ; 3X|18|CY|SF5|180  00h03m31.00s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=Fzppfnth function=exp passes=b
+  reset=1800 type=formula formulafile=fractint.frm
+ formulaname=Fzppfnth function=exp passes=b
   corners=-0.0254447713/0.160369633/4.859603519/4.986689954/-0.01955307499\
   /4.851747924 params=4/0/6 float=y maxiter=256 fillcolor=253
   inside=253 potential=253/400/0 invert=0.7/0/0
@@ -901,8 +901,8 @@ s3f173             { ; 3X|18|CY|SF5|180  00h14m07.81s
 
 s3f174             { ; 3X|18|CY|SF5|180  00h03m21.89s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=Fzppfnth function=exp passes=b
+  reset=1800 type=formula formulafile=fractint.frm
+ formulaname=Fzppfnth function=exp passes=b
   corners=0.09150893412/0.108278644/4.92766395/4.95903115/0.08248977316/4.\
   93968949 params=4/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/400/0 invert=0.7/0/0
@@ -913,8 +913,8 @@ s3f174             { ; 3X|18|CY|SF5|180  00h03m21.89s
 
 s3f175             { ; 3X|18|CY|SF5|180  00h05m03.71s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=Fzppfnta function=recip
+  reset=1800 type=formula formulafile=fractint.frm
+ formulaname=Fzppfnta function=recip
   corners=12.7826/4.759344/-5.348837/5.348837/4.759344/5.348837
   params=-0.29999999999999999/0/2 float=y maxiter=256 fillcolor=253
   inside=253 potential=253/400/0
@@ -924,8 +924,8 @@ s3f175             { ; 3X|18|CY|SF5|180  00h05m03.71s
 
 s3f176             { ; 3X|18|CY|SF5|180  00h05m28.07s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=Fzppfnsr function=exp passes=b
+  reset=1800 type=formula formulafile=fractint.frm
+ formulaname=Fzppfnsr function=exp passes=b
   corners=-1.3263306/-0.47937538/2.398115/4.647814/-2.101282/3.431384
   params=4/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/400/0
@@ -935,8 +935,8 @@ s3f176             { ; 3X|18|CY|SF5|180  00h05m28.07s
 
 s3f177             { ; 3X|18|CY|SF5|180  00h06m08.32s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=Fzppfnsr function=exp
+  reset=1800 type=formula formulafile=fractint.frm
+ formulaname=Fzppfnsr function=exp
   corners=-1.3263306/-0.47937538/2.398115/4.647814/-2.101282/3.431384
   params=4/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/400/0
@@ -947,7 +947,7 @@ s3f177             { ; 3X|18|CY|SF5|180  00h06m08.32s
 
 s3f178             { ; 3X|18|CY|SF5|180  00h14m19.26s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Jm_02
+  reset type=formula formulaname=Jm_02 formulafile=fractint.frm
   function=sqr passes=b
   corners=0.145014264/0.298979435/-0.663625564/-0.835404028/0.282895388/-0\
   .847467063 params=-0.31416699999999997 float=y bailout=512
@@ -958,8 +958,8 @@ s3f178             { ; 3X|18|CY|SF5|180  00h14m19.26s
 
 s3f179             { ; 3X|18|CY|SF5|180  00h05m09.26s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderC function=cosh/sqr passes=b
+  reset=1800 type=formula formulafile=fractnt4.frm
+ formulaname=FractalFenderC function=cosh/sqr passes=b
   corners=-4.026667/4.026667/-3.02/3.02 params=0/0/4 float=y
   maxiter=256 fillcolor=253 inside=253 decomp=256
   colors=AAA0F0<44>Fx0Gz0Gy0<31>0F0F00<45>x00z00y00<30>F00ZK0<45>xpAxpAwoA\
@@ -968,8 +968,8 @@ s3f179             { ; 3X|18|CY|SF5|180  00h05m09.26s
 
 s3f180             { ; 3X|18|CY|SF5|180  00h15m11.74s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderC function=cosh/sqr
+  reset=1800 type=formula formulafile=fractnt4.frm
+ formulaname=FractalFenderC function=cosh/sqr
   corners=-1.8396481/-1.2356481/0.40266667/-0.40266667/-1.2356481/-0.40266\
   667 params=0/0/4 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/500/0
@@ -980,8 +980,8 @@ s3f180             { ; 3X|18|CY|SF5|180  00h15m11.74s
 
 s3f181             { ; 3X|18|CY|SF5|180  00h11m42.62s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderC function=sqr/exp
+  reset=1800 type=formula formulafile=fractnt4.frm
+ formulaname=FractalFenderC function=sqr/exp
   corners=-2.242226/0.5451301/1.881502/-1.834973/0.5451301/-1.834973
   params=0/0/3 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/500/0
@@ -992,8 +992,8 @@ s3f181             { ; 3X|18|CY|SF5|180  00h11m42.62s
 
 s3f182             { ; 3X|18|CY|SF5|180  00h05m07.83s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderC function=cotanh/cosxx passes=1
+  reset=1800 type=formula formulafile=fractnt4.frm
+ formulaname=FractalFenderC function=cotanh/cosxx passes=1
   corners=-3.755578/1.778642/3.712744/-3.666216/1.778642/-3.666216
   params=0/0/1 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/500/0
@@ -1004,8 +1004,8 @@ s3f182             { ; 3X|18|CY|SF5|180  00h05m07.83s
 
 s3f183             { ; 3X|18|CY|SF5|180  00h15m45.14s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=a---mand corners=-1.473396/-4.473396/-2/2/-4.473396/2
+  reset=1800 type=formula formulafile=eli.frm
+ formulaname=a---mand corners=-1.473396/-4.473396/-2/2/-4.473396/2
   params=14/0/6 float=y maxiter=256 inside=0 potential=253/250/0
   colors=000SHERGEPFF0A0<15>Zc0<2>TY0QW0OU0LS0JQ0<7>0A0<15>Zc0<15>0A0SNC<2\
   9>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeDzfCyfC<27>TIE
@@ -1013,8 +1013,8 @@ s3f183             { ; 3X|18|CY|SF5|180  00h15m45.14s
 
 s3f184             { ; 3X|18|CY|SF5|180  00h04m15.18s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=aa-mand-im passes=b corners=-2.5759/1.4241/-1.5/1.5
+  reset=1800 type=formula formulafile=eli.frm
+ formulaname=aa-mand-im passes=b corners=-2.5759/1.4241/-1.5/1.5
   params=2/0/4 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/250/0
   colors=000YYY<11>000<27>007017037<13>4S4<13>1A1181171151131000313717A20<\
@@ -1025,7 +1025,7 @@ s3f184             { ; 3X|18|CY|SF5|180  00h04m15.18s
 
 s3f185             { ; 3X|18|CY|SF5|180  00h01m45.31s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Element
+  reset=1800 type=formula formulaname=Element formulafile=s3f101.frm
   passes=b corners=-0.416/0.416/-1.0447766/-0.42077662 params=2/0/4
   float=y maxiter=256 fillcolor=253 inside=253 potential=253/250/0
   colors=000PbR<19>fX3fX2gY5<14>kge<21>lFmlEmnDg<7>x52<20>9Cp<12>YF1<2>xR7\
@@ -1035,8 +1035,8 @@ s3f185             { ; 3X|18|CY|SF5|180  00h01m45.31s
 
 s3f186             { ; 3X|18|CY|SF5|180  00h03m38.83s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=F'Liar1D function=sin
+  reset=1800 type=formula formulafile=liar.frm
+ formulaname=F'Liar1D function=sin
   corners=-8.105135/-1.707135/-2.299073/2.499427 params=2/0/4 float=y
   maxiter=256 fillcolor=253 inside=253 potential=253/250/0
   colors=000CtK<15>5wL5wL6rK6mK6hJ9BG7cJ<4>8FGv8lOO7<8>9BGdmi<23>9BHOiv<16\
@@ -1046,8 +1046,8 @@ s3f186             { ; 3X|18|CY|SF5|180  00h03m38.83s
 
 s3f187             { ; 3X|18|CY|SF5|180  00h09m27.54s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=FractalFenderTwoC passes=b
+  reset=1800 type=formula formulafile=s3f101.frm
+ formulaname=FractalFenderTwoC passes=b
   corners=0.25764006/0.88164006/0.416/-0.416/0.88164006/-0.416
   params=2/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/250/0
@@ -1059,7 +1059,7 @@ s3f187             { ; 3X|18|CY|SF5|180  00h09m27.54s
 s3f188             { ; 3X|18|CY|SF5|180  00h04m40.07s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
   reset=1800 type=formula 
-  formulaname=FractalFenderTwoC
+ formulaname=FractalFenderTwoC formulafile=s3f101.frm
   corners=0.719977165/0.773641165/0.035776/-0.035776/0.773641165/-0.035776
   params=2/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/450/0
@@ -1071,8 +1071,8 @@ s3f188             { ; 3X|18|CY|SF5|180  00h04m40.07s
 
 s3f189             { ; 3X|18|CY|SF5|180  00h06m29.50s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=F'Liar1C function=sin/exp corners=-2/2/-1.5/1.5
+  reset=1800 type=formula formulafile=liar.frm
+ formulaname=F'Liar1C function=sin/exp corners=-2/2/-1.5/1.5
   params=2/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/450/0
   colors=000n9n<28>sdfsefrdg<27>iVtiVthUr<15>fKX<10>ELq<33>GBOKAFGBN<11>G8\
@@ -1081,8 +1081,8 @@ s3f189             { ; 3X|18|CY|SF5|180  00h06m29.50s
 
 s3f190             { ; 3X|18|CY|SF5|180  00h09m57.46s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
-  formulaname=F'Liar1C function=cosh/sqr
+  reset=1800 type=formula formulafile=liar.frm
+ formulaname=F'Liar1C function=cosh/sqr
   corners=2.0140911/-2.1237477/4.0525254/2.1781392/1.4241745/4.8390808
   params=2/0/6 float=y maxiter=256 fillcolor=253 inside=253
   potential=253/450/0
@@ -1093,7 +1093,7 @@ s3f190             { ; 3X|18|CY|SF5|180  00h09m57.46s
 
 s3f192             { ; 3X|18|CY|SF5|180  00h06m15.39s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=ULI_4
+  reset=1800 type=formula formulaname=ULI_4 formulafile=fractint.frm
   function=exp/cotan passes=b
   corners=0.96787006/1.1261741/0.50934791/0.29827591/1.1261741/0.29827591
   params=1.3149999999999999/0/3.9871400000000001 float=y maxiter=256
@@ -1105,7 +1105,7 @@ s3f192             { ; 3X|18|CY|SF5|180  00h06m15.39s
 
 s3f193             { ; 3X|18|CY|SF5|180  00h12m51.93s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=ULI_4
+  reset=1800 type=formula formulaname=ULI_4 formulafile=fractint.frm
   function=exp/cotan
   corners=1.041874824/1.058779064/0.3792855586/0.337171017/1.06817533/0.34\
   42182165 params=1.3149999999999999/0/3.9871400000000001 float=y
@@ -1146,7 +1146,7 @@ s3f196             { ; 3X|18|CY|SF5|180  00h56m14.47s
 
 s3f197             { ; 3X|18|CY|SF5|180  00h07m50.58s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula  formulaname=Leeze
+  reset=1800 type=formula formulaname=Leeze formulafile=fractint.frm
   corners=-1.516216/-1.000216/0.344/-0.344/-1.000216/-0.344
   params=2/0/6 float=y maxiter=256 fillcolor=253 inside=0
   potential=253/250/0
@@ -1157,7 +1157,7 @@ s3f197             { ; 3X|18|CY|SF5|180  00h07m50.58s
 s3f198             { ; 3X|18|CY|SF5|180  00h05m07.75s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
   reset=1800 type=formula 
-  formulaname=IslandOfChaosC
+  formulaname=IslandOfChaosC formulafile=s3f101.frm
   corners=-3.016912/-1.916456/-0.37620641/0.44913559 params=2/0/6
   float=y maxiter=256 fillcolor=253 inside=0 potential=253/250/0
   colors=000`G0<9>zH0<15>MF0<15>ww0<15>MF0OF1<14>wEa<14>PE1<3>YOA_QCaSEcUG\
@@ -1168,7 +1168,7 @@ s3f198             { ; 3X|18|CY|SF5|180  00h05m07.75s
 
 s3f199             { ; 3X|18|CY|SF5|180  00h06m49.74s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
+  reset=1800 type=formula formulafile=s3f101.frm
   formulaname=ManInTheOzoneC passes=b
   corners=-2.610893/-1.57064/0.704/-0.704/-1.57064/-0.704
   params=1.111/0/2.222 float=y maxiter=256 fillcolor=253 inside=253
@@ -1180,7 +1180,7 @@ s3f199             { ; 3X|18|CY|SF5|180  00h06m49.74s
 
 s3f200             { ; 3X|18|CY|SF5|180  00h06m57.14s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset=1800 type=formula 
+  reset=1800 type=formula formulafile=s3f101.frm
   formulaname=ManInTheOzoneC
   corners=-1.9799006/-1.8758753/0.0704/-0.0704/-1.8758753/-0.0704
   params=1.111/0/2.222 float=y maxiter=256 fillcolor=253 inside=253
@@ -1200,7 +1200,7 @@ s3f200             { ; 3X|18|CY|SF5|180  00h06m57.14s
 
 s3f191             { ; 3X|18|CY|SF5|180  00h10m32.17s
 					 ; (c) 1993 Richard H. Sherry CIS: 76264,752
-  reset type=formula  formulaname=Fzpcopch
+  reset type=formula formulaname=Fzpcopch formulafile=skinner.frm
   passes=b
   corners=0.7223192/1.9393/1.557979/-0.06466294/1.9393/-0.06466294
   params=1/0/3 float=y maxiter=256 fillcolor=253 inside=bof60

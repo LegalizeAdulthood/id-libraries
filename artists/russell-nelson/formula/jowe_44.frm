@@ -1,6 +1,6 @@
 ; JoWe_44.frm
 
-JoWe_xy_01 = { ; Jo Weber [100424,35] 9/1996 
+JoWe_xy_01 { ; Jo Weber [100424,35] 9/1996 
                ; p1 is bailout
                   z = pixel, bailout=p1:
 		  x=real(z), y=imag(z),
@@ -12,7 +12,7 @@ JoWe_xy_01 = { ; Jo Weber [100424,35] 9/1996
    }
 
 
-JoWe_xy_02 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_02 { ; Jo Weber [100424,35] 9/1996
                ; p1 is bailout
                   z = pixel, bailout=p1:
 		  x=real(z), y=imag(z),
@@ -23,7 +23,7 @@ JoWe_xy_02 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=bailout
    }
 
-JoWe_xy_03 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_03 { ; Jo Weber [100424,35] 9/1996
                ; p1 is bailout
                   z = c = pixel, bailout=p1:
 		  x=real(z), y=imag(z),
@@ -34,7 +34,7 @@ JoWe_xy_03 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=bailout
    }
 
-JoWe_xy_04 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_04 { ; Jo Weber [100424,35] 9/1996
                ; p1 is bailout
                   z = c = pixel, bailout=p1:
 		  x=real(z), y=imag(z),
@@ -46,7 +46,7 @@ JoWe_xy_04 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=bailout
    }
 
-JoWe_xy_05 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_05 { ; Jo Weber [100424,35] 9/1996
                ; p1 is bailout
                   z = c = pixel, bailout=p1:
 		  x=real(z), y=imag(z),
@@ -58,7 +58,7 @@ JoWe_xy_05 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=bailout
    }
 
-JoWe_xy_06 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_06 { ; Jo Weber [100424,35] 9/1996
                   z = pixel:
 		  x=real(z), y=imag(z),
                   x=x+fn1(z)^p1, y=y-fn2(z)^p2
@@ -66,7 +66,7 @@ JoWe_xy_06 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=4
    }
 
-JoWe_xy_07 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_07 { ; Jo Weber [100424,35] 9/1996
                   z = pixel:
 		  a=real(z), b=imag(z),
                   x2=a*fn1(z)/p1, y2=b-fn2(z)*p2
@@ -74,7 +74,7 @@ JoWe_xy_07 = { ; Jo Weber [100424,35] 9/1996
                   |z|<=4
    }
 
-JoWe_xy_08 = { ; Jo Weber [100424,35] 9/1996
+JoWe_xy_08 { ; Jo Weber [100424,35] 9/1996
                   z = c = pixel, bailout=p3:
 		  a=real(z), b=imag(z),
                   x2=a+fn1(z)*0.231

@@ -28,7 +28,7 @@ sp_01          { ; "Globes"         L.StClair/gallet-3-13 formula t=00m36s
                  ; Les St Clair 101461.2032@compuserve.com 1996
                  ; Image created using formula by Sylvie Gallet
   reset=1920 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-13 function=conj/asin passes=1
+  formulaname=Gallet-3-13 function=conj/asin passes=1
   center-mag=0.0289104/-1.02564/1.847743/1/-47.498
   params=100/-0.2/33/-3/0/0 float=y maxiter=255 outside=atan
   periodicity=0
@@ -44,7 +44,7 @@ sp_02         { ; "Nebula"         L.StClair/gallet-3-13 formula t=00m47s
                      ; Les St Clair 101461.2032@compuserve.com 1996
                      ; Image created using formula by Sylvie Gallet
   reset=1920 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-13 function=acosh/tan passes=1
+  formulaname=Gallet-3-13 function=acosh/tan passes=1
   center-mag=+0.00032308525194892/-0.99998658154419330/902.6336/1/-42.5
   params=1/100/-12/1.3/0/0 float=y maxiter=300 inside=zmag
   outside=atan
@@ -70,7 +70,7 @@ Starlight_02       { ; Modified version of sp_60 from sylvie.par t=21m30s
                      ; uses gallet-03-07 formula (from gallet-03.frm)
                      ; Les St Clair 101461.2032@compuserve.com - 1996
   reset=1920 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-07 passes=1
+  formulaname=Gallet-3-07 passes=1
   corners=0.975316729/0.954119437/1.7560703/-0.17134123/1.89284324/0.53570\
   162 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
   colors=00Ezzz_DX<6>r_f<8>Uq1Xq2_q4<8>40B<6>50H00E<2>A8TEHaIQj3Yq<10>z22z\
@@ -264,7 +264,7 @@ ad2xtr05           { ; Zoom of Alex Dukay's "2645" by Les St Clair t=02m47s
 
 DNA-Mandel-Newton  { ; Modified Sylvie Gallet formula (C)opyright B.Jones 1996
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=bj-sg-manewt-014 function=cosh/log
+  formulaname=BJ-SG-MaNewt-014 function=cosh/log
   center-mag=-3.75469/2.22045e-016/0.8912656 params=25/0 float=y
   symmetry=none periodicity=0
   colors=000<11>000ztq<10>zkdzjcyha<10>nPF000000000800<9>c00<5>zjc<5>7`F<6\
@@ -372,8 +372,8 @@ ee108              { ; Fancy Spiral
   }
 
 sunset4_cr2        { ; From Carr's 30000 feet
-  reset=1900 type=formula formulafile=fractint.frm
-  formulaname=carr2289 center-mag=-0.221314/0.0963268/24.33602/1.2323
+  reset=1900 type=formula formulafile=42gcarr.frm
+  formulaname=Carr2289 center-mag=-0.221314/0.0963268/24.33602/1.2323
   params=100/150/200/250 float=y maxiter=300 periodicity=0
   colors=000B0J<11>50A000<29>0FN0GO0HP0IP0IQ<18>1Te1Ue1Uf2Uf<28>Vid0OdXjd<\
   27>xyb<7>1Uf<11>18BHA8MF0<3>cW4wm5zz6qi7zzMC00<24>z00sKS<6>zA0<15>zz0<11\
@@ -439,7 +439,7 @@ ee124              { ; Mating Green Lizards, Early Evening,
   }
 
 X1_sunset7         {
-  reset=1930 type=formula formulafile=carr1.frm formulaname=carr2330
+  reset=1930 type=formula formulafile=42gcarr.frm formulaname=Carr2330
   center-mag=-0.372562/0.200786/5.312116/1.3756/-165.708/-3.371
   params=100/150/200/250 float=y maxiter=300 periodicity=0
   colors=0AA0CC1EE4HH9JJFLLOOO<2>EJJBIIAHH7EE5DD4BB2AA2AA188<2>05504404404\
@@ -453,7 +453,7 @@ X1_sunset7         {
   }
 
 X1_sunset9        {
-  reset=1930 type=formula formulafile=carr1.frm formulaname=carr2330
+  reset=1930 type=formula formulafile=42gcarr.frm formulaname=Carr2330
   passes=1
   center-mag=-0.34269/0.255988/21.82773/0.9545/-172.619/-0.072
   params=100/150/200/250 float=y maxiter=200 periodicity=0
@@ -464,7 +464,7 @@ X1_sunset9        {
 
 BigRoom            { ; Caverns of Lanakila
                      ; Par and Image Copyright 1996 by Lee H. Skinner
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo_2
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo_2
   function=sqrt passes=1 center-mag=-0.627604/-0.936209/10.04167
   params=0/0 float=y maxiter=1024 inside=zmag outside=summ
   finattract=y periodicity=0
@@ -630,7 +630,7 @@ sgmoo08            { ; Copyright Sylvie Gallet [101324,3444], 1996
 sgmi022            { ; Threatening Eye In the Sky
                      ; Par and Image copyright 1996 by Lee H. Skinner
                      ; Formula by Damion, Inspired by Sylvie's sgmoo04
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
   function=ident passes=1
   center-mag=-0.36577249783925740/+1.21228394478776700/654.8797
   params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
@@ -644,7 +644,7 @@ sgmi022            { ; Threatening Eye In the Sky
 sgmi031            { ; At a Loss for a Good Description
                      ; Par and Image copyright 1996 by Lee H. Skinner
                      ; Formula by Damion, Inspired by Sylvie's sgmoo04
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
   function=ident passes=1
   center-mag=-0.36491035731312750/+1.21132084292850700/36802.51
   params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
@@ -658,7 +658,7 @@ sgmi031            { ; At a Loss for a Good Description
 LF16_04            { ; "Mandelbrot Jewel"     Les St Clair 1996   t=02m15s
                      ; Image by Les St Clair 101461.2032@compuserve.com
                      ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
-  reset=1930 type=formula formulafile=newforms.frm formulaname=lesfrm16
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
   function=asinh/cosh passes=1
   corners=-0.374923303/0.465543283/-0.2639087/0.16192926/-0.276757555/-0.3\
   9479637 params=0.33/-0.5/0.22/0.005 float=y inside=bof61
@@ -713,7 +713,7 @@ LF16_07            { ; "Golden Cascade"       Les St Clair 1996   t=19m03s
 sgmi022            { ; Threatening Eye In the Sky
                      ; Par and Image copyright 1996 by Lee H. Skinner
                      ; Formula by Damion, Inspired by Sylvie's sgmoo04
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
   function=ident passes=1
   center-mag=-0.36577249783925740/+1.21228394478776700/654.8797
   params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
@@ -727,7 +727,7 @@ sgmi022            { ; Threatening Eye In the Sky
 sgmi031            { ; At a Loss for a Good Description
                      ; Par and Image copyright 1996 by Lee H. Skinner
                      ; Formula by Damion, Inspired by Sylvie's sgmoo04
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
   function=ident passes=1
   center-mag=-0.36491035731312750/+1.21132084292850700/36802.51
   params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
@@ -741,7 +741,7 @@ sgmi031            { ; At a Loss for a Good Description
 LF16_04            { ; "Mandelbrot Jewel"     Les St Clair 1996   t=02m15s
                      ; Image by Les St Clair 101461.2032@compuserve.com
                      ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
-  reset=1930 type=formula formulafile=newforms.frm formulaname=lesfrm16
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Lesfrm16
   function=asinh/cosh passes=1
   corners=-0.374923303/0.465543283/-0.2639087/0.16192926/-0.276757555/-0.3\
   9479637 params=0.33/-0.5/0.22/0.005 float=y inside=bof61
@@ -757,7 +757,7 @@ Lister_zoom_01     { ; "Underwater Volcano"                       t=26m36s
                      ; Zoom of Vincent Damien Presogna's "2_Dragons"
                      ; by Les St Clair  101461.2032@compuserve.com  1996
                      ; t=time using 486DX2-66 and video mode SF5 (640x480)
-  reset=1930 type=formula formulafile=mad_cow.frm formulaname=moo
+  reset=1930 type=formula formulafile=mad_cow.frm formulaname=Moo
   function=ident passes=1 center-mag=1.115/1.05175/5.988652/1/54.999
   params=0/0 float=y maxiter=500 inside=zmag periodicity=0
   colors=000<5>UAA<14>N9N<10>zJ9<28>zu2zw1zx1zz0yz0<39>B`09`08_06_05Z03Z02\
@@ -768,7 +768,7 @@ sgmi050            { ; Jack's Beanstalk
                      ; Par and Image Copyright 1996 by Lee H. Skinner
                      ; Formula by Damion, Inspired by Sylvie's sgmoo04
                      ; 41.4 minutes @1600x1200 on Pentium 166Mh
-  reset=1930 type=formula formulafile=fractint.frm formulaname=moo
+  reset=1930 type=formula formulafile=new7.frm formulaname=Moo
   function=ident passes=1
   center-mag=-0.40194858138624490/+1.20710791624452500/1013.922
   params=0/0 float=y maxiter=511 inside=0 logmap=yes periodicity=0
@@ -780,7 +780,7 @@ sgmi050            { ; Jack's Beanstalk
   }
 
 Cypress_tree       { ; Grew on a very windy hilltop...
-  reset=1930 type=ifs ifsfile=trees.ifs ifs=cypress
+  reset=1930 type=ifs ifsfile=trees.ifs ifs=Cypress
   center-mag=+0.60921478350000000/+1.18900299200000000/1.488558/0.9996
   params=0 maxiter=500
   colors=0000V00z0FkFUWVVGj0F_XDORCCKA0N86R5C<3>KA0<3>W60<7>WW0SW0PW0<5>LE\
@@ -789,7 +789,7 @@ Cypress_tree       { ; Grew on a very windy hilltop...
   }
 
 Palm_forest        { ; A whole forest in one fractal.
-  reset=1930 type=ifs ifsfile=trees.ifs ifs=forest1
+  reset=1930 type=ifs ifsfile=trees.ifs ifs=Forest1
   center-mag=+0.29216003400000000/+0.34255981500000000/0.4911991/1.412/45
   params=0 float=y maxiter=2000
   colors=000FzDEyD<3>0A0<2>4b36l55j4<3>0c0QB0<58>vO0wP0wP0wP0<112>UK0TK0TJ\
@@ -808,7 +808,7 @@ Tree_real!         { ; Looks very realistic.  Fall colors
   }
 
 BEJ0321            { ; Modified G.Martin & S.Gallet's formulas
-  reset=1930 type=formula formulafile=modmods1.frm
+  reset=1930 type=formula formulafile=new7.frm
   formulaname=mans-galore-022 function=cosh/sin/ident
   center-mag=0.0646028/0.0991602/0.06836534
   params=25/1.4/5e-005/0/17/17 float=y maxiter=200 outside=atan
@@ -843,7 +843,7 @@ LES_CN_02          { ; ComplexNewton - Les St Clair 101461.2032@compuserve.com
 
 jowe_cn1           {
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=complexnewton_01 passes=1
+  formulaname=ComplexNewton_01 passes=1
   center-mag=111.437/-25.4237/0.02380952 params=-0.1/-6 float=y
   maxiter=1000 inside=bof60
   colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
@@ -915,14 +915,14 @@ Mexsq037           { ; 0:30
   }
 
 ginkgo             {
-  reset=1930 type=ifs ifsfile=fractint.ifs ifs=baobab
+  reset=1930 type=ifs ifsfile=new.ifs ifs=Baobab
   center-mag=+0.61627197250000000/+1.18386840950000000/1.477267/0.9998
   params=0 maxiter=500 colors=000B`HU00<2>dIBhOFjTL<7>zzz000<238>000
   }
 
 jowe3104           { ; 0:01:12.44
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=whatever_01 center-mag=4.4645e-005/1.0105e-005/0.6666712
+  formulaname=Whatever_01 center-mag=4.4645e-005/1.0105e-005/0.6666712
   maxiter=500 inside=maxiter potential=255/255/555
   colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
   z<15>000<15>zn0<15>000<15>zzz<15>004<12>G0jH0nI0qK0uJ0rI0n<12>204
@@ -975,8 +975,8 @@ what003            { ; Jonathan Osuch 1996 [73277,1432]
   }
 mitosis            { ; Zoom into Frac-test042 by Brian Jones
                      ; Par and Image Copyright by Lee H. Skinner, 1996
-  reset=1930 type=formula formulafile=fractint.frm
-  formulaname=fractint-9-41 function=tan/tan/tan/atanh passes=1
+  reset=1930 type=formula formulafile=new7.frm
+  formulaname=Fractint-9-41 function=tan/tan/tan/atanh passes=1
   center-mag=-7.27596e-012/3527.71/0.0008814505 float=y maxiter=1000
   inside=bof60 logmap=yes symmetry=none periodicity=0
   colors=000OI5000<30>000<3>KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4\
@@ -986,7 +986,7 @@ mitosis            { ; Zoom into Frac-test042 by Brian Jones
   }
 
 jowe3202           {
-  reset=1930 type=formula formulafile=fractint.frm formulaname=jowe_02
+  reset=1930 type=formula formulafile=new7.frm formulaname=JoWe_02
   function=tan/sqr passes=b center-mag=7.558e-005/1.177e-005/0.4884565
   params=0.3/-0.03/1/-1 maxiter=1023 inside=maxiter
   potential=255/255/555
@@ -998,7 +998,7 @@ jowe3202           {
   }
 
 BJ-LSC13-006       { ; Modified Les St Clair Formula "LSC13" 
-                                  { ; (C) copyright Brian E. Jones 1996
+                     ; (C) copyright Brian E. Jones 1996
   reset=1930 type=formula formulafile=newforms.frm
   formulaname=BJ-Lesfrm13-001 function=log/flip/cabs/tanh
   center-mag=0/0/0.4666667 params=3.3/0.8/-3.2/0.3 float=y
@@ -1011,7 +1011,7 @@ BJ-LSC13-006       { ; Modified Les St Clair Formula "LSC13"
   }
 
 BJ-LSC13-008       { ; Modified Les St Clair Formula "LSC13" 
-                                  { ; (C) copyright Brian E. Jones 1996
+                     ; (C) copyright Brian E. Jones 1996
   reset=1930 type=formula formulafile=newforms.frm
   formulaname=BJ-Lesfrm13-001 function=sqr/sqrt/cabs/ident
   center-mag=0/0/0.4666667 params=3.3/0.8/-3.2/0.3 float=y
@@ -1027,9 +1027,9 @@ BJ-LSC13-008       { ; Modified Les St Clair Formula "LSC13"
   }
 
 BJ-LSC13-009       { ; Modified Les St Clair Formula "LSC13" 
-                                  { ; (C) copyright Brian E. Jones 1996
+                     ; (C) copyright Brian E. Jones 1996
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=bj-lesfrm13-002 function=asin/log/cotanh/sin
+  formulaname=BJ-Lesfrm13-002 function=asin/log/cotanh/sin
   corners=-2/2/-1.660267/1.339733 params=3.3/0.8/-3.2/0.3 float=y
   maxiter=1000 inside=zmag outside=atan
   colors=z10`dd<37>DMMCMMCLLCLLAKK<3>0cc<9>zz0<15>z00<12>j00h00g00e00d00<2\
@@ -1041,11 +1041,10 @@ LS-BJ-LS_01        { ; Based on Brian E.Jones BJ-Lesfrm13-02 formula t=04m22s
                      ; by Les St Clair 101461.2032@compuserve.com
                      ; t=time using 486DX2-66 and video mode SF5 640x480 256c
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=bj-lesfrm13-002 function=asin/log/ident/cosh
+  formulaname=BJ-Lesfrm13-002 function=asin/log/ident/cosh
   center-mag=0.934868/-0.0532872/0.9617486 params=3.3/0.8/-3.2/0.8
   float=y maxiter=1000 inside=zmag outside=atan
   colors=0E_<4>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<15>V0k<14>A\
   pW8tU8qU<14>14J<15>w0z<15>7Hh<15>0uD<12>1EI14J1AJ17J14J<15>zpg<15>z_0<15\
   >0Tz<8>0Fa cyclerange=0/255
   }
-

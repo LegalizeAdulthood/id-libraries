@@ -18,7 +18,7 @@ J_TchebC3          { ; J_TchebC3 1 (0.145,0,0,0)
 
 J_TchebC3-1        { ; J_TchebC3 2 (0.145,0,0,0)
   reset type=formula formulafile=tchebych.frm
-  formulaname=j_tchebychevc3
+  formulaname=J_TchebychevC3
   corners=0.1274425/0.2097883/0.4195771/0.5912387/0.0746809/0.4899126
   params=0.145 potential=256/2000/4 colors=@topo.map
   }
@@ -29,7 +29,7 @@ rainbow            {
   }
 
 maintain           { ; tchebychevC5 turned
-  reset type=formula formulafile=tchebych.frm formulaname=m_tchebychevc5
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevC5
   corners=0.262213/-0.262211/1.161177/0.767863 params=0.12 inside=bof60
   decomp=256
   colors=CCCCosCqsCss<9>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEs\
@@ -61,7 +61,7 @@ hail               {
   }
 
 hail2              {
-  reset type=formula formulafile=tchebych.frm formulaname=m_tchebychevt5
+  reset type=formula formulafile=tchebych.frm formulaname=M_TchebychevT5
   corners=-0.0833434/-0.0393062/0.0707312/0.1037643 params=0.15/-0.15
   inside=0
   }
@@ -85,7 +85,7 @@ folds2             { ; j_tc5
   }
 
 folds3             { ; j_tc5
-  reset type=formula formulafile=tchebych.frm formulaname=j_tchebychevc5
+  reset type=formula formulafile=tchebych.frm formulaname=J_TchebychevC5
   corners=0.026907128/0.027157742/0.300684284/0.300872375 params=0.56
   float=y inside=0 colors=@goodega.map
   }

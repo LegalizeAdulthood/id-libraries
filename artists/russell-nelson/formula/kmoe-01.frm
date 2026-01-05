@@ -10,13 +10,3 @@ kmoe-02{
          x=sin(sqr(z))
         |z|<=4
         }
-kmoe-03{
-        z=pixel, x=pixel c=cos(sqr(z))       
-        zx=real(p2)
-        zy=imag(z)
-        z=3/(x-3)
-        x=0
-        x=-3
-
-        
-        

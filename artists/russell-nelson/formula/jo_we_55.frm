@@ -324,4 +324,3 @@ z=real(sin(z))+fn1(z)+c
 |z|<=bailout
 }
 
-

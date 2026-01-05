@@ -1,6 +1,6 @@
-/* Formulas written by Vincent Damion Presogna */
-/* 76455,2222@compuserve.com */
-/* Inspired by Sly Stuart */
+; /* Formulas written by Vincent Damion Presogna */
+; /* 76455,2222@compuserve.com */
+; /* Inspired by Sly Stuart */
 
 Anacron (XAXIS) {
 z = pixel:

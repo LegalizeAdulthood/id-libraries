@@ -127,40 +127,40 @@ ComplexNewton_12{; Jon Horner
 		    |(z-oldz)|>=|0.001|
   }
 
-JoWe_01(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_01(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
                       a1=sqr(z), a2=1/a1, a3=1/(sqr(a1)) 
                       z=a1+a2+a3+pixel,
   }
 
-JoWe_02(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_02(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
 		      p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
                       a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
                       z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel,
   }
 
-JoWe_02_1(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_02_1(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
                       a1=sqr(z), a2=p1/a1, a3=p2/(sqr(a1)) 
                       z=(fn1(a1)+fn2(a2)*fn1(a3))*pixel,
   }
 
-JoWe_02a(XAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_02a(XAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
 		      p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
                       a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
                       z=(fn1(a1)+fn1(a2)*fn1(a3))*pixel,
   }
 
-JoWe_03(XAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_03(XAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
 		      p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
                       a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
                       z=(fn1(a1)+fn2(a2)+fn1(a3))*z,
   }
 
-JoWe_03a(XAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_03a(XAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
 		      p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
                       a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
@@ -173,13 +173,13 @@ JoWe_03m { ; Jo Weber [100424,35], 6/1996
                |z|>=0.05
   }
 
-JoWe_04(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_04(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel:
 		          a1=fn1(z), a2=p1/a1, 
                           z=a1+a2+pixel,
   }
 
-JoWe_04a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_04a(XYAXIS) { ; Jo Weber [100424,35], 6/1996
 			  pixel=abs(real(pixel)) + flip(imag(pixel))
                           pixel=real(pixel) + flip(abs(imag(pixel)))
 		          z = pixel:
@@ -187,7 +187,7 @@ JoWe_04a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
                           z=a1+a2+pixel,
   }
 
-JoWe_04b(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_04b(XYAXIS) { ; Jo Weber [100424,35], 6/1996
 			  pixel=pixel*(-1)^(pixel>0)
 		          z = pixel:
 		          a1=fn1(z), a2=p1/a1, 
@@ -205,13 +205,13 @@ JoWe_04b_XY   { ; Jo Weber [100424,35], 10/1996
                   |z|<=bailout
   }
 
-JoWe_04c(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_04c(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel:
 		          a1=fn1(z), a2=p1/a1, 
                           z=fn2(a1)+fn3(a2)+pixel,
   }
 
-JoWe_05(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_05(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
@@ -225,13 +225,13 @@ JoWe_05m { ; Jo Weber [100424,35] 9/1996
                |z|>=0.05
   }
 
-JoWe_05m2 = { ; Jo Weber [100424,35] 9/1996
+JoWe_05m2 { ; Jo Weber [100424,35] 9/1996
                   z = pixel:
                   z=fn1(z*z)+(1/z*z)+pixel,
                   |z|>=0.05
   }
 
-JoWe_06(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_06(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
@@ -327,28 +327,28 @@ JoWe_06m_PHC_2 { ; Jo Weber [100424,35], 10/1996
                |z|<=bailout
   }
 
-JoWe_07(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_07(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
                           z=a1+a2-pixel,
   }
 
-JoWe_08(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_08(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
                           z=(a1+a2)*pixel,
   }
 
-JoWe_09(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_09(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
                           z=(a1+a2)/pixel,
   }
 
-JoWe_10(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_10(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
@@ -356,7 +356,7 @@ JoWe_10(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
 			  |z|>=0.1
   }
 
-JoWe_10a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_10a(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=fn2(p)/a1, 
@@ -364,7 +364,7 @@ JoWe_10a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
 			  |z|>=0.1
   }
 
-JoWe_10b(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_10b(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=fn2(p/a1), 
@@ -372,7 +372,7 @@ JoWe_10b(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
 			  |z|>=0.1
   }
 
-JoWe_11(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_11(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=p/a1, 
@@ -380,7 +380,7 @@ JoWe_11(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
 			  |z|<=4
   }
 
-JoWe_11a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_11a(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=fn2(p)/a1, 
@@ -388,7 +388,7 @@ JoWe_11a(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
 			  |z|<=4
   }
 
-JoWe_11b(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_11b(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                           z = pixel
                           p=1*(|p1|<0)+p1 :
 		          a1=fn1(z), a2=fn2(p/a1), 
@@ -1175,7 +1175,7 @@ JoWe_What_05m_PHC { ; Jo Weber [100424,35] 9/1996
                |z|>=0.05
  }
 
-JoWe_What_07m_PHC = { ; Jo Weber [100424,35] 9/1996 
+JoWe_What_07m_PHC { ; Jo Weber [100424,35] 9/1996 
                       ; needs passes=1
                   z = pixel:
                   a1=sqr(z), a2=1/a1,
@@ -1906,20 +1906,20 @@ JoWe_XY_PHC_14c { ; Jo Weber [100424,35], 10/1996
                     |z|<=bailout
 }
 
-Whatever_00m(XAXIS) = { ; Original formula Whatever_the_name
+Whatever_00m(XAXIS) { ; Original formula Whatever_the_name
                         ; corrected by Jo Weber [100424,35], 6/1996
                           z = pixel:
 		          a1=sqr(z), a2=1/a1, 
                           z=a1+a2+pixel,
 }
 
-Whatever_01(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=z*z+(1/z*z)+pixel,
 }
 
-Whatever_01m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01m(XYAXIS) { ; Original formula Whatever_the_name
                          ; corrected and modified by 
                          ; Jo Weber [100424,35], 6/1996
                           z = pixel:
@@ -1927,13 +1927,13 @@ Whatever_01m(XYAXIS) = { ; Original formula Whatever_the_name
                           z=a1+a2+pixel,
 }
 
-Whatever_02 = { ; Original formula Whatever_the_name
+Whatever_02 { ; Original formula Whatever_the_name
                 ; modified by Jo Weber [100424,35], 6/1996
                   z = pixel:
                   z=z*z+(2/z*z)+pixel,
 }
 
-Whatever_02m = { ; Original formula Whatever_the_name
+Whatever_02m { ; Original formula Whatever_the_name
                  ; corrected and modified by 
                  ; Jo Weber [100424,35], 6/1996
                   z = pixel:
@@ -1941,14 +1941,14 @@ Whatever_02m = { ; Original formula Whatever_the_name
                   z=a1+a2+pixel,
 }
 
-Whatever_03 = { ; Original formula Whatever_the_name
+Whatever_03 { ; Original formula Whatever_the_name
                 ; modified by Jo Weber [100424,35], 6/1996
                   z = pixel:
                   z=fn1(z)*z+(1/z*z)+pixel,
                   |z|>=0.05
 }
 
-Whatever_03m = { ; Original formula Whatever_the_name
+Whatever_03m { ; Original formula Whatever_the_name
                  ; corrected and modified by 
                  ; Jo Weber [100424,35], 6/1996
                   z = pixel:
@@ -1957,14 +1957,14 @@ Whatever_03m = { ; Original formula Whatever_the_name
                   |z|>=0.05
 }
 
-Whatever_04(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_04(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=fn1(z)*z+(1/z*z)+pixel,
                           |z|>=0.05
 }
 
-Whatever_04m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_04m(XYAXIS) { ; Original formula Whatever_the_name
                          ; corrected and modified by 
                          ; Jo Weber [100424,35], 6/1996
                           z = pixel:
@@ -1973,14 +1973,14 @@ Whatever_04m(XYAXIS) = { ; Original formula Whatever_the_name
                           |z|>=0.05
 }
 
-Whatever_05 = { ; Original formula Whatever_the_name
+Whatever_05 { ; Original formula Whatever_the_name
                 ; modified by Jo Weber [100424,35], 6/1996
                   z = pixel:
                   z=fn1(z*z)+(1/z*z)+pixel,
                   |z|>=0.05
 }
 
-Whatever_05m = { ; Original formula Whatever_the_name
+Whatever_05m { ; Original formula Whatever_the_name
                  ; corrected and modified by 
                  ; Jo Weber [100424,35], 6/1996
                   z = pixel:
@@ -1989,14 +1989,14 @@ Whatever_05m = { ; Original formula Whatever_the_name
                   |z|>=0.05
 }
 
-Whatever_06(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_06(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=fn1(z*z)+(1/z*z)+pixel,
                           |z|>=0.05
 }
 
-Whatever_06m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_06m(XYAXIS) { ; Original formula Whatever_the_name
                          ; corrected and modified by 
                          ; Jo Weber [100424,35], 6/1996
                           z = pixel:
@@ -2005,13 +2005,13 @@ Whatever_06m(XYAXIS) = { ; Original formula Whatever_the_name
                           |z|>=0.05
 }
 
-Whatever_07 = { ; Original formula Whatever_the_name
+Whatever_07 { ; Original formula Whatever_the_name
                 ; modified by Jo Weber [100424,35], 6/1996
                   z = pixel:
                   z=fn1(z)*fn2(z)+(1/z*z)+pixel,
 }
 
-Whatever_07m = { ; Original formula Whatever_the_name
+Whatever_07m { ; Original formula Whatever_the_name
                  ; corrected and modified by 
                  ; Jo Weber [100424,35], 6/1996
                   z = pixel:
@@ -2019,13 +2019,13 @@ Whatever_07m = { ; Original formula Whatever_the_name
                   z=fn1(z)*fn2(z)+a2+pixel,
 }
 
-Whatever_08(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_08(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=fn1(z)*fn2(z)+(1/z*z)+pixel,
 }
 
-Whatever_08m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_08m(XYAXIS) { ; Original formula Whatever_the_name
                          ; corrected and modified by 
                          ; Jo Weber [100424,35], 6/1996
                           z = pixel:
@@ -2033,13 +2033,13 @@ Whatever_08m(XYAXIS) = { ; Original formula Whatever_the_name
                           z=fn1(z)*fn2(z)+a2+pixel,
 }
 
-Whatever_09(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_09(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=fn1(z)*fn2(z)+(p1/z*z)+pixel,
 }
 
-Whatever_09m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_09m(XYAXIS) { ; Original formula Whatever_the_name
                          ; corrected and modified by 
                          ; Jo Weber [100424,35], 6/1996
                           z = pixel:
@@ -2047,13 +2047,13 @@ Whatever_09m(XYAXIS) = { ; Original formula Whatever_the_name
                           z=fn1(z)*fn2(z)+a2+pixel,
 }
 
-Whatever_10 = { ; Original formula Whatever_the_name
+Whatever_10 { ; Original formula Whatever_the_name
                 ; modified by Jo Weber [100424,35], 6/1996
                   z = pixel:
                   z=fn1(z)*fn2(z)+(p1/z*z)+pixel,
 }
 
-Whatever_10m = { ; Original formula Whatever_the_name
+Whatever_10m { ; Original formula Whatever_the_name
                  ; corrected and modified by 
                  ; Jo Weber [100424,35], 6/1996
                   z = pixel:

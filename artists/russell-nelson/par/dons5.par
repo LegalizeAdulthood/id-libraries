@@ -32,7 +32,7 @@ dazzle_2           {
   }
 
 petals             {
-  reset type=formula formulafile=fractint.frm formulaname=gamma
+  reset type=formula formulafile=fractint.frm formulaname=Gamma
   passes=b
   corners=-2.049003/-3.130923/-0.6747279/0.7678321/-3.130923/0.7678321
   params=1 float=y inside=bof61 outside=imag potential=200/200/0
@@ -70,7 +70,7 @@ glow               {
 
 
 ornate_sceptre     {
-  reset type=formula formulafile=fractint.frm formulaname=jm_25
+  reset type=formula formulafile=fractint.frm formulaname=Jm_25
   function=sin/sqr passes=b
   corners=1.952074/1.3280722/0.39720571/-0.43479818/1.3280722/-0.43479818
   params=1 float=y maxiter=75 inside=zmag outside=summ
@@ -81,7 +81,7 @@ ornate_sceptre     {
   }
 
 white_line         {
-  reset type=formula formulafile=fractint.frm formulaname=jm_02
+  reset type=formula formulafile=fractint.frm formulaname=Jm_02
   function=sin passes=b
   corners=-5.724374/-7.426142/1.135862/-1.133158/-7.426142/-1.133158
   float=y maxiter=75 inside=zmag outside=summ potential=256/500/16
@@ -89,7 +89,7 @@ white_line         {
   }
 
 night_bloom        {
-  reset type=formula formulafile=skinner.frm formulaname=cgnewtonsinexp
+  reset type=formula formulafile=skinner.frm formulaname=CGNewtonSinExp
   passes=b
   corners=-3.881508/-5.70852/-1.223746/1.212322/-5.70852/1.212322
   params=1 maxiter=255 inside=zmag outside=summ potential=256/256/0
@@ -99,7 +99,7 @@ night_bloom        {
   }
 
 spring_brocade     { 
-  reset type=formula formulafile=skinner.frm formulaname=cgnewtonsinexp
+  reset type=formula formulafile=skinner.frm formulaname=CGNewtonSinExp
   passes=b
   corners=-5.398283/-6.940474/-1.033147/1.023152/-6.940474/1.023152
   params=1 maxiter=155 fillcolor=128 inside=zmag potential=256/256/0
@@ -137,7 +137,7 @@ overwrought        {
   }
 
 gray_star          {
-  reset type=formula formulafile=skinner.frm formulaname=leeze passes=t
+  reset type=formula formulafile=skinner.frm formulaname=Leeze passes=t
   corners=2.955103/-2.795281/3.8273/-3.839829/-2.795281/-3.839829
   params=6 float=y maxiter=75 inside=bof61 potential=255/255/64
   colors=000SSS<36>JJJJJwIIIIIUIIII0KHHH<7>FFFUFFcFFmFFmEEzEEEEE<15>AAAAUz\
@@ -165,7 +165,7 @@ mitosis         {
   }
 
 fender_again       {
-  reset type=formula formulafile=skinner.frm formulaname=fractalfenderc
+  reset type=formula formulafile=skinner.frm formulaname=FractalFenderC
   passes=b
   corners=-2.001077/0.4589229/-1.658693/1.621307/0.4589229/1.621307
   params=0.56000000000000005 float=y maxiter=25 inside=bof60
@@ -175,7 +175,7 @@ fender_again       {
   }
 
 liar_brooch        {
-  reset type=formula formulafile=liar.frm formulaname=liar3 passes=b
+  reset type=formula formulafile=liar.frm formulaname=Liar3 passes=b
   corners=-5.591804/5.853329/5.396369/-3.187481 params=-0.0066 float=y
   maxiter=75 inside=bof61 potential=255/500/64
   colors=00066Y<17>GGqHHsHHr<30>00KSNC<29>xo`zpaypa<29>UPF000<30>ppp<2>lll\

@@ -131,7 +131,7 @@ ckp1058            { ; "Infinite Four-Leaf"
 
 ckp1059            { ; "Lighthouse of the Vortex"
                      ; 00:07:56.97 .. 29 november 1994 .. caren park
-  reset=1827 type=formula formulafile=formulas.frm
+  reset=1827 type=formula formulafile=inandout.frm
   formulaname=inandout04 function=sqr
   corners=-1.145015/0.4038108/-0.5881153/0.5747173
   params=1.0389999999999999/0.050955 float=y
@@ -141,7 +141,7 @@ ckp1059            { ; "Lighthouse of the Vortex"
 
 ckp1060            { ; "What Do You See?"
                      ; 00:02:19.18 .. 02 december 1994 .. caren park
-  reset=1730 type=formula formulafile=formulas.frm formulaname=402
+  reset=1730 type=formula formulafile=kg4.frm formulaname=402
   function=log/ident
   corners=1.55339/-0.08714555/-1.458255/1.458255/-0.08714555/1.458255
   float=y inside=bof61 outside=real potential=222/444/0
@@ -175,7 +175,7 @@ ckp1063            { ; "Inside the Klein"
                      ; variation on fr384.var_b by don lebow 76704,41
                      ; which is a variation on don archer's fr384.var
                      ;   - no fpu ... one little switch
-  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  reset=1827 type=formula formulafile=da.frm formulaname=dafrm21
   function=sinh/log
   corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
   1/0.676968634 params=4 inside=maxiter potential=255/300/900
@@ -193,7 +193,7 @@ ckp1064            { ; "Steel Logo"
                      ; variation on fr384.var_b by don lebow 76704,41
                      ; which is a variation on don archer's fr384.var
                      ;   - no fpu ... one little switch
-  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  reset=1827 type=formula formulafile=da.frm formulaname=dafrm21
   function=sinh/log
   corners=0.0460762382/-0.00549817085/0.570017517/0.698501229/-0.034156680\
   1/0.676968634 params=4 inside=maxiter potential=255/300/900
@@ -320,7 +320,7 @@ ckp1072            { ; "Wheel with Identity Problem"
 
 a1073              { ; 2d for ckp1072
                      ; 00:17:46.43 .. 08 december 1994 .. caren park
-  reset=1821 type=formula formulafile=formulas.frm formulaname=f'liar1
+  reset=1821 type=formula formulafile=liar.frm formulaname=F'Liar1
   function=abs
   corners=-0.08402437/1.105278/-3.694721/4.652428/-3.652035/1.075091
   params=4/3/2/1 inside=bof60 outside=mult decomp=256
@@ -341,7 +341,7 @@ ckp1073            { ; "I WANT a Cookie NOW"
 
 ckp1074            { ; "Arrowheads"
                      ; 00:09:03.04 .. 08 december 1994 .. caren park
-  reset=1821 type=formula formulafile=formulas.frm formulaname=f'liar1
+  reset=1821 type=formula formulafile=liar.frm formulaname=F'Liar1
   function=sqrt
   corners=0.3676936/0.65359789/-0.52440876/1.4821078/-0.48999858/0.6221755\
   2 params=1/2/3/4 inside=bof60 outside=mult decomp=256
@@ -352,7 +352,7 @@ ckp1074            { ; "Arrowheads"
 
 ckp1075            { ; "Steel Bath"
                      ; 00:13:50.69 .. 10 december 1994 .. caren park
-  reset=1827 type=formula formulafile=formulas.frm formulaname=dafrm21
+  reset=1827 type=formula formulafile=da.frm formulaname=dafrm21
   function=sin/log
   corners=0.0326144695/0.0371544361/0.594347477/0.677842975/-0.00583332777\
   /0.64556694 params=4 inside=maxiter potential=255/300/900 decomp=256

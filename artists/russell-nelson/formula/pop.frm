@@ -1,8 +1,8 @@
-These formulas are  based on Bradley Beacham's and Jon
-Horner's remarkable PopCornJulCplx from Beacham's snazzy.frm. 
-My contributions are of the "monkey-at-the-keyboard" kind, but 
-their formula is so robust that almost anything you do with it 
-is rewarding. Homage to them!
+; These formulas are  based on Bradley Beacham's and Jon
+; Horner's remarkable PopCornJulCplx from Beacham's snazzy.frm. 
+; My contributions are of the "monkey-at-the-keyboard" kind, but 
+; their formula is so robust that almost anything you do with it 
+; is rewarding. Homage to them!
 
 pop01   { 
   h = (0.05 * ((p1)<=0) + (p1) * (0<p1))

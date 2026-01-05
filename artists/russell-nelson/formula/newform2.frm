@@ -440,7 +440,7 @@ iter=iter+1
 |z|<=bailout
 }
 
-FRM:MandNewt03 {; Jim Muth
+MandNewt03 {; Jim Muth
 z=c=pixel:
 a=z^3+(c-1)*z-c
 b=p1*z^p2+c-1
@@ -448,7 +448,7 @@ z=z-p3*a/b
 .0001 <= |a|
 }
 
-FRM:5_man{; Stephen C. Ferguson
+5_man{; Stephen C. Ferguson
       ; adapted for Fractint by Les St Clair, 1997
       ; use real p1 to set bailout. try p1=4
 z=0, c=pixel:
@@ -750,7 +750,7 @@ kmoe-03 {; by Kirsten Moe. Rewritten by G. Martin for Orgform 7/14/97
   z<12 
 }
         
-FRM:tent_in_mod { ; Modified Sylvie Gallet formula
+tent_in_mod { ; Modified Sylvie Gallet formula
               ; Modified tent_inside.frm (generalized by Les St Clair)
               ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
               ; set p1=0, p2=0.001 for default behaviour
@@ -1870,4 +1870,3 @@ May      { ; Sylvie Gallet, Dec 1997
  cont
  }
 
-

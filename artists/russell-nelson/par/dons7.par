@@ -39,14 +39,14 @@ ruby_tuesday       {
   }
 
 roundtuit          {
-  reset type=formula formulafile=fractint.frm formulaname=jm_17
+  reset type=formula formulafile=fractint.frm formulaname=Jm_17
   function=sin/flip/ident passes=b corners=-2/2/-1.5/1.5 params=1/-1
   float=y maxiter=32000 inside=period decomp=256
   colors=0000fz<44>02z01z01z11y<92>kN2lO1lO1lP1<61>zz0zzQ<45>zzz0fz
   }
 
 observer           {
-  reset type=formula formulafile=dons.frm formulaname=scsklms passes=1
+  reset type=formula formulafile=dons.frm formulaname=ScSkLMS passes=1
   corners=-8.022094/-2.535549/-3.620219/3.695184/-2.535549/3.695184
   params=4 float=y inside=zmag potential=255/255/16 decomp=256
   colors=000<4>0900B00B2<26>00z<20>05D06A068075073080<2>020000000<14>00011\
@@ -68,7 +68,7 @@ bar_none           {
   }
 
 crude_ornament     {
-  reset type=formula formulafile=fractint.frm formulaname=zz passes=b
+  reset type=formula formulafile=fractint.frm formulaname=ZZ passes=b
   corners=-5.405977/11.286/10.91949/-11.3366/11.286/-11.3366 params=1
   inside=bof61 outside=mult decomp=256
   colors=3ap000<124>yyyzzzyyy<100>CCCCCCBBBAAA<19>000000000000
@@ -76,7 +76,7 @@ crude_ornament     {
 
 
 simple_pastel      {
-  reset type=formula formulafile=fractint.frm formulaname=zz passes=b
+  reset type=formula formulafile=fractint.frm formulaname=ZZ passes=b
   corners=0.82791954/0.62555271/1.0162994/1.2861103/0.62555271/1.2861103
   inside=bof61 outside=mult decomp=256
   colors=000iie<4>ffeeeeeeedee<10>_eiZeiYejYek<16>inujovinu<47>bgmbgmbhm<1\
@@ -86,7 +86,7 @@ simple_pastel      {
   }
 
 rons_weave         {
-  reset type=formula formulafile=dons.frm formulaname=reb004m
+  reset type=formula formulafile=dons.frm formulaname=REB004M
   function=tan/tan passes=1
   corners=-1.17529/1.150249/-0.8533433/0.8909 params=1/2/1/2
   inside=bof60 potential=255/200/0
@@ -105,7 +105,7 @@ monstro            {
   }
 
 section            {
-  reset type=formula formulafile=dons.frm formulaname=reb005f
+  reset type=formula formulafile=dons.frm formulaname=REB005F
   function=ident/sqr passes=b
   corners=-1.495359/1.738182/0.01721483/2.442362 params=44 inside=zmag
   outside=real potential=255/255/255 decomp=256
@@ -116,7 +116,7 @@ section            {
   }
 
 section_2          {
-  reset type=formula formulafile=dons.frm formulaname=reb005f
+  reset type=formula formulafile=dons.frm formulaname=REB005F
   function=ident/sqr passes=b
   corners=1.866653/-1.810492/0.002735615/-2.755112 params=44
   inside=zmag outside=real potential=255/255/255 decomp=256
@@ -127,7 +127,7 @@ section_2          {
   }
 
 circular_warp      {
-  reset type=formula formulafile=dons.frm formulaname=reb005f
+  reset type=formula formulafile=dons.frm formulaname=REB005F
   function=cotan/tanh passes=b
   corners=1.809764/-1.783589/-2.377354/2.41377/-1.783589/2.41377
   inside=zmag outside=real potential=255/255/255 decomp=256
@@ -138,7 +138,7 @@ circular_warp      {
   }
 
 foop              {
-  reset type=formula formulafile=dons.frm formulaname=reb005f
+  reset type=formula formulafile=dons.frm formulaname=REB005F
   function=tanh/recip passes=t corners=31.99/-31.99/22.61622/-25.36859
   params=1 float=y inside=zmag outside=real potential=255/128/64
   decomp=256
@@ -157,7 +157,7 @@ hot_stuff          {
   }
 
 pilot_light        {   
-  reset type=formula formulafile=dons.frm formulaname=reb005g
+  reset type=formula formulafile=dons.frm formulaname=REB005G
   function=cosxx/recip passes=b
   corners=-0.14035708/0.13013941/-0.10278863/0.10006356 params=1/0/1
   inside=bof61 potential=255/128/0
@@ -167,7 +167,7 @@ pilot_light        {
   }
 
 node               {
-  reset type=formula formulafile=dons.frm formulaname=reb005f
+  reset type=formula formulafile=dons.frm formulaname=REB005F
   function=conj/ident passes=b
   corners=-31.98992/31.19687/5.92974/-5.929737/-3.550156/-31.99001
   params=21 maxiter=32000 inside=bof61 outside=real
@@ -189,7 +189,7 @@ stepping_up        {
   }
 
 dancer             {
-  reset=1820 type=formula formulafile=dons.frm formulaname=reb005e
+  reset=1820 type=formula formulafile=dons.frm formulaname=REB005E
   function=ident/recip passes=b
   corners=-0.591302/0.6053864/-0.90162852/-0.004111198 params=6
   float=y inside=zmag outside=real potential=255/255/255 decomp=256
@@ -199,7 +199,7 @@ dancer             {
 
 slightly_twisted       {
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=fliplambdaj passes=t
+  formulaname=FlipLambdaJ passes=t
   corners=1.247649/-1.247676/1.663534/-1.66355/-1.247676/-1.66355
   params=1/0.5 float=y inside=maxiter potential=255/450/0 decomp=255
   colors=000<12>FJKGKLHLNJMOKOP<8>TZaU_bVacWbdXce<9>dlpemqenq<5>irvirvjswj\
@@ -211,7 +211,7 @@ slightly_twisted       {
   }
 
 improbable_tiles   {
-  reset=1820 type=formula formulafile=dons.frm formulaname=reb005e
+  reset=1820 type=formula formulafile=dons.frm formulaname=REB005E
   function=tan/tan passes=t
   corners=-27.27379/-17.79797/-0.5012818/6.60559 params=1/0.5 float=y
   inside=zmag outside=real potential=255/255/255 decomp=256
@@ -221,7 +221,7 @@ improbable_tiles   {
   }
 
 power_grid         {
-  reset=1820 type=formula formulafile=dons.frm formulaname=reb005e
+  reset=1820 type=formula formulafile=dons.frm formulaname=REB005E
   function=tan/tan passes=b
   corners=2.7203101/0.81120853/0.392225819/0.371230092/2.0229555/-0.537571\
   549 params=1/0.5 float=y inside=zmag outside=real

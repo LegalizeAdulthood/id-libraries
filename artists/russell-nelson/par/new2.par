@@ -226,7 +226,7 @@ bridges            {
  } 
 
 cogs               {
- reset type=formula formulafile=fractint.frm formulaname=scottsic
+ reset type=formula formulafile=skinner.frm formulaname=ScottSIC
  passes=1 corners=1.6674/1.961663/0.655304/0.876 float=y maxiter=1023
  inside=maxiter potential=255/511/0
  colors=0005Tn<10>4Zf4_e4Ye5Ve6Sf<5>0CT<2>CFdGHiIHh<2>RHc<7>toN<11>TTI<8>mZW<\
@@ -269,7 +269,7 @@ frogs              {
  }
 
 rainbow            {
- reset type=formula formulafile=ownfile.frm formulaname=scskzczz
+ reset type=formula formulafile=ownfile.frm formulaname=ScSkZCZZ
  passes=1 corners=0.4366/1.600867/0.615518/1.4888 maxiter=1023
  inside=maxiter potential=255/511/0
  colors=0004BOz00z20<5>z10z00z20<11>zT0zW0zX0<8>zb0zc0zf0<4>zz0<8>zz0<5>0l10l\
@@ -283,7 +283,9 @@ ferncave           {
  logmap=yes
  colors=0002Q00O02Y04L07a0HK0S_0Q00<14>w00z00z30<13>zh0zk0zl0<10>zw0zx0zx0zx0\
  <124>T1YT1YS0ZR0_<33>10y10y00z00z11y<31>PPa0O01P0
- } scorpio            {
+ }
+
+ scorpio            {
  reset type=mandelfn function=sinh passes=1
  corners=0.985488/0.98735428/0.25159299/0.25299197 float=y maxiter=16383
  bailout=8192 inside=0 logmap=yes
@@ -341,7 +343,7 @@ peacock            { ; (C)  Lee H. Skinner, 1993      Cycle this one!
  }
 
 Asteroid          {
-  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  reset type=formula formulafile=fractint.frm formulaname=NewtonSinExp
   passes=1 corners=4.438653/6.212828/1.925411/3.256043 params=1/1 float=y
   maxiter=1023 inside=0
   colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
@@ -349,7 +351,7 @@ Asteroid          {
   } 
 
 BlackPearl         {
-  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  reset type=formula formulafile=fractint.frm formulaname=NewtonSinExp
   passes=1 corners=5.212091/5.2438275/2.4160863/2.4398886 params=1/1
   float=y maxiter=1023 inside=0
   colors=000zzYNZQehIwqAhhKK00<4>zPZzFhzKJ<2>yzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
@@ -357,7 +359,7 @@ BlackPearl         {
   } 
 
 Rose               {
-  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  reset type=formula formulafile=fractint.frm formulaname=NewtonSinExp
   passes=1 corners=4.963746/5.332775/2.231113/2.507885 params=1/1 float=y
   maxiter=1023 inside=0
   colors=000zzYNZQehIwqAhhKK00<4>zPZ<2>zjGzrEyzBee7LS2BM71GD<2>D_xVkbmxVlpS<2>\
@@ -517,7 +519,7 @@ PaperMoon          { ; (C) Lee H. Skinner, 1993
 Zoom4              { ; No Description
                      ; (C) Lee H. Skinner, 1993
   reset=1720 type=formula formulafile=fractint.frm
-  formulaname=richard1 passes=1 float=no video=SF7
+  formulaname=Richard1 passes=1 float=no video=SF7
   corners=-0.403326333/-0.402899504/0.623393595/0.623713613
   maxiter=500 fillcolor=7 inside=zmag outside=summ logmap=yes
   colors=000zzIChe<2>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7>zH0<8>SDF<4>L0K<3\

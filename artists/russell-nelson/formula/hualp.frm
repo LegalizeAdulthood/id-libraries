@@ -5,4 +5,3 @@ hualp (XAXIS) { ; (c) Copyright 1996 by Manfred W.Rupp
     |real(z)| <= real(p2) || |imag(z)| <= imag(p2)
               }
 
-

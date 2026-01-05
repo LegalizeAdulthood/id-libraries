@@ -1,7 +1,7 @@
 ;; Jo_We_48.FRM
 
 
-JoWe_04b_XY = { ; Jo Weber [100424,35], 10/1996
+JoWe_04b_XY { ; Jo Weber [100424,35], 10/1996
                   bailout=p3
 		  pixel=pixel*(-1)^(pixel>0)
 		  z = pixel:

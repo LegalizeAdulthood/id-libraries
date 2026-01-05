@@ -1,43 +1,43 @@
-Path: unixg.ubc.ca!nntp.cs.ubc.ca!psgrain!usenet.eel.ufl.edu!news.mathworks.com
-!udel!gatech!howland.reston.ans.net!ix.netcom.com!netnews
-From: simmias@ix.netcom.com (Robert Friedlander)
-Newsgroups: sci.fractals,alt.binaries.pictures.fractals
-Subject: Re: Fractal paramaters
-Date: 17 Nov 1994 22:54:53 GMT
-Organization: Netcom
-Lines: 642
-Distribution: world
-Message-ID: <3agmvt$ebs@ixnews1.ix.netcom.com>
-References: <391891$2lk@www.interramp.com> <CzB0E5.1Lr@battelle.de> <3age7c$p1h
-@hermes.acs.ryerson.ca>
-NNTP-Posting-Host: ix-chi2-25.ix.netcom.com
-Xref: unixg.ubc.ca sci.fractals:4450 alt.binaries.pictures.fractals:5043
-
-In <3age7c$p1h@hermes.acs.ryerson.ca> mmorel@acs.ryerson.ca (Michael
-Morel - HTMG/F93) writes:
-
->>
->Those parameters would be great!
->
->mike
->
->By the way, is alt.fractals a newsgroup?  Its not on my server....
->
-
-Yes, alt.fractals is a news group, and thanks for the tip on
-acidwarp.zip.
-
-Here are those parameters for fractint (Some won't work unless you have
-over version 16.11.)
-________________________________________________________________________
-
-I'm sending now the most amazing, beautiful and fast Parameters (.PAR)
-file I've created using Fractint 16.11. Almost all parameters here I've
-found for myself.
-Who here have access to Usenet alt.fractals or alt.fractals.pictures,
-please, repost this message. (I'm just a read-only user there).
-And please, post here or e-mail to me (wohlers@bruc.bitnet or
-wohlers@ccvax.unicamp.ansp.br) the .PAR files you have !
+; Path: unixg.ubc.ca!nntp.cs.ubc.ca!psgrain!usenet.eel.ufl.edu!news.mathworks.com
+; !udel!gatech!howland.reston.ans.net!ix.netcom.com!netnews
+; From: simmias@ix.netcom.com (Robert Friedlander)
+; Newsgroups: sci.fractals,alt.binaries.pictures.fractals
+; Subject: Re: Fractal paramaters
+; Date: 17 Nov 1994 22:54:53 GMT
+; Organization: Netcom
+; Lines: 642
+; Distribution: world
+; Message-ID: <3agmvt$ebs@ixnews1.ix.netcom.com>
+; References: <391891$2lk@www.interramp.com> <CzB0E5.1Lr@battelle.de> <3age7c$p1h
+; @hermes.acs.ryerson.ca>
+; NNTP-Posting-Host: ix-chi2-25.ix.netcom.com
+; Xref: unixg.ubc.ca sci.fractals:4450 alt.binaries.pictures.fractals:5043
+; 
+; In <3age7c$p1h@hermes.acs.ryerson.ca> mmorel@acs.ryerson.ca (Michael
+; Morel - HTMG/F93) writes:
+; 
+; >>
+; >Those parameters would be great!
+; >
+; >mike
+; >
+; >By the way, is alt.fractals a newsgroup?  Its not on my server....
+; >
+; 
+; Yes, alt.fractals is a news group, and thanks for the tip on
+; acidwarp.zip.
+; 
+; Here are those parameters for fractint (Some won't work unless you have
+; over version 16.11.)
+; ________________________________________________________________________
+; 
+; I'm sending now the most amazing, beautiful and fast Parameters (.PAR)
+; file I've created using Fractint 16.11. Almost all parameters here I've
+; found for myself.
+; Who here have access to Usenet alt.fractals or alt.fractals.pictures,
+; please, repost this message. (I'm just a read-only user there).
+; And please, post here or e-mail to me (wohlers@bruc.bitnet or
+; wohlers@ccvax.unicamp.ansp.br) the .PAR files you have !
 
 
 
@@ -294,7 +294,7 @@ CsCEs<19>CqsCssCsq<7>Csa
   }
 
 Montezuma          { ; From the temple of Montezuma
-reset type=formula formulafile=\GRAPHICS\FRACTAL\improved.frm
+reset type=formula formulafile=improved.frm
 formulaname=Newton4 corners=-2.308871/2.341564/-1.743913/1.74391
 params=0/123/3.7/5.1 inside=0 logmap=yes potential=120/100/0
 decomp=128
@@ -472,7 +472,7 @@ colors=000Q3J<7>m8R<15>58d<20>jlumnvopvqrv<2>wxvzzvzzr<5>zzU<8>r00<14>066<40\
   }
 
 Wine2              {
-reset type=formula formulafile=fractint.frm formulaname=wineglass
+reset type=formula formulafile=fractint.frm formulaname=Wineglass
 passes=b
 corners=-2.371209/1.118998/2.124218/-2.125593/1.118998/-2.125593
 maxiter=500 inside=bof60 outside=real logmap=yes
@@ -481,17 +481,20 @@ B4<7>dA1
   }
 
 WineMasterSun      {
-reset type=formula formulafile=fractint.frm formulaname=wineglass
+reset type=formula formulafile=fractint.frm formulaname=Wineglass
 corners=-2.371209/1.118998/2.124219/-2.125593/1.118998/-2.125593
 maxiter=500 inside=zmag outside=real logmap=yes decomp=256
 colors=000<35>X6IY7JZ9L<17>wwj
+}
 
+; corrupted entry?
 Central            {
 reset type=fn(z)+fn(pix) function=recip/cotan
 corners=9.635733/9.526386/-0.065556/0.06723/9.526386/0.06723
-params=1000/80/111/1 m
+params=1000/80/111/1
 colors=000wxvzzv<6>zzU<8>r00<14>066<39>B2jB2kA3i<8>39Q29O1AMAI2AI<24>sFLuFLw\
 FLzGMzHMzIM<30>zuUz
+}
 
 toten              {
 reset type=mandel
@@ -502,14 +505,11 @@ W<6>zUA<7>L0L<3>l7Fs9DzAA<12>zUU<6>wwf<9>zS1<8>633314<15>OHU<7>zhf<7>P0P<6>w
    }
 
 
-[] Mail to Rodrigo Siqueira:          [] "Ich will meine mauer weider
-haben!"
-[]  Rua Bueno Brandao,444, ap.93/b    []
-''''''''''''''''''''''''''''''''''
-[]  Cep:04509 Sao Paulo - SP  BRAZIL  []    E-MAIL: WOHLERS@BRUC.BITNET
-[] Phone: x55-11-24
-0-1635             []    or WOHLERS@CCVAX.UNICAMP.ANSP.BR
-
-aNY question, error found, suggestions , .PAR files or anything, just
-e-mail to me! Thanks,
-Rodrigo Siqueira :-)
+; [] Mail to Rodrigo Siqueira:          [] "Ich will meine mauer weider haben!"
+; []  Rua Bueno Brandao,444, ap.93/b    [] ''''''''''''''''''''''''''''''''''
+; []  Cep:04509 Sao Paulo - SP  BRAZIL  []    E-MAIL: WOHLERS@BRUC.BITNET
+; [] Phone: x55-11-240-1635             []    or WOHLERS@CCVAX.UNICAMP.ANSP.BR
+; 
+; aNY question, error found, suggestions , .PAR files or anything, just
+; e-mail to me! Thanks,
+; Rodrigo Siqueira :-)

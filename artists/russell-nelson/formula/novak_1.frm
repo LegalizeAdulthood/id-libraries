@@ -51,4 +51,3 @@ PRN_04 { ; Paul Novak, 1996
     z= m*b + (1/m)*t + c
     |z| < upper
   }
-

@@ -1,26 +1,26 @@
 
- comment = { SKINNER.FRM }
+ comment { SKINNER.FRM }
 
- Zexpe (XAXIS) = {
+ Zexpe (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- Zexpe2 (XAXIS) = {
+ Zexpe2 (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + z ^ (s * pixel), |z| <= 100
    }
 
- Ze2 (XAXIS) = {
+ Ze2 (XAXIS) {
       s1 = exp(1.,0.),
       s = s1 * s1,
       z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- comment = {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
+ comment {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
 
- Exipi (XAXIS) = {
+ Exipi (XAXIS) {
       s = log(-1.,0.) / (0.,1.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
@@ -217,7 +217,7 @@
  Fzppsqsi  {z = pixel, f = sin (pixel):
                        z = sqr (z)  + f, |z| <= 50}
 
- Leeze (XAXIS) = {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+ Leeze (XAXIS) {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 
  comment { version 13.0:}
@@ -371,17 +371,17 @@ RCL_10 { ; Ron Lewen, 76376,2567
    |z| <= test
   }
 
- comment = { Moire Tetrated Log - Improper Bailout }
+ comment { Moire Tetrated Log - Improper Bailout }
 
- TLog (XAXIS) = {
+ TLog (XAXIS) {
         z = c = log(pixel):
                 z = c ^ z,
                     z <= (p1 + 3)
         }
 
- comment = { Tetrated Hyperbolic Sine - Improper Bailout }
+ comment { Tetrated Hyperbolic Sine - Improper Bailout }
 
- TSinh (XAXIS) = {
+ TSinh (XAXIS) {
         z = c = sinh(pixel):
                 z = c ^ z,
                     z <= (p1 + 3)
@@ -412,3 +412,8 @@ M-SetInNewton(XAXIS) {; use float=yes
   z = nm/dn+2*z/3,   |(z-oldz)|>=|0.01|
  }
 
+Zexpe (XAXIS) {
+  s = exp(1.,0.), z = Pixel:
+   z = z ^ s + pixel
+    |z| <= 100
+  }

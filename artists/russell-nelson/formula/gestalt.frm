@@ -1,8 +1,8 @@
-// All Formulas & Parameters 
-// By Vincent Damion Presogna
-// Copyright 1996
-// 76455.2222@CompuServe.com
-// Have a pleasent day & enjoy!
+; // All Formulas & Parameters 
+; // By Vincent Damion Presogna
+; // Copyright 1996
+; // 76455.2222@CompuServe.com
+; // Have a pleasent day & enjoy!
 
 
 Grunge { 

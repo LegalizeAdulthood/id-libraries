@@ -1,7 +1,7 @@
-// All Formulas by Vincent Damion Presogna
-// A.K.A. Sneaky-D; 76455.2222@Compuserve.com
-// 1996 copyright
-// Do what thou whilst for that is the whole of the law
+; // All Formulas by Vincent Damion Presogna
+; // A.K.A. Sneaky-D; 76455.2222@Compuserve.com
+; // 1996 copyright
+; // Do what thou whilst for that is the whole of the law
 
 Xerreal {
 z = c = pixel:

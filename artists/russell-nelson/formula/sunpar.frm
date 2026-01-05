@@ -1,4 +1,8 @@
-BILL13 (yaxis) {; Bill Rossi   z=pixel,pi=3.142857142857:     z=fn1(z)/fn2(z)-(fn3(z)*pi),     z=fn4((z)^pi),   |z| <= 4 }    
+BILL13 (yaxis) {; Bill Rossi
+  z=pixel,pi=3.142857142857:
+  z=fn1(z)/fn2(z)-(fn3(z)*pi),
+  z=fn4((z)^pi),
+  |z| <= 4 }    
 
 Fatso {
   z=x=1/pixel, c= fn1 (z):

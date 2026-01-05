@@ -37,7 +37,7 @@
 ckp1351            { ; "Arrowhead of Dagnon"
                      ; 00:00:53.17 .. 20 january 1996 .. caren park
                      ; derived and recolored from KG-OOF2:201
-  reset=1921 type=formula formulafile=forms.frm formulaname=oof2
+  reset=1921 type=formula formulafile=kgoof2.frm formulaname=oof2
   function=sqr center-mag=4.145e-006/-3.40418/1.20242/1/180
   params=1/2/3/4 inside=maxiter potential=555/444/2
   colors=0000u0<12>0N00K01J0<13>I20K00M00<14>z00<13>80r40v20x00z<5>00i00a<\
@@ -49,7 +49,7 @@ ckp1351            { ; "Arrowhead of Dagnon"
 ckp1352            { ; "Fire Ram"
                      ; 00:01:13.49 .. 20 january 1996 .. caren park
                      ; derived and recolored from KG-OOF2:205
-  reset=1921 type=formula formulafile=forms.frm formulaname=oof2
+  reset=1921 type=formula formulafile=kgoof2.frm formulaname=oof2
   function=sqr center-mag=0.000865489/-0.203016/12.8935/1/180
   params=4/3/2/1 inside=maxiter potential=555/444/2
   colors=00d00Y<3>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K00M00<\
@@ -60,7 +60,7 @@ ckp1352            { ; "Fire Ram"
 ckp1353            { ; "Cross of KG"
                      ; 00:06:05.37 .. 22 january 1996 .. caren park
                      ; derived from KG-FORM2:210
-  reset=1820 type=formula formulafile=form2.frm formulaname=210
+  reset=1820 type=formula formulafile=kg2.frm formulaname=210
   center-mag=-0.175954/2e-006/0.6666676/1/90 float=y inside=bof60
   outside=real potential=222/222/2343
   colors=ANg05L<12>2CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<\
@@ -82,7 +82,7 @@ ckp1354            { ; "Heater Vents"
 
 ckp1355            { ; "The Hole in the Spiral Circle"
                      ; 00:43:00.30 .. 24 january 1996 .. caren park
-  reset=1921 type=formula formulafile=kg.frm formulaname=davidsmask
+  reset=1921 type=formula formulafile=davweird.frm formulaname=davidsmask
   center-mag=+1.50805139073207300/+0.07224567296855650/208358/1/-90
   params=1/0 float=y
   colors=00002I00Z<3>00N00K01J03H<9>0G40H30I20K00M00P0<13>0z0<14>0N00K01J0\
@@ -154,7 +154,7 @@ ckp1360            { ; "Dancing Gods Jewel"
 ckp1361            { ; "Fractint, in Space"
                      ; 00:35:32.20 .. 02 february 1996 .. caren park
                      ; with apologies to Sylvie Gallet's FRACTINT.GIF
-  reset=1921 type=formula formulafile=form2.frm formulaname=fractint
+  reset=1921 type=formula formulafile=fract196.frm formulaname=Fractint
   center-mag=6e-006/-1e-006/0.6905982 float=y periodicity=0
   colors=000dpz000<45>107107208209<11>03F03G03H03I03J<3>05L06M06N17O17P<7>\
   2CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<5>M_qM`rN`rNasObs\
@@ -166,7 +166,7 @@ ckp1361            { ; "Fractint, in Space"
 
 ckp1362            { ; "Surprised Amoeba"
                      ; 00:06:24.37 .. 08 february 1996 .. caren park
-  reset=1824 type=formula formulafile=(19-2).frm formulaname=reb005g
+  reset=1824 type=formula formulafile=dons.frm formulaname=REB005G
   function=log/sqr center-mag=1.07025e-013/-1.18648/0.3402071/1/90
   params=0.32452397/0.132585/1/0 float=y inside=bof61
   potential=255/128/0
@@ -180,7 +180,7 @@ ckp1362            { ; "Surprised Amoeba"
 
 ckp1363            { ; "Fountain"
                      ; 10:50:48.00 .. 09 february 1996 .. caren park
-  reset=1921 type=formula formulafile=9601.frm formulaname=carr1998
+  reset=1921 type=formula formulafile=42acarr.frm formulaname=Carr1998
   center-mag=-0.110655/-1e-006/33.69963/1/-90 params=10/15/20/25
   float=y maxiter=300 periodicity=0
   colors=00dw00z00<14>N00K00J01<13>20I00K00M<14>00z<14>00N00K01J<13>0I20K0\
@@ -190,7 +190,7 @@ ckp1363            { ; "Fountain"
 
 ckp1364            { ; "Fountain Fern"
                      ; 10:50:48.00 .. 09 february 1996 .. caren park
-  reset=1921 type=formula formulafile=9601.frm formulaname=carr1998
+  reset=1921 type=formula formulafile=42acarr.frm formulaname=Carr1998
   center-mag=-0.110655/-1e-006/33.69963/1/-90 params=10/15/20/25
   float=y maxiter=300 periodicity=0
   colors=000qfM<4>naHn`Hm`Gm_GmZG<4>hVBhUBgUAgTAfS9<16>TF1SE1SE1RD1QC1<13>\
@@ -203,8 +203,8 @@ ckp1364            { ; "Fountain Fern"
 
 ckp1365            { ; "Steel Grate"
                      ; 00:03:05.09 .. 15 february 1996 .. caren park
-  reset=1921 type=formula formulafile=(19-2)a.frm
-  formulaname=gallet-3-02 function=cotan/cos
+  reset=1921 type=formula formulafile=gallet-3.frm
+  formulaname=Gallet-3-02 function=cotan/cos
   center-mag=0.0248009/0.0248009/0.2292366/1/44.999 params=3/0/20/0
   float=y maxiter=255 inside=0 outside=summ periodicity=0
   colors=AAA210<3>000kkkwww<78>BLLAKK8PP<2>0cc<9>zz0<15>z00<35>F00zrc<41>M\
@@ -215,7 +215,7 @@ ckp1366            { ; "Klein Bottle Plumbing"
                      ; 00:02:17.97 .. 15 february 1996 .. caren park
                      ; color cycle this one!
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=cosxx/sqrt
+  formulaname=Gallet-3-02 function=cosxx/sqrt
   center-mag=-19.3879/-8.58142/0.1074218 params=3/1/15/5 maxiter=255
   inside=0 outside=summ periodicity=0
   colors=000CFI<5>234111000zVW<12>733311000e3L<11>703502201000kmx<12>56722\
@@ -228,7 +228,7 @@ ckp1366            { ; "Klein Bottle Plumbing"
 ckp1367            { ; "Antinodes"
                      ; 00:03:34.65 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=tanh/flip
+  formulaname=Gallet-3-02 function=tanh/flip
   center-mag=0.0248009/0.024801/0.7818939/1/44.999 params=2/0/3/0
   float=y maxiter=255 inside=0 outside=atan periodicity=0
   colors=17P<7>2CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<5>M_\
@@ -242,7 +242,7 @@ ckp1367            { ; "Antinodes"
 ckp1368            { ; "Tire Tracks"
                      ; 00:05:36.03 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=cotan/cotanh
+  formulaname=Gallet-3-02 function=cotan/cotanh
   center-mag=0.0248009/0.024801/0.7818939/1/44.999 params=2/0/3/0
   float=y maxiter=255 inside=0 outside=atan periodicity=0
   colors=@ca.map cyclerange=0/255
@@ -251,7 +251,7 @@ ckp1368            { ; "Tire Tracks"
 ckp1369            { ; "Contrasts"
                      ; 00:02:02.26 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=atan/exp
+  formulaname=Gallet-3-02 function=atan/exp
   center-mag=0.0248009/0.024801/0.0390947/1/44.999 params=2/0/3/0
   float=y maxiter=255 inside=0 outside=atan periodicity=0
   colors=04K<13>2CV3CW3DX4EX4EY<7>8Kc9Ld9MeAMeANfANg<5>FSlFSlGTmGUmHVn<5>M\
@@ -265,7 +265,7 @@ ckp1369            { ; "Contrasts"
 ckp1370            { ; "Cat's Eye Prism"
                      ; 00:03:47.45 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=tanh/sin
+  formulaname=Gallet-3-02 function=tanh/sin
   center-mag=-2.13163e-014/0.0531062/0.09422168/0.8596/-44.999/-0.76
   params=2/2/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -278,7 +278,7 @@ ckp1370            { ; "Cat's Eye Prism"
 ckp1371            { ; "Closeup"
                      ; 00:04:27.45 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=tanh/sin
+  formulaname=Gallet-3-02 function=tanh/sin
   center-mag=-2.75335e-014/0.0531062/0.1899631/0.8596/-44.999/-0.76
   params=2/2/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -290,7 +290,7 @@ ckp1371            { ; "Closeup"
 ckp1372            { ; "Making a Quilt"
                      ; 00:02:49.77 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=sqrt/cotan
+  formulaname=Gallet-3-02 function=sqrt/cotan
   center-mag=-1.77636e-014/0.0531062/0.1424032/0.8596/-44.999/-0.759
   params=2/2/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -306,7 +306,7 @@ ckp1372            { ; "Making a Quilt"
 ckp1373            { ; "Here, There, Everywhere"
                      ; 00:04:06.95 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=sin/tanh
+  formulaname=Gallet-3-02 function=sin/tanh
   center-mag=-1.77636e-014/0.0531062/0.1424032/0.8596/-44.999/-0.759
   params=2/2/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -321,7 +321,7 @@ ckp1373            { ; "Here, There, Everywhere"
 ckp1374            { ; "Totem, #1374"
                      ; 00:02:04.47 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=cosxx/tanh
+  formulaname=Gallet-3-02 function=cosxx/tanh
   center-mag=-1.43185/-1.18625/0.2458386/1/-134.998
   params=2.3/2.3/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0
@@ -337,7 +337,7 @@ ckp1374            { ; "Totem, #1374"
 ckp1375            { ; "Prismatic Netting"
                      ; 00:04:00.36 .. 15 february 1996 .. caren park
   reset=1921 type=formula formulafile=gallet-3.frm
-  formulaname=gallet-3-02 function=cotan/sin
+  formulaname=Gallet-3-02 function=cotan/sin
   center-mag=-0.121027/0.124526/0.0191874/1/-44.999
   params=2.3/2.3/0.05/0.05 float=y maxiter=255 inside=0 outside=atan
   periodicity=0

@@ -1,3 +1,4 @@
+{
 Some years back, when I was a young Midshipman at the Royal Portuguese
 Naval Acadamy, a visiting professor named Christopher Columbus was my
 instructor in the "Navigational Arts". Colombo (as we called him) had

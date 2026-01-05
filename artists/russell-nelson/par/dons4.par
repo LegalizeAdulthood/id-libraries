@@ -38,7 +38,7 @@ ripple_resolution  { ; a personal favorite
 
 
 archway            {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=fractint.frm formulaname=AltMTet
   passes=b
   corners=-1.0769968/-0.92058439/-0.10018165/0.10836835/-0.92058439/0.1083\
   6835 params=0.33000000000000002/-1 float=y maxiter=100 inside=bof60
@@ -87,7 +87,7 @@ ts_2             { ; zoom with a new map
   }
 
 heffalump          {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=fractint.frm formulaname=AltMTet
   passes=b
   corners=0.1615643/-1.002436/-0.7670491/0.7849509/-1.002436/0.7849509
   params=1 float=y maxiter=100 inside=bof60 outside=mult
@@ -99,7 +99,7 @@ heffalump          {
   }
 
 liar_soup          {
-  reset type=formula formulafile=liar.frm formulaname=liar4 passes=1
+  reset type=formula formulafile=liar.frm formulaname=Liar4 passes=1
   corners=0.10328394/0.84822488/-0.42109299/0.9722563/-0.29736698/0.113082\
   35 params=6.0000000000000002e-006/1 float=y inside=zmag outside=real
   potential=250/500/0
@@ -109,7 +109,7 @@ liar_soup          {
   }
 
 glass_onion        {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=fractint.frm formulaname=AltMTet
   passes=b
   corners=-1.7016037/-1.106241/-0.40460902/0.38920812/-1.106241/0.38920812
   params=1 float=y maxiter=100 inside=bof60 outside=mult
@@ -207,7 +207,7 @@ busy               { ; not so much what it is, but where you can go...
   }
 
 foliage_of_sorts   {
-  reset type=formula formulafile=skinner.frm formulaname=fractalfenderc
+  reset type=formula formulafile=skinner.frm formulaname=FractalFenderC
   passes=b corners=-0.99863317/-0.82141796/-1.3855011/-1.2525897
   params=0.10000000000000001 float=y maxiter=25 inside=bof60
   outside=mult potential=255/300/16 decomp=256

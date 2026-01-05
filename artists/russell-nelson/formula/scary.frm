@@ -39,7 +39,3 @@ m = z*z + c
 z = m * (whitesq == 1) +  (z * r) * (whitesq == 0)
 |z| < 4 || 2 < |r|
 }
-
-
-Barnsley_PHC {
-

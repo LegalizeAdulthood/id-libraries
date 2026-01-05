@@ -1,5 +1,5 @@
-// All formulas by Vincent Damion Presogna
-// A.K.A Sneaky-D; 76455.2222@CompuServe.com
+; // All formulas by Vincent Damion Presogna
+; // A.K.A Sneaky-D; 76455.2222@CompuServe.com
 
 Trekle {
 z = 0, c = pixel:

@@ -1,7 +1,7 @@
-// All formula's by Vincent Damion Presogna
-// 76455.2222@CompuServe.com
-// April 7th, 1996 (Easter Day)
-// Peace Out!! Peace In!!
+; // All formula's by Vincent Damion Presogna
+; // 76455.2222@CompuServe.com
+; // April 7th, 1996 (Easter Day)
+; // Peace Out!! Peace In!!
 
 
 Pilsner {  

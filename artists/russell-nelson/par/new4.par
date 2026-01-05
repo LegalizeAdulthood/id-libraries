@@ -41,7 +41,7 @@ It's_rude_to_Stare { ; (c)1993 Peter Moreland 100012,3213
 
 exipi63a           { ; Skinner's Secret Garden -- Formula = Exipi
                      ; Copyright Lee H. Skinner, 1993
-  reset=1720 type=formula formulafile=frac2.frm formulaname=Exipi passes=1
+  reset=1720 type=formula formulafile=new4.frm formulaname=Exipi passes=1
   corners=0.284302503443/0.2843081692585/1.057515340964/1.057519590326
   float=y maxiter=1023 inside=0 logmap=yes
   colors=000xjq090G9BL5NQ0ZrBvB8Juj0VcPcjKYA7QA79QFaR`l`kFASUE56`YE5qm7jj7\
@@ -160,7 +160,7 @@ The_computer_says: { ; They can't be natural formations... E.T.'s involved.
                      ; (c)1994 Peter Moreland 10012,3213
                      ; Blantyre House, Cossack Square, Nailsworth,
   reset=1823 type=formula formulafile=fractint.frm
-  formulaname=newtonsinexp
+  formulaname=NewtonSinExp
   corners=19.21104/15.79635/-24.86839/-11.53998/11.5841/-14.69916
   params=0.5 float=y maxiter=200 inside=0 outside=real invert=255/0/0
   finattract=y periodicity=0
@@ -406,7 +406,7 @@ Mayan_Brac_3d_II   { ; Rotated version
 
 Self_portrait      { ; Jonathan Osuch, Copyright 4/1994
                      ; Hmm, I've been looking at fractals too long!
-  reset=1820 type=formula formulafile=fractint.frm formulaname=zz
+  reset=1820 type=formula formulafile=fractint.frm formulaname=ZZ
   corners=0.50951833/0.95847915/0.8074386/1.3501489 float=y
   maxiter=150 inside=0
   }
@@ -446,7 +446,7 @@ ChristmasLights    { ; Zillions of strung Christmas Lights
                      ; Slight mutation of Bradley Beacham's "Fingernails"
                      ;   in his Overkill.Par
                      ; Copyright Lee H. Skinner, 1994
-  reset=1820 type=formula formulafile=ownfile.frm formulaname=ok-08
+  reset=1820 type=formula formulafile=ownfile.frm formulaname=OK-08
   function=sqr/sin passes=1
   corners=1.79083547/1.75093115/-0.0266133156/0.0265928585/1.75093115/0.02\
   65928585 params=10000 float=y periodicity=0
@@ -458,7 +458,7 @@ ChristmasLights    { ; Zillions of strung Christmas Lights
 Jetties            { ; An alternate coloring to Bradley Beacham's Jetties
                      ;  in his Overkill.Zip.
                      ; Copyright Lee H. Skinner, 1994
-  reset=1820 type=formula formulafile=ownfile.frm formulaname=ok-38
+  reset=1820 type=formula formulafile=ownfile.frm formulaname=OK-38
   function=sqr/sqr/ident/ident passes=1
   corners=-0.290400769/-0.213663722/0.895928122/0.86703854/-0.248908433/0.\
   840605007 float=y inside=bof60 logmap=yes
@@ -485,7 +485,7 @@ test_3d_batch      {;  Test for Fractint 19
 ckp0926            { ; "Dipole Black Hole"  (orig frm OK-3432424
                      ; 00:00:25.59 .. 02 may 1994 .. caren park
   reset=1824 type=formula formulafile=overkill.frm
-  formulaname=ok-34
+  formulaname=OK-34
   function=sqr/sqr corners=-2.83202/3.259285/-2.300822/2.267657
   params=1 float=y outside=imag debugflag=92
   colors=000504<12>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>79757\
@@ -495,7 +495,7 @@ ckp0926            { ; "Dipole Black Hole"  (orig frm OK-3432424
 
 ckp0806            { ; "Radiant Throwing Star"
                      ; 00:01:31.34 .. 15 march 1994 .. caren park
-  reset=1824 type=formula formulafile=jax.frm formulaname=fatso
+  reset=1824 type=formula formulafile=jax.frm formulaname=Fatso
   function=sqr/log passes=b
   corners=5.758451/-5.569386/-7.551483/7.55149/-5.569386/7.55149
   maxiter=250 inside=maxiter potential=250/200/235
@@ -505,7 +505,7 @@ ckp0806            { ; "Radiant Throwing Star"
   }
 
 monstro-2          {;compare at different screen sizes
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-43
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
   function=tan/conj/exp passes=t
   corners=-0.2154743/1.056526/0.8680334/-0.8279666/1.056526/-0.8279666
   params=1 float=y potential=256/128/0
@@ -558,7 +558,7 @@ comment {
 
 mandelbrot         { ; 1821 = 4:10, 1825.1 = 5:16  (126%)
   reset=1821 type=formula formulafile=fractint.frm
-  formulaname=mandelbrot
+  formulaname=Mandelbrot
   corners=0.3396806812/0.3496806762/0.5734617333/0.5809617296 float=y
   colors=@default.map
   }
@@ -594,7 +594,7 @@ jm04               { ; 1821 = 2:36, 1825.1 = 46    (29%)
   }
 
 01                 {
-  reset=1825 type=formula formulafile=fractint.frm formulaname=halley
+  reset=1825 type=formula formulafile=fractint.frm formulaname=Halley
   corners=-0.003342826368/0.003346826368/0.8089706971/0.8139879366
   params=0.5/-0.5/0.5/-0.5 float=y maxiter=32767 inside=0
   colors=000ziF<13>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Pw5N\
@@ -605,7 +605,7 @@ jm04               { ; 1821 = 2:36, 1825.1 = 46    (29%)
   }
 
 02                 {
-  reset=1825 type=formula formulafile=fractint.frm formulaname=halley
+  reset=1825 type=formula formulafile=fractint.frm formulaname=Halley
   corners=-0.002763914112/0.002767914112/0.8202233198/0.8243721909
   params=0.5/-0.5/0.5/-0.5 float=y maxiter=32767 inside=0
   colors=000R04P00<6>MBBLCCKDDKEEJFF<2>IIKHJLGLMGMNFNO<2>EQTDSUDTVCUWCVW<2\
@@ -615,7 +615,7 @@ jm04               { ; 1821 = 2:36, 1825.1 = 46    (29%)
   }
 
 03                 {
-  reset=1825 type=formula formulafile=fractint.frm formulaname=halley
+  reset=1825 type=formula formulafile=fractint.frm formulaname=Halley
   corners=-0.001380957056/0.001384957056/0.8139643814/0.8160388169
   params=0.5/-0.5/0.5/-0.5 float=y maxiter=32767 inside=0
   colors=000R04P00<6>MBBLCCKDDKEEJFF<2>IIKHJLGLMGMNFNO<2>EQTDSUDTVCUWCVW<2\
@@ -625,7 +625,7 @@ jm04               { ; 1821 = 2:36, 1825.1 = 46    (29%)
   }
 
 04                 {
-  reset=1825 type=formula formulafile=fractint.frm formulaname=halley
+  reset=1825 type=formula formulafile=fractint.frm formulaname=Halley
   corners=-0.001297738419/0.001301738419/0.6229779674/0.624927575
   params=0.5/-0.5/0.5/-0.5 float=y maxiter=32767 inside=0
   colors=000HMxINz001<50>Afy000<62>u4v110<43>vwL000<57>ARA001ARA<7>BVB55J<\
@@ -755,7 +755,7 @@ Layers             { ; with mutated Lyupanov map
 
  metal-newtons      { ; a bit overdone, but what the hey
                       ;don lebow
- reset=1820 type=formula formulafile=newforms.frm formulaname=newton_elliptic
+ reset=1820 type=formula formulafile=newforms.frm formulaname=Newton_elliptic
   passes=b
   corners=0.09513674/-1.068863/-0.7844197/0.7675803/-1.068863/0.7675803
   params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
@@ -766,7 +766,7 @@ Layers             { ; with mutated Lyupanov map
 
  very-metal-newtons   { ; zoom with a new map
                         ; don lebow
-  reset=1820 type=formula formulafile=newforms.frm formulaname=newton_elliptic
+  reset=1820 type=formula formulafile=newforms.frm formulaname=Newton_elliptic
   passes=b
   corners=-0.26753572/-0.4300515/-0.1324775/0.13223162/-0.4300515/0.132231\
   62 params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
@@ -915,7 +915,7 @@ Gee...Me_Alien?    { ; (c)1994 Peter Moreland 100012,3213
 
 Neon_Beon'         { ; (c)1994 Peter Moreland 100012,3213
                      ; Thanks to Lee!
-  reset=1825 type=formula formulafile=skinner.frm formulaname=scskzczz
+  reset=1825 type=formula formulafile=skinner.frm formulaname=ScSkZCZZ
   corners=-0.1999315919/-0.1788816361/0.01957700751/0.02118573915/-0.19512\
   57269/0.01050167367
   params=2/1.3300000000000001/3.14159265358979/2.71828182845905
@@ -971,7 +971,7 @@ Oily_Doily         { ; (c)1994 Peter Moreland 100012,3213
   }
 
 Flare...           { ; (c)1994 Peter Moreland 100012,3213
-  reset=1825 type=formula formulafile=fubar.frm formulaname=zeppo
+  reset=1825 type=formula formulafile=fubar.frm formulaname=Zeppo
   function=tan/conj
   corners=-2.269991/2.269991/4.480227/-4.480227/3.665421/-3.433653
   float=y maxiter=2000000000 fillcolor=1 decomp=256
@@ -1046,7 +1046,7 @@ ckp0210a            { ; "ApolloStarFire"
   }
 
 donho              {
-  reset=1821 type=formula formulafile=fubar.frm formulaname=larry
+  reset=1821 type=formula formulafile=fubar.frm formulaname=Larry
   function=exp/flip passes=1
   corners=-0.7414598/0.7414598/-2.650234/2.650234/-2.751834/0.03026413
   params=0/0/30 float=y maxiter=16 fillcolor=1 inside=startrail

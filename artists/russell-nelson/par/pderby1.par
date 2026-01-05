@@ -301,9 +301,6 @@ Starplants         { ; Weird stuff near a minibrot.
   cyclerange=2/255
   }
 
-test >ZZJ<4>TMESKEOJNKJVHJcDJk8It<5>IKn
-  }
-
 curlzone           { ; Back crack of 3-mini-mandelbrot.
                      ; Try color-cycling
   reset type=mandel
@@ -316,14 +313,6 @@ curlzone           { ; Back crack of 3-mini-mandelbrot.
   330<29>zz0<30>220000000<29>000
   }
 
-scept1      eUkiSq<10>mbsmUsnds<18>wwwajr<13>YssYssYrs<44>RBeQAdQAdQAd<10>TD`TD`TD_UE\
-  Z<11>WHVXHVXIUYIT<14>`MO`MOaNNaON<33>SwmRynRyn<11>QwkQwjQvjPviPvi<7>OtfOtfOs\
-  fOsfOse<19>Lo`
-  }
-
-Firebud            { ; T8>tO8<11>Y5B<13>b62b62aE7<6>Wzb<16>z00<14>v00CRf<2>4Ir9NnERj
-  }
-
 Bifurweird         { ; Logistic equation zoom.
                      ; Try color cycling!
   reset type=bifurcation corners=2.7351823/2.7472789/0.6329938/0.7070065
@@ -331,9 +320,7 @@ Bifurweird         { ; Logistic equation zoom.
   colors=000vIT<14>zHJzHJzIJ<61>lz8lz8lz9<60>JnlImmImmIlm<61>kIwkIwkIv<44>vIU
   }
 
-Icybifur           { ; Logistic equation.
-                     ; Try color cycling!
-  rol         { ; Chaos!
+rol                { ; Chaos!
                      ; Try color cycling!
   reset type=kamtorus corners=-1.0/0.999451/-0.748962/0.75
   params=1.3/0.05/1.5/1500 maxiter=32767
@@ -355,7 +342,8 @@ Fireball           { ; Looks pretty hot.
                1/3.072159
   params=2/0.05/15/1000 maxiter=32767
   colors=000i8Yj8Yj8Yj8Y<20>tbM<5>kYUjYViXWhWXfVY<21>FFwDFxCEyBEzCDx<29>QBC<4>\
-  CEk<12>NAd000OAc<16>`6V<4>REbPFdNHfLJhJKjGMk<7>0Zz<1000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
+  CEk<12>NAd000OAc<16>`6V<4>REbPFdNHfLJhJKjGMk<7>0Zz<1000007jf<10>OAzTHzZPzcWz\
+  <6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
   ta1s<29>s`OtbMsbM<29>2T10S00S0<35>0zY<3>6md
   }
 
@@ -373,37 +361,10 @@ Molten_Julia_Set   { ; The decomp combined with the colors is cool.
   cyclerange=2/255
   }
 
-ShinyBrot          { ; 256-decomped full-brot ima the tip of the spike.
-                     ; Try color cycling
-  reset type=mandel corners=-1.91601174/-1.90601216/-0.00375003/0.00374987
-  maxiter=2000 logmap=old
-  colors=000K0f<29>U0zU0zU0y<78>z0Jz0Jy0J<76>000000001<61>K0e
-t from spike, with continuous potential.
-                     ; DEFINITELY try color cycling!
-  reset type=julia corners=-2.0/1.999997/-1.499996/1.5
-  params=-1.431175585/1.             ; Try color cycling: hit - and then type 3.
-  reset type=julia corners=-2.0/1.999997/-1.499996/1.5 params=0.11/0.66
-  maxiter=1500 potential=255/1000/127
-  colors=000000000<62>vISwJTwJTwKU<61>zzzzzzzyy<59>xLVxf10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<61>a0t
-  }
-
 Flowering          {
   reset type=julia corners=-2.0/2.0/-1.5/1.5
   params=-0.5137673885/-0.5176127795 maxiter=500 logmap=yes
   colors=>zzz7mP3nR
-  }
-
-Corona             { ;  
-                     ;  
-  reset type=mandel corners=-2.5/1.5/-1.5/1.5 maxiter=3000 inside=0
-  logmap=yes
-  colors=000<109>WXyXYzXYzXYz<44>aimbjl`ll_nlYqm<9>mShoPgoPg<12>rTZsUYrVX<10>d\
-  mFboDcoG<2>fnP<47>zzz7mP3Dizzzoom           { ;  
-                     ;  
-  reset type=julia corners=-0.1/0.1/-0.075/0.075
-  params=-0.2100682295/-0.824466486 maxiter=3000 inside=0 logmap=yes
-  colors=0KzdHJ<13>bBPbBPbCP<49>amE`nD`nD`nD<77>cMAcMAbMB<30>LK`KKaKKaKKa<68>0\
-  Kz_Ae`Ad
   }
 
 Megavoltz          { ;  
@@ -422,7 +383,7 @@ Megazzcenter       { ;
   params=-0.167494858871476/1.04129505994976 maxiter=1000 inside=0
   colors=0000007jf<10>OAzTHzZPzcWz<6>zSZ<29>zV2zW0zV0<29>z10z00z00z01<60>b0sa0\
   ta1s<29>s`OtbMs
-
+}
 
 Inside-out         { ; The M-set inverted about a seahorse tail.
   reset=1821 type=mandel corners=-2.836449/1.836448/-1.071201/2.433472
@@ -523,13 +484,6 @@ Coastline          { ; A coastline with offshore islands and whirlpools...
   corners=-0.834526641/-0.790495174/-0.209159218/-0.177246151
   maxiter=2000 logmap=yes
   colors=0000K00Zc<108>0Ac0Ac0Bc<78>KmKKmKKlK<60>0K0
-  }
-
-Island             { ; An offshore island
-       { ; A mini Mandelbrot
-                     ; Mandelbrot, zoom of Coastline, 15 min on 325
-                     ; Try color cycling!
-  reset=1821 type=mayclerange=2/255
   }
 
 Bullseye!          { ; Julia set with interior coloring

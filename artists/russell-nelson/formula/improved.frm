@@ -224,7 +224,8 @@ Gamma (XAXIS)={ ; Jm Richard-Collard
   }
 
 
-{===============
+{===============}
+
 Halley (XYAXIS) {; Chris Green
    ; try p1 = 1.0 and p2 = 0.0001
    ; note--use floating point
@@ -379,7 +380,7 @@ Jm_14 {; Jm Richard-Collard
    z = fn1(fn2(fn3(z)*pixel))+pixel,
        |z| <= t
   }
- k
+
 Jm_15 {; Jm Richard-Collard
    z  = pixel,
    t  = p1+4:

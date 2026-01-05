@@ -34,4 +34,3 @@
  z = sqr(z^p2)-pixel^p3:
 }
 
-

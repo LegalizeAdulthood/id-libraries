@@ -1,10 +1,10 @@
-:: All "Par's" & images are Copyright July, 1996
+;: All "Par's" & images are Copyright July, 1996
 ;; by Vincent Damion Presogna 8^)>
 ;; 76455.2222@Compuserve.com
 ;; Enjoy & Peace be with you.
 
 Pig_01              { ; Sky Biscuit
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Pigs
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Pigs
   function=tan/ident passes=1
   corners=-0.53996393/-0.055867934/-1.5056038/-1.1425318 params=0/0
   float=y maxiter=500 inside=zmag outside=atan logmap=3 periodicity=0
@@ -20,7 +20,7 @@ Pig_01              { ; Sky Biscuit
   }
 
 Pig_02             { ; Crumple Zones
-  reset=1940 type=formula formulafile=big_pig.frm formulaname=pigs
+  reset=1940 type=formula formulafile=big_pig.frm formulaname=Pigs
   function=cotan/ident passes=t corners=-2/2/-1.5/1.5 params=0/0
   float=y maxiter=500 logmap=3 periodicity=0
   colors=000e0ezLLzLezLzzezzz0zzezzzezz0zzLez00z0Le00LLLL000e0ezLLzLezLzze\
@@ -37,7 +37,7 @@ Pig_02             { ; Crumple Zones
   }
 
 Pig_03              { ; The Quandry
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Pigs
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Pigs
   function=conj/sqr passes=1 corners=-2/2/-1.5/1.5 params=-1/0 float=y
   maxiter=1024 periodicity=0
   colors=000410731C51F72J83MA3RC4<2>_G5cH6eI6hJ7kK8nL8oM9rM9<2>wNAxOByNB<2\
@@ -53,7 +53,7 @@ Pig_03              { ; The Quandry
   }
 
 Pig_04              { ; Malignant Trophy
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Pigs
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Pigs
   function=conj/sqr passes=1
   corners=-0.976797065/-0.885384905/0.06094144/-0.06094144/-0.885384905/-0\
   .06094144 params=-1/0 float=y maxiter=1024 outside=atan
@@ -67,7 +67,7 @@ Pig_04              { ; Malignant Trophy
   }
 
 Pig_05              { ; Genesis
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Pigs
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Pigs
   function=cotan/ident passes=1
   corners=-0.072928/0.072928/-0.054696/0.054696 params=0/0 float=y
   maxiter=1024 logmap=3 periodicity=0
@@ -80,7 +80,7 @@ Pig_05              { ; Genesis
   }
 
 Pig_06              { ; The Spine of Hades
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Piglet
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Piglet
   function=log/conj passes=1
   corners=-0.23722295/-0.53722295/-0.2/0.2/-0.53722295/0.2
   params=0/0/0/0 float=y maxiter=1024 outside=atan
@@ -92,14 +92,14 @@ Pig_06              { ; The Spine of Hades
   }
 
 Pig_07              { ; Habanera
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Piglet
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Piglet
   function=log/conj passes=1 corners=1.5/-1.5/-2/2/-1.5/2
   params=0/0/0/0 float=y maxiter=1024 outside=atan
   colors=0000CC<7>0zz<9>r0r<9>000<223>zzz000066
   }
 
 Pig_08              { ;for Quashie
-  reset=1930 type=formula formulafile=fractint.frm formulaname=Piglet
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Piglet
   function=log/conj passes=b
   corners=0.47663049/0.67202249/0.52125994/0.66780394 params=0/0/0/0
   float=y maxiter=1024 outside=atan
@@ -109,7 +109,7 @@ Pig_08              { ;for Quashie
 
 
 Pig_09             { ; Them Bones
-  reset=1930 type=formula formulafile=big_pig.frm formulaname=piglet
+  reset=1930 type=formula formulafile=big_pig.frm formulaname=Piglet
   function=log/conj passes=1
   center-mag=-0.49842242503259290/+0.00000000000000014/317.7024/1/90
   params=0/0/0/0 float=y maxiter=1024 outside=atan
@@ -327,7 +327,7 @@ Pig_29             { ; Winged Helmet
   }
 
 Pig_30             { ; Winged Helmet 2
-  reset=1940 type=formula formulafile=big_pig.frm formulaname=oink
+  reset=1940 type=formula formulafile=big_pig.frm formulaname=Oink
   function=flip/sqr passes=1
   center-mag=-7.77156e-016/0.631385/1.572327 params=0/0/0/0 float=y
   maxiter=1024 inside=bof60
@@ -359,7 +359,7 @@ Pig_32             { ; Star Fish
   }
 
 Pig_33             { ; Fluff 'n' fold
-  reset=1940 type=formula formulafile=fractint.frm formulaname=Oink
+  reset=1940 type=formula formulafile=big_pig.frm formulaname=Oink
   function=exp/log passes=1
   corners=-0.5128192/-1.676819/-0.776/0.776/-1.676819/0.776
   params=1/0/0/0 float=y maxiter=511 inside=zmag outside=atan
@@ -368,7 +368,7 @@ Pig_33             { ; Fluff 'n' fold
   }
 
 Pig_34             { ; Micrify
-  reset=1940 type=formula formulafile=fractint.frm formulaname=Oink
+  reset=1940 type=formula formulafile=big_pig.frm formulaname=Oink
   function=sqr/tan passes=1
   corners=0.35983525/0.33943525/-0.0136/0.0136/0.33943525/0.0136
   params=0/0/0/0 float=y maxiter=511 outside=atan
@@ -378,7 +378,7 @@ Pig_34             { ; Micrify
   }
 
 Pig_35             { ; Mandels' Fault
-  reset=1940 type=formula formulafile=fractint.frm
+  reset=1940 type=formula formulafile=big_pig.frm
   formulaname=Pigalleto function=sqr/sqrt passes=1
   corners=-1.1047172/-0.9616132/0.58055243/0.68788043 params=0/0/0/0
   float=y maxiter=511 inside=bof60

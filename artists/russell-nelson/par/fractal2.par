@@ -1,43 +1,43 @@
 
-Path: unixg.ubc.ca!ubc-cs!van-bc!rsoft!agate!stanford.edu!bcm!rice!news.rice.ed
-u!dens
-From: dens@flammulated.rice.edu (dens)
-Newsgroups: alt.fractals
-Subject: Re: Fractint v17.1 Querys
-Message-ID: <DENS.92Feb19111613@flammulated.rice.edu>
-Date: 19 Feb 1992 17:16:13 GMT
-References: <1992Feb13.222239.1@hamp.hampshire.edu> <twegner.698078553@mwunix>
-Sender: news@rice.edu (News)
-Organization: Rice University, Houston, Texas
-Lines: 500
-In-Reply-To: twegner@mwunix.mitre.org's message of 14 Feb 92 14:42:33 GMT
-
-In article <twegner.698078553@mwunix> twegner@mwunix.mitre.org (Timothy Wegner)
- writes:
-
-   >A wonderful update...I love the huge .par file and the new alogrithm (it's
-   >even cooler to watch than boundary tracing).
-
-   We're sitting on an even larger number of examples people have sent.
-   Unfortunately it is time consuming to sort them out, so we haven't done
-   justice to them.
-
-Here, have some more! This my own .par file. I especially like the
-synapse, trisect, and leaky, but sunset, lambchop, and scorp are also
-pretty neat.
-
-Meanwhile, does anyone out there have a problem with halleySin as I
-do? If I use the parameters as in this file, I don't get the picture
-that I used to. I have a Genoa svga card, but the problem happens in
-any video mode.
-
-Finally, donut doesn't work on my machine either. It used to be a ring
-structure with holes in it in an interesting pattern. It now gives the
-same funky result as the halleySin with parm 0.1.
-
-Anyway, enjoy:
-
-   -----------------------------------------------------------------
+; Path: unixg.ubc.ca!ubc-cs!van-bc!rsoft!agate!stanford.edu!bcm!rice!news.rice.ed
+; u!dens
+; From: dens@flammulated.rice.edu (dens)
+; Newsgroups: alt.fractals
+; Subject: Re: Fractint v17.1 Querys
+; Message-ID: <DENS.92Feb19111613@flammulated.rice.edu>
+; Date: 19 Feb 1992 17:16:13 GMT
+; References: <1992Feb13.222239.1@hamp.hampshire.edu> <twegner.698078553@mwunix>
+; Sender: news@rice.edu (News)
+; Organization: Rice University, Houston, Texas
+; Lines: 500
+; In-Reply-To: twegner@mwunix.mitre.org's message of 14 Feb 92 14:42:33 GMT
+; 
+; In article <twegner.698078553@mwunix> twegner@mwunix.mitre.org (Timothy Wegner)
+;  writes:
+; 
+;    >A wonderful update...I love the huge .par file and the new alogrithm (it's
+;    >even cooler to watch than boundary tracing).
+; 
+;    We're sitting on an even larger number of examples people have sent.
+;    Unfortunately it is time consuming to sort them out, so we haven't done
+;    justice to them.
+; 
+; Here, have some more! This my own .par file. I especially like the
+; synapse, trisect, and leaky, but sunset, lambchop, and scorp are also
+; pretty neat.
+; 
+; Meanwhile, does anyone out there have a problem with halleySin as I
+; do? If I use the parameters as in this file, I don't get the picture
+; that I used to. I have a Genoa svga card, but the problem happens in
+; any video mode.
+; 
+; Finally, donut doesn't work on my machine either. It used to be a ring
+; structure with holes in it in an interesting pattern. It now gives the
+; same funky result as the halleySin with parm 0.1.
+; 
+; Anyway, enjoy:
+; 
+;    -----------------------------------------------------------------
 
 amoeba             { ; Everyone's seen this one             Dennis Schmitz
   reset type=manfn+zsqrd function=sin corners=-8.0/7.995483/-5.994003/6.0
@@ -57,7 +57,7 @@ arrowhd            { ; Well, that's what it looks like      Dennis Schmitz
   }
 
 bikheart           { ; Hearts on a bike?                    Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=cubic
+  reset type=formula formulafile=fractint.frm formulaname=Cubic
   corners=0.486123/0.496515/0.675728/0.683521 params=1 float=y
   maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=0000Ek<97>0y00z00y0<124>00y00z00y<26>0Dl

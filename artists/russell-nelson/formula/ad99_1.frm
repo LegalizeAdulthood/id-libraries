@@ -118,6 +118,7 @@ rxa0{
 z=pixel,c=real(fn1(z+p1))^p2,d=(fn3(z)/p3)*fn4(tan(z-1)-p2):
 z=((fn2(d+c)^p3)-tan(z))+whitesq
 |z|<4
+}
 rxa2{
 z=pixel,c=(fn1(z+p1)+whitesq)-1^p2:
 z=(fn2(fn3((z+c)))^p3)+c

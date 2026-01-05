@@ -33,11 +33,10 @@ z = c = pixel:
   z = z^2 + c
    real(fn1(z)) <= p1
 }
-bail_out05   {
-z = c = pixel:
-  z = z^2 + c
+
 {The next two formulas don't seem to work the way they should.
-; May be there's some bug in the code for the logical "and" and "or"}
+; May be there's some bug in the code for the logical "and" and "or"
+}
 bail_out07   {
 z = c = pixel:
   z = z^2 + c
@@ -47,7 +46,4 @@ bail_out08   {
 z = c = pixel:
   z = z^2 + c;
    |fn1(real(z))| <= p1  || |fn1(imag(z))| <= p1
-}
-   z = z^2 + c;
-     imag(z) <= abs(z) + p1
 }

@@ -5,7 +5,7 @@
 ; by 4DFRACT.FRM of Gordon Lamb                  ;
 ;------------------------------------------------; 
 
-REB005A	= {; Ron Barnett, 1993
+REB005A	  {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -17,7 +17,7 @@ REB005A	= {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005B = {; Ron Barnett, 1993
+REB005B {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -29,7 +29,7 @@ REB005B = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005C = {; Ron Barnett, 1993
+REB005C {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -41,7 +41,7 @@ REB005C = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005D = {; Ron Barnett, 1993
+REB005D {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -53,7 +53,7 @@ REB005D = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005E = {; Ron Barnett, 1993
+REB005E {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -65,7 +65,7 @@ REB005E = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005F = {; Ron Barnett, 1993
+REB005F {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -77,7 +77,7 @@ REB005F = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005G = {; Ron Barnett, 1993
+REB005G {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -161,4 +161,4 @@ SJIKENAGA03 {; Ron Barnett, 1994
 	c=p2+p1*real(pixel)-flip(imag(pixel)):
 	z=z*z*z+(c-1)*z-c, |z|<=100}
 
- 
+ 

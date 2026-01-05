@@ -80,7 +80,7 @@ Gmandel_2_b {   ; Sylvie Gallet [101324,3444]
 }
 
 ; Formula for "Black_Hole"
-: ------------------------
+; ------------------------
 Gmandel_3 {     ; Sylvie Gallet [101324,3444]
                 ; Robert W. Carr [73753,2420], 1995
   z = pixel/(conj(pixel)+(0.0,1.0)) 

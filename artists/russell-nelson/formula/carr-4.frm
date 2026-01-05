@@ -1,3 +1,4 @@
+{
 Some years back, while I was being held prisoner on Devil's Island
 for being a Bonapartist, I came upon an Abbey Priest. He too was a 
 prisoner. Our chance meeting came about while each of us were 
@@ -24,8 +25,6 @@ Bob Carr (a.k.a. Robert W. Carr, M.D.)(x30 Great-grandson of
 Ocala, FL 34482
 
 NOWWWWW, on with the games. Bring on the Christians!!!  
-}
-00-Read-me-please{
 }
 
 Carr-145{

@@ -1,4 +1,4 @@
-:: All Formulas by Vincent Damion Presogna 8^)>
+;: All Formulas by Vincent Damion Presogna 8^)>
 ;; July, 1996
 ;; 76455.2222@Compuserve.com
 ;; Enjoy & Peace be with you.

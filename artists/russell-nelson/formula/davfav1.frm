@@ -1,9 +1,9 @@
-These formulae are necessary for some of David Walter∆s [100013,2775]
-favourite pictures in davfav1.par.
-If you have any trouble or comments please let me know.
-Submited to GRAPHDEV Fractal Sources from Hong Kong 29 Dec 95.  Enjoy.
+; These formulae are necessary for some of David Walter's [100013,2775]
+; favourite pictures in davfav1.par.
+; If you have any trouble or comments please let me know.
+; Submited to GRAPHDEV Fractal Sources from Hong Kong 29 Dec 95.  Enjoy.
 
-comment={received from Ramiro Perez <RPEREZ@EARN.UTPVM1> 18 Aug 93
+comment {received from Ramiro Perez <RPEREZ@EARN.UTPVM1> 18 Aug 93
 in Frac-L group in BITNET.
 Volterra-Lotka Formulas p 125 BEAUTY OF FRACTALS
 }
@@ -36,7 +36,7 @@ y=d,
 z=x+flip(y),
 |z|<=p2
 }
-comment = { 9 May 92 copy ZZa from FRACTINT.FRM and change 
+comment { 9 May 92 copy ZZa from FRACTINT.FRM and change 
 tolerance to 0.1 - rename to MARLINZZa  
 Get sharp points with t = 0.5, but flattens curves at base.  
 Try 0.2 still flattens, but points OK. Try 0.05
@@ -49,11 +49,11 @@ marlinZZa(XAXIS) { ; Prof Jm using Newton-Raphson method
    z=z-((z1-1)/z2) ,
    0.05 <= |solution-z1|
   }
-comment = {Produces Road to Oblivion. The paramater P1 changes the #
+comment {Produces Road to Oblivion. The paramater P1 changes the #
 of Iterations and therefore the Picture. Published in Computer Graphics
 Vol 14.
 }
-zmincosz(XAXIS) = {
+zmincosz(XAXIS) {
 z = pixel:
 fz = z - cos(z);
 fdashz = 1 + sin(z);

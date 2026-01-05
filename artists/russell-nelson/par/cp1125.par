@@ -79,7 +79,7 @@ ckp1104            { ; "City in Frost"
 
 ckp1105            { ; "Reflection of Two"
                      ; 00:01:18.55 .. 14 march 1995 .. caren park
-  reset=1900 type=formula formulafile=formulas.frm
+  reset=1900 type=formula formulafile=jo_weber.frm
   formulaname=inandout13 function=cabs/log
   corners=2.157045/-1.90576/-2.712549/2.704524/-1.90576/2.704524
   params=4/0/0/0/0/0 float=y inside=maxiter potential=255/255/1000
@@ -90,7 +90,7 @@ ckp1105            { ; "Reflection of Two"
 
 ckp1106            { ; "Navels"
                      ; 00:01:18.55 .. 14 march 1995 .. caren park
-  reset=1900 type=formula formulafile=formulas.frm
+  reset=1900 type=formula formulafile=jo_weber.frm
   formulaname=inandout13 function=cabs/log
   corners=2.157045/-1.90576/-2.712549/2.704524/-1.90576/2.704524
   params=4/0/0/0/0/0 float=y inside=maxiter potential=255/255/1000
@@ -104,7 +104,7 @@ ckp1106            { ; "Navels"
 
 ckp1107            { ; "Aorta"
                      ; 00:01:22.34 .. 14 march 1995 .. caren park
-  reset=1900 type=formula formulafile=formulas.frm
+  reset=1900 type=formula formulafile=jo_weber.frm
   formulaname=inandout13 function=cabs/log
   corners=-2.204947/2.456232/-1.747942/1.747942
   params=-0.21535432/0.42341423/3/0/0/0 float=y inside=maxiter
@@ -214,7 +214,7 @@ ckp1116            { ; "Intersection, V2"
 
 ckp1117            { ; "The Sheep Seat"
                      ; 00:00:46.30 .. 31 march 1995 .. caren park
-  reset=1900 type=formula formulafile=formulas.frm formulaname=mask
+  reset=1900 type=formula formulafile=fractint.frm formulaname=Mask
   function=exp/log/cabs
   corners=2.134161/-5.677915/-5.20806/5.20806/-5.677915/5.20806
   params=0.55/0/1/0/0/0 float=y maxiter=256 inside=0
@@ -235,7 +235,7 @@ ckp1117            { ; "The Sheep Seat"
 ckp1118            { ; "Bobby Cap"
                      ; 00:01:51.34 .. 31 march 1995 .. caren park
                      ; color-cycle this one...  different aspects show
-  reset=1900 type=formula formulafile=formulas.frm formulaname=mask
+  reset=1900 type=formula formulafile=fractint.frm formulaname=Mask
   function=exp/log/cabs
   corners=-3.609547/0.06579281/2.450231/-2.450231/0.06579281/-2.450231
   params=0.55/0/4/0/0/0 float=y maxiter=256 inside=0
@@ -250,7 +250,7 @@ ckp1118            { ; "Bobby Cap"
 
 ckp1119            { ; "Stitches of Thursday"
                      ; 00:01:18.26 .. 31 march 1995 .. caren park
-  reset=1900 type=formula formulafile=formulas.frm formulaname=mask
+  reset=1900 type=formula formulafile=fractint.frm formulaname=Mask
   function=sin/tan/atanh corners=-13.13637/13.13625/-6.33817/6.33817
   params=0.85/0/2/0/0/0 float=y maxiter=256 inside=0
   potential=256/200/500
@@ -275,7 +275,7 @@ ckp1120            { ; "Surrealistic Pillow"
 
 ckp1121            { ; "Puzzle"
                      ; 00:08:17.79 .. 20 april 1995 .. caren park
-  reset=1910 type=formula formulafile=formulas.frm
+  reset=1910 type=formula formulafile=jo_weber.frm
   formulaname=inandout07 function=log/flip/conj
   corners=0.4571849/-0.3792819/-0.31952159/-0.94687169
   params=0.05/-0.02/0/0/0/0 float=y inside=bof61
@@ -318,8 +318,8 @@ ckp1123            { ; "Belt Buckle"
 
 ckp1124            { ; "Skulls of 495"
                      ; 00:00:25.93 .. 28 april 1995 .. caren park
-  reset=1920 type=formula formulafile=formulas.frm
-  formulaname=gopalsamy4
+  reset=1920 type=formula formulafile=reb003.frm
+  formulaname=Gopalsamy4
   corners=-2.757801/2.757801/0.5176079/-0.5176079/-0.2752807/-2.792419
   params=0.9/0.25/0/0/0/0 float=y maxiter=256 inside=maxiter
   potential=255/750/500
@@ -333,7 +333,7 @@ ckp1124            { ; "Skulls of 495"
 
 ckp1125            { ; "Brick Fire Shell"
                      ; 00:08:13.12 .. 28 april 1995 .. caren park
-  reset=1920 type=formula formulafile=formulas.frm
+  reset=1920 type=formula formulafile=jo_weber.frm
   formulaname=inandout07 function=log/flip/conj
   corners=0.4571849/-0.3792819/-0.31952159/-0.94687169
   params=0.05/-0.02/0/0/0/0 float=y inside=bof61

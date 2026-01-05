@@ -114,7 +114,7 @@ JoWe_What_05m_PHC { ; Jo Weber [100424,35] 9/1996
                |z|>=0.05
    }
 
-JoWe_What_07m_PHC = { ; Jo Weber [100424,35] 9/1996 
+JoWe_What_07m_PHC   { ; Jo Weber [100424,35] 9/1996 
                       ; needs passes=1
                   z = pixel:
                   a1=sqr(z), a2=1/a1,
@@ -140,7 +140,7 @@ JoWe_05m { ; Jo Weber [100424,35] 9/1996
                |z|>=0.05
    }
 
-JoWe_05m2 = { ; Jo Weber [100424,35] 9/1996
+JoWe_05m2   { ; Jo Weber [100424,35] 9/1996
                   z = pixel:
                   z=fn1(z*z)+(1/z*z)+pixel,
                   |z|>=0.05

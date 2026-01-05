@@ -1,7 +1,7 @@
 NebulousSwirls     { ; Not in our Solar System
                      ; (C) Lee H. Skinner, 1993
   reset=1611 type=formula formulafile=ownfile.frm
-  formulaname=fzpcophs passes=1
+  formulaname=Fzpcophs passes=1
   corners=0.43791766/0.44484167/0.79959798/0.80479099 float=y
   maxiter=1023 inside=0 logmap=yes
   colors=000zVP<14>z6Qy4Rx4R<13>Y9OWANUANSBMSBM<41>kYJlZIlYJ<44>V6mU6mU5nU\
@@ -170,6 +170,7 @@ fourM..            { ; (c)1993 Peter Moreland, mucked with by Dick Sherry
   invert=0.0226146/0/-0.01796 periodicity=-256
   colors=000J85<20>vPF<30>110000001<29>Z0_`0a_0`<27>102001000000<30>v00<30\
   >100000001<30>00z<30>002000000<5>B53000F64H74
+}
 
 lianas             { ; JungleVines
                      ; Copyright  Lee H. Skinner, 1993
@@ -195,7 +196,7 @@ Ringworld_2.00     { ; (C)1993 Peter Moreland 100012,3213
   }
 
 Waspa              { ; (c)1993 Peter Moreland 100012,3213
-  reset type=formula formulafile=fractint.frm formulaname=wineglass
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
   corners=-1.20643299/0.491051506/-1.56238114/-0.290402079/-1.26390018/-1.\
   49240692 float=y maxiter=30000 inside=epsiloncross outside=mult
   logmap=yes invert=0.0100734/-0.569693/-0.629607 decomp=256
@@ -238,7 +239,7 @@ fn(z*z) cosh       {
 
 
   moth?    {; Where did this Frm file come from? -- MOTH Formula
-    reset=1800 type=formula formulafile=ownfile.frm formulaname=moth
+    reset=1800 type=formula formulafile=ownfile.frm formulaname=Moth
     passes=b corners=0.200944385/0.186737616/-0.503334072/-0.513989149
     float=y maxiter=256 fillcolor=253 inside=253 potential=253/500/0
     colors=000sRv_D`w5eOtNLaKIJIGtoowCn8`b5UR2NB3HE1G000ifC_TDQEFXWMqz_PXt<3\
@@ -254,7 +255,7 @@ fn(z*z) cosh       {
    }
 
   ?       {; Where did this Frm file come from? -- ? Formula
-    reset=1800 type=formula formulafile=ownfile.frm formulaname=moth
+    reset=1800 type=formula formulafile=ownfile.frm formulaname=Moth
     passes=b corners=0.200944385/0.186737616/-0.503334072/-0.513989149
     float=y maxiter=256 fillcolor=253 inside=253 potential=253/500/0
     colors=000sRv_D`w5eOtNLaKIJIGtoowCn8`b5UR2NB3HE1G000ifC_TDQEFXWMqz_PXt<3\
@@ -284,17 +285,6 @@ HRGiger'sArt?      { ; (1024: 11.5 hrs @ 50Mh, must use passes=1 for effect)
 matted             { ; Matted scene--Try passes=1,2,b,g,t
                      ; Copyright Lee H. Skinner, 1993
   reset=1800 type=formula formulafile=ownfile.frm formulaname=? periodicity=no
-  passes=b corners=0.30213612/0.41237736/0.203058912/0.28573984
-  float=y maxiter=255 fillcolor=253 inside=253 logmap=yes decomp=256
-  colors=CCCyU5<9>z3Bz0Cx0C<11>`0CZ5CX0C<2>R0CO0CN2D<2>K9JICLHCO<3>DB_<27>\
-  11Y00X01X<27>AgoAipAkqBmrCos<12>DFHECEGCG<18>z0y<9>bAt_CsYCs<9>ECsCCsCEs\
-  <19>CqsCssCsq<12>CsSCsQCsPDrO<10>Ji9Ji8Ih8<17>0L0<7>zz0<9>yb1x_2xZ3xX3xW\
-  40N0kCCiCC cyclerange=1/252
-  }
-
-matted             { ; Matted scene--Try passes=1,2,b,g,t
-                     ; Copyright Lee H. Skinner, 1993
-  reset=1800 type=formula formualfile=ownfile.frm formulaname=? periodicity=no
   passes=b corners=0.30213612/0.41237736/0.203058912/0.28573984
   float=y maxiter=255 fillcolor=253 inside=253 logmap=yes decomp=256
   colors=CCCyU5<9>z3Bz0Cx0C<11>`0CZ5CX0C<2>R0CO0CN2D<2>K9JICLHCO<3>DB_<27>\
@@ -394,7 +384,7 @@ s3g183             { ; (c) 1993 Richard H. Sherry CIS: 76264,752
    }
 
 Peas_in_a_pod!     { ; ............ (c)1992 Pete Moreland 100012,3213
-  reset type=formula formulafile=fractint.frm formulaname=richard1
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
   corners=-0.70550532168/-0.70548450354/0.66124583657/0.66119985992/-0.7054757\
   6756/0.66120641465 params=1.78/0.345 float=y maxiter=10000 inside=6
   potential=255/600/500
@@ -783,7 +773,7 @@ Barney?            { ; Jurassic T'Rex
 
 holo101            { ; "From Holodeck 101"
                      ; Inspired by CKP293. Thanks Caren...
-  reset type=formula formulafile=fractint.frm formulaname=leemandel3
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel3
   corners=-1.2200481/-0.31732494/0.5975186/-0.6061998/-0.31732494/-0.60619\
   98 maxiter=256 inside=0 potential=255/500/500
   colors=000XIF<9>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsv\

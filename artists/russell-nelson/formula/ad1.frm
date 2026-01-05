@@ -258,3 +258,40 @@ z=fn2(x+c)*fn3(x-c)
 x=fn4(z),
 |z|<=4
 }
+ap1 {
+  z=pixel, x=(z+p1)/fn3(z), y=(z+p2)*fn4(z):
+  z=fn1(1/z+p1)*fn2(z+p2)
+  |z|>4
+  ;SOURCE: ad1_miss.frm
+}
+a1ab3 {
+  z=pixel, b=fn1(x*y)
+  x=fn4(z-1), y=fn2(1/z):
+  z=fn3(b*y)^(z*log(x))
+  |z|<=6
+  ;SOURCE: ad1_miss.frm
+}
+a0009 {
+  z=pixel, y=z^fn1(1-z), x=(z^z)/3.141591:
+  z=fn3(z^fn4(y))*fn2(z*(1/x))
+  |z|<5
+  ;SOURCE: ad1_miss.frm
+}
+aaa6 {
+  z=pixel, x=fn1(z+1), c=fn2(c+p1):
+  z=(fn3(z^fn4(z-x))+c)+c
+  |z|<=8
+  ;SOURCE: ad1_miss.frm
+}
+aaa1a {
+  z=pixel, x=fn1(z+1)*whitesq, c=fn2(z*(1/pixel)):
+  z=fn3(z*fn4(c-x))+c
+  |z|<=8
+  ;SOURCE: ad1_miss.frm
+}
+ai5 {
+  z=pixel, y=1/pixel, c=(z)/fn1(z+1):
+  z=(exp(z)/fn3(z*z))*fn2(y)+c
+  |z|<4
+  ;SOURCE: ad1_miss.frm
+}

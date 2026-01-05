@@ -111,7 +111,7 @@ bj_lf13_21         { ; "Into the Mystic"      Les St Clair 1996   t=26m01s
                      ; t=time using 486-DX2-66 & video SF5 (640x480 256c)
                      ; based on Brian E.Jones formula BJ-LESFRM13-001
   reset=1930 type=formula formulafile=modles13.frm
-  formulaname=bj-lesfrm13-001 function=cos/ident/sqr/tanh passes=1
+  formulaname=BJ-Lesfrm13-001 function=cos/ident/sqr/tanh passes=1
   corners=-0.6063902/3.769063/0.2158492/-0.21548865/1.175815/-2.1604246
   params=0.005/0.45/0.007/0.6 float=y maxiter=200 inside=bof60
   outside=atan logmap=yes periodicity=0
@@ -133,7 +133,7 @@ ls_bj_frm_01       { ; "Swallows" by Les St Clair [101461,2032] 1996 t=03m53s
                      ; formula by Brian E.Jones
                      ; t=time using 486DX2-66 and video SF7 (1024x768 256c)
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=bej-n141 function=recip/sin passes=1
+  formulaname=BEJ-N141 function=recip/sin passes=1
   center-mag=1.32293/0.158056/1.89393 float=y inside=bof61
   outside=atan
   colors=040GVj<3>0Tz<14>06M57K<14>zza<15>d9M<14>4ot1rw1ou<14>14J<15>vp4<1\
@@ -312,7 +312,7 @@ Interferences-3d   { ; (c) Sylvie Gallet [101324,3444], 1996
   }
 
 Wave               { ; (c) Sylvie Gallet [101324,3444], 1996
-  reset=1930 type=formula formulafile=newforms.frm formulaname=wave
+  reset=1930 type=formula formulafile=newforms.frm formulaname=Wave
   center-mag=0/0/0.6666667 params=-2.65/12.2/12/0 float=y maxiter=255
   inside=0 colors=000M7R<253>hzz
   }
@@ -327,7 +327,7 @@ Wave-3d            { ; (c) Sylvie Gallet [101324,3444], 1996
 Metropolis         { ; Image for Metropolis_3d transform - Les St Clair 1996
                      ; image previously coded "LF13_07"
                      ; Les St Clair 101461.2032@compuserve.com
-  reset=1930 type=formula formulafile=les.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=les.frm formulaname=Lesfrm13
   function=asin/asinh passes=1 center-mag=0.012432/4.95e-005/0.2676312
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan savename=metropol.gif
@@ -383,7 +383,7 @@ overlay02          { ; by Jim Deutch. Another view. Use passes=1!
 
 sunset9            { ; Sunset by Jim Deutch
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=carr2330 passes=1
+  formulaname=Carr2330 passes=1
   center-mag=-0.342058/0.260915/21.82773/0.9545/-172.619/-0.072
   params=100/150/200/250 float=y maxiter=200 periodicity=0
   colors=000BVLU00<2>dIBhOFjTL<6>xutzzzzzz<81>xyb<7>1Uf<14>123000000<12>Q0\
@@ -392,7 +392,7 @@ sunset9            { ; Sunset by Jim Deutch
   }
 
 Ginkgo             { ; Baobab formula by Jim Deutch
-  reset=1930 type=ifs ifsfile=new.ifs ifs=baobab
+  reset=1930 type=ifs ifsfile=new.ifs ifs=Baobab
   center-mag=+0.61755371200000010/+1.18386840950000000/1.477267/0.9998
   params=0 maxiter=750
   colors=000BVLU00<2>dIBhOFjTL<6>xutzzzzzz<81>xyb<7>1Uf<14>123000000<12>Q0\
@@ -449,7 +449,7 @@ jdlsjm             { ; Pseudo HiColor - 1024x768
                      ; time 0:45:15 on a 486 DX2
                      ; Par and Image by Jan Maarten van der Valk
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  formulaname=JD-LS-JM passes=1 center-mag=1.36368/0.849882/15.40927
   float=y maxiter=1023 inside=0 logmap=yes symmetry=none
   colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zz\
   LzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e0\
@@ -480,7 +480,7 @@ GardenMania        { ; (c) Jim Deutch 1997: pseudo-hicolor: 1024x768
 b60a000            { ; t0:02:07 (times are for 1600x1200 on Pentium-166Mh)
                      ; Par and Image Copyright 1996 by Lee H. Skinner
   reset=1930 type=formula formulafile=jd10.frm
-  formulaname=jdfrm010m7 passes=1 video=SF7
+  formulaname=JDfrm010m7 passes=1 video=SF7
   center-mag=0.000764414/-0.00913678/0.6630055 float=y maxiter=1023
   inside=bof60 outside=atan logmap=yes
   colors=000xj9<5>xhAXMVCNDO00c20zb90FY0`Tz00h7BQFM0_KOEzzzXbU6d000hzylPxh\
@@ -493,7 +493,7 @@ b60a000            { ; t0:02:07 (times are for 1600x1200 on Pentium-166Mh)
 test_1             {
                      ;  Version 1930 Patchlevel 13
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  formulaname=JD-LS-JM passes=1 center-mag=1.36368/0.849882/15.40927
   float=y maxiter=1023 inside=0 logmap=yes symmetry=none
   colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z0Lz cyclerange=2/255
   }
@@ -501,7 +501,7 @@ test_1             {
 test_2             {
                      ;  Version 1930 Patchlevel 13
   reset=1930 type=formula formulafile=newforms.frm
-  formulaname=jd-ls-jm passes=1 center-mag=1.36368/0.849882/15.40927
+  formulaname=JD-LS-JM passes=1 center-mag=1.36368/0.849882/15.40927
   float=y maxiter=1023 inside=0 symmetry=none
   colors=00000Lzzezz0<2>z00e00L00zzLzL0000<2>00z0Lz cyclerange=2/255
   }
@@ -553,7 +553,7 @@ L3DT_13            { ; image for L3DT_13_3D    LStC [use 1024x768] t=00m51s
                      ; t=time using 486DX2-66 and video SF7 (1024x768)
                      ; based on Brian E.Jones formula BJ-LESFRM13-004
   reset=1930 type=formula formulafile=modles13.frm
-  formulaname=bj-lesfrm13-004 function=tan/recip/ident/cos
+  formulaname=BJ-Lesfrm13-004 function=tan/recip/ident/cos
   center-mag=0.00862294/0.383509/0.8076226/1/2.5 params=2/0.5/1/1
   float=y maxiter=1000 inside=bof61 outside=atan potential=255/255/0
   savename=l3dt_13.gif
@@ -653,8 +653,8 @@ lune1              { ; (c) 1996 Donald Archer 71544,657
 
 cophs13            { ; Galaxies
                      ; Par and Image Copyright 1993-1996 by Lee H. Skinner
-  reset=1720 type=formula formulafile=fractint.frm
-  formulaname=fzpcophs passes=1
+  reset=1720 type=formula formulafile=new8.frm
+  formulaname=Fzpcophs passes=1
   center-mag=+0.44106348984999330/+0.80340682423720140/51823.54
   params=0/0/0/0/0/0 float=y maxiter=1023 inside=0 logmap=yes
   colors=000TtS<3>Awv<2>aHQ`LO_PL<3>c80``ZaicQJeEKvfJTlIYsHbfHP<2>y9M3xUAU\
@@ -693,7 +693,7 @@ lf_01r_01          { ; "Hatchling" Les St Clair [101461,2032] 1996 t=03m49s
                      ; Requires Fractint 19.4 or later
                      ; t=time using 4DX2-66 & video sf7 (1024x768)
                      ; color map from Carr2579
-  reset=1940 type=formula formulafile=newforms.frm formulaname=lesfrm01r
+  reset=1940 type=formula formulafile=newforms.frm formulaname=Lesfrm01r
   function=sin/sqr passes=1
   center-mag=8.88178e-016/-4.44089e-016/0.4923928/1/-90 params=4/4
   float=y maxiter=300 outside=atan
@@ -718,7 +718,7 @@ c257909            { ; t0:22:23  Giant Mushroom
                      ; Par and Image Copyright 1996 by Lee H. Skinner
                      ; Formula by Robert Carr, MD
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=carr2579 passes=1
+  formulaname=Carr2579 passes=1
   center-mag=0.385611/-1e-006/5.834855/1/-90 params=100/150/200/250
   float=y maxiter=300 periodicity=0
   colors=000SZ0ZH0P00z2BzSDzYFzcH<4>xhTwiWxkXymZzo`<4>tfTsdRqaP<4>eNDbJA`I\
@@ -731,7 +731,7 @@ lesphc002          { ; "Stardust Trails" (PHC) Les St Clair 1996   t=17m48s
                      ; Uses resolution 1024x768. t=time using 486DX2-66
                      ; colour map from carr2579
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=lesfrm02g_phc function=tanh/cosh/round passes=1
+  formulaname=Lesfrm02g_PHC function=tanh/cosh/round passes=1
   center-mag=0.00391007/0.011734/0.8503402 params=50/0/100/0/1024/0
   float=y maxiter=160 outside=atan
   colors=000000F73<12>eLAhMBiOD<13>ymZzo`ymZ<14>hMBfLAdKA<13>F73000000<13>\
@@ -743,7 +743,7 @@ lesphc003          { ; "Stained Glass" (PHC) Les St Clair 1996     t=23m25s
                      ; zoom into "Stardust Trais" lesphc002
                      ; Uses resolution 1024x768. t=time using 486DX2-66
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=lesfrm02g_phc function=tanh/cosh/round passes=1
+  formulaname=Lesfrm02g_PHC function=tanh/cosh/round passes=1
   center-mag=-0.249373/0.802657/5.465473 params=50/0/10000/0/1024/0
   float=y maxiter=600 outside=atan
   colors=036000<3>16E17H18K19N2BQ2CS2DV2DX2EY<2>2F`3F`2F`2F_<2>2DX2DV2CS<3\
@@ -774,7 +774,7 @@ sg_6a14            { ; t0:52:46  Joshua Tree on Watermark
                      ; Par and Image Copyright 1996 by Lee H. Skinner
                      ; Formula by Sylvie Gallet
   reset=1940 type=formula formulafile=phc_2.frm
-  formulaname=jd-sg-06 passes=1
+  formulaname=JD-SG-06 passes=1
   center-mag=-0.55204102118722210/+0.47736083011901150/356087.2
   params=0.5/0.3/0/0/1024/0 float=y maxiter=1023 inside=0 logmap=20
   symmetry=none periodicity=0 video=sf7
@@ -785,7 +785,7 @@ sg_6a14            { ; t0:52:46  Joshua Tree on Watermark
   }
 
 Carr2599-F               { ; From a modified Sylvie Gallet frm.
-  reset=1940 type=formula formulafile=42mCarr.frm formulaname=Carr2599
+  reset=1940 type=formula formulafile=42mcarr.frm formulaname=Carr2599
   center-mag=-0.000155054/-0.00329438/0.8383807 params=100/150/200/250
   float=y maxiter=300 periodicity=0
   colors=000BBD<2>333`UM<14>zo`000<13>ZFx<10>0hh<10>0h0<10>zz0<9>f50d00`00\
@@ -794,31 +794,31 @@ Carr2599-F               { ; From a modified Sylvie Gallet frm.
   }
 
 test-round         {
-  reset=1940 type=formula formulafile=test.frm formulaname=test-round
+  reset=1940 type=formula formulafile=new8.frm formulaname=test-round
   center-mag=-4.44e-006/-2.62e-006/0.3333331 float=y maxiter=10
   outside=2 colors=@default.map
   }
 
 test-ceil          {
-  reset=1940 type=formula formulafile=test.frm formulaname=test-ceil
+  reset=1940 type=formula formulafile=new8.frm formulaname=test-ceil
   center-mag=-4.44e-006/-2.62e-006/0.3333331 float=y maxiter=10
   outside=2 colors=@default.map
   }
 
 test-floor         {
-  reset=1940 type=formula formulafile=test.frm formulaname=test-floor
+  reset=1940 type=formula formulafile=new8.frm formulaname=test-floor
   center-mag=-4.44e-006/-2.62e-006/0.3333331 float=y maxiter=10
   outside=2 colors=@default.map
   }
 
 test-trunc         {
-  reset=1940 type=formula formulafile=test.frm formulaname=test-trunc
+  reset=1940 type=formula formulafile=new8.frm formulaname=test-trunc
   center-mag=-4.44e-006/-2.62e-006/0.3333331 float=y maxiter=10
   outside=2 colors=@default.map
   }
 
 test-round-funct   {
-  reset=1940 type=formula formulafile=newforms.frm formulaname=graph
+  reset=1940 type=formula formulafile=new8.frm formulaname=Graph
   function=floor/ceil/flip/flip passes=1 center-mag=0/0/0.2
   params=0.002/0.001 float=y maxiter=99 inside=255
   colors=000hhhzK0zzz0zKzzzzzzzzz0Kzzzz<5>zzzww0zzz<236>zzz000
@@ -829,7 +829,7 @@ Fractint_gif       { ; Generate at 1024x768 save as "Fractint.gif"   t=08m29s
                      ; by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=fractint-9-11 function=sinh/cabs/atan
+  formulaname=Fractint-9-11 function=sinh/cabs/atan
   center-mag=-1.08813/0.105609/1.054746 float=y symmetry=none
   periodicity=0 savename=fractint.gif
   colors=000pfU<7>QIA000<2>000QG7<10>zUA<4>xr2ww0xq2<3>zUA<8>KG1000000000F\
@@ -892,7 +892,7 @@ Fractint_gif-LGD   { ; Modification by Loren Dobert [72332,507]
                      ; by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=fractint-9-11 function=cosh/atanh/sqrt
+  formulaname=Fractint-9-11 function=cosh/atanh/sqrt
   center-mag=0.0116083/0.699111/1.648041 float=y symmetry=none
   periodicity=0
   colors=000p0Pz00<10>000<9>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<3>FwU<12>5K3\
@@ -908,7 +908,7 @@ Fractint_gif-LGDa  { ; Modification by Loren Dobert [72332,507]
                      ; by Les St Clair [101461,2032] 1996
                      ; based on Brian E. Jones "Fractint-9-11" formula
   reset=1940 type=formula formulafile=newforms.frm
-  formulaname=fractint-9-11 function=cosh/atanh/sqrt
+  formulaname=Fractint-9-11 function=cosh/atanh/sqrt
   center-mag=0.0116083/0.699111/1.648041 float=y symmetry=none
   periodicity=0 savename=fractlgd.gif
   colors=000p0Pz00<10>000<9>qQ9wTAzUA<4>xr2ww0xq2<3>zUA<8>KG1<3>FwU<12>5K3\
@@ -985,7 +985,7 @@ MJN2-103         { ; Copyright Sylvie Gallet [101324,3444], 1996
 
 Mountain_Gif       { ; Save as Mountain.gif
                      ; Damion Presogna's "Cubist-30" image.                      
-  reset=1940 type=formula formulafile=cubist.frm formulaname=block_2
+  reset=1940 type=formula formulafile=cubist.frm formulaname=Block_2
   function=sqrt/ceil passes=1
   corners=1.0100489/1.9991398/1.0798435/1.8216617 params=0/0 float=y
   maxiter=1023 outside=atan periodicity=0

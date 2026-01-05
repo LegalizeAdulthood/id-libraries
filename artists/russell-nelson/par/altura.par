@@ -1,9 +1,9 @@
-/* All Formulas & Pars by Vincent Damion Presogna
-   76455.2222@Compuserve.com
-   02/22/96                                     */
+; /* All Formulas & Pars by Vincent Damion Presogna
+;    76455.2222@Compuserve.com
+;    02/22/96                                     */
 
 Alturistic         { ; For the good of mankind...
-  reset=1920 type=formula formulafile=altura.frm formulaname=altura
+  reset=1920 type=formula formulafile=altura.frm formulaname=Altura
   function=sin passes=1 center-mag=0/0/0.3333333 params=0/0/0/0/0/0
   float=y maxiter=500 logmap=yes
   colors=000000zzz000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z0KKK<3>___ccchhhmm\
@@ -15,7 +15,7 @@ Alturistic         { ; For the good of mankind...
   }
 
 Ventura            { ; For Dave Tilsner... a painter of signs
-  reset=1920 type=formula formulafile=altura.frm formulaname=altura
+  reset=1920 type=formula formulafile=altura.frm formulaname=Altura
   function=sin passes=1 center-mag=0.534522/2.3393/2.438358
   params=0/0/0/0/0/0 float=y maxiter=500 inside=bof60 logmap=yes
   colors=000<63>zzzz00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<\
@@ -24,7 +24,7 @@ Ventura            { ; For Dave Tilsner... a painter of signs
   }
 
 Swimming_Pool      {
-  reset=1920 type=formula formulafile=altura.frm formulaname=zentura
+  reset=1920 type=formula formulafile=altura.frm formulaname=Zentura
   function=sin passes=1 center-mag=0/0/0.5666667 params=0/0/0/0/0/0
   float=y maxiter=500 inside=bof60 outside=0
   colors=000dYM<10>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<7>Dtn<4>Adg9`e8Yd\
@@ -52,7 +52,7 @@ Whimpy             { ; I'll gladly pay you tuesday for a fractal today
   }
 
 Satin_Waves        { ; interesting bleeding effect
-  reset=1920 type=formula formulafile=altura.frm formulaname=ventura_2
+  reset=1920 type=formula formulafile=altura.frm formulaname=Ventura_2
   function=cos corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0 float=y
   maxiter=500 inside=bof60
   colors=000<15>zzz<15>000<15>zQZ<15>000<15>d0j<15>000<3>0AA0DD0GG0JJ0MM<7\
@@ -60,7 +60,7 @@ Satin_Waves        { ; interesting bleeding effect
   }
 
 Satin_Waves/Deep   { ; interesting bleeding effect
-  reset=1920 type=formula formulafile=altura.frm formulaname=ventura_2
+  reset=1920 type=formula formulafile=altura.frm formulaname=Ventura_2
   function=cos passes=b corners=1.069552/2.621552/-0.05788005/1.10612
   params=0/0/0/0/0/0 float=y maxiter=500 inside=bof60
   colors=00000000z000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z0KKK<3>___ccchhhmm\
@@ -101,7 +101,7 @@ Spartan            {
   }
 
 The_Temple         {
-  reset=1920 type=formula formulafile=altura.frm formulaname=crentura
+  reset=1920 type=formula formulafile=altura.frm formulaname=Crentura
   function=cos passes=1
   corners=0.574198419/0.486651795/-0.058614742/0.05811409/0.486651795/0.05\
   811409 params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
@@ -111,7 +111,7 @@ The_Temple         {
   }
 
 Un_otra_mandela    { ; que esto?
-  reset=1920 type=formula formulafile=altura.frm formulaname=mantura_2
+  reset=1920 type=formula formulafile=altura.frm formulaname=Mantura_2
   passes=b corners=-0.11910078/0.025603221/0.9709068/1.0794348
   params=0/0/0/0/0/0 float=y maxiter=500 inside=zmag
   colors=00007B<22>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<12>zz0<10>000<31\

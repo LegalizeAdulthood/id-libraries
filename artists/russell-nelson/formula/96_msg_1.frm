@@ -1,8 +1,8 @@
-96_MSG_1.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
-This file contains the Fractint "FRMs" required by the .pars in the
-96_MSG_1.PAR compilation
+; 96_MSG_1.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
+; This file contains the Fractint "FRMs" required by the .pars in the
+; 96_MSG_1.PAR compilation
 
-1306 = {
+1306 {
   z = 0.1/pixel:
   z = fn1 ( fn2 (fn3 (z)))
   |z| <= p1
@@ -282,7 +282,7 @@ z = fn1(z)/c
 |z| <= 4
 }
 
-davidsmask = {
+davidsmask {
 c = pixel,
 c2 = c*c,c75 = c2 + 0.75, c25 = c2 - 0.25,
 c75p1 = c75 + p1,
@@ -417,7 +417,7 @@ inandout03 {
     |z| <= test
   }
 
-JoWe_02(XYAXIS) = { ; Jo Weber [100424,35], 6/1996
+JoWe_02(XYAXIS) { ; Jo Weber [100424,35], 6/1996
                       z = pixel
 		      p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
                       a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
@@ -587,13 +587,13 @@ z = z + sqr(c)
 |z| < 4
 }
 
-Whatever_01(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           z=z*z+(1/z*z)+pixel,
    }
 
-Whatever_01_m(XYAXIS) = { ; Original formula Whatever_the_name
+Whatever_01_m(XYAXIS) { ; Original formula Whatever_the_name
                         ; modified by Jo Weber [100424,35], 6/1996
                           z = pixel:
                           a1=z*z, a2=1/a1, a=a1+a2,

@@ -225,4 +225,3 @@ RCL_16 (XAXIS) { ; Ron Lewen, 76376,2567
     z=z*pixel-pixel/fn1(z),
       abs(z) < 8
   }
-

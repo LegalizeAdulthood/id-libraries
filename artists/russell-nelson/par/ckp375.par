@@ -49,14 +49,15 @@
 
 ;; and now, on with the show!
 
-=====================================================================
+{=====================================================================}
+
 a0351              { ; TCHEBYCH:J_Lagandre4-1
                      ; J_Lagandre4 zoomed in
   reset type=formula formulafile=tchebych.frm
   formulaname=J_Lagandre4 corners=-1.830262/1.161745/-1.115761/1.128261
   potential=256/2000/4
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0351            { ; "Frosted Island Forest"
                      ; 00:02:39.11 .. 21 mar 93 .. caren park
@@ -72,14 +73,15 @@ ckp0351            { ; "Frosted Island Forest"
   `5r`5rZ4rZ4rX4qX4qV2qV2qT2WWWWWWzzz<6>zzzkkkkkkzzz<5>zzz
   }
 
-=====================================================================
+{=====================================================================}
+
 a0352              { ; TCHEBYCH:Folds1
                      ; j_l3
   reset type=formula formulafile=tchebych.frm formulaname=J_Laguerre3
   corners=2.8288057/2.9163843/0.1209986/0.3260441/2.7619116/0.2101857
   params=0.15 inside=0
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0352            { ; "Japanese Dragon Lamp"
                      ; 00:01:32.99 .. 23 mar 93 .. caren park
@@ -120,7 +122,8 @@ ckp0354            { ; "Flamenco Dancer"
   cyclerange=0/255
   }
 
-=====================================================================
+{=====================================================================}
+
 a0355              { ; RADAR:CurlyMandelbrot
                      ; A prime candidate for 3D-look
   reset type=mandel
@@ -129,7 +132,7 @@ a0355              { ; RADAR:CurlyMandelbrot
   colors=zP0u0g<22>h0lh0lg1lf1me2me3n<24>MIyLJyKKzKLzJMz<28>1xz0zz0zy<29>0zV0z\
   T0zT<4>3wO4vN5vM5vM<37>chAdhAehAehAfgA<16>tZ4uY3tY4<15>aMM_LO`LP<45>y1y000
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ;; this particular image comes from RADAR.PAR, and is beautiful in
 ;; its own right...  it will take you about 18 minutes to generate
@@ -161,13 +164,14 @@ ckp0356            { ; "Io"
   0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C cyclerange=0/255
   }
 
-=====================================================================
+{=====================================================================}
+
 a0357              { ; RADAR.PAR:Curly-Wurlies
   reset type=mandel
   corners=-0.930600312/-0.930415479/0.244768998/0.244907577 maxiter=1024
   inside=maxiter logmap=80
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0357            { ; "Stormy Weather"
                      ; 00:02:12.54 .. 23 mar 93 .. caren park
@@ -180,7 +184,8 @@ ckp0357            { ; "Stormy Weather"
   9>00k00m01m<29>0ky0mz1mz<30>zzzyzz cyclerange=0/255
   }
 
-=====================================================================
+{=====================================================================}
+
 a0358              { ; XZZ011:Xzz012
                      ; (c) 1993 Richard H, Sherry, CIS: 76264,752
   reset type=formula formulafile=tchebych.frm
@@ -190,7 +195,7 @@ a0358              { ; XZZ011:Xzz012
   colors=000SWT<18>BDEoSQ<24>oS2<9>C97478878ovz<20>68AlCP<9>869yed<23>679d\
   UL<28>568Mdt<5>6BFtiN<30>578jr1aTP<13>679J6K<19>468MzX<26>488X`X<3>TXT
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0358            { ; "Stonehenge, Prototype"
                      ; 00:01:42.60 .. 24 mar 93 .. caren park
@@ -229,7 +234,7 @@ ckp0360            { ; "Oasis"
   <6>EAb<6>7Nu5Px5Nu cyclerange=0/255
   }
 
-=====================================================================
+{=====================================================================}
 a0361              { ; CWPAR:Flotsam
                      ; flotsam and jetsam on the waves
    reset type=julfn+zsqrd function=cosxx
@@ -239,7 +244,7 @@ a0361              { ; CWPAR:Flotsam
    zQMzCGd<12>STxTUzVVz<10>hezBGc<24>TdyUeyVfzVgzWhz<7>apzbqzbqzcqz<5>hpzipzjoy\
    kox<15>ylezkcykcxjcKKf<22>aSm
    }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0361            { ; "Mountain Pass"
                      ; 00:00:35.70 .. 26 mar 93 .. caren park
@@ -251,7 +256,7 @@ ckp0361            { ; "Mountain Pass"
   qzIszJr<29>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<24>HUK
   }
 
-=====================================================================
+{=====================================================================}
 a0362              { ; FRACTINT:FieryMandelbrot
                      ; resembles lightning      Michael Coddington
   reset type=mandel
@@ -260,7 +265,7 @@ a0362              { ; FRACTINT:FieryMandelbrot
   OBR`<23>wHOCxF<5>rNN3DX<3>nHP6`W<9>tIOptH<9>yKORCG<14>wHOlEe<30>yHO8_1<25>wH\
   O_uF<7>hgIieJiX`<4>kVc<4>bfr
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0362            { ; "Io, as seen with Mandelbrot Eyes"
                      ; 00:01:10.85 .. 26 mar 93 .. caren park
@@ -314,14 +319,14 @@ ckp0366            { ; "Peacock Eyes, #2"
   0A0
   }
 
-=====================================================================
+{=====================================================================}
 a0367              { ; 9303MSGS:shelob's_lair
                      ; (C) Lee. H. Skinner, 1993
  reset type=spider passes=1 corners=-2.5/1.5/-1.5/1.5 float=y
  maxiter=1023 inside=maxiter potential=255/511/0 periodicity=0
  colors=000tR0z00<35>q00q00p00o00<212>000z`0
  }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0367            { ; "Tiger Tail Mesa"
                      ; 00:00:56.63 .. 01 apr 93 .. caren park
@@ -332,7 +337,8 @@ ckp0367            { ; "Tiger Tail Mesa"
   colors=000tR0z00<35>q00q00p00o00<212>000z`0
   }
 
-=====================================================================
+{=====================================================================}
+
 a0368              { ; RCLPAR:Solar_Flare
                      ; An Inverted Complex Mark's Mandel
                      ; Ronald C. Lewen, 76376,2567
@@ -341,7 +347,7 @@ a0368              { ; RCLPAR:Solar_Flare
   colors=000000800D10N30<2>a90kB0<2>zH0<21>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0\
   zT0<17>zC0
   }
----------------------------------------------------------------------
+{---------------------------------------------------------------------}
 
 ckp0368            { ; "Arrowhead Mesa"
                      ; 00:02:05.17 .. 03 apr 93 .. caren park

@@ -1380,3 +1380,9 @@ z=pixel, c=p1:
 z=(-z)^p2+c,
 |z| <= 36
 }
+
+JimsCompMand {; Jim Muth
+z=c=pixel:
+z=z^p1*(c^p2)+c,
+|z| <= p3+100
+}

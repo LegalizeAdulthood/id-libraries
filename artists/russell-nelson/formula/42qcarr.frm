@@ -1,11 +1,12 @@
-Carr2730 & up.To see examples of images these FRACTINT formulas
-can create, download 42qcarr.par.
-
-I can be contacted on AOL with the screen name GENEALOGY1, or
-CompuServe with the number 73753,2420
-
---Bob Carr--
-Ocala, FL
+{
+; Carr2730 & up.To see examples of images these FRACTINT formulas
+; can create, download 42qcarr.par.
+; 
+; I can be contacted on AOL with the screen name GENEALOGY1, or
+; CompuServe with the number 73753,2420
+; 
+; --Bob Carr--
+; Ocala, FL
 }
 
 Carr2730(YAXIS) {;Modified Sylvie Gallet frm. [101324,3444],1996

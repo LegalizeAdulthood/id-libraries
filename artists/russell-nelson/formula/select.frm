@@ -278,4 +278,3 @@ WaldoTwinsC(XAXIS_NOPARM) {; Jon Osuch
    |z| <= p2
    }
 
-

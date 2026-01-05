@@ -1307,11 +1307,11 @@ z=(a*z^b)+(c*z^d)+(e*z^f)+g,
 }
 
 ;MixSqrProJulib {; Jim Muth
-z=pixel, a=real(p1), b=imag(p1),
-c=real(p2), d=imag(p2), e=(d*pixel):
-z=(a*sqr(z))+(b*z^c)+p3+e,
-|z| <= 100
-}
+; z=pixel, a=real(p1), b=imag(p1),
+; c=real(p2), d=imag(p2), e=(d*pixel):
+; z=(a*sqr(z))+(b*z^c)+p3+e,
+; |z| <= 100
+; }
 
 MixSqrProJulib {; Jim Muth
 z=pixel, a=real(p1), b=imag(p1),

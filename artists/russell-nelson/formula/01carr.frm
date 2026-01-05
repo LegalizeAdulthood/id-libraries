@@ -1,3 +1,4 @@
+{
 Some years back while working on my Ph.D. in ThermoNuclear Physics
 as related to Ice Cream making, I chanced on a visit with Albert 
 Einstein. He gave me a list of formulas and said, "some day there
@@ -31,8 +32,6 @@ get this work online for all to use. Please contact me if you
 find other ways to produce these CARR'S CRYSTALS. THANKS !!! 
 
 
-}
-00-Please-Read-Me!{
 }
 
 01-Carr{
@@ -119,6 +118,7 @@ z=sqr(z) + c,
 z=c=cosxx(1/pixel):
 z=cosxx(z*z) + (sin(z) + c,
 |z| <=10
+}
 
 13-Carr{
 c=z=1/pixel, c=flip(-1.1,0.24)/pixel:

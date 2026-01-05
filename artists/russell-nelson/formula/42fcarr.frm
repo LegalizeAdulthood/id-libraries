@@ -1,3 +1,4 @@
+{
 To see examples of images these formulas can create, download
 42FCARR.PAR
 

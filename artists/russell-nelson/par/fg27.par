@@ -3,18 +3,10 @@ comment { This par file of 4 images is zooms into
           and copyright 1998 by Lee H. Skinner  LeeHSkinner@compuserve.com
         }
 
-frm:fungus027  { ; Brian E. Jones
-z=c=pixel , x=imag(c), y=imag(z):
-x = z / fn3(x) * fn2(y)
-y = z * fn4(fn1(y))
-z = z * z + c
-|z|<4
-}
-
 fg27000            { ;                                       t=  0:12:58.91
                      ; on a P233 at 1600x1200  Mar 04, 1998  19:56:51
                      ; Image Copyright 1998 by Lee H. Skinner ver=1960
-  reset=1960 type=formula formulafile=_f.frm
+  reset=1960 type=formula formulafile=fg27.frm
   formulaname=fungus027 function=log/sqr/recip/tanh passes=1
   center-mag=-0.548756/-0.00280607/0.8877715 float=y maxiter=1023
   inside=0 symmetry=none periodicity=0
@@ -27,7 +19,7 @@ fg27000            { ;                                       t=  0:12:58.91
 fg27001            { ;                                       t=  0:43:26.87
                      ; on a P233 at 1600x1200  Mar 04, 1998  19:56:51
                      ; Image Copyright 1998 by Lee H. Skinner ver=1960
-  reset=1960 type=formula formulafile=_f.frm
+  reset=1960 type=formula formulafile=fg27.frm
   formulaname=fungus027 function=log/sqr/recip/tanh passes=1
   center-mag=0.211229/0.521741/5.618807/1/-47.5 float=y maxiter=1023
   inside=0 symmetry=none periodicity=0
@@ -40,7 +32,7 @@ fg27001            { ;                                       t=  0:43:26.87
 fg27002            { ;                                       t=  2:25:39.45
                      ; on a P233 at 1600x1200  Mar 04, 1998  19:56:52
                      ; Image Copyright 1998 by Lee H. Skinner ver=1960
-  reset=1960 type=formula formulafile=_f.frm
+  reset=1960 type=formula formulafile=fg27.frm
   formulaname=fungus027 function=log/sqr/recip/tanh passes=1
   center-mag=+0.18279534217743420/+0.42824266236265430/117.9603/1/-45
   float=y maxiter=1023 inside=0 symmetry=none periodicity=0
@@ -52,7 +44,7 @@ fg27002            { ;                                       t=  2:25:39.45
 fg27003            { ;                                       t=  3:17:00.96
                      ; on a P233 at 1600x1200  Mar 04, 1998  19:56:52
                      ; Image Copyright 1998 by Lee H. Skinner ver=1960
-  reset=1960 type=formula formulafile=_f.frm
+  reset=1960 type=formula formulafile=fg27.frm
   formulaname=fungus027 function=log/sqr/recip/tanh passes=1
   center-mag=+0.18653664855733460/+0.43189682671578400/1562.222/1/-47.499
   float=y maxiter=1023 inside=0 symmetry=none periodicity=0

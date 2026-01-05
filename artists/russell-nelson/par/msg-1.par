@@ -1,7 +1,7 @@
-*******NOTE******* { ; All images (C) copyright Brian E. Jones 1996
+; *******NOTE******* All images (C) copyright Brian E. Jones 1996
 
 BEJ0104_or_Ribbons { ; Modified lambdafn formula
-  reset=1920 type=formula formulafile=modbuilt.frm
+  reset=1920 type=formula formulafile=bejones.frm
   formulaname=lambdafn-mod function=cotanh/flip
   center-mag=-2.22045e-015/1.77636e-015/0.5797101/1/-90
   params=0.35/0/1.2/0 float=y outside=real invert=0.5/0/0 decomp=256
@@ -12,7 +12,7 @@ BEJ0104_or_Ribbons { ; Modified lambdafn formula
   }
 
 BEJ0099            { ; Modified Sylvie Gallet formula
-  reset=1920 type=formula formulafile=bjbcmod3.frm
+  reset=1920 type=formula formulafile=bejones.frm
   formulaname=BJ-SG-man-newt-p function=cotan center-mag=0/0/0.6666667
   params=100/0 float=y invert=0.0299999993294478/0/0 symmetry=yaxis
   periodicity=0
@@ -23,7 +23,7 @@ BEJ0099            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0140            { ; Modified Sylvie Gallet formula
-  reset=1920 type=formula formulafile=bjbcmod3.frm
+  reset=1920 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-3-02-a function=cos/sin center-mag=0/0/0.06666667
   params=2.5/2.5/0.5/0.5 float=y inside=bof60 outside=atan
   periodicity=0
@@ -34,7 +34,7 @@ BEJ0140            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0150            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g020 function=sin/sqr/cosh/log passes=1
   center-mag=-0.996245/6.66134e-016/1.103753/1/-90
   params=25/50/75/100/125/150 float=y invert=1/0/0 periodicity=0
@@ -44,7 +44,7 @@ BEJ0150            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0151            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g021 function=sqrt/asinh/ident passes=1
   center-mag=0.455371/8.88178e-016/1.173709/1/-90
   params=25/50/75/100/125/150 float=y inside=bof60 invert=0.07/0/0
@@ -60,7 +60,7 @@ BEJ0151            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0153            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g021 function=sqrt/sqr/sinh
   center-mag=-0.216958/-0.0109471/0.8433694/1/90
   params=25/50/75/100/125/150 float=y inside=bof60 periodicity=0
@@ -71,7 +71,7 @@ BEJ0153            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0157            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g023 function=asin/conj/atanh/cotan
   center-mag=0.125156/6.10623e-016/1.041667
   params=25/50/75/100/125/150 float=y inside=bof60 invert=0.1/0/0
@@ -82,7 +82,7 @@ BEJ0157            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0158            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g024 function=zero/zero/tanh/tanh passes=1
   center-mag=-0.537712/-7.005e-006/0.8433655
   params=25/50/75/100/125/150 float=y periodicity=0
@@ -98,7 +98,7 @@ BEJ0158            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0160            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g023 function=sqr/conj/sqr/conj passes=1
   center-mag=0.660826/6.66134e-016/0.9861933
   params=25/50/75/100/125/150 float=y inside=bof60 invert=0.1/0/0
@@ -108,7 +108,7 @@ BEJ0160            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0161            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g023 function=ident/zero/tanh/zero
   center-mag=-0.652175/0/0.7183908 params=25/50/75/100/125/150 float=y
   inside=bof60 symmetry=none periodicity=0
@@ -118,7 +118,7 @@ BEJ0161            { ; Modified Sylvie Gallet formula
   }
 
 Dried_Flowers      { ; Modified Sylvie Gallet formula
-  reset=1920 type=formula formulafile=bjbcmod4.frm passes=1
+  reset=1920 type=formula formulafile=bejones.frm passes=1
   formulaname=BJ-SG-man-newt-dd function=flip
   center-mag=0/0.0801336/0.6666667 params=25/0 float=y outside=real
   periodicity=0
@@ -127,8 +127,8 @@ Dried_Flowers      { ; Modified Sylvie Gallet formula
   }
 
 Intersection       { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsgmod1.frm
-  formulaname=bj-sg-3-03-h function=sin/cotan center-mag=0/0/0.6666667
+  reset=1930 type=formula formulafile=msg-1.frm
+  formulaname=BJ-SG-3-03-h function=sin/cotan center-mag=0/0/0.6666667
   params=3/0.5/13/1 float=y inside=bof60 outside=atan periodicity=0
   colors=000<63>000000011122<11>BHJCILBHJ<9>457345234122011000<5>B00D00G00\
   <15>l00q50<10>zg0<11>W00FJU<13>W`xXazXbv<13>`y4`z0`z4<13>`pv`oz`pv<9>`xK\
@@ -136,7 +136,7 @@ Intersection       { ; Modified Sylvie Gallet formula
   }
 
 BEJ0162            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=Gallet-3-05 center-mag=0/-0.220367/0.6666667
   params=0.8/1/0.3/0.1/1/0 float=y maxiter=300 outside=real
   periodicity=0
@@ -147,7 +147,7 @@ BEJ0162            { ; Modified Sylvie Gallet formula
   }
 
 Mand-O-Lantern   { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm passes=1
+  reset=1930 type=formula formulafile=msg-1.frm passes=1
   formulaname=BJ-SG-G-1-g028 function=ident/zero/zero/acos
   center-mag=0/0.736309/0.7473842/1/180 params=25/50/75/100 float=y
   periodicity=0
@@ -158,7 +158,7 @@ Mand-O-Lantern   { ; Modified Sylvie Gallet formula
   }
 
 BEJ0167            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g031 function=sqr/sqr/log/log
   center-mag=0.000167555/-0.00191517/0.8378746/1/-4.999
   params=25/50/75/100 float=y invert=0.2/0/0 periodicity=0
@@ -169,7 +169,7 @@ BEJ0167            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0168            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g030 function=sqr/sinh/recip/sqr
   center-mag=0.00118657/-0.0135625/1.041667/1/-5 params=25/50/75/100
   float=y invert=0.2/0/0 periodicity=0
@@ -180,7 +180,7 @@ BEJ0168            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0170            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g031 function=conj/exp/log/log
   center-mag=-0.0609807/0.697012/0.8820956/1/85 params=25/50/75/100
   float=y periodicity=0
@@ -195,7 +195,7 @@ BEJ0170            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0171            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g032 function=ident/recip/sqr/sqr
   center-mag=-1.66533e-016/0.601002/3.884138 params=50/50/75/100
   float=y symmetry=xyaxis periodicity=0
@@ -205,7 +205,7 @@ BEJ0171            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0172            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g032 function=sqr/abs/log/log
   center-mag=-4.44089e-016/-0.596389/3.623515 params=50/50/75/100
   float=y symmetry=xyaxis periodicity=0
@@ -215,7 +215,7 @@ BEJ0172            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0173            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g032 function=sqr/exp/log/log
   center-mag=-4.44089e-016/-0.596389/3.758833 params=50/50/75/100
   float=y symmetry=xyaxis periodicity=0
@@ -225,7 +225,7 @@ BEJ0173            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0174            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g033 function=sqr/sqr/recip/recip
   center-mag=7.10543e-015/3.55271e-015/0.05952381/1/90
   params=25/50/75/100 float=y periodicity=0
@@ -235,7 +235,7 @@ BEJ0174            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0175            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g034 function=sqr/sqr/log/log
   center-mag=0.0436254/-0.498641/0.8912656/1/85 params=25/50/75/100
   float=y invert=0.5/0/0 periodicity=0
@@ -250,7 +250,7 @@ BEJ0175            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0176            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g035 function=tan/sinh/log/log
   center-mag=0.0106656/-0.121908/0.8820956/1/-4.999
   params=25/50/75/100 float=y invert=0.3/0/0 periodicity=0
@@ -259,7 +259,7 @@ BEJ0176            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0177            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g047 function=cos/sqr/log/log
   center-mag=-0.183763/1.8882/2.9036/1/-95 params=25/50/75/100 float=y
   invert=0.3/0/0 periodicity=0
@@ -269,7 +269,7 @@ BEJ0177            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0178            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g047 function=tan/recip/log/log
   center-mag=-0.0610232/0.657671/0.8503401/1/85 params=25/50/75/100
   float=y periodicity=0
@@ -279,7 +279,7 @@ BEJ0178            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0180            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-1.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g051 function=sqr/log/recip/log
   center-mag=0.0401418/-0.458823/0.6666667/1/85 params=25/50/75/100
   float=y inside=bof60 invert=0.6/0/0 periodicity=0
@@ -290,7 +290,7 @@ BEJ0180            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0182            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g051 function=sqrt/sinh/recip/log
   center-mag=-1.33227e-015/5.55112e-016/0.5149813/1/-5
   params=25/50/75/100 float=y inside=bof60 invert=0.3/0/0
@@ -301,7 +301,7 @@ BEJ0182            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0183            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g052 function=sqrt/flip/recip/log
   center-mag=-0.00611109/0.06985/0.8503401/1/-5 params=25/50/75/100
   float=y inside=bof60 invert=0.2/0/0 symmetry=none periodicity=0
@@ -316,7 +316,7 @@ BEJ0183            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0184            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g052 function=abs/sqrt/log/log
   center-mag=0.00073333/-0.00838201/0.8503401/1/-4.999
   params=25/50/75/100 float=y inside=bof60 invert=0.1/0/0
@@ -328,7 +328,7 @@ BEJ0184            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0185"Biohazard" { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g053 function=atan/exp/recip/log
   center-mag=-0.0527952/0.603452/0.8503401/1/85 params=25/50/75/100
   float=y inside=bof60 periodicity=0
@@ -339,7 +339,7 @@ BEJ0185"Biohazard" { ; Modified Sylvie Gallet formula
   }
 
 BEJ0186            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g053 function=cotan/log/recip/log
   center-mag=-0.057391/0.61093/0.8820956/1/85 params=25/50/75/100
   float=y inside=bof60 periodicity=0
@@ -349,7 +349,7 @@ BEJ0186            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0187            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g053 function=cotan/cotanh/recip/log
   center-mag=-0.057391/0.61093/0.8820956/1/85 params=25/50/75/100
   float=y inside=bof60 periodicity=0
@@ -360,7 +360,7 @@ BEJ0187            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0188            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g053 function=cotan/cotanh/recip/log
   center-mag=0.00526405/-0.10522/0.8820956/1/-4.999
   params=25/50/75/100 float=y inside=bof60 invert=0.3/0/0
@@ -372,7 +372,7 @@ BEJ0188            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0189            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g060 function=recip/sqrt/log/zero
   center-mag=0/0/0.6666667 params=25/50/75/100/0.075/0 float=y
   invert=0.9/0/0 periodicity=0
@@ -382,7 +382,7 @@ BEJ0189            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0191            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g062 function=recip/sqrt/log/zero
   center-mag=0/1.11022e-016/0.6666667/1/-20
   params=25/50/75/100/0.0005/0 float=y invert=1/0/0 periodicity=0
@@ -393,7 +393,7 @@ BEJ0191            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0192            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g067 function=cos/conj/ident/sin
   center-mag=-0.159037/-0.299555/1.806968/1/-105 params=25/50/75/100
   float=y periodicity=0
@@ -403,7 +403,7 @@ BEJ0192            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0193            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g069 function=flip/recip/log/log
   center-mag=-0.41136/0.104721/1.041667/1/-95 params=25/50/75/100
   float=y invert=0.2/0/0 periodicity=0
@@ -418,8 +418,8 @@ BEJ0193            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0194            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
-  formulaname=bj-sg-g-1-g070 function=recip/log/sqr/log
+  reset=1930 type=formula formulafile=msg-1.frm
+  formulaname=BJ-SG-G-1-g070 function=recip/log/sqr/log
   center-mag=-0.0551496/0.605538/0.8503401/1/85
   params=25/50/75/100/125/150 float=y periodicity=0
   colors=000000800<8>`00<6>wz0<8>FL5YFwUEpOCgJ8_G6VA4P0BC<10>0oz<6>0WY0UU0\
@@ -429,8 +429,8 @@ BEJ0194            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0195            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-2.frm
-  formulaname=bj-sg-g-1-g071 function=atan/tan/cosh/cos
+  reset=1930 type=formula formulafile=msg-1.frm
+  formulaname=BJ-SG-G-1-g071 function=atan/tan/cosh/cos
   center-mag=-0.00100167/2.77556e-016/3.73692/1/90 params=25/50/75/100
   float=y periodicity=0
   colors=0000SbHT6000<6>0003J6<2>ZJE<6>wgF<8>XKDUHDSGC<5>DC8AB79E47I0<9>nr\
@@ -441,7 +441,7 @@ BEJ0195            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0207            { ; Modified Sylvie Gallet formula
-  reset=1930 type=formula formulafile=bjsg-g-3.frm
+  reset=1930 type=formula formulafile=msg-1.frm
   formulaname=BJ-SG-G-1-g074 function=recip/recip/tan
   center-mag=-0.69575/2.22045e-016/0.8912656 params=25/50/75/100/25/0
   float=y periodicity=0
@@ -456,8 +456,8 @@ BEJ0207            { ; Modified Sylvie Gallet formula
   }
 
 BEJ0213            { ; Original formula: Couldn't resist putting this one in!!!
-  reset=1930 type=formula formulafile=bjsg-g-3.frm
-  formulaname=bej-n113 function=log
+  reset=1930 type=formula formulafile=msg-1.frm
+  formulaname=BEJ-N113 function=log
   center-mag=-4.44089e-016/4.44089e-016/0.5952381 float=y outside=atan
   symmetry=none periodicity=0
   colors=000000800<8>`00<6>wz0<8>FL5YFwUEpOCgJ8_G6VA4P0BC<10>0oz<6>0WY0UU0\

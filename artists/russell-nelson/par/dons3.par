@@ -1,23 +1,23 @@
-* pars for Fractint v18.2
-* don lebow 1/94
-* take 3
-* these are, to the best of my knowledge, orginal, tho the more I do, the
-* less likely that seems ... then again, infinity's a big place (as I'm
-* finding out!)
-* at any rate, if dupes show up it's purely unintentional
-*
-* use 'em as you like. I'm no artist ... the magic's in the numbers
-*
-* these were rendered at 640 x 480 x 256 ... other resolutions are apt
-* to look strange(r)
-*
-* for convenience, the companion file dons.frm has the referred forumulas
-* in one spot ... this version has some added, but can still be
-* used with my previous PARs
-*
-* aloha-
-*
-* >>don CIS:76704,41
+; * pars for Fractint v18.2
+; * don lebow 1/94
+; * take 3
+; * these are, to the best of my knowledge, orginal, tho the more I do, the
+; * less likely that seems ... then again, infinity's a big place (as I'm
+; * finding out!)
+; * at any rate, if dupes show up it's purely unintentional
+; *
+; * use 'em as you like. I'm no artist ... the magic's in the numbers
+; *
+; * these were rendered at 640 x 480 x 256 ... other resolutions are apt
+; * to look strange(r)
+; *
+; * for convenience, the companion file dons.frm has the referred forumulas
+; * in one spot ... this version has some added, but can still be
+; * used with my previous PARs
+; *
+; * aloha-
+; *
+; * >>don CIS:76704,41
 
 black_trillium     {
   reset type=sqr(1/fn) function=cosxx passes=1
@@ -37,7 +37,7 @@ color_wheel        {
   }
 
 deco_liar          {
-  reset type=formula formulafile=liar.frm formulaname=liar3 passes=t
+  reset type=formula formulafile=liar.frm formulaname=Liar3 passes=t
   corners=-9.357018/9.920923/-1.987873/12.47058 float=y maxiter=256
   inside=bof60 outside=real decomp=256 distest=1/71
   colors=358LQY<7>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
@@ -57,7 +57,7 @@ decomp             { ; where the color wheel started ... sorta
 
 lurking            { ; kinda popped up out of nowhere
                      ;
-  reset=1800 type=formula formulafile=skinner.frm formulaname=scsklms
+  reset=1800 type=formula formulafile=skinner.frm formulaname=ScSkLMS
   passes=b
   corners=4.448413/-2.077547/-4.35064/4.35064/-2.077547/4.35064
   params=0.0040000000000000001 float=y maxiter=256 inside=bof60
@@ -71,7 +71,7 @@ lurking            { ; kinda popped up out of nowhere
 rons               { ; ron barnett's frm ... no fpu
                      ; not yer "classic fractal" at all
                      ; neat effect with tesselation, too
-  reset=1800 type=formula formulafile=reb004.frm formulaname=reb004a
+  reset=1800 type=formula formulafile=reb004.frm formulaname=REB004A
   function=conj/zero passes=b
   corners=-5.642158/3.053531/-3.260884/3.260878 params=1/-1/1/0.25
   inside=bof60 decomp=256
@@ -116,7 +116,7 @@ friendly_critter   { ; it followed me home from hyperspace mom! can we keep it?
   }
 
 deco_liar_z        { ; yeah, near dupe ... except not quite. neat formula.
-  reset type=formula formulafile=liar.frm formulaname=liar3 passes=b
+  reset type=formula formulafile=liar.frm formulaname=Liar3 passes=b
   corners=-3.578644/3.901197/-1.698885/3.910995 float=y maxiter=256
   inside=zmag outside=real invert=1/0/0 decomp=256 distest=1/71
   colors=358LPX<6>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
@@ -210,7 +210,7 @@ inter_fractal_zone {
 
 tims_newton_poly   { ; just messing around to see what's there
                      ; from a message on GraphDev 1/10/94
-  reset type=formula formulafile=newforms.frm formulaname=newton_poly2
+  reset type=formula formulafile=newforms.frm formulaname=Newton_poly2
   passes=t
   corners=-1.608707/2.496424/-2.826889/2.646618/2.496424/2.646618
   params=-0.050000000000000003 float=y maxiter=100 inside=bof60

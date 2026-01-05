@@ -152,7 +152,7 @@ z=(fn2(z-t))
 |z|<=4
 }
 
-phcscary6 (;from spacemandel_phc by Damion Persogna,
+phcscary6 {;from spacemandel_phc by Damion Persogna,
            ;11,18,96 - modified by Alex Dukay 11,22,96.
 z=pixel,r=(pixel*whitesq):
 r=fn1(1/z)+r
@@ -166,4 +166,3 @@ z=c=pixel,x=fn3(p1/z)^2,y=fn4((p1/z)*(p1/z))^z:
 z=(fn1(z+1)/whitesq^x)^fn2(1/y)+c
 |z|<55
 }
-

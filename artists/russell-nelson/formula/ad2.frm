@@ -23,11 +23,11 @@ z=pixel,c=z-y,y=3.14:
 z=(fn1(z*y)/log(cos(fn2(z)*fn3(z*z)))*fn4(z)+c)
 |z|<4
 }
-as2{ns
+as2{
 z=pixel:
 z=(tan(z-(log(z-1)))*2.3453)/fn1(z+p1)+fn2(c+(z+p2))+c
 |z-1|<4
-}_
+}
 a0a01{
 z=pixel,x=c-pixel,y=real(c-pixel):
 a=(z^22)+x
@@ -82,6 +82,7 @@ a-0a-a2{
 z=pixel,c=fn1(1.6180339):
 z=(fn2(z^p1)+fn3(z^c))
 |z|<=4
+}
 z3{
 z=pixel,t=(1.099,.09^2/pixel)*(3-pixel/fn1(z^p2)),n=real(t/(z+c/p3)):
 z=((fn1(2/n)^fn2(z^t-z))/fn3(z^(t-n))*fn4(t/n-z))+c

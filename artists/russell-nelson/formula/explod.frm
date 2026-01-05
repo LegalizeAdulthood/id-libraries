@@ -1,4 +1,4 @@
-	Here is the Fractint formula file used for explod.gif:
+; Here is the Fractint formula file used for explod.gif:
 
 j1 {
 	z=pixel, c=p1:

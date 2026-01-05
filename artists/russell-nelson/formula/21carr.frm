@@ -1,3 +1,4 @@
+{
 Some years ago I was lucky enough to make friends with a guy
 named Rembrandt (in Holland). He was pretty good at painting
 "stuff". After a few years Remmy (my nick name for Rembrandt)

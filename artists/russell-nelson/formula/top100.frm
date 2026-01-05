@@ -180,7 +180,7 @@ OK-43 {
   |z| <  (10 + p2)
 }
 
-REB004M = {
+REB004M {
    z = pixel:
    x = real(z), y = imag(z);
    const = x*x + y*y;
@@ -191,7 +191,7 @@ REB004M = {
    z = x2 + flip(y2), |z| <= 100
 }   
 
-REB005G = {
+REB005G {
    z = pixel:
    x = real(z), y = imag(z);
    const = x*x + y*y;
@@ -210,5 +210,3 @@ phoenix_m {
    nx=x, ny=y, x=x1, y=y1, z=x + flip(y),
    |z| <= 4
 }
-
-

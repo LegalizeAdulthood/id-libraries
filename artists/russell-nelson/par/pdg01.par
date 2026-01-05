@@ -111,7 +111,7 @@ Midtown            {
   }
 
 Valley             {
-  reset=1930 type=formula formulafile=_v.frm formulaname=v-heun
+  reset=1930 type=formula formulafile=_v.frm formulaname=V-Heun
   passes=1 center-mag=-3.80894/1.88039/0.5587405/0.8091
   params=1/-0.5/1000/10000 float=y maxiter=200 inside=bof60
   outside=atan periodicity=0
@@ -121,7 +121,7 @@ Valley             {
   }
 Solar_Wind         {
   reset=1920 type=formula formulafile=fractint.frm
-  formulaname=3damand01 passes=1
+  formulaname=3daMand01 passes=1
   corners=-1.28/1.279996/-0.9599964/0.9600008 params=0/0/0/0 inside=0
   invert=2/0/0 decomp=256
   colors=000zF0<22>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<\
@@ -138,7 +138,7 @@ Hyperspace         {
   }
 
 In_There2          {
-  reset=1920 type=formula formulafile=fractint.frm formulaname=altmtet
+  reset=1920 type=formula formulafile=fractint.frm formulaname=AltMTet
   passes=b
   corners=-0.0714916587/-0.0778462887/-0.00424939394/0.00422620773/-0.0778\
   462887/0.00422620773 params=1/0 maxiter=3000 potential=256/1000/300

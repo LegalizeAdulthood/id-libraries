@@ -14,7 +14,7 @@ corpuscles         { ; from phoenixcplx
 
 
 AngelFish          { ; Too simple?
-  reset=1920 type=formula formulafile=fractint.frm formulaname=zza
+  reset=1920 type=formula formulafile=fractint.frm formulaname=ZZa
   passes=b
   corners=-0.186096598/-0.158222064/-0.0401901942/-0.0693283737/-0.1582220\
   64/-0.0693283737 float=y
@@ -28,7 +28,7 @@ AngelFish          { ; Too simple?
   }
 
 Tara3              { ; Needs Carr 2042
-  reset=1940 type=formula formulafile=42acarr.frm formulaname=carr2042
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2042
   corners=0.23883295/-0.51014955/-0.5184283/0.5635557/-0.51014955/0.563555\
   7 params=100/63 float=y maxiter=500 logmap=yes periodicity=0
   colors=zzzWGG<20>ykezmfzng<22>zpgzpgzoe<22>zX2zW0zX2<30>zzz<30>XH2WG0XH2\
@@ -98,7 +98,7 @@ Jeffries_Tube      { ; another fn*z+z
   }
 
 Pig_in_Chains      { ; Needs Big_Pig.frm
-  reset=1940 type=formula formulafile=big_pig.frm formulaname=piglet
+  reset=1940 type=formula formulafile=big_pig.frm formulaname=Piglet
   function=log/conj passes=1
   center-mag=-0.235809/-0.446275/5.216815/0.8168/-16.789/-15.592
   params=-0.28777/0.54978/0/0 float=y maxiter=1024 outside=atan
@@ -109,7 +109,7 @@ Pig_in_Chains      { ; Needs Big_Pig.frm
   }
 
 ZaBubba            {
-  reset=1920 type=formula formulafile=_b.frm formulaname=bej_n39
+  reset=1920 type=formula formulafile=_b.frm formulaname=BEJ_N39
   function=flip
   corners=1.385638/1.282649/-0.07023334/0.067085327/1.282649/0.067085327
   params=-0.38/0 float=y inside=bof60
@@ -157,7 +157,7 @@ Meander-Rings      { ; A j-carr/Orman2
                      ; Many opportunities for zooms.
                      ; Playing in my paintbox.
   reset=1940 type=formula formulafile=j-carr.frm
-  formulaname=carr-orman2 function=sqr/cosh passes=b
+  formulaname=Carr-Orman2 function=sqr/cosh passes=b
   corners=-0.8479859/0.848049/-0.6360305/0.6359927
   params=2.111/6/1.212121/0 inside=bof60 outside=imag
   potential=256/222/111
@@ -178,7 +178,7 @@ Meander-Rings      { ; A j-carr/Orman2
 Just_Riveting.     { ; A Meander_Ring zoom
                      ; Very Art Deco
   reset=1940 type=formula formulafile=j-carr.frm
-  formulaname=carr-orman2 function=sqr/cosh passes=b
+  formulaname=Carr-Orman2 function=sqr/cosh passes=b
   corners=-0.19077146/0.19081354/-0.19183666/0.19181842
   params=2.111/6/1.212121/0 inside=bof60 outside=imag
   potential=256/222/111
@@ -194,7 +194,7 @@ Just_Riveting.     { ; A Meander_Ring zoom
 
 Just_Riveting2     { ; Another Meander_Ring zoom
   reset=1940 type=formula formulafile=j-carr.frm
-  formulaname=carr-orman2 function=sqr/cosh passes=b
+  formulaname=Carr-Orman2 function=sqr/cosh passes=b
   corners=-0.10148054/0.10150707/0.0034604669/0.20758581
   params=2.111/6/1.212121/0 inside=bof60 outside=imag
   potential=256/222/111
@@ -225,7 +225,7 @@ With_a_Twist       { ; Needs PsuedoZeePi
 
 Reverse_Twist      { ; Needs PsuedoZeePi
   reset=1940 type=formula formulafile=fractint.frm
-  formulaname=pseudozeepi passes=1
+  formulaname=PseudoZeePi passes=1
   center-mag=0.207347/-0.0430208/3.478311/1.1143/42.5
   params=-3.2548/1.1459/0/0 maxiter=64 inside=zmag outside=atan
   colors=PFGD05<8>611000<2>IEIOJOUNUZRZcVchZhlalpdpsgsuiuxjxylyzlzzmzzlzyl\

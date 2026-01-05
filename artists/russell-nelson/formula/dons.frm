@@ -41,7 +41,7 @@ CGNewtonSinExp (XAXIS) {
         z=z-p1*z2/(cos(z)+z1), .0001 < |z2|
    }
    
-Leeze (XAXIS) = {
+Leeze (XAXIS) {
                        s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 
@@ -51,7 +51,7 @@ FractalFenderC(XAXIS_NOPARM) {
                        z=sqr(z)+pixel,x=|z|,
                        x<=4 }
 
-TSinh (XAXIS) = {
+TSinh (XAXIS) {
         z = c = sinh(pixel):
         z = c ^ z,
         z <= (p1 + 3)
@@ -64,12 +64,12 @@ ScSkZCZZ(XYAXIS) { z = pixel, TEST = (p1+3): z = (z*cosxx(z)) - z, |z|<TEST }
 
 ;REB004.FRM - Ron Barnett
 
-REB004A = {; Ron Barnett, 1993
+REB004A {; Ron Barnett, 1993
    z = pixel:
    z =p1*fn1(z) + p1*p1*fn2(p2*z) + pixel, |z| <= 100
    }
 
-REB004M = {; Ron Barnett, 1993
+REB004M {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -86,14 +86,14 @@ REB004M = {; Ron Barnett, 1993
 ; REB002.FRM                                     
 ; Ron Barnett 70153,1233                         
 
-FlipLambdaJ = { ; Ron Barnett, 1993
+FlipLambdaJ { ; Ron Barnett, 1993
    z = pixel:
    z = p1*z*(1-flip(z)*flip(z)), |z| <= 100
    }
 
 ; REB005.FRM                                     
 ; Ron Barnett 70153,1233                         
-REB005E = {; Ron Barnett, 1993
+REB005E {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -105,7 +105,7 @@ REB005E = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    }
 
-REB005F = {; Ron Barnett, 1993
+REB005F {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);
@@ -117,7 +117,7 @@ REB005F = {; Ron Barnett, 1993
    z = x2 + flip(y2), |z| <= 100
    } 
 
-REB005G = {; Ron Barnett, 1993
+REB005G {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
    x = real(z), y = imag(z);

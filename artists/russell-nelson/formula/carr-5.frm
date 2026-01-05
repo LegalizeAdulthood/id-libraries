@@ -1,3 +1,4 @@
+{
 These formulas were discovered while I was on an expedition to the
 Far East in search of rare spices. While in the remote Province of
 Wonchuria, in Northern Taicong, I occasioned on a Budfushan 

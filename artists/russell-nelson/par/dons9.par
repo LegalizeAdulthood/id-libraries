@@ -27,7 +27,7 @@
 
 
 commute            {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-30
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-30
   function=exp passes=b corners=-2.406811/0.7291894/-1.176/1.176
   params=0.20000000000000001/0.5/1 float=y inside=maxiter
   potential=256/200/0 decomp=256
@@ -37,7 +37,7 @@ commute            {
   }
 
 monstro-2          {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-43
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
   function=tan/conj/exp passes=t
   corners=-0.2154743/1.056526/0.8680334/-0.8279666/1.056526/-0.8279666
   params=1 float=y potential=256/128/0
@@ -47,7 +47,7 @@ monstro-2          {
   }
 
 stardance          {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-40
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-40
   function=cos/sin/conj/flip passes=t
   corners=13.3318/6.012022/-8.44765/-13.93748 params=1/0.5 float=y
   potential=256/200/0
@@ -56,7 +56,7 @@ stardance          {
   }
 
 to-the-egress      {
-  reset=1820 type=formula formulafile=dons.frm formulaname=zeppo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
   function=conj/ident passes=1
   corners=-0.22062123/0.27540219/-0.55225056/0.60896915/-0.59943826/-0.047\
   161194 params=0.5/0/1 float=y potential=256/255/0 decomp=256
@@ -68,7 +68,7 @@ to-the-egress      {
   }
 
 gooey              {
-  reset=1820 type=formula formulafile=dons.frm formulaname=zeppo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
   function=cotan/ident passes=b
   corners=-0.25596926/0.062261712/-0.56251014/0.18248709/-0.49900478/-0.23\
   846278 params=0.5/0/1 float=y inside=zmag potential=256/255/0
@@ -77,7 +77,7 @@ gooey              {
   }
 
 hola-mundo         {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-43
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
   function=cotanh/sin/ident passes=1
   corners=3.514504/-4.827402/-5.673656/5.448886/-4.827402/5.448886
   params=1/0/0/-1 float=y potential=256/500/0
@@ -87,7 +87,7 @@ hola-mundo         {
   }
 
 zep-shell          {
-  reset=1820 type=formula formulafile=dons.frm formulaname=zeppo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
   function=conj/ident passes=b
   corners=1.3936694/1.843979/0.70470312/0.9207463/1.6594816/1.0591194
   params=2/0.5/1 float=y inside=zmag potential=256/500/0
@@ -97,7 +97,7 @@ zep-shell          {
   }
 
 tree-frog          {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-43
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-43
   function=cos/ident/ident passes=b
   corners=-2.343163/1.56695/-2.584332/2.629151/1.56695/2.629151
   float=y inside=maxiter potential=256/200/0
@@ -107,7 +107,7 @@ tree-frog          {
   }
 
 crabby-nebula      {
-  reset=1820 type=formula formulafile=dons.frm formulaname=chico
+  reset=1820 type=formula formulafile=dons.frm formulaname=Chico
   function=sin/sin passes=t
   corners=-0.1578141/3.291166/-1.301356/1.285379 float=y
   colors=000UdTWgV767<4>f`h613<7>xGT445<8>dlm420<11>qY8613<7>vEYA7AKFLFC3<\
@@ -117,7 +117,7 @@ crabby-nebula      {
   }
 
 high-anxiety       {
-  reset=1820 type=formula formulafile=dons.frm formulaname=chico
+  reset=1820 type=formula formulafile=dons.frm formulaname=Chico
   function=sin/sin passes=1
   corners=0.9603202/2.174361/0.1145763/1.025107 float=y maxiter=25
   outside=real potential=256/2000/0
@@ -128,7 +128,7 @@ high-anxiety       {
   }
 
 breakout           {;variation on 4-split
-  reset=1820 type=formula formulafile=dons.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
   function=tanh passes=b corners=-4.674309/5.186156/4.978249/12.3736
   params=0/0/1 float=y maxiter=500 inside=maxiter logmap=yes
   potential=256/256/0
@@ -138,7 +138,7 @@ breakout           {;variation on 4-split
   }
 
 4-split            { ; 4d experiment
-  reset=1820 type=formula formulafile=dons.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
   function=sin passes=1 corners=-1.928/1.928/-1.446/1.446 params=0/0/1
   float=y inside=0 symmetry=xyaxis
   colors=AAPMCS<8>323000021<14>0WJ<15>ttt<7>Th`QgZMeXIcVEaT<3>0WJ<13>04302\
@@ -147,7 +147,7 @@ breakout           {;variation on 4-split
   }
 
 tilt               {
-  reset=1820 type=formula formulafile=dons.frm formulaname=scsklms
+  reset=1820 type=formula formulafile=dons.frm formulaname=ScSkLMS
   passes=b
   corners=4.0044884/3.4279459/0.12231153/0.8910346/3.4279459/0.8910346
   params=2/-0.5 float=y decomp=64
@@ -157,7 +157,7 @@ tilt               {
   }
 
 static             {
-  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  reset=1820 type=formula formulafile=dons.frm formulaname=Groucho
   function=exp/cotanh passes=b
   corners=2.6237792/3.0573831/3.0556437/2.4775052/3.0573831/2.4775052
   params=-1 float=y potential=256/128/0
@@ -168,7 +168,7 @@ static             {
   }
 
 show-me            {
-  reset=1820 type=formula formulafile=dons.frm formulaname=zeppo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Zeppo
   function=cos/cosxx passes=1
   corners=-5.255015/6.108621/-3.709788/4.812939 params=1 float=y
   decomp=256
@@ -179,7 +179,7 @@ show-me            {
 
 big_red_switch     {;figuratively speaking
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=flipconjjul_n passes=1 corners=-2/2/-1.5/1.5
+  formulaname=FlipConjJul_N passes=1 corners=-2/2/-1.5/1.5
   params=0/0/-2 float=y inside=zmag potential=256/128/0
   colors=000zzN<18>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`\
   22_22<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<9>zzL
@@ -195,7 +195,7 @@ delta              {
   }
 
 fame               {
-  reset=1820 type=formula formulafile=dons.frm formulaname=harpo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
   function=cosh/cotan passes=1
   corners=-1.599445/1.582373/-1.260319/1.240924
   params=1/0.20000000000000001 float=y inside=epsiloncross
@@ -214,14 +214,14 @@ arty-fact          {
   }
 
 sea-star           { ; popping up all over the place aren't they?
-  reset=1820 type=formula formulafile=dons.frm formulaname=harpo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
   function=cosxx/conj passes=b corners=-2/2/-1.5/1.5 params=1 float=y
   potential=256/500/0 decomp=256
   colors=00007B<94>0du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<80>zzz
   }
 
 kozmik             {
-  reset=1820 type=formula formulafile=dons.frm formulaname=harpo
+  reset=1820 type=formula formulafile=dons.frm formulaname=Harpo
   function=cotan/sqr passes=t
   corners=-0.57451153/-0.41459847/-1.0474176/-0.67305182/-0.69663841/-0.88\
   458178 params=0.20000000000000001/-1/0/0.20000000000000001 float=y
@@ -234,7 +234,7 @@ kozmik             {
 
 wizard's-ring      {
   reset=1820 type=formula formulafile=fractint.frm
-  formulaname=cghalley passes=b
+  formulaname=CGhalley passes=b
   corners=-27.38344/27.38344/-20.28615/20.78901 params=1 float=y
   inside=zmag potential=256/5000/0
   colors=000<15>zzz<15>000<15>z0G<15>000<15>zzz<15>000<15>0gg<15>000<15>zz\
@@ -243,7 +243,7 @@ wizard's-ring      {
 
 strokes            { ; neat jm collard-richard formula
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=geninvmand1_n function=flip/cotanh/recip/tanh passes=b
+  formulaname=GenInvMand1_N function=flip/cotanh/recip/tanh passes=b
   corners=0.8629375/-0.8769728/0.1971175/1.50205 float=y inside=zmag
   potential=256/256/0 decomp=256
   colors=000K00<6>300<15>lT7<17>pb_qb`qcbrddpcc<4>eYVcXUaWS_VRXTP<6>ILDFJB\
@@ -266,7 +266,7 @@ light-fall         {
 ; amongst my older files, but these bugged me
 
 x_guardian         { ; captain-planet zoom - corrected
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-13
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-13
   function=log/sqr passes=t
   corners=2.102736/1.4474443/-0.43519454/0.43852297/1.4474443/0.43852297
   float=y potential=255/500/0 decomp=256
@@ -275,7 +275,7 @@ x_guardian         { ; captain-planet zoom - corrected
   }
 
 x_liar-fantasy       { ; from dons8 - corrected
-  reset=1820 type=formula formulafile=dons.frm formulaname=liar4
+  reset=1820 type=formula formulafile=dons.frm formulaname=Liar4
   passes=1 corners=-3.061919/3.850651/-2.160063/3.024364 float=y
   potential=256/500/16
   colors=M99<4>KFFJGGIHIHIJHJL<31>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzaz\
@@ -285,7 +285,7 @@ x_liar-fantasy       { ; from dons8 - corrected
   }
 
 x_captain-planet   { ; from dons8 - corrected
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-13
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-13
   function=log/sqr passes=t
   corners=5.190578/0.09226536/-3.377674/3.420037/0.09226536/3.420037
   float=y potential=255/200/0 decomp=256

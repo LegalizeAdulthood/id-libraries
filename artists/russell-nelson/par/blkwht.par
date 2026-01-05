@@ -50,7 +50,7 @@ DAbw001            { ; 0:02:02.05 - Spiral
 DAbw002            { ; 0:00:08.48 - Tesseral ellipse
                      ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1800 type=formula formulafile=da.frm
-  formulaname=dafrm05 passes=t corners=-2/2/-1.5/1.5 params=5.5
+  formulaname=DAFRM05 passes=t corners=-2/2/-1.5/1.5 params=5.5
   float=y maxiter=3000 fillcolor=0 inside=period outside=summ
   potential=255/300/5000 invert=20/0/0 decomp=256 finattract=y
   colors=zzz333<14>zzz<15>000<30>000<15>zzz<15>000<63>000<15>zzz<15>000<63\
@@ -102,7 +102,7 @@ DAbw007            { ; 0:02:51:26 - Pick-ax
 DAbw008            { ; 0:08:32.07 - Umbrellas on end
                      ; (c) 1993, Donald Archer, CIS 71544,657
   reset=1800 type=formula formulafile=fractint.frm
-  formulaname=fzppfnsr function=recip
+  formulaname=Fzppfnsr function=recip
   corners=-2.17298651/-2.09186149/-0.0527973678/-0.00112496411 float=y
   maxiter=1500 inside=maxiter outside=real decomp=64 biomorph=1
   colors=000<17>000<15>zzz<15>000<204>000
@@ -136,8 +136,8 @@ DAbw011            { ; 0:01:06.14 - Mandelbrot ellipse
 
 DAbw012            { ; 0:03:23.16 - Fan blade
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=formula/da.frm
-  formulaname=dafrm01 function=flip passes=b
+  reset=1800 type=formula formulafile=da.frm
+  formulaname=DAFRM01 function=flip passes=b
   corners=-0.0112155676/0.011002779/0.0139911175/-0.0155820251/0.011002779\
   /-0.0155820251 inside=maxiter decomp=256
   colors=zzz`Z_<96>DCCDCCDCCCBBCB9BB9AB9BAABA8AA89A8A99A979978979889868867\
@@ -147,7 +147,7 @@ DAbw012            { ; 0:03:23.16 - Fan blade
 
 DAbw013            { ; 0:01:41:18 - City slicker
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=formula\da.frm
+  reset=1800 type=formula formulafile=da.frm
   formulaname=DAFRM01 function=conj
   corners=-2.042709/0.9572705/1.927715/-2.072281/0.9572705/-2.072281
   colors=000zzz<4>zzz000<30>000zzz<30>zzz000<9>000GGG<3>000<4>JJJ000<9>000\
@@ -157,7 +157,7 @@ DAbw013            { ; 0:01:41:18 - City slicker
 
 DAbw014            { ; 0:01:41:18 - Martial artist in kimona
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=da.frm formulaname=dafrm01
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM01
   function=conj
   corners=-2.042709/0.9572707/1.927715/-2.072281/0.9572707/-2.072281
   colors=000UUUjjjUUUKKKvvvzzz<15>000<30>000<15>zzz<15>000<31>000<15>zzz<1\
@@ -166,7 +166,7 @@ DAbw014            { ; 0:01:41:18 - Martial artist in kimona
 
 DAbw015            { ; 0:20:32.52 - Elm leaf 
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=da.frm formulaname=dafrm02
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM02
   function=sqr
   corners=-2.14800471/-2.14830959/0.00011998415/-0.000108599663
   inside=maxiter decomp=256
@@ -176,7 +176,7 @@ DAbw015            { ; 0:20:32.52 - Elm leaf
 
 DAbw016            { ; 0:03:37.83 - Strange logo
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=da.frm formulaname=dafrm03
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM03
   function=exp
   corners=-2.1049454/-1.7755104/0.21875078/-0.2205171/-1.7755104/-0.220517\
   1 potential=255/200/200 colors=000<169>000<15>zzz<15>000<52>000
@@ -192,7 +192,7 @@ DAbw017            { ; 0:05:06.72 - Bottle
 
 DAbw018            { ; 0:13:10.60 - Spade
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=da.frm formulaname=dafrm04
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM04
   function=sqr
   corners=0.74968469/1.2872681/0.34969419/-0.36713439/1.2872681/-0.3671343\
   9 potential=255/300/800 colors=000<71>000<15>zzz<15>000<150>000
@@ -200,7 +200,7 @@ DAbw018            { ; 0:13:10.60 - Spade
 
 DAbw019            { ; 0:17:50.98 - Orient ship
                      ; (c) 1993, Donald Archer, CIS 71544,657
-  reset=1800 type=formula formulafile=da.frm formulaname=dafrm04
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM04
   function=conj
   corners=-0.1501767/1.661807/1.222902/-1.193071/1.661807/-1.193071
   potential=255/300/800

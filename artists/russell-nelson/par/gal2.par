@@ -1,214 +1,5 @@
-frm:rfr09u0 {
-  z1=z=pixel, z2=sqr(z), out=4*(p2<=0)+p2*(p2>0):
- z1=z1*z1+p1+(-1.1,0.25)
-z2=z2*z2+p1+(-1.1,0.25)
-z=z1*z2
-|z|<out
-}
-
-frm:rfr0a41 {;Rolf Freericks
-IF (whitesq)
-z= pixel
-ELSE
-z=fn1(pixel)
-ENDIF:
-IF (whitesq)
-  z = z*z*z*p1+z/p1
-  PHC_bailout=z <= p3
-ELSE
-  z=fn2(sin(z)-cos(z))-p2*z
-  PHC_bailout=|z|<p3
-ENDIF
-PHC_bailout
-}
-
-frm:rfr0a51 {;Rolf Freericks
-z=pixel:
-z=(z*z-p1)/p2*z
-|z|<=4
-}
-
-frm:rfr0a53 {;Rolf Freericks
-z=zh=pixel:
-zh2=zh*zh
-zh=zh2*zh-zh
-zl=|z|
-zl=zl*zl
-IF (|zh|>zl)
-z=z*zh+p1
-ELSE
-z=z*z+p1
-ENDIF
-|z|>=p2
-}
-
-frm:rfr0a72 {;Rolf Freericks
-    ;requires floating point
-    ;try integer for "nice erros"
-z=pixel:
-z2=z*z
-z3=z*z2
-z4=z*z3
-z=(z4-z2-p1)/(4*z3-2*z)
-|z|>=p2
-}
-
-frm:rfr0a81 {;Rolf Freericks
-z=pixel, fourp2=4*p2:
-z2=z*z
-z3=z*z2
-z4=z*z3
-z=z-(p2*z4+4*z2-p1)/(fourp2*z3-8*z)
-|z|<=p3
-}
-
-frm:rfr0a84 {;Rolf Freericks
-z=sqr(pixel), fourp2=4*p2:
-z2=z*z
-z3=z*z2
-z4=z*z3
-z=fn1(z)-(fourp2*z3-3*z2+8*z)/(p2*z4-z3+4*z2-p1)
-|z|<=p3
-}
-
-frm:rfr0a71 {;Rolf Freericks, rfreericks@compuserve.com
-    ;requires floating point
-    ;try integer for "nice erros"
-    ;z=f(z)/f´(z) with f(z)=z^4-z^2-c
-z=pixel:
-z2=z*z
-z3=z*z2
-z4=z*z3
-z=(z4-z2-p1)/(4*z3-2*z)
-|z|>=p2
-}
-
-frm:rfr0a91 {;Rolf Freericks
-z=pixel:
-z=z*sqr(z)-p1
-z<=p2
-}
-
-frm:rfr0a92 {;Rolf Freericks
-z=pixel:
-z=z*sqr(z)-p1
-abs(z)<=p2
-}
-
-frm:rfr0a93 {;Rolf Freericks
-z=pixel:
-z=z-((z*z-p1)/(2*z))*sin(2*z)-p2
-z<=p3
-}
-
-frm:rfr0aa1 {;Rolf Freericks
-z=pixel:
-z=z*z-p1
-z=fn1(z)+p2
-|z|<=p3
-}
-
-frm:rfr0ab1 {;Rolf Freericks
-zh=z=pixel:
-z=z*z-fn1(zh)
-z=abs(z)+p2*zh
-zh=fn2(zh)
-|z|<=p3
-}
-
-frm:rfr0ab2 {;Rolf Freericks
-zh=z=pixel, zh=fn1(zh+p1):
-z=z*z-zh
-zh=fn2(zh)-p2
-|z|<=p3
-}
-
-frm:SpiderJulcplx_RFR {; by Jon Horner - 100112,1700 - FRAC'Cetera
-               ; Complex-form of SPIDERJUL
-               ; float=yes
-               ;modified by Rolf Freericks 
-  z = pixel, h=c = p1:
-  z = z * z + c-h
-  c = c * p2 + z
-  |z| <= 4
-;the original
-;  z = pixel, c = p1:
-; z = z * z + c,
-; c = c * p2 + z,
-;|z| <= 4
-}
-
-frm:rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
-               ; Complex-form of SPIDERJUL
-               ; float=yes
-               ;modified by Rolf Freericks 
-               ;the original is cited at the end
-  z = pixel, c = p1
-IF (whitesq)
-h=c
-ELSE
-h=(c-1/c)*p3
-ENDIF
-:
-  z = z * z + c-h
-  c = c * p2 + z
-  |z| <= 4
-;the original
-;  z = pixel, c = p1:
-; z = z * z + c,
-; c = c * p2 + z,
-;|z| <= 4
-}
-
-frm:rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
-               ; Complex-form of SPIDERJUL
-               ; float=yes
-               ;modified by Rolf Freericks 
-               ;the original is cited at the end
-  z = pixel
-IF (whitesq)
-c=h=(1,0.1)
-ELSE
-c=p1
-h=(c-1/c)*p3
-ENDIF
-:
-z=z*z+c-h
-IF (whitesq)
-c=z
-ELSE
-  c = c * p2 + z
-ENDIF
-  |z| <= 4
-;the original
-;  z = pixel, c = p1:
-; z = z * z + c,
-; c = c * p2 + z,
-;|z| <= 4
-}
-
-frm:rfr0ah1 {; Rolf Freericks 
-z = pixel
-c=p1
-:
-h=fn1(c)-p2
-z=(z-c)*(z-h)*z-c*h
-c = h*c-z*h
-|z| <= 4
-}
-
-frm:rfr0ak1 {; Rolf Freericks 
-c = pixel
-h=z=p1
-:
-h=fn1(h)
-z=1-z*z*c-h
-|fn2(z)| >p2
-}
-
-
 rfr09u0_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=-0.125122/0.718514/27.3224/1/-39.999 params=0.8/0.4/100/0
   float=y maxiter=647
   colors=000J2KN3OP3Q<7>Z4__4`_4a<9>e5gf5gf5hf5h<16>m6om6om6om6om6o<4>o7q0\
@@ -217,7 +8,7 @@ rfr09u0_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr09u0_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=0.0406647/0.0152542/49.01961/1/-37.498
   params=0.8/0.4/100/0 float=y maxiter=647
   colors=00079F<18>JN`000<63>_UJ100<34>qPC000<59>153264000<39>CFG122CFG<16\
@@ -225,7 +16,7 @@ rfr09u0_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr09u0_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=-0.85380482650000000/-0.08572390675000000/24087.88/0.9704
   params=0.5/0.18/1024/0 float=y maxiter=647 logmode=fly
   colors=000z00<7>z66<14>7ee<14>zSSzTTzUU<10>zM0<9>zfdziizjj<20>zzzzzzyyz<\
@@ -233,7 +24,7 @@ rfr09u0_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr09u0_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=-0.85384441541984360/-0.08575367605573664/177116.8/0.9704
   params=0.5/0.18/1024/0 float=y maxiter=647 logmode=fly
   colors=000<56>L10L10L10L10M20<2>M20N30N30O40O40<101>zf0zf0ye0<54>L10K00K\
@@ -241,7 +32,7 @@ rfr09u0_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a21_01           { ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=-0.85382291563618710/-0.08569782289751805/4.994143e+008/0.665\
   3/4.852/0.301 params=0.5/0.18/64/0 float=y maxiter=647 outside=atan
   logmode=fly
@@ -250,7 +41,7 @@ rfr0a21_01           { ;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a21_02           { ; (c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr09u0
+  reset=1960 type=formula formulaname=rfr09u0 formulafile=gal2.frm
   center-mag=-0.85382291357827710/-0.08569782237506177/5.294768e+008/0.742\
   5/-107.996/0.985 params=0.5/0.18/64/0 float=y maxiter=647
   outside=atan logmode=fly
@@ -259,7 +50,7 @@ rfr0a21_02           { ; (c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a41_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr0a41
+  reset=1960 type=formula formulaname=rfr0a41 formulafile=gal2.frm
   function=sin/cos passes=1
   corners=-0.8540445/1.129927/-0.5635481/0.9244533
   params=0.46/0.03/0.5/-0.98/4/0 logmode=fly
@@ -271,7 +62,7 @@ rfr0a41_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a41_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a41
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a41
   function=sin/cos passes=1
   corners=-0.0316668153/-0.0103467703/0.673468709/0.730022013/-0.051138341\
   4/0.699444294 params=0.46/0.03/0.5/-0.98/4/0 logmode=fly
@@ -285,7 +76,7 @@ rfr0a41_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a41_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a41
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a41
   function=sin/cos passes=1
   corners=-0.010193406485775/-0.0091318405792681/0.69851340883/0.699309368\
   11/-0.010193119619268/0.69851340883 params=0.46/0.03/0.5/-0.98/4/0
@@ -300,7 +91,7 @@ rfr0a41_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a41_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a41
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a41
   function=sqr/atan passes=1 center-mag=-0.00200627/0.567659/54.34783
   params=0.4/0.9/1.59/0/4/0 float=y logmode=fly
   colors=000aET<5>e5Y<10>AF8<10>SdjUgnUgm<18>iYVjXTiXT<30>9WK8WJ7WJ6WI5WI3\
@@ -309,7 +100,7 @@ rfr0a41_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a41_05           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a41
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a41
   function=sqr/atan passes=1
   center-mag=+0.01594494862723105/+0.58162378778845450/140.0717
   params=0.4/0.9/1.59/0/4/0 float=y logmode=fly
@@ -321,7 +112,7 @@ rfr0a41_05           {;(c)Rolf Freericks, rfreericks@compuserve.com
 
 rfr0a41_06         { ; (c)Rolf Freericks, rfreericks@compuserve.com
                      ; t=0:06:15.86 (P200,1600x1200,pass1)
-  reset=1960 type=formula formulafile=gal2.par formulaname=rfr0a41
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a41
   function=sqr/atan passes=1
   center-mag=+0.01625450741253089/+0.58289800687936300/361.0096/1/24.998
   params=0.4/0.9/1.59/0/4/0 float=y maxiter=450 logmode=fly
@@ -335,7 +126,7 @@ rfr0a41_06         { ; (c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a61_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a51
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a51
   passes=1 center-mag=0/0/0.6666667 params=2.25/0.9/-2/1.1 float=y
   maxiter=15000 logmode=fly rseed=-7839
   colors=000<5>000PE0<2>K30XE0<4>G00D00900kT0<13>Lb0lR0<9>e40jT0<14>EK0lS0\
@@ -346,7 +137,7 @@ rfr0a61_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a61_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a51
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a51
   passes=1
   corners=0.412441808/0.534087144/0.03202850312/0.04132431526/0.451772139/\
   -0.02041193858 params=1/0.05/0.01/1 float=y inside=bof60 rseed=-7839
@@ -360,7 +151,7 @@ rfr0a61_02           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a61_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a51
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a51
   passes=1
   corners=0.47812000298/0.4795161502/0.055829896081/0.055504229118/0.47877\
   893612/0.054951318561 params=1/0.05/0.01/1 float=y inside=bof60
@@ -375,7 +166,7 @@ rfr0a61_03           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a61_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a51
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a51
   corners=-0.99239359/-0.058263071/-0.15706826/-0.4184113/-0.53066194/-0.7\
   7271046 params=0.5/1/-1/0 float=y rseed=-7839
   colors=000VPYS0hQ0d<2>J7TGAPEDLBGHFEG<4>c08h07m05<3>00S<2>20s<13>80U90S9\
@@ -385,7 +176,7 @@ rfr0a61_04           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a61_05           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a51
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a51
   corners=-0.78666216/-0.32333343/-0.050291227/-0.17991737/-0.55764327/-0.\
   35564975 params=0.5/1/-1/0 float=y rseed=-7839
   colors=000<8>000000200<11>Z000000000000B8<2>0B8<10>gB80BC<3>0BC<10>gBC0B\
@@ -395,7 +186,7 @@ rfr0a61_05           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a62_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a53
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a53
   passes=2
   center-mag=+0.47835363145392980/+0.62426723984381560/6191497
   params=0.4/0.3/-1/0 float=y maxiter=1500 logmode=fly rseed=-7839
@@ -405,7 +196,7 @@ rfr0a62_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a71_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a72
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a72
   passes=2 center-mag=0/0/0.6666667 params=0.9/0/1e-006/0 float=y
   inside=bof60 outside=1 logmode=fly rseed=-7839
   colors=000G09<33>g1Q000<72>gIc000<42>GD1000GE1<28>RM1SN1SN1TO2SO4<22>27n\
@@ -414,7 +205,7 @@ rfr0a71_01           {;(c)Rolf Freericks, rfreericks@compuserve.com
 
 rfr0a71_02         { ; polished woody peanuts
                      ; (c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=gal2.par formulaname=rfr0a72
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a72
   passes=2 center-mag=0/0/0.6666667 params=0/0.5/0.0001/0 float=y
   inside=bof60 outside=1 logmode=fly rseed=-7839
   colors=WSSWSS<11>KD3JC1IB0H90_Z_<9>000<15>M2U0mJWTX<4>A34ITBZX_<11>EH7DF\
@@ -426,7 +217,7 @@ rfr0a71_02         { ; polished woody peanuts
 
 rfr0a71_14         { ; (c)Rolf Freericks         t=0:01:41.34(P200,1600x1200)
                      ; rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr0a71
+  reset=1960 type=formula formulaname=rfr0a71 formulafile=gal2.frm
   center-mag=-9.09495e-013/6.82121e-013/0.0005813953
   params=0.5/0/0.0003/0 float=y maxiter=450 inside=bof60
   colors=000rth<44>q8Mp6Lrvg<18>ip4qui<34>17Crvi<60>cjHrvi<62>MQMrui<2>qrh\
@@ -436,7 +227,7 @@ rfr0a71_14         { ; (c)Rolf Freericks         t=0:01:41.34(P200,1600x1200)
 rfr0a71_15         { ; Swiss cheese in red        t=0:01:41.34(P200,1600x1200)
                      ; (c)Rolf Freericks
                      ; rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr0a71
+  reset=1960 type=formula formulaname=rfr0a71 formulafile=gal2.frm
   center-mag=-9.09495e-013/6.82121e-013/0.0005813953
   params=0.5/0/0.0003/0 float=y maxiter=450 inside=bof60
   colors=000_D7<21>gA6p77hA6<24>r66jXPKvf<41>r763hQ<46>q66Mg_<26>aPLHXM<24\
@@ -445,7 +236,7 @@ rfr0a71_15         { ; Swiss cheese in red        t=0:01:41.34(P200,1600x1200)
 
 rfr0a71_16         { ; (c)Rolf Freericks
                      ; rfreericks@compuserve.com
-  reset=1960 type=formula formulaname=rfr0a71
+  reset=1960 type=formula formulaname=rfr0a71 formulafile=gal2.frm
   center-mag=-9.09495e-013/5.68434e-013/0.0005813953
   params=0.5/0/0.0003/0 float=y maxiter=450 inside=bof60
   colors=000<8>eee<14>i00a00<24>k00c00DQB<10>MC1NB0O90P80<5>U10V00V00<19>k\
@@ -455,7 +246,7 @@ rfr0a71_16         { ; (c)Rolf Freericks
 
 rfr0a71_17         { ; (c)Rolf Freericks t=0:04:58.25 (P200,1600x1200,pass1)
                      ; rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=gal2.par formulaname=rfr0a71
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a71
   passes=1 center-mag=-1.02318e-012/5.68434e-013/0.004274966
   params=0.5/0/0.0003/0 float=y maxiter=450 inside=bof60
   colors=000<7>0`00e40c20`0<12>000<26>0000Q0<19>010000000<19>0000C0<12>010\
@@ -463,7 +254,7 @@ rfr0a71_17         { ; (c)Rolf Freericks t=0:04:58.25 (P200,1600x1200,pass1)
   }
 
 rfr0a81_7          {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a81
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a81
   center-mag=0/0/0.2 params=50/30/-50/50/20/0 float=y maxiter=1500
   inside=bof60
   colors=300SKF_Qr<24>SKFalz<29>SKFDKi<14>NKQIK`<13>SkkHWa7HS8IR9IQUNIAIQ<\
@@ -472,7 +263,7 @@ rfr0a81_7          {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a81_8          {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a81
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a81
   center-mag=0.400782/0.391134/7.518797/1/-27.5
   params=50/30/-50/50/20/0 float=y maxiter=1500 inside=bof60
   colors=000<4>000000020<3>0H0000<2>00001406A<2>BKR000<2>000<12>00e<4>00Q<\
@@ -485,7 +276,7 @@ rfr0a81_8          {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a84_3          {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a84
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a84
   function=abs center-mag=0/0/0.6666667 params=1/1/-1/0/10/0 float=y
   maxiter=1500
   colors=000qi`Q1C<83>`T3Q1C<86>dJAQ1C<55>YDCR2DYDC<14>`GD`GE`GE`GF`GF<2>`\
@@ -493,7 +284,7 @@ rfr0a84_3          {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a84_7          {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a84
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a84
   function=cos passes=2
   center-mag=+0.80745587451716340/-0.53058590142833630/607143
   params=0.5/1.5/-1/0/100/0 float=y maxiter=2147483647
@@ -507,7 +298,7 @@ rfr0a84_7          {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a91_09         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a91
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a91
   center-mag=0/0/0.6666667 params=0.5/0.05/4/0 float=y maxiter=1500
   colors=000nTA<2>XEFR8HNPKhYMYYZMXkmYC<5>AZVs`B<6>vxUoUA<3>XDHgXL<2>8Tts`\
   9<3>op9nt8oY9<2>bW8ibJ_hTPnbrWB<5>gHOsRFsKLsDRr5Ysd7sk5ss3sS7<2>uA1cdGOl\
@@ -519,7 +310,7 @@ rfr0a91_09         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a91_10         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a91
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a91
   center-mag=+0.03421309872922739/+0.56323337679271000/54.64481
   params=0.62/0.5/4/0 float=y maxiter=1500 inside=bof60
   colors=300`S0<10>742<4>963A74A74A85B85<25>NLINMJOMJPNK<7>TRO<5>000<5>YXU\
@@ -530,14 +321,14 @@ rfr0a91_10         {;(c)Rolf Freericks, rfreericks@compuserve.com
 
 rfr0a92_05         { ; red eye sees red eye
                                ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a92
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a92
   center-mag=-0.80406851691104530/+0.16362673564537220/251125
   params=0.4/0.00229/10/0 float=y maxiter=2500
   colors=000nFD<99>vBHhHA<15>fPNfPOhHAfPP<34>aep`fq`fq`fq<95>MRu
   }
 
 rfr0a92_06         { ; (c)Rolf Freericks, rfreericks@compuserve.com t=0:27:41.06(P200, 1600x1200)
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a92
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a92
   center-mag=-0.80406867261309810/+0.16362678756297320/1207332
   params=0.4/0.00229/10/0 float=y maxiter=2500
   colors=000gLF<8>hIEhIEhIEhIEhIEhIE<92>_NI_NI_MI000<49>cgKdhLdhLdhL<90>gL\
@@ -546,7 +337,7 @@ rfr0a92_06         { ; (c)Rolf Freericks, rfreericks@compuserve.com t=0:27:41.06
 
 rfr0a92_07         { ; very nervous mollusk t=0:25:42.42(P200, 1600x1200,pass1)
                               ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a92
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a92
   passes=1
   center-mag=-0.80406782758875220/+0.16362690499946100/2.59995e+007/0.658/\
   -90 params=0.4/0.00229/10/0 float=y maxiter=2500
@@ -556,7 +347,7 @@ rfr0a92_07         { ; very nervous mollusk t=0:25:42.42(P200, 1600x1200,pass1)
 
 rfr0a92_08         { ; bergziege
                      ; (c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=gal2.par formulaname=rfr0a92
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a92
   passes=2
   center-mag=-0.80406782277695750/+0.16362686183814450/1.15758e+008/1.9588\
   /-113.374/-8.71 params=0.4/0.00229/10/0 float=y maxiter=2147483647
@@ -567,7 +358,7 @@ rfr0a92_08         { ; bergziege
 
 rfr0a93_01         { ; fern
                               ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a93
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a93
   center-mag=-0.72265741495938110/-0.01431375529014025/32552.08
   params=0.8/0.9/0.2/0.6/10/0 float=y
   colors=000SF7<6>Gi4WGJ_LVcRfUKkVFD<4>gZkUWYWqyIS96hBTFA<6>YmVPLB<3>6xSVu\
@@ -580,7 +371,7 @@ rfr0a93_01         { ; fern
   }
 
 rfr0a93_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a93
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a93
   passes=1
   center-mag=-1.10081808904215400/+0.16279680893037880/36766.74
   params=0.75/0.1/0.68/0.6/10/0 float=y maxiter=1000
@@ -589,14 +380,14 @@ rfr0a93_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0a93_12         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0a93
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0a93
   passes=1 center-mag=0.330321/-0.841279/9.310274/0.8242/-119.999
   params=0.75/0.12/0.68/0.6/10/0 float=y maxiter=1000 inside=bof60
   colors=000OFL<14>RGN314<23>WGd000<81>7CA000<41>846857600857<84>OFK
   }
 
 rfr0aa1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=sin passes=2
   center-mag=-0.16540029936461380/-0.04075472620599742/5031447/1/-84.998
   params=0.15/1/0.5/1/10/0 float=y maxiter=450
@@ -605,7 +396,7 @@ rfr0aa1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_03         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=sin passes=2
   center-mag=-0.16540044837494750/-0.04075490715280514/3.699593e+007/1/-12\
   2.499 params=0.15/1/0.5/1/10/0 float=y maxiter=450
@@ -614,7 +405,7 @@ rfr0aa1_03         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_04         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=flip passes=2 center-mag=0.296414/-0.231364/4.088174
   params=0.2/1/0.5/0/4/0 float=y maxiter=450
   colors=000LwMJzNcLI<15>X`5cKI<41>03OcKI<16>lYZWFUlYZ<17>vlp<15>4BP<28>FW\
@@ -622,7 +413,7 @@ rfr0aa1_04         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_05         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=flip passes=2
   center-mag=-0.478123/-0.219035/3.720238/1/49.999
   params=0/0/0.3/0/4/0 float=y maxiter=450
@@ -635,7 +426,7 @@ rfr0aa1_05         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=conj passes=2 center-mag=0/0/13.33333
   params=1/-0.05/-0.2/0.121/4/0 float=y maxiter=450
   colors=000EQK<28>Ae5H9Z<41>GG4J9V<6>Y42H9Z<35>YKiK9_YKi<20>gQohRphRpiSqi\
@@ -643,7 +434,7 @@ rfr0aa1_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=conj passes=2
   center-mag=+0.00000000000000000/+0.00000000000000000/266.6667
   params=1/-0.05/-0.2/0.121/4/0 float=y maxiter=450
@@ -652,7 +443,7 @@ rfr0aa1_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0aa1_16         { ;(c)Rolf Freericks, rfreericks@compuserve.com  t=0:01:11.18 (P200,1600x1200,1 Pass)
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=abs passes=1 center-mag=0.273705/0.449804/15.51253
   params=0.5/0.8/0.5/-1/10/0 float=y maxiter=450 inside=0
   colors=000W2R`2Wf3`708<5>l5s3QU7ow150<4>7W5881<5>tuA540<6>j_1358<5>MavPH\
@@ -664,7 +455,7 @@ rfr0aa1_16         { ;(c)Rolf Freericks, rfreericks@compuserve.com  t=0:01:11.18
   }
 
 rfr0aa1_22         { ; maya priest (c)Rolf Freericks, rfreericks@compuserve.com t=0:03:43.93 (P200,1600x1200,1 pass)
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=abs passes=1
   center-mag=-0.00306617893763911/+0.00183277585169709/3.11603e+010/1.3091\
   /72.499 params=0.5/0.8/0.5/-0.8/10/0 float=y maxiter=1500
@@ -677,7 +468,7 @@ rfr0aa1_22         { ; maya priest (c)Rolf Freericks, rfreericks@compuserve.com 
   }
 
 rfr0aa1_24         { ;(c)Rolf Freericks, rfreericks@compuserve.com  t=0:01.31.45 (P200,1600x1200,1 pass)
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=abs passes=1
   center-mag=+0.55240943522502290/+0.26728895098692060/7123.114/2.2722
   params=0.5/0.8/0.5/-0.8/10/0 float=y maxiter=1500 outside=atan
@@ -686,7 +477,7 @@ rfr0aa1_24         { ;(c)Rolf Freericks, rfreericks@compuserve.com  t=0:01.31.45
   }
 
 rfr0aa1_26         { ;(c)Rolf Freericks, rfreericks@compuserve.com t=0:08:45.09 (P200,1600x1200,1 pass)
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0aa1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0aa1
   function=conj passes=1
   center-mag=-0.20502739868691240/+0.37154145734147550/28172.33/0.8824/-64\
   .998 params=1.5/0.5/1.9/0.4/10/0 float=y maxiter=450 logmap=yes
@@ -696,7 +487,7 @@ rfr0aa1_26         { ;(c)Rolf Freericks, rfreericks@compuserve.com t=0:08:45.09 
   }
 
 rfr0ab1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ab1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ab1
   function=flip/sin
   center-mag=-0.17481836667182340/-0.43055605568787170/629.7194/0.8722/152\
   .5 params=0/0/0/0/10/0 float=y maxiter=1500 inside=0 outside=summ
@@ -707,7 +498,7 @@ rfr0ab1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ab1_11         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ab1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ab1
   function=ident/sqrt center-mag=0.496109/0.953194/12.26572
   params=0/0/0/0.05/10/0 float=y maxiter=1500 inside=0
   colors=0008FN<14>5G`8II<7>DkQBEDEC8IA2CC_G8q8GJ<25>Pvm8GI<15>3kTAGH<12>c\
@@ -716,7 +507,7 @@ rfr0ab1_11         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ab2_05         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ab2
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ab2
   function=abs/abs passes=1
   center-mag=-1.16418046000000000/-0.50870522850000000/20.13673/1.8901/8.5\
   26/20.83 params=1/0/0.5/0/10/0 inside=bof60
@@ -729,8 +520,8 @@ rfr0ab2_05         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag1_10         { ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=joe02.frm
-  formulaname=spiderjulcplx_rfr passes=1
+  reset=1960 type=formula formulafile=gal2.frm
+  formulaname=SpiderJulcplx_RFR passes=1
   center-mag=+0.44966117786394630/+0.39424979307482980/30971.55/1/90
   params=0/0.2/0.5/0 float=y
   colors=0003wk<44>WVc00D<13>002001000010030051<2>0A2<8>c00<8>0d0<13>0LC<1\
@@ -741,7 +532,7 @@ rfr0ag1_10         { ;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag2_17         { ;;(c)Rolf Freericks, rfreericks@compuserve.com 
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag2
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag2
   passes=1 center-mag=0.300388/1.41971/8.64633/1/52.499
   params=1/0.01/0.5/0.05/0.8/8 float=y maxiter=450
   colors=000717<9>J2D046<2>0GP010<4>0710910A10C11D2<17>Ma6021<2>0A50C62F7<\
@@ -751,7 +542,7 @@ rfr0ag2_17         { ;;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag2_21         { ;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag2
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag2
   passes=1
   center-mag=+0.23219638571329170/+1.51619786831880900/31418.35/1/52.499
   params=1/0.01/0.5/0.05/0.8/8 float=y maxiter=450
@@ -762,7 +553,7 @@ rfr0ag2_21         { ;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag4_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag4
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag4
   passes=1
   center-mag=+0.15663973432910240/+1.21295477408134800/273390.1/1.5839
   params=0.4/0.1/0.5/0.1/0.1/0 float=y maxiter=450
@@ -771,7 +562,7 @@ rfr0ag4_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag4_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag4
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag4
   passes=1
   center-mag=+0.15664024247630400/+1.21295401440971600/1.337691e+009/1.058\
   5/-47.958/24.108 params=0.4/0.1/0.5/0.1/0.1/0 float=y maxiter=450
@@ -781,7 +572,7 @@ rfr0ag4_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag4_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag4
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag4
   passes=1
   center-mag=+0.15664024247630400/+1.21295401440971600/1.337691e+009/1.058\
   5/-47.957/24.107 params=0.4/0.1/0.5/0.1/0.1/0 float=y maxiter=450
@@ -792,7 +583,7 @@ rfr0ag4_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ag4_10         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ag4
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ag4
   passes=1
   center-mag=+0.15664024263816290/+1.21295401390315700/7.023617e+009/0.854\
   3/-15.603/9.251 params=0.4/0.1/0.5/0.1/0.1/0 float=y maxiter=450
@@ -803,7 +594,7 @@ rfr0ag4_10         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ah1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ah1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ah1
   function=flip
   center-mag=+0.36611324550000000/+0.56022822850000000/395.992/0.7055/-27.\
   383/-0.109 params=0.5/0.05/0.4/1
@@ -812,7 +603,7 @@ rfr0ah1_02         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ah1_03         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ah1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ah1
   function=tan center-mag=0.273897/2.45275e-005/2.732178/1/-90
   params=0.51/0/1.5/0 inside=bof60
   colors=qkFfbS<11>ojHpjGqkFqkFpiEpgE<24>f64f54d67<11>QGa<12>wP`<21>LC8JB7\
@@ -821,7 +612,7 @@ rfr0ah1_03         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ah1_04         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ah1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ah1
   function=tan
   center-mag=-0.01023072002000000/+0.00001651049000000/273.4227/0.9997/-90
   params=0.51/0/1.5/0 inside=bof60
@@ -830,7 +621,7 @@ rfr0ah1_04         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ah1_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ah1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ah1
   function=exp
   center-mag=-0.16078282911912630/+0.33944984646190450/208.3347
   params=-0.1/0/1.8/0.85 float=y
@@ -842,7 +633,7 @@ rfr0ah1_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
 
 rfr0ak1_04         { ;(c)Rolf Freericks, rfreericks@compuserve.com
                      ; blue starfishes with golden glow
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/sqrt passes=1
   center-mag=-0.10209704895882490/+0.10528762305075730/54271.14/1.4825/14.\
   999 params=2/5/2/0 float=y maxiter=450 inside=bof60 outside=atan
@@ -852,7 +643,7 @@ rfr0ak1_04         { ;(c)Rolf Freericks, rfreericks@compuserve.com
 
 rfr0ak1_05         { ;(c)Rolf Freericks, rfreericks@compuserve.com
                      ; onlookers are looking on you
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/sqrt passes=1
   center-mag=0.0756364/-0.0219497/66.49643/1/-102.496 params=2/5/2/0
   float=y maxiter=450 inside=bof60 outside=atan logmode=fly
@@ -863,7 +654,7 @@ rfr0ak1_05         { ;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/sqrt center-mag=0.438871/0.753769/10.41667
   params=0/0.2/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
   rseed=-7839
@@ -871,7 +662,7 @@ rfr0ak1_06         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/sqrt
   center-mag=+0.46865055448815110/+0.74832425491210940/4166.667
   params=0/0.2/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
@@ -880,7 +671,7 @@ rfr0ak1_07         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/sqrt
   center-mag=+0.56549364613880690/+0.49977183833116190/5333.333
   params=1/1/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
@@ -895,7 +686,7 @@ rfr0ak1_08         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_11         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/abs center-mag=-0.0223343/0.146253/31.02507/1/-90
   params=5/4/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
   rseed=-7839
@@ -905,7 +696,7 @@ rfr0ak1_11         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_12         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/abs
   center-mag=-0.02729308008120922/+0.15406675168899030/254.3038/1/-90
   params=5/4/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
@@ -916,7 +707,7 @@ rfr0ak1_12         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_13         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=cabs/abs
   center-mag=-0.02797599315108210/+0.15499921322384820/238787.4/1/-159.998
   params=5/4/0.001/0 float=y maxiter=450 inside=bof60 logmap=46
@@ -929,7 +720,7 @@ rfr0ak1_13         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_16         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=acosh/atan
   center-mag=-0.52280273704789790/-0.44180338983050680/471.3424/1/25
   params=1/0/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly
@@ -940,7 +731,7 @@ rfr0ak1_16         {;(c)Rolf Freericks, rfreericks@compuserve.com
   }
 
 rfr0ak1_18         {;(c)Rolf Freericks, rfreericks@compuserve.com
-  reset=1960 type=formula formulafile=rf_9711.frm formulaname=rfr0ak1
+  reset=1960 type=formula formulafile=gal2.frm formulaname=rfr0ak1
   function=acosh/atan
   center-mag=-0.52318353565526880/-0.44138037421780970/31864.68/1/25
   params=1/0/0.001/0 float=y maxiter=450 inside=bof60 logmode=fly

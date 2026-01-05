@@ -1,3 +1,4 @@
+{
 Some years ago, when I was a lead Astronaut for N.A.S.A., myself and 
 John Clenn were sent on a secret mission to explore Mickey (a 
 here-to-for unknown planet adjacent to Pluto). When John (later to
@@ -33,10 +34,6 @@ Compuserve at: 73753,2420 or on America Online with name:
 Genealogy1.
 
 Bob Carr
-}
-
- }
--Please-read-me{
 }
 
 Carr-166{

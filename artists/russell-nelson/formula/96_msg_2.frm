@@ -1,6 +1,6 @@
-96_MSG_2.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
-This file contains the Fractint "FRMs" required by the .pars in the
-96_MSG_2.PAR compilation
+; 96_MSG_2.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
+; This file contains the Fractint "FRMs" required by the .pars in the
+; 96_MSG_2.PAR compilation
 
 
 2 { ; Sylvie Gallet [101324,3444]
@@ -330,14 +330,14 @@ iter=iter+1
 ;CN_02_phc_r(XAXIS){; Jo Weber, 8/1996 
 ;See modified, resolution independent, version "JoWe_CN_02_PHC", below 
   ; p2 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p2-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-  pm1 = p1-1.51,  z = pixel :
-  oldz = z,
-  z = (pm1*(z^p1)*oddeven +1)/(p1 * z^pm1)+z*evenodd
-  |(z-oldz)|>=|0.001|
-}
+;   count = (count + 1) * (count != (p2-1))
+;   evenodd = (evenodd == (count == 1))
+;   oddeven = (evenodd == 0)
+;   pm1 = p1-1.51,  z = pixel :
+;   oldz = z,
+;   z = (pm1*(z^p1)*oddeven +1)/(p1 * z^pm1)+z*evenodd
+;   |(z-oldz)|>=|0.001|
+; }
 
 JoWe_CN_02_PHC(XAXIS){ ; Jo Weber [100424,35], 1996  Requires passes=1
   pm1 = p1-1.51,  z = pixel :
@@ -910,18 +910,18 @@ jenn002{; Arno Jennen
 
 ;JD-LS-JM { ; Jim Deutch/modified by Lee Skinner and Jan M. van der Valk - 1024x768 only
 ;See modified, resolution independent, version below 
-  countreset = (count < 1024)
-  count = count * countreset
-  evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  f1 = sin(.5*pixel)
-  f2 = 1/pixel
-  pixel = evenodd * f1 + oddeven * f2
-  z = 0
-  c = pixel:
-  z = log(z)*z+c
-  |z| < 4 }
+;   countreset = (count < 1024)
+;   count = count * countreset
+;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   f1 = sin(.5*pixel)
+;   f2 = 1/pixel
+;   pixel = evenodd * f1 + oddeven * f2
+;   z = 0
+;   c = pixel:
+;   z = log(z)*z+c
+;   |z| < 4 }
 
 JD-LS-JM { ; Jan Maarten van der Valk [100256,3721], 1996  Requires passes=1
   f1 = sin(.5*pixel)
@@ -935,33 +935,33 @@ JD-LS-JM { ; Jan Maarten van der Valk [100256,3721], 1996  Requires passes=1
 
 ;JD-LS01 { ; Jim Deutch/modified by Lee Skinner.  1600x1200 only
 ;See modified, resolution independent, version "JD-LS0", below 
-  countreset = (count < 1600)
-  count = count * countreset
-  evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  f1 = sin(.5*pixel)
-  f2 = 1/pixel
-  pixel = evenodd * f1 + oddeven * f2
-  z = 0
-  c = pixel:
-  z = z*z + c
-  |z| < 4 }
+;   countreset = (count < 1600)
+;   count = count * countreset
+;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   f1 = sin(.5*pixel)
+;   f2 = 1/pixel
+;   pixel = evenodd * f1 + oddeven * f2
+;   z = 0
+;   c = pixel:
+;   z = z*z + c
+;   |z| < 4 }
 
 ;JD-LS07 { ; Jim Deutch/modified by Lee Skinner.  1024x768 only
 ;See modified, resolution independent, version "JD-LS0",below 
-  countreset = (count < 1024)
-  count = count * countreset
-  evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  f1 = sin(.5*pixel)
-  f2 = 1/pixel
-  pixel = evenodd * f1 + oddeven * f2
-  z = 0
-  c = pixel:
-  z = z*z + c
-  |z| < 4 }
+;   countreset = (count < 1024)
+;   count = count * countreset
+;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   f1 = sin(.5*pixel)
+;   f2 = 1/pixel
+;   pixel = evenodd * f1 + oddeven * f2
+;   z = 0
+;   c = pixel:
+;   z = z*z + c
+;   |z| < 4 }
 
 JD-LS0 { ; Lee Skinner [75450,3631], 1996  Requires passes=1
   f1 = sin(.5*pixel)
@@ -975,17 +975,17 @@ JD-LS0 { ; Lee Skinner [75450,3631], 1996  Requires passes=1
 
 ;JD-SG-05 { ; Sylvie Gallet [101324,3444], 1996
 ;See modified, resolution independent, version below 
-  ; use p1 and p2 to adjust the 2nd Mandel
-  ; p1 = -1 (default)
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  p1 = p1 * (p1!=0) - (p1==0)
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-  z = 0 , c = pixel * evenodd + (p1*pixel+p2) * oddeven :
-   z = z*z + c
-    |z| < 4
- }
+;   ; use p1 and p2 to adjust the 2nd Mandel
+;   ; p1 = -1 (default)
+;   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
+;   p1 = p1 * (p1!=0) - (p1==0)
+;   count = (count + 1) * (count != (p3-1))
+;   evenodd = (evenodd == (count == 1))
+;   oddeven = (evenodd == 0)
+;   z = 0 , c = pixel * evenodd + (p1*pixel+p2) * oddeven :
+;    z = z*z + c
+;     |z| < 4
+;  }
 
 JD-SG-05 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   ; use p1 and p2 to adjust the 2nd Mandel
@@ -998,15 +998,15 @@ JD-SG-05 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
 
 ;JD-SG-06 { ; Sylvie Gallet [101324,3444], 1996
 ;See modified, resolution independent, version below 
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-  z = flip(imag(p1)) * oddeven + real(p1) * evenodd
-  c = pixel :
-   z = z*z + c
-    |z| < 4
- }
+;   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
+;   count = (count + 1) * (count != (p3-1))
+;   evenodd = (evenodd == (count == 1))
+;   oddeven = (evenodd == 0)
+;   z = flip(imag(p1)) * oddeven + real(p1) * evenodd
+;   c = pixel :
+;    z = z*z + c
+;     |z| < 4
+;  }
 
 JD-SG-06 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
   z = flip(imag(p1)) * (whitesq == 0) + real(p1) * whitesq
@@ -1017,17 +1017,17 @@ JD-SG-06 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
 
 ;JDfrm010 { ; Jim Deutch. Overlay mandel + reversed mandel
 ;See modified, resolution independent, version below 
-  countreset = (count < 320) ;interlace checkerboard 320x200
-  count = count + 1          ;but does good at 1024x768 too
-  count = count * countreset 
-  evenodd = (evenodd < 1) * (count != 1)
-  oddeven = (evenodd < 1)               
-  pixel = evenodd * pixel + oddeven * -pixel
-  z = 0
-  c = pixel:
-  z = z*z + c
-  |z| < 4
-}
+;   countreset = (count < 320) ;interlace checkerboard 320x200
+;   count = count + 1          ;but does good at 1024x768 too
+;   count = count * countreset 
+;   evenodd = (evenodd < 1) * (count != 1)
+;   oddeven = (evenodd < 1)               
+;   pixel = evenodd * pixel + oddeven * -pixel
+;   z = 0
+;   c = pixel:
+;   z = z*z + c
+;   |z| < 4
+; }
 
 JDfrm010 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
            ; The Original PHC formula
@@ -1039,36 +1039,36 @@ JDfrm010 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
 
 ;JDfrm010m7 { ; Jim Deutch/modified by Lee Skinner.
 ;See modified, resolution independent, version "JDfrm010", above 
-  countreset = (count < 1024)
-  count = count * countreset
-  evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  pixel = evenodd * pixel + oddeven * -pixel
-  z = 0
-  c = pixel:
-  z = z*z + c
-  |z| < 4
-}
+;   countreset = (count < 1024)
+;   count = count * countreset
+;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   pixel = evenodd * pixel + oddeven * -pixel
+;   z = 0
+;   c = pixel:
+;   z = z*z + c
+;   |z| < 4
+; }
 
 ;JDfrm021a7 { ; Jim Deutch pseudo-Hicolor
 ;See modified, resolution independent, version "JDfrm021a", below 
-  a = pixel
-  b = abs(a)
-  c = flip(a)
-  r = |a|
-  countreset = (count < 1024)
-  count = count * countreset
-  evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  z = a * evenodd:
-  z2 = z*z
-  rz2 = r*z2
-  sinzoz = sin(z) / (z+oddeven)
-  z=(b/c/a + z2)*oddeven + (sinzoz/(rz2+oddeven))*evenodd
-  |z| < 4 + 10000000*evenodd
-}
+;   a = pixel
+;   b = abs(a)
+;   c = flip(a)
+;   r = |a|
+;   countreset = (count < 1024)
+;   count = count * countreset
+;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   z = a * evenodd:
+;   z2 = z*z
+;   rz2 = r*z2
+;   sinzoz = sin(z) / (z+oddeven)
+;   z=(b/c/a + z2)*oddeven + (sinzoz/(rz2+oddeven))*evenodd
+;   |z| < 4 + 10000000*evenodd
+; }
 
 JDfrm021a { ; Jim Deutch [104074,3171], 1996  Requires passes=1
   a = pixel , r = |a| , b = abs(a)
@@ -1086,16 +1086,16 @@ JDfrm021a { ; Jim Deutch [104074,3171], 1996  Requires passes=1
            ; p1 = 1st julia parameters
            ; p2 = 2nd julia parameters
            ; p3 slides 1st julia around the plane wrt the 2nd
-  countreset = (count < 1024)
-  count = count * countreset
-  evenodd=(evenodd<1)*(count!=0)*countreset+(countreset==0)*evenodd
-  oddeven = (evenodd < 1)
-  count = count + 1
-  z = pixel + p3*evenodd:
-  zsq = z*z
-  z = (zsq+p1)*evenodd + (zsq+p2)*oddeven
-  |z| < 4
-}
+;   countreset = (count < 1024)
+;   count = count * countreset
+;   evenodd=(evenodd<1)*(count!=0)*countreset+(countreset==0)*evenodd
+;   oddeven = (evenodd < 1)
+;   count = count + 1
+;   z = pixel + p3*evenodd:
+;   zsq = z*z
+;   z = (zsq+p1)*evenodd + (zsq+p2)*oddeven
+;   |z| < 4
+; }
 
 JDfrm031 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
            ; generalized 2-Julia pseudo-HiColor
@@ -1113,16 +1113,16 @@ JDfrm031 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
   ; p1 = Julia parameters
   ; p2 = bailout test
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-  z = c = pixel
-  r = |c|:
-  rz2 = r * z * z
-  sinzoz = sin(z) / (z+oddeven)
-  z = (sinzoz / rz2)*evenodd+(z*z+p1)*oddeven
-  |z| < p2
-}
+;   count = (count + 1) * (count != (p3-1))
+;   evenodd = (evenodd == (count == 1))
+;   oddeven = (evenodd == 0)
+;   z = c = pixel
+;   r = |c|:
+;   rz2 = r * z * z
+;   sinzoz = sin(z) / (z+oddeven)
+;   z = (sinzoz / rz2)*evenodd+(z*z+p1)*oddeven
+;   |z| < p2
+; }
 
 JDfrm038 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
   ; p1 = Julia parameters
@@ -1147,7 +1147,7 @@ jowe_13 { ; Jo Weber, July 1996
   z=fn1(z)-c/fn2(z)
 }
 
-JoWe_xy_06 = { ; Jo Weber, 9/1996
+JoWe_xy_06 { ; Jo Weber, 9/1996
               z = pixel:
               x=real(z), y=imag(z),
               x=x+fn1(z)^p1, y=y-fn2(z)^p2
@@ -1155,7 +1155,7 @@ JoWe_xy_06 = { ; Jo Weber, 9/1996
               |z|<=4
 }
 
-kgexp2 = { 
+kgexp2 { 
    z = Pixel, c=fn1(z) :
    z = z ^ 2.71828182845905 - c + pixel,
    |z| <= 100 
@@ -1223,16 +1223,16 @@ m+j+n_2 { ; Sylvie Gallet [101324,3444], 1996
 ;manjul_lace {; G. Martin [76440,1143], 1996
 ;See modified, resolution independent, version below 
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-  z = evenodd * 1.5*pixel + oddeven * pixel
-  c = evenodd * 1.5*pixel + oddeven * (-.75, .1234567):
-  ;begin iterations
-   z = z*z + c
-    |z| <= 4
-  ;SOURCE: phc_1.frm
-  }
+;   count = (count + 1) * (count != (p3-1))
+;   evenodd = (evenodd == (count == 1))
+;   oddeven = (evenodd == 0)
+;   z = evenodd * 1.5*pixel + oddeven * pixel
+;   c = evenodd * 1.5*pixel + oddeven * (-.75, .1234567):
+;   ;begin iterations
+;    z = z*z + c
+;     |z| <= 4
+;   ;SOURCE: phc_1.frm
+;   }
 
 manjul_lace { ; George Martin [76440,1143]  Requires passes=1
 ;

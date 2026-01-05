@@ -1,23 +1,23 @@
-* PAR file for Fractint 18.2 ... take 2
-* don lebow 1/94 
-*
-* these are, to the best of my knowledge, original
-*
-* use 'em as you like. I'm no artist ... the magic's in the numbers
-* 
-* they were created at 640 x 480 x 256 colors. lower res renderings are 
-* apt to look strange(r)
-*
-* formulas not part of the default v18.2 FRACTINT.FRM are in the
-* companion file DONS.FRM
-* you can substitute SKINNER.FRM (as found in LHS001.ZIP in GRAPHDEV)
-* 
-* I believe I forgot to say thanks last time to all the folks who've
-* contributed to this wonderful program ... and to my own education.
-*
-* Thanks.
-*
-* >>don CIS:76704,41
+; * PAR file for Fractint 18.2 ... take 2
+; * don lebow 1/94 
+; *
+; * these are, to the best of my knowledge, original
+; *
+; * use 'em as you like. I'm no artist ... the magic's in the numbers
+; * 
+; * they were created at 640 x 480 x 256 colors. lower res renderings are 
+; * apt to look strange(r)
+; *
+; * formulas not part of the default v18.2 FRACTINT.FRM are in the
+; * companion file DONS.FRM
+; * you can substitute SKINNER.FRM (as found in LHS001.ZIP in GRAPHDEV)
+; * 
+; * I believe I forgot to say thanks last time to all the folks who've
+; * contributed to this wonderful program ... and to my own education.
+; *
+; * Thanks.
+; *
+; * >>don CIS:76704,41
 
 
 
@@ -51,7 +51,7 @@ arbai_door         {
   }
 
 autumn_bouquet     { ; for your virtual thanksgiving table
-  reset type=formula formulafile=skinner.frm formulaname=tsinh passes=t
+  reset type=formula formulafile=skinner.frm formulaname=TSinh passes=t
   corners=0.1702022/-1.597419/1.172323/-1.184511/-1.597419/-1.184511
   params=1 float=y maxiter=75 inside=bof60 outside=imag
   potential=255/500/0
@@ -69,7 +69,7 @@ button_button      {
   }
 
 Jm_15              { ; the day we finally found the bugs in the network
-  reset type=formula formulafile=fractint.frm formulaname=jm_15
+  reset type=formula formulafile=fractint.frm formulaname=Jm_15
   function=exp/tanh/log/exp passes=b
   corners=-0.8433769/0.6950481/1.221535/2.375351
   params=-0.13472999999999999 inside=epsiloncross outside=imag
@@ -101,7 +101,7 @@ stairway           { ; to ... uh ... somewhere
   }
 
 up_front           {
-  reset type=formula formulafile=fractint.frm formulaname=fzppfnre
+  reset type=formula formulafile=fractint.frm formulaname=Fzppfnre
   function=cos
   corners=0.8567512/-1.495249/-1.524159/1.611841/-1.495249/1.611841
   float=y maxiter=100 inside=bof60 finattract=y
@@ -160,7 +160,7 @@ wallpaper          { ; what can I say?
   }
 
 microverse         { ; FractalFenderC again ...
-  reset type=formula formulafile=skinner.frm formulaname=fractalfenderc
+  reset type=formula formulafile=skinner.frm formulaname=FractalFenderC
   passes=b
   corners=0.3078015/-2.818378/2.065304/-2.102901/-2.818378/-2.102901
   params=1 float=y potential=200/300/0

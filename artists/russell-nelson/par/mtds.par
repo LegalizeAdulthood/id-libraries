@@ -24,7 +24,7 @@ Blue_Moon          { ; Reflection of an anitmatter moon
 
 Data               { ; Ormand/Carr twizzled
   reset=1930 type=formula formulafile=j-carr.frm
-  formulaname=carr-orman1 function=conj/sinh passes=b
+  formulaname=Carr-Orman1 function=conj/sinh passes=b
   corners=0.22086185/0.038360536/-0.10036272/0.10225904/0.038360536/0.1022\
   5904 params=-0.5600000000000001/11 maxiter=1024 inside=bof60
   outside=real
@@ -75,7 +75,7 @@ Moon-Destructor    { ; fn*z+z
 Nanite             { ; Ormand/Carr tweaked
                      ; Zoom into Data    
   reset=1930 type=formula formulafile=j-carr.frm
-  formulaname=carr-orman1 function=conj/sinh passes=b
+  formulaname=Carr-Orman1 function=conj/sinh passes=b
   corners=0.0898925066/0.0420270562/0.0152133703/0.0409375429/0.0420270562\
   /0.0646645427 params=-0.5600000000000001/11 maxiter=1024
   inside=bof60 outside=real
@@ -128,7 +128,7 @@ Plaque,            { ; fn*z+z
 
 Sad_Monkey         { ; Found in one of Gallet's reworked formulas.
                      ; Sylvie is a gold mine of resources.
-  reset=1930 type=formula formulafile=new.frm formulaname=t6
+  reset=1930 type=formula formulafile=newforms.frm formulaname=t6
   function=exp/log/asin passes=b
   corners=0.832553382/0.886378723/-0.163599947/-0.27440204/0.910473631/-0.\
   253523372 params=1.5646464646/-0.22/2/0 float=y maxiter=3200

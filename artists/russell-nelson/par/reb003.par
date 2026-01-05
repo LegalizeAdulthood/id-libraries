@@ -1,7 +1,7 @@
 RoseGarden         { ; RoseGarden
                      ; Ron Barnett 1993
   reset type=formula formulafile=reb003.frm
-  formulaname=gopalsamy1 passes=t corners=-1.352/1.352/-1.014/1.014
+  formulaname=Gopalsamy1 passes=t corners=-1.352/1.352/-1.014/1.014
   params=0.5/0.37 float=y maxiter=256 inside=0
   colors=000KN1<2>MH0MF0LI1<13>EqiDtlEqi<12>KL5LI2MF0<15>zH0<15>MF0<15>ww0<15>\
   MF0OF1<14>wEa<14>PE1<15>zp_<14>SL4PI1MF0LG2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG\
@@ -10,7 +10,7 @@ RoseGarden         { ; RoseGarden
 
 ForbiddenFruit     { ; Watch out for the thorns!
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=foam passes=t
+  reset type=formula formulafile=reb003.frm formulaname=Foam passes=t
   corners=-2/2/-1.5/1.5 float=y maxiter=256 inside=epsiloncross
   colors=000ZG0<4>MF0<15>ww0<15>MF0OF1<14>wEa<14>PE1<15>zp_<14>SL4PI1MF0LG\
   2<13>7Or5Pv6Ps<8>GIMHIIIHEJHAKG6LG2MF0OH1<13>kml<13>QK5OI2MF0<3>LN0KP1KR\
@@ -20,7 +20,7 @@ ForbiddenFruit     { ; Watch out for the thorns!
 
 Droplets           { ; Water drops on clean glass
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=foam passes=t
+  reset type=formula formulafile=reb003.frm formulaname=Foam passes=t
   corners=0.05047/0.25047/0.422487/0.572487 params=1/0/-1 float=y
   maxiter=1024 inside=0 logmap=yes potential=255/1500/500
   colors=000cUz<102>ANUANUANUANUANUANT<145>000
@@ -28,7 +28,7 @@ Droplets           { ; Water drops on clean glass
 
 Hangover           { ; Were those really Margaretas?
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=gopalsamy1
+  reset type=formula formulafile=reb003.frm formulaname=Gopalsamy1
   passes=t
   corners=0.4348502/0.3452409/-0.005881/0.537175/0.1419237/0.384687
   params=-0.19/-0.19 float=y maxiter=1024 inside=epsiloncross
@@ -42,7 +42,7 @@ Hangover           { ; Were those really Margaretas?
 
 Hurricane          { ; The eye of the hurricane
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=gopalsamy2
+  reset type=formula formulafile=reb003.frm formulaname=Gopalsamy2
   passes=t
   corners=-0.519268/-0.293714/-0.245131/0.17676/-0.640576/-0.083386
   params=0.255 float=y maxiter=256 inside=0
@@ -53,7 +53,7 @@ Hurricane          { ; The eye of the hurricane
 SpiralEyes         { ; Old blue eyes is watching
                      ; Ron Barnett 1993
   reset type=formula formulafile=reb003.frm
-  formulaname=gopalsamy3 passes=t
+  formulaname=Gopalsamy3 passes=t
   corners=-0.847708/-0.165468/0.083273/0.594953 params=0.6/0.5 float=y
   maxiter=256 inside=0
   colors=000SNC<29>xo`zpaypa<29>UPF000<30>ppp<14>TTTRRRPPPNNNMMM<12>000PFF<27>\
@@ -63,7 +63,7 @@ SpiralEyes         { ; Old blue eyes is watching
 Mating             { ; Mandelbrot reproduction
                      ; Ron Barnett 1993
   reset type=formula formulafile=reb003.frm
-  formulaname=pseudomandellambda passes=t
+  formulaname=PseudoMandelLambda passes=t
   corners=-2.037936/5.414206/-2.794565/2.794557 params=1.3 float=y
   maxiter=256 inside=bof60
   colors=000V0z<13>w0zz0zz0x<27>z00<14>401<14>zWB<14>zVNzUOxTO<15>KA8<46>zn9<1\
@@ -72,7 +72,7 @@ Mating             { ; Mandelbrot reproduction
 
 Holiday            { ; Poinsetta
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=lambdapwr
+  reset type=formula formulafile=reb003.frm formulaname=LambdaPwr
   passes=t corners=0.456715/0.830106/1.372089/1.652133
   params=0.46999999999999997/1.25/0.5 float=y maxiter=256 inside=0
   colors=000QK5OI2MF0<3>LN0KP1KR1JT2JV3<6>Gi7Fk8Gi7<6>KV4KT3KR2KP1KN1<2>MH\
@@ -134,7 +134,7 @@ Laser              { ; Flash! Cover your eyes
 
 Forest             { ; Enchanted Forest
                      ; Ron Barnett 1993
-  reset type=formula formulafile=reb003.frm formulaname=gopalsamysin
+  reset type=formula formulafile=reb003.frm formulaname=GopalsamySin
   passes=t
   corners=-2.909082/0.828926/0.17366233/0.29569882/-1.621977/-1.5424784
   params=0/1.5700000000000001 float=y maxiter=256 inside=epsiloncross

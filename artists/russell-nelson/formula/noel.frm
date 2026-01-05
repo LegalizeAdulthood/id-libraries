@@ -581,3 +581,42 @@ textur2(XAXIS) {
       zp2 = zp1
       zp1 = temp^0.5, |zp1| <= 4}
 
+ht {
+   ; Ah! You can use a variable in the
+   ; inversion but now check for overflow.
+   ; Good results are found when the real part
+   ; of p1 is in the range 0.1->1.0
+   ; With some sort of special value aprox. 0.148148...
+   ; Setting the imaginary part as well causes very strange fractals
+  z = pixel, zp=temp=(0,0), huge=1.0e32:
+  temp = z
+  z = z*z + zp
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
+  ;SOURCE: noel.frm
+}
+ht1 {
+   ; Ah! You can use a variable in the
+   ; inversion but now check for overflow.
+   ; Good results are found when the real part
+   ; of p1 is in the range 0.1->1.0
+   ; With some sort of special value aprox. 0.148148...
+   ; Setting the imaginary part as well causes very strange fractals
+  z = pixel, zp=temp=(0,0), huge=1.0e32:
+  temp = z
+  z = z*z + zp
+  zp = p1/temp
+  (|zp| <= 64) && (|z| <= huge)
+  ;SOURCE: noel.frm
+}
+pheot {
+   ; The ht flavour of the pheonix fractal gives some nice escher like
+   ; fractals
+  z = pixel, zp1 = zp2 = (0,0), huge=1.0e32:
+  temp = z
+  z  = z*z - zp2
+  zp2 = zp1
+  zp1 = p1/conj(temp)
+  (|zp1| <= 64) && (|z| <= huge)
+  ;SOURCE: noel.frm
+}

@@ -1,32 +1,32 @@
 
-Newsgroups: sci.fractals
-Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!spool.mu.edu!bloom-beac
-on.mit.edu!news.kei.com!ub!netfs.dnd.ca!dgbt!nott!cunews!freenet.carleton.ca!Fr
-eeNet.Carleton.CA!aq936
-From: aq936@FreeNet.Carleton.CA (Michael Traynor)
-Subject: Fractint Parameters
-Message-ID: <DA0KJL.LD7@freenet.carleton.ca>
-Sender: aq936@freenet3.carleton.ca (Michael Traynor)
-Reply-To: aq936@FreeNet.Carleton.CA (Michael Traynor)
-Organization: The National Capital FreeNet
-Date: Sun, 11 Jun 1995 15:04:33 GMT
-Lines: 197
-
-Here are a bunch of parameter entries for fractint.  Most of these
-are based on perturbed versions of the mandelbrot set.  I hope you
-enjoy them, and if not, hey, they're free.
-
-Thanks to Paul Derbyshire, Jonathan Wolfe and others whose pars
-I have enjoyed and especially thanks to Tim Wegner and all the other
-folks who have shared their expertise and enthusiasm with us through
-Fractint and its various ports.
-
-While I'm here, has anyone found problems running Fractint on
-any of the tainted Pentiums (shouldn't that be Pentia?)?  Just
-curious, since Fractint should exagerate arithmetic errors with its
-iterative action.
-
------------------------------------------------------------------
+; Newsgroups: sci.fractals
+; Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!spool.mu.edu!bloom-beac
+; on.mit.edu!news.kei.com!ub!netfs.dnd.ca!dgbt!nott!cunews!freenet.carleton.ca!Fr
+; eeNet.Carleton.CA!aq936
+; From: aq936@FreeNet.Carleton.CA (Michael Traynor)
+; Subject: Fractint Parameters
+; Message-ID: <DA0KJL.LD7@freenet.carleton.ca>
+; Sender: aq936@freenet3.carleton.ca (Michael Traynor)
+; Reply-To: aq936@FreeNet.Carleton.CA (Michael Traynor)
+; Organization: The National Capital FreeNet
+; Date: Sun, 11 Jun 1995 15:04:33 GMT
+; Lines: 197
+; 
+; Here are a bunch of parameter entries for fractint.  Most of these
+; are based on perturbed versions of the mandelbrot set.  I hope you
+; enjoy them, and if not, hey, they're free.
+; 
+; Thanks to Paul Derbyshire, Jonathan Wolfe and others whose pars
+; I have enjoyed and especially thanks to Tim Wegner and all the other
+; folks who have shared their expertise and enthusiasm with us through
+; Fractint and its various ports.
+; 
+; While I'm here, has anyone found problems running Fractint on
+; any of the tainted Pentiums (shouldn't that be Pentia?)?  Just
+; curious, since Fractint should exagerate arithmetic errors with its
+; iterative action.
+; 
+; -----------------------------------------------------------------
 
 SpiralofSpirals    { ; Perturbation:(.25,.25)
                      ; 13 hrs on 486DX33, 1024x768
@@ -162,7 +162,7 @@ OutOfTheFrothII    { ; Perturbation: (.25,.25)
   }
 
 ShatteredLines     { ; Mandel perturbed (.208, .208)
-                   { ; 1h10m, 486DX33,1024x768
+                     ; 1h10m, 486DX33,1024x768
                      ; Mike Traynor, aq936@freenet. carleton.ca
   reset=1920 type=mandel passes=t
   center-mag=-0.74999688019300000/-0.00203592565893952/40713.92

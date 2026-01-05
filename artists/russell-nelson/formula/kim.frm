@@ -5,28 +5,28 @@ Rocky Mountain Cancer Data System         *  Are good with thier  *
 Salt Lake City, Utah  84108               *************************
 }
 
-mfn2fn = {
+mfn2fn {
         z=pixel:
         power = fn2(z);
         z = fn1(z)^power + pixel,
         |z| < p2
         }
 
-jfn2fn = {
+jfn2fn {
         z=pixel:
         power = fn2(z);
         z = fn1(z)^power + p1,
         |z| < p2
         }
 
-jtofn = {
+jtofn {
         z=pixel:
         power = fn2(z);
         z = z^power + p1,
         |z| < p2
         }
 
-mtofn = {
+mtofn {
         z=pixel:
         power = fn2(z);
         z = z^power + pixel,

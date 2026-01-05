@@ -1,13 +1,13 @@
-Hi, I`m Albrecht Niekamp, Duesseldorf
-Niekamp@Online-club.de
-This is my first try to publish formulas for the fractint users. These 
-frm-files correspond to the par-files
-with the same .name. The basic formula (Nr.13 or 13a) was first used on my 
-Multifrac program for the good old AtariXL. All other formulas are 
-variations of this one. Try yourself, You`ll see that they are very easy 
-to edit. Suggstions, new par-files or variations are welcome.
-
---------------------------------------------------------------
+; Hi, I`m Albrecht Niekamp, Duesseldorf
+; Niekamp@Online-club.de
+; This is my first try to publish formulas for the fractint users. These 
+; frm-files correspond to the par-files
+; with the same .name. The basic formula (Nr.13 or 13a) was first used on my 
+; Multifrac program for the good old AtariXL. All other formulas are 
+; variations of this one. Try yourself, You`ll see that they are very easy 
+; to edit. Suggstions, new par-files or variations are welcome.
+; 
+; --------------------------------------------------------------
 
 multifrac1 {
   z = pixel:
@@ -1000,3 +1000,313 @@ multifrac68 {
   endif
   |z| > (x2+w2+y2)
   }
+Multifractal    {;   Albrecht Niekamp 16.5.01
+;only integers as first input, second input 5 digits to the right
+;real(p2) factor1,border1
+;imag(p2) (-)maxiter1,input bas.frm1_2digits input bas.frm2_2digits
+;real(p3) bailout,hyb.mandel: number of sides (Many_mods L.Allison)
+;imag(p3) factor2,border2
+;real(p4) maxiter2,factor3
+;imag(p4) border3,maxiter3
+;real(p5) 1digit_shape only  5digits: shape,out1,out2,in1,in2
+; 1_mand 2_jul 3_hyb.mand 4_hyb.jul +5_reset (not shape) <0_no in/out1
+;  optional basic frm2: out-nbr 1digit in-nbr 1digit 3_both +5_shape
+;imag(p5) 1digit : 1_iter1reset 2_iter2reset 3_both +5_shape effect
+; 2digits : many_mods multipl.shutoff +10_in/out1 +20_in/out2 +30_both
+;  optional input2: frequency_2digits level_2digits amplitude_2digits
+;
+d=real(p2)               ;factor1 , border1
+fac1=trunc(d)
+b1=(d-fac1)*100000
+;
+d=imag(p2)
+da=d<0                   ;p6 negative (frm1)
+if (da)
+ d=-d
+endif
+mi1=trunc(d)             ;maxiter1
+d=round((d-mi1)*10000)
+p6=trunc(d/100)/10        ;init. value frm1
+d=d-1000*p6
+if (da)
+ p6=-p6
+endif
+p7=d/10                    ;init. value frm2
+;
+d=real(p3)
+ba=trunc(d)                ;bailout
+mm=round((d-ba)*100000)    ;m_mods nbr of sides
+;
+d=imag(p3)
+fac2=trunc(d)               ;factor2
+b2=(d-fac2)*100000          ;border2
+;
+d=real(p4)
+mi2=trunc(d)                 ;maxiter2
+fac3=round((d-mi2)*100000)   ;factor3
+;
+d=imag(p4)
+b3=trunc(d)                   ;border3
+mi3=round((d-b3)*100000)      ;maxiter3
+;
+da=real(p5)
+t=da<0                        ;in/out2 only
+if (t)
+ da=-da
+endif
+start=2-t                     ;inout1+inout2: start=2
+dd=trunc(da)
+if (dd<5)
+ start=0
+endif
+vb=(dd==3)+(dd==4)             ;shape hybrid frm_1digit input
+da=round((da-dd)*100)
+d=trunc(dd/10000)
+vb=(d==3)+(d==4)+vb            ;shape hybrid frm_5digits input
+dd=dd-d*10000
+d=trunc(dd/1000)
+or1=d>5                       ;reset out1
+d=d-5*or1
+vv1=(d==3)                     ;hybrid frm out1_mandel
+vv2=(d==4)                     ;hybrid frm out1_julia
+dd1=(d==2)+(d==4)              ;julia out1
+dd=dd-d*1000
+d=trunc(dd/100)
+or2=d>5                         ;reset out2
+d=d-5*or2
+vv3=(d==3)                      ;hybrid frm out2_mandel
+vv4=(d==4)                      ;hybrid frm out2_julia
+dd2=(d==2)+(d==4)               ;julia out2
+dd=dd-d*100
+d=trunc(dd/10)
+inr1=d>5                         ;reset in1
+d=d-5*inr1
+v1=(d==3)                        ;hybrid frm in1_mandel
+v2=(d==4)                        ;hybrid frm in1_julia
+d1=(d==2)+(d==4)                 ;julia in1
+dd=dd-10*d
+d=trunc(dd)
+inr2=d>5                         ;reset in2
+d=d-5*inr2
+v3=(d==3)                        ;hybrid frm in2_mandel
+v4=(d==4)                        ;hybrid frm in2_julia
+d2=(d==2)+(d==4)                 ;julia in2
+d=trunc(da/10)
+da=da-10*d
+ab=d>=5                           ;shape frm2
+d=d-5*ab
+bb1=(d==1)                        ;frm2 out1
+bb2=(d==2)                        ;frm2 out2
+dd=da>=5                          ;shape frm2_second digit
+da=da-5*dd
+ab=ab+dd
+ab1=(da==1)                       ;frm2 in1
+ab2=(da==2)                       ;frm2 in2
+;
+d=imag(p5)
+dd=trunc(d)
+d=round((d-dd)*1000000)
+le=d>10000                        ;lake effect on
+da=trunc(dd/10)
+so1=((da==1)+(da==3)==0)          ;m_m multiplication off_in/out1
+so2=((da==2)+(da==3)==0)          ;m_m multiplication off_in/out2
+dd=dd-10*da
+wo=dd>=5                          ;shape warp-effect
+dd=dd-5*wo
+ir1=(dd==1)+(dd==3)               ;iter reset in/out1
+ir2=(dd==2)+(dd==3)               ;iter reset in/out2
+if (le)                           ;lake effect
+  freq=round((trunc(d/10000))*10)     ;frequency_lake effect by S.Gallet
+  d=d-freq*1000
+  level=(trunc(d/100))/100            ;water level
+  d=d-level*10000
+  ampl=d/100                          ;amplitude of the wave
+  u=real(rotskew*pi/180)
+  t=exp(-flip(u))
+  bo=1/real(magxmag)
+  q=bo/0.75*imag(magxmag)
+  dd=tan(imag(rotskew*pi/180))
+  d3=2*q*t
+  rs=2*bo*(dd+flip(1))*t
+  z2=center+(-q-bo*dd-flip(bo))*t
+  z=pixel-z2
+  d=imag(conj(d3)*z)/imag(conj(d3)*rs)
+  if (d<=level)
+   da=level-d
+   z=z+2*da*(1+ampl*sin(freq*da^0.2))*rs
+  endif
+  z=z+z2
+endif
+if (ismand)
+ if (vb)                             ;many_mods
+  c=0.4*log(sqr(pixel^mm))
+  z=z*le
+ else
+  c=z*le+pixel*(le==0)
+  z=0
+ endif
+else                                  ;julia
+ c=p1
+ z=z*le+pixel*(le==0)
+endif
+t=0
+d3=(ismand==0)
+u=d3                                  ;warp-effect initial value
+:
+if (vb)
+ if (d3)                              ;julia
+  z=(z*z-real(c))^(z*u+imag(c))       ;hybrid julia
+ else
+  z2=fn1(z)+c                         ;hybrid mandel L.Allison
+  q=cos(z2)
+  z=c*(1-q)/(1+q)
+ endif
+elseif (ab)
+ z=z*z+c+c*c-p7                        ;basic frm2 Pusk.s Istv.n
+elseif (d3)
+ z2=z*z
+ z=z2*z2+(p6+u)*z2+c                   ;basic frm1 as julia
+else
+ z2=z*z                                ;basic frm1 Pusk s Istv n
+ z=z2*z2+(p6+u)*z2+c-p1
+endif
+bo=|z|                                  ;bailout value
+If (wo)                                 ;shape warp effect
+ t=t+1
+ if ((t<mi1)+(bo>b1))
+  u=2*(fn1(t/fac1))                     ;warp-effect
+  if (ismand)
+   z=z*u
+   if (vb)                              ;hybrid frm
+    c=0.4*log(sqr(pixel^mm))            ;init m_m
+   else
+    c=z*le+pixel*(le==0)
+   endif
+  else
+   z=z*le+pixel*(le==0)                  ;init julia
+   c=p1*u
+  endif
+  wo=0
+  if (ir1)                               ;iter reset
+   t=0
+  endif
+ endif
+elseif (start)                            ;0_shape only
+ t=t+1
+ if (start==2)                            ;in/out1 + in/out2
+  if (bo>b2)                              ;z > border2 ?
+   u=2*(fn2(t/fac2))
+   rs=or1                                  ;reset
+   ab=bb1                                  ;frm2
+   if (dd1)                                ;julia?
+    if (rs)
+     z=pixel
+    endif
+    c=p1*u
+    vb=vv2                                  ;hybrid
+    d3=vb                                   ;julia
+   else                                     ;mandel
+    d3=0
+    z=z*u
+    c=z
+    if (rs)                                  ;reset
+     z=0
+    endif
+    vb=vv1
+    if (vb)
+     if (so1)                                ;m_m multiplication
+      mm=mm+mm
+     endif
+     c=0.4*log(sqr(pixel^mm))                ;m_m init
+    endif
+    start=1
+   endif
+  elseif (t>mi2)                             ;counter > maxit2
+   u=2*(fn2(t/fac2))                         ;warp-effect
+   rs=inr1
+   ab=ab1                                    ;frm2
+   if (d1)
+    if (rs)
+     z=pixel
+    endif
+    c=p1*u
+    vb=v2
+    d3=vb
+   else
+    d3=0
+    z=z*u
+    c=z
+    if (rs)                                   ;reset
+     z=0
+    endif
+    vb=v1
+    if (vb)
+     if (so1)                                 ;m_m multiplication
+      mm=mm+mm
+     endif
+     c=0.4*log(sqr(pixel^mm))
+    endif
+   endif
+   start=1
+   if (ir2)
+    t=0
+   endif
+  endif
+ elseif (bo>b3)                                ;start=1 z>border3
+  u=2*(fn3(t/fac3))
+  ab=bb2
+  rs=or2
+  if (dd2)
+   if (rs)
+    z=pixel
+   endif
+   c=p1*u
+   vb=vv4
+   d3=vb
+  else
+   d3=0
+   z=z*u
+   c=z
+   if (rs)
+    z=0
+   endif
+   vb=vv3
+   if (vb)
+    if (so2)
+     mm=mm+mm
+    endif
+    c=0.4*log(sqr(pixel^mm))
+   endif
+   start=0
+  endif
+ elseif (t>mi3)                            ;start=1 counter>maxiter3
+  u=2*(fn3(t/fac3))
+  ab=ab2
+  rs=inr2
+  if (d2)
+   if (rs)
+    z=pixel
+   endif
+   c=p1*u
+   vb=v4
+   d3=vb
+  else
+   d3=0
+   z=z*u
+   c=z
+   if (rs)
+    z=0
+   endif
+   vb=v3
+   if (vb)
+    if (so2)
+     mm=mm+mm
+    endif
+    c=0.4*log(sqr(pixel^mm))
+   endif
+  endif
+  start=0                                   ;mainloop only
+ endif
+endif
+bo<=ba                                      ;z<=bailout
+}

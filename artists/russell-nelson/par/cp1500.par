@@ -39,7 +39,7 @@ ckp1476            { ; "Mesh Beach"
                      ; 00:02:33.84 .. 11 june 1996 .. caren park
                      ;  Version 1930 Patchlevel 5
   reset=1930 type=formula formulafile=sg-bc-bj.frm
-  formulaname=bj-sg-3-03-g function=cosxx/cotan
+  formulaname=BJ-SG-3-03-g function=cosxx/cotan
   center-mag=-1.44069/-1.41434/0.06169872
   params=3.141/0.452353/3.141/0.1243075 float=y maxiter=255
   outside=atan periodicity=0
@@ -55,7 +55,7 @@ ckp1477            { ; "Blue Velvet Alit"
                      ; 00:08:10.71 .. 16 june 1996 .. caren park
                      ; recolored from LISTER:Ventricle
                      ;  Version 1930 Patchlevel 5
-  reset=1930 type=formula formulafile=lister.frm formulaname=lister_m
+  reset=1930 type=formula formulafile=lister.frm formulaname=Lister_M
   function=sqr passes=1 center-mag=0/0/1.103753 params=0/0 float=y
   maxiter=1024 logmap=yes periodicity=0
   colors=000F05<10>20I00K00M<14>00z<14>00N00K01J<13>0I20K00M0<14>0z0<14>0N\
@@ -67,7 +67,7 @@ ckp1478            { ; "Coastline"
                      ; 01:10:12.95 .. 26 june 1996 .. caren park
                      ; derived and recolored from skinner:c1989
                      ;  Version 1930 Patchlevel 13
-  reset=1920 type=formula formulafile=(19-2)a.frm formulaname=carr1989
+  reset=1920 type=formula formulafile=42acarr.frm formulaname=Carr1989
   center-mag=-1.28123040736917900/+1.05322170812891000/956.6896
   params=100/0 float=y maxiter=500 logmap=yes periodicity=0
   colors=000<61>H6003G<2>03J04K04K05L05M<11>2CV3CW3DX4EX4EY<9>9MeAMeANfANg\
@@ -81,7 +81,7 @@ ckp1479            { ; "Coastline Net"
                      ; 01:39:31.76 .. 26 june 1996 .. caren park
                      ; derived and recolored from skinner:c1989
                      ;  Version 1930 Patchlevel 13
-  reset=1920 type=formula formulafile=(19-2)a.frm formulaname=carr1989
+  reset=1920 type=formula formulafile=42acarr.frm formulaname=Carr1989
   passes=t
   center-mag=-1.28123040736917900/+1.05322170812891000/956.6896
   params=100/0 float=y maxiter=500 fillcolor=221 logmap=yes
@@ -96,7 +96,7 @@ ckp1479            { ; "Coastline Net"
 ckp1480            { ; "EscherEyes"
                      ; 00:09:38.92 .. 02 july 1996 .. caren park
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=les.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=les.frm formulaname=Lesfrm13
   function=tan/cos center-mag=0.012432/4.95e-005/0.4200794
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -116,7 +116,7 @@ ckp1480            { ; "EscherEyes"
 ckp1481            { ; "Escher Coils"
                      ; 00:08:35.59 .. 05 july 1996 .. caren park
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm formulaname=lesfrm13
+  reset=1930 type=formula formulafile=les.frm formulaname=Lesfrm13
   function=sqr/cotanh center-mag=0.012432/4.95e-005/0.8469343
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -137,7 +137,7 @@ ckp1482            { ; "Grass Castle
                      ; 00:04:58.36 .. 06 july 1996 .. caren park
                      ; recolored and derived from lesfrm04:lf_2006
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=les.frm formulaname=lesfrm20
+  reset=1930 type=formula formulafile=les.frm formulaname=Lesfrm20
   function=sqr/sqr center-mag=-0.737605/-0.738115/10.37707/1/44.999
   params=1/0/1/0 float=y outside=atan
   colors=000DDCHVW<3>LbcMceNegNfhOhj<2>QkmRlnRmoRnp<3>SoqSorSoq<2>SnpRnpRm\
@@ -154,7 +154,7 @@ ckp1483            { ; "Twister"
                      ; 00:02:26.16 .. 07 july 1996 .. caren park
                      ; color cycle this one!
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
+  reset=1930 type=formula formulafile=bej011.frm
   formulaname=mans-galore-027 function=sinh/conj/log/conj
   center-mag=6.58712/0.00708365/0.1905516/1/90
   params=200/1.4/0.003/0/0.2/100 float=y maxiter=200 outside=atan
@@ -169,8 +169,8 @@ ckp1484            { ; "Zebra Clams"
                      ; 00:03:39.32 .. 17 july 1996 .. caren park
                      ; recolor of BJ13:bj13045
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=sqr/flip/ident/asin
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=sqr/flip/ident/asin
   center-mag=0.0615513/0.00998506/0.2804571/1/-132.5
   params=3.3/0.8/-3.2/0 float=y maxiter=1000 inside=zmag outside=atan
   colors=00X<10>00z<14>00N00K01J<13>0I20K00M0<14>0z0<14>0N00K01J0<13>I20K0\
@@ -183,8 +183,8 @@ ckp1485            { ; "Zebra Clams, v2"
                      ; 00:03:39.32 .. 17 july 1996 .. caren park
                      ; recolor of BJ13:bj13045
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=sqr/flip/ident/asin
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=sqr/flip/ident/asin
   center-mag=0.0615513/0.00998506/0.2804571/1/-132.5
   params=3.3/0.8/-3.2/0 float=y maxiter=1000 inside=zmag outside=atan
   colors=j00<8>N00K00J01<13>20I00K00M<14>00z<14>00N00K01J<13>0I20K00M0<14>\
@@ -197,8 +197,8 @@ ckp1486            { ; "Zebra Clams, v3"
                      ; 00:03:39.32 .. 17 july 1996 .. caren park
                      ; recolor of BJ13:bj13045
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=sqr/flip/ident/asin
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=sqr/flip/ident/asin
   center-mag=0.0615513/0.00998506/0.2804571/1/-132.5
   params=3.3/0.8/-3.2/0 float=y maxiter=1000 inside=zmag outside=atan
   colors=000zQ0<21>zA0z90z80z70z60z50<5>z10z00z00y01<82>00z00z11y<82>zz0zz\
@@ -208,8 +208,8 @@ ckp1486            { ; "Zebra Clams, v3"
 ckp1487            { ; "Unusual Ripples"
                      ; 00:05:13.68 .. 20 july 1996 .. caren park
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-005 function=atan/flip/flip/abs
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-005 function=atan/flip/flip/abs
   center-mag=0.020025/0.901029/2.732241 params=3.3/0.8/-3.2/0 float=y
   maxiter=1000 inside=zmag outside=atan
   colors=3DX<5>6H`7Ia7Jb8Kc8Kc9Ld<2>ANfANgBOhCPi<3>FSlFSlGTmGUmHVn<5>M_qM`\
@@ -223,8 +223,8 @@ ckp1487            { ; "Unusual Ripples"
 ckp1488            { ; "PenPoint"
                      ; 00:12:38.03 .. 20 july 1996 .. caren park
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=atan/sqrt/cabs/exp
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=atan/sqrt/cabs/exp
   center-mag=0.131771/0.0743294/0.01402286/1/-132.5
   params=3.3/0.8/-3.2/0 float=y maxiter=1000 inside=zmag outside=atan
   colors=00SSSS00TTTT00UUUU00VVVV00VVVV00WWWW00XXXX00YYYY00ZZZZ00____00___\
@@ -243,8 +243,8 @@ ckp1488            { ; "PenPoint"
 ckp1489            { ; "Ring Closeup"
                      ; 00:33:01.83 .. 20 july 1996 .. caren park
                      ;  Version 1930 Patchlevel 13
-  reset=1930 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=atanh/abs/abs/cosh
+  reset=1930 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=atanh/abs/abs/cosh
   center-mag=0.131771/0.0743294/0.01402286/1/-132.5
   params=3.3/0.8/-3.2/0 float=y maxiter=1000 inside=zmag outside=atan
   colors=q08<72>00z00z11y<82>zz0zz0zy0<39>zW0zV0zV0zV0<28>zA0z90z80z70z60z\
@@ -254,8 +254,8 @@ ckp1489            { ; "Ring Closeup"
 ckp1490            { ; "Into Infinity"
                      ; 00:20:26.87 .. 14 august 1996 .. caren park
                      ; must Color Cycle this one for effect!
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=tan/cos/trunc/sqr
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=tan/cos/trunc/sqr
   center-mag=-1.41553e-015/1.27676e-015/8.622926
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -269,8 +269,8 @@ ckp1490            { ; "Into Infinity"
 ckp1491            { ; "Small Hole"
                      ; 00:01:17.11 .. 14 august 1996 .. caren park
                      ; must Color Cycle this one for effect!
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=tanh/ident/round/log
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=tanh/ident/round/log
   center-mag=-0.00000000000000141/+0.00000000000000127/86.22926
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -283,8 +283,8 @@ ckp1491            { ; "Small Hole"
 
 ckp1492            { ; "Inside Looking Out??"
                      ; 00:00:37.73 .. 14 august 1996 .. caren park
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=tanh/ident/round/log
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=tanh/ident/round/log
   center-mag=-4.66294e-015/3.33067e-015/1.036409
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -295,8 +295,8 @@ ckp1492            { ; "Inside Looking Out??"
 
 ckp1493            { ; "Who Put That Square There?"
                      ; 00:01:24.97 .. 14 august 1996 .. caren park
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=atanh/trunc/cos/sqrt
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=atanh/trunc/cos/sqrt
   center-mag=-1.06581e-014/1.24345e-014/0.5182047
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -315,8 +315,8 @@ ckp1493            { ; "Who Put That Square There?"
 
 ckp1494            { ; "Killroy was Here"
                      ; 00:00:58.27 .. 14 august 1996 .. caren park
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=atanh/trunc/cos/sqrt
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=atanh/trunc/cos/sqrt
   center-mag=-8.88178e-015/1.06581e-014/0.08913121
   params=3.3/0.8/-3.2/0.3 float=y maxiter=1000 inside=zmag
   outside=atan
@@ -330,8 +330,8 @@ ckp1494            { ; "Killroy was Here"
 
 ckp1495            { ; "ET on Acid"
                      ; 00:01:18.60 .. 14 august 1996 .. caren park
-  reset=1940 type=formula formulafile=(19-2)a.frm
-  formulaname=bj-lesfrm13-001 function=cos/atanh/floor/log
+  reset=1940 type=formula formulafile=les_pars.frm
+  formulaname=BJ-Lesfrm13-001 function=cos/atanh/floor/log
   center-mag=0/0/0.4666667 params=3.3/0.8/-3.2/0.3 float=y
   maxiter=1000 inside=zmag outside=atan
   colors=800400000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>0\
@@ -342,7 +342,7 @@ ckp1495            { ; "ET on Acid"
 ckp1496            { ; "Sea Dragon"
                      ; 00:18:00.22 .. 26 august 1996 .. caren park
                      ; inspired by carr2025
-  reset=1940 type=formula formulafile=(19-2)a.frm formulaname=carr2025
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2025
   passes=b center-mag=0.098941/-0.151286/9.089561
   params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
   colors=00705C<16>0mt0ow0pq<7>0vC0w70vD<6>0pq0ow0lt<15>007000<2>00093F<22\
@@ -354,7 +354,7 @@ ckp1496            { ; "Sea Dragon"
 ckp1497            { ; "Oriental Dragon"
                      ; 00:18:00.22 .. 26 august 1996 .. caren park
                      ; inspired by carr2025
-  reset=1940 type=formula formulafile=(19-2)a.frm formulaname=carr2025
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2025
   passes=b center-mag=0.098941/-0.151286/9.089561
   params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
   colors=00705C0LT<6>007000<2>00093F<22>`Fw<9>0wF<8>`Fw<16>93F000<2>000000\
@@ -365,7 +365,7 @@ ckp1497            { ; "Oriental Dragon"
 
 ckp1498            { ; "Star and Waves"
                      ; 00:27:53.57 .. 28 august 1996 .. caren park
-  reset=1940 type=formula formulafile=42acarr.frm formulaname=carr2021
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2021
   passes=b
   center-mag=-0.00374793280058654/+0.03949811899022178/144.0578
   params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
@@ -379,7 +379,7 @@ ckp1498            { ; "Star and Waves"
 
 ckp1499            { ; "EscherDragonLace"
                      ; 00:07:12.48 .. 28 august 1996 .. caren park
-  reset=1940 type=formula formulafile=42acarr.frm formulaname=carr2034
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2034
   passes=b center-mag=0.898658/0.0533237/2.142514/1/90
   params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
   colors=00000000009B056000<4>HOTLTZOXbQ`gTckVgoXirZku<2>`oyapz`oy`nx_mwZk\
@@ -394,7 +394,7 @@ ckp1499            { ; "EscherDragonLace"
 
 ckp1500            { ; "England, While on Acid"
                      ; 00:07:12.48 .. 28 august 1996 .. caren park
-  reset=1940 type=formula formulafile=42acarr.frm formulaname=carr2034
+  reset=1940 type=formula formulafile=42acarr.frm formulaname=Carr2034
   passes=b center-mag=0.898658/0.0533237/2.142514/1/90
   params=100/150/200/250 float=y maxiter=300 fillcolor=1 periodicity=0
   colors=00N00KS0Z<4>80r40v20x00z<12>00Q01J<2>05F06E06E<22>01I10J20I<30>H1\

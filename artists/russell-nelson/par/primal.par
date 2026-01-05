@@ -1,49 +1,49 @@
 
 comment {
- The following parameter entries in this file all use the following
- formula which may be appended to your newforms.frm file, or placed in
- another formula file (edit all "formulafile=newforms.frm" strings in
- this file to reflect that formula file).
-
-Primal {; Rollo Silver
-  ; Select p1 such that 0. <= p1 <= 1.
-  z = c = Pixel, t = real(p1), test = (p2+10)*(p2+10):
-   zsq = z*z
-   zcu = zsq*z
-   z = (1.-t)*zsq + t*zcu + c
-   |z| <= test
-  }
-
- The figures refer to the 31 figures in the article The Primal
- Heterotope by Rollo Silver in the October 1994 issue of Amygdala.
- Additional pars are from further explorations by Lee Skinner.  All
- colorings are by Lee Skinner.  Amygdala (a newletter of Fractals and
- the Mandelbrot Set) is available from Rollo Silver at Box 219, San
- Cristobal, NM  87564; USA.  The Primal formula provides via the t
- parameter, a continuous series of fractals that go from the Mandelbrot
- Set (t=0.) to the Cuboc Mandelbrot Set (t=1.).  There are no
- slip-planes in this fractal like those found in Manzpower, which can
- also create a continuous series of fractals between the two referred
- sets.
-
- The following 3 sequences are movies, based on the t parameter:
-
- 1) p000000 through p100000 (42 frames, same colors, co-ordinates, dwell)
-
- 2) p1258a1 through p1270a1 (6 frames, sames colors, co-ordinates, dwell)
-
- 2) p28_001 through p50_001 (5 frames, sames colors, dwell, last 2 frames
-    have shifted co-ordinates)
-
- Zoom sequences:  Although pcm_001 and each frame of the last two movies
- is also a zoom of a frame in the first movie, there are two other zoom
- sequences included:
-
- 1) p012000 and p12_001 through p12_004  (5 frames)
-
- 2) p008175 and p8175a1 through p8175a5  (6 frames)
-
- ------------------------------------------------------------------------
+;  The following parameter entries in this file all use the following
+;  formula which may be appended to your newforms.frm file, or placed in
+;  another formula file (edit all "formulafile=newforms.frm" strings in
+;  this file to reflect that formula file).
+; 
+; Primal {; Rollo Silver
+;   ; Select p1 such that 0. <= p1 <= 1.
+;   z = c = Pixel, t = real(p1), test = (p2+10)*(p2+10):
+;    zsq = z*z
+;    zcu = zsq*z
+;    z = (1.-t)*zsq + t*zcu + c
+;    |z| <= test
+;   }
+; 
+;  The figures refer to the 31 figures in the article The Primal
+;  Heterotope by Rollo Silver in the October 1994 issue of Amygdala.
+;  Additional pars are from further explorations by Lee Skinner.  All
+;  colorings are by Lee Skinner.  Amygdala (a newletter of Fractals and
+;  the Mandelbrot Set) is available from Rollo Silver at Box 219, San
+;  Cristobal, NM  87564; USA.  The Primal formula provides via the t
+;  parameter, a continuous series of fractals that go from the Mandelbrot
+;  Set (t=0.) to the Cuboc Mandelbrot Set (t=1.).  There are no
+;  slip-planes in this fractal like those found in Manzpower, which can
+;  also create a continuous series of fractals between the two referred
+;  sets.
+; 
+;  The following 3 sequences are movies, based on the t parameter:
+; 
+;  1) p000000 through p100000 (42 frames, same colors, co-ordinates, dwell)
+; 
+;  2) p1258a1 through p1270a1 (6 frames, sames colors, co-ordinates, dwell)
+; 
+;  2) p28_001 through p50_001 (5 frames, sames colors, dwell, last 2 frames
+;     have shifted co-ordinates)
+; 
+;  Zoom sequences:  Although pcm_001 and each frame of the last two movies
+;  is also a zoom of a frame in the first movie, there are two other zoom
+;  sequences included:
+; 
+;  1) p012000 and p12_001 through p12_004  (5 frames)
+; 
+;  2) p008175 and p8175a1 through p8175a5  (6 frames)
+; 
+;  ------------------------------------------------------------------------
 }
 
 p000000            { ; Primal Heterotope Fig. 1 - The Mandelbrot Set
@@ -551,7 +551,7 @@ p12_004            { ; Fig. 9: The Jewel
 
 p21_001            { ;  
                      ; Par and Image Copyright by Lee H. Skinner, 1995
-  reset=1827 type=formula formulafile=newforms.frm formulaname=primal
+  reset=1827 type=formula formulafile=newforms.frm formulaname=Primal
   passes=1 corners=-3.174003/-2.073843/0.24911605/1.074236 params=0.21
   float=y maxiter=1023 inside=0 logmap=yes
   colors=000zzzQR0zu0zq0<3>zW0zQ0zJ0zD0z60z00<6>n13l13j13i13g13<8>V28T28R2\

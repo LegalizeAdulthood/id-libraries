@@ -70,7 +70,7 @@ Delta flyer        { ; Plane flying
 Breakthro          { ; Comet breaking through
                      ; Allen Goodchild 101365.1707
   reset=1930 type=formula formulafile=fractint.frm
-  formulaname=pseudozeepi
+  formulaname=PseudoZeePi
   center-mag=1.09633/1.3885e-005/0.2683494/1.0229/180
   params=4/0/0.75/0 maxiter=64 inside=zmag outside=atan
   colors=CCCE0l<5>z00z60<6>zy0
@@ -94,7 +94,7 @@ ET in love         { ; with flowers
 
 Wave               { ; Zoom in on its start!
                      ; Allen Goodchild 101365.1707
-  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
   passes=t center-mag=-7179.22/-5735.44/0.0001403842/0.6836
   params=0.4/0.5/0/0 float=y maxiter=2000 inside=zmag outside=mult
   colors=000Lez00z0Le00LLLLe0ezLLzLezLzzezzz0zzezzzezz0zz
@@ -102,7 +102,7 @@ Wave               { ; Zoom in on its start!
 
 Snail              { ; taken from Wave
                      ; Allen Goodchild 101365.1707
-  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
   center-mag=-186.893/43.3554/0.0148996/0.4463 params=0.4/0.5/0/0
   float=y maxiter=10 inside=zmag outside=mult
   colors=000KCa<11>MfuPfqSem
@@ -110,7 +110,7 @@ Snail              { ; taken from Wave
 
 Crystal            { ; Crystal ball breaking
                      ; Allen Goodchild 101365.1707
-  reset=1930 type=formula formulafile=fractint.frm formulaname=altjtet
+  reset=1930 type=formula formulafile=fractint.frm formulaname=AltJTet
   center-mag=-0.755723/-8.165e-006/0.1199828/1/-90 params=1.25/0/88/0
   float=y maxiter=153 inside=zmag outside=atan
   colors=000zzz<10>zzz000zzz000
@@ -195,7 +195,7 @@ Spiral             { ; from egg but different colour map
 
 
 eyeball            { ; light entering an eyeball
-  reset=1930 type=formula formulafile=fractint.frm formulaname=cubic
+  reset=1930 type=formula formulafile=fractint.frm formulaname=Cubic
   center-mag=0.559654/5.55112e-016/2.464608 params=0/0 float=y
   maxiter=250 inside=startrail
   colors=000w9dHnnzH9vcJHZEPmADUvoO`ZmHA6MNpXY2zIsLmkQHabVI49Np4RDNT7N7Hnx\
@@ -210,4 +210,3 @@ eyeball            { ; light entering an eyeball
   `fZSgBaetulhpjHQZWiCB246WCLyBO4LwGCbIMNvN7KdzSaGDdpL_bNpCOmcL_tLxP3cTuip\
   aBEEO6MQREg2k712ZP`ovBalsD113zVKlmBei1Yn7obhAU7yCAZTz7C
   }
-

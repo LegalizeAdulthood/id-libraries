@@ -1,3 +1,4 @@
+{
 To see examples of images these formulas can create, download
 33CARR.PAR
 
@@ -7,8 +8,6 @@ Genealogy1.
 If you have comments or questions please feel free to contact me.
 
 --Bob Carr--
-}
-
 }
 
 Carr1451{;Creates Julia.

@@ -1,6 +1,6 @@
 web_site           { ; Internet Web
                      ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=f_liar.frm formulaname=f'liar1c
+  reset=1920 type=formula formulafile=liar.frm formulaname=F'Liar1C
   function=cos/sqrt
   corners=-0.97320896/0.83918611/-1.3747184/1.4022996/-1.6537154/-0.467376\
   49 params=1/0/0/0/0/0 float=y maxiter=1000 inside=period
@@ -14,7 +14,7 @@ web_site           { ; Internet Web
 
 Esher_Blossom      { ; Are the petals going in or out?
                      ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=f_liar.frm formulaname=f'liar1c
+  reset=1920 type=formula formulafile=liar.frm formulaname=F'Liar1C
   function=cos/sqrt
   corners=-0.46967035/0.4292776/-0.6919491/0.68545182/-0.80720156/-0.24190\
   754 params=0.77777/0/0/0/0/0 float=y maxiter=1000 inside=period
@@ -31,7 +31,7 @@ Esher_Blossom      { ; Are the petals going in or out?
 
 Gold_wallpaper     { ; Metallic gold foil
                      ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=f_liar.frm formulaname=f'liar1c
+  reset=1920 type=formula formulafile=liar.frm formulaname=F'Liar1C
   function=abs/sqrt
   corners=-1.1786345/1.1382417/-1.77825/1.771753/-2.0485603/-0.6183489
   params=1/0/0/0/0/0 float=y maxiter=1000 inside=period outside=atan
@@ -48,7 +48,7 @@ Gold_wallpaper     { ; Metallic gold foil
 
 Flower_and_Lips    { ; Smile for me
                      ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=f_liar.frm formulaname=f'liar1c
+  reset=1920 type=formula formulafile=liar.frm formulaname=F'Liar1C
   function=cos/cotanh
   corners=-2.484735/2.484735/-4.121901/3.492503/-4.35064/-1.634028
   params=1/0/0/0/0/0 float=y maxiter=1000 inside=period outside=atan
@@ -58,7 +58,7 @@ Flower_and_Lips    { ; Smile for me
   }
 
 Graphic Heart      { ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=jack5.frm
+  reset=1920 type=formula formulafile=orman.frm
   formulaname=OrmandelFunc function=sqrt passes=b
   corners=-2.000025/1.999987/-1.500014/1.5 params=0/0/0/0/0/0
   maxiter=1024 inside=bof61 outside=real potential=255/222/0
@@ -159,7 +159,7 @@ Mandel_Fuzz        { ; (c) 1995 by Jack A. Orman
 
 Monochrome_Totem   { ; Gamma5 Map Study
                      ; Copr. 1995 by Jack A. Orman
-  reset=1920 type=formula formulafile=jack5.frm formulaname=ormandel14
+  reset=1920 type=formula formulafile=jack5.frm formulaname=Ormandel14
   function=cosxx/tanh corners=-1.187/0.4340369/1.125445/2.341216
   params=5/0/9/0/0/0 maxiter=222 inside=bof60 outside=real
   potential=255/200/16 decomp=256

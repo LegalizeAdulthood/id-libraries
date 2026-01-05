@@ -1,7 +1,7 @@
 koala              { ; overlay experiment, try it at 1024x768 or better
                      ; about 1' elapsed time
                      ; pallete is 'lindaa09' by Linda Allison
-  reset=2000 type=formula formulafile=0.par formulaname=cg passes=1
+  reset=2000 type=formula formulafile=koala.frm formulaname=cg passes=1
   center-mag=-0.802844/0.000320534/32.05128/1/-90
   params=-0.74726/0.1409/-0.74726/-0.1409 float=y maxiter=15000
   colors=800KON<3>_cecgigknlos<8>ZXSYVPWTL<2>SNCQL9PK8QK6<8>jaOlcQneS<3>xn\
@@ -10,15 +10,3 @@ koala              { ; overlay experiment, try it at 1024x768 or better
   >6LH7MI8NK<2>AQNBRPBRO<5>7LH6KF5JE<2>3GA3F93F9<23>132132122121111000<30>\
   f00g00h00<3>n00p00q00<2>u00w00v00<32>900800600<2>200000020050<3>GKI
   }
-
-frm:cg {; Miguel Fliguer - julia overlay
-z=pixel
-     IF (whitesq)
-       c=p1
-     ELSE
-       c=p2
-     ENDIF
-:
-z=z*z+c
-|z|<4
-}

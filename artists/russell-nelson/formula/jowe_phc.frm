@@ -2,7 +2,7 @@
 ; old formulas
 
 
-JoWe_02_PHC(XYAXIS) = { ; Jo Weber [100424,35], 8/1996
+JoWe_02_PHC(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -15,7 +15,7 @@ JoWe_02_PHC(XYAXIS) = { ; Jo Weber [100424,35], 8/1996
 
 
 
-JoWe_03_PHC_n = { ; Jo Weber [100424,35], 8/1996
+JoWe_03_PHC_n { ; Jo Weber [100424,35], 8/1996
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -29,7 +29,7 @@ JoWe_03_PHC_n = { ; Jo Weber [100424,35], 8/1996
 
 
 
-JoWe_03_PHC_n1 = { ; Jo Weber [100424,35], 8/1996
+JoWe_03_PHC_n1 { ; Jo Weber [100424,35], 8/1996
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -46,7 +46,7 @@ JoWe_03_PHC_n1 = { ; Jo Weber [100424,35], 8/1996
 
 
 
-JoWe_04_PHC = { ; Jo Weber [100424,35], 8/1996
+JoWe_04_PHC { ; Jo Weber [100424,35], 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -63,7 +63,7 @@ JoWe_04_PHC = { ; Jo Weber [100424,35], 8/1996
    }
 
 
-JoWe_11b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 8/1996
+JoWe_11b_PHC(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -78,7 +78,7 @@ JoWe_11b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 8/1996
    }
 
 
-JoWe_11b_PHC2(XYAXIS) = { ; Jo Weber [100424,35], 8/1996
+JoWe_11b_PHC2(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -239,7 +239,7 @@ JoWe_CN_12_PHC_2{; Jo Weber, 8/1996
 
 
 
-JoWe_what_10_PHC = { ; Jo Weber [100424,35], 9/1996
+JoWe_what_10_PHC { ; Jo Weber [100424,35], 9/1996
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -264,7 +264,7 @@ JoWe_CN_01_PHC    { ; Jo Weber, 9/1996
 		    |(z-oldz)|>=|0.001|
   }
 
-JoWe_what_02m_PHC = { ; Jo Weber [100424,35], 9/1996
+JoWe_what_02m_PHC { ; Jo Weber [100424,35], 9/1996
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -276,7 +276,7 @@ JoWe_what_02m_PHC = { ; Jo Weber [100424,35], 9/1996
 
 
 
-JoWe_04a_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
+JoWe_04a_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -290,7 +290,7 @@ JoWe_04a_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
    }
 
 
-JoWe_04b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
+JoWe_04b_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -303,7 +303,7 @@ JoWe_04b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
    }
 
 
-JoWe_04c_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
+JoWe_04c_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -344,4 +344,3 @@ JoWe_20_PHC { ; Jo Weber, 9/1996
   |z|>=0.5
 }
 
-

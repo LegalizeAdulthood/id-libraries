@@ -1,11 +1,9 @@
 ;Bobby001.frm recompiled from revised *.frm's.Lots of adjustable Functions
 ;From Bobby Elwood the sysop of Bob's Adult World BBS
-:                               (cumming soon in 94')
+;                               (cumming soon in 94')
 ;     4-05-94 00:02:59  
-test = {
-}
 
-Booby3 = {
+Booby3 {
        z = pixel:
        c = fn1(pixel)/z,
        c = fn3(z + c^c),
@@ -13,7 +11,7 @@ Booby3 = {
        |z| < P1 
   }
 
-Booby2 = {
+Booby2 {
        z = fn3(pixel):
        c = fn1(pixel)/(z^2),
        c = z + (c*.0001),
@@ -21,7 +19,7 @@ Booby2 = {
        |z| < p1
   }
 
-Booby = {
+Booby {
        z =fn3(pixel):
        c = pixel - fn1(z^p2),
        c = pixel + fn2(c/z),
@@ -29,13 +27,13 @@ Booby = {
        |z| < p1
   }
 
-2121 = {
+2121 {
       z = pixel:
       z = (fn1(p1 /fn2(z)) + fn3(p2 - fn2(z))*(p2 ^ fn2(z)))/z,
    |z| <=  21
 }
 
-B_Mapping = {
+B_Mapping {
 	c = pixel, RealZ = Real(c), ImagZ = Imag(c):
 		RealZ = fn1(RealZ) + (RealZ * ImagZ) +fn3(Real(c));
 		ImagZ = fn2(ImagZ) + (RealZ * ImagZ) +fn4(Imag(c));
@@ -43,46 +41,46 @@ B_Mapping = {
 	|z| < 4
 }
 
-111 = {
+111 {
 	z = Pixel:  z = ((fn1(z)/2.111111)^z)/fn2(6.76855753*z),
 	|z| <= 4
 }
 
-222 = {
+222 {
 	z = pixel:  z = fn1((z * 8.346348756 / (z/pixel)/fn2(6.2631853*Z) + pixel,
 	|z| <= 4
 }
 
-333 = {
+333 {
 	z = Pixel:  z =((fn2(z)/1.3333)^z)/fn1((p1/.2831853) * (z^z)) / pixel,
 	|z| <= 4
 }
 
-Wicked = {
+Wicked {
 	z = fn1(pixel):
 	z = fn2(pixel + z^z + 1/p1/p2),
 	|z| <= 4
 }
 
-Traid = {
+Traid {
 	z = fn1(p1):
 	z = pixel * fn2(z*z + 1/z/z),
 	|z| <= 1000000
 }
 
-Boyed = {
+Boyed {
 	z = pixel:
 	z =fn3(fn1(p1 * p2) / fn2(z*z + 1/z/z)),
 	|z| <= 1000000
 }
 
-Huh!! = {
+Huh!! {
 	z = fn1(pixel):
 	z = fn4(fn2(z+z*z)+fn3((1/z*z)+pixel)),
 	|z| <= 4
 }
 
-Bob's_Error = {
+Bob's_Error {
 	z = p2^pixel, c = z ^ (z - 1):
 	z = fn1(z);
 	t2 =fn3(real(z)*real(c) + imag(z)*imag(c));
@@ -91,7 +89,7 @@ Bob's_Error = {
 	|z| <= p1
 }
 
-What_its_name2 = {
+What_its_name2 {
 	z = fn1(pixel):
 	z=fn2(z^z)+fn3(1/z*z)+fn4(pixel),
 }
@@ -117,4 +115,3 @@ Fn_pixel  {
            z = fn2( fn3(z) + fn4(pixel))
            |z| <= p1^2
    }
-

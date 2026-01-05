@@ -47,7 +47,7 @@ NYUF0101           { ; pretty bug if changed to float=n     Dan Farmer &
   }
 
 monstrig           {
-  reset type=formula formulafile=\fraktale\smuus.frm
+  reset type=formula formulafile=smuus.frm
   formulaname=fn*z+z function=recip/sin/sinh/cosxx
   corners=3.0367616/2.8827738/-0.078231275/0.12698102/2.8827738/0.12698102
   params=17/16/15/100 maxiter=32000 inside=0 potential=255/200/32000
@@ -57,7 +57,7 @@ monstrig           {
   }
 
 blech              {
-  reset type=formula formulafile=\FRAKTALE\ilvi.frm
+  reset type=formula formulafile=ilvi.frm
   formulaname=ilvp+fn123 function=recip/sin/sinh
   corners=-6.961506/6.961499/-5.223528/5.223509 params=0/0/1/1 float=y
   maxiter=32000 inside=0 potential=255/200/32000 colors=@melo.map

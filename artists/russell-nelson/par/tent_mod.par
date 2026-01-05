@@ -1,4 +1,4 @@
-comment!           { ; Press F2 for additional info. and credits
+comment            { ; Press F2 for additional info. and credits
                      ; All images use "tent_in_mod" formula (included).
                      ; Thanks to Sylvie Gallet for the original formula
                      ; which was adapted from a BASIC program -
@@ -8,28 +8,11 @@ comment!           { ; Press F2 for additional info. and credits
                      ; Sylvie Gallet, Lee Skinner and others :)
 }
 
-FRM:tent_in_mod { ; Modified Sylvie Gallet formula
-              ; Modified tent_inside.frm (generalized by Les St Clair)
-              ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
-              ; set p1=0, p2=0.001 for default behaviour
-   IF (p1 || flip(p1))
-    r = p1
-   ELSE
-    r = 1
-   ENDIF
-   z = 0 :
-   l = r+p1
-   z = z*z + pixel
-   UV = (5,5) - fn1((5,5) - fn2(z))
-   r = fn3(UV)
-    fn4(l-r) >= p2 && r < 4
-  }
-
 ti_mod01           { ; "Jazzy on the Outside"               t=  0:08:49.97
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sqr/cosxx/cosh passes=1
   center-mag=-0.582908/-2.22045e-016/0.884665 params=0/0/0.001/0
   float=y inside=bof60 logmode=fly decomp=256 periodicity=0
@@ -42,7 +25,7 @@ ti_mod02           { ; "Backlit"                            t=  0:03:34.76
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/cosh passes=1
   center-mag=-1.16546/-0.000212223/3.625676 params=0/0/0.001/0 float=y
   inside=bof60 logmode=fly decomp=256 periodicity=0
@@ -55,7 +38,7 @@ ti_mod03           { ; "Perforated Gaskets"                 t=  0:01:27.50
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/cabs/abs passes=1
   center-mag=-0.491925/0.0584287/0.6692619 params=0.0005/0/0.06/0
   float=y inside=bof60 logmode=fly decomp=256 periodicity=0
@@ -68,7 +51,7 @@ ti_mod04           { ; "March of the Air Plants"            t=  0:04:30.83
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/conj/abs passes=1
   center-mag=+0.28813460172119590/+0.01161083616260922/1591.416/1/2.498
   params=0.001/0/0.021/0 float=y inside=bof60 logmode=fly decomp=256
@@ -85,7 +68,7 @@ ti_mod05           { ; "Inner Glow"                         t=  0:03:12.74
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=-0.184868/0.566107/2.499474 params=0/0/0.033/0 float=y
   inside=bof60 decomp=256 periodicity=0
@@ -99,7 +82,7 @@ ti_mod06           { ; "Secret Garden"                      t=  0:09:00.58
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=+0.28323681237394440/+0.58173309734689240/294.1006/1/-90
   params=0/0/0.033/0 float=y maxiter=1000 inside=bof61 decomp=256
@@ -115,7 +98,7 @@ ti_mod07           { ; "Parting of the Waves"               t=  0:07:24.51
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cos/cos/cabs passes=1
   center-mag=0.350941/-9.71445e-017/13.82289 params=0/0/0.001/0
   float=y inside=bof60 logmode=fly decomp=256 periodicity=0
@@ -131,7 +114,7 @@ ti_mod08           { ; "Railroad Tracks"                    t=  0:02:12.26
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/cotan/cabs passes=1
   center-mag=-0.491925/0.0584287/0.6451685 params=0/0/0.001/0 float=y
   inside=bof60 logmode=fly decomp=256 periodicity=0
@@ -144,7 +127,7 @@ ti_mod09           { ; "Pink Champagne"                     t=  0:03:05.16
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/conj/abs passes=1
   center-mag=-0.587687/-0.00481564/0.8281778 params=0.001/0/0.021/0
   float=y inside=bof60 decomp=256 periodicity=0
@@ -158,7 +141,7 @@ ti_mod10           { ; "Oranges and Mandels"                t=  0:08:00.77
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=-0.319731/0.653709/3.844565
   params=0.075/0/0.008999999999999999/0 float=y inside=bof60
@@ -174,7 +157,7 @@ ti_mod11           { ; "Parallel Lines"                     t=  0:04:39.46
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=-0.442028/0.00897402/0.7942375/1/-14.999
   params=0.075/0/0.008999999999999999/0 float=y inside=bof61
@@ -188,7 +171,7 @@ ti_mod12           { ; "Interlocking Pieces"                t=  0:02:14.13
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/cabs/abs passes=1
   center-mag=-1.72920000000000000/-0.00001350320000000/74.15481
   params=0/0.1/0.333/0 float=y maxiter=1000 inside=bof60 logmode=fly
@@ -202,7 +185,7 @@ ti_mod13           { ; "Lost in the Undergrowth"            t=  0:04:35.84
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=-0.461469/0.603948/8.926693 params=0/0/0.033/0 float=y
   inside=zmag decomp=256 periodicity=0
@@ -214,7 +197,7 @@ ti_mod14           { ; "Merlin's Magic Spell"               t=  0:06:59.09
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sqrt/flip/abs passes=1
   center-mag=0.427567/-0.35488/23.86779/1/90 params=0/0/0.033/0
   float=y inside=zmag decomp=256 periodicity=0
@@ -228,7 +211,7 @@ ti_mod15           { ; "Jellyfish"                          t=  0:06:36.68
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sqrt/flip/abs passes=1
   center-mag=+0.35677020318642180/-0.42936020920396790/875.9725/1/90
   params=0.0001/0/0.033/0 float=y inside=zmag decomp=256 periodicity=0
@@ -241,7 +224,7 @@ ti_mod16           { ; "Inversion"                          t=  0:17:12.33
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=tan/abs/flip/abs passes=1
   center-mag=0.566629/0.00771672/1.041512 params=0/0/-0.06/0 float=y
   inside=zmag invert=0.449505078480354/0/0 decomp=256 periodicity=0
@@ -256,7 +239,7 @@ ti_mod17           { ; "Robot Arm"                          t=  0:05:01.76
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/sinh/abs passes=1
   center-mag=+0.34468202908778570/+0.06031645458716298/121.6965/1/2.498
   params=0.001/0/0.01111/0 float=y inside=bof60 logmode=fly decomp=256
@@ -271,7 +254,7 @@ ti_mod18           { ; "Underground Labyrinth"              t=  0:11:05.81
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/sinh/abs passes=1
   center-mag=+0.00187066117320999/+0.00462123567928357/748.9015/1/7.496
   params=0.001/0/0.01111/0 float=y maxiter=1000 inside=zmag
@@ -286,7 +269,7 @@ ti_mod19           { ; "Underneath the Arches"              t=  0:07:25.67
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/asin/abs passes=1
   center-mag=-0.788494/0.000851146/2.175728/1/90
   params=0/0.001/0.063/0 float=y inside=zmag logmode=fly decomp=256
@@ -301,7 +284,7 @@ ti_mod20           { ; "Ribbons and Pebbles"                t=  0:05:37.24
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/asin/abs passes=1
   center-mag=-0.59469007829315180/-0.66096626699211610/191.0001/1/125
   params=0/0/0.063/0 float=y inside=zmag logmode=fly decomp=256
@@ -315,7 +298,7 @@ ti_mod21           { ; "Spiral Staircase"                   t=  0:11:52.38
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/asin/abs passes=1
   center-mag=-1.0234/-0.290973/21.75728/1/90 params=0/0/0.063/0
   float=y inside=zmag logmode=fly decomp=256 periodicity=0
@@ -329,7 +312,7 @@ ti_mod22           { ; "A Wedge of Blue"                    t=  0:10:37.08
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=cos/flip/ident/log passes=1
   center-mag=+0.28650051952754390/-0.00839604179637885/107.1321/1/180
   params=0/0/0.02/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -345,7 +328,7 @@ ti_mod23           { ; "Ring-pull Mandel"                   t=  0:25:52.96
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=-0.298174/-0.00939203/1.065062 params=0.09/0/0.006/0
   float=y maxiter=500 inside=bof60 logmode=fly decomp=256
@@ -360,7 +343,7 @@ ti_mod24           { ; "Warm Glow on a Frosty Day"          t=  0:24:19.59
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=-0.367395/0.634223/10.65062 params=0.09/0/0.006/0 float=y
   maxiter=1024 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -377,7 +360,7 @@ ti_mod25           { ; "Tethers"                            t=  0:24:36.07
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=exp/abs/ident/abs passes=1
   center-mag=-1.23960501755130500/-0.09393946331745476/193.9437/1/180
   params=0/0/0.013/0 float=y maxiter=1024 inside=zmag logmode=fly
@@ -392,7 +375,7 @@ ti_mod26           { ; "Spider's Web"                       t=  0:45:22.65
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=exp/exp/ident/abs passes=1
   center-mag=-0.394957/-0.210245/1.532753/1/180 params=1/0/0.013/0
   float=y maxiter=500 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -407,7 +390,7 @@ ti_mod27           { ; "Are You Sitting Comfortably?"       t=  0:03:41.84
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=exp/sin/ident/abs passes=1
   center-mag=-0.929874/-0.254424/0.6642815/1/180 params=0/0/0.013/0
   float=y maxiter=500 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -421,7 +404,7 @@ ti_mod28           { ; "GoldieBrots and the Dotty Horizon"  t=  0:30:56.09
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/flip/sin/cabs passes=1
   center-mag=+0.35763000000000000/+0.08280790000000000/49.50074
   params=0.09/0/0.006/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -437,7 +420,7 @@ ti_mod29           { ; "Hot Fractal"                        t=  0:06:35.57
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=cos/flip/ident/log passes=1
   center-mag=+0.28905406108796820/-0.01394548867151128/1071.321/1/180
   params=0/0/0.02/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -453,7 +436,7 @@ ti_mod30           { ; "Fingernails"                        t=  0:06:23.05
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=cos/flip/ident/log passes=1
   center-mag=+0.29010624907530040/-0.01360351617285276/4390.661/1/114.999
   params=0/0/0.02/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -468,7 +451,7 @@ ti_mod31           { ; "Edged in Blue"                      t=  0:10:03.13
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=cos/flip/ident/log passes=1
   center-mag=+0.29032156185030140/-0.01355040300698985/43906.61/1/114.998
   params=0/0/0.02/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -483,7 +466,7 @@ ti_mod32           { ; "A Sprinkling of Snow"               t=  0:25:14.13
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=-0.40934667409957700/+0.59847822253906410/78.31338
   params=0.09/0/0.006/0 float=y maxiter=1024 inside=zmag logmode=fly
@@ -498,7 +481,7 @@ ti_mod33           { ; "Symbolic"                           t=  0:11:42.66
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/cabs/cabs/abs passes=1
   center-mag=-0.828383/-0.00939203/1.065062
   params=0.08500000000000001/0/0.063/0 float=y maxiter=1024
@@ -513,7 +496,7 @@ ti_mod34           { ; "Silver and Gold Emboss"             t=  0:36:26.92
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cosxx/cabs passes=1
   center-mag=-1.30964/0.0904247/6.150111/1/-64.997
   params=0.09/0/0.006/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -527,7 +510,7 @@ ti_mod35           { ; "Basket Weave"                       t=  0:10:07.14
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=-0.41686923252080400/+0.60303984386551730/1223.647
   params=0.09/0/0.005/0 float=y maxiter=1024 inside=zmag logmode=fly
@@ -542,7 +525,7 @@ ti_mod36           { ; "4000 Holes"                         t=  0:03:15.15
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=+0.42637100000000000/+0.39147900000000000/28.53562/1/32.5
   params=0.09/0/0.006/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -558,7 +541,7 @@ ti_mod37           { ; "Day of the Triffids"                t=  0:07:58.35
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sin/cabs/cabs passes=1
   center-mag=+0.39030764913563230/+0.37330114913129290/79.85196/1/32.497
   params=0.001/0/0.036/0 float=y maxiter=500 inside=zmag logmode=fly
@@ -573,7 +556,7 @@ ti_mod38           { ; "Party Poppers"                      t=  0:08:31.96
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/abs passes=1
   center-mag=+0.14209987513147660/+0.59065277006861800/8775.027/1/29.997
   params=0/0/0.013/0 float=y maxiter=1024 inside=bof60 logmode=fly
@@ -588,7 +571,7 @@ ti_mod39           { ; "Tentacles"                          t=  0:17:22.98
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/exp passes=1
   center-mag=-0.559071/0.575799/8.968033/1/57.5 params=0/0/0.3/0
   float=y maxiter=300 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -603,7 +586,7 @@ ti_mod40           { ; "Starry Night"                       t=  0:06:14.97
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/flip/sqrt passes=1
   center-mag=+0.35670747855186410/-0.42867118468608360/875.9725/1/90
   params=4e-005/0/0.025/0 float=y inside=zmag decomp=256 periodicity=0
@@ -619,7 +602,7 @@ ti_mod41           { ; "Grainy"                             t=  0:06:05.36
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/cosh passes=1
   center-mag=-1.41789228925525300/-0.00325471067474074/3836.875/1/112.498
   params=0/0/0.001/0 float=y inside=bof60 logmode=fly decomp=256
@@ -634,7 +617,7 @@ ti_mod42           { ; "Spiral"                             t=  0:10:08.52
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/abs/conj/abs passes=1
   center-mag=+0.28856231179309910/+0.01212414277786306/130280.6/1/52.497
   params=0.301/0/0.021/0 float=y inside=bof60 logmode=fly decomp=256
@@ -647,7 +630,7 @@ ti_mod43           { ; "Eclipse"                            t=  0:34:42.50
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/tan/cosxx/log passes=1
   center-mag=-1.17982087444554200/+0.18431466058287550/126.8758/1/112.498
   params=0/0/0/0 float=y maxiter=300 inside=zmag logmode=fly
@@ -660,7 +643,7 @@ ti_mod44           { ; "Jazzy Outside Revisited"            t=  0:14:03.71
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/sqr/cosxx/cosh passes=1
   center-mag=0.400061/0.25299/21.86817/1.0485/-77.426/-9.84
   params=0/0/0.001/0 float=y inside=zmag logmode=fly decomp=256
@@ -674,7 +657,7 @@ ti_mod45           { ; "Porcupine"                          t=  0:16:33.38
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=sqrt/abs/conj/abs passes=1
   center-mag=+0.28855883884217560/+0.01212971116590306/2605612/1/22.498
   params=100/0/0/0 float=y inside=bof60 logmode=fly decomp=256
@@ -688,7 +671,7 @@ ti_mod46           { ; "Balloons"                           t=  0:05:14.01
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/log passes=1
   center-mag=-0.587125/0.65237/22.45194/1/54.999 params=100/0/0.351/0
   float=y maxiter=300 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -701,7 +684,7 @@ ti_mod47           { ; "Strange Creature"                   t=  0:10:31.70
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/log passes=1
   center-mag=-0.654287/-0.00300176/0.8590508 params=100/0/0.351/0
   float=y maxiter=300 inside=zmag logmode=fly decomp=256 periodicity=0
@@ -714,7 +697,7 @@ ti_mod48           { ; "Hoola Hoops"                        t=  0:26:39.93
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=cabs/ident/cosxx/log passes=1
   center-mag=-0.90163624127372910/+0.23920198537015760/101.0721/1/27.5
   params=2.5/0/0.951/0 float=y maxiter=300 inside=zmag logmode=fly
@@ -728,7 +711,7 @@ ti_mod49           { ; "Sea Shells"                         t=  0:08:18.83
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/log passes=1
   center-mag=+0.32587399280214960/-0.03433274454167057/2155.84/1/27.5
   params=100/0/0.351/0 float=y maxiter=300 inside=zmag logmode=fly
@@ -742,7 +725,7 @@ ti_mod50           { ; "Pink Disks"                         t=  0:06:35.08
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 28, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/sin/log passes=1
   center-mag=-0.59077060353839440/+0.49443801261279210/412.7119/1/47.498
   params=5/0/1.033/0 float=y maxiter=1024 inside=zmag outside=real
@@ -756,7 +739,7 @@ ti_mod51           { ; "Mowing the Lawn"                    t=  1:41:47.27
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 29, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=exp/exp/ident/abs passes=1
   center-mag=-0.03133132599107882/-0.73087574216347060/306.5506/1/-90
   params=1/0/0.023/0 float=y maxiter=2000 inside=zmag logmode=fly
@@ -769,7 +752,7 @@ ti_mod52           { ; "Spiral Arm"                         t=  0:09:04.75
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1997 by Les St Clair [Par date: Jul 29, 1997]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=formula formulafile=tent_mod.par
+  reset=1960 type=formula formulafile=tent_mod.frm
   formulaname=tent_in_mod function=abs/recip/cosxx/log passes=1
   center-mag=-0.78347735216586990/+0.14334547787221160/166.4451/1/-54.999
   params=100/0/0.351/0 float=y maxiter=300 inside=zmag logmode=fly

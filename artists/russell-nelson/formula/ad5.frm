@@ -156,4 +156,3 @@ z=fn4(fn2(z)+whitesq)+fn3(c/whitesq)
 c=p1-conj(flip(c))
 |c|<=4
 }
-

@@ -65,3 +65,13 @@ BILL_err7 (yaxis) {; Bill Rossi
     |z| <= 4
 }
 
+InverseJuliaFn {; after Pokorny
+                ;  modified by J.P. Louvet
+                ; P1 = c
+                ; P2 = iter (normalement 4)
+  z=pixel
+  c=P1:
+  z=fn1(1/(z^2+c))
+  |z|<=P2
+  ;SOURCE: jpl1.frm
+}

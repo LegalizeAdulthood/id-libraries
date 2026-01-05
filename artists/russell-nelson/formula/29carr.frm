@@ -1,3 +1,4 @@
+{
 Some years back when I was serving as the Archbishop of Canterbury,
 under His Majesty's pleasure, I took a 2 year Sabbatical from my
 post to help a friend in need (Bob Lee, better known to most of you

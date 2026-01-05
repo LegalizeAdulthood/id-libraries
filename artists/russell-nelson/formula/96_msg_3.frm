@@ -1,6 +1,6 @@
-96_MSG_3.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
-This file contains the Fractint "FRMs" required by the .pars in the
-96_MSG_3.PAR compilation
+; 96_MSG_3.FRM [compiled by Les St Clair 101461.2032@compuserve.com 1996]
+; This file contains the Fractint "FRMs" required by the .pars in the
+; 96_MSG_3.PAR compilation
 
 Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna 
 z = c = pixel: 

@@ -172,7 +172,7 @@ z = a + cos(z)*z
 z <=256
 }
 
-//* monkeys on my back *//
+; //* monkeys on my back *//
 
 029 {
 z = pixel:
@@ -199,7 +199,7 @@ z = fn1(z) + cos(z*z) + p1
 z = a*b + z
 }
 
-//* 8-29-95 *//
+; //* 8-29-95 *//
 
 032 (PI_SYM) {
 z = pixel:
@@ -326,7 +326,7 @@ z = z * z + sqr(sin(pi))
 z = fn1(z) + z ^ z  
 z = z + pixel
 }
-/* Thanksgiving */
+; /* Thanksgiving */
 
 ZAAR_1 (XAXIS) {
 z = 0:

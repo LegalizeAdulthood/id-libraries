@@ -26,7 +26,7 @@ funky julia        { ; wierd
   }
 
 death's head       { ; WAY koel neato!
-  reset type=formula formulafile=fractint.frm formulaname=richard1
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
   corners=0.9344883/0.81416178/-0.080225587/0.080201089/0.81416178/0.08020\
   1089 params=8/0/1/12 maxiter=500 inside=0 potential=256/250/32000
   colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19\
@@ -61,7 +61,7 @@ flower             { ; sowing the seeds of love?
 
 raindrop           { ; looks like an inside-out mandelbrot set
                      ; It looks like an eyeball, too
-  reset type=formula formulafile=c:\fractint\frm\improved.frm formulaname=InvMandel
+  reset type=formula formulafile=improved.frm formulaname=InvMandel
   function=sqr corners=-1.352689/3.047307/-1.650019/1.65 params=1/0/4
   maxiter=500 inside=0 potential=256/250/32000
   colors=000z00<30>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<\
@@ -84,7 +84,7 @@ snakey flames      { ; six little flamin' serpents o' hell
   }
 
 palm fronds        { ; funky, funky.
-  reset=1820 type=formula formulafile=c:\fractint\frm\sam.frm formulaname=Sam_10
+  reset=1820 type=formula formulafile=sam.frm formulaname=Sam_10
   corners=-0.38976914/0.40766913/-1.071938/1.064087 float=y
   colors=000aNC<3>aN4aN2bL5<15>h4l4Nt<3>5Gt<3>EOnLNO<14>3pI2rI3qG<12>Fg3Fg\
   2Gh4<12>OuMOuNPtO<12>QsP<14>vvfxvgyqc<9>zA4z61x52<17>_5GZ5GX7I<19>9Tl<14\
@@ -92,9 +92,9 @@ palm fronds        { ; funky, funky.
   }
 
 sumo wrastle       { ; Byg ol Purple phat guy
-  reset=1820 type=formula formulafile=c:\fractint\frm\f(g(z))).frm formulaname=FGZ_-1
+  reset=1820 type=formula formulafile=f_g_z.frm formulaname=FGZ_-1
   corners=-1.561767/0.89824/1.618434/-1.661581/0.89824/-1.661581
-  float=y maxiter=20000 colors=@c:\fractint\map\chroma4.map
+  float=y maxiter=20000 colors=@chroma4.map
   }
 
 swirly icon        { ; Migty awsome-- let it go for a while
@@ -177,13 +177,13 @@ super-highway      { ; Phunquis bubbly road to oblivion
 
 phunkey sandy      { ; frothy basin w/poiple.map
   reset=1820 type=frothybasin corners=-3/3.000002/-2.500001/2 params=6
-  maxiter=3000 inside=0 colors=@map\poiple.map
+  maxiter=3000 inside=0 colors=@poiple.map
   }
 
 brotian SiCo       { ; koel mandel-like thing, but not from a mandelbrot! slow.
                      ; nice aesthetic balance, but takes forever.
                      ; zoom out & it looks like a pit
-  reset type=formula formulafile=fractint.frm formulaname=richard1
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
   passes=b
   corners=0.9057203277418/0.9057131932994/-5.275776436208e-006/4.236298568\
   949e-006/0.9057131932994/4.236298568949e-006 params=8/0/1/12 float=y

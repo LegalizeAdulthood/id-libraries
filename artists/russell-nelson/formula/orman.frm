@@ -76,13 +76,6 @@ Ormandelbrot12 { ;Copr. 1995 by Jack A. Orman
   x<=4 }
 
 
-
-
-
-
-
-
-}
 OrmandelPower     { ; Copr. 1995 by Jack Orman
                     ; Start with Fn1=ident and Fn2=cotanh
                     ; and P1 = 2

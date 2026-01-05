@@ -1,7 +1,7 @@
 N1(XYAXIS) {    z=pixel:  z=1/sin(1/(z*pixel)) ,             |z|<=4
-   } try maxiter=35 then 200
+   } ; try maxiter=35 then 200
 N_n(XYAXIS) {   z=pixel:  z=(1/sin(1/(z^2*pixel))) ,         |z|<=4
-   } n integer
+   } ; n integer
 N_n1(XYAXIS) {  z=pixel:  z=(1/sin(1/(z^2*pixel)))*pixel ,   |z|<=4
    }
 N2(XAXIS){      z=pixel:  z=(1/sin(sinh(z*pixel)))*pixel ,   |z|<=4
@@ -52,12 +52,12 @@ N16(XYAXIS) {   z=pixel:  z=(sin(z*z*sin(1/(z*z))))*pixel,   |z|<=4
    }
 ducks(xaxis) {  z=pixel,t=1+pixel:   z=sqr(z)+t,             |z|<=4
    }
-It seems not so ugly at first glance and lot of corners to zoom in.
-try this:
- Corners              X                  Y
-top-left         -1.178372          -0.601683
-bottom-right     -0.978384          -0.751678
-center           -1.07838           -0.67668
+; It seems not so ugly at first glance and lot of corners to zoom in.
+; try this:
+;  Corners              X                  Y
+; top-left         -1.178372          -0.601683
+; bottom-right     -0.978384          -0.751678
+; center           -1.07838           -0.67668
 
 NxA(XAXIS)   { z=pixel:   z=sin(z^pixel)  ,                  |z|<=4
    }

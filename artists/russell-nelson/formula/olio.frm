@@ -1,6 +1,6 @@
-// Vincent Damion Presogna
-// 76455,2222@compuserve.com
-// 2-7-96
+; // Vincent Damion Presogna
+; // 76455,2222@compuserve.com
+; // 2-7-96
 
 Olio {
 z = c = pixel :

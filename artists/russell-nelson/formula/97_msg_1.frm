@@ -1,6 +1,6 @@
-97_MSG_1.FRM [compiled by Les St Clair <les_stclair@compuserve.com> 1997]
-This file contains the Fractint "FRMs" required by the .pars in the
-97_MSG_1.PAR compilation
+; 97_MSG_1.FRM [compiled by Les St Clair <les_stclair@compuserve.com> 1997]
+; This file contains the Fractint "FRMs" required by the .pars in the
+; 97_MSG_1.PAR compilation
 
 aaa1a { 
 z=pixel,x=fn1(z+1)*whitesq,c=fn2(z*(1/pixel)):

@@ -1,6 +1,6 @@
-/* All Formulas By Vincent Damion Presogna
-   76455.2222@Compuserve.com
-   02/22/96                                */
+; /* All Formulas By Vincent Damion Presogna
+;    76455.2222@Compuserve.com
+;    02/22/96                                */
 
 
 Crentura (YAXIS) {

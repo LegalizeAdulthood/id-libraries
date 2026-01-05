@@ -1,3 +1,4 @@
+{
 Some years back when I was a Deputy Marshall (under Marshall Wyatt Earp)
 in Tombstone Arizona, I occasioned upon an old Indian gentleman. Lore
 had it that this elder statesman was "way ahead of his time". 
@@ -40,11 +41,6 @@ I can be contacted on CompuServe at: 73753,2420 or on America
 Online at: Genealogy1
 
 Bob Carr}
-
--Please-Read-me{
-
-
- }
 
 Carr-183{
 z=c=1/pixel:

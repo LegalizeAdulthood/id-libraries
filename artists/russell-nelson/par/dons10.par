@@ -16,7 +16,7 @@
 ;
 ;
 radiator           {
-  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  reset=1820 type=formula formulafile=dons.frm formulaname=Groucho
   function=cotan/cotan passes=b
   corners=-3.740128/-3.1606322/0.37789734/-0.39476379/-3.1606322/-0.394763\
   79 params=-1/0/1 float=y potential=256/200/0
@@ -26,7 +26,7 @@ radiator           {
   }
 
 underneath         {
-  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  reset=1820 type=formula formulafile=dons.frm formulaname=Groucho
   function=sin/conj passes=1
   corners=0.0892157/-1.287282/0.9223632/-0.9129672/-1.287282/-0.9129672
   params=-1/0/1 float=y outside=summ potential=256/64/0
@@ -37,7 +37,7 @@ underneath         {
 
 well-connected     {
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=geninvmand1_n function=sinh/sin/sqr/ident passes=t
+  formulaname=GenInvMand1_N function=sinh/sin/sqr/ident passes=t
   corners=-2.242152/2.242152/-1.681614/1.681614 float=y maxiter=25
   inside=epsiloncross potential=256/256/128 
   colors=000ECR<7>URvXTzYVz<14>yxx<15>XTzVRvTQsTQrSPqROo<8>9BJ79F57B357033\
@@ -47,7 +47,7 @@ well-connected     {
 
 sanity-claus       { ; don't ask me... I just work here
                      ; of course you know there ain't no sanity clause
-  reset=1820 type=formula formulafile=dons.frm formulaname=groucho
+  reset=1820 type=formula formulafile=dons.frm formulaname=Groucho
   function=sinh/cosh passes=b
   corners=-1.1144018/-1.3724018/-0.172/0.172/-1.3724018/0.172
   params=-1/0/1 float=y outside=summ potential=256/64/0
@@ -58,7 +58,7 @@ sanity-claus       { ; don't ask me... I just work here
   }
 
 where's-curly?      { ; sorry
-  reset=1820 type=formula formulafile=dons.frm formulaname=curly
+  reset=1820 type=formula formulafile=dons.frm formulaname=Curly
   function=cotanh/conj passes=1
   corners=-31.99/31.99/-25.79325/22.19184
   params=0.20000000000000001/0/0.20000000000000001 float=y decomp=256
@@ -79,7 +79,7 @@ sweet-mandala      {
 
 squeeze-play       { ; golly ... monday morning already?
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=geninvmand1_n function=flip/tanh/sqr/ident passes=t
+  formulaname=GenInvMand1_N function=flip/tanh/sqr/ident passes=t
   corners=0.603565829/0.561994717/0.38287844/0.77330082/0.370911876/0.6554\
   9418 float=y maxiter=50 potential=256/800/0 
   colors=0004OO000000000waI<15>q7C<16>B`a9ab8`c<27>3Un3Un5Wo<12>Llx`8l<7>u\
@@ -101,7 +101,7 @@ bridgework         {
 
 probe              {
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=geninvmand1_n function=sin/cosxx/cos/ident passes=1
+  formulaname=GenInvMand1_N function=sin/cosxx/cos/ident passes=1
   corners=-0.013015655/-0.91867965/-0.6128064/0.5947456/-0.91867965/0.5947\
   456 float=y maxiter=50 potential=256/222/0 
   colors=00c<37>002000000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz\
@@ -109,7 +109,7 @@ probe              {
   }
 
 interior-6         {
-  reset=1820 type=formula formulafile=dons.frm formulaname=moe
+  reset=1820 type=formula formulafile=dons.frm formulaname=Moe
   function=cosxx/cosxx passes=b
   corners=-1.4824107/-2.4463947/-0.6400745/0.6452375/-2.4463947/0.6452375
   params=1 float=y potential=256/256/0 
@@ -130,7 +130,7 @@ dots-it            {
 
 bright-side        {
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=geninvmand1_n function=flip/tanh/sqr/ident passes=b
+  formulaname=GenInvMand1_N function=flip/tanh/sqr/ident passes=b
   corners=0.98492622/1.3419838/-1.3456892/0.55670266/0.20031885/-0.2995460\
   2 params=1/1/1/1 float=y maxiter=50 decomp=256
   colors=000<2>000waI<15>q7C<16>B`a9ab8`c<27>3Un3Un5Wo<12>Llx`8l<7>umz<11>\
@@ -139,7 +139,7 @@ bright-side        {
   }
 
 telescope          { ; contemplating Mt. Fuji
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-26
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-26
   function=cosh passes=b
   corners=-1.053285/2.21013/2.20381/-2.147409/2.21013/-2.147409
   float=y outside=real potential=255/200/0 
@@ -182,7 +182,7 @@ wildlife    {
 
 very-metal-newtons { ; non oops
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=newton_elliptic passes=b
+  formulaname=Newton_elliptic passes=b
   corners=-0.26753572/-0.4300515/-0.1324775/0.13223162/-0.4300515/0.132231\
   62 params=1/0/1 float=y maxiter=25 inside=maxiter outside=summ
   decomp=256
@@ -191,7 +191,7 @@ very-metal-newtons { ; non oops
 
 powerglide         {
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=newt_ellipt_oops passes=b
+  formulaname=Newt_ellipt_oops passes=b
   corners=-0.1038383/30.53054/9.014215/31.99
   params=2/1/0.20000000000000001 float=y inside=zmag decomp=256
   periodicity=0
@@ -201,7 +201,7 @@ powerglide         {
   }
 
 flutterby          {
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-21
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-21
   function=cotan/conj/cosh passes=b
   corners=-3.3401502/-2.9321502/0.2594739/-0.2845261/-2.9321502/-0.2845261
   params=1/2 float=y inside=bof61 outside=real decomp=256
@@ -212,7 +212,7 @@ flutterby          {
 
 
 final-approach     { ; a (slow) oddity
-  reset=1820 type=formula formulafile=dons.frm formulaname=reb005e
+  reset=1820 type=formula formulafile=dons.frm formulaname=REB005E
   function=cosh/cosxx passes=b
   corners=-1.1510081/-0.93943524/1.5294893/0.92777431/-0.78595978/1.042843\
   4 params=1/0.5/-1 maxiter=16 decomp=256 periodicity=0
@@ -221,7 +221,7 @@ final-approach     { ; a (slow) oddity
   }
 
 angle-of-repose    {
-  reset=1820 type=formula formulafile=dons.frm formulaname=sjmand05
+  reset=1820 type=formula formulafile=dons.frm formulaname=SJMAND05
   function=tan passes=b corners=-12.68066/16.73111/-13.332/8.726821
   params=0/0.20000000000000001/0.10000000000000001/0.75 float=y
   maxiter=50 decomp=128
@@ -240,7 +240,7 @@ flutterby-2        { ; zoom out
 
 massteria          { ; tim's newton elliptic oops
   reset=1820 type=formula formulafile=dons.frm
-  formulaname=newt_ellipt_oops passes=b
+  formulaname=Newt_ellipt_oops passes=b
   corners=-1.19548/1.22052/-1.676355/0.1356451
   params=2/1/0.20000000000000001/-1 float=y maxiter=16 inside=zmag
   decomp=256 periodicity=0
@@ -257,7 +257,7 @@ massteria          { ; tim's newton elliptic oops
   }
 
 souvenir           {  
-  reset=1820 type=formula formulafile=dons.frm formulaname=ok-31
+  reset=1820 type=formula formulafile=dons.frm formulaname=OK-31
   function=exp/conj passes=b
   corners=-2.811938/1.031812/2.543287/-2.581713/1.031812/-2.581713
   params=0.75/-0.20000000000000001 float=y inside=zmag outside=real

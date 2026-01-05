@@ -20,7 +20,7 @@ PizzaPie           { ; A pizza pie made from a formula file - LeeMandel2
 
 Popcorn-Feather    { ; A feather like fractal found in Popcorn
   reset type=popcornjul corners=-1.476563/-0.742905/0.866272/1.404633
-  maxiter=50 inside=0 symmetry=none colors=@DEFAULT.MAP
+  maxiter=50 inside=0 symmetry=none colors=@default.map
   }
 
 Popcorn-Fern       { ; A fern-like shape found in Popcorn
@@ -87,7 +87,7 @@ Freeway_Cloverleaf { ; A Freeway interchange south of Saturn's Rings
   }
 
 Ropes              { ; A rope-like fractal which has a 3-D appearance
-  reset type=formula formulafile=\FRACTINT\bofmaps.frm
+  reset type=formula formulafile=bofmaps.frm
   formulaname=BOFMaps61-65 corners=-2.0/2.0/-1.5/1.5 params=0/-0.5 float=y
   maxiter=5000 inside=0
   colors=000zV0<2>z00<4>A0050000000500A<4>00z<5>0zz<5>zz0<5>z00<4>A00500000005\
@@ -109,7 +109,7 @@ Popcorn-Spiral     { ; Another Spiral
   }
 
 StarBurst          { ; Interesting curves around the square corners
-  reset type=formula formulafile=fractint.frm formulaname=richard11
+  reset type=formula formulafile=fractint.frm formulaname=Richard11
   center-mag=-6.5e-007/-5.2e-006/0.0416797 params=0.9/1/0.2/0.1
   maxiter=125 inside=zmag outside=summ potential=255/275/0
   colors=0000KN<58>GYKGYKHZJIZJ<39>WjFWjFXkEYkE<25>nqIoqJoqJoqJpqJ<4>roGroFroE\

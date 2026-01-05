@@ -1,3 +1,4 @@
+{
 These formulas have been obtained from TOP SECRET files of
 the Chinese Communist Secret Police. Many lives have been
 put at risk in order to obtain these files for your personal
@@ -47,7 +48,8 @@ z=(z*z-(pixel*pixel*pixel))/(z*z+c)/(pixel-c*c),
 |real(z)| <=100
 }
 
-Carr1155 FractalFenderC modified(XAXIS_NOPARM){;Modified Lee Skinner frm.
+Carr1155 (XAXIS_NOPARM){;FractalFenderC modified
+;Modified Lee Skinner frm.
 z=(pixel)/(1.099,0),x=|z|:
 (z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
 z=sqr(z)+(pixel),
@@ -55,7 +57,8 @@ x=|z|,
 x<=4 
 }
 
-Carr1156 FractalFenderC modified(XAXIS_NOPARM){;Ditto above
+Carr1156 (XAXIS_NOPARM){;FractalFenderC modified
+;Ditto above
 z=(pixel)/(1.099,0),x=|z|:
 (z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
 z=sqr(z)+(pixel/(1.099,0)),
