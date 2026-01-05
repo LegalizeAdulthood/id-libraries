@@ -154,7 +154,10 @@ def validate_parameter_file(filename, quiet=False):
             if errors:
                 print("Validation errors:")
                 for error in errors:
-                    print(f"  {error}")
+                    try:
+                        print(f"  {error}")
+                    except:
+                        print(f"  ?unknown error")
             print(f"Validation failed for '{filename}': {len(warnings)} warnings, {len(errors)} errors")
         return False
 
