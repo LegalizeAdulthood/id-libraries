@@ -370,7 +370,7 @@ def parse_entry_header(line):
     return line, bracket_value, paren_value
 
 
-def find_entry_by_name(entries, name, case_sensitive=False):
+def find_entry_by_name(entries, name):
     """
     Find an entry by name.
     
@@ -382,13 +382,8 @@ def find_entry_by_name(entries, name, case_sensitive=False):
     Returns:
         FileEntry or None if not found
     """
-    if case_sensitive:
-        for entry in entries:
-            if entry.name == name:
-                return entry
-    else:
-        name_lower = name.lower()
-        for entry in entries:
-            if entry.name.lower() == name_lower:
-                return entry
+    name_lower = name.lower()
+    for entry in entries:
+        if entry.name.strip().lower() == name_lower:
+            return entry
     return None

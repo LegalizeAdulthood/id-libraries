@@ -28,7 +28,7 @@ def main():
     # Extract the par file path from the last line
     lines = content.strip().split('\n')
     last_line = lines[-1]
-    match = re.search(r"Validation failed for '([^']+)':", last_line)
+    match = re.search(r"Validation failed for '(.+)':", last_line)
     if not match:
         print("Could not find par file path in validation output")
         sys.exit(1)
@@ -40,14 +40,21 @@ def main():
         print(f"Formula directory '{formula_dir}' does not exist")
         sys.exit(1)
 
-    # Collect missing entries in existing files
-    missing_to_entries = defaultdict(list)
-    pattern = r"Formula entry '([^']+)' not found in file '([^']+)'"
-    for match in re.finditer(pattern, content):
-        entry_name, file_name = match.groups()
-        missing_to_entries[file_name].append(entry_name)
+    # Collect missing entries
+    missing_entries = []
+    pattern1 = r"  ([^ ]+)\((\d+)\): Formula file '.+' not found for entry '(.+)'"
+    for match in re.finditer(pattern1, content):
+        param_name, line, entry_name = match.groups()
+        entry_name = entry_name.lower()
+        missing_entries.append((param_name, line, entry_name))
 
-    if not missing_to_entries:
+    pattern2 = r"  ([^ ]+)\((\d+)\): Formula entry '(.+)' not found in file '.+'"
+    for match in re.finditer(pattern2, content):
+        param_name, line, entry_name = match.groups()
+        entry_name = entry_name.lower()
+        missing_entries.append((param_name, line, entry_name))
+
+    if not missing_entries:
         print("No missing formula entries found in validation output")
         sys.exit(0)
 
@@ -56,9 +63,11 @@ def main():
 
     # For each missing entry, find files that contain the entry
     chosen = {}
-    for file_with_missing_entries, entries in missing_to_entries.items():
-        print(f"\nMissing entry in file: {file_with_missing_entries}")
-        print(f"Entries: {', '.join(entries)}")
+    prompted = set()
+    for param_name, line, entry_name in missing_entries:
+        if entry_name in prompted:
+            continue
+        print(f"\nEntry '{entry_name}' missing for parameter '{param_name}' at line {line}")
 
         candidates = []
         for frm in frm_files:
@@ -69,16 +78,11 @@ def main():
                 print(f"Warning: Could not parse {frm}: {e}")
                 continue
 
-            has_all = True
-            for entry in entries:
-                if not find_entry_by_name(file_entries, entry, case_sensitive=False):
-                    has_all = False
-                    break
-            if has_all:
+            if find_entry_by_name(file_entries, entry_name):
                 candidates.append(frm)
 
         if not candidates:
-            print("No candidate files found that contain all required entries.")
+            print("No candidate files found that contain the entry.")
             continue
 
         print("Candidate files:")
@@ -91,7 +95,8 @@ def main():
                 if choice == 0:
                     break
                 if 1 <= choice <= len(candidates):
-                    chosen[file_with_missing_entries] = candidates[choice - 1]
+                    chosen[entry_name] = candidates[choice - 1]
+                    prompted.add(entry_name)
                     break
                 else:
                     print("Invalid choice.")
@@ -104,20 +109,20 @@ def main():
 
     # Generate sed script
     print("\n# Sed script to update the par file:")
-    print("# Run with: sed -i 'script' path_to_par_file")
+    print("# Run with: sed -i -f 'locate.sed' path_to_par_file")
     print("# Or manually apply the changes")
     sed_lines = []
-    for file_with_missing_entries, chosen_file in chosen.items():
-        # Escape for sed
-        escaped_file = re.escape(file_with_missing_entries)
-        line = f"s/formulafile={escaped_file}/formulafile={chosen_file}/g"
-        sed_lines.append(line)
-        print(line)
+    for param_name, line, entry_name in missing_entries:
+        if entry_name in chosen:
+            new_file = chosen[entry_name]
+            line = f"{line}, /}}/ {{ s/formulafile=[^ ][^ ]*/formulafile={new_file}/ }}"
+            sed_lines.append(line)
+            print(line)
 
     # Write to locate.sed in current directory
     with open('locate.sed', 'w') as f:
         f.write("# Sed script to update the par file\n")
-        f.write("# Run with: sed -i 'locate.sed' path_to_par_file\n")
+        f.write("# Run with: sed -i -f 'locate.sed' path_to_par_file\n")
         f.write("# Or manually apply the changes\n")
         for line in sed_lines:
             f.write(line + '\n')

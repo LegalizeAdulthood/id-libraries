@@ -108,7 +108,7 @@ def search_for_entry(entry_name, frm_files):
             continue
         
         # Search case-insensitively
-        entry = find_entry_by_name(entries, entry_name, case_sensitive=False)
+        entry = find_entry_by_name(entries, entry_name)
         
         if entry:
             results.append((frm_file, entry))

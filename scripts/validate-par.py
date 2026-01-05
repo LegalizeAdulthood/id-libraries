@@ -32,7 +32,7 @@ def validate_file_entry(param_name, param_start_line, file_type, filename, entry
         return
     
     # Search for entry by name (case insensitive)
-    entry = find_entry_by_name(entries, entry_name, case_sensitive=False)
+    entry = find_entry_by_name(entries, entry_name)
     
     if not entry:
         errors.append(f"{param_name.strip()}({param_start_line}): {file_type} entry '{entry_name}' not found in file '{filename}'")
