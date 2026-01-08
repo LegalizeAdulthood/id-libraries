@@ -1,4 +1,4 @@
-hints { ; try fn=ident , p1 < 1 
+comment { ; try fn=ident , p1 < 1 
         }
 
 

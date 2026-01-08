@@ -1,4 +1,4 @@
-Guy Marson <guy.marson@mnhn.lu>
+; Guy Marson <guy.marson@mnhn.lu>
 
 multi010   {
 z=c=pixel:

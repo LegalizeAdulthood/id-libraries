@@ -156,10 +156,16 @@ z=sin(z*z)*(z+pixel) + sin(c),
 |z| <=4
  }
 
-FractalFenderC(XAXIS_NOPARM) {z=p1,x=|z|:
-  (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=sqr(z)+pixel,x=|z|,
-   x<=4 }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
 comment {
  The following parameter entries in this file all use the following
@@ -723,19 +729,22 @@ mandel_var1 { ; standard formula, z not initialized
         |z| < 4
       }
 
-mandel_var2 { ; z initialized to 0, calc in bailout test
+mandel_var2 { ; z initialized to 0, calc then bailout test
         z=0, c=pixel:
-        |(z=z*z +c)| < 4
+        z=z*z +c
+        |z| < 4
       }
 
-mandel_var3 { ; z initialized to pixel, calc in bailout test
+mandel_var3 { ; z initialized to pixel, calc then bailout test
         z=c=pixel:
-        |(z=z*z +c)| < 4
+        z=z*z +c
+        |z| < 4
       }
 
-mandel_var4 { ; z not initialized, calc in bailout test
+mandel_var4 { ; z not initialized, calc then bailout test
         c=pixel:
-        |(z=z*z +c)| < 4
+        z=z*z +c
+        |z| < 4
       }
 
 mandel_var5 { ; calc using pixel as the variable
@@ -744,9 +753,10 @@ mandel_var5 { ; calc using pixel as the variable
         |pixel| < 4
       }
 
-mandel_var6 { ; calc using pixel as variable, calc made in bailout test
+mandel_var6 { ; calc using pixel as variable, calc then bailout test
         c=pixel:
-        |(pixel=pixel*pixel + c)| < 4
+        pixel=pixel*pixel + c
+        |pixel| < 4
       }
 
 PhonyMandelM {
@@ -771,18 +781,19 @@ Lesfrm05_a (xaxis) {
  }
 
 Carr2178 {; Modified Sylvie Gallet frm. [101324,3444],1996
-z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5,
-c=sin(conj(-0.81256,-0.2495)),
-d1=(conj(0.0002550/pixel)),
-z1=c1=(1.5*z+d1),z2=c2=(2.25*z+d1),z3=c3=(3.375*z+d1),z4=c4=(11.0625*z+d1),
-l1=(real(p1)),l2=(imag(p1)),l3=(real(p2)),l4=(imag(p2)),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-z=(z-c/6)*(1-(t1||t2||t3||t4))+((z1*t1+d1)+(z2*t2+d1)+(z3*t3+d1)+(z4*t4+d1)),
-c=c*(1-(t1||t2||t3||t4))+((c1*t1+d1)+(c2*t2+d1)+(c3*t3+d1)+(c4*t4+d1)),
-z=z*z+c,
-iter=iter+1
-(|real(z)|) <= bailout
+  z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5
+  c=sin(conj(-0.81256,-0.2495))
+  d1=(conj(0.0002550/pixel)), d4=4*d1
+  z1=1.5*z+d1, z2=2.25*z+d1, z3=3.375*z+d1, z4=11.0625*z+d1
+  l1=(real(p1)), l2=(imag(p1)), l3=(real(p2)), l4=(imag(p2))
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + d4
+  z = (z-c/6)*t+ct, c = c*t+ct
+  z = z*z+c
+  iter=iter+1
+  (|real(z)|) <= bailout
+  ;SOURCE: 42dcarr.frm
 }
 
 Quiz {; Sylvie Gallet [101324,3444], 1995
@@ -887,20 +898,6 @@ Carr1973ma {;Modified Sylvie Gallet frm.
    iter = iter+1
    ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
-
-Carr2178{;Modified Sylvie Gallet frm. [101324,3444],1996
- z=(pixel+pixel)-1/log(pixel-1/sin(0.010/pixel))^2.5,
- c=sin(conj(-0.81256,-0.2495)),
- d1=(conj(0.0002550/pixel)),
- z1=c1=(1.5*z+d1),z2=c2=(2.25*z+d1),z3=c3=(3.375*z+d1),z4=c4=(11.0625*z+d1),
- l1=(real(p1)),l2=(imag(p1)),l3=(real(p2)),l4=(imag(p2)),
- bailout=16,iter=0:
- t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
- z=(z-c/6)*(1-(t1||t2||t3||t4))+((z1*t1+d1)+(z2*t2+d1)+(z3*t3+d1)+(z4*t4+d1)),
- c=c*(1-(t1||t2||t3||t4))+((c1*t1+d1)+(c2*t2+d1)+(c3*t3+d1)+(c4*t4+d1)))
- z=z*z+c,
- iter=iter+1
- (|real(z)|) <= bailout }
 
 Carr1939A {;Modified Sylvie Gallet frm.
    z=c=(conj(1/pixel)^2.32)-1.25,
@@ -1067,24 +1064,23 @@ BJ-SG-MaNewt-014 {    ;Modified Sylvie Gallet [101324,3444], 1995
    ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr1989{;Modified Sylvie Gallet frm.  
-	 ; Revised 5/20/96 by George Martin for Orgform
-	 ; Added "+ (z4==0)" to denominator in 8th line below
-   z=c=(pixel-conj(pixel/5)),
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(10*pixel+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1/(1/cos(pixel/5)))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 ,  z1 = (z4*z-10*pixel)/(4*z4 + (z4==0)),
-   z = (z2+c-0.099/pixel)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-tanh(cabs(test3 && test0 && test1))))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-  ;SOURCE: c1989.frm
-   }
+Carr1989 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel-conj(pixel/5), p10=10*pixel, th1=tanh(1), c=z-0.099/pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
 Lesfrm14 (xaxis) { ; Les St Clair, 1996
  z = c = pixel:
@@ -1324,15 +1320,27 @@ JDfrm010 { ; Jim Deutch. Overlay mandel + reversed mandel
   |z| < 4
 }
 
-Carr2330(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996 
-pixel=-abs(real(pixel))+flip(imag(pixel)), m=tan(pixel)-tanh(pixel), 
-z=2*m+flip(pixel),c=(-0.7,0.2), d1=conj(conj(0.0003545/-pixel))+(tanh(0.00010/pixel)), 
-z1=c1=(1*z+d1),z2=c2=(1.5*z+d1),z3=c3=(2.25*z+d1),z4=c4=(3.375*z+d1), z5=c5=(5.0625*z+d1), 
-l1=(real(p1)),l2=(imag(p1)),l3=(real(p2)),l4=(imag(p2)),l5=(300) bailout=16,iter=0: 
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),t5=(iter==l5) 
-z=z*(1-(t1||t2||t3||t4))+(z1*t1-d1)+(z2*t2+d1)+(z3*t3+d1)+(z4*t4+d1)+(z5*t5+d1) 
-c=c*(1-(t1||t2||t3||t4))+(c1*t1+d1)+(c2*t2+d1)+(c3*t3+d1)+(c4*t4+d1)+(c5*t5+d1) 
-z=z^2.45+c+sinh(z/6), iter=iter+1, (|real(z)|) <=bailout }
+Carr2330 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
+                  ; Added variable "newpixel". G.Martin 6/15/99
+  newpixel = -abs(real(pixel)) + flip(imag(pixel))
+  m = tan(newpixel) - tanh(newpixel)
+  z = 2*m + flip(newpixel), c = (-0.7,0.2)
+  d1 = -0.0003545/newpixel + tanh(0.0001/newpixel), d5 = 5*d1, d2 = 2*d1
+  z1 = z+d1, z2 = 1.5*z+d1, z3 = 2.25*z+d1
+  z4 = 3.375*z+d1, z5 = 5.0625*z+d1
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2)
+  l4 = imag(p2), l5 = 300
+  bailout = 16, iter = 0 :
+  t1 = iter==l1, t2 = iter==l2, t3 = iter==l3
+  t4 = iter==l4, t5 = iter==l5
+  t = 1-(t1||t2||t3||t4)
+  ct = z1*t1 + z2*t2 + z3*t3 + z4*t4 + z5*t5 + d5
+  z = z*t + ct - d2, c = c*t + ct
+  z = z^2.45 + c + sinh(z/6)
+  iter = iter + 1
+  |real(z)| <= bailout
+  ;SOURCE: 42gcarr.frm
+}
 
 JD-LS01 { ; Jim Deutch/modified by Lee Skinner.  1600x1200 only
   countreset = (count < 1600)
@@ -1891,18 +1899,18 @@ Don't_do_that! {
   |z| <= 16
  }
 
-FORMULA {; requires 'periodicity=0'
-  z = pixel , x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x
-  xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x
-  xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x
-  xz=1.50000*x, xsl=4.00000*x , x1=1.50000*x
-  chrf1 = (y<0.25575&&y>0.20925)||(y>0.41850)
-  chrf1 = ((x<-1.20350)||chrf1)&&((x>-1.25000)&&(x<-1.01750))
-  test = chrf1 && y>0.00000 && y<0.46500
-  < Fractal initializations > :
-   < Fractal calculation statements >
-    < Bailout test > && test == 0
-  }
+; FORMULA {; requires 'periodicity=0'
+;   z = pixel , x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x
+;   xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x
+;   xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x
+;   xz=1.50000*x, xsl=4.00000*x , x1=1.50000*x
+;   chrf1 = (y<0.25575&&y>0.20925)||(y>0.41850)
+;   chrf1 = ((x<-1.20350)||chrf1)&&((x>-1.25000)&&(x<-1.01750))
+;   test = chrf1 && y>0.00000 && y<0.46500
+;   < Fractal initializations > :
+;    < Fractal calculation statements >
+;     < Bailout test > && test == 0
+;   }
 
 mandel+F {; requires 'periodicity=0'
   z = pixel , x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x
@@ -2434,7 +2442,10 @@ Tims_Random_Formula {
 
 Frantic_2 { 
   z = c = pixel + p1: 
-  r = z * (1/fn1(z)) + p2 z = fn2(r) * z + c round(|Z|) <= 4 }
+  r = z * (1/fn1(z)) + p2
+  z = fn2(r) * z + c
+  round(|Z|) <= 4
+  }
 
 BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:

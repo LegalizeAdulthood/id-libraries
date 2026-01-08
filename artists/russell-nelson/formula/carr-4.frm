@@ -58,23 +58,29 @@ z=sin(flip(z*z*z)) + c,
 
 Carr-151{;Dr. Chaosbrot 1 Modified
 z=c=pixel:
-z=sqr(z*z) + (((sqrt 5+1)/2)+c),
+z=sqr(z*z) + (((sqrt(5)+1)/2)+c),
 |z| <=4
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 Carr-152{
 z=c=1/pixel:
-z=cosxx(flip(z*z/pixel)) + (((sqrt 5+1)/2) + c);
+z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c);
 z=sqr(flip(z))+c,
 |z| <=4
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 Carr-153{
 z=c=1/pixel:
-z=tanh(z*z/pixel)+(((sqrt 5+1)/2)+c);
+z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c);
 z=sqr(flip(z))+c,
 |z| <=4
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 Carr-154{
 z=c=1/pixel:

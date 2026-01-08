@@ -57,10 +57,12 @@ Gallet-5-07 { ; Sylvie Gallet [101324,3444], 1996
     (|hx|+|hy|) <= p2
   }
 
-BirdOfPrey(XAXIS_NOPARM) {z=p1, x=1:
-   (x<10)*(z=sqr(z)+pixel),
-   (10<=x)*(z=cosxx(z)+pixel),
-    x=x+1, |z|<=4}
+BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
+  z = p1 :
+  z = cosxx(sqr(z) + pixel) + pixel
+  |z| <= 4
+  ;SOURCE: fract196.frm
+}
 
 Carr3074(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
@@ -163,14 +165,14 @@ iter=iter+1
 |z|<=bailout
 }
 
-a0b0 { one version
+a0b0 { ; one version
   z=pixel :
   z=fn1(z^(e*(1/sqr(-1))-fn2((z+1)^e)))+c
   |z|<4
   ;SOURCE: ad1.frm
 }
 
-a0b0 { other version
+a0b0.2 { ; other version
   z=pixel , e=0 :
   z=fn1(z^(e*(1/sqr(-1))-fn2((z+1)^e)))+c
   |z|<4
@@ -538,19 +540,25 @@ tri-mandel-2 { ; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
    mz1 <= b11
    }
 
-JoWe55c01 { ; from a modified Carr-formula
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=10
- }
+JoWe55c01 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=10
+  ;SOURCE: jo_we_55.frm
+}
 
-JoWe55c02 { ; from a modified Carr-formula
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=p2
- }
+JoWe55c02 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
 tri-fn+fn    { ; Sylvie Gallet <sylvie_gallet@compuserve.com>, May 1997
                ; real(p1) = bailout (1024 recommended)

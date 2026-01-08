@@ -41,17 +41,17 @@ Ormandelbrot49 {
    z <= 4 
  }
 
-Ormandelbrot50 { Mandel-Julia Hybrid
-   z = c =pixel, d=p1:
-   z = (sqr(z) + C)*(Sqr(z) + D)
-   z <= 4 
- }
+Ormandelbrot50 {; Mandel-Julia Hybrid
+  z = c =pixel, d=p1:
+  z = (sqr(z) + C)*(Sqr(z) + D)
+  z <= 4
+}
 
-Ormandelbrot51 { Mandel-Julia Hybrid
-   z = c =pixel, d=p1:
-   z = (sqr(z) + C)+(Sqr(z) + D)
-   z <= 4 
- }
+Ormandelbrot51 {; Mandel-Julia Hybrid
+  z = c =pixel, d=p1:
+  z = (sqr(z) + C)+(Sqr(z) + D)
+  z <= 4
+}
 
 Ormandelbrot52 {
    z=c=pixel:

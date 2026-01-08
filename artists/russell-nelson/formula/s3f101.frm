@@ -18,21 +18,44 @@ FractalFenderTwoC (XAXIS_NOPARM) {; Edited for Fractint v. 20
   ;SOURCE: form1.frm
 }
 
-IslandOfChaosC(XAXIS_NOPARM) {z=p1, x=1:
-    (z=sqr(z)+pixel)*(x<10)+(z=sin(z)/cosxx(z)+pixel)*(10<=x),
-    x=x+1, |z|<=4
+IslandOfChaosC (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=sin(z)/cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-ManInTheOzoneC(XAXIS_NOPARM) { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=cosxx(z)+pixel)*(10<=x)*(x<20)+(z=sin(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+ManInTheOzoneC (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=cosxx(z)+pixel
+  ELSE
+    z=sin(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-FractalFenderC(XAXIS_NOPARM) {z=p1,x=|z|:
-       (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=sqr(z)+pixel,x=|z|,
-       x<=4 
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
 }
+
 ScottLPC(XAXIS) { 
    z = pixel, TEST = (p1+3): 
    z = log(z)+cosxx(z), 
@@ -42,10 +65,12 @@ Fzppsqsi  { ;; Lee2.FRM (Lee Skinner)
   z = pixel, f = sin (pixel):
                        z = sqr (z)  + f, |z| <= 50
 }
-DrChaosbrot2(xyaxis)   { ;more phi
-	z = c = pixel:
-	z = sqr(z) + (((sqrt 5 + 1)/2)+c)
-	|z| <= 4;
+
+DrChaosbrot2 (xyaxis) {; more phi
+  z = c = pixel:
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
+  |z| <= 4
+  ;SOURCE: drcha.frm
 }
 Fzpcopsq  { ;; Lee2.FRM (Lee Skinner)
   z = pixel, f = pixel ^ (sqr(pixel) ):
@@ -60,18 +85,30 @@ Fzppsiex  { ;; Lee2.FRM (Lee Skinner)
   z = pixel, f = exp (pixel):
                        z = sin (z)  + f, |z| <= 50
 }
-Fly (XAXIS_NOPARM) {
-    z=p1:
-    x=real(z),
-    (x<0)*(z=sqr(z)+pixel),
-    (0<=x)*(z=sqr(z)-pixel),
-    |z|<=4
+
+Fly (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1:
+  x=real(z)
+  z=sqr(z)+pixel
+  z=sqr(z)-pixel
+  |z|<=4
+  ;SOURCE: choice.frm
 }
-DpSpaceProbeTwoC(XAXIS_NOPARM) {
-     z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=exp(z)+pixel)*(10<=x)*(x<20)+(z=cosxx(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+DpSpaceProbeTwoC (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=exp(z)+pixel
+  ELSE
+    z=cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
+
 J_TchebychevC6 {
    c = pixel, z = P1:
    z = c*(z*z*(z*z*(z*z-6)+9)-2),

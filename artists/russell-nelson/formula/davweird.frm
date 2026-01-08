@@ -80,26 +80,30 @@ That's the answer - lower tolerance gets complete picture called FRENETIC FLIGHT
 23 Dec start secant version & notice that semicolon was missing from 2z= ... statement.  Add & test to see if same picture. Also notice that have used - cos(z) instead of + cos!  Of such errors are pictures made!
 The semi colon made no difference. The sign of cos was changed in ex4cos - and has not yet (10 Jan 92) yielded a nice picture! .
 }
-ex4cwithP1 {
-z = pixel:
-ex = exp(z);
-2z = 2^(-z);
-n = ex + 2z - 2*cos(z) - 6;
-d = ex + 2z*0.69314718 + 2*sin(z) + P1;
-z = z - n/d;
-0.001 <= |n|
+
+ex4cwithP1 {; Amended for Fractint v20 by G. Martin
+  z = pixel:
+  ex = exp(z)
+  z2 = 2^(-z)
+  n = ex + z2 - 2*cos(z) - 6
+  d = ex + z2*0.69314718 + 2*sin(z) + P1
+  z = z - n/d
+  0.001 <= |n|
+  ;SOURCE: davweird.frm
 }
-comment={31 Jan 95 having trouble recreating Winged Temple - copy formula and
+comment{31 Jan 95 having trouble recreating Winged Temple - copy formula and
 and winged for experimention.
 }
-ex4cwithP1temple {
-z = pixel:
-ex = exp(z);
-2z = 2^(-z);
-n = ex + 2z - 2*cos(z) - 6;
-d = ex + 2z*0.69314718 + 2*sin(z) + P1;
-z = z - n/d;
-0.01 <= |n|
+
+ex4cwithP1temple {; Amended for Fractint v20 by G. Martin
+  z = pixel:
+  ex = exp(z)
+  z2 = 2^(-z)
+  n = ex + z2 - 2*cos(z) - 6
+  d = ex + z2*0.69314718 + 2*sin(z) + P1
+  z = z - n/d
+  0.01 <= |n|
+  ;SOURCE: davweird.frm
 }
 
 comment {23 Dec 91 Now try ex4c using secant method, sticking to minus cos. Seem to need large values of P2 like 0.1 (=flyfish) 0.5 (=dudu) to get a picture. P2 = 0.5 yields ragged edges - try reducing tolerance from 0.001 to 0.01. Ragged edges on dudu go. Makes flyfish image bigger.

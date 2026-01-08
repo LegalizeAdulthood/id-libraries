@@ -122,14 +122,16 @@ z=sqr(z) + c;
 |z| <=10
  }
 
-Carr-178{
-z=c=flip(1/pixel):
-z=sqr(z*z) + c;
-z=sqr(z) + c;
-z=sin(z*z) + c;
-z=sqr(z*z) = c,
-|z| <=10
- }
+Carr-178 {; Revised for Fractint v. 20 by George Martin 10/98
+          ; Revised for id-libraries by Legalize Adulthood 30-Dec-2025
+  z=c=flip(1/pixel):
+  z=sqr(z*z) + c
+  z=sqr(z) + c
+  z=sin(z*z) + c
+  z=sqr(z*z) + c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
 Carr-179{
 z=c=1/pixel:

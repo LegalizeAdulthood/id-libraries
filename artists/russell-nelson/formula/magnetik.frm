@@ -1,4 +1,4 @@
-comment = { Try these functions for the formula listed.
+comment { Try these functions for the formula listed.
 
 
 Magnetik   =>  sin/exp/sqr/flip/conj/sqrt

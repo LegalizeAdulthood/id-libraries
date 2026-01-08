@@ -1,5 +1,5 @@
-
-----------------------------------------------------------------------
+; 
+; ----------------------------------------------------------------------
 
 comment     { ; Gerald K. Dobiasovsky
               ; <gerald.dob@aon.at> Sun, 19 May 2002 21:48:12
@@ -31,7 +31,7 @@ comment     { ; Gerald K. Dobiasovsky
 
  }
 
-----------------------------------------------------------------------
+; ----------------------------------------------------------------------
 
 RotOwensJulZiZjk   { ; Gerald K. Dobiasovsky
                      ; <gerald.dob@aon.at> Sun, 19 May 2002 21:48:12
@@ -93,7 +93,7 @@ RotOwensJulZiZjk   { ; Gerald K. Dobiasovsky
  stepnum >= m && p5 >= i
  }
 
--------------------------------------------------------------------
+; -------------------------------------------------------------------
 
 TetraSpheres  { ; Gerald K. Dobiasovsky
                 ; <gerald.dob@aon.at> Wed, 22 May 2002 01:55:42
@@ -175,7 +175,7 @@ TetraSpheres  { ; Gerald K. Dobiasovsky
  isect == 1
  }
 
-----------------------------------------------------------------------
+; ----------------------------------------------------------------------
 
 TetraSpheresBas   { ; Gerald K. Dobiasovsky
                     ; <gerald.dob@aon.at> Wed, 22 May 2002 01:55:42
@@ -299,40 +299,40 @@ TetraSpheresBas   { ; Gerald K. Dobiasovsky
  isect == 1
  }
 
-As of more paramters, I've cobbled together a patch for both
-formulas to move the "camera" around a bit:
+; As of more paramters, I've cobbled together a patch for both
+; formulas to move the "camera" around a bit:
 
 ;---------------------- Parameter usage -----------------------
- ;p1r: camera shift x
- ;p1i: camera shift y
- ;p2r: camera shift z
- ;p2i: rotation around x-axis (will be applied before p3r)
- :p3r: rotation around y-axis
+; p1r: camera shift x
+; p1i: camera shift y
+; p2r: camera shift z
+; p2i: rotation around x-axis (will be applied before p3r)
+; p3r: rotation around y-axis
 ;--------------------------------------------------------------
 
-The patch proper has to replace everything below the coordinate
-constants (sphere centers and unit vector directions) up to the
+; The patch proper has to replace everything below the coordinate
+; constants (sphere centers and unit vector directions) up to the
 
 ;------------- TetraSpheres and TetraSpheresBas ---------------
-
- tmp2 = pi/180
- tmp1 = exp(flip(imag(p2)*tmp2)), tmp2 = exp(flip(real(p3)*tmp2))
- dxy = flip(conj(tmp2))
- ;
- pxy = tmp2*real(pixel) - dxy*imag(tmp1)*imag(pixel)
- pz = imag(pxy) + real(p2)
- pxy = real(pxy) + flip(real(tmp1)*imag(pixel)) + p1
- ;
- vxy = dxy*real(tmp1)
- vz = imag(vxy)
- vxy = real(vxy) + flip(imag(tmp1))
- :
+; 
+;  tmp2 = pi/180
+;  tmp1 = exp(flip(imag(p2)*tmp2)), tmp2 = exp(flip(real(p3)*tmp2))
+;  dxy = flip(conj(tmp2))
+;  ;
+;  pxy = tmp2*real(pixel) - dxy*imag(tmp1)*imag(pixel)
+;  pz = imag(pxy) + real(p2)
+;  pxy = real(pxy) + flip(real(tmp1)*imag(pixel)) + p1
+;  ;
+;  vxy = dxy*real(tmp1)
+;  vz = imag(vxy)
+;  vxy = real(vxy) + flip(imag(tmp1))
+;  :
 
 ;--------------------------------------------------------------
 
-In TetraSpheresBas also replace ":" with "j = 1:"
+; In TetraSpheresBas also replace ":" with "j = 1:"
 
---------------------------------------------------------------------
+; --------------------------------------------------------------------
 
 Inv4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                        ; Sat, 25 May 2002 08:00:52
@@ -376,7 +376,7 @@ Inv4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  inside
  }
 
-------------------------------------------------------------------------
+; ------------------------------------------------------------------------
 
 Alt3Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                        ; Tue, 28 May 2002 03:08:36 (ver. 2)
@@ -417,7 +417,7 @@ Alt3Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  inside
  }
 
--------------------------------------------------------------------------
+; -------------------------------------------------------------------------
 
 Alt4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                        ; Tue, 28 May 2002 03:08:36 (ver. 2)
@@ -466,7 +466,7 @@ Alt4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  inside
  }
 
--------------------------------------------------------------------------
+; -------------------------------------------------------------------------
 
 Mod4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                        ; Tue, 28 May 2002 03:08:36 (ver. 2)
@@ -516,7 +516,7 @@ Mod4Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  inside
  }
 
------------------------------------------------------------------------
+; -----------------------------------------------------------------------
 
 Mod5Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                        ; Tue, 28 May 2002 03:08:36 (ver. 2)
@@ -574,7 +574,7 @@ Mod5Klein_Group  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  inside
  }
 
-------------------------------------------------------------------------
+; ------------------------------------------------------------------------
 
 Rot3d_D3_Jul     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
                    ; Thu, 23 Jan 2003 02:56:29 (ver. 2)
@@ -692,5 +692,5 @@ Rot3d_D3_Man     { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
  tiefnum >= m && p5 >= i
  }
 
-------------------------------------------------------------------------
+; ------------------------------------------------------------------------
 

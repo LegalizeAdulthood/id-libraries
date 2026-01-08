@@ -12,7 +12,8 @@ comment {
 ;   Authors:   
 ;
 ;   Chuck Ebbert - CIS: 76306,1226
-;   and Jon Horner - 100112,1700 - FRAC'Cetera. }
+;   and Jon Horner - 100112,1700 - FRAC'Cetera.
+}
 
 
 Liar1  {; by Chuck Ebbert - 76306,1226

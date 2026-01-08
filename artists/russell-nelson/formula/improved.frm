@@ -664,7 +664,7 @@ Richard3 (XAXIS) {; Jm Richard-Collard
    ; try p1 = 0, p2 = 50, fn1 = sinh
    z   = pixel + p1:
    sh  = fn1(z),
-    z   -b1/(sh*sh))+pixel,
+   z   = (1/(sh*sh))+pixel,
          |z| <= p2
   }
 

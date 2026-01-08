@@ -1,4 +1,4 @@
-Readme {
+Comment {
 ; by Chris Behrens, (c)opyright 1994.  xkbr53c@prodigy.com
 ; The only caution is that Rabadon sometimes won't work- I have 
 ; occasionally gotten a division by zero error. Have fun.

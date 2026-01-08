@@ -199,14 +199,16 @@ bfly(XYAXIS)  {
       zp2 = zp1
       zp1 = temp, |zp1| <= 4 }
 
-bfly1(XAXIS)  {
-; A minor variation on exp1 [init to pixel], gives another
-; butterfly symmetry.
-      z = zp = pixel:
-      temp = z
-      z = -exp(z) - zp
-      z(-z) - zp
-      zp = temp,|zp| <= 4 }
+bfly1 (XAXIS) {
+   ; A minor variation on exp1 [init to pixel], gives another
+   ; butterfly symmetry.
+  z = zp = pixel:
+  temp = z
+  z = -exp(z) - zp
+  zp = temp
+  |zp| <= 4
+  ;SOURCE: noel.frm
+}
 
 bfly3(XAXIS)  {
 ; How about a conjugation of a cosine function
@@ -555,7 +557,7 @@ htexp3 {
 quilt(XAXIS) {
 ; The combination of a typing error and a bug in fractints parser
 ; makes weird quilt like patterns, I hope they don't fix it. I like it.
-     z = = zp1 = pixel, zp2 = (0,0):
+      z = zp1 = pixel, zp2 = (0,0):
       temp = z
       z = zp2*zp2  - zp1
       zp2 = zp1

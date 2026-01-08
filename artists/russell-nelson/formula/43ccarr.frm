@@ -323,21 +323,23 @@ iter=iter+1
 (conj(|z|))<=bailout
 }
 
-Carr3214(YAXIS){;Modified Sylvie Gallet frm.1996
-;passes=1 needs to be used with this PHC formula.
-pixel=-abs(real(pixel))+flip(imag(pixel)),
-b5=((conj(pixel^5)*(abs(pixel)))/(1/pixel))-conj(0.10/pixel)-((flip(0.00510/pixel))^4)-0.3
-b4=conj(b5-flip0.1/pixel)
-c=whitesq*b4-(whitesq==0)*b4
-z=whitesq*b5-(whitesq==0)*sqr(b5)
-c1=1.5*z^1.2,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
-l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=(3*z*z-1.5)/(2+c)
-iter=iter+1
-(conj(|z|))<=bailout
+Carr3214 (YAXIS) {; Modified Sylvie Gallet frm.1996
+                  ; passes=1 needs to be used with this PHC formula.
+                  ; Some optimizations made by G. Martin
+                  ; Added variable "newpixel". G. Martin 6/13/99
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  b5=((conj(newpixel^5)*(abs(newpixel)))/(1/newpixel))-conj(0.10/newpixel)-((flip(0.00510/newpixel))^4)-0.3
+  b4=conj(b5-flip(0.1/newpixel))
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*sqr(b5)
+  c1=1.5*z^1.2, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=(3*z*z-1.5)/(2+c)
+  iter=iter+1
+  |z|<=bailout
 }
 
 Carr3215(YAXIS){;Modified Sylvie Gallet frm.

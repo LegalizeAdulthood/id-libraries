@@ -75,17 +75,18 @@ j=fn4(a*(z/c+d))
 z=(z*(h+j))+whitesq
 |z|<=4
 }
-w2{
-z=pixel,b=(p1*fn2(z)/p2),k=real(p1)*b,o=imag(p1):
-z=fn1(real(z))+flip(imag(z))
-if(b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
-z=(z+p3)*(1/fn3(z))+whitesq
-endif
-if(b+(fn1(z+p1))<imag(p1*(b-k)))
-z=(z^(p2)+whitesq)+fn2(b/(k+o))
-endif
-|z|<real(p1) && |z|<imag(p1)
+w2 {
+  z=pixel, b=(p1*fn2(z)/p2), k=real(p1)*b, o=imag(p1):
+  z=fn1(real(z))+flip(imag(z))
+  IF ((b+(fn1(z+p1))/imag(p1))<k+(z+(p2)))
+    z=(z+p3)*(1/fn3(z))+whitesq
+  ENDIF
+  IF (b+(fn1(z+p1))<imag(p1*(b-k)))
+    z=(z^(p2)+whitesq)+fn2(b/(k+o))
+  ENDIF
+  |z|<real(p1) && |z|<imag(p1)
 }
+
 w1b{
 z=pixel,a=real(p1),b=imag(p1):
 h=z^a+((-b)*z-1)
@@ -112,17 +113,17 @@ z=fn1(z*imag(p2))+(fn3(z/k)*o)
 endif
 |z|<4
 }
-sra4{
-z=pixel,b=fn2(z),k=real(p1)*b,o=imag(p1):
-z1=fn4(fn4(z))+(b*o)
-z=fn1((z1))+flip(imag(z)),b=fn3(z1)+whitesq
-if(b+(fn1(z+p1))/imag(p1))<k+(z+(p2))
-z=(z1+p3)*(1/fn3(z))+whitesq
-endif
-if(b+(fn1(z+p1))<imag(p1*(b-k)))
-z=(z1^(p2)+whitesq)+fn2(b/(k+o))
-endif
-|z|<4
+sra4 {
+  z=pixel, b=fn2(z), k=real(p1)*b, o=imag(p1):
+  z1=fn4(fn4(z))+(b*o)
+  z=fn1((z1))+flip(imag(z)), b=fn3(z1)+whitesq
+  IF ((b+(fn1(z+p1))/imag(p1))<k+(z+(p2)))
+    z=(z1+p3)*(1/fn3(z))+whitesq
+  ENDIF
+  IF (b+(fn1(z+p1))<imag(p1*(b-k)))
+    z=(z1^(p2)+whitesq)+fn2(b/(k+o))
+  ENDIF
+  |z|<4
 }
 pn8z{
 z=pixel:

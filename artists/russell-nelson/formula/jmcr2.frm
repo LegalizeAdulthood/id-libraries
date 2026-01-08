@@ -340,17 +340,20 @@ z2=2*z*expz2-exp(z)-c;
 z=z-(z1/z2) ,
 0.001<=|z1| }
 
-SinE2Z(XAXIS) { ; Jm Collard-Richard
-z=pixel:
-expz2=exp(z*z);
-s=sin(z);
-c=cos(z);
-s2=sin(z*z);
-c2=cos(z*z);
-z1=expz2-exp(z)-s2+s;
-z2=2*z*expz2-exp(z)-z*c2*2+c:
-z=z-(z1/z2) ,
-0.001<=|z1| }
+SinE2Z (XAXIS) {; Jm Collard-Richard
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel:
+  expz2=exp(z*z)
+  s=sin(z)
+  c=cos(z)
+  s2=sin(z*z)
+  c2=cos(z*z)
+  z1=expz2-exp(z)-s2+s
+  z2=2*z*expz2-exp(z)-z*c2*2+c
+  z=z-(z1/z2)
+  0.001<=|z1|
+  ;SOURCE: jmcr2.frm
+}
 
 SS2Z(XAXIS) { ; Jm Collard-Richard
 z=pixel:
@@ -807,5 +810,5 @@ z=z-(z1/z2),
 0.001<=|z1| }
 
 
-                              jmc@math.ethz.ch
+;                              jmc@math.ethz.ch
 

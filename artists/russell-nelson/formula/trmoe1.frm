@@ -1,9 +1,10 @@
 
-trmoe-1 {
-        z=pixel/2 c=cos(pixel/2):
-        z=z*z+c
-        |z|<=4
-     }
+trmoe-1 {; Revised for Fractint v20 by G. Martin
+  z=pixel/2, c=cos(pixel/2):
+  z=z*z+c
+  |z|<=4
+  ;SOURCE: trmoe1.frm
+}
 trmoe-2 {
      z=fn1(cos(pixel/2)), c=fn2(cos(pixel)):
      z=z*z+c/p1

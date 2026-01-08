@@ -1,125 +1,126 @@
-01-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c;
-z=sqr(z) + c,
-|z| <=10
+01-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c
+  z=sqr(z) + c
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
-01A-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c*c;
-z=sqr(z) + c*c,
-|z| <=10
+
+01A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c*c
+  z=sqr(z) + c*c
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
-02-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z*z) + c;
-z=sin(z*z) + c,
-|z| <=10
+02-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z*z) + c
+  z=sin(z*z) + c
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-02A-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z*z) + c*c;
-z=sin(z*z) + c*c,
-|z| <=10
+02A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z*z) + c*c
+  z=sin(z*z) + c*c
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
-03-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sin(z) + c-0.14;
-z=sin(z) + c-0.14,
-|z| <=10
+03-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sin(z) + c-0.14
+  z=sin(z) + c-0.14
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-03A-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sin(z) + c*c-0.14;
-z=sin(z) + c*c-0.14,
-|z| <=10
+03A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sin(z) + c*c-0.14
+  z=sin(z) + c*c-0.14
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
-04-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
+04-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-04A-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c*c-0.14;
-z=sqr(z) + c*c-0.14,
-|z| <=10
+04A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c*c-0.14
+  z=sqr(z) + c*c-0.14
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
-05-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
+05-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-05A-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=sqr(z) + c*c-0.14;
-z=sqr(z) + c*c-0.14,
-|z| <=10
+05A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=sqr(z) + c*c-0.14
+  z=sqr(z) + c*c-0.14
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
-06-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=cosxx(z) + c-0.14;
-z=cosxx(z) + c-0.14,
-|z| <=10
+06-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=cosxx(z) + c-0.14
+  z=cosxx(z) + c-0.14
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-06A-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=cosxx(z) + c*c-0.14;
-z=cosxx(z) + c*c-0.14,
-|z| <=10
+06A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=cosxx(z) + c*c-0.14
+  z=cosxx(z) + c*c-0.14
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
-07-Carr{
-c=z=1/pixel + (z=c=flip(z) + 0.33/pixel):
-z=cosxx(z) + c-0.14;
-z=tanh(z) + c-0.14,
-|z| <=10
+07-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + flip(z) + 0.33/pixel:
+  z=cosxx(z) + c-0.14
+  z=tanh(z) + c-0.14
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-07A-Carr{
-c=z=1/pixel + (z=c=flip(z) + 0.33/pixel):
-z=cosxx(z) + c*c-0.14;
-z=tanh(z) + c*c-0.14,
-|z| <=10
+07A-Carr { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + flip(z) + 0.33/pixel:
+  z=cosxx(z) + c*c-0.14
+  z=tanh(z) + c*c-0.14
+  |z| <=10
   ;SOURCE: 01carr.frm
- }
+}
 
 
 08-Carr{
@@ -252,7 +253,7 @@ z=(sqr(z) + 0.1) + c*c-1,
 
 
 
-Carr-01 {; 
+Carr-01 { ; 
   
   z = Pixel, z = cosxx(z):
    z = z + Pixel
@@ -302,13 +303,12 @@ z=sqr(z) + 0.33;
  }
 
 
-Carr-02E {Try using Distance Estimator function on this formula
+Carr-02E { ; Try using Distance Estimator function on this formula
 c=z=1/pixel:
 z=sqr(z) + c;
 z1=sqr(z) + 0.33,
 |z| <=4
-  ;SOURCE: carr.frm
- }
+}
 
 
 Carr-03 {
@@ -341,25 +341,25 @@ c = z = 1 / pixel
   }
 
 
-Carr-06 {was OK-03 and was modified
+Carr-06 { ; was OK-03 and was modified
 z = c = pixel:
 z = cosxx(z)/c;
 z = sin(z),
 |z| <= (5 + p1)
+}
+
+
+Carr-07 { ; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
   ;SOURCE: carr.frm
-  }
+}
 
 
-Carr-07 {was OK-02 and was modified
-z = c = 1 / pixel, k = 1 + p1:
-z = (c^z) + c:
-z = cotan(z) * k,
-|z| <= (5 + p2)
-  ;SOURCE: carr.frm
-  }
-
-
-Carr-08 {was OK-01 and was modified
+Carr-08 { ; was OK-01 and was modified
 z = 0, c = 1 / pixel:
 z = (c^z) + c;
 z = sqr(z),
@@ -368,7 +368,7 @@ z = sqr(z),
   }
 
 
-Carr-09 {was OK-04 and was modified
+Carr-09 { ; was OK-04 and was modified
 z = 0, c = cosxx(pixel):
 z = sqr(z) + c,
 |z| <= (5 + p1)
@@ -402,18 +402,17 @@ z=sqr(z) + c,
   }
 
 
-Carr-13 {
-c = z = cosxx(pixel):
-z = cosxx(z) + 2;
-zx = real(p2) +1, zy = imag(z);
-c = z = 1 / sqr(pixel):
-z = 1 / cosxx(z) +c;
-|z| <= 4
+Carr-13 { ; Edited for Fractint v. 20 by George Martin, 10/98
+  c = z = cosxx(pixel):
+  z = cosxx(z) + 2
+  c = z = 1 / sqr(pixel)
+  z = 1 / cosxx(z) +c
+  |z| <= 4
   ;SOURCE: carr.frm
-  }
+}
 
 
-Carr-14 {modified fnzp fnpix
+Carr-14 { ; modified fnzp fnpix
 z = 1 / tan(1 / pixel) +p1,
 c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
 z = fn1(z) * fn2(z),
@@ -422,13 +421,14 @@ z = fn1(z) * fn2(z),
  }
 
 
-Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
-  z = log(pixel) + 4c, z = cosxx(z): 
+Carr-15(xaxis) { ; Mark Peterson modified(Zoom all the way out & look)
+  z = log(pixel) + 4*c, z = cosxx(z):
  z = z + cosxx(pixel);
  z = sqr(z)
-     Lastsqr <=4 
-  ;SOURCE: carr.frm
-  }
+     Lastsqr <=4
+  ;SOURCE: carr-5.frm
+    ;SOURCE: to-bob-6.frm
+}
 
 
 Carr-16 {
@@ -440,7 +440,7 @@ z = (cosxx(sqr(z-1)) ) + (sin(pixel));
   }
 
 
-Carr-17(xaxis) {; Mark Peterson modified by Bob Carr
+Carr-17(xaxis) { ; Mark Peterson modified by Bob Carr
 c = z = 1 / pixel:
 z = sqr(z) +c;
 z2 = sqr(z) +c,
@@ -501,7 +501,7 @@ z = sin(cosxx(1 / (z)) )
    }
 
 
-Carr-24 {InvRadius-Mandel formula manipulated
+Carr-24 { ; InvRadius-Mandel formula manipulated
 c=z=1/pixel:
 z=sqr(z*z) - c;
 |z| <=4
@@ -509,7 +509,7 @@ z=sqr(z*z) - c;
  }
 
 
-Carr-25 { Carr-24 Modified
+Carr-25 { ; Carr-24 Modified
 c=z=1/pixel:
 z=sqr(z) + (c-1);
 |z| <= 4
@@ -517,15 +517,15 @@ z=sqr(z) + (c-1);
   }
 
 
-Carr-27 { Carr-24 Modified
-c=z=1/pixel:
-z=sqr(z) + (c-1 1/4);
- |z| <=10
+Carr-27 {; Carr-24 Modified
+  c=z=1/pixel:
+  z=sqr(z) + (c-1)*(1/4)
+  |z| <=10
   ;SOURCE: carr.frm
- }
+}
 
 
-Carr-28 {Carr-24 Modified
+Carr-28 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z) + c;
 |z| <= 4
@@ -533,7 +533,7 @@ z=(z*z*z) + c;
  }
 
 
-Carr-29 {Carr-24 Modified
+Carr-29 { ; Carr-24 Modified
 c=z=1/pixel:
 z=1-(z*z*z) + c;
 |z| <= 4
@@ -541,7 +541,7 @@ z=1-(z*z*z) + c;
  }
 
 
-Carr-30 {Carr-24 Modified
+Carr-30 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z) +c;
 |Z| <= 4
@@ -549,7 +549,7 @@ z=(z*z*z*z*z) +c;
  }
 
 
-Carr-31 {Carr-24 Modified       
+Carr-31 { ; Carr-24 Modified       
 c=z=1/pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
@@ -557,7 +557,7 @@ z=(z*z*z*z*z*z) + c;
   }
 
 
-Carr-32 {Carr-24 Modified
+Carr-32 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
@@ -565,7 +565,7 @@ z=(z*z*z*z*z*z) + c;
   }
 
 
-Carr-33 {Carr-24 Modified
+Carr-33 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8
@@ -573,7 +573,7 @@ z=(z*z*z*z*z*z*z) + c;
   }
 
 
-Carr-34 {Carr-24 Modified
+Carr-34 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8
@@ -581,7 +581,7 @@ z=(z*z*z*z*z*z*z) + c;
   }
 
 
-Carr-35 {Carr-24 Modified
+Carr-35 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z*z*z*z*z) +c;
  |z| <= 8
@@ -589,7 +589,7 @@ z=(z*z*z*z*z*z*z*z*z) +c;
   }
 
 
-Carr-36 { Modified Julia formula from BUILTIN.FRM file
+Carr-36 { ; Modified Julia formula from BUILTIN.FRM file
 z=1/cosxx(pixel),
 c=((0.3,0.6) ^ (|p1| <=0) + p1),
 t=4*(real(p2)<=0 + real(p2) ^ (0<p2)):
@@ -599,7 +599,7 @@ z=sqr(z*z*z*z) + c,
  }
 
 
-Carr-37 { Modified Julia formula from BUILTIN.FRM file
+Carr-37 { ; Modified Julia formula from BUILTIN.FRM file
 z=tan(1/pixel),
 c=((0.4,0.8) ^ (|p1|<=0)) + p1,
 t=(4^(real(p2)<=0) + real(p2) ^ (0<p2)):
@@ -609,7 +609,7 @@ z=sqr(z*z*z*z) + c,
  }
 
 
-Carr-38 {Modified Julia formula from BUILTIN.FRM file
+Carr-38 { ; Modified Julia formula from BUILTIN.FRM file
 c=cosxx(1/pixel),
 c=((0.4,0.8) ^ (|p1|<=0)) + p1,
 t=(4^(real(p2)<=0) + real(p2) ^ (0<p2)):
@@ -619,7 +619,7 @@ z= sqr(z*z*z*z*z*z) + c,
  }
 
 
-Carr-39 {Karl Geigl formula Modified
+Carr-39 { ; Karl Geigl formula Modified
 z=c=pixel:
 z=((z*z*z*z+1/4)*2/z*(z*z-1))*c;
 |z| <=4
@@ -627,7 +627,7 @@ z=((z*z*z*z+1/4)*2/z*(z*z-1))*c;
  }
 
 
-Carr-40 {Karl Geigl formula Modified
+Carr-40 { ; Karl Geigl formula Modified
 z=c=1/pixel:
 z=((z*z*z*z+1/4)*2/z*(z*z-1))*tan(c);
 |z| <= 4
@@ -635,7 +635,7 @@ z=((z*z*z*z+1/4)*2/z*(z*z-1))*tan(c);
  }
 
 
-Carr-41 {Mark Peterson frm Modified
+Carr-41 { ; Mark Peterson frm Modified
 z=pixel, c=cosh(1/pixel):
 z=sqr(z*z*z) + c,
 |z| <= 4
@@ -643,7 +643,7 @@ z=sqr(z*z*z) + c,
   }
 
 
-Carr-42 {Mark Petersom frm Modified
+Carr-42 { ; Mark Petersom frm Modified
 z=pixel, c=cosh(1/pixel):
 z=cosxx(z*z*z) + c,
 |z| <= 4
@@ -651,7 +651,7 @@ z=cosxx(z*z*z) + c,
   }
 
 
-Carr-43 {Kevin Lee Modified
+Carr-43 { ; Kevin Lee Modified
 z=cosxx(pixel), c=pixel-tan(z*z*z):
 c=pixel+ c*c/z, z=c-z*sqr(pixel),
 |z| <= 4
@@ -659,16 +659,18 @@ c=pixel+ c*c/z, z=c-z*sqr(pixel),
   }
 
 
-Carr-44 {Drcha.frm-test-1 Modified
+Carr-44 { ; Drcha.frm-test-1 Modified
 c=pixel
-z=((sqrt 5 +1)/2):
-z=(z*z*z*z*z*z) + pixel*(sqrt 5 + 1)/2 +c
+z=((sqrt(5) +1)/2):
+z=(z*z*z*z*z*z) + pixel*(sqrt(5) + 1)/2 +c
 |z| <= 4;
   ;SOURCE: carr-1.frm
-  }
+  ;SOURCE: carr1499.frm
+    ;SOURCE: to-bob-6.frm
+}
 
 
-Carr-45 {Mark Peterson frm Modified
+Carr-45 { ; Mark Peterson frm Modified
 c=z=1/pixel:
 z=sqr(z) + sqr(c);
 |z| <= 4
@@ -676,15 +678,16 @@ z=sqr(z) + sqr(c);
  }
 
 
-Carr-46 {Mark Peterson frm Modified
-c=z=1/pixel:
-z=sqr(z*z*z*z) + (sqrt 5 - 1)/2 + c:
-|z| <= 4
+Carr-46 {; Mark Peterson frm Modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel:
+  z=sqr(z*z*z*z) - 1/2 + c
+  |z| <= 4
   ;SOURCE: carr-1.frm
-  }
+}
 
 
-Carr-47 {Mark Peterson frm Modified
+Carr-47 { ; Mark Peterson frm Modified
 c=z=(1/pixel)/2:
 z=sqr(z*z) + c;
 |z| <= 4
@@ -692,7 +695,7 @@ z=sqr(z*z) + c;
   }
 
 
-Carr-48 {Mark Peterson frm Modified
+Carr-48 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=sqr(z) + c;
 |z| <= 4
@@ -700,7 +703,7 @@ z=sqr(z) + c;
  }
 
 
-Carr-49 {Mark Peterson frm Modified
+Carr-49 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=sqr(z*z*z) + c;
 |z| <= 4
@@ -708,7 +711,7 @@ z=sqr(z*z*z) + c;
   }
 
 
-Carr-50 {Mark Peterson frm Modified
+Carr-50 { ; Mark Peterson frm Modified
 c=z=1/cosxx(-pixel):
 z=sqr(z) + c;
 |z| <= 4
@@ -716,7 +719,7 @@ z=sqr(z) + c;
  }
 
 
-Carr-51 {Mark Peterson frm Modified
+Carr-51 { ; Mark Peterson frm Modified
 c=z=1/tan(-pixel):
 z=sqr(z*z*z) + c;
 |z| <= 4
@@ -724,7 +727,7 @@ z=sqr(z*z*z) + c;
  }
 
 
-Carr-52 {Mark Peterson frm Modified
+Carr-52 { ; Mark Peterson frm Modified
 c=z=1/tan(-pixel):
 z=sqr(z*z*z) + 0.75;
 |z| <= 4
@@ -732,7 +735,7 @@ z=sqr(z*z*z) + 0.75;
   }
 
 
-Carr-53 {Mark Peterson frm Modified
+Carr-53 { ; Mark Peterson frm Modified
 c=z=1/conj(-pixel):
 z=(sqr(z*z*z))/2 + 0.75;
 |z| <= 4
@@ -740,7 +743,7 @@ z=(sqr(z*z*z))/2 + 0.75;
  }
 
 
-Carr-54 {Mark Peterson frm Modified
+Carr-54 { ; Mark Peterson frm Modified
 c=z=1/-pixel:
 z=(sqr(z*z*z))/2 + 0.33;
 |z| <= 4
@@ -895,7 +898,7 @@ z=sqr(z) + 0.33;
  }
 
 
-Carr-67 {use Distance Estimator funtion on this formula
+Carr-67 { ; use Distance Estimator funtion on this formula
 c=z=pixel:
 z=sqr(z) + c;
 z1=sqr(z) + 0.33,
@@ -1488,13 +1491,13 @@ z=(fn1((z)*1/z)*fn2(z)*1/z)-(0.12*c),
  }
 
 
-Carr-127 {
-z=c=1/pixel:
-z=(fn1((z)*1/z)*fn2(z)*1/z)-(0.12*c);
-z=sin(z*z) = c,
-|z| <=t
+Carr-127 {; Revised for Fractint v. 20 by George Martin 10/98
+  z=c=1/pixel:
+  z=(fn1((z)*1/z)*fn2(z)*1/z)-(0.12*c)
+  z=sin(z*z) + c
+  |z| <=t
   ;SOURCE: carr-2.frm
- }
+}
 
 
 Carr-128 {
@@ -1527,14 +1530,15 @@ z=(sqr(z) + c),
  }
 
 
-Carr-131 {
-z=c=1/pixel:
-z=(sqr(1/cosxx(1/z))) + (sin(z*z*z));
-z=(z+cosxx(pixel));
-z=(sqr(z) = c),
-|z| <=10
+Carr-131 {; Edited for Fractint v. 20 by George Martin, 10/98
+          ; Replaced statement resolved to z=c, making formula trivial
+  z=c=1/pixel:
+  z=(sqr(1/cosxx(1/z))) + (sin(z*z*z))
+  z=(z+cosxx(pixel))
+  z = sqr(z) + c
+  |z| <=10
   ;SOURCE: carr-2.frm
- }
+}
 
 
 Carr-132 {
@@ -1566,14 +1570,15 @@ z=(sqr(z) + c),
  }
 
 
-Carr-135 {
-z=c=1/pixel, z=cosxx(z):
-z=sqr(z^z);
-z=(sin((z)*z)*sin(z)*z)-(0.42*c);
-z=(sqr(z) = c),
-|z| <=10
+Carr-135 {; Edited for Fractint v. 20 by George Martin, 10/98
+          ; Replaced statement resolved to z=c, making formula trivial
+  z=c=1/pixel, z=cosxx(z):
+  z=sqr(z^z)
+  z=(sin((z)*z)*sin(z)*z)-(0.42*c)
+  z = sqr(z) + c
+  |z| <=10
   ;SOURCE: carr-2.frm
- }
+}
 
 
 Carr-136 {
@@ -1685,30 +1690,33 @@ z=sin(flip(z*z*z)) + c,
  }
 
 
-Carr-151{;Dr. Chaosbrot 1 Modified
+Carr-151 { ; Dr. Chaosbrot 1 Modified
 z=c=pixel:
-z=sqr(z*z) + (((sqrt 5+1)/2)+c),
+z=sqr(z*z) + (((sqrt(5)+1)/2)+c),
 |z| <=4
-  ;SOURCE: carr.frm
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 
 Carr-152{
 z=c=1/pixel:
-z=cosxx(flip(z*z/pixel)) + (((sqrt 5+1)/2) + c);
+z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c);
 z=sqr(flip(z))+c,
 |z| <=4
-  ;SOURCE: carr.frm
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 
 Carr-153{
 z=c=1/pixel:
-z=tanh(z*z/pixel)+(((sqrt 5+1)/2)+c);
+z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c);
 z=sqr(flip(z))+c,
 |z| <=4
-  ;SOURCE: carr.frm
- }
+  ;SOURCE: carr-4.frm
+   ;SOURCE: to-bob-6.frm
+}
 
 
 Carr-154{
@@ -1940,7 +1948,7 @@ z=c=flip(1/pixel):
 z=sqr(z*z) + c;
 z=sqr(z) + c;
 z=sin(z*z) + c;
-z=sqr(z*z) = c,
+z=sqr(z*z) + c,
 |z| <=10
   ;SOURCE: carr.frm
  }
@@ -2302,7 +2310,7 @@ z=(z^2)*(z^2)+sin(z-0.3)/cos(1/pixel),
 }
 
 
-Carr-220{;100's of diff. Inv. Mandels
+Carr-220 { ; 100's of diff. Inv. Mandels
 z=c=1/pixel:
 z=(z^2)*(z^2)+sin(z-0.3)/cos(sqr(pixel)),
 |z| <=10
@@ -2366,7 +2374,7 @@ z=(z^2)*(z^2)*(z^2)+sin(z+0.3)/cp2,
 }
 
 
-Carr-228{;Note personalization of formula
+Carr-228 { ; Note personalization of formula
 z=c=1/pixel,Bob2=log((pixel)/c*c+0.807),Bob3=1/sin(z+0.3):
 z=(z^2)*(z^2)*(z^2)+Bob3/Bob2,
 |z| <=10
@@ -2374,7 +2382,7 @@ z=(z^2)*(z^2)*(z^2)+Bob3/Bob2,
 }
 
 
-Carr-229{;Note personalization
+Carr-229 { ; Note personalization
 z=c=1/pixel,Bob2=log((pixel)/c*c+0.807),Bob3=1/cosxx(z+0.3):
 z=(z^2)*(z^2)*(z^2)+Bob3/Bob2;
 z=sin(z*z) + c,
@@ -2539,14 +2547,14 @@ z=1/z*1/z+log(c),
 }
 
 
-Carr-246{
-z=c=1/pixel:
-Bob2=conj((z^3.5)*(z^3.5)*(z^3.5)-0.4)+cosxx(sqr(z-0.35)),
-Bob3=conj(c*1/pixel-0.124):
-z=(Bob2/Bob3)/Bob3;
-z=sin((z*z)*(z*z))-flip(c-0.224);
-z=sqr(z*z)+flip(c-0.324),
-|z| <=10
+Carr-246 {
+  z=c=1/pixel
+  Bob2=conj((z^3.5)*(z^3.5)*(z^3.5)-0.4)+cosxx(sqr(z-0.35))
+  Bob3=conj(c*1/pixel-0.124)
+  z=(Bob2/Bob3)/Bob3 :
+  z=sin((z*z)*(z*z))-flip(c-0.224)
+  z=sqr(z*z)+flip(c-0.324)
+  |z| <=10
   ;SOURCE: carr-9.frm
 }
 
@@ -2625,7 +2633,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-255{;Modified Liar4
+Carr-255 { ; Modified Liar4
 c=z=1/pixel,p=p1+1:
 z=1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)));
 z=z*z+(c-0.124),
@@ -2634,7 +2642,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-256{;Modified Liar4
+Carr-256 { ; Modified Liar4
 c=0.5/pixel,z=1.5/pixel,p=p1+1:
 z=1.25-abs(imag(z)*p-real(z))+flip(1.35-abs(1.35-real(z)-imag(z)));
 z=z*z+(c-0.124),
@@ -2643,7 +2651,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-257{;Modified Liar4
+Carr-257 { ; Modified Liar4
 c=1/pixel,z=pixel,p=p1+1:
 z=z*z+(c+0.124);
 z=1-abs(imag(z)*p-real(z))+flip(1.35-abs(1.35-real(z)-imag(z))),
@@ -2652,7 +2660,7 @@ z=1-abs(imag(z)*p-real(z))+flip(1.35-abs(1.35-real(z)-imag(z))),
 }
 
 
-Carr-258{;Modified Liar4
+Carr-258 { ; Modified Liar4
 c=1/pixel,z=pixel,p=p1+1.3:
 z=1-abs(real(z)*p-imag(z))+1/flip(1.75-abs(1.35-real(z)-imag(z)));
 z=z*z+(c-0.524),
@@ -2661,7 +2669,7 @@ z=z*z+(c-0.524),
 }
 
 
-Carr-259{;Modified Liar4
+Carr-259 { ; Modified Liar4
 c=pixel,z-1/pixel,p=p1+1:
 z=1-abs(real(z)*p-imag(z))+1/conj(flip(1.35-abs(1.35-real(z)-imag(z))));
 z=z*z+(c-0.124),
@@ -2670,7 +2678,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-260{;Modified Liar4
+Carr-260 { ; Modified Liar4
 c=pixel,z=1/pixel,p=p1+pixel:
 z=1-abs(real(z)*p-imag(z))+1/conj(1.35-abs(1.35-real(z)-imag(z)));
 z=z*z+(c-0.124),
@@ -2679,7 +2687,7 @@ z=z*z+(c-0.124),
 } 
 
 
-Carr-261{;Modified Liar3
+Carr-261 { ; Modified Liar3
 z=pixel,c=1/pixel,x=cosxx(z*z)+c:
 z=flip(1.35-abs(1.35-real(x)-imag(z)))+real(x),
 |z| <=10
@@ -2687,7 +2695,7 @@ z=flip(1.35-abs(1.35-real(x)-imag(z)))+real(x),
 }
 
 
-Carr-262{;Modified SJMAND05
+Carr-262 { ; Modified SJMAND05
 z=real(1/pixel)+flip(imag(1/pixel))*p1,
 c=p2+p1*real(1/pixel)+flip(imag(1/pixel)):
 z=fn1(z)*c,
@@ -2696,7 +2704,7 @@ z=fn1(z)*c,
 }
 
 
-Carr-263{;Modified SJMAND05
+Carr-263 { ; Modified SJMAND05
 z=real(1/pixel)+flip(imag(1/pixel))*p1,
 c=p2+p1*real(1/pixel)+conj(imag(1/pixel)):
 z=fn1(z)*c,
@@ -2705,7 +2713,7 @@ z=fn1(z)*c,
 }
 
 
-Carr-264{;Modified SJMAND05
+Carr-264 { ; Modified SJMAND05
 z=real(1/pixel)+conj(imag(1/pixel))*p1,
 c=p2+p1*real(1/pixel)+flip(imag(1/pixel)):
 z=fn1(z)*c,
@@ -2714,7 +2722,7 @@ z=fn1(z)*c,
 }
 
 
-Carr-265{;Modified SJMAND05
+Carr-265 { ; Modified SJMAND05
 z=1/conj(real(1/pixel)+flip(imag(1/pixel))*p1),
 c=1/conj(p2+p1*real(1/pixel)+flip(imag(1/pixel))):
 z=1/conj(z*z)*(c-0.124),
@@ -2723,7 +2731,7 @@ z=1/conj(z*z)*(c-0.124),
 }
 
 
-Carr-266{;Modified SJMAND05
+Carr-266 { ; Modified SJMAND05
 z=1/conj(real(1/pixel)+1/flip(imag(1/pixel))*p1),
 c=1/conj(p2+p1*real(1/pixel)+1/flip(imag(1/pixel))):
 z=1/conj(z*z)*(c-0.124),
@@ -2732,7 +2740,7 @@ z=1/conj(z*z)*(c-0.124),
 }
 
 
-Carr-267{;Modified SJMAND05
+Carr-267 { ; Modified SJMAND05
 z=1/conj(real(1/pixel)+conj(1/flip(imag(1/pixel))*p1)),
 c=1/conj(p2+p1*real(1/pixel)+conj(1/flip(imag(1/pixel)))):
 z=1/conj(z*z)*(c-0.124),
@@ -2741,7 +2749,7 @@ z=1/conj(z*z)*(c-0.124),
 }
 
 
-Carr-268{;InvSherrybrot
+Carr-268 { ; InvSherrybrot
 c=0.33/pixel,z=1.67/pixel:
 c=sqr(1/pixel)/z;
 c=z+c;
@@ -2778,7 +2786,7 @@ z=z*1/(c-0.124),
 }
 
 
-Carr-272{;Star-Mandelbrot
+Carr-272 { ; Star-Mandelbrot
 z=1/pixel,c=1/sin(z):
 z=((z*z*z)+(flip(c-0.124)));
 z=z*1/(c-0.124),
@@ -2814,7 +2822,7 @@ z=z*1/(c-0.124),
 }
 
 
-Carr-276{;Great for CARR'S CRYSTALS. Use B-Trace
+Carr-276 { ; Great for CARR'S CRYSTALS. Use B-Trace
 z=1/pixel,c=1/cosxx(z*z):
 z=((z*z*z)+flip(c*c-0.124));
 z=z*1/(c-0.124),
@@ -2945,7 +2953,7 @@ z=z*z/(c-0.124)/conj(pixel),
 }
 
 
-Carr-291{;SJMAND09 Modified
+Carr-291 { ; SJMAND09 Modified
 z=real(pixel)+flip(imag(p2)),
 c=real(p2)+flip(imag(pixel)):
 z=z*z+(c-0.124),
@@ -2973,7 +2981,7 @@ z=(z*z)+(c-0.524),
 }
 
 
-Carr-294{;Julia-Mandel Hybrid
+Carr-294 { ; Julia-Mandel Hybrid
 z=1/pixel,c=1/pixel:
 z=z*z+(-0.6882,-0.1729);
 z=z*z+c,
@@ -2982,7 +2990,7 @@ z=z*z+c,
 }
 
 
-Carr-295{;Julia_Mandel Hybrid
+Carr-295 { ; Julia_Mandel Hybrid
 z=1/pixel,c=1/pixel:
 z=z*z+c;
 z=z*z+(0.3,0.6);
@@ -3018,7 +3026,7 @@ z=(z*z+flip(c))/(tanh(z*z)+flip(c)),
 }
 
 
-Carr-299{;Works with Distance Estimator
+Carr-299 { ; Works with Distance Estimator
 c=log(pixel),z=1/pixel:
 z=c*(2*z*z-1)/1/(sqr(z)+pixel),
 |z| <=10
@@ -3042,7 +3050,7 @@ z=c*(4*z*z-1)/2/(sqr(z)+pixel),
 }
 
 
-Carr-302{; CARRBROT? Why not?
+Carr-302{ ; CARRBROT? Why not?
 z=1/(log(pixel)+cosxx(pixel)),c=1/pixel:
 z=z*z+c,
 |z| <=4
@@ -3100,7 +3108,7 @@ z=sqr(z*z)+(c-0.124),
 }
 
 
-Carr-309{;Great Crystals
+Carr-309 { ; Great Crystals
 z=1/(z*pixel+(pixel-1)),c=1/pixel:
 z=z*z+(c-0.124);
 z=z*z+(c-0.124),
@@ -3189,7 +3197,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-320{;***
+Carr-320 { ; ***
 z=1/pixel*(3.6,2.6),c=1/pixel*(0.6,0.6):
 z=z^z*z+flip(c*c),
 |z| <=10
@@ -3197,7 +3205,7 @@ z=z^z*z+flip(c*c),
 }
 
 
-Carr-321{;***
+Carr-321 { ; ***
 z=1/pixel*(3.6,2.6),c=1/pixel*(0.6,0.6):
 z=pixel-c*c,
 |z| <=10
@@ -3213,7 +3221,7 @@ z=pixel-(c*c*c*c),
 }
 
 
-Carr-323{;Distance Estimator works with this FRM
+Carr-323 { ; Distance Estimator works with this FRM
 z=c=1/pixel:
 z=z*z+flip(c),
 |z| <=10
@@ -3221,7 +3229,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-324{;Distance Estimator works with this FRM
+Carr-324 { ; Distance Estimator works with this FRM
 z=c=1/pixel:
 z=z*z+flip(c*c),
 |z| <=10
@@ -3229,7 +3237,7 @@ z=z*z+flip(c*c),
 }
 
 
-Carr-325{;Distance Estimator works with this FRM
+Carr-325 { ; Distance Estimator works with this FRM
 z=c=1/pixel:
 z=z*z*z+flip(c*c),
 |z| <=10
@@ -3237,7 +3245,7 @@ z=z*z*z+flip(c*c),
 }
 
 
-Carr-326{;Distance Estimator works with this FRM
+Carr-326 { ; Distance Estimator works with this FRM
 z=c=1/pixel:
 z=z*z*z+flip(c*c*c),
 |z| <=10
@@ -3262,7 +3270,7 @@ z=sin(z*z)+c,
 }
 
 
-Carr-329{;Distance Estimator works with this FRM
+Carr-329 { ; Distance Estimator works with this FRM
 z=c=flip(1/pixel):
 z=z*z+conj(c*c),
 |z| <=10
@@ -3270,7 +3278,7 @@ z=z*z+conj(c*c),
 }
 
 
-Carr-330{;Distance Estimator works with this FRM
+Carr-330 { ; Distance Estimator works with this FRM
 z=c=flip(1/pixel):
 z=z*z*z+conj(c*c*c),
 |z| <=10
@@ -3574,7 +3582,7 @@ z=z*z+c,
 }
 
 
-Carr-368{;Distance Estimator works with this FRM
+Carr-368 { ; Distance Estimator works with this FRM
 c=z=sqr(1/fn2(1/pixel-1.5)):
 z=z*z*z+c,
 |z| <=10
@@ -3598,7 +3606,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-371{;Distance Estimator works with this FRM
+Carr-371 { ; Distance Estimator works with this FRM
 c=z=sqr(1/fn2(1/pixel-1.5)):
 z=c*(2*z*z-1),
 |z| <=10
@@ -3728,7 +3736,7 @@ z=conj((z/0.8)+sqr(z-0.324))/(0.489/pixel),
 }
 
 
-Carr-387{;Dave Oliver formula modified.Distance Estimator works here.
+Carr-387 { ; Dave Oliver formula modified.Distance Estimator works here.
 z=1/pixel:
 z=((pixel^z)-1)+(pixel^(z-1)),
 |z| <=10
@@ -3736,7 +3744,7 @@ z=((pixel^z)-1)+(pixel^(z-1)),
 }
 
 
-Carr-388{;Dave Oliver formula modified
+Carr-388 { ; Dave Oliver formula modified
 z=((pixel^z)-1)*(pixel^(z-1)),c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -3744,7 +3752,7 @@ z=z*z+c,
 }
 
 
-Carr-389{;Dave Oliver formula modified
+Carr-389 { ; Dave Oliver formula modified
 z=1/((pixel^z)-1)*(pixel^(z-1)),c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -3752,7 +3760,7 @@ z=z*z+c,
 }
 
 
-Carr-390{;Dave Oliver formula modified
+Carr-390 { ; Dave Oliver formula modified
 z=1/((pixel^z)-2)*(pixel^(z-2)),c=1/pixel-1:
 z=z*z+c,
 |z| <=10
@@ -3768,16 +3776,16 @@ z=z*z+c,
 }
 
 
-Carr-392{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-392 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
 }
 
 
-Carr-393{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-393 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z*z+flip(c*c),
 |z| <=10
   ;SOURCE: 08carr.frm
@@ -3785,7 +3793,7 @@ z=z*z*z+flip(c*c),
 
 
 Carr-394{
-z=c=((sqrt 3 + 0.5)/0.124)/pixel:
+z=c=((sqrt(3) + 0.5)/0.124)/pixel:
 z=z*z*z+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
@@ -3793,39 +3801,39 @@ z=z*z*z+flip(c),
 
 
 Carr-395{
-z=c=((sqrt 9 + 2.234)/0.324)/pixel:
+z=c=((sqrt(9) + 2.234)/0.324)/pixel:
 z=z*z*z+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
 }
 
 
-Carr-396{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-396 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=conj(z*z)+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
 }
 
 
-Carr-397{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-397 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=1/conj(z*z)+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
 }
 
 
-Carr-398{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-398 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=1/sqr(z*z)+flip(c),
 |z| <=10
   ;SOURCE: 08carr.frm
 }
 
 
-Carr-399{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+Carr-399 { ; Distance Estimator works here
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z+flip(c/2),
 |z| <=10
   ;SOURCE: 08carr.frm
@@ -3856,7 +3864,7 @@ z=z*z+c+((sqrt5+1)/2)*pixel,
 }
 
 
-Carr-403{;Distance Estimator works here
+Carr-403 { ; Distance Estimator works here
 z=flip(real(1/pixel)),c=flip(imag(pixel)):
 z=z*z+c+conj(((sqrt5+1)/2)*pixel),
 |z| <=10
@@ -3880,7 +3888,7 @@ z=z*z+c+conj(((sqrt5+1)/2)*pixel),
 }
 
 
-Carr-406{; Distance Estimator works here
+Carr-406{ ; Distance Estimator works here
 z=exp(flip(real(0.33/pixel))),c=flip(imag(0.124/pixel)):
 z=z*z+c+conj(((sqrt5+1)/2)*flip(pixel)),
 |z| <=10
@@ -3912,7 +3920,7 @@ z=z*z+(c/pixel)+conj(((sqrt5+1)/2)*exp(conj(pixel))),
 }
 
 
-Carr-410{;Based on Golden Mean frm from Graphdev. MODIFIED
+Carr-410 { ; Based on Golden Mean frm from Graphdev. MODIFIED
 ;Distance Estimator works here.
 z=((sqrt5-1)/2),c=1/pixel:
 z=z*z+pixel*((sqrt5+1)/2)+c,
@@ -3921,7 +3929,7 @@ z=z*z+pixel*((sqrt5+1)/2)+c,
 }
 
 
-Carr-411{;Distance Estimator works here
+Carr-411 { ; Distance Estimator works here
 z=((sqrt5-1)/2),c=1/pixel+log(z*z):
 z=z*z+pixel*((sqrt5+1)/2)+c,
 |z| <=10
@@ -3929,7 +3937,7 @@ z=z*z+pixel*((sqrt5+1)/2)+c,
 }
 
 
-Carr-412{;Distance Estimator works here.
+Carr-412 { ; Distance Estimator works here.
 z=((sqrt5-1)/2),c=1/pixel+log(z*z):
 z=z*z+pixel+((sqrt5+1)/2)+flip(c),
 |z| <=10
@@ -3937,7 +3945,7 @@ z=z*z+pixel+((sqrt5+1)/2)+flip(c),
 }
 
 
-Carr-413{;Distance Estimator works here
+Carr-413 { ; Distance Estimator works here
 z=((sqrt5-1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z+c,
 |z| <=10
@@ -3961,7 +3969,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-416{;Excellent
+Carr-416 { ; Excellent
 z=c*((sqrt5-1)/2)/((sqrt5+1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z+(0.524/c)/((sqrt5-1)/2)/((sqrt5+1)/2),
 |z| <=10
@@ -3993,7 +4001,7 @@ z=z*z+c,
 }
 
 
-Carr-420{;Distance Estimator works here
+Carr-420 { ; Distance Estimator works here
 z=1/c*(0.524/pixel),c=1/pixel+conj(z):
 z=z*z+c,
 |z| <=10
@@ -4043,7 +4051,7 @@ z=z*z+cosxx(c),
 }
 
 
-Carr-426{;Distance Estimator works here.
+Carr-426 { ; Distance Estimator works here.
 z=c*((1.5,0.7)*((sqrt5+1)/2)),c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -4051,7 +4059,7 @@ z=z*z+c,
 }
 
 
-Carr-427{;Distance Estimator works here
+Carr-427 { ; Distance Estimator works here
 z=c*((1.5,0.7)*((sqrt5+1)/2)),c=1/pixel:
 z=z*z+flip(c-0.324),
 |z| <=10
@@ -4059,7 +4067,7 @@ z=z*z+flip(c-0.324),
 }
 
 
-Carr-428{;
+Carr-428{ ;
 z=1/pixel/(1/cotanh(1.0124)),c=1/pixel/cos(2):
 z=z*z+flip(c*tan(c)),
 |z| <=10
@@ -4067,7 +4075,7 @@ z=z*z+flip(c*tan(c)),
 }
 
 
-Carr-429{;Distance Estimator works here.
+Carr-429 { ; Distance Estimator works here.
 z=1/pixel-cos(1.124),c=1/pixel-tanh(1.08908):
 z=z*z+c,
 |z| <=10
@@ -4075,7 +4083,7 @@ z=z*z+c,
 }
 
 
-Carr-430{;CARR'S RING
+Carr-430 { ; CARR'S RING
 z=c=1/pixel:
 z=pixel/c*c*pixel/z^(1.23),
 |z| <=10
@@ -4083,7 +4091,7 @@ z=pixel/c*c*pixel/z^(1.23),
 }
 
 
-Carr-431{;CARR'S RING
+Carr-431 { ; CARR'S RING
 z=c=1/pixel:
 z=1/pixel/c*c*pixel/z^(1.23),
 |z| <=10
@@ -4091,7 +4099,7 @@ z=1/pixel/c*c*pixel/z^(1.23),
 }
 
 
-Carr-432{;CARR'S RING
+Carr-432 { ; CARR'S RING
 z=c=1/pixel:
 z=1/pixel/c*c*c*pixel/z^(1.23),
 |z| <=10
@@ -4099,7 +4107,7 @@ z=1/pixel/c*c*c*pixel/z^(1.23),
 }
 
 
-Carr-433{;CARR'S RING
+Carr-433 { ; CARR'S RING
 z=c=1/pixel:
 z=0.124/pixel/c*c*c*pixel/z^(1.23),
 |z| <=10
@@ -4115,7 +4123,7 @@ z=0.124/pixel/c*c*c*pixel/z^(1.73),
 }
 
 
-Carr-435{;CARR'S RING
+Carr-435 { ; CARR'S RING
 z=c=1/pixel:
 z=0.124/pixel/c*c*c*pixel/z^(1.38),
 |z| <=10
@@ -4123,7 +4131,7 @@ z=0.124/pixel/c*c*c*pixel/z^(1.38),
 }
 
 
-Carr-436{;CARR'S RING, Distance Estimator works here.
+Carr-436 { ; CARR'S RING, Distance Estimator works here.
 z=c=1/pixel:
 z=0.124/pixel/c*(c-0.124)*(c-0.524)*pixel/z^(1.38),
 |z| <=10
@@ -4131,7 +4139,7 @@ z=0.124/pixel/c*(c-0.124)*(c-0.524)*pixel/z^(1.38),
 }
 
 
-Carr-437{;CARR'S RING
+Carr-437 { ; CARR'S RING
 z=c=1/pixel/conj(1.353):
 z=0.124/pixel/c*(c+0.524)*(c-0.524)*pixel/z^conj(1.38),
 |z| <=10
@@ -4155,7 +4163,7 @@ z=z*z+c,
 }
 
 
-Carr-440{;Distance Estimator works here.
+Carr-440 { ; Distance Estimator works here.
 z=0.524/pixel,c=z*(4*z*z-2):
 z=z*z+c,
 |z| <=10
@@ -4163,7 +4171,7 @@ z=z*z+c,
 }
 
 
-Carr-441{;Distance Estimator works here.
+Carr-441 { ; Distance Estimator works here.
 z=0.524/pixel,c=z*(4*z*z-2):
 z=z*z+c*c,
 |z| <=10
@@ -4171,7 +4179,7 @@ z=z*z+c*c,
 }
 
 
-Carr-442{;Distance Estimator works here.
+Carr-442 { ; Distance Estimator works here.
 z=0.524/pixel,c=z*(4*z*z-2):
 z=z*z+c;
 z=z*z+c,
@@ -4180,7 +4188,7 @@ z=z*z+c,
 }
 
 
-Carr-443{;Distance Estimator works here.
+Carr-443 { ; Distance Estimator works here.
 z=0.524/pixel,c=z*(4*z*z-2):
 z=z*z*z+c;
 z=z*z*z+c,
@@ -4189,7 +4197,7 @@ z=z*z*z+c,
 }
 
 
-Carr-444{;Distance Estimator works here.
+Carr-444 { ; Distance Estimator works here.
 z=0.524/pixel,c=z*(4*z*z-2):
 z=z*z*z+c*c;
 z=z*z*z+c*c,
@@ -4214,7 +4222,7 @@ z=z*z*z+cos(c*c),
 }
 
 
-Carr-447{;Distance Estimator works here.
+Carr-447 { ; Distance Estimator works here.
 z=0.524/pixel-1,c=z*(4*z*z-2)-0.124:
 z=z*z*z+conj(1/c*1/c),
 |z| <=10
@@ -4222,7 +4230,7 @@ z=z*z*z+conj(1/c*1/c),
 }
 
 
-Carr-448{;Distance Estimator works here.
+Carr-448 { ; Distance Estimator works here.
 z=0.524/pixel-1,c=z*(4*z*z-2)-0.124:
 z=z*z*z+conj(pixel/c*pixel/c),
 |z| <=10
@@ -4230,7 +4238,7 @@ z=z*z*z+conj(pixel/c*pixel/c),
 }
 
 
-Carr-449{;Formula made by mistake. Hit cap for z= and got z+
+Carr-449 { ; Formula made by mistake. Hit cap for z= and got z+
 z+(0.6,0.3)*pixel,c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -4238,7 +4246,7 @@ z=z*z+c,
 }
 
 
-Carr-450{;If it worked once, try it again.
+Carr-450 { ; If it worked once, try it again.
 z+(0.6,0.3)*pixel,c=1/pixel:
 z=z*z*z+c*c,
 |z| <=10
@@ -4246,7 +4254,7 @@ z=z*z*z+c*c,
 }
 
 
-Carr-451{;And again.
+Carr-451 { ; And again.
 z+(0.6,0.3)*pixel,c=1/pixel:
 z=z*z+c;
 z=sin(z*z)+c,
@@ -4255,7 +4263,7 @@ z=sin(z*z)+c,
 }
 
 
-Carr-452{;Yet another.
+Carr-452 { ; Yet another.
 z+(1.6,-0.3)^pixel,c=1/pixel:
 z=z*z*z+c;
 z=sin(z*z*z)+c,
@@ -4291,7 +4299,7 @@ z=sin(z*z*z)+c,
 }
 
 
-Carr-455{;Distance Estimator works here.
+Carr-455 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z*z)*pixel,
 |z| <=10
@@ -4299,7 +4307,7 @@ z=log(z*z)*pixel,
 }
 
 
-Carr-456{;Distance Estimator works here.
+Carr-456 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z*z*z)*pixel,
 |z| <=10
@@ -4307,7 +4315,7 @@ z=log(z*z*z)*pixel,
 }
 
 
-Carr-457{;Distance Estimator works here.
+Carr-457 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z*z*z*z)*pixel,
 |z| <=10
@@ -4315,7 +4323,7 @@ z=log(z*z*z*z)*pixel,
 }
 
 
-Carr-458{;Distance Estimator works here.
+Carr-458 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z*z*z*z*z*z)*pixel,
 |z| <=10
@@ -4323,7 +4331,7 @@ z=log(z*z*z*z*z*z)*pixel,
 }
 
 
-Carr-459{;Distance Estimator works here.
+Carr-459 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(1/z*z*z*z*z*1/z)*pixel,
 |z| <=10
@@ -4331,7 +4339,7 @@ z=log(1/z*z*z*z*z*1/z)*pixel,
 }
 
 
-Carr-460{;Distance Estimator works here.
+Carr-460 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z/pixel*z*z*z*z*z/pixel)*pixel,
 |z| <=10
@@ -4339,7 +4347,7 @@ z=log(z/pixel*z*z*z*z*z/pixel)*pixel,
 }
 
 
-Carr-461{;Distance Estimator works here.
+Carr-461 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z/pixel*z*z*z*z*z/pixel)*1/pixel,
 |z| <=10
@@ -4347,7 +4355,7 @@ z=log(z/pixel*z*z*z*z*z/pixel)*1/pixel,
 }
 
 
-Carr-462{;Distance Estimator works here.
+Carr-462 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z/pixel*z/pixel*z/pixel)*pixel,
 |z| <=10
@@ -4355,7 +4363,7 @@ z=log(z/pixel*z/pixel*z/pixel)*pixel,
 }
 
 
-Carr-463{;Distance Estimator works here.
+Carr-463 { ; Distance Estimator works here.
 z=1/pixel:
 z=log(z/pixel*z/pixel*z/pixel*1/z)*pixel,
 |z| <=10
@@ -4363,7 +4371,7 @@ z=log(z/pixel*z/pixel*z/pixel*1/z)*pixel,
 }
 
 
-Carr-464{;Distance Estimator works here.
+Carr-464 { ; Distance Estimator works here.
 z=1/pixel:
 z=1/log(z*z*z*z)*pixel,
 |z| <=10
@@ -4371,7 +4379,7 @@ z=1/log(z*z*z*z)*pixel,
 }
 
 
-Carr-465{;Somebody's Modified, I don't know who.
+Carr-465 { ; Somebody's Modified, I don't know who.
 z=1/pixel:
 z=z*z*z+1/z*z*z+pixel,
 |z| <=10
@@ -4379,7 +4387,7 @@ z=z*z*z+1/z*z*z+pixel,
 }
 
 
-Carr-466{;Distance Estimator works here.
+Carr-466 { ; Distance Estimator works here.
 z=1/pixel:
 z=z*z*z+1/z*z*z*pixel,
 |z| <=10
@@ -4387,7 +4395,7 @@ z=z*z*z+1/z*z*z*pixel,
 }
 
 
-Carr-467{;Distance Estimator works here.
+Carr-467 { ; Distance Estimator works here.
 z=1/pixel:
 z=z*z*z+1/z*1/z*1/z*pixel,
 |z| <=10
@@ -4395,7 +4403,7 @@ z=z*z*z+1/z*1/z*1/z*pixel,
 }
 
 
-Carr-468{;Distance Estimator works here.
+Carr-468 { ; Distance Estimator works here.
 z=1/pixel:
 z=z*z*z+1/(1/pixel*1/pixel*1/pixel)+pixel,
 |z| <=10
@@ -4403,7 +4411,7 @@ z=z*z*z+1/(1/pixel*1/pixel*1/pixel)+pixel,
 }
 
 
-Carr-469{;Distance Estimator works here.
+Carr-469 { ; Distance Estimator works here.
 z=1/pixel:
 z=z*z*z+1/(pixel*pixel-1)*z-pixel,
 |z| <=10
@@ -4419,7 +4427,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-471{;Distance Estimator works here.
+Carr-471 { ; Distance Estimator works here.
 z=1/(pixel-1),c=1/pixel:
 z=z*z+flip(c),
 |z| <=10
@@ -4427,7 +4435,7 @@ z=z*z+flip(c),
 }
 
 
-Carr-472{;Distance Estimator works here.
+Carr-472 { ; Distance Estimator works here.
 z=1/(pixel-1),c=1/pixel:
 z=z*z+flip(c);
 z=z*z+flip(c);
@@ -4449,7 +4457,7 @@ z=z*z+conj(c),
 }
 
 
-Carr-474{;Distance Estimator works here.
+Carr-474 { ; Distance Estimator works here.
 z=conj(1/pixel*0.124),c=1/pixel:
 z=z*z+conj(c);
 z=z*z+conj(c);
@@ -4460,7 +4468,7 @@ z=z*z+conj(c),
 }
 
 
-Carr-475{;Distance Estimator works here.
+Carr-475 { ; Distance Estimator works here.
 z=conj(1/pixel*0.124),c=1/pixel:
 z=z*z*z+conj(c);
 z=z*z*z+conj(c);
@@ -4487,7 +4495,7 @@ z=fn1(z/pixel*z/pixel)*c,
 }
 
 
-Carr-478{;Very Strange !!
+Carr-478 { ; Very Strange !!
 z=1/pixel*0.124,c=1/pixel:
 z=1/(z*z)+c;
 z=fn1(z/pixel)*c,
@@ -4496,7 +4504,7 @@ z=fn1(z/pixel)*c,
 }
 
 
-Carr-479{;Distance Estimator works here.
+Carr-479 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(z):
 c=flip(c)+z;
 z=z*z+c,
@@ -4505,7 +4513,7 @@ z=z*z+c,
 }
 
 
-Carr-480{;Distance Estimator works here.
+Carr-480 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(c)+z;
 z=z*z+c,
@@ -4514,7 +4522,7 @@ z=z*z+c,
 }
 
 
-Carr-481{;Distance Estimator works here.
+Carr-481 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(c)*z;
 z=z*z*z+c,
@@ -4523,7 +4531,7 @@ z=z*z*z+c,
 }
 
 
-Carr-482{;Distance Estimator works here.
+Carr-482 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(c*c)*z;
 z=z*z+c,
@@ -4532,7 +4540,7 @@ z=z*z+c,
 }
 
 
-Carr-483{;Distance Estimator works here.
+Carr-483 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(0.124*c+0.724)*z;
 z=z*z+c,
@@ -4541,7 +4549,7 @@ z=z*z+c,
 }
 
 
-Carr-484{;Distance Estimator works here.
+Carr-484 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(0.124*c+0.724)*z;
 z=z*z*z+c,
@@ -4550,7 +4558,7 @@ z=z*z*z+c,
 }
 
 
-Carr-485{;Distance Estimator works here.
+Carr-485 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(0.124*c+0.724)*z;
 z=z*z*z*z+c,
@@ -4559,7 +4567,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-486{;Distance Estimator works here.
+Carr-486 { ; Distance Estimator works here.
 z=pixel,c=fn2(1/z):
 c=flip(0.124*c+0.724)*z;
 z=z*z*z*z+c,
@@ -4568,7 +4576,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-487{;Distance Estimator works here.
+Carr-487 { ; Distance Estimator works here.
 z=pixel,c=fn2(1/z):
 c=flip(conj(0.124*c+0.724)*z);
 z=z*z*z*z+c,
@@ -4577,7 +4585,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-488{;Distance Estimator works here.
+Carr-488 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(conj(0.124*c+0.724)*z);
 z=z*z*z*z+c,
@@ -4586,7 +4594,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-489{;Distance Estimator works here.
+Carr-489 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(conj(0.324*c+0.924)*z);
 z=z*z*z*z+c,
@@ -4595,7 +4603,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-490{;Distance Estimator works here.
+Carr-490 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(conj(0.724*c+0.924)*z);
 z=z*z*z*z+c,
@@ -4604,7 +4612,7 @@ z=z*z*z*z+c,
 }
 
 
-Carr-491{;Distance Estimator works here.
+Carr-491 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(conj(0.724*c+0.924)*z);
 z=z*z*z*z+c/pixel,
@@ -4613,7 +4621,7 @@ z=z*z*z*z+c/pixel,
 }
 
 
-Carr-492{;Distance Estimator works here.
+Carr-492 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(conj(0.724*c+0.924)*z);
 z=1/z*z*z*1/z+c/pixel,
@@ -4622,7 +4630,7 @@ z=1/z*z*z*1/z+c/pixel,
 }
 
 
-Carr-493{;Distance Estimator works here.
+Carr-493 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(sqr(0.724*c+0.924)*z);
 z=z*z*z*z+c/pixel,
@@ -4631,7 +4639,7 @@ z=z*z*z*z+c/pixel,
 }
 
 
-Carr-494{;Distance Estimator works here.
+Carr-494 { ; Distance Estimator works here.
 z=1/pixel,c=fn2(1/z):
 c=flip(sqr(0.724*c+0.924)*z);
 z=z+c/pixel,
@@ -4667,7 +4675,7 @@ z=z*z*z+c/pixel,
 }
 
 
-Carr-498{;Distance Estimator works here.
+Carr-498 { ; Distance Estimator works here.
 z=1/pixel,c=fn4(1/z):
 c=conj(log(0.724*c+0.924)*z);
 z=z*z*z+c/pixel,
@@ -4685,7 +4693,7 @@ z=z*z*z+c/pixel+0.324,
 }
 
 
-Carr-500{;Distance Estimator works here.
+Carr-500 { ; Distance Estimator works here.
 z=1/pixel,c=fn1(fn2(1/z))+1/pixel;
 z=z*z+c,
 |z| <=10
@@ -4693,7 +4701,7 @@ z=z*z+c,
 }
 
 
-Carr-501{;Distance Estimator works here.
+Carr-501 { ; Distance Estimator works here.
 z=1/pixel,c=exp(0.6,0.3)/pixel:
 z=z*z*z*z*z+flip(c/pixel),
 |z| <=10
@@ -4701,7 +4709,7 @@ z=z*z*z*z*z+flip(c/pixel),
 }
 
 
-Carr-502{;Distance Estimator works here.
+Carr-502 { ; Distance Estimator works here.
 z=1/pixel,c=exp(0.6,0.3)/pixel:
 z=(z*z*z+(pixel-0.124)*z-1/pixel)/c,
 |z| <=10
@@ -4717,7 +4725,7 @@ z=(z*z+(pixel-0.124)*z-1/pixel)/c,
 }
 
 
-Carr-504{;Distance Estimator works here.
+Carr-504 { ; Distance Estimator works here.
 z=1/pixel,c=exp(0.6,0.3)/(1/pixel):
 z=(1/z*1/z+(pixel-0.124)*z-1/pixel)/c,
 |z| <=10
@@ -4725,7 +4733,7 @@ z=(1/z*1/z+(pixel-0.124)*z-1/pixel)/c,
 }
 
 
-Carr-505{;Distance Estimator works here.
+Carr-505 { ; Distance Estimator works here.
 z=1/pixel,c=exp(0.6,0.3)/(1/pixel):
 z=(1/z*1/z*1/z+(pixel-0.124)*z-1/pixel)/c,
 |z| <=10
@@ -4733,7 +4741,7 @@ z=(1/z*1/z*1/z+(pixel-0.124)*z-1/pixel)/c,
 }
 
 
-Carr-506{;Distance Estimator works here.
+Carr-506 { ; Distance Estimator works here.
 z=1/pixel,c=exp(0.6,0.3)/(1/pixel):
 z=(1/z*1/z+sqr(pixel-0.124)*z-1/pixel)/c,
 |z| <=10
@@ -4879,7 +4887,7 @@ z=z*z+c,
 }
 
 
-Carr-524{;Excellent !!
+Carr-524 { ; Excellent !!
 z=1/pixel,c=1/sinh(1/(z*z)):
 z=z*z*z+c,
 |z| <=10
@@ -4887,7 +4895,7 @@ z=z*z*z+c,
 }
 
 
-Carr-525{;Excellent !!!
+Carr-525 { ; Excellent !!!
 z=1/pixel,c=1/sinh(1/(z*z)):
 z=z*z*z+(c-0.524),
 |z| <=10
@@ -4911,7 +4919,7 @@ z=z*z*z+(c+(0.6,0.3)),
 }
 
 
-Carr-528{;Nice !!!
+Carr-528 { ; Nice !!!
 z=1/pixel,c=1/conj(1/(z*z)):
 z=z*z*z+(c+(0.6,0.3)),
 |z| <=10
@@ -5009,7 +5017,7 @@ z=z*z*z+c,
 }
 
 
-Carr-540{;Distance Estimator works here.
+Carr-540 { ; Distance Estimator works here.
 z=1/pixel,c=conj(sqr(z)+pixel):
 z=z*z+c,
 |z| <=10
@@ -5209,7 +5217,7 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-565{;Distance Estimator works here.
+Carr-565 { ; Distance Estimator works here.
 z=1/conj(pixel-2.5),c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -5365,7 +5373,8 @@ z=z*z+(c-0.124),
 }
 
 
-Carr-584{z=1/pixel,c=conj((1/pixel)*(1/pixel)):
+Carr-584{
+z=1/pixel,c=conj((1/pixel)*(1/pixel)):
 z=z*z+(c-0.124);
 z=z*z+c;
 z=z*z+c,
@@ -5438,7 +5447,7 @@ z=z*z+c,
 }
 
 
-Carr-593{;Distance Estimator works here.
+Carr-593 { ; Distance Estimator works here.
 z=1/real(pixel*pixel),c=1/pixel:
 z=z*z+c,
 |z| <=10
@@ -5586,7 +5595,7 @@ z=z*z+c,
 }
 
 
-Carr-611{;Distance Estimator works here.
+Carr-611 { ; Distance Estimator works here.
 z=1/pixel,c=1/(sqr(pixel)/z*z+pixel):
 z=conj(z*z+c),
 |z| <=10
@@ -5858,7 +5867,7 @@ z=z*z+flip(conj(c)),
 }
 
 
-Carr-645{;*****
+Carr-645 { ; *****
 z=1.124/pixel,c=sin(1/pixel)/cosh((1/z)/(1/pixel)):
 z=z*z+flip(conj(c)),
 |z| <=10
@@ -6018,7 +6027,7 @@ z=z*z+conj(c*(cosxx(-c))),
 }
 
 
-Carr-665{;***
+Carr-665 { ; ***
 z=1/conj(pixel),c=sinh((1/pixel)*(z*z))/(0.6,2.3):
 z=z*z+conj(c*(sin(-c))),
 |z| <=10
@@ -6274,10 +6283,10 @@ z=z*z*z+(sin(-c))*1/pixel,
 }
 
 
-Carr-697{
-z=1/conj(1/pixel),c=1/conj(0.124/pixel):
-z=z*z+c.
-|z| <=10
+Carr-697 {
+  z=1/conj(1/pixel), c=1/conj(0.124/pixel):
+  z=z*z+c
+  |z| <=10
   ;SOURCE: 03carr.frm
 }
 
@@ -6345,7 +6354,7 @@ z=z*z+c,
 }
 
 
-Carr-706{;SLOW
+Carr-706 { ; SLOW
 z=1/conj(pixel-1.5),c=1/pixel-1.5:
 z=(z*z+c)/(1/pixel-1.5),
 |z| <=10
@@ -6438,7 +6447,7 @@ z=(z*z+c-(z-(0.75/pixel))/2),
 }
 
 
-Carr-717{;Reglar Mandel form inside of an inverted Mandel form
+Carr-717 { ; Reglar Mandel form inside of an inverted Mandel form
 z=real(1/pixel)-conj(0.5/pixel),
 c=((z-1/pixel)/(1/pixel-1)):
 z=(z*z+c-(z-(0.75/pixel))/2),
@@ -6474,7 +6483,7 @@ z=conj(flip(z*z+c-(z-(0.75/pixel))/2)),
 }
 
 
-Carr-721{;Interesting !!
+Carr-721 { ; Interesting !!
 z=(1/pixel)-conj(0.5/pixel),
 c=(1/pixel)/(1/pixel-1)+conj(z):
 z=(z*z+c-(z-(0.75/pixel)/4)),
@@ -6853,7 +6862,7 @@ abs(z*z/flip(pixel))<2.524
 }
 
 
-Carr-767{;This is a modification of a formula I saw somewhere. 
+Carr-767 { ; This is a modification of a formula I saw somewhere. 
 	 ;If you know who's it is please let me know.
 c=z=1/(pixel^1.245):
 z=fn1(z^1.245)+fn2(c),
@@ -6862,7 +6871,7 @@ abs(z)<2.124
 }
 
 
-Carr-768{;Ditto above.
+Carr-768 { ; Ditto above.
 c=z=1/(pixel^1.245):
 z=conj(z^2.245)+fn2(c),
 abs(z)<2.124
@@ -6918,7 +6927,7 @@ z=z*z+c-0.724,
 }
 
 
-Carr-775{;Nice images produced
+Carr-775 { ; Nice images produced
 z=c=sqr(sqr(1/pixel)):
 z=z*z+c-0.724,
 |z| <=10
@@ -7008,7 +7017,7 @@ z=z^z*z+flip(c*c),
 }
 
 
-Carr-786{;Very interesting image poosibilities !!
+Carr-786 { ; Very interesting image poosibilities !!
 z=sqr(sqr(sqr(1/pixel-0.006))),c=sqr(sqr(1/pixel-0.009)):
 z=1/z^z*z+flip(c*c),
 |z| <=10
@@ -7016,7 +7025,7 @@ z=1/z^z*z+flip(c*c),
 }
 
 
-Carr-787{;Ditto above
+Carr-787 { ; Ditto above
 z=sqr(sqr(sqr(1/pixel-0.006))),c=sqr(sqr(1/pixel-0.009)):
 z=1/z^z*z+conj((c+0.124)*(c+0.124)),
 |z| <=10
@@ -7139,7 +7148,7 @@ z=((pixel-z*z)/(pixel-(c+0.624)*(c+0.624))),
 }
 
 
-Carr-802{;***
+Carr-802 { ; ***
 z=sqr(sqr(sqr(1/pixel-0.006))),c=sqr(sqr(1/pixel-0.009)):
 z=z*z+c;
 z=z/pixel*z*z+c/flip(c/pixel*c+z)-1/pixel,
@@ -7156,7 +7165,7 @@ z=(1/z^z*z/7+z*z-c)/1.3,
 }
 
 
-Carr-804{;Modified SJMAND01
+Carr-804 { ; Modified SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(imag(pixel))):
 z=z*z+c,
@@ -7165,7 +7174,7 @@ z=z*z+c,
 }
 
 
-Carr-805{;Modified SJMAND01
+Carr-805 { ; Modified SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(2.224+1.224*real(pixel)+conj(imag(pixel))):
 z=z*z+c,
@@ -7174,7 +7183,7 @@ z=z*z+c,
 }
 
 
-Carr-806{;Modified SJMAND01
+Carr-806 { ; Modified SJMAND01
 z=1/(real(pixel-0.124)+flip(imag(pixel-0.224)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(abs(pixel))):
 z=z*z+c,
@@ -7183,7 +7192,7 @@ z=z*z+c,
 }
 
 
-Carr-807{;Modified SJMAND01
+Carr-807 { ; Modified SJMAND01
 z=1/(real(pixel-0.124)+flip(imag(pixel-0.224)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(abs(pixel))):
 z=(fn1(z))*z+c,
@@ -7192,7 +7201,7 @@ z=(fn1(z))*z+c,
 }
 
 
-Carr-808{;Modified SJMAND01
+Carr-808 { ; Modified SJMAND01
 z=1/(real(pixel-0.124)+flip(imag(pixel-0.224)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(abs(pixel))):
 z=(fn1(z))*z+c*2.324,
@@ -7201,7 +7210,7 @@ z=(fn1(z))*z+c*2.324,
 }
 
 
-Carr-809{;Modified SJMAND01
+Carr-809 { ; Modified SJMAND01
 z=1/(real(pixel-0.124)+flip(imag(pixel-0.224)*1.524)),
 c=1/(0.024+1.224*real(pixel+0.424)+flip(imag(pixel+0.524))):
 z=(fn1(z))*z+c,
@@ -7210,7 +7219,7 @@ z=(fn1(z))*z+c,
 }
 
 
-Carr-810{;Modified SJMAND01
+Carr-810 { ; Modified SJMAND01
 z=1/(real(pixel-0.124)+flip(abs(pixel-0.224)*1.524)),
 c=1/(2.024+1.224*real(pixel+0.424)+flip(imag(pixel+0.524))):
 z=(fn1(z))*(z+0.224)+(c+0.0002),
@@ -7219,7 +7228,7 @@ z=(fn1(z))*(z+0.224)+(c+0.0002),
 }
 
 
-Carr-811{;Modified SJMAND01
+Carr-811 { ; Modified SJMAND01
 z=1/(real(pixel-1.124)+flip(abs(pixel-0.224)*2.524)),
 c=1/(2.024+1.224*real(pixel+1.024)+flip(imag(pixel+1.024))):
 z=(fn1(z))*(z+0.224)+(c+0.0002),
@@ -7228,7 +7237,7 @@ z=(fn1(z))*(z+0.224)+(c+0.0002),
 }
 
 
-Carr-812{;Modified SJMAND01
+Carr-812 { ; Modified SJMAND01
 z=1/(2.224*real(pixel)+flip(imag(pixel))),
 c=1/(2.024+1.224*real(pixel+1.024)+flip(imag(pixel+1.024))):
 z=(fn1(z))*(z+0.224)+(c+0.0002),
@@ -7237,7 +7246,7 @@ z=(fn1(z))*(z+0.224)+(c+0.0002),
 }
 
 
-Carr-813{;Modified SJMAND01
+Carr-813 { ; Modified SJMAND01
 z=1/(2.224*(pixel+2.324)+flip(abs(pixel+2.724))),
 c=1/(2.324+1.224*real(pixel+1.024)+flip(imag(pixel+1.024))):
 z=(fn1(z))*(z+0.224)+(c+0.0002),
@@ -7246,7 +7255,7 @@ z=(fn1(z))*(z+0.224)+(c+0.0002),
 }
 
 
-Carr-816{;Modified SJMAND01
+Carr-816 { ; Modified SJMAND01
 z=flip(1/(1.899*imag(pixel)+flip(real(pixel)*1.024))),
 c=tanh(1/(1.788+imag(pixel)+flip(real(pixel)*2.524))):
 z=fn1(z)*z+(flip(conj(-c+0.1))),
@@ -7255,7 +7264,7 @@ z=fn1(z)*z+(flip(conj(-c+0.1))),
 }
 
 
-Carr-817{;Modified SJMAND01
+Carr-817 { ; Modified SJMAND01
 z=flip(1/(1.899*imag(pixel)+flip(real(pixel)*1.724))),
 c=conj(1/(2.788+imag(pixel)+flip(real(pixel)*2.524))):
 z=(sinh(z*z+0.2)+c+c)^2.524,
@@ -7264,7 +7273,7 @@ z=(sinh(z*z+0.2)+c+c)^2.524,
 }
 
 
-Carr-818{;Modified SJMAND01
+Carr-818 { ; Modified SJMAND01
 z=flip(1/(1.899*imag(pixel)+flip(real(pixel)*1.724))),
 c=conj(1/(2.788+imag(pixel)+flip(real(pixel)*2.524))):
 z=abs(z*z+c);
@@ -7274,7 +7283,7 @@ z=real(z*z+c),
 }
 
 
-Carr-819{;Hybrid FGZ-SJMAND01
+Carr-819 { ; Hybrid FGZ-SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(imag(pixel))):
 z=(3*z*z)/(z+3)+c,
@@ -7283,7 +7292,7 @@ z=(3*z*z)/(z+3)+c,
 }
 
 
-Carr-820{;Modified SJMAND01
+Carr-820 { ; Modified SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(2.224+1.224*real(pixel)+flip(imag(pixel))):
 z=z*z*z/5+z*z+c,
@@ -7292,7 +7301,7 @@ z=z*z*z/5+z*z+c,
 }
 
 
-Carr-821{;Modified SJMAND01
+Carr-821 { ; Modified SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(0.224+1.224*real(pixel)+flip(imag(pixel))):
 z=z*z*z/5+z*z+real(c+0.1),
@@ -7301,7 +7310,7 @@ z=z*z*z/5+z*z+real(c+0.1),
 }
 
 
-Carr-822{;Modified SJMAND01
+Carr-822 { ; Modified SJMAND01
 z=1/(real(pixel)+flip(imag(pixel)*1.224)),
 c=1/(0.224+1.224*real(pixel)+flip(imag(pixel))):
 z=z*z*z/5+z*z+real(c-0.1),
@@ -7310,7 +7319,7 @@ z=z*z*z/5+z*z+real(c-0.1),
 }
 
 
-Carr-823{;Modified SJMAND01
+Carr-823 { ; Modified SJMAND01
 z=conj(1/(real(pixel)+flip(imag(pixel)*1.224))),
 c=conj(1/(0.224+1.224*real(pixel)+flip(imag(pixel^1.124)))):
 z=(z*z+c+1/pixel)/2,
@@ -7319,7 +7328,7 @@ z=(z*z+c+1/pixel)/2,
 }
 
 
-Carr-824{;Modified SJMAND01
+Carr-824 { ; Modified SJMAND01
 z=conj(1/(real(pixel)+flip(imag(pixel)*2.224))),
 c=conj(1/(2.224+1.224*real(pixel)+flip(imag(pixel^3.124)))):
 z=(z*z+z+c+1/pixel)/3,
@@ -7328,7 +7337,7 @@ z=(z*z+z+c+1/pixel)/3,
 }
 
 
-Carr-825{;Modified SJMAND01
+Carr-825 { ; Modified SJMAND01
 z=cosxx(1/(real(pixel)+flip(imag(pixel)*1.724))),
 c=conj(1/(1.524+1.224*real(pixel)+flip(imag(pixel*1/pixel)))):
 z=((z*z+z+c)/pixel)/3,
@@ -7337,7 +7346,7 @@ z=((z*z+z+c)/pixel)/3,
 }
 
 
-Carr-826{;Modified SJMAND01
+Carr-826 { ; Modified SJMAND01
 z=1/(real(pixel)+1.224*flip(imag(pixel)*1.724)),
 c=conj(1/(1.524+1.224*real(pixel)+flip(imag(pixel)))):
 z=real(pixel-z*z)/abs(pixel-c*c),
@@ -7346,7 +7355,7 @@ z=real(pixel-z*z)/abs(pixel-c*c),
 }
 
 
-Carr-827{;Modified SJMAND01
+Carr-827 { ; Modified SJMAND01
 z=1/(real(pixel)+1.224*flip(imag(pixel)*1.724)),
 c=conj(1/(1.524+1.224*real(pixel)+flip(imag(pixel)))):
 z=real(pixel-z*z)/conj(pixel-c*c),
@@ -7355,7 +7364,7 @@ z=real(pixel-z*z)/conj(pixel-c*c),
 }
 
 
-Carr-828{;Modified SJMAND01
+Carr-828 { ; Modified SJMAND01
 z=1/(real(pixel)+1.224*flip(imag(pixel)*1.724)),
 c=conj(1/(1.524+1.224*real(pixel)+flip(imag(pixel)))):
 z=((-pixel+z*flip(z))/flip(flip(pixel+(-c)*c))),
@@ -7364,7 +7373,7 @@ z=((-pixel+z*flip(z))/flip(flip(pixel+(-c)*c))),
 }
 
 
-Carr-829{;Modified SJMAND01
+Carr-829 { ; Modified SJMAND01
 z=(real(pixel))+1.224*(flip(imag(pixel))),
 c=2.224+1.224*(real(pixel))+flip(imag(pixel)):
 z=z*z+c;
@@ -7374,7 +7383,7 @@ z=abs(z*z+c),
 }
 
 
-Carr-830{;Modified SJMAND01
+Carr-830 { ; Modified SJMAND01
 z=(real(pixel))+1.224*(flip(imag(pixel))),
 c=2.224+1.224*(real(pixel))+flip(imag(pixel)):
 z=1/pixel*z+1/pixel*(c-1)+1/pixel*1/pixel,
@@ -7383,7 +7392,7 @@ z=1/pixel*z+1/pixel*(c-1)+1/pixel*1/pixel,
 }
 
 
-Carr-831{;Modified SJMAND01
+Carr-831 { ; Modified SJMAND01
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pixel))+(flip(real(pixel)))):
 z=conj(z*z)+conj(c),
@@ -7392,7 +7401,7 @@ z=conj(z*z)+conj(c),
 }
 
 
-Carr-832{;Modified SJMAND01
+Carr-832 { ; Modified SJMAND01
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pixel))+(flip(real(pixel)))):
 z=conj(z*z)+flip(conj(c)*c),
@@ -7401,7 +7410,7 @@ z=conj(z*z)+flip(conj(c)*c),
 }
 
 
-Carr-833{;Modified SJMAND01
+Carr-833 { ; Modified SJMAND01
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pizel))+(flip(real(pixel)))):
 z=conj(z*z+0.3)+flip(conj(c*c)*c),
@@ -7410,7 +7419,7 @@ z=conj(z*z+0.3)+flip(conj(c*c)*c),
 }
 
 
-Carr-834{;Modified SJMAND01
+Carr-834 { ; Modified SJMAND01
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pixel))+(flip(real(pixel)))):
 z=flip(conj(z*z+0.1))+flip(conj(c*c)),
@@ -7419,7 +7428,7 @@ z=flip(conj(z*z+0.1))+flip(conj(c*c)),
 }
 
 
-Carr-835{;Modified SJMAND01
+Carr-835 { ; Modified SJMAND01
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pixel))+(flip(real(pixel)))):
 z=(flip(conj(z*z-0.3))+flip(conj(c*c)))/1.7,
@@ -7428,7 +7437,7 @@ z=(flip(conj(z*z-0.3))+flip(conj(c*c)))/1.7,
 }
 
 
-Carr-836{;SJMAND01 Modified
+Carr-836 { ; SJMAND01 Modified
 z=1/((real(pixel))+(flip(imag(pixel)))),
 c=1/((imag(pixel))+(flip(real(pixel)))):
 z=(flip(conj(z*z-0.3))+flip(conj(c/pixel*c/pixel)))/1.15,
@@ -7437,7 +7446,7 @@ z=(flip(conj(z*z-0.3))+flip(conj(c/pixel*c/pixel)))/1.15,
 }
 
 
-Carr-837{;SJMAND01 Modified
+Carr-837 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=conj(conj(1.124)*(z*z+c)+conj(sqr(c*(1/pixel)))),
@@ -7446,7 +7455,7 @@ z=conj(conj(1.124)*(z*z+c)+conj(sqr(c*(1/pixel)))),
 }
 
 
-Carr-838{;SJMAND01 Modified
+Carr-838 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=tanh(z*z+conj(c/(1/pixel))),
@@ -7455,7 +7464,7 @@ z=tanh(z*z+conj(c/(1/pixel))),
 }
 
 
-Carr-839{;SJMAND01 Modified
+Carr-839 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=z*c*c+conj(1/pixel),
@@ -7464,7 +7473,7 @@ z=z*c*c+conj(1/pixel),
 }
 
 
-Carr-840{;SJMAND01 Modified
+Carr-840 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=z*z+conj(tanh(c)),
@@ -7473,7 +7482,7 @@ z=z*z+conj(tanh(c)),
 }
 
 
-Carr-841{;SJMAND01 Modified
+Carr-841 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=tanh(z*z)+conj((c-0.224)*(c/(1/pixel)))/conj(5.8,2.01),
@@ -7482,7 +7491,7 @@ z=tanh(z*z)+conj((c-0.224)*(c/(1/pixel)))/conj(5.8,2.01),
 }
 
 
-Carr-842{;SJMAND01 Modified
+Carr-842 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=(conj(1.124)*((z-2.2)*z+c)+real(c*(1/pixel-0.5)))/2.72,
@@ -7491,7 +7500,7 @@ z=(conj(1.124)*((z-2.2)*z+c)+real(c*(1/pixel-0.5)))/2.72,
 }
 
 
-Carr-843{;SJMAND01 Modified
+Carr-843 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=(conj(3.124)*((z-1.7)*z+c)+real(c*(1/pixel-0.124)))/5,
@@ -7500,7 +7509,7 @@ z=(conj(3.124)*((z-1.7)*z+c)+real(c*(1/pixel-0.124)))/5,
 }
 
 
-Carr-844{;SJMAND01 Modified
+Carr-844 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=(conj(3.424)*((z-1.7)*z+c)+real(c*(1/pixel-0.324)))/6.3,
@@ -7509,7 +7518,7 @@ z=(conj(3.424)*((z-1.7)*z+c)+real(c*(1/pixel-0.324)))/6.3,
 }
 
 
-Carr-845{;SJMAND01 Modified
+Carr-845 { ; SJMAND01 Modified
 z=1/((imag(pixel))+(flip(real(pixel)))),
 c=1/((real(pixel))+(flip(imag(pixel)))):
 z=(conj(3.124)*((z-1.85)*z+c)+real(-c*(1/pixel-0.724)))/6.3,
@@ -7902,7 +7911,7 @@ z=((1/z^1/pixel*z*z)/((pixel-1)-(c*c)))/1.6,
 }
 
 
-Carr-890{;May not be mathmatically correct but...
+Carr-890 { ; May not be mathmatically correct but...
 z=(1/1/pixel^pixel*pixel),
 c=1/conj(1/pixel^pixel+pixel):
 z=(1/z*z*z)/(c*c),
@@ -8032,7 +8041,7 @@ z=z*z+c,
 }
 
 
-Carr-905{;Modified Richard frm
+Carr-905 { ; Modified Richard frm
 z=1/pixel,c=pixel-sqr(z):
 c=pixel +c/z;
 z=c-z*pixel,
@@ -8500,7 +8509,7 @@ z=((z/1/c/2.224)/(pixel-c*c))/1.4,
 }
 
 
-Carr-958{;Modified Julia
+Carr-958 { ; Modified Julia
 z=1/(pixel*pixel),
 c=((0.3224,0.69)*(|-2.224|<0)+(-2.224)),
 t=(4*(real(0.624)<=0)+real(0.624)*(0<0.624)):
@@ -8967,7 +8976,7 @@ z=(z*1/c)/(1.099,0),
 }
 
 
-Carr1009{;Piece of Barnsley thrown in here.
+Carr1009 { ; Piece of Barnsley thrown in here.
 z=1/(pixel*pixel),
 c=((0.6,1.1)*(|3.324|<=0)+3.324):
 z=z*z+1/c,
@@ -8976,7 +8985,7 @@ z=z*z+1/c,
 }
 
 
-Carr1010{;Piece of Barnsley thrown in here.
+Carr1010 { ; Piece of Barnsley thrown in here.
 z=1/(pixel*pixel+2),
 c=((0.1,0.36)*(|3.324|<=0)+3.324):
 z=z*z+1/c,
@@ -8994,7 +9003,7 @@ z=(pixel-z*z)/(pixel-c*c),
 }
 
 
-Carr1012{;SJMand variant
+Carr1012 { ; SJMand variant
 z=(real(pixel))+1.224*(flip(imag(pixel))),
 c=2.224+(1.099,0)*(real(pixel))+flip(imag(pixel)):
 z=fn2(z*1/c);
@@ -9004,7 +9013,7 @@ z=z*1/c,
 }
 
 
-Carr1013{;SJMand variant
+Carr1013 { ; SJMand variant
 z=(real(pixel))+1.224*(flip(imag(pixel))),
 c=2.224+(1.224)*(real(pixel))+flip(imag(pixel)):
 z=(1/pixel*(z*2.234))*1/c,
@@ -9013,7 +9022,7 @@ z=(1/pixel*(z*2.234))*1/c,
 }
 
 
-Carr1014{;SJMand variant
+Carr1014 { ; SJMand variant
 z=(real(pixel))+1.224*(flip(imag(pixel))),
 c=2.224+(1.224)*(real(pixel))+flip(imag(pixel)):
 z=((1/pixel*(z*(1.099,0)))*1/c)/((1.0,0.4)/(pixel-c*c)),
@@ -9165,7 +9174,7 @@ z=(z^z*z+z)/(pixel-c*c*c),
 }
 
 
-Carr1031{;For Fractint 19.2 and above.
+Carr1031 { ; For Fractint 19.2 and above.
 z=1/pixel-1,
 c=1/((pixel^z)-2)*(pixel^(z-2)):
 z=sqrt(z*1/c)/(pixel-c*c),
@@ -9174,7 +9183,7 @@ z=sqrt(z*1/c)/(pixel-c*c),
 }
 
 
-Carr1032{;For Fractint 19.2 and above.
+Carr1032 { ; For Fractint 19.2 and above.
 z=1/pixel-1,
 c=1/atanh((pixel^z)+2)*(pixel^(z+2)):
 z=sqrt(z*1/c)/(pixel-c*c),
@@ -9183,7 +9192,7 @@ z=sqrt(z*1/c)/(pixel-c*c),
 }
 
 
-Carr1033{;19.2 or above.
+Carr1033 { ; 19.2 or above.
 z=1/pixel-1,
 c=1/((pixel^z)+2)*conj(pixel^(z+2)):
 z=acosh(1/z^z*z+z)/(pixel-c*c),
@@ -9586,7 +9595,7 @@ z=z*1/c,
 }
 
 
-Carr1078{;Modified Brad Beacham formula
+Carr1078 { ; Modified Brad Beacham formula
 z=1/pixel,c=1/z^z*z+z,f=0:
 z=((f)*fn1(z))+((1-f)*fn2(c))+c,
 f=(z*1/c)/(pixel-c*c),
@@ -9653,7 +9662,7 @@ z=(z*1/c)/(pixel-c*c);
 }
 
 
-Carr1086{; DISECTED MANDELBROT
+Carr1086{ ; DISECTED MANDELBROT
 ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
 z=1/pixel,cx=flip(real(1/pixel)),cy=flip(imag(z)),k=2+p1:
 zx=real(z),zy=imag(z);
@@ -9689,7 +9698,7 @@ z=((1.099,0)-z)/(pixel-c*c),
 }
 
 
-Carr1090{;Use a counter to gradually change proportions of algorithms
+Carr1090 { ; Use a counter to gradually change proportions of algorithms
 	;Bradley Beacham  [74223,2745]
 ;Modofied Brad Beacham formula
   ;P1 sets starting value for k
@@ -9703,7 +9712,7 @@ Carr1090{;Use a counter to gradually change proportions of algorithms
 }
 
 
-Carr1091{;Use a counter to gradually change proportions of algorithms
+Carr1091 { ; Use a counter to gradually change proportions of algorithms
 	;Bradley Beacham  [74223,2745]
 ;Modified Brad Beacham formula
   ;P1 sets starting value for k
@@ -10112,31 +10121,43 @@ z=(1.099,0)-(c-z*pixel);
 }
 
 
-Carr1137  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-x=|z|,
-x<=4 
+Carr1137(XAXIS_NOPARM) { ; FractalFenderC modified
+  z=(pixel)/(1.099,0), x=|z|:
+  if (1<x)
+    z=cosxx(z)+pixel
+  endif
+  z=sqr(z)+pixel,
+  x=|z|,
+  x<=4
   ;SOURCE: 26carr.frm
-  }
+  ;SOURCE: to-bob-6.frm
+}
 
 
-Carr1138  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(2.099,0),x=|z|:
-(z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel),
-x=|z|,
-x<=4 
+Carr1138(XAXIS_NOPARM) { ; FractalFenderC modified
+  z=(pixel)/(2.099,0), x=|z|:
+  if (1<x)
+    z=sinh(z)+pixel
+  endif
+  z=sqr(z)+(pixel),
+  x=|z|,
+  x<=4
   ;SOURCE: 26carr.frm
-  }
+  ;SOURCE: to-bob-6.frm
+}
 
 
-Carr1139  FractalFenderC modified(XAXIS_NOPARM) {z=(pixel)/(2.099,0),x=|z|:
-(z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=(z*z)+(pixel*pixel*pixel),
-x=|z|,
-x<=4 
+Carr1139(XAXIS_NOPARM) { ; FractalFenderC modified
+  z=(pixel)/(2.099,0), x=|z|:
+  if (1<x)
+    z=sinh(z)+pixel
+  endif
+  z=(z*z)+(pixel*pixel*pixel),
+  x=|z|,
+  x<=4
   ;SOURCE: 26carr.frm
-  }
+  ;SOURCE: to-bob-6.frm
+}
 
 
 Carr1140{
@@ -10274,27 +10295,34 @@ z=(z*z-(pixel*pixel*pixel))/(z*z+c)/(pixel-c*c),
 }
 
 
-Carr1155 FractalFenderC modified(XAXIS_NOPARM){;Modified Lee Skinner frm.
-z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel),
-x=|z|,
-x<=4 
+Carr1155(XAXIS_NOPARM) { ; FractalFenderC modified
+  ; Modified Lee Skinner frm.
+  z=(pixel)/(1.099,0),x=|z|:
+  if (1<x)
+    z=cosxx(z)+sqr(pixel)
+  endif
+  z=sqr(z)+(pixel),
+  x=|z|,
+  x<=4
   ;SOURCE: 27carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1156 FractalFenderC modified(XAXIS_NOPARM){;Ditto above
-z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel/(1.099,0)),
-x=|z|,
-x<=4 
+Carr1156(XAXIS_NOPARM) { ; FractalFenderC modified
+  z=(pixel)/(1.099,0),x=|z|:
+  if (1<x)
+    z=cosxx(z)+sqr(pixel)
+  endif
+  z=sqr(z)+(pixel/(1.099,0)),
+  x=|z|,
+  x<=4
   ;SOURCE: 27carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1157{;Modified Wareman formula
+Carr1157 { ; Modified Wareman formula
 z=1/pixel,root=(1.099,0):
 z3=z*z*z;
 z4=z3*z;
@@ -10336,7 +10364,7 @@ z=cabs(z)-cosxx(c*sqr(z)+pixel)/(pixel-z*1/c),
 }
 
 
-Carr1162{;Forms Faberge' Eggs
+Carr1162 { ; Forms Faberge' Eggs
 z=1/pixel*0.91/pixel,c=pixel/(1.099,0):
 z=z-(cosh(z+pixel))/(z*1/c),
 |real(z)| <=100
@@ -10419,7 +10447,7 @@ z=z-(pixel-z*z+c),
 }
 
 
-Carr1172{;Modified Noel Giffin formula
+Carr1172 { ; Modified Noel Giffin formula
 z=1/pixel,zp=(0,0):
 temp=z
 z=z*z-zp
@@ -10429,7 +10457,7 @@ zp=sin(-temp),
 }
 
 
-Carr1173{;Ditto above
+Carr1173 { ; Ditto above
 z=1/pixel,zp=exp(1.099,0):
 temp=real(z)
 z=exp(z*z+zp)
@@ -10439,7 +10467,7 @@ zp=z-(cosxx(1/temp)),
 }
 
 
-Carr1174{;Modified Noel Giffin formula
+Carr1174{ ; Modified Noel Giffin formula
 z=pixel,zp1=zp2=zp3=(0,0):
 temp=z
 z=z*z-zp3
@@ -10451,7 +10479,7 @@ zp1=conj(temp),
 }
 
 
-Carr1175{;Modified Noel Giffin formula
+Carr1175{ ; Modified Noel Giffin formula
 z=pixel,zp1=zp2=zp3=(0,0):
 temp=z
 z=imag(z*z)-zp3
@@ -10463,7 +10491,7 @@ zp1=conj(temp),
 }
 
 
-Carr1176{;Ditto above
+Carr1176{ ; Ditto above
 z=1/pixel,zp=(0,0):
 temp=z
 z=z*z-cos(zp)
@@ -10473,7 +10501,7 @@ zp=conj(temp),
 }
 
 
-Carr1177{;Ditto above
+Carr1177{ ; Ditto above
 z=cosxx(1/pixel*1/pixel*1/pixel),zp=(0,0):
 temp=z
 z=z*z-cos(zp)
@@ -10483,7 +10511,7 @@ zp=conj(temp),
 }
 
 
-Carr1178{;Modified Noel Giffin formula
+Carr1178{ ; Modified Noel Giffin formula
 z=cosxx(pixel),zp1=zp2=zp3=(0,0):
 temp=z
 z=z*z-zp3
@@ -10495,7 +10523,7 @@ zp1=conj(temp),
 }
 
 
-Carr1179{;Modified Noel Giffin formula
+Carr1179{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=(1/pixel):
 temp=z
 z=z*1/zp3
@@ -10507,7 +10535,7 @@ zp1=conj(temp),
 }
 
 
-Carr1180{;Modified Noel Giffin formula
+Carr1180{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=cotanh(1/-pixel):
 temp=z
 z=z*1/zp3
@@ -10519,7 +10547,7 @@ zp1=conj(temp),
 }
 
 
-Carr1181{;Modified Noel Giffin formula
+Carr1181{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=log(1/-pixel):
 temp=z
 z=z-(z*1/zp3)
@@ -10531,7 +10559,7 @@ zp1=conj(temp),
 }
 
 
-Carr1182{;Modified Noel Giffin formula
+Carr1182{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=log(1/-pixel):
 temp=z
 z=z-(z*1/zp3+1/pixel)
@@ -10543,7 +10571,7 @@ zp1=conj(temp),
 }
 
 
-Carr1183{;Modified Noel Giffin formula
+Carr1183{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=log(1/-pixel):
 temp=cabs(z)
 z=z-(z*1/zp3+conj(1/pixel))
@@ -10555,7 +10583,7 @@ zp1=conj(temp),
 }
 
 
-Carr1184{;Modified Noel Giffin formula
+Carr1184{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=sqr(1/-pixel):
 temp=cabs(z-0.5)
 z=z-(z*1/zp3+conj(1/pixel))
@@ -10567,7 +10595,7 @@ zp1=conj(temp),
 }
 
 
-Carr1185{;Modified Noel Giffin formula
+Carr1185{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=sqr(2*(1/-pixel)):
 temp=cabs(z-0.25)
 z=z-(z*1/zp3+conj(1/pixel))
@@ -10579,7 +10607,7 @@ zp1=conj(temp),
 }
 
 
-Carr1186{;Modified Noel Giffin formula
+Carr1186{ ; Modified Noel Giffin formula
 z=sqr(pixel*pixel+pixel),zp1=zp2=zp3=sqr(cosxx(1/-pixel)):
 temp=cabs(z-1.25)
 z=z-(z*1/zp3+cabs(1/pixel))
@@ -10591,7 +10619,7 @@ zp1=conj(temp),
 }
 
 
-Carr1187{;Modified Noel Giffin formula
+Carr1187{ ; Modified Noel Giffin formula
 z=zp1=pixel,zp2=(1.099,0):
 temp=z
 z=z-(z*zp2-zp1)
@@ -10602,7 +10630,7 @@ zp1=temp,
 }
 
 
-Carr1188{;Modified Noel Giffin formula
+Carr1188{ ; Modified Noel Giffin formula
 z=zp1=pixel,zp2=(1.099,0),zp3=sqr(1/pixel*0.91/pixel):
 temp=z
 z=z-(z*zp2-zp1)
@@ -10614,7 +10642,7 @@ zp1=(temp),
 }
 
 
-Carr1189{;Modified Noel Giffin formula
+Carr1189{ ; Modified Noel Giffin formula
 z=pixel^2.34,zp1=zp2=zp3=(1/pixel)*(1.099,0),
 c=z-(1/pixel):
 temp=cabs(z)
@@ -10643,7 +10671,7 @@ z=cosxx(sqr(sqr(z*1/c)))+c+(1.099,0);
 }
 
 
-Carr1192{;Modified (Modified Newton; Tim Wegner)
+Carr1192{ ; Modified (Modified Newton; Tim Wegner)
        ;from MISCBLB.FRM
 z=1/pixel,z2=z*z+c,z3=z*(cosxx(z2)),c=cosxx(1/pixel*0.91/pixel):
 z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)      
@@ -10665,7 +10693,7 @@ z3=z3*1/c;
 }
 
 
-Carr1194{;Creates VERY nice images
+Carr1194{ ; Creates VERY nice images
 z=conj(1/pixel*0.91/pixel),z2=z+conj(cosxx(1/pixel)),z3=z*z2,
 c=1/cosxx(sqr(pixel)):
 z=z-(z*z+c);
@@ -10882,7 +10910,7 @@ z=z*z+c1,
 }
 
 
-Carr1214{;Newton variant
+Carr1214{ ; Newton variant
 z=sinh(sqr(1/pixel)),z1=conj(sqr(pixel-1))/flip(sqr(pixel+1)),
 c1=sqr(z+c+z1):
 z1=z*z*z;
@@ -10893,7 +10921,7 @@ z=(3*c1+1)/(4*(z*z*z)),
 }
 
 
-Carr1215{;Newton variant (sort of)
+Carr1215{ ; Newton variant (sort of)
 z=sinh(sqr(1/pixel)),c=cosxx(1/pixel*0.91/pixel),
 z1=conj(sqr(pixel-1))/flip(sqr(pixel+1)),c1=sqr(z+c+z1):
 z1=conj(z*z*z);
@@ -10960,7 +10988,7 @@ z=z1*z+c1,
 }
 
 
-Carr1222{;Modified Rollo Silver formula
+Carr1222{ ; Modified Rollo Silver formula
 z=1/pixel,zz=z*z,zzz=zz*z,z=(1.-(1.099,0))*zz+((1.099,0)*zzz):
 z=z+1/pixel;
 zsq=z*1/z;
@@ -10971,7 +10999,7 @@ z=(1.-(1.099,0))*zsq+(1.099,0)*1/zcu,
 }
 
 
-Carr1223{;Modified Rollo Silver formula
+Carr1223{ ; Modified Rollo Silver formula
 z=(1/pixel*0.91/pixel),zz=z*z,zzz=zz*z,
 z=(1.-(2.099,0))*zz+((2.099,0)*zzz):
 z=cosxx(z+1/pixel);
@@ -10983,7 +11011,7 @@ z=z-((1.-(2.099,0))*zsq+(2.099,0)*1/zcu),
 }
 
 
-Carr1224{;Modified Rollo Silver formula
+Carr1224{ ; Modified Rollo Silver formula
 z=(1/pixel*0.91/pixel),zz=z*z,zzz=zz*z,
 z=(1.-(2.099,0))*zz+((2.099,0)*zzz):
 z=cosxx(z+1/pixel)/(z*1/z);
@@ -11183,25 +11211,33 @@ z=(exp(z)*1/c)/(pixel-c*c);
 }
 
 
-Carr1247 FractalFenderC modified(XAXIS_NOPARM) {;Modified Lee Skinner frm.
-z=(pixel)/(5.8,2.01),
-x=|real(z)|,c=cosxx(sqr(1/pixel)):
-(z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z*1/c)+pixel,
-x=|real(z)|,
-x<=4 
+Carr1247(XAXIS_NOPARM) { ; FractalFenderC modified
+  ;Modified Lee Skinner frm.
+  z=(pixel)/(5.8,2.01),
+  x=|real(z)|,c=cosxx(sqr(1/pixel)):
+  if (1<x)
+    z=cosxx(z)+pixel
+  endif
+  z=sqr(z*1/c)+pixel,
+  x=|real(z)|,
+  x<=4
   ;SOURCE: 28carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1248 FractalFenderC modified(XAXIS_NOPARM) {;Modified Lee Skinner frm.
-z=imag(sqr(pixel)),
-x=|real(z)|,c=cosxx(sqr(pixel)):
-(z=imag(cosxx(z)+pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z/c)+(pixel*pixel),
-x=|real(z)|,
-x<=100 
+Carr1248(XAXIS_NOPARM) { ; FractalFenderC modified
+  ; Modified Lee Skinner frm.
+  z=imag(sqr(pixel)),
+  x=|real(z)|,c=cosxx(sqr(pixel)):
+  if (1<x)
+    z=imag(cosxx(z)+pixel)
+  endif
+  z=sqr(z/c)+(pixel*pixel),
+  x=|real(z)|,
+  x<=100
   ;SOURCE: 28carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
@@ -11225,7 +11261,7 @@ z=c-2*cabs(z*pixel);
 }
 
 
-Carr1251{;Modified ZEPPO frm of Brad Beacham
+Carr1251{ ; Modified ZEPPO frm of Brad Beacham
 z=1/(pixel*pixel*pixel),
 c=conj(sqr(1/pixel*0.91/pixel)):
 z=conj(abs(imag(z/pixel)*c-real(z/pixel)))+flip(conj(abs(real(z/pixel)-imag(z/pixel))))-(1.099,0);
@@ -11234,7 +11270,7 @@ z=conj(abs(imag(z/pixel)*c-real(z/pixel)))+flip(conj(abs(real(z/pixel)-imag(z/pi
 }
 
 
-Carr1252{;Modified ZEPPO frm of Brad Beacham
+Carr1252{ ; Modified ZEPPO frm of Brad Beacham
 z=1/(pixel*pixel*pixel),
 c=cotanh(sqr(1/pixel*0.91/pixel)):
 z=conj(abs(imag(z/c)*c-real(z/c)))+flip(conj(abs(real(z/c)-imag(z/c))))-(1.099,0);
@@ -11243,7 +11279,7 @@ z=conj(abs(imag(z/c)*c-real(z/c)))+flip(conj(abs(real(z/c)-imag(z/c))))-(1.099,0
 }
 
 
-Carr1253{;Modified ZEPPO frm of Brad Beacham
+Carr1253{ ; Modified ZEPPO frm of Brad Beacham
 z=abs(1/(pixel*pixel*pixel)),
 c=cosxx(sqr(1/pixel*0.91/pixel)):
 z=((abs(imag(z*1/c)*c-real(z/c)))+flip(conj(abs(real(z*1/c)-imag(z*1/c))))-(1.099,0))/1.34;
@@ -11252,7 +11288,7 @@ z=((abs(imag(z*1/c)*c-real(z/c)))+flip(conj(abs(real(z*1/c)-imag(z*1/c))))-(1.09
 }
 
 
-Carr1254{;Modified ZEPPO frm of Brad Beacham
+Carr1254{ ; Modified ZEPPO frm of Brad Beacham
 z=abs(1/(pixel*pixel*pixel)),
 c=cosxx(sqr(1/pixel*0.91/pixel)):
 z=((abs(imag(z*1/c)*c-real(z/c)))+flip(conj(abs(real(z*1/c)-imag(z*1/c))))-(2.099,0))/0.34;
@@ -11261,7 +11297,7 @@ z=((abs(imag(z*1/c)*c-real(z/c)))+flip(conj(abs(real(z*1/c)-imag(z*1/c))))-(2.09
 }
 
 
-Carr1255{;Modified ZEPPO frm of Brad Beacham
+Carr1255{ ; Modified ZEPPO frm of Brad Beacham
 z=abs(1/(pixel*pixel*pixel)),
 c=cosxx(sqr(0.56/pixel*1/pixel)):
 z=(conj(abs(imag(z*1/c)*c-real(z/c)))+flip(conj(abs(real(z*1/c)-imag(z*1/c))))-(1.099,0));
@@ -11414,7 +11450,7 @@ z=((z*z+pixel)+(z*z+(z/pixel)))/(c-(pixel/c));
 }
 
 
-Carr1272{;Modified Tchebychev formula
+Carr1272{ ; Modified Tchebychev formula
 z=sqr(sqr(sqr(0.5-pixel))),
 c=z*z:
 z=z-(pixel*(c*c*c-6*c*c+9*c-2));
@@ -11432,7 +11468,7 @@ z=z*1/(c*c-1/pixel);
 }
 
 
-Carr1274{;Modified Newton
+Carr1274{ ; Modified Newton
 z=pixel,c=(1.099,0):
 z3=z*z*z;
 z4=z3*z;
@@ -11443,7 +11479,7 @@ z=(3*z4+c)/(4*z3)
 }
 
 
-Carr1275{;Modified Newton
+Carr1275{ ; Modified Newton
 z=abs(pixel),c=(1.099,0):
 z3=conj(z*z*z);
 z4=flip(z3*z);
@@ -11654,7 +11690,7 @@ z=((z*z+pixel*pixel)/(pixel*pixel+z));
 }
 
 
-Carr1300{;based on formulas by Brad Beacham and Gordon Lamb
+Carr1300{ ; based on formulas by Brad Beacham and Gordon Lamb
 z=real(1/pixel)+flip(imag(1/pixel))
 c=real(pixel)+flip(imag(pixel))
 count=z/c,shift=(1.099,0):
@@ -11667,7 +11703,7 @@ z=z-(a+b+c)/(pixel-c*c)
 } 
 
 
-Carr1301{;based on formulas by Brad Beacham and Gordon Lamb
+Carr1301{ ; based on formulas by Brad Beacham and Gordon Lamb
 z=real(1/pixel)+flip(imag(1/pixel))
 c=real(pixel)+flip(imag(pixel))
 count=z/c,shift=(1.099,0):
@@ -11680,7 +11716,7 @@ z=z-((a+b)*1/c)/(pixel-c*c)
 }
 
 
-Carr1302{;based on formulas by Brad Beacham and Gordon Lamb
+Carr1302{ ; based on formulas by Brad Beacham and Gordon Lamb
 z=conj(real(1/pixel))+flip(imag(1/pixel))
 c=conj(real(pixel))+flip(imag(pixel))
 count=z*1/c,shift=(1.099,0):
@@ -11693,7 +11729,7 @@ z=z-((a+b)*1/c)/(pixel-c*c)
 }
 
 
-Carr1303{;based on formulas by Brad Beacham and Gordon Lamb
+Carr1303{ ; based on formulas by Brad Beacham and Gordon Lamb
 z=conj(real(pixel))+flip(imag(pixel))
 c=conj(real(1/pixel))+flip(imag(1/pixel))
 count=abs(z*1/c),shift=1/(2.099,0):
@@ -11715,7 +11751,7 @@ z=cosxx(z+2)+(z/c)/(z-2);
 }
 
 
-Carr1305{;Modified Cubic_alt.
+Carr1305{ ; Modified Cubic_alt.
 z=sqrt(pixel)*cosxx(pixel):
 z=z^3+z^2;
 |z-pixel|<=100
@@ -11755,7 +11791,7 @@ z=((z+pixel)+(z^2+pixel)+(z^4+pixel))/((z*1/c)+pixel);
 }
 
 
-Carr1310{;Cardiod modified
+Carr1310{ ; Cardiod modified
 z=cosxx(1/pixel)*imag(1/pixel),
 x=flip(imag(1/pixel)),y=conj(real(1/pixel)),
 c=x*(cosh(y)+x*sinh(y)):
@@ -11765,7 +11801,7 @@ z=(pixel-z*z)/(pixel-c*c),
 }
 
 
-Carr1311{;Cardiod modified
+Carr1311{ ; Cardiod modified
 z=cosxx(1/pixel)*imag(1/pixel),
 x=flip(imag(1/pixel)),y=conj(real(1/pixel)),
 c=x*(cosh(y)+x*sinh(y)):
@@ -11775,7 +11811,7 @@ z=1/sqr(z*z+pixel)/(pixel-c*c),
 }
 
 
-Carr1312{;Creates Faceted Glass with "G"
+Carr1312{ ; Creates Faceted Glass with "G"
 z=pixel,c=c1-pixel,
 y=pixel/z-(1.099,0),
 c1=conj(imag(pixel))+y:
@@ -11803,7 +11839,7 @@ z=z*z+c+sin(z)
 }
 
 
-Carr1314{;Creates Faceted Glass with "G"
+Carr1314{ ; Creates Faceted Glass with "G"
 z=1/pixel,c=c1^2+c2^2,
 c2=pixel*pixel/z-(1.099,0),
 c1=conj(imag(pixel*pixel))+c2:
@@ -11813,7 +11849,7 @@ z=z*z+c+sin(z);
 }
 
 
-Carr1315{;Creates Faceted Glass with "G".
+Carr1315{ ; Creates Faceted Glass with "G".
 z=1/pixel,c=c1^2+c2^2,
 c2=pixel*pixel/z-pixel,
 c1=conj(imag(pixel*pixel))+c2:
@@ -11823,7 +11859,7 @@ z=z*z+c+sin(z*z);
 }
 
 
-Carr1316{;Creates Faceted Glass with "G".
+Carr1316{ ; Creates Faceted Glass with "G".
 z=1/pixel,c=c1^2+c2^2,
 c2=pixel*pixel/z-pixel,
 c1=conj(imag(pixel*pixel))+c2:
@@ -11833,7 +11869,7 @@ z=z-(pixel*pixel+z)/(pixel-c*c);
 }
 
 
-Carr1317{;Creates Faceted Glass with "G".
+Carr1317{ ; Creates Faceted Glass with "G".
 z=1/pixel,c=(c1/c2^c2/c1),
 c2=sqr(z-1),
 c1=1/(pixel*pixel*pixel)+c2:
@@ -11843,7 +11879,7 @@ z=(pixel*pixel+z)/(pixel-c*c);
 }
 
 
-Carr1318{;Creates Faceted Glass with "G".
+Carr1318{ ; Creates Faceted Glass with "G".
 z=1/pixel,c=(c1/c2^c2/c1),
 c2=sqr(z-1),
 c1=1/(pixel*pixel*pixel)+c2:
@@ -12182,7 +12218,7 @@ z=z-(cosxx(z)+c+sin(z/c1)+cosxx(1/pixel));
 }
 
 
-Carr1355{;Carr-brot 
+Carr1355{ ; Carr-brot 
 z=log(3.1416)+1/pixel:
 z=z-(sqr(z)+pixel),
 |z| <= 4
@@ -12225,7 +12261,7 @@ z=(z-(z*1/c)+sqr(1/pixel))/(pixel-z*z+c),
 }
 
 
-Carr1360{;Modified Peter Jack (Newton variation) frm.
+Carr1360{ ; Modified Peter Jack (Newton variation) frm.
 z=pixel:
 z2=cotanh(z*z);
 z3=cotanh(z*z*z);
@@ -12235,7 +12271,7 @@ z=cotanh(z-((z3-z*.25-1.25)/((z2*3-.25)+P1))),
 }
 
 
-Carr1361{;Modified Peter Jack (Newton variation) frm
+Carr1361{ ; Modified Peter Jack (Newton variation) frm
 z=pixel:
 z2=z-(z*z);
 z3=z-(z*z*z);
@@ -12245,7 +12281,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1362{;Modified Peter Jack (Newton variation) frm
+Carr1362{ ; Modified Peter Jack (Newton variation) frm
 z=pixel,c=1/pixel:
 z2=z-(z*z)/(pixel-c*c);
 z3=z-(z*z*z);
@@ -12255,7 +12291,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1363{;Modified Peter Jack (Newton variation) frm
+Carr1363{ ; Modified Peter Jack (Newton variation) frm
 z=pixel,c=1/pixel:
 z2=z-(z*z)/(pixel-c*c);
 z3=z-(z*z*z)/(pixel-c*c);
@@ -12265,7 +12301,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1364{;Modified Peter Jack (Newton variation) frm
+Carr1364{ ; Modified Peter Jack (Newton variation) frm
 z=imag(pixel),c=1/pixel*0.91/pixel:
 z2=z-(z*z)/(pixel-c*c);
 z3=z-(z*z*z)/(pixel-c*c);
@@ -12275,7 +12311,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1365{;Modified Peter Jack (Newton variation) frm
+Carr1365{ ; Modified Peter Jack (Newton variation) frm
 z=abs(pixel),c=sqr(1/pixel*0.91/pixel):
 z2=z-(z*z)/(pixel-c*c);
 z3=z-(z*z*z)/(pixel-c*c);
@@ -12285,7 +12321,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1366{;Modified Peter Jack (Newton variation) frm
+Carr1366{ ; Modified Peter Jack (Newton variation) frm
 z=abs(pixel),c=sqr(1/pixel*0.91/pixel):
 z2=z-(z*z)/sinh(pixel-z*z+c);
 z3=z-(z*z*z)/sinh(pixel-z*z+c);
@@ -12295,7 +12331,7 @@ z=(z-((z3-z*.25-1.25)/((z2*3-.25)+2.224))),
 }
 
 
-Carr1367 (XAXIS)  {;Modified Scott LPS
+Carr1367 (XAXIS)  { ; Modified Scott LPS
 z=pixel,c=1/((1.099,0)+3):
 z=log(z)*sin(z)+c,
 |z|<=100
@@ -12319,7 +12355,7 @@ z=z-(z*z+c+sinh(z))/(pixel-c*c),
 }
 
 
-Carr1370 (XYAXIS) {;Jm Richard-Collard frm. modified.
+Carr1370 (XYAXIS) { ; Jm Richard-Collard frm. modified.
 z=pixel^2.132,c=z-(1-pixel)/2.5:
 sq=z*z,z=(sq*sin(sq)+sq)+c,
 |z|<=50
@@ -12327,7 +12363,7 @@ sq=z*z,z=(sq*sin(sq)+sq)+c,
 }
 
 
-Carr1371{;Julia
+Carr1371{ ; Julia
 z=pixel,c=(-0.399,-1.1)^1.62+0.0224:
 z=z*z+c,
 |z| <= 4
@@ -12335,7 +12371,7 @@ z=z*z+c,
 }
 
 
-Carr1372{;Julia
+Carr1372{ ; Julia
 z=pixel,c=-0.724^1.59+0.0224:
 z=z*z+c,
 |z| <= 4
@@ -12343,7 +12379,7 @@ z=z*z+c,
 }
 
 
-Carr1373{;Julia
+Carr1373{ ; Julia
 z=pixel,c=-0.784^1.2786+0.0229:
 z=z*z+c,
 |z| <= 4
@@ -12351,7 +12387,7 @@ z=z*z+c,
 }
 
 
-Carr1374{;Julia
+Carr1374{ ; Julia
 z=pixel,c=(-0.784^1.2786+0.0229)+(1.099,0):
 z=z*z+flip(c-1.2),
 |z| <= 4
@@ -12359,7 +12395,7 @@ z=z*z+flip(c-1.2),
 }
 
 
-Carr1375{;Julia
+Carr1375{ ; Julia
 z=pixel,c=(-0.784^1.2786+0.0229)+(1.099,0):
 z=z*z+log(c+0.8),
 |z| <= 4
@@ -12367,7 +12403,7 @@ z=z*z+log(c+0.8),
 }
 
 
-Carr1376{;Julia Serpent
+Carr1376{ ; Julia Serpent
 z=pixel,c=(-0.74543^1.2796+0.0799)+(-0.3,0.09586):
 z=conj(z*z)+conj(c+0.999978),
 |z| <= 4
@@ -12375,7 +12411,7 @@ z=conj(z*z)+conj(c+0.999978),
 }
 
 
-Carr1377{;Julia
+Carr1377{ ; Julia
 z=pixel,c=(-0.76943^1.27996+0.0799)+(-0.34,0.8):
 z=conj(z*z)+conj(c+0.9899978),
 |z| <= 4
@@ -12383,7 +12419,7 @@ z=conj(z*z)+conj(c+0.9899978),
 }
 
 
-Carr1378{;Julia
+Carr1378{ ; Julia
 z=pixel,c=1/pixel+(1.099,0):
 z=(z*z)+(c-1.5),
 |z| <= 4
@@ -12391,7 +12427,7 @@ z=(z*z)+(c-1.5),
 }
 
 
-Carr1379{;Julia
+Carr1379{ ; Julia
 z=pixel,c=(0.35/pixel)-0.2998:
 z=(z*z)+c,
 |z| <= 4
@@ -12415,7 +12451,7 @@ z=(z^2)-(c+0.1745),
 }
 
 
-Carr1382{;SpNewton modified
+Carr1382{ ; SpNewton modified
 z=sqr(sqr(pixel)):
 z1=(z*z-1)*(z*z+0.16);
 z2=4*z^3-1.68*z;
@@ -12425,7 +12461,7 @@ z=z-z1/z2 ,
 }
 
 
-Carr1383{;SpNewton modified
+Carr1383{ ; SpNewton modified
 z=sqr(sqr(pixel)):
 z1=(z*z-0.1/z)*(z*z+0.16);
 z2=4*z^3-1.68*z;
@@ -12435,7 +12471,7 @@ z=z-z1/z2 ,
 }
 
 
-Carr1384{;Julia
+Carr1384{ ; Julia
 z=pixel:
 z=z^2*z+(-0.7456,0.2)+0.18890342;
 |z| <=4
@@ -12443,7 +12479,7 @@ z=z^2*z+(-0.7456,0.2)+0.18890342;
 }
 
 
-Carr1385{;Frm by Paul J. Horn, JuliCon07
+Carr1385{ ; Frm by Paul J. Horn, JuliCon07
 z=pixel:
 z=sqr(sqr(z))+conj(-1.2199085),
 |z| <= 4
@@ -12460,26 +12496,32 @@ z=z-z*1/(cotanh(c)/cosh(c)),
 }
 
 
-Carr1387(XAXIS_NOPARM){;FractalFenderC Modified
-z=0.224,x=|z|,c=z*1/pixel:
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,x=|z|,
-x<=4
+Carr1387(XAXIS_NOPARM) { ; FractalFenderC Modified
+  z=0.224,x=|z|,c=z*1/pixel:
+  if (1<x)
+    z=cosh(z)+c
+  endif
+  z=sqr(z)+pixel,x=|z|,
+  x<=4
   ;SOURCE: 31carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1388(XAXIS_NOPARM){;FractalFenderC Modified
-z=cotanh(pixel*pixel),x=|real(z)|,c=z/pixel^z:
-(z=z-(cotanh(sqr(z/c))))*(1<x)+(z=z)*(x<=1),
-z=z-(z*1/c)/(pixel*pixel+z),
-x=|z|,
-x<=4
+Carr1388(XAXIS_NOPARM) { ; FractalFenderC Modified
+  z=cotanh(pixel*pixel),x=|real(z)|,c=z/pixel^z:
+  if (1<x)
+    z=z-cotanh(sqr(z/c))
+  endif
+  z=z-(z*1/c)/(pixel*pixel+z),
+  x=|z|,
+  x<=4
   ;SOURCE: 31carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1389{;Julia
+Carr1389{ ; Julia
 z=pixel-0.009:
 z=sqr(z)+sqrt(3.1416)-1.505809882,
 |z| <= 4
@@ -12487,7 +12529,7 @@ z=sqr(z)+sqrt(3.1416)-1.505809882,
 }
 
 
-Carr1390    {  ; Creates a Leopard Spotted Julia?
+Carr1390    { ;  ; Creates a Leopard Spotted Julia?
   z = pixel - 0.009:
   z = sqr(z) + sqrt(0.3,0.6) - 1.32,
  |z| <= 4;
@@ -12495,7 +12537,7 @@ Carr1390    {  ; Creates a Leopard Spotted Julia?
 }
 
 
-Carr1391{;Julia?-Mandel?-Neither?
+Carr1391{ ; Julia?-Mandel?-Neither?
 z=pixel-0.009:
 z=sqr(z)+sqrt(z)-1,
 |z| <= 4
@@ -12511,7 +12553,7 @@ z=z^2.099+sqrt(z)-1.1528063,
 }
 
 
-Carr1393{;Julia
+Carr1393{ ; Julia
 z=pixel-0.009:
 z=(z^2)+sqrt(0.6,0.3)-1.9904,
 |z| <= 4
@@ -12519,7 +12561,7 @@ z=(z^2)+sqrt(0.6,0.3)-1.9904,
 }
 
 
-Carr1394{;Julia
+Carr1394{ ; Julia
 z=pixel-0.019:
 z=(z^2.09905)+sqrt(4.29908,-1.2)-3.288955;
 |z| <= 4;
@@ -12560,7 +12602,7 @@ z=(z*z+c)/(z*1/c),
 }
 
 
-Carr1399{;Mark Peterson; Mod. by T.J.E. Reed; Modified 
+Carr1399{ ; Mark Peterson; Mod. by T.J.E. Reed; Modified 
 z=pixel:
 z=tan(z*z)+(-0.74543, 0.2)+0.02,    
 |z| <= 4
@@ -12584,7 +12626,7 @@ z=z^2.09+c-0.5,
 }
 
 
-Carr1402{;Julia (I think??)
+Carr1402{ ; Julia (I think??)
 z=pixel,c=sqrt(1/(1/(1/(5/pixel)))):
 z=z*z+(c-1),
 |z|<=4
@@ -12592,7 +12634,7 @@ z=z*z+(c-1),
 }
 
 
-Carr1403{;Modified T.J.E. Reed formula;Julia
+Carr1403{ ; Modified T.J.E. Reed formula;Julia
 c=z=pixel:   
 z=z*z+c,   
 c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z,    
@@ -12601,7 +12643,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z,
 }
 
 
-Carr1404{;Modified T.J.E. Reed formula;Julia
+Carr1404{ ; Modified T.J.E. Reed formula;Julia
 c=z=pixel:   
 z=z*z+c,   
 c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z,    
@@ -12610,7 +12652,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z,
 }
 
 
-Carr1405{;Modified T.J.E. Reed formula;Julia
+Carr1405{ ; Modified T.J.E. Reed formula;Julia
 c=z=pixel:   
 z=z*z+c,   
 c=(1+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/6+z,    
@@ -12619,7 +12661,7 @@ c=(1+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/6+z,
 }
 
 
-Carr1406{;Julia (?) that produces math errors.
+Carr1406{ ; Julia (?) that produces math errors.
 	 ;Modified T.J.E. Reed formula
 c=z=pixel/0.995:   
 z=z*z+c,   
@@ -12629,7 +12671,7 @@ c=(0.5+flip(imag(sqrt(flip(c)))))*real(sqrt(conj(c)))/9+z,
 }
 
 
-Carr1407{;Ditto above
+Carr1407{ ; Ditto above
 z=pixel/0.995,c=(-0.74543,0.2):   
 z=z*z+c,   
 c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/7+z,    
@@ -12638,7 +12680,7 @@ c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/7+z,
 }
 
 
-Carr1408{;Ditto above
+Carr1408{ ; Ditto above
 z=pixel/0.995,c=(-1.09989,0.595927):   
 z=z*z+c,   
 c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/9+z,    
@@ -12647,7 +12689,7 @@ c=(0.5+flip(imag(sinh(sqrt(flip(c))))))*real(sqrt(conj(tan(c))))/9+z,
 }
 
 
-Carr1409{;Ditto above.
+Carr1409{ ; Ditto above.
 z=pixel/0.995,c=1/pixel:   
 z=z*z+c,   
 c=(1+flip(imag(cosh(sqrt(flip(c))))))*real(sqrt(conj(tanh(c))))/9+z,    
@@ -12656,7 +12698,7 @@ c=(1+flip(imag(cosh(sqrt(flip(c))))))*real(sqrt(conj(tanh(c))))/9+z,
 }
 
 
-Carr1410{;Ditto above
+Carr1410{ ; Ditto above
 z=pixel-1,c=sqr(1/pixel):   
 z=z*z+(0.3,0.6),   
 c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/7.9+z,    
@@ -12665,7 +12707,7 @@ c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/7.9+z,
 }
 
 
-Carr1411{;Ditto above.
+Carr1411{ ; Ditto above.
 z=pixel,c=sqrt(sqr(z*z*z*z)):   
 z=z*z+c,   
 c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/9+z,    
@@ -12674,7 +12716,7 @@ c=(1+flip(imag(cosh(sqrt(conj(c))))))*real(sqrt(conj(tanh(c))))/9+z,
 }
 
 
-Carr1412{;Ditto above.
+Carr1412{ ; Ditto above.
 z=pixel,c=(-0.7549,0.209981):   
 z=z*z+c,   
 c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+tan(z-0.2),    
@@ -12683,7 +12725,7 @@ c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+tan(z-0.2),
 }
 
 
-Carr1413{;Ditto above.
+Carr1413{ ; Ditto above.
 z=pixel,c=(-0.745,0.213):   
 z=z^2+c;
 c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,    
@@ -12692,7 +12734,7 @@ c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,
 }
 
 
-Carr1414{;Ditto above.
+Carr1414{ ; Ditto above.
 z=tan(pixel),c=conj(-0.89895,0.377913):   
 z=z^2+c;
 c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,    
@@ -12701,7 +12743,7 @@ c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,
 }
 
 
-Carr1415{;Ditto above.
+Carr1415{ ; Ditto above.
 z=tan(pixel),c=asinh(-0.89895,0.377913):   
 z=z^2+c;
 c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,    
@@ -12710,7 +12752,7 @@ c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/6+z,
 }
 
 
-Carr1416{;Ditto above.
+Carr1416{ ; Ditto above.
 z=tan(pixel),c=1.224*(-0.89895,0.577913):   
 z=z^2+c;
 c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z,    
@@ -12719,7 +12761,7 @@ c=(1+imag(conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z,
 }
 
 
-Carr1417{;Ditto above.
+Carr1417{ ; Ditto above.
 z=tan(cosxx(pixel)),c=1.224*(1.2,-0.09):   
 z=z^2+c;
 c=cotan(1+imag(conj(sqrt(c))))*tan(real(conj(sqrt(c))))/9+z,    
@@ -12728,7 +12770,7 @@ c=cotan(1+imag(conj(sqrt(c))))*tan(real(conj(sqrt(c))))/9+z,
 }
 
 
-Carr1418{;Ditto above.
+Carr1418{ ; Ditto above.
 z=tan(cosxx(pixel)),c=1.224*(abs(imag(pixel))):   
 z=z^2+sin(pixel);
 c=cotan(1+imag(1/conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z,    
@@ -12737,7 +12779,7 @@ c=cotan(1+imag(1/conj(sqrt(c))))*(real(conj(sqrt(c))))/9+z,
 }
 
 
-Carr1419{;Julia frm ?
+Carr1419{ ; Julia frm ?
 z=pixel,c=1/pixel:   
 z=z*z+(-0.7564,0.21978)+sin(sqrt(z-0.51)),
 c=conj(real(sqrt(c)))*flip(imag(sqrt(c)))/9+z,    
@@ -12746,7 +12788,7 @@ c=conj(real(sqrt(c)))*flip(imag(sqrt(c)))/9+z,
 }
 
 
-Carr1420{;Julia ?
+Carr1420{ ; Julia ?
 z=cosxx(pixel):   
 z=((z*z)+0.5)+(1/log(real(pixel*pixel-1.5))-1.55);
 |z| <= 4
@@ -12754,7 +12796,7 @@ z=((z*z)+0.5)+(1/log(real(pixel*pixel-1.5))-1.55);
 }
 
 
-Carr1421{;Modified BUILTN.FRM Julia
+Carr1421{ ; Modified BUILTN.FRM Julia
 z=pixel,  
 c=((-0.7456,0.39562)*(|(-0.7456,0.2)|<=0)+(-0.7456,0.2) ):
 z=sqr(z*z)+c,
@@ -12764,7 +12806,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1422{;Modified BUILTN.FRM Julia
+Carr1422{ ; Modified BUILTN.FRM Julia
 z=pixel,  
 c=((-0.7456,0.39562)*(|(-0.7456,0.2)|<=0)+(-0.7456,0.2) ):
 z=(z*z)+c,
@@ -12774,7 +12816,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1423{;Modified BUILTN.FRM Julia
+Carr1423{ ; Modified BUILTN.FRM Julia
 z=pixel,  
 c=((1.099,0)*(|(-0.7456,0.42362)|<=0)+sqr(-0.7456,0.42362) ):
 z=(z*z)+(0.4,0.35),
@@ -12784,7 +12826,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1424{; Modified BUILTN.FRM Julia
+Carr1424{ ; Modified BUILTN.FRM Julia
 z=((1-pixel)/2.5^0.75),  
 c=((1.099,0)*(|(-0.7456,0.42362)|<=0)+sqr(-0.7456,0.42362) ):
 z=(z*z)+(-1.76,-0.014),
@@ -12794,7 +12836,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1425{;Modified BUILTN.FRM Manowar
+Carr1425{ ; Modified BUILTN.FRM Manowar
 z=pixel+(1.099,0),z1=z,c=pixel,
 t=(4*(real(1/pixel)<=0)+real(1/pixel)*(0<1/pixel)):
 oldz=z,
@@ -12806,7 +12848,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1426{;Modified BUILTN.FRM Manowar
+Carr1426{ ; Modified BUILTN.FRM Manowar
 z=cotanh(pixel)+(1.099,0),z1=z,c=sin(pixel),
 t=(4*(real(pixel)<=0)+real(pixel)*(0<pixel)):
 oldz=z,
@@ -12818,7 +12860,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1427{;Modified BUILTN.FRM Manowar
+Carr1427{ ; Modified BUILTN.FRM Manowar
 z=cotan(pixel)+(1/pixel),z1=z,c=sin(pixel),
 t=(4*(real(pixel)<=0)+real(pixel)*(0<pixel)):
 oldz=z,
@@ -12830,7 +12872,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1428{;Julia,Modified BUILTN.FRM Julia
+Carr1428{ ; Julia,Modified BUILTN.FRM Julia
 z=pixel, 
 c=((0.3,0.6)*(|(1/pixel)|<=0)+(1/pixel)),
 t=(4*(real(1/pixel)<=0)+real(1/pixel)*(0<1/pixel)):
@@ -12841,7 +12883,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1429{;Julia
+Carr1429{ ; Julia
 z=pixel,c=(-0.7456,0.2):
 z=z*z+c,
 c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
@@ -12850,7 +12892,7 @@ c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z,
 }
 
 
-Carr1430{;"Dog Bone" Julia
+Carr1430{ ; "Dog Bone" Julia
 z=pixel,c=1/(-0.7456,0.2):
 z=z*z+c,
 c=tan((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
@@ -12859,7 +12901,7 @@ c=tan((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1431{;Modified Julzpower from BUILTN.FRM
+Carr1431{ ; Modified Julzpower from BUILTN.FRM
 z=pixel+(p1),c=((0.3,0.6)*(|p1|<=0)+p1),
 m=(2*(|p2|<=0)+p2):
 z=z^real(m)+c,
@@ -12869,7 +12911,7 @@ c=tan((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1432{;Julia
+Carr1432{ ; Julia
 z=pixel+(1.099,0),c=(-0.7456,0.2):
 z=z*z+c,
 c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
@@ -12878,7 +12920,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1433{;Julia
+Carr1433{ ; Julia
 z=pixel+(1.099,0),c =(-0.7456,0.2):
 z=sqr(z)+c,
 z=z+c/4,
@@ -12887,7 +12929,7 @@ z=z+c/4,
 }
 
 
-Carr1434{;Julia
+Carr1434{ ; Julia
 z=sqr(sqr((1-pixel)/2.5^0.75)),c=(-0.7456,0.212):
 z=z*z+c,
 z=z+c/4,
@@ -12896,7 +12938,7 @@ z=z+c/4,
 }
 
 
-Carr1435{;Julia
+Carr1435{ ; Julia
 z=sqr(sqr(sqr((1-pixel)/2.5^0.75))),c=(-0.7456,0.212):
 z=z*z+c,
 z=z+c/4,
@@ -12905,7 +12947,7 @@ z=z+c/4,
 }
 
 
-Carr1436{;Interesting Julia manipulation.
+Carr1436{ ; Interesting Julia manipulation.
 z=pixel,
 c=0.25*(-0.7456,0.2):
 z=sqr(z)+c*4;
@@ -12915,7 +12957,7 @@ z=z+c/1.3,
 }
 
 
-Carr1437{;What-ja-macallit ?
+Carr1437{ ; What-ja-macallit ?
 z=pixel
 c=(0.5/pixel)-(-0.7456,0.2):
 z=sqr(z)+(c-1.2);
@@ -12925,7 +12967,7 @@ z=z+c/2,
 }
 
 
-Carr1438{;Seems to make spiders, julias & mandels.
+Carr1438{ ; Seems to make spiders, julias & mandels.
 z=pixel,
 c=(0.3/pixel)-(0.342,1.97):
 z=sqr(z)+1/log(c);
@@ -12945,7 +12987,7 @@ z=z+c/2,
 }
 
 
-Carr1440{;Julia
+Carr1440{ ; Julia
 z=pixel-(1/pixel)^4.13,
 c=(-0.7456,0.2):
 z=sqr(z)+c;
@@ -12956,7 +12998,7 @@ z=z+c/2,
 }
 
 
-Carr1441{;Julia
+Carr1441{ ; Julia
 z=conj(pixel)-(1/pixel)^4.13,
 c=(-0.7456,0.2):
 z=sqr(z)+c;
@@ -12967,28 +13009,34 @@ z=z+c/2,
 }
 
 
-Carr1442{;Fractal Fender C Modified.
-z=0.224,x=|z|,c=(-0.7456,0.2):
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-x=|z|,
-|z|<=4
+Carr1442 { ; Fractal Fender C Modified.
+  z=0.224,x=|z|,c=(-0.7456,0.2):
+  if (1<x)
+    z=cosh(z)+c
+  endif
+  z=sqr(z)+pixel,
+  x=|z|,
+  |z|<=4
   ;SOURCE: 32carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1443{;Fractal Fender C Modified.
-z=0.224,x=|z|,c=(-0.7456,0.2):
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
-x=|z|,
-|z|<=4
+Carr1443 { ; Fractal Fender C Modified.
+  z=0.224,x=|z|,c=(-0.7456,0.2):
+  if (1<x)
+    z=cosh(z)+c
+  endif
+  z=sqr(z)+pixel,
+  c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
+  x=|z|,
+  |z|<=4
   ;SOURCE: 32carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 
-Carr1444{;Pseudo Spider?
+Carr1444{ ; Pseudo Spider?
 z=sin(pixel+1),c=z-(conj(1/pixel^2*pixel)):
 z=z*z+c;
 c=(z/1.05)+c/2,
@@ -12997,7 +13045,7 @@ c=(z/1.05)+c/2,
 }
 
 
-Carr1445{;Spider variant.
+Carr1445{ ; Spider variant.
 z=sin(pixel+1),c=(-0.7456,0.4):
 z=z*z+c;
 c=(z/1.0489)+c/2,
@@ -13052,7 +13100,7 @@ c=((4-flip(imag(sqrt(c))))*real(sqrt(c))/9+z);
 }
 
 
-Carr1451{;Creates Julia.
+Carr1451{ ; Creates Julia.
 z=cotan(pixel*pixel+1),c=sqr(1/pixel*0.91/pixel):
 z=(z*z)+c-1.49;
 c=1/z*z+1/pixel,
@@ -13070,7 +13118,7 @@ c=1/z*z+1/pixel,
 }
 
 
-Carr1453{;Modified ManP1IMJ
+Carr1453{ ; Modified ManP1IMJ
 z=pixel,c=(0.3,0.6):
 z=sqr(z);
 z=z+c+imag(z),
@@ -13080,7 +13128,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1454{;Modified ManP1IMJ
+Carr1454{ ; Modified ManP1IMJ
 z=flip(pixel),c=(0.3,0.6):
 z=sqr(z);
 z=z+c+real(z),
@@ -13090,7 +13138,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1455{;Modified ManP1IMJ
+Carr1455{ ; Modified ManP1IMJ
 z=pixel,c=sqr(0.3,0.6):
 z=z*z;
 z=z+c+sin(z),
@@ -13100,7 +13148,7 @@ c=z+c/2,
 }
 
 
-Carr1456{;Modified ManP1IMJ
+Carr1456{ ; Modified ManP1IMJ
 z=pixel,c=(-0.7456,0.2):
 z=z*z;
 z=z+c+sin(z),
@@ -13110,7 +13158,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1457{;Julia
+Carr1457{ ; Julia
 z=(1-pixel)/2^pixel,c=pixel:
 z=sqr(z);
 z=z+sin(z)+c,
@@ -13121,7 +13169,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1458{;Julia
+Carr1458{ ; Julia
 z=pixel,c=(0.9/-3.48)-0.88/pixel:
 z=z*z+c;
 c=z+c/2.125,
@@ -13131,7 +13179,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1459{;Julia
+Carr1459{ ; Julia
 z=cosxx(pixel),c=(-0.6456,0.33):
 z=z*z+(c),
 c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
@@ -13176,7 +13224,7 @@ c=z+c/6.125
 }
 
 
-Carr1464{;Faceted Glass modified Mandel
+Carr1464{ ; Faceted Glass modified Mandel
 z=c,c=pixel:
 z=z*z+c,
 |z| <=4
@@ -13184,7 +13232,7 @@ z=z*z+c,
 }
 
 
-Carr1465{;Julia
+Carr1465{ ; Julia
 z=pixel:
 z=z*z+(-0.7456,0.2)
 |cosxx(z)| <= 4 || |conj(z)| <= 4
@@ -13192,7 +13240,7 @@ z=z*z+(-0.7456,0.2)
 }
 
 
-Carr1466{;Faceted Glass InvMandel
+Carr1466{ ; Faceted Glass InvMandel
 z=c,c=1/pixel:
 z=z*z+c,
 |cabs(z)| <= 4 || |asin(z)| <= 4 || |sin(z)| <=4
@@ -13200,7 +13248,7 @@ z=z*z+c,
 }
 
 
-Carr1467{;ConjMandel creates Faceted Glass
+Carr1467{ ; ConjMandel creates Faceted Glass
 z=c,c=conj(pixel):
 z=z*z+c,
 |cabs(z)| <= 4 || |asin(z)| <= 4 || |sin(z)| <=4
@@ -13208,7 +13256,7 @@ z=z*z+c,
 }
 
 
-Carr1468{;TanMandel creates Faceted Glass
+Carr1468{ ; TanMandel creates Faceted Glass
 z=c,c=tan(pixel):
 z=z*z+c,
 |cabs(z)| <= 4 || |cosxx(z)| <= 4 || |sinh(z)| <=4
@@ -13216,7 +13264,7 @@ z=z*z+c,
 }
 
 
-Carr1469{;Julia
+Carr1469{ ; Julia
 z=pixel+flip(-0.5),c=(-1.7621,-0.0141):
 z=(z*z)+(c),
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13225,7 +13273,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1470{;Same as 1469 but "cart before the horse".
+Carr1470{ ; Same as 1469 but "cart before the horse".
 z=z1,z1=pixel+flip(-0.5),c=(-1.7621,-0.0141):
 z=(z*z)+(c),
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13234,7 +13282,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1471{;Faceted Glass Julia
+Carr1471{ ; Faceted Glass Julia
 z=z1,z1=conj(pixel*pixel)+flip(-0.5),c=(-1.7621,-0.2141):
 z=(z*z)+(c),
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13243,7 +13291,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1472{;Faceted Glass Julia
+Carr1472{ ; Faceted Glass Julia
 z=z1,z1=cosxx(pixel*pixel)+flip(-0.5),c=(-1.7621,-0.2141):
 z=(z*z)+(c),
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13252,7 +13300,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1473{;Faceted Glass Julia
+Carr1473{ ; Faceted Glass Julia
 z=z1,z1=sqr(1/pixel*1/pixel*pixel)+flip(-0.5),c=(1.1,0.9):
 z=(z*z)+(c),
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13261,7 +13309,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1474{;BatMandelbrot, Faceted Glass
+Carr1474{ ; BatMandelbrot, Faceted Glass
 z=c,c=(conj(1/pixel)^2.32)-1.25:
 z=z*z+c,
 |z| <=4
@@ -13269,7 +13317,7 @@ z=z*z+c,
 }
 
 
-Carr1475{;Julia
+Carr1475{ ; Julia
 z=(flip(1/pixel)^2.32)-1.25,c=z:
 z=z*z+c,
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13278,7 +13326,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1476{;Julia??
+Carr1476{ ; Julia??
 z=(cosxx(pixel)^2.32)-1.25,c=conj(z):
 z=z*z+c,
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13287,7 +13335,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1477{;??-Julia-??
+Carr1477{ ; ??-Julia-??
 z=tan(1/exp(pixel)^2.32)-1.25,c=conj(z):
 z=z*z+c,
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13296,7 +13344,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1478{;Julia
+Carr1478{ ; Julia
 z=conj(cosxx(pixel)^2.32)-1.25,c=(0.9/-2.48)-conj(0.2/pixel):
 z=z*z+c,
 c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
@@ -13305,7 +13353,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1479{;A REALLY different Julia ??
+Carr1479{ ; A REALLY different Julia ??
 z=1/(pixel*conj(5/pixel-0.724)),
 c=(0.3,0.6):
 z=(z*z+c)/1.3,
@@ -13315,7 +13363,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1480{;Julia??
+Carr1480{ ; Julia??
 z=1/(pixel+pixel-(5/pixel-0.724)),
 c=flip(z*pixel):
 z=(z*z+c),
@@ -13325,7 +13373,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1481{;Julia?
+Carr1481{ ; Julia?
 z=conj(1-pixel)/2.33^1.75,
 c=(conj(tan(1/pixel))^1.32)-1.25:
 z=(z*z+c),
@@ -13335,7 +13383,7 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 }
 
 
-Carr1482{;Julia?
+Carr1482{ ; Julia?
 z=conj(1-pixel)/2.33^1.75,
 c=(-0.7456,0.2315):
 z=(z*z+c),
@@ -13345,7 +13393,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c-0.1/pixel)))/9+z),
 }
 
 
-Carr1483{;Julia?
+Carr1483{ ; Julia?
 z=conj(1-pixel)/2.33^1.75,
 c=imag(4.299,-1.2):
 z=(z*z+c),
@@ -13355,7 +13403,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c-0.1/pixel)))/9+z),
 }
 
 
-Carr1484{;Julia?
+Carr1484{ ; Julia?
 z=(pixel+pixel)/(sqr(1/pixel)),
 c=((pixel-1.5)^1.637)/(z-1.2/pixel):
 z=(z*z+c),
@@ -13365,7 +13413,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1485{;Julia? Faceted Glass
+Carr1485{ ; Julia? Faceted Glass
 z=z1,z1=(pixel+pixel)/(flip(1/pixel*0.91/pixel+0.2/pixel)),
 c=1/conj(pixel-1.5)/(conj(z)-1.4/pixel):
 z=z*z+c,
@@ -13375,7 +13423,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1486{;Julia, Faceted Glass.
+Carr1486{ ; Julia, Faceted Glass.
 z=z1,z1=(pixel+pixel)/(flip(1/pixel*0.91/pixel+4/pixel)),
 c=conj(pixel-1.5)/(flip(z)-1.4/pixel):
 z=z*z+c,
@@ -13385,7 +13433,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1487{;Julia
+Carr1487{ ; Julia
 z=(pixel+pixel)/(1/flip(1/pixel*0.91/pixel+0.9/pixel)),
 c=conj(pixel-1.5)/(flip(z)-3.4/pixel):
 z=z*z+c,
@@ -13395,7 +13443,7 @@ c=((1+flip(imag(sqrt(sinh(c)))))*real(sqrt(tanh(c)))/9+z),
 }
 
 
-Carr1488{;Faceted Glass Julia
+Carr1488{ ; Faceted Glass Julia
 z=z1,z1=(pixel+pixel)/(1/flip(1/pixel*0.91/pixel+0.9/sqr(pixel))),
 c=c1,c1=conj(pixel-1.5)/(flip(z)-3.4/pixel):
 z=z*z+c,
@@ -13405,7 +13453,7 @@ c=((1+flip(imag(sqrt(sinh(c)))))*real(sqrt(tanh(c)))/9+z),
 }
 
 
-Carr1489{;Julia
+Carr1489{ ; Julia
 z=(pixel+pixel)/(flip(1/pixel)),
 c=z*(pixel)/flip(pixel-0.1):
 z=z*z+c,
@@ -13415,7 +13463,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1490{;Julia
+Carr1490{ ; Julia
 z=(pixel+pixel-1)/(flip(1/-pixel)),
 c=z*(pixel+1)/flip(pixel-0.1):
 z=z*z+c,
@@ -13425,7 +13473,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1491{;Julia
+Carr1491{ ; Julia
 z=(pixel+pixel-1)/(flip(1/-pixel)),
 c=z*sqr(pixel-1)/flip(pixel-0.1):
 z=z*z+c,
@@ -13435,7 +13483,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1492{;Julia
+Carr1492{ ; Julia
 z=(pixel+pixel-1)/(flip(1/pixel*0.91/pixel)),
 c=z*sqr(pixel)/flip(1.099,0):
 z=z*z+c,
@@ -13445,7 +13493,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1493{;VERY different Julia
+Carr1493{ ; VERY different Julia
 z=1/(pixel+pixel)/(cosxx(1/pixel*4/pixel)),
 c=z*conj(pixel)/((-1.76,-0.014)/(3/pixel)):
 z=z*z+c,
@@ -13455,7 +13503,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1494{;Julia
+Carr1494{ ; Julia
 z=1/(pixel+pixel)/(cotan(1/pixel*4/pixel)),
 c=z*1/conj(pixel+pixel)/((-5.742,-0.009)/(6/pixel)):
 z=z*z+c,
@@ -13465,7 +13513,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1495{;Julia
+Carr1495{ ; Julia
 z=1/(pixel+pixel)/(cotan(1/pixel*4/pixel)),
 c=z*1/conj(pixel+pixel)/((sqr(z-0.25)*pixel)/(6/pixel)):
 z=z*z+c,
@@ -13475,7 +13523,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1496{;Julia
+Carr1496{ ; Julia
 z=1/(pixel+pixel)/(tan(sqr(1/pixel*4/pixel))),
 c=z*1/(pixel+pixel)/((sqr(pixel*z-1.55)*pixel)/(6/pixel)):
 z=z*z+c,
@@ -13485,7 +13533,7 @@ c=((1+flip(imag(sqrt(sin(c)))))*real(sqrt(tan(c)))/9+z),
 }
 
 
-Carr1497{;Julia
+Carr1497{ ; Julia
 z=sqr(1-pixel)/(2^pixel-0.5),
 c=z*1/conj(pixel+pixel)/(pixel/(6/pixel)):
 z=sqr(z);
@@ -13497,7 +13545,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1498{;Julia?
+Carr1498{ ; Julia?
 z=1/(pixel*conj(5/pixel-0.724)),
 c=pixel+(-0.7456,0.2):
 z=sqr(z);
@@ -13509,7 +13557,7 @@ c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 }
 
 
-Carr1499{;Julia
+Carr1499{ ; Julia
 z=1/(pixel+pixel-(5/pixel-0.724)),
 c=flip(z*pixel):
 z=(z*z+c),

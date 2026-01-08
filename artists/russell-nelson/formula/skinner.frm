@@ -350,16 +350,29 @@ RCL_10 { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-{ Spectacular! }
-   FractalFenderC(XAXIS_NOPARM) {z=p1,x=|z|:
-       (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=sqr(z)+pixel,x=|z|,
-       x<=4 }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
-   SpecC(XAXIS_NOPARM) {z=p1,x=|z|:
-       (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=fn2(z)+pixel,x=|z|,
-       x<=4 }
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
+  ;SOURCE: skinner.frm
+}
 
  Silverado(XAXIS) {; Rollo Silver
   ; Select p1 such that 0. <= p1 <= 1.
@@ -387,12 +400,12 @@ RCL_10 { ; Ron Lewen, 76376,2567
                     z <= (p1 + 3)
         }
 
- DrChaosbrot2(xyaxis)   { ;more phi
-
- z = c = pixel:
- z = sqr(z) + (((sqrt 5 + 1)/2)+c)
- |z| <= 4;
- }
+DrChaosbrot2 (xyaxis) {; more phi
+  z = c = pixel:
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
+  |z| <= 4
+  ;SOURCE: drcha.frm
+}
 
 phoenix_m { ; Mandelbrot stye map of the Phoenix curves
    z=x=y=nx=ny=x1=y1=x2=y2=0:

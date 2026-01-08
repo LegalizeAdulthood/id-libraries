@@ -160,10 +160,11 @@ z=(4/fn1(z)+pixel)/(pixel-c*c),
 |z-fn1(pixel)| <=100
 }
 
-Carr-939{
-z=1/pixel,c=pixel:
-z=imag(z+fn1(z*1/pixel)/c/pixel,
-|z-pixel| <=100
+Carr-939 {
+  z=1/pixel, c=pixel:
+  z=imag(z+fn1(z*1/pixel))/c/pixel
+  |z-pixel| <=100
+  ;SOURCE: 22carr.frm
 }
 
 Carr-940{

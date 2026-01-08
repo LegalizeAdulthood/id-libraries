@@ -26,11 +26,11 @@
 
 0008 {
  z = pixel:
- z = pixel^z+sqr(z)-pixel/z:
+ z = pixel^z+sqr(z)-pixel/z
 }
 
 000b {
  z = pixel^p1:
- z = sqr(z^p2)-pixel^p3:
+ z = sqr(z^p2)-pixel^p3
 }
 

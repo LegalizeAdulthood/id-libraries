@@ -55,17 +55,17 @@ BJ-PHC-G3-03-a   {; Modification of Sylvie Gallet's 3-03
 	z = (z*z+c) / x1+flip(y1), 
 	|z|<=4}
 
-BJ-Newton*2+Man-b   {; Modification of Ron Barnett's TwoMands frm
-        root=1,  
-	count = (count + 1) * (count != 1024)
-	evenodd = (evenodd == (count == 1))
-	oddeven = (evenodd == 0),
-	z = c = pixel+oddeven*p3:
-	z = evenodd*(z^p1+c)+oddeven*(z^p2+c): 
-        z3 = fn1(z * z) * fn2(z * z * z) * fn3(z + c),
-        z4 = z3 * z
-        z = (3 * z4 + root) / (4 * z3),
-	 .004 <= |z4 - Root|}
+BJ-Newton*2+Man-b {; Brian Jones [102702,2213], 1996  Requires passes=1
+                   ; Modification of Ron Barnett's TwoMands frm
+                   ; Edited for Fractint v. 20 by George Martin, 10/98
+  root=1
+  z = c = pixel+(whitesq==0)*p3:
+  z = whitesq*(z^p1+c)+(whitesq==0)*(z^p2+c)
+  z3 = fn1(z * z) * fn2(z * z * z) * fn3(z + c)
+  z4 = z3 * z
+  z = (3 * z4 + root) / (4 * z3)
+  .004 <= |z4 - Root|
+}
 
 BJ-JDfrm010m2 { ; Modified Lee Skinner/Jim Deutch frm
   countreset = (count < 1024)

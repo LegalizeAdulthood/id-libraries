@@ -364,11 +364,12 @@ dots {
     |z|<p1
 }
 
-bizarre    {
-        (x<10)*(z=sqr(z)+pixel),
-        (10<=x)*(x<20)*(z=exp(z)+pixel),
-        (20<=x)*(z=log(z)+pixel),
-        x=x+1, |z|<=4
+bizarre {; Edited for Fractint v. 20 by George Martin 10/98
+  z=sqr(z)+pixel
+  z=exp(z)+pixel
+  z=log(z)+pixel
+  x=x+1
+  |z|<=4
 }
 
 Fish (xaxis) {; To see the fish, use corners=-4/4/-3/3.
@@ -2581,11 +2582,15 @@ ULI_1 {
       |z| <= p2+16
    }
 
-TurtleC (XAXIS_NOPARM) { ; The floating point flag MUST be set for these
-    z=p1:
-    x=real(z),
-    (z=sqr(z)+pixel)*(x<0)+(z=sqr(z)-pixel)*(0<=x),
-    |z|<=4
+TurtleC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin
+  z=p1:
+  x=real(z)
+  IF (x<0)
+    z=sqr(z)+pixel
+  ELSE
+    z=sqr(z)-pixel
+  ENDIF
+  |z|<=4
 }
 
 WaldoTwinsC (XAXIS_NOPARM) { ; The floating point flag MUST be set for these
@@ -3228,11 +3233,16 @@ RCL_10 { ; Ron Lewen, 76376,2567
   }
 
 
-SpecC(XAXIS_NOPARM) {
-   z=p1,x=|z|:
-   (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=fn2(z)+pixel,x=|z|,
-   x<=4 
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
 }
 
 
@@ -3256,19 +3266,23 @@ Tchebychev-t5 (XYAXIS) {   ;Advanced Fractal Programming in C  - Stevens
    |z| <= 4
    }
 
-Fly (XAXIS_NOPARM) {
-    z=p1:
-    x=real(z),
-    (x<0)*(z=sqr(z)+pixel),
-    (0<=x)*(z=sqr(z)-pixel),
-    |z|<=4
+Fly (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1:
+  x=real(z)
+  z=sqr(z)+pixel
+  z=sqr(z)-pixel
+  |z|<=4
 }
 
-FlyC (XAXIS_NOPARM) {
-    z=p1:
-    x=real(z),
-    (z=sqr(z)+pixel)*(x<0)+(z=sqr(z)-pixel)*(0<=x),
-    |z|<=4
+FlyC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1:
+  x=real(z)
+  IF (x<0)
+    z = sqr(z) + pixel
+  ELSE
+    z = sqr(z) - pixel
+  ENDIF
+  |z|<=4
 }
 
 Zppchco8  { ;; Lee2.FRM (Lee Skinner)
@@ -3319,17 +3333,17 @@ a_spider2 { ; Adjustable spider - After Fractint's version
    |z| <= 4
    }
 
-Ajax {the Final Effort; 
-z=c=2/pixel:
-z =(z^(real(p1)))*(c^(real(p2))) + c,
-|z| <=4
+Ajax {;the Final Effort
+  z=c=2/pixel:
+  z =(z^(real(p1)))*(c^(real(p2))) + c
+  |z| <=4
 }
 
-Bali {The difference of two squares;
-z=x=1/pixel, c= fn1 (z):
-z = (x+c) * (x-c); 
-x=fn2(z),
-|z| <=3
+Bali {; The difference of two squares
+  z=x=1/pixel, c= fn1 (z):
+  z = (x+c) * (x-c)
+  x=fn2(z)
+  |z| <=3
 }
 
 Fatso {;
@@ -3339,7 +3353,7 @@ x=fn2(z),
 |z| <=3
 }
 
-Jax {The original; 
+Jax {; The original
 z=c=2/pixel:
 z =(z^4)*(c^4) + c,
 |z| <=4
@@ -3491,17 +3505,19 @@ z2=2*z*expz2-exp(z)-c;
 z=z-(z1/z2) ,
 0.001<=|z1| }
 
-SinE2Z(XAXIS) { ; Jm Collard-Richard
-z=pixel:
-expz2=exp(z*z);
-s=sin(z);
-c=cos(z);
-s2=sin(z*z);
-c2=cos(z*z);
-z1=expz2-exp(z)-s2+s;
-z2=2*z*expz2-exp(z)-z*c2*2+c:
-z=z-(z1/z2) ,
-0.001<=|z1| }
+SinE2Z (XAXIS) {; Jm Collard-Richard
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel:
+  expz2=exp(z*z)
+  s=sin(z)
+  c=cos(z)
+  s2=sin(z*z)
+  c2=cos(z*z)
+  z1=expz2-exp(z)-s2+s
+  z2=2*z*expz2-exp(z)-z*c2*2+c
+  z=z-(z1/z2)
+  0.001<=|z1|
+}
 
 SS2Z(XAXIS) { ; Jm Collard-Richard
 z=pixel:
@@ -4491,13 +4507,13 @@ SGG025 {
 }
 
 ;14.01.1995
-SGG026 {
-   z=1/pixel:
-   a=b=pixel:
-   z=sqr(z)+a;
-   b=a*sin(z)-b;
-   a=sin(z)+b/0.33,
-   |z|<=20
+SGG026 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=1/pixel:
+  a=b=pixel
+  z=sqr(z)+a
+  b=a*sin(z)-b
+  a=sin(z)+b/0.33
+  |z|<=20
 }
 
 ;14.01.1995
@@ -4554,14 +4570,14 @@ SGG031  {
 }
 
 ;16.01.1995
-SGG032 {
-   z=x=1/y=pixel:
-   x=sqr(z*z*z);
-   y=sin(z)+1/z;
-   x=z+p1+exp(y-x);
-   y=z+cos(sqr(x*y));
-   z=x*x-cosh(y),
-   |z|<=4
+SGG032 {; Edited for Fractint v. 20 by George Martin 10/98
+  z=x=y=pixel:
+  x=sqr(z*z*z)
+  y=sin(z)+1/z
+  x=z+p1+exp(y-x)
+  y=z+cos(sqr(x*y))
+  z=x*x-cosh(y)
+  |z|<=4
 }
 
 ; guenzel3.frm
@@ -4603,13 +4619,13 @@ SGG036 {
 }
 
 ;28.01.1995
-SGG037 {
-   z=1/pixel:
-   a=b=pixel:
-   b=a/exp(cos(z))+b;
-   a=sqr(z*z*z)-b;
-   z=1/z+a+log(b),
-   |z|<=4
+SGG037 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=1/pixel:
+  a=b=pixel
+  b=a/exp(cos(z))+b
+  a=sqr(z*z*z)-b
+  z=1/z+a+log(b)
+  |z|<=4
 }
 
 kgexp1 { 
@@ -5244,7 +5260,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
    |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) {; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Mandelbrot set
   ;  formula.
@@ -5256,7 +5272,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) {; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Julia set.
   ;
@@ -5352,19 +5368,19 @@ RCL_Cosh_J { ; Ron Lewen, 76376,2567
       abs(z) < 40
   }
 
-RCL_12 (XAXIS) { ; Ron Lewen, 76376,2567
-  ;
-  z=pxel:
-    z=(z^2+3z+pixel)/(z^2-3z-pixel)
-      |z| <= 10
-  }
-
-RCL_13 (XAXIS) { ; Ron Lewen, 76376,2567
-  ;
+RCL_12 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
   z=pixel:
-    z=(z^2+2z+pixel)/(z^2-2z+pixel)
-      |z| <= 100
-  }
+  z=(z^2+3+pixel)/(z^2-3-pixel)
+  |z| <= 10
+}
+
+RCL_13 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
+  z=pixel:
+  z=(z^2+2+pixel)/(z^2-2+pixel)
+  |z| <= 100
+}
 
 RCL_14 (XAXIS) { ; Ron Lewen, 76376,2567
   ;
@@ -5494,20 +5510,34 @@ A1 (XAXIS) {
     |z| <= 4;
   }
 
-BirdOfPrey(XAXIS_NOPARM) {z=p1, x=1:
-         (x<10)*(z=sqr(z)+pixel),
-         (10<=x)*(z=cosxx(z)+pixel),
-         x=x+1, |z|<=4
+BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
+  z = p1 :
+  z = cosxx(sqr(z) + pixel) + pixel
+  |z| <= 4
 }
 
-BirdOfPreyC(XAXIS_NOPARM) {z=p1, x=1:
-    (z=sqr(z)+pixel)*(x<10)+(z=cosxx(z)+pixel)*(10<=x),
-    x=x+1, |z|<=4
+BirdOfPreyC (XAXIS_NOPARM) {
+      ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
-BirdOfPreyC.1(XAXIS_NOPARM) {z=p1, x=1:
-    (z=sqr(z)+pixel)*(x<10)+(z=cos(z)+pixel)*(10<=x),
-    x=x+1, |z|<=4
+BirdOfPreyC.1 (XAXIS_NOPARM) {
+      ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=cos(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
 CANON1{;12/2/94 a,b,c are modified by fn(), z value is bailout 
@@ -5585,137 +5615,233 @@ CANON6{;12/3/94
  |z|<=32
  }
 
-DeepSpaceProbe(XAXIS_NOPARM) { z=p1, x=1:
-     (x<10)*(z=sqr(z)+pixel),
-     (10<=x)*(x<20)*(z=sin(z)+pixel),
-     (20<=x)*(z=cosxx(z)+pixel),
-     x=x+1, |z|<=4 
+DeepSpaceProbe (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=sin(z)+pixel
+  z=cosxx(z)+pixel
+  x=x+1
+  |z|<=4
 }
 
-DeepSpaceProbeC(XAXIS_NOPARM) { z=p1, x=1:
-  (z=sqr(z)+pixel)*(x<10)+(z=sin(z)+pixel)*(10<=x)*(x<20)+(z=cosxx(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+DeepSpaceProbeC (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=sin(z)+pixel
+  ELSE
+    z=cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
-DeepSpaceProbeC.1(XAXIS_NOPARM) { z=p1, x=1:
-  (z=sqr(z)+pixel)*(x<10)+(z=sin(z)+pixel)*(10<=x)*(x<20)+(z=cos(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+DeepSpaceProbeC.1 (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=sin(z)+pixel
+  ELSE
+    z=cos(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
-DpSpaceProbeTwo(XAXIS_NOPARM) 
-    { z=p1, x=1:
-     (x<10)*(z=sqr(z)+pixel),
-     (10<=x)*(x<20)*(z=exp(z)+pixel),
-     (20<=x)*(z=cosxx(z)+pixel),
-     x=x+1, |z|<=4 
+DpSpaceProbeTwo (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=exp(z)+pixel
+  z=cosxx(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-DpSpaceProbeTwoC(XAXIS_NOPARM) 
-     { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=exp(z)+pixel)*(10<=x)*(x<20)+(z=cosxx(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+
+DpSpaceProbeTwoC (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=exp(z)+pixel
+  ELSE
+    z=cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-DpSpaceProbeTwoC.1(XAXIS_NOPARM) 
-     { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=exp(z)+pixel)*(10<=x)*(x<20)+(z=cos(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+DpSpaceProbeTwoC.1 (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=exp(z)+pixel
+  ELSE
+    z=cos(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-EvilEyeC(XAXIS_NOPARM) {z=p1,x=|z|:
-    (z=sin(z)+pixel)*(1<x)+(z=cosxx(z)+pixel)*(x<=1),
-    x=|z|, x<=4
+EvilEyeC (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=sin(z)+pixel
+  ELSE
+    z=cosxx(z)+pixel
+  ENDIF
+  x=|z|
+  x<=4
 }
 
-EvilEyeC.1(XAXIS_NOPARM) {z=p1,x=|z|:
-    (z=sin(z)+pixel)*(1<x)+(z=cos(z)+pixel)*(x<=1),
-    x=|z|, x<=4
+EvilEyeC.1 (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=sin(z)+pixel
+  ELSE
+    z=cos(z)+pixel
+  ENDIF
+  x=|z|
+  x<=4
 }
       
 
-Eyeball(XAXIS_NOPARM) 
-      {z=p1, x=1:
-      (x<10)*(z=sqr(z)+pixel),
-      (10<=x)*(z=sinh(z)+pixel),
-      x=x+1,
-      |z|<=4
+Eyeball (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=sinh(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-EyeballC(XAXIS_NOPARM)
-      {z=p1, x=1:
-      (z=sqr(z)+pixel)*(x<10)+(z=sinh(z)+pixel)*(10<=x),
-      x=x+1, |z|<=4
+EyeballC (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=sinh(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-FractalFender(XAXIS_NOPARM) 
-      {z=p1,x=|z|:
-       (1<x)*(z=cosh(z)+pixel),
-       z=sqr(z)+pixel,x=|z|,
-       x<=4 
+FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                              ; by George Martin, 10/98
+  z=p1, x=|z|:
+  z=cosh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
 { Spectacular! }
-FractalFenderC(XAXIS_NOPARM) 
-      {z=p1,x=|z|:
-       (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=sqr(z)+pixel,x=|z|,
-       x<=4 
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
 }
 
-FractalFender2(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (1<x)*(z=cosxx(z)+pixel),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FractalFender2 (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                               ; by George Martin, 10/98
+  z=p1, x=|z|:
+  z=cosxx(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FractalFender2C(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FractalFender2C (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                ; by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=cosxx(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FractalFender2C.1(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (z=cos(z)+pixel)*(1<x)+(z=z)*(x<=1),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FractalFender2C.1 (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                  ; by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=cos(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FlyingSquirrel(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (1<x)*(z=sin(z)/cosxx(z)+pixel),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FlyingSquirrel (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                               ; by George Martin 10/98
+  z=p1, x=|z|:
+  z=sin(z)/cosxx(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FlyingSquirrelC(XAXIS_NOPARM)
-             {z=p1,x=|z|:
-             (z=sin(z)/cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FlyingSquirrelC (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                ; by George Martin 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=sin(z)/cosxx(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FlyingSquirrelC.1(XAXIS_NOPARM)
-            {z=p1,x=|z|:
-             (z=tan(z)+pixel)*(1<x)+(z=z)*(x<=1),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FlyingSquirrelC.1 (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                                  ; by George Martin 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=tan(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-Frog(XAXIS_NOPARM)
-           {z=p1,x=|z|:
-             (1<x)*(z=tanh(z)+pixel),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+Frog (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  z=tanh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-FrogC(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (z=tanh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+FrogC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=tanh(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
 hypercomplex { ; Chuck Ebbert -- must use periodicity=0
@@ -5731,116 +5857,203 @@ hypercomplex { ; Chuck Ebbert -- must use periodicity=0
    |z| + |zi| <= t
  }
 
-IfThenfn1fn2(XAXIS_NOPARM)
-    {z=p1,x=|z|:
-    (z=fn1(z))*(1<x)+(z=z)*(x<=1),
-    (z=fn2(z)+pixel),
-    x=|z|, x<=4
+IfThenfn1fn2 (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=fn1(z)
+  ENDIF
+  z=fn2(z)+pixel
+  x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-IfThenElsefn1fn2(XAXIS_NOPARM) 
-    {z=p1,x=|z|:
-    (z=fn1(z)+pixel)*(1<x)+(z=fn2(z)+pixel)*(x<=1),
-    x=|z|, x<=4
+IfThenElsefn1fn2 (XAXIS_NOPARM) {
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z=fn1(z)+pixel
+  ELSE
+    z=fn2(z)+pixel
+  ENDIF
+  x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-IfElsefn1fn2fn3(XAXIS_NOPARM) 
-   { z=p1, x=1:
-   (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)+pixel)*(10<=x)*(x<20)+(z=fn3(z)+pixel)*(20<=x),
-   x=x+1, |z|<=4 
+IfElsefn1fn2fn3 (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=fn1(z)+pixel
+  ELSEIF (x<20)
+    z=fn2(z)+pixel
+  ELSE
+    z=fn3(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-IslandOfChaos(XAXIS_NOPARM) {z=p1, x=1:
-         (x<10)*(z=sqr(z)+pixel),
-         (10<=x)*(z=sin(z)/cosxx(z)+pixel),
-         x=x+1, |z|<=4
+IslandOfChaos (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=sin(z)/cosxx(z)+pixel
+  x=x+1
+  |z|<=4
 }
 
-IslandOfChaosC(XAXIS_NOPARM) {z=p1, x=1:
-    (z=sqr(z)+pixel)*(x<10)+(z=sin(z)/cosxx(z)+pixel)*(10<=x),
-    x=x+1, |z|<=4
+IslandOfChaosC (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=sin(z)/cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
-IslandOfChaosC.1(XAXIS_NOPARM) {z=p1, x=1:
-    (z=sqr(z)+pixel)*(x<10)+(z=tan(z)+pixel)*(10<=x),
-    x=x+1, |z|<=4
+IslandOfChaosC.1 (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=tan(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
 }
 
-ManInTheOzone(XAXIS_NOPARM)
-    { z=p1, x=1:
-     (x<10)*(z=sqr(z)+pixel),
-     (10<=x)*(x<20)*(z=cosxx(z)+pixel),
-     (20<=x)*(z=sin(z)+pixel),
-     x=x+1, |z|<=4 
+ManInTheOzone (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=cosxx(z)+pixel
+  z=sin(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-ManInTheOzoneC(XAXIS_NOPARM) 
-    { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=cosxx(z)+pixel)*(10<=x)*(x<20)+(z=sin(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+ManInTheOzoneC (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=cosxx(z)+pixel
+  ELSE
+    z=sin(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-ManInTheOzoneC.1(XAXIS_NOPARM) 
-    { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=cos(z)+pixel)*(10<=x)*(x<20)+(z=sin(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+ManInTheOzoneC.1 (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=cos(z)+pixel
+  ELSE
+    z=sin(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-Moth(XAXIS_NOPARM)
-    { z=p1, x=1:
-     (x<10)*(z=sqr(z)+pixel),
-     (10<=x)*(x<20)*(z=exp(z)+pixel),
-     (20<=x)*(z=log(z)+pixel),
-     x=x+1, |z|<=4 
+Moth (XAXIS_NOPARM) {
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=exp(z)+pixel
+  z=log(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-MothC(XAXIS_NOPARM)
-    { z=p1, x=1:
-     (z=sqr(z)+pixel)*(x<10)+(z=exp(z)+pixel)*(10<=x)*(x<20)+(z=log(z)+pixel)*(20<=x),
-     x=x+1, |z|<=4 
+MothC (XAXIS_NOPARM) {
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=exp(z)+pixel
+  ELSE
+    z=log(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
 }
 
-SinEgg(XAXIS_NOPARM) 
-      {z=p1,x=|z|:
-      (1<x)*(z=sin(z)+pixel),
-      z=sqr(z)+pixel,x=|z|,
-      x<=4 
+SinEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                       ; George Martin 10/98
+  z=p1, x=|z|:
+  z=sin(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-SinEggC(XAXIS_NOPARM) 
-   {z=p1,x=|z|:
-   (z=sin(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=sqr(z)+pixel,x=|z|,
-   x<=4 
+SinEggC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                        ; George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z = sin(z) + pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-SinhEgg(XAXIS_NOPARM) 
-            {z=p1,x=|z|:
-             (1<x)*(z=sinh(z)+pixel),
-             z=sqr(z)+pixel,x=|z|,
-             x<=4 
+SinhEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                        ; George Martin, 10/98
+  z=p1, x=|z|:
+  z=sinh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-SinhEggC(XAXIS_NOPARM)
-   {z=p1,x=|z|:
-   (z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=sqr(z)+pixel,x=|z|,
-   x<=4 
+SinhEggC (XAXIS_NOPARM) {
+  z=p1, x=|z|:
+  IF (x>1)
+    z = sinh(z) + pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
 }
 
-TestSinMandC(XAXIS_NOPARM) {z=p1,x=|z|:
-    (z=sin(z))*(1<x)+(z=z)*(x<=1),
-    (z=sqr(z)+pixel),
-    x=|z|, x<=4
+TestSinMandC (XAXIS_NOPARM) {; Rewritten for Fractint v. 20 by
+                             ; George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x > 1)
+    z = sin(z)
+  ENDIF
+  z=sqr(z)+pixel
+  x=|z|
+  x<=4
 }
 
-WaldoTwinsC(XAXIS_NOPARM) 
-     {z=p1:z=cosxx(sin(z+pixel))+pixel, 
+WaldoTwinsC(XAXIS_NOPARM) {
+     z=p1:z=cosxx(sin(z+pixel))+pixel, 
      |z|<=4
 }
 
-WaldoTwinsC.1(XAXIS_NOPARM) 
-     {z=p1:z=cos(sin(z+pixel))+pixel, 
+WaldoTwinsC.1(XAXIS_NOPARM) {
+     z=p1:z=cos(sin(z+pixel))+pixel, 
      |z|<=4
 }
 
@@ -5929,23 +6142,27 @@ DAFRM07  {
    |z| <= 4
 }
 
-DAFRM08  {
-   z = pixel, c = z + z^ (1 - z):
-   tmp = fn1(z),
-   real(tmp) = real(tmp) * real(c) - imag(tmp) * imag(c),
-   imag(tmp) = real(tmp) * imag(c) - imag(tmp) * real(c), 
-   z = tmp + pixel,
-   |z| <= 100
-   }
+DAFRM08 {; Edited for Fractint v. 20 by George Martin, 10/98
+         ; The revision is to give the result that the author
+         ; intended
+  z = pixel, c = z + z^ (1 - z):
+  tmp = fn1(z)
+  tmp = real(tmp)*real(c)-imag(tmp)*imag(c)\
+          + flip(real(tmp)*imag(c)-imag(tmp)*real(c))
+  z = tmp + pixel
+  |z| <= 100
+}
 
-DAFRM09  {  
-   z = pixel, c = z + z^ (z - 1):
-   tmp = fn1(z),
-   real(tmp) = real(tmp) * real(c) - imag(tmp) * imag(c),
-   imag(tmp) = real(tmp) * imag(c) - imag(tmp) * real(c), 
-   z = tmp + pixel + 12,
-   |z| <= 4
-   }
+DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
+         ; The revision is to give the result that the author
+         ; intended
+  z = pixel, c = z + z^ (z - 1):
+  tmp = fn1(z)
+  tmp = real(tmp)*real(c)-imag(tmp)*imag(c)\
+         + flip(real(tmp)*imag(c)-imag(tmp)*real(c))
+  z = tmp + pixel + 12
+  |z| <= 4
+}
 
 DAFRM10  { ; var Ron Barnett REB004K
    z = pixel:
@@ -5983,23 +6200,22 @@ DAFRM21 {
    |z| <= 100
    }
 
-DrChaosbrot1(xaxis) { ;more phi
-	z = c = pixel:
-	z = sqr(z) + (((sqrt 5 + 1)/2)+c)
-	|z| <= 4;
+DrChaosbrot1 (xaxis) {; more phi
+  z = c = pixel:
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
+  |z| <= 4
 }
 
-
-DrChaosbrot2(xyaxis)   { ;more phi
-	z = c = pixel:
-	z = sqr(z) + (((sqrt 5 + 1)/2)+c)
-	|z| <= 4;
+DrChaosbrot2 (xyaxis) {; more phi
+  z = c = pixel:
+  z = sqr(z) + (((sqrt(5)+ 1)/2)+c)
+  |z| <= 4
 }
 
-Element(xyaxis) { ;phi lingam
-	z = pixel:
-	z = z*z*z*z + ((sqrt 5 + 1)/2) 
-	|z| <= 4;
+Element (xyaxis) {; phi lingam
+  z = pixel:
+  z = z*z*z*z + ((sqrt(5) + 1)/2)
+  |z| <= 4
 }
 
 Groucho { ; Mutation of 'Fish2'. Mutated by Bradley Beacham [74223,2745]
@@ -6148,11 +6364,11 @@ inandout13 { ;Bradley Beacham  [74223,2745]
       |z| <= 4
 }
 
-Michaelbrot(origin) {    ;based on Golden Mean
-	z = pixel:
-	z = sqr(z) + ((sqrt 5 + 1)/2), 
-	|z| <= 4;
-} 
+Michaelbrot (origin) {; based on Golden Mean
+  z = pixel:
+  z = sqr(z) + ((sqrt(5) + 1)/2)
+  |z| <= 4
+}
 
 Moe { ; Mutation of 'Zexpe'.  Mutated by Bradley Beacham [74223,2745]
   ; Original formula by Lee Skinner [75450,3631]
@@ -6167,7 +6383,7 @@ Moe { ; Mutation of 'Zexpe'.  Mutated by Bradley Beacham [74223,2745]
 
 Natura(xyaxis)  {  ;phi yoni
 	z = pixel:
-	z = z*z*z + ((sqrt 5 + 1)/2) 
+	z = z*z*z + ((sqrt(5) + 1)/2) 
 	|z| <= 4;
 }
 
@@ -6325,33 +6541,33 @@ OldNewtonSinExp (XAXIS) {; Chris Green
   }
 
 phi01(xyaxis) { ;try inside=maxiter and outside=imag on these
-	z = ((sqrt 5 + 1)/2)/pixel:
-	z =  z*z + pixel*((sqrt 5 + 1)/2)
+	z = ((sqrt(5) + 1)/2)/pixel:
+	z =  z*z + pixel*((sqrt(5) + 1)/2)
 	|z| <= 4;
 }
 
 phi02(xyaxis) { ;try inside=maxiter and outside=imag on these
 	c = pixel 
-	z = ((sqrt 5 + 1)/2):
-	z =  z*z + pixel*((sqrt 5 + 1)/2) + c
+	z = ((sqrt(5) + 1)/2):
+	z =  z*z + pixel*((sqrt(5) + 1)/2) + c
 	|z| <= 4;
 }
 
 phi03(xyaxis) { ;try inside=maxiter and outside=imag on these
-	z = ((sqrt 5 + 1)/2)/pixel:
-	z =  z*z*z + pixel*((sqrt 5 + 1)/2)
+	z = ((sqrt(5) + 1)/2)/pixel:
+	z =  z*z*z + pixel*((sqrt(5) + 1)/2)
 	|z| <= 4;
 }
 
 phi04(xyaxis) { ;try inside=maxiter and outside=imag on these
-	z = ((sqrt 5 + 1)/2)/pixel:
-	z =  z*z + pixel*((sqrt 5 + 1)/2)/((sqrt 5 - 1)/2)
+	z = ((sqrt(5) + 1)/2)/pixel:
+	z =  z*z + pixel*((sqrt(5) + 1)/2)/((sqrt(5) - 1)/2)
 	|z| <= 4;
 }
 
 Raphaelbrot(xyaxis) {  ;phi
 	z = pixel:
-	z = sqr(z) + ((sqrt 5 - 1)/2) 
+	z = sqr(z) + ((sqrt(5) - 1)/2) 
 	|z| <= 4;
 }
 
@@ -6368,8 +6584,8 @@ SPCZ(xaxis) { ; resol. sin(z)^cos(z)=0 -Jm Collard-Richard - Use Float=yes
 }
 
 Tetratephi(xyaxis) { ;?
-	z  = c = ((sqrt 5 +1)/2)/pixel:
-	z = c^z + ((sqrt 5 +1)/2) 
+	z  = c = ((sqrt(5) +1)/2)/pixel:
+	z = c^z + ((sqrt(5) +1)/2) 
 	|z| <= 4;
 }
 
@@ -6690,10 +6906,18 @@ CoshInvZ(XYAXIS) {
    |z|<=4
    }
 
-D(XAXIS_NOPARM) { z=p1, x=1:
-	(z=sqr(z)+pixel)*(x<10)+(z=sin(z)+pixel)*(10<=x)*(x<20)+(z=cos(z)+pixel),
-	*(20<=x)  x=x+1, |z|<=4
-	}
+D (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSEIF (x<20)
+    z=sin(z)+pixel
+  ELSE
+    z=cos(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+}
 
 Form3 (XAXIS) { ;Peter Lewman's formulas for Fractint.
           z = Pixel, c = Pixel:
@@ -7136,56 +7360,54 @@ TobeyWineglass(XAXIS) {; Pieter Branderhorst
    z = z * z + c,
    c = (1+flip(imag(fn1(c)))) * real(fn1(c)) / 3 + z,
     |z| <= 4 
-}Whatever_the_name(XAXIS) {   z = pixel:   z=z*z+(1/z*z)+pixel,}
+}
 
-01-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c;
-z=sqr(z) + c,
-|z| <=10
- }
+Whatever_the_name(XAXIS) {
+z = pixel:
+z=z*z+(1/z*z)+pixel,
+}
 
-02-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z*z) + c;
-z=sin(z*z) + c,
-|z| <=10
- }
+01-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c
+  z=sqr(z) + c
+  |z| <=10
+}
 
-03-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sin(z) + c-0.14;
-z=sin(z) + c-0.14,
-|z| <=10
- }
+02-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z*z) + c
+  z=sin(z*z) + c
+  |z| <=10
+}
 
-04-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
- }
+03-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sin(z) + c-0.14
+  z=sin(z) + c-0.14
+  |z| <=10
+}
 
-05-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
- }
+04-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
+}
 
-05-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel:
-z=cosxx(z) + c-0.14;
-z=cosxx(z) + c-0.14,
-|z| <=10
- }
+05-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
+}
 
-07-Carr{
-c=z=1/pixel + (z=c=flip(z) + 0.33/pixel):
-z=cosxx(z) + c-0.14;
-z=tanh(z) + c-0.14,
-|z| <=10
- }
+07-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + flip(z) + 0.33/pixel:
+  z=cosxx(z) + c-0.14
+  z=tanh(z) + c-0.14
+  |z| <=10
+}
 
 08-Carr{
 c=z=1/pixel,c=cosxx(z)+1/pixel:
@@ -7220,7 +7442,7 @@ z=sqr(z) + c,
 
 12-Carr{
 z=c=cosxx(1/pixel):
-z=cosxx(z*z) + (sin(z) + c,
+z=cosxx(z*z) + sin(z) + c,
 |z| <=10
 }
 
@@ -7269,10 +7491,10 @@ z=sqr(conj(z^z^z^z^z)) + .33;
  }
 
 Carr-02D {
-c=z=(1/pixel)/pixel-o.25:
+c=z=(1/pixel)/pixel-0.25:
 z=sqr(z) + 0.33;
 |z| <=4
- }
+}
 
 Carr-02E { ; Try using Distance Estimator function on this formula
 c=z=1/pixel:
@@ -7312,12 +7534,13 @@ z = sin(z),
 |z| <= (5 + p1)
   }
 
-Carr-07 { ; was OK-02 and was modified
-z = c = 1 / pixel, k = 1 + p1:
-z = (c^z) + c:
-z = cotan(z) * k,
-|z| <= (5 + p2)
-  }
+Carr-07 {; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
+}
 
 Carr-08 { ; was OK-01 and was modified
 z = 0, c = 1 / pixel:
@@ -7352,14 +7575,13 @@ z=sqr(z) + c,
 |z| <= 4
   }
 
-Carr-13 {
-c = z = cosxx(pixel):
-z = cosxx(z) + 2;
-zx = real(p2) +1, zy = imag(z);
-c = z = 1 / sqr(pixel):
-z = 1 / cosxx(z) +c;
-|z| <= 4
-  }
+Carr-13 {; Edited for Fractint v. 20 by George Martin, 10/98
+  c = z = cosxx(pixel):
+  z = cosxx(z) + 2
+  c = z = 1 / sqr(pixel)
+  z = 1 / cosxx(z) +c
+  |z| <= 4
+}
 
 Carr-14 { ; modified fnzp fnpix
 z = 1 / tan(1 / pixel) +p1,
@@ -7368,12 +7590,12 @@ z = fn1(z) * fn2(z),
  |z| <=64 
  }
 
-Carr-15(xaxis) { ; Mark Peterson modified(Zoom all the way out & look)
-  z = log(pixel) + 4c, z = cosxx(z): 
+Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
+  z = log(pixel) + 4*c, z = cosxx(z):
  z = z + cosxx(pixel);
  z = sqr(z)
-     Lastsqr <=4 
-  }
+     Lastsqr <=4
+}
 
 Carr-16 {
 z = 0:
@@ -7441,11 +7663,11 @@ z=sqr(z) + (c-1);
 |z| <= 4
   }
 
-Carr-27 { ; Carr-24 Modified
-c=z=1/pixel:
-z=sqr(z) + (c-1 1/4);
- |z| <=10
- }
+Carr-27 {; Carr-24 Modified
+  c=z=1/pixel:
+  z=sqr(z) + (c-1)*(1/4)
+  |z| <=10
+}
 
 Carr-28 { ; Carr-24 Modified
 c=z=1/pixel:
@@ -7781,20 +8003,20 @@ z=sin(flip(z*z*z)) + c,
 
 Carr-151{ ; Dr. Chaosbrot 1 Modified
 z=c=pixel:
-z=sqr(z*z) + (((sqrt 5+1)/2)+c),
+z=sqr(z*z) + (((sqrt(5)+1)/2)+c),
 |z| <=4
  }
 
 Carr-152{
 z=c=1/pixel:
-z=cosxx(flip(z*z/pixel)) + (((sqrt 5+1)/2) + c);
+z=cosxx(flip(z*z/pixel)) + (((sqrt(5)+1)/2) + c);
 z=sqr(flip(z))+c,
 |z| <=4
  }
 
 Carr-153{
 z=c=1/pixel:
-z=tanh(z*z/pixel)+(((sqrt 5+1)/2)+c);
+z=tanh(z*z/pixel)+(((sqrt(5)+1)/2)+c);
 z=sqr(flip(z))+c,
 |z| <=4
  }
@@ -7889,7 +8111,6 @@ z=sqr(1/z*1/z) + c,
 |z| <=4
  }
 
-}
 Carr-571{
 z=1/conj(pixel-p1),c=sin(z/pixel)^conj(z/pixel):
 z=z*z+(c-p2),
@@ -7923,11 +8144,11 @@ z=z*z+conj(c-p2),
 |z| <=10
 }
 
-Carr-576{
-z=1/conj(pixel-p1),
-c=conj(cos(z/(1/pixel)))*conj(z(1/pixel)):
-z=z*z*z+conj(c-p2),
-|z| <=10
+Carr-576 {
+  z=1/conj(pixel-p1)
+  c=conj(cos(z/(1/pixel)))*conj(z/(1/pixel)):
+  z=z*z*z+conj(c-p2)
+  |z| <=10
 }
 
 Carr-577{

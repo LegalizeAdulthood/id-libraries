@@ -205,13 +205,14 @@ SGG025 {
 }
 
 ;14.01.1995
-SGG026 {
-   z=1/pixel:
-   a=b=pixel:
-   z=sqr(z)+a;
-   b=a*sin(z)-b;
-   a=sin(z)+b/0.33,
-   |z|<=20
+SGG026 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=1/pixel:
+  a=b=pixel
+  z=sqr(z)+a
+  b=a*sin(z)-b
+  a=sin(z)+b/0.33
+  |z|<=20
+  ;SOURCE: guenzel.frm
 }
 
 ;14.01.1995
@@ -268,14 +269,15 @@ SGG031  {
 }
 
 ;16.01.1995
-SGG032 {
-   z=x=1/y=pixel:
-   x=sqr(z*z*z);
-   y=sin(z)+1/z;
-   x=z+p1+exp(y-x);
-   y=z+cos(sqr(x*y));
-   z=x*x-cosh(y),
-   |z|<=4
+SGG032 {; Edited for Fractint v. 20 by George Martin 10/98
+  z=x=y=pixel:
+  x=sqr(z*z*z)
+  y=sin(z)+1/z
+  x=z+p1+exp(y-x)
+  y=z+cos(sqr(x*y))
+  z=x*x-cosh(y)
+  |z|<=4
+  ;SOURCE: guenzel.frm
 }
 
 ; guenzel3.frm
@@ -317,13 +319,14 @@ SGG036 {
 }
 
 ;28.01.1995
-SGG037 {
-   z=1/pixel:
-   a=b=pixel:
-   b=a/exp(cos(z))+b;
-   a=sqr(z*z*z)-b;
-   z=1/z+a+log(b),
-   |z|<=4
+SGG037 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=1/pixel:
+  a=b=pixel
+  b=a/exp(cos(z))+b
+  a=sqr(z*z*z)-b
+  z=1/z+a+log(b)
+  |z|<=4
+  ;SOURCE: guenzel.frm
 }
 
 ; guenzel4.frm
@@ -341,13 +344,14 @@ SGG038 {
 }
 
 ;28.01.1995
-SGG039 {
-   z=sqr(pixel):
-   a=b=pixel:
-   z=cosxx(z)+sqr(b);
-   b=a*log(z)-exp(a);
-   a=sin(z)-cosh(z),
-   |z|<=6
+SGG039 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=sqr(pixel):
+  a=b=pixel
+  z=cosxx(z)+sqr(b)
+  b=a*log(z)-exp(a)
+  a=sin(z)-cosh(z)
+  |z|<=6
+  ;SOURCE: guenzel.frm
 }
 
 ;29.01.1995
@@ -407,14 +411,15 @@ SGG045 {
 }
 
 ;06.02.1995 
-SGG046 {
-   z=a=pixel*pixel:
-   b=3.14159265:
-   a=z*sqr(a);
-   b=b+log(a);
-   z=a/sqr(z);
-   a=sinh(z)+b,
-   |z|<=4
+SGG046 {; Edited for Fractint v. 20 by George Martin, 10/98
+  z=a=pixel*pixel:
+  b=3.14159265
+  a=z*sqr(a)
+  b=b+log(a)
+  z=a/sqr(z)
+  a=sinh(z)+b
+  |z|<=4
+  ;SOURCE: guenzel.frm
 }
 
 ; guenzel5.frm
@@ -443,12 +448,13 @@ SGG048 {
 }
 
 ;13.02.1995 
-SGG049 {
-   z=pixel+p1:
-   y=sin(z)+p2:
-   z=sqr(z)*y,
-   |z|<=10
-  }
+SGG049 {; Edited by George Martin to remove extra ":"
+  z=pixel+p1:
+  y=sin(z)+p2
+  z=sqr(z)*y
+  |z|<=10
+  ;SOURCE: guenzel.frm
+}
 
 ;13.02.1995 
 SGG050 {  

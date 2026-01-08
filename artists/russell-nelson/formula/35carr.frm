@@ -173,11 +173,12 @@ z=z*z+c;
 |real(z)| <=4
 }
 
-Carr1570{;Mandelbrot type.
-z=((-0.7456,0.2)+1)/pixel:
-c=pixel*pixel/(0.3,0.6):
-z=z*z+c;
-|real(z)| <=4
+Carr1570 {; Mandelbrot type.
+          ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=((-0.7456,0.2)+1)/pixel
+  c=pixel*pixel/(0.3,0.6):
+  z=z*z+c
+  |real(z)| <=4
 }
 
 Carr1571{;Mandel type.

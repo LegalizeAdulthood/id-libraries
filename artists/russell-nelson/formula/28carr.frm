@@ -373,24 +373,30 @@ z=(exp(z)*1/c)/(pixel-c*c);
 |real(z)| <=100
 }
 
-Carr1247 (XAXIS_NOPARM) {;FractalFenderC modified
-; Modified Lee Skinner frm.
-z=(pixel)/(5.8,2.01),
-x=|real(z)|,c=cosxx(sqr(1/pixel)):
-(z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z*1/c)+pixel,
-x=|real(z)|,
-x<=4 
+Carr1247 (XAXIS_NOPARM) {; FractalFenderC modified
+                         ; Modified Lee Skinner frm.
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=(pixel)/(5.8,2.01)
+  x=|real(z)|, c=cosxx(sqr(1/pixel)):
+  IF (x>1)
+    z=cosxx(z)+pixel
+  ENDIF
+  z=sqr(z*1/c)+pixel
+  x=|real(z)|
+  x<=4
 }
-
+ 
 Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
-;Modified Lee Skinner frm.
-z=imag(sqr(pixel)),
-x=|real(z)|,c=cosxx(sqr(pixel)):
-(z=imag(cosxx(z)+pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z/c)+(pixel*pixel),
-x=|real(z)|,
-x<=100 
+                         ; Modified Lee Skinner frm.
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=imag(sqr(pixel))
+  x=|real(z)|, c=cosxx(sqr(pixel)):
+  IF (x>1)
+    z=imag(cosxx(z)+sqr(pixel))
+  ENDIF
+  z=sqr(z/c)+(pixel*pixel)
+  x=|real(z)|
+  x<=100
 }
 
 Carr1249{

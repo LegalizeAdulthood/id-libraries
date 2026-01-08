@@ -473,15 +473,18 @@ BJ-PHC-G3-03-a   { ; Brian Jones [102702,2213], 1996  Requires passes=1
 	z = (z*z+c) / x1+flip(y1),
 	|z|<=4}
 
-BJ-Newton*2+Man-b   { ; Brian Jones [102702,2213], 1996  Requires passes=1
-                      ; Modification of Ron Barnett's TwoMands frm
-        root=1,
-	z = c = pixel+(whitesq==0)*p3:
-	z = whitesq*(z^p1+c)+(whitesq==0)*(z^p2+c):
-        z3 = fn1(z * z) * fn2(z * z * z) * fn3(z + c),
-        z4 = z3 * z
-        z = (3 * z4 + root) / (4 * z3),
-	 .004 <= |z4 - Root|}
+BJ-Newton*2+Man-b {; Brian Jones [102702,2213], 1996  Requires passes=1
+                   ; Modification of Ron Barnett's TwoMands frm
+                   ; Edited for Fractint v. 20 by George Martin, 10/98
+  root=1
+  z = c = pixel+(whitesq==0)*p3:
+  z = whitesq*(z^p1+c)+(whitesq==0)*(z^p2+c)
+  z3 = fn1(z * z) * fn2(z * z * z) * fn3(z + c)
+  z4 = z3 * z
+  z = (3 * z4 + root) / (4 * z3)
+  .004 <= |z4 - Root|
+  ;SOURCE: phc.frm
+}
 
 BJ-JDfrm010m2 { ; Brian Jones [102702,2213], 1996  Requires passes=1
                 ; Modified Lee Skinner/Jim Deutch frm
@@ -577,14 +580,14 @@ BJ-PHC-CmplxNwtn-1  { ; Brian Jones [102702,2213], 1996  Requires passes=1
 
 ; ---------- Jo Weber -------------------------------------------------
 
-JoWe_02_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_02_PHC(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel
   p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
   a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
   z=(fn1(a1)*whitesq+fn2(a2)*fn1(a3)*(whitesq==0))*pixel,
 }
 
-JoWe_03_PHC_n = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_03_PHC_n { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = c = pixel:
   a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1))
   t=fn1(z)
@@ -592,29 +595,37 @@ JoWe_03_PHC_n = { ; Jo Weber [100424,35], 1996  Requires passes=1
   |z|>=0.5
 }
 
-JoWe_03_PHC_n1 = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_03_PHC_n1 {; Jo Weber [100424,35], 1996    Requires passes=1
   z = c = pixel:
   a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1))
-  t=fn1(z),
-  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0),
-  b2=(fn1(a2)-fn2(a1)*fn2(a3))*whitesq-(c^(fn1(a3)/fn2(a2)))*(whitesq==0),
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  b2=(fn1(a2)-fn2(a1)*fn2(a3))*whitesq-(c^(fn1(a3)/fn2(a2)))*(whitesq==0)
   z=b1
-  b3=(1.0>=|z|),
-  if b3 then z=b2
+  b3=(1.0>=|z|)
+  if (b3)
+    z=b2
+  endif
+  1.0>=|z|
+  ;SOURCE: phc.frm
 }
 
-JoWe_04_PHC = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
   z = c =pixel:
-  t=fn1(z),
-  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0),
-  a1=fn1(z), a2=p1/a1,
-  b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq,
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  a1=fn1(z), a2=p1/a1
+  b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
   z=b1
   b3=(|z|<=4)
-  if b3 then z=b2
+  if (b3)
+    z=b2
+  endif
+  |z|<=4
+  ;SOURCE: phc.frm
 }
 
-JoWe_11b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_11b_PHC(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel
   p=1*(|p1|<0)+p1 :
   a1=fn1(z), a2=fn2(p/a1),
@@ -623,7 +634,7 @@ JoWe_11b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
   |z|<=4
 }
 
-JoWe_11b_PHC2(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_11b_PHC2(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel
   p=1*(|p1|<0)+p1 :
   a1=fn1(z), a2=fn2(p/a1),
@@ -710,7 +721,7 @@ JoWe_CN_12_PHC_2 { ; Jo Weber [100424,35], 1996  Requires passes=1
   |(z-oldz)|>=|0.001|
 }
 
-JoWe_what_10_PHC = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_what_10_PHC { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel:
   a1=sqr(z), a2=p1/a1,
   b1=(fn1(z)*fn2(z)+(p1/z*z)+pixel)*whitesq,
@@ -726,13 +737,13 @@ JoWe_CN_01_PHC    { ; Jo Weber [100424,35], 1996  Requires passes=1
   |(z-oldz)|>=|0.001|
 }
 
-JoWe_what_02m_PHC = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_what_02m_PHC { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel:
   a1=sqr(z), a2=(2/a1)*whitesq,
   z=a1*(whitesq==0)+a2+pixel,
 }
 
-JoWe_04a_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_04a_PHC(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   pixel=abs(real(pixel)) + flip(imag(pixel))
   pixel=real(pixel) + flip(abs(imag(pixel)))
   z = pixel:
@@ -740,14 +751,14 @@ JoWe_04a_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
   z=a1*whitesq+a2*(whitesq==0)+pixel,
 }
 
-JoWe_04b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_04b_PHC(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   pixel=pixel*(-1)^(pixel>0)
   z = pixel:
   a1=fn1(z), a2=fn2(p1/a1),
   z=a1*whitesq+a2*(whitesq==0)+pixel,
 }
 
-JoWe_04c_PHC(XYAXIS) = { ; Jo Weber [100424,35], 1996  Requires passes=1
+JoWe_04c_PHC(XYAXIS) { ; Jo Weber [100424,35], 1996  Requires passes=1
   z = pixel:
   a1=fn1(z), a2=p1/a1,
   z=fn2(a1)*(whitesq==0)+fn3(a2)*whitesq+pixel,

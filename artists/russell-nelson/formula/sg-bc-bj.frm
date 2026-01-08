@@ -350,61 +350,85 @@ BJ-SG-G-1-a    {; Modified Sylvie Gallet [101324,3444], 1996
     |z| <= bailout
   }
 
-BJ-SG-G-1-d    {; Modified Sylvie Gallet [101324,3444], 1996
-  ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
-  c = z = pixel,c1=fn1(c=sin(conj(-0.81256,-0.1295)))/p3
-  z1 = c1 = 1.5*z , z2 = c2 = 2.25*z , z3 = c3 = 3.375*z , z4 = c4 = 5.0625*z
-  l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2)
-  bailout = 16 , iter = 0 :
-   t1 = (iter==l1) , t2 = (iter==l2) , t3 = (iter==l3) , t4 = (iter==l4)
-   z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
-   c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
-   z = z*z+c
-   iter = iter+1
-    |z| <= bailout
-  }
+BJ-SG-G-1-d {; Modified Sylvie Gallet [101324,3444], 1996
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
+   ; periodicity=0
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  c = z = pixel
+  c1=sin(conj(-0.81256,-0.1295))/p3
+  c = fn1(c1)
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
+  bailout = 16, iter = 0 :
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
+  z = z*z+c
+  iter = iter+1
+  |z| <= bailout
+  ;SOURCE: sg-bc-bj.frm
+}
 
-BJ-SG-G-1-e    {; Modified Sylvie Gallet [101324,3444], 1996
-  ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
-  c = z = pixel,c1=fn1(c=sin(conj(-0.81256,-0.1295)))/p3 
-  z1 = c1 = 1.5*z , z2 = c2 = 2.25*z , z3 = c3 = 3.375*z , z4 = c4 = 5.0625*z
-  l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2)
-  bailout = 16 , iter = 0 :
-   t1 = (iter==l1) , t2 = (iter==l2) , t3 = (iter==l3) , t4 = (iter==l4)
-   z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
-   c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
-   z = z*z*z+c
-   iter = iter+1
-    |z| <= bailout
-  }
+BJ-SG-G-1-e {; Modified Sylvie Gallet [101324,3444], 1996
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
+   ; periodicity=0
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  c = z = pixel
+  c1=sin(conj(-0.81256,-0.1295))/p3
+  c = fn1(c1)
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
+  bailout = 16, iter = 0 :
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
+  z = z*z*z+c
+  iter = iter+1
+  |z| <= bailout
+  ;SOURCE: sg-bc-bj.frm
+}
 
-BJ-SG-G-1-f    {; Modified Sylvie Gallet [101324,3444], 1996
-  ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
-  c = z = pixel , c1 = fn1(c=sin(conj(-0.81256,-0.1295)))/p3
-  z1 = c1 = 1.5*z , z2 = c2 = 2.25*z , z3 = c3 = 3.375*z , z4 = c4 = 5.0625*z
-  l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2)
-  bailout = 16 , iter = 0 :
-   t1 = (iter==l1) , t2 = (iter==l2) , t3 = (iter==l3) , t4 = (iter==l4)
-   z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
-   c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
-   z = z*z*z*z+c
-   iter = iter+1
-    |z| <= bailout
-  }
+BJ-SG-G-1-f {; Modified Sylvie Gallet [101324,3444], 1996
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
+   ; periodicity=0
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  c = z = pixel
+  c1=sin(conj(-0.81256,-0.1295))/p3
+  c = fn1(c1)
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
+  bailout = 16, iter = 0 :
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
+  z = z*z*z*z+c
+  iter = iter+1
+  |z| <= bailout
+  ;SOURCE: sg-bc-bj.frm
+}
 
-BJ-SG-G-1-h    {; Modified Sylvie Gallet [101324,3444], 1996
-  ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter, periodicity=0
-  c = z = pixel,c1 = fn1(c=sin(conj(-0.81256,-0.1295)))/p3
-  z1 = c1 = 1.5*z , z2 = c2 = 2.25*z , z3 = c3 = 3.375*z , z4 = c4 = 5.0625*z
-  l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2)
-  bailout = 16 , iter = 0 :
-   t1 = (iter==l1) , t2 = (iter==l2) , t3 = (iter==l3) , t4 = (iter==l4)
-   z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
-   c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
-   z = fn2(z*z)*(z*z*z+c)
-   iter = iter+1
-    |z| <= bailout
-  }
+BJ-SG-G-1-h {; Modified Sylvie Gallet [101324,3444], 1996
+   ; 0 < real(p1) < imag(p1) < real(p2) < imag(p2) < maxiter,
+   ; periodicity=0
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  c = z = pixel
+  c1=sin(conj(-0.81256,-0.1295))/p3
+  c = fn1(c1)
+  z1 = c1 = 1.5*z, z2 = c2 = 2.25*z
+  z3 = c3 = 3.375*z, z4 = c4 = 5.0625*z
+  l1 = real(p1), l2 = imag(p1), l3 = real(p2), l4 = imag(p2)
+  bailout = 16, iter = 0 :
+  t1 = (iter==l1), t2 = (iter==l2), t3 = (iter==l3), t4 = (iter==l4)
+  z = z*(1-(t1||t2||t3||t4)) + z1*t1 + z2*t2 + z3*t3 + z4*t4
+  c = c*(1-(t1||t2||t3||t4)) + c1*t1 + c2*t2 + c3*t3 + c4*t4
+  z = fn2(z*z)*(z*z*z+c)
+  iter = iter+1
+  |z| <= bailout
+  ;SOURCE: sg-bc-bj.frm
+}
 
 BJ-Man-Galore-g (xaxis){;Modified Variation on Sylvie Gallet formula. 
 	       ; George Martin [76440,1143]

@@ -3154,8 +3154,7 @@ GregsMandelZ5 {; (c)2000 Greg McClure
 GregsJuliaZ1 {; (c)2000 Greg McClure
 ; p1 = point, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
-; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for
-point p1
+; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
   z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1: 
    z = fn1(z)^fn2(z) + fn3(z)^p2 + p1
    ip = imag(p3)
@@ -3188,8 +3187,7 @@ point p1
 GregsJuliaZ2 {; (c)2000 Greg McClure
 ; p1 = point, p2 = power, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
-; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for
-point p1
+; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
   z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1: 
    z = fn1(z)^fn2(-z) + fn3(z)^p2 + p1
    ip = imag(p3)

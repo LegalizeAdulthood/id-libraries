@@ -33,11 +33,16 @@ z=z*z+c
 |z|<4
 }
 
-BEJ-0018{; Brian E. Jones 102702,2213@Compuserve.com
-z=c=pixel*sqrt(tanh((pixel*1)^pixel/.1.176930596))*0.05:
-z=sinh(z+z)*pi
-z=z*z+c
-|z|<4
+BEJ-0018 {; Brian E. Jones 102702,2213@Compuserve.com
+          ; Typo corrected by George Martin, 5/4/98
+          ; First line was
+          ; z=c=pixel*sqrt(tanh((pixel*1)^pixel/.1.176930596))*0.05:
+          ; C scan function reads .1.17 as .1)
+  z=c=pixel*sqrt(tanh((pixel*1)^pixel/.1))*0.05:
+  z=sinh(z+z)*pi
+  z=z*z+c
+  |z|<4
+  ;SOURCE: bej0014.frm
 }
 
 BEJ-0021{; Brian E. Jones 102702,2213@Compuserve.com

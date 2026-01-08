@@ -1,22 +1,25 @@
-IslandOfChaos(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-    ; Generalized by Tobey J. E. Reed [76437,375]
-    ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cosxx
-    ; Note:  use floating point
-    z   =  p1, x   =  1:
-   (x  <  10)  * (z=fn1(z) + pixel),
-   (10 <=  x)  * (z=fn2(z) / fn3(z) + pixel),
-    x   = x+1,
-   |z| <= p2
-   }
+IslandOfChaos (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=sin(z)/cosxx(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
+}
 
-IslandOfChaosC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-   ; Generalized by Tobey J. E. Reed [76437,375]
-   ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cos
-   ; Note:  use floating point
-   z=p1, x=1:
-   (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)/fn3(z)+pixel)*(10<=x),
-   x=x+1, |z|<=4
-   }
+IslandOfChaosC (XAXIS_NOPARM) {
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=p1, x=1:
+  IF (x<10)
+    z=sqr(z)+pixel
+  ELSE
+    z=sin(z)/cosxx(z)+pixel
+  ENDIF
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
+}
 
 j1 {; from EXPLOD.FRM
    z=pixel, c=p1:
@@ -1002,7 +1005,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Mandelbrot set
   ;  formula.
   ;  Use floating point
@@ -1011,7 +1014,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Julia set.
   ;  Use floating point
   z=pixel:
@@ -1070,17 +1073,37 @@ RCL_10 { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_12 (XAXIS) { ; Ron Lewen, 76376,2567
+RCL_12z (XAXIS) { ; Ron Lewen, 76376,2567
+                  ; Modified for id-libraries by Legalize Adulthood
+                  ; assume nz means n*z not n
   z=pixel:
-    z=(z^2+3z+pixel)/(z^2-3z-pixel)
+    z=(z^2+3*z+pixel)/(z^2-3*z-pixel)
       |z| <= 10
   }
 
-RCL_13 (XAXIS) { ; Ron Lewen, 76376,2567
+RCL_12 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
   z=pixel:
-    z=(z^2+2z+pixel)/(z^2-2z+pixel)
+  z=(z^2+3+pixel)/(z^2-3-pixel)
+  |z| <= 10
+  ;SOURCE: rclpar.frm
+}
+
+RCL_13z (XAXIS) { ; Ron Lewen, 76376,2567
+                  ; Modified for id-libraries by Legalize Adulthood
+                  ; assume nz means n*z not n
+  z=pixel:
+    z=(z^2+2*z+pixel)/(z^2-2*z+pixel)
       |z| <= 100
   }
+
+RCL_13 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
+  z=pixel:
+  z=(z^2+2+pixel)/(z^2-2+pixel)
+  |z| <= 100
+  ;SOURCE: rclpar.frm
+}
 
 RCL_14 (XAXIS) { ; Ron Lewen, 76376,2567
   z=pixel:

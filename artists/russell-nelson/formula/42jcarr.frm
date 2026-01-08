@@ -501,66 +501,81 @@ z=(pm1*(z^p1)+1)/((p1*z^pm1)),
 |real(z-oldz)|>=|0.001|
 }
 
-Carr2461(YAXIS){; modified Jo Weber frm.
-pixel=-abs(real(pixel))+flip(imag(pixel)), 
-pm1=p1-1,
-z=(1.5*pixel^9)-cabs(0.08pixel-flip(0.01/pixel))+conj(0.0535/pixel)+0.09:
-oldz=z,
-z=(pm1*(z^p1)+1)/((p1*z^pm1)),
-|(z-oldz)|>=|0.001|
+Carr2461 (YAXIS) {; modified Jo Weber frm.
+     ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
+                  ; Added variable "newpixel". G.Martin 6/15/99
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  pm1=p1-1
+  z=(1.5*newpixel^9)-cabs(0.08*newpixel-flip(0.01/newpixel))+conj(0.0535/newpixel)\
+    +0.09:
+  oldz=z
+  z=(pm1*(z^p1)+1)/((p1*z^pm1))
+  |(z-oldz)|>=|0.001|
+  ;SOURCE: 42jcarr.frm
 }
 
-Carr2462{;Modified Brian E. Jones frm. mans-galore-012
-pixel=-abs(real(pixel))+flip(imag(pixel)),
-r=cabs(conj(conj(pixel/2))),
-z=(3.5*pixel^5)-r-sin(0.08pixel-flip(0.01/pixel))+conj(0.0535/pixel)+0.097,
-c=(3.5*pixel^8)-r-sin(0.08pixel-flip(0.01/pixel))+conj(0.0535/pixel)+0.097,
-iter=0,x=(real(z)),y=(imag(z)),
-nextzoom=iterspace=real(p1),magnification=imag(p1),
-x1=x-p2*(fn1(y+p3*fn2(y))),
-d1=(0.0003299/-pixel)+(flip(0.00010/pixel)),
-y1=y-p2*(fn1(x+p3*fn2(x))):
-test=(iter==nextzoom)
-nextzoom=nextzoom+test*iterspace
-z=z*(1-test)+d1+x1+flip(y1)
-c=c*(1-test)+d1+test*magnification*c
-z=z*z+c
-iter=iter+1
-|z|<=16
+Carr2462 {; Modified Brian E. Jones frm. mans-galore-012
+     ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
+                  ; Added variable "newpixel". G.Martin 6/15/99
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  r=cabs(conj(conj(newpixel/2)))
+  z=(3.5*newpixel^5)-r-sin(0.08*newpixel-flip(0.01/newpixel))+conj(0.0535/newpixel)\
+    +0.097
+  c=(3.5*newpixel^8)-r-sin(0.08*newpixel-flip(0.01/newpixel))+conj(0.0535/newpixel)\
+    +0.097
+  iter=0, x=(real(z)), y=(imag(z))
+  nextzoom=iterspace=real(p1), magnification=imag(p1)
+  x1=x-p2*(fn1(y+p3*fn2(y)))
+  d1=(0.0003299/-newpixel)+(flip(0.00010/newpixel))
+  y1=y-p2*(fn1(x+p3*fn2(x))):
+  test=(iter==nextzoom)
+  nextzoom=nextzoom+test*iterspace
+  z=z*(1-test)+d1+x1+flip(y1)
+  c=c*(1-test)+d1+test*magnification*c
+  z=z*z+c
+  iter=iter+1
+  |z|<=16
+  ;SOURCE: 42jcarr.frm
 }
 
-Carr2463{;Modified Brian E. Jones frm. mans-galore-012
-r=cabs(flip(flip(pixel/2))),
-c=(3.5*pixel^8)-r-sin(0.08pixel-flip(0.01/pixel))+conj(0.0535/pixel)+0.097,
-z=pixel,
-iter=0,x=(real(z)),y=(imag(z)),
-nextzoom=iterspace=real(p1),magnification=imag(p1),
-x1=x-p2*(fn1(y+p3*fn2(y))),
-y1=y-p2*(fn1(x+p3*fn2(x))):
-test=(iter==nextzoom)
-nextzoom=nextzoom+test*iterspace
-z=z*(1-test)+x1+flip(y1)
-c=c*(1-test)+test*magnification*c
-z=z*z+c
-iter=iter+1
-|z|<=16
+Carr2463 {; Modified Brian E. Jones frm. mans-galore-012
+          ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
+  r=cabs(flip(flip(pixel/2)))
+  c=(3.5*pixel^8)-r-sin(0.08*pixel-flip(0.01/pixel))+conj(0.0535/pixel)\
+    +0.097
+  z=pixel
+  iter=0, x=(real(z)), y=(imag(z))
+  nextzoom=iterspace=real(p1), magnification=imag(p1)
+  x1=x-p2*(fn1(y+p3*fn2(y)))
+  y1=y-p2*(fn1(x+p3*fn2(x))):
+  test=(iter==nextzoom)
+  nextzoom=nextzoom+test*iterspace
+  z=z*(1-test)+x1+flip(y1)
+  c=c*(1-test)+test*magnification*c
+  z=z*z+c
+  iter=iter+1
+  |z|<=16
+  ;SOURCE: 42jcarr.frm
 }
 
-Carr2464{;Modified Brian E. Jones frm. mans-galore-012
-r=cabs(flip(flip(pixel/2))),
-c=(3.5*pixel^8)-r-sin(0.08pixel-flip(0.01/pixel))+conj(0.0535/pixel)+0.097,
-z=0.75*pixel,
-iter=0,x=(real(z)),y=(imag(z)),
-nextzoom=iterspace=real(p1),magnification=imag(p1),
-x1=x-p2*(fn1(y+p3*fn2(y))),
-y1=y-p2*(fn1(x+p3*fn2(x))):
-test=(iter==nextzoom)
-nextzoom=nextzoom+test*iterspace
-z=z*(1-test)+x1+flip(y1)
-c=c*(1-test)+test*magnification*c
-z=z*z+c
-iter=iter+1
-|z|<=16
+Carr2464 {; Modified Brian E. Jones frm. mans-galore-012
+          ; Corrected typo (0.08pixel to 0.08*pixel) G. Martin 10/98
+  r=cabs(flip(flip(pixel/2)))
+  c=(3.5*pixel^8)-r-sin(0.08*pixel-flip(0.01/pixel))+conj(0.0535/pixel)\
+      +0.097
+  z=0.75*pixel
+  iter=0, x=(real(z)), y=(imag(z))
+  nextzoom=iterspace=real(p1), magnification=imag(p1)
+  x1=x-p2*(fn1(y+p3*fn2(y)))
+  y1=y-p2*(fn1(x+p3*fn2(x))):
+  test=(iter==nextzoom)
+  nextzoom=nextzoom+test*iterspace
+  z=z*(1-test)+x1+flip(y1)
+  c=c*(1-test)+test*magnification*c
+  z=z*z+c
+  iter=iter+1
+  |z|<=16
+  ;SOURCE: 42jcarr.frm
 }
 
 Carr2465{;Modified Brian E. Jones frm. mans-galore-012

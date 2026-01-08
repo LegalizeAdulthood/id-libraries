@@ -269,29 +269,27 @@ endif
 done >= 0 ; Continue if the flag >=0.
 } 
 
-Colorit-3f { ; (c) Jay Hill, 1998
-; p1= light angle (cos a, sin a)
-; use these, float=y inside=0 outside=real
-periodicity=0
-iter=0, zc = 0, c = pixel, dz=1
-; 23 is the color of the period 1 component.
-z=23*(|(2*sinh(asinh(sqrt(-6.75)*c)/3))|<=1.0)
-done=-(z>0) ; done if we know z is not 0
-if(p1==0)
-p1=1
-endif
-: ; initialization.
-iter = iter+1 ; gotta count the iterations
-dz=3*sqr(zc)*dz+1 ; derivative, dz/dc, a slope
-for shading
-zc=zc*sqr(zc) + c ; standard MSet cubic
-iteration  z=z^3+c
-if(|zc| >= 1024) ; Bailout 
-z = z-8+((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
-done=-1 ; Set flag to force an exit.
-endif
-done >= 0 ; Continue if the flag >=0.
-} 
+Colorit-3f {; (c) Jay Hill, 1998
+            ; p1= light angle (cos a, sin a)
+            ; use these, float=y inside=0 outside=real periodicity=0
+  iter=0, zc = 0, c = pixel, dz=1
+                         ; 23 is the color of the period 1 component.
+  z=23*(|(2*sinh(asinh(sqrt(-6.75)*c)/3))|<=1.0)
+  done=-(z>0)            ; done if we know z is not 0
+  IF (p1==0)
+    p1=1
+  ENDIF
+  :                      ; initialization.
+  iter = iter+1          ; gotta count the iterations
+  dz=3*sqr(zc)*dz+1      ; derivative, dz/dc, a slope for shading
+  zc=zc*sqr(zc) + c      ; standard MSet cubic iteration  z=z^3+c
+  IF (|zc| >= 1024)      ; Bailout
+    z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
+    done=-1              ; Set flag to force an exit.
+  ENDIF
+  done >= 0              ; Continue if the flag >=0.
+  ;SOURCE: 98msg.frm
+}
 
 Colorit-3fJS { ; (c) Jay Hill, 1998
 ; angle=real(p1)+sqrt(imag(p1)) 
@@ -696,7 +694,9 @@ endif
 done >= 0 ; Continue if the flag >=0.
 } 
 
-hermanm_man-polar { ; Kerry Mitchell 16feb98
+hermanm_man-polar {; Kerry Mitchell 16feb98
+        ; See the end of formula hermanm_alpha for Kerry Mitchell's
+        ;  explanation of his hermanm formulas
         ; real(p1) = z exponent (use integer >= 2; m=n-1)
         ; imag(p1) = g exponent (integers)
         ; real(p2) = alpha magnitude (try 1)
@@ -706,51 +706,52 @@ hermanm_man-polar { ; Kerry Mitchell 16feb98
         ; use decomp=256
         ; zero and infinity bailouts hardcoded to 1e-6, 1e6
         ; coloring speed hardcoded to 4
-        c=pixel, iter=1, n=real(p1), m=imag(p1), nfac=2*n-1
-        maxr=1e6, minr=1/maxr, speed=4*pi/128
-        r=real(p2), t=imag(p2), alpha=r*(cos(t)+flip(sin(t)))
-        oln=1/log(n), fac=log(0.5*log(maxr))
-        c2=sqr(c), hypnum=sqr(n)+sqr(m), pn=1
-        hypden=sqr(n-m), hypfac=hypnum/hypden
-        if (real(p3)<0)
-          pn=-1
-          end if
-        if (real(c2)>hypfac)
-          pn=-pn
-        end if
-        if (imag(c)<0)
-          pn=-pn
-        end if
-        afac=c*n, bfac=c2*(n-m)+(n+m), cfac=c*n
-        d=sqrt(bfac*bfac-4*afac*cfac)
-        z=(bfac+pn*d)/(2*afac)
-        :
-        g=(z-c)/(1-c*z), z=alpha*z^n*g^m
-        iter=iter+1, r=|z|
+  c=pixel, iter=1, n=real(p1), m=imag(p1), nfac=2*n-1
+  maxr=1e6, minr=1/maxr, speed=4*pi/128
+  r=real(p2), t=imag(p2), alpha=r*(cos(t)+flip(sin(t)))
+  oln=1/log(n), fac=log(0.5*log(maxr))
+  c2=sqr(c), hypnum=sqr(n)+sqr(m), pn=1
+  hypden=sqr(n-m), hypfac=hypnum/hypden
+  IF (real(p3)<0)
+    pn=-1
+  ENDIF
+  IF (real(c2)>hypfac)
+    pn=-pn
+  ENDIF
+  IF (imag(c)<0)
+    pn=-pn
+  ENDIF
+  afac=c*n, bfac=c2*(n-m)+(n+m), cfac=c*n
+  d=sqrt(bfac*bfac-4*afac*cfac)
+  z=(bfac+pn*d)/(2*afac)
+  :
+  g=(z-c)/(1-c*z), z=alpha*z^n*g^m
+  iter=iter+1, r=|z|
         ;
         ; orbit trap around 0
         ;   renormalize iteration count via decomp angle
         ;   set "iteration done" flag (iter=-1)
         ;
-        if (r<minr)
-          angle=(iter+oln*(fac-log(log(cabs(z)))))*speed
-          z=cos(angle)+flip(sin(angle))
-          iter=-1
-          end if
+  IF (r<minr)
+    angle=(iter+oln*(fac-log(log(cabs(z)))))*speed
+    z=cos(angle)+flip(sin(angle))
+    iter=-1
+  ENDIF
         ;
         ; orbit trap around infinity
         ;   renormalize iteration count via decomp angle
         ;   add pi to angle to separate from 0 orbit trap
         ;   set "iteration done" flag (iter=-1)
         ;
-        if (r>maxr)
-          angle=(iter+oln*(fac-log(log(cabs(z)))))*speed
-          angle=angle+pi
-          z=cos(angle)+flip(sin(angle))
-          iter=-1
-          end if
-        iter>0
-        }
+  IF (r>maxr)
+    angle=(iter+oln*(fac-log(log(cabs(z)))))*speed
+    angle=angle+pi
+    z=cos(angle)+flip(sin(angle))
+    iter=-1
+  ENDIF
+  iter>0
+  ;SOURCE: 98msg.frm
+}
 
 Hill001a-a (XAXIS){ ; Flattened cardioid by Jay R. Hill, 1998
 ; Classic Mandelbrot set fractal, transformed

@@ -1,4 +1,4 @@
- comment = {
+ comment {
  FRACTINT.DOC has instructions for adding new formulas to this file.
  Note that there are several hard-coded restrictions in the formula
  interpreter:
@@ -14,7 +14,7 @@
 
  }
 
-Mandelbrot(XAXIS) = {
+Mandelbrot(XAXIS) {
    z = Pixel:
    z = sqr(z) + pixel,
    |z| <= 4
@@ -25,7 +25,7 @@ Mandelbrot(XAXIS) = {
   mathematician Srinivasa Ramanujan in the book "The World of Mathematics" Vol.
   1, pp 366-376.}
 
-  Ramanujan1(ORIGIN) = {
+  Ramanujan1(ORIGIN) {
        z = pixel:
        z = (cosh(p1 * sqr(z)) - sinh(p2 * sqr(z))/(p2 * sqr(z)))/z,
        |z|<= 4   
@@ -34,7 +34,7 @@ Mandelbrot(XAXIS) = {
 { The following formula came from Tobey J. E. Reed when asked how he made his
   IMAGE1 and IMAGE2 fractals.}
 
-  LeeMandel1(XYAXIS) = {
+  LeeMandel1(XYAXIS) {
        z = pixel:
        c = sqr(pixel)/z,
        c = z + c,
@@ -42,7 +42,7 @@ Mandelbrot(XAXIS) = {
        |z| < P1 
   }
 
-  LeeMandel2(XYAXIS) = {
+  LeeMandel2(XYAXIS) {
        z = pixel:
        c = sqr(pixel)/z,
        c = z + c,
@@ -50,7 +50,7 @@ Mandelbrot(XAXIS) = {
        |z| < 4
   }
 
-  Tobey3(XAXIS)      = {
+  Tobey3(XAXIS) {
        z = pixel:
        c = pixel - sqr(z),
        c = pixel + c/z,
@@ -58,7 +58,7 @@ Mandelbrot(XAXIS) = {
        |z| < 4
   }
 
-ConformalMapping = {
+ConformalMapping {
 	c = pixel, RealZ = Real(c), ImagZ = Imag(c):
 		RealZ = Sqr(RealZ) + (RealZ * ImagZ) + Real(c);
 		ImagZ = Sqr(ImagZ) + (RealZ * ImagZ) + Imag(c);
@@ -66,45 +66,45 @@ ConformalMapping = {
 	|z| < 4
 }
 
-Sterling(XAXIS) = {
+Sterling(XAXIS) {
 	z = Pixel:  z = ((z/2.7182818)^z)/sqr(6.2831853*z),
 	|z| <= 4
 }
 
-Sterling2(XAXIS) = {
+Sterling2(XAXIS) {
 	z = pixel:  z = ((z/2.7182818)^z)/sqr(6.2631853*Z) + pixel,
 	|z| <= 4
 }
 
-Sterling3(XAXIS) = {
+Sterling3(XAXIS) {
 	z = Pixel:  z = ((z/2.7182818)^z)/sqr(6.2831853*z) - pixel,
 	|z| <= 4
 }
 
-Something (xaxis) = {
+Something (xaxis) {
 	z = pixel:
 	z = pixel + z*z + 1/z/z,
 	|z| <= 4
 }
 
-Somethingelse (xyaxis) = {
+Somethingelse (xyaxis) {
 	z = 1:
 	z = pixel * (z*z + 1/z/z),
 	|z| <= 1000000
 }
 
-JSomethingelse (xyaxis) = {
+JSomethingelse (xyaxis) {
 	z = pixel:
 	z = p1 * (z*z + 1/z/z),
 	|z| <= 1000000
 }
 
-No_name(xaxis) = {
+No_name(xaxis) {
 	z = pixel:
 	z=z+z*z+(1/z*z)+pixel,
 	|z| <= 4
 }
-comment = {
+comment {
 It seems not so ugly at first glance and lot of corners to zoom in.
 Try this:
   Corners		x		y
@@ -113,7 +113,7 @@ bottom-right      -0.978384	  -0.751678
 center		  -1.07838	  -0.67668
 }
 
-Tim's_Error(XAXIS) = {
+Tim's_Error(XAXIS) {
 	z = pixel, c = z ^ (z - 1):
 	z = sqr(z);
 	t2 = real(z)*real(c) + imag(z)*imag(c);
@@ -121,12 +121,12 @@ Tim's_Error(XAXIS) = {
 	z = t2 + t3 + pixel,
 	|z| <= 4
 }
-comment = {
+comment {
 A reverse enginerring of a coding error by Tim Wegner done while hard coding
 MarksMandelPwr fractal.  Looks like a bug-eyed bird of prey.
 }
 
-Whatever_the_name(XAXIS) = {
+Whatever_the_name(XAXIS) {
 	z = pixel:
 	z=z*z+(1/z*z)+pixel,
 }
@@ -143,56 +143,56 @@ Jm_11a {; generalized Jm Richard-Collard type
     |z|<=t 
   } 
 
-Newducks(XAXIS) = {
+Newducks(XAXIS) {
    z=pixel,t=1+pixel:
    z=sqr(z)+t,
    |z|<=4
    }
 
-SinInvZ(XYAXIS) = {
+SinInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=sin(inv/z),
    |z|<=4
    }
  
-CosInvZ(XYAXIS) = {
+CosInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cos(inv/z),
    |z|<=4
    }
  
-TanInvZ(XYAXIS) = {
+TanInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    t=inv/z;
    z=sin(t)/cos(t),
    |z|<=4
    }
  
-SinhInvZ(XYAXIS) = {
+SinhInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=sinh(inv/z),
    |z|<=4
    }
  
-CoshInvZ(XYAXIS) = {
+CoshInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cosh(inv/z),
    |z|<=4
    }
  
-TanhInvZ(XYAXIS) = {
+TanhInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=tanh(inv/z),
    |z|<=4
    }
 
-MyMandel = {
+MyMandel {
    z=pixel:
    z=real(z)^2+real(z)*imag(z)+flip(imag(z)^2-real(z)*imag(z))+pixel
    |z|<=4
    }
 
-IAC  = { 
+IAC { 
    z = pixel: 
    z = z ^1.5 - .02, 
    |z| <= 4 
@@ -264,7 +264,7 @@ flip3_man(XAXIS) { ; Rick Hughes
    |z| <= 4
    }
 
-JulibrotSlice1 = {; Randy Hutson - 2D slice of 4D Julibrot
+JulibrotSlice1 {; Randy Hutson - 2D slice of 4D Julibrot
   z = real(p1)+flip(imag(pixel)), c = real(pixel)+flip(imag(p1)):
   z = sqr(z)+c,
   LastSqr <= 4
@@ -292,7 +292,7 @@ Mandel2 { ; Classic Mandel, using LastSqr for bailout
    LastSqr <= 4
  }
 
-COMMENT = {
+COMMENT {
  Mandel2 is a simplified version of the one in your message.  Both of these
 generate the 'right' picture but they do it in different ways.  At the end
 of each orbit calc, Z contains the 'right' value in the first formula, but
@@ -399,19 +399,29 @@ Gen_01 {; generalized type p1=p2=0, fn1=fn2=fn3=ident, fn4=sqr gives Mandelbrot
   |z|<=t
   }
 
-FractalFenderC(XAXIS_NOPARM) {
-   z=p1,x=|z|:
-   (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=sqr(z)+pixel,x=|z|,
-   x<=4
-   }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
-SpecC(XAXIS_NOPARM) {
-   z=p1,x=|z|:
-   (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=fn2(z)+pixel,x=|z|,
-   x<=4 
-   }
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
+  ;SOURCE: skinner.frm
+}
 
 z^3-1=0(XAXIS)  {         ; Advanced Fractal Programming in C  - Stevens
    ; Run with inside = ZMAG to turn off periodicity checking
@@ -457,31 +467,31 @@ Fzpcocoh  {z = pixel, f = 1. / cosh(pixel):
 
 { Peter Lewman's formulas for Fractint. }
 
-Form3 (XAXIS) = {
+Form3 (XAXIS) {
           z = Pixel, c = Pixel:
           z = c * z * ( p1 - z ),
           |z| < 4
         }
 
-Form4 (XAXIS) = {
+Form4 (XAXIS) {
           z = Pixel, c = P1:
           z = c * z * ( p2 - z ),
           |z| < 4
         }
 
-Form5 (XAXIS) = {
+Form5 (XAXIS) {
           z = Pixel, c = Pixel:
           z = p1 / ( fn1(z) + c ),
           |z| < 4
         }
 
-Form6 (XAXIS) = {
+Form6 (XAXIS) {
           z = Pixel, c = Pixel:
           z = z^6 + fn1(z) + c,
           |z| < 4
         }
 
-Form7 (XYAXIS) = {
+Form7 (XYAXIS) {
           z = Pixel, c = Pixel:
           z = ( c * fn1( fn2(z) + 1 ) ) / ( z * ( fn3(z) - 1) ),
           |z| < 4
@@ -503,19 +513,29 @@ aaaa(XAXIS)  {
  Fzppchco  {z = pixel, f = cosxx (pixel):
                        z = cosh (z) + f, |z| <= 50}
 
-Moth (XAXIS_NOPARM) { z=p1, x=1:
-        (x<10)*(z=sqr(z)+pixel),
-        (10<=x)*(x<20)*(z=exp(z)+pixel),
-        (20<=x)*(z=log(z)+pixel),
-        x=x+1, |z|<=4
-        }
+Moth (XAXIS_NOPARM) {
+   ; Edited for Fractint v. 20 by George Martin 10/98
+  z=p1, x=1:
+  z=sqr(z)+pixel
+  z=exp(z)+pixel
+  z=log(z)+pixel
+  x=x+1
+  |z|<=4
+  ;SOURCE: choice.frm
+}
 
-?       {
-        (x<10)*(z=sqr(z)+pixel),
-        (10<=x)*(x<20)*(z=exp(z)+pixel),
-        (20<=x)*(z=log(z)+pixel),
-        x=x+1, |z|<=4
-        }
+? {
+  if (x<10)
+    z=sqr(z)+pixel
+  endif
+  if (10<=x && x<20)
+    z=exp(z)+pixel
+  endif
+  if (20<=x)
+    z=log(z)+pixel
+  endif
+  x=x+1, |z|<=4
+}
 
 hypercomplex { ; Chuck Ebbert
  ; must use periodicity=0

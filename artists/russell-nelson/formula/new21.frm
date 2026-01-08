@@ -78,22 +78,24 @@ Carr2926 {; Modified-inandout04
   z=z*z+c
   |z|<=test
 }
-Carr2891{;Modified Sylvie Gallet frm. [101324,3444],1996
-;passes=1 needs to be used with this PHC formula.
-b5=pixel-conj(0.1/pixel)-flip(0.01/pixel),
-b3=|cos(conj(conj(pixel^30.5)))|
-b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))-b3-0.4)-0.8))))+|flip(flip
-(2*b5^4))|
-c=whitesq*b4-(whitesq==0)*b4
-z=whitesq*b5-(whitesq==0)*b5
-c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
-l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
-iter=iter+1
-|z|<=bailout
+
+Carr2891 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel-conj(0.1/pixel)-flip(0.01/pixel)
+  b3=|cos(conj(conj(pixel^30.5)))|
+  b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))\
+      -b3-0.4)-0.8))))+|flip(flip(2*b5^4))|
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*b5
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ucarr.frm
 }
 
 Carr2939{;Modified Sylvie Gallet frm. [101324,3444],1996

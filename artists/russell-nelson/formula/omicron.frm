@@ -61,20 +61,41 @@ z = ((z*z) - 1) / fn1(z)-z
 |z| < 4
 }
 
-Warning! { 
+Warning!z { 
         ;You must try the RECIP function
+        ; Modified for id-libraries by Legalize Adulthood
+        ;   assume 1/2z = 1/2*z
 z = pixel:
 z = fn1(z) + pixel + p1 
-z = (1/sqrt(z)*(exp(-1/2z)))
+z = (1/sqrt(z)*(exp(-1/2*z)))
 z = z * imag(z)
 |z| < 4
 }
 
-Omicron {
+Warning! {; You must try the RECIP function
+          ; Revised for Fractint v20 by G. Martin
+  z = pixel:
+  z = fn1(z) + pixel + p1
+  z = (1/sqrt(z)*(exp(-1/2)))
+  z = z * imag(z)
+  |z| < 4
+  ;SOURCE: omicron.frm
+}
+
+Omicronz { ; Modified for id-libraries by Legalize Adulthood
+           ; assume 1/2z means 1/2*z
 z = pixel:
 z = z + pixel + p1
-z = (1/sqrt(2*3.14)*(z^-3/2)*(exp(-1/2z)))
+z = (1/sqrt(2*3.14)*(z^-3/2)*(exp(-1/2*z)))
 |z| < 4
+}
+
+Omicron {; Revised for Fractint v20 by G. Martin
+  z = pixel:
+  z = z + pixel + p1
+  z = (1/sqrt(2*3.14)*(z^(-3/2))*(exp(-1/2)))
+  |z| < 4
+  ;SOURCE: omicron.frm
 }
 
 Omicron_2 {

@@ -364,19 +364,20 @@ x=x-t*Ty,y=y+t*Tx
 z=x+flip(y)
 |z|<=bailout}
 
-Beta07-09{;V.1.1 - earlier versions may be discarded
-; = Beta[7] = (-exp(-z)-7Beta[6])/z
-t=p1,bailout=4,z=pixel:
-x=real(z),y=imag(z)
-ex=exp(x),ey=exp(y)
-x2=x*x,y2=y*y,x4=x2*x2,y4=y2*y2
-Tx=fn1(-(((((((x+7)*x+42)*x+210)*x+840)*x+2520)*x+5040)*x+(5040*ex*ex-5040))/
-(x4*x4*ex))
-Ty=fn1(-(((((((y+7)*y+42)*y+210)*y+840)*y+2520)*y+5040)*y+(5040*ey*ey-5040))/
-(y4*y4*ey))
-x=x-t*Ty,y=y+t*Tx
-z=x+flip(y)
-|z|<=bailout}
+Beta07-09 {; V.1.1 - earlier versions may be discarded
+           ; Copyright (c)1998,1999 Morgan L. Owens
+           ; = Beta[7] = (-exp(-z)-7Beta[6])/z
+  t=p1, bailout=4, z=pixel:
+  x=real(z), y=imag(z)
+  ex=exp(x), ey=exp(y)
+  x2=x*x, y2=y*y, x4=x2*x2, y4=y2*y2
+  Tx=fn1(-(((((((x+7)*x+42)*x+210)*x+840)*x+2520)*x+5040)*x+(5040*ex*ex-5040))/(x4*x4*ex))
+  Ty=fn1(-(((((((y+7)*y+42)*y+210)*y+840)*y+2520)*y+5040)*y+(5040*ey*ey-5040))/(y4*y4*ey))
+  x=x-t*Ty, y=y+t*Tx
+  z=x+flip(y)
+  |z|<=bailout
+  ;SOURCE: chby9.frm
+}
 
 Beta03-06{;V.1.1 - earlier versions may be discarded
 ; = Beta[3] = (-exp(-z)-3Beta[2])/z
@@ -901,22 +902,23 @@ Carr2926 {; Modified-inandout04
   |z|<=test
 }
 
-Carr2891{;Modified Sylvie Gallet frm. [101324,3444],1996
-;passes=1 needs to be used with this PHC formula.
-b5=pixel-conj(0.1/pixel)-flip(0.01/pixel),
-b3=|cos(conj(conj(pixel^30.5)))|
-b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))-b3-0.4)-0.8))))+|flip(flip
-(2*b5^4))|
-c=whitesq*b4-(whitesq==0)*b4
-z=whitesq*b5-(whitesq==0)*b5
-c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
-l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
-iter=iter+1
-|z|<=bailout
+Carr2891 {; Modified Sylvie Gallet frm. [101324,3444],1996
+          ; passes=1 needs to be used with this PHC formula.
+  b5=pixel-conj(0.1/pixel)-flip(0.01/pixel)
+  b3=|cos(conj(conj(pixel^30.5)))|
+  b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))\
+      -b3-0.4)-0.8))))+|flip(flip(2*b5^4))|
+  c=whitesq*b4-(whitesq==0)*b4
+  z=whitesq*b5-(whitesq==0)*b5
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ucarr.frm
 }
 
 Carr2939{;Modified Sylvie Gallet frm. [101324,3444],1996
@@ -943,24 +945,6 @@ Twins (xaxis) { ;Two almost-connected 'Brots
   z=0, c=pixel:
     z=z*z+c+(1/c)
     |z| < 4
-}
-
-Carr2891{;Modified Sylvie Gallet frm. [101324,3444],1996
-;passes=1 needs to be used with this PHC formula.
-b5=pixel-conj(0.1/pixel)-flip(0.01/pixel),
-b3=|cos(conj(conj(pixel^30.5)))|
-b4=(conj(conj(0.15/log(exp(conj(conj(pixel^450))-b3-0.4)-0.8))))+|flip(flip
-(2*b5^4))|
-c=whitesq*b4-(whitesq==0)*b4
-z=whitesq*b5-(whitesq==0)*b5
-c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
-l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=(z*z)+(-0.7456,-0.132)+c/10-(0.0035/c/21)
-iter=iter+1
-|z|<=bailout
 }
 
 Carr2939{;Modified Sylvie Gallet frm. [101324,3444],1996
@@ -1480,7 +1464,7 @@ BrotBC { ; Z^2.5 + C
   p = real(p1)
   Z = C = Pixel:
     Z = log(Z)
-    IF(imag(Z) > p) Z = Z + flip(2*PI) ENDIF
+    IF(imag(Z) > p),Z = Z + flip(2*PI), ENDIF
     Z = exp(2.5*Z) + C
   |Z| < 4
 }
@@ -1514,7 +1498,7 @@ JuliaBC { ; Z = Z^E + C
   |Z|<4
 }
 
-Evolver {
+Comment { Evolver
 Plug these into the evolver, with real(p1) changing from 2 to 3 along the X 
 axis and real(p2) changine from -6 to +6 along the Y axis and you have a 
 real treat of an image (depending on the other parameters; I used p3=-1). 

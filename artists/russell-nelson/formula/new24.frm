@@ -119,17 +119,15 @@ z = k*(a*(z^b) + d*(z^f)) + c
 |z| < l
 }
 
-ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet with 
-Mandel(fn||fn)
-                            ; function=fn1/fn2            
+ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet withMandel(fn||fn)
+                            ; function=fn1/fn2
                             ; p1 = Julia seed
                             ; real(p2) = bailout value
                             ; imag part of p2: 0 = lake transform disabled
-                            ; any value between 0 and 100: water level in % of
-                            ; screen height (0 = bottom, 100 = top)
+                            ;                  any value between 0 and 100: water level in % of
+                            ;                  the screen height (0 = bottom, 100 = top)
                             ; real part of p3: amplitude of the wave (try 0.2)
-                            ; imag part of p3: frequency (try 300)            
-               
+                            ; imag part of p3: frequency (try 300)
 
 bailout = real(p2),  shift = 0.5
 
@@ -182,7 +180,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd

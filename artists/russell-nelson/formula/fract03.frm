@@ -528,27 +528,25 @@ Silverado2 { ; Rollo Silver [71174,1453]
     4 > lastsqr
    }
 
-SinEgg(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-    ; Generalized by Tobey J. E. Reed [76437,375]
-    ; Try p1=0, p2=4, fn1=sin, fn2=sqr
-    ; Try p1=0, p2=4, fn1=sinh, fn2=sqr
-    ; Use floating point.
-    z  = p1, x  = |z|:
-    (1 < x) * (z=fn1(z) + pixel),
-    z  = fn2(z)+pixel, x  = |z|,
-    x <= p2
-   }
+SinEgg (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                       ; George Martin 10/98
+  z=p1, x=|z|:
+  z=sin(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
+}
 
-SinEggC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-   ; Generalized by Tobey J. E. Reed [76437,375]
-   ; Try p1=0, p2=4, fn1=sinh, fn2=sqr
-   ; Try p1=0, p2=4, fn1=sin, fn2=sqr
-   ; Use floating point.
-   z=p1, x=|z|:
-   (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=fn2(z)+pixel, x=|z|,
-   x<=p2
-   }
+SinEggC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by
+                        ; George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x>1)
+    z = sin(z) + pixel
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
+}
 
 SinInvZ(XYAXIS) = {
    z=pixel, inv=1/pixel+p1:
@@ -650,15 +648,17 @@ testm {
   |z| <= 4
   }
 
-TestSinMandC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-    ; Generalized by Tobey J. E. Reed [76437,375]
-    ; Try: p1=4, fn1=sin, fn2=sqr
-    z  = p1, x  = |z|:
-    (z  = fn1(z)) * (1<x)+(z=z) * (x<=1),
-    (z  = fn2(z)+pixel),
-    x  = |z|,
-    x <= p1
-  }
+TestSinMandC (XAXIS_NOPARM) {; Rewritten for Fractint v. 20 by
+                             ; George Martin, 10/98
+  z=p1, x=|z|:
+  IF (x > 1)
+    z = sin(z)
+  ENDIF
+  z=sqr(z)+pixel
+  x=|z|
+  x<=4
+  ;SOURCE: choice.frm
+}
 
 TjerCGhalley (XYAXIS) {; Chris Green -- Halley's formula
   ; Modified by Tobey J. E. Reed [76437,375]
@@ -905,15 +905,17 @@ TSinh (XAXIS) = {; Lee Skinner [75450,3631]
    z <= (p1 + 3)
    }
 
-TurtleC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-    ; Generalized by Tobey J. E. Reed [76437,375]
-    ; Try p1=0, p2=4, fn1=sqr, fn2=sqr
-    ; Note:  use floating point
-    z   = p1:
-    x   = real(z),
-   (z   = fn1(z)+pixel) * (x<0) + (z=fn2(z)-pixel) * (0<=x),
-   |z| <= p2
-   }
+TurtleC (XAXIS_NOPARM) {; Edited for Fractint v. 20 by George Martin
+  z=p1:
+  x=real(z)
+  IF (x<0)
+    z=sqr(z)+pixel
+  ELSE
+    z=sqr(z)-pixel
+  ENDIF
+  |z|<=4
+  ;SOURCE: choice.frm
+}
 
 ULI_1 = {; from ULI.FRM
    z = Pixel:

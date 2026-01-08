@@ -24,7 +24,7 @@
 
    ==========================================================================}
 
-!_Press_F2_!     {; There is text in this formula file.  Shell to DOS with
+Comment          {; There is text in this formula file.  Shell to DOS with
                   ; the <d> key and use a text reader to browse the file.
                  }
 
@@ -71,7 +71,7 @@ IkenagaJULJ.1          { ; formula from a letter from Joyce Haslam Mar 1993.
 IkenagaPwr(XAXIS)   { ; from Jon Horner
                     z = (0,0), c = pixel :
                     z = z * z * z + z * (c-1) - c ^ p1 ,
-                    z| <=4
+                    |z| <=4
 }
 
 IkenagaPwrJul       { ; from Jon Horner - asymmetric
@@ -191,7 +191,7 @@ RecipIke            { ; from REB001.FRM - by Ron Barnett 70153,1233
 
 F'FunctionIke       { ; generalized by Jon Horner
                       ; from RecipIke in REB001.FRM
-                      : - by Ron Barnett 70153,1233
+                      ; - by Ron Barnett 70153,1233
                     z = pixel:
                     z = fn1(z*z*z + (p1-1) * z - p1),
                     |z| <= 4

@@ -29,38 +29,37 @@ JoWe_03_PHC_n { ; Jo Weber [100424,35], 8/1996
 
 
 
-JoWe_03_PHC_n1 { ; Jo Weber [100424,35], 8/1996
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-                      z = c = pixel:
-                      a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1)) 
-                      t=fn1(z),
-                      b1 = (c^(sqr(t)))*evenodd-c*fn2(t)*oddeven,
-                      b2=(fn1(a2)-fn2(a1)*fn2(a3))*evenodd-(c^(fn1(a3)/fn2(a2)))*oddeven,
-                      z=b1
-                      b3=(1.0>=|z|),
-                      if b3 then z=b2
-   }
+JoWe_03_PHC_n1 {; Jo Weber [100424,35], 1996    Requires passes=1
+  z = c = pixel:
+  a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1))
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  b2=(fn1(a2)-fn2(a1)*fn2(a3))*whitesq-(c^(fn1(a3)/fn2(a2)))*(whitesq==0)
+  z=b1
+  b3=(1.0>=|z|)
+  if (b3)
+    z=b2
+  endif
+  1.0>=|z|
+  ;SOURCE: phc.frm
+}
 
 
 
-JoWe_04_PHC { ; Jo Weber [100424,35], 8/1996
-  ; p2 - no effect
-  ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
-  count = (count + 1) * (count != (p3-1))
-  evenodd = (evenodd == (count == 1))
-  oddeven = (evenodd == 0)
-                          z = c =pixel:
-                          t=fn1(z),
-                          b1 = (c^(sqr(t)))*evenodd-c*fn2(t)*oddeven,
-		          a1=fn1(z), a2=p1/a1, 
-                          b2=(a1-a2+pixel)*oddeven+c*a1*(a2-0.34)*evenodd,
-                          z=b1
-                          b3=(|z|<=4)
-			  if b3 then z=b2
-   }
+JoWe_04_PHC {; Jo Weber [100424,35], 1996       Requires passes=1
+  z = c =pixel:
+  t=fn1(z)
+  b1 = (c^(sqr(t)))*whitesq-c*fn2(t)*(whitesq==0)
+  a1=fn1(z), a2=p1/a1
+  b2=(a1-a2+pixel)*(whitesq==0)+c*a1*(a2-0.34)*whitesq
+  z=b1
+  b3=(|z|<=4)
+  if (b3)
+    z=b2
+  endif
+  |z|<=4
+  ;SOURCE: phc.frm
+}
 
 
 JoWe_11b_PHC(XYAXIS) { ; Jo Weber [100424,35], 8/1996

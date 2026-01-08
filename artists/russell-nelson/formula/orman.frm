@@ -70,10 +70,17 @@ OrmanDelbrot11 {; Copr. 1995 by Jack Orman
    |z| <= 16
   }
 
-Ormandelbrot12 { ;Copr. 1995 by Jack A. Orman
- z=pixel,x=|z|:
-  z=fn1(z)+pixel*(1<x)+(z=z)*(x<=1)
-  x<=4 }
+Ormandelbrot12 {; Copr. 1995 by Jack A. Orman
+                ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel, x=|z|:
+  IF (x>1)
+    z = fn1(z) + pixel
+  ELSE
+    z = fn1(z) + z
+  ENDIF
+  x<=4
+  ;SOURCE: orman.frm
+}
 
 
 OrmandelPower     { ; Copr. 1995 by Jack Orman

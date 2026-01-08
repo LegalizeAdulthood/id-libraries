@@ -1,4 +1,4 @@
-hints {; All of these need float . Nearly all are distorted Newtons.
+Comment {; All of these need float . Nearly all are distorted Newtons.
        }
 
 Komplexmatsch {

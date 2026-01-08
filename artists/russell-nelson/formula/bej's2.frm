@@ -43,11 +43,16 @@ z = pixel, z2 = z*z, z3 = z*z2,t = (4 * (real(p2)<=0) + real(p2) * (0<p2) ):
 }
 
 
-BEJ_N28C_B  {;
-z=pixel:
-z1=z*fn1(z*fn2(z))+fn1
-z2=sqr(z)/fn1(z)+pixel*sqrz
-z3=z^(zsqr=z*z),zsin=(c+p1^1.5)*(c+p1/1.2),z=(z*1)/(c+p2),z=fn1(z),z=fn2(z)
-|z|<4
+BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
+            ; Fourth line began
+            ; z3=z^(zsqr=z*z)
+            ; Also, sqrz was defined and never used
+            ; fn1 used as a variable
+  z=pixel:
+  z1=z*fn1(z*fn2(z))
+  z2=sqr(z)/fn1(z)
+  z3=z^(z*z), zsin=(c+p1^1.5)*(c+p1/1.2)
+  z=(z*1)/(c+p2), z=fn1(z), z=fn2(z)
+  |z|<4
 }
 

@@ -14,21 +14,21 @@
     ; Note that the equation variable is w, not z.  Always
     ; initialize z to zero.
     ;****************************************************
-    w = pixel
-    c = p1
-    z = 0
-    bailout = 0
-    iter = 0
-    range_num = 0
-    skip = imag(p2)
+  w = pixel
+  c = p1
+  z = 0
+  bailout = 0
+  iter = 0
+  range_num = 0
+  skip = imag(p2)
     ;****************************************************
     ; In the accompanying par file, balloops.par,
     ; we will set the number of ranges to 2, with
     ; 125 colors in each range, but the colormap will
     ; be modified to 4 ranges to give the desired effect.
     ;****************************************************
-    num_ranges = real(p3)
-    colors_in_range = imag(p3)
+  num_ranges = real(p3)
+  colors_in_range = imag(p3)
     ;****************************************************
     ; Real(p2) controls the size of the balls.
     ; These values will usually be in the range 0.001 to 0.1
@@ -41,50 +41,50 @@
     ; and a complex constant will work with this method.
     ; This example uses a modified Pokorny equation.
     ;****************************************************
-    w = 1 / (w * w + c) + c
+  w = 1 / (w * w + c) + c
     ;****************************************************
     ; If the orbit point is within the specified distance of a circle,
     ; set z to the index into the colormap and set the bailout flag.
     ;****************************************************
-    IF (iter > skip)
-        wr = real(w), wi = imag(w)
-        d = wr * wr + (wi - .5) * (wi - .5)
-        IF (d < ball_size)
-            bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = wr * wr + (wi + .5) * (wi + .5)) < ball_size)
-            bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr - .5) * (wr - .5) + wi * wi) < ball_size)
-            bailout = 1
-            delta = ball_size - d
-        ELSEIF ((d = (wr + .5) * (wr + .5) + wi * wi) < ball_size)
-            bailout = 1
-            delta = ball_size - d
-        ENDIF
+  IF (iter > skip)
+    wr = real(w), wi = imag(w)
+    d = wr * wr + (wi - .5) * (wi - .5)
+    IF (d < ball_size)
+      bailout = 1
+      delta = ball_size - d
+    ELSEIF (wr * wr + (wi + .5) * (wi + .5) < ball_size)
+      bailout = 1
+      delta = ball_size - (wr * wr + (wi + .5) * (wi + .5))
+    ELSEIF ((wr - .5) * (wr - .5) + wi * wi < ball_size)
+      bailout = 1
+      delta = ball_size - ((wr - .5) * (wr - .5) + wi * wi)
+    ELSEIF ((wr + .5) * (wr + .5) + wi * wi < ball_size)
+      bailout = 1
+      delta = ball_size - ((wr + .5) * (wr + .5) + wi * wi)
     ENDIF
-    IF (bailout)
-        z = index_factor * delta + range_num * colors_in_range + 1
-    ENDIF
+  ENDIF
+  IF (bailout)
+    z = index_factor * delta + range_num * colors_in_range + 1
+  ENDIF
     ;****************************************************
     ; Cycle through the range numbers (0 thru num_ranges - 1)
     ; With two color ranges, even iterations use color
     ; range 0, odd iterations use color range 1.
     ;****************************************************
-    range_num = range_num + 1
-    IF (range_num == num_ranges)
-        range_num = 0
-    ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
     ;****************************************************
     ; Since we are using outside=summ, we have to subtract
     ; the number of iterations from z.
     ;****************************************************
-    iter = iter + 1
-    z = z - iter
+  iter = iter + 1
+  z = z - iter
     ;****************************************************
     ; Finally, we test for bailout
     ;****************************************************
-    bailout == 0  && |w| < 1000
+  bailout == 0  && |w| < 1000
   ;SOURCE: 97msg.frm
 }
 
@@ -104,12 +104,12 @@
     ; Note that the equation variable is w, not z.  Always
     ; initialize z to zero.
     ;****************************************************
-    w = pixel , y = 0
-    z = 0
-    bailout = 0
-    iter = 0
-    range_num = 0
-    skip = imag(p1)
+  w = pixel, y = 0
+  z = 0
+  bailout = 0
+  iter = 0
+  range_num = 0
+  skip = imag(p1)
     ;****************************************************
     ; In the accompanying par file, mndballs.par,
     ; we have 8 color ranges with 30 colors in each range
@@ -120,64 +120,64 @@
     ; Color 0 is reserved for the background color and color
     ; 255 can be used for the inside color.
     ;****************************************************
-    num_ranges = real(p2)
-    colors_in_range = imag(p2)
+  num_ranges = real(p2)
+  colors_in_range = imag(p2)
     ;****************************************************
     ; Real(p1) controls the size of the balls.
     ; These values will usually be in the range 0.001 to 0.1
     ;****************************************************
-    ball_size = real(p1)
-    index_factor = (colors_in_range - 1) / ball_size:
+  ball_size = real(p1)
+  index_factor = (colors_in_range - 1) / ball_size:
     ;****************************************************
     ; The equation being iterated.  Almost any equation
     ; that can be express in terms of a complex variable
     ; and a complex constant will work with this method.
     ; This example uses the standard Mandelbrot set equation.
     ;****************************************************
-    w = w*w - .5*w + p3, X = w*w - .5*y + p3, Y = w, w = X
+  w = w*w - .5*w + p3, X = w*w - .5*y + p3, Y = w, w = X
     ;****************************************************
     ; If the orbit point is within the specified distance of a circle,
     ; set z to the index into the colormap and set the bailout flag.
     ;****************************************************
-    IF (iter > skip)
-           wr = real(w), wi = imag(w)
-           d = |w - (0,0.5)|
-           IF (d < ball_size)
-             bailout = 1
-             delta = ball_size - d
-           ELSEIF ((d = |w + (0,0.5)|) < ball_size)
-             bailout = 1
-             delta = ball_size - d
-           ELSEIF ((d = |w - 0.5|) < ball_size)
-             bailout = 1
-             delta = ball_size - d
-           ELSEIF ((d = |w + 0.5|) < ball_size)
-             bailout = 1
-             delta = ball_size - d
-           ENDIF
+  IF (iter > skip)
+    wr = real(w), wi = imag(w)
+    d = |w - (0,0.5)|
+    IF (d < ball_size)
+      bailout = 1
+      delta = ball_size - d
+    ELSEIF (|w + (0,0.5)| < ball_size)
+      bailout = 1
+      delta = ball_size - |w + (0,0.5)|
+    ELSEIF (|w - 0.5| < ball_size)
+      bailout = 1
+      delta = ball_size - |w - 0.5|
+    ELSEIF (|w + 0.5| < ball_size)
+      bailout = 1
+      delta = ball_size - |w + 0.5|
     ENDIF
-    IF (bailout)
-           z = index_factor * delta + range_num * colors_in_range + 1
-    ENDIF
+  ENDIF
+  IF (bailout)
+    z = index_factor * delta + range_num * colors_in_range + 1
+  ENDIF
     ;****************************************************
     ; Cycle through the range numbers (0 thru num_ranges - 1)
     ; With two color ranges, even iterations use color
     ; range 0, odd iterations use color range 1.
     ;****************************************************
-    range_num = range_num + 1
-    IF (range_num == num_ranges)
-        range_num = 0
-    ENDIF
+  range_num = range_num + 1
+  IF (range_num == num_ranges)
+    range_num = 0
+  ENDIF
     ;****************************************************
     ; Since we are using outside=summ, we have to subtract
     ; the number of iterations from z.
     ;****************************************************
-    iter = iter + 1
-    z = z - iter
+  iter = iter + 1
+  z = z - iter
     ;****************************************************
     ; Finally, we test for bailout
     ;****************************************************
-    bailout == 0  && |w| < 1000
+  bailout == 0  && |w| < 1000
   ;SOURCE: 97msg.frm
 }
 
@@ -327,7 +327,9 @@ Gallet-5-05 {; Sylvie Gallet [101324,3444], 1996
 }
 
 
-heart_man { ; Kerry Mitchell
+heart_man {; Kerry Mitchell
+        ; See end of formula xlty_jul for Kerry Mitchell's explanation
+        ;  of his "fraction" formulas
         ;
         ; colors by how often r < t, where r & t are the
         ; magnitude & polar angle of the fractional part of
@@ -342,37 +344,38 @@ heart_man { ; Kerry Mitchell
         ; calculation uses variable zc, z used for coloring
         ; use decomp=256
         ;
-        zc=0, c=pixel, iter=2, twopi=2*pi, count=0
-        maxr=real(p1), speed=imag(p1)*twopi*255/256
-        roundfac=p2:
+  zc=0, c=pixel, iter=2, twopi=2*pi, count=0
+  maxr=real(p1), speed=imag(p1)*twopi*255/256
+  roundfac=p2
+  :
         ;
         ; adjust iterate through arbitrary function and find
         ;   fractional part
         ;
-        temp=fn2(zc)/roundfac, frac=temp-fn1(temp)
-        r=cabs(frac)
-        t=cabs(imag(log(frac))/twopi)
+  temp=fn2(zc)/roundfac, frac=temp-fn1(temp)
+  r=cabs(frac)
+  t=cabs(imag(log(frac))/twopi)
         ;
         ; update counter if conditions are right
         ;
-        if (r<t)
-          count=count+1
-          end if
+  IF (r<t)
+    count=count+1
+  ENDIF
         ;
         ; bailout
         ;   scale counter into decomposition angle
         ;   set "iteration done" flag (iter = -1)
         ;
-        if ((|zc|>maxr)||(iter==maxit))
-          angle=speed*count/(iter-1)
-          z=cos(angle)+flip(sin(angle))
-          iter=-1
-        else
-          iter=iter+1
-          zc=sqr(zc)+c
-        endif
-        iter>0
-          ;SOURCE: valentin.par
+  IF ((|zc|>maxr)||(iter==maxit))
+    angle=speed*count/(iter-1)
+    z=cos(angle)+flip(sin(angle))
+    iter=-1
+  ELSE
+    iter=iter+1
+    zc=sqr(zc)+c
+  ENDIF
+  iter>0
+  ;SOURCE: 98msg.frm
 }
 
 

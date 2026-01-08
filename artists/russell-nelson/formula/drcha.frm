@@ -7,7 +7,7 @@
 Michaelbrot(origin) {    ;based on Golden Mean
 	  
 z = pixel:
-z = sqr(z) + ((sqrt 5 + 1)/2), 
+z = sqr(z) + ((sqrt(5) + 1)/2), 
 |z| <= 4;
 } 
 
@@ -15,7 +15,7 @@ z = sqr(z) + ((sqrt 5 + 1)/2),
 Raphaelbrot(xyaxis) {  ;phi
 
 z = pixel:
-z = sqr(z) + ((sqrt 5 - 1)/2) 
+z = sqr(z) + ((sqrt(5) - 1)/2) 
 |z| <= 4;
 }
 
@@ -23,7 +23,7 @@ z = sqr(z) + ((sqrt 5 - 1)/2)
 DrChaosbrot1(xaxis) { ;more phi
 
 z = c = pixel:
-z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+z = sqr(z) + (((sqrt(5) + 1)/2)+c)
 |z| <= 4;
 }
 
@@ -31,7 +31,7 @@ z = sqr(z) + (((sqrt 5 + 1)/2)+c)
 DrChaosbrot2(xyaxis)   { ;more phi
 
 z = c = pixel:
-z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+z = sqr(z) + (((sqrt(5) + 1)/2)+c)
 |z| <= 4;
 }
 
@@ -39,48 +39,48 @@ z = sqr(z) + (((sqrt 5 + 1)/2)+c)
 Natura(xyaxis)  {  ;phi yoni
 
 z = pixel:
-z = z*z*z + ((sqrt 5 + 1)/2) 
+z = z*z*z + ((sqrt(5) + 1)/2) 
 |z| <= 4;
 }
 
 Element(xyaxis) { ;phi lingam
 
 z = pixel:
-z = z*z*z*z + ((sqrt 5 + 1)/2) 
+z = z*z*z*z + ((sqrt(5) + 1)/2) 
 |z| <= 4;
 }
 
 ;try inside=maxiter and outside=imag on these
 
 test(xyaxis) { ;=phi 
-z = ((sqrt 5 + 1)/2)/pixel:
-z =  z*z + pixel*((sqrt 5 + 1)/2)
+z = ((sqrt(5) + 1)/2)/pixel:
+z =  z*z + pixel*((sqrt(5) + 1)/2)
 |z| <= 4;
 }
 
 test1(xyaxis) { ;=phi
 c = pixel 
-z = ((sqrt 5 + 1)/2):
-z =  z*z + pixel*((sqrt 5 + 1)/2) + c
+z = ((sqrt(5) + 1)/2):
+z =  z*z + pixel*((sqrt(5) + 1)/2) + c
 |z| <= 4;
 }
 
 test2(xyaxis) { ;=phi 
-z = ((sqrt 5 + 1)/2)/pixel:
-z =  z*z*z + pixel*((sqrt 5 + 1)/2)
+z = ((sqrt(5) + 1)/2)/pixel:
+z =  z*z*z + pixel*((sqrt(5) + 1)/2)
 |z| <= 4;
 }
 
 
 test3(xyaxis) { ;=phi 
-z = ((sqrt 5 + 1)/2)/pixel:
-z =  z*z + pixel*((sqrt 5 + 1)/2)/((sqrt 5 - 1)/2)
+z = ((sqrt(5) + 1)/2)/pixel:
+z =  z*z + pixel*((sqrt(5) + 1)/2)/((sqrt(5) - 1)/2)
 |z| <= 4;
 }
 
 Tetratephi(xyaxis) { ;?
 
-z  = c = ((sqrt 5 +1)/2)/pixel:
-z = c^z + ((sqrt 5 +1)/2) 
+z  = c = ((sqrt(5) +1)/2)/pixel:
+z = c^z + ((sqrt(5) +1)/2) 
 |z| <= 4;
 }

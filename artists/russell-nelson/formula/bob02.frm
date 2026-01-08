@@ -38,5 +38,5 @@
     }
    B2-7 { ; A Variation on a complex Newton
       z = Pixel:
-    z-1 = (fn1(p1+1)/z^p1+z)/(p2/z^(fn2(p2+1)))
+      z = (fn1(p1+1)/z^p1+z)/(p2/z^(fn2(p2+1)))+1
     }

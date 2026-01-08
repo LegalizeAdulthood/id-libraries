@@ -1,16 +1,16 @@
-comment = {
+comment {
 The formula given below generates a variation of the Phoenix curve, which    
 Shigehiro Ushiki at Kyoto University first discovered.  Use it with the 
 Fractint Formula Compiler.
 }
-   Phoenix = {
+   Phoenix {
       x = pixel; y = 0.0:
       z = (x * x) + p1 + (p2 * y);
       y = x;
       x = z;
 }
 
-   Phoenix2 = {
+   Phoenix2 {
       x = pixel; y = (0.0, 0.0):
       z = (x * x) + p1 + (p2 * y);
       y = x;
@@ -19,7 +19,7 @@ Fractint Formula Compiler.
 }
 
 
-comment = {
+comment {
 The original Phoenix curve uses 0.56667 for the real part of p1, 
 and -0.5 for the real part of p2.
 

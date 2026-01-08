@@ -328,21 +328,29 @@ z=z+c/2,
 |z| <=4
 }
 
-Carr1442{;Fractal Fender C Modified.
-z=0.224,x=|z|,c=(-0.7456,0.2):
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-x=|z|,
-|z|<=4
+Carr1442 {; Fractal Fender C Modified.
+     ; Edited for Fracint v. 20 by George Martin, 10/98
+  z=0.224, x=|z|, c=(-0.7456,0.2):
+  IF (x>1)
+    z=cosh(z)+c
+  ENDIF
+  z=sqr(z)+pixel
+  x=|z|
+  |z|<=4
+  ;SOURCE: 32carr.frm
 }
-
-Carr1443{;Fractal Fender C Modified.
-z=0.224,x=|z|,c=(-0.7456,0.2):
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
-x=|z|,
-|z|<=4
+ 
+Carr1443 {; Fractal Fender C Modified.
+     ; Edited for Fracint v. 20 by George Martin, 10/98
+  z=0.224, x=|z|, c=(-0.7456,0.2):
+  IF (x>1)
+    z=cosh(z)+c
+  ENDIF
+  z=sqr(z)+pixel
+  c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z)
+  x=|z|
+  |z|<=4
+  ;SOURCE: 32carr.frm
 }
 
 Carr1444{;Pseudo Spider?

@@ -57,11 +57,12 @@ z=z*z+conj(c-p2),
 |z| <=10
 }
 
-Carr-576{
-z=1/conj(pixel-p1),
-c=conj(cos(z/(1/pixel)))*conj(z(1/pixel)):
-z=z*z*z+conj(c-p2),
-|z| <=10
+Carr-576 {
+  z=1/conj(pixel-p1)
+  c=conj(cos(z/(1/pixel)))*conj(z/(1/pixel)):
+  z=z*z*z+conj(c-p2)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
 Carr-577{
@@ -279,10 +280,11 @@ z=conj(z*z+c),
 |z| <=10
 }
 
-Carr-612{
-z=1/conj(pixel),c=1/sqr(pixel)/z*z+pixel):
-z=conj(z*z+c),
-|z| <=10
+Carr-612 {
+  z=1/conj(pixel), c=1/(sqr(pixel)/z*z+pixel):
+  z=conj(z*z+c)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
 Carr-613{
@@ -387,10 +389,11 @@ z=z*z+(c-0.024),
 |z| <=10
 }
 
-Carr-630{
-z=cosxx(sinh(1/pixel-0.394),c=sin(1/cosxx(-2.5064,0.3124)):
-z=(z-0.124)*(z+0.287)+(c-0.024),
-|z| <=10
+Carr-630 {
+  z=cosxx(sinh(1/pixel-0.394)), c=sin(1/cosxx(-2.5064,0.3124)):
+  z=(z-0.124)*(z+0.287)+(c-0.024)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
 Carr-631{

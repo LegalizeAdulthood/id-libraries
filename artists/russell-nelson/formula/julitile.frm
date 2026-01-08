@@ -7,7 +7,7 @@
    =  derivatives based, often quite loosely, on the author's originals.    =
    =========================================================================}
 
-!_Press_F2_!     {; There is text in this formula file.  Shell to DOS with
+Comment          {; There is text in this formula file.  Shell to DOS with
                   ; the <d> key and use a text reader to browse the file.
                  }
 

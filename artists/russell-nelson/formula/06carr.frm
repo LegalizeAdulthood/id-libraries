@@ -312,10 +312,11 @@ z=z*z+(c-1.02),
 |z| <=10
 }
 
-Carr-552{
-z=1/pixel,c=1conj(1/(1/pixel*1/pixel*1/pixel)):
-z=z*z+(c-1.02),
-|z| <=10
+Carr-552 {
+  z=1/pixel, c=1/conj(1/(1/pixel*1/pixel*1/pixel)):
+  z=z*z+(c-1.02)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
 Carr-553{

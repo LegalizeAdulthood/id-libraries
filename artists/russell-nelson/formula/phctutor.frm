@@ -48,7 +48,7 @@ phc_mj { ; overlay the Mandel set of z^2 + c with
    |z| <= 4
    }
 
-: phc_mn_A { ; overlay the Mandel set of z^2 + c with the Julia
+; phc_mn_A { ; overlay the Mandel set of z^2 + c with the Julia
 ;           ; set of Newton's method applied to z^3 - 1 = 0
 ;  z = c = pixel :
 ;   n = z^3 - 1 , d = 3*z^2

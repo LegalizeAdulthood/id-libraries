@@ -1,11 +1,11 @@
-
-   This file contains the new versions of two of my formulas: Mandel-newton
- and Mandel-newton-2 (both in Gallet-2.FRM).
-   As the most spectacular effect produced by the old formulas under Fractint
- 19.2 disappeared under the developers version of Fractint (version 19.3), I
- modified these formulas to make them compatible with Fractint 19.3.
-
-   From now on, you can replace the old formulas by the new ones.
+; 
+;    This file contains the new versions of two of my formulas: Mandel-newton
+;  and Mandel-newton-2 (both in Gallet-2.FRM).
+;    As the most spectacular effect produced by the old formulas under Fractint
+;  19.2 disappeared under the developers version of Fractint (version 19.3), I
+;  modified these formulas to make them compatible with Fractint 19.3.
+; 
+;    From now on, you can replace the old formulas by the new ones.
 
 mandel-newton   {; Sylvie Gallet [101324,3444], 1995-1996
  ; Formula designed for Fractint 19.2 and modified for Fractint 19.3

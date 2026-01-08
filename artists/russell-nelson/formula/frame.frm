@@ -66,7 +66,7 @@ Mandel_Other {
   }
 
 
-Readme {
+comment {
 ; This Fractint .FRM file (c) 1993 by:
 ;
 ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA

@@ -29,7 +29,7 @@ as2{ns
 z=pixel:
 z=(tan(z-(log(z-1)))*2.3453)/fn1(z+p1)+fn2(c+(z+p2))+c
 |z-1|<4
-}_
+}
 a0a01{
 z=pixel,x=c-pixel,y=real(c-pixel):
 a=(z^22)+x
@@ -84,22 +84,32 @@ a-0a-a2{
 z=pixel,c=fn1(1.6180339):
 z=(fn2(z^p1)+fn3(z^c))
 |z|<=4
-z3{
-z=pixel,t=(1.099,.09^2/pixel)*(3-pixel/fn1(z^p2)),n=real(t/(z+c/p3)):
-z=((fn1(2/n)^fn2(z^t-z))/fn3(z^(t-n))*fn4(t/n-z))+c
-|real(z)|<=4
 }
+
+z3 {; Revised 4/27/96 to eliminate superfluous "+c"
+    ; Original version of this formula may be discarded
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel, t=(1.099,.09)^2/pixel*(3-pixel/fn1(z^p2)), n=real(t/(z/p3)):
+  z=((fn1(2/n)^fn2(z^t-z))/fn3(z^(t-n))*fn4(t/n-z))
+  |real(z)|<=4
+}
+
 z0{
 z=pixel,u=tan(z+1)/real(z^(pixel/2)),t=imag(real(tan(z^2))):
 z=(fn1(u)^fn2(t))+fn3(u+t)+c
 |z|<=4
 }
-y9{
-z=pixel,m=fn3(tan(1.9,0^pixel)),n=fn4(0,1.9*pixel):
-t=(cotan(z^p1))+sqr(z/p2)
-z=(fn1(t*1/m))+fn2(t*1/n)+c
-|z|<=4
+
+y9 {; Revised 4/27/96 to eliminate superfluous "+c"
+    ; Original version of this formula may be discarded
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=pixel, m=fn3(tan(1.9^pixel)), n=fn4((0,1.9)*pixel):
+  t=(cotan(z^p1))+sqr(z/p2)
+  z=(fn1(t*1/m))+fn2(t*1/n)
+  |z|<=4
+  ;SOURCE: new.frm
 }
+
 u0{
 z=pixel,m=fn3(tan(pixel)),n=fn4(pixel):
 t=(cotan(z^p1))+fn1(z/p2)

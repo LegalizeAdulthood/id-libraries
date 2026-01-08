@@ -2,54 +2,65 @@
 ;                 for Jo_We_55.par
 
 
-JoWe55c01 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=10
- }
+JoWe55c01 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=10
+  ;SOURCE: jo_we_55.frm
+}
 
-JoWe55c02 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c;
-z=fn2(z) + c,
-|z| <=p2
- }
+JoWe55c02 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c
+  z=fn2(z) + c
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
-JoWe55c03 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c-0.14;
-z=fn2(z) + c-0.14,
-|z| <=p2
- }
+JoWe55c03 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c-0.14
+  z=fn2(z) + c-0.14
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
-JoWe55c04 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c-0.28;
-z=fn2(z) + c-0.14,
-|z| <=p2
- }
+JoWe55c04 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c-0.28
+  z=fn2(z) + c-0.14
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
+JoWe55c05 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=p1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c*c
+  z=fn2(z) + (c<0)
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
-JoWe55c05 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=p1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c*c
-z=fn2(z) + (c<0)
-|z| <=p2
- }
-
-JoWe55c06 { ; from a modified Carr-formula
-            ; 5/1997 JoWeber CIS [100424,35]
-c=z=p1/pixel + (z=c=fn3(z) + p1/pixel):
-z=fn1(z) + c*c
-z=fn2(z) + (z<0)
-|z| <=p2
- }
+JoWe55c06 {; from a modified Carr-formula
+           ; 5/1997 JoWeber CIS [100424,35]
+           ; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=p1/pixel + fn3(z) + p1/pixel:
+  z=fn1(z) + c*c
+  z=fn2(z) + (z<0)
+  |z| <=p2
+  ;SOURCE: jo_we_55.frm
+}
 
 JoWe55c07 { ; from a modified Carr-formula
             ; 5/1997 JoWeber CIS [100424,35]

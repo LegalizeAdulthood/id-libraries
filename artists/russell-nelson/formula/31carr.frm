@@ -256,20 +256,27 @@ z=z-z*1/(cotanh(c)/cosh(c)),
 |z| <= 4
 }
 
-Carr1387(XAXIS_NOPARM){;FractalFenderC Modified
-z=0.224,x=|z|,c=z*1/pixel:
-(z=cosh(z)+c)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,x=|z|,
-x<=4
+Carr1387 (XAXIS_NOPARM) {; FractalFenderC Modified
+     ; Edited for Fractint v. 20 By George Martin, 10/98
+  z=0.224, x=|z|, c=z*1/pixel:
+  IF (x>1)
+    z=cosh(z)+c
+  ENDIF
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: 31carr.frm
 }
-
-
-Carr1388(XAXIS_NOPARM){;FractalFenderC Modified
-z=cotanh(pixel*pixel),x=|real(z)|,c=z/pixel^z:
-(z=z-(cotanh(sqr(z/c))))*(1<x)+(z=z)*(x<=1),
-z=z-(z*1/c)/(pixel*pixel+z),
-x=|z|,
-x<=4
+ 
+Carr1388 (XAXIS_NOPARM) {; FractalFenderC Modified
+     ; Edited for Fractint v. 20 By George Martin, 10/98
+  z=cotanh(pixel*pixel), x=|real(z)|, c=z/pixel^z:
+  IF (x>1)
+    z=z-cotanh(sqr(z/c))
+  ENDIF
+  z=z-(z*1/c)/(pixel*pixel+z)
+  x=|z|
+  x<=4
+  ;SOURCE: 31carr.frm
 }
 
 Carr1389{;Julia

@@ -1,0 +1,42 @@
+HalleyCubic {
+init:
+  Z = #Pixel
+  Ca = @Co3
+  Cb = @Co2
+  Cc = @Co1
+  Da = Ca*3
+  Db = Cb*2
+  Ea = Da*2
+  Bailout = @Bailout * @Bailout
+loop:
+  F = Ca*Z*Z*Z + Cb*Z*Z + Cc*Z - @Root
+  G = Da*Z*Z + Db*Z + Cc
+  H = Ea*Z + Db
+  Z = Z - @Relax * F / (G - (H * F / 2 * G))
+bailout:
+  |F| > Bailout
+default:
+  title = "Halley Cubic"
+  param Bailout
+    default = 0.001
+  endparam
+  param Root
+    default = (1.0, 0.0)
+  endparam
+  param Relax
+    caption = "Relaxation Coef"
+    default = (1.0, 0.0)
+  endparam
+  param Co3
+    caption = "Cubic Coef"
+    default = (1.0, 0.0)
+  endparam
+  param Co2
+    caption = "Quadratic Coef"
+    default = (0.0, 0.0)
+  endparam
+  param Co1
+    caption = "Linear Coef"
+    default = (0.0, 0.0)
+  endparam
+}

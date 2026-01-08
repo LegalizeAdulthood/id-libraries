@@ -22,17 +22,18 @@ z=fn2(z)
 }
 
 
-BEJ_N13  {;
-z=pixel,c=atan(pixel):
-z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
-zsqr=z*z
-x = (1.5+z^p1)^(1/p1)
-z = z*(1+y)/(1-x) + p2
-z=fn1(z)+c
-z=fn2(z)-c
-|z| <4
+BEJ_N13 {; Revised for Fractint v. 20 by George Martin
+         ; Second line was
+         ; z*z*z=z^sqr(5+1/p1)*(-1+3/p2)
+  z=pixel, c=atan(pixel):
+  z=z^sqr(5+1/p1)*(-1+3/p2)
+  zsqr=z*z
+  x = (1.5+z^p1)^(1/p1)
+  z = z*(1+y)/(1-x) + p2
+  z=fn1(z)+c
+  z=fn2(z)-c
+  |z| <4
 }
-
 
 BEJ_N24  {;
 z=pixel,c=pixel:
@@ -43,12 +44,17 @@ z=fn1(z2)+pixel
 }
 
 
-BEJ_N28C_B  {;
-z=pixel:
-z1=z*fn1(z*fn2(z))+fn1
-z2=sqr(z)/fn1(z)+pixel*sqrz
-z3=z^(zsqr=z*z),zsin=(c+p1^1.5)*(c+p1/1.2),z=(z*1)/(c+p2),z=fn1(z),z=fn2(z)
-|z|<4
+BEJ_N28C_B {; Revised for Fractint v. 20 by George Martin
+            ; Fourth line began
+            ; z3=z^(zsqr=z*z)
+            ; Also, sqrz was defined and never used
+            ; fn1 used as a variable
+  z=pixel:
+  z1=z*fn1(z*fn2(z))
+  z2=sqr(z)/fn1(z)
+  z3=z^(z*z), zsin=(c+p1^1.5)*(c+p1/1.2)
+  z=(z*1)/(c+p2), z=fn1(z), z=fn2(z)
+  |z|<4
 }
 
 

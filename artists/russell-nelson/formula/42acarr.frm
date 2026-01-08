@@ -14,262 +14,295 @@ Carr1977 to Carr2045 Formulas
 
 }
 
-Carr1977{;Modified Sylvie Gallet frm.
-   z=pixel, c=pixel , p10=10*pixel
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1/(exp(1/pixel)))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-(test3 && test0 && test1)))
-   iter = iter+1
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1977 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+1
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1978{;Modified Sylvie Gallet frm.
-   z=pixel,c=(-0.7456,0.2), p10=10*pixel
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1/(1/exp(1/pixel)))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-(test3 && test0 && test1)))
-   iter = iter+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1978 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.7456,0.2), p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1979{;Modified Sylvie Gallet frm.
-   z=pixel , c=pixel , c4=c^4 , p10=10*pixel
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1/(1/exp(1/pixel)))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = ((z^4)*c4+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-(test3 && test0 && test1)))
-   iter = iter+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1979 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, c4=c^4, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = ((z^4)*c4+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1980{;Modified Sylvie Gallet frm.
-   z=pixel , c=(-0.63,-0.4), p4=pixel^4 , p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1/(1/exp(1/pixel)))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = 0.79*(z4*p4+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+(1.299,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1980 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.63,-0.4), p4=pixel^4, p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1/(1/exp(1/pixel)))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = 0.79*(z4*p4+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+(1.299,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1981{;Modified Sylvie Gallet frm.
-   z=pixel , c=pixel , p10=10*pixel , th1 = tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(1/pixel))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1981 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(1/pixel))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1982{;Modified Sylvie Gallet frm.
-   z=pixel,c=pixel, p10=10*pixel , th1 = tanh(1)
-   iter = 1 , dit=-1/pixel+(1.099,0.0) , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter + dit
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1982 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, dit=-1/pixel+(1.099,0.0), rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter + dit
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1983{;Modified Sylvie Gallet frm.
-   z=pixel,c=pixel , p10=10*pixel , th1 = tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+z4+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1983 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel , p10=10*pixel, th1 = tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+z4+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1984{;Modified Sylvie Gallet frm.
-   z=pixel,c=pixel , p10=10*pixel , th1 = tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1984 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel, th1 = tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1985{;Modified Sylvie Gallet frm.
-   z=pixel , c=pixel , p10=10*pixel
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z6=z4*z2, z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-(test3 && test0 && test1)))
-   iter = iter+z6+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1985 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=pixel, p10=10*pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z6=z4*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+z6+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1986{;Modified Sylvie Gallet frm.
-   z=pixel,c=(-0.7456,0.2) , p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1986 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel, c=(-0.7456,0.2), p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1987{;Modified Sylvie Gallet frm.
-   z=1/pixel,c=1/pixel , p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1987 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=1/pixel, c=1/pixel, p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1988{;Modified Sylvie Gallet frm.
-   z=c=1/(pixel-conj(1/pixel)-flip(1/pixel)) , p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1988 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=c=1/(pixel-conj(1/pixel)-flip(1/pixel))
+  p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1989{;Modified Sylvie Gallet frm.
-   z=pixel-conj(pixel/5) , p10=10*pixel , th1=tanh(1) , c=z-0.099/pixel
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 ,  z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+tan(z1)+(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1989 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=pixel-conj(pixel/5), p10=10*pixel, th1=tanh(1), c=z-0.099/pixel
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+tan(z1)+(1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1990{;Modified Sylvie Gallet frm.
-   z=(pixel-conj(pixel/5)) , c=(-0.7456,0.2)-0.099/pixel
-   p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+3.75;(1.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1990 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z=(pixel-conj(pixel/5)), c=(-0.7456,0.2)-0.099/pixel
+  p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+3.75   ; (1.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1991{;Modified Sylvie Gallet frm.
-   z =imag(pixel),  c =pixel-((tan(pixel)+sin(pixel)-1/pixel))/10,
-   p10=10*pixel , iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = (z*(1-(test3 && test0 && test1)))
-   iter = iter+(3.099,0.0)
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1991 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z =imag(pixel), c =pixel-((tan(pixel)+sin(pixel)-1/pixel))/10
+  p10=10*pixel, iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = (z*(1-(test3 && test0 && test1)))
+  iter = iter+(3.099,0.0)
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
-Carr1992{;Modified Sylvie Gallet frm.
-   z =c =pixel+1/log(pixel) , p10=10*pixel , th1=tanh(1)
-   iter = 1 , rad = 6 , center = (1.0,0.1)
-   pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
-   zn = (center+rad/(pix-center)) , (limit) = real(p1*cos(pixel/5))
-   test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0:
-   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
-   z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z1 = (z4*z-p10)/(4*z4+(z4==0)),
-   z = (z2+c)*test1 + ((z-z1)*(1-test1))
-   test3 = (test3 || (|z|>b1))
-   z = z*(1-th1*(test3 && test0 && test1))
-   iter = iter+(1.099,0.0)+zn/z4
-   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
-   }
+Carr1992 {; Modified Sylvie Gallet frm.
+          ; Revised for Fractint v20 by G. Martin
+  z = c = pixel+1/log(pixel), p10=10*pixel, th1=tanh(1)
+  iter = 1, rad = 6, center = (1.0,0.1)
+  pix = exp(p10+(8.0,-5))*(-0.1,-0.95)
+  zn = (center+rad/(pix-center)), limit = real(p1*cos(pixel/5))
+  test0 = 1, b1 = 16, b2 = 0.0001, test3=0:
+  test1 = (iter<limit), test0 = 1-test0, test2=(iter!=limit)
+  z = (z-zn)*test2 + zn
+  z2 = z*z, z4 = z2*z2, z1 = (z4*z-p10)/(4*z4+(z4==0))
+  z = (z2+c)*test1 + ((z-z1)*(1-test1))
+  test3 = (test3 || (|z|>b1))
+  z = z*(1-th1*(test3 && test0 && test1))
+  iter = iter+(1.099,0.0)+zn/z4
+  ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+  ;SOURCE: 42acarr.frm
+}
 
 Carr1993{;Modified Sylvie Gallet frm.
 z=imag(pixel),c=pixel-((tan(pixel)+sin(pixel)-1/pixel))/10,

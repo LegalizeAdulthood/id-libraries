@@ -65,12 +65,12 @@ z=fn4(z2+(fn4(z1)))
 }
 
 pif172{
-z=0=pixel:
-z1=fn1(z*p3)/p1
-z2=fn2(z)*p2/p1
-z3=fn3(z1)+fn4(z2)
-z=(z3+whitesq)+(z)
-|z|<4
+   z=ixel:
+   z1=fn1(z*p3)/p1
+   z2=fn2(z)*p2/p1
+   z3=fn3(z1)+fn4(z2)
+   z=(z3+whitesq)+(z)
+   |z|<4
 }
 
 px1{

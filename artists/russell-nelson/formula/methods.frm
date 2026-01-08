@@ -154,7 +154,7 @@ z = (-5 * z4 + 1) / (-4 * z4 * z);
 }
 
 
-Readme {
+Comment {
 ; This Fractint .FRM file (c) 1993 by:
 ;
 ; LRCMIKE@LRC.OLDSCOLLEGE.AB.CA

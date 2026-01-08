@@ -463,8 +463,7 @@ M_Lagandre7 {
 }
 
 test{
-  z=pixel,c=p1:
-   c = P1, z = Pixel:
+   z=pixel,c=p1:
    z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / (16 * (z+c))
    |z| < 100
 }

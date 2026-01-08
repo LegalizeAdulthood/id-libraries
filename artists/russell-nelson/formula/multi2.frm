@@ -1,15 +1,15 @@
-Hi, I´m Albrecht Niekamp, Duesseldorf
-  Niekamp@online-club.de
-These formulas continue the multifrac.frm
-formula-collection. Here you will find the
-more sophisticated variations of the original
-multifrac13 or multifrac13a formula.
-The formula names correspond to the par-files
-with the same number. 
-Suggestions, new par-files or own variations
-are welcome.
-
---------------------------------------------------
+; Hi, I'm Albrecht Niekamp, Duesseldorf
+;   Niekamp@online-club.de
+; These formulas continue the multifrac.frm
+; formula-collection. Here you will find the
+; more sophisticated variations of the original
+; multifrac13 or multifrac13a formula.
+; The formula names correspond to the par-files
+; with the same number. 
+; Suggestions, new par-files or own variations
+; are welcome.
+; 
+; --------------------------------------------------
 
 multifrac68 {
   z = pixel:

@@ -1,10 +1,11 @@
 
-03-Carr {
-   c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-   z=sin(z) + c-0.14;
-   z=sin(z) + c-0.14,
-   |z| <=10
-   }
+03-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sin(z) + c-0.14
+  z=sin(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
 dafrm21 { 
    z = pixel:
@@ -46,12 +47,16 @@ CGNewtonSinExp (XAXIS) {
    z=z-p1*z2/(cos(z)+z1), .0001 < |z2|
    }
 
-FractalFenderC(XAXIS_NOPARM) {
-   z=p1,x=|z|:
-   (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-   z=sqr(z)+pixel,x=|z|,
-   x<=4 
-   }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
 F'M-SetInNewtonA(XAXIS) {
    z = 0,  c = fn1(pixel),  cminusone = c-1:
@@ -63,15 +68,6 @@ F'M-SetInNewtonC(XAXIS) {
    z=0, c=fn1(pixel), cm1=c-1, cm1x2=cm1*2, twoop1=2/p1, p1xc=c*real(p1):
    z = (p1xc - z*cm1x2 )/( (sqr(z)*3 + cm1 ) * real(p1) ) + z*real(twoop1),
    abs(|z| - real(lastsqr) ) >= p2
-   }
-
-FractalFenderC(XAXIS_NOPARM) {
-   z  = p1,
-   x  = |z|:
-   (z  = fn1(z)+pixel) * (1<x)+(z=z) * (x<=1),
-   z  = fn2(z)+pixel,
-   x  = |z|,
-   x <= p2
    }
 
 Fzppfnpo  {

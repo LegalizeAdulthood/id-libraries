@@ -65,7 +65,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Mandelbrot set
   ;  formula.
@@ -77,7 +77,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
     
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Julia set.
   ;
@@ -183,19 +183,35 @@ RCL_Cosh_J { ; Ron Lewen, 76376,2567
       abs(z) < 40
   }
 
-RCL_12 (XAXIS) { ; Ron Lewen, 76376,2567
-  ;
+RCL_12z (XAXIS) { ; Ron Lewen, 76376,2567
+  ; Modified for id-libraries by Legalize Adulthood, 3z=3*z
   z=pixel:
-    z=(z^2+3z+pixel)/(z^2-3z-pixel)
+    z=(z^2+3*z+pixel)/(z^2-3*z-pixel)
       |z| <= 10
   }
 
-RCL_13 (XAXIS) { ; Ron Lewen, 76376,2567
-  ;
+RCL_12 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
   z=pixel:
-    z=(z^2+2z+pixel)/(z^2-2z+pixel)
+  z=(z^2+3+pixel)/(z^2-3-pixel)
+  |z| <= 10
+  ;SOURCE: rclpar.frm
+}
+
+RCL_13z (XAXIS) { ; Ron Lewen, 76376,2567
+  ; Modified for id-libraries by Legalize Adulthood, 2z=2*z
+  z=pixel:
+    z=(z^2+2*z+pixel)/(z^2-2*z+pixel)
       |z| <= 100
   }
+
+RCL_13 (XAXIS) {; Ron Lewen, 76376,2567
+                ; Revised for Fractint v20 by G. Martin
+  z=pixel:
+  z=(z^2+2+pixel)/(z^2-2+pixel)
+  |z| <= 100
+  ;SOURCE: rclpar.frm
+}
 
 RCL_14 (XAXIS) { ; Ron Lewen, 76376,2567
   ;

@@ -48,22 +48,30 @@ z=(z*z-(pixel*pixel*pixel))/(z*z+c)/(pixel-c*c),
 |real(z)| <=100
 }
 
-Carr1155 (XAXIS_NOPARM){;FractalFenderC modified
-;Modified Lee Skinner frm.
-z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel),
-x=|z|,
-x<=4 
+Carr1155 (XAXIS_NOPARM) {; FractalFenderC modified
+                         ; Modified Lee Skinner frm.
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=(pixel)/(1.099,0), x=|z|:
+  IF (x>1)
+    z=cosxx(z)+sqr(pixel)
+  ENDIF
+  z=sqr(z)+(pixel)
+  x=|z|
+  x<=4
+  ;SOURCE: 27carr.frm
 }
 
-Carr1156 (XAXIS_NOPARM){;FractalFenderC modified
-;Ditto above
-z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+sqr(pixel))*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel/(1.099,0)),
-x=|z|,
-x<=4 
+Carr1156 (XAXIS_NOPARM) {; FractalFenderC modified
+                         ; Modified Lee Skinner frm.
+     ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=(pixel)/(1.099,0), x=|z|:
+  IF (x>1)
+    z=cosxx(z)+sqr(pixel)
+  ENDIF
+  z=sqr(z)+(pixel/(1.099,0))
+  x=|z|
+  x<=4
+  ;SOURCE: 27carr.frm
 }
 
 Carr1157{;Modified Wareman formula

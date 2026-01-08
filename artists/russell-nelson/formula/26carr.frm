@@ -261,26 +261,38 @@ z=(1.099,0)-(c-z*pixel);
 |real(z)| <=100 
 }
 
-Carr1137  (XAXIS_NOPARM) {;FractalFenderC modified
-z=(pixel)/(1.099,0),x=|z|:
-(z=cosxx(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+pixel,
-x=|z|,
-x<=4 }
+Carr1137 (XAXIS_NOPARM) {; FractalFenderC modified
+    ; Edited for Fractint v.20 by George Martin, 10/98
+  z=(pixel)/(1.099,0), x=|z|:
+  IF (x>1)
+    z=cosxx(z)+pixel
+  ENDIF
+  z=sqr(z)+pixel
+  x=|z|
+  x<=4
+}
 
-Carr1138  (XAXIS_NOPARM) {;FractalFenderC modified
-z=(pixel)/(2.099,0),x=|z|:
-(z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=sqr(z)+(pixel),
-x=|z|,
-x<=4 }
+Carr1138 (XAXIS_NOPARM) {; FractalFenderC modified
+    ; Edited for Fractint v.20 by George Martin, 10/98
+  z=(pixel)/(2.099,0), x=|z|:
+  IF (x>1)
+    z=sinh(z)+pixel
+  ENDIF
+  z=sqr(z)+(pixel)
+  x=|z|
+  x<=4
+}
 
-Carr1139  (XAXIS_NOPARM) {;FractalFenderC modified
-z=(pixel)/(2.099,0),x=|z|:
-(z=sinh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-z=(z*z)+(pixel*pixel*pixel),
-x=|z|,
-x<=4 }
+Carr1139 (XAXIS_NOPARM) {; FractalFenderC modified
+    ; Edited for Fractint v.20 by George Martin, 10/98
+  z=(pixel)/(2.099,0), x=|z|:
+  IF (x>1)
+    z=sinh(z)+pixel
+  ENDIF
+  z=(z*z)+(pixel*pixel*pixel)
+  x=|z|
+  x<=4
+}
 
 Carr1140{
 z=pixel/((1.099,0)*(1/pixel)),

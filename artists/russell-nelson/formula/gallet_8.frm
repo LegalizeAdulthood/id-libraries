@@ -304,15 +304,16 @@ Gallet-8-19 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
    |z| <= 16
    }
 
-Gallet-8-20 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
-              ; Requires periodicity = 0 and decomp = 256
-              ; real(p2) > 0
-   h = cabs(pixel) , pinv = 1/real(p1)
+Gallet-8-20 {; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
+             ; Requires periodicity = 0 and decomp = 256
+             ; real(p2) > 0
+             ; Revised for Fractint v20 by Sylvie Gallet
+   h = cabs(pixel), pinv = 1/real(p1)
    r = real(p2)
    IF (h >= r)
       z = -1
    ELSE
-      z = pixel*real(p2) / sqrt(real(p2)*real(p2) - |pixel))
+      z = pixel*real(p2) / sqrt(real(p2)*real(p2) - |pixel|)
       center = round(real(p1)*z) * pinv
       IF (cabs(z-center) < 0.45*pinv)
          z = exp(flip(atan(cabs(center))))
@@ -322,7 +323,8 @@ Gallet-8-20 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Mar 1997
    ENDIF
    :
    z < -1
-   }
+  ;SOURCE: gallet_8.frm
+}
 
 Gallet-8-21 { ; Sylvie Gallet, sylvie_gallet@compuserve.com, Apr 1997
               ; Requires periodicity = 0 and decomp=256

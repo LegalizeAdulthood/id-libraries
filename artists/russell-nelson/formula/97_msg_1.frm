@@ -21,10 +21,11 @@ z=(exp(z)/fn3(z*z))*fn2(y)+c
 |z|<4
 }
 
-BirdOfPrey(XAXIS_NOPARM) {z=p1, x=1:
-   (x<10)*(z=sqr(z)+pixel),
-   (10<=x)*(z=cosxx(z)+pixel),
-    x=x+1, |z|<=4}
+BirdOfPrey (XAXIS_NOPARM) {; Optimized by Sylvie Gallet
+  z = p1 :
+  z = cosxx(sqr(z) + pixel) + pixel
+  |z| <= 4
+}
 
 Carr2821{;Modified Sylvie Gallet frm. [101324,3444],1996
   ;passes=1 needs to be used with this PHC formula.

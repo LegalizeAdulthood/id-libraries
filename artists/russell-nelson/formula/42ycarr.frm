@@ -723,21 +723,24 @@ iter=iter+1
 |z|<=bailout
 }
 
-Carr3072(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
-;passes=1 needs to be used with this PHC formula.
-pixel=-abs(real(pixel))+flip(imag(pixel)),
-b5=(pixel^5+0.4.75)-cos(0.01/pixel)
-b4=b5-conj(0.1/b5-flip(0.01/b5))
-c=whitesq*(b4)-(whitesq==0)*(b4)
-z=whitesq*(b5)-(whitesq==0)*(b5)
-c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
-l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z^2+(-0.7456,-0.132)+|(flip(c/10))|,
-iter=iter+1
-|z|<=bailout
+Carr3072 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
+		  ; passes=1 needs to be used with this PHC formula.
+		  ; Corrected typo (0.4.75 to 0.475), G. Martin
+                  ; Added variable "newpixel". G. Martin 6/13/99
+  newpixel=-abs(real(pixel))+flip(imag(pixel))
+  b5=(newpixel^5+0.475)-cos(0.01/newpixel)
+  b4=b5-conj(0.1/b5-flip(0.01/b5))
+  c=whitesq*(b4)-(whitesq==0)*(b4)
+  z=whitesq*(b5)-(whitesq==0)*(b5)
+  c1=1.5*z, c2=2.25*z, c3=3.375*z, c4=5.0625*z
+  l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2)
+  bailout=16, iter=0:
+  t1=(iter==l1), t2=(iter==l2), t3=(iter==l3), t4=(iter==l4)
+  t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
+  z=z^2+(-0.7456,-0.132)+|(flip(c/10))|
+  iter=iter+1
+  |z|<=bailout
+  ;SOURCE: 42ycarr.frm
 }
 
 Carr3073(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996

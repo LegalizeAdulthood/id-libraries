@@ -48,11 +48,17 @@ Gallet-3-05 { ; Sylvie Gallet [101324,3444], 1996
  (sqr(real(z)) < bailout) || (sqr(imag(z)) < bailout)
 }
 
-Gallet-3-06 { ; Sylvie Gallet [101324,3444], 1996 
- z = pixel , c = p1 , bailout = real(p3) :
- test=(z*(c-z) >= 0)
- (z=z-p2)*test + (z=z+p2)*(1-test) , z = z*c
- (sqr(real(z)) < bailout) || (sqr(imag(z)) < bailout)
+Gallet-3-06 {; Sylvie Gallet [101324,3444], 1996
+             ; Revised for Fractint v20 by Sylvie Gallet
+  z = pixel, c = p1, bailout = sqrt(real(p3)):
+  IF (z*(c-z) >= 0)
+    z = z - p2
+  ELSE
+    z = z + p2
+  ENDIF
+  z = z*c
+  abs(z) < bailout || abs(imag(z)) < bailout
+  ;SOURCE: gallet-3.frm
 }
 
 Gallet-3-07 (YAXIS) {; Sylvie Gallet [101324,3444], 1996

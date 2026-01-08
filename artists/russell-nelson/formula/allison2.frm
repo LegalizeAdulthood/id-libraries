@@ -34,10 +34,12 @@ MyFractal-lla {; Linda Allison
 }
 
 Dragon8 (ORIGIN) {; Linda Allison
-  z = Pixel: power = p1/p2: x = z ^ power;
-   z = (fn1(z))/p1 - (fn2(z))/p2
-    |z| <= power
-  }
+                  ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = Pixel
+  power = p1/p2:
+  z = (fn1(z))/p1 - (fn2(z))/p2
+  |z| <= power
+}
 
 MyFract-7new {;Linda Allison 
   c = z = 1/pixel:

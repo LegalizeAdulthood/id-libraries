@@ -154,11 +154,12 @@ z=(fn2(z-t))
 
 phcscary6 {;from spacemandel_phc by Damion Persogna,
            ;11,18,96 - modified by Alex Dukay 11,22,96.
-z=pixel,r=(pixel*whitesq):
-r=fn1(1/z)+r
-m=fn2((1-(z*z)*imag(flip(z)))
-z=(m*(whitesq)+(r-1))
-|z|<4||2<|r|
+   z=pixel, r=(pixel*whitesq)
+   :
+   r=fn1(1/z)+r
+   m=fn2(1-(z*z)*imag(flip(z)))
+   z=(m*(whitesq)+(r-1))
+   |z|<4 || 2<|r|
 }
 
 pa0006{

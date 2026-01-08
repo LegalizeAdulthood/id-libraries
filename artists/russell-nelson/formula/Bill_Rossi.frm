@@ -1,12 +1,14 @@
-Doozy18 (yaxis)   {; Bill Rossi <billatny@aol.com>
-                   ; FractInt List -- 16 Sep 1995 17:11:19 -0400
+
+Doozy18 (yaxis) {; Bill Rossi
+                 ; FractInt List -- 16 Sep 1995 17:11:19 -0400
+                 ; Edited for Fractint v. 20 by George Martin, 10/98
   z = pixel, c=fn1(z)/fn2(z):
-   t=fn3(z),
-   l=t/fn1(t),
-   fn1(z)=l,
-   z=z/fn4(c)/l+fn1(z),
-   |z| <= 4
-  }
+  t=fn3(z)
+  l=t/fn1(t)
+  z=l
+  z=z/fn4(c)/l+fn1(z)
+  |z| <= 4
+}
 
 NewOne3 (yaxis)   {; Bill Rossi <billatny@aol.com>
                    ; FractInt List -- 16 Sep 1995 17:11:19 -0400

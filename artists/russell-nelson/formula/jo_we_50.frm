@@ -403,7 +403,7 @@ JoWe_12 { ; Jo Weber, July 1996
   |z|<5
   }
 
-JoWe_13 { , Jo Weber, July 1996
+JoWe_13 { ; Jo Weber, July 1996
   c=p1
   z=pixel:
   z=fn1(z)-c/fn2(z)
@@ -1861,7 +1861,7 @@ z=1/fn3(z)
 }
 
 JoWe_XY_51m { ; Jo Weber [100424,35] 11/1996
-k=(6 4), l = (0 4)
+k=(6, 4), l = (0, 4)
 pixel=cos(sin((k-pixel)/(l+pixel)))
 z=pixel
 bailout=p3 :

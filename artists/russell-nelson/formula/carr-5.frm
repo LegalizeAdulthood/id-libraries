@@ -28,19 +28,22 @@ Bob Carr
 }
 
 
-Carr-14 {modified fnzp fnpix
-z = 1 / tan(1 / pixel) +p1,
-c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
-z = fn1(z) * fn2(z),
- |z| <=64 
- }
+Carr-14 {; modified fnzp fnpix
+  z = 1 / tan(1 / pixel) +p1
+  c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
+  z = fn1(z) * fn2(z)
+  |z| <=64
+  ;SOURCE: carr.frm
+}
 
 Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
-  z = log(pixel) + 4c, z = cosxx(z): 
+  z = log(pixel) + 4*c, z = cosxx(z):
  z = z + cosxx(pixel);
  z = sqr(z)
-     Lastsqr <=4 
-  }
+     Lastsqr <=4
+  ;SOURCE: carr-5.frm
+    ;SOURCE: to-bob-6.frm
+}
 
 Carr-16 {
 z = 0:
@@ -96,50 +99,57 @@ z = sin(cosxx(1 / (z)) )
   |z| <= 4
    }
 
-Carr-24 {InvRadius-Mandel formula manipulated
+Carr-24 { ; InvRadius-Mandel formula manipulated
 c=z=1/pixel:
 z=sqr(z*z) - c;
 |z| <=4
- }
+  ;SOURCE: carr-5.frm
+   ;SOURCE: to-bob-6.frm
+}
 
-Carr-25 { Carr-24 Modified
+Carr-25 { ; Carr-24 Modified
 c=z=1/pixel:
 z=sqr(z) + (c-1);
 |z| <= 4
-  }
+  ;SOURCE: carr-5.frm
+    ;SOURCE: to-bob-6.frm
+}
 
-Carr-27 { Carr-24 Modified
-c=z=1/pixel:
-z=sqr(z) + (c-1 1/4);
- |z| <=10
- }
+Carr-27 {; Carr-24 Modified
+  c=z=1/pixel:
+  z=sqr(z) + (c-1)*(1/4)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-Carr-28 {Carr-24 Modified
+Carr-28 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z) + c;
 |z| <= 4
- }
+  ;SOURCE: carr-5.frm
+   ;SOURCE: to-bob-6.frm
+}
 
-Carr-29 {Carr-24 Modified
+Carr-29 { ; Carr-24 Modified
 c=z=1/pixel:
 z=1-(z*z*z) + c;
 |z| <= 4
  }
 
-Carr-30 {Carr-24 Modified
+Carr-30 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z) +c;
 |Z| <= 4
  }
 
 
-Carr-32 {Carr-24 Modified
+Carr-32 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
   }
 
-Carr-34 {Carr-24 Modified
+Carr-34 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8
