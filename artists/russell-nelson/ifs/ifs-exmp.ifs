@@ -10,23 +10,23 @@
 ; Organization: Data Warp Premium BBS - Spring/Houston, TX - 713-355-6107
 ; Reply-To: wesley.loewer@dwarp.sccsi.com (Wesley Loewer)
 ; Lines: 79
-; 
+;
 ; AI>Could anyone give me some simple examples of IFS that could
 ; AI>generate fractals in a 2d space
-; 
+;
 ; Concerning IFS examples, perhaps the following might be of interest to you
 ; and others.  A couple of years ago I got really interested in polygons
 ; formed by IFS definitions, in particular regular polygons that just touch
 ; each other.  I don't know if the following is common knowledge or
 ; something that I discovered, but here's what I came up with.  The proof for
 ; this is a bit hard to describe via 7 bit ascii, but here are the results.
-; 
+;
 ; If you want an n_gon sided polygon (ie: n_gon=3 for Sierpinski Triangle),
 ; For the IFS definition
-; 
+;
 ;  |x'| = |a b| * |x| + |e| with a probability p
 ;  |y'|   |c d|   |y|   |f|
-; 
+;
 ; use   a = 1-r
 ;       b = 0
 ;       c = 0
@@ -34,7 +34,7 @@
 ;       e = r * sin(k*x);
 ;       f = r * cos(k*x);
 ;       p = 1 / n_gon
-; 
+;
 ; where
 ;   k = line number (ie: k=0, k=1, ..., k=n_gon-1)
 ;   r = 1 - 1 / (2 * s)
@@ -43,7 +43,7 @@
 ;   x = 2 * pi / n_gon  (or 360/n_gon in degrees)
 ; (also, if n_gon is odd try r = 1 + 1 / (2 * s) for an interesting
 ; "inverted" polygon)
-; 
+;
 ; For example, using n_gon=3 gives the following 3 lines
 
 ThreeMinus { ; Sierpinski Triangle
@@ -85,8 +85,8 @@ Six {
 
 ; Hope someone finds this interesting,
 ; -wes
-; 
-; 
+;
+;
 ; ----
 ; +------------------------------------------------------------------------+
 ; | Data Warp Premium BBS                     (713) 355-6107  HST/V.32bis  |
