@@ -83,7 +83,7 @@ An_Ordinary_Newton { ; A newton with a different color map.
 Fiery_Mandelbrot!! { ; This is a HOT mandelbrot that resembles lightning.
                      ; In reds, blues...one of my first.
   reset type=mandel
-  corners=-0.59695729/-0.58756756/-0.62374772/-0.61683133 inside=0 
+  corners=-0.59695729/-0.58756756/-0.62374772/-0.61683133 inside=0
   colors=000aiu_kxZmzgbmpS`N`8<13>wINF5E<19>wHO7xu<8>tLRz`p<22>yIQyHPwzD<22>yI\
   OBR`<23>wHOCxF<5>rNN3DX<3>nHP6`W<9>tIOptH<9>yKORCG<14>wHOlEe<30>yHO8_1<25>wH\
   O_uF<7>hgIieJiX`<4>kVc<4>bfr
@@ -128,7 +128,7 @@ Floral_Mandel_2    { ; Another floral-type mandel, in shades of rose.
   colors=000G5B<84>hFPhFPhFPhGPhGQhHQ<113>zzz003<48>G5A
   }
 
-White-Center_Julia { ; It's bright, it's flashy.  
+White-Center_Julia { ; It's bright, it's flashy.
                      ; It's a white-centered Julia!
   reset type=julia
   corners=-1.73833/1.748145/-0.093932/0.172496/-0.611084/-1.596926
@@ -152,7 +152,7 @@ Tonsil_#1          { ; Amazing 3D look-alike using Cont Pot
   }
 
 Dinner_Plate_#2    { ; Looks like china on tablecloth!
-                     ; Closeup of Dinner Plate #1 
+                     ; Closeup of Dinner Plate #1
   reset type=formula formulafile=fractint.frm formulaname=LeeMandel2
   corners=-0.0233229/0.0233249/0.2569835/0.291958 inside=0
   potential=255/500/500
@@ -161,14 +161,14 @@ Dinner_Plate_#2    { ; Looks like china on tablecloth!
   ZMAl`AzoAIjb<10>sOD<22>1ZC<3>9SS
   }
 
-Batman             { ; Cont Pot... looks like a bat 
+Batman             { ; Cont Pot... looks like a bat
   reset type=manfn+zsqrd function=cosxx
   corners=1.591553/-3.133835/-3.158447/3.144699/-3.133835/3.144699
   maxiter=32000 inside=0 potential=255/300/150 decomp=256
   colors=000zk0<253>000
   }
 
-Kosmic_KamTorus    { ; Kosmic KamTorus, the Krazy Komet or Streamlined Ameoba 
+Kosmic_KamTorus    { ; Kosmic KamTorus, the Krazy Komet or Streamlined Ameoba
                      ; Make sure to Kolor Cycle
   reset type=kamtorus corners=-1.148911/7.308975/-4.931885/1.412292
   params=1.3/0.005/300/150 maxiter=3200 inside=0
@@ -177,20 +177,20 @@ Kosmic_KamTorus    { ; Kosmic KamTorus, the Krazy Komet or Streamlined Ameoba
   CPTQhSMdEaB3h5<4>lqkPTe15`<3>pdJ<5>NvoC`r2GtrNJ<7>7t_<2>DpC<3>IR2FVICZYAam<7\
   >38O<6>wr9<3>y8d<7>X_sdYm<4>Gd0s1V<5>VB0<4>sDL<4>Rsu<6>aZvxQ_<4>DvK<3>mD7<2>\
   kfJkpMiiL<6>W3Lp7H<7>16R<4>RSVWWVb``ideohjkaeQ0GhW`<3>V6ICbIIQGNDFbja<4>T7Iq\
-  eq<6>V5J0`N<3>N7FDgMG`KIVJ 
-  } 
+  eq<6>V5J0`N<3>N7FDgMG`KIVJ
+  }
 
-bug               { 
+bug               {
   reset type=mandel corners=-2.5/1.5/-1.5/1.5
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
   WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
   3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
-  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS 
-  } 
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
 
-barcode            { 
-  reset type=fn(z)+fn(pix) function=tan/log 
-  corners=1.00161088/1.0047816/-0.0000723/0.00230497 
+barcode            {
+  reset type=fn(z)+fn(pix) function=tan/log
+  corners=1.00161088/1.0047816/-0.0000723/0.00230497
   params=0/-0.00145/0.32/-0.0047889 maxiter=1500 periodicity=-256
   colors=@default.map
   }

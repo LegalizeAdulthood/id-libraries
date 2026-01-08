@@ -7,7 +7,7 @@ mflsqb6            { ; Blue Balls
   3>dmnfmofmo<208>zzz
   }
 
-jowe_fn1           { ; 0:10:21.22     DX4-100                  Jo Weber, 1996  
+jowe_fn1           { ; 0:10:21.22     DX4-100                  Jo Weber, 1996
                      ; broken piece
   reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
   corners=-1.242294/-0.74745662/0.78821842/2.5569385/-1.9131382/1.6826773
@@ -16,7 +16,7 @@ jowe_fn1           { ; 0:10:21.22     DX4-100                  Jo Weber, 1996
   2>x99zDDyAA<2>t00<34>200010020<39>0i7<4>0tO<3>0nG0lD0k9<18>0R5
   }
 
-jowe_fn2           { ; 0:04:31.61     DX4-100                  Jo Weber, 1996  
+jowe_fn2           { ; 0:04:31.61     DX4-100                  Jo Weber, 1996
                      ; frightened at the blue hole
   reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
   corners=-10.48328/5.036716/-6.305632/5.334368 params=0.3/0.75/1/-2
@@ -31,7 +31,7 @@ jowe_fn2           { ; 0:04:31.61     DX4-100                  Jo Weber, 1996
   S99P88L66H55D33A226210
   }
 
-jowe_fn3           { ; 0:05:58.00     DX4-100                  Jo Weber, 1996  
+jowe_fn3           { ; 0:05:58.00     DX4-100                  Jo Weber, 1996
                      ; shelter in an icy world
   reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
   corners=-11.65284/-0.01283861/9.155738/-6.364262/-0.01283861/-6.364262
@@ -42,7 +42,7 @@ jowe_fn3           { ; 0:05:58.00     DX4-100                  Jo Weber, 1996
   13>B03804402<15>u0u<5>a0a
   }
 
-jowe_fn4           { ; 0:09:02.50     DX4-100                  Jo Weber, 1996  
+jowe_fn4           { ; 0:09:02.50     DX4-100                  Jo Weber, 1996
                      ; cool
   reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
   corners=-0.71945785/-0.99361522/0.64733295/2.9228708/-1.9104127/2.235272\
@@ -54,7 +54,7 @@ jowe_fn4           { ; 0:09:02.50     DX4-100                  Jo Weber, 1996
   F88C67856756<13>AkYAn_Bp`<4>9bS9_Q9XO9UM8QK8NI8KG
   }
 
-jowe_fn5           { ; 0:04:10.14     DX4-100                  Jo Weber, 1996  
+jowe_fn5           { ; 0:04:10.14     DX4-100                  Jo Weber, 1996
                      ; hot cocks
   reset=1730 type=fn(z)+fn(pix) function=exp/sin passes=1
   corners=2.349594/-0.9258677/-2.633102/-1.061648/0.4161295/-0.05514973
@@ -168,8 +168,8 @@ mflsqg0            { ; Two Lambs - Stand several feet back from your monitor
   }
 
 ;  3d Graphs are resolution dependent, so here are 2 similar renderings,
-;  one for 1024x768, the other at 1600x1200.  
-;  Generate at the higher resolution that you have.  
+;  one for 1024x768, the other at 1600x1200.
+;  Generate at the higher resolution that you have.
 ;  First generate the 3-D Template:
 
 ComplexSinGraph    { ; 3d Template for Splashing Cliffs
@@ -218,7 +218,7 @@ graph-2            { ; Version 1930 Patchlevel 15
 
 
 1st_image_for_3D   { ; Save as SPOTS.GIF to be used later for 3d overlay
-		     ; Les StClair 1994 101461.2032@compuserve.com 		
+		     ; Les StClair 1994 101461.2032@compuserve.com
   reset=1100 type=fn(z*z) function=cotan savename=spots.gif
   corners=-1.2232056/-0.43890381/0.477416992/0.504608154/-0.95402527/0.118\
   392944 potential=255/200/0
@@ -984,7 +984,7 @@ MJN2-103         { ; Copyright Sylvie Gallet [101324,3444], 1996
   }
 
 Mountain_Gif       { ; Save as Mountain.gif
-                     ; Damion Presogna's "Cubist-30" image.                      
+                     ; Damion Presogna's "Cubist-30" image.
   reset=1940 type=formula formulafile=cubist.frm formulaname=Block_2
   function=sqrt/ceil passes=1
   corners=1.0100489/1.9991398/1.0798435/1.8216617 params=0/0 float=y
@@ -1002,7 +1002,7 @@ Mountain_Gif       { ; Save as Mountain.gif
 
 Mountain_Fog       { ; or is it Mountain snow storm? 3-D transform of VDP's
                      ; "Cubist-30" image. Cool image Damion!
-                     ; 3-D parameters are taken from Les St. Clair's 
+                     ; 3-D parameters are taken from Les St. Clair's
                      ; "Fractint-In-Rock" 3-D transform image
   3d=yes filename=mountain.gif scalexyz=85/90 roughness=320
   waterline=0 filltype=2 ambient=20 rotation=-30/-30/0 perspective=0

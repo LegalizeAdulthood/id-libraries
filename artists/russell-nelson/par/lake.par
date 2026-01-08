@@ -67,7 +67,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd

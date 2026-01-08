@@ -1,16 +1,16 @@
 ; * PAR file for Fractint 18.2
-; * don lebow 12/93 
+; * don lebow 12/93
 ; *
 ; * these are, to the best of my knowledge original
 ; *
 ; * use 'em as you like ... I'm no artist ... the magic's in the numbers
-; * 
-; * these were created at 640 x 480 x 256 colors. lower res renderings are 
+; *
+; * these were created at 640 x 480 x 256 colors. lower res renderings are
 ; * apt to look strange(r)
 ; *
-; * >>don CIS:76704,41 
+; * >>don CIS:76704,41
 
-Interior           { ;  
+Interior           { ;
   reset type=formula formulafile=fractint.frm formulaname=Ent2
   function=cosxx/sqr passes=1
   corners=0.66520307/0.40408232/-0.27309454/0.075067083/0.40408232/0.07506\
@@ -203,7 +203,7 @@ potential_fishes   {
   QPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<8>I8B
   }
 
-threadz          {   
+threadz          {
   reset type=fn(z)+fn(pix) function=tanh/cotan passes=b
   corners=-5.976442/4.250307/6.854249/-6.781418/4.250307/-6.781418
   params=1/0/1 float=y maxiter=100 bailout=50 inside=bof60 decomp=256

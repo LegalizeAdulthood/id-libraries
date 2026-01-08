@@ -1,6 +1,6 @@
 ;; CWMTNS.PAR - 5/14/93 Carol Walske
 
-;; 3 base fractals - 2 julfn+zsqrd + 1 lyapunov - 
+;; 3 base fractals - 2 julfn+zsqrd + 1 lyapunov -
 ;; 3 sets of 3D params
 ;; 3D treatment creates a small moon hanging low over mountains
 
@@ -57,7 +57,7 @@
                      ; parameters modified on Oct 21, 1996 by Les St Clair
   reset=1730 type=lyapunov passes=1 savename=moon.gif
   corners=3.112604/3.356604/3.612216/3.795216 params=-26629/0.5/0.2
-  float=y maxiter=3 inside=3 logmap=14 biomorph=256 periodicity=-1 
+  float=y maxiter=3 inside=3 logmap=14 biomorph=256 periodicity=-1
   colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwv\
   uuuuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopp\
   poqpooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjj\
@@ -75,13 +75,13 @@
 4-Mtns1-3D          { ; 3D params for 1st set of mountains
   3d=yes filename=mtns1.pot scalexyz=100/100 roughness=200 waterline=0
   filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
-  xyshift=0/0 xyadjust=0/-25 
+  xyshift=0/0 xyadjust=0/-25
   }
 
 5-Mtns2-3D          { ; 3D params for 2nd overlay of mountains
   3d=overlay filename=mtns2.pot scalexyz=130/130 roughness=150 waterline=0
   filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
-  xyshift=0/0 xyadjust=-10/-63 
+  xyshift=0/0 xyadjust=-10/-63
   }
 
 6-Moon-3D           { ; 3D params to put moon into scene
@@ -90,11 +90,11 @@
   perspective=0 xyshift=0/0 xyadjust=4/18
   }
 
-other_colors_1     { ; "The View From Phobos"            
+other_colors_1     { ; "The View From Phobos"
   colors=000BYT<56>16N16N27M<98>uTAuTAvUB<82>ysoDcU<9>CZT
   }
 
-other_colors_2     { ; "Grand Canyon"          
+other_colors_2     { ; "Grand Canyon"
   colors=A0FXYX<3>343642334534356654931D31962D52964D74784A83D92FC2A95D95BC\
   5ED54799795ACA9ADA9AD9ED9AADDBDADEEDDG31H62L72H74L75P75HA3L93ID3LF3H95LA\
   5HD6LD6QC6HB8LB8ID9ME9HACHEDLEDPB8SB9PE9TE9QFCUFCFG6EHBJG3MG3IG6MH5NK6PI\
@@ -107,21 +107,21 @@ other_colors_2     { ; "Grand Canyon"
   mmmpqnpmoqppqunprtruupnptwrtqtxutuxtuxwutvyyvwuxzzzz<19>zzz<2>ddd
   }
 
-other_colors_3     { ; "Blue Morning, Blue Day"              
+other_colors_3     { ; "Blue Morning, Blue Day"
   colors=005<2>003002000000000002003006<25>00k00m01m<29>0ky0mz1mz<30>zzz<4\
   4>5zz3zz2zz0zz0yz<43>05z03z02z00z00y<56>006
   }
 
-other_colors_4     { ; "Arrakis - Desert Planet"                
+other_colors_4     { ; "Arrakis - Desert Planet"
   colors=00AxlSymT<98>R7OR7OR8O<78>2iW2iW3iW<53>LkModS<15>wlS
   }
 
-other_colors_5      { ; "Night Comes In"                                      
+other_colors_5      { ; "Night Comes In"
   colors=000MMR<60>MFHMMSMEH<6>MEGLDFLDFKDFKDE<27>495384384384<134>3l5_S9<\
   6>bT6MMS<4>MMR
   }
 
-other_colors_o      { ; return to original color scheme 
+other_colors_o      { ; return to original color scheme
   colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwv\
   uuuuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopp\
   poqpooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjj\

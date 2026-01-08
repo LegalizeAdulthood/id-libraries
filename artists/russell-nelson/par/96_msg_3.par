@@ -1,9 +1,9 @@
 ; Subj:  Rainbow Par			Section: Fractal Sources
 ;   To:  Les St Clair, 101461,2032	02 October 1996 01:02:27
 ; From:  Lee Skinner, 75450,3631		#147433
-; 
+;
 ; Les,
-; 
+;
 ;   For what it's worth, here is my rainbow par for the rainbow image on Fractal
 ;   Frenzy:
 
@@ -23,9 +23,9 @@
 ; Subj:  encoder bug			Section: Fractint Sources
 ;   To:  Bert Tyler, 73477,433		02 October 1996 05:21:13
 ; From:  Timothy Wegner, 71320,675	#147437
-; 
-; Bert, I've been studying the encoder bug. To see the bug, generate the 
-; following at 640x480, save, and then try to view. There's garbage at the 
+;
+; Bert, I've been studying the encoder bug. To see the bug, generate the
+; following at 640x480, save, and then try to view. There's garbage at the
 ; bottom.
 
 lzw_bug            {
@@ -44,10 +44,10 @@ lzw_bug            {
   }
 
 ; This problem goes away (at least for this example) by making this change.
-; 
+;
 ; Change line 444 of encoder.c from
 ;  if (strlocn[hashentry] != 0 && lentest < MAXTEST-1-sizeof(int)) {
-;                                                   ^ 
+;                                                   ^
 ; to:
 ;  if (strlocn[hashentry] != 0 && lentest < MAXTEST-2-sizeof(int)) {
 ;                                                   ^
@@ -58,31 +58,31 @@ lzw_bug            {
 ; various numbers in above test (and another test involving MAXTEST a bit lower
 ; in the code), then we'll be able to revisit pdgif.c and fix it (unless it
 ; is another problem altogether).
-; 
+;
 ; If you have the opportunity to look at this, let me know what you think. I'd
 ; like us to revist the MAXTEST-1-sizeof(int) test and absolutely nail down
-; what it should be, to see why the above fix works. I'd love to get both the 
+; what it should be, to see why the above fix works. I'd love to get both the
 ; fractint and simplgif encoders working.
-; 
+;
 ; BTW it takes several hours to run simpligif on Jon's example. I commented out
 ; the remove() of the temporary file, and I'd like to modify simplgif.c so it
-; reads the temporary file and avoids having to totally decode all the images 
+; reads the temporary file and avoids having to totally decode all the images
 ; in fractmig.gif. This would enable me to make more experiments because it
 ; would run a lot faster, but I haven't figured out any easy way to do this
 ; yet.
-; 
-; Once we get simplgif working right, we can compile it with djgcc and creatly 
+;
+; Once we get simplgif working right, we can compile it with djgcc and creatly
 ; improve the effectiveness of compression by bumping up MAXSTRING.
-;  
+;
 ; Tim
 
 ;; ************************************************************************ ;;
 ; Subj:  Hope for river city		Section: Fractint Sources
 ;   To:  Timothy Wegner, 71320,675	02 October 1996 15:37:09
 ; From:  Lee Skinner, 75450,3631		#147442
-; 
+;
 ; Tim,
-; 
+;
 ;    Unfortunately I did not keep any of the dozens of examples I have run into,
 ; but I do remember that the following (from Fractal Frenzy) gave me trouble.
 ; When computed at 1600x1200, then broken up into 4x4 1600x1200 to make a
@@ -113,33 +113,33 @@ clazmre            { ; t=  0:05:14.72
   0zz0qz0hz0
   }
 
-; I do remember others that gave me trouble, but when I found one that worked, I went back and modified my 
+; I do remember others that gave me trouble, but when I found one that worked, I went back and modified my
 ; original as well.
-; 
+;
 ; Lee
 
 ;; ************************************************************************ ;;
 ; Subj:  encoder bug			Section: Fractint Sources
 ;   To:  Bert Tyler, 73477,433		03 October 1996 04:40:01
 ; From:  Timothy Wegner, 71320,675	#147455
-; 
-; Now I'm not so sure what's going on. Here's a tougher example. To clear it 
+;
+; Now I'm not so sure what's going on. Here's a tougher example. To clear it
 ; up, the changed lines have to become:
-; 
+;
 ;   if (strlocn[hashentry] != 0 && lentest < MAXTEST-1-6*sizeof(int)) {
-; 
+;
 ; and
-; 
+;
 ;   nextentry > maxstring-MAXTEST-1-6*sizeof(int)) {
-; 
-; Looks like these changes may just be masking the problem, not fixing it. I 
+;
+; Looks like these changes may just be masking the problem, not fixing it. I
 ; could believe that the test values could have miscalculated by a small amount,
 ; but the required fixes keep getting bigger.
-; 
+;
 ; Any thoughts?
-; 
+;
 ; Here's the example:
- 
+
 bug5            {
   reset=1920 type=formula formulafile=96_msg_3.frm
   formulaname=BILL_err7 function=sin/log/sinh/tan passes=g
@@ -152,11 +152,11 @@ bug5            {
 ; Subj:  Ants Problem			Section: Fractint Sources
 ;   To:  Timothy Wegner, 71320,675	06 October 1996 19:54:28
 ; From:  Loren G. Dobert, 72332,507	#147505
-; 
+;
 ; Hi Tim,
-; 
+;
 ; I came across a problem with the following PARs using the ant fractal:
-; 
+;
 ; [note: par file edited by L.StClair to include instructions for creating the
 ;  correct images]
 
@@ -204,22 +204,22 @@ Ant08              { ; Busy Highways with crossroads [.par has error: press F2]
 ; exact image each time, but the results should be similar (sometimes). Then I
 ; noticed that the first parameter does not seem to be correctly transfered from
 ; the PAR file to Fractint.
-; 
+;
 ; In the case of Ant07, the first parameter is listed as 1110001110001010, but
 ; on the "z" screen, the number listed is something like 1172088178, which
 ; results in a different image. If you type in the original string,
 ; 1110001110001010, then the image gets drawn in the proper manner, and you'll
 ; see why I called it "Busy Highways".
-; 
+;
 ; The second PAR, Ant08, has a first parameter of 1110001010101, which when read
 ; from the PAR file comes out as 1899447733, which just makes a little dot in
 ; the middle of the screen. Again, when you type in the correct string,
 ; 1110001010101, the "Busy Highways with crossroads" appear.
-; 
+;
 ; ????
-; 
+;
 ; And for another question:
-; 
+;
 ; The following PAR
 
 Ant09              { ; Too many roads
@@ -245,19 +245,19 @@ Ant09              { ; Too many roads
 ; what the original string was, how do I extract 11100011100011100011 from
 ; 1.11000111000111e+019? I realise the first fifteen digits are the same (with
 ; a decimal), but where would I get the last five?
-; 
+;
 ; Thanks,
 ; L.D.
-; 
+;
 ; P.S. I'm using Fractint 19.5.
 
 ;; ************************************************************************ ;;
 ; Subj:  ckp0836                          Section: Fractint Sources
 ;   To:  Jonathan Osuch, 73277,1432	08 October 1996 19:47:00
 ; From:  Lee Skinner, 75450,3631		#147531
-; 
+;
 ; Jonathan (or Tim),
-; 
+;
 ;   Here is a strange one.  Start generating an image with the following par at
 ; any resolution.  Use passes=1 or passes=g (default).
 
@@ -277,67 +277,67 @@ ckp0836            { ; "Bas Relief, Shell Skeleton"
 ; after the first row (or first row of pixel blocks if passes=g).   Now restore
 ; the saved file.  It now generates the rest of the image very quickly AND the
 ; rest of the image is different (but probably the correct one!).
-; 
+;
 ; Lee
-; 
+;
 ; Note: The .par entry was corrected for this compilation - see additional
 ; info. for explanation:
 
 ; Subj:  ckp0836				Section: Fractint Sources
 ;   To:  Lee Skinner, 75450,3631		08 October 1996 21:36:11
 ; From:  Sylvie Gallet, 101324,3444	#147533
-; 
+;
 ; Hi Lee,
-; 
+;
 ;   If you set reset to 1921 or higher, the problem disappears.
-; 
+;
 ; 	-  Sylvie
 
 ; Subj:  ckp0836				Section: Fractint Sources
 ;   To:  Lee Skinner, 75450,3631		09 October 1996 02:26:27
 ; From:  Jonathan Osuch, 73277,1432	#147542
-; 
-; >> Here is a strange one.  Start generating an image with the following par at any resolution.  Use passes=1 or 
+;
+; >> Here is a strange one.  Start generating an image with the following par at any resolution.  Use passes=1 or
 ; passes=g (default).
-; 
+;
 ; ckp0836 <<
-; 
-; The problem is a check for versions prior to 1920 that I put in FPU087.ASM because we started to check for 
-; division overflow instead of letting it slide.  If the check is commented out, the correct image is generated.  Or, at 
-; least it looks correct.  I haven't done a pixel comparison.  Comparing an image generated with 19.2 (or 18.2) 
+;
+; The problem is a check for versions prior to 1920 that I put in FPU087.ASM because we started to check for
+; division overflow instead of letting it slide.  If the check is commented out, the correct image is generated.  Or, at
+; least it looks correct.  I haven't done a pixel comparison.  Comparing an image generated with 19.2 (or 18.2)
 ; with an image generated with 19.5 and with release set to 1950 would be equivalent.
-; 
+;
 ; I'll have to dig into the old patches to see if I can determine why I thought the check was necessary.
-; 
+;
 ; Jonathan
 
 ;; ************************************************************************ ;;
 ; Subj:  PAR File				Section: Fractint Sources
 ;   To:  Loren G. Dobert, 72332,507	09 October 1996 05:23:27
 ; From:  Phil DiGiorgi, 76736,570		#147545
-; 
+;
 ; Hi Loren
-; 
+;
 ; >> I'm always on the lookout for new PARs using the Ant, so I had a look at
 ; yours. Some very nice images there.<<
-; 
+;
 ; Thanks.  I was on an ant kick for a while.  A couple more that I saved are
 ; below.
-; 
+;
 ; >>...see my PAR, LGDP0058 "ant6, Red Square" which uses ALMOST the same init
 ; string...<<
-; 
+;
 ; I will have to check it out.  I do have your LGD-0003 PAR.   I like the evil,
 ; demonic look of many of your images. (At least they looked that way to me,
 ; anyway.)   My favorites were LGPD0065 and LGPD0071, "Veteran of the Psychic
 ; Wars".
-; 
-; 
+;
+;
 ; -  Phil
 
 
 Mario              { ; plumbing project
-                     ;  
+                     ;
                      ; ;
   reset=1950 type=ant passes=1
   center-mag=+0.00000000000000000/+0.00000000000000000/1/1.3333
@@ -356,7 +356,7 @@ Mario              { ; plumbing project
 
 
 Sprawl             { ; urban development
-                     ;  
+                     ;
                      ; ;
   reset=1950 type=ant passes=1
   center-mag=+0.00000000000000000/+0.00000000000000000/1/1.3333
@@ -370,13 +370,13 @@ Sprawl             { ; urban development
 ; Subj:  Gallet-5 FRM and PAR		Section: Fractint Sources
 ;   To:  All				13 October 1996 19:58:18
 ; From:  Sylvie Gallet, 101324,3444	#147604
-; 
+;
 ; Hi,
-; 
+;
 ;   I just uploaded Gallet-5.zip (it should be visible tomorrow).
-; 
+;
 ;   Here are 3 of the 32 images.
-; 
+;
 ; 	-  Sylvie
 
 SG5-0302           { ; .                                     t=  0:11:54.03
@@ -420,23 +420,23 @@ SG5-0801           { ; .                                     t=  0:04:20.46
 ; Subj:  mandel mountain			Section: Fractint Sources
 ;   To:  Johan Vedel, 101701,2257		13 October 1996 20:02:05
 ; From:  Les St Clair, 101461,2032	#147605
-; 
+;
 ; Hi Johan,
-; 
+;
 ; >>Hi, I am trying to create 3d mandelbrot mountain images with Fractint.
 ; I'm not happy with the results , can anyone give me some example- parameter
 ; files ?.<<
-; 
+;
 ; I've dabbled with Fractint's 3d Transform facility, but I've never tried
 ; mountains before - so here goes...
 ; [It is important that you render these images at 1024x768 to get the correct
 ; effect of scale]
-; 
+;
 ; >>I have seen som beautifull images , made in this way<<
 ; The best mountain / landscape images made from fractals that I have seen were
 ; actually rendered with a program called Vista Pro. If you like fractal
 ; landscapes then Vista Pro is unbeatable!
-; 
+;
 ; The first image (savename=mount_2d.gif) is used for all of the subsequent
 ; 3d_transforms. I chose to use a Julia rather than a Mandelbrot for my starting
 ; point. Also, I used continuous potential (via Fractint's "Y" screen) with a
@@ -461,7 +461,7 @@ Mountain_2d        { ; "Mountain image for 3d Transforms"    t=  0:00:15.32
   zzzz<19>zzz<7>343642334534356654931D31962D52964D74784
   }
 
-; The first 3d_transform is very basic, using pretty much the default settings. I've used "randomize colors" to break 
+; The first 3d_transform is very basic, using pretty much the default settings. I've used "randomize colors" to break
 ; up the hard background on this image.
 ; It is a good idea at this point to familiarise yourself with the effect of altering the x-axis, y-axis and z-axis rotation
 
@@ -474,9 +474,9 @@ Mountain_3d_01     { ; "Julia Mountain Island"               t=  0:04:48.68
   xyshift=0/10
   }
 
-; The next two transforms use exactly the same starting point image, yet produce quite different results. The main 
-; items I have altered here are the "light source" and the "perspective". When running the .par it is worth taking 
-; time to look at each screen as you step through the 3d_transform process. It will give you a good idea of what's 
+; The next two transforms use exactly the same starting point image, yet produce quite different results. The main
+; items I have altered here are the "light source" and the "perspective". When running the .par it is worth taking
+; time to look at each screen as you step through the 3d_transform process. It will give you a good idea of what's
 ; going on.
 
 Mountain_3d_02     { ; "The First Snows of Winter"           t=  0:06:41.29
@@ -499,19 +499,19 @@ Mountain_3d_03     { ; "View From The Summit"                t=  0:06:21.62
   }
 
 ; Hope you like these and that they are of some help.
-; 
+;
 ; cheers, Les
 
 ;; ************************************************************************ ;;
 ; Subj:  Makepar				Section: Fractint Sources
 ;   To:  Timothy Wegner, 71320,675	13 October 1996 22:19:00
 ; From:  Sylvie Gallet, 101324,3444	#147607
-; 
+;
 ; Hi Tim,
-; 
+;
 ;   Makepar doesn't write the viewwindows= parameters.  Tb0005 is the par entry
 ;   created with the <b> command.
-; 
+;
 ; 	-  Sylvie
 
 Tb0005             { ; .                                     t=  0:00:02.08
@@ -534,22 +534,22 @@ T0005.GIF          { ; .                                     t=  0:00:02.08
 ; Subj:  Gallet-5 FRM and PAR		Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	14 October 1996 01:56:25
 ; From:  Les St Clair, 101461,2032	#147616
-; 
+;
 ; Hi Sylvie,
-; 
+;
 ; >> I just uploaded Gallet-5.zip (it should be visible tomorrow).<<
-; 
+;
 ; Sounds like we should turn our telescopes skyward<g>.
 ; Actually, any new "gallet" formula is a special event. I shall be waiting,
 ; modem at the ready, for it's appearance!
-; 
+;
 ; >>SG5-0302            ; .                                     t=  0:11:54.03
 ; >>SG5-0704            ; .                                     t=  0:04:40.34
 ; >>SG5-0704            ; .                                     t=  0:04:40.34
-; 
+;
 ; Fine examples!
 ; I look forward to rendering the whole thing.
-; 
+;
 ; Without even trying, interesting fractals seem to fall from your formulae,
 ; here's a few I did earlier:
 
@@ -637,21 +637,21 @@ G5_03_03           { ; "Grainy"                              t=  0:02:07.15
 ; Subj:  Worst idea I ever had...		Section: Fractint Sources
 ;   To:  All				14 October 1996 19:31:27
 ; From:  Jim J. Deutch, 104074,3171	#147630
-; 
+;
 ; Hi everybody --
-; 
+;
 ; I've always liked the IFS fractal type, and I wondered if I could write a
 ; formula to produce IFS fractals.  The problem is that IFS fractals jump
 ; around, whereas formula fractals scan the screen pixel by pixel.
-; 
+;
 ; The solution I came up with was....generate the whole IFS fractal at each
 ; pixel, in order to find out if that pixel is in the IFS image or not.
 ; As you may imagine, this is very very slow, but it works!
-; 
+;
 ; Debugging and altering the formulas, however, is not really possible with a
 ; mere pentium, because of the time it takes to produce a test run.  I gave up
 ; on trying to match the IFS coloring schemes...
-; 
+;
 ; Here are the IFS parameters and par for Tree1, previously uploaded in JIMD.ZIP:
 
 
@@ -666,7 +666,7 @@ Tree1              { ; Jim Deutch
   }
 
 ; The above par produces a nice image of a tree in a few seconds.
-; 
+;
 ; Here's my new formula and par to produce the very same image (except that the
 ; colorization is different):
 
@@ -690,21 +690,21 @@ slowtree           { ;Jim Deutch, 1996
 ; is *outside* the image.  After 62 hours of computation, it was about 85%
 ; complete.  That's about 100,000 times slower than the built-in IFS.
 ; The image was correct, though! <g>
-; 
+;
 ; Moral of the story?  Just because you *can*, doesn't mean you *should*!
-; 
+;
 ; Jim Deutch
 
 ;; ************************************************************************ ;;
 ; Subj:  Gallet-5 FRM and PAR		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	16 October 1996 17:23:25
 ; From:  Sylvie Gallet, 101324,3444	#147681
-; 
+;
 ; Hi Les,
-; 
+;
 ;   I just re-uploaded Gallet-5.zip with 14 new images (11 with the
 ;   gallet-8 frm).  Here are 2 of my favorites.
-; 
+;
 ; 	-  Sylvie
 
 SG5-0806           { ; .                                     t=  0:01:47.60
@@ -738,12 +738,12 @@ SG5-0810           { ; .                                     t=  0:01:31.78
 ; Subj:  Gallet-5 FRM and PAR		Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	16 October 1996 20:29:18
 ; From:  Les St Clair, 101461,2032	#147683
-; 
+;
 ; Hi Sylvie,
-; 
+;
 ; >>How long????<<
 ; patience!!
-; 
+;
 ; Oh, OK here's a snippet from "sylvie3.par/WIP" -
 
 G5_01_01           { ; "fractal title goes here"             t=  0:04:34.24
@@ -781,18 +781,18 @@ G5_09_01           { ; "fractal title goes here"             t=  0:02:06.83
 ; Subj:  Gallet-5 FRM and PAR		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	16 October 1996 22:33:22
 ; From:  Sylvie Gallet, 101324,3444	#147686
-; 
+;
 ; Hi again Les,
-; 
+;
 ; >> Oh, OK here's a snippet from "sylvie3.par/WIP" -
-; 
+;
 ;   Excellent!
-; 
+;
 ;   I just made 9 new images with Gallet-5-08 (they are not in the second
 ;   version of Gallet-5.zip).
-; 
+;
 ;   Cheers,
-; 
+;
 ; 	-  Sylvie
 
 sg5-0814           { ; .                                     t=  0:01:13.88
@@ -917,7 +917,7 @@ sg5-0822           { ; .                                     t=  0:01:32.65
 ; Subj:  I love fractint			Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	18 October 1996 14:02:11
 ; From:  Hans-Joachim Weber, 100424,35	#147747
-; 
+;
 ; Just a little playing around and having a heart for fractint.
 ; Create first heart_t and save it, then heart_b and with it on the screen
 ; start with 2 or @ the heart-par. Accept all with RETURN.
@@ -925,7 +925,7 @@ sg5-0822           { ; .                                     t=  0:01:32.65
 ; Enjoy -- Jo --
 
 
-heart_t            { ;   0:01:31.73     
+heart_t            { ;   0:01:31.73
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  14:39:43
                      ; Par and Image Copyright 1996 by Jo Weber
                      ; parameters created on Sep 21, 1996 at 10:33:30 hours
@@ -942,7 +942,7 @@ heart_t            { ;   0:01:31.73
   L<2>MNf0G_0IhmmzY`xIOv9Zq0KqdaCLPA1J7BJ0zo5zY0
   }
 
-heart_b            { ;   0:01:20.41     
+heart_b            { ;   0:01:20.41
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  14:39:57
                      ; Par and Image Copyright 1996 by Jo Weber
                      ; parameters created on Sep 21, 1996 at 10:33:30 hours
@@ -961,7 +961,7 @@ heart_b            { ;   0:01:20.41
   L<2>MNf0G_0IhmmzY`xIOv9Zq0KqdaCLPA1J7BJ0zo5zY0
   }
 
-heart              { ;   0:01:08.49     
+heart              { ;   0:01:08.49
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  14:39:15
                      ; Par and Image Copyright 1996 by Jo Weber
                      ; parameters created on Sep 21, 1996 at 10:33:30 hours
@@ -982,13 +982,13 @@ heart              { ;   0:01:08.49
 ; Subj:  JoWe48				Section: Fractint Sources
 ;   To:  Robert Carr, 73753,2420		18 October 1996 14:05:10
 ; From:  Hans-Joachim Weber, 100424,35	#147748
-; 
+;
 ; Hi Bob,
-; some more images. 
+; some more images.
 ; Enjoy -- Jo --
 
 
-jw48100            { ;   0:02:06.06     
+jw48100            { ;   0:02:06.06
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  13:12:46
                      ; Par and Image Copyright 1996 by Jo Weber
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -1002,7 +1002,7 @@ jw48100            { ;   0:02:06.06
   <12>B82
   }
 
-jw48101            { ;   0:01:01.35     
+jw48101            { ;   0:01:01.35
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  13:01:18
                      ; Par and Image Copyright 1996 by Jo Weber
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -1016,7 +1016,7 @@ jw48101            { ;   0:01:01.35
   0<12>000<15>ut0<15>000GA4<11>3r1
   }
 
-jw48102            { ;   0:01:01.96     
+jw48102            { ;   0:01:01.96
                      ; on a 486DX4-100 at 1280x1024  Oct 18, 1996  13:01:42
                      ; Par and Image Copyright 1996 by Jo Weber
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -1033,11 +1033,11 @@ jw48102            { ;   0:01:01.96
 ; Subj:  Moo_PHC				Section: Fractint Sources
 ;   To:  Vincent Presogna, 76455,2222	19 October 1996 22:25:05
 ; From:  Les St Clair, 101461,2032	#147789
-; 
+;
 ; >> I took Moo & Moo_2 from my Mad_Cow formulas and voila!...Moo_PHC<<
-; 
+;
 ; Wot no .par file??
-; 
+;
 ; well here's some anyway...
 
 moo_phc1           { ; "PHC...Pseudo Hi Cow?..Moooo!"        t=  0:14:36.28
@@ -1082,23 +1082,23 @@ moo_phc3           { ; "Set the Controls for the Heart of the Sun" t=0:48:24.32
 ; Subj:  mandel mountain			Section: Fractint Sources
 ;   To:  Johan Vedel, 101701,2257		22 October 1996 00:48:19
 ; From:  Les St Clair, 101461,2032	#147830
-; 
+;
 ; Hi again Johan,
-; 
+;
 ; Hope you got the mountain stuff O.K.
 ; I just happened to be browsing through the catalogue for lib.04 here on
 ; GraphDev when I came across this truly wonderful Fractint mountain .par
 ; uploaded by Carol Walske back in 1993. I've posted it here, with a few
 ; modifications, plus a few extra plug-in color schemes.
-; 
+;
 ; Anyone else reading should also try this .par, Carol has created a triple
 ; 3d overlay masterpiece!
-; 
+;
 ; - Les
 
 ;; CWMTNS.PAR - 5/14/93 Carol Walske
 
-;; 3 base fractals - 2 julfn+zsqrd + 1 lyapunov - 
+;; 3 base fractals - 2 julfn+zsqrd + 1 lyapunov -
 ;; 3 sets of 3D params
 ;; 3D treatment creates a small moon hanging low over mountains
 
@@ -1155,7 +1155,7 @@ moo_phc3           { ; "Set the Controls for the Heart of the Sun" t=0:48:24.32
                      ; parameters modified on Oct 21, 1996 by Les St Clair
   reset=1730 type=lyapunov passes=1 savename=moon.gif
   corners=3.112604/3.356604/3.612216/3.795216 params=-26629/0.5/0.2
-  float=y maxiter=3 inside=3 logmap=14 biomorph=256 periodicity=-1 
+  float=y maxiter=3 inside=3 logmap=14 biomorph=256 periodicity=-1
   colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwv\
   uuuuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopp\
   poqpooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjj\
@@ -1173,13 +1173,13 @@ moo_phc3           { ; "Set the Controls for the Heart of the Sun" t=0:48:24.32
 4-Mtns1-3D          { ; 3D params for 1st set of mountains
   3d=yes filename=mtns1.pot scalexyz=100/100 roughness=200 waterline=0
   filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
-  xyshift=0/0 xyadjust=0/-25 
+  xyshift=0/0 xyadjust=0/-25
   }
 
 5-Mtns2-3D          { ; 3D params for 2nd overlay of mountains
   3d=overlay filename=mtns2.pot scalexyz=130/130 roughness=150 waterline=0
   filltype=6 lightsource=0/-1/1 smoothing=2 rotation=65/0/0 perspective=0
-  xyshift=0/0 xyadjust=-10/-63 
+  xyshift=0/0 xyadjust=-10/-63
   }
 
 6-Moon-3D           { ; 3D params to put moon into scene
@@ -1188,12 +1188,12 @@ moo_phc3           { ; "Set the Controls for the Heart of the Sun" t=0:48:24.32
   perspective=0 xyshift=0/0 xyadjust=4/18
   }
 
-other_colors_1     { ; "The View From Phobos"            
+other_colors_1     { ; "The View From Phobos"
   colors=000BYT<56>16N16N27M<98>uTAuTAvUB<82>ysoDcU<9>CZT
   }
 
 
-other_colors_2     { ; "Grand Canyon"          
+other_colors_2     { ; "Grand Canyon"
   colors=A0FXYX<3>343642334534356654931D31962D52964D74784A83D92FC2A95D95BC\
   5ED54799795ACA9ADA9AD9ED9AADDBDADEEDDG31H62L72H74L75P75HA3L93ID3LF3H95LA\
   5HD6LD6QC6HB8LB8ID9ME9HACHEDLEDPB8SB9PE9TE9QFCUFCFG6EHBJG3MG3IG6MH5NK6PI\
@@ -1206,21 +1206,21 @@ other_colors_2     { ; "Grand Canyon"
   mmmpqnpmoqppqunprtruupnptwrtqtxutuxtuxwutvyyvwuxzzzz<19>zzz<2>ddd
   }
 
-other_colors_3     { ; "Blue Morning, Blue Day"              
+other_colors_3     { ; "Blue Morning, Blue Day"
   colors=005<2>003002000000000002003006<25>00k00m01m<29>0ky0mz1mz<30>zzz<4\
   4>5zz3zz2zz0zz0yz<43>05z03z02z00z00y<56>006
   }
 
-other_colors_4     { ; "Arrakis - Desert Planet"                
+other_colors_4     { ; "Arrakis - Desert Planet"
   colors=00AxlSymT<98>R7OR7OR8O<78>2iW2iW3iW<53>LkModS<15>wlS
   }
 
-other_colors_5      { ; "Night Comes In"                                      
+other_colors_5      { ; "Night Comes In"
   colors=000MMR<60>MFHMMSMEH<6>MEGLDFLDFKDFKDE<27>495384384384<134>3l5_S9<\
   6>bT6MMS<4>MMR
   }
 
-other_colors_o      { ; return to original color scheme 
+other_colors_o      { ; return to original color scheme
   colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwv\
   uuuuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopp\
   poqpooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjj\
@@ -1239,16 +1239,16 @@ other_colors_o      { ; return to original color scheme
 ; Subj:  pdg02.par			Section: Fractint Sources
 ;   To:  Phil DiGiorgi, 76736,570		22 October 1996 20:56:04
 ; From:  Les St Clair, 101461,2032	#147845
-; 
+;
 ; Hello Phil,
-; 
+;
 ; I've just finished looking at your "pdg02.par", it is really excellent with
 ; some interesting and unusual images. My favourites are 202A,
 ; 205D (baloon party!), 207D, 208B and 212A.
-; 
+;
 ; Your formulas also look very interesting, here's just a quick dabble with
 ; PD_212:
-; 
+;
 ; cheers, Les
 
 PP_01              { ; "Slight Reflection"                   t=  0:35:23.26
@@ -1280,7 +1280,7 @@ PP_02              { ; "Double-Sun Flower"                   t=  0:06:59.91
 ; Subj:  mandel mountain			Section: Fractint Sources
 ;   To:  Jim J. Deutch, 104074,3171	24 October 1996 13:31:28
 ; From:  Jim J. Deutch, 104074,3171	#147888
-; 
+;
 ; Here's my contribution to the Mandel Mountain color schemes.  It is now my
 ; favorite wallpaper!
 
@@ -1302,9 +1302,9 @@ PP_02              { ; "Double-Sun Flower"                   t=  0:06:59.91
 ; Subj:  JDwork4.par			Section: Fractint Sources
 ;   To:  All				24 October 1996 13:32:01
 ; From:  Jim J. Deutch, 104074,3171	#147889
-; 
+;
 ; Hi everyone --
-; 
+;
 ; Here's a preview from my new par file, with a holiday theme.  (for those
 ; non-U.S. among you, Oct. 31st is when all the kids dress up like monsters and
 ; everyone decorates with skeletons, ghosts, etc.  Crazy holiday, but wth)
@@ -1324,15 +1324,15 @@ bat                { ; Halloween Special!, copyright Jim Deutch 1996  00:00:43
 ; Subj:  JDwork4.par			Section: Fractint Sources
 ;   To:  Jim J. Deutch, 104074,3171	24 October 1996 22:20:06
 ; From:  Les St Clair, 101461,2032	#147898
-; 
+;
 ; Hi Jim,
-; 
+;
 ; >> Oct. 31st is when all the kids dress up like monsters<<
 ; My kids don't need to dress up to be monsters<g>
-; 
+;
 ; >>bat             ; Halloween Special!, copyright Jim Deutch 1996  00:00:43<<
 ; I liked your bat very much.<<
-; 
+;
 ; Here's my offering for Halloween:
 
 
@@ -1355,14 +1355,14 @@ LF16_09            { ; "Halloween Pumpkin" from LESFRM04.PAR t=  0:50:09.64
 ; Subj:  3-D-overlay			Section: Fractint Sources
 ;   To:  Hans-Joachim Weber, 100424,35	25 October 1996 20:42:28
 ; From:  Les St Clair, 101461,2032	#147910
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >>When will do you u/l a 3-d-parfile?<<
 ; Hmmm? Good question.
 ; I've been struggling with this and basically I'm not happy with what I've
 ; come up with. Here's some examples from my Work in Progress -
-; 
+;
 ; These excerpts are images with 3d_transforms (not overlays), part of the fun
 ; is watching the transformation unfold!
 
@@ -1399,7 +1399,7 @@ L3DT_06            { ; image for L3DT_06_3d    LStC [use 1024x768] t=02m48s
   00600400<2>000<20>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8R\
   k8Sl9Tm9U<21>yHqzIszJr<29>zqPzsOzsP<10>zua000zvd000zvf000zwi000zwk000zxn\
   000zxp000000zxr000zyu000zyw000zzz000xzz000vzy000tzx000rzx000pzw000nzv000\
-  lzu000izt000gzs000ezs 
+  lzu000izt000gzs000ezs
   }
 
 L3DT_06_3d         { ; "3d-Eye"                LStC [use 1024x768] t=07m51s
@@ -1435,10 +1435,10 @@ L3DT_14_3D         { ; "Wild Orchid"           LStC [use 1024x768] t=00m24s
 ; Subj:  Coming attraction...		Section: Fractint Sources
 ;   To:  ALL				26 October 1996 21:49:28
 ; From:  Robert W. Carr, 73753,2420	#147917
-; 
+;
 ; This is a sample image from one of my upcoming PAR files. I think it
 ; is a Pseud 3D PHC.
-; 
+;
 ; --Bob Carr--
 
 
@@ -1454,11 +1454,11 @@ Carr2872-F         { ; From a modified Sylvie Gallet frm.
 ; Subj:  Coming attraction...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	27 October 1996 06:31:13
 ; From:  Lee Skinner, 75450,3631		#147930
-; 
+;
 ; Bob,
-; 
+;
 ; >>Thank you Lee. Anything there for zooming?
-; 
+;
 ; Well, since you asked, here are a couple:
 
 c287201            { ; t=  0:38:38.67   Forest Moonrise
@@ -1491,7 +1491,7 @@ c287202            { ; t=  0:38:59.23   Halloween Fantasy
 ; Subj:  wild orchid			Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	27 October 1996 13:28:15
 ; From:  Hans-Joachim Weber, 100424,35	#147935
-; 
+;
 ; Hi Les,
 ; why so shy. Great 3-D-images, your wild orchid is so fantastic, that I
 ; must do a double.
@@ -1538,8 +1538,8 @@ les_orc1           { ;   0:00:27.73     3-D-image of jo_les_1
                      ; on a 486DX4-100 at 1280x1024  Oct 27, 1996  13:58:16
                      ; Image Copyright 1996 by Jo Weber
                      ; par by Les St Clair 101461.2032@compuserve.com  1996
-  3d=yes filename=jo_les_1.gif sphere=y latitude=-90/90 longitude=180/0 
-  radius=200 scalexyz=90/200 roughness=500 waterline=0 ambient=20 
+  3d=yes filename=jo_les_1.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=200 scalexyz=90/200 roughness=500 waterline=0 ambient=20
   perspective=0 xyshift=0/3 cyclerange=0/255 savename=les_orc1
   }
 
@@ -1547,8 +1547,8 @@ les_orc2           { ;   0:00:29.99     3-D-image of jo_les_2
                      ; on a 486DX4-100 at 1280x1024  Oct 27, 1996  13:58:40
                      ; Image Copyright 1996 by Jo Weber
                      ; par by Les St Clair 101461.2032@compuserve.com  1996
-  3d=yes filename=jo_les_2.gif sphere=y latitude=-90/90 longitude=180/0 
-  radius=150 scalexyz=90/200 roughness=500 waterline=0 ambient=20 
+  3d=yes filename=jo_les_2.gif sphere=y latitude=-90/90 longitude=180/0
+  radius=150 scalexyz=90/200 roughness=500 waterline=0 ambient=20
   perspective=0 xyshift=0/-6 cyclerange=0/255 savename=les_orc2
   }
 
@@ -1556,22 +1556,22 @@ les_orc2           { ;   0:00:29.99     3-D-image of jo_les_2
 ; Subj:  wild orchid			Section: Fractint Sources
 ;   To:  Hans-Joachim Weber, 100424,35	27 October 1996 20:26:26
 ; From:  Les St Clair, 101461,2032	#147945
-; 
+;
 ; Hi Jo,
-; 
+;
 ; >>for les_orc1..for les_orc2<<
-; 
+;
 ; Very nice orchids!
-; 
+;
 ; I especially liked orchid #2, so I made a garden to put a few "cuttings" in -
 ; (each one is different!)
-; 
+;
 ; 1. Generate and save "jowe_orc.gif", this is your orchid image #2 with
 ;    different colours,
 ; 2. Generate the "garden" background,
 ; 3. Proceed with the *six* overlays!
 ;    (thanks to Lee Skinner's "nine crescent moons" for the inspiration)
-; 
+;
 ; hope you like it, Les
 
 jowe_orc_gif       { ; Jo Weber's 2d_orchid for 3d_overlays  t=  0:02:11.21
@@ -1660,9 +1660,9 @@ orchid_ol_6        { ; "6th orchid 3d_overlay"               t=  0:00:26.75
 ; Subj:  Coming attraction...		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	27 October 1996 21:12:02
 ; From:  Lee Skinner, 75450,3631		#147947
-; 
+;
 ; Les,
-; 
+;
 ;   Here's another:
 
 c287206            { ; t=  1:03:24.96   Fire on the Mountain
@@ -1685,7 +1685,7 @@ c287206            { ; t=  1:03:24.96   Fire on the Mountain
 ;; ************************************************************************ ;;
 ;   To:  All				01 November 1996 20:24:21
 ; From:  Vincent Presogna, 76455,2222	#148052
-; 
+;
 ; Here is a PHC using Barnsleyj1 & Barnsleym1 and a par file to go with it.
 ; Cheers!
 
@@ -1696,7 +1696,7 @@ Barn Storming  { ; For Les St. Clair
                  ;   ?:??:??.?? @ 1024x768 on a 486DX2-66
   reset=1950 type=formula formulafile=96_msg_3.frm
   formulaname=Barnsley_PHC_3 passes=1 center-mag=0/0/0.6666667
-  params=0.6/1.1/0/0 float=y maxiter=1024; 
+  params=0.6/1.1/0/0 float=y maxiter=1024;
   colors=00000000m0m0m0000c0c0c00<7>mm0<7>00w5Kt7Ss9ZrAcqBgqDlpDooDooDerDa\
   tDZt<4>DOxDMxDLx<3>DFzDDzDDzDDv<2>CCqBBpBBoBBnBBn<5>AAiAAiAAhAAhHHd<2>OO\
   `QQ_RR_<5>YYVZZV__U``U``T<4>ddReeQffQffQggPhhP<14>qqJqqJrrJrrJssI<14>zzE\
@@ -1707,15 +1707,15 @@ Barn Storming  { ; For Les St. Clair
 ; Subj:  Barnsley_PHC			Section: Fractint Sources
 ;   To:  Vincent Presogna, 76455,2222	03 November 1996 11:42:20
 ; From:  Les St Clair, 101461,2032	#148079
-; 
+;
 ; Hi Damion,
-; 
+;
 ; Really good formula!
 ; Check these out...
-; 
+;
 ; BTW, the last image was made by my daughter (age 3) who has mastered the
 ; keystrokes for Fractint (really).
-; 
+;
 ; cheers, Les
 
 BARNS_01           { ; "Will-o-the-Wisp" PHC                 t=  0:02:51.04
@@ -1818,7 +1818,7 @@ BARNS_06           { ; "Width of a Circle" PHC               t=  0:10:08.74
   00c<14>003000022<14>0cc<15>zzz<15>0cc<2>0XX
   }
 
-BARNS_07           { ; "Secret Passage Tunnel with a River and Ball" PHC      
+BARNS_07           { ; "Secret Passage Tunnel with a River and Ball" PHC
                      ; .par and name by Julia (age 3)
                      ; (c) 1996 by Julia St Clair c/o101461.2032@compuserve.com
                      ; parameters created on Nov 03, 1996 at 11:09:17 hours
@@ -1836,9 +1836,9 @@ BARNS_07           { ; "Secret Passage Tunnel with a River and Ball" PHC
 ; Subj:  Barnsley_PHC			Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	03 November 1996 16:47:06
 ; From:  Lee Skinner, 75450,3631		#148089
-; 
+;
 ; Les,
-; 
+;
 ;   My favorite of your barns was Barn_02.  Here's a zoom into it:
 
 Barnland           { ; t=  0:02:09.24
@@ -1861,9 +1861,9 @@ Barnland           { ; t=  0:02:09.24
 ; Subj:  Barnsley_PHC			Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	03 November 1996 18:29:00
 ; From:  Lee Skinner, 75450,3631		#148090
-; 
+;
 ; Les,
-; 
+;
 ;   Five more barnsley_phc_3 PHC's:
 
 aliens             { ; t=  0:01:17.23
@@ -1938,12 +1938,12 @@ YellowKite         { ; t=  0:22:49.96
 ; Subj:  Sylvie3 - WIP			Section: Fractint Sources
 ;   To:  SYLVIE GALLET, 101324,3444	08 November 1996 04:05:17
 ; From:  Les St Clair, 101461,2032	#148198
-; 
+;
 ; Hi Sylvie,
-; 
+;
 ; Just a note to say that I'm back on track with "Sylvie3.par".
 ; Here's a couple more from the work in progress -
-; 
+;
 ; BTW - I just love the "gallet-5-08" formula...it's an all time classic!!
 
 G5_08_35           { ; "Spacewarp"                           t=  0:02:43.29
@@ -1982,17 +1982,17 @@ G5_08_36           { ; "Pandora's Box"                       t=  0:10:14.67
 ; Subj:  Snowflakes			Section: Fractint Sources
 ;   To:  All				08 November 1996 19:46:11
 ; From:  Jim J. Deutch, 104074,3171	#148215
-; 
+;
 ; Hi --
-; 
+;
 ; Since it's Friday, JDFlake.zip is not likely to be available until next week,
 ; so here's a sample.  We've already had our first big snowfall (and I had to
 ; walk the last two miles up the hill because the car didn't make it), so I
 ; think the subject is appropriate <g>.
-; 
+;
 ; Many of these snowflake formulas rely on Sylvie's PTC 24-bit "kernel".
 ; Thanks Sylvie!
-; 
+;
 ; --Jim Deutch
 
 
@@ -2033,9 +2033,9 @@ JDflk19            { ;copyright 1996, Jim Deutch   00:03:44
 ; Subj:  ATAN2 Error			Section: Fractint Sources
 ;   To:  Mateo Obregon, 72317,1117	09 November 1996 16:11:03
 ; From:  Vincent Presogna, 76455,2222	#148230
-; 
+;
 ; Hi Mateo,
-; 
+;
 ; I have a par/frm that gives me an ATAN2 error>
 
 test_ATAN2_error { ; ;
@@ -2061,16 +2061,16 @@ test_ATAN2_error { ; ;
 ; Subj:  Winter				Section: Fractint Sources
 ;   To:  Jim Deutch, 104074,3171		09 November 1996 19:14:29
 ; From:  Hans-Joachim Weber, 100424,35	#148236
-; 
+;
 ; Hi Jim,
-; where do you live in the U.S? In Germany it is autumn, the leafes 
+; where do you live in the U.S? In Germany it is autumn, the leafes
 ; are growing brown, but there is no snow, only 6øCelsius.
 ; Nevertheless, here is an image which will fitt with your snowflakes
 ; and your weather.
 ; -- Jo --
 
 
-winter             { ;   0:22:42.70     
+winter             { ;   0:22:42.70
                      ; on a 486DX4-100 at 1280x1024  Nov 09, 1996  20:03:50
                      ; Par and Image Copyright 1996 by Jo Weber
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -2089,16 +2089,16 @@ winter             { ;   0:22:42.70
 ; Subj:  Encoder bug			Section: Fractint Sources
 ;   To:  Timothy Wegner, 71320,675	11 November 1996 23:59:06
 ; From:  Les St Clair, 101461,2032	#148276
-; 
+;
 ; Tim,
-; 
+;
 ; I remember a few weeks ago you were looking for examples of Fractint's encoder
 ; bug. I don't recall if you fixed the problem, but I came across this example
 ; whilst rendering one of Bob Carr's recent uploads.
-; 
+;
 ; The encoder bug only happens when using 1024x768 resolution (both SF7 and
 ; "disk video" modes), other resolutions (800x600, 640x480) are OK.
-; 
+;
 ; - Les
 
 Carr2500-F      { ; From a modified Sylvie Gallet frm.
@@ -2113,9 +2113,9 @@ Carr2500-F      { ; From a modified Sylvie Gallet frm.
 ; Subj:  Fractal Party Plate...		Section: Fractint Sources
 ;   To:  ALL				13 November 1996 10:02:24
 ; From:  Robert W. Carr, 73753,2420	#148320
-; 
+;
 ; I think this Spider type image looks like a FRACTAL PARTY PLATE. Interesting?
-; 
+;
 ; --Bob Carr--
 
 
@@ -2138,15 +2138,15 @@ Carr2917-F        { ; PHC Fractal Party Plate
 ; Subj:  Fractal Party Plate...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	14 November 1996 20:31:31
 ; From:  Les St Clair, 101461,2032	#148363
-; 
+;
 ; Hi Bob,
-; 
+;
 ; >>I think this Spider type image looks like a FRACTAL PARTY PLATE. Interesting?<<
-; 
+;
 ; Saw the image, loved it, tweaked it (Party on!)
 ; I even had the cheek to use *your* color maps for these variants<g>
-; 
-; cheers, Les 
+;
+; cheers, Les
 
 2917-t1            { ; "Carr2917-F tweaked by Les"           t=  0:47:59.52
                      ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
@@ -2180,9 +2180,9 @@ Carr2917-F        { ; PHC Fractal Party Plate
 ; Subj:  PHC PseudoJulia...		Section: Fractint Sources
 ;   To:  ALL				15 November 1996 02:26:22
 ; From:  Robert W. Carr, 73753,2420	#148369
-; 
+;
 ; I thought this was an interesting PHC PseudoJulia.
-; 
+;
 ; --Bob Carr--
 
 Carr2922-F        { ; Interesting PHC PseudoJulia!
@@ -2199,9 +2199,9 @@ Carr2922-F        { ; Interesting PHC PseudoJulia!
 ; Subj:  PHC PseudoJulia...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	16 November 1996 00:55:18
 ; From:  Lee Skinner, 75450,3631		#148384
-; 
+;
 ; Bob,
-; 
+;
 ;   Here are 3 zooms into your PHC PseudoJulia.  The stegosaurous one is my
 ;   favorite, but it takes a while.
 
@@ -2253,9 +2253,9 @@ c2922-16           { ; Stegosaurus at Storm Lake       t=  1:50:39.82
 ; Subj:  PHC PseudoJulia...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	16 November 1996 05:24:19
 ; From:  Lee Skinner, 75450,3631		#148392
-; 
+;
 ; Bob,
-; 
+;
 ;    I've noticed that a lot of PHC's look a lot different when you stand back
 ; some distance from the screen, such as the 3 zooms I sent you earlier, and the
 ; 3 that follow.  In particular, my image "Die Moldau" has an entirely different
@@ -2310,17 +2310,17 @@ c1922-21           { ; Window Vista                    t=  0:34:21.74
 ; Subj:  Interesting texture...		Section: Fractint Sources
 ;   To:  ALL				22 November 1996 17:30:01
 ; From:  Robert W. Carr, 73753,2420	#148470
-; 
-; A very interesting (as well as pretty) Mandelbrot created using a 
-; modification of one of Sylvie's formulas. The "texture" is added 
+;
+; A very interesting (as well as pretty) Mandelbrot created using a
+; modification of one of Sylvie's formulas. The "texture" is added
 ; by using:
-; 
+;
 ; imag(flip(z))<=bailout
-; 
+;
 ; instead of:
-; 
+;
 ; |z|<=bailout
-; 
+;
 ; --Bob Carr--
 
 Carr2942-F        { ; BEAUTIFUL PHC Mandelbrot !!
@@ -2337,15 +2337,15 @@ Carr2942-F        { ; BEAUTIFUL PHC Mandelbrot !!
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  All				24 November 1996 01:55:22
 ; From:  Brian E. Jones, 102702,2213	#148480
-; 
+;
 ; Here's an egg of Faberé's that Madame Gallet so cleverly hid in her
 ; Gallet-07 formula.
-; 
+;
 ; Brian
 
 
 Egg_zoom          { ; Zoom of Faberge's hidden fractal egg      t=  0:06:04.32
-                    ; Formula by Sylvie Gallet, egg found by Brian Jones 
+                    ; Formula by Sylvie Gallet, egg found by Brian Jones
                     ; on a P166 at 1600x1200
                     ; Par and Image Copyright 1996 by Brian E. Jones
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -2371,7 +2371,7 @@ Egg               { ; Faberge's hidden fractal egg              t=  0:02:35.88
   }
 
 Eggs              { ; Another egg lurking behind the first      t=  0:06:11.68
-                    ; Formula by Sylvie Gallet, eggs found by Brian Jones 
+                    ; Formula by Sylvie Gallet, eggs found by Brian Jones
                     ; on a P166 at 1600x1200
                     ; Par and Image Copyright 1996 by Brian E. Jones
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -2387,16 +2387,16 @@ Eggs              { ; Another egg lurking behind the first      t=  0:06:11.68
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Brian E. Jones, 102702,2213	24 November 1996 17:29:04
 ; From:  Les St Clair, 101461,2032	#148485
-; 
+;
 ; Hi Brian,
-; 
+;
 ; Very beautiful "eggs", with a real "3-D" quality!
-; 
+;
 ; I especially liked  "Eggs        ; Another egg lurking behind the first"
 ; If you switch to passes=g the rear (and most beautiful) egg appears on it's
 ; own until the final pass. Does anyone know how this happens? Also, is there
 ; any way to isolate the "rear egg" image?
-; 
+;
 ; By the way, I have also found eggs lurking in Sylvie's "G5" formulas -
 
 G5_05_03           { ; "Easter Egg"                          t=  0:07:26.99
@@ -2420,25 +2420,25 @@ G5_05_03           { ; "Easter Egg"                          t=  0:07:26.99
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	24 November 1996 22:31:24
 ; From:  Brian E. Jones, 102702,2213	#148492
-; 
+;
 ; Hi Les,
-; 
+;
 ; >>Very beautiful "eggs", with a real "3-D" quality!<<
-; 
+;
 ; Thanks Les!
-; 
+;
 ; >>By the way, I have also found eggs lurking in Sylvie's "G5" formulas<<
-; 
+;
 ; Cool image!!!
-; 
+;
 ; >>Also, is there any way to isolate the "rear egg" image?<<
-; 
+;
 ; Here's another one I was saving for my upcoming par of images from Sylvie's
 ; Gallet-5.frm's. I think this might be what you had in mind, if not, then
 ; close to it<g>.
 
 Pedestal_Egg       { ; Singular egg perched on top of pedestal   t=  0:05:51.36
-                     ; Formula by Sylvie Gallet, Egg found by Brian Jones  
+                     ; Formula by Sylvie Gallet, Egg found by Brian Jones
                      ; on a P166 at 1600x1200
                      ; Par and Image Copyright 1996 by Brian E. Jones
   reset=1950 type=formula formulafile=96_msg_3.frm
@@ -2456,18 +2456,18 @@ Pedestal_Egg       { ; Singular egg perched on top of pedestal   t=  0:05:51.36
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Brian E. Jones, 102702,2213	26 November 1996 00:46:16
 ; From:  Les St Clair, 101461,2032	#148517
-; 
+;
 ; Hi Brian,
-; 
+;
 ; >>Here's another one I was saving for my upcoming par of images from Sylvie's
 ; Gallet-5.frm's. I think this might be what you had in mind<<
-; 
+;
 ; Spot on!!
-; 
+;
 ; Every now and then a fractal comes along which is so different that you just
 ; have to sit up and take notice. Your "Faberge Egg" series are such an example,
 ; especially "Pedestal_Egg".
-; 
+;
 ; I couldn't resist zooming (plust a slight tweak of the parameters) to produce
 ; this example -
 
@@ -2508,14 +2508,14 @@ BJSG5-07c_02       { ; "Tropical Delight"                    t=  0:17:55.61
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	27 November 1996 05:38:03
 ; From:  Brian E. Jones, 102702,2213	#148547
-; 
+;
 ; Hi Les,
-; 
+;
 ; Here are a couple of images using your tweaks, with a couple of tweaks on
 ; functions 1, 2, 3 and 4.
-; 
+;
 ; Hope you like them,
-; 
+;
 ; Brian
 
 Tropical_Flower    { ; Flower from a Tropical Paradise          t=  1:25:06.04
@@ -2552,20 +2552,20 @@ Zoom_Tropical_flwr { ; Zoom into the tropical flower             t=  1:25:14.33
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Brian E. Jones, 102702,2213	28 November 1996 02:02:15
 ; From:  Les St Clair, 101461,2032	#148561
-; 
+;
 ; Brian,
-; 
+;
 ; >>Here are a couple of images...Hope you like them<<
 ; Very nice!
-; 
+;
 ; >> t=  1:25:14.33 <<
-; more like 2:37:21.70 on my 486 :(   
+; more like 2:37:21.70 on my 486 :(
 ; (but worth the wait)
-; 
+;
 ; >>Zoom_Tropical_flwr<<
 ; Kind of reminds me of an image I produced using the built-in "manowar" type -
 ; Here it is (one from the archives!! - from my very first upload in fact)
-; 
+;
 ; cheers, Les
 
 palm_trees         { ; Les StClair 1994 101461.2032@compuserve.com  t=5m58s
@@ -2584,9 +2584,9 @@ palm_trees         { ; Les StClair 1994 101461.2032@compuserve.com  t=5m58s
 ; Subj:  Intricate image...		Section: Fractint Sources
 ;   To:  ALL				03 December 1996 21:39:18
 ; From:  Robert W. Carr, 73753,2420	#148613
-; 
+;
 ; I thought this was an interesting intricate Pseudo Julia PHC.
-; 
+;
 ; --Bob Carr--
 
 
@@ -2604,9 +2604,9 @@ Carr2960       { ; Intricate Pseudo Julia PHC.
 ; Subj:  Fabergé's hidden egg		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	04 December 1996 00:36:24
 ; From:  Loren G. Dobert, 72332,507	#148614
-; 
+;
 ; Les,
-; 
+;
 ; I just couldn't resist, here's a set of colors for your Palm Trees:
 
 palm_treeColors    { ; Colors for Les StClair's palm_trees
@@ -2618,29 +2618,29 @@ palm_treeColors    { ; Colors for Les StClair's palm_trees
   Y<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<7>WED332SDF
   }
 
-; 
-; I think you came up with the idea of stripping out everything else in the PAR to just use the color info, neat trick, 
+;
+; I think you came up with the idea of stripping out everything else in the PAR to just use the color info, neat trick,
 ; that! Takes up a lot less space than a .MAP file (and easier to post, as well).
-; 
-; For those who might not know the technique, generate Les' palm_trees par, then, upon completion, just select 
-; the above par and enjoy a day on a tropical beach under an azure-blue sky. Selecting this par just changes the 
+;
+; For those who might not know the technique, generate Les' palm_trees par, then, upon completion, just select
+; the above par and enjoy a day on a tropical beach under an azure-blue sky. Selecting this par just changes the
 ; color palette in the current image onscreen.
-; 
+;
 ; Getting out the sun-tan lotion (sunblock actually)
-; 
+;
 ; L.D.
 
 ;; ************************************************************************ ;;
 ; Subj:  Intricate image...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	04 December 1996 02:47:27
 ; From:  Les St Clair, 101461,2032	#148621
-; 
+;
 ; Bob,
-; 
+;
 ; >>I thought this was an interesting intricate Pseudo Julia PHC.<<
-; 
+;
 ; Very lovely image. Just begging to be zoomed and explored<g>...
-; 
+;
 ; - Les
 
 C2960_Z01          { ; "Zoom into Carr2960"                 t=  1:10:59.14
@@ -2660,13 +2660,13 @@ C2960_Z01          { ; "Zoom into Carr2960"                 t=  1:10:59.14
 ; Subj:  Intricate image...		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	04 December 1996 18:16:12
 ; From:  Lee Skinner, 75450,3631		#148633
-; 
+;
 ; Les,
-; 
+;
 ; >>I thought this was an interesting intricate Pseudo Julia PHC.<<
-; 
+;
 ; >Very lovely image. Just begging to be zoomed and explored<g>...
-; 
+;
 ; Yes, indeedy!  Here's another zoom into Carr2960-f.  Who says fractals can't
 ; grow like plants?   Here's one that has so much wound up spring energy that
 ; it indeed is ...
@@ -2693,7 +2693,7 @@ C2960_Z01          { ; "Zoom into Carr2960"                 t=  1:10:59.14
 ; Subj:  Lazy Par				Section: Fractint Sources
 ;   To:  All				04 December 1996 18:16:13
 ; From:  Lee Skinner, 75450,3631		#148634
-; 
+;
 ;   Here's an interesting, but rather slow, par of a landscape.
 
 lake               { ; Lake Down Behind the Willows         t=  1:48:17.14
@@ -2714,9 +2714,9 @@ lake               { ; Lake Down Behind the Willows         t=  1:48:17.14
 ; Subj:  Arborea				Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	07 December 1996 03:11:02
 ; From:  Lee Skinner, 75450,3631		#148706
-; 
+;
 ; Les,
-; 
+;
 ;   I've just completed my best PHC par yet which I just uploaded (should be
 ; visible Monday): c2771.zip.  15 incredibly awesome amazing images, but
 ; unfortunately they run 1 to 2 hours each on my Pentium 166 at 1600x1200.
@@ -2738,16 +2738,16 @@ Arborea            { ; Botanical Moon of Mongo         t=  1:34:21.89
   }
 
 ; Looking forward to your Sylvie3.par.
-; 
+;
 ; Lee
 
 ;; ************************************************************************ ;;
 ; Subj:  Pinacles, Crags & Caves		Section: Fractint Sources
 ;   To:  Vincent Presogna, 76455,2222	09 December 1996 00:12:27
 ; From:  Lee Skinner, 75450,3631		#148764
-; 
+;
 ; Damion,
-; 
+;
 ;   Remember my Caverns of Lanakia (I don't remember if that's the correct
 ; spelling).  I believe that you mentioned that you had done some caving.
 ; Whereas that image was one of my best images depicting a cave from inside,
@@ -2804,21 +2804,21 @@ c282119            { ; Crags in the Clouds                  t=  1:05:51.23
 ; Subj:  tweedum				Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	09 December 1996 03:19:12
 ; From:  Timothy Wegner, 71320,675	#148771
-; 
-; Here's an interesting puzzle. Jon Noring is trying to make a super resolution 
-; image of this fractal (actually a zoomout of this fractal). He complains that 
-; no matter what he doesm theres a trashed column on the left. This would not 
-; be a problem at ordinary resolutions, but using divide and conquor it is a 
+;
+; Here's an interesting puzzle. Jon Noring is trying to make a super resolution
+; image of this fractal (actually a zoomout of this fractal). He complains that
+; no matter what he doesm theres a trashed column on the left. This would not
+; be a problem at ordinary resolutions, but using divide and conquor it is a
 ; problem.
-; 
-; I can see the problem. The variable zp is uninitialized, so for each orbit it 
-; takes the last value it had from the previous orbit. At the beginning of each 
+;
+; I can see the problem. The variable zp is uninitialized, so for each orbit it
+; takes the last value it had from the previous orbit. At the beginning of each
 ; line there is a discontinuity.
-; 
-; When I try to initialize zp, I get a completely different image. Can anyone 
+;
+; When I try to initialize zp, I get a completely different image. Can anyone
 ; see a cure, or is the bug in this formula hopeless?
-; 
-; BTW, it is easy to get pretty interesting images from this formula and par. 
+;
+; BTW, it is easy to get pretty interesting images from this formula and par.
 ; Our artists might try playing with it.
 
 tweedum_66           {
@@ -2835,20 +2835,20 @@ tweedum_66           {
 ; Subj:  PHC Discussion...		Section: Fractint Sources
 ;   To:  ALL				09 December 1996 11:04:09
 ; From:  Robert W. Carr, 73753,2420	#148778
-; 
+;
 ; Here is a PHC which really interested me.
-; 
+;
 ; I think it will be some time yet till we master the complexities of the PHC
 ; process. In the past, I've found certain combinations put into a formula that
 ; give sort of predictable results. I'm just now scratching the surface of doing
 ; this with PHC formulas. I think it will be QUITE AWHILE before PHCs are
 ; mastered.
-; 
+;
 ; One of the major problems with PHCs is their coloring. I'm going to have to
 ; re-think my entire map making schemes.
-; 
+;
 ; Try this PHC with the HIGHEST resolution that you can get.
-; 
+;
 ; --Bob Carr--
 
 
@@ -2866,11 +2866,11 @@ Carr2969        { ; VERY interesting PHC !!!
 ; Subj:  Arborea				Section: Fractint Sources
 ;   To:  Hans-Joachim Weber, 100424,35	09 December 1996 17:46:12
 ; From:  Lee Skinner, 75450,3631		#148795
-; 
+;
 ; Jo,
-; 
+;
 ; >>what a fantastic image. it took 3 1/2 hours, but it's worth it.
-; 
+;
 ; Here's one I just can't wait to share: it's georgeous:
 
 c282125            { ; Okefenokee Swamp Reflections         t=  1:32:08.74
@@ -2893,9 +2893,9 @@ c282125            { ; Okefenokee Swamp Reflections         t=  1:32:08.74
 ; Subj:  PHC Discussion...		Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	09 December 1996 21:05:02
 ; From:  Lee Skinner, 75450,3631		#148803
-; 
+;
 ; Bob,
-; 
+;
 ;   Since you are our Chief Floridian Artist, I thought I'd send you some
 ;   Florida art:
 
@@ -2919,9 +2919,9 @@ c282127            { ; Everglades in Moonlight            t=  1:34:11.10
 ; Subj:  Spectacular Mountains		Section: Fractint Sources
 ;   To:  Les St Clair, 101461,2032	10 December 1996 00:27:31
 ; From:  Lee Skinner, 75450,3631		#148804
-; 
+;
 ; Les,
-; 
+;
 ;   I think that this one even tops "Arborea":  Scene best seen from several
 ;   feet back from the TV screen:
 
@@ -2939,16 +2939,16 @@ c282129            { ; Bristlecone Pine Ridge               t=  1:47:52.66
   }
 
 ; Enjoy!
-; 
+;
 ; Lee
 
 ;; ************************************************************************ ;;
 ; Subj:  Blue Bayou			Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	10 December 1996 21:23:27
 ; From:  Lee Skinner, 75450,3631		#148830
-; 
+;
 ; Sylvie,
-; 
+;
 ;   Here's a real beauty from Louisiana's Cajun wilderness:
 
 c282137            { ; Sunset at Blue Bayou                t=  2:03:34.94
@@ -2972,9 +2972,9 @@ c282137            { ; Sunset at Blue Bayou                t=  2:03:34.94
 ; Subj:  Psychology or Optics?		Section: Fractint Sources
 ;   To:  Jim J. Deutch, 104074,3171	10 December 1996 23:46:10
 ; From:  Lee Skinner, 75450,3631		#148834
-; 
+;
 ; Jim,
-; 
+;
 ;    One thing that I have noticed in this series of PHC pars I've been posting
 ; here lately, particularly with the one below, is that they look very beautiful
 ; when viewed across the room, but from a foot away, the landscape scene often
@@ -3006,9 +3006,9 @@ c282138            { ; Autumn Reflections in Red Rock Canyon    t=  2:01:09.50
 ; Subj:  North Carolina			Section: Fractint Sources
 ;   To:  Brian Jones, 102702,2213		11 December 1996 02:56:17
 ; From:  Lee Skinner, 75450,3631		#148838
-; 
+;
 ; Brian,
-; 
+;
 ;   I've been trying to find just the right image to dedicate to you.  Here it
 ;   is:
 
@@ -3032,11 +3032,11 @@ c282140            { ; Appalachian Storm near Lake Lure     t=  1:59:13.67
 ; Subj:  Lee Skinner 			Section: Fractint Sources
 ;   To:  Hans-Joachim Weber, 100424,35	15 December 1996 10:16:15
 ; From:  Lee Skinner, 75450,3631		#148958
-; 
+;
 ; Jo,
-; 
+;
 ; >>These are the best images I've ever seen.
-; 
+;
 ; Thanks, Jo.  I am also awed with what can lurk deep within Bob's formulas.
 ; They keep getting better.  How do you like this one:
 
@@ -3060,11 +3060,11 @@ c282158            { ; Shadows on the Trail                   t=  2:10:20.35
 ; Subj:  Lee Skinner 			Section: Fractint Sources
 ;   To:  Hans-Joachim Weber, 100424,35	16 December 1996 23:06:00
 ; From:  Lee Skinner, 75450,3631		#149016
-; 
+;
 ; Jo,
-; 
+;
 ; >>It reminds me of a wonderful underwaterworld with beautiful light.
-; 
+;
 ; I had to create that transformation for myself.  Here it is:
 
 c282163            { ; Jo's Underwater Coral World            t=  2:15:05.87
@@ -3088,12 +3088,12 @@ c282163            { ; Jo's Underwater Coral World            t=  2:15:05.87
 ; Subj:  Printing PHCs			Section: Fractint Sources
 ;   To:  Lee Skinner, 75450,3631		17 December 1996 20:12:17
 ; From:  Les St Clair, 101461,2032	#149038
-; 
+;
 ; >>You're asking the wrong guy.  ALL of my PHC images are slow.  I'm sure some
  ; of the other artists here have some fast ones that they would volunteer.<g><<
-; 
+;
 ; Lee & Tim,
-; 
+;
 ; Here's a couple of quickies. Well, actually, the second one's not so quick but
 ; I prefer it. (should zip along quite nicely on your new Pentium, Tim <g>).
 ; Both Look OK at moderate resolutions, 1024x768 and even 800x600.
@@ -3129,11 +3129,11 @@ qic_phc2           { ; "The Wormhole"                        t=  0:12:37.26
 ; Subj:  Merry Christmas			Section: Fractint Sources
 ;   To:  All				21 December 1996 11:33:13
 ; From:  Les St Clair, 101461,2032	#149133
-; 
+;
 ; Seasons greetings to everyone who frequents Fractint Sources!
-; 
+;
 ; Jim Deutch's snowflake formulas seemed like a good basis for this image -
-; 
+;
 ; cheers, Les
 
 Mryxms01           { ; "Merry Christmas"                     t=  0:11:56.29
@@ -3153,12 +3153,12 @@ Mryxms01           { ; "Merry Christmas"                     t=  0:11:56.29
 ; Subj:  PHC mini .par			Section: Fractint Sources
 ;   To:  All				22 December 1996 22:18:10
 ; From:  Les St Clair, 101461,2032	#149146
-; 
+;
 ; Here's a mini .par file containing some pretty PHC images.
-; 
+;
 ; They are all based on a PHC formula made by combining two old favourites,
 ; "Liar1.frm" and "Glynn.frm".
-; 
+;
 ; - Les
 
 lesphc04_01        { ; "Flowers and Spirals" PHC             t=  0:06:12.50
@@ -3230,10 +3230,10 @@ lesphc04_05        { ; "Cherry Centre" PHC                   t=  0:02:39.22
 ; Subj:  Merry Christmas			Section: Fractint Sources
 ;   To:  All				22 December 1996 22:49:21
 ; From:  Sylvie Gallet, 101324,3444	#149148
-; 
-; 
+;
+;
 ;   A very Merry Christmas to everybody!
-; 
+;
 ; 	-  Sylvie
 
 Xmas96             { ; Christmas Tree Ornament               t=  0:00:57.68
@@ -3253,12 +3253,12 @@ Xmas96             { ; Christmas Tree Ornament               t=  0:00:57.68
 ; Subj:  Merry Christmas			Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	23 December 1996 05:04:26
 ; From:  Les St Clair, 101461,2032	#149158
-; 
+;
 ; >>Xmas96              ; Christmas Tree Ornament<<
-; 
+;
 ; As usual, your formulas and images are a real inspiration!
 ; Merry Christmas Sylvie.
-; 
+;
 ; - Les
 
 X96_mod1           { ; "Cracked Ice" PTC                     t=  0:02:17.26
@@ -3344,14 +3344,14 @@ X96_mod6           { ; "Jack Frost" PTC                      t=  0:11:33.60
 ; Subj:  Merry Christmas			Section: Fractint Sources
 ;   To:  Sylvie Gallet, 101324,3444	23 December 1996 13:55:17
 ; From:  Jim J. Deutch, 104074,3171	#149160
-; 
+;
 ; Hi everyone --
-; 
+;
 ; Here's a sample from my latest par, jdjowe48.zip.  It uses formulas from
 ; jo_we_48 (guess I just haven't had any mathematical inspirations of my own
 ; lately: thanks Jo!).  The images are mostly representational (to one degree
 ; or another).  Here's the Xmas one:
-; 
+;
 ; Jim Deutch
 
 jdt22              { ; Christmas star
@@ -3373,9 +3373,9 @@ jdt22              { ; Christmas star
 ; Subj:  PHC mini .par			Section: Fractint Sources
 ;   To:  Robert W. Carr, 73753,2420	24 December 1996 01:15:10
 ; From:  Les St Clair, 101461,2032	#149182
-; 
+;
 ; Thanks Bob for your kind words.
-; 
+;
 ; PHC "mini" .par just got BIGGER <g>...
 
 lesphc04_06        { ; "Mosaic Tiles" PHC                    t=  0:02:13.74
@@ -3439,10 +3439,10 @@ lesphc04_09        { ; "Sphere with Flowers" PHC             t=  0:07:33.04
 ; Subj:  PHC Blossoms			Section: Fractint Sources
 ;   To:  All				25 December 1996 01:23:25
 ; From:  Phil DiGiorgi, 76736,570		#149206
-; 
+;
 ; Was inspired by Les' brilliant little PHC pars, so I thought I'd post a few
 ; of my own.
-; 
+;
 ; Happy Holidays!
 
 
@@ -3510,11 +3510,11 @@ pd0411e            { ; a creature
 ; Subj:  PHC Blossoms			Section: Fractint Sources
 ;   To:  Phil DiGiorgi, 76736,570		26 December 1996 00:18:22
 ; From:  Les St Clair, 101461,2032	#149219
-; 
+;
 ; >> I thought I'd post a few of my own.<<
-; 
+;
 ; Hi Phil,
-; 
+;
 ; Very nice pars. I especially liked PD0411a, c & d.
 ; The formula also intrigued me so here's one image I found using it -
 
@@ -3539,15 +3539,15 @@ pd411_L1           { ; "Alien Landscape" PHC                 t=  0:09:22.83
 ; Subj:  PHC Blossoms			Section: Fractint Sources
 ;   To:  Timothy Wegner, 71320,675	29 December 1996 21:50:22
 ; From:  Sylvie Gallet, 101324,3444	#149258
-; 
+;
 ; Hi Tim,
-; 
+;
 ; >> What I'd like to do is create some PHC images both ways so folks can see
 ; >> what I'm talking about. Does someone want to nominate an image?
-; 
+;
 ;   I just tried with one of my PHCs: at 1024x768, the final image is close to
 ;   the 1600x1200 PHC and much better than the 1024x768 PHC.
-; 
+;
 ; 	-  Sylvie
 
 
@@ -3609,13 +3609,13 @@ sg6012-p       { ; Copyright Sylvie Gallet [101324,3444], 1996
 ; Subj:  Gallet-6 pars			Section: Fractint Sources
 ;   To:  All				31 December 1996 00:00:29
 ; From:  Sylvie Gallet, 101324,3444	#149289
-; 
+;
 ; Hi,
-; 
+;
 ;   Here are 4 pars from the file I just uploaded.
-; 
+;
 ;   A very Happy and Healthy New Year to Everybody!
-; 
+;
 ; 	-  Sylvie
 
 SG6-0102           { ; .                                     t=  0:01:33.27
@@ -3670,9 +3670,9 @@ SG6-0505           { ; .                                     t=  0:14:44.19
 ; Subj:  Pseudo-Julia PHC...		Section: Fractint Sources
 ;   To:  all				31 December 1996 01:45:16
 ; From:  Robert W. Carr, 73753,2420	#149294
-; 
+;
 ; I found this Pseudo-Julia PHC most intriguing.
-; 
+;
 ; --Bob--
 
 Carr2999        { ; REALLY nice Pseudo-Julia.
@@ -3688,9 +3688,9 @@ Carr2999        { ; REALLY nice Pseudo-Julia.
 ; Subj:  Happy New Year			Section: Fractint Sources
 ;   To:  All				31 December 1996 16:17:07
 ; From:  Jan Maarten van der Valk, 100256,3721#149310
-; 
+;
 ; Hi everybody,
-; 
+;
 ; Today I quickly put together a greeting with the (soon_to_be_published)
 ; FracText program. I know that the background fractal is not very original,
 ; but it's the thought that counts... (colorcycle left fast) I wish you all a
@@ -3711,16 +3711,16 @@ Happy_New_Year     { ; to everybody on GRAPHDEV from
 ; Subj:  Happy New Year			Section: Fractint Sources
 ;   To:  Jan Maarten van der Valk, 100256,372101 January 1997 04:27:04
 ; From:  Les St Clair, 101461,2032	#149323
-; 
+;
 ; Happy New Year, Jan
-; 
+;
 ; >>Today I quickly put together a greeting with the (soon_to_be_published)
 ; FracText program.<<
-; 
+;
 ; SPLENDID!!!
-; 
+;
 ; Before I go on, here's a color plug-in for even more "Fireworks"!
-; 
+;
 ; Just load the saved .gif of "Happy New Year" then run this .par file
 ; The screen will appear black (this is OK). Then color cycle using the minus
 ; key. Enjoy...
@@ -3735,22 +3735,22 @@ Happy_NY_color_01  { ; Color Plug-in for "Happy New Year!"  cycle left <->
 
 ; I'm glad to hear that FracText is soon to be released. You've done an
 ; excellent job on the lower case letters from the look of it.
-; 
+;
 ; I am remidned by a remark from Bob Carr in a previous thread -
 ; >>Since Sylvie uploaded the Julia with a 96 in it, fractals have never been
 ; the same.<<
 ; How True! (Sylvie has a lot to answer for<g>)
-; 
+;
 ; I know that the Fractint developers (Tim W. et al) don't always have time to
 ; check out .par files, but they *really* should take a look at this!
-; 
+;
 ; I don't know how many hours you put into the FracText program, but it is a
 ; craftsman like piece of work. You have my congratulations and I hope you
 ; receive much positive feed-back.
-; 
+;
 ; When you upload the program it's sure to have George Martin pulling his hair
 ; out. How will "Orgform" cope with the plethora of
 ; "happy_birthday_aunty_mabel.frm" files which will ensue<VBG>
-; 
+;
 ; cheers again, Les
 

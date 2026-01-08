@@ -1,12 +1,12 @@
 Center-Universe        { ; The Center of the Universe
-  reset type=lambda corners=-0.54826/0.571737/-0.551546/0.28847 
-  params=0.85/0.6 
-  colors=00000e<39>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<10>lzz 
-  } 
-  
-Face-inthe-Fractal     { ; This is a test file from CI$ 
-  reset type=julibrot corners=-2.0/2.000007/-1.499996/1.3 
-  params=-0.85/-0.85/0.23/-0.23 
+  reset type=lambda corners=-0.54826/0.571737/-0.551546/0.28847
+  params=0.85/0.6
+  colors=00000e<39>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<10>lzz
+  }
+
+Face-inthe-Fractal     { ; This is a test file from CI$
+  reset type=julibrot corners=-2.0/2.000007/-1.499996/1.3
+  params=-0.85/-0.85/0.23/-0.23
   colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
   utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonpo\
   nnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhh\
@@ -14,7 +14,7 @@ Face-inthe-Fractal     { ; This is a test file from CI$
   bacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYX\
   WWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQ\
   QPQQ
-  } 
+  }
 
 Fungus Julia       { ; Appears 3-D-like
   reset type=mandel
@@ -42,11 +42,11 @@ MtMand Moon        { ; Julia set corresponding to MtMand mountain
   GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGxxz<6>zzz
   }
 
-Deep_mandl_156   { ; Large magnification of Mandelbrot curve 
-  reset type=mandel 
+Deep_mandl_156   { ; Large magnification of Mandelbrot curve
+  reset type=mandel
   corners=-0.3740234439637/-0.3740234266779/0.6597855774327/0.6597855903723
-  float=y maxiter=20000 inside=0 
-  colors=000muG<8>ltFRCC<142>KucKucKtc<57>CHy<7>ryI<32>muG 
+  float=y maxiter=20000 inside=0
+  colors=000muG<8>ltFRCC<142>KucKucKtc<57>CHy<7>ryI<32>muG
   }
 
 plate13            { ; From "Fractal Programming in C"
@@ -94,7 +94,7 @@ t-line-mode        { ; Example of displaying tesseral lines--B.Smurf
   colors=00044O<12>zzz<22>888A5AD3DG3GJ3JM2M<17>zcz<8>CCS<19>5zz<17>14L00I22I5\
   5H88GAAF<36>x1gz0hz3i<14>zzz<14>`44Z00Z44<13>zzz<16>00U<3>000<13>zzz<18>W4NR\
   0G00000000K
-  } 
+  }
 
 Islands            { ; Islands in the ocean
 reset type=plasma center-mag=0/0/0.666667 params=45/1/1 maxiter=200
@@ -125,7 +125,7 @@ SMOKIE_WATCHES_YOU { ; FROM "EVIL EYE" BY DICK SHERRY ;) CREDIT WHERE IT'S DUE <
   }
 
 Cool_Mandelbrot   {; From a Beginner Fractal Hunter!
-  reset type=mandel 
+  reset type=mandel
   corners=-0.7328483/-0.7128491/0.2780953/0.2930951
   }
 
@@ -163,7 +163,7 @@ Fractint_Challenge { ; Color map challenge image
   params=1.414  maxiter=1000 inside=zmag outside=0
   colors=000JiH<12>HaPKHY<3>G3fG0hH1g<43>ahSahSbgR<74>dICdICcJB<78>4y64y\
   66x5<9>Ou3<19>KiG
-  } 
+  }
 
 Challenge_1        { ; My choice of colors
                      ; Dick Sherry
@@ -370,10 +370,10 @@ Notodentidae_NOT     {
   bailout=12123 periodicity=-256
   colors=000000OU0<4>Zc0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>\
   ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<8>JQ0
-  } 
+  }
 
 feb11-2            {; You'll need to find a palette !!
-  reset type=formula formulafile=ownfile.frm formulaname=M-SetInNewton   
+  reset type=formula formulafile=ownfile.frm formulaname=M-SetInNewton
   corners=0.492221/0.526621/-0.0129/0.0129 float=y inside=0
   }
 
@@ -408,7 +408,7 @@ MandelNewt1_x        { ; Requires mandnewt.frm
   EGkOCWKSk8<2>DOE80P<3>8DHhWE<4>EIGdNYOJPaz3NbAPVV<2>CJJ1CO5EKLcN<6>9JGqt\
   j<5>JQNDLJ5_n0006Tb
   }
- 
+
 smn001             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
   reset=1732 type=formula formulafile=ownfile.frm
   formulaname=F'M-SetInNewtonA function=cos
@@ -475,7 +475,7 @@ smn004             { ; (c) 1993 Richard H. Sherry. CIS: 76264,752
 
 t17072             {
   reset type=fn*z+z function=tanh
-  corners=-2.272003/2.271972/0.913952/4.321954 params=1/0/1     
+  corners=-2.272003/2.271972/0.913952/4.321954 params=1/0/1
   bailout=100   inside=-100 outside=real
   }
 
@@ -525,7 +525,7 @@ saf003             { ; 3D spherical Layupanov
   ambient=20 perspective=0 xyshift=0/0
   colors=000riW<5>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<31>000PFF<29>xeD\
   zfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0A0SNC<22>phV
-  } 
+  }
 
 Double_Helix       { ; Doc, gotta couple of rogue Chromos in here!
                      ; (c)1993 Peter Moreland 100012,3213
@@ -569,7 +569,7 @@ cbug02             { ; w/ float=yes rhs 2-25 passes=g 24 feb 93 .. caren park
   maxiter=256 inside=0 outside=summ viewwindows=4.2/0.75/yes/0/0
   colors=000Ca`<2>9da8da9b_<23>C8AD79E79<39>qe8qe8pd8<45>KAAKAALBA<41>sg8s\
   g8rf8<40>K9B<15>zz6<14>MFA96G<15>B_Z
-  } 
+  }
 
 Manowarj           { ; Kinda purty ain't it?  BG Dodson 1992 71636,1075
   reset type=manowarj passes=b corners=-2.5/1.5/-1.5/1.5 float=y
@@ -602,7 +602,7 @@ s3i001             { ; Spherical 3D of sai001
   perspective=0 xyshift=0/0
   colors=000```<8>ppp<31>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc\
   0<15>0A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<19>ZZZ
-  } 
+  }
 
 Dino_heads...      { ; Run the 3D PAR on the GIF this file generates...
                      ; (C)1993 Peter Moreland 100012,3213
@@ -657,7 +657,7 @@ sah003             { ; Spherical 3D - Surface fill
   perspective=0 xyshift=0/0
   colors=000WWW<18>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<14>0A0<15>Zc0<15>0\
   A0SNC<29>xo`zpaypa<13>kcRibRibR<14>UPF111<29>ppp<11>YYY
-  } 
+  }
 
 spca000               {
   reset=1720 type=formula formulafile=ownfile.frm formulaname=SpecC

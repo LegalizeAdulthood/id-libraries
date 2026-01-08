@@ -57,7 +57,7 @@ Compass            {
   }
 
 Edge_of_the_World  { ; fn(z)+fn(pix)
-		     ; 		
+		     ;
   reset=1940 type=fn(z)+fn(pix) function=sin/sqr passes=1
   center-mag=-0.45060220194075960/-1.30233438694119700/132.2751
   params=-0.32/0.77/1/0 float=y maxiter=1023 inside=0 logmap=yes
@@ -69,7 +69,7 @@ Edge_of_the_World  { ; fn(z)+fn(pix)
 
 
 Dueling_Comets        { ; fn*z+z
-                     ;  
+                     ;
   reset=1940 type=fn*z+z function=cosxx passes=b
   corners=-1.12/1.12/-1.004276/1.004276 params=63/47/1000/0
   maxiter=32000 fillcolor=253 inside=253 potential=255/200/32000
@@ -143,8 +143,8 @@ Julia              { ; Nice Palette
   _<2>6YU6WS5TP5QN<7>133000132<6>4OJ
   }
 
-Moogie             { ;   
-                     ;  
+Moogie             { ;
+                     ;
   reset=1940 type=julia corners=-1.999977/1.999996/-1.49998/1.5
   params=0.15/1.2 float=y maxiter=32767 bailoutest=manr
   inside=epsiloncross outside=real decomp=256
@@ -153,7 +153,7 @@ Moogie             { ;
   nic<7>gO5fL0fL2<8>lOJmOLnQL<9>yaI<4>WG0wzr
   }
 
-Meander-Rings      { ; A j-carr/Orman2  
+Meander-Rings      { ; A j-carr/Orman2
                      ; Many opportunities for zooms.
                      ; Playing in my paintbox.
   reset=1940 type=formula formulafile=j-carr.frm
@@ -213,7 +213,7 @@ Bar_at_Mos_Eisley  { ; Alien patrons?
   }
 
 With_a_Twist       { ; Needs PsuedoZeePi
-                     ;  
+                     ;
   reset=1940 type=formula formulafile=fractint.frm
   formulaname=PseudoZeePi passes=t
   center-mag=9.1075e-005/1.0165e-005/0.6666712
@@ -239,7 +239,7 @@ Reverse_Twist      { ; Needs PsuedoZeePi
   9>E06
   }
 
- 
+
 Unglued            { ; "Separate the Saucer section."
                      ; lambdafn, Exp
   reset=1940 type=lambdafn function=log passes=1
@@ -272,7 +272,7 @@ Mardi_Gras         { ; Hidden rings within
   0<6>00z<8>000<6>z00<8>000090
   }
 
-Maltese_Cross      { ;  
+Maltese_Cross      { ;
   reset=1940 type=fn*z+z function=cosh
   corners=-1.4934948/1.4934948/-1.122096/1.122096/-1.39104/-1.122096
   params=10000/52/78/333 maxiter=32000 fillcolor=253 inside=253

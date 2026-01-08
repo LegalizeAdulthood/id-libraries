@@ -116,7 +116,7 @@ TheyWentThat_A_Way { ; (c)1992 Peter Moreland 100012,3213
   }
 
 CutPaperI          { ; From "EVIL" By Dick Sherry, via SMOKIE by Peter Moreland
-                     ; Dan Farmer 
+                     ; Dan Farmer
   reset type=manzzpwr
   corners=-1.1503476/-1.0993901/-0.002827848/-0.058661504/-1.0993901/-0.058550\
   457 params=0.1/0/2 float=y maxiter=32000 inside=0 decomp=255
@@ -222,7 +222,7 @@ Transmitter        { ; More fun, ready to zoom.
 SEASLUG            {
   reset=1611 type=marksjulia passes=1 corners=-2.0/2.0/-1.499983/1.5
   params=0.1/0.9 maxiter=1023 inside=0 symmetry=none
-  
+
   colors=000F4E<11>7DdG66<8>1tHmsmIDB<3>MxbJ79<6>YobH25<18>DWLCYME6E<3>1Um\
   <18>fgzcWh_JQ<22>XpZWr_YDg_EkH26<21>GO_FPaH58<10>CvoI56<9>TrMMBA<4>kxaJ4\
   9<4>YKXG5B<4>7TeI35<16>lcGJ16<13>vARI26<20>r`fH25<20>QQ2H17G29G3B
@@ -287,7 +287,7 @@ Vortex......       { ; "They are moving right into the vortex!" (C)1993 PGM
 
 The_Final_Curtain  { ; Regrets, I have a few, but then again, Sid Lives! <g>.
                      ; (c)1993 Peter Moreland,  CIS Address 100012,3213
-                     ;  
+                     ;
   reset type=manlam(fn||fn) function=sqr/conj
   corners=-1.078314/-0.623828/0.775666/0.47905/-0.772323/0.367679
   params=1.76/0/10 float=y maxiter=500 bailout=90
@@ -390,7 +390,7 @@ BRACLET            {
   reset=1720 type=fn+fn function=cosh/sqr passes=1
   corners=1.77888557/1.78734031/1.16095279/1.1673213 params=1/0/-1
   float=y maxiter=1023 bailout=8192 inside=maxiter logmap=yes
-  potential=255/511/0 
+  potential=255/511/0
   colors=000OSV<65>BCWECO0CG<3>8Q7<6>LE5NC4NC4<5>NB2NB2OB2PB2<24>gN1hN1hP1\
   <6>nb1oe1oe1<26>mS6mS6lR7kR7<8>hPAhPAhPBhOBhNAhMA<2>gI8gH8eG8<9>M32<9>z3\
   3Y3g<55>z0VOTWOSW
@@ -694,14 +694,14 @@ bifurcation_plus_sinepi {
 	reset maxiter=20000 colors=@default.map type=bif+sinpi
 	}
 
-Lyapunov_one       { ; (c) 1992 Peter Moreland, The Saint                      
+Lyapunov_one       { ; (c) 1992 Peter Moreland, The Saint
                      ; come in Brett Sinclair!
   reset type=lyapunov corners=2.93748764/2.94703484/3.67514065/3.68217105
   params=4/0.75 maxiter=50 colors=000000<29>00k00m01m<16>0St
   }
 
 diffusion {
-	reset colors=@default.map type=diffusion params=1 
+	reset colors=@default.map type=diffusion params=1
 	}
 
 Type_61            { ; Jonathan Osuch
@@ -732,7 +732,7 @@ Stars_Like_Jewels  { ; (Well...WHAT would you call it????)
   colors=000<78>ppnuud<7>yyazzMzze<4>zzzGez<23>PzzQ`0<13>`Q0jQ0<13>eN0
   }
 
-Snowflake          { ; Renders well at 1024x768 
+Snowflake          { ; Renders well at 1024x768
                      ; Use a lower order at lower resolutions
   reset=1733 type=lsystem lfile=fractint.l lname=SnowFlake1
   corners=-1/1/-1/1 params=5 float=y

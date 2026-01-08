@@ -260,7 +260,7 @@ figura_02          { ;   0:00:11.04
 figura_03          { ;   0:00:09.23
                      ; Created Jan 02, 2000 by Rui Parracho
                      ; email-to:rparracho@aol.com
-                     ; It's another HT varient this time applied to the 
+                     ; It's another HT varient this time applied to the
 pheonix
   reset=2000 type=formula formulafile=_p.frm formulaname=pheot
   passes=1 corners=-1.608463/1.608463/-1.206347/1.206347
@@ -308,7 +308,7 @@ DATE:	1/6/00 2:54 PM
 
 Re:	(fractint) new coloring method / new flattening method
 
- 
+
 Hi,
 
 I would like to present two (in my opinion) new METHODS for fractals.
@@ -328,10 +328,10 @@ colorfrm { ;special colour smoothing scheme by Karl Scherer!
           ; can be applied to ANY EXISTING MATH FORMULA
          loop=0, begin=1, rounds=1 , ;(Karl's additional vars)
          z=0:                        ;your settings
-IF (begin==1)         
-         ;====== insert your formula here =====================  
+IF (begin==1)
+         ;====== insert your formula here =====================
          z=...
-         ;====== end of your formula ========================== 
+         ;====== end of your formula ==========================
          r=|z|-8                     ; equivalent to |z|<8
          IF (r>=0)
            begin=2, rounds=r ; >>> try rounds =r/2 etc! <<<
@@ -340,12 +340,12 @@ ELSE
          loop=loop+1
 ENDIF
 loop<rounds
-}  
+}
 ;---------------------------------------------------------------------------
-; 
+;
 ; ----------------------------
-; 
-; 
+;
+;
 ; 2. The second Method is a method to flatten images that have rotational
 ; symmetry around (0,0).
 ; You can imagine the process as cutting the plane along the positive x-axis
@@ -361,9 +361,9 @@ loop<rounds
 
 
 flatfrm  { ; by Karl Scherer (angle,radius) => (x,y)
-           ; radius stretched such that (0,0) => (0,-infinity) 
+           ; radius stretched such that (0,0) => (0,-infinity)
           c=pi/5, x=imag(pixel),y=real(pixel)
-          x=2*c*x, y=c*y, r=2^(-x), v=r*cos(y), 
+          x=2*c*x, y=c*y, r=2^(-x), v=r*cos(y),
           w=r*sin(y), p=v+flip(w), ;Karl's settings
           z=0:               ;your settings
 ;=========== insert your formula here ======================
@@ -372,14 +372,14 @@ flatfrm  { ; by Karl Scherer (angle,radius) => (x,y)
          |z|<8000            ;your bailout
 }
 
-; I suggest to Tim Wegener to add to the FRACTINT HOME PAGE a now option 
+; I suggest to Tim Wegener to add to the FRACTINT HOME PAGE a now option
 ; a METHODS besides the existing FORMULAS and PARAMETER
 ; directories.
 ; This METHODS directory shall contain tools, methods (like my coloring
 ; scheme and my flattening scheme), tips and
 ; fractal code that may be used in all sorts of fractals.
 ; I think this would help other fractint users enormously.
-; 
+;
 ; Next suggestion: Built my coloring method right into the next FRACTINT
 ; version!
 

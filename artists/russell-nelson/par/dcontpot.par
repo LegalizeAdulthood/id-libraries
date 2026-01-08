@@ -2,7 +2,7 @@
 ; mostly continuous potential stuff for 3d transforms, but also
 ; some stuff for making 24bit images
 
-test               { 
+test               {
   reset type=manowar corners=-0.08344978/-0.0769254/0.44483054/0.44972223
   maxiter=1000 potential=255/10000/100
   colors=CCC0Io<11>02y00z10y<33>_0R`0Qc0Pb0O<21>x02z00z00z00<62>zy0zz0zz0yz0<4\
@@ -94,7 +94,7 @@ contpot10          { ; demonstrates using zoom box to fit diamond shaped julia
   }
 
 contpot11          { ; good 3d xform julia
-                     ;               
+                     ;
   reset type=julia passes=1
   corners=1.833728/-1.857959/0.7976/-0.758221/-0.103591/1.179099
   params=-0.378192275958949/0.821726531023489 float=y maxiter=1500
@@ -104,7 +104,7 @@ contpot11          { ; good 3d xform julia
   }
 
 contpot12          { ; good 3d xform julia
-                     ;               
+                     ;
   reset type=julia corners=-2.0/2.0/-1.5/1.5
   params=0.275215546432062/0.709660787483691 float=y maxiter=1000
   potential=255/600/100
@@ -204,7 +204,7 @@ goodcontpot7       { ; good for lighted 3d xforms
   4>Hz0Gz0Gz0Gz1<41>1iX1iY0hZ0gZ<18>0Jn
   }
 
-81                 { 
+81                 {
   reset type=julia passes=1
   corners=1.722147/-1.765478/0.834866/-0.74179/-0.253431/1.328402
   params=-0.2926216775/0.9801332955 float=y maxiter=1000
