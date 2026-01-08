@@ -605,8 +605,8 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
    IkenagaMap(XAXIS) {; based upon the Ikenaga function described
 	  ; in Dewdneys's The Armchair Universe.
 	  ; The initial starting point allows the function to provide a
-	  ; "map" for the corresponding Julia function (Julike ) 
-	  z = ((1-pixel)/3)^0.5: 
+	  ; "map" for the corresponding Julia function (Julike )
+	  z = ((1-pixel)/3)^0.5:
 	  z = z*z*z + (pixel-1)*z - pixel, |z| <= 4
    }
 
@@ -622,7 +622,7 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
 	  z = P1*fn2(z)^2 + P2*fn3(z)^2 + pixel, |z| <= 4
    }
 
-   JMask {      
+   JMask {
 	  z = fn1(pixel):
 	  z = P1*fn2(z)^2 + P2, |z| <= 4
    }
@@ -697,9 +697,9 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
 
  comment { version 13.0:}
  LambdaLog(XAXIS) {
-	  z = pixel, c = log(pixel):  
-		 z = c * sqr(z) + pixel, 
-	  |z| <= 4 
+	  z = pixel, c = log(pixel):
+		 z = c * sqr(z) + pixel,
+	  |z| <= 4
    }
 
  comment { version 15.1:}
@@ -770,17 +770,17 @@ comment {
 This file includes the formulas required to support the file
 RCLPAR.PAR.
 
-In addition, I have included a number of additional formulas 
+In addition, I have included a number of additional formulas
 for your enjoyment <G>.
 
 Ron Lewen
-CIS: 76376,2567 
+CIS: 76376,2567
 
   }
 
 RCL_Cosh (XAXIS) { ; Ron Lewen, 76376,2567
   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
   ; Pickover's Computers, Pattern, Chaos and Beauty.
   ; Figures 9.9 - 9.13 can be found by zooming.
   ; Use floating point

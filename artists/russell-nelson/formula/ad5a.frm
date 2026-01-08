@@ -76,7 +76,7 @@ pif172{
 px1{
 z=pixel,t=fn1(real(z+p3)),x=z+(z/pi),y=z+(z/pi):
 x=(x*p1)
-y=(y*p2)/pi 
+y=(y*p2)/pi
 z=fn4(x-1)+fn3(y)
 z=(fn2(whitesqr==0)*x)-(fn3(whitesqr)+z)
 |z|>=4
@@ -155,7 +155,7 @@ z=(fn2(z1*real(1-z1))*fn1(1/imag(z1-1)))+whitesq
 
 pr31{
 c=z=pixel,t=(fn1(pixel+whitesq)+1):
-z=fn4(fn2(t)/real(fn3(z*whitesq)))+c      
+z=fn4(fn2(t)/real(fn3(z*whitesq)))+c
 |z|<4
 }
 
@@ -264,7 +264,7 @@ z=(fn3(fn1(z+(a)+whitesq)*fn2(b+(z^p3/a)))/fn4(z))+whitesq
 |z|<=4
 }
 
-ep20z7 { 
+ep20z7 {
 IF ((p1) == 0)
 p1 = (.03,1.1)
 ENDIF

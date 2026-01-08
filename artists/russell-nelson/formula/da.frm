@@ -4,13 +4,13 @@
    |z| <= 4
    }
 
-   DAFRM02  {;  
+   DAFRM02  {;
    z = pixel :
    z = (z ^ (z - 1) + 7/11) * (fn1(z) + pixel),
    |z| <= 4
    }
 
-   DAFRM03  {; 
+   DAFRM03  {;
    z = pixel :
    z = z * z^ (1 - z) * fn1(z) + pixel,
    |z| < 4
@@ -28,7 +28,7 @@
    z = c*z*(4*z*z-3),
    |z|<100
 }
-   
+
 dafrm21 { ; Copy this formula to formulafile da.frm
    z = pixel:
    x = real(z), y = imag(z),

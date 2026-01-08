@@ -2,23 +2,23 @@
 ;; 76455.2222@Compuserve.com
 ;; Copyright 1996
 ;; Experimental images produced under the influence of the dreaded
-;; bovine neurological ailment 
+;; bovine neurological ailment
 ;; This is the typo fix version
 
 
 Mooey-old { ;; Requires Periodicity=0
 z = pixel:
-r = tan(1/z)^sqrt(e) + pixel  
-z = fn1(z)/sqrt(1/r)^2 
-|z| < 4                 
+r = tan(1/z)^sqrt(e) + pixel
+z = fn1(z)/sqrt(1/r)^2
+|z| < 4
 }
 
 Moo-old { ;; Requires Periodicity=0
 z = pixel:
 z = z + p1
-r = tan(1/z) + pixel 
-z = fn1(z)/sqrt(r)^e 
-|z| < 4                 
+r = tan(1/z) + pixel
+z = fn1(z)/sqrt(r)^e
+|z| < 4
 }
 
 
@@ -26,8 +26,8 @@ Moo_2-old { ;; Requires Periodicity=0
 z = pixel:
 z = z + p1
 r = tan(1/z) * pixel
-z = fn1(z)/sqrt(r)^(e/2) 
-|z| < 4                 
+z = fn1(z)/sqrt(r)^(e/2)
+|z| < 4
 }
 
 
@@ -35,7 +35,7 @@ Moo_3 { ;; Requires Periodicity=0
 z = pixel:
 z = z + p1
 r = tan(1/z) * pixel
-z = fn1(z)/sqrt(r) 
+z = fn1(z)/sqrt(r)
 |z| < 4
 }
 
@@ -43,14 +43,14 @@ Moo_4 { ;; Requires Periodicity=0
 z = pixel:
 z = z + p1
 r = tan(1/z) + pixel
-z = fn1(z)/sqrt(r) 
+z = fn1(z)/sqrt(r)
 |z| < 4
 }
 
 Moo { ;  Requires Periodicity=0
       ;  significant speedup of MOO, artists take note!!!
       ;  Original formula of the same name was by Vincent Presogna
-      ;  Revision 6/8/96 for orgform by G. Martin, speedup using 
+      ;  Revision 6/8/96 for orgform by G. Martin, speedup using
       ;  halfe suggested by Tim Wegner
  halfe = e*.5, z = pixel:
  z = z + p1

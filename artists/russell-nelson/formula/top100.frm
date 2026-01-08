@@ -7,7 +7,7 @@
   ;SOURCE: carr.frm
 }
 
-dafrm21 { 
+dafrm21 {
    z = pixel:
    x = real(z), y = imag(z),
    x1 = -fn1((x*x*x + y*y*y - 1) - 6*x)*x/(2*x*x*x + y*y*y - 1),
@@ -64,7 +64,7 @@ F'M-SetInNewtonA(XAXIS) {
    z = nm/dn+2*z/p1, |(z-oldz)|>=|0.01|
    }
 
-F'M-SetInNewtonC(XAXIS) { 
+F'M-SetInNewtonC(XAXIS) {
    z=0, c=fn1(pixel), cm1=c-1, cm1x2=cm1*2, twoop1=2/p1, p1xc=c*real(p1):
    z = (p1xc - z*cm1x2 )/( (sqr(z)*3 + cm1 ) * real(p1) ) + z*real(twoop1),
    abs(|z| - real(lastsqr) ) >= p2
@@ -86,14 +86,14 @@ GopalsamyFn {
    z = x2 + flip(y), |z| <= 100
    }
 
-Zeppo { 
+Zeppo {
    z = pixel
    p = (1 * (|p1|<=0) + p1):
    z =fn1(1-abs(imag(z)*p-real(z)))+flip(fn2(1-abs(1-real(z)-imag(z))))-p2
    |z| <= 1
    }
 
-inandout02 { 
+inandout02 {
    test = (4 * (real(p2)<=0) + real(p2) * (0<p2))
    z = oldz = pixel:
    a = (|z| <= |oldz|) * (fn1(z)) ;IN
@@ -120,13 +120,13 @@ Bjax {
    z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c,
    }
 
-Liar4 { 
+Liar4 {
    z = pixel, p = p1 + 1:
    z = 1-abs(imag(z)*p-real(z))+flip(1-abs(1-real(z)-imag(z)));
    |z| <= 1
    }
 
-OK-04 { 
+OK-04 {
    z = 0, c = fn1(pixel):
    z = fn2(z) + c,
    |z| <= (5 + p1)
@@ -163,9 +163,9 @@ OK-42 {
   y = fn3(zx*p1y + zy*p1x) + fn4(zx*p2y + zy*p2x);
   z = x + flip(y),
   |z| <= 20
-  } 
+  }
 
-OK-43 { 
+OK-43 {
   z = c = pixel, k = 2 + p1:
   zx = real(z), zy = imag(z);
   cx = real(c), cy = imag(c);
@@ -185,7 +185,7 @@ REB004M {
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x*y;
    z = x2 + flip(y2), |z| <= 100
-}   
+}
 
 REB005G {
    z = pixel:
@@ -198,7 +198,7 @@ REB005G {
    z = x2 + flip(y2), |z| <= 100
 }
 
-phoenix_m { 
+phoenix_m {
    z=x=y=nx=ny=x1=y1=x2=y2=0:
    x2 = sqr(x), y2 = sqr(y),
    x1 = x2 - y2 + real(pixel) + imag(pixel) * nx,

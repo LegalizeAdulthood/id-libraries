@@ -248,7 +248,7 @@ gravity-z=pix { ; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; p1 = "time step", small in magnitude (about .1 or less)
-        ; 
+        ;
         z1=1, dt2=p1, z=pixel, bailout=1000:
         z0=z1, z1=z, f=1/z-1/sqr(z)
         z=2*z1-z0+f*dt2, |z| < bailout
@@ -259,7 +259,7 @@ gravity-dt2=pix { ; Kerry Mitchell 23feb99
         ; loosely based on gravitational attraction formula
         ;
         ; set p1 to about 1 in magnitude, e.g, (1.0,0.1)
-        ; 
+        ;
         z1=1, z=p1, dt2=pixel, bailout=1000:
         z0=z1, z1=z, f=1/z-1/sqr(z)
         z=2*z1-z0+f*dt2, |z| < bailout
@@ -490,7 +490,7 @@ oz=z, z=z*z+c,test=|z|/|oz|
 
 rsp_a301{;rsp 3/99
 r=p1,c=z=pixel:
-oz=z, z2=z*z, 
+oz=z, z2=z*z,
 z=r*(c/(z2*z2*z)+1/z2)
 |z/oz|>p2}
 
@@ -562,7 +562,7 @@ rsp_may002{
     z=10*pixel
     a=z, an=1, n=i=0,
     :
-    i=i+.5, n=a-i, 
+    i=i+.5, n=a-i,
     an=an*n/(z^n), oz=z,
     z=1+z+an
     |z-oz|>.00001
@@ -572,7 +572,7 @@ rsp_may005 {
     z=w=c=pixel, n=p1,
     :
     w=w*w+c, z=(w-floor(w))*n
-    |w|<p2  
+    |w|<p2
     }
 
 rsp_may007 {
@@ -609,7 +609,7 @@ rsp_may011(xaxis){
 
 rsp_may012{
     n=a=b=c=d=e=f=g=f0=f1=0
-    u=pixel, z=0, 
+    u=pixel, z=0,
     cc=p2
     :
     n=n+1
@@ -794,7 +794,7 @@ Carr2904{;Modified Sylvie Gallet frm. [101324,3444],1996
 Carr2907(XYAXIS){ ; Halley PHC
    ;passes=1 needs to be used with this PHC formula.
    b5=1/pixel,
-   z=b5*(whitesq+b5*(whitesq==0)): 
+   z=b5*(whitesq+b5*(whitesq==0)):
    z5=z*z*z*z*z,
    z6=z5*z,
    z7=z6*z,
@@ -815,7 +815,7 @@ Carr2949 {; Modified Sylvie Gallet frm. [101324,3444],1996
   t=1-(t1||t2||t3||t4), z=z*t, c=c*t+c1*t1+c2*t2+c3*t3+c4*t4
   z=z*z+(-0.7456,-0.132)+c/10
   iter=iter+1
-  imag(flip(z))<=bailout  
+  imag(flip(z))<=bailout
 }
 
 Carr2882{;Modified Sylvie Gallet frm. [101324,3444],1996
@@ -835,7 +835,7 @@ Carr2882{;Modified Sylvie Gallet frm. [101324,3444],1996
   |z|<=bailout
   }
 
-Carr2926{; Modified-inandout04 
+Carr2926{; Modified-inandout04
   ;passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -857,7 +857,7 @@ multirot05-XZ-YW {; Jim Muth
   f=exp(flip(imag(p1*.01745329251994))),
   z=f*real(pixel)+p2, c=e*imag(pixel)+p3:
   z=z*(sqr(sqr(z)))+c,
-  |z| <= 36  
+  |z| <= 36
   }
 
 multirot-XY-ZW {; draws 6 planes and many rotations
@@ -886,7 +886,7 @@ z=k*((a*(z^b))+(d*(z^f)))+c,
 |z| < l
 }
 
-Carr2926 {; Modified-inandout04 
+Carr2926 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -1292,7 +1292,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd
@@ -1468,7 +1468,7 @@ BrotBC { ; Z^2.5 + C
     Z = exp(2.5*Z) + C
   |Z| < 4
 }
- 
+
 MandelbrotBC { ; Z = Z^E + C
   e=p1
   p=real(p2)+PI
@@ -1499,9 +1499,9 @@ JuliaBC { ; Z = Z^E + C
 }
 
 Comment { Evolver
-Plug these into the evolver, with real(p1) changing from 2 to 3 along the X 
-axis and real(p2) changine from -6 to +6 along the Y axis and you have a 
-real treat of an image (depending on the other parameters; I used p3=-1). 
+Plug these into the evolver, with real(p1) changing from 2 to 3 along the X
+axis and real(p2) changine from -6 to +6 along the Y axis and you have a
+real treat of an image (depending on the other parameters; I used p3=-1).
 Now, if I can just remember how to do that IsMand() stuff...
 }
 
@@ -1632,15 +1632,15 @@ z = k*(a*(z^b) + d*(z^f)) + c
 }
 
 ManLakefnfn  {  ; combines Mandel_lake  by Sylvie Gallet with Mandel(fn||fn)
-                            ; function=fn1/fn2            
+                            ; function=fn1/fn2
                             ; p1 = Julia seed
                             ; real(p2) = bailout value
                             ; imag part of p2: 0 = lake transform disabled
                             ; any value between 0 and 100: water level in % of
                             ; screen height (0 = bottom, 100 = top)
                             ; real part of p3: amplitude of the wave (try 0.2)
-                            ; imag part of p3: frequency (try 300)            
-               
+                            ; imag part of p3: frequency (try 300)
+
 
 bailout = real(p2),  shift = 0.5
 
@@ -1693,7 +1693,7 @@ if (imag(p2) > 0 && imag(p2) <= 100)
 ; the heart of the lake transform:
   if (b <= level)
     dy = level - b
-    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v
   endif
 
   z = z + z3rd

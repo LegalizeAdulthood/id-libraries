@@ -35,44 +35,44 @@ z = z * z + srand(z)
 Olio_Magnet (XAXIS) {
 z = pixel :
 z = z + p1 + 0.5
-z = z * fn1(pixel) 
+z = z * fn1(pixel)
 z = sqr(1/z)
 |z| < 4
 }
 
-Olio_2 (XAXIS) { 
+Olio_2 (XAXIS) {
 z = pixel, fpix = fn1(pixel) + p1:
-z = z + pixel 
-z = z * fpix 
-z = fn2(1/z) 
+z = z + pixel
+z = z * fpix
+z = fn2(1/z)
 |z| < 4
 }
 
 Olio_3 (XAXIS) {
 z = pixel, fpix = fn1(pixel) + p1:
 z = z*z + pixel
-z = z * fpix 
-z = fn2(1/z) 
+z = z * fpix
+z = fn2(1/z)
 |z| < 4
 }
 
-Olio_4 (XAXIS) { 
+Olio_4 (XAXIS) {
 z = c = pixel:
-z = sin(sqr(z)) * fn1(1/c) 
-z = sin(z) + c   
+z = sin(sqr(z)) * fn1(1/c)
+z = sin(z) + c
 |z| < 4
 }
 
-Olio_4_B (XAXIS) { 
+Olio_4_B (XAXIS) {
 z = c = pixel:
-z = sin(sqr(z)) * fn1(1/sqr(z)) 
-z = sin(z) + c   
+z = sin(sqr(z)) * fn1(1/sqr(z))
+z = sin(z) + c
 |z| < 4
 }
 
 Olio_5 (XAXIS) {
 z = pixel, sqpix = sqrt(pixel) + p1:
-z = (1/z+z) * sqpix 
+z = (1/z+z) * sqpix
 z = (pixel - 1/z) + fn1(z)
 |z| < 4
 }

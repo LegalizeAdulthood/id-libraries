@@ -40,14 +40,14 @@ DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
    DAFRM10  { ; var Ron Barnett REB004K
    z = pixel:
    x = flip(pixel + fn1(4/z - z/5 + 125)),
-   z = x*z + p1 + 125, 
+   z = x*z + p1 + 125,
    |z| <= 100
    }
 
    DAFRM11  { ; var Ron Barnett REB004L
    z = pixel:
    x = flip(pixel + fn1(2*p1/3*z - z/(p2+125))),
-   z = x*z + pixel, 
+   z = x*z + pixel,
    |z| <= 100
    }
 
@@ -58,6 +58,6 @@ DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
    y1 = -fn2((x*x + y*y) + 6*x)*y/(2*x*x + y*y),
    x2 = x1*x1 - y1*y1 + p1 + 25,
    y2 = 3*x*y - 25,
-   z = x2 + flip(y2), 
+   z = x2 + flip(y2),
    |z| <= 100
-   }   
+   }

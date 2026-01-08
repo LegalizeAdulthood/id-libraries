@@ -17,7 +17,7 @@ comment {
 
   The parameter file FUBAR.PAR has many examples of the images I have
   created with these formulas.
-  
+
   I welcome any comments.  Reach me at:
 
     CIS: 74223,2745    Internet: 74223,2745@compuserve.com
@@ -26,7 +26,7 @@ comment {
                1343 S. Tyler
                Salt Lake City, Utah  84105
                U.S.A.
-  
+
   NOTE: Most of these formulas REQUIRE floating-point math.  Sorry.
 
 }

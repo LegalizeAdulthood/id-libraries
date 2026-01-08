@@ -41,10 +41,10 @@ Gallet-3-04 { ; Sylvie Gallet [101324,3444], 1996
  |z| <= bailout
 }
 
-Gallet-3-05 { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-05 { ; Sylvie Gallet [101324,3444], 1996
  z = pixel , c = p1 , bailout = real(p3) :
  test = (flip(c*z) >= 0)
- a = (z-p2)*test , b = (z+flip(p2))*(1-test) , z = (a+b)*c 
+ a = (z-p2)*test , b = (z+flip(p2))*(1-test) , z = (a+b)*c
  (sqr(real(z)) < bailout) || (sqr(imag(z)) < bailout)
 }
 
@@ -65,14 +65,14 @@ Gallet-3-07 (YAXIS) {; Sylvie Gallet [101324,3444], 1996
                 ; Newton's method applied to
                 ; x -> sin(y)^2+cos(x)^3 = 0
                 ; y -> cos(x)^2+sin(y)^3 = 0
- z = 0.05/pixel , x=real(z) , y=imag(z) 
- cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+ z = 0.05/pixel , x=real(z) , y=imag(z)
+ cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
  cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy :
  d = 6*(cx*sy-4)     ; normal value -->  d = 9*(cx*sy-4)
  x = x+(sy3+3*sy*cx3-2*cx2)/(cx*sx*d)
  y = y-(cx3+3*cx*sy3-2*sy2)/(sy*cy*d)
  z = x + flip(y)
- cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+ cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
  cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy
  |sy2+cx3+flip(cx2+sy3)| > 0.00001
 }
@@ -119,19 +119,19 @@ Gallet-3-10 {   ; Sylvie Gallet [101324,3444], 1996
   |sy*sy+cx+flip(cx*cx+sy)| >= 0.000001
 }
 
-Gallet-3-11   { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-11   { ; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel) , p = p2/p1 :
   z = z*p
   z <= p1
 }
 
-Gallet-3-12   { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-12   { ; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel) , p = p1/p2 :
   z = z*p
   z <= p1
 }
 
-Gallet-3-13   { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-13   { ; Sylvie Gallet [101324,3444], 1996
  z = pixel/(pixel*pixel+1) :
  x = real(z) , y = imag(z)
  x1 = x - p1*fn1(y+p2*fn2(y))
@@ -140,14 +140,14 @@ Gallet-3-13   { ; Sylvie Gallet [101324,3444], 1996
  |z| <= 4
 }
 
-Gallet-3-14 { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-14 { ; Sylvie Gallet [101324,3444], 1996
   z = Pixel:
   z = fn1(z)+flip(fn2(z))
-  (|real(z)| <= 4) || (|imag(z)| <= 4) 
+  (|real(z)| <= 4) || (|imag(z)| <= 4)
 }
 
-Gallet-3-15 { ; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-15 { ; Sylvie Gallet [101324,3444], 1996
   z = Pixel*(0.0,1.0) :
   n = sin(z)-z-pixel , z = z-n/(cos(z)-pixel)
-  |n| > real(p1) 
+  |n| > real(p1)
 }

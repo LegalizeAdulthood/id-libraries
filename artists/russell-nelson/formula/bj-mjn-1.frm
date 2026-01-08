@@ -36,7 +36,7 @@ m+j+n_2 { ; Sylvie Gallet [101324,3444], 1996
     tm || ((|z| < 16) && tj) || ((|n| > 0.000001) && tn)
   }
 
-PHC-m+j+n-01 { ; Sylvie Gallet [101324,3444], 1996 
+PHC-m+j+n-01 { ; Sylvie Gallet [101324,3444], 1996
   ; real(p1) = size of the Mandelbrot set
   ; imag(p1) = rotation angle (degrees): negative = clockwise
   ; p2 = parameter for the Julia set

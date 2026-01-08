@@ -7,21 +7,21 @@
 ; X-Newsreader: Tin 1.1 PL4
 ; Date: Thu, 28 Jan 1993 16:06:08 GMT
 ; Lines: 19
-;  
+;
 ; [ Article crossposted from bit.listserv.frac-l ]
 ; [ Author was Darcy Boese ]
 ; [ Posted on Thu, 28 Jan 1993 16:05:09 GMT ]
-;  
+;
 ; After a lot of messing around, I discovered that using |x| is not the same
 ; as abs(x) in Fractint formula files.  In any case, I finally managed to get
 ; a Fractint formula for the fuzzy logic image from the February 1993 issue
 ; of Scientific American:
- 
+
 fuzzy {
 a=real(pixel), b=imag(pixel):
 x=1-abs(a-b), y=1-abs(b-1+a), a=x, b=y, sqr(abs(a*a)+abs(b*b))<=p1
 }
- 
+
 ; To center this on your screen use the command corners=-2/3/2.5/-1.5
-;  
+;
 ; Enjoy!

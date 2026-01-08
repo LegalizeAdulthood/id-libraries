@@ -10,7 +10,7 @@ z = z * fn1(z) + pixel
 |z| <= 4
 }
 
-Airreal (XYAXIS) { 
+Airreal (XYAXIS) {
 z = c = pixel:
 z = (1/z)^3/(1/c)^2 + p1
 z = (fn1(c^2)/fn2(z^2))/c + pixel
@@ -23,10 +23,10 @@ z = z * (fn1(c^2)/fn2(c^2))/c + (1/z)
 |z| <= 4
 }
 
-Zurreal { 
+Zurreal {
 z = pixel:
 z = fn1(z) + pixel
-z = fn2(1/sqr(z))/z + p1 
+z = fn2(1/sqr(z))/z + p1
 |z| <= 4
 }
 

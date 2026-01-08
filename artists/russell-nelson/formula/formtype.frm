@@ -16,11 +16,11 @@ so we can credit him and you both! Here they are:
 
 comment {try N1 with maxiter=25, then 200 }
 
-N1(xyaxis) {z=pixel:z=1/sin(1/(z*pixel)) , |z|<=4 } 
+N1(xyaxis) {z=pixel:z=1/sin(1/(z*pixel)) , |z|<=4 }
 
 comment { n integer}
 
-N_n(xyaxis) {z=pixel:z=(1/sin(1/((z^n)*pixel))) , |z|<=4 } 
+N_n(xyaxis) {z=pixel:z=(1/sin(1/((z^n)*pixel))) , |z|<=4 }
 
 N_n1(xyaxis) {z=pixel:z=(1/sin(1/((z^n)*pixel)))*pixel , |z|<=4 }
 
@@ -30,7 +30,7 @@ N2_2(xaxis) {z=pixel:z=sin(sinh(z*pixel))+pixel , |z|<=4 }
 
 N3(xyaxis)  {z=pixel:z=1/sin(1/((z^z)*pixel)) , |z|<=4 }
 N3_1(xyaxis)  {z=pixel: z=1/sin(1/((z^z)*pixel)) + pixel , |z|<=4 }
-N3_2(xyaxis) {z=pixel: z=1/sin(1/((z^z)*pixel)) * pixel , |z|<=4 } 
+N3_2(xyaxis) {z=pixel: z=1/sin(1/((z^z)*pixel)) * pixel , |z|<=4 }
 
 N3_sinh(xyaxis) {z=pixel: z=1/sinh(1/((z^z)*pixel)) , |z|<=4 }
 N3_1sinh(xyaxis) {z=pixel: z=1/sinh(1/((z^z)*pixel))+pixel , |z|<=4 }
@@ -38,14 +38,14 @@ N3_2sinh(xyaxis) {z=pixel: z=1/sinh(1/((z^z)*pixel))*pixel , |z|<=4 }
 
 N3_cosh(xyaxis) {z=pixel: z=1/sinh(1/((z^z)*pixel)) , |z|<=4 }
 N3_1cosh(xyaxis) {z=pixel: z=1/cosh(1/((z^z)*pixel))+pixel , |z|<=4 }
-N3_2cosh(xyaxis) {z=pixel: z=1/cosh(1/((z^z)*pixel))*pixel , |z|<=4 } 
+N3_2cosh(xyaxis) {z=pixel: z=1/cosh(1/((z^z)*pixel))*pixel , |z|<=4 }
 
 comment {
 N3_1(xyaxis) just add '+pixel' after N3. N3_2 just add '*pixel' after N3
 
-N3_sinh replace sin par sinh in N3 , N3_1 and N3_2 
+N3_sinh replace sin par sinh in N3 , N3_1 and N3_2
 
-N3_cosh replace sin par cosh in N3 , N3_1 and N3_2 
+N3_cosh replace sin par cosh in N3 , N3_1 and N3_2
 }
 
 N4(xaxis) {z=pixel:z=(1/sin(1/(z*pixel)))*pixel , |z|<=4 }
@@ -73,7 +73,7 @@ comment {N16 replace '+pixel' by '*pixel' above.
 ===================================================================
 }
 
- 
+
 Whatever_the_name(XAXIS) {z=pixel:z=z*z+(1/z*z)+pixel , |z|<=4 }
 
 No_name(xaxis) {z=pixel: z+z*z+(1/z*z)+pixel , |z|<=4 }
@@ -86,7 +86,7 @@ top-left         -1.178372          -0.601683
 bottom-right     -0.978384          -0.751678
 center           -1.07838           -0.67668
 ====================================================================
- 
+
 >>As i'm lazy,i will just type the f(z) formulas.All (XYAXIS)
 }
 

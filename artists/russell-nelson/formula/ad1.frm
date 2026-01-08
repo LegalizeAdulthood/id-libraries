@@ -10,7 +10,7 @@ z=fn3(y)^fn4(x*tan(z))+c
 |z|<4
 }
 
-a1{ 
+a1{
 z=pixel,x=log(z),y=cos(z)*(cos(z+sqrz)*z),v=(z*(z+1)/exp(z))^cosh(x):
 z=(z*fn3(y)/fn1(z)^fn4(v))^fn2(x)+c;
 |z|<=4

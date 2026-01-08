@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -18,7 +18,7 @@ z < 21;
    902 {
    z = z^p1 + x^p1 + y^1 + c
    x = p2*z*x + c
-   y = p2*z*y + c 
+   y = p2*z*y + c
    z < 5;
 }
 

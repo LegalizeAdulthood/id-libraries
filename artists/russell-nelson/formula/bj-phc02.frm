@@ -14,23 +14,23 @@ Gallet-PHC3-03b { ; Sylvie Gallet [101324,3444], 1996
  y1 = y - p1*fn1(x*x+p2*fn2(x))
  z = x1+flip(y1)* (whitesq == 0) + (x1*y1) * whitesq,
  |z| <= 4
-} 
+}
 
 BJ-SG-3-03-gb { ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
- x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = x1+flip(y1)  
+ x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = x1+flip(y1)
  |z| <= 4
 }
 
 BJ-SG-3-03-gd { ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
- x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0) + c * whitesq 
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = fn3(x1+flip(y1))  
+ x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0) + c * whitesq
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = fn3(x1+flip(y1))
  |z| <= 4
 }
 
@@ -38,8 +38,8 @@ BJ-SG-3-03-gda { ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
  x1 = x - p1*fn1(x*x+p2*fn2(y)) * fn3((whitesq == 0) + (c/(x+y)) * whitesq)
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = x1+flip(y1)  
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = x1+flip(y1)
  |z| <= 4
 }
 
@@ -50,7 +50,7 @@ Mans-G+SG-3-03 {;Test Variation on Sylvie Gallet formula
   y1 = y - p2*fn1(x+p3*fn2(x)):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test)  
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = (z+ x1+flip(y1))*z+c
   iter = iter + 1
@@ -64,7 +64,7 @@ Mans-G+SG-3-03b {;Test Variation on Sylvie Gallet formula
   y1 = y - p2*fn1(x+p3*fn2(x)):
   test = (iter == nextzoom)
   nextzoom = nextzoom + test*iterspace
-  z = z*(1 - test)  
+  z = z*(1 - test)
   c = c*(1 - test) + test*magnification*c
   z = (x1+flip(y1)) * (whitesq == 0) + (z*z + c) * whitesq
   iter = iter + 1

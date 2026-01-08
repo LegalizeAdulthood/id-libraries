@@ -73,7 +73,7 @@ jenn023{; Arno Jennen
 jenn024{; Arno Jennen
   z=(pixel/(|pixel+9.95|)):
   a1=pixel+cosxx(z),
-  a2=(a1+0.20)/pixel, 
+  a2=(a1+0.20)/pixel,
   z=(|z+pixel|)/(a1+a2)+sin(a2),
   |(z^(9.20-a1))|<=z
   }

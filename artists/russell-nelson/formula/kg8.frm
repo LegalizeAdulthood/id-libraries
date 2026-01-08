@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -47,13 +47,13 @@
   z = c = 1/pixel:
   z = (fn1 (z) + c) / (z - c + p1)
   |z| <= p2;
-}   
+}
 
   808 {
   z = c = 1/pixel:
   z = (fn1 (z) - c) * (z + c + p1)
   |z| <= p2;
-}   
+}
 
   809 {
   z = c = p1/pixel:
@@ -65,10 +65,10 @@
   z = c = p1/pixel:
   z = (fn1 (z) + c) * (z + c + p1)
   |z| <= p2;
-}   
+}
 
   811 {
   z = c = p2/pixel:
   z = (fn1 (z) + c) * (z + c + p1)
   |z| <= p2;
-}   
+}

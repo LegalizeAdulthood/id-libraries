@@ -42,7 +42,7 @@ z=z-(cosxx(z)+c+sin(z/c1)+cosxx(1/pixel));
 |real(z)| <=100
 }
 
-Carr1355{;Carr-brot 
+Carr1355{;Carr-brot
 z=log(3.1416)+1/pixel:
 z=z-(sqr(z)+pixel),
 |z| <= 4
@@ -266,7 +266,7 @@ Carr1387 (XAXIS_NOPARM) {; FractalFenderC Modified
   x<=4
   ;SOURCE: 31carr.frm
 }
- 
+
 Carr1388 (XAXIS_NOPARM) {; FractalFenderC Modified
      ; Edited for Fractint v. 20 By George Martin, 10/98
   z=cotanh(pixel*pixel), x=|real(z)|, c=z/pixel^z:
@@ -319,30 +319,30 @@ Carr1395{
 z=pixel-0.009,c=sqrt(0.3,0.6)-1.32:
 z=(z*z+c)/(pixel*pixel+z),
 |real(z)| <=100
-} 
+}
 
 Carr1396{
 z=pixel-0.009,c=sqrt(0.3,0.6)-1.32:
 z=(z*z+c)/(pixel*pixel+z);
 z=(z*1/c),
 |real(z)| <=100
-} 
+}
 
 Carr1397{
 z=sqrt(1/pixel)/pixel,c=sqrt(0.3,0.6)-1.32:
 z=z-(z^pixel+c)+1/c,
-|real(z)| <=100 
+|real(z)| <=100
 }
 
 Carr1398{
 z=sqrt(1/pixel)/pixel,c=sqrt(0.3,0.6)-1.32:
 z=(z*z+c)/(z*1/c),
-|real(z)| <=100 
+|real(z)| <=100
 }
 
-Carr1399{;Mark Peterson; Mod. by T.J.E. Reed; Modified 
+Carr1399{;Mark Peterson; Mod. by T.J.E. Reed; Modified
 z=pixel:
-z=tan(z*z)+(-0.74543, 0.2)+0.02,    
+z=tan(z*z)+(-0.74543, 0.2)+0.02,
 |z| <= 4
 }
 

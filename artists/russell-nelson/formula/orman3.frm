@@ -19,14 +19,14 @@ z=p1*z*(1-z)
 PixJack {
    z = pixel, c = p1:
    z = z*z + c * pixel
-   z <= 4 
+   z <= 4
  }
 
 
 PixJack2 {
    z = pixel, c = p1, d=c/pixel:
    z = z*z + c + d
-   z <= 4 
+   z <= 4
  }
 
 Ormandelbrot48 {
@@ -38,7 +38,7 @@ z=sqr(sqr(z)+fn1(c)/sqr(z)-fn2(c))
 Ormandelbrot49 {
    z = c =pixel, d=p1:
    z = sqr(z) + C + D
-   z <= 4 
+   z <= 4
  }
 
 Ormandelbrot50 {; Mandel-Julia Hybrid

@@ -1,7 +1,7 @@
 {
 These formulas were discovered while I was on an expedition to the
 Far East in search of rare spices. While in the remote Province of
-Wonchuria, in Northern Taicong, I occasioned on a Budfushan 
+Wonchuria, in Northern Taicong, I occasioned on a Budfushan
 Monastary said to be the birthplace of all modern mathmatics. A
 Budfushan High Priest befriended me and took me to the archives
 of the Highest Holy Temple. Once there he allowed me to copy the
@@ -12,13 +12,13 @@ Apparently Monkeys had something to do with the creation of these
 formulas as the High Priest made mention of their participation
 by "punching". The High Priest's ancestors nicknamed the files
 "Monkey Punched".
- 
+
 I'm now sharing with you the spoils of this Far Eastern trek.
 
 None of these formulas may be used for commercial purposes without
 my written and signed consent. I can be contacted by E-Mail at:
 CompuServe 73753,2420 or on America Online by the name Genealogy1.
-I hope you enjoy using these fractal formulas. If per chance, they 
+I hope you enjoy using these fractal formulas. If per chance, they
 are duplicates of another formula, that duplication was strictly
 by accident and I apologize.
 

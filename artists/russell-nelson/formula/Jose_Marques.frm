@@ -100,6 +100,6 @@ z = c = pixel:
 }
 
 ; Jose Marques
-; 
+;
 ; jmarques@embratel.internet.br
-; 
+;

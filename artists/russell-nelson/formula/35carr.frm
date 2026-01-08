@@ -413,11 +413,11 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+z);
 
 
 
- 
- 
 
 
- 
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ;
-;       These formulafiles are from Karl Geigl 100327,156. 
+;       These formulafiles are from Karl Geigl 100327,156.
 ;
 ;
 
@@ -83,24 +83,24 @@
 
    214 {
    z = (1/pixel)^3:
-   z = (z+22/7) * (z-22/7) 
+   z = (z+22/7) * (z-22/7)
    z < 5;
 }
 
    215 {
    z = (1/pixel)^3:
-   z = (z+22/7) / (z-22/7) 
+   z = (z+22/7) / (z-22/7)
    z < 5;
 }
 
    216 {
    z = pixel:
-   z = z * (1-z) * c 
+   z = z * (1-z) * c
    z < 2;
 }
 
    217 {
    z = pixel:
-   z = z * (1+z) * c 
+   z = z * (1+z) * c
    z < 3;
 }

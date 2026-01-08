@@ -35,7 +35,7 @@ MandExpGhost { ; Ron Barnett, 1998  - modified from Kerry Mitchell
 JMaskghost { ; Ron Barnett, 1998
         ; use decomp=256
         ; real(p1) = bailout
-        ; imag(p1) = "ghost" adjustment: 
+        ; imag(p1) = "ghost" adjustment:
         maxr = real(p1), scale = imag(p1)*pi/128
         iterexp = 0, iter = 1, zc = fn1(pixel), background = pixel:
         iterexp = iterexp + exp(-cabs(zc)), iter = iter + 1
@@ -65,7 +65,7 @@ CmplxNewtghost { ; Ron Barnett, 1998
         oldz = zc
         z1 = (p2-1)*zc^p2 + p3
         z2 = p2*zc^(p2-1)
-        zc = z1/z2 
+        zc = z1/z2
         IF ((0.000001 > cabs(oldz-zc)) || (iter == maxit))
           smooth = iterexp*scale
           ang = cos(smooth)+flip(sin(smooth))
@@ -108,7 +108,7 @@ MandExp { ; Ron Barnett, 1998
 JMaskExp { ; Ron Barnett, 1998
         ; use decomp=256
         ; real(p1) = bailout
-        ; imag(p1) = color spread 
+        ; imag(p1) = color spread
         maxr = real(p1), scale = imag(p1)*pi/128
         iterexp = 0, iter = 1, zc = fn1(pixel), background = 0:
         iterexp = iterexp + exp(-cabs(zc)), iter = iter + 1
@@ -138,7 +138,7 @@ CmplxNewtExp { ; Ron Barnett, 1998
         oldz = zc
         z1 = (p2-1)*zc^p2 + p3
         z2 = p2*zc^(p2-1)
-        zc = z1/z2 
+        zc = z1/z2
         IF ((0.000001 > cabs(oldz-zc)) || (iter == maxit))
           smooth = iterexp*scale
           ang = cos(smooth)+flip(sin(smooth))
@@ -210,7 +210,7 @@ MandExpLayers1 { ; Ron Barnett, 2000
         zc = sqr(zc)+c
         d = abs(real(zc)+imag(zc))
         IF (d < closest)
-          closest = d   
+          closest = d
 	ENDIF
         IF ((|zc| > maxr) || (iter == maxit))
           smooth1 = iterexp*scale1+offset1
@@ -262,7 +262,7 @@ MandExpLayers2 { ; Ron Barnett, 2001
         zc = sqr(zc)+c
         d = abs(real(zc)+imag(zc))
         IF (d < closest)
-          closest = d   
+          closest = d
 	ENDIF
         IF ((|zc| > maxr) || (iter == maxit))
           smooth1 = iterexp*scale1+offset1
@@ -332,7 +332,7 @@ MandExpLayers3 { ; Ron Barnett, 2001
         zc = sqr(zc)+c
         d = abs(real(zc)-ceil(real(zc)))+abs(imag(zc)-floor(imag(zc)))
         IF (d < closest)
-          closest = d   
+          closest = d
 	ENDIF
         IF ((|zc| > maxr) || (iter == maxit))
           smooth1 = iterexp*scale1+offset1
@@ -396,7 +396,7 @@ JuliaExpLayers3 { ; Ron Barnett, 2001
         zc = sqr(zc)+ c
         d = abs(real(zc)-ceil(real(zc)))+abs(imag(zc)-floor(imag(zc)))
         IF (d < closest)
-          closest = d   
+          closest = d
 	ENDIF
         IF ((|zc| > maxr) || (iter == maxit))
           smooth1 = iterexp*scale1+offset1

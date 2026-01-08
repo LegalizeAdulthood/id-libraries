@@ -3,7 +3,7 @@ comment            { ; Press F2 for additional info. and credits
                      ; Thanks to Sylvie Gallet for the original formula
                      ; which was adapted from a BASIC program -
                      ; "Tent Inside Man" by Malcolm Lichtenstein.
-                     ; Many of the color schemes used herein are 
+                     ; Many of the color schemes used herein are
                      ; from original maps by Linda Allison, Bob Carr,
                      ; Sylvie Gallet, Lee Skinner and others :)
 }

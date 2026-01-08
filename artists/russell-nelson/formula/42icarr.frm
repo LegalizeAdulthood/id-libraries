@@ -19,7 +19,7 @@ d1=(0.00075756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -34,7 +34,7 @@ d1=(0.00060756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -49,7 +49,7 @@ d1=(0.00020756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -64,7 +64,7 @@ d1=(0.00080756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -78,7 +78,7 @@ d1=(0.00099756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -93,7 +93,7 @@ d1=(0.00059756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -108,7 +108,7 @@ d1=(0.00020975/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -123,7 +123,7 @@ d1=(0.00070475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -140,9 +140,9 @@ y1=y-p2*fn1(x*x+p3*fn2(x))
 z1=c1=1.5*z,z2=c2=fn3((coracao)*pixel),
 l1= real(p1),l2=imag(p1),
 bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2), 
-z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+t1=(iter==l1),t2=(iter==l2),
+z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
 z=z*z+c
 iter=iter+1
 |z|<=bailout
@@ -158,9 +158,9 @@ y1=y-p2*fn1(x*x+p3*fn2(x))
 z1=c1=1.5*z,z2=c2=fn3((coracao)*pixel),
 l1= real(p1),l2=imag(p1),
 bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2), 
-z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+t1=(iter==l1),t2=(iter==l2),
+z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
 z=z*z+c
 iter=iter+1
 |z|<=bailout
@@ -176,9 +176,9 @@ y1=y-p2*fn1(x*x+p3*fn2(x))
 z1=c1=1.5*z,z2=c2=fn3((coracao)*pixel),
 l1= real(p1),l2=imag(p1),
 bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2), 
-z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+t1=(iter==l1),t2=(iter==l2),
+z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
 z=z*z+c
 iter=iter+1
 |z|<=bailout
@@ -193,9 +193,9 @@ y1=y-p2*fn1(x*x+p3*fn2(x))
 z1=c1=1.5*z,z2=c2=fn3((coracao)*pixel),
 l1= real(p1),l2=imag(p1),
 bailout=16,iter=0:
-t1=(iter==l1),t2=(iter==l2), 
-z=z*(1-(t1||t2))+(z1*t1)+(z2*t2) 
-c=c*(1-(t1||t2))+(c1*t1)+(c2*t2) 
+t1=(iter==l1),t2=(iter==l2),
+z=z*(1-(t1||t2))+(z1*t1)+(z2*t2)
+c=c*(1-(t1||t2))+(c1*t1)+(c2*t2)
 z=z*z+c
 iter=iter+1
 |z|<=bailout
@@ -271,7 +271,7 @@ iter=iter+1
 |z|<=bailout
 }
 
-Carr2397{;Modified Brian E. Jones frm. mans-galore-012 
+Carr2397{;Modified Brian E. Jones frm. mans-galore-012
 z=c=conj(flip(2*pixel)),
 iter=0,x=real(z),y=imag(z)
 nextzoom=iterspace=real(p1),magnification=imag(p1),
@@ -286,7 +286,7 @@ iter=iter+1
 |z|<=16
 }
 
-Carr2398{;Modified Brian E. Jones frm. mans-galore-012 
+Carr2398{;Modified Brian E. Jones frm. mans-galore-012
 z=c=(pixel-(conj(0.050/pixel)+flip(conj(0.0010/pixel)))^4),
 iter=0,x=real(z),y=imag(z)
 nextzoom=iterspace=real(p1),magnification=imag(p1),
@@ -361,7 +361,7 @@ nextzoom=nextzoom+test*iterspace
 z=z*(1-test)+x1+flip(y1)
 c=c*(1-test)+test*magnification*c
 z=z*z+c
-;c=log(1+z); 
+;c=log(1+z);
 iter=iter+1
 |z|<=16
 }
@@ -736,7 +736,7 @@ z=c=pixel,
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1

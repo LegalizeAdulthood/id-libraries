@@ -111,14 +111,14 @@
    }
 
    MandellambdaPwr {; This provide a "map" for LambdaPwr
-   z = (1/(p1+1))^(1/p1): 
+   z = (1/(p1+1))^(1/p1):
    z = pixel*z*(1 - z^p1), |z| <= 100
    }
 
    LambdaPwr {
    z = pixel:
    z = p1*z*(1 - z^p2), |z| <= 100
-   }  
+   }
 
    PseudoLambda {
    z = pixel:

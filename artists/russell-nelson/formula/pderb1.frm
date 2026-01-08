@@ -10,8 +10,8 @@
 ; Message-ID: <4rvg6e$mmc@freenet-news.carleton.ca>
 ; Reply-To: ao950@FreeNet.Carleton.CA (Paul Derbyshire)
 ; NNTP-Posting-Host: freenet6.carleton.ca
-; 
-; 
+;
+;
 
 ; FRACTINT lovers try this one:
 

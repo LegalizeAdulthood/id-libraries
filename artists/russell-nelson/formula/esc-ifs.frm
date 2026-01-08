@@ -8,11 +8,11 @@
 ; From: Ramiro Perez <RPEREZ@UTPVM1.BITNET>
 ; Subject: Escape Time Ifs formulas
 ; Lines: 90
-;  
+;
 ; If you are interested in the Escape Time version of the Ifs codes
 ; here are some formulas for fractint.
 ; First, formulas with only two transformations..
-;  
+;
 ; I post this one some months ago.. use p1=.9/-.87
 
 zpj (YAXIS) { ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -26,7 +26,7 @@ zpj (YAXIS) { ; Edited for Fractint v. 20 by George Martin, 10/98
   |z|<=100
   ;SOURCE: esc-ifs.frm
 }
- 
+
 ; This one make a dragon curve, use p1=(1.1,.9)
 
 Twotrj{
@@ -38,12 +38,12 @@ p=a+b
 z=p1*z+p
 |z|<=100
 }
- 
+
 ; Now, here are formulas with three transformations
-;  
+;
 ; First, our old friend, the sierpinsky triangle
 ; Use p1=2 for the triangle, and p1=(1.3,.5) for a strange thing
- 
+
 Sierpinsky{
 z=pixel, j=(0, -1), k=(-1, 0):
 x=real(z),
@@ -56,11 +56,11 @@ p=a+b
 z=p1*z+p
 |z|<=100
 }
- 
+
 ; Here is another example of the Sierpinsky triangle, but this one is an
 ; equilateral Triangle.. once again, use p1=2 to get the triangle.. also
 ; you can use p1=(1.9,-.7) to get some strange thing
- 
+
 EqTrngl{
 z=pixel, j=(0, -1), k=(.8660, 0.5), l=(-0.8660, 0.5):
 x=real(z)
@@ -77,10 +77,10 @@ p=a+b+c
 z=p1*z+p
 |z|<=100
 }
- 
+
 ; And finally, five transformations..
 ; Use p1=2 to get the image
- 
+
 Diamont{
 z=pixel, j=(0, -1), k=(-1, 0), l=(0, 1), m=(1, 0):
 x=real(z)
@@ -98,11 +98,11 @@ p=a+b+c+d
 z=p1*z+p
 |z|<=100
 }
- 
+
 ; All of those fractals are julia sets, so you can change p1 by pixel, to
 ; transform them into their mandelbrot related sets..
 ; For the moment, i'm trying to do the escape time Fern, so if anyone have
 ; the correct funtion for it, please post it or send it directly to me.
-;  
+;
 ;                          Sincerely
 ;                                    Ramiro Perez (rperez@utpvm1.bitnet)

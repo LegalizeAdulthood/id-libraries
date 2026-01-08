@@ -8,18 +8,18 @@
 ; Message-ID: <3t0hdn$8nj@rjo02.embratel.net.br>
 ; NNTP-Posting-Host: 200.255.254.106
 ; X-Newsreader: Forte Free Agent v0.55
-;  
+;
 ; BAIL_OUT.FRM and BAIL_OUT.PAR were distributed in Dan Goldwater
 ; FracXtra v. 6.0 collection, but unfortunately the files were corrupt.
 ; Also some of the images didn't work in the version 19.2 of Fractint.
-;  
+;
 ; I'm posting here the revised and corrected versions of these files.
-;  
+;
 ; I made them when the change of bail_out conditions wasn't yet a
 ; built-in feature of Fractint. Even so, I think the results are quite
 ; interesting. Please E-Mail your opinions, and other PAR files based in
 ; the BAIL_OUT.FRM to Jose Marques - jmarques@embratel.net.br
-;  
+;
 
 {
 BAIL_OUT.FRM: Formulas that explore various heterodox ways of testing
@@ -30,7 +30,7 @@ File Bail_out.par has some examples of pictures based on these
 formulas.
 By Jose Marques; E-Mail: jmarques@embratel.net.br
 }
- 
+
 bail_out01 (xAxis)  {
 z = c = pixel:
   z = z^2 + c
@@ -72,7 +72,7 @@ z = c = pixel:
   z = z^2 + c
    |fn1(|z|)| <= p1
 }
- 
+
 {The next two formulas don't seem to work the way they should.
 ; May be there's some bug in the code for the logical "and" and "or"
 }
@@ -86,7 +86,7 @@ z = c = pixel:
   z = z^2 + c;
    |fn1(real(z))| <= p1  || |fn1(imag(z))| <= p1
 }
- 
+
 simple01(xAxis) {
 z = c = pixel:
    z = z^2 + c;

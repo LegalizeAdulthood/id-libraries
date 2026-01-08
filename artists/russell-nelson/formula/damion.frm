@@ -16,7 +16,7 @@ z = fn2(z) + fn1(z) + p1
 z <= 4
 }
 
-004 { 
+004 {
 z = pixel:
 z = pixel + fn1(z)  + p1
 |z| <=100
@@ -46,15 +46,15 @@ z = z+z+z + p1
 z = cos(c) * cos(z)
 }
 
-009 { 
+009 {
 z = pixel:
 z = (Z+PIXEL) + C +p1
 Z = fn1(Z)
 }
-                         
+
 010 {
 Z = PIXEL:
-Z = Z*Z*Z 
+Z = Z*Z*Z
 Z = fn1(z) + fn2(c) + p1
 }
 
@@ -64,7 +64,7 @@ z = fn1(z)*z + c + p1
 z = fn2(z)
 }
 
-012 { 
+012 {
 z = pixel:
 z = Sin(cos(z)) * Tan(cotan(z)) + p1
 z = pixel + z
@@ -85,14 +85,14 @@ z = tan(z) + cotan(z)
 
 015 (XYAXIS) {
 z = pixel:
-z = fn1(z+c) * (z-c) + atan(z) 
+z = fn1(z+c) * (z-c) + atan(z)
 z = Cos(z) + pixel  + p1
 |z| <=128
 }
 
 016 {
 z = pixel:
-z = sin(z+c) * (z-c) + fn1(z) 
+z = sin(z+c) * (z-c) + fn1(z)
 z = cos(z) + p1
 }
 
@@ -181,9 +181,9 @@ b = pixel + a >= z
 z = fn1(a) + fn1(z) + p1
 z = fn1(b) + cos(z)
 z = fn1(3.14) + z*z
-}    
+}
 
-030 { 
+030 {
 z = pixel:
 a = pixel + a <= z
 b = pixel + a >= Sqrt(z)
@@ -220,7 +220,7 @@ z = (z*z) + b + p1
 034 {
 z = pixel:
 a = fn1(z) + c
-b = z*z + pixel  
+b = z*z + pixel
 z = sin((a + z) / (b + z)) + p1
 }
 
@@ -233,7 +233,7 @@ z = b + fn1(a) + p1
 
 newd01 {
 z = pixel:
-a = pixel + p1  
+a = pixel + p1
 b = pixel + fn1(p1)
 z = fn1(z*a) + p1
 z = b*z + pixel
@@ -255,7 +255,7 @@ z = fn1(z+z)
 
 newd04 {
 z = pixel:
-z = sinh(cos(z)*tan(z)*z) 
+z = sinh(cos(z)*tan(z)*z)
 z = sqr(abs(z)) + p1
 z = z + pixel
 }
@@ -289,13 +289,13 @@ z = conj(z)
 }
 
 BUG01 (XAXIS) {
-z = 0: 
+z = 0:
 z = pixel + z + p1
 z = z^z + fn1(z^5)
 }
 
 BUG02 (XAXIS) {
-z = 0: 
+z = 0:
 z = pixel + z + p1
 z = fn1(z) + z^z + c
 }
@@ -310,20 +310,20 @@ z <= 4
 BUG04 (XAXIS) {
 z = 0:
 z = pixel + z + p1
-z = fn1(z ^ z) + z^5 
+z = fn1(z ^ z) + z^5
 }
 
 BUG05 (XYAXIS) {
 z = 0:
 z = sin(z) + cos(pixel) + c + p1
-z = z ^ fn1(z) + z  
+z = z ^ fn1(z) + z
 }
 
 BUG06 (XAXIS) {
 z = 0:
 pi = 3.141592654
 z = z * z + sqr(sin(pi))
-z = fn1(z) + z ^ z  
+z = fn1(z) + z ^ z
 z = z + pixel
 }
 ; /* Thanksgiving */
@@ -337,14 +337,14 @@ z = pixel + z + p1
 ZAAR_2 {
 z = 0:
 z = sin((z + pixel) - c/3)
-z = p1 + (z + z) 
+z = p1 + (z + z)
 z = pixel + z
 }
 
 ZAAR_3 (XAXIS) {
 z = 0:
 z = fn1(z + z * z ) + p1
-z = (z * z) / (z + c) 
+z = (z * z) / (z + c)
 z = pixel + z
 }
 
@@ -360,7 +360,7 @@ z = pixel:
 z = z * fn1(z) + pixel
 z = z + p1
 z = z + pixel
-z = z * z + c / z   
+z = z * z + c / z
 |z| <= 4
 }
 
@@ -376,7 +376,7 @@ AMINO_3 {
 z = pixel:
 z = z*z*z/pixel + p1
 z = rand * z  +  z
-z = fn1(z) 
+z = fn1(z)
 |z| <= 64
 }
 
@@ -388,7 +388,7 @@ z = fn1(z) + z + pixel
 
 AMINO_5 {
 z = pixel:
-z = (|Z| - z) + z * z + p1 
+z = (|Z| - z) + z * z + p1
 z = fn1(z) - fn2(z)
 z = pixel + sqrt(z)
 |z| < 4
@@ -398,13 +398,13 @@ AMINO_6 {
 z = pixel :
 z = z + pixel
 z = fn1(z + z) + pixel
-z = sqrt(z * z) 
+z = sqrt(z * z)
 }
 
 AMINO_7 (XAXIS) {
 z = pixel :
 z = z + c / sqrt(2)
-z = sin(cos(z) + z) + (z + c)  
+z = sin(cos(z) + z) + (z + c)
 z = fn1(z) + pixel
 }
 

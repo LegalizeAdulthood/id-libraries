@@ -7,7 +7,7 @@ File Bail_out.par has some beautiful and strange examples of pictures
 based on these formulas.
 By J. Marques; E-Mail: jmarques@ccvax.unicamp.br
 }
- 
+
 bail_out01 (xAxis)  {
 z = c = pixel:
   z = z^2 + c

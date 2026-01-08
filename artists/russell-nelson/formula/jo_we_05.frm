@@ -18,16 +18,16 @@ z=z*z+(c-1),
 }
 
 Carr1403{;Modified T.J.E. Reed formula;Julia
-c=z=pixel:   
-z=z*z+c,   
-c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z,    
+c=z=pixel:
+z=z*z+c,
+c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/3+z,
 |z| <= 4
 }
 
 Carr1404{;Modified T.J.E. Reed formula;Julia
-c=z=pixel:   
-z=z*z+c,   
-c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z,    
+c=z=pixel:
+z=z*z+c,
+c=(1+flip(imag(sqrt(c))))*real(sqrt(c))/6+z,
 |z| <= 4
 }
 

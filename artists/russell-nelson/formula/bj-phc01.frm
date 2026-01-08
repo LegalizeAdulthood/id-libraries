@@ -1,4 +1,4 @@
-BJ-MandJulia   {; Modification of Ron Barnett's MandJulia frm   
+BJ-MandJulia   {; Modification of Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
@@ -7,7 +7,7 @@ BJ-MandJulia   {; Modification of Ron Barnett's MandJulia frm
         z=fn1(z*z)*pi,
 	z=z*z+c, |z|<4}
 
-BJ-Newton*2  {; Modification of Ron Barnett's MandJulia frm   
+BJ-Newton*2  {; Modification of Ron Barnett's MandJulia frm
         root = 1,
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
@@ -19,7 +19,7 @@ BJ-Newton*2  {; Modification of Ron Barnett's MandJulia frm
         z = (3 * z4 + root) / (4 * z3),
 	 .004 <= |z4 - Root|}
 
-BJ-Newton*2-b  {; Modification of Ron Barnett's MandJulia frm   
+BJ-Newton*2-b  {; Modification of Ron Barnett's MandJulia frm
         root = 1,
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
@@ -31,7 +31,7 @@ BJ-Newton*2-b  {; Modification of Ron Barnett's MandJulia frm
         z = (3 * z4 + root) / (4 * z3),
 	 .004 <= |z4 - Root|}
 
-BJ-Newton*2-c  {; Modification of Ron Barnett's MandJulia frm   
+BJ-Newton*2-c  {; Modification of Ron Barnett's MandJulia frm
         root = 1,
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
@@ -43,8 +43,8 @@ BJ-Newton*2-c  {; Modification of Ron Barnett's MandJulia frm
         z = (3 * z4 + root) / (4 * z3),
 	 .004 <= |z4 - Root|}
 
-BJ-PHC-G3-03-a   {; Modification of Sylvie Gallet's 3-03 
-                  ; & Ron Barnett's MandJulia frm   
+BJ-PHC-G3-03-a   {; Modification of Sylvie Gallet's 3-03
+                  ; & Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
@@ -52,7 +52,7 @@ BJ-PHC-G3-03-a   {; Modification of Sylvie Gallet's 3-03
         x = real(z)+oddeven*p3 , y = imag(z):
   	x1 = x - p1*fn1(y*y+p2*fn2(y)),
  	y1 = y - p1*fn1(x*x+p2*fn2(x)),
-	z = (z*z+c) / x1+flip(y1), 
+	z = (z*z+c) / x1+flip(y1),
 	|z|<=4}
 
 BJ-Newton*2+Man-b {; Brian Jones [102702,2213], 1996  Requires passes=1
@@ -93,7 +93,7 @@ BJ-JDfrm010m3 { ; Modified Lee Skinner/Jim Deutch frm
   |z| < 4
 }
 
-BJ-MandsJulia   {; Modification of Ron Barnett's MandJulia frm   
+BJ-MandsJulia   {; Modification of Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
@@ -102,7 +102,7 @@ BJ-MandsJulia   {; Modification of Ron Barnett's MandJulia frm
         z=fn1(z+z)*pi,
 	z=z*z+c, |z|<4}
 
-BJ-Spider-c   {; Modification of Ron Barnett's MandJulia frm  
+BJ-Spider-c   {; Modification of Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
@@ -111,18 +111,18 @@ BJ-Spider-c   {; Modification of Ron Barnett's MandJulia frm
 	z = sqr(z) + c,
 	c = z + fn1(c/2)/p1,
 	 |z|<4}
-    
- BJ-Lamda*2-a   {; Modification of Ron Barnett's MandJulia frm  
+
+ BJ-Lamda*2-a   {; Modification of Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1024)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
        	z = pixel+ evenodd*p1 :
-	m = p2,  
-	z = (sin(z) * p2)/p3,     
+	m = p2,
+	z = (sin(z) * p2)/p3,
 	abs(imag(z)) <= 64 && abs(real(z)) <= 64
 }
 
-BJ-MandsJulia-b-4   {; Modification of Ron Barnett's MandJulia frm  
+BJ-MandsJulia-b-4   {; Modification of Ron Barnett's MandJulia frm
 	count = (count + 1) * (count != 1023)
 	evenodd = (evenodd == (count == 1))
 	oddeven = (evenodd == 0)
@@ -130,6 +130,6 @@ BJ-MandsJulia-b-4   {; Modification of Ron Barnett's MandJulia frm
 	c = evenodd*p1*pixel + oddeven*p2:
         z=sin(z+z)*pi,
 	z=z*z+c, |z|<4}
- 
+
 
 

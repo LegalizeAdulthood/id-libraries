@@ -29,7 +29,7 @@ z=z+c+imag(z),
 c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 |z| <=4
 }
- 
+
 Carr1455{;Modified ManP1IMJ
 z=pixel,c=sqr(0.3,0.6):
 z=z*z;

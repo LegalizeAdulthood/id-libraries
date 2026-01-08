@@ -1,5 +1,5 @@
 Element(xyaxis) {; Michael Theroux [71673,2767]
-   ; fix and generalization by Ron Barnett [70153,1233] 
+   ; fix and generalization by Ron Barnett [70153,1233]
    ;phi lingam
    ;try p1 = 2.236067977 for the golden mean
    z = pixel:
@@ -56,10 +56,10 @@ FractalFenderC (XAXIS_NOPARM) {; Spectacular!
    x <= 4
 }
 
-ScottLPC(XAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z)+cosxx(z), 
-   |z|<TEST 
+ScottLPC(XAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = log(z)+cosxx(z),
+   |z|<TEST
 }
 Fzppsqsi  { ;; Lee2.FRM (Lee Skinner)
   z = pixel, f = sin (pixel):

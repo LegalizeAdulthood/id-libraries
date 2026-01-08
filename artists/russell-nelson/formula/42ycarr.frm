@@ -21,7 +21,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z*z+(c-1)*(z-c), 
+z=z*z*z+(c-1)*(z-c),
 iter=iter+1
 (imag(z)-cabs(2*real(z)))^3<=32-sqr(real(z)+sin(imag(z)))
 }
@@ -37,7 +37,7 @@ l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
 bailout=16,iter=0:
 t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
 t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
-z=z*z*z+(c-1)*(z-c/8), 
+z=z*z*z+(c-1)*(z-c/8),
 iter=iter+1
 (imag(z)-cabs(2*real(z)))^3<=32-sqr(real(z)+sin(imag(z)))
 }
@@ -537,7 +537,7 @@ iter=iter+1
 Carr3061(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
-b4=flip(conj(abs((pixel*pixel)))), 
+b4=flip(conj(abs((pixel*pixel)))),
 b5=pixel-conj(asin(pixel+pixel+0.32))
 c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
 z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -554,7 +554,7 @@ iter=iter+1
 Carr3062(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
-b4=flip(conj(abs((pixel^0.5)))), 
+b4=flip(conj(abs((pixel^0.5)))),
 b5=flip(imag(pixel))-conj(asin(pixel*3+0.32))-flip(0.01/b4-conj(0.1/b4))
 c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
 z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -571,7 +571,7 @@ iter=iter+1
 Carr3063(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
-b4=flip(conj(abs((pixel^0.5)))), 
+b4=flip(conj(abs((pixel^0.5)))),
 b5=conj(pixel*pixel)/flip(1-pixel)
 c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
 z=whitesq*conj(b5)-(whitesq==0)*(b5)^2
@@ -588,7 +588,7 @@ iter=iter+1
 Carr3064(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
 ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
-b4=flip(conj(abs((pixel^0.5)))), 
+b4=flip(conj(abs((pixel^0.5)))),
 b5=flip(pixel*pixel)/conj(1-pixel)
 c=whitesq*conj(b4)-(whitesq==0)*sqr(b4)
 z=whitesq*conj(b5)-(whitesq==0)*(b5)^2

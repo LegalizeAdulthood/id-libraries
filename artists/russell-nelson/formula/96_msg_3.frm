@@ -2,13 +2,13 @@
 ; This file contains the Fractint "FRMs" required by the .pars in the
 ; 96_MSG_3.PAR compilation
 
-Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna 
-z = c = pixel: 
+Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna
+z = c = pixel:
 t1 = ((z-1) * p1) * (real(z) >= 0)   ;; t1 & t2 => Barnsleyj1
 t2 = ((z+1) * p1) * (real(z) <  0)
 t3 = ((z-1) * c + p2) * (real(z) >= 0) ;; t3 & t4 => Barnsleym1
 t4 = ((z+1) * c + p2) * (real(z) < 0)
-z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0)) 
+z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0))
 |z| < 4
 }
 
@@ -24,16 +24,16 @@ BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
     tmp1=fn1(z)^fn2(z),
     tmp2=fn3(z)^fn4(z),
-    z=(tmp1/tmp2), 
+    z=(tmp1/tmp2),
     |z| <= 4
 }
 
 BJ-Lesfrm13-002 { ; Modified Les St Clair formula, 1996
                   ; modified by Brian E. Jones
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = fn4(x/fn3(y))
  |z| <= 4
 }
@@ -43,12 +43,12 @@ BJ-SG-5-07-a { ; Modified Gallet 5-07
   z = pixel , x = z*(0,1) , y = (whitesq == 0) + (z*(0,-1)) * whitesq:
    hx = p1 * fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
-   z = x + flip(y) 
+   z = x + flip(y)
     (|hx|+|hy|) <= p2
   }
 
 BJ-SG-5-07-c { ; Modified Gallet 5-07
-	       ; Sylvie Gallet [101324,3444], 1996 
+	       ; Sylvie Gallet [101324,3444], 1996
   z = pixel , x = fn3(z*(0,1)) , y = fn4(z*(0,-1)) :
    hx = p1*fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
@@ -240,7 +240,7 @@ z1 = pixel + p1, z2 = pixel:
 z1 = (z1 - 1) * (z1 + 0.5) * (z1*z1+1)
 z1 = (z1 * 0.3) - ((z1)/fn1(z1))
 z2 = z2 + p2, r = fn2(z2) * z2^2 , q = z2^e
-z2 = (z2 - imag(1/r) / z2 - real(1/q)) 
+z2 = (z2 - imag(1/r) / z2 - real(1/q))
 z = (z1 * (whitesq == 1)) + (z2 * (whitesq == 0))
 |z| <= 4
 }
@@ -701,7 +701,7 @@ JoWe_XY_17a4 { ; Jo Weber [100424,35], 10/1996
                  |z|<=bailout
 }
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
 c=z=pixel:
 z=z+(fn1(c^2)/fn2(z^2))/c^4,|z| <=6
 }
@@ -714,10 +714,10 @@ Lesfrm12 { ; Les St Clair, 1996
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -734,7 +734,7 @@ Lesfrm16 { ; Les St Clair, 1996
 
 LesPHCfrm04 { ; Les St Clair [101461,2032], 1996  Requires passes=1
               ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-              ; Earl Glynn 
+              ; Earl Glynn
         z = pixel:
         x = 1 - abs(imag(z)-real(z))
         z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -809,22 +809,22 @@ merryxms_01 { ; Les St Clair [101461.2032@compuserve.com] December 1996
   z =c*pixel:
   z=z*z+p1
   |z|<4&&test0==0
-  }	
+  }
 
 Moo_PHC {; by Vincent Damion Presogna, Oct. 18, 1996
-         ; optimised by George Martin 
-  z = pixel 
-  halfe = e*(-0.5) 
+         ; optimised by George Martin
+  z = pixel
+  halfe = e*(-0.5)
   quartere = e*(-.25):
   z = z + p1
   y = tan(1/z)
   r = y + pixel
   q = y * pixel
-  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1) 
+  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1)
   |z| <= 4
 }
 
-Ormandel17 { ; Copr. 1995 by Jack A. Orman 
+Ormandel17 { ; Copr. 1995 by Jack A. Orman
   z=c=pixel:
   temp=z
   neg= (fn1(z^3+z^2+z))^p1

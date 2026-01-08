@@ -1,36 +1,36 @@
 {
 Some years back when I was a Deputy Marshall (under Marshall Wyatt Earp)
 in Tombstone Arizona, I occasioned upon an old Indian gentleman. Lore
-had it that this elder statesman was "way ahead of his time". 
+had it that this elder statesman was "way ahead of his time".
 
 During a conversation I found that the guy was an Iraquois Indian
 from the NorthEast. Years back he had walked to the west in search
 of a fabeled Wampum mine. To give you an example of how far ahead
 this fellow was, when I called him an Indian he said "me no Indian,
-me Native American". Needless to say, this term didn't become general 
+me Native American". Needless to say, this term didn't become general
 usage till some hundred years later.
 
-Apparently this "Native American" was the guy that developed the 
+Apparently this "Native American" was the guy that developed the
 formula for the stress factors in a Teepee. Along with this formula
 he had many, many more of greater complexity. After a few rounds of
-"fire water" he became loose tongued and wrote down all of his 
-formulas. He then had me memorize the instructions for the use 
+"fire water" he became loose tongued and wrote down all of his
+formulas. He then had me memorize the instructions for the use
 of these written complexities. After many hours, the memorazation was
 complete. At that point he passed out cold.
 
 I headed back to town as I knew Marshal Earp would be returning
 from Dodge. As luck would have it, just outside of Tombstone, I was
 bushwacked by a desporado. I killed the maggot but in the process
-my skull was creased from a shot from his Colt 44. 
+my skull was creased from a shot from his Colt 44.
 
 The folowing day I got out the formulas to go over them. Damn!!!
 The skull shot caused amnesia and I was unable to make heads or
-tails of them. I immediatly went to the new Doc in town 
+tails of them. I immediatly went to the new Doc in town
 (Dr. Sig Freud) who was supposed to be good at problems like mine.
 
 To make a long story short, I never got my memory back. Now in my
 twilight years, I'm releasing these hither-to-unknown formulas
-to the computer public to see if they will be of some use to 
+to the computer public to see if they will be of some use to
 someone.
 
 No commercial use of this file (or parts of this file) is allowed
@@ -125,7 +125,7 @@ z=z*z*z/5 + sqr(z) + flip(c),
 Carr-195{
 z=c=1/pixel:
 z=z*z*z/5 + sqr(z) + (-flip(c)),
-|z| <=100 
+|z| <=100
  }
 
 Carr-196{
@@ -191,4 +191,4 @@ z=(sqr(z)+c)/(z-1)+c,
 |z| <=4
 }
 
- 
+

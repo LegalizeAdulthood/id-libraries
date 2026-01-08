@@ -11,7 +11,7 @@
 ; Date: Sat, 25 May 1996 20:20:26 GMT
 ; X-News-Software: Ameol
 ; Lines: 32
-; 
+;
 ; Here's a Fractint formula implementing Steffensen's method
 ; for finding roots of f(z)=0.  The fractal gives 'strings' at the
 ; boundaries between capture basins, roughly similar to those

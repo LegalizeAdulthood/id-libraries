@@ -21,14 +21,14 @@ Mandelbrot(XAXIS) {
    }
 
 { The following is a formula taken from a Compuserve GIF file called RAMANUJAN1
-  as suggested by an equation in an article about the life and work of Indian 
+  as suggested by an equation in an article about the life and work of Indian
   mathematician Srinivasa Ramanujan in the book "The World of Mathematics" Vol.
   1, pp 366-376.}
 
   Ramanujan1(ORIGIN) {
        z = pixel:
        z = (cosh(p1 * sqr(z)) - sinh(p2 * sqr(z))/(p2 * sqr(z)))/z,
-       |z|<= 4   
+       |z|<= 4
 }
 
 { The following formula came from Tobey J. E. Reed when asked how he made his
@@ -39,7 +39,7 @@ Mandelbrot(XAXIS) {
        c = sqr(pixel)/z,
        c = z + c,
        z = sqr(z),
-       |z| < P1 
+       |z| < P1
   }
 
   LeeMandel2(XYAXIS) {
@@ -131,17 +131,17 @@ Whatever_the_name(XAXIS) {
 	z=z*z+(1/z*z)+pixel,
 }
 
-Jm_03a {; generalized Jm Richard-Collard type 
-  z=pixel,t=p1+4: 
-   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))+pixel, 
-    |z|<=t 
-  } 
+Jm_03a {; generalized Jm Richard-Collard type
+  z=pixel,t=p1+4:
+   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))+pixel,
+    |z|<=t
+  }
 
-Jm_11a {; generalized Jm Richard-Collard type 
-  z=pixel,t=p1+4: 
-   z=fn1(fn2(fn3(fn4(z)*pixel)))+pixel, 
-    |z|<=t 
-  } 
+Jm_11a {; generalized Jm Richard-Collard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(fn4(z)*pixel)))+pixel,
+    |z|<=t
+  }
 
 Newducks(XAXIS) {
    z=pixel,t=1+pixel:
@@ -154,32 +154,32 @@ SinInvZ(XYAXIS) {
    z=sin(inv/z),
    |z|<=4
    }
- 
+
 CosInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cos(inv/z),
    |z|<=4
    }
- 
+
 TanInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    t=inv/z;
    z=sin(t)/cos(t),
    |z|<=4
    }
- 
+
 SinhInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=sinh(inv/z),
    |z|<=4
    }
- 
+
 CoshInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cosh(inv/z),
    |z|<=4
    }
- 
+
 TanhInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=tanh(inv/z),
@@ -192,11 +192,11 @@ MyMandel {
    |z|<=4
    }
 
-IAC { 
-   z = pixel: 
-   z = z ^1.5 - .02, 
-   |z| <= 4 
-   }    
+IAC {
+   z = pixel:
+   z = z ^1.5 - .02,
+   |z| <= 4
+   }
 
 cardioid {
   z=0, x=real(pixel), y=imag(pixel),
@@ -205,19 +205,19 @@ cardioid {
   |z| < 4
   }
 
-alt (xaxis) { 
-  z=0, c=pixel, k=1: 
-  z=sqr(z) + c, 
-  c=c+k*p1/z, k=((11-3*k)*k-4)/2, 
-  |z| <= 4 
-  } 
+alt (xaxis) {
+  z=0, c=pixel, k=1:
+  z=sqr(z) + c,
+  c=c+k*p1/z, k=((11-3*k)*k-4)/2,
+  |z| <= 4
+  }
 
 testm { ; Try p1=0.25 and p2=0.15 with float=y or potential=255/800/255
-  z = 0, c=pixel: 
-  z = sqr(z)+c, 
-  c=c+(p1 * (|z| <= p2)) 
-  |z| <= 4 
-  } 
+  z = 0, c=pixel:
+  z = sqr(z)+c,
+  c=c+(p1 * (|z| <= p2))
+  |z| <= 4
+  }
 
 test_formula {
   z = 0, c=pixel:
@@ -316,7 +316,7 @@ Silverado2 { ; Rollo Silver
    zz=sqr(z) ; and save mod in lastsqr
    z=zz*z*real(p1)+zz*real(st)
     4 > lastsqr
- } 
+ }
 
 M-SetInNewton(XAXIS) {; use float=yes
   z = 0,  c = pixel,  cminusone = c-1:
@@ -597,7 +597,7 @@ Fish2 (xaxis) {; Dave Oliver   >INTERNET:D.E.Oliver@soton.ac.uk
 
 OK-08 {
    z = pixel, c = fn1(pixel): z = z^z / fn2(z);
-   z = c / z, |z| <= (5 + p1)  
+   z = c / z, |z| <= (5 + p1)
    }
 
 OK-38 { ; DISECTED CUBIC MANDELBROT

@@ -68,7 +68,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=z^2+c+0.08/pixel,
 iter=iter+1
@@ -84,7 +84,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=z^2+c+0.1,
 iter=iter+1

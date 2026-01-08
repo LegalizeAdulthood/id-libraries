@@ -4,7 +4,7 @@ comment {
   "Invasion" fractals.  When I wrote them, I just had a vague idea of
   the algorithm.  Earl sent me a very detailed explanation of this
   algmrithm but I haven't found the time to study it (it will be a good
-  start for Gallet10...).  
+  start for Gallet10...).
 
     Thanks, Earl!
 

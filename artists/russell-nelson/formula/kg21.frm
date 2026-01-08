@@ -1,7 +1,7 @@
 ;
 ;       These formulafiles are from Karl Geigl
 ;	please give comments and enjoy it!
-;	karlgeigl@compuserve.com 
+;	karlgeigl@compuserve.com
 ;
 kg2101 {
 	z=pixel:

@@ -56,7 +56,7 @@ EvilEyeC.1 (XAXIS_NOPARM) {
   x<=4
   ;SOURCE: choice.frm
 }
-      
+
 { DeepSpaceProbeC demonstrates a more complicated IF-THEN-ELSE
   structure.
     if x<10 then z=sqr(z)+pixel

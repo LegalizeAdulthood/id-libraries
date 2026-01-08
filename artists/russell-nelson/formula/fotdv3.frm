@@ -1,5 +1,5 @@
 ; FOTDv3.frm
-; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.99 - 11.Apr.00. 
+; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.99 - 11.Apr.00.
 ; This is a companion file to FOTD_v3.par
 ; Compiled by Les St Cair.
 
@@ -37,7 +37,7 @@ c=p2+(p3*pixel), w=0:
 IF(w), z=fn1(real(y))+fn2(imag(y)), w=0
 ELSE, z=(y*a), w=w+1, ENDIF
 z=z^b+c, y=z,
-|z| <= 100 
+|z| <= 100
 }
 
 JimsCompMand {; Jim Muth

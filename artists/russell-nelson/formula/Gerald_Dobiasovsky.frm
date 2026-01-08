@@ -1,4 +1,4 @@
-; 
+;
 ; ----------------------------------------------------------------------
 
 comment     { ; Gerald K. Dobiasovsky
@@ -314,7 +314,7 @@ TetraSpheresBas   { ; Gerald K. Dobiasovsky
 ; constants (sphere centers and unit vector directions) up to the
 
 ;------------- TetraSpheres and TetraSpheresBas ---------------
-; 
+;
 ;  tmp2 = pi/180
 ;  tmp1 = exp(flip(imag(p2)*tmp2)), tmp2 = exp(flip(real(p3)*tmp2))
 ;  dxy = flip(conj(tmp2))

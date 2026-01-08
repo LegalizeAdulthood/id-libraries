@@ -9,7 +9,7 @@ comment {
 ; ==  Distributed with FRAC'Cetera Vol 03 Iss 09  ==
 ; --------------------------------------------------
 ;
-;   Authors:   
+;   Authors:
 ;
 ;   Chuck Ebbert - CIS: 76306,1226
 ;   and Jon Horner - 100112,1700 - FRAC'Cetera.

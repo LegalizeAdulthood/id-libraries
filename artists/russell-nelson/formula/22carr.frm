@@ -3,7 +3,7 @@ Some years back, when I was a young Midshipman at the Royal Portuguese
 Naval Acadamy, a visiting professor named Christopher Columbus was my
 instructor in the "Navigational Arts". Colombo (as we called him) had
 some crazy idea that the world was round and if you sailed west you
-could get to the east. 
+could get to the east.
 
 One afternoon after a tough exam, Colombo took us to a little wine
 cellar to celebrate. After a liter of Muskatel Colombo told us how
@@ -13,7 +13,7 @@ it was to find the country of Nymph he had been told about by other
 sailors of his day. He designed these elaborate formulas to show the
 Queen (copies of which are printed below) how he planned his voyage.
 
-Later, the Queen bit on the idea and Colombo was off and sailing. 
+Later, the Queen bit on the idea and Colombo was off and sailing.
 
 From a historical point of view, the country of Nymph was interesting
 in that the women of the country were called Nymphos.

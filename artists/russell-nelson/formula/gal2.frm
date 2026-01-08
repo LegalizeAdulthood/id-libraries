@@ -126,7 +126,7 @@ zh=fn2(zh)-p2
 SpiderJulcplx_RFR {; by Jon Horner - 100112,1700 - FRAC'Cetera
                ; Complex-form of SPIDERJUL
                ; float=yes
-               ;modified by Rolf Freericks 
+               ;modified by Rolf Freericks
   z = pixel, h=c = p1:
   z = z * z + c-h
   c = c * p2 + z
@@ -141,7 +141,7 @@ SpiderJulcplx_RFR {; by Jon Horner - 100112,1700 - FRAC'Cetera
 rfr0ag2 {; by Jon Horner - 100112,1700 - FRAC'Cetera
                ; Complex-form of SPIDERJUL
                ; float=yes
-               ;modified by Rolf Freericks 
+               ;modified by Rolf Freericks
                ;the original is cited at the end
   z = pixel, c = p1
 IF (whitesq)
@@ -163,7 +163,7 @@ ENDIF
 rfr0ag4 {; by Jon Horner - 100112,1700 - FRAC'Cetera
                ; Complex-form of SPIDERJUL
                ; float=yes
-               ;modified by Rolf Freericks 
+               ;modified by Rolf Freericks
                ;the original is cited at the end
   z = pixel
 IF (whitesq)
@@ -187,7 +187,7 @@ ENDIF
 ;|z| <= 4
 }
 
-rfr0ah1 {; Rolf Freericks 
+rfr0ah1 {; Rolf Freericks
 z = pixel
 c=p1
 :
@@ -197,7 +197,7 @@ c = h*c-z*h
 |z| <= 4
 }
 
-rfr0ak1 {; Rolf Freericks 
+rfr0ak1 {; Rolf Freericks
 c = pixel
 h=z=p1
 :

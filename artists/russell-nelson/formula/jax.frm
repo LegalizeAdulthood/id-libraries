@@ -1,5 +1,5 @@
 { ;     I guess everybody who uses Fractint for any length of time tries
-their hand at creating their own formula for creating fractals.  This 
+their hand at creating their own formula for creating fractals.  This
 is my shot.
      Files included are JAX.FRM, JAX.PAR, and JAX.MAP. This is (of
 course) JAX.TXT.  JAX.PAR is intended to generate at least one
@@ -11,7 +11,7 @@ John Paul
 71260,3103
 }
 
-Ajax { ; the Final Effort; 
+Ajax { ; the Final Effort;
 z=c=2/pixel:
 z =(z^(real(p1)))*(c^(real(p2))) + c,
 |z| <=4
@@ -19,25 +19,25 @@ z =(z^(real(p1)))*(c^(real(p2))) + c,
 
 Bali { ; The difference of two squares;
 z=x=1/pixel, c= fn1 (z):
-z = (x+c) * (x-c); 
+z = (x+c) * (x-c);
 x=fn2(z),
 |z| <=3
 }
 
 Fatso {;
 z=x=1/pixel, c= fn1 (z):
-z = (x^3)-(c^3); 
+z = (x^3)-(c^3);
 x=fn2(z),
 |z| <=3
 }
 
-Jax { ; The original; 
+Jax { ; The original;
 z=c=2/pixel:
 z =(z^4)*(c^4) + c,
 |z| <=4
 }
 
-Bjax {; 
+Bjax {;
 z=c=2/pixel:
 z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c,
 }

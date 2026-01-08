@@ -1,13 +1,13 @@
-Zexpe (XAXIS) { 
+Zexpe (XAXIS) {
    z = Pixel:
    z = z ^ 2.71828182845905 + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-Zexpe_mandel (XAXIS) { 
+Zexpe_mandel (XAXIS) {
    z = Pixel:
    z = z ^ 2 + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 { Use the following for version 15.14 or later }
 MarksMandelPwr_tan (XAXIS) {

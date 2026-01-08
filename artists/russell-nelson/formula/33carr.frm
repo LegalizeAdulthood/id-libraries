@@ -31,7 +31,7 @@ z=z+c+imag(z),
 c=((1+flip(imag(sqrt(c))))*real(sqrt(c))/9+z),
 |z| <=4
 }
- 
+
 Carr1454{;Modified ManP1IMJ
 z=flip(pixel),c=(0.3,0.6):
 z=sqr(z);
@@ -405,7 +405,6 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 
 
 
- 
 
 
 
@@ -418,4 +417,5 @@ c=((1+flip(imag(sqrt(sin(c-0.1/pixel)))))*real(sqrt(tan(c)))/9+(z)),
 
 
 
- 
+
+

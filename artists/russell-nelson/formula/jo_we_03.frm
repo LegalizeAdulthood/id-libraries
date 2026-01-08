@@ -53,18 +53,18 @@ z=z-(cotanh(z+pixel))/(z*1/c),
 }
 
 
-pixey00 (XAXIS_NOPARM) {     
+pixey00 (XAXIS_NOPARM) {
    z = pixel + p1:
    z = z*z + pixel
-   z <= 4 
+   z <= 4
  }
 
-pixey02 {     
+pixey02 {
    z = pixel + p1, c = pixel:
    temp = z
    z = z*z + pixel + c
    pixel = temp
-   z <= 4 
+   z <= 4
  }
 
 pixey03 {
@@ -72,21 +72,21 @@ pixey03 {
    x = real(z + p1), y = imag(z + p2):
    x = fn1(x*x - fn2(y*y))
    y = fn3(y*y - fn4(x*x))
-   z = x*x + y*y 
+   z = x*x + y*y
    |z| <= 4
    }
 
 pixey04  {
-   z = pixel + p1 
+   z = pixel + p1
    c = pixel:
-   z = fn1(z*2.71828182845905) + fn2(c)  
+   z = fn1(z*2.71828182845905) + fn2(c)
    |z| <= 16
 }
 
 pixey05  {
-   z = pixel + p1 
+   z = pixel + p1
    c = pixel:
-   z = fn1(z^2.71828182845905) + fn2(c)  
+   z = fn1(z^2.71828182845905) + fn2(c)
    |z| <= 16
 }
 

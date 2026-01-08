@@ -1,21 +1,21 @@
 ; these formula are needed to generate some of the sample images shown
-; on Images pages 2 & 3 of the CALResCo web site http://members.aol.com/calresco 
+; on Images pages 2 & 3 of the CALResCo web site http://members.aol.com/calresco
 ; I am not the author of any of these formulae, all of which are taken from .FRM
-; files supplied with FRACTING and/or FRACTXTRA packages. This collection is 
+; files supplied with FRACTING and/or FRACTXTRA packages. This collection is
 ; assembled for the convenience of visitors to my Web site only and should not be
 ; incorporated into any collections without the original author's permission.
 
 
-3jRatz-fn {z = Pixel :  
+3jRatz-fn {z = Pixel :
 ; from FN-RATZ.FRM
-         z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) , 
+         z = (z * z * z * fn1(z) * p1 + p2 )/(z * z * fn2(z) * p1 + p2 ) ,
          | z | <= 10 }
 
 3RDIM01  {;Mandelbrot
 ; from 4DFRACT.FRM
         z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+flip(imag(pixel)*p1):
-        
+
         z=z*z+c, |z|<=64}
 
  htd {
@@ -85,7 +85,7 @@ OK-18 {
    v = fn2(z) + imag(v),
    |z| <= (5 + p1)
   }
-  
+
  pheonix(XAXIS)  {
 ; from NOEL.FRM
 ; Add conjugation and produce a great fractal even if it's spelt wrong.
@@ -95,7 +95,7 @@ OK-18 {
       zp2 = zp1
       zp1 = conj(temp), |zp1| <= 4 }
 
-PixNwt {; 
+PixNwt {;
 ; from CRAZYNWT.FRM
   z = pixel , Root = fn1(p2 * pixel):
   z = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1));

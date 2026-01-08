@@ -51,28 +51,28 @@ r =  - fn1(z) - zp
 q =  fn2(z) - zp
 zp = temp
 z = (q * a) + (r * b)
-|zp| <= 4 
+|zp| <= 4
 }
 
 Rollo_6 {
 z = pixel, zp = p1,
 a = (whitesq == 1), b = (whitesq == 0):
-temp = z 
-r = fn1(z)^5 + zp 
-q = fn2(z)^5 + zp 
+temp = z
+r = fn1(z)^5 + zp
+q = fn2(z)^5 + zp
 zp = temp
 z = (q * a) + (r * b)
-|zp| <= 4 
+|zp| <= 4
 }
 
 Rollo_7 {
 z = pixel, zp = p2,
 a = (whitesq == 1), b = (whitesq == 0):
-temp = z 
-r = fn1(z)^e + zp 
-q = fn2(z)^pi + zp 
+temp = z
+r = fn1(z)^e + zp
+q = fn2(z)^pi + zp
 zp = temp
 z = (q * a) + (r * b)
-|zp| <= 4 
+|zp| <= 4
 }
 

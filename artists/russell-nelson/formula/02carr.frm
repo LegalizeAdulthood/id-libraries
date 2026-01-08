@@ -2,11 +2,11 @@
 Some years back, in my youth, while I was working as a student for Isaac Newton (we all
 called him "Mr. Newt" or Izzy Newt), I noted there were materials Izzy would create on
 paper, look at them, then say "Nahhhh". He would then crumble up these scraps of
-paper and discard them. 
+paper and discard them.
 
 Being a very poor student, I grabbed the scraps of paper, straightened out the wrinkles
-and used the reverse sides for MY notes. Now in the Autumn of my life, I've been 
-reviewing some of my childhood writtings. I looked at the reverse side and thought, 
+and used the reverse sides for MY notes. Now in the Autumn of my life, I've been
+reviewing some of my childhood writtings. I looked at the reverse side and thought,
 "Perhaps someone could get some use from Izzies discarded writings", so here
 they are. See if you can make any sense from these that are included below.
 
@@ -184,7 +184,7 @@ z=(z-0.3)*(z-0.35)+c+0.224,
 abs(z*z/flip(pixel))<2.524
 }
 
-Carr-767{;This is a modification of a formula I saw somewhere. 
+Carr-767{;This is a modification of a formula I saw somewhere.
          ;If you know who's it is please let me know.
 c=z=1/(pixel^1.245):
 z=fn1(z^1.245)+fn2(c),

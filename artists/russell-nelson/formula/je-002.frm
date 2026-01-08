@@ -23,14 +23,14 @@ jenn046{; Arno Jennen
   z=(q^x)*(y^q):
   q=(z*p1)-(x*y)
   z=z+(q*x*y)^fn1(z)
-  |(z+z)|<=100  
+  |(z+z)|<=100
   }
 
 jenn047{; Arno Jennen
   q=exp(pixel)
   z=fn1(q^2):
   z=q^z
-  |(z)|<=100  
+  |(z)|<=100
   }
 
 jenn048{; Arno Jennen
@@ -46,5 +46,5 @@ jenn049{; Arno Jennen
   q=(sin(|sin(pixel/p1)|))*pixel
   z=fn1(q^2):
   z=q^z
-  |z|<=100  
+  |z|<=100
   }

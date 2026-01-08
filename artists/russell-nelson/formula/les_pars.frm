@@ -69,12 +69,12 @@ Bali {; The difference of two squares
   ;SOURCE: fractint.frm
 }
 
-BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13" 
+BJ-Lesfrm13-001 {; Modified Les St Clair formula "Lesfrm13"
                  ; formula modification by Brian E. Jones
   z = pixel
   x = fn1(z) , y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn4(fn3(x)/y)
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -85,7 +85,7 @@ BJ-Lesfrm13-004 {; Modified Les St Clair formula "Lesfrm13"
   z = pixel
   x = fn1(z*z) , y = fn2(z*z):
   x = fn3(x)*p1*pi
-  y = fn4(y)*p2*pi 
+  y = fn4(y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -94,10 +94,10 @@ BJ-Lesfrm13-004 {; Modified Les St Clair formula "Lesfrm13"
 
 BJ-Lesfrm13-005 {; Modified Les St Clair formula "Lesfrm13"
                  ; formula modification by Brian E. Jones
-  z = pixel 
+  z = pixel
   x = fn1(z) , y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = fn3(x/y)/fn4(z)
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -105,10 +105,10 @@ BJ-Lesfrm13-005 {; Modified Les St Clair formula "Lesfrm13"
 
 BJ-Lesfrm13-006 {; Modified Les St Clair formula "Lesfrm13"
                  ; formula modification by Brian E. Jones
-  z = pixel 
+  z = pixel
   x = fn1(z) , y = fn2(z):
   x = fn3(z*x)*p1*pi
-  y = fn4(z*y)*p2*pi 
+  y = fn4(z*y)*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: modles13.frm
@@ -172,7 +172,7 @@ F'Liar1D {; Generalization by Jon Horner of Chuck Ebbert formula.
           ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
   z = fn1(pixel):
   z = p1 - abs(imag(z)-real(z) ) + flip(p2 - abs(1-real(z)-imag(z) ) )
-  |z| <1 
+  |z| <1
   ;SOURCE: liar.frm
 }
 
@@ -223,10 +223,10 @@ Gallet-3-04 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-3.frm
 }
 
-Gallet-3-05 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-05 {; Sylvie Gallet [101324,3444], 1996
   z = pixel , c = p1 , bailout = real(p3) :
   test = (flip(c*z) >= 0)
-  a = (z-p2)*test , b = (z+flip(p2))*(1-test) , z = (a+b)*c 
+  a = (z-p2)*test , b = (z+flip(p2))*(1-test) , z = (a+b)*c
   (sqr(real(z)) < bailout) || (sqr(imag(z)) < bailout)
   ;SOURCE: gallet-3.frm
 }
@@ -248,14 +248,14 @@ Gallet-3-07 (YAXIS) {; Sylvie Gallet [101324,3444], 1996
                      ; Newton's method applied to
                      ; x -> sin(y)^2+cos(x)^3 = 0
                      ; y -> cos(x)^2+sin(y)^3 = 0
-  z = 0.05/pixel , x=real(z) , y=imag(z) 
-  cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+  z = 0.05/pixel , x=real(z) , y=imag(z)
+  cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
   cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy :
   d = 6*(cx*sy-4)     ; normal value -->  d = 9*(cx*sy-4)
   x = x+(sy3+3*sy*cx3-2*cx2)/(cx*sx*d)
   y = y-(cx3+3*cx*sy3-2*sy2)/(sy*cy*d)
   z = x + flip(y)
-  cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y) 
+  cx=cos(x) , sx=sin(x) , cy=cos(y) , sy=sin(y)
   cx2=cx*cx , cx3=cx2*cx , sy2=sy*sy , sy3=sy2*sy
   |sy2+cx3+flip(cx2+sy3)| > 0.00001
   ;SOURCE: gallet-3.frm
@@ -291,14 +291,14 @@ Gallet-3-09 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-3.frm
 }
 
-Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-11 {; Sylvie Gallet [101324,3444], 1996
   z = pixel^p1/p2 + p2^pixel/(p1*pixel) , p = p2/p1 :
   z = z*p
   z <= p1
   ;SOURCE: gallet-3.frm
 }
 
-Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   z = pixel/(pixel*pixel+1) :
   x = real(z) , y = imag(z)
   x1 = x - p1*fn1(y+p2*fn2(y))
@@ -308,17 +308,17 @@ Gallet-3-13 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-3.frm
 }
 
-Gallet-3-14 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-14 {; Sylvie Gallet [101324,3444], 1996
   z = Pixel:
   z = fn1(z)+flip(fn2(z))
-  (|real(z)| <= 4) || (|imag(z)| <= 4) 
+  (|real(z)| <= 4) || (|imag(z)| <= 4)
   ;SOURCE: gallet-3.frm
 }
 
-Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996 
+Gallet-3-15 {; Sylvie Gallet [101324,3444], 1996
   z = Pixel*(0.0,1.0) :
   n = sin(z)-z-pixel , z = z-n/(cos(z)-pixel)
-  |n| > real(p1) 
+  |n| > real(p1)
   ;SOURCE: gallet-3.frm
 }
 
@@ -659,70 +659,70 @@ Lesfrm01 (xaxis) {; Les St Clair, 1995
   ;SOURCE: les.frm
 }
 
-Lesfrm02 (xaxis) {; Les St Clair, 1995 
+Lesfrm02 (xaxis) {; Les St Clair, 1995
   c=z=pixel:
   z=z+(fn1(z)/fn2(c))/c^3,
   |z| <=4
   ;SOURCE: les.frm
 }
 
-Lesfrm03 (xaxis) {; Les St Clair, 1995 
+Lesfrm03 (xaxis) {; Les St Clair, 1995
   z=pixel:
   z=z+(fn1(z)/fn2(z))/z^4,
   |z| <=4
   ;SOURCE: les.frm
 }
 
-Lesfrm04 (xaxis) {; Les St Clair, 1995 
+Lesfrm04 (xaxis) {; Les St Clair, 1995
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4,
   |z| <=6
   ;SOURCE: les.frm
 }
 
-Lesfrm05 (xaxis) {; Les St Clair, 1996 
+Lesfrm05 (xaxis) {; Les St Clair, 1996
   c=z=pixel:
   z=z+p1/fn1(z^2)/c^3,
   |z| <=6
   ;SOURCE: les.frm
 }
 
-Lesfrm06 {; Les St Clair, 1996 
+Lesfrm06 {; Les St Clair, 1996
   c=z=pixel:
   z=z+p1*fn1(z/0.213)/c,
   |z| <=3
   ;SOURCE: les.frm
 }
 
-Lesfrm07 {; Les St Clair, 1996 
+Lesfrm07 {; Les St Clair, 1996
   c=z=pixel:
   z=z+p1*fn1(z/0.416)/c^2,
   |z| <=3
   ;SOURCE: les.frm
 }
 
-Lesfrm08 {; Les St Clair, 1996 
+Lesfrm08 {; Les St Clair, 1996
   c=z=pixel:
   z=z+p1*fn1(z/3.142)/c^3.142,
   |z| <=3.142
   ;SOURCE: les.frm
 }
 
-Lesfrm09 {; Les St Clair, 1996 
+Lesfrm09 {; Les St Clair, 1996
   c=z=tan(pixel):
   z=z+p1*fn1(z)-(fn1)*c,
   |z| <=10
   ;SOURCE: les.frm
 }
 
-Lesfrm10 {; Les St Clair, 1996 
+Lesfrm10 {; Les St Clair, 1996
   c=z=pixel:
   z=z+(fn1(fn2(Z)))+C/P1,
   |z|<4
   ;SOURCE: les.frm
 }
 
-Lesfrm11 {; Les St Clair, 1996 
+Lesfrm11 {; Les St Clair, 1996
   c=z=pixel:
   z=z+(((fn1(z)-P1)*fn2(z))/fn3(c)),
   |z|<4
@@ -738,10 +738,10 @@ Lesfrm12 {; Les St Clair, 1996
 }
 
 Lesfrm13 {; Les St Clair, 1996
-  z = pixel 
+  z = pixel
   x = fn1(z) , y = fn2(z):
   x = x*p1*pi
-  y = y*p2*pi 
+  y = y*p2*pi
   z = x/y
   |z| <= 4
   ;SOURCE: les.frm
@@ -758,7 +758,7 @@ Lesfrm14 (xaxis) {; Les St Clair, 1996
 
 Lesfrm15 {; Les St Clair, 1996
   z = c = pixel:
-  c = p1*c 
+  c = p1*c
   z = fn1(c)^pi+fn2(z)+p2*c
   |z| <= 4
   ;SOURCE: les.frm
@@ -913,7 +913,7 @@ MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
 
 OK-36 {; DISSECTED MANDELBROT
    ; TO GENERATE "STANDARD" MANDELBROT, SET P1 = 0,0 & ALL FN = IDENT
-   ; Bradley Beacham 
+   ; Bradley Beacham
   z = pixel, cx = fn1(real(z)), cy = fn2(imag(z)), k = 2 + p1:
   zx = real(z), zy = imag(z)
   x = fn3(zx*zx - zy*zy) + cx
@@ -972,7 +972,7 @@ TSinh (XAXIS) {; Tetrated Hyperbolic Sine - Improper Bailout
 u4 { ; Formula by Alex Dukay
   z=pixel,t=fn1(z^(2.2)),u=sin(z*z/(z+.2)),n=flip(z-real(log(z))):
   z=(fn2(z*z/(z+.2))/asin(z-flip(log(z))))^fn3(t+u+n)
-  |z|<=4                         
+  |z|<=4
   ;SOURCE: new.frm
 }
 
@@ -995,10 +995,10 @@ Zeppo {; Mutation of 'Liar4'.
   ;SOURCE: fractint.frm
 }
 
-Zurreal {; Vincent Damion Presogna 
+Zurreal {; Vincent Damion Presogna
   z = pixel:
   z = fn1(z) + pixel
-  z = fn2(1/sqr(z))/z + p1 
+  z = fn2(1/sqr(z))/z + p1
   |z| <= 4
   ;SOURCE: surreal.frm
 }

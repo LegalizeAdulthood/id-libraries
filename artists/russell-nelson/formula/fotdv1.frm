@@ -1,5 +1,5 @@
 ; FOTDv1.frm
-; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.97 - 11.Apr.98 
+; Compilation of Fractint formulas required for Jim Muth's FOTD series 12.Apr.97 - 11.Apr.98
 ; This is a companion file to FOTD_v1.par
 ; Compiled by Les St Cair.
 
@@ -224,7 +224,7 @@ z=y=c=pixel, w=0:
 if(w), z=fn1(real(y))+flip(imag(y)), w=0
 else, z=(y*p1), w=w+1, endif
 z=z^p2+(p3*c), y=z,
-|z| <= 100 
+|z| <= 100
 }
 
 IfElse03 {; Jim Muth
@@ -236,7 +236,7 @@ ELSE
  z=(y*a), w=w+1
 ENDIF
   z=z^b+c, y=z,
-   |z| <= 100 
+   |z| <= 100
 }
 
 JimsComMand2J {; Jim Muth
@@ -675,7 +675,7 @@ a=real(p1)*.01745329251994, b=imag(p1)*.01745329251994,
 z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2,
 c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
 z=z^1.5+c,
-|z| <= 36  
+|z| <= 36
 }
 
 multi20031 {; Jim Muth, best=ifif, fiif, fifi, iffi
@@ -683,13 +683,13 @@ a=real(p1)*.01745329251994, b=imag(p1)*.01745329251994,
 z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2,
 c=cos(b)*fn3(real(pixel))+cos(a)*fn4(imag(pixel))+p3:
 z=z^2.003+c,
-|z| <= 100  
+|z| <= 100
 }
 
 multi20031a {; formula   draws many rotations
 ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
 ;when fn1-2=f,i, then p1 0,0=M, 0,90=R, 90,0=P, 90,90=J
-;note: formula appended with "a" to differentiate from 
+;note: formula appended with "a" to differentiate from
 ;formula of same name previously posted (see above)
 a=((real(p1))+(.000000000000000000001))*.01745329251994,
 b=((imag(p1))+(.000000000000000000001))*.01745329251994,
@@ -704,7 +704,7 @@ e=exp(flip(real(p1*.01745329251994))),
 f=exp(flip(imag(p1*.01745329251994))),
 z=f*real(pixel)+p2, c=e*imag(pixel)+p3:
 z=z^2.003+c,
-|z| <= 100  
+|z| <= 100
 }
 
 multigator2 {; Jim Muth
@@ -915,7 +915,7 @@ z=z^b+c,
 neon {; Jim Muth
 z=c=pixel:
 z=z^1.045+(.02*z^-2)+c,
-|z| <= 100 
+|z| <= 100
 }
 
 NewtTest03 {; Jim Muth, June 1997
@@ -1053,7 +1053,7 @@ z=(-z)^p2+c,
 }
 
 ParabolicMiNa {; Jim Muth
-;note: formula appended with "a" to differentiate from 
+;note: formula appended with "a" to differentiate from
 ;formula of same name previously posted (see above)
 b=p1, z=imag(pixel)+p2,
 c=real(pixel)+p3:

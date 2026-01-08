@@ -12,7 +12,7 @@ z = fn1(sqr(z))
 Anacron_2 (XAXIS) {
 z = pixel :
 z = (z/2*z) + fn1(z) + pixel
-z = fn1(z) - sqrt(z) 
+z = fn1(z) - sqrt(z)
 |z| < 4
 }
 
@@ -33,8 +33,8 @@ z = fn2(z) + pixel - (z*0.5)
 Betacron_3 {
 z = pixel:
 z = sqr(z) + ((z*z)*0.75) + pixel
-z = (1 / z + sqrt(z)) - pixel 
-z = fn1(z) 
+z = (1 / z + sqrt(z)) - pixel
+z = fn1(z)
 |z| < 4
 }
 
@@ -57,16 +57,16 @@ Newron_2 {
 z = pixel:
 z = z + p1
 z = ((z*z)+1)/2*z
-z = ((z*z) - 1) / fn1(z)-z 
+z = ((z*z) - 1) / fn1(z)-z
 |z| < 4
 }
 
-Warning!z { 
+Warning!z {
         ;You must try the RECIP function
         ; Modified for id-libraries by Legalize Adulthood
         ;   assume 1/2z = 1/2*z
 z = pixel:
-z = fn1(z) + pixel + p1 
+z = fn1(z) + pixel + p1
 z = (1/sqrt(z)*(exp(-1/2*z)))
 z = z * imag(z)
 |z| < 4
@@ -102,7 +102,7 @@ Omicron_2 {
 z = pixel :
 z = (1/sqr(z)) * (z - sqrt(z))
 z = z * fn1(z) + pixel
-z = (z*z*z) * pixel + p1 
+z = (z*z*z) * pixel + p1
 |z| < 16
 }
 
@@ -137,7 +137,7 @@ z = z + z + pixel
 Omicron_7 {
 z = pixel:
 z = exp(z) * (z*acosh(z)) * (sqrt(z*z) + p1)
-z = z + pixel 
+z = z + pixel
 |z| < 4
 }
 

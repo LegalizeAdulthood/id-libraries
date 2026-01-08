@@ -190,7 +190,7 @@ BarnsJ1 { ; try parameters (1.1,.6)
   |z| <=4
   }
 
-Carr-746{ 
+Carr-746{
   z=c=1/pixel:
   z=z*z+c
   real(z)<2.124
@@ -420,8 +420,8 @@ newton_reel_1 (ORIGIN) { ;	Sylvie Gallet
    x2=x*x , y2=y*y , x3=x2*x , y3=y2*y  ; x -> x^3-y
    d=1+9*x2*y2                          ; y -> y^3+x
    x = (6*x3*y2 + 2*y3) / d             ; solution (0,0)
-   y = (6*x2*y3 - 2*x3) / d   
-   z = x+flip(y) 
+   y = (6*x2*y3 - 2*x3) / d
+   z = x+flip(y)
    |z|>=.01
    }
 
@@ -436,7 +436,7 @@ Newton_z3_sinz2 { ; copyright Sylvie Gallet
                   ; z -> z^3+sin(z^2)
                   ; solution z = 0
    z = pixel :
-   z2 = z*z   
+   z2 = z*z
    z = z - (z*z2+sin(z2))/(3*z2+2*z*cos(z2))
    |z| >= p1
    }
@@ -513,15 +513,15 @@ z=sin(z*z)*(z+pixel) + sin(c);
 |z| <=4
  }
 
-1-alt{ 
+1-alt{
 z=c=1/pixel, sinc=sin(c):
 z=sqr(z*z) + c;
 z=sin(z*z)*(z+pixel) + sinc;
 |z| <=4
  }
 
-man-newt-man   { ; Sylvie Gallet [101324,3444], 1995 +R.B. 
-                 ;tiny mod on original Mandel-Newton by Sylvie 
+man-newt-man   { ; Sylvie Gallet [101324,3444], 1995 +R.B.
+                 ;tiny mod on original Mandel-Newton by Sylvie
                  ;tweaked brainlessly by Robin Bussell
                  ;to give a hybrid mandel-newton fractal
    z = pixel , c = z , iter = 1 ,test1 = 1
@@ -536,9 +536,9 @@ man-newt-man   { ; Sylvie Gallet [101324,3444], 1995 +R.B.
    iter = iter+1
    ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1)) }
 
-man-newt-man2   { ; Sylvie Gallet [101324,3444], 1995 +R.B. 
-                  ;tiny mod on original Mandel-Newton by Sylvie 
-                  ;tweaked brainlessly by Robin Bussell 
+man-newt-man2   { ; Sylvie Gallet [101324,3444], 1995 +R.B.
+                  ;tiny mod on original Mandel-Newton by Sylvie
+                  ;tweaked brainlessly by Robin Bussell
                   ;to give a hybrid mandel-newton fractal
    z = pixel , c = z , iter = 1 ,test1 = 1
    ;  rad = 3.1 , center = (1.0,0.1)
@@ -1059,7 +1059,7 @@ BJ-SG-MaNewt-014 {    ;Modified Sylvie Gallet [101324,3444], 1995
    test1 = (iter<limit) , test2=(iter!=limit)
    z = (z-zn)*test2 + zn
    z2 = z*z , z4 = z2*z2 , z1 = (z4*z-1)/(4*z4)
-   z = (z2+c)*test1 + (z-z1)*(1-test1) 
+   z = (z2+c)*test1 + (z-z1)*(1-test1)
    iter = iter+1
    ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
@@ -1110,7 +1110,7 @@ d1=(0.00075756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -1136,7 +1136,7 @@ d1=(0.00075756/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(1-test), 
+z=z*(1-test),
 c=c*(1-test)+flip(d1)+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -1146,8 +1146,8 @@ iter=iter+1
 atan_test {
      z=c=pixel, d=1, test=goal=iter=y=0:
      test = (|z| > 4) || (d==0)
-     y = test * d * atan(z) * 180 / pi 
-     goal = goal + abs(y)  
+     y = test * d * atan(z) * 180 / pi
+     goal = goal + abs(y)
      d = 1 - test
      z = z * d
      c = c * d
@@ -1226,20 +1226,20 @@ Lesfrm19 { ; Les St Clair, 1996
  |z| <4
  }
 
-BJ-Lesfrm13-001 { ;Modified Les St Clair formula "Lesfrm13" 
- z = pixel 
+BJ-Lesfrm13-001 { ;Modified Les St Clair formula "Lesfrm13"
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = fn4(fn3(x)/y)
  |z| <= 4
 }
 
-BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13" 
- z = pixel 
+BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13"
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = fn4(x/fn3(y))
  |z| <= 4
 }
@@ -1310,9 +1310,9 @@ saddle        { ; Sylvie Gallet [101324,3444], 1996
 JDfrm010 { ; Jim Deutch. Overlay mandel + reversed mandel
   countreset = (count < 320) ;interlace checkerboard 320x200
   count = count + 1          ;but does good at 1024x768 too
-  count = count * countreset 
+  count = count * countreset
   evenodd = (evenodd < 1) * (count != 1)
-  oddeven = (evenodd < 1)               
+  oddeven = (evenodd < 1)
   pixel = evenodd * pixel + oddeven * -pixel
   z = 0
   c = pixel:
@@ -1500,7 +1500,7 @@ Lesfrm02g_PHC { ; Les St Clair, 1996
     ; some functions requires Fractint 19.4 or later
     ; use fn3 to select round, floor, ceil, trunc
     ; use p2 to select degree of influence for above functions
-    ; Amalgamated with manjul_lace formula by George Martin to enable PHC  
+    ; Amalgamated with manjul_lace formula by George Martin to enable PHC
     ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
   evenodd = (evenodd == (count == 1))
@@ -1554,7 +1554,7 @@ trunc(z)==z
 }
 
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-          ; requires 'periodicity=0' 
+          ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2 , x=real(z) , y=imag(z) , x1=x*1.8 , x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -1568,8 +1568,8 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
    z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
     (|n|>=0.0001) && test
@@ -1651,7 +1651,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-CN_02_phc_r(XAXIS){; Jo Weber, 8/1996 
+CN_02_phc_r(XAXIS){; Jo Weber, 8/1996
   ; p2 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p2-1))
   evenodd = (evenodd == (count == 1))
@@ -1778,10 +1778,10 @@ Carr2709(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
   z0 = p1 , h = real(p2) , w = imag(p2) , b = real(p3)
   x0 = real(z0) , y0 = imag(z0) , w2 = w/2
   z1 = z0 + flip(b) , r1 = w2 - b , zc = z0 + w2 + flip(h-w2)
-  z1c = z1 - zc 
+  z1c = z1 - zc
   theta = acos (r1/cabs(z1c)) + atan (imag(z1c) / real(z1c))
   xc = real(zc) , yc = imag(zc) , tanth = tan(theta)
-  z = pixel , x = real(z) , y = imag(z) 
+  z = pixel , x = real(z) , y = imag(z)
   exp1 = (x0-x)/tanth + y0 + b , exp2 = (x-xc)*tanth + yc
   chr21 = ( abs(cabs(z-zc)-(w-b)/2) < b/2 ) &&  \
           ( y > y0+h-w2 || y > exp2 ) \
@@ -1818,8 +1818,8 @@ FRACTEST { ; TEST formula by Les St Clair 1996
           ; Created using "FracText" by Jan Maarten van der Valk
           ; Two formulas "FRAC" and "TEXT" have been amalgamated
           ; There is an error in the way the program handles the letter "C"
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, 
-xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x,
+xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chrf1 = (y<1.25000&&y>1.15000)||(y>1.60000)
@@ -1838,14 +1838,14 @@ chre2 = ((x<-0.50000)||chre2)&&((x>-0.60000)&&(x<-0.10000))
 chrx3 = (y<xx+-0.60000&&y>xx+-0.82361)||(y>-xx+0.20000&&y<-xx+0.42361)
 chrt4 = y>0.20000&&x>0.61180&&x<1.21180
 chrt4 = chrt4||(x>0.86180&&x<0.96180)
-test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000)) 
+test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000))
 test2 = 1 - fn2(real(chrt1||chre2||chrx3||chrt4)*real(y>-0.70000)*real(y<0.30000))
 z = 1+(0,-.65)/fn3(pixel+(0.0,.75)) :
 z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
 (|n|>=.0001) && test && test2
 }
 
-IJR_TEST1 { 
+IJR_TEST1 {
     ; Floating Point Required
     z=c=pixel:
     z=z^2+(z^-2)+c
@@ -1893,7 +1893,7 @@ Block_4 {
   round(z) < 4
   }
 
-Don't_do_that! { 
+Don't_do_that! {
  pixel = e^pixel
  z = fn1(pixel)
   |z| <= 16
@@ -1927,7 +1927,7 @@ mandel+F {; requires 'periodicity=0'
 
 IJR_TEST1A {
     ; Mathmatical equivalent of IJR_TEST1, but without dependence on
-    ; use of fractint parser's precedence bug 	
+    ; use of fractint parser's precedence bug
     ; (BTW, I don't think floating point is required for this formula)
     z=c=pixel:
     y= z^2
@@ -1946,8 +1946,8 @@ F_TEXT_A2Z { ; *TEST* formula by Les St Clair 1996
           ; Created using "FracText" by Jan Maarten van der Valk
           ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
           ; There is an error in the way the program handles the letter "C"
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, 
-xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x,
+xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)
@@ -2162,8 +2162,8 @@ FractalText { ; assembled by Jan Maarten van der Valk [100256,3721]
 01 { ;
           ; requires 'periodicity=0'
   z=pixel, x=real(z), y=imag(z)
-  chr01 = abs(cabs(z+(-0.0825,-0.2175))-0.0675)<0.015&&y>0.2175|| \ 
-  (abs(cabs(z+(-0.0825,-0.0825))-0.0675)<0.015&&y<0.0825)|| \ 
+  chr01 = abs(cabs(z+(-0.0825,-0.2175))-0.0675)<0.015&&y>0.2175|| \
+  (abs(cabs(z+(-0.0825,-0.0825))-0.0675)<0.015&&y<0.0825)|| \
   (((x>0&&x<0.03)||(x>0.135&&x<0.165))&&y>0.0825&&y<0.2175)
   x1=1.5*x
   chr13 = y<x1+0.17167&&y>x1+0.11758&&y>-x/1.5+0.88667||(x>0.09161&&x<0.12161)
@@ -2177,7 +2177,7 @@ FractalText { ; assembled by Jan Maarten van der Valk [100256,3721]
     ; requires 'periodicity=0'
   z=pixel, x=real(z), y=imag(z)
   x4=1.8*x
-  chr41 = y<x4+0.33333&&y>x4+0.27156&&y>0.33333|| \ 
+  chr41 = y<x4+0.33333&&y>x4+0.27156&&y>0.33333|| \
   (x>-0.0142&&x<0.0158)||(y>0.30333&&y<0.33333&&x>0&&x<0.0458)
   test = chr41&&y>0&&y<0.3
   z=c=pixel:
@@ -2235,8 +2235,8 @@ iter=iter+1
   chr11 = y<x1-0.66333&&y>x1-0.69939&&y>-x/1.5+0.42||(x>0.52626&&x<0.54626)
   chr11 = y<x1-0.66333&&y>x1-0.69939&&y>-x/1.5+0.42||(x>0.52626&&x<0.54626)
   x2=2.5*x
-  chr23 = abs(cabs(z+(-0.59626,-0.09))-0.02)<0.01&&(y>0.09||y>-x/1.15693 \ 
-  +0.60538)||(y<1.15693*x-0.61512&&y>1.15693*x-0.64571&&y<-x/1.15693+ \ 
+  chr23 = abs(cabs(z+(-0.59626,-0.09))-0.02)<0.01&&(y>0.09||y>-x/1.15693 \
+  +0.60538)||(y<1.15693*x-0.61512&&y>1.15693*x-0.64571&&y<-x/1.15693+ \
   0.60538)||y<0.04&&x>0.56626&&x<0.62626
   test = chr11||chr,2||chr23&&y>0.02&&y<0.12
   z = c = pixel:
@@ -2357,9 +2357,9 @@ BJ-SG-3-03-gb { ;Brian E. Jones [102702,2213]
                           ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
- x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = x1+flip(y1)  
+ x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = x1+flip(y1)
  |z| <= 4
 }
 
@@ -2440,8 +2440,8 @@ Tims_Random_Formula {
    |z| < 10
 }
 
-Frantic_2 { 
-  z = c = pixel + p1: 
+Frantic_2 {
+  z = c = pixel + p1:
   r = z * (1/fn1(z)) + p2
   z = fn2(r) * z + c
   round(|Z|) <= 4
@@ -2451,7 +2451,7 @@ BILL_err7 (yaxis) {; Bill Rossi
   z=Pixel:
     tmp1=fn1(z)^fn2(z),
     tmp2=fn3(z)^fn4(z),
-    z=(tmp1/tmp2), 
+    z=(tmp1/tmp2),
     |z| <= 4
 }
 
@@ -2494,14 +2494,14 @@ Newton_real { ; Sylvie Gallet [101324,3444], 1996
   }
 
 Moo_PHC {; by Vincent Damion Presogna, Oct. 18, 1996
-  z = pixel 
-  halfe = e*(-0.5) 
+  z = pixel
+  halfe = e*(-0.5)
   quartere = e*(-.25):
   z = z + p1
   y = tan(1/z)
   r = y + pixel
   q = y * pixel
-  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1) 
+  z = fn2(z)*r^halfe*(whitesq == 0) + fn1(z)*q^quartere*(whitesq == 1)
   |z| <= 4
 }
 
@@ -2639,24 +2639,24 @@ Lesfrm12 { ; Les St Clair, 1996
 }
 
 Lesfrm13 { ; Les St Clair, 1996
-   z = pixel 
+   z = pixel
    x = fn1(z) , y = fn2(z):
    x = x*p1*pi
-   y = y*p2*pi 
+   y = y*p2*pi
    z = x/y
    |z| <= 4
 }
 
 BJ-Lesfrm13-002 { ; Modified Les St Clair formula, 1996
                   ; modified by Brian E. Jones
-   z = pixel 
+   z = pixel
    x = fn1(z) , y = fn2(z):
    x = x*p1*pi
-   y = y*p2*pi 
+   y = y*p2*pi
    z = fn4(x/fn3(y))
    |z| <= 4
 }
- 
+
 jowe_29m { ; by Jo Weber, 100424,35 10/96
            ; bailout is p3
              z=pixel
@@ -2665,7 +2665,7 @@ jowe_29m { ; by Jo Weber, 100424,35 10/96
              z=fn3(z)
              |z|<=bailout
 }
- 
+
 jowe_43 { ; by Jo Weber, 100424,35 10/96
           ; bailout is p3
             z=c=pixel
@@ -2675,12 +2675,12 @@ jowe_43 { ; by Jo Weber, 100424,35 10/96
             z=p2*fn1(z)
             |z|<=bailout
 }
- 
-Lesfrm04 (xaxis) { 
+
+Lesfrm04 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4,|z| <=6
 }
- 
+
 Carr2872 {;Modified Sylvie Gallet frm. [101324,3444],1996
           ;passes=1 needs to be used with this PHC formula.
   b5=flip(pixel)*conj(pixel)*(pixel)-flip(0.1/pixel-conj(0.01/pixel))
@@ -2697,7 +2697,7 @@ Carr2872 {;Modified Sylvie Gallet frm. [101324,3444],1996
   iter=iter+1
   |z|<=bailout
 }
- 
+
 jowe_29m { ; by Jo Weber, 100424,35 10/96
            ; bailout is p3
              z=pixel
@@ -2706,7 +2706,7 @@ jowe_29m { ; by Jo Weber, 100424,35 10/96
              z=fn3(z)
              |z|<=bailout
 }
- 
+
 jowe_43 { ; by Jo Weber, 100424,35 10/96
           ; bailout is p3
             z=c=pixel
@@ -2717,13 +2717,13 @@ jowe_43 { ; by Jo Weber, 100424,35 10/96
             |z|<=bailout
 }
 
-Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna 
-z = c = pixel: 
+Barnsley_PHC { ;;formula adapted by Vincent Damion Presogna
+z = c = pixel:
 t1 = ((z-1) * p1) * (real(z) >= 0)   ;; t1 & t2 => Barnsleyj1
 t2 = ((z+1) * p1) * (real(z) <  0)
 t3 = ((z-1) * c + p2) * (real(z) >= 0) ;; t3 & t4 => Barnsleym1
 t4 = ((z+1) * c + p2) * (real(z) < 0)
-z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0)) 
+z = ((t1 + t2) * (whitesq == 1)) + ((t3 + t4) * (whitesq == 0))
 |z| < 4
 }
 
@@ -2788,7 +2788,7 @@ DaSum_PHC {
   z1 = (z1 - 1) * (z1 + 0.5) * (z1*z1+1)
   z1 = (z1 * 0.3) - ((z1)/fn1(z1))
   z2 = z2 + p2, r = fn2(z2) * z2^2 , q = z2^e
-  z2 = (z2 - imag(1/r) / z2 - real(1/q)) 
+  z2 = (z2 - imag(1/r) / z2 - real(1/q))
   z = (z1 * (whitesq == 1)) + (z2 * (whitesq == 0))
   |z| <= 4
 }
@@ -2873,12 +2873,12 @@ BJ-SG-5-07-a { ; Modified Gallet 5-07
   z = pixel , x = z*(0,1) , y = (whitesq == 0) + (z*(0,-1)) * whitesq:
    hx = p1 * fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
-   z = x + flip(y) 
+   z = x + flip(y)
     (|hx|+|hy|) <= p2
   }
 
 BJ-SG-5-07-c { ; Modified Gallet 5-07
-	       ; Sylvie Gallet [101324,3444], 1996 
+	       ; Sylvie Gallet [101324,3444], 1996
   z = pixel , x = fn3(z*(0,1)) , y = fn4(z*(0,-1)) :
    hx = p1*fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
@@ -2905,9 +2905,9 @@ imag(flip(z))<=bailout
 
 
 Carr2771(XAXIS)  { ; Modified Sylvie Gallet frm. [101324,3444],1996
-                   ;passes=1 needs to be used with this PHC formula. 
-  pixel=real(pixel)-flip(abs(imag(pixel))), 
-  b4=cotan(|1-pixel|)^1.5*pixel^8-(0.5/log(conj(conj(0.10/pixel+1.0))))^30, 
+                   ;passes=1 needs to be used with this PHC formula.
+  pixel=real(pixel)-flip(abs(imag(pixel))),
+  b4=cotan(|1-pixel|)^1.5*pixel^8-(0.5/log(conj(conj(0.10/pixel+1.0))))^30,
   b5=(pixel^2.63)/log(1.667-pixel)^2.87-(1/log(conj(0.07/pixel+1.25)))^7.5,
   c=whitesq*b4-(whitesq==0)*b4
   z=whitesq*b5-(whitesq==0)*b5
@@ -2932,36 +2932,36 @@ Carr2771(XAXIS)  { ; Modified Sylvie Gallet frm. [101324,3444],1996
 
 
 Carr2808{;Modified Sylvie Gallet frm. [101324,3444],1996
-  ;passes=1 needs to be used with this PHC formula. 
-  b4=conj(conj(|pixel^5|))-conj(conj(sqrt(pixel)+log(pixel)))/15-conj(0.1/pixel), 
+  ;passes=1 needs to be used with this PHC formula.
+  b4=conj(conj(|pixel^5|))-conj(conj(sqrt(pixel)+log(pixel)))/15-conj(0.1/pixel),
   b5=conj(conj(pixel^5))-conj(conj(sqrt(pixel)+log(pixel)))/15-conj(0.1/pixel),
-  c=whitesq*(b4)-(whitesq==0)*b4 
+  c=whitesq*(b4)-(whitesq==0)*b4
   z=whitesq*(b5)-(whitesq==0)*b5
-  c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z, 
+  c1=1.5*z,c2=2.25*z,c3=3.375*z,c4=5.0625*z,
   l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-  bailout=16,iter=0,pp2=pixel/imag(p2): 
+  bailout=16,iter=0,pp2=pixel/imag(p2):
   t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-  t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+pp2; 
+  t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4+pp2;
   z=z*z+c-0.087,
   iter=iter+1
   |z|<=bailout }
 
-Carr2821{;Modified Sylvie Gallet frm. [101324,3444],1996 
-  ;passes=1 needs to be used with this PHC formula. 
+Carr2821{;Modified Sylvie Gallet frm. [101324,3444],1996
+  ;passes=1 needs to be used with this PHC formula.
   b5=pixel-conj(0.1/pixel)
   b4=pixel-flip(0.1/pixel)-conj(0.001/pixel),
   c=whitesq*b4-(whitesq==0)*b4
   z=whitesq*b5-(whitesq==0)*b5
-  c1=1.5*z^1.2,c2=2.25*conj(z),c3=3.375*flip(z),c4=5.0625*flip(z), 
+  c1=1.5*z^1.2,c2=2.25*conj(z),c3=3.375*flip(z),c4=5.0625*flip(z),
   l1=real(p1),l2=imag(p1),l3=real(p2),l4=imag(p2),
-  bailout=16,iter=0: 
+  bailout=16,iter=0:
   t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),
-  t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4, 
+  t=1-(t1||t2||t3||t4),z=z*t,c=c*t+c1*t1+c2*t2+c3*t3+c4*t4,
   z=(|z|/5)+z*z+c-0.09/pixel
   iter=iter+1
   |z|<=bailout }
 
-Ormandel17 { ; Copr. 1995 by Jack A. Orman 
+Ormandel17 { ; Copr. 1995 by Jack A. Orman
   z=c=pixel:
   temp=z
   neg= (fn1(z^3+z^2+z))^p1
@@ -2972,7 +2972,7 @@ Ormandel17 { ; Copr. 1995 by Jack A. Orman
   ;SOURCE: jack5.frm
   }
 
-Ormandel17m  { ; Copr. 1995 by Jack A. Orman 
+Ormandel17m  { ; Copr. 1995 by Jack A. Orman
   zp = pixel^(1/6)
   z=c=pixel :
   temp=z
@@ -2984,7 +2984,7 @@ Ormandel17m  { ; Copr. 1995 by Jack A. Orman
   }
 
 Ormandel17_m { ; Copr. 1995 by Jack A. Orman
-               ; assignment "zp=" moved higer up formula                                      
+               ; assignment "zp=" moved higer up formula
   z=c=pixel:
   temp=z
   zp=sqrt(temp)
@@ -3119,11 +3119,11 @@ merryxms_01 { ; Les St Clair [101461.2032@compuserve.com] December 1996
   z =c*pixel:
   z=z*z+p1
   |z|<4&&test0==0
-  }	
+  }
 
 LesPHCfrm04 { ; Les St Clair [101461,2032], 1996  Requires passes=1
               ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-              ; Earl Glynn 
+              ; Earl Glynn
         z = pixel:
         x = 1 - abs(imag(z)-real(z))
         z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -3147,7 +3147,7 @@ Gallet-4-06 { ; Sylvie Gallet [101324,3444], 1996
 
 LesPHCfrm04 { ; Les St Clair [101461,2032], 1996  Requires passes=1
               ; Based on Liar1 & Glynn formulas by Chuck Ebbert and
-              ; Earl Glynn 
+              ; Earl Glynn
         z = pixel:
         x = 1 - abs(imag(z)-real(z))
         z = (1 - abs(imag(z)-real(z)) + flip(1 - abs(1-real(z)-imag(z))))\
@@ -3454,7 +3454,7 @@ NEWTMESH{; Ray Girvan, April 1996
    ; p2 = "zoom factor" for central motif
    k=p1;
    z=p2*(tan(sin(real(pixel)))+flip(tan(sin(imag(pixel))))):
-   z1=z^k-1; or any function z1 = f(z)    
+   z1=z^k-1; or any function z1 = f(z)
    z2=k*z^(k-1); its differential z2 = f'(z)
    z=z-(z1/z2),
    |z1| > 0.01

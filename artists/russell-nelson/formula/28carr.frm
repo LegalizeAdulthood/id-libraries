@@ -182,14 +182,14 @@ Carr1219{
 z=1/(pixel*pixel),c=imag(cosxx(1/pixel)):
 z=z-(pixel-z*z)/(pixel-c*c),
 c=(1+flip(imag(c)))*real(c)/2+z,
-|real(z)| <=100 
+|real(z)| <=100
 }
 
 Carr1220{
 z=1/(pixel*pixel*pixel),
 c=pixel-sqr(imag(cosxx(1/pixel))):
 z=c-z*pixel,
-|real(z)| <=100 
+|real(z)| <=100
 }
 
 Carr1221{
@@ -197,7 +197,7 @@ z=pixel,c=pixel,
 z1=cosxx(pixel),c1=cosxx(pixel):
 z=z*z1+c;
 z=z1*z+c1,
-|real(z)| <=100 
+|real(z)| <=100
 }
 
 Carr1222{;Modified Rollo Silver formula
@@ -385,7 +385,7 @@ Carr1247 (XAXIS_NOPARM) {; FractalFenderC modified
   x=|real(z)|
   x<=4
 }
- 
+
 Carr1248 (XAXIS_NOPARM) {; FractalFenderC modified
                          ; Modified Lee Skinner frm.
      ; Edited for Fractint v. 20 by George Martin, 10/98

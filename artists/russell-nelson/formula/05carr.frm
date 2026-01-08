@@ -1,10 +1,10 @@
 {
 Some years back, I was privy to a private conversation between Sig
 Freud and Al Einstein. They were basically just batting the breeze
-as most regular guys tend to do. 
+as most regular guys tend to do.
 
 All of a sudden a fight (verbal) started between the two. Sig insisted
-E=MC(Super Ego), Al responded, "Bull---t", E=MC cubed !! 
+E=MC(Super Ego), Al responded, "Bull---t", E=MC cubed !!
 
 After a long discussion of formulas (all of which are in this file)
 they agreed upon E=MC sqr. This was written down and distributed
@@ -13,7 +13,7 @@ around the world. Unknown to the world was Al and Sig's meaning of
 and the equivalent of NERD. No telling how advanced mankind would
 be if they had interpreted the formula properly.
 
-No commercial use of this copyright protected file is permitted. Others 
+No commercial use of this copyright protected file is permitted. Others
 may contact the author on CompuServe 73753,2420
 
 Bob Carr
@@ -33,7 +33,7 @@ z=z*z+(c-p2),
 Carr-572{
 z=1/conj(pixel-p1),c=sin(z/pixel)^conj(z/pixel):
 z=z*z+(c-p2),
-|z| <=10 
+|z| <=10
 }
 
 Carr-573{

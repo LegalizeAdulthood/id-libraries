@@ -55,7 +55,7 @@ OrmandelTemp      { ; Copr. 1995 by Jack Orman
   z=z^p1+ c + fn1(pixel)
   |z|<4
   }
-      
+
 
 OrmandelCycle    {; Copr. 1995 by Jack Orman
   z = pixel, c = fn1(pixel):

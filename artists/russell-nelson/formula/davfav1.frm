@@ -36,9 +36,9 @@ y=d,
 z=x+flip(y),
 |z|<=p2
 }
-comment { 9 May 92 copy ZZa from FRACTINT.FRM and change 
-tolerance to 0.1 - rename to MARLINZZa  
-Get sharp points with t = 0.5, but flattens curves at base.  
+comment { 9 May 92 copy ZZa from FRACTINT.FRM and change
+tolerance to 0.1 - rename to MARLINZZa
+Get sharp points with t = 0.5, but flattens curves at base.
 Try 0.2 still flattens, but points OK. Try 0.05
 }
 marlinZZa(XAXIS) { ; Prof Jm using Newton-Raphson method

@@ -4,7 +4,7 @@
 ;  minor revisions and a few new formula that are required for the
 ; fractals found in the noel1.par file
 ; The noel.frm file is obsolete and can be replaced by this file, as
-; this file contains all required formulae for both the noel.par and 
+; this file contains all required formulae for both the noel.par and
 ; noel1.par parameter collections
 ;					Noel Giffin
 ;					11 Sept/ 1997
@@ -188,7 +188,7 @@ frog(XAXIS)  {    ; From Noel Giffin noel@triumf.ca
       z = pixel, zp = (0,0),huge=1.e32:
       temp = z
       z = -exp(z) - zp
-      zp = p1/temp, (|zp| <= huge && |z| <= huge) }   
+      zp = p1/temp, (|zp| <= huge && |z| <= huge) }
 
  frtan(XAXIS)  {    ; From Noel Giffin noel@triumf.ca
 ; Lets not forget the tangent
@@ -546,17 +546,17 @@ frog(XAXIS)  {    ; From Noel Giffin noel@triumf.ca
       z = z*z + p1, (|z| <= 4.) }
 
  htzi {    ; From Noel Giffin noel@triumf.ca
-;          some unusual julia intializations 
+;          some unusual julia intializations
       z =(1.0,1.0)/pixel^4:
       z = z^2 + p1, |z| <=32767.0 }
 
  htzsin {    ; From Noel Giffin noel@triumf.ca
-;          some unusual julia intializations 
+;          some unusual julia intializations
       z = sin(pixel)^4:
       z = z*z + p1, |z| <=4.0 }
 
  htzsini {    ; From Noel Giffin noel@triumf.ca
-;          some unusual julia intializations 
+;          some unusual julia intializations
       z = 1/sin(pixel)^4:
       z = z*z + p1, |z| <=4.0 }
 
@@ -731,7 +731,7 @@ frog(XAXIS)  {    ; From Noel Giffin noel@triumf.ca
 ;========================================================================
 ; The  following aren't really fractals, but are some rather strange
 ; anomolies that I've stumbled across and kept to play with.
-   
+
    quiltX(XAXIS) {    ; From Noel Giffin noel@triumf.ca
 ; The combination of a typing error and a bug in fractints parser
 ; makes weird quilt like patterns, I hope they don't fix it. I like it.

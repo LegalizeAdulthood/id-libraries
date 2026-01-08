@@ -646,7 +646,7 @@ PokornyConesJulia {; Copyright (c) Paul W. Carlson, 1997
     bailout == 0
 }
 
- 
+
 Astroid_Mset  {; Copyright (c) Paul W. Carlson, 1997
     ;****************************************************
     ; Always use floating point math and outside=summ.
@@ -1075,7 +1075,7 @@ wiltetrate_original {; by me
   ;SOURCE: wilson.frm
 }
 
-wiltetrate_generalised {; 
+wiltetrate_generalised {;
   z = pixel :
   z=z^(fn1(z^real(p1)))+pixel,
   |z|<=4
@@ -1278,7 +1278,7 @@ dmj-Mand-TC001 {
   ENDIF
   i = i + 1
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -1371,12 +1371,12 @@ dmj-Mand-TC001 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 6
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -1427,9 +1427,9 @@ dmj-Mand-TC002 {
   tt1 = 1 / real(p1)		; reciprocals of trap thresholds
   tt2 = 1 / imag(p1)
   tt3 = 1 / real(p2)
-  
+
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -1438,7 +1438,7 @@ dmj-Mand-TC002 {
   d1 = |t1-z|
   d2 = |t2-z|
   d3 = |t3-z|
-  
+
   IF (d1 < real(p1))
     r = r + (t1r-r)*(1-sqrt(d1*tt1))
     g = g + (t1g-g)*(1-sqrt(d1*tt1))
@@ -1462,7 +1462,7 @@ dmj-Mand-TC002 {
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -1602,9 +1602,9 @@ dmj-Mand-TC003 {
   r1 = (0,1)^(real(p2)/90)	; trap rotations
   a1 = imag(p2)			; aspect ratio
   tt1 = 1 / real(p1)		; reciprocals of trap thresholds
-  
+
   z = pixel, c = pixel
-  
+
   :
 
 ; iteration:
@@ -1613,7 +1613,7 @@ dmj-Mand-TC003 {
   z1 = (z-t1) * r1
   z1 = real(z1) + flip(imag(z1)*a1)
   d1 = abs(cabs(z1)-imag(p1))
-  
+
   IF (d1 < real(p1))
     d1 = 1 - (d1*tt1)
     h = (atan(imag(z1)/real(z1)) + pi/2) * 127.5/pi
@@ -1622,7 +1622,7 @@ dmj-Mand-TC003 {
     ENDIF
     s = 255
     l = 255 * sqr(d1)
-    
+
     ; HSL -> RGB conversion code
     IF (s == 0)			; zero saturation (grey shade)
       t1r = l, t1g = l, t1b = l	; take the easy way out
@@ -1675,7 +1675,7 @@ dmj-Mand-TC003 {
   i = i + 1
 
 ; color processing:
-;  
+;
 ; True Color Engine 1.0
 ; Copyright 1999 Damien M. Jones
 ; http://www.fractalus.com/
@@ -1768,12 +1768,12 @@ dmj-Mand-TC003 {
     r = (r*80/255 + rdither) * 0.0625
     g = (g*80/255 + rdither) * 0.0625
     b = (b*80/255 + rdither) * 0.0625
-    
+
     ; 5. Compute final color and fudge z
     r = floor(r) + floor(g)*6 + floor(b)*36
     z = r - i - 6
   ENDIF
-  
+
 ; FractInt bailout:
   done == 0
 }
@@ -1880,7 +1880,7 @@ LL2-02  { ; overlay LL1-08 and LL1-11
           z = p1*fn2(z*z*z*fn1(z)) + fn1(fn2(fn3(z)))
 	  PHC_bailout = z < b2
 	ENDIF
-	PHC_bailout}	  
+	PHC_bailout}
 
 billsfn4  {
   z = p1, temp = pixel :

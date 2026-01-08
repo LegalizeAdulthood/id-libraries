@@ -19,8 +19,8 @@ a=(z^2.71828182845905)*(count<=shift)
 b=(z*1/c)*(shift<count)
 count=count+1/pixel
 z=z-(a+b+c)/(pixel-c*c)
-|real(z)| <=100  
-} 
+|real(z)| <=100
+}
 
 Carr1301{;based on formulas by Brad Beacham and Gordon Lamb
 z=real(1/pixel)+flip(imag(1/pixel))
@@ -30,7 +30,7 @@ a=(z^2.71828182845905)*(count<=shift)
 b=(z*1/c)*(shift<count)
 count=count+sqr(1/pixel)
 z=z-((a+b)*1/c)/(pixel-c*c)
-|real(z)| <=100  
+|real(z)| <=100
 }
 
 Carr1302{;based on formulas by Brad Beacham and Gordon Lamb
@@ -41,7 +41,7 @@ a=(z^2.71828182845905)*(count<=shift)
 b=(z*1/c)*(shift<count)
 count=count/(cosxx(1/pixel))
 z=z-((a+b)*1/c)/(pixel-c*c)
-|real(z)| <=100  
+|real(z)| <=100
 }
 
 Carr1303{;based on formulas by Brad Beacham and Gordon Lamb
@@ -53,7 +53,7 @@ b=(z*1/c)*(shift<count)
 count=count/(cosxx(sqr(2.5/pixel)))
 z=(z-sqr(a+b)^c)/(pixel*pixel+c)
 z=(pixel-z*z)/(pixel-c*c)
-|real(z)| <=100  
+|real(z)| <=100
 }
 
 Carr1304{

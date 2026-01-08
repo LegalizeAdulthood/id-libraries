@@ -88,7 +88,6 @@ trmoe-15{
 	z=pixel:
 	z=fn1(fn2(z))
 	}
-	
-	
-	
-	
+
+
+

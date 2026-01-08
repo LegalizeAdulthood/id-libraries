@@ -1,6 +1,6 @@
 ; formulas accessed from my PARS, lumped in here for convenience.
-; Sources are noted ... thanks, folks 
-; 
+; Sources are noted ... thanks, folks
+;
 ; >>don CIS:76704,41
 
 ; from SKINNER.FRM - Lee Skinner
@@ -40,7 +40,7 @@ CGNewtonSinExp (XAXIS) {
         z2=sin(z)+z1-z;
         z=z-p1*z2/(cos(z)+z1), .0001 < |z2|
    }
-   
+
 Leeze (XAXIS) {
                        s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
@@ -84,20 +84,20 @@ REB004M {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x*y;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 ;
 
 ;
-; REB002.FRM                                     
-; Ron Barnett 70153,1233                         
+; REB002.FRM
+; Ron Barnett 70153,1233
 
 FlipLambdaJ { ; Ron Barnett, 1993
    z = pixel:
    z = p1*z*(1-flip(z)*flip(z)), |z| <= 100
    }
 
-; REB005.FRM                                     
-; Ron Barnett 70153,1233                         
+; REB005.FRM
+; Ron Barnett 70153,1233
 REB005E {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
@@ -120,7 +120,7 @@ REB005F {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005G {; Ron Barnett, 1993
               ; floating point required
@@ -133,7 +133,7 @@ REB005G {; Ron Barnett, 1993
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
    }
-       
+
 
 
 
@@ -227,14 +227,14 @@ OK-21 {;overkill.frm - bradley beacham
   }
 
 OK-23 {;overkill.frm - bradley beacham
-   
+
    z = c = pixel, k = 1 + p1:
    z = k * fn1(z^z + c) + c/z,
    |z| <= (5 + p2)
   }
 
 OK-26 {;overkill.frm - bradley beacham
-  
+
    z = c = pixel, k = 2 + p1, test = k/(2 + p2):
    a = fn1(z);
    b = (|z| > test)  * (a - c);
@@ -254,7 +254,7 @@ OK-27 {;overkill.frm - bradley beacham
   }
 
 OK-30 {;overkill.frm - bradley beacham
- 
+
    z = v = pixel, k = .5 + p1:
    a = fn1(z);
    b = (z <= k) * (a + v);

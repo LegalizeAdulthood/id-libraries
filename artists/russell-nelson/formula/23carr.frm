@@ -1,5 +1,5 @@
 {
-To see examples of the images these formulas can create see 
+To see examples of the images these formulas can create see
 23Carr.par file.
 
 --Bob Carr-- Please don't copy these formulas for distribution

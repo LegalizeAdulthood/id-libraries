@@ -1,5 +1,5 @@
 ;
-;       This formulafile is from Karl Geigl 100327,156. 
+;       This formulafile is from Karl Geigl 100327,156.
 ;
 ;	oof means "only one formula"
 

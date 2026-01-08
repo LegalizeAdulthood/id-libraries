@@ -1,13 +1,13 @@
 {
 Some years back while working on my Ph.D. in ThermoNuclear Physics
-as related to Ice Cream making, I chanced on a visit with Albert 
+as related to Ice Cream making, I chanced on a visit with Albert
 Einstein. He gave me a list of formulas and said, "some day there
 will be the speed to work out these formulas". Not knowing what
 he meant (and too embarassed to ask), I tucked the formulas away.
 
 A couple of months ago (come to think of it, it was yesterday)
 I saw, on PBS, a Special on Einstein and something about E=MC
-something or other. I thought, I wonder what I did with the 
+something or other. I thought, I wonder what I did with the
 formulas AL gave me? Up to the attic I went and sure enough
 they were there. These are probably the last unpublished works
 from AL to be found.
@@ -17,19 +17,19 @@ Bob Carr CIS: 73753,2420   America Online: Genealogy1
 No commercial use of this file or it's contents is permitted
 without my written and signed consent!!!!!!!
 
-These formulas were used because, when used with 
+These formulas were used because, when used with
 Passes: B-Trace + Inside:Bof60 + Outside: Real or Imag or Summ
-or Mult, they produce what I've called CARR'S CRYSTALS. These  
+or Mult, they produce what I've called CARR'S CRYSTALS. These
 CARR'S CRYSTALS, according to a supposition by Tim Wegner, are
 "entirely based on artifacts of integer math and accidents of
-overflow". Tim says further, "I strongly feel such images are 
+overflow". Tim says further, "I strongly feel such images are
 still legitimate fractal art.".(Personal communication
 December 18, 1994)
 
 Other combinations may produce the same CARR'S CRYSTALS. I
-haven't tried all possible combinations as I was anxious to 
-get this work online for all to use. Please contact me if you 
-find other ways to produce these CARR'S CRYSTALS. THANKS !!! 
+haven't tried all possible combinations as I was anxious to
+get this work online for all to use. Please contact me if you
+find other ways to produce these CARR'S CRYSTALS. THANKS !!!
 
 
 }

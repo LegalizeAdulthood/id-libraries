@@ -2,7 +2,7 @@ F_TEXT_A2Z { ; Les St Clair 1996
           ; Created using "FracText" (alpha-1) by Jan Maarten van der Valk
           ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
           ; suggested default values for fn1|fn2|fn3 are exp|ident|ident
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)

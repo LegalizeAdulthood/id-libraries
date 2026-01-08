@@ -4,7 +4,7 @@
 ; // Peace Out!! Peace In!!
 
 
-Pilsner {  
+Pilsner {
 z = 0, c = pixel, ppix = pixel^-1 + p1:
 z = (z*1/ppix) * fn1(ppix)
 z = fn2(z) + c
@@ -14,34 +14,34 @@ z = fn2(z) + c
 Absolem {
 z = 0, c = pixel:
 z = z + p1
-z = (z * z) * (1/c) 
+z = (z * z) * (1/c)
 z = fn1(z) * fn2(1/z)
-z = z + c 
-|z| <= 4 
+z = z + c
+|z| <= 4
 }
 
 Absolem_2 {
 z = 0, c = pixel:
 z = z + p1
-z = (z * z) * (1/c) 
+z = (z * z) * (1/c)
 z = fn1(z) * fn2(1/c)
-z = z + c 
-|z| <= 4 
+z = z + c
+|z| <= 4
 }
 
 Absolem_SRand  {
 z = 0, c = pixel:
 z = z + p1
-z = (srand(z) * z) * (1/z) 
+z = (srand(z) * z) * (1/z)
 z = fn1(z) * fn2(1/c)
-z = z + c  
-|z| <= 4 
+z = z + c
+|z| <= 4
 }
 
 Korfu (YAXIS) {
 z = c = pixel:
 z = z + p1
-c = c/fn1(z) 
+c = c/fn1(z)
 z = z * fn2(c)
 |z| < 4
 }
@@ -49,6 +49,6 @@ z = z * fn2(c)
 Curfew {
 z = 0, c = pixel:
 z = z + c + p1
-z = z * fn1((1/c)/(1/z)) 
+z = z * fn1((1/c)/(1/z))
 |z| < 4
 }

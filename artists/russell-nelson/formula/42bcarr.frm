@@ -30,7 +30,7 @@ iter = iter+(1.099,0)
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2047{;Modified Sylvie Gallet frm. 
+Carr2047{;Modified Sylvie Gallet frm.
 z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel),
 c=(-0.7456,-0.13)
 iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -47,7 +47,7 @@ iter = iter+(1.099,0)
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2048{;Modified Sylvie Gallet frm. 
+Carr2048{;Modified Sylvie Gallet frm.
 z=conj((0.3,0.6)*(pixel))*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel),
 c=(-0.7456,-0.13)
 iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -64,7 +64,7 @@ iter = iter+(1.099,0)
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2049{;Modified Sylvie Gallet frm. 
+Carr2049{;Modified Sylvie Gallet frm.
 z=c=conj((0.3,0.6)*(pixel))*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel),
 iter = 1 , rad = 6 , center = (1.0,0.1)
 pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
@@ -80,7 +80,7 @@ iter = iter+(1.099,0)
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2050{;Modified Sylvie Gallet frm. 
+Carr2050{;Modified Sylvie Gallet frm.
 z=c=sinh((-0.7456,0.2)*(pixel))*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel),
 iter = 1 , rad = 6 , center = (1.0,0.1)
 pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
@@ -96,7 +96,7 @@ iter = iter+(1.099,0.0)
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2051{;Modified Sylvie Gallet frm. 
+Carr2051{;Modified Sylvie Gallet frm.
 c=pixel*sqr(pixel)+conj(0.00010/pixel)+flip(0.00010/pixel)+tanh(0.00010/pixel),
 z=pixel-conj(0.010/pixel)-flip(0.010/pixel)
 iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -195,7 +195,7 @@ compt=(compt+1)
 |z|<=bailout
 }
 
-Carr2060{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2060{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -209,7 +209,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2061{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2061{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.10/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -223,7 +223,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2062{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2062{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=pixel*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -237,7 +237,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2063{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2063{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=pixel*sqr(pixel)-conj(0.10/pixel)-sqr(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -251,7 +251,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2064{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2064{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=pixel*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -265,7 +265,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2065{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2065{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=flip(imag(pixel)),
 z=pixel*sqr(pixel)-(sqr(conj(0.10/pixel)))-sqr(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -279,7 +279,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2066{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2066{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=flip(imag(sqr(pixel))),
 z=pixel*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -293,7 +293,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2067{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2067{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=1.33*(pixel),
 z=conj(pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -307,7 +307,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2068{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2068{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -321,7 +321,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2069{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2069{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sinh(conj(pixel*pixel)),
 z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -335,7 +335,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2070{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2070{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sqr(conj(0.75*(pixel*pixel))),
 z=conj(pixel)*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*conj(z),
@@ -349,7 +349,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2071{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2071{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*conj(z),
@@ -363,7 +363,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2072{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2072{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=conj(flip(pixel))*pixel,
 z=flip(imag(1-pixel))*sqr(pixel)-(conj(0.10/pixel))-sqr(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*conj(z),
@@ -377,7 +377,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2073{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2073{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=c=pixel*sqr(pixel)-(conj(0.10/pixel))-sqr(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*conj(z),
 l1 = real(p1) ,l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2),
@@ -452,7 +452,7 @@ compt=(compt+1)
 |z|<=bailout
 }
 
-Carr2079{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2079{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=c=conj(pixel)*sqr(pixel)-sqr(conj(0.010/pixel))-(flip(0.10/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
 l1 = real(p1) ,l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2),
@@ -465,7 +465,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2080{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2080{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=flip(imag(1-pixel))*sqr(conj(pixel))-(conj(0.10/pixel))-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -479,7 +479,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2081{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2081{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel,
 z=flip(imag(1-pixel))*pixel*conj(pixel)-(conj(0.10/pixel))-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -493,7 +493,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2082{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2082{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sqr(pixel)/(conj(pixel)),
 z=flip(imag(1-pixel))*pixel*conj(pixel)-(conj(0.10/pixel))-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -507,7 +507,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2083{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2083{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sqr(sqr(sinh(pixel)))/conj(pixel),
 z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -521,7 +521,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2084{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2084{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sqr(sqr(sinh(pixel)))/conj(pixel),
 z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -535,7 +535,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2085{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2085{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=sinh(pixel)^5/conj(pixel)^1.5,
 z=pixel*sqr(pixel)-sqr(conj(0.10/pixel))-(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -549,7 +549,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2086{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2086{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=conj(pixel-0.33),
 z=conj(pixel-0.33)*sqr(pixel)-(conj(0.10/pixel))+sqr(flip(0.010/pixel)),
 z1 = 2.25*z , z2 = 3.25*z , z3 = 5.375*z , z4 = 10.0625*z,
@@ -563,7 +563,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2087{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2087{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=pixel
 z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 z1 = 2.25*z , z2 = 3.25*z , z3 = 5.375*z , z4 = 10.0625*z,
@@ -577,7 +577,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2088{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2088{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.8006,-0.149),
 z=flip(conj(1-pixel))*sqr(pixel)-(conj(0.0005/pixel))-sqr(flip(0.03/pixel)),
 z1 = 2.25*z , z2 = 3.25*z , z3 = 5.375*z , z4 = 10.0625*z,
@@ -591,7 +591,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2089{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2089{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.8006,-0.149),
 z=flip(conj(1-pixel))*sqr(pixel)-(conj(0.0005/pixel))-sqr(flip(0.09/pixel)),
 z1 = 2.25*z , z2 = 3.25*z , z3 = 5.375*z , z4 = 10.0625*z,
@@ -605,7 +605,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2090{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2090{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=conj(-0.8006,-0.149),
 z=flip(1/acos(1-pixel))*sqr(pixel)-(conj(0.0005/pixel))-sqr(flip(0.09/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -619,7 +619,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2091{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2091{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=conj(-0.8006,-0.149),
 z=flip(1/atan(1-pixel))*sqr(pixel)-(conj(0.005/pixel))-sqr(flip(0.09/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -633,7 +633,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2092{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2092{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.8006,-0.149),
 z=pixel*conj(pixel^2)-conj(0.10/pixel)-(0.0450/pixel),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -647,7 +647,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2093{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2093{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=c=sqr(1-pixel)*sqr(pixel)-sqr(conj(0.010/pixel))-(flip(0.10/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
 l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2),
@@ -660,7 +660,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2094{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2094{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.63,-0.4),
 z=acos(1-pixel)^2-(conj(0.10/pixel))-(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -674,7 +674,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2095{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2095{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.63,-0.4),
 z=acos(1-pixel)^2-(conj(0.10/pixel))-sqr(asin(0.10/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -688,7 +688,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2096{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2096{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.7456,-0.13),
 z=pixel-conj(0.10/pixel-flip(0.010/pixel))
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -702,7 +702,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2097{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2097{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.7456,-0.13),
 z=conj(pixel)*sqr(pixel)-sinh(0.10/pixel)-sqr(flip(0.00010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 6.0625*z,
@@ -716,7 +716,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2098{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2098{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-1.099,0.235),
 z=flip(pixel)*conj(pixel+0.433)-conj(0.010/pixel)-sqr(flip(0.0010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -730,7 +730,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2099{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2099{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(conj(tan(pixel)))-conj(0.10/pixel)-flip(0.010/pixel),
 z=flip(pixel)*conj(sqr(pixel+0.433))-(conj(0.10/pixel))-sqr(flip(0.010/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -744,7 +744,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2100{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2100{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.7456,-0.13)
 z=(conj(tan(pixel)))-sqr(conj(0.10/pixel))-sqr(flip(0.020/pixel)),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -758,7 +758,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2101{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2101{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=c=pixel-1/((log(tan(pixel))^10)+pixel)
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
 l1 = real(p1) , l2 = imag(p1) , l3 = real(p2) , l4 = imag(p2),
@@ -771,7 +771,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2102{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2102{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=flip(imag(1-pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,
@@ -785,7 +785,7 @@ iter=iter+1
 (|real(z)|) <= bailout
 }
 
-Carr2103{;Modified Sylvie Gallet frm. 
+Carr2103{;Modified Sylvie Gallet frm.
 z=c=(pixel)-0.5/((log(conj(pixel))^12)+pixel)+conj(0.040/pixel)
 compt=0 , limit=real(p1*cos(pixel/5)) , bailout=4
 p=(-0.743380900000982,-0.131850030300002):
@@ -796,7 +796,7 @@ compt=(compt+1)
 |z|<=bailout
 }
 
-Carr2104{;Modified Sylvie Gallet frm. 
+Carr2104{;Modified Sylvie Gallet frm.
 z=flip(1-pixel)*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel),
 c=(-0.8006,-0.149)
 iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -812,7 +812,7 @@ iter = iter+1
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2105{;Modified Sylvie Gallet frm. 
+Carr2105{;Modified Sylvie Gallet frm.
 z=flip(1+pixel)*sqr(conj(pixel))-conj(0.10/pixel)+flip(0.010/pixel),
 c=(-0.63,-0.4)
 iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -828,7 +828,7 @@ iter = iter+1
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2106{;Modified Sylvie Gallet frm. 
+Carr2106{;Modified Sylvie Gallet frm.
 z=c=pixel-2/(sinh(0.10/pixel)-sqr(tanh(0.010/pixel))),
 iter = 1 , rad = 6 , center = (1.0,0.1)
 pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
@@ -843,7 +843,7 @@ iter = iter+1.2
 ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
 }
 
-Carr2107{;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr2107{;Modified Sylvie Gallet frm. [101324,3444],1996
 c=(-0.8006,-0.149)
 z=pixel-1/(sinh(0.10/pixel)-sqr(cosh(0.0250/pixel))),
 z1 = 1.5*z , z2 = 2.25*z , z3 = 3.375*z , z4 = 5.0625*z,

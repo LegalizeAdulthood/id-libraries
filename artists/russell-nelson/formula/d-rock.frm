@@ -12,7 +12,7 @@ z = z + sqr(c)
 T.B.Quest {
 z = c = pixel:
 z = z + p1
-z = (z * fn1(sqrt(z))) / fn2(c) 
+z = (z * fn1(sqrt(z))) / fn2(c)
 z = z  +  sqr(c)
 |z| < 4
 }
@@ -29,7 +29,7 @@ Sneaky-D {
 z = 0, c = pixel:
 z = fn1(z) + c
 c = c + fn2(1/z) + p1
-z = c 
+z = c
 |z| <= 6
 }
 

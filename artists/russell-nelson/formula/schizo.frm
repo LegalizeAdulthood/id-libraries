@@ -5,7 +5,7 @@
 Schizo {
 z = c = pixel:
 r = z * (1/fn1(z)) + p1
-z = fn2(r) * z + c 
+z = fn2(r) * z + c
 round(z) <= 4
 }
 
@@ -13,7 +13,7 @@ Frantic {
 z = c = pixel + p1
 bail = round(|z|):
 r = z * (1/fn1(z)) + p2
-z = fn2(r) * z + c 
+z = fn2(r) * z + c
 bail <= 4
 }
 

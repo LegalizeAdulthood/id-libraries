@@ -1,5 +1,5 @@
 MJM-PHC01{;
-   z = c = pixel 
+   z = c = pixel
    compt = 0 , limit = real(p1) , bailout = 4
    c1 = (0.34396372130558980 , 0.05608272738673762)
    c2 = (-0.72141758920523890 , 0.25918045895127010)
@@ -15,7 +15,7 @@ MJM-PHC01{;
 
 MJM-PHC02{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -25,7 +25,7 @@ MJM-PHC02{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * whitesq + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -35,7 +35,7 @@ MJM-PHC02{;
 
 MJM-PHC03{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -45,7 +45,7 @@ MJM-PHC03{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = fn1(newpixel)*(1-test) + test*reduction*(fn2(newpixel)-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * (whitesq == 0) + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -55,7 +55,7 @@ MJM-PHC03{;
 
 MJM-PHC04{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -65,7 +65,7 @@ MJM-PHC04{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*sqrt(iterspace)
   newpixel = newpixel*(1-test) + test*reduction*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * (whitesq == 0) + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -75,7 +75,7 @@ MJM-PHC04{;
 
 MJM-PHC05{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -85,7 +85,7 @@ MJM-PHC05{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * (whitesq == 0) + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -95,7 +95,7 @@ MJM-PHC05{;
 
 MJM-PHC06{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + fn1((real(p1)==0))
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -105,7 +105,7 @@ MJM-PHC06{;
   test1 = fn4(compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*flip(reduction)*fn2(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * (whitesq == 0) + (c*test1+p*(1-test1)) * whitesq
   z = z*z + c
   iter = iter + 1
@@ -115,7 +115,7 @@ MJM-PHC06{;
 
 MJM-PHC07{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -125,7 +125,7 @@ MJM-PHC07{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * whitesq + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1
@@ -135,7 +135,7 @@ MJM-PHC07{;
 
 MJM-PHC08{;
   z=0, c=pixel
-  newpixel=pixel, iter=0 
+  newpixel=pixel, iter=0
   reduction=real(p1) + (real(p1)==0)
   nextzoom=iterspace=(p3>0)*p3 + (p3<=0)*256
   rotation=pi*flip(imag(p1))/180
@@ -145,7 +145,7 @@ MJM-PHC08{;
   test1 = (compt<limit)
   nextzoom = nextzoom + test*iterspace
   newpixel = newpixel*(1-test) + test*flip(reduction)*(newpixel-p2)*exp(rotation)
-  z = z*(1 - test) 
+  z = z*(1 - test)
   c = (c*(1 - test) + test*newpixel) * whitesq + (c*test1+p*(1-test1)) * (whitesq == 0)
   z = z*z + c
   iter = iter + 1

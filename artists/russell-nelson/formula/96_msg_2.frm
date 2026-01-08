@@ -7,10 +7,10 @@
   z0 = p1 , h = real(p2) , w = imag(p2) , b = real(p3)
   x0 = real(z0) , y0 = imag(z0) , w2 = w/2
   z1 = z0 + flip(b) , r1 = w2 - b , zc = z0 + w2 + flip(h-w2)
-  z1c = z1 - zc 
+  z1c = z1 - zc
   theta = acos (r1/cabs(z1c)) + atan (imag(z1c) / real(z1c))
   xc = real(zc) , yc = imag(zc) , tanth = tan(theta)
-  z = pixel , x = real(z) , y = imag(z) 
+  z = pixel , x = real(z) , y = imag(z)
   exp1 = (x0-x)/tanth + y0 + b , exp2 = (x-xc)*tanth + yc
   chr21 = ( abs(cabs(z-zc)-(w-b)/2) < b/2 ) &&  \
           ( y > y0+h-w2 || y > exp2 ) \
@@ -57,21 +57,21 @@ z=z*z-c
 |0.0001|<z
 }
 
-BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13" 
- z = pixel 
+BJ-Lesfrm13-002 { ;Modified Les St Clair formula "Lesfrm13"
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = fn4(x/fn3(y))
  |z| <= 4
 }
 
 BJ-Lesfrm13-004 { ; Modified Les St Clair formula, 1996
                   ; modified by Brian E. Jones
- z = pixel 
+ z = pixel
  x = fn1(z*z) , y = fn2(z*z):
  x = fn3(x)*p1*pi
- y = fn4(y)*p2*pi 
+ y = fn4(y)*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -80,9 +80,9 @@ BJ-SG-3-03-gb { ;Brian E. Jones [102702,2213]
                           ;Modified Sylvie Gallet [101324,3444], 1996
 z = pixel , c = sin(conj(-0.81256,-0.1295)) :
  x = real(z) , y = imag(z)
- x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq 
- y1 = y - p1*fn1(y*y+p2*fn2(x)) 
- z = x1+flip(y1)  
+ x1 = x - p1*fn1(x*x+p2*fn2(y)) * (whitesq == 0)+c* whitesq
+ y1 = y - p1*fn1(y*y+p2*fn2(x))
+ z = x1+flip(y1)
  |z| <= 4
 }
 
@@ -118,14 +118,14 @@ iter=iter+1
 }
 
 Carr2330(YAXIS){;Modified Sylvie Gallet frm. [101324,3444],1996
-pixel=-abs(real(pixel))+flip(imag(pixel)), m=tan(pixel)-tanh(pixel), 
-z=2*m+flip(pixel),c=(-0.7,0.2), d1=conj(conj(0.0003545/-pixel))+(tanh(0.00010/pixel)), 
-z1=c1=(1*z+d1),z2=c2=(1.5*z+d1),z3=c3=(2.25*z+d1),z4=c4=(3.375*z+d1), 
-z5=c5=(5.0625*z+d1), l1=(real(p1)),l2=(imag(p1)),l3=(real(p2)),l4=(imag(p2)),l5=(300) 
-bailout=16,iter=0: 
-t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),t5=(iter==l5) 
-z=z*(1-(t1||t2||t3||t4))+(z1*t1-d1)+(z2*t2+d1)+(z3*t3+d1)+(z4*t4+d1)+(z5*t5+d1) 
-c=c*(1-(t1||t2||t3||t4))+(c1*t1+d1)+(c2*t2+d1)+(c3*t3+d1)+(c4*t4+d1)+(c5*t5+d1) 
+pixel=-abs(real(pixel))+flip(imag(pixel)), m=tan(pixel)-tanh(pixel),
+z=2*m+flip(pixel),c=(-0.7,0.2), d1=conj(conj(0.0003545/-pixel))+(tanh(0.00010/pixel)),
+z1=c1=(1*z+d1),z2=c2=(1.5*z+d1),z3=c3=(2.25*z+d1),z4=c4=(3.375*z+d1),
+z5=c5=(5.0625*z+d1), l1=(real(p1)),l2=(imag(p1)),l3=(real(p2)),l4=(imag(p2)),l5=(300)
+bailout=16,iter=0:
+t1=(iter==l1),t2=(iter==l2),t3=(iter==l3),t4=(iter==l4),t5=(iter==l5)
+z=z*(1-(t1||t2||t3||t4))+(z1*t1-d1)+(z2*t2+d1)+(z3*t3+d1)+(z4*t4+d1)+(z5*t5+d1)
+c=c*(1-(t1||t2||t3||t4))+(c1*t1+d1)+(c2*t2+d1)+(c3*t3+d1)+(c4*t4+d1)+(c5*t5+d1)
 z=z^2.45+c+sinh(z/6), iter=iter+1, (|real(z)|) <=bailout
 }
 
@@ -327,8 +327,8 @@ iter=iter+1
 (|real(z)|)<=bailout
 }
 
-;CN_02_phc_r(XAXIS){; Jo Weber, 8/1996 
-;See modified, resolution independent, version "JoWe_CN_02_PHC", below 
+;CN_02_phc_r(XAXIS){; Jo Weber, 8/1996
+;See modified, resolution independent, version "JoWe_CN_02_PHC", below
   ; p2 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
 ;   count = (count + 1) * (count != (p2-1))
 ;   evenodd = (evenodd == (count == 1))
@@ -366,7 +366,7 @@ F_TEXT_A2Z { ; Les St Clair 1996
           ; Created using "FracText" (alpha-1) by Jan Maarten van der Valk
           ; formulas "ABCDEFG","HIJKLMN","OPQRSTU" & "VWXYZ" were amalgamated
           ; suggested default values for fn1|fn2|fn3 are exp|ident|ident
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chra1 = (y>(xa+11.16754)||y>(-xa+-7.20000))||(y<1.70000&&y>1.50000)
@@ -477,8 +477,8 @@ FRACTEST { ; TEST formula by Les St Clair 1996
           ; Created using "FracText" by Jan Maarten van der Valk
           ; Two formulas "FRAC" and "TEXT" have been amalgamated
           ; There is an error in the way the program handles the letter "C"
-z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x, 
-xn=2.50000*x, xq=1.40000*x, xr=2.00000*x, 
+z = fn1(log(pixel-.025))*2, x=real(z), y=imag(z), xa=3.00000*x, xc=1.00000*x, xk=1.50000*x, xm=2.50000*x,
+xn=2.50000*x, xq=1.40000*x, xr=2.00000*x,
 xv=3.50000*x, xw=4.00000*x, xx=2.00000*x, xy=2.50000*x, xz=1.50000*x, xsl=4.00000*x
 x1=1.50000*x
 chrf1 = (y<1.25000&&y>1.15000)||(y>1.60000)
@@ -497,7 +497,7 @@ chre2 = ((x<-0.50000)||chre2)&&((x>-0.60000)&&(x<-0.10000))
 chrx3 = (y<xx+-0.60000&&y>xx+-0.82361)||(y>-xx+0.20000&&y<-xx+0.42361)
 chrt4 = y>0.20000&&x>0.61180&&x<1.21180
 chrt4 = chrt4||(x>0.86180&&x<0.96180)
-test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000)) 
+test = 1 - fn2(real(chrf1||chrr2||chra3||chrc4)*real(y>0.70000)*real(y<1.70000))
 test2 = 1 - fn2(real(chrt1||chre2||chrx3||chrt4)*real(y>-0.70000)*real(y<0.30000))
 z = 1+(0,-.65)/fn3(pixel+(0.0,.75)) :
 z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
@@ -505,7 +505,7 @@ z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
 }
 
 Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
-          ; requires 'periodicity=0' 
+          ; requires 'periodicity=0'
   z = fn1(log(pixel-0.025))*2 , x=real(z) , y=imag(z) , x1=x*1.8 , x3=3*x
   ty2 = ( (y<0.025) && (y>-0.025) ) || (y>0.175)
   f = ( (x<-1.2) || ty2 ) && ( (x>-1.25) && (x<-1) )
@@ -519,8 +519,8 @@ Fractint-9-11 {; Sylvie Gallet [101324,3444], 1996
   i = (x>0.45) && (x<0.5)
   n = (x<0.6) || (x>0.8) || ((y>-x1+1.215) && (y<-x1+1.305))
   n = n && (x>0.55) && (x<0.85)
-  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2)) 
-  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225))) 
+  t2 = ((x>1.025) && (x<1.075) || (y>0.175)) && ((x>0.9) && (x<1.2))
+  test = 1 - fn2((real(f||r||a||c||t1||i||n||t2)*real(y>-0.225)*real(y<0.225)))
   z = 1+(0.0,-0.65)/fn3(pixel+(0.0,.75)) :
    z2 = z*z , z4 = z2*z2 , n = z4*z2-1 , z = z-n/(6*z4*z)
     (|n|>=0.0001) && test
@@ -635,7 +635,7 @@ FraKtint {; Modified Sylvie Gallet formula
 Frantic_2 {
 z = c = pixel + p1:
 r = z * (1/fn1(z)) + p2
-z = fn2(r) * z + c 
+z = fn2(r) * z + c
 round(|Z|) <= 4
 }
 
@@ -909,7 +909,7 @@ jenn002{; Arno Jennen
   }
 
 ;JD-LS-JM { ; Jim Deutch/modified by Lee Skinner and Jan M. van der Valk - 1024x768 only
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
 ;   countreset = (count < 1024)
 ;   count = count * countreset
 ;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
@@ -934,7 +934,7 @@ JD-LS-JM { ; Jan Maarten van der Valk [100256,3721], 1996  Requires passes=1
   }
 
 ;JD-LS01 { ; Jim Deutch/modified by Lee Skinner.  1600x1200 only
-;See modified, resolution independent, version "JD-LS0", below 
+;See modified, resolution independent, version "JD-LS0", below
 ;   countreset = (count < 1600)
 ;   count = count * countreset
 ;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
@@ -949,7 +949,7 @@ JD-LS-JM { ; Jan Maarten van der Valk [100256,3721], 1996  Requires passes=1
 ;   |z| < 4 }
 
 ;JD-LS07 { ; Jim Deutch/modified by Lee Skinner.  1024x768 only
-;See modified, resolution independent, version "JD-LS0",below 
+;See modified, resolution independent, version "JD-LS0",below
 ;   countreset = (count < 1024)
 ;   count = count * countreset
 ;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
@@ -974,7 +974,7 @@ JD-LS0 { ; Lee Skinner [75450,3631], 1996  Requires passes=1
 }
 
 ;JD-SG-05 { ; Sylvie Gallet [101324,3444], 1996
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
 ;   ; use p1 and p2 to adjust the 2nd Mandel
 ;   ; p1 = -1 (default)
 ;   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
@@ -997,7 +997,7 @@ JD-SG-05 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
  }
 
 ;JD-SG-06 { ; Sylvie Gallet [101324,3444], 1996
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
 ;   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
 ;   count = (count + 1) * (count != (p3-1))
 ;   evenodd = (evenodd == (count == 1))
@@ -1016,12 +1016,12 @@ JD-SG-06 { ; Sylvie Gallet [101324,3444], 1996  Requires passes=1
  }
 
 ;JDfrm010 { ; Jim Deutch. Overlay mandel + reversed mandel
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
 ;   countreset = (count < 320) ;interlace checkerboard 320x200
 ;   count = count + 1          ;but does good at 1024x768 too
-;   count = count * countreset 
+;   count = count * countreset
 ;   evenodd = (evenodd < 1) * (count != 1)
-;   oddeven = (evenodd < 1)               
+;   oddeven = (evenodd < 1)
 ;   pixel = evenodd * pixel + oddeven * -pixel
 ;   z = 0
 ;   c = pixel:
@@ -1038,7 +1038,7 @@ JDfrm010 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
 }
 
 ;JDfrm010m7 { ; Jim Deutch/modified by Lee Skinner.
-;See modified, resolution independent, version "JDfrm010", above 
+;See modified, resolution independent, version "JDfrm010", above
 ;   countreset = (count < 1024)
 ;   count = count * countreset
 ;   evenodd=(evenodd < 1)*(count != 0)*countreset + (countreset == 0)*evenodd
@@ -1052,7 +1052,7 @@ JDfrm010 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
 ; }
 
 ;JDfrm021a7 { ; Jim Deutch pseudo-Hicolor
-;See modified, resolution independent, version "JDfrm021a", below 
+;See modified, resolution independent, version "JDfrm021a", below
 ;   a = pixel
 ;   b = abs(a)
 ;   c = flip(a)
@@ -1082,7 +1082,7 @@ JDfrm021a { ; Jim Deutch [104074,3171], 1996  Requires passes=1
 }
 
 ;JDfrm031SF7 { ; Jim Deutch: generalized 2-Julia pseudo-HiColor
-;See modified, resolution independent, version "JDfrm031", below 
+;See modified, resolution independent, version "JDfrm031", below
            ; p1 = 1st julia parameters
            ; p2 = 2nd julia parameters
            ; p3 slides 1st julia around the plane wrt the 2nd
@@ -1109,7 +1109,7 @@ JDfrm031 { ; Jim Deutch [104074,3171], 1996  Requires passes=1
 }
 
 ;JDfrm038 { ; Jim Deutch
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
   ; p1 = Julia parameters
   ; p2 = bailout test
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
@@ -1155,10 +1155,10 @@ JoWe_xy_06 { ; Jo Weber, 9/1996
               |z|<=4
 }
 
-kgexp2 { 
+kgexp2 {
    z = Pixel, c=fn1(z) :
    z = z ^ 2.71828182845905 - c + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
 Lesfrm01r { ; Les St Clair, 1996
@@ -1174,10 +1174,10 @@ z=z+r,|z| <=4
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -1221,7 +1221,7 @@ m+j+n_2 { ; Sylvie Gallet [101324,3444], 1996
   }
 
 ;manjul_lace {; G. Martin [76440,1143], 1996
-;See modified, resolution independent, version below 
+;See modified, resolution independent, version below
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
 ;   count = (count + 1) * (count != (p3-1))
 ;   evenodd = (evenodd == (count == 1))

@@ -48,7 +48,7 @@ y=fn3(zx*p1y+zy*p1x)+fn4(zx*p2y+zy*p2x),
 z=x+flip(y)+(-0.7456,-0.132)+(x+flip(y))/10,
 |z|<=4
 }
-Carr2926{; Modified-inandout04 
+Carr2926{; Modified-inandout04
   ;passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))
@@ -63,7 +63,7 @@ Carr2926{; Modified-inandout04
   z=z*z+c
   |z|<=test
   }
-Carr2926 {; Modified-inandout04 
+Carr2926 {; Modified-inandout04
           ; passes=1 needs to be used with this PHC formula.
   k=((1)*(|p1|<=0)+p1)
   test=(4*(real(p2)<=0)+real(p2)*(0<p2))

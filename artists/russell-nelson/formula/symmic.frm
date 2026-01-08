@@ -13,4 +13,3 @@ SymmIcon {
 	zbar = z*bar;
 	z = ((l + (a * z * zbar) + (b * real(z^n))  + (w * i)) * z) + g*(zbar^(n-1)) + pixel;
 	}
-	

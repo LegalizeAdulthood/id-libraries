@@ -62,7 +62,7 @@ z = z - n/(d1 + c*d2);
 0.1 <= |n|
 }
 comment {
-15 Dec try ex1ccorrected using secant formula - first time! The method in Burden's book demands two initial guesses, which are (?) used to estimate f'.  It seems more sensible to estimate f' by (f(z) - f(z - del))/del. This has been done, and the method called secdav. 
+15 Dec try ex1ccorrected using secant formula - first time! The method in Burden's book demands two initial guesses, which are (?) used to estimate f'.  It seems more sensible to estimate f' by (f(z) - f(z - del))/del. This has been done, and the method called secdav.
 18 Dec 91 When del = 0.0001 the pattern appearrs to be exactly the same as Newton's Method - so added P1 to see the effect of a large difference between the two `guesses', which is what the secant method proposes.  Substantially different patterns result - the solutions are much less easily found - and it takes 40% longer in some cases.23 Mar 92 add P2 to denominator:z - n/(d+P2)  - usually use P1 for this! Change tolerance from 0.000001 to 0.0001, because spots came in fiddler crab,(ANGRY CRAB) p2 = 1.0. 2 APRIL 92 copy and restyle as zmincoszsec.
 }
 ex1csecdav {
@@ -75,7 +75,7 @@ z = z - n/(d+P2);
 }
 
 comment {this ex4c produces amazing `Chief's Headress" + feathers type pictures - increased resolution from 0.0001 to 0.00001 on 21st Dec for P1=0.5 because some of the `feathers' missing. Slightly better - tried 1 pass instead of guessing - even worse = `feathers' missing. So increase resolution to 0.000001.
-22 Dec this may be wrong - try 0.001! 
+22 Dec this may be wrong - try 0.001!
 That's the answer - lower tolerance gets complete picture called FRENETIC FLIGHT or WINGED TEMPLE for CHAOS & GRAPHICS.
 23 Dec start secant version & notice that semicolon was missing from 2z= ... statement.  Add & test to see if same picture. Also notice that have used - cos(z) instead of + cos!  Of such errors are pictures made!
 The semi colon made no difference. The sign of cos was changed in ex4cos - and has not yet (10 Jan 92) yielded a nice picture! .

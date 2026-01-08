@@ -1,6 +1,6 @@
 comment {
-The formula given below generates a variation of the Phoenix curve, which    
-Shigehiro Ushiki at Kyoto University first discovered.  Use it with the 
+The formula given below generates a variation of the Phoenix curve, which
+Shigehiro Ushiki at Kyoto University first discovered.  Use it with the
 Fractint Formula Compiler.
 }
    Phoenix {
@@ -20,7 +20,7 @@ Fractint Formula Compiler.
 
 
 comment {
-The original Phoenix curve uses 0.56667 for the real part of p1, 
+The original Phoenix curve uses 0.56667 for the real part of p1,
 and -0.5 for the real part of p2.
 
 FRACTALS IN C, by Dr. Roger Stevens, has a chapter covering the

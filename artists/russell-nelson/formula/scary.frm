@@ -9,7 +9,7 @@ z = (q * (whitesq == 0)) + (r * (whitesq == 1))
 |z| <= 4
 }
 
-Julia+LambdaFn=PHC { 
+Julia+LambdaFn=PHC {
 z = pixel:
 r = p1 * fn1(z)
 q = z^2 + p2
@@ -34,7 +34,7 @@ z =  q * (whitesq == 1) +  r * (whitesq == 0)
 
 SpaceMandel_PHC {
 z = c = pixel, rand = srand(pixel):
-r = fn1(1/z) + rand 
+r = fn1(1/z) + rand
 m = z*z + c
 z = m * (whitesq == 1) +  (z * r) * (whitesq == 0)
 |z| < 4 || 2 < |r|

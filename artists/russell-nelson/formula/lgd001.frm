@@ -79,7 +79,7 @@ LGDF0009 (XAXIS) {;TwoFace Formula
                   ;Modified Sylvie Gallet frm.
                   ;Modified Carr1971 formula
                   ;LGD 1-11-96
-                  c=z=pixel, 
+                  c=z=pixel,
                   compt=0 , limit=real(p1/pixel) , bailout=4
                   p=(-0.743380900000982,-0.131850030300002) :
                   test=(compt<limit)
@@ -100,7 +100,7 @@ LGDF0010 { ;Inspired by Bob Carr
 LGDF0011 {;Modified Sylvie Gallet frm.
           ;Modified Carr1971 formula
           ;LGD 3-6-96
-        c=z=pixel, 
+        c=z=pixel,
         compt=0 , limit=real(p1/pixel) , bailout=4
         p=(p2) :
         test=(compt<limit)

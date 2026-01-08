@@ -616,7 +616,7 @@ iter=iter+1
 
 Carr2018{;Modified Sylvie Gallet frm. [101324,3444],1996
 z=pixel-1/log(10*pixel)*(sinh(0.1/pixel)),
-c=sqrt(pixel-conj(0.135/pixel))+pixel, 
+c=sqrt(pixel-conj(0.135/pixel))+pixel,
 c1=1.5*z , c2=2.25*z , c3=3.375*z , c4=5.0625*z,
 l1=real(p1), l2=imag(p1), l3=real(p2), l4=imag(p2),
 bailout=16, iter=0 :

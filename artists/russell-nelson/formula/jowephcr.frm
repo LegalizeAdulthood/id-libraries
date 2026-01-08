@@ -36,7 +36,7 @@ JoWe_04a_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
    pixel=abs(real(pixel)) + flip(imag(pixel))
    pixel=real(pixel) + flip(abs(imag(pixel)))
    z = pixel:
-   a1=fn1(z), a2=p1/a1, 
+   a1=fn1(z), a2=p1/a1,
    z=a1*whitesq+a2*(whitesq==0)+pixel,
 }
 
@@ -45,7 +45,7 @@ JoWe_04b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
                          ; needs float=yes & passes=1
    pixel=pixel*(-1)^(pixel>0)
    z = pixel:
-   a1=fn1(z), a2=fn2(p1/a1), 
+   a1=fn1(z), a2=fn2(p1/a1),
    z=a1*whitesq+a2*(whitesq==0)+pixel,
 }
 
@@ -53,7 +53,7 @@ JoWe_04b_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
 JoWe_04c_PHC(XYAXIS) = { ; Jo Weber [100424,35], 9/1996
                          ; needs float=yes & passes=1
    z = pixel:
-   a1=fn1(z), a2=p1/a1, 
+   a1=fn1(z), a2=p1/a1,
    z=fn2(a1)*(whitesq==0)+fn3(a2)*whitesq+pixel,
 }
 
@@ -72,10 +72,10 @@ JoWe_14_PHC_3 = { ; Jo Weber, 9/1996
 JoWe_20_PHC = { ; Jo Weber, 9/1996
                 ; needs float=yes & passes=1
   z = c = pixel:
-  t=fn1(z) 
-  t1=c^t 
-  u=fn2(z) 
-  t2=c^u 
+  t=fn1(z)
+  t1=c^t
+  u=fn2(z)
+  t2=c^u
   t3=t1*(whitesq==0)+t2*whitesq
   z = c^(sqr(t3))
   |z|>=0.5

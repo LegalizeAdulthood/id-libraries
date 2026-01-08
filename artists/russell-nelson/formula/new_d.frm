@@ -16,7 +16,7 @@ z = Cos(z) + Sin(z) + p1
 z <= 4
 }
 
-004 { 
+004 {
 z = pixel:
 z = pixel + cosh(z)  + p1
 |z| <=10000
@@ -46,15 +46,15 @@ z = z+z+z + p1
 z = cos(c) * cos(z)
 }
 
-009 { 
+009 {
 z = pixel:
 z = (Z+PIXEL) + C +p1
 Z = COS(Z)
 }
-                         
+
 010 {
 Z = PIXEL:
-Z = Z*Z*Z 
+Z = Z*Z*Z
 Z = sin(z) + cos(c) + p1
 }
 
@@ -64,7 +64,7 @@ z = tan(z)*z + c + p1
 z = cos(z)
 }
 
-012 { 
+012 {
 z = pixel:
 z = Sin(cos(z)) * Tan(cotan(z)) + p1
 z = pixel + z
@@ -85,14 +85,14 @@ z = tan(z) + cotan(z)
 
 015 (XYAXIS) {
 z = pixel:
-z = fn1(z+c) * (z-c) + atan(z) 
+z = fn1(z+c) * (z-c) + atan(z)
 z = Cos(z) + pixel  + p1
 |z| <=128
 }
 
 016 {
 z = pixel:
-z = sin(z+c) * (z-c) + fn1(z) 
+z = sin(z+c) * (z-c) + fn1(z)
 z = cos(z) + p1
 }
 
@@ -181,9 +181,9 @@ b = pixel + a >= z
 z = fn1(a) + fn1(z) + p1
 z = fn1(b) + cos(z)
 z = fn1(3.14) + z*z
-}    
+}
 
-030 { 
+030 {
 z = pixel:
 a = pixel + a <= z
 b = pixel + a >= Sqrt(z)
@@ -220,7 +220,7 @@ z = (z*z) + b + p1
 034 {
 z = pixel:
 a = fn1(z) + c
-b = z*z + pixel  
+b = z*z + pixel
 z = sin((a + z) / (b + z)) + p1
 }
 

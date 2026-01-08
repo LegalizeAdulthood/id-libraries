@@ -1,5 +1,5 @@
 ; FOTDv5.frm
-; Compilation of Fractint formulas required for Jim Muth's Classic FOTD series 12.Apr.01 onward. 
+; Compilation of Fractint formulas required for Jim Muth's Classic FOTD series 12.Apr.01 onward.
 ; This is a companion file to FOTD_v5.par
 ; Compiled by Les St Cair.
 

@@ -2,17 +2,17 @@ comment {
 This file includes the formulas required to support the file
 RCLPAR.PAR.
 
-In addition, I have included a number of additional formulas 
+In addition, I have included a number of additional formulas
 for your enjoyment <G>.
 
 Ron Lewen
-CIS: 76376,2567 
+CIS: 76376,2567
 
   }
 
 RCL_Cosh (XAXIS) { ; Ron Lewen, 76376,2567
   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
   ; Pickover's Computers, Pattern, Chaos and Beauty.
   ; Figures 9.9 - 9.13 can be found by zooming.
   ; Use floating point
@@ -55,7 +55,7 @@ RCL_4_M (XAXIS) { ; Ron Lewen, 76376,2567
     z=sin(z^2) + sin(z) + sin(pixel),
       |z| <= 4
   }
- 
+
 RCL_4_J { ; Ron Lewen, 76376,2567
   ;  A julia-style variation of the formula in Figure 8.9
   ;  (p. 105) of Pickover's book.
@@ -76,7 +76,7 @@ RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
     z=sin(z^2+pixel),
       |z| <= 4
   }
-    
+
 RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Julia set.

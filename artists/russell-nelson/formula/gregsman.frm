@@ -4,7 +4,7 @@ DATE:	1/14/00 5:55 PM
 
 Re:	(fractint) PART1 OF GREGSMAN.FRM (M-series)
 }
- 
+
 GregsMandelM1 {; (c)2000 Greg McClure
 ; p1 = offset, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
@@ -1452,7 +1452,7 @@ GregsMandelED {; (c)2000 Greg McClure
     |ct| <= |real(p3)|
   }
 
- 
+
 GregsJuliaE1 {; (c)2000 Greg McClure
 ; p1 = point, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
@@ -1874,7 +1874,7 @@ GregsJuliaED {; (c)2000 Greg McClure
     |ct| <= |real(p3)|
   }
 
- 
+
 GregsMandelL1 {; (c)2000 Greg McClure
 ; p1 = offset, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type =  0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
@@ -2291,7 +2291,7 @@ GregsMandelLD {; (c)2000 Greg McClure
     |ct| <= |real(p3)|
   }
 
- 
+
 GregsJuliaL1 {; (c)2000 Greg McClure
 ; p1 = point, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
@@ -3155,7 +3155,7 @@ GregsJuliaZ1 {; (c)2000 Greg McClure
 ; p1 = point, p2 = multiplier, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
-  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1: 
+  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:
    z = fn1(z)^fn2(z) + fn3(z)^p2 + p1
    ip = imag(p3)
    rz = real(z)
@@ -3188,7 +3188,7 @@ GregsJuliaZ2 {; (c)2000 Greg McClure
 ; p1 = point, p2 = power, p3 = cutoff/type
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p2 = 1/0, p3 = 2/0, fn1/fn2/fn3 = zero/ident/sqr = standard Julia for point p1
-  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1: 
+  z = Pixel, z = fn1(z)^fn2(z) + fn3(z)^p2 + p1:
    z = fn1(z)^fn2(-z) + fn3(z)^p2 + p1
    ip = imag(p3)
    rz = real(z)
@@ -3222,7 +3222,7 @@ GregsJuliaZ3 {; (c)2000 Greg McClure
 ; imag(p3) = type = 0/MOD, 1/REAL, 2/IMAG, 3/OR, 4/AND, 5/MANH, 6/MANR
 ; p1 = 0/0, p2 = 1/0, p3 = 2/0, fn1/fn2 = sqr/zero = standard Mandelbrot
 ; p1 = 0/0, p2 = 2/0, p3 = 2/0, fn1/fn2 = ident/zero = standard Mandelbrot
-  z = Pixel, z = fn1(z)^p2 + fn2(z)^(-p2) + p1: 
+  z = Pixel, z = fn1(z)^p2 + fn2(z)^(-p2) + p1:
    z = fn1(z)^p2 + fn2(z)^(-p2) + p1
    ip = imag(p3)
    rz = real(z)

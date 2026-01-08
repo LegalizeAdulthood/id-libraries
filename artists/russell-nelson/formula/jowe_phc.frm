@@ -9,7 +9,7 @@ JoWe_02_PHC(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   oddeven = (evenodd == 0)
                       z = pixel
                       p=1*(|p1|<=0)+p1, q=1*(|p2|<=0)+p2 :
-                      a1=sqr(z), a2=p/a1, a3=q/(sqr(a1)) 
+                      a1=sqr(z), a2=p/a1, a3=q/(sqr(a1))
                       z=(fn1(a1)*evenodd+fn2(a2)*fn1(a3)*oddeven)*pixel,
    }
 
@@ -21,7 +21,7 @@ JoWe_03_PHC_n { ; Jo Weber [100424,35], 8/1996
   evenodd = (evenodd == (count == 1))
   oddeven = (evenodd == 0)
                       z = c = pixel:
-                      a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1)) 
+                      a1=sqr(z), a2=p1*a1, a3=p2/(sqr(a1))
                       t=fn1(z)
                       z = (c^(sqr(t))-c*fn2(t))*evenodd+(c^(fn1(a3)/fn2(a2)))*oddeven+c,
   |z|>=0.5
@@ -70,7 +70,7 @@ JoWe_11b_PHC(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   oddeven = (evenodd == 0)
                          z = pixel
                          p=1*(|p1|<0)+p1 :
-                         a1=fn1(z), a2=fn2(p/a1), 
+                         a1=fn1(z), a2=fn2(p/a1),
                          a1=a1*evenodd, a2=a2*oddeven,
                          z=(a1+a2)^pixel,
            |z|<=4
@@ -85,7 +85,7 @@ JoWe_11b_PHC2(XYAXIS) { ; Jo Weber [100424,35], 8/1996
   oddeven = (evenodd == 0)
                          z = pixel
                          p=1*(|p1|<0)+p1 :
-                         a1=fn1(z), a2=fn2(p/a1), 
+                         a1=fn1(z), a2=fn2(p/a1),
                          a1=a1*evenodd, a2=a2*oddeven,
                          z=(a1-a2)^pixel,
            |z|<=4
@@ -179,7 +179,7 @@ JoWe_19_PHC_4 { ; Jo Weber, 8/1996
 
 
 
-JoWe_CN_02_PHC(XAXIS){; Jo Weber, 8/1996 
+JoWe_CN_02_PHC(XAXIS){; Jo Weber, 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -192,7 +192,7 @@ JoWe_CN_02_PHC(XAXIS){; Jo Weber, 8/1996
 }
 
 
-JoWe_CN_02a_PHC(YAXIS){; Jo Weber, 8/1996 
+JoWe_CN_02a_PHC(YAXIS){; Jo Weber, 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -205,7 +205,7 @@ JoWe_CN_02a_PHC(YAXIS){; Jo Weber, 8/1996
   }
 
 
-JoWe_CN_12_PHC{; Jo Weber, 8/1996 
+JoWe_CN_12_PHC{; Jo Weber, 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -218,7 +218,7 @@ JoWe_CN_12_PHC{; Jo Weber, 8/1996
   }
 
 
-JoWe_CN_12_PHC_2{; Jo Weber, 8/1996 
+JoWe_CN_12_PHC_2{; Jo Weber, 8/1996
   ; p2 - no effect
   ; p3 = horizontal resolution: 320, 640, 800, 1024, 1280, 1600...
   count = (count + 1) * (count != (p3-1))
@@ -232,7 +232,7 @@ JoWe_CN_12_PHC_2{; Jo Weber, 8/1996
 
 
 ;; ---------------------------------------------------------------------------
-;; 
+;;
 ;; September 1996
 ;; new formulas
 
@@ -284,7 +284,7 @@ JoWe_04a_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
            pixel=abs(real(pixel)) + flip(imag(pixel))
            pixel=real(pixel) + flip(abs(imag(pixel)))
            z = pixel:
-           a1=fn1(z), a2=p1/a1, 
+           a1=fn1(z), a2=p1/a1,
            z=a1*evenodd+a2*oddeven+pixel,
    }
 
@@ -297,7 +297,7 @@ JoWe_04b_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
   oddeven = (evenodd == 0)
            pixel=pixel*(-1)^(pixel>0)
            z = pixel:
-           a1=fn1(z), a2=fn2(p1/a1), 
+           a1=fn1(z), a2=fn2(p1/a1),
            z=a1*evenodd+a2*oddeven+pixel,
    }
 
@@ -309,7 +309,7 @@ JoWe_04c_PHC(XYAXIS) { ; Jo Weber [100424,35], 9/1996
   evenodd = (evenodd == (count == 1))
   oddeven = (evenodd == 0)
                 z = pixel:
-                a1=fn1(z), a2=p1/a1, 
+                a1=fn1(z), a2=p1/a1,
                 z=fn2(a1)*oddeven+fn3(a2)*evenodd+pixel,
    }
 
@@ -334,10 +334,10 @@ JoWe_20_PHC { ; Jo Weber, 9/1996
   evenodd = (evenodd == (count == 1))
   oddeven = (evenodd == 0)
   z = c = pixel:
-  t=fn1(z) 
-  t1=c^t 
-  u=fn2(z) 
-  t2=c^u 
+  t=fn1(z)
+  t1=c^t
+  u=fn2(z)
+  t2=c^u
   t3=t1*oddeven+t2*evenodd
   z = c^(sqr(t3))
   |z|>=0.5

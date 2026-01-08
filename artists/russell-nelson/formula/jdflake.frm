@@ -38,7 +38,7 @@ ct=0:
   z=z*sq6*out+(z-n/(6*z4*z))*(out==0)
 (asin(z)*out+ .0001*(out==0))<(out+ |n|*(out==0))
 }
- 
+
 JDFrmF17 {;Jim Deutch, 1996
 sq6=.5+flip(sqrt(3)/2)
 z=pixel:

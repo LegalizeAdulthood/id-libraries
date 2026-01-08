@@ -257,7 +257,7 @@ jdphc39 { ;* mod of Ent by Scott Taylor
 bail=real(p2)
 w1=whitesq*2-1  ;+1/-1
 z = real(Pixel) + flip(imag(pixel))*w1
-y = fn1(z), 
+y = fn1(z),
 base = log(p1):
   z = y * log(z)/base
   |z| <= bail

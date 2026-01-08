@@ -5,17 +5,17 @@ post to help a friend in need (Bob Lee, better known to most of you
 as General Robert E. Lee).
 
 Bob was having a tough time in the War between the States. He needed
-a spy, of the highest calibur, to get information about the 
+a spy, of the highest calibur, to get information about the
 damnable Yankee army. I took the job.
 
-When I got to Washington I didn't tell Honest Abe that I was on a 
+When I got to Washington I didn't tell Honest Abe that I was on a
 Sabbatical and he assummed I was there on the King's Buisiness. Abe
 wasn't the brightest guy in his age group.
- 
-I started immediately gathering all of the Army and war stuff 
-information I could get. The amount I obtained was staggering. I 
+
+I started immediately gathering all of the Army and war stuff
+information I could get. The amount I obtained was staggering. I
 wrote everything down in a formula code known only to Bob and
-myself. My trusted courier was summoned, loaded down with the 
+myself. My trusted courier was summoned, loaded down with the
 formulas and sent galloping to the south. Alas, the poor sucker
 was shot dead by a drunk Yankee guard. The O.O.T.D. (Officer of
 the Day, for those of you in Rio Linda) saw the papers the courier
@@ -28,7 +28,7 @@ Fractint. So here they are for your pleasure.
 
 The above story is true.
 
-I can be contacted by E-MAIL via CompuServe: 73753,2420 or 
+I can be contacted by E-MAIL via CompuServe: 73753,2420 or
 via America OnLine:Genealogy1
 
 If you feel so inclined, send me comments.

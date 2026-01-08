@@ -92,24 +92,24 @@ lake-gmc { ; Formula uses PHC to cast "soft" shadow
   ;                  the screen height (0 = bottom, 100 = top)
   ; real part of waves: amplitude of the wave (try 0.2)
   ; imag part of waves: frequency (try 300)
-  
+
   ; This formula uses the new predefined variables:
   ; center  = (x  , y)
   ; magxmag = (mag, xmagfactor)
   ; rotskew = (rot, skew)
-  
+
   bailout = real(p2)
-  
+
   ; Lake transformation
   ; -------------------
   waves = 0.2,200
-  
+
   if (imag(p3) > 0 && imag(p3) <= 100)
-  
+
   level = imag(p3) / 100         ; water level
   ampl = real(waves)                ; amplitude of the wave
   freq = imag(waves)                ; frequency
-  
+
   angle = real(rotskew * pi / 180)
   exp_irot = exp(-flip(angle))
   h = 1 / real(magxmag)
@@ -128,14 +128,14 @@ lake-gmc { ; Formula uses PHC to cast "soft" shadow
   else
   z = pixel
   endif
-  
+
   if (ismand)
   c = z
   else
   c = p1
   endif
-  
-  
+
+
   :
   z = z*z + c
   |z| <= bailout
@@ -164,24 +164,24 @@ lake-gmc0 { ; Formula uses PHC to cast "soft" shadow
   ;                  the screen height (0 = bottom, 100 = top)
   ; real part of waves: amplitude of the wave (try 0.2)
   ; imag part of waves: frequency (try 300)
-  
+
   ; This formula uses the new predefined variables:
   ; center  = (x  , y)
   ; magxmag = (mag, xmagfactor)
   ; rotskew = (rot, skew)
-  
+
   bailout = real(p2)
-  
+
   ; Lake transformation
   ; -------------------
   waves = 0.2,200
-  
+
   if (imag(p3) > 0 && imag(p3) <= 100)
-  
+
   level = imag(p3) / 100         ; water level
   ampl = real(waves)                ; amplitude of the wave
   freq = imag(waves)                ; frequency
-  
+
   angle = real(rotskew * pi / 180)
   exp_irot = exp(-flip(angle))
   h = 1 / real(magxmag)
@@ -200,14 +200,14 @@ lake-gmc0 { ; Formula uses PHC to cast "soft" shadow
   else
   z = pixel
   endif
-  
+
   if (ismand)
   c = z
   else
   c = p1
   endif
-  
-  
+
+
   :
   z = z*z + c
   |z| <= bailout

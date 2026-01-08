@@ -114,7 +114,7 @@
   |z| <=1
 }
 
-401 { ;       These formulafiles are from Karl Geigl 100327,156. 
+401 { ;       These formulafiles are from Karl Geigl 100327,156.
 
    z = x = pixel:
    z = fn1 (z) * fn2 (x)
@@ -209,7 +209,7 @@
         z=fn1(z)+c, |z|<=64
 }
 
-3RDIM04  {;Tetrated function     
+3RDIM04  {;Tetrated function
         z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+flip(imag(pixel)*p1):
         z=fn1(c)^z, |z|<=64
@@ -228,7 +228,7 @@
 }
 
 3RDIM08  {;Mandelbar
-        z=p1*real(pixel)+flip(imag(pixel)), 
+        z=p1*real(pixel)+flip(imag(pixel)),
         c=p2+real(pixel)+p1*flip(imag(pixel)):
         z=conj(z*z)+c, |z|<=4
 }
@@ -587,7 +587,7 @@ FUGUE_05{;11/29/94
  |b|<=16
  c=fn4(z)
  |c|<=32
- }  
+ }
 
 FUGUE_06{;11/29/94
  z=pixel,c=1,a=p1,b=p2:
@@ -700,7 +700,7 @@ FUGUE_11{;12/01/94
  c=fn4(z)+c/2
  |z|<=512
  }
- 
+
 Fzpcocoh  { ;; Lee2.FRM (Lee Skinner)
   z = pixel, f = 1. / cosh(pixel):
                        z = cosxx (z)  + f, |z| <= 50}
@@ -1354,117 +1354,117 @@ Jm_27a {; generalized Jm Richard-Collard type
 Jm_28(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)^fn2(z)+pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_29(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)^fn2(z)*pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_30(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z+pixel)^fn2(z+pixel),
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_31(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z*pixel)^fn2(z*pixel),
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_32(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z+pixel)^fn2(z*pixel),
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_33(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z*pixel)^fn2(z*pixel)*pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_34(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z*pixel)^fn2(z*pixel)+pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_35(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z+pixel)^fn2(z+pixel)+pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_36(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z+pixel)^fn2(z+pixel)*pixel,
-	|z|<=4        
+	|z|<=4
 }
 
 Jm_37(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(pixel)^fn2(z),
-	|z|<=4       
+	|z|<=4
 }
 
 Jm_38(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)^fn2(pixel),
-	|z|<=4       
+	|z|<=4
 }
 
 Jm_39(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)^fn2(1/z)+pixel,
-	|z|<=4       
+	|z|<=4
 }
 
 Jm_40(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)^pixel+pixel^fn2(z),
-	|z|<=4       
+	|z|<=4
 }
 
 Jm_46(xaxis) {; Jm Collard-Richard
 	z=pixel:
 	z=exp(-p1*z*z*cos(p2))*cos(p1*z*z*sin(p2))+pixel,
-	|z|<=4  
+	|z|<=4
 }
 
 Jm_47(xaxis) {; Jm Collard-Richard
 	z=pixel:
 	z=fn1(p1*z)/fn2(p2*z)+pixel,
-	|z|<=4 
+	|z|<=4
 }
 
 Jm_50(xaxis) { ; Jm Collard-Richard
 	z=pixel:
 	z=fn1(z)/fn2(z)+fn3(pixel),
-	|z|<=P1      
+	|z|<=P1
 }
 
 Jm_51(xaxis) {; Jm Collard-Richard
 	z=pixel,c=z^fn2(pixel):
 	z=fn1(z)+c,
-	|z|<=25      
+	|z|<=25
 }
 
 Jm_52(xaxis) {; Jm Collard-Richard    -Use FLOAT
 	z=pixel,c=z^fn2(pixel):
 	z=fn1(z)+c;
 	c=fn3(c)+fn4(z),
-	|z|<=25     
+	|z|<=25
 }
 
 Jm_53(xaxis) {; Jm Collard-Richard  -  Use Float
 	c=z=pixel:
 	z=fn1(z)+c;
 	c=fn2(c)+fn3(z),
-	|z|<=25     
+	|z|<=25
 }
 
 Jm_54(xaxis) { ;Jm Collard-Richard
@@ -1478,7 +1478,7 @@ Jm_55(xaxis) {; JM Collard-Richard
 	f1=z^p1;
 	f2=z^p2;
 	z=fn1(f1)*fn2(f2)+pixel,
-	|z|<=25      
+	|z|<=25
 }
 
 Jm_56(xaxis) { ; Jm Collard-Richard
@@ -1486,7 +1486,7 @@ Jm_56(xaxis) { ; Jm Collard-Richard
 	f1=z^p1;
 	f2=z^p2;
 	z=fn1(f1)/fn2(f2)+pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_57(xaxis) { ; Jm Collard-Richard
@@ -1494,7 +1494,7 @@ Jm_57(xaxis) { ; Jm Collard-Richard
 	f1=1/(z^p1);
 	f2=1/(z^p2);
 	z=fn1(f1)*fn2(f2)+pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_58(xaxis) {; Jm Collard-Richard
@@ -1502,7 +1502,7 @@ Jm_58(xaxis) {; Jm Collard-Richard
 	f1=1/(z^p1);
 	f2=1/(z^p2);
 	z=fn1(f1)/fn2(f2)+pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_59(xaxis) {; Jm Collard-Richard
@@ -1510,7 +1510,7 @@ Jm_59(xaxis) {; Jm Collard-Richard
 	f1=1/(z^p1);
 	f2=1/(z^p2);
 	z=(fn1(f1)/fn2(f2))*pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_60(xaxis) {; Jm Collard-Richard
@@ -1518,7 +1518,7 @@ Jm_60(xaxis) {; Jm Collard-Richard
 	f1=(z^p1);
 	f2=(z^p2);
 	z=(fn1(f1)/fn2(f2))*pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_61(xaxis) {; Jm Collard-Richard
@@ -1526,7 +1526,7 @@ Jm_61(xaxis) {; Jm Collard-Richard
 	f1=1/(z^p1);
 	f2=1/(z^p2);
 	z=fn1(f1)*fn2(f2)*pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_62(xaxis) {; Jm Collard-Richard
@@ -1534,7 +1534,7 @@ Jm_62(xaxis) {; Jm Collard-Richard
 	f1=(z^p1);
 	f2=(z^p2);
 	z=fn1(f1)*fn2(f2)*pixel,
-	|z|<=stop    
+	|z|<=stop
 }
 
 Jm_ducks (XAXIS) {; Jm Richard-Collard
@@ -2449,7 +2449,7 @@ Ny1(XYAXIS)  { z=pixel:   z=(z^pixel)*sinh(z^pixel)  ,       |z|<=4
    }
 
 comment {
-These formulae can be used to initiate exploration in the two "hybridised" 
+These formulae can be used to initiate exploration in the two "hybridised"
 planes as referred to in 4dfract.txt. Type SJ iterate in the "zc" plane,
 and type 3RDIM in the "cz" plane. Ititially, param p2=0. Altering the real
 value of p2 in type SJ, or the imaginary value of p2 in type 3rdim, will
@@ -2506,7 +2506,7 @@ SJMAND08 {;Mandelbar
         c=p2+p1*real(pixel)+flip(imag(pixel)):
         z=conj(z*z)+c, |z|<=4}
 
-SJMAND09 { 
+SJMAND09 {
         z=real(pixel)+flip(imag(p2)),
         c=real(p2)+flip(imag(pixel)):
         z=z*z+c, |z|<=4}
@@ -2682,58 +2682,58 @@ SymmIcon {
 	z = ((l + (a * z * zbar) + (b * real(z^n))  + (w * i)) * z) + g*(zbar^(n-1)) + pixel;
 }
 
-ScSkLMS(XAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z) - sin(z), 
-   |z|<TEST 
+ScSkLMS(XAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = log(z) - sin(z),
+   |z|<TEST
 }
 
-ScSkZCZZ(XYAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = (z*cosxx(z)) - z, 
-   |z|<TEST 
+ScSkZCZZ(XYAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = (z*cosxx(z)) - z,
+   |z|<TEST
 }
 
-ScottLPC(XAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z)+cosxx(z), 
-   |z|<TEST 
+ScottLPC(XAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = log(z)+cosxx(z),
+   |z|<TEST
 }
 
- ScottLPS(XAXIS)  { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z)+sin(z), 
-   |z|<TEST 
+ ScottLPS(XAXIS)  {
+   z = pixel, TEST = (p1+3):
+   z = log(z)+sin(z),
+   |z|<TEST
 }
 
- ScottLTC(XAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z)*cosxx(z), 
-   |z|<TEST 
+ ScottLTC(XAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = log(z)*cosxx(z),
+   |z|<TEST
 }
 
- ScottLTS(XAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = log(z)*sin(z), 
-   |z|<TEST 
+ ScottLTS(XAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = log(z)*sin(z),
+   |z|<TEST
 }
 
- ScottSIC(XYAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = sqr(1/cosxx(z)), 
-   |z|<TEST 
+ ScottSIC(XYAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = sqr(1/cosxx(z)),
+   |z|<TEST
 }
 
- ScSkCosH(XYAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = cosh(z) - sqr(z), 
-   |z|<TEST 
+ ScSkCosH(XYAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = cosh(z) - sqr(z),
+   |z|<TEST
 }
 
-ScottSIS(XYAXIS) { 
-   z = pixel, TEST = (p1+3): 
-   z = sqr(1/sin(z)), 
-   |z|<TEST 
+ScottSIS(XYAXIS) {
+   z = pixel, TEST = (p1+3):
+   z = sqr(1/sin(z)),
+   |z|<TEST
 }
 
 Mothra (XAXIS) { ; Ron Lewen, 76376,2567
@@ -3104,8 +3104,8 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
 IkenagaMap(XAXIS) {; based upon the Ikenaga function described
 	  ; in Dewdneys's The Armchair Universe.
 	  ; The initial starting point allows the function to provide a
-	  ; "map" for the corresponding Julia function (Julike ) 
-	  z = ((1-pixel)/3)^0.5: 
+	  ; "map" for the corresponding Julia function (Julike )
+	  z = ((1-pixel)/3)^0.5:
 	  z = z*z*z + (pixel-1)*z - pixel, |z| <= 4
    }
 
@@ -3121,7 +3121,7 @@ IkenagaMap(XAXIS) {; based upon the Ikenaga function described
 	  z = P1*fn2(z)^2 + P2*fn3(z)^2 + pixel, |z| <= 4
    }
 
-   JMask {      
+   JMask {
 	  z = fn1(pixel):
 	  z = P1*fn2(z)^2 + P2, |z| <= 4
    }
@@ -3193,15 +3193,15 @@ IkenagaMap(XAXIS) {; based upon the Ikenaga function described
    }
 
  LambdaLog(XAXIS) {
-	  z = pixel, c = log(pixel):  
-		 z = c * sqr(z) + pixel, 
-	  |z| <= 4 
+	  z = pixel, c = log(pixel):
+		 z = c * sqr(z) + pixel,
+	  |z| <= 4
    }
 
 
 RCL_Cosh (XAXIS) { ; Ron Lewen, 76376,2567
   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
   ; Pickover's Computers, Pattern, Chaos and Beauty.
   ; Figures 9.9 - 9.13 can be found by zooming.
   ; Use floating point
@@ -3348,7 +3348,7 @@ Bali {; The difference of two squares
 
 Fatso {;
 z=x=1/pixel, c= fn1 (z):
-z = (x^3)-(c^3); 
+z = (x^3)-(c^3);
 x=fn2(z),
 |z| <=3
 }
@@ -3359,7 +3359,7 @@ z =(z^4)*(c^4) + c,
 |z| <=4
 }
 
-Bjax {; 
+Bjax {;
 z=c=2/pixel:
 z =(1/((z^(real(p1)))*(c^(real(p2))))*c) + c,
 }
@@ -3801,8 +3801,8 @@ z=z-(z1/z2),
 0.001<=|z1| }
 
 lambtet1 { ;fn1=sin & inside=bof60 gives a striking tropical fish!
-           ;see file FISHY.GIF - New Images Nov. 
-           ;set fn1=fn2=ident for simple tetrate fractal.            
+           ;see file FISHY.GIF - New Images Nov.
+           ;set fn1=fn2=ident for simple tetrate fractal.
             z=c=fn2(pixel): z=fn1(c^z), |z|<=4}
 lambtet2 {
             z=c=fn2(pixel): z=fn1(z^c), |z|<=4}
@@ -3810,25 +3810,25 @@ lambtet3 { ;fn1=recip will produce infinitely nested crustaceans!
             z=c=fn2(pixel): z=c^fn1(z), |z|<=4}
 lambtet4 {
             z=c=fn2(pixel): z=z^fn1(c), |z|<=4}
-lambtet5 { 
+lambtet5 {
             z=c=fn2(pixel): z=1/fn1(c^z), |z|<=4}
 lambtet6 {
             z=c=fn2(pixel): z=1/fn1(z^c), |z|<=4}
 lambtet7 {
             z=c=fn2(pixel): z=c^(1/fn1(z)), |z|<=4}
-lambtet8 { 
+lambtet8 {
             z=c=fn2(pixel): z=z^(1/fn1(c)), |z|<=4}
 lambtet9 {
             z=c=fn2(pixel): z=fn1(c^fn3(z)), |z|<=4}
 comment {
-The original Phoenix curve uses 0.56667 for the real part of p1, 
+The original Phoenix curve uses 0.56667 for the real part of p1,
 and -0.5 for the real part of p2.
   p1                  p2
 
 0.288732          0.5510029
 0.356338          -1.209169
 -0.550704         -1.255014
-}                      
+}
 Phoenix {
       x = pixel; y = 0.0:
       z = (x * x) + p1 + (p2 * y);
@@ -3836,89 +3836,89 @@ Phoenix {
       x = z;
 }
 
-MandelConj(XAXIS) {; Paul J. Horn , this was mentioned in Pickover's book 
-; Compurers, Chaos, Patterns and Beauty.  He didn't give the forumula, so  
+MandelConj(XAXIS) {; Paul J. Horn , this was mentioned in Pickover's book
+; Compurers, Chaos, Patterns and Beauty.  He didn't give the forumula, so
 ; I came up with this
-  z = c = Pixel:  ; 
+  z = c = Pixel:  ;
   z = Sqr(conj(z)) + Pixel ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj01(XAXIS) {; Paul J. Horn, see MandelConj.  
+MandConj01(XAXIS) {; Paul J. Horn, see MandelConj.
 ; This is a variation on a theme.
-  z = c = Pixel:  ; 
+  z = c = Pixel:  ;
   z = Sqr(z) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj02(XAXIS) {; Paul J. Horn, see MandelConj. 
-; Another variation on the theme. 
-  z = c = Pixel:  ; 
+MandConj02(XAXIS) {; Paul J. Horn, see MandelConj.
+; Another variation on the theme.
+  z = c = Pixel:  ;
   z = Sqr(Conj(z)) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj03(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj03(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr(conj(z))*conj(z) + Pixel ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj04(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj04(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr((z))*(z) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj05(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj05(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr(conj(z))*conj(z) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj06(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj06(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr(Sqr(conj(z))) + Pixel ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj07(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj07(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr(Sqr((z))) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj08(XAXIS) {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj08(XAXIS) {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = Sqr(Sqr(conj(z))) + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj09  {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj09  {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = (conj(z))^p1 + Pixel ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj10  {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj10  {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = z^p1 + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
-MandConj11 {; Paul J. Horn 
-; yet another variation on the theme 
-  z = c = Pixel:  ; 
+MandConj11 {; Paul J. Horn
+; yet another variation on the theme
+  z = c = Pixel:  ;
   z = (conj(z))^p1 + Conj(Pixel) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 ConjMandelbrot(XAXIS) { ; Paul J. Horn
@@ -3933,86 +3933,86 @@ ConjMandelbrot(XAXIS) { ; Paul J. Horn
 
 JuliaConj(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; try real part of p1 = -1.1 and imag part of p1 = .09
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(conj(z)) + P1 ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj01(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = -.93, imag(p1) = .3, map = blues
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(z) + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj02(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = .3, imag(p1) = .25, map = neon
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(Conj(z)) + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj03 {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = .40, imag(p1) = 0, map = glasses2
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(conj(z))*conj(z) + P1 ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj04 {; Paul J. Horn - a conjugate Julia (I think)
-  ;Try real(p1) = .53, imag(p1) = .63, map = volcano 
-  z = pixel:  ; 
+  ;Try real(p1) = .53, imag(p1) = .63, map = volcano
+  z = pixel:  ;
    z = Sqr(z)*z + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj05 {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = .6, imag(p1) = .4, map = chroma
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(conj(z))*conj(z) + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj06(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = .99, imag(p1) = .72
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(Sqr((conj(z)))) + P1 ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj07(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = -.245, imag(p1) = .44, map = royal
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(Sqr(z)) + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj08(Origin) {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = -1, imag(p1) = .11, map = blues
-  z = pixel:  ; 
+  z = pixel:  ;
    z = Sqr(Sqr((conj(z)))) + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj09 {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = -.677, imag(p1) = .333, real(p2) = 9, map = blues
-  z = pixel:  ; 
+  z = pixel:  ;
    z = (conj(z))^P2 + P1 ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj10 {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = .1005, imag(p1) = .68, real(p2) = 5, map = chroma
-  z = pixel:  ; 
+  z = pixel:  ;
    z = (z)^P2 + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 JuliConj11 {; Paul J. Horn - a conjugate Julia (I think)
   ; Try real(p1) = -.37, imag(p1) = .6, real(p2) = 6, map = volcano
-  z = pixel:  ; 
+  z = pixel:  ;
    z = (conj(z))^P2 + Conj(P1) ,
-   |z| <= 4          ; 
+   |z| <= 4          ;
   }
 
 quadrants {
@@ -4042,13 +4042,13 @@ IkeGenM {	; Ron Barnett, 1993
    FrRbtGenM {; Ron Barnett, 1993
    z = pixel:
    z = p1*z*z*z + z*z + pixel, |z| <= 100
-   }   
+   }
 
    FrRbtGenJ {; Ron Barnett, 1993
    z = pixel:
    z = p1*z*z*z + z*z + p2, |z| <= 100
-   }   
-   
+   }
+
    IkeFrRbtGenM {; Ron Barnett, 1993
    z = 2*(1-pixel)/(3*p1):
    z = p1*z*z*z + (pixel-1)*z*z - pixel, |z| <= 100
@@ -4145,14 +4145,14 @@ Gopalsamy1 {
    }
 
 MandellambdaPwr {; This provide a "map" for LambdaPwr
-   z = (1/(p1+1))^(1/p1): 
+   z = (1/(p1+1))^(1/p1):
    z = pixel*z*(1 - z^p1), |z| <= 100
    }
 
    LambdaPwr {
    z = pixel:
    z = p1*z*(1 - z^p2), |z| <= 100
-   }  
+   }
 
    PseudoLambda {
    z = pixel:
@@ -4386,7 +4386,7 @@ SGG011 {
    |z|<=2
 }
 
-;01.01.1995 
+;01.01.1995
 SGG012 {
    z=pixel
    b=sqr(z*z)
@@ -4412,7 +4412,7 @@ SGG014 {
 
 ;01.01.1995
 SGG015 {
-   z=pixel  
+   z=pixel
    z=sqr(z)/sin(z)+1/pixel
    |z|<=4
 }
@@ -4479,7 +4479,7 @@ SGG022 {
    |z|<=2
 }
 
-;14.01.1995 
+;14.01.1995
 SGG023 {
    z=a=sqr(pixel*pixel):
    a=z*exp(log(a));
@@ -4601,7 +4601,7 @@ SGG034 {
    |z|<=2
 }
 
-;27.01.1995 
+;27.01.1995
 SGG035 {
    z=x=1/pixel:
    z=z*z+sin(x);
@@ -4628,88 +4628,88 @@ SGG037 {; Edited for Fractint v. 20 by George Martin, 10/98
   |z|<=4
 }
 
-kgexp1 { 
+kgexp1 {
    z = Pixel:
    z = z ^ 2.71828182845905 + c + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp2 { 
+kgexp2 {
    z = Pixel, c=fn1(z) :
    z = z ^ 2.71828182845905 - c + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp3 { 
+kgexp3 {
    z = Pixel, c=fn1(z) :
    z = z ^ 2.71828182845905 + c * pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp4 { 
+kgexp4 {
    z = Pixel, c=fn1(z) :
    z = z ^ 2.71828182845905 + c ^ pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp5 { 
+kgexp5 {
    z = Pixel:
    z = z ^0.5 * z ^ 2.71828182845905 + c + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp6 { 
+kgexp6 {
    z = Pixel:
    z = c ^ 2.71828182845905 * z ^ pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp7 { 
+kgexp7 {
    z = Pixel:
    z = z + c - 2.71828182845905 ^z,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp8 { 
+kgexp8 {
    z = Pixel:
    z = z ^ 2.71828182845905 + c ^ pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp9 { 
+kgexp9 {
    z = Pixel:
    z = z ^ -2.71828182845905 + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp10 { 
+kgexp10 {
    z = Pixel:
    z = z + 2.71828182845905 ^ c + c,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp11 { 
+kgexp11 {
    z = Pixel:
    z = z ^ 2.71828182845905 + c ^ 2.71828182845905,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp12 { 
+kgexp12 {
    z = pixel:
    z = z ^ 2.71828182845905 + c,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp13 { 
+kgexp13 {
    z = Pixel:
    z = z ^ 2.71828182845905 + c,
-   |z| <= 100 
+   |z| <= 100
 }
 
-kgexp14 { 
+kgexp14 {
    z = Pixel:
    z = z ^ 2.71828182845905 + c,
-   |z| <= 100 
+   |z| <= 100
 }
 
 oof1 (XAXIS) {
@@ -4889,7 +4889,7 @@ a=x*y
 |a|<=16
 a=fn4(a)
 }
-                           
+
 OrmanDelbrot1 {; Copr. 1995 by Jack Orman
   c = z = Pixel:
    z = fn1(z^3+z^2+z+c)*c
@@ -4958,7 +4958,7 @@ OrmandelPower     { ; Copr. 1995 by Jack Orman
   z=(fn1(z)/fn2(z))^p1 + c
   |z|<4
   }
-      
+
 
 OrmandelFunc    {; Copr. 1995 by Jack Orman
   z = pixel, c = fn1(pixel):
@@ -5066,7 +5066,7 @@ REB004A {; Ron Barnett, 1993
    REB004E {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
-   z = pixel + fn1(2*z+1)/(2*z+p1); 
+   z = pixel + fn1(2*z+1)/(2*z+p1);
    z = z + fn2(4*z+1)/(4*z+p2), |z| <= 100
    }
 
@@ -5078,7 +5078,7 @@ REB004A {; Ron Barnett, 1993
    REB004G {; Ron Barnett, 1993
               ; floating point required
    z = pixel:
-   z = p2 + fn1(2*z+1)/(2*z+p1); 
+   z = p2 + fn1(2*z+1)/(2*z+p1);
    z = z + fn2(4*z+1)/(4*z+p1), |z| <= 100
    }
 
@@ -5137,7 +5137,7 @@ REB005A	{; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005B {; Ron Barnett, 1993
               ; floating point required
@@ -5161,7 +5161,7 @@ REB005C {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p2;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005D {; Ron Barnett, 1993
               ; floating point required
@@ -5197,7 +5197,7 @@ REB005F {; Ron Barnett, 1993
    x2 = x1*x1 - y1*y1 + p1;
    y2 = 2*x1*y1;
    z = x2 + flip(y2), |z| <= 100
-   } 
+   }
 
 REB005G {; Ron Barnett, 1993
               ; floating point required
@@ -5223,7 +5223,7 @@ ikenagaoriginal {; Ron Barnett, 1994
 	z = z*z*z + (c - 1)*z - c, |z|<=100
       }
 
-JMask2 {      ; Ron Barnett, 1995      
+JMask2 {      ; Ron Barnett, 1995
       z = fn1(pixel):
       z = P1*fn2(z)^2 + P2*fn3(z)^2 + P3, |z| <= 4
    }
@@ -5411,10 +5411,10 @@ RCL_16 (XAXIS) { ; Ron Lewen, 76376,2567
   }
 
 
-Zexpe_mandel (XAXIS) { 
+Zexpe_mandel (XAXIS) {
    z = Pixel:
    z = z ^ 2 + pixel,
-   |z| <= 100 
+   |z| <= 100
 }
 
 { Use the following for version 15.14 or later }
@@ -5540,7 +5540,7 @@ BirdOfPreyC.1 (XAXIS_NOPARM) {
   |z|<=4
 }
 
-CANON1{;12/2/94 a,b,c are modified by fn(), z value is bailout 
+CANON1{;12/2/94 a,b,c are modified by fn(), z value is bailout
  z=pixel,c=1,a=p1,b=p2:
  z=fn1(z)+(a*b*c)
  |z|<=4
@@ -5718,7 +5718,7 @@ EvilEyeC.1 (XAXIS_NOPARM) {
   x=|z|
   x<=4
 }
-      
+
 
 Eyeball (XAXIS_NOPARM) {
      ; Edited for Fractint v. 20 by George Martin, 10/98
@@ -6048,23 +6048,23 @@ TestSinMandC (XAXIS_NOPARM) {; Rewritten for Fractint v. 20 by
 }
 
 WaldoTwinsC(XAXIS_NOPARM) {
-     z=p1:z=cosxx(sin(z+pixel))+pixel, 
+     z=p1:z=cosxx(sin(z+pixel))+pixel,
      |z|<=4
 }
 
 WaldoTwinsC.1(XAXIS_NOPARM) {
-     z=p1:z=cos(sin(z+pixel))+pixel, 
+     z=p1:z=cos(sin(z+pixel))+pixel,
      |z|<=4
 }
 
 
-3daMand01 {; Mandelbrot/Zexpe via Lee Skinner   
+3daMand01 {; Mandelbrot/Zexpe via Lee Skinner
      z=real(pixel)+flip(imag(pixel)*p1),
      c=p2+p1*real(pixel)+flip(imag(pixel)):
      z=z^2.71828182845905 + c, |z|<=100
 }
 
-3daMand02 {; Mandelbrot/Xexpe/Feigenbaum's alpha constant=exponent    
+3daMand02 {; Mandelbrot/Xexpe/Feigenbaum's alpha constant=exponent
     z=real(pixel)+flip(imag(pixel)*p1),
     c=p2+p1*real(pixel)+flip(imag(pixel)):
     z=z^2.502907875095 + c, |z|<=100
@@ -6105,13 +6105,13 @@ Curly { ; Mutation of 'Natura'. Mutated by Bradley Beacham [74223,2745]
     |z| <= test
 }
 
-DAFRM02  {;  
+DAFRM02  {;
    z = pixel :
    z = (z ^ (z - 1) + 7/11) * (fn1(z) + pixel),
    |z| <= 4
 }
 
-DAFRM03  {; 
+DAFRM03  {;
    z = pixel :
    z = z * z^ (1 - z) * fn1(z) + pixel,
    |z| < 4
@@ -6129,7 +6129,7 @@ DAFRM05  {;  M_TchebychevT3
    z = c*z*(4*z*z-3),
    |z|<100
 }
-   
+
 DAFRM06  {;  var M_TchebychevT3
    c = P1, z = Pixel:
    z = 2*c*z*(z*z*3.14159),
@@ -6167,14 +6167,14 @@ DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
 DAFRM10  { ; var Ron Barnett REB004K
    z = pixel:
    x = flip(pixel + fn1(4/z - z/5 + 125)),
-   z = x*z + p1 + 125, 
+   z = x*z + p1 + 125,
    |z| <= 100
    }
 
 DAFRM11  { ; var Ron Barnett REB004L
    z = pixel:
    x = flip(pixel + fn1(2*p1/3*z - z/(p2+125))),
-   z = x*z + pixel, 
+   z = x*z + pixel,
    |z| <= 100
    }
 
@@ -6185,11 +6185,11 @@ DAFRM12 { ; var Ron Barnett REB004M
    y1 = -fn2((x*x + y*y) + 6*x)*y/(2*x*x + y*y),
    x2 = x1*x1 - y1*y1 + p1 + 25,
    y2 = 3*x*y - 25,
-   z = x2 + flip(y2), 
+   z = x2 + flip(y2),
    |z| <= 100
-   }   
+   }
 
-DAFRM21 { 
+DAFRM21 {
    z = pixel:
    x = real(z), y = imag(z),
    x1 = -fn1((x*x*x + y*y*y - 1) - 6*x)*x/(2*x*x*x + y*y*y - 1),
@@ -6383,7 +6383,7 @@ Moe { ; Mutation of 'Zexpe'.  Mutated by Bradley Beacham [74223,2745]
 
 Natura(xyaxis)  {  ;phi yoni
 	z = pixel:
-	z = z*z*z + ((sqrt(5) + 1)/2) 
+	z = z*z*z + ((sqrt(5) + 1)/2)
 	|z| <= 4;
 }
 
@@ -6420,14 +6420,14 @@ OK-21 {;overkill.frm - bradley beacham
   }
 
 OK-23 {;overkill.frm - bradley beacham
-   
+
    z = c = pixel, k = 1 + p1:
    z = k * fn1(z^z + c) + c/z,
    |z| <= (5 + p2)
   }
 
 OK-26 {;overkill.frm - bradley beacham
-  
+
    z = c = pixel, k = 2 + p1, test = k/(2 + p2):
    a = fn1(z);
    b = (|z| > test)  * (a - c);
@@ -6447,7 +6447,7 @@ OK-27 {;overkill.frm - bradley beacham
   }
 
 OK-30 {;overkill.frm - bradley beacham
- 
+
    z = v = pixel, k = .5 + p1:
    a = fn1(z);
    b = (z <= k) * (a + v);
@@ -6547,7 +6547,7 @@ phi01(xyaxis) { ;try inside=maxiter and outside=imag on these
 }
 
 phi02(xyaxis) { ;try inside=maxiter and outside=imag on these
-	c = pixel 
+	c = pixel
 	z = ((sqrt(5) + 1)/2):
 	z =  z*z + pixel*((sqrt(5) + 1)/2) + c
 	|z| <= 4;
@@ -6567,7 +6567,7 @@ phi04(xyaxis) { ;try inside=maxiter and outside=imag on these
 
 Raphaelbrot(xyaxis) {  ;phi
 	z = pixel:
-	z = sqr(z) + ((sqrt(5) - 1)/2) 
+	z = sqr(z) + ((sqrt(5) - 1)/2)
 	|z| <= 4;
 }
 
@@ -6580,12 +6580,12 @@ SPCZ(xaxis) { ; resol. sin(z)^cos(z)=0 -Jm Collard-Richard - Use Float=yes
 	z1=sc;
 	z2=((c*co)-(s*log(s)))*sc;
 	z=z-(z1/z2) ,
-	0.001<=|z1| 
+	0.001<=|z1|
 }
 
 Tetratephi(xyaxis) { ;?
 	z  = c = ((sqrt(5) +1)/2)/pixel:
-	z = c^z + ((sqrt(5) +1)/2) 
+	z = c^z + ((sqrt(5) +1)/2)
 	|z| <= 4;
 }
 
@@ -6602,7 +6602,7 @@ Zeppo { ; Mutation of 'Liar4'. Mutated by Bradley Beacham [74223,2745]
 
 RCL_Cross1  { ; Ron Lewen
   ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-  ; -10/10/-7.5/7.5 to see a cross shape.  The larger 
+  ; -10/10/-7.5/7.5 to see a cross shape.  The larger
   ; lakes at the center of the cross have good detail
   ; to zoom in on.
   ; Use floating point.
@@ -6614,7 +6614,7 @@ RCL_Cross1  { ; Ron Lewen
 
 RCL_Cross2 { ; Ron Lewen
   ; Try p1=(0,1), fn1=sin and fn2=sqr.  Set corners at
-  ; -10/10/-7.5/7.5 to see a deformed cross shape. 
+  ; -10/10/-7.5/7.5 to see a deformed cross shape.
   ; The larger lakes at the center of the cross have
   ; good detail to zoom in on.
   ; Try corner=-1.58172/.976279/-1.21088/-.756799 to see
@@ -6649,7 +6649,7 @@ RCL_Logistic_1 (XAXIS) { ; Ron Lewen
 
 RCL_Pick1 (XAXIS) { ; Ron Lewen
   ; Try corners=2.008874/-3.811126/-3.980167/3.779833/
-  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in 
+  ; -3.811126/3.779833 to see Figure 9.7 (P. 123) in
   ; Pickover's Computers, Pattern, Chaos and Beauty.
   ; Figures 9.9 - 9.13 can be found by zooming.
   ; Use floating point
@@ -6673,10 +6673,10 @@ RCL_Pick2_M (XAXIS) { ; Ron Lewen
     z=sin(z) + z^2 + pixel,
       |real(z)| < 100 || |imag(z)| < 100
   }
- 
+
 RCL_Pick2_J { ; Ron Lewen
   ;  A julia set based on the formula in Figure 8.9
-  ;  (p. 105) of Pickover's book.  Very similar to 
+  ;  (p. 105) of Pickover's book.  Very similar to
   ;  the Frontpiece for Appendix A.
   ;
   z=pixel:
@@ -6792,7 +6792,7 @@ RCL_Pick12 { ; Ron Lewen
 
 RCL_Pick13 { ; Ron Lewen
   ;
-  ;  Formula from Frontpiece for Appendix C 
+  ;  Formula from Frontpiece for Appendix C
   ;  and Credits in Pickover's book.
   ;  Set p1=(3,0) to generate the Frontpiece
   ;  for Appendix C and to (2,0) for Credits
@@ -6954,7 +6954,7 @@ GLYNN(XAXIS) {; Based on an illustration in Science PROBE!  and a
    ; by Clifford Pickover.   Try p1 = 1.5, p2 = -0.2
    ; Jon Horner, FRAC'Cetera
    ;
-   z = pixel : z = z ^ p1 + p2 , |z| <=4 
+   z = pixel : z = z ^ p1 + p2 , |z| <=4
    }
 
 
@@ -7359,7 +7359,7 @@ TobeyWineglass(XAXIS) {; Pieter Branderhorst
   c = z = pixel:
    z = z * z + c,
    c = (1+flip(imag(fn1(c)))) * real(fn1(c)) / 3 + z,
-    |z| <= 4 
+    |z| <= 4
 }
 
 Whatever_the_name(XAXIS) {
@@ -7459,11 +7459,11 @@ z=(sqr(z) + 0.1) + c-1,
 |z| <=10
  }
 
-Carr-01 {; 
+Carr-01 {;
     z = Pixel, z = cosxx(z):
    z = z + Pixel
    z = sqr(z)
-    |z| <=4          
+    |z| <=4
   }
 
 Carr-02 {
@@ -7510,13 +7510,13 @@ c = z = 1 / pixel:
   }
 
 Carr-04 {
-c = z = 1 / pixel 
+c = z = 1 / pixel
  z = cosh(z) + c;
   |z| <= 4
   }
 
 Carr-05 {
-a=(0,0) , b=(0,0): 
+a=(0,0) , b=(0,0):
 z=z+1
 anew=sqr(a)-sqr(b)+pixel
 b=2.0*a*b+p1
@@ -7587,7 +7587,7 @@ Carr-14 { ; modified fnzp fnpix
 z = 1 / tan(1 / pixel) +p1,
 c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
 z = fn1(z) * fn2(z),
- |z| <=64 
+ |z| <=64
  }
 
 Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
@@ -8120,7 +8120,7 @@ z=z*z+(c-p2),
 Carr-572{
 z=1/conj(pixel-p1),c=sin(z/pixel)^conj(z/pixel):
 z=z*z+(c-p2),
-|z| <=10 
+|z| <=10
 }
 
 Carr-573{
@@ -8654,7 +8654,7 @@ z=(z-0.3)*(z-0.35)+c+0.224,
 abs(z*z/flip(pixel))<2.524
 }
 
-Carr-767{ ; This is a modification of a formula I saw somewhere. 
+Carr-767{ ; This is a modification of a formula I saw somewhere.
          ;If you know who's it is please let me know.
 c=z=1/(pixel^1.245):
 z=fn1(z^1.245)+fn2(c),

@@ -363,7 +363,7 @@ z=z*z+c;
 |real(z)| <=4
 }
 
-Carr1695{;Julia 
+Carr1695{;Julia
 z=1/(pixel+5*pixel),
 c=1/pixel-conj(pixel):
 z=z*z+c;

@@ -2,7 +2,7 @@
 ; This file contains the Fractint "FRMs" required by the .pars in the
 ; 97_MSG_1.PAR compilation
 
-aaa1a { 
+aaa1a {
 z=pixel,x=fn1(z+1)*whitesq,c=fn2(z*(1/pixel)):
 z=fn3(z*fn4(c-x))+c
 |z|<=8
@@ -540,7 +540,7 @@ KC-2 {;Ken Conrad, 9/96
   |z|<c
 }
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4,
   |z| <=6
@@ -548,10 +548,10 @@ Lesfrm04 (xaxis) {
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -563,7 +563,7 @@ Lesfrm30 { ; Modified Sylvie Gallet formula
    x1 = x + p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y + p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi  , y = (y1*pi)/(x*x*x)
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
   }
 
@@ -571,7 +571,7 @@ Lesfrm34 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
    x = x1^pi , y = y1^pi
    z = (x + flip(y))^pi
@@ -582,7 +582,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -629,26 +629,26 @@ m+j+n_2+if { ; Sylvie Gallet [101324,3444], 1996
   if (iter < 300)
     if (wait == 0)
       z = z*z + cm
-    endif 
+    endif
     bailout = |z| <= 16
     if (bailout == 0)
       z = 0 , wait = 1 , bailout = 1
-    endif 
-  else 
+    endif
+  else
     if (iter == 300)
       if (wait == 0)
         odd = 0 , wait = 1
-      endif 
+      endif
       z = pixel , bailout = 1
-    else 
+    else
       if (odd)
         zp0 = z^p0 , d = zp0 * p3 , n = zp0 * z - 1
         z = (-n/d+z) , bailout = |n| > 0.000001
-      else 
+      else
         z = z*z+p2 , bailout = |z| < 16
-      endif 
-    endif 
-  endif 
+      endif
+    endif
+  endif
   iter = iter + 1
   bailout
   }

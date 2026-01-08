@@ -5,15 +5,15 @@
 
 Crentura (YAXIS) {
 z = c = pixel + p1:
-z = (1/sqr(z)) * c + pixel 
-z = fn1(z) * z 
+z = (1/sqr(z)) * c + pixel
+z = fn1(z) * z
 |z| < 4
 }
 
 Crentura_2 (XAXIS) {
 z = c = pixel - 0.5:
-z = (1/sqr(z)) * z + pixel 
-z = fn1(z) * c 
+z = (1/sqr(z)) * z + pixel
+z = fn1(z) * c
 |z| < 4
 }
 
@@ -28,7 +28,7 @@ z = z * fn1(z) + pixel
 Rootura {
 z = pixel, pix = pixel + p1:
 z = (1/sqrt(z)) + pix
-z = fn1(z) * z - pixel 
+z = fn1(z) * z - pixel
 |z| < 4
 }
 

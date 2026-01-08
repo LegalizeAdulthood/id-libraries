@@ -1,11 +1,11 @@
 {
-These formulas were discovered while I was working as a spy for the 
+These formulas were discovered while I was working as a spy for the
 C.I.A. in K.G.B Headquarters in Moscow some years back. By a stroke
 of luck I gained access to the K.G.B.'s Very Top SECRET file room
 where their top Atom Bomb stuff was archived. I found a file with
 the code name "MONKEY PUNCHING". Here is my attempt to re-create
 that file for peaceful purposes. I borrowed heavily from the format of
-many FRACTINT formula files. If there is any duplication of 
+many FRACTINT formula files. If there is any duplication of
 someone else's formula it is strictly by accident.
 
 No commercial use of this file (or it's parts) is permitted
@@ -28,12 +28,12 @@ Ocala, FL 34482
 
 }
 
-Carr-01 {; 
-  
+Carr-01 {;
+
   z = Pixel, z = cosxx(z):
    z = z + Pixel
    z = sqr(z)
-    |z| <=4          
+    |z| <=4
   }
 
 Carr-02 {
@@ -80,13 +80,13 @@ c = z = 1 / pixel:
   }
 
 Carr-04 {
-c = z = 1 / pixel 
+c = z = 1 / pixel
  z = cosh(z) + c;
   |z| <= 4
   }
 
 Carr-05 {
-a=(0,0) , b=(0,0): 
+a=(0,0) , b=(0,0):
 z=z+1
 anew=sqr(a)-sqr(b)+pixel
 b=2.0*a*b+p1

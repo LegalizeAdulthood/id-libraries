@@ -33,7 +33,7 @@ endif
 z=(fn3(fn1(z+(a)+whitesq)*fn2(b*(z/a)))/fn4(z))+whitesq
 |z-1|<4
 }
-ep20z9 {; modified DAmien Jones frm 
+ep20z9 {; modified DAmien Jones frm
 IF (real(p1) == 0)
 p1 = 1
 ENDIF

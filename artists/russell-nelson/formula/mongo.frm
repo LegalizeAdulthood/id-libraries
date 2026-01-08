@@ -3,17 +3,17 @@ comment {
 
   Consider it FREEWARE; I encourage you to copy and distribute it, but
   only if it is unaltered.
-  
+
   I welcome any comments.  I'm B.BEACHAM on GEnie, and my postal address is:
-     
+
         Bradley Beacham
         1343 S. Tyler
         Salt Lake City, Utah  84105
         U.S.A.
-        
-  
-  NOTE: You'll probably get more interesting results by using floating-point 
-        math.  
+
+
+  NOTE: You'll probably get more interesting results by using floating-point
+        math.
 
 }
 

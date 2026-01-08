@@ -4,7 +4,7 @@
       z = pixel, zp = (0,0):
          temp = z
          z = z*z + zp
-         zp = temp, |zp| <= 4 
+         zp = temp, |zp| <= 4
   }
 
 
@@ -13,7 +13,7 @@
       z = pixel, zp = (0,0):
          temp = z
            z = z*z - zp
-           zp = temp,  |zp| <= 4 
+           zp = temp,  |zp| <= 4
   }
 
  octo(XYAXIS)  {
@@ -22,7 +22,7 @@
       z = pixel,zp=(0,0):
       temp = z
       z = z^3 + zp
-      zp = temp, |zp| <= 4 
+      zp = temp, |zp| <= 4
   }
 
  penta(XAXIS)  {
@@ -30,7 +30,7 @@
         z = pixel, zp = (0,0):
           temp = z
           z = z*z - zp
-          zp = conj(temp),|zp| <= 4 
+          zp = conj(temp),|zp| <= 4
   }
 
  star(XAXIS)  {
@@ -38,7 +38,7 @@
         z=pixel, zp = (0,0):
           temp = z
           z = z*z + zp
-          zp = conj(temp),|zp| <= 64 
+          zp = conj(temp),|zp| <= 64
   }
 
 penta2(XAXIS)  {
@@ -46,7 +46,7 @@ penta2(XAXIS)  {
         z = pixel^2, zp = (0,0):
           temp = z
           z = z*z - zp
-          zp = conj(temp),|zp| <= 4 
+          zp = conj(temp),|zp| <= 4
   }
 
 hsqr(XYAXIS)  {

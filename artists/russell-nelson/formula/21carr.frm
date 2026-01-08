@@ -6,13 +6,13 @@ taught me some of his tricks of the trade. I wrote down most
 of these trade tricks in formula form. They are enclosed
 below.
 
-For you history buffs, everybody thought Rembrandt was a 
+For you history buffs, everybody thought Rembrandt was a
 Dutchman. In reality he was an Eskimo who worked during the
 week in Holland and then took a Hot Air Baloon and dog sled
-trip back home on weekends to his native area on the 
+trip back home on weekends to his native area on the
 outskirts of the North Pole. When he got home his brother
 Rod would ask, "How was the trip Rembrandt?". Remmy would
-reply, "I didder Rod." To this day that term remains in 
+reply, "I didder Rod." To this day that term remains in
 Alaska carried down thru the ages by Remmy's descendants.
 
 This is a true story. <G>

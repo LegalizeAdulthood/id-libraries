@@ -376,7 +376,7 @@ c=flip(conj(cabs((pixel^5))))-conj(0.1/pixel),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test)), 
+z=(z*(1-test)),
 c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))+flip(imag(0.03750/pixel)))*whitesq
 z=(|z|/5)+z*z+c-0.09/pixel
 iter=iter+1
@@ -389,7 +389,7 @@ c=(-0.7456,-0.132)/2,z=flip(conj(cabs((0.25+pixel))))-conj(0.1/pixel-flip(0.01/p
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test)), 
+z=(z*(1-test)),
 c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))+flip(imag(0.03750/pixel)))*whitesq
 z=(|z|/5)+z*z+c-0.1/pixel
 iter=iter+1
@@ -404,7 +404,7 @@ c=conj(conj(z))+(z/3)-conj(0.1/pixel)
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test)), 
+z=(z*(1-test)),
 c=(c*(1-test)+test*(p2*c+p3))*(whitesq==0)+((z*(1-test))+flip(imag(0.03750/pixel)))*whitesq
 z=(|z|/5)+z*z+c-0.1/pixel
 iter=iter+1
@@ -421,7 +421,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.09/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8
 iter=iter+1
@@ -437,7 +437,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.1/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8
 iter=iter+1
@@ -452,7 +452,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.1/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8
 iter=iter+1
@@ -467,7 +467,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.1/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8
 iter=iter+1
@@ -481,7 +481,7 @@ z=abs(flip(conj(pixel)))+flip(0.01/pixel)-conj(0.001/pixel)
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c,
 iter=iter+1
@@ -495,7 +495,7 @@ z=abs(flip(conj(pixel^12)))-flip(0.01/pixel)+conj(0.001/pixel)
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c,
 iter=iter+1
@@ -509,7 +509,7 @@ z=abs(flip(conj(pixel^12)))-flip(0.1/pixel)+conj(0.1/pixel)+0.3
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c,
 iter=iter+1
@@ -524,7 +524,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.13/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8
 iter=iter+1
@@ -539,7 +539,7 @@ iter=0,nextzoom=iterspace=real(p1)
 b8=0.13/pixel:
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=z*(test==0), 
+z=z*(test==0),
 c=(c+(c*p2+p3-c)*test)*(whitesq==0)+(z+fip)*whitesq
 z=(|z|/5)+z*z+c-b8,
 iter=iter+1

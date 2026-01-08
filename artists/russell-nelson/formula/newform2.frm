@@ -18,7 +18,7 @@ JDG-7-01c { ; Modified Sylvie Gallet frm
 JoWe_04b (XYAXIS) {; Jo Weber [100424,35], 6/1996
   pixel=pixel*(-1)^(pixel>0)
   z = pixel:
-  a1=fn1(z), a2=p1/a1, 
+  a1=fn1(z), a2=p1/a1,
   z=a1+a2+pixel,
   ;SOURCE: jo_we_32.frm
 }
@@ -41,10 +41,10 @@ iter=iter+1
 }
 
 Lesfrm13 { ; Les St Clair, 1996
- z = pixel 
+ z = pixel
  x = fn1(z) , y = fn2(z):
  x = x*p1*pi
- y = y*p2*pi 
+ y = y*p2*pi
  z = x/y
  |z| <= 4
 }
@@ -187,7 +187,7 @@ Lesfrm30 { ; Modified Sylvie Gallet formula
    x1 = x + p1*fn1(y + fn2(p2*x) + fn3(p3*y))
    y1 = y + p1*fn1(x + fn2(p2*y) + fn3(p3*x))
    x = x1*pi  , y = (y1*pi)/(x*x*x)
-   z = x + flip(y) 
+   z = x + flip(y)
     |z| <= 32
   }
 
@@ -195,7 +195,7 @@ Lesfrm34 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
    x = x1^pi , y = y1^pi
    z = (x + flip(y))^pi
@@ -223,7 +223,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -239,7 +239,7 @@ Gallet-8-03 { ; Sylvie Gallet [101324,3444], Mar 1997
    |zn| <= 4
    }
 
-aaa1a { 
+aaa1a {
 z=pixel,x=fn1(z+1)*whitesq,c=fn2(z*(1/pixel)):
 z=fn3(z*fn4(c-x))+c
 |z|<=8
@@ -270,7 +270,7 @@ KC-2 {;Ken Conrad, 9/96
   |z|<c
 }
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4,
   |z| <=6
@@ -348,7 +348,7 @@ Gallet-8-13 { ; Sylvie Gallet [101324,3444], Mar 1997
    |z| <= 16
    }
 
-Lesfrm04 (xaxis) { 
+Lesfrm04 (xaxis) {
   c=z=pixel:
   z=z+(fn1(c^2)/fn2(z^2))/c^4,
   |z| <=6
@@ -363,7 +363,7 @@ Lesfrm43    { ; Modified Sylvie Gallet formula
   beta = fn2(h/r) , alpha = fn2(h/(r*ir))
   z = pixel * (((h - fn3(r*r - h*h) * fn4(beta - alpha)) / h) * (h < r) \
       + (h >= r))
-  center = round(p1*z) * pinv 
+  center = round(p1*z) * pinv
   test = cabs(z-center) < 0.45*pinv
   z = cabs(center) + p1 * (test == 0)
   :
@@ -752,12 +752,12 @@ kmoe-010 {; by Kirsten Moe. Rewritten for Orgform by G. Martin 7/14/97
 }
 
 kmoe-03 {; by Kirsten Moe. Rewritten by G. Martin for Orgform 7/14/97
-  z=pixel 
-  x=cos(sqr(z))       
+  z=pixel
+  x=cos(sqr(z))
   z=3/(x-3)*imag(z)
-  z<12 
+  z<12
 }
-        
+
 tent_in_mod { ; Modified Sylvie Gallet formula
               ; Modified tent_inside.frm (generalized by Les St Clair)
               ; use fn1,fn2,fn4=abs & fn3=cabs for default behaviour
@@ -804,7 +804,7 @@ rand_generic { ; ****	PARAMETER 1 MUST BE > 0   ****
 	       }
 
 
-Carr3192-1(YAXIS)  {;Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr3192-1(YAXIS)  {;Modified Sylvie Gallet frm. [101324,3444],1996
                   ;passes=1 needs to be used with this PHC formula.
 pixel=-abs(real(pixel))+flip(imag(pixel)),
 d=log(1/pixel-cos(1/pixel))
@@ -823,7 +823,7 @@ iter=iter+1
 cabs(|z|)<=bailout
 }
 
-Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996 
+Carr3192 (YAXIS) {; Modified Sylvie Gallet frm. [101324,3444],1996
 		  ; passes=1 needs to be used with this PHC formula.
                   ; Rewritten for if..else by George Martin 8/1/97
                   ; Rerewritten by Sylvie
@@ -995,7 +995,7 @@ Lesfrm35 { ; Modified Sylvie Gallet formula
            ; Modified Gallet-5-08
            ; Les St Clair 1997
   z = pixel*pi , x = real(z), y = imag(z):
-   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y)) 
+   x1 = x - p1*fn1(y + 0.5*fn2(y+fn1(x)) + fn3(p2*x) + fn3*fn1(p3*y))
    y1 = y - p1*fn1(x + 0.5*fn2(x+fn1(y)) + fn3(p2*y) + fn3*fn1(p3*x))
    x = x1+p1^pi , y = y1+p2^pi
    z = (x + flip(y))
@@ -1272,7 +1272,7 @@ Whatzit5 {; Dan Farmer  -  from thread in General Information.
   |real(z)| <=10  ||  |imag(z)| <=10
 }
 
-rfr0ak1 {;(c) Rolf Freericks 
+rfr0ak1 {;(c) Rolf Freericks
                ;rfreericks@compuserve.com
 c = pixel
 h=z=p1
@@ -1379,7 +1379,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1394,7 +1394,7 @@ dmj-Mand-Hyp-Dec { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1414,7 +1414,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1430,7 +1430,7 @@ dmj-Mand-Cir-Dec { ; outside = decomp: angle of closest z[n] to ring at p1
 	  z = point			; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1447,7 +1447,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	point = 0			; Point of that closest approach.
 	done = 2			; Iteration counter.
 	r = (0,1) ^ (real(p2)/90)	; Compute rotation vector.
-	
+
 	z = 0, c = pixel:		; Mandelbrot initialization.
 	z = sqr(z) + c			; Mandelbrot calculation.
 
@@ -1462,7 +1462,7 @@ dmj-Mand-Hyp-Ang { ; outside = decomp: angle of closest z[n] to hyperbola at p1
 	  z = point - p1		; Return closest point.
 	  done = -1			; Set flag to force an exit.
 	ENDIF
-	
+
 	done >= 0			; Continue if the flag is clear.
 }
 
@@ -1847,7 +1847,7 @@ Mod-August4 { ;Modified Sylvie Gallet frm, Dec 1997
 F'Icon-Odd (XYAXIS) { ; Generalization by Jon Horner - 100112,1700
                       ; of formula by Ramiro Perez (rperez@ns.pa)
                       ; ODD degrees produce an EVEN no. of features
-                      ; real(p3) varies the degree 
+                      ; real(p3) varies the degree
                       ; for originals set fn1=conj, fn2=ident
   z1=fn2(pixel), z=0, l=real(p1), a=imag(p1), b=real(p2), g=imag(p2):
   zm = z1 ^ real(p3)

@@ -25,7 +25,7 @@ comment {
      For degreesC = 25 , Vt ~= 0.025 [v]
 
     Ids =  Saturation current                 .
-     Vs =  Applied , source , voltage         . 
+     Vs =  Applied , source , voltage         .
       n =  Ideality factor = ( 1 to 2 )       .
      Vt =  K * T / Q       Thermionic Voltage .
 
@@ -46,7 +46,7 @@ comment {
         |                   |__________________|
         |                            |
         |                          .---.
-        |                          |   | Rs  
+        |                          |   | Rs
         |                          |___|
         '----------------------------'
 
@@ -64,7 +64,7 @@ comment {
      The steps involved are :
 
  1)
-    Let    log(x) = (Vs-i*Rs)/(n*Vt)  
+    Let    log(x) = (Vs-i*Rs)/(n*Vt)
 
  2)
     Solve  log(x) = (Vs-i*Rs)/(n*Vt)  in terms of   i  .
@@ -78,7 +78,7 @@ comment {
 
      -(n*Vt*log(x)-Vs)/Rs = Ids*(x-1) + Gm*((n*Vt*log(x)/Rs)*Rs)
 
-    
+
         (Vs-n*Vt*log(x))/Rs = Ids*(x-1) + Gm*(n*Vt*log(x))
 
 
@@ -96,7 +96,7 @@ comment {
 6)
      Now  Newton's iteration  formula is :
 
-             
+
                        x  = x - f(x) / f '(x)    ,      where   f '(x)  == d f(x) / dx  .
 
 7)
@@ -109,14 +109,14 @@ comment {
                   f '(x) =  1 = -(Gm*n*Rs*Vt+n*Vt)/(Is*Rs*x)
 
 
-8)  
+8)
      Therefore  Newton's  iteration formula for this example is :
 
 
         x = x - (   -((Gm*n*Rs*Vt+n*Vt)*log(x)-Vs-Is*Rs)/(Is*Rs),Is*Rs,1) - x )/( -(Gm*n*Rs*Vt+n*Vt)/(Is*Rs*x)-1)
 
 
-9)      
+9)
      Simplifying  (8)
 
 
@@ -141,9 +141,9 @@ Substitute
      substitution  :
 
 
-          log(x) = (Vs-i*Rs)/(n*Vt)  
+          log(x) = (Vs-i*Rs)/(n*Vt)
 
-     
+
           Solving  for  i  ,
 
 
@@ -236,7 +236,7 @@ comment {
 
     Also a logarithmic palette  .
 
-    
+
     Minibrot structures aren't immediately apparent at
   the default parameter settings .
 
@@ -263,5 +263,5 @@ the  map .
 
 
 
-  
+
 }

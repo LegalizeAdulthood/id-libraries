@@ -52,7 +52,7 @@ z>=4
 phcsary7{;from spacemandel_phc by Damion presogna, 11/18/96;modified by alex dukay
 11/22/96
 z=pixel, r=(pixel*whitesq):
-r=fn1(1/z)+r 
+r=fn1(1/z)+r
 m=fn2((1-(z*z))*imag(flip(z)))
 z=(m*(whitesq))+(r-1)
 |z|<=4
@@ -60,7 +60,7 @@ z=(m*(whitesq))+(r-1)
 phcsary6{;from spacemandel_phc by Damion presogna, 11/18/96; modified by alex dukay
 11/22/96
 z=pixel, r=(pixel*whitesq):
-r=fn1(1/z)+r 
+r=fn1(1/z)+r
 m=fn2((1-(z*z))*imag(flip(z)))
 z=(m*(whitesq)+(r-1))
 |z|<4||2<|r|
@@ -102,7 +102,7 @@ z=pixel:
 z=z+pixel*(whitesq==0)
 t=(fn3(z)+whitesq)^P1
 z=fn2(cos(1-z)+sin(1/z))*1-fn1(1/z*sin(t)+fn4(t))
-|z|<=4  
+|z|<=4
 }
 phcyy9{ ; Jim Deutch/modified by Alex Dukay.july/96
 z=whitesq

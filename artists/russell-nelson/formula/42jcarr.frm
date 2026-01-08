@@ -65,15 +65,15 @@ pixel=-abs(real(pixel))+flip(imag(pixel)),
 z=c=0.55*((2*pixel-flip(0.010/pixel)-conj(0.10/pixel))),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+(1.099,0.0)
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -83,15 +83,15 @@ pixel=-abs(real(pixel))+flip(imag(pixel)),
 z=c=conj(conj(pixel/2-conj(0.10/pixel)))
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+(2.099,0.0)
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -102,15 +102,15 @@ z=conj(conj(pixel/2-conj(0.10/pixel))),
 c=(-0.7456,-0.132),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1.2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -120,15 +120,15 @@ z=conj(conj(pixel/3-conj(0.10/pixel))),
 c=conj(pixel^3)-conj(0.10/pixel),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -138,15 +138,15 @@ pixel=-abs(real(pixel))+flip(imag(pixel)),
 z=c=pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^6,
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1,
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -157,15 +157,15 @@ z=cabs(2*pixel)-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^6,
 c=pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^6,
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1.2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -176,15 +176,15 @@ z=cabs(2*pixel)-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^2+0.4,
 c=(pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel))))^2-0.4,
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -195,15 +195,15 @@ z=cabs(2*pixel)-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^2+0.4,
 c=((pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel))))^2-0.4)^4,
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1.5
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -214,15 +214,15 @@ z=((pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel))))^2)^4,
 c=(-0.7456,0.2)
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -233,15 +233,15 @@ z=cabs(2*pixel)-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel)))^2+0.3,
 c=(-0.7456,0.2)
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -252,15 +252,15 @@ z=((pixel-1/(tanh(0.10/pixel)-sqr(sinh(0.0250/pixel))))^2)^4,
 c=(-1.099,-0.3249)
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+3
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -271,15 +271,15 @@ z=((cabs(3*pixel)-1/(conj(0.10/pixel)-sqr(flip(0.0250/pixel))))^2)^4,
 c=(-1.099,-0.3249)/2
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+4
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -290,15 +290,15 @@ z=sinh(pixel^2)-1/log(pixel-(0.10/pixel)-flip(0.0010/pixel)),
 c=sin(conj(-0.7896,-0.1309)/3),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1.5
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -309,15 +309,15 @@ z=(pixel-(conj(0.10/pixel)+flip(conj(0.010/pixel)))^4),
 c=(-0.7456,-0.3815)/1.7
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
@@ -329,21 +329,21 @@ z=(cabs(0.5-pixel)*sqr(conj(pixel))-m3-sqr(flip(0.00510/pixel)))-0.3,
 c=(-1.099,-0.2249),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+1
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
 
 Carr2445(YAXIS){; modified Jo Weber frm.
-pixel=-abs(real(pixel))+flip(imag(pixel)), 
+pixel=-abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 m3=conj(0.10/pixel),
 z=(conj(0.5-pixel)*sqr(cabs(pixel))-m3-sqr(flip(0.00510/pixel)))-0.44:
@@ -359,21 +359,21 @@ z=(conj(0.5-pixel)*sqr(cabs(pixel))-m3-sqr(flip(0.00510/pixel)))-0.44,
 c=(-1.099,-0.2249),
 x=real(z),y=imag(z),fn1=sin,fn2=atan,
 x1=x-p2*fn1(y+p3*fn2(y)),
-y1=y-p2*fn1(x+p3*fn2(x)),iter=1, 
-rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1) 
+y1=y-p2*fn1(x+p3*fn2(x)),iter=1,
+rad=fn1(3.1*fn3(x1+flip(y1))),center=(1.0,0.1)
 pix=fn2(10*pixel+(5.0,-3.4))*(-0.1,-0.95)
 zn=center+fn4(rad)/(pix-center)
 limit=real(p1),b1=16,b2=0.0001:
 test1=(iter<limit),test2=(iter!=limit)
-z=(z-zn)*test2+zn  
+z=(z-zn)*test2+zn
 z2=z*z,z4=z2*z2,z1=(z4*z-1)/(4*z4)
-z=(z2+c)*test1+(z-z1)*(1-test1)  
+z=(z2+c)*test1+(z-z1)*(1-test1)
 iter=iter+2
 ((|z|<= b1)*test1)||((|z1|>=b2)*(1-test1))
 }
 
 Carr2447(YAXIS){; modified Jo Weber frm.
-pixel=-abs(real(pixel))+flip(imag(pixel)), 
+pixel=-abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 m3=conj(0.10/pixel),
 z=(cabs(0.5-pixel)*sqr(conj(pixel))-m3-sqr(flip(0.00510/pixel)))-0.3:
@@ -383,7 +383,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2448(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=1/(pixel-1/log(0.0010/pixel)-cos(0.010/pixel+1.25)-conj(0.10/pixel)):
 oldz=z,
@@ -392,7 +392,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2449(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=(pixel-flip(0.0010/pixel)-cabs(0.010/pixel)-conj(0.10/pixel)):
 oldz=z,
@@ -401,7 +401,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2450(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=flip(0.33-sin(pixel))*sqr(pixel)-conj(0.10/pixel)-flip(0.010/pixel):
 oldz=z,
@@ -410,7 +410,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2451(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=pixel-conj(0.090/pixel-flip(0.010/pixel)):
 oldz=z,
@@ -419,7 +419,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2452(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=pixel-((tan(1/pixel)+sin(1/pixel)-flip(1/pixel))):
 oldz=z,
@@ -428,7 +428,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2453(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=cabs(pixel)-(((0.3,0.6)+pixel)/(0.20/pixel)):
 oldz=z,
@@ -437,7 +437,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2454(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=pixel*sqr(pixel)-conj(0.010/pixel)-flip(0.010/pixel):
 oldz=z,
@@ -446,7 +446,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2455(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 m3=flip(cabs(1-pixel))*sqr(conj(pixel))
 z=m3-(conj(0.10/pixel))-flip(0.010/pixel):
@@ -456,7 +456,7 @@ z=(pm1*(z^p1)+1)/(p1*z^pm1),
 }
 
 Carr2456(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=sqr(pixel)/(conj(pixel)):
 oldz=z,
@@ -465,7 +465,7 @@ z=(pm1*(z^p1)+1)/(1.2*(p1*z^pm1)),
 }
 
 Carr2457(YAXIS){ ; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=flip(cabs(1+pixel))-flip(0.010/pixel):
 oldz=z,
@@ -474,7 +474,7 @@ z=(pm1*(z^p1)+1)/((p1*z^pm1)),
 }
 
 Carr2458(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 m3=cabs(pixel+0.5)*conj(conj(pixel^7))
 z=(m3-conj(0.10/pixel)-sqr(flip(0.00510/pixel)))-0.25:
@@ -484,7 +484,7 @@ z=(pm1*(z^p1)+1)/((p1*z^pm1)),
 }
 
 Carr2459(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=abs(conj(pixel))-0.15:
 oldz=z,
@@ -493,7 +493,7 @@ z=(pm1*(z^p1)+1)/((p1*z^pm1)),
 }
 
 Carr2460(YAXIS){; modified Jo Weber frm.
-pixel=abs(real(pixel))+flip(imag(pixel)), 
+pixel=abs(real(pixel))+flip(imag(pixel)),
 pm1=p1-1,
 z=conj(conj(pixel*pixel-flip(0.010/pixel)-conj(0.10/pixel))):
 oldz=z,
@@ -629,7 +629,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=(sqr(z*z)+c),
 iter=iter+1
@@ -642,7 +642,7 @@ d1=(0.00129475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=(z^5+c),
 iter=iter+1
@@ -655,7 +655,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -668,7 +668,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1
@@ -682,7 +682,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)),
 c=c*(1-test)+d1+test*(p2*c+p3)
 z=z^2+c,
 iter=iter+1

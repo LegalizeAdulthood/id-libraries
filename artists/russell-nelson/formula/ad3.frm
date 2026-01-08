@@ -74,7 +74,7 @@ z=z-fn2(p3/z)+p3*(z)*(1-t)/fn3(t)
 l6{
 z=pixel,z1=(1-pixel),y=fn4(1/z1),c=(y+y)^p1:
 z=fn1(z)*fn2(z1+1)
-z=(fn1((z1-2)/z+1)+(fn2(z1-1)))*1/(z1+z1) 
+z=(fn1((z1-2)/z+1)+(fn2(z1-1)))*1/(z1+z1)
 z=fn2(z1*y)/fn3(1/c-1)/fn3(z1*((y+z)))+(c*z)
 |z|<4
 }
@@ -112,8 +112,8 @@ z=z+z
 n5{
 z=pixel:
 t=z-tan(pixel/2),p=22/7,n=conj(real(z/(t+z))),
-o=cos((pixel+p))/fn3(t^-p)+fn4(t*((p^z))) 
-z=fn2(t*z)/fn3(t^3)*(fn1(t*n/-fn2(z*t))-fn3(z-fn4(z-t))) 
+o=cos((pixel+p))/fn3(t^-p)+fn4(t*((p^z)))
+z=fn2(t*z)/fn3(t^3)*(fn1(t*n/-fn2(z*t))-fn3(z-fn4(z-t)))
 |z|>=4
 }
 a23{

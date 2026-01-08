@@ -90,7 +90,7 @@ OrmandelPower     { ; Copr. 1995 by Jack Orman
   z=(fn1(z)/fn2(z))^p1 + c
   |z|<4
   }
-      
+
 
 OrmandelFunc    {; Copr. 1995 by Jack Orman
   z = pixel, c = fn1(pixel):

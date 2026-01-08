@@ -80,7 +80,7 @@ SGG011 {
    |z|<=2
 }
 
-;01.01.1995 
+;01.01.1995
 SGG012 {
    z=pixel
    b=sqr(z*z)
@@ -106,7 +106,7 @@ SGG014 {
 
 ;01.01.1995
 SGG015 {
-   z=pixel  
+   z=pixel
    z=sqr(z)/sin(z)+1/pixel
    |z|<=4
 }
@@ -177,7 +177,7 @@ SGG022 {
    |z|<=2
 }
 
-;14.01.1995 
+;14.01.1995
 SGG023 {
    z=a=sqr(pixel*pixel):
    a=z*exp(log(a));
@@ -301,7 +301,7 @@ SGG034 {
    |z|<=2
 }
 
-;27.01.1995 
+;27.01.1995
 SGG035 {
    z=x=1/pixel:
    z=z*z+sin(x);
@@ -392,7 +392,7 @@ SGG043 {; modified Carr-95.frm
 	|z|<=20
 }
 
-;05.02.1995 
+;05.02.1995
 SGG044 {
    z=pixel:
    b=sqr(z*z);
@@ -410,7 +410,7 @@ SGG045 {
    |z|<=4
 }
 
-;06.02.1995 
+;06.02.1995
 SGG046 {; Edited for Fractint v. 20 by George Martin, 10/98
   z=a=pixel*pixel:
   b=3.14159265
@@ -425,10 +425,10 @@ SGG046 {; Edited for Fractint v. 20 by George Martin, 10/98
 ; guenzel5.frm
 ; by Siegbert G. Guenzel, CIS 100543,1216
 
-;15.02.1995 
+;15.02.1995
 SGG047 {
    z=pixel:
-   v=cos(z); 
+   v=cos(z);
    w=flip(z);
    x=sqr(z);
    y=exp(z);
@@ -436,10 +436,10 @@ SGG047 {
    |z|<=50
 }
 
-;07.02.1995 
+;07.02.1995
 SGG048 {
    z=pixel:
-   v=sqr(z); 
+   v=sqr(z);
    w=sin(z);
    x=log(z);
    y=cos(z);
@@ -447,7 +447,7 @@ SGG048 {
    |z|<=50
 }
 
-;13.02.1995 
+;13.02.1995
 SGG049 {; Edited by George Martin to remove extra ":"
   z=pixel+p1:
   y=sin(z)+p2
@@ -456,8 +456,8 @@ SGG049 {; Edited by George Martin to remove extra ":"
   ;SOURCE: guenzel.frm
 }
 
-;13.02.1995 
-SGG050 {  
+;13.02.1995
+SGG050 {
    z=sqr(pixel):
    z=(p1*cosxx(z))/sqr(p2)+1/z,
    |z|<=20
@@ -472,11 +472,11 @@ SGG051 {
    |z|<=4
   }
 
-;13.02.1995 
-SGG052 {  
+;13.02.1995
+SGG052 {
    z=1/pixel+p1:
    x=sqr(z);
-   x=cos(z)+0.31;   
+   x=cos(z)+0.31;
    z=x+log(z*z);
     |z| <=35
  }
@@ -493,7 +493,7 @@ x=cotan(z-sqr(x)),
 ;15.02.1995
 SGG054 {
    z=pixel:
-   x=cotanh(z)+conj(z*0.337)/pixel 
+   x=cotanh(z)+conj(z*0.337)/pixel
    z=x*log(z)-(z*z)+p1,
    |z|<=10
    }
@@ -501,7 +501,7 @@ SGG054 {
 ; guenzel6.frm
 ; by Siegbert G. Guenzel, CIS 100543,1216
 
-;16.02.1995 
+;16.02.1995
 SGG055 {
    z=sqr(pixel),x=pixel:
    x=z*z*z-pixel;
@@ -519,11 +519,11 @@ SGG056 {
 
 SGG057 {
    z=1/pixel+p1,x=real(p2)+pixel:
-   x=log(z^z+pixel) ;  
+   x=log(z^z+pixel) ;
    z=z+sqr(x),
    |z|<20
  }
- 
+
 SGG058 {;18.02.95
    z=x=log(pixel):
    z=(z*z+x);
@@ -616,14 +616,14 @@ SGG069 {;24.02.95
 }
 
 SGG070 {;05.03.95
-    z=x=pixel*0.87: 
+    z=x=pixel*0.87:
     x=conj(z-(x+0.11));
     z=1.11/(flip(z^x)),
     |z|<=8
 }
 
 SGG071 {;05.03.95
-    z=pixel*0.87,x=sqr(pixel): 
+    z=pixel*0.87,x=sqr(pixel):
     x=conj(z-(x+0.11));
     z=1.11/(flip(z^x)),
     |z|<=x/(log(z))+2
@@ -661,7 +661,7 @@ SGG075 {; 10.03.95
 SGG076 {; 10.03.95
 z=pixel,x=sqr(pixel*pixel):
 x=x+sqr(z);
-z=cosxx(z)+1/x, 
+z=cosxx(z)+1/x,
 |z|<=20
 }
 

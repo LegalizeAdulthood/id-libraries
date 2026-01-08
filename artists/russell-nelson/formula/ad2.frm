@@ -14,7 +14,7 @@ z=fn1(a+b)+fn2((a/b)^fn3(d))+c
 |z|<=4
 }
 a-0a1{
-z=pixel,y=z^fn1(1-z),x=(z^z)/(z-p1): 
+z=pixel,y=z^fn1(1-z),x=(z^z)/(z-p1):
 z=fn3(z^fn4(y))*fn2(z*(1/x))+c
 |z|<5
 }
@@ -46,15 +46,15 @@ z=pixel,c=fn1((5+1)/2):
 z=fn2(z^4+c)
 |z|<=4
 }
-=05{ 
+=05{
 z=pixel
 x=fn1(tan(z))+pixel
 y=fn2(cotan(z))+(pixel^pixel)
 l=(x^y)^22:
-z=fn1(x)*fn2(y)*fn3(l)+c 
+z=fn1(x)*fn2(y)*fn3(l)+c
 |z|<4
 }
-=03{ 
+=03{
 z=c=pixel
 x=fn1(z-1/p1)
 y=fn2(x^(z)/p2):
@@ -63,7 +63,7 @@ z=fn4(x-z)+fn3(y+(z-1))+c
 }
 =01{
 z=pixel,x=fn3(c+pixel),y=fn4(c+pixel)^3.14189 ,a=(z^22)+x,b=(z^7)+y:
-z=(fn1(a^b))+(fn2(b^a+b))+c 
+z=(fn1(a^b))+(fn2(b^a+b))+c
 |z|<=4
 }
 =00{
@@ -114,7 +114,7 @@ z=(fn1(t*1/n))+fn2(t*1/m)+c
 u4{
 z=pixel,t=fn1(z^(2.2)),u=sin(z*z/(z+.2)),n=flip(z-real(log(z))):
 z=(fn2(z*z/(z+.2))/asin(z-flip(log(z))))^fn3(t+u+n)
-|z|<=4                         
+|z|<=4
 }
 t5{
 z=pixel:
@@ -202,6 +202,6 @@ z=fn1((z^z)*fn3(z*z)/p1)/fn2(imag(z+p2)+c)
 }
 ao6{
 z=pixel:
-z=fn1(z-1)^fn3(p2)+(c+p1), 
+z=fn1(z-1)^fn3(p2)+(c+p1),
 |z|>4
 }

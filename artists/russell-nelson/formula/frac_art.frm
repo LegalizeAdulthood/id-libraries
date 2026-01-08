@@ -4,7 +4,7 @@
 ; Including formulas required for Jay Hill's FOTN
 
 3telescope { ; (c) Jay Hill, 1998
-             ; use outside=summ periodicity=0 
+             ; use outside=summ periodicity=0
 done = 1, z = 0, zc = 0, c = pixel
 s=|c|, t1=(256*s - 96)*s + 32*Real(c); period 1 test
 t2=16*s + 32*Real(c) + 16 ; period 2 test
@@ -19,7 +19,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 3wayMandelbrot {; Jim Muth
 z=p3, g=pixel, a=real(p1), b=imag(p1),
@@ -164,7 +164,7 @@ BillTry6 (yaxis) {; Bill Rossi
     c = fn4(c),
     z = z * pixel + c / z,
     |z| <= 4
- } 
+ }
 
 boring {;Candidate for contest
   ;p2 = bailout value
@@ -191,7 +191,7 @@ done = 1, z = 0,
 zc = c = (pixel+p3)*(1-whitesq) + (pixel/p2+p1) *whitesq
 s=|c|, t1=(256*s - 96)*s + 32*Real(c), t2=16*s + 32*Real(c) + 16
 B=sqrt(-4*c-7), t3=|8+4*c*(1-B)|, t4=|8+4*c*(1+B)| ; component tests
-z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) ; set colors 
+z=z + 249*(t1<=3) + 250*(t2<=1) + 251*(t3<=1) + 252*(t4<=1) ; set colors
 if(z>0) ; for periods 1, 2, 3
 done=-1 ; color is set for c in a component, skip iterations
 endif
@@ -201,7 +201,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 carnival {; Jim Muth
 z=c=pixel:
@@ -212,7 +212,7 @@ z=z-1*a/b
 }
 
 Colorit-16JS { ; (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
@@ -220,54 +220,54 @@ w=exp(A-log(16)/15), c=w-sqr(sqr(sqr(sqr(w)))), z=pixel:
 z=sqr(sqr(sqr(sqr(z)))) + c
 |z| <=4
 }
- 
+
 Colorit2cove { ; (c) Jay Hill, 1998
 done = 1, iter=0, z = 0, zc = 0, c = pixel, dz=1
 : ; initialization.
-iter = iter+1 ; gotta count em 
+iter = iter+1 ; gotta count em
 dz=2*zc*dz+1 ; derivative of z
 zc=sqr(zc) + c ; standard MSet iteration
-if(|zc| >= 1024) ; Bailout 
+if(|zc| >= 1024) ; Bailout
 z = z -8 + ((sin(2*pi*iter/256)*Real(dz/zc))>0) + iter
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 Colorit-2rPanx { ; (c) Jay Hill, 1998
 ; p1= light angle (cos a, sin a)
 ; p2 = pan view point
 if(p1==0)
 p1=1
-endif 
+endif
 done = 1, iter=0, z = 0, zc = 0, dz=1,
 c = exp(flip(pixel))+p2
 : ; initialization.
-iter = iter+1 ; gotta count em 
+iter = iter+1 ; gotta count em
 dz=2*zc*dz+1 ; derivative, dz/dc
 zc=sqr(zc) + c ; standard MSet iteration
-if(|zc| >= 1024) ; Bailout 
+if(|zc| >= 1024) ; Bailout
 z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 Colorit-3 { ; (c) Jay Hill, 1998
-b=p1 ; cos(a)+i*sin(a), a=light angle 
+b=p1 ; cos(a)+i*sin(a), a=light angle
 if(p1==0)
   p1=1
 endif
 done = 1, iter=0, z = 0, zc = 0, c = pixel, dz=1:
-iter = iter+1 ; gotta count em 
+iter = iter+1 ; gotta count em
 dz=3*sqr(zc)*dz+1 ; derivative, dz/dc
 zc=zc*sqr(zc) + c ; standard MSet iteration
-if(|zc| >= 1024)   ; Bailout 
+if(|zc| >= 1024)   ; Bailout
   z = z -8 + ((sin(2*pi*iter/256)*Real(b*dz/zc))>0) + iter
   done=-1   ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 Colorit-3f {; (c) Jay Hill, 1998
             ; p1= light angle (cos a, sin a)
@@ -292,7 +292,7 @@ Colorit-3f {; (c) Jay Hill, 1998
 }
 
 Colorit-3fJS { ; (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1
 component
@@ -301,17 +301,17 @@ c=sinh(3*asinh(.5*exp(pi*A)))/sqrt(-6.75)
 z=pixel:
 z=z*sqr(z) + c
 |z| <=4
-} 
+}
 
 Colorit-3JS { ; three corner Siegel disk (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
 w=exp(A-.5*log(3)), c=w*(1-sqr(w)), z=pixel:
 z=z*sqr(z) + c
 |z| <=4
-} 
+}
 
 Colorit-3rPan { ; (c) Jay Hill, 1998
 ; p1= light angle (cos a, sin a)
@@ -322,10 +322,10 @@ endif
 done = 1, iter=0, z = 0, zc = 0, dz=1,
 c = exp(flip(pixel))-p2
 : ; initialization.
-iter = iter+1 ; gotta count em 
+iter = iter+1 ; gotta count em
 dz=3*sqr(zc)*dz+1 ; derivative, dz/dc
 zc=zc*sqr(zc) + c ; standard MSet iteration
-if(|zc| >= 1024) ; Bailout 
+if(|zc| >= 1024) ; Bailout
 z = z -8 + ((sin(2*pi*iter/256)*Real(p1*dz/zc))>0) + iter
 done=-1 ; Set flag to force an exit.
 endif
@@ -333,44 +333,44 @@ done >= 0 ; Continue if the flag >=0.
 }
 
 Colorit-4JS { ;  four corner Siegel disk (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
 w=exp(A-log(4)/3), c=w-sqr(sqr(w)), z=pixel:
 z=sqr(sqr(z)) + c
 |z| <=4
-} 
+}
 
 Colorit-5JS { ; five corner Siegel disk (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
 w=exp(A-log(5)/4), c=w-w*sqr(sqr(w)), z=pixel:
 z=z*sqr(sqr(z)) + c
 |z| <=4
-} 
+}
 
 Colorit-6JS { ;  six corner Siegel disk(c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
 w=exp(A-log(6)/5), c=w-sqr(w*sqr(w)), z=pixel:
 z=sqr(z*sqr(z)) + c
 |z| <=4
-} 
+}
 
 Colorit-8JS { ; eight corner Siegel disk (c) Jay Hill, 1998
-; angle=real(p1)+sqrt(imag(p1)) 
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
 w=exp(A-log(8)/7), c=w-sqr(sqr(sqr(w))), z=pixel:
 z=sqr(sqr(sqr(z))) + c
 |z| <=4
-} 
+}
 
 ColoritL { ; (c) Jay Hill, 1998
 done = 1, z = 0, zc = 0, c = pixel
@@ -386,7 +386,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 ColoritM2 { ; (c) Jay Hill, 1998
 done = 1, z = 0, zc = 0, c = pi*pixel
@@ -416,11 +416,11 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 Colorit-nJS { ; n corner Siegel disk (c) Jay Hill, 1998
-n=(real(p2)); z:=z^n+c 
-; angle=real(p1)+sqrt(imag(p1)) 
+n=(real(p2)); z:=z^n+c
+; angle=real(p1)+sqrt(imag(p1))
 ; angle= log(Julia parameter)/pi
 ; when real(p1)=0, Julia is on edge of Period 1 component
 A=i*real(p1)+sqrt(-imag(p1))
@@ -462,9 +462,9 @@ f<=|zy-a|
 }
 
 DEFNEWT1{; Ray Girvan May 1997
-   ; deformed Newton 
+   ; deformed Newton
    ; use floating point / periodicity=no / iterations = 1000
-   ; try p1=(1.97,0) (1,0.8) (0.6,0.8) (0.1,0.4) 
+   ; try p1=(1.97,0) (1,0.8) (0.6,0.8) (0.1,0.4)
    z=pixel:
    z1=z*z*z-1; any function f(z)
    z2=3*z*z; its derivative f'(z)
@@ -526,7 +526,7 @@ z=pixel
 : ; Derbyshire's formula
 z=exp(z)+c/sqr(z+2),
 real(z)<=900000
-} 
+}
 
 Explode_M_2j { ; by Jay Hill, 1998
 ; after Paul Derbyshire
@@ -551,7 +551,7 @@ z=z-func/der
 : ; Derbyshire's formula
 z=exp(z)+c/sqr(z+2),
 real(z)<=900000
-} 
+}
 
 Explode_M_pj { ; by Jay Hill, 1998
 ; after Paul Derbyshire
@@ -571,10 +571,10 @@ z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
 z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
 z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
 z=.2*z+.8*(-p+exp((log(2*c)-z)/3))
-: 
+:
 z=exp(z)+c/sqr(z+p),
 real(z)<=900000
-} 
+}
 
 Explode_M_p3j { ; by Jay Hill, 1998
 ; z=exp(z)+c/(z+p)^3
@@ -595,10 +595,10 @@ z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
 z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
 z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
 z=.2*z+.8*(-p+exp((log(3*c)-z)/4))
-: 
+:
 z=exp(z)+c/sqr(z+p)/(z+p),
 real(z)<=900000
-} 
+}
 
 FatHeart (xaxis) { ; M.L. Newsted Jr.
 	z = pixel / (pixel-1)
@@ -611,7 +611,7 @@ fatlog { ; by Jay Hill, 1998
 c=log(pixel),z=0:
 z=sqr(z)+c
 |z|<=100
-} 
+}
 
 FGZ-Julia { ; (c) Jay Hill, 1998
 ; generalization of formula by Michael G. Wareman
@@ -622,10 +622,10 @@ z=pixel, c=p3:
 z1=z*z + c;
 z = p1*z1*z1/(z1 + p2) + c;
 |z| <= 16
-} 
+}
 
 FGZ-Mand  { ; (c) Jay Hill, 1998
-  IF( |p3| == 0) 
+  IF( |p3| == 0)
     p3 = 16
   ENDIF
   c=pixel, z=sqrt(-c), bailout = real(p3):
@@ -692,7 +692,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 hermanm_man-polar {; Kerry Mitchell 16feb98
         ; See the end of formula hermanm_alpha for Kerry Mitchell's
@@ -767,26 +767,26 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 
 Hill001b { ; Flattened cardioid by Jay R. Hill, 1998
 ; Cubic Mandelbrot set fractal, transformed
 ; Two parameters: real & imaginary perturbations of z(0)
 p = exp(Pixel)/sqrt(3), c=p*(1-sqr(p)), z = p1
-x=(real(Pixel)<0), iter=0: 
+x=(real(Pixel)<0), iter=0:
 z = z*sqr(z) + c, iter=iter+1
 (lastsqr+5*x*(iter>250)) <= 4
-} 
+}
 
 Hill001b1 { ; Flattened cardioid by Jay R. Hill, 1998
 ; Cubic Mandelbrot set fractal, transformed
 ; Two parameters: real & imaginary perturbations of z(0)
 p = exp(Pixel)/sqrt(3), c=p*(1-sqr(p)), z = p1
-x=(real(Pixel)<0), iter=0: 
+x=(real(Pixel)<0), iter=0:
 z = z*sqr(z) + c, iter=iter+1
 (lastsqr+5*x*(iter>1)) <= 4
-} 
+}
 
 HyperBrot       {; Jim Muth
 a=real(p1), b=imag(p1),
@@ -847,7 +847,7 @@ z=y=c=pixel, w=0:
 if(w), z=fn1(real(y))+flip(imag(y)), w=0
 else, z=(y*p1), w=w+1, endif
 z=z^p2+(p3*c), y=z,
-|z| <= 100 
+|z| <= 100
 }
 
 IfElse03 {; Jim Muth
@@ -859,7 +859,7 @@ ELSE
  z=(y*a), w=w+1
 ENDIF
   z=z^b+c, y=z,
-   |z| <= 100 
+   |z| <= 100
 }
 
 IkeNewtMand = {; Ron Barnett, 1993
@@ -929,7 +929,7 @@ JulibrotZpwr {; Jim Muth
    |z| <= 100
   }
 
-Lesfrm11 { ; Les St Clair 
+Lesfrm11 { ; Les St Clair
 c=z=pixel:
 z=z+(((fn1(z)-P1)*fn2(z))/fn3(c)),|z|<4
 }
@@ -1345,7 +1345,7 @@ a=real(p1)*.01745329251994, b=imag(p1)*.01745329251994,
 z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2,
 c=cos(b)*real(pixel)+cos(a)*flip(imag(pixel))+p3:
 z=z^1.5+c,
-|z| <= 36  
+|z| <= 36
 }
 
 multi20031 {; Jim Muth, best=ifif, fiif, fifi, iffi
@@ -1353,13 +1353,13 @@ a=real(p1)*.01745329251994, b=imag(p1)*.01745329251994,
 z=sin(b)*fn1(real(pixel))+sin(a)*fn2(imag(pixel))+p2,
 c=cos(b)*fn3(real(pixel))+cos(a)*fn4(imag(pixel))+p3:
 z=z^2.003+c,
-|z| <= 100  
+|z| <= 100
 }
 
 multi20031a {; formula   draws many rotations
 ;when fn1-2=i,f, then p1 0,0=M, 0,90=O, 90,0=E, 90,90=J
 ;when fn1-2=f,i, then p1 0,0=M, 0,90=R, 90,0=P, 90,90=J
-;note: formula appended with "a" to differentiate from 
+;note: formula appended with "a" to differentiate from
 ;formula of same name previously posted (see above)
 a=((real(p1))+(.000000000000000000001))*.01745329251994,
 b=((imag(p1))+(.000000000000000000001))*.01745329251994,
@@ -1374,7 +1374,7 @@ e=exp(flip(real(p1*.01745329251994))),
 f=exp(flip(imag(p1*.01745329251994))),
 z=f*real(pixel)+p2, c=e*imag(pixel)+p3:
 z=z^2.003+c,
-|z| <= 100  
+|z| <= 100
 }
 
 multigator2 {; Jim Muth
@@ -1585,13 +1585,13 @@ z=z^b+c,
 neon {; Jim Muth
 z=c=pixel:
 z=z^1.045+(.02*z^-2)+c,
-|z| <= 100 
+|z| <= 100
 }
 
 Newt6-JAtan-Mset {; (c) Jay R. Hill, 1998
 ; Newton method set up as a Mandelbrot set
 ; This formula searches for 6 roots of a function
-; Inspired by Paul Carlson's Newt5_Atan_Mset 
+; Inspired by Paul Carlson's Newt5_Atan_Mset
 ; p1 = precision of root finding, try .001
 ; p2 = A = scaling constant in formula, try 1
 ; F(w) = w^6 - A*w^5 - w*c + A*c
@@ -1625,12 +1625,12 @@ ENDIF
 iter = iter + 1
 z = z - iter
 bailout == 0
-} 
+}
 
 Newt12-JAtan-Mset {; (c) Jay R. Hill, 1998
 ; Newton method set up as a Mandelbrot set
 ; This formula searches for 12 roots of a function
-; Inspired by Paul Carlson's Newt5_Atan_Mset 
+; Inspired by Paul Carlson's Newt5_Atan_Mset
 ; p1=width of root finding
 ; p2=A=constant in formula
 ; F(w) = w^12 - A*w^11 - w*c + A*c
@@ -1668,7 +1668,7 @@ bailout == 0
 Newt8-JAtan-Mset {; (c) Jay R. Hill, 1998
 ; Newton method set up as a Mandelbrot set
 ; This formula searches for 8 roots of a function
-; Inspired by Paul Carlson's Newt5_Atan_Mset 
+; Inspired by Paul Carlson's Newt5_Atan_Mset
 ; p1=width of root finding
 ; p2=A=constant in formula
 ; F(w) = w^8 - A*w^7 - w*c + A*c
@@ -1825,7 +1825,7 @@ PanoramaMandelbrot { ; by Jay Hill, 1998
 z = 0, c = exp(flip(pixel))-p2:
 z = z*z + c
 |z| < 4
-} 
+}
 
 Parabolic {; Jim Muth
 z=imag(pixel)+flip(real(p1)),
@@ -1842,7 +1842,7 @@ z=(-z)^p2+c,
 }
 
 ParabolicMiNa {; Jim Muth
-;note: formula appended with "a" to differentiate from 
+;note: formula appended with "a" to differentiate from
 ;formula of same name previously posted (see above)
 b=p1, z=imag(pixel)+p2,
 c=real(pixel)+p3:
@@ -1866,7 +1866,7 @@ PrecognaJ {
   z=t,
   lastsqr<=2048
 }
- 
+
 PrecognaM (XAXIS) {
   ; p1 is Julia parameter.
   z=0,p=0,c=pixel:
@@ -1930,8 +1930,8 @@ SineMandel = {;Ron Barnett
    ELSE
       z = y, iterate = iterate + 1
    ENDIF
-      z = z*z + c, y = z, |z| <= 100 
-   }   
+      z = z*z + c, y = z, |z| <= 100
+   }
 
 SkewPlanes {; Jim Muth
 ;p1=(0,0)=YW, (0,1)=XW, (1,0)=XZ, (1,1)=YZ
@@ -1989,7 +1989,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 Stretch3 { ; Flattened cardioid by Jay R. Hill, 1998
 ; Classic Mandelbrot set fractal, transformed
@@ -2008,7 +2008,7 @@ if (|zc| >= 4) ; Bailout at 4
 done=-1 ; Set flag to force an exit.
 endif
 done >= 0 ; Continue if the flag >=0.
-} 
+}
 
 tent_in_mod { ; Modified Sylvie Gallet formula
 ; Modified tent_inside.frm (generalized by Les St Clair)

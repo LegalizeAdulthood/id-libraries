@@ -117,7 +117,7 @@ BJ-SG8-1404a{ ; Modified Sylvie Gallet frm by Brian E. Jones
    z = 0 , c = zn = pixel , zmin = p1 , k = flip(2*pi/zmin) :
    zn = zn*zn + c , znc = cabs(real(zn))
    IF (znc < zmin)
-      zmin = znc , z = exp(znc*k) 
+      zmin = znc , z = exp(znc*k)
    ENDIF
    znc <= 4
    }

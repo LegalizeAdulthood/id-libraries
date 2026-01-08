@@ -170,4 +170,4 @@ Liar4 { ; by Chuck Ebbert
         z = pixel, p = p1 + 1:
         z = 1-abs(imag(z)*p-real(z)+flip(1-abs(1-real(z)-imag(z))));
         |z| <= 1
-      } 
+      }

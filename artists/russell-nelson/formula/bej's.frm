@@ -74,7 +74,7 @@ z2=(z*z)^(z1+p1)+pixel
 z3=z*z*z*z
 z=fn1(z3)+pixel
 |z|<4
-}  
+}
 
 
 BJ-BC1974  {;Modified Bob Carr frm from a modified Sylvie Gallet frm.
@@ -90,7 +90,7 @@ compt=compt+0.39
 
 
 BJ-BC1924pt3{;Modified Bob Carr frm from a modified Sylvie Gallet frm.
-;For FN1 check out 
+;For FN1 check out
 z= pixel, c =(-0.7456,3.245),
    z=c=z,
    iter = 1 , rad = 6 , center = (1.0,0.1)
@@ -99,7 +99,7 @@ z= pixel, c =(-0.7456,3.245),
    test0 = 1 , b1 = 16 , b2 = 0.0001 , test3=0 :
    test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
    z = (z-zn)*test2 + zn
-   z2 = z*z , z4 = z2*z2 , z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel), 
+   z2 = z*z , z4 = z2*z2 , z6=z4*z2, z1 = (z6*z-1)/(4*z6)+fn1(pixel),
    z = (z2+c)*test1 + ((z-z1)*(1-test1))
    z7=z*z*z
    z8=(z+c)^pixel/(z*z+(zn*z2)/z7)
@@ -116,7 +116,7 @@ BEJ   {;
    x = (1.5+z^p1)^(1/p1)
    z = z*(1+y)/(1-x) + p2
    z=fn1(z)+c
-   z=fn2(z)-c 
+   z=fn2(z)-c
    |z| <4
   }
 
@@ -128,7 +128,7 @@ z2=z+pixel
 z3=z*z+(z*z)
 z=fn1(z3)+pixel
 |z|<=4
-} 
+}
 
 
 BEJ6  {;

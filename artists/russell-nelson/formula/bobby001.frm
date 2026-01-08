@@ -1,14 +1,14 @@
 ;Bobby001.frm recompiled from revised *.frm's.Lots of adjustable Functions
 ;From Bobby Elwood the sysop of Bob's Adult World BBS
 ;                               (cumming soon in 94')
-;     4-05-94 00:02:59  
+;     4-05-94 00:02:59
 
 Booby3 {
        z = pixel:
        c = fn1(pixel)/z,
        c = fn3(z + c^c),
        z = fn2(z),
-       |z| < P1 
+       |z| < P1
   }
 
 Booby2 {
@@ -103,7 +103,7 @@ Bob-5revised {
 Bob-6r {
         z = fn4(pixel), c = fn2(p2):
         z = fn1(p2)*fn3(p1)+c/z
-   }  
+   }
 
 Bob-7r {
         z = fn4(pixel):

@@ -39,7 +39,7 @@ z=z*z+c
 BEJ-N227{;
 pixel=pixel*(fn1(pixel*pi)),
 z = pixel , c = fn1(flip(pixel^fn3(z))):
-z = fn2(z * z) + c 
+z = fn2(z * z) + c
 |z| < 16
 }
 
@@ -86,19 +86,19 @@ BJ-Zexpe-004e{;
 
 BJ-Zexpe-008 {;
   s = fn1(exp(1.,0.)*(p1*p2)) , z = pixel:
-   z = z ^ s + pixel 
+   z = z ^ s + pixel
     |z| <= 100
   }
 
 BJ-Zexpe-009 {;
   s = fn1(exp(1.,0.)*fn2(p1*p2)) , z = pixel:
-   z = z ^ s + pixel 
+   z = z ^ s + pixel
     |z| <= 100
   }
 
 BJ-Zexpe-010 {;
   s = exp(p1)^fn1(p2) , z = pixel:
-   z = z ^ s + pixel 
+   z = z ^ s + pixel
     |z| <= 100
   }
 
@@ -106,7 +106,7 @@ BJ-Zexpe-016 {;
   z = fn1(pixel), s = (exp(1.,0.)*fn2(p1*p2)), Root = 1:
    z3 = ((z^ s + pixel)*z*z)
    z4 = z3 * z
-   z = (3 * z4 + Root) / (4 * z3) 
+   z = (3 * z4 + Root) / (4 * z3)
     .004 <= |z4 - Root|
   }
 
@@ -114,13 +114,13 @@ BJ-Zexpe-018 {;
   z = pixel, s = (exp(1.,0.)*fn2(p1*p2)), Root = 1:
    z3 = fn1(z*z)^ s + pixel
    z4 = z3 * z * z
-   z5 = (3 * z4 + Root) / (4 * z3) 
+   z5 = (3 * z4 + Root) / (4 * z3)
    z = z*z + pixel
     .004 <= |z| != |z4 - Root|
   }
 
 BJ-SG-5-07-c { ; Modified Gallet 5-07
-	       ; Sylvie Gallet [101324,3444], 1996 
+	       ; Sylvie Gallet [101324,3444], 1996
   z = pixel , x = fn3(z*(0,1)) , y = fn4(z*(0,-1)) :
    hx = p1*fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
@@ -158,12 +158,12 @@ BJ-SG-5-07-a { ; Modified Gallet 5-07
   z = pixel , x = z*(0,1) , y = (whitesq == 0) + (z*(0,-1)) * whitesq:
    hx = p1 * fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
-   z = x + flip(y) 
+   z = x + flip(y)
     (|hx|+|hy|) <= p2
   }
 
 BJ-SG-5-07-c { ; Modified Gallet 5-07
-	       ; Sylvie Gallet [101324,3444], 1996 
+	       ; Sylvie Gallet [101324,3444], 1996
   z = pixel , x = fn3(z*(0,1)) , y = fn4(z*(0,-1)) :
    hx = p1*fn1(x) , hy = p1*fn2(y)
    x = x + hy , y = y + hx
@@ -194,10 +194,10 @@ Carr2003b{;Modified Sylvie Gallet frm. [101324,3444], 1996
    ; requires "periodicity=0" (<g> command)
    ; imag(p1) = scale of the Julia set
    ; p2 = center of the Julia set
-   ; p3 = param for the Julia set 
+   ; p3 = param for the Julia set
    z= c =pixel,
    c1 = p3,
-   z1=imag(p1-cos(pixel))*z-p2 , iter=0 , 
+   z1=imag(p1-cos(pixel))*z-p2 , iter=0 ,
    limit=real(p1), bailout = 16 :
    test = (iter==limit)
    z=z*fn1(1-test)+fn2(z1*test),c=fn3(c*(1-test)+(c1*test))
@@ -282,7 +282,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel))* (whitesq == 0) + (fn4(atanh(abs(sqr(pixel))))) * whitesq, 
+z=(z*(1-test))+flip(imag(0.03750/pixel))* (whitesq == 0) + (fn4(atanh(abs(sqr(pixel))))) * whitesq,
 c=c*(1-test)+d1+test*(p2*c)
 z=fn3(z^2)+(c/p3)-0.1/pixel,
 iter=iter+1
@@ -296,7 +296,7 @@ d1=(0.00099475/-pixel)+(flip(0.00010/pixel)),
 iter=0,nextzoom=iterspace=real(p1):
 test=(iter==nextzoom)
 nextzoom=nextzoom+test*iterspace
-z=(z*(1-test))+flip(imag(0.03750/pixel)) * (z^2+c-0.1/pixel), 
+z=(z*(1-test))+flip(imag(0.03750/pixel)) * (z^2+c-0.1/pixel),
 c=c*(1-test)+d1+test*(-flip(abs(p2*c+p3)))
 z=z^2+c-0.1/pixel,
 iter=iter+1

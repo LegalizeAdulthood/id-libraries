@@ -159,7 +159,7 @@ na1{
 z=(pixel),t=(p1*(z+fn4(z-1)))/p2:
 z2=fn1(t)+whitesq,z3=fn4(z-(1-z))
 z=(z*fn2(z3))+fn3(z2)
-|z|<4  
+|z|<4
 }
 nx0{
 z=pixel,m=(fn1(z))*(2),y=tan(1-exp(z))^2,n=fn2(1/(tan(z)))*sqr(y+m):

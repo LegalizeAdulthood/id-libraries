@@ -1,4 +1,4 @@
-Modified_a { ; Gallet-3-11 Sylvie Gallet [101324,3444], 1996 
+Modified_a { ; Gallet-3-11 Sylvie Gallet [101324,3444], 1996
 z=fn1(pixel^p1/p2+p2*pixel/fn2(p1^pixel)),p=p2/p1:
 z = z*p
 (z+p) <= p1
@@ -6,39 +6,39 @@ z = z*p
 
 
 Tim's_Newton{; Modified Newt_ellipt_oops by Tim Wegner
-             ; Use floating point. 
+             ; Use floating point.
 z = pixel, z2 = z*z, z3 = z*z2:
-   num = (z3 + fn1(p1)*z2 + 1)^.5      
-   denom = (1.5*z2 + p1*z)/num    
-   z = z - (num/denom)            
+   num = (z3 + fn1(p1)*z2 + 1)^.5
+   denom = (1.5*z2 + p1*z)/num
+   z = z - (num/denom)
    z2 = z*z+c
    z3 = z*z2
-    fn2(p2) <= |z3 + p1*z2 + 1| 
+    fn2(p2) <= |z3 + p1*z2 + 1|
 }
 
 
 Tim's_Newton_a{;
 z = pixel, z2 = z*z, z3 = z*z2:
-   num = (z3 + p1*z2 + 1)^.5      
-   denom = (1.5*z2 + p1*z)/num    
-   z = z - (num/denom)            
+   num = (z3 + p1*z2 + 1)^.5
+   denom = (1.5*z2 + p1*z)/num
+   z = z - (num/denom)
    z2 = z*z+c
    z3 = z*z2
-   p2 <= |z3 + p1*z2 + 1| 
+   p2 <= |z3 + p1*z2 + 1|
 }
 
 
 
 Tim's_Newton_b{; Modified Newt_ellipt_oops by Tim Wegner
-             ; Use floating point. 
+             ; Use floating point.
 z = pixel, z2 = z*z, z3 = z*z2,t = (4 * (real(p2)<=0) + real(p2) * (0<p2) ):
-   num = (z3 + fn1(p1)*z2 + 1)^.5      
-   denom = (1.5*z2 + p1*z)/num    
-   z = z - (num/denom)            
+   num = (z3 + fn1(p1)*z2 + 1)^.5
+   denom = (1.5*z2 + p1*z)/num
+   z = z - (num/denom)
    z = sqr(z) + p1
    z2 = z*z+c
    z3 = z*z2
-   fn2(p2+t) <= |z3 + p1*z2 + 1| 
+   fn2(p2+t) <= |z3 + p1*z2 + 1|
 
 }
 

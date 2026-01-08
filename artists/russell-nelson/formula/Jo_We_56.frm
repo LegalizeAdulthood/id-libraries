@@ -1,7 +1,7 @@
 ;; FOR FRACTINT v19.6 only
 ;; Jo_We_56
 ;; Needs JoWe55c36a and JoWe55c36b-formula, which are at the end of this file.
-;; The par-file uses JoWe56-1.map, but you MUST look at the images with 
+;; The par-file uses JoWe56-1.map, but you MUST look at the images with
 ;; JoWe56-2.map too.
 
 ;; Time listed on the first line reflects creation on a 486DX4-100

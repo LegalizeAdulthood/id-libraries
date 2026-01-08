@@ -523,7 +523,7 @@ iter=iter+1
 Carr3381{;MJM-PHC02 Brian E. Jones modified
 z=pixel^3
 c=conj(conj(pixel))*(pixel^4)+tanh(0.1/pixel)-sinh(0.1/pixel)-conj(0.125/pixel)
-newpixel=pixel,iter=0 
+newpixel=pixel,iter=0
 reduction=real(p1)+(real(p1)==0)
 nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
 rotation=pi*flip(imag(p1))/180
@@ -533,7 +533,7 @@ test=(iter==nextzoom)
 test1=(compt<limit)
 nextzoom=nextzoom+test*iterspace
 newpixel=newpixel*(1-test)+test*reduction*(newpixel-p2)*exp(rotation)
-z=z*(1-test) 
+z=z*(1-test)
 c=(c*(1-test)+test*newpixel)*whitesq+(c*test1+p*(1-test1))*(whitesq==0)
 z=z*z+c
 iter=iter+1
@@ -544,7 +544,7 @@ compt=compt+1
 Carr3382{;MJM-PHC02 Brian E. Jones modified
 c=pixel^3-conj(0.1/pixel)
 z=conj(conj(pixel))*(pixel^4)+tanh(0.1/pixel)-sinh(0.1/pixel)-conj(0.125/pixel)
-newpixel=pixel,iter=0 
+newpixel=pixel,iter=0
 reduction=real(p1)+(real(p1)==0)
 nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
 rotation=pi*flip(imag(p1))/180
@@ -565,7 +565,7 @@ compt=compt+1
 Carr3383{;MJM-PHC02 Brian E. Jones modified
 c=pixel^5-conj(0.15/pixel)
 z=pixel^4-conj(0.01/pixel-flip(0.01/pixel))-conj(0.1/pixel)-0.2
-newpixel=pixel,iter=0 
+newpixel=pixel,iter=0
 reduction=real(p1)+(real(p1)==0)
 nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
 rotation=pi*flip(imag(p1))/180
@@ -586,7 +586,7 @@ imag(flip(z))<=16
 Carr3384{;MJM-PHC02 Brian E. Jones modified
 z=conj(conj(pixel))^4-conj(0.1/pixel)-flip(0.01/pixel)+sin(0.1/pixel)-0.1/pixel
 c=pixel^4-tanh(0.1/pixel)
-newpixel=pixel,iter=0 
+newpixel=pixel,iter=0
 reduction=real(p1)+(real(p1)==0)
 nextzoom=iterspace=(p3>0)*p3+(p3<=0)*256
 rotation=pi*flip(imag(p1))/180

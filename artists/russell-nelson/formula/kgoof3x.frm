@@ -1,6 +1,6 @@
 ;
 ;       This formula is from Karl Geigl
-;	karlgeigl@compuserve.com 
+;	karlgeigl@compuserve.com
 ;
 ;	oof means "only one formula"
 ;

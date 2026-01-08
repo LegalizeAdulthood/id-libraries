@@ -11,7 +11,7 @@ ENDIF
 IF(t==0)
   t = 0.001
 ENDIF
-z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0, 
+z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0,
 m = maxit-1, done = 0:
 IF(z1done==0)
   z1 = (sqr(z1)-ta2)*z1+b
@@ -74,7 +74,7 @@ ENDIF
 IF(t==0)
   t = 0.001
 ENDIF
-z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0, 
+z1 = a, z2 = -a, z1done = 0, z2done = 0, z1b = a, z2b = -a, even = 0, i = 0,
 m = maxit-1, done = 0:
 IF(z1done==0)
   z1 = (sqr(z1)-ta2)*z1+b

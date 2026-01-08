@@ -7,7 +7,7 @@ use.
 I can be contacted on CompuServe (73743,2420) or on America
 On Line (Genealogy1)
 
-General Bob Carr (retired) Commandant Communist Chinese 
+General Bob Carr (retired) Commandant Communist Chinese
 Secret Service.
 (My name formerly was Mow Say Tongue but I had it legally
 changed in a small town on the outskirts of Chang High.)
@@ -175,7 +175,7 @@ z=1/pixel,zp=(0,0):
 temp=z
 z=z*z-zp
 zp=sin(-temp),
-|zp| <= 4 
+|zp| <= 4
 }
 
 Carr1173{;Ditto above
@@ -183,7 +183,7 @@ z=1/pixel,zp=exp(1.099,0):
 temp=real(z)
 z=exp(z*z+zp)
 zp=z-(cosxx(1/temp)),
-|real(z)| <=100 
+|real(z)| <=100
 }
 
 Carr1174{;Modified Noel Giffin formula
@@ -357,7 +357,7 @@ z=cosxx(sqr(sqr(z*1/c)))+c+(1.099,0);
 Carr1192{;Modified (Modified Newton; Tim Wegner)
        ;from MISCBLB.FRM
 z=1/pixel,z2=z*z+c,z3=z*(cosxx(z2)),c=cosxx(1/pixel*0.91/pixel):
-z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)      
+z=z-(z3+p1*z2+1)/(6*z2+4*p1*z)
 z2=z*z/c*c
 z3=z*z2,
 p2<=|z3+p1*z2+1|

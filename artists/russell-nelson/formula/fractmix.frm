@@ -1,4 +1,4 @@
-comment { ;Don't even try without fpu , nwtnwt is the best one 
+comment { ;Don't even try without fpu , nwtnwt is the best one
        }
 
 MandNwtX {
@@ -9,7 +9,7 @@ MandNwtX {
     .001 <= |z^f - Root|
   }
 
-MandNwtM{; 
+MandNwtM{;
   ; Note that floating-point is required to make this compute accurately
   z = pixel , Root = 1:
    f=z*z+pixel;
@@ -17,21 +17,21 @@ MandNwtM{;
     .001 <= |f^pixel - Root|
   }
 
-NwtMand2 {; 
+NwtMand2 {;
   ; Note that floating-point is required to make this compute accurately
   z = pixel , Root = 1:
    f = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1));
    z=z*z+f;
     .001 <= |z^p1 - Root|
   }
-NwtMand3 {; 
+NwtMand3 {;
   ; Note that floating-point is required to make this compute accurately
    f=pixel ,z=pixel, Root = 1:
    f = ((p1-1) * z^p1 + Root) / (p1 * z^(p1-1));
    z=f*f+pixel;
     .001 <= |z^p1 - Root|
   }
-NwtMandM {; 
+NwtMandM {;
   ; Note that floating-point is required to make this compute accurately
   z = pixel , Root = 1:
    f = ((pixel-1) * z^pixel + Root) / (pixel * z^(pixel-1));
@@ -39,14 +39,14 @@ NwtMandM {;
     .001 <= |z^pixel - Root|
   }
 
-MandMand {; 
+MandMand {;
   ; Note that floating-point is required to make this compute accurately
    f=pixel ,z=pixel:
    f=z*z+pixel;
    z=f*f+pixel;
    |f|<=4
   }
-MandMnzpwr {;shit xept p1=2 
+MandMnzpwr {;shit xept p1=2
   ; Note that floating-point is required to make this compute accurately
    f=pixel ,z=pixel:
    f=z^p1+pixel;
@@ -54,7 +54,7 @@ MandMnzpwr {;shit xept p1=2
    |f|<=4
   }
 
-ManzNwt {; 
+ManzNwt {;
   ; Note that floating-point is required to make this compute accurately
   z = pixel , Root = 1:
    f=z^p2+pixel;
@@ -72,7 +72,7 @@ NwtNwt {;p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
 
 NwtNwtNwt {;p1=k*p2 k=1,2,3,...   fn1,fn2=recip,ident  rest 4u to test
   ; Note that floating-point is required to make this compute accurately
-  f=fn1(pixel) ,z = fn2(pixel) ,g = fn3(pixel) , 
+  f=fn1(pixel) ,z = fn2(pixel) ,g = fn3(pixel) ,
   u=real(p1) ,v=imag(p1) , Root = 1:
    g = ((u-1) * z^u + Root) / (u * z^(u-1));
    f = ((v-1) * g^v + Root) / (v * g^(v-1));

@@ -1,14 +1,14 @@
 ;------------------------------------------------;
 ; REB001.FRM                                     ;
 ; Ron Barnett 70153,1233                         ;
-;------------------------------------------------; 
+;------------------------------------------------;
 
    IkenagaMap(XAXIS) {; Ron Barnett, 1993
 			; based upon the Ikenaga function described
       ; in Dewdneys's The Armchair Universe.
       ; The initial starting point allows the function to provide a
-      ; "map" for the corresponding Julia function (Julike ) 
-      z = ((1-pixel)/3)^0.5: 
+      ; "map" for the corresponding Julia function (Julike )
+      z = ((1-pixel)/3)^0.5:
       z = z*z*z + (pixel-1)*z - pixel, |z| <= 4
    }
 
@@ -26,7 +26,7 @@
       z = P1*fn2(z)^2 + P2*fn3(z)^2 + pixel, |z| <= 4
    }
 
-   JMask {	; Ron Barnett, 1993      
+   JMask {	; Ron Barnett, 1993
       z = fn1(pixel):
       z = P1*fn2(z)^2 + P2, |z| <= 4
    }
