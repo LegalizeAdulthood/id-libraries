@@ -290,13 +290,13 @@ ADH156_@ { ; Anthony Hanmer 2000
   d=d\80d/160d\80d
   }
 
-ADH156_[ { ; Anthony Hanmer 2000
+ADH156_rsq { ; Anthony Hanmer 2000
   Angle 36 ; Cesaro variation alphabet:  [
   Axiom /180d/90ddddd/90d
   d=d\80d/160d\80d
   }
 
-ADH156_] { ; Anthony Hanmer 2000
+ADH156_lsq { ; Anthony Hanmer 2000
   Angle 36 ; Cesaro variation alphabet:  ]
   Axiom d/90ddddd/90d
   d=d\80d/160d\80d
