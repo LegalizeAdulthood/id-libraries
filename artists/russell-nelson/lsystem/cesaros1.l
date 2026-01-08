@@ -24,14 +24,14 @@ ADH155c { ; Anthony Hanmer 2000
 
 ADH155d { ; Anthony Hanmer 2000
   Angle 36 ; Double Cesaro variation
-  Axiom 
+  Axiom
 f+++++++++f------------------f+++++++++f------------------f+++++++++f------------------f+++++++++f------------------f
   f=f++++++++f----------------f++++++++f
   }
 
 ADH155dcol1 { ; Anthony Hanmer 2000
   Angle 36 ; Double Cesaro variation, coloured
-  Axiom 
+  Axiom
 c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f+++++++++c12f------------------c09f
   f=f++++++++f----------------f++++++++f
   }

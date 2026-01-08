@@ -7,7 +7,7 @@
 ; GRAPHDEV-library on 06-11-1993 by Andreas Peetz
 ; ([100101,1670])
 ;
-Pythagoras_Tree1 { ;symmetrical tree based on 
+Pythagoras_Tree1 { ;symmetrical tree based on
 ; a 45-90-45 degrees-triangle
   angle 8
   axiom x

@@ -1,4 +1,4 @@
- 
+
 ADH123b { ; Anthony Hanmer 2000
   Angle 8 ;
   Axiom f-f-f-f-f-f-f-f
@@ -640,7 +640,7 @@ ADH121zzn { ; Anthony Hanmer 2000
   Axiom f+f+f+f+f
   f=f+[f+g]-f
   }
- 
+
 ADH120a { ; Anthony Hanmer 2000
   Angle 3 ;
   Axiom f-f-f
@@ -1593,7 +1593,7 @@ ADH127b { ; Anthony Hanmer 2000
 
 ADH127c { ; Anthony Hanmer 2000
   Angle 4 ;
-  Axiom 
+  Axiom
 f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f--@.75f
   f=+ff--g-g+ff
   }
