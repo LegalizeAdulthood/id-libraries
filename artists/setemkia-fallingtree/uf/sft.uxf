@@ -1,0 +1,187 @@
+RISR#1v1.01 {
+; Setemkia FallingTree
+; Fawn@SpiritSeeker.net (NO spam, please!)
+; 13 August 2001
+;
+; Copyright © 2001 by Setemkia FallingTree
+; This algorithm may be freely used and modified, provided Setemkia
+; FallingTree is credited for origination
+;
+; RISR == Radial Inverted Sine Region
+; Used to cut out either the inside or outside of a RISR, a star shaped
+; region.  The number of spokes may be one, in which case the region is
+; tear shaped.
+;
+transform:
+  bool    in  = true
+  float   rad = pi/180*@rotation
+  complex z0  = (#pixel-@center)*(cos(rad)-flip(sin(rad)))
+  float   rz  = cabs(z0)
+  if rz > 1E-20
+    float s = abs(sin(@spokes/2*atan2(z0)))
+    if s > 1E-20
+      float rp = @radius/sqrt(s)
+      if rz > rp
+        in = false
+      endif
+    endif
+  endif
+  if (!@invert && !in) || (@invert && in)
+    #solid = true
+  endif
+
+default:
+  title = "RISR #1 v1.00"
+
+param spokes
+  caption = "Spokes"
+  hint = "Number of points (spokes) in the star. An integer >= 1."
+  default = 3
+  min = 1
+endparam
+
+param radius
+  caption = "Radius"
+  hint = "Closest approach of region curve to region center."
+  default = 0.5
+  min = 1E-10
+endparam
+
+param center
+  caption = "Center"
+  hint = "Region center."
+  default = (0.0,0.0)
+endparam
+
+param rotation
+  caption = "Rotation"
+  hint = "Rotation of the region in degrees."
+  default = 0.0
+  min = -360.0
+  max =  360.0
+endparam
+
+param invert
+  caption = "Invert Selection"
+  hint = "If checked, the RIS Region is removed, otherwise \
+          only the RIS Region remains."
+  default = false
+endparam
+}
+
+DisplayPanes {
+transform:
+  IF @pane <= @rows*@cols
+    INT   ipw = trunc((#width -(@cols+1)*@gutter)/@cols)
+    INT   iph = trunc((#height-(@rows+1)*@gutter)/@rows)
+    FLOAT fhg = (#width -ipw*@cols)/(@cols+1)
+    FLOAT fvg = (#height-iph*@rows)/(@rows+1)
+    FLOAT fpw = ipw
+    FLOAT fph = iph
+
+    IF @pane == 0
+      IF @gutter > 0
+        INT   r      = @rows
+        BOOL  vin    = FALSE
+        FLOAT top    = 0
+        FLOAT bottom = fph
+        WHILE !vin && r > 0
+          top    = top   +fvg
+          bottom = bottom+fvg
+          IF imag(#screenpixel) >= round(top) && \
+             imag(#screenpixel) <  round(bottom)
+            vin = TRUE
+          ENDIF
+          top    = top   +fph
+          bottom = bottom+fph
+          r      = r-1
+        ENDWHILE
+        INT   c     = @cols
+        BOOL  hin   = FALSE
+        FLOAT left  = 0
+        FLOAT right = fpw
+        WHILE !hin && c > 0
+          left   = left +fhg
+          right  = right+fhg
+          IF   real(#screenpixel) >= round(left) && \
+               real(#screenpixel) < round(right)
+            hin = TRUE
+          ENDIF
+          left   = left +fpw
+          right  = right+fpw
+          c      = c-1
+        ENDWHILE
+        IF vin && hin
+          #solid = TRUE
+        ENDIF
+      ENDIF
+    ELSE
+      FLOAT fcol   =       (@pane-1)%@cols
+      FLOAT frow   = trunc((@pane-1)/@cols)
+      FLOAT left   = fcol*ipw + round((fcol+1)*fhg)
+      FLOAT top    = frow*iph + round((frow+1)*fvg)
+      FLOAT right  = left+ipw
+      FLOAT bottom = top +iph
+      IF  real(#screenpixel) >= left && real(#screenpixel) < right  && \
+          imag(#screenpixel) >= top  && imag(#screenpixel) < bottom
+        IF @ctr
+          COMPLEX rot = #e^flip(#angle)
+          #pixel = (#pixel-#center)*conj(rot)*#magn
+          #pixel = #pixel + ((1-(left+right)/real(#screenmax))*2.0) - \
+                        flip((1-(top+bottom)/imag(#screenmax))*1.5)
+          #pixel = (real(#pixel)*real(#screenmax)/fpw) + \
+               flip(imag(#pixel)*imag(#screenmax)/fph)
+          #pixel = #pixel/#magn*rot+#center
+        ENDIF
+      ELSE
+        #solid = TRUE
+      ENDIF
+    ENDIF
+  ENDIF
+
+default:
+  title = "Display Panes"
+
+PARAM pane
+  caption = "Paint This Pane"
+  hint = "Integer specifying which pane is transparent (painted).  Zero \
+          indicates the gutter (boarder) area.  Otherwise, an integer \
+          indicating the pane.  Panes are counted from left to right \
+          working from the top row to the bottom row."
+  default = 0
+  min = 0
+ENDPARAM
+
+PARAM cols
+  caption = "Column Count"
+  hint = "Number of columns of images; an integer."
+  default = 2
+  min = 1
+ENDPARAM
+
+PARAM rows
+  caption = "Row Count"
+  hint = "Number of rows of images; an integer."
+  default = 2
+  min = 1
+ENDPARAM
+
+PARAM gutter
+  caption = "Frame Width"
+  hint = "For image spacing or framing you may specify the nominal \
+          number of pixels separating the panes. The frame widths \
+          between panes may vary by a pixel so pane widths will be \
+          identical.  If frame width is zero, rounding is handled by \
+          painting extra pixels at the right and bottom as solid."
+  default = 5
+  min = 0
+ENDPARAM
+
+PARAM ctr
+  caption = "Fit Image"
+  hint = "By default the image is scaled to lie in the pane as it does \
+          on the whole canvas.  For completeness, you have the option to \
+          turn this off and position and scale things manually."
+  default = TRUE
+ENDPARAM
+}

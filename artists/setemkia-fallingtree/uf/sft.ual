@@ -1,0 +1,121 @@
+Comment {
+
+Contents: Alpha Gradients
+Author:   Setemkia FallingTree
+Version:  1.00
+Mod Date: 2 August 2001
+
+Notes:
+  Some of these have corresponding color gradients.
+}
+
+Misty01 {
+alpha:
+  title="Misty 01" smooth=yes numnodes=2 index=0 alpha=168 index=152
+  alpha=255
+}
+
+Notch {
+;
+; Opaque mask with leading 3-index
+; transparent notch for use with
+; notched gradients.
+;
+alpha:
+  title="Notch" smooth=no position=-200 numnodes=4
+  index=0   alpha=0
+  index=2   alpha=0
+  index=3   alpha=255
+  index=399 alpha=255
+}
+
+Spike {
+;
+; Transparent mask with leading 3-index
+; opaque spike for use below a layer
+; withn a notched gradient.
+;
+alpha:
+  title="Spike" smooth=no position=-200 numnodes=4
+  index=0   alpha=255
+  index=2   alpha=255
+  index=3   alpha=0
+  index=399 alpha=0
+}
+
+AdjustGrey01 {
+alpha:
+  title="Adjust Grey 01" smooth=yes numnodes=4 index=0 alpha=8 index=41
+  alpha=64 index=382 alpha=192 index=399 alpha=255
+}
+
+CutoutAlphaChannel {
+alpha:
+  title="Cutout Alpha Channel" smooth=no numnodes=4 index=0 alpha=0
+  index=199 alpha=0 index=200 alpha=255 index=201 alpha=0
+}
+
+Sine {
+alpha:
+  title="Sine" smooth=yes numnodes=8 index=0 alpha=0 index=50 alpha=37
+  index=100 alpha=128 index=150 alpha=218 index=200 alpha=255 index=250
+  alpha=218 index=300 alpha=128 index=350 alpha=37
+}
+
+Cosine {
+alpha:
+  title="Cosine" smooth=yes numnodes=8 index=0 alpha=255 index=50 alpha=218
+  index=100 alpha=128 index=150 alpha=37 index=200 alpha=0 index=250
+  alpha=37 index=300 alpha=128 index=350 alpha=218
+}
+
+CosineRamp {
+alpha:
+  title="Cosine Ramp" smooth=yes numnodes=5 index=0 alpha=255 index=100
+  alpha=218 index=200 alpha=128 index=300 alpha=37 index=399 alpha=0
+}
+
+SineRamp {
+alpha:
+  title="Sine Ramp" smooth=yes numnodes=5 index=0 alpha=0 index=100
+  alpha=37 index=200 alpha=128 index=300 alpha=218 index=399 alpha=255
+}
+
+RipSawSine {
+alpha:
+  title="Rip Saw Sine" smooth=yes numnodes=16 index=0 alpha=0 index=25 alpha=255
+  index=50 alpha=0 index=75 alpha=255 index=100 alpha=0 index=125 alpha=255
+  index=150 alpha=0 index=175 alpha=255 index=200 alpha=0 index=225
+  alpha=255 index=250 alpha=0 index=275 alpha=255 index=300 alpha=0
+  index=325 alpha=255 index=350 alpha=0 index=375 alpha=255
+}
+
+RipSawCosine {
+alpha:
+  title="Rip Saw Cosine" smooth=yes numnodes=16 index=0 alpha=255 index=25
+  alpha=0 index=50 alpha=255 index=75 alpha=0 index=100 alpha=255 index=125
+  alpha=0 index=150 alpha=255 index=175 alpha=0 index=200 alpha=255
+  index=225 alpha=0 index=250 alpha=255 index=275 alpha=0 index=300
+  alpha=255 index=325 alpha=0 index=350 alpha=255 index=375 alpha=0
+}
+
+BalancedBrown/Orange {
+alpha:
+  title="Balanced Brown/Orange" smooth=yes numnodes=10 index=0 alpha=0
+  index=40 alpha=94 index=80 alpha=127 index=120 alpha=159 index=160
+  alpha=183 index=200 alpha=255 index=240 alpha=183 index=280 alpha=159
+  index=320 alpha=127 index=360 alpha=94
+}
+
+CenterSpike {
+alpha:
+  title="Center Spike" smooth=no numnodes=3 index=199 alpha=0 index=200
+  alpha=255 index=201 alpha=0
+}
+
+UnitNotch@Zero {
+alpha:
+  title="Unit Notch @ zero" smooth=yes numnodes=3 index=0 alpha=0 index=1
+  alpha=255 index=399 alpha=232
+}
+

@@ -1,0 +1,456 @@
+Comment {
+
+Contents: Color Gradients
+Author:   Setemkia FallingTree
+Version:  1.00
+Mod Date: 2 August 2001
+
+Notes:
+  Some of these have corresponding alpha gradients.
+}
+
+Rainbow01 {
+gradient:
+  title="Rainbow 01" smooth=yes numnodes=17 index=0 color=16777215
+  index=1 color=0 index=10 color=2039646 index=20 color=254 index=50
+  color=32766 index=80 color=65278 index=110 color=65151 index=140
+  color=65024 index=170 color=8388096 index=200 color=16711168 index=230
+  color=16678656 index=260 color=16646144 index=290 color=16646271
+  index=320 color=16646398 index=350 color=8323326 index=380 color=459771
+  index=390 color=5920767
+}
+
+BalancedBrown/Orange {
+gradient:
+  title="Balanced Brown/Orange" smooth=yes numnodes=10 index=0 color=0
+  index=40 color=3102606 index=80 color=1409001 index=120 color=4169727
+  index=160 color=8102899 index=200 color=16777215 index=240 color=8105459
+  index=280 color=4169727 index=320 color=1409001 index=360 color=3102606
+}
+
+Misty01 {
+gradient:
+  title="Misty 01" smooth=yes numnodes=3 index=152 color=10013648 index=290
+  color=5022511 index=383 color=7614348
+}
+
+AdjustedGrey01 {
+gradient:
+  title="Adjusted Grey 01" smooth=yes numnodes=4 index=0 color=0 index=42
+  color=4671303 index=382 color=12632256 index=399 color=16777215
+}
+
+SymetricBlueSteel {
+gradient:
+  title="Symetric Blue Steel" smooth=no numnodes=4 index=1 color=0
+  index=102 color=8421963 index=202 color=10856600 index=302 color=8421963
+}
+
+Sine {
+gradient:
+  title="Sine" smooth=yes numnodes=8 index=0 color=0 index=50 color=2434341
+  index=100 color=8421504 index=150 color=14342874 index=200 color=16777215
+  index=250 color=14342874 index=305 color=8421504 index=350 color=2434341
+}
+
+Cosine {
+gradient:
+  title="Cosine" smooth=yes numnodes=8 index=0 color=16777215 index=50
+  color=14342874 index=100 color=8421504 index=150 color=2434341 index=200
+  color=0 index=250 color=2434341 index=305 color=8421504 index=350
+  color=14342874
+}
+
+CosineRamp {
+gradient:
+  title="Cosine Ramp" smooth=yes numnodes=5 index=0 color=16777215
+  index=100 color=14342874 index=200 color=8421504 index=300 color=2434341
+  index=399 color=0
+}
+
+SineRamp {
+gradient:
+  title="Sine Ramp" smooth=yes numnodes=5 index=0 color=0 index=100
+  color=2434341 index=200 color=8421504 index=300 color=14342874 index=399
+  color=16777215
+}
+
+SaturatedSpectrumWithLeadingNotch {
+;
+; Linear saturated spectrum.
+; The first three index positions
+; are set to black. creating a leading
+; notch.  When combined with the alpha
+; channel "Spike" the notched area of
+; the spectrum is cut out of the image.
+;
+gradient:
+  title="Saturated Spectrum with Leading Notch" smooth=yes position=-200
+  numnodes=15 index=0 color=0 index=2 color=0 index=3 color=66047 index=36
+  color=98559 index=69 color=131071 index=102 color=130944 index=135
+  color=130817 index=168 color=8453889 index=201 color=16776961 index=234
+  color=16744449 index=267 color=16711937 index=300 color=16712064
+  index=333 color=16712191 index=366 color=5636607 index=399 color=328191
+}
+
+Marcus'Steps {
+gradient:
+  title="Marcus' Steps" smooth=no numnodes=27 index=0 color=16777215
+  index=12 color=12311766 index=48 color=0 index=50 color=16777215 index=51
+  color=13474698 index=97 color=526344 index=98 color=0 index=100
+  color=16777215 index=101 color=2660230 index=148 color=0 index=150
+  color=16777215 index=160 color=9363132 index=198 color=0 index=200
+  color=16777215 index=211 color=6117789 index=248 color=0 index=250
+  color=16777215 index=261 color=9529729 index=297 color=526344 index=298
+  color=0 index=300 color=16777215 index=312 color=9266533 index=348
+  color=0 index=350 color=16777215 index=361 color=12237380 index=386
+  color=4274962 index=399 color=0
+}
+
+CenterSpike {
+gradient:
+  title="Center Spike" smooth=no numnodes=4 index=199 color=0 index=200
+  color=16777215 index=201 color=0 index=399 color=0
+}
+
+SinRampAdjusted {
+gradient:
+  title="Sin Ramp Adjusted" smooth=yes numnodes=18 index=0 color=0 index=1
+  color=1644825 index=25 color=2500134 index=50 color=3289650 index=75
+  color=4079166 index=100 color=4868682 index=125 color=5592405 index=150
+  color=6316128 index=175 color=6974058 index=200 color=7566195 index=225
+  color=8158332 index=250 color=8618883 index=275 color=9079434 index=300
+  color=9408399 index=325 color=9671571 index=350 color=9868950 index=375
+  color=10000536 index=399 color=10066329
+}
+
+SinRamp17Points {
+gradient:
+  title="Sin Ramp 17 Points" smooth=yes numnodes=18 index=0 color=0 index=1
+  color=0 index=25 color=1644825 index=50 color=3289650 index=75
+  color=4868682 index=100 color=6447714 index=125 color=7895160 index=150
+  color=9342606 index=175 color=10658466 index=200 color=11842740 index=225
+  color=12961221 index=250 color=13948116 index=275 color=14803425
+  index=300 color=15527148 index=325 color=16053492 index=350
+  color=16448250 index=375 color=16711422 index=399 color=16777215
+}
+
+SubtleSineRamp#00 {
+gradient:
+  title="Subtle Sine Ramp #00" smooth=yes numnodes=18 index=0 color=0
+  index=1 color=790565 index=25 color=2500134 index=50 color=1918520
+  index=75 color=4079166 index=100 color=6250292 index=125 color=5592405
+  index=150 color=7165779 index=175 color=6974058 index=200 color=5411945
+  index=225 color=8158332 index=250 color=9726620 index=275 color=9079434
+  index=300 color=8293536 index=325 color=9671571 index=350 color=8171927
+  index=375 color=10000536 index=399 color=6076886
+}
+
+SubtleSineRamp#01 {
+gradient:
+  title="Subtle Sine Ramp #01" smooth=yes numnodes=18 index=0 color=0
+  index=1 color=1579032 index=25 color=2500134 index=50 color=3223857
+  index=75 color=4079166 index=100 color=4802889 index=125 color=5592405
+  index=150 color=6316128 index=175 color=6974058 index=200 color=7566195
+  index=225 color=8158332 index=250 color=10446731 index=275 color=9858471
+  index=300 color=9408399 index=325 color=9671571 index=350 color=9868950
+  index=375 color=9083558 index=399 color=8097463
+}
+
+SubtleSineRamp#02 {
+gradient:
+  title="Subtle Sine Ramp #02" smooth=yes numnodes=18 index=0 color=0
+  index=1 color=1579032 index=25 color=2500134 index=50 color=3223857
+  index=75 color=4079166 index=100 color=6250292 index=125 color=7362873
+  index=150 color=6316128 index=175 color=6974058 index=200 color=7566195
+  index=225 color=7438727 index=250 color=7372438 index=275 color=9079434
+  index=300 color=9408399 index=325 color=9671571 index=350 color=9868950
+  index=375 color=7042245 index=399 color=4764907
+}
+
+CarlsonGradient {
+gradient:
+  title="Carlson Gradient"
+  smooth=no numnodes=26 index=0 color=0 index=1 color=0
+  index=2 color=3158096 index=25 color=3158224 index=49 color=9013759
+  index=51 color=3164240 index=75 color=3188944 index=99 color=9036543
+  index=101 color=3166272 index=125 color=3199104 index=149 color=9043908
+  index=151 color=3690544 index=175 color=5820464 index=199 color=11009929
+  index=201 color=5263408 index=225 color=13684784 index=249 color=16777097
+  index=251 color=5257264 index=275 color=13654064 index=299 color=16754569
+  index=301 color=5255232 index=325 color=13643904 index=349 color=16746948
+  index=351 color=4730960 index=375 color=11022544 index=399 color=14846463
+}
+
+CarlsonALaKelly#1 {
+gradient:
+  title="Carlson a la Kelly #1" smooth=no numnodes=62 index=10
+  color=3888128 index=18 color=5272064 index=24 color=5535744 index=32
+  color=4481536 index=41 color=1977344 index=48 color=0 index=59
+  color=5272064 index=65 color=7314944 index=71 color=8237568 index=77
+  color=7908352 index=85 color=5799424 index=95 color=1516032 index=98
+  color=0 index=107 color=6063104 index=113 color=9160192 index=120
+  color=10807808 index=124 color=11005440 index=129 color=10280448
+  index=135 color=7776256 index=143 color=3097600 index=148 color=0
+  index=157 color=8424448 index=163 color=12571648 index=170 color=14809600
+  index=174 color=14941184 index=179 color=13888000 index=184
+  color=11650048 index=192 color=5660672 index=198 color=0 index=207
+  color=9079808 index=213 color=13751296 index=220 color=16185856 index=224
+  color=16317440 index=229 color=15133184 index=234 color=12698624
+  index=242 color=6184960 index=248 color=0 index=257 color=9210368
+  index=264 color=13947136 index=268 color=16052224 index=273
+  color=16775937 index=278 color=16052224 index=284 color=12894464
+  index=292 color=6315520 index=298 color=0 index=307 color=9208576
+  index=314 color=13944320 index=318 color=16049152 index=323
+  color=16772609 index=328 color=16049152 index=334 color=12891904
+  index=342 color=6314240 index=348 color=0 index=357 color=9208335
+  index=364 color=13944088 index=370 color=16443420 index=375
+  color=16640797 index=379 color=15456795 index=384 color=12957462
+  index=392 color=6379531 index=397 color=1578242 index=398 color=0
+}
+
+CosineRampAdjusted {
+gradient:
+  title="Cosine Ramp Adjusted" smooth=yes numnodes=17 index=0 color=10066329
+  index=25 color=10000536 index=50 color=9868950 index=75 color=9671571
+  index=100 color=9408399 index=125 color=9079434 index=150 color=8618883
+  index=175 color=8158332 index=200 color=7566195 index=225 color=6974058
+  index=250 color=6316128 index=275 color=5592405 index=300 color=4868682
+  index=325 color=4079166 index=350 color=3289650 index=375 color=2500134
+  index=399 color=1644825
+}
+
+SteelBlueRamp {
+gradient:
+  title="Steel Blue Ramp" smooth=yes numnodes=18 index=0 color=0 index=1
+  color=3287040 index=25 color=4996352 index=50 color=6574080 index=75
+  color=8151808 index=100 color=9729536 index=125 color=11175936 index=150
+  color=12622336 index=175 color=13937152 index=200 color=15120384
+  index=225 color=16303872 index=250 color=16764423 index=275
+  color=16764949 index=300 color=16765727 index=325 color=16765991
+  index=350 color=16766253 index=375 color=16766513 index=399
+  color=16766771
+}
+
+GoldRamp {
+gradient:
+  title="Gold Ramp" smooth=yes numnodes=18 index=0 color=8238 index=1
+  color=16476 index=25 color=20852 index=50 color=24714 index=75
+  color=28832 index=100 color=32694 index=125 color=36298 index=150
+  color=40158 index=175 color=43248 index=200 color=111615 index=225
+  color=1161471 index=250 color=2079999 index=275 color=2867455 index=300
+  color=3523583 index=325 color=3917055 index=350 color=4310783 index=375
+  color=4573183 index=399 color=4704511
+}
+
+Red-GoldModSineRamp {
+gradient:
+  title="Red-Gold Mod Sine Ramp" smooth=yes numnodes=18 index=0 color=0
+  index=1 color=10332 index=25 color=13428 index=50 color=16522 index=75
+  color=19872 index=100 color=23478 index=125 color=26826 index=150
+  color=30430 index=175 color=34032 index=200 color=102911 index=225
+  color=1154303 index=250 color=2074367 index=275 color=2862847 index=300
+  color=3519999 index=325 color=3914751 index=350 color=4309247 index=375
+  color=4572415 index=399 color=4704511
+}
+
+Hue {
+gradient:
+  title="Hue" smooth=no numnodes=9 index=0 color=66047 index=50
+  color=114943 index=100 color=130944 index=150 color=4259585 index=200
+  color=16776961 index=250 color=16728065 index=300 color=16712064
+  index=350 color=12583423 index=399 color=328191
+}
+
+1-CosineFull50%Grey {
+gradient:
+  title="1-Cosine Full 50% Grey" smooth=yes numnodes=22 index=0 color=0
+  index=1 color=4210752 index=20 color=4342338 index=40 color=4605510
+  index=60 color=5131854 index=80 color=5789784 index=100 color=6645093
+  index=120 color=7697781 index=140 color=8816262 index=160 color=10000536
+  index=180 color=11316396 index=200 color=12632256 index=220
+  color=11316396 index=240 color=10000536 index=260 color=8684676 index=280
+  color=7697781 index=300 color=6645093 index=320 color=5789784 index=340
+  color=5131854 index=360 color=4605510 index=380 color=4342338 index=399
+  color=4210752
+}
+
+1-CosineFull75%Grey {
+gradient:
+  title="1-Cosine Full 75% Grey" smooth=yes numnodes=22 index=0 color=0
+  index=1 color=4144959 index=20 color=4276545 index=40 color=4737096
+  index=60 color=5526612 index=80 color=6579300 index=100 color=7829367
+  index=120 color=9342606 index=140 color=11053224 index=160 color=12895428
+  index=180 color=14803425 index=200 color=16777215 index=220
+  color=14803425 index=240 color=12895428 index=260 color=11053224
+  index=280 color=9342606 index=300 color=7829367 index=320 color=6579300
+  index=340 color=5526612 index=360 color=4737096 index=380 color=4276545
+  index=399 color=4144959
+}
+
+1-CosineFull50%Sepia {
+gradient:
+  title="1-Cosine Full 50% Sepia" smooth=yes numnodes=22 index=0
+  color=0 index=1 color=2115168 index=20 color=2181219 index=40
+  color=2313577 index=60 color=2578037 index=80 color=2908548 index=100
+  color=3305368 index=120 color=3834288 index=140 color=4821699 index=160
+  color=6595276 index=180 color=8566230 index=200 color=10536928 index=220
+  color=8566230 index=240 color=6595276 index=260 color=4624578 index=280
+  color=3834288 index=300 color=3305368 index=320 color=2908548 index=340
+  color=2578037 index=360 color=2313577 index=380 color=2181219 index=399
+  color=2115168
+}
+
+1-CosineFull100%Grey {
+gradient:
+  title="1-Cosine Full 100% Grey" smooth=yes numnodes=20 index=0 color=0
+  index=20 color=197379 index=40 color=855309 index=60 color=1842204
+  index=80 color=3223857 index=100 color=4934475 index=120 color=6908265
+  index=140 color=9211020 index=160 color=11645361 index=180 color=14211288
+  index=200 color=16777215 index=220 color=14211288 index=240
+  color=11645361 index=260 color=9211020 index=280 color=6908265 index=300
+  color=4934475 index=320 color=3223857 index=340 color=1842204 index=360
+  color=855309 index=380 color=197379
+}
+
+1-CosineFull100%Sepia {
+gradient:
+  title="1-Cosine Full 100% Sepia" smooth=yes numnodes=20 index=0 color=0
+  index=20 color=66308 index=40 color=396819 index=60 color=925226 index=80
+  color=1586761 index=100 color=2445937 index=120 color=3437470 index=140
+  color=5413062 index=160 color=9091544 index=180 color=12967148 index=200
+  color=16777215 index=220 color=12967148 index=240 color=9091544 index=260
+  color=5413062 index=280 color=3437470 index=300 color=2445937 index=320
+  color=1586761 index=340 color=925226 index=360 color=396819 index=380
+  color=66308
+}
+
+absSineFull50%Red {
+gradient:
+  title="abs sine full 50% red" smooth=yes position=-37 numnodes=16 index=0
+  color=126 index=25 color=224 index=50 color=3487231 index=75
+  color=7171583 index=100 color=8487423 index=125 color=7171583 index=150
+  color=3487231 index=175 color=224 index=200 color=126 index=225 color=224
+  index=250 color=3487231 index=275 color=7171583 index=300 color=8487423
+  index=325 color=7171583 index=350 color=3487231 index=375 color=224
+}
+
+absSineFull50%Gold {
+gradient:
+  title="abs sine full 50% gold" smooth=yes numnodes=16 index=0 color=12926
+  index=25 color=26848 index=50 color=3514879 index=75 color=7194111
+  index=100 color=8508927 index=125 color=7194111 index=150 color=3514879
+  index=175 color=26848 index=200 color=12926 index=225 color=26848
+  index=250 color=3514879 index=275 color=7194111 index=300 color=8508927
+  index=325 color=7194111 index=350 color=3514879 index=375 color=26848
+}
+
+absSineFull50%Grey {
+gradient:
+  title="abs sine full 50% grey" smooth=yes position=194 numnodes=16
+  index=19 color=7368816 index=44 color=10132122 index=69 color=11974326
+  index=94 color=12632256 index=119 color=11974326 index=144 color=10132122
+  index=169 color=7368816 index=194 color=4144959 index=219 color=7368816
+  index=244 color=10132122 index=269 color=11974326 index=294
+  color=12632256 index=319 color=11974326 index=344 color=10132122
+  index=369 color=7368816 index=394 color=4144959
+}
+
+absSineFull50%Two-toneOrange-brown {
+gradient:
+  title="abs sine full 50% two-tone orange-brown" smooth=yes position=6
+  numnodes=16 index=0 color=986990 index=25 color=1798341 index=50
+  color=5151462 index=75 color=8369901 index=100 color=9552112 index=125
+  color=8369901 index=150 color=5151462 index=175 color=1798341 index=200
+  color=1005422 index=225 color=1809093 index=250 color=5161190 index=275
+  color=8377069 index=300 color=9558256 index=325 color=8377069 index=350
+  color=5161190 index=375 color=1809093
+}
+
+8xSin50%-75%Carlson {
+gradient:
+  title="8xSin 50%-75% Carlson" smooth=yes numnodes=40 index=0
+  color=4476976 index=10 color=5066217 index=20 color=8487423 index=30
+  color=8487423 index=40 color=5066217 index=50 color=3161168 index=60
+  color=5096169 index=70 color=8511743 index=80 color=8511743 index=90
+  color=5096169 index=100 color=3166284 index=110 color=5106075 index=120
+  color=8519616 index=130 color=8519616 index=140 color=5106075 index=150
+  color=3166259 index=160 color=7661901 index=170 color=10616705 index=180
+  color=10616705 index=190 color=7661901 index=200 color=4476976 index=210
+  color=15329613 index=220 color=16711298 index=230 color=16579716
+  index=240 color=15329613 index=250 color=5260336 index=260 color=15299661
+  index=270 color=16491397 index=280 color=16229769 index=290
+  color=15299661 index=300 color=5255220 index=310 color=15289755 index=320
+  color=16744896 index=330 color=16744896 index=340 color=15289755
+  index=350 color=5255244 index=360 color=12733929 index=370 color=14713343
+  index=380 color=14713343 index=390 color=12733929
+}
+
+CubicFwdRamp100%Grey {
+gradient:
+  title="Cubic Fwd Ramp 100% Grey" smooth=yes position=142 numnodes=21
+  index=0 color=0 index=20 color=1513239 index=40 color=2894892 index=60
+  color=4144959 index=80 color=5197647 index=100 color=6118749 index=120
+  color=6842472 index=140 color=7500402 index=160 color=7960953 index=180
+  color=8224125 index=200 color=8421504 index=220 color=8553090 index=240
+  color=8816262 index=260 color=9276813 index=280 color=9934743 index=300
+  color=10658466 index=320 color=11579568 index=340 color=12632256
+  index=360 color=13882323 index=380 color=15263976 index=399
+  color=16777215
+}
+
+CubicFwdRamp100%Red-Gold {
+gradient:
+  title="Cubic Fwd Ramp 100% Red-Gold" smooth=yes position=142
+  numnodes=21 index=0 color=0 index=20 color=6190 index=40 color=12376
+  index=60 color=18302 index=80 color=23710 index=100 color=28858 index=120
+  color=32976 index=140 color=37092 index=160 color=40434 index=180
+  color=43002 index=200 color=110591 index=220 color=374015 index=240
+  color=900095 index=260 color=1819391 index=280 color=3132415 index=300
+  color=4576511 index=320 color=6413823 index=340 color=8513279 index=360
+  color=11005951 index=380 color=13760767 index=399 color=16777215
+}
+
+CubicFwdRamp100%Hue {
+gradient:
+  title="Cubic Fwd Ramp 100% Hue" smooth=yes position=142 numnodes=21
+  index=0 color=0 index=20 color=3374 index=40 color=13656 index=60
+  color=29054 index=80 color=40574 index=100 color=47709 index=120
+  color=53289 index=140 color=1500160 index=160 color=6418944 index=180
+  color=11532800 index=200 color=16776961 index=220 color=16757765
+  index=240 color=16739853 index=260 color=16724507 index=280
+  color=16723800 index=300 color=16729506 index=320 color=16736736
+  index=340 color=15958527 index=360 color=14460927 index=380
+  color=14668287 index=399 color=16777215
+}
+
+1-cos75%CenteredFullSepia {
+gradient:
+  title="1-cos 75% centered full sepia" smooth=yes numnodes=21 index=0
+  color=1586504 index=20 color=1652299 index=40 color=1784914 index=60
+  color=2115168 index=80 color=2512243 index=100 color=2974856 index=120
+  color=3569827 index=140 color=4361920 index=160 color=6463947 index=180
+  color=8697302 index=200 color=10996450 index=220 color=8697302 index=240
+  color=6463947 index=260 color=4361920 index=280 color=3569827 index=300
+  color=2974856 index=320 color=2512243 index=340 color=2115168 index=360
+  color=1784914 index=380 color=1652299 index=399 color=1586504
+}
+
+@@@ {
+gradient:
+  title="@@@" smooth=no numnodes=6 index=0 color=254 index=25 color=16382
+  index=50 color=32766 index=75 color=49150 index=100 color=65278 index=200
+  color=65024
+}
+
+1-CosineFull75%Sepia {
+gradient:
+  title="1-Cosine Full 75% Sepia" smooth=yes numnodes=20 index=0
+  color=2049375 index=20 color=2115426 index=40 color=2379628 index=60
+  color=2776190 index=80 color=3305110 index=100 color=3900339 index=120
+  color=5609927 index=140 color=8171988 index=160 color=10996450 index=180
+  color=13821168 index=200 color=16711679 index=220 color=13821168
+  index=240 color=10996450 index=260 color=8171988 index=280 color=5609927
+  index=300 color=3900339 index=320 color=3305110 index=340 color=2776190
+  index=360 color=2379628 index=380 color=2115170
+}

@@ -1,0 +1,313 @@
+
+SFT_ChrysanthemumTrapV1.01 (BOTH) {
+; Setemkia FallingTree
+; Fawn@SpiritSeeker.net (NO spam, please!)
+; 9 October 2001
+; 4 October 2001
+
+; polar form of an elipse centered at the origin:
+;   r = a*b/sqrt(b^2+(a^2-b^2)*sin(t)^2)
+
+init:
+  ; Find the point at which the petal is widest.
+  ; This formula for petals=6 was computed with Maple 7.
+  ; float tt = arctan(sqrt(322-14*sqrt(417))/sqrt(462+14*sqrt(417)))
+  ; float yy = cos(3*tt)^2
+  ; float xx = cos(tt)*yy, yy = sin(tt)*yy
+  float   xx = 0.620013174897086288 * @k      ; scale the elipse
+  float   yy = 0.136241005190943189 * @k * 2  ; ease curvature across petal
+
+  bool    in   = false
+  int     iter = 0
+
+  ;       low         high        first       current (last)
+  complex lm = (0,0), hm = (0,0), fm = (0,0), cm = (0,0) ; pt rel to trap (polar)
+  complex lz = (0,0), hz = (0,0), fz = (0,0), cz = (0,0) ; pt rel to offset (rect)
+  complex lc = (0,0), hc = (0,0), fc = (0,0), cc = (0,0) ; trap center (rect)
+  complex lr = (0,0), hr = (0,0), fr = (0,0), cr = (0,0) ; dist to center, trap index
+
+loop:
+  if iter >= @skip
+    if !@draw
+      cz = #z
+    else
+      cz = #pixel
+    endif
+    float zr = cabs(cz-@offset),
+    float zt = atan2(cz-@offset)
+    if zt < 0
+      zt = 2*#pi - zt
+    endif
+    float r0 = @k/8
+    float r1 = @k*cos(3*zt)^2
+    float r2 = @k*cos(3*(zt-#pi/6))^2
+    float r3 = @k*cos(3*(zt-#pi*1/12))^2
+    float r4 = @k*cos(3*(zt-#pi*3/12))^2
+
+    bool hit  = true
+    if     zr <= r0
+      cc = (0,0)
+      cr = r0+flip(0)
+    elseif zr <= r1
+      cc = 17/24*@k*exp(flip(round(zt*3/#pi)*#pi/3))
+      cr = 14/24*@k+flip(1)
+    elseif zr <= r2
+      cc = 17/24*@k*exp(flip(round((zt+#pi/6)*3/#pi)*#pi/3-#pi/6))
+      cr = 14/24*@k+flip(2)
+    elseif zr <= r3
+      cc = 17/24*@k*exp(flip(round((zt+#pi*1/12)*3/#pi)*#pi/3-1*#pi/12))
+      cr = 14/24*@k+flip(3)
+    elseif zr <= r4
+      cc = 17/24*@k*exp(flip(round((zt+#pi*3/12)*3/#pi)*#pi/3-3*#pi/12))
+      cr = 14/24*@k+flip(3)
+    else
+      hit = false
+    endif
+
+    if hit
+      zt = atan2(#z-cc)
+      if zt < 0
+        zt = 2*#pi - zt
+      endif
+      cm = cabs(#z-cc)+flip(zt)
+      if !in
+        lm = hm = fm = cm
+        lz = hz = fz = cz
+        lc = hc = fc = cc
+        lr = hr = fr = cr
+        in = true
+      else
+        if     real(cm) < real(lm) ; New minimum approach
+          lm = cm, lz = cz, lc = cc, lr = cr
+        elseif real(cm) > real(hm) ; new maximum approach
+          hm = cm, hz = cz, hc = cc, hr = cr
+        endif
+      endif
+    endif
+  endif
+  iter = iter + 1
+
+final:
+  if !in
+    #solid = true
+  else
+    if     @what == 0 ; First Entry
+      cm = fm, cz = fz, cc = fc, cr = fr
+    elseif @what == 1 ; Last entry
+      cm = cm, cz = cz, cc = cc, cr = cr
+    elseif @what == 2 ; Closest Approach
+      cm = lm, cz = lz, cc = lc, cr = lr
+    elseif @what == 3 ; Furthest Approach
+      cm = hm, cz = hz, cc = hc, cr = hr
+    endif
+
+    if     @how == 0 ; Magnitude
+      #index = 399/400*(1-real(cm)/real(cr))
+    elseif @how == 1 ; Angle
+      #index = 399/400*imag(cm)/2/#pi
+    elseif @how == 2 ; Eliptical distance scaling
+      if imag(cr) > 0
+        cz = cz*#e^flip(-atan2(cc))-xx ; rotate petal and translate to (xx,0)
+        zr = cabs(cz),
+        zt = atan2(cz)
+        float rr = xx*yy/sqrt(yy^2+(xx^2-yy^2)*sin(zt)^2)
+        #index = 399/400*(1-zr/rr)
+      else
+        #index = 399/400*(1-real(cm)/real(cr)) ; center is spherical
+      endif
+    endif
+  endif
+
+default:
+  title = "Chrysanthemum Trap v1.01"
+
+param skip
+  caption = "Skip Iterations"
+  hint    = "As one explores deeper into the fractal early traps obscure later \
+             traps. Skipping a iterations clears away these obscuring traps.  \
+             At the very least, skip should be set to 1 to disqualify points \
+             that start in the trap."
+  default = 1
+  min     = 0
+endparam
+
+param k
+  caption = "Flower Radius"
+  hint    = "Trap size"
+  default = 1.0
+  min     = 1e-20
+endparam
+
+param offset
+  caption = "Flower Center"
+  hint    = "Trap offset from origin"
+  default = (0,0)
+endparam
+
+param what
+  caption = "Trap Mode"
+  hint    = "What to trap: first entry, last entry, closest to petal center, \
+            or furthest from petal center."
+  enum    = "First" "Last" "Closest" "Furthest"
+  default = 2
+endparam
+
+param how
+  caption = "Coloring Mode"
+  hint    = "What to color"
+  enum    = "Dist to Trap" "Angle to Trap" "Eliptical Distance"
+  default = 0
+endparam
+
+param draw
+  caption = "Draw Trap?"
+  hint    = "Choose between Drawing #z or #pixel"
+  default = false
+endparam
+}
+
+SFT_ChrysanthemumTrapV1.0 (BOTH) {
+; Setemkia FallingTree
+; Fawn@SpiritSeeker.net (NO spam, please!)
+; 9 October 2001
+; 4 October 2001
+
+init:
+  bool    in   = false
+  int     iter = 0
+
+  ;       low         high        first       current (last)
+  complex lm = (0,0), hm = (0,0), fm = (0,0), cm = (0,0) ; pt rel to trap (polar)
+  complex lz = (0,0), hz = (0,0), fz = (0,0), cz = (0,0) ; pt rel to offset (rect)
+  complex lc = (0,0), hc = (0,0), fc = (0,0), cc = (0,0) ; trap center (rect)
+  complex lr = (0,0), hr = (0,0), fr = (0,0), cr = (0,0) ; (dit to center, trap index)
+
+loop:
+  if iter >= @skip
+    if !@draw
+      cz = #z
+    else
+      cz = #pixel
+    endif
+    float zr = cabs(cz-@offset),
+    float zt = atan2(cz-@offset)
+    if zt < 0
+      zt = 2*#pi - zt
+    endif
+    float r0 = @k/8
+    float r1 = @k*(1/8+7/8*cos(3*zt)^2)
+    float r2 = @k*(2/8+6/8*cos(3*zt-#pi/6)^2)
+    float r3 = @k*(3/5+5/8*cos(6*zt-#pi/12)^2)
+
+    bool hit  = true
+    if     zr <= r0
+      cc = (0,0)
+      cr = r0+flip(0)
+    elseif zr <= r1
+      cc = 25/32*@k*exp(flip(round(zt*3/#pi)*#pi/3))
+      cr = 21/32*@k+flip(1)
+    elseif zr <= r2
+      cc = 26/32*@k*exp(flip(round((zt-#pi/6)*3/#pi)*#pi/3+#pi/6))
+      cr = 18/32*@k+flip(2)
+    elseif zr <= r3
+      cc = 27/32*@k*exp(flip(round((zt-#pi/12)*6/#pi)*#pi/6+#pi/12))
+      cr = 15/32*@k+flip(3)
+    else
+      hit = false
+    endif
+
+    if hit
+      zt = atan2(#z-cc)
+      if zt < 0
+        zt = 2*#pi - zt
+      endif
+      cm = cabs(#z-cc)+flip(zt)
+      if !in
+        lm = hm = fm = cm
+        lz = hz = fz = cz
+        lc = hc = fc = cc
+        lr = hr = fr = cr
+        in = true
+      else
+        if     real(cm) < real(lm) ; New minimum approach
+          lm = cm, lz = cz, lc = cc, lr = cr
+        elseif real(cm) > real(hm) ; new maximum approach
+          hm = cm, hz = cz, hc = cc, hr = cr
+        endif
+      endif
+    endif
+  endif
+  iter = iter + 1
+
+final:
+  if !in
+    #solid = true
+  else
+    if     @what == 0 ; First Entry
+      cm = fm, cz = fz, cc = fc, cr = fr
+    elseif @what == 1 ; Last entry
+      cm = cm, cz = cz, cc = cc, cr = cr
+    elseif @what == 2 ; Closest Approach
+      cm = lm, cz = lz, cc = lc, cr = lr
+    elseif @what == 3 ; Furthest Approach
+      cm = hm, cz = hz, cc = hc, cr = hr
+    endif
+
+    ; cm = metric (radial relative)
+    ; cz = point (Cartesian)
+    ; cc = trap center (Cartesian)
+    ; cr = trap info (radius, index)
+    if     @how == 0 ; Magnitude
+      #index = real(cm)/real(cr)*399/400
+    elseif @how == 1 ; Angle
+      #index = imag(cm)/2/#pi*399/400
+    endif
+  endif
+
+default:
+  title = "Chrysanthemum Trap v1.00"
+
+param skip
+  caption = "Skip Iterations"
+  hint    = "As one explores deeper into the fractal early traps obscure later \
+             traps. Skipping a iterations clears away these obscuring traps.  \
+             At the very least, skip should be set to 1 to disqualify points \
+             that start in the trap."
+  default = 1
+  min     = 0
+endparam
+
+param k
+  caption = "Flower Radius"
+  hint    = "Trap size"
+  default = 0.5
+  min     = 1e-20
+endparam
+
+param offset
+  caption = "Flower Center"
+  hint    = "Trap offset from origin"
+  default = (0,0)
+endparam
+
+param what
+  caption = "Trap Mode"
+  hint    = "What to trap: first entry, last entry, closest to petal center, \
+            or furthest from petal center."
+  enum    = "First" "Last" "Closest" "Furthest"
+  default = 2
+endparam
+
+param how
+  caption = "Coloring Mode"
+  hint    = "What to color"
+  enum    = "Dist to Trap" "Angle to Trap"
+  default = 0
+endparam
+
+param draw
+  caption = "Draw Trap?"
+  hint    = "Choose between Drawing #z or #pixel"
+  default = false
+endparam
+}

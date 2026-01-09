@@ -1,0 +1,207 @@
+
+sft-avg-druid-mandy {
+init:
+	#z = @firstz
+
+loop:
+	complex zm  = #z^@m
+	complex zcr = #z^@cr
+	complex zci = #z^@ci
+	zcr = zcr - @fr1(real(zcr)) + @fr2(real(zcr))
+	zci = zci - @fi1(imag(zci)) + @fi2(imag(zci))
+	#z = (@sm*zm + @scr*zcr + @sci*zci) / (@sm + @scr + @sci) + #pixel
+
+bailout:
+  |z| < @bail
+
+default:
+	title = "Avg Druid Mandy"
+	center = (-0.5,0.0)
+	magn = 0.5
+
+	param firstz
+		caption = "Perturbation"
+		hint    = "Initial value of #z.  Modifies formula output."
+		default = (0,0)
+	endparam
+
+	param m
+		caption = "Mandy exponent"
+		default = 2.0
+	endparam
+
+	param sm
+		caption = "Mandy weight"
+		hint	= "The relative effect of Mandy in the average."
+		default	= 1.0
+		min		= 0
+	endparam
+
+	param cr
+		caption = "R Celtic Exponent"
+		default = 2.0
+	endparam
+
+	param scr
+		caption = "R Celtic weight"
+		hint	= "The relative effect of R Celtic in the average."
+		default	= 1.0
+		min		= 0
+	endparam
+	
+	func fr1
+		caption = "R Celtic FN1"
+		hint	= "Default is IDENT. z=z^n-FN1(real(z^n)+FN2(real(z^n))+c"
+		default	= ident()
+	endfunc
+	
+	func fr2
+		caption = "R Celtic FN2"
+		hint	= "Default is ABS. z=z^n-FN1(real(z^n)+FN2(real(z^n))+c"
+		default	= abs()
+	endfunc
+
+	param ci
+		caption = "I Celtic Exponent"
+		default = 2.0
+	endparam
+
+	param sci
+		caption = "I Celtic weight"
+		hint	= "The relative effect of I Celtic in the average."
+		default	= 1.0
+		min		= 0
+	endparam
+	
+	func fi1
+		caption = "R Celtic FI1"
+		hint	= "Default is IDENT. z=z^n-FI1(imag(z^n)+FI2(imag(z^n))+c"
+		default	= ident()
+	endfunc
+	
+	func fi2
+		caption = "R Celtic FI2"
+		hint	= "Default is ABS. z=z^n-FI1(imag(z^n)+FI2(imag(z^n))+c"
+		default	= abs()
+	endfunc
+
+	param bail
+		caption = "Bailout value"
+		default = 1000.0
+	endparam
+}
+
+sft-ImagCelticMandy {
+init:
+  complex c = #pixel
+  #z = 0
+
+loop:
+  z = z^2
+  z = z - imag(z) + abs(imag(z))+ c
+
+bailout:
+  |z| < @bail
+
+default:
+  title = "Imag Celtic Mandelbrot"
+  center = (-0.5,0.1)
+
+param bail
+  caption = "Bailout value"
+  default = 1000.0
+endparam
+
+switch:
+  type = "sft-ImagCelticJulia"
+  seed = #pixel
+  bail = bail
+}
+
+sft-ImagCelticJulia {
+init:
+  #z = #pixel
+
+loop:
+  z = z^2
+  z = z - imag(z) + abs(imag(z))+ @c
+
+bailout:
+  |z| < @bail
+
+default:
+  title = "Imag Celtic Julia"
+
+param seed
+  caption = "Julia seed"
+  default = (0,0)
+endparam
+
+param bail
+  caption = "Bailout value"
+  default = 1000.0
+endparam
+
+switch:
+  type = "sft-ImagCelticMandy"
+  bail = bail
+}
+
+sft-3-WayDruidMandelbrot {
+init:
+  int iter = @start
+  #z = @firstz
+
+loop:
+  int choose = iter % 3
+  iter = iter + 1
+  if     choose == 0 ; Mandelbrot
+    #z = #z^@m + #pixel
+  elseif choose == 1 ; R Celtic
+    #z = #z^@cr
+    #z = #z - real(#z) + abs(real(#z)) + #pixel
+  else               ; I Celtic
+    #z = #z^@ci
+    #z = #z - imag(#z) + abs(imag(#z)) + #pixel
+  endif
+
+bailout:
+  |z| < @bail
+
+default:
+  title = "3-Way Druid Mandelbrot"
+  center = (-0.5,0.1)
+
+param start
+  caption = "Start with..."
+  hint    = "Which form to start with."
+  enum    = "Mandelbrot" "Celtic (real)" "Celtic (imag)"
+  default = 0
+endparam
+
+param firstz
+  caption = "Perturbation"
+  hint    = "Initial value of #z.  Modifies formula output."
+  default = (0,0)
+endparam
+
+param m
+  caption = "Mandelbrot Exponent"
+  default = 2.0
+endparam
+
+param cr
+  caption = "R Celtic Exponent"
+  default = 2.0
+endparam
+
+param ci
+  caption = "I Celtic Exponent"
+  default = 2.0
+endparam
+
+param bail
+  caption = "Bailout value"
+  default = 1000.0
+endparam
+}
