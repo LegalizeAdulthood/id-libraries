@@ -1,0 +1,212 @@
+kborder1 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x - a * sin(y)
+  y = y - b * sin(d)
+  z = x + flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(23.3928882094294254,-2.34344328983381394)
+  maxiter = 20 
+  magn = 0.0603068
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder2 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x - a * cos(y)
+  y = y - b * cos(d)
+  z = x + flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(23.3928882094294254,-2.34344328983381394)
+  maxiter = 20 
+  magn = 0.0603068
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder3 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x - a * atan(y)
+  y = y - b * atan(d)
+  z = x + flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(23.3928882094294254,-2.34344328983381394)
+  maxiter = 20 
+  magn = 0.0603068
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder4 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x - a ^(y)
+  y = y - b ^(d)
+  z = x + flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(23.3928882094294254,-2.34344328983381394)
+  maxiter = 20 
+  magn = 0.0603068
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder5 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x^(a *|sin(y)|)
+  y = y^(b *|sin(d)|)
+  z = x+ flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(32.6787400701337558,-25.3369783359600138)
+  maxiter = 20 
+  magn = 0.194538
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder6 {
+init:
+  x = real(#pixel) 
+  y = imag(#pixel)
+  a = real(@a)
+  b = imag(@a) 
+  d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x *( a+(y))
+  y = y *( b+(d))
+  z = x + flip(y)
+bailout:
+  |x| < @b
+default:
+  center=(23.3928882094294254,-2.34344328983381394)
+  maxiter = 20 
+  magn = 0.0603068
+  angle=90
+  param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default = 20
+  endparam 
+}
+
+kborder7 {
+init:
+  z = 0    
+  p = #pixel/1
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*sin(sin(y+sin(.7*(y+sin(.7*y)))))
+  y = y-.1*cos(cos(d+cos(.7*(d+cos(.7*d)))))
+  z = (x^flip(y))
+
+ bailout: 
+      |z| <= 100
+      default:
+  center=(-0.0428326932437944246,-0.0219803702293912221)
+  maxiter = 20 
+  magn = 0.179129
+  angle=90
+  periodicity = 0
+
+}
+

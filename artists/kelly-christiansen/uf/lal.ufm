@@ -1,0 +1,292 @@
+Follies1 {
+init:
+  z = Pixel
+loop:
+  z = fn1(z * z + 1) + P1
+bailout:
+  |z| <= 4
+default:
+  title = "Follies1"
+  method = multipass
+  
+func fn1
+  caption = "Follies"
+  default = asin()
+endfunc
+}
+
+Follies2 {
+init:
+  z = Pixel+1
+loop:
+  z = fn1(z + z * z + 1) + P1
+bailout:
+  |z| <= 4
+default:
+  title = "Follies2"
+  method = multipass
+func fn1
+  caption = "Follies"
+  default = asin()
+endfunc
+}
+
+Follies3 {
+init:
+  z = Pixel
+loop:
+  z = fn1(z + z * z + P1) + P2
+bailout:
+  |z| <= 4
+default:
+  title = "Follies3"
+  method = multipass
+
+func fn1
+  caption = "Follies"
+  default = recip()
+endfunc
+}
+
+Follies5 {
+init:
+  z = c = pixel
+loop:
+  z = fn1( z * z ) / (( z * z + z ) + fn2(( c + z) * z )* fn3( z )) + pixel
+bailout:
+  |z| <= @bailout
+default:
+  title = "Follies5"
+  method = multipass
+  
+param bailout 
+ caption = "bailout" 
+ default = 4.0 
+ min = 1E-10  
+endparam
+
+func fn1 
+  caption = "Follies"
+  default = log()
+endfunc
+func fn2
+  caption = "More Follies"
+  default = ident()
+endfunc
+func fn3
+  caption = "And More Follies"
+  default = ident()
+endfunc
+}
+
+Follies6 {
+init:
+  z = 0
+loop:
+  z = fn1 (z * z) * fn2 (z ^ z) * fn3( z ) + pixel
+bailout:
+  |z| <= P1 + 4
+default:
+  title = "Follies6"
+  method = multipass
+  
+func fn1
+  caption = "Follies"
+  default = ident()
+endfunc
+func fn2
+  caption = "Hollies"
+  default = ident()
+endfunc
+func fn3
+  caption = "Jollies"
+  default = ident()
+endfunc
+}
+
+Follies7-TheBlackSamuray {
+init:
+    z=pixel
+loop:
+  z=fn1(fn2(z)) * (fn3(z))+pixel
+bailout:
+  |z| <= P1 + 4
+default:
+  title = "Follies7"
+  method = multipass
+  
+func fn1
+  caption = "Follies"
+  default = round()
+endfunc
+func fn2
+  caption = "More Follies"
+  default = cotanh()
+endfunc
+func fn3
+  caption = "Still More Follies"
+  default = flip()
+endfunc
+}
+
+Follies8 {
+init:
+  z = P1
+loop:  
+  z = fn1 (1/(z*z - pixel) + P1)
+bailout:
+  |z| <= P1+5
+default:
+  title = "Follies8"
+  method = multipass
+func fn1
+  caption = "Follies"
+  default = cotan()
+endfunc
+}
+
+Follies9 {
+init:
+  z = 1/fn1(pixel)
+loop:
+  z = fn2 (z*z + pixel) / z
+bailout:
+  |z| <= 4
+default:
+  title = "Follies9"
+  method = multipass
+func fn1
+  caption = "Follies"
+  default = exp()
+endfunc
+func fn2
+  caption = "More Follies"
+  default = ident()
+endfunc
+}
+
+Lollypop {
+init:
+  z = 1 / fn1(pixel)
+loop:
+  z = fn2 (z * z + z)/ z
+bailout:
+  |z| <= 10
+default:
+  title = "Lollypop"
+  method = multipass
+  
+func fn1
+  caption = "Lolly"
+  default = tan()
+endfunc
+func fn2
+  caption = "Pop"
+  default = conj()
+endfunc
+}
+
+Lollypop2 {
+init:
+  z = 1 / fn1(pixel+1)
+loop:
+  z = fn2 ((1/z) * z + z) / z
+bailout:
+  |z| <= @bailout
+default:
+  title = "Lollypop2"
+  method = multipass
+  maxiter = 250
+  periodicity = 0  
+param bailout 
+  hint = "Try increasing this to \
+         100, 1000, etc."
+  caption = "bailout"
+  default = 10
+  min = 1E-10  
+endparam
+
+func fn1
+  caption = "LOL"
+  default = cotanh ()
+endfunc
+
+func fn2
+  caption = "ROFL"
+  default = cotanh ()
+endfunc
+}
+
+Mandy {
+init:
+  z=1/((2*pixel-fn1(5/pixel))+fn2(pixel-fn1(2.5/pixel)))
+  c=1/pixel+fn1(flip(tan(z*z)))
+loop:
+  z=z*z+c
+bailout:
+  |real(z)| <= 4
+default:
+  title = "Mandy"
+  periodicity = 0
+  maxiter = 500
+  magn = .7
+  center = (1.38,0)
+
+func fn1
+  caption = "Here"
+  default = zero ()
+endfunc
+
+func fn2
+  caption = "There"
+  default = ident ()
+endfunc
+}
+
+Oludeniz {
+init:
+  z = pixel + 1
+loop:
+  z = fn1(z * z) * ( 1 / z ^ z ) + pixel
+bailout:
+  |z| <= 4
+default:
+  title = "Oludeniz"
+  periodicity = 0
+  maxiter = 500
+}
+
+Raven {
+init:
+  z = pixel + 1
+loop:
+  z=(z/imag(z)-z/real(z))*p1*fn1(z)+p2
+bailout:
+  |z| <= @bailout
+default:
+  title = "Raven"
+  method = multipass
+  maxiter = 100
+  periodicity = 0
+  center = (-1, 0)
+  
+param bailout
+  caption = "Bailout"
+  default = 10
+endparam
+
+param p1
+  caption = "1st Multiplier"
+  default = (-1.0, 0)
+endparam
+
+param p2
+  caption = "2nd Multiplier"
+  default = (-0.5, -0.4)
+endparam
+
+func fn1
+  caption = "First Raven"
+  default = ident ()
+endfunc
+}

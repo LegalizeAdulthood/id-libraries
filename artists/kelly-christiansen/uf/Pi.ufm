@@ -1,0 +1,235 @@
+comment {
+
+  Godwin Vickers, January 2001
+  http://www.hypercomplex.org
+  
+  Pi1: perimeter of a regular polygon inscribed in a circle, Mandelbrot set
+  Pi2: perimeter of a regular polygon circumbscribing a circle, Mandelbrot set
+  Pi3: variation of the above using cosine, Mandelbrot set
+  Pi4: Julia set of Pi1
+  Pi5: Julia set of Pi2
+  Pi6: Julia set of Pi3
+  
+}
+
+pi1 { ;Godwin Vickers
+init:
+  z = @start + #pixel
+loop:
+  z = 2*z*#pixel*sin(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi1"
+  maxiter = 149
+  center = (0, 0)
+  param start
+    caption = "Perturbation"
+    default = (0,0)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi4"
+  seed = pixel
+  bailout = bailout
+  test = test
+}
+
+pi2 { ;Godwin Vickers
+init:
+  z = @start + #pixel
+loop:
+  z = 2*z*#pixel*tan(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi2"
+  maxiter = 149
+  center = (0, 0)
+  param start
+    caption = "Perturbation"
+    default = (0,0)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi5"
+  seed = pixel
+  bailout = bailout
+  test = test
+}
+
+pi3 { ;Godwin Vickers
+init:
+  z = @start + #pixel
+loop:
+  z = 2*z*#pixel*cos(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi3"
+  maxiter = 149
+  center = (0, 0)
+  param start
+    caption = "Perturbation"
+    default = (0,0)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi6"
+  seed = pixel
+  bailout = bailout
+  test = test
+}
+
+Pi4 { ;Godwin Vickers
+init:
+  z = #pixel
+loop:
+  z = 2*z * @seed *sin(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi4"
+  maxiter = 149
+  param seed
+    caption = "Parameter"
+    default = (0.3, 0.6)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi1"
+  bailout = bailout
+  test = test
+}
+
+Pi5 { ;Godwin Vickers
+init:
+  z = #pixel
+loop:
+  z = 2*z * @seed *tan(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi5"
+  maxiter = 149
+  param seed
+    caption = "Parameter"
+    default = (0.3, 0.6)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi2"
+  bailout = bailout
+  test = test
+}
+
+Pi6 { ;Godwin Vickers
+init:
+  z = #pixel
+loop:
+  z = 2*z * @seed *cos(3.1415926/z)
+bailout:
+  (@test == 0 && |z| <= @bailout) ||                                         \
+  (@test == 1 && sqr(real(z)) <= @bailout) ||                                \
+  (@test == 2 && sqr(imag(z)) <= @bailout) ||                                \
+  (@test == 3 && (sqr(real(z)) <= @bailout && sqr(imag(z)) < @bailout)) ||   \
+  (@test == 4 && (sqr(real(z)) <= @bailout || sqr(imag(z)) < @bailout)) ||   \
+  (@test == 5 && (sqr(abs(real(z)) + abs(imag(z))) <= @bailout)) ||          \
+  (@test == 6 && (sqr(real(z) + imag(z)) <= @bailout))
+default:
+  title = "Pi6"
+  maxiter = 149
+  param seed
+    caption = "Parameter"
+    default = (0.3, 0.6)
+  endparam
+  param test
+    caption = "Bailout Test"
+    default = 0
+    enum = "mod" "real" "imag" "or" "and" "manh" "manr"
+  endparam
+  param bailout
+    caption = "Bailout value"
+    default = 4.0
+    min = 1
+  endparam
+switch:
+  type = "Pi3"
+  bailout = bailout
+  test = test
+}

@@ -1,0 +1,572 @@
+kform1{
+   z = c = pixel:
+   z = ((z^@power3)/@power)*(c^@power2)+pixel
+  |z| <=100
+default:
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+kform2{
+   z = c = pixel:
+   z = ((z^@power)/@power2)*(c^@power3)+pixel
+  |z| <=100
+default:
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+param power2
+    caption = "Power2"
+    default = (5,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (5,0)
+  endparam
+}
+
+kform3{
+      z = c = pixel:
+      z = ((z^@power)/@power2)*(c/@power3)+pixel
+    |z| <=500
+default:
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (10,0)
+  endparam
+param power2
+    caption = "Power2"
+    default = (5,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (5,0)
+  endparam
+}
+
+kform4{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z^@power10)/@power)*(c/@power3)+pixel
+  z=z*z+c
+bailout:
+  |z| < 500
+default:
+center =(-0.31084,1.079496)
+magn=64.419
+angle=18.3294
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (5,0)
+  endparam
+param power2
+    caption = "Power2"
+    default = (10,0)
+  endparam
+param power3
+    caption = "Power2"
+    default = (5,0)
+  endparam
+}
+
+kform5{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z^@power)/@power2)*(sin(c+@power3))+pixel
+  z=z*z+c
+bailout:
+  |z| < 500
+default:
+center =(-0.646517821541462129,0.28292274387487324)
+magn=0.827601
+angle=355.559
+periodicity = 0
+  param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+param power2
+    caption = "Power2"
+    default = (5,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (5,0)
+  endparam
+}
+
+kform6{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z^@power)/@power2)*(sin(c+(z/@power3)))+pixel
+  z=z*z+c
+bailout:
+  |z| < 500
+default:
+center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+   param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.5,0)
+  endparam
+  param power2
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+kform7{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z^@power)/@power2)*(sin(c+(z/@power3)))+pixel
+  z=z*@power+c
+bailout:
+  |z| < 500
+default:
+ center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.5,0)
+  endparam
+  param power3
+    caption = "Power3"
+    default = (3,0)
+  endparam
+}
+
+kform8{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z*@power)+@power2)*(tan(c+(z^@power3)))+pixel
+  z=z*@power+c
+bailout:
+  |z| < 500
+default:
+ center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.5,0)
+  endparam
+  param power3
+    caption = "Power3"
+    default = (3,0)
+  endparam
+}
+
+kform9{
+init:
+  z=0
+  c=pixel
+loop:
+  z = ((z*@power)-@power2)*ident((c+(z^@power3)))+pixel
+  z=z*@power+c
+bailout:
+  |z| < 500
+default:
+ center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.5,0)
+  endparam
+  param power3
+    caption = "Power3"
+    default = (3,0)
+  endparam
+}
+
+kform10{
+init:
+  z=0
+  c=pixel
+loop:
+  z = (cos(z*@power)-@power2)*flip((c+(z^@power3)))+pixel
+  z=z*@power+c
+bailout:
+  |z| < 500
+default:
+ center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (2,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.5,0)
+  endparam
+  param power3
+    caption = "Power3"
+    default = (3,0)
+  endparam
+}
+
+kform11{
+init:
+  z=0
+  c=pixel
+loop:
+  z = (cos(z*@power)-@power2)*(log(c+(z^@power3)))+pixel
+  z=z^c+pixel
+    z=z^@power+c
+bailout:
+  |z| < 500
+default:
+ center =(-0.450335789195620607,-0.103978480509969583)
+magn=1.89527
+angle=355.559
+periodicity = 0
+
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (10,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (.0001,0)
+  endparam
+  param power3
+    caption = "Power3"
+    default = (.0001,0)
+  endparam
+}
+
+kform12{
+   z = c = pixel:
+   z = ((z^@power3)/@power^4)*flip(c^@power2)+pixel
+  |z| <=100
+default:
+center=(-0.0859308667440540107,-0.422485776389765019)
+magn=0.307278
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+
+kform13{
+   z = c = pixel:
+   z = ((z+@power3)^@power^4)*flip(c^@power2)/(cos(pixel))
+  |z| <=100
+default:
+center=(-0.00758552026605295239,-0.000396353137111604922)
+magn=39.7616
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+kform14{
+   z = c = pixel:
+   z = ((z^@power)/@power3^4)*flip(c/@power2)^pixel
+   z=z^5+c
+    |z| <=100
+default:
+center=(-1.64436240647797558,-0.329859392456322488)
+magn=0.181722
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+kform15{
+   z = c = pixel:
+   z = ((z^@power)^|(@power3^4)|)*(c+@power2^3)+pixel
+   z=z^5+c
+    |z| <=100
+default:
+center=(-1.64436240647797558,-0.329859392456322488)
+magn=0.181722
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+}
+
+kform16{
+   z = c = pixel:
+   z = ((z^@power)^(@power3^@this))*(c+@power2^@that)+pixel
+ 
+    |z| <=100
+default:
+center=(-1.64436240647797558,-0.329859392456322488)
+magn=0.181722
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+ param this
+    caption = "this"
+    default = 2
+  endparam
+param that
+  caption ="that"
+  default=.0001
+  endparam
+}
+
+kform17{
+   z = c = .001:
+   z = ((z^@power)^(@power3^@this))*(c+@power2)+pixel
+   z=z*z+(pixel^@that)
+    |z| <=100
+default:
+center=(0.116569126302865485,0.0736874171392869227)
+magn=1.15993
+periodicity = 0
+ param bailout
+    caption = "Bailout"
+    default = 500
+    min = 1
+    max = 500
+  endparam
+  param power
+    caption = "Power"
+    default = (3,0)
+  endparam
+  param power2
+    caption = "Power2"
+    default = (2,0)
+  endparam
+param power3
+    caption = "Power3"
+    default = (2,0)
+  endparam
+ param this
+    caption = "this"
+    default = 2
+  endparam
+param that
+  caption ="that"
+  default=.0001
+  endparam
+}
+
+KecJTmod1{
+;mod of Jo Trotsky's JT9 formula
+init:
+  z=0
+  n=#pixel
+loop:
+  z = z*z+((z^@b)+(z+@a)*(z*z)-sin(n))+n
+bailout:
+  |z|<24
+default:
+ 
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+ param a
+    caption = "Value a"
+    default = (1,1)
+  endparam 
+  param b
+  caption ="Value b"
+  default =1
+  endparam 
+}
+

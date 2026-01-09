@@ -1,0 +1,78 @@
+hidden1{
+  z=a=pixel:
+  z=z*z+a
+   a=sqr(pixel-1+z)
+ z=(cos(z))+flip(cos(a))
+    |z|<=64
+}
+
+hidden2{
+  z=a=pixel:
+  z=z*z+a
+  z=a^3-sin(z)
+   ;a=sqr(pixel-1+z)
+ z=(cos(z))+flip(cos(a))
+    |z|<=64
+}
+ 
+hidden3{
+  z=a=pixel:
+  z=a^3-sin(z)
+   ;a=sqr(pixel-1+z)
+ z=(cos(z))+flip(cos(a))
+    |z|<=64
+}
+
+hidden4{
+  z=a=pixel:
+  z=(z*z)/|a|
+  z=a^3-sin(z)
+   ;a=sqr(pixel-1+z)
+ z=(cos(z))+flip(cos(a))
+    |z|<=64
+}
+
+hidden5{
+  z=a=pixel:
+  z=(z*z)/|a|
+   a=sqr(pixel-1+z)
+    |z|<=128
+}
+
+hidden6{
+  z=a=pixel:
+  z=(z*z)+a
+   a=sin(pixel)+flip(sqrt(a))
+    |z|<=128
+}
+
+hidden7{
+  z=a=pixel:
+  z=(z^4)+a
+   a=sin(pixel)+flip(sqrt(a))
+    |z|<=32
+}
+  
+ hidden8{
+  z=a=pixel:
+  z=(z^4)+a
+   a=(sin(pixel)/(sqrt(z)))
+    |z|<=32
+}
+
+hidden9{
+  z=a=pixel:
+  z=(z^4)+a
+   a=(sin(pixel)/(sqrt(z)))+flip(cos(pixel))
+    |z|<=32
+}
+
+hidden10{
+  z=a=pixel:
+  z=(z^4)+a
+   a=(sin(pixel)/(sqrt(z)))+flip ( (cos(pixel))^(tan(z^a)) )
+    |z|<=32
+}
+
+
+

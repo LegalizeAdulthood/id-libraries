@@ -1,0 +1,89 @@
+spirals1 {
+  z = pixel,
+  aa = (.9,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  
+}
+
+spirals10 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*4)*z^2-0.9*bb+aa*z;
+  |z|<4
+  
+}
+
+spirals2 {
+  z = pixel,
+  aa = (1,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  
+}
+
+spirals3 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  
+}
+
+spirals4 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.025*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  
+}
+
+spirals5 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*bb*z^2-0.5*bb+aa*z;
+  |z|<4
+  
+}
+
+spirals6 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  
+}
+
+spirals7 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  
+}
+
+spirals8 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  
+}
+
+spirals9 {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*3)*z^2-0.5*bb+aa*z;
+  |z|<4
+  
+}

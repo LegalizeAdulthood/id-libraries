@@ -1,0 +1,44 @@
+kcurves1{
+  c=z=1/pixel:
+  z=sqr(z^z) + (c*.33)
+  |z| <=4
+}
+kcurves2{
+  c=z=1/pixel:
+  z=sin(z^z) + (c*.33)
+  |z| <=4
+}
+
+kcurves3{
+  c=z=1/pixel:
+  z=tan(z^z) + (c*.39)
+  |z| <=4
+}
+kcurves4{
+  c=z=1/pixel:
+  z=tanh(z^z) + (c^.33)
+  |z| <=4
+  default:
+  center=(-0.0235584072442724429,0.0438071142544829082)
+  angle=90
+  magn=1.12268
+}
+
+kcurves5{
+  c=z=1/pixel:
+  z=sqr(z^(sin(|c|)) ) + (c*.33)
+  |z| <=4
+  default:
+  magn=1.12268
+}
+
+kcurves6{
+  c=z=1/pixel:
+  z=sqr(z^z) + (c/.33)
+  |z| <=4
+  default:
+    center=(-6.66741560734753655,-0.13657840353839644)
+    magn=0.346401
+    angle=89.5848
+}
+

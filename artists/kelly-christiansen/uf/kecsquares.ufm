@@ -1,0 +1,188 @@
+squares1{
+init:
+   c=pixel
+  z=0
+
+loop:
+  z=(z*(z-4)+2)/2+c
+  if z>20
+     z=(sqr(z*.1414))/.003
+  endif
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares1"
+  
+  center=(-0.49,0.088)
+magn=1.76214
+angle=20.3678
+method=multipass
+}
+
+squares2{
+init:
+   c=pixel
+  z=0
+
+loop:
+  z=(z*(z-4)+2)/2+c
+  if z>10
+     z=(tan(z*.1414))/.003
+  endif
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares2"
+  
+  center=(-0.49,0.088)
+magn=1.76214
+angle=20.3678
+method=multipass
+}
+
+squares3{
+init:
+   c=pixel
+  z=.4
+
+loop:
+  z=(z*(z-4)+2)/2+c
+  if z>10
+     z=(sin(z*.1414))/.003
+  endif
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares3"
+  
+  center=(-0.49,0.088)
+magn=1.76214
+angle=20.3678
+method=multipass
+}
+
+squares4{
+init:
+   c=pixel
+  z=.4
+
+loop:
+  z=((z/(z^2)^2)^2)+c^2
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares4"
+  
+  center=(-0.49,0.088)
+magn=1.76214
+angle=20.3678
+method=multipass
+}
+
+squares5{
+init:
+  z=pixel
+  c=pixel/.01
+  
+loop:
+  z = (z*(z - 4) +2 ) / 2 + c
+  if z>20
+     z=(sqr(z*.1414))/.003
+  endif
+z = (-2.7+5*z*conj(z)+1.5*real(z^6))*z+1*conj(z*z)
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares5"
+  
+  center=(-0.00477205364312270112,0.000431568363162246212)
+magn=36.4644
+angle=89.9768
+method=guessing
+}
+
+squares6{
+init:
+  z=pixel
+  c=pixel/.01
+  
+loop:
+z=(z*(z-4)^2)/2+c
+z=((-2.7+5)*(z*sqr(z))+(1.5*real(z^6)))*(z+1)*(conj(z*z))
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares6"
+  
+  center=(-0.00477205364312270112,0.000431568363162246212)
+magn=36.4644
+angle=89.9768
+method=guessing
+}
+
+squares7{
+init:
+  z=pixel
+  c=pixel/.01
+  
+loop:
+z=(z*(z-4)^2)/2+c
+z=((-2.7+5)*(z*sqr(z))+(1.5*sqrt(z^6)))*(z+1)*(conj(z*z))
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares7"
+  
+  center=(-0.00477205364312270112,0.000431568363162246212)
+magn=36.4644
+angle=89.9768
+method=guessing
+}
+
+squares8{
+init:
+  z=pixel
+  c=pixel/.01
+  
+loop:
+z=(z*(z-4)^2)^2+c
+z=((-2.7+5)*(z*sqr(z))+(1.5*sqrt(z^6)))*(z+1)*(sqr(z*z))
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares8"
+  
+  center=(-0.00477205364312270112,0.000431568363162246212)
+magn=36.4644
+angle=89.9768
+method=guessing
+}
+
+squares9{
+init:
+  z=pixel
+  c=pixel/.01
+  
+loop:
+z=((z*(z-4)^2)^2)+c^2
+z=((-2.7+5)*(z*sqr(z))+(1.5*sqrt(z^6)))*(z+1)*(sqr(z*z))
+
+bailout:
+  |z| < 100000
+default:
+  title = "squares9"
+  
+  center=(-0.00477205364312270112,0.000431568363162246212)
+magn=36.4644
+angle=89.9768
+method=guessing
+}
+

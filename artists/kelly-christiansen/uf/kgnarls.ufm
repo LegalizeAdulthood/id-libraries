@@ -1,0 +1,514 @@
+kgnarl1{
+init:
+  z = 0    
+  p = ident(#pixel/1)
+  float x = real(p) 
+  float y = imag(p) 
+  float a = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  a = x
+  x = x -.05 * sin(y + tan(3 * y))
+  y = y -.05 * sin(a + tan(3 * a))
+  z = ident(x + flip(y))
+bailout:
+  iter < #maxiter
+default:
+  maxiter = 2 
+  magn = 0.5   
+}
+
+kgnarl2{
+init:
+  z=0    
+  p=ident(#pixel/1)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=1.5
+  int iter=0
+loop:
+  iter=iter+1
+  a=x
+  x=x-.05*cos(y+tan(3*y))
+  y=y-.05*sin(a/tan(3^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5   
+}
+
+kgnarl3{
+init:
+  z=0    
+  p=sqr(#pixel/1)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=1.5
+  int iter=0
+loop:
+  iter=iter+1
+  a=x
+  x=x-.05*cos(y+tan(3*y))
+  y=y-.05*sin(a/tan(3^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5   
+}
+
+kgnarl4{
+init:
+  z=0    
+  p=sqr(#pixel/1)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=1.5
+  int iter=0
+loop:
+  iter=iter+1
+  a=x
+  x=x-.05*cos(y^atan(3*y))
+  y=y-.05*sin(a/tan(3^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5   
+}
+
+kgnarl5{
+init:
+  z=0    
+  p=sqr(#pixel/@divisor)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=1.5
+  int iter=0
+loop:
+  iter=iter+1
+  a=x
+  x=x-.05*cos(y^atan(3*y))
+  y=y-.05*sin(a/tan(3^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5  
+  param divisor
+  caption = "Divisor"
+  default = .5
+   hint = "Numbers between 0.5 and 1.5 work best"
+endparam
+}
+
+kgnarl6{
+init:
+  z=0    
+  p=sqr(#pixel/@divisor)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=1.5
+  int iter=0
+loop:
+  iter=iter+1
+  a=x
+  x=x-@valuea*cos(y^atan(@valuec*y))
+  y=y-@valueb*sin(a/tan(@valued^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5  
+  param divisor
+  caption = "Divisor"
+  default = .5
+  hint = "Numbers between 0.5 and 1.5 work best"
+  endparam 
+  param valuea
+  caption = "Value of A"
+  default = .05
+  hint="Starting value of A"
+  endparam
+param valueb
+  caption = "Value of B"
+  default = .05
+  hint="Starting value of B"
+  endparam
+  param valuec
+  caption = "Value of C"
+  default = 3
+  hint="Starting value of C"
+  endparam
+  param valued
+  caption = "Value of D"
+  default = 3
+  hint="Starting value of D"
+  endparam
+}
+
+kgnarl7{
+init:
+  z=0    
+  p=sqr(#pixel/@divisor)
+  float x=real(p) 
+  float y=imag(p) 
+  float a=@valuee
+  int iter=0
+loop:
+  iter=iter+1
+  a=a+x
+  x=x-@valuea*cos(y^atan(@valuec*y))
+  y=y-@valueb*sin(a/tan(@valued^a))
+  z=ident(x + flip(y))
+bailout:
+  iter<#maxiter
+default:
+  maxiter=20 
+  magn=0.5  
+  param divisor
+  caption = "Divisor"
+  default = .5
+  hint = "Numbers between 0.5 and 1.5 work best"
+  endparam 
+  param valuea
+  caption = "Value of A"
+  default = .05
+  hint="Starting value of A"
+  endparam
+param valueb
+  caption = "Value of B"
+  default = .05
+  hint="Starting value of B"
+  endparam
+  param valuec
+  caption = "Value of C"
+  default = 3
+  hint="Starting value of C"
+  endparam
+  param valued
+  caption = "Value of D"
+  default = 3
+  hint="Starting value of D"
+  endparam
+  param valuee
+  caption ="Value of E"
+  default=1.5
+  hint ="Starting value of E"
+  endparam
+}
+
+kgnarl8{
+init:
+  z = 0    
+  p = #pixel / 2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(sin(y+sin(.2^(y+sin(.7*y)))))
+  y = y+.1*real(sin(d+sin(2.7*(d+sin(.7*d)))))
+  z = x + flip(y)
+bailout:
+  |x| < 100
+  default:
+  maxiter = 2000 
+  magn = 0.15
+}
+
+kgnarl9{
+init:
+  z = 0    
+  p = #pixel / 2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(sin(y+sin(.2^(y+sin(.7*y)))))
+  y = y+.1*real(sin(d+sin(.7*(d+sin(.7*d)))))
+  z = x + flip(y)
+bailout:
+  |x| < 100
+  default:
+  center=(1.80626958085108,74.4711241691900928)
+  maxiter = 2000 
+  magn = 0.0689873
+  angle=90
+  periodicity = 0
+}
+
+kgnarl10{
+init:
+  z = 0    
+  p = #pixel / 2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(cos(y+sin(.2^(y+tanh(.7*y)))))
+  y = y+.1*real(cos(d+sin(.7*(d+tanh(.7*d)))))
+  z = x * flip(y)
+bailout:
+  |x| < 50
+  default:
+  center=(1.80626958085108,74.4711241691900928)
+  maxiter = 2000 
+  magn = 0.0689873
+  angle=90
+  periodicity = 0
+}
+
+kgnarl11{
+init:
+  z = 0    
+  p = #pixel / 2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(cos(y+sin(.2^(y+tanh(.7*y)))))
+  y = y+.1*real(cos(d+sin(.7*(d+tanh(.7*d)))))
+  z = x * flip(y)
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 100 
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+kgnarl12{
+init:
+  z = 0    
+  p = #pixel/3
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(cos(y+sin(.7*(y+tanh(.7*y)))))
+  y = y-.1*real(cos(d+sin(.7*(d+tanh(.7*d)))))
+  z = x *(2^flip(y))
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 30 
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl13{
+init:
+  z = 0    
+  p = #pixel/4
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*log(sin(y+sin(.7*(y+tanh(.7*y)))))
+  y = y-.1*log(sin(d+sin(.7*(d+tanh(.7*d)))))
+  z = x *(2^flip(y))
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 30 
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+ 
+kgnarl14{
+init:
+  z = 0    
+  p = #pixel/4
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*tan(cos(y+cos(.7*(y+tanh(.7*y)))))
+  y = y-.1*log(sin(d+sin(.7*(d+tanh(.7*d)))))
+  z = x *(2^flip(y))
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 30 
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl15{
+init:
+  z = 0    
+  p = #pixel/2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*tan(cos(y+cos(.7*(y+tanh(.7*y)))))
+  y = y-.1*log(sin(d+sin(.7*(d+tanh(.7*d)))))
+  z = abs(x) *(2^flip(y))
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 10 
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl16{
+init:
+  z = 0    
+  p = #pixel/2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*(sin(y+(.7*(y+(.7*y)))))
+  y = y-.1*(sin(d+(.7*(d+(.7*d)))))
+  z = x*flip(y)
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 100
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl17{
+init:
+  z = 0    
+  p = #pixel/2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*(cos(y+(.7*(y+(.7*y)))))
+  y = y-.1*(sin(d+(.7*(d+(.7*d)))))
+  z = x*flip(y)
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 100
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl18{
+init:
+  z = 0    
+  p = #pixel/5
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x+.1-(cos(y+(.7*(y+(.7*y)))))
+  y = y-.1*(sin(d+(.7*(d+(.7*d)))))
+  z = x^flip(y)
+bailout:
+  iter < #maxiter
+  default:
+  center=(-113.137360888878736,1525.40757409970368)
+  maxiter = 3
+  magn = 0.0242636
+  angle=90
+  periodicity = 0
+}
+
+kgnarl19{
+init:
+  z = 0    
+  p = #pixel/1
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = sin(x-.1)-(cos(y+(.7*(y+(.7*y)))))
+  y = cos(y+.1)+(cos(d+(.7*(d+(.7*d)))))
+  z = x*flip(y)
+bailout:
+  iter < #maxiter
+  default:
+  center=(-133.194840680280944,1507.36958028729888)
+  maxiter = 3
+  magn = 0.364866
+  angle=90
+  periodicity = 0
+}
+
+
+kc-JT01{
+                 init:
+                   z = 0
+                   p = #pixel / 2
+                   float x = real(p)
+                   float y = imag(p)
+                   float d = 0
+                   int iter = 0
+                 loop:
+                   iter = iter + 1
+                   d = x
+                   x = x-.1*real(sin(y+sin(.2^(y+sin(.7*y)))))
+                   y = y+.1*real(sin(d+sin(2.7*(d+sin(.7*d)))))
+                   z = x + flip(y)
+                 bailout:
+                   |x| <= 44
+                 default:
+                   title = "kc-JT01"
+                   maxiter = 10000
+                   magn = 0.15
+}
+

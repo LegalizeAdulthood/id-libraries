@@ -1,0 +1,444 @@
+0001{
+init:
+  z=2
+loop:
+  z=z^2+(1/z^2)^3+#pixel
+bailout:
+ |z| < 6
+default:
+center=(-2.56987850370280332,0.00828940166281387645)
+magn=2.6328
+}
+
+0002 (XAXIS){
+init:
+  z=2
+loop:
+  z=z^2+(1/z^2)^3+#pixel
+bailout:
+ |z| < 6
+default:
+center=(-2.90665602604469431,0.0108215634849333576)
+magn=12.3412
+}
+
+0003{
+init:
+  z=1
+loop:
+  z=z^2+(1/z^2)^3+#pixel
+bailout:
+ |z| < 20
+default:
+center=(-0.753333333333333333,-0.0133333333333333333)
+magn=3.75
+angle=90
+}
+
+0004{
+init:
+  oldz=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^2)^3+#pixel
+  z=z+oldz
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-1.88666666666666667,0.0133333333333333333)
+angle=90
+magn=3.84615
+}
+
+0005{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^2)^3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z/oldz2
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-1.66727588407838869,0.0584560623217425672)
+angle=90
+magn=0.77338
+}
+
+0006{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^3)^3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-1.66727588407838869,0.0584560623217425672)
+angle=90
+magn=0.77338
+}
+
+0007{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.1/z^3)^3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-1.66727588407838869,0.0584560623217425672)
+angle=90
+magn=0.77338
+}
+
+0008{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.5/z^3)*3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-2.69307605130967646,-0.0105052934585120725)
+angle=90
+magn=4.37762
+}
+
+0009{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.5/z^5)*3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+bailout:
+ |z| < 20
+default:
+center=(-2.69307605130967646,-0.0105052934585120725)
+angle=90
+magn=4.37762
+}
+
+0010{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.5/z^5)*3+#pixel
+  oldz2=z
+  z=z+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(-2.69307605130967646,-0.0105052934585120725)
+angle=90
+magn=4.37762
+}
+
+0011{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.5/z^5)*3+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(-3.40969907742805726,0.0488371181663636793)
+angle=90
+magn=0.653847
+}
+
+0012{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.5/z^5)*5+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(-3.40969907742805726,0.0488371181663636793)
+angle=90
+magn=0.653847
+}
+
+0013{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^5+(.05/z^5)*5+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(-3.40969907742805726,0.0488371181663636793)
+angle=90
+magn=0.653847
+}
+
+0014{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^3+(.05/z^5)*5+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(3.84364583497542607,0.604730987101064586)
+angle=90
+magn=0.068851
+}
+
+0015{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^3+(.5/z^7)*5+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(3.84364583497542607,0.604730987101064586)
+angle=90
+magn=0.068851
+}
+
+0016{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^15+(.5/z^.7)*2+#pixel
+  oldz2=z
+  z=(z*.5)+oldz
+  z=z-(oldz2/1.5)
+  oldz=oldz+(z/2)
+bailout:
+ |z| < 20
+default:
+center=(0.261030235105174851,-0.0730611534149288875)
+angle=90
+magn=0.430319
+}
+
+0017{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^15+(.5/z^.7)*23.6+#pixel
+  oldz2=z
+  z=(z*.5986)+oldz
+  z=z-(oldz2/1.4)
+  oldz=oldz+(z/.5)
+bailout:
+ |z| < 20
+default:
+center=(-12.5046931778357674,-0.0110916222841476143)
+angle=90
+magn=0.672373
+}
+
+0018{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^15+((.5/z^.7)*23.6)+#pixel
+  oldz2=z
+  z=(z*.5986)+(oldz*.5)
+  z=z-(oldz2/1.4)
+  oldz=oldz+(z/.5)
+bailout:
+ |z| < 20
+default:
+center=(-16.8136741532593188,0.057779391482170752)
+angle=90
+magn=0.663367
+}
+
+0019{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^15+((.5/z^.7)*23.6)+#pixel
+  oldz2=z
+  z=(z*.5986)+(oldz*.5)
+  z=z-((oldz2/1.4)*.5)
+  oldz=oldz+(z/.5)
+bailout:
+ |z| < 20
+default:
+center=(-11.3296633285270945,-0.0809992690898864056)
+angle=90
+magn=1.14394
+}
+
+0020{
+init:
+  oldz=0
+  oldz2=0
+  z=1
+loop:
+  oldz=z
+  z=z^15+((.5/z^.7)*23.6)+#pixel
+  oldz2=z
+  z=(z*.5986)+(oldz*.5)
+  z=z-((oldz2/1.4)*.5)*3
+  oldz=oldz+(z/.5)
+bailout:
+ |z| < 20
+default:
+center=(-13.8123110198395759,0.00641790313942632058)
+angle=90
+magn=7.62627
+}
+
+0021{
+init:
+  oldz=0
+  oldz2=0
+  oldz3=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^3)^3+#pixel
+  oldz2=z
+  oldz3=oldz2+oldz
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+  z=z+(oldz3*.5)
+bailout:
+ |z| < 20
+default:
+center=(-2.31296165668431868,0.000900038323489323842)
+angle=90
+magn=17.5413
+}
+
+0022{
+init:
+  oldz=0
+  oldz2=0
+  oldz3=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^3)^3+#pixel
+  oldz2=z
+  oldz3=oldz2/oldz
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+  z=z+(oldz3*.5)
+bailout:
+ |z| < 20
+default:
+center=(-2.76986110717773889,0.22133809498882617)
+angle=90
+magn=0.418057
+}
+
+0023{
+init:
+  oldz=0
+  oldz2=0
+  oldz3=0
+  z=1
+loop:
+  oldz=z
+  z=z^2+(1/z^3)^3+#pixel
+  oldz2=z
+  oldz3=oldz2/oldz
+  z=z+oldz
+  z=z-(oldz2/2)
+  oldz=oldz+z/5
+  z=z*(oldz3*.5)
+bailout:
+ |z| < 20
+default:
+center=(-2.76986110717773889,0.22133809498882617)
+angle=90
+magn=0.418057
+}
+
+

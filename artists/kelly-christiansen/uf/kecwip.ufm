@@ -1,0 +1,118 @@
+0004  {
+init:
+z=0
+loop:
+z=z^2+(z-.5)+#pixel
+bailout:
+|z| < 540
+default:
+param bailout
+caption = "Bailout"
+default = 2.183333
+min = 1
+max = 256
+endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0006 (XAXIS) {
+init:
+z=0
+loop:
+z=z^2+sin(z^.5)+#pixel
+bailout:
+|z| < 40
+default:
+param bailout
+caption = "Bailout"
+default = 2.183333
+min = 1
+max = 256
+endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0003 {
+init:
+z=1
+loop:
+z=z^2+(1/z^2)^3+#pixel
+bailout:
+|z| < 20
+default:
+center=(-0.753333333333333333,-0.0133333333333333333)
+magn=3.75
+angle=90
+}
+
+
+0011 (XAXIS) {
+init:
+z=0
+loop:
+z=z^5+sqrt(z^5.5)+#pixel
+bailout:
+|z| < 40
+default:
+param bailout
+caption = "Bailout"
+default = 2.183333
+min = 1
+max = 256
+endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0002 {
+init:
+z=0
+a=0
+b=0
+c=0
+loop:
+z=z^5+#pixel
+z=z*a
+a=a+.05
+z=z*b
+b=b+.04
+z=z^(c*.5)
+c=(a+b)
+bailout:
+|z| < 4
+default:
+center=(0.0466666666666666667,0.0266666666666666667)
+angle=270
+magn=2.0979
+periodicity = 0
+}
+
+iris {
+;same as 0002
+init:
+z=0
+a=0
+b=0
+c=0
+loop:
+z=z^5+#pixel
+z=z*a
+a=a+.05
+z=z*b
+b=b+.04
+z=z^(c*.5)
+c=(a+b)
+bailout:
+|z| < 4
+default:
+center=(0.0466666666666666667,0.0266666666666666667)
+angle=270
+magn=2.0979
+periodicity = 0
+}
+

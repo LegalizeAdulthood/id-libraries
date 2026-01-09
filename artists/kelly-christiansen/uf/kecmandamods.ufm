@@ -1,0 +1,107 @@
+mandamod01{
+init:
+  z=0
+ loop:
+ z = z*(z*.5)+pixel
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod01"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+
+mandamod02{
+init:
+  z=0
+ loop:
+ z = z*(z*.5)+pixel
+ z=cos(z-.02)
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod02"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+
+mandamod03{
+init:
+  z=0
+ loop:
+ z = z*(z*.5)+pixel
+ z=conj(z-.02)
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod03"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+
+mandamod04{
+init:
+  z=0
+ loop:
+ z = z^2+(z*.5)+pixel
+ z=conj(z-.02)
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod04"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+
+mandamod05{
+init:
+  z=0
+ loop:
+ z = z^5-(z*.5)+pixel
+ z=conj(z-.02)
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod05"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+
+mandamod06{
+init:
+  z=0
+ loop:
+ z = z^5+(z*1.5)+pixel
+ z=conj(z-.02)
+  bailout:
+  |real(z)| <=100
+
+  default:
+  title = "mandamod06"
+  periodicity = 0
+  maxiter = 500
+  magn = .333577
+  center = (-1.54396,0.1022253)
+  method = multipass
+}
+

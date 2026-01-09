@@ -1,0 +1,42 @@
+test2{
+init:
+float a=0
+float b=0
+float c=0
+float d=0
+loop:
+a=a+.1
+b=b-.1
+c=c+.1
+d=d-.1
+if real(#z)/imag(#z) >=10
+a = a-.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+elseif real(#z)/imag(#z) >=5
+a = a+.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+else
+a = a+.1*sin(sin(b+sin(.7*(c+sin(.7*d)))))
+
+endif
+final:
+#index =a * #numiter
+}
+
+0004 (YAXIS) {
+init:
+z=0
+loop:
+z=z^2+(z-.5)+#pixel
+bailout:
+|z| < 40
+default:
+param bailout
+caption = "Bailout"
+default = 2.183333
+min = 1
+max = 256
+endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+

@@ -1,0 +1,224 @@
+kcolor1{
+
+init:
+float a=0
+float b=0
+float c=0
+float d=0
+loop:
+if real(#z) >=10
+    a = a-.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+else
+    a = a+.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+endif
+final:
+  #index =a * #numiter
+}
+
+
+kcolor2{
+
+init:
+float a=0
+float b=0
+float c=0
+float d=0
+loop:
+a=a+.1
+b=b-.1
+c=c+.1
+d=d-.1
+if real(#z)/imag(#z) >=10
+    a = a-.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+elseif real(#z)/imag(#z) >=5
+    a = a+.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+else
+    a = a+.1*sin(sin(b+sin(.7*(c+sin(.7*d)))))
+
+endif
+final:
+  #index =a * #numiter
+}
+
+kcolor3{
+
+init:
+float a=0
+float b=0
+float c=0
+float d=0
+float iter = 1 
+  
+loop:
+a=a+.1
+b=b-.1
+c=c+.1
+d=d-.1
+if real(#z)/imag(#z) >=10
+    a = a-.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+    iter = iter + 7 + real(#z)
+elseif real(#z)/imag(#z) >=5
+    a = a+.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+    iter = iter + 7 + trunc(real(#z))
+else
+    a = a+.1*sin(sin(b+sin(.7*(c+sin(.7*d)))))
+    iter = abs(atan2(#z) * 180/#pi)
+endif
+final:
+     iter=iter+#numiter
+    #index =a +iter
+}
+
+kcolor4{
+
+init:
+float a=0
+float b=0
+float c=0
+float d=0
+float iter = 1 
+  
+loop:
+  complex block=@ssize
+  if(real(block)==0.0)
+    block=block+(1.0,0.0)
+  endif
+  if(imag(block)==0.0)
+    block=block+(0.0,1.0)
+  endif
+  complex zp=trunc(#z/block)
+  complex zc=#z-(zp*block)
+  if(@type==1)
+    if(floor(imag(zp))%2==1)
+      zc=(zc+real(block)/2)
+      if(zc>block)
+        zc=zc-block
+      endif
+    endif
+  endif
+a=a+.1
+b=b-.1
+c=c+.1
+d=d-.1
+if real(zc)/imag(zc) >=10
+    a = a-.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+    iter = iter + 7 + real(zc)
+elseif real(zc)/imag(zc) >=5
+    a = a+.1*tan(cos(b+cos(.7*(c+tanh(.7*d)))))
+    iter = iter + 7 + trunc(real(zc))
+else
+    a = a+.1*sin(sin(b+sin(.7*(c+sin(.7*d)))))
+    iter = abs(atan2(zc) * 180/#pi)
+endif
+final:
+ iter=iter+#numiter
+ #index=|zc|/(|block|/iter)
+
+default:
+  param type
+    enum="One" "Two"
+    default=1
+    caption="type"
+  endparam    
+param ssize
+default=(10,10)
+caption="Size"
+endparam
+}
+
+kcolor5{
+
+init:
+  complex a = #pixel
+   float b=cos(@radius)
+    float c = 0.0
+   float d=tan(@radius)
+    float check = 0.0
+loop:
+check =  b-|(1/#z)-a| 
+IF (check > 0)
+  IF (@type == 0)
+    c =check+(b/2) 
+  ELSEIF (@type == 1)
+    c = c^2+check
+  ELSEIF (@type ==2)
+    c=c+(check/2)+1
+  elseif (@type ==3)
+    c=c+(check+.5)
+  elseif (@type==4)
+   c=c*b+sqr(@radius)
+  elseif (@type==5)
+   c=(c/d)+(b*check)
+        ENDIF    
+ENDIF
+
+final:
+  #index = c 
+
+default:  
+  param center
+    caption = "center"
+    default = (0,0)
+  endparam
+
+  param radius
+    caption = "radius"
+    default = 20
+  endparam
+
+ param type
+    caption = "Type"
+    default = 4
+    enum = "first" "second" "third" "fourth" "fifth" "sixth"
+  endparam
+}
+
+kcolor6{
+
+init:
+  complex a = #pixel
+   float b=cos(@radius)
+    float c = 0.0
+   float d=tan(@radius)
+   float f=0
+        float check = 0.0
+loop:
+check =  b-|(#z/2)-a| 
+f=f+.5
+IF (check > 0)
+  IF (@type == 0)
+    c = (c+.1)*(cos(check)/f)
+   ELSEIF (@type == 1)
+    c = (c+.1) *(sin(|c|))+check
+      ELSEIF (@type ==2)
+    c=c+(|check/2|)+1
+  elseif (@type ==3)
+    c=c+cos(cos(check/.5)+.333)
+  elseif (@type==4)
+   c=((c+b)/(sqr(@radius)-tan(@radius)))+check
+  elseif (@type==5)
+   c=c+d+b+|check|
+        ENDIF    
+ENDIF
+
+final:
+  #index = c 
+
+default:  
+  param center
+    caption = "center"
+    default = (0,0)
+  endparam
+
+  param radius
+    caption = "radius"
+    default = 20
+  endparam
+
+ param type
+    caption = "Type"
+    default = 4
+    enum = "first" "second" "third" "fourth" "fifth" "sixth"
+  endparam
+}
+

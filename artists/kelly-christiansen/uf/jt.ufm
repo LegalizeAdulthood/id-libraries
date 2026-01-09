@@ -1,0 +1,214 @@
+JT1 {
+; Dr. Joseph Trotsky
+;mailto:kod_kod@netvision.net.il
+;Fractal's Formulas
+init:
+  z = 0
+loop:
+  z = z/23*(z+tan(z))+z+#pixel/1.1
+bailout:
+  |z|< 4  
+default:
+  title = "Eyes" 
+  magn = 2
+}
+
+
+JT2 {
+init:
+  z = 0
+loop:
+  z = z*tan(z) * sqr(z)+  #pixel/2.14
+bailout:
+  |z| < 3 
+default:
+  title = "JT Orbits"
+  magn = 0.5
+}
+
+
+JT3 {
+init:
+ z=0
+loop:
+ z= z*sqr(z)+#pixel
+bailout:
+ |z| < 3   
+default:
+  title = "Celtic"
+  magn = 1
+}
+
+
+JT4 {
+init:
+  z=0
+loop:
+  z=sqr(z+sin(z))+pixel/3
+bailout:
+  |z| < 2
+default:
+  title = "Menorah"
+  magn = 1.377
+  center =(-0.3,0)
+  maxiter = 500
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT5 {
+init:
+  z = 0
+  px=#pixel
+loop:
+  z = tan(z) - px
+  px = 1 / (z * 12)
+bailout:
+  |z| < 4  
+default:
+  title = "Tower of Hanoi"
+  center = (0,0)
+  magn=0.5
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT6 {
+init:
+  z = 0
+  px=#pixel
+loop:
+  z = sin(z)*px - px
+  px = 1 / (z * 3)
+bailout:
+  |z| < 4  
+default:
+  title = "Water Lilies"
+  magn=2
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT7 {
+init:
+  z = 0
+loop:
+  z = sqr(z) * sin(z) + #pixel
+bailout:
+  |z| < 4  
+default:
+  title = "Star"
+  magn=0.5
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT8 {
+init:
+  z = 0
+loop:
+ z = z * (0.3i)^z + z^2 + #pixel
+bailout:
+  |z| < 2  
+default:
+  title = "Big Spiral"
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT9 {
+init:
+  z=0
+  n=#pixel
+loop:
+  z  = z*z + (z+n)*z*z - sin(z) + n
+bailout:
+  |z|<24
+default:
+  title = "Dragon"
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT20 {
+z = #pixel 
+loop:
+  z = z^5 + tanh(z)
+bailout:
+  |z| < 4
+default:
+  title = "Quantum"
+  center = (0.0, 0.0)
+  magn = 1.5
+  maxiter = 500
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+JT20b {
+z = #pixel 
+loop:
+  z = z^5*@fn1(z) + tanh(z)
+bailout:
+  |z| < 4
+default:
+  title = "Quantum2"
+  center = (0.0, 0.0)
+  magn = 1.5
+  maxiter = 500
+func fn1
+   caption = "Function 1"
+   default = log()
+endfunc
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}
+
+
+JT51 {
+init:
+  z = 0
+  c = 0
+loop:
+z= 1/(z*z+c+#pixel)
+bailout:
+  |z| < 3 
+default:
+  title = "Orchids"
+  magn = 0.5
+param bailout
+    caption = "Bailout value"
+    default = 5.0
+    min = 1.0
+endparam
+}

@@ -1,0 +1,209 @@
+0001 (XAXIS) {
+init:
+  z=0
+loop:
+  z=z^4+(z*.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0002 (YAXIS) {
+init:
+  z=0
+loop:
+  z=z^4+(z*.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0003 (YAXIS) {
+init:
+  z=0
+loop:
+  z=z^2+(z*.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0004 (YAXIS) {
+init:
+  z=0
+loop:
+  z=z^2+(z-.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0005 (YAXIS) {
+init:
+  z=0
+loop:
+  z=z^2+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0006 (XAXIS) {
+init:
+  z=0
+loop:
+  z=z^2+sin(z^.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0007 (XAXIS) {
+init:
+  z=0
+loop:
+  z=z^2+sqrt(z^.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0008 (YAXIS) {
+init:
+  z=0
+loop:
+  z=z^8+sqrt(z/.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0009 (XAXIS) {
+init:
+  z=0
+loop:
+  z=z^5+sin(z^1.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0010 (XYAXIS) {
+init:
+  z=0
+loop:
+  z=z^5+sin(z^1.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+
+0011 (XAXIS) {
+init:
+  z=0
+loop:
+  z=z^5+sqrt(z^5.5)+#pixel
+bailout:
+  |z| < 40
+default:
+  param bailout
+    caption = "Bailout"
+    default = 2.183333
+    min = 1
+    max = 256
+  endparam
+center =(0.06,0.02)
+magn=1.14509
+
+}
+

@@ -1,0 +1,101 @@
+klace1 {
+  z =c= Pixel:
+  z = (32/4) / sin(z) + c
+  |z| <= 100
+}
+
+klace2 {
+  z =c= Pixel:
+  z = (32/4) / sinh(z) + c
+  |z| <= 100 
+}
+
+klace3 {
+  z =c= Pixel:
+  z = (32/4) / cos(z) + c
+  |z| <= 100
+}
+
+klace4 {
+  z =c= Pixel:
+  z = (32/4) / cosh(z) + c
+  |z| <= 100
+}
+
+klace5 {
+  z =c= Pixel:
+  z = (32/4) / tan(z) + c
+  |z| <= 100
+}
+
+klace6 {
+  z =c= Pixel:
+  z = (32/4) / sqr(z) + c
+  |z| <= 100
+}
+
+klace7 {
+  z =c= Pixel:
+  z = (32/4) / abs(z) + c
+  |z| <= 100 
+ default:
+ center=(-0.559766486546227432,0.77442320994195467)
+ magn=0.180737
+}
+
+klace8 {
+  z =c= Pixel:
+  z = (32/4) / cabs(z) + c
+  |z| <= 100 
+ default:
+ center=(-0.559766486546227432,0.77442320994195467)
+ magn=0.180737
+}
+
+klace9 {
+  z =c= Pixel:
+  z = (5/1.2) / (sin(z/1.2) ) + c
+  z = (c/2)*(cos(z^3))+c
+  |z| <= 100
+}
+
+klace10 {
+init:
+    z=c=pixel
+loop:
+    z = (c/z) / (sin(z/1.2) ) + c
+   z=z^3+c
+bailout:
+    |z| <= 100
+}
+
+klace11 {
+init:
+    z=c=pixel
+loop:
+    z = (c/z) / (sin(z/1.2) ) + c
+    c=c-(sin(z))
+    z=z^3+pixel
+bailout:
+    |z| <= 100 
+ default:
+ periodicity = 0
+}
+
+klace12 {
+init:
+    z=c=pixel
+loop:
+    z = (c^z) / (sin(z/1.2) ) + c
+    c=c-(sqr(z))
+    z=z^3+pixel
+bailout:
+    |z| <= 100 
+ default:
+ periodicity = 0
+ center=(-1.0644,0.002756)
+ magn=16.766
+ angle=270.21
+}
+
+

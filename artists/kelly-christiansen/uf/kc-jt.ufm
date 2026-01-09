@@ -1,0 +1,147 @@
+kc-JT01{
+init:
+  z = 0
+  p = #pixel / 2
+  float x = real(p)
+  float y = imag(p)
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(sin(y+sin(.2^(y+sin(.7*y)))))
+  y = y+.1*real(sin(d+sin(2.7*(d+sin(.7*d)))))
+  z = x + flip(y)
+bailout:
+  |x| <= 44
+default:
+  title = "kc-JT01"
+  maxiter = 1000
+  magn = 0.15
+  center=(0,0)
+}
+
+kc-JT02{
+init:
+  z = 0    
+  p = #pixel / 2
+  float x = real(p) 
+  float y = imag(p/2) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 2
+  d = x
+  x = x-.1*real(sin(y+sin(.2^(y+sin(.72*y)))))
+  y = y+.1*real(sin(d+sin(2.7*(d+sin(.75*d)))))
+  z = x + flip(y)
+bailout:
+  |x| < 100
+default:
+  title = "kc-JT02"
+  maxiter = 700 
+  magn = 0.27
+  center = (-9, 12)
+  angle = 90
+}
+
+kc-JT03{
+init:
+  z = 1    
+  p = #pixel/3
+  float x = real(p) 
+  float y = imag(p/3) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(cos(y+sin(.7*(y+tanh(.5*y)))))
+  y = y-.1*real(cos(d+sin(.7*(d+tanh(.7*d)))))
+  z = x *(2^flip(y))
+bailout:
+  |x| < 100
+default:
+  title = "kc-JT03"
+  center=(-19,1527)
+  maxiter = 1000 
+  magn = 0.0974
+  angle=70
+  periodicity = 0
+}
+
+kc-JT04{
+init:
+  z = 1    
+  p = #pixel/5
+  float x = real(p) 
+  float y = imag(p*4) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 1
+  d = x
+  x = x-.1*real(cos(y+sin(.7*(y+tanh(.5*y)))))
+  y = y-.1*real(cos(d+sin(.7*(d+tanh(.7*d)))))
+  z = x *(2^flip(y))
+bailout:
+  |x| < 100
+default:
+  title = "kc-JT04"
+  center=(-23,1326)
+  maxiter = 1000 
+  magn = 0.065
+  angle=90
+  periodicity = 0
+}
+
+kc-JT05{
+init:
+  z = 1    
+  p = #pixel/2
+  float x = real(p) 
+  float y = imag(p) 
+  float d = 0
+  int iter = 0
+loop:
+  iter = iter + 11
+  d = x
+  x = x-.1*(cos(y+(.7*(y+(.3*y)))))
+  y = y-.1*(sin(d+(.7*(d+(.5*d)))))
+  z = x*flip(y)
+bailout:
+  |x| < 33
+default:
+  title = "kc-JT05"
+  center=(-0.8837,1311)
+  maxiter = 300
+  magn = 0.1711
+  angle=90
+  periodicity = 0
+}
+
+kc-JT06{
+init:
+  z = 11    
+  p = #pixel/4
+  float x = real(p*3.14) 
+  float y = imag(p/7) 
+  float d = 0
+  int iter = 1
+loop:
+  iter = iter*3
+  d = x
+  x = x+.2-(cos(y+(.3*(y+(.9*y)))))
+  y = y-.2*(cos(d+(.3*(d+(.9*x)))))
+  z = x^flip(x)+3
+bailout:
+  |x| < 9999
+default:
+  title = "kc-JT06"
+  center=(-1.1338,1543)
+  maxiter = 300
+  magn = 0.1705
+  angle=90
+  periodicity = 0
+}
+

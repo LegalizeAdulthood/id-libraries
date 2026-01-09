@@ -1,0 +1,116 @@
+Face01 {
+init:
+  z=conj(cos(1/pixel))
+  c=tanh(1/pixel)
+  d=cos(sqr(pixel))/conj(cos(sqr(pixel)))
+loop:
+  z=(z*1/c)+d
+    d=(1/z*z+z)/(pixel-c*c)
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face01"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+
+Face02 {
+init:
+  z=conj(cos(1/pixel))
+  c=tanh(1/pixel)
+  d=cos(sqr(pixel))/conj(cos(sqr(pixel)))
+loop:
+  z=(z*1/c)+d
+    d=(1/z*z+z)/(pixel-c*c)
+   c=z/(d+c)
+     
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face02"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+
+Face03 {
+init:
+  z=conj(cos(1/pixel))
+  c=tanh(1/pixel)
+  d=cos(sqr(pixel))/cotanh(cos(sqr(pixel)))
+loop:
+  z=(z*1/c)+d
+    d=(1/z*z+z)/(pixel-c*c)
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face03"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+
+Face04 {
+init:
+  z=cos(conj(1/pixel))
+  c=sqrt(1/pixel)
+  d=cos(sqrt(pixel))/cotanh(cos(sqr(pixel)))
+loop:
+  z=(z*1/c)+sqrt(d)
+    d=(1/z*z+z)/(pixel-c*c)
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face04"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+
+Face05 {
+init:
+  z=cos(conj(1/pixel))
+  c=tan(1/pixel)
+  d=cotan(sqrt(pixel))/cotanh(cos(sqr(pixel)))
+loop:
+  z=(z*1/c)+sqrt(d)
+    d=(1/z*z+z)/(pixel-c*c)
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face05"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+
+Face06 {
+init:
+  z=cos(conj(1/pixel))
+  c=tan(1/pixel)
+  d=cotan(sqrt(pixel))/cotanh(conj(sqr(pixel)))
+loop:
+  z=(z*1/c)+conj(d)
+    d=(1/z*z+z)/(pixel-c*c)
+bailout:
+  |real(z)| <=100
+default:
+  title = "Face06"
+  periodicity = 0
+  maxiter = 500
+  angle = 90.1519
+  magn = 0.401338
+  center = (0.034,0.153)
+}
+

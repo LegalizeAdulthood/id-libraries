@@ -1,0 +1,249 @@
+Kscope1 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope2 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope3 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.75)| - 0.04) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z^2+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope4 {
+    c = 0.015/log(exp(pixel^4 + |sin(pixel^1.75)| - 0.04) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z^2+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope5 {
+    c = 0.015/tan(exp(pixel^4 + |sin(pixel^1.75)| - 0.04) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z^2+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope6 {
+    c = 1.2/tan(exp(pixel^4 + |cos(pixel^1.75)| - 0.04) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z^2+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope7 {
+    c = 1.2/tan(sin(pixel^4 + |cos(pixel^.38)| - 0.04) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - tan(0.1/pixel) - (0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z^2+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope8 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - |conj(0.1/pixel)| - flip(0.01/pixel))^4
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope9 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (0.005,0.003) + c^2 - 1/(c*3.14)
+     z =  (pixel - |conj(0.1/pixel)| - flip(0.01/pixel))^4
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope10 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel^2 - |conj(0.1/pixel)| - flip(0.01/pixel))^4
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope11 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7455,-0.132) + c/3 - 1/(c*6000)
+    z =  (pixel - |sin(0.1/pixel)| - flip(0.01/pixel))^4
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope12 {
+    c = 0.15/sin(log(pixel^4 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7455,-0.132) + c/3 - 1/(c*6000)
+    z =  (pixel - |sin(0.1/pixel)| - flip(0.01/pixel))^4
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope13 {
+    c = 0.15/sin(log(pixel^3 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7455,-0.132) + c/3 - 1/(c*6000)
+    z =  (pixel - |sin(0.1/pixel)| - flip(0.01/pixel))^3
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope14 {
+    c = 0.15/sin(log(pixel^3 + |sin(pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7455,-0.132) + c/3 - 1/(c^z)
+    z =  (pixel - |sin(0.1/pixel)| - flip((0.5/pixel) ) )^3
+      bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope15 {
+    c = 0.15/(log ( |exp (pixel^4)| + |sin (pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope16 {
+    c = 0.15/(log ( |cos (pixel^4)| + |tan (pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/200 - 1/(c*6000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope17 {
+    c = 0.15/(log ( |cos (pixel^4)| + |tan (pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/200 - 5/(c*6000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope18 {
+    c = 0.15/(log ( |cos (pixel^4)| + |tan (pixel^1.5)| - 0.4) - 0.8)
+    c = (-0.7456,-0.132) + c/200 - 5/(c*7000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope19 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - conj(0.1/pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope20 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01/pixel))^4
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope21 {
+    c = 0.15/log(exp(pixel^4 + |sin(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01/pixel))^8
+   bailout = 16 , iter = 0 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope22 {
+    c = 0.15/sqr(exp(pixel^4 + |sin(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01/pixel))^8
+   bailout = 16 , iter = 1 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope23 {
+    c = 0.15/sqrt(exp(pixel^4 + |sin(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01/pixel))^8
+   bailout = 16 , iter = 1 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope24 {
+    c = 0.15/sqrt(exp(pixel^4 + |cos(pixel^1.5)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01/pixel))^8
+   bailout = 16 , iter = 1 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}
+
+Kscope25 {
+    c = 0.15/sqrt(exp(pixel^10 + |cos(pixel^1.05)| - 1) - 0.8)
+    c = (-0.7456,-0.132) + c/10 - 1/(c*6000)
+    z =  (pixel - sqr(2^pixel) - flip(0.01*pixel))^8
+   bailout = 16 , iter = 1 :
+    z = z*z+ c
+    iter = iter + 1
+  |z| <= bailout
+}

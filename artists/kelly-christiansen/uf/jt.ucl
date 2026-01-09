@@ -1,0 +1,42 @@
+JT-c1 {
+; Dr. Joseph Trotsky
+;mailto:kod_kod@netvision.net.il
+;Fractal's Coloring Formulas
+;INSIDE: Smooth color
+init:
+complex a=(0,1)
+loop:
+if a < atan(a)
+    a = a*a
+endif
+final:
+#index = #pi 
+default:
+  title = "JT-Smooth"
+}
+
+JT-c2 {
+;OUTSIDE: Iterations strips
+init:
+complex a=(0,1)
+complex b=(1,0)
+float c=0
+int @color=3
+loop:
+c = c*sin(c)^color
+if a < atan(a)
+    a = (a*atan(a+sin(b+cos(a+b))+#pi))^1.03
+else
+    a = a+cos(b+sin(a+b))
+endif
+final:
+#index = c + #pi * #numiter/.05 
+default:
+  title = "JT-mix"
+param bailout
+  caption = "Bailout value"
+  default = 100
+  min = 1
+endparam
+}
+

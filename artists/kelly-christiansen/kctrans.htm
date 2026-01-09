@@ -1,0 +1,197 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Samuel">
+   <meta name="GENERATOR" content="Mozilla/4.7 [fr] (Win95; I) [Netscape]">
+   <title>sam.ufm Helpfile</title>
+</head>
+<body text="#C7BA8D" bgcolor="#000000" link="#B37662" vlink="#B3A062" alink="#B3A062">
+&nbsp;
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="700" >
+<tr>
+<td>
+<center><a NAME="ckccol"></a>
+<br>&nbsp;
+<p><b><u><font face="BlackChancery"><font size=+4>Circly Koch Curve Coloring</font></font></u></b></center>
+
+<p>
+<hr SIZE=7 WIDTH="50%">
+<p><u>What is it ?</u> :
+<p>This transform can be used to build a layer that will "color" an image
+using the <a href="kochcurves.htm">Circly Koch Curve</a> formula or the
+<a href="#ckcmap">Circly
+Koch Curve Mapping</a> transform. Use this transform with the "Pixel" formula
+in mt.ufm and the "Gradient" coloring in standard.ucl. Make the parameters
+"Mode", "Magnification Step", "Curve Order", "Number of Iterations" and
+"Twist Parameter" with the transform(s) or formula(s) of the underlaying
+layer(s).
+<p>Then choose the number of color you want to be applied on the Circly
+Koch Curve. All the circle belonging to the same "generation" (of the same
+size) will be colored the same color.
+<p><u>Examples</u> :
+<p><a href="parameters.htm#trans" target = 'blank'>trans</a>
+<br>&nbsp;
+<p><a href="helpindex.htm">Back to Index...</a>
+<p>
+<hr SIZE=7 WIDTH="75%">
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p><a NAME="ckcmap"></a>
+<br>&nbsp;
+<p><b><u><font face="BlackChancery"><font size=+4>Circly Koch Curve Mapping</font></font></u></b></center>
+
+<p>
+<hr SIZE=7 WIDTH="50%">
+<p><u>What is it ?</u> :
+<p>This transform maps a part of the underlaying image in the circles of
+a Circly Koch Curve.
+<p><u>The Parameters</u> :
+<p>Magnification step : Define how smaller will be a "son" circle compared
+to the parent one.
+<p>Curve Order : Define the symetry of the curve.
+<p>Center\Rotation\Size : Allow you to modify the part of the image that
+will be mapped onto the curve.
+<p>Stabilize ? : If enabled, all the images in the circles have the same
+orientation.
+<p><u>Examples</u> :
+<p>Look at the one for the <a href="#ckccol">Circly Koch Curve coloring</a>.
+<br>&nbsp;
+<p><a href="helpindex.htm">Back to Index...</a>
+<br>&nbsp;
+<p>
+<hr SIZE=7 WIDTH="75%">
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p><a NAME="ckcsciss"></a>
+<br>&nbsp;
+<p><b><u><font face="BlackChancery"><font size=+4>Circly Koch Curve Scissor</font></font></u></b></center>
+
+<p>
+<hr SIZE=7 WIDTH="50%">
+<p><u>What is it ?</u> :
+<p>This is a scissor that has the shape of a Circly Koch Curve
+<p><u>The Parameters</u> :
+<p>Magnification step : Define how smaller will be a "son" circle compared
+to the parent one.
+<p>Curve Order : Define the symetry of the curve.
+<p>Center\Rotation\Size : Allow you to move\rotate\magnify the scissor.
+<br>&nbsp;
+<p><a href="helpindex.htm">Back to Index...</a>
+<p>
+<hr SIZE=7 WIDTH="75%">
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p><a NAME="rotkcsciss"></a>
+<br>&nbsp;
+<p><b><u><font face="BlackChancery"><font size=+4>Rotating Koch Curve Scissor</font></font></u></b></center>
+
+<p>
+<hr SIZE=7 WIDTH="50%">
+<p><u>What is it ?</u> :
+<p>This transform works like the Koch Curve Scissor but instead of setting
+the inside of the Curve to solid color, it rotates it. You can specify
+the rotation angle with "Rot. of the Inside".
+<br>&nbsp;
+<p><a href="helpindex.htm">Back to Index...</a>
+<p>
+<hr SIZE=7 WIDTH="75%">
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p><a NAME="sqkcmap"></a>
+<br>&nbsp;
+<p><b><u><font face="BlackChancery"><font size=+4>Squarry Koch Curve Mapping</font></font></u></b></center>
+
+<p>
+<hr SIZE=7 WIDTH="50%">
+<p><u>What is it</u> ?
+<p>This transform cut off a square in the underlaying image and map it
+on a <a href="kochcurves.htm#skcurve">Squarry Koch Curve</a>. The square
+to be cut off is defined by the Center\Rotation\Size parameters. The other
+ones work exactly like in <a href="kochcurves.htm#skcurve">Squarry Koch
+Curve</a>. If the "Stabilize ?" switch is enabled, all the squares will
+have the same orientation.
+<p><u>Examples</u> :
+<p><a href="parameters.htm#squares" target = 'blank'>squares</a>
+<br><a href="parameters.htm#squares1" target = 'blank'>squares1</a>
+<br>&nbsp;
+<p><a href="helpindex.htm">Back to Index...</a>
+<p>
+<hr SIZE=7 WIDTH="75%"></td>
+</tr>
+</table></center>
+
+</body>
+</html>

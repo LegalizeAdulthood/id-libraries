@@ -1,0 +1,170 @@
+kspirals1x (XAXIS) {
+  z = pixel,
+  aa = (.9,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+kspirals1y (YAXIS) {
+  z = pixel,
+  aa = (.9,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+
+kspirals2x (XAXIS) {
+  z = pixel,
+  aa = (1,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+kspirals2y (YAXIS) {
+  z = pixel,
+  aa = (1,.5):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+kspirals3x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+kspirals3y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+  
+kspirals4x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.025*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+kspirals4y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.025*bb^3+(aa/3)*bb*z-0.5*bb+aa*z;
+  |z-pixel|<4
+  }
+
+    
+kspirals5x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*bb*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals5y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*bb*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals6x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals6y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals7x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals7y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.25*bb^2+(aa/5)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals8x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals8y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*2)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+
+kspirals9x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*3)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals9y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*3)*z^2-0.5*bb+aa*z;
+  |z|<4
+  }
+
+kspirals10x (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*4)*z^2-0.9*bb+aa*z;
+  |z|<4
+  }
+
+kspirals10y (YAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^3,
+  z = 0.15*bb^2+(aa/9)*(bb*4)*z^2-0.9*bb+aa*z;
+  |z|<4
+  }
+
+kspirals5xa (XAXIS) {
+  z = pixel,
+  aa = (1,.4):
+  bb = z^2,
+  z = 0.25*bb^2+(aa/5)*bb*z^2-0.5*bb+aa*z;
+  |z|<p1+4
+  }
