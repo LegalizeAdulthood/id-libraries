@@ -31,12 +31,6 @@ Newton4-3 (XYAXIS) {;Mark Peterson's Newton4 formula modified by Linda Allison
     .0009 <= |z4 - Root|
   }
 
-Lin-x3 (XAXIS) {;Lee Skinner's MTet formula modified by Linda Allison
-  z = pixel:
-   z = (pixel ^ ((z + 1)/z)) + pixel,
-    |z| <= (p1 ^ z)
-  }
-
 
 Lin-carr6new { ;Robert Carr's formula modified by Linda Allison
   z = pixel:
