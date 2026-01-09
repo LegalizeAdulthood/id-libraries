@@ -1,0 +1,39 @@
+Athenabrot {
+init:
+a=#pixel+1
+z = @start
+
+loop:
+z = z^@power + #pixel
+z=z*(z/2-2)+a
+
+bailout:
+|z| <= @bailout
+
+default:
+title = "Athenabrot"
+center = (-0.5, 0)
+
+param start
+caption = "Start here"
+default = (0,0)
+endparam
+
+param power
+caption = "Power"
+default = (2,0)
+endparam
+
+param bailout
+caption = "Bailout value"
+default = 4.0
+min = 1.0
+endparam
+
+switch:
+type = "Julia"
+seed = #pixel
+power = power
+bailout = bailout
+}
+
