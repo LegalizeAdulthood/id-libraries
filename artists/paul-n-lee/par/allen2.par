@@ -1,0 +1,35 @@
+Blue1              { ; by Allen Armstrong
+  reset=1930 type=julia4 center-mag=-3.3e-007/2.205e-006/0.6666676
+  params=0.3128931522369385/-0.8989948034286499 bailout=2
+  colors=@blues.map
+  }
+
+Hole               { ; by Allen Armstrong
+  reset=1930 type=julia4 center-mag=-1.82e-006/1.0225e-005/0.8912733
+  params=-0.06758081912994385/-0.7387279272079468 bailout=4
+  bailoutest=or inside=bof60 colors=@blues.map
+  }
+
+Waves              { ; by Allen Armstrong
+  reset=1930 type=julia center-mag=-1.985e-007/8.9e-008/4.088172
+  params=0.4136412888765335/-0.1427379250526428 colors=@blues.map
+  }
+
+Membrane           { ; by Allen Armstrong
+  reset=1930 type=julia center-mag=-1.99e-006/1.55e-007/0.8912657
+  params=-0.7678362019360065/0.1427378728985786 maxiter=16 bailout=4
+  inside=bof60 colors=@blues.map
+  }
+
+Templet            { ; by Allen Armstrong
+  reset=1930 type=julia center-mag=0.095118/0.866444/10.41664
+  params=-0.500318498754646/-0.631385970115662 maxiter=16 bailout=4
+  inside=bof60 colors=@blues.map
+  }
+
+Classic            { ; by Allen Armstrong
+  reset=1930 type=julia center-mag=-1.338e-005/8.6425e-006/1.251786
+  params=-0.8028834946453571/0.1978296935558319 maxiter=647
+  outside=summ colors=@blues.map
+  }
+

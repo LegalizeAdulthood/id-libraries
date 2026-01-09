@@ -1,0 +1,69 @@
+Path: unixg.ubc.ca!news.bc.net!sunserver.insinc.net!news.sprintlink.net!news.bluesky.net!news.mathworks.com!zombie.ncsc.mil!gmi!srvr1.flint.umich.edu!newsxfer.itd.umich.edu!news.itd.umich.edu!umich.edu!asdalton
+From: asdalton@umich.edu (Andrew Dalton)
+Newsgroups: sci.fractals
+Subject: Zoom movie parameter batch file
+Date: Tue, 11 Apr 1995 16:05:34
+Organization: University of Michigan
+Lines: 58
+Message-ID: <asdalton.318.00101845@umich.edu>
+NNTP-Posting-Host: pm047-13.dialip.mich.net
+X-Newsreader: Trumpet for Windows [Version 1.0 Rev A]
+ 
+Here are the parameters for a simple rotating zoom with 21 frames.  The 
+"video=SF5" parameter sets the video to 640x480x256, the resolution that I 
+used for generating an .FLC animation.  The standard .FLI animation 
+(320x200x256) parameter would be "video=F3."  I have found that the higher 
+resolution is necessary for decent fractal animations, however.
+ 
+To make the animation, first copy the following lines into a batch file:
+ 
+ 
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.5/0.00000016/0.666666738/1/0/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.50330722281/0.07325570223/0.74801240091/1/-1.875/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.50625478818/0.1385447714/0.83928373808/1/-3.75/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.50888180851/0.19673371414/0.94169186519/1/-5.625/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51122314279/0.2485946627/1.05659567645/1/-7.5/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51330985911/0.29481578064/1.18551987625/1/-9.375/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51516964694/0.33601039438/1.33017521112/1/-11.25/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51682718456/0.37272513163/1.49248117026/1/-13.125/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51830446647/0.40544717487/1.67459145605/1/-15/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.51962109534/0.43461072589/1.87892256234/1/-16.875/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52079454202/0.46060276748/2.1081858399/1/-18.75/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52184037745/0.48376819837/2.36542347441/1/-20.625/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52277247923/0.50441440989/2.65404885443/1/-22.5/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.5236032158/0.52281536483/2.97789186498/1/-24.375/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52434361053/0.53921523279/3.34124970786/1/-26.25/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52500348801/0.55383163014/3.74894392291/1/-28.125/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52559160443/0.56685850768/4.20638436692/1/-30/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52611576372/0.57846872422/4.71964099919/1/-31.875/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52658292116/0.58881634036/5.29552442626/1/-33.75/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.52699927567/0.59803866273/5.94167627452/1/-35.625/0
+fractint batch=yes sound=no video=SF5 maxiter=500 center-mag=-0.527370352/0.606258066/6.66667059/1/-37.5/0
+ 
+ 
+Next, delete or rename any FRACTxxx.GIF files in the fractint directory.  Run 
+the batch file and let fractint generate all of the frames.  You will probably 
+want something other than the default color map, so change the color map of 
+FRACT001.GIF and save it with the same name.  Alternatively, you could add an 
+appropriate command line parameter to the first line of the batch file before 
+you run it.
+ 
+If you use DTA to make animation files, type
+ 
+dta /o[animation file name] /ra /nm fract*.gif
+ 
+The /nm parameter uses the color map of the first file, which saves time and 
+allows a change in the map of the first frame to affect the entire animation.  
+The .FLI or .FLC extension will automatically be attached.
+ 
+ 
+-		Andrew Dalton
+-		asdalton@umich.edu
+--
+---		"Faith, n. Belief without evidence in what is told by one who
+-----		speaks without knowledge, of things without parallel."
+--------						--Ambrose Bierce
+-------------
+---------------------
+----------------------------------
+-------------------------------------------------------
