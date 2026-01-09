@@ -1,0 +1,8043 @@
+
+  May 30, 2006
+
+  Due to the new features in UF4, my very dear friend Stig Petterson
+  wrote his third version of cubic parameterspace (CubicParameterspace3)
+  included in his sp3 module. This new version, I've modified for the
+  alternative parametrizing sometimes used by the great mathematicians.
+  I've called them "MilnorAB", "SorensenCubic", "KullbergCubic" (I am
+  not a mathematician at all), "DenaneyCubic", "BrannerSpecialCubic",
+  and "EpsteinCubic". The fist two versions of the above formulas,
+  parallels to the first two versions of cubic parameterspace, are all
+  included in my ik module. Note there are no ik2 module, the name
+  ik3 for this module is for the parallelness to sp3. Please read
+  the rtf-dokument "GetStarted" attached to the zip-file together with
+  a set parameter-files. For the UF database there is a text version.
+  All credits to Stig Pettersson for his wonderful Cubic parameterspace3
+  (as well as for Quartic- and PenticParameterspace3) without the below
+  alternative cubic formulas would never been there.
+
+  Regards,
+  Ingvar Kullberg
+
+  www.come.to/kullberg
+
+
+MilnorAB3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=sqrt(A)
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-sqrt(A)
+  else
+    z=sqrt(A)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z-3*A*z+sqrt(B)
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-sqrt(A)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z-3*A*z+sqrt(B)
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=sqrt(A)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        else
+          z=sqrt(A)
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-sqrt(A)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        else
+          z=-sqrt(A)
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif m1save==#maxiter
+          z=-sqrt(A)
+        elseif m2save==#maxiter
+          z=sqrt(A)
+        else
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save==#maxiter)
+          z=sqrt(A)
+        else
+          z=-sqrt(A)
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif m1save==#maxiter
+          z=-sqrt(A)
+        elseif m2save==#maxiter
+          z=sqrt(A)
+        else
+          if m1save<m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(A)
+          else
+            z=-sqrt(A)
+          endif
+        elseif (m1save==#maxiter)
+          z=sqrt(A)
+        else
+          z=-sqrt(A)
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=z*z*z-3*A*z+sqrt(B)
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="MilnorJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "MilnorAB3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="MilnorAB 3 "
+  endheading
+
+  heading
+    caption="z=z^3-3Az+sqrt(B)"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=+sqrt(A)"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-sqrt(A)"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+MilnorJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=z*z*z-3*A*z+sqrt(B)
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="MilnorAB3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "MilnorJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Milnor Jula 3 "
+  endheading
+
+  heading
+    caption="z=z^3-3Az+sqrt(B)"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+  
+  SorensenCubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=-a/3+sqrt(a*a/9-b/3)
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-a/3-sqrt(a*a/9-b/3)
+  else
+    z=-a/3+sqrt(a*a/9-b/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z*z+b*z
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-a/3-sqrt(a*a/9-b/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z*z+b*z
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=-a/3+sqrt(a*a/9-b/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        else
+          z=-a/3+sqrt(a*a/9-b/3)
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          -a/3-sqrt(a*a/9-b/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        else
+          -a/3-sqrt(a*a/9-b/3)
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif m1save==#maxiter
+          -a/3-sqrt(a*a/9-b/3)
+        elseif m2save==#maxiter
+          z=-a/3+sqrt(a*a/9-b/3)
+        else
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=-a/3+sqrt(a*a/9-b/3)
+        else
+          -a/3-sqrt(a*a/9-b/3)
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif m1save==#maxiter
+          -a/3-sqrt(a*a/9-b/3)
+        elseif m2save==#maxiter
+          z=-a/3+sqrt(a*a/9-b/3)
+        else
+          if m1save<m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=-a/3+sqrt(a*a/9-b/3)
+          else
+            -a/3-sqrt(a*a/9-b/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=-a/3+sqrt(a*a/9-b/3)
+        else
+          -a/3-sqrt(a*a/9-b/3)
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=z*z*z+a*z*z+b*z
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="SorensenCubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "SorensenCubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Sorensen Cubic 3 "
+  endheading
+
+  heading
+    caption="z=z^3+az^2+bz"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=-a/3+sqrt(a^2/9-b/3)"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-a/3-sqrt(a^2/9-b/3)"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+SorensenCubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=z*z*z+a*z*z+b*z
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="SorensenCubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "SorensenCubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Sorensen Cubic Julia 3 "
+  endheading
+
+  heading
+    caption="z=z^3+az^2+bz"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+KullbergCubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=0
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-2*a/3
+  else
+    z=0
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z*z+b
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-2*a/3
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z*z+b
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=0
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        else
+          z=0
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-2*a/3
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        else
+          z=-2*a/3
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif m1save==#maxiter
+          z=-2*a/3
+        elseif m2save==#maxiter
+          z=0
+        else
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save==#maxiter)
+          z=0
+        else
+          z=-2*a/3
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif m1save==#maxiter
+          z=-2*a/3
+        elseif m2save==#maxiter
+          z=0
+        else
+          if m1save<m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=0
+          else
+            z=-2*a/3
+          endif
+        elseif (m1save==#maxiter)
+          z=0
+        else
+          z=-2*a/3
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=z*z*z+a*z*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="KullbergCubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "KullbergCubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Kullberg Cubic 3 "
+  endheading
+
+  heading
+    caption="z=z^3+az^2+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=0"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-2a/3"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+KullbergCubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=z*z*z+a*z*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="KullbergCubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "KullbergCubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Kullberg Cubic Julia 3"
+  endheading
+
+  heading
+    caption="z=z^3+az^2+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+DevaneyCubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=1i*sqrt(a/3)
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-1i*sqrt(a/3)
+  else
+    z=1i*sqrt(a/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z+b
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-1i*sqrt(a/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z+b
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=1i*sqrt(a/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        else
+          z=1i*sqrt(a/3)
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-1i*sqrt(a/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        else
+          z=-1i*sqrt(a/3)
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif m1save==#maxiter
+          z=-1i*sqrt(a/3)
+        elseif m2save==#maxiter
+          z=1i*sqrt(a/3)
+        else
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=1i*sqrt(a/3)
+        else
+          z=-1i*sqrt(a/3)
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif m1save==#maxiter
+          z=-1i*sqrt(a/3)
+        elseif m2save==#maxiter
+          z=1i*sqrt(a/3)
+        else
+          if m1save<m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1i*sqrt(a/3)
+          else
+            z=-1i*sqrt(a/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=1i*sqrt(a/3)
+        else
+          z=-1i*sqrt(a/3)
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=z*z*z+a*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="DevaneyCubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "DevaneyCubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Devaney Cubic 3"
+  endheading
+
+  heading
+    caption="z=z^3+az+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=+sqrt(a/3)i"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-sqrt(a/3)i"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+DevaneyCubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=z*z*z+a*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="DevaneyCubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "DevaneyCubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Devaney Cubic Julia 3 "
+  endheading
+
+  heading
+    caption="z=z^3+az+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+DevaneyIICubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=sqrt(-a/3)
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-sqrt(-a/3)
+  else
+    z=sqrt(-a/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z+b
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-sqrt(-a/3)
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=z*z*z+a*z+b
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=sqrt(-a/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        else
+          z=sqrt(-a/3)
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-sqrt(-a/3)
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        else
+          z=-sqrt(-a/3)
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif m1save==#maxiter
+          z=-sqrt(-a/3)
+        elseif m2save==#maxiter
+          z=sqrt(-a/3)
+        else
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=sqrt(-a/3)
+        else
+          z=-sqrt(-a/3)
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif m1save==#maxiter
+          z=-sqrt(-a/3)
+        elseif m2save==#maxiter
+          z=sqrt(-a/3)
+        else
+          if m1save<m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=sqrt(-a/3)
+          else
+            z=-sqrt(-a/3)
+          endif
+        elseif (m1save==#maxiter)
+          z=sqrt(-a/3)
+        else
+          z=-sqrt(-a/3)
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=z*z*z+a*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="DevaneyIICubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "DevaneyIICubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="DevaneyII Cubic 3"
+  endheading
+
+  heading
+    caption="z=z^3+az+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=+sqrt(-a/3)"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-sqrt(-a/3)"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+DevaneyIICubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=z*z*z+a*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="DevaneyIICubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "DevaneyIICubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="DevaneyII Cubic Julia 3 "
+  endheading
+
+  heading
+    caption="z=z^3+az+b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+  BrannerSpecialCubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=1
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-1
+  else
+    z=1
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=(b/4-a/4)*(z*z*z-3*z)+a/2+b/2
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-1
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=(b/4-a/4)*(z*z*z-3*z)+a/2+b/2
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=1
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        else
+          z=1
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-1
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        else
+          z=-1
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif m1save==#maxiter
+          z=-1
+        elseif m2save==#maxiter
+          z=1
+        else
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save==#maxiter)
+          z=1
+        else
+          z=-1
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif m1save==#maxiter
+          z=-1
+        elseif m2save==#maxiter
+          z=1
+        else
+          if m1save<m2save
+            z=1
+          else
+            z=-1
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save==#maxiter)
+          z=1
+        else
+          z=-1
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=(b/4-a/4)*(z*z*z-3*z)+a/2+b/2
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="BrannerSpecialCubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "BrannerSpecialCubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Branner Special Cubic 3"
+  endheading
+
+  heading
+    caption="z=(b/4 - a/4)(z^3 - 3z) + (a + b)/2"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=+1"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-1"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+BrannerSpecialCubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=(b/4-a/4)*(z*z*z-3*z)+a/2+b/2
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="BrannerSpecialCubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "BrannerSpecialCubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Branner Special CubicJulia 3"
+  endheading
+
+  heading
+    caption="z=(b/4 - a/4)(z^3 - 3z) + (a + b)/2"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+  EpsteinCubic3 {
+
+init:
+  int n=0
+  int m1save=0
+  int m2save=0
+  float abs1=0
+  float abs2=0
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+  if (@M==0)&&(@SetBorders==false)
+    z=1
+  elseif (@M==1)&&(@SetBorders==false)
+    z=-1
+  else
+    z=1
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=a*(z*z*z-3*z)+b
+    endwhile
+    m1save=n
+    abs1=|z|
+    n=0
+    z=-1
+    while (|z|<@bailout)&&(n<#maxiter)
+      n=n+1
+      z=a*(z*z*z-3*z)+b
+    endwhile
+    m2save=n
+    abs2=|z|
+    if @SetBorders==true
+      if @M==0  ;M1
+        if m1save==#maxiter
+          z=1
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        else
+          z=1
+        endif
+      elseif @M==1  ;M2
+        if m2save==#maxiter
+          z=-1
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        else
+          z=-1
+        endif
+      elseif (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif m1save==#maxiter
+          z=-1
+        elseif m2save==#maxiter
+          z=1
+        else
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save==#maxiter)
+          z=1
+        else
+          z=-1
+        endif
+      endif
+    else
+      if (@M==3)
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1<abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save<m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif m1save==#maxiter
+          z=-1
+        elseif m2save==#maxiter
+          z=1
+        else
+          if m1save<m2save
+            z=1
+          else
+            z=-1
+          endif
+        endif
+      elseif @M==2
+        if (m1save==#maxiter)&&(m2save==#maxiter)
+          if abs1>abs2
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save<#maxiter)&&(m2save<#maxiter)
+          if m1save>m2save
+            z=1
+          else
+            z=-1
+          endif
+        elseif (m1save==#maxiter)
+          z=1
+        else
+          z=-1
+        endif
+      endif
+    endif
+  endif
+
+loop:
+  oldz=z
+  z=a*(z*z*z-3*z)+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="EpsteinCubicJulia3"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+
+default:
+  title = "EpsteinCubic3"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Epstein Cubic 3"
+  endheading
+
+  heading
+    caption="z=a(z^3–3z) + b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  heading
+    caption="Critical Points: z0=+1"
+    visible=@M==0
+  endheading
+
+  heading
+    caption="Critical Points: z0=-1"
+    visible=@M==1
+  endheading
+
+  heading
+    caption="Critical Points: CCL"
+    visible=@M==3
+  endheading
+
+
+  heading
+    caption="Critical Points: UNION"
+    visible=@M==2
+  endheading
+
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  param M
+    enum="M+" "M-" "UNION" "CCL"
+    hint="The choosen critical point to initialize z"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+
+EpsteinCubicJulia3 {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+
+
+loop:
+  oldz=z
+  z=a*(z*z*z-3*z)+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="EpsteinCubic3"
+  PlottedPlane=SeedPlane
+  M=M
+  SetBorders=SetBorders
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+
+
+default:
+  title = "EpsteinCubicJulia3"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Epstein Cubic Julia 3 "
+  endheading
+
+  heading
+    caption="z=a(z^3–3z) + b"
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  param M
+    enum="M+" "M-" "CCL" "UNION"
+    hint="The choosen critical point to initialize z. (For Switch)"
+    default=0
+  endparam
+
+  param SetBorders
+    caption="SetBorders"
+    default=false
+    hint="Outlines the not plotted sets."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+  
+  ExtendedCompasses {
+
+init:
+  complex z=0
+  complex oldz=0
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(#pixel)
+  float dd=imag(#pixel)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @PlottedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @PlottedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @PlottedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @PlottedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @PlottedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal             ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+  IF @PlottedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @PlottedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @PlottedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @PlottedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i             ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+  d=@exponent
+  z=a
+
+loop:
+  oldz=z
+  z=z^d-d*a^(d-1)*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+
+switch:
+  type="ExtendedCompassesJulia"
+  seed=#pixel
+  SeedPlane=PlottedPlane
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+  exponent=exponent
+
+
+
+default:
+  title = "ExtendedCompasses"
+  periodicity=0
+  method=multipass
+
+
+  heading
+    caption="Extended Compasses"
+  endheading
+
+  heading
+    caption="z=z^d-d*a^(d-1)*z+b"
+  endheading
+  
+  heading
+   caption="Real and imaginary part of exponent d"
+  endheading
+
+  param exponent
+     caption = "exponent"
+     default = (3,0)
+  endparam
+
+  heading
+    caption="Maps on Complex Plane (a-real, a-imag)"
+    visible=@PlottedPlane==0
+  endheading
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-real)"
+    visible=@PlottedPlane==1
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-real, b-imag)"
+    visible=@PlottedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-real)"
+    visible=@PlottedPlane==3
+  endheading
+
+
+  heading
+    caption="Maps on Complex Plane (a-imag, b-imag)"
+    visible=@PlottedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Maps on Complex Plane (b-real, b-imag)"
+    visible=@PlottedPlane==5
+  endheading
+
+
+  param PlottedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis that will be plotted."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable plotted planes"
+    default=true
+    hint="Disable the plotted planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==3)||(@PlottedPlane==4)||(@PlottedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==1)||(@PlottedPlane==2)||(@PlottedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==2)||(@PlottedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@PlottedPlane==0)||(@PlottedPlane==1)||(@PlottedPlane==3)
+  endparam
+
+
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+  }
+
+
+ExtendedCompassesJulia {
+
+init:
+  complex z=#pixel
+  complex oldz=0+0i
+  float t=0
+  float aa=0
+  complex a=0+0i
+  complex b=0+0i
+  float cc=real(@seed)
+  float dd=imag(@seed)
+  float IX=0
+  float IY=0
+  float resIX=0
+  float resIY=0
+  float yrot=0
+  float xrot=0
+  float zrot=0
+
+  IF @SeedPlane==0     ;a-real, a-imag
+    IX=@breal
+    IY=@bimag
+  ELSEIF @SeedPlane==1 ;a-real, b-real
+    IX=@aimag
+    IY=@bimag
+  ELSEIF @SeedPlane==2 ;a-real, b-imag
+    IX=@aimag
+    IY=@breal
+  ELSEIF @SeedPlane==3 ;a-imag, b-real
+    IX=@areal
+    IY=@bimag
+  ELSEIF @SeedPlane==4 ;a-imag, b-imag
+    IX=@areal
+    IY=@breal
+  ELSE
+    IX=@areal          ;b-real, b-imag
+    IY=@aimag
+  ENDIF
+
+  IF @LocalRot==true
+    cc=cc-real(#center)
+    dd=dd-imag(#center)
+    resIX=IX
+    resIY=IY
+    IX=0
+    IY=0
+  ENDIF
+
+    IF @yrot!=0  ;yrot-z
+
+      yrot=(@yrot%360)*pi/180
+      t=cabs(cc+IX*1i)
+      aa=atan2(cc+IX*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IX=0
+      ELSEIF aa==pi/2
+        cc=0
+        IX=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IX=-t
+      ELSE
+        cc=t*cos(aa)
+        IX=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrot!=0   ;xrot-z
+      xrot=(@xrot%360)*pi/180
+      t=cabs(IX+dd*1i)
+      aa=atan2(IX+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IX=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IX=0
+        dd=t
+      ELSEIF aa==-pi/2
+
+        IX=0
+        dd=-t
+      ELSE
+        IX=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @zrot!=0   ;zrot-xy
+      zrot=(@zrot%360)*pi/180
+      t=cabs(cc+dd*1i)
+      aa=atan2(cc+dd*1i)
+      aa=zrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        dd=0
+      ELSEIF aa==pi/2
+        cc=0
+        dd=t
+      ELSEIF aa==-pi/2
+        cc=0
+        dd=-t
+      ELSE
+        cc=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+
+    IF @yrott!=0   ;yrot-t
+      yrot=(@yrott%360)*pi/180
+      t=cabs(cc+IY*1i)
+      aa=atan2(cc+IY*1i)
+      aa=yrot+aa
+      IF abs(aa)==pi
+        cc=-t
+        IY=0
+      ELSEIF aa==pi/2
+        cc=0
+        IY=t
+      ELSEIF aa==-pi/2
+        cc=0
+        IY=-t
+      ELSE
+        cc=t*cos(aa)
+        IY=t*sin(aa)
+      ENDIF
+    ENDIF
+
+    IF @xrott!=0   ;xrot-t
+      xrot=(@xrott%360)*pi/180
+      t=cabs(IY+dd*1i)
+      aa=atan2(IY+dd*1i)
+      aa=xrot+aa
+      IF abs(aa)==pi
+        IY=-t
+        dd=0
+      ELSEIF aa==pi/2
+        IY=0
+        dd=t
+      ELSEIF aa==-pi/2
+        IY=0
+        dd=-t
+      ELSE
+        IY=t*cos(aa)
+        dd=t*sin(aa)
+      ENDIF
+    ENDIF
+
+  IF @LocalRot==true
+    cc=cc+real(#center)
+    dd=dd+imag(#center)
+    IX=IX+resIX
+    IY=IY+resIY
+  ENDIF
+
+
+  IF @SeedPlane==0      ;a-real, a-imag
+    a=cc+dd*1i
+    b=IX+IY*1i
+  ELSEIF @SeedPlane==1  ;a-real, b-real
+    a=cc+IX*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==2  ;a-real, b-imag
+    a=cc+IX*1i
+    b=IY+dd*1i
+  ELSEIF @SeedPlane==3  ;a-imag, b-real
+    a=IX+cc*1i
+    b=dd+IY*1i
+  ELSEIF @SeedPlane==4  ;a-imag, b-imag
+    a=IX+cc*1i
+    b=IY+dd*1i
+  ELSE
+    a=IX+IY*1i          ;b-real, b-imag
+    b=cc+dd*1i
+  ENDIF
+
+  d=@exponent
+
+loop:
+  oldz=z
+  z=z^d-d*a^(d-1)*z+b
+
+
+bailout:
+  (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>@dbailout)&&(|z|<@bailout))
+
+switch:
+  type="ExtendedCompasses"
+  PlottedPlane=SeedPlane
+  areal=areal
+  aimag=aimag
+  breal=breal
+  bimag=bimag
+  xrot=xrot
+  yrot=yrot
+  xrott=xrott
+  yrott=yrott
+  zrot=zrot
+  LocalRot=LocalRot
+  diff=diff
+  bailout=bailout
+  dbailout=dbailout
+  hide=hide
+  exponent=exponent
+
+
+default:
+  title = "ExtendedCompassesJulia"
+  periodicity=0
+  method=multipass
+
+
+
+  heading
+    caption="Extended Compasses Julia"
+  endheading
+
+  heading
+    caption="z=z^d-d*a^(d-1)*z+b"
+  endheading
+  
+  heading
+   caption="Real and imaginary part of exponent d"
+endheading
+
+  param exponent
+     caption = "exponent"
+     default = (3,0)
+  endparam
+
+  heading
+    caption="Maps on Complex Plane (z-real, z-imag)"
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, a-imag)"
+    visible=@SeedPlane==0
+  endheading
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-real)"
+    visible=@SeedPlane==1
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-real, b-imag)"
+    visible=@SeedPlane==2
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-real)"
+    visible=@SeedPlane==3
+  endheading
+
+
+  heading
+    caption="Seed on Complex Plane (a-imag, b-imag)"
+    visible=@SeedPlane==4
+  endheading
+
+
+
+  heading
+    caption="Seed on Complex Plane (b-real, b-imag)"
+    visible=@SeedPlane==5
+  endheading
+
+
+
+  param seed
+    caption="Seed"
+    default=(0,0)
+    hint="Seed for Julia"
+  endparam
+
+  heading
+    caption="Seed plane and M for Switch."
+  endheading
+
+
+  param SeedPlane
+    enum = "1.(a-real,a-imag)" "2.(a-real,b-real)" "3.(a-real,b-imag)" \
+           "4.(a-imag,b-real)" "5.(a-imag,b-imag)" "6.(b-real,b-imag)"
+    default=0
+    hint="The axis for seed. Plotted plane for switch to parameter plane."
+  endparam
+
+  heading
+    caption="Planes"
+    visible=(@hide==false)
+  endheading
+
+  heading
+    caption="Constant Planes"
+    visible=(@hide==true)
+  endheading
+
+  param hide
+    caption="Disable Seed planes."
+    default=true
+    hint="Disable the seed planes that won't react on input."
+  endparam
+
+  param areal
+    caption=" a-real "
+    hint="Value for a-real when a-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==3)||(@SeedPlane==4)||(@SeedPlane==5)
+  endparam
+
+
+  param aimag
+    caption=" a-imag "
+    hint="Value for a-imag when a-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==1)||(@SeedPlane==2)||(@SeedPlane==5)
+
+  endparam
+
+   param breal
+    caption=" b-real "
+    hint="Value for b-real when b-real is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==2)||(@SeedPlane==4)
+   endparam
+
+   param bimag
+    caption=" b-imag "
+    hint="Value for b-imag when b-imag is constant (not plotted)."
+    default=0.0
+    enabled=(@hide==false)||(@SeedPlane==0)||(@SeedPlane==1)||(@SeedPlane==3)
+  endparam
+  heading
+    caption="Rotations"
+  endheading
+
+
+ param xrot
+    caption="x-rotz"
+    hint= "Rotates yz-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrot
+    caption="y-rotz"
+    hint= "Rotates xz-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+ param xrott
+    caption="x-rott"
+    hint= "Rotates yt-plane in degrees around the x-axes."
+    default=0.0
+ endparam
+
+ param yrott
+    caption="y-rott"
+    hint= "Rotates xt-plane in degrees around the y-axis."
+    default=0.0
+ endparam
+
+
+  param zrot
+    caption="z-rot"
+    hint= "Rotating xy-plane in degrees around the z-axis."
+    default=0.0
+  endparam
+
+
+  param LocalRot
+    caption="Local Rotation"
+    hint="Enables Local Rotation."
+    default=false
+  endparam
+
+  heading
+    caption="Bailout"
+  endheading
+
+  param diff
+    caption="Diff-bailout"
+    default=false
+    hint="Diff-bailout on/off"
+  endparam
+
+  param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100.0
+    visible=@diff==false
+  endparam
+
+  param dbailout
+    caption="Dbailout"
+    hint="Value for Diff-bailout"
+    default=1E-6
+    visible=@diff==true
+  endparam
+
+
+  }
+
+
+  IkenagaCubic {
+init:
+  c=#pixel
+  IF @M==false
+    z=sqrt(1/3-c/3)
+  ELSE
+    z=-sqrt(1/3-c/3)
+  ENDIF
+
+loop:
+  oldz=z
+  z=z*z*z+(c-1)*z-c
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+switch:
+  type="IkenagaCubicJulia"
+  seed=#pixel
+  diff=diff
+  bailout=bailout
+
+default:
+  title = "IkenagaCubic"
+  periodicity=0
+  method=multipass
+
+  param diff
+    caption="Diff-Bailout"
+    default=false
+  endparam
+
+param bailout
+  caption="bailout"
+  default=100.0
+endparam
+
+param M
+  caption="-sqrt(1/3-c/3)"
+  hint="Sets the sign of the initial parameter sqrt(1/3-c/3). If set it will be negative."
+  default=false
+endparam
+
+}
+
+
+IkenagaCubicJulia {
+init:
+  c=@seed
+  z=#pixel
+
+loop:
+  oldz=z
+  z=z*z*z+(c-1)*z-c
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+switch:
+  type="IkenagaCubic"
+  bailout=bailout
+
+default:
+  title = "IkenagaCubicJulia"
+  periodicity=0
+  method=multipass
+
+param seed
+  caption="Seed"
+  default=(0,0)
+endparam
+
+ param diff
+    caption="Diff-Bailout"
+    default=false
+  endparam
+
+param bailout
+  caption="bailout"
+  default=100.0
+endparam
+
+}
+
+InverseMultibrots {
+
+init:
+  z=@start
+  d=@exponent
+  c=#pixel
+  int b=1
+
+IF @inverse==false
+    b=1
+  ELSE
+    b=-1
+  ENDIF
+
+loop:
+  oldz=z
+  z=z^d+c^b
+
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+   switch:
+  type="InverseMultibrotsJulia"
+  seed=#pixel
+  exponent=exponent
+  inverse=inverse
+  diff=diff
+  bailout=bailout
+
+default:
+  title = "InverseMultibrots"
+  center = (0,0)
+
+heading
+   caption="Iteration formula, see pdf-manual"
+endheading
+
+heading
+   caption="Real and imaginary part of exponent d"
+endheading
+
+param exponent
+  caption = "exponent"
+  default = (2,0)
+endparam
+
+heading
+   caption="Real and imaginary start value of variable z"
+endheading
+
+param start
+  caption = "Starting point"
+  default = (0,0)
+endparam
+
+heading
+   caption="Selected means 1/c instead of c"
+endheading
+
+param inverse
+    caption="Inverse"
+    default=true
+endparam
+
+heading
+   caption="Bailout"
+endheading
+
+param diff
+    caption="Diff-Bailout"
+    default=false
+endparam
+
+param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100
+  endparam
+
+}
+
+
+InverseMultibrotsJulia {
+init:
+
+  d=@exponent
+  c=@seed
+  z=#pixel
+  int b=1
+
+IF @inverse==false
+    b=1
+  ELSE
+    b=-1
+  ENDIF
+
+loop:
+  oldz=z
+  z=z^d+c^b
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+switch:
+  type="InverseMultibrots"
+  inverse=inverse
+  bailout=bailout
+
+default:
+  title = "InverseMultibrotsJulia"
+  periodicity=0
+  method=multipass
+
+heading
+   caption="Iteration formula, see pdf-manual"
+endheading
+
+heading
+   caption="Real and imaginary part of the seed for z"
+endheading
+
+param seed
+  caption="Seed"
+  default=(-1,0)
+endparam
+
+heading
+   caption="Real and imaginary part of exponent d"
+endheading
+
+param exponent
+    caption="exponent"
+    default = (2,0)
+ endparam
+
+heading
+   caption="Selected means 1/c instead of c"
+endheading
+
+param inverse
+    caption="Inverse"
+    default=true
+endparam
+
+heading
+   caption="Bailout"
+endheading
+
+param diff
+    caption="Diff-Bailout"
+    default=false
+endparam
+
+param bailout
+  caption="bailout"
+  default=100.0
+endparam
+
+}
+
+Multicorns2 {
+
+init:
+  z=@start
+  d=@exponent
+  c=#pixel
+  int b=1
+
+IF @inverse==false
+    b=1
+  ELSE
+    b=-1
+  ENDIF
+
+loop:
+  oldz=z
+  z=conj(z)^d+c^b
+
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+   switch:
+  type="MulticornsJulia2"
+  seed=#pixel
+  exponent=exponent
+  inverse=inverse
+  diff=diff
+  bailout=bailout
+
+default:
+  title = "Multicorns2"
+  center = (0,0)
+
+heading
+   caption="Iteration formula, see pdf-manual"
+endheading
+
+heading
+   caption="Real and imaginary part of exponent d"
+endheading
+
+param exponent
+  caption = "exponent"
+  default = (2,0)
+endparam
+
+heading
+   caption="Real and imaginary start value of z"
+endheading
+
+param start
+  caption = "Starting point"
+  default = (0,0)
+endparam
+
+heading
+   caption="Selected means 1/c instead of c"
+endheading
+
+param inverse
+    caption="Inverse"
+    default=false
+endparam
+
+heading
+   caption="Bailout"
+endheading
+
+param diff
+    caption="Diff-Bailout"
+    default=false
+endparam
+
+
+param bailout
+    caption="bailout"
+    hint="Value for bailout"
+    default=100
+  endparam
+
+
+}
+
+MulticornsJulia2 {
+init:
+
+  d=@exponent
+  c=@seed
+  z=#pixel
+  int b=1
+
+IF @inverse==false
+    b=1
+  ELSE
+    b=-1
+  ENDIF
+
+loop:
+  oldz=z
+  z=conj(z)^d+c^b
+bailout:
+    (!@diff && (|z|<@bailout))||(@diff && (|z-oldz|>1/@bailout)&&(|z|<@bailout))
+
+switch:
+  type="Multicorns2"
+  inverse=inverse
+  bailout=bailout
+
+default:
+  title = "MulticornsJulia2"
+  periodicity=0
+  method=multipass
+
+heading
+   caption="Iteration formula, see pdf-manual"
+endheading
+
+heading
+   caption="Real and imaginary part of the seed for z"
+endheading
+
+param seed
+  caption="Seed"
+  default=(-1,0)
+endparam
+
+heading
+   caption="Real and imaginary part of exponent d"
+endheading
+
+param exponent
+    caption="exponent"
+    default = (2,0)
+ endparam
+
+heading
+   caption="Selected means 1/c instead of c"
+endheading
+
+param inverse
+    caption="Inverse"
+    hint="means 1/c"
+    default=false
+endparam
+
+heading
+   caption="Bailout"
+endheading
+
+param diff
+    caption="Diff-Bailout"
+    default=false
+endparam
+
+param bailout
+  caption="bailout"
+  default=100.0
+endparam
+
+}
+
