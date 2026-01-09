@@ -1,13 +1,9 @@
-
-The file mcworter1.l does not overlap mcworter.l so should be a
-separate file.
-
-William
-
---------------33F299553F2
-Content-Type: text/plain; charset=us-ascii; name="mcworter1.l"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline; filename="mcworter1.l"
+; 
+; The file mcworter1.l does not overlap mcworter.l so should be a
+; separate file.
+; 
+; William
+; 
 
 Dragon0001 {
   Angle 4
@@ -550,10 +546,3 @@ Maze02 {
   y=fy+fyfx-fx-fxfy+fyfxfy+fy+fyfx-fx-
   f=
   }
-
-
-
-
---------------33F299553F2--
-
-

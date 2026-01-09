@@ -1203,5 +1203,3 @@ ADH121zzh { ; Anthony Hanmer 2000
   Axiom f+f+f+f+f
   f=+ff++f-f-ff+f
   }
-
-ADH121zzk 

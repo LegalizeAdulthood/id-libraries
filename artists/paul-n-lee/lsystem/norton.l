@@ -1,25 +1,25 @@
-From:	MX%"mcworter@midohio.net" 19-MAR-1997 11:01:52.17
-To:	MX%"noel@triumf.ca"
-CC:	
-Subj:	Oops!  Missing file Norton.l
-
-Return-Path: <mcworter@midohio.net>
-Received: from mail.midohio.net by REG.TRIUMF.CA (MX V4.0-1 VAX) with SMTP;
-          Wed, 19 Mar 1997 11:01:17 PST
-Received: from presario (modem23.midohio.net [206.31.169.122]) by
-          mail.midohio.net (8.8.4/8.7.3) with SMTP id OAA18149 for
-          <noel@triumf.ca>; Wed, 19 Mar 1997 14:01:11 -0500 (EST)
-Message-ID: <333046D8.37E8@midohio.net>
-Date: Wed, 19 Mar 1997 14:04:40 -0600
-From: "William A McWorter Jr." <mcworter@midohio.net>
-Reply-To: mcworter@midohio.net
-X-Mailer: Mozilla 3.01Gold (Win95; I)
-MIME-Version: 1.0
-To: NOEL_GIFFIN <noel@triumf.ca>
-Subject: Oops!  Missing file Norton.l
-Content-Type: text/plain; charset=us-ascii; name="Norton.l"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline; filename="Norton.l"
+; From:	MX%"mcworter@midohio.net" 19-MAR-1997 11:01:52.17
+; To:	MX%"noel@triumf.ca"
+; CC:	
+; Subj:	Oops!  Missing file Norton.l
+; 
+; Return-Path: <mcworter@midohio.net>
+; Received: from mail.midohio.net by REG.TRIUMF.CA (MX V4.0-1 VAX) with SMTP;
+;           Wed, 19 Mar 1997 11:01:17 PST
+; Received: from presario (modem23.midohio.net [206.31.169.122]) by
+;           mail.midohio.net (8.8.4/8.7.3) with SMTP id OAA18149 for
+;           <noel@triumf.ca>; Wed, 19 Mar 1997 14:01:11 -0500 (EST)
+; Message-ID: <333046D8.37E8@midohio.net>
+; Date: Wed, 19 Mar 1997 14:04:40 -0600
+; From: "William A McWorter Jr." <mcworter@midohio.net>
+; Reply-To: mcworter@midohio.net
+; X-Mailer: Mozilla 3.01Gold (Win95; I)
+; MIME-Version: 1.0
+; To: NOEL_GIFFIN <noel@triumf.ca>
+; Subject: Oops!  Missing file Norton.l
+; Content-Type: text/plain; charset=us-ascii; name="Norton.l"
+; Content-Transfer-Encoding: 7bit
+; Content-Disposition: inline; filename="Norton.l"
 
 Norton12 {
   Angle 4

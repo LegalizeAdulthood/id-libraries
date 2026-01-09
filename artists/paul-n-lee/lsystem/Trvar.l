@@ -1,31 +1,31 @@
-X-Originating-IP:  [212.72.143.2]
-X-Originating-Email:  [a_hanmer@hotmail.com]
-X-Sender:  a_hanmer@hotmail.com
-From:  "Tony (Anthony) Hanmer" <a_hanmer@hotmail.com>
-To:  fractint@mailman.xmission.com
-Date:  Wed, 28 Jan 2004 00:07:35 +0500
-Subject:  [Fractint] A couple more
-
-
-Another pair of small L-systems files I have included below in their 
-entirety are Trvar.l and TTiles.l.  The former is another set of my 
-variations on others' work - Trees, Bushes and Plants.  The latter contains 
-a few tiles I have found - some of which may be new, others not.  A few of 
-them are also mlr - multiple-layer redundant; in other words, they have 
-several layers of the same thing on top of each other, and are in need of 
-simplification to remove this extra unnecessary repetition.  But all of them 
-are interesting.  If any of the tiles are, in fact, my rediscoveries of 
-others' tiles, I'd like to be informed about it.
-
-Paste the files separately into a text editor and call them Trvar.l and 
-TTiles.l; then save them into your Fractint directory and you're ready to 
-use their contents as type Lsystem.
-
-Tony Hanmer
-Tbilisi, Republic of Georgia
-
-
-Trvar.l
+; X-Originating-IP:  [212.72.143.2]
+; X-Originating-Email:  [a_hanmer@hotmail.com]
+; X-Sender:  a_hanmer@hotmail.com
+; From:  "Tony (Anthony) Hanmer" <a_hanmer@hotmail.com>
+; To:  fractint@mailman.xmission.com
+; Date:  Wed, 28 Jan 2004 00:07:35 +0500
+; Subject:  [Fractint] A couple more
+; 
+; 
+; Another pair of small L-systems files I have included below in their 
+; entirety are Trvar.l and TTiles.l.  The former is another set of my 
+; variations on others' work - Trees, Bushes and Plants.  The latter contains 
+; a few tiles I have found - some of which may be new, others not.  A few of 
+; them are also mlr - multiple-layer redundant; in other words, they have 
+; several layers of the same thing on top of each other, and are in need of 
+; simplification to remove this extra unnecessary repetition.  But all of them 
+; are interesting.  If any of the tiles are, in fact, my rediscoveries of 
+; others' tiles, I'd like to be informed about it.
+; 
+; Paste the files separately into a text editor and call them Trvar.l and 
+; TTiles.l; then save them into your Fractint directory and you're ready to 
+; use their contents as type Lsystem.
+; 
+; Tony Hanmer
+; Tbilisi, Republic of Georgia
+; 
+; 
+; Trvar.l
 
 _README    { ;   Anthony Hanmer 2001
   angle 4    ;   Variations on Trees, Bushes and Plants
@@ -751,5 +751,3 @@ Bush07a   { ; adapted from Adrian Mariano's Bush, Anthony Hanmer 2001
   Axiom [F]++[F]++[F]
   F=FF--[-F+G+F]++[+F-G-F]
   }
-
-==========================================================================

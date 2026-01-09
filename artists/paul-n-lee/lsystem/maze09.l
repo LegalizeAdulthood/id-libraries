@@ -1,8 +1,8 @@
-This last posting for now should be called Maze09.l
-(They're all variations on William McWorter's Maze09, and playing with only 
-the top half gave me the inspiration for Horizons.)
-
-Tony Hanmer
+; This last posting for now should be called Maze09.l
+; (They're all variations on William McWorter's Maze09, and playing with only 
+; the top half gave me the inspiration for Horizons.)
+; 
+; Tony Hanmer
 
 T184 { ; Anthony Hanmer 2000
   Angle 8 ; Looking to William McWorter's Maze09

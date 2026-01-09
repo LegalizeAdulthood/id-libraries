@@ -1,34 +1,29 @@
-From:	MX%"mcworter@midohio.net" 18-APR-1997 08:16:14.44
-To:	MX%"noel@triumf.ca"
-CC:	
-Subj:	Gary Teachout's lsystems
-
-Return-Path: <mcworter@midohio.net>
-Received: from mail.midohio.net by REG.TRIUMF.CA (MX V4.0-1 VAX) with SMTP;
-          Fri, 18 Apr 1997 08:16:11 PST
-Received: from presario (modem1.midohio.net [206.31.169.100]) by
-          mail.midohio.net (8.8.4/8.7.3) with SMTP id LAA29117 for
-          <noel@triumf.ca>; Fri, 18 Apr 1997 11:16:11 -0400 (EDT)
-Message-ID: <33579F23.2AB9@midohio.net>
-Date: Fri, 18 Apr 1997 11:19:47 -0500
-From: "William A McWorter Jr." <mcworter@midohio.net>
-Reply-To: mcworter@midohio.net
-X-Mailer: Mozilla 3.01Gold (Win95; I)
-MIME-Version: 1.0
-To: NOEL_GIFFIN <noel@triumf.ca>
-Subject: Gary Teachout's lsystems
-Content-Type: multipart/mixed; boundary="------------33F299553F2"
-
-
-Some of Gary's lsystems are so weird I added some of his comments in
-hopes somebody might understand what he's talking about.  His plant-like
-lsystems grow very very slowly but look more realistic than others I
-have seen.
-
-===============================================================
-Content-Type: text/plain; charset=us-ascii; name="teachout.l"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline; filename="teachout.l"
+; From:	MX%"mcworter@midohio.net" 18-APR-1997 08:16:14.44
+; To:	MX%"noel@triumf.ca"
+; CC:	
+; Subj:	Gary Teachout's lsystems
+; 
+; Return-Path: <mcworter@midohio.net>
+; Received: from mail.midohio.net by REG.TRIUMF.CA (MX V4.0-1 VAX) with SMTP;
+;           Fri, 18 Apr 1997 08:16:11 PST
+; Received: from presario (modem1.midohio.net [206.31.169.100]) by
+;           mail.midohio.net (8.8.4/8.7.3) with SMTP id LAA29117 for
+;           <noel@triumf.ca>; Fri, 18 Apr 1997 11:16:11 -0400 (EDT)
+; Message-ID: <33579F23.2AB9@midohio.net>
+; Date: Fri, 18 Apr 1997 11:19:47 -0500
+; From: "William A McWorter Jr." <mcworter@midohio.net>
+; Reply-To: mcworter@midohio.net
+; X-Mailer: Mozilla 3.01Gold (Win95; I)
+; MIME-Version: 1.0
+; To: NOEL_GIFFIN <noel@triumf.ca>
+; Subject: Gary Teachout's lsystems
+; 
+; 
+; Some of Gary's lsystems are so weird I added some of his comments in
+; hopes somebody might understand what he's talking about.  His plant-like
+; lsystems grow very very slowly but look more realistic than others I
+; have seen.
+; 
 
 ; Gary Teachout's lsystems converted to Fractint lsystem syntax by William McWorter
 ; Those lsystems with a * by Gary's name were written by Gary.

@@ -1,0 +1,45 @@
+ManJul_01          { ;  (c) Paul N. Lee -- Jul 06, 1998 - 09:08:22
+                     ; time=  0:00:18.67 on a P-200 at 640x480
+                     ; Video=SF5 using 1960.0
+                     ;   
+  reset=1960 type=formula formulafile=_m.frm formulaname=MandelJulia
+  passes=t center-mag=-0.497431/-1.1535e-005/0.7473781 params=0/0
+  maxiter=250 inside=bof60 outside=atan
+  colors=000<29>000000200<29>zKU<30>211000000<14>000010030<29>0z0<30>02000\
+  0000<14>000110330<29>zz0<30>220000000
+  }
+
+
+Ear_Ring_Closeup   { ;  (c) Paul N. Lee -- Nov 03, 2003 - 08:44:37
+                     ; time=  0:00:26.04 on a PIII-700 at 640x480
+                     ; Video=SF5 using FractInt 2002.5
+                     ;
+  reset=2002 type=formula formulafile=_test.par
+  formulaname=mandelbrotmix4 function=ident passes=1
+  center-mag=-2.03607159692995100/-0.01072338598387152/4498.015/-1/317.499\
+  994109255397/8.18553266331012441e-006 params=1/2.03/-0.2/2.97/0/0
+  float=y maxiter=5000 inside=0 proximity=0.4 outside=fmod
+  periodicity=10 sound=off
+  colors=000Kph<3>IhhHfiHdi<3>E_iEZjE_iI`gLaeGcYSdU<3>ekEilAlm1mm4ll6<6>hW\
+  MhUOgSQ<3>eIZeF`dDb<2>c5ib3kc0lb1m<22>NGRMGQLHP<3>JJMJJLNJO<3>`HZcH`gGc<\
+  3>tFnwFptGm<6>cHWaHTZHRWIO<3>MIEKJBHJ8FJ6CJ3AJ1<3>7H46H56G55G65G6<3>XKY_\
+  NabKc_HdWEeCBf38g<13>T6LV6JX6I<3>d6Bg10<3>bLaaQjZPi<5>LKdJKcGJb<3>8GZ6GZ\
+  3FY1EX<3>K`iPflTko<4>LYXJVTHSP<3>BH9AF6AHB<3>ANVAP_ARd<2>AVr<3>NLlRJjUGi\
+  XEg_Cf<4>eBZfBXgAV<3>kAPlANnAMo9Kp9I`VGbUF<12>Q_LP_LO`M<3>KaOJaOIbPHbPGc\
+  QFcQGbK<4>Dej5TwDeoMugLsh
+  }
+
+
+Variation_Emp08    { ;  (c) Paul N. Lee -- Feb 15, 2004 - 15:10:01 
+                     ; time=  0:00:04.45 on a PIII-700 at 640x480 
+                     ; Video=SF5 using FractInt 2003.0 
+                     ;  
+  reset=2003 type=fn+fn function=tan/tanh
+  center-mag=0.0127236/-0.00552536/0.377365 params=7/7/7/7 float=y
+  bailoutest=and inside=maxiter potential=255/400/16 invert=0.23/0/0
+  colors=000320<3>941A51D62<15>gVHiXIkYJ<3>sdNufOteN<20>UH9SG9RF8PE7OD6<3>\
+  I83B62589<26>BIKBIKCIK<2>CJLDKMCJL<3>AFH9EF8DE<3>589_G0<2>bL4dN6eP8fQAgS\
+  C<6>ocOpeQqgR<2>tlXvnZumY<11>hTDgSCfQAeP8dN6<3>_G0FC8DB7B96<14>CHICIJCIK\
+  <3>DKMDKMDKM<5>AEG9DF8CE<3>589000<30>000<3>000111222<3>57968A6AC<3>AFIBH\
+  JCILDKM<3>AEG9DF8CE7BC6AB<5>122010000000210
+  }

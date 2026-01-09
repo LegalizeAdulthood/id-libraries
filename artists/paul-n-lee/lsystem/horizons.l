@@ -3,7 +3,7 @@
 ;If there are any long lines which have been cut into 2, you should restore 
 ;these to single lines in a text editor.
 ;
-Tony Hanmer
+; Tony Hanmer
 
 README {   ; These l-systems, which I have called "Horizons", are all based on
   Angle 8  ; a horizontal line of length 2-5 segments, with a"growth" up off
@@ -1168,3 +1168,4 @@ ADH355a { ; Anthony Hanmer 2000
   Angle 4 ;
   Axiom f++f
   f=f+
+}

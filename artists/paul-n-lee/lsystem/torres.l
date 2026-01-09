@@ -1,27 +1,24 @@
+; 
+; Spiral L-systems Jose Torres Torres 1998
+;
 
-Spiral L-systems José Torres Torres 1998
-
-espiral2
-{
+espiral2 {
   Angle 46
   Axiom X
   X=X>1G+@.997X[+++FF]
   }
 
-espiral3
-{
+espiral3 {
   Angle 49
   Axiom X
   X=XG+@.98X[-----------FFFFFFF]
   }
-espiral4
-{
+espiral4 {
   Angle 49
   Axiom X
   X=XG+@.99X[-----------F+F+F+F+F+F]
   }
-1Nautilus 
-{ ;Nautilus tipo primitivo
+1Nautilus { ;Nautilus tipo primitivo
   Angle 49
   Axiom X
   X=XG+@.987X[-------------F+F+F++F+++F++++F+++++F++++++F]
@@ -63,46 +60,40 @@ X=X<1G+@.9879X[\120<1F-<1F-<1F-<1F-<1F-<1F/120+<1F+<1F+<1F+++++++<1F+<1F+<1F]
   B=\2++++++++++++++FF+FF+FF+FF+FF
   }
 
-1heptagon 
-  {
+1heptagon {
   angle 7
   Axiom +[X]+[X]+[X]+[X]+[X]+[X]+[X]
   X=F-[>1@.4X]+[>1@.4X]+[>1@.4X]
   }
 
-1Hexagon
-  {
+1Hexagon {
   ANGLE 6
   Axiom +[X]+[X]+[X]+[X]+[X]+[X]
   X=F-[>1@.4X]-[>1@.25X]++[>1@.4X]+[>1@.4X]+[>1@.25X]
   }
 
-1SPIRAL
-  {    ;LOGARITHMIC SPIRAL 3 BRANCHES
+1SPIRAL {    ;LOGARITHMIC SPIRAL 3 BRANCHES
   ANGLE 36
   AXIOM ++++++++++++[X]++++++++++++[X]++++++++++++[X]
   X=>1F[+@.95X][+++++@.4Y]+@.95G
   Y=>1F[+@.95Y]
   }
 
-2SPIRAL
-  {    ;LOGARITHMIC SPIRAL 3 BRANCHES 
+2SPIRAL {    ;LOGARITHMIC SPIRAL 3 BRANCHES 
   ANGLE 36
   AXIOM ++++++++++++[X]++++++++++++[X]++++++++++++[X]
   X=>1F[+@.95X][+++++@.6Y]+@.95G
   Y=Y>1+@.95F
   }
 
-3SPIRAL
-  {    ;ANOTHER TYPE
+3SPIRAL {    ;ANOTHER TYPE
   ANGLE 42
   AXIOM ++++++++++++++[X]++++++++++++++[X]++++++++++++++[X]
   X=>1F[+@.95X][++++++++@.4Y]+@.95G
   Y=>1F[+@.95Y]
   }
 
-4SPIRALS
-  { 
+4SPIRALS { 
   ANGLE 42
   AXIOM ++++++++++++++[X]++++++++++++++[X]++++++++++++++[X]
   X=>1F[+@.95X][++++++++@.4Y]+@.95G
@@ -110,8 +101,7 @@ X=X<1G+@.9879X[\120<1F-<1F-<1F-<1F-<1F-<1F/120+<1F+<1F+<1F+++++++<1F+<1F+<1F]
   Z=>1F[+@.95X]
   
   }
-LEAF
-  { 
+LEAF { 
   ;THE VERY COMPLEX SELF-RECURSIVE
   ;LEAF FRACTAL BY JOSE TORRES 1998
   ;'DO NOT RECOMMEND GOING FURTHER THAN ORDER 30
@@ -121,8 +111,7 @@ LEAF
   Y=>1F[+@.95Y][++++++++@.4X]+@.95G
   }
 
-LEAF_REVERSE
-  { 
+LEAF_REVERSE { 
   ;THE VERY COMPLEX SELF-RECURSIVE
   ;LEAF FRACTAL BY JOSE TORRES 1998
   ;'DO NOT RECOMMEND GOING FURTHER THAN ORDER 30
@@ -132,8 +121,7 @@ LEAF_REVERSE
   Y=>1F[+@.95Y][--------@.4X]+@.95G
   }
 
-LEAF_DOUBLE
-  { 
+LEAF_DOUBLE { 
   ;THE VERY COMPLEX SELF-RECURSIVE
   ;LEAF FRACTAL BY JOSE TORRES 1998
   ;'DO NOT RECOMMEND GOING FURTHER THAN ORDER 20
@@ -144,8 +132,7 @@ LEAF_DOUBLE
   }
 
 
-LEAF_L6
-  { ;Reduced complexity set to 6 levels
+LEAF_L6 { ;Reduced complexity set to 6 levels
     ;Order 40-50 can be easily achieved
   ANGLE 42
   AXIOM X
@@ -157,8 +144,7 @@ LEAF_L6
   W=>1F[+@.95W]
   }
 
-LEAF_L6ALTERN
-  { ;Reduced complexity set to 5 levels
+LEAF_L6ALTERN { ;Reduced complexity set to 5 levels
     ;Order 40-50 can be easily achieved
   ANGLE 42
   AXIOM X
@@ -171,8 +157,7 @@ LEAF_L6ALTERN
   }
 
 
-LEAF_L5
-  { ;Reduced complexity set to 5 levels
+LEAF_L5 { ;Reduced complexity set to 5 levels
     ;Order 60-70 can be easily achieved
   ANGLE 42
   AXIOM X
@@ -183,8 +168,7 @@ LEAF_L5
   W=>1F[+@.95W]
   }
 
-LEAF_L4
-  { ;Reduced complexity set to 4 levels
+LEAF_L4 { ;Reduced complexity set to 4 levels
     ;Order >70 can be easily achieved
   ANGLE 42
   AXIOM X
@@ -194,8 +178,7 @@ LEAF_L4
   U=>1F+@.95U
   }
 
-LEAF_L3
-  { ;Reduced complexity set to 3 levels
+LEAF_L3 { ;Reduced complexity set to 3 levels
     ;I reached order 94 in a short time
     ;for higher orders I had out of memory error
   ANGLE 42

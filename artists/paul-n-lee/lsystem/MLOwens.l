@@ -1,15 +1,15 @@
-List-Id:  Fractint and General Fractals Discussion <fractint.mailman.xmission.com>
-Date:  Sun, 17 Mar 2002 19:25:45 +1200
-
-An exhibition of one approach to interpolating between successive 
-iterations of an L-system. Others are certainly possible (and, as 
-illustrated by SquareTiling, desirable.)
-
-Morgan L. Owens
-
-"These are rather jerky, unilluminating animations [of iterations of the 
-Hilbert curve] since the process is discrete - there are no possible 
-intermediate frames."
+; List-Id:  Fractint and General Fractals Discussion <fractint.mailman.xmission.com>
+; Date:  Sun, 17 Mar 2002 19:25:45 +1200
+; 
+; An exhibition of one approach to interpolating between successive 
+; iterations of an L-system. Others are certainly possible (and, as 
+; illustrated by SquareTiling, desirable.)
+; 
+; Morgan L. Owens
+; 
+; "These are rather jerky, unilluminating animations [of iterations of the 
+; Hilbert curve] since the process is discrete - there are no possible 
+; intermediate frames."
 
 KochCurve{
 Angle 6

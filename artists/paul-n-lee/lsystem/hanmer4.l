@@ -1264,16 +1264,3 @@ ADH184 { ; Anthony Hanmer 2000
   Axiom f
   f=f-ff-f+f+ff+f
   }
-
-
-______________________________________________________
-Get Your Private, Free Email at http://www.hotmail.com
-
-
---------------------------------------------------------------
-Thanks for using Fractint, The Fractals and Fractint Discussion List
-Post Message:   fractint@lists.xmission.com
-Get Commands:   majordomo@lists.xmission.com "help"
-Administrator:  twegner@fractint.org
-Unsubscribe:    majordomo@lists.xmission.com "unsubscribe fractint"
-

@@ -1,7 +1,7 @@
-Content-Type: text/plain; charset=us-ascii; name="Dekking.l"
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline; filename="Dekking.l"
-
+; Content-Type: text/plain; charset=us-ascii; name="Dekking.l"
+; Content-Transfer-Encoding: 7bit
+; Content-Disposition: inline; filename="Dekking.l"
+; 
 ; Dekking's L-systems translated for FRACTINT
 ; All translation errors due to William McWorter
 

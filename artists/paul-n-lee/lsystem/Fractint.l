@@ -589,4 +589,3 @@ Lace { ; From Ivan Daunis daunis@teleline.es
   Axiom F++F++F++F
   F=F+++F---F+F---F++F--F++F
 }
-
