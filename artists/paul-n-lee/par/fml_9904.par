@@ -1,0 +1,253 @@
+; fml9904a.par, a collection of pars posted to the 
+; Fractint Fractal Art mail lists during April 1999
+; (excluding Jim Muth's F.O.T.D., which is collected separately)
+; compiled by Les St Clair <les_stclair@compuserve.com>
+
+
+;Part 1 Fractint Mail List
+;========================================================================;
+;Date: 01 Apr 1999 10:57:50 +0200
+;From: "Randall Britten" <randall@is.co.za>
+;Subject: RE: (fractint) Julia set params
+
+Minibrot1          {
+  reset=1960 type=mandel center-mag=-0.158547/1.03401/99.7004
+  params=0/0 maxiter=2000
+  }
+
+MiniSanMarco1   {
+  reset=1960 type=julia center-mag=0.00635933/-0.00909876/10.35182
+  params=-0.1613432317972183/1.036044612526894 maxiter=2000
+  }
+
+circle_MiniJulia1   {
+  reset=1960 type=julia center-mag=1.095e-007/1.005e-007/4.901962
+  params=-0.1556614693254232/1.03176917694509 maxiter=2000
+}
+
+;========================================================================;
+;Date: 03 Apr 1999 11:08:30 EST
+;From: PKyleCA@aol.com
+;Subject: (fractint) Easter Egg Par
+
+Easteregg          { ; (C) 1999 P. Kyle  
+                     ; Easter Egg
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  center-mag=-7455.29/-7455.39/0.0001798271/1/44.999
+  params=0.1300804/0/2.71828182845905/0.01 float=y maxiter=647
+  inside=maxiter outside=real logmode=fly potential=255/334/0
+  invert=6/0/0
+  colors=110<46>00z<30>112110332<30>zzz<30>222000002<30>00z<30>002000110<4\
+  6>zz0
+  }
+
+Gremlin            { ; (C) 1999 P. Kyle  Mod of Moire Mask
+                     ; Gremlin
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  center-mag=1359.77/1359.98/8.336354e-005/1/44.999
+  params=0.13081/0/2.71828182845905/0.01 float=y maxiter=647
+  inside=maxiter outside=real logmode=fly potential=255/334/0
+  invert=6/0/0
+  colors=110<46>00z<30>112110332<30>zzz<30>222000002<30>00z<30>002000110<4\
+  6>zz0
+  }
+
+pleased            { ; (C) 1999 P. Kyle  Mod of Moire Mask
+                     ; pleased
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  center-mag=1359.77/1359.98/8.336354e-005/1/44.999
+  params=0.130789/0/2.71828182845905/0.01 float=y maxiter=647
+  inside=maxiter outside=real logmode=fly potential=255/334/0
+  invert=6/0/0
+  colors=110<46>00z<30>112110332<30>zzz<30>222000002<30>00z<30>002000110<4\
+  6>zz0
+  }
+
+SonicSpider        { ; (C) 1999 P. Kyle  Mod of Moire Mask
+                     ; Sonic Spider
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  center-mag=2.27374e-012/0.163402/5.035158e-005/1/44.998
+  params=0.130901/0/2.71828182845905/0.01 float=y maxiter=647
+  inside=maxiter outside=real logmode=fly potential=255/334/0
+  invert=6/0/0
+  colors=110<46>00z<30>112110332<30>zzz<30>222000002<30>00z<30>002000110<4\
+  6>zz0
+  }
+
+;========================================================================;
+;Date: 12 Apr 1999 18:25:59 EDT
+;From: Genealogy1@aol.com
+;Subject: (fractint) An interesting effect...
+
+Carr3416            { ; A most interesting effect.
+                     ; Copyright 1999 Robert W. Carr
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Carr3416
+  passes=1 center-mag=0.0010622/-0.169487/0.8293096/1/180
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  colors=000000<13>AFHBGMEJPIMR000OSW<11>zzz<14>WWWUUUTTT<14>000<15>apz<12\
+  >000<10>zpa<6>_SMWPKTKNPGPMBSI7U<10>102000000<14>wo`<15>`00<15>000WOG<13\
+  >zo`<15>UMFWLE<13>`Ft`Fw_Et<12>L7UK7SH7UGBVFFW<13>2fx
+  }
+
+;========================================================================;
+Date: 13 Apr 1999 09:35:19 -0400
+From: Lee Skinner <LeeHSkinner@compuserve.com>
+Subject: (fractint) An interestin
+
+Carr3416_5         { ;                                       t=  0:28:01.07
+                     ; on a P233 at 1600x1200  Apr 13, 1999  07:33:37
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1960
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=carr3416 passes=1
+  center-mag=-0.00000319254152692/+0.08639684897955899/67.0551/1/180
+  params=200/300/400/550 float=y maxiter=647 symmetry=none
+  periodicity=0
+  colors=0000Tp<5>z80<2>b50V30N20F00A00500000023057kbs<7>000220457<12>Xcr<\
+  14>33400000500A<4>07D08E2BD<9>We0<8>9E96AB47A1490004409NWCHRDHJEHAGH1GQ1\
+  GZ2<2>Xh0bkA<3>zzz<3>lprhmoeln<10>0ch0ae0Zb<3>22R<2>33I44F45C56933500000\
+  0400<2>A00C00C00D00000F00<4>J00<2>c30k50r60z80yA0<2>uJ0<4>07A<2>0FM<8>gl\
+  6lo5ps3uv2zz0<10>`00<7>zyn<8>yUF<7>x4R<9>K7TG7UC5M83F42763A00G022<4>0GG0\
+  JY0MM0P00M24L0<4>OXe<3>5Um
+  }
+
+;========================================================================;
+Date: 15 Apr 1999 14:20:50 GMT
+From: "Andrew Coppin" <KHCM8AC@dmu.ac.uk>
+Subject: (fractint) Benchmark
+
+ArbTest1           { ; Major M-Set Zoom
+                     ; Arbitrary Precision: 17 decimals!
+                     ; Use it to test CPU usage!
+  reset=1960 type=mandel
+  center-mag=-1.76863032411305468/0.001309533846159061/2.095308e+013
+  params=0/0 float=y maxiter=65536 inside=255 passes=g 
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+;========================================================================;
+Date: 19 Apr 1999 21:42:08 -0500
+From: Bob Margolis <rttyman@wwa.com>
+Subject: (fractint) Par for the course
+
+Pollen             { ; (c) 1999 by Bob Margolis
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=euler2_3way function=tan/log/flip passes=t
+  center-mag=0.001899/0.00478142/0.4533049/1.0626
+  params=24/0/0.083/0/4096/0 float=y maxiter=2095 inside=254
+  outside=summ invert=1.31625778434854/0/0 distest=-1/-1/768/768
+  symmetry=xyaxis viewwindows=1/1/yes/0/0
+  colors=000<23>ZVk`XmaYoc_qbYq<13>D4g<12>TNmUPnUPnUPnCMC<14>C_OC_OCZN<13>\
+  CMC_x0<13>ry3tz4sz4<14>_x0000<131>000 cyclerange=1/1
+  }
+
+;========================================================================;
+Date: 20 Apr 1999 12:50:10 +0200
+From: "Randall Britten" <randall@is.co.za>
+Subject: RE: (fractint) Julia set params
+
+julia_2connectedq  {
+  reset=1821 type=julia corners=-2/2/-1.5/1.5
+  params=-0.81103199999999998/-0.090216000000000005
+  }
+
+julia_connectedq   {
+  reset=1960 type=julia center-mag=0/0/0.6666667
+  params=-0.75602743988599674/0.051815543993670818 float=y
+  maxiter=1000
+  }
+;========================================================================;
+
+
+;Part 2 Fractal Art Mail List
+;========================================================================;
+;Date: Sun, 18 Apr 1999 18:30:41 -0700
+;From: "Jay Hill" <ehill1@san.rr.com>
+;Subject: [fractal-art] F.O.T.N. April 18, 1999 (Galaxy Far Away) 
+
+Galaxies_Far_Away  { ; (C) Jay Hill,1999
+  reset=1960 type=mandel
+  center-mag=-1.00545213045843400/+0.25050670255640950\
+  /41032.5/1/-90 params=0/0 float=y maxiter=32500 inside=0
+  logmap=143 periodicity=4
+  colors=wcKECE<106>JJRKJRKJRKJSKKSKKS\
+  <26>QQ`RR`RR`RR`RR`RRa<59>__k__k``la\
+  al<44>mmzCs_CsY
+  savename=Galxifar
+  }
+
+;========================================================================;
+;Date: Tue, 20 Apr 1999 23:23:00 -0400
+;From: "Morgen Bell" <morgenb@cobweb.net>
+;Subject: [fractal-art] stripes!
+
+Stripes            {
+  reset=1960 type=mandel
+  center-mag=-0.78228614447404850/-0.14841394599001760/2.479512e+011
+  params=0/0 float=y maxiter=1000
+  colors=0A0B4_t_A90`oVE<3>fLN<13>6RF9PF0SD8NF0VF8LF0ZG7KE0aI7IE0eK6GE2aM5\
+  ED5YO5DD7UQ4BDAQS49CCLU37CDNT26CFPS24BGSQ12BIUP00AKWN<13>VlDWnCVmCUkCTjB\
+  ThCRgBSeDPcARbDN`9P_ELY8OWEJV8NTFHS7LQFFO6KNGDL5JKGBI5HGH9F4GDH7C3FAI582\
+  D7I352C4J121A0K2325758B8588EIE5ACKPK5BFQXQ4DJWcW4ENaka4GQgrg3HUmzm3JYgsh\
+  3K``lb2MdUeY2NhOZS2PkHSN1QoALH1Ss4EB0Uw0A1<15>2FJ2FK2HL3GM3JN3GO3MP3HR4O\
+  R4IT4QT4IV5TV4JX5VX5K_6XZ5KZ6_`5KY7ab6KW7cd6JV8ff6JT8hh7JS9jj7IQAmm8IP8I\
+  O8IO8KO8HM8MN9HL8OM9HJ8QL9GI8TKAGG8VJAGF8XIBFD9ZHBHE9`GBKF9cFANG9eEAQI9g\
+  DATJ9iC9WK9kB9_MAmA8aN<17>QkQOhQSlQNeRUnRMbSWoRL_SYpRKWT_qSJTUarSIQVctTH\
+  NVgrPGKWkoKFGXomGEDYsjBDAYwh7C7Zxd6
+  }
+
+;========================================================================;
+;Date: Fri, 23 Apr 1999 22:57:17 -0700
+;From: "Jay Hill" <ehill1@san.rr.com>
+;Subject: [fractal-art] F.O.T.N.  April 23, 1999 (Flame War?)
+
+Fractal_Dragon_duh { ; (C) Jay Hill, 1999
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=mandelbrotmix4a function=recip
+  center-mag=-0.20964498118971530/-0.04467171806844821/\
+  5959.603/1/-62.499
+  params=0.06/5/6/-0.05/0/0 float=y maxiter=2560 bailout=25
+  inside=bof60 logmap=13 symmetry=xaxis periodicity=10
+  colors=000<9>rRa<12>qXWwOW<10>zaRoaR\
+  <11>mfLmfLmfM<98>PxwPxwPww<101>RPZWT\
+  X`XW
+  savename=Dragonda
+  }
+
+;========================================================================;
+;Date: Sun, 25 Apr 1999 22:25:31 -0700
+;From: "Jay Hill" <ehill1@san.rr.com>
+;Subject: [fractal-art] F.O.T.N. April 25, 1999 (A Star, a Comet, a...) 
+
+Star_Comet_        { ; (C) Jay Hill, 1999
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=ok-20 function=sin/cos passes=2
+  center-mag=-0.117387/-0.00685679/5.631059/1/19.999
+  params=0/0 float=y maxiter=2560
+  inside=254 logmap=7 periodicity=0
+  colors=000<9>116227227338338<19>77L8\
+  8M88M88M<3>A8NB8NC9OD9OE9OF9O<6>GBQG\
+  BQFCR<9>EETEETFFT<4>GGTGGTGGTHHTHHTH\
+  HT<4>JJTJJTJJTJJTJJT<12>OOVOOVOOVOOV\
+  PPV<38>YYYZZZZZZ_ZZ_ZZ<11>faagbbgbbg\
+  bb<4>fcceddfed<22>qmjqmjqmjqmjqmk<26\
+  >qqqrrrrrrssssss<26>zzz000000
+  }
+
+;========================================================================;
+Date: Mon, 26 Apr 1999 16:17:06 -0400
+From: "Morgen Bell" <morgenb@cobweb.net>
+Subject: [fractal-art] Art? What art? (some parameters)
+
+Claude Monet       { ; impressionistic, no?
+  reset=1960 type=mandel(fn||fn) function=sin/sqr passes=1
+  center-mag=-0.43761139859929620/-0.02030777864241280/44.33827/1/0.386/0.\
+  004 params=0/0/0.5 float=y inside=0 outside=real
+  colors=0009bf<13>MoIAcA<5>RoAUrAVpC<6>dXThRYmKc<2>mAK<2>mKcjKcfKc<2>gPdg\
+  QdhSdiUd<9>oldpndqpdrreio_`lU<2>AcA<3>UrK<4>PjI<4>0YZ<6>0Kb0Hc0Hb<5>0IX0\
+  JW0JV0KU1LV<12>Kcm<4>06M<2>00P<7>0B90D70C7<5>008<28>_qh`sjaukcwmbvl<27>4\
+  PK3OJ2NI0LG0MF0NE<11>0a30c20c3<29>0Uu0Uw1Vu<7>8ah
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

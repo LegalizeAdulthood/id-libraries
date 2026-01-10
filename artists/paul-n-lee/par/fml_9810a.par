@@ -1,0 +1,4208 @@
+; fml9810a.par, a collection of pars posted to the Fractint mail list
+; during October 1998 (annotated version!)
+; compiled by Les St Clair <les_stclair@compuserve.com>
+
+;========================================================================;
+;Date: Fri, 2 Oct 1998 17:51:47 +0200
+;From: Joe Pearson <joe.pearson@didata.co.za>
+;Subject: (fractint) Currency crisis
+
+I had several versions of this entry.  The one I finally picked didn't
+get any votes (although it did get the comment
+Are you perchance a resident of one of those countries that has 
+recently undergone this? ;-)
+- exactly!  Although they are not the actual gold coin, the Krugerrand,
+because the gold price has held up fairly well.)
+
+I picked it because of the way all the gold discs vanish into a black
+hole in the middle, but my wife thinks it's the worst one.  It's the
+last of the following pars: the first 5 are variations on the colouring
+on a different part of the fractal.  Comments anyone?
+
+A small credit: the colour values are cribbed from Wizzle.  The placing
+is my own hard work.
+
+Joe
+
+Coins1             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:14.64
+                     ; two colour bands, dark at top
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=-0.00042725/-4.3175/0.9309752/1.0001 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=vq_<89>OB3OB3PC4<87>vq_K60<46>yubzwcyvb<23>`RF000
+  cyclerange=0/180
+  savename=Coins1.gif }
+
+Coins2             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:14.64
+                     ; six colour bands
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=-0.00117493/-4.3175/0.9309752/1.0001 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=vq_<27>QD5OB3PC4<26>toYvq_upZ<28>QD5\
+  OB3PC4<28>toYvq_upZ<27>QD5OB3\
+  PC4<26>toYvq_vq_w00<72>w00000 cyclerange=0/180
+  savename=Coins2.gif }
+
+Coins3             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:14.64
+                     ; eight colour bands
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=-0.00042725/-4.3175/0.9309752/1.0001 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=vq_<20>QD5OB3PC4<20>vq_<21>QD5OB3PC4<20>\
+  vq_<22>QD5OB3PC4<20>vq_<2\
+  1>QD5OB3PD4<18>tnYvq_vq_w00<72>w00000 cyclerange=0/180
+  savename=Coins3.gif }
+
+Coins4             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:14.64
+                     ; two colour bands, light at top
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=0.00042725/-4.3175/0.9309752/1.0001 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=OB3<87>vq_vq_vq_vq_vq_<87>OB3K60<46>yubzwcyvb<23>`RF000
+  cyclerange=0/180
+  savename=Coins4.gif }
+
+Coins5             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:14.64
+                     ; four colour bands
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=0.00032043/-4.3175/0.9309752/1.0001 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=vq_<43>OB3OB3PC4<42>vq_vq_upZ<43>\
+  OB3OB3PC4<42>vq_K60<46>yubzwcyvb\
+  <23>`RF000 cyclerange=0/180
+  savename=Coins5.gif }
+
+Coins6             { ; (c) Joe Pearson Oct 02, 1998 t=  0:01:59.64
+  reset=1960 type=fn*fn function=cosh/recip
+  center-mag=+0.00403595000000000/-4.00337982500000000/10.5321/0.9974
+  maxiter=10000 bailout=2000 inside=255 outside=atan
+  colors=OB3<87>vq_vq_vq_vq_vq_<87>OB3K60<46>yubzwcyvb<23>`RF000
+  cyclerange=0/180
+  savename=Coins6.gif }
+
+Coins7             { ; (c) Joe Pearson Oct 02, 1998 t=  0:06:49.09
+  reset=1960 type=fn*fn function=cosh/recip passes=2
+  center-mag=0.00384522/-6.15792/1.174217/0.9999 maxiter=10000
+  bailout=2000 inside=255 outside=atan 
+  colors=OB3<87>vq_vq_vq_vq_vq_<87>OB3K60<46>yubzwcyvb<23>`RF000
+  cyclerange=0/180
+  savename=Coins7.gif }
+
+;========================================================================;
+;Date: Fri, 2 Oct 1998 17:56:37 +0200
+;From: Joe Pearson <joe.pearson@didata.co.za>
+;Subject: (fractint) Cactuses
+
+I was surprised to see three cactus images in the contest, Sunset in
+Mexico I/II and Lucy's Skyline.  Not such a coincidence in itself except
+that I nearly submitted a very similar image:
+
+Peyote_at_Sunset   { ; (c) Joe Pearson Sep 01, 1998 t=  0:00:25.10
+                     ; time on P-233 at 800x600
+                     ; 
+  reset=1960 type=mandel
+  center-mag=-0.639602/-0.455735/17.49652/1/-129.999 params=0.2/0.2
+  maxiter=2000 inside=255 logmap=21
+  colors=00005K<17>4AV4BW4BX4CY4CY<16>8Ii9Ij9Ij9Ij<106>wm0wm0wl0<52>y70z60\
+  y60<45>U00102480
+  savename=Peyote.gif }
+
+Joe
+
+;========================================================================;
+;Date: Fri, 2 Oct 1998 14:00:47 -0400
+;From: "Peter Gavin" <pgavin@mindspring.com>
+;Subject: RE: (fractint) Fractal Art '98 Contest Results
+
+Joe Pearson wrote:
+    // Actually the Mandelbrot set is *exactly* as interesting as
+    // all the Julia
+    // sets combined!
+    // Benoit Mandelbrot discovered the set as a visual index to
+    // all the Julia
+    // sets, and it is mathematically true that any small area of the
+    // Mandelbrot set resembles a corresponding area of a
+    // corresponding Julia
+    // set.  (Maybe some of the list members who were not so lazy
+    // as to give up
+    // maths at the age of 22 can explain more.)
+
+Actually, I understand the reasoning, but I never really thought about it
+that way...  That's kinda funny :)  Well, a tiny area of the Mandelbrot set
+corresponds to a Julia Set whose 'c' parameter is the coordinates of that
+area in the Mandelbrot set.  (The _whole_ julia set, not just a tiny part...
+That's because Julia sets are so regularly self similar.)
+
+    //
+    // Please post the parameters.  I would love to know how you got those
+    // ridges!
+    //
+
+Here ya go:
+
+Pulsar             { ; From the 1998 Fractal-Art Contest
+  reset=1960 type=mandel passes=3
+  center-mag=-0.63675434661386580785279951667771/0.68503129706430345443080\
+  495454699/1.478565e+027 params=0/0 float=y maxiter=65536 inside=0
+  outside=summ logmap=280 symmetry=none periodicity=8
+  colors=000000<11>kOz<7>vnz<3>kOz<5>000<7>0So<7>krx<7>0So<7>000<7>zkC<6>z\
+  uczwgzvc<6>zkC<7>000<7>z00<7>zkk<7>z00<7>000<46>jjxkkzkkz<78>zzz
+  savename=Pulsar.gif }
+
+Octobrot           { ; From the 1998 Fractal-Art Contest
+  reset=1960 type=mandel passes=3
+  center-mag=-0.20946935454112780/+1.11185604439279200/1.365555e+012
+  params=0/0 float=y maxiter=65536 inside=0 outside=summ logmap=388
+  symmetry=none periodicity=8
+  colors=000000<11>kOz<7>vnz<3>kOz<5>000<7>0So<7>krx<7>0So<7>000<7>zkC<6>z\
+  uczwgzvc<6>zkC<7>000<7>z00<7>zkk<7>z00<7>000<46>jjxkkzkkz<78>zzz
+  savename=Octobrot.gif }
+
+;========================================================================;
+;Date: Fri, 2 Oct 1998 18:02:26 EDT
+;From: TRMoe@aol.com
+;Subject: (fractint) Re: Fractal Art '98 Contest
+
+Many thanks to all involved for a great contest!  Many thanks also for the
+votes and comments.  Here's a par I didn't get ready in time for the contest
+(couldn't get the colors quite right.)  I was intrigued to see that a fly made
+it into the contest anyway.
+
+Bluebottle_Fly     {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=trmoe-011 function=flip/asinh/cotan
+  center-mag=0.145576/2.14837/0.4699454/-1/180 float=y inside=bof60
+  decomp=256
+  colors=0KK0ZZ<3>0mm<17>0NY0AA<7>0EE0FF0HH<12>0mm<22>0PP0jh0ii0kk0mm<10>0\
+  SS0PP0OO<5>0HH0FF0CC099055<5>0550NY<12>0af0bf0bf<39>0mm0bb<48>0UU0UU0VV<\
+  26>0aa0bb0``<7>0PP<6>0kk
+  savename=Bluebott.gif }
+
+ Enjoy, Tom
+
+;========================================================================;
+;Date: Sat, 03 Oct 1998 16:02:53 -0400
+;From: Paul DeCelle <PaulDC@prodigy.net>
+;Subject: (fractint) 14 Pars
+
+Hello, all--		
+
+Here are 14 pars based on Kathy Roth's "Gravistalks" formula.  This
+formula is very versatile; I used the same set of numerical parameters
+for all & cycled through various combinations of functions.  They all
+generate relatively quickly, too.  I THINK I've figured out how to post
+properly... 
+
+Enjoy,
+Paul
+
+
+
+krpd1              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=acos/cotan/cosh
+center-mag=4.1158/0.0856438/0.3178875/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd1.gif }
+
+krpd2              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=acos/cotan/sqr
+center-mag=4.1158/0.0856438/0.3178875/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd2.gif }
+
+krpd3              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=acos/cotan/cos
+center-mag=4.1158/0.0856438/0.3178875/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd3.gif }
+
+krpd4              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=acos/cotan/flip
+center-mag=4.1158/0.0856438/0.3178875/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd4.gif }
+
+krpd5              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=abs/cotan/cosxx
+center-mag=1.61395/0.028243/1.302818/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd5.gif }
+
+krpd6              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=sinh/cotan/cosxx
+center-mag=0.075979/-0.796231/0.9030895/1/-90
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd6.gif }
+
+krpd7              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=recip/cotan/cosxx
+center-mag=0.0107785/0.0372033/0.5326967/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd7.gif }
+
+krpd8              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=ident/cotan/cosxx
+center-mag=0.0107785/0.0372033/0.4368113/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd8.gif }
+
+krpd9              { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=acos/abs/sqr
+center-mag=1.05366/0.0429803/0.7465214/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd9.gif }
+
+krpd10             { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=sin/sqrt/sqr
+center-mag=1.57045/0.0429803/0.7196466/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd10.gif }
+
+krpd11             { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=exp/cosh/sqr
+center-mag=0.458433/0.774906/1.352719/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd11.gif }
+
+krpd12             { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=exp/cosh/tan
+center-mag=0.458433/0.790327/1.352719/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd12.gif }
+
+krpd13             { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=log/cosh/tan
+center-mag=0.177088/0.526239/5.543931/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd13.gif }
+
+krpd14             { ; From "Gravistalks.frm" by Kathy Roth
+                     ; Colormap - Gallet13
+                     ; Paul DeCelle 10/4/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gravistalks function=recip/cosh/tan
+center-mag=0.37786/0.451454/32.23216/1/180
+params=2.2/0.077/0.07000000000000001/177/11/17 float=y bailout=100
+inside=255 outside=summ
+colors=000Vnn<4>Zqq_rr`rrarr<23>yynzzmzyh<2>zuU<27>V88T67R58UA9YFAaKB<9>\
+zpN<7>Uia<13>EP7DO5CM3AK0BJ0CI0<13>U30<5>dGJfJMhLQjOTlRW<4>wcm<10>XDT<6>\
+wwh<4>ysXzrUyrU<33>OX6MW5MW5<29>EKADJBFJA<14>UGBPhh<8>Vmm
+savename=krpd14.gif }
+
+;========================================================================;
+;Date: Sat, 3 Oct 1998 18:18:14 EDT
+;From: JimBeau549@aol.com
+;Subject: (fractint) my contest pars
+
+  Hi folks,
+
+     Here are 2 of the image pars I submitted to the contest.  My thanks to
+the people who included comments along with their votes for *Papa_San*
+
+        Enjoy~
+
+ Jim
+
+
+PAPA_SAN           { ; image(c)JimWeaver 8/29/98 t=0:03:06.03 P75@800x600
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Gallet-5-08 function=cos/atan/cosxx passes=t
+  center-mag=-0.652385/-0.652385/0.2027447/1/44.999
+  params=-0.35/0.1/-0.08500000000000001/-0.42/0.35/-0.15 float=y
+  maxiter=25 inside=bof60 periodicity=0
+  colors=000FYQ<2>HbUIdVKeV<4>VlZ<3>NhXLgXJeWIcV<21>254243122000111223<20>\
+  QTbRVcSWeUXfVYf<4>dch<2>``hZ_hXZhVYgTXf<24>110<20>aMEbNEdOFePFgQG<4>iVOj\
+  XQjWP<3>iSJhRHfQG<24>000<24>ZWK_XLaXL<4>maP<2>g`Oe_NcZN`YM_XL<21>5533322\
+  21000011<19>EXP
+  savename=PAPA_SAN.gif }
+
+
+FRACTALE           { ; image(c)JimWeaver 8/29/98 t=0:00:27.96 P75@800x600
+  reset=1960 type=fn*z+z function=tanh passes=t
+  center-mag=-2.22045e-015/1.11022e-015/0.5604601
+  params=-0.8/0.88/0.854/0.45 float=y maxiter=1023 bailoutest=real
+  inside=epsiloncross outside=real potential=255/420/0
+  invert=0.4/-0.2/0 symmetry=xyaxis
+  colors=000R1R<6>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz\
+  0<14>jB0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5\
+  <2>795574354033077<10>3nn3rr5nr7jr9frBbr<3>Qzb<9>zz0<6>z_S<5>zD4z90x87<3\
+  >m3bj1jf1f<2>V1V
+  savename=FRACTALE.gif }
+
+;========================================================================;
+;Date: Sat, 03 Oct 1998 21:02:43 -0400
+;From: davides <davides@pipeline.com>
+;Subject: (fractint) Preview (?)
+
+The below par is something of a preview of a _possible_ posting to abpf
+some monbths from now, perhaps July of '99. I may, and probably will, do a
+bit of modifying as I have been doing recently to some other fractals...
+
+Thanks to all concerned for the frm:
+
+
+New_Celt           { ;  (c) David Shanholtzer Oct 03, 1998 t=0:00:33.18
+                     ;  P200 MMX 1024x768
+                     ; color map: dav75 (modified)
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=sqr/sqrt/log passes=t
+  center-mag=1.33227e-015/-8.88178e-016/0.4026667
+  params=0.005/0/0.375/175/2/125 float=y maxiter=15000 bailout=100
+  inside=zmag outside=summ
+  colors=004U1_<30>m2wm2wl2v<77>000000001<45>LDeLDeLDd<42>111000000000000<\
+  45>T1Z
+  savename=NewCelt.gif }
+
+;========================================================================;
+;Date: Sat, 03 Oct 1998 21:30:53 -0400
+;From: davides <davides@pipeline.com>
+;Subject: (fractint) Preview2 (?)/Apologies
+
+Apologies offered for not placing the following par with the first post:
+(Good intentions and all that)
+
+
+New_Celt2          { ;  (c) David Shanholtzer Oct 03, 1998 t=0:00:12.96
+                     ;  P200 MMX 1024x768
+                     ; color map: dav73 (modified)
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=conj/sqrt/log passes=t
+  center-mag=0.0231201/0.508808/0.1127467
+  params=0.005/0/0.375/175/2/125 float=y maxiter=15000 bailout=100
+  inside=zmag outside=summ
+  colors=00807M<7>00EA20<10>yhW<22>A20000<56>MC7<6>yhW<14>A20000<23>00C00D\
+  00E01F01G<23>0HX0HY0IZ0J_0K`0Ka<29>0cw0cw0bv<23>0K`0J_0J_0JZ<13>08N
+  savename=NewCelt2.gif }
+
+;========================================================================;
+;Date: Sat, 03 Oct 1998 22:00:15 -0600
+;From: Xylen <mctupper@holly.colostate.edu>
+;Subject: (fractint) An obscure Jim Muth formula
+
+Well, Jim started it, when he said he didn't even understand some of his
+own formula's. So I started playing with one of them. 2 days later and
+with the help of an unknown person's color map, I came up with this
+image.
+Why couldn't I find things like this BEFORE the contest?  :)
+
+Xylen
+"Some people live in the fast lane, I live in oncoming traffic"
+
+
+swirls_snowflake   { ; ;
+                     ; Oct 03, 1998 (c) Mary Tupper 
+                     ;   0:00:14.39 generation time
+                     ;  Jim Muth's MandelPM
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=mandelpm
+  passes=t center-mag=-0.00965233/0.113196/1.156583/1/90
+  params=-0.5/0/-1/0/10/0 float=y maxiter=15000 inside=maxiter
+  invert=0.5371903999999/0/0 decomp=256
+colors=000<6>500600800<2>C00E00G00I00K00<3>U00W00Z00a00<2>i00l00p00s00v0\
+0z0A<2>zABzDCzFC<8>zYFz_Fz`G<7>znIzpIzrIzsIzuJzvJzxJzzKzzK000<6>50060180\
+1<4>H02J03M03<4>Y05`05c06f06i07<3>v09y09z0A<2>zABzDCzFC<8>zYFz_Fz`G<7>zn\
+IzpIzrIzsIzuJzvJzxJzzKzzK00Oyya00Nxx`00Nxx`00Mxx`00Mxx`00Mww`00Mww`00Mww\
+_00Mvv_00Mvv_00MuuZ00MttZ00MttZ00LssY00LrrY00LqqY00KqqX00KppX00KooW00Knn\
+W00JmmV00JllV00JkkU00IjjT00IiiT00IhhS00HggS00HffR00GeeQ00GccQ00GbbP00Faa\
+O00F``O00EZZN00EYYM00EXXL00DVVK00DUUK00CTTJ00CRRI00BQQH000OOG00BNNG00ALL\
+F00AJJE009IID009GGC008FFB008DDA007BB9007998006887006666005445004224004<9\
+>001001001001001000000000
+  savename=swirls_s.gif }
+
+;========================================================================;
+;Date: Sun, 04 Oct 1998 20:36:32 -0400
+;From: Paul Derbyshire <pderbysh@usa.net>
+;Subject: (fractint) NEW FORMULA AND PARS :-)
+
+Browsing Spanky I discovered a web page where someone had generated a single,
+somewhat interesting Julia set from the Riemann zeta function. I decided I had
+to have that formula, and manufactured a Fractint frm that uses a good
+approximation to the zeta function. I was able to replicate the images on
+the website.
+Thence I added a "+c" to the formula to create a variable parameter; there
+may be interesting
+Mandelbrot images to go with these, eventually.
+
+
+zeta1              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zeta
+  center-mag=3.55271e-015/-3.55271e-015/0.02797867
+  params=0/373/0/0/1000000/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=00000e<15>hlz78h<84>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES\
+  <3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSK\
+  OSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>\
+  E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBF\
+  GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGnj5<6>ic7
+  savename=zeta1.gif }
+
+zeta2              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zeta
+  center-mag=3.55271e-015/-3.55271e-015/0.02797867
+  params=-21/0/0/0/1000000/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=00000e<15>hlz78h<84>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES\
+  <3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSK\
+  OSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>\
+  E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBF\
+  GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGnj5<6>ic7
+  savename=zeta2.gif }
+
+zeta3              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zeta
+  center-mag=3.55271e-015/-3.55271e-015/0.02797867
+  params=-20/0/0/0/1000000/0 float=y maxiter=2000 inside=0 logmap=yes
+  colors=00000e<15>hlz78h<84>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES\
+  <3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSK\
+  OSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>\
+  E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBF\
+  GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGnj5<6>ic7
+  savename=zeta3.gif }
+
+zeta4              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zeta
+  center-mag=3.55271e-015/-3.55271e-015/0.02797867
+  params=-21.12/0.5/0/0/1000000/0 float=y maxiter=2000 inside=0
+  logmap=yes
+  colors=00000e<15>hlz78h<84>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES\
+  <3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSK\
+  OSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>\
+  E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBF\
+  GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGnj5<6>ic7
+  savename=zeta4.gif }
+
+zeta5              {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zeta
+  center-mag=13.9752/-8.29464/0.2293333
+  params=-21.12/0.5/0/0/1000000/0 float=y maxiter=2000 inside=0
+  logmap=yes
+  colors=00000e<15>hlz78h<84>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES\
+  <3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSK\
+  OSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>\
+  E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBF\
+  GBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGnj5<6>ic7
+  savename=zeta5.gif }
+
+;========================================================================;
+;Date: Mon, 5 Oct 1998 09:28:25 -0400
+;From: wdecker@csc.com
+;Subject: (fractint) Contest Entries
+
+I had a whole bunch of fun participating in the contest. Thanks to the
+contest organizers for all their hard work, including calming my fears
+about not getting my e-mail when I sent in my entries at the LAST POSSIBLE
+MOMENT.
+
+Here are the pars and formulas for two of my entries. I got a comment on
+each one.
+
+Bill Decker
+
+"Mahogany Vine with Flowers"  Just seems put together out of plastic.
+Yup! That's what caught my eye when I saw this one. Not only plastic, but
+mounted on pool table felt for God's sake.
+
+vines-flowers7     { ;  (c) Bill Decker Aug 24, 1998 t=  0:04:46.88
+                     ;  on P150 800x600
+                     ;  map = golden.map (unknown source)
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_wonder function=cabs passes=1
+  center-mag=-0.186745/-0.0425403/0.567302/1/49.999
+  params=-1/3/-1/-1.5/10/0 float=y potential=255/40/0
+  colors=000DJ7<12>1X10Z00Z1<27>6A_69`68a77c77c77c<47>44K44K64J<12>`96cA5d\
+  C5<14>zm7<14>XD6UA5TA5<11>A62952752541551571<12>BS3BU3BT3<11>EH4FG4FF4GE\
+  5HF6<2>JE6KE6LD6MC6<9>W67X57_96<9>zm0<6>wa0w_0vY0uW0<14>NC9KAAKBA<5>EI7
+  savename=vines_fl.gif }
+
+"Cave Art" The best fractals don't look like fractals!
+Exactly. In fact the more they dis-resemble fractals, the more I am
+fascinated by them. This one has the gritty texture on chalk and iron oxide
+on sandstone that gave it the name.
+
+cave-art           { ;  (c) Bill Decker Jul 29, 1998 t=  0:00:33.23
+                     ;  on P150 800x600
+                     ;  map = gallet07.map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=tanh/cosh
+  center-mag=0.0839344/9.36505/0.2857083/1/90 params=4/-5/-5/5/2/1000
+  float=y potential=255/100/0
+  colors=974uusvvtwwu<14>wwfvvdwwc<27>eT5eS3dR2cP0cP0<29>S75R66R66R66<26>K\
+  11J11J11I00I00<6>E00E00E10D21<3>A63974974974<15>630630741<12>DB8EB8EB9EB\
+  9FCA<74>lkjlkjmlknml<8>uts
+  savename=cave_art.gif }
+
+
+;========================================================================;
+;Date: Tue, 6 Oct 1998 10:20:54 +0200
+;From: Thomas Middelkoop <thomas.middelkoop@cmg.nl>
+;Subject: (fractint) Strange Attractor category
+
+!!!! See the list of IFS coefficients below !!!!
+
+;Archive note: The IFS data was moved to frac_ml.ifs
+
+With this email I would like to respond to the comments I received 
+from the images I posted to the Fractal contest. These three images 
+where of course the three black&white pictures "Helix", "Worm" and 
+"Vortex" (resp. images 82, 83 and 84).
+
+First of all I want to thank the people who voted on one of these 
+three pictures and even made "Helix" the winner in the "Strange 
+Attractor" category. I also thank you for the flattering comments 
+you gave on my pictures. The comments also posed some questions 
+about the pictures which I want to answer here.
+
+First of all how are these pictures made? They are 2D IFS
+(Iterated Function Systems) which could be generated with 
+Fractint, but which I made with a program I wrote called Dust 
+fractals. Dust fractals is primarily intended to generate Strange 
+Attractor type fractals.
+
+Strange Attractors are fractals where pixels are not colored
+on the behavior of the orbits of points (as in escape time
+fractals) but where the orbit itself is displayed. To be more 
+specific, with escape time fractals (e.g. the mandelbrot set)
+the coordinate of every pixel on the screen is put into a 
+formula and iterated, the pixel is then colored according to 
+whether it escapes to infinity or is bounded. With strange 
+attractors a single point (or multiple points) is iterated and
+the points of the orbit itself are displayed on the screen.
+The pixels on the screen are often colored according to how
+many times they have been hit after a certain amount of itera-
+tions have been performed. Examples of strange attractors 
+generated by Fractint are: IFS, Gingerbread man, Icon.
+This explanation is not very scientific I guess, but it's the 
+way I see the difference between escape time fractals and SA 
+fractals.
+
+As said before the pictures I had submitted to the contest where
+generated with Dust fractals. This program for Windows 95 and 
+compatible systems, is still in it's developing stage. Fractals
+which can already be generated are: Gingerbread man, IFS, Flame, 
+icon, hexagonal and square quilts, Mandelbrot cloud, Pickover 
+fractals, Henon, bifurcation diagrams and the Mira fractal. Some 
+nice features of the program which I like to point out here are: 
+Truecolor support. Arbitrary resolution and bilinear resampling. 
+A non-linear relation between the number of times a pixel is hit 
+and the color of the pixel is possible when displaying the cal-
+culated fractal, this means colors can be more evenly distributed 
+when the contrast between much visited and less visited parts in 
+the fractal is too high. And generation of random fractal 
+parameters sets, this means that you can with one push of a button 
+generate for example a totally new Icon fractal, or IFS fractal 
+(see the IFS coefficients below for some examples!).
+
+For further development of the program I would like to call in 
+the help of other fractal enthusiast. First of all for beta testing,
+suggestions and error reports from both experienced fractal artists 
+and newbies would be very helpfully in further developing Dust 
+fractals. Secondly I could use some help from someone more familiar 
+with the mathematics behind strange attractors and mathematics in 
+general then I'm. As mentioned above I have build a feature in 
+Dust fractals to generate random fractal parameter sets, for example 
+for the IFS type fractal. The algorithm behind this feature is not
+as advanced as I like it to be, resulting in the fact that you have 
+to push the button a lot of times to get a nice picture. If someone 
+could review this algorithm and come up with better ideas this would 
+be great.
+
+If you're interested email me at:  thomas.middelkoop@cmg.nl
+so we can work something out.
+
+Finally I want to share a small number of IFS parameter sets I 
+have already generated with Dust fractals. I recommend to use
+the gamma1 or gamma2 colormap with these fractals since black&white 
+works very good for these type of fractals.
+(the three contest images are contained in this collection)
+
+
+;========================================================================;
+;Date: Tue, 6 Oct 1998 08:06:19 -0400
+;From: wdecker@csc.com
+;Subject: (fractint) Crankshaft, Pistons and Rods
+
+Thanks for all the nice comments on this fractal. People seemed to think it
+fit the category well. Some asked if it really came out of Fractint. Two
+comments point out the 1920's, 1930's feel to the image.  I agree, when I
+got to that point in rotating Linda's color map, I quit because I got the
+same impression.
+
+------------
+> This is one belongs on the wall of a vocational high school from the
+1930's--art deco and shop in one.
+------------
+>... reminiscent of some of the best of the earlypost revolution Soviet art
+celebrating the modern mechanical age.
+------------
+
+I've included two other pars from the same formula. They are not nearly as
+mechanical. (In fact, I could not find any other par with this formula that
+had anywhere near the same sense of engineering.) Note that each instance
+uses the potential parameter, one way to get rounded surfaces, of which
+there are plenty in these images.
+
+
+rods-arcs6         { ;  (c) Bill Decker Jul 28, 1998 t=  0:00:53.00
+                     ;  on P100 1024x768
+                     ;  map = lindaa02.map
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=billsfn2i
+  function=sin center-mag=-0.15005/-0.0187624/0.6555568
+  params=20/20/-5/-1/0/-10 float=y potential=255/50/0
+  colors=E0M500<26>W00X00W00<31>000<6>F0P<6>204000011<36>BocCqdCreDtgDsf<3\
+  2>122000203<5>F0P<8>000<32>zzz<32>000<6>F0P<6>204000000<3>400
+  savename=rods_arc.gif }
+
+dome               { ;  (c) Bill Decker
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=billsfn2i
+  function=sqr center-mag=1.05158/0.775462/14.27551/1/57.498
+  params=0/-4/0.1/2/3/0 float=y maxiter=20000 potential=255/300/0
+  colors=000zyz<19>zpxzpxzowynv<62>M17L06L06K06<34>000<15>ouuryysyypyyqyyo\
+  yypyymyynyylyxmyyjxxkyxixxjxxgxxhxxfxxgxxdxwexwcxwdxwawwbww`wwawwZww_wwY\
+  wvZwvWwvXwvVvvWwvTvvUvvSvuTvvQvuRvuPvuQvuNvuOvuMuuNuuKutLutJutKutHutIutG\
+  ut<2>FutErrEssEppEqqDnoDooDlmDmnCjkCklChjCikBfhBgiBdgBegAbeBcfA`cAad9ZbA\
+  _c9X`9Ya8VZ9W_8TY8UZ8RW8SX7PV7QV7NT7OU6LR6MS6JQ6KR5HO5IP5FN5GN4DL5EM4BJ4\
+  CK39I4AJ37G38H25E36F02B14D02B000000zyz
+  savename=dome.gif }
+
+bent               { ;  (c) Bill Decker Oct 06, 1998 t=  0:01:02.28
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=billsfn2i
+  function=sin center-mag=-0.10491/-0.178889/8.290364/1/109.996
+  params=5/5/0/-5/0/-2 float=y maxiter=20000 potential=255/100/20
+  colors=I8Famafsflyl<7>05A<7>cru<7>444<7>mmz<7>I8F<7>zmm<7>A00<7>zzg<7>N1\
+  3<7>z_K<7>g50<7>zvn<7>I8F<7>ghl<7>08C<7>ata<7>A0A<7>Zrk<7>C40<7>zii<7>F0\
+  0<7>zrc<7>N57<7>yZJ<7>c20<7>zaV<7>F00<7>sog<7>I8F<6>unr<7>8F8<4>XgX
+  savename=bent.gif }
+
+;========================================================================;
+;Date:	Wed, 7 Oct 1998 16:59:08 -0300 
+;From:	"Fliguer, Miguel" <M_Fliguer@miniphone.com.ar>
+;Subject: (fractint) Some PARs - Enjoy !
+
+Some candy for your eyes, from some formulas I made by pseudo-random 
+typing ;-)  ...  Enjoy !  As usual, comments are welcome.
+
+Miguel Fliguer
+m_fliguer@miniphone.com.ar
+
+
+dalmatian-blues    { ; You ain't nothing but a hound dog ...
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Prueba_000 function=sqr/sin
+  center-mag=-1.23726/-0.454971/25.3349/0.9998 params=1/1/1/1
+  colors=00000a<35>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
+  0yz<45>02z00z00y<22>00b
+  savename=dalmatia.gif }
+
+fossil             {
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Prueba_000 function=tan/tan
+  center-mag=-0.253226/-1.48529/23.49912/0.9999/112.494/0.01
+  params=0/1/0/1
+  colors=000TTT<35>111000000000<93>v00w00w00w11<71>wrrwsswttwttwuuwvvwww<3\
+  9>UUU
+  savename=fossil.gif }
+
+sphere             { ; uses test667
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test667
+  function=sin/sqr center-mag=-8.8215e-005/-9.985e-006/0.3306648
+  params=1/0/1/0
+  colors=0000000ez<30>02z00z00y<59>002000000<29>00k00m01m<29>0ky0mz1mz<30>\
+  zzz<46>2zz0zz0yz<13>0gz cyclerange=2/255
+  savename=sphere .gif }
+
+The.Old.Man        {
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test667
+  function=acosh/asinh center-mag=0.0375691/0.98329/2.380906
+  params=1/0/1/0
+  colors=CCCCMs<15>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
+  19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>\
+  ECsCCsCEs<2>CKs
+  savename=Old_Man.gif }
+
+aztec              {; painting
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test01
+  function=sqr/sin center-mag=5.78e-006/-7.005e-006/0.6666636
+  colors=CCCsUC<7>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>C\
+  s_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssss\
+  q<19>ssEssCsqC<10>sWC
+  savename=aztec.gif }
+
+;========================================================================;
+;Date: Wed, 07 Oct 1998 14:39:18 -0700
+;From: kathy roth <kroth@well.com>
+;Subject: (fractint) Preview and 14 pars
+
+David Shanholtzer and Paul DeCelle  posted some
+gravistalks pars-  it was nice to see what other people
+came up with!  The p1 parameter in gravistalks isn't
+attached to anything and makes no difference so
+in gravistalks 2 and 3 I used it for the gravijul parameters
+in different ways.
+
+
+gs1                { ; kathy roth 1998
+                     ; modified Wizzle palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=conj/tan/atanh
+  center-mag=0.0427701/0.000488053/1.372094
+  params=2/0.1/0.04/150/8/30
+  float=y outside=summ
+  colors=000gqy<27>60Azpa<27>LG6JE4KDU<28>9\
+  8FUsz<28>6CFf7K<28>G1DKHU<28>98\
+  Fb4I<28>G1D000<13>000wAP<28>C0Bhrz
+  savename=gs1.gif }
+
+gs2                { ; kathy roth 1998
+                     ; modified Wizzle palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=conj/tan/atanh
+  center-mag=0.000103343/1.07625/8.750173
+  params=1.5/0/0.04/150/8/30
+  float=y outside=summ
+  colors=000wAP<28>C0Bhrz<28>60Azpa<27>LG6JE\
+  4KDU<28>98FUsz<28>6CFf7K<28>G1\
+  DKHU<28>98Fb4I<28>G1D000<13>000
+  savename=gs2.gif }
+
+gs3                { ; kathy roth 1998
+                     ; modified Wizzle map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=conj/tan/atanh
+  center-mag=3.665e-006/-8.65e-007/0.4266664
+  params=1/0.6/0.04/150/8/30 float=y outside=summ
+  colors=000wAP<28>C0Bhrz<28>60Azpa<27>LG\
+  6JE4KDU<28>98FUsz<28>6CFf7K<28>G1\
+  DKHU<28>98Fb4I<28>G1D000<13>000
+  savename=gs3.gif }
+
+
+gs4                { ; kathy roth 1998
+                     ; modified Wizzle palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=conj/tan/atanh
+  center-mag=0.0427701/0.00611061/0.9275357
+  params=2/0/0.04/150/8/30
+  float=y outside=summ
+  colors=000EDM<12>98Fb4I<28>G1D000<13>000\
+  wAP<28>C0Bhrz<28>60Azpa<27>LG6JE\
+  4KDU<28>98FUsz<28>6CFf7K<28>G1DKHU<14>FDN
+  savename=gs4.gif }
+
+gs5                { ; kathy roth 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=conj/tan/atanh
+  center-mag=-0.00219575/-0.0220022/1.632985
+  params=2/0/0.045/150/8/30
+  float=y outside=summ
+  colors=0000yy<27>0JJ0zW<28>0J9WWz<28>4LGz\
+  z0<28>JJ0`zn<28>CMI000<13>000zW\
+  0<28>JJ0z0W<28>M0Bmmm<27>2220000zz
+  savename=gs5.gif }
+
+gs6                { ; kathy roth 1998
+                     ; modified Linda Allison palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks1 function=conj/tan/atanh
+  center-mag=0.000532497/-0.000388173/9.60523/1.3321
+  params=0.5/0/0.03/150/8/15 float=y bailout=100 inside=255
+  outside=summ viewwindows=1/1/yes/0/0
+  colors=000wxf<28>5C3hwz<28>5BGmmz<28>99Cz\
+  ee<28>M06zxg<28>A00zvn<28>D4Apr\
+  c<28>180ztx<28>ULR000<13>000
+  savename=gs6.gif }
+
+;========================================================================;
+;Date: Wed, 07 Oct 1998 18:15:14 -0400
+;From: Paul DeCelle <PaulDC@prodigy.net>
+;Subject: (fractint) Butterfly/Caterpillar Pars
+
+A slow day at work, today, so guess what I did :-)
+
+Here's a par based on Miguel Fliguer's Prueba_000 formula.  With a
+little bit of colormap editing (which I'm VERY new at!), I got it to look pretty
+good..
+
+Along the same theme, the second par will (slightly) resemble some kind
+of psychedelic caterpillar.  It's based on Sylvie Gallet's Gallet-4-11 formula, and
+it's very colorful.
+
+These'll be posted to my Fractint site, soon.   
+
+
+Regards, Paul
+
+
+Butterfly          { ; Butterfly in foliage
+                     ; Paul DeCelle 10/7/98
+                     ; From Miguel Fliguer's Prueba_000 formula
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=prueba_000 function=sqrt/sin
+center-mag=1.12069/-0.109508/0.4301137/1.6179/-92.499
+params=3.141/0.9/3.141/0.9 potential=255/200/0
+colors=0D0070<3>020000000001<6>4DS4EV4HY<8>7jz<14>rxB<15>yy1zz0xy2<21>0N\
+w<2>9Oo<7>uz0<8>y_0zW0yT0wQ0uM0sJ5qF0nE0mE0<4>Z80W60T50Q30O30<3>E10C00B0\
+0A00<3>z0T<4>z0az0cz0dz0e<4>z0mA090L0<4>0f0<16>0N00M00N0<11>0d05f00e0<24\
+>0C0<21>0f0<25>090
+savename=Butterfl.gif }
+
+
+Caterpilllar       { ; A psychedelic caterpillar
+                     ; Paul DeCelle 10/7/98
+                     ; From Gallet-4-11      
+                     ; Very colorful!
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gallet-4-11 function=tan/conj passes=1
+center-mag=-0.0434287/0.0786548/0.2406975 params=0.78/1.6/4/0.04
+float=y maxiter=255 inside=0 outside=atan decomp=256
+colors=jT_<8>aPY`OX_OXZNWYNWXMV<14>0hz<9>zzr<15>6jJ<15>4HY3FZ4FY<2>6FV7F\
+U7ET7ES<6>9CMACLACKACJBBIBBH<10>F96G85G64H53H42I21I00<13>aE3cF4eI4<4>oY2\
+q`2rb2<2>wk2yn3yn6<17>ypwzqzyny<13>g9fe6df6a<10>x24z10z31<11>tOAtQBsSCrU\
+D<8>tdBufBugBviBvkB<4>ysBzuAztB<16>zaay_cy_c<2>xZcwZcvYbuYbtXb<8>jT_
+cyclerange=0/255
+savename=Caterpil.gif }
+
+;========================================================================;
+;Date: Thu, 8 Oct 1998 23:40:03 -0400
+;From: "Phil DiGiorgi" <phild@iinc.com>
+;Subject: (fractint) Contest Images
+
+A belated note of thanks for those who sent comments about my images.   It was alot of fun
+to participate, and certainly a nice ego-boost to get a few votes!   I've included the
+parameters for the three images below, plus a couple of additional creatures that were
+lurking about.
+
+All the images are based on the generalized PopcornJul formula that I did a long while back.
+My interest in this formula was re-kindled by some nice Popcornjul images posted to the list
+some time before the contest.   I kind of became obsessed with it, and have saved almost a
+hundred (!) PCJ images.   If anyone is interested, let me know and I'll send you the lot :-)
+
+
+  Phil D.
+
+
+pcj17              { ;   Wizard's Debate  (c) P. DiGiorgi - Sep 05, 1998
+      ;   t=  0:09:16.50 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/tan/cosh/sinh passes=1
+  center-mag=-0.0604353/4.76128/0.6644587/0.6587/90
+  params=1/0.052/2.6/-0.8/0.075/6 float=y maxiter=255 inside=0
+  colors=000005zg0<11>W007BM<12>5Sb<8>6ZG<8>`Bw<11>5Pw<9>Rq\
+  aUtZUrV<6>_b4``0c_2<6>zUF<8>qq0000000000C00<13>`00<9>4NW\
+  4PY5R_5Sb<6>BTECUAFSG<6>`Fw<8>7Px<8>7`F<8>ww0<8>`00<4>N0\
+  0000<2>000A00000000111223244467<8>BHJ<7>xxxvuurrr<5>aaa00\
+  0000B00<13>W00Y00_00a00d00<3>l00q50<9>yc0
+  cyclerange=2/255
+  savename=pcj17.gif }
+
+pcj40              { ;  The Fly    (c) P. DiGiorgi - Sep 05, 1998
+                     ;  t=  0:03:41.07 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=ident/tan/ident/asinh passes=1
+  center-mag=6.21725e-015/-5.32907e-015/0.2216797
+  params=1/0.0001/3/0/-0.025/6 float=y maxiter=255 bailout=2
+  inside=bof61 outside=summ symmetry=xyaxis periodicity=0
+  colors=000<4>000mWM<7>ziF<5>hUEeREcQD<2>XK8UI7QF6LC4B6\
+  2QRK<2>_`TccWgfZkjanne<2>zyn<8>gcWe`UdZT<3>XRLVPJUOITM\
+  HRKF<17>532322211111000<13>900A00A01A12<18>8JP8KQ9LR<2>E\
+  QXFRZGT`HVbJXd<6>Xku_nx_lv<5>QXbOUZNSXMQUMPSLNQJLNGH\
+  JBBC000<15>wA0<18>73342400000A<2>00I<19>00700600500400300\
+  2001000<22>SJJUKKVKKWLK<8>kUN000NPI cyclerange=6/253
+  savename=pcj40.gif }
+
+pcj44              { ;  Bumper   (c) P. DiGiorgi - Sep 05, 1998
+      ;  t=  0:03:46.55 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/atan/tan/asinh passes=1
+  center-mag=5.32907e-015/-8.88178e-016/0.2094335
+  params=1/0/4/0/0.03/6 float=y maxiter=255 bailout=2 inside=bof61
+  outside=summ symmetry=xyaxis periodicity=0
+  colors=000<17>000100311<2>823A34A46<15>8JP8KQ9LR<2>EQXFRZ\
+  GT`HVbJXd<6>Xku_nx_lv<5>QXbOUZNSXMQUMPSLNQJLNGHJBB\
+  C000<15>wA0<18>73342400000A<2>00I<19>0070060050040030020\
+  01000<22>SJJUKKVKKWLK<7>jTNkUNmWM<7>ziF<5>hUEeREcQD<2\
+  >XK8UI7QF6LC4B62TUN<2>ccWgfZkjanne<2>zyn<8>gcWe`UdZT<3>X\
+  RLVPJUOITMHRKF<17>532322211111000100000NPI cyclerange=7/253
+  savename=pcj44.gif }
+
+pcj21              { ; Splashdown    (c) P. DiGiorgi - Oct 08, 1998
+                     ;   t=  0:12:17.16 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/conj/cotan/acosh passes=1
+  center-mag=1.55482/0.488519/0.577099 params=1/0.03/3/-1/0.06/4
+  float=y maxiter=255 inside=0
+  colors=708200200000300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW\
+  4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovupwxvyzzzyvxwpuvosujqseoqb\
+  mpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0CJ0A<3>zzz<5>\
+  008<12>00c<15>zzz<2>tpvrmtrjs<10>bEc`BaY8Z<2>R0S<6>A0B506203000\
+  <15>0cc<15>zzz<6>_p_500<2>C00WnW<7>0c0<15>000F00<8>`00c00d44<13>\
+  zzz<3>snNukDsh3qe0<2>kX0iV0fS0dQ0aN0<7>H30E00C00<3>400
+  cyclerange=2/255
+  savename=pcj21.gif }
+
+pcj25              { ;  Moby's Wink    (c) P. DiGiorgi - Oct 08, 1998
+                     ;  t=  0:09:13.70 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/cotan/ident/ident passes=1
+  center-mag=1.52727/-1.0222/5.59817/1/-84.998
+  params=0.975/-0.0005/2.5/0/0.06/4 float=y maxiter=255 inside=0
+  colors=708200uqXsnNukDsh3qe0<2>kX0iV0fS0dQ0aN0<7>H30E00C00\
+  <5>000300000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieM\
+  kgOmiWokYpmbqoesqjusovupwxvyzzzyvxwpuvosujqseoqbmpYkoWimOgk\
+  MeiKc<2>f8Yd4Wc2U`0S<4>R0IP0GN0GL0CJ0A<3>zzz<5>008<12>00c<1\
+  5>zzz<2>tpvrmtrjs<10>bEc`BaY8Z<2>R0S<6>A0B506203000<15>0cc<15>z\
+  zz<6>_p_500<2>C00WnW<7>0c0<15>000F00<8>`00c00d44<13>zzzxwpwtf
+  cyclerange=2/255
+  savename=pcj25.gif }
+
+pcj26              { ;  Giant Squid    (c) P. DiGiorgi - Oct 08, 1998
+                     ;   t=  0:18:46.36 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/tan/ident/ident passes=1
+  center-mag=-0.040236/-0.732232/2.601178/1/44.999
+  params=0.975/-0.0005/2.5/0/0.06/4 float=y maxiter=255 inside=0
+  colors=000000tn0ww0<6>`00<8>800000000000077<8>0RR0UU2VZ<4>Da\
+  w<5>1VY0UU0QQ<5>077000000000PQI<10>psasvctvh<3>wwz<10>PQI000\
+  <17>000077<10>0``<11>07700000000093F<8>I7U<6>w4R<6>I7U<5>A4H93\
+  FA4H<6>I7U<5>0hh<5>I7U<5>93F000000000cc0<10>zz0<7>cc000000000\
+  0800<10>c00<11>800000000800<9>`00c90jQ0mY0pf0
+  cyclerange=2/255
+  savename=pcj26.gif }
+
+pcj28              { ; El Toro  (c) P. DiGiorgi - Oct 08, 1998
+                     ;   t=  0:12:39.62 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/tan/cosh/sinh passes=1
+  center-mag=+1.45877018289500200/+7.01591411955836200/42.0317/0.65\
+  94/88.35/-2.142 params=1/0.052/2.6/-0.8/0.075/6 float=y maxiter=255
+  inside=0
+  colors=0007B6kXEhUEeRE<3>XK8UI7QF6LC4B62000CHAFKD<2>NPIQRKTU\
+  N<2>ccWgfZkjanne<2>zyn<8>gcWe`UdZT<3>XRLVPJUOITMHRKF<19>21100M\
+  000<13>900A00A01A12<18>8JP8KQ9LR<2>EQXFRZGT`HVbJXd<6>Xku_nx_lv\
+  <5>QXbOUZNSXMQUMPSLNQJLNGHJBBC000000D4AK4F<4>bCVfEZhGa<5>\
+  wTw<6>gF_dCWbBU<2>W7MU6JR4GO2DK0AG8G<3>00000A<2>00I<18>00800\
+  7006005004<2>001000111<19>QHHRIISJJUKKVKKWLK<7>jTNkUNmWM<7>\
+  ziF<3>nZE cyclerange=2/255
+  savename=pcj28.gif }
+
+pcj48              { ; Spiral Collection   (c) P. DiGiorgi - Oct 08, 1998
+                     ;  t=  0:52:11.42 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=sin/atanh/tanh/ident passes=1
+  center-mag=5.88418e-015/-4.44089e-015/0.2762405/1/44.999
+  params=-1.001/0/5/0.01/0.03/12 float=y maxiter=255 bailout=2
+  inside=bof61 outside=summ periodicity=0
+  colors=B36<5>L7C801<7>801801A44<12>Umc<5>zzz<6>YofUmcSi`<10>A55812\
+  812<9>634634533<14>00000S<21>77u<7>zzz<15>55f<12>22L11K11I00G00G10\
+  G000<8>000000100201<2>412513513513<14>613N7D<3>UAHWBIYDK<24>zzz\
+  <21>000801<12>801801824A25 cyclerange=7/253
+  savename=pcj48.gif }
+
+pcj56              { ; On the Half Shell   (c) P. DiGiorgi - Oct 08, 1998
+                     ;  t=  0:00:55.26 using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=pd_pcj
+  function=ident/tan/ident/ident passes=1
+  center-mag=-6.66134e-016/1.02696e-015/0.9537175/1/-44.995
+  params=-1/0.1/6/0/1/5 float=y maxiter=255 potential=275/600/500
+  colors=936648CFJ<48>_`d_`d_`d_`d_`d<49>wwzwwzvvy<117>H33H23G22\
+  F22D23C34<2>54825A25A<19>CEJ cyclerange=2/255
+  savename=pcj56.gif }
+
+;========================================================================;
+;Date: Fri, 9 Oct 1998 13:19:48 -0700 (MST)
+;From: Kerry Mitchell <lkmitch@primenet.com>
+;Subject: (fractint) 5 point star coloring methods
+
+Fresh from the, "Just because you can doesn't mean that you should" files,
+:-) here are some formulas built around 5 point stars
+
+-------------------------------------------------------------------------------
+Kerry Mitchell
+lkmitch@primenet.com    www.primenet.com/~lkmitch/
+-------------------------------------------------------------------------------
+
+comment  ; narrative copyright Kerry Mitchell 09oct98
+
+Seeing Stars
+
+Most fractal images involve circles in some respect:  either stopping
+the iteration when the orbit moves outside of a given circle, or
+coloring by how close the orbit comes to a certain circle, or some
+variation.  These formulas use a 5 point star instead of a circle.
+The "starnear" formulas color by how close the orbit comes to a star.
+The "starbail" formulas are set up to stop iterating either when the
+orbit comes into a star or when it leaves a star.
+
+The star is represented by the 5 outer points.  These are equally spaced
+on a circle.  The center and size of the circle are user-specified, as
+is the rotation angle of the star.
+
+How z at any iteration relates to the star (inside, outside, how close)
+is determined by looking at each of the 10 sides, one at a time.  Each
+side can be represented by a line A*x + B*y + C = 0, where A, B, and C
+come from the coordinates of the 2 outer points that are joined to make
+the side.  Given the numbers A, B, and C, the quantity
+
+        q = A*real(z) + B*imag(z) + C
+
+is computed.  If q is positive, then z is on one side of the line, and
+if q is negative, then z is on the other side of the line.  If |q| is
+very small, that means that z is very close to that side of the star.
+Taking the signs of q for all 10 sides will determine if z is inside or
+outside of the star.  Using the smallest value of |q| gives the distance
+from z to the star.
+
+To see this in action, use the formula "star".  It will draw the outline
+of a star, with the position, orientation and size that you choose.
+This formula, and the "starnear" formulas that are built on it, use a
+logarithmic transfer function from distance to angle (for decomposition
+coloring in Fractint).  This helps highlight the star without needing to
+find out if the point is exactly on the star or not.  The "star-inout"
+formula will draw a star in 2 colors.  Everything inside the star is one
+color, and everything outside of the star is the other color.  These 2
+formulas are simply to give an idea of how the method works.
+
+The fractal formulas need a bit of extra explanation.  In the
+"starnear_jul" formula, you have the option of whether or not to check
+the pixel (initial value of z) for its distance from the star.  If the
+star is centered at the origin (p2=0/0), this can make quite a difference.
+For example, use the "starnear2" parameter set.  As written, the real
+part of p3 is -0.28. The magnitude of real(p3) is the radius of the circle
+containing the 5 outer points.  If real(p3) is negative, that tells the
+formula to check the pixel for its distance before iterating.  In the
+image, this shows up as a star in the center.  Now, make real(p3) +0.28.
+You'll see that the outer portion of the image is unchanged, but the star
+in the middle has gone away.  In the "starbail" formulas, the flag to
+check the pixel before iterating (pixelflag) has been set in the formula,
+and is not interactively changeable (too many parameters).
+
+The "starnear" formulas use a standard bailout condition--stop when the
+iterate gets too big, or leaves a very large circle.  Conversely, in the
+"starbail" formulas, the bailout condition is built around a star.  If 
+the star is centered at the origin and is big enough, then you can
+essentially use the star instead of the traditional bailout circle.  This
+is what has been done in parameter set "starbail1".  The magnification
+was decreased to show the bailout star, and the fractal can clearly be
+seen in the middle.  It is also possible to bailout when the orbit enters
+a star.  This is similar to the orbit trap methods that others have
+written, and works particularly well for Julia sets that are dusts.  An
+example of this is in parameter set "starbail2".  Some care must be taken
+if the star is not centered on the origin.  The "starbail" formulas set
+z to a default (1,0) if the orbit was not caught by a star.  If the star
+is too far away or too small to catch many orbits, the majority of the
+screen will be one color (color 0 when using decomposition coloring).  If
+you use stars off of the origin, you may want to increase the size and
+set "pixelflag=0" in the formula, to prevent the image from being taken
+over by one huge rogue star.
+
+One final note:  This method uses angles a lot to figure out which side
+belongs to whom.  Consequently, the ability to rotate the star is a bit
+limited.  If the rotations are kept to the range of 0 to 36 degrees, there
+shouldn't be any problems.  Rotations outside this range (try it with the
+"star" formula) will result in branch cuts as the formula gets its angles
+confused.  Fortunately, since the star is symmetric, there shouldn't be
+a need to rotate it beyond those bounds.
+
+
+starnear1 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ; sample of "near to 5 point star" coloring
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_jul center-mag=-0.358/0.651/8
+  params=0/1/0/0/0.25/18 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=zrM<40>zzzzzzyyz<60>QQzPPzPP\
+  zPPy<61>000000110<60>yn0zo0zo0zo1<19>zrL cyclerange=0/255
+  savename=starnr1.gif }
+
+starnear2 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ; sample of "near to 5 point star" coloring
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_jul center-mag=0/0/1.1/1/-90
+  params=0.28/0/0/0/-0.28/36 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=vlv<23>i1ih0hf0f<28>303\
+  101100<29>x99zAAzBB<30>zzz<30>i2ih0hg0g<29>202000000<30>\
+  y99zAAzCC<30>zzz<5>wnw cyclerange=0/255
+  savename=starnr2.gif }
+
+starnear3 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ;  Mandelbrot sample of coloring by nearest approach to 5 point star
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man center-mag=-1/0/0.56/1/-90
+  params=-2/0/0.25/36 float=y maxiter=100 inside=0 decomp=256
+  periodicity=0 colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>\
+  zz2zz0zy0<51>y20x00w00<30>200000000000000 cyclerange=0/255
+  savename=starnr3.gif }
+
+starbail1 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ; bails out when orbit leaves a 5 point star
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starbail_jul center-mag=0/0/0.25 cyclerange=0/255
+  params=0.3795135923319061/0.3349323012073617/0/0/5/18 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 colors=000<40>x00z\
+  00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z00z<41>000
+  savename=starbai1.gif }
+
+starbail2 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ; bails out when orbit enters a 5 point star
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starbail_jul passes=1 center-mag=0/0/1.1/1/-90
+  params=0.3/0/0/0/-0.5/36 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=000<15>zo0<14>zyvzzzxxz<13>\
+  SSzPPzOOw<14>000<15>zo0<14>zywzzzxxz<13>RRzPPzOOv<11>55B337\
+  223110<13>tj0xm0zo1<13>zxtzyxyyz<12>VVzTTzRRzPPyNNu<12>3361\
+  12220<14>yn0zo2<14>zyyyyz<13>SSzQQzOOx<14>111 cyclerange=0/255
+  savename=starbai2.gif }
+
+starbail3 { ; copyright Kerry Mitchell 09oct98
+  ;
+  ;  Mandelbrot sample of bailout out when moving inside a 5 point star
+  ;
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starbail_man center-mag=-0.407/0/0.813
+  params=1/0/-1/36 float=y maxiter=100 inside=0 decomp=256
+  periodicity=0 colors=000<35>x00z00z10<34>zx0zz0zz1<36>zzz<51>\
+  zz2zz0zy0<51>y20x00w00<30>200000000000000 cyclerange=0/255
+  savename=starbai3.gif }
+
+;========================================================================;
+;Date:	Fri, 9 Oct 1998 20:31:12 -0300 
+;From:	"Fliguer, Miguel" <M_Fliguer@miniphone.com.ar>
+;Subject: (fractint) This PAR has been shot !
+
+This one reminds me of Sonny Corleone after the ambush
+in "The Godfather" ;-)
+
+Uzi_sprayed   { ; by Miguel Fliguer - 1998
+                     ; Palette by Jacco Burger
+                     ; uses my PRUEBA_000
+                     ; uses floating point
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Prueba_000 function=sin/sqr
+  center-mag=1.33324/0.563791/0.06272244/1/-125 params=1/0/1/0 float=y
+  potential=250/200/0 decomp=256
+  colors=000112<15>325436534423<8>wuu<11>YJ9VF4SD4<5>421445<9>`THdWJfXJ<4>\
+  n`IoaIn`I<16>Y54X33Y65<13>skYuo`un`<38>bAI000<37>J7aK8bL8cM8dM8fN8gO9i<1\
+  0>O9aO9`O9`O9`<9>K9XJ8XJ8WI8V<26>112000000<10>112
+  savename=Uzi_spra.gif }
+
+;========================================================================;
+;Date: Fri, 09 Oct 1998 19:47:32 -0700
+;From: Mark Christenson <mchris@hooked.net>
+;Subject: Re: (fractint) 5 point star coloring methods
+
+At 01:19 PM 10/9/98 -0700, Kerry wrote:
+>Fresh from the, "Just because you can doesn't mean that you should" files,
+>:-) here are some formulas built around 5 point stars
+
+Well, obviously you should have!
+Your latest formula has lots of potential, but that's what we've
+come to expect.  You're spoiling us, Kerry!  :-)))
+
+If they weren't so hideously underpaid, you should have been a
+mathematics professor.
+
+
+Bud
+
+
+snm01               { ; (c) Bud 1998 (9 Oct)
+                     ; abusing the M-set with Kerry Mitchell's new formula
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=1 center-mag=-0.92544/0/0.56/1/-90
+  params=0.25/0/0.7/36 float=y maxiter=100 decomp=256 periodicity=0
+  colors=J5H<43>zzc<22>z32z00y00<54>20000000000K<28>FHVFIVGJWGJX<2>ILYIMYJ\
+  NZJN_<7>NRgORhOShPTi<5>SZlT_mU`nVanWbo<3>_fqagrbhsditfju<4>psxrtytvyvwyx\
+  yzzzz<30>W2WV0VU0U<13>G0GF0FG1FH2GI3G cyclerange=0/255
+  savename=snm01.gif }
+
+;========================================================================;
+;Date: 09 Oct 1998 20:38:30 -0700
+;From: kathy roth <kroth@well.com>
+;Subject: (fractint) Halloween pars
+
+Halloween is coming.... I was trying for some reason to turn Damien Jones'
+dmj-mand-triangle into a Julia (not that successful) but got the first one here.
+It's kind of, errr..disturbing.
+
+Halloween1         { ; kathy roth 1998
+                     ; droz map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul-Triangle
+  center-mag=-0.291482/0.983216/0.7942555
+  params=0.5/1/1/0/0/0 float=y
+  outside=real invert=1/0/0
+  colors=000mUR<9>W00G00<14>kkk<13>W00\
+  000000<14>xHB<15>T55G00<15>zWG<30>G0\
+  0WGG<14>zW0<15>751C92<14>v`4<14>KF3HD\
+  3G00<30>zWW<15>I11<15>xkf<4>oXT
+  savename=Hallowe1.gif }
+
+Halloween2         { ; kathy roth 1998
+                     ; droz map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul-Triangle
+  center-mag=1.28209/0.646343/4.616079
+  params=-0.5/-1/100/0/0/0 float=y outside=real
+  colors=000dGG<7>I11<15>xkf<15>W00G\
+  00<14>kkk<13>W00000000<14>xHB<15>T55G0\
+  0<15>zWG<30>G00WGG<14>zW0<15>75\
+  1C92<14>v`4<14>KF3HD3G00<30>zWW<6>gII
+  savename=Hallowe2.gif }
+
+Halloween3         { ; kathy roth 1998
+                     ; modified Wizzle map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks2 function=tan/sqr/atanh
+  center-mag=0.0285419/1.05154/1.446057
+  params=1/0/0.04/150/8/30 float=y outside=summ
+  colors=000wAP<28>C0Bhrz<28>60Azpa<27>LG6\
+  JE4KDU<28>98FUsz<28>6CFf7K<28>G1\
+  DKHU<28>98Fb4I<28>G1D000<13>000
+  savename=Hallowe3.gif }
+
+
+;========================================================================;
+;Date: Sun, 11 Oct 1998 09:43:12 -0700
+;From: kathy roth <kroth@well.com>
+;Subject: (fractint) gravijul triangle
+
+Damien Jones wrote:
+
+>>The triangle-inequality Julia formulas I posted last night
+>>are not quite correct.  They will produce images which are
+>>interesting,but are slightly incorrect.  The two formulas below are 
+>>the correct versions;
+>>I have named them differently so that if you have already used last
+>>night's formulas, you will still be able to reproduce them.
+
+
+Thanks for posting those.  I made these last month-
+not at all sure what it was "supposed" to be doing
+but pretty sure it wasn't this, but I liked them anyway.
+Also, they nearly but don't quite have y-axis symmetry.
+
+tri3               { ; kathy roth triangle jellyfish
+                    reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul1-Triangle function=log/tan/sqr
+  center-mag=0.0294433/0.00645471/2.899684/1/-90
+  params=100000/1/100/4/4/4 float=y
+  outside=real invert=1/0/0
+  colors=000BBM<14>WWz<7>J9J<15>zWz<7>J0\
+  9<15>z0W<7>J90<15>zW0<7>JJ0<15>zz0\
+  <7>99J<15>WWz<7>0J9<15>0zW<7>0JJ<14>0xx\
+  0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8>px9<6>FGI
+  savename=tri3.gif }
+
+tri4               { ; kathy roth 8-98
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul1-Triangle function=log/tan/sqr
+  center-mag=9.46552/5.90557/2.321759/1/-17.5
+  params=100000/1/100/4/4/4 float=y outside=atan invert=1/0/0
+  colors=000BBM<14>WWz<7>J9J<15>zW\
+  z<7>J09<15>z0W<7>J90<15>zW0<7>JJ0<15>zz0\
+  <7>99J<15>WWz<7>0J9<15>0zW<7>0JJ<14>0xx\
+  0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8>px9<6>FGI
+  savename=tri4.gif }
+
+tri5               { ; kathy roth 8-98
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul1-Triangle function=log/tan/sqr
+  center-mag=16.353/-0.0326252/0.3562583/1/-90
+  params=100000/1/100/4/4/4 float=y
+  outside=atan invert=1/0/0
+  colors=000BBM<14>WWz<7>J9J<15>zWz<7>J0\
+  9<15>z0W<7>J90<15>zW0<7>JJ0<15>zz0\
+  <7>99J<15>WWz<7>0J9<15>0zW<7>0JJ<14>0xx\
+  0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8>px9<6>FGI
+  savename=tri5.gif }
+
+tri1               { ; kathy roth 8-98
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul1-Triangle function=log/recip/sqr
+  center-mag=2.07004/0.00592987/0.9579595/1.0253/-89.119/-1.737
+  params=100000/1/100/4/4/4 float=y outside=atan
+  colors=000000CCP<13>WWz<7>J9J<15>zWz<7>J0\
+  9<15>z0W<7>J90<15>zW0<7>JJ0<15>\
+  zz0<7>99J<15>WWz<7>0J9<15>0zW<7>0JJ<14>0xx\
+  0zz2tt<6>JE9<15>yjU<7>BJF<15>_\
+  zn<6>LO3<8>px9<6>FGI
+  savename=tri1.gif }
+
+tri2               { ; kathy roth 8-98
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=jul1-Triangle function=log/recip/sqr
+  center-mag=1.49584/0.0518169/0.7929758/1.0253/-89.119/-1.737
+  params=100000/1/100/4/4/4 float=y outside=atan
+  colors=000BBM<14>WWz<7>J9J<15>zWz<7>J0\
+  9<15>z0W<7>J90<15>zW0<7>JJ0<15>zz0\
+  <7>99J<15>WWz<7>0J9<15>0zW<7>0JJ<14>0xx\
+  0zz2tt<6>JE9<15>yjU<7>BJF<15>_zn<6>LO3<8>px9<6>FGI
+  savename=tri2.gif }
+
+;========================================================================;
+;Date: Sun, 11 Oct 1998 20:00:25 +0100
+;From: "Kim Bach Petersen" <kimb@post8.tele.dk>
+;Subject: (fractint) High iteration zooms
+
+I just did some high iteration zooms into the mandelbrot set
+and here's the PAR's for those who find it worth the wait...
+
+The impatient ones can see the pictures  in smalish 400x300 format at my
+website:
+
+http://home8.inet.tele.dk/kimb/
+
+You might want to bypass my danish introductory page and go directly to the
+pictures:
+
+http://home8.inet.tele.dk/kimb/fractal.htm
+
+Enjoy, Kim :-)
+
+
+kbp1               { ; > 302 iterations 20:45 @ 800x600
+                     ; Mandelbrot by Kim Bach Petersen 1998
+  reset=1960 type=mandel
+  center-mag=-0.75017936855172060/-0.01161074644406282/663682.8
+  params=0/0 float=y maxiter=20000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  savename=kbp1.gif }
+
+kbp2               { ; > 5270 iterations 57:40 @ 800x600
+                     ; Mandelbrot by Kim Bach Petersen 1998
+  reset=1960 type=mandel
+  center-mag=-0.75017938225569000/-0.01161072996831062/4880021
+  params=0/0 float=y maxiter=100000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  savename=kbp2.gif }
+
+kbp3               { ; > 6758 iterations 55:47 @ 800x600
+                     ; Mandelbrot by Kim Bach Petersen 1998
+  reset=1960 type=mandel
+  center-mag=-0.75017954823748270/-0.01161053697134931/1.64732e+009
+  params=0/0 float=y maxiter=100000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  savename=kbp3.gif }
+
+kbp4               { ; > 13236 iterations 1:21:37 @ 800x600
+                     ; Mandelbrot by Kim Bach Petersen 1998
+  reset=1960 type=mandel
+  center-mag=-0.75017954826745840/-0.01161053694982410/7.162162e+010
+  params=0/0 float=y maxiter=100000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  savename=kbp4.gif }
+
+kbp5               { ; > 19454 iterations 2:12:10 @ 800x600
+                     ; Mandelbrot by Kim Bach Petersen 1998
+  reset=1960 type=mandel
+  center-mag=-0.75017954826734170/-0.01161053695008511/7.067146e+011
+  params=0/0 float=y maxiter=100000
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  savename=kbp5.gif }
+
+;========================================================================;
+;Date: 14 Oct 1998 17:32:17 +0100
+;From: "Kim Bach Petersen" <kimb@post8.tele.dk>
+;Subject: Re: (fractint) High iteratio
+
+Thanks to you all for your kind interest in my site, I really appreciate it!
+
+I have tried out all your advise:
+
+- Emptying my browser cache made no difference for me: the site still loaded
+ok from my web-hotel.
+
+- I did some minor corrections on HTML - maybe most important I found an
+extra " (quotemark) in index.html, that might have hidden the end-tags...
+(my browser didn't care)
+
+- Someone suggested putting frames-stuff inside <body> tags, but that gave
+me a blank page! Hmm!
+
+Having tested it to the best of my ability, I'd say it works...
+(If not, I'll redo the whole thing without frames.)
+
+Please look by again and feel free to complaint if it doesn't load!
+
+http://home8.inet.tele.dk/kimb/fractals/
+
+To be just a bit on topic I include a par...
+
+Thank you all, Kim!
+
+nicejulia          { ; Kim Bach Petersen 1998
+  reset=1960 type=julia passes=1
+  center-mag=1.11022e-016/1.11022e-016/1.037344/1/62.499
+  params=-0.09703580179264795/0.6526370578250215 float=y maxiter=40000
+  colors=000xzNyzMzzL<30>22d00e00d<25>008006005003002000<29>00J00K00L00M00\
+  M<27>00d00e01e02e<24>0Ye0_e0`e0be0ce0ee<5>3hh4ii5jj6kk6kk<17>JxxJxxKyyKy\
+  yLzz<60>xzN
+  savename=nicejuli.gif }
+
+;========================================================================;
+;Date: Fri, 16 Oct 1998 00:36:39 -0400
+;From: Paul DeCelle <PaulDC@prodigy.net>
+;Subject: (fractint) 2 Pars
+
+Here's a couple pars from a Bill Decker formula posted some time back. 
+Both are the same except for coloring.  The first is with Bill's
+original colormap; the second uses the damien3.map from the "allmaps"
+collection.  I found these during commercials tonight while watching the
+Lions beat the Packers 27-20  :-( 
+
+Calculation time is roughly 4 to 5 minutes for each...
+
+Regards, Paul
+
+
+
+Blue_Highway       { ; With Bill Decker's colormap
+                     ; "bills_diff_delt1" formula
+                     ; 10/15/98 Paul DeCelle
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=bills_diff_delt1 function=atan passes=1
+center-mag=-0.280727/-0.910809/2.498768/1.0617/76.965/15.327
+params=0.06/0/-3.85278/0/0.00178/0.002 float=y potential=255/100/0
+colors=000C30<3>000<17>000100311<9>J77L88N99PAAQBA<22>zk8<22>RC9PAAOAA<1\
+3>211000000<13>000000222<22>zzz<23>000<16>000<4>G40K50L50<11>cD3dD4fE4hF\
+5iH6<11>vdLwfMxhNzkPyiOxgN<10>lM9kK8jI7hF5gF5eE5<10>Q81O71M61K50I50F40
+savename=Blue_Hig.gif }
+
+Organ_Transplant   { ; Very organic looking
+                     ; Paul DeCelle from Bill Decker's
+                     ; "bills_diff_delt1" formula
+                     ; 10/15/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=bills_diff_delt1 function=atan passes=1
+center-mag=-0.280727/-0.910809/2.498768/1.0617/76.965/15.327
+params=0.06/0/-3.85278/0/0.00178/0.002 float=y potential=255/100/0
+colors=000606304102010<4>0B10D10F10H20J20L20N2<2>0T40V40X3<9>0p6<4>cze<3\
+>0s8<5>0g60e60c4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>0000101221532653863A\
+84DA5EB5HB<2>7NG8PI8RJ9TKAVNAXM<5>EhWFjYFlYGn_Gp`Prd<3>zzz<2>_ulRsgHqaHo\
+`GmZFkXFiX<5>BYOAWMAUL9SK<3>7KE6IC5GB5DA<5>121000001023025047049<5>0BL0D\
+N0DP<4>0KZ0L`0Mb0Nd0Of0Qh<3>0Up4Yr8atCgvGkxKqz<4>0Vq<13>0FQ0DO0DM<3>08E0\
+6C06A048046024012000100<11>P0JR0LT0NV0PX0P<2>b0Vd0Wf0Yh0Zj0`<2>p0e<4>zUx\
+yOuwIquCns6iq0g<2>k0bi0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0AA09807
+savename=Organ_Tr.gif }
+
+;========================================================================;
+;Date:	Fri, 16 Oct 1998 09:44:14 -0300
+;From:	"Fliguer, Miguel" <M_Fliguer@miniphone.com.ar>
+;Subject: RE: (fractint) High iteration zooms
+
+Paul Derbyshire[SMTP:pderbysh@usa.net] wrote :
+ 
+>>Won't the search engines find this in the body of the html
+>>anyways? Or is this used to make it find "mandelbrot" on your home page which
+>>actually only links to a "fractal gallery"?
+
+AltaVista (and probably other search engines) gives high "priority" (i.e. it
+shows it closer to the top on the results page) to a web page which has the 
+keyword in the META tag instead of having it in the body. The benefits are obvious, 
+and AltaVista even recommend this technique on their website.
+
+A par to stay on topic :
+
+alien01            {; Reminds me of the ID4 ships
+		; (c) Miguel Fliguer 1998
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=test01
+  function=atan/ident center-mag=0.0864542/-0.826029/1.338077/0.8065
+  colors=CCCCMs<15>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
+  19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>\
+  ECsCCsCEs<2>CKs
+  savename=alien01.gif }
+
+;========================================================================;
+;Date:	Fri, 16 Oct 1998 10:08:32 -0300
+;From:	"Fliguer, Miguel" <M_Fliguer@miniphone.com.ar>
+;Subject: RE: (fractint) www.useit.com: Don't waste your time.
+
+ Paul Derbyshire[SMTP:pderbysh@usa.net]wrote
+
+>>3. Most users of the Fractint-list are English speaking. 
+
+"Explain the logic underlying that conclusion, Sir !"  
+	-  Monty Python, "The Cheese Shop" -
+
+All users of this list post to it in English (nothing to do to their native
+language). Did anybody perform a survey on the list to find the "dominant" nationality ?
+
+On the www.useit.com debate :  I could reach it without problems. But for
+the folks with screwed DNSs, they can try :
+
+http://209.24.40.3/        
+
+This is the IP of www.useit.com, according to my traceroute. 
+
+As usual, a par to stay fractal-related :
+
+raro2              {; Some weird H.P.Lovecraft entity ?
+		; (c) Miguel Fliguer 1998 - Uses my Prueba_000
+		; Palette by Jacco Burger (Thanks !)
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Prueba_000 function=sin/sqr
+  center-mag=1.33328/0.563737/1.964679/1/-125 params=1/0/1/0
+  potential=250/200/0 decomp=256
+  colors=000D5P<12>J7aK8bL8cM8dM8fN8gO9i<10>O9aO9`O9`O9`<9>K9XJ8XJ8WI8V<26\
+  >112000000<27>325436534423<8>wuu<11>YJ9VF4SD4<5>421445<9>`THdWJfXJ<4>n`I\
+  oaIn`I<16>Y54X33Y65<13>skYuo`un`<38>bAI000<23>C5O
+  savename=raro2.gif }
+
+;========================================================================;
+;Date: Fri, 16 Oct 1998 15:00:02 -0400
+;From: "Mitch Berger"<Mitch.Berger@henkel-americas.com>
+;Subject: (fractint) First postings
+
+Well, it has taken me more than just a couple of days to screw up the
+courage to post these pars. They were "discovered" while trying to learn
+something in Winfract 18.21. Some were refined in Fractint, after I began
+to understand(?) some. I hope you like them as much as I do. I know I have
+enjoyed those sent over the last 3-4 weeks.
+
+***Mitch Berger***
+
+One_Man's_Hell     { ; Why Me Lord
+                     ; Why not?
+  reset=1821 type=manlam(fn||fn) function=sin/tan
+  corners=-0.6166992/0.533844/0.8913269/1.7537842 params=0/0/10
+  maxiter=1500 inside=bof61 outside=imag
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>\
+  z10z00z00y00<30>c00b11a11`22_22<25>FFF
+  savename=One_Mans.gif }
+
+Blue_Tacos         { ; Dreams after too much Mexican food
+                     ; Early exploration
+                     ; Before I knew about .frm
+  reset=1821 type=complexbasin
+  center-mag=-0.06257822277850811/+0.23789649415700030/0.9374022
+  params=3.3/0.5/1/0.00055 float=y maxiter=500 bailout=3 fillcolor=3
+  inside=bof61 outside=mult periodicity=0
+  colors=00000002202640602842262206262A06644606844882846008204O46408646666\
+  208846864E48066666848484G48668248886848A6864A268868AA6A68C8884AA88AA8688\
+  C8A2C6E4C688I6C28A888K8AAC8A8AC6C8AAAAAC8C86CEAAE8CAE8GE8IACAEAAACCI8EAE\
+  4CCAG8MCCCCCEAEA8EGCCGGAGGC6GAIAEECEACECCEEECKICACEGG8aEEEKAKCGAEEGMAICG\
+  EEGAEGEIEEEGGMCGEGIAKAGGGGGICIKGIGGIIGIKEIQKIAGIMGKCEIUGIQIIQMIGGKMIIUIK\
+  KGKQIKMMIMMKCIKOGMKEMQIKQMIQIKSGMOEMUIKUMIUIKWMKMKMKIMQIMSGMYKMOIMUKMQIM\
+  WKMSKMUKMWOMMKQCGMiGQQOMQKMaMMYGQUOMUMOQMOUOMcKSMOMiMSQSOWUQGSO_MSaUQSKU\
+  YMScMUUSQcUQ_WQWSQiMUk_SMMWcUScWS_MWeQWYUSiSWWMYaWSiSW_SWaSWcUW_cSWgSMSY\
+  _cS_UY_SYeUYaUYcSYi_UiS_cSa_U_iY__UacWacWcYcYic__WakYc__eM_aikYicc_maQce\
+  Yce_ma_ica_icgecgeeci__ikgekocakgcgiekgemgcog_mgggkcik_ogemkQmgkikaqgcoi\
+  _oiagkmmkYgmekkegmgkmcmmakmgmmcom_mmekoeqmaomgqmcqmezzz
+  savename=Blue_Tac.gif }
+
+No1_image          { ; Boy was I Proud
+                     ; Early exploration
+                     ; Before I knew about .frm
+  reset=1960 type=lambda(fn||fn) function=sinh/cosh
+  center-mag=+0.00056457499999985/+0.00207519499999997/0.3335641/0.9996
+  params=1/0.1/2 bailout=100 
+  colors=000<61>49J49J5AK5BK<13>7YR8_SA`S<14>ppD<14>pR2pP1oP2<29>21a00c00c\
+  <109>000
+  savename=No1_imag.gif }
+
+Question           { ; Birth or Cannibalism?
+                     ; Early exploration
+                     ; Before I knew about .frm
+  reset=1821 type=mandelfn function=sin
+  center-mag=-2.39249420500000000/+2.41904449500000000/2.45863/0.9996
+  params=0/0 inside=bof61 outside=summ 
+  colors=000000<29>0k00m01m0<29>ky0mz0mz1<30>zzz<46>zz2zz0yz0<45>2z00z00y0\
+  <59>020000000
+  savename=Question.gif }
+
+Muted_Peacock      { ; Liked the Colors
+                     ; Early exploration
+                     ; Before I knew about .frm
+                     ; used x-temple.map from Fractextra
+  reset=1960 type=newtbasin
+  center-mag=1.18794e-014/7.54952e-015/0.6666667 params=12/0.99
+  colors=000zcEzeIzgM1DB<30>6icGC4XP8000<56>6F2000<62>lAC010<38>1fX1gY0011\
+  hY<3>1la2nb3nb<46>snF
+  savename=Muted_Pe.gif }
+
+Drafted_Doves      { ; Tesseral
+  reset=1821 type=manlam(fn||fn) function=log/log passes=t
+  corners=-0.8055366/0.461012/-1.171114/1.37984 params=0/0/1 float=y
+  maxiter=2500 fillcolor=0 inside=bof61 outside=mult decomp=256
+  colors=0010PF0iG1AH2wI3ZK3LL4mM56N6VP6cQ7GR8qS92U9RVAgzBCyCuxCYvDMuEktF8\
+  sFzqGapHIoIonI4lJSkKejLEiLtgMWfNOeOidOAbPxaQ_`RK_RnYS5XTUWUc1UG2Vr3z14zQ\
+  6yh7xB8wv9wYBvMCulDt7EtzGsbHrHIqpJq3LpSMofNnDOntQmXRlNSkjTk9Vjyzi`yhJxhn\
+  wg5ufTtedseFrdspc0obPnbhmaBk`wj_Zi_LhZmfY6eXVdXbcWHa0q`12_2RZ2gX3CW4u05X\
+  25N36k47858y78a89I9AoAB4CBTDCeEDEFEsHE0IFOJGiKHAMHxNI_OJKPKmRK6SLUTMcUNG\
+  0NryO1xPQwQgvQCtRvsSYrTMqTloU7nVzm0alzIjypix3hxSgwfevDdutcuWbtO`sj_r9Zrx\
+  Yq`WpJ0on1o53nU4md5lF6lr8k19jPAihBiBDhwEgZFfLGflIe7JdVKcbLcHNbqOa2P`RQ`f\
+  S_DTZuUYXVYNzXkxW8w0yv1`u1Js2or34q4Tp4en5Em6sl70k7Pi8ih9AgAwfA_dBKcCmbD6\
+  aDV_EcZFGYGqXG20HQ1Ig2JC4Jv5KY6LM7Mk9M8ANzBOaCPIEPpFQ3GRSHSeJSEKTtLUWMVO\
+  OVjPz9QyxRy_TxKUwnVv5zvUyudwtFvsrus1trQrqhqpBppvooZmnLlmlkm7jl0hkbgjHfjp\
+  ei3chRbgfagD`fuZeXYdNXdj0c91by2a`3aJ5`o6_47ZT8ZdAYFB000
+  savename=Drafted.gif }
+
+Grn_Doves          { ; B Trace
+  reset=1821 type=manlam(fn||fn) function=log/log passes=b
+  corners=-0.8055366/0.461012/-1.171114/1.37984 params=0/0/1 float=y
+  maxiter=2500 fillcolor=0 inside=bof61 outside=mult decomp=256
+  colors=0010PF0iG1AH2wI3ZK3LL4mM56N6VP6cQ7GR8qS92U9RVAgzBCyCuxCYvDMuEktF8\
+  sFzqGapHIoIonI4lJSkKejLEiLtgMWfNOeOidOAbPxaQ_`RK_RnYS5XTUWUc1UG2Vr3z14zQ\
+  6yh7xB8wv9wYBvMCulDt7EtzGsbHrHIqpJq3LpSMofNnDOntQmXRlNSkjTk9Vjyzi`yhJxhn\
+  wg5ufTtedseFrdspc0obPnbhmaBk`wj_Zi_LhZmfY6eXVdXbcWHa0q`12_2RZ2gX3CW4u05X\
+  25N36k47858y78a89I9AoAB4CBTDCeEDEFEsHE0IFOJGiKHAMHxNI_OJKPKmRK6SLUTMcUNG\
+  0NryO1xPQwQgvQCtRvsSYrTMqTloU7nVzm0alzIjypix3hxSgwfevDdutcuWbtO`sj_r9Zrx\
+  Yq`WpJ0on1o53nU4md5lF6lr8k19jPAihBiBDhwEgZFfLGflIe7JdVKcbLcHNbqOa2P`RQ`f\
+  S_DTZuUYXVYNzXkxW8w0yv1`u1Js2or34q4Tp4en5Em6sl70k7Pi8ih9AgAwfA_dBKcCmbD6\
+  aDV_EcZFGYGqXG20HQ1Ig2JC4Jv5KY6LM7Mk9M8ANzBOaCPIEPpFQ3GRSHSeJSEKTtLUWMVO\
+  OVjPz9QyxRy_TxKUwnVv5zvUyudwtFvsrus1trQrqhqpBppvooZmnLlmlkm7jl0hkbgjHfjp\
+  ei3chRbgfagD`fuZeXYdNXdj0c91by2a`3aJ5`o6_47ZT8ZdAYFB000
+  savename=Grn_Dove.gif }
+
+More_doves         { ; guess trace
+                     ; For a friend who likes green
+  reset=1821 type=manlam(fn||fn) function=log/log
+  corners=-0.8055366/0.461012/-1.171114/1.37984 params=0/0/1 float=y
+  maxiter=2500 fillcolor=0 inside=bof61 outside=mult decomp=256
+  colors=0010PF0iG1AH2wI3ZK3LL4mM56N6VP6cQ7GR8qS92U9RVAgzBCyCuxCYvDMuEktF8\
+  sFzqGapHIoIonI4lJSkKejLEiLtgMWfNOeOidOAbPxaQ_`RK_RnYS5XTUWUc1UG2Vr3z14zQ\
+  6yh7xB8wv9wYBvMCulDt7EtzGsbHrHIqpJq3LpSMofNnDOntQmXRlNSkjTk9Vjyzi`yhJxhn\
+  wg5ufTtedseFrdspc0obPnbhmaBk`wj_Zi_LhZmfY6eXVdXbcWHa0q`12_2RZ2gX3CW4u05X\
+  25N36k47858y78a89I9AoAB4CBTDCeEDEFEsHE0IFOJGiKHAMHxNI_OJKPKmRK6SLUTMcUNG\
+  0NryO1xPQwQgvQCtRvsSYrTMqTloU7nVzm0alzIjypix3hxSgwfevDdutcuWbtO`sj_r9Zrx\
+  Yq`WpJ0on1o53nU4md5lF6lr8k19jPAihBiBDhwEgZFfLGflIe7JdVKcbLcHNbqOa2P`RQ`f\
+  S_DTZuUYXVYNzXkxW8w0yv1`u1Js2or34q4Tp4en5Em6sl70k7Pi8ih9AgAwfA_dBKcCmbD6\
+  aDV_EcZFGYGqXG20HQ1Ig2JC4Jv5KY6LM7Mk9M8ANzBOaCPIEPpFQ3GRSHSeJSEKTtLUWMVO\
+  OVjPz9QyxRy_TxKUwnVv5zvUyudwtFvsrus1trQrqhqpBppvooZmnLlmlkm7jl0hkbgjHfjp\
+  ei3chRbgfagD`fuZeXYdNXdj0c91by2a`3aJ5`o6_47ZT8ZdAYFB000
+  savename=More_dov.gif }
+
+;========================================================================;
+;Date: Fri, 16 Oct 1998 16:53:00 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: Re: (fractint) FOTW par file
+
+Paul,
+
+>> BTW, some nice images in the SG_FOTW.par,
+
+  Thanks!
+
+>> but those three that take a long time (96 hours ??) will have to wait.
+
+
+  Yes, 96 hours at 1600x1200 (P166), it's a deep zoom.
+
+  Here are 7 quickies:
+
+6M003800.GIF       { ; .                                    t=  0:02:31.44
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.25186314760508300/+0.01945241199478459/8000 params=0/0
+  float=y maxiter=16384 inside=0
+  colors=000D10<6>TE0WG0XI0<14>xq0zt0zs0<18>rQ0rO0qM0pL0<10>_A0Y90W80U70S6\
+  0<5>F00<3>J06K08K09K1AL2C02A<16>0GR1GS3HT<13>TVfUWgWYhY_i<12>vww<20>RbnP\
+  `mO`l<13>8OZ6NY4LW3KV<4>1AH18E05A<7>1LU2NX4OX<12>UafWbgZdhafh<7>zyj<12>z\
+  sMzrKzqK<2>wkJwjJvhJugJteI<10>iNChLBfJAdIA<9>B00
+  savename=6M003800.gif }
+
+6M007209.GIF       { ; .                                    t=  0:20:14.67
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-0.09703580219119727/+0.65263705725587050/2.09204e+007/1/124.\
+  998 params=0/0 float=y maxiter=20000
+  colors=000fVc<14>uuuwwwvww<33>22N00L11M<32>uutwwvwwt<22>ysMzrKzqK<13>oTG\
+  nRFlQE<13>A00<8>K00<3>TC0<14>zwzywz<30>J`iH_hI_h<23>www<15>SFQ<4>`MYbO_c\
+  P`dRaeTb
+  savename=6M007209.gif }
+
+6M007210.GIF       { ; .                                    t=  0:18:17.01
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-0.09703580219119727/+0.65263705725587060/2.09204e+007/1/124.\
+  998 params=0/0 float=y maxiter=10000 inside=0 logmap=1167
+  colors=0002PF<3>AA0<5>U00<10>zm0<6>xU0<5>UB1P82K52E13C26<3>46K37N38O39P4\
+  AQ4BR<16>VdAXf9Yg9_h9<12>wx9yz9yy9<12>q_2pY1oW0nV0mU0<9>bK0aJ0`I0ZG0YF0W\
+  E0<7>L40<5>CG1AI2AJ2<14>H`8<12>wrB<11>yyvzzzyzx<16>_oRYnPXlO<14>A55<14>r\
+  bjuemviowmr<9>vzU<13>0bT<5>0SI
+  savename=6M007210.gif }
+
+6M007298.GIF       { ; .                                    t=  0:01:59.24
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94156372319501500/+0.00015082209072200/2.980887e+007
+  params=0/0 float=y maxiter=3000 inside=0
+  colors=0008HT6FS<2>6FR7EQ7EP8DP9CO<16>J1BK0AM3A<14>zt0<13>tb0ta0s_0rZ0<6\
+  >iL0hJ0gI0fH0<11>Q50P50O40N30L30K20J10H00<39>jfbkgclhe<11>vuuwwwvww<2>ru\
+  wqtvosvnrulqt<3>fmrelqdkpcjobin<27>4EM2CK1AH18E05A<6>1JR1LU3MV<26>vyw<20\
+  >LT`JR_HPYFNXDLWBKV9IU
+  savename=6M007298.gif }
+
+6M008121.GIF       { ; .                                    t=  0:32:41.41
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1950 type=mandel passes=1
+  center-mag=-0.09703580179264795/+0.65263705782502150/1.216303e+008/1/102\
+  .498 params=0/0 float=y maxiter=40000 inside=0
+  colors=000eYU<8>nhdojfojg<13>vvuwwwvww<2>ruwqtvosvnrulqt<3>fmrelqdkpcjob\
+  in<27>4EM2CK1AH18E05A<6>1JR1LU3MV<26>vyw<4>nrrlqqjophmo<9>RYePWdPWd<13>K\
+  PTJOSJNSJMRJKQ<11>J4EI2DK3D<11>gL9iN9jO9kQ8<2>oV7qX6qY6<19>yq3zs2xq2<18>\
+  N51K20J10H00<17>VKHWLIXMK<7>dWT
+  savename=6M008121.gif }
+
+6M008122.GIF       { ; .                                    t=  0:30:59.52
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-0.09703580179264795/+0.65263705782502150/1.216303e+008/1/102\
+  .498 params=0/0 float=y maxiter=30000 inside=0 logmap=1748
+  colors=0000VL0UK0SI<3>8E4AA0D90<4>U00<10>zm0<6>xU0<5>UB1P82K52E13C26<3>4\
+  6K37N38O39P4AQ4BR<16>VdAXf9Yg9_h9<12>wx9yz9yy9<12>q_2pY1oW0nV0mU0<9>bK0a\
+  J0`I0ZG0YF0WE0<7>L40<5>CG1AI2AJ2<14>H`8<12>wrB<11>yyvzzzyzx<16>_oRYnPXlO\
+  <14>A55<14>rbjuemviowmr<9>vzU<13>0bT<2>0XN
+  savename=6M008122.gif }
+
+6M008248.GIF       { ; .                                    t=  0:03:25.05
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94156372027722900/+0.00015081593477735/2.4878e+008
+  params=0/0 float=y maxiter=3000 inside=0
+  colors=0002CK<2>05A<6>1JR1LU3MV<4>DS_FU`HVaJXbLYc<17>vwx<20>LT`JR_HPYFNX\
+  DLW<2>8HT6FS6FS<2>7EQ7EP8DP9CO<16>J1BK0AM3A<14>zt0<13>tb0ta0s_0rZ0<12>bI\
+  0aH0`G0ZE0YD0WC0<9>J20H00H10<40>lhemifnjgnkioljpnl<6>vuuwwwvww<2>ruwqtvo\
+  svnrulqt<3>fmrelqdkpcjobin<27>4EM
+  savename=6M008248.gif }
+
+  Cheers,
+
+        - Sylvie
+
+;========================================================================;
+;Date: Sat, 17 Oct 1998 10:38:00 -0400 (EDT)
+;From: Jim Muth <jamth@mindspring.com>
+;Subject: (fractint) Curved hyperspace fractal slices
+
+At 04:40 PM 10/16/98 -0600, Xylen wrote:
+
+              <snip>
+>With fractint we generate fractals that are projected on to a 
+>2-D plane. Does the appearance of a fractal changed if it is 
+>projected onto a sphere? I don't mean just warping a 2-D image 
+>into a sphere, but actually using spherical coordinates to 
+>calculate the orbits, and THEN projecting the 3-D image back 
+>onto a 2-D plane. Or is it really the same thing?  Sorry if 
+>this question is redundant, but I'm trying to lay the 
+>groundwork for understanding multi-dimensional fractals.
+
+Actually many of the formulae in Fractint already do exactly 
+this thing when various functions are applied to Z and C.  The 
+par file and formula I have attached below slice a curved 
+section of the 4-D Julibrot -- a section that is tangent to 
+the M-set at the longitude of Seahorse Valley -- and project 
+it onto the flat 2-D plane of the screen.
+
+The shapes of these curved slices can become quite complex, and 
+being curved in 4-D space are frequently impossible to visualize.
+
+
+Jim Muth
+jamth@mindspring.com
+
+
+hyper-dimension    { ; draws fast
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Test0622a function=cosxx/ident
+  center-mag=0.144146/3.10862e-015/0.7186817
+  params=0/0/-0.75/0 float=y maxiter=95 bailout=25
+  inside=0 logmap=yes symmetry=none periodicity=10
+  colors=000KDa<2>Z1g<6>tla<5>YF5<5>TmQ<6>qVD<6>us0<5>GW7\
+  <2>tK4<3>k2A4nr<2>fho<2>zttlslZrd<2>WwSI0W<2>Ea3LZk`Ipo\
+  2u<2>oPIoW5qK6s96JLuWzD2xS<3>SRohbaxnP<2>ndRK8IS5CZ36gB\
+  EpJL<2>U9fXDN_H4qahcQaQFV<3>iOuRNs8NrUD_o4I5`B<3>2IsKTY\
+  abDfDAm99s58<3>8IyQXxgjxJwDNsHQpKTmN<2>ia3<2>DQH8YY3en\
+  <3>vL3hWFVfQdcNn`LhcTcf`<2>jLR<3>vYZ<2>usO<2>z_R<3>ZldD\
+  AAe0RSILF_G<2>8Ob<2>2qt<3>d1I_KWWbiSuw<2>9yx<2>ZcL<2>ts\
+  LZDEaZKWhEQq8Lz2<3>5D8CUWJisLaeNUSOMF<3>aK8JMLjK0xDF<3>\
+  JfbwAL<3>tpeVY`6GX<3>l1i<3>vGrTOY0WE<3>cToODw<3>hm7<3>n\
+  CD_`ELyFNhXPTm<3>7ma<2>GjJ
+  savename=hyper_di.gif }
+
+;========================================================================;
+;Date: Sat, 17 Oct 1998 23:18:27 -0700
+;From: kathy roth <kroth@well.com>
+;Subject: (fractint) pars- stars and kaleidoscopes
+
+Last month I was looking at Linda Allison's star
+formula (included below) and I found that if you use
+the initialization from it ( c=log(sqr(sqr(pixel))*pixel)*0.2:)
+that it makes a star or kaleidoscope out of almost anything.
+I spent a ridiculous amount of time doing this- here's a few,
+and a couple of quat-celtics.
+
+
+1star1              { ; 9-98 kathy roth
+                     ; modified Wizzle map
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=starAstroid_Mset
+  center-mag=3.665e-006/-8.65e-007/0.6426663
+  params=0.2001/1/8/15  float=y outside=summ
+  colors=000<14>000uzz<13>MawRWv<11>335\
+  000000www<28>000z0z<7>c0Z`0V_0U<18>\
+  000www<28>KKK0zz<28>0XXccc<28>000w\
+  ww<15>U0m<12>101www<28>000
+  savename=1star1.gif }
+
+1star2              { ; color map only
+                      ; 9-98 kathy roth
+    colors=000KSQajQ<27>AG6zqCzq\
+  CspIzqC<19>qFApD9pD9<2>pD9wcB<7>qGApD9oC9<2>\
+  l68f87`A7QE6wxz<24>nFPmDNouy<24>Lgu\
+  KguJfuHetHdrHcq<4>F`kE_iEZhEYfDYe<8>B\
+  UVBUUBTTASR<38>4AA4CCC`VC`V<26>5GE8JD\
+  8ICCJ7<23>7C57B57B56A4EM8
+  savename=1star2.gif }
+
+1star3              { ; 9-98 kathy roth
+                     ; Paul Carlson's map
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=starFlexBalls_Mand function=exp
+  center-mag=3.665e-006/-0.0303318/0.9824556
+  params=2/0/1.999/0  float=y outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z\
+  88<28>O00zW0<28>c40zz0<28>aG00zR<28>0C40z\
+  z<28>0CCGGz<28>00O000<13>000
+  savename=1star3.gif }
+
+1star4              { ; 9-98 kathy roth
+                     ; modified Sylvie Gallet map
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=starFlexBalls_Mand function=log
+  center-mag=3.665e-006/-0.0303318/0.9824556
+  params=2/0/1.999/0  float=y outside=summ invert=1/0/0
+  colors=ERZlkX<3>hdLfbHfbH<22>KH5\
+  NVO<12>DIEiUAhS7fQ4<12>F92wtt<15>`NOZKLY\
+  KK<10>F99vuv<19>SNVQLTPKSOJQ<5>FCH\
+  llp<28>EEKmuu<18>DWXBUVBTU<7>6HI000<13\
+  >000mrrmrr<5>AUU<19>144000kkkgnhfmfelf<2>UdW<23>DIE
+  savename=1star4.gif }
+
+1star5              { ; 9-98 kathy roth
+                     ; Sylvie Gallet map
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=stargravijul function=tan/conj/atanh
+  center-mag=3.665e-006/-8.65e-007/0.6666663 params=0.1/1/1/0.1/-1/0
+  float=y outside=summ decomp=256
+  colors=akYakYYj_Uia<13>EP7DO5CM3\
+  AK0BJ0CI0<13>U30W53Y86_A9bEG<4>kPVmSYoU`\
+  qXdsZguajwcm<15>K0K<6>3IC0LA0L9<5>0P\
+  30Q20Q21Q2<6>5P2<8>hj0<6>bg0ag0_f1<3\
+  >Wd1Vd1Tc2Rb2<16>0P5<12>TF3WF3\
+  YE3`D2`D5<3>d9H<10>A00<9>`0C<26>zzm<4>ztPz\
+  rKyoJxlH<6>lN4jJ2iI2<11>X95W96V86\
+  U77T67<13>zpN<4>elW
+  savename=1star5.gif }
+
+1star6              { ; 9-98 kathy roth
+                     ; Sylvie Gallet map
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=stargravijul function=tan/conj/atanh passes=b
+  center-mag=3.665e-006/-8.65e-007/0.6666663
+  params=0.1/1/1/0.1/-1/0  float=y
+  fillcolor=22 outside=summ decomp=256
+  colors=akYakYYj_Uia<13>EP7DO5CM3A\
+  K0BJ0CI0<13>U30W53Y86_A9bEG<4>kPVmSYoU`\
+  qXdsZguajwcm<15>K0K<6>3IC0LA0L9<5>0P\
+  30Q20Q21Q2<6>5P2<8>hj0<6>bg0ag0_f1<3\
+  >Wd1Vd1Tc2Rb2<16>0P5<12>TF3WF\
+  3YE3`D2`D5<3>d9H<10>A00<9>`0C<26>zzm<4>ztPz\
+  rKyoJxlH<6>lN4jJ2iI2<11>X95W96V86U77T67<13>zpN<4>elW
+  savename=1star6.gif }
+
+1star7              { ; 9-98 kathy roth
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=stargravijul function=acos/conj/sqr
+  center-mag=0.0745911/0.02651/0.7228982/-1/270
+  params=1/0/0/0/6/0
+  colors=0000EE<6>0AA09909908908A08B<8>012\
+  000000<29>600C00I00w00V00<4>z00<\
+  21>zz0zn0<17>w0R00T<14>00w00z00z<63>y01z\
+  00z10z10<6>z50000<19>0YY0ZZ0YY<3\
+  5>0EE
+  savename=1star7.gif }
+
+1star8              { ; 9-98 kathy roth
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=stargravijul function=asin/tan/atanh
+  center-mag=-4.366e-005/-1.082e-005/0.3257565
+  params=1/0/0/0/6/0
+  colors=00009J0GU<7>0JY5037050J\
+  YB08<6>P0JR0LT0NV0PX0P<2>b0Vd0Wf0Yh0Zj0`<2\
+  >p0e<4>zUxyOuwIquCns6iq0g<2>k0b\
+  i0`g0_e0Z<3>Y0SW0RU0O<5>I0FG0EE0CC0A<3>30\
+  4102010<4>0B10D10F10H20J20L20N2<2>0T4\
+  0V40X3<9>0p6<4>cze<3>0s8<5>0g60e60c\
+  4<2>0Y40W30U4<5>0I20G20E20C20A1081<3>00\
+  00101221532653863A84DA5EB5HB<2>7N\
+  G8PI8RJ9TKAVNAXM<5>EhWFjYFlY\
+  Gn_Gp`Prd<3>zzz<2>_ulRsgHqaHo`GmZFkXFiX<5>BY\
+  OAWMAUL9SK<3>7KE6IC5GB5DA<5>121000\
+  001023025047049<5>0BL0DN0DP<4>0KZ0L`0M\
+  b0Nd0Of0Qh<3>0Up4Yr8atCgvG\
+  kxKqz<4>0Vq<13>0FQ0DO0DM<2>09G
+  savename=1star8.gif }
+
+1star9              { ; 9-98 kathy roth
+  reset=1960 type=formula formulafile=kstarm~1.frm
+  formulaname=starAstroid_Mset
+  center-mag=-1.50447/-0.374069/12.85333
+  params=0.1001/1/8/15 float=y outside=summ
+  colors=000KRQajQ<27>AG6zqC<2>zqC\
+  zpCznC<17>qFApD9pD9<2>pD9wcB<7>qGApD9oC9\
+  <2>l68f87`A7wxzwxz<24>nFPmDNmDNn\
+  ty<23>LguKguJfuHetHdrHcq<4>F`kE_iEZhEYfD\
+  Ye<8>BUVBUUBTTASR<38>4AA4CCC`VC`V<26>5GE8J\
+  D8ICCJ7<23>7C57B57B56A4EM8
+  savename=1star9.gif }
+
+quatcelt1          { ; 9-98 kathy roth
+                     ; modified Sylvie Gallet palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_Celtic
+  center-mag=3.665e-006/-8.65e-007/0.7473837
+  params=0.2/0.7/0.15/150/8/15 float=y outside=summ
+  colors=000mrrmrr<5>AUU<21>011gnhfm\
+  felf<2>UdW<23>DIElkX<3>hdLfbHfbH<22>KH\
+  5wrl<14>hS7fQ4dP4<11>F92wtt<15>`NOZKL\
+  YKK<10>F99vuv<19>SNVQLTPKSOJQ<5>FCH\
+  llp<28>EEKmuu<18>DWXBUVBTU<7>6HI000<13>000
+  savename=quatcel1.gif }
+
+quatcelt2          { ; color map only
+                     ; 9-98 kathy roth
+                     ; modified Wizzle palette
+  colors=00097I<5>24A038000<13>000\
+  0wz<27>03C00A000<28>000fOz<28>K0F000<28>\
+  000KKU<24>555444333222111<44>000l8M<12>R4G`Hm<21>A7K
+  savename=quatcel2.gif }
+
+
+quatcelt4          { ; 9-98 kathy roth
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_Celtic
+  center-mag=3.665e-006/-8.65e-007/0.7473837
+  params=0.3/0.61/0.15/150/8/30 float=y outside=summ
+  colors=000z0W<28>M0Bmmm<27>222000\
+  0zz<28>0JJ0zW<28>0J9WWz<28>4LGzz0<28>JJ\
+  0`zn<28>CMI000<13>000zW0<28>JJ0
+  savename=quatcel4.gif }
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 13:41:44 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) pars- stars and kaleidoscopes
+
+Hi Kathy,
+
+>> Last month I was looking at Linda Allison's star formula (included
+>> below) and I found that if you use the initialization from it (
+>> c=log(sqr(sqr(pixel))*pixel)*0.2:) that it makes a star or kaleidoscope
+>> out of almost anything. I spent a ridiculous amount of time doing this-
+>> here's a few, and a couple of quat-celtics.
+
+  Nice images!  I particularly loved 1star1, 3, 7 and quatcelt1.
+
+  Here are 3 kquat_celtic pars:
+
+sg_kquat_celtic_01 { ; .                           t=  0:01:28.70
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_celtic passes=1
+  center-mag=0.0082257/-0.00340654/0.9393207/1/22.499
+  params=0.3735/0.484/0.1/200/5/51 float=y inside=0
+  outside=summ
+  colors=000pZG<3>mTGlRFjQF<8>QD7OC6LA5<2>D52E52<5>O92QA2SB1<2\
+  >XD1ZE1`H2<5>m`BodDqgE<2>wqJzuLztL<14>pYEoXDoVDnUCmSC<18>O73\
+  N63L52<2>H21F00G01<3>K08L09K19<5>C9BAAC9BC<2>5FD3HE4IF<9>IUS\
+  JWTKXV<3>Qa_SbaUdb<8>kqpmrrots<2>uxxwzzwzz<9>ousnurmtrmsq<3>\
+  jroiqnhqn<23>Qb_PbZOaYNaYM`XL_W<26>sujtvjvwkwxkxylzzm<9>zwZz\
+  vYzvW<2>zuSztQzsQ<4>vkLuiKugJtfIsdH<2>q_G
+  savename=sgkquat1.gif }
+
+sg_kquat_celtic_02 { ; .                           t=  0:01:17.28
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_celtic passes=1
+  center-mag=-3.33067e-016/1.11022e-016/0.8197279/1/-22.5
+  params=0.505/0.5/0.1/200/4/63 float=y maxiter=300
+  inside=0 outside=summ
+  colors=000BdS<3>6aO4aN3`M1_L<2>AcJEdIGeI<4>TjHWlGYmG<3>gqFiq\
+  FlrF<3>wtDzuCzuE<11>xxixxlxxo<3>wzz<14>cQRaNP`LM<3>VAC<9>NC9\
+  MD9MD8LD8KD8JE7<2>IB6<3>aN3fQ2kT1qW0<3>RG8LCAE8C74E00H<6>8DW\
+  9FYBH_<2>ENeGPhGOf<4>GGUGFRGDP<2>G9HH7EJ8E<7>_I7bJ6dK6<3>mQ2\
+  <3>tj3vo4xt4zz0zw0zt0<21>eB0d90c70b50a30`00<9>O09M0AL0B<2>H0\
+  EF0FF2H<3>FDREFUEIW<3>DUf<3>Xfnaipflr<3>zzz<37>CdT
+  savename=sgkquat2.gif }
+
+sg_kquat_celtic_03 { ; .                           t=  0:24:51.67
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_celtic passes=1
+  center-mag=-8.88178e-016/1.11022e-016/1.045571/1/-22.5
+  params=-0.2/-0.8/0.1/300/4/63 float=y maxiter=300
+  inside=0 outside=summ
+  colors=000Rkb<12>AcR8bQ7bP<3>1_L<2>AcJEdIGeI<4>TjHWlGYmG<3>g\
+  qFiqFlrF<3>wtDzuCzuE<11>xxixxlxxo<3>wzz<14>cQRaNP`LM<3>VAC<9\
+  >NC9MD9MD8LD8KD8JE7<2>IB6<3>aN3fQ2kT1qW0<3>RG8LCAE8C74E00H<6\
+  >8DW9FYBH_<2>ENeGPhGOf<4>GGUGFRGDP<2>G9HH7EJ8E<7>_I7bJ6dK6<3\
+  >mQ2<3>tj3vo4xt4zz0zw0zt0<21>eB0d90c70b50a30`00<9>O09M0AL0B<\
+  2>H0EF0FF2H<3>FDREFUEIW<3>DUf<3>Xfnaipflr<3>zzz<25>Skc
+  savename=sgkquat3.gif }
+
+  Cheers,
+
+        - Sylvie
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 12:17:01 -0700
+;From: "Faye Williams" <arkangel@sb.net>
+;Subject: (fractint) pars
+
+I've been using Fractint for nearly 6 years now but I'm fairly new to this
+group & I've never posted a par before.  Here is my first attempt at
+posting -
+If I didn't do it right - be kind.  I'm a little old lady - OK?
+
+Scissor_Cut        { ; (c) 1998 Faye Williams
+                     ; source gallet-4 frm
+  reset=1960 type=formula formulafile=_g.frm formulaname=gallet-4-01
+  function=flip/cotan passes=1
+  center-mag=-0.0218102/0.0870368/1.37343/-1.3634/134.999
+  params=0.05/0.1/4/0.55 float=y maxiter=1034 fillcolor=146
+  potential=255/323/0
+  invert=0.1837028245192/-0.0313318999999/0.0779458 decomp=256
+  colors=zqq<14>zzzyzzwyz<10>atz_szYrzWqzUqz<13>2iz0hz0gz<29>02z00z01z<30>\
+  0mz<28>05Y04X04T<5>500<56>y00z00z11z22<24>z``000zbb<2>zffzhhzhh<14>zqq
+  cyclerange=0/255
+  savename=Scissor.gif }
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 19:06:07 -0400
+;From: davides <davides@pipeline.com>
+;Subject: (fractint) Re: Spectral Flow (Color Change)
+
+The following par is Spectral_Flow from my par file. I believe, but am not
+100 per cent certain, that the original par was by Michael Snyder. In the
+original par the originator did mention s/he was a David Brin fan...
+
+As I do at times I changed the colors to one of my color maps, and then
+modified the colors somewhat. As everyone is aware, just changing the
+colors results in significant changes to the point where the images may
+bear very little resemblace to each other. The reason I am posting this par
+is because the image now seems, to me anyway, to have a rather haunting
+quality - if that would be a reasonable term:
+
+
+Spectral_Flow_Chg  { ;  David Shanholtzer Oct 18, 1998 t= 0:00:13.01
+                     ;  P200 MMX 1024x768
+                     ; color map: Dav25c (sliced and diced)
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=liar1
+  passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
+  decomp=256
+  colors=000708<30>D0FE0GG1I<12>lLq<11>_Ec000<155>100100000<36>708
+  savename=SFlowChg.gif }
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 16:15:06 -0700
+;From: Mark Christenson <mchris@hooked.net>
+;Subject: (fractint) another Gallet-6-08 par
+
+I *really* wish I had found this one *before* the contest deadline!
+
+It looks like an evil crest or coat-of-arms to me.  If fractals make
+good ink-blots, perhaps I should be concerned...
+
+Hail Satan (just kidding), 
+  Bud
+
+
+g608-2f1           { ; "Coat of Harms" - (c) 1998 Mark "Bud" Christenson (10/17)
+  reset=1930 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=cotan/tanh/cos passes=t
+  center-mag=1.84379/-1.84379/1.26451/1.3333/-44.999
+  params=7/1/2/0.3/0.3/0 float=y maxiter=300 inside=zmag decomp=256
+  periodicity=0 
+  colors=LK0<18>d20e10g00i00<8>z00<8>i00g00f00e11<18>MJJKKKLLL<24>iiijjjll\
+  lnnn<2>sss<3>llljjjiiihhh<23>LLLKKKKKL<13>R7_S6`T5aU4bV3c<4>_1ka1mb0od0q\
+  e0s<3>k0z<7>_0kZ0iY0hX0fW1e<18>LJMKKKLKK<18>d`LeaLgbMicN<8>zsX<6>mgQkePi\
+  dOhcN<21>KK0 cyclerange=0/255
+  savename=g608_2f1.gif }
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 23:14:57 -0400
+;From: "Phil DiGiorgi" <phild@iinc.com>
+;Subject: Re: (fractint) pars- stars and kaleidoscopes
+
+>Last month I was looking at Linda Allison's star
+>formula (included below) and I found that if you use
+>the initialization from it ( c=log(sqr(sqr(pixel))*pixel)*0.2:)
+>that it makes a star or kaleidoscope out of almost anything.
+
+
+Cool images, Kathy, and I like the idea that got you there!
+
+If you use 'log(pixel^pts)/pts' , you can set the variable pts for the number of points you
+want on your star.   Here's a version of gravijul-2u using that idea (with some pars, of
+course :)
+
+Phil D.
+
+
+
+strgu-1              { ;   t=  0:00:54.16   (c) P. DiGiorgi - Oct 18, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=stargrav_2u function=cabs/cos/acosh/recip
+  center-mag=-7.36e-006/2.265e-006/11.01364 params=1/0/0.3/8/0/4
+  float=y maxiter=255 outside=atan periodicity=0
+  colors=708oYY<6>zzz<3>snNukDsh3qe0<2>kX0iV0fS0dQ0aN0<7>H30E00C00<5>00030\
+  0000003005<5>D0KF0MJ0P<3>Q0ZS0`U2cW4d<2>aGhcKieMkgOmiWokYpmbqoesqjusovup\
+  wxvyzzzyvxwpuvosujqseoqbmpYkoWimOgkMeiKc<2>f8Yd4Wc2U`0S<2>V0MT0KS0K<12>2\
+  0900800A<11>00c<15>zzz<2>tpvrmtrjs<10>bEc`BaY8Z<2>R0S<6>A0B506203000<15>\
+  0cc<15>zzz<6>_p_200<3>C00WnW<7>0c0<15>000F00<8>`00c00d44<5>mTT
+  savename=strgu_1.gif }
+
+strgu-2              { ;   t=  0:01:01.42   (c) P. DiGiorgi - Oct 18, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=stargrav_2u function=cabs/acosh/abs/log passes=1
+  center-mag=-0.0116251/0.0374291/1.193904/1/-17.499
+  params=0.6/0.9/0.1/5/0/0.5 float=y maxiter=300 inside=0 decomp=256
+  periodicity=0
+  colors=812<8>634634533<14>00000S<21>77u<7>zzz<15>55f<12>22L11K11I00G00G1\
+  0Gf6K<8>sgktknvprxuvzzzzzzzzz<18>g9Nf6Kd6J<13>B13801801<67>801801A44<12>\
+  Umc<5>zzz<6>YofUmcSi`<10>A55812812 cyclerange=92/208
+  savename=strgu_2.gif }
+
+strgu-3              { ;   t=  0:03:38.31   (c) P. DiGiorgi - Oct 18, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=stargrav_2u function=exp/recip/abs/acosh passes=1
+  center-mag=4.44089e-016/-2.22045e-016/0.5226667
+  params=0/1.5/-2.8/4/-0.077/1.9 float=y maxiter=300 inside=0
+  decomp=256
+  colors=B36801<12>801<13>Umc<5>zzz<7>Umc<11>A55812812<9>634634533<14>0000\
+  0S<21>77u<7>llx<3>RRw000<38>000000100201<2>412513513513<13>513613824A25D\
+  47<9>UAHWBIYDK<24>zzz<21>000801<9>801
+  savename=strgu_3.gif }
+
+;========================================================================;
+;Date: Sun, 18 Oct 1998 22:18:20 +0100
+;From: "Pedro Ávila Oliveira Lopes" <paol@mail.teleweb.pt>
+;Subject: (fractint) Pars - some tileable images...
+
+Hi everyone,
+
+I just subscribed to the list so I decided to post a few Pars as a tribute :)
+The Pars are taken from a series of images I created while exploring one of 
+Sylvie Gallet's formulas (included). The most interesting thing about the
+formula is that it can generate some great tileable fractals (see pars 1, 2
+and 3).
+
+Let me know what you think.
+
+
+1_Gallet-5-01      { ; tile 1
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01
+  center-mag=-0.138908/0.0626748/0.238347/1/-90
+  params=2/0.5/-1/0.5/-1/0.5 float=y inside=0 decomp=256
+  colors=R85<4>T85T96U96V96<14>cC9cC9dC9eDAeDAeEB<45>xraxsbxtcxudxud<5>vvg\
+  vvguvhtvh<23>fvteuueuuetu<82>15k14k13k02j02i<17>01CC20<34>R85
+  savename=1_Gal501.gif }
+
+2_Gallet-5-01      { ; tile 2
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01 center-mag=0.00052014/1.511e-005/0.9175065
+  params=0.5/0/-1/1/1/0 float=y inside=0 decomp=256
+  colors=000<2>200301401512612<55>u9RvASvASvBS<66>yxyyyyzzzzzzzzzzzz<4>zzz\
+  yzyxzw<29>Pz5Nz3Nz3<28>Ec2Eb2Ea2Ea2E`2E_2<43>000
+  savename=2_Gal501.gif }
+
+3_Gallet-5-01      { ; tile 3 - not really a fractal ...
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01
+  center-mag=-1.85343/1.49681/0.1309931/1/-29.986/0.009
+  params=1/-0.1/-0.5/5/5/-2 float=y inside=0 decomp=256
+  colors=jpq<23>ckmckmckmckmbkmbjl<11>XgiXgiWfhVegUdfTce<16>SbdSbdQ_`<8>00\
+  0<75>wmMxnMyoMzpNzpO<64>zyyzzzzzzyzz<7>svwrvvquvquvptuptt<19>jpq
+  savename=3_Gal501.gif }
+
+4_Gallet-5-01      { ; A traditional looking mini-mandel
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01
+  center-mag=+1.08830722735491400/-0.00460731409851444/22291.42/1/-1.543/-\
+  0.019 params=1/0/1/0/-2.21/0 float=y maxiter=1000 inside=0
+  colors=000<32>000100100200200<40>Q33R44T44<18>x11z00z10<29>zx0zz0zz1<29>\
+  zzxzzzzzz<89>000
+  savename=4_Gal501.gif }
+
+5_Gallet-5-01      { ;
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01
+  center-mag=-0.00157923580917275/+0.00276410731841227/49.21052/1/-29.999
+  params=1/0/1/0/-2/0 float=y inside=0 decomp=256
+  colors=zzz<138>TWWTWWTWWSVVSVVSVV<110>000
+  savename=5_Gal501.gif }
+
+6_Gallet-5-01      { ;
+                     ; Pedro Lopes - 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-01
+  center-mag=-0.49901/0.867711/31.28344/1.3333/30.028/-0.021
+  params=1/-0.5/0/0.5/-1.5/-0.5 float=y inside=0 decomp=256
+  viewwindows=1/1/yes/0/0
+  colors=zzz<119>XZXXZXXZXXYXWYWWYW<129>000
+  savename=6_Gal501.gif }
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 14:04:38 +1300
+;From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+;Subject: Re: (fractint) Re: Spectral Flow (Color Change)
+
+At 19:06 18/10/98 -0400, David wrote:
+>The following par is Spectral_Flow from my par file. I believe, but am not
+>100 per cent certain, that the original par was by Michael Snyder. In the
+>original par the originator did mention s/he was a David Brin fan...
+>
+>As I do at times I changed the colors to one of my color maps, and then
+>modified the colors somewhat. As everyone is aware, just changing the
+>colors results in significant changes to the point where the images may
+>bear very little resemblace to each other. The reason I am posting this par
+>is because the image now seems, to me anyway, to have a rather haunting
+>quality - if that would be a reasonable term:
+>
+
+Spectral_Flow is one of my pars, originally written for my own
+implementation of the liar1 formula in an earlier version of Fractint. I'd
+just finished reading _Brightness Reef_ and was writing up the formula and
+having a play with it. I brought in one of my standard exploration-type
+maps (spectral) and after a brief colour-cycle was left with the finished
+product.
+
+I very much like the effect that your colour map gives; comparing the two
+is an excellent object lesson in the importance of colour to a fractal
+image. Here's a similar recolouring in greens.
+
+Morgan (now I have to find a fractal to illustrate something of Greg
+Egan's) Owens
+
+
+Spectral_Flow_Ch2  { ; David Shanholtzer Oct 18, 1998 t= 0:00:13.01
+                     ; ...subsequently mangled by Morgan Owens
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=liar1
+  passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
+  decomp=256
+  colors=000708<29>D0F0FD<13>6c77e67e6<13>000<153>100100000<36>708
+  savename=sflowch2.gif }
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 05:57:30 -0400
+;From: davides <davides@pipeline.com>
+;Subject: Re: (fractint) Re: Spectral Flow (Ch3)+1
+
+Should have waited with my last reply until I made another change - apologies.
+
+This change removes all purple and replaces the green with a blue variant;
+I even kept this simple little map and tried it on another image I have
+hanging around (frm included with that one):
+
+
+Spectral_Flow_Ch3  { ;  David Shanholtzer Oct 19, 1998 t=  0:00:12.53
+                     ;  P200 MMX 1024x768
+                     ; Should be spectral snowflake...
+                     ; Spectral_Flow by Morgan Owens
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=liar1
+  passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
+  decomp=256 colors=000<30>00000D<14>0em<14>034000000<188>000708708
+  savename=sflowch3.gif }
+
+
+No_Name            { ;  (c) David Shanholtzer Oct 19, 1998 t=0:25:43.08
+                     ;  P200 MMX 1024x768
+                     ; colormap: dav79a
+                     ; simple blue color map with small change
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Xerreal
+  function=log passes=2
+  center-mag=+1.66948031741107700/+0.15360755957744550/5333.369
+  params=2/0 float=y maxiter=500 decomp=250
+  colors=00000408K<11>0em<14>034000000<221>00000D02F
+  savename=No_Name.gif }
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 12:48:59 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) pars- stars a
+
+Hi Lee,
+
+  Thank you!  Here's a couple more kquat_celtic's + a starastroid:
+
+sg_kquat_celtic_04 { ; .                           t=  0:01:02.77
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_celtic passes=1
+  center-mag=0.00571664/0.000860657/1.100337/1/-22.499
+  params=-0.39222705/-0.8/0.2/500/4/63 float=y maxiter=300
+  inside=0 outside=summ
+  colors=000Rkb<10>DdTBdSAcR8bQ7bP<3>1_L<2>AcJEdIGeI<4>TjHWlGY\
+  mG<3>gqFiqFlrF<3>wtDzuCzuE<8>ywaxxdxxf<3>xyrxyuwzwwzz<14>cQR\
+  aNP`LM<3>VAC<8>OC9NC9MD9<2>KD8JE7JD7IC6IB6<3>aN3fQ2kT1qW0<3>\
+  RG8LCAE8C74E00H<6>8DW9FYBH_<2>ENeGPhGOf<4>GGUGFRGDP<2>G9HH7E\
+  J8E<7>_I7bJ6dK6<3>mQ2<3>tj3vo4xt4zz0zw0<22>eB0d90c70b50a30`0\
+  0<7>R07P08O09M0AL0B<2>H0EF0FF2H<3>FDREFUEIW<3>DUf<3>Xfnaipfl\
+  r<3>zzz<25>Skc
+  savename=sgkquat4.gif }
+
+sg_kquat_celtic_05 { ; .                           t=  0:01:10.03
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=kquat_celtic passes=1
+  center-mag=-8.88178e-016/0/1.086132/1/-22.5
+  params=-0.549/-0.175/0.25/1000/4/63 float=y maxiter=300
+  inside=0 outside=summ
+  colors=000xuc<7>ysSysRysPysOysMzrK<9>saHr_HqYH<2>oTGnRFlQE<7\
+  >QB6OA5L84<3>A00<4>F00<3>K00<3>TC0VF0XI1<5>kcDmfFpjH<3>zyP<1\
+  2>fj7ei6ch5bg3`f2Zd0<26>7M86L85L94K93J91IA<7>79A87A96A<2>B3A\
+  C19A0A<11>VITXJVZLW`MY<15>qnprorsqststuuuwww<25>FbkDakB`j<2>\
+  6Yi4Xh4Vj4Wj<7>F`iH`iIaj<11>_hkahkbikdik<4>knomopopq<3>uuuww\
+  vwwt<9>xue
+  savename=sgkquat5.gif }
+
+sg_StarAstroid_01  { ; .                           t=  0:27:45.00
+                     ; Copyright Sylvie Gallet, Oct 18, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starastroid_mset passes=1
+  center-mag=0.0404385/-0.0707564/0.5429422/1/-17.999
+  params=0.4/1.4/4/63 float=y maxiter=256 inside=0
+  outside=summ
+  colors=000www<29>eeedddddd<23>IIIHHHGGG<3>CCCzzo<10>wrdwqbwq\
+  a<4>vlWukVujUuiSthRtgP<3>scKrbJraHr`GqZE<24>XE4XE3WD3<3>S91h\
+  hh<55>555555444<3>111x`G<28>WJAVIATH9<24>742642532<3>111BBBR\
+  80000 cyclerange=1/252
+  savename=sgstarA1.gif }
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 12:48:56 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: Re: (fractint) FOTW par file
+
+Hi All,
+
+On Sat, 17 Oct 1998, I wrote:
+
+>>   Thank you, Gilbert!  I'll post a new bunch of mandel zooms soon. 
+
+  OK, here they are:
+
+6M008818.GIF       { ; .                                    t=  0:03:27.88
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.62411052742159200/+0.00011081995839211/8.186314e+008
+  params=0/0 float=y maxiter=2047 inside=0
+  colors=855wwu<10>wwgwwfwvevud<4>tqZtpYsoXsnVrmUrmT<21>eT6eS5eS5<29>O31N2\
+  0O41N20<10>Q72R82R82S93TA3<14>gQ5hR5iS4<3>mW3nX2nX2nY2<6>rc0rc0rb0<4>pZ1\
+  pY1oX2nX2<11>aL4`K4ZI3<7>P50CA6<78>tts<14>A00
+  savename=6M008818.gif }
+
+6M00881C.GIF       { ; Color map for 6M008818.GIF           t=  0:03:27.88
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  colors=000XER<12>ofmqiorkpsmq<4>xwxzzzyyx<28>UA3<6>zUA<30>FHDDGEDGF<11>C\
+  HQCHRBISBJT<13>GegHgiJgi<14>tus<7>wucwuawu_wuZvtX<6>ooNnnLklK<10>M_9<8>M\
+  Z4LY3MY4<21>0AK<2>FMU<20>www<15>DJU<10>UCO
+  savename=6M00881C.gif }
+
+6M00881E.GIF       { ; Color map for 6M008818.GIF           t=  0:03:27.88
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  colors=000mVG<11>ypGzrFzrK<6>www<15>c00<9>H00<14>w_9zbAzdD<8>zzc<4>fqZao\
+  Y_nX<13>3SI0QG0OE0MC<2>2F83D75A5<3>A00<9>zm0<6>zU0<8>G76A4773A<8>2AS2BT3\
+  DU<11>DZfE`hEah<4>JklKmmJkk<13>2HK0EI1FI<15>JfLLhMOiL<11>wt1<12>DVF<9>BI\
+  9BH8BH8<4>9D6<2>MG7QH8UI9YJAaLBeMCgODjQFkSGlTG
+  savename=6M00881E.gif }
+
+6M008850.GIF       { ; .                                    t=  0:02:35.49
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94156370514768100/+0.00015081169268077/8.505837e+008
+  params=0/0 float=y maxiter=3000 inside=0
+  colors=000kor<4>vwx<20>LT`JR_HPYFNXDLW<2>8HT6FS6FS<2>7EQ7EP8DP9CO<16>J1B\
+  K0AM3A<14>zt0<13>tb0ta0s_0rZ0<12>bI0aH0`G0ZE0YD0WC0<9>J20H00H10<40>lhemi\
+  fnjgnkioljpnl<6>vuuwwwvww<2>ruwqtvosvnrulqt<3>fmrelqdkpcjobin<27>4EM2CK1\
+  AH18E05A<6>1JR1LU3MV<4>DS_FU`HVaJXbLYc<11>inq
+  savename=6M008850.gif }
+
+6M009150.GIF       { ; .                                    t=  0:04:36.89
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94156372034964600/+0.00015081554611929/1.50477e+009
+  params=0/0 float=y maxiter=3000 inside=0
+  colors=000dhm<10>LT`JR_HPYFNXDLW<2>8HT6FS6FS<2>7EQ7EP8DP9CO<16>J1BK0AM3A\
+  <14>zt0<13>tb0ta0s_0rZ0<12>bI0aH0`G0ZE0YD0WC0<9>J20H00H10<40>lhemifnjgnk\
+  ioljpnl<6>vuuwwwvww<2>ruwqtvosvnrulqt<3>fmrelqdkpcjobin<27>4EM2CK1AH18E0\
+  5A<6>1JR1LU3MV<4>DS_FU`HVaJXbLYc<17>vwx<8>fjn
+  savename=6M009150.gif }
+
+6M009173.GIF       { ; .                                    t=  0:13:49.61
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94153831861436800/-0.00002254957645940/1.731186e+009
+  params=0/0 float=y maxiter=16384 inside=0
+  colors=000otN<2>twQ<25>IZAHY9GX9FW8EU8<6>6K34I24I3<5>7ID7IF7IG7IH<19>9Ra\
+  AScASb<16>EDMECLFAJG9IG8GH7E<14>mQ2<5>xt4zz0zw0zt0<15>kU2jT2hR3<14>U25S0\
+  6Q07<6>H0EF0FF2H<4>EFUEIWFJW<26>uxswztwzs<13>zzc<15>DX5<24>nsN
+  savename=6M009173.gif }
+
+6M010144.GIF       { ; .                                    t=  0:04:14.74
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.76862112336503300/+0.00183956127603124/1.442808e+010
+  params=0/0 float=y maxiter=32750 inside=0
+  colors=000WWd<14>uutwwvwwt<22>ysMzrKzqK<13>oTGnRFlQE<13>A00<8>K00<4>VF0X\
+  I1ZM3<8>uqLwuNzzP<36>BQ3<21>zwA<15>SFQ<4>`MYbO_cP`dRa<16>uuuwwwvvw<12>ab\
+  n_`mYZlXYkVWjTUh<13>66Q44P22N00L<17>UUc
+  savename=6M010144.gif }
+
+6M010353.GIF       { ; .                                    t=  0:24:01.58
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-0.11170741810190090/+0.65023396454887390/3.532166e+010/1/-27\
+  .499 params=0/0 float=y maxiter=8888 inside=0
+  colors=000pW0<12>dE0cC0aB0<10>F00<2>I04J06J17K28<5>P9EQAFRBGSDHTEJUGK<9>\
+  cUXeWZeWZ<13>mijnjknjknkl<16>vvvwwwwwwwww<33>VhhVhhWih<33>zzv<7>zwbzw`zv\
+  YzuW<4>zsMzrKzqK<13>oTGnRFlQE<13>A00<8>K00<16>wp0zt0zs0<4>yk0yi0yh0yg0<7\
+  >qX0
+  savename=6M010353.gif }
+
+6M010578.GIF       { ; .                                    t=  0:05:24.35
+                     ; Copyright Sylvie Gallet, Sep 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a Pentium 166 at 1600 x 1200
+  reset=1960 type=mandel passes=1
+  center-mag=-1.94156372039606100/+0.00015081529536306/5.779685e+010
+  params=0/0 float=y maxiter=3000 inside=0
+  colors=000A00<8>K00<3>TC0VF1XI3<11>zvP<30>dE1cC0aB0<10>F00<4>K08L09K19<1\
+  2>2IE0KF1LG<29>uxxwzzwzz<58>9WF8VF7VE7VE<3>6TC<16>zzm<14>zsMzrKzqK<13>oT\
+  GnRFlQE<12>C21
+  savename=6M010578.gif }
+
+  Amiti's,
+
+        - Sylvie
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 15:20:02 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) Pars - some tileable images...
+
+Hi Pedro,
+
+>> I just subscribed to the list so I decided to post a few Pars as a
+>> tribute :)
+
+  Welcome to the list and thanks for the pars!
+
+>> The most interesting thing about the formula is that it can generate
+>> some great tileable fractals (see pars 1, 2 and 3).
+
+  That's exactly what it was made for.
+
+>> Let me know what you think.
+
+  Very nice images!  My favorites are #2, 5 and 6.
+
+  Here is a zoom into #6:
+
+
+6-g5-01-zoom       { ; .                                    t=  0:04:25.07
+                     ; Copyright Sylvie Gallet, Oct 19, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gallet-5-01
+  passes=1
+  center-mag=-0.50113805786968620/+0.87171533479602960/16437.92/1/30.027/-\
+  0.02 params=1/-0.5/0/0.5/-1.5/-0.5 float=y maxiter=511 inside=0
+  decomp=256 colors=zzz<146>RSRQSQQSQQRQQRQPRP<102>000
+  savename=6-g5-01z.gif }
+
+;========================================================================;
+;Date: Mon, 19 Oct 1998 20:47:06 -0400
+;From: Paul DeCelle <PaulDC@prodigy.net>
+;Subject: Re: (fractint) another Gallet-6-08 par
+
+Mark Christenson wrote:
+> 
+> I *really* wish I had found this one *before* the contest deadline!
+> 
+> It looks like an evil crest or coat-of-arms to me.  If fractals make
+> good ink-blots, perhaps I should be concerned...
+> 
+> Hail Satan (just kidding),
+>   Bud
+
+
+Mark's "Coat of Harms" par triggered my memory, so I looked around my
+archives and found this one I came up with a while back.  So... to
+continue the demonic theme, here it is.  Coincidentally, it's from
+another Sylvie Gallet "6-series" formula.  Hmmm - not bad; I may post
+this one to my Fractint site...   
+
+Regards, Paul 
+
+
+Demon_At_The_Gates { ; From Gallet-6-01
+                     ; Paul DeCelle 10/19/98
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=gallet-6-01 function=cotan/abs/tan passes=1
+center-mag=0.349696/0.437699/0.07126379/0.75/44.996
+params=2.141526/2/1.414/0.2862000000000001/0.758/0.13 float=y
+maxiter=255 inside=0 potential=255/300/100
+colors=000000u`O<23>d21c00b00<27>500400200001<44>0ET0FU2FU<14>c0c<30>vTg\
+wUhwUhwVh<60>yyyzzzzzy<29>zkWzjUziU<4>vbP cyclerange=2/255
+savename=Demon_At.gif }
+
+;========================================================================;
+;Date: Tue, 20 Oct 1998 01:24:34 -0400
+;From: "Phil DiGiorgi" <phild@iinc.com>
+;Subject: (fractint) more pars - radial symmetry
+
+Here's another Carlson formula variant using the "star" symmetry, along with a dozen pars.
+Sorry there's so many, but they're all pretty quick to run.   I just love these kind of
+images!
+
+  Phil D.
+
+
+hc-star01          { ;   t=  0:02:27.69   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=atan/exp/ident/floor passes=t
+  center-mag=1.77636e-015/-1.77636e-015/0.1626667
+  params=0.6/0/18/1/-0.5/0.3 float=y maxiter=550 inside=253
+  outside=summ
+  colors=850rrz<61>00Kzzw<61>223mzm<61>000zhcwc_<4>pWToUSnSRmRQlQPkPO<14>_\
+  9C_8BZ7AY6AY59X48X37X48<28>A12000123256
+  savename=hcstar01.gif }
+
+hc-star02          { ;   t=  0:01:46.88   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=atan/exp/ident/round passes=t
+  center-mag=1.77636e-015/-1.77636e-015/0.1823618
+  params=0.6/0/7/1/-0.5/0.3 float=y maxiter=550 inside=253
+  outside=summ
+  colors=850rrz<61>00Kzzw<61>223mzm<61>000zhcwc_<4>pWToUSnSRmRQlQPkPO<14>_\
+  9C_8BZ7AY6AY59X48X37X48<28>A12000123256
+  savename=hcstar02.gif }
+
+hc-star03          { ;   t=  0:01:55.46   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/ident/sqr passes=t
+  center-mag=4.44089e-015/-3.55271e-015/0.2172739
+  params=0.9/0/6/1/-0.3/0.02 float=y maxiter=255 inside=253
+  outside=summ
+  colors=000sss<61>5550cz0Zt<2>0Vn0Um0Sk0Rj0Ri<3>0Nd0Nc0Mc<15>0DR0CR0CQ0BQ\
+  0BP<25>00B00A00BzsX<61>221wccuZZ<3>rMMqJJpHH<6>l00<47>40000C000000
+  cyclerange=1/252
+  savename=hcstar03.gif }
+
+hc-star04          { ;   t=  0:01:49.36   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/ident/recip passes=t
+  center-mag=2.66454e-015/-2.22045e-015/0.2722027
+  params=0.4/0.6/12/1/-0.3/0.02 float=y maxiter=255 inside=253
+  outside=summ
+  colors=000sss<61>5550cz0Zt<2>0Vn0Um0Sk0Rj0Ri<3>0Nd0Nc0Mc<15>0DR0CR0CQ0BQ\
+  0BP<25>00B00A00BzsX<61>221wccuZZ<3>rMMqJJpHH<6>l00<47>40000C000000
+  cyclerange=1/252
+  savename=hcstar04.gif }
+
+hc-star05          { ;   t=  0:03:12.24   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/ident/floor passes=t
+  center-mag=2.66454e-015/-2.22045e-015/0.2722027
+  params=0.4/0.6/9/1/-0.3/0.02 float=y maxiter=255 inside=253
+  outside=summ
+  colors=000C00<28>OE2OE2OE2OE2OE2<2>QG3RH4SJ5UK7<3>`TDbVFeYHh`JkcMkdMjcLj\
+  cLjbLibK<2>eZGdXFbVD`TB<2>TK3UL4ywt<61>dW7ymi<14>x`Lw_Jw_IwZH<12>uP2tO0t\
+  O0<28>i30oE0<61>F00000000000 cyclerange=1/252
+  savename=hcstar05.gif }
+
+hc-star06          { ;   t=  0:02:53.89   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=ident/ident/ident/round passes=t
+  center-mag=1.77636e-015/-3.66374e-015/0.1852443/1/-44.999
+  params=1.2/0.75/8/1/-0.25/0.25 float=y maxiter=255 inside=253
+  outside=summ
+  colors=000unk<10>pifpheogenfd<12>g_YfZXeYWeXVdWV<2>cUTbUSaTR`SQ`RQ<14>QF\
+  FPEEOEDNDCNCCMBBLAAK99J99K99ywt<10>trotrosqnrpn<12>kigjhfihfhgegfd<2>edc\
+  edbdcacb`ba`<12>TSRSRRRQQQQPPPOOON<3>KKKKKJKKKqpy<11>kjtjisihshhrggq<2>e\
+  dpddoccnbbmbam<17>MN`LM_KLZJKYIJYGIX<13>14K03K03Kwpm<4>unktmjtljskiski<1\
+  3>kc`jb_ia_h`Zh_Y<4>dXVcWUcVTbUTaTSaTR<21>K99K89K99C00000000kkk
+  savename=hcstar06.gif }
+
+hc-star07          { ;   t=  0:01:32.60   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=ident/ident/ident/trunc passes=t
+  center-mag=0/1.11022e-016/0.18/1/-29.998
+  params=1.2/0.75/3/1/-0.5/0.12 float=y maxiter=255 inside=253
+  outside=summ logmode=fly 
+  colors=000zwn<3>yumxulxulxtkwtk<16>ojboibniamh`<8>haWgaVg`Uf_TeZT<2>dXRc\
+  WQbVPaVOaUO<11>TJETJDTJEzmm<3>yllxkkxkkxkjwjj<16>obaobana`m`_<8>hWVgVUgV\
+  TfUSeTS<2>dSQcRPbQOaPNaPN<11>TGDTGCTGDmrz<3>lqxlpxkpwkowkov<13>fhnfgmegl\
+  efkdfk<10>`_b_Za_Y`ZX_ZXZ<17>QJIPIIPHGPIHcmc<61>0AA000000kkk
+  cyclerange=1/252
+  savename=hcstar07.gif }
+
+hc-star08          { ;   t=  0:02:03.64   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=ident/ident/ident/atanh passes=t
+  center-mag=-8.88178e-016/0/0.2017937 params=0.9/0.6/8/0/-0.23/0.22
+  float=y maxiter=255 inside=253 outside=summ logmode=fly
+  colors=000uux<2>stvrsuprs<2>npqmopmopmop<6>hlkgkjfjieihdhg<5>ZdbZdbYcaYc\
+  aXb`<2>VaZU`YU`YU`Y<11>OVSOVSOVSOVSOVS<69>000wwc<19>kbFkaEj`DiZBiZBhYA<1\
+  2>aM2`L1`L1`K1<8>XG3WF3WE3WD3WC3<7>S75R66R66R66<24>L11K11K11J11J11<33>00\
+  0kkk cyclerange=1/250
+  savename=hcstar08.gif }
+
+hc-star09          { ;   t=  0:01:58.04   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=exp/asin/ident/log passes=t
+  center-mag=-3.10862e-015/2.22045e-015/0.3552706
+  params=0.75/0.5/12/0/0.275/0.225 float=y maxiter=255 inside=253
+  outside=summ logmode=fly
+  colors=000uux<2>stvrsuprs<2>npqmopmopmop<6>hlkgkjfjieihdhg<5>ZdbZdbYcaYc\
+  aXb`<2>VaZU`YU`YU`Y<11>OVSOVSOVSOVSOVS<69>000wwc<19>kbFkaEj`DiZBiZBhYA<1\
+  2>aM2`L1`L1`K1<8>XG3WF3WE3WD3WC3<7>S75R66R66R66<24>L11K11K11J11J11<33>00\
+  0kkk cyclerange=1/252
+  savename=hcstar09.gif }
+
+hc-star10          { ;   t=  0:02:31.88   (c) P. DiGiorgi - Oct 20, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=ident/ident/sqrt/floor passes=t
+  center-mag=-8.88178e-016/8.88178e-016/0.2357403
+  params=0.7/0.8/8/1/-0.45/0.35 float=y maxiter=255 inside=253
+  outside=summ logmode=fly
+  colors=000C00<3>C00D11D11E22E22<3>G55H65I76J77J88<10>VLJWMLXNMYPNZQO`RQ<\
+  8>mebnfdphfrjg<2>wpmunkslipif<2>gZXcVU`RQXNM<4>B00C00ywt<3>wuswurwurvtqv\
+  tq<19>jhfihfhgegfdgfd<20>RQQQQPPPOOONNNNMMMLLLKKKKKJKKKqpy<3>onwonwnmwmm\
+  v<5>jisihshhrggqgfq<23>MN`LM_KLZJKYIJYGIX<13>14K03K03KC00<3>C00D11D11E22\
+  E22<3>G55H65I76J77J88<10>VLJWMLXNMYPNZQO`RQ<8>mebnfdphfrjg<2>wpmunkslipi\
+  f<2>gZXcVU`RQXNM<4>B00C00000000000
+  savename=hcstar10.gif }
+
+hc-star11          { ;   t=  0:02:08.80   (c) P. DiGiorgi - Oct 19, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=ident/ident/ident/atanh passes=t
+  center-mag=0/0/0.2017937/1/29.999 params=0.9/0.6/6/0/-0.12/0.03
+  float=y maxiter=255 inside=253 outside=summ logmode=fly
+  colors=000zsm<75>cOQcNPcNPbMObMO<43>O08Uzc<123>0C4O08N07O08000000
+  cyclerange=1/250
+  savename=hcstar11.gif }
+
+hc-star12          { ;   t=  0:06:07.34   (c) P. DiGiorgi - Oct 20, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/conj/log passes=t
+  center-mag=-2.55351e-015/1.77636e-015/0.3552706/1/45
+  params=0.5649999999999999/0.333/4/0/0.3/0.06 float=y maxiter=255
+  inside=253 outside=summ logmode=fly
+  colors=000uux<2>stvrsuprs<2>npqmopmopmop<6>hlkgkjfjieihdhg<5>ZdbZdbYcaYc\
+  aXb`<2>VaZU`YU`YU`Y<11>OVSOVSOVSOVSOVS<69>000wwc<19>kbFkaEj`DiZBiZBhYA<1\
+  2>aM2`L1`L1`K1<8>XG3WF3WE3WD3WC3<7>S75R66R66R66<24>L11K11K11J11J11<33>00\
+  0kkk cyclerange=1/250
+  savename=hcstar12.gif }
+
+;========================================================================;
+;Date: Tue, 20 Oct 1998 19:37:48 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) 8 Gallet-6-08 pars
+
+Hi All,
+
+  Here are 8 more Gallet-6-08 pars:
+
+6SG60803.GIF       { ; .                                    t=  0:06:44.97
+                     ; Copyright Sylvie Gallet, Oct 20, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=conj/cabs/tan passes=1
+  center-mag=0.0430783/-0.0840288/0.3762579/1/44.999
+  params=0/-0.2/2/2/1/0 float=y maxiter=511 inside=0 periodicity=0
+  colors=000<5>S30X40_90<8>zm0<6>K0K<8>I4OI5OH6PH7Q<13>AKa9LbANb<13>SoiUrj\
+  Wrg<9>ww5<17>lV1kU1jS1iQ0hP0<4>bK0aJ0`I0ZG0YF0WE0<7>L40<5>CG1AI2AJ2<14>H\
+  `8<12>wrB<11>yyvzzzyyz<22>RSjPRiOPf<8>A0A<2>R4IW5LZ7N<3>nHY<5>uhnwmqxrtz\
+  wwxwv<20>8eW5dU0bT<4>0UK0SI2PF<3>AA0 cyclerange=2/255
+  savename=6SG60803.gif }
+
+6SG60804.GIF       { ; .                                    t=  0:00:57.78
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/asin passes=1
+  center-mag=-1.77636e-015/0/0.09949867 params=15/0/0/3/0/2 float=y
+  maxiter=511 inside=0 decomp=256 periodicity=0
+  colors=wwi<2>wwfwvevvdvubvta<7>rmSqlRpjP<4>neJmdIlcGkbFj`D<10>dP1cO0bO0<\
+  5>_L1_K1_J2_J2_I2<2>YH2YH2XG2XF2WE3WD3<9>SB4SB4SA3<51>731620600<15>62072\
+  0720820830<39>SC4TC4TC4UD5VC4VC4<9>ZH3_H3_I3`J2`K2aL1<9>fU6fV7fW8gX9hYA<\
+  4>jbFjcGkdIleJ<5>pkRqmTqmU<5>rq_sr`srasrb<7>vvlwwnwwm<2>wwj
+  cyclerange=0/255
+  savename=6SG60804.gif }
+
+6SG60805.GIF       { ; .                                    t=  0:00:46.13
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/sinh passes=1
+  center-mag=-1.77636e-015/-1.77636e-015/0.1141751/1/-44.999
+  params=-20/0/0/1/0/0.5 float=y maxiter=511 inside=0 decomp=256
+  periodicity=0
+  colors=EB9<76>lkjlkjmlknml<10>vvtwwuwwt<13>wwfvvdwwc<27>eT5eS3dR2cP0cP0<\
+  29>S75R66R66R66<26>K11J11J11I00I00<9>D00C00A85<21>630630741<13>EB8
+  cyclerange=0/255
+  savename=6SG60805.gif }
+
+6SG60806.GIF       { ; .                                    t=  0:01:09.81
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/recip passes=1
+  center-mag=-7.10543e-015/-1.88738e-015/0.1261991/1/-45
+  params=-8/0/0/0.5/0/0.5 float=y maxiter=511 inside=0 decomp=256
+  periodicity=0
+  colors=LJH<60>lkjlkjmlknml<10>vvtwwuwwt<13>wwfvvdwwc<27>eT5eS3dR2cP0cP0<\
+  29>S75R66R66R66<26>K11J11J11I00I00<9>D00C00A85<21>630630741<12>DB8EB8EB9\
+  EB9FCA<12>LIG cyclerange=0/255
+  savename=6SG60806.gif }
+
+6SG60807.GIF       { ; .                                    t=  0:00:57.40
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/tanh passes=1
+  center-mag=-8.88178e-015/-2.88658e-015/0.1080265/1/-45
+  params=-15/0/0/1/0/0.5 float=y maxiter=511 inside=0 decomp=256
+  periodicity=0
+  colors=HXb<2>KcdMeeOff<10>www<34>4BX29W29V2AT<14>www<15>Ka8<11>wrB<11>yy\
+  vzzzyyz<22>RSjPRiOPf<8>A0AF1C<5>XDQ_FT`IV<14>zzz<21>3WM0UK0SI<2>6I88E48E\
+  4<30>7EL0007EM<11>7ES7ET6EU6FV7GW<3>ANZBP_DR`ET`FVa cyclerange=0/255
+  savename=6SG60807.gif }
+
+6SG60808.GIF       { ; .                                    t=  0:01:26.56
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/ident passes=1
+  center-mag=0/0/0.123174/1/-0.999 params=5/0/0/2/0/1 float=y
+  maxiter=511 inside=0 decomp=256 periodicity=0
+  colors=AJ2<7>EM7FM7GN8GO9<11>NUFOVGPVHPWIQXJ<3>T`MUaNVaP<24>wyxxzyzyx<15\
+  >qjYpiXohVngTnfS<5>h`If_Ge_EcZDbYB`X9<4>UM1SE0E70000<2>0009909E0<18>FI4F\
+  I4FI4FJ4GJ4GJ5<4>IL6JL7JM7KN8<2>LP9MQ9NRAOSB<17>beRceSdfU<21>wwvxxwyyxyy\
+  zyyxyxw<23>rlYqlXqkWpjVpjU<3>ngQnfOmeNldM<6>fXEeWDcVCbUCaTB<8>LG4JF3HF3F\
+  F2DG1BG09G07H0<3>9I2 cyclerange=0/255
+  savename=6SG60808.gif }
+
+6SG60809.GIF       { ; .                                    t=  0:01:23.98
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/cotanh passes=1
+  center-mag=0/0/1.686297 params=-15/0/0/2/0/1 float=y maxiter=511
+  inside=0 decomp=256 periodicity=0
+  colors=jK3<13>R58<2>hU9naAtiBzrCyrC<15>VdRTcSRaQ<8>CM8AK5AJ5<8>A21A00C31\
+  <4>OI9<7>cGI<5>o_drchsbhu`i<11>XDTVBSS8QP5O<15>0cc<15>stw<4>srcsr_sqWspS\
+  <5>tl4uk0sk0<13>NZ0KY0JY0<13>5P0<7>ZD9bBBcAEd9H<10>A00<8>Y0A`0C`2D<13>nZ\
+  Xo`YpbY<9>zzc<2>zwUzuRztOzrKypJ<5>sZ9rW7qT6pR5oP4nN2mM2kL2
+  cyclerange=0/255
+  savename=6SG60809.gif }
+
+6SG60810.GIF       { ; .                                    t=  0:00:43.61
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/tan passes=1
+  center-mag=3.55271e-015/-2.66454e-015/0.2651175/1/45
+  params=25/0/0/3/0/2 float=y maxiter=511 inside=0 decomp=256
+  periodicity=0
+  colors=nY2<6>rc0rc0rb0<4>pZ1pY1oX2nX2<11>aL4`K4ZI3<2>WE2UC2RA2<4>A00<14>\
+  KIFLKGMKH<59>ssrttsttstts<13>vvtwwuwwt<9>wwgwwfwvevud<4>tqZtpYsoXsnVrmUr\
+  mT<21>eT6eS5eS5<29>O31N20O41N20<10>Q72R82R82S93TA3<14>gQ5hR5iS4<5>nX2
+  cyclerange=0/255
+  savename=6SG60810.gif }
+
+  Cheers,
+
+        - Sylvie
+
+;========================================================================;
+;Date: Wed, 21 Oct 1998 01:32:35 +0100
+;From: "Les St Clair" <les_stclair@crosstrees.prestel.co.uk>
+;Subject: (fractint) (Fractint) Kerry's star formulas (4 pars)
+
+Hi gang,
+
+Kerry Mitchell wrote:
+
+"Just because you can doesn't mean that you should"...
+
+Well Kerry, I absolutely loved your images and have been having great fun
+playing with the formulas. Here's a couple of first efforts (more to follow)...
+
+cheers, Les
+
+les_star01         { ; "Supernova"                          t=  0:24:45.68
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 21, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_jul passes=t
+  center-mag=-1.11022e-015/-1.33227e-015/0.55/1/-90
+  params=0.28/-0.2/0.33/0/-0.28/36 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=90F<39>P0GQ0HS0H<22>u02w02x01z00z20<22>zw00NK<50>NZT000OZT<63>pnd\
+  qndqndroepmdmjc<17>00F<21>90F cyclerange=0/255
+  savename=l_star01.gif }
+
+les_star02         { ; "Star-light Star-bright"             t=  0:34:29.16
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 21, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-1.32832/0.0501253/5.6/1/-90 params=0.44/0.5/0.13/36
+  float=y maxiter=250 inside=0 decomp=256 periodicity=0
+  colors=Ga_<3>RecUfeWhfZjh<6>pts000rvu<2>zzz<15>ffkeejddibbhaag__fZZeYYdU\
+  Ua<5>LLVKKUJJTIISHHS<6>BBMAAM99L88L88K<8>11F00E00E00E55H88K<2>FFPHHRIIS<\
+  3>PPXRRYSS_TT`<2>YYcZZd__e``fbbg<10>nnqppqppr<2>ttu<17>000<8>00000000111\
+  2<7>77C88E99FAAHCBJ<17>cafechfdigejhfjigkkhlkimlimmkn<11>mknmjmlhl<19>X7\
+  KW5JV3HU1F<6>L3MK3NI3M<6>31F00E02F<6>4KT5NV5PV<4>2YV<3>DaZ
+  cyclerange=0/255
+  savename=l_star02.gif }
+
+les_star03         { ; "Stars & Stripes"                    t=  0:23:51.53
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 21, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-1.23136526057583600/-0.17019443305289100/35.24706/1/-107.499
+  params=0.44/0.5/0.13/36 float=y maxiter=250 inside=0 decomp=256
+  periodicity=0
+  colors=K00<3>U00W00Z00a00<2>i00l00p00s00v00z0A<2>zABzDCzFC<8>zYFz_Fz`G<7\
+  >znIzpIzrIzsIzuJzvJzxJzzKzzK000<6>500601801<4>H02J03M03<4>Y05`05c06f06i0\
+  7<3>v09y09z0A<2>zABzDCzFC<8>zYFz_Fz`G<7>znIzpIzrIzsIzuJzvJzxJzzKzzK00Oyy\
+  a00Nxx`00Nxx`00Mxx`00Mxx`00Mww`00Mww`00Mww_00Mvv_00Mvv_00MuuZ00MttZ00Mtt\
+  Z00LssY00LrrY00LqqY00KqqX00KppX00KooW00KnnW00JmmV00JllV00JkkU00IjjT00Iii\
+  T00IhhS00HggS00HffR00GeeQ00GccQ00GbbP00FaaO00F``O00EZZN00EYYM00EXXL00DVV\
+  K00DUUK00CTTJ00CRRI00BQQH00BOOG00BNNG00ALLF00AJJE009IID009GGC008FFB008DD\
+  A007BB9007998006887006666005445004224004<9>001001001001001000<2>00000010\
+  0200<3>500600800<2>C00E00G00I00 cyclerange=0/255
+  savename=l_star03.gif }
+
+les_star04         { ; "Catch a Falling Star"               t=  0:26:21.53
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 21, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-0.71098648119098250/-0.29795230295699920/296.9129/1/-107.5
+  params=-0.33/1/0.33/24 float=y maxiter=250 inside=0 decomp=256
+  periodicity=0
+  colors=043<36>CreDtgDsf<32>122000203<5>F0P<7>203000111<31>zzz<32>000<6>F\
+  0PE0ME0M<5>204000000<31>W00X00W00<31>000<6>F0P<6>204000011022
+  cyclerange=0/255
+  savename=l_star04.gif }
+
+;========================================================================;
+;Date: Wed, 21 Oct 1998 16:17:10 -0400
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) (Fractint) Kerry's star formulas (4 pars)
+
+Hi Les,
+
+>> Well Kerry, I absolutely loved your images and have been having great
+>> fun playing with the formulas.
+
+  Me too, great formulas!
+
+>> Here's a couple of first efforts (more to follow)...
+
+  Super!  I particularly loved les_star04.
+
+  Here's a couple of pars:
+
+starnear-jul-1     { ; .                                    t=  0:10:17.20
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=starnear_jul
+  passes=1 center-mag=-0.00438516/0.000175696/4.490897/1/65
+  params=-1.746/0.01/0/0/0.3/18 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=W80<14>N59M4AM5B<6>TEJUGKVHLWJNXKOYLP<5>cUXeWZeWZ<8>jdfkefkfgkfg<\
+  23>xxxxxxwwx<27>hejgdigdigdi<5>fdffdfgef<28>yylzzmzzmzzm<29>zvbzvbzvazv`\
+  <42>zm3zm2yl1yk0yi0<2>yg0xf0wd0<19>dE0cC0aB0_A0Y90 cyclerange=0/255
+  savename=stnjul_1.gif }
+
+starnear-jul-4     { ; .                                    t=  0:05:35.26
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=starnear_jul
+  passes=1 center-mag=-0.206361/0.741486/1.718213/1/-4.999
+  params=0.5/0.45/0.05/0.05/0.5/15 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0
+  colors=K77<4>I45I44I44H44G45<11>45A36B47B<120>wwzwwzvvy<108>K78
+  cyclerange=0/255
+  savename=stnjul_4.gif }
+
+starnear-jul-5     { ; .                                    t=  0:09:44.62
+                     ; Copyright Sylvie Gallet, Oct 21, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=starnear_jul
+  passes=1 center-mag=-0.474182/0.316583/4.901961
+  params=-0.65/0.6/0.05/-0.05/0.55/27 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=149<126>wwzwwzvvy<123>F00038038
+  cyclerange=0/255
+  savename=stnjul_5.gif }
+
+  Cheers,
+
+        - Sylvie
+
+;========================================================================;
+;Date: Fri, 23 Oct 1998 01:06:54 -0400
+;From: kauffmanace@juno.com (ace kauffman)
+;Subject: Re: (fractint) Copyright FAQ?
+
+thanks Les 
+
+an_egg_from_les    { ; original G5_08_59 "Ace of Spades"
+                     ; zoomed,recolored, fn chg
+                     ; <KirstenMoe@compuserve.com>
+                     ; orginal(c)1997 Les St Clair<les_stclair@compuserve.com>
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=gallet-5-08
+  function=tanh/acosh/cosxx passes=1
+  center-mag=-8.31301/-7.75401/0.1601044/0.7258/45.686/18.722
+  params=8/0/8/0/5/0 float=y maxiter=500 inside=0 decomp=256
+  periodicity=0 
+  colors=bVH<9>zpa<5>jcPh`MeZKcWI`UGYREXQDVOBTM9QK7PK7000<71>000A04000<24>\
+  000B4IC4J000<8>803903B04<6>I0600G<8>J0DM0CM3F<14>Tkn40F<2>D0E000<43>1008\
+  0A907A05B03<10>100000100<12>000YRD_TF cyclerange=0/255
+  savename=an_egg_f.gif }
+
+G5_08_59           { ; "Ace of Spades"                       t= 0:08:30.50
+                     ; t=calc time [h:mm:ss.] using 486DX2-66 at 1024x768
+                     ; (c) 1997 Les St Clair <les_stclair@compuserve.com>
+                     ; parameters created on Feb 15, 1997
+  reset=1950 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-5-08 function=tanh/acosh/sin passes=1
+  center-mag=+3.22694600280981000/-3.22698109762123900/229.473/0.7258/45.6\
+  86/-1.632 params=8/0/8/0/5/0 float=y maxiter=1000 inside=0
+  decomp=256 periodicity=0
+  colors=BCC<20>mzz<20>AAA<19>awaczcbxb<20>AAA<20>zcm<20>AAA<21>zcK<20>AAA\
+  <20>hcz<21>AAA<20>zzc<20>AAA cyclerange=0/255
+  savename=G5_08_59.gif }
+
+;========================================================================;
+;Date: Fri, 23 Oct 1998 19:44:09 -0400
+;From: davides <davides@pipeline.com>
+;Subject: (fractint) Tropical_Gallet par
+
+A few days ago I posed a simpleton question: What are "tropical colors"?
+The answers received indicated I should simply look at tropical fruit
+(maybe that is a hint...  :)  ); IOW bananas (yellow), mangoes (sp?),
+oranges, lime green, and so on. Now for the next simpleton question: would
+the colors in this par tend to fulfill the definition of tropical colors?
+Gallet 6-08 frm used as I was generating some of the pars that S. Gallet
+posted - which were very nice - and, well, anyway...  :
+
+
+Tropical_Gallet    { ;  (c) David Shanholtzer Oct 23, 1998 t=  0:01:17.71
+                     ;  P200 MMX 1024x768
+                     ; color map: Dav80
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gallet-6-08 function=tan/abs/tan passes=t
+  center-mag=4.44089e-016/0/0.5946667 params=4/0/0/1/0/1 float=y
+  maxiter=800 inside=0 decomp=256 periodicity=0
+  colors=920<47>cC0cC0bC0<61>0000Km<11>kntoqustvwwwwww<11>CTp8Qo4Nn0Kmm00<\
+  29>vuuwwwwww<30>m00AcA<11>mrmptpsuswwwtvt<12>AcA000<3>000100100200300<7>\
+  820 cyclerange=0/255
+  savename=Tropical.gif }
+
+;========================================================================;
+;Date: Tue, 27 Oct 1998 07:31:15 -0500
+;From: wdecker@csc.com
+;Subject: (fractint) Gray plastic fractals
+
+I was going through the output of Ken Childress? parparser with the intent
+of selecting the ?cream of the crop? pars created from a specific formula
+when I unearthed a series of pars created over several periods that use a
+monochromatic map file.
+
+There are several map files in the Fractint starter set that are smooth,
+linear gradations (or gamma-modified gradations) from a single color to
+black. (gamma1.map, gamma2.map, lyapunov.map, grey.map, green.map are
+examples) These monochromatic maps can appear to be dull or blah when used
+with many types of fractals but I noticed that several of the formulas I
+use regularly produce interesting, rounded shapes with these maps.
+
+I eventually mapped a gradation from white to black (reversing gamma1.map)
+and named it gamma3.map after I discovered that it gave convex, carved
+surfaces in many cases.
+
+There is really nothing spectacular about these images; they?re sort of
+like comfort food, wholesome and pleasing. I like them, though, because
+they remind me of the molded plastic sheets I used to pull out of the boxes
+containing the makings of plastic model cars, planes, or battleships.
+
+As I said, I was gathering pars from one formula (in this case
+bills_xy-trade4) when I rediscovered this group. I played around this
+weekend and discovered that bills_xy-trade6 does about the same thing
+except that bright lines snake through some of the convex mounds.
+
+Hope you enjoy these. Maybe someone else can give some examples of their
+experiences using monochromatic maps.
+
+(Some of the images might appear to be oddly placed on the screen. These
+are candidates for backgrounds for PowerPoint presentations, so the
+interesting areas of the images are placed in corners or down the side as
+borders. Some have been used in my presentations at work. I?ve learned to
+be careful though, the audience can get distracted by the unusual forms to
+the detriment of the message. Still, it gets people to ask what they are
+and gives me a chance to describe my hobby. I?m always ready to talk about
+fractals. Much more interesting than CMM, ISO 9000, software measurement,
+or process improvement.)
+
+Bill Decker
+
+balls              { ;  (c) Bill Decker Jul 30, 1998 t=  0:00:47.08
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=sqr/flip
+  center-mag=0.00560923/-0.00259956/0.6186452/1/-90
+  params=-2/-2/-2/-2/1/20 float=y potential=255/200/0
+  colors=000yzz<134>gggfggfggfffeffeff<35>VWWVVVUVVUUUUUU<68>0000000000000\
+  00000
+  savename=balls.gif }
+
+embossed           { ;  (c) Bill Decker Jul 29, 1998 t=  0:00:18.56
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=tanh/log
+  center-mag=-1.0766/-3.92307/0.3444085/1/90 params=-1/-1/-5/-5/1/20
+  float=y potential=255/200/0 colors=000zzz<253>000
+  savename=embossed.gif }
+
+flow1              { ;  (c) Bill Decker Jul 30, 1998 t=  0:00:23.18
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=ident/conj
+  center-mag=0.00560923/-0.00259956/0.6186452/1/-90
+  params=-2/-2/-2/-2/2/20 float=y potential=255/200/0
+  colors=000yzz<134>gggfggfggfffeffeff<35>VWWVVVUVVUUUUUU<68>0000000000000\
+  00000
+  savename=flow1.gif }
+
+flow3              { ;  (c) Bill Decker Jul 30, 1998 t=  0:00:30.49
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=atan/recip
+  center-mag=0.0123532/-0.0563227/0.6991921/1/-90
+  params=2/-2/5/-2/1/20 float=y potential=255/200/0
+  colors=000yzz<134>gggfggfggfffeffeff<35>VWWVVVUVVUUUUUU<68>0000000000000\
+  00000
+  savename=flow3.gif }
+
+flow4              { ;  (c) Bill Decker Jul 30, 1998 t=  0:00:19.17
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=log/atanh
+  center-mag=0.294349/-0.134903/0.381312/1/-90 params=-1/-5/-5/-5/2/20
+  float=y potential=255/200/0
+  colors=000yzz<135>fggfggfffeffeffeff<32>WXXVWWVWWVVVUVV<2>UUUTTTTTTSSSSS\
+  S<62>000000000000000000000
+  savename=flow4.gif }
+
+gray-plastic       { ;  (c) Bill Decker Oct 06, 1998 t=  0:01:21.90
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=cotan/ident
+  center-mag=0/0/0.6777163/1/90 params=-1/-1/-5/-5/1/20 float=y
+  potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pla.gif }
+
+gray-plastic2      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:28.78
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=flip/cos
+  center-mag=0/0/0.6777163/1/90 params=-1/-1/-5/-5/1/20 float=y
+  potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl2.gif }
+
+gray-plastic3      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:14.28
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=asin/atan
+  center-mag=0/0/0.6777163/1/90 params=-1/-1/-5/-5/1/20 float=y
+  potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl3.gif }
+
+gray-plastic4      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:37.35
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=asin/atanh
+  center-mag=0/0/0.6777163/1/90 params=-1/-1/-5/-5/1/20 float=y
+  potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl4.gif }
+
+gray-plastic5      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:28.07
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=atan/sqrt
+  center-mag=0/0/0.6777163/1/90 params=-1/-1/-5/-5/1/20 float=y
+  potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl5.gif }
+
+gray-plastic6      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:13.68
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=cabs/sin
+  center-mag=-5.80418/-7.51564/0.142899/1/90 params=-1/-1/-5/-5/1/20
+  float=y potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl6.gif }
+
+gray-plastic7      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:30.86
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=floor/sin
+  center-mag=-0.12918/0.0546411/0.6484091/1/90 params=-1/-1/-5/-5/1/20
+  float=y potential=255/200/0 colors=000zzz<253>000
+  savename=gray_pl7.gif }
+
+gray-plastic8      { ;  (c) Bill Decker Oct 06, 1998 t=  0:02:26.92
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=sinh/tan passes=1
+  center-mag=1.8973/1.0107/14.68232/1/90 params=-1/-1/-5/-5/1/20
+  float=y potential=255/200/0 periodicity=0 colors=000zzz<252>000zzz
+  savename=gray_pl8.gif }
+
+gray-plastic9      { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:22.08
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=cos/conj
+  center-mag=-0.0772337/-0.0457802/0.6940203/1/90
+  params=-1/-5/-1/-5/1/20 float=y potential=255/200/0 periodicity=0
+  colors=000zzz<252>000zzz
+  savename=gray_pl9.gif }
+
+gray-plastic10     { ;  (c) Bill Decker Oct 06, 1998 t=  0:00:19.55
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=cosxx/cotan
+  center-mag=-0.0772337/-0.0457802/0.4162831/1/90
+  params=-5/-5/-5/-5/1/20 float=y potential=255/200/0 periodicity=0
+  colors=000zzz<253>000
+  savename=gray_p10.gif }
+
+gray-plastic27     { ;  (c) Bill Decker Oct 24, 1998 t=  0:00:23.40
+                     ;  on P150 800x600
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade6 function=abs/cabs/cos
+  center-mag=-0.0547336/-0.0772075/0.3546667/1/90
+  params=1/-1/0/5/-1/500 float=y potential=255/100/0 periodicity=0
+  colors=000zzz<2>wwwwwwvvvvvvuuu<18>nnnnnnnnnnnnmmm<70>VVVVVVVVVVVVUUUUUU\
+  <147>000
+  savename=gray_p27.gif }
+
+gray-plastic28     { ;  (c) Bill Decker Oct 24, 1998 t=  0:00:29.22
+                     ;  on P150 800x600
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade6 function=abs/abs/cos
+  center-mag=-0.0547336/-0.0772075/0.3546667/1/90
+  params=1/-1/0/5/-1/500 float=y potential=255/100/0 periodicity=0
+  colors=000zzz<2>wwwwwwvvvvvvuuu<18>nnnnnnnnnnnnmmm<70>VVVVVVVVVVVVUUUUUU\
+  <147>000
+  savename=gray_p28.gif }
+
+gray-plastic29     { ;  (c) Bill Decker Oct 24, 1998 t=  0:00:34.22
+                     ;  on P150 800x600
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade6 function=tan/ident/asin
+  center-mag=-0.0547336/-0.0772075/0.3546667/1/90
+  params=1/-4/0/5/-1/500 float=y potential=255/100/0 periodicity=0
+  colors=000zzz<120>cccccccccbbbbbbbbb<107>666555555444444<11>000000000000\
+  000
+  savename=gray_p29.gif }
+
+;========================================================================;
+;Date: Tue, 27 Oct 1998 20:04:07 -0000
+;From: "Les St Clair" <les_stclair@crosstrees.prestel.co.uk>
+;Subject: Re: (fractint) Kerry's Star formulas
+
+Hi kathy,
+
+
+> I loved "Catch a Falling Star".  I think you
+>should be objective and post it on your web page
+>as one of the three of the month.
+
+Thank you! (and Sylvie too).
+I should have mentioned that it uses one of Linda Allison's color maps (from
+Wizzle's collection). That probably has a lot to do with it's appeal :-))
+
+Here's a couple more...
+
+
+les_star05         { ; "String O'stars"                     t=  0:04:54.57
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 26, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-1.91159197700258500/+0.00151595277633678/153.3263
+  params=1.2/1/0.1/0 float=y decomp=256 periodicity=0
+  colors=GBRpJE<8>b2Da0D`0D<18>I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D5I\
+  C4JD6L<14>X`tZcwZcw<15>nru<4>bef_bdY_aVXZSVWQST<6>889000<2>000543<16>f`V\
+  <9>JCM<9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<4>rLE
+  savename=l_star05.gif }
+
+les_star06         { ; "String O'stars II"                  t=  0:06:23.71
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 27, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-1.90735000172144800/-0.00000560200946039/891.4322
+  params=1.2/1/0.1/0 float=y decomp=256 periodicity=0
+  colors=GBRpJE<8>b2Da0D`0D<18>I06I06H07<20>00K<22>zpa<13>RK7OI5NH6<12>D5I\
+  C4JD6L<14>X`tZcwZcw<15>nru<4>bef_bdY_aVXZSVWQST<3>FHH000<5>000543<16>f`V\
+  <9>JCM<9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<4>rLE
+  savename=l_star06.gif }
+
+les_star07         { ; "Star Brot"                          t=  0:15:30.99
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Oct 27, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=starnear_man passes=t
+  center-mag=-0.525537/-0.121817/0.7688662/1/-37.465/0.01
+  params=1.2/1/0.1/0 float=y inside=zmag decomp=256 periodicity=0
+  colors=GBRHCS<11>X`tZcwZcw<15>nru<4>bef_bdY_aVXZSVWQST<3>FHH000<5>000543\
+  <16>f`V<9>JCM<9>zzc<9>F05<12>R0AS0AU0A<7>`0Da0Db2D<14>zVF<14>b2Da0D`0D<2\
+  >Y0CX0CX2D<23>gtnhwphwp<54>hwpJCC<6>D5IC4JD6LE8NGAQ
+  savename=l_star07.gif }
+
+cheers, Les
+
+;========================================================================;
+;Date: Wed, 28 Oct 1998 18:59:38 -0500
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) Gray plastic fractals
+
+Hi Bill et al,
+
+  Here are 3 images I made with bills_xy-trade4, along with 2 Gallet-6
+ones:
+
+Flower1            { ; .                                    t=  0:02:17.54
+                     ; Copyright Sylvie Gallet, Oct 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=ident/tan passes=1
+  center-mag=-0.0124409/1.07143/2.493411/1/-24.999
+  params=-1/-3/-4/-2/1/2000 float=y maxiter=511 inside=255
+  potential=255/160/0
+  colors=IP`<54>otxouyntz<39>AHS9GR9FQ<9>15H04G03F02F<37>SamTbnTao<43>12C0\
+  1B00A00A<13>13G13H23H24I24I35J<36>IP` cyclerange=0/255
+  savename=Flower1.gif }
+
+Flower2            { ; Color plug-in for Flower1            t=  0:02:17.54
+                     ; Copyright Sylvie Gallet, Oct 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  colors=wwqwvm<23>qlTplSpkRpjRpjQ<5>mfKleJldIkcHkbGjbF<10>dT5dS5cR4cR4bQ4\
+  <24>O40N30N30N20<5>N30N40O40O50P50<2>Q71R71S81T91UA1<22>lW3lX3mY2<5>qb0r\
+  c0qb0<17>cO2cN3aM3<13>GA5FA5FA6<18>POJPOKQPLRPLRQM<16>``Y``YaaZaaZbb_<7>\
+  ggcghdhhdhhe<30>uur
+  savename=Flower2.gif }
+
+Flower3            { ; Color plug-in for Flower1            t=  0:02:17.54
+                     ; Copyright Sylvie Gallet, Oct 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  colors=qrt<254>050
+  savename=Flower3.gif }
+
+Gallet-6-02-07     { ; .                                    t=  0:03:12.56
+                     ; Copyright Sylvie Gallet, Oct 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=_g.frm formulaname=gallet-6-02
+  function=sin/zero passes=1
+  center-mag=3.21965e-015/8.88178e-016/0.1293333/1/44.999
+  params=2/0/1/0/1/0 float=y maxiter=24 inside=0 decomp=256
+  symmetry=none periodicity=0
+  colors=yyz<18>rngrmfqmepld<8>kfWjfVieUhdTgcS<6>`XL`WKYVJ<13>FG5DF4CF3<2>\
+  8G07H07H1<18>JQBKQBKRCLSD<2>NUENUFOVGOVHPWIQXJQYK<7>_dS`eUafVcgXdhY<16>y\
+  xvzywzzyyyy<3>wusvtqusptrntqm<6>nkcnjalh`<5>cYSbWR_VPZTO<12>855634402211\
+  020<16>DG2EH3EH3EH3<10>JL6JM7JM7KN8KO8<5>PSCQTDRUESVFSVGTWI<37>xyx
+  cyclerange=0/255
+  savename=G6-02-07.gif }
+
+Gallet-6-03-12     { ; .                                    t=  0:01:13.60
+                     ; Copyright Sylvie Gallet, Oct 29, 1998
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 1600 x 1200
+  reset=1960 type=formula formulafile=_g.frm formulaname=gallet-6-03
+  function=atanh/asin/cosh passes=1
+  center-mag=-0.0563023/-0.0563023/0.6666667/1/44.999
+  params=1.75/0/1/0/2/0 float=y maxiter=255 inside=0 decomp=256
+  symmetry=none periodicity=0
+  colors=Ybg<6>chlU00<14>rW0tZ0tZ0<26>zu0dim<17>otxpuxqvyrwzrwz<49>9JR8IQ7\
+  HP6GO5FN4EM2CK<2>05A<2>0BH0DK1EL<18>Ydh_fiagjcikdjlflm<7>uxv<3>nrrlqqjop\
+  hmo<6>XbhV`gV`g<30>4DM3CM1BL<34>Xbg cyclerange=0/255
+  savename=G6-03-12.gif }
+
+;========================================================================;
+;Date: Wed, 28 Oct 1998 23:39:24 -0500
+;From: Paul DeCelle <PaulDC@prodigy.net>
+;Subject: (fractint) Three pars
+
+Hi, Everyone--
+
+The first par is from Bill Decker's "bills_dif_delt1" formula -
+generates fairly quickly and I like it, so here it is.  I been having
+lots of fun with Bill's formulas, lately.. 
+
+The second and third ones are straight M-set zooms with my first
+colormap attempt that I thought worth actually using - Haven't done much
+with Fractint colormap writing to date..  The first zoom takes about 4
+minutes with a P60 & the second takes maybe 12 minutes.  
+
+These will probably appear on the next update to my Fractint site -
+Enjoy!
+
+Regards, Paul
+
+Fractint Art web site: http://members.xoom.com/PaulDeCelle/welcome.html
+
+
+bubbling_up        { ; From Bill Decker's "bills_dif_delt1" frm
+                     ; Paul DeCelle 10/28/98
+                     ; Very weird...
+reset=1960 type=formula formulafile=frac_ml.frm
+formulaname=bills_diff_delt1 function=cotan passes=1
+center-mag=1.18938/0.409126/1.630288/1/14.999
+params=3.5/0.57/2/0/0/0 potential=255/200/0
+colors=000<46>0ET0FU2FU<14>c0c<30>vTgwUhwUhwVh<60>yyyzzzzzy<29>zkWzjUziU\
+<29>d21c00b00<29>200
+savename=bubbling.gif }
+
+mandelzoom_1028    { ; Paul DeCelle 10/28/98
+                     ; Reasonable calculation time approx 4 min w/ P60
+reset=1960 type=mandel passes=1
+center-mag=-1.48214325748857200/+0.00019673022722551/3944506/1/-54.989/-\
+0.021 params=0/0 float=y maxiter=100000 inside=0 logmap=430
+colors=000CssBrs<8>CcsDasD_sEZsEXs<10>LEsMCsMCs<11>YCsZCs`CrbCr<7>qClsCk\
+sDk<22>jjz<5>dCm<7>z0I<6>rDIpFHqHF<5>xU3zX0z_0<7>zz0<6>Css<9>Cau<6>xtg<3\
+>rPNpGHqLF<5>xt3zz0zv0<4>za0zX0yU6<4>sCa<6>aCp<7>Cas<6>dCm<15>KgrGhrEhrC\
+gs<14>CEsCCsECs<19>qCssCssCq<3>sCi<5>Jlq
+savename=mzoo1028.gif }
+
+Mandelzoom2_1028   { ; Paul DeCelle 10/28/98
+                     ; Calculation time approx. 12 min w/ P60
+reset=1960 type=mandel passes=1
+center-mag=-1.48214335931301600/+0.00019668350231959/4.58681e+008/1/-150\
+.008/0.017 params=0/0 float=y maxiter=100000 inside=0 logmap=906
+colors=000Css<9>CcsDasD_sEZsEXs<10>LEsMCsMCs<11>YCsZCs`CrbCr<7>qClsCksDk\
+<22>jjz<5>dCm<7>z0I<6>rDIpFHqHF<5>xU3zX0z_0<7>zz0<6>Css<9>Cau<6>xtg<3>rP\
+NpGHqLF<5>xt3zz0zv0<4>za0zX0yU6<4>sCa<6>aCp<7>Cas<6>dCm<15>KgrGhrEhrCgs<\
+14>CEsCCsECs<19>qCssCssCq<2>sCk<6>Imr
+savename=mzo21028.gif }
+
+;========================================================================;
+;Date: Thu, 29 Oct 1998 03:48:58 EST
+;From: JimBeau549@aol.com
+;Subject: (fractint) 10 pars (set 1 of 3)
+
+   Hi all,
+
+       Here's some of my favorite images from the last couple of weeks.
+
+     Enjoy~
+
+ Jim
+
+1_Carrot           { ; image(c)1998 Jim Weaver    t=02min28s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=conj/exp passes=t
+  center-mag=-0.92200034196716740/-0.00000000000001157/61.73717/1/-90
+  params=75/0 float=y outside=real invert=0.5/-0.1/0
+  colors=000ym1<11>w03<8>O0b000<15>000110111221221<6>553000<7>000001001012\
+  013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>000000200<29>z00sKS<6>zA0<1\
+  5>zz0zv0zr0
+  savename=1_Carrot.gif }
+
+1_Carrot_06        { ; image(c)1998 Jim Weaver    t=02min23s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=asin/exp passes=t
+  center-mag=-0.650942/-8.88178e-015/0.6142414/1/-90 params=100/0
+  float=y maxiter=25 inside=zmag outside=real invert=0.5/-0.3/0
+  colors=222PC9<2>H7E<5>`WVc`Yfd`jicifa<6>bKK`GHYGH<3>448227<7>QQVUTZWUZ<7\
+  >nia<8>EAA<8>F23F23E23<5>A55966855622<8>ZAB<8>EA6<6>LA9MAANABOBCQDD<5>_P\
+  JaRKbRJ<6>lX6nY4mY6<4>gVG323<20>OMTQNVPMU<17>B4DA3CB4D<10>VFOXGP_HRbHSeI\
+  UdKTbNS<7>f6Og3Nf3N<6>X4GV5FV5F<6>a3Fb2Eb4G<6>iLWjOZjOY<7>cIQ<7>jghkkkjh\
+  f<6>cO8bL2`K3<3>RE8
+  savename=1_Carr06.gif }
+
+1_Carrot_10        { ; image(c)1998 Jim Weaver    t=06min39s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=asin/exp passes=t
+  center-mag=0.098386/-4.44089e-015/0.3798007/1/-90 params=100/0
+  float=y maxiter=255 inside=epsiloncross invert=0.5/-0.3/0
+  periodicity=0
+  colors=000GA7<8>UJDWKEYLFZMG`NIaPJ<6>lZV<20>000<25>QKHRLISMJUNKWOLXQM<2>\
+  bTQcVReWSfXUfYV<3>hbbhcdhbc<2>h_ZhZXgYVfXT<24>011123314<18>MEaNEbOFdPFeQ\
+  Gg<4>VOiXQjWPj<3>SJiRHhQGf<23>212000101<4>748000704B7C<2>F9HHAIIBJJCKKDL\
+  <8>WOUXPVYPWXRXZRX<13>EBJDAHC9GB8E97C<4>424212212<7>212212000101321<7>F9\
+  6
+  savename=1_Carr10.gif }
+
+1_Million          { ; image(c)1998 Jim Weaver    t=01min25s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=acosh/exp passes=t
+  center-mag=-0.751839/-4.44089e-015/0.3464523/1/-90 params=1000000/0
+  float=y maxiter=25 inside=bof60 invert=0.5/0.2/0 periodicity=0
+  colors=070VLY49F04A<2>CFMGJQLNUQRY<6>ytz<8>QERM9MJ5IG0D<3>UFOYIQ_KR<10>z\
+  ll<14>Q05<3>W8FYAIZCK_DM<14>rbo<17>J9DG7AD47<18>mlsoovnnt<20>J9F<18>zll<\
+  15>M06<14>wpu<2>kZcgTXcNRZHKUEG<4>700<10>pby<9>D7J<27>ULY
+  savename=1Million.gif }
+
+2_Million          { ; image(c)1998 Jim Weaver    t=00min56s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=sqrt/exp passes=t
+  center-mag=-1.19066/-7.99361e-015/0.2651113/1/-90 params=1000000/0
+  float=y maxiter=25 inside=bof60 invert=0.5/0.1/0 periodicity=0
+  colors=070ULYVLY49F04A<2>CFMGJQLNUQRY<6>ytz<8>QERM9MJ5IG0D<3>UFOYIQ_KR<1\
+  0>zll<14>Q05<3>W8FYAIZCK_DM<14>rbo<17>J9DG7AD47<18>mlsoovnnt<20>J9F<18>z\
+  ll<15>M06<14>wpu<2>kZcgTXcNRZHKUEG<4>700<10>pby<9>D7J<26>UKX
+  savename=2Million.gif }
+
+3_Million          { ; image(c)1998 Jim Weaver    t=03min30s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=sqrt/tan passes=t
+  center-mag=-0.511666/-2.89768e-014/1.776741/1/-90 params=1000000/0
+  float=y maxiter=25 inside=bof60 invert=0.5/0.1/0 periodicity=0
+  colors=000H31<10>R51S61T83<11>mcaofdrlivrnxupzys<12>zzZ<16>1HD<16>1WS2XT\
+  1XU0WW<12>0A0<11>agTejWgjWikVklVmmUppatshwvpzzz<10>GRf0E_<24>5ux5wy5wx<1\
+  2>1lh0kf1H1<49>9TOPiy<30>F53E31E31F31G31
+  savename=3Million.gif }
+
+1_Million_12       { ; image(c)1998 Jim Weaver    t=01min40s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-20
+  function=exp/acosh passes=t
+  center-mag=-0.180277/-1.24345e-014/1.157317/1/-90 params=1000000/0
+  float=y maxiter=25 inside=bof60 invert=0.5/0.1/0 periodicity=0
+  colors=000436534423<8>wuu<11>YJ9VF4SD4<5>421528<5>112000000<13>113223434\
+  <26>oaI<17>Y54X33Y65<13>skYuo`uo`<18>ylTzkSxkSvjRtiQ<5>lbLk`Ki_JhYJgXI<1\
+  3>PD5<12>aJ7bK8cL8dM8fM8gN8iO9<10>aO9`O9`O9`O9<9>XK9XJ8WJ8VI8<18>A63963A\
+  82841<15>OC5325<2>325
+  savename=1Milli12.gif }
+
+Moonspin           { ; image(c)1998 Jim Weaver    t=01min43s
+  reset=1960 type=lambda(fn||fn) function=asinh/cosh passes=t
+  center-mag=-0.00000000000001377/+0.00000000000000933/0.3350129
+  params=1/-0.8/0.33 float=y maxiter=25 bailout=32767 inside=bof60
+  invert=0.25/0/0
+  colors=000`QL<13>000usu<7>NRY<16>455343222101321<19>aMEbNEdOFePFgQG<4>iV\
+  OjXQjWP<3>iSJhRHfQG<24>000110<4>74895AA6BB7C<15>WKZXL_XLaZNf<2>aPm<2>`Og\
+  _NeZNcYM`XL_<12>GAIF9GGAH<26>zzz<26>BAE98CA8D<16>QJJRKJTLK<16>jXQ<2>cSM
+  savename=Moonspin.gif }
+
+StarQuake04        { ; image(c)1998 Jim Weaver    t=00min50s
+  reset=1960 type=lambda(fn||fn) function=cosh/tan passes=t
+  center-mag=-0.00000000000001976/+0.00000000000001499/0.7318501
+  params=0.7/-0.82/0.1 float=y maxiter=25 bailout=32767 inside=bof60
+  invert=0.25/0/0
+  colors=000VMK<14>jXQ<17>000usu<7>NRY<16>455343222101321<19>aMEbNEdOFePFg\
+  QG<4>iVOjXQjWP<3>iSJhRHfQG<24>000110<4>74895AA6BB7C<15>WKZXL_XLaZNf<2>aP\
+  m<2>`Og_NeZNcYM`XL_<12>GAIF9GGAH<26>zzz<26>BAE98CA8D<16>QJJRKJTLKUMK
+  savename=SQuake04.gif }
+
+Pumpkin            { ; image(c)1998 Jim Weaver    t=01min09s
+  reset=1960 type=mandel(fn||fn) function=exp/sqr passes=1
+  center-mag=-8.88478/3.19744e-014/0.09699196/1.2755/90
+  params=1.1112/0/0.125 float=y maxiter=25 bailoutest=imag
+  inside=bof61 outside=atan invert=1/0/0 periodicity=0
+  colors=000os`<8>xhC951<5>z`C<13>_eMYfNXdL1E5<2>7uM<13>XG_ZDaaFe<8>fUL787\
+  <4>eoe<12>_VSZTRYRPYQN<3>UJDcQHmXM<12>It3185<5>7t`<11>aiYchXfgXifWgbT<7>\
+  WA8R85TGB_OGkWM<10>tJ99BA<2>`je<12>WNH632<3>WHC<14>899<3>ehj<12>rVA686<5\
+  >eyj<11>PjZNhYMgXKeWMdU<3>UZK863<2>WRC<14>NVQjyo<4>ntb
+  savename=Pumpkin.gif }
+
+;========================================================================;
+;Date: Thu, 29 Oct 1998 03:49:22 EST
+;From: JimBeau549@aol.com
+;Subject: (fractint) 8 pars (set 2 of 3)
+
+      Enjoy~  :)
+
+ Jim
+
+Anvilize.gif       { ; image(c)1998 Jim Weaver    t=04min57s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/sinh/acosh/cosxx passes=b
+  center-mag=-2.06126/-4.26326e-014/0.110683/1/-90 params=50/0 float=y
+  maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=000JLS<15>110<20>aMEbNEdOFePFgQG<4>iVOjXQjWP<3>iSJhRHfQG<24>000<2\
+  4>ZWK_XLaXL<4>maP<2>g`Oe_NcZN`YM_XL<21>553332221000011<23>HbUIdVKeV<4>Vl\
+  Z<3>NhXLgXJeWIcV<21>254243122000111223<20>QTbRVcSWeUXfVYf<4>dch<2>``hZ_h\
+  XZhVYgTXf<7>KNT
+  savename=Anvilize.gif }
+
+Anvilz02.gif       { ; image(c)1998 Jim Weaver    t=06min14s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/cosxx/acosh/cosxx passes=b
+  center-mag=-37.8201/-5.68434e-014/0.02662483/1/-90 params=50/0
+  float=y maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=000UNT<2>YPWXRXZRX<13>EBJDAHC9GB8E97C<4>424212212<7>2122120001013\
+  21<17>UJDWKEYLFZMG`NIaPJ<6>lZV<20>000<25>QKHRLISMJUNKWOLXQM<2>bTQcVReWSf\
+  XUfYV<3>hbbhcdhbc<2>h_ZhZXgYVfXT<24>011123314<18>MEaNEbOFdPFeQGg<4>VOiXQ\
+  jWPj<3>SJiRHhQGf<23>212000101<4>748000704B7C<2>F9HHAIIBJJCKKDL<6>TLS
+  savename=Anvilz02.gif }
+
+Anvilz04.gif       { ; image(c)1998 Jim Weaver    t=06min22s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/cosxx/acosh/cosh passes=t center-mag=0/0/0.01/1/-90
+  params=50/0 float=y maxiter=25 inside=bof60 invert=1/0/0
+  periodicity=0
+  colors=000I00<21>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>000110111221221<\
+  6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>0000\
+  00200<6>G00
+  savename=Anvilz04.gif }
+
+Anvilz05.gif       { ; image(c)1998 Jim Weaver    t=05min25s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/cosxx/acosh/log passes=b
+  center-mag=11.3712/0/0.01/1/-90 params=50/0 float=y maxiter=25
+  inside=bof60 invert=1/0/0 periodicity=0
+  colors=000ttt<30>888077440990B70EA0HB7<2>QH9TG0XM0ZMB<8>zaIzaIvcLzeP<4>z\
+  oZzq`zqbzsdzqbzo`zm`zjXzhUzfI<2>z_BzY9zV9zU8vR8tP7rM6pK5pI4nG3gE2cC2XB1S\
+  90N70<2>C406AA0CC<7>0SS0UU0VV0WW<15>0kkFllKmmUnn<2>0ll<9>0bb0aa0__0YY<5>\
+  0MM8NQCLRCKUCWYCVb<16>AFs<2>00z<26>QCiRDhSDgTEfSEd<15>000<34>xxxzzzyyyww\
+  wvvv
+  savename=Anvilz05.gif }
+
+Anvl04z1.gif       { ; image(c)1998 Jim Weaver    t=06min32s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/cosxx/acosh/cosh passes=t
+  center-mag=-7.8017/-8.52651e-014/0.06287726/1/-90 params=50/0
+  float=y maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=000kQg<29>01F<20>BS8f6E<17>416<35>Qba<15>1MV<44>yU5<44>j6yj6zk7y<\
+  30>zYpzYpxXo<6>mRh
+  savename=Anvl04z1.gif }
+
+Anvl04z2.gif       { ; image(c)1998 Jim Weaver    t=06min20s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/cosxx/acosh/cosh passes=t
+  center-mag=-3.87216/-9.41469e-014/0.1366897/1/-90 params=50/0
+  float=y maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=000kQg<29>01F<20>BS8f6E<17>416<35>Qba<15>1MV<44>yU5<44>j6yj6zk7y<\
+  30>zYpzYpxXo<6>mRh
+  savename=Anvl04z2.gif }
+
+Anvlize2.gif       { ; image(c)1998 Jim Weaver    t=05min12s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/sinh/acosh/cosxx passes=b
+  center-mag=1.28587/-4.88498e-014/0.2080507/1/-90 params=50/0 float=y
+  maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=LAQeee<30>222<3>eL3<3>UF2<47>yyxzzzyyy<18>YRaXP`UFmH5ND0J<7>OJQ<4\
+  >pfk<4>JFM<2>FBK<4>hfinmntttzzz<12>ma0<33>640430541<46>xxxzzzyyy<14>fff
+  savename=Anvlize2.gif }
+
+Anvlize3.gif       { ; image(c)1998 Jim Weaver    t=05min03s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/sinh/acosh/cosxx passes=b
+  center-mag=-1.74729/-4.996e-014/0.7430381/1/-90 params=50/0 float=y
+  maxiter=25 inside=bof60 invert=1/0/0 periodicity=0
+  colors=577AAmBBm<9>000201413<4>L7I<11>LIVLJWMJW<13>jXMlYLmZLn_Lp`M<5>mAA\
+  <7>000121<15>121232354<27>Zpl_rnZqm<2>ZpmYplYolXnk<2>VkiUihThgSffRde<2>N\
+  ZaMW`KUZIRX<4>9CO78M44J<3>55K66K66L77M<2>BBOCCPEERGGS<2>MMXPPZRR`UUbXXd<\
+  5>qqsuuvzzz<12>zzz577<63>YajU_kRYlNWn<5>CEn
+  savename=Anvlize3.gif }
+
+;========================================================================;
+;Date: Thu, 29 Oct 1998 03:49:39 EST
+;From: JimBeau549@aol.com
+;Subject: (fractint) 9 pars (set 3 of 3)
+
+     Enjoy again!~  :)
+
+  Jim
+
+jkr05a1.gif        { ; image(c)1998 Jim Weaver    t=03min16s
+  reset=1960 type=mandel(fn||fn) function=cotan/cotanh passes=t
+  center-mag=-0.45717109101509530/+1.85479847376910800/1.417504/1/-117.5
+  params=0.4/0/1.2 float=y maxiter=25 bailoutest=and inside=bof60
+  invert=1/0/0 periodicity=0
+  colors=000hdV<12>sobtpcsnb<21>C72A50A61<24>MVZNW`NV_<16>EEGA78966DDF<3>B\
+  9AB89977<32>IRPJRPJSQKSQKTR<4>NVTNWUNVS<11>KF7KE5LF5<24>o_7q`7ra7tb8teC<\
+  3>rqV<9>LFD<6>UNJVOKXQM<8>hZU<5>MHF<2>KGEJFDIFCHEBIFC<22>`XOaYPbZQc_Rd`S\
+  <2>gcU
+  savename=jkr05a1.gif }
+
+jkr05a5.gif        { ; image(c)1998 Jim Weaver    t=01min25s
+  reset=1960 type=mandel(fn||fn) function=recip/atan passes=t
+  center-mag=1.91269/-5.68434e-014/0.06352793/1/-90 params=0.9/0/2
+  float=y maxiter=25 inside=bof60 invert=1/-0.25/0 periodicity=0
+  colors=000gcU<13>sobtpcsnb<21>C72A50A61<24>MVZNW`NV_<16>EEGA78966DDF<3>B\
+  9AB89977<32>IRPJRPJSQKSQKTR<4>NVTNWUNVS<11>KF7KE5LF5<24>o_7q`7ra7tb8teC<\
+  3>rqV<9>LFD<6>UNJVOKXQM<8>hZU<5>MHF<2>KGEJFDIFCHEBIFC<22>`XOaYPbZQc_Rd`S\
+  eaTfbU
+  savename=jkr05a5.gif }
+
+mnfnwld3.gif       { ; image(c)1998 Jim Weaver    t=01min37s
+  reset=1730 type=mandel(fn||fn) function=cosxx/sqr passes=t
+  center-mag=-1.22455410129286200/-1.63652870448904400/3.479622/1/145
+  params=0.1/0/0.15 float=y maxiter=25 bailoutest=and inside=bof60
+  invert=0.1/0/0 distest=10240/71/800/600 periodicity=0
+  colors=WPLaXO<12>C72A50A61<24>MVZNW`NV_<16>EEGA78966DDF<3>B9AB89977<32>I\
+  RPJRPJSQKSQKTR<4>NVTNWUNVS<11>KF7KE5LF5<24>o_7q`7ra7tb8teC<3>rqV<9>LFD<6\
+  >UNJVOKXQM<8>hZU<5>MHF<2>KGEJFDIFCHEBIFC<22>`XOaYPbZQc_Rd`S<16>sobtpcsnb\
+  <7>cZQ
+  savename=mnfnwld3.gif }
+
+morg03.gif         { ; image(c)1998 Jim Weaver    t=04min25s
+  reset=1800 type=barnsleym1 passes=b
+  center-mag=2.47492/3.55271e-015/0.257732/1/90 params=0.5/0 float=y
+  maxiter=255 bailoutest=and inside=bof60 outside=atan invert=1/0.9/0
+  periodicity=0
+  colors=B9LSQU<10>511<17>VSSWTTYVV_XW<12>yyu<5>edba`_ZXXVTTVST<18>K3KJ1JK\
+  2J<12>YPG_RF_QF<20>F51<8>KCMLDPMFQ<13>ago<8>IBJF7FF7F<12>CC3000kkkHFN<4>\
+  mia<5>J9D<7>a_R<11>FC7D95DA8<3>GFLHHPJJQ<18>uum<7>HBB<19>a_e<3>USW
+  savename=morg03.gif }
+
+morg06.gif         { ; image(c)1998 Jim Weaver    t=01min35s
+  reset=1960 type=barnsleym1 passes=t
+  center-mag=4.74837/1.42109e-014/0.1724857/1/90 params=0.9/0 float=y
+  maxiter=255 bailoutest=and inside=epsiloncross outside=atan
+  invert=1/0.9/0 periodicity=0
+  colors=B9LEAC<3>511<17>VSSWTTYVV_XW<12>yyu<5>edba`_ZXXVTTVST<18>K3KJ1JK2\
+  J<12>YPG_RF_QF<20>F51<8>KCMLDPMFQ<13>ago<8>IBJF7FF7F<12>CC3000kkkHFN<4>m\
+  ia<5>J9D<7>a_R<11>FC7D95DA8<3>GFLHHPJJQ<18>uum<7>HBB<19>a_e<10>GCE
+  savename=morg06.gif }
+
+soup03.gif         { ; image(c)1998 Jim Weaver    t=03min09s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/exp/log/cotanh passes=t
+  center-mag=0.790748/-9.54792e-015/0.7073729/1/-90 params=100/0
+  float=y maxiter=25 inside=bof60
+  colors=000ZJc<7>TAYS8XS8X<22>93B83A739628628628<13>617617706705<4>601510\
+  611<13>RBFSCGUDHVEIWFIXHJ<23>viSwjTxkTzmUylUxkTwjSviR<4>maNk_MhYLfXKdVJb\
+  UIZRG<15>000<2>433654865986B97<16>aUQbWRdXSfZUf_V<21>trqusrvut<2>yxxzzzz\
+  yz<5>vsvurutptsosrmrpkq<2>qmsrnsrnsrossot<13>yyyzzzyyy<16>eThdRgcQgbPf<3\
+  >_Kc
+  savename=soup03.gif }
+
+soup14.gif         { ; image(c)1998 Jim Weaver    t=02min30s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=log/exp/log/acosh passes=t
+  center-mag=0.187291/-3.9968e-015/0.6713212/1/-90 params=100/0
+  float=y maxiter=25 inside=bof60
+  colors=000xwx<15>eThdRgcQgbPf<12>TAYS8XS8X<22>93B83A739628628628<13>6176\
+  17706705<4>601510611<13>RBFSCGUDHVEIWFIXHJ<23>viSwjTxkTzmUylUxkTwjSviR<4\
+  >maNk_MhYLfXKdVJbUIZRG<15>000<2>433654865986B97<16>aUQbWRdXSfZUf_V<21>tr\
+  qusrvut<2>yxxzzzzyz<5>vsvurutptsosrmrpkq<2>qmsrnsrnsrossot<13>yyyzzzyyy
+  savename=soup14.gif }
+
+jm03oct3.gif       { ; image(c)1998 Jim Weaver    t=02min08s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Jm_03
+  function=cosxx/recip/cosxx/sqrt passes=t
+  center-mag=0.245018/-3.64153e-014/0.4529076/1/-90 params=500/0
+  float=y maxiter=25 inside=bof60 outside=atan
+  colors=000SRR<8>100<24>W0OX0P_0R`0Sa0Tc0U<30>_0lZ0mY0l<30>000<8>U32X43_4\
+  3c54d74<11>uX1wZ1x`1zc0zc1zd3<12>zjNzjPxgP<10>V0JMKI<19>bK2cK1cL2<28>gba\
+  hcchcc<29>vvvwwwutt<8>VUU
+  savename=jm03oct3.gif }
+
+csmicsp5.gif       { ; image(c)1998 Jim Weaver    t=00min20s
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=jm_04
+  function=recip/recip/cos/cotan passes=b
+  center-mag=-0.69316845277542350/+0.00947748402071036/125.1815/1.6678/-57\
+  .5 params=100/0 float=y maxiter=50 fillcolor=1 outside=real
+  colors=0004067SM<8>3EB3Cz3A8<3>143z22000<6>F0PzzNC0K<2>70C509203000<31>x\
+  xxzzzyyyzwwuuu0zzqqqzoommmzkziii<9>RRRzzPNNN<11>000<6>F0P<6>204000000<29\
+  >U00V0zW00X00<32>000<6>F0P<6>204000011<39>Dtg0zzzqeCpd<13>7UN
+  cyclerange=2/255
+  savename=csmicsp5.gif }
+
+;========================================================================;
+;Date: Fri, 30 Oct 1998 08:35:31 -0500
+;From: wdecker@csc.com
+;Subject: Re: (fractint) Gray plastic fractals (Color is creeping in)
+
+> Hi Bill et al,
+>
+>   Here are 3 images I made with bills_xy-trade4, along with 2 Gallet-6
+> ones:
+>
+> Flower1              ; .                                    t=0:02:17.54
+>                      ; Copyright Sylvie Gallet, Oct 29, 1998
+>                      ; <sylvie_gallet@compuserve.com>
+
+And thorns, don't forget the thorns.
+
+Bill Decker
+
+flowers-2          { ;  (c) Bill Decker Oct 29, 1998 t=  0:01:08.33
+                     ;  on P150 800x600
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=bills_xy-trade4 function=asin/abs
+  center-mag=0.512982/-0.949294/3.586371/1/65
+  params=1/-3/-10/-2/1/10000 float=y maxiter=511 inside=255
+  logmode=fly potential=255/160/0
+  colors=7G7<5>6D65C56C5<2>BD6CE6DF6EG7GH8<13>__I``J``J<27>k`ek_ejZd<25>T8\
+  PS6OS6O<32>hQThRTiSTiTTjUU<30>yxxzzzzzy<29>llWkkUkkU<36>IUFIUFHTEHTEGSD<\
+  5>BPBAOAAOAAOA<13>7H7 cyclerange=0/255
+  savename=flowers2.gif }
+
+;========================================================================;
+;Date: Fri, 30 Oct 1998 17:04:01 -0500
+;From: wdecker@csc.com
+;Subject: (fractint) Mod of Miguel Fliguer formula
+
+I started with a formula posted by Miguel Fliguer and I've tried some mods.
+
+As a group, the formulas seem to provide gently sloping, smooth areas in
+the images that translate into a sense of depth when the maps have broad
+gradations between pastels. Anyway, I like these formulas. Thanks, Miguel.
+
+Bill Decker
+
+jaguar-dreams      { ;  (c) Bill Decker Oct 30, 1998 t=  0:01:34.42
+                     ;  on P100 1024x768
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Prueba_002
+  function=cotanh/cabs/cotan/acos
+  center-mag=-0.716309/11.3725/0.6329137/1/-90 params=5/1/1/5/2/2
+  potential=255/200/0 periodicity=0
+  colors=000yxxzzz<30>llWkkUkkU<45>BPBAOAAOAANA<18>6E66E66D65C5<2>9D5BD6CE\
+  6DF6<5>MMBNOCPPCQRDRSE<5>__I``J``J<27>k`ek_ejZd<25>T8PS6OS6O<32>hQThRTiS\
+  TiTTjUU<29>yww
+  savename=jaguar_d.gif }
+
+;========================================================================;
+;Date: Sat, 31 Oct 1998 12:31:06 -0800
+;From: kathy roth <kroth@well.com>
+;Subject: (fractint) pars
+
+I've moved off from gravistalks and the spliced formula
+fractals- here's a few of the very earliest and the last ones.
+
+eg01               { ; kathy roth 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=acos/sqr/sinh
+  center-mag=1.96564/0.324111/3.93603/1/90
+  params=2/0/0.02/150/8/30
+  float=y bailout=100 inside=255 outside=summ
+  colors=0000zz<28>0JJ0zW<28>0J9W\
+  Wz<28>4LGzz0<28>JJ0`zn<28>CMI000<13>000zW\
+  0<28>JJ0z0W<28>M0Bmmm<28>000
+  savename=eg01.gif }
+
+eg02               { ; kathy roth 1998
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=exp/sqr/sinh
+  center-mag=1.38324/-0.0275833/0.2670392/1/90
+  params=2/1/0.02/150/8/30 float=y
+  bailout=100 inside=255 outside=summ  invert=1/0/0
+  colors=0009g_<12>29726513300000\
+  0000<3>000000001102<40>b0xc0zb0y<32>20200\
+  0001<27>JGTKHUKHT<27>111000000000<3>00\
+  0011032<27>Amc<25>2551431220000000\
+  00000000<16>XgcZje`mhbpjdsmAmc9ja
+  savename=eg02.gif }
+
+eg03               { ; kathy roth 1998
+                     ; Sylvie Gallet map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=exp/sqr/sinh
+  center-mag=2.99442/0.00170127/0.6882455/1/90
+  params=2/1/0.04/150/8/30 float=y bailout=100
+  inside=255 outside=summ  invert=1/0/0
+  colors=000AIQ<4>BJUCKUCKVDLVDLW<4>MSaN\
+  TbPVdRXe<5>aemcgocgo<13>pppqqqppq<\
+  51>22C11B00A00A11B22C<41>ffiggjiik<15>x\
+  xx<8>xsdyrayr`<13>yhCxgAxgA<13>lU\
+  1kT0jT0iS0<13>RF0QF0OE0MD0<11>21000\
+  1112<12>7EJ8FL8FM8FN<4>AHQ
+  savename=eg03.gif }
+
+eg04               { ; kathy roth 1998
+                     ; Paul Carlson map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=sin/sin/sinh
+  center-mag=-12.5511/1.04331/2.570214
+  params=2/0/0.02/150/8/30
+  float=y bailout=100 inside=255 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O\
+  00zW0<28>c40zz0<28>aG00zR<28>0C40z\
+  z<28>0CCGGz<28>00O000<13>000
+  savename=eg04.gif }
+
+eg05               { ; kathy roth 1998
+                     ; Paul Carlson map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=sin/recip/sinh
+  center-mag=-20.3393/0.128467/1.150175 params=1/0/0.02/150/8/15
+  float=y bailout=100 inside=255 outside=summ
+  colors=000oe0<15>aG00zR<28>0C40zz<28>0CC\
+  GGz<28>00O000<13>000fOz<28>I0Kz0\
+  f<28>O08z88<28>O00zW0<28>c40zz0<11>pg0
+  savename=eg05.gif }
+
+eg06               { ; kathy roth 1998
+                     ; modified Wizzle map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=exp/sqr/sinh
+  center-mag=0.163577/3.55895/2.264493/1/-90
+  params=2/1/0.02/150/8/30
+  float=y bailout=100 inside=255 outside=summ
+  colors=000<3>000Z0AU00<6>m00<7>T0m<4>F\
+  0F<2>000<45>zzz000<9>0zz<9>r0r<9>0\
+  00<47>000111333<29>zzz<30>222000000<35>000
+  savename=eg06.gif }
+
+eg07               { ; kathy roth 1998
+                     ; modified Wizzle map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=exp/sqr/sinh
+  center-mag=-0.0792395/3.53393/1.041667/1/-90
+  params=1/0/0.005/150/8/30 float=y bailout=100
+  inside=255  outside=imag
+  colors=000hhh<5>pppXYR<2>WXQVWPVWOU\
+  VN000<9>0zz<9>r0r<9>000<47>000111333<\
+  29>zzz<30>222000000<39>000Z0AU\
+  00<6>m00<7>T0m<4>F0F<2>000<31>fff
+  savename=eg07.gif }
+
+gf1               {;kathy roth 1998
+       ;modified Sylvie Gallet map
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=conj/recip/atanh
+  center-mag=-0.997072/0.00281234/5.280544/1.0731/-90
+  params=2/0/0.04/150/8/15 float=y bailout=100
+  inside=255 outside=summ
+  colors=000gnhfmfelf<2>UdW<23>DIEl\
+  kX<3>hdLfbHfbH<22>KH5NVO<12>DIEiUAhS7fQ\
+  4<12>F92ogh<12>dTUcRSaPQ`NOZKL<11>F99\
+  hfj<28>FCHllp<28>EEKmuu<18>DWXBUVBT\
+  U<7>6HI000<13>000mrrmrr<5>AUU<19>144000kkk
+  savename=gf1.gif }
+
+
+gf2                { ; kathy roth 1998
+                     ; modified Sylvie Gallet palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=conj/recip/atanh
+  center-mag=-0.997072/0.092434/38.82753/1.0731/-90
+  params=2/0/0.04/150/8/15 float=y
+  bailout=100 inside=255 outside=summ
+  colors=000gnhfmfelf<2>UdW<23>DIElkX<3>hd\
+  LfbHfbH<22>KH5NVO<12>DIEiUAhS7fQ\
+  4<12>F92wtt<15>`NOZKLYKK<10>F99vuv<19>SN\
+  VQLTPKSOJQ<5>FCHllp<28>EEKmuu<18\
+  >DWXBUVBTU<7>6HI000<13>000mrrmrr<5>AUU<19>144000kkk
+  savename=gf2.gif }
+
+gf3                { ; kathy roth 1998
+                     ; modified Sylvie Gallet palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=conj/recip/atan
+  center-mag=0.0289653/0.052041/0.4344537/1.0731/-90
+  params=2/0/0.01/150/8/15 float=y bailout=100 inside=255 outside=summ
+  colors=000gnhfmfelf<2>UdW<23>DIEl\
+  kX<3>hdLfbHfbH<22>KH5NVO<12>DIEiUAhS7fQ\
+  4<12>F92wtt<15>`NOZKLYKK<10>F99vuv<19>SNV\
+  QLTPKSOJQ<5>FCHllp<28>EEKmuu<18\
+  >DWXBUVBTU<7>6HI000<13>000mrrmrr<5>AUU<19>144000kkk
+  savename=gf3.gif }
+
+gf4                { ; kathy roth 1998
+                     ; modified Sylvie Gallet palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=ident/recip/atanh
+  center-mag=-0.0950497/-0.035119/0.3341676/1.0731/-90
+  params=2/0/0.02/150/8/15 float=y
+  bailout=100 inside=255 outside=summ
+  colors=000gnhfmfelf<2>UdW<23>DIElkX<3>hdL\
+  fbHfbH<22>KH5NVO<12>DIEiUAhS7fQ\
+  4<12>F92wtt<15>`NOZKLYKK<10>F99vuv<19>SN\
+  VQLTPKSOJQ<5>FCHllp<28>EEKmuu<18\
+  >DWXBUVBTU<7>6HI000<13>000mrrmrr<5>AUU<19>144000kkk
+  savename=gf4.gif }
+
+gf5                { ; big bug
+                     ; kathy roth 1998
+                     ; modified Sylvie Gallet palette
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=gravistalks function=ident/recip/atanh
+  center-mag=1.11444/1.04799/2.556328/1/-139.505/4.024
+  params=2/0/0.02/150/8/15 float=y bailout=100
+  inside=255 outside=summ
+  colors=000gnhfmfelf<2>UdW<23>DIEl\
+  kX<3>hdLfbHfbH<22>KH5NVO<12>DIEiUAhS7fQ\
+  4<12>F92wtt<15>`NOZKLYKK<10>F99vu\
+  v<19>SNVQLTPKSOJQ<5>FCHllp<28>EEKmuu<18>DW\
+  XBUVBTU<7>6HI000<13>000mrrmrr<5>AUU<19>144000kkk
+  savename=gf5.gif }
+
+
+;========================================================================;
+;Date: Sat, 31 Oct 1998 17:54:26 -0500
+;From: "Phil DiGiorgi" <phild@iinc.com>
+;Subject: (fractint) Video modes + pars
+
+Hello Fellow Fractalizers
+
+I just upgraded to a new video adapter today, a Diamond Viper 550 16MB.   This card uses the
+new nVidia Riva TNT 128-bit video chip.   It has native Vesa 3.0 support, but it took some
+fiddling to get it to work right with Fractint.   Thought I'd post the fractint.cfg modes
+that got me going, in case they might be useful to someone else.
+
+    ,nVidia Riva TNT mode   ,4f02,0141,   0,   0,  28,1152, 864,256, Phil DiGiorgi
+    ,nVidia Riva TNT mode   ,4f02,0107,   0,   0,  28,1280,1024,256, Phil DiGiorgi
+    ,nVidia Riva TNT mode   ,4f02,0145,   0,   0,  28,1600,1200,256, Phil DiGiorgi
+
+The standard SVGA/VESA modes worked fine for lower res settings.
+
+
+Phil D.
+
+
+Figured I'd include some pars, just a few more of the starjuls :)
+
+hcstar15          { ;   t=  0:01:14.70   (c) P. DiGiorgi - Oct 20, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/conj/log passes=t
+  center-mag=0/0/0.3 params=0.6/0.333/10/2/0.3/0.06 float=y
+  maxiter=255 inside=253 outside=summ logmode=fly
+  colors=000C3B<6>Y7L`7Mb8N<6>qAWsBXsHY<5>vsc<7>bCO`7M_8R<5>XFw<8>wsc<7>00\
+  F<3>003000234<7>NVcQZhUag<6>zwa<3>vsbvrcsl_<7>b54`00X00<7>000000<11>7Mw<\
+  8>zoc<7>XFw<6>`27`00c80<6>zz0<6>Uhz<2>PWoOSkNNhMJdKF`JBXH7U<4>000<11>YDK\
+  `FMdDN<4>x7U<9>2CU<10>LTh126<7>NVcQZhU`g<6>zo`<5>gRocNr`JtXFwUDq<7>31662\
+  8929NVj<3>U`o cyclerange=1/250
+  savename=hcstar15.gif }
+
+hcstar18           { ;   t=  0:01:43.43   (c) P. DiGiorgi - Oct 21, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asinh/cos/conj/round passes=t
+  center-mag=-3.37508e-014/5.9508e-014/0.2325112
+  params=1.3/0.7/10/1/-0.2/0.1 float=y maxiter=255 outside=summ
+  logmode=fly
+  colors=A85zzz<61>POMc0K<13>X0GX0GW0GV0F<17>K0AJ09I09H08H08<19>1000000000\
+  00wwk<4>wwfvvdwwc<27>eT5eS3dR2cP0cP0<18>WD3WD3VC3UB4VC4KKz<32>A0TA0SA0S<\
+  23>A0BA0AA0AA0A011011011 cyclerange=1/252
+  savename=hcstar18.gif }
+
+hcstar25           { ;   t=  0:00:07.03   (c) P. DiGiorgi - Oct 29, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=tanh/asin/tan/sqr passes=t
+  center-mag=-3.64153e-014/6.17284e-014/0.3332091
+  params=0.82/0.98/12/1/0.35/0.22 float=y maxiter=255 outside=summ
+  logmode=fly
+  colors=000C00<3>C00D11D11E22E22<3>G55H65I76J77J88<13>YPNZQO`RQaTRcUTdWU<\
+  5>mebnfdphfrjgsliunkwpmwpm<13>444ywt<61>dW7ymi<14>x`Lw_Jw_IwZH<12>uP2tO0\
+  tO0<28>i30oE0<61>F00000000000 cyclerange=1/240
+  savename=hcstar25.gif }
+
+hcstar28           { ;   t=  0:00:07.25   (c) P. DiGiorgi - Oct 25, 1998
+                     ; Using a K6-266 at 1600x1200
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=hc_julstar function=asin/ident/conj/sqr passes=t
+  center-mag=-8.88178e-016/0/0.2827575
+  params=0.5649999999999999/0.333/18/1/0.4/0.02 float=y maxiter=255
+  inside=253 outside=summ logmode=fly symmetry=xyaxis
+  colors=000ttk<8>oognnfmnflmekld<7>eg`df_ceZbdYacY<11>RUPQTOOSN<18>4B83A7\
+  296186186ywt<10>trotrosqnrpn<12>kigjhfihfhgegfd<2>edcedbdcacb`ba`<12>TSR\
+  SRRRQQQQPPPOOON<3>KKKKKJKKKqpy<11>kjtjisihshhrggq<2>edpddoccnbbmbam<17>M\
+  N`LM_KLZJKYIJYGIX<13>14K03K03Kwpm<6>tmjsliskirjhrjh<7>nfcmebldbkcakb`<2>\
+  i`_h`Zg_YfZXfYX<9>ZRPZQPYPOYONXNM<15>K99K89K99000000kkk
+  cyclerange=1/240
+  savename=hcstar28.gif }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

@@ -1,0 +1,193 @@
+FGZ-J_Collision-a  { ; Collision (c) Jay Hill, 1998
+                     ; generalization of formula by Michael G. Wareman
+                     ; p1 is focus of Julia set
+                     ; Siegel disk like image
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-julia
+  passes=1 center-mag=0/0/0.45 params=0.5/0/0.5/0/-0.78163/0.2411
+  float=y maxiter=2560 inside=bof60 outside=0
+  colors=00000e<9>Lzz<18>wzzzzzzzz<218>222222111000000
+  savename=fgzJcola
+  }
+
+frm:FGZ-Julia   { ; (c) Jay Hill, 1998
+  ; generalization of formula by Michael G. Wareman
+  ; p1 is parameter
+  ; p2 is parameter
+  ; p3 is focus of Julia set
+  z=pixel, c=p3:
+  z1=z*z + c;
+  z = p1*z1*z1/(z1 + p2) + c;
+  |z| <= 16
+  }
+
+--
+LostHead           { ; (c) Jay Hill, 1998
+          ; with large p2 and p3 the MSet is almost normal but
+          ; for disconnectivity near -2 and -1.75's filaments
+          ; BUT this must be a crime, it lost its head
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-mand
+  center-mag=-0.1100183/0.9224398/218
+  params=100/0/100/0/4.1/0 float=y maxiter=2560 inside=86
+  colors=000<14>h9g<15>000<14>S9vUAzUAw<9>N3SN3OM2LM2HL1EK0A<14>k91mA0mA0<\
+  30>UA0UA1UA3<28>bJucKwcKw<61>lbymczmczmdzmdz<28>www<13>111000000
+  savename=LostHead
+  }
+
+A_Weapon         { ; (c) Jay Hill, 1998
+          ; The weapon used in the LOSTHEAD crime? Must be!
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-julia
+  center-mag=0.000270701/-0.000386772/13.36898/1/4.999
+  params=100/0/100/0/-0.107886/0.921693 float=y maxiter=2560 inside=0
+  decomp=32
+  colors=000`55<5>k91mA0mA0<30>UA0UA1UA3<26>aIqbJsbJucKwcKw<59>laylbylbymc\
+  zmcz<14>qmyrmyrnxsnxsox<11>www<13>111000000<14>h9g<15>000<14>S9vUAzUAw<7\
+  >O4YO4VN3SN3OM2LM2HL1EK0A<7>Z55
+  savename=A_Weapon
+  }
+
+Gnarly_Beast       { ; (c) Jay Hill, 1998
+          ; Once you've glimpsed a beast like this, you don't soon
+          ; forget.  That is why you can't sleep at night! Too many 
+          ; fractal villains!!!
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-julia
+  passes=1 center-mag=0/0/18/1/10
+  params=100/0/100/0/-0.1100183/0.9224398 float=y maxiter=270 inside=0
+  colors=kO8000<28>_k0am0al0<35>Z7QY5RY5S<7>V9aUAcUAcUAc<44>BA1AA0AA0AA0<1\
+  22>220111000000
+  }
+
+frm:FGZ-Julia   { ; (c) Jay Hill, 1998
+  ; generalization of formula by Michael G. Wareman
+  ; p3 is focus of Julia set
+  z=pixel, c=p3:
+  z1=z*z + c;
+  z = p1*z1*z1/(z1 + p2) + c;
+  |z| <= 64
+  }
+
+frm:FGZ-Mand  { ; (c) Jay Hill, 1998
+  IF( |p3| == 0) 
+    p3 = 16
+  ENDIF
+  c=pixel, z=sqrt(-c), bailout = real(p3):
+  z1=z*z + c;
+  z = p1*z1*z1/(z1 + p2) + c;
+  |z| <= bailout
+}
+
+--
+FGZ-M_elephant_Jc { ; (c) Jay Hill, 1998
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-mand
+  center-mag=-0.76810094748552450/-0.08224139010844883/176.0563/1/90
+  params=3/0/3/0/0/0 float=y maxiter=25600 inside=bof60
+  colors=0cz<11>0AU000<11>000<3>GOOKUUMWW<12>www<206>222222111000000
+  savename=melepha1
+} 
+
+frm:FGZ-Mand { ; (c) Jay Hill, 1998
+  IF( |p3| == 0) 
+  p3 = 16
+  ENDIF
+  c=pixel, z=sqrt(-c), bailout = real(p3):
+  z1=z*z + c;
+  z = p1*z1*z1/(z1 + p2) + c;
+  |z| <= bailout
+} 
+
+--
+Potatoe { ; (c) Jay Hill, 1998
+  ; Most of this MSet is almost normal
+  ; But look! Oh my, it must be Dan's Potatoe
+  reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-mand
+  center-mag=+0.45659478684285460/+0.35038593708973740/928.2398
+  params=100/0/100/0/4.1/0 float=y maxiter=256 inside=bof60
+  colors=wU0mK2mU4cKAwh0AAA<4>KKKzjF<3>obCl`Bj_BhYA<11>KF4HD4HD4<14>540540\
+  640<93>cU0WWW<106>222222111000000
+} 
+
+Potatoe2 { ; (c) Jay Hill, 1998
+  ; Most of this MSet is almost normal
+  ; Oh my, not another Potatoe
+  reset=1960 type=formula formulafile=fgz.frm   formulaname=fgz-mand
+  center-mag=+0.43608241982133640/+0.32752974768966800/1041.055
+  params=100/0/100/0/4.1/0 float=y maxiter=256   inside=bof60
+  colors=wU0mK2mU4cKAwh0AAA<4>KKKzjF<3>obCl`Bj_BhYA<11>KF4HD4HD4<14>540540\
+  640<93>cU0WWW<106>222222111000000
+} 
+
+frm:FGZ-Mand { ; (c) Jay Hill, 1998
+  IF( |p3| == 0) 
+  p3 = 16
+  ENDIF
+  c=pixel, z=sqrt(-c), bailout = real(p3):
+  z1=z*z + c;
+  z = p1*z1*z1/(z1 + p2) + c;
+  |z| <= bailout
+} 
+
+--
+frm:fatlog { ; by Jay Hill, 1998
+  c=log(pixel),z=0:
+  z=sqr(z)+c
+  |z|<=100
+} 
+
+bigfatso { ; Big Fatso (c) by Jay Hill, 1998
+  ; After collecting for himself all the chocolate
+  ; in fractal land, only then did Dr. J look in the
+  ; mirror! Good grief!
+  reset=1960 type=formula formulafile=n.frm formulaname=fatlog
+  center-mag=0.862138/-0.0753769/1.009179/1/-90 float=y
+  maxiter=256 inside=0 decomp=256
+  colors=z_G<2>UA0<153>YJ6YJ6ZK5<49>cK0cK0bK0<38>TB0<4>kP9
+  savename=bigfatso
+} 
+
+--
+frm:MandelbrotMix {; Jim Muth
+  z=p3, c=pixel,
+  a=real(p1), b=imag(p1), d=real(p2),   f=imag(p2):
+  z=(a*(z^b))+(d*(z^f))+c,
+  |z| <= 100
+  } 
+
+Starfish { ; (c) Jay Hill, 1998
+; 5 points distorted
+; one of the last midgets as z0 increases passed critical
+; upper part to the left - Julia like starfish
+  reset=1960 type=formula formulafile=mix1.par
+  formulaname=mandelbrotmix
+  center-mag=-1.4216157031/+0.000455748689/1.098873e+008/1/-20
+  params=1/5/1/6/-1.42237/0 float=y maxiter=256000 inside=bof61
+  outside=0
+  colors=000wc0<17>wM0wK0wK0<89>wZNwZNw\
+  ZNwZNwZNwZN<12>w`Lw`Lw_L<121>U00000\
+  000
+  savename=Starfish
+} 
+
+--
+frm:FGZ-Julia { ; (c) Jay Hill, 1998
+; generalization of formula by Michael G. Wareman
+; p3 is focus of Julia set
+z=pixel, c=p3:
+z1=z*z + c;
+z = p1*z1*z1/(z1 + p2) + c;
+|z| <= 16
+} 
+
+Manta { ; (c) Jay Hill, 1998
+; generalization of formula by Michael G. Wareman
+; p1 is focus of Julia set
+; FGZ-J55i
+reset=1960 type=formula formulafile=fgz.frm formulaname=fgz-julia
+center-mag=-0.535207/3.55271e-015/0.4681297/1/90
+params=3/0/3/0/-0.552/0 float=y maxiter=255 inside=bof60
+outside=atan invert=1/-0.551/0
+colors=cw0UfU0MU<27>0Lb0Kc0Lc<6>0U`<7>\
+UcY<131>UYaUYaUYaUXaUXaUXa<7>UUcUU\
+cUTb<58>U0A1AF1AF
+savename=Manta
+} 
+
+

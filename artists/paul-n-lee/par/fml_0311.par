@@ -1,0 +1,240 @@
+; fml_0311.par, a collection of pars posted to the
+; Fractint mail list during November 2003
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: hallane at earthlink.net (Hal Lane)
+;Date: Mon Nov  3 04:03:39 2003
+;Subject: [Fractint] Another midget in the FOTD for 03-11-02 (Nov 2,'03)
+
+A_Bigger_Midget		{ ; Another midget in the Nov 2,'03 FOTD
+; Version 2002 Patchlevel 4 
+;      Hal Lane
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=ident
+passes=1
+center-mag=-2.03526564794305300/-0.01076099836157466\
+/1216.695/1/157.4999928593476/1.06854042177251252e-0\
+05 params=1/2.03/-0.2/2.97/0/0 float=y
+maxiter=5000 inside=0 proximity=0.4 outside=fmod
+periodicity=10 sound=off
+colors=000Kph<3>IhhHfiHdi<3>E_iEZjE_iI`gLaeGcYSdU<3>\
+ekEilAlm1mm4ll6<12>eIZeF`dDb<2>c5ib3kc0lb1m<22>NGRMG\
+QLHPLIOKIN<2>JJL<4>`HZcH`gGc<3>tFnwFptGm<6>cHWaHTZHR\
+WIO<3>MIEKJBHJ8FJ6CJ3AJ1<3>7H46H56G55G65G6<3>XKY_Nab\
+Kc_HdWEeCBf38g<13>T6LV6JX6I<3>d6Bg10<3>bLaaQjZPi<8>E\
+IaCH`AH_<3>1EX<3>K`iPflTko<5>JVTHSPGQL<2>BH9AF6AHB<3\
+>ANVAP_ARd<2>AVr<3>NLlRJjUGiXEg_Cf<8>iASjAQkAP<3>p9I\
+`VGbUF<17>LaNKaOJaO<2>GcQFcQGbK<4>Dej5TwDeoMugLsh
+}
+
+;========================================================================;
+;From: hallane at earthlink.net (Hal Lane)
+;Date: Tue Nov 11 12:45:17 2003
+;Subject: [Fractint] 
+
+Medallion_Weave    { ; Zoom by Hal Lane into Lee Skinner's Dumbell.gif -
+; from the Fractal Creations 2nd Ed CD.
+; Color map from "Leather Gem" by Damascena Korwin -
+; an entry in the Fractal Art 98 contest.
+; Version 2002 Patchlevel 5
+reset=1720 type=mandel passes=1
+center-mag=+0.25372693451716730/+0.00036640736338332/4.538746e+011/1/-37\
+.5009262932441132/0.000734303369271584183 params=0/0 float=y
+maxiter=100000 inside=0 sound=off
+colors=000IbLJdMKfNLhM<5>bmDenBhoA<3>ts3wt1sr2<5>Zf8Vd9SbA<3>DVF<4>CPCCN\
+BCMA<2>BI9BH8BH8<3>AE79D6DE6<3>UI9YJAaLBeMCgODjQF<9>tgGuiGvjG<2>ypGzrFzr\
+K<3>yufxukxvqwww<3>rhh`F0`F0<5>UA0T90S80R80Q70P60<3>L30K30J20I10I10<16>U\
+B2UB2VC2<3>YE3<3>Q82O61M41<3>Q71R81S91fM5<3>iO5jP5kQ6<9>UB3S92Q82<3>I109\
+31A00<3>VK0_P0dU0<3>zm0<3>zb0z_0zX0zU0<3>`F0UC0O80H40<2>A4773A73C<3>56K4\
+7M48O39Q2AS<8>9QaASbATc<3>E`hFbiGdi<3>JklKmmJkj<7>CURBSOAQM<3>6GB5E86G9<\
+12>H`K
+}
+
+;========================================================================;
+;From: juanw at telus.net (John Wilson)
+;Date: Mon Nov 17 12:30:00 2003
+;Subject: [Fractint] Doesn't look like a fractal!
+
+fmod_zoom          { ; Test of outside=fmod with 'mod' bailout
+;  Version 2002 Patchlevel 4
+reset=2002 type=julia passes=1
+corners=0.24028190305/0.24057818099/0.56447971722/0.56470192568
+params=-0.7387588245570118/0.1409069307481326 float=y maxiter=120
+inside=fmod proximity=0.009 outside=fmod
+colors=zzzG9NdR8A`D<3>q7sBD9ACY8Av<3>B34OF7`RB<3>u_L4j8xz`W_P29DLFQdMb<3\
+>dnH<3>ABRXHIsN9pmJ<3>wBO<2>U89WP6Ye3_v0<3>rPq<2>d2ZMAm<2>s_8<3>c7VbXYav\
+`akX`_TezuEPw<3>W0c<2>uk3<2>M1QQBdVLt<2>T4khJneXqbkt<2>enngolfnjelgdjd<3\
+>YAv<3>3c_4bQ6aG<2>v`A<3>oiH<2>lcBj`9gWz<2>UD0T`TSyu<3>pBUlKKgU9SPLRWYPb\
+kNeULiBFj4<3>VGP<2>NBFYOHIe`1wtWJ8UFWSBs<2>lKl<2>rDC<2>Aco<2>bCx<3>1oNON\
+a<3>b0e<2>Z0FX16X7K<2>USy<3>ayO2zWznt<3>E3T<3>`YA<2>K7L<2>h9a<3>q39<2>3Y\
+RMiEdv0<2>pFeTMb4TZ<3>zdG<2>CBnbyQ<2>M2u<2>Lmtbu8<3>17c<3>YQt<3>VIM<3>pa\
+3<2>OMIRHEUBA517KAZZJz<3>xTz<3>c62
+}
+
+;========================================================================;
+;From: hallane at earthlink.net (Hal Lane)
+;Date: Mon Nov 24 10:25:10 2003
+;Subject: [Fractint] 
+
+Mandelbrot-12hhl   { ; time=38 min @ 1024 x 768 on a P400
+; Mod of Jim Muth's FotD Nov 24, '03
+; by Hal Lane
+; Version 2002 Patchlevel 5
+reset=2002 type=mandel passes=1
+center-mag=-1.31205579278384000/+0.06815268633219243/4.933665e+010/1/127\
+.500420311381404/-0.00123778779799370992 params=0/0 float=y
+maxiter=300000 bailout=9 inside=0 logmap=36600 periodicity=10
+sound=off
+colors=000OAzYXzVXzPXz<2>EXz8Xz4Xz0Xz<4>0Xz0Xz0Xz2Xz4Xz7Xz7Xz<3>EXzGXzIX\
+zKXzKXz<3>RXzTXzVXzXXz<20>XXzXXzXXz<3>XXz0Xz7XzRXzXXz<15>XXz<4>XXzVXzTXz\
+RXzRXzPXzOXzMXzMVzKRzIOzGKzGGzECzC8zA4zA0z80z70z40z70z40z40z20z20z00z<16\
+>00z00z00z<2>00z00y20w70vA0rE0pI0nO0mR0kV0iY0ed0d<2>n0Yn0Xr0Xv0Xy8XzIXzR\
+XzbXzkXztXzzXzzVzzX<3>zzYzzYzzYwzYvz`rz`ny`mw`ivbevbdtb`rbXrbVpdRndOndMm\
+dIkeEieCie8ge4eg2eg0dg0bg0ek0bg0Yd0V`2RX7OT8MPCIMEEIIAEM7AO27R02T00X00`0\
+0b00e00e00g00i00i00k00m00m00n20p70pA0rE0tI0tM0vP0wT0wX0yY0z`0<3>zg0zi0zk\
+2zm2zn4zn4zn7zn7zn8zn8znAznAznCznCznEznEznGznEznG<5>znGznGznI
+}
+
+;========================================================================;
+;From: skinner at thuntek.net (Lee H. Skinner)
+;Date: Thu Nov 27 07:41:52 2003
+;Subject: [Fractint] Happy Thanksgiving, Fractaleers
+
+61104023           { ; Mandel in the Jungle
+; t=  0:27:16.84 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=-0.07936380036521261/-0.06380710162396437/\
+6.171011e+011/1/64.9998808102851484/0.000522471885085\
+133703 params=-1/1.1/11/-1.11/0/525 float=y
+maxiter=1800 inside=0 outside=summ logmap=312
+symmetry=none periodicity=10
+colors=000u1mt1ns1or2q<2>v2u<3>c5eZ6`U6X<2>F9LAAG7FO4\
+KW0Qc<3>5Xc6Zc7`c7aa7c_7eY<3>FcgHciJbl<3>S_v<3>civflv\
+invlqvotvsww<2>zzz<3>rwzovzhsw<3>Gch8_d8Xa<3>8JP8FL8C\
+I<4>XCAaB9fB7<3>zA0<13>SA1QA1NA1<3>D92<6>UXAW`BYcC<3>\
+hrI<3>UnXRm_NlcJkgFfpAaz<3>PJoSFlWAi_5fc0ce7_<3>zb0<2\
+>zz1zzC<2>zzz<3>jqdfo_blU<3>Mb8<3>LQ8KM8KJ8<2>I88H44G\
+00<3>TA5WD6ZF7aI8eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz5zz4\
+zz3<8>zY4zV5zS5<3>zE6wE6tD6<11>x8Rx7Sx7Uy6Wy6Yz5_<27>\
+y1gy1gy1gy1hy1hy1hx0iw0jv1l
+}
+
+61104027           { ; Mandel Kite
+; t=  0:04:18.42 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=-0.07779351809616825/-0.04467962032978866/\
+3082.536/1/125.000000000000767/6.74661715382995908e-0\
+13 params=-1/1.1/11/-1.11/0/525 float=y
+maxiter=1800 inside=0 outside=summ logmap=11
+symmetry=none periodicity=10 cyclerange=2/254
+colors=000FdzSFlWAi_5fc0ce7_<3>zb0<2>zz1zzC<2>zzz<3>j\
+qdfo_blU<3>Mb8<3>LQ8KM8KJ8<2>I88H44G00<3>TA5WD6ZF7aI8\
+eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz5zz4zz3<8>zY4zV5zS5<3\
+>zE6wE6tD6<10>w8Px8Rx7S<3>z5_<3>f5Ma5IW4E<2>_4H<3>P3D\
+N2CK2A<3>805G0BO0G<3>g0Ul0Xq0`v0d<2>y0fz0gy0hv1l<2>s1\
+or2qs2rt2tv2u<3>c5eZ6`U6X<2>F9LAAG7FO4KW0Qc<3>5Xc6Zc7\
+`c7aa7c_7eY<3>FcgHciJbl<3>S_v<3>civflvinvlqvotvsww<2>\
+zzz<3>rwzovzhsw<3>Gch8_d8Xa<3>8JP8FL8CI<4>XCAaB9fB7<3\
+>zA0<13>SA1QA1NA1<3>D92<6>UXAW`BYcC<3>hrI<3>UnXRm_Nlc\
+JkgFfpAaz<3>PJox0i
+}
+
+61104042           { ; Crab Claws Mandel
+; t=  0:16:06.91 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=+0.03158571255894448/-0.05888418216595667/\
+1.001894e+009/1/-90/-1.23373533611470521e-014
+params=-1/1.1/11/-1.11/0/525 float=y maxiter=1800
+inside=0 outside=summ logmap=136 symmetry=none
+periodicity=10
+colors=000yy0yy0yy0zz0<16>zZ0zX0zW0<3>yO1yM1yK1zI1<3>\
+zN1zO1yO1<11>mH1lG1kG1<3>gD1<3>Q91L82L03<3>I66H77G98D\
+B9EBA<3>L6CM5CO3DQ2DS0EN6JHDOHGQHKS<3>`O`ePbjQe<4>ZVn\
+XWpUXr<2>N_xK`zKaz<3>IdzHezGfzGfz<3>cfz<3>oszswztrevl\
+Lxf0<11>QY8NX8KW9<3>8TC<3>DP8FO7HL7JI6<3>jA5l95n86p77\
+q77<3>x3Az1Bz2Dz2Gz3I<2>x3Ow4Qu4T<3>p5ao6cn6el7hl8km8\
+m<35>ul7um6vn4vo3vp2wr0<41>yy0
+}
+
+61104051           { ; Wreath Mandel
+; t=  0:16:55.39 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=-0.08193942371416559/-0.07306039215291683/\
+3.285519e+009/1/22.4999989318018514/3.885780586188047\
+89e-016 params=-1/1.1/11/-1.11/0/525 float=y
+maxiter=1800 inside=0 outside=summ logmap=179
+symmetry=none periodicity=10
+colors=000XCA<3>pB4uB2zA0<4>nA0kA0iA0<3>_A1FA1VA1<3>L\
+A1IA1GA1D92<6>UXAW`BYcC<3>hrI<3>UnXRm_NlcJkgFfpAaz<3>\
+PJoSFlWAi_5fc0ce7_<3>zb0<2>zz1zzC<2>zzz<3>jqdfo_blU<3\
+>Mb8<3>LQ8KM8KJ8<2>I88H44G00<3>TA5WD6ZF7aI8eLAhMBiODj\
+QF<3>qeBriAtm9vq8xu7zz5zz4zz3<8>zY4zV5zS5<3>zE6wE6tD6\
+<9>w9Nw8Px8R<2>y6Wy6Yy6Y<13>wEawFawFa<42>rlwrmxrnxroy\
+<2>qpzqpzqpy<8>opwnpwnpvnpvnpvmpulqvotvsww<2>zzz<3>rw\
+zovzhsw<3>Gch8_d8Xa<5>8CI<3>SCC
+}
+
+;========================================================================;
+;From: juanw at telus.net (John Wilson)
+;Date: Thu Nov 27 19:08:49 2003
+;Subject: [Fractint] Rotating an image?
+
+overpass           { ; basic Mandy using fmod
+;  Version 2002 Patchlevel 4
+reset=2002 type=mandel
+center-mag=+0.13493099800000000/+0.67232383950000000/15191.22/0.9996
+params=0/0 outside=fmod
+colors=000InY<9>Hu_Hv_Hw`<2>Hy`GzaIzZ<3>UvLXuI_tE<10>ENNCKOAHP<3>24TEb1<\
+6>CZHBZKBYM<2>AWT9VW9VW<13>9Ub9Ub9Uc<11>ERdFRdFRc<16>NObNNbONb<2>PNbQMaP\
+Ma<5>DHgBGh9Fi<3>1Bm<31>X7EY7DZ7C<3>b67<3>Pou<7>SZnSXmTUl<2>UOiVLhVLh<25\
+>UgvUhwUiw<2>UlyTmzSly<21>6JK5HI4GG<2>1CA0A81A8<13>KLJ
+}
+
+;========================================================================;
+;From: Paul.N.Lee at Worldnet.att.net (Paul N. Lee)
+;Date: Thu Nov 27 19:32:55 2003
+;Subject: [Fractint] Rotating an image?
+
+overpass2       { ;  (c) Paul N. Lee -- Nov 27, 2003 - 20:28:30 
+; time=  0:00:33.56 on a PIII-700 at 640x480 
+; Video=SF5 using FractInt 2002.5 
+;  Version 2002 Patchlevel 5
+reset=2002 type=mandel outside=fmod params=0/0
+center-mag=+0.13492712000000000/+0.67232352850000000/18459.74/\
+0.9995/59.8454324950250864/-8.05763556651489798e-005
+colors=000InY<9>Hu_Hv_Hw`<2>Hy`GzaIzZ<3>UvLXuI_tE<10>ENNCKOAHP<3>\
+24TEb1<5>C_FCZHBZK<3>AWT9VW9VW<10>9Ua9Ua9Ub<3>9UcAUcATcBTcBTc<3>\
+DSdDSdERd<14>LPbLPbMPb<3>NNbONbONbPNbPNbQMa<4>HJeFIfDHgBGh9Fi7Ej<2>\
+1Bm<31>X7EY7DZ7C<3>b67<3>Pou<6>S`oSZnSXm<3>UOiVLhVLh<25>UgvUhwUiw<2>\
+UlyTmzSly<21>6JK5HI4GG<2>1CA0A81A8<13>KLJ
+}
+
+
+
+;------------------------------------------------------------------------;
+
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

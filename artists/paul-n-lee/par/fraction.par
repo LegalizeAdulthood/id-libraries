@@ -1,0 +1,103 @@
+comment { ; narrative copyright Kerry Mitchell 03feb98
+
+Fun with fractions
+
+There is really no good mathematical reason for these formulas,
+but what the heck.  The original thought was to look at what
+happens with the fractional parts of the iterates?  This became,
+"how often is the real part of the iterate less than the imaginary
+part?"  The fractional part is recovered using either the round()
+or trunc() functions.  For example, if z = 12.3456, then the
+fractional part of z is 0.3456, which is z - trunc(z).  The round()
+function can also be used, and can give different results.  For
+each iteration, the fractional parts are computed and the comparison
+made.  If the real part is less than the imaginary part, then a
+counter is incremented.  At the end of the orbit, the counter is
+divided by the number of iterations, and scaled into an angle for
+decomposition coloring.
+
+Normally, the fractional part is simply that right of the decimal
+point.  However, this can be changed through the use of the rounding
+factor.  The iterate is divided by this factor, then the fractional
+part is taken, and multiplied by the factor.  For example, if the
+rounding factor is 10, then z becomes 1.23456.  The fractional part
+is 0.23456, which when multiplied by 10 becomes 2.3456.  In these
+formulas, the rounding factor is complex, allowing greater
+flexibility.
+
+Two formulas add even greater possibilities.  The fractional part
+can be computed using either the round() or trunc() functions.
+Before rounding or truncating, the iterate can also be run through
+any of the standard littany of Fractint functions.  Go nuts.
+
+In addition to the xlty- functions, there are the heart- functions
+(both come in Julia and Mandelbrot flavors).  The heart- functions
+started out asking, "how often is the magnitude of the fractional
+part less than the polar angle?"  A few algebraic tricks later, this
+question changed to, "how can hearts be used to color a fractal?"
+The basic shape is shown using the "basic-heart" parameter selection.
+It shows the hearts that are the "background" to these images.  The
+"basic-xlty" parameters shown the same for the xlty- formulas.
+
+}
+
+valentine1         { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm
+  formulaname=heart_jul function=round/ident center-mag=0/0/0.55
+  params=0.28/0.005/3/0.5/0.8/0.6 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=000<61>y99zAAzAAzBB<61>zzzzzz\
+  zyz<60>i1ih0hh0hg0g<61>000 cyclerange=0/255
+  }
+
+valentine2         { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm
+  formulaname=heart_man function=round/ident
+  center-mag=-1.93970441053729800/+0.00162056367432151/1892693
+  params=4/4/1/0 float=y maxiter=1000 inside=0 decomp=256
+  periodicity=0 colors=C0C<16>000000100<60>y99zAAzAAzBB<61>\
+  zzzzzzzyz<60>i1ih0hh0hg0g<43>D0D cyclerange=0/255
+  }
+
+xlty-julia-sample  { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm
+  formulaname=xlty_jul function=round/recip passes=1
+  center-mag=0/0/0.8/1/90 params=0.2892573747165716/0.013391178\
+  93975959/4/1/0.1/0.1 float=y maxiter=2000 inside=0 decomp=256
+  periodicity=0 colors=000400500600810<4>C20C20D20D30E30<3>G40H\
+  40H40H50<18>P91PA1PA1PA1QA1<29>YI5YI5YI5YJ5ZJ5ZJ5<57>iYIiYIjY\
+  IjYJjZJjZJ<41>qhWqiXqiXqiYqiY<67>zzz cyclerange=0/255
+  }
+
+xlty-mandel-sample { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm
+  formulaname=xlty_man function=round/log passes=1 center-mag=\
+  -0.6/0/0.8 params=4/1.5/0/0.5 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 colors=006108<4>30F40G40H50I50I61J<\
+  8>A2QB2QB2RC2RC2S<5>F4VG4WG4WH4W<12>N8aO9bO9bPAbPAc<20>ZKj_K\
+  k_Lk`Mk<13>gUpgVphWphXpiXq<33>zyzzzzzyz<31>jZqiYqiXqhXphWpgV\
+  p<25>WGhVFgVFgUEfUEf<18>K6_K6ZJ6ZJ6YI5Y<3>G4WG4WF4VF3U<14>71M\
+  71L61K61J50I<3>30F30E20C20B<2>006000 cyclerange=0/255
+  }
+
+basic-heart        { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm formulaname\
+  =heart_jul function=round/ident center-mag=-0.2/0/0.6666667/\
+  1.333333 params=0/0/0/1/1/0 float=y maxiter=256 inside=0
+  decomp=256 periodicity=0 viewwindows=1/1/yes/0/0 colors=000C\
+  GS<4>9Ne<7>eFQbJPZNOOWNCdM7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>m\
+  ux<3>zaY<13>T3pQ0rQ4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<1\
+  2>ecO<8>8MY<14>4pJ<11>EHC<4>si5<10>bka<4>0jv<2>TEY<4>coOfwLf\
+  uN<13>hUp<4>Fjo<13>8T67R29T4<7>ShOVjRZeS<5>x7_<7>ime<6>Zhezz\
+  zWge cyclerange=0/255
+  }
+
+basic-xlty         { ; copyright Kerry Mitchell 03feb98
+  reset=1960 type=formula formulafile=fraction.frm formulaname=xlt\
+  y_jul function=round/ident center-mag=-0.00626305/0/0.6666667/1.\
+  333333 params=0/0/0/1/1/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 viewwindows=1/1/yes/0/0 colors=000CGS<4>9Ne<7>eFQb\
+  JPZNOOWNCdM7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mux<3>zaY<13>T3pQ0rQ\
+  4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<12>ecO<8>8MY<14>4pJ<11>E\
+  HC<4>si5<10>bka<4>0jv<2>TEY<4>coOfwLfuN<13>hUp<4>Fjo<13>8T67R29T\
+  4<7>ShOVjRZeS<5>x7_<7>ime<6>ZhezzzWge cyclerange=0/255
+  }

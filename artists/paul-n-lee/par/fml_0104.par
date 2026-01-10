@@ -1,0 +1,91 @@
+; fml_0104.par, a collection of pars posted to the 
+; Fractint mail list during April 2001
+; compiled by Les St Clair <les.stclair@btinternet.com>
+
+;========================================================================;
+;From: "Gerald K. Dobiasovsky" <gerald.dob@aon.at>
+;Subject: Re: (fractint) Fractint Development: The Ljapunow Type
+;Date: 02 Apr 2001 00:11:27 +0200
+
+
+Lyapunov {;Parser version of Fractint's Lyapunov formula
+          ;
+  reset=2001 type=formula formulafile=frac_ml.frm formulaname=Lyapunov
+  corners=0/6/0/4.5
+  params=0.66/3/1/0.5/0.35/100/10/1.4/1000000 float=y
+  maxiter=1000 inside=zmag outside=255 logmap=yes periodicity=0
+  colors=@lyapunov.map
+  }
+
+LyapSqrSinR {;Lyapunov-Fractal of "Do-It-Yourself"-Formula
+             ;
+  reset=2001 type=formula formulafile=frac_ml.frm formulaname=LyapSqrSinR
+  corners=0.006343064/3.837554/-0.09798406/3.733226
+  params=2.5/1.5/3/1/0.5/0.55/10/100/1000000/1.4 float=y
+  maxiter=1000 inside=zmag outside=255 logmap=yes periodicity=0
+  colors=@lyapunov.map
+  }
+
+;------------------------------------------------------------------------;
+;From: Guy Marson <guy.marson@mnhn.lu>
+;Subject: (fractint) a little tease
+;Date: 11 Apr 2001 10:41:45 +0200
+
+
+first1 { ; **PRESS F2 for instructions**                      
+         ; Version 2001 Patchlevel 6
+         ;1) run this .par with its original values.. 
+         ;2) reload the 'first1.gif' and set REAL(P4) to 35 .. (Z-screen)
+         ;3) set REAL(P5) to 0.1'500'000'002 (zero point 1500000002 :-)
+         ;4) now reload the 'second1.gif' and set REAL(P4) to 30 .. (Z-screen)
+         ;5) set REAL(P5) to 0.1500000001 ..
+         ;If you wanna experiment with the text, set IMAG(P4) to e.g. 0.14
+  reset=2001 type=formula formulafile=frac_ml.frm
+  formulaname=lakerise function=recip/ident passes=1
+  center-mag=+19.06420449201231000/+0.00105725129748224/6.787838e+007/0.93\
+  15/90 savename=first1
+  params=95158716/1/0.015/0.51/2.55e-009/-1.25e-008/85/0.15/0.15/1
+  float=y maxiter=6000 inside=0 logmap=46 periodicity=0
+  colors=00082A<3>819818818907<3>H46J46L55<2>T85V94YB4_C3bD3<3>lI2nJ1pK1rM\
+  0<6>v`4vb5wd5wf6xi6<2>xm8xn9yn9<3>yrCysDytEyuE<17>zwczwdzwfzwh<3>zwmzvoz\
+  vpzvrzvszuu<104>P77P77P77<6>M33M33M22<3>K000CP<3>0BO0BO0BO<4>0AL0AL0AK<3\
+  >0AK0AK0AK<12>46G46G46F56F55F55F<3>64D64D74D<3>73D73C73C73B73A73A72A
+  }
+
+second1             { ; Version 2001 Patchlevel 6
+  reset=2001 type=formula formulafile=frac_ml.frm
+  formulaname=e-viva-c function=recip/ident passes=1 savename=second1
+  center-mag=+19.06442878086688000/+0.00068889924650949/6.303265e+007/1/47\
+  .499 params=95180095/1/0.1/0.4/-2.56e-008/3.32e-008/90/0.15/0.15/1
+  float=y maxiter=6000 inside=0 logmap=55 periodicity=0
+  colors=00082A<3>819818818907<3>H36J46L55<5>_C3bD3eE3<3>nJ1pK1rM0<6>v`4vb\
+  5wd5wf6xi6<2>xm8xn9yn9<3>yrCysDytEyuE<17>zwczwdzwfzwh<3>zwmzvozvpzvrzvsz\
+  uu<96>SAASAAR99<5>P77P77P77<4>N44N44M33<3>L11L11K000CP<3>0BO0BO0BO<4>0AL\
+  0AL0AK<3>0AK0AK0AK<12>46G46G46F56F55F55F<3>64D64D74D<6>73C72B72B82A
+  }
+
+;------------------------------------------------------------------------;
+;From: Bill Jemison <fishburnIII@compuserve.com>
+;Subject: (fractint) Jonathan - puzzling par
+;Date: 12 Apr 2001 23:15:35 -0400
+
+billtest           { ; **PRESS F2 for info**                      
+                     ; Version 2001 Patchlevel 6
+                     ; I can't get the following par to generate
+                     ; at any higher res that SF5(640x480x256)
+  reset=2001 type=lorenz passes=d
+  center-mag=+0.00000000000000000/+15.00000000000000000/1.333333/1.3333
+  params=0.02/5/15/1 float=y maxiter=1000 fillcolor=0 inside=0
+  outside=0 cyclerange=1/1 sound=beep/fm orbitdelay=1000 showorbit=yes
+  colors=000pdQ0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

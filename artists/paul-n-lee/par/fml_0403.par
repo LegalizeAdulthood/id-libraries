@@ -1,0 +1,343 @@
+; fml_0403.par, a collection of pars posted to the
+; Fractint mail list during Marcy 2004
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: burningb at burningbridges.com (Hiram Berry)
+;Date: Fri Mar  5 23:19:37 2004
+;Subject: [Fractint] Ternary Julibrot (or other process phase space) Slicing
+
+ThePalaceAtXtampak { ; This was supposed to be a mundane slice of the
+; ternary phase space cubic julibrot. It doesn't
+; look anything like the typical Mandelbrot features.
+;  Fractint Version 2003 Patchlevel 1
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=ternaryjulibrotslc ismand=y passes=1
+center-mag=-2.02478/-0.0573754/0.5629118/0.3572/90/1.31075705844807544e-\
+014 params=0/0/2/0/0/0/1.57/0/0/0 float=y maxiter=200 inside=zmag
+logmap=yes
+colors=000h`z0e0<3>eL0eeeLLL<4>ssLzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmss\
+sU0cxzw<3>xjUxfNxbFxi8wU0<4>ZfQUiV0e0Koe<3>0zz<2>0Gz<3>rVzzVzzVrzVjB`0zV\
+V<3>zzV<3>VzV<3>VzzVrzVjzLW0hhz<3>zhz<3>zhh<3>zzhvzhqzhWQ0hzh<2>hzvm00xi\
+8hqzhlz00S<3>S0SS0LS0EeL0000S70<2>SS0<3>0S0<3>0SS0LS0ESeee000IES<2>SES<3\
+>SEE<3>SSEPSELSELLL000ESI<2>ESS<2>EHSKKS<2>QKSSKSSKQSKOSSL000SMKSOKSQKSS\
+K<2>MSKKSKKSMKSOKSQKSSKQSKOSZZL000<8>PPCRRDUUF<3>eeL000<8>TTCWWDZZF<3>ll\
+L000<8>XXC``DddF<3>ssL000<8>``CeeDiiF<3>zzL000<6>XXXaaafff<3>zzz000zzz
+}
+
+JovianCrown        { ; Jumping-off place to explore the ternary Julibrot
+; z->z^a+c.p1..p3={z0,a,c};p4,p5={lat,long}each(deg,deg)
+; This is the power a=5 M-like((lat,long)=((90,0),(0,0)))
+; Fractint Version 2003 Patchlevel 1
+;  Fractint Version 2003 Patchlevel 1
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=TernaryJulibrotSl2 ismand=y passes=1
+center-mag=-8.88178e-016/6.10623e-016/1.041667
+params=0/0/5/0/0/0/90/0/0/0 float=y maxiter=200 inside=zmag
+logmap=yes cyclerange=2/10
+colors=000m00eee0000000L00e0<3>eL0SSLllLssLzzLzzz000555<3>HHHKKKOOO<3>cc\
+chhhmmmsssU0cxzw<3>xjUxfNxbFxi8wU0<4>ZfQUiV0e0Koe<3>0zz<2>0Gz<3>rVzzVzzV\
+rzVjB`0zVV<3>zzV<3>VzV<3>VzzVrzVjzLW0hhz<3>zhz<3>zhh<3>zzhvzhqzhWQ0hzh<2\
+>hzvm00xi8hqzhlz00S<3>S0SS0LS0EeL0000S70<2>SS0<3>0S0<3>0SS0LS0ESeee000IE\
+S<2>SES<3>SEE<3>SSEPSELSELLL000ESI<2>ESS<2>EHSKKS<2>QKSSKSSKQSKOSSL000SM\
+KSOKSQKSSK<2>MSKKSKKSMKSOKSQKSSKQSKOSZZL000<4>EE7HH8JJ9MMBPPC<3>__IbbKee\
+L000<4>GG7JJ8NN9QQBTTC<3>eeIiiKllL000<4>II7MM8QQ9TTBXXC<3>llIooKssL000<4\
+>LL7PP8TT9XXB``C<3>rrIvvKzzL000<3>JJJOOOSSS<6>zzz000zzz
+}
+
+;========================================================================;
+;From: brewhaha at freenet.edmonton.ab.ca (SherLok Merfy)
+;Date: Wed Mar 10 15:32:13 2004
+;Subject: [Fractint] Diffusion-Only -- or you'll miss it.
+
+RainBrot {	; Make passes=1 or g to skip the last 256 iterations.
+; Tesseral agrees with passes=d on where fractal ends.
+; 16.75s on a 350Mhz PII @800x600. RainBoh.map
+; My monitor doesn't click on mode changes at this res.
+reset=2003 type=mandel passes=d
+center-mag=-1.26297/0.0125867/1.258975/1.0274/-90/3.88578058618804789e\
+-016 float=y maxiter=512 inside=0 invert=0.000546391309332721/-1.4/0
+colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
+0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
+0<2>0z00z30z70zB0zD0zH0zJ0zK0zL0zN<3>0zS0zT0zV0zX<4>0zc0zd0zf<14>0zu0z\
+v0zw0zx0zy<8>0rz0qz0oz<4>0jz0iz0hz<8>0Xz0Vz0Tz<3>0Pz0Nz0Lz0Jz0Hz0Gz0Dz\
+0Bz<2>00z30z70zB0zD0zF0zG0z<4>P0zQ0zS0zT0zV0z<2>_0z`0za0zb0zc0z<3>h0zi\
+0zk0z<9>u0zv0zw0zx0zy0z<13>z0mz0lz0k<3>z0fz0dz0cz0az0`<4>z0Vz0Tz0S<3>z\
+0Lz0Jz0Hz0Gz0D<3>z04
+}
+
+;========================================================================;
+;From: burningb at burningbridges.com (Hiram Berry)
+;Date: Wed Mar 10 15:57:56 2004
+;Subject: [Fractint] Orbit Fractals with an Arbitrary Formula
+
+Fossil_1           {
+;  Fractint Version 2003 Patchlevel 1
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=XY_Orbiter_1 function=sqr/sin/cos passes=1
+center-mag=0.064994/-1.89372/0.8259203/1/90/-1.23373533611470521e-014
+params=10000/0/0.05/0/1000/0 float=y maxiter=2000 inside=fmod
+logmap=4
+colors=000eee0000e0Ug4xi8oY4eL0<2>SSLllLssLzzLzzz000555<3>HHHKKKOOO<3>cc\
+chhhmmmsssU0cxzw<3>xjUxfNxbFxi8wU0<4>ZfQUiV0e0Koe<3>0zz<2>0Gz<3>rVzzVzzV\
+rzVjB`0zVV<3>zzV<3>VzV<3>VzzVrzVjzLW0hhz<3>zhz<3>zhh<3>zzhvzhqzhWQ0hzh<2\
+>hzvm00xi8hqzhlz00S<3>S0SS0LS0EeL0000S70<2>SS0<3>0S0<3>0SS0LS0ESeee000IE\
+S<2>SES<3>SEE<3>SSEPSELSELLL000ESI<2>ESS<2>EHSKKS<2>QKSSKSSKQSKOSSL000SM\
+KSOKSQKSSK<2>MSKKSKKSMKSOKSQKSSKQSKOSZZL000<4>EE7HH8JJ9MMBPPC<3>__IbbKee\
+L000<4>GG7JJ8NN9QQBTTC<3>eeIiiKllL000<4>II7MM8QQ9TTBXXC<3>llIooKssL000<4\
+>LL7PP8TT9XXB``C<3>rrIvvKzzL000<3>JJJOOOSSS<6>zzz000zzzm00
+}
+
+;========================================================================;
+;From: brewhaha at freenet.edmonton.ab.ca (SherLok Merfy)
+;Date: Wed Mar 10 19:30:42 2004
+;Subject: [Fractint] Technical considerations for the cubic.
+
+RainFly            {
+reset=2003 type=formula formulafile=frac_ml.par
+formulaname=butterfly center-mag=0/-1.23205/0.6666667/1.1211
+float=y maxiter=255 inside=0 outside=atan invert=0.5/0/-0.5
+colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
+0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
+0<2>0z00z30z70zB0zD0zH0zJ0zK0zL0zN<3>0zS0zT0zV0zX<4>0zc0zd0zf<14>0zu0z\
+v0zw0zx0zy<8>0rz0qz0oz<4>0jz0iz0hz<8>0Xz0Vz0Tz<3>0Pz0Nz0Lz0Jz0Hz0Gz0Dz\
+0Bz<2>00z30z70zB0zD0zF0zG0z<4>P0zQ0zS0zT0zV0z<2>_0z`0za0zb0zc0z<3>h0zi\
+0zk0z<9>u0zv0zw0zx0zy0z<13>z0mz0lz0k<3>z0fz0dz0cz0az0`<4>z0Vz0Tz0S<3>z\
+0Lz0Jz0Hz0Gz0D<3>z04
+}
+
+;========================================================================;
+;From: burningb at burningbridges.com (Hiram Berry)
+;Date: Wed Mar 10 20:33:55 2004
+;Subject: The form of the Julibrot slicing formulae and  brief
+
+show_hyperboloid   {
+;  Fractint Version 2003 Patchlevel 1
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=JulibrotSlice_R4 passes=1
+center-mag=-1.11223/-0.214471/0.2264147
+params=0/0/0/0/135/-90/135/-135/0/135 outside=tdis logmap=yes
+colors=000m00eee0000000L00e0<3>eL0SSLllLssLzzLzzz000555<3>HHHKKKOOO<3>cc\
+chhhmmmsssU0cxzw<3>xjUxfNxbFxi8wU0<4>ZfQUiV0e0Koe<3>0zz<2>0Gz<3>rVzzVzzV\
+rzVjB`0zVV<3>zzV<3>VzV<3>VzzVrzVjzLW0hhz<3>zhz<3>zhh<3>zzhvzhqzhWQ0hzh<2\
+>hzvm00xi8hqzhlz00S<3>S0SS0LS0EeL0000S70<2>SS0<3>0S0<3>0SS0LS0ESeee000IE\
+S<2>SES<3>SEE<3>SSEPSELSELLL000ESI<2>ESS<2>EHSKKS<2>QKSSKSSKQSKOSSL000SM\
+KSOKSQKSSK<2>MSKKSKKSMKSOKSQKSSKQSKOSZZL000<4>EE7HH8JJ9MMBPPC<3>__IbbKee\
+L000<4>GG7JJ8NN9QQBTTC<3>eeIiiKllL000<4>II7MM8QQ9TTBXXC<3>llIooKssL000<4\
+>LL7PP8TT9XXB``C<3>rrIvvKzzL000<3>JJJOOOSSS<6>zzz000zzz
+}
+
+;========================================================================;
+;From: gerald.dob at aon.at (Gerald K. Dobiasovsky)
+;Date: Wed Mar 10 20:44:14 2004
+;Subject: [Fractint] Orbit Fractals with an Arbitrary Formula
+
+Lauwerier { ;Press <Ctrl>+<o> after loading
+;
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=oLauwerier corners=-2/2/-1.5/1.5
+params=3/2/0.1/0.1 float=y maxiter=100000000
+periodicity=0 viewwindows=4.2/0.75/yes/0/0
+colors=@firestrm.map
+}
+
+Hiram { ;Press <Ctrl>+<o> after loading, <,> to zoom out!
+;
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=oHiram function=sqr corners=-2/2/-1.5/1.5
+params=0.5/0 float=y maxiter=10000000 periodicity=0
+viewwindows=4.2/0.75/yes/0/0
+colors=@firestrm.map
+}
+
+;========================================================================;
+;From: skinner at thuntek.net (Lee H. Skinner)
+;Date: Fri Mar 12 10:43:18 2004
+;Subject: [fractint] FOTD  12-03-04  (The African Veldt [6])
+
+Confetti_Spiral    { ;
+; t=  0:43:30.00 on a P4 2Gh at
+; 1600x1200  Image Copyright 2004
+; by Lee H. Skinner ver=2003
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=-3.42706967942867300/+0.65905855299226680/\
+96.6236/1/-47.4999999999997726/2.67549871146854912e-0\
+13 params=0.55/-1.1/0.11/-3.1/0/1e+100 float=y
+maxiter=1000 inside=bof61 symmetry=none
+periodicity=10
+colors=000jFR<2>zb0<2>zz1zzC<2>zzz<3>jqdfo_blUZjPVgJZ\
+eEMb8M_pMX8<3>KJ8JF8JC8I88H44G00<3>TA5WD6ZF7aI8eLAhMB\
+iODjQF<3>qeBriAtm9vq8xu7zz5zz4zz3<8>zY4zV5zS5<3>zE6wE\
+6tD6<9>w9Nw8Px8R<2>y6Wy6Yw6Yu5X<3>a5IW4EX4FY4G_4H<3>P\
+3DN2CK2A<3>805G0BO0G<3>g0Ul0Xq0`v0d<2>y0fz0gy0h<3>u1m\
+t1ns1or2q<2>v2u<3>c5eZ6`U6X<2>F9LAAG7FO4KW0Qc<3>5Xc6Z\
+c7`c7aa7c_7eY<3>FcgHciJbl<3>S_v<3>civflvinvlqvotvsww<\
+2>zzz<3>rwzovzhsw<3>Gch8_d8Xa<3>8JP8FL8CI<4>XCAaB9fB7\
+<3>zA0<13>SA1QA1NA1<3>D92<6>UXAW`BYcC<3>hrI<3>UnXRm_N\
+lcJkgFfpAaz<6>_5fc0ce7_
+}
+
+Red_leaf_midget    { ;
+; t=  0:23:44.63 on a P4 2Gh at
+; 1600x1200  Image Copyright 2004
+; by Lee H. Skinner ver=2003
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=mandelbrotmix4 function=recip
+passes=1
+center-mag=-6.39992232037162700/-0.74133977875696220/\
+10177.25/1/-39.999999999755623/-4.93227313158595138e-\
+010 params=0.55/-1.1/0.11/-3.1/0/1e+100 float=y
+maxiter=1000 inside=bof61 symmetry=none
+periodicity=10
+colors=000vxu<3>fo_blUZjPVgJZeEMb8M_pMX8<3>KJ8JF8JC8I\
+88H44G00<3>TA5WD6ZF7aI8eLAhMBiODjQF<3>qeBriAtm9vq8xu7\
+zz5zz4zz3<8>zY4zV5zS5<3>zE6wE6tD6<10>w8Px8Rx7S<3>z5_<\
+3>f5Ma5IW4E<2>_4H<3>P3DN2CK2A<3>805G0BO0G<3>g0Ul0Xq0`\
+v0d<2>y0fz0gy0h<3>u1mt1ns1or2q<2>v2u<3>c5eZ6`U6X<2>F9\
+LAAG7FO4KW0Qc<3>5Xc6Zc7`c7aa7c_7eY<3>FcgHciJbl<3>S_v<\
+3>civflvinvlqvotvsww<2>zzz<3>rwzovzhsw<3>Gch8_d8Xa8TZ\
+8QV0008JP8FL8CI<4>XCAaB9fB7<3>zA0<13>SA1QA1NA1<3>D92<\
+6>UXAW`BYcC<3>hrI<3>UnXRm_NlcJkgFfpAaz<3>PJoSFlWAi_5f\
+c0ce7_<3>zb0<2>zz1zzC<2>zzz
+}
+
+;========================================================================;
+;From: brewhaha at freenet.edmonton.ab.ca (SherLok Merfy)
+;Date: Mon Mar 15 01:43:02 2004
+;Subject: [Fractint] Periodic Rock
+
+test               {
+reset=2003 type=mandel passes=t
+center-mag=-0.44381/0.00203418/0.3942403/1.1619/-90/3.8857805861880478\
+9e-016 params=0/0 float=y maxiter=1024 inside=0
+invert=0.00125/-1.4/0 periodicity=-12; colors=@rainboh.map
+colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
+0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
+0<2>0z00z30z70zB0zD0zH0zJ0zK0zL0zN<3>0zS0zT0zV0zX<4>0zc0zd0zf<14>0zu0z\
+v0zw0zx0zy<8>0rz0qz0oz<4>0jz0iz0hz<8>0Xz0Vz0Tz<3>0Pz0Nz0Lz0Jz0Hz0Gz0Dz\
+0Bz<2>00z30z70zB0zD0zF0zG0z<4>P0zQ0zS0zT0zV0z<2>_0z`0za0zb0zc0z<3>h0zi\
+0zk0z<9>u0zv0zw0zx0zy0z<13>z0mz0lz0k<3>z0fz0dz0cz0az0`<4>z0Vz0Tz0S<3>z\
+0Lz0Jz0Hz0Gz0D<3>z04
+}
+
+;========================================================================;
+;From: brewhaha at freenet.edmonton.ab.ca (SherLok Merfy)
+;Date: Mon Mar 15 23:02:02 2004
+;Subject: [Fractint] Tracing Negativ Periodicity
+
+Methods	{	; A look at the internals of tesseral, border
+; tracing, and diffusion at the inversion of where x=1/3.
+reset=2003 type=mandel passes=t
+center-mag=-0.533722/6.10623e-016/0.9699869/1.5686/-90/-1.233735336114\
+70521e-014 params=0/0 float=y maxiter=255 fillcolor=2 inside=255
+invert=0.47/-0.33333333333333333/0 periodicity=-2
+colors=0zzzzz00zz0zz0Wz00zV0zz0<3>0z00zV0zz<3>00zV0zz0z<3>z00<3>ze0zo0\
+zz0Wz00z0<3>0ze0zo0zz<3>00zV0zz0z<3>z00<3>ze0zo0zz0<3>Lz0Bz00z00zV0zz<\
+3>0Lz0Bz00z<3>z0zz0Wz00<3>ze0zo0zz0<3>0z0<3>0ze0zo0zz<3>0Wz0Oz0Gz08z00\
+z<3>z0zz0Wz00<3>zz0Wz00z0<3>0zz<7>0Rz0Nz0Iz<3>00z<3>z0z<3>z0Lz0Bz00zV0\
+zz0<3>az0Wz0Qz0<3>0z00zV0zz<3>0Lz0Bz00z<3>e0zo0zz0z<3>z00<3>ze0zo0zz0<\
+3>Lz0Bz00z00zV0zz<3>0az0Wz0Qz<3>00zV0zz0z<3>z00zV0zz0<5>Wz0Rz0Lz0<3>0z\
+0<5>0zV0z_0ze<3>0zz<3>00zV0zz0z<3>z00<3>ze0zo0zz0Wz00z0<3>0zP0zV0z`<3>\
+0zz<3>000
+}
+
+;========================================================================;
+;From: brewhaha at freenet.edmonton.ab.ca (SherLok Merfy)
+;Date: Tue Mar 16 07:13:07 2004
+;Subject: [Fractint] frac_ml.frm ... puzzles?
+
+Out_Of_Orbit {	; Animation. Border tracing _treats_ periodicity,
+; too. How would you check if the white line is dithered?
+; Default map is too sticky in FRACTINT.
+reset=2003 type=mandel passes=b periodicity=-11 showorbit=yes
+center-mag=-0.765332/6.66134e-016/0.7772216/1.4732/90/3.88578058618804\
+789e-016 params=0/0 float=y maxiter=255 fillcolor=1 sound=beep
+colors=000<4>00000000zzz0000<4>000z000zzz0zzz00zzz0zyy00yyy0yxx00xxx0x\
+ww00www0www00www0wvv00vvv0vuu00uuu0utt00ttt0tss00sss0sss00sss0srr00rrr\
+0rqq00qqq0qpp00ppp0poo00ooo0ooo00ooo0onn00nnn0nmm00mmm0mll00lll0lll00k\
+kk0kkk00kkk0kjj00jjj0jii00iii0ihh00hhh0hhh00hhg0ggg00ggg0gff00fff0fee0\
+0eee0edd00ddd0ddd00ddc0ccc00ccc0cbb00bbb0baa00aaa0aaa00```0```00``_0__\
+_00___0_ZZ00ZZZ0ZYY00YYY0YYY00XXX0XXX00XXX0XWW00WWW0WVV00VVV0VUU00UUU0\
+UUU00TTT0TTT00TTT0TSS00SSS0SRR00RRR0RQQ00QQQ0QQQ00QQP0PPP00PPP0POO00OO\
+O0ONN00NNN0NNN00MMM0MMM00MML0LLL00LLL0LKK00KKK0KJJ00JJJ0JJJ00III0III00\
+IIH0HHH00HHH0HGG00GGG0GFF00FFF0FFF00EEE0EEE00EED0DDD00DDD0DCC00CCC0CCC\
+00BBB0BBB00BBA0AAA00AA909990099909880088808880077707770077606660066606\
+550055505440044404440033303330033202220022202110011101000
+}
+
+Default {	; I wouldn't jeneralize the formula, because
+; it illustrates significance of sign.
+; Try other methods of rendering.
+; Try different periodicity thresholds.
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=club_lambda2 function=zero/ident passes=t
+center-mag=-0.274835/8.88178e-016/0.7025121/1.214/90/0
+params=3/0 float=y maxiter=255 fillcolor=1 periodicity=-1
+sound=beep showorbit=yes; colors=@orbit.map
+colors=000<4>00000000zzz0000<4>000z000zzz0zzz00zzz0zyy00yyy0yxx00xxx0x\
+ww00www0www00www0wvv00vvv0vuu00uuu0utt00ttt0tss00sss0sss00sss0srr00rrr\
+0rqq00qqq0qpp00ppp0poo00ooo0ooo00ooo0onn00nnn0nmm00mmm0mll00lll0lll00k\
+kk0kkk00kkk0kjj00jjj0jii00iii0ihh00hhh0hhh00hhg0ggg00ggg0gff00fff0fee0\
+0eee0edd00ddd0ddd00ddc0ccc00ccc0cbb00bbb0baa00aaa0aaa00```0```00``_0__\
+_00___0_ZZ00ZZZ0ZYY00YYY0YYY00XXX0XXX00XXX0XWW00WWW0WVV00VVV0VUU00UUU0\
+UUU00TTT0TTT00TTT0TSS00SSS0SRR00RRR0RQQ00QQQ0QQQ00QQP0PPP00PPP0POO00OO\
+O0ONN00NNN0NNN00MMM0MMM00MML0LLL00LLL0LKK00KKK0KJJ00JJJ0JJJ00III0III00\
+IIH0HHH00HHH0HGG00GGG0GFF00FFF0FFF00EEE0EEE00EED0DDD00DDD0DCC00CCC0CCC\
+00BBB0BBB00BBA0AAA00AA909990099909880088808880077707770077606660066606\
+550055505440044404440033303330033202220022202110011101000
+}
+
+;========================================================================;
+;From: hallane at earthlink.net (Hal Lane)
+;Date: Fri Mar 19 21:20:21 2004
+;Subject: [Fractint] Here are a few pearls stitched onto some lace.
+
+Lace_and_pearls    { ; Hal Lane 3-19-04
+; CPU=P400 1024x768 t=0:01:45
+; Near Jim Muth's Semaphore 
+; 19-3-04 FoTD
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=slicejulibrot4 passes=1
+center-mag=0.00245812/-0.147774/7.843562
+params=89.63/90.33/89.72/90.31999999999999/-1.7435/4\
+e-005/0.00019/0.07388/2.003/0 float=y
+maxiter=6000 bailout=9 inside=fmod
+proximity=0.02 logmap=50 periodicity=10
+sound=off
+colors=000000NKL<2>QKJRKMSKO<3>WNYXN_YObZPd<3>_Sm<3>\
+NcsJfuGivDlxAny<7>TuzVvzXvz<2>cyzeyzgxy<3>lvwmuvnuv<\
+3>sst<4>xG7<3>PFZGFdII_KczLPPWTJ<3>dKOfIPhGRjESlCT5M\
+O<8>c`QfaQjcQ<3>yiQ<3>ocKmaJk`H<3>bVC<6>nIBoGBqEB<3>\
+w7B<3>SXYKbbLd`<5>QoTRqRRsQ<3>UzL<3>OnMNkMLhM<3>GYMh\
+rBdlE`gHmbK<3>mHWmCZm7a<5>mDfmEgmFg<3>mJj<2>mWI<3>mT\
+WnSZpSb<3>uPovPruLhtIZuFQvCGw97x8Cy8H<3>z6ZzDVzKR<2>\
+z`Gz`CzdjzZazTU<3>zSfzSizTe<3>zWUzXRzXNz`8zYK<3>z`8z\
+UF<3>z_7zKYzLv<5>zTYzUTzVP<3>z_9zCOzLHzTBzAS<3>zKJzN\
+HzPF<3>zZ7zvn<5>zcBzJj
+}
+
+;========================================================================;
+;From: burningb at burningbridges.com (Hiram Berry)
+;Date: Thu Mar 25 23:23:17 2004
+;Subject: [Fractint] Quadratic midget?  Is this one?
+
+pentahex { ; Is this a "quadratic" midget?
+; Fractint Version 2003 Patchlevel 1
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=3arySlcPwrJulibrot passes=1
+center-mag=-0.66798411674660230/+0.31990623903628910/1.456509e+011
+params=0/0/6/0/0/0/90/0/0/0 float=y maxiter=2000 inside=0 logmap=yes
+colors=CCC<15>gCgiCikCk<3>sCs<16>MCs<4>CCs<16>Cis<4>Css<16>CsM<4>CsC<16>\
+isi<4>sss<16>ssM<4>ssC<13>sSC<4>sIC<5>sIC<4>sIC<3>dGCaFCYFCUECQDCMCC<2>G\
+CC<3>dGC<3>WCTTBYYBecAm<3>www<3>jRqkEWm0A<2>www<3>obvmYukTu<2>eCs<4>WCs<\
+4>MCs<2>SPsUUsUSs<3>TJsTHsTFsSCs<3>KDsIDsGDsEDsCEs<9>CYsC_sCas<3>CisCs_C\
+sY
+}
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

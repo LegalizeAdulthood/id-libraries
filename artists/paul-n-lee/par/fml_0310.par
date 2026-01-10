@@ -1,0 +1,181 @@
+; fml_0310.par, a collection of pars posted to the
+; Fractint mail list during October 2003
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: Albrecht.Niekamp at t-online.de (Albrecht Niekamp)
+;Date: Fri Oct 10 12:43:11 2003
+;Subject: [Fractint] Multifractal_9
+
+The_original {;flying_machine
+; Time 3.54.24.45
+; Albrecht Niekamp  Oct, 03
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multifractal_9 function=sin/exp/exp/sin passes=t
+center-mag=+0.69407468245339080/+0.03415551174862821/115.2977/0.5977/-92\
+.5000000000000284/3.88578058618804789e-016
+params=-0.05825983458967864/0.3785210730307932/21225.32565788021/15234.0\
+506030602/152048.0404808048/384.1604894048/384.00482000595/256.100768300\
+1/512.1007683001/768.1007683001 float=y maxiter=3072 inside=maxiter
+outside=tdis periodicity=0 rseed=-2436
+colors=2000QY<10>09C08A068<2>022000211<21>icNkeOmfP<3>unTwpVxqWzsX<25>CB\
+7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>000<11>LLLNNNPPPQQQSS\
+SUUU<6>fffgggiiijjjlll<3>sss<25>BBB999777<2>222000012<24>0bo0cq0es<3>0kz\
+<13>0R_
+}
+
+Madhouse           { ; Time 3.25.34.35
+; Albrecht Niekamp  Oct, 03
+;
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multifractal_9 function=sin/sin/exp/sin passes=t
+center-mag=+0.80170883016743030/-0.00197191029829151/36192.88/1/-159.999\
+999999981441/-1.69965014285011762e-011
+params=-0.05825983458967864/0.3785210730307932/21222.32595705021/15423.0\
+506030602/51024.02048000094/384.0449690484/384.0242000145/256.1007683001\
+/512.1007683001/768.1007683001 float=y maxiter=3072 inside=maxiter
+outside=tdis logmap=4 periodicity=0 rseed=-2436
+colors=200012<24>0bo0cq0es<3>0kz<25>09C08A068<2>022000211<21>icNkeOmfP<3\
+>unTwpVxqWzsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>00\
+0<21>bbbdddfffgggiiijjj<3>qqqsssqqq<24>BBB999777555444222000
+}
+
+The_magic_mirror   { ; Time 3.14.24.15
+; Albrecht Niekamp  Oct, 03
+;  Version 2002 Patchlevel 5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multifractal_9 function=sin/sin/exp/sin passes=t
+center-mag=+0.80171328060885840/-0.00196810603325942/1070795/1/-159.9999\
+99995678252/-3.12983081118822781e-009
+params=-0.05825983458967864/0.3785210730307932/21222.32595705021/15423.0\
+506030602/51024.02048000094/384.0449690484/384.0242000145/256.1007683001\
+/512.1007683001/768.1007683001 float=y maxiter=3072 inside=maxiter
+outside=tdis logmap=4 periodicity=0 rseed=-2436
+colors=200012<24>0bo0cq0es<3>0kz<25>09C08A068<2>022000211<21>icNkeOmfP<3\
+>unTwpVxqWzsX<25>CB7A96875<3>000400<23>o00q00s00<3>z00<25>C00A00800<3>00\
+0<21>bbbdddfffgggiiijjj<3>qqqsssqqq<24>BBB999777555444222000
+}
+
+;========================================================================;
+;From: JackOTradez at email.msn.com (JackOTradez)
+;Date: Mon Oct 20 21:34:20 2003
+;Subject: [Fractint] Re: The Julia Rectangle !
+
+start                 {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1 corners=-1.6/1.6/-1.2/1.2 params=-1.7435/0/0/0 float=y
+maxiter=2110000000 fillcolor=0 inside=0 logmap=yes
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<3>E0rI0pL0n<3>_0ec\
+0cc00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>\
+c0c
+}
+
+zoom1                 {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1 corners=-0.5632/0.5632/-0.4224/0.4224 params=-1.7435/0/0/0
+float=y maxiter=2110000000 fillcolor=0 inside=0 logmap=3
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<3>E0rI0pL0n<3>_0ec\
+0cc00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>\
+c0c
+}
+
+zoom2                 {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1 corners=-0.1779712/0.1779712/-0.1334784/0.1334784
+params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
+logmap=7
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<3>E0rI0pL0n<3>_0ec\
+0cc00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>\
+c0c
+}
+
+zoom3              {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1 corners=-0.049831936/0.049831936/-0.037373952/0.037373952
+params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
+logmap=28
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<4>I0pL0nP0k<3>c0cc\
+00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>c0c
+}
+
+zoom4              {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1
+corners=-0.0276739647/0.0285649345/0.0528917631/0.0950709375
+params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
+logmap=40
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<4>I0pL0nP0k<3>c0cc\
+00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>c0c
+}
+
+zoom5!             {
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=test
+passes=1
+corners=-0.00966372122/0.0101323713/0.0664873996/0.081334469
+params=-1.7435/0/0/0 float=y maxiter=2110000000 fillcolor=0 inside=0
+logmap=62
+colors=000000000c00zW0zz00k000zc0cc00nG0zW0zz00c000zc0cc00<3>p_0sh0wq0zz\
+0<2>0c0<2>00zK0oc0cc00<9>qb0sf0tj0<3>zz0<3>Cg00c00WC<3>00z<3>W0gc0cc00<2\
+5>vn0wp0wr0<3>zz0<3>aq0Wo0Pl0<3>0c0<3>0OP0KV0Ga<3>00z<4>I0pL0nP0k<3>c0cc\
+00<57>xt0xu0yv0<3>zz0<13>Jj0Gi0Cg0<3>0c0<13>0Cg0Aj08n<2>02w00z10y<21>c0c
+}
+
+;========================================================================;
+;From: jamth at mindspring.com (Jim Muth)
+;Date: Wed Oct 22 13:47:09 2003
+;Subject: [Fractint] Re: The Julia Rectangle !
+
+Julia_Octagon      { ; time=0:70:48 at 200MHZ SF5
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=multirot-XY-ZW-new function=ident/flip
+center-mag=0/0/2500 params=90/90/2.003/0/0/0/-1.74\
+35027247539/7.707258e-008 float=y maxiter=1200
+inside=0 logmap=393 periodicity=10
+colors=000cccTnaYkXbiTgfOldJpbFcXBSS8FN43I13QD3YP3\
+e`9`ZFXYLTWQPVWKUaGSgCRl8QhAMeBJbCFZDCWE8TF5QG2SJ7\
+TMBVPGWSKXVPZYT_`Yacabffchjegkfflhemidnjdolcpmbqoa\
+rp`sq`tjiTdr1bs3at4`u6_v7Zw9YxAXyCWzDVzETqIRiMPaPN\
+UTMMWPNVSNUVOTYOS`PRcPQfQPiQOlQNfRJaSGXTDSUANU7MX9\
+M_BLbDLeFKgGKjIJmKJpMIsOIuPKrQLpRMnSNkTPiUQgVRdWSb\
+XT`YR__QZaPYcOYeNXgMWiLVkKVmJUoITqHSsGStHXuIauJfvJ\
+kvKpwLuwLzwNvrPrmRohTkcVgZWdVZeU`eTbeSeeRgfRifQlfP\
+nfOpgOsgNugMwgLygLuhJqhImhHiiGeiFaiEZjCVjBRjANk9Jk\
+8Fk7Ck6GiAJgDMeGPdJTbMW`PZZSaYV_ZWY_WW`XVaXTbYRcYP\
+dZOeZMfZKg_Ih_Hi`Fj`DkaBlaAlaQF_VJW_NScROhVKlZHk_I\
+k`IkaIjbIjbIjcIidJieJieJhfJhgJhhJhhJfcOeZTcVYbQb`M\
+g_HlZDqaGrdIrfLsiNslQtnStjTnfThbUb_UXWVRSVLOWFLWAP\
+cESjIWqMZxP3XM5YP7YS9YUBYXDY_FYaHZdJZfLZiNZlPZnRZq\
+SZsQWsOTsNQsLOsJLsIIsGFsFDsGHoGLkHOgHSdIW`IZXJbUJe\
+QKiMKmJLpFLtBLw8IrFFmMDiT }
+
+;========================================================================;
+;From: Paul.N.Lee at Worldnet.att.net (Paul N. Lee)
+;Date: Sun Oct 26 09:51:36 2003
+;Subject: [Fractint] Re: FOTD  26-10-03  (Snake Tree)
+
+tajmahal           { ; Posted by Jim Muth Wed, 26 Mar 1997
+reset=1950 type=formula formulafile=frac_ml.frm formulaname=ObliqueMand
+passes=t center-mag=-5.55112e-016/0.156576/1.893939
+params=-1.25/0/0/0.15 float=y maxiter=4000 bailout=100 inside=0
+logmap=yes symmetry=yaxis periodicity=10
+colors=000E8c<4>95c<16>dXo<34>DTVDTVESU<45>tA5<13>PghNijMhi<14>\
+ATV<7>lCi<3>cKm6YN<12>7XA7XA8W99W9<49>vR7vR7wS9<36>wZo
+}
+
+
+;------------------------------------------------------------------------;
+
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

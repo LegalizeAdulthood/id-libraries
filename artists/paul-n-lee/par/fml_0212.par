@@ -1,0 +1,244 @@
+; fml_0212.par, a collection of pars posted to the
+; Fractint mail list during December 2002
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: fractint@mailman.xmission.com (jos hendriks)
+;Date: Mon, 23 Dec 2002 21:01:01 +0100
+;Subject: [Fractint] investigations#1
+
+x-as {;Jos Hendriks,2002
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhline
+center-mag=0/0/0.6666667 params=0.001/0 float=y maxiter=2 inside=0
+colors=00000e
+}
+
+jhparabola1 {;Jos Hendriks,2002
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhparabola
+center-mag=0.0301786/0.369842/0.4959278 params=0.1/0 float=y
+maxiter=2 inside=0 colors=00000e
+}
+
+graph1 { ;Jos Hendriks,2002, broken polynomial function
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/-1/2/1/0.02 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph2 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-as are visible
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/1/-2/-3/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph3 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=0/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph4 { ; Jos Hendriks,2002, broken polynomial function
+; also x- en y-as are visible
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=-5/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+graph5 { ; Jos Hendriks,2002,;with correct choosen parameters graph of linear f: a line
+; also x- en y-axes are visible
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
+passes=1 center-mag=-0.791138/1.96774/0.2142747
+params=1/3/0/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
+colors=00000e
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Wed, 25 Dec 2002 00:40:11 +0100
+;Subject: [Fractint] merry x-mas
+
+ny2003-1           { ; Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+function=log/cosxx/exp/cotan passes=1
+center-mag=-0.714002/0.738264/1.736321/-1/154.999999999999943/1.77725889\
+56077584e-013
+params=1.069152195806757/0.9393722342600787/0.06774529251991225/-0.94344\
+34034241768/1.436170537430952/-2.349223303933836/0.1527591784417249/0.13\
+08709982604449/1.995343485824152/41 float=y maxiter=200 inside=bof60
+decomp=256 symmetry=none periodicity=0
+colors=wiIxkJzlJ<14>YRCWPBUOB<5>IF6GD6EC5CA5A94<3>221000000<25>S4nT4pU4r\
+<2>Y5xZ5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50\
+840<2>210000021<24>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>286265143122000<\
+9>LF6NH7PI7<3>XPAZRB`SB<3>h_EjaFlbG<4>viI
+}
+
+ny2003-2             { ;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+function=recip/cosh/sqr/conj passes=1
+center-mag=7.54576/2.48156/0.4055098/1/-47.5000000000000853/7.6716411001\
+5983169e-014
+params=3.395733512375255/5.356816309091463/0.4419049653614918/-2.7911099\
+58189642/7.637836848048342/1.882442701498459/-0.1814630573442793/-1.4827\
+22217474899/4.100650044251839/38 float=y maxiter=500 inside=bof60
+decomp=256 symmetry=none periodicity=0
+colors=wiIviI<17>OJ8MH7KG7IE6<3>A83873652431221000000<25>S4nT4pU4r<2>Y5x\
+Z5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50840<2>\
+210000021<24>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>286265143122000<9>LF6N\
+H7PI7<3>XPAZRB`SB<3>h_EjaFlbG<6>zlJxjI
+}
+
+ny2003-3           { ; Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+function=recip/cosh/sqr/conj passes=1
+center-mag=0.132034/-0.297903/2.077494/-1/130/1.14117049143658278e-013
+params=5.936033204138311/5.57642750328074/1.596542252876369/-1.896673482\
+467117/-0.3586230048524422/-1.874935148167363/-0.05415082247383037/0.009\
+330762657551719/4.100650044251839/33 float=y maxiter=100
+inside=bof60 decomp=256 symmetry=none periodicity=0
+colors=000021000<19>l88n88q89<3>zAA<18>F22C22A11<3>000000<18>33k33n34p<3\
+>44z<19>11E01C009<2>002000220<17>kjAnlBpoB<3>zyD<19>EE3CC2992<3>000<18>T\
+6kV6nX6p<3>b7z<18>91F71C61A<2>102000021<18>DlPDnQEqS<3>GzX<22>152
+}
+
+ny2003-4           { ; Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+function=abs/tanh/sqr/sinh passes=1
+center-mag=0.223577/-0.408861/2.134535/1/-30.0000000000000178/-1.0139111\
+7723892421e-013
+params=5.721457564012574/4.859273049104282/1.706256294442579/-2.12803430\
+2804652/-0.2790002136295655/-2.104403820917386/-0.03398113956114383/0.00\
+9330762657551719/4.100650044251839/55 float=y maxiter=100
+inside=bof60 decomp=256 symmetry=none periodicity=0
+colors=000236<51>Q_tQ`uR`v<2>SbyTczSby<55>236235124123112001000000<57>ta\
+JubJvbK<2>ydLzeLydL<55>642531421<2>100000001<3>235
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (jos hendriks)
+;Date: Sun, 29 Dec 2002 21:30:14 +0100
+;Subject: [Fractint] investigations#2
+
+jhsiertriangle {;Jos Hendriks,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinski passes=1
+center-mag=0.475632/0.48248/1.850399 params=10000/0 float=y
+maxiter=100 colors=000<8>000000000<3>000zzz<88>zzz<4>zzzccc<143>ccc
+}
+
+lambdasier1 { ; Jos Hendriks, 2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinskim passes=1
+center-mag=+0.54606658322903670/+0.12909227378964890/946.2815
+params=10/0 float=y
+colors=000z02<15>j02<2>g02f02f02f02<55>O02O02N02<3>M020z2<15>0j2<2>0g20f\
+20f20f2<55>0O20O20N2<3>0M200t<15>00d<2>00a00`00`00`<61>00G
+}
+
+lambdasier2 { ; Jos Hendriks, 2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinskim passes=1
+center-mag=+0.54887713642052600/+0.10850051419031680/445.3089
+params=10/0 float=y
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+GBFGBDGBCG000<6>000
+}
+
+sier1 { ; Jos Hendriks, 2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinski passes=1
+center-mag=0.488878/0.841371/0.7771474 params=100/0 float=y
+outside=imag
+colors=000zzz<5>ttz<3>ppzpoypnxpmwplv<3>mhrlgqkfo<3>gbgfaed_caX_<2>PKPKG\
+HGBNC9TD6ZC6`D6bD6dF5fF5hG5jH3lH3nH3pJ3rJ3tL1vJ3xH6zG9wFCvDFsCHrAKo9Nm7P\
+l6Si5Vh3Ye2`d1ba0e`0fZ6ZSDRLKKGSC9Z53e000zOLR7l00k00i00h00f20e50d70dC0<3\
+>ZN0YP0YS0XX1<3>Rf3Pi3Pm5<2>Lv6Ky7Jz7Kz5Jz7Hz9HyCGvDGsGFpHDmJDkLChNCePAb\
+R9`S9YV7XX7UZ6R`5Oa5Ld3Je3Gh<2>17m05o02r00s00z00t20p52l93hD6dG7`KAXOCSRF\
+OVGKzm0mY6YHGL0NJ0OH2PG6RFARDFSCJU9NV7RV<2>3bZ9VL5XJ2eZ0zm0to1mo6foAaoFV\
+oKOpOJpUCpY5pZ1sa0pd0oe0mh0lk0il0ho0fr0es0bv0ay0`z0fz0Z<2>m0Di06e00b00d0\
+0e10f32h75iC9kFClJFmLHoPLpUOrXRs`UtdYvf`wkbymezrizvlzyozzrzztzzrwwpttopp\
+lmmkkiifefdbeaZdzlK<2>KOlezp6Gv9JsCKrDNpGOmJPlKSkNUiPVfRYeUZdX`bYb``dZbe\
+YdhXfiU<2>moPppNrsLttKzzKHzKGzLAzH<5>Zz`bzdfzfkziozm
+}
+
+sier2 { ; Jos Hendriks, 2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinski passes=1
+center-mag=0.529848/1.20584/3.72083 params=100/0 float=y
+outside=atan
+colors=000zzz<5>ttz<3>ppzpoypnxpmwplv<3>mhrlgqkfo<3>gbgfaed_caX_<2>PKPKG\
+HGBNC9TD6ZC6`D6bD6dF5fF5hG5jH3lH3nH3pJ3rJ3tL1vJ3xH6zG9wFCvDFsCHrAKo9Nm7P\
+l6Si5Vh3Ye2`d1ba0e`0fZ6ZSDRLKKGSC9Z53e000zOLR7l00k00i00h00f20e50d70dC0<3\
+>ZN0YP0YS0XX1<3>Rf3Pi3Pm5<2>Lv6Ky7Jz7Kz5Jz7Hz9HyCGvDGsGFpHDmJDkLChNCePAb\
+R9`S9YV7XX7UZ6R`5Oa5Ld3Je3Gh<2>17m05o02r00s00z00t20p52l93hD6dG7`KAXOCSRF\
+OVGKzm0mY6YHGL0NJ0OH2PG6RFARDFSCJU9NV7RV<2>3bZ9VL5XJ2eZ0zm0to1mo6foAaoFV\
+oKOpOJpUCpY5pZ1sa0pd0oe0mh0lk0il0ho0fr0es0bv0ay0`z0fz0Z<2>m0Di06e00b00d0\
+0e10f32h75iC9kFClJFmLHoPLpUOrXRs`UtdYvf`wkbymezrizvlzyozzrzztzzrwwpttopp\
+lmmkkiifefdbeaZdzlK<2>KOlezp6Gv9JsCKrDNpGOmJPlKSkNUiPVfRYeUZdX`bYb``dZbe\
+YdhXfiU<2>moPppNrsLttKzzKHzKGzLAzH<5>Zz`bzdfzfkziozm
+}
+
+sier3 { ; Jos Hendriks, 2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jhsierpinski passes=1
+center-mag=0.527529/-0.153234/7.771474 params=100/0 float=y
+outside=atan
+colors=000<3>00n00z0C0<3>0Cn0Cz0P0<3>0Pn0Pz0a0<3>0an0az0n0<3>0nn0nz0z0<3\
+>0zn0zzC00<3>C0nC0zCC0<3>CCnCCzCP0<3>CPnCPzCa0<3>CanCazCn0<3>CnnCnzCz0<3\
+>CznCzzP00<3>P0nP0zPC0<3>PCnPCzPP0<3>PPnPPzPa0<3>PanPazPn0<3>PnnPnzPz0<3\
+>PznPzza00<3>a0na0zaC0<3>aCnaCzaP0<3>aPnaPzaa0<3>aanaazan0<3>annanzaz0<3\
+>aznazzn00<3>n0nn0znC0<3>nCnnCznP0<3>nPnnPzna0<3>nannaznn0<3>nnnnnznz0<3\
+>nznnzzz00<3>z0nz0zzC0<3>zCnzCzzP0<3>zPnzPzza0<3>zanzazzn0<3>znnznzzz0<3\
+>zznzzz000<12>fffiiimmm<3>zzz000<18>000
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Tue, 31 Dec 2002 12:01:54 +0100
+;Subject: [Fractint] hny 2003
+
+hny03-1            { ;  Version 2002 Patchlevel 3
+reset=2002 type=ifs ifsfile=fml_0212.ifs ifs=happy_new_year_03_
+center-mag=16.125/0.476/1.6 params=1 maxiter=2000
+colors=000BGDBGFBGG<2>BCG000<4>00000000000e0e00eee00e0eeL0eeeLLLLLzLzLLz\
+zzLLzLzzzLzzz000555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00zzz00zzj\
+0zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3\
+>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3\
+>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOS\
+KMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8\
+GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGB\
+DGBCGBB<2>GFBGGBFGBDGB<2>BGC
+}
+
+add_1-0            { ; Version 2002 Patchlevel 3
+;  Version 2002 Patchlevel 3
+reset=2002 type=ifs ifsfile=fml_0212.ifs ifs=1234567890^&
+center-mag=9.68631/0.466398/1.64794 params=1 maxiter=2000
+colors=0008GG<2>8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+GBFGBDGBCG000<4>00000000000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz00\
+0555<3>HHHKKKOOO<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0G\
+zVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hz\
+z<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ES\
+E<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKO\
+SKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE\
+8GG8EG8CG8AG88G8<2>8GE
+}
+
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

@@ -1,0 +1,313 @@
+Path: unixg.ubc.ca!news.bc.net!vanbc.wimsey.com!scipio.cyberstore.ca!news.Direct.CA!hookup!news.mathworks.com!udel!gatech!howland.reston.ans.net!vixen.cso.uiuc.edu!uwm.edu!lll-winken.llnl.gov!venus.sun.com!nntp-hub2.barrnet.net!news1.digital.com!pa.dec.com!ljsrv2.enet.dec.com!fehskens
+From: fehskens@ljsrv2.enet.dec.com ()
+Newsgroups: sci.fractals
+Subject: Some More .PARs
+Date: 21 Apr 1995 14:23:23 GMT
+Organization: Digital Equipment Corporation
+Lines: 140
+Distribution: world
+Message-ID: <3n8f4r$aie$2@usenet.pa.dec.com>
+Reply-To: fehskens@ljsrv2.enet.dec.com ()
+NNTP-Posting-Host: ljsrv2.ljo.dec.com
+X-Newsreader: mxrn 6.18-30
+ 
+ 
+SpiralCircus       { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.0815058958807/-0.08150589173076/0.64975237321781/0.64975237633224
+  float=y maxiter=10000 inside=0 logmap=400
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+SpiralDance        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia corners=-0.0305295/0.0298306/-0.0227289/0.0225707
+  params=-0.0639598055943359/0.6493379334375 maxiter=10000 inside=0
+  logmap=50
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+Repulsion          { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia corners=-0.000212499/0.000214208/0.114538804/0.11485967
+  params=-1.47380634785155/3.11638018359651e-006 float=y maxiter=5000
+  inside=0 logmap=90
+  colors=CCCCsY<9>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<2\
+  1>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq\
+  <8>Cs_
+  }
+ 
+Plate-to-Plate     { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia
+  corners=-0.0000409810524/-0.0000409463252/0.4449243608971/0.4449243870106
+  params=-1.4166073995108/6.42889284467873e-005 float=y maxiter=5000
+  inside=maxiter logmap=1350
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+Exchange           { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-1.748984191716/-1.7489841012788/0.0004411682794/0.0004412362627
+  float=y maxiter=5000 inside=0 logmap=155
+  colors=CCCCQs<13>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCq\
+  CC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCE\
+  s<4>COs
+  }
+Some of Paul Derbyshire's .PARs reminded me of some interesting structures I'd
+found in recent explorations of the Mandelbrot set.  Here are a few of my
+findings.
+ 
+--------------------------------------------------------------------------------
+ 
+One-Two-One-1      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=manfn+zsqrd function=sqr
+  corners=-0.874547042708442/-0.874547042212456/0.000174318189507/0.0001743185\
+  62449 float=y maxiter=10000 inside=0 logmap=250
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-2      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.7424896068071/-0.7424895644426/0.1437321128382/0.1437321446223
+  float=y maxiter=10000 inside=0 logmap=100
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-3      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-1.749283088077454/-1.749283087869156/0.000268570119466/0.0002685702\
+  76003 float=y maxiter=5000 inside=0 logmap=400
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-4      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.74249035064/-0.74248762598/0.1437302762/0.14373231905 float=y
+  maxiter=2500 inside=0
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+SpringThing        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=0.2934100449492263/0.2934100449597889/0.01499032247804684/0.01499032\
+  248597017 float=y maxiter=25000 inside=0 logmap=200
+  colors=CCCeCe<6>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>s\
+  sEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE\
+  <12>cCc
+  }
+ 
+SixWayDance        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julfn+zsqrd function=sqr
+  corners=0.6610144917/0.6610318667/0.0111387461/0.0111517986
+  params=-0.874547042628531/0.000174318452112588 float=y maxiter=10000
+  inside=0 logmap=300
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+EightWrapperMandelblot{ ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.7563620158747/-0.7563619745943/0.0641640461169/0.0641640773157
+  float=y maxiter=24832 inside=0 logmap=950
+  colors=CCCCosCqsCss<9>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEs\
+  E<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<17>Cm\
+  s
+  }
+ 
+FourSpringMandelblot{ ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandelfn function=sin
+  corners=-4.58020954213/-4.5802031625/0.00959904025/0.00960383278 float=y
+  maxiter=10000 inside=0 logmap=25
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-5      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julfn+zsqrd function=sqr
+  corners=-0.000879216111/-0.000878848153/0.029641526286/0.029641803065
+  params=-0.874547042617866/0.00017431844104862 float=y maxiter=10000
+  inside=0 logmap=400
+  colors=CCCCsg<3>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>q\
+  sqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCs\
+  q<3>Csi
+  }
+ 
+
+Path: unixg.ubc.ca!news.bc.net!torn!spool.mu.edu!uwm.edu!lll-winken.llnl.gov!venus.sun.com!nntp-hub2.barrnet.net!news1.digital.com!pa.dec.com!ljsrv2.enet.dec.com!fehskens
+From: fehskens@ljsrv2.enet.dec.com ()
+Newsgroups: sci.fractals
+Subject: Re: Some More .PARs
+Date: 21 Apr 1995 16:11:19 GMT
+Organization: Digital Equipment Corporation
+Lines: 145
+Distribution: world
+Message-ID: <3n8lf7$bdc$1@usenet.pa.dec.com>
+References: <3n8f4r$aie$2@usenet.pa.dec.com>
+Reply-To: fehskens@ljsrv2.enet.dec.com ()
+NNTP-Posting-Host: ljsrv2.ljo.dec.com
+X-Newsreader: mxrn 6.18-30
+ 
+ 
+Apologies for the editing glitch in my earlier post.
+ 
+Here's a clean, easier to "cut here" copy.
+ 
+Some of Paul Derbyshire's .PARs reminded me of some interesting structures I'd
+found in recent explorations of the Mandelbrot set.  Here are a few of my
+findings.
+ 
+---------------------------------------------------------------------------------
+SpiralCircus       { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.0815058958807/-0.08150589173076/0.64975237321781/0.64975237633224
+  float=y maxiter=10000 inside=0 logmap=400
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+SpiralDance        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia corners=-0.0305295/0.0298306/-0.0227289/0.0225707
+  params=-0.0639598055943359/0.6493379334375 maxiter=10000 inside=0
+  logmap=50
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+Repulsion          { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia corners=-0.000212499/0.000214208/0.114538804/0.11485967
+  params=-1.47380634785155/3.11638018359651e-006 float=y maxiter=5000
+  inside=0 logmap=90
+  colors=CCCCsY<9>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<2\
+  1>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq\
+  <8>Cs_
+  }
+ 
+Plate-to-Plate     { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julia
+  corners=-0.0000409810524/-0.0000409463252/0.4449243608971/0.4449243870106
+  params=-1.4166073995108/6.42889284467873e-005 float=y maxiter=5000
+  inside=maxiter logmap=1350
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+Exchange           { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-1.748984191716/-1.7489841012788/0.0004411682794/0.0004412362627
+  float=y maxiter=5000 inside=0 logmap=155
+  colors=CCCCQs<13>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCq\
+  CC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCE\
+  s<4>COs
+  }
+ 
+One-Two-One-1      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=manfn+zsqrd function=sqr
+  corners=-0.874547042708442/-0.874547042212456/0.000174318189507/0.0001743185\
+  62449 float=y maxiter=10000 inside=0 logmap=250
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-2      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.7424896068071/-0.7424895644426/0.1437321128382/0.1437321446223
+  float=y maxiter=10000 inside=0 logmap=100
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-3      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-1.749283088077454/-1.749283087869156/0.000268570119466/0.0002685702\
+  76003 float=y maxiter=5000 inside=0 logmap=400
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-4      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.74249035064/-0.74248762598/0.1437302762/0.14373231905 float=y
+  maxiter=2500 inside=0
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+SpringThing        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=0.2934100449492263/0.2934100449597889/0.01499032247804684/0.01499032\
+  248597017 float=y maxiter=25000 inside=0 logmap=200
+  colors=CCCeCe<6>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>s\
+  sEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE\
+  <12>cCc
+  }
+ 
+SixWayDance        { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julfn+zsqrd function=sqr
+  corners=0.6610144917/0.6610318667/0.0111387461/0.0111517986
+  params=-0.874547042628531/0.000174318452112588 float=y maxiter=10000
+  inside=0 logmap=300
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+EightWrapperMandelblot{ ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandel
+  corners=-0.7563620158747/-0.7563619745943/0.0641640461169/0.0641640773157
+  float=y maxiter=24832 inside=0 logmap=950
+  colors=CCCCosCqsCss<9>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEs\
+  E<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<17>Cm\
+  s
+  }
+ 
+FourSpringMandelblot{ ; Len Fehskens
+                     ; 21 April 1995
+  reset type=mandelfn function=sin
+  corners=-4.58020954213/-4.5802031625/0.00959904025/0.00960383278 float=y
+  maxiter=10000 inside=0 logmap=25
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+One-Two-One-5      { ; Len Fehskens
+                     ; 21 April 1995
+  reset type=julfn+zsqrd function=sqr
+  corners=-0.000879216111/-0.000878848153/0.029641526286/0.029641803065
+  params=-0.874547042617866/0.00017431844104862 float=y maxiter=10000
+  inside=0 logmap=400
+  colors=CCCCsg<3>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>q\
+  sqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCs\
+  q<3>Csi
+  }
+ 
+ 

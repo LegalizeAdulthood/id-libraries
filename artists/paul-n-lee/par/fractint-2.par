@@ -1,0 +1,512 @@
+Path: unixg.ubc.ca!ubc-cs!van-bc!rsoft!agate!stanford.edu!bcm!rice!news.rice.edu!dens
+From: dens@flammulated.rice.edu (dens)
+Newsgroups: alt.fractals
+Subject: Re: Fractint v17.1 Querys
+Message-ID: <DENS.92Feb19111613@flammulated.rice.edu>
+Date: 19 Feb 1992 17:16:13 GMT
+References: <1992Feb13.222239.1@hamp.hampshire.edu> <twegner.698078553@mwunix>
+Sender: news@rice.edu (News)
+Organization: Rice University, Houston, Texas
+Lines: 500
+In-Reply-To: twegner@mwunix.mitre.org's message of 14 Feb 92 14:42:33 GMT
+ 
+In article <twegner.698078553@mwunix> twegner@mwunix.mitre.org (Timothy Wegner) writes:
+ 
+   >A wonderful update...I love the huge .par file and the new alogrithm (it's
+   >even cooler to watch than boundary tracing). 
+ 
+   We're sitting on an even larger number of examples people have sent. 
+   Unfortunately it is time consuming to sort them out, so we haven't done
+   justice to them. 
+ 
+Here, have some more! This my own .par file. I especially like the
+synapse, trisect, and leaky, but sunset, lambchop, and scorp are also
+pretty neat.
+ 
+Meanwhile, does anyone out there have a problem with halleySin as I
+do? If I use the parameters as in this file, I don't get the picture
+that I used to. I have a Genoa svga card, but the problem happens in
+any video mode.
+ 
+Finally, donut doesn't work on my machine either. It used to be a ring
+structure with holes in it in an interesting pattern. It now gives the
+same funky result as the halleySin with parm 0.1.
+ 
+Anyway, enjoy:
+ 
+   -----------------------------------------------------------------
+ 
+amoeba             { ; Everyone's seen this one             Dennis Schmitz
+  reset type=manfn+zsqrd function=sin corners=-8.0/7.995483/-5.994003/6.0
+  biomorph=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+ 
+arrowhd            { ; Well, that's what it looks like      Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  corners=1.441389/1.712254/-0.101574/0.101574 params=0.01/0/1023 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000ForeD`<16>Qd9eCa<38>SOQeD`<29>zi7dCa<22>8CneCa<36>H_cRZjCvseCa<32>\
+  QVleC`<22>m72n60m60<12>`G7_H8_H8_H8<24>_P7
+  }
+ 
+bikheart           { ; Hearts on a bike?                    Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=cubic
+  corners=0.486123/0.496515/0.675728/0.683521 params=1 float=y
+  maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=0000Ek<97>0y00z00y0<124>00y00z00y<26>0Dl
+  }
+ 
+birds              { ; ok, I swiped this one (where?)       Dennis Schmitz
+  reset type=fn+fn function=log/sin passes=1
+  corners=3.0/6.199097/0.002655/2.399994 params=1/0/1 maxiter=1023
+  inside=maxiter logmap=old potential=255/511/0 biomorph=0 symmetry=none
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG211111011102\
+  100<2>000
+  }
+ 
+blob               { ; Aptly described                      Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Cubic
+  corners=-2.0/2.0/-1.5/1.5 params=0.1/0.1 float=y inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+ 
+blstfur1           { ; The output of a blast furnace.       Dennis Schmitz
+  reset type=magnet1m
+  corners=1.478421037/1.478805363/-0.664572839/-0.664284594 params=3/-1
+  float=y maxiter=1023 bailout=10000 inside=0 logmap=yes
+  colors=0005Tw<8>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<3>X3u000000_2t<19>m\
+  0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>xQ7xR6xS6wT5wT5wU5\
+  <5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9>MzALzBKzBJzCJzDIz\
+  D<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<11>3Wv4Wv4Vv5Uw\
+  5Tw
+  }
+ 
+blstfurn           { ; Different zoom level.                Dennis Schmitz
+  reset type=magnet1m corners=1.4717724/1.47945893/-0.66610764/-0.66034274
+  params=3/-1 float=y maxiter=1023 bailout=10000 inside=0 logmap=yes
+  colors=0005Tw<8>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<3>X3u000000_2t<19>m\
+  0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>xQ7xR6xS6wT5wT5wU5\
+  <5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9>MzALzBKzBJzCJzDIz\
+  D<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<11>3Wv4Wv4Vv5Uw\
+  5Tw
+  }
+ 
+bubbles            { ; Tiny bubbles                         Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  corners=1.6424817/1.656025/0.063627/0.0737845 params=0.01/0/1023 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000kRblOanK_<6>ws4<3>gKOcAUaBP_DKXFE<5>LywSmoZaffQYoSixVu<5>RlF<2>cVj\
+  JWw<5>6rBY_FyHJ<3>e9c<4>Dhk<2>yjU<3>oQSCn_<2>kbC<3>6eh<2>PVi<5>RyV<7>s2pHP1<\
+  3>W_h_btaKud0vg3aj7G<4>A9S<6>El0nB`<3>MWccY_u_W<5>u00<4>Boz<3>DON<5>puw<2>ST\
+  S<7>zRB<4>tfjvTUyEC<6>bZrZayVbs<6>0pD<6>aFUg9XkO8<2>YH7OHVDHr<4>EScFV`HU`KS`\
+  NR`KcbJlfHvj<7>M4v<5>S9S<6>iJIlLGlLGkLGjMH_or<6>`NTeIekDs<4>Bma<4>6rkCkjIch4\
+  O8<5>DTdTVdiXejUd
+  }
+ 
+bubbles2           { ; Different zoom level                 Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  corners=1.64683991/1.647517072/0.071547813/0.072055684
+  params=0.01/0/1023 float=y maxiter=1023 bailout=1023 inside=0
+  colors=000UEf_8pe1zDhJ8zEUaSfmXsyaKQV<2>SMuSST<2>xWkztxFQQ<2>3LZK6pja5QRL<2>\
+  nOFJaPLmRLOVOKcRLI<2>q10VbVhnbPLZXEkCR`6Qo3hoDaO8lP2wQKUXMYgParDxJBY9RasQSI<\
+  2>pX0pPSHZJFfEDn9EPM<2>0GGbfQxwU_bAKLQ<2>Q0`NYdSewHYWFddDlmOUK<2>hd8UKxFRSBS\
+  Y7TcORVURb_SjHMXGHfFBpNRR<2>bOdHXN<2>DpPNURTYVZa_CNY6IhPWI<2>kl1`JbtBrN_DSh2\
+  B2K_g`JULKXJM_GNddY1QNUI<2>dd3DUT7YZ1adNQXSPfU85NZP<2>cxXPZZWfjcnvUUMfXLs`JQ\
+  JYZBhg2sNWbJRIKRCMS6CJ`6BoJZW<2>PvwaMSuHXx0FaGWu5eLKJOCER49nxEtwjSaUal`KRHNS\
+  ACZS6gXLMNOHORCP9e_0ulhPeX`HYdRnsVPZX<2>jwzwDO_OPIeCIt1IZSIfXInbOXM<2>hnIQJH\
+  ZBBg35LVYO_hFRW<2>3TvUOTeLZrIeJSYLTiNVuVNJgIFtDBRVD`_3OUM<2>hbHD2tFXJ<2>6o6P\
+  LLXFId8FAMQ1GUADiVTWphH<2>O2r<2>DhJZFn<3>b2o<3>Nnc<3>SGf<2>IkQYdJmYCn4hmUSqS\
+  duPq
+  }
+ 
+bubmand            { ; 'Brot taking a bath?                 Dennis Schmitz
+  reset type=magnet1m corners=2.1694295/2.2038295/1.0179977/1.0437977
+  float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=000eL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmm\
+  ssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>V\
+  zz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3\
+  >0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>\
+  SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G8\
+  8G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGB\
+  FGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ00e0e00eee00e0e
+  }
+ 
+bubmand2           { ; Yea, I went nuts on bubbles          Dennis Schmitz
+  reset type=magnet1m corners=2.18720685/2.18892685/1.02335834/1.02464834
+  float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ
+  }
+ 
+conch              { ; Well, that's what it looks like      Dennis Schmitz
+  reset type=complexbasin corners=-0.294284/0.249716/-0.160159/0.247841
+  params=20/4/3 bailout=127 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+ 
+crab               { ; Don't get crabs!                     Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.32518/0.308194/-0.239469/0.235561 params=1000 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGDlT<5>6pPqLs
+  }
+ 
+donut              { ; Probably won't work right            Dennis Schmitz
+  reset type=newtbasin corners=-2.0/2.0/-1.5/1.5 params=344 float=y
+  bailout=1023
+  colors=000IZ8<11>BjHAkIBhI<5>KPGMLFMLF<14>OLA4FT<7>0Zw4BM<21>GOK5CN<9>LS_5BO\
+  <13>K9v6CM<20>xcF4EP<8>1mo8CM1qr1uu0yx<10>yrp<6>caX
+  }
+ 
+fatmand            { ; Obese 'Brot.                         Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Richard5
+  corners=-2.0/2.0/-1.5/1.5 float=y maxiter=255 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCG000<6>000
+  }
+ 
+fly                { ; It's a stretch, but still...         Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Richard2
+  corners=-2.0/1.999984/-1.499985/1.5 params=1
+  colors=0005KI4KI3JJfYI<29>fMQf_K<10>ZyoeXH<10>MJ3fYI<54>FKCfYI<32>iQKUSKTSK
+  }
+ 
+fracture           { ; Yes, it'fractured                    Dennis Schmitz
+  reset type=barnsleyj2 corners=-2.0/1.999997/-1.499996/1.5
+  params=-1.15321460366249/0.121521532535553 bailout=127 inside=0
+  }
+ 
+halleysin          { ; Standard..                           Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  corners=-2.0/2.0/-1.5/1.5 params=1 float=y maxiter=255 bailout=1023
+  inside=0 logmap=yes
+  colors=000mKr<5>NFluMs<12>narsLq<18>IC3uLs<37>jvuuLs<34>akZ`lY`lY_lY<49>2OR1\
+  NQ1NQ1NQ<28>6SQIFXHFXGEWtLs<48>6pPqLs
+  }
+ 
+hawk               { ; Bird of prey.                        Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.06326915/-0.06045007/-0.00107219/0.00104213 params=1000
+  float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=0000WV<40>0z00z01y0<82>z00z00y01<82>00z00z01y<40>0VV
+  }
+ 
+heat               { ; Texas in summer.                     Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.233705/-0.033705/0.119154/0.269154 float=y maxiter=255
+  bailout=1023 inside=0 logmap=yes
+  colors=000y8O<16>zJCzKBzLBzMAzMA<6>xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0f\
+  n0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9>MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ\
+  2t_2s_2s`1ra<16>0hm0gn0fn0eo0ep<11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q\
+  7xR6xS6xT5wT5wU5w<3>X3u000S00_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<5>y8P
+  }
+ 
+invmand            { ; Standard...                          Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  corners=-2.477048/5.328496/-3.31861/2.449489 params=9996 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000Pmn<19>5GrPmn<28>e8nPmn<24>PNpOLqPnn<22>UoWOnl<18>5h2Qmn<26>zGfQnn\
+  <23>xrgRnn<7>gquPnniqvkqwnrx<14>YdtXdtVbs<11>HRpFQoFQm<16>Qe8kONRnn<13>yzpLp\
+  oHrpDuq
+  }
+ 
+jul3d              { ; One of my 3d tries.                  Dennis Schmitz
+  reset type=julibrot passes=2 corners=-2.0/1.999984/-1.499957/1.5
+  params=-0.83/-0.83/0.25/-0.25 colors=000<126>z00000<21>00B
+  }
+ 
+julie1             { ; Another juliabrot                    Dennis Schmitz
+  reset type=julibrot passes=2 corners=-2.0/1.999984/-1.499957/1.5
+  params=-0.83/-0.83/0.25/-0.25
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuu\
+  utvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonpo\
+  nnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhh\
+  hghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabb\
+  bacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYX\
+  WWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQ\
+  QPQQ
+  }
+ 
+lambchop           { ; Red meat is good for you.            Dennis Schmitz
+  reset type=magnet1m corners=-3.088284/5.64641/-3.243556/3.307465
+  params=3/-1 float=y maxiter=255 bailout=10000 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ
+  }
+ 
+leaky              { ; The outside got in!                  Dennis Schmitz
+  reset type=magnet1m corners=1.433436/1.587167/-0.695841/-0.580543
+  params=3/-1 float=y maxiter=255 bailout=10000 inside=0 logmap=yes
+  colors=000VUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPP\
+  PPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJI\
+  JJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDC\
+  EDCCCCCBCCCBDCBBBBBABBBACBAAAAA9AAA9BA9999989998A988888788879877777677768766\
+  666566657655555455546544444344435433333233324322222122213211111011102100<2>0\
+  00zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuuutvutttt\
+  tstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonponnnnnmnn\
+  nmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhhhghhhgih\
+  gggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabbbacbaaaa\
+  a`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWW\
+  WVXWVVVVVUVV
+  }
+ 
+magnet             { ; Popular name                         Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  corners=-0.9795202/-0.9354882/-0.0163617/0.0166623 params=1 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000mKr<5>NFluMs<12>narsLq<18>IC3uLs<37>jvuuLs<34>akZ`lY`lY_lY<49>2OR1\
+  NQ1NQ1NQ<28>6SQIFXHFXGEWtLs<48>6pPqLs
+  }
+ 
+morebubb           { ; More bubbles of different type.      Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.061615983/-0.061475028/-0.000624056/-0.00051834 params=1000
+  float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=0009SQ<40>90I90IA1J<95>roYroYpmZ<24>C3a<5>aEZ<26>KAuKAuLBt<52>MLc
+  }
+ 
+mudflat            { ; Only a mother could love.            Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.0615403916/-0.06153334388/-0.00059083464/-0.00058554886
+  params=1000 float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
+  xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9\
+  >MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0\
+  ep<11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<3>X3u000000
+  }
+ 
+mum                { ; Flower                               Dennis Schmitz
+  reset type=complexnewton corners=-31.99/31.99/-23.9925/23.9925
+  params=20/0/1 bailout=127 inside=0
+  colors=0009Y6<2>6f1UIaa_lirwM3S<10>SdlN2R<9>YWXLJLJaEM4S<12>9slL2R<5>9JPO3V<\
+  6>dTxM1S<14>`GrM0R<10>MBWLCXM6P<6>Kn7O4U<7>i_yL1V<5>A9wO1P<7>fD1JDKGQCDc4M0R\
+  <13>_DYL8V<5>ByrX0hh1z
+  }
+ 
+newton2            { ; standard...                          Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Newton4
+  corners=-2.0/2.0/-1.5/1.5 params=1 float=y maxiter=255 bailout=1023
+  inside=0 logmap=yes
+  colors=000IY_<11>8AINjg<23>hHAOeg<4>VB_Rmb<5>py0Mkd<9>9i0Nkg<14>`zPujvNih<10\
+  >TEZNkh<26>4jTQfi<7>o2rYPOh22Nkh<26>koNEdn4YuMig<14>14ONih<15>8CpJa`<2>68DMg\
+  h<7>94pNkg<27>Sc3Nkg<18>ZzD
+  }
+ 
+paw                { ; Insect paw                           Dennis Schmitz
+  reset type=julzzpwr
+  corners=-0.05569858495386/-0.05569858182886/0.96174303904864/0.9617430413923\
+  8 params=-0.3/0.3/2 float=y maxiter=511 bailout=1023 inside=0 logmap=yes
+  colors=000310<32>tQA001<30>OSW203<17>eHzC19<3>y6k101<14>RFN000<35>H7X011<29>\
+  ElqFnsHGFYWUnlh123<14>Ufuqw6010<35>OtUPvVPvV<20>bgJ
+  }
+ 
+rain               { ; Another stretch                      Dennis Schmitz
+  reset type=complexbasin corners=-2.0/2.0/-1.5/1.5 params=20/4/3
+  bailout=127 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+ 
+scorp              { ; Cool scorpion                        Dennis Schmitz
+  reset type=magnet1m
+  corners=1.476665874/1.477434527/-0.661563718/-0.660987229 params=3/-1
+  float=y maxiter=1023 bailout=10000 inside=0 logmap=yes
+  colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
+  xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9\
+  >MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0\
+  ep<11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<3>X3u0005Tw
+  }
+ 
+scorp2             { ; Way cool scorpion                    Dennis Schmitz
+  reset type=magnet1m passes=1
+  corners=1.476665874/1.477434527/-0.661563718/-0.660987229 params=3/-1
+  float=y maxiter=1023 bailout=10000 inside=0 logmap=yes
+  colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
+  xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5<9\
+  >MzALzBKzBJzCJzDIzD<17>7xQ6xR6xS5wT5wT5wU<5>2tZ2t_2s_2s`1ra<16>0hm0gn0fn0eo0\
+  ep<11>3Wv4Wv4Vv5Uw5Tw<9>AMzBLzBKzCJzDJzDIz<17>Q7xR6xS6xT5wT5wU5w<3>X3u0005Tw
+  }
+ 
+seaslug            { ; Yup I swiped this too.               Dennis Schmitz
+  reset type=marksjulia corners=-0.804189/0.804175/-1.468956/1.46896
+  params=0.1/0.9 float=y maxiter=1023 bailout=1023 inside=0 symmetry=none
+  colors=000ZCD<12>lG2RCJ<19>btMRBJ<21>DhDQAJ<21>1D7RCJ<17>euYRAN<7>RDtSEySCJ<\
+  17>rqHoIeRBL<12>WQvRAK<10>TD`UEI<9>zs8RBJ<16>EhSPAJ<9>2KEQ8O<2>N2e`BKjCLTCJ<\
+  9>v_HRAJ<12>LCISBK<18>udbRCK<6>VSW
+  }
+ 
+spac1              { ; Don't remember....                   Dennis Schmitz
+  reset type=magnet1m corners=1.908635/2.308635/0.852088/1.152088 float=y
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000zLzzzLzzz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00\
+  <3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>z\
+  hh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3\
+  >SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>\
+  KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG\
+  88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFG\
+  BDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLL
+  }
+ 
+space              { ; This either....                      Dennis Schmitz
+  reset type=magnet1m corners=-0.933014/3.322986/-1.633578/1.558422
+  float=y maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ
+  }
+ 
+stack              { ; Balancing act.                       Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Richard6
+  corners=-9.746966/10.468067/-7.669424/7.491129 float=y maxiter=255
+  inside=0
+  colors=000AgE<10>9Hd8Eg9Eg<27>d5ff4ef4e<30>e2wNAg4JR<38>Oj_Pk`Oja<8>FYq<2>EM\
+  VDHNEHN<15>bBNdAMdBM<23>kiWaUUSES<26>pQqqRrqSp<17>_wGZyDZyD<24>VvZVu_VtZ<2>V\
+  nV
+  }
+ 
+stack1             { ; Different version.                   Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Richard6
+  corners=-9.746966/10.468067/-7.669424/7.491129 inside=0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESSEOSELS
+  }
+ 
+sunset             { ; Figure out how I did this...         Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  corners=-10.901666/-10.466622/10.410619/10.736896 params=1 maxiter=127
+  bailout=1023 inside=0 logmap=yes
+  colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
+  xQ7xR6xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0fn0eo0ep0<11>Wv3Wv4Vv4Uw5Tw5Tw\
+  5
+  }
+ 
+sunset2            { ; As a challenge.                      Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  corners=-10.7661797/-10.7647889/10.5425886/10.5436164 params=1
+  maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGT5w<4>X3u000\
+  oS3
+  }
+ 
+synapse            { ; I like this one.                     Dennis Schmitz
+  reset type=magnet1m corners=-0.258243/2.816369/-1.189408/1.116552
+  params=3/-1 float=y maxiter=255 bailout=10000 inside=0 logmap=yes
+  colors=000VUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPP\
+  PPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJI\
+  JJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDC\
+  EDCCCCCBCCCBDCBBBBBABBBACBAAAAA9AAA9BA9999989998A988888788879877777677768766\
+  666566657655555455546544444344435433333233324322222122213211111011102100<2>0\
+  00zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuuutvutttt\
+  tstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonponnnnnmnn\
+  nmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhhhghhhgih\
+  gggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabbbacbaaaa\
+  a`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWW\
+  WVXWVVVVVUVV
+  }
+ 
+thorn              { ; Yawn.                                Dennis Schmitz
+  reset type=lambdafn function=sin corners=-4.0/4.0/-3.0/3.0 params=1/0.4
+  float=y maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=000tNT<2>tgmtourBF<6>dRMpBF<6>IRGoCH<5>HXTeCDRFBCJ9bBWKEle5KR1QqFK<5>\
+  Vtnq7Hm5JkGG<4>0sLs6Dr3Bq08g8PV7ZrDL<3>jWkoEI<6>GrcoFH<5>GpXoFF<3>SeBgGtrAE<\
+  5>eK4pDK<4>SajD33uZDvyBjHN<3>4lvnGE<2>Uc9nDH<3>OVSiWKZrQqHJ<3>dl`nBRoDL<3>UU\
+  laNhbFLLLR2RXmJL<3>LyjkBK<4>2QheLPRX_Bhjm9K<2>S7ZqHK<4>bxmqCFmFEiJDYamn4uwkx\
+  hCWXGmgNTV`gIovtJG<3>tzLpBH<5>TTVrBKpDPnFVqEE<6>Qs4fRGThHn9I<4>L8_qCF<6>Rb8X\
+  `AnGM<4>JnutDH<3>pVRuNIv`LxnOtFF<4>phIp9H<4>UBRfLOTXXrIN<2>jhjgrscnr<2>Qan<6\
+  >Mkx<2>67a<3>rEM_YO
+  }
+ 
+trisect            { ; I like this too.                     Dennis Schmitz
+  reset type=magnet1m
+  corners=1.56212661/1.56981314/-0.67910574/-0.67334084 params=3/-1
+  float=y maxiter=255 bailout=10000 inside=0 logmap=yes
+  colors=000VUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPP\
+  PPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJI\
+  JJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDC\
+  EDCCCCCBCCCBDCBBBBBABBBACBAAAAA9AAA9BA9999989998A988888788879877777677768766\
+  666566657655555455546544444344435433333233324322222122213211111011102100<2>0\
+  00zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuuutuuutvutttt\
+  tstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpooooonooonponnnnnmnn\
+  nmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhhhghhhgih\
+  gggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccccbcccbdcbbbbbabbbacbaaaa\
+  a`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWW\
+  WVXWVVVVVUVV
+  }
+ 
+veins              { ; Yup, veins.                          Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=MTet
+  corners=-0.0775025/-0.0603025/-0.0067882/0.0061118 params=1000 float=y
+  maxiter=1023 bailout=1023 inside=0 logmap=yes
+  colors=000VW0<42>z00z00y01<82>00z00z01y<82>0z00z01y0<38>UX0
+  }
+ 
+webs               { ; Kinda looks like...                  Dennis Schmitz
+  reset type=magnet1m corners=-0.856406/3.246378/-1.576122/1.500966
+  float=y maxiter=255 bailout=1023 inside=0 logmap=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
+  WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
+  3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0S<3>S0\
+  0<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKKS<2>QKSSKS\
+  SKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3>G00<3>GG0<3>0\
+  G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G8<2>8GE8GG8EG8CG8A\
+  GBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBGGBFGBDGBCGZlN<6>bgJ
+  }
+ 
+wineglass          { ; Standard...                          Dennis Schmitz
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=-1.813308/0.654512/-0.9204/0.930454 float=y maxiter=1023
+  inside=0
+  colors=000nZB<18>kb8sNI<14>ZDNtNI<96>q0wuRN<4>zkltNI<22>g`UsQI<10>dwBtNI<13>\
+  mMAtNI<61>5qqClq
+  }

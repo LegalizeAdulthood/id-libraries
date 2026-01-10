@@ -1,0 +1,106 @@
+; fml_0002.par, a collection of pars posted to the 
+; Fractint mail list during February 2000
+; compiled by Les St Clair <les.stclair@btinternet.com>
+
+;========================================================================;
+;From: Tim Wegner <twegner@swbell.net> [Author = Sylvie Gallet]
+;Subject: (fractint) Mandel lake
+;Date: 04 Feb 2000 21:19:11 -0600
+
+mandel_lake_01     { ; .                           t=  0:00:02.86
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.444738/0/0.6666671
+  params=0/0/512/40/0.3/200 float=y inside=atan
+  outside=real decomp=256 cyclerange=0/255 sound=off
+  colors=GXf<3>DTcCSbCRa<3>AO_AN_9MZ<4>5HV4GU3FT<3>0CQ<32>mqso\
+  rtpsu<2>uwwvxxvxx<2>uyytyytxy<29>esydsydsy<2>brybqzbox<24>fM\
+  XfLWgJV<3>eFQdEPbDO<6>S6GR5FP4EN3DL2CK1BJ0A<23>DSaDTbDUcCVdC\
+  WeBXf<3>Aak9blCcm<7>Ymr`nrbps<3>nuuqvvtxwvywyzx<30>WnrVnrUnr\
+  <3>RkqRkpQjp<5>LdkKcjJbiJaiI_hIZhHYg
+  }
+
+mandel_lake_02     { ; .                           t=  0:00:02.58
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.5/0.135678/0.6666667
+  params=0/0/1024/45/0.3/300 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_03     { ; .                           t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-1.2699/-0.168032/36.72672/1/-32.5/30.396
+  params=0/0/4/40/0.3/200 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_04     { ; .                           t=  0:00:01.59
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=mandel_lake ismand=n passes=1
+  center-mag=0/0.331658/0.6666667
+  params=0.3322884012539185/-0.03768844221105527/2/40/0.3/200
+  float=y maxiter=300 inside=0 decomp=256 cyclerange=0/255
+  sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+;========================================================================;
+;From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+;Subject: (fractint) Newton basin
+;Date: 05 Feb 2000 04:50:14 -0500
+
+Newt_basin_z3-1    { ; .                        t=  0:00:03.46
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=1/0/-0.5/0.8660254037844/-0.5/-0.8660254037844 float=y
+  outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+Newt_basin_z3-z    { ; .                        t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=formula formulafile=frac_ml.frm
+  formulaname=z3_newtbasin passes=1 center-mag=0/0/0.6666667
+  params=0/0/1/0/-1/0 float=y outside=real periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+built-in_newtbasin { ; .                        t=  0:00:00.77
+                     ; Copyright Sylvie Gallet, Feb 05, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+  reset=2000 type=newtbasin passes=1 center-mag=0/0/0.6666667
+  params=3/0 float=y periodicity=0 sound=off
+  colors=00000e0e0wWe000<250>000
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

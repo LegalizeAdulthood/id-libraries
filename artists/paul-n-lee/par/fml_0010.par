@@ -1,0 +1,62 @@
+; fml_0010.par, a collection of pars posted to the 
+; Fractint mail list during October 2000
+; compiled by Les St Clair <les.stclair@btinternet.com>
+
+;========================================================================;
+From: "Iain G. Stirling" <Iain@flat2-2.freeserve.co.uk>
+Subject: (fractint) PARS: outside=fmod
+Date: 01 Oct 2000 16:41:12 +0100
+
+For those of you who follow the developer's versions of Fractint, here 
+is a little parameter file which shows what the outside=fmod option, 
+added in the latest developer's release (20.1.0), can do.
+
+
+outside_fmod1      { ; Test of outside=fmod with 'mod' bailout
+                     ; Iain G. Stirling
+                     ; 5:16.48 at 1024 x 768 on P133
+  reset=2001 type=julia passes=1
+  corners=0.19279681/0.31113281/0.512317611/0.601069611
+  params=-0.73875882455701181/0.1409069307481326 float=y maxiter=120
+  inside=fmod proximity=0.0075 outside=fmod
+  colors=zzz<254>000
+  }
+
+outside_fmod2      { ; Test of outside=fmod with 'real' bailout
+                     ; Iain G. Stirling
+                     ; 0:14.61 at 1024 x 768 on P133
+  reset=2001 type=mandel passes=1 corners=-5.94/4.94/-4.08/4.08
+  params=0/0 float=y maxiter=120 bailout=100 bailoutest=real
+  inside=fmod proximity=100 outside=fmod
+  colors=000257<17>112111111<3>000zzz<88>eeNeeNddM<3>ccKK`h<17>CWdCVdBVd<1\
+  12>267
+  }
+
+outside_fmod3      { ; Test of outside=fmod with 'imag' bailout
+                     ; Iain G. Stirling
+                     ; 0:26.19 at 1024 x 768 on P133
+  reset=2001 type=julia4 passes=1 corners=-2/2/-1.5/1.5
+  params=0.027272727272727251/0.81218592964824088 float=y maxiter=20
+  bailout=1000 bailoutest=imag inside=fmod proximity=0.1 outside=fmod
+  colors=5FK555<3>SSSYYYccc<3>zzz<103>CWdCVdBVd<137>000
+  }
+
+outside_fmod4      { ; Test of outside=fmod with 'or' bailout
+                     ; Iain G. Stirling
+                     ; 5:38.89 at 1024 x 768 on P133
+  reset=2001 type=phoenix passes=1
+  center-mag=0.0209813/0.696859/3.464317/0.9999 params=0.56667/-0.5/0
+  maxiter=75 bailoutest=or inside=fmod proximity=0.1 outside=fmod
+  colors=zzz<114>CWdCVdBVd<137>000
+  }
+
+outside_fmod5      { ; test of outside=fmod with 'manh' bailoutest
+                     ; Iain G. Stirling
+                     ; 6:13.11 at 1024 x 768 on P133
+  reset=2001 type=julia passes=1 center-mag=0.456426/0.227638/10.87824
+  params=0.3/0.02 float=y maxiter=200 bailoutest=manh inside=fmod
+  proximity=0.07 outside=fmod colors=zzz<254>000
+  }
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

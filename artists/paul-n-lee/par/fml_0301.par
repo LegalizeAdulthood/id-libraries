@@ -1,0 +1,688 @@
+; fml_0301.par, a collection of pars posted to the
+; Fractint mail list during January 2003
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: fractint@mailman.xmission.com (jos hendriks)
+;Date: Sat, 4 Jan 2003 20:36:30 +0100
+;Subject: [Fractint] investigations#3.1
+
+block_of_flats { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=-0.77118865717993890/+0.78113466887094510/227799/0.6848
+params=-2.522474238758866/-2.5106260160601/4/0 float=y
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+GBFGBDGBCG000<6>000
+}
+
+windows { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=-1.64e-006/2.205e-006/0.5706675
+params=-2.016863584518433/0.3288808465003967/3/0 float=y
+colors=000z0zc0cz00c00zz0cc00z00c000z00c0zz0cc000000zzzccc<238>ccc
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Morgan L. Owens)
+;Date: Tue, 14 Jan 2003 19:54:33 +1300
+;Subject: [Fractint] An afternoon visiting an old friend.
+
+Ypres_Dawn         { ; De l'autre extremite du monde.
+;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=distortpendulummg function=log passes=1
+center-mag=-0.319069/0.0272592/24.6537 params=0.1/1 float=y
+maxiter=255 inside=255 periodicity=0
+colors=000<82>K00L00L00<90>gY0gY0gZ0gZ0hZ0<74>zzz
+}
+
+Asymptotic_Freedom { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=HenonQuadmapJulGen function=cotanh/recip passes=1
+center-mag=-1.36335/0.187656/1.572327/1/-90 params=0/0/0/0 float=y
+maxiter=255 inside=epsiloncross proximity=-0.001 outside=0
+periodicity=0
+colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+>ATl<14>AA9
+}
+
+Grand_Unification  { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=distortpendulummg function=zero passes=d
+corners=-0.0475/0.285/0.15865385/-0.03365385 params=0.5/0.5 float=y
+maxiter=255 inside=epsiloncross proximity=-0.00025 outside=0
+periodicity=0 viewwindows=1/0.526/yes/0/0
+colors=000ccc<3>nnnqqqtttwwwzzz<4>IIz99z00z<9>bbOffKjjG<3>zz0<9>zO0zK0zG\
+0<3>z00<9>O0bK0fG0j<3>00z<9>0bO0fK0jG<3>0z0<9>bObfKfjGj<3>z0z<9>`0`Y0YV0\
+V<2>N0NK0KJ1L<8>8Ia7Kc5Me<2>2Sk0Um0Vm<8>0em0fm0hm<2>0km0mm0mm<8>0gu0gu0f\
+v<3>0cz<9>bqzfrzjtz<3>zzz<25>zhCzgAzf8<2>zd2zc0zd0<8>zq0zr0zt0<3>zz0<9>z\
+O0zK0zG0<3>z00<14>ZZZ
+}
+
+Not_a_Nice_Doggy   { ; Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=ca03-19
+center-mag=-0.938086/0.440367/5.464481/1/-90 params=0.1/0.25/1/0
+float=y maxiter=1023 inside=255 periodicity=0
+colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+>ATl<14>AA9
+}
+
+Binding_Energy     { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=C03-15
+center-mag=4.26326e-014/-2.84217e-014/0.01293333 passes=t
+params=0.1/0.5/100/0 float=y maxiter=255 inside=255 periodicity=0
+colors=00000V<18>00s00t00v00w00x00z<41>0qz0rz0sz<3>0yz<9>bymfyljyk<3>zye\
+<9>zyGzyEzyB<3>zy0<41>z80z70z50<2>z20z00y00<24>T00S00R00<3>L00<9>jaDleEo\
+iF<3>zyL<9>z_8zY7zV6<3>zK0<8>Q90L70H60<3>000<22>00U
+}
+
+Membrane_Paradigm  { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=P07-07
+center-mag=+0.30185741738705010/-1.15831114979194900/153.647/1/-87.599
+params=0/0/1/0 float=y maxiter=255 inside=255 periodicity=0
+colors=653<3>JIGNMK000UTR<3>fecjigmlj<2>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QR\
+LOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OM\
+cMNeKOf<3>ATl<9>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjI\
+I<8>QRLOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jC\
+R<9>OMcMNeKOf<3>ATl<14>AA9
+}
+
+Unbothered_Title_2 { ; Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=quarterblend_ijjjj
+center-mag=-0.00333611/4.44089e-016/0.6377551/1/90
+params=-1/0/0/-1/0/1/-1/0 float=y maxiter=255 inside=255
+potential=255/500/150 periodicity=0
+colors=000<62>A0BA0BB0C<97>U01U01U01<2>V01V01V12W23<83>zzz
+}
+
+Unbothered_Title_3 { ; Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=threecircles2
+center-mag=0.610996/1.77636e-015/0.5025363/1/90 params=0.8/0/2.6/0
+float=y maxiter=255 inside=255 outside=atan periodicity=0
+colors=000zzz<42>zzBzz9zz8<3>yy4yy4yx4<72>yX0yX0yW0<127>000
+}
+
+Unbothered_Title_4 {;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=newton_elliptics_4
+center-mag=+0.57733246912440290/+0.09997371801359245/123/1/53.13
+params=0/1/0/0.1 float=y maxiter=1023 inside=255 periodicity=0
+colors=000ueCwfBzgA<13>vEAuBAu9A<2>t3As0Aq7BnEDlLEGaY<24>iIejHelHe<3>qDg\
+rWlsor<19>mfPmeOleMldLldJkcH<23>oYcpYdpYe<2>pXhqWioUh<4>`JcZHbWEa<3>K5X<\
+8>LRkLUlLWn<3>Mfu<3>Zceab`daX<3>rYG<34>bdpadqadr`ds`dt_ev<24>HVRGVQGUP<3\
+>CSJ<3>qSn<8>aVZ_VXZVV<3>RXN<12>sdD
+}
+
+Sagittal_Coherence { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=sc06-05
+passes=d center-mag=6.19973/9.57075/2.446735/1/10 params=1/0/1/0
+float=y maxiter=1023 inside=255 outside=atan
+invert=0.5/6.2038774233896/9.8444537114261 periodicity=0
+colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+>ekKhmKknK<3>wuI<6>caM`_NYXN<3>MLRJISGFSDCT<9>YCS_CSaCS<3>jCR<5>XIZVJ_TK\
+`<3>KOfIPhFRiDSkATl<9>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mK\
+LlHIjII<8>QRLOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<6>caM`_NYXN<3>MLRJISGFSDCT<9\
+>YCS_CSaCS<3>jCR<5>XIZVJ_TK`<3>KOfIPhFRiDSkATl<14>AA9
+}
+
+Not_Your_Job       { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=Ca10-05
+passes=1
+center-mag=+0.07662876962040530/+0.09346251373957647/6.137269e+012/1/-14\
+.997/-0.001 params=2/0/1/0 float=y maxiter=1023 inside=255
+periodicity=0 sound=beep/fm polyphony=3 wavetype=1
+colors=00032t40t50s60s<36>ps`qt`rv_sw_uyZvzZwzYxzYzyXzwXzvW<30>OCHNBGLAG\
+K8FJ6F<14>I5EI5EI5E<3>I5EIzE<4>IzE<3>IzEIzEH7F<33>CDLCELCEL<2>CELBFMDEM<\
+3>I8OJ6PK5PL3QN2QO0RP0RQ0S<22>rZbs_cuac<2>xeezgezhfzjf<5>rsiqtjpvjnwkmyk\
+lzlkzlizm<21>JUxITxGRy<3>BLzAKz9Iz<5>19w08v06v05u13u
+}
+
+Mandelbrot_Forgery { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=Mandelbar
+passes=1
+center-mag=-0.62872052566293170/+0.11121047612571350/23956.75/0.1483/-12\
+.868/-50.835 float=y maxiter=512 inside=255 logmap=-43 periodicity=0
+colors=000Xtu<8>XvuXvuXvuXvuXwv<23>eeOfdNfdL<2>gaHh`Fg`F<25>FCSEBTDATC9U\
+B8U97V<158>8RD7SC7SC<10>9SE9SE9SE<3>ASFXtu
+}
+
+Parallel_Transport { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=A4Page
+passes=1 center-mag=1/-0.666667/1.5 float=y maxiter=16
+inside=startrail outside=0 periodicity=0 colors=@default.map
+}
+
+Two_Flows          { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=P03-24
+function=sin/sqr/sinh passes=t
+center-mag=-1.19245/26.7544/0.2931875/17.119/180 params=0.1/0
+float=y maxiter=1023 inside=255 periodicity=0 sound=off polyphony=3
+wavetype=1
+colors=000LLL<9>LLjLLlLLo<2>LLwLLzLNx<8>Lj`LlZLoW<3>LzL<9>LzjLzlLzo<2>Lz\
+wLzzNxx<8>j``lZZoWW<3>zLL<9>zLjzLlzLo<2>zLwzLzzNx<8>zj`zlZzoW<3>zzL<9>zz\
+jzzlzzo<3>zzz<9>OOPKKMGGI<3>002<8>00Q00S00V<2>00b00e02c<8>0QG0SE0VB<3>0e\
+0<9>0eQ0eS0eV<2>0eb0ee2cc<8>QGGSEEVBB<3>e00<9>e0Qe0Se0V<3>e0e<9>eDGeEEeF\
+B<3>eL0<9>eYQeZSe_V<3>eee<14>NNN
+}
+
+Altern_AntiSpiral  { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=PokornyJul
+center-mag=0.200125/0.776177/2.506266 params=0.25/0.9 float=y
+maxiter=1023 inside=255 logmap=yes periodicity=0 colors=@altern.map
+}
+
+Puffer_Train       { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=Rossler2Man
+center-mag=+0.87099255681842290/+0.45740250376426910/5.001221e+012/1.000\
+1 params=0/0/12/0 float=y maxiter=1023 inside=255 logmap=57
+periodicity=0
+colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+>ATl<14>AA9
+}
+
+FriendlyBiological { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=Rossler2Man passes=1
+center-mag=+0.80768598348989470/+1.07767747322206200/622.4066/1/28
+params=0/0/12/0 float=y maxiter=1023 inside=255 logmap=9
+periodicity=0
+colors=tuu<3>tvvtvvtvvtvvuww<6>lwwkwwjwwiwwgww<3>ctvbtvasu<3>XosVnsUmr<1\
+8>AXh9Wg8Vg7Uf6Te<4>5Pc5Oc5Ob4Na<18>17R17Q16Q<2>13O02N14O02N<8>16Q27Q27Q\
+<3>3AT3BU3CV<6>4Ka4Lb5Mc<5>4Si4Tj4Uk3Vl3Wm<4>2_o1_p1`p<2>0cr0cr0br<3>1_q\
+1Zp1Yp<8>3Qg3Pf3Oe<2>4La4K`3IZ<3>4GS4FQ5FO<3>6CG7BD7BD<70>oqqpqqqrrqrrrs\
+s<8>suu
+}
+
+Corrosion          { ; Kerry Mitchell colour map
+;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=H04-17
+function=ident/log passes=1
+center-mag=-0.405748/-0.631308/5.253812/1/-34.999 params=0/0/1/0
+float=y maxiter=1023 inside=255 periodicity=0
+colors=222qU6yaEqaMyiUeYQYQIaaaiiiqiayqiqqqyyyemuYemQeuIYmAYu2QmAQe2IYMU\
+aUaiQQQIIIAIQ2AIAAA642IC6UKAYK6iSAqS2u_Eq_IugUi_QYSMY_aigeqgYuoiqomuwyio\
+uYgqUguI_qA_y6SmASi6KYISaU_eUSQIKMAKU6CIACEA62IEAUI6YMAiQ6uU2qYEuaIqeUiY\
+MYUQYaeieauiYqmiuqmquyimqYiuUeqIau6YyAUm6QiAMYIUeUYaUQMIMQ6IUAEI6AEA86IG\
+EQG6YOEeO6yW2qWAycIqcQiWIaWQYciecaykYqkeysmqsuikmakuUcmMcu2WyAWq2OiAOaIW\
+iQWaUOIMOQ2GUAGM28EEA6MIEQE2aQEeM2yY6mUAyeMmaQeUIaYUaeieaYymamieyuqmquei\
+mamyQamMey2UuEYq2MeEQaMYiQUYQMIMQU2EQEIM26AE82MGAUG2aOAiO2uW6mWEucMmcUeW\
+MYWUaceicYukamkiusqmsyekqYkyQcqIcy6WuEWm6OeEOYMWeUWYQOMIOU6GQEGI68AIA2QI\
+AYI2eQAmQ2uYAmYIueQiaUaUMYYYeeemeYumemmmuuuiqyaiqUiyMaqEay6UqEUi6MaIQYQY\
+eUUUMMMEMU6EMEEE666MC2QKEaK2eSEmS6y_Am_MygQe_UaSIa_Yegimgayoemoqywueoyag\
+mQgyM_mE_u2SqESe2KaMSYQ_iQSUMKIEKQ2CMECA246ME6UMEaM6iUE
+}
+
+Mitrocoma          { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=T03-26
+function=abs/ident/ident passes=1
+center-mag=-0.833021/0.838198/7.751938 params=2/0.2/0/0/8/1 float=y
+maxiter=1023 inside=255 periodicity=0 colors=@blues.map
+}
+
+Six_OClock         { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=twodnewton_o passes=t
+center-mag=+17.61898205646764000/+11.36059478637080000/109.2896/1/-22.49\
+9 params=0.1/-1 float=y maxiter=1023 inside=255 periodicity=0
+colors=000e0_e0be0e<9>eDGeEEeFB<3>eL0<9>eYQeZSe_V<3>eee<9>TTTSSSRRR<2>NN\
+NLLLLLN<8>LLjLLlLLo<2>LLwLLzLNx<3>LYm<21>MruMsvMtv<3>Nxx<8>j``lZZoWW<3>z\
+LLzLNzLQzLS<18>zgVzhVzjV<2>zmVzoWzrTztRzwOzzL<9>zzjzzlzzo<3>zzz<3>kkkggg\
+ccd__`<31>__`<4>__`0_60b30e0<9>0eQ0eS0eV<2>0eb0ee2cc<8>QGGSEEVBB<3>e00<1\
+2>e0Y
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Thu, 16 Jan 2003 14:34:31 +0100
+;Subject: [Fractint] inside=atan
+
+startman           { ; time: 0h15' on a K7/600
+;  Version 2002 Patchlevel 3
+reset=2002 type=mandel passes=d
+center-mag=-0.538232/0.00782014/0.929296/1/-90/3.88578058618804789e-016
+params=0/0 float=y maxiter=8000 inside=atan symmetry=none
+periodicity=0 cyclerange=1/1
+colors=000<3>321421031642<51>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000\
+001<56>Q_tQ`uR`v<2>SbyTczSby<61>000
+}
+
+ataniter           { ; 1th order =12033
+; time: 0h26 on a K7/600
+reset=2002 type=mandel passes=d
+center-mag=-0.74896255201844790/+0.05435555412152205/7.927134e+011/1/-4.\
+99675937785410795/-0.0902709561915964742 params=0/0 float=y
+maxiter=12033 inside=atan logmap=yes symmetry=none periodicity=0
+colors=00000T<24>005004003<2>000000222<4>DCEFEGIGI<3>QORSQTUSW<4>c`ddaff\
+ch<3>lhnmjonkq<3>soutovtpw<3>wrywszwsz<2>xszxszwry<6>sousnurnt<3>okqnjpl\
+in<2>hejgciebgc`e<3>XVZWTXURV<5>HGIFEGDCD<3>444<39>ma1na1pb1<2>se1se1re1\
+<3>pc0ob0ma0<27>860750540430220000<34>00`00a00b00c00d00f<13>00U
+}
+
+atannumb           { ; 2th order =24066
+; time: 1h26 on a K7/600
+reset=2002 type=mandel passes=d
+center-mag=-0.74896255201845010/+0.05435555412154748/2.119379e+012/0.999\
+9/-4.99548275077093162/-0.086997345982712887 params=0/0 float=y
+maxiter=24066 inside=atan outside=0 symmetry=none periodicity=0
+colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+uR`v<2>SbyTczSby<61>000
+}
+
+atanfmod           { ; 3th order =36099
+; time: 0h46 on a K7/600
+reset=2002 type=mandel passes=d
+center-mag=-0.74896255201844790/+0.05435555412152205/6.97086e+011/1/-4.9\
+9687607663320321/-0.0914427337369515397 params=0/0 float=y
+maxiter=36099 inside=atan proximity=0.007 outside=fmod symmetry=none
+periodicity=0
+colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+uR`v<2>SbyTczSby<61>000
+}
+
+atansumm           { ; 4th order =48132
+; time: 0h55 on a K7/600
+reset=2002 type=mandel passes=d
+center-mag=-0.74896255201844790/+0.05435555412152205/1.113368e+012/1/-4.\
+99670916040466828/-0.0879347820503879468 params=0/0 float=y
+maxiter=48132 inside=atan outside=summ logmap=yes symmetry=none
+periodicity=0
+colors=000A81<3>431320110000000<29>4hg4ji4kj<3>5qp6sq6ts<3>6zy<30>2IH2GF\
+2FE<3>198077065<2>011000001<34>HNqHOsIPt<2>JRyKRzJRy<34>349237226<2>0010\
+00110<29>hZ7j_7k`7<3>qe8sg8th8<3>zl9<33>C92
+}
+
+atanatan           { ; 5th order =60165
+; time: 1h22 on a K7/600
+reset=2002 type=mandel passes=d
+center-mag=-0.74896255201845010/+0.05435555412154748/1.356392e+012/1/-4.\
+98344032497560363/-0.100894378737287849 params=0/0 float=y
+maxiter=60165 inside=atan outside=atan symmetry=none periodicity=0
+colors=000<58>ARtASuBSv<2>BUyBUzBUy<55>136125024<2>001000110<56>tr9us9vt\
+9<2>ywAzxAywA<61>000
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (jos hendriks)
+;Date: Sun, 19 Jan 2003 18:45:15 +0100
+;Subject: [Fractint] investigations#3.2
+
+Boogie_Woogie_1 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1 
+center-mag=0/0/0.6666667
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+colors=000zpC<4>zTBzOBzJB<3>z0AzAM<2>z3az0gz0i<3>z0rz0uz0wz0yz2x<14>ziOz\
+kMznJ<3>zzA<3>zoEzlFzjGzgHzeJ<8>zUQzSRzRS<3>zLV<19>zVnzWozWp<5>z`uzavzbw\
+<2>zeyzfyzgyzhyziy<3>znyzoyzpy<2>zty<3>zoyznyzmx<3>zgpzfnzelzci<19>zrkzs\
+kztl<3>zwlztl<3>zbgzZfzUe<2>zHa<4>zHfzGg<3>zAfz8ez7e<19>zkkzmkzok<3>zwl<\
+4>zndzlbzja<2>zeXzcVzcV<5>zZUzYUzXUzXTzWT<8>zRLzQKzQJ<3>zNFzMEzLD<12>zuC
+}
+
+Boogie_Woogie_2 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1 
+center-mag=0/0/0.6666667
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=mult
+colors=000aJB<4>iMEjNFlNF<2>qPHsQIwYB<4>wRBwPBwOB<3>wIBwKBwNBwPB<15>cYGb\
+ZG`_H__HZ`HXaI<10>RQOQPOPOPPNPOMQNKR<25>RaERbDRcD<2>ReBSfATdC<10>cIYdG_e\
+Ea<3>i5i<12>FBYDCXACW<3>0FS<8>RDWUDXXDX<3>hB_<15>shdtjduld<2>wrexufxuc<3\
+>uuRuuOtuLsuH<14>GfJEeJBdJ<3>0_K<9>XSK`SKcRK<3>qNL<5>WMWTMXPLZ<3>AKf<3>E\
+WdF_dGbc<2>JlaETK991<16>_IA
+}
+
+Boogie_Woogie_3 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=-0.00113141/0.401369/9.887676
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=mult
+colors=0000jR<2>0eM0cK0cK<5>0ZJ0YJ0XJ0XI0WI<8>0RA0Q90Q8<3>0N40M30L2<6>0d\
+10g10j1<3>0u1<5>0T00O00J0<3>0000AB<2>03R00X00Z<3>00g00j00l00o<3>0Bf0s1<1\
+1>0O80M80J9<3>08C<22>0ad0be0dg<5>0jn0ko0lp<3>0qu<3>0ZR<2>0lQ<6>0Qd0Mf0Jh\
+<3>05q<3>0El0Gk0Ij0Lh0NgFPf<9>FlTFnSFpR<3>EzL<3>Sb9WX6_Q2LUC5YM0aW0ef06f\
+<5>0_J<3>0s31x01w0<2>0s00r10p10o20m2<16>0RA0PA0OB<3>0ID<2>0PN0RY<9>0k`0m\
+`0o`<3>0wa<5>0lS
+}
+
+Boogie_Woogie_4 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=0/0/0.6666667
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=summ
+colors=0000SA<3>0NC0LD0KD0IE<2>0PO0RZ<9>0ka0ma0oa<3>0wb<4>0nV0lT0jS<2>0e\
+N0cL0cL<5>0ZK0YK0XK0XJ0WJ<8>0RB0QA0Q9<3>0N50M40L3<6>0d20g20j2<3>0u2<5>0T\
+10O10J1<3>0000AC<2>03S00Y00_<3>00h00k00m00p<3>0Bg0s2<11>0O90M90JA<3>08D<\
+22>0ae0bf0dh<5>0jo0kp0lq<3>0qv<3>0ZS<2>0lR<6>0Qe0Mg0Ji<3>05r<3>0Em0Gl0Ik\
+0Li0NhFPg<9>FlUFnTFpS<3>EzM<3>SbAWX7_Q3LUD5YN0aX0eg06g<5>0_K<3>0s41x01w0\
+<21>0UA
+}
+
+Boogie_Woogie_5 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=0/0/0.6666667
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=atan
+colors=000SG9<10>iMFjNGlNG<2>qPIsQJwYC<4>wRCwPCwOC<3>wICwKCwNCwPC<15>cYH\
+bZH`_I__IZ`IXaJ<10>RQPQPPPOQPNQOMRNKS<25>RaFRbERcE<2>ReCSfBTdD<10>cIZdG`\
+eEb<3>i5j<12>FBZDCYACX<3>0FT<8>RDXUDYXDY<3>hB`<15>shetjeule<2>wrfxugxud<\
+3>uuSuuPtuMsuI<14>GfKEeKBdK<3>0_L<9>XSL`SLcRL<3>qNM<5>WMXTMYPL_<3>AKg<3>\
+EWeF_eGbd<2>JlbETL992<10>QF8
+}
+
+Boogie_Woogie_6 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=jh_square ismand=n passes=1
+center-mag=0.00500626/-0.0250417/4.901961
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=atan
+colors=000ISEDSD9RC<3>5P84P73O6<2>0L3<6>Xd2ag2ej2<3>xu2<5>VT1PO1KJ1<3>00\
+0AAC<2>J3SM0YN0_<3>T0hV0kW0mY0p<2>`8iaBg`Cg<17>DXjCYkBZk<3>5cl<17>QGnSFn\
+TEnUCnVBnX9o<24>LENLEMKFL<2>JFIIGGKHG<4>ZOGaPGdRG<3>pXGnXJPmn<3>DgfBfdAe\
+b8c_<19>mraosartb<3>zwbwtb<3>ibYeZXbUW<2>SHS<3>bHWeHXhGY<3>rAXt8Wv7W<19>\
+xkaymayoa<3>ywb<4>tnVtlTsjS<2>peNocLncL<4>i_KgZKfYK<3>bVJ<3>MTF
+}
+
+Boogie_Woogie_7 { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jh_square ismand=n passes=1
+center-mag=0/0/0.6666667
+params=-2.012450635926158/-2.013287548247079/4/0 float=y
+outside=imag colors=000<8>000000000<3>000zzz<88>zzz<4>zzzccc<143>ccc
+}
+
+Beach_Tent_Stuff { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jh_square ismand=n passes=1
+center-mag=-1.12092/0.549035/5.495472
+params=-2.074165287254229/-0.1060234799935393/4/0 float=y maxiter=30
+colors=@goodega.map
+}
+
+More_Stuff { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jh_square ismand=n passes=1
+center-mag=0/0/0.6666667
+params=-1.266704348177156/-2.115420862728206/4/0 float=y maxiter=30
+colors=000Pmm<3>DgeBfcAea8cZ<19>mr`os`rta<3>zwawta<3>ibXeZWbUV<2>SHR<3>b\
+HVeHWhGX<3>rAWt8Vv7V<19>xk`ym`yo`<3>ywa<4>tnUtlSsjR<2>peMocKncK<4>i_JgZJ\
+fYJ<3>bVI<3>MTEISDDSC9RB<3>5P74P63O5<2>0L2<6>Xd1ag1ej1<3>xu1<5>VT0PO0KJ0\
+<3>000AAB<2>J3RM0XN0Z<3>T0gV0jW0lY0o<2>`8haBf`Cf<17>DXiCYjBZj<3>5ck<17>Q\
+GmSFmTEmUCmVBmX9n<24>LEMLELKFK<2>JFHIGFKHF<4>ZOFaPFdRF<3>pXFnXI
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Mon, 20 Jan 2003 13:28:22 +0100
+;Subject: [Fractint] Re: Fractint digest, Vol 1 #366 - 3 msgs
+
+riselake           { ; Version 2002 Patchlevel 3
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tmanlake
+center-mag=-0.33019260452431920/+0.53369254258170410/2256.431/3.3373/149\
+.750000000008981/-15.9332167459658773 params=-0.4/0/50/0.2/300/0
+float=y maxiter=18000 inside=0 logmap=94 periodicity=0
+colors=000UKA<4>PKAOKA<2>LJCKJDJKF<3>FLKELLDLNCMO<11>NPdOPeOPf<3>SQlTQnU\
+Ro<2>XRsXRtWSs<31>S`rS`rS`r<3>SarVbv<19>AUK9UI8TG<3>4S83S72R51R3<15>UJSV\
+JUXIV<3>dGaeGcgFdiFflDh<19>P_QN`PMaO<2>JdLHdKIeL<10>NgONgOOgP<3>PhPPhQQh\
+QQhQUfP<3>GkSCmT9nT2oU4qS<3>CpVEpWGpX<3>OpcQpeSpg<3>_plapmcpn<3>iprjpskp\
+t<3>mpxmpympz<30>mlz
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Gerald K. Dobiasovsky)
+;Date: Tue, 21 Jan 2003 00:22:26 +0100
+;Subject: [Fractint] Triternions
+
+D3_Jul3d {
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=Rot3d_D3_Jul corners=-1.64/1.64/-1.23/1.23
+params=0/0/-1.5/1.5/-0.75/0/0/4/50/253 float=y maxiter=1000000000
+outside=summ periodicity=0 colors=@altern.map
+}
+
+D3_Man3d {
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=Rot3d_D3_Man
+corners=-2.102784/0.6012163/-1.25159/0.77641
+params=0/0/-1/1/0/0/0/4/50/253 float=y maxiter=1000000000
+outside=summ periodicity=0 colors=@altern.map
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Guy Marson)
+;Date: Tue, 21 Jan 2003 10:46:33 +0100
+;Subject: [Fractint] An afternoon visiting an old friend.
+
+evolve3d           { ; Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=threecircles2
+center-mag=-1/0/0.33/1/-90/0
+params=0.4/0/-2.5/0 float=y maxiter=200 inside=atan outside=atan
+periodicity=0
+colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+uR`v<2>SbyTczSby<61>000
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Lee H. Skinner)
+;Date: Tue, 21 Jan 2003 22:27:39 -0700
+;Subject: [fractint] FOTD  19-01-03  (Maximum Spirals [5])
+
+60119015           { ; Fractal Forest t=0:40:10.96
+; on a P4 2Gh at 1600x1200  Jan 21, 2003  22:06:37
+; Image Copyright 2003 by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=tman1
+passes=1
+center-mag=-0.00595484452179773/+0.74507406570897650/2.889005e+008/1/-44\
+.9999986561148546/-1.7144370605542969e-006 params=0/0 float=y
+maxiter=4200 inside=0 symmetry=none periodicity=0
+colors=000ah0<3>`g0`f0`f0<31>DSCDRDCRDBQEAQE9PF<5>CNBDMBDMA<3>GK9HK9JJ9<\
+22>j73l63m63<2>q42r42r72<3>tM1uP1uT1vW1v_1wc0<4>xmPxoUxqZ<2>ywmzzsyzs<12\
+>_pvYpvWov<2>QmwOlwOlu<17>MiGMiEMiC<2>Mi5Lh2Mh3<24>prkqrmssn<2>vttxuvxuv\
+yvv<6>ypSyoNynJ<2>yk5zj0xh0<8>ZP1XN2UK2<3>IB3<38>`g1
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Lee H. Skinner)
+;Date: Wed, 22 Jan 2003 17:51:04 -0700
+;Subject: [Fractint] Triternions
+
+60118007           { ; Cave of the Fire Pit
+; t=  0:21:46.41 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tman1 passes=1
+center-mag=-0.14109239066731250/+0.63265570738880520/\
+95831.26/1/-44.9999999998383586/-5.38782074510635312e\
+-011 params=-0.4/0 float=y maxiter=18000 inside=0
+logmap=139 symmetry=none periodicity=10
+colors=000LBUFEVAHV<2>4A9<3>BONCRQEVT<2>JdbLhfOig<12>\
+mttouuqvv<3>zzzxzz<16>UcOTaLR`J<3>JV9LY4<11>OG4OF4OD4\
+<2>P94Q74Q86<21>EVmDWoDXq<3>Aaz<2>`Lz<5>lcZnfUpiP<2>v\
+sBxv6xvH<3>zzz<3>jqdfo_blU<3>Mb8<3>LQ8KM8KJ8<3>MD6NC5\
+NA5O94P73<3>aI8eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz5zz4zz\
+3<8>zY4zV5zS5<3>zE6<28>jEJiEJiEK<3>fDMhENjFPlLS<3>rdh\
+tilvoqxtuzzz<3>pvzmtzgpz`lzUhz<3>iWzmTzrPz<3>z3z<4>Q8\
+U
+}
+
+60118013           { ; Fiery Forest
+; t=  0:07:39.35 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tman1 passes=1
+center-mag=-0.14072100474163920/+0.63232110386355890/\
+380133.7/1/-142.500000001225942/7.55598403290314025e-\
+010 params=-0.4/0 float=y maxiter=18000 inside=0
+logmap=110 symmetry=none periodicity=10
+colors=000JXzSRz`Lz<3>hXgj`clc_nfVpiQrmL<3>vsewujxvoy\
+xtzzz<3>jqdfo_blU<3>Mb8<3>LQ8KM8KJ8<3>MD6NC5NA5O94P73\
+<3>aI8eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz5zz4zz3<8>zY4zV\
+5zS5<3>zE6<6>wE9vE9uEA<3>sEBrEBqEA<13>cE3bE3aE2<3>XD0\
+<3>fVMiZSlcY<9>LmoJnpGor<3>4sz<41>MgzMgzNgz<2>OfzPeyO\
+ex<63>D_vD_vD_vD_vD_vCZuB_wAaz
+}
+
+60118021           { ; Fig Tree Strangling a Mandelbrot
+; t=  0:04:09.58 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tman1 passes=1
+center-mag=-0.14094542272236100/+0.61891532192206370/\
+284916.1/1/-37.499999999989555/1.37909239583677845e-0\
+10 params=-0.4/0 float=y maxiter=18000 inside=0
+logmap=63 symmetry=none periodicity=10
+colors=000bOvdRqfUlhXgj`c<2>piQrmLsnQ<3>wujxvoyxtzzz<\
+3>jqdfo_blU<3>Mb8<3>LQ8KM8KJ8<3>MD6NC5NA5O94P73<3>aI8\
+eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz5zz4zz3<8>zY4zV5zS5<3\
+>zE6<4>xE8wE8wE9<3>tEAsEArE9<11>eE3dE3cE2<2>`E1ZE0_G4\
+<5>jYTl`Xnc`<2>tllvoqxtuzzz<3>pvzmtzgpz`lzUhzUhzUhz<4\
+4>wxzwxzxyzyyzzzz<33>ais`ir_hr<3>Xfqzsz<24>LezJdzHdz<\
+3>Aaz<2>`Lz
+}
+
+60118025           { ; 3-Plane Midget
+; t=  0:33:48.68 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tman1 passes=1
+center-mag=-0.14086254709453280/+0.63267349162819330/\
+12556.45/1/-137.500000000003013/1.74807113229036304e-\
+011 params=-0.4/0 float=y maxiter=18000 inside=0
+logmap=108 symmetry=none periodicity=10
+colors=000d6fX7`Q8U<2>AHV<2>4A9<3>BONCRQEVT<2>JdbLhfO\
+ig<12>mttouuqvv<3>zzzxzz<16>UcOTaLR`J<3>JV9LY4<11>OG4\
+OF4OD4<2>P94Q74Q86<21>EVmDWoDXq<3>Aaz<2>`Lz<5>lcZnfUp\
+iP<2>vsBxv6xvH<3>zzz<3>jqdfo_blU<3>Mb8<3>LQ8KM8KJ8<3>\
+MD6NC5NA5O94P73<3>aI8eLAhMBiODjQF<3>qeBriAtm9vq8xu7zz\
+5zz4zz3<8>zY4zV5zS5<3>zE6<28>jEJiEJiEK<3>fDMhENjFPlLS\
+<3>rdhtilvoqxtuzzz<3>pvzmtzgpz`lzUhz<3>iWzmTzrPz<3>z3\
+zs4tk5m
+}
+
+60119015           { ; Fractal Forest
+; t=  0:40:10.96 on a P4 2Gh at
+; 1600x1200  Image Copyright 2003
+; by Lee H. Skinner ver=2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=tman1 passes=1
+center-mag=-0.00595484452179773/+0.74507406570897650/\
+2.889005e+008/1/-44.9999986561148546/-1.7144370605542\
+969e-006 params=0/0 float=y maxiter=4200 inside=0
+symmetry=none periodicity=0
+colors=000ah0<3>`g0`f0`f0<31>DSCDRDCRDBQEAQE9PF<5>CNB\
+DMBDMA<3>GK9HK9JJ9<22>j73l63m63<2>q42r42r72<3>tM1uP1u\
+T1vW1v_1wc0<4>xmPxoUxqZ<2>ywmzzsyzs<12>_pvYpvWov<2>Qm\
+wOlwOlu<17>MiGMiEMiC<2>Mi5Lh2Mh3<24>prkqrmssn<2>vttxu\
+vxuvyvv<6>ypSyoNynJ<2>yk5zj0xh0<8>ZP1XN2UK2<3>IB3<38>\
+`g1
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Jim Muth)
+;Date: Fri, 24 Jan 2003 21:32:11 -0500
+;Subject: [Fractint] Triternions, dimensions and orbits of configurations
+
+Hyper1             {
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=HyperMandelbrot center-mag=0/0/0.666667
+params=0/0/2/0/0.001/0 float=y maxiter=1200
+inside=0 logmap=yes periodicity=0
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+G000000000000000000000000 }
+
+Hyper2             {
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=HyperMandelbrot center-mag=0/0/0.666667
+params=0/0/0/0/0.25/0.25 float=y maxiter=1200
+inside=0 logmap=yes periodicity=0
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+G000000000000000000000000 }
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (jos hendriks)
+;Date: Thu, 30 Jan 2003 19:00:20 +0100
+;Subject: [Fractint] Probability distribution functions and the TriangleMap
+
+Log_Normal_-1_-1   { ; Jos Hendriks ,2002
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=lognormal_distm passes=1
+center-mag=0.169752/-0.0312433/0.1751883 params=-1/-1/0/0 float=y
+colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z0\
+0e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz\
+0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0z\
+zzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00\
+z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL000\
+0<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zz\
+LzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e0\
+0L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0ccc<29>ccc
+}
+
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

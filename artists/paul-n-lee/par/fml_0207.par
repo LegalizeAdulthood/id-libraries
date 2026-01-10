@@ -1,0 +1,279 @@
+; fml_0207.par, a collection of pars posted to the
+; Fractint mail list during July 2002
+; compiled by Roger Kaufman
+
+;========================================================================;
+;From: fractint@mailman.xmission.com (Morgan L. Owens)
+;Date: Tue, 02 Jul 2002 19:19:45 +1200
+;Subject: [Fractint] Fractal Haircut
+
+Ahn_Jung-Hwan      { ; ...or at least his hairstyle
+; ...kinda (someone improve the colouring?).
+;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm formulaname=c07-09
+function=cos center-mag=-0.146825/0.146825/0.6426667/1/-45
+params=0.01/0.002 float=y maxiter=1023 inside=255 logmap=yes
+colors=777zzz<35>zzzyzzzyzzyyyyyyyyyyz<9>yyyxyyyxyyxxxxxxxxxxy<5>xxxwxxx\
+wxxwwwwwwwwwwx<5>wwwvwwwvwwvvvvvvvvvvwvvvvvvuvvvuvvuuuuuuuuuuvuuuuuutuuu\
+tuuttttttttttuttttttstttsttsssssssssstssssssrsssrssrrrrrqrrrqsrqqqqqqqqq\
+qrqqqqqqpqqqpqqpppppopppoqpooooonooonponnnnnnnnnnonnnnnnmnnnmnnmmmmmlmmm\
+lnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiiiihiiihjihhhhhghhhgihgggggfggg\
+fhgfffffefffegfeeeeeceeecfecccccbcccbecbbbbbabbbacbaaaaa_aaa_ba_____Z___\
+Za_ZZZZZXZZZX_ZXXXXXVXXXVZXVVVVVUVVVUXVUUUUUSUUUSVUSSSSSQSSSQUSQQQQQPQQQ\
+PSQPPPPPNPPPNQPNNNNNLNNNLPNLLLLLKLLLKNLKKKKKIKKKILKIIIIIGIIIGKIGGGGGEGGG\
+EIGEEEEECEEECGECCCCCACCCAECAAAAA7AAA7CA77777777777
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Harold Lane)
+;Date: Tue, 2 Jul 2002 19:56:28 -0400
+;Subject: [Fractint] Another color map for Ahn_Jung-Hwan fractal
+
+Ahn_Jung-Hwan2      { ; ...or at least his hairstyle kinda
+; Fractal parm file by Morgan L. Owens
+; Color map by Hal Lane 7-2-02
+; 7:05 at 1024 x 768 on a PII 400
+; Owen's par file: Version 2001 Patchlevel 8
+; This par file:       Version 2002 Patchlevel 3
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=c07-09 function=cos
+center-mag=-0.00337391/0.00337391/0.4804985/1/-44.9999999999\
+999929/3.88578058618804789e-016 params=0.01/0.002
+float=y maxiter=1023 inside=255 logmap=yes sound=off
+colors=000000yv0<7>qP0pL0oH0<3>k00<43>400<3>000000000<58>00u\
+00v00w<2>00z00z00y<57>005004003002001<60>w00
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Morgan L. Owens)
+;Date: Sun, 07 Jul 2002 02:06:16 +1200
+;Subject: [Fractint] Fairly Gratuitous
+
+UnstableOrbits     { ; Unstable Orbits in the Space of Lies
+; Best viewed at 1600x1200
+; Greg Egan, Interzone #61, July 1992
+;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=chaoticdualist1m passes=d
+center-mag=0.67703/0.67703/0.589404/1/44.999 float=y maxiter=16
+inside=atan outside=255 periodicity=0
+colors=000JG2<24>OG2PG2PG2PG2PG2<2>QH4RI5RJ6SK7TK8<46>vusvvtwvu<3>zzz030\
+<9>010010000<6>000000000<52>1E01E02F0<87>JG2
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (JK)
+;Date: Thu, 11 Jul 2002 19:00:08 -0500
+;Subject: [Fractint] FOTD  10-07-02  (Midget Squid [6])
+
+mutant_octopus     { ; it has eight legs, right?  90 min at 1024x768
+reset=1930 type=mandel passes=b
+center-mag=-1.759895432332375466/0.01229829457725998347/5.665433e+015
+params=0/0 float=y maxiter=5000
+colors=000_ao<21>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<14>zvvzzzxv\
+w<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvHCxIBzKA<2>zREzUFzXGz_HzaJ<8>zzU<\
+15>9C`ADaBEc<46>xxyzzzyyz<22>`bo
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (M J Benkers)
+;Date: Sat, 13 Jul 2002 10:43:31 +0200
+;Subject: [Fractint] strange Newtons
+
+strangenewton_1    { ; 0.00.26.91 with AMD 1800+ and SF9
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=Nwtsqzz
+function=tan/sin center-mag=-1.77636e-015/9.99201e-016/0.5623188
+params=2/2/1/0 float=y maxiter=1000 inside=0
+colors=0000He<13>0Ze0_e0ae0be0ce0ee<26>HvvIwwJxx<2>LzzLzzMzy<56>vzPwzOxz\
+NxzNyzMzzL<25>CCaAAa88b<2>22d00e00d<25>007006004003002000<57>00a00b00b00\
+c00d<2>02e03e05e<7>0Fe
+}
+
+strangenewton_2    { ; 0.00.31.20 with AMD 1800+ and SF9
+; Version 2002 Patchlevel 3
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=Nwtsqzz
+function=sqr/sin center-mag=-1.77636e-015/9.99201e-016/0.5623188
+params=1/1/1/0 float=y maxiter=1000 inside=0
+colors=00048H<3>49I49J49J49J<2>5DL5EL5GM5IM<4>6QP7RP7TQ<2>7YR8_SA`S<8>_i\
+JajIdkH<3>ppD<9>p_6pY5pW4<2>pR2pP1oP2<25>94X74Z53_42`21a00c<107>00200100\
+1<2>000000001<50>48H
+}
+
+strangenewton_3    { ; 0.00.18.74 with AMD 1800+ and SF9
+; Version 2002 Patchlevel 3
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=Komplexmatsch function=sin/sqr
+center-mag=0.722299/-1.21753/3.205128/1/34.9999999999999787/1.3107570584\
+4807544e-014 params=2/3/1/2 float=y maxiter=1000 inside=0
+colors=00007B<17>0Wi0Xk0Zm<3>0du<6>XoRaqNfsI<3>zz0<20>EK8CI8AG9<3>07B<16\
+>0Wh0Xj0Zl<3>0du<6>XoRaqNfsI<3>zz0<4>ZZ0TT0NN0<3>000<25>nnnppprrr<3>zzz<\
+9>OSVKPSGLO<3>07B<17>0Wi0Xk0Zm<3>0du<6>XoRaqNfsI<3>zz0<4>ZZ0TT0NN0<3>000\
+<25>nnnppprrr<3>zzz<14>4BF
+}
+
+strangenewton_4    { ; 0.00.24.93 with AMD 1800+ and SF9
+; Version 2002 Patchlevel 3
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=Nwtsqzz
+function=sqr/cos center-mag=0/0/0.6666667 params=1/1/2/0 float=y
+colors=00048H<3>49J49J49J<2>5DL5EL5GM5IM<4>6QP7RP7TQ<2>7YR8_SA`S<8>_iJaj\
+IdkH<3>ppD<9>p_6pY5pW4<2>pR2pP1oP2<25>94X74Z53_42`21a00c<107>002001001<2\
+>000000001<51>48H
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (David Dollevoet)
+;Date: Sun, 21 Jul 2002 11:45:44 -0500
+;Subject: [Fractint] Outside coloring = tdis
+
+in=0_out=iter      { ; (c) David Dollevoet 2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=DD_AA1
+function=acos/cosh/ident/ident passes=2
+center-mag=+0.00000000000000000/+0.00000000000000000/13817
+params=2/1.02/0.93/0.95 float=y maxiter=56 inside=0
+periodicity=0 sound=off
+colors=000TIERFDPCCK8BTHJbRTj`ashjiZjaQjSHjYOjbUjgajnflmhf<3>cZYUO\
+YVNSSLQXQU_TYbZafebhgdjjgnnjlljiiigghdcfa`dZYcUTbRQ_NKXQNZTQ`VTbZT\
+caYedaggcijeloioqlptorrjnnehiaceXZaRTYKOTFHTFPUFUXFaYFgZEodKndKmdK\
+jdLicLgcLecNd<3>bOZbPYbPV<3>aRO<4>`TT`UU_UV_VX_XY<3>YZaYZbY_bX`c<5\
+>YYcYXcZVc<3>_Tc_Sc_Sc_Rc`Qc_Rb_Rb<4>YT_YTZXUYXUXVVV<3>USSURRURR<8\
+>SOOSNNRNNRNNRLLRLLQKKRKKSLKTLKUNK<3>ZPK_PK`QK<3>cSKdSKeTKfTIgUGhV\
+EjXB<3>p_2<3>lYBjYDiXGhXIgVLeUP<2>fTIgSGgSC<2>iQ6jP3iP3<3>cK4bJ4aI\
+4`H4YG5YG5_G5<3>bK9bLAbOB<4>fUHgVIhXJiYKjZLl`O<2>l_Nl_Nl_L<3>lYKlY\
+JlXJlXIlXIlVHlVHjUG<9>hOAhN9gL9<4>fI6fI5fH4fH4fG3eF2<4>dH7
+}
+
+in=0_out=tdis      { ; (c) David Dollevoet 2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=DD_AA1
+function=acos/cosh/ident/ident passes=2
+center-mag=+0.00000000000000000/+0.00000000000000000/13817
+params=2/1.02/0.93/0.95 float=y maxiter=56 inside=0
+outside=tdis periodicity=0 sound=off
+colors=000TIERFDPCCK8BTHJbRTj`ashjiZjaQjSHjYOjbUjgajnflmhf<3>cZYUO\
+YVNSSLQXQU_TYbZafebhgdjjgnnjlljiiigghdcfa`dZYcUTbRQ_NKXQNZTQ`VTbZT\
+caYedaggcijeloioqlptorrjnnehiaceXZaRTYKOTFHTFPUFUXFaYFgZEodKndKmdK\
+jdLicLgcLecNd<3>bOZbPYbPV<3>aRO<4>`TT`UU_UV_VX_XY<3>YZaYZbY_bX`c<5\
+>YYcYXcZVc<3>_Tc_Sc_Sc_Rc`Qc_Rb_Rb<4>YT_YTZXUYXUXVVV<3>USSURRURR<8\
+>SOOSNNRNNRNNRLLRLLQKKRKKSLKTLKUNK<3>ZPK_PK`QK<3>cSKdSKeTKfTIgUGhV\
+EjXB<3>p_2<3>lYBjYDiXGhXIgVLeUP<2>fTIgSGgSC<2>iQ6jP3iP3<3>cK4bJ4aI\
+4`H4YG5YG5_G5<3>bK9bLAbOB<4>fUHgVIhXJiYKjZLl`O<2>l_Nl_Nl_L<3>lYKlY\
+JlXJlXIlXIlVHlVHjUG<9>hOAhN9gL9<4>fI6fI5fH4fH4fG3eF2<4>dH7
+}
+
+in=fmod_out=tdis   { ; (c) David Dollevoet 2002
+;  Version 2002 Patchlevel 3
+reset=2002 type=formula formulafile=frac_ml.frm formulaname=DD_AA1
+function=acos/cosh/ident/ident passes=2
+center-mag=+0.00000000000000000/+0.00000000000000000/13817
+params=2/1.02/0.93/0.95 float=y maxiter=56 inside=fmod
+outside=tdis periodicity=0 sound=off
+colors=000TIERFDPCCK8BTHJbRTj`ashjiZjaQjSHjYOjbUjgajnflmhf<3>cZYUO\
+YVNSSLQXQU_TYbZafebhgdjjgnnjlljiiigghdcfa`dZYcUTbRQ_NKXQNZTQ`VTbZT\
+caYedaggcijeloioqlptorrjnnehiaceXZaRTYKOTFHTFPUFUXFaYFgZEodKndKmdK\
+jdLicLgcLecNd<3>bOZbPYbPV<3>aRO<4>`TT`UU_UV_VX_XY<3>YZaYZbY_bX`c<5\
+>YYcYXcZVc<3>_Tc_Sc_Sc_Rc`Qc_Rb_Rb<4>YT_YTZXUYXUXVVV<3>USSURRURR<8\
+>SOOSNNRNNRNNRLLRLLQKKRKKSLKTLKUNK<3>ZPK_PK`QK<3>cSKdSKeTKfTIgUGhV\
+EjXB<3>p_2<3>lYBjYDiXGhXIgVLeUP<2>fTIgSGgSC<2>iQ6jP3iP3<3>cK4bJ4aI\
+4`H4YG5YG5_G5<3>bK9bLAbOB<4>fUHgVIhXJiYKjZLl`O<2>l_Nl_Nl_L<3>lYKlY\
+JlXJlXIlXIlVHlVHjUG<9>hOAhN9gL9<4>fI6fI5fH4fH4fG3eF2<4>dH7
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Morgan L. Owens)
+;Date: Thu, 25 Jul 2002 20:49:19 +1200
+;Subject: [Fractint] Yet another trivial messing around with the Mandelbrot set
+
+Lyamand_1          { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=LyapunovMandel passes=1
+center-mag=-0.162602/0.700584/5.464481 params=0/0/1/0.1/0/0 float=y
+maxiter=255 inside=255 logmap=5 periodicity=0
+colors=000zzz<42>zzBzz9zz8<3>yy4yy4yx4<72>yX0yX0yW0<127>000
+}
+
+LyapunovJulia_1    { ;  Version 2001 Patchlevel 8
+reset=2001 type=formula formulafile=frac_ml.frm
+formulaname=LyapunovJulia
+center-mag=+0.46966854283928040/-0.00187656380316929/57.97101
+params=-1/0/3.14/0.4/0/0 float=y maxiter=1023 inside=255 logmap=36
+periodicity=0
+colors=000<42>00s00t00v00w00x00z<41>0qz0rz0sz<3>0yz<9>bymfyljyk<3>zye<9>\
+zyGzyEzyB<3>zy0<41>z80z70z50<2>z20z00y00<24>T00S00R00<3>L00<9>jaDleEoiF<\
+3>zyL<9>z_8zY7zV6<3>zK0<11>D50930520000
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Jim Muth)
+;Date: Thu, 25 Jul 2002 10:46:14 -0400
+;Subject: [Fractint] Yet another trivial...
+
+Lyapunov           {
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=LyapunovMandel
+center-mag=-1.07668/7.77156e-016/1.344086
+params=0/0/0/1/16/0 float=y maxiter=500
+inside=0 logmap=yes periodicity=0 sound=off
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+G000000000000000000000000
+}
+
+Hypercomplex       {
+reset=2002 type=hypercomplex function=sqr
+center-mag=-0.5759/7.77156e-016/1.344086
+params=0/0/0/0.5 float=y maxiter=500 bailout=7
+inside=0 logmap=yes periodicity=0 sound=off
+colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzz\
+zLzzz000555888BBBEEEHHHKKKOOOSSSWWW___ccchhhmmmsss\
+zzz00zG0zV0zj0zz0zz0jz0Vz0Gz00zG0zV0zj0zz0jz0Vz0Gz\
+00z00zG0zV0zj0zz0jz0Vz0GzVVzbVzjVzrVzzVzzVrzVjzVbz\
+VVzbVzjVzrVzzVrzVjzVbzVVzVVzbVzjVzrVzzVrzVjzVbzhhz\
+lhzqhzuhzzhzzhuzhqzhlzhhzlhzqhzuhzzhuzhqzhlzhhzhhz\
+lhzqhzuhzzhuzhqzhlz00S70SE0SL0SS0SS0LS0ES07S00S70S\
+E0SL0SS0LS0ES07S00S00S70SE0SL0SS0LS0ES07SEESHESLES\
+OESSESSEOSELSEHSEESHESLESOESSEOSELSEHSEESEESHESLES\
+OESSEOSELSEHSKKSMKSOKSQKSSKSSKQSKOSKMSKKSMKSOKSQKS\
+SKQSKOSKMSKKSKKSMKSOKSQKSSKQSKOSKMS00G40G80GC0GG0G\
+G0CG08G04G00G40G80GC0GG0CG08G04G00G00G40G80GC0GG0C\
+G08G04G88GA8GC8GE8GG8GG8EG8CG8AG88GA8GC8GE8GG8EG8C\
+G8AG88G88GA8GC8GE8GG8EG8CG8AGBBGCBGDBGFBGGBGGBFGBD\
+GBCGBBGCBGDBGFBGGBFGBDGBCGBBGBBGCBGDBGFBGGBFGBDGBC\
+G000000000000000000000000
+}
+
+;------------------------------------------------------------------------;
+;From: fractint@mailman.xmission.com (Gerald K. Dobiasovsky)
+;Date: Fri, 26 Jul 2002 06:46:46 +0200
+;Subject: [Fractint] Yet another trivial...
+
+For_Jim_Muth {
+;
+reset=2002 type=formula formulafile=frac_ml.frm
+formulaname=SuperposeMandel center-mag=-1/0/0.6666667
+params=0/0/0/1/16/0 float=y outside=summ colors=@default.map
+}
+
+
+;------------------------------------------------------------------------;
+
+
+;========================================================================;
+!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }

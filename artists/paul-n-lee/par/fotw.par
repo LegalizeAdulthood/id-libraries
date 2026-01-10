@@ -1,0 +1,142 @@
+Comment { Paul Deryshire's Fractals of the Week since Sept. 30 1998
+          Copyright (c) 1998, 1999 Paul Derbyshire, freely distributable, do
+          not sell. My permission is required to distribute modified copies.
+          Distribute only with fotw.frm please!
+          All times are on a P166 with 32 megabytes of RAM and Fractint 19.6.
+  }
+
+
+Cosmic_String      { ; Beautiful! Straight Mandelbrot.
+                     ; ~30 minutes. Almost a deepzoom.
+                     ; September 30, 1998 FOTW.
+  reset=1960 type=mandel
+  center-mag=-0.86008352410243520/+0.23441829340224900/1.154421e+010
+  params=0/0 float=y maxiter=16384 inside=0 logmap=4984
+  colors=0Uzzzz<152>1BL0AK19J<5>D37F25J36N37R48V50<7>zAKzNV<3>xfXwlYwoZ<2>\
+  zzc<3>zzz<65>0Uz
+  }
+
+GoldiBrot          { ; Dazzlingly beautiful!
+                     ; Hring Mandelbrot image, over an hour to generate.
+                     ; October 7, 1998 FOTW.
+  reset=1960 type=formula formulafile=hring.frm formulaname=HRing_Mc
+  center-mag=-5.98012062568117900/+1.40665279372582100/1.180159e+007
+  params=0.61803398/0.7861513846362/0/0/0.001/0 float=y maxiter=8192
+  inside=0 logmap=366 periodicity=3
+  colors=000<29>Bg_CiaDia<45>xyyzzzzzz<44>zpzzpzyoyxnx<29>C2VA0UA0U<28>E92\
+  E91FA0GB0<45>yxbzzczzd<14>zzz
+  }
+
+Mandelve           { ; Beautiful mini Mandelbrot in the classic M-set.
+                     ; Almost a deepzoom, took just under an hour to produce.
+                     ; October 14, 1998 FOTW.
+  reset=1960 type=mandel
+  center-mag=-0.74971554360392370/+0.11562123207473210/1.564599e+011
+  params=0/0 float=y maxiter=2000 inside=0 logmap=186
+  colors=000<110>zRRzRRyRR<28>_YYZZZZZZZZZ<39>hhphhpiir<2>llxnnznnz<12>flz\
+  elzdlzclzakz<12>CdzAczAbz<30>00c
+  }
+
+Wavescape          { ; Quite a Deepzoom. Mag around 2.5*10^20.
+                     ; Time: just over 4 days on a P166.
+                     ; October 21, 1998 FOTW.
+  reset=1960 type=mandel
+  center-mag=-1.254457973920598623880898/0.3833057783109385961922631/2.415\
+  521e+020 params=0/0 float=y maxiter=1048576 inside=0 logmap=30663
+  colors=000VOi<99>yyyzzzyyz<38>DMdBKcBKa<14>0K0<3>zz0<11>K00A00<78>z0f
+  }
+
+Golden_Nautilus    { ; The Golden Chambered Nautiuls; rare and beautiful.
+                     ; Generated in a half hour on a P166 with 32 megs of ram.
+                     ; October 28, 1998 FOTW.
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=HRing_Ma
+  center-mag=+2.70698748778103600/+0.00170205997392338/2922.182
+  params=0/0/3/0/1e-005/0 float=y maxiter=16384 inside=0 logmap=27
+  periodicity=0
+  colors=000zzf<15>Qh3Nf0Nf0<52>110000100<29>nM0pN0pN0<62>yyMzzNzzP<14>zzz\
+  <68>z0f
+  }
+
+NightGlitter       { ; An alien city shimmers with lights at dusk.
+                     ; Time: Under half an hour on a P166.
+                     ; Nov. 4, 1998 FOTW
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=CubegenM
+  center-mag=-0.16177618768328410/+0.28788852672751140/5570.41 float=y
+  maxiter=16384 inside=0 logmap=68
+  colors=000mmz<108>4FX3EW3EW3EV3EV<44>000000100<31>LA0MB1MB1NC2OC2<57>zcU
+  }
+
+ArachnoSquid       { ; It lurks in the murky deeps.
+                     ; Time: Under 10 minutes on a P166.
+                     ; Nov. 4, 1998 FOTW bonus image.
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=CubegenJ passes=1
+  center-mag=-3.33067e-016/3.33067e-016/0.7788162
+  params=-0.16208/0.28783 float=y maxiter=2000 inside=0 logmap=20
+  periodicity=0
+  colors=000qnzoqymnurnznpxlmtrmznpxlltrlznoxllsrkznoxlksrkznnxkjsrjznmxki\
+  rriznmxkirrhznlxkhrrhznlxjgqsgzmkwjfqsfzmjwjfqsezmjwjepsezmiwidpsdzmiwid\
+  psczmhwicosbzmgwibosbzmgwiaotazlfvhant`zlfvh`nt_zlevh_mt_zldvhZmtZzldvgZ\
+  mtYzlcvgYltXzlcvgXltXzlbvgWltWzlbvfWkuVzkaufVkuUzk`ufUkuUzk`ufTjuTzk_ueT\
+  juSzk_ueSjuRzkZueRiuRzkYueQiuQzkYueQivPzjXtdPhvOzjXtdOhvOzjWtdNgvNzjVtdN\
+  gvMzjVtcMgvLzjUtcLfvLzjUtcLfvKzjTtcKfwJziSsbJewIziSsbIewIziRsbIewHziRsbH\
+  dwGziQsaGdwFziPsaFdwFziPsaFcwEziOsaEcwDziOsaDcxCzhNr`CbxCzhMr`CbxBzhMr`B\
+  axAzhLr`Aax9zhLr_9ax9zhKr_9`x8zhJr_8`x7zhJr_7`y6zgIqZ6_y6zgIqZ6_y5zgHqZ5\
+  _y4zgGqZ4Zy3zgGqY3Zy3zgFqY3Zy2zgFqY2Yy1zgEqY1Yz0zfDpX0Xw0wdDmV0Vs0saCjT0\
+  To0o_BgR0Rk0kXAdP0Ph0hUA`N0Nd0dS9YL0L`0`P8VJ0JX0XM7SH0HT0TK6OF0FQ0QH6LD0\
+  DM0MF5IB0BI0IC4F909E0E93B707B0B728505707425303303112000
+  }
+
+WoodEngraving      { ; Beautiful detailled double spirals.
+                     ; Time: Just under 10 minutes on a P166.
+                     ; November 11, 1998 FOTW
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=doubletroublem
+  center-mag=+5.77112869554152100/+0.00844487539338724/287409.3
+  float=y maxiter=5000 inside=0 logmap=51 periodicity=0
+  colors=000zzz<14>zzzzzzzyyzyx<26>qgYpfXpfXofX<44>UQETPETPESOESOD<27>E81D\
+  70D70D70<27>B10B10A00900<5>200000000<44>65865876976A<38>fXp
+  }
+
+Flourishing_Vines  { ; This creeping plant flourishes and shows bright berries.
+                     ; Time: 1 minute on a P166.
+                     ; November 18, 1998 FOTW
+  reset=1960 type=formula formulafile=fractint.frm
+  formulaname=nuclear_jcollog center-mag=1.19458/-0.0284745/0.1946262
+  params=0.2/0.4/-0.3/0.3/-4.2165853/18.0097309 float=y maxiter=5000
+  inside=0 outside=real periodicity=0
+  colors=000fzz<15>zzz<9>_qX<6>0N0<31>000zuu<7>zdjzbiz_gzXezUczRazN_<16>z2\
+  Dz0By0B<28>A00zfz<61>CI_vzz<18>347004005<40>0Kz
+  }
+
+Siamese_Dreams     { ; In our dreams we are connected...
+                     ; Time: 5 minutes on a P166
+                     ; November 25, 1998 FOTW
+  reset=1920 type=mandel
+  center-mag=-0.74370882153664500/+0.14820708412961500/1.77089e+007/1.0585
+  params=0/0 float=y maxiter=2000 inside=0 logmap=450 periodicity=0
+  colors=000<2>000001011112112<57>FKVFKVFLWFLX<21>JRjJSjJSkJTkJTl<3>MVnNWn\
+  OXnPYnPYo<36>vxxwxyxyyyyzzzz<78>111000000000<29>000
+  }
+
+Prickly_Pear       { ; A strange fractal cactus.
+                     ; Time: 5 minutes on a P166
+                     ; December 2, 1998 FOTW
+  reset=1960 type=mandel
+  center-mag=-1.21722963784946300/+0.12407105303780990/111482.7
+  params=0/0 float=y maxiter=65536 inside=0 logmap=223
+  colors=000zAK<17>K0A<3>000<4>K0A<98>zz0zz0yy0<76>1B00A00A00A0<45>000
+  }
+
+Karina's           { ; Gorgeous Mandelbrot deepzoom.
+                     ; Very deep zoom, high iteration (min 15000).
+                     ; May 19, 1999 FOTW
+                     ; Took a 400MHz P-II over a day to compute.
+  reset=1821 type=mandel
+  center-mag=0.290575333350769634891966/0.015967111970120082691075/7.68805\
+  7e+019 params=0/0 float=y maxiter=262144 inside=0 logmap=15330
+  colors=000zzz<137>mrmmrmlqlkqk<16>SbSQaQP`PN_NMZM<11>2M20K00J0<12>020000\
+  000<14>00030660DA0K<6>RH`UKcVLd<3>aSkcUmgZp<2>tnzrkzphz<5>0Lk<18>000
+  }
