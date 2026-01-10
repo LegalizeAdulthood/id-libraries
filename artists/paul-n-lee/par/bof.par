@@ -1,0 +1,109 @@
+comment { ; narrative copyright Kerry Mitchell 04feb98
+
+BOF
+
+Two coloring schemes that are built in to Fractint come from the book,
+"The Beauty of Fractals", and are referred to as "bof60" and "bof61".
+They are both concerned with how close the orbit comes to the origin
+of the complex plane (the point 0+0i).  In bof60, the pixel is colored
+by the magnitude of this minimal point, and in bof61, by how long it
+took the orbit to get to the minimal point.  They are both inside-only
+coloring schemes.
+
+The present schemes extend the ideas presented in Fractint's bof60 and
+bof61 methods, but also include outside points.  They do this by forcing
+inside points to escape (with a maximum iteration trap), and then
+coloring all points using the decomposition method.  The new bof60
+method still colors by the magnitude of the closest approach to the
+origin, but uses a logarithmic scaling to add more dynamic range to
+the coloring.  The new bof61 method scales the iteration count by an
+adjustable parameter, to allow fine-tuning of the coloring.  An
+additional method is included, called "bof62".  This is similar to
+bof60, but uses the polar angle of the minimal iterate as the
+decomposition angle.
+
+Another twist is the combination of any pair of the above 3 methods.
+In the bof6061 series, weights determine how much of the bof60 and
+bof61 decomposition angles are used, which are then combined into
+the final angle.  The same thing happens with the bof6162 and bof6260
+formulas, using their respective angles.
+
+All six methods are included in both Mandelbrot (_man) and Julia
+(_jul) variations.
+
+}
+
+bof6061-sample     { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof6061_jul params=-0.7849976722055\
+  98/0.1465901215918722/1000000/0.1/1/1 float=y
+  maxiter=2000 inside=0 decomp=256 periodicity=0
+  colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzz\
+  zz<40>1zz0zz0yz<39>02z00z00z<41>000
+  cyclerange=0/255 center-mag=0/0/0.85
+  }
+
+bof6162-sample     { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof6162_jul params=-0.7849976722055\
+  98/0.1465901215918722/1000000/0.1/1/1 float=y
+  maxiter=2000 inside=0 decomp=256 periodicity=0
+  center-mag=0/0/0.85 colors=000<20>z00<19>zv0zy0\
+  zz1<20>zzz<20>0zz<20>00z<19>004001100<20>z00<20\
+  >zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000
+  cyclerange=0/255
+  }
+
+bof6260-sample     { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof6260_jul params=-0.7849976722055\
+  98/0.1465901215918722/1000000/0/1/1 float=y
+  maxiter=2000 inside=0 decomp=256 periodicity=0
+  center-mag=0/0/0.85 colors=000<19>u00x00y00<18>\
+  500200110<21>zz0<20>000<20>0z0<20>100<20>z00<20\
+  >000<20>uu0xx0yy0<18>550220010<18>0u00x00y0<19>\
+  020 cyclerange=0/255
+  }
+
+bof60-sample       { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof60_man center-mag=-0.6/0/0.82
+  params=4/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=F0K<29>T0bU0cV2d<29>yyyzzzzz\
+  x<29>zz1zy0xw0<28>G2JF0KF0K<30>T0bU0cV2d<29>yyyzz\
+  zzzx<29>zz1zy0xw0<28>G2JF0KF0K cyclerange=0/255
+  }
+
+bof61-sample       { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof61_man center-mag=-0.75/0/0.86
+  params=10/0.1 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 cyclerange=0/255 colors=232MB6UREaB6iR\
+  EqB6y2EqIMy2UeeQYZIamaiYiqIay2iqIqy2yeAuYQmQAuIQmAAu\
+  23mAJe23YMfaUYiQnQIZIAJQ23IAJA632IB6UJAYB6iJAq32uAEq\
+  IIuAUiYQYfMYmaiYeqIYuAiqImu2yiAuYIqUAuIIqA2y6BmAJi6B\
+  YIZaUeeUnQIZMAJU6BIAJEA32IJAUB6YJAiB6u32qIEuAIqIUiYM\
+  YnQYeeiYauAYqIiuAmq2yiIqYAuUIqIAu62yAJm6BiAJYIZeUmaU\
+  fMIZQ6BUAJI6BEAB6IREQB6YREeB6y22qIAy2IqIQiYIamQYYiee\
+  ay2YqIey2mqAuiQmaAuUQmMAu22yAIq23iAJaIYiQmaUZIMfQ23U\
+  AJM23EEB6MREQ32aREe32y26mJAy2MmQQeZIamUaYieeYy2amQey\
+  2qmAueQma2yQQmM2y23uEIq23eERaMYiQnYQZIMfU23QERM23AE3\
+  2MJAU32aJAi32uA6mQEuAMmQUeeMYuUaeeiYYuAamQiuAqm2yeIq\
+  Y2yQIqI2y6AuEQm6BeERYMeeUuYQfMIZU6BQERI6BAI32QJAY32e\
+  JAm32uAAmQIuAQiYUafMYuYeeemQYuAemQmuAui2yaIqU2yMIqE2\
+  y6BqERi6BaIZYQeeUvUMfMERU6BMERE6B6M32QREa32eREmB6y2A\
+  mQMy2QeeUaZIamYeYimQay2emIqy2ue2yaQmQ2yMQmEAu23qERe2\
+  3aMfYQYiQnUMZIERQ23MEJA236
+  }
+
+bof62-sample       { ; copyright Kerry Mitchell 04feb98
+  reset=1960 type=formula formulafile=bof.frm
+  formulaname=bof62_man center-mag=-0.75/0/0.82
+  params=10/0 float=y maxiter=256 inside=0 decomp=256
+  periodicity=0 colors=000<22>00w00z01z<4>07z08z0Az0\
+  Cz<13>0lz0oz1py<5>7xs9zqBzo<21>wz3zz0zy0<21>zT0zR0\
+  yQ0xP0<4>rK0pI0nI0<5>ZC0WB0SA0<6>001<20>00s00v00x0\
+  0z<4>06z08z09z0Bz0Dz<11>0hz0kz0mz0oz<6>8yrAzpCzn<2\
+  1>xz2zz0zx0<22>zR0yQ0wP0<2>tL0rK0qJ0oI0mH0<4>_D0YC\
+  0UB0<6>210 cyclerange=0/255
+  }

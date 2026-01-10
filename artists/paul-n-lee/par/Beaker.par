@@ -1,0 +1,495 @@
+; Path: unixg.ubc.ca!ubc-cs!news-server.csri.toronto.edu!bonnie.concordia.ca!
+;     uunet!zaphod.mps.ohio-state.edu!malgudi.oar.net!yfn.ysu.edu!ysub!psuvm!
+;     mxd120
+; From: MXD120@psuvm.psu.edu (Beaker)
+; Newsgroups: alt.fractals
+; Subject: TBOF .par file : Here it is
+; Message-ID: <92046.133244MXD120@psuvm.psu.edu>
+; Date: 15 Feb 92 18:32:44 GMT
+; Organization: Penn State University
+; Lines: 117
+; 
+; Here is the .par file of the color maps from _The Beauty of Fractals_.
+; ------------------------------------------------------------------------
+; Beaker's .par file
+; All the Mandelbrot and Julia set maps from the book
+; _The Beauty of Fractals.  I didn't add the other maps because I can't
+; seem to get them to come out right.  If I get them working, I'll post
+; changes to alt.fractals
+;
+; I only put in the types and corners because I know people have favorite
+; color maps and settings.  My personal choices for all of there are the
+; chroma color map, about 2000 iterations, and a bailout of 11.
+;
+; Disclaimer:  These are the numbers from the back H.O. Peitgen and
+; P.H. Richters book _The Beauty of Fractals_, published by
+; Springer-Verlag.  The book notes that some of the plates in the
+; book might be different becasue of cropping during production.  I
+; also take no reponsibility for any typo in the data, and all that
+; other junk.
+;
+; ENJOY!
+
+Map26 {
+        type=mandel
+        corners=-2.25/0.75/-1.5/1.5
+}
+
+Map27 { ; Also Maps 52-54
+        type=mandel
+        corners=-0.19920/-0.12954/1.01480/1.06707
+}
+
+Map29 {
+        type=mandel
+        corners=-0.95/-0.88333/0.23333/0.3
+}
+
+Map30 {
+        type=mandel
+        corners=-0.73/-0.4082/0.49216/0.71429
+}
+
+Map33 { ; Also Map 51
+        type=mandel
+        corners=-1.781/-1.764/0.0/0.013
+}
+
+Map36 {
+        type=mandel
+        corners=-0.75104/-0.7408/0.10511/0.11536
+}
+
+Map38 {
+        type=mandel
+        corners=-0.74758/-0.74624/0.10671/0.10779
+}
+
+Map40 {
+        type=mandel
+        corners=-0.746541/-0.746378/0.107574/0.107678
+}
+
+Map42 { ; Also Maps 100-101
+        type=mandel
+        corners=-0.74591/-0.74448/0.11196/0.11339
+}
+
+Map44 { ; Also Maps 46, 49
+        type=mandel
+        corners=-0.745538/-0.745054/0.112881/0.113236
+}
+
+Map45 { ; Also Map 47
+        type=mandel
+        corners=-0.745468/-0.745385/0.112979/0.113039
+}
+
+Map48 { ; Also Map 50
+        type=mandel
+        corners=-0.7454356/-0.7454215/0.1130037/0.1130139
+}
+
+Map49 {
+        type=mandel
+        corners=-0.7454301/-0.7454289/0.1130076/0.1130085
+}
+
+Map58 { ; Also Map2 59, 60
+        type=mandel
+        corners=-1.254024/-1.252861/0.046252/0.047125
+}
+
+Map18 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=0.32/0.043
+}
+
+Map20 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.12375/0.56508
+}
+
+Map22 { ; Also Map 25
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.39054/-0.58679
+}
+
+Map24 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.11/0.67
+}
+
+; Path: unixg.ubc.ca!ubc-cs!van-bc!zaphod.mps.ohio-state.edu!uwm.edu!psuvax1!
+;     psuvm!mxd120
+; Organization: Penn State University
+; Date: Sunday, 23 Feb 1992 14:31:19 EST
+; From: Beaker <MXD120@psuvm.psu.edu>
+; Message-ID: <92054.143119MXD120@psuvm.psu.edu>
+; Newsgroups: alt.fractals
+; Subject: Beaker's new and imporved _TBOF_ .par file
+;  
+; I plugged my brain back in and figured out why I couldn't get some of the
+; pictures to come out right: I was using the wrong type.  This file now
+; includes the models of magnetism parameters and I also included all of
+; the parameters for the b&w figures.  There are still more maps and figures
+; to be included, but Fractint 17.1 doesn't support the types.
+;  
+; --Beaker
+;  
+; --------------------------------------------------------------------------
+ 
+; Beaker's .par file for _TBOF_
+; Most of the color maps and b&w figures from _The Beauty of Fractals_
+;
+; I only put in the types and corners because I know people have favorite
+; color maps and settings.  My personal choices for all of these are the
+; chroma color map, about 2048 iterations, and a bailout of 11.
+;
+; Disclaimer:  These are the numbers from the back H.O. Peitgen and
+; P.H. Richters book _The Beauty of Fractals_, published by
+; Springer-Verlag.  The book notes that some of the plates in the
+; book might be different becasue of cropping or rotation during production.
+; I also take no reponsibility for any typos in the data, and all that
+; other junk.
+;
+; ENJOY!
+ 
+ 
+Map26 {
+        type=mandel
+        corners=-2.25/0.75/-1.5/1.5
+        }
+ 
+Map27 { ; Also Maps 52-54
+        type=mandel
+        corners=-0.19920/-0.12954/1.01480/1.06707
+        }
+ 
+Map29 {
+        type=mandel
+        corners=-0.95/-0.88333/0.23333/0.3
+        }
+ 
+Map30 {
+        type=mandel
+        corners=-0.73/-0.4082/0.49216/0.71429
+        }
+ 
+Map33 { ; Also Map 51
+        type=mandel
+        corners=-1.781/-1.764/0.0/0.013
+        }
+ 
+Map36 {
+        type=mandel
+        corners=-0.75104/-0.7408/0.10511/0.11536
+        }
+ 
+Map38 {
+        type=mandel
+        corners=-0.74758/-0.74624/0.10671/0.10779
+        }
+ 
+Map40 {
+        type=mandel
+        corners=-0.746541/-0.746378/0.107574/0.107678
+        }
+ 
+Map42 { ; Also Maps 100-101
+        type=mandel
+        corners=-0.74591/-0.74448/0.11196/0.11339
+        }
+ 
+Map44 { ; Also Maps 46, 49
+        type=mandel
+        corners=-0.745538/-0.745054/0.112881/0.113236
+        }
+ 
+Map45 { ; Also Map 47
+        type=mandel
+        corners=-0.745468/-0.745385/0.112979/0.113039
+        }
+ 
+Map48 { ; Also Map 50
+        type=mandel
+        corners=-0.7454356/-0.7454215/0.1130037/0.1130139
+        }
+ 
+Map49 {
+        type=mandel
+        corners=-0.7454301/-0.7454289/0.1130076/0.1130085
+        }
+ 
+Map58 { ; Also Map2 59, 60
+        type=mandel
+        corners=-1.254024/-1.252861/0.046252/0.047125
+        }
+ 
+Map18 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=0.32/0.043
+        }
+ 
+Map20 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.12375/0.56508
+        }
+ 
+Map22 { ; Also Map 25
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.39054/-0.58679
+        }
+ 
+Map24 {
+        type=julia
+        corners=-2/2/-1.5/1.5
+        params=-0.11/0.67
+        }
+ 
+Fig3 {
+        type=julia
+        corners=-1.8/1.8/-1.8/1.8
+        params=-0.1112375/0.56508
+        }
+ 
+ 
+Fig4 {
+        type=julia
+        corners=-1.4/1.4/-1.4/1.4
+        params=-0.12/0.74
+        }
+ 
+ 
+Fig6 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.481762/-0.531657
+        }
+ 
+Fig7 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.39054/-0.58679
+        }
+ 
+Fig8 {
+        type=julia
+        corners=-1.3/1.3/-1.3/1.3
+        params=0.27334/0.00742
+        }
+ 
+Fig9 {
+        type=julia
+        corners=-1.8/1.8/-1.8/1.8
+        params=-0.125
+        }
+ 
+Fig10 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.11/0.6557
+        }
+ 
+Fig11 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=0.11031/-0.67037
+        }
+ 
+Fig12 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=0/1
+        }
+ 
+Fig13 {
+        type=julia
+        corners=-1.5/1.5/-1.5/1.5
+        params=-0.194/0.6557
+        }
+ 
+Fig14 {
+        type=julia
+        corners=-1.7/1.7/-1.7/1.7
+        params=-0.15652/1.03225
+        }
+ 
+ 
+Fig15 {
+        type=julia
+        corners=-1.8/1.8/-1.8/1.8
+        params=-0.74543/0.11301
+        }
+ 
+Fig53a {
+        type=magnet1j
+        corners=-6/4/-5/5
+        params=-1/0
+        }
+ 
+Fig53b {
+        type=magnet1j
+        corners=-6/4/-5/5
+        params=-0.1/0
+        }
+ 
+Fig53c {
+        type=magnet1j
+        corners=-6/4/-5/5
+        params=0/0
+        }
+ 
+Fig53d {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=1/0
+        }
+ 
+Fig53e {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=1.2/0
+        }
+ 
+Fig53f {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=1.6/0
+        }
+ 
+Fig53g {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=2/0
+        }
+ 
+Fig53h {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=2.5/0
+        }
+ 
+Fig53i {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=2.9/0
+        }
+ 
+Fig53j {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=3/0
+        }
+ 
+Fig53k {
+        type=magnet1j
+        corners=-5/5/-5/5
+        params=3.1/0
+        }
+ 
+Fig53l {
+        type=magnet1j
+        corners=-4/6/-5/5
+        params=4/0
+        }
+ 
+Map3 {
+        type=magnet1j
+        corners=-5.5/7.9/-5/5
+        params=4/0
+        }
+ 
+Map4 {
+        type=magnet1j
+        corners=0.42/1.98/2.5/3.67
+        params=-0.1/0
+        }
+ 
+Map5 {
+        type=magnet1j
+        corners=-0.5/1.5/-1.45/0.7
+        params=1.09582/2.07142
+        }
+ 
+Map6 {
+        type=magnet1j
+        corners=-2.1/-0.3/-0.5/0.5625
+        params=1.21/0.01
+        }
+ 
+Map7 {
+        type=magnet2j
+        corners=-15/15/-11/11
+        params=2/0
+        }
+ 
+Map8 { ;Also Maps 9 and 10
+        type=magnet2j
+        corners=-3.2/3.8/-3.3/1.9
+        params=1.2/1.2
+        }
+ 
+Fig54b {
+        type=magnet1m
+        corners=1.85/2.15/1.5/1.8
+
+        }
+ 
+Fig54c {
+        type=magnet1m
+        corners=-1/3.5/-2.25/2.25
+        }
+ 
+Fig54d {
+        type=magnet2m
+        corners=-1/2.65/-2/2
+        }
+ 
+Fig54e {
+        type=magnet2m
+        corners=1.92/1.97/0.88/0.93
+        }
+ 
+Fig54f {
+        type=magnet2m
+        corners=-0.8/3.5/-2/2
+        }
+ 
+Map1 {
+        type=magnet1m
+        corners=-1.5/4.5/-2.25/2.25
+        }
+ 
+Map2 {
+        type=magnet1m
+        corners=1.86/2.21/1.51/1.77
+        }
+ 
+Map11 { ;Also Map 12
+        type=magnet1m
+        corners=1.2882/1.2963/0.9695/0.9753
+        }
+ 
+Map13 {
+        type=magnet1m
+        corners=1.290681/1.291136/0.97277/0.973098
+        }
+ 
+Map14 { ;Also Map 15
+        type=magnet2m
+        corners=1.9116/1.9784/0.88/0.93
+        }
+ 
+Map16 {
+        type=magnet2m
+        corners=-1.2/3.2/-1.65/1.65
+        }
+ 
