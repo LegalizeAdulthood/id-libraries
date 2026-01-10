@@ -1,0 +1,258 @@
+; this .par file by Eli Brandt, (c) 1992
+;
+;
+
+clean              { ; mandel w/ outside real. MUST SEE! DO THIS ONE!
+  reset type=mandel
+  corners=0.294785401/0.294792842/-0.0163666476/-0.0163610689 float=y
+  maxiter=10000 outside=real logmap=yes
+  colors=CCCsz0<6>0z0<6>0zz<16>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>\
+  0m00Kc<6>z09z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0\
+  zz<15>00z<7>z0z<6>z00<15>zz0
+  }
+
+birds              { ; butterflies and wings and leaves
+  reset type=julfn+exp function=recip
+  corners=-0.20105/0.201279/-3.002426/-2.700806 params=0.2/-0.13
+  biomorph=0
+  colors=CCC0_z<7>04z<6>0m00Kc<6>z09z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z\
+  00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<3>z0R
+  }
+
+1brain              { ; mandel brain. PAR file by Eli Brandt (c) 1992.
+  reset type=mandel corners=-0.15428259/-0.154261755/1.03074426/1.03075988
+  maxiter=5000 inside=0 logmap=yes
+  colors=CCCzE0<23>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x\
+  <28>x02z00z00<30>zy0zz0xz0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z\
+  20x<28>x02z00z00<5>zC0
+  }
+
+soapmandel         { ; mandel2m thingy
+  reset type=magnet2m
+  corners=0.8352812/0.9017108/1.4391593/1.4536541/0.8526977/1.4163041
+  float=y maxiter=2000
+  colors=CCC0az<9>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>0m00Kc<6>z09z\
+  00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z\
+  0z<6>z00<15>zz0<7>0z0<6>0zz<5>0dz
+  }
+
+spiralarm1         { ; mandel with outside
+  reset type=mandel
+  corners=0.294213116/0.29507035/-0.016710103/-0.016067445 maxiter=1000
+  outside=summ logmap=yes
+  colors=CCC0z7<6>0zz<14>04z<6>0m00Kc<6>z09z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>\
+  z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00<15>zz0<7>0z0<6>0zz<16>00z\
+  <7>z0z<6>z00z00<15>zz0<7>0z0
+  }
+
+crochet            { ; complicated mandel/seahorses
+  reset type=mandel corners=0.346042722/0.346620668/0.082866855/0.0834448
+  maxiter=5000 inside=0 logmap=yes
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+railroad           { ; railroad switching yard
+  reset type=manzpower corners=-1.669153/-1.526042/-0.0099/0.097424
+  params=0/0/2.01
+  colors=CCCz0h<4>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>0m00Kc<6>z09z00z00<15>zz0\
+  <7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<14>zv0
+  }
+
+feathers           { ; complex newton feathers
+  reset type=complexnewton
+  corners=2.508408/10.516402/7.4253476/3.0520497/4.748298/2.9993264
+  params=0/3/1 periodicity=0
+  colors=CCC0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>\
+  z00<15>zz0<7>0z0<6>0zz<14>08z
+  }
+
+coolarm            { ; simple neuveau mandel arm
+  reset type=mandel
+  corners=-0.786757648/-0.787733942/0.151691597/0.15123415 maxiter=1000
+  logmap=yes
+  colors=CCCCsO<4>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<2\
+  1>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq\
+  <13>CsQ
+  }
+
+seahorse8934       { ; deep seahorse zoom-complicated
+  reset type=mandel
+  corners=-0.74331679892/-0.7433143701/0.1483653845/0.1483672054 float=y
+  maxiter=3000 logmap=yes
+  colors=CCCmCm<2>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCE\
+  s<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC\
+  <17>kCk
+  }
+
+indigo-odd         { ; richard1 formula
+  reset type=formula formulafile=fractint.frm formulaname=richard1
+  corners=1.0942183/1.0642276/-0.020606/0.0193983/1.0642276/0.0193983
+  inside=0 potential=255/600/500
+  colors=000S9jLSd<145>hwXhwXhwXixWiwWiuX<29>Z7wY5xY5x<69>T9j
+  }
+
+itchy              { ; odd mandel itch
+  reset type=mandel
+  corners=0.329522952/0.329680707/0.058815358/0.058933625 maxiter=10000
+  bailout=4 logmap=yes
+  colors=CCCCSs<12>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>C\
+  sECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCE\
+  s<5>CQs
+  }
+
+claus              { ; deep mandel zoom. hairy
+  reset type=mandel
+  corners=-0.47456096432/-0.47455880637/0.62436789534/0.62436951314
+  float=y maxiter=15000 logmap=yes
+  colors=CCCz0h<4>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>0m00Kc<6>z09z00z00<15>zz0\
+  <7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00<15>\
+  zz0<7>0z0<6>0zz<16>00z<7>z0zz0q
+  }
+
+lace               { ; mandel lace
+  reset type=mandel
+  corners=0.3397252191629/0.3397252724829/0.0509646416139/0.0509646816039
+  float=y maxiter=30000 logmap=yes
+  colors=000EqQ<6>hht<12>SjkRjjNjh<7>Djc<6>wfs<13>jXYocZsjZ<44>FZNFZNG_O<31>e_\
+  Sf_Sh_T<6>m_Tk`Sj`Si`ReaQ<10>ReKQeKMfI<15>1jB<13>PQHULI<9>j7L<34>grEgsEgwEgx\
+  E<4>doDcjC<8>ZVBYQB5tH
+  }
+
+lobes              { ; mandel lobes
+  reset type=mandel
+  corners=-0.76425508/-0.763755027/0.084265808/0.084640691 maxiter=1000
+  logmap=yes
+  colors=000zzV<14>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_2\
+  2<23>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<13>zzT
+  }
+
+outline            { ; outline of mandelbrot
+  reset type=mandel passes=2 corners=-1.82625/0.525749/-1.176/1.176
+  float=y maxiter=10000 inside=0 outside=0 distest=-1/70
+  colors=CCCz0h<4>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>0m00Kc<6>z09z00z00<15>zz0\
+  <7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00<15>\
+  zz0<7>0z0<6>0zz<16>00z<7>z0zz0q
+  }
+
+pentspiral         { ; deep mandel zoom of spirals of doom
+  reset type=mandel
+  corners=-0.505069140309/-0.505068693809/0.521988775577/0.521989110277
+  float=y maxiter=10000 logmap=-400
+  colors=CCCWD6<23>2xU0zV0zb<2>0zz<15>00z<7>z0z<6>z00<15>zz0<7>0z0<6>0zz<16>00\
+  z<7>z0z<5>z0900U<46>00U00U00W<13>00z<3>0zU<3>zU0<3>z0U<3>000<9>zzz<10>zzz<9>\
+  000<14>c00<5>XB5
+  }
+
+orbitspiral        { ; lots of stuff orbiting minimandel
+  reset type=mandel
+  corners=-0.505073505/-0.505064575/0.521982668/0.521989362 maxiter=5000
+  logmap=yes
+  colors=CCC000<62>zzzz00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7\
+  >0z0<7>0zz<15>00z<7>z0z<6>z00<15>zz0<7>0z0<6>0zz<16>00z<7>z0z<5>z09
+  }
+
+scarab             { ; big scarab bug. a--man formula
+  reset type=formula formulafile=fractint.frm formulaname=a--mand
+  corners=-1.123625/1.724372/-1.240047/1.240051 params=50 float=y
+  outside=real invert=0.499999/0/0
+  colors=CCCz0h<4>z00z00<15>zz0<7>0z0<7>0zz<14>04z<6>0m00Kc<6>z09z00z00<15>zz0\
+  <7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<14>zv0
+  }
+
+sigil              { ; odd barnsley symbol. simple
+  reset type=barnsleyj1
+  corners=2.023155/-0.005179/-1.352255/1.352223/-0.005179/1.352223
+  params=0.599999905/1.099998949 maxiter=256 inside=0 potential=255/1000/1
+  colors=000<89>000<15>zzz<15>000<132>000
+  }
+
+spikes             { ; spiked mandel - try with floating pt. 
+  reset type=formula formulafile=fractint.frm formulaname=aa-mand-re
+  corners=-2.0/1.999997/-1.499996/1.5 params=4 maxiter=1000 decomp=256
+  biomorph=0
+  colors=CCC000<62>zzzz00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7\
+  >0z0<7>0zz<15>00z<7>z0z<6>z00<15>zz0<7>0z0<6>0zz<16>00z<7>z0z<5>z09
+  }
+
+vertigo1           { ; vertigo1 lsystem
+  reset type=lsystem lfile=fractint.l lname=Vertigo1
+  corners=-1.0/1.0/-1.0/1.0 params=16
+  colors=0000s7w700s7w700r8w800r8w800q9w900q9w900pAwA00pAwA00oBwB00oBwB00nCwC0\
+  0nCwC00mDwD00mDwD00lEwE00lEwE00kFwF00kFwF00jGwG00jGwG00iHwH00iHwH00hIwI00hIw\
+  I00gJwJ00gJwJ00fKwK00fKwK00eLxL00eLxL00dMxM00dMxM00cNxN00cNxN00bOxO00bOxO00a\
+  PxP00aPxP00`QxQ00`QxQ00_RxR00_RxR00ZSxS00ZSxS00YTxT00YTxT00XUxU00XUxU00WVxV0\
+  0WVxV00VWxW00VWxW00UXxX00UXxX00TYxY00TYxY00SZxZ00SZxZ00R_x_00R_x_00Q`x`00Q`x\
+  `00Paxa00Paxa00Obxb00Obxb00Ncxc00Ncxc00Mdxd00Mdxd00Leye00Leye00Kfyf00Kfyf00J\
+  gyg0
+  }
+
+splayedbug         { ; bug mandel
+  reset type=mandel
+  corners=-0.484437307/-0.48389856/0.597093586/0.597497478 maxiter=3000
+  inside=0 logmap=yes
+  colors=CCC5nP<4>2jW1iY0gZ<7>0Nk0Km0In0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<19>2jW1iY0gZ<7>0Nk0Km0Gp<4>03x00z20x<28>x02z00z00<30>zy0zz0x\
+  z0<21>Hz0Gz0Fy2<13>6nN
+  }
+
+static             { ; static mandel. like tv static.
+  reset type=mandel
+  corners=-0.474560676614/-0.474560568717/0.6243683639994/0.6243684448894
+  float=y maxiter=32767 logmap=yes decomp=256
+  colors=000000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000000zzz000zzz000\
+  zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz0\
+  00zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zz\
+  z000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000\
+  zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz0\
+  00zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zz\
+  z000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000\
+  zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz0\
+  00zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zz\
+  z000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000\
+  zzz000zzz000zzz
+  }
+
+whorls             { ; julibrot whorls
+  reset type=julibrot corners=-1.424001/1.424017/-1.068014/1.068001
+  params=-0.83/-0.83/0.25/-0.25 maxiter=10000 logmap=yes
+  colors=000000000<15>zzz<15>000<220>000
+  }
+
+wallspiral         { ; spiral decomp with a wall
+  reset type=manfn+zsqrd function=recip passes=2
+  corners=-0.975536282/-0.974775002/-0.00043257/-0.00144761/-0.974775002/-0.00\
+  144761 float=y maxiter=5000 bailout=4 logmap=yes decomp=256
+  colors=CCC0Sz<6>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00<15>\
+  zz0<7>0z0<6>0zz<16>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z\
+  00<15>zz0<7>0z0<7>0zz<7>0Wz
+  }
+
+quills             { ; quilled mandel
+  reset type=mandel
+  corners=-1.78644078337/-1.78643971505/-0.000000412424/0.000000388421
+  float=y maxiter=4000 logmap=yes
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+
+lacewhit           { ; really nice lace julia. 
+  reset type=julia
+  corners=0.130355/-0.134057/-0.998233/0.984981/-1.841341/0.089428
+  params=-0.748958926961827/0.054351719127379 maxiter=1000 logmap=yes
+  colors=CCCCCCACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>E\
+  CsCCsCEs<19>CqsCssCsq<18>CsGzzz<8>zzzUsU<11>qsqsssssq<19>ssEssCsqC<19>sECsCC\
+  qCC<19>ECC
+  }
+
+cleanjulia        { ; the julia from 'clean' equally impressive.
+  reset type=julia passes=1
+  corners=0.867984/-0.867984/-1.157312/1.157312/-0.867984/1.157312
+  params=0.294789121500008/-0.0163638582500005 float=y maxiter=10000
+  outside=real logmap=yes
+  colors=CCC00z<2>V0z<8>z0z<4>z0V<2>z00<3>zV0<7>zz0<7>0z0<7>0zz<15>00z<7>z0z<6\
+  >z00z00<15>zz0<7>0z0<7>0zz<15>00z<7>z0z<6>z00z00<15>zz0<7>0z0<7>0zz<15>00z<7\
+  >z0z<6>z00<15>zz0<7>0z0<6>0zz<15>04z
+  }
+
