@@ -1,0 +1,1388 @@
+; Here is a translation of another of my rendering methods into
+; a Fractint formula, along with a couple of Christmas pars.
+;  
+; Paul
+; ---------------------------------------------------------------
+
+ 
+xmasbrot1           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=3D_C_Stalks_Mset passes=t
+  corners=1.550495197005/1.550482374447/0.05926962867068\
+  /0.05929793536511/1.550476993671/0.05929389978305
+  params=0.113/1000/2/125 float=y maxiter=3000
+  inside=253 outside=summ
+  colors=0F0zzz<123>VVVz88<123>O00000<3>000
+  }
+ 
+xmasbrot2           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=3D_C_Stalks_Mset passes=t
+  corners=-1.014249723199741/-1.014249727675602/0.29512279941\
+  28802/0.2951228023340096/-1.014249726213193/0.2951228034308163
+  params=0.1/1000/2/125 float=y maxiter=3000
+  inside=253 outside=summ
+  colors=0F0zzz<123>VVVz88<123>O00000<3>000
+  }
+
+; From:  pjcarlsn@ix.netcom.com
+; Subject:  (fractint) Another Holiday Fractal
+; PostedDate:  12/10/97 03:56:34 PM
+; 
+; Here's a Holiday fractal using a "ring" orbit trap.
+; The image has two different beautiful spirals in it
+; which are worth zooming in on.
+
+
+xmas2              { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm formulaname=Xmas2
+  passes=t
+  center-mag=-0.12954259403350000/+0.84177672895000000/169337.1/1/12.5
+  params=0.1/0 float=y maxiter=3000 inside=253 outside=summ
+  colors=0J0z88<123>O00zzz<123>VVV000<3>000
+  }
+
+; Happy Holidays!
+; Paul Carlson
+; 
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+
+
+; From:  pjcarlsn@ix.netcom.com
+; Subject:  (fractint) Holiday Fractal No. 3
+; PostedDate:  12/11/97 03:40:23 PM
+; SendTo:  fractint@xmission.com
+; ReplyTo:  fractint@lists.xmission.com
+; $UpdatedBy:  CN=notesgw/O=ACMS
+; RouteServers:  CN=notesgw/O=ACMS,CN=cassatt_notes/O=ACMS
+; RouteTimes:  12/11/97 03:30:06 PM-12/11/97 03:32:09 PM,12/11/97 03:44:35 PM-12/11/97 03:44:36 PM
+; DeliveredDate:  12/11/97 03:44:36 PM
+; Categories:  
+; $Revisions:  
+; BlindCopyTo:  CN=Jay Hill/OU=NRaD/O=ACMS
+; 
+; This holiday fractal uses a circular orbit trap.
+; It has a nice 3D effect.
+
+
+xmas3              { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=Xmas3 passes=t
+  center-mag=-0.04068032554526006/-0.67898807265879090/1.852021e+007
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=0J0z88<123>O00zzz<123>VVV000<3>000
+  }
+
+
+; Happy Holidays!
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+
+; Date: Thu, 01 Jan 1998 19:22:04 -0800
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) Binary Decompression
+; 
+; Paul Writes....
+; 
+; I still can't send email to the Fractint list, so would you do me 
+; a favor and send this for me?   The subject could be
+; Re: Binary Decomposition
+; 
+; Thanks!  Paul Carlson
+; - -------------------------------------------------------------
+; I haven't seen everthing that's been posted about this and I'm
+; certainly no guru, but this might help:
+
+
+decomp_mset        { ; Paul Carlson
+                     ; Reproduces the image on page 74 in
+                     ; _The Beauty of Fractals_.
+  reset=1960 type=formula formulafile=carlson.frm formulaname=trydecomp
+  center-mag=-0.714727/-1.7e-006/0.8130071 params=10/0 float=y
+  maxiter=256 inside=0 outside=summ colors=000zzz000<252>000
+  }
+
+
+; Date:  12/07/97 05:20:09 PM
+; From:  pjcarlsn@ix.netcom.com
+; SendTo:  fractint@xmission.com
+; Subject:  (fractint) Holiday Bubbles Fractal
+; Here's a holiday image rendered using my "bubble" method.
+
+
+XmasSeahorse       { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=XmasSeaHorse passes=1
+  center-mag=-1.35617/0.150258/8.503401
+  float=y maxiter=10000 outside=summ
+  colors=000zzz<104>VVV0I0<18>0I0z88<104>O000I0<21>0I0
+  }
+
+
+; Happy holidays!
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Date: Sun, 28 Dec 1997 19:40:09 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) Paul's 4th frm & par
+; To: fractint@mail.xmission.com
+; Message-ID: <199712281941_MC2-2D5B-9084@compuserve.com>
+; 
+; Wizzle wrote:
+; 
+; > I was looking at Paul Carlson's homepage and got to wondering if we had
+; >the formula he used......
+; >
+; > Clifford Pickover's quartic variation of Ushikis's "Phoenix" Julia set
+; > equations: Z = Z*Z - .5Z + C, X = Z*Z - .5Y + C, Y = Z, Z = X
+; 
+; That equation is not part of Fractint, but I just translated it into
+; a Fractint formula, along with a par file to try it out.  Here it is:
+
+
+
+phxspirs           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=3D_Phoenix_Spirals passes=t
+  corners=0.52418/0.54062/0.01183/0.02416
+  params=0.563/0/2/125 float=y maxiter=322 inside=255
+  outside=summ colors=000zVz<123>G0GVzz<123>0GG000<3>000
+  }
+
+; Also, none of the URLs below are my homepage, as such.  I can't
+; write to any of them - they are all maintained by others.  I hope
+; to set up a page of my own in the near future.  The fractal.mta.ca
+; site has no text, but it has by far the most fractals (about
+; 300 1024x768 resolution images) and is the only site that has my
+; latest stuff.
+; 
+; Regards,
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Message-Id: <3.0.32.19980102184453.006a8780@cci-internet.com>
+; X-Sender: wizzle@cci-internet.com
+; Date: Fri, 02 Jan 1998 18:44:54 -0800
+; To: Fractint@xmission.com
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: (fractint) From Paul Carlson
+; 
+; Paul writes
+; 
+; Well, I tried again today - the Fractint list is still bouncing
+; all my email back to me, so could I impose upon you again to send
+; the following for me?  I think you'll like this one - it's kind
+; of cute.  Thanks.  Paul
+; 
+; ----------------------------------------------------------------
+; The par file that accompanied my 3D_Phoenix_Spirals formula that
+; Lee Skinner posted here for me some time ago produced a rather "elegant"
+; fractal.  The par file below produces my favorite 3D_Phoenix_Spirals
+; fractal -  I think it has a real "whimsical" quality to it.  It looks
+; to me like the thingy on the left is saying to the thingy on the
+; right, "Hello there, haven't I seen you someplace before?"
+
+whimsical          { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=3D_Phoenix_Spirals passes=t
+  corners=0.5762403157945/0.5762421404185/0.786099693384/0.786101061852
+  params=0.563/0/2/125 float=y maxiter=300 inside=253
+  outside=summ colors=000n_z<123>I0Kjzb<123>4E0000<3>000
+  savename=whimsicl
+  }
+
+; Paul Carlson
+
+
+; Date: Sat, 3 Jan 1998 04:17:03 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) 3D_Balls_Julia
+; To: Liste Fractint <fractint@mail.xmission.com>
+; Message-ID: <199801030417_MC2-2DDF-8CFF@compuserve.com>
+; 
+; Hi All,
+; 
+;   I am posting this message for Paul Carlson.
+; 
+;         - Sylvie
+; 
+; -------------------------------------------------------
+; A while ago I posted the formula, "3D_Balls_Mset."  Here
+; is the corresponding Julia set formula, but using a
+; different equation, along with a PAR file that demonstrates
+; how different images can be created by fiddling with the
+; colormap.
+
+
+balloops           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=3D_Balls_Julia
+  passes=t corners=2.4395828/3.2229162/2.322917/2.910417
+  params=-1.28333/0.049167/0.2/2/2/125 float=y maxiter=500
+  inside=253 outside=summ
+  colors=000O00<44>y77z88y88<30>O0000O<44>GGzWRF<45>zqazqay\
+  p`<29>WRF00O<45>GGz000<2>000
+  }
+
+; Enjoy!
+; Paul
+
+
+; Date: Sun, 4 Jan 1998 07:00:52 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) PokornyConesJulia
+; To: Liste Fractint <fractint@mail.xmission.com>
+; Message-ID: <199801040701_MC2-2DF6-29B0@compuserve.com>
+; 
+; Hi All,
+; 
+;   Yet another formula and par from Paul Carlson!
+; 
+;         - Sylvie
+; 
+; --------------------------------------------------------
+; Here's another formula quite similar to the 3D_Phoenix_Spirals
+; formula I sent some time ago, the similarity being that both
+; formulas use a variation of the ATAN method.  I've added a
+; couple of PAR files that produce images that I like.  Don't
+; be put off by the maxiter=5000, they both execute quite fast.
+
+
+
+pkcones1           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=PokornyConesJulia passes=1
+  corners=0.32024997/1.1275833/-0.28875/0.31675
+  params=-1.721302083333/0.010600585938/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+
+pkcones2           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=PokornyConesJulia passes=1
+  corners=0.55438357/0.91451157/0.2032067/0.4733027
+  params=-1.550794271/0.023072917/2/125
+  float=y maxiter=5000 inside=0 outside=summ
+  colors=000G0G<123>zVz0GG<123>Vzz000<3>000
+  }
+
+; Date: Sat, 13 Dec 1997 22:20:17 -0600 (CST)
+; Message-Id: <199712140420.WAA21853@dfw-ix9.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Holiday Fractal No. 4
+; 
+; 
+; Here's a gala-looking Julia set.
+
+xmas4              { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=Xmas4 passes=t
+  center-mag=-4.44089e-016/3.33067e-016/0.8503401
+  params=-0.767633083/0.095353559/0.01/0/2/0 float=y maxiter=2000
+  inside=253 outside=summ colors=0I0VVV<248>zzz000000T00000000
+  savename=Holiday4
+  }
+
+; Happy Holidays!
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Date: Sun, 7 Dec 1997 19:19:56 -0600 (CST)
+; Message-Id: <199712080119.TAA11730@dfw-ix12.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Holiday Bubbles Fractal
+; To: fractint@xmission.com
+; 
+; Here's a holiday image rendered using my "bubble" method.
+
+
+XmasSeahorse       { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=XmasSeaHorse passes=1
+  center-mag=-1.35617/0.150258/8.503401
+  float=y maxiter=10000 outside=summ
+  colors=000zzz<104>VVV0I0<18>0I0z88<104>O000I0<21>0I0
+  savename=HBubbles
+  }
+
+; Happy holidays!
+; Paul Carlson
+
+; Date: Tue, 6 Jan 1998 16:24:04 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) Yet another formula from Paul Carlson
+; To: Liste Fractint <fractint@mail.xmission.com>
+; Message-ID: <199801061624_MC2-2E43-5FC4@compuserve.com>
+; 
+; Hi All,
+; 
+;   Paul still gets his messages to this list bounced back, so he asked me to
+; post this mew formula.  He gets all the messages posted there so, feel free
+; to comment!
+; 
+;         - Sylvie
+; 
+; ---------------------------------------------------------
+; Here is a formula and PAR file that demonstrates how the
+; parametric form of an equation of a curve can be used as
+; an orbit trap.
+
+
+
+astmset            { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Astroid_Mset passes=t
+  center-mag=+0.36126226339583390/+0.09037301461753901/5.967617e+008
+  params=0.016/0.3/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00z\
+  R<28>0C40zz<28>0CCGGz<28>00O000<10>000z88000000
+  }
+
+
+; Date: Sun, 21 Dec 1997 21:21:01 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) 3DStalks_Julia&MonkFace
+; To: fractint@mail.xmission.com
+; Message-ID: <199712212121_MC2-2CC9-E288@compuserve.com>
+; 
+; Paul Carlson asked me to post this message for him, as he is currently
+; having problems sending mail to this mailing list.
+; Lee Skinner
+; Message from Paul Carlson follows:
+; -----------------------------------------------------------------------
+; Here is a heavily commented .frm file that describes how my
+; 3D Stalks rendering method works, along with a .par file
+; that uses it do produce one of my favorite fractals.
+; 
+; The 3D Stalks method is an extension of Clifford Pickover's
+; Epsilon Cross method.  In the 3d Stalks method, an index into
+; one or more ranges of colors is computed based on the ratio
+; of the distance of the trapped point from the nearest axis to
+; 1/2 the width of the "trap."
+
+
+MonkeyFace           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1930 type=formula formulafile=carlson.frm
+  formulaname=3DStalks_Julia passes=1
+  corners=-3.153125/-1.332708/6.993125/8.358438
+  params=-0.25/0/0.1/10000/2/98
+  float=y maxiter=200 inside=255 outside=summ
+  colors=000Vzz<96>0GGzVz<96>F0G000<57>000
+  }
+
+; I'll be glad to answer any questions about these.
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Date: Sun, 28 Dec 1997 09:36:49 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) 3D_Balls_Mset
+; To: fractint@mail.xmission.com
+; Message-ID: <199712280937_MC2-2D5A-5B09@compuserve.com>
+; 
+;   Here's another formula and par from Paul Carlson.  I hope
+; it gets through:   - Lee Skinner
+; ------------------------------------------------------------
+
+mndballs           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=3D_Balls_Mset passes=t
+  corners=0.3591692053403/0.3591642558984/-0.0903273262484/-0.090338913179\
+  93/0.3591729852683/-0.09033236615248
+  params=0.0065/150/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<27>FFxGGzI0K<28>fO\
+  zO08<28>z0fO00<28>z88000<13>000
+  savename=mndballs
+  }
+
+3dballs  { ; Copyright (c) Paul W. Carlson, 1997
+  type=formula formulafile=carlson.frm
+  formulaname=3D_Balls_Mset passes=t
+  params=0.0065/150/8/30
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000c40<28>zW0aG0<28>zz00C4<28>0zR0CC<28>0zz00O<27>FFxGGzI0K<28>fO\
+  zO08<28>z0fO00<28>z88000<13>000
+  }
+
+
+; Date: Tue, 6 Jan 1998 23:06:48 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) Tan_Spirals & Optillus
+; To: fractint@lists.xmission.com
+; Message-ID: <199801062307_MC2-2E4E-93BE@compuserve.com>
+; 
+; ----------------------------------------------------------
+; This formula and PAR file produce a nice optical illusion.
+; It appears as if there are two overlaid spirals, spiralling
+; in opposite directions.
+
+
+optillus           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Tan_Spirals
+  passes=1 center-mag=-1.44329e-015/7.77156e-016/3.774093
+  params=0.3/-0.9/0.001/0/5e-006/0
+  float=y maxiter=252 inside=253
+  outside=summ colors=000Vzz<123>0GGzVz<123>F0G000<3>000
+  }
+
+
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Date: Wed, 7 Jan 1998 22:47:45 -0500
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) Cosh_atan_mset
+; To: fractint@lists.xmission.com
+; Message-ID: <199801072248_MC2-2E73-B86F@compuserve.com>
+; MIME-Version: 1.0
+; Content-Disposition: inline
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Transfer-Encoding: 8bit
+; X-MIME-Autoconverted: from quoted-printable to 8bit by mail-atm.san.rr.com id TAA16216
+; Content-Type: text/plain; charset=ISO-8859-1
+; X-UIDL: eb2eb7c6f4670b60088be9046369d44d
+; 
+; 
+; ---------------------------------------------------------
+; Here's a variation of ATAN coloring that works well with
+; many transcendental functions.  This FRM and PAR file
+; use the COSH function.  Let me know if you're getting
+; tired of the comments in my formulas.
+
+
+
+coshatan           {; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Cosh_Atan_Mset passes=t
+  corners=0.936256107301329/0.936256306792296/0.335034518072\
+  451/0.335034387876525/0.936256241612122/0.335034338991395
+  params=12/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zVz<108>G0GG0GG0GG0GG0G<10>G0Gzz0<108>aG0aG0aG0aG0a\
+  G0<10>aG0000<3>000
+  }
+
+; Paul Carlson
+; ------------------------------------------------------------------
+;                 email   pjcarlsn@ix.netcom.com
+; 
+; WWW Fractal Galleries   http://sprott.physics.wisc.edu/carlson.htm
+;                         http://fractal.mta.ca/fractals/carlson/
+;                         http://www.cnam.fr/fractals/carlson.html
+; ------------------------------------------------------------------
+
+; Date: Thu, 8 Jan 1998 12:01:20 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) mndbulbs
+; To: Liste Fractint <fractint@mail.xmission.com>
+; Message-ID: <199801081202_MC2-2E90-41CA@compuserve.com>
+; MIME-Version: 1.0
+; Content-Disposition: inline
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Transfer-Encoding: 8bit
+; X-MIME-Autoconverted: from quoted-printable to 8bit by mail-atm.san.rr.com id JAA00728
+; Content-Type: text/plain; charset=ISO-8859-1
+; X-UIDL: 6d9784cac09e2eca5fa1e4285c0ebd87
+; 
+; Hi All,
+; 
+;   Here is a new bunch of =3D's... <gd&r>
+; 
+;         - Sylvie
+; 
+; -------------------------------------------------------
+; Here's a formula you may find useful.   The PAR file will
+; produce a black and white image of a "hollow" Mandelbrot set.
+
+
+
+mndbulbs           { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=fastmand passes=1
+  center-mag=3.665e-006/-8.65e-007/0.6666663
+  float=y maxiter=2000 inside=0
+  colors=000zzz<253>zzz
+  }
+
+
+; Date: Fri, 9 Jan 1998 01:53:15 -0500
+; From: Sylvie Gallet <Sylvie_Gallet@compuserve.com>
+; Subject: (fractint) Petals_Julia
+; To: Liste Fractint <fractint@mail.xmission.com>
+; Message-ID: <199801090153_MC2-2E9D-7B05@compuserve.com>
+; MIME-Version: 1.0
+; Content-Disposition: inline
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Transfer-Encoding: 8bit
+; X-MIME-Autoconverted: from quoted-printable to 8bit by mail-atm.san.rr.com id WAA28140
+; Content-Type: text/plain; charset=ISO-8859-1
+; X-UIDL: 1cdb3441db08f2c5c71279b25b2ee1ee
+; 
+; 
+; --------------------------------------------------------
+; This formula produces flower-like elements using orbit
+; traps consisting of the overlapping areas of four circles.
+; The Mandelbrot set equation used here produces flowers
+; with four petals.  Other equations produce different
+; numbers of petals.  Included are two PAR files to try
+; it with.
+
+
+
+julia_petals_1 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Petals_Julia passes=t
+  center-mag=-4.44089e-016/2.22045e-016/0.8130081
+  params=-0.74107075/0.1578683/0.2/0/2/125
+  float=y maxiter=2000
+  inside=253 outside=summ
+  colors=000aG0<60>zy0zz0zy0<60>aG0C0C<60>yVyzVzyVy<60>C\
+  0C000<3>000
+  }
+
+
+julia_petals_2 { ; Copyright (c) Paul W. Carlson, 1997
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Petals_Julia passes=t
+  corners=-0.7881936/0.8801584/0.015265/1.266529
+  params=0.359166203/-0.09033392599999999/0.3/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000c40<14>xU0zW0yU0<11>c40aG0<14>xw0zz0yw0<11>a\
+  G00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<14>FFwGGzFFw<11>0\
+  0OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<12>R0BO08O00<15>z8\
+  8<12>O00000<13>000
+  }
+
+
+; Date: Thu, 29 Jan 1998 20:17:16 -0600 (CST)
+; Message-Id: <199801300217.UAA05927@dfw-ix9.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Another formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 2120
+; 
+; This formula and par produce a very colorful spiral.
+; Since much of the logic in this formula is the same
+; as that in other formulas I've posted, I've eliminated
+; most of the comments that have appeared in the other
+; formulas.
+; 
+; Paul Carlson
+
+
+c_sin_atan_jul     { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CSin_Atan_Julia passes=1
+  corners=0.50200688/0.62208688/0.481622813/0.571682813
+  params=1/0.1/1.35/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG0\
+  0zR<28>0C40zz<28>0CCGGz<28>00O000<13>000
+  }
+
+
+
+; Date: Fri, 30 Jan 1998 16:19:53 -0800
+; To: fractint@lists.xmission.com
+; From: Wizzle <wizzle@cci-internet.com>
+; Subject: Re: (fractint) Another formula
+; 
+; This formula and par produce a very colorful spiral.
+; Since much of the logic in this formula is the same
+; as that in other formulas I've posted, I've eliminated
+; most of the comments that have appeared in the other
+; formulas.
+; 
+; Paul Carlson
+
+
+c_sin_atan_jul     { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CSin_Atan_Julia passes=1
+  corners=0.50200688/0.62208688/0.481622813/0.571682813
+  params=1/0.1/1.35/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG0\
+  0zR<28>0C40zz<28>0CCGGz<28>00O000<13>000
+  }
+
+
+
+; Date: Sat, 31 Jan 1998 17:21:11 -0600 (CST)
+; Message-Id: <199801312321.RAA20127@dfw-ix8.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Truncated Stalks Formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 5660
+; 
+; The formula below is a variation on my 3D Stalks rendering
+; method.  The problem with that method (as well as Pickover's
+; original epsilon cross method) is that the orbit trap is
+; unbounded (goes to + and - infinity along both axes) producing
+; stalks which taper out to just a series of unconnected pixels.
+; The formula below is my "truncated stalks" rendering method or,
+; if you prefer, my "cross in a circle" method.
+; 
+; The first par is for a Julia set zoom in which the stalks are converging
+; to a point.  By truncating the stalks before they reach that point
+; you can see down into the spiral many levels.  A nice effect, I think.
+; The second par is for an Mset zoom consisting of many crosses (which is
+; just what you'd expect with a "cross in a circle" orbit trap).
+; 
+; In both pars, you can try making imag(p2) much larger (this increases
+; the length of the stalks) to see the effect.
+; 
+; Paul C. (for Carlson)
+
+
+trunspr1     {; Copyright (c) Paul W. Carlson, 1998
+	      ; Julia set example
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Truncated_Stalks passes=1
+  center-mag=0.498546/0.904963/17.69958/1/20
+  params=2.595821505264/0.159242645065/0.05/20/2/125
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=801sF_<123>C02Mov<123>HKS000<3>000
+  }
+
+trunspr2     {; Copyright (c) Paul W. Carlson, 1998
+	      ; Mset example
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Truncated_Stalks passes=1
+  center-mag=+0.78914572989794710/+0.209775364341020\
+  20/3108.882/1/7.5
+  params=0/0/0.1/0.047/2/125
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+
+; I believe you forwarded Paul's message without editing it....in which case
+; the > character gets inserted before every line of his formulas and pars.
+; This can be avoided by copying his formula and pasting it into a new email
+; to the list.  If that doesn't work, maybe Paul could send his stuff for
+; posting to me as it's easier for me to do the cut and paste job than edit a
+; long formula.  And thanks to Paul for another winner
+; Angela
+; At 03:17 AM 1/30/98 -0800, you wrote:
+; >
+; >
+; >
+; >
+; >
+; >---Paul and/or Joyce Carlson <pjcarlsn@ix.netcom.com> wrote:
+; >
+; > This formula and par produce a very colorful spiral.
+; > Since much of the logic in this formula is the same
+; > as that in other formulas I've posted, I've eliminated
+; > most of the comments that have appeared in the other
+; > formulas.
+; >
+; >  Paul Carlson
+
+c_sin_atan_jul     { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CSin_Atan_Julia passes=1
+  corners=0.50200688/0.62208688/0.481622813/0.571682813
+  params=1/0.1/1.35/0/8/30
+  float=y maxiter=5000 inside=253 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG0\
+  0zR<28>0C40zz<28>0CCGGz<28>00O000<13>000
+  }
+
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Wed Feb 18 17:47:18 1998)
+; X-From_: owner-fractint@lists.xmission.com Wed Feb 18 17:42 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id RAA19131;
+; 	Wed, 18 Feb 1998 17:42:33 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0y5Ky1-0002RF-00; Wed, 18 Feb 1998 18:40:01 -0700
+; Date: Wed, 18 Feb 1998 19:38:48 -0600 (CST)
+; Message-Id: <199802190138.TAA17512@dfw-ix6.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Another formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 4535
+; 
+; This formula uses the same equation that I used in the TwoPieces
+; formula I posted a couple of days ago.  I've used this equation
+; before with my 3DBalls rendering method and produced some nice images.
+; Here I use the 3DBalls rendering method except that the color range is
+; determined by the sign of imag(w) instead of the iteration count.  The
+; resulting images contain some balls of one color, some balls of the other
+; color, and some balls that have both colors.  The balls form one pattern
+; and the colors overlay another pattern on the balls.  The result is
+; kind of pretty.  This formula is a lot faster than the TwoPieces one.
+; 
+; Paul Carlson
+
+
+tb1              {; Copyright (c) Paul W. Carlson, 1998
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=TwoBallsJulia passes=t
+  center-mag=0/1.38778e-017/3.296388/1/-24.999
+  params=0.4965833/0.5061875/0.1/0
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000U22<123>z88WRF<123>zqa000<3>000
+  }
+
+tb2              {; Copyright (c) Paul W. Carlson, 1998
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=TwoBallsJulia passes=t
+  corners=-2/2/-1.5/1.5
+  params=0.765/0.445/0.1/0
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000U22<123>z88WRF<123>zqa000<3>000
+  }
+
+tb3              {; Copyright (c) Paul W. Carlson, 1998
+  reset=1920 type=formula formulafile=carlson.frm
+  formulaname=TwoBallsJulia passes=t
+  corners=-31.99/31.99/-23.9925/23.9925
+  params=0.765/0.445/0.05/0
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000U22<123>z88WRF<123>zqa000<3>000
+  }
+
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Fri Feb 20 16:12:21 1998)
+; X-From_: owner-fractint@lists.xmission.com Fri Feb 20 16:09 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id QAA13702;
+; 	Fri, 20 Feb 1998 16:09:13 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0y62To-0004fM-00; Fri, 20 Feb 1998 17:07:44 -0700
+; Date: Fri, 20 Feb 1998 18:05:49 -0600 (CST)
+; Message-Id: <199802210005.SAA03738@dfw-ix9.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Newton Mset Formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 3800
+; 
+; This formula is a Newton's Method solution of a 4th-order
+; polynomial using my 3D Stalks rendering method.  The image
+; it produces is different from most Newton fractals and is
+; quite pretty, I think.
+; 
+; The reason for the convergence test for early exit is so
+; that a background color can be used that is different from
+; the "inside" color so the little Mandy can be seen.  The
+; colors in the par produce an image with a solid black
+; background (which brings out the colors in the stalks),
+; but if you would like to see which areas converge to which
+; roots, change colors 244, 244, 246 and 247 in the colormap.
+; The roots of this polynomial are:
+;   c, -c, sqrt(-1/(c*c)), -sqrt(-1/(c*c))
+; 
+; I've called this formula Newt2_Stalks_Mset because it's the
+; second in a series of eight polynomials that I use for
+; Newton Msets.  I'll be posting the others from time to time.
+; 
+; Paul Carlson
+
+
+n2smset1           {; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt2_Stalks_Mset passes=1
+  center-mag=+0.53134409219500000/+0.84715435134499990/4508.94\
+  1/1/122 params=0.1/0/8/30/10000/100
+  float=y maxiter=2000 inside=255 outside=summ
+  colors=000z0f<28>O08z88<28>O00zW0<28>c40zz0<28>aG00zR<28>0C40z\
+  z<28>0CCGGz<28>00OfOz<28>I0K000<12>000zzz
+  }
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Mon Feb 23 23:10:39 1998)
+; X-From_: owner-fractint@lists.xmission.com Mon Feb 23 17:49 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id RAA14769;
+; 	Mon, 23 Feb 1998 17:49:03 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0y79TT-0000e3-00; Mon, 23 Feb 1998 18:47:59 -0700
+; Date: Mon, 23 Feb 1998 19:46:48 -0600 (CST)
+; Message-Id: <199802240146.TAA23577@dfw-ix4.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Another Newton Mset Par
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 2388
+
+; A few days ago I posted the formula "Newt2_Stalks_Mset" to this
+; list along with the par "n2smset1."  The par below is a zoom into
+; n2smset1 and uses a bit less colorful colormap.  The result is
+; a very detailed and, I think, pretty image.  I'm including the
+; formula file again (minus comments).
+; 
+; Paul Carlson
+
+n2smset2              { ; Copyright (c) Paul Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt2_Stalks_Mset passes=1
+  center-mag=+0.53130726096625680/+0.84717919854159360/4.00108\
+  5e+009/1/121.999
+  params=0.1/0/8/30/10000/100
+  float=y maxiter=2000 inside=255 outside=summ
+  colors=000z88<28>O00z88<28>O000zz<28>0CC0zz<28>0CCz88<28>Q11z\
+  88<28>Q110zz<28>0CC0zz<28>0CC000<12>000zzz
+  }
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Wed Feb 25 19:40:50 1998)
+; X-From_: owner-fractint@lists.xmission.com Wed Feb 25 17:21 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id RAA16332;
+; 	Wed, 25 Feb 1998 17:21:45 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0y7rz4-0003dg-00; Wed, 25 Feb 1998 18:19:34 -0700
+; Date: Wed, 25 Feb 1998 19:18:19 -0600 (CST)
+; Message-Id: <199802260118.TAA29658@dfw-ix14.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Newtons with rings
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 3439
+; 
+; Here's another of my favorite Newton formulas, this time
+; rendered using 3D Rings.  The two pars produce very
+; pretty, almost delicate images.  In both images, a
+; little Mandy appears to be suspended by chains.
+; 
+; I used passes=t in the pars because there is a lot of
+; background color (black) at 1000 iterations and there
+; are no islands of pixels that might be missed.
+; 
+; To change the background color, change color 252.
+; 
+; Paul Carlson
+
+
+n1rings1       { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt1_Rings_Mset passes=t
+  center-mag=+0.99883132158904500/+0.0483304822356094\
+  3/11411.46/1/-2.499
+  params=0.1/0/8/30/1e+020/1000
+  float=y maxiter=3000 inside=255 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz\
+  0<28>aG00zR<28>0C40zz<28>0CCGGz<28>00O000<12>000zzz
+  }
+
+n1rings2       { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt1_Rings_Mset passes=t
+  center-mag=+1046.85283978193200000/+0.00000000000000\
+  000/75.29715/1/90
+  params=0.1/0/8/30/1e+020/1000
+  float=y maxiter=3000 inside=255 outside=summ
+  colors=000fOz<28>I0Kz0f<28>O08z88<28>O00zW0<28>c40zz\
+  0<28>aG00zR<28>0C40zz<28>0CCGGz<28>00O000<12>000zzz
+  }
+
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Wed Mar  4 23:54:35 1998)
+; X-From_: owner-fractint@lists.xmission.com Wed Mar  4 23:53 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id TAA16995;
+; 	Wed, 4 Mar 1998 19:10:18 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0yAR2Q-0000WB-00; Wed, 4 Mar 1998 20:09:38 -0700
+; Date: Wed, 4 Mar 1998 21:08:28 -0600 (CST)
+; Message-Id: <199803050308.VAA17777@dfw-ix1.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Carlson-Gallet formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 4135
+; 
+; A couple days ago I sent this formula and the first par to
+; Sylvie because I wasn't satisfied with the colormap I was
+; using and I wanted to see what the image would look like
+; after Sylvie worked her magic on it.  Sylvie not only sent
+; back five colormaps but also added several optimizations
+; to the formula.  Not wanting Sylvie's other four colormaps
+; to go unused, I've included four more pars that zoom into
+; different areas.
+; 
+; Paul Carlson
+
+
+n3atnm01           { ; Parameters, coordinates by Paul Carlson
+		       ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt3_Atan_Mset passes=t
+  center-mag=+0.31671548334072320/+0.00018531398540474/60613\
+  3.4/1/-157.5
+  params=0.05/0 float=y maxiter=2000 inside=253 outside=summ
+  colors=000zzz<78>FFFwzw<19>djfciebhdbhdagc`gc<2>_eaZd`Yc_Xc\
+  _XbZ<4>T_WSZVSZVSZV<10>PWRPVQPVQOUPOUP<5>LRKKQKKQJJPJJPI<7>E\
+  IBEIADH9CH8BG7BG6AF5EF0<30>`XJaYKaYKaYL<28>nj_nj_ok`ola<12>x\
+  uk669000<12>000
+  }
+
+n3atnm02           { ; Parameters, coordinates by Paul Carlson
+		       ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt3_Atan_Mset passes=t
+  center-mag=-0.29314992560658230/+1.76018641725339800/1124.20\
+  9/1/-90
+  params=0.05/0 float=y maxiter=1000 inside=253 outside=summ
+  colors=855wwp<27>piPpiOohMngL<13>fU7eT6eS5eS5<29>O31N20O41N20\
+  <8>P62Q72Q72R82R82<16>gQ5hR5iS4<3>mW3nX2nX2nY2<6>rc0rc0rb0<4>\
+  pZ1pY1oX2nX2<11>aL4`K4ZI3<7>P50CA6<78>tts000<10>J33P84P73O52
+  }
+
+n3atnm03           { ; Parameters, coordinates by Paul Carlson
+		       ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt3_Atan_Mset passes=t
+  center-mag=+0.42728883711880160/+0.00000000000000012/8.598042\
+  e+008/1/-90
+  params=0.05/0 float=y maxiter=1000 inside=253 outside=summ
+  colors=111zll<29>lKUkJTkJTjJS<45>A05www<78>ADIADIBEJ<77>www000\
+  987<10>111zmmzmm
+  }
+
+n3atnm04           { ; Parameters, coordinates by Paul Carlson
+		       ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt3_Atan_Mset passes=t
+  center-mag=+0.73440407174529280/-0.00000000000000085/34056.5\
+  8/1/-90
+  params=0.05/0 float=y maxiter=1000 inside=253 outside=summ
+  colors=442zzn<29>voTunSunStmS<45>VNAxxn<30>imbimbhlagla<44>DN\
+  Dxxn<30>imbimbhlagla<44>DND000<13>000
+  }
+
+n3atnm05           { ; Parameters, coordinates by Paul Carlson
+		       ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt3_Atan_Mset passes=t
+  center-mag=1.08545/0.200391/70.33726/1/16.299
+  params=0.05/0 float=y maxiter=1000 inside=253 outside=summ
+  colors=038rrz<78>HJSvvy<78>QHIQHIQIJ<77>vvy000<13>000
+  }
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Fri Mar  6 23:58:05 1998)
+; X-From_: owner-fractint@lists.xmission.com Fri Mar  6 23:54 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id RAA13479;
+; 	Fri, 6 Mar 1998 17:56:05 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0yB8ES-0001DF-00; Fri, 6 Mar 1998 18:16:56 -0700
+; Date: Fri, 6 Mar 1998 19:15:50 -0600 (CST)
+; Message-Id: <199803070115.TAA29045@dfw-ix10.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Texture and Inflation Formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 2687
+; 
+; This formula and pars explore four areas of the classic
+; Mandelbrot set using a rendering method that creates, in
+; pars mndatm01, 03 and 04, images with a nice "texture"
+; that almost make you want to run your fingers over them.
+; Par mndatm02 creates an image that looks inflated (makes
+; you want to stick a pin in it).
+; 
+; Paul Carlson
+
+mndatm01	{; Copyright (c) Paul W. Carlson, 1998
+		 ; Nice texture.
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Mand_Atan_Mset passes=t
+  center-mag=-0.81638668446488240/+0.19987647824278850/306\
+  89.28/1/-170 params=1.5/0/2/125
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+mndatm02	{; Copyright (c) Paul W. Carlson, 1998
+		 ; The "inflated" look.
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Mand_Atan_Mset passes=t
+  center-mag=+0.30078202224390480/+0.02039060482684493/2638\
+  81.6/1/3.199 params=0.8/0/2/125
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+mndatm03           { ; Copyright (c) Paul W. Carlson, 1998
+		     ; Another nice texture.
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Mand_Atan_Mset passes=t
+  center-mag=-1.27902461721017400/+0.07031146780659604/2318\
+  6.32/1/156.5 params=1.5/0/2/125
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+mndatm04           { ; Copyright (c) Paul W. Carlson, 1998
+		     ; Still another nice texture.
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Mand_Atan_Mset passes=t
+  corners=-1.429323736733/-1.4293206462961/0.001621210035598\
+  3/0.001622949268712/-1.4293234590076/0.0016208397351079
+  params=2/0/2/125 float=y maxiter=2000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Sat Mar  7 15:14:03 1998)
+; X-From_: owner-fractint@lists.xmission.com Sat Mar  7 15:11 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id PAA24041;
+; 	Sat, 7 Mar 1998 15:11:02 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.73 #4)
+; 	id 0yBSj5-0007dm-00; Sat, 7 Mar 1998 16:09:55 -0700
+; Date: Sat, 7 Mar 1998 17:08:41 -0600 (CST)
+; Message-Id: <199803072308.RAA01309@dfw-ix1.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) 5th-order Newton Formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 3021
+; 
+; Here's a formula for a 5th-order Newton Mset and three pars
+; for which Sylvie Gallet kindly supplied the colormaps.
+; 
+; Paul Carlson
+
+
+n5atnm01           {; Parameters, coordinates by Paul Carlson 
+                    ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt5_Atan_Mset passes=t
+  center-mag=+0.00000000000000000/+0.31491361205028330/3913676/1/180
+  params=0.01/0 float=y maxiter=2000 inside=253 outside=summ
+  colors=000A00<22>SD9TE9UFAUGAVHA<21>reMwww<48>555F00<15>YHB_JC_KC<3\
+  0>zt`rrr<48>AAAK00<48>wmU000<3>000 cyclerange=1/250
+  }
+
+n5atnm05           {; Parameters, coordinates by Paul Carlson 
+                    ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt5_Atan_Mset passes=t
+  center-mag=-0.00000000000000000/+0.17156717356342680/60130.88/1/180
+  params=0.01/0 float=y maxiter=2000 inside=253 outside=summ
+  colors=000zzz<48>DDDzrZ<47>L71K50K62<22>VMSVNTWOVXPW<21>xuuzwwzt`<3\
+  0>_LEZJDYICYHCXGBWFA<12>K000AA<22>IQTJRULSV<23>rwz000<3>000
+  }
+
+n5atnm06           {; Parameters, coordinates by Paul Carlson 
+                    ; Colormap by Sylvie Gallet
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Newt5_Atan_Mset passes=t
+  center-mag=-0.00000000000000004/+0.14499911078052670/1162187/1/180
+  params=0.01/0 float=y maxiter=2000 inside=253 outside=summ
+  colors=000A00<22>SD9TE9UFAUGAVHA<21>reMwww<48>555F00<15>YHB_JC_KC<3\
+  0>zt`rrr<48>AAAK00<48>wmU000<3>000 cyclerange=1/250
+  }
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Tue Mar 10 19:07:12 1998)
+; X-From_: owner-fractint@lists.xmission.com Tue Mar 10 19:04 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id TAA09332;
+; 	Tue, 10 Mar 1998 19:04:07 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.82 #1)
+; 	id 0yCbne-0007m5-00; Tue, 10 Mar 1998 20:03:22 -0700
+; Date: Tue, 10 Mar 1998 21:02:13 -0600 (CST)
+; Message-Id: <199803110302.VAA15633@dfw-ix2.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Modified Continued Fraction Formula
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 4309
+
+comment {; Modified continued fraction formula
+This formula uses the Mandelbrot set equation in a modified
+continued fraction, rendered with the Atan method. The first
+par gives an overall image of the Mset using the "ident"
+function (ie, no function).  The little "dimples" in these
+images are interesting ares to zoom into, each containing a
+little Mandy.
+
+Paul Carlson
+}
+
+
+cnfrfnm1           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=ident passes=t
+  center-mag=-0.363636/0/0.6666667 params=2/0/1/0/2/125 float=y
+  maxiter=300 inside=253 outside=summ
+  colors=000zW0<93>d50d50d50d50d50d50<24>d50GGz<123>00O000<3>000
+  }
+
+cnfrfnm2           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=tan passes=t
+  center-mag=-0.31838046162856750/+0.00000000000000000/165.071\
+  4/1/-90 params=0.3/0/1/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zzz<123>OOOzVz<123>C0C000<3>000
+  }
+
+cnfrfnm3	   { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=tan passes=t
+  center-mag=-0.75447881955018380/+0.00000000000000001/28161\
+  8.3/1/-90 params=0.8/0/1/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zVz<123>C0Czzz<123>OOO000<3>000
+  }
+
+cnfrfnm4	   { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=tan passes=t
+  center-mag=-2.36993840473094200/+0.00000000000000000/29624\
+  3.6/1/-90 params=2.1/0/1/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zz0<123>aG00W2<123>080000<3>000
+  }
+
+cnfrfnm5	   { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=tan passes=t
+  center-mag=-2.23637362978152600/-0.00000000000000000/2.997\
+  763e+009/1/-90 params=2/0/1/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zW0<93>d50d50d50d50d50d50<24>d50GGz<123>00O000<3>000
+  }
+
+cnfrfnm6	   { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=sqrt passes=t
+  center-mag=-0.20224742875980910/+0.04306772560268265/2.13079\
+  7e+008/1/-109.998
+  params=1.4/0/1/0/2/125 float=y maxiter=1000 inside=253
+  outside=summ colors=801sF_<123>C02Mov<123>HKS000<3>000
+  }
+
+cnfrfnm7	   { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=ident passes=t
+  center-mag=-2.30959242851517700/+0.00000000000000221/3.30018\
+  2e+009/1/-90 params=2/0/1/0/2/125
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=000zqa<123>WRFz88<123>O00000<3>000
+  }
+
+cnfrfnm8           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=CnFrc_Fnc_Mset function=sin passes=t
+  center-mag=-0.519429/5.20417e-018/98.03922/1/-90
+  params=1.3/0/1/0/2/125
+  float=y maxiter=300 inside=253 outside=summ
+  colors=000zz0<123>aG0zzz<123>VVV000<3>000
+  }
+
+
+
+; From: "Peter Gavin" <pgavin@mindspring.com>
+; 
+;     -n (+/-) sqrt(n^2 + 4m)
+; y = -----------------------
+;                2
+; 
+; This gives you the exact answer for y, without repeating the iteration of
+; m/(n+m/...).  Therefore, it's much faster.  I hope this helps :)
+; 
+; Pete,
+; 
+; >This gives you the exact answer for y, without repeating the iteration of
+; >m/(n+m/...).  Therefore, it's much faster.
+; 
+; Thanks - I appreciate the suggestion.  However, it can't be used to
+; reproduce the images created by my formula.  I wrote this formula as
+; an extension of my playing around with Taylor series of transcendental
+; functions.  And, just as log(z^2+1) + c does not produce an image with the
+; little "dimples" that make it interesting while the first few terms of the
+; Taylor series of log(z^2+1) + c does, the same is true with continued
+; fractions.  Using your exact solution produces entirely different
+; images that lack the small areas of discontinuity which contain
+; baby Mandelbrots in highly symmetrical (usually) settings.
+; 
+; Paul Carlson
+
+
+; Received: by mail.san.rr.com for ehill1
+;  (with Cubic Circle's cucipop (v1.21 1997/08/10) Fri Mar 13 01:04:54 1998)
+; X-From_: owner-fractint@lists.xmission.com Fri Mar 13 01:04 PST 1998
+; Received: from lists.xmission.com (lists.xmission.com [198.60.22.7])
+; 	by mail-atm.san.rr.com (8.8.7/8.8.8) with SMTP id SAA00709;
+; 	Thu, 12 Mar 1998 18:33:03 -0800 (PST)
+; Received: from domo by lists.xmission.com with local (Exim 1.82 #1)
+; 	id 0yDKGP-0005Tg-00; Thu, 12 Mar 1998 19:32:01 -0700
+; Date: Thu, 12 Mar 1998 20:30:53 -0600 (CST)
+; Message-Id: <199803130230.UAA28783@dfw-ix4.ix.netcom.com>
+; From: pjcarlsn@ix.netcom.com (Paul and/or Joyce Carlson)
+; Subject: (fractint) Some very colorful images
+; To: fractint@xmission.com
+; Sender: owner-fractint@lists.xmission.com
+; Precedence: bulk
+; Reply-To: fractint@lists.xmission.com
+; Content-Type: text
+; Content-Length: 3620
+; 
+; This formula and pars produce some very colorful images.
+; 
+; Paul Carlson
+
+
+fwwfcm01           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Fnww_Fnc_Mset function=sin/sqr passes=t
+  center-mag=-0.87756157353887240/+0.94256597781931740/52.4\
+  8149/1/-160 params=16/0/8/30
+  float=y maxiter=500 inside=253 outside=summ
+  colors=000ph0<5>zz0<12>aG00C4<15>0zR<12>0C40CC<15>0zz<12>0CC0\
+  0O<14>FFwGGzFFw<11>00OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<13>O0\
+  8O00<15>z88<12>O00c40<14>xU0zW0yU0<11>c40aG0<8>oe0000<13>000
+  }
+
+fwwfcm02           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Fnww_Fnc_Mset function=sin/sqr passes=t
+  center-mag=-0.87736374111754810/+0.94286409113598650/155.2707/1\
+  /-159.999 params=16/0/8/30
+  float=y maxiter=500 inside=253 outside=summ
+  colors=000ph0<5>zz0<12>aG00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<\
+  14>FFwGGzFFw<11>00OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<13>O08O00<1\
+  5>z88<12>O00c40<14>xU0zW0yU0<11>c40aG0<8>oe0000<13>000
+  }
+
+fwwfcm03           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Fnww_Fnc_Mset function=sin/sqr passes=t
+  center-mag=+0.32604500552212270/+1.40521485976515300/58757.16/1/\
+  127.5 params=16/0/8/30
+  float=y maxiter=500 inside=253 outside=summ
+  colors=000ph0<5>zz0<12>aG00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<\
+  14>FFwGGzFFw<11>00OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<13>O08O00<1\
+  5>z88<12>O00c40<14>xU0zW0yU0<11>c40aG0<8>oe0000<13>000
+  }
+
+fwwfcm04           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Fnww_Fnc_Mset function=sinh/sqr passes=t
+  center-mag=+1.69753754995537700/+1.89430853699253900/127634.3/1/85
+  params=16/0/8/30
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=000i55<6>z88<12>O00c40<14>xU0zW0yU0<11>c40aG0<15>zz0<12>aG\
+  00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<14>FFwGGzFFw<11>00OSA`<14>\
+  eNxfOzeNw<10>K2OO08<15>z0f<13>O08O00<7>g44000<13>000
+  }
+
+fwwfcm05           { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=carlson.frm
+  formulaname=Fnww_Fnc_Mset function=cosh/sqr passes=t
+  center-mag=-0.72778379323819650/+0.25436409455403570/2546.473/1/-1\
+  53.2 params=16/0/8/30
+  float=y maxiter=500 inside=253 outside=summ
+  colors=000ph0<5>zz0<12>aG00C4<15>0zR<12>0C40CC<15>0zz<12>0CC00O<14>\
+  FFwGGzFFw<11>00OSA`<14>eNxfOzeNw<10>K2OO08<15>z0f<13>O08O00<15>z88<\
+  12>O00c40<14>xU0zW0yU0<11>c40aG0<8>oe0000<13>000
+  }
+
+
+
