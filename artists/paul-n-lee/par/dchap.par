@@ -1,0 +1,126 @@
+Newsgroups: sci.fractals
+Path: unixg.ubc.ca!vanbc.wimsey.com!cyberstore.ca!math.ohio-state.edu!cs.utexas.edu!news.sprintlink.net!news.indirect.com!bud.indirect.com!shodan
+From: shodan@bud.indirect.com (David Chapman)
+Subject: Deep Zoom
+Message-ID: <D9uMBM.8F6@indirect.com>
+Sender: usenet@indirect.com (Internet Direct Admin)
+Organization: Internet Direct 
+Date: Thu, 8 Jun 1995 09:57:22 GMT
+Lines: 18
+ 
+Deeeeep1           {
+  reset=1900 type=mandel
+  corners=-1.7471034487776498356715505466692855842527314174078664159188484\
+  453322955671377882079268084990843871995884367210116319726161304641292968\
+  8447150263728676221504973564058781036/-1.7471034487776498356715505466692\
+  855842527314174078664159188484453322955671377882079268084990843871995884\
+  367210116319726161304641292968844715026372867622150497356405877438/0.003\
+  274865225476010691075642659489443708111304041784427126362849392651659138\
+  709947187402300728126683405026066742896770950505048657305586876183858918\
+  053637756752137432014269/0.003274865225476010691075642659489443708111304\
+  041784427126362849392651659138709947187402300728126683405026066742896770\
+  950505048657305586876183858918053637756752137432064144 params=0/0
+  float=y maxiter=9000
+  colors=CCCOsO<14>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20\
+  >ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>\
+  CsECsCEsE<3>MsM
+  }
+ 
+
+Path: unixg.ubc.ca!news.bc.net!rover.ucs.ualberta.ca!tribune.usask.ca!decwrl!hookup!news.mathworks.com!news.ultranet.com!news.sprintlink.net!gryphon.phoenix.net!news
+From: twegner@phoenix.net
+Newsgroups: sci.fractals
+Subject: Re: Deep Zoom
+Date: Thu, 08 Jun 95 18:31:56 CDT
+Organization: Phoenix Data Systems
+Lines: 43
+Message-ID: <NEWTNews.2642.802655149.twegner@dialinxx.phoenix.net>
+References: <D9uMBM.8F6@indirect.com>
+NNTP-Posting-Host: dial7.phoenix.net
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Newsreader: NEWTNews & Chameleon -- TCP/IP for MS Windows from NetManage
+ 
+ 
+Below is my version of David Chapman's deep zoom. I converted it to center-mag
+and added some comments attributing it to David. Center-mag is better
+because:
+ 
+1. takes less space (only two high precision numbers instead of four or six)
+2. makes the magnification obvious
+3. makes it very easy to copy PAR entry and generate the same spot with
+   lower magnifications (just edit the mag exponent).
+4. removes aspect ratio ambiguity (with corners it is hard to tell if aspect
+   is right)
+ 
+A question I have is whether or not this image requires this high 
+magnification or whether it is inside a "whirlpool of self-similarity". The
+only way I know to answer is to generate "super-zooms" at lower magnification 
+and see if the pattern repeats. Any comments on this?
+ 
+A great group project would be to zoom into this spot (or other deep zoom spot) 
+and make an animation. If folks are interested I could make a big batch file
+and assign out images. The final images could be assembled into an flc file
+using Dave's Targa Animator. 
+ 
+Does anyone know if Xfract 300 works with this PAR?
+ 
+Tim 
+ 
+Deeeeep2           { ; Thu, 8 Jun 1995 09:57:22 GMT
+		     ; shodan@bud.indirect.com (David Chapman)
+                     ; Converted to center-mag by Tim Wegner
+  reset=1920 type=mandel
+  center-mag=-1.7471034487776498356715505466692855842527314174078664159188\
+  484453322955671377882079268084990843871995884367210116319726161304641292\
+  9688447150263728676221504973564058777708/0.00327486522547601069107564265\
+  948944370811130404178442712636284939265165913870994718740230072812668340\
+  5026066742896770950505048657305586876183858918053637756752137432039206/4\
+  .010025e+166 params=0/0 float=y maxiter=9000
+  colors=CCCOsO<14>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20\
+  >ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>\
+  CsECsCEsE<3>MsM
+  }
+ 
+ 
+ 
+
+Path: unixg.ubc.ca!vanbc.wimsey.com!cyberstore.ca!math.ohio-state.edu!howland.reston.ans.net!news.sprintlink.net!gryphon.phoenix.net!news
+From: twegner@phoenix.net
+Newsgroups: sci.fractals
+Subject: Re: Deep Zoom
+Date: Thu, 08 Jun 95 21:55:26 CDT
+Organization: Phoenix Data Systems
+Lines: 25
+Message-ID: <NEWTNews.16031.802666707.twegner@dialinxx.phoenix.net>
+References: <NEWTNews.25878.802666297.twegner@dialinxx.phoenix.net>
+NNTP-Posting-Host: dial59.phoenix.net
+Mime-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Newsreader: NEWTNews & Chameleon -- TCP/IP for MS Windows from NetManage
+ 
+ 
+ 
+> Below is a *much* shallower image that looks strikingly similar to the deep 
+> zoom that Dave posted. 
+ 
+Somehow the PAR didn't make it. Here is is:
+ 
+Deeeeep_12         { ; Much shallower zoom similar to Dave 
+                     ; Chapman's Deeeeep2
+  reset=1920 type=mandel
+  center-mag=-1.74710344877922500/+0.00327486522510012/2.228529e+012/1/70.\
+  013/-0.013 params=0/0 float=y maxiter=9000
+  colors=CCCKsK<16>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20\
+  >ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>\
+  CsECsCEsEGsGIsI
+  }
+ 
+Tim Wegner
+ 
+ 
+ 
+ 
+ 
+ 
+ 

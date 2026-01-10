@@ -1,0 +1,382 @@
+Path: unixg.ubc.ca!vanbc.wimsey.com!scipio.cyberstore.ca!math.ohio-state.edu!uwm.edu!hookup!olivea!uunet!mr.net!dawn.mmm.com!newsdist.tc.umn.edu!news.d.umn.edu!ub.d.umn.edu!dfinton
+From: dfinton@ub.d.umn.edu (david finton)
+Newsgroups: sci.fractals
+Subject: A deep-zoom fractal contest?
+Date: 15 Mar 1995 03:49:19 GMT
+Organization: University of Minnesota, Duluth
+Lines: 29
+Message-ID: <3k5o40INNo1g@news.d.umn.edu>
+NNTP-Posting-Host: 131.212.134.2
+X-Newsreader: TIN [version 1.2 PL2]
+ 
+I've been fooling around with the deep zooming mode available on Fractint 
+v 19.0 and I love it.  I've been able to view pictures that I couldn't 
+have possibly seen on my computer before I got it.  While it takes a 
+little while longer to calculate the images, they are well worth it.
+ 
+Tim Wagner proposed a deep zooming fractal contest.  I want to submit 
+the following .par file to the contest.  It's not a very deep picture (It 
+took only two hours to calculate on a Pentium), but I like it and I want 
+to share it anyway.  Here it is:
+ 
+---- Cut Here ---------------------------------------------------------
+ 
+Flower { ; Swirls within swirls, ad infinitum
+                     ; (When is anything in the Mandelbrot set NOT
+                     ; ad infinitum?)
+  reset=1900 type=mandel passes=t
+  
+corners=-1.74731064714761698304/-1.74731064714761683396/-5.5936523e-17/5\
+  .5936523e-17 params=0/0 float=y maxiter=20000 inside=0 logmap=-1050
+  symmetry=xaxis
+  
+colors=000<5>I00L00O20<5>fE0jG0kI0<14>zz0<7>W00<4>C00<9>z00<16>000<7>00z\
+  <62>W51X60X60X70<59>yxFyyFzzGzzH<44>zzz0z0z00
+ 
+  }
+ 
+----- Cut Here -----------------------------------------------------------
+ 
+Enjoy!
+
+Path: unixg.ubc.ca!nntp.cs.ubc.ca!newsxfer.itd.umich.edu!agate!tcsi.tcs.com!uunet!in1.uu.net!ankh.iia.org!birdseh
+From: birdseh@iia.org (Henry Birdseye)
+Newsgroups: sci.fractals
+Subject: 10^233 magnification
+Date: 5 Jul 1995 00:26:50 GMT
+Organization: International Internet Association.
+Lines: 29
+Message-ID: <3tcm8a$koe@ankh.iia.org>
+NNTP-Posting-Host: iia.org
+X-Newsreader: TIN [version 1.2 PL2]
+ 
+Here is a huge magnification .par file I've been zooming for a while.
+ 
+Cut here ----------------------
+233                { ; mag = 10^233
+                     ; This takes a while
+                     ; Henry Birdseye - birdseh@iia.org
+                     ; Mail me your deep .par files
+  reset=1920 type=mandel passes=2
+  center-mag=-0.7320299298281361984552930152710573055695167223049229392827\
+  649564115771810297845444840812404043441296278932140339697145134072822677\
+  086003318252081469770916042159178755967032000445188081331280125432690897\
+  715003022308347206188135908325909287/0.362254943051205664189634244517662\
+  428237917023435025634249637350403140930892080222768288921485422473252016\
+  083128169244094674454003420702120965466655270667981376175896195517699326\
+  5252623488386153939460345614941145789560489349509360628096195/1.306558e+\
+  233 params=0/0 float=y maxiter=999990
+  colors=000zbO<3>zv4wz0<4>7z00z3<4>0zs3wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z\
+  9<4>0zx7sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0\
+  z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2x<5>zYT
+  }
+------------------------- END
+ 
+Let's see some more deep zoomers!
+-- Henry B.
+ 
+ 
+
+Path: unixg.ubc.ca!vanbc.wimsey.com!news.cyberstore.ca!math.ohio-state.edu!howland.reston.ans.net!news.sprintlink.net!gryphon.phoenix.net!news
+From: Twegner@phoenix.net (Tim Wegner)
+Newsgroups: sci.fractals
+Subject: Re: 10^233 magnification
+Date: Thu, 06 Jul 1995 15:08:29 GMT
+Organization: Phoenix Data Systems
+Lines: 86
+Message-ID: <3tgu9h$5ag@gryphon.phoenix.net>
+References: <3tcm8a$koe@ankh.iia.org>
+Reply-To: twegner@phoenix.net
+NNTP-Posting-Host: dial56.phoenix.net
+X-Newsreader: Forte Free Agent v0.55
+ 
+birdseh@iia.org (Henry Birdseye) wrote:
+ 
+>Here is a huge magnification .par file I've been zooming for a while.
+ 
+This is an impressive accomplishment, and I commend you for your diligence.
+However, you too have now joined the "Deep Zoom Whirlpools of Similarity
+Victims Club", of which David Chapman and I are charter members,
+ 
+The problem with relatively blind deep zooming is that there is a danger of
+creating deep zoom images that are essentially similar to much shallower
+zooms. The appeal of deep zooming is at least partly the hope of discovering
+some new images not visible at shallower depths. If this is your motivation,
+then you must strive to avoid the dreaded "whirlpools of self-similarity"
+that are legion in the Mandelbrot. The only technique I know for avoiding
+this horrible fate is to search for baby Mandelbrots and leap from baby
+Mandelbrot to baby Mandelbrot while zooming. This technique is unfortunately
+much more time consuming than the easier (but more dangerous for those
+fearing whirlpools) technique of zooming into any "fractally" looking area.
+ 
+My procedure for testing the condition of being trapped in such a whirlpool
+is as follows.  First, I generate the deep zoomed image at as low a
+resolution as possible to save time, requiring only enough detail to see the
+main structure. Then I make a copy of the deep zoom PAR entry in center-mag
+form, and edit the magnification to bring it within range of normal double
+precision (usually about e+14 or so). I generate the much-shallower-zoomed
+image, and look for structures resembling the deep zoom. After framing the
+structure as accurately as possible, I then rotate the colors to get an
+approximate match. This whole procedure usually takes only a few minutes
+after generating the deep zoom, which is the sloweest step. 
+ 
+Such quick success at finding similar structures at such vastly different
+magnifications (greatly exceeding the ratio of the size of the visible
+Universe to tiny sub-atomic quantum effects which is a mere 1.0e+61) is
+pretty good evidence of self-similarity.
+ 
+The results for the "233" zoom are as follows. The PAR below includes a copy
+of your deep zoom as well as my shallower zoom. I have only tried to match
+the framing and colors enough to convince myself of self-similarity; I'm sure
+a better match could be achieved with a little care.
+ 
+I challenge Henry and other sci.fractals readers to produce a zoom this deep
+(e+233) that is *not* a self-similar copy of a much shallower image at the
+same location.
+ 
+Keep on deep zoomin'!
+ 
+Tim
+ 
+ 
+233                { ; mag = 10^233
+                     ; This takes a while
+                     ; Henry Birdseye - birdseh@iia.org
+                     ; Mail me your deep .par files
+  reset=1920 type=mandel passes=2
+  center-mag=-0.7320299298281361984552930152710573055695167223049229392827\
+  649564115771810297845444840812404043441296278932140339697145134072822677\
+  086003318252081469770916042159178755967032000445188081331280125432690897\
+  715003022308347206188135908325909287/0.362254943051205664189634244517662\
+  428237917023435025634249637350403140930892080222768288921485422473252016\
+  083128169244094674454003420702120965466655270667981376175896195517699326\
+  5252623488386153939460345614941145789560489349509360628096195/1.306558e+\
+  233 params=0/0 float=y maxiter=999990
+  colors=000zbO<3>zv4wz0<4>7z00z3<4>0zs3wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z\
+  9<4>0zx7sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0\
+  z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<3>0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0g\
+  Z0Sh0Jn08u20x<6>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2x<5>zYT
+  }
+ 
+233-shallow        { ; Arrgggh! A much shallower copy of Henry Birdseye's
+                     ; "233" image. Self-similarity strikes again.
+                     ; Tim Wegner
+  reset=1920 type=mandel 
+  center-mag=-0.7320299298280675908/0.3622549430511640843/1.1816e+014
+  params=0/0 float=y maxiter=999990 
+  colors=000Q0`<3>v04z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Jn08u20x<6>v0\
+  4z20<5>zm0zu0xz0<3>Tz0Lz0Fy2<4>2jW0bb0Sh0Eq03x60t<6>z00z60<6>zy0tz0<4>Hz\
+  0Ex5<4>0gZ0Ye0Nk0Eq03x60t3wz<6>w3zz2x<5>zYTzbOzgJzlEzq9zv4wz0<4>7z00z3<4\
+  >0zs3wz<6>w3zz2x<8>zlEzt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0z<7>zeLzjGzn\
+  Czt6zy1qz0<4>2z00z9<4>0zx7sz<4>kFzs7zz0z<7>zeLzjGznCzt6zy1qz0<4>2z00z9<3\
+  >0zn60t<6>z00z60<6>zy0tz0<4>Hz0Ex5<4>0gZ0Sh0Jn08u20xA0pI0h
+  }
+ 
+ 
+ 
+
+Path: unixg.ubc.ca!news.bc.net!info.ucla.edu!library.ucla.edu!agate!news.duke.edu!godot.cc.duq.edu!newsfeed.pitt.edu!dsinc!netnews.upenn.edu!mipg.upenn.edu!dewey
+From: dewey@mipg.upenn.edu (Dewey Odhner)
+Newsgroups: sci.fractals
+Subject: Re: 10^233 magnification
+Date: 10 Jul 1995 13:08:41 GMT
+Organization: University of Pennsylvania
+Lines: 15
+Distribution: world
+Message-ID: <3tr8op$gk1@netnews.upenn.edu>
+References: <3tcm8a$koe@ankh.iia.org> <3tgu9h$5ag@gryphon.phoenix.net>
+NNTP-Posting-Host: mipgsun.mipg.upenn.edu
+ 
+ 
+In article <3tgu9h$5ag@gryphon.phoenix.net>, Twegner@phoenix.net (Tim Wegner) writes:
+ 
+|> I challenge Henry and other sci.fractals readers to produce a zoom this deep
+|> (e+233) that is *not* a self-similar copy of a much shallower image at the
+|> same location.
+ 
+Horiz.Hold         { ; by Dewey Odhner. Public domain.
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+  999999999999999999999999999999999999999999999999999999999999996416785918\
+  148134530430458843562012392471211940405947277366380516671161895619483871\
+  9021305389817240974903756614325041160443974/0/3.3e+242
+  params=0/0 float=y maxiter=3000 inside=0
+  }
+
+Path: unixg.ubc.ca!info.ucla.edu!library.ucla.edu!agate!howland.reston.ans.net!news.sprintlink.net!gryphon.phoenix.net!news
+From: Twegner@phoenix.net (Tim Wegner)
+Newsgroups: sci.fractals
+Subject: Re: 10^233 magnification
+Date: Tue, 11 Jul 1995 04:35:33 GMT
+Organization: Phoenix Data Systems
+Lines: 24
+Message-ID: <3tsv37$boe@gryphon.phoenix.net>
+References: <3tcm8a$koe@ankh.iia.org> <3tgu9h$5ag@gryphon.phoenix.net> <3tr8op$gk1@netnews.upenn.edu>
+Reply-To: twegner@phoenix.net
+NNTP-Posting-Host: 199.3.234.129
+X-Newsreader: Forte Free Agent 1.0.82
+ 
+dewey@mipg.upenn.edu (Dewey Odhner) wrote:
+ 
+ 
+>In article <3tgu9h$5ag@gryphon.phoenix.net>, Twegner@phoenix.net (Tim Wegner) writes:
+ 
+>|> I challenge Henry and other sci.fractals readers to produce a zoom this deep
+>|> (e+233) that is *not* a self-similar copy of a much shallower image at the
+>|> same location.
+ 
+>Horiz.Hold         { ; by Dewey Odhner. Public domain.
+>  reset=1920 type=mandel
+>  center-mag=-1.9999999999999999999999999999999999999999999999999999999999\
+>  999999999999999999999999999999999999999999999999999999999999996416785918\
+>  148134530430458843562012392471211940405947277366380516671161895619483871\
+>  9021305389817240974903756614325041160443974/0/3.3e+242
+>  params=0/0 float=y maxiter=3000 inside=0
+>  }
+This sure is weird. It looks like a bug, but I have investigated a little and
+can't see what it is. Maybe it is for real! If anyone has the time and
+computer power to make a 640x480 image of this I'd like to see it.
+ 
+Tim
+ 
+ 
+
+Path: unixg.ubc.ca!news.bc.net!news.uoregon.edu!newsfeed.internetmci.com!news.mathworks.com!zombie.ncsc.mil!simtel!daffy!uwvax!newssinet!news.u-tokyo.ac.jp!wnoc-tyo-news!wnoc-sfc-news!wnoc-kyo-news!kuis-news!kudpc!sakura.kudpc.kyoto-u.ac.jp!a51511
+From: a51511@sakura.kudpc.kyoto-u.ac.jp (unknown)
+Newsgroups: sci.fractals
+Subject: Re:10^233 magnification
+Date: 21 Jul 95 09:36:44
+Organization: Fukui-nct,Fukui Pref.,Sabae,JAPAN.
+Lines: 56
+Distribution: world
+Message-ID: <A51511.95Jul21093644@sakura.sakura.kudpc.kyoto-u.ac.jp>
+NNTP-Posting-Host: sakura.kudpc.kyoto-u.ac.jp
+ 
+A
+ Dewey Odhner writes
+>> Horiz.Hold  {: by Dewey Odhner. Public domain
+>> reset=1920 type=mandel
+ 
+ My theory for the series converging to c=-2.0 can explain 
+Dewey Odhner's picture.
+ < Series of small M ( with period m=3,4,5,...) converging
+   to c=-2.0 >
+ For small M with period m ( m>>1), the location c(m) and the size
+d(m) are given by
+     c(m)=-2.0+eps(m)=-2.0+(1.5*pi^2/4^m)+...
+     d(m)=(6*pi^2/16^m)+... 
+respectively.
+ The value of c(m) for large m can easily be calculated by taking 
+the above principal value as a initial value.
+ Dewey Odhner's picture locates at relative Xctr=0.68 position,
+i.e. near the casp point of the small M. The period of this small
+M is m=202.
+ The magnification, which makes the small M to the size of Full
+M, is given by 0.5/d(m).
+ The relative branch length L(m,k) of the branch, which has the
+direction of (pi/2^k)*odd ( which is distorted by the cardioid 
+like shape very near M ) and is normalized by d(m), is given by
+     L(m,0)=eps(m)/d(m)=4^(m-1)
+     L(m,k)=sqrt(L(m,k-1)), k=1,2,... .
+ Therefore, the every relative branch length become longer as m 
+increases.
+ From these results, my theory can say: " The number of (additional)
+branches at the same coressponding area near small M is proportional
+to m."
+ This can explain the reason that many horizontal branches appear near
+the casp point of small M for large m.
+ I calculated many pictures near the small M with period m=25,50,100,
+200, ( and 400). These pictures support my theory.
+ For the case of M=400, per file is made, but it is not calculated 
+yet, because it takes very long time.
+ The following is the par file of small M with period m=25.
+Zoom areas you want. I hope you can enjoy pictures and my theory.
+Figures can be calculated in shoter time , though number of branches is 
+about 1/8 compared with the case of m=202.
+ 
+m25a1              { : by Minoru Morikawa. small M with m=25.
+  reset=1900 type=mandel
+  center-mag=-1.99999999999998685104553996190604824145973215854934\
+  /0.0/1.07e+028/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+m25horz            { : by Minoru Morikawa. Horiz. Lines
+  reset=1920 type=mandel passes=t
+  center-mag=-1.999999999999986851045539961874934/2.250452e-45/3.032787e+0\
+  29 params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+ 
+i
+
+Path: unixg.ubc.ca!info.ucla.edu!csulb.edu!nic-nac.CSU.net!usc!cs.utexas.edu!swrinde!tank.news.pipex.net!pipex!news.mathworks.com!zombie.ncsc.mil!simtel!daffy!uwvax!newssinet!news.u-tokyo.ac.jp!wnoc-tyo-news!wnoc-sfc-news!wnoc-kyo-news!kuis-news!kudpc!sakura.kudpc.kyoto-u.ac.jp!a51511
+From: a51511@sakura.kudpc.kyoto-u.ac.jp (unknown)
+Newsgroups: sci.fractals
+Subject: Re:10^233 magnification and 10^1000
+Date: 22 Jul 95 09:28:02
+Organization: Fukui-nct,Fukui Pref.,Sabae,JAPAN.
+Lines: 55
+Distribution: world
+Message-ID: <A51511.95Jul22092802@sakura.sakura.kudpc.kyoto-u.ac.jp>
+NNTP-Posting-Host: sakura.kudpc.kyoto-u.ac.jp
+ 
+ 
+ Last time, I mentioned my theory for the series converging to c=-2.0, 
+and as examples gave only par files for m=25 and forgot ones for m=50.
+ I give here par files m25a1,m25horz(correction),m50a1,and m50horz.
+ 
+m25a1              { : by Minoru Morikawa. small M with m=25.
+  reset=1920 type=mandel
+  center-mag=-1.99999999999998685104553996190604824145973215854934\
+  /0.0/1.07e+028/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+m25horz            { : by Minoru Morikawa. Horiz. Lines
+  reset=1920 type=mandel passes=t
+  center-mag=-1.999999999999986851045539961874934/0.0/3.0e+029
+  params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+ 
+m50a1              { : by Minoru Morikawa. small M with m=50.
+  reset=1920 type=mandel
+  center-mag=-1.9999999999999999999999999999883213824069750497300385583139\
+  2087677/0.0/1.36e+058/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+ 
+m50horz            { : by Minoru Morikawa. Horiz. Lines
+  reset=1920 type=mandel passes=t
+  center-mag=-1.9999999999999999999999999999883213824069750497300385583138\
+  956/0.0/3.85e+059/1 params=0/0 float=y maxiter=10000 inside=0
+  }
+ 
+ You can see that the number of branches becomes double as m becomes 
+double.
+ 
+ The following is an example of very deep zoom. This has no meaning except
+one for a test of Fractint 19.2.
+ As a test to show that a 10^1000 magnification picture can be calculated
+correctly by Fractint 19.2, the well known Xctr=0.0 and Yctr=1.0  
+self similar case is treated.
+ The par file is very simple and is given as follows:
+    test1000 { : by Minoru Morikawa   10^10000
+    reset=1920 type=mandel
+    center-mag = 0.0/1.0/1.0e+1000/1.0
+    params=0/0 float=y maxiter=100000 inside=0
+    }
+ The result is nice. As expected, the pictures for for mag=1.0e+1000 
+are similar with ones for mag=1.0e+50 , except rotation. Time was 60 
+hours 24min for videomode F3 by Pentium 90.
+ 
+ This shows Fractint 19.2 can calculate deep zoom accurately.
+ 
+----
+   morikawa@fukui-nct.ac.jp
+ 
+ 
