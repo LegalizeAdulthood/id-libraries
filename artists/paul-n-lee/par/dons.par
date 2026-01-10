@@ -1,23 +1,23 @@
-* PAR file for Fractint 18.2
-* don lebow 2/94
-*
-* file and images are Copyright (c) 1994, don lebow
-* to the best of my knowledge all are original
-*
-* these were rendered at 640 x 480 x 256 colors. 
-* other resolutions are apt to look strange(r)
-*
-* forumlas not included in the distribution version of Fractint 18.2
-* (FRACTINT.FRM) can be found in the companion file DONS.FRM
-*
-* 
-* hope you find one or two that strikes your fancy, and enjoy playing with
-* them as much as I have
-*
-* >>don CIS:76704,41 
+; * PAR file for Fractint 18.2
+; * don lebow 2/94
+; *
+; * file and images are Copyright (c) 1994, don lebow
+; * to the best of my knowledge all are original
+; *
+; * these were rendered at 640 x 480 x 256 colors. 
+; * other resolutions are apt to look strange(r)
+; *
+; * forumlas not included in the distribution version of Fractint 18.2
+; * (FRACTINT.FRM) can be found in the companion file DONS.FRM
+; *
+; * 
+; * hope you find one or two that strikes your fancy, and enjoy playing with
+; * them as much as I have
+; *
+; * >>don CIS:76704,41 
 
 Interior           { ;  
-  reset type=formula formulafile=fractint.frm formulaname=ent2
+  reset type=formula formulafile=dons.frm formulaname=Ent2
   function=cosxx/sqr passes=1
   corners=0.66520307/0.40408232/-0.27309454/0.075067083/0.40408232/0.07506\
   7083 params=2/1 float=y potential=200/300/0
@@ -25,7 +25,7 @@ Interior           { ;
   }
 
 paintrag           {
-  reset type=formula formulafile=dons.frm formulaname=leeze
+  reset type=formula formulafile=dons.frm formulaname=Leeze
   passes=b corners=0.23919698/0.53394984/-1.4537066/-1.2326415 float=y
   potential=255/500/0
   colors=000eopdqq_JU<3>7o6eE`<8>Pli`DQVFFPH4fB_<18>XAZeBZ<15>A8GeD_<17>9m\
@@ -34,7 +34,7 @@ paintrag           {
   }
 
 merths             {
-  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  reset type=formula formulafile=crazynwt.frm formulaname=NewtonSinExp
   passes=b
   corners=-2.038926197/-2.001489953/0.0280874602/-0.02664846228/-1.9991759\
   06/-0.02491292712 params=1 float=y inside=bof60 potential=255/500/0
@@ -43,7 +43,7 @@ merths             {
   }
 
 stencil            {
-  reset type=formula formulafile=fractint.frm formulaname=newtonsinexp
+  reset type=formula formulafile=crazynwt.frm formulaname=NewtonSinExp
   passes=b
   corners=-2.0441910943/-2.0401149642/0.0030706679922/-0.0028890843404/-2.\
   0398630063/-0.00270011594 params=1 float=y inside=zmag decomp=256
@@ -60,7 +60,7 @@ stencil            {
   }
 
 ocular             {
-  reset type=formula formulafile=fractint.frm formulaname=richard1
+  reset type=formula formulafile=fractint.frm formulaname=Richard1
   passes=1 corners=-1.56165164/-1.54445164/-0.0073894572/0.0055105428
   float=y inside=zmag potential=255/500/0
   colors=000aOD<8>RGEPFFQFF<13>cRFeSFdRF<13>RGFPFFPFF<14>cPFcPFbOF<13>PFFS\
@@ -88,7 +88,7 @@ wood_chips         { ; the great kindling disaster of aught nine
   }
 
 monolith           {
-  reset type=formula formulafile=fractint.frm formulaname=gamma
+  reset type=formula formulafile=burts.frm formulaname=Gamma
   passes=b
   corners=-0.38078513/-0.60195377/-0.1482323/0.14665922/-0.60195377/0.1466\
   5922 float=y inside=bof61 outside=imag
@@ -116,7 +116,7 @@ yanl               { ; yet another lambda_plant
 
 green_planet       { ;checking out ContPot
   reset  type=formula formulafile=dons.frm
-  formulaname=fractalfenderc passes=1
+  formulaname=FractalFenderC passes=1
   corners=-2.149754/1.888646/2.746489/-2.638059/1.888646/-2.638059
   params=0.33000000000000002 float=y maxiter=1023 potential=255/511/0
   colors=00000z<79>0w30x30y20y10z00z0<81>yzyyzyzzzzzzyyz<82>00z
@@ -131,7 +131,7 @@ maui_christmas     { ; well, the map's there, so why not
 
 icy_cross         { ; zoom on the green planet
   reset  type=formula formulafile=dons.frm
-  formulaname=fractalfenderc passes=b
+  formulaname=FractalFenderC passes=b
   corners=-2.0041844/-1.8996806/0.070289478/-0.069049368/-1.8996806/-0.069\
   049368 params=0.33000000000000002 float=y maxiter=1023
   potential=255/511/0
@@ -257,7 +257,7 @@ arbai_door         {
   }
 
 autumn_bouquet     { ; for your virtual thanksgiving table
-  reset type=formula formulafile=dons.frm formulaname=tsinh passes=t
+  reset type=formula formulafile=dons.frm formulaname=TSinh passes=t
   corners=0.1702022/-1.597419/1.172323/-1.184511/-1.597419/-1.184511
   params=1 float=y maxiter=75 inside=bof60 outside=imag
   potential=255/500/0
@@ -275,7 +275,7 @@ button_button      {
   }
 
 Jm_15              { ; the day we finally found the bugs in the network
-  reset type=formula formulafile=fractint.frm formulaname=jm_15
+  reset type=formula formulafile=dons.frm formulaname=Jm_15
   function=exp/tanh/log/exp passes=b
   corners=-0.8433769/0.6950481/1.221535/2.375351
   params=-0.13472999999999999 inside=epsiloncross outside=imag
@@ -307,7 +307,7 @@ stairway           { ; to ... uh ... somewhere
   }
 
 up_front           {
-  reset type=formula formulafile=fractint.frm formulaname=fzppfnre
+  reset type=formula formulafile=dons.frm formulaname=Fzppfnre
   function=cos
   corners=0.8567512/-1.495249/-1.524159/1.611841/-1.495249/1.611841
   float=y maxiter=100 inside=bof60 finattract=y
@@ -366,7 +366,7 @@ wallpaper          { ; what can I say?
   }
 
 microverse         { ; FractalFenderC again ...
-  reset type=formula formulafile=dons.frm formulaname=fractalfenderc
+  reset type=formula formulafile=dons.frm formulaname=FractalFenderC
   passes=b
   corners=0.3078015/-2.818378/2.065304/-2.102901/-2.818378/-2.102901
   params=1 float=y potential=200/300/0
@@ -442,7 +442,7 @@ color_wheel        {
   }
 
 deco_liar          {
-  reset type=formula formulafile=dons.frm formulaname=liar3 passes=t
+  reset type=formula formulafile=dons.frm formulaname=Liar3 passes=t
   corners=-9.357018/9.920923/-1.987873/12.47058 float=y maxiter=256
   inside=bof60 outside=real decomp=256 distest=1/71
   colors=358LQY<7>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
@@ -462,7 +462,7 @@ decomp             { ; where the color wheel started ... sorta
 
 lurking            { ; kinda popped up out of nowhere
                      ;
-  reset type=formula formulafile=dons.frm formulaname=scsklms
+  reset type=formula formulafile=dons.frm formulaname=ScSkLMS
   passes=b
   corners=4.448413/-2.077547/-4.35064/4.35064/-2.077547/4.35064
   params=0.0040000000000000001 float=y maxiter=256 inside=bof60
@@ -476,7 +476,7 @@ lurking            { ; kinda popped up out of nowhere
 rons               { ; ron barnett's frm ... no fpu
                      ; not yer "classic fractal" at all
                      ; neat effect with tesselation, too
-  reset type=formula formulafile=dons.frm formulaname=reb004a
+  reset type=formula formulafile=dons.frm formulaname=REB004A
   function=conj/zero passes=b
   corners=-5.642158/3.053531/-3.260884/3.260878 params=1/-1/1/0.25
   inside=bof60 decomp=256
@@ -521,7 +521,7 @@ friendly_critter   { ; it followed me home from hyperspace mom! can we keep it?
   }
 
 deco_liar_z        { ; yeah, near dupe ... except not quite. neat formula.
-  reset type=formula formulafile=dons.frm formulaname=liar3 passes=b
+  reset type=formula formulafile=dons.frm formulaname=Liar3 passes=b
   corners=-3.578644/3.901197/-1.698885/3.910995 float=y maxiter=256
   inside=zmag outside=real invert=1/0/0 decomp=256 distest=1/71
   colors=358LPX<6>KFR9nm<6>JITGCJ<27>KER<5>KHnKIrKJvLKzXN8<7>LFPbS2<25>KER\
@@ -615,7 +615,7 @@ inter_fractal_zone {
 
 tims_newton_poly   { ; just messing around to see what's there
                      ; from a message on GraphDev 1/10/94
-  reset type=formula formulafile=dons.frm formulaname=newton_poly2
+  reset type=formula formulafile=dons.frm formulaname=Newton_poly2
   passes=t
   corners=-1.608707/2.496424/-2.826889/2.646618/2.496424/2.646618
   params=-0.050000000000000003 float=y maxiter=100 inside=bof60
@@ -652,7 +652,7 @@ ripple_resolution  { ; a personal favorite
 
 
 archway            {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=dons.frm formulaname=AltMTet
   passes=b
   corners=-1.0769968/-0.92058439/-0.10018165/0.10836835/-0.92058439/0.1083\
   6835 params=0.33000000000000002/-1 float=y maxiter=100 inside=bof60
@@ -701,7 +701,7 @@ ts_2             { ; zoom with a new map
   }
 
 heffalump          {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=dons.frm formulaname=AltMTet
   passes=b
   corners=0.1615643/-1.002436/-0.7670491/0.7849509/-1.002436/0.7849509
   params=1 float=y maxiter=100 inside=bof60 outside=mult
@@ -713,7 +713,7 @@ heffalump          {
   }
 
 liar_soup          {
-  reset type=formula formulafile=dons.frm formulaname=liar4 passes=1
+  reset type=formula formulafile=dons.frm formulaname=Liar4 passes=1
   corners=0.10328394/0.84822488/-0.42109299/0.9722563/-0.29736698/0.113082\
   35 params=6.0000000000000002e-006/1 float=y inside=zmag outside=real
   potential=250/500/0
@@ -723,7 +723,7 @@ liar_soup          {
   }
 
 glass_onion        {
-  reset type=formula formulafile=fractint.frm formulaname=altmtet
+  reset type=formula formulafile=dons.frm formulaname=AltMTet
   passes=b
   corners=-1.7016037/-1.106241/-0.40460902/0.38920812/-1.106241/0.38920812
   params=1 float=y maxiter=100 inside=bof60 outside=mult
@@ -821,7 +821,7 @@ busy               { ; not so much what it is, but where you can go...
   }
 
 foliage_of_sorts   {
-  reset type=formula formulafile=dons.frm formulaname=fractalfenderc
+  reset type=formula formulafile=dons.frm formulaname=FractalFenderC
   passes=b corners=-0.99863317/-0.82141796/-1.3855011/-1.2525897
   params=0.10000000000000001 float=y maxiter=25 inside=bof60
   outside=mult potential=255/300/16 decomp=256
