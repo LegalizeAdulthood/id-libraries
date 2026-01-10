@@ -42,13 +42,13 @@ def main():
 
     # Collect missing entries
     missing_entries = []
-    pattern1 = r"  ([^ ]+)\((\d+)\): Formula file '.+' not found for entry '(.+)'"
+    pattern1 = r"  ([^(]+)\((\d+)\): Formula file '.+' not found for entry '([^']+)'"
     for match in re.finditer(pattern1, content):
         param_name, line, entry_name = match.groups()
         entry_name = entry_name.lower()
         missing_entries.append((param_name, line, entry_name))
 
-    pattern2 = r"  ([^ ]+)\((\d+)\): Formula entry '(.+)' not found in file '.+'"
+    pattern2 = r"  ([^(]+)\((\d+)\): Formula entry '([^']+)' not found in file '.+'"
     for match in re.finditer(pattern2, content):
         param_name, line, entry_name = match.groups()
         entry_name = entry_name.lower()
