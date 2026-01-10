@@ -1,0 +1,143 @@
+comment { ; narrative copyright Kerry Mitchell 18oct98
+
+Circle and Line Coloring Method
+
+Several coloring schemes have been put together that color according 
+to the orbit's nearest approach to a specified point or curve.  This
+method extends that idea by coloring according to the orbit's nearest
+simultaneous approach to 2 specified curves, a circle and a line.
+
+A circle in the x-y plane can be specified by (x - xcenter)^2 +
+(y - ycenter)^2 = radius^2, where (xcenter, ycenter) is the coordinate 
+of the center of the circle, and radius is the circle's radius.  For
+complex numbers z = x+i*y, (and center = xcenter+i*ycenter)
+
+f(z) = |z - center| - radius^2 (using Fractint's || convention)
+
+is a real-valued function that gives the relationship of z to the 
+circle.  If f(z) < 0, then z is inside the circle.  A positive
+value of f(z) means that z is outside of the circle, and f=0 means 
+that z is on the circle.
+
+A line in the x-y plane can be specified by A*x + B*y + C = 0, where
+-A/B is the slope of the line (if B=0 then the line is vertical).
+(The C in the line defintion should not be confused with the c used
+in Mandelbrot and Julia computations.)  For complex numbers z = x+i*y,
+
+f(z) = A*real(z) + B*imag(z) + C
+
+is a real-valued function that gives the relationship of z to the 
+line.  If f(z) < 0, then z is on one side of the line.  A positive
+value of f(z) means that z is on the other side, and f=0 means 
+that z is exactly on the line.
+
+Using 2 curves then results in 2 functions, fx(z) and fy(z).  The
+circle corresponds to fx, and the line to fy.  At each iteration,
+a new complex variable, w, can be defined as, w = fx(z)+i*fy(z).
+To check for the closest simultaneous approach of the orbit to both
+curves, it is sufficient to check for the smallest |w|.  This w is
+saved, and at the end of the iteration, "decomp=256" is used to color
+the pixel according to the polar angle of w.
+
+In its most general form, this method requires 6 real parameters:  
+3 for the circle (xcenter, ycenter, radius) and 3 for the line (A, 
+B, C).  For Mandelbrot implementation, this requires hardcoding the 
+bailout value, which has been set to 10^12.  For Julia implementations, 
+the bailout is also hardcoded, but another 2 parameters are needed to 
+specify the Julia parameter, c.  The "general_jul" formula is written 
+with a hardcoded value of c, to allow for the greatest flexibility in 
+choosing the curves.
+
+A great deal of choice can still be allowed by only using 4 parameters
+to choose the lines, thereby freeing the other 2 for picking the Julia
+parameter c.  The "center_jul" method uses a general circle and the 
+line passes through the center with a specified inclination angle.  
+The "tangent_jul" method also uses a general circle.  The line, however, 
+is tangent to the circle.  The tangent point is at a specified angle 
+to the center of the circle.  Finally, the "offset_jul" formula is 
+similar to the "tangent_jul" formula.  Instead of the line touching 
+the circle, it is offset by the radius of the circle.  The line is 
+parallel to a tangent line, with the tangency point at a specified 
+angle to the center.
+
+Because of the wide variety of parameter settings, it's not possible
+to say what happens with the image as the curves are moved.  However,
+you'll get very different results in the curves don't intersect from
+when they do.  If they do intersect, you'll tend to see points in the
+image where all the colors come together (this corresponds to where
+the orbit found the intersection point).
+
+}
+
+general_man-1 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "general circle & line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  formulaname=general_man passes=1 center-mag=-0.3/0/0.7
+  params=1/1/2/0/1/1 float=y maxiter=256 inside=0
+  decomp=256 colors=000<61>y99zAAzAAzBB<61>zzzzzzzyz<60>\
+  i1ih0hh0hg0g<61>000 cyclerange=0/255 periodicity=0
+  }
+
+general_man-2 { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "general circle & line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  periodicity=0 formulaname=general_man center-mag=-0.6\
+  66667/0/0.7/1/-90 params=-1/0/0.25/0/1/0 float=y
+  maxiter=256 inside=0 decomp=256 colors=000<30>y99zAAz\
+  CC<30>zzz<30>i1ih0hf0f<28>303101100<29>x99zAAzBB<30\
+  >zzz<30>i2ih0hg0g<30>000 cyclerange=0/255 passes=1
+  }
+
+general_jul { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "general circle & line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  formulaname=general_jul passes=1 center-mag=0/0/0.75/1/5
+  periodicity=0 params=-2/0/3/1/0/4 float=y maxiter=256
+  inside=0 decomp=256 colors=f0f<28>202000000<30>y99zAAzCC\
+  <30>zzz<30>i1ih0hf0f<28>303101100<29>x99zAAzBB<30>zzz<30>\
+  i2ih0hg0g cyclerange=0/255
+  }
+
+offset { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "circle & offset line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  formulaname=offset_jul passes=1 center-mag=0/0/0.8
+  params=-0.778/0.201/-2/0/1/90 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0 colors=303000000<15>\
+  zAA<15>zzz<14>i3ih0he0e<11>808505303100<13>t99x99zBB\
+  <13>zuuzxxzyz<13>j6ji2ig0g<14>202200<14>y99<15>zyyzxz\
+  <13>j5ji1if0f<14>101300<14>zAA<15>zzz<15>h0h<13>606
+  }
+
+center { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "circle & diameter line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  formulaname=center_jul passes=1 center-mag=0/0/0.813\
+  /1/-7.5 params=0.39/0.44/0.39/0.44/0.44/53.9125 float=y
+  maxiter=256 inside=0 decomp=256 periodicity=0 cyclerange=0/255
+  colors=000<61>y99zAAzAAzBB<61>zzzzzzzyz<60>i1ih0hh0hg0g<61>000
+  }
+
+tangent { ; copyright Kerry Mitchell 26aug98
+  ;
+  ; sample for "circle & tangent line" coloring method
+  ;
+  reset=1960 type=formula formulafile=circline.frm
+  periodicity=0 formulaname=tangent_jul passes=1 center-\
+  mag=0/0/1/1/90 params=0.26/0/0/0/0.2/45 float=y maxiter=1000
+  inside=0 decomp=256 colors=U0U<9>202200<14>y99<15>zyyzxz<13>\
+  j5ji1if0f<14>101300<14>zAA<15>zzz<15>h0h<14>303000000<15>zAA\
+  <15>zzz<14>i3ih0he0e<11>808505303100<13>t99x99zBB<13>zuuzxxz\
+  yz<13>j6ji2ig0g<3>X0X cyclerange=0/255
+  }
+
