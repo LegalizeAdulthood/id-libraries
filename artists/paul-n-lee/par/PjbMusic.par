@@ -1,0 +1,39 @@
+Mtest1             { ; fn||fn music
+  reset=2000 type=lambda(fn||fn) function=sqr/ident passes=d
+  center-mag=-0.256327/0.0506027/0.04049589/1/90
+  params=0.7789696951200904/0.6341120639667959/0.2872631000701926
+  float=y maxiter=1000 bailout=1000 bailoutest=and inside=fmod
+  outside=summ finattract=y periodicity=0 viewwindows=1/0.75/yes/0/0
+  cyclerange=0/255 hertz=-100 sound=z/fm/quant volume=50 attenuate=low
+  polyphony=4 attack=2 sustain=10 srelease=10 orbitdelay=1500
+  showorbit=yes
+  colors=0Xi<86>022022011<3>000000011<120>0fx0fx0gy<2>0hz0hz0gy<31>0Xi
+  }
+
+Mtest2             { ; phoenix music
+  reset=2000 type=phoenix passes=1
+  center-mag=0.39554/-0.00173074/11.08304/1/-90 params=0/-1/0 float=y
+  bailoutest=and inside=fmod decomp=256 finattract=y
+  viewwindows=17/0.75/yes/0/0 cyclerange=0/255 hertz=-450
+  sound=z/fm/quant attenuate=low polyphony=9 wavetype=2 attack=1
+  sustain=12 srelease=13 orbitdelay=1500 showorbit=yes
+  colors=JJU<76>ttwttxuuxuuxvvyvvy<41>88M77L55K<2>22H00G11G<43>hhuiivjjw<2\
+  >mmzmmzlly<44>77N66M55L<2>22I11H22I<3>88M99NBBO<8>GGSGGSGGSHHSHHTIITIIU
+  }
+
+Mtest3             { ; chip music
+  reset=2000 type=chip passes=d center-mag=0/0/0.001754386
+  params=-10/0/1 float=y viewwindows=17/0.75/yes/0/0 hertz=300
+  sound=z/fm/quant attenuate=low polyphony=4 wavetype=4 attack=6
+  decay=8 sustain=12 srelease=10 scalemap=1/3/5/6/8/10/12/1/3/5/8/10
+  orbitdelay=1500 showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
