@@ -1,0 +1,402 @@
+; this .PAR file by Abel Lenz, (c) 1992
+;
+;
+
+test               {
+  reset type=mandel
+  corners=-0.5351191/-0.966432/-0.2628349/0.2628469/-0.9427217/0.2806389
+  params=0/0.1
+  colors=00026g27g38g39h4Ai4Bi5Ci5Dj6Ek6Fk7Gk7Hl8Im8Jm9Km9LnAMoANoBOoBPpCQqCRq\
+  DSqDTrEUsFVsFWsGXtGYuHXuHYuHZuH_uI`vIawJbwJcwKdx<2>LgyAV0<12>CX2DX2DX2EX3EX3\
+  <18>H`6I`6I`7Ia7Ia8Ja8<4>KcALcALdAMdAMdB<7>PgDPgEPhEPhEQhF<20>WoNXoNXpNYpNYp\
+  O<8>`sR`tRatRatRbtRbtR<2>etRetRftRftRgtR
+  }
+
+zipper             {
+  reset type=mandel
+  corners=-0.5351191/-0.966432/-0.2628349/0.2628469/-0.9427217/0.2806389
+  params=0/0.1
+  colors=00026g27g38g39h4Ai4Bi5Ci5Dj6Ek6Fk7Gk7Hl8Im8Jm9Km9LnAMoANoBOoBPpCQqCRq\
+  DSqDTrEUsFVsFWsGXtGYuHXuHYuHZuH_uI`vIawJbwJcwKdx<2>LgyAV0<12>CX2DX2DX2EX3EX3\
+  <18>H`6I`6I`7Ia7Ia8Ja8<4>KcALcALdAMdAMdB<7>PgDPgEPhEPhEQhF<20>WoNXoNXpNYpNYp\
+  O<8>`sR`tRatRatRbtRbtR<2>etRetRftRftRgtR
+  }
+
+circle             { ; Trippiness!
+                     ; Cycle the colors fast!
+  reset type=mandel passes=b
+  corners=-0.728502681/-0.728083188/0.223075062/0.223389758 maxiter=700
+  colors=000fff<6>hhhzzz000mmm000gggA0AaaaAA0WWWK0KQQQKK0MMMU0UHHHUU0BBBc0c666\
+  cc0000m0m000mm0000000c0c000zz2555c8cBBBzz0HHH000LLL000PPPF00SSSK00VVVP00ZZZU\
+  00aaaZ00eeec00iiih00mmmmP0qqqmU0uuuwZ0zzzwc0zzzwm0wwwwm0xxxzz0xxxyyyyyyz00<3\
+  >z00<13>zz0333<14>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<1\
+  4>VVVzVz<14>zz0ZZZ<14>bbb000<13>u00kkk
+  }
+
+claw               { ; One of my favorites
+  reset type=lambda corners=0.026101/1.002083/0.43301/1.164996
+  params=0.85/0.6
+  colors=000zzz<3>optlnrjkqgip<3>W_hUXgRUc<4>9BH57C000<6>zkk<7>z00G00G40G8000z\
+  <10>zc0<4>zY2000zV3<5>zN5000zL6zJ7zI7zG8<11>nKI000FzFVVVjjjzzzgMO<12>VR_TR`T\
+  R`zzzURazzzVRazzzWRazzz000zzz000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z0KKK<3>__\
+  _ccchhhmmmssszzzzz0<6>z0Gz00zG0zV0
+  }
+
+coral1             { ; Very art deco, pleasing
+  reset type=mandel
+  corners=-0.254337959/-0.254759846/0.646649824/0.646561138/-0.254447306/0.646\
+  795399
+  colors=000KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15\
+  >zz0<15>zF0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw
+  }
+
+coral2             { ; Screen will be black - cycle colors LEFT for awesomeness
+  reset type=mandel
+  corners=-0.254337959/-0.254759846/0.646649824/0.646561138/-0.254447306/0.646\
+  795399
+  colors=000000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000yzzyzz000\
+  yzz000yzz000yzz000yzz000yzz000yzz000yzz000yzz000yzz000zzz000zzz000zzz000zzz0\
+  00zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zz\
+  z000zzz000zzz000zzz000<69>000
+  }
+
+curve              { ; nice. 
+  reset type=mandel
+  corners=0.526864/0.217367/0.002808/0.415466/0.217367/0.415466
+  params=0/-1
+  colors=000<3>000633C77<13>z00G00G40G8000z<10>zc0<4>zY2000zV3<5>zN5000zL6zJ7z\
+  I7zG8<11>nKI000FzFVVVjjjzzzgMO<12>VR_TR`TR`zzzURazzzVRazzzWRazzza00Y00<4>000\
+  z00<5>zz0000555<2>EEE0z0KKK<3>___ccchhhmmmssszzzzz0<6>z0Gz00<3>zz0nx6buCP0ZF\
+  pP<3>0zz<2>0GzVVzbVzjVz
+  }
+
+dragon             { ; spiffy
+  reset type=formula formulafile=fractint.frm formulaname=Dragon passes=b
+  corners=-2.0/1.999988/-1.49999/1.5
+  colors=000FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKz\
+  KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF\
+  0<15>uu6<10>xc2
+  }
+
+dragon2            { ; extra spiffy
+  reset type=formula formulafile=fractint.frm formulaname=Dragon passes=b
+  corners=-0.275554/-0.075566/-0.391575/-0.241577
+  colors=000GSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkk\
+  vxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<1\
+  1>zz0<6>zA0<15>zz0<15>zF0<15>uu6<2>up5
+  }
+
+dragon3            { ; really really intense and bright - check it out
+  reset type=formula formulafile=fractint.frm formulaname=Dragon passes=b
+  corners=-0.2648545/-0.2304584/-0.3226908/-0.2968925 maxiter=300
+  colors=000kkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12\
+  >zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>z\
+  A0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPS\
+  zzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuR
+  }
+
+fivestar           { ; also really neato
+  reset type=newton corners=-2.0/2.0/-1.5/1.5 params=5
+  colors=000xD8yC4zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZmzcIHXz\
+  zcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgr\
+  PPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz\
+  0<12>zI0<6>zg0
+  }
+
+flower             { ; AWESOMENESS!!!!!!!!!
+  reset type=formula formulafile=fractint.frm formulaname=Dragon
+  corners=-1.998771/-0.734785/-0.368462/0.579531
+  colors=000rr8vv4zz0<8>EfH<22>000966<14>z00<11>000<17>zJ7zI7zG8<11>nKI000FzFV\
+  VVjjjzzzgMO<12>VR_TR`TR`zzzURazzzVRazzzWRazzz000zzz000zz0zzz0z0LLLz00<5>zz00\
+  00555<2>EEE0z0KKK<5>hhh
+  }
+
+flowerpt           { ; even better than AWESOMENESS!!!!!!!!!
+  reset type=formula formulafile=fractint.frm formulaname=Dragon
+  corners=-0.733272/-0.930442/0.236092/0.498997/-0.930442/0.498997
+  colors=000774UUm966UUcz00<32>000zm0<8>zI0<11>zz0<6>zA0<15>zz0<15>zF0<15>uu6<\
+  14>yX1zV0yV3<13>kVvjVzkUwlTsmSo
+  }
+
+jetengine          { ; like circle, only lamer
+  reset type=lambda passes=b corners=0.749848/0.939188/0.739037/0.881041
+  params=0.85/0.6 maxiter=300
+  colors=000mU0uuuwZ0zzzwc0zzzwm0wwwwm0xxxzz0xxxyyyyyyz00<3>z00<13>zz0333<14>7\
+  77zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<14>VVVzVz<14>zz0ZZZ<\
+  14>bbb000<13>u00kkkfff<6>hhhzzz000mmm000gggA0AaaaAA0WWWK0KQQQKK0MMMU0UHHHUU0\
+  BBBc0c666cc0000m0m000mm0000000c0c000zz2555c8cBBBzz0HHH000LLL000PPPF00SSSK00V\
+  VVP00ZZZU00aaaZ00eeec00iiih00mmmmP0qqq
+  }
+
+jetengine2         {
+  reset type=lambda passes=b corners=0.749848/0.939188/0.739037/0.881041
+  params=0.85/0.6 maxiter=300
+  colors=000JPA<35>CX8GVK<46>3vyJPA<62>0JHKOA<12>Z5AJPA<40>WAQJPA<47>pK3JPA
+  }
+
+globe1             { ; fuckin awesome 3D
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=30 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=000222<3>222333333444444<11>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>N\
+  NNU0U<14>z00RRR<14>VVVzVz<14>zz0ZZZ<14>bbb000
+  }
+
+globe2 island      { ; ok 3D like a planet
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=30 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=00047E<3>7CN8EP8EU8FW9GYFAU<11>KZzLmG<7>cUK<13>PLJ<12>z00PKJ<15>PKJCS\
+  9<51>CS9CS9DSAESB<18>dK_
+  }
+
+halfmandel         { ; nice colors, flame edge
+  reset type=mandel passes=b
+  corners=-1.7903032/-1.7607194/-0.0007217/0.021466 maxiter=1000
+  colors=000000czcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcU\
+  FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774U\
+  Um966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<15>uu6<1\
+  4>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczc
+  }
+
+jetglobe           { ; really relly cool 3D
+  3d=yes sphere=y latitude=-90/90 longitude=180/0 radius=100
+  scalexyz=90/100 roughness=30 waterline=0 filltype=2 ambient=20
+  perspective=0 xyshift=0/0
+  colors=000<51>000TyN<2>UzO<6>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<\
+  24>XXXXXXXXXYYYYYYYYY<16>bbb000<13>u00kkkfff<6>hhhzzz000mmm000gggA0AaaaAA0WW\
+  WK0K0fK<41>CnL000000000
+  }
+
+???????????        { ; .PAR file by Abel Lenz, (c) 1992
+  reset type=julia passes=b
+  corners=0.453/-0.453/-0.603999/0.604/-0.453/0.604 params=0.32/0.043
+  maxiter=300
+  colors=000000zzz<5>zzzzzw<32>zz2zz0zy0<57>z20z00z00<149>000zzz
+  }
+
+???????            { ; simple but cool
+  reset type=julia
+  corners=-0.515599204/-0.515543945/-0.0000208411/0.0000206735
+  params=-1.89275792434506/5.89527190000001e-007 maxiter=1024 inside=0
+  colors=000HPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUo\
+  nuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12\
+  >zI0<11>zz0<6>zA0<15>zz0<15>zF0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>z\
+  z0<14>w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzU
+  }
+
+lightning2         { ; neeto mandelbrot zoom
+  reset type=mandel passes=b
+  corners=-0.20185601/-0.19271747/-1.10361091/-1.09675692 maxiter=50
+  inside=maxiter
+  colors=000eeeLLLLLzLzLLzzzLLzLzzzL000000555<3>HHHKKKOOOSSSWWW___ccchhhmmmsss\
+  zzzchzGZzV0zj0zz0z<3>z00<3>zz0<3>z00<6>0GzVVz
+  }
+
+different lightnin { ; neeto mandelbrot zoom
+  reset type=mandel passes=b
+  corners=-1.2342861/-1.1654862/-0.2684247/-0.216825
+  colors=000zqhzuhzzh<3>hzh<3>hzz<2>hlzz00w03000o0B<12>00z<15>zz0<8>EfH<2>zzz<\
+  5>jkqzzzdfm0zlZaj<5>IN`FKZAEO57C000<6>zkk<7>z00G00G40G8000z<10>zc0<4>zY2000z\
+  V3<5>zN5000zL6zJ7zI7zG8<11>nKI000FzFVVVjjjzzzgMO<4>bOS
+  }
+
+lightning          { ; a favorite - very simple but very FRACTAL
+  reset type=mandel passes=b
+  corners=-0.240427/-0.134158/-1.1352287/-1.0555273 maxiter=50
+  inside=maxiter
+  colors=000888<2>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0\
+  <3>0zz<2>0GzVVz<3>zVz<3>zVV<2>zrV
+  }
+
+magnet             { ; this one's pretty bu it'll take YEARS
+  reset type=magnet1m passes=b
+  corners=1.96131/0.79731/-0.745849/0.806151/0.79731/0.806151
+  colors=000UUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz\
+  0<15>zF0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUwlTs
+  }
+
+mandel1            { ; a pastel mandel zoom, nuthin special, nice colors
+  reset type=mandel corners=-1.947047/-0.683048/-0.489075/0.458925
+  colors=000LLz<9>zzzhhz<3>zhz<3>zhh<3>zzh<2>lzhzz0<14>000z0Z<30>m0dzzz<11>kDk\
+  i9jh5if0ge0g<30>S0mzzz<11>UDsR9rO5qL0pL0p<9>G0r
+  }
+
+mandel2            { ; deep zoom on meandelbrot, very nice indeed
+  reset type=mandel corners=-0.7154487/-0.7614486/0.2294173/0.1949175
+  colors=000mm0hzz<2>hlzzz0<72>0000U0<54>fNNgMOfNP<12>TR`
+  }
+
+par2               { ; one of endtable's gif's - very nice
+  reset type=marksjulia corners=-2.0/1.999969/-1.49999/1.5 params=0.1/0.9
+  maxiter=1000 inside=0
+  colors=000002<3>000000000000000<124>00y00z00y<118>003
+  }
+
+shape1             { ; funky non-normal fractal type deal
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=-2.0/1.999988/-1.49999/1.5
+  colors=000A0A000<2>000yU1<6>w03<9>K0fmzmK2emzmK5cczcJ8aczcJB`UzUIEZmzcIHXzzc\
+  IKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcUFcJzmZJfKohePiKmcmTlLccm_oNUcmgrPP\
+  UonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<\
+  12>zI0<11>zz0<6>zA0<8>zb0
+  }
+
+shape2             { ; another funky non-normal fractal type deal
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=0.31867/-0.845317/-0.775987/0.776002/-0.845317/0.776002
+  colors=000zz0333<14>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR\
+  <14>VVVzVz<14>zz0ZZZ<14>bbb000<3>G00
+  }
+
+shape3             { ; yet another funky non-normal fractal type deal
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=0.136047/-0.14796/-0.194195/0.184485/-0.14796/0.184485
+  colors=000333<14>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<14\
+  >VVVzVz<14>zz0ZZZ<14>bbb000<4>L00
+  }
+
+shape4             { ; yet another funky non-normal fractal type deal, part II
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=-0.174234/0.290986/0.2966491/0.2093371/0.035154/0.0174683
+  colors=000zbj<10>zz0ZZZ<14>bbb000<14>z00fff<77>zzzf4Iz00<13>zz0333<9>666
+  }
+
+spikey             { ; I really  like dis one 
+  reset type=mandel passes=b
+  corners=-0.9578957/-0.8595691/0.2172031/0.3318005/-0.9775051/0.2433484
+  maxiter=300
+  colors=000000PPPF00SSSK00VVVP00ZZZU00aaaZ00eeec00iiih00mmmmP0qqqmU0uuuwZ0zzz\
+  wc0zzzwm0wwwwm0xxxzz0xxxyyyyyyz00<3>z00<13>zz0333<14>777zz0<14>0zhBBB<14>FFF\
+  0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<14>VVVzVz<14>zz0ZZZ<14>bbb000<13>u00kkkfff\
+  <6>hhhzzz000mmm000gggA0AaaaAA0WWWK0KQQQKK0MMMU0UHHHUU0BBBc0c666cc0000m0m000m\
+  m0000000c0c000zz2555c8cBBBzz0HHH000LLL
+  }
+
+swirl1             { ; whaddaya think?
+  reset type=mandel corners=0.0054091/-0.0277243/0.7268875/0.7020372
+  colors=000<41>000z00<15>00z<15>zz0<8>EfH<2>zzz<5>jkqzzzdfm0zlZaj<5>IN`FKZAEO\
+  57C000<6>zkk<7>z00G00G40G8000z<10>zc0<4>zY2000zV3<5>zN5
+  }
+
+swirl2             { ; bigger, better, prettier swirl, ERL
+  reset type=mandel
+  corners=-0.002971092/-0.003537349/0.717109734/0.716684951
+  colors=000550<26>VV0000<30>zz0<8>EfH<21>57C000<6>zkk<7>z00G00G40G8000z<10>zc\
+  0<4>zY2000zV3<5>zN5000zL6zJ7zI7zG8<9>pJH
+  }
+
+splotch1           { ; like sweet potatoes on the wall
+  reset type=mandel passes=b
+  corners=-1.2260679/-1.1978602/-0.2516469/-0.2304912
+  colors=000zmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLA\
+  UUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<1\
+  5>uu6<11>xa2
+  }
+
+splotch2           { ; mandelbrot set, zoomed many a time - nifty neeto
+  reset type=mandel passes=b
+  corners=-1.21433077/-1.21411619/-0.242642375/-0.242635369/-1.21425701/-0.242\
+  741009
+  colors=000zmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKzKLA\
+  UUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<1\
+  5>uu6<11>xa2
+  }
+
+splotch3           { ; another mandelbrot set, zoomed many a time - nifty neeto
+  reset type=mandel passes=b
+  corners=-1.21430141/-1.21422615/-0.242648615/-0.242646011/-1.21427547/-0.242\
+  683077
+  colors=000zc0<5>zz0<6>zA0<15>zz0<15>zF0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>\
+  zA0<15>zz0<14>w03<8>O0b
+  }
+
+stalactite         { ; self descriptive name
+  reset type=mandel corners=-0.834881/-0.68258/0.008982/0.123218
+  params=1.99
+  colors=00059Cw_FhTW<14>m1WmZbsdiyjphVW<19>RpWQrVRoW<13>jAll7nlDn<5>lpl<10>7O\
+  F<22>dqm<10>5ne<11>DEz<4>SLc<21>BKm
+  }
+
+starseven          { ; COOLNESS IN A PICTURE!
+  reset type=newton corners=-2.0/2.0/-1.5/1.5 params=7
+  colors=000<7>000z00<5>zz0000555<2>EEE0z00z0000<94>30u40v40v40v<28>30w
+  }
+
+blot               { ; chaos - I love it!
+  reset type=mandel passes=b
+  corners=-0.728165176/-0.72814735/0.223290654/0.223303998 maxiter=1000
+  colors=000aaa<2>bbb000<13>u00kkkfff<6>hhhzzz000mmm000gggA0AaaaAA0WWWK0KQQQKK\
+  0MMMU0UHHHUU0BBBc0c666cc0000m0m000mm0000000c0c000zz2555c8cBBBzz0HHH000LLL000\
+  PPPF00SSSK00VVVP00ZZZU00aaaZ00eeec00iiih00mmmmP0qqqmU0uuuwZ0zzzwc0zzzwm0wwww\
+  m0xxxzz0xxxyyyyyyz00<3>z00<13>zz0333<14>777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ\
+  <14>NNNU0U<14>z00RRR<14>VVVzVz<14>zz0ZZZ<10>aaa
+  }
+
+swirl              { ; Really nice Julia
+  reset type=julia passes=b corners=-2.0/2.0/-1.5/1.5 params=0.32/0.043
+  maxiter=300
+  colors=000000zzz000zz0zzz0z0LLLz00<5>zz0000555<2>EEE0z0KKK<3>___ccchhhmmmsss\
+  zzzzz0<6>z0Gz00<3>zz0nx6buCP0ZFpP<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zzV<3>VzV<3>V\
+  zz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlzz00w03000o0B<12>00z<15>zz0<8>\
+  EfH<2>zzz<5>jkqzzzdfm0zlZaj<5>IN`FKZAEO57C000<6>zkk<7>z00G00G40G8000z<10>zc0\
+  <4>zY2000zV3<5>zN5000zL6zJ7zI7zG8<11>nKI000FzFVVVjjjzzzgMO<12>VR_TR`TR`zzzUR\
+  azzzVRazzzWRazzz
+  }
+
+wave               { ; Really nice Julia
+  reset type=mandel
+  corners=-0.7682391/-0.9682037/-0.2460513/-0.1994155/-0.8626196/-0.1202174
+  params=0/0.1
+  colors=00000Uc00<6>Q5JO6MM7PJ8RH9UFAX<5>1Gn<25>0czAVc<19>9WfKczHaz<2>ens<2>9\
+  Wg<27>7Yk<4>Wjq<12>oux<3>5Zo<24>3`s
+  }
+
+XXX2               { ; part 2
+  reset type=mandel passes=b
+  corners=-1.78406182/-1.78361169/0.0156185348/0.0155940056/-1.78388798/0.0153\
+  868031 maxiter=1000
+  colors=000FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKz\
+  KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF\
+  0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczc\
+  000czcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcU
+  }
+
+XXX3               { ; part 3
+  reset type=mandel passes=b
+  corners=-1.78391471/-1.78377964/0.0157546941/0.0154892262/-1.78373864/0.0155\
+  199915 maxiter=1000
+  colors=000FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKz\
+  KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF\
+  0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczc\
+  000czcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcU
+  }
+
+XXX4               { ; part 4, now its gettin good
+  reset type=mandel passes=b
+  corners=-1.78386835/-1.78383034/0.0156560075/0.0155821219/-1.78381905/0.0155\
+  906472 maxiter=1000
+  colors=000FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKz\
+  KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF\
+  0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczc\
+  000czcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcU
+  }
+
+XXX5               { ; part 5, my favorite mandelbrot zoom, real complicated
+  reset type=mandel passes=b
+  corners=-1.7838611478/-1.7838352075/0.01562801682/0.01561431467/-1.783845223\
+  4/0.01560687575 float=y maxiter=1300
+  colors=000FcJzmZJfKohePiKmcmTlLccm_oNUcmgrPPUonuRkkkvxTAAzvxT00zikNAAzXYHKKz\
+  KLAUUz774UUm966UUcz00<7>zz0<7>z70zG0<12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF\
+  0<15>uu6<14>yX1zV0yV3<13>kVvjVzkUw<14>zA0<15>zz0<14>w03<9>K0fmzmK2emzmK5cczc\
+  000czcJB`UzUIEZmzcIHXzzcIKVzzcHMUzzUHPSzzUGSQzmKGVOzmKGYNzcKF`LzcU
+  }
+
+ZZZ                { ; cycle this baby - cool palete.
+  reset type=julia
+  corners=-0.230195/0.230195/0.214608/0.961273/-0.416314/0.449917
+  params=0.3/0.6
+  colors=000666777777zz0<14>0zhBBB<14>FFF0Uz<14>z00JJJ<14>NNNU0U<14>z00RRR<14>\
+  VVVzVz<14>zz0ZZZ<14>bbb000<14>z00ffffffggg
+  }
+

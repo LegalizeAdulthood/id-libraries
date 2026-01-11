@@ -1,0 +1,27 @@
+
+test         { ; time=0:00:10.33 on a P-200 at 640x480
+               ; using FractInt 1960.0
+  reset=1960 type=formula formulafile=3Dim.frm passes=t
+  formulaname=ThreeDim params=2.24/0.43/-0.65/-2.43
+  center-mag=+0.00000000000000000/+0.00000000000000000/0.5
+  float=y rotation=60/30/0 perspective=0 xyshift=0/0
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+testing      { ; Pickover
+  reset=1960 type=formula formulafile=3Dim.frm
+  formulaname=ThreeDim params=2.24/0.43/-0.65/-2.43
+  }
+
+frm:ThreeDim   {; Pickover
+  xnew = sin(a*y) - z*cos(b*x)
+  ynew = z*sin(c*x) - cos(d*y)
+  znew = sin(x)
+  }

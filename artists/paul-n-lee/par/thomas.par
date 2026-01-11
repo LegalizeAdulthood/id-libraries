@@ -1,0 +1,12 @@
+
+squares { ; Floating Point !!
+ reset=2000 type=formula formulafile=thomas.frm formulaname=Squares
+ passes=t center-mag=-1.64e-006/2.205e-006/0.6666676 params=3/0 float=y
+ cyclerange=0/253 sound=beep/fm/quant colors=@default.map
+ }
+
+squares2 { ; Floating Point !!
+ reset=2000 type=formula formulafile=thomas.frm formulaname=Squares
+ passes=t center-mag=0/0/0.001 params=3/0 float=y
+ cyclerange=0/253 sound=beep/fm/quant colors=@default.map
+ }

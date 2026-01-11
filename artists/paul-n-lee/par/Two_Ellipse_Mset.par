@@ -1,0 +1,116 @@
+frm:Two_Ellipse_Mset {; Copyright (c) Paul W. Carlson, 1998
+    ; Parameters:
+    ;   real(p1) = a factor controlling the width of the curves
+    ;   imag(p1) = iterations to skip
+    ;   real(p2) = major axis, ellipse 1
+    ;   imag(p2) = minor axis, ellipse 1
+    ;   real(p3) = major axis, ellipse 2
+    ;   imag(p3) = minor axis, ellipse 2
+    ;
+    w = z = bailout = iter = 0
+    c = pixel
+    width = real(p1)
+    skip_iters = imag(p1)
+    a1 = real(p2),  b1 = imag(p2)
+    a2 = real(p3),  b2 = imag(p3)
+    i = (0,1)
+    index_factor = 124 / width:
+    ;
+    w = w * w + c  ; classic Mandelbrot set
+    ;
+    ang = atan(imag(w) / real(w))
+    ell1 = a1 * cos(ang) + i * b1 * sin(ang)
+    dist1 = abs(cabs(w) - cabs(ell1))
+    ell2 = b2 * cos(ang) + i * a2 * sin(ang)
+    dist2 = abs(cabs(w) - cabs(ell2))
+    IF (dist1 < dist2)
+        range_num = 0
+        distance = dist1
+    ELSE
+        range_num = 1
+        distance = dist2
+    ENDIF
+    IF (distance < width && iter > skip_iters)
+        z = index_factor * distance + range_num * 125 + 1
+        bailout = 1
+    ENDIF
+    iter = iter + 1
+    z = z - iter
+    bailout == 0  && |w| < 1000
+}
+
+2Ellm01            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  corners=-1.994336298107/-1.994329974115/4.215994666509e-006/-\
+  4.21599466721e-006/-1.994329974115/-4.21599466721e-006
+  params=0.1/0/0.6/0.3/0.2/0.4
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=4MMVzz<123>0GGz88<123>O00000<3>000
+  }
+
+2Ellm02            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  corners=-1.994336298107/-1.994329974115/4.215994666509e-006/-\
+  4.21599466721e-006/-1.994329974115/-4.21599466721e-006
+  params=0.1/0/1/0.5/0.2/0.5
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=00UzVz<123>G0GVzz<123>0GG000<3>000
+  }
+
+2Ellm03            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  corners=-1.994337108999/-1.994329163223/5.29718399954e-006/-\
+  5.29718400024e-006/-1.994329163223/-5.29718400024e-006
+  params=0.1/15/0.5/0.5/0.2/0.2
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=4MMVzz<123>0GGz88<123>O00000<3>000
+  }
+
+2Ellm04            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  corners=-1.994336965975/-1.994329306247/5.1064853332e-006/-5.\
+  1064853339e-006/-1.994329306247/-5.1064853339e-006
+  params=0.2/15/0.5/0.5/0.3/0.3
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=IRZsF_<123>C02Mov<123>HKS000<3>000
+  }
+
+2Ellm05            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  center-mag=+0.46896106330558320/+0.35509324887537790/19260.21\
+  /1/-70 params=0.12/25/1/0.5/0.2/0.5
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=00czz0<123>aG0zzz<123>UUU000<3>000
+  }
+
+2Ellm06            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  center-mag=-0.19837500384274340/+1.10023441784302400/535.456/\
+  1/-98.199 params=0.18/10/1/0.5/0.2/0.5
+  float=y maxiter=1000 inside=253 outside=summ
+  colors=00czz0<123>aG0zzz<123>UUU000<3>000
+  }
+
+2Ellm07            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset
+  center-mag=-0.62916771159874600/+0.68427324120602990/11958.15
+  params=0.065/0/1/0.5/0.2/0.5
+  float=y maxiter=3000 inside=253 outside=summ
+  colors=000z88<123>O00zqa<123>WRF000<3>000
+  }
+
+2Ellm08            { ; Copyright (c) Paul W. Carlson, 1998
+  reset=1960 type=formula formulafile=2ell.frm
+  formulaname=two_ellipse_mset passes=t
+  center-mag=+0.36126226339583390/+0.09037301453683470/2.340823\
+  e+008 params=0.7/0/5/2/2/4
+  float=y maxiter=2000 inside=253 outside=summ
+  colors=000z88<123>O00zqa<123>WRF000<3>000
+  }
