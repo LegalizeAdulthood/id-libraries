@@ -89,3 +89,97 @@ Dragon (ORIGIN) {; Mark Peterson
    z = sqr(z) + (-0.74543, 0.2)
     |z| <= 4
   }
+Richard11(XYAXIS) {; Jm Collard-Richard
+  z=pixel:
+   z=1/sinh(1/(z*z))
+    |z|<=50
+  }
+ZZ(XAXIS)[float=y] { ; Prof Jm using Newton-Raphson method
+  ; use floating point with this one
+  z=pixel,solution=1:
+   z1=z^z
+   z2=(log(z)+1)*z1
+   z=z-(z1-1)/z2
+    0.001 <= |solution-z1|
+  }
+Jm_27 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   sqrz=fn1(z), z=sqrz + 1/sqrz + pixel
+    |z|<=t
+  }
+Jm_11a {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(fn4(z)*pixel)))+pixel
+    |z|<=t
+  }
+Fzppfnth {; Lee Skinner
+  z = pixel, f = tanh(pixel):
+   z = fn1(z)+f
+    |z|<= 50
+  }
+Jm_15 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   f2=fn2(z),z=fn1(f2)*fn3(fn4(f2))*pixel
+    |z|<=t
+  }
+Jm_22 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   sq=fn1(z), z=(sq*fn2(sq)+sq)+pixel
+    |z|<=t
+  }
+Jm_10 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(fn4(z)*pixel)))
+    |z|<=t
+  }
+Jm_03a {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))+pixel
+    |z|<=t
+  }
+Jm_13 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(z)*pixel))*pixel
+    |z|<=t
+  }
+Jm_23 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(z)+pixel*pixel))
+    |z|<=t
+  }
+Jm_24 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z2=fn1(z), z=(fn2(z2*fn3(z2)+z2))+pixel
+    |z|<=t
+  }
+Jm_05 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2((z^pixel)))
+    |z|<=t
+  }
+Jm_04 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))
+    |z|<=t
+  }
+Bali {;The difference of two squares
+  z=x=1/pixel, c= fn1 (z):
+   z = (x+c) * (x-c)
+   x=fn2(z)
+    |z| <=3
+  }
+J_Laguerre2 {
+  c = pixel, z = P1:
+   z = (z*(z - 4) +2 ) / 2 + c
+    |z| < 100
+  }
+J_Laguerre3 {
+  c = pixel, z = P1:
+   z = (z*(z*(-z + 9) -18) + 6 ) / 6 + c
+    |z| < 100
+  }
+J_TchebychevS4 {
+  c = pixel, z = P1:
+   z = c*(z*z*(z*z-3)+1)
+    |z|<100
+  }
