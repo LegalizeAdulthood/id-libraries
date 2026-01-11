@@ -1,0 +1,57 @@
+Path: osiris.wu-wien.ac.at!newsfeed.ACO.net!Austria.EU.net!EU.net!Germany.EU.net!wizard.pn.com!satisfied.apocalypse.org!news.mathworks.com!news.alpha.net!uwm.edu!msunews!netnews.upenn.edu!vision5!jnw
+From: jnw@vision5 (Jonathan N. Wolfe)
+Newsgroups: sci.fractals
+Subject: Cubic Julia .par
+Date: 17 Apr 1995 20:55:29 GMT
+Organization: University of Pennsylvania
+Lines: 44
+Distribution: world
+Message-ID: <3mukk1$4is@netnews.upenn.edu>
+Reply-To: jnw@vision3.med.upenn.edu (Jonathan N. Wolfe)
+NNTP-Posting-Host: vision5.med.upenn.edu
+
+Ok, if you've never really explored the x->x^3 fractals, I have the .par
+file to whet your appetite! All of the same basic principles in the
+Mandelbrot set and Julia sets seem to carry over from the x^2 case,
+except that instead of bifurcating, everything trifurcates. So instead
+of seeing eightfold symmetries, you see 9 fold... And where you'd expect
+double spirals, you find triple ones. The .par file I'm including shows  
+a triangular triple-triple spiral construction. For non-fractint folks,  
+you can see this fractal by plugging the first two params listed  
+as the C value into a julia set of x->x^3+C.  
+        I found this one by going into the elephant valley of the  
+x^3 M-set, zooming one of the major spirals, then zooming one of the
+triple spirals, then doing it again, then taking a julia set from the
+inside edge of a mini-Mset. It's easy enough to retrace, if you really  
+want to see the details. Note that the little 3-fold black thing in the
+center is of course, NOT a mini-Mandel, but a mini-Julia taken from a
+mini-Mandel.
+        Here's what I want to know, and I invite answers from anyone who
+can contribute to an understanding of the M-J relationship:
+        I think I can understand why a Julia set of the form x->x^n+C
+has n-fold symmetry. But why does the associated M-set have (n-1) fold
+symmetry??? Why!????                                        -----    
+        Somebody please try to explain (and not in German, preferably!)
+
+Incidentally, after spending weeks in the Depths, this calculation seems
+to fly by in only about 10 minutes...
+
+
+Enjoy!
+        Jonathan
+
+
+tri                { ; Three fold beauty
+                     ; Julia3 by Jonathan Wolfe, jnw@vision3.med.upenn.edu
+                     ; Exquisite colormap, purplefire and turquoise
+  reset=1900 type=julzpower
+  center-mag=+0.00000000000000001/-0.00000000000000000/127.1075/1
+  params=-0.434029543478852/0.01601122703657975/3/0 float=y
+  maxiter=2000 inside=0
+  colors=000b2C<5>z00<8>zs0zv0zs0<7>z00<8>S1HO2JN2I<12>000<10>O2J<8>31a00d\
+  04f<8>0cz<7>05g00d20b<8>O2J<13>000806<7>E1B<4>Y1Bb2Cf1A<4>z00<8>zs0zv0zs\
+  0<7>z00<8>S1HO2JN2I<12>000<10>O2J<7>51_31a23c15e<4>0Oq0Ss0Wu0_w0cz0_x<6>\
+  05g00d20b<8>O2J<10>514313312201<9>O2J<2>Z2E
+  }
+
+.
