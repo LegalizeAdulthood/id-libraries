@@ -28,12 +28,12 @@ def main():
     
     for line in sys.stdin:
         # Parse: EntryName(LineNum): Formula entry name 'wrong' does not match case-sensitively (found: file.frm 'Correct')
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+Formula entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+Formula entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
         
         if match:
-            line_num = int(match.group(2))
-            wrong_case = match.group(3)
-            correct_case = match.group(4)
+            line_num = int(match.group(1))
+            wrong_case = match.group(2)
+            correct_case = match.group(3)
             
             wrong_case_escaped = escape_for_sed(wrong_case)
             correct_case_escaped = escape_for_sed(correct_case)
@@ -42,7 +42,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): Formula file 'wrong.frm' does not match case-sensitively (found: Correct.frm)
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+Formula file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+Formula file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
         
         if match:
             line_num = int(match.group(1))
@@ -56,7 +56,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): L-System entry name 'wrong' does not match case-sensitively (found: file.l 'Correct')
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+L-System entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+L-System entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
         
         if match:
             line_num = int(match.group(1))
@@ -70,7 +70,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): L-System file 'wrong.l' does not match case-sensitively (found: Correct.l)
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+L-System file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+L-System file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
         
         if match:
             line_num = int(match.group(1))
@@ -84,7 +84,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): IFS entry name 'wrong' does not match case-sensitively (found: file.ifs 'Correct')
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+IFS entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+IFS entry name '([^']+)' does not match case-sensitively \(found: [^ ]* '([^']+)'\)", line)
         
         if match:
             line_num = int(match.group(1))
@@ -98,7 +98,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): IFS file 'wrong.ifs' does not match case-sensitively (found: Correct.ifs)
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+IFS file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+IFS file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
         
         if match:
             line_num = int(match.group(1))
@@ -112,7 +112,7 @@ def main():
             continue
         
         # Parse: EntryName(LineNum): Colormap file 'wrong.map' does not match case-sensitively (found: Correct.map)
-        match = re.match(r"^\s*([^(]+)\((\d+)\):\s+Colormap file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
+        match = re.match(r"^  [^(]+\((\d+)\):\s+Colormap file '([^']+)' does not match case-sensitively \(found: ([^)]+)\)", line)
         
         if match:
             line_num = int(match.group(1))
