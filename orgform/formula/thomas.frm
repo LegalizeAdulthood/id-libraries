@@ -1,5 +1,5 @@
 
-frm:Squares {
+Squares {
  s2=sqrt(2)
  ampl=1/0.02
  ang=3.1415926535898/real(p1)
