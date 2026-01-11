@@ -1,0 +1,22 @@
+watanass           { ; image(c) JimWeaver 8/18/98 T=0:00:36.41 P-75 800x600
+                     ;  
+  reset=1960 type=formula formulafile=mongo.frm formulaname=mongo-12
+  function=recip/ident passes=b
+  center-mag=-1.18143/2.22045e-015/0.6048387/1/90 params=1/0/2/0
+  float=y bailout=4 decomp=128
+  colors=000<24>ZWK_XLaXL<4>maP<2>g`Oe_NcZN`YM_XL<21>553332221000011<23>Hb\
+  UIdVKeV<4>VlZ<3>NhXLgXJeWIcV<21>254243122000111223<20>QTbRVcSWeUXfVYf<4>\
+  dch<2>``hZ_hXZhVYgTXf<24>110<20>aMEbNEdOFePFgQG<4>iVOjXQjWP<3>iSJhRHfQG<\
+  24>000
+  }
+
+mongo-12 {  ;SOURCE: mongo.frm
+            ;ADD_TO: ORGFORM
+  z = pixel, c = (fn1(pixel) * p1):
+  x = abs(real(z));
+  y = abs(imag(z));
+  a = (x <= y) * (fn2(z) + y + c);
+  b = (x > y) * (fn2(z) + x + c);
+  z = a + b,
+  |z| <= p2
+}

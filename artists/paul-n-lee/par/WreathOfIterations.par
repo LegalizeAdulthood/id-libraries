@@ -1,0 +1,43 @@
+START 19.6 PAR-FORMULA FILE================================
+
+WreathOfIterations { ; 0:06:45.61 on a p233, 640x480
+  reset=1960 type=formula formulafile=critical.frm
+  formulaname=MandelbrotMix4 function=ident
+  center-mag=-0.1520966765735726/+0.00309934204235459\
+  /1.944641e+008 params=-0.1/11/1/-1/0/0 float=y
+  maxiter=1800 bailout=25 inside=0
+  logmap=177 symmetry=none periodicity=10
+  colors=000dGZdGZ<7>r3e<19>iFlShG<2>FqeBsm9mh<3>4TP3\
+  OK3TN<6>3te<5>`aHb`FeZDw87<6>j_3qg3<6>3K3<5>DfUc90s\
+  B9<6>bTd`VhWTg<6>2Md<3>IEXD9`<2>bLK<16>4LU2LU1IW<6>\
+  13f<21>olX<15>MPvDQxLOwSMwZKvdGz<8>gRXmXV<6>94T<8>W\
+  BDZCB_A7<22>tsy<6>wtZwtVwtT<4>wtOwtMwtN<13>wtY
+  }
+
+TestosteroneMidget { ; t=  1:51:25.32
+                     ; on a P233 at 1600x1200  Jul 04, 1999  05:52:18
+                     ; Image Copyright 1999 by Lee H. Skinner ver=1961
+                     ;  Version 1961 Patchlevel 75
+  reset=1961 type=formula formulafile=fractint.frm
+  formulaname=mandelbrotmix4 function=ident 
+  center-mag=-0.15199624454598850/+0.00467602232198407/22505.79/1/97.499
+  params=-0.1/11/1/-1/0/0 float=y maxiter=1800 bailout=25 inside=0
+  logmap=92 symmetry=none periodicity=10
+  colors=000xz`<8>xzMxzKxzIxzHxzFxzD<3>xzDxzDxyE<25>vRfvPgvOh<3>uIm<3>eKw`\
+  LzbOvdRqfUlfQhfLcgGZ<3>qeGtlBws6zz1zzC<2>zzz<3>jqdfo_blU<3>Mb8<21>qt8ru8\
+  tv8<2>xy8zz9zx9<6>zj7zh6zf6<2>z`5zY4zV5<3>zI5zE6wE6tD6qC6qC6<12>e9Ed9Fc9\
+  Gb9Ga8H<2>Z8IX8IV8H<5>L6FJ6EH6E<2>C5DA4CA4D<12>IFSIGTJHUJIVKJWLKY<3>IOZH\
+  QZHR_GS_FT_<7>AaN9bL8cJ<2>6fE5hC5hF<3>7lR8lU8mX<2>ApeBqiErj<9>fwtiwulxv<\
+  3>xzz<14>xza
+  }
+
+frm:MandelbrotMix4 {; Jim Muth
+a=real(p1), b=imag(p1), d=real(p2), f=imag(p2),
+g=1/f, h=1/d, j=1/(f-b), z=(-a*b*g*h)^j,
+k=real(p3)+1, l=imag(p3)+100, c=fn1(pixel):
+z=k*((a*(z^b))+(d*(z^f)))+c,
+|z| < l
+}
+
+END 19.6 PAR-FORMULA FILE==================================
+
