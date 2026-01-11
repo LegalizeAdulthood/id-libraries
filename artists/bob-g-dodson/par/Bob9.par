@@ -1,0 +1,143 @@
+; *-----------------------------------------------------*
+; BOB9.PAR
+; Fractal parameter file for Fractint V18.0
+; All images copyright (c) BG Dodson 1993
+; If you wanna use them for something, please ask.
+;              BG Dodson
+;              3295 Brenna Ave NE
+;              Salem OR  97303
+;              CIS 71636,1075
+; *-----------------------------------------------------*
+
+Arachnid_Artifact  { ; Spaceship Spider(?)
+                     ; BG Dodson June 1993 71636,1075
+                     ; Use the FRACTAL Luke!  
+                     ; All rights reserved - All colors preserved.
+  reset type=mandel(fn||fn) function=cosxx/sqr
+  corners=-54.09292/-33.59957/-89.30854/118.5742/-146.499/33.89958
+  params=0/0/0.5 float=y maxiter=32000 bailout=32000 inside=bof60
+  logmap=16 invert=1/0/0 decomp=128 distest=32000/71 finattract=y
+  periodicity=4
+  colors=000B00<2>K00O00R00V00Y00<5>r00<15>000<15>0pp<12>0BB077044000222<1\
+  4>hhh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>\
+  hh0<15>000<15>00r<15>000400700
+  }
+
+Neutron_Skein_14   { ; Not much to say is there?
+                     ; BG Dodson June 1993  71636,1075
+  reset type=julia(fn||fn) function=sinh/sqr passes=t
+  corners=-3.51748/1.4182/0.04406809/3.745828 params=0/0/8 float=y
+  maxiter=32000 fillcolor=12 inside=bof60 outside=summ logmap=old
+  decomp=256 biomorph=10
+  colors=000330000<15>00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222<1\
+  4>hhh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>\
+  hh0<13>660
+  }
+
+Rain_Forest_Blues  { ; Plant-like growths?
+                     ; BG Dodson // August 1993 // 71636,1075
+  reset=1800 type=lambda passes=b
+  corners=0.32616085/1.5402756/0.49285663/0.3731676/0.82069288/-0.16651942
+  params=0.84999999999999998/0.59999999999999998 float=y maxiter=32000
+  inside=epsiloncross outside=imag decomp=-2000
+  colors=00000O0PF00W00Z00b0h8000<7>00z00e<9>000<16>z0X<15>000<15>p0w<15>0\
+  00<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0e\
+  d0<11>IH3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<4>00K
+  }
+
+Invocaton_Basis    { ; Basis for FRACTAL INVOCATION GIF.
+                     ; BG Dodson // August 1993 // 71636,1075
+  reset=1800 type=mandel
+  corners=0.07897034/-2.631909/-1.818951/1.795553/-2.631909/1.795553
+  float=y maxiter=32000 inside=epsiloncross outside=real
+  invert=0.5/-0.5/0 decomp=-2000
+  colors=000f0F000330000003<14>eee<14>E0H<16>z00o00<14>000<15>0pp<12>0BB07\
+  7044000222<14>hhh<7>NNN5AUHHH<5>000<27>007017037<13>4S4<13>2A22921711511\
+  31000<15>rAr<15>000<15>hh0<11>BB0
+  }
+
+7.62_Projectile    { ; Fractal Stress Analysis of projectile path
+                     ; (c) BG Dodson August 1993
+  reset=1800 type=mandel(fn||fn) function=conj/ident passes=b
+  corners=-1.92295/0.9942985/5.273968/1.384304/0.9942985/1.384304
+  params=0/0/0.5 float=y maxiter=32000 bailout=1024 invert=1/0/0
+  colors=000<4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15>p0\
+  w<15>000<15>zzz<3>jjj<30>22i00h10f<14>G73I80K70<13>k00<16>II0<10>ut0<2>j\
+  i0gf0ed0<11>IH3FE4EI4DL3000
+  }
+
+Sun-Lit_Bio_Chain  { ; -OR_ Whatchamacallit with thingies.
+                     ; BG Dodson // August 1993 // 71636,1075
+                     ; All rights reserved
+                     ; Do not ingest, inhale or use as a suppository.
+  reset type=fn(z)+fn(pix) function=sin/sqr passes=t
+  corners=0.0290437/1.058953/-0.01255187/-1.385768/1.058953/-1.385768
+  params=0/0/1 float=y maxiter=32000 bailout=22 inside=bof60
+  outside=real decomp=256 distest=32000/200
+  colors=000yY3<33>v31v21u00<20>p00o00o00n00n00<7>j00j00j00j00j00<2>h00h00\
+  h00h00g00g00g00f00<6>d00c00c00b00b00<48>I33I33I33I33I33<36>111000001<44>\
+  80r<17>zc3<4>zZ3
+  }
+
+3D_Fractals_From   { ; Space!! "It looks real!"  "It jumps out of the screen!"
+                     ; (and maybe I'm just seeing something eh?)
+                     ; BG Dodson // August 1993 // Jonah revisited
+                     ; *BUT is it ART?*  <SNEER>
+  reset type=barnsleyj2
+  corners=1.1405533/0.69663461/1.610927/-1.496504/2.4723095/-0.1647473
+  params=0.59999999999999998/1.1000000000000001 float=y maxiter=20
+  bailout=22 inside=bof60 outside=summ
+  colors=000cc0<13>000<15>00r<15>000<15>r00<15>000<15>0pp<12>0BB0770440002\
+  22<14>hhh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000\
+  <15>hh0ee0
+  }
+
+Dali_At_The_Beach  { ; Strange...colorful...flotsom.
+                     ; BG Dodson 1993 71636,1075
+                     ; AKA Dali at the Carnival.
+                     ; <the fine print goes here>
+  reset type=barnsleyj2
+  corners=0.4212004/1.7680654/1.2155495/0.70850849/1.1494684/0.24457478
+  params=0.59999999999999998/1.1000000000000001 maxiter=15 bailout=22
+  inside=bof60 outside=summ
+  colors=000zz0<7>00O<8>00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222\
+  <14>hhh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<1\
+  5>hh0<12>990zz0
+  }
+
+Untitled           { ; Uh...something Geiger-like...
+                     ; BG Dodson 1993 71636,1075
+  reset type=phoenix passes=t
+  corners=0.511054814/0.465871068/0.982149139/0.994790177/0.488720927/1.01\
+  192746 params=0.56667000000000001/-0.5 float=y maxiter=22
+  bailout=1001 inside=bof60 outside=summ
+  colors=00000n00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222<14>hhh<1\
+  5>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<15>\
+  000<13>00k
+  }
+
+Dante's_Descent    { ; Into the lower regions of Hades.
+                     ; (c)BG Dodson 1993 // 71636,1075
+                     ; Alternate: "Fractal the Thirteenth: Julia Strikes Back"
+  reset type=phoenix passes=1
+  corners=-0.7133985/0.8386237/0.1131883/1.277197
+  params=0.56667000000000001/-0.5 float=y maxiter=22 bailout=1001
+  inside=bof60 outside=summ invert=0.194001/0.0626126/0.695193
+  colors=00000U<6>00r<15>000<15>r00<15>000<15>0pp<14>044000222<14>hhh<14>3\
+  33000000<26>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<\
+  14>330000003<6>00R
+  }
+
+Nightmare_I        { ; Casper on LSD?
+                     ; (c)BG Dodson 1993 // 71636,1075
+                     ; A selection from the ISDF library.
+                     ; [Institute for Severely Deformed Fractals]
+  reset type=mandphoenix passes=t
+  corners=0.384078737/0.433282203/0.6537203/0.621608115/0.417205833/0.6095\
+  50838 float=y maxiter=22 bailout=1001 inside=bof60 outside=summ
+  invert=0.00157626/0.416435/0.621086
+  colors=00000D<11>00r<15>000<15>r00<15>000<15>0pp<14>044000222<14>hhh<14>\
+  333000000<26>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0\
+  <14>33000000300600A
+  }
+

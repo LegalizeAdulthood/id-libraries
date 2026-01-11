@@ -1,0 +1,110 @@
+; *---------------------------------------------*
+; *  BOB10.PAR                                  *
+; *  Parameter file for Fractint V18.2          *
+; *  All Images Copyright (c) BG Dodson 1993    *
+; *  If you wanna use them for something,       *
+; *  please ask.                                *
+; *  Released 12/7/1993                         *
+; *---------------------------------------------*
+
+Nightmare_II       { ; Fractals from Beyond the Ectoplasm
+                     ; BG Dodson // 1993 // 71636,1075
+                     ; A selection from the ISDF library.
+                     ; [Institute for Severely Deformed Fractals]
+  reset type=mandphoenix
+  corners=0.4050776751/0.3967336453/0.6300700878/0.6172850592/0.4082106381\
+  /0.625892804 float=y maxiter=22 bailout=1001 inside=bof60
+  outside=summ invert=0.00157626/0.416435/0.621086
+  colors=00000D<11>00r<15>000<15>r00<15>000<15>0pp<12>0BB077044000222<14>h\
+  hh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0\
+  <15>000<2>00A
+  }
+
+Midnight_On_Haunts { ; Peak...the time of ghastly doings
+                     ; BG Dodson August 1993
+  reset type=manfn+zsqrd function=sin passes=t
+  corners=-0.055320814/0.24467919/0.1874739/-0.2125261/0.24467919/-0.21252\
+  61 float=y maxiter=20 bailout=1001 inside=bof60 outside=mult
+  colors=000USJ<5>33E<12>00z00o<14>000<15>r00<15>000<15>0pp<12>0BB07704400\
+  0222<14>hhh<15>000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>0\
+  00<15>hh0<6>QQ0kfh<3>QNO
+  }
+
+The_Goddess        { ; Of Fractals perhaps?  
+                     ; Copyright BG Dodson 1993
+                     ; 71636,1075
+  reset=1710 type=mandelfn function=cotan passes=b
+  corners=-0.8343881/0.8398201/0.04206603/1.300205 float=y maxiter=42
+  bailout=2500 fillcolor=255 inside=epsiloncross colors=000zzz<13>003
+  }
+
+Lovecraftian_item? { ; A scene from the UnderWorlde of the Damned
+                     ; BG Dodson August 1993
+  reset type=manfn+zsqrd function=sin passes=t
+  corners=-0.11601852/0.043581484/0.10632836/-0.10647164/0.043581484/-0.10\
+  647164 float=y maxiter=20 bailout=1001 inside=bof60 outside=mult
+  invert=0.05/0/0
+  colors=000UU0WW0<3>660330000<4>00H00L00P00T00X<6>00z<5>00a00X00T00O00L<5\
+  >000<15>r00<15>000<15>0pp<12>0BB077044000222<14>hhh<15>000<27>007017037<\
+  13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<7>NN0
+  }
+
+Tropical_Sunset    { ; Through branches
+                     ; BG Dodson October 3, 1993
+  reset type=mandphoenix passes=1
+  corners=-0.016529685/0.92141282/1.0826805/0.90663927/0.40562942/0.519801\
+  72 float=y maxiter=32000 bailout=1001 inside=epsiloncross
+  invert=0.5/0/0
+  colors=000131000303<11>g7Ck8Dn9ErAFoAF<14>000<15>hh0<14>330000003<14>00r\
+  <15>000<15>zzz<15>000<15>0pp<14>044000222<14>hhh<14>333000000<26>0070170\
+  37<13>4S4<13>2A2292171151
+  }
+
+Foolin'_Around     { ; With Sierpinskis again...
+                     ; BG Dodson October 1993  71636,1075
+                     ; Interesting "texture" and looks like its hand drawn
+                     ; in areas.
+  reset type=sierpinski passes=t
+  corners=1.2279999/0.82520831/2.0165961/0.096973925/1.7740589/1.0458245
+  float=y maxiter=32000 fillcolor=12 outside=summ logmap=old
+  decomp=256 biomorph=10 periodicity=0
+  colors=000bbj<25>00h<15>G73I80K70<13>k00<16>II0<10>ut0<2>ji0gf0ed0<11>IH\
+  3FE4EI4DL3000<4>0005k20n13r12v10z0<15>000<15>00z<14>000<16>z0X<15>000<15\
+  >p0w<15>000<15>zzz<3>jjj<4>ccj
+  }
+
+Phoenix_Nodule     { ; Low iteration of the Phoenix set
+                     ; BG Dodson 11/1993  71636,1075
+  reset=1820 type=phoenix passes=t
+  corners=-0.3522002098/-0.3127125854/0.8910197357/0.9180270204/-0.3509481\
+  589/0.8893503342 params=0.5635401095461946/-0.49686847599163736
+  float=y maxiter=20 bailout=32 inside=bof60 outside=imag decomp=16
+  colors=000z00<18>77E48F48J<9>13o12r01v00z<15>555<13>hhh<15>000<27>007017\
+  037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<15>000<15>00r00o00\
+  k00z<9>00D007003000<13>k00r00
+  }
+
+Optical_Delusion   { ; False boundry trace-derived "fractal" image
+                     ; BG Dodson // 1993 // 71636,1075
+                     ; False fractal image.  Must be generated at 640x480 or
+                     ; greater (I think).
+  reset type=mandel(fn||fn) function=zero/tan passes=b
+  corners=-1.026128/1.501872/-0.948/0.948 params=0/0/0.5 float=y
+  maxiter=32000 bailout=666 fillcolor=255 inside=epsiloncross
+  distest=-2000/71
+  colors=000wB2<8>v31v21u00<21>p00o00o00n00n00<18>g00g00f00e00<5>d00c00c00\
+  b00b00<82>644644544444<57>yyyzzzzzzzzzzzzzzzzg3<34>wC2
+  }
+
+Fury_of_Triton     { ; The Final Sacrilige of Atlantis
+                     ; BG Dodson / December 1993 / 71636,1075
+  reset type=barnsleyj3
+  corners=-1.2381606/-1.0611355/0.046258607/-0.18977493/-1.0611355/-0.1897\
+  7493 params=0.10000000000000001/0.35999999999999999 float=y
+  maxiter=32000 bailout=16001 inside=epsiloncross
+  invert=0.051944/-1.2056/0
+  colors=000wz000Z<8>004<16>z00<31>2kk0mm0jj<10>0BB077044000222<14>hhh<15>\
+  000<27>007017037<13>4S4<13>2A2292171151131000<15>rAr<15>000<15>hh0<15>00\
+  0<15>00r<3>00e
+  }
+
