@@ -1,0 +1,2134 @@
+comment {
+  This Fractint parameter file is by Bradley Beacham, (c) April 1994.
+  I encourage you to copy and distribute it, but only if it is unaltered.
+
+  Many of these parameters need to use the formula file OVERKILL.FRM; if
+  you don't have that file, they won't work.
+
+  Most of them have already been released in one of the following files:
+  BEACHAM2.PAR, BLBFORMS.PAR, MONGO.PAR, & SLACK.PAR.  This file collects
+  most of the images from those files, makes changes (sometimes major) to
+  all of them, and adds lots of new images.
+  
+  I welcome any comments.  Reach me at:
+
+    CIS: 74223,2745    Internet: 74223,2745@compuserve.com
+
+    U.S. Mail: Bradley Beacham
+               1343 S. Tyler
+               Salt Lake City, Utah  84105
+               U.S.A.
+}
+
+{------------------------------------------------------------------------}
+
+comment {
+  The original versions of these fractal recipes were previously released
+  in BEACHAM2.PAR (June 1993).
+}
+
+Nova               { ; Color-cycle it.  Inna Gadda Da Vida, Baby!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=newton passes=b corners=-0.416/0.416/-0.312/0.312
+  params=5 float=y
+  colors=000nVIuZL<7>000<7>SUX<7>000<7>unQ<6>874777<6>zzz<7>000<7>zWW<7>00\
+  0<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3jZ<4>2IE1C916500025\
+  7<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<4>00N00F008000250<6>Lf0<7>00\
+  0<7>c0N<7>000<5>gQG
+  }
+
+Agate              { ; Looks best at high resolutions
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=magnet2j
+  corners=-6.0247041/-6.0609523/4.3577948/4.4481022/-6.081101/4.4329907
+  params=1.9839577711138601/0.25421695536900502 float=y periodicity=0
+  colors=000B5DRIT<5>6kJUJX<4>XpkSS`QfgOunXIW`OZdUaiUFzj0RDR<6>4A0YE`aGgPI\
+  W<3>1ddRGT<6>3aHdHMoLEzP5XLV<3>ltZ_BV<3>z0bk10TJNSQFRX8Qc0ROYNZbJigUGW<5\
+  >R`lRJZ<3>DitQN_<3>AzwYPR<2>lyHRR_NeeSCW<4>G6eXCT<5>p6HSIU<6>7sYTFR<6>IT\
+  5WKQ<4>hs61rlWDX<6>kGtPKS<2>7eLSKR<2>MdFSMX<3>JylWDO<2>dB3ccc<103>ccc
+  }
+
+Scaly              { ; The Heartbreak Of Psoriasis
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=barnsleyj2 passes=2
+  corners=-1.45837/-1.0361779/-1.1586914/0.13059598/-1.9252248/-0.53619665
+  params=0.59999999999999998/0.94999999999999996 float=y outside=mult
+  colors=00073f<26>rSUtTTtTT<27>`CM`CL_BLZAKZAK<11>S9JR9JQ9JP8IO8H<13>000<\
+  28>jIE<5>TICQICPIC<8>II8HI8GJ7FK7<14>9_E8aF8`F<23>7BA7AA79A6795574452231\
+  11<29>VVeXWgWVg<29>21g00g10g31g52f
+  }
+
+Frosty             { ; Delicate Mandelbrot
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandel passes=b
+  corners=-0.4642972/-0.45395235/0.576501952/0.5842607 float=y
+  maxiter=1000
+  colors=000oPF<45>_HN_HNZIO<21>MTd<16>p`_r`_r`_<54>RxfRxfSwe<46>sfW<15>PR\
+  r<35>xQzyQzxPy<6>vNs
+  }
+
+Alien              { ; Here's looking at you!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=cosxx/sqr passes=t
+  corners=-0.3730011/0.37069702/3.0532227/3.6107636 params=1/0/1
+  maxiter=1000 potential=255/400/0
+  colors=000PWWCAT<17>_Mn<8>7EE<22>xUg<11>AQ2<16>t2C<11>Rjv<3>hBW<28>vtewv\
+  fute<12>KNO<9>pPW<11>dOObNNbMP<10>l3q<7>teIujDtjD<13>aaM_`N__N<26>a0RmUw\
+  <7>nUsoTrnUm<5>f_Jd`Dca8ab2`a6<4>RXR
+  }
+
+Pyramid-Power      { ; X-tra Mystical! (Integer-math artifact.  Oh well...)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn(z)+fn(pix) function=cosxx/ident passes=2
+  corners=-9.544263/7.978171/4.518498/11.07753 params=0/0/1
+  potential=255/200/500
+  colors=CCC71E<2>aAB<7>b5TiPbqhlznu<3>gYS<6>WSg<7>xl6<4>oOVmJ`mLXmOT<17>0\
+  3z<2>00Uccc<190>ccc
+  }
+
+Mothership         { ; A maternal UFO
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn(z)+fn(pix) function=tanh/cos passes=2
+  corners=-0.972139/-0.33359492/1.0950522/1.590898 params=0/0/1
+  maxiter=1000 potential=255/200/500
+  colors=000D3C<15>T8MU8MTAL<11>MMJPVOMNI<2>KQIEBy<27>KRJ61s<22>HLRPEQ<14>\
+  Z76_65_85<12>a`1ab1_`1<14>E97C77C98<25>2xi2zj4xj<21>tKbvUfxbjXMX66K<23>w\
+  r6yt5yt7<27>vpm<5>91AB2BC2C
+  }
+
+Thorns             { ; Electric succulents
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=lambdafn function=exp passes=2
+  corners=-1.171661/0.3766937/1.165939/2.326721
+  params=3/0.40000000000000002 maxiter=500 inside=epsiloncross
+  potential=255/800/50
+  colors=000LXa<20>mxPnyPnxQ<19>nifnignhhnhingj<21>UXZTWYSYZ<13>GzmavXwrG<\
+  17>1en<13>QbLRaJTaHV`FX`DY`B<23>nuE<6>ZyA<16>xED<6>X5e<27>z_9<21>H4BeJL<\
+  14>7Jg<8>KWa
+  }
+
+Black-Hole         { ; Plane of galaxies getting sucked in...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn(z)+fn(pix) function=sqr/exp
+  corners=-0.823685944/-0.719873488/0.743150532/0.661680937/-0.747209728/0\
+  .64118731 params=0/0/1/1 float=y maxiter=250
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y\
+  <59>002000000
+  }
+
+YourBrainOnDrugs   { ; Any questions?
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=manzzpwr passes=t
+  corners=-0.405009/-0.193937/0.20716/0.365464 params=0/0/2 float=y
+  maxiter=300 inside=maxiter potential=255/400/100 finattract=y
+  colors=000sap<4>YN`TJXR_`Ppe<6>ftt<4>QJl<6>TeuUiwWij<2>dk5<2>pD2<5>qoQrv\
+  VqvY<3>ltm20tUx_<2>_3K<3>bFK<3>esB<5>gBFh3GjDQlO_Qj_Xtb<6>eCc<10>sIK<13>\
+  RkjOnlNjk<6>GFY<13>mqD<15>Csl<3>wNB<14>rWerWgsWi<5>xXvYFt<2>LCF<10>7TB<1\
+  5>iAukIjmR_<4>_oM<3>2J1<7>0fR<6>3aD<3>qKJ<6>OnTYSUg5V<3>jQ4<4>AQxIPpROgM\
+  W_GcSViKioB
+  }
+
+Pyramid-Power-2    { ; A radient pyramid, or maybe a walkway down a long tube
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=spider
+  corners=-0.14224702/0.10421205/0.16544074/-0.16311801/0.10421205/-0.1631\
+  1801 float=y inside=zmag outside=summ periodicity=4
+  colors=000000<7>ZW5<6>089<8>SJ9VL9YM9aOAbPA<14>lV4<4>d_Ec`GcaG<22>zz0<11\
+  >QgoSfnTdn<16>8Af68e56e34d22d00c<2>34b45a56`68_79_<22>WcJYeIXfH<7>SkBccc\
+  <103>ccc
+  }
+
+  
+Burning-Cross      { ; Semi O'Keefeish
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=cosxx/sqr passes=2
+  corners=-0.8520355/0.8548126/-1.588272/0.4590912 params=1/0/1
+  maxiter=1000 potential=255/400/1000
+  colors=000gUR<33>jzT<12>rM9<8>sINsHOsHO<25>yVHyVGyWGzXFyXF<12>icIgdIfeId\
+  eIcfJ<12>NnMLnMKoMIpNIpNIpN<16>KxFKxFLwH<2>NvOOuQPtSQsVRrX<10>`iu<18>TTZ\
+  <3>43L<28>X2PY2P`CL<3>jo5mz0mu2<8>h4S<2>e9Q<4>zDQ<8>hMQfNRfOR<5>gTR
+  }
+
+Coils              { ; Pretty, with odd blotchy effect at less than 800 X 600
+                     ; (Apparently blotches are integer math artifact...)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julia
+  corners=0.00895549916/0.902913971/-0.23426567/0.268836/0.0892932378/-0.3\
+  4137825 params=-0.75069640214624/-0.0360122881985908 maxiter=1000
+  colors=000TYQ<2>1cF<5>LHEPDDRDM<3>bEwWAuO6sH2q8WFJ5q<4>PDsRFtRKo<3>RgT<7\
+  >P3C<6>m6e<7>sXcEPEILELHEPDD<3>_Ena`bdbdgdf<2>5JzsRzlVYdZ4<5>4oQ<5>HNpKI\
+  uKQu<2>Nmtsm`Uge3`k<7>4Gc<3>ixi<5>_fOYcKUeN<3>Cl_<5>Yff<5>sUQRoZUqWXsSV7\
+  lV8pVAtVCx<2>`_M<3>IK2SwAicmW38WFWXRt<6>h1W<2>6e6wZm<7>quP<6>G_4<4>6Ui<5\
+  >el9<5>naN<5>VRE<5>bhpdlwchq<5>TKE<4>zD5<2>Nfg<3>JRa<5>JOR<5>EuU<4>aE`V8\
+  QN2F<2>OEVPI`QOY<4>_qJawFeiOjVXaWU
+  }
+
+Berries            { ; Ril purty-like
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=sqr(1/fn) function=cotan
+  corners=-3.077955/3.077955/-2.308466/2.308466 float=y
+  potential=255/50/10 periodicity=0
+  colors=CCCYCY<10>sCs<20>ECsCCsCEs<6>CSsCUsEUq<20>z_0k00000ECE<20>sCs<20>\
+  ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCq\
+  CC<21>ACCCCC<9>WCW
+  }
+
+Lace               { ; Another delicate Mandelbrot
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandel
+  corners=-0.15394824180361091/-0.15394824172659122/1.0305292648126529/1.0\
+  30529264869446 float=y maxiter=1500 outside=real logmap=-4
+  colors=000TPD<4>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcsvcsvc<13>UMHSJFQ\
+  IJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8SH9QJANKBLMCI<6>_VZ`Y`b`cdcf<4>nru<\
+  15>OI5<15>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7T\
+  a<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1KM2KN3KO4J<12>zz0<7>``9YYAXVBVSC
+  }
+
+Scaly-3            { ; Scalloped
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=sqr(1/fn) function=cotan
+  corners=-1.08344/1.08344/-0.81258/0.81258 float=y maxiter=256
+  decomp=16
+  colors=000<7>zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7\
+  >xz0<7>000<7>3jZ<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6\
+  >008000250<6>Lf0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874
+  cyclerange=0/255
+  }
+
+UFO                { ; Piloted by Elvis & Bigfoot
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=exp/sqr
+  corners=-1.471512/0.1865692/-1.868683/-0.6165009 params=3/0/1
+  maxiter=1000 potential=255/450/1000
+  colors=000<3>Q7E<10>z00<14>zvvzzzxvw<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuF\
+  CvHCxIBzKA<2>zREzUFzXGz_HzaJ<8>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>DGdBEcBE\
+  c<29>BBLAAKCDK<14>kuC<15>AAKDAJ
+  }
+
+SpiralJulia        { ; Color-cycle this one too
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julia
+  corners=-1.490262/1.490263/0.5610463/-0.5610461/0.1213306/-1.587745
+  params=-0.161934415/-0.65517920149999997 float=y maxiter=500
+  colors=000444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15\
+  >zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15>zz\
+  0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<13>888
+  }
+
+Scarab             { ; Pretty & quick
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=magnet1j
+  corners=2.30928/-3.888877/-4.158274/4.105934/-3.888877/4.105934
+  params=4.3600000000000003 float=y invert=0.915324/0/0 decomp=256
+  periodicity=0
+  colors=000CHO<5>8DN8DN5IW<34>cpXdqYdqYdqY<75>NG5NG4NF4ME3ME4NE6<11>THRUH\
+  TUHVUHXVHZWI`<54>dmRdmRclR<52>CHO
+  }
+
+UnderTheRainbow    { ; More peculiarity 
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=cos/cotanh
+  corners=-2.462302/0.336398/0.074891/2.173917 params=1/0/1 float=y
+  bailout=5 potential=256/256/0
+  colors=000LOXILV<8>IXOHZNJ`N<9>_oN<14>rD6tB5u84w63x32z00<7>zz0<7>z70zG0<\
+  12>zz0<12>zI0<11>zz0<6>zA0<15>zz0<15>zF0<15>uu6<10>xb3xa2x_2yZ1yX1zV0<14\
+  >kVvjVzkUw<14>zA0<15>zz0<14>w03<4>c0N<5>mzm<11>NRY
+  }
+
+Wishbone           { ; I love this one.  Are those strands of DNA?
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=sqr/log
+  corners=1.332221/-1.559779/-1.901388/1.954612/-1.559779/1.954612
+  params=1/0/1 float=y bailout=4 decomp=256 colors=@royal.map
+  }
+
+Flashback          { ; Acid washed
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=phoenix
+  corners=0.025335010761/0.026758451881/0.9256196417/0.9285865912/0.024423\
+  313805/0.9268352376 params=0.56667000000000001/-0.5 float=y
+  decomp=128
+  colors=000mmtllummu<20>000<11>H0RJ0TK0VM0YN0_P0a<4>W0mY0pZ2n<15>rkDtnAuq\
+  8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>H\
+  JLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornn\
+  rnnsmms
+  }
+
+Local_Disturbance  { ; Lens-like effect.  Camera viewfinders?
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandel(fn||fn) function=log/flip
+  corners=-1.29718/1.93364/-1.48555/0.936554 params=0/0/0.5 float=y
+  colors=00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJ\
+  IgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>\
+  02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<27>ppqooqoornnrnnsmmsmmtllummu<20\
+  >000<4>70B
+  }
+
+Moire_Spiral       { ; Intricate, beautiful, nifty, keeno, jet
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=lambda(fn||fn) function=conj/cosh passes=t
+  corners=0.57226563/1.1087036/-2.4682922/-2.0661316
+  params=1/0.10000000000000001/1 float=y colors=@chroma.map
+  }
+
+Lifesaver          { ; Vaguely nautical looking
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julia(fn||fn) function=sqr/sin corners=-4/4/-3/3
+  params=0/0/26 float=y potential=256/275/0
+  colors=0008be<14>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<31>nnsmms\
+  mmtllummu<20>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P1\
+  1<6>LCCKDDKEEJFFJGG<2>HJLHLMGMNGNOFOQ<11>9ad
+  }
+
+Brass_Buttons      { ; Infinite stacks of 'em
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=manlam(fn||fn) function=sinh/ident
+  corners=-0.5485621787/-0.5426037787/0.8765780875/0.8810468875
+  params=0/0/10 float=y decomp=256 colors=@volcano.map
+  }
+
+Wake               { ; Ripples behind your boat
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandphoenix
+  corners=0.134121659/0.360073/0.754789729/0.353297635/0.408180347/0.38937\
+  8146 float=y colors=@blues.map
+  }
+
+Jason              { ; Oooooo, fer scary!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=sqr/recip
+  corners=1.533787/-1.874213/-2.28033/2.26367/-1.874213/2.26367
+  params=1/0/1 float=y bailout=4 potential=256/500/0
+  colors=000zz8<13>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>00\
+  0<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<1\
+  3>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0zz4
+  }
+
+{------------------------------------------------------------------------}
+
+comment {
+  The original versions of these fractal recipes were previously released
+  in BLBFORMS.PAR (June 1993).
+}
+
+First              { ; Sample from my first home-grown formula      (ok-01)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=cosh corners=-0.3159084/-0.2941552/4.6225344/4.6388493
+  params=-4 float=y decomp=256
+  colors=000_ao<21>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<14>zvvzzzxv\
+  w<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvHCxIBzKA<2>zREzUFzXGz_HzaJ<8>zzU<\
+  15>9C`ADaBEc<46>xxyzzzyyz<22>`bo
+  }
+
+MandelWeird_A      { ; Mandelbrot with other odd bays intruding     (ok-01)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=sqr passes=t corners=-0.86817/-0.519086/0.081326/0.343137
+  params=10000 float=y maxiter=500
+  colors=000<14>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<\
+  15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003
+  }
+
+MandelWeird_B      { ; Zoom of MandelWeird_A.  Very peculiar.       (ok-01)
+                     ; I didn't expect to see straight lines here...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=sqr passes=2
+  corners=-0.7124472/-0.7019049/0.26717004/0.27507673 params=10000
+  float=y maxiter=500
+  colors=000000<15>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c\
+  00<14>300000020<14>0c0<15>zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<1\
+  4>003
+  }
+
+Swags              { ; Graceful forms                               (ok-01)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=tan
+  corners=-1.206036/-0.914103/0.195088/-0.194156/-0.914103/-0.194156
+  params=-4 float=y maxiter=1000 potential=256/256/0
+  colors=000550330000<15>zz0<22>000<2>111222333444444<80>zzz07B<94>0du<6>z\
+  z0<21>880
+  }
+
+Shotgun_A          { ; Buckshot Mandelbrot, EXTREME complexity      (ok-01)
+                     ; Go watch a movie, this one's slow...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=sqr
+  corners=-0.707281914/-0.707153298/0.2715028279/0.2715992896
+  params=10000 float=y maxiter=500 colors=@chroma.map
+  }
+
+Shotgun_B          { ; Less porous than Shotgun_A,  more variety    (ok-01)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-01
+  function=sqr corners=-0.2406983/-0.2121238/1.0179771/1.0394347
+  params=10000 float=y maxiter=500
+  colors=00009XPOT<4>KQVKQVLRV<4>PWX<6>BkM9nK9mK<25>3IE3GD3FD3DC3CC2AB<20>\
+  iT6kU5mV5oW4qX4tY3<62>wpFwpFwoF<42>lT3lS3lR3lQ3kP2<26>5F9<13>ZZBi_Gt`L<1\
+  9>cVO
+  }
+
+BEM_A              { ; Bug Eyed Monster 'A'                         (ok-02)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-02
+  function=cotanh passes=2
+  corners=-0.597666/0.398718/0.667441/-0.661071/0.398718/-0.661071
+  float=y maxiter=16 decomp=256 colors=@blues.map
+  }
+
+Peek_A_Boo_Cave    { ; Kilroy was here                              (ok-02)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-02
+  function=sin corners=-0.795294/0.324706/0.015726/0.855726
+  params=1/0.29999999999999999/-3 float=y potential=256/256/0
+  colors=000NAA<7>GEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>z\
+  V1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<14>OAA
+  }
+
+Loopy              { ; Delicate                                     (ok-03)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-03
+  function=sin/recip corners=0.231059/0.396384/1.136204/1.260198
+  params=100 float=y
+  colors=000``v<6>oiw<36>76D<15>vWT<24>yvJzxIzwI<36>ZBTZ9UY8UY6VX5V<2>V0X<\
+  17>X9bccc<103>ccc
+  }
+
+Surprise!          { ; Surprise!                                    (ok-03)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-03
+  function=tan/tanh passes=t
+  corners=-0.256569/0.259674/0.002592/0.389774 params=-4 float=y
+  maxiter=1000 fillcolor=0 potential=255/200/0
+  colors=000j39Z6HN9PJSSFkW<7>R9A<5>X3iY2pX4j<5>QL6<6>90d<3>LP`PW_RXZ<5>gb\
+  SjcRk`T<6>nGc<3>AtW<5>TMs<6>tTV<2>bPfWNkSJgNEcI9Z<6>oHV<5>Dj6<2>4KiToGTo\
+  LSpQjitlkunnw<6>C6`<4>8yH<2>8ZzW9lku_<5>BHX<6>3bY<5>J8aM3bQBZ<4>foC<4>R5\
+  W<3>VW8Wb2Z`8<6>yGt<2>oXW<5>9IE<6>80K<3>qFu`7R<5>UL3<3>7Oe<7>Imu<2>3ft<2\
+  >Tnt<4>TLtSEuUJm<3>deFMl_3tuG2JsO`cKXNGS<5>NeiOjmMkk<3>Bqa<2>EptFozEdq<2\
+  >C9Q<6>q29<3>u11
+  }
+
+Surprise2          { ; One of my favorites                          (ok-03)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-03
+  function=tan/tanh corners=-0.0361522/0.0361597/0.1188169/0.1730509
+  params=-4 float=y maxiter=1000 potential=255/200/0
+  colors=133000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>rqstttsrt<13>`\
+  LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<15>000<15>6Zk<15>ttt<15>6Zk<1\
+  3>156 cyclerange=0/255
+  }
+
+Pharaoh            { ; Decomp zoom of Surprise!  Nice.              (ok-03)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-03
+  function=tan/tanh corners=-0.0407914/0.0413119/0.3162595/0.377837
+  params=-4 float=y maxiter=1000 decomp=256 colors=@altern.map
+  }
+
+Frankenbrot        { ; Plenty to zoom into                          (ok-04)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-04
+  function=sqr/cosh corners=-4.88/4.88/-3.66/3.66 params=500 float=y
+  colors=000<7>zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7\
+  >xz0<7>000<7>3jZ<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6\
+  >008000250<6>Lf0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874
+  }
+
+X_Marks_It         { ; Zoom of Frankenbrot                          (ok-04)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-04
+  function=sqr/cosh corners=1.99474742/2.00351722/2.1291223/2.13569965
+  params=500 float=y
+  colors=000GC0<7>YQ0`S0aU0<14>zz0<15>i70<15>000<15>S5N<15>zz0<15>XX8VW8TU\
+  8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15\
+  >000<5>DA0
+  }
+
+Siamese_Triplets   { ; A Mandelbrot Triptych                        (ok-04)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-04
+  function=sin/sqr corners=-3.85648/0.689059/-1.704577/1.704577
+  float=y inside=bof60 outside=real
+  colors=000VRR<14>644433222111000www<27>333111000000iXceU`<23>64653432321\
+  1101000zb0<25>960740530310110000`QVZPUYOTXNR<11>JCGICFGBD<8>534423312111\
+  100000S8`<20>82B71A619517416315204203101001000kmx<27>445223111000_mj<27>\
+  244122111000ohh<10>XSS
+  }
+
+Formica            { ; Odd                                          (ok-05)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-05
+  corners=-2/1.999997/-1.499996/1.5 params=0/-1/-0.69999999999999996
+  float=y decomp=256 colors=000770<7>110000000000<167>zz0zz0yy0<72>880
+  cyclerange=0/255
+  }
+
+Spiral_#922        { ; Color cycle it with different palettes       (ok-05)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-05
+  corners=-1.338243/1.077757/-1.105372/0.706628 params=-2/0/1 float=y
+  decomp=256
+  colors=00z<6>zzz<7>z0000u<6>uuu<7>u0000p<6>ppp<7>p0000k<6>kkk<7>k0000f<6\
+  >fff<7>f0000a<6>aaa<7>a0000X<6>XXX<7>X0000S<6>SSS<7>S0050X<5>POTSSSTPP<6\
+  >X05A0a<5>USYXXXYTU<6>a0AF0f<5>ZXbaaabXZ<6>f0FK0k<5>c`gfffgac<6>k0KP0p<5\
+  >hdlkkkleh<6>p0PU0u<5>mhqpppqim<6>u0UZ0z<5>rmvuuuvnr<6>z0Zc0z<6>zzz<7>z0\
+  c
+  }
+
+DeltaBrot          { ; An inside-out triangular Mandelbrot-type     (ok-06)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-06
+  function=sqr/sqr corners=-2.032336/2.032334/-1.524225/1.524256
+  params=1 float=y
+  colors=TG1<3>000<7>zzz<7>000<7>f0R<7>000<7>ISc<7>000<7>unQ<7>000<7>zXz<7\
+  >000<7>IFz<7>000<7>xz0<7>000<7>zDf<7>000<7>Jfz<7>000<7>ila<7>000<7>KAa<7\
+  >000<6>DQ`FUfERa<6>000<7>zdB<7>000<7>z06<7>000<6>CQWEU`DRX<6>000<7>uV1<2\
+  >`K1 cyclerange=0/255
+  }
+
+Aperture           { ; A look inside                                (ok-06)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-06
+  function=cotan/cotan corners=-0.294601/1.659944/0.405306/1.871215
+  params=-3.3999999999999999 float=y potential=256/300/0
+  colors=000CBBzzz<46>zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvu\
+  vvvuwvuuuuutuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppo\
+  pppoqpooooonooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjji\
+  jjjikjiiiiihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddc\
+  dddcedcccccbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZY\
+  ZZZY_ZYYYYYXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTS\
+  TTTSUTSSSSSRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNM\
+  NNNMONMMMMMLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHG\
+  HHHGIHGGGGGFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBD
+  }
+
+Three_Ways         { ; Another bizarre Mandelbrot variation         (ok-06)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-06
+  function=flip/sqr corners=-2/2/-1.5/1.5 params=-1 float=y
+  colors=VPL<3>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6>Lf0<7>000<7>c0N<7\
+  >000<7>uZL<7>000<7>SUX<7>000<7>unQ<7>000<7>zzz<7>000<7>zWW<7>000<7>pf0<7\
+  >000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3jZ<6>165000257<6>Jfz<7>000<2\
+  >NIG cyclerange=0/255
+  }
+
+PseudoBrot_#417    { ; Elegant                                      (ok-07)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-07
+  function=sqr corners=-1.977799/1.109832/-1.142694/1.17303 params=100
+  float=y inside=0 outside=imag
+  colors=000PEe<52>poXPEe<63>AdoQHe<10>fsiPEe<17>LEcccc<103>ccc
+  }
+
+Jolt               { ; Zoom of fractal in PseudoBrot_#417           (ok-07)
+                     ; This is a slow one, I'm afraid, but I still like it
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-07
+  function=sqr
+  corners=0.3333308570465/0.333330893880809/0.978437535554421/0.9784375631\
+  801 params=100 float=y
+  colors=000zz0a8V<2>TKnmCKzG9YCV<5>AeURRS<4>pN9<2>VrURRA0VBkc7eu4NDzkMF<3\
+  >PIfiSM<3>_sn<7>I4cQQeCauQ_fQihPsjTUb<6>owDbjT<3>Oilzz0<16>FYlCWo8fr<5>G\
+  Sz<4>vaT<3>qyt<6>eqx<5>BMM<7>`1K<7>aO1<3>0fL<3>GoO<5>wTA<5>dLqgWskfuccc<\
+  103>ccc
+  }
+
+Whirlpool_K        { ; Mucho self-similarity, highly swell          (ok-07)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-07
+  function=cosh
+  corners=1.0994230504/1.10232987/1.365902352/1.3665133201/1.1001762408/1.\
+  3648980982 float=y colors=@volcano.map
+  }
+
+Fingernails        { ; Lots of detail                               (ok-08)
+                     ; Very different from previous version.
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-08
+  function=sqr/sin
+  corners=1.79083547/1.75093115/-0.0266133156/0.0265928585/1.75093115/0.02\
+  65928585 params=10000 float=y
+  colors=000iGG<9>xuuzzzyww<14>c00<14>300000020<14>0c0<15>zzz<15>0c0<14>03\
+  0000002<14>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>033000\
+  200<13>`00c00d44f88gCC
+  }
+
+Kalaidoscope       { ; Subtle discontinuities                       (ok-08)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-08
+  function=sqr/exp corners=0.137596/0.335996/0.644298/0.793098
+  params=100 float=y potential=255/200/0
+  colors=000hEUg9Re5Oc0K<13>xIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzzyyz<45>\
+  DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<15>zzz<9>jIX
+  }
+
+Ditch              { ; Nice image with odd fault-lines              (ok-08)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-08
+  function=sin/log
+  corners=0.185529588/0.273494388/0.0583302/-0.0589562/0.273494388/-0.0589\
+  562 params=-3 float=y maxiter=255 potential=255/350/0
+  colors=000030000<15>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<\
+  14>033000200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c\
+  0<13>050
+  }
+
+Waffle_Fractory    { ; Ribs                                         (ok-09)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-09
+  function=sin corners=-0.035213/0.338733/2.381117/2.661577
+  params=100/0/100 float=y potential=255/300/0
+  colors=000AA0<3>220000000<29>000000200<29>zKU<30>211000000<14>000010030<\
+  29>0z0<30>020000000<14>000110330<29>zz0<25>CC0
+  }
+
+Swiss_Army_Hooker  { ; Or is it Freddy Kruger's cuticle?            (ok-09)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-09
+  function=cosh passes=b
+  corners=-1.017869/-1.187068/0.903966/1.129564/-1.187068/1.129564
+  params=4/0/100 float=y outside=real
+  colors=0000AA<2>033000200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0\
+  <15>zzz<15>0c0<14>030000002<14>00c33d77eccc<103>ccc
+  }
+
+Wedgies            { ; Uplifting                                    (ok-09)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-09
+  function=flip
+  corners=1.2048383/1.7153133/0.57563913/0.42592267/1.4077479/0.23999034
+  params=-3/2/-2 float=y potential=256/350/0
+  colors=000DAA<3>644433222111000www<27>333111000000iXceU`<21>969857646534\
+  323211101000zb0<23>D90B70960740530310110000`QV<6>SJNRIMQIM<15>6455344233\
+  12111100000S8`<18>A3D92C82B71A619<4>203101001000kmx<27>445223111000_mj<2\
+  7>244122111000ohh<21>ECC
+  }
+
+Budding            { ; Interesting pattern of bays                  (ok-10)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-10
+  function=sinh
+  corners=0.69183167/0.7009253/-2.31692/-1.490063/0.29821428/-1.792097
+  params=4/2/2 float=y
+  colors=0000Vg<6>0du<12>zz0<19>IM7FK8DI8AG98E9<2>07B<22>0du<12>zz0<10>000\
+  <31>zzz<15>07B<6>0GOccc<103>ccc
+  }
+
+Shards             { ; Pointy!                                      (ok-11)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-11
+  function=sqr/sqr corners=-0.447082/0.423122/-0.326327/0.326327
+  float=y
+  colors=000<15>6Zk<15>ttt<15>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WG\
+  dZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<14>0\
+  22
+  }
+
+Ocarina            { ; Or is it an abalone?                         (ok-11)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-11
+  function=sin/cos corners=-0.8143449/-0.7966489/0.2060284/0.2193004
+  params=-3 float=y decomp=256
+  colors=000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<42>8zz6zz5zz3zz2zz0zz<42>\
+  08z06z05z03z02z00z<60>002000000
+  }
+
+Gash               { ; Jack The Ripper was here                     (ok-11)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-11
+  function=sqr/sin corners=-0.418469/-0.207397/-0.536824/-0.37852
+  params=-4 float=y
+  colors=00000K<6>003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44\
+  <13>zzz<15>c00<14>300000020<12>0Z0ccc<103>ccc
+  }
+
+TriMandels         { ; Triangular mandelbrot-like bays              (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-12
+  function=sqr/sqr
+  corners=-0.0540965796/-0.0183784962/0.636393726/0.663206816
+  colors=000000s23v12z00<14>zvvzzzxvw<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFC\
+  vHCxIBzKA<2>zREzUFzXGz_HzaJ<8>zzU<15>9C`ADaBEc<46>xxyzzzyyz<16>ghrfgqccc\
+  <103>ccc
+  }
+
+Crucifix           { ; Decomp cross                                 (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-12
+  function=sqr/sqr
+  corners=-1.97024944/-1.96722828/0.00203192/-0.00199629/-1.96722828/-0.00\
+  199629 float=y decomp=256 colors=@lyapunov.map
+  }
+
+BEM_B              { ; Bug Eyed Monster 'B'                         (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-12
+  function=recip/recip
+  corners=-1.077431/1.16655/1.495971/-1.496014/1.16655/-1.496014
+  params=-4 float=y maxiter=500 potential=256/500/500
+  colors=000<196>BRfBRfBRfCSgBSiATlATo9Ur8Vt7Vw6Vz<31>5AB4994AB<13>5V`
+  }
+
+Pyramid_Power_3    { ; Yet Another Pyramid                          (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-12
+  function=ident/recip passes=t
+  corners=-1.625848/0.870431/1.66417/-1.664213/0.870431/-1.664213
+  params=-4 float=y maxiter=500 fillcolor=0 potential=256/200/0
+  colors=0000OS<23>vSRyTQyTQ<188>ZBdYAeYBe<36>nkx
+  }
+
+BEM_C              { ; A Beady-eyed Monster                         (ok-12)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-12
+  function=cosxx/recip
+  corners=-1.70211/0.773442/1.692344/-1.608392/0.773442/-1.608392
+  float=y potential=256/100/0
+  colors=0006Mk<7>DqkDukFsi<13>fXV<12>MAm<2>7Dn<13>pZ2<26>tMYtLZtNY<20>zz6\
+  <4>`98<16>v4Fw4Fw5F<26>t`RtaRrZQ<16>M0L<13>tfw<31>8J4<27>OHw<3>OzDOwNOuW
+  }
+
+SnowflakeBrot      { ; Interesting symmetry                         (ok-13)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-13
+  function=sqr/sqr passes=2 corners=-1.856/1.856/-1.392/1.392 params=7
+  float=y maxiter=16 inside=startrail
+  colors=zzz<7>000<7>f0R<7>000<7>ISc<7>000<7>unQ<7>000<7>zXz<7>000<7>IFz<7\
+  >000<7>xz0<7>000<7>zDf<7>000<7>Jfz<7>000<7>ila<7>000<7>KAa<7>000<6>DQ`FU\
+  fERa<6>000<7>zdB<7>000<7>z06<7>000<6>CQWEU`DRX<6>000<7>uV1<7>000<6>rrr
+  cyclerange=0/255
+  }
+
+BEM_D              { ; Bug Eyed Monster 'D' -- pretty ugly          (ok-13)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-13
+  function=cotanh/cosxx
+  corners=0.919259/-0.3815864/-2.442312/-0.707842/-0.3815864/-0.707842
+  potential=256/300/0
+  colors=0000D0<4>000<15>00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0\
+  cc<14>033000200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15\
+  >0c0<9>0F0
+  }
+
+Pyramandala        { ; Eye-In-The-Pyramid Mandala                   (ok-13)
+                     ; Deeply significant...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-13
+  function=sqr/recip passes=2 corners=-1.856/1.856/-1.392/1.392
+  params=4 float=y potential=256/200/0
+  colors=000D4C<10>O4MP5NQ4O<4>T1QU0RU1U<7>aCs<11>ECsCCsCCs<2>DFpEGoEGnEGm\
+  <15>7NS<4>sso<26>ssksskssl<8>qsp<2>f0Hh9KjIOssa<4>ssXssWssUssS<6>ssEssCs\
+  qC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<6>CSsCUsEUq<20>z_0<3>D80
+  cyclerange=0/255
+  }
+
+Hex_Sign           { ; ZMAG variation on Pyramandala                (ok-13)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-13
+  function=sqr/recip corners=-2/2/-1.5/1.5 params=4 float=y
+  inside=zmag
+  colors=000Kce<5>BjxaR7<12>qE7`S7<25>vvLwwLxxMyzNxNMaQ8<12>vDWJP70N6`R9_R\
+  CZRETRBYRH<9>QOehR7<13>vP7`S7<10>kj8`S7<23>RxV`R9<9>`VX`R9<2>_TFccc<103>\
+  ccc
+  }
+
+Birds_Head         { ; Interesting fractal; slow but worth seeing.  (ok-14)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-14
+  function=sin/sqr/sinh/cosh
+  corners=-0.452593/-0.325401/0.3879741/0.4833674 params=-2 float=y
+  colors=00080D<13>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6\
+  >LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>w\
+  wbzzazyazwa<31>nnsmmsmmtllummu<20>000<4>70B
+  }
+
+Lanes_Merge        { ; Lots to zoom on                              (ok-14)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-14
+  function=cosh/cotanh/cotan/sqr
+  corners=-0.074566/-0.0436119/-0.6874911/-0.6642756 params=5 float=y
+  colors=0000ct0du0du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<68>qqqc\
+  cc<103>ccc
+  }
+
+Rococo             { ; Very intricate zoom of Lanes_Merge           (ok-14)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-14
+  function=cosh/cotanh/cotan/sqr passes=t
+  corners=-0.06338728/-0.06029187/-0.67382725/-0.6715057 params=5
+  float=y
+  colors=0000du0du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<69>rrrccc<\
+  103>ccc
+  }
+
+Cool_Spiral_A      { ; Guess...                                     (ok-14)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-14
+  function=log/cos/cosh/sqr
+  corners=0.10810362/0.20096936/1.3340737/1.3863366/0.11644909/1.3229464
+  params=5 float=y maxiter=50 decomp=256
+  colors=00000A<2>003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44\
+  <13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<14>030000002<14>00c<15>\
+  zzz<15>00c<10>00D
+  }
+
+Cool_Spiral_B      { ; Snazzy                                       (ok-15)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-15
+  function=sqr/cos corners=0.313732/0.857732/0.46211/0.87011 params=-3
+  float=y maxiter=500 decomp=256 colors=@gamma1.map
+  }
+
+Demon              { ; YIKES!  Another favorite...                  (ok-15)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-15
+  function=cosxx/recip
+  corners=-0.735561/-0.553816/0.125388/-0.116952/-0.553816/-0.116952
+  params=-3 float=y maxiter=50 potential=256/175/10
+  colors=0000C0<10>0c0<15>zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<14>\
+  003000022<14>0cc<15>zzz<15>0cc<14>033000200<13>`00c00d44<13>zzz<15>c00<1\
+  4>300000020<2>0A0
+  }
+
+Euphemism          { ; Don't ask.  Okay, go ahead, ask.             (ok-15)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-15
+  function=flip/ident
+  corners=-1.0137996/1.4280533/-2.157104/1.249857/-1.7700738/-1.148738
+  float=y potential=256/800/0
+  colors=000z0c<13>000z00<14>000zV0<14>000zz0<14>0000z0<14>0000zz<14>00000\
+  z<14>000z0z<14>000z00<14>000zV0<14>000zz0<14>0000z0<14>0000zz<14>00000z<\
+  14>000c0z<9>F0MC0I90E60A305000z0z<7>S0TN0PJ0LE0GA0C507203000
+  }
+
+Brambles           { ; Prickly thicket                              (ok-16)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-16
+  function=tanh corners=0.227034/0.662562/1.229117/1.555763 params=-3
+  float=y potential=256/256/0 periodicity=0
+  colors=CCCQCQ<14>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>Cs_CsYECE<20>sCs<20>ECs\
+  CCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsCCqCC<\
+  21>ACCCCC<5>OCO
+  }
+
+Cams_And_Orifices  { ; Too deep for me...                           (ok-16)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-16
+  function=exp
+  corners=-1.0395486/-0.9551229/0.9310698/0.8586312/-0.9743848/0.8441848
+  params=-3 float=y potential=256/2000/0
+  colors=844<2>211000000<3>000100100200200<117>z00z00y00<64>801701812<27>z\
+  UU<26>A55 cyclerange=0/255
+  }
+
+Trophy             { ; As designed by Dr. Seuss, maybe              (ok-16)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-16
+  function=log
+  corners=0.723331/1.995331/0.849539/-0.846461/1.995331/-0.846461
+  float=y potential=256/400/0 colors=@chroma.map
+  }
+
+  
+Red_Eye            { ; Quasi-Jovian                                 (ok-17)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-17
+  function=sqr/sqr corners=-2.493566/-1.690574/-0.612125/-0.009881
+  params=60 float=y potential=256/150/0
+  colors=000zK0<25>z10z00z00y01<80>10y10y00z00z11y<77>vv4ww3xx2yy2yy1zz0<5\
+  6>zL0
+  }
+
+Slipping_Discs     { ; Gaw, it's like COSMIC, you know?             (ok-17)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-17
+  function=log/exp
+  corners=0.524076/0.913193/-0.1546597/-0.4600965/0.810768/-0.5369153
+  params=60 float=y
+  colors=000DG`<5>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCY\
+  LA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGccc<103>ccc
+  }
+
+Twisted_Chrome     { ; Shiny!                                       (ok-17)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-17
+  function=cosh/tan
+  corners=-2.694127/-0.7101066/-1.490244/-0.002242029 params=10
+  potential=256/400/0 colors=@blues.map
+  }
+
+Surf's_Up          { ; Spiral #62173-K.  Strange.                   (ok-18)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-18
+  function=sqr/sqr corners=0.412688/0.700343/0.369305/0.585046
+  params=60 float=y decomp=256 colors=@topo.map
+  }
+
+Bill's_Gates       { ; Right nice there, Bubba...                   (ok-18)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-18
+  function=tan/cotanh corners=-2.751722/2.751722/-2.063791/2.063791
+  params=-3.3999999999999999 float=y potential=256/375/0
+  colors=0000_t<20>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsm\
+  mtllummu<20>000<19>T0hV0kW0mY0pZ2n<15>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJI\
+  gHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<11>0\
+  at
+  }
+
+Twister            { ; Now spin your monitor around real fast!      (ok-18)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-18
+  function=recip/ident passes=t
+  corners=0.527138/-0.527138/-3.218143/3.171053/-2.919216/1.376995
+  params=-1 float=y fillcolor=10 potential=256/200/0
+  colors=0000Np<12>02k00j00j<10>77k88kAAk<23>wwazz`zy`zw`<29>ooqnnqnnrmmrm\
+  mslltmmt<20>000101<16>Q0bS0eT0gV0jW0lY0o<16>rkCtn9uq7wt4xw2zz0<2>wr2vp3t\
+  m5<17>`0P<5>R03P00P10<6>LCBKDCKEDJFEJGF<2>HJKGLLGMMFNNFOP<27>0tx<19>0Pp
+  }
+
+Bunting            { ; Patriotic, sort of...                        (ok-19)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-19
+  function=ident/cos passes=t
+  corners=-2.923964/-0.2199622/0.2981738/2.326186 params=50
+  potential=256/175/0
+  colors=000O3v<3>M7qCST<4>JRfLQhMQkOPnORk<8>WjKXmHYoEZrB_t8`w4<12>NV7MT8L\
+  R8KO9JM9<2>FFB<4>CUl<7>b6S<8>C9y<15>b4md4lf4i<8>x5F<11>PA_<11>u2O<21>uym\
+  uwm<8>uAa<9>O0S<3>zhZ<2>kHZe7Zb8Z<12>AJ_8K_6L_3M`3M`4La<14>HChIBiKBi<12>\
+  iIlkIlmJloKmoKkoLi<9>kTPjUNkWL<7>zr4<3>`RK<4>R7o
+  }
+
+Madonna            { ; Obviously                                    (ok-19)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-19
+  function=sqr/log
+  corners=-0.9850497/-1.1415697/0.8710137/0.6526313/-0.9365733/0.8063786
+  params=100 float=y potential=256/400/0
+  colors=000n00<11>000zV0<14>000zz0<14>0000z0<14>0000zz<14>00000z<14>000c0\
+  z<10>C0I90E60A305000z0z<9>J0LE0GA0C507203000z0c<13>000z00<14>000zV0<14>0\
+  00zz0<14>0000z0<14>0000zz<14>00000z<14>000z0z<14>000z00v00r00
+  }
+
+Twister_2          { ; Here we go again...                          (ok-19)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-19
+  function=flip/recip passes=b
+  corners=-2.573945/2.573945/-1.930459/1.930459 params=-1.7 float=y
+  fillcolor=1 decomp=256
+  colors=FIL<2>PUX<8>GJMFIKEHJDFHCFG<13>112000110<14>QG0SH0UI0WK0ZL0`N0<6>\
+  pX0<3>QG0<3>pX0<8>YM0WK0UJ0RH0PG0<13>220000000<15>9F0AG0BH0CI0CJ0<6>IS0<\
+  3>9E0<2>FO0IS0IR0<9>AG09E09E0<14>000<17>Y00_00b00<7>t00<3>U00<3>t00<12>P\
+  00N00M00<10>100000000<17>EHJFIKGKM<7>PUX<3>CFH cyclerange=0/255
+  }
+
+Falling_Arches     { ; Not affiliated with McDonalds (r)            (ok-20)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-20
+  function=cotan/exp
+  corners=-0.118053496/0.141707778/-0.691720665/-0.935035825/0.0922739506/\
+  -0.972131431 params=5 potential=256/300/0
+  colors=000kk0<11>000<15>0z0<15>000<15>z0z<14>40400K<15>zzz<14>44N000<15>\
+  WWW<14>000<15>z00<15>000<15>0zz<15>000<15>00z<15>000<15>zz0<2>oo0
+  }
+
+Primate_Skull      { ; A big steamin' heap o' profundity.  Yow!     (ok-20)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-20
+  function=sqr/sqr
+  corners=0.755474/-1.596526/-1.574358/1.561642/-1.596526/1.561642
+  params=-3.1000000000000001 float=y potential=256/175/0
+  colors=000zzz00110001011120221212222232132323342443243453353554354564464\
+  6654656755757765767866868876878977887889989A8899899AA9AB99AA9AABBABCAACA\
+  CBBCACBBCBDBDCCDBDCCDCECEDDECEDDEDDEFEEFDFEEFEEFGFFGEGFGFHFGHGGHHGGHGIHH\
+  FHHHIHHIHJIIGIIIJIIJIKJJHJJJJJLKJLKKIKKKKKMKLJMKLLLLLLNLMKNLMMMMMMOMNLOM\
+  NNNNNNPNOMNOOOOONPNOPNOPPPPPOQOOQQ<2>RQPPRRQRRRRQQSQSRSRSSSSRRTRRTTSTTTT\
+  SSUSSUUVTTUUTUUVTVVWUUVVUVVWUWWXVVWWVWWXVXXYWWYWYXXYYXXXYXZXZYYZZYYYZY_Y\
+  _ZZ__ZZZ_ZZ_`__``___`__`a``aa``a`b`abaaa`babacbb`bbbacbcbdccacccbdcdcedd\
+  bdddddfedfeeceeeeegefdgeffffffhfgehfggggggighfighhhhhhjhighiiiiijihijhij\
+  jjjikjikjkjkkkkjjljlklkllllkkmkkmmlmmmmllnllnnommnnmnnomoopnnoonoopnppqo\
+  oppoppqoqqrpprprqqrrqqsqqsqsrrssrrrsrtrtssttssstsstuttuutttuttuvuuvvuuvu\
+  wuvwvvvuwvwvxwwuwwwvxwxwyxxvxxxwyxyxzyywyyyxzyyzxzzx
+  }
+
+Bulge              { ; Shapely                                      (ok-20)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-20
+  function=conj/conj
+  corners=-0.75848598/-0.4804454/0.37153736/0.00081659496/-0.4804454/0.000\
+  81659496 params=45 float=y potential=256/200/0
+  colors=000_ao<21>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00<14>zvvzzzxv\
+  w<11>e5Oc0Kd1K<10>uFCvHCxIBzKAzMB<14>zzU<15>9C`ADaBEc<46>xxyzzzyyz<22>`b\
+  o
+  }
+
+Persian_Moon       { ; Ornate                                       (ok-20)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-20
+  function=conj/exp corners=-1.8925856/-1.1435296/-0.5179833/0.5380167
+  float=y decomp=256
+  colors=000zzb<28>zzz0fz<45>02z01z01z11y<90>jN3jN3kN2lO1lO1lP1<61>zz0zzQ<\
+  15>zza
+  }
+
+MegaSpiff_Mark_II  { ; It's fun to watch this one drawing           (ok-21)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-21
+  function=cos/sqr/cosh passes=b
+  corners=1.0349795/1.1556534/-1.08890529/-0.998405567 params=5
+  float=y outside=imag
+  colors=000A18<8>Q4LS5NU8M<14>zz0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz<\
+  15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<14>YQ0`S0aU0<14>zz0<15>\
+  i70<15>000<4>817
+  }
+
+Pertyness          { ; It's abounding                               (ok-21)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-21
+  function=tan/recip/cosh
+  corners=-0.0318809308/0.0322695972/0.243948307/0.292061203 params=5
+  float=y decomp=256
+  colors=00007B<22>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<12>zz0<10>000<31\
+  >zzz<15>07B<23>0du<12>zz0<25>3AA
+  }
+
+Truart             { ; Affordable luxury                            (ok-21)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-21
+  function=sin/cos/flip passes=2
+  corners=2.383374/5.289684/-7.76118/7.723549/-4.003024/0.7540177
+  float=y potential=256/256/0
+  colors=000<14>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>0000zz<14>z_\
+  0000<14>000zz0<14>0z0000<14>000m_m<14>zz0000<14>000000200<29>z00sKS<6>zA\
+  0<15>zz0<14>w03<8>O0b
+  }
+
+Worm_Spirit        { ; Insert mystical mumbo-jumbo here             (ok-22)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-22
+  function=sqr/sin passes=b
+  corners=1.3035795/1.9915795/0.30175292/0.81775292 float=y
+  potential=256/256/0 colors=@volcano.map
+  }
+
+Spiny_Norman       { ; Son of Worm Spirit                           (ok-22)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-22
+  function=sqr/sin passes=2
+  corners=0.460234322/0.668773802/1.67452455/1.52505916/0.607051921/1.4787\
+  6775 float=y potential=256/256/0
+  colors=000S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033\
+  077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0\
+  `S0aU0<14>zz0<14>jB0i70f70<14>000<14>Q4L
+  }
+
+Misleading_Title   { ; Just what you think it is                    (ok-22)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-22
+  function=exp/tan
+  corners=-0.72638798/0.10561202/0.35411018/0.97811018 params=5
+  float=y potential=256/400/0
+  colors=000MMiONk<14>wwyzzzzwx<14>z0N<14>000<14>EXLCYLA_K<14>zyyzzz<31>kK\
+  k<12>nrUotSowRpzPoxP<19>R8KP6KO3KM0JM0K<18>40r30t00v10x00z<29>Puz<8>JhpI\
+  goHenGdmGbkFaj<17>1BR09P19Q<12>LLh
+  }
+
+{------------------------------------------------------------------------}
+
+comment {
+  The original versions of these fractal recipes were previously released
+  in MONGO.PAR (August 1993).
+}
+
+StairwellToHeaven  { ; Ah, inspiring!                               (ok-23)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-23 function=sqr
+  corners=-0.246936767/-0.199587007/0.360939255/0.396451575 float=y
+  decomp=256 colors=@volcano
+  }
+
+Pelican_Hell       { ; What it's REALLY like...                     (ok-23)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-23 function=sqr
+  corners=-0.89073518/-0.29835118/-0.60886854/-0.16458054 params=-3
+  float=y potential=256/256/0
+  colors=000O22<6>KDDKEEJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbz\
+  zazyazwa<31>nnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1\
+  <21>`0Q<5>R04P00P11
+  }
+
+Cleavon_Little     { ; My homage                                    (ok-24)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-24 function=sqr/recip
+  corners=-3.335989/3.78139/-0.025373119/-0.72701374/-0.4369453/-3.890765
+  params=-2/0.5 float=y inside=bof60 outside=real
+  colors=000nnr<2>mmtllummu<20>000<19>T0hV0kW0mY0pZ2n<15>rkDtnAuq8wt5xw3zz\
+  0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNF\
+  NOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>nnr
+  }
+
+Gary_Coleman       { ; A tribute                                    (ok-24)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-24 function=sqr/sqr
+  corners=-1.267365/1.467615/0.3124678/-0.45270152/0.08450922/-1.490031
+  params=-1.3999999999999999/1 float=y inside=bof60 outside=summ
+  colors=000ocK<6>xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMG\
+  MNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmm\
+  smmtllummu<20>000<19>T0hV0kW0mY0pZ2n<11>n`M
+  }
+
+Marty_Feldman      { ; It's pronounced EYE-gor                      (ok-25)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-25 function=sinh/sin passes=b
+  corners=-0.8803627/0.8893653/0.08402372/1.41132 params=-0.5/0/5
+  float=y decomp=256
+  colors=000385<10>EXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<17>UDLSBKR8KP6KO3K\
+  M0J<2>K0OJ0QK0Q<30>w0S<15>NqzOszPuz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzz\
+  wx<14>z0N<14>000<2>264
+  }
+
+Grover_Cleveland   { ; In Memory Of...                              (ok-25)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-25 function=sqr/cosxx
+  corners=-2.0487216/-1.5892486/0.18200991/0.074832706/-1.8318662/-0.10713\
+  052 params=-0.10000000000000001 float=y decomp=256
+  colors=0009ad<15>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnr\
+  nnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<15>rkDtnAuq8wt5xw3zz0<12>kSFjP\
+  GiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<7>FQQFRSESTDTVCUW<5>9`\
+  c
+  }
+
+Angie_Dickenson    { ; The myth behind the woman...  (Art Deco!)    (ok-26)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-26
+  function=flip corners=-2/2/-1.5/1.5
+  params=1.14159265358979/0/-0.38200000000000001 float=y inside=zmag
+  colors=zff<3>zvvzzzxvw<12>c0K<2>g4Ji5Ij6Hl7Gm9G<2>rCDsEDuFCvHCxIBzKA<2>z\
+  REzUFzXGz_HzaJ<8>zzU<15>9C`ADaBEc<46>xxyzzzyyz<21>bco`bo`bo<22>DGdBEcBEc\
+  <29>BBLAAKCDK<14>kuC<15>AAK<15>z00<9>zbb cyclerange=0/255
+  }
+
+Behind_The_Veil    { ; Mystical experience, no charge.              (ok-26)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-26 function=cosxx
+  corners=1.0091231/1.4124845/1.574191/1.8767121 params=23/0/8 float=y
+  inside=zmag outside=real
+  colors=000077<12>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213\
+  <13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000022045
+  }
+
+Liberace           { ; Glamorama!                                   (ok-27)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-27 function=cos/sin
+  corners=-0.70326986/-0.50758749/0.13040457/-0.13050526/-0.50758749/-0.13\
+  050526 params=-0.5 float=y logmap=yes
+  colors=000T0i<2>Y0p<18>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>LCCKDDKEEJFF\
+  JGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<3\
+  1>nnsmmsmmtllummu<20>000<18>S0f
+  }
+
+Too_Busy           { ; Detail, detail, detail...                    (ok-27)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-27 function=cos/sinh
+  corners=-0.7543049241/-0.7906425752/-0.5175696334/-0.5340301088/-0.75948\
+  54504/-0.5106622651 float=y outside=summ
+  colors=00080D<13>T0hV0kW0mY0pZ2n<17>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6\
+  >LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>w\
+  wbzzazyazwa<31>nnsmmsmmtllummu<20>000<4>70B
+  }
+
+Tricky_Parts       { ; Don't forget 'em!  (A favorite...)           (ok-27)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-27 function=sqr/sin
+  corners=-0.42914289854/-0.42767369223/0.7763191411/0.7793814813/-0.43008\
+  390759/0.7775738197 float=y outside=imag
+  colors=000CWf<13>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<14>000<14>EX\
+  LCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<19>R8KP6KO3KM0JM0KL0MK0OJ0Q<31>w0S<15\
+  >NqzOszPuz<16>DXg
+  }
+
+Bartok's_Shrink    { ; Know what I mean?                            (ok-28)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-28
+  function=sin/sqr
+  corners=-0.237516099/-0.163845443/0.315697083/0.370950075 float=y
+  inside=zmag outside=real
+  colors=000JA5<4>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>\
+  003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<9>NC6
+  }
+
+Dome_Kit           { ; Some assembly required                       (ok-28)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-28
+  function=sqr/cotanh
+  corners=-2.0530732/-1.9104252/-0.0049133108/-0.19511058/-1.9104252/-0.19\
+  511058 params=0/0/10 float=y potential=256/1000/0
+  colors=000000<31>zzz<15>07B<23>0du<12>zz0<10>000<31>zzz<15>07B<23>0du<12\
+  >zz0<21>DI8AG98E95CA3AA07B<22>0du<12>zz0<9>660
+  }
+
+LaToya_Jackson     { ; The legend continues...                      (ok-29)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-29
+  function=log corners=1.2891985/1.5883985/0.61451119/0.83891119
+  params=2 float=y inside=zmag outside=real
+  colors=00000v10x00z<28>OszPuzOty<7>JhpIgoHenGdmGbkFaj<17>1BR09P19Q<13>MM\
+  iONkQPk<13>wwyzzzzwx<14>z0N<14>000<14>EXLCYLA_K<14>zyyzzz<31>kKk<10>nmXn\
+  oVnrUotSowRpzP<18>UDLSBKR8KP6KO3KM0J<20>30t
+  }
+
+Corsage            { ; Prom-Night fractal                           (ok-29)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-29 function=sqr passes=2
+  corners=0.6446058/-1.275394/-1.28/1.28/-1.275394/1.28 params=0/0/5
+  float=y potential=256/200/0
+  colors=000j0H<10>000<14>EXLCYLA_K<14>zyyzzzzyz<32>1F5<14>oxP<19>R8KP6KO3\
+  KM0JM0KL0MK0OJ0Q<31>w0S<15>NqzOszPuz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzz\
+  zwx<14>z0N<2>n0J
+  }
+
+Burma              { ; I panicked...                                (ok-30)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-30 function=sinh
+  corners=-0.06367714/1.307251/0.9189603/-0.9089437/1.307251/-0.9089437
+  float=y decomp=256
+  colors=000<14>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000\
+  <15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003
+  }
+
+CityOfTheFuture    { ; Ultra-modern plaza with sculpture! Gee!      (ok-30)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-30 function=flip passes=t
+  corners=-0.41241502/0.25621871/-2.388493/2.291943/-2.4183162/0.2860427
+  params=0/0/15 float=y decomp=256
+  colors=000ify<6>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<15>\
+  0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<7>khy
+  }
+
+Criswell           { ; My psychic impression                        (ok-31)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-31 function=cos/recip
+  corners=-1.585973/1.190313/1.856507/-1.845207/1.190313/-1.845207
+  params=5/0/15 float=y inside=bof60 outside=real
+  colors=000tnA<3>zz0<22>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOF\
+  OQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsmmtll\
+  ummu<20>000<19>T0hV0kW0mY0pZ2n<15>skD
+  }
+
+Charo              { ; Makes Jayne Mansfield look like Barbara Eden (ok-31)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-31
+  function=cosxx/flip
+  corners=0.61647517/0.99820317/-1.0606872/-0.77439123 float=y
+  decomp=256
+  colors=000QF8<8>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>\
+  zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<5>MD7
+  }
+
+Shaman             { ; Neo-tribal or something...                   (ok-31)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-31 function=cosxx/tan
+  corners=1.1383284/1.2481245/0.586773362/0.669120434 params=0/0/5
+  float=y
+  colors=000444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15\
+  >zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15>zz\
+  0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<13>888
+  }
+
+Your_Name_Here     { ; Yep!  My tribute to YOU!  Gosh, swell!       (ok-31)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-31
+  function=cosxx/cotan passes=t
+  corners=0.2128761/1.1888761/-0.87685142/-0.14485142 params=0/0/5
+  float=y outside=real
+  colors=000ywb<26>oornnrnnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<15>rkDt\
+  nAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG\
+  <2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwazwazw\
+  b
+  }
+
+Veg-O-Matic        { ; Sliced and diced                             (ok-32)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-32 function=sqr passes=2
+  corners=-0.16852034/0.033536151/0.15892728/0.31046965 params=1/0/15
+  float=y
+  colors=000DD2<2>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<15>zzz<1\
+  5>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<10>HH2
+  }
+
+Ed_McMahon         { ; How can we miss him if he won't go away?     (ok-32)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-32 function=cosxx
+  corners=-1.811796/0.03908396/1.233111/-1.234729/0.03908396/-1.234729
+  params=2/0/5.5 float=y outside=real
+  colors=0DD<3>033000200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15\
+  >zzz<15>0c0<14>030000002<14>00c<15>zzz<15>00c<14>003000000<15>0cc<15>zzz\
+  <15>0cc<9>0FF cyclerange=0/255
+  }
+
+Paisley_Sex        { ; Extended tendrils budding                    (ok-32)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-32 function=sin passes=2
+  corners=-1.16768861/-0.865049431/0.788698726/1.03702318/-1.17793425/0.80\
+  2359572 params=-2 float=y inside=zmag outside=real
+  colors=000zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5\
+  N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<1\
+  5>zz0<15>z1z<15>000<15>0f0<15>zz0<14>zzv
+  }
+
+James_Brown        { ; Star time!                                   (ok-33)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-33 function=sqr/sqr/log
+  corners=-1.419895/-0.01189487/-0.007131886/1.048868
+  params=0.80000000000000004 float=y decomp=256
+  colors=Zq0<6>zz0<15>zzz<13>888000444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0\
+  i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>79557\
+  4354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<7>Vp0 cyclerange=0/255
+  }
+
+Loretta_Lynn       { ; In all her glory                             (ok-33)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-33 function=sin/sin/sqr
+  corners=-0.50284352/0.12806848/0.42273065/-0.41848535/0.12806848/-0.4184\
+  8535 float=y outside=real
+  colors=0005IW<4>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<14>000<14>EXL\
+  CYLA_K<14>zyyzzz<31>kKk<12>nrUotSowRpzPoxP<19>R8KP6KO3KM0JM0K<18>40r30t0\
+  0v10x00z<29>Puz<25>6KY
+  }
+
+Big_Dipper         { ; Another uncanny likeness                     (ok-34)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-34 function=exp/sqr
+  corners=-0.80928681/-0.16160681/-1.5524626/-1.0667026 params=0.5
+  float=y inside=zmag outside=real
+  colors=0003ET2CS1BR09P<14>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4\
+  B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E00F00G<23\
+  >00x00z01z<27>OszPuzOty<27>4FU
+  }
+
+SpanishInquisition { ; NOBODY expects the Spanish Inquisition!      (ok-34)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-34 function=sqr/sqr
+  corners=0.16817743/0.55089743/-1.5690158/-1.2819758 float=y
+  outside=imag
+  colors=000504<12>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>79557\
+  4354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN\
+  0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000101302
+  }
+
+Poodles_Of_Doom    { ; Roll over, Dogboy                            (ok-35)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-35 function=sin/tan
+  corners=1.2704405/1.8662805/0.79726117/1.2441412 params=1 float=y
+  inside=bof60 outside=imag
+  colors=0008ef4de0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<1\
+  4>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz<12>Cgh
+  }
+
+Cosmic_Spud        { ; AKA Freeway Planet                           (ok-35)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm
+  formulaname=ok-35 function=flip/flip passes=t
+  corners=-2.004975/2.144402/-1.819402/1.292632
+  params=-0.60499999999999998 float=y outside=imag
+  colors=sry<2>yxx<15>XTz<15>033<15>xWG<15>zzz<15>xWG<15>000<15>0bc<15>zzz\
+  <15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003000<14>URvXTzYVz<10>qpy
+  cyclerange=0/255
+  }
+
+{------------------------------------------------------------------------}
+
+comment {
+  The original versions of these fractal recipes were previously released
+  in SLACK.PAR (October 1993).
+}
+
+Provocative_Wiggle { ; Banned in Utah
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=halley
+  corners=0.0004115947/1.496539/0.0047634081/0.97724621
+  params=4/2/0.31830000000000003 float=y decomp=128 periodicity=0
+  colors=000xo`zpa<16>haQg`Pf_OeZNdYNcXM<7>VQG000<30>ppp<13>VVVTTTRRRPPPNN\
+  N<5>EEECCCAAA888777<3>000PFF<27>vcDwdDxeDzfCyfCxeC<29>PFF0A0<15>Zc0<5>LS\
+  0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<28>wn_
+  }
+
+Third_Nostril      { ; Opening soon...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=frothybasin
+  corners=-0.2034293/2.556571/0.06094324/2.130943 params=6 float=y
+  invert=0.057936/0/0
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<12>000
+  }
+
+Fish_Trap          { ; Pretty pretty
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=tetrate passes=t
+  corners=0.489091572/1.06960001/2.76312836/2.1154569/1.00895691/2.0699745\
+  8 params=6/3 float=y fillcolor=0 inside=epsiloncross outside=mult
+  colors=000gMY<8>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJIgHJfEK<4>`0Q<5>R04P00P\
+  11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<\
+  23>wwbzzazyazwa<27>ppqooqoornnrnnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n\
+  <5>fK`
+  }
+
+InnerEarInfection  { ; With handy wiring layout
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=tim's_error function=flip passes=t
+  corners=-1.463318/1.71929/-1.175959/1.138665
+  params=0.31830979999999998/0.31830979999999998 inside=epsiloncross
+  potential=256/220/0 invert=0.385771/0.135952/-0.157756
+  colors=00006G0DX<3>P0R<4>d5Ah66j55<8>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz\
+  <52>z_AyZAwX9<8>gH3eF2eF2<23>w30x30y20y20z10z10<69>311211000
+  cyclerange=0/255
+  }
+
+Porgie_Tirebiter   { ; No Mudhead in this one
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=lambda(fn||fn) function=sin/sqr passes=t
+  corners=-1.377136/1.378204/-1.032791/1.032852
+  params=1/0.10000000000000001/1 float=y maxiter=500
+  inside=epsiloncross logmap=yes biomorph=0
+  colors=000cEdN3cfK`gMYhPW000kVR<7>uq8wt5xw3zz0yx1<21>`0Q<5>R04P00P11<6>L\
+  CCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>02l00k00k<10>77l88lAAl<23>wwb\
+  zzazyazwa<31>nnsmmsmmtllummu<20>000<19>T0hV0kW0mY0pZ2n<2>bBg
+  }
+
+Quux               { ; Say what?
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandel(fn||fn) function=tan/sin passes=2
+  corners=-4.20580918/-3.62043379/-0.23377671/0.0956602947/-4.1532038/-0.3\
+  03917213 params=1/2/10 float=y bailout=500 inside=bof60 outside=mult
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<1\
+  2>000
+  }
+
+Fire_Walk_With_Me  { ; Jeez, this sucker's kinda creepy-like...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julia(fn||fn) function=sinh/sqr passes=2
+  corners=-0.8972016/0.5305104/0.951808/-0.951808/0.5305104/-0.951808
+  params=0.10000000000000001/0/0.90000000000000002 float=y
+  inside=epsiloncross outside=real invert=0.237952/-0.183346/0
+  colors=000000000000<30>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<15>0001101112\
+  21221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<1\
+  2>000
+  }
+
+Moth_Eggs          { ; Amphibious moth eggs, yet...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=sqr(1/fn) function=cosxx passes=t
+  corners=1.12033081/1.1690979/1.51419067/1.55075073 float=y
+  bailout=20 inside=epsiloncross outside=real biomorph=0
+  colors=000RRR<15>000PFF<29>xeDzfCyfC<30>PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0\
+  A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF222<29>ppp<14>TTT
+  }
+
+Isle_Of_Lucy       { ; I'm SO sorry...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=newtbasin passes=t
+  corners=-1.0774395/-0.41939152/0.52383634/1.0173723 params=4/1
+  float=y inside=epsiloncross decomp=256
+  colors=IIIGGGEEE<2>88EzXf44E22E00F<24>00x00z01z<28>Puz<31>1BR09P19Q<13>M\
+  MiONkQPk<13>wwyzzzzwx<14>z0Nv0M<18>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>y\
+  yvzzzyyywwwuuu000sss<17>KKK cyclerange=0/255
+  }
+
+Landscape          { ; Through a Glass Brick.  Color cycle this one!  Now!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=popcornjul passes=t
+  corners=-14.42308/14.42308/-10.57692/10.57692 params=5 float=y
+  decomp=256
+  colors=000<30>ppp<14>TTTRRRPPPNNNMMM<12>000PFF<27>vcDwdDxeDzfCyfCxeC<29>\
+  PFF0A0<15>Zc0<5>LS0JQ0IP0HO0<6>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF
+  cyclerange=0/255
+  }
+
+Argyle             { ; Explicit Socks
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=popcornjul
+  corners=-1.452829/1.452829/0.07768247/-0.07768247/-0.3305221/-1.3854736
+  params=2 float=y decomp=256
+  colors=000221<7>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000\
+  <14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03<8>O0b000<17>111
+  }
+
+Jewel_Of_Denial    { ; No, REALLY, my apologies...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=popcornjul
+  corners=-12.86539/12.86539/-9.434613/9.434613 params=3.5 float=y
+  invert=3.52564/0/0 decomp=256
+  colors=00080D<11>Q0cS0fT0hV0kW0mY0p<16>rkDtnAuq8wt5xw3zz0<12>kSFjPGiMHhJ\
+  IgHJfEK<4>`0Q<5>R04P00P11<6>LCCKDDKEEJFFJGG<2>HJLGLMGMNFNOFOQ<27>0ty<33>\
+  02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<29>oornnrnnsmmsmmtllummu<20>000<4\
+  >70B cyclerange=0/255
+  }
+
+Pizza_Dimension    { ; King me
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=popcornjul passes=t
+  corners=-3.3979072/-3.7318481/3.54197666/3.58862233/-3.5410247/3.7285593\
+  7 params=4 float=y potential=256/400/0 invert=3.52564/0/0
+  colors=0000I0<8>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB\
+  0i70f70<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>7955\
+  74354033077<13>4zz<15>zz0<15>z1z<15>000<5>0G0
+  }
+
+Dingle_Balls       { ; On an alien's dashboard
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=spider
+  corners=-1.866296/0.2884813/1.43553/-1.437506/0.2884813/-1.437506
+  params=-0.36299999999999999 float=y maxiter=300 bailout=50
+  inside=bof60 outside=real logmap=-4 invert=0.437963/-0.977546/0
+  periodicity=4
+  colors=000KKK<11>000PFF<27>vcDwdDxeDzfCyfCxeC<29>PFF0A0<15>Zc0<5>LS0JQ0I\
+  P0HO0<6>0A0<15>Zc0<15>0A0SNC<29>xo`zpaypa<29>UPF222<29>ppp<18>MMM
+  }
+
+Tumor              { ; Malignant fractal
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julzzpwr
+  corners=-0.5919031442/-0.5963793343/0.3053004675/0.3180326453/-0.5996260\
+  179/0.3155976325 params=0/0/2 float=y potential=256/12000/0
+  colors=000A70<2>000<14>`0sc0wd3w<13>xvyzzzywz<14>c0w<15>000<14>`00c00d44\
+  <13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<15>000<15>pZ0<14>yxvzzz\
+  zyw<13>q`4pZ0mX0<10>E90
+  }
+
+Delicate_Arch      { ; No, not THE Delicate Arch...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=complexnewton
+  corners=-4.4699211/-3.7256017/0.49851843/-0.49390738/-3.7256017/-0.49390\
+  738 params=3.3333333333333335/0/1 float=y bailout=50 outside=real
+  invert=0.279752/-3.27552/0 periodicity=0
+  colors=000708304000<15>zzz<15>000L00<13>z00<2>p00l00h00d00a00<9>000<15>z\
+  X0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>0\
+  00<15>p0w<12>A0B
+  }
+
+Spray              { ; Lettuce spray?
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=complexnewton passes=t
+  corners=-3.63296203/-3.5366545/-0.382294305/-0.622230983/-3.48312171/-0.\
+  582081392 params=3.3333333333333335/0/1 float=y bailout=50
+  inside=epsiloncross outside=real periodicity=0
+  colors=257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6>Lf0<7\
+  >000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<7>000<7>zzz<7>000<7>zWW<7\
+  >000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3jZ<7>000
+  cyclerange=0/255
+  }
+
+Tierra_Del_Fuego   { ; Somewhere near the far-flung Isles of Langerhans
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=mandelfn function=sinh passes=t
+  corners=-0.62343738/-1.1387654/-0.34449801/0.34260599/-1.1387654/0.34260\
+  599 float=y inside=epsiloncross potential=256/200/0 invert=1/0/0
+  colors=000Oed<2>1Uf000<14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03<8>O0b0\
+  00<15>000110111221221<6>553000<7>000001001012013<45>1Sc1Sd1Te1Ue1Uf2Uf<5\
+  8>xyb<2>bmd00Z
+  }
+
+Brooch             { ; With Star Sapphires
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=julfn+zsqrd function=sqr
+  corners=-0.5470211/0.5470211/0.7293614/-0.7293614/0.5470211/-0.7293614
+  params=0.1885/-0.10050000000000001 float=y inside=bof60
+  colors=00000K<7>00c<15>zzz<15>00c<14>003000000<34>teBufCwgCyiDyiD<8>zqDz\
+  qDypD<77>050<13>0c0<15>zzz<15>0c0<14>030000002<5>00H
+  }
+
+Shiva_VS_Megalon   { ; Don't ask me; I have NO idea...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=manfn+exp function=recip passes=t
+  corners=-2.3914048/-3.1076331/0.041952665/0.99692384/-3.1076331/0.996923\
+  84 params=3.1415926000000001 float=y bailout=20 inside=epsiloncross
+  outside=real invert=0.281536/-2.28985/0 biomorph=0
+  colors=000vl0<11>i70<15>000<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>35403307\
+  7<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<14>YQ0`S0aU0<1\
+  4>zz0<2>wp0
+  }
+
+Australia          { ; Throw another fractal on the barbie
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=sierpinski passes=t
+  corners=26.17068/0.5466932/-22.3765/23.17726/0.5466932/23.17726
+  float=y bailout=50 inside=epsiloncross potential=256/4000/0
+  invert=0.230533/0.5/0.4
+  colors=000K32K21L00<9>900700600400300100000<20>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr\
+  5Cq4Cp4Co3B<2>l5Ek5Fj5Gi5Hh6Ig6J<5>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<29>zqPzs\
+  OzsP<29>zyxzzzyzz<45>FzgDzfDyf<43>K53
+  }
+
+Nausea             { ; Uuurrrppp!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=quatjul
+  corners=-1.29098808/-1.3150815/-0.014823006/-0.143192052/-1.23804457/-0.\
+  0854143512 params=-0.745/0/0.10000000000000001/0.01 float=y
+  bailout=100 inside=bof60 outside=summ periodicity=0
+  colors=000Ja0<6>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874777<6\
+  >zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7\
+  >3jZ<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6\
+  >Lf0
+  }
+
+{------------------------------------------------------------------------}
+
+comment {
+  These are new to OVERKILL.PAR.
+}
+
+Scorpion_Chain     { ; Conga lines                                  (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/ident/ident/ident
+  corners=-0.3494469983/-0.3462477882/0.5265591267/0.5332274002/-0.3514960\
+  539/0.5292912009 params=1 float=y
+  colors=000<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>rqstttsrt<13>`LhZ\
+  IgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<15>000<15>6Zk<15>ttt<15>6Zk<14>0\
+  23 cyclerange=0/255
+  }
+
+Suction            { ; Down the drain                               (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/ident/ident/ident
+  corners=0.3106570067/0.3161597711/0.05044583661/0.04750391766/0.31405012\
+  3/0.04592168155 params=1 float=y
+  colors=000iip<18>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDK\
+  EEJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllumm\
+  ukks
+  }
+
+Headless_Teddy     { ; I found it this way, I swear!                (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/ident/sqr/sin
+  corners=-0.0313056910774/-0.0309401395145/1.01788488139/1.01747703665/-0\
+  .0309783270376/1.01744839601 params=2 float=y potential=256/3000/0
+  colors=000CSIDUJEXLCYLA_K<14>zyyzzz<31>kKk<14>owRpzPoxP<21>O3KM0JM0K<18>\
+  40r30t00v10x00z<28>OszPuzPty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z\
+  0N<14>000<11>BQG
+  }
+
+FireSaw            { ; A hot spiral                                 (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=flip/flip/flip/flip passes=t
+  corners=0.6209369145/0.6252047841/0.1052590845/0.1132419968/0.6186415496\
+  /0.108319571 float=y
+  colors=000zzrzzvzzz<15>000<14>YQ0`S0aU0<14>zz0<15>i70<15>000<15>S5N<15>z\
+  z0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15\
+  >zz0<12>zzn
+  }
+
+Brainscape         { ; Convolutions                                 (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/sqr/ident/ident
+  corners=-0.751071192/-0.775843812/0.0630389425/0.0960691029/-0.775843812\
+  /0.0960691029 params=1 float=y
+  colors=0005Bz<23>Puz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0Nv0M<18\
+  >4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E00F00G<\
+  23>00x00z01z<3>49z
+  }
+
+Tom_Waits          { ; A fractal monument.  Somebody build this...  (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=sin/sqr/ident/ident passes=t
+  corners=-1.009168/-0.80846402/-0.37344096/-0.22291296 float=y
+  maxiter=500 logmap=yes
+  colors=000XTz<14>wvyyxxxvx<14>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<15>0\
+  00<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<13>URv
+  }
+
+Juju               { ; Got my mojo rising  (I love this one...)     (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/sqr/ident/ident
+  corners=0.5291556619/0.5697688272/-0.8828473821/-0.8644501553/0.53494573\
+  26/-0.8905674763 params=-3 float=y
+  colors=000444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<15\
+  >zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15>zz\
+  0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<13>888
+  }
+
+Zap                { ; Zap fractals are squinky fractals!           (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/ident/ident/sin
+  corners=-1.74248933328/-1.74247335187/0.010923292189/0.0109352782498
+  float=y maxiter=500 logmap=yes
+  colors=000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3jZ<6>16500\
+  0257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6>Lf0<7>000<7\
+  >c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874777<6>zzz<7>000<7>zWW<7>00\
+  0
+  }
+
+MegaTwister        { ; LOTS of spirals on many scales               (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=ident/cos/ident/ident passes=t
+  corners=-0.05251571938/-0.05758609297/0.9658818847/0.9503966124/-0.04690\
+  812317/0.9584050897 params=1 float=y maxiter=200
+  colors=0000T0<4>0f0<15>zz0<15>zzz<15>000<14>YQ0`S0aU0<14>zz0<15>i70<15>0\
+  00<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>354033077<13>4zz<15>zz0<15>z1z<15\
+  >000<9>0Q0
+  }
+
+Web                { ; Guess...                                     (ok-36)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-36
+  function=sin/ident/ident/cosh passes=t
+  corners=0.5103994564908/0.5105066907436/-0.6660413322163/-0.666198120536\
+  4/0.5105133192155/-0.6661931491825 float=y
+  colors=000EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E00F0\
+  0G<23>00x00z01z<28>Puz<31>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0Nv0M<\
+  18>4B7<8>DUJ
+  }
+
+Say_Cheese         { ; Blue cheese                                  (ok-37)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-37
+  function=ident/ident/cotan/ident
+  corners=0.719731258/0.7281873067/0.4889541702/0.4848972466/0.7247227589/\
+  0.4822988357 float=y inside=0 outside=summ
+  colors=000<15>6Zk<15>ttt<15>6Zk<15>000<15>m0I<15>ttt<15>m0I<15>000<14>WG\
+  dZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<13>323000021<14>0WJ<15>ttt<15>0WJ<14>0\
+  22 cyclerange=0/255
+  }
+
+Kaballa-Bonga      { ; You cannot resist the hypnotic eye!          (ok-37)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-37
+  function=tan/log/ident/ident
+  corners=-0.0234999785/0.0717320215/0.063724122/-0.063251878/0.0717320215\
+  /-0.063251878 float=y inside=bof60
+  colors=G4B826000<7>Jfz<7>000<7>ila<7>000<7>KAa<7>000<6>DQ`FUfERa<6>000<7\
+  >zdB<7>000<7>z06<7>000<6>CQWEU`DRX<6>000<7>uV1<7>000<7>zzz<7>000<7>f0R<7\
+  >000<7>ISc<7>000<7>unQ<7>000<7>zXz<7>000<7>IFz<7>000<7>xz0<7>000<7>zDf<4\
+  >O5H cyclerange=0/255
+  }
+
+Chicken_Dance      { ; Hip-hop pullet                               (ok-37)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-37
+  function=cos/ident/cos/ident
+  corners=-0.292483433/-0.25092304/0.3687519768/0.3628147778/-0.274671836/\
+  0.3450031808 float=y
+  colors=000OOS<9>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKE\
+  EJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllummu\
+  <9>RRV
+  }
+
+Zowie              { ; Lost graphic from the set of 'Laugh-In'      (ok-37)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-37
+  function=tan/flip/ident/ident
+  corners=-0.739996253/-0.726649053/-0.342661961/-0.332651561 float=y
+  inside=epsiloncross decomp=128
+  colors=000S0F<3>n0C<10>y01z00z00z00<125>zz0zz1zz3<29>zzz000<28>00w00z00z\
+  <45>i0H
+  }
+
+Fer_Swell          { ; More snazziness                              (ok-38)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-38
+  function=flip/ident/ident/ident
+  corners=0.42316753/0.4278962998/-0.044703193/0.38527081/0.2184823682/0.2\
+  2821036 params=4 float=y decomp=256
+  colors=00N<20>002000000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz\
+  0yz<45>02z00z00y<37>00O cyclerange=0/255
+  }
+
+Jetties            { ; Quasi-causeways                              (ok-38)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-38
+  function=sqr/sqr/ident/ident
+  corners=-0.290400769/-0.213663722/0.895928122/0.86703854/-0.248908433/0.\
+  840605007 float=y inside=bof60 logmap=yes
+  colors=000000000m_m<14>zz0000<14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03\
+  <8>O0b000<13>000xyb<13>JfK000zzc000<13>000AAz<14>ss8000<14>0000zz<14>z_0\
+  000<14>000zz0<14>0z0000<12>000
+  }
+
+Snarls             { ; Use integer math for cubist version          (ok-39)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-39
+  function=sinh/sqr passes=t
+  corners=0.35902256888/0.35938185492/0.95526728583/0.95636457029/0.358625\
+  21532/0.95579709059 float=y
+  colors=0000Xs<18>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllummu<20>\
+  000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKEEJFFJGGIHI<33>0t\
+  y<13>0Yt
+  }
+
+bOING_bOING        { ; Gratuitous plug                              (ok-39)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-39
+  function=sqr/sqr passes=t
+  corners=-0.0039225190927/-0.0025010713735/0.8999435179/0.90017806984/-0.\
+  0035233828429/0.89941133624 params=-1 float=y maxiter=500
+  inside=epsiloncross logmap=yes
+  colors=000M2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<1\
+  5>svcsvcsvcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8SH9QJANKBL\
+  MCI<6>_VZ`Y`b`cdcf<4>nru<15>OI5<15>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSA\
+  RUBUWBXY<6>DqlDtnCql<6>7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1K
+  }
+
+Plunk              { ; Different with integer math                  (ok-39)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-39
+  function=conj/cos passes=t
+  corners=5.71875/-5.71875/-7.625/7.625/-5.71875/7.625 float=y
+  decomp=256
+  colors=000<17>EHJFIKGKM<7>PUX<3>CFH<3>PUX<8>GJMFIKEHJDFHCFG<13>112000110\
+  <14>QG0SH0UI0WK0ZL0`N0<6>pX0<3>QG0<3>pX0<8>YM0WK0UJ0RH0PG0<13>220000000<\
+  15>9F0AG0BH0CI0CJ0<6>IS0<3>9E0<2>FO0IS0IR0<9>AG09E09E0<14>000<17>Y00_00b\
+  00<7>t00<3>U00<3>t00<12>P00N00M00<11>000 cyclerange=0/255
+  }
+
+Near_Misses        { ; More madcap hijinx on the complex plane      (ok-40)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-40
+  function=ident/sqr/ident/ident passes=t
+  corners=-1.20385575684/-1.20388201429/-0.009342770297164/-0.009335424212\
+  892/-1.20386873565/-0.009325465227866 float=y
+  colors=000zzV<7>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<1\
+  5>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<6>zz\
+  R
+  }
+
+Elvis_Buckle       { ; Straight from the gut of The King!           (ok-40)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-40
+  function=ident/ident/sin/ident
+  corners=0.988910618/1.08247862/0.884765088/0.954941088 float=y
+  outside=summ logmap=old
+  colors=00000`00c<15>zzz<15>00c<14>003000022<14>0cc<15>zzz<15>0cc<14>0330\
+  00200<13>`00c00d44<13>zzz<15>c00<14>300000020<14>0c0<15>zzz<15>0c0<14>03\
+  0000002<12>00Z
+  }
+
+Priscilla's_Hair   { ; Luxuriant tresses                            (ok-41)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-41
+  function=ident/ident/tan/ident
+  corners=0.75181028/1.2422423/-1.0811474/-0.71332339 float=y
+  potential=256/500/0
+  colors=000<6>CQWEU`DRX<6>000<7>uV1<7>000<7>zzz<7>000<7>f0R<7>000<7>ISc<7\
+  >000<7>unQ<7>000<7>zXz<7>000<7>IFz<7>000<7>xz0<7>000<7>zDf<7>000<7>Jfz<7\
+  >000<7>ila<7>000<7>KAa<7>000<6>DQ`FUfERa<6>000<7>zdB<7>000<7>z06<6>801
+  cyclerange=0/255
+  }
+
+Spider_Guardshack  { ; Surveillance monitors                        (ok-41)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-41
+  function=ident/ident/cotan/tan
+  corners=-25.625/25.625/-19.21875/19.21875 float=y
+  potential=266/150/0
+  colors=000Vhe<29>xyb<7>1Uf000<14>000000200<29>z00sKS<6>zA0<15>zz0<14>w03\
+  <8>O0b000<15>000110111221221<6>553000<7>000001001012013<47>1Te1Ue1Uf2Uf<\
+  27>Uhe
+  }
+
+Crepuscule         { ; With Thelonious                              (ok-41)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-41
+  function=ident/ident/sin/ident passes=t
+  corners=1.26959262/1.31917954/1.07896032/1.01284443/1.31917954/1.0128444\
+  3 params=0.59999999999999998 float=y inside=epsiloncross
+  colors=000pr0xz0<7>000<7>3jZ<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7\
+  >000<7>00v<6>008000250<6>Lf0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7\
+  >unQ<6>874777<6>zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>00\
+  0<5>hj0
+  }
+
+Infinite_Grill     { ; All the right angles                         (ok-42)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-42
+  function=sin/tan/sin/tan passes=t corners=-2/2/-1.5/1.5 params=0/-1/0/-1
+  float=y decomp=256
+  colors=szz<40>2zz0zz0yz<45>02z00z00y<59>002000000000000<29>00k00m01m<29>\
+  0ky0mz1mz<30>zzz<4>tzz cyclerange=0/255
+  }
+
+Apollo_13          { ; Ultra-modern atomic-age design explosion!    (ok-42)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-42
+  function=tan/ident/tan/ident corners=-2/2/-1.5/1.5 float=y
+  potential=256/200/0
+  colors=000<14>0Sc1Uf1Td<13>123000100<19>R00S00V50<4>fT0iY0lb0og0ne3<15>8\
+  00<10>jED<34>211000000<30>000001001012013<39>4OW5PX5PX6QX<2>8RX9SYATYBUZ\
+  DV_<39>zzzendfod
+  }
+
+Crank              { ; Nope, it's not Pat Buchanan                  (ok-42)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-42
+  function=flip/ident/sin/ident corners=-2.279/2.279/-1.70925/1.70925
+  float=y decomp=128
+  colors=G4B826000<7>Jfz<7>000<7>ila<7>000<7>KAa<7>000<6>DQ`FUfERa<6>000<7\
+  >zdB<7>000<7>z06<7>000<6>CQWEU`DRX<6>000<7>uV1<7>000<7>zzz<7>000<7>f0R<7\
+  >000<7>ISc<7>000<7>unQ<7>000<7>zXz<7>000<7>IFz<7>000<7>xz0<7>000<7>zDf<4\
+  >O5H cyclerange=0/255
+  }
+
+Playboy            { ; Softcore fractal                             (ok-43)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-43
+  function=ident/ident/recip
+  corners=-1.2127342/-1.18977702/0.0380912096/0.0553090976 float=y
+  inside=zmag
+  colors=000pop<6>mmtllummu<20>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P\
+  00P11<7>KDDKEEJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa\
+  <25>poo
+  }
+
+Crematorium        { ; Crackle crackle                              (ok-43)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-43
+  function=tan/ident/ident
+  corners=0.3824806/-1.213519/-1.081572/1.046428/-1.213519/1.046428
+  params=-0.20000000000000001 float=y outside=real
+  colors=000zN0<11>zz0<14>w03<8>O0b000<15>000110111221221<6>553000<7>00000\
+  1001012013<47>1Te1Ue1Uf2Uf<58>xyb<7>1Uf000<14>000000200<29>z00sKS<6>zA0<\
+  2>zJ0
+  }
+
+Squidgy            { ; My tribute to Princess Di                    (ok-43)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-43
+  function=cotanh/sin/ident
+  corners=-0.83303591/-0.64855315/1.153635/1.2919971 params=0.5
+  float=y decomp=128
+  colors=000ZZ0<6>zz0<15>zzz<15>zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<1\
+  5>033<15>xWG<14>yxwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<7>VV\
+  0
+  }
+
+Foam               { ; At Rush's mouth                              (ok-43)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-43
+  function=tan/tan/ident
+  corners=0.0013643581/0.4554944/0.30099004/-0.30451668/0.4554944/-0.30451\
+  668 params=-0.20000000000000001 float=y potential=256/500/0
+  colors=000CkhDnjDqlDtn<4>9cf9`e8Xc7Ta<6>L4R<8>VHI<7>zH0<8>SDF<3>N3JL0KL1\
+  KM2KN3KO4J<12>zz0<7>``9YYAXVB<6>KAJMAKOAM<12>ziF<13>K8C413000<15>svcsvcs\
+  vcsvc<13>UMHSJFQIJ<5>EAb<6>7Nu5Px5Nu<5>A5c<2>E7WF8UG8SH9QJANKBLMCI<6>_VZ\
+  `Y`b`cdcf<4>nru<15>OI5<15>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSARUBUWBXY<\
+  3>Chf
+  }
+
+Elvisism           { ; Iconic, spooky                               (ok-44)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-44
+  function=ident/tan/ident/ident
+  corners=0.03291045448/0.05051456482/0.029560095278/0.02859741441/0.03971\
+  002102/0.020494006556 float=y
+  colors=000Bi0<12>zz0<15>zzz<15>000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f7\
+  0<14>000<15>S5N<15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>7955743540\
+  33077<13>4zz<15>zz0<15>z1z<15>000<15>0f03g07h0
+  }
+
+Silk_Scarf         { ; Drapery study                                (ok-44)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-44
+  function=ident/ident/ident/ident
+  corners=-0.428557156/-0.400189079/0.038432676/0.000608573581/-0.40018907\
+  9/0.000608573581 params=-3 float=y decomp=256
+  colors=C00<5>100000001<30>00z<30>002000000<8>H74J85J85<20>vPF<30>1100000\
+  01<29>Z0_`0a_0`<27>102001000000<30>v00<23>E00 cyclerange=0/255
+  }
+
+Gee_Spot           { ; World famous                                 (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/ident/ident
+  corners=-1.092806533/-1.089646533/0.3998083222/0.4021783222 float=y
+  colors=000zz4zz0<14>003213<13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>y\
+  xwzzzzyx<14>xWG<15>000<15>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<13>zz8
+  }
+
+Triangulation      { ; I just like it, okay?                        (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/ident/sqr passes=b
+  corners=-0.599730407178/-0.599716460606/0.34224401865/0.342254478578
+  params=0/0/-2 float=y fillcolor=1
+  colors=000888444000<12>TN0WO0YQ0`S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N\
+  <15>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033077<13>4zz<15\
+  >zz0<15>z1z<15>000<8>0N00Q00T00W00Z0<2>0f0<15>zz0<15>zzz<12>CCC
+  }
+
+Psiral             { ; Psiffy                                       (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/ident/ident passes=b
+  corners=-1.034295923/-1.031896693/-0.4518424011/-0.4500429788
+  float=y fillcolor=1
+  colors=000679<2>223111222<28>VVeXWgWVg<29>21g00g10g<29>rSUtTTtTT<29>_BLZ\
+  AKZAKYAK<11>R9JQ9JP8IO8H<13>000<28>jIE<6>QIC<9>II8HI8GJ7FK7<14>9_E8aF8`F\
+  <25>79A
+  }
+
+Rhino              { ; The animal, not the record company           (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=sinh/ident/ident passes=b
+  corners=-0.64999778/-0.53684578/0.629367666/0.714231666 float=y
+  fillcolor=1
+  colors=000KKK<4>000L00<13>z00<2>p00l00h00d00a00<9>000<15>zX0<15>000<15>u\
+  t0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>000<16>z0X<15>000<15>p0w<15>0\
+  00<15>zzz<9>OOO
+  }
+
+Super_Looper       { ; Use integer math for spray-paint version     (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/cosh/ident passes=t
+  corners=-0.360726657/-0.3476498562/0.3826107419/0.3978514946/-0.36333457\
+  /0.3860879592 params=0/0/-2 float=y inside=epsiloncross
+  colors=0000KB<5>0WJ<15>ttt<15>0WJ<13>043022023<14>6Zk<15>ttt<15>6Zk<15>0\
+  00<15>m0I<15>ttt<15>m0I<15>000<14>WGdZIg_Kg<13>rqstttsrt<13>`LhZIgXHe<13\
+  >323000021<7>0IA
+  }
+
+Womandelbrot       { ; Womyndelbrot?  The same, but different...    (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/ident/ident passes=b
+  corners=-0.3421734384/-0.3412159984/0.90418513362/0.90490321362
+  float=y maxiter=500 logmap=yes
+  colors=0000du<6>zz0<24>000<15>zz0<22>000<2>111222333444444<80>zzz07B<93>\
+  0du
+  }
+
+Splat              { ; Fractal dropped from a great height          (ok-45)
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=formula formulafile=overkill.frm formulaname=ok-45
+  function=ident/ident/tan passes=b
+  corners=-1.00566452714/-1.00563174596/2.17416105533e-005/-2.19666306956e\
+  -005/-1.00563174596/-2.19666306956e-005 float=y maxiter=500
+  fillcolor=1
+  colors=000804402000<15>p0w<15>000<15>zzz<15>000L00<13>z00<2>p00l00h00d00\
+  a00<9>000<15>zX0<15>000<15>ut0<15>000GA4<12>2v10z00w0<14>000<15>00z<14>0\
+  00<16>z0X<12>C06
+  }
+
+Acyrl              { ; Quite acyrl
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=complexnewton passes=t
+  corners=-31.99/31.99/-24.40639/23.57861
+  params=0.31830979999999998/3.1415926999999999/3.1415926999999999/0.31830\
+  979999999998 float=y fillcolor=200 periodicity=0
+  colors=000sq0<3>zz0<15>i70<15>000<15>S5N<15>zz0<15>XX8VW8TU8RS8PQ7<10>35\
+  4033077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<14>YQ0`S\
+  0aU0<9>qo0
+  }
+
+Acyrl2             { ; Also rather acyrl
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=complexnewton passes=t
+  corners=5.23644/31.99/-3.484/-12.24397/19.07251/-21.93209
+  params=0.31830979999999998/3.1415926999999999/3.1415926999999999/0.31830\
+  979999999998 float=y maxiter=16 fillcolor=200 inside=startrail
+  periodicity=0
+  colors=000G88844000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3j\
+  Z<6>165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<6>008000250<6>Lf\
+  0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874777<6>zzz<7>000<7\
+  >zWW<4>OCC
+  }
+
+Acyrl3             { ; Most acyrl of all, really
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=complexnewton passes=2
+  corners=14.69708/19.79333/-7.315519/2.216855/11.95619/-3.661
+  params=0.31830979999999998/3.1415926999999999/3.1415926999999999/0.31830\
+  979999999998 float=y maxiter=16 inside=startrail periodicity=0
+  colors=000<7>zzz<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7\
+  >xz0<7>000<7>3jZ<4>2IE1C9165000257<6>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7\
+  >00v<4>00N00F008000250<6>Lf0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7\
+  >unQ<6>874
+  }
+
+New_Rugged_Cross   { ; A fundamental form.
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=dynamic function=sinh corners=-20/20/-20/20
+  params=100/0.10000000000000001/1/3 float=y
+  colors=000AMF<4>000<7>gA1<7>000<7>11_<7>000<7>_Pz<7>000<6>4OU5RY4OU<5>13\
+  4000155<5>6_W7d`6_W<6>000<7>nr2<7>000<6>4k44r43k3<6>000<6>Z_q<7>000<7>xq\
+  A<7>000<6>AjCBqEAjC<6>000<7>JKm<7>000<7>Nfz<7>000<7>R`_<7>000<7>oDl<7>00\
+  0<7>lEA<7>000<7>G_OEVLCRI
+  }
+
+Tunnel_Vision      { ; Pretty fancy there, boyo...
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn+fn function=sin/tan passes=t
+  corners=1.6363655/2.1483655/1.6911386/2.0751386 params=1/0/1 float=y
+  potential=256/700/0
+  colors=000889<2>000<21>W0mY0pZ2n<19>xw3zz0yx1<21>`0Q<5>R04P00P11<7>KDDKE\
+  EJFFJGGIHI<33>0ty<33>02l00k00k<10>77l88lAAl<23>wwbzzazyazwa<33>mmtllummu\
+  <16>AAC
+  }
+
+Pajama_Party       { ; Go to bed right now!
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=barnsleym2 passes=2
+  corners=-0.0988020025/-0.0644020025/1.39119015/1.41699015
+  params=0/-2 float=y potential=256/10000/0
+  colors=000165000<7>Jfz<7>000<7>zmf<7>000<7>0UT<7>000<7>00v<4>00N00F00800\
+  0250<6>Lf0<7>000<7>c0N<7>000<7>uZL<7>000<7>SUX<7>000<7>unQ<6>874777<6>zz\
+  z<7>000<7>zWW<7>000<7>pf0<7>000<7>fGp<7>000<7>zXz<7>000<7>xz0<7>000<7>3j\
+  Z<5>1C9
+  }
+
+Interzone_Flag     { ; Bang Stargled Spanner.  Color cycle it.
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=lambdafn function=ident passes=t
+  corners=-4/3.997803/-2.99585/3
+  params=0.84999999999999998/0.42999999999999999 fillcolor=0
+  finattract=y periodicity=0
+  colors=000t00<12>P00N00M00<10>100000002<18>GKMHLNIMOJNQKPRLQS<2>PUX<3>CF\
+  H<3>PUX<8>GJMFIKEHJDFHCFG<13>112000110<14>QG0SH0UI0WK0ZL0`N0<6>pX0<3>QG0\
+  <3>pX0<8>YM0WK0UJ0RH0PG0<13>220000000<15>9F0AG0BH0CI0CJ0<6>IS0<3>9E0<2>F\
+  O0IS0IR0<9>AG09E09E0<14>000<17>Y00_00b00<7>t00<3>U00<2>m00
+  }
+
+Hemidemisemiquaver { ; No particular reason, I just like the word.
+                     ; (c) 1994 Bradley Beacham 74223,2745@compuserve.com
+  reset=1820 type=fn*z+z function=tan passes=2
+  corners=1.40880378/1.37766149/-0.0208538225/0.020669232/1.37766149/0.020\
+  669232 params=0.5/0/1 float=y decomp=128
+  colors=0000LM<6>0bc<15>zzz<15>0bc<15>000<15>zz0<15>zzz<15>zz0<14>003213<\
+  13>URvXTzYVz<14>yxx<15>XTz<15>033<15>xWG<14>yxwzzzzyx<14>xWG<15>000<7>0J\
+  K
+  }
+
