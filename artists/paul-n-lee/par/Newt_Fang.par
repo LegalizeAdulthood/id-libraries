@@ -1,0 +1,64 @@
+Dryad's_Sanctuary { ; (c) David Shanholtzer Jun 25, 1998 t=0:00:42.46
+             ; P200 MMX 1024x768  --  color map: dav35
+             ; Using Newt_Fang_Mset by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Newt_Fang_Mset function=tan/cotan passes=t
+  center-mag=-1.57769592575004000/-0.00007773733605232/133.7002/1.1182/90
+  params=10/0/0.5/1/8/30 float=y maxiter=253 inside=253
+  outside=summ orbitdelay=25
+  colors=000<28>000MC7<6>yhW<14>A20000<17>000E0G<10>aEd\
+  cFgeGigIliJnlLq<20>lBhc9Zc9_E0G<8>O6R000<69>000A20<10>\
+  yhW<22>A20000<26>000
+  }
+
+Wood_grain { ; (c) David Shanholtzer Jun 25, 1998 t=0:01:07.88
+             ; P200 MMX 1024x768  --  color map: dav35
+             ; Using Newt_Fang_Mset by Paul Carlson
+  reset=1960 type=formula formulafile=frac_ml.frm
+  formulaname=Newt_Fang_Mset function=tan/cotan passes=t
+  center-mag=-1.77091/0.000109518/4.783259/1.1182/90
+  params=10/0/0.5/1/8/30 float=y maxiter=253 inside=253
+  outside=summ orbitdelay=25
+  colors=000<29>000MC7<6>yhW<14>A20000<17>000E0G<12>eGi\
+  gIliJnlLqlLq<19>lBhc9Zc9_E0G<8>O6R000<69>000A20<10>yhW\
+  <22>A20000<25>000
+  }
+
+frm:Newt_Fang_Mset {; Copyright (c) Paul W. Carlson, 1998
+; real(p1) = controls element size try 0.5 to 16
+; imag(p1) not used
+; p2 = factor, try (1,0) or (0.3,0.3)
+; real(p3) = number of color ranges
+; imag(p3) = number of colors in a range
+; 
+width = real(p1)
+a = fn1(pixel)
+am = a - 1
+w = sqrt(-am / 6)
+z = iter = range_num = bailout = 0
+num_ranges = real(p3)
+colors_in_range = imag(p3)
+index_factor = (colors_in_range - 1) / width
+prev_mod2 = |w|
+: 
+k = w * w, q = w * am
+w = w - (k * k + k * am - a) / (4 * w * k + q + q)
+angle = atan(imag(w) / real(w))
+v = p2 * (fn1(angle)^2 + fn2(angle)^2)
+dist = abs(|w| - |v|)
+IF (dist < width && iter > 0)
+bailout = 1
+z = index_factor * dist + range_num * colors_in_range + 1
+ELSEIF (abs(|w| - prev_mod2) < 0.000001)
+bailout = 1
+z = 252
+ENDIF
+prev_mod2 = |w|
+range_num = range_num + 1
+IF (range_num == num_ranges)
+range_num = 0
+ENDIF
+iter = iter + 1
+z = z - iter
+bailout == 0 && |w| < 10000000
+}

@@ -45,3 +45,13 @@ MandNewt04 {; Jim Muth
   p3 <= |a|
   ;SOURCE: 98msg.frm
 }
+MandNewt10 {; Jim Muth
+            ; Replaced variable "e" with "ee" 5/05/99. G. Martin
+  z=g=pixel, a=real(p1), b=imag(p1), c=real(p2)
+  d=imag(p2), ee=real(p3), f=imag(p3):
+  h=z^a+(g-b)*z-g
+  j=c*z^d+g
+  z=z-ee*h/j
+  f <= |h|
+  ;SOURCE: 98msg.frm
+}

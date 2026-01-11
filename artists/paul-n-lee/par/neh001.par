@@ -27,7 +27,7 @@ mand-func          { ; warped mandelbrot
   }
 
 formflip           { ; uses the flip.par this one takes a while
-  reset type=formula formulafile=\FRA\flip.frm formulaname=flip0_man_j
+  reset type=formula formulafile=flip.frm formulaname=flip0_man_j
   corners=-2.0/2.000012/-1.500014/1.5 float=y maxiter=10000 inside=bof60
   outside=real decomp=256 biomorph=2
   colors=000ONB<7>J_4Ia3Ia4<16>LeTLeUMdVNcWOcX_Ka<12>AYqdHZ<11>Y8fdHZ<22>yLq`L\
@@ -83,4 +83,3 @@ sqr002             { ; sqr with cos
   outside=imag potential=9/23/5
   }
 
-
