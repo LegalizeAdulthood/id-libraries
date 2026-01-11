@@ -38,7 +38,7 @@ CircularMask       { ; Mandelfn -- ident  w/inversion
   }
 
 GlassesNoFrames    { ; Formula --  Halley
-  reset type=formula formulafile=fractint.frm formulaname=halley
+  reset type=formula formulafile=fractint.frm formulaname=Halley
   corners=-0.344002/0.343986/0.426484/0.942489 params=-4/3/-2/1
   maxiter=500 inside=0 potential=256/250/32000
   colors=000ZV7<17>zz0<8>LVY<9>Bb`Aca9da8da9b_9aZ<22>C8AD79D79<51>jX8jX8iW8<27\
@@ -78,7 +78,7 @@ MeanderingJulia    { ; Marksjulia w/inversion
   }
 
 Windows            { ; Formula ULI_4 -- ident/cos w/inversion & cont. pot.
-  reset type=formula formulafile=uli.frm formulaname=ULI_4
+  reset type=formula formulafile=fractint.frm formulaname=ULI_4
   function=ident/cos corners=-2.759418/10.360569/-4.45067/5.389361
   params=0.9/-0.5/1 maxiter=256 outside=summ logmap=yes
   potential=255/400/700
@@ -96,7 +96,7 @@ PerspectiveCircles { ; FN(z)+FN(pix) -- recip/recip
   }
 
 LookingInsideAStar { ; Formula ULI_2 -- log/sqr
-  reset type=formula formulafile=uli.frm formulaname=ULI_2
+  reset type=formula formulafile=jms02.frm formulaname=ULI_2
   function=log/sqr corners=-9.689148/6.310837/-9.379413/2.620597
   params=2/4/6/8 maxiter=256 inside=0 outside=mult logmap=yes
   potential=255/400/1000

@@ -1,13 +1,13 @@
 x-as        { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
-reset=2000 type=formula formulaname=jhline
+reset=2000 type=formula formulaname=jhline formulafile=frac_ml.frm
 center-mag=0/0/0.6666667 params=0.001/0 float=y maxiter=2 inside=0
 colors=00000e
 }
 
 jhparabola1 { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
-reset=2000 type=formula formulafile=sier.frm formulaname=jhparabola
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhparabola
 center-mag=0.0301786/0.369842/0.4959278 params=0.1/0 float=y
 maxiter=2 inside=0 colors=00000e
 }
@@ -16,7 +16,7 @@ graph1      { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
               ; broken polynomial function
               ; also x- en y-axes are visible
-reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=0/5/-1/2/1/0.02 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e
@@ -26,7 +26,7 @@ graph2      { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
               ; broken polynomial function
               ; also x- en y-axes are visible
-reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=0/5/1/-2/-3/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e
@@ -36,7 +36,7 @@ graph3      { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
               ; broken polynomial function
               ; also x- en y-axes are visible
-reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=0/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e 
@@ -46,7 +46,7 @@ graph4      { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
               ; broken polynomial function
               ; also x- en y-axes are visible
-reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=-5/5/1/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e
@@ -56,7 +56,7 @@ graph5      { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Mon, 23 Dec 2002 21:01:01
               ; with correct choosen parameters graph of linear f: a line
               ; also x- en y-axes are visible
-reset=2000 type=formula formulafile=sier.frm formulaname=jhgraphs1
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=jhgraphs1
 passes=1 center-mag=-0.791138/1.96774/0.2142747
 params=1/3/0/0/1/0.05 float=y maxiter=2 inside=0 cyclerange=1/1
 colors=00000e
@@ -64,7 +64,7 @@ colors=00000e
 
 jhsiertriangle { ; Jos Hendriks <jos@hexaedre-fr.com>
                  ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=sier.frm 
+reset=2000 type=formula formulafile=frac_ml.frm 
 formulaname=Jhsierpinski passes=1 
 center-mag=0.475632/0.48248/1.850399 params=10000/0 float=y
 maxiter=100 colors=000<8>000000000<3>000zzz<88>zzz<4>zzzccc<143>ccc
@@ -72,7 +72,7 @@ maxiter=100 colors=000<8>000000000<3>000zzz<88>zzz<4>zzzccc<143>ccc
 
 lambdasier1 { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=alle.frm
+reset=2000 type=formula formulafile=frac_ml.frm
 formulaname=Jhsierpinskim passes=1
 center-mag=+0.54606658322903670/+0.12909227378964890/946.2815
 params=10/0 float=y
@@ -82,7 +82,7 @@ colors=000z02<15>j02<2>g02f02f02f02<55>O02O02N02<3>M020z2<15>0j2<2>0g20f\
 
 lambdasier2 { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=alle.frm
+reset=2000 type=formula formulafile=frac_ml.frm
 formulaname=Jhsierpinskim passes=1
 center-mag=+0.54887713642052600/+0.10850051419031680/445.3089
 params=10/0 float=y
@@ -98,7 +98,7 @@ GBFGBDGBCG000<6>000
 
 sier1       { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=alle.frm
+reset=2000 type=formula formulafile=frac_ml.frm
 formulaname=Jhsierpinski passes=1
 center-mag=0.488878/0.841371/0.7771474 params=100/0 float=y outside=imag
 colors=000zzz<5>ttz<3>ppzpoypnxpmwplv<3>mhrlgqkfo<3>gbgfaed_caX_<2>PKPKG\
@@ -115,7 +115,7 @@ YdhXfiU<2>moPppNrsLttKzzKHzKGzLAzH<5>Zz`bzdfzfkziozm
 
 sier2       { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=alle.frm
+reset=2000 type=formula formulafile=frac_ml.frm
 formulaname=Jhsierpinski passes=1
 center-mag=0.529848/1.20584/3.72083 params=100/0 float=y outside=atan
 colors=000zzz<5>ttz<3>ppzpoypnxpmwplv<3>mhrlgqkfo<3>gbgfaed_caX_<2>PKPKG\
@@ -132,7 +132,7 @@ YdhXfiU<2>moPppNrsLttKzzKHzKGzLAzH<5>Zz`bzdfzfkziozm
 
 sier3       { ; Jos Hendriks <jos@hexaedre-fr.com>
               ; Sun, 29 Dec 2002 21:30:14
-reset=2000 type=formula formulafile=alle.frm
+reset=2000 type=formula formulafile=frac_ml.frm
 formulaname=Jhsierpinski passes=1
 center-mag=0.527529/-0.153234/7.771474 params=100/0 float=y outside=atan
 colors=000<3>00n00z0C0<3>0Cn0Cz0P0<3>0Pn0Pz0a0<3>0an0az0n0<3>0nn0nz0z0<3\
@@ -146,8 +146,8 @@ colors=000<3>00n00z0C0<3>0Cn0Cz0P0<3>0Pn0Pz0a0<3>0an0az0n0<3>0nn0nz0z0<3\
 
 block_of_flats   { ; Jos Hendriks <jos@hexaedre-fr.com>
                    ; Sat, 4 Jan 2003 20:36:30
-reset=2000 type=formula formulafile=fractint.frm
-formulaname=jh_square ismand=n passes=1
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jh_square ismand=n passes=1
 center-mag=-0.77118865717993890/+0.78113466887094510/227799/0.6848
 params=-2.522474238758866/-2.5106260160601/4/0 float=y
 colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
@@ -162,8 +162,8 @@ GBFGBDGBCG000<6>000
 
 windows          { ; Jos Hendriks <jos@hexaedre-fr.com>
                    ; Sat, 4 Jan 2003 20:36:30
-reset=2000 type=formula formulafile=fractint.frm
-formulaname=jh_square ismand=n passes=1
+reset=2000 type=formula formulafile=frac_ml.frm
+formulaname=Jh_square ismand=n passes=1
 center-mag=-1.64e-006/2.205e-006/0.5706675
 params=-2.016863584518433/0.3288808465003967/3/0 float=y
 colors=000z0zc0cz00c00zz0cc00z00c000z00c0zz0cc000000zzzccc<238>ccc
@@ -171,8 +171,8 @@ colors=000z0zc0cz00c00zz0cc00z00c000z00c0zz0cc000000zzzccc<238>ccc
 
 Boogie_Woogie_1  { ; Jos Hendriks <jos@hexaedre-fr.com>
                    ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y 
 colors=000zpC<4>zTBzOBzJB<3>z0AzAM<2>z3az0gz0i<3>z0rz0uz0wz0yz2x<14>ziOz\ 
 kMznJ<3>zzA<3>zoEzlFzjGzgHzeJ<8>zUQzSRzRS<3>zLV<19>zVnzWozWp<5>z`uzavzbw\ 
@@ -183,8 +183,8 @@ kztl<3>zwlztl<3>zbgzZfzUe<2>zHa<4>zHfzGg<3>zAfz8ez7e<19>zkkzmkzok<3>zwl<\
 
 Boogie_Woogie_2  { ; Jos Hendriks <jos@hexaedre-fr.com>
                    ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y outside=mult
 colors=000aJB<4>iMEjNFlNF<2>qPHsQIwYB<4>wRBwPBwOB<3>wIBwKBwNBwPB<15>cYGb\ 
 ZG`_H__HZ`HXaI<10>RQOQPOPOPPNPOMQNKR<25>RaERbDRcD<2>ReBSfATdC<10>cIYdG_e\ 
@@ -195,8 +195,8 @@ WdF_dGbc<2>JlaETK991<16>_IA
 
 Boogie_Woogie_3   { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 
 center-mag=-0.00113141/0.401369/9.887676 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y outside=mult 
 colors=0000jR<2>0eM0cK0cK<5>0ZJ0YJ0XJ0XI0WI<8>0RA0Q90Q8<3>0N40M30L2<6>0d\ 
@@ -209,8 +209,8 @@ colors=0000jR<2>0eM0cK0cK<5>0ZJ0YJ0XJ0XI0WI<8>0RA0Q90Q8<3>0N40M30L2<6>0d\
 
 Boogie_Woogie_4   { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y outside=summ 
 colors=0000SA<3>0NC0LD0KD0IE<2>0PO0RZ<9>0ka0ma0oa<3>0wb<4>0nV0lT0jS<2>0e\ 
 N0cL0cL<5>0ZK0YK0XK0XJ0WJ<8>0RB0QA0Q9<3>0N50M40L3<6>0d20g20j2<3>0u2<5>0T\ 
@@ -222,8 +222,8 @@ N0cL0cL<5>0ZK0YK0XK0XJ0WJ<8>0RB0QA0Q9<3>0N50M40L3<6>0d20g20j2<3>0u2<5>0T\
 
 Boogie_Woogie_5   { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 center-mag=0/0/0.6666667 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y outside=atan 
 colors=000SG9<10>iMFjNGlNG<2>qPIsQJwYC<4>wRCwPCwOC<3>wICwKCwNCwPC<15>cYH\ 
 bZH`_I__IZ`IXaJ<10>RQPQPPPOQPNQOMRNKS<25>RaFRbERcE<2>ReCSfBTdD<10>cIZdG`\ 
@@ -234,8 +234,8 @@ EWeF_eGbd<2>JlbETL992<10>QF8
 
 Boogie_Woogie_6   { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=invest~1.par 
-formulaname=jh_square ismand=n passes=1 
+reset=2000 type=formula formulafile=frac_ml.frm 
+formulaname=Jh_square ismand=n passes=1 
 center-mag=0.00500626/-0.0250417/4.901961 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y outside=atan 
 colors=000ISEDSD9RC<3>5P84P73O6<2>0L3<6>Xd2ag2ej2<3>xu2<5>VT1PO1KJ1<3>00\ 
@@ -247,7 +247,7 @@ xkaymayoa<3>ywb<4>tnVtlTsjS<2>peNocLncL<4>i_KgZKfYK<3>bVJ<3>MTF
 
 Boogie_Woogie_7   { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=alle.frm 
+reset=2000 type=formula formulafile=frac_ml.frm 
 formulaname=Jh_square ismand=n passes=1 
 center-mag=0/0/0.6666667 
 params=-2.012450635926158/-2.013287548247079/4/0 float=y 
@@ -256,7 +256,7 @@ outside=imag colors=000<8>000000000<3>000zzz<88>zzz<4>zzzccc<143>ccc
 
 Beach_Tent_Stuff  { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=alle.frm 
+reset=2000 type=formula formulafile=frac_ml.frm 
 formulaname=Jh_square ismand=n passes=1 
 center-mag=-1.12092/0.549035/5.495472 
 params=-2.074165287254229/-0.1060234799935393/4/0 float=y maxiter=30 
@@ -265,7 +265,7 @@ colors=@goodega.map
 
 More_Stuff        { ; Jos Hendriks <jos@hexaedre-fr.com>
                     ; Sun, 19 Jan 2003 18:45:15
-reset=2000 type=formula formulafile=alle.frm 
+reset=2000 type=formula formulafile=frac_ml.frm 
 formulaname=Jh_square ismand=n passes=1 
 center-mag=0/0/0.6666667 
 params=-1.266704348177156/-2.115420862728206/4/0 float=y maxiter=30 
@@ -278,7 +278,7 @@ GmSFmTEmUCmVBmX9n<24>LEMLELKFK<2>JFHIGFKHF<4>ZOFaPFdRF<3>pXFnXI
 
 Log_Normal_-1_-1   { ; Jos Hendriks ,2002
                      ; Thu, 30 Jan 2003 19:00:20
-  reset=2000 type=formula formulafile=fractint.frm
+  reset=2000 type=formula formulafile=frac_ml.frm
   formulaname=lognormal_distm passes=1
   center-mag=0.169752/-0.0312433/0.1751883 params=-1/-1/0/0 float=y
   colors=000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z0\
