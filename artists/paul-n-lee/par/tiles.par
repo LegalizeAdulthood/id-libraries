@@ -31,7 +31,7 @@ ChristmasTiles     {
 
 Tile2              { ; Yes !  Yes !! The formula is right.
                      ; This is getting interesting
-  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_a
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_A
   function=cos/zero/ident/tan passes=b center-mag=0/0/0.6666667
   params=1/1/-0.5/1/1/1 float=y maxiter=5000 fillcolor=45 outside=mult
   decomp=256 sound=off
@@ -43,7 +43,7 @@ Tile2              { ; Yes !  Yes !! The formula is right.
   }
 
 3DTile             { ; Strange : a stereogram effect
-  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_c
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_C
   function=recip/zero passes=d center-mag=0/0/0.6666667
   params=1/1/0.34/0.5600000000000001/1/1 float=y maxiter=5000
   inside=epsiloncross decomp=256 distest=2/71/1024/768 sound=off
@@ -55,7 +55,7 @@ Tile2              { ; Yes !  Yes !! The formula is right.
   }
 
 Finn               {
-  reset=2000 type=formula formulafile=tiles.frm formulaname=tiled_a
+  reset=2000 type=formula formulafile=tiles.frm formulaname=Tiled_A
   function=sin/sin/sinh/sinh passes=b center-mag=0/0/0.6666667
   params=1.62/1.62/0/0/1/1 float=y maxiter=5000 fillcolor=25
   potential=255/64/0 periodicity=0 sound=off

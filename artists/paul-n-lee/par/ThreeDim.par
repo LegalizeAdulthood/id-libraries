@@ -1,7 +1,7 @@
 
 test         { ; time=0:00:10.33 on a P-200 at 640x480
                ; using FractInt 1960.0
-  reset=1960 type=formula formulafile=3Dim.frm passes=t
+  reset=1960 type=formula formulafile=ThreeDim.frm passes=t
   formulaname=ThreeDim params=2.24/0.43/-0.65/-2.43
   center-mag=+0.00000000000000000/+0.00000000000000000/0.5
   float=y rotation=60/30/0 perspective=0 xyshift=0/0
@@ -16,7 +16,7 @@ test         { ; time=0:00:10.33 on a P-200 at 640x480
   }
 
 testing      { ; Pickover
-  reset=1960 type=formula formulafile=3Dim.frm
+  reset=1960 type=formula formulafile=ThreeDim.frm
   formulaname=ThreeDim params=2.24/0.43/-0.65/-2.43
   }
 
