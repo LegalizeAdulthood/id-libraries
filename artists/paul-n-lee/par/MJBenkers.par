@@ -1,0 +1,35 @@
+mandelischia_coli      { ; some strange bacteria?
+                         ; Fri, 26 Apr 2002 20:53:31
+  reset=1910 type=mandel passes=1
+  corners=-1.8605739577489129/-1.860573957723912/-9.3407929358274632e-007/\
+  -9.340605428307932e-007 params=0/0 float=y maxiter=1500 inside=0
+  distest=1/71/1280/1024
+  colors=000uux<2>xxyzzzyyz<45>DGdBEcBEc<29>BBLAAKCDK<14>kuC<15>AAK<15>z00\
+  <15>zzz<12>e5Oc0Kd1K<12>xIBzKAzMB<14>zzU<15>9C`ADaBEc<42>ttw
+  }
+
+mandellace         { ; Stultorum infinitus numerum est.
+                     ; time=0:09:48.68--SF5 on a P200
+                     ; Sun, 12 May 2002 14:11:51
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Cubic
+  center-mag=-0.02295512076302016/+2.84570793716452900/1.76006e+007/1/\
+  -32.499 params=0/0/0/0/0/0 float=y maxiter=5000 inside=0
+  colors=000KKa<4>MMeNNfOOg<28>ggxhhxiiy<28>xxzxxzyyzyyzzzz<28>zcczbbzaa<4\
+  >xYYxYYwXXvWW<21>iFFiEEhDD<30>M11L11K00<25>400300200200100<3>001002113<2\
+  3>66I66I66J<24>JJa
+  }
+
+intestines         { ; 0.00.23 on P200
+                     ;  Version 2000 Patchlevel 9
+                     ; Wed, 15 May 2002 21:59:31
+  reset=1910 type=formula formulafile=robklep1.frm
+  formulaname=DivMandel1 center-mag=+0.29840252942018640/+0.65947188425300180/\
+  47.85979 params=2/0/0/0/0/0 float=y maxiter=32000 bailout=500 inside=0
+  potential=255/511/0 decomp=256
+  }
+
+frm:DivMandel1 (XAXIS) {;
+    c = z = pixel:
+    z = (z^2+c)/(z^p1-c) + c;
+    |z| <= 4
+    }

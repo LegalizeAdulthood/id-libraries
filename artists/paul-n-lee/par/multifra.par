@@ -1,39 +1,43 @@
-Hi, I`m Albrecht Niekamp, Duesseldorf
-Niekamp@Online-club.de
-This is my first try to publish formulas for the fractint users. These par-files correspond to the frm-files
-with the same formula.name. The basic formula (Nr.13 or 13a) was first used on my Multifrac program for the good old AtariXL. All other formulas are variations of this one. Try yourself, You`ll see that they are very easy to edit. Suggstions, new par-files or variations are welcome.
---------------------------------------------------------------
+; Hi, I`m Albrecht Niekamp, Duesseldorf
+; Niekamp@Online-club.de
+; This is my first try to publish formulas for the fractint users. These
+; par-files correspond to the frm-files with the same formula.name. The
+; basic formula (Nr.13 or 13a) was first used on my Multifrac program for
+; the good old AtariXL. All other formulas are variations of this one. Try
+; yourself, You`ll see that they are very easy to edit. Suggstions, new
+; par-files or variations are welcome.
+; --------------------------------------------------------------
 
 multifrac5         { ; sqr(z+x-y)
-  reset=2000 type=formula formulafile=test5.frm formulaname=multifrac5
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac5
   passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
   maxiter=647 inside=startrail outside=mult periodicity=0
   cyclerange=0/255 colors=@default.map
   }
 
 multifrac4         { ; sqr(z+x+y)
-  reset=2000 type=formula formulafile=test4.frm formulaname=multifrac4
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac4
   passes=t center-mag=0.512901/4.44089e-016/0.9363296
   params=0.2/0/0.5/0 float=y maxiter=647 inside=atan outside=mult
   periodicity=0 cyclerange=0/255 colors=@default.map
   }
 
 multifrac3         { ; sqr(z)+x+y
-  reset=2000 type=formula formulafile=test3.frm formulaname=multifrac3
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac3
   passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
   maxiter=647 inside=startrail outside=mult periodicity=0
   cyclerange=0/255 colors=@default.map
   }
 
 multifrac2         { ; x2*x*y-p2
-  reset=2000 type=formula formulafile=test2.frm formulaname=multifrac2
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac2
   passes=t center-mag=0/0/0.6666667 params=0.5/0.2/0.2/0 float=y
   maxiter=647 inside=startrail outside=mult periodicity=0
   cyclerange=0/255 colors=@default.map
   }
 
 multifract6        { ; z=sqr(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac6 passes=2
   center-mag=0.193901/5.55112e-016/1.572327/1/90 params=0.2/0/0.5/0
   float=y maxiter=647 inside=atan outside=mult periodicity=0
@@ -41,7 +45,7 @@ multifract6        { ; z=sqr(z-x+y)
   }
 
 multifrac8-1       { ; z=z^(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac8 passes=1 center-mag=1.73886/0.27566/4.901961
   params=0.2/0/0.5572832422864468/-0.08761864070558795 float=y
   maxiter=647 bailoutest=imag inside=atan outside=mult periodicity=0
@@ -57,7 +61,7 @@ multifrac8-1       { ; z=z^(z-x+y)
   }
 
 multifrac8-2       { ; z=z^(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac8 passes=1 center-mag=1.73886/0.27566/4.901961
   params=0.2/-0.2958006530961028/0.5572832422864468/-0.003402813806573695
   float=y maxiter=647 bailoutest=imag inside=atan outside=mult
@@ -73,21 +77,21 @@ multifrac8-2       { ; z=z^(z-x+y)
   }
 
 multifrac9         { ; abs(x)*x*y-p2
-  reset=2000 type=formula formulafile=test9.frm formulaname=multifrac9
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac9
   passes=t center-mag=0/0/0.6666667 params=0.5/0/0.2/0 float=y
   maxiter=647 inside=atan outside=mult periodicity=0 cyclerange=0/255
   colors=@anenome.map
   }
 
 multifrac9-2       { ; abs(x)*x*y-p2
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac9 passes=1 center-mag=0/0/0.6666667
   params=0.2/0.2/0.5/0 float=y maxiter=647 inside=startrail
   outside=mult periodicity=0 cyclerange=0/255 colors=@default1.map
   }
 
 multifrac9-3       { ; abs(x)*x*y-p2
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac9 passes=1 center-mag=0/0/0.6666667
   params=0.4562639240699484/0.2/0.5636310922574541/0 float=y
   maxiter=647 inside=startrail outside=mult periodicity=0
@@ -95,13 +99,13 @@ multifrac9-3       { ; abs(x)*x*y-p2
   }
 
 multifrac1o            { ; p1 only
-  reset=2000 type=formula formulafile=test10.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
   params=0.5/0 float=y maxiter=647 periodicity=0 colors=@default.map
   }
 
 multifrac10-2      { ; p1 only
-  reset=2000 type=formula formulafile=test10.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
   params=0.5632648701437422/0 float=y maxiter=647 bailoutest=or
   inside=maxiter outside=real
@@ -118,7 +122,7 @@ multifrac10-2      { ; p1 only
   }
 
 multifrac10-3      { ; p1 only
-  reset=2000 type=formula formulafile=test10.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac10 passes=1 center-mag=0/0/0.6666667
   params=0.375/0 float=y maxiter=1200 bailoutest=or inside=startrail
   outside=summ
@@ -134,15 +138,15 @@ multifrac10-3      { ; p1 only
   GBFGBDGBCG000<6>000
   }
 multifrac11        { ; |z|>(x2+y2+z)
-  reset=2000 type=formula formulafile=test11.frm
-  formulaname=multifrac11passes=1 center-mag=0/0/0.6666667
+  reset=2000 type=formula formulafile=multifrac.frm
+  formulaname=multifrac11 passes=1 center-mag=0/0/0.6666667
   params=0.2/0/0.5/0 float=y maxiter=647 periodicity=0
   colors=@default.map
   }
 
 multifrac11-2        { ; z=sqr(z)
                      ;  
-  reset=2000 type=formula formulafile=test11.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac11 center-mag=7.925e-006/1.43e-006/0.6666673
   params=1.20036927396466/0/-0.2503616443372906/0 inside=fmod
   outside=summ
@@ -151,20 +155,20 @@ multifrac11-2        { ; z=sqr(z)
   }
 
 multifrac13        { ; original
-  reset=2000 type=formula formulafile=test13.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac13 center-mag=7.925e-006/1.43e-006/0.6666673
   params=-0.4436017944883572/-0.3657460249641408/-0.4168095950193793/-0.39\
   65727713858455 inside=atan outside=imag colors=@default.map
   }
 
 multifrac15        { ; |z|<(x2*y2)
-  reset=2000 type=formula formulafile=test15.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac15 center-mag=7.925e-006/1.43e-006/0.6666673
   params=0.2/-0.2/0.5/0 colors=@default.map
   }
 
 multifrac14        { ; |z|<4
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac14 passes=1 center-mag=0/0/0.6666667
   params=0.1004333628345592/-0.1554338206122013/0.3431440168462172/-0.0432\
   4777977843562 float=y maxiter=647 inside=maxiter outside=atan
@@ -174,7 +178,7 @@ multifrac14        { ; |z|<4
 
 
 multifrac8-3       {
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac8 passes=t
   center-mag=-0.57315215284098770/-0.51408961708571900/781.1124
   params=0.2/0/0.5572832422864468/-0.08761864070558795 float=y
@@ -192,14 +196,14 @@ multifrac8-3       {
   }
 
 multifrac18        { ; |z|<(x*y)
-  reset=2000 type=formula formulafile=test18.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac18 passes=t
   center-mag=-0.494136/-0.0058651/1.041667/1/15 params=0.2/-0.2/0.5/0
   float=y maxiter=647 periodicity=0 colors=@default.map
   }
 
 multifrac18-2      { ; |z|<(x*y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac18 passes=3
   center-mag=-0.494136/-0.0058651/1.041667/1/15
   params=0.241544846949675/-0.2875606555375836/0.5719412823877682/0.054911\
@@ -216,14 +220,14 @@ multifrac18-2      { ; |z|<(x*y)
   }
 
 multifrac19        { ; |z|<(x*y)z=z^(z-x+y)
-  reset=2000 type=formula formulafile=test19.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac19 passes=t center-mag=0/0/0.6666667
   params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=atan
   distest=1/71/1280/1024 periodicity=0 colors=@default.map
   }
 
 multifrac19-1      {
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac19 passes=t
   center-mag=+1.33072713057075000/+0.14589442815249260/266.6667
   params=0.1745628223517564/-0.1984710226752525/0.5965880306405835/0
@@ -239,29 +243,29 @@ multifrac19-1      {
   }
 
 multifrac10-1      {
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac10 passes=t center-mag=0/0/0.6666667
   params=0.1264351329081088/0.03076876125370036 float=y maxiter=647
   inside=bof60 outside=imag decomp=32 periodicity=0
-  colors=@gallet05.map
+  colors=@Gallet05.map
   }
 
 multifrac20        { ; if ..else..
-  reset=2000 type=formula formulafile=test20.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac20 passes=1 center-mag=0/0/0.6666667
   params=0.2/-0.2/0.5/0 float=y maxiter=647 periodicity=0
   colors=@default.map
   }
 
 multifrac22        { ; if ..else...|z|<(x2*y2)
-  reset=2000 type=formula formulafile=test22.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac22 passes=3 center-mag=0/0/0.6666667
   params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=bof60 outside=imag
   periodicity=0 colors=@default.map
   }
 
 multifrac22-2      { ; if ..else...|z|<(x2*y2)
-  reset=2000 type=formula formulafile=test22.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac22 passes=t center-mag=0/0/0.6666667
   params=0.3878536332285532/-0.08574480422376171/0.4407025360881375/0.0972\
   9911191137425 float=y maxiter=647 inside=bof60 outside=imag
@@ -277,14 +281,14 @@ multifrac22-2      { ; if ..else...|z|<(x2*y2)
   }
 
 multifrac1         { ; z=sqr(z)-x-y
-  reset=2000 type=formula formulafile=test1.frm formulaname=multifrac1
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac1
   passes=t center-mag=-4.44089e-016/3.33067e-016/0.8503401
   params=0.2/-0.2/0.5/0 float=y maxiter=647 inside=bof60 decomp=32
   periodicity=0 cyclerange=1/15 colors=@default.map
   }
 
 multifrac2-1       { ; z=sqr(z)+x
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac2 passes=t
   center-mag=-4.44089e-016/4.44089e-016/0.9363296
   params=-0.3805536057618946/0.3986816003906369/-0.4991454817346721/0.1029\
@@ -293,14 +297,14 @@ multifrac2-1       { ; z=sqr(z)+x
   }
 
 multifrac3-1       { ; sqr(z)+x+y
-  reset=2000 type=formula formulafile=test3.frm formulaname=multifrac3
+  reset=2000 type=formula formulafile=multifrac.frm formulaname=multifrac3
   passes=t center-mag=-8.88178e-016/6.66134e-016/1.103753
   params=0.5/0/0.2/0 float=y maxiter=647 inside=bof60 outside=mult
   periodicity=0 cyclerange=0/255 colors=@jewels3.map
   }
 
 multifrac6         { ; z=sqr(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac6 passes=3
   center-mag=0.0764597/0.031261/2.46098 params=0.2/-0.2/0.5/0 float=y
   maxiter=647 inside=bof61 outside=mult decomp=16 periodicity=0
@@ -311,7 +315,7 @@ multifrac6         { ; z=sqr(z-x+y)
   }
 
 multifrac5-1       { ; z=z^(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac5 passes=t
   center-mag=-0.344019/5.55112e-016/1.103753
   params=0.2969695120090335/-0.02816248054445021/0.3701071199682607/0
@@ -321,7 +325,7 @@ multifrac5-1       { ; z=z^(z-x+y)
   }
 
 multifrac8        { ; z=z^(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac8 passes=t center-mag=0/0/0.6666667
   params=0.2/-0.2/0.3/0 float=y maxiter=647 inside=bof60 outside=mult
   periodicity=0 cyclerange=0/255
@@ -336,7 +340,7 @@ multifrac8        { ; z=z^(z-x+y)
   }
 
 multifrac16-2      { ; |z|<(x2*y2) z-sqr(z-x+y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac16 center-mag=-0.293949/1.365e-005/0.9363412
   params=0.2192297128208258/0.578637043366802/-0.1630970183416242/0.145536\
   6679891354 inside=bof60 outside=mult invert=-0.14033021027253/0/0
@@ -344,7 +348,7 @@ multifrac16-2      { ; |z|<(x2*y2) z-sqr(z-x+y)
   }
 
 multifrac17        { ; |z|<(x2*y2) z-sqr(z)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac17 center-mag=0/0/0.6666667
   params=0.08670003357036044/-0.1771019623401593/0.4316660054322947/0.2359\
   111301004059 inside=bof60 outside=mult
@@ -353,7 +357,7 @@ multifrac17        { ; |z|<(x2*y2) z-sqr(z)
   }
 
 multifrac23        { ; if..else..extended
-  reset=2000 type=formula formulafile=test23.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac23 passes=t center-mag=0/0/0.6666667
   params=0.0379894405957213/-0.1840144047364727/0.3103823969237343/0.16928\
   61720633564 float=y maxiter=647 invert=0.18408154545732/0/0
@@ -361,7 +365,7 @@ multifrac23        { ; if..else..extended
   }
 
 multifrac24        { ; if..else..extended
-  reset=2000 type=formula formulafile=test24.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac24 passes=t
   center-mag=-1.27676e-015/0.734884/1.63277
   params=0.2245643482772302/-0.2740592669454024/0.2816675313577685/-0.0486\
@@ -371,7 +375,7 @@ multifrac24        { ; if..else..extended
   }
 
 multifrac25        { ; if..else..extended
-  reset=2000 type=formula formulafile=test25.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac25 passes=t
   center-mag=0.136173/-0.0112648/3.522119
   params=0.1956953642384106/-0.1918744468520158/0.3014328440198981/0.01404\
@@ -382,7 +386,7 @@ multifrac25        { ; if..else..extended
   }
 
 multifrac26        { ; if..else..extended
-  reset=2000 type=formula formulafile=test26.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac26 passes=t center-mag=0/0/0.6666667
   params=0.2792596209601123/-0.3311349833674123/0.5897091586046938/0
   float=y maxiter=647 inside=maxiter outside=mult decomp=256
@@ -390,7 +394,7 @@ multifrac26        { ; if..else..extended
   }
 
 multifrac27        { ; if..else..extended
-  reset=2000 type=formula formulafile=test27.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac27 passes=t
   center-mag=0.0395986/-6.66134e-016/0.4918603
   params=0.302584917752617/-0.1639393292031617/0.4652516251106296/0.089437\
@@ -398,7 +402,7 @@ multifrac27        { ; if..else..extended
   }
 
 multifrac27-2      { ; if..else..extended
-  reset=2000 type=formula formulafile=test27.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac27 passes=t
   center-mag=-0.511463/0.667762/9.837205
   params=0.302584917752617/-0.1639393292031617/0.4652516251106296/0.089437\
@@ -406,7 +410,7 @@ multifrac27-2      { ; if..else..extended
   }
 
 multifrac27-3      { ; if..else..extended
-  reset=2000 type=formula formulafile=test27.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac27 passes=3
   center-mag=0.0395986/-8.88178e-016/0.4918603
   params=0.3495376445814387/-0.1371349223303934/0.5474898525955992/0.01793\
@@ -422,14 +426,14 @@ multifrac27-3      { ; if..else..extended
   }
 
 multifrac28        { ; if..else..extended
-  reset=2000 type=formula formulafile=test28.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac28 passes=3 center-mag=-0.237686/0/0.6666667
   params=0.2/0.2/0.3/0 float=y maxiter=647 periodicity=0
   colors=@default.map
   }
 
 multifrac29        { ; 3d
-  reset=2000 type=formula formulafile=test29.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac29 passes=t center-mag=0/0/0.6666667
   params=0.2/0/0.3/0/0.1/0 float=y maxiter=647 inside=maxiter
   periodicity=0
@@ -446,7 +450,7 @@ multifrac29        { ; 3d
   }
 
 multifrac31        { ; 3d
-  reset=2000 type=formula formulafile=test31.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac31 passes=t center-mag=0/0/0.6666667
   params=0.2804376354258858/-0.1289254432813501/0.3661671803949095/0.07393\
   108920560321/0.1893734550004578/-0.02679830317087314 float=y
@@ -454,7 +458,7 @@ multifrac31        { ; 3d
   }
 
 multifrac33        { ; 3d..if..else
-  reset=2000 type=formula formulafile=test33.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac33 center-mag=7.925e-006/1.43e-006/0.6666673
   params=-0.09953917050691244/0.1780938138981292/0.1644672994170965/-0.401\
   7365031891842/-0.0336191900387585/0.4090182195501572
@@ -462,7 +466,7 @@ multifrac33        { ; 3d..if..else
   }
 
 multifrac33-2      { ; 3d..if..else
-  reset=2000 type=formula formulafile=test33.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac33 center-mag=7.925e-006/1.43e-006/0.6666673
   params=-0.06503189184240241/0.1011719107638783/0.1841975157933286/-0.374\
   0104373302408/0.02110965300454727/0.495303201391644
@@ -477,7 +481,7 @@ multifrac33-2      { ; 3d..if..else
   }
 
 multifrac34        { ; 3d..if..else
-  reset=2000 type=formula formulafile=test34.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac34 center-mag=7.925e-006/1.43e-006/0.6666673
   params=0.2680227057710501/-0.0272530289620655/-0.1306711020233772/0.1354\
   716635639515/0.3048127689443648/-0.1128513443403424
@@ -493,7 +497,7 @@ multifrac34        { ; 3d..if..else
   }
 
 multifrac34-2      { ; 3d..if..else
-  reset=2000 type=formula formulafile=test34.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac34 center-mag=7.925e-006/1.43e-006/0.6666673
   params=0.2680227057710501/-0.0272530289620655/-0.1306711020233772/0.1354\
   716635639515/0.3048127689443648/-0.1128513443403424
@@ -506,57 +510,57 @@ multifrac34-2      { ; 3d..if..else
   }
 
 multifrac35        { ; 3d  nested  if..else
-  reset=2000 type=formula formulafile=test35.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac35 center-mag=0/0/0.6666667
   params=0.009006012146366789/-0.2142551957762383/0.158989226966155/-0.458\
   9571825312052/0.1528397473067415/-0.3464980010376293
-  invert=0.0625812555314799/0/0 decomp=256 colors=@lindaa12.map
+  invert=0.0625812555314799/0/0 decomp=256 colors=@Lindaa12.map
   }
 
 multifrac35-1      { ; 3d  nested  if..else
                      ; fly with me
-  reset=2000 type=formula formulafile=test35.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
   params=-0.1528550065614795/-0.1978209784234138/0.1946501052888577/-0.273\
   3283486434522/-0.0443800164799951/-0.1662343211157567
-  invert=0.0625812555314799/0/0 decomp=256 colors=@lindaa12.map
+  invert=0.0625812555314799/0/0 decomp=256 colors=@Lindaa12.map
   }
 
 multifrac35-2      { ; 3d  nested  if..else
-  reset=2000 type=formula formulafile=test35.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
   params=-0.3032685323648793/-0.2066530350657674/0.1233649708548234/-0.212\
   2119815668203/0.08893093661305584/0.02889492477187413
-  invert=0.137894833216346/0/0 decomp=128 colors=@lindaa12.map
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
   }
 
 multifrac36        { ; 3d dblnested  if..else
-  reset=2000 type=formula formulafile=test36.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac36 passes=t center-mag=0/0/0.6666667
   params=-1.311947996459853/-1.570830408642842/1.203958250679037/0.7980376\
   598406934/-0.1753379924924467/0.8272530289620654
-  invert=0.137894833216346/0/0 decomp=128 colors=@lindaa12.map
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
   }
 
 multifrac37        { ; 3d dblnested  if..else
-  reset=2000 type=formula formulafile=test37.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac37 passes=3 center-mag=0/0/0.6666667
   params=-0.3234992522965178/0.04983062227240822/-0.146012756736961/0.3033\
   265175328837/-0.7323587755973998/-0.1556260872219001
-  invert=0.137894833216346/0/0 decomp=128 colors=@lindaa12.map
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
   }
 
 multifrac37-2      { ; 3d dblnested  if..else
-  reset=2000 type=formula formulafile=test37.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac37 passes=3
   center-mag=0.258993/-0.216216/2.109705
   params=0.2205389568773461/0.1400311288796655/0.1289223914304025/0.024585\
   71123386334/0.03708609271523179/0.04151738029114659
-  invert=0.137894833216346/0/0 decomp=128 colors=@lindaa12.map
+  invert=0.137894833216346/0/0 decomp=128 colors=@Lindaa12.map
   }
 
 multifrac38        { ; 3d dblnested if..else
-  reset=2000 type=formula formulafile=test38.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac38 passes=t center-mag=0/0/0.6666667
   params=0.2984801782280954/-0.1209356975005341/0.3110202337717826/-0.0326\
   8837549974059/0.1219153416547136/0.04773400067140721 float=y
@@ -565,7 +569,7 @@ multifrac38        { ; 3d dblnested if..else
 
 multifrac38-2      { ; 3d dblnested if..else
                      ; two in one
-  reset=2000 type=formula formulafile=test38.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac38 passes=t
   center-mag=-0.46264/-4.44089e-016/0.6024955
   params=0.3097766045106357/-0.135232093264565/0.3529786065248573/-0.04932\
@@ -576,7 +580,7 @@ multifrac38-2      { ; 3d dblnested if..else
 
 multifrac39        { ; 3d dblnested if..else
                      ; formula 38 inverse
-  reset=2000 type=formula formulafile=test39.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac39 passes=t center-mag=0/-0.027027/0.6666667
   params=0.1825220496230964/-0.03488265633106479/0.2937345500045778/-0.169\
   8202459791864/0.3995544297616505/-0.08151188695944091 float=y
@@ -585,7 +589,7 @@ multifrac39        { ; 3d dblnested if..else
 
 multifrac39-2      { ; 3d dblnested if..else
                      ; formula 38 inverse
-  reset=2000 type=formula formulafile=test39.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac39 passes=t center-mag=0/-0.027027/0.6666667
   params=0.1698590044862209/-0.06211767937253945/0.3195083468123417/-0.146\
   5239417706839/0.3973818170720542/-0.1087725455488754 float=y
@@ -594,7 +598,7 @@ multifrac39-2      { ; 3d dblnested if..else
 
 multifrac41        { ; formula 30 variation
                      ;   
-  reset=2000 type=formula formulafile=test41.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac41 passes=t
   center-mag=1.15454/0/0.8629301/1/-90
   params=0.4094729453413495/0.0587633899960326/0.4929471724600971/0.081267\
@@ -612,7 +616,7 @@ multifrac41        { ; formula 30 variation
 
 multifrac41-2      { ; multifrac30 variation
                      ; jungle
-  reset=2000 type=formula formulafile=test41.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac41 passes=t
   center-mag=1.15454/0/0.8629301/1/-90
   params=0.4816888943144017/-0.01970885341959899/0.5019470809045686/0.0292\
@@ -631,7 +635,7 @@ multifrac41-2      { ; multifrac30 variation
 
 multifrac41-3      { ; multifrac30 variation
                      ;  
-  reset=2000 type=formula formulafile=test41.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac41 passes=t
   center-mag=1.15454/0/0.8629301/1/-90
   params=0.4296060060426649/0.0005310220648823491/0.4084200567644276/0.050\
@@ -650,7 +654,7 @@ multifrac41-3      { ; multifrac30 variation
   }
 
 multifrac40        { ; 3d
-  reset=2000 type=formula formulafile=test40.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac40 passes=t
   center-mag=-0.338211/0.159302/0.2262122
   params=-0.2375942258980071/-0.1755879390850551/0.30602038636433/0.175514\
@@ -667,7 +671,7 @@ multifrac40        { ; 3d
   }
 
 multifrac40-2      { ; 3d
-  reset=2000 type=formula formulafile=test40.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac40 passes=t
   center-mag=-0.338211/0.159302/0.2262122
   params=-0.1516812646870327/-0.1177513962218085/0.3241071810052797/0.2357\
@@ -685,7 +689,7 @@ multifrac40-2      { ; 3d
 
 multifrac40-3      { ; 3d
                      ; chaos v order
-  reset=2000 type=formula formulafile=test40.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac40 passes=3
   center-mag=-0.338211/0.159302/0.2262122
   params=-0.1648281807916501/-0.1396722617267372/0.3327369304483169/0.2570\
@@ -703,7 +707,7 @@ multifrac40-3      { ; 3d
 
 multifrac41-4      { ; 3d
                      ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac41 passes=t
   center-mag=1.15454/0/0.8629301/1/-90
   params=0.4229027680288095/-0.003999053926206246/0.4073936277352214/0.053\
@@ -735,7 +739,7 @@ multifrac41-5      { ; 3dversion of 41-4
   }
 multifrac42        { ; functions only
                      ; 2d
-  reset=2000 type=formula formulafile=test42.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac42 function=cos/atanh passes=t
   center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 decomp=256
   periodicity=0 colors=@default.map
@@ -744,22 +748,22 @@ multifrac42        { ; functions only
 multifrac43        { ; functions only
                      ; 3d
                      ; gallet09.map
-  reset=2000 type=formula formulafile=test43.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac43 function=floor/one/asinh passes=t
   center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 decomp=256
-  periodicity=0 colors=@gallet09.map
+  periodicity=0 colors=@Gallet09.map
   }
 
 multifrac44        { ; functions only
                      ; 3d z=sqr(z)-x-y-w
                      ;  
-  reset=2000 type=formula formulafile=test44.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac44 function=round/sinh/cos passes=t
   center-mag=1.776e-005/1.43e-006/0.6666673 maxiter=647 inside=bof60
-  outside=mult decomp=256 periodicity=0 colors=@gallet09.map
+  outside=mult decomp=256 periodicity=0 colors=@Gallet09.map
   }
 multifrac46       { ; 3 fn  if..else
-  reset=2000 type=formula formulafile=test46.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac46 function=one/asinh/exp passes=t
   center-mag=0/0/0.6666667 float=y maxiter=647 inside=bof60
   outside=mult periodicity=0
@@ -775,7 +779,7 @@ multifrac46       { ; 3 fn  if..else
 
 multifrac46-2      { ; 3 fn  if..else
                      ; pointillism
-  reset=2000 type=formula formulafile=test46.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac46 function=one/zero/sin passes=t
   center-mag=0/0/0.6666667 float=y maxiter=647 inside=bof60
   outside=mult periodicity=0
@@ -789,7 +793,7 @@ multifrac46-2      { ; 3 fn  if..else
   B<2>BGFBGGBFGBDGBCG000000000
   }
 multifrac49        { ; z=third axis
-  reset=2000 type=formula formulafile=test49.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac49 function=one/sqrt/sqr passes=3
   center-mag=0/0/0.6666667 maxiter=647 bailoutest=imag
   inside=epsiloncross outside=real
@@ -799,7 +803,7 @@ multifrac49        { ; z=third axis
 
 multifrac50        { ; z=third axis
                      ; |z|>(x*y-z)
-  reset=2000 type=formula formulafile=test50.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac50 function=tan/cos/sin passes=1
   center-mag=0/0/0.6666667 maxiter=647 inside=period outside=atan
   invert=0.808221686452834/-0.212012085329753/0.386822107608264
@@ -816,7 +820,7 @@ multifrac50        { ; z=third axis
 
 multifrac52        { ; 2 fn  if..else
                      ;  
-  reset=2000 type=formula formulafile=test52.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac52 function=tan/cos passes=1
   center-mag=0/0/0.6666667 maxiter=647 inside=period outside=atan
   invert=0.808221686452834/-0.212012085329753/0.386822107608264
@@ -825,7 +829,7 @@ multifrac52        { ; 2 fn  if..else
 
 multifrac54        { ; 2 fn  if..else
                      ; checkerboard
-  reset=2000 type=formula formulafile=test54.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac54 function=cosxx/sqr/sin passes=t
   center-mag=7.925e-006/1.43e-006/0.6666673
   params=-0.8410412915433211/0.04629963072603533 maxiter=647
@@ -834,7 +838,7 @@ multifrac54        { ; 2 fn  if..else
 
 multifrac56        { ; 2 fn  if..else
                      ; mandel a la multifrac
-  reset=2000 type=formula formulafile=test56.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac56 function=cotan/acos passes=t
   center-mag=7.925e-006/1.43e-006/0.6666673
   params=0.1760734885708182/-0.01576891384624773 maxiter=647
@@ -851,7 +855,7 @@ multifrac56        { ; 2 fn  if..else
 
 multifrac57        { ; 2 fn  if..else
                      ; mandel a la multifrac
-  reset=2000 type=formula formulafile=test57.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac57 function=flip/trunc passes=t
   center-mag=7.925e-006/1.43e-006/0.6666673
   params=-0.02070375682851651/0.1232673116245002 maxiter=647
@@ -859,14 +863,14 @@ multifrac57        { ; 2 fn  if..else
   }
 
 multifrac58        { ; distorted mandel
-  reset=2000 type=formula formulafile=test58.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac58 function=sin/cos passes=1
   center-mag=7.925e-006/1.43e-006/0.6666673 params=-0.2/0.3
   maxiter=647 periodicity=0 colors=@default.map
   }
 
 multifrac48        { ; 3 fn  if..else
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac48 function=one/asinh/zero passes=t
   center-mag=1.73e-006/8.95e-007/0.6666671 maxiter=647 bailoutest=imag
   inside=bof60 outside=atan
@@ -884,14 +888,14 @@ multifrac48        { ; 3 fn  if..else
 multifrac45        { ; functions only
                      ; 3d w=fn3(w)-y      
                      ;  
-  reset=2000 type=formula formulafile=test45.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac45 function=cos/tanh/cotan passes=3
   center-mag=7.925e-006/1.43e-006/0.6666673 maxiter=647 inside=bof60
-  outside=mult decomp=256 periodicity=0 colors=@gallet09.map
+  outside=mult decomp=256 periodicity=0 colors=@Gallet09.map
   }
 
 multifrac45-2    { ; 3 fn  if..else
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac45 function=atan/log/cosxx passes=t
   center-mag=2.468e-005/-1.0785e-005/0.8912568 float=y maxiter=647
   inside=bof60 outside=mult invert=0.962706381420331/0/0 decomp=64
@@ -903,15 +907,15 @@ multifrac45-2    { ; 3 fn  if..else
   }
 
 multifrac47        { ; 3 fn  if..else
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac47 function=acos/zero/acos passes=1
   center-mag=0.363288/0.0231359/0.7788165 float=y maxiter=647
-  inside=maxiter outside=mult periodicity=0 colors=@gallet09.map
+  inside=maxiter outside=mult periodicity=0 colors=@Gallet09.map
   }
 
 multifrac51        { ; 3 fn  if..else
                      ; z=third axis
-  reset=2000 type=formula formulafile=test51.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac51 function=one/ident/asinh passes=1
   center-mag=5.87e-006/8.95e-007/0.6666671 float=y maxiter=647
   inside=maxiter outside=mult periodicity=0
@@ -927,7 +931,7 @@ multifrac51        { ; 3 fn  if..else
 
 multifrac53        { ; 2 fn if..else
                      ;  
-  reset=2000 type=formula formulafile=test53.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac53 function=one/acos passes=t
   center-mag=3.4065e-005/-6.885e-006/0.2346664 maxiter=647
   inside=maxiter outside=mult periodicity=0
@@ -942,16 +946,16 @@ multifrac53        { ; 2 fn if..else
   }
 
 multifrac59        { ; 2 fn  if..else
-  reset=2000 type=formula formulafile=test59.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac59 function=round/sqrt passes=t
   center-mag=1.73e-006/8.95e-007/0.6666671 maxiter=647 bailoutest=or
   inside=maxiter outside=atan
   invert=0.610766930143132/0.861568041016877/0.514572588274789
-  decomp=256 periodicity=0 colors=@gallet05.map
+  decomp=256 periodicity=0 colors=@Gallet05.map
   }
 
 multifrac60        { ; 2 fn  if..else
-  reset=2000 type=formula formulafile=test60.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac60 function=cabs/zero passes=t
   center-mag=0.863309/0.486486/0.8912656
   params=0.3041352580339976/0.06491592150639361/-0.7962370677816095/-0.398\
@@ -966,7 +970,7 @@ multifrac60        { ; 2 fn  if..else
 
 multifrac61        { ; tan and cabs only
                      ; crazy spectacles
-  reset=2000 type=formula formulafile=test61.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac61 passes=t center-mag=0/0/0.6666667
   params=0.3741142002624592/0.2969664601580859/0.9327097384563738/-0.51165\
   50187688834 maxiter=647 inside=maxiter outside=atan
@@ -983,7 +987,7 @@ multifrac61        { ; tan and cabs only
   }
 
 multifrac62        { ; 3fn 3var
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac62 function=cotanh/sinh/atanh passes=t
   center-mag=-0.234558/0.199413/4.901961
   params=0.2/-0.1/0.3/-0.2/-0.1/0.3 maxiter=647 inside=bof60
@@ -998,7 +1002,7 @@ multifrac62        { ; 3fn 3var
   }
 
 multifrac63        { ; 3fn 3var
-  reset=2000 type=formula formulafile=test63.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac63 function=cotanh/sin/atanh passes=t
   center-mag=-0.28777/0.189189/2.73224
   params=0.6096804712057863/1.088122196111942/0.8945493942075868/0.1307260\
@@ -1020,7 +1024,7 @@ multifrac63        { ; 3fn 3var
   }
 
 multifrac63-2      { ; 3fn 3var
-  reset=2000 type=formula formulafile=test63.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac63 function=cotanh/sin/cosxx passes=t
   center-mag=-0.28777/0.189189/2.73224
   params=0.6096804712057863/1.088122196111942/0.8945493942075868/0.1307260\
@@ -1042,7 +1046,7 @@ multifrac63-2      { ; 3fn 3var
   }
 
 multifrac35-4               { ; 3d
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
   params=-0.1528550065614795/-0.163609729300821/0.1946501052888577/-0.4475\
   463118381298/-0.0443800164799951/-0.2147160252693259
@@ -1058,7 +1062,7 @@ multifrac35-4               { ; 3d
   }
 
 multifrac35-5               { ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac35 passes=t center-mag=0/0.027027/0.6666667
   params=0.01051057466353345/-0.4015015106662191/0.2676808984649189/0.5071\
   642200994904/0.4147099215674306/-0.4950285348063601 bailoutest=real
@@ -1076,7 +1080,7 @@ multifrac35-5               { ;
   }
 
 multifrac22-3               { ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac22 passes=t
   center-mag=-0.13448/-0.469208/0.6666667
   params=0.3878536332285532/-0.07901547288430433/0.4407025360881375/0.1086\
@@ -1085,7 +1089,7 @@ multifrac22-3               { ;
   }
 
 multifrac22        {
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac22 passes=3 center-mag=0.028777/0/0.6666667
   params=0.2/-0.5087557603686637/0.5/0.5800653096102786 float=y
   maxiter=647 inside=bof60 outside=imag periodicity=0
@@ -1100,7 +1104,7 @@ multifrac22        {
   }
 
 multifrac30        { ; if..else..extended
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac30 passes=t
   center-mag=-0.340891/-0.178886/1.106645/1/90
   params=0.2/-0.1572939237647633/0.2/0.09842677083651234/0.1/0.13226569414\
@@ -1116,7 +1120,7 @@ multifrac30        { ; if..else..extended
   }
 
 multifrac6-1       { ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac6 passes=2
   center-mag=0.193901/7.155e-007/1.572326/1/90
   params=0.1463393047883542/0.04664021729178747/0.4680123294778283/0.03343\
@@ -1133,7 +1137,7 @@ multifrac6-1       { ;
   }
 
 multifrac7         { ; z=z^(z+x-y)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac7 passes=t
   center-mag=0.316547/0/0.6666667/1/-90
   params=0.08447340311899167/0.06156865138706627/0.5761333048493912/-0.052\
@@ -1151,7 +1155,7 @@ multifrac7         { ; z=z^(z+x-y)
   }
 
 multifrac55        { ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac55 function=tanh/tan/atanh passes=t
   center-mag=0.578584/-0.483869/0.7183915
   params=0.6922086245307779/0.005333368119019367 float=y maxiter=647
@@ -1169,7 +1173,7 @@ multifrac55        { ;
   }
 
 multifrac12        { ;  
-  reset=2000 type=formula formulafile=test12.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac12 passes=t
   center-mag=0.0644686/-0.18162/4.475479
   params=0.278350550859096/0.08816377758110293/-0.1187143314920499/0.33557\
@@ -1189,7 +1193,7 @@ multifrac12        { ;
   }
 
 multifrac21        { ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac21 passes=t
   center-mag=0.175079/-0.272227/3.011093
   params=-0.3233328119754632/-0.0976955092013306/-0.4467265465254677/0.095\
@@ -1211,7 +1215,7 @@ multifrac21        { ;
 
 multifrac13a        { ; original
                      ; z=fn1(z)
-  reset=2000 type=formula formulafile=test13a.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac13a function=exp
   center-mag=-2.22045e-016/-0.0540541/0.6666667/1/-90
   params=0.1780744285409101/0.2139287453840754/0.2026717612231819/0.176809\
@@ -1229,7 +1233,7 @@ multifrac13a        { ; original
 
 multifrac13a-2     { ; original
                      ; z=fn1(z)
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac13a function=exp
   center-mag=1.571/-3.13188/0.2916673/1/-90
   params=0.1780744285409101/0.2139287453840754/0.2026717612231819/0.176809\
@@ -1247,7 +1251,7 @@ multifrac13a-2     { ; original
 
 multifrac42-2      { ; functions only
                      ; zoom of 42
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac42 function=cos/atanh passes=2
   center-mag=3.55584/-10.6865/1.508117 maxiter=647 decomp=256
   periodicity=0
@@ -1263,7 +1267,7 @@ multifrac42-2      { ; functions only
 
 multifrac45-3      { ; functions only
                      ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac45 function=atan/cabs/cosh passes=2
   center-mag=1.502e-005/1.43e-006/0.6666673 maxiter=647 inside=bof60
   outside=mult invert=0.969786675618763/0/0 periodicity=0
@@ -1276,7 +1280,7 @@ multifrac45-3      { ; functions only
 
 multifrac39-3      { ; 3d dblnested if..else
                      ; formula 38 inverse
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac39 passes=t
   center-mag=-0.489209/-0.027027/0.9363296
   params=0.1000570696127201/0.09762840662862028/0.2360927152317881/-0.1282\
@@ -1287,7 +1291,7 @@ multifrac39-3      { ; 3d dblnested if..else
 
 multifrac64        { ; basic formula plus fn1
                      ; so many shapes
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac64 function=cotan passes=t
   center-mag=0/-0.322581/0.6666667
   params=-0.8866939298684652/0.5905819879757073/1.006595049897763/-0.66525\
@@ -1298,7 +1302,7 @@ multifrac64        { ; basic formula plus fn1
 
 multifrac65        { ; basic formula plus fn1
                      ;  
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac65 function=cos passes=t
   center-mag=-0.201439/0.162162/3.875969 params=0.25/0.25/0.25/0.25
   maxiter=647 inside=bof61 outside=mult
@@ -1315,7 +1319,7 @@ multifrac65        { ; basic formula plus fn1
   }
 
 multifrac67        { ; 2fn double nested if..else
-  reset=2000 type=formula formulafile=test67.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac67 function=tanh/cosh passes=t
   center-mag=-4.29e-006/-0.586502/0.7788206
   params=-0.04079866939298683/-0.2055925168614765/-0.2478087710196234/-0.4\
@@ -1324,7 +1328,7 @@ multifrac67        { ; 2fn double nested if..else
   }
 
 multifrac68        { ; 2fn double nested if..else
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac68 function=acos/cotan passes=t
   center-mag=-1.15108/0/0.6666667
   params=0.1792188024536882/-0.2778469954527421/-0.3718073824274423/-0.190\
@@ -1333,7 +1337,7 @@ multifrac68        { ; 2fn double nested if..else
   }
 
 multifrac67-2      {
-  reset=2000 type=formula formulafile=multif~1.frm
+  reset=2000 type=formula formulafile=multifrac.frm
   formulaname=multifrac67 function=log/cosxx passes=t
   center-mag=0/0/0.6666667
   params=-0.1314505447553941/-0.09633228553117465/-0.3245332193975646/-0.2\

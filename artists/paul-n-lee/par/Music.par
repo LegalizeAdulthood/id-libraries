@@ -1,0 +1,400 @@
+; The following pars illustrate the sound capabilities of Fractint.
+
+Arcade             { ; Angular Sound Sampler  --  Tue, 12 Mar 2002 07:15:36
+                     ; Jay Litwyn <brewhaha@ecn.ab.ca> Edmonton, Alberta
+                     ; A radical little quirk of mandelcloud.
+                     ; The base frequency doesn't seem to matter.
+  type=mandelcloud
+  center-mag=+0.13099598508613660/+0.01572480375364660/1.699748/0.8073/-90
+  params=-37 maxiter=97 sound=z hertz=37 orbitdelay=0
+  }
+
+Arcade_Sampler     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
+                     ; Sun, 16 Jan 2005 04:33:51
+                     ; this version still doesn't sound as good as I
+                     ; remember, especially what comes out of my speaker,
+                     ; which is all that my old version ever used.
+  reset=2003 type=mandelcloud passes=1 center-mag=-0.5/0/0.6666667
+  params=-37 float=y maxiter=100 inside=0 periodicity=3 hertz=360
+  sound=x/pc/fm attack=1 decay=0 sustain=15 srelease=0 showorbit=yes
+  orbitdelay=1 debug=4020 debug=70
+  }
+
+BOO!               { ; Image&Music (c) Bill Jemison 2000
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; playtime~00:00:35
+  reset=2000 type=threeply passes=1 video=SF5
+  center-mag=-25.6682/-4.28027/0.001124723/0.4739/-85/-55.646
+  params=-165/-17/126 float=y maxiter=13 viewwindows=1/0.75/yes/0/0
+  cyclerange=1/15 hertz=-1000 sound=x/fm attenuate=mid polyphony=2
+  attack=8 decay=5 sustain=14 srelease=10 orbitdelay=400 showorbit=yes
+  colors=000zzz<253>000
+  }
+
+Chaos_City           { ; copyright (c) Bill Jemison 1999
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+                     ; must use 1024x768x256 video mode
+  reset=2000 type=mandel passes=d video=SF7
+  center-mag=-0.21515300000000000/+0.64304200000000000/1354.084/0.1539/-7.\
+  496/-51.993 params=0/0 float=y maxiter=1000 fillcolor=0 inside=0
+  outside=0 viewwindows=19/0.75/yes/0/0 cyclerange=1/1 hertz=0
+  sound=x/fm polyphony=2 wavetype=7 attack=3 decay=5 sustain=15
+  srelease=8 orbitdelay=1500 showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Chop_schtiks_SF7   { ;  Copyright 2000 by Bill Jemison 
+                               ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+  reset=2000 type=frothybasin passes=1 video=SF7
+  center-mag=0.877039/-0.240632/1.465201 params=1/0/2.028713768218725
+  float=y maxiter=647 bailout=1 symmetry=none periodicity=0
+  viewwindows=8/0.75/yes/0/0 hertz=-50 sound=z/fm/quant polyphony=9
+  scalemap=1/3/5/6/8/10/12/1/5/8/1/5 orbitdelay=750 showorbit=yes
+  }
+
+Crystal            { ; copyright (c) Bill Jemison 1999
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+  reset=2000 type=threeply passes=1 video=SF7
+  center-mag=-25.6682/-4.28027/0.001127669/1.2175/-174.164/11.757
+  params=55/1/42 float=y maxiter=48 viewwindows=1/0.75/yes/0/0
+  hertz=50 sound=y/fm attenuate=mid polyphony=2 attack=8 decay=5
+  sustain=14 srelease=10 orbitdelay=1000 showorbit=yes
+  colors=000zzz<253>zzz
+  }
+
+Cycle-o-rama       { ; Image&music (c) Bill Jemison 2000
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+                     ; playtime 0:08:22
+  reset=2000 type=threeply passes=1 video=SF7
+  center-mag=6.091/19.6806/0.01024156/2.6547/171.252/24.801
+  params=22/0.4/-1.8 float=y maxiter=32 viewwindows=2/0.75/yes/0/0
+  hertz=0 sound=y/fm attenuate=mid polyphony=9 wavetype=5 attack=10
+  sustain=10 srelease=10 orbitdelay=400 showorbit=yes
+  colors=000zz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL000\
+  0<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zz\
+  LzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e0\
+  0L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2\
+  >z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzz\
+  ezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2\
+  >0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0zL0cc\
+  c<24>ccc<4>ccc00L00e00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzze
+  }
+
+Fugue_on_y_minor   { ; copyright (c) Bill Jemison 1999
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+                     ; must use 1024x768x256 video mode
+  reset=2000 type=mandel passes=d video=SF7
+  center-mag=-0.21515300000000000/+0.64304200000000000/1354.084/0.1539/-7.\
+  496/-51.993 params=0/0 float=y maxiter=1000 fillcolor=0 inside=0
+  outside=0 viewwindows=19/0.75/yes/0/0 cyclerange=1/1 hertz=50
+  sound=y/fm/quant polyphony=2 wavetype=7 attack=3 decay=5 sustain=15
+  srelease=8 scalemap=1/4/8/1/1/8/4/1/4/1/8/12 orbitdelay=1500
+  showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Lotus               {; copyright (c) Bill Jemison 2000 
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+  reset=2000 type=threeply passes=1 video=SF7
+  center-mag=-25.6682/-4.28027/0.001124723/0.4739/-85/-55.646
+  params=-55/-1/-42 float=y maxiter=49 viewwindows=1/0.75/yes/0/0
+  hertz=-50 sound=y/fm attenuate=mid polyphony=9 attack=8 decay=5
+  sustain=14 srelease=10 orbitdelay=1000 showorbit=yes
+  colors=0000Lz0ez0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e0\
+  0L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2\
+  >z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzz\
+  ezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2\
+  >0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2\
+  >00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL\
+  0000<2>00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<2>00z<2>0zzzzezz0<2>z00e00L0\
+  0zzLzL0zL0<25>C4HA4H83I<2>21K00L00e00z<2>0zzzzezz0<2>z00e00L00zzLzL0000<\
+  2>00z
+  }
+
+Mariah             { ; Music par Copyright (c) Bill Jemison [70400,2537] 1999
+                     ; Fractint ver. 20.0
+                     ; Compatible with most SB compatible cards (OPL-3 chip)
+  reset=2000 type=mandel passes=1
+  center-mag=-0.215153/0.643042/1353.996/0.1539/-7.499/-51.994
+  params=0/0 maxiter=1000 viewwindows=16/0.75/yes/0/0 hertz=220
+  sound=y/fm polyphony=6 wavetype=4 orbitdelay=1000 showorbit=yes
+  }
+
+Mtest1             { ; fn||fn music -- Peter J. Boulding
+                     ; Fractint ver. 20.0
+  reset=2000 type=lambda(fn||fn) function=sqr/ident passes=d
+  center-mag=-0.256327/0.0506027/0.04049589/1/90
+  params=0.7789696951200904/0.6341120639667959/0.2872631000701926
+  float=y maxiter=1000 bailout=1000 bailoutest=and inside=fmod
+  outside=summ finattract=y periodicity=0 viewwindows=1/0.75/yes/0/0
+  cyclerange=0/255 hertz=-100 sound=z/fm/quant volume=50 attenuate=low
+  polyphony=4 attack=2 sustain=10 srelease=10 orbitdelay=1500
+  showorbit=yes
+  colors=0Xi<86>022022011<3>000000011<120>0fx0fx0gy<2>0hz0hz0gy<31>0Xi
+  }
+
+Mtest2             { ; phoenix music -- Peter J. Boulding
+                     ; Fractint ver. 20.0
+  reset=2000 type=phoenix passes=1
+  center-mag=0.39554/-0.00173074/11.08304/1/-90 params=0/-1/0 float=y
+  bailoutest=and inside=fmod decomp=256 finattract=y
+  viewwindows=17/0.75/yes/0/0 cyclerange=0/255 hertz=-450
+  sound=z/fm/quant attenuate=low polyphony=9 wavetype=2 attack=1
+  sustain=12 srelease=13 orbitdelay=1500 showorbit=yes
+  colors=JJU<76>ttwttxuuxuuxvvyvvy<41>88M77L55K<2>22H00G11G<43>hhuiivjjw<2\
+  >mmzmmzlly<44>77N66M55L<2>22I11H22I<3>88M99NBBO<8>GGSGGSGGSHHSHHTIITIIU
+  }
+
+Mtest3             { ; chip music -- Peter J. Boulding
+                     ; Fractint ver. 20.0
+  reset=2000 type=chip passes=d center-mag=0/0/0.001754386
+  params=-10/0/1 float=y viewwindows=17/0.75/yes/0/0 hertz=300
+  sound=z/fm/quant attenuate=low polyphony=4 wavetype=4 attack=6
+  decay=8 sustain=12 srelease=10 scalemap=1/3/5/6/8/10/12/1/3/5/8/10
+  orbitdelay=1500 showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+music_1            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=gingerbreadman passes=1
+  corners=3.751879/0.07802473/7.537395/-3.930215/6.557631/2.54\
+  9392 params=8.01/2 float=y maxiter=100 bailout=128
+  inside=3 viewwindows=4.2/0.75/yes/0/0 hertz=150
+  sound=x/fm/quant polyphony=9 wavetype=5 attack=1
+  sustain=10 srelease=15 scalemap=1/2/1/3/1/4/1/5/1/6/1/7
+  orbitdelay=1300 showorbit=yes colors=@default.map
+  }
+
+music_2            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=quadruptwo passes=1
+  corners=-2.523687/37.52171/-51.15019/-34.31792
+  params=-33/1/5 float=y maxiter=20 bailout=64 inside=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=10 sound=z/fm/quant
+  polyphony=3 attack=1 decay=6 sustain=7 srelease=14
+  scalemap=1/2/1/3/1/4/1/5/1/6/1/7 orbitdelay=1900
+  showorbit=yes colors=@default.map
+  }
+
+music_3            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=quadruptwo passes=1
+  corners=-36.04249/11.80311/-35.97947/-15.86855
+  params=-25/1/5 float=y maxiter=20 bailout=64 inside=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=10 sound=z/fm/quant
+  polyphony=9 wavetype=2 attack=1 decay=7 sustain=10
+  srelease=13 scalemap=1/2/1/3/1/4/1/5/1/6/1/7
+  orbitdelay=1900 showorbit=yes colors=@default.map
+  }
+
+music_4            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=quadruptwo passes=1
+  corners=-29.41428/9.819112/-37.59262/-21.10167
+  params=-25/1/5 float=y maxiter=12 bailout=64 inside=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=8 sound=z/fm/quant
+  polyphony=6 wavetype=2 attack=9 decay=9 sustain=11
+  srelease=13 scalemap=1/1/3/3/3/6/6/8/8/10/10/12
+  orbitdelay=1625 showorbit=yes colors=@default.map
+  }
+
+music_5            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=hopalong passes=1
+  center-mag=-0.406464/-0.371105/0.2523325/0.784/-43.558/0.968
+  params=-1/1.101/0.995 float=y maxiter=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=150 sound=x/fm/quant
+  polyphony=5 wavetype=1 attack=8 decay=8 sustain=11
+  scalemap=1/1/3/3/3/6/6/8/8/10/10/11 orbitdelay=1600
+  showorbit=yes colors=@default.map
+  }
+
+music_6            { ; Music and par Copyright (c) Sylvie Gallet, 1999
+                     ; sylvie_gallet@compuserve.com
+  reset=2000 type=threeply passes=1
+  center-mag=4.54747e-013/-4.54747e-013/0.0005274262
+  params=1/-1/1 float=y maxiter=3
+  viewwindows=4.2/0.75/yes/0/0 hertz=50 sound=x/fm/quant
+  polyphony=9 attack=9 sustain=8
+  scalemap=1/1/3/3/3/6/6/8/8/10/10/11 orbitdelay=1500
+  showorbit=yes colors=@default.map
+  }
+
+Music_Fractal-1    { ; Intro to the sound of chaos by Bill Jemison [70400,2537]
+                     ; Fractint ver. 19.3
+  reset=1930 type=mandel passes=1 hertz=220 orbitdelay=1000 sound=y
+  video=SF7 showorbit=yes
+  center-mag=-0.223108/0.641995/1354.059/0.1539/-7.499/-51.996
+  params=0/0 maxiter=1000 viewwindows=16/0.75/yes/0/0
+  colors=@default.map
+  }
+
+Music_Fractal-2    { ; (c) Sylvie Gallet [101324,3444], 1996
+                     ; sylvie_gallet@compuserve.com
+                     ; Fractint ver. 19.3
+  reset=1930 type=barnsleyj3 passes=1 hertz=1200 orbitdelay=1000 sound=z
+  video=SF7 maxiter=1000 showorbit=yes
+  center-mag=0.207059/0/1.893939
+  params=0.1/0.36 float=y periodicity=0
+  viewwindows=16/0.75/yes/0/0
+  colors=@default.map
+  }
+
+Nocturn            { ; copyright (c) Bill Jemison 1999
+                     ;  Fractal Tone-Poem
+                     ; add Concert Hall reverb if possible
+                     ; must use 640x480x256 video mode
+  reset=2000 type=mandel passes=d video=SF5
+  center-mag=-0.215153/0.643042/1354.077/0.1539/-7.499/-51.994
+  params=0/0 maxiter=1000 fillcolor=0 inside=0 outside=0
+  viewwindows=19/0.75/yes/0/0 hertz=0 sound=x/fm/quant polyphony=8
+  wavetype=4 scalemap=1/4/8/1/1/8/4/1/4/1/8/12 orbitdelay=4000
+  showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Pod_Racers         { ; Music par Copyright (c) Bill Jemison [70400,2537] 1999 
+                     ; Fractal Tone-Poem -- Fractint ver. 20.0
+                     ; OPL-3 chip (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+  reset=2000 type=mandelcloud passes=1 center-mag=-0.5/0/0.6666667
+  params=50 float=y maxiter=500 viewwindows=12/0.75/yes/0/0 hertz=512
+  sound=x/pc/fm polyphony=3 wavetype=1 decay=8 sustain=14 srelease=10
+  orbitdelay=1000 showorbit=yes
+  }
+
+Pop_Piccolo        { ; (c) Bill Jemison [70400,2537], 1996
+                     ; Fractint ver. 19.3
+  reset=1930 type=popcornjul passes=1 hertz=1200 orbitdelay=1000 sound=z
+  video=SF7 maxiter=100 showorbit=yes
+  center-mag=-0.05295861129553414/-0.72472986547206800/149.6573
+  params=0.1 float=y viewwindows=16/0.75/yes/0/0
+  colors=@default.map
+  }
+
+Rainforest         { ; copyright (c) Bill Jemison 2000 ver=20
+                     ; Fractal Tone-Poem
+                     ; OPL3 (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+                     ; requires 1280x1024 res...use diskvideo if necessary
+  reset=2000 type=formula formulafile=frac_ml.frm formulaname=Carr3145
+  passes=1 video=SF9
+  center-mag=-0.00150344575698622/-0.29691627188504780/823280.3/1/139.999
+  params=200/300/400/550 float=y maxiter=647 symmetry=none
+  periodicity=0 viewwindows=2/0.75/yes/0/0 hertz=0 sound=x/fm
+  orbitdelay=400 showorbit=yes
+  colors=000000<3>C04005I06<3>U0B<3>i04m02m68<3>pUWq_asee<3>zzs<3>alGWi6Vg\
+  6<3>T_8SY9SW9<3>POBGI87B56AA<3>152040AAG<2>0Qc<5>5Zf6`g7ag<3>BhiBjjClk<2\
+  >Fpl<3>jvqrwrzyt<3>zsZyqUyoOynJylDxj2wiK<3>vc4ua0ub3<3>vhJviNvjPwkR<2>xo\
+  a0qe<11>cQTfOSjLQ<3>wCM<3>bADXABS99M96H84<6>872772672<2>160<5>572672772<\
+  3>A93B94C94DA5EA4FB3PG3<3>jY1ob1uf0zk0<3>0kk<2>WgD<3>CXF<3>GVEHUEITEJTDK\
+  SDLSDMRCOQBORA<3>OH7OE6NB5<4>YH8_I9aJ9cKAeLAhMB<3>mTInVJpYH<2>vdByg8yh5y\
+  i3<3>ya4y_4yY4<3>yR4yQ5yO5<3>zG6zE6uH8qKBlNDgQFeNDbJA<12>F73
+  }
+
+The_Sorceress      { ; Music par Copyright (c) Bill Jemison [70400,2537] 1999
+                     ; Fractint ver. 20.0
+                     ; Compatible with most SB compatible cards (OPL-3 chip)
+  reset=2000 type=chip passes=1 center-mag=0/0/0.001754386
+  params=-15/-19/1 float=y viewwindows=12/0.75/yes/0/0 hertz=-200
+  sound=x/pc/fm/quant polyphony=6 attack=9 decay=8 sustain=14
+  srelease=10 scalemap=1/4/4/8/8/4/1/4/8/4/4/1 orbitdelay=1000
+  showorbit=yes
+  }
+
+Snowflakes         { ; Ron Barnett, September 13, 1999
+                     ; Fractint ver. 20.0
+                     ; Compatible with most SB compatible cards (OPL-3 chip)
+  reset=2000 type=julia passes=1
+  center-mag=-0.489022/0.120603/18.72675 params=-0.9/0.7 float=y
+  maxiter=2000000000 bailoutest=real viewwindows=15/0.75/yes/0/0
+  hertz=10 sound=x/fm/quant polyphony=6 wavetype=4
+  scalemap=1/3/5/6/8/10/12/1/3/5/8/10 orbitdelay=1500 showorbit=yes
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+Waterfall          { ; Music par Copyright (c) Bill Jemison [70400,2537] 1999
+                     ; Fractal Tone-Poem -- Fractint ver. 20.0
+                     ; OPL-3 chip (most SB compatibles - NOT SBLive!)
+                     ; add Concert Hall reverb if possible
+  reset=2000 type=chip passes=1 video=SF7 center-mag=0/0/0.001754386
+  params=-15/-19/1 float=y viewwindows=12/0.75/yes/0/0 hertz=-100
+  sound=x/fm/quant polyphony=3 decay=8 sustain=14 srelease=10
+  scalemap=1/3/5/6/8/10/12/1/3/5/8/10 orbitdelay=1000 showorbit=yes
+  }
+
+Waterpipe          { ; fractals@csoft.at -- gerald@csoft.at
+                     ; Sun, 22 Feb 1998 02:41:50
+  reset=1950 type=fn(z)+fn(pix) function=tan/sqr passes=b
+  corners=-0.50039409/0.27024499/-2.9155783/-2.131349 params=0/0/1/0
+  float=y fillcolor=8 inside=epsiloncross potential=255/255/0
+  colors=000<18>zpa<12>UPFMJIEDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCqm<2>BghAdg\
+  9`e8Yd7Vb<7>14RC6QO8OP9NQBM000000UFJVHI<7>zH0<8>SDF<4>L0KB8D1H5<19>Q`5Sa\
+  6R`6<16>2I6IIAZJE<6>wgF<8>XKDUHDSGC<6>AB7000HIC<10>svcsvc<20>200pdJ<5>zj\
+  F<13>RCCEEE<13>kki<18>005 hertz=1200 sound=y
+  }
+
+who_knows          { ; Bruce C. Nepple  10/20/1999 -- <brucen@imagenation.com>
+                     ; try with chip, popcorn, hopalong, etc
+  reset=2000 type=rossler3d center-mag=0/10/0.03333333/1.3333
+  params=0.04/0.2/0.2/5.7 float=y rotation=60/30/0 perspective=0
+  xyshift=0/0 hertz=220 sound=x/fm/quant attenuate=low polyphony=9
+  wavetype=1 decay=5 sustain=11 scalemap=1/12/5/8/10/12/8/1/5/10/1/8
+  orbitdelay=1500
+    }
+
+X_Silence!         { ; 
+                     ;
+  reset type=mandel passes=g sound=yes maxiter=150
+  orbitdelay=0 viewwindows=4.2/0.75/yes/0/0
+  showorbit=no colors=@default.map
+  }

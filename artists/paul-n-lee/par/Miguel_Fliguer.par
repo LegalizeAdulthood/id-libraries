@@ -1,0 +1,17 @@
+A_Love_Supreme     { ; by Miguel Fliguer - 1999 -- uses A0
+                     ; Palette: MIGMULTI.MAP
+                     ; Title from John Coltrane's masterwork
+                     ; <franktal@hotmail.com> Mon, 20 May 2002 02:42:18
+  reset=1960 type=formula formulafile=miguel.frm formulaname=a0
+  function=sqrt/recip/sqr/cotanh
+  center-mag=-0.56828087873239030/-0.16055600848866020/1278.823/1/119.978/\
+  0.035 float=y logmode=fly decomp=256
+  colors=eVM021010000220<24>wwu<9>fYNeVKeVK<3>ZL6XI2VF0<10>wU0<22>QD0OC0OC\
+  0OC0<7>w00<22>OO0<22>ww0<27>II0HK2<12>2tq0wu0ut<16>0FT<18>0Uu<36>033
+  }
+
+frm:a0 {; (c) by Miguel Fliguer
+z=c=pixel:
+z=fn1(z/fn2(z/fn3(z/fn4(z))))+c
+|z|<4
+}

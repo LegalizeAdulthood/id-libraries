@@ -1,0 +1,422 @@
+trilattice         { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 23 May 2002 01:28:28
+                     ; Something I'm not likely to see this winter.
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Klein_tri_lattice passes=1 center-mag=0/0/0.6666667
+   float=y maxiter=1023 inside=255 outside=tdis periodicity=0
+   colors=000ccc<3>nnnqqqtttwwwzzz<4>IIz99z00z<9>bbOffKjjG<3>zz0<9>zO0zK0zG\
+   0<3>z00<9>O0bK0fG0j<3>00z<9>0bO0fK0jG<3>0z0<9>bObfKfjGj<3>z0z<9>`0`Y0YV0\
+   V<2>N0NK0KJ1L<8>8Ia7Kc5Me<2>2Sk0Um0Vm<8>0em0fm0hm<2>0km0mm0mm<8>0gu0gu0f\
+   v<3>0cz<9>bqzfrzjtz<3>zzz<25>zhCzgAzf8<2>zd2zc0zd0<8>zq0zr0zt0<3>zz0<9>z\
+   O0zK0zG0<3>z00<14>ZZZ
+   }
+
+trilattice2        { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 23 May 2002 01:28:28
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Klein_tri_lattice passes=d center-mag=0/0/0.6666667
+   float=y maxiter=1023 inside=255 outside=atan periodicity=0
+   colors=@altern.map
+   }
+
+trilattice3        { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 23 May 2002 01:28:28
+                     ; Superdoily
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Klein_tri_lattice center-mag=0/0/0.6666667 float=y
+   maxiter=5 inside=zmag outside=0 periodicity=0 colors=@altern.map
+   }
+
+trilattice4        { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 23 May 2002 01:28:28
+                     ; Uniqueness
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Klein_tri_lattice passes=t
+   center-mag=-15.9676/10.6848/0.07415467 float=y maxiter=1023
+   inside=255 invert=0.5/0/0 periodicity=0 colors=@default.map
+   }
+
+; The problem is that the order in which pixels are calculated depends 
+; critically on the drawing method used.  The following par SHOULD NOT work
+; when used with the specified formula:
+
+swatch           { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                   ; Sat, 25 May 2002 20:27:24
+                   ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=swatch
+   passes=1 center-mag=0/0/0.6666667/1.3333 float=y maxiter=256
+   inside=255 periodicity=0 viewwindows=1/1/yes/256/256
+   colors=000ccc<3>nnnqqqtttwwwzzz<4>IIz99z00z<9>bbOffKjjG<3>zz0<9>zO0zK0zG\
+   0<3>z00<9>O0bK0fG0j<3>00z<9>0bO0fK0jG<3>0z0<9>bObfKfjGj<3>z0z<9>`0`Y0YV0\
+   V<2>N0NK0KJ1L<8>8Ia7Kc5Me<2>2Sk0Um0Vm<8>0em0fm0hm<2>0km0mm0mm<8>0gu0gu0f\
+   v<3>0cz<9>bqzfrzjtz<3>zzz<25>zhCzgAzf8<2>zd2zc0zd0<8>zq0zr0zt0<3>zz0<9>z\
+   O0zK0zG0<3>z00<14>ZZZ
+   }
+
+; And it won't if you use any drawing method other than (1) or (b).
+
+
+corsage          { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                   ; Thu, 30 May 2002 01:27:04
+                   ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=quarterblend_iJJJJ center-mag=0/0/0.6666667
+   params=0/1/0/0/0/0/0/0 float=y maxiter=1023 inside=255 periodicity=0
+   sound=beep/fm polyphony=3 wavetype=1
+   colors=000000<3>0PP0VV0``<3>0zz<3>MawRWvXQv<3>r0r<3>X0XS0SM0M<3>000<43>0\
+   00<3>000111333<23>nnnppprrr<3>zzz<25>CCCAAA888<2>222000000<33>000000000<\
+   3>000Z0AU00<3>d00g00j00m00<3>c0P`0VZ0`W0fT0m<3>I0MF0FA0A505000<45>zzz
+   }
+
+Scanner_Mouse    { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                   ; Thu, 30 May 2002 01:27:04 -- Version 2001 Patchlevel 8
+                   ; The latest example of the tradition of making B-grade
+                   ; sequels to classic movies.
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=quarterblend_iMJMJ
+   center-mag=-0.641651/0.719975/1.333333 params=0/0/-1/0/0/0/-1/0
+   float=y maxiter=255 inside=255 periodicity=0
+   colors=000<79>w00w00x00y00z00z00<79>zw0zw0zx0zy0zz0zz0<77>zzuzzvzzw<3>zz\
+   ziYU
+   }
+
+UnstableOrbits     { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Sun, 07 Jul 2002 02:06:16 -- Version 2001 Patchlevel 8
+                     ; Unstable Orbits in the Space of Lies --  Best at 1600x1200
+                     ; Greg Egan, Interzone #61, July 1992
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=ChaoticDualist1M passes=d
+   center-mag=0.67703/0.67703/0.589404/1/44.999 float=y maxiter=16
+   inside=atan outside=255 periodicity=0
+   colors=000JG2<24>OG2PG2PG2PG2PG2<2>QH4RI5RJ6SK7TK8<46>vusvvtwvu<3>zzz030\
+   <9>010010000<6>000000000<52>1E01E02F0<87>JG2
+   }
+
+Lyamand_1          { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 25 Jul 2002 20:49:19
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=LyapunovMandel passes=1
+   center-mag=-0.162602/0.700584/5.464481 params=0/0/1/0.1/0/0 float=y
+   maxiter=255 inside=255 logmap=5 periodicity=0
+   colors=000zzz<42>zzBzz9zz8<3>yy4yy4yx4<72>yX0yX0yW0<127>000
+   }
+
+LyapunovJulia_1    { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Thu, 25 Jul 2002 20:49:19
+                     ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=LyapunovJulia
+   center-mag=+0.46966854283928040/-0.00187656380316929/57.97101
+   params=-1/0/3.14/0.4/0/0 float=y maxiter=1023 inside=255 logmap=36
+   periodicity=0
+   colors=000<42>00s00t00v00w00x00z<41>0qz0rz0sz<3>0yz<9>bymfyljyk<3>zye<9>\
+   zyGzyEzyB<3>zy0<41>z80z70z50<2>z20z00y00<24>T00S00R00<3>L00<9>jaDleEoiF<\
+   3>zyL<9>z_8zY7zV6<3>zK0<11>D50930520000
+   }
+
+
+PhosphorescentTide  { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                      ; Tue, 06 Aug 2002 14:48:54
+   reset=1960 type=formula formulafile=frac_ml.frm
+   formulaname=SimplePendulumG function=cosxx
+   center-mag=-5.55112e-016/-1.11022e-016/0.6666667/2.2889
+   params=0.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
+   passes=d
+   colors=000298<9>11100000000000000000900J00000K009000<102>000000276<7>011\
+   011000000021<4>3CA4FC5JF<9>EqcFteEqc<14>012000<15>4zn<2>4pe4lb4h_3dX3`U<\
+   8>022<13>4zp<14>3bW3`V3ZU3XS3WR<10>2DC2BA2BA2A9299000
+   cyclerange=1/254
+   }
+
+Maelstrom       { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 06 Aug 2002 14:48:54
+                  ; Story by Edgar Allen Poe
+   reset=1960 type=formula formulafile=frac_ml.frm
+   formulaname=SimplePendulumG function=cotanh passes=b
+   center-mag=-0.56294/0.762463/4.219409 params=1.5/0/0/0 float=y
+   maxiter=1023 inside=255 outside=atan periodicity=0 cyclerange=1/254
+   sound=beep/fm
+   colors=000<19>000000000<2>000000222222<2>22822A44C44E44G44I66K66N66P66Q6\
+   6T88V88X88Z88X88V88VAATAAQAAQCCPCCN<2>CCNCCNEENEENEENGGNGGNGGPIIPIIPIIPK\
+   KP<2>KKPNNPNNQNNQNNQPPQPPQPPT<3>QQTTTV<4>TTVTTXTTXVVZVVZVVZVV`XX`XXcXXcX\
+   XcZZdZZdZZgZZg``g``i``i``kcckccmccmccmddoddoddqddqggqggsggsgguiiuiiuiiwi\
+   iwkkykkykkzkkzmmzmmzmmzmmzoozoozoozoozqqzqqzqqzqqzsszsszsszsszuuzuuzuuzu\
+   uzwwzwwzwwzwwzyyz<24>zzzzzzzzz<2>zyzyyzywzwuzuuzsszqqzoozooymmwkkuikugis\
+   ggqddocdo`cmZ`kZ`iXZgVXgTVdTVcQT`PQZNQZKPXKNVIKTGKTEIQCGPCGNAEK8CK6AI4AG\
+   48E26E06C04A028028000<32>000
+   }
+
+Ypres_Dawn      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ; De l'autre extremite du monde.
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=distortpendulumMG function=log passes=1
+   center-mag=-0.319069/0.0272592/24.6537 params=0.1/1 float=y
+   maxiter=255 inside=255 periodicity=0
+   colors=000<82>K00L00L00<90>gY0gY0gZ0gZ0hZ0<74>zzz
+   }
+
+Asymptotic_Freedom      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=HenonQuadmapJulGen function=cotanh/recip passes=1
+   center-mag=-1.36335/0.187656/1.572327/1/-90 params=0/0/0/0 float=y
+   maxiter=255 inside=epsiloncross proximity=-0.001 outside=0
+   periodicity=0
+   colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+   >ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+   >8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+   >CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+   >ATl<14>AA9
+   }
+
+Grand_Unification      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=distortpendulumMG function=zero passes=d
+   corners=-0.0475/0.285/0.15865385/-0.03365385 params=0.5/0.5 float=y
+   maxiter=255 inside=epsiloncross proximity=-0.00025 outside=0
+   periodicity=0 viewwindows=1/0.526/yes/0/0
+   colors=000ccc<3>nnnqqqtttwwwzzz<4>IIz99z00z<9>bbOffKjjG<3>zz0<9>zO0zK0zG\
+   0<3>z00<9>O0bK0fG0j<3>00z<9>0bO0fK0jG<3>0z0<9>bObfKfjGj<3>z0z<9>`0`Y0YV0\
+   V<2>N0NK0KJ1L<8>8Ia7Kc5Me<2>2Sk0Um0Vm<8>0em0fm0hm<2>0km0mm0mm<8>0gu0gu0f\
+   v<3>0cz<9>bqzfrzjtz<3>zzz<25>zhCzgAzf8<2>zd2zc0zd0<8>zq0zr0zt0<3>zz0<9>z\
+   O0zK0zG0<3>z00<14>ZZZ
+   }
+
+Not_a_Nice_Doggy      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ; Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=Ca03-19
+   center-mag=-0.938086/0.440367/5.464481/1/-90 params=0.1/0.25/1/0
+   float=y maxiter=1023 inside=255 periodicity=0
+   colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+   >ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+   >8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+   >CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+   >ATl<14>AA9
+   }
+
+Binding_Energy      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=C03-15
+   center-mag=4.26326e-014/-2.84217e-014/0.01293333 passes=t
+   params=0.1/0.5/100/0 float=y maxiter=255 inside=255 periodicity=0
+   colors=00000V<18>00s00t00v00w00x00z<41>0qz0rz0sz<3>0yz<9>bymfyljyk<3>zye\
+   <9>zyGzyEzyB<3>zy0<41>z80z70z50<2>z20z00y00<24>T00S00R00<3>L00<9>jaDleEo\
+   iF<3>zyL<9>z_8zY7zV6<3>zK0<8>Q90L70H60<3>000<22>00U
+   }
+
+Membrane_Paradigm      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=P07-07
+   center-mag=+0.30185741738705010/-1.15831114979194900/153.647/1/-87.599
+   params=0/0/1/0 float=y maxiter=255 inside=255 periodicity=0
+   colors=653<3>JIGNMK000UTR<3>fecjigmlj<2>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QR\
+   LOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OM\
+   cMNeKOf<3>ATl<9>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjI\
+   I<8>QRLOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jC\
+   R<9>OMcMNeKOf<3>ATl<14>AA9
+   }
+
+Unbothered_Title_2      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ; Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=quarterblend_iJJJJ
+   center-mag=-0.00333611/4.44089e-016/0.6377551/1/90
+   params=-1/0/0/-1/0/1/-1/0 float=y maxiter=255 inside=255
+   potential=255/500/150 periodicity=0
+   colors=000<62>A0BA0BB0C<97>U01U01U01<2>V01V01V12W23<83>zzz
+   }
+
+Unbothered_Title_3      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ; Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=threecircles2
+   center-mag=0.610996/1.77636e-015/0.5025363/1/90 params=0.8/0/2.6/0
+   float=y maxiter=255 inside=255 outside=atan periodicity=0
+   colors=000zzz<42>zzBzz9zz8<3>yy4yy4yx4<72>yX0yX0yW0<127>000
+   }
+
+Unbothered_Title_4      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=newton_elliptics_4
+   center-mag=+0.57733246912440290/+0.09997371801359245/123/1/53.13
+   params=0/1/0/0.1 float=y maxiter=1023 inside=255 periodicity=0
+   colors=000ueCwfBzgA<13>vEAuBAu9A<2>t3As0Aq7BnEDlLEGaY<24>iIejHelHe<3>qDg\
+   rWlsor<19>mfPmeOleMldLldJkcH<23>oYcpYdpYe<2>pXhqWioUh<4>`JcZHbWEa<3>K5X<\
+   8>LRkLUlLWn<3>Mfu<3>Zceab`daX<3>rYG<34>bdpadqadr`ds`dt_ev<24>HVRGVQGUP<3\
+   >CSJ<3>qSn<8>aVZ_VXZVV<3>RXN<12>sdD
+   }
+
+Sagittal_Coherence      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=Sc06-05
+   passes=d center-mag=6.19973/9.57075/2.446735/1/10 params=1/0/1/0
+   float=y maxiter=1023 inside=255 outside=atan
+   invert=0.5/6.2038774233896/9.8444537114261 periodicity=0
+   colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+   >ekKhmKknK<3>wuI<6>caM`_NYXN<3>MLRJISGFSDCT<9>YCS_CSaCS<3>jCR<5>XIZVJ_TK\
+   `<3>KOfIPhFRiDSkATl<9>8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mK\
+   LlHIjII<8>QRLOSLMTL<3>CXN<9>ekKhmKknK<3>wuI<6>caM`_NYXN<3>MLRJISGFSDCT<9\
+   >YCS_CSaCS<3>jCR<5>XIZVJ_TK`<3>KOfIPhFRiDSkATl<14>AA9
+   }
+
+Not_Your_Job      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=Ca10-05
+   passes=1
+   center-mag=+0.07662876962040530/+0.09346251373957647/6.137269e+012/1/-14\
+   .997/-0.001 params=2/0/1/0 float=y maxiter=1023 inside=255
+   periodicity=0 sound=beep/fm polyphony=3 wavetype=1
+   colors=00032t40t50s60s<36>ps`qt`rv_sw_uyZvzZwzYxzYzyXzwXzvW<30>OCHNBGLAG\
+   K8FJ6F<14>I5EI5EI5E<3>I5EIzE<4>IzE<3>IzEIzEH7F<33>CDLCELCEL<2>CELBFMDEM<\
+   3>I8OJ6PK5PL3QN2QO0RP0RQ0S<22>rZbs_cuac<2>xeezgezhfzjf<5>rsiqtjpvjnwkmyk\
+   lzlkzlizm<21>JUxITxGRy<3>BLzAKz9Iz<5>19w08v06v05u13u
+   }
+
+Mandelbrot_Forgery      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=Mandelbar
+   passes=1
+   center-mag=-0.62872052566293170/+0.11121047612571350/23956.75/0.1483/-12\
+   .868/-50.835 float=y maxiter=512 inside=255 logmap=-43 periodicity=0
+   colors=000Xtu<8>XvuXvuXvuXvuXwv<23>eeOfdNfdL<2>gaHh`Fg`F<25>FCSEBTDATC9U\
+   B8U97V<158>8RD7SC7SC<10>9SE9SE9SE<3>ASFXtu
+   }
+
+Parallel_Transport      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=A4Page
+   passes=1 center-mag=1/-0.666667/1.5 float=y maxiter=16
+   inside=startrail outside=0 periodicity=0 colors=@default
+   }
+
+Two_Flows       { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=P03-24
+   function=sin/sqr/sinh passes=t
+   center-mag=-1.19245/26.7544/0.2931875/17.119/180 params=0.1/0
+   float=y maxiter=1023 inside=255 periodicity=0 sound=off polyphony=3
+   wavetype=1
+   colors=000LLL<9>LLjLLlLLo<2>LLwLLzLNx<8>Lj`LlZLoW<3>LzL<9>LzjLzlLzo<2>Lz\
+   wLzzNxx<8>j``lZZoWW<3>zLL<9>zLjzLlzLo<2>zLwzLzzNx<8>zj`zlZzoW<3>zzL<9>zz\
+   jzzlzzo<3>zzz<9>OOPKKMGGI<3>002<8>00Q00S00V<2>00b00e02c<8>0QG0SE0VB<3>0e\
+   0<9>0eQ0eS0eV<2>0eb0ee2cc<8>QGGSEEVBB<3>e00<9>e0Qe0Se0V<3>e0e<9>eDGeEEeF\
+   B<3>eL0<9>eYQeZSe_V<3>eee<14>NNN
+   }
+
+Altern_AntiSpiral      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=PokornyJul
+   center-mag=0.200125/0.776177/2.506266 params=0.25/0.9 float=y
+   maxiter=1023 inside=255 logmap=yes periodicity=0 colors=@altern
+   }
+
+Puffer_Train    { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Rossler2Man
+   center-mag=+0.87099255681842290/+0.45740250376426910/5.001221e+012/1.000\
+   1 params=0/0/12/0 float=y maxiter=1023 inside=255 logmap=57
+   periodicity=0
+   colors=653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3>CXN<9\
+   >ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3>ATl<9\
+   >8EL8DI7BF<3>653<9>cb`fecjig<3>xwu<9>qYXpVVoSS<2>mKLlHIjII<8>QRLOSLMTL<3\
+   >CXN<9>ekKhmKknK<3>wuI<9>VUOSRPPOQ<3>DCT<9>YCS_CSaCS<3>jCR<9>OMcMNeKOf<3\
+   >ATl<14>AA9
+   }
+
+FriendlyBiological      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=Rossler2Man passes=1
+   center-mag=+0.80768598348989470/+1.07767747322206200/622.4066/1/28
+   params=0/0/12/0 float=y maxiter=1023 inside=255 logmap=9
+   periodicity=0
+   colors=tuu<3>tvvtvvtvvtvvuww<6>lwwkwwjwwiwwgww<3>ctvbtvasu<3>XosVnsUmr<1\
+   8>AXh9Wg8Vg7Uf6Te<4>5Pc5Oc5Ob4Na<18>17R17Q16Q<2>13O02N14O02N<8>16Q27Q27Q\
+   <3>3AT3BU3CV<6>4Ka4Lb5Mc<5>4Si4Tj4Uk3Vl3Wm<4>2_o1_p1`p<2>0cr0cr0br<3>1_q\
+   1Zp1Yp<8>3Qg3Pf3Oe<2>4La4K`3IZ<3>4GS4FQ5FO<3>6CG7BD7BD<70>oqqpqqqrrqrrrs\
+   s<8>suu
+   }
+
+Corrosion      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ; Kerry Mitchell colour map
+                      ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=H04-17
+   function=ident/log passes=1
+   center-mag=-0.405748/-0.631308/5.253812/1/-34.999 params=0/0/1/0
+   float=y maxiter=1023 inside=255 periodicity=0
+   colors=222qU6yaEqaMyiUeYQYQIaaaiiiqiayqiqqqyyyemuYemQeuIYmAYu2QmAQe2IYMU\
+   aUaiQQQIIIAIQ2AIAAA642IC6UKAYK6iSAqS2u_Eq_IugUi_QYSMY_aigeqgYuoiqomuwyio\
+   uYgqUguI_qA_y6SmASi6KYISaU_eUSQIKMAKU6CIACEA62IEAUI6YMAiQ6uU2qYEuaIqeUiY\
+   MYUQYaeieauiYqmiuqmquyimqYiuUeqIau6YyAUm6QiAMYIUeUYaUQMIMQ6IUAEI6AEA86IG\
+   EQG6YOEeO6yW2qWAycIqcQiWIaWQYciecaykYqkeysmqsuikmakuUcmMcu2WyAWq2OiAOaIW\
+   iQWaUOIMOQ2GUAGM28EEA6MIEQE2aQEeM2yY6mUAyeMmaQeUIaYUaeieaYymamieyuqmquei\
+   mamyQamMey2UuEYq2MeEQaMYiQUYQMIMQU2EQEIM26AE82MGAUG2aOAiO2uW6mWEucMmcUeW\
+   MYWUaceicYukamkiusqmsyekqYkyQcqIcy6WuEWm6OeEOYMWeUWYQOMIOU6GQEGI68AIA2QI\
+   AYI2eQAmQ2uYAmYIueQiaUaUMYYYeeemeYumemmmuuuiqyaiqUiyMaqEay6UqEUi6MaIQYQY\
+   eUUUMMMEMU6EMEEE666MC2QKEaK2eSEmS6y_Am_MygQe_UaSIa_Yegimgayoemoqywueoyag\
+   mQgyM_mE_u2SqESe2KaMSYQ_iQSUMKIEKQ2CMECA246ME6UMEaM6iUE
+   }
+
+Mitrocoma      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm formulaname=T03-26
+   function=abs/ident/ident passes=1
+   center-mag=-0.833021/0.838198/7.751938 params=2/0.2/0/0/8/1 float=y
+   maxiter=1023 inside=255 periodicity=0 colors=@blues.map
+   }
+
+Six_OClock      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                  ; Tue, 14 Jan 2003 19:54:33
+                  ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=twodnewton_o passes=t
+   center-mag=+17.61898205646764000/+11.36059478637080000/109.2896/1/-22.49\
+   9 params=0.1/-1 float=y maxiter=1023 inside=255 periodicity=0
+   colors=000e0_e0be0e<9>eDGeEEeFB<3>eL0<9>eYQeZSe_V<3>eee<9>TTTSSSRRR<2>NN\
+   NLLLLLN<8>LLjLLlLLo<2>LLwLLzLNx<3>LYm<21>MruMsvMtv<3>Nxx<8>j``lZZoWW<3>z\
+   LLzLNzLQzLS<18>zgVzhVzjV<2>zmVzoWzrTztRzwOzzL<9>zzjzzlzzo<3>zzz<3>kkkggg\
+   ccd__`<31>__`<4>__`0_60b30e0<9>0eQ0eS0eV<2>0eb0ee2cc<8>QGGSEEVBB<3>e00<1\
+   2>e0Y
+   }
+
+Taken_in_Lieu      { ; Morgan L. Owens <packrat@nznet.gen.nz>
+                     ; Fri, 31 Jan 2003 22:03:04
+                      ; A Critical Point in Negotiations
+                      ; ('snot your job)
+                      ; After Jos Hendriks, 2002
+                      ;  Version 2001 Patchlevel 8
+   reset=2001 type=formula formulafile=frac_ml.frm
+   formulaname=lognormal_distm passes=1 center-mag=0.1353/0/1.5
+   params=-1/-1/0/0/0/0/0/0 float=y outside=fmod
+   colors=000_XR<43>_hj_hj_hk<2>_il_il`jk<60>tnYunYunX<2>vnXvnXumW<73>ZZJYZ\
+   JYZJ<3>XYIFN9WYI<52>FN9
+   }
+

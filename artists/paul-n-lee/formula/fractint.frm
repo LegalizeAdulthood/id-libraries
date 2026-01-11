@@ -84,3 +84,8 @@ Sterling(XAXIS) {; davisl
    z = ((z/2.7182818)^z)/sqr(6.2831853*z)
     |z| <= 4
   }
+Dragon (ORIGIN) {; Mark Peterson
+  z = Pixel:
+   z = sqr(z) + (-0.74543, 0.2)
+    |z| <= 4
+  }

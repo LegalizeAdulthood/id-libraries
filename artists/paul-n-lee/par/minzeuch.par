@@ -13,8 +13,8 @@ Queratz            { ; >> !! meins !!!! <<
 
 
 Lava               { ; auch meins !                         
-  reset=1800 type=formula formulafile=\fraktale\fn-ratz.frm
-  formulaname=3jratz-fn function=sinh/cosh
+  reset=1800 type=formula formulafile=fn-ratz.frm
+  formulaname=3jRatz-fn function=sinh/cosh
   corners=-2/1.999997/-1.499996/1.5
   params=0.5/0/-0.23200000000000001/0.050000000000000003 maxiter=1000
   symmetry=origin
@@ -23,7 +23,7 @@ Lava               { ; auch meins !
   }
 
 le_craisie         { ; load headache.map & ask your self                             
-  reset=1800 type=formula formulafile=\FRAKTALE\tritz.frm
+  reset=1800 type=formula formulafile=tritz.frm
   formulaname=2jotzp1 corners=-2/1.999997/-1.499996/1.5
   params=0.823/0.8634 float=y maxiter=1000
   inside=0 logmap=yes colors=@erd
@@ -54,7 +54,7 @@ Kachel             {
   }
 
 veins              {
-  reset=1800 type=formula formulafile=\FRAKTALE\fractmix.frm
+  reset=1800 type=formula formulafile=fractmix.frm
   formulaname=MandMnzpwr
   corners=-1.0535254/-0.80639951/0.204435128/0.146790248/-0.93689054/0.048\
   9219775 params=-2 float=y maxiter=1000 inside=0 logmap=yes
@@ -68,15 +68,15 @@ veins              {
   }
 
 quallig            {
-  reset=1800 type=formula formulafile=\fraktale\fractmix.frm
-  formulaname=mandmnzpwr
+  reset=1800 type=formula formulafile=fractmix.frm
+  formulaname=MandMnzpwr
   corners=-1.1741446646/-1.1731981495/-0.026670798415/-0.029363087534/-1.1\
   725116204/-0.028848190677 params=-2 float=y maxiter=1000 inside=0
   logmap=yes colors=@aas.map
   }
 
 Ugh_Yuck_Bleah     {
-  reset=1800 type=formula formulafile=\FRAKTALE\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=spider function=sin/ident
   corners=-1.621064/0.1909361/1.243058/-1.172942/0.1909361/-1.172942
   params=2/0/2 float=y maxiter=1000 inside=0
@@ -85,28 +85,28 @@ Ugh_Yuck_Bleah     {
   }
 
 sterndl            {
-  reset=1800 type=formula formulafile=\fraktale\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=spider function=sqr/ident corners=-2/2/-1.5/1.5
   params=3/0/3 float=y maxiter=1000 inside=0 colors=@erd.map
   }
 
 
 complex_Spider     {
-  reset=1800 type=formula formulafile=\fraktale\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=spider function=sqr/ident
   corners=-1.115244/0.7247559/0.00115192/1.381152 params=0/4/0/4
   float=y maxiter=1000 inside=0 colors=@erd
   }
 
 donow              {
-  reset=1800 type=formula formulafile=\FRAKTALE\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=spider function=sqr/ident
   corners=-0.327087359/-0.292687359/0.824245242/0.850045242
   params=16/0/8 float=y maxiter=1000 inside=0 colors=@erd
   }
 
 Araucarias         { ;(ain't my map)
-  reset=1800 type=formula formulafile=\fraktale\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=spider function=sqr/ident
   corners=-0.0691508632/-0.127821415/0.826496537/0.942293256/-0.145854687/\
   0.928768302 params=16/0/14 float=y maxiter=1000 inside=0
@@ -124,13 +124,13 @@ pilzig             {
   }
 
 schnippl           {
-  reset=1800 type=formula formulafile=\FRAKTALE\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=apflmatsch function=sqr/sqr corners=-2/2/-1.5/1.5
   params=1/0/1 float=y maxiter=1000 inside=0 colors=@erd
   }
 
 Loewenzahn         {
-  reset=1800 type=formula formulafile=\FRAKTALE\test.frm
+  reset=1800 type=formula formulafile=test.frm
   formulaname=njutn-j corners=-0.92/0.92/-0.69/0.69
   params=0.27729999999999999/0.27650000000000002 float=y maxiter=1000
   inside=0 symmetry=none
@@ -151,7 +151,7 @@ Loewenzahn         {
   }
 
 Ratz               {
-  reset=1800 type=formula formulafile=\FRAKTALE\fn-ratz.frm
+  reset=1800 type=formula formulafile=fn-ratz.frm
   formulaname=3Ratz-fn function=sqr/sqr
   corners=-0.63494556/0.23564644/-0.52680589/0.12613811
   params=0.20000000000000001/0.20000000000000001 float=y maxiter=1000
