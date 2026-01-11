@@ -1,0 +1,149 @@
+;
+; This file requires fractint 20.0.6 or later
+;
+frm:Mandel_lake { ; Sylvie Gallet, Jan 16, 2000
+;
+; p1: Julia seed
+; real part of p2: bailout value
+; imag part of p2: 0 = lake transform disabled
+;                  any value between 0 and 100: water level in % of
+;                  the screen height (0 = bottom, 100 = top)
+; real part of p3: amplitude of the wave (try 0.2)
+; imag part of p3: frequency (try 300)
+
+; This formula uses the new predefined variables:
+; center  = (x  , y)
+; magxmag = (mag, xmagfactor)
+; rotskew = (rot, skew)
+
+bailout = real(p2)
+
+; Lake transformation
+; -------------------
+
+if (imag(p2) > 0 && imag(p2) <= 100)
+
+  level = imag(p2) / 100         ; water level
+  ampl = real(p3)                ; amplitude of the wave
+  freq = imag(p3)                ; frequency
+
+  angle = real(rotskew * pi / 180)
+  exp_irot = exp(-flip(angle))
+  h = 1 / real(magxmag)
+  w = h / 0.75 * imag(magxmag)
+  tanskew = tan(imag(rotskew * pi / 180))
+
+; The complex numbers u and v are defined as follow:
+;   u = bottom_right_corner - bottom_left_corner
+;   v = top_left_corner - bottom_left_corner
+
+  u = 2 * w * exp_irot
+  v = 2 * h * (tanskew + flip(1)) * exp_irot
+
+; Bottom_left_corner:
+  z3rd = center + (-w-h*tanskew - flip(h)) * exp_irot
+
+  z = pixel - z3rd
+
+; solves the equation z = a*u + b*v which is equivalent to the system:
+;   re_z = a * re_u + b * re_v
+;   im_z = a * im_u + b * im_v
+; the solution (a,b) is:
+;       | re_z   re_v |        | re_u   re_z |
+;       | im_z   im_v |        | im_u   im_z |
+;   a = ---------------    b = ---------------
+;       | re_u   re_v |        | re_u   re_v |
+;       | im_u   im_v |        | im_u   im_v |
+;
+; Only b is used and 0 <= b <= 1
+;   b = 0  <==>  pixel at the bottom of the screen
+;   b = 1  <==>  pixel at the top of the screen
+;
+; Since the formula parser uses complex numbers, I thought the
+; easiest way to calculate b was:
+
+  b = imag(conj(u)*z) / imag(conj(u)*v)
+
+; the heart of the lake transform:
+  if (b <= level)
+    dy = level - b
+    z = z + 2*dy * (1+ampl*sin(freq*dy^0.2)) * v 
+  endif
+
+  z = z + z3rd
+
+else
+  z = pixel
+endif
+
+; Classic mandel/julia formula
+if (ismand)
+  c = z
+else
+  c = p1
+endif
+:
+z = z*z + c
+|z| <= bailout
+}
+
+mandel_lake_01     { ; .                           t=  0:00:02.86
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.444738/0/0.6666671
+  params=0/0/512/40/0.3/200 float=y inside=atan
+  outside=real decomp=256 cyclerange=0/255 sound=off
+  colors=GXf<3>DTcCSbCRa<3>AO_AN_9MZ<4>5HV4GU3FT<3>0CQ<32>mqso\
+  rtpsu<2>uwwvxxvxx<2>uyytyytxy<29>esydsydsy<2>brybqzbox<24>fM\
+  XfLWgJV<3>eFQdEPbDO<6>S6GR5FP4EN3DL2CK1BJ0A<23>DSaDTbDUcCVdC\
+  WeBXf<3>Aak9blCcm<7>Ymr`nrbps<3>nuuqvvtxwvywyzx<30>WnrVnrUnr\
+  <3>RkqRkpQjp<5>LdkKcjJbiJaiI_hIZhHYg
+  }
+
+mandel_lake_02     { ; .                           t=  0:00:02.58
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-0.5/0.135678/0.6666667
+  params=0/0/1024/45/0.3/300 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_03     { ; .                           t=  0:00:02.80
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=y passes=1
+  center-mag=-1.2699/-0.168032/36.72672/1/-32.5/30.396
+  params=0/0/4/40/0.3/200 float=y maxiter=300 inside=0
+  decomp=256 cyclerange=0/255 sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
+mandel_lake_04     { ; .                           t=  0:00:01.59
+                     ; Copyright Sylvie Gallet, Jan 16, 2000
+                     ; <sylvie_gallet@compuserve.com>
+                     ; t=calc time using a PII 300 at 320 x 200
+                     ;  Version 2000 Patchlevel 6
+  reset=2000 type=formula formulafile=_lake.frm
+  formulaname=mandel_lake ismand=n passes=1
+  center-mag=0/0.331658/0.6666667
+  params=0.3322884012539185/-0.03768844221105527/2/40/0.3/200
+  float=y maxiter=300 inside=0 decomp=256 cyclerange=0/255
+  sound=off
+  colors=ELL<35>W``W``Xaa<6>Zbb_cc_cc`dd`dd<45>wwwwwwxxx<2>yyy\
+  yyyxxx<120>3CC3CC2BB<2>0AA0AA1BB<24>DLL
+  }
+
