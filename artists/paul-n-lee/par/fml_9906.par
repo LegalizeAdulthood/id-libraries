@@ -43,7 +43,7 @@ Faberge            { ; Colours by Linda Allison
 
 PhosphorescentTide {
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=simplependulumg function=cosxx
+  formulaname=SimplePendulumG function=cosxx
   center-mag=-5.55112e-016/-1.11022e-016/0.6666667/2.2889
   params=0.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
   passes=b
@@ -56,7 +56,7 @@ PhosphorescentTide {
 I_Dunno_What_it_is { ; Um... a cybernetic Orang-utan?
                      ; Colours by Kerry Mitchell
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=simplependulumg function=cosxx
+  formulaname=SimplePendulumG function=cosxx
   center-mag=-0.490438/1.15415/9.226443/0.9515/34.438/-32.851
   params=1.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
   periodicity=0
@@ -75,7 +75,7 @@ I_Dunno_What_it_is { ; Um... a cybernetic Orang-utan?
 
 Maelstrom          { ; Story by Edgar Allen Poe
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=simplependulumg function=cotanh
+  formulaname=SimplePendulumG function=cotanh
   center-mag=-0.56294/0.762463/4.219409 params=1.5/0/0/0 float=y
   maxiter=1023 inside=255 outside=atan periodicity=0
   colors=000<24>000000222222<2>22822A44C44E44G44I66K66N66P66Q66T88V88X88Z8\
@@ -243,7 +243,7 @@ jo06_01            { ; t=  4:21:49.08
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=t
+  formulaname=MandelbrotMix4a function=ident passes=t
   center-mag=+0.00003582776617623/+0.00016408568488817/12126.4/1/-37.499
   params=-500/-500/-1.1/-1/0/0 float=y maxiter=7200 bailout=25
   inside=0 logmap=6 symmetry=none periodicity=10
@@ -261,7 +261,7 @@ jo06_02            { ; t=  1:18:04.55
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+1.54894524500705000/+0.18323164348929450/2.03882e+011
   params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
   inside=0 logmap=273 symmetry=xaxis periodicity=10
@@ -277,7 +277,7 @@ jo06_03            { ; t=  0:26:59.32
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+0.48421237835691310/+0.85671571876294970/2.822814e+012/1/102\
   .499/-0.001 params=1e-008/800/2e-008/400/100000000/0 float=y
   maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
@@ -296,7 +296,7 @@ jo06_04            { ; t=  0:23:48.12
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+0.48421237835460350/+0.85671571875166410/1.649247e+012/1/114\
   .997/0.001 params=1e-008/800/2e-008/400/100000000/0 float=y
   maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
@@ -315,7 +315,7 @@ jo06_05            { ; t=  0:27:14.30
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+0.48421237835487980/+0.85671571875186660/7.929566e+012/0.999\
   8/114.991/0.005 params=1e-008/800/2e-008/400/100000000/0 float=y
   maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
@@ -331,7 +331,7 @@ jo06_06            { ; t=  0:23:54.87
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+0.48421237835452590/+0.85671571875109320/9.589534e+012/1/114\
   .999/0.003 params=1e-008/800/2e-008/400/100000000/0 float=y
   maxiter=1200 bailout=25 inside=0 logmap=51 symmetry=none
@@ -347,7 +347,7 @@ jo06_07            { ; t=  0:20:49.11
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+1.00005032900213700/+0.00791439171380570/1.677787e+011/1/174\
   .999 params=1e-008/800/2e-008/400/197520000/0 float=y maxiter=1200
   bailout=25 inside=0 logmap=42 symmetry=none periodicity=10
@@ -363,7 +363,7 @@ jo06_08            { ; t=  1:23:22.72
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+1.54894524500359000/+0.18323164348628370/8.358962e+011
   params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
   inside=0 logmap=273 symmetry=xaxis periodicity=10
@@ -378,7 +378,7 @@ jo06_09            { ; t=  1:21:33.37
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=ident passes=1
+  formulaname=MandelbrotMix4a function=ident passes=1
   center-mag=+1.54894524500060400/+0.18323164348882140/1.499139e+012/0.999\
   9 params=-150/1.5/1.5/150/-0.9949/0 float=y maxiter=1000 bailout=25
   inside=0 logmap=273 symmetry=xaxis periodicity=10
@@ -496,7 +496,7 @@ jo06_12            { ; t=  1:57:14.53
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmin passes=1
+  formulaname=MandelbrotMiN passes=1
   center-mag=-0.31779604786148090/+0.77644011515230850/2678.081/1/117.499
   params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
   logmap=65 symmetry=none periodicity=10
@@ -514,7 +514,7 @@ jo06_13            { ; t=  1:25:10.00
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmin passes=1
+  formulaname=MandelbrotMiN passes=1
   center-mag=-0.31944275114657080/+0.77742893113940280/1260.274/1/142.497
   params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
   logmap=65 symmetry=none periodicity=10
@@ -532,7 +532,7 @@ jo06_14            { ; t=  4:39:42.11
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmin passes=t
+  formulaname=MandelbrotMiN passes=t
   center-mag=-0.31796938224885470/+0.77353569174380330/824.025/1/117.497
   params=1.25/0/0/0/0/0 float=y maxiter=150000 bailout=25 inside=0
   logmap=65 symmetry=none periodicity=10
@@ -550,7 +550,7 @@ jo06_15            { ; t=  0:58:13.80
                      ; Par and Image Copyright 1999 by Jo Weber
                      ; e-mail to JoWeber@compuserve.com
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=obliquemanplus passes=t
+  formulaname=ObliqueManPlus passes=t
   center-mag=+1.33093052529746200/-0.33953092795716030/203.8353/1/64.999
   params=0/0/-0.5/0.527/0.018756/0.024873 float=y maxiter=32500
   bailout=25 inside=0 logmap=76 logmode=fly symmetry=none

@@ -12,7 +12,7 @@ ThePalaceAtXtampak { ; This was supposed to be a mundane slice of the
 ; look anything like the typical Mandelbrot features.
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=ternaryjulibrotslc ismand=y passes=1
+formulaname=TernaryJulibrotSlc ismand=y passes=1
 center-mag=-2.02478/-0.0573754/0.5629118/0.3572/90/1.31075705844807544e-\
 014 params=0/0/2/0/0/0/1.57/0/0/0 float=y maxiter=200 inside=zmag
 logmap=yes
@@ -94,8 +94,8 @@ L000<4>GG7JJ8NN9QQBTTC<3>eeIiiKllL000<4>II7MM8QQ9TTBXXC<3>llIooKssL000<4\
 ;Subject: [Fractint] Technical considerations for the cubic.
 
 RainFly            {
-reset=2003 type=formula formulafile=frac_ml.par
-formulaname=butterfly center-mag=0/-1.23205/0.6666667/1.1211
+reset=2003 type=formula formulafile=frac_ml.frm
+formulaname=Butterfly center-mag=0/-1.23205/0.6666667/1.1211
 float=y maxiter=255 inside=0 outside=atan invert=0.5/0/-0.5
 colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
 0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
@@ -160,7 +160,7 @@ Confetti_Spiral    { ;
 ; 1600x1200  Image Copyright 2004
 ; by Lee H. Skinner ver=2003
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=mandelbrotmix4 function=recip
+formulaname=MandelbrotMix4 function=recip
 passes=1
 center-mag=-3.42706967942867300/+0.65905855299226680/\
 96.6236/1/-47.4999999999997726/2.67549871146854912e-0\
@@ -184,7 +184,7 @@ Red_leaf_midget    { ;
 ; 1600x1200  Image Copyright 2004
 ; by Lee H. Skinner ver=2003
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=mandelbrotmix4 function=recip
+formulaname=MandelbrotMix4 function=recip
 passes=1
 center-mag=-6.39992232037162700/-0.74133977875696220/\
 10177.25/1/-39.999999999755623/-4.93227313158595138e-\
@@ -299,7 +299,7 @@ Lace_and_pearls    { ; Hal Lane 3-19-04
 ; Near Jim Muth's Semaphore 
 ; 19-3-04 FoTD
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=slicejulibrot4 passes=1
+formulaname=SliceJulibrot4 passes=1
 center-mag=0.00245812/-0.147774/7.843562
 params=89.63/90.33/89.72/90.31999999999999/-1.7435/4\
 e-005/0.00019/0.07388/2.003/0 float=y

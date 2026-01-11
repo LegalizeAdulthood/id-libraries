@@ -3,12 +3,12 @@
 ; compiled by Les St Clair <les_stclair@compuserve.com>
 
 ;========================================================================;
-From: Tom Conally <conally@netpath.net>
-Subject: (fractint) par and question
-Date: 03 Mar 1999 15:29:21 -0500
-
-Hi fellow fractint afficiados
-Here is a par that I like accompanied by a question or two
+; From: Tom Conally <conally@netpath.net>
+; Subject: (fractint) par and question
+; Date: 03 Mar 1999 15:29:21 -0500
+; 
+; Hi fellow fractint afficiados
+; Here is a par that I like accompanied by a question or two
 
 black_hole         { ; Tom Conally, 1999, fractint
                      ; t=0:0:15.87 586
@@ -24,20 +24,20 @@ black_hole         { ; Tom Conally, 1999, fractint
   >bGS`EPZET<13>LbtJdwKaw<14>j8MgAQ<12>bKjeKjgKiw32c00
   }
 
-I did this with video mode SF7.  I manipulated the colormap and saved the
-par. Now if I go back and run it in a different video mode, such as SF8, I
-get a very different color map-many fewer colors. Is this inherent in
-fractint? Do I need to save the colormap separately? Am I missing something? 
-Thanks for your help in advance.
-Tom Conally
-In every boomerang there is a perfect throw.
-Your life, Grasshopper, is to practice  till you find that throw
-and become one with that boomerang!
+; I did this with video mode SF7.  I manipulated the colormap and saved the
+; par. Now if I go back and run it in a different video mode, such as SF8, I
+; get a very different color map-many fewer colors. Is this inherent in
+; fractint? Do I need to save the colormap separately? Am I missing something? 
+; Thanks for your help in advance.
+; Tom Conally
+; In every boomerang there is a perfect throw.
+; Your life, Grasshopper, is to practice  till you find that throw
+; and become one with that boomerang!
 
 ;========================================================================;
-From: "Morgan L. Owens" <packrat@nznet.gen.nz>
-Subject: (fractint) Fooling around with an old formula.
-Date: 06 Mar 1999 15:42:47 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) Fooling around with an old formula.
+; Date: 06 Mar 1999 15:42:47 +1300
 
 Saturn             { ; Photo taken by the Cassini probe in 2006
   reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonJul
@@ -49,7 +49,7 @@ Saturn             { ; Photo taken by the Cassini probe in 2006
 
 Syrup              { ; Mmm... Syrup...
                      ; Colours by Kerry Mitchell
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=henonjul
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonJul
   passes=b center-mag=-1.32281/-1.34276/7.75/1/62.498 params=0.5/1/6/0
   float=y maxiter=1023 inside=255 outside=atan periodicity=0
   colors=222A62EA6IA2ME6IEAMIEQIAUMEUI6QE2YI2aM6YMAaQEeQAiUEiQ6eM2mQ2qU6uU\
@@ -67,7 +67,7 @@ Syrup              { ; Mmm... Syrup...
 
 FishScales         {
                      ; Colours by Sylvie Gallet
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=henonman
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonMan
   passes=2
   center-mag=+0.20081313526191820/-1.02594721407624500/49.0629
   params=0/0/8/0 float=y maxiter=1023 inside=255 outside=mult
@@ -79,7 +79,7 @@ FishScales         {
   }
 
 StarTrekIcon       { ; Everybody, now! Der deeeer da-do-da-do-daaa...
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=henonman
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=HenonMan
   center-mag=1.25832/0.0689005/5.632339/2.6103/15 params=0/0/8/0
   float=y maxiter=10 inside=bof61 outside=255 periodicity=0
   colors=00000e000000000mmr000000000zi7000LzzzLLzLzzzLzzz000555<3>HHHKKKOO\
@@ -101,9 +101,9 @@ Uranus             { ; Photo taken by some probe some time in the future.
   }
 
 ;========================================================================;
-From: "Morgan L. Owens" <packrat@nznet.gen.nz>
-Subject: (fractint) More bijous of little consequence
-Date: 07 Mar 1999 23:30:50 +1300
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) More bijous of little consequence
+; Date: 07 Mar 1999 23:30:50 +1300
 
 MoonDog            {
   reset=1960 type=formula formulafile=frac_ml.frm
@@ -137,17 +137,17 @@ Faberge            { ; Colours by Linda Allison
   }
 
 ;========================================================================;
-From: PKyleCA@aol.com
-Subject: (fractint) New Par, more on the ca10-08 formula
-Date: 07 Mar 1999 09:58:38 EST
-
-Further modifications to "Moire Mask", formula  CA10-08. This one is too
-interesting for me to move on to anything else just yet.
+; From: PKyleCA@aol.com
+; Subject: (fractint) New Par, more on the ca10-08 formula
+; Date: 07 Mar 1999 09:58:38 EST
+; 
+; Further modifications to "Moire Mask", formula  CA10-08. This one is too
+; interesting for me to move on to anything else just yet.
 
 
 
 GermanCross             { ; (C) 1999 P. Kyle  Mod of Moire Mask
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=0.517387/-0.608968/0.01935466/1/44.998
   params=2.71828182845905/0/3.14159265358979/4 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/316/0
@@ -156,7 +156,7 @@ GermanCross             { ; (C) 1999 P. Kyle  Mod of Moire Mask
   }
 
 MsWedge            { ; (C) 1999 P. Kyle  Mod of Moire Mask
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=5.95198/5.93197/1.042011/1/44.998
   params=0.14159265358979/0/2.71828182845905/0 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/316/0
@@ -165,7 +165,7 @@ MsWedge            { ; (C) 1999 P. Kyle  Mod of Moire Mask
   }
 
 MoireAngel             { ; (C) 1999 P. Kyle  Mod of Moire Mask
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=885.915/739.422/0.0001400315/1/-135.001
   params=0.14159265358979/0/2.71828182845905/0 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/377/0
@@ -175,7 +175,7 @@ MoireAngel             { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 MAngel2            { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Moire Angel2
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08	
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08	
   center-mag=885.915/739.422/0.0001400315/1/-135.001
   params=0.14159265358979/0/2.71828182845905/0.01 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/377/0
@@ -185,7 +185,7 @@ MAngel2            { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 MAngel3            { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Moire Angel 3
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=885.915/739.422/0.0001400315/1/-135.001
   params=0.14159265358979/0/2.71828182845905/0.01 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/345/0
@@ -195,7 +195,7 @@ MAngel3            { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 Clown              { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Clown
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=-15.034/0.20631/0.01051919/1/-135.001
   params=0.141/0/2.71828182845905/0.01 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/344/0
@@ -205,7 +205,7 @@ Clown              { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 OScallop           { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Ornamental Scallop
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=5947.56/5926.84/0.0001601695/1/-135.001
   params=0.16345234/0/2.71828182845905/0.01 float=y maxiter=147
   inside=maxiter outside=real logmode=fly potential=255/1000/0
@@ -214,22 +214,22 @@ OScallop           { ; (C) 1999 P. Kyle  Mod of Moire Mask
   }
 
 ;========================================================================;
-From: "Morgan L. Owens" <packrat@nznet.gen.nz>
-Subject: (fractint) Chbyshev.zip version 1.1
-Date: 08 Mar 1999 00:03:17 +1300
-
-As has already been mentioned on this list, I've finally gotten around to
-releasing a revised version of my Chbyshev.zip collection of formulae,
-tweaking here, fixing bugs there, and adding some more formulae (2088, to
-be exact).
-
-The complete set is available from Gedeon Peteri's pages. In the meantime,
-here are a few silly little things I threw together while testing the new
-formulae out. They're just tests to see if there might be something to the
-formulae, rather than studied works in their own right, so don't expect to
-be wowed :-)
-
-Morgan L. Owens
+; From: "Morgan L. Owens" <packrat@nznet.gen.nz>
+; Subject: (fractint) Chbyshev.zip version 1.1
+; Date: 08 Mar 1999 00:03:17 +1300
+; 
+; As has already been mentioned on this list, I've finally gotten around to
+; releasing a revised version of my Chbyshev.zip collection of formulae,
+; tweaking here, fixing bugs there, and adding some more formulae (2088, to
+; be exact).
+; 
+; The complete set is available from Gedeon Peteri's pages. In the meantime,
+; here are a few silly little things I threw together while testing the new
+; formulae out. They're just tests to see if there might be something to the
+; formulae, rather than studied works in their own right, so don't expect to
+; be wowed :-)
+; 
+; Morgan L. Owens
 
 h02-25-1           {
   reset=1960 type=formula formulafile=frac_ml.frm formulaname=H02-25
@@ -279,7 +279,7 @@ UC05-28-1          {
   }
 
 Beta05-23-1        {
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=beta05-23
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Beta05-23
   function=round/cosxx/sqrt passes=3
   center-mag=6.00469/4.5044/0.2222222 params=1/0 float=y maxiter=1023
   inside=255 outside=atan periodicity=0
@@ -343,7 +343,7 @@ Ca07-26-1          {
   }
 
 C07-09-1           { ; Hellfire
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=c07-09
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=C07-09
   function=cos passes=b center-mag=0/-5.55112e-017/0.6666667/1/-45
   params=0.1/0 float=y maxiter=1023 inside=255
   colors=000s22<2>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z\
@@ -351,7 +351,7 @@ C07-09-1           { ; Hellfire
   }
 
 Beta07-09-1        { ; Ice yachting
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=beta07-09
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Beta07-09
   function=log passes=b center-mag=-0.386135/1.24482/0.9363296/1/135
   params=0.5/0.5 float=y maxiter=1023 inside=255 outside=atan
   colors=000svy<9>zzzzzzyzz<114>1Vz0Uz0Uz0Uz<43>0Uy0Uy1Uy2Vy<76>rvy
@@ -366,30 +366,30 @@ Beta03-06-1        { ; Koru
   }
 
 ;========================================================================;
-From: RParracho@aol.com
-Subject: (fractint) Couple pars and comments
-Date: 09 Mar 1999 00:17:38 EST
-
-	It scares me to think that fractint has become 'old hat' to the veterans but
-us newbies need to carry the torch.  So dazzled and psyched I was when I
-joined the list and could actually commune with others who enjoyed math and
-art...But alas I became what IRC people call leeches and idlers.  I just
-looked at image upon image taking but never contibuting anything new. The
-process of creating a formula/image requires praise and criticism and someone
-elses' perspective;  if there is none of that then creativity grinds to a
-halt.  Are my images and formulas good enough? I ask myself constantly but
-fear the worst and don't post.  
-	I am  posting some pars because they may not be highly polished or radically
-different but they are a slivers of my personality.  
-	If we want to have a fixed formula face off (if you think it'll get the
-creative juices running) lets use a builtin, or pick a formula,  or an
-equation that you must use in your formula.  What about for one week no one
-does any escape time fractals and only do IFS or L-systems?
-	Ive ranted enough.  Sorry if I insulted anyone.
-Enjoy the pars....Tell me what you think...show me what I didn't see.
-
-As always best regards
-Rui
+; From: RParracho@aol.com
+; Subject: (fractint) Couple pars and comments
+; Date: 09 Mar 1999 00:17:38 EST
+; 
+; 	It scares me to think that fractint has become 'old hat' to the veterans but
+; us newbies need to carry the torch.  So dazzled and psyched I was when I
+; joined the list and could actually commune with others who enjoyed math and
+; art...But alas I became what IRC people call leeches and idlers.  I just
+; looked at image upon image taking but never contibuting anything new. The
+; process of creating a formula/image requires praise and criticism and someone
+; elses' perspective;  if there is none of that then creativity grinds to a
+; halt.  Are my images and formulas good enough? I ask myself constantly but
+; fear the worst and don't post.  
+; 	I am  posting some pars because they may not be highly polished or radically
+; different but they are a slivers of my personality.  
+; 	If we want to have a fixed formula face off (if you think it'll get the
+; creative juices running) lets use a builtin, or pick a formula,  or an
+; equation that you must use in your formula.  What about for one week no one
+; does any escape time fractals and only do IFS or L-systems?
+; 	Ive ranted enough.  Sorry if I insulted anyone.
+; Enjoy the pars....Tell me what you think...show me what I didn't see.
+; 
+; As always best regards
+; Rui
 
 Rosa_Fina          { ; (c) R Parracho Mar 06, 1999 t=  0:03:07.29 66mhz
   reset=1960 type=formula formulafile=frac_ml.frm
@@ -472,36 +472,36 @@ Gift_wrap          { ; (c) R Parracho Mar 07, 1999 t=  0:02:15.95 66mhz
   }
 
 ;========================================================================;
-From: davides <davides@pipeline.com>
-Subject: Re: (fractint) Couple pars etc...
-Date: 09 Mar 1999 08:21:06 -0500
-
-At 12:17 AM 3/9/1999 EST, you wrote:
-	"It scares me to think that fractint has become 'old hat' to the veterans
-but us newbies need to carry the torch.  So dazzled and psyched I was when
-I joined the list and could actually commune with others who enjoyed math
-and art..."
-
-Maybe 'old hat', but there is still a wee tad of life in fractint. Mandel
-0oh resulted in some additions to my "New_Dimension" file, generally
-recoloring. Along with those I am adding a few others (From ND275 - ND285).
-The color map for ND281 _may_ be one of Paul Carlson's maps; I'm not
-certain.  I had been putting the name of the color map into the par in
-order to prevent any question as to just who made the color map but have
-lately become a bit lazy. The other pars where the color maps are not named
-are mine - dav94, 94a, 94b or otherwise, for instance the pars generated
-from one of Jim Muth's formulas.
-
-The formula file names in the pars are my own "system"; if this causes any
-difficulty, email me privately and I will send the formula. This, however,
-will doubtlessly be unneccesary. FWIW:
+; From: davides <davides@pipeline.com>
+; Subject: Re: (fractint) Couple pars etc...
+; Date: 09 Mar 1999 08:21:06 -0500
+; 
+; At 12:17 AM 3/9/1999 EST, you wrote:
+; 	"It scares me to think that fractint has become 'old hat' to the veterans
+; but us newbies need to carry the torch.  So dazzled and psyched I was when
+; I joined the list and could actually commune with others who enjoyed math
+; and art..."
+; 
+; Maybe 'old hat', but there is still a wee tad of life in fractint. Mandel
+; 0oh resulted in some additions to my "New_Dimension" file, generally
+; recoloring. Along with those I am adding a few others (From ND275 - ND285).
+; The color map for ND281 _may_ be one of Paul Carlson's maps; I'm not
+; certain.  I had been putting the name of the color map into the par in
+; order to prevent any question as to just who made the color map but have
+; lately become a bit lazy. The other pars where the color maps are not named
+; are mine - dav94, 94a, 94b or otherwise, for instance the pars generated
+; from one of Jim Muth's formulas.
+; 
+; The formula file names in the pars are my own "system"; if this causes any
+; difficulty, email me privately and I will send the formula. This, however,
+; will doubtlessly be unneccesary. FWIW:
 
 
 New_Dimension275   { ;  (c) David Shanholtzer Feb 24, 1999 t=  0:01:55.67
                      ;  P200 MMX 1024x768
                      ; color map: dsgldsii
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t center-mag=0/0/6.666667/1/10
+  formulaname=Bubbles_Julia_Mset passes=t center-mag=0/0/6.666667/1/10
   params=-0.8149999999999999/0.197/0.165/16/2/125 float=y
   maxiter=10000 outside=summ logmode=fly viewwindows=1/0.75/yes/0/0
   colors=000zzw<123>000yhW<123>000000000000000000
@@ -510,7 +510,7 @@ New_Dimension275   { ;  (c) David Shanholtzer Feb 24, 1999 t=  0:01:55.67
 New_Dimension278   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:00:40.37
                      ;  P200 MMX 1024x768
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=multirot-xy-zw function=ident/flip/sinh/sqr
+  formulaname=multirot-XY-ZW function=ident/flip/sinh/sqr
   center-mag=0.58651/5.55112e-016/1.718213/1/90
   params=89.25/91.25/0/0/0.29/0 float=y maxiter=15000 bailout=25
   inside=maxiter outside=mult decomp=256 symmetry=xaxis periodicity=10
@@ -521,7 +521,7 @@ New_Dimension278   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:00:40.37
 New_Dimension276   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:01:07.22
                      ;  P200 MMX 1024x768
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=multirot-xy-zw function=ident/flip/sinh/sinh
+  formulaname=multirot-XY-ZW function=ident/flip/sinh/sinh
   center-mag=0.516129/-0.269883/34.36426 params=65/75/0/0/0.29/0
   float=y maxiter=15000 bailout=25 inside=maxiter outside=mult
   decomp=256 symmetry=xaxis periodicity=10
@@ -532,7 +532,7 @@ New_Dimension276   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:01:07.22
 New_Dimension277   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:00:35.21
                      ;  P200 MMX 1024x768
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=atan/cosh/tan/tan
+  formulaname=HC_Julstar function=atan/cosh/tan/tan
   center-mag=-0.00002725899199133/-0.00000704336893747/167.6242/1/12.496
   params=-0.325/0.775/5/-4.2/-0.315/-0.5 float=y maxiter=600000
   bailout=100 fillcolor=0 inside=maxiter outside=summ logmode=fly
@@ -545,7 +545,7 @@ New_Dimension279   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:03:47.06
                      ;  P200 MMX 1024x768
                      ; color map: dav100
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t
+  formulaname=Bubbles_Julia_Mset passes=t
   center-mag=-4.44089e-016/3.33067e-016/0.8912656/1/-25
   params=-0.746410388/0.117326/0.188/16/2/125 float=y maxiter=10000
   outside=summ logmode=fly viewwindows=1/0.75/yes/0/0
@@ -556,7 +556,7 @@ New_Dimension280   { ;  (c) David Shanholtzer Feb 25, 1999 t=  0:31:46.46
                      ;  P200 MMX 1024x768
                      ; color map: dav100
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t
+  formulaname=Bubbles_Julia_Mset passes=t
   center-mag=-0.500934/0.0569428/13.92602/1/-25
   params=-0.746410388/0.117326/0.188/16/2/125 float=y maxiter=10000
   outside=summ logmode=fly viewwindows=1/0.75/yes/0/0
@@ -567,7 +567,7 @@ New_Dimension281   { ;  (c) David Shanholtzer Feb 28, 1999 t=  0:04:36.93
 
                     ;  P200 MMX 1024x768                                  
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t
+  formulaname=Bubbles_Julia_Mset passes=t
   center-mag=0.512219/-0.0899609/6.666667
   params=-0.75745/0.184309007/0.188/16/2/125 float=y maxiter=1000000
   inside=zmag outside=summ colors=000GGz<123>00O0cw<123>00F000<3>000
@@ -616,17 +616,17 @@ New_Dimension285   { ;  (c) David Shanholtzer Mar 09, 1999 t=  0:04:30.94
   }
 
 ;========================================================================;
-From: Lee Skinner <LeeHSkinner@compuserve.com>
-Subject: (fractint) A Few Pars
-Date: 11 Mar 1999 23:43:46 -0500
-
-Here are a few pars using a Jim Muth formula:
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) A Few Pars
+; Date: 11 Mar 1999 23:43:46 -0500
+; 
+; Here are a few pars using a Jim Muth formula:
 
 bugz007            { ;                                       t=  0:41:23.89
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:41
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.32333724346065680/+0.70743674358138150/98.61933/1/-90
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -640,7 +640,7 @@ bugz008            { ;                                       t=  0:43:08.35
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:42
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.38404595669012190/+0.57411948483712480/47.41314/1/-147.5
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -654,7 +654,7 @@ bugz009            { ;                                       t=  0:42:52.62
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:42
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.39649628186007700/+0.67840808522246890/57.33682/1/-112.5
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -668,7 +668,7 @@ bugz010            { ;                                       t=  0:42:11.02
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:43
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.43268957372512450/+0.64634562200892580/114.6736/1/-90
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -682,7 +682,7 @@ bugz011            { ;                                       t=  0:42:10.97
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:43
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.43189461126132940/+0.68461694534887960/72.51421/1/-90
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -696,7 +696,7 @@ bugz012            { ;                                       t=  0:43:15.19
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:43
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.46365642955682790/+0.75493445004327410/91.51874/1/-90
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -710,7 +710,7 @@ bugz013            { ;                                       t=  0:41:48.89
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:44
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.35599836085615620/+0.76885593019245420/98.61933/1/-90
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -724,7 +724,7 @@ bugz014            { ;                                       t=  0:42:03.17
                      ; on a P233 at 1600x1200  Feb 16, 1999  07:35:44
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandnewt02 passes=1
+  formulaname=MandNewt02 passes=1
   center-mag=-0.38255807144982890/+0.61823353302620230/57.33682/1/127.5
   params=-4.815/0/-0.731/0/0.137/0 float=y maxiter=160 bailout=25
   inside=bof60 logmap=yes symmetry=none periodicity=0
@@ -735,16 +735,16 @@ bugz014            { ;                                       t=  0:42:03.17
   }
 
 
-Lee Skinner
+; Lee Skinner
 
 ;========================================================================;
-From: Bob Margolis <rttyman@wwa.com>
-Subject: (fractint) PARS for the course
-Date: 18 Mar 1999 22:38:33 -0600
-
-Only one today.
-
-Bob
+; From: Bob Margolis <rttyman@wwa.com>
+; Subject: (fractint) PARS for the course
+; Date: 18 Mar 1999 22:38:33 -0600
+; 
+; Only one today.
+; 
+; Bob
 
 
 Julia_1            { ; (c) 1999 by Bob Margolis
@@ -757,9 +757,9 @@ Julia_1            { ; (c) 1999 by Bob Margolis
   }
 
 ;========================================================================;
-From: Bob Margolis <rttyman@wwa.com>
-Subject: (fractint) Pars for the course
-Date: 23 Mar 1999 19:30:20 -0600
+; From: Bob Margolis <rttyman@wwa.com>
+; Subject: (fractint) Pars for the course
+; Date: 23 Mar 1999 19:30:20 -0600
 
 
 Untitled_1         { ; (c) 1999 by Bob Margolis
@@ -814,11 +814,11 @@ Untitled_4         { ; (c) 1999 by Bob Margolis
   }
 
 ;========================================================================;
-From: davides <davides@pipeline.com>
-Subject: (fractint) Tinkeritis
-Date: 24 Mar 1999 19:49:28 -0500
-
-Results from a couple of tinkerings:
+; From: davides <davides@pipeline.com>
+; Subject: (fractint) Tinkeritis
+; Date: 24 Mar 1999 19:49:28 -0500
+; 
+; Results from a couple of tinkerings:
 
 
 New_Dimension293   { ;  (c) David Shanholtzer Mar 17, 1999 t= 0:05:12.47
@@ -826,7 +826,7 @@ New_Dimension293   { ;  (c) David Shanholtzer Mar 17, 1999 t= 0:05:12.47
                      ; A modification and zoom into Diamond Mandelbrot
                      ; color map: Dav88b
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix6 passes=t
+  formulaname=MandelbrotMix6 passes=t
   center-mag=-0.75403479960899260/+0.73005833221274460/1858.333
   params=0.75/2/-0.09/3.12/0/0.001 float=y maxiter=15000 bailout=25
   inside=maxiter logmap=-64 finattract=y symmetry=xaxis periodicity=10
@@ -849,8 +849,5 @@ New_Dimension298   { ;  (c) David Shanholtzer Mar 24, 1999 t= 0:00:06.15
   }
 
 
-And tomorrow...after months of work, final editing!!!!!
-
-;========================================================================;
-!F4_Toggle_INFO>>> { This INFO top of page? Hit F4 to sort in Date order }
+; And tomorrow...after months of work, final editing!!!!!
 

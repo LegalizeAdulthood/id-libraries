@@ -45,7 +45,7 @@ Blackhole           { ; By Jay Hill  JAY.R.HILL@cpmx.saic.com
                      ; <sylvie_gallet@compuserve.com>
                      ; t=calc time using a Pentium 166 at 1600 x 1200
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=gallet-9-02 function=tan/sinh passes=1
+  formulaname=Gallet-9-02 function=tan/sinh passes=1
   center-mag=0.181592/0.135159/1.149304/1.0758/-85/-17.744
   params=100/100/8/3/1.1/0 float=y maxiter=255 inside=0 decomp=256
   periodicity=0
@@ -474,7 +474,7 @@ Pulse_zoom         { ; amkelley@freenet.columbus.oh.us
 JumpPoint          { ; zoom out just a bit
                      ; see suddenly a different picture
   reset=1950 type=formula formulafile=frac_ml.frm
-  formulaname=cgnewtonsinexp passes=2
+  formulaname=CGNewtonSinExp passes=2
   center-mag=-0.992426/0.931621/0.006024541 params=1.4/1 float=y
   maxiter=5000 inside=bof60 logmap=5 distest=1000/71/80/60
   colors=834pJE<43>A45945834723502301000<13>ehlhkoilokmp<9>WTL834<173>834V\
@@ -489,7 +489,7 @@ JumpPoint          { ; zoom out just a bit
 Fractalj-m         { ; Pulse
                      ; by amkelley@freenet.columbus.oh.us
   reset=1950 type=formula formulafile=frac_ml.frm
-  formulaname=CGNewtonSinExp-m passes=2
+  formulaname=CGNewtonSinExp-M passes=2
   center-mag=-0.992426/0.931621/4.63121 params=1.4/1/.0001/0 float=y
   maxiter=5000 inside=bof60 logmap=5 distest=1000/71/80/60
   colors=834pJE<43>A45945834723502301000<13>ehlhkoilokmp<9>WTL834<173>834V\
@@ -497,7 +497,7 @@ Fractalj-m         { ; Pulse
   }
 
 Pulse_zoom-m         { ; amkelley@freenet.columbus.oh.us
-  reset=1950 type=formula formulafile=fractint.frm
+  reset=1950 type=formula formulafile=frac_ml.frm
   formulaname=CGNewtonSinExp-M passes=2
   center-mag=-0.950575/0.9244/46.3121 params=1.4/1/.0001/0 float=y
   maxiter=5000 inside=bof60 logmap=5 distest=1000/71/400/300
@@ -513,7 +513,7 @@ Pulse_zoom-m         { ; amkelley@freenet.columbus.oh.us
 NewFract_Deepzoom  { ; Pulse  zoomed in
                      ; by amkelley@freenet.columbus.oh.us
   reset=1950 type=formula formulafile=frac_ml.frm
-  formulaname=newcgnewtonsinexp passes=2
+  formulaname=newCGNewtonSinExp passes=2
   center-mag=-0.95145378834490950/+0.92132932950487430/1.703328e+011
   params=1.4/1/0/0/9.999999999999999e-025/0 float=y maxiter=5000
   inside=bof60 logmap=5 distest=1000/71/80/60
@@ -527,7 +527,7 @@ NewFract_Deepzoom  { ; Pulse  zoomed in
 ; Subject: (fractint) New Coloring Methods
 
 mandelc            {
-  reset=1960 type=formula formulafile=dmj.frm formulaname=color05i
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Color05i
   function=sqr center-mag=-0.938416/0/0.6666667 params=0/0/4/0 float=y
   maxiter=256 inside=0 invert=0.5/-0.5/0 decomp=256 periodicity=0
   colors=000<63>oozooznny<61>AACAACBBD<61>zzzzzzyyy<60>333
@@ -539,7 +539,7 @@ mandelc            {
 ; Subject: (fractint) More fun with new coloring
 
 RubySlippers { ; Copyright 1997 Damien M. Jones
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=color11
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Color11
   function=sqr passes=2
   center-mag=-1.74453602257631800/+0.00329174411624011/6733462
   params=-0.5/0.75/0/0.75/128/0 float=y maxiter=10000 bailout=128
@@ -582,7 +582,7 @@ dz-ok              {
 
 feather            { ;
                      ; Image Copyright 1991-7 by Lee H. Skinner
-  reset=1920 type=formula formulafile=frac_ml.frm formulaname=cubic
+  reset=1920 type=formula formulafile=frac_ml.frm formulaname=Cubic
   passes=1
   center-mag=+0.00046651118178621/+2.96440183716083900/3030.303
   params=1/0/0/0/0/0 float=y maxiter=1023 inside=0 logmap=yes
@@ -600,7 +600,7 @@ No_Idea            { ; I don't know how it works, but I like it!
                      ; spratz@freenet.edmonton.ab.ca
                      ;
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=pratz001 function=cosh/ceil
+  formulaname=Pratz001 function=cosh/ceil
   center-mag=-1.68528/0.233754/4.284931 params=1/0/4/0/8/0 float=y
   inside=0 logmap=yes colors=@firestrm.map
   }
@@ -611,7 +611,7 @@ No_Idea            { ; I don't know how it works, but I like it!
 ; Subject: (fractint) New coloring methods (again)
 
 ccphc              { ; Continuous Color PHC example
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=color13phc
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Color13phc
   passes=1
   center-mag=-0.15519576843965720/+0.64963388054984320/6158.933/1/-49.999
   params=16/0.2/0/0 float=y maxiter=50000 inside=0 outside=real

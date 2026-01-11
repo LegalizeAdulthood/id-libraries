@@ -482,6 +482,7 @@ s3wt1sr2<5>Zf8Vd9SbA<3>DVF<4>CPCCNBCMA<2>BI9BH8BH8<3>AE79D6DE6\
 <3>UI9YJAaLBeMCgODjQF<9>tgGuiGvjG<2>ypGzrFzrK<3>yufxukxvqwww<3\
 >rhh`F0`F0<5>UA0T90S80R80Q70P60<3>L30K30J20I10I10<16>UB2UB2VC2\
 <3>YE3<2>S92
+}
 
 ;========================================================================;
 ;From: edwin at bathysphere.org (Edwin)
@@ -535,7 +536,7 @@ Crown_Clubs{	; This will snap to a grayscale with 'w' in
 ; way, or you'll end up with the 64 true
 ; gray-shades of hicolor 6-6-6 (if that was 16 bits).
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=club_lambda function=ident/ident
+formulaname=Club_Lambda function=ident/ident
 center-mag=0.870006/-0.00263346/0.869118/1.05/90/3.88578058618804789e-\
 016 params=3/0 float=y maxiter=255 inside=0 outside=atan
 invert=0.54510044487003/0.8/0
@@ -549,7 +550,7 @@ invert=0.54510044487003/0.8/0
 TumbleweedJBS      {
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice0+1i ismand=y
+formulaname=JulibrotSlice0+1i ismand=y
 center-mag=+0.58460176000000000/+0.37746477100000000/49.04443/0.9997
 params=4/0/0/0 cyclerange=0/23
 colors=UUU0000w0<14>2n42n42m4<3>3j6c0w<2>www<3>NkQEhI4d9<8>JZLLYMNXO<3>U\
@@ -561,7 +562,7 @@ DHDDHDDHCDHCDHCCGBBGB<2>BGFBGGBFGBDGBCG000<7>0000w00w0
 FireflyDawnJBS     { ; Fractint Version 2003 Patchlevel 1
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice0+1i ismand=y
+formulaname=JulibrotSlice0+1i ismand=y
 center-mag=-0.02349570395000000/-0.04868921628458539/205.3879/1/-177.500\
 000000000028/3.88578058618804789e-016 params=4.2/-3/0/0 float=y
 cyclerange=0/23
@@ -574,7 +575,7 @@ DHDDHDDHCDHCDHCCGBBGB<2>BGFBGGBFGBDGBCG000<7>0000w00w0
 WaltzingWizardsJBS {
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice0+1i
+formulaname=JulibrotSlice0+1i
 center-mag=-0.07163947820000000/-3.98956388000000000/76.45664/0.9997/-95\
 .0131129858647654/1.6954329223432818e-005 params=3.5/-3/4/0
 cyclerange=0/23
@@ -587,7 +588,7 @@ DHDDHDDHCDHCDHCCGBBGB<2>BGFBGGBFGBDGBCG000<7>0000w00w0
 PaisleyZipperJBS   {
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice0+1i
+formulaname=JulibrotSlice0+1i
 center-mag=-0.968336/0.127203/26.01933/1.0003/-85.0154903477167636/-0.00\
 296067121431022734 params=3/0.0312885046005249/1.35/0
 cyclerange=0/23
@@ -600,7 +601,7 @@ DHDDHDDHCDHCDHCCGBBGB<2>BGFBGGBFGBDGBCG000<7>0000w00w0
 ClubmossMorassJBS  {
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice0+1i ismand=y passes=1
+formulaname=JulibrotSlice0+1i ismand=y passes=1
 center-mag=-0.83799791350000000/+0.43607524050000000/75.69757/0.9997/-22\
 .4825937673992158/-3.10843519833532334
 params=3/0.0312885046005249/1.35/-0.12 maxiter=10000 cyclerange=0/23
@@ -613,7 +614,7 @@ DHDDHDDHCDHCDHCCGBBGB<2>BGFBGGBFGBDGBCG000<7>0000w00w0
 StarfishArchipelago {
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice1+1i ismand=y
+formulaname=JulibrotSlice1+1i ismand=y
 center-mag=-0.93215146650000000/+0.52077522900000000/43.79142/0.9997/90/\
 3.88578058618804789e-016 params=1/0/0/0/0/0/0/0
 colors=000<3>8DMBGRDKXFNaHQgKUm<7>PdmQemRgm<2>TkmUmmSko<3>Kcw<3>enwkqwqt\
@@ -627,7 +628,7 @@ JBS1+1i_init       { ; Julibrot Slicer taking spherical slices of (Z0,C) space
 ; (p3,p4) = location in (Z0,C) space of p_o_v origin
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice1+1i ismand=y
+formulaname=JulibrotSlice1+1i ismand=y
 center-mag=-0.520063/2.35e-006/0.4986678 params=0.78/0/0/0/0/0/0/0
 float=y
 colors=UUU5M50K0<6>Qa8Uc9XfA`hB<3>prHsuIwwJ<9>v_MvYMvWM<3>uMNtKNtHN<2>tA\
@@ -657,7 +658,7 @@ DisconnDemo        { ; At this scale the structure looks very close to being
 ; minibrot shows divergent morphology at microscale only.
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice1+1i center-mag=-18.8537/0.0402218/13.20172
+formulaname=JulibrotSlice1+1i center-mag=-18.8537/0.0402218/13.20172
 params=0.78/18/0/0/0/0/0/0 float=y
 colors=UUU00KE`H<3>LYMNXOPWQ<2>UUU<3>AOA5M50K0<6>Qa8Uc9XfA`hB<3>prHsuIww\
 J<9>v_MvYMvWM<3>uMNtKNtHN<2>tAOs7Pq7P<4>b4Q_3QX3R<3>L0SS0S<3>S00<3>SS0<3\
@@ -672,7 +673,7 @@ TendrilDisconnect  { ; Demonstration of the disconnection of minibrot tendril
 ; the largest minibrot on the spike.LgScale="DisconnDemo"
 ;  Fractint Version 2003 Patchlevel 1
 reset=2003 type=formula formulafile=frac_ml.frm
-formulaname=julibrotslice1+1i
+formulaname=JulibrotSlice1+1i
 center-mag=-18.85374671818577000/+0.09726135651887585/867.2483
 params=0.78/18/0/0/0/0/0/0 float=y
 colors=UUU00KE`H<3>LYMNXOPWQ<2>UUU<3>AOA5M50K0<6>Qa8Uc9XfA`hB<3>prHsuIww\

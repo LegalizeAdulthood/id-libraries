@@ -116,7 +116,7 @@ Fractint           { ; A Newton fractal and the word 'FRACTINT'
                      ; (c) Sylvie Gallet [101324,3444], 1996
                      ; uses a large formula
   reset=1960 type=formula formulafile=fract196.frm
-  formulaname=fractint center-mag=0/0/0.6905982 float=y
+  formulaname=Fractint center-mag=0/0/0.6905982 float=y
   periodicity=0
   colors=000000`Y_<6>nrt<15>OI4<6>eYIg_KiaMkcOneQ<4>zp`<4>jdVgaUcZS`WRYUQ<\
   6>AAJ<3>ALPAORARTBUVBXX<6>DqkDtmCqk<6>7T`<6>L4Q<8>VHH<5>rH4vH1zH0<8>SDE<\
@@ -128,8 +128,8 @@ Fractint           { ; A Newton fractal and the word 'FRACTINT'
 
 Newton-real        { ; Newton's method applied to a real equation
                      ; (c) Sylvie Gallet [101324,3444], 1996
-  reset=1920 type=formula formulafile=fractint.frm
-  formulaname=newton_real passes=1
+  reset=1920 type=formula formulafile=fract196.frm
+  formulaname=Newton_real passes=1
   center-mag=-2.00627/1.71859/0.6666667/-1 params=0.001/0 float=y
   maxiter=500 inside=0 outside=summ
   colors=00F7GL<8>IeqKhuJfr<14>000<3>FD8ABBNKD<9>zrZ<15>000<15>z00<15>000<\
@@ -146,7 +146,7 @@ Threeply           { ; (c) Sylvie Gallet [101324,3444], 1996
 TileJulia          { ; Your new wallpaper for Windows...
                      ; (c) Sylvie Gallet [101324,3444], 1996
   reset=1960 type=formula formulafile=fract196.frm
-  formulaname=tilejulia center-mag=0/0/0.6666667
+  formulaname=TileJulia center-mag=0/0/0.6666667
   params=0.001/0.005/500/0/-1.44/0 float=y periodicity=0
   colors=O0LBBB<12>www<15>000<14>IeqKhuJfr<14>000<15>zrZ<15>000<15>z00<15>\
   000<15>www<15>000<15>0m0<15>000<15>zrZ<15>000<15>z0r<8>S0PK0I<4>00033377\
@@ -156,7 +156,7 @@ TileJulia          { ; Your new wallpaper for Windows...
 TileMandel         { ; ...or the background for your Web page?
                      ; (c) Sylvie Gallet [101324,3444], 1996
   reset=1960 type=formula formulafile=fract196.frm
-  formulaname=tilemandel center-mag=0/0/0.6666667
+  formulaname=TileMandel center-mag=0/0/0.6666667
   params=-1.238825/0.163073/40/0 float=y periodicity=0
   colors=CCCrdL<12>uoYvpZuoZ<23>DJR<14>WhQXiQYkQ_lQ`nQbpP<19>bXGbVFcVI<5>j\
   _`l`dl`d<29>fPCeOBcOB<14>3UO0UP0UP<4>0QR1QR1PR1PS1OS<12>2EY<8>nTe<29>coe\
@@ -223,7 +223,7 @@ Graphs             { ; Better than a graphic calculator!
 
 G-3-03-M           { ; Uses the new round function.
                      ; (c) Sylvie Gallet [101324,3444], 1996
-  reset=1940 type=formula formulafile=fractint.frm formulaname=G-3-03-M
+  reset=1940 type=formula formulafile=fract196.frm formulaname=G-3-03-M
   function=sinh/atanh passes=1
   center-mag=-0.292907/-0.345016/0.1164033/1/44.999 params=10/0/5/15
   float=y outside=atan decomp=256 periodicity=0
@@ -308,7 +308,7 @@ SG8-21-12          { ; New color scheme for Julia and Mandel sets
                      ; Copyright Sylvie Gallet [101324,3444], April 1997
                      ; t= 0:10:49.33 at 1600 x 1200 on a P166
   reset=1960 type=formula formulafile=fract196.frm
-  formulaname=gallet-8-21 passes=1
+  formulaname=Gallet-8-21 passes=1
   center-mag=0.152211/0.485915/5.161535/1/14.997
   params=0.078/-0.64/0.12/0.18/0/0 float=y maxiter=2047 inside=0
   decomp=256 periodicity=0
@@ -316,4 +316,3 @@ SG8-21-12          { ; New color scheme for Julia and Mandel sets
   8>J11I00I00H00H00<28>000wvy<4>ssursuqrtqrtpqs<13>chgchgbgfbgfafe<10>VaZU\
   `YU`YU`Y<13>OVSOVSOVSOURNUR<67>000 cyclerange=0/255
   }
-

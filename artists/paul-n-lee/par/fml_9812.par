@@ -9,7 +9,7 @@
 
 pkstalks01         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3dstalks_pokorny passes=t
+  formulaname=3DStalks_Pokorny passes=t
   corners=-2.593361/2.593361/-1.945021/1.945021
   params=-1.38683333/0.0735/0.02/10000000000/2/125
   float=y maxiter=500 inside=253 outside=summ
@@ -18,7 +18,7 @@ pkstalks01         {; Copyright (c) Paul W. Carlson, 1998
 
 pkstalks02         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3dstalks_pokorny passes=t
+  formulaname=3DStalks_Pokorny passes=t
   corners=-1.0552352/-0.59985839/0.36743026/0.302376409/-0.8600\
   737/0.107214937
   params=-1.572841/0.077536/0.02/10000000000/8/30
@@ -29,7 +29,7 @@ pkstalks02         {; Copyright (c) Paul W. Carlson, 1998
 
 pkstalks03         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3dstalks_pokorny passes=t
+  formulaname=3DStalks_Pokorny passes=t
   corners=0.2293258/0.5629962/0.57564755/0.82590035
   params=-0.237584/0.5461/0.03/10000000000/2/125
   float=y maxiter=300 inside=253 outside=summ
@@ -38,7 +38,7 @@ pkstalks03         {; Copyright (c) Paul W. Carlson, 1998
 
 pkstalks04         {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=3dstalks_pokorny passes=t
+  formulaname=3DStalks_Pokorny passes=t
   corners=-6/6/-4.5/4.5
   params=-0.602179463/0.301714302/0.11/10000000000/2/125
   float=y maxiter=300 inside=253 outside=summ
@@ -252,7 +252,7 @@ lesifs009          { ; "Christmas Tree with Lights"         t=  0:06:46.73
                      ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
                      ; (c) 1998 by Les St Clair [Par date: Nov 21, 1998]
                      ; e-mail to: les_stclair@compuserve.com
-  reset=1960 type=ifs ifsfile=frac_ml.ifs ifs=lesifs009
+  reset=1960 type=ifs ifsfile=Frac_ml.ifs ifs=lesifs009
   center-mag=-0.28121945000000000/+5.14996337500000000/0.1558758/0.9998/14\
   7.578 params=1 float=y maxiter=10000
   colors=0000zF0zFzNIz00SDzzz9z8zzX0zz88zzXNmzzzz0ZzaN0kzc0zzZ0000<236>000
@@ -323,7 +323,7 @@ fbnewt2m5          {; Copyright (c) Paul W. Carlson, 1998
 Rainbow_Ribbons    { ; From Paul Carlson's Flex_Newt1_Mand.frm
                      ; Zoom/recolor Paul DeCelle 12/4/98
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=flex_newt1_mand passes=t
+formulaname=Flex_Newt1_Mand passes=t
 center-mag=+8.24045668776040700/+0.02366112354622695/56.24639/1/19.999
 params=2/0/0.3/0/1e-006/0 float=y maxiter=3000 inside=253
 outside=summ
@@ -388,9 +388,9 @@ Shroud             { ; image(c)1998 JimWeaver   Jm-03            t=00min25s
   }
 
 ;========================================================================;
-Date: 05 December 1998 14:00
-From: Tony Hanmer <tony@omrussia.spb.su>
-Subject: (fractint) Some Lyapunov pars
+; Date: 05 December 1998 14:00
+; From: Tony Hanmer <tony@omrussia.spb.su>
+; Subject: (fractint) Some Lyapunov pars
 
 
 lyapunov001        { ; (c) Tony Hanmer
@@ -618,9 +618,9 @@ lyapunov015        { ; (c) Tony Hanmer
   }
 
 ;========================================================================;
-Date: 05 December 1998 17:30
-From: kathy roth <kroth@well.com>
-Subject: (fractint) holiday card
+; Date: 05 December 1998 17:30
+; From: kathy roth <kroth@well.com>
+; Subject: (fractint) holiday card
 
 Christmas_star     { ; kathy roth 1998
   reset=1960 type=formula formulafile=frac_ml.frm
@@ -640,7 +640,7 @@ Christmas_star     { ; kathy roth 1998
 
 
 LL2-0104           { ; Big arm tattoo                   0:03:10
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-01
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-01
   function=tan/recip passes=1
   corners=-0.6811287/0.6808137/-0.5120823/0.5093745 params=2/3/2/3
   float=y maxiter=75 inside=bof60 outside=real rseed=-7839
@@ -650,7 +650,7 @@ LL2-0104           { ; Big arm tattoo                   0:03:10
   }
 
 LL2-0216           { ; Sermon on the mount              0:00:20
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-02
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-02
   function=cos/acosh/cabs passes=1
   center-mag=0.868974/1.11022e-015/0.368815/2.3176/-90 params=4/0/0/0
   float=y maxiter=256 outside=real rseed=-7839
@@ -659,7 +659,7 @@ LL2-0216           { ; Sermon on the mount              0:00:20
   }
 
 LL2-0402           { ; Royal piety                      0:00:30
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-04
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-04
   function=cos/cosxx passes=1
   corners=-1.703234/1.703234/-2.20636/1.224886 params=4/0/2/0 float=y
   maxiter=76 inside=bof60 rseed=-7839
@@ -668,7 +668,7 @@ LL2-0402           { ; Royal piety                      0:00:30
   }
 
 LL2-0518           { ; Ornate frame                     0:00:21
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-05
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-05
   function=sqr/asin passes=1
   center-mag=0.0717694/-2.26485e-014/0.4326257/1.5115/-90
   params=3/0/2/0 float=y maxiter=256000000 inside=bof60 outside=real
@@ -746,7 +746,7 @@ LL2-0518           { ; Ornate frame                     0:00:21
 
 xmas_elephant      {; Copyright (c) Paul Carlson, 1989
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t
+  formulaname=Bubbles_Julia_Mset passes=t
   center-mag=-0.00009916023966658/-0.00019030381371508/29\
   027.04/1/-109.999
   params=0.289631409419512/0.013316315158669/0.2/16/2/125
@@ -756,7 +756,7 @@ xmas_elephant      {; Copyright (c) Paul Carlson, 1989
 
 xmas_seahorse     {; Copyright (c) Paul Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=bubbles_julia_mset passes=t
+  formulaname=Bubbles_Julia_Mset passes=t
   center-mag=0.00981534/2.22045e-016/0.8503401
   params=-0.746410388/0.184309007/0.188/16/2/125
   float=y maxiter=10000 inside=255 outside=summ
@@ -831,7 +831,7 @@ birth              { ; Par and Image Copyright 1998, Paul Kyle
 
 fbxmas1            { ; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=flex_newt2_mand passes=t
+  formulaname=Flex_Newt2_Mand passes=t
   center-mag=+0.08484614030859186/+0.08484614017684157/82175.13\
   /1/-134.999
   params=0.1/0/0.017/0/1e-005/0
@@ -861,7 +861,7 @@ stuck-in-snow2     { ;  (c) Bill Decker Dec 07, 1998 t=  0:01:38.75
 
 newt3xmasj1        {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt3_atan_j passes=t
+  formulaname=Newt3_Atan_J passes=t
   center-mag=0.356027/-8.65e-007/1.123446/1/-90
   params=0.1/0 float=y maxiter=5000 inside=253 outside=summ
   invert=1/1/0
@@ -870,7 +870,7 @@ newt3xmasj1        {; Copyright (c) Paul W. Carlson, 1998
 
 newt3xmasj2        {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt3_atan_j passes=t
+  formulaname=Newt3_Atan_J passes=t
   center-mag=0.783537/-8.65e-007/0.1341222/1/-90
   params=0.1/0 float=y maxiter=5000 inside=253 outside=summ
   invert=1/-1/0
@@ -879,7 +879,7 @@ newt3xmasj2        {; Copyright (c) Paul W. Carlson, 1998
 
 newt3xmasj3        {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt3_atan_j passes=t
+  formulaname=Newt3_Atan_J passes=t
   center-mag=-1.75179/-8.65e-007/0.1827956/1/90
   params=0.1/0 float=y maxiter=5000 inside=253 outside=summ
   invert=1/-0.5/0
@@ -888,7 +888,7 @@ newt3xmasj3        {; Copyright (c) Paul W. Carlson, 1998
 
 newt3xmasj4        {; Copyright (c) Paul W. Carlson, 1998
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=newt3_atan_j passes=t
+  formulaname=Newt3_Atan_J passes=t
   center-mag=-0.830706/-8.65e-007/0.363015/1/-90
   params=0.1/0 float=y maxiter=5000 inside=253 outside=summ
   invert=1/0.5/0
@@ -903,7 +903,7 @@ newt3xmasj4        {; Copyright (c) Paul W. Carlson, 1998
 New_Dimension30    { ;  (c) David Shanholtzer Dec 07, 1998 t=0:05:47.90
                      ;  P200 MMX 1024x768
                      ; color map: dav90
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zf_ang
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Zf_Ang
   function=cotan passes=t center-mag=0/0/0.6666667
   params=0.654/0.375/0.27/-2/2/125 float=y maxiter=252 inside=253
   outside=summ colors=00Xn0z<123>H0Pzzz<123>00V000<3>000
@@ -913,7 +913,7 @@ New_Dimension30    { ;  (c) David Shanholtzer Dec 07, 1998 t=0:05:47.90
 New_Dimension32    { ;  (c) David Shanholtzer Dec 07, 1998 t=  0:02:56.75
                      ;  P200 MMX 1024x768
                      ; color map: dav25e
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zf_ang
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Zf_Ang
   function=exp passes=t center-mag=-0.828935/0.797914/3.205128
   params=0.654/0.515/0.27/-3/2/125 float=y maxiter=252 inside=253
   outside=summ
@@ -924,7 +924,7 @@ New_Dimension32    { ;  (c) David Shanholtzer Dec 07, 1998 t=  0:02:56.75
 New_Dimension33    { ;  (c) David Shanholtzer Dec 07, 1998 t=  0:06:54.85
                      ;  P200 MMX 1024x768
                      ; color map: dav25e
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zf_ang
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Zf_Ang
   function=exp passes=t center-mag=-0.719453/0.72751/4.901961
   params=0.515/0.515/0.27/-3/2/125 float=y maxiter=252 inside=253
   outside=summ
@@ -936,7 +936,7 @@ New_Dimension33    { ;  (c) David Shanholtzer Dec 07, 1998 t=  0:06:54.85
 New_Dimension35    { ;  (c) David Shanholtzer Dec 07, 1998 t=  0:10:45.21
                      ;  P200 MMX 1024x768
                      ; color map: dav25e (modified)
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=zf_ang
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Zf_Ang
   function=recip passes=t center-mag=-0.774194/-0.778357/7.751938
   params=0.414/0.5/0.357/-1/2/125 float=y maxiter=252 inside=253
   outside=summ
@@ -995,7 +995,7 @@ _solstice2         { ; kathy roth
 _solstice3         { ; kathy roth
                      ; wizzle map
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=kbarnceltic center-mag=2.20378/-0.458376/0.880784/1/110
+  formulaname=kbarnCeltic center-mag=2.20378/-0.458376/0.880784/1/110
   params=0.3/0.7/0.11/10/8/30 float=y outside=summ logmode=fly
   colors=000m0K<28>F07ffk<25>77I55G\
   33GwmU<28>843m0K<28>H08ffk<28>33\
@@ -1004,7 +1004,7 @@ _solstice3         { ; kathy roth
 
 _solstice4          { ; kathy roth
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=cnfrc_fnc_mset function=tan passes=t
+  formulaname=CnFrc_Fnc_Mset function=tan passes=t
   center-mag=-0.75447879728118780/-0.00000407342674519/2104889/0.75/180
   params=0.8/0/1/0/2/125 float=y maxiter=1000 inside=253 outside=summ
   logmode=fly colors=000zVz<123>C0Czzz<123>OOO000<3>000
@@ -1028,7 +1028,7 @@ _solstice5          { ; kathy roth
 
 _solstice6_holly&berry { ; kathy roth
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=csin_atan_julia passes=1
+  formulaname=CSin_Atan_Julia passes=1
   center-mag=+0.00012816020025019/+0.00003205342237071/355.217
   params=1/1/10/0/50/100 float=y maxiter=5000 inside=period
   outside=imag logmode=fly
@@ -1049,7 +1049,7 @@ _solstice6_holly&berry { ; kathy roth
 
 _solstice7_frostybrot { ; kathy roth
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-mand-cr2-ang passes=t
+  formulaname=dmj-Mand-Cr2-Ang passes=t
   center-mag=+0.13579789674395010/+0.67083533877918060/293.0404
   params=1/10/10/1/10/1 float=y maxiter=256 inside=bof60 outside=real
   logmode=fly
@@ -1063,7 +1063,7 @@ _solstice7_frostybrot { ; kathy roth
   }
 
 _solstice8         { ; kathy roth
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ucgrav
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ucgrav
   function=log/cosxx/tan center-mag=257.634/-18.7204/0.003459964/1/-90
   params=0.1/0/0/0.1/1.3/1 float=y maxiter=1023 inside=255
   outside=atan logmode=fly viewwindows=1/1/yes/0/0
@@ -1191,7 +1191,7 @@ Fractal_Flake_98   { ; Paul DeCelle 12/10/98
                      ; frm pd-hc_grav2
                      ; frm by Phil DiGiorgi adapted from Paul Carlson
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=pd-hc_grav2 function=conj/ident/sqr/sqrt passes=1
+formulaname=pd-HC_Grav2 function=conj/ident/sqr/sqrt passes=1
 center-mag=4.55191e-015/-3.68455e-015/0.9907546/1.0286/138.257/-0.53
 params=4.2/0.2/2.5/0.3/2/0.2 float=y maxiter=1023 inside=0
 outside=summ logmode=fly invert=1/0/0 
@@ -1209,7 +1209,7 @@ New_Dimension44    { ;  (c) David Shanholtzer Dec 11, 1998 t=0:00:27.25
                      ;  P200 MMX 1024x768
                      ; color map: Dav48
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=cos/ident/tan/asin
+  formulaname=HC_Julstar function=cos/ident/tan/asin
   center-mag=0.0173824/0.023879/5.859492/1/29.999
   params=1.345/0.375/3/-1/-1.5/0.5 float=y maxiter=500 bailout=100
   fillcolor=0 inside=zmag outside=summ logmode=fly periodicity=0
@@ -1464,7 +1464,7 @@ LL1-0101           { ; Blushing bluefish                    t=  0:00:22.24
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll1-01
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL1-01
   center-mag=-0.57572/0/0.6666667 float=y inside=bof60
   colors=CCC000<12>50n50r60v70z<6>z0z<14>000zZ0<14>0000z9<14>0000Qz<6>00z<\
   7>z0z000<15>zZ0<6>zz0<7>0z0<7>0zz<15>00z<15>000z30<14>000sz0<14>0000wz<1\
@@ -1475,7 +1475,7 @@ LL1-0501           { ; Electric guitar                      t=  0:09:06.67
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll1-05
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL1-05
   center-mag=0.431668/0.0995037/28.0985/0.63 params=1/0 float=y
   inside=zmag
   colors=000n0g<14>v3Wv4Wv4Vw5Uw5T<5>y8Py8Oy9NzAM<9>zFHzGGzGFzHEzID<9>yQ7x\
@@ -1488,7 +1488,7 @@ LL1-0502           { ; Japanese lacquer                     t=  0:09:14.25
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll1-05
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL1-05
   passes=1
   center-mag=-0.28244541758278000/+0.79628427406847950/66.54089
   params=1/0 float=y maxiter=512 inside=bof60 outside=atan
@@ -1502,7 +1502,7 @@ LL1-0909           { ; Tribal sine                          t=  0:00:58.16
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1821 type=formula formulafile=frac_ml.frm formulaname=ll1-09
+  reset=1821 type=formula formulafile=frac_ml.frm formulaname=LL1-09
   function=tan/cotanh corners=-7.393897/2.310837/-2.044968/2.139204
   params=5/2/0/0 float=y outside=imag potential=255/567/200/16bit
   rseed=-7839
@@ -1514,7 +1514,7 @@ LL1-1202           { ; Star wars Mandelbrot                 t=  0:01:26.18
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1821 type=formula formulafile=frac_ml.frm formulaname=ll1-12
+  reset=1821 type=formula formulafile=frac_ml.frm formulaname=LL1-12
   function=tan/log/cos passes=t
   corners=0.0480526833/0.112063427/-0.0240040289/0.0240040289
   params=3.14159265358979/0/2/0 float=y inside=bof60 outside=real
@@ -1527,7 +1527,7 @@ LL1-1203           { ; Wedgewood                            t=  0:04:03.59
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1821 type=formula formulafile=frac_ml.frm formulaname=ll1-12
+  reset=1821 type=formula formulafile=frac_ml.frm formulaname=LL1-12
   function=tan/log/cos passes=1
   corners=0.142583966/0.145911648/0.002142539132/0.004638300681
   params=3.14159265358979/123/2/0 float=y inside=bof60 outside=real
@@ -1540,7 +1540,7 @@ LL2-0101           { ; Art deco                             t=  0:02:34.95
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-01
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-01
   function=tan/round passes=1
   corners=0.01581013/1.626174/0.6187722/-0.6215605/1.626174/-0.6215605
   params=32/0/2/2 maxiter=200 inside=bof60 outside=atan rseed=-7839
@@ -1553,7 +1553,7 @@ LL2-0103           { ; Big arm tattoo                       t=  0:05:27.30
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 14, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-01
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-01
   function=tan/recip passes=1
   corners=-0.68113/0.6808189/-0.5120872/0.5093745 params=2/3/21/0
   float=y maxiter=75 inside=bof60 decomp=2
@@ -1566,7 +1566,7 @@ LL2-0215           { ; Apache sun                           t=  0:00:42.67
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-02
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-02
   function=sqr/acosh/sqrt passes=1
   center-mag=-0.16991/-0.00269217/0.1853276/1.0721/-90 params=32/0/0/0
   float=y maxiter=66 outside=real rseed=-7839
@@ -1579,7 +1579,7 @@ LL2-0217           { ; Wrinkled bandanas                    t=  0:02:10.12
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-02
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-02
   function=sqr/acosh/cotan passes=1
   center-mag=1.28099/-0.00269217/0.1749708/1.0721/-90 params=7/0/0/0
   float=y maxiter=256 outside=atan rseed=-7839
@@ -1593,7 +1593,7 @@ LL2-0320           { ; Golden flower                        t=  0:00:45.81
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-03
   function=sqr/asin/recip passes=1
   corners=-0.9151496/0.9301805/-2.156198/2.163828/-2.324455/-0.2771412
   params=5/3/5/0 float=y maxiter=256 inside=bof60 outside=real
@@ -1608,7 +1608,7 @@ LL2-0302           { ; Operation radiation                  t=  0:00:54.48
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-03
   function=cabs/asin/ident passes=1
   corners=1.448659/-1.439308/-1.925311/1.925311/-1.439308/1.925311
   params=34/0/32/0 float=y maxiter=256 outside=real rseed=-7839
@@ -1620,7 +1620,7 @@ LL2-0322           { ; Crypt                                t=  0:00:38.45
                      ; t=calc time [h:mm:ss.] using a PI-200 at 1280x1024
                      ; (c) 1998 by Lee Lane [Par date: Dec 13, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-03
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-03
   function=sqr/acosh/sin passes=1
   corners=1.104569489/1.098497247/-0.5095710199/-0.4402643118/1.076454893/\
   -0.4999597277 params=32/3/12/0 float=y maxiter=256000 inside=bof60
@@ -1635,7 +1635,7 @@ LL2-0509           { ; Apparition                           t=  0:00:01.38
                      ; t=calc time [h:mm:ss.] using a PI-200 at 800x600
                      ; (c) 1998 by Lee Lane [Par date: Dec 14, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-05
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-05
   function=log/acos passes=1
   center-mag=0.348024/-1.59872e-014/0.07443521/1.1948/-90
   params=12/0/2/0 float=y maxiter=256000000 inside=bof61 outside=real
@@ -1650,7 +1650,7 @@ LL2-0508           { ; Elegant oval                         t=  0:00:02.25
                      ; t=calc time [h:mm:ss.] using a PI-200 at 800x600
                      ; (c) 1998 by Lee Lane [Par date: Dec 14, 1998]
                      ; e-mail to: slane@kiwi.dep.anl.gov
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ll2-05
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=LL2-05
   function=sqr/asin passes=1
   center-mag=0.0717694/-2.26485e-014/0.4326257/1.5115/-90
   params=3/0/2/0 float=y maxiter=256000000 inside=bof60 outside=real
@@ -1776,7 +1776,7 @@ barnsley_spiral    { ; image(c)1998 JimWeaver     barnsleym1 t=02min32sP75
 
 
 K36x001.gif        { ; image(c)1998 JimWeaver     ok-36 t=01min16sP75
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-36
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-36
   function=cotan/cosxx/cosh/cosxx passes=t
   center-mag=1.90246/1.82627/2.519707/1/110 params=0.2/0/0/0 float=y
   maxiter=25 inside=bof60 outside=atan
@@ -1797,7 +1797,7 @@ MandExpGhost       { ; .                                     t=  0:01:02.12
                      ; Ron Barnett, Dec 1998
                      ; On a Toshiba Pentium II at 800 x 600
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandexpghost passes=1 corners=-2.5/1.5/-1.5/1.5
+  formulaname=MandExpGhost passes=1 corners=-2.5/1.5/-1.5/1.5
   params=1000000/10 float=y maxiter=100 inside=0 decomp=256
   periodicity=0
   colors=e0W<42>10W00W00W00V<65>W0GW0GW1H<63>WxyWyzWzzWzz<50>z1Wz0Wz0W<20>\
@@ -1820,7 +1820,7 @@ dirty_spiral       { ; .                                     t=  0:24:03.94
                      ; Copyright Ron Barnett, Dec 98
                      ; On a Toshiba Pentium II at 800 x 600
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=jmaskghost function=atan/sin
+  formulaname=JMaskghost function=atan/sin
   center-mag=-0.138173/0.415693/6.666667
   params=1000/5/1/0/0/0.5932500000000001 float=y maxiter=5000 inside=0
   decomp=256 periodicity=0
@@ -1862,7 +1862,7 @@ new_galaxy         { ;  (c) David Shanholtzer Oct 22, 1998 t=0:00:24.94
 
 
 Tempest            { ; image(c)1998 JimWeaver     ok-31 t=04min41sP75
-  reset=1920 type=formula formulafile=frac_ml.frm formulaname=ok-31
+  reset=1920 type=formula formulafile=frac_ml.frm formulaname=OK-31
   function=sqr/sqr passes=t
   center-mag=-0.0102638/0.0240531/0.9277018/1/-90
   params=0.1/0/0.605/0.9 float=y maxiter=1000 periodicity=0
@@ -2075,7 +2075,7 @@ M<7>07G06F06F06E<7>029029128128117<7>304403403502502<3>701701801900<11>G\
 
 Solitude           { ; image(c)1998 JimWeaver     ok-22 t=05min06sP75
                      ; electric.map.....!filter2.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=ident/tanh passes=t
   center-mag=-1.77229/-1.80112/0.664957/1/-90 params=6/0 float=y
   maxiter=255 inside=bof60 periodicity=0
@@ -2085,7 +2085,7 @@ Solitude           { ; image(c)1998 JimWeaver     ok-22 t=05min06sP75
 
 Solitude_zoom01    { ; image(c)1998 JimWeaver     ok-22 t=02min41sP75
                      ; !filter3.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=ident/tanh passes=t
   center-mag=-0.43783/-0.995894/2.725234/1/-90 params=6/0 float=y
   maxiter=255 inside=bof60 periodicity=0
@@ -2098,7 +2098,7 @@ Solitude_zoom01    { ; image(c)1998 JimWeaver     ok-22 t=02min41sP75
 
 Tis_the_Season     { ; image(c)1998 JimWeaver     ok-22 t=04min27sP75
                      ; !filter9.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=ident/sin passes=t
   center-mag=-5.10703e-015/-6.66134e-015/0.604671/1/-90 params=6/0
   float=y maxiter=255 inside=bof60 invert=1/0/0 periodicity=0
@@ -2109,7 +2109,7 @@ Tis_the_Season     { ; image(c)1998 JimWeaver     ok-22 t=04min27sP75
 
 Aurora             { ; image(c)1998 JimWeaver     ok-22 t=01min30sP75
                      ; !filter4.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=ident/tan passes=t
   center-mag=-9.76996e-015/-1.24345e-014/0.2422293/1/-90 params=6/0
   float=y maxiter=255 outside=real periodicity=0
@@ -2119,7 +2119,7 @@ Aurora             { ; image(c)1998 JimWeaver     ok-22 t=01min30sP75
 
 Nile_Keeper        { ; image(c)1998 JimWeaver     ok-22 t=01min48sP75
                      ; !filter5.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=ident/cotan passes=t
   center-mag=-1.60162/-1.46549e-014/0.5712955/1/-90 params=6/0 float=y
   maxiter=255 outside=real periodicity=0
@@ -2128,7 +2128,7 @@ Nile_Keeper        { ; image(c)1998 JimWeaver     ok-22 t=01min48sP75
 
 Queen_of_Hearts    { ; image(c)1998 JimWeaver     ok-22 t=03min15sP75
                      ; !filter6.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22 
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22 
   function=ident/atanh passes=t
   center-mag=-0.835569/-1.59872e-014/0.2667602/-1/90 params=6/0
   float=y maxiter=255 outside=real periodicity=0
@@ -2141,7 +2141,7 @@ Queen_of_Hearts    { ; image(c)1998 JimWeaver     ok-22 t=03min15sP75
 
 Shape_Shifter      { ; image(c)1998 JimWeaver     ok-22 t=01min00sP75
                      ; !filter7.gif
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ok-22
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=OK-22
   function=conj/atanh passes=t
   center-mag=-4.66294e-015/-6.66134e-015/0.5119447/1/-90 params=6/0
   float=y maxiter=25 inside=bof60 outside=atan invert=1/0/0
@@ -2169,7 +2169,7 @@ New_Dimension109   { ;  (c) David Shanholtzer Dec 25, 1998 t=  0:00:44.65
                      ;  P200 MMX 1024x768
                      ; color map: Dav94
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=atan/tanh/tan/cos
+  formulaname=HC_Julstar function=atan/tanh/tan/cos
   center-mag=-0.00001665578575133/+0.00000356094772584/1738.84/1/44.996
   params=1.2575/0.525/4/-1/-1.15/0.5 float=y maxiter=1500 bailout=100
   fillcolor=0 inside=maxiter outside=summ logmode=fly periodicity=0
@@ -2424,7 +2424,7 @@ New_Dimension24    { ;  (c) David Shanholtzer Dec 04, 1998 t=  0:00:24.77
                      ;  P200 MMX 1024x768
                      ; color map: dav25c
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=sin/exp/ident/floor passes=t
+  formulaname=HC_Julstar function=sin/exp/ident/floor passes=t
   center-mag=0/0/0.1386667 params=0.5/0/20/1/-0.75/0.3 float=y
   maxiter=550 inside=253 outside=summ logmode=fly
   colors=000j43<12>w65000<68>D0FE0GG1I<12>lLq<30>G1IE0GF0G<24>e8bmcw<32>90\
@@ -2435,7 +2435,7 @@ New_Dimension40    { ;  (c) David Shanholtzer Dec 11, 1998 t=  0:00:29.71
                      ;  P200 MMX 1024x768
                      ; color map: dav62
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=cosxx/ident/tan/asin
+  formulaname=HC_Julstar function=cosxx/ident/tan/asin
   center-mag=-1.11022e-016/8.32667e-017/6.666667
   params=1.75/0.375/6/2/-0.175/0.5 float=y bailout=100 fillcolor=0
   inside=maxiter outside=summ logmode=fly periodicity=0
@@ -2449,7 +2449,7 @@ New_Dimension62    { ;  (c) David Shanholtzer Dec 16, 1998 t=  0:02:40.77
                      ;  P200 MMX 1024x768
                      ; color map: dav87 (modified)
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=atan/exp/tan/cosxx passes=t
+  formulaname=HC_Julstar function=atan/exp/tan/cosxx passes=t
   center-mag=-8.88178e-015/7.99361e-015/0.1015575
   params=0.975/0/16/2/-0.5/0.3 float=y maxiter=550 inside=253
   outside=summ logmode=fly
@@ -2462,7 +2462,7 @@ New_Dimension73    { ;  (c) David Shanholtzer Dec 17, 1998 t=  0:00:27.68
                      ;  P200 MMX 1024x768
                      ; color map: Dav40 (modified)
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=cos/cos/tan/sin
+  formulaname=HC_Julstar function=cos/cos/tan/sin
   center-mag=-0.00002725899199133/-0.00000704336893747/167.6242/1/44.997
   params=1.35/0.5257500000000001/4/-1/-1.5/0.5 float=y maxiter=1500
   bailout=100 fillcolor=0 inside=maxiter outside=summ logmode=fly
@@ -2474,7 +2474,7 @@ New_Dimension73    { ;  (c) David Shanholtzer Dec 17, 1998 t=  0:00:27.68
 
 New_Dimension86    { ;  (c) David Shanholtzer Dec 17, 1998 t=  0:00:12.52
                      ;  P200 MMX 1024x768
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=liar1
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Liar1
   passes=b center-mag=0.5/0.5/0.6666667 float=y maxiter=256 inside=255
   decomp=256 colors=00Hnpt<66>HPc000<183>000oquoqu
   }
@@ -2482,7 +2482,7 @@ New_Dimension86    { ;  (c) David Shanholtzer Dec 17, 1998 t=  0:00:12.52
 New_Dimension92    { ;  (c) David Shanholtzer Dec 20, 1998 t=  0:00:40.26
                      ;  P200 MMX 1024x768
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=hc_julstar function=atan/cos/tan/cos
+  formulaname=HC_Julstar function=atan/cos/tan/cos
   center-mag=-0.00002725899199133/-0.00000704336893747/167.6242/1/12.496
   params=1.2575/0.525/4/-1/-1.15/0.5 float=y maxiter=1500 bailout=100
   fillcolor=0 inside=maxiter outside=summ logmode=fly periodicity=0
@@ -2626,7 +2626,7 @@ Stormy_Two         { ; Recolored "Stormy"- Better?
                      ; Image by Paul DeCelle 12/24/98
                      ; blugray.map
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=gallet-5-08 function=atan/sqrt/tan passes=1
+formulaname=Gallet-5-08 function=atan/sqrt/tan passes=1
 center-mag=0.96106/0.0479425/10.81314/0.7369/180
 params=5/0/0.09461/0/3.14159265358979/0 float=y maxiter=255
 inside=bof60 outside=atan decomp=256 periodicity=0
@@ -2639,7 +2639,7 @@ UY5SW5SV<19>3BB2A9299<10>111000000000<13>000000111222<19>OMRQOTRPUTRVUTX\
 Spindrift          { ; t=0:04:57 P60 Paul DeCelle 12/28/98
                      ; frm: dmj-mand-pls-dst
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=dmj-mand-pls-dst passes=1
+formulaname=dmj-Mand-Pls-Dst passes=1
 center-mag=-0.106245/0.961827/15.11003/1/-17.499
 params=0.03/0/9/111/280/166 float=y maxiter=1000 inside=0
 outside=real
@@ -2676,7 +2676,7 @@ Ain't_That_A_Peach { ; image(c)1998  JimWeaver    PRN_02 t=08min20s
 
 door3              { ;  (c) Bill Decker Dec 30, 1998 t=  0:02:51.43
                      ;  on P100 1024x768
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=lesfrm34
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Lesfrm34
   function=cabs/tan/floor passes=1
   center-mag=0.0302604/0.0156709/0.7279588/1/44.998 params=1/5/5/5
   potential=255/200/0 periodicity=0
@@ -2709,7 +2709,7 @@ spiralambda     { ; by Miguel Fliguer, 1998
 
 Windows_99?        { ; Paul DeCelle 12/31/98 t=22 min P60
                      ; frm: lesfrm34
-reset=1960 type=formula formulafile=frac_ml.frm formulaname=lesfrm34
+reset=1960 type=formula formulafile=frac_ml.frm formulaname=Lesfrm34
 function=floor/abs/tan passes=1
 center-mag=-0.00498807/-0.00112006/2.395424/1.3641
 params=0.5/-0.04/3.14159265358979/8 potential=255/200/0
@@ -2721,7 +2721,7 @@ hCxgAxgA<13>lU1kT0jT0iS0<13>RF0QF0OE0MD0<11>210
 
 Mercury_Swirl      { ; Paul DeCelle 12/29/98 t=0:03:46 P60
                      ; frm: prn_02 
-reset=1960 type=formula formulafile=frac_ml.frm formulaname=prn_02
+reset=1960 type=formula formulafile=frac_ml.frm formulaname=PRN_02
 function=exp/abs/tan passes=t
 center-mag=0.0121565/-0.00381329/2.405621/1/137.5
 params=0.011/-0.0474/5/0.06 float=y inside=bof61 outside=atan

@@ -49,7 +49,7 @@ colors=wiIxkJzlJ<14>YRCWPBUOB<5>IF6GD6EC5CA5A94<3>221000000<25>S4nT4pU4r\
 
 PhosphorescentTide {
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=simplependulumg function=cosxx
+formulaname=SimplePendulumG function=cosxx
 center-mag=-5.55112e-016/-1.11022e-016/0.6666667/2.2889
 params=0.5/0/0/0 float=y maxiter=1023 inside=255 outside=atan
 passes=d
@@ -61,7 +61,7 @@ cyclerange=1/254
 
 Maelstrom          { ; Story by Edgar Allen Poe
 reset=1960 type=formula formulafile=frac_ml.frm
-formulaname=simplependulumg function=cotanh passes=b
+formulaname=SimplePendulumG function=cotanh passes=b
 center-mag=-0.56294/0.762463/4.219409 params=1.5/0/0/0 float=y
 maxiter=1023 inside=255 outside=atan periodicity=0 cyclerange=1/254
 sound=beep/fm
@@ -234,7 +234,7 @@ Rainforest         { ; copyright (c) Bill Jemison 2000 ver=20
 ; OPL3 (most SB compatibles - NOT SBLive!)
 ; add Concert Hall reverb if possible
 ; requires 1280x1024 res...use diskvideo if necessary
-reset=2000 type=formula formulafile=frac_ml.frm formulaname=carr3145
+reset=2000 type=formula formulafile=frac_ml.frm formulaname=Carr3145
 passes=1 video=SF9
 center-mag=-0.00150344575698622/-0.29691627188504780/823280.3/1/139.999
 params=200/300/400/550 float=y maxiter=647 symmetry=none

@@ -1,40 +1,39 @@
-Path: unixg.ubc.ca!ubc-cs!van-bc!rsoft!agate!stanford.edu!bcm!rice!news.rice.edu!dens
-From: dens@flammulated.rice.edu (dens)
-Newsgroups: alt.fractals
-Subject: Re: Fractint v17.1 Querys
-Message-ID: <DENS.92Feb19111613@flammulated.rice.edu>
-Date: 19 Feb 1992 17:16:13 GMT
-References: <1992Feb13.222239.1@hamp.hampshire.edu> <twegner.698078553@mwunix>
-Sender: news@rice.edu (News)
-Organization: Rice University, Houston, Texas
-Lines: 500
-In-Reply-To: twegner@mwunix.mitre.org's message of 14 Feb 92 14:42:33 GMT
+; Path: unixg.ubc.ca!ubc-cs!van-bc!rsoft!agate!stanford.edu!bcm!rice!news.rice.edu!dens
+; From: dens@flammulated.rice.edu (dens)
+; Newsgroups: alt.fractals
+; Subject: Re: Fractint v17.1 Querys
+; Message-ID: <DENS.92Feb19111613@flammulated.rice.edu>
+; Date: 19 Feb 1992 17:16:13 GMT
+; References: <1992Feb13.222239.1@hamp.hampshire.edu> <twegner.698078553@mwunix>
+; Sender: news@rice.edu (News)
+; Organization: Rice University, Houston, Texas
+; Lines: 500
+; In-Reply-To: twegner@mwunix.mitre.org's message of 14 Feb 92 14:42:33 GMT
+;  
+; In article <twegner.698078553@mwunix> twegner@mwunix.mitre.org (Timothy Wegner) writes:
+;  
+;    >A wonderful update...I love the huge .par file and the new alogrithm (it's
+;    >even cooler to watch than boundary tracing). 
+;  
+;    We're sitting on an even larger number of examples people have sent. 
+;    Unfortunately it is time consuming to sort them out, so we haven't done
+;    justice to them. 
+;  
+; Here, have some more! This my own .par file. I especially like the
+; synapse, trisect, and leaky, but sunset, lambchop, and scorp are also
+; pretty neat.
+;  
+; Meanwhile, does anyone out there have a problem with halleySin as I
+; do? If I use the parameters as in this file, I don't get the picture
+; that I used to. I have a Genoa svga card, but the problem happens in
+; any video mode.
+;  
+; Finally, donut doesn't work on my machine either. It used to be a ring
+; structure with holes in it in an interesting pattern. It now gives the
+; same funky result as the halleySin with parm 0.1.
+;  
+; Anyway, enjoy:
  
-In article <twegner.698078553@mwunix> twegner@mwunix.mitre.org (Timothy Wegner) writes:
- 
-   >A wonderful update...I love the huge .par file and the new alogrithm (it's
-   >even cooler to watch than boundary tracing). 
- 
-   We're sitting on an even larger number of examples people have sent. 
-   Unfortunately it is time consuming to sort them out, so we haven't done
-   justice to them. 
- 
-Here, have some more! This my own .par file. I especially like the
-synapse, trisect, and leaky, but sunset, lambchop, and scorp are also
-pretty neat.
- 
-Meanwhile, does anyone out there have a problem with halleySin as I
-do? If I use the parameters as in this file, I don't get the picture
-that I used to. I have a Genoa svga card, but the problem happens in
-any video mode.
- 
-Finally, donut doesn't work on my machine either. It used to be a ring
-structure with holes in it in an interesting pattern. It now gives the
-same funky result as the halleySin with parm 0.1.
- 
-Anyway, enjoy:
- 
-   -----------------------------------------------------------------
  
 amoeba             { ; Everyone's seen this one             Dennis Schmitz
   reset type=manfn+zsqrd function=sin corners=-8.0/7.995483/-5.994003/6.0
@@ -46,7 +45,7 @@ amoeba             { ; Everyone's seen this one             Dennis Schmitz
   }
  
 arrowhd            { ; Well, that's what it looks like      Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  reset type=formula formulafile=fractint-2.frm formulaname=AltJTet
   corners=1.441389/1.712254/-0.101574/0.101574 params=0.01/0/1023 float=y
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=000ForeD`<16>Qd9eCa<38>SOQeD`<29>zi7dCa<22>8CneCa<36>H_cRZjCvseCa<32>\
@@ -54,7 +53,7 @@ arrowhd            { ; Well, that's what it looks like      Dennis Schmitz
   }
  
 bikheart           { ; Hearts on a bike?                    Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=cubic
+  reset type=formula formulafile=fractint.frm formulaname=Cubic
   corners=0.486123/0.496515/0.675728/0.683521 params=1 float=y
   maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=0000Ek<97>0y00z00y0<124>00y00z00y<26>0Dl
@@ -105,7 +104,7 @@ blstfurn           { ; Different zoom level.                Dennis Schmitz
   }
  
 bubbles            { ; Tiny bubbles                         Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  reset type=formula formulafile=fractint-2.frm formulaname=AltJTet
   corners=1.6424817/1.656025/0.063627/0.0737845 params=0.01/0/1023 float=y
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=000kRblOanK_<6>ws4<3>gKOcAUaBP_DKXFE<5>LywSmoZaffQYoSixVu<5>RlF<2>cVj\
@@ -117,7 +116,7 @@ bubbles            { ; Tiny bubbles                         Dennis Schmitz
   }
  
 bubbles2           { ; Different zoom level                 Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=AltJTet
+  reset type=formula formulafile=fractint-2.frm formulaname=AltJTet
   corners=1.64683991/1.647517072/0.071547813/0.072055684
   params=0.01/0/1023 float=y maxiter=1023 bailout=1023 inside=0
   colors=000UEf_8pe1zDhJ8zEUaSfmXsyaKQV<2>SMuSST<2>xWkztxFQQ<2>3LZK6pja5QRL<2>\
@@ -166,7 +165,7 @@ conch              { ; Well, that's what it looks like      Dennis Schmitz
   }
  
 crab               { ; Don't get crabs!                     Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.32518/0.308194/-0.239469/0.235561 params=1000 float=y
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
@@ -186,7 +185,7 @@ donut              { ; Probably won't work right            Dennis Schmitz
   }
  
 fatmand            { ; Obese 'Brot.                         Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=Richard5
+  reset type=formula formulafile=frac_ml.frm formulaname=Richard5
   corners=-2.0/2.0/-1.5/1.5 float=y maxiter=255 inside=0
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
   WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
@@ -198,7 +197,7 @@ fatmand            { ; Obese 'Brot.                         Dennis Schmitz
   }
  
 fly                { ; It's a stretch, but still...         Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=Richard2
+  reset type=formula formulafile=fractint-2.frm formulaname=Richard2
   corners=-2.0/1.999984/-1.499985/1.5 params=1
   colors=0005KI4KI3JJfYI<29>fMQf_K<10>ZyoeXH<10>MJ3fYI<54>FKCfYI<32>iQKUSKTSK
   }
@@ -209,7 +208,7 @@ fracture           { ; Yes, it'fractured                    Dennis Schmitz
   }
  
 halleysin          { ; Standard..                           Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  reset type=formula formulafile=frac_ml.frm formulaname=halleySin
   corners=-2.0/2.0/-1.5/1.5 params=1 float=y maxiter=255 bailout=1023
   inside=0 logmap=yes
   colors=000mKr<5>NFluMs<12>narsLq<18>IC3uLs<37>jvuuLs<34>akZ`lY`lY_lY<49>2OR1\
@@ -217,14 +216,14 @@ halleysin          { ; Standard..                           Dennis Schmitz
   }
  
 hawk               { ; Bird of prey.                        Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.06326915/-0.06045007/-0.00107219/0.00104213 params=1000
   float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=0000WV<40>0z00z01y0<82>z00z00y01<82>00z00z01y<40>0VV
   }
  
 heat               { ; Texas in summer.                     Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.233705/-0.033705/0.119154/0.269154 float=y maxiter=255
   bailout=1023 inside=0 logmap=yes
   colors=000y8O<16>zJCzKBzLBzMAzMA<6>xS6wT5wT5wU5<5>tZ2t_2s_2s`2ra1<16>hm0gn0f\
@@ -234,7 +233,7 @@ heat               { ; Texas in summer.                     Dennis Schmitz
   }
  
 invmand            { ; Standard...                          Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  reset type=formula formulafile=daj1.frm formulaname=InvMandel
   corners=-2.477048/5.328496/-3.31861/2.449489 params=9996 float=y
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=000Pmn<19>5GrPmn<28>e8nPmn<24>PNpOLqPnn<22>UoWOnl<18>5h2Qmn<26>zGfQnn\
@@ -288,7 +287,7 @@ leaky              { ; The outside got in!                  Dennis Schmitz
   }
  
 magnet             { ; Popular name                         Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=halleySin
+  reset type=formula formulafile=frac_ml.frm formulaname=halleySin
   corners=-0.9795202/-0.9354882/-0.0163617/0.0166623 params=1 float=y
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=000mKr<5>NFluMs<12>narsLq<18>IC3uLs<37>jvuuLs<34>akZ`lY`lY_lY<49>2OR1\
@@ -296,14 +295,14 @@ magnet             { ; Popular name                         Dennis Schmitz
   }
  
 morebubb           { ; More bubbles of different type.      Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.061615983/-0.061475028/-0.000624056/-0.00051834 params=1000
   float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=0009SQ<40>90I90IA1J<95>roYroYpmZ<24>C3a<5>aEZ<26>KAuKAuLBt<52>MLc
   }
  
 mudflat            { ; Only a mother could love.            Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.0615403916/-0.06153334388/-0.00059083464/-0.00058554886
   params=1000 float=y maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
@@ -321,7 +320,7 @@ mum                { ; Flower                               Dennis Schmitz
   }
  
 newton2            { ; standard...                          Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=Newton4
+  reset type=formula formulafile=frac_ml.frm formulaname=Newton4
   corners=-2.0/2.0/-1.5/1.5 params=1 float=y maxiter=255 bailout=1023
   inside=0 logmap=yes
   colors=000IY_<11>8AINjg<23>hHAOeg<4>VB_Rmb<5>py0Mkd<9>9i0Nkg<14>`zPujvNih<10\
@@ -399,7 +398,7 @@ space              { ; This either....                      Dennis Schmitz
   }
  
 stack              { ; Balancing act.                       Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=Richard6
+  reset type=formula formulafile=fractint-2.frm formulaname=Richard6
   corners=-9.746966/10.468067/-7.669424/7.491129 float=y maxiter=255
   inside=0
   colors=000AgE<10>9Hd8Eg9Eg<27>d5ff4ef4e<30>e2wNAg4JR<38>Oj_Pk`Oja<8>FYq<2>EM\
@@ -408,7 +407,7 @@ stack              { ; Balancing act.                       Dennis Schmitz
   }
  
 stack1             { ; Different version.                   Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=Richard6
+  reset type=formula formulafile=fractint-2.frm formulaname=Richard6
   corners=-9.746966/10.468067/-7.669424/7.491129 inside=0
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
   WWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<\
@@ -417,7 +416,7 @@ stack1             { ; Different version.                   Dennis Schmitz
   }
  
 sunset             { ; Figure out how I did this...         Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  reset type=formula formulafile=daj1.frm formulaname=InvMandel
   corners=-10.901666/-10.466622/10.410619/10.736896 params=1 maxiter=127
   bailout=1023 inside=0 logmap=yes
   colors=000_2t<19>m0hn0gn0fo0ep0e<11>v3Wv4Wv4Vw5Uw5T<9>zAMzBLzBKzCJzDJzDI<17>\
@@ -426,7 +425,7 @@ sunset             { ; Figure out how I did this...         Dennis Schmitz
   }
  
 sunset2            { ; As a challenge.                      Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=InvMandel
+  reset type=formula formulafile=daj1.frm formulaname=InvMandel
   corners=-10.7661797/-10.7647889/10.5425886/10.5436164 params=1
   maxiter=255 bailout=1023 inside=0 logmap=yes
   colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOOOSSS\
@@ -485,7 +484,7 @@ trisect            { ; I like this too.                     Dennis Schmitz
   }
  
 veins              { ; Yup, veins.                          Dennis Schmitz
-  reset type=formula formulafile=fractint.frm formulaname=MTet
+  reset type=formula formulafile=fractint-2.frm formulaname=MTet
   corners=-0.0775025/-0.0603025/-0.0067882/0.0061118 params=1000 float=y
   maxiter=1023 bailout=1023 inside=0 logmap=yes
   colors=000VW0<42>z00z00y01<82>00z00z01y<82>0z00z01y0<38>UX0

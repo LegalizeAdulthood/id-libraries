@@ -32,7 +32,7 @@ circle_MiniJulia1   {
 
 Easteregg          { ; (C) 1999 P. Kyle  
                      ; Easter Egg
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=-7455.29/-7455.39/0.0001798271/1/44.999
   params=0.1300804/0/2.71828182845905/0.01 float=y maxiter=647
   inside=maxiter outside=real logmode=fly potential=255/334/0
@@ -43,7 +43,7 @@ Easteregg          { ; (C) 1999 P. Kyle
 
 Gremlin            { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Gremlin
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=1359.77/1359.98/8.336354e-005/1/44.999
   params=0.13081/0/2.71828182845905/0.01 float=y maxiter=647
   inside=maxiter outside=real logmode=fly potential=255/334/0
@@ -54,7 +54,7 @@ Gremlin            { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 pleased            { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; pleased
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=1359.77/1359.98/8.336354e-005/1/44.999
   params=0.130789/0/2.71828182845905/0.01 float=y maxiter=647
   inside=maxiter outside=real logmode=fly potential=255/334/0
@@ -65,7 +65,7 @@ pleased            { ; (C) 1999 P. Kyle  Mod of Moire Mask
 
 SonicSpider        { ; (C) 1999 P. Kyle  Mod of Moire Mask
                      ; Sonic Spider
-  reset=1960 type=formula formulafile=frac_ml.frm formulaname=ca10-08
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Ca10-08
   center-mag=2.27374e-012/0.163402/5.035158e-005/1/44.998
   params=0.130901/0/2.71828182845905/0.01 float=y maxiter=647
   inside=maxiter outside=real logmode=fly potential=255/334/0
@@ -90,15 +90,15 @@ Carr3416            { ; A most interesting effect.
   }
 
 ;========================================================================;
-Date: 13 Apr 1999 09:35:19 -0400
-From: Lee Skinner <LeeHSkinner@compuserve.com>
-Subject: (fractint) An interestin
+; Date: 13 Apr 1999 09:35:19 -0400
+; From: Lee Skinner <LeeHSkinner@compuserve.com>
+; Subject: (fractint) An interestin
 
 Carr3416_5         { ;                                       t=  0:28:01.07
                      ; on a P233 at 1600x1200  Apr 13, 1999  07:33:37
                      ; Image Copyright 1999 by Lee H. Skinner ver=1960
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=carr3416 passes=1
+  formulaname=Carr3416 passes=1
   center-mag=-0.00000319254152692/+0.08639684897955899/67.0551/1/180
   params=200/300/400/550 float=y maxiter=647 symmetry=none
   periodicity=0
@@ -111,9 +111,9 @@ Carr3416_5         { ;                                       t=  0:28:01.07
   }
 
 ;========================================================================;
-Date: 15 Apr 1999 14:20:50 GMT
-From: "Andrew Coppin" <KHCM8AC@dmu.ac.uk>
-Subject: (fractint) Benchmark
+; Date: 15 Apr 1999 14:20:50 GMT
+; From: "Andrew Coppin" <KHCM8AC@dmu.ac.uk>
+; Subject: (fractint) Benchmark
 
 ArbTest1           { ; Major M-Set Zoom
                      ; Arbitrary Precision: 17 decimals!
@@ -126,13 +126,13 @@ ArbTest1           { ; Major M-Set Zoom
   }
 
 ;========================================================================;
-Date: 19 Apr 1999 21:42:08 -0500
-From: Bob Margolis <rttyman@wwa.com>
-Subject: (fractint) Par for the course
+; Date: 19 Apr 1999 21:42:08 -0500
+; From: Bob Margolis <rttyman@wwa.com>
+; Subject: (fractint) Par for the course
 
 Pollen             { ; (c) 1999 by Bob Margolis
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=euler2_3way function=tan/log/flip passes=t
+  formulaname=Euler2_3Way function=tan/log/flip passes=t
   center-mag=0.001899/0.00478142/0.4533049/1.0626
   params=24/0/0.083/0/4096/0 float=y maxiter=2095 inside=254
   outside=summ invert=1.31625778434854/0/0 distest=-1/-1/768/768
@@ -142,9 +142,9 @@ Pollen             { ; (c) 1999 by Bob Margolis
   }
 
 ;========================================================================;
-Date: 20 Apr 1999 12:50:10 +0200
-From: "Randall Britten" <randall@is.co.za>
-Subject: RE: (fractint) Julia set params
+; Date: 20 Apr 1999 12:50:10 +0200
+; From: "Randall Britten" <randall@is.co.za>
+; Subject: RE: (fractint) Julia set params
 
 julia_2connectedq  {
   reset=1821 type=julia corners=-2/2/-1.5/1.5
@@ -203,7 +203,7 @@ Stripes            {
 
 Fractal_Dragon_duh { ; (C) Jay Hill, 1999
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=mandelbrotmix4a function=recip
+  formulaname=MandelbrotMix4a function=recip
   center-mag=-0.20964498118971530/-0.04467171806844821/\
   5959.603/1/-62.499
   params=0.06/5/6/-0.05/0/0 float=y maxiter=2560 bailout=25
@@ -221,7 +221,7 @@ Fractal_Dragon_duh { ; (C) Jay Hill, 1999
 
 Star_Comet_        { ; (C) Jay Hill, 1999
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=ok-20 function=sin/cos passes=2
+  formulaname=OK-20 function=sin/cos passes=2
   center-mag=-0.117387/-0.00685679/5.631059/1/19.999
   params=0/0 float=y maxiter=2560
   inside=254 logmap=7 periodicity=0
@@ -235,9 +235,9 @@ Star_Comet_        { ; (C) Jay Hill, 1999
   }
 
 ;========================================================================;
-Date: Mon, 26 Apr 1999 16:17:06 -0400
-From: "Morgen Bell" <morgenb@cobweb.net>
-Subject: [fractal-art] Art? What art? (some parameters)
+; Date: Mon, 26 Apr 1999 16:17:06 -0400
+; From: "Morgen Bell" <morgenb@cobweb.net>
+; Subject: [fractal-art] Art? What art? (some parameters)
 
 Claude Monet       { ; impressionistic, no?
   reset=1960 type=mandel(fn||fn) function=sin/sqr passes=1

@@ -371,7 +371,7 @@ Windmills_of_Chaos { ; Classic FOTD, 24-Apr-01 Rating (6)
 OOOF               { ; Classic FOTD, 25-Apr-01 Rating (3)
                      ; time=0:00:54.58--SF5 on a p200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=multirot-xz-yw passes=b
+  formulaname=multirot-XZ-YW passes=b
   center-mag=-0.00000000002107355/-0.000000000029447\
   31/8.638531e+009/14.687/-180/35.229
   params=45/45/-1.4041038040019/0.00422258114480\
@@ -447,7 +447,7 @@ ObjectAroundMidget { ; Classic FOTD, 27-Apr-01 Rating (5)
 
 Semi-Chaos         { ; Classic FOTD, 28-Apr-01 Rating (4)
                      ; time=0:13:37.34--SF5 on a P200
-  reset=2001 type=formula formulafile=fotdv5.par
+  reset=2001 type=formula formulafile=fotdv5.frm
   formulaname=MandelbrotBC passes=1
   center-mag=-0.501937/-0.59952/582.5136/1/49.999
   params=1.618034/0/122/0 float=y maxiter=30000
@@ -523,7 +523,7 @@ A_Ghostly_Spectre  { ; Classic FOTD, 30-Apr-01 Rating (4)
 DecorativeMinibrot { ; Classic FOTD, 01-May-01 Rating (6)
                      ; time=0:01:52.60--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotbc1 function=floor passes=1
+  formulaname=MandelbrotBC1 function=floor passes=1
   center-mag=-0.73763/0.15494/2498.371/1/-124.999
   params=1.732050807569/0/28.4/0 float=y maxiter=1000
   inside=0 logmap=36 periodicity=10
@@ -548,7 +548,7 @@ DecorativeMinibrot { ; Classic FOTD, 01-May-01 Rating (6)
 Heads_Up_Mr_Midget { ; Classic FOTD, 02-May-01 Rating (7)
                      ; time=0:19:07.17--SF5 on a p200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotbc1 function=ceil passes=1
+  formulaname=MandelbrotBC1 function=ceil passes=1
   center-mag=+0.73481980084589390/+0.136649099636705\
   70/1.795448e+007/1/-172.499
   params=1.73205080807569/0/0/0 float=y maxiter=25000
@@ -622,7 +622,7 @@ Fractal_NumberNine { ; Classic FOTD, 04-May-01 Rating (3)
 Golden_Terraces    { ; Classic FOTD, 05-May-01 Rating (6)
                      ; time=0:06:27.34--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=-0.213080088333/0.2385427746923/174167.\
   4/1/59.999 params=1/1/1/5/0/0 float=y maxiter=1200
   inside=0 outside=tdis periodicity=10
@@ -823,7 +823,7 @@ Fritzles_in_Sight  { ; Classic FOTD, 12-May-01 Rating (5)
 Fritzleland_Midget { ; Classic FOTD, 13-May-01 Rating (5)
                      ; time=0:11:10.09--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotbc1 function=floor passes=b
+  formulaname=MandelbrotBC1 function=floor passes=b
   center-mag=+0.73593566678892110/-0.183549714634885\
   30/9.894864e+008 params=1.5/0/-81219/0 float=y
   maxiter=7200 inside=255 logmap=382 periodicity=10
@@ -1566,7 +1566,7 @@ Fractal_Shortfall  { ; Classic FOTD, 10-Jun-01 Rating (6)
 Pentagonal_Midget  { ; Classic FOTD, 11-Jun-01 Rating (6)
                      ; time=0:15:19.62--SF5 on a p200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotbc1 function=floor
+  formulaname=MandelbrotBC1 function=floor
   center-mag=-0.48705650547436810/+3.374397806780400\
   00/250175.2/1/-124.998 params=1.414213562373/0/0/0
   float=y maxiter=9000 inside=0
@@ -1618,7 +1618,7 @@ FirecrackerFractal { ; Classic FOTD, 12-Jun-01 Rating (7)
 Cerberus           { ; Classic FOTD, 13-Jun-01 Rating (7)
                      ; time=0:08:28.77--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandnewt04 passes=1
+  formulaname=MandNewt04 passes=1
   center-mag=0.221881/2.99156/2.308161/1/-82.5
   params=-2.7/0.32/-2.8/-2.21/0.35/-2.04 float=y
   maxiter=250 inside=bof60 logmap=yes periodicity=0
@@ -1919,7 +1919,7 @@ The_Wheel          { ; Classic FOTD, 24-Jun-01 Rating (6)
 HangingBy_a_Thread { ; Classic FOTD, 25-Jun-01 Rating (7)
                      ; time=0:07:15.72--SF5 on a p200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix4 function=recip passes=1
+  formulaname=MandelbrotMix4 function=recip passes=1
   center-mag=+1532.944991356117/+420.187069800846/91\
   030.88/1/137.5 params=1/-0.9/10/-10.5/1.6/0 float=y
   maxiter=1250 inside=255 logmap=113 periodicity=10
@@ -3255,7 +3255,7 @@ New_Fractal_Stuff  { ; Classic FOTD, 17-Aug-01 Rating (6)
 ZiggingAndZagging  { ; Classic FOTD, 18-Aug-01 Rating (6)
                      ; time=0:02:06.28--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotbc1 function=floor passes=1
+  formulaname=MandelbrotBC1 function=floor passes=1
   center-mag=-1.39819790248369700/-0.419788473585744\
   70/2.36408e+007/1/-92.5 params=2.15/0/1/0 float=y
   maxiter=2000 inside=0 logmap=48
@@ -3405,7 +3405,7 @@ Totally_Illegal    { ; Classic FOTD, 23-Aug-01 Rating (8)
 Also_Illegal       { ; Classic FOTD, 24-Aug-01 Rating (8)
                      ; time=0:05:09.23--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix4 function=ident passes=b
+  formulaname=MandelbrotMix4 function=ident passes=b
   center-mag=+0.53136285893222390/0/2.291594e+012/1
   params=1/3.5/-0.425/4.5/0/0 float=y maxiter=1700
   inside=255 logmap=288 symmetry=xaxis
@@ -5620,7 +5620,7 @@ TheWineDarkBasin { ; FOTD -- November 21, 2001 (Rating 7)
 The_Lima_Beans { ; FOTD -- November 22, 2001 (Rating 7)
  ; time=0:04:37.54--SF5 on a P200
   reset=2002 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix4 function=recip passes=b
+  formulaname=MandelbrotMix4 function=recip passes=b
   center-mag=-828.687713606/-1696.177811432/46.53046\
   /1/-80/9.89826970387852612e-012 params=-60/-1.3/\
   -120/-3.1/0/800 float=y maxiter=1250 inside=255
@@ -6758,7 +6758,7 @@ A_Flock_of_Angels { ; FOTD -- January 08, 2002 (Rating 8)
 Mad_Dance { ; FOTD -- January 09, 2002 (Rating 7)
  ; time=0:03:47.07--SF5 on a P200
   reset=2002 type=formula formulafile=fotdv5.frm
-  formulaname=hypermandelbrot passes=b
+  formulaname=HyperMandelbrot passes=b
   center-mag=+0.1014957900912339/+0.007786208818525/\
   120.4113/1/170/6.39974184757363673e-014 params=0.7\
   071/0.7071/10/0/1e-013/0 float=y maxiter=12500
@@ -6888,7 +6888,7 @@ Slimed { ; FOTD -- January 13, 2002 (Rating 5)
 Elliptic_Dagger { ; FOTD -- January 14, 2002 (Rating 4)
  ; time=0:00:21.70--SF5 on a P200
   reset=2002 type=formula formulafile=fotdv5.frm
-  formulaname=multirot-xz-yw-new passes=b
+  formulaname=multirot-XZ-YW-new passes=b
   center-mag=+0.00000000425235697/-0.000000077765461\
   31/9631454/0.8318/64.5084990131079223/-23.71969529\
   41318102 params=0/90/2/0/-1.99909595/0/-1.99909595\
@@ -7170,7 +7170,7 @@ A_New_Angle { ; FOTD -- January 24, 2002 (Rating 4)
 The-Fly { ; FOTD -- January 25, 2002 (Rating 6)
  ; time=0:00:53.60--SF5 on a P200
   reset=2002 type=formula formulafile=fotdv5.frm
-  formulaname=multirot-XY-ZW-VE function=flip/ident
+  formulaname=Multirot-XY-ZW-VE function=flip/ident
   center-mag=0/0/1.449372e+013/0.1452/-60.8632988255\
   442058/-75.7841297145378263 params=0/90/2/0/-1.999\
   99911758755/0/-1.99999911758755/0/2.001/0 float=y
@@ -7502,7 +7502,7 @@ Mandelbrot-03 { ; FOTD -- February 11, 2002 (Rating 5)
 StainedGlassWindow { ; FOTD -- February 13, 2002 (Rating 9)
  ; time=0:00:11.27--SF5 on a P200
   reset=2002 type=formula formulafile=fotdv5.frm
-  formulaname=Mytest08c function=cotan passes=1
+  formulaname=MyTest08c function=cotan passes=1
   center-mag=0/1.55431e-015/0.6577505 params=2/0/0/1\
   /0/2 float=y maxiter=500 bailout=100 inside=bof60
   logmap=yes symmetry=xyaxis periodicity=10
@@ -7660,7 +7660,7 @@ A_Boring_Lesson { ; FOTD -- February 28, 2002 (Rating 2)
 Second_Chance-01 { ; FOTD -- March 03, 2002 (Rating 6)
  ; time=0:23:24.22--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix7 passes=1 center-mag=+5.\
+  formulaname=MandelbrotMix7 passes=1 center-mag=+5.\
   743342365806605/-3.40178543411641/195266.6/1/-147.5
   params=10/0.5/-10/0.5001/1150/0 float=y
   maxiter=2800 bailout=25 inside=0 logmap=412
@@ -7889,7 +7889,7 @@ Totally_Chaotic { ; FOTD -- March 28, 2002 (Rating 4)
 Totally_Unexpected { ; FOTD -- March 31, 2002 (Rating 7)
  ; time=0:34:27.62--SF5 on a P200
   reset=2001 type=formula formulafile=fotdv5.frm
-  formulaname=mandelbrotmix4 function=ident passes=1
+  formulaname=MandelbrotMix4 function=ident passes=1
   center-mag=-12.28736645188386000/+4.17419235654376\
   100/2.132333e+007/1/107.500992798218562/1.59569265\
   622064305e-005 params=-1/1/10/0.1/0/-50 float=y

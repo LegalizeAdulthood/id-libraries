@@ -22,3 +22,15 @@ Richard1 (XYAXIS) {; Jm Collard-Richard
    sq=z*z, z=(sq*sin(sq)+sq)+pixel
     |z|<=50
   }
+LeeMandel2 (XYAXIS) {; Kevin Lee
+  z=Pixel:
+  c=sqr(pixel)/z, c=z+c, z=sqr(c*pixel)
+  |z|<4
+  ;SOURCE: fractint.frm
+}
+LeeMandel3 (XAXIS) {; Kevin Lee
+  z=Pixel, c=Pixel-sqr(z):
+  c=Pixel+c/z, z=c-z*pixel
+  |z|<4
+  ;SOURCE: fractint.frm
+}

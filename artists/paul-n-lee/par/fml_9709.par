@@ -238,7 +238,7 @@ dmj-Mand-Hyp-Ang   {
 
 dmj-Nova-Cir-Dst-I {
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-nova-cir-dst-i passes=2
+  formulaname=dmj-Nova-Cir-Dst-I passes=2
   center-mag=+0.00164425966228871/+0.50513275596330250/1951.6
   params=-1/0/0/0/4096/2 float=y maxiter=1000 inside=0 outside=real
   periodicity=0
@@ -337,7 +337,7 @@ plain              {
 
 dmj1               {
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-mand-smooth center-mag=-0.5/0/0.5
+  formulaname=dmj-Mand-Smooth center-mag=-0.5/0/0.5
   params=0/0/0/0/1/128 float=y maxiter=256 inside=0 periodicity=0
   colors=000CGS<4>9Ne<7>eFQbJPZNOOWNCdM7fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mu\
   x<3>zaY<13>T3pQ0rQ4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<12>ecO<8>8MY<1\
@@ -357,7 +357,7 @@ smooth1            {
 
 dmj2               {
   reset=1960 type=formula formulafile=frac_ml.frm
-  formulaname=dmj-mand-smooth
+  formulaname=dmj-Mand-Smooth
   center-mag=+0.25990713363414080/+0.00160746266390759/95756
   params=0/0/0/0/10/128 float=y maxiter=1000 inside=0 periodicity=0
   colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
@@ -365,7 +365,7 @@ dmj2               {
   }
 
 smooth2            {
-  reset=1960 type=formula formulafile=fractint.frm formulaname=smooth_man
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=smooth_man
   center-mag=+0.25990713363414080/+0.00160746266390759/95756
   params=128/10 float=y maxiter=1000 inside=0 periodicity=0
   colors=000<40>x00z00z00<40>zy0zz0zz1<39>zzxzzzzzz<40>1zz0zz0yz<39>02z00z\
@@ -393,7 +393,7 @@ test97c               {
 
 TendrilP           { ; Both mini figure and apparent Mini Mandelbrot
                      ; P90 640X480 time  0:00:47.29
-  reset=1960 type=formula formulafile=_p.frm formulaname=Prop
+  reset=1960 type=formula formulafile=frac_ml.frm formulaname=Prop
   center-mag=1.13084/0.161267/25.06297/0.9998
   }
 
