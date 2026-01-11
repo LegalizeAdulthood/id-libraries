@@ -28,7 +28,7 @@ Hand               { ; Alien hand trapped in a web
 
 Sunset             { ; Sunset over the bay
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\IMLAB\FRACTINT\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004A function=cosxx/cosxx
   corners=0.0015547391/-0.118356309/0.477620325/0.374734926/-0.090998292/0\
   .354216439 params=2 float=y maxiter=256 inside=zmag
@@ -44,7 +44,7 @@ Sunset             { ; Sunset over the bay
 
 Meltdown           { ; Mandelbrot Meltdown
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\IMLAB\FRACTINT\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004A function=sqr/tan passes=t
   corners=-3.205567/2.202433/-1.575739/2.480261 params=0.5/0.5/1
   float=y inside=bof60 logmap=yes
@@ -54,7 +54,7 @@ Meltdown           { ; Mandelbrot Meltdown
 
 ArtSchool          { ; Watch them paint before your eyes
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\IMLAB\FRACTINT\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004A function=ident/tan passes=b
   corners=-4.001955/-0.001955034/-1.5/1.5
   params=0.29999999999999999/-1/1 float=y maxiter=1024 inside=zmag
@@ -65,7 +65,7 @@ ArtSchool          { ; Watch them paint before your eyes
 
 Amazon             { ; In the jungle
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\IMLAB\FRACTINT\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004D function=sin
   corners=-1.72335498/-1.64015483/0.559151216/0.621551252
   params=3.14159265358979 float=y inside=epsiloncross biomorph=10
@@ -78,7 +78,7 @@ Amazon             { ; In the jungle
 
 Monster            { ; Sea monster
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004B passes=t
   corners=0.893827129/0.973613113/-1.6578524/-1.7642337/0.973613113/-1.764\
   2337 params=1 float=y maxiter=256 inside=bof60
@@ -88,8 +88,8 @@ Monster            { ; Sea monster
 
 Dragon             { ; Not your ordinary fractal dragon
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
-  formulaname=reb004c
+  reset=1800 type=formula formulafile=Reb004.frm
+  formulaname=REB004C
   corners=-4.809504/2.873952/5.04727/-5.197338/2.873952/-5.197338
   params=1/0/0.96999999999999997/-1.8 float=y maxiter=256 inside=0
   colors=313321320310542531520753741730974962940B85B72B50DA6D83D60FB7F93F7\
@@ -107,8 +107,8 @@ Dragon             { ; Not your ordinary fractal dragon
 
 Fountain           { ; Not necessarily water
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
-  formulaname=reb004e function=tan/sqr passes=1
+  reset=1800 type=formula formulafile=Reb004.frm
+  formulaname=REB004E function=tan/sqr passes=1
   corners=-0.1311144/-1.511114/-0.92/0.92/-1.511114/0.92 params=2/0/4
   float=y maxiter=5000 inside=epsiloncross
   colors=000EDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<5>8Xc7Ta9Q`<5>L4R<8>VHI<7\
@@ -120,8 +120,8 @@ Fountain           { ; Not necessarily water
 
 Connection         { ; Fiber optic ultachip under high magnification
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
-  formulaname=reb004f function=cos
+  reset=1800 type=formula formulafile=Reb004.frm
+  formulaname=REB004F function=cos
   corners=-5.647062/-1.391062/-1.596/1.596 params=0.5 float=y
   maxiter=1024 inside=epsiloncross potential=256/300/500
   colors=0002DO<10>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<27>256\
@@ -130,7 +130,7 @@ Connection         { ; Fiber optic ultachip under high magnification
 
 Amazon2            { ; Julia's view of the jungle
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004F function=sin corners=-2/2/-1.5/1.5
   params=3.14159265358979/0/-1.7/0.59999999999999998 float=y
   inside=epsiloncross biomorph=10
@@ -143,7 +143,7 @@ Amazon2            { ; Julia's view of the jungle
 
 Lagoon             { ; Jungle lagoon as viewed from the trees
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004G function=sinh/sqr passes=1
   corners=-2.062454/-1.518464/-11.9876/-13.22127/-1.518464/-13.22127
   params=0.90000000000000002/0/-0.38/1.1499999999999999 float=y
@@ -163,7 +163,7 @@ Lagoon             { ; Jungle lagoon as viewed from the trees
 
 Aluvium            { ; Excavation at the cliff's edge
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004H function=sinh
   corners=-1.50464461/-1.35292327/0.9623035/0.820175589/-1.38180353/0.7985\
   15392 float=y maxiter=1024 inside=0
@@ -173,7 +173,7 @@ Aluvium            { ; Excavation at the cliff's edge
 
 Seashell           { ; Sea shells on the beach
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004I function=sinh corners=-8/8/-6/6
   params=0.82999999999999996/0.46999999999999997 float=y maxiter=1024
   inside=0 outside=mult
@@ -185,7 +185,7 @@ Seashell           { ; Sea shells on the beach
 
 Maw                { ; I think its hungry
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004J function=ident
   corners=-1.682432/1.682432/-2.518085/0.005563244 float=y
   maxiter=1024 inside=0
@@ -196,7 +196,7 @@ Maw                { ; I think its hungry
 
 Fish               { ; Translucent fish after feeding
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004K function=ident
   corners=-1.085398/1.226206/2.778357/-1.221643/1.226206/-1.221643
   params=0.25/1.3500000000000001 float=y maxiter=1024 inside=bof60
@@ -207,7 +207,7 @@ Fish               { ; Translucent fish after feeding
 
 Robot              { ; R2D2's cousin
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\IMLAB\FRACTINT\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004L function=sinh corners=-4/4/-3/3 params=-1/0/-2
   float=y maxiter=256 inside=0 decomp=256
   colors=000<13>GKLHLNJMOKOP<6>RXZSY_TZaU_bVacWbd<10>dlpemqenq<5>irvirvjsw\
@@ -220,8 +220,8 @@ Robot              { ; R2D2's cousin
 
 Spring             { ; Springtime in fairie land
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
-  formulaname=reb004l function=recip
+  reset=1800 type=formula formulafile=Reb004.frm
+  formulaname=REB004L function=recip
   corners=0.82725943/1.3624564/-0.0838250143/-0.54303224/1.2403498/-0.6346\
   1217 params=3/3 float=y maxiter=256 inside=0
   colors=UVzNU0<3>RU0ST0TT0US0VS0<4>WQ1WP1VP1<2>UM2UM2TL2SK3<12>CA6B96B97<\
@@ -234,8 +234,8 @@ Spring             { ; Springtime in fairie land
   }
 
 Jaws               { ; Ron Barnett, 1993
-  reset=1810 type=formula formulafile=\imlab\fractint\reb004.frm
-  formulaname=reb004m function=cos/tanh
+  reset=1810 type=formula formulafile=Reb004.frm
+  formulaname=REB004M function=cos/tanh
   corners=-3.125898/0.3888503/-1.296336/-1.4885401/-1.768331/-3.106426
   params=0/0.040000000000000001 float=y maxiter=256 inside=0
   colors=0000Tw<29>332420431<29>RZuS`wS_v<29>554432443<29>8gu9iw9hv<27>256\
@@ -244,7 +244,7 @@ Jaws               { ; Ron Barnett, 1993
 
 Violet             { ; Violet cellophane on a hot plate
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004M function=cos/cos corners=-2/2/-1.5/1.5 float=y
   maxiter=256 inside=0 potential=256/300/500
   colors=000Ucz<102>NAUNAUNAUNAUNAUNAT<145>000
@@ -252,7 +252,7 @@ Violet             { ; Violet cellophane on a hot plate
 
 Hive               { ; Termite colony
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004M function=cos/cos
   corners=-2.4316999/-0.33662856/0.49940458/1.4484442/-2.1330132/0.1011556\
   9 float=y maxiter=256 inside=0 potential=256/300/500
@@ -262,7 +262,7 @@ Hive               { ; Termite colony
 
 Blueness           { ; Ripples of blue
                      ; Ron Barnett, 1993
-  reset=1800 type=formula formulafile=\imlab\fractint\reb004.frm
+  reset=1800 type=formula formulafile=Reb004.frm
   formulaname=REB004M function=cos/cos
   corners=-0.413859526/-0.574094492/0.664761358/0.828559982/-0.550167454/0\
   .846505261 float=y maxiter=256 inside=0 potential=256/300/500

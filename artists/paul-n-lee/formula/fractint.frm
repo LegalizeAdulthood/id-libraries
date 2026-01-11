@@ -183,3 +183,48 @@ J_TchebychevS4 {
    z = c*(z*z*(z*z-3)+1)
     |z|<100
   }
+Richard5 (XAXIS) {; Jm Collard-Richard
+  z = pixel:
+   z=sin(z*sinh(z))+pixel
+    |z|<=50
+  }
+halleySin (XYAXIS) [float=y] {; Chris Green. Halley's formula applied to sin(x)=0.
+  ; Use floating point.
+  ; P1 real = 0.1 will create the picture from page 281 of Pickover's book.
+  z=pixel:
+   s=sin(z), c=cos(z)
+   z=z-p1*(s/(c-(s*s)/(c+c)))
+    0.0001 <= |s|
+  }
+AltJTet (XAXIS) {; Julia form 2 of the Tetration formula --Lee Skinner
+  z = P1:
+   z = (pixel ^ z) + P1
+    |z| <= (P2 + 3)
+  }
+F'M-SetInNewtonA(XAXIS)[float=y] {; use float=yes
+  ; jon horner 100112,1700, 12 feb 93
+  z = 0,  c = fn1(pixel),  cminusone = c-1:
+   oldz = z, nm = p1*c-2*z*cminusone, dn = p1*(3*z*z+cminusone)
+   z = nm/dn+2*z/p1
+    |(z-oldz)|>=|0.01|
+  }
+ULI_5 {
+  z = Pixel, c = fn1(pixel):
+   z = fn2(1/(z+c))*fn3(z+c)
+    |z| <= p1
+  }
+Fzpfncoh {; Lee Skinner
+  z = pixel, f = 1./cosh(pixel):
+   z = fn1(z) + f
+    |z| <= 50
+  }
+Fzppfnse {; Lee Skinner
+  z = pixel, f = 1./sin(pixel):
+   z = fn1(z) + f
+    |z| <= 50
+  }
+Fzpfnseh {; Lee Skinner
+  z = pixel, f = 1./sinh(pixel):
+   z = fn1(z) + f
+    |z| <= 50
+  }

@@ -1,5 +1,5 @@
 RCL_Pick1           {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick1
   corners=2.008874/-3.811126/-3.980167/3.779833/-3.811126/3.779833 float=y
   inside=0
@@ -8,7 +8,7 @@ RCL_Pick1           {
   }
 
 RCL_Quaternion_J   {
-  reset type=formula formulafile=rcl.frm formulaname=rcl_quaternion_j
+  reset type=formula formulafile=rcl.frm formulaname=RCL_Quaternion_J
   corners=-2.0/2.0/-1.5/1.5 params=1e-007/1e-007/0.347/0.0075 float=y
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -60,7 +60,7 @@ RCL_Cross          {
   }
 
 RCL_Cross1         {
-  reset type=formula formulafile=rcl.frm formulaname=rcl_cross1
+  reset type=formula formulafile=rcl.frm formulaname=RCL_Cross1
   function=sin/sqr corners=-3.9199/4.0801/-4.041736/1.958264 params=0/1
   float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -76,7 +76,7 @@ RCL_Cross2         {
   }
 
 RCL_Logistic_1     {
-  reset type=formula formulafile=rcl.frm formulaname=RCL_Logistic
+  reset type=formula formulafile=rcl.frm formulaname=RCL_Logistic_1
   corners=-0.327351/1.368639/-0.625979/0.646018 params=3/0.1 inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
@@ -97,7 +97,7 @@ RCL_Pick10         {
   }
 
 RCL_Pick2_M        {
-  reset type=formula formulafile=rcl.frm formulaname=RCL_Pick2
+  reset type=formula formulafile=rcl.frm formulaname=RCL_Pick2_M
   corners=-2.6408/1.359196/-1.499996/1.5 float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
@@ -111,7 +111,7 @@ RCL_Pick11         {
   }
 
 RCL_Pick3          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick3 corners=-2.0/2.0/-1.5/1.5 float=y maxiter=1000
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -121,7 +121,7 @@ RCL_Pick3          {
   }
 
 RCL_Pick4          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick4 corners=-2.0/2.0/-1.5/1.5 float=y maxiter=1000
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -131,7 +131,7 @@ RCL_Pick4          {
   }
 
 RCL_Pick5          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick5 corners=-2.0/2.0/-1.5/1.5 float=y maxiter=1000
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -141,28 +141,28 @@ RCL_Pick5          {
   }
 
 RCL_Pick6          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick6 corners=-2.0/2.0/-1.5/1.5 float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
   }
 
 RCL_Pick7          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick7 corners=-2.0/2.0/-1.5/1.5 float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
   }
 
 RCL_Pick8          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick8 corners=-2.0/2.0/-1.5/1.5 float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
   }
 
 RCL_Pick9          {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick9 corners=-11.951189/7.048811/-7.5/7.5 float=y
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -170,7 +170,7 @@ RCL_Pick9          {
   }
 
 RCL_Pick12_1       {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick12 corners=-1.5194/2.480597/-1.499996/1.5 params=0/1
   float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -178,7 +178,7 @@ RCL_Pick12_1       {
   }
 
 RCL_Pick12_2       {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick12 corners=-1.5194/2.480597/-1.499996/1.5
   params=0/0.1 float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -186,15 +186,15 @@ RCL_Pick12_2       {
   }
 
 RCL_Pick2_J        {
-  reset type=formula formulafile=\dosapps\fractint\rcl.frm
-  formulaname=rcl_pick13 corners=-2.56/2.56/-1.92/1.92 params=0.1/0.1
+  reset type=formula formulafile=rcl.frm
+  formulaname=RCL_Pick13 corners=-2.56/2.56/-1.92/1.92 params=0.1/0.1
   float=y inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
   }
 
 RCL_Pick13_A       {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick13 corners=-2.0/2.0/-1.5/1.5 params=3 float=y
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
@@ -202,11 +202,9 @@ RCL_Pick13_A       {
   }
 
 RCL_Pick13_B       {
-  reset type=formula formulafile=\DOSAPPS\FRACTINT\rcl.frm
+  reset type=formula formulafile=rcl.frm
   formulaname=RCL_Pick13 corners=-2.0/2.0/-1.5/1.5 params=2 float=y
   inside=0
   colors=00000j0j0jj0j00j0j0jjkkkkrkdmwCCC_C_<9>sCs<20>ECsCCsCEs<19>CqsCssCsq<\
   19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<17>sIC
   }
-
-
