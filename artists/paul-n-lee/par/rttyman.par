@@ -1,0 +1,67 @@
+From - Thu Jan  2 11:26:36 1997
+Path: unixg.ubc.ca!info.ucla.edu!newsfeed.internetmci.com!news.wwa.com!news
+From: rttyman@wwa.com
+Newsgroups: sci.fractals
+Subject: Some params for the NG
+Date: 29 Dec 1996 23:38:56 GMT
+Organization: WorldWide Access (tm) - Chicagoland Internet Services (http://www.wwa.com)
+Lines: 55
+Message-ID: <5a6veg$q03@kirin.wwa.com>
+NNTP-Posting-Host: pool10-001.wwa.com
+X-Newsreader: SPRY News 3.10 (SPRY, Inc.)
+
+For the past several days, I've been working with the Julia sets of z^3+c within FractInt. Here are 
+some parameters of areas I found interesting. Hope you find them interesting, too! 8-)
+
+Bob Margolis
+rttyman@wwa.com
+
+zcubjul1           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=0.000868595/-0.00516443/24.91239
+  params=0.2336761992842642/0.8751967737015386/3/0 float=y
+  maxiter=6500
+  }
+
+zcubjul2           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=-0.00007312208475585/-0.00014030516807909/204.1999
+  params=0.2336761992842642/0.8751967737015386/3/0 float=y
+  maxiter=8000
+  }
+
+zcubjul3           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=-0.02508093077292792/+0.00739588357768363/204.1999
+  params=0.2336761992842642/0.8751967737015386/3/0 float=y
+  maxiter=8000
+  }
+
+zcubjul4           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=-0.02578046196944699/+0.00757717253835606/30029.4
+  params=0.2336761992842642/0.8751967737015386/3/0 float=y
+  maxiter=10000 bailout=50000
+  }
+
+zcubjul5           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=-0.00068477366255048/-0.00000000000000075/64.10256
+  params=-0.4989118790351064/0.6406276899964294/3/0 float=y
+  maxiter=5000 bailout=50000 bailoutest=manr periodicity=0
+  }
+
+zcubjul6           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=-0.41383356938039160/+0.31119364020942450/633.176
+  params=-0.07021454467140938/-1.189773121313479/3/0 float=y
+  maxiter=5000 bailout=50000 bailoutest=imag
+  }
+
+zcubjul7           { 
+  reset=1950 type=julzpower passes=1
+  center-mag=+0.11951020576119980/-0.02605428962111778/672.5137/1/47.5
+  params=-0.512370275228696/-0.4665568254697892/3/0 float=y
+  maxiter=2500 bailout=50000 bailoutest=imag
+  }
+

@@ -1,0 +1,61 @@
+comment { ; narrative copyright Kerry Mitchell 11feb98
+
+Root
+
+Complex numbers, of which the real numbers are a subset, all have
+two square roots.  That is, for a given complex number a, there
+are two numbers, b1 and b2, such that b1*b1 (or b2*b2) = a.  It
+so happens that b2 = -b1, since -1 * -1 = 1.  One of these numbers
+(typically the one returned by the function sqrt(a)) is termed
+the principal square root of a.  For example, if a=9, then the
+square roots are 3 and -3.  3 is the principal square root.
+
+For the Mandelbrot and Julia sets, this concept is implemented by
+expanding the standard iteration loop.  Instead of:
+
+z_new = z_old * z_old + c, use
+
+w = z_old * z_old
+z_new = w + c.
+
+The question is then, is z_old the principal root of w?  This can
+be determined by assuming that sqrt(w) returns the principal root.
+Then, z_old is compared with sqrt(w) and -sqrt(w), to see which
+root of w z_old was.
+
+For the root (_man and _jul) formulas, this is performed on the
+last iteration.  The yes/no answer is converted to a binary coloring
+of the image.  The rootcount formulas make this determination for
+every iteration, incrementing a counter each time z_old was the
+principal root.  At the end, the counter is normalized by the total
+number of iterations, then scaled into an angle for coloring using
+the decomposition method.
+
+}
+
+rootcount-sample { ; copyright Kerry Mitchell 09feb98
+  reset=1960 type=formula formulafile=root.frm
+  formulaname=rootcount_jul passes=1 center-mag=-0.200\
+  555/0.472607/10 params=-0.01742899818791213/0.662179\
+  6505893933/1e+030/0/0/5 float=y maxiter=2000 inside=0
+  decomp=256 periodicity=0 colors=006108<4>30F40G40H50\
+  I50I61J<8>A2QB2QB2RC2RC2S<5>F4VG4WG4WH4W<12>N8aO9bO9\
+  bPAbPAc<20>ZKj_Kk_Lk`Mk<13>gUpgVphWphXpiXq<33>zyzzzz\
+  zyz<31>jZqiYqiXqhXphWpgVp<25>WGhVFgVFgUEfUEf<18>K6_K\
+  6ZJ6ZJ6YI5Y<3>G4WG4WF4VF3U<14>71M71L61K61J50I<3>30F3\
+  0E20C20B<2>006000 cyclerange=0/255
+  }
+
+root-sample { ; copyright Kerry Mitchell 09feb98
+  reset=1960 type=formula formulafile=root.frm
+  formulaname=root_jul passes=1 center-mag=-0.200555/0\
+  .472607/10 params=-0.01742899818791213/0.66217965058\
+  93933/3/0 float=y maxiter=2000 inside=0 decomp=256
+  periodicity=0 colors=000CGS<4>9Ne<7>eFQbJPZNOOWNCdM7\
+  fN1iP<3>5Vc<9>NnZPqYRqY<6>kqS<4>mux<3>zaY<13>T3pQ0rQ\
+  4r<13>Wyw<2>GJ1<6>x2N<2>pBmtRWxfE<9>SD1<12>ecO<5>KSU\
+  zzzCOW8MY<14>4pJ<11>EHC<4>si5<10>bka<4>0jv<2>TEY<4>c\
+  oOfwLfuN<13>hUp<4>Fjo<13>8T67R29T4<7>ShOVjRZeS<5>x7_\
+  <7>ime<8>Wge cyclerange=0/255
+  }
+
