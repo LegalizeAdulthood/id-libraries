@@ -1,0 +1,14 @@
+Vortex-esque       { ; Garth <gchivers@kwic.com>
+                     ; a.b.p.f.  Thu, 17 Apr 2003 09:49:04
+  reset=2000 type=volterra-lotka passes=3
+  center-mag=+1.25078369905956000/+1.11934673366834200/1.40647
+  params=0.71111/0.667 float=y maxiter=200 inside=zmag
+  }
+
+RainbowLava        { ; Garth <gchivers@kwic.com>
+                     ; a.b.p.f.  Sat, 19 Apr 2003 11:28:53
+  reset=2000 type=manfn+zsqrd function=sin passes=1
+  center-mag=-0.82409981420312810/+0.14401285901518910/18.87908
+  params=0/0 float=y maxiter=10000 bailoutest=and inside=0
+  }
+

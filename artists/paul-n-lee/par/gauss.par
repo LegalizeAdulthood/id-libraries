@@ -1,0 +1,86 @@
+comment { ; narrative copyright Kerry Mitchell 20jan98
+
+Gauss
+
+In the Fractint method bof60, the question of interest is how close
+the orbit comes to the origin (0+0i).  The origin is one of an infinity
+of "Gaussian integers."  These are complex numbers such that both the
+real and imaginary parts are integers.  Examples are:  (0,0), (-2,3),
+(17,-5), and (1000000,123456789).  The gaussian scheme is concerned with
+how close the orbit comes to a Gaussian integer.
+
+To find the gaussian integer which the orbit most closely approaches,
+the built-in function round() is used.  Round(zc) returns a complex
+number whose components are the rounded components of zc.  This is a
+Gaussian integer.  The distance from zc to round(zc) is simply the
+magnitude of zc - round(zc).  The gaussian method tracks this distance
+and records the value of zc for which the distance is the smallest.
+This value of zc is zmin.
+
+In the gaussintt methods (Julia and Mandelbrot variations), simply plots
+the polar angle of zmin, by assigning zmin to z and using the decomp
+coloring.  Since zmin can occur at any point in the orbit, there's no
+clear connection between the pixel value and the resulting color.
+However, nearby points can often have similar orbits, so the spots of
+constant color (polar angle) can have a variety of sizes.  Similar
+results are obtained with the gaussintr methods.  Here, the log of the
+magnitude of zmin is used as the polar angle for decomposition.
+
+For particular combinations of parameter c and initial zc, the orbit
+may be all Gaussian integers, for example, starting with zc=1 and c =
+(0,1).  For other combinations of zc and c, such as zc=0 and c=pi,
+the orbit will never be an integer.  Thus, it is reasonable to assume
+that some orbits will tend to be closer to integers than others.  This
+is illustrated with the gaussinttot methods.  A running sum of the
+distances, r, is kept for all iterations in the orbit.  The mean
+distance is then determined, and this is scaled into the decomposition
+angle.  The result is a grid-like pattern superimposed on the basic
+fractal structure.
+
+}
+
+mushroom-cloud { ; copyright Kerry Mitchell 20jan98
+;
+; sample parameter file for gaussintt_jul
+;
+  reset=1960 type=formula formulafile=gauss.frm
+  periodicity=0 formulaname=gaussintt_jul passes=1
+  center-mag=0/0.75/1.333333 params=0.3/0/1e12/0 float=y
+  maxiter=256 inside=0 decomp=256 colors=000<20>z00<19>\
+  zv0zy0zz1<20>zzz<20>0zz<20>00z<19>004001100<20>z00<20>\
+  zz0<19>zzwzzzxzz<18>4zz1zz0yz<20>00z<20>000 cyclerange=0/255
+  }
+
+nautilus { ; copyright Kerry Mitchell 20jan98
+;
+; sample parameter file for gaussinttot_jul
+;
+  reset=1960 type=formula formulafile=gauss.frm cyclerange=0/255
+  formulaname=gaussinttot_jul passes=1 periodicity=0
+  center-mag=-0.524765/0.169456/40 params=0.28/0.005/1e12/100
+  float=y maxiter=1000 inside=0 decomp=256 colors=GTg<18>AJXA\
+  JWAIVAIU9HU<33>001000001<31>9GS9HT9HUAIUAIVAJW<25>IVjJWkJWk\
+  KXlKXl<18>RftSftSgtTgtThu<3>VjvVjvWkvXkw<14>dsyesyftygtyhuz\
+  <3>kwzlwznxzoxz<2>tzzzzztzzryz<4>kwzjvzivzhuzhuzgty<8>`px`o\
+  x_ox_nxZnx<5>WkvVjvVjvViv<12>PcrObqObqOapNap<17>HTh
+  }
+
+splatter-paint { ; copyright Kerry Mitchell 20jan98
+;
+; sample parameter file for gaussintr_man
+;
+  reset=1960 type=formula formulafile=gauss.frm cyclerange=0/255
+  formulaname=gaussintr_man passes=1 center-mag=-0.8113020344287\
+  9510/+0.20153444676409190/108.7713 params=4/0 float=y maxiter=1000
+  inside=0 decomp=256 periodicity=0 colors=000<3>zo0<3>zzz<3>PPz<3>\
+  000<3>zo0<3>zzz<3>PPzJJjDDV66F110HE0XR0lc0zo1zrHztXzwlyyz<2>YYzPP\
+  yIIiCCU66E220<2>md0zo2<2>zwmyyzoozffzXXzOOx<2>66D330<2>ne0zo3zrJz\
+  uZzwnxxz<2>XXzOOw<2>55C440<2>of0zo4zrKzu_zxoxxznnzeezWWzOOv<2>55B\
+  540<2>pf0zp5<2>zxpwwzmmzddzVVzNNu<2>44A650<2>qg0zp6<2>zxqvvzmmzcc\
+  zVVzNNt<2>449760<2>rh0zp7<2>zxrvvzllzcczUUzMMs<2>448870<2>si0zp8<\
+  2>zxsuuzllzbbzUUzMMr<2>337980<2>tj0zp9<2>zxtuuz<2>TTzMMq<2>336A80\
+  <2>uj0zpA<2>zyuttz<2>SSzLLp<2>225B90<2>vk0zqB<2>zyvsszjjz``zSSzLL\
+  o<2>224CA0<2>wl0zqC<2>zywssz<2>RRzKKn<2>223DB0<2>xm0zqD<2>zyxrrzi\
+  iz__zRRzKKm<2>112EC0<2>yn0zqE<2>zyyrrz<2>QQzKKl<2>111
+  }
+

@@ -1,0 +1,1431 @@
+banksia1           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi010
+  function=sin passes=1
+  center-mag=-1.39621113883863800/+0.79843232063358590/9672660/1/-82.50000\
+  01565917529/4.34044445545012092e-007 params=2/0 float=y maxiter=1000
+  inside=0 logmap=45 periodicity=0
+  colors=000105<4>21H21J31L<3>42V42Y52_<3>63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1m\
+  Z0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO\
+  0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d\
+  0Aa0CZ0D<3>M0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5\
+  Eh4Kg4Of3Sd<3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>\
+  032000202<3>B0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0\
+  zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<5>000002
+  }
+
+deepzoom          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=mandel
+  center-mag=-1.36798930473048630828494135783344992878081146935429233238/-\
+  0.007343693441848201885859050263450932145948143782969230191/2.193722e+05\
+  2 params=0/0 float=y maxiter=150000 inside=0 logmap=29649
+  viewwindows=1/0.75/yes/0/0
+  colors=000zI0<2>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31\
+  L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0v\
+  X<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o\
+  05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG\
+  0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2\
+  e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0F\
+  G0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<5>zN0
+  }
+
+flat               { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi010
+  function=flip passes=1
+  center-mag=+1.67622517438936800/-0.00000000026524558/1.90464e+007
+  params=2/0 float=y maxiter=300 inside=0 logmap=61 periodicity=0
+  colors=000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3\
+  >zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<60>002000000
+  }
+
+headless           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=-0.97919959391820490/+0.75201651940216260/2.060404e+013/1/-10\
+  0.027908767424819/0.0161327836850957348 params=2/0.2 float=y
+  maxiter=26000 inside=0 logmap=-1214 periodicity=0
+  colors=000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrx\
+  z<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<61>000
+  }
+
+male_or_female     { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=d
+  center-mag=-0.52645/-2.195e-006/0.9862003/1/-90/3.88578058618804789e-016
+  params=0/0 maxiter=100 inside=bof60 proximity=0.07 outside=fmod
+  colors=Bbz00e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  O<3>ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zV\
+  V<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00S<3>S0\
+  S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2>EHSKK\
+  S<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3>G0G<3\
+  >G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG8AG88G\
+  8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2>BGFBG\
+  GBFGBDGBCG000<6>000
+  }
+
+maxiter1          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=1820 type=mandel
+  center-mag=+0.25299418685016360/-0.00026290136413206/5.993766e+008
+  params=0/0 float=y maxiter=2460 inside=0 logmap=246 periodicity=0
+  colors=0000mS<8>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0FG0HI0K<4>Z0Da0\
+  Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0\
+  D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31L31O42Q42T42V<3>63d63g63i69i5G\
+  h4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B\
+  39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0z\
+  u0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0I<3>708506303000<2>01612913B1\
+  4D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<2>0\
+  oT
+  }
+
+maxiter2          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=1820 type=mandel
+  center-mag=+0.25718181874348970/-0.00121239520266884/8.849964e+012/1/62.\
+  4930325148284425/0.00450539759644829479 params=0/0 float=y
+  maxiter=5200 inside=0 logmap=1210 periodicity=0
+  colors=000000<3>11A11C21F<2>31L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2a\
+  b2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G\
+  0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0z\
+  N0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3\
+  AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>\
+  0F80C70A6<2>032000202<3>B0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0\
+  zY0<3>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<4>303
+  }
+
+maxiter3          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-1.47710440607479500/-0.00519946318872226/6.417049e+009/1/-12\
+  5.538033263158781/-0.00317909219005661076 params=0/0 float=y
+  maxiter=12300 inside=0 logmap=1481 periodicity=0
+  colors=00000I<13>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0i\
+  y0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<4\
+  3>00J
+  }
+
+maxiter4          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-1.47706304814188700/-0.00517756316316368/7806684/1/-36.25602\
+  56337911895/-0.00192000265493234845 params=0/0 float=y maxiter=1500
+  inside=0 logmap=350 periodicity=0
+  colors=000004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz\
+  <25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<57>005
+  }
+
+maxiter5          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-1.74532437169861200/+0.00000419451345642/1.621461e+010/1/-35\
+  .6560851962493714/-0.00182524396415640472 params=0/0 float=y
+  maxiter=1000 inside=0 logmap=198 periodicity=0
+  colors=00000H<12>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0i\
+  y0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<4\
+  4>00I
+  }
+
+maxiter6          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-1.76883575592513300/+0.00189784835070778/1.323019e+012/1/-35\
+  .0638774878646657/-0.0291855641483234132 params=0/0 float=y
+  maxiter=3000 inside=0 logmap=544 periodicity=0
+  colors=000005<2>002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz\
+  <25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<56>006
+  }
+
+maxiter7          { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-1.76883574838819400/+0.00189786123519206/6.424424e+010/1/-35\
+  .0611267944251352/0.00214410551467732885 params=0/0 float=y
+  maxiter=2700 inside=0 logmap=546 periodicity=0
+  colors=000zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<57>00500400300\
+  2000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<30>xyz
+  }
+
+maxiter8           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel passes=1
+  center-mag=-0.63921924948044530/+0.43790408557611020/6.99105e+010
+  params=0/0 float=y maxiter=274000 inside=0 logmap=27472
+  periodicity=0
+  colors=000zY0<3>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>50\
+  6303000<3>11A11C21F<2>31L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3\
+  >1k_1mZ0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II\
+  0KL0JO0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z\
+  00<6>d0Aa0CZ0D<3>M0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<\
+  2>4De5Eh4Kg4Of3Sd<3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C7\
+  0A6<2>032000202<3>B0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<4>zS0
+  }
+
+nonsens1           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=-0.82634427065005110/-0.13967787660368870/4.309922e+010
+  params=0/3 float=y maxiter=15000 logmap=-4833 periodicity=0
+  colors=@blues.map
+  }
+
+nonsens2           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.42271166333538790/+0.66769794650629070/433402.7
+  params=2/0 float=y maxiter=3000 inside=0 logmap=-226 periodicity=0
+  colors=00000E<9>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy\
+  0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<47\
+  >00F
+  }
+
+nonsens3           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.47616501893645210/-0.00029444060785165/6.20107e+008
+  params=2/0 float=y maxiter=5000 inside=0 logmap=-509 periodicity=0
+  colors=00000E<9>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy\
+  0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<47\
+  >00F
+  }
+
+nonsens4           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.47616479418094430/-0.00029446897689797/2.440619e+010
+  params=2/0 float=y maxiter=5000 inside=0 logmap=-784 periodicity=0
+  colors=00000I<13>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0i\
+  y0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<4\
+  3>00J
+  }
+
+nonsens5           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.47616479418094430/-0.00029446897689797/6.833732e+009
+  params=2/0 float=y maxiter=5000 inside=0 logmap=-497 periodicity=0
+  colors=00000I<13>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0i\
+  y0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<4\
+  3>00J
+  }
+
+nonsens6           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=-1.09617/0.232965/32.6243 params=2/0 float=y maxiter=5000
+  inside=0 logmap=3 periodicity=0 colors=@blues.map
+  }
+
+nonsens7           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=-0.26536061929521730/+0.77156308817984140/6528922
+  params=3/0 float=y maxiter=8500 inside=0 logmap=853 periodicity=0
+  colors=@blues.map
+  }
+
+nonsens8           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=-0.26536061929521730/+0.77156308817984140/6528922
+  params=3/0 float=y maxiter=8500 inside=0 logmap=-853 periodicity=0
+  colors=@blues.map
+  }
+
+nonsens9           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.58481493278429410/-0.00016003749674087/3.345601e+007
+  params=3/0 float=y maxiter=2200 inside=0 logmap=-220 periodicity=0
+  colors=@blues.map
+  }
+
+nonse10           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.80687985130661410/+0.27626142667535890/1444460
+  params=5/0 float=y maxiter=3200 inside=0 logmap=-321 periodicity=0
+  colors=@blues.map
+  }
+
+nonse11           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=+0.80688013203437680/+0.27626089763450170/6.718421e+009
+  params=5/0 float=y maxiter=10000 inside=0 logmap=-1047 periodicity=0
+  colors=@blues.map
+  }
+
+nonse-01           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=sqr
+  center-mag=-0.82634427062265290/-0.13967787662389610/5.011517e+011
+  params=0/3 float=y maxiter=20000 logmap=-4855 periodicity=0
+  colors=000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3\
+  >zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<60>002000000
+  }
+
+nonsen02           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.74652683712023460/+0.00005996227267731/28187.91
+  params=13/0 float=y maxiter=15000 inside=0 logmap=33
+  colors=@blues.map
+  }
+
+nonsen03           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.74655064051127250/+0.00005626201632300/2013422
+  params=13/0 float=y maxiter=1500 inside=0 logmap=yes
+  colors=@blues.map
+  }
+
+nonsen04           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.74655009275768070/+0.00005666372893721/2.915299e+008
+  params=13/0 float=y maxiter=2000 inside=0 logmap=-400
+  colors=@blues.map
+  }
+
+nonsen05           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84131044149999990/+0.22053182150000000/10936.91/0.9997
+  params=13/0 maxiter=2000 inside=0 logmap=-87 colors=@blues.map
+  }
+
+nonsen06           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84136551637096770/+0.22052443052607560/56375.83
+  params=13/0 float=y maxiter=2000 inside=0 logmap=-88
+  colors=@blues.map
+  }
+
+nonsen07           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84125089057725260/+0.22054510999427900/135518.8
+  params=13/0 float=y maxiter=2000 inside=0 logmap=-98
+  colors=@blues.map
+  }
+
+nonsen08           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84136912294417750/+0.22052253414531960/231048.5
+  params=13/0 float=y maxiter=4000 inside=0 logmap=-107
+  colors=@blues.map
+  }
+
+nonsen09           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84136871678854840/+0.22052365143735720/4620970
+  params=13/0 float=y maxiter=4000 inside=0 logmap=-1743
+  colors=@blues.map
+  }
+
+nonsen10           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011
+  center-mag=+0.84136874894253570/+0.22052364410160140/5.373221e+007
+  params=13/0 float=y maxiter=22000 inside=0 logmap=-2188
+  colors=@blues.map
+  }
+
+ohh!               { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 2
+  reset=2002 type=mandel
+  center-mag=-0.12961869680234360/+0.64952614699049690/8.608696e+008/1/-59\
+  .9999566929175359/-5.51864706675037064e-005 params=0/0 float=y
+  maxiter=60000 inside=0 logmap=3194
+  colors=000zI0<2>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31\
+  L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0v\
+  X<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o\
+  05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG\
+  0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2\
+  e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0F\
+  G0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<5>zN0
+  }
+
+rings-1            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=cotan passes=1
+  center-mag=+1.07435612610397300/+0.94117723598434140/3812.925
+  params=2/0 float=y maxiter=500 inside=0 logmap=18 periodicity=0
+  colors=000000000000<16>00Q00S00T<5>00b00d00f<2>00k00m02m<24>0cw0ew0fx<2>\
+  0ky0mz2mz<24>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z\
+  <60>002
+  }
+
+rings-2            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=cotan passes=1
+  center-mag=+1.07435612610397300/+0.94117723598434140/1439.491
+  params=2/0 float=y maxiter=500 inside=0 logmap=11 periodicity=0
+  colors=00000A<5>004003002000000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy\
+  0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<51\
+  >00B
+  }
+
+running1           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=multi013
+  function=sin passes=1
+  center-mag=-0.824344/0.411692/23.87455/1/-35.0000000000000071/-3.7782277\
+  3067748585e-014 float=y maxiter=700 bailoutest=imag inside=fmod
+  proximity=0.001 outside=fmod logmap=11 periodicity=0
+  colors=000008<4>003002000000000<16>00Q00S00T<5>00b00d00f<2>00k00m02m<24>\
+  0cw0ew0fx<2>0ky0mz2mz<24>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z\
+  04z03z02z00z<53>009
+  }
+
+speedtst              { ; Guy Marson <guy.marson@mnhn.lu>
+                        ; Mon, 06 May 2002 15:21:45
+  reset=1820 type=mandel
+  center-mag=-0.74909880336762710/+0.05084338424079404/1.304918e+012
+  params=0/0 float=y maxiter=9000 inside=0 logmap=2178 periodicity=0
+  viewwindows=1.8/0.75/yes/0/0
+  colors=000zI0<2>z00<3>m06j07g09<3>W0ET0FP0HM0II0K<3>809506303000<6>21H21\
+  J31L<3>42V42Y52_<3>63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<1\
+  6>8KG9HF9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<\
+  4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<3>m06j07g09<3>W0ET0FP0HM0II0K<\
+  3>90B708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2\
+  e`1g`<3>1oZ0pY0rY0tX0vW0vX<16>0KB0H90F80C70A6<2>032000202<3>B0CD0FG0HI0K\
+  <4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<5>zN0
+  }
+
+list1              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi010 function=asinh
+  center-mag=+0.15247172667693040/+0.95204983597001340/2.48062e+008
+  params=2/0 float=y maxiter=4000 inside=0 logmap=yes periodicity=0
+  colors=0001oZ<2>0tX0vW0vX<12>0TG0RF0PE<3>0F80C70A6<2>032000202<3>B0CD0FG\
+  0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt0yy0zu0<3>zZ0zT0zN0<3>z\
+  00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21F<2>31L31O42Q42T42V<3>6\
+  3d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0tX0vX0vX<12>6TK7RJ7PI<3>\
+  9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h08l06o05<2>z00<4>zT0zY0\
+  zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0I<3>708506303000\
+  <2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<3>2ba2e`1g`1i`1k_1m_
+  }
+
+watch1             { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 06 May 2002 15:21:45
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=multi011 passes=1
+  center-mag=4.44089e-016/0/0.6186667/1/-15.0000000000000142/-1.2337353361\
+  1470521e-014 params=-11.0001/0 float=y maxiter=3800 inside=bof61
+  outside=mult logmap=yes decomp=64 periodicity=10
+  colors=000<3>90AB0CD0FG0HI0K<4>Z0Da0Ce0A<2>o05s04w01y00<3>yN0zS0zY0<3>zt\
+  0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M0II0KG0H<3>506303000<3>11A11C21\
+  F<2>31L31O42Q42T42V<3>63d63g63i69i5Gh4Mf<3>2Zb2ab2ca<3>1k_1mZ0oZ0qY0rX0t\
+  X0vX0vX<12>6TK7RJ7PI<3>9FE9CDAAC<2>B39C08C09<3>G0GH0II0KL0JO0HS2GV0E<3>h\
+  08l06o05<2>z00<4>zT0zY0zc0<2>zt0yy0zu0<3>zZ0zT0zN0<3>z00<6>d0Aa0CZ0D<3>M\
+  0II0KG0I<3>708506303000<2>01612913B14D14F<6>39V3AX3BZ<2>4De5Eh4Kg4Of3Sd<\
+  3>2ba2e`1g`<3>1oZ0pY0rY0tX0vW0vX<12>0TG0RF0PE<2>0H90F80C70A6085<2>000
+  }
+
+li-01              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=ident/ident passes=1
+  center-mag=-0.10258530488080490/+0.94411151796279080/757.5809/1.3333/7.9\
+  9999999999954703/-1.65350372283157299e-012
+  params=2/0/1/0.93/1/5/0.3/200/1/0 float=y maxiter=1500 inside=0
+  logmap=24 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000829<3>818818818907<3>H35J45L55<5>`C4bD3eE3<3>nJ1pK1rM0<6>v`4vb\
+  5wd5wf6xi6<2>xm8xn9yn9<3>yrCysDytEyuE<17>zwczwdzwfzwh<3>zwmzvozvpzvrzvsz\
+  uu<104>P77P77P77<6>M33M33M22<3>K000CP<3>0BO0BO0BO<4>0AL0AL0AK<3>0AK0AK0A\
+  K<12>46G46G46F56F55F55F<3>64D64D74D<4>73C73C73C83B83B83A
+  }
+
+li-02              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=ident/ident passes=1
+  center-mag=-0.10259568671102050/+0.94405712516041730/620.643/1.3333/8.00\
+  000000000072653/-0.000370735609869096705
+  params=2/0/1/0.99/1/10/0.2/300/1/0 float=y maxiter=3500 inside=fmod
+  proximity=0.05 outside=fmod logmap=yes periodicity=0
+  viewwindows=1/1/yes/0/0
+  colors=000Tcz<52>46A359348<3>124123112001000<58>taJubJvbK<2>ydLzeLydL<55\
+  >642531421<2>100000001<61>Sby
+  }
+
+li-03              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=ident/ident passes=1
+  center-mag=-0.123698/-0.74462/4.972245/1.3346/174.995095591806518/0.0098\
+  0405931645508821 params=2/0/1/0.65/1/28/0.3/300/1/0 float=y
+  maxiter=6345 inside=fmod proximity=0.3 outside=fmod logmap=yes
+  periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000KSg<33>46A359348<3>124123112001000<58>taJubJvbK<2>ydLzeLydL<55\
+  >642531421<2>100000001<56>Q_tQ_uR`v<2>SbyTczTby<16>LSh
+  }
+
+li-04              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=recip/sqr passes=1
+  center-mag=-2.88658e-015/-2.66454e-015/0.2961742/1.3333/57.4999375792942\
+  899/0.000124842966039623304 params=3/0/1/0.65/1/5/0.2/300/0.1/0.1
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-05              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=recip/sqr passes=1
+  center-mag=-2.88658e-015/-2.66454e-015/0.2961742/1.3333/57.4999375792942\
+  899/0.000124842966039623304 params=3/0/1/0.65/1/5/0.2/300/0.1/-0.1
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-06              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=sqrt/flip passes=1
+  center-mag=-3.21965e-015/4.44089e-016/0.6611597/1.3333/-114.999999999999\
+  972/-6.3227201252402665e-014
+  params=24/0/1/0.6/1/5/0.2/300/1/-1.346629230628376 float=y
+  maxiter=4000 inside=fmod proximity=0.8 outside=imag logmap=yes
+  decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<3>358347246<3>112001000<58>taJubJvbK<2>ydLzeL\
+  ydL<55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-07              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=ident/ident passes=1
+  center-mag=0/8.88178e-016/0.3940882/1.3334/-10.0005015581794972/0.001003\
+  09220337385652 params=12/0/1/0.25/1/10/0.3/250/1/0 float=y maxiter=4000
+  inside=fmod proximity=0.8 outside=imag logmap=yes decomp=256
+  periodicity=0 viewwindows=1/1/yes/0/0
+  colors=00087V<5>75P65O65N54M54L<14>116115104<2>001000100<56>tZ9u_9v_9<2>\
+  yaAzbAyaA<55>640530420<3>000001002<15>52H52I52J<34>EBpEBqFCr<3>FDvFDwGDx\
+  GDyGDz<30>87W
+  }
+
+li-08              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=acosh/sqr passes=1
+  center-mag=1.04946/-0.00726327/0.7297921/1.3333/90/3.88578058618804789e-\
+  016
+  params=12/0/1/0.35/1/5/0.2/300/-0.4241767632068846/-0.4598834192938017
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-09              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=acosh/sqr passes=1
+  center-mag=1.04946/-0.00726327/0.5797228/1.3333/77.5003026783887066/-0.0\
+  00605363635564737379
+  params=12/0/1/0.15/1/20/0.2/300/0.2272072511978519/-0.154414502395703
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-10              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=sqr/sqr passes=1
+  center-mag=2.22045e-016/2.33147e-015/0.6912275/1.3333/142.49930819569974\
+  /0.00138360412415969303
+  params=3/0/1/0.6/1/5/0.2/300/-1.54231391338847/0.006256294442579424
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-11              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=flip/sqr passes=1
+  center-mag=0/2.22045e-015/0.7203083/1.3333/102.499697321611265/0.0006053\
+  63635654568299
+  params=6/0/1/0.5/1/5/0.2/300/-0.6525772881252476/0.8717612231818598
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-12              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=conj/sqr passes=1
+  center-mag=2.22045e-016/2.10942e-015/0.5749546/1.3333/102.49969732161125\
+  1/0.000605363635680013223
+  params=6/0/1/0.5/1/5/0.2/300/-1.382763145847956/-0.467635120700705
+  float=y maxiter=4000 inside=fmod proximity=0.8 outside=imag
+  logmap=yes decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-13              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=flip/log passes=1
+  center-mag=-4.44089e-016/8.88178e-016/0.6984118/1.3333
+  params=12/0/1/0.8/1/5/0.2/300/0/0 float=y maxiter=4000 inside=fmod
+  proximity=0.8 outside=imag logmap=yes decomp=256 periodicity=0
+  viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-14              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=abs/log passes=1
+  center-mag=-4.44089e-016/9.99201e-016/0.6984118/1.3333/90/3.885780586188\
+  04789e-016 params=12/0/1/0.8/1/5/0.2/300/0/0 float=y maxiter=4000
+  inside=fmod proximity=0.8 outside=imag logmap=yes decomp=256
+  periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-15              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=cotan/log passes=1
+  center-mag=-0.785731/-0.000765074/11.18838/1.3333
+  params=12/0/1/1.2/1/1/0.2/300/0/0 float=y maxiter=4000 inside=fmod
+  proximity=0.8 outside=imag logmap=yes decomp=256 periodicity=0
+  viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-16              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=sinh/log passes=1
+  center-mag=0.000325083/1.57172/1.716663/1.2457
+  params=12/0/1/0.34/1/1/0.2/300/0/0 float=y maxiter=4000 inside=fmod
+  proximity=0.8 outside=imag logmap=yes decomp=256 periodicity=0
+  viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<3>358347246<3>112001000<58>taJubJvbK<2>ydLzeL\
+  ydL<55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+li-17              { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 May 2002 21:22:59
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=la-uhr6
+  function=sinh/sqr passes=1
+  center-mag=5.55112e-016/2.55351e-015/0.8075214/1.3333/90/3.8857805861880\
+  4789e-016 params=6/0/1/0.5/1/5/0.2/300/-1.333475753044221/0 float=y
+  maxiter=4000 inside=fmod proximity=0.8 outside=imag logmap=yes
+  decomp=256 periodicity=0 viewwindows=1/1/yes/0/0
+  colors=000GM_<21>58E58D47C<6>235234123112001000<58>taJubJvbK<2>ydLzeLydL\
+  <55>642531421<2>100000001<56>Q_tQ`uR`v<2>SbyTczSby<24>HN`
+  }
+
+swatch2            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=b center-mag=9.775e-006/1.0105e-005/0.6666712 params=1/0
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch3            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=t center-mag=9.775e-006/1.0105e-005/0.6666712 params=1/0
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch4            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=t center-mag=9.775e-006/1.0105e-005/0.6666712 params=0.5/-0.5
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch5            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=t center-mag=9.775e-006/1.0105e-005/0.6666712 params=0.5/0.5
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch6            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=b center-mag=-3.695e-006/-8.405e-006/0.9999915 params=0.5/0
+  maxiter=256 inside=255 periodicity=0
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch7            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=b center-mag=-3.695e-006/-8.405e-006/0.9999915 params=1/-0.5
+  maxiter=256 inside=255 periodicity=0
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+swatch8            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 25 May 2002 19:14:01
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=swatch2
+  passes=b center-mag=-3.695e-006/-8.405e-006/0.9999915 params=0.5/2
+  maxiter=256 inside=255 periodicity=0
+  colors=000000<9>ab1ef1ij1<3>xz1<9>NO0JK0FG0<3>000<9>SVbVYfY`j<3>imz<9>HI\
+  OEFKBCG<3>000<8>aB8eC9iDA<3>zIE<9>O75K54G43<3>000<9>MbJOfLQjN<3>ZzV<9>DO\
+  BBK98G7<3>000<9>bJMfLOjNQ<3>zVZ<9>OBDK9BG89<3>000<9>CbADfBFjC<3>KzG<9>7O\
+  66K55G4<3>000<8>aVTeZWiaZ<3>zok<9>OJIKGFGDC<3>000<9>03b03f03j<2>14v15z14\
+  v<14>000
+  }
+
+neweco1            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 03 Aug 2002 22:52:57
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=neweco
+  function=sqr/sqr/sqr/sqr passes=1
+  center-mag=0.221881/1.06058/3.284115/1/95.0000000000000995/-1.8061663276\
+  1143592e-012
+  params=-2.692182378612628/2.060903042695394/1.799637440107424/0.57679860\
+  83559681/-1.500101626636555/-11.00193639942625/0.38/0.15/0.26/38
+  float=y maxiter=200 inside=bof60 decomp=256 symmetry=none
+  periodicity=0
+  colors=wiIxkJzlJ<14>YRCWPBUOB<5>IF6GD6EC5CA5A94<3>221000000<25>S4nT4pU4r\
+  <2>Y5xZ5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50\
+  840<2>210000021<16>BZRC`TCbU<5>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>2862\
+  65143122000<9>LF6NH7PI7<3>XPAZRB`SB<3>h_EjaFlbG<4>viI
+  }
+
+eco3               { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 03 Aug 2002 22:52:57
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=neweco
+  function=log/cosxx/exp/cotan passes=1
+  center-mag=-7.02872/0.594396/1.734975/-1/152.500000000000028/3.778227730\
+  67748585e-014
+  params=1.073515576647237/0.9328891262550738/0.06087128940702536/-0.93809\
+  00234992523/21.89901782280953/-2.095075231788079/0.153/0.25/2/38
+  float=y maxiter=200 inside=bof60 decomp=256 symmetry=none
+  periodicity=0
+  colors=wiIxkJzlJ<14>YRCWPBUOB<5>IF6GD6EC5CA5A94<3>221000000<25>S4nT4pU4r\
+  <2>Y5xZ5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50\
+  840<2>210000021<24>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>286265143122000<\
+  9>LF6NH7PI7<3>XPAZRB`SB<3>h_EjaFlbG<4>viI
+  }
+
+ny2003-1           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Wed, 25 Dec 2002 00:40:11
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+  function=log/cosxx/exp/cotan passes=1
+  center-mag=-0.714002/0.738264/1.736321/-1/154.999999999999943/1.77725889\
+  56077584e-013
+  params=1.069152195806757/0.9393722342600787/0.06774529251991225/-0.94344\
+  34034241768/1.436170537430952/-2.349223303933836/0.1527591784417249/0.13\
+  08709982604449/1.995343485824152/41 float=y maxiter=200 inside=bof60
+  decomp=256 symmetry=none periodicity=0
+  colors=wiIxkJzlJ<14>YRCWPBUOB<5>IF6GD6EC5CA5A94<3>221000000<25>S4nT4pU4r\
+  <2>Y5xZ5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50\
+  840<2>210000021<24>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>286265143122000<\
+  9>LF6NH7PI7<3>XPAZRB`SB<3>h_EjaFlbG<4>viI
+  }
+
+ny2003-2           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Wed, 25 Dec 2002 00:40:11
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+  function=recip/cosh/sqr/conj passes=1
+  center-mag=7.54576/2.48156/0.4055098/1/-47.5000000000000853/7.6716411001\
+  5983169e-014
+  params=3.395733512375255/5.356816309091463/0.4419049653614918/-2.7911099\
+  58189642/7.637836848048342/1.882442701498459/-0.1814630573442793/-1.4827\
+  22217474899/4.100650044251839/38 float=y maxiter=500 inside=bof60
+  decomp=256 symmetry=none periodicity=0
+  colors=wiIviI<17>OJ8MH7KG7IE6<3>A83873652431221000000<25>S4nT4pU4r<2>Y5x\
+  Z5zY5x<18>D2OC2MA2K<3>61C50A408<3>000<24>nT2pU2rW2<3>z_2<25>C70A50840<2>\
+  210000021<24>GncHpeHrg<2>JxkKzmJxk<20>6KF5IE4GC<3>286265143122000<9>LF6N\
+  H7PI7<3>XPAZRB`SB<3>h_EjaFlbG<6>zlJxjI
+  }
+
+ny2003-3           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Wed, 25 Dec 2002 00:40:11
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+  function=recip/cosh/sqr/conj passes=1
+  center-mag=0.132034/-0.297903/2.077494/-1/130/1.14117049143658278e-013
+  params=5.936033204138311/5.57642750328074/1.596542252876369/-1.896673482\
+  467117/-0.3586230048524422/-1.874935148167363/-0.05415082247383037/0.009\
+  330762657551719/4.100650044251839/33 float=y maxiter=100
+  inside=bof60 decomp=256 symmetry=none periodicity=0
+  colors=000021000<19>l88n88q89<3>zAA<18>F22C22A11<3>000000<18>33k33n34p<3\
+  >44z<19>11E01C009<2>002000220<17>kjAnlBpoB<3>zyD<19>EE3CC2992<3>000<18>T\
+  6kV6nX6p<3>b7z<18>91F71C61A<2>102000021<18>DlPDnQEqS<3>GzX<22>152
+  }
+
+ny2003-4           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Wed, 25 Dec 2002 00:40:11
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=new2003
+  function=abs/tanh/sqr/sinh passes=1
+  center-mag=0.223577/-0.408861/2.134535/1/-30.0000000000000178/-1.0139111\
+  7723892421e-013
+  params=5.721457564012574/4.859273049104282/1.706256294442579/-2.12803430\
+  2804652/-0.2790002136295655/-2.104403820917386/-0.03398113956114383/0.00\
+  9330762657551719/4.100650044251839/55 float=y maxiter=100
+  inside=bof60 decomp=256 symmetry=none periodicity=0
+  colors=000236<51>Q_tQ`uR`v<2>SbyTczSby<55>236235124123112001000000<57>ta\
+  JubJvbK<2>ydLzeLydL<55>642531421<2>100000001<3>235
+  }
+
+startman           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; time: 0h15' on a K7/600
+                     ;  Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=d
+  center-mag=-0.538232/0.00782014/0.929296/1/-90/3.88578058618804789e-016
+  params=0/0 float=y maxiter=8000 inside=atan symmetry=none
+  periodicity=0 cyclerange=1/1
+  colors=000<3>321421031642<51>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000\
+  001<56>Q_tQ`uR`v<2>SbyTczSby<61>000
+  }
+
+ataniter           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; 1th order =12033
+                     ; time: 0h26 on a K7/600
+  reset=2002 type=mandel passes=d
+  center-mag=-0.74896255201844790/+0.05435555412152205/7.927134e+011/1/-4.\
+  99675937785410795/-0.0902709561915964742 params=0/0 float=y
+  maxiter=12033 inside=atan logmap=yes symmetry=none periodicity=0
+  colors=00000T<24>005004003<2>000000222<4>DCEFEGIGI<3>QORSQTUSW<4>c`ddaff\
+  ch<3>lhnmjonkq<3>soutovtpw<3>wrywszwsz<2>xszxszwry<6>sousnurnt<3>okqnjpl\
+  in<2>hejgciebgc`e<3>XVZWTXURV<5>HGIFEGDCD<3>444<39>ma1na1pb1<2>se1se1re1\
+  <3>pc0ob0ma0<27>860750540430220000<34>00`00a00b00c00d00f<13>00U
+  }
+
+atannumb           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; 2th order =24066
+                     ; time: 1h26 on a K7/600
+  reset=2002 type=mandel passes=d
+  center-mag=-0.74896255201845010/+0.05435555412154748/2.119379e+012/0.999\
+  9/-4.99548275077093162/-0.086997345982712887 params=0/0 float=y
+  maxiter=24066 inside=atan outside=0 symmetry=none periodicity=0
+  colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+  uR`v<2>SbyTczSby<61>000
+  }
+
+atanfmod           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; 3th order =36099
+                     ; time: 0h46 on a K7/600
+  reset=2002 type=mandel passes=d
+  center-mag=-0.74896255201844790/+0.05435555412152205/6.97086e+011/1/-4.9\
+  9687607663320321/-0.0914427337369515397 params=0/0 float=y
+  maxiter=36099 inside=atan proximity=0.007 outside=fmod symmetry=none
+  periodicity=0
+  colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+  uR`v<2>SbyTczSby<61>000
+  }
+
+atansumm           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; 4th order =48132
+                     ; time: 0h55 on a K7/600
+  reset=2002 type=mandel passes=d
+  center-mag=-0.74896255201844790/+0.05435555412152205/1.113368e+012/1/-4.\
+  99670916040466828/-0.0879347820503879468 params=0/0 float=y
+  maxiter=48132 inside=atan outside=summ logmap=yes symmetry=none
+  periodicity=0
+  colors=000A81<3>431320110000000<29>4hg4ji4kj<3>5qp6sq6ts<3>6zy<30>2IH2GF\
+  2FE<3>198077065<2>011000001<34>HNqHOsIPt<2>JRyKRzJRy<34>349237226<2>0010\
+  00110<29>hZ7j_7k`7<3>qe8sg8th8<3>zl9<33>C92
+  }
+
+atanatan           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Thu, 16 Jan 2003 14:34:31
+                     ; 5th order =60165
+                     ; time: 1h22 on a K7/600
+  reset=2002 type=mandel passes=d
+  center-mag=-0.74896255201845010/+0.05435555412154748/1.356392e+012/1/-4.\
+  98344032497560363/-0.100894378737287849 params=0/0 float=y
+  maxiter=60165 inside=atan outside=atan symmetry=none periodicity=0
+  colors=000<58>ARtASuBSv<2>BUyBUzBUy<55>136125024<2>001000110<56>tr9us9vt\
+  9<2>ywAzxAywA<61>000
+  }
+
+riselake           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Mon, 20 Jan 2003 13:28:22
+                     ;  Version 2002 Patchlevel 3
+                     ; set the real(p2) to 30, 20, 10 etc..
+                     ; and it's rising again..
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=tmanlake
+  center-mag=-0.33019260452431920/+0.53369254258170410/2256.431/3.3373/149\
+  .750000000008981/-15.9332167459658773 params=-0.4/0/50/0.2/300/0
+  float=y maxiter=18000 inside=0 logmap=94 periodicity=0
+  colors=000UKA<4>PKAOKA<2>LJCKJDJKF<3>FLKELLDLNCMO<11>NPdOPeOPf<3>SQlTQnU\
+  Ro<2>XRsXRtWSs<31>S`rS`rS`r<3>SarVbv<19>AUK9UI8TG<3>4S83S72R51R3<15>UJSV\
+  JUXIV<3>dGaeGcgFdiFflDh<19>P_QN`PMaO<2>JdLHdKIeL<10>NgONgOOgP<3>PhPPhQQh\
+  QQhQUfP<3>GkSCmT9nT2oU4qS<3>CpVEpWGpX<3>OpcQpeSpg<3>_plapmcpn<3>iprjpskp\
+  t<3>mpxmpympz<30>mlz
+  }
+
+evolve3d           { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Tue, 21 Jan 2003 10:46:33
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=threecircles2
+  center-mag=-1/0/0.33/1/-90/0
+  params=0.4/0/-2.5/0 float=y maxiter=200 inside=atan outside=atan
+  periodicity=0
+  colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+  uR`v<2>SbyTczSby<61>000
+  }
+
+ny04-1a            { ; Guy Marson <guy.marson@mnhn.lu>
+                     ; Sat, 03 Jan 2004 21:17:56
+                     ; Version 2002 Patchlevel 3
+  reset=2002 type=formula formulafile=frac_ml.frm
+  formulaname=ny2004-4 function=sinh/sinh/ident/ident passes=1
+  center-mag=2.57336/0.749497/0.8909/1/7.5/0
+  params=-0.060358/0.53382/2.36/0.020655/0.873595/-0.48138/1/0.2012/1.5/38
+  float=y maxiter=800 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+
+; ----------------------------------------------------------------------
+; ----------------------------------------------------------------------
+; 
+; 
+; Date:  Sun, 11 Jan 2004 18:24:57 +0100
+; From:  Guy Marson <guy.marson@mnhn.lu>
+; 
+; here are a few examples on how to find the pretty rare midgets with
+; "inside=atan":
+; 
+; atan-a0, b0, c0 and d0 pars are starting pics with low magnification and
+; low maxiter (80 or 160). 
+; Zoom-in until points of intersecting colours a visible.. (atan-a1, b1, c1,
+; d1). Then one can double the maxiter while zooming into the pic, double
+; maxiter again, and still zooming-in onto points of intersection.. and so
+; on.. meanwhile on can change to "logmap=yes" .. (the final midget is +/- in
+; the centre..)
+; 
+; ******
+
+atan-a0            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1 center-mag=-0.758205/0.076935/1
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-a1            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75820548276543810/+0.07693499922059592/100 params=0/0
+  float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-a2            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75820548276543810/+0.07693499922059592/4000 params=0/0
+  float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-a3             { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75820548276543810/+0.07693499922059592/160000
+  params=0/0 float=y maxiter=160 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-a4             { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75820548276543810/+0.07693499922059592/3500000
+  params=0/0 float=y maxiter=160 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-a5             { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75820548276543810/+0.07693499922059592/7.014636e+007
+  params=0/0 float=y maxiter=2560 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b0            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1 center-mag=-1.75122/0/0.6666667
+  params=0/0 float=y maxiter=100 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b1            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1 center-mag=-1.74967/-9.77836e-007/10
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b2            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-1.74967399804496800/-0.00000097783572361/200 params=0/0
+  float=y maxiter=80 inside=atan periodicity=0 
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b3            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-1.74967282502444000/-0.00000058670143418/163934.4
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b4            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-1.74967152290777700/+0.00000000000000000/200000
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-b5            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-1.74967152290777700/+0.00000000000000000/7.5e+010
+  params=0/0 float=y maxiter=2560 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c0            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1 center-mag=0.251563/0/0.666
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c1            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=+0.25156256516781210/+0.00000000000000000/3000 params=0/0
+  float=y maxiter=80 inside=atan periodicity=0 
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c2            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=+0.25166857146736680/+0.00009995654063451/60000
+  params=0/0 float=y maxiter=80 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c3            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=+0.25166949902248790/+0.00010019991308127/60000
+  params=0/0 float=y maxiter=160 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c4            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=+0.25166949349197440/+0.00010020051434159/4000000
+  params=0/0 float=y maxiter=160 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-c5            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=+0.25166949349197440/+0.00010020051434159/2e+009
+  params=0/0 float=y maxiter=2560 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d0            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.750518/-0.0200659/0.66666 params=0/0 float=y
+  maxiter=160 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d1            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75051765447904200/-0.02006592913197069/1000 params=0/0
+  float=y maxiter=160 inside=atan periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d2            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75051765447904200/-0.02006592913197069/1000000
+  params=0/0 float=y maxiter=1280 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d3            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75051765447904200/-0.02006592913197069/3e+007
+  params=0/0 float=y maxiter=1280 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d4            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75051765447904200/-0.02006592913197069/2.503263e+009
+  params=0/0 float=y maxiter=2560 inside=atan logmap=yes periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+atan-d5            { ; Version 2002 Patchlevel 3
+  reset=2002 type=mandel passes=1
+  center-mag=-0.75051765447904200/-0.02006592913197069/2.500003e+012
+  params=0/0 float=y maxiter=40960 inside=atan logmap=yes
+  periodicity=0
+  colors=000<58>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`uR`\
+  v<2>SbyTczSby<61>000
+  }
+
+
+; ----------------------------------------------------------------------
+; ----------------------------------------------------------------------
+
+dec-07        { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Mon, 08 Dec 2003 01:07:24
+  reset=2002 type=formula formulafile=frac_ml.frm formulaname=p1-p3
+  passes=1
+  center-mag=-2.06903340921537900/+0.00000000000000000/5093233/1/-90/3.885\
+  78058618804789e-016
+  params=1.65053254799036/0/0.990000050065615/0/0/0 float=y
+  maxiter=1320 logmap=132 periodicity=0
+  colors=000000<25>00d00f00h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3\
+  >zzz<42>7zz6zz4zz3zz2zz0zz<42>07z06z04z03z02z00z<60>002000000
+  }
+
+
+; ----------------------------------------------------------------------
+; ----------------------------------------------------------------------
+
+julibr-1      { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=-1.95/-2.1/-3.7/-3.5
+  julibrot3d=128/2950/-150/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=-0.48413661150000000/-0.40476939050000000/527.0799/0.9997
+  params=0/0/-3/0 maxiter=3 bailout=4 bailoutest=and
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-2      { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=-1/-0.45/0/0.4567
+  julibrot3d=430/2950/-200/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=0.491043/1.04115/42.72229/1.0007 params=0/0/-4/0
+  maxiter=6 bailout=10
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-3      { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=-0.3/0.8/0.75/-0.65
+  julibrot3d=128/2920/-200/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=0.0803076/0.0143114/15.24308 params=0/0/-3/0 maxiter=2
+  bailout=1
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+julibr-4      { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=1/-5/-3/1
+  julibrot3d=400/200/30/7/10/24 julibroteyes=2 orbitname=lambdafn
+  function=cosxx center-mag=-0.111348/0.0243878/3.840627/0.3505
+  params=0/0 float=y maxiter=8 bailout=60
+  colors=000l00<8>f00e00d00<26>JDDIDDHEEGEEFFFFFFFFF<24>p33r33s22<2>x11z00\
+  z10<24>zn0zp0zr0<2>zx0zz0zz1<24>zznzzpzzr<2>zzxzzzzzz<57>zX5zX4zW3zW2zV1\
+  <27>z50z40z30z20z10z00<18>m00
+  }
+
+julibr-5      { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=julibrot julibrotfromto=2/-1/-2/1
+  julibrot3d=200/1250/100/5/10/24 julibroteyes=-5.2
+  orbitname=julzpower 3dmode=lefteye
+  center-mag=0.192334/-0.243114/13.7054 params=0/0/3/0 maxiter=3
+  bailout=200 bailoutest=or cyclerange=25/32
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+
+bjax-1        { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2003 type=formula formulafile=frac_ml.frm formulaname=Bjax-b
+  center-mag=0/0/0.38/1/90/3.88578058618804789e-016 params=2/0/2/8
+  float=y inside=atan proximity=2 outside=fmod periodicity=0
+  colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+  uR`v<2>SbyTczSby<61>000
+  }
+
+bjax-2        { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Sun, 18 Jan 2004 13:22:41
+                ; Version 2002 Patchlevel 3
+  reset=2003 type=formula formulafile=frac_ml.frm formulaname=Bjax-b
+  center-mag=0.976264/-1.34489/18.29394/1/-110.000000000000128/2.039410307\
+  29737349e-013 params=1.5/0/2/20 float=y inside=atan proximity=2
+  outside=fmod periodicity=0
+  colors=000000<57>taJubJvbK<2>ydLzeLydL<55>642531421<2>100000001<56>Q_tQ`\
+  uR`v<2>SbyTczSby<61>000
+  }
+
+hmmm1         { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Mon, 19 Jan 2004 16:30:01
+                ; Version 2002 Patchlevel 3
+  reset=2002 type=tim's_error function=tanh
+  center-mag=-0.0832708/-0.0086031/1.84347/0.75/90/3.88578058618804789e-01\
+  6 params=0/0 float=y inside=maxiter potential=255/255/0
+  colors=000400<3>200200210<3>131141042<3>0850960A7<3>0FB0HC0ID<6>1TO1UP1W\
+  Q<2>2`W2aX3cZ3d_3fa<4>5mh5ni6ok<2>7so8tp9tq<3>BxuBxvCyw<3>FzyFzzGzz<3>Jz\
+  zKzzKyz<3>NwyOvyPux<3>SrtTqtUos<2>WlpXjoXimYglZfk<10>fQVgPUhNShMRiKPjIO<\
+  4>mCHnBFn9E<5>r47r36s36<3>u02u01v01<3>w00w00x00<3>y20y21y32<3>z74z84z95<\
+  4>zFAzGCzHD<3>zNIzPKzRL<9>we`wfawhc<3>unitojtpk<3>rtpqurqvs<3>nxvnywmyx<\
+  3>jzzizzizz<3>fyzeyzeyz<4>aux`tw_sv<3>XosWmrWlp<3>TglSejRdi<12>HLQHKPGIN\
+  <6>BADB8CA7B<3>836735724<5>401
+  }
+
+magnit1       { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Mon, 03 Jan 2005 20:40:39
+                ; time=  0:00:15.49--SF7 on a P4 3.00GHz
+  reset=2004 type=formula formulafile=Guy_Marson.frm
+  formulaname=g5-08-la function=asinh/sin/tan passes=1
+  center-mag=-0.50188/1.99128/0.2898628/1/-5.00000000000002043/-1.80616632\
+  761143592e-012 params=2/0/3/0/2/0/32/0 float=y maxiter=255 inside=0
+  decomp=256 periodicity=0 cyclerange=0/255
+  colors=00z<8>A0kB0jC0h<4>J0_K0YM0W<2>P0QR0OS0MU0KV0I<3>`0Aa08b06d04e02g0\
+  0<14>Z00Y00X00W00W00<38>500500400400300200100000<19>SSSTTTVVV<12>hhhiiij\
+  jj<7>pppqqqrrr<6>uuuuuuuuuuuuvvv<3>vvvvvvwww<8>uuuuuuuuu<9>ooonnnmmmllll\
+  ll<16>UUUTTTSSS<13>888777666<2>111000002<26>00z
+  }
+
+magnit2       { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Mon, 03 Jan 2005 20:40:39
+                ; time=  0:00:12.41--SF7 on a P4 3.00GHz
+  reset=2004 type=formula formulafile=Guy_Marson.frm
+  formulaname=g5-08-la function=tan/cosxx/exp passes=1
+  center-mag=-5.02934/-5.60236/0.09953289 params=2/0/3/0/2/0/33/0
+  float=y maxiter=255 inside=0 decomp=256 periodicity=0
+  cyclerange=0/255
+  colors=900<4>500500400400300200100000<19>SSSTTTVVV<12>hhhiiijjj<7>pppqqq\
+  rrr<6>uuuuuuuuuuuuvvv<3>vvvvvvwww<8>uuuuuuuuu<9>ooonnnmmmllllll<16>UUUTT\
+  TSSS<13>888777666<2>111000002<20>00l00n00q<2>00w00z00z<8>A0kB0jC0h<4>J0_\
+  K0YM0W<2>P0QR0OS0MU0KV0I<3>`0Aa08b06d04e02g00<51>A00
+  }
+
+magnit3       { ; Guy Marson <guy.marson@mnhn.lu>
+                ; Mon, 03 Jan 2005 20:40:39
+                ; time=  0:01:00.64--SF7 on a P4 3.00GHz
+  reset=2004 type=formula formulafile=Guy_Marson.frm
+  formulaname=g5-08-la function=atanh/cosh/ceil passes=1
+  center-mag=0.90972/0.64915/1.49091/1.6556/-22.5000000000005187/-7.883901\
+  86468035381e-013 params=2/0/3/0/2/0/44/0 float=y maxiter=255
+  inside=0 decomp=256 periodicity=0 cyclerange=0/255
+  colors=70o<3>C0hD0fE0e<4>M0WN0UO0SP0QR0O<5>Z0C`0Aa08<2>e02g00g00<56>5005\
+  00400400300200100000<19>SSSTTTVVV<12>hhhiiijjj<7>pppqqqrrr<6>uuuuuuuuuuu\
+  uvvv<3>vvvvvvwww<8>uuuuuuuuu<9>ooonnnmmmllllll<16>UUUTTTSSS<13>888777666\
+  <2>111000002<20>00l00n00q<2>00w00z00z<5>60p
+  }

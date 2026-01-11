@@ -1,0 +1,92 @@
+comment { ; narrative copyright Kerry Mitchell 19jan98
+
+Ghost
+
+In the ghost coloring scheme, you can make the fractal appear or disappear 
+against a gradient background.  It is based on the iteration smoothing 
+routine of Linas Vepstas, and uses an adjustable parameter to determine 
+how prevalent the fractal appears.
+
+The iteration smoothing technique works by letting the iterate go much 
+beyond the required escape radius of 4, and converting its geometric 
+growth into a real number.  When combined with the original iteration 
+number, the result is a real number that can be plotted continuously 
+with the decomposition (or outside=real) methods.  Here, the smoothed 
+iteration count is scaled and made the polar angle for the decomposition 
+coloring.
+
+The backgrounds for these images are gradients (using smooth color maps), 
+running horizontally, vertically, or in rays from the origin (point 0+0i).  
+In the latter case, the background is simply the polar angle of the pixel, 
+which may or may not be centered on the screen, depending on the zoom of 
+the image.  In the former two cases, the gradients are dynamically set to 
+use the full color range irrespective of the pixel coordinates.  In any 
+case, the background is represented by an angle, for use with decomposition.
+
+Given angles for both the iteration count and the background image, they 
+are combined using the "ghost" parameter.  The iteration angle is scaled 
+by "ghost" and added to the background angle.  When the ghost level is 
+set to zero, then only the background angle remains, and that is what is 
+shown in the image.  Increasing the ghost level results in the background 
+being subtly, then significantly, perturbed by the fractal.  The disturbance 
+starts with the highest iteration levels first (except that interior points 
+are assigned 0 iteration, to clarify the boundary), and propagates to the 
+lower iterations as the ghostliness is increased.  The effect on the image 
+is to see the background gradient smoothly displaced by the fractal, but 
+to not see the fractal directly.
+
+The best uses of this scheme seems to be on Julia dust (non-connected) 
+fractals, in which there is lots of "empty" space for the background to 
+show through.
+
+}
+
+ghost-sample       { ; copyright Kerry Mitchell 19jan98
+;
+; sample image for ghost_jul
+;
+  reset=1960 type=formula formulafile=ghost.frm formulaname=ghost_jul
+  center-mag=0/0/1/1/90 params=0.39/0.12/1000000/4 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0
+  colors=VF0<62>yiUyiVyjVyjWxkW<27>jyijyiiyjiyjhxk<27>WjyVjyViyUiyUhx\
+  <59>0GW0GV0FV0FU1EU<27>F0GF0GG0FG0FH1E<27>UF0 cyclerange=0/255
+  }
+
+horiz-sample       { ; copyright Kerry Mitchell 19jan98
+;
+; sample image for ghost-horiz_man
+;
+  reset=1960 type=formula formulafile=ghost.frm
+  formulaname=ghost-horiz_man
+  center-mag=-1.94002389671361600/+0.00056527139874739/5498282
+  params=1000/1 float=y maxiter=1000 inside=0 decomp=256 periodicity=0
+  colors=VF0<62>yiUyiVyjVyjWxkW<27>jyijyiiyjiyjhxk<27>WjyVjyViyUiyUhx\
+  <59>0GW0GV0FV0FU1EU<27>F0GF0GG0FG0FH1E<27>UF0 cyclerange=0/255
+  }
+
+vertical-sample    { ; copyright Kerry Mitchell 19jan98
+;
+; sample image for ghost-vert_jul
+;
+  reset=1960 type=formula formulafile=ghost.frm
+  formulaname=ghost-vert_jul center-mag=-0.524765/0.169456/40
+  params=0.28/0.005/1000000/1 float=y maxiter=256 inside=0 decomp=256
+  colors=F0V<7>iVy<3>yij<3>jyV<7>GV0<3>0GF3CJ<2>G0V<7>jVy<3>yji<3>iy\
+  V<7>FV0<3>0FG4BK87NC3RG0W<7>jWy<3>yji<3>iyU<7>FU0<3>0FG4BK87OC3SH1\
+  W<6>gSwkWx<2>wglxkh<2>lwYhxU<6>IY2EU1<2>2ID1EH<2>D2SH1X<6>gTwkXx<2\
+  >wglxkh<2>lwXhxT<6>IX2ET1<2>2ID1EH<2>D2TI2X<6>hTxlXw<2>xhkwlg<2>kx\
+  XgwT<6>HX1DT2<2>1HE2DI<2>E1TI2Y<6>hUxlYw<2>xhkwlg<2>kxWgwS<6>HW1DS\
+  2<2>1HE2DI<2>E1UJ3Y<6>iUy<3>yij<3>jyW<7>GW0<3>0GF<3>F0U
+  cyclerange=0/255 periodicity=0
+  }
+
+mandelbrot-ghost   { ; copyright Kerry Mitchell 19jan98
+;
+; sample image for ghost_man
+;
+  reset=1960 type=formula formulafile=ghost.frm formulaname=ghost_man
+  center-mag=-0.68/0/0.85 params=1000000/4 float=y maxiter=256
+  inside=0 decomp=256 periodicity=0
+  colors=0VF<62>UyiVyiVyjWyjWxk<27>ijyijyjiyjiykhx<27>yWjyVjyViyUixU\
+  h<59>W0GV0GV0FU0FU1E<27>GF0GF0FG0FG0EH1<27>0UF cyclerange=0/255
+  }

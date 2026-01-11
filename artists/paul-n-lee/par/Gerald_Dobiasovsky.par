@@ -1,0 +1,683 @@
+D3_Jul3d   { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+             ; Tue, 21 Jan 2003 00:22:26
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Rot3d_D3_Jul corners=-1.64/1.64/-1.23/1.23
+ params=0/0/-1.5/1.5/-0.75/0/0/4/50/253 float=y maxiter=1000000000
+ outside=summ periodicity=0 colors=@altern.map
+ }
+
+D3_Man3d   { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+             ; Tue, 21 Jan 2003 00:22:26
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Rot3d_D3_Man
+ corners=-2.102784/0.6012163/-1.25159/0.77641
+ params=0/0/-1/1/0/0/0/4/50/253 float=y maxiter=1000000000
+ outside=summ periodicity=0 colors=@altern.map
+ }
+
+; ------------------------- OWENS4D.PAR -------------------------
+
+Peek_1 { ; ...a peek into Owens Space
+         ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+         ; Sun, 19 May 2002 21:48:12
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=RotOwensJulZiZjk corners=-1.6/1.6/-1.2/1.2
+ params=-0.75/0.75/30/0/0.25/0.5/0/0/50/253 float=y
+ maxiter=1000000000 outside=summ periodicity=0
+ colors=@altern.map
+ }
+
+Peek_2 { ; ...and another one
+         ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+         ; Sun, 19 May 2002 21:48:12
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=RotOwensJulZiZjk corners=-1.6/1.6/-1.2/1.2
+ params=-0.5/0.5/30/90/0.25/0.5/-0.25/0.25/50/253 float=y
+ maxiter=1000000000 outside=summ periodicity=0
+ colors=@altern.map
+ }
+
+; ------------------------- End of OWENS4D.PAR -------------------------
+
+
+;-------------------- Pars following --------------------------
+
+Inv4Klein_Group_1  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group
+ corners=-10.90761/10.90761/-8.180707/8.180707
+ params=0.86602540378444/1.86602540378444 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+Inv4Klein_Group_2  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group
+ center-mag=-4.44089e-015/3.10862e-015/0.5722363
+ params=0.86602540378444/0.87 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+Inv4Klein_Group_3  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group
+ center-mag=-5.32907e-015/7.10543e-015/0.08343137 params=1/2 float=y
+ periodicity=0 colors=@chroma.map
+ }
+
+Inv4Klein_Group_4  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group center-mag=-1.3047/-7.10543e-015/0.07093161
+ params=1/2.25 float=y maxiter=256 outside=atan periodicity=0
+ colors=@chroma.map
+ }
+
+Inv4Klein_Group_5  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group center-mag=-1.3047/-3.64153e-014/0.1069102
+ params=0.9/1.8 float=y maxiter=256 periodicity=0 colors=@chroma.map
+ }
+
+Inv4Klein_Group_6  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group center-mag=-1.3047/-1.42109e-014/0.03353532
+ params=0.99/1.98 float=y maxiter=256 periodicity=0
+ colors=@chroma.map
+ }
+
+Inv4Klein_Group_7  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Inv4Klein_Group center-mag=4.52648/0/0.1640166
+ params=0.86602540378444/2.3/-1/0.5 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+Mod4Klein_Group_1  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Mod4Klein_Group
+ corners=-4.01749/4.01749/-2.048485/3.977749 params=1/1/2/1.5/0/0
+ float=y periodicity=0 colors=@chroma.map
+ }
+
+Mod4Klein_Group_2  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Mod4Klein_Group
+ corners=-7.289188/1.594677/5.107935/-6.737217/1.594677/-6.737217
+ params=1/1/1/2/1/1 float=y periodicity=0 colors=@chroma.map
+ }
+
+Mod5Klein_Group_1  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Mod5Klein_Group
+ corners=2.408138/-2.408138/-5.688688/0.7330124/-2.408138/0.7330124
+ params=1/0.5/0.25/0.75/0/1.5/2.5/0 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+Mod5Klein_Group_2  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Mod5Klein_Group
+ corners=-374.0298/251.9447/-234.7405/234.7405
+ params=1/1.25/1/1.75/-0.25/0/2.5/0 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+Mod5Klein_Group_3  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Sat, 25 May 2002 08:00:52
+ reset=2002 type=formula formulafile=frac_ml.frm
+ formulaname=Mod5Klein_Group
+ corners=2.6930253/-0.94438741/-2.8427454/2.4755537/-1.1692268/2.3069241
+ params=1/1.25/1.5/2.25/0.25/0.5/1/0 float=y periodicity=0
+ colors=@chroma.map
+ }
+
+;-------------------------- End pars --------------------------
+
+;-------------------- Start of PAR -------------------
+
+comment { Some Latoocarfian parameters... }
+
+Number_01  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2000 type=latoocarfian function=sin/sin/sin/sin
+ corners=-4.032258/4.032258/-3.024194/3.024194
+ params=-1.57/1/2/-1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_02  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2000 type=latoocarfian function=sin/sin/sin/sin
+ corners=-4.032259/4.032259/-3.024194/3.024194
+ params=-2/1.6/-2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_03  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2000 type=latoocarfian function=sin/sin/sin/sin
+ corners=-4.032259/4.032259/-3.024194/3.024194
+ params=-1/1/-2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_04  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2000 type=latoocarfian function=sin/ident/ident/sin
+ corners=-4.032259/4.032259/-3.024194/3.024194
+ params=-1/1/-1/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_05  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=sin/sin/log/sin
+ corners=-7.029945/7.029945/-7.158452/3.386466
+ params=-1/1.57/1.57/1.57 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_06  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=sin/cos/sin/cos
+ corners=-3.917366/3.779929/-2.877736/2.895236
+ params=-1.57/1.57/1.57/1.57 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_07  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=sin/cos/cos/sin
+ corners=-3.917366/3.779929/-2.877736/2.895236
+ params=-1.57/1.57/1.57/1.57 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_08  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/cos/log/sin
+ corners=-6.884047/7.488664/-7.236758/3.542775
+ params=1.57/1.57/1.57/1.57 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_09  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=sin/cos/cos/sin
+ corners=-1.196632/1.385777/0.7858341/2.722641
+ params=1.2/-1.3/1.4/1.5 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_10  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/sin/sin/cos
+ corners=-3.197433/3.406192/-2.259031/2.693688
+ params=1.35/-1.35/1.35/1.35 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_11  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/sin/cos/cos
+ corners=-4.21411/3.942568/-3.168432/2.949076
+ params=1.57/-1.57/1.57/1.57 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_12  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/sin/sin/cos
+ corners=-2.699419/4.188871/-1.929178/3.23704
+ params=1/1/2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_13  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/log
+ corners=-9.79141/10.13312/-7.986742/6.956654
+ params=1/1/2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_14  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=sin/log/cos/log
+ corners=-12.22598/7.698548/-7.986742/6.956654
+ params=1/1/2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_15  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Wed, 4 Feb 2004 07:02:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/sin
+ corners=-2.730775/3.777692/-1.87091/3.01044
+ params=1/1/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+;----------------------- End of PAR -------------------
+
+;-------------------- Start of PAR ---------------------
+
+Number_16  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/cos
+ corners=-3.239746/3.268721/-2.061837/2.819514
+ params=1/2/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_17  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/cos
+ corners=-2.728477/3.344381/-1.898483/2.65616
+ params=2/1/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_18  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/cos/cos
+ corners=-0.8342913/4.801321/-2.150194/2.076515
+ params=2/1/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_19  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/sin
+ corners=-3.549054/4.58101/-3.085613/3.011934
+ params=2/1/2/-1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_20  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/sin
+ corners=-2.126971/1.577737/-1.70435/1.07418
+ params=2/1/-2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_21  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/cos/log
+ corners=-8.501247/7.952012/-8.349628/3.990316
+ params=2/1/-2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_22  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/cos/log
+ corners=-8.501247/7.952012/-8.349628/3.990316
+ params=2/1/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_23  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/cos/log
+ corners=-8.501247/7.952012/-8.349628/3.990316
+ params=2/2/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_24  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=sin/sin/sin/sin
+ corners=-4.117647/4.117647/-3.088235/3.088235
+ params=1/1/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_25  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/sin/sin
+ corners=-4.117647/4.117647/-3.088235/3.088235
+ params=1/1/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_26  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=sin/sin/sin/sin
+ corners=-4.117647/4.117647/-3.088235/3.088235
+ params=2/2/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_27  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=sin/sin/cos/sin
+ corners=-4.117647/4.117647/-3.088235/3.088235
+ params=1/1/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_28  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/cos/cos/cos
+ corners=-3.228235/3.228235/-1.575636/3.266717
+ params=1/1/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_29  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+                     ;
+ reset=2001 type=latoocarfian function=cos/sin/sin/cos
+ corners=0.3911148/3.654111/-1.575826/0.8714209
+ params=1/1/2/-2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_30  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Thu, 5 Feb 2004 07:16:33
+ reset=2001 type=latoocarfian function=cos/sin/sin/cos
+ corners=-4.953885/4.521355/-3.675321/3.431109
+ params=2/1/2/-2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+;-------------------- End of PAR -----------------------
+
+;------------------ Start of PAR ---------------------
+
+Number_31  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=cos/sin/sin/cos
+ corners=-4.953885/4.521355/-3.675321/3.431109
+ params=-1/-1/2/-2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_32  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=sin/cos/cos/sin
+ corners=-6.870226/6.437695/-5.112576/4.868364
+ params=1/1/3/-3 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_33  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=asin/sin/asin/sin
+ corners=-5.681818/5.681818/-4.261364/4.261364
+ params=3.14159265358979/3.14159265358979/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_34  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=sin/asin/sin/asin
+ corners=-5.126411/6.237226/-1.816774/6.705953
+ params=3.14159265358979/3.14159265358979/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_35  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=sin/asin/sin/asin
+ corners=-5.737359/5.626277/-1.816774/6.705953
+ params=2.71828182845905/3.14159265358979/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_36  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=sin/acos/sin/acos
+ corners=-13.02041/0.1814591/-1.771725/8.129679
+ params=2.71828182845905/3.14159265358979/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_37  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=cos/asin/cos/asin
+ corners=-3.924439/-2.621505/2.5883915/3.5655919
+ params=2/2/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_38  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=cos/asin/cos/asin
+ corners=-5.015268/-1.530677/1.77027/4.383713
+ params=2.71828182845905/2.71828182845905/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_39  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/acos/sin
+ corners=-5.120538/1.324287/0.6601826/5.493801
+ params=2.71828182845905/2.71828182845905/-2/2
+ float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_40  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/acos/sin
+ corners=-3.975715/7.109383/-2.655415/5.658409
+ params=2/2/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_41  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/cos/acos/sin
+ corners=-3.975715/7.109383/-2.655415/5.658409
+ params=2/2/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_42  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=cos/asin/sin/acos
+ corners=-10.72341/10.51473/-4.929214/10.99939
+ params=2/2/-2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_43  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=cos/asin/sin/acos
+ corners=-3.351484/3.50045/-1.772775/3.366175
+ params=2/2/-1/0.5 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_44  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/cos/acos
+ corners=-2.435012/5.283331/-1.395576/4.393181
+ params=2/2/1/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_45  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/cos/acos
+ corners=-1.236156/4.537164/-1.194501/3.135489
+ params=2/1/1/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_46  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/cos/acos
+ corners=-2.859903/6.16091/-1.930376/4.835234
+ params=3/1/1/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_47  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/cos/acos
+ corners=-5.692019/8.993026/-2.515938/8.497845
+ params=3/2/2/2 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_48  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+             ;a and b control the Lissajous coefficients
+ reset=2001 type=latoocarfian function=acos/sin/cos/acos
+ corners=-2.591823/5.749282/-1.572917/4.682912
+ params=3/2/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_49  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/sin/log
+ corners=-6.161078/9.721416/-8.4665/3.44537
+ params=1/1/1/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_50  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/sin/cos
+ corners=-2.755082/5.694404/-3.349552/2.987563
+ params=2/2/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+Number_51  { ; Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                     ; Fri, 6 Feb 2004 05:12:22
+ reset=2001 type=latoocarfian function=acos/sin/sin/cos
+ corners=-3.592511/6.331539/-3.86708/3.575958
+ params=1/2/2/1 float=y maxiter=1000
+ colors=@chroma.map
+ }
+
+;------------------- End of PAR -----------------------
+
+;---------------------- Begin of PARs -----------------------
+
+Quat-Test   { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+              ;      Sat, 14 Feb 2004 03:30:35
+              ;  Fractint Version 2003 Patchlevel 1
+ reset=2003 type=julibrot julibrotfromto=-1.5/1.5/0/0
+ julibroteyes=2.5 orbitname=quat corners=-2/2/-1.5/1.5
+ params=0/0/0/0 float=y
+ }
+
+QuatJul-Test  { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                ;      Sat, 14 Feb 2004 03:30:35
+                ;  Fractint Version 2003 Patchlevel 1
+ reset=2003 type=julibrot julibrotfromto=-1.5/1.5/0/0
+ julibroteyes=2.5 orbitname=quatjul corners=-2/2/-1.5/1.5
+ params=-0.75/0/0/0/0/0 float=y
+ }
+
+Hyp-Test    { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+              ;      Sat, 14 Feb 2004 03:30:35
+              ;  Fractint Version 2003 Patchlevel 1
+ reset=2003 type=julibrot julibrotfromto=-1.5/1.5/0/0
+ julibroteyes=2.5 orbitname=hypercomplex function=sqr
+ corners=-2/2/-1.5/1.5 params=0/0/0/0 float=y
+ }
+
+HypJul-Test  { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+               ;      Sat, 14 Feb 2004 03:30:35
+               ;  Fractint Version 2003 Patchlevel 1
+ reset=2003 type=julibrot julibrotfromto=-1.5/1.5/0/0
+ julibroteyes=2.5 orbitname=hypercomplexj function=sqr
+ corners=-2/2/-1.5/1.5 params=-0.75/0/0/0/0/0 float=y
+ }
+
+;-------------------- End of PARs -------------------------
+
+;----------------------- PARs following -----------------------
+
+Lauwerier   { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+              ;      Thu, 11 Mar 2004 04:44:00
+              ;  Press <Ctrl>+<o> after loading
+              ;
+ reset=2003 type=formula formulafile=frac_ml.frm
+ formulaname=oLauwerier corners=-2/2/-1.5/1.5
+ params=3/2/0.1/0.1 float=y maxiter=100000000
+ periodicity=0 viewwindows=4.2/0.75/yes/0/0
+ colors=@firestrm.map
+ }
+
+Hiram       { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+              ;      Thu, 11 Mar 2004 04:44:00
+              ;  Press <Ctrl>+<o> after loading, <,> to zoom out!
+              ;
+ reset=2003 type=formula formulafile=frac_ml.frm
+ formulaname=oHiram function=sqr corners=-2/2/-1.5/1.5
+ params=0.5/0 float=y maxiter=10000000 periodicity=0
+ viewwindows=4.2/0.75/yes/0/0
+ colors=@firestrm.map
+ }
+
+;------------------------ End of PARs -------------------------
+
+; ---------------------------- Parameters below ------------------------------
+
+T-set_in_3d  { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+               ;      Thu, 3 Nov 2005 02:45:56
+               ;  Greyscale depth image
+               ;
+ reset=2004 type=formula formulafile=Gerald_Dobiasovsky.frm
+ formulaname=Rot3d_T-set passes=g
+ center-mag=-0.68046/-0.24858/0.9363296
+ params=0/0/-0.75/0.75/0/0/0/4/150/253 float=y maxiter=2000000000
+ outside=summ periodicity=0
+ colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+ utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+ onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+ ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+ cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+ YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+ SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+ MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+ GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+ A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+ 4344435433333233324322222122213211111011102100000000PPP
+ }
+
+; ---------------------------- End of parameters -----------------------------
+
+Julibrot_Default  { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                    ;      Fri, 18 Nov 2005 06:32:35
+                    ;
+ reset=2004 type=formula formulafile=fml_post.frm
+ formulaname=3dJulibrot_simple corners=-2/2/-1.5/1.5
+ params=-0.83/-0.25/-0.83/0.25/150/253/4/0 float=y maxiter=2000000000
+ outside=summ periodicity=0 colors=@altern.map
+ }
+
+Along_Real_Axis   { ;  Gerald K. Dobiasovsky <gerald.dob@aon.at>
+                    ;      Fri, 18 Nov 2005 06:32:35
+                    ;
+ reset=2004 type=formula formulafile=fml_post.frm
+ formulaname=3dJulibrot_simple corners=-2/2/-1.5/1.5
+ params=0.25/0/-2/0/150/253/4/0 float=y maxiter=2000000000
+ outside=summ periodicity=0 colors=@altern.map
+ }
+
+
