@@ -1,40 +1,38 @@
-Path: unixg.ubc.ca!info.ucla.edu!psgrain!iafrica.com!ticsa.com!cstatd.cstat.co.za!ee.und.ac.za!ucthpx!ika.cs.uct.ac.za!amason
-From: amason@cs.uct.ac.za (Ashton Mason)
-Newsgroups: sci.fractals
-Subject: Organics.par revisited - periodicity errors
-Date: 31 Jul 1995 14:03:58 GMT
-Organization: University of Cape Town
-Lines: 94
-Message-ID: <3vinse$s92@ucthpx.uct.ac.za>
-NNTP-Posting-Host: ika.cs.uct.ac.za
- 
-Last week sometime, I posted a parameter file called organics.par, which
-contained examples of things that occur in the M-Set which I call
-organics. Ray Girvan suggested that they resembled the entire shape of
-certain Julia sets, so I decided to examine the Julia sets corresponding
-to the points in the M-Set where organics occur, to see whether these were
-particularly remarkable.
- 
-I found that the Julia sets at these points generally resemble the
-terrain in which the organics occur, with organic type parts of their
-own. In general, the structure was very similar to the structure of the
-Mandelbrot set in the corresponding position, which is not surprising.
- 
-However, I did find that Fractint is very prone to producing errors in
-the organic parts of these Julias, as the images in this parameter file
-show. After experimenting with various options, I came to the conclusion
-that the errors were caused by periodicity checking. Turing periodicity
-checking off solved the problem. I also noticed that the errors occured
-to a much greater extent when floating point was turned on, but still
-occured occasionally with integer math.
- 
-Are these errors common knowledge? Or am I doing something weird?
- 
-Ash
- 
- 
-errors.par
-----
+; Path: unixg.ubc.ca!info.ucla.edu!psgrain!iafrica.com!ticsa.com!
+;     cstatd.cstat.co.za!ee.und.ac.za!ucthpx!ika.cs.uct.ac.za!amason
+; From: amason@cs.uct.ac.za (Ashton Mason)
+; Newsgroups: sci.fractals
+; Subject: Organics.par revisited - periodicity errors
+; Date: 31 Jul 1995 14:03:58 GMT
+; Organization: University of Cape Town
+; Lines: 94
+; Message-ID: <3vinse$s92@ucthpx.uct.ac.za>
+; NNTP-Posting-Host: ika.cs.uct.ac.za
+;  
+; Last week sometime, I posted a parameter file called organics.par, which
+; contained examples of things that occur in the M-Set which I call
+; organics. Ray Girvan suggested that they resembled the entire shape of
+; certain Julia sets, so I decided to examine the Julia sets corresponding
+; to the points in the M-Set where organics occur, to see whether these were
+; particularly remarkable.
+;  
+; I found that the Julia sets at these points generally resemble the
+; terrain in which the organics occur, with organic type parts of their
+; own. In general, the structure was very similar to the structure of the
+; Mandelbrot set in the corresponding position, which is not surprising.
+;  
+; However, I did find that Fractint is very prone to producing errors in
+; the organic parts of these Julias, as the images in this parameter file
+; show. After experimenting with various options, I came to the conclusion
+; that the errors were caused by periodicity checking. Turing periodicity
+; checking off solved the problem. I also noticed that the errors occured
+; to a much greater extent when floating point was turned on, but still
+; occured occasionally with integer math.
+;  
+; Are these errors common knowledge? Or am I doing something weird?
+;  
+; Ash
+;  
  
 30079501           { ;
   reset=1920 type=julia passes=2
