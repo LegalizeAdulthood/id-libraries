@@ -7,11 +7,12 @@ from collections import defaultdict
 from file_entry import parse_file_entries, find_entry_by_name
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python locate-formulas.py <par_file>")
+    if len(sys.argv) != 3:
+        print("Usage: python locate-formulas.py <par_file> <sed script>")
         sys.exit(1)
 
     par_file = os.path.abspath(sys.argv[1])
+    sed_script = sys.argv[2]
 
     # Get script directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -109,25 +110,21 @@ def main():
         sys.exit(0)
 
     # Generate sed script
-    print("\n# Sed script to update the par file:")
-    print("# Run with: sed -i -f 'locate.sed' path_to_par_file")
-    print("# Or manually apply the changes")
     sed_lines = []
     for param_name, line, entry_name in missing_entries:
         if entry_name in chosen:
             new_file = chosen[entry_name]
             line = f"{line}, /^[^;]*}}/ {{ s/formulafile=[^ ][^ ]*/formulafile={new_file}/ }}"
             sed_lines.append(line)
-            print(line)
 
-    # Write to locate.sed in current directory
-    with open('locate.sed', 'w') as f:
+    # Write to sed script file
+    with open(sed_script, 'w') as f:
         f.write("# Sed script to update the par file\n")
         f.write("# Run with: sed -i -f 'locate.sed' path_to_par_file\n")
         f.write("# Or manually apply the changes\n")
         for line in sed_lines:
             f.write(line + '\n')
-    print(f"\nSed script written to locate.sed in the current directory.")
+    print(f"\nSed script written to {sed_script}")
 
 if __name__ == '__main__':
     main()
