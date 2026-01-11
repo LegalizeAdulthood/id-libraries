@@ -1,0 +1,20 @@
+xxx_bill           { ; Watch out for the stain Monica!      t=  0:02:43.40
+                     ; t=calc time [h:mm:ss.] using a PII-266 at 1600x1200
+                     ; (c) 1998 by Les St Clair [Par date: Sep 22, 1998]
+                     ; e-mail to: les_stclair@compuserve.com
+  reset=1920 type=formula formulafile=fractint.frm
+  formulaname=deltalog passes=t
+  center-mag=0.444924/-0.0932916/19.67339/1/-90 float=y inside=bof60
+  periodicity=0
+  colors=000<3>000KJRLKS<11>nru<15>OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT\
+  `WSYUR<4>HGM93F<4>C4J000<29>S0A000000V0B<5>`0Da0Db2D<14>zVF<14>b2Da0D`0D\
+  <4>W0B000000T0A<14>E03D03C03B03A03<10>000E5M<8>93FOI5<15>zpa<14>OI5000<2\
+  9>000
+  }
+
+
+FRM:DeltaLog(XAXIS) {; Mark Peterson
+  z = pixel, c = log(pixel):
+   z = sqr(z) + c
+    |z| <= 4
+  }
