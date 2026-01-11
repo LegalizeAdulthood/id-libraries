@@ -1,0 +1,76 @@
+PostedDate:  12/20/97 05:05:02 PM
+ReplyTo:  fractint@lists.xmission.com
+From:  LeeHSkinner@compuserve.com
+SendTo:  fractint@lists.xmission.com
+
+Mike,
+
+>>Out of curiosity, which image is it and is it on your website?<<
+
+(It isn't on my website yet.)
+
+c2821101           { ; Clouds Over Shiprock                   t=1:38:25.87
+                     ; on a P166 at 1600x1200  Dec 23, 1996  18:05:15
+                     ; Image Copyright 1996 by Lee H. Skinner ver=1950
+                     ; Carr2821 formula by Robert Carr, MD
+  reset=1950 type=formula formulafile=_rc2.frm
+  formulaname=carr2821 passes=1
+  center-mag=-0.09105370688279432/-0.43584099076037360/28818.8/1/-37.499
+  params=200/300/400/550 float=y maxiter=647 periodicity=0
+  colors=000V`o<2>PUgMSdKP`<7>000<4>A00C00C00<12>O00<6>zul<7>cAB`46`00<10>\
+  300<2>5JK<4>T`C<6>zc0<9>b60`00<7>zyn<8>yUF<7>x4R<16>03C<5>0O0<8>ZOobOudR\
+  u<3>kbs<5>HEJB9D657000234<4>EHOGJSIMXLPa<4>Xcz<15>000232<10>5Pw<6>zo`<5>\
+  5Pw<6>000CC9<17>pGd<5>_HsXIvXLv<2>XVsXYsX`rXcr
+  }
+
+The formula is:
+
+frm:carr2821 { ; Modified Sylvie Gallet frm. [101324,3444],1996
+           ; Converted to if.else by Sylvie Gallet and George Martin 3/97
+           ; passes=1 needs to be used with this PHC formula.
+   pixinv = 0.1/pixel
+   p9 = 0.9*pixinv
+   imagp1 = imag(p1)
+   imagp2 = imag(p2)
+   IF (whitesq)
+      z = zorig = pixel - conj(pixinv)
+      c = pixel - flip(pixinv) - conj(0.01*pixinv) - p9
+      mz = |z|
+   ELSE
+      c = flip(pixinv) + conj(0.01*pixinv) - pixel - p9
+      z = zorig = conj(pixinv) - pixel
+      mz = |z|
+   ENDIF
+   bailout = 16
+   iter = 0
+   :
+   IF (iter==p1)
+      z = mz = 0
+      c = 1.5*zorig^1.2 - p9
+   ELSEIF (iter==imagp1)
+      z = mz = 0
+      c = 2.25*conj(zorig) - p9
+   ELSEIF (iter==p2)
+      z = mz = 0
+      c = 3.375*flip(zorig) - p9
+   ELSEIF (iter==imagp2)
+      z = mz = 0
+      c = 5.0625*flip(zorig) - p9
+   ENDIF
+   z = mz*0.2 + z*z + c
+   mz = |z|
+   iter = iter + 1
+   mz <= bailout
+   }
+
+Lee
+
+-
+------------------------------------------------------------
+Thanks for using Fractint, The Fractals and Fractint Discussion List
+Post Message:   fractint@xmission.com
+Get Commands:   majordomo@xmission.com "help"
+Administrator:  twegner@phoenix.net
+Unsubscribe:    majordomo@xmission.com "unsubscribe fractint"
+
+
