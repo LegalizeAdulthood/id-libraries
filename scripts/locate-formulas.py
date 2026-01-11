@@ -63,7 +63,11 @@ def main():
 
     # For each missing entry, find files that contain the entry
     chosen = {}
+    prompted = set()
     for param_name, line, entry_name in missing_entries:
+        if entry_name in prompted:
+            continue
+
         print(f"\nEntry '{entry_name}' missing for parameter '{param_name}' at line {line}")
 
         candidates = []
@@ -93,6 +97,7 @@ def main():
                     break
                 if 1 <= choice <= len(candidates):
                     chosen[entry_name] = candidates[choice - 1]
+                    prompted.add(entry_name)
                     break
                 else:
                     print("Invalid choice.")
