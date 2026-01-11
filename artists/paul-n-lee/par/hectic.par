@@ -1,0 +1,571 @@
+Path: unixg.ubc.ca!nntp.cs.ubc.ca!newsxfer.itd.umich.edu!europa.eng.gtefsd.com!howland.reston.ans.net!ee.und.ac.za!nntp.und.ac.za!cs.uct.ac.za!europa!amason
+From: amason@cs.uct.ac.za (Ashton Mason)
+Newsgroups: alt.binaries.pictures.fractals
+Subject: Hectic.par: Fractint parameter file with 056.jpg
+Date: 13 May 1994 10:28:26 -0000
+Organization: Computer Science Department, University of Cape Town
+Lines: 560
+Message-ID: <amason.768824750@europa>
+NNTP-Posting-Host: europa.cs.uct.ac.za
+Keywords: hectic.par 056.jpg
+ 
+ 
+; Hectic.par v1.0
+; Parameter file by Ashton Mason 1993
+; amason@cs.uct.ac.za
+;
+; This file contains a lot of stuff at fairly high magnifications ( up to
+; x10^12 ), as well as some others at more reasonable depths. The results of
+; deep searching are sometimes seriously amazing, so it's worth the trouble.
+; It helps a lot to have a coprocessor for the hectic images, to stave off
+; the brick wall effect where the integer maths runs out of accuracy.
+; 486's should have no trouble, I imagine. Nearly all the images are the
+; result of my own sunday afternoons and late nights; where they are not,
+; credit is given in the comments.
+ 
+ 
+002                { ; cycle vortex
+                     ; julia taken from Pieter Branderhorst
+  reset type=julia corners=-1.032595/-0.907029/-0.07522/0.0185483
+  params=-0.833062/0.194798 maxiter=2000
+  colors=000900<5>000<9>P35S36V36Y36`37<6>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr5Cq4Cp4Co3B\
+  <6>h6Ig6Jh6K<6>k8Sl9Tm9Un9VnAW<19>yHqzIszJr<29>zqPzsOzsP<29>zyxzzzyzz<45>Fzg\
+  DzfDyf<37>KE9KC8KB7K96K85<3>K21L00K00<7>A00
+  }
+ 
+003                { ; sodium
+  reset type=mandel
+  corners=-0.177579146/-0.177506542/-0.662062708/-0.662008284 maxiter=1024
+  inside=0 logmap=yes
+  colors=000wZI<27>vNs<11>GiR<48>H8NH7NH6NH6NG5OG5O<58>91p91pA3o<32>Xtm<38>c9E\
+  c8Dc9D<4>dBFdBFeDF<7>rV9sX9uZ8wa7w`8w`9<4>wZG
+  }
+ 
+004                { ; sodium2 - intricacy
+  reset type=mandel
+  corners=-0.177550755/-0.177532902/-0.662041215/-0.662027832
+  maxiter=30000 inside=0 logmap=50
+  colors=000WNY<9>xxK<15>G1d<15>xxK<15>G1d<15>xxK<15>G1d<15>xxK<15>G1d<15>xxK<\
+  15>G1d<15>xxK<5>WNYXPX<7>G1d<15>xxK<15>G1d<15>xxK<15>G1d<4>UJZ
+  }
+ 
+005                { ; sodium3
+  reset type=mandel
+  corners=-0.17754621433/-0.17754403627/-0.66203316059/-0.66203152786
+  float=y maxiter=30000 inside=0 logmap=50
+  colors=000U9E<15>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>000110\
+  330<29>zz0<30>220000000<29>000000200<12>S9D
+  }
+ 
+001                { ; the vortex
+  reset type=mandel
+  corners=-0.17945908/-0.17616809/-0.66256865/-0.66009991 maxiter=1024
+  inside=0
+  colors=000zz0<8>zz0<14>0zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<2\
+  5>i73<9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<4>OFMOGLOILPKKPJJ<28>e33f22g11h00i00<14>\
+  xF0zG0z00<3>z00<13>zz0<6>zz0
+  }
+ 
+007                { ; that radioactive swamp thing
+  reset type=mandel
+  corners=-1.242022126298/-1.242021467502/-0.323926302774/-0.323925805978
+  float=y maxiter=10000 inside=0
+  colors=000000<30>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>000110\
+  330<29>zz0<30>220000000<29>000
+  }
+ 
+008                { ; decent newton - nice colours
+  reset type=newton passes=t corners=-2.0/2.0/-1.5/1.5 params=7 float=y
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<14>zzz
+  }
+ 
+009                { ; colour minimandelbrot
+  reset type=mandel passes=t
+  corners=0.43619162/0.43876728/-0.21136256/-0.20942647 maxiter=1024
+  colors=CCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssE\
+  ssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<9>CsY
+  }
+ 
+011                { ; alice
+  reset type=mandel
+  corners=0.377859602/0.378252378/0.200642474/0.200936902 maxiter=1024
+  inside=0
+  colors=000bb0<11>zz0<30>220000000<29>000000200<29>zKT<30>210000000<14>000010\
+  030<29>0z0<30>020000000<14>000110330<16>``0
+  }
+ 
+012                { ; closeup of something rather nasty
+  reset type=mandel
+  corners=0.42795101845/0.42795279896/-0.20610525592/-0.20610392108
+  float=y maxiter=1024 inside=0
+  colors=0000m0<23>020000000<14>000110330<29>zz0<30>220000000<29>000000200<29>\
+  zKU<30>211000000<14>000010030<29>0z0<5>0o0
+  }
+ 
+013                { ; transient product - minimandelbrot
+  reset type=mandel
+  corners=-0.85580804466/-0.85580169837/-0.21839574393/-0.21839098667
+  float=y maxiter=512 inside=0
+  colors=000WW0<14>220000000<29>000000200<29>zKU<30>211000000<14>000010030<29>\
+  0z0<30>020000000<14>000110330<29>zz0<14>YY0
+  }
+ 
+014                { ; chaotic contact
+  reset type=mandel corners=-0.87664777/-0.87079184/0.25328122/0.25767355
+  maxiter=512 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+015                { ; wired
+  reset type=mandel
+  corners=-0.873397458/-0.873282006/0.25460102/0.254687564 maxiter=512
+  inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+016                { ; meet wired - alive and closeup
+  reset type=mandel
+  corners=-0.87334126534/-0.87333928477/0.25464263425/0.25464411895
+  float=y maxiter=1024 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+010                { ; powercore - minimandelbrot
+  reset type=mandel
+  corners=-1.08899398/-1.08905282/-0.255677179/-0.255405247/-1.08914565/-0.255\
+  474839 maxiter=1024 inside=0
+  colors=000zz0<30>220000000<29>000000200<29>zKT<30>210000000<14>000010030<29>\
+  0z0<30>020000000<14>000110330<28>xx0
+  }
+ 
+017                { ; juliaesque
+  reset type=mandel
+  corners=-1.67444712906/-1.67444606906/0.000156273272/0.000157068272
+  float=y maxiter=1500 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+018                { ; hectic halo
+  reset type=mandel
+  corners=-1.67444655932724/-1.67444655769356/0.00015668439851/0.0001566856237
+  float=y maxiter=1500
+  colors=000EWz<11>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m\
+  2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E\
+  00F00G<23>00x00z01z<14>DUz
+  }
+ 
+019                { ; seahorse at 190,000,000x depth
+  reset type=mandel
+  corners=-0.7318685707911/-0.7318685568401/0.2242077613995/0.2242077718575
+  float=y maxiter=1500 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+020                { ; what is *that*?
+                     ; cycle me
+  reset type=mandel
+  corners=-0.7318685637653938/-0.7318685637573062/0.2242077681910732/0.2242077\
+  681970825 float=y maxiter=1500 inside=0
+  colors=000wp0<20>i73<9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<7>PKK<28>d44e33f22g11h00<\
+  15>xF0zG0z00<3>z00<13>zz0<16>zz0<14>0zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15\
+  >zVz<14>zz0<3>xr0
+  }
+ 
+021                { ; frog salad
+  reset type=mandel
+  corners=-0.69146955414/-0.69146694245/-0.46589681935/-0.46589486156
+  float=y maxiter=1024 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+022                { ; eye spy ..
+  reset type=mandel
+  corners=-0.6846168023075/-0.6846167078675/0.3849627596785/0.3849628304711
+  float=y maxiter=1024 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+023                { ; eye of all seeing
+  reset type=mandel
+  corners=-0.6846167650571/-0.6846167454135/0.3849627884513/0.3849628031762
+  float=y maxiter=1024 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+024                { ; eyes of nature
+  reset type=mandel corners=-0.659062/1.900938/-0.96/0.96 float=y
+  maxiter=1000 inside=0 invert=0.5/0/0 distest=1000/33
+  colors=000WNY<9>xxK<15>G1d<15>xxK<15>G1d<15>xxK<15>G1d<15>xxK<15>G1d<15>xxK<\
+  15>G1d<15>xxK<5>WNYXPX<7>G1d<15>xxK<15>G1d<15>xxK<15>G1d<4>UJZ
+  }
+ 
+025                { ; swastika
+  reset type=mandel
+  corners=-0.691468230224/-0.691468122956/-0.4658958761806/-0.4658957957702
+  float=y maxiter=1024 inside=0
+  colors=000AAE<3>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19Q<13>MMiONkQP\
+  k<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyv\
+  zzzyyy<22>GGGEEECCE
+  }
+ 
+026                { ; lightning type thing
+  reset type=mandel corners=-0.166525444/-0.166477835/1.0406027/1.04063839
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<14>zzz
+  }
+ 
+027                { ; interesting spiked blob
+  reset type=mandel
+  corners=-0.16650180172903/-0.16650179958328/1.04062170214654/1.0406217037559\
+  7 float=y maxiter=1024
+  colors=0005Dz<21>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m\
+  2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E\
+  00F00G<23>00x00z01z<4>4Bz
+  }
+ 
+028                { ; plasma beach
+  reset type=mandel
+  corners=-1.999774058469714/-1.999774058365711/0.0000000065027814/0.000000006\
+  5806842 float=y maxiter=1024 inside=0
+  colors=000Nzj<7>FzgDzfDyf<37>KE9KC8KB7K96K85<3>K21L00K00<8>90070060040030010\
+  0000<20>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr5Cq4Cp4Co3B<6>h6Ig6Jh6K<6>k8Sl9Tm9Un9VnAW<1\
+  9>yHqzIszJr<29>zqPzsOzsP<29>zyxzzzyzz<36>Ozk
+  }
+ 
+029                { ; plasmabeach2
+  reset type=mandel
+  corners=-1.999774058397185/-1.99977405839605/0.00000000653912477/0.000000006\
+  54001825 float=y maxiter=1024 inside=0
+  colors=000Y36<7>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn3C<5>h6Ig6Jh6K<4>j7Qk8Rk8Sl9T\
+  m9U<21>yHqzIszJr<29>zqPzsOzsP<27>zyvzywzyxzzzyzzxzz<44>FzgDzfDyf<35>KHBKFAKE\
+  9KC8KB7<3>K53K42K21L00<9>900700600400300100000<11>V36
+  }
+ 
+030                { ; sting
+  reset type=mandel
+  corners=-0.00332621858/-0.00332978927/0.716730656/0.716727979
+  maxiter=1024 inside=0
+  colors=000zz0<2>zz0<14>0zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<2\
+  5>i73<9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<7>PKK<28>d44e33f22g11h00<15>xF0zG0z00<3>\
+  z00<13>zz0<12>zz0
+  }
+ 
+031                { ; the razor wire
+  reset type=mandel
+  corners=0.374628484503/0.374629317703/0.101424140071/0.101424720021
+  float=y
+  colors=0000zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2\
+  >hhhhhhfdf<6>QAQN5NN7N<4>OFMOGLOILPKKPJJ<28>e33f22g11h00i00<14>xF0zG0z00<3>z\
+  00<13>zz0<16>zz0<13>4ze
+  }
+ 
+032                { ; diamond hull
+  reset type=mandel
+  corners=0.3746288840118/0.3746289051551/0.1014244426653/0.1014244573821
+  float=y maxiter=1024 inside=0
+  colors=000e33<3>h00i00j10<13>xF0zG0z00<3>z00<13>zz0<16>zz0<14>0zh<16>0Uz<14>\
+  z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<4\
+  >OFMOGLOILPKKPJJ<26>d33
+  }
+ 
+034                { ; reactor zzom
+  reset type=mandel
+  corners=-0.1512340435852838/-0.1512340435843261/1.043283319177496/1.04328331\
+  9178241 float=y maxiter=10000 inside=0
+  colors=000211000<15>000010030<29>0z0<30>020000000<14>000110330<29>zz0<30>220\
+  000000<29>000000211<29>zKU<29>422
+  }
+ 
+033                { ; reactor
+                     ; K. Bird
+  reset type=mandel
+  corners=-0.151234043792818/-0.151234043256966/1.043283319008408/1.0432833194\
+  0917 float=y maxiter=1024 inside=0
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<27>OszPuzOty<30>1BR09P19\
+  Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<\
+  19>uu0<16>yyvzzzyyywwwuuu
+  }
+ 
+035                { ; rosegarden
+  reset type=mandel
+  corners=-0.87938031/-0.879233912/-0.221084358/-0.220974617 maxiter=2000
+  inside=0 logmap=75
+  colors=000qCb<13>yHqzIszJr<29>zqPzsOzsP<27>zyvzywzyxzzzyzzxzz<44>FzgDzfDyf<3\
+  5>KHBKFAKE9KC8KB7<3>K53K42K21L00<9>900700600400300100000<9>P35S36V36Y36`37<4\
+  >m49o5Ar5At6Bw6Bz7C<2>y7Cx6Cw6Cv6Cv6C<3>r5Cq4Cp4Co3Bn3C<5>h6Ig6Jh6K<4>j7Qk8R\
+  k8Sl9Tm9U<6>qCa
+  }
+ 
+036                { ; gold minimandelbrot 
+  reset type=mandel
+  corners=-0.74543892033/-0.74541806988/-0.11300775036/-0.1130095385/-0.745431\
+  29839/-0.11299945787 float=y maxiter=1000 bailout=50 inside=0
+  colors=0009da8da<24>C8AD79D79<51>jX8jX8iW8<27>MBALBAKAAKAALBA<28>cT8dU7dT7<5\
+  7>K9BGAB<29>zz0<8>LVY<8>Ca`000kkk
+  }
+ 
+037                { ; decent julia
+  reset type=julia corners=-1.505477/1.499217/-1.124217/1.13048
+  params=-0.204812/-0.66331584 maxiter=10000 inside=0 logmap=yes
+  colors=0007Hz<19>OszPuzOty<30>1BR09P19Q<13>MMiONkQPk<13>wwyzzzzwx<14>z0N<3>m\
+  2Kj2Jh3I<13>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzzzyyy<22>GGGEEECCE<4>22E\
+  00F00G<23>00x00z01z<6>6Fz
+  }
+ 
+038                { ; complex2 - 020 zoomed
+  reset type=mandel
+  corners=-0.7318685637629178/-0.7318685637614279/0.2242077681936419/0.2242077\
+  681947454 float=y maxiter=1500 inside=0
+  colors=000Nzj<7>FzgDzfDyf<41>K85K64K53K32K21L00<9>900700600400300100000<20>r\
+  5At6Bw6Bz7Cz7C<7>t5Cs5Cr5Cq4Cp4Co3B<2>l5Ek5Fj5Gi5Hh6Ig6J<5>j7Pk8Rk8Sl9Tm9U<2\
+  1>yHqzIszJr<29>zqPzsOzsP<29>zyxzzzyzz<36>Ozk
+  }
+ 
+039                { ; complex3
+  reset type=mandel
+  corners=-0.7318685637620823/-0.7318685637618695/0.2242077681943562/0.2242077\
+  681945157 float=y maxiter=1500
+  colors=000GaQ<18>KE9KC8KB7K96K85<3>K21L00K00<8>900700600400300100000<9>P35S3\
+  6V36Y36`37<6>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr5Cq4Cp4Co3B<6>h6Ig6Jh6K<6>k8Sl9Tm9Un9V\
+  nAW<19>yHqzIszJr<29>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<17>GbR
+  }
+ 
+040                { ; the sword - log pallette mandelbrot
+  reset type=mandel
+  corners=-0.209245702/-0.20923808/-0.683545327/-0.683539612 float=y
+  maxiter=10000 inside=0 logmap=100
+  colors=00000W<7>000<15>zz0<15>000<15>0z0<15>000<15>z0z<14>40400K<15>zzz<14>4\
+  4N000<15>WWW<14>000<15>z00<15>000<15>0zz<15>000<15>00z<6>00_
+  }
+ 
+041                { ; fractalhead
+  reset type=mandel
+  corners=-1.8613634020213/-1.8613633271027/0.0002034768429/0.0002035330135
+  float=y maxiter=1000 inside=0
+  colors=000d0K<8>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhfdf<6>QAQN5NN7N\
+  <4>OFMOGLOILPKKPJJ<28>e33f22g11h00i00<14>xF0zG0z00<3>z00<13>zz0<16>zz0<14>0z\
+  h<16>0Uz<14>z00<16>U0U<3>b0M
+  }
+ 
+042                { ; headhunter
+  reset type=mandel corners=0.378088314/0.37837992/0.205412256/0.205631739
+  maxiter=1000 inside=0
+  colors=000y7C<8>r5Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<2\
+  9>zqPzsOzsP<27>zyvzywzyxzzzyzzxzz<44>FzgDzfDyf<39>KB7K96K85K64K53K32K21L00<7\
+  >B00A00900700600400<2>000<20>r5At6Bw6Bz7Cz7C
+  }
+ 
+043                { ; organic
+  reset type=mandel
+  corners=-1.860573960772494/-1.860573960763697/-0.00000093291442967/-0.000000\
+  93290797095 float=y maxiter=10000 inside=0
+  colors=0000B0<25>0z0<30>020000000<14>000110330<29>zz0<30>220000000<29>000000\
+  200<29>zKU<30>211000000<14>000010030<2>090
+  }
+ 
+044                { ; torn
+  reset type=lambdafn function=cosh corners=-4.0/4.0/-3.0/3.0
+  params=1/0.38 float=y maxiter=512 inside=255 potential=255/455/0
+  colors=000O03<141>800zzi<44>zz1zz0zy0yx0<46>OJ4NI4MG5<13>000
+  }
+ 
+045                { ; under construction
+  reset type=julia passes=t corners=-2.0/2.000012/-1.500014/1.5
+  params=-0.873306635451563/0.0396457745125 fillcolor=0 inside=bof60
+  outside=imag
+  colors=000E46<23>zKU<30>211000000<14>000010030<29>0z0<30>020000000<11>000
+  }
+ 
+046                { ; under construction2
+  reset type=mandel passes=t corners=-1.539724/-0.563735/-0.366009/0.366
+  fillcolor=0 inside=bof60 outside=imag
+  colors=000sss<19>GGGEEECCE<4>22E00F00G<23>00x00z01z<28>Puz<31>1BR09P19Q<13>M\
+  MiONkQPk<13>wwyzzzzwx<14>z0Nv0M<18>4B7<9>EXLCYLA_K<14>zyyzzz<19>uu0<16>yyvzz\
+  zyyywwwuuu
+  }
+ 
+047                { ; the maelstrom
+  reset type=lambdafn function=sin corners=-4.0/4.0/-3.0/3.0 params=1/0.4
+  maxiter=1000 inside=0 invert=1/0/0
+  colors=CCCoCC<20>ACCCCC<21>sCs<20>ECsCCsCEs<6>CSsCUsEUq<20>z_0k00000ECE<20>s\
+  Cs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<19>ssEssCsqC<19>sECsC\
+  CqCC
+  }
+ 
+006                { ; galaxy
+  reset type=lambdafn function=sin
+  corners=-0.199997/0.199768/-0.149673/0.149994 params=1/0.4 maxiter=1000
+  inside=maxiter
+  colors=000s1ht0h<6>NRE<3>3Dw<7>4SjF6D<21>lQY<5>529<26>hipikrikr<19>amwamw`kt\
+  <15>SKD<2>zKX<30>TeCDS2<5>IXMJXQKYTKYWJWX<10>EFbEDbGDa<14>n5F<17>LrIJuIJqLKl\
+  NKhQ<6>Pi4Qi1Qi0Qf5<2>Q_PQXWRWW<27>r2h
+  }
+ 
+048                { ; denizen1
+  reset type=mandel
+  corners=-0.198534209/-0.198248407/0.807695894/0.807910139 maxiter=1000
+  inside=0
+  colors=000TGY<7>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhf\
+  df<7>N5N<7>OILPKKPJJ<29>f22g11h00i00j10<13>xF0zG0z00<3>z00<13>zz0<16>zz0<14>\
+  0zh<16>0Uz<5>PIa
+  }
+ 
+049                { ; denizen2
+  reset type=mandel
+  corners=-0.198397646/-0.198388124/0.807802478/0.807809616 maxiter=1000
+  inside=0
+  colors=000TGY<7>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhf\
+  df<7>N5N<7>OILPKKPJJ<29>f22g11h00i00j10<13>xF0zG0z00<3>z00<13>zz0<16>zz0<14>\
+  0zh<16>0Uz<5>PIa
+  }
+ 
+050                { ; malice1
+  reset type=mandel
+  corners=-0.12290042631711/-0.12290042329262/-0.9838531892936/-0.983853187046\
+  17 float=y maxiter=5000 inside=0
+  colors=000zAM<10>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhfdf<7>N5N<7>OILPKKPJJ<29>f2\
+  2g11h00i00j10<13>xF0zG0z00<3>z00<13>zz0<16>zz0<14>0zh<16>0Uz<14>z00<16>U0U<1\
+  3>x02z00z13<3>z9I
+  }
+ 
+051                { ; malice2 - crown of thorns
+  reset type=mandel
+  corners=-0.122900424899233/-0.12290042479984/-0.9838531882427095/-0.98385318\
+  81688809 float=y maxiter=5000 inside=0
+  colors=000zKq<28>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<41>K85K64K53K32K21L00<9\
+  >900700600400300100000<20>r5At6Bw6Bz7Cz7C<7>t5Cs5Cr5Cq4Cp4Co3B<2>l5Ek5Fj5Gi5\
+  Hh6Ig6J<5>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr
+  }
+ 
+052                { ; malice3 - fireworks
+  reset type=mandel
+  corners=-0.1229004248632337/-0.122900424846141/-0.9838531882288761/-0.983853\
+  1882161945 float=y maxiter=5000 inside=0
+  colors=000IIC<7>K85K64K53K32K21L00<9>900700600400300100000<20>r5At6Bw6Bz7Cz7\
+  C<7>t5Cs5Cr5Cq4Cp4Co3B<2>l5Ek5Fj5Gi5Hh6Ig6J<5>j7Pk8Rk8Sl9Tm9U<21>yHqzIszJr<2\
+  9>zqPzsOzsP<29>zyxzzzyzz<45>FzgDzfDyf<32>IJD
+  }
+ 
+053                { ; malice4 - burnout - 45,000,000,000,000
+  reset type=mandel
+  corners=-0.12290042485383/-0.122900424853768/-0.9838531882217585/-0.98385318\
+  82217143 float=y maxiter=5000 inside=0
+  colors=000000<20>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8Rk8Sl9\
+  Tm9U<21>yHqzIszJr<29>zqPzsOzsP<27>zyvzywzyxzzzyzzxzz<44>FzgDzfDyf<39>KB7K96K\
+  85K64K53K32K21L00<7>B00A00900700600400300100
+  }
+ 
+054                { ; the mouth of infinity
+  reset type=mandel
+  corners=0.272731148/0.272855004/-0.47816645/-0.478073588 maxiter=5000
+  inside=0 logmap=yes
+  colors=000vduxewzfy<19>DXy<25>ig5kh2kh3<39>qBgrAiqBg<17>iRJiRIgPK<11>PDc<18>\
+  0dF<13>gj1jk0mk0pk0<8>bc7`b8ZaA<5>NVKLUMISOFQQ<4>9IP8GP8FP<4>BALC9KF8J<12>n6\
+  4<22>LIG<23>ucs
+  }
+ 
+055                { ; the mouth2
+  reset type=mandel
+  corners=0.272751977242/0.272752681321/-0.478093526846/-0.47809299905
+  float=y maxiter=5000 inside=0 logmap=yes
+  colors=000mOk<2>v5x<15>p6pp6oo6oo6o<16>gKjgLjfMjfNjeOjePi<23>SldSmdRndQocPod\
+  OpdNpeMqf<20>rwpsxquxqwyrvxr<15>fdwecxdbxc`yc`yd`y<28>xZxyYwxYvwZtv_s<26>TCO\
+  SBNRAMP9KP9KPAK<62>WyN<4>jVg
+  }
+ 
+056                { ; organizm
+  reset type=mandel
+  corners=-1.18467139456/-1.18466963633/0.30293069539/0.30293201364
+  float=y maxiter=1024 inside=0
+  colors=000PGF<2>LIH<26>zfz<19>DXz<23>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJg\
+  PL<10>REbPDdOEc<17>0dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9\
+  LF8K<12>n65<18>QGF
+  }
+ 
+057                { ; fireseed
+  reset type=mandel
+  corners=-1.0275339674007/-1.02753396171829/0.36086498657456/0.36086499083393
+  float=y maxiter=1024 inside=0
+  colors=000TGY<7>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhf\
+  df<6>QAQN5NN7N<7>PKK<26>b66c55d44e33f22g11h00<15>xF0zG0z00<3>z00<13>zz0<16>z\
+  z0<14>0zh<16>0Uz<5>PIa
+  }
+ 
+058                { ; fireseed2
+  reset type=mandel
+  corners=-1.027534026604/-1.02753389526/0.3608649159277/0.3608650143788
+  float=y maxiter=1024 inside=0
+  colors=000YyyXzz<58>GJUFIUFHTEHTEGSDFR<33>qxeszfsyf<30>cGxcFxbDyaBz<52>_12Z0\
+  0Z00<63>Yxx
+  }
+ 
+059                { ; fireseed3
+  reset type=mandel
+  corners=-1.027533975825/-1.0275339485055/0.3608649785508/0.3608649990287
+  float=y maxiter=1024 inside=0
+  colors=000TGY<7>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<9>ggg<2>hhhhhhf\
+  df<6>QAQN5NN7N<7>PKK<26>b66c55d44e33f22g11h00<15>xF0zG0z00<3>z00<13>zz0<16>z\
+  z0<14>0zh<16>0Uz<5>PIa
+  }
+ 
+060                { ; connected
+  reset type=mandel
+  corners=-1.16588096/-1.1658643/-0.21380198/-0.213789489 maxiter=1024
+  inside=0
+  colors=000izC<10>0zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<\
+  9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<7>PKK<27>c55d44e33f22g11h00<15>xF0zG0z00<3>z00\
+  <13>zz0<16>zz0<2>mz9
+  }
+ 
+061                { ; twirlything - the summer of love
+  reset type=mandel corners=-1.3377986/-1.33759598/0.053712953/0.053864555
+  maxiter=1024 inside=0
+  colors=000N_i<15>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<17>0\
+  dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<2\
+  6>zfz<19>DXz<6>M_k
+  }
+ 
+062                { ; twirlything2
+  reset type=mandel
+  corners=-1.3377459/-1.33773758/0.0537965763/0.0538028777 maxiter=1024
+  inside=0
+  colors=000EXx<22>ffAhg8ig6kh3kh4<39>qBhrAjqBh<17>iRKiRJgPL<10>REbPDdOEc<17>0\
+  dG<16>pk0<8>bc8`b9ZaB<5>NVLLUNISPFQR<4>9IQ8GQ8FQ<4>BAMC9LF8K<12>n65<22>LIH<2\
+  6>zfz<19>DXz
+  }
+ 
+063                { ; twirlything3
+  reset type=mandel
+  corners=-1.33774295329/-1.33774122065/0.05379910542/0.05380040448
+  float=y maxiter=5000 inside=0
+  colors=000Nzj<7>FzgDzfDyf<39>KB7K96K85K64K53K32K21L00<7>B00A00900700600400<2\
+  >000<20>r5At6Bw6Bz7Cz7C<9>r5Cq4Cp4Co3Bn4C<5>h6Ig6Jh6K<4>j7Pk8Rk8Sl9Tm9U<21>y\
+  HqzIszJr<29>zqPzsOzsP<27>zyvzywzyxzzzyzzxzz<35>Ozk
+  }
+ 
+temp               {
+  reset type=mandel
+  corners=-1.16588096/-1.1658643/-0.21380198/-0.213789489 maxiter=1024
+  inside=0
+  colors=000izC<10>0zh<16>0Uz<14>z00<16>U0U<13>x02z00z13<15>zVz<14>zz0<25>i73<\
+  9>ggg<2>hhhhhhfdf<6>QAQN5NN7N<7>PKK<27>c55d44e33f22g11h00<15>xF0zG0z00<3>z00\
+  <13>zz0<16>zz0<2>mz9
+  }
+ 
