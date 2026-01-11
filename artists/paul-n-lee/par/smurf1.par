@@ -1,0 +1,165 @@
+arrow              { ; formula Wineglass                                   MULT
+                     ; Run Time on 386sx 16 - 19 minutes
+  reset type=formula formulafile=fractint.frm formulaname=Wineglass
+  corners=-0.650529/-0.306983/-0.128843/0.128827 maxiter=256 inside=0
+  outside=mult logmap=yes
+  colors=00000S88YBBaDDeEEiFFmHHsKKwNNzOOz<2>WWzZZzccz00522755977BAAF<11>cchee\
+  jffl<2>mmrppurrvttwuuxP0P<2>c0cg0gj0jm0mp0p<3>z0zzFz<6>zmzgfoZ`iTVdPR`<2>HJU\
+  FHUCHS9LV0OY0Tc0Yh<2>0jw5mz0ozFpz<5>hpzmpzppz000555<18>zzz00V88Y<6>NNz<13>nn\
+  zppzttzvvzP0PU0UZ0Zc0cg2gh0hm0mr0rw0wz0zzCzzKzzRzzYzzczzhz000555<3>HHHKKKOOO\
+  SSSWWW___ccchhhmmmssszzzz00zICzNGzQNzTS<3>zbbzeezhizjkzlozopzts000555<3>HHHK\
+  KKOOOSSSWWW___ccchhhmmmssszzz00P00X08_8DaCFcHEgKHlNGrLOqJVqHar5gtTjv_nwduzlw\
+  z000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzV0W_0_c4de9fg2gi9jlAmoDprCst0uwCu\
+  z5zzRzzYzzczzhzzkzzoz<3>zzz00z0z0z00
+  }
+
+cross              { ; Formula Jm_04 RECIP/IDENT/SIN/IDENT                 REAL
+                     ; Run Time on 386sx 16 - 54 minutes
+  reset type=formula formulafile=fractint.frm formulaname=Jm_04
+  function=recip/ident/sin/ident
+  corners=-1.3624125/-1.447265/-0.056584/0.056569/-1.447265/0.056569
+  maxiter=256 inside=0 outside=real
+  colors=00000S88YBBaDDeEEiFFmHHsKKwNNzOOzRRzSZzTdzWizerz00522755977BAAFCCHFFK\
+  HHLKKPMMQPPTRRWUUYWW_ZZc<7>rrwttywwzyyyP0PU0UZ0Zc8cg0g<2>p0ps0su0uw0wz0zzKz<\
+  6>zrzdhoY`iSVdPR`NOYLMVJJRHHPFEMCBIB8E000z00zCCzGGzNNzOOzTTzVVzZZz``zcc<4>zn\
+  n000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00X08_8DaCFcHEgKHlNGrLOzJVzHaz5gz\
+  Tjz_nzdqzgvz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzP0PU0UZ0Zc0cg2gh0hm0mr\
+  0rw0wz0zzCzzKzzRzzYzzczzhz000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzz00zICzN\
+  GzQNzTS<3>zbbzeezhizjkzlozopzts000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzz00P\
+  00X08_8DaCFcHEgKHlNGrLOqJVqHar5gtTjv_nwduxzyz000555<3>HHHKKKOOOSSSWWW___ccch\
+  hhmmmssszzzV0W_0_c4de9fg2gi9jlAmoDprCst0uwCuz5zzRzzYzzczzhz000555<2>EEEzzz00\
+  z0z0z00
+  }
+
+curve              { ; Julia                                               MULT
+                     ; Run Time on 386sx 16 - 9 minutes
+  reset type=julia corners=0.410584/0.643544/0.064707/0.239427
+  params=0.269916620462396/-0.000312838677766179 maxiter=256 inside=0
+  outside=mult logmap=yes
+  colors=000ssY<9>ssEssCsqC<19>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsC\
+  ssCsq<8>Cs_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq\
+  <8>ss_
+  }
+
+eclipse            { ; Inverted Mandellambda                               REAL
+                     ; Run Time on 386sx 16 - 8 minutes
+  reset type=mandellambda
+  corners=1.072295/0.491302/-0.387328/0.387328/0.491302/0.387328
+  maxiter=256 inside=0 outside=real invert=1/1/0
+  colors=000004<26>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<45>02z00z00y<59>\
+  002000000000001003
+  }
+
+egg                { ; FN*FN   SINH/SQR                                    REAL
+                     ; Run Time on 386sx 16 - 1 hours 13 minutes
+  reset type=fn*fn function=sinh/sqr passes=2
+  corners=-0.0067631/0.0187092/1.991193/2.0105618 float=y maxiter=256
+  inside=0 outside=real logmap=yes
+  colors=000ssEssC<20>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<19>CqsCssCsq<8>C\
+  s_CsYECE<20>sCs<20>ECsCCsCEs<19>CqsCssCsq<19>CsECsCEsE<19>qsqsssssq<18>ssG
+  }
+
+eight              { ; mandel - A deep zoom that is very slow              REAL
+                     ; Run Time on 386sx 16 - 11 hours 24 minutes
+  reset type=mandel
+  corners=-0.138070083118/-0.138069544319/0.841662418479/0.84166260343/-0.1380\
+  69967578/0.841662244098 float=y maxiter=1000 inside=0 outside=real
+  logmap=yes
+  colors=000qzz<39>2zz0zz0yz<45>02z00z00y<59>002000000000<29>00k00m01m<29>0ky0\
+  mz1mz<30>zzz<5>szz
+  }
+
+flowers            { ; Lamdafn  EXP                                        REAL
+                     ; Run Time on 386sx 16 - 25 minutes
+  reset type=lambdafn function=exp passes=2
+  corners=-0.348709/0.535675/1.69104/0.51329/0.535675/0.51329 params=1/0.4
+  maxiter=100 inside=0 outside=real
+  colors=000IDDHEEGEEFFFFFFFFF<29>x11z00z10<29>zx0zz0zz1<29>zzx
+  }
+
+inlet              { ; Mandel between Cardioid & the 2ball                 ZMAG
+                     ; Run Time on 386sx 16 - 33 minutes
+  reset type=mandel corners=-1.2499415/-1.25037481/0.006451938/0.006127175
+  maxiter=250 inside=zmag outside=0 logmap=yes
+  colors=00000M<13>zzz<25>000K0K<18>zcz<8>CCS<19>5zz<17>14L00I22I55H88GAAF<36>\
+  x1gz0hz3i<14>zzz<14>`44Z00Z44<13>zzz<16>00U<3>000<13>zzz<16>ZAR
+  }
+
+inside curl        { ; Mandel                                              ZMAG
+                     ; Run Time on 386sx 16 - 1 hour 32 minutes
+  reset type=mandel passes=1
+  corners=-1.24992035/-1.24976243/-0.017014725/-0.017226031/-1.24976243/-0.017\
+  226031 maxiter=1000 inside=zmag outside=0 logmap=yes
+  colors=00000S88YBBaDDeEEiFFmHHsKKwNNzOOz<2>WWzZZzccz00522755977BAAF<11>cchee\
+  jffl<2>mmrppurrvttwuuxP0P<2>c0cg0gj0jm0mp0p<3>z0zzFz<6>zmzgfoZ`iTVdPR`<2>HJU\
+  FHUCHS9LV0OY0Tc0Yh<2>0jw5mz0ozFpz<5>hpzmpzppz000555<18>zzz00V88Y<6>NNz<13>nn\
+  zppzttzvvzP0PU0UZ0Zc0cg2gh0hm0mr0rw0wz0zzCzzKzzRzzYzzczzhz000555<3>HHHKKKOOO\
+  SSSWWW___ccchhhmmmssszzzz00zICzNGzQNzTS<3>zbbzeezhizjkzlozopzts000555<3>HHHK\
+  KKOOOSSSWWW___ccchhhmmmssszzz00P00X08_8DaCFcHEgKHlNGrLOqJVqHar5gtTjv_nwduzlw\
+  z000555<3>HHHKKKOOOSSSWWW___ccchhhmmmssszzzV0W_0_c4de9fg2gi9jlAmoDprCst0uwCu\
+  z5zzRzzYzzczzhzzkzzoz<3>zzz00z0z0z00
+  }
+
+julia_1            { ; Julia                                               ZMAG
+                     ; Run Time on 386sx 16 - 4 minutes
+  reset type=julia corners=-2.0/2.0/-1.5/1.5
+  params=0.07938721055/0.613778964 maxiter=250 inside=zmag outside=0
+  logmap=yes
+  colors=00000M<13>zzz<25>000K0K<18>zcz<8>CCS<19>5zz<17>14L00I22I55H88GAAF<36>\
+  x1gz0hz3i<14>zzz<14>`44Z00Z44<13>zzz<16>00U<3>000<13>zzz<16>ZAR
+  }
+
+julia_2            { ; Julia                                               ZMAG
+                     ; Run Time on 386sx 16 - 14 minutes
+  reset type=julia passes=1 corners=0.290251/0.690251/-0.00595/0.29405
+  params=0.257660353272982/1.35000000012209e-007 maxiter=75 inside=zmag
+  outside=0 logmap=yes colors=000eee<16>000K0K<18>zcz<8>CCS<19>5zz<7>3`h
+  }
+
+mandala            { ; Sqr(1/FN)  COTAN                                    REAL
+                     ; Run Time on 386sx 16 - 4 minutes
+  reset type=sqr(1/fn) function=cotan
+  corners=-1.984573/1.98143/-1.486908/1.487839 maxiter=256 inside=0
+  outside=real
+  colors=000ztn<49>zV1zU0zU0zT0<28>z10z00z00y00<30>c00b11a11`22_22<23>GEEFFFFF\
+  FFFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<10>zto
+  }
+
+mounts             { ; Fn(z)+Fn(pix)  COTAN/SQR                            SUMM
+                     ; Run Time on 386sx 16 - 24 minutes
+  reset type=fn(z)+fn(pix) function=cotan/sqr
+  corners=0.494267/0.906929/0.5978/0.907317 params=0/0/1 maxiter=256
+  inside=0 outside=summ logmap=yes
+  colors=000FFF<29>x11z00z10<29>zx0zz0zz1<29>zzxzzzzzz<61>zV1zU0zU0zT0<28>z10z\
+  00z00y00<30>c00b11a11`22_22<25>FFF
+  }
+
+spider plant       { ; Manowarj                                            IMAG
+                     ; Run Time on 386sx 16 - 33 minutes
+  reset type=manowarj
+  corners=-0.18194276/-0.19649744/0.08981478/0.06949806/-0.17743176/0.08380193
+  maxiter=250 inside=0 outside=imag logmap=yes
+  colors=00000S<25>002000000000<29>00k00m01m<29>0ky0mz1mz<30>zzz<46>2zz0zz0yz<\
+  45>02z00z00y<27>00Y
+  }
+
+stripes            { ; Mandelfn IDENT                                      REAL
+                     ; Run Time on 386sx 16 - 9 minutes
+  reset type=mandelfn function=ident
+  corners=-1.367645/-0.958344/0.296143/-0.24617/-0.958344/-0.24617
+  maxiter=100 inside=0 outside=real
+  colors=000s_C<10>sECsCCqCC<21>ACCCCC<21>sCs<20>ECsCCsCEs<17>Cms
+  }
+
+virus              { ; Lambdafn EXP                                        REAL
+                     ; Run Time on 386sx 16 - 9 minutes
+  reset type=lambdafn function=exp
+  corners=-1.753082/1.106384/3.718872/5.860397 params=2/-0.1 maxiter=100
+  inside=0 outside=real
+  colors=00000S88YBBaDDeEEiFFmHHsKKwNNzOOz<2>WWzZZzccz00522755977BAAFCCHFFKHHL\
+  KKPMMQPPTRRWUUYWW_ZZc``eccgeejfflhhmkkpmmrppu<2>uuxP0P<2>c0cg0gj0jm0mp0p<3>z\
+  0zzFz<6>zmzdhoY`iSVdPR`NOYLMVJJRHHPFEMCBI0PZ<4>0mw5pz<7>hpzmpzppz000555<3>HH\
+  HKKKOOOSSS<2>ccc
+  }
+
+

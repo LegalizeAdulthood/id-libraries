@@ -1,0 +1,86 @@
+Return-Path:  <owner-fractint@lists.xmission.com>
+Received:  from lists.xmission.com ([198.60.22.7])
+           by mtiwgwc28.worldnet.att.net (InterMail vM.4.01.02.07 201-229-116-107)
+           with ESMTP id <19991125114305.VLVQ9095.mtiwgwc28.worldnet.att.net@lists.xmission.com>;
+           Thu, 25 Nov 1999 11:43:05 +0000
+Received:  from domo by lists.xmission.com with local (Exim 2.12 #2) id 11qxF2-000288-00
+           for fractint-goout@lists.xmission.com;
+           Thu, 25 Nov 1999 04:39:12 -0700
+Message-Id:  <3.0.5.16.19991125133855.2a777748@mail.mnhn.lu>
+X-Sender:  guy.marson@mail.mnhn.lu (Unverified)
+X-Mailer:  QUALCOMM Windows Eudora Light Version 3.0.5 (16)
+Date:  Thu, 25 Nov 1999 13:38:55 +0100
+To:  fractint@xmission.com
+From:  Guy Marson <guy.marson@mnhn.lu>
+Subject:  (fractint) speedtest
+Mime-Version:  1.0
+Content-Type:  text/plain; charset="us-ascii"
+Sender:  owner-fractint@lists.xmission.com
+Precedence:  bulk
+Reply-To:  fractint@lists.xmission.com
+X-Mozilla-Status:  0000
+Content-Length:  2896
+
+Hi,
+
+While still looking for a new PC, I made a little test. Running the
+following SPEEDTST.PAR on my old P90 and on a P3-500MHz, I fund out, that
+the P3-500 is only 3x - 3.5x faster than my P90 and not 5.55x .. strange..
+Would you please run the speedtst.par and give me the running-times of the
+3 examples, with the data of the PC's (CPU and freq.).
+
+******************
+  SPEEDTST.PAR
+******************
+
+fpu_off            { ; 0min 44sec; video=sf5 (Pentium 90)
+  reset=2000 type=mandelfn function=sin passes=b video=sf5
+  center-mag=+2.00247192150000000/-0.00132751499999995/0.9986742/0.9995
+  params=0/0 maxiter=95 inside=bof60 savename=fpu_off
+  colors=0000pz<34>07z06z04z03z02z00z<57>005004003002000000000<25>00d00f00\
+  h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0z\
+  z<6>0qz
+  }
+
+fpu_on             { ; 0min 29.88sec; video=sf5 (Pentium 90)
+  reset=2000 type=mandelfn function=sin passes=b video=sf5
+  center-mag=+2.00247192150000000/-0.00132751499999984/0.9986742
+  params=0/0 float=y maxiter=95 inside=bof60 Savename=fpu_on
+  colors=0000pz<34>07z06z04z03z02z00z<57>005004003002000000000<25>00d00f00\
+  h00i00k00m<26>0ew0fx0hx0iy0ky0mz<25>nwzpwzrxz<3>zzz<42>7zz6zz4zz3zz2zz0z\
+  z<6>0qz
+  }
+
+julzpwr1           { ; 58min 19.61 sec; video=sf5 (Pentium 90)
+  reset=2000 type=julibrot julibrotfromto=-1.1/-1/-2/-2 video=sf5
+  julibrot3d=150/2950/-150/10/10/24 julibroteyes=5 orbitname=julzpower
+  center-mag=-0.56243082849999990/-0.77924701600000000/63.86515/0.9997
+  params=0/0/2.8/0 maxiter=12 bailout=620 bailoutest=and savename=julzpwr1
+  colors=000zzzyzzzyzzyyyyyxyyyxzyxxxxxwxxxwyxwwwwwvwwwvxwvvvvvuvvvuwvuuuu\
+  utuuutvutttttstttsutsssssrsssrtsrrrrrqrrrqsrqqqqqpqqqprqpppppopppoqpoooo\
+  onooonponnnnnmnnnmonmmmmmlmmmlnmlllllklllkmlkkkkkjkkkjlkjjjjjijjjikjiiii\
+  ihiiihjihhhhhghhhgihgggggfgggfhgfffffefffegfeeeeedeeedfedddddcdddcedcccc\
+  cbcccbdcbbbbbabbbacbaaaaa`aaa`ba`````_```_a`_____Z___Z`_ZZZZZYZZZY_ZYYYY\
+  YXYYYXZYXXXXXWXXXWYXWWWWWVWWWVXWVVVVVUVVVUWVUUUUUTUUUTVUTTTTTSTTTSUTSSSS\
+  SRSSSRTSRRRRRQRRRQSRQQQQQPQQQPRQPPPPPOPPPOQPOOOOONOOONPONNNNNMNNNMONMMMM\
+  MLMMMLNMLLLLLKLLLKMLKKKKKJKKKJLKJJJJJIJJJIKJIIIIIHIIIHJIHHHHHGHHHGIHGGGG\
+  GFGGGFHGFFFFFEFFFEGFEEEEEDEEEDFEDDDDDCDDDCEDCCCCCBCCCBDCBBBBBABBBACBAAAA\
+  A9AAA9BA9999989998A98888878887987777767776876666656665765555545554654444\
+  4344435433333233324322222122213211111011102100<2>000
+  }
+
+******************
+
+the "julzpwr1" is running a bit slower than the other's.. 
+
+
+Thanks in advance!
+
+Guy 
+
+--------------------------------------------------------------
+Thanks for using Fractint, The Fractals and Fractint Discussion List
+Post Message:   fractint@lists.xmission.com
+Get Commands:   majordomo@lists.xmission.com "help"
+Administrator:  twegner@phoenix.net
+Unsubscribe:    majordomo@lists.xmission.com "unsubscribe fractint"
