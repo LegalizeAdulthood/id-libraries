@@ -1,5 +1,5 @@
 Segmented_Minibrot { ; 2hrs on a 486-100mhz, 640x480
-  reset=1960 type=formula formulafile=critical.frm
+  reset=1960 type=formula formulafile=frac_ml.frm
   formulaname=MandelbrotMix6 passes=1 center-mag=+2.59696\
   129602140300/+0.45479207114538680/412048.9/1/-162.499
   params=-1/1/-1/-1/0/0 float=y maxiter=6000 bailout=25
@@ -11,11 +11,3 @@ Segmented_Minibrot { ; 2hrs on a 486-100mhz, 640x480
   UkY<3>Tj_Tj_Uj_<7>`jaajbajbajb<2>`jc`jc_idZid<4>TieSieR\
   ifQig<17>OhyOhzOhzOhz<22>LgzLgzLhz<4>KmzWnz<17>Ppz
   }
-
-frm:MandelbrotMix6 {; Jim Muth
-a=real(p1), b=imag(p1), d=real(p2), f=imag(p2), g=1/f,
-h=1/d, j=1/(f-b), z=(-a*b*g*h)^j, k=real(p3)+1,
-l=imag(p3)+100, c=pixel*k:
-z=(a*(z^b))+(d*(z^f))+c,
-|z| <= l
-}

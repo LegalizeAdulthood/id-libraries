@@ -228,3 +228,155 @@ Fzpfnseh {; Lee Skinner
    z = fn1(z) + f
     |z| <= 50
   }
+JMask {  ; Ron Barnett, 1993
+  z = fn1(pixel):
+   z = P1*fn2(z)^2 + P2
+    |z| <= 4
+  }
+Frame-RbtM(XAXIS) {; Ron Barnett, 1993
+  ; from Mazes for the Mind by Pickover
+  z = c = pixel:
+   z = z*z*z/5 + z*z + c
+    |z| <= 100
+  }
+J_TchebychevS6 {
+  c = pixel, z = P1:
+   z = c*(z*z*(z*z*(z*z-5)+6)-1)
+    |z|<100
+  }
+M_Lagandre6 {
+  c = P1, z = Pixel:
+   z = (z*z*(z*z*(231 * z*z - 315)  + 105 ) - 5) / 16 + c
+    |z| < 100
+  }
+REBRefInd2[float=y] {  ; Ron Barnett, 1993
+  ; Use floating point
+  z = pixel:
+   z = (z*z-1)/(z*z+2)*fn1(z)*fn2(z) + p1
+    |z| <= 100
+  }
+MTet (XAXIS) {; Mandelbrot form 1 of the Tetration formula --Lee Skinner
+  z = pixel:
+   z = (pixel ^ z) + pixel
+    |z| <= (P1 + 3)
+  }
+Ent2 {; Scott Taylor
+  ; try params=2/1, functions=cos/cosh, potential=255/355
+  z = Pixel, y = fn1(z), base = log(p1):
+   z = fn2( y * log(z) / base )
+    |z| <= 4
+  }
+Richard2 (XYAXIS) {; Jm Collard-Richard
+  z = pixel:
+   z=1/(sin(z*z+pixel*pixel))
+    |z|<=50
+  }
+Fzppfnsr {; Lee Skinner
+  z = pixel, f = (pixel)^.5:
+   z = fn1(z) + f
+    |z| <= 50
+  }
+Fzppfnre {; Lee Skinner
+  z = pixel, f = 1./(pixel):
+   z = fn1(z) + f
+    |z| <= 50
+  }
+Jm_21 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z^pixel)*pixel
+    |z|<=t
+  }
+Jm_19 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z)*pixel*fn2(fn3(z)+pixel)
+    |z|<=t
+  }
+Fzppchco {
+  z = pixel, f = cosxx (pixel):
+   z = cosh (z) + f
+    |z| <= 50
+  }
+F'Liar1 { ; Generalization by Jon Horner of Chuck Ebbert formula.
+  ; X: X is as true as Y
+  ; Y: Y is as true as X is false
+  ; Calculate new x and y values simultaneously.
+  ; y(n+1)=abs((1-x(n) )-y(n) ), x(n+1)=1-abs(y(n)-x(n) )
+  z = pixel:
+   z = 1 - abs(imag(z)-real(z) ) + flip(1 - abs(1-real(z)-imag(z) ) )
+    fn1(abs(z))<p1
+  }
+Richard9 (XAXIS) {; Jm Collard-Richard
+  z=pixel:
+   sqrz=z*z, z=sqrz + 1/sqrz + pixel
+    |z|<=4
+  }
+Fzppcosr {
+  z = pixel, f = (pixel) ^ 0.5:
+   z = cosxx (z)  + f
+    |z| <= 50
+  }
+FnDog(XYAXIS) {; Scott Taylor
+  z = Pixel, b = p1+2:
+   z = fn1( z ) * pixel
+    |z| <= b
+  }
+Richard8 (XYAXIS) {; Jm Collard-Richard
+  ; This was used for the "Fractal Creations" cover
+  z=pixel,sinp = sin(pixel):
+   z=sin(z)+sinp
+    |z|<=50
+  }
+Jm_20 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z^pixel)
+    |z|<=t
+  }
+Jm_25 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z*fn2(z)) + pixel
+    |z|<=t
+  }
+Jm_12 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(fn2(fn3(z)*pixel))
+    |z|<=t
+  }
+Jm_18 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z)*pixel*fn2(fn3(z)*pixel)
+    |z|<=t
+  }
+Mandel3 {; Fractal Creations example
+  z = pixel, c = sin(z):
+   z = (z*z) + c
+   z = z * 1/c
+    |z| <= 4
+  }
+Richard4 (XAXIS) {; Jm Collard-Richard
+  z = pixel:
+   z2=z*z, z=(1/(z2*cos(z2)+z2))+pixel
+    |z|<=50
+  }
+ZZa(XAXIS)[float=y] { ; Prof Jm using Newton-Raphson method
+  ; use floating point with this one
+  z=pixel,solution=1:
+   z1=z^(z-1)
+   z2=(((z-1)/z)+log(z))*z1
+   z=z-((z1-1)/z2)
+    .001 <= |solution-z1|
+  }
+DeltaLog(XAXIS) {; Mark Peterson
+  z = pixel, c = log(pixel):
+   z = sqr(z) + c
+    |z| <= 4
+  }
+Jm_17 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1(z)*pixel*fn2(fn3(z))
+    |z|<=t
+  }
+Richard6 (XYAXIS) {; Jm Collard-Richard
+  z = pixel:
+   z=sin(sinh(z))+pixel
+    |z|<=50
+  }

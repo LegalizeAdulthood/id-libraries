@@ -7,7 +7,7 @@
 Grafic1            { ; "Mask"			Siteworks Gallery
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 25-July-1997
-  reset=1920 type=formula formulafile=_g.frm formulaname=gallet-3-03
+  reset=1920 type=formula formulafile=frac_ml.frm formulaname=Gallet-3-03
   function=tan/cabs passes=1
   center-mag=0.821222/0.8242/9.496441/1/-134.999 params=2.95/0.4/10/1
   float=y maxiter=255 outside=atan periodicity=0
@@ -21,8 +21,8 @@ Grafic1            { ; "Mask"			Siteworks Gallery
 grafic2            { ; "Brooch"			Siteworks Gallery
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=tobeyrichard1 function=sin passes=1
+  reset=1960 type=formula formulafile=fract003.frm
+  formulaname=TobeyRichard1 function=sin passes=1
   center-mag=-5.46357/-0.000170823/92.57043/1/-90 float=y maxiter=2048
   fillcolor=100 outside=0 potential=160/250/1024
   viewwindows=3.2/0.75/yes/0/0
@@ -37,8 +37,8 @@ grafic2            { ; "Brooch"			Siteworks Gallery
 grafic3            { ; "Carrings" 		Siteworks Gallery
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/sqr passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/sqr passes=1
   center-mag=0.0489921/-0.0268273/0.7364268/1/2.499
   params=10/0/0.11828182845905/0.14159265358979 maxiter=2048
   inside=maxiter outside=atan potential=256/230/1024
@@ -52,8 +52,8 @@ grafic3            { ; "Carrings" 		Siteworks Gallery
 grafic4            { ; "Carrstar"		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=cos/sqrt passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=cos/sqrt passes=1
   center-mag=-0.000148475/-0.0063012/0.50118/1/-90
   params=6/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=bof60 outside=imag potential=256/222/111
@@ -81,8 +81,8 @@ grafic5            { ; "Chain"			Siteworks Gallery
 grafic6            { ; "Cupcake"		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/recip passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/recip passes=1
   center-mag=0.176171/0.864086/9.958302/1/12.499/-0.005
   params=10/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -111,8 +111,8 @@ grafic7            { ; "Helmet"		Siteworks Gallery
 grafic8            { ; "Distance" 		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/cosxx passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/cosxx passes=1
   center-mag=0.0283859/-0.132297/17.51036/1/45
   params=9/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -128,8 +128,8 @@ grafic8            { ; "Distance" 		Siteworks Gallery
 grafic9            { ; "Framed" 		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=zero/exp passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=zero/exp passes=1
   center-mag=0.0341801/-0.0267594/0.6723804/1/90
   params=40/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -149,8 +149,8 @@ grafic9            { ; "Framed" 		Siteworks Gallery
 grafic10           { ; "Hooded"			Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/cosxx passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/cosxx passes=1
   center-mag=-0.193182/1.1515/3.01822/1/-7.5
   params=9/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -193,8 +193,8 @@ grafic12           { ; "Pear"			Siteworks Gallery
 grafic13           { ; "Pitcher" 		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=zero/exp passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=zero/exp passes=1
   center-mag=1.02255/0.0796029/16.11432/1/85.014/-0.001
   params=40/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -211,8 +211,8 @@ grafic13           { ; "Pitcher" 		Siteworks Gallery
 grafic14           { ; "Schizoid"		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/log passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/log passes=1
   center-mag=0.0490291/-0.0267978/0.6472685/1/-20
   params=50/0/0.11828182845905/0.14159265358979 inside=maxiter
   outside=atan potential=256/230/1024 viewwindows=3.2/0.75/yes/0/0
@@ -223,8 +223,8 @@ grafic14           { ; "Schizoid"		Siteworks Gallery
 grafic15           { ; "Mickey Mouse"	Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=flip/log passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=flip/log passes=1
   center-mag=0.0490472/-0.0267922/0.623968/1/-19.999
   params=50/0/0.11828182845905/0.14159265358979 maxiter=1024
   inside=maxiter outside=atan potential=256/230/1024
@@ -253,8 +253,8 @@ grafic16           { ; "Sleep"			Siteworks Gallery
 grafic17           { ; "Sloath" 		Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1730 type=formula formulafile=fractint.frm
-  formulaname=j_tchebychevc3 passes=1
+  reset=1730 type=formula formulafile=Tchebych.frm
+  formulaname=J_TchebychevC3 passes=1
   center-mag=+0.18134236145000000/+0.50824220754999990/203.6459/1/27.496
   params=0.145/0 float=y maxiter=2147483647 potential=256/6500/4
   viewwindows=3.2/0.75/yes/0/0
@@ -287,8 +287,8 @@ grafic19           { ; "Water Lilly"	Siteworks Gallery
 grafic20           { ; "Alien Thumb"	Siteworks Gallery 
                      ; (c) 1997 Stephen Reynolds <spr@ozemail.com.au>
                      ; Parameter created 15-July-1997
-  reset=1821 type=formula formulafile=fractint.frm
-  formulaname=carr-orman2 function=acos/sqr passes=1
+  reset=1821 type=formula formulafile=j-carr.frm
+  formulaname=Carr-Orman2 function=acos/sqr passes=1
   center-mag=-0.03433364630000000/+1.08942204500000000/786.1962/1.0013/-10\
   4.462 params=10/0/0.11828182845905/0.14159265358979 maxiter=2048
   inside=maxiter outside=atan potential=256/230/1024

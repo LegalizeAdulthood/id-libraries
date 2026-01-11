@@ -3,16 +3,16 @@ BrainV             { ; Luminance.  SherLok Merfy <brewhaha@freenet.edmonton.ab.c
                      ; Version 2002 Patchlevel 5 -- Thu, 15 Jan 2004 18:26:55
                      ; How many times will you tell me that?
                      ; 1/5 speed with intejers on PII.
-  reset=2002 type=formula formulafile=fractint.frm
-  formulaname=frenzy function=ident/conj passes=1
+  reset=2002 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Frenzy function=ident/conj passes=1
   center-mag=0.496851/0.00495108/0.5604486/1.4649/90/-1.2337353361147052\
   1e-014 float=y maxiter=255 outside=atan inside=0
   }
  
 BrainH             { ; Chrominance.  SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                      ; Version 2002 Patchlevel 5 -- Thu, 15 Jan 2004 18:26:55
-  reset=2002 type=formula formulafile=fractint.frm
-  formulaname=frenzy function=ident/conj passes=1
+  reset=2002 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Frenzy function=ident/conj passes=1
   center-mag=0.496851/0.00495108/0.5604486/1.4649/90/-1.2337353361147052\
   1e-014 float=y maxiter=255 inside=0
   colors=050505502500055520025550005490205050505502500055520025550005490\
@@ -57,8 +57,8 @@ PixPowerTest  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; All VESA Autodetect modes make a mess of this on an ATI
                 ; Mach 64 Utah with 8meg. -- 4.51s 350MHz PII @ 1280x1024
                 ; z=0 Requires parameters for zed to escape.
-  reset=2003 type=formula formulafile=pixpower.par
-  formulaname=pixelpower function=zero/ident passes=b
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=PixelPower function=zero/ident passes=b
   center-mag=0/0/0.6666667 params=0.1/0.3/0/0/0/0 float=y
   maxiter=255 inside=15
   colors=zzz000<3>e00o00z00<3>zRRzYYzddzkkzrr<3>zcSz_LzWEzS7zO0<3>_E0TB0\
@@ -78,8 +78,8 @@ Clubs        { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Might need taylor series sum for sine accuracy.
                ; BFDIGITS=256 doesn't seem to help.
                ; Instead, it prevents me from zooming in enough.
-  reset=2003 type=formula formulafile=clubs.par
-  formulaname=pixelpoweradd function=sin/sqrt passes=t
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=PixelPowerAdd function=sin/sqrt passes=t
   center-mag=1.42995/-1.77636e-015/0.1520244/1.4243/90/3.885780586188047\
   89e-016 params=0/0/0/0/0/0 float=y maxiter=255 inside=0
   outside=atan invert=1.45742001678948/1.33/0
@@ -107,7 +107,7 @@ test        { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Try moving zoom-box to the right of this.
               ; I suspect that zooms out in an infinite spiral,
               ; but I can't go very far.  Corners-mode shows why.
-  reset=2003 type=formula formulafile=test.par formulaname=Karts
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Karts
   function=zero/recip passes=d
   center-mag=1.09139e-011/-4093.04/4.867383e-005/1/20.0000000000000213/-\
   1.26836041669520228e-013 params=2/0/16/0 float=y maxiter=255
@@ -136,8 +136,8 @@ Crown_Clubs   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; editor, but don't save it that way, or you'll end up
                 ; with the 64 true gray-shades of hicolor 6-6-6 (if that
                 ; was 16 bits).
-  reset=2003 type=formula formulafile=fractint.frm
-  formulaname=club_lambda function=ident/ident
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Club_Lambda function=ident/ident
   center-mag=0.870006/-0.00263346/0.869118/1.05/90/3.88578058618804789e-\
   016 params=3/0 float=y maxiter=255 inside=0 outside=atan
   invert=0.54510044487003/0.8/0 colors=@kayos.map
@@ -148,7 +148,7 @@ Crown_Clubs-2  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Same as before, but formula is more flexible,
                  ; and map doesn't suffer unnecessary losses.
                  ; 40.32s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=extend.par formulaname=extend
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Extend
   function=ident/ident/conj
   center-mag=-0.227724/0.00422066/1.194434/1.0731/-90/-1.233735336114705\
   21e-014 params=3/0 float=y maxiter=255 inside=0 outside=atan
@@ -159,8 +159,8 @@ Crown_Clubs-2  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 Crown_Clubs-3  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Sat, 07 Feb 2004 13:13:00
                  ; 30.38s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=crown.par
-  formulaname=club_lambda function=ident/ident
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Club_Lambda function=ident/ident
   center-mag=-0.456263/0/0.6228057/1.0948/-90/0
   params=3/0 float=y maxiter=255 inside=0 outside=atan
   invert=0.72092214870719/-0.125/0 periodicity=0
@@ -188,8 +188,8 @@ RainBrot   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 RainFly       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Wed, 10 Mar 2004 19:30:38
                 ; 
-  reset=2003 type=formula formulafile=rainfly.par
-  formulaname=butterfly center-mag=0/-1.23205/0.6666667/1.1211
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Butterfly center-mag=0/-1.23205/0.6666667/1.1211
   float=y maxiter=255 inside=0 outside=atan invert=0.5/0/-0.5
   colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
   0zx0zy0<14>lz0kz0jz0<5>bz0az0`z0<4>Tz0Sz0Rz0Pz0Nz0Mz0Lz0Iz0Hz0Ez0Dz0Bz\
@@ -204,8 +204,8 @@ HeartsH       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Thu, 11 Mar 2004 00:20:32
                 ; Chrominance: Alter through mask of HeartsV as
                 ; grayscale.
-  reset=2003 type=formula formulafile=heartsf.par
-  formulaname=hearty passes=d
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Hearty passes=d
   center-mag=0.00844324/-1.37358/0.3241387/1.2195 params=2/0 float=y
   maxiter=255 inside=0
   colors=000z00zz00z00zV0zz0Wz00z<3>z0zz0Wz00<3>zz0Wz00z0<3>0zz<3>0Lz0Bz\
@@ -221,8 +221,8 @@ HeartsH       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 HeartsV       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Thu, 11 Mar 2004 00:20:32
                 ; Drop luminance through this "graymask" after raising 50%.
-  reset=2003 type=formula formulafile=hearty.par
-  formulaname=hearty passes=d
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Hearty passes=d
   center-mag=0.00844324/-1.37358/0.3241387/1.2195 params=2/0 float=y
   maxiter=255 inside=0 outside=atan; colors=@rainboh.map
   colors=000z50z70zB0<3>zJ0zL0zM0zN0zP0zR0<5>z_0z`0za0zb0zd0<14>zu0zv0zw\
@@ -238,8 +238,8 @@ HeartsS       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Thu, 11 Mar 2004 00:20:32
                 ; Mask for stripes of fading. Maybe needs work.
                 ; Perhaps wood grain, like on my skull.
-  reset=2003 type=formula formulafile=hearty.par
-  formulaname=hearty passes=d
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Hearty passes=d
   center-mag=0.00844324/-1.37358/0.3241387/1.2195 params=2/0 float=y
   maxiter=255 inside=0 proximity=1 outside=fmod
   colors=000zzz000zzz000000zzz000000000zzz000<3>000zzz000<5>000zzz000<4>\
@@ -252,7 +252,7 @@ DiamondsH     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Mon, 15 Mar 2004 01:42:13
                 ; Chrominance to drop through a mask.
                 ; 2:55.11 on a 350MhzPII @ 1280*1024
-  reset=2003 type=formula formulafile=rock.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident
   center-mag=0/0/0.04634342/1.3385/44.9999999999999929/3.885780586188047\
   89e-016 params=8/0 float=y maxiter=255 inside=0 periodicity=0
@@ -271,7 +271,7 @@ DiamondsV     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Drop luminance through this mask, first.
                 ; 11:28.49 on a 350MhzPII @ 1280*1024. altern.map
                 ; is nearly 256 grays in eighteen bits.
-  reset=2003 type=formula formulafile=rock.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident
   center-mag=0/0/0.04634342/1.3385/44.9999999999999929/3.885780586188047\
   89e-016 params=8/0 float=y maxiter=255 inside=0 outside=atan
@@ -295,7 +295,7 @@ DiamondsS     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                 ; Make negative through this mask.
                 ; 5:15.66 on a 350MhzPII @ 1280*1024.
                 ; colors=@tdis.map
-  reset=2003 type=formula formulafile=rock.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident
   center-mag=0/0/0.04634342/1.3385/44.9999999999999929/3.885780586188047\
   89e-016 params=8/0 float=y maxiter=255 inside=0 outside=tdis
@@ -348,8 +348,8 @@ Default-2   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; I wouldn't jeneralize the formula, because it illustrates
               ; significance of sign.  Try other methods of rendering.
               ; Try different periodicity thresholds.
-  reset=2003 type=formula formulafile=roarbit.par
-  formulaname=club_lambda function=zero/ident passes=t
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Club_Lambda function=zero/ident passes=t
   center-mag=-0.274835/8.88178e-016/0.7025121/1.214/90/0
   params=3/0 float=y maxiter=255 fillcolor=1 periodicity=-1
   sound=beep showorbit=yes; colors=@orbit.map
@@ -370,7 +370,7 @@ DiamondH     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 29 Mar 2004 08:41:42
                ; ~14s/megapixel. Use the absolute negative of
                ; this to mask off the border of DiamondV.
-  reset=2003 type=formula formulafile=cards.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident center-mag=0/0/0.0583274/1.3374 params=16/0 float=y
   maxiter=255 invert=1.32/0/0 symmetry=xyaxis periodicity=0
   viewwindows=0/0/no/600/315 video=SF5
@@ -390,7 +390,7 @@ DiamondV     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; luminance of DiamondH. Raise luminance through
                ; negative of this. ~35s/megapixel@350Mhz
                ; Map Needed for other parameters.
-  reset=2003 type=formula formulafile=cards.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident center-mag=0/0/0.0583274/1.3374 params=16/0 float=y
   maxiter=255 outside=atan invert=1.32/0/0 symmetry=xyaxis
   periodicity=0 viewwindows=0/0/no/600/315 video=SF5 colors=@grayhack.map
@@ -400,7 +400,7 @@ DiamondS     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 29 Mar 2004 08:41:42
                ; fmod view for mask on negation, maybe.
                ; ~30s/megapixel.
-  reset=2003 type=formula formulafile=cards.par formulaname=rock
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Rock
   function=ident center-mag=0/0/0.0583274/1.3374 params=16/0 float=y
   maxiter=255 inside=0 proximity=1 outside=fmod logmap=old
   invert=1.32/0/0 symmetry=xyaxis periodicity=0
@@ -412,8 +412,8 @@ ClubsH       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 29 Mar 2004 08:41:42
                ; Sorting off. Start with DiamondH.
                ; ~1m/megapixel.
-  reset=2003 type=formula formulafile=cards.par
-  formulaname=pixelpower function=sin/sqrt
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=PixelPower function=sin/sqrt
   center-mag=1.42995/0/0.1520244/1.4243/90/3.88578058618804789e-016
   params=0/0/0/0/0/0 float=y maxiter=1024 inside=0
   invert=1.45742001678948/1.33/0 symmetry=xaxis periodicity=0
@@ -425,8 +425,8 @@ ClubsH       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 ClubsV       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 29 Mar 2004 08:41:42
                ; ~1.5m/megapixel @ 350Mhz.
-  reset=2003 type=formula formulafile=cards.par
-  formulaname=pixelpower function=sin/sqrt
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=PixelPower function=sin/sqrt
   center-mag=1.42995/0/0.1520244/1.4243/90/3.88578058618804789e-016
   params=0/0/0/0/0/0 float=y maxiter=1024 inside=0 outside=atan
   invert=1.45742001678948/1.33/0 symmetry=xaxis periodicity=0
@@ -437,7 +437,7 @@ HeartH       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 29 Mar 2004 08:41:42
                ; Chrominance: Alter through masks.
                ; ~2m/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=cards.par formulaname=hearty
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Hearty
   function=atanh center-mag=0/-1.1811/0.347/1.18 params=37/0 float=y
   maxiter=255 inside=0 symmetry=yaxis periodicity=0
   viewwindows=0/0/no/600/315 video=SF5; colors=@preemoh.map
@@ -455,7 +455,7 @@ HeartV      { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Mon, 29 Mar 2004 08:41:42
               ; Drop luminance through this "graymask".
               ; ~3.5m/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=cards.par formulaname=hearty
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Hearty
   function=atanh center-mag=0/-1.1811/0.347/1.18 params=37/0 float=y
   maxiter=255 inside=0 outside=atan symmetry=yaxis periodicity=0
   viewwindows=0/0/no/600/315 video=SF5;
@@ -466,7 +466,7 @@ HeartS      { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; Mon, 29 Mar 2004 08:41:42
               ; Mask on negation. Last. Raise contrast.
               ; ~3.5m/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=cards.par formulaname=hearty
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Hearty
   function=atanh center-mag=0/-1.1811/0.347/1.18 params=37/0 float=y
   maxiter=255 inside=0 proximity=1 outside=fmod symmetry=yaxis
   periodicity=0 viewwindows=0/0/no/600/315 video=SF5;
@@ -489,7 +489,7 @@ Spades       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; 4by5 is 2400*1575 for 8"*5.25" @ 300dpi.
                ; Same colours as HeartH with first colour black.
                ; ~50s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=cards.par formulaname=tool
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Tool
   function=flip/recip center-mag=0/0.541224/0.1891708/1.97
   params=2/4 float=y maxiter=255 inside=0 symmetry=yaxis
   periodicity=0 viewwindows=0/0/no/600/315 video=SF5
@@ -503,7 +503,7 @@ SpadesVV    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
               ; ~1m/megapixel@350Mhz. I deleted my true graymaps,
               ; because it's usually an error for me to use them,
               ; and they're easy to jenerate, approximately.
-  reset=2003 type=formula formulafile=cards.par formulaname=tool
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Tool
   function=flip/recip center-mag=0/0.541224/0.1891708/1.97
   params=2/4 float=y maxiter=255 inside=0 outside=atan
   symmetry=yaxis periodicity=0 viewwindows=0/0/no/600/315 video=SF5
@@ -515,7 +515,7 @@ Frosty_Dragon  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; I don't want a straight graymap.
                  ; Resembles the usual graymapped outside=atan view.
                  ; colors=@primes.map
-  reset=2003 type=formula formulafile=div.par formulaname=div
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Div
   function=ident
   center-mag=66.6682/-137.807/0.01117382/0.5424/53.4018434140312834/-16.\
   8036868280625953 params=64/0/0/-4/3/0 float=y maxiter=255 inside=0
@@ -566,8 +566,8 @@ Default-3    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; As good as any reason to start zed at zero.
                ; It might be interesting to hear this with
                ; orbits connected as in mandelcloud.
-  reset=2003 type=formula formulafile=fliprnot.par
-  formulaname=fliprnot function=zero/ident/recip passes=t
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=FlipRNot function=zero/ident/recip passes=t
   params=4/0 fillcolor=255 inside=255 cyclerange=1/247
   symmetry=xaxis periodicity=-3 showorbit=yes
   }
@@ -578,8 +578,8 @@ OldDef-3     { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; It might be interesting to hear this with
                ; orbits connected as in mandelcloud.
                      ; 35.37s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=fliprnot.par
-  formulaname=fliprnot function=zero/ident/recip passes=t
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=FlipRNot function=zero/ident/recip passes=t
   params=4/0 float=y fillcolor=255 inside=255 symmetry=xaxis
   periodicity=-3 cyclerange=1/247 showorbit=yes
   }
@@ -589,8 +589,8 @@ Default-4    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; What happens when you're not sure
                ; whether you performed the operation?
                ; 35.93s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=fliprnot.par
-  formulaname=funkrnot function=zero/ident/recip passes=t
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=FunkRNot function=zero/ident/recip passes=t
   params=4/0 float=y fillcolor=255 inside=255 symmetry=xaxis
   periodicity=-3 cyclerange=1/247 showorbit=yes
   }
@@ -630,7 +630,7 @@ Default-5    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; what the documentation says (without functions or
                ; the realization that part of the documentation's
                ; results are constant per iteration).
-  reset=2003 type=formula formulafile=marks.par
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
   formulaname=MarksMandel function=ident/ident
   params=7/4 maxiter=255 inside=0
   }
@@ -638,8 +638,8 @@ Default-5    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 MarksHand    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Thu, 22 Apr 2004 05:17:38
                ; This might be kinda nifty.
-  reset=2003 type=formula formulafile=marks.par
-  formulaname=marksmandel function=ident/ident
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=MarksMandel function=ident/ident
   center-mag=-3.486/3.66155/0.1051468/1.1186 params=7/4 float=y
   maxiter=255 inside=0 outside=atan invert=1.13584734211722/0.5/0.7
   periodicity=0 colors=@altern.map
@@ -651,8 +651,8 @@ Heart        { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; I would finish the set, but I've worked
                ; hard to establish this account, and something's
                ; very wrong with my ISP's response time.
-  reset=2003 type=formula formulafile=marks.par
-  formulaname=marksmandel function=conj/ident
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=MarksMandel function=conj/ident
   center-mag=0.22319/0/1.01533/1.1992/90/0
   params=7/4 float=y maxiter=255 inside=0 outside=atan
   invert=0.5/0.25/0 colors=@altern.map
@@ -665,7 +665,7 @@ Default-6    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; on April the Eighteenth, which is just another
                ; reminder that sometimes traditions stop
                ; making sense (sorting) when they change.
-  reset=2003 type=formula formulafile=20040418.par
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
   formulaname=MuthMath function=ident/ident params=8/0
   inside=0 outside=atan colors=@altern.map
   }
@@ -673,7 +673,7 @@ Default-6    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 Kwodrongl    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 20.27s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/zero/abs passes=t
   center-mag=-1.33227e-015/2.22045e-016/1.263/0.8752 params=4/0
   float=y maxiter=255 inside=0 outside=atan
@@ -685,8 +685,8 @@ Vektor       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 32.35s/megapixel@350Mhz.
                ; grayhack is -altern.map with first colour black.
-  reset=2003 type=formula formulafile=waffle.par
-  formulaname=waffle function=zero/atan/atanh
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
+  formulaname=Waffle function=zero/atan/atanh
   center-mag=-0.941635/0/0.46/0.8407 params=16/0 float=y
   maxiter=255 inside=0 outside=atan invert=1.37582076541427/-0.25/0
   symmetry=xaxis periodicity=0 colors=@altern.map
@@ -698,7 +698,7 @@ Bowser       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; It's not the species of stunning beauty called
                ; a Mountain Lion that moved into Elk Island
                ; national park recently, but it's decent.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=exp/atan/atanh center-mag=-0.467145/0/0.767/1.111
   params=64/0 float=y maxiter=255 inside=0 outside=atan
   invert=0.467996152338943/-0.333333333333/0 symmetry=xaxis
@@ -722,7 +722,7 @@ GobletOfBenwaw  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                   ; FRACTINT will "calculate" the aspect ratio of
                   ; .75 to put in this parameter file if you save
                   ; it again.  It's one.  colors=@diag.map
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/ident/sqrt passes=t
   center-mag=-2.30776/0/0.5289784/0.659 params=4/0 float=y
   maxiter=255 inside=0 outside=tdis invert=0.6570112296359/-0.25/0
@@ -741,7 +741,7 @@ GobletOfBenwaw  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 Cancer       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 51.24s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/recip/conj passes=t
   center-mag=0.970492/0/0.05868219/0.7229 params=16/0 float=y
   maxiter=255 inside=0 outside=atan invert=0.621604712054051/-1.15/0
@@ -751,7 +751,7 @@ Cancer       { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 FunKlub      { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 33.84s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/sqr/sqrt passes=t center-mag=-0.210411/0/1.25/1.34
   params=4/0 float=y maxiter=255 inside=0 outside=atan
   invert=0.3671085141903/-0.25/0 symmetry=xaxis periodicity=0
@@ -761,7 +761,7 @@ FunKlub      { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 FunkSpade    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 49.54s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/recip/ident center-mag=5.30944/0/0.01633668/2.0059
   params=8/0 float=y maxiter=255 inside=0 outside=atan
   invert=0.7284382284382/-0.73/0 symmetry=xaxis periodicity=0
@@ -771,7 +771,7 @@ FunkSpade    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 FunkHeart    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 42.02s/megapixel@350Mhz.
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=exp/sqrt/sqr
   center-mag=-0.98638/0/0.5782385/1..7489 params=4/0
   float=y maxiter=255 fillcolor=0 inside=0 outside=atan
@@ -784,7 +784,7 @@ FunkDiamond  { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Look Ma.  Four Suits.  One Formula.
                ; (Three sides is actually a better representation
                ; of tetrahedral carbon crystals in 2D.)
-  reset=2003 type=formula formulafile=waffle.par formulaname=waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/flip/zero passes=t
   center-mag=0/0.254029/0.9553083/1.2434 params=4/0 float=y
   maxiter=255 inside=0 outside=atan invert=0.609875904495143/0/0
@@ -795,7 +795,7 @@ Default-7    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Mon, 26 Apr 2004 12:13:54
                ; 35.93s/megapixel@350Mhz.  I tried
                ; putting evolver parameters here.
-  reset=2003 type=formula formulafile=waffle.par formulaname=Waffle
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm formulaname=Waffle
   function=zero/ident/recip passes=t params=4/0 fillcolor=255
   inside=255 periodicity=-3
   }
@@ -826,7 +826,7 @@ DendrongP    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                ; Tue, 18 May 2004 13:35:30
                ; 5:02.59/megapixel@350Mhz&PII.
                ; Essentially the same thing with the parser.
-  reset=2003 type=formula formulafile=duckowar.par
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
   formulaname=julfnzsqrd function=ident/sinh passes=t
   center-mag=-0.470218/2.57876/0.1237586/1.2183/-29.38848943572523/8.277\
   90231174726365 params=0/0/0/0.75/256/0 float=y maxiter=255
@@ -836,7 +836,7 @@ DendrongP    { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
 
 HornOfBenwaw   { ; SherLok Merfy <brewhaha@freenet.edmonton.ab.ca>
                  ; Sat, 07 Feb 2004 13:50:00
-  reset=2003 type=formula formulafile=benwaw.par
+  reset=2003 type=formula formulafile=SherLok_Merfy.frm
   formulaname=BrohTweak function=zero/ident/conj
   center-mag=0.215794/5.55112e-016/0.8908651/1.107/-90/3.885780586188047\
   89e-016 params=3/2/1/1/0/0 float=y maxiter=255 inside=0

@@ -1,4 +1,4 @@
-***_Read_me_first  { ; Hit F2...
+Commen          t  { ; Hit F2...
                      ; All images & pars are Copyright Sylvie Gallet, 1998
                      ; <sylvie_gallet@compuserve.com>
                      ; Calculation times are given for images generated
@@ -49,7 +49,7 @@
   }
 
 05_G110501         { ; FOTW: August 11, 1998                t=  0:07:38.91
-  reset=1960 type=formula formulafile=fractint.frm
+  reset=1960 type=formula formulafile=sg_fotw.frm
   formulaname=Gallet-11-05 passes=1
   center-mag=-1.01215/0.0712808/0.2512059/0.8607/-90
   params=9/0/1e-010/10 float=y maxiter=1500 inside=0 invert=1/0.96/0
@@ -73,8 +73,8 @@
   }
 
 07_SG60207         { ; FOTW: August 25, 1998                t=  0:02:18.69
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=gallet-6-02 function=cosxx/sinh passes=1
+  reset=1960 type=formula formulafile=sg_fotw.frm
+  formulaname=Gallet-6-02 function=cosxx/sinh passes=1
   center-mag=-0.249766/-0.322447/0.1864631/-0.9079/224.999
   params=0.5/0/0.12/0.12/0.2/0 float=y maxiter=1023 inside=bof60
   symmetry=none periodicity=0
@@ -83,8 +83,8 @@
   }
 
 08_SG60210         { ; FOTW: September 1, 1998              t=  0:06:22.73
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=gallet-6-02 function=cos/sin passes=1
+  reset=1960 type=formula formulafile=sg_fotw.frm
+  formulaname=Gallet-6-02 function=cos/sin passes=1
   center-mag=36.178/-0.408461/0.1071038/1/44.999
   params=1.5/0/1/0/0.25/0 float=y maxiter=15 inside=bof60
   symmetry=none periodicity=0
@@ -95,7 +95,7 @@
   }
 
 09_G110201         { ; FOTW: September 8, 1998              t=  0:18:37.93
-  reset=1960 type=formula formulafile=fractint.frm
+  reset=1960 type=formula formulafile=sg_fotw.frm
   formulaname=Gallet-11-02 passes=1
   center-mag=2.36563/0.769515/0.1226871/1/62.499
   params=-1/20/2/0.6/16/1e-010 float=y maxiter=1500 periodicity=0
@@ -106,8 +106,8 @@
   }
 
 10_INVAS51         { ; FOTW: September 15, 1998             t=  0:06:20.85
-  reset=1960 type=formula formulafile=fractint.frm
-  formulaname=invasion5 function=ident passes=1
+  reset=1960 type=formula formulafile=sg_fotw.frm
+  formulaname=Invasion5 function=ident passes=1
   center-mag=-1.21383339285357100/-0.10668137065217640/31.6094
   params=0.5/0/1/0 float=y maxiter=500 inside=bof60 decomp=256
   rseed=-27207
@@ -118,7 +118,7 @@
   }
 
 11_sg_gravijul_01  { ; FOTW: September 29, 1998             t=  0:05:02.97
-  reset=1960 type=formula formulafile=list_98.frm formulaname=gravijul
+  reset=1960 type=formula formulafile=sg_fotw.frm formulaname=gravijul
   function=recip/tanh/log passes=1
   center-mag=-0.640338/1.47121/5.603928 params=-0.5/-0.25/-1/0.225/9/0
   float=y maxiter=2045 inside=epsiloncross decomp=256
@@ -138,60 +138,3 @@
   <8>R50U60V70<13>mT0oV0pY0<3>ue0wh0wi3<11>wuewviwwlxxpxwn<14>mYClW9jT7hR5\
   eO2<5>A00<13>XH0YI0YI0<6>cM2
   }
-
-frm:Gallet-6-02 {; Sylvie Gallet [101324,3444], 1996
-  z = pixel , x = real(z) , y = imag(z) :
-   hx = p1*fn1(x + p2*fn2(y)) , hy = p1*fn1(y + p2*fn2(x))
-   x = x + hy , y = y + hx
-   z = x + flip(y) , mhx = |hx| , mhy = |hy|
-    (mhx+mhy) >= p3 && mhx <= 1e35 && mhy <= 1e35
-  ;SOURCE: gallet-6.frm
-}
-
-frm:Gallet-11-02 {
-  center = p2
-  rad = real(p3) , bailout = imag(p3)
-  r = |pixel-center|
-  if (r <= rad)
-    pixel = (pixel-center) / sqrt(rad-r) + center
-    p = p1
-  else
-    p = 1 + flip(p1)
-  endif
-  z = pixel , p_1 = p-1
-  :
-  zp1 = z^p_1
-  num = z*zp1 - 1 , den = p*zp1
-  z = z - num/den
-  |num| >= bailout
-  }
-
-frm:Gallet-11-05 {
-  z = w = pixel , p_1 = p1 - 1 , iter = 0 :
-  w2 = w^p_1
-  num = w * w2 - 1 , den = p1 * w2
-  w = w - num / den
-  iter = iter + 1
-  z = z + imag(p2) * w / iter
-  |num| >= p2
-  }
-
-frm:gravijul { ; r^(-2) Mark Christenson 1/25/98
-; defaults: p1 = (1,0) p2 = (0,0) p3 = (4,0)
-   z = pixel:
-   w = fn1(z)
-   z = fn3(p1/fn2(w*w)) + p2
-    |z| < p3
-  }
-
-frm:Invasion5 {; Mike Traynor
-           ; From Earl L. Hinrichs' non-fractint formula
-  z = Pixel, c = pixel :
-  z = z^2 + c,
-  x = p1*fn1(real(z^2 + c)),
-  y = p2*imag(z^2 + c),
-  z =  x + flip(y)
-  z = z^2 + c,
-  |(z^2)| <= 4
-  ;SOURCE: invasio2.frm
-}

@@ -1,37 +1,37 @@
-Return-Path:  <owner-fractint@lists.xmission.com>
-Received:  from lists.xmission.com ([198.60.22.7])
-           by mtiwgwc28.worldnet.att.net (InterMail vM.4.01.02.07 201-229-116-107)
-           with ESMTP id <19991125114305.VLVQ9095.mtiwgwc28.worldnet.att.net@lists.xmission.com>;
-           Thu, 25 Nov 1999 11:43:05 +0000
-Received:  from domo by lists.xmission.com with local (Exim 2.12 #2) id 11qxF2-000288-00
-           for fractint-goout@lists.xmission.com;
-           Thu, 25 Nov 1999 04:39:12 -0700
-Message-Id:  <3.0.5.16.19991125133855.2a777748@mail.mnhn.lu>
-X-Sender:  guy.marson@mail.mnhn.lu (Unverified)
-X-Mailer:  QUALCOMM Windows Eudora Light Version 3.0.5 (16)
-Date:  Thu, 25 Nov 1999 13:38:55 +0100
-To:  fractint@xmission.com
-From:  Guy Marson <guy.marson@mnhn.lu>
-Subject:  (fractint) speedtest
-Mime-Version:  1.0
-Content-Type:  text/plain; charset="us-ascii"
-Sender:  owner-fractint@lists.xmission.com
-Precedence:  bulk
-Reply-To:  fractint@lists.xmission.com
-X-Mozilla-Status:  0000
-Content-Length:  2896
-
-Hi,
-
-While still looking for a new PC, I made a little test. Running the
-following SPEEDTST.PAR on my old P90 and on a P3-500MHz, I fund out, that
-the P3-500 is only 3x - 3.5x faster than my P90 and not 5.55x .. strange..
-Would you please run the speedtst.par and give me the running-times of the
-3 examples, with the data of the PC's (CPU and freq.).
-
-******************
-  SPEEDTST.PAR
-******************
+; Return-Path:  <owner-fractint@lists.xmission.com>
+; Received:  from lists.xmission.com ([198.60.22.7])
+;            by mtiwgwc28.worldnet.att.net (InterMail vM.4.01.02.07 201-229-116-107)
+;            with ESMTP id <19991125114305.VLVQ9095.mtiwgwc28.worldnet.att.net@lists.xmission.com>;
+;            Thu, 25 Nov 1999 11:43:05 +0000
+; Received:  from domo by lists.xmission.com with local (Exim 2.12 #2) id 11qxF2-000288-00
+;            for fractint-goout@lists.xmission.com;
+;            Thu, 25 Nov 1999 04:39:12 -0700
+; Message-Id:  <3.0.5.16.19991125133855.2a777748@mail.mnhn.lu>
+; X-Sender:  guy.marson@mail.mnhn.lu (Unverified)
+; X-Mailer:  QUALCOMM Windows Eudora Light Version 3.0.5 (16)
+; Date:  Thu, 25 Nov 1999 13:38:55 +0100
+; To:  fractint@xmission.com
+; From:  Guy Marson <guy.marson@mnhn.lu>
+; Subject:  (fractint) speedtest
+; Mime-Version:  1.0
+; Content-Type:  text/plain; charset="us-ascii"
+; Sender:  owner-fractint@lists.xmission.com
+; Precedence:  bulk
+; Reply-To:  fractint@lists.xmission.com
+; X-Mozilla-Status:  0000
+; Content-Length:  2896
+; 
+; Hi,
+; 
+; While still looking for a new PC, I made a little test. Running the
+; following SPEEDTST.PAR on my old P90 and on a P3-500MHz, I fund out, that
+; the P3-500 is only 3x - 3.5x faster than my P90 and not 5.55x .. strange..
+; Would you please run the speedtst.par and give me the running-times of the
+; 3 examples, with the data of the PC's (CPU and freq.).
+; 
+; ******************
+;   SPEEDTST.PAR
+; ******************
 
 fpu_off            { ; 0min 44sec; video=sf5 (Pentium 90)
   reset=2000 type=mandelfn function=sin passes=b video=sf5
@@ -69,18 +69,11 @@ julzpwr1           { ; 58min 19.61 sec; video=sf5 (Pentium 90)
   4344435433333233324322222122213211111011102100<2>000
   }
 
-******************
-
-the "julzpwr1" is running a bit slower than the other's.. 
-
-
-Thanks in advance!
-
-Guy 
-
---------------------------------------------------------------
-Thanks for using Fractint, The Fractals and Fractint Discussion List
-Post Message:   fractint@lists.xmission.com
-Get Commands:   majordomo@lists.xmission.com "help"
-Administrator:  twegner@phoenix.net
-Unsubscribe:    majordomo@lists.xmission.com "unsubscribe fractint"
+; ******************
+; 
+; the "julzpwr1" is running a bit slower than the other's.. 
+; 
+; 
+; Thanks in advance!
+; 
+; Guy 
