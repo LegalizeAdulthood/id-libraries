@@ -380,3 +380,23 @@ Richard6 (XYAXIS) {; Jm Collard-Richard
    z=sin(sinh(z))+pixel
     |z|<=50
   }
+Jm_01 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=(fn1(fn2(z^pixel)))*pixel
+    |z|<=t
+  }
+Jm_02 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=(z^pixel)*fn1(z^pixel)
+    |z|<=t
+  }
+Jm_03 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   z=fn1((fn2(z)*pixel)*fn3(fn4(z)*pixel))*pixel
+    |z|<=t
+  }
+Jm_27 {; generalized Jm Collard-Richard type
+  z=pixel,t=p1+4:
+   sqrz=fn1(z), z=sqrz + 1/sqrz + pixel
+    |z|<=t
+  }
