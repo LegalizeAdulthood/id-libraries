@@ -1,0 +1,772 @@
+;; -----------------------------------
+;;  Archivo de Parametros: MAC0031.PAR
+;; -----------------------------------
+;;
+;; Derechos Reservado Por MARCELO ANELLI COLLA
+;; Caracas, 1995
+
+mac3100            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ;  
+  reset=1910 type=sqr(1/fn) function=sin
+  corners=-5.365585/5.365585/-4.024188/4.024188 float=y maxiter=256
+  bailoutest=imag inside=0 outside=real logmap=old colors=@royal.map
+  }
+
+mac3101            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ;  
+  reset=1910 type=sqr(1/fn) function=sin
+  corners=-1.695525/1.695525/-1.271644/1.271644 float=y maxiter=256
+  bailoutest=imag inside=0 outside=real logmap=old colors=@royal.map
+  }
+
+mac3102            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=sqr(1/fn) function=recip
+  corners=-5.599177/5.599177/-4.199383/4.199383 float=y maxiter=256
+  bailout=128 bailoutest=imag inside=0 outside=real logmap=old
+  colors=@royal.map
+  }
+
+mac3103            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=sqr corners=-5.501761/5.501761/-4.12632/4.12632
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@golds.map
+  }
+
+mac3104            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=sqr corners=-0.67751788/0.26878494/-0.36562319/0.34410392
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic6.map
+  }
+
+mac3105            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=exp corners=-1.008535/0.3413384/-1.374252/-0.361847
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3106            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=exp corners=0.0373373/7.842897/3.899983/9.754153
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3107            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=exp corners=3.8257502/4.4970284/5.880776/6.3842346
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3108            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=exp corners=-31.99/31.99/-17.85999/30.12501
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@volcano.map
+  }
+
+mac3109            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=cos corners=-31.99/31.99/-23.49057/24.49443
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@volcano.map
+  }
+
+mac3110            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=cos corners=-5.121665/-2.383321/3.741776/5.795534
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin3.map
+  }
+
+mac3111            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM03
+  function=cos corners=2.864342/9.545902/-7.644237/-2.633067
+  params=0.5/0.8/0.8/0.5/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin3.map
+  }
+
+mac3112            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=000553<91>jeP332<29>AE7335AF7<70>ReJReJReJReJReJ<53>WZK
+  }
+
+mac3113            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-3.725225/4.976055/-3.26298/3.26298
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=000553<91>jeP332<29>AE7335AF7<70>ReJReJReJReJReJ<53>WZK
+  }
+
+mac3114            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-31.99/31.99/-23.53305/24.45195
+  params=0.5/0.5/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=000553<91>jeP332<29>AE7335AF7<70>ReJReJReJReJReJ<53>WZK
+  }
+
+mac3115            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-5.602159/-2.403159/-10.56239/-8.163143
+  params=0.5/0.5/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@mongo.map
+  }
+
+mac3116            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-4.3328/-4.17285/-8.9472787/-8.8273162
+  params=0.5/0.5/1/1/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3117            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=sqr corners=-5.6857143/-4.7899943/-9.0574034/-8.0853161
+  params=0.5/0.5/1/1/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3118            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=cos corners=-31.99/26.96373/-31.99/31.99
+  params=0.5/0.5/1/1/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3119            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM04
+  function=cos corners=-3.962488/1.932884/-1.78093/4.61707
+  params=0.5/0.5/1/1/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3120            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=ident corners=-29.12357/29.12357/-21.84268/21.84268
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@gompers.map
+  }
+
+mac3121            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=ident corners=-7.106151/7.106151/-5.329613/5.329613
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@gompers.map
+  }
+
+mac3122            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=conj corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@gompers.map
+  }
+
+mac3123            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=flip corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@gompers.map
+  }
+
+mac3124            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=asin corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3125            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=asinh corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3126            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=asinh corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3127            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=acos corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3128            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=acosh corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3129            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=cabs corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3130            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=abs corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3131            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=sqrt corners=-31.99/31.99/-23.9925/23.9925
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@chroma3.map
+  }
+
+mac3132            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=cosxx corners=-11.26048/11.26048/-8.44536/8.44536
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3133            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=cosxx corners=-6.497616/-4.24552/-0.7564488/0.9326232
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@satin2.map
+  }
+
+mac3134            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=sqr corners=-31.99/31.99/-23.90441/24.08059
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@afro.map
+  }
+
+mac3135            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=sqr corners=-11.26048/11.26048/-8.357273/8.533447
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3136            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=sqr corners=-3.558312/3.558312/-2.580647/2.756821
+  params=0.5/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3137            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=ident corners=-31.99/31.99/-24.18973/23.79527
+  params=0.5/1/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3138            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=3RDIM05
+  function=flip corners=-31.99/31.99/-24.18973/23.79527
+  params=0.5/0.5/0.3/0.3/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@basic2.map
+  }
+
+mac3139            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=ident/flip/sqr corners=-2/2/-1.5/1.5
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  colors=@navy.map
+  }
+
+mac3140            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=ident/flip/sqr corners=-2/2/-1.5/1.5
+  params=0/0/0/0/0/0 float=y maxiter=256 inside=0 outside=real
+  potential=55/100/0 colors=@navy.map
+  }
+
+mac3141            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cos/sin/sqr
+  corners=-5.681818/5.681818/-4.261364/4.261364 params=1/0/0/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/100/0
+  colors=@giftwrap.map
+  }
+
+mac3142            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=tan/sin/sqr
+  corners=-5.681818/5.681818/-4.261364/4.261364 params=1/0/0/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/100/0
+  colors=@giftwrap.map
+  }
+
+mac3143            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=tan/sin/sqr
+  corners=-5.681818/5.681818/-4.261364/4.261364 params=1/0/0/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@afro.map
+  }
+
+mac3144            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=tan/sin/sqr
+  corners=-1.370779/0.01558473/0.6357377/1.67551 params=1/0/0/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/500/0
+  colors=@afro.map
+  }
+
+mac3145            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=tan/sin/sqr
+  corners=-31.99/31.99/-23.99985/23.98515 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3146            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cos/sinh/sqr
+  corners=-31.99/31.99/-23.99985/23.98515 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3147            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cos/sinh/sqr
+  corners=-5.05442/5.05442/-3.798167/3.783463 params=1/0/255/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3148            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cos/sinh/sqr
+  corners=1.829898/3.427094/-2.998419/-1.800521 params=1/0/255/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3149            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cabs/sinh/sqr
+  corners=-31.99/31.99/-26.39197/21.59303 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3150            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cabs/sinh/sqr
+  corners=-17.02168/7.802558/-9.3247/9.29348 params=1/0/255/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3151            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cabs/tanh/sqr
+  corners=-31.99/31.99/-24.00811/23.97689 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3152            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cabs/tanh/sqr
+  corners=-3.600141/5.101139/-3.466276/3.059684 params=1/0/255/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3153            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=cabs/flip/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3154            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=conj/flip/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3155            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=flip/flip/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3156            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=flip/zero/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3157            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=flip/asin/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3158            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=flip/cabs/sqr
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3159            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=sqr/sqr/flip
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin2.map
+  }
+
+mac3160            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=log/exp/flip
+  corners=-31.99/31.99/-24.1958/23.7892 params=1/0/255/0/0/0 float=y
+  maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin3.map
+  }
+
+mac3161            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=postcard.frm
+  formulaname=inandout07 function=log/exp/flip
+  corners=-4.564157/6.440403/-8.897027/-0.6436068 params=1/0/255/0/0/0
+  float=y maxiter=256 inside=0 outside=real potential=255/200/0
+  colors=@satin3.map
+  }
+
+mac3162            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Curly
+  function=sin/sqr
+  corners=-1.5681277/-0.7186954/-0.33214341/0.30493078
+  params=0/0/0/0/0/0 float=y potential=255/300/0 colors=@chroma5.map
+  }
+
+mac3163            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Curly
+  function=sin/sqr
+  corners=-1.4630098/-1.3593791/-0.0408393669/0.036883685
+  params=0/0/0/0/0/0 float=y potential=255/300/0 colors=@chroma5.map
+  }
+
+mac3164            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Curly
+  function=sin/sqr
+  corners=-1.4630098/-1.3593791/-0.0408393669/0.036883685
+  params=0/0/0/0/0/0 float=y logmap=old
+  colors=00022V22011V11000W000<2>21022021033032044042054053065053076064087\
+  0740980850A80850B90960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH\
+  0GA0LH0GA0MI0HB0NJ0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ\
+  0OF0XR0PG0YS0QG0ZT0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_\
+  0XL0h`0YM0ia0ZM0jb0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0so\
+  BjU0tqDkV0urEmW0vtFnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0us\
+  LkW0tqLjV0spLiU0rnLhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ib\
+  KYM0haKXL0g`KXL0f_KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZT\
+  LQH0YSLPH0XSLOG0WRMOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJ\
+  OHC0MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BA\
+  S960A9S86098T75087T75076T64065U54055U43044U43033V320
+  }
+
+mac3165            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Curly
+  function=sin/sqr
+  corners=-1.4630098/-1.3593791/-0.0408393669/0.036883685
+  params=0/0/0/0/0/0 float=y outside=summ logmap=old
+  colors=00022V22011V11000W000<2>21022021033032044042054053065053076064087\
+  0740980850A80850B90960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH\
+  0GA0LH0GA0MI0HB0NJ0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ\
+  0OF0XR0PG0YS0QG0ZT0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_\
+  0XL0h`0YM0ia0ZM0jb0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0so\
+  BjU0tqDkV0urEmW0vtFnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0us\
+  LkW0tqLjV0spLiU0rnLhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ib\
+  KYM0haKXL0g`KXL0f_KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZT\
+  LQH0YSLPH0XSLOG0WRMOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJ\
+  OHC0MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BA\
+  S960A9S86098T75087T75076T64065U54055U43044U43033V320
+  }
+
+mac3166            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=Curly
+  function=sin/sqr
+  corners=-1.374581784/-1.369400247/-0.001995574334/0.001890578262
+  params=0/0/0/0/0/0 float=y logmap=old
+  colors=00022V22011V11000W000<2>21022021033032044042054053065053076064087\
+  0740980850A80850B90960CA0A60DB0B70EC0B70FD0C70GD0D80HE0D80IF0E90JG0F90KH\
+  0GA0LH0GA0MI0HB0NJ0IB0OK0JC0PL0JC0QL0KD0RM0LD0SN0ME0TO0ME0UP0NF0VQ0OF0WQ\
+  0OF0XR0PG0YS0QG0ZT0RH0_U0RH0`U0SI0aV0TI0bW0UJ0cX0UJ0dY0VK0eY0WK0fZ0XL0g_\
+  0XL0h`0YM0ia0ZM0jb0_M0kc1`N0le2aO0mf3cP0nh5dQ0oi6eR0pk7fS0ql9hT0rnAiT0so\
+  BjU0tqDkV0urEmW0vtFnX0wuHoY0xwIpZ0yxJr_0zzLq_0yyLpZ0xwLoY0wvLnX0vtLmW0us\
+  LkW0tqLjV0spLiU0rnLhT0qmLgS0pkLeS0ojLdR0nhLcQ0mgLbP0leLaO0kdL_N0jbKZM0ib\
+  KYM0haKXL0g`KXL0f_KWL0eZKVK0dZKUK0cYKUJ0bXKTJ0aWKTJ0aWKSJ0`VKRI0_UKRI0ZT\
+  LQH0YSLPH0XSLOG0WRMOG0VQMNF0UPMMF0TONME0SNNLE0RNNKD0QMOJD0PLOJD0OKOIC0NJ\
+  OHC0MJPHB0LIPGB0KHPFA0JGQEA0IFQE90HEQD90GERC80FDRC80ECRB70DBSA70CAS970BA\
+  S960A9S86098T75087T75076T64065U54055U43044U43033V320
+  }
+
+mac3167            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sqr corners=-2.447502/-0.3748871/-0.7792084/0.7752527
+  params=0/0/0/0/0/0 float=y outside=atan logmap=old
+  colors=@injector.map
+  }
+
+mac3168            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sqr corners=-1.4611033/-0.80615709/-0.24758268/0.243627
+  params=0/0/0/0/0/0 float=y outside=atan logmap=old
+  colors=@injector.map
+  }
+
+mac3169            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sqr corners=-2.299447/2.311374/-1.654184/1.803932
+  params=0/0/0/0/0/0 float=y outside=mult logmap=old colors=@blues.map
+  }
+
+mac3170            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sqr corners=-2.299447/2.311374/-1.654184/1.803932
+  params=0/0/0/0/0/0 float=y inside=bof60 outside=mult logmap=old
+  colors=@giftwrap.map
+  }
+
+mac3171            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sqr corners=0.8477605/2.403537/-1.381004/-0.2141718
+  params=0/0/0/0/0/0 float=y inside=epsiloncross outside=summ
+  colors=@golds.map
+  }
+
+mac3172            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=flip/sqr corners=-31.99/31.99/-25.2693/22.7157
+  params=0/0/0/0/0/0 float=y outside=atan colors=@satin3.map
+  }
+
+mac3173            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=flip/sqr corners=-2.757723/2.951852/-2.003236/2.278946
+  params=0/0/0/0/0/0 float=y inside=bof60 outside=atan
+  colors=000b0h<14>000<15>0gg<15>000<15>0pQ<15>000<15>zn0<15>000<15>zM0<15\
+  >004<15>faP<13>654332333<14>zzz<15>000<15>zQZ<15>000<15>d0j
+  }
+
+mac3174            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=flip/sqr corners=-2.757723/2.951852/-2.003236/2.278946
+  params=0/0/0/0/0/0 float=y inside=bof61 outside=atan
+  colors=000411<28>zKU<30>211000000<14>000010030<29>0z0<30>020000000<14>00\
+  0110330<29>zz0<30>220000000<29>000000200
+  }
+
+mac3175            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=cotan/sqr passes=b
+  corners=-3.160423/3.354552/-2.381011/2.50522 params=0/0/0/0/0/0
+  float=y inside=bof60 outside=summ
+  colors=000aNG<10>zz0<14>ZZ8XX8VW8TU8RS8<2>LM6JK6HI6FG6DF5<2>795574354033\
+  077<13>4zz<15>zz0<15>z1z<15>000<15>0f0<15>zz0<15>zzz<15>000<12>TN0WO0YQ0\
+  `S0aU0<14>zz0<14>jB0i70f70<14>000<15>S5N<3>_JI
+  }
+
+mac3176            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=cotan/sqr passes=b
+  corners=-3.160423/3.354552/-2.381011/2.50522 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=bof60 outside=summ
+  colors=000QM0<15>000<35>s00<2>x99zDDyAA<2>t00<34>200010020<39>0i7<4>0tO<\
+  3>0nG0lD0k9<41>021000110<34>sk0<2>xoEzqJypF<2>tl0<18>RN0
+  }
+
+mac3177            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=cotan/sqr passes=t
+  corners=-3.160423/3.354552/-2.381011/2.50522 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=bof60 outside=summ
+  colors=000QM0<15>000<35>s00<2>x99zDDyAA<2>t00<34>200010020<39>0i7<4>0tO<\
+  3>0nG0lD0k9<41>021000110<34>sk0<2>xoEzqJypF<2>tl0<18>RN0
+  }
+
+mac3178            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=cotanh/sqr passes=b
+  corners=-3.160423/3.354552/-2.381011/2.50522 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=period outside=summ
+  colors=000C00<5>200010020<39>0i7<4>0tO<3>0nG0lD0k9<41>021000110<34>sk0<2\
+  >xoEzqJypF<2>tl0<34>220000100<34>s00<2>x99zDDyAA<2>t00<27>D00
+  }
+
+mac3179            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/sqr corners=-4.992759/5.186888/-3.874712/3.760024
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=period outside=summ
+  colors=@purty2.map
+  }
+
+mac3180            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/sqr passes=b
+  corners=-4.992759/5.186888/-3.874712/3.760024 params=0/0/0/0/0/0
+  float=y inside=epsiloncross outside=summ colors=@purty2.map
+  }
+
+mac3181            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/sqr passes=b
+  corners=-4.992759/5.186888/-3.874712/3.760024 params=0/0/0/0/0/0
+  float=y inside=epsiloncross outside=atan colors=@purty2.map
+  }
+
+mac3182            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/recip passes=t
+  corners=-4.992759/5.186888/-3.874712/3.760024 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=zmag outside=atan colors=@purty2.map
+  }
+
+mac3183            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/recip passes=b
+  corners=-4.992759/5.186888/-3.874712/3.760024 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=zmag outside=atan colors=@satin2.map
+  }
+
+mac3184            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/recip passes=b
+  corners=0.39981698/0.90879938/0.9363166/1.3180534 params=0/0/0/0/0/0
+  float=y fillcolor=1 inside=zmag outside=atan colors=@satin3.map
+  }
+
+mac3185            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=ident/recip passes=b
+  corners=-1.0173134/-0.14186368/0.65953503/1.3161223
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=zmag outside=atan
+  colors=@satin3.map
+  }
+
+mac3186            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=exp/conj corners=-5.50228/5.50228/-4.327558/3.925862
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=atan
+  colors=@basic6.map
+  }
+
+mac3187            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=exp/conj corners=-2.133153/1.982553/-1.539785/1.546994
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=atan
+  colors=@basic6.map
+  }
+
+mac3188            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=exp/conj corners=-2.133153/1.982553/-1.539785/1.546994
+  params=0/0/0/0/0/0 float=y fillcolor=1 outside=summ
+  colors=@basic6.map
+  }
+
+mac3189            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=exp/conj corners=-2.133153/1.982553/-1.539785/1.546994
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@satin3.map
+  }
+
+mac3190            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=cosh/conj corners=-2.133153/1.982553/-1.539785/1.546994
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@satin3.map
+  }
+
+mac3191            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=recip/conj corners=-3.290695/3.140095/-2.407942/2.415151
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@satin3.map
+  }
+
+mac3192            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=recip/recip corners=-8.934504/8.783904/-6.640798/6.648007
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@satin3.map
+  }
+
+mac3193            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=recip/recip corners=-2.874808/2.724208/-2.355912/1.84335
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@injector.map
+  }
+
+mac3194            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sin corners=-2.874808/2.724208/-2.355912/1.84335
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@satin3.map
+  }
+
+mac3195            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/sin corners=-7.150005/7.273062/-5.40761/5.40969
+  params=0/0/0/0/0/0 float=y fillcolor=1 inside=bof60 outside=summ
+  colors=@purty.map
+  }
+
+mac3196            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/recip corners=-9.565264/9.688321/-7.219054/7.221135
+  params=0/0/0/0/0/0 float=y fillcolor=1 outside=atan colors=@afro.map
+  }
+
+mac3197            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/recip corners=-9.565264/9.688321/-7.219054/7.221135
+  params=0/0/0/0/0/0 float=y fillcolor=1 outside=summ
+  colors=@satin3.map
+  }
+
+mac3198            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/recip
+  corners=-4.8238572/-3.8611779/-0.35996453/0.36204492
+  params=0/0/0/0/0/0 float=y fillcolor=1 outside=summ
+  colors=@purty2.map
+  }
+
+mac3199            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+  reset=1910 type=formula formulafile=fractint.frm formulaname=curly
+  function=sin/recip
+  corners=-4.5147063/-4.3491255/0.21099527/0.3351809
+  params=0/0/0/0/0/0 float=y fillcolor=1 outside=summ
+  colors=@gompers.map
+  }
+

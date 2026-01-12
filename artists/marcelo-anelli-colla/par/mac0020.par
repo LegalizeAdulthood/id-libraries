@@ -1,0 +1,117 @@
+;; -----------------------------------
+;;  Archivo de Parametros: MAC0020.PAR
+;; -----------------------------------
+;;
+;; Distance estimator method
+;;
+;; Derechos Reservado Por MARCELO ANELLI COLLA
+;; Caracas, 1995
+
+mac2001            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; espiral
+  reset=1910 type=mandel passes=t
+  corners=-0.7474825933/-0.7462025935/0.092277646898/0.093237646795
+  params=0/0 float=y maxiter=1024 inside=15 distest=1000/10/1024/768
+  colors=00000e0e00eee00e0eeL0eeeLLLLLzLzLLzzzLLzLzzzLzzz000555<3>HHHKKKOO\
+  OSSSWWW___ccchhhmmmssszzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zV\
+  z<3>zVV<3>zzV<3>VzV<3>Vzz<2>Vbzhhz<3>zhz<3>zhh<3>zzh<3>hzh<3>hzz<2>hlz00\
+  S<3>S0S<3>S00<3>SS0<3>0S0<3>0SS<2>07SEES<3>SES<3>SEE<3>SSE<3>ESE<3>ESS<2\
+  >EHSKKS<2>QKSSKSSKQSKOSKMSKK<2>SQKSSKQSKOSKMSKKSK<2>KSQKSSKQSKOSKMS00G<3\
+  >G0G<3>G00<3>GG0<3>0G0<3>0GG<2>04G88G<2>E8GG8GG8EG8CG8AG88<2>GE8GG8EG8CG\
+  8AG88G8<2>8GE8GG8EG8CG8AGBBG<2>FBGGBGGBFGBDGBCGBB<2>GFBGGBFGBDGBCGBBGB<2\
+  >BGFBGGBFGBDGBCG000<6>000
+  }
+
+mac2002            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; tapete
+  reset=1910 type=mandel
+  corners=-0.74831292154/-0.74757631785/0.088556623874/0.089109076645
+  params=0/0 float=y maxiter=4096 inside=15 distest=2000/10/1024/768
+  }
+
+mac2003            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; InversMandel
+  reset=1910 type=formula formulafile=fractint.frm
+  formulaname=InvMandel corners=-2.258175/4.410929/-2.516189/2.485638
+  params=0/0/0/0/0/0 float=y maxiter=4096 inside=15 outside=0
+  logmap=yes distest=-4000/10/1024/768 colors=@default.map
+  }
+
+mac2004            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; InversMandel1
+  reset=1910 type=formula formulafile=fractint.frm
+  formulaname=InvMandel
+  corners=-1.501028/-0.3539421/-0.43499065/0.42532365
+  params=0/0/0/0/0/0 float=y maxiter=4096 inside=15 outside=0
+  logmap=yes distest=-4000/10/1024/768 colors=@blues.map
+  }
+
+mac2005            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; imprime
+  reset=1950 type=mandel passes=1
+  corners=-0.7486812234/-0.747208016/0.08828039749/0.08938530303
+  params=0/0 float=y maxiter=8192 inside=15 distest=2000/10/1024/768
+  colors=000zzz000zzz000zzz000000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000
+  }
+
+mac2006            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; imprime
+  reset=1950 type=mandel passes=1
+  corners=-0.28381125992/-0.28321918959/-0.64388480818/-0.64344075543
+  params=0/0 float=y maxiter=8192 inside=15 distest=2000/10/1024/768
+  colors=000zzz000zzz000zzz000000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000
+  }
+
+mac2007            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; imprime
+  reset=1950 type=mandel passes=1
+  corners=-0.75919334294/-0.75904602221/0.076550175748/0.076660666302
+  params=0/0 float=y maxiter=4096 inside=15 distest=2000/10/1024/768
+  colors=000zzz000zzz000zzz000000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz00\
+  0zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000zzz000
+  }
+mac2008            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; imprime
+  reset=1950 type=mandel
+  corners=-0.75876966941/-0.75856820226/0.077184331426/0.077335431787
+  params=0/0 float=y maxiter=4096 inside=15 distest=2000/10/1024/768
+  colors=000zzz000zzz000zzz000000zzz000zzz000zzz000zzz000
+  }
+
+mac2009            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
+                     ; imprime
+  reset=1950 type=mandel
+  corners=-0.75869210456/-0.758645767116/0.0772425050651/0.0772772581481
+  params=0/0 float=y maxiter=4096 inside=15 distest=2000/10/1024/768
+  colors=000zzz000zzz000zzz000000zzz000zzz000zzz000zzz000
+  }
+
