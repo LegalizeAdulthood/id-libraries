@@ -41,8 +41,8 @@ mac1004            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Del libro Computers Pattern, Chaos and Beauty
                      ; fig 9.9 a 9.13 se encuentran con zoom
                      ; coloreada con pseudo.map
-  reset type=formula formulafile=fract003.frm
-  formulaname=rcl_pick1
+  reset type=formula formulafile=rcl.frm
+  formulaname=RCL_Pick1
   corners=2.008874/-3.811122/-3.98017228/3.77983302/-3.811122/3.76999998
   float=y
   colors=00031662CA3I<5>P8sO8y<3>MAzLBzKBzJCzJCz<4>GFzFGzFGzFHzEHzDIzDJzCJ\
@@ -136,7 +136,7 @@ mac1010            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1011            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Seis patos en la laguna
-  reset type=formula formulafile=fractint.frm formulaname=leemandel2
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel2
   corners=-1.254006/1.254041/-0.9509451/0.9294767 inside=0
   potential=255/500/500
   colors=000DP_Uoq<20>A4XVqq<18>nwjoIRFns0kuUqq<22>ieiUqo<19>HjCTqq<17>4ri\
@@ -146,7 +146,7 @@ mac1011            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1012            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Flor Campesina     
-  reset type=formula formulafile=fractint.frm formulaname=leemandel2
+  reset type=formula formulafile=fractint.frm formulaname=LeeMandel2
   corners=0.39708364/0.400742173/-0.268023491/-0.265280485 inside=0
   potential=255/500/500
   colors=000DP_Uoq<20>A4XVqq<18>nwjoIRFns0kuUqq<22>ieiUqo<19>HjCTqq<17>4ri\
@@ -177,7 +177,7 @@ mac1014            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 mac1015            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; enterprise
                      ; La astronave de combate
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac001
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac001
   function=sin/sqr/sqr corners=-2.787789/0.4112108/-1.199625/1.199625
   params=32/0/0/0/0/0 float=y maxiter=300 logmap=old decomp=256
   biomorph=1
@@ -237,14 +237,14 @@ mac1020            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1021            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Ram plug           
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac001
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac001
   function=abs/log/sqr corners=0.38875855/0.58875855/-0.075/0.075
   params=32/0/0/0/0/0 float=y colors=@aguamar.map
   }
 
 mac1022            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Delicado           
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac001
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac001
   function=ident/log/sqr corners=-1.063327/1.352673/-0.906/0.906
   params=32/0/0/0/0/0 float=y
   colors=000000GHF<8>iUcmWepXhtYjwZmz_o<15>AFAAKA<14>CkqDlsCkq<14>AKALM7<1\
@@ -254,7 +254,7 @@ mac1022            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1023            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Hotel Plaza        
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac002
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac002
   function=log/exp/sqr
   corners=-0.41667161/0.1273247/-0.20398845/0.20400878
   params=32/0/0/0/0/0 float=y
@@ -270,7 +270,7 @@ mac1023            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1024            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Vitral             
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac002
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac002
   function=log/exp/sqr
   corners=-0.209322872/-0.182123056/-0.0101897659/0.0102100959
   params=32/0/0/0/0/0 float=y
@@ -279,7 +279,7 @@ mac1024            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
 
 mac1025            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
                      ; Estadium           
-  reset=1910 type=formula formulafile=mac001.frm formulaname=mac002
+  reset=1910 type=formula formulafile=mac001.frm formulaname=Mac002
   function=log/exp/sqr
   corners=-0.1979237721/-0.1942134509/-0.001866356312/0.001886686312
   params=32/0/0/0/0/0 float=y
@@ -417,7 +417,7 @@ mac1036            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1037            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-501
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-501
   corners=-2.426037/2.426035/-1.830166/1.808889 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=bof60 outside=real
   biomorph=256
@@ -429,7 +429,7 @@ mac1037            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1038            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-501
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-501
   passes=1 corners=-2.426037/2.426035/-1.830166/1.808889
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 decomp=256
@@ -438,7 +438,7 @@ mac1038            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1039            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-501
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-501
   corners=-2.426037/2.426035/-1.830166/1.808889 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   potential=256/256/0 decomp=256
@@ -450,7 +450,7 @@ mac1039            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1040            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-501
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-501
   corners=-1.902014/1.902011/-1.437148/1.415871 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   potential=256/256/0 invert=0.606509/0/0 decomp=256
@@ -459,7 +459,7 @@ mac1040            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1041            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-501
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-501
   corners=-1.902014/1.902011/-1.437148/1.415871 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   invert=0.606509/0/0 decomp=256
@@ -468,7 +468,7 @@ mac1041            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1042            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-503
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-503
   corners=-1.784/1.784/-1.598902/1.077098 params=0/0/0/0/0/0 float=y
   maxiter=100 bailout=10 fillcolor=0 inside=0 potential=256/256/0
   decomp=256
@@ -477,7 +477,7 @@ mac1042            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1043            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-504
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-504
   corners=-3.521127/3.521127/-2.640845/2.640845 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   potential=256/256/0 invert=0.880282/0/0 decomp=256
@@ -485,14 +485,14 @@ mac1043            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1044            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-505
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-505
   corners=-11.61058/11.61058/-8.707934/8.707934 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   potential=256/256/0 decomp=256 colors=@tbsch1.map
   }
 
 mac1045            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=carr-505
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-505
   corners=-11.61058/11.61058/-8.707934/8.707934 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0
   potential=256/256/0 invert=2.90264/0/0 decomp=256
@@ -502,7 +502,7 @@ mac1045            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1046            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-506
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-506
   passes=1 corners=-12.41212/12.41212/-9.30909/9.30909
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=zmag outside=atan invert=2.90264/0/0
@@ -520,7 +520,7 @@ mac1046            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1047            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-507
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-507
   corners=-1.136/1.136/-0.852/0.852 params=0/0/0/0/0/0 float=y
   maxiter=100 bailout=10 fillcolor=0 inside=0 outside=mult
   colors=000OI5<6>eYJg_LiaNkcPneR<4>zpa<4>jdWgaVcZT`WSYUR<6>AAK<3>ALQAOSAR\
@@ -531,7 +531,7 @@ mac1047            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1048            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-507
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-507
   corners=-1.136/1.136/-0.852/0.852 params=0/0/0/0/0/0 float=y
   maxiter=100 bailout=10 fillcolor=0 inside=0 outside=mult
   potential=256/128/0
@@ -543,14 +543,14 @@ mac1048            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1049            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-508
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-508
   corners=-0.517263/1.322737/-0.69/0.69 params=0/0/0/0/0/0 float=y
   maxiter=100 bailout=10 fillcolor=0 inside=0 outside=imag
   colors=@metalico.map
   }
 
 mac1050            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-548
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-548
   corners=-2.849328/2.849328/-2.136996/2.136996 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0 outside=imag
   colors=000piY<6>VRQROPOLOKJNHGMDDLAAK<3>ALQAOSARUBUWBXY<6>DqlDtnCql<6>7T\
@@ -561,7 +561,7 @@ mac1050            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1051            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-548
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-548
   corners=-2.589429/2.28862/-1.868275/1.790262 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0 outside=real
   invert=0.0356166/0/0
@@ -573,7 +573,7 @@ mac1051            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1052            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr corners=-2/2/-1.5/1.5 params=0/0/0/0/0/0 float=y
   maxiter=100 bailout=10 fillcolor=0 inside=0 outside=real
   colors=000<2>000SNF<14>zpahhh<14>yzz<14>UPISNFSNF<46>zpa000<29>1Td1Uf1Td\
@@ -581,7 +581,7 @@ mac1052            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1053            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr passes=1
   corners=-5.681818/5.681818/-4.261364/4.261364 params=0/0/0/0/0/0
   float=y maxiter=100 bailout=10 fillcolor=0 inside=0 outside=real
@@ -590,7 +590,7 @@ mac1053            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1054            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr passes=1
   corners=-1.590132/-0.4537679/-0.42613636/0.42613636
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
@@ -600,14 +600,14 @@ mac1054            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1055            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr passes=1 corners=-6.606706/6.14716/-4.7827/4.7827
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 outside=real invert=0.682911/0/0 colors=@fract008.map
   }
 
 mac1056            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr corners=-2.487381/2.530908/-1.881858/1.881858
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 potential=256/256/0 invert=0.682911/0/0
@@ -617,7 +617,7 @@ mac1056            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1057            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-560
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-560
   function=sin/sqr corners=-2.25695/2.300476/-1.709035/1.709035
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 potential=256/256/0
@@ -627,7 +627,7 @@ mac1057            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1058            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sin/cos corners=-3.759398/3.759398/-2.819549/2.819549
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 potential=256/256/0
@@ -638,7 +638,7 @@ mac1058            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1059            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sin/cos corners=-3.759398/3.759398/-2.819549/2.819549
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 potential=256/256/0 invert=0.93985/0/0
@@ -649,7 +649,7 @@ mac1059            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1060            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sin/cos corners=-3.759398/3.759398/-2.819549/2.819549
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 outside=imag invert=0.93985/0/0
@@ -660,7 +660,7 @@ mac1060            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1061            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sin/cos corners=-3.759398/3.759398/-2.819549/2.819549
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 outside=imag
@@ -671,7 +671,7 @@ mac1061            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1062            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sinh/cosh corners=-2.582543/2.582543/-1.936907/1.936907
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 outside=imag
@@ -682,7 +682,7 @@ mac1062            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1063            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=06carr.frm formulaname=Carr-555
+  reset=1910 type=formula formulafile=Carr.frm formulaname=Carr-555
   function=sinh/cosh corners=-2.582543/2.582543/-1.936907/1.936907
   params=0/0/0/0/0/0 float=y maxiter=100 bailout=10 fillcolor=0
   inside=0 potential=256/256/0
@@ -1032,7 +1032,7 @@ mac1092            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1093            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=ident/sqr/recip/ident passes=t
   corners=-3.060869/3.060869/-2.295652/2.295652 params=0/0/1/-1/1/1
   float=y maxiter=15000 bailout=10 inside=startrail logmap=yes
@@ -1044,7 +1044,7 @@ mac1093            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1094            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=ident/sqr/recip/ident passes=t
   corners=-3.060869/3.060869/-2.295652/2.295652 params=0/0/1/-1/1/1
   float=y maxiter=15000 bailout=10 inside=0 logmap=yes biomorph=0
@@ -1052,7 +1052,7 @@ mac1094            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1095            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=ident/sqr/recip/ident passes=t
   corners=-3.060869/3.060869/-2.295652/2.295652 params=0/0/1/-1/1/1
   float=y maxiter=15000 bailout=10 inside=period outside=real
@@ -1063,7 +1063,7 @@ mac1095            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1096            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=recip/sqr/recip/sqr
   corners=-4.560946/4.560946/-3.42071/3.42071 params=0/0/5/-1/1/1
   float=y maxiter=15000 bailout=10 inside=0 logmap=yes
@@ -1074,7 +1074,7 @@ mac1096            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1097            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=exp/sqr/sin/sqr
   corners=-11.02176/1.390361/-4.904793/4.404297 params=0/0/0/0/5/5
   float=y maxiter=15000 bailout=10 inside=0 logmap=yes
@@ -1086,7 +1086,7 @@ mac1097            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1098            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=exp/sqr/sin/sqr
   corners=-2.580862/0.4476951/-1.106805/1.164613 params=0/0/0/0/5/5
   float=y maxiter=15000 bailout=10 inside=0 logmap=yes
@@ -1098,7 +1098,7 @@ mac1098            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
   }
 
 mac1099            { ; (c) Marcelo Anelli C. 1995 CIS:70501,2240
-  reset=1910 type=formula formulafile=mac002.frm formulaname=mac101
+  reset=1910 type=formula formulafile=mac002.frm formulaname=Mac101
   function=exp/sqr/sin/sqr
   corners=-3.798361/1.665194/-2.019929/2.077736 params=0/0/0/0/5/5
   float=y maxiter=15000 bailout=10 inside=0 outside=atan logmap=yes
