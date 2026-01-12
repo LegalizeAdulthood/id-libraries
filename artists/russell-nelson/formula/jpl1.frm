@@ -72,3 +72,11 @@ InverseJuliaFn {; after Pokorny
   |z|<=P2
   ;SOURCE: jpl1.frm
 }
+JPL4a' (yaxis) {; J.P. Louvet
+    ; Edited for Fractint v. 20 by George Martin, 10/98
+  z=Pixel
+  c=Pixel:
+  z=fn1(z^2+1)+c
+  |z|<=4
+  ;SOURCE: jpl1.frm
+}

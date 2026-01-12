@@ -3839,3 +3839,461 @@ Gallet-6-04 {; Sylvie Gallet [101324,3444], 1996
   ;SOURCE: gallet-6.frm
 }
 
+newton_elliptics_3{
+x=real(p1)
+y=imag(p1)
+A=real(pixel)
+B=imag(pixel)
+phi=tan(real(p2))
+t=imag(p2)
+z=x+flip(y)
+:
+oz=z
+x=real(z)
+y=imag(z)
+d=2*y*phi-(3*sqr(x)+A)
+f=(sqr(x)+A)*x+B-sqr(y)
+g=phi*x+t-y
+nx=x-f+2*y*g
+ny=y-phi*f+(3*sqr(x)+A)*g
+z=nx+flip(ny)
+|z-oz|>0.0001
+}
+Multifrac_231 {
+  ; Albrecht Niekamp   March,03
+  ;real(p2) factor
+  ;imag(p2) bailout
+  ;real(p3) maxiter1
+  ;imag(p3) maxiter2
+  ;real(p4) inside1: 1_mandel 2_julia 3_expmandel 4_expjulia
+  ;           other: *10_soft julia transitions <0_outside=exp
+  ;imag(p4) inside2: 1_mandel 2_julia 3_expmandel 4_expjulia
+  ;           other: *10_soft mandel transitions <0_no inside1
+  ;real(p5) border1
+  ;imag(p5) border2
+  fac=real(p2)
+  ba=imag(p2)
+  out1=real(p3)
+  out2=imag(p3)
+  b1=real(p5)
+  b2=imag(p5)
+  d1=real(p4)
+  d2=imag(p4)
+  vb=(d1<0)
+  If (vb)
+    d1=d1*-1
+  endif
+  tj=(d1<10)
+  if (tj==0)
+  d1=d1/10
+  endif
+  v1=(d1==3)
+  v2=(d1==4)
+  d1=(d1==2)+(d1==4)
+  st=(d2<0)
+  if (st)
+    d2=d2*-1
+  endif
+  mj=(d2<10)
+  if (mj==0)
+    d2=d2/10
+  endif
+  v3=(d2==3)
+  v4=(d2==4)
+  d2=(d2==2)+(d2==4)
+  t=0
+  start=2-st
+  if (ismand)
+    z=0
+    c=pixel
+  else
+    c=p1
+    z=pixel
+  endif
+  :
+  if (vb)
+    z=(z+real(c))^(z+imag(c))
+  else
+    z=z^2+c
+  endif
+  bo=|z|
+  if (start)
+    t=t+1
+    if (start==2)
+      if ((t>out1)+(bo>=b1))
+        u=2*(fn1(t/fac))
+        if (d1)
+          if (tj)
+            z=pixel
+          endif
+          c=p1*u
+          vb=v2
+        else
+          z=z*u
+          c=z
+          if (mj)
+            z=0
+          endif
+          vb=v1
+        endif
+        start=1
+        t=0
+      endif
+    else
+      if ((t>out2)+(bo>=b2))
+        u=2*(fn2(t/fac))
+        if (d2)
+          if (tj)
+            z=pixel
+          endif
+          c=p1*u
+          vb=v4
+        else
+          z=z*u
+          c=z
+          if (mj)
+            z=0
+          endif
+          vb=v3
+        endif
+        start=0
+      endif
+    endif
+  endif
+  bo<=ba
+}
+Multifractal_1    { ;  Albrecht Niekamp  270503
+;only integers as first input, second input 5 digits to the right
+;real(p2) factor1, border1
+;imag(p2) (-)bailout,input bas.frm1_2digits input bas.frm2_2digits
+;real(p3) maxiter2, border2-in
+;imag(p3) factor2, border2-out
+;real(p4) maxiter3, border3-in
+;imag(p4) factor3, border3-out
+;real(p5) 1digit_shape only  5digits: shape,out1,out2,in1,in2
+; 1_mand 2_jul 3_hyb.mand 4_hyb.jul +5_reset (not shape) <0_no in/out1
+;  optional basic frm2  digit1:  1_out1 2_out2  3_both +5_shape
+;                       digit2:  1_in1 2_in2 3_both
+;imag(p5) digit1 : many_mods multipl.shutoff 1_in/out1 2_in/out2 3_both
+;         digit2 :1_iter1reset 2_iter2reset 3_both +5_shape effect
+;  input2: Number of sides 2 digits (many_mods L.Allison)
+;
+d=real(p2)
+fac1=trunc(d)
+b1=(d-fac1)*100000
+;
+d=imag(p2)
+da=d<0
+if (da)
+ d=-d
+endif
+ba=trunc(d)
+d=round((d-ba)*10000)
+p6=trunc(d/100)/10
+d=d-1000*p6
+if (da)
+ p6=-p6
+endif
+p7=d/10
+;
+d=real(p3)
+mi2=trunc(d)
+b2=(d-mi2)*100000
+;
+d=imag(p3)
+fac2=trunc(d)
+ob2=(d-fac2)*100000
+;
+d=real(p4)
+mi3=trunc(d)
+b3=(d-mi3)*100000
+;
+d=imag(p4)
+fac3=trunc(d)
+ob3=(d-fac3)*100000
+;
+da=real(p5)
+t=da<0
+if (t)
+ da=-da
+endif
+start=2-t
+dd=trunc(da)
+da=round((da-dd)*100)
+if (dd<5)
+ start=0
+ vb=(dd==3)+(dd==4)
+else
+ d=trunc(dd/10000)
+ vb=(d==3)+(d==4)
+ dd=dd-d*10000
+ d=trunc(dd/1000)
+ dd=dd-d*1000
+ or1=d>5
+ d=d-5*or1
+ vv1=(d==3)
+ vv2=(d==4)
+ dd1=(d==2)+(d==4)
+ d=trunc(dd/100)
+ dd=dd-d*100
+ or2=d>5
+ d=d-5*or2
+ vv3=(d==3)
+ vv4=(d==4)
+ dd2=(d==2)+(d==4)
+ d=trunc(dd/10)
+ dd=dd-d*10
+ inr1=d>5
+ d=d-5*inr1
+ v1=(d==3)
+ v2=(d==4)
+ d1=(d==2)+(d==4)
+ inr2=dd>5
+ dd=dd-inr2*5
+ v3=(dd==3)
+ v4=(dd==4)
+ d2=(dd==2)+(dd==4)
+endif
+;
+d=trunc(da/10)
+da=da-10*d
+ab=d>=5
+d=d-5*ab
+bb1=(d==1)
+bb2=(d==2)
+ab1=(da==1)
+ab2=(da==2)
+;
+d=imag(p5)
+dd=trunc(d)
+mm=round((d-dd)*100)
+da=trunc(dd/10)
+so1=((da==1)+(da==3)==0)
+so2=((da==2)+(da==3)==0)
+dd=dd-10*da
+wo=dd>=5
+dd=dd-5*wo
+ir1=(dd==1)+(dd==3)
+ir2=(dd==2)+(dd==3)
+;
+if (ismand)
+ z=0
+ if (vb)
+  c=0.4*log(sqr(pixel^mm))
+ else
+  c=pixel
+ endif
+else
+ c=p1
+ z=pixel
+endif
+t=0
+d3=(ismand==0)
+u=d3
+:
+if (vb)
+ if (d3)
+  z=(z*z-real(c))^(z*u+imag(c))
+ else
+  z2=fn4(z)+c                            ;Linda Allison
+  q=cos(z2)
+  z=c*(1-q)/(1+q)
+ endif
+elseif (ab)
+ z=z*z+c+c*c-p7                           ;Pusk s Istv n
+elseif (d3)
+ z2=z*z
+ z=z2*z2+(p6+u)*z2+c
+else
+ z2=z*z                                   ;Pusk s Istv n
+ z=z2*z2+(p6+u)*z2+c-p1
+endif
+bo=|z|
+If (wo)
+ t=t+1
+ if (bo>b1)
+  u=2*(fn1(t/fac1))
+  if (ismand)
+   z=z*u
+   if (vb)
+    c=0.4*log(sqr(pixel^mm))
+   else
+    c=pixel
+   endif
+  else
+   z=pixel
+   c=p1*u
+  endif
+  wo=0
+  if (ir1)
+   t=0
+  endif
+ endif
+elseif (start)
+ t=t+1
+ if (start==2)
+  if (bo>b2&&bo<ob2)
+   u=2*(fn2(t/fac2))
+   rs=or1
+   ab=bb1
+   if (dd1)
+    if (rs)
+     z=pixel
+    endif
+    c=p1*u
+    vb=vv2
+    d3=vb
+   else
+    d3=0
+    z=z*u
+    c=z
+    if (rs)
+     z=0
+    endif
+    vb=vv1
+    if (vb)
+     if (so1)
+      mm=mm+mm
+     endif
+     c=0.4*log(sqr(pixel^mm))
+    endif
+    start=1
+   endif
+  elseif (t>mi2)
+   u=2*(fn2(t/fac2))
+   rs=inr1
+   ab=ab1
+   if (d1)
+    if (rs)
+     z=pixel
+    endif
+    c=p1*u
+    vb=v2
+    d3=vb
+   else
+    d3=0
+    z=z*u
+    c=z
+    if (rs)
+     z=0
+    endif
+    vb=v1
+    if (vb)
+     if (so1)
+      mm=mm+mm
+     endif
+     c=0.4*log(sqr(pixel^mm))
+    endif
+   endif
+   start=1
+   if (ir2)
+    t=0
+   endif
+  endif
+ elseif (bo>b3&&bo<ob3)
+  u=2*(fn3(t/fac3))
+  ab=bb2
+  rs=or2
+  if (dd2)
+   if (rs)
+    z=pixel
+   endif
+   c=p1*u
+   vb=vv4
+   d3=vb
+  else
+   d3=0
+   z=z*u
+   c=z
+   if (rs)
+    z=0
+   endif
+   vb=vv3
+   if (vb)
+    if (so2)
+     mm=mm+mm
+    endif
+    c=0.4*log(sqr(pixel^mm))
+   endif
+   start=0
+  endif
+ elseif (t>mi3)
+  u=2*(fn3(t/fac3))
+  ab=ab2
+  rs=inr2
+  if (d2)
+   if (rs)
+    z=pixel
+   endif
+   c=p1*u
+   vb=v4
+   d3=vb
+  else
+   d3=0
+   z=z*u
+   c=z
+   if (rs)
+    z=0
+   endif
+   vb=v3
+   if (vb)
+    if (so2)
+     mm=mm+mm
+    endif
+    c=0.4*log(sqr(pixel^mm))
+   endif
+  endif
+  start=0
+ endif
+endif
+bo<=ba
+}
+classic-shift_ (XAXIS){ ; Jay Hill, 1998
+continue = 1,
+z = 0,
+zc = c = pixel+.25 + ((pixel-p1)*p2) *whitesq
+   :
+if (|zc| > 40)
+    continue = 0
+else
+    zc = sqr(zc) + c
+endif
+continue == 1
+}
+SuperposeMandel {
+;params=arg/mag/bailout
+;
+narg = real(p2)
+nmag = imag(p2)
+bailout = real(p3)
+z = c = pixel
+z1 = c1 = pixel + nmag*exp(flip(narg))
+mxi = maxit - 2
+esc = esc1 = exit = j = 0:
+IF (esc == 0)
+z = sqr(z) + c
+IF (bailout < |z|)
+esc = 1
+ENDIF
+ENDIF
+IF (esc1 == 0)
+z1 = sqr(z1) + c1
+IF (bailout < |z1|)
+esc1 = 1
+ENDIF
+ENDIF
+IF (j >= mxi)
+exit = 1
+IF (esc && esc1)
+z = -j
+ELSEIF (esc)
+z = 1 - j
+ELSEIF (esc1)
+z = 2 - j
+ELSE
+z = 3 - j
+ENDIF
+ENDIF
+j = j + 1
+exit == 0
+}

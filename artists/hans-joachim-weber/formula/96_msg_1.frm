@@ -737,3 +737,34 @@ Zeppo {; Mutation of 'Liar4'.
   ;SOURCE: fract196.frm
 }
 
+Carr1973m {;Modified Sylvie Gallet frm.
+   z=pixel,
+   c=pixel,
+   iter = 1 , rad = 6 , center = (1.0,0.1)
+   pix = (10*pixel+(8.0,-5))*(-0.1,-0.95)
+   zn = (center+rad/(pix-center)) , limit = abs(p1/pixel)
+   test0 = 1 , b1 = 16 , b2 = 0.0001 , b3= 0.00011 , test3=0:
+   test1 = (iter<limit) , test0 = 1-test0 , test2=(iter!=limit)
+   z = (z-zn)*test2 + zn
+   z2 = z*z , z4 = z2*z2 , n = z4*z-1 , d1 = 4*z4
+   d = d1+(1-d1)*(z==0) , z1 = n/d
+   z = (z2+c)*test1 + ((z-z1)*(1-test1))
+   test3 = (test3 || (|z|>b1))
+   z = (z*(1-(test3 && test0 && test1)))
+   iter = iter+1
+   ((|z| <= b1) * test1) || ((|z1| >= b2) * (1-test1))
+}
+G-2_variation (xaxis){; Variation on Sylvie Gallet formula.
+               ; George Martin [76440,1143]
+	       ; periodicity=0, maxiter > 2000
+  z=c=pixel, iter=numzoom=0, nextzoom = real(p1):
+  test = (iter == nextzoom)
+  nextzoom = nextzoom + test*real(p1)
+  numzoom = numzoom + test
+  zoomfactor = imag(p1)^numzoom
+  z = z*(1 - test) + test*zoomfactor*pixel
+  c = c*(1 - test) + test*zoomfactor*pixel
+  z = z*z + c
+  iter = iter + 1
+  |z| <= 16
+  }
