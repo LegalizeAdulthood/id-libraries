@@ -20,7 +20,7 @@
   x
   }
 
-15comb16           {
+15comb16           { ; M1K0L16 or'ed with 116K5L16
   reset=1100 type=plasma passes=1 center-mag=0/0/1/0 params=0/0/0/0
   inside=0 logmap=old
   colors=000t1q<3>W1NQ1GK18D00LPTQkp<3>EL`BEX87T50O5MU<15>8Sf8Tg9Tg<3>AVk5\
@@ -123,7 +123,7 @@
   z00z00z00
   }
 
-1cogs              {
+1cogs              { ; Cogs
   reset=1720 type=formula formulafile=skinner.frm
   formulaname=ScottSIC passes=1 center-mag=1.81453/-1./-1.
   params=0/0/0/0/0/0 float=y maxiter=1023 inside=maxiter
@@ -233,7 +233,7 @@
   bEgc<5>KbP
   }
 
-1feedme            {
+1feedme            { ; "Feed me, Seymore! Feed me now!"
   reset=1611 type=formula formulafile=fractint.frm
   formulaname=Wineglass passes=1 center-mag=-0.503059/-1./-1.
   params=0/0/0/0/0/0 float=y maxiter=1023 inside=0
@@ -253,7 +253,7 @@
   6>EbQFcRHcS<34>twuuwvvxwwxxxyyzzz<113>zzGzzGzzF<3>zzD00zfdW
   }
 
-1frogs             {
+1frogs             { ; Stacked frogs
   reset=1720 type=fn+fn function=sin/sqr passes=1
   center-mag=-1.09451/-1./-1. params=1/0/-1/0 float=y
   maxiter=1023 bailout=8192 inside=maxiter logmap=yes
@@ -306,7 +306,7 @@
   3BV3139<3>1Gi1Jr4C7<3>Gyb219<3>87i217<6>DDw887GHF
   }
 
-1grid              {
+1grid              { ; Lyapunov grid
   reset=1673 type=lyapunov center-mag=3.80737/-1./-1.
   params=321/0.5/0 float=y maxiter=40 inside=0 logmap=yes
   colors=000ODD<18>p33r33s22<2>x11z00z10<24>zn0zp0zr0<2>zx0zz0zz1<24>zznzz\
@@ -314,7 +314,7 @@
   6>JDDIDDHEEGEEFFFFFFFFF<4>MDD
   }
 
-1icecave           {
+1icecave           { ; Looking out of an Arctic ice-cave
   reset=2004 type=cmplxmarksmand passes=1
   center-mag=-0.468701/-1./-1. params=0/0/0/1 float=y
   maxiter=1023 inside=maxiter potential=0/511/0 symmetry=none
@@ -323,7 +323,7 @@
   YcGZcHZdHZd<41>iptjqukqu<64>xyyyyyyyy<3>zzzcHL0kz
   }
 
-1icon              {
+1icon              { ; Windows icon Clip-art
   reset=1720 type=mandel passes=1
   center-mag=-1.77e-14/0.0/0.04167969/0 params=0/0 float=y
   maxiter=1023 inside=0 logmap=yes
@@ -489,7 +489,7 @@
   0z90z90zA0<7>z40z30z20z20z10z00<79>40v30w20x<2>00z00z11y<37>TTY
   }
 
-1mnfnzsq           {
+1mnfnzsq           { ; Velvet bands
   reset=2004 type=manfn+zsqrd function=sin passes=1
   center-mag=-0.727417/-1./-1. params=0/0 float=y maxiter=1023
   inside=maxiter potential=0/511/0
@@ -533,7 +533,7 @@
   DHzEHzEGzFGzG<3>DyJDyJDyJ<95>wywwywxyx<3>zzz000000
   }
 
-1panties           {
+1panties           { ; Lacy underwear
   reset=1611 type=fn*fn function=sin/cos passes=1
   center-mag=1.56965/-1./-1. float=y maxiter=1023 inside=0
   logmap=yes
@@ -546,7 +546,7 @@
   CGz0oz_1zq0<2>zU0zq0zE000e0e00eee00<2>l77
   }
 
-1papmoon           {
+1papmoon           { ; Paper moon
   reset=0 type=cmplxmarksmand passes=1
   center-mag=-0.390518/-1./-1. params=0/0/0/1 float=y
   maxiter=1023 inside=0 logmap=yes
@@ -613,7 +613,7 @@
   bt5SfKN<2>q3cpe8<2>glR<3>o6F<2>`WXWdcTnjPxq<3>i2I
   }
 
-1rainbow           {
+1rainbow           { ; Rainbow
   reset=1720 type=formula formulafile=fractint.frm
   formulaname=ScSkZCZZ passes=1 center-mag=1.01873/-1./-1.
   params=0/0/0/0/0/0 float=y maxiter=1023 inside=maxiter
@@ -650,7 +650,7 @@
   9ZX<6>9ZJ
   }
 
-1salmine           {
+1salmine           { ; Salt mine, miner's lamps in distance
   reset=2004 type=manfn+zsqrd function=sin passes=1
   center-mag=-1.98074/-1./-1. params=0/0 float=y maxiter=1023
   inside=maxiter potential=0/511/0 symmetry=none
@@ -658,7 +658,7 @@
   1z00z00
   }
 
-1seaslug           {
+1seaslug           { ; Seaslug swimming in the South Pacific
   reset=2004 type=marksjulia passes=1
   center-mag=-1.905e-006/-1./-1. params=0.1/0.9/2 float=y
   maxiter=1023 inside=0 symmetry=none
@@ -709,7 +709,7 @@
   2qV2qT2WWWWWWzzz<6>zzzkkkkkkzzz<5>zzz
   }
 
-1stamp             {
+1stamp             { ; Mandelbrot postage stamp on envelope
   reset=1720 type=mandel passes=1 center-mag=-11.24/-7.9/0.1074219/0
   params=0/0 float=y maxiter=1023 inside=0 logmap=yes
   colors=000zzz00z<3>z0z<3>z00<3>zz0<3>0z0<3>0zz<2>0GzVVz<3>zVz<3>zVV<3>zz\
