@@ -750,5 +750,3 @@ ZZa (XAXIS) { ; Jm Richard-Collard
    z  = z-((z1-1)/z2),
         p1 <= |1-z1|
   }
-
-

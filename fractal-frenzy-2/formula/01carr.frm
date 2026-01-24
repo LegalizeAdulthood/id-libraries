@@ -1,3 +1,4 @@
+{
 Some years back while working on my Ph.D. in ThermoNuclear Physics
 as related to Ice Cream making, I chanced on a visit with Albert 
 Einstein. He gave me a list of formulas and said, "some day there
@@ -32,57 +33,54 @@ find other ways to produce these CARR'S CRYSTALS. THANKS !!!
 
 
 }
-00-Please-Read-Me!{
+
+01-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c
+  z=sqr(z) + c
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
-01-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c;
-z=sqr(z) + c,
-|z| <=10
- }
+02-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z*z) + c
+  z=sin(z*z) + c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-02-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z*z) + c;
-z=sin(z*z) + c,
-|z| <=10
- }
+03-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sin(z) + c-0.14
+  z=sin(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-03-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sin(z) + c-0.14;
-z=sin(z) + c-0.14,
-|z| <=10
- }
+04-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + cosxx(z) + 1/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-04-Carr{
-c=z=1/pixel + (z=c=cosxx(z) + 1/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
- }
+05-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + tanh(z) + 0.33/pixel:
+  z=sqr(z) + c-0.14
+  z=sqr(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-05-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel):
-z=sqr(z) + c-0.14;
-z=sqr(z) + c-0.14,
-|z| <=10
- }
-
-05-Carr{
-c=z=1/pixel + (z=c=tanh(z) + 0.33/pixel:
-z=cosxx(z) + c-0.14;
-z=cosxx(z) + c-0.14,
-|z| <=10
- }
-
-07-Carr{
-c=z=1/pixel + (z=c=flip(z) + 0.33/pixel):
-z=cosxx(z) + c-0.14;
-z=tanh(z) + c-0.14,
-|z| <=10
- }
+07-Carr {; Edited for Fractint v. 20 by George Martin, 10/98
+  c=z=1/pixel + flip(z) + 0.33/pixel:
+  z=cosxx(z) + c-0.14
+  z=tanh(z) + c-0.14
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
 08-Carr{
 c=z=1/pixel,c=cosxx(z)+1/pixel:
@@ -117,8 +115,9 @@ z=sqr(z) + c,
 
 12-Carr{
 z=c=cosxx(1/pixel):
-z=cosxx(z*z) + (sin(z) + c,
+z=cosxx(z*z) + sin(z) + c,
 |z| <=10
+}
 
 13-Carr{
 c=z=1/pixel, c=flip(-1.1,0.24)/pixel:

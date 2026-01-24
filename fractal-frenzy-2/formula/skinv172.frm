@@ -671,28 +671,28 @@ OldJulibrot(ORIGIN) {		    ; for Transparent3D
     LastSqr <= 4;
   }
 
- comment = { SKINNER.FRM }
+ comment { SKINNER.FRM }
 
- Zexpe (XAXIS) = {
+ Zexpe (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- Zexpe2 (XAXIS) = {
+ Zexpe2 (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + z ^ (s * pixel), |z| <= 100
    }
 
- Ze2 (XAXIS) = {
+ Ze2 (XAXIS) {
       s1 = exp(1.,0.),
       s = s1 * s1,
       z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- comment = {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
+ comment {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
 
- Exipi (XAXIS) = {
+ Exipi (XAXIS) {
       s = log(-1.,0.) / (0.,1.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
@@ -868,7 +868,7 @@ OldJulibrot(ORIGIN) {		    ; for Transparent3D
  Fzppsqsi  {z = pixel, f = sin (pixel):
                        z = sqr (z)  + f, |z| <= 50}
 
- Leeze (XAXIS) = {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+ Leeze (XAXIS) {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 
  comment { version 13.0:}
@@ -1001,16 +1001,29 @@ RCL_10 { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-{ Spectacular! }
-   FractalFenderC(XAXIS_NOPARM) {z=p1,x=|z|:
-       (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=sqr(z)+pixel,x=|z|,
-       x<=4 }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
-   SpecC(XAXIS_NOPARM) {z=p1,x=|z|:
-       (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-       z=fn2(z)+pixel,x=|z|,
-       x<=4 }
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
+  ;SOURCE: skinner.frm
+}
 
  Silverado(XAXIS) {; Rollo Silver
   ; Select p1 such that 0. <= p1 <= 1.

@@ -65,7 +65,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Mandelbrot set
   ;  formula.
@@ -77,7 +77,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
     
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;
   ;  A variation on the classical Julia set.
   ;
@@ -186,14 +186,14 @@ RCL_Cosh_J { ; Ron Lewen, 76376,2567
 RCL_12 (XAXIS) { ; Ron Lewen, 76376,2567
   ;
   z=pixel:
-    z=(z^2+3z+pixel)/(z^2-3z-pixel)
+    z=(z^2+3*z+pixel)/(z^2-3*z-pixel)
       |z| <= 10
   }
 
 RCL_13 (XAXIS) { ; Ron Lewen, 76376,2567
   ;
   z=pixel:
-    z=(z^2+2z+pixel)/(z^2-2z+pixel)
+    z=(z^2+2*z+pixel)/(z^2-2*z+pixel)
       |z| <= 100
   }
 
@@ -225,4 +225,3 @@ RCL_16 (XAXIS) { ; Ron Lewen, 76376,2567
     z=z*pixel-pixel/fn1(z),
       abs(z) < 8
   }
-

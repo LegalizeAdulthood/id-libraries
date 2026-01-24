@@ -85,8 +85,12 @@ BirdOfPrey(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Note:  use floating point
    z   = p1,
    x   = 1:
-   (x  <  10) * (z=fn1(z)+pixel),
-   (10 <= x)  * (z=fn2(z)+pixel),
+   if (x  <  10)
+      z=fn1(z)+pixel
+   endif
+   if (10 <= x)
+      z=fn2(z)+pixel
+   endif
    x   = x+1,
    |z| <=p2
    }
@@ -96,7 +100,12 @@ BirdOfPreyC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Try p1=0, p2=4, fn1=sqr, fn2=cos
    ; Note:  use floating point
    z=p1, x=1:
-   (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)+pixel)*(10<=x),
+   if (x<10)
+      z=fn1(z)+pixel
+   endif
+   if (10<=x)
+      z=fn2(z)+pixel
+   endif
    x=x+1,
    |z|<=p2
    }
@@ -117,7 +126,7 @@ CGNewtonSinExp (XAXIS) {; Chris Green
    .0001 < |z2|
    }
 
-ConformalMapping = {
+ConformalMapping {
    c = pixel, RealZ = Real(c), ImagZ = Imag(c):
    RealZ = Sqr(RealZ) + (RealZ * ImagZ) + Real(c);
    ImagZ = Sqr(ImagZ) + (RealZ * ImagZ) + Imag(c);
@@ -135,13 +144,13 @@ ConjMandelbrot(XAXIS) { ; Paul J. Horn
     LastSqr <= 4
     }
 
-CosInvZ(XYAXIS) = {
+CosInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cos(inv/z),
    |z|<=4
    }
 
-CoshInvZ(XYAXIS) = {
+CoshInvZ(XYAXIS) {
    z=pixel,inv=1/pixel+p1:
    z=cosh(inv/z),
    |z|<=4
@@ -149,30 +158,44 @@ CoshInvZ(XYAXIS) = {
 
 {   ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=cosxx, for old DeepSpaceProbeTwo
    ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=log, for old Moth type
-   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzone type }
+   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzone type
+}
 
 DeepSpaceProbe(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Generalized by Tobey J. E. Reed [76437,375]
    ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cosxx
    ; Note:  use floating point
    z   = p1, x   = 1:
-   (x  <  10) * (z=fn1(z) + pixel),
-   (10 <= x)  * (x<20)    * (z=fn2(z)+pixel),
-   (20 <= x)  * (z=fn3(z) + pixel),
+   if (x  <  10)
+      z=fn1(z) + pixel
+   endif
+   if (10 <= x)
+      z=fn2(z)+pixel
+   endif
+   if (20 <= x)
+      z=fn3(z) + pixel
+   endif
    x   = x+1,
    |z| <= p2
    }
 
 {   ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=cosxx, for old DeepSpaceProbeTwoC
    ; Try p1=0, p2=4, fn1=sqr, fn2=exp, fn3=log, for old MothC type
-   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzoneC type }
+   ; Try p1=0, p2=4, fn1=sqr, fn2=cosxx, fn3=sin, for old ManInTheOzoneC type
+}
 
 DeepSpaceProbeC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Generalized by Tobey J. E. Reed [76437,375]
    ; Try p1=0, p2=4, fn1=sin, fn2=exp, fn3=cosxx
    ; Note:  use floating point
    z    = p1, x    = 1:
-   (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)+pixel)*(10<=x)*(x<20)+(z=fn3(z)+pixel)*(20<=x),
+   if (x<10)
+      z=fn1(z)+pixel
+   elseif (x<20)
+      z=fn2(z)+pixel
+   else
+      z=fn3(z)+pixel
+   endif
    x   = x+1,
    |z| <= p2
    }
@@ -207,12 +230,16 @@ EvilEyeC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Note:  use floating point
     z  =  p1,
     x  = |z|:
-    (z  = fn1(z)+pixel) * (1<x)  +  (z=fn2(z) + pixel)*(x<=1),
+    if (x > 1)
+        z = fn1(z) + pixel
+    else
+        z = fn2(z) + pixel
+    endif
     x  = |z|,
     x <= p2
    }
 
-Exipi (XAXIS) = {; Lee Skinner [75450,3631]
+Exipi (XAXIS) {; Lee Skinner [75450,3631]
    s = log(-1.,0.) / (0.,1.), z = Pixel:
    z = z ^ s + pixel,
    |z| <= 100
@@ -334,14 +361,14 @@ flip3_man_m(XAXIS) {; Richard Hughes (Brainy Smurf) [70461,3272]
    |z| <= 4
    }
 
-FlipLambdaJ = {; Ron Barnett [70153,1233]
+FlipLambdaJ {; Ron Barnett [70153,1233]
    ; try p1 = (0.737, 0.949)
    z = pixel:
    z = p1*z*(1-flip(z)*flip(z)),
    |z| <= 100
    }
 
-FlipLambdaM = {; Ron Barnett [70153,1233]
+FlipLambdaM {; Ron Barnett [70153,1233]
    ; provides a "map" of locations for FlipLambdaJ
    ; Try "center-mag" with center = (0.49,0.31)
    ; mag = 10.4
@@ -350,28 +377,28 @@ FlipLambdaM = {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-FlipProbJ1 = {; Ron Barnett [70153,1233]
+FlipProbJ1 {; Ron Barnett [70153,1233]
    ; try p1 = (1,1)
    z = pixel:
    z = flip(z)*(1-z) + p1,
    |z| <= 100
    }
 
-FlipProbJ2 = {; Ron Barnett [70153,1233]
+FlipProbJ2 {; Ron Barnett [70153,1233]
    ; try p1 = (-0.88,0.625)
    z = pixel:
    z = z*(p1-flip(z)) + p1,
    |z| <= 100
    }
 
-FlipProbM1 = {; Ron Barnett [70153,1233]
+FlipProbM1 {; Ron Barnett [70153,1233]
    ; provides a "map" of locations for FlipProbJ1
    z = pixel:
    z = flip(z)*(1-z) + pixel,
    |z| <= 100
    }
 
-FlipProbM2 = {; Ron Barnett [70153,1233]
+FlipProbM2 {; Ron Barnett [70153,1233]
    ; provides a "map" of locations for FlipProbJ2
    z = pixel:
    z = z*(pixel-flip(z)) + pixel,
@@ -384,9 +411,12 @@ Fly(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Note:  use floating point
    z = p1:
    x = real(z),
-   (x<0)*(z = fn1(z)+pixel),
-   (0<=x)*(z = fn2(z)-pixel),
-   |z|< = p2
+   if (x<0)
+      z = fn1(z)+pixel
+   else
+      z = fn2(z)-pixel
+   endif
+   |z| <= p2
    }
 
 FlyC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
@@ -395,7 +425,11 @@ FlyC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Note:  use floating point
    z=p1:
    x=real(z),
-   (z=fn1(z)+pixel)*(x<0)+(z=fn2(z)-pixel)*(0<=x),
+   if (x<0)
+      z=fn1(z)+pixel
+   else
+      z=fn2(z)-pixel
+   endif
    |z|<=p2
    }
 
@@ -404,7 +438,9 @@ FlyingSquirrel(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Try p1=0, p2=4, fn1=sin, fn2=cosxx, fn3=sqr
    ; Note:  use floating point
    z  = p1, x  = |z|:
-   (1<x) * (z=fn1(z) / fn2(z) + pixel),
+   if (1<x)
+      z=fn1(z) / fn2(z) + pixel
+   endif
    z  = fn3(z)+pixel,
    x  = |z|,
    x <= p2
@@ -415,73 +451,71 @@ FlyingSquirrelC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Try p1=0, p2=4, fn1=sin, fn2=cos, fn3=sqr
    ; Note:  use floating point
    z=p1, x=|z|:
-   (z=fn1(z)/fn2(z)+pixel)*(1<x)+(z=z)*(x<=1),
+   if (1<x)
+      z=fn1(z)/fn2(z)+pixel
+   endif
    z=fn3(z)+pixel, x=|z|,
    x<=p2
    }
 
-Form3 (XAXIS) = { ;Peter Lewman's formulas for Fractint.
+Form3 (XAXIS) { ;Peter Lewman's formulas for Fractint.
    z = Pixel, c = Pixel:
    z = c * z * ( p1 - z ),
    |z| < 4
    }
 
-Form4 (XAXIS) = {;Peter Lewman's formulas for Fractint.
+Form4 (XAXIS) {;Peter Lewman's formulas for Fractint.
    z = Pixel, c = P1:
    z = c * z * ( p2 - z ),
    |z| < 4
    }
 
-Form5 (XAXIS) = {;Peter Lewman's formulas for Fractint.
+Form5 (XAXIS) {;Peter Lewman's formulas for Fractint.
    z = Pixel, c = Pixel:
    z = p1 / ( fn1(z) + c ),
    |z| < 4
    }
 
-Form6 (XAXIS) = {;Peter Lewman's formulas for Fractint.
+Form6 (XAXIS) {;Peter Lewman's formulas for Fractint.
    z = Pixel, c = Pixel:
    z = z^6 + fn1(z) + c,
    |z| < 4
    }
 
-Form7 (XYAXIS) = {;Peter Lewman's formulas for Fractint.
+Form7 (XYAXIS) {;Peter Lewman's formulas for Fractint.
    z = Pixel, c = Pixel:
    z = ( c * fn1( fn2(z) + 1 ) ) / ( z * ( fn3(z) - 1) ),
    |z| < 4
    }
 
-FractalFender(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-   ; Generalized by Tobey J. E. Reed [76437,375]
-   ; Try p1=0, p2=4, fn1=cosh, fn2=sqr
-   ; Try p1=0, p2=4, fn1=cosxx, fn2=sqr
-   ; Note:  use floating point
-   z  = p1, x  = |z|:
-   (1<x) * (z=fn1(z)+pixel),
-   z  = fn2(z)+pixel,
-   x  = |z|,
-   x <= p2
-   }
+FractalFender (XAXIS_NOPARM) {; Edited for Fractint v. 20
+                              ; by George Martin, 10/98
+  z=p1, x=|z|:
+  z=cosh(z)+pixel
+  z=sqr(z)+pixel, x=|z|
+  x<=4
+  ;SOURCE: choice.frm
+}
 
-FractalFenderC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
-    ; Generalized by Tobey J. E. Reed [76437,375]
-    ; Try p1=0, p2=4, fn1=cosxx, fn2=sqr
-    ; Try p1=0, p2=4, fn1=cosh, fn2=sqr
-    ; Note:  use floating point, Spectacular!
-    z  = p1, x  = |z|:
-   (z  = fn1(z)+pixel) * (1<x)+(z=z) * (x<=1),
-    z  = fn2(z)+pixel,
-    x  = |z|,
-    x <= p2
-   }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
-Frame-RbtJ = {; Ron Barnett [70153,1233]
+Frame-RbtJ {; Ron Barnett [70153,1233]
    ; try p1 = (-1.37, 0.57)
    z = pixel:
    z = z*z*z/5 + z*z + p1,
    |z| <= 100
    }
 
-Frame-RbtM(XAXIS) = {; Ron Barnett [70153,1233]
+Frame-RbtM(XAXIS) {; Ron Barnett [70153,1233]
    ;from Mazes for the Mind by Pickover
    ; provide a "map" of locations for Frame-RbtJ
    z = c = pixel:
@@ -494,7 +528,9 @@ Frog(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1=tanh, fn2=sqr
     ; Note:  use floating point
     z  = p1, x  = |z|:
-    (1<x) * (z=fn1(z) + pixel),
+    if (1<x)
+        z=fn1(z) + pixel
+    endif
     z  = fn2(z)+pixel,
     x  = |z|,
     x <= p2
@@ -505,19 +541,21 @@ FrogC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1=tanh, fn2=sqr
     ; Note:  use floating point
     z  = p1, x  = |z|:
-   (z  = fn1(z)+pixel) * (1<x) + (z=z) * (x<=1),
+    if (1<x)
+       z  = fn1(z)+pixel
+    endif
     z  = fn2(z)+pixel,
     x  = |z|,
     x <= p2
    }
 
-FrRbtGenJ = {; Ron Barnett [70153,1233]
+FrRbtGenJ {; Ron Barnett [70153,1233]
    z = pixel:
    z = p1*z*z*z + z*z + p2,
    |z| <= 100
    }
 
-FrRbtGenM = {; Ron Barnett [70153,1233]
+FrRbtGenM {; Ron Barnett [70153,1233]
    z = pixel:
    z = p1*z*z*z + z*z + pixel,
    |z| <= 100
@@ -1040,8 +1078,10 @@ IfThenfn1fn2(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1=sin, fn2=cos
     ; Note:  use floating point
     z  = p1, x  = |z|:
-   (z  = fn1(z)) * (1<x)+(z=z)*(x<=1),
-   (z  = fn2(z)  + pixel),
+    if (1<x)
+       z  = fn1(z)
+    endif
+    z  = fn2(z)  + pixel,
     x  = |z|,
     x <= p2
    }
@@ -1051,7 +1091,11 @@ IfThenElsefn1fn2(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1=sqr, fn2=sin
     ; Note:  use floating point
     z  = p1, x  = |z|:
-    (z  = fn1(z)+pixel) * (1<x)+(z=fn2(z)+pixel) * (x<=1),
+    if (1<x)
+        z = fn1(z)+pixel
+    else
+        z = fn2(z)+pixel
+    endif
     x  = |z|,
     x <= p2
     }
@@ -1061,32 +1105,37 @@ IfElsefn1fn2fn3(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1,2,3=whatever
     ; Note:  use floating point
     z   = p1, x   = 1:
-    (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)+pixel)*(10<=x)*(x<20)+(z=fn3(z)+pixel)*(20<=x),
+    if (x<10)
+        z=fn1(z)+pixel
+    elseif (x<20)
+        z=fn2(z)+pixel
+    else
+        z=fn3(z)+pixel
+    endif
     x   = x+1,
     |z| <= p2
     }
 
-IkeFrRbtGenJ = {; Ron Barnett [70153,1233]
+IkeFrRbtGenJ {; Ron Barnett [70153,1233]
    z = pixel:
    z = p1*z*z*z + (p2-1)*z*z - p2,
    |z| <= 100
    }
 
-IkeFrRbtGenM = {; Ron Barnett [70153,1233]
+IkeFrRbtGenM {; Ron Barnett [70153,1233]
    z = 2*(1-pixel)/(3*p1):
    z = p1*z*z*z + (pixel-1)*z*z - pixel,
    |z| <= 100
    }
 
-IkeGenJ = {; Ron Barnett [70153,1233]
+IkeGenJ {; Ron Barnett [70153,1233]
    z = pixel:
    z =p1*z*z*z + (p2-1)*z - p2,
    |z| <= 100
    }
 
-IkeGenM = {; Ron Barnett [70153,1233]
+IkeGenM {; Ron Barnett [70153,1233]
    z = ((1-pixel)/(3*p1))^0.5:
    z =p1*z*z*z + (pixel-1)*z - pixel,
    |z| <= 100
    }
-

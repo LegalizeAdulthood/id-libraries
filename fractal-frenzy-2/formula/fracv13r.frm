@@ -1,4 +1,4 @@
- comment = {
+ comment {
  FRACTINT.DOC has instructions for adding new formulas to this file.
  Note that there are several hard-coded restrictions in the formula
  interpreter:
@@ -17,7 +17,7 @@
  contribution of Scott Taylor [72401,410].  Keep 'em coming, Scott!
  }
 
-   Mandelbrot(XAXIS) = {
+   Mandelbrot(XAXIS) {
       z = Pixel:  z = sqr(z) + pixel, |z| <= 4
    }
 
@@ -27,7 +27,7 @@
       |z| <= 4
    }
 
-   Daisy (ORIGIN) = { z = pixel:  z = z*z + (0.11031, -0.67037), |z| <= 4 }
+   Daisy (ORIGIN) { z = pixel:  z = z*z + (0.11031, -0.67037), |z| <= 4 }
 
    MandelSine (XYAXIS) { z = Pixel:  z = sin(z) * pixel, |z| <= 50 }
    MandelCosine(XYAXIS) { z = pixel:  z = cos(z) * pixel, |z| <= 50 }

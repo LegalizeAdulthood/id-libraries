@@ -3,8 +3,11 @@ IslandOfChaos(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
     ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cosxx
     ; Note:  use floating point
     z   =  p1, x   =  1:
-   (x  <  10)  * (z=fn1(z) + pixel),
-   (10 <=  x)  * (z=fn2(z) / fn3(z) + pixel),
+    if (x  <  10)
+        z=fn1(z) + pixel
+    else
+        z=fn2(z) / fn3(z) + pixel
+    endif
     x   = x+1,
    |z| <= p2
    }
@@ -14,7 +17,11 @@ IslandOfChaosC(XAXIS_NOPARM) {; Jonathan Osuch [73277,1432]
    ; Try p1=0, p2=4, fn1=sqr, fn2=sin, fn3=cos
    ; Note:  use floating point
    z=p1, x=1:
-   (z=fn1(z)+pixel)*(x<10)+(z=fn2(z)/fn3(z)+pixel)*(10<=x),
+   if (x<10)
+      z=fn1(z)+pixel
+   else
+      z=fn2(z)/fn3(z)+pixel
+   endif
    x=x+1, |z|<=4
    }
 
@@ -46,7 +53,7 @@ jfnz {; from EXPLOD.FRM
    |z| <= 4
    }
 
-JMask = {; Ron Barnett [70153,1233]
+JMask {; Ron Barnett [70153,1233]
    ; try p1 = (1,0), p2 = (0,0.835), fn1 = sin, fn2 = sqr
    z = fn1(pixel):
    z = P1*fn2(z)^2 + P2, |z| <= 4
@@ -73,7 +80,7 @@ jz   {; from EXPLOD.FRM
    |z| <= 4
    }
 
-JSomethingelse (xyaxis) = {
+JSomethingelse (xyaxis) {
    z = pixel:
    z = p1 * (z*z + 1/z/z),
    |z| <= 1000000
@@ -373,7 +380,7 @@ JuliConj11 {; Paul J. Horn - a conjugate Julia (I think)
    |z| <= 4
    }
 
-JulibrotSlice1 = {; Randy Hutson - 2D slice of 4D Julibrot
+JulibrotSlice1 {; Randy Hutson - 2D slice of 4D Julibrot
   z = real(p1)+flip(imag(pixel)), c = real(pixel)+flip(imag(p1)):
   z = sqr(z)+c,
   LastSqr <= 4
@@ -386,7 +393,7 @@ LambdaPwr {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-Leeze (XAXIS) = {; Lee Skinner [75450,3631]
+Leeze (XAXIS) {; Lee Skinner [75450,3631]
    s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
    z = cosxx (z) + f,
    |z| <= 50
@@ -522,7 +529,7 @@ MandellambdaPwr {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-Mask = {; Ron Barnett [70153,1233]
+Mask {; Ron Barnett [70153,1233]
    ; try fn1 = log, fn2 = sinh, fn3 = cosh
    ;P1 = (0,1), P2 = (0,1)
    ;Use floating point
@@ -811,7 +818,7 @@ Natura {; Michael Theroux [71673,2767]
    |z| <= 4
    }
 
-Newducks(XAXIS) = {
+Newducks(XAXIS) {
    z=pixel,t=1+pixel:
    z=sqr(z)+t,
    |z|<=4
@@ -826,7 +833,7 @@ non-conformal {; Richard Hughes (Brainy Smurf) [70461,3272]
    |z| <= 4
    }
 
-No_name(xaxis) = {
+No_name(xaxis) {
    z = pixel:
    z=z+z*z+(1/z*z)+pixel,
    |z| <= 4
@@ -892,7 +899,7 @@ phoenix_m {; Richard Hughes (Brainy Smurf) [70461,3272]
    |z| <= 4
    }
 
-PolyGen = {; Ron Barnett [70153,1233]
+PolyGen {; Ron Barnett [70153,1233]
    ;p1 must not be zero
    ;zero can be simulated with a small
    ;value for p1
@@ -924,7 +931,7 @@ PseudoMandelLambda {; Ron Barnett [70153,1233]
    |z| <= 100
    }
 
-PseudoZeePi = {; Ron Barnett [70153,1233]
+PseudoZeePi {; Ron Barnett [70153,1233]
    ; try p1 = 0.1, p2 = 0.39
    z = pixel:
    x = 1-z^p1;
@@ -932,7 +939,7 @@ PseudoZeePi = {; Ron Barnett [70153,1233]
    |z| <= 4
    }
 
-Ramanujan1(ORIGIN) = {
+Ramanujan1(ORIGIN) {
    z = pixel:
    z = (cosh(p1 * sqr(z)) - sinh(p2 * sqr(z))/(p2 * sqr(z)))/z,
    |z|<= 4
@@ -1002,7 +1009,7 @@ RCL_4_J { ; Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
+RCL_5_M (XAXIS) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Mandelbrot set
   ;  formula.
   ;  Use floating point
@@ -1011,7 +1018,7 @@ RCL_5_M (XAXIS) { Ron Lewen, 76376,2567
       |z| <= 4
   }
 
-RCL_5_J (ORIGIN) { Ron Lewen, 76376,2567
+RCL_5_J (ORIGIN) { ; Ron Lewen, 76376,2567
   ;  A variation on the classical Julia set.
   ;  Use floating point
   z=pixel:
@@ -1072,13 +1079,13 @@ RCL_10 { ; Ron Lewen, 76376,2567
 
 RCL_12 (XAXIS) { ; Ron Lewen, 76376,2567
   z=pixel:
-    z=(z^2+3z+pixel)/(z^2-3z-pixel)
+    z=(z^2+3*z+pixel)/(z^2-3*z-pixel)
       |z| <= 10
   }
 
 RCL_13 (XAXIS) { ; Ron Lewen, 76376,2567
   z=pixel:
-    z=(z^2+2z+pixel)/(z^2-2z+pixel)
+    z=(z^2+2*z+pixel)/(z^2-2*z+pixel)
       |z| <= 100
   }
 

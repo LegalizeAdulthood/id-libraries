@@ -1,4 +1,4 @@
- comment = {
+ comment {
  FRACTINT.DOC has instructions for adding new formulas to this file.
  Note that there are several hard-coded restrictions in the formula
  interpreter:
@@ -19,9 +19,9 @@
  now been hard-coded.)
  }
 
- comment = { The following are from Lee Skinner }
+ comment { The following are from Lee Skinner }
 
- comment = { Mandelbrot form 1 of the Tetration formula }
+ comment { Mandelbrot form 1 of the Tetration formula }
 
  MTet (XAXIS) {
    z = pixel:
@@ -29,7 +29,7 @@
 	   |z| <= (P1 + 3)
  }
 
- comment = { Mandelbrot form 2 of the Tetration formula }
+ comment { Mandelbrot form 2 of the Tetration formula }
 
  AltMTet (XAXIS) {
    z = 0:
@@ -37,7 +37,7 @@
 	   |z| <= (P1 + 3)
  }
 
- comment = { Julia form 1 of the Tetration formula }
+ comment { Julia form 1 of the Tetration formula }
 
  JTet (XAXIS) {
    z = pixel:
@@ -45,7 +45,7 @@
 	   |z| <= (P2 + 3)
  }
 
- comment = { Julia form 2 of the Tetration formula }
+ comment { Julia form 2 of the Tetration formula }
 
  AltJTet (XAXIS) {
    z = P1:
@@ -88,13 +88,13 @@
 
 { From Kevin Lee: }
 
-  LeeMandel1(XYAXIS) = {
+  LeeMandel1(XYAXIS) {
       z=Pixel: c=sqr(pixel)/z, c=z+c, z=sqr(z),  |z|<4 }
 
-  LeeMandel2(XYAXIS) = {
+  LeeMandel2(XYAXIS) {
       z=Pixel: c=sqr(pixel)/z, c=z+c, z=sqr(c*pixel),  |z|<4 }
 
-  LeeMandel3(XAXIS) = {
+  LeeMandel3(XAXIS) {
       z=Pixel, c=Pixel-sqr(z): c=Pixel+c/z, z=c-z*pixel, |z|<4 }
 
  { LHS: }
@@ -104,26 +104,26 @@
 
  Cos1z (XYAXIS) {
       z = Pixel:  z = cos(1/z), |z| <= 50 }
- comment = { ----------------- Skinner Exponentials ---------------- }
+ comment { ----------------- Skinner Exponentials ---------------- }
 
- Zexpe (XAXIS) = {
+ Zexpe (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- ZexpeJulia (XAXIS) = {
+ ZexpeJulia (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = (z ^ s) + P1, |z| <= 100
    }
 
- comment = {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
+ comment {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
 
- Exipi (XAXIS) = {
+ Exipi (XAXIS) {
       s = log(-1.,0.) / (0.,1.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
- comment = { ----------------- similar to Richard8: ------------------------
+ comment { ----------------- similar to Richard8: ------------------------
              replace all cos with cosxx
  PART 1 - STANDARD FUNCTIONS }
 
@@ -174,12 +174,12 @@
   Fzppsqlo  {z = pixel, f = log (pixel):  z = sqr (z)  + f, |z| <= 50}
   Fzppexlo  {z = pixel, f = log (pixel):  z = exp (z)  + f, |z| <= 50}
 
- comment = { NOTE: Formulas of the form: z = log(z) + function(pixel),
+ comment { NOTE: Formulas of the form: z = log(z) + function(pixel),
              and sqr/sqr, sqr/cosxx, sqr/cosh seem uninteresting.
 
  PART 2 - COS (Z) + SPECIAL FUNCTIONS }
 
-  Leeze (XAXIS) = {
+  Leeze (XAXIS) {
       s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
       z = cosxx (z) + f, |z| <= 50 }
   Fzppcore  {z = pixel, f = 1. / (pixel):  z = cosxx (z)  + f, |z| <= 50}
@@ -229,7 +229,7 @@
 
   Fzppsire  {z = pixel, f = 1. / (pixel):  z = sin (z)  + f, |z| <= 50}
 
-   Mandelbrot(XAXIS) = {
+   Mandelbrot(XAXIS) {
       z = Pixel:  z = sqr(z) + pixel, |z| <= 4
    }
 
@@ -239,7 +239,7 @@
       |z| <= 4
    }
 
-   Daisy (ORIGIN) = { z = pixel:  z = z*z + (0.11031, -0.67037), |z| <= 4 }
+   Daisy (ORIGIN) { z = pixel:  z = z*z + (0.11031, -0.67037), |z| <= 4 }
 
    InvMandel (XAXIS) {
       c = z = 1 / pixel:
@@ -269,7 +269,7 @@
    }
 
 
- comment = {
+ comment {
 	The following are from Chris Green:
 	These fractals all use Newton's or Halley's formula for approximation
 	of a function.	In all of these fractals, p1 is the "relaxation

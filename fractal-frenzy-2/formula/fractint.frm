@@ -82,14 +82,17 @@ DAFRM07 {
     |z| <= 4
   }
 
-DAFRM09 {
+DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
+         ; The revision is to give the result that the author
+         ; intended
   z = pixel, c = z + z^ (z - 1):
-   tmp = fn1(z)
-   real(tmp) = real(tmp) * real(c) - imag(tmp) * imag(c)
-   imag(tmp) = real(tmp) * imag(c) - imag(tmp) * real(c)
-   z = tmp + pixel + 12
-    |z| <= 4
-  }
+  tmp = fn1(z)
+  tmp = real(tmp)*real(c)-imag(tmp)*imag(c)\
+         + flip(real(tmp)*imag(c)-imag(tmp)*real(c))
+  z = tmp + pixel + 12
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
 
 dafrm21 {
   z = pixel:
@@ -1241,18 +1244,23 @@ RCL_10 { ; Ron Lewen, 76376,2567
 
 BirdOfPrey(XAXIS_NOPARM) {
   z=p1, x=1:
-   (x<10)*(z=sqr(z)+pixel)
-   (10<=x)*(z=cosxx(z)+pixel)
+   if (x<10)
+      z=sqr(z)+pixel
+   else
+      z=cosxx(z)+pixel
+   endif
    x=x+1
-    |z|<=4
+   |z|<=4
   }
 
 FractalFenderC(XAXIS_NOPARM) {;Spectacular!
-  z=p1,x=|z|:
-   (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1)
+   z=p1,x=|z|:
+   if (1<x)
+      z=cosh(z)+pixel
+   endif
    z=sqr(z)+pixel,x=|z|
-    x<=4
-  }
+   x<=4
+   }
 
 {--- LEE SKINNER ---------------------------------------------------------}
 
@@ -1573,5 +1581,3 @@ ULI_6 {
    z = fn1(p1+z)*fn2(p2-z)
     |z| <= p2+16
   }
-
-

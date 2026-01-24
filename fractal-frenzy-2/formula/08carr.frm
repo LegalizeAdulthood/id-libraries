@@ -1,3 +1,4 @@
+{
 Carr-368 onward
 
 }
@@ -149,49 +150,49 @@ z=z*z+c,
 }
 
 Carr-392{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z+flip(c),
 |z| <=10
 }
 
 Carr-393{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z*z+flip(c*c),
 |z| <=10
 }
 
 Carr-394{
-z=c=((sqrt 3 + 0.5)/0.124)/pixel:
+z=c=((sqrt(3) + 0.5)/0.124)/pixel:
 z=z*z*z+flip(c),
 |z| <=10
 }
 
 Carr-395{
-z=c=((sqrt 9 + 2.234)/0.324)/pixel:
+z=c=((sqrt(9) + 2.234)/0.324)/pixel:
 z=z*z*z+flip(c),
 |z| <=10
 }
 
 Carr-396{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=conj(z*z)+flip(c),
 |z| <=10
 }
 
 Carr-397{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=1/conj(z*z)+flip(c),
 |z| <=10
 }
 
 Carr-398{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=1/sqr(z*z)+flip(c),
 |z| <=10
 }
 
 Carr-399{;Distance Estimator works here
-z=c=((sqrt 5 + 1)/2)/pixel:
+z=c=((sqrt(5) + 1)/2)/pixel:
 z=z*z+flip(c/2),
 |z| <=10
 }
@@ -204,103 +205,103 @@ z=z*z+c,
 
 Carr-401{
 z=flip(real(1/pixel)),c=flip(imag(pixel)):
-z=z*z+c+((sqrt5+1)/2)/pixel,
+z=z*z+c+((sqrt(5) +1)/2)/pixel,
 |z| <=10
 }
 
 Carr-402{
 z=flip(real(1/pixel)),c=flip(imag(pixel)):
-z=z*z+c+((sqrt5+1)/2)*pixel,
+z=z*z+c+((sqrt(5) +1)/2)*pixel,
 |z| <=10
 }
 
 Carr-403{;Distance Estimator works here
 z=flip(real(1/pixel)),c=flip(imag(pixel)):
-z=z*z+c+conj(((sqrt5+1)/2)*pixel),
+z=z*z+c+conj(((sqrt(5) +1)/2)*pixel),
 |z| <=10
 }
 
 Carr-404{
 z=exp(flip(real(1/pixel))),c=flip(imag(pix)):
-z=z*z+c+conj(((sqrt5+1)/2)*pixel),
+z=z*z+c+conj(((sqrt(5) +1)/2)*pixel),
 |z| <=10
 }
 
 Carr-405{
 z=exp(flip(real(0.33/pixel))),c=flip(imag(0.124/pixel)):
-z=z*z+c+conj(((sqrt5+1)/2)*pixel),
+z=z*z+c+conj(((sqrt(5) +1)/2)*pixel),
 |z| <=10
 }
 
 Carr-406{; Distance Estimator works here
 z=exp(flip(real(0.33/pixel))),c=flip(imag(0.124/pixel)):
-z=z*z+c+conj(((sqrt5+1)/2)*flip(pixel)),
+z=z*z+c+conj(((sqrt(5) +1)/2)*flip(pixel)),
 |z| <=10
 }
 
 Carr-407{
 z=exp(flip(real(0.33/pixel))),c=flip(imag(0.124/pixel)):
-z=z*z+c+conj(((sqrt5+1)/2)*flip(conj(pixel))),
+z=z*z+c+conj(((sqrt(5) +1)/2)*flip(conj(pixel))),
 |z| <=10
 }
 
 Carr-408{
 z=exp(flip(real(0.33/pixel))),c=flip(imag(0.124/pixel)):
-z=z*z+(c/pixel)+conj(((sqrt5+1)/2)*flip(conj(pixel))),
+z=z*z+(c/pixel)+conj(((sqrt(5) +1)/2)*flip(conj(pixel))),
 |z| <=10
 }
 
 Carr-409{
 z=exp(flip(real(0.33/pixel))),c=exp(imag(0.124/pixel)):
-z=z*z+(c/pixel)+conj(((sqrt5+1)/2)*exp(conj(pixel))),
+z=z*z+(c/pixel)+conj(((sqrt(5) +1)/2)*exp(conj(pixel))),
 |z| <=10
 }
 
 Carr-410{;Based on Golden Mean frm from Graphdev. MODIFIED
 ;Distance Estimator works here.
-z=((sqrt5-1)/2),c=1/pixel:
-z=z*z+pixel*((sqrt5+1)/2)+c,
+z=((sqrt(5) -1)/2),c=1/pixel:
+z=z*z+pixel*((sqrt(5) +1)/2)+c,
 |z| <=10
 }
 
 Carr-411{;Distance Estimator works here
-z=((sqrt5-1)/2),c=1/pixel+log(z*z):
-z=z*z+pixel*((sqrt5+1)/2)+c,
+z=((sqrt(5) -1)/2),c=1/pixel+log(z*z):
+z=z*z+pixel*((sqrt(5) +1)/2)+c,
 |z| <=10
 }
 
 Carr-412{;Distance Estimator works here.
-z=((sqrt5-1)/2),c=1/pixel+log(z*z):
-z=z*z+pixel+((sqrt5+1)/2)+flip(c),
+z=((sqrt(5) -1)/2),c=1/pixel+log(z*z):
+z=z*z+pixel+((sqrt(5) +1)/2)+flip(c),
 |z| <=10
 }
 
 Carr-413{;Distance Estimator works here
-z=((sqrt5-1)/2),c=1/pixel+conj(flip(z*z*z)):
+z=((sqrt(5) -1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z+c,
 |z| <=10
 }
 
 Carr-414{
-z=c*((sqrt5-1)/2),c=1/pixel+conj(flip(z*z*z)):
+z=c*((sqrt(5) -1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z+flip(c),
 |z| <=10
 }
 
 Carr-415{
-z=c*((sqrt5-1)/2)/((sqrt5+1)/2),c=1/pixel+conj(flip(z*z*z)):
+z=c*((sqrt(5) -1)/2)/((sqrt5+1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z+flip(c),
 |z| <=10
 }
 
 Carr-416{;Excellent
-z=c*((sqrt5-1)/2)/((sqrt5+1)/2),c=1/pixel+conj(flip(z*z*z)):
-z=z*z+(0.524/c)/((sqrt5-1)/2)/((sqrt5+1)/2),
+z=c*((sqrt(5) -1)/2)/((sqrt5+1)/2),c=1/pixel+conj(flip(z*z*z)):
+z=z*z+(0.524/c)/((sqrt(5) -1)/2)/((sqrt5+1)/2),
 |z| <=10
 }
 
 Carr-417{
-z=c*((sqrt5-1)/2),c=1/pixel+conj(flip(z*z*z)):
+z=c*((sqrt(5) -1)/2),c=1/pixel+conj(flip(z*z*z)):
 z=z*z/fn2(pixel)+c,
 |z| <=10
 }
@@ -344,33 +345,36 @@ z=z*z+conj(c+0.324),
 }
 
 Carr-424{
-z=(1.5,0.3)*((sqrt5+1)/2),c=1/pixel:
+z=(1.5,0.3)*((sqrt(5) +1)/2),c=1/pixel:
 z=z*z+flip(c),
 |z| <=10
 }
 
 Carr-425{
-z=(1.5,0.3)*((sqrt5+1)/2),c=pixel:
+z=(1.5,0.3)*((sqrt(5) +1)/2),c=pixel:
 z=z*z+cosxx(c),
 |z| <=10
 }
 
 Carr-426{;Distance Estimator works here.
-z=c*((1.5,0.7)*((sqrt5+1)/2)),c=1/pixel:
+z=c*((1.5,0.7)*((sqrt(5) +1)/2)),c=1/pixel:
 z=z*z+c,
 |z| <=10
 }
 
 Carr-427{;Distance Estimator works here
-z=c*((1.5,0.7)*((sqrt5+1)/2)),c=1/pixel:
+z=c*((1.5,0.7)*((sqrt(5) +1)/2)),c=1/pixel:
 z=z*z+flip(c-0.324),
 |z| <=10
 }
 
 Carr-428{;
-z=1/pixel/1/cotanh(1.0124)),c=1/pixel/cos(2):
-z=z*z+flip(c*tan(c),
+z=1/pixel/(1/cotanh(1.0124)),c=1/pixel/cos(2):
+z=z*z+flip(c*tan(c)),
 |z| <=10
+  ;SOURCE: 08carr.frm
+  ;SOURCE: carr1499.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 Carr-429{;Distance Estimator works here.

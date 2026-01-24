@@ -602,7 +602,7 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
    z = Sqr(z) + c
 	LastSqr <= 4;
   }
-   IkenagaMap(XAXIS) = {; based upon the Ikenaga function described
+   IkenagaMap(XAXIS) {; based upon the Ikenaga function described
 	  ; in Dewdneys's The Armchair Universe.
 	  ; The initial starting point allows the function to provide a
 	  ; "map" for the corresponding Julia function (Julike ) 
@@ -610,87 +610,87 @@ OldJulibrot(ORIGIN) {           ; for Transparent3D
 	  z = z*z*z + (pixel-1)*z - pixel, |z| <= 4
    }
 
-   Julike = {; a Julia function based upon the Ikenaga function
+   Julike {; a Julia function based upon the Ikenaga function
 	  z = Pixel:
 	  z = z*z*z + (P1-1)*z - P1, |z| <= 4
    }
 
-   Mask = {; try fn1 = log, fn2 = sinh, fn3 = cosh
+   Mask {; try fn1 = log, fn2 = sinh, fn3 = cosh
 	  ;P1 = (0,1), P2 = (0,1)
 	  ;Use floating point
 	  z = fn1(pixel):
 	  z = P1*fn2(z)^2 + P2*fn3(z)^2 + pixel, |z| <= 4
    }
 
-   JMask = {      
+   JMask {      
 	  z = fn1(pixel):
 	  z = P1*fn2(z)^2 + P2, |z| <= 4
    }
 
-   PseudoZeePi = {
+   PseudoZeePi {
 	  z = pixel:
 	  x = 1-z^p1;
 	  z = z*((1-x)/(1+x))^(1/p1) + p2, |z| <= 4
    }
 
-   ZeePi = {; This Julia function is based upon Ramanujan's iterative
+   ZeePi {; This Julia function is based upon Ramanujan's iterative
 	  ; function for calculating pi
 	  z = pixel:
 	  x = (1-z^p1)^(1/p1);
 	  z = z*(1-x)/(1+x) + p2, |z| <= 4
    }
 
-   IkeNewtMand = {
+   IkeNewtMand {
    z = c = pixel:
    zf = z*z*z + (c-1)*z - c;
    zd = 3*z*z + c-1;
    z = z - p1*zf/zd, 0.001 <= |zf|
    }
 
-   IkeNewtJul = {
+   IkeNewtJul {
    z =  pixel:
    zf = z*z*z + (p2-1)*z - p2;
    zd = 3*z*z + p2-1;
    z = z - p1*zf/zd, 0.001 <= |zf|
    }
 
-   RecipIke = {
+   RecipIke {
    z = pixel:
    z = 1/(z*z*z + (p1-1)*z - p1), |z| <= 4
    }
 
-   Frame-RbtM(XAXIS) = {; from Mazes for the Mind by Pickover
+   Frame-RbtM(XAXIS) {; from Mazes for the Mind by Pickover
    z = c = pixel:
    z = z*z*z/5 + z*z + c, |z| <= 100
    }
 
-   Frame-RbtJ = {
+   Frame-RbtJ {
    z = pixel:
    z = z*z*z/5 + z*z + p1, |z| <= 100
    }
 
- comment = { SKINNER.FRM }
+ comment { SKINNER.FRM }
 
- Zexpe (XAXIS) = {
+ Zexpe (XAXIS) {
 	  s = exp(1.,0.), z = Pixel:
 	  z = z ^ s + pixel, |z| <= 100
    }
 
- Zexpe2 (XAXIS) = {
+ Zexpe2 (XAXIS) {
 	  s = exp(1.,0.), z = Pixel:
 	  z = z ^ s + z ^ (s * pixel), |z| <= 100
    }
 
- Ze2 (XAXIS) = {
+ Ze2 (XAXIS) {
 	  s1 = exp(1.,0.),
 	  s = s1 * s1,
 	  z = Pixel:
 	  z = z ^ s + pixel, |z| <= 100
    }
 
- comment = {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
+ comment {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
 
- Exipi (XAXIS) = {
+ Exipi (XAXIS) {
 	  s = log(-1.,0.) / (0.,1.), z = Pixel:
 	  z = z ^ s + pixel, |z| <= 100
    }
@@ -825,16 +825,29 @@ RCL_10 { ; Ron Lewen, 76376,2567
 	  |z| <= 4
   }
 
-{ Spectacular! }
-   FractalFenderC(XAXIS_NOPARM) {z=p1,x=|z|:
-	   (z=cosh(z)+pixel)*(1<x)+(z=z)*(x<=1),
-	   z=sqr(z)+pixel,x=|z|,
-	   x<=4 }
+FractalFenderC (XAXIS_NOPARM) {; Spectacular!
+    ; Modified for if..else logic 3/18/97 by Sylvie Gallet
+   z = p1, x = |z| :
+   IF (1 < x)
+      z = cosh(z) + pixel
+   ENDIF
+   z = sqr(z) + pixel, x = |z|
+   x <= 4
+  ;SOURCE: fract196.frm
+}
 
-   SpecC(XAXIS_NOPARM) {z=p1,x=|z|:
-	   (z=fn1(z)+pixel)*(1<x)+(z=z)*(x<=1),
-	   z=fn2(z)+pixel,x=|z|,
-	   x<=4 }
+SpecC (XAXIS_NOPARM) {
+     ; modified for if..else by George Martin 3/18/97
+   z = p1
+   x = |z| :
+   IF (x>1)
+      z = fn1(z)+pixel
+   ENDIF
+   z = fn2(z)+pixel
+   x = |z|
+   x <= 4
+  ;SOURCE: skinner.frm
+}
 
  Silverado(XAXIS) {; Rollo Silver
   ; Select p1 such that 0. <= p1 <= 1.
@@ -846,17 +859,17 @@ RCL_10 { ; Ron Lewen, 76376,2567
    |z| <= test
   }
 
- comment = { Moire Tetrated Log - Improper Bailout }
+ comment { Moire Tetrated Log - Improper Bailout }
 
- TLog (XAXIS) = {
+ TLog (XAXIS) {
 		z = c = log(pixel):
 				z = c ^ z,
 					z <= (p1 + 3)
 		}
 
- comment = { Tetrated Hyperbolic Sine - Improper Bailout }
+ comment { Tetrated Hyperbolic Sine - Improper Bailout }
 
- TSinh (XAXIS) = {
+ TSinh (XAXIS) {
 		z = c = sinh(pixel):
 				z = c ^ z,
 					z <= (p1 + 3)
@@ -865,7 +878,7 @@ RCL_10 { ; Ron Lewen, 76376,2567
  DrChaosbrot2(xyaxis)   { ;more phi
 
  z = c = pixel:
- z = sqr(z) + (((sqrt 5 + 1)/2)+c)
+ z = sqr(z) + (((sqrt(5) + 1)/2)+c)
  |z| <= 4;
  }
 
@@ -1354,7 +1367,6 @@ M_Lagandre7 {
 
 test{
   z=pixel,c=p1:
-   c = P1, z = Pixel:
    z = z* (z*z*(z*z*(429 * z*z - 693) + 315) - 35 ) / (16 * (z+c))
    |z| < 100
 }

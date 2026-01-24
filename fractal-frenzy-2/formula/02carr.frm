@@ -1,3 +1,4 @@
+{
 Some years back, in my youth, while I was working as a student for Isaac Newton (we all
 called him "Mr. Newt" or Izzy Newt), I noted there were materials Izzy would create on
 paper, look at them, then say "Nahhhh". He would then crumble up these scraps of
@@ -13,7 +14,8 @@ As far as I know, these are not duplicates of anyone else's work. If they are I 
 
 Bob Carr CIS 73753,2420 or America Online: Genealogy1
 
-Starts with Carr-739}
+Starts with Carr-739
+}
 
 Carr-739{
 z=1/pixel,c=(1/pixel)/2/(z-2.5)^(1/pixel):

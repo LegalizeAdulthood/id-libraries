@@ -1,4 +1,6 @@
-10Carr.frm starts with # 255}
+{
+10Carr.frm starts with # 255
+}
 
 Carr-255{;Modified Liar4
 c=z=1/pixel,p=p1+1:

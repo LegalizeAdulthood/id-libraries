@@ -1,3 +1,4 @@
+{
 Some years back, while I was a Russian Astronaut in the Sputnik KGB
 program, myself and a companion (Yury) were secretly landed on
 the planet Mars. During our trek we chanced upon a living Martian
@@ -141,7 +142,7 @@ z=z*z+flip(c),
 }
 
 Carr-319{
-z=1/pixel(1.6,1.6),c=1/pixel:
+z=1/pixel*(1.6,1.6),c=1/pixel:
 z=z*z+flip(c),
 |z| <=10
 }

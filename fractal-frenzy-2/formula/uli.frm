@@ -30,33 +30,33 @@
 ;
 
 
-   ULI_1 = {
+   ULI_1 {
       z = Pixel: z = fn1(1/fn2(z))
       |z| <= 4
    }
 
-   ULI_2 = {
+   ULI_2 {
       z = Pixel: z = fn1(1/fn2(z+p1))
       |z| <= p2
    }
 
-   ULI_3 = {
+   ULI_3 {
       z = Pixel: z = fn1(1/fn2(z+p1)+p1)
       |z| <= p2
    }
 
-   ULI_4 = {
+   ULI_4 {
       z = Pixel: z = fn1(1/(z+p1))*fn2(z+p1)
       |z| <= p2
    }
 
-   ULI_5 = {
+   ULI_5 {
       z = Pixel, c = fn1(pixel):
       z = fn2(1/(z+c))*fn3(z+c)
       |z| <= p1
    }
 
-   ULI_6 = {
+   ULI_6 {
       z = Pixel: z = fn1(p1+z)*fn2(p2-z)
       |z| <= p2+16
    }

@@ -1,3 +1,4 @@
+{
 Some years ago, when I was a lead Astronaut for N.A.S.A., myself and 
 John Clenn were sent on a secret mission to explore Mickey (a 
 here-to-for unknown planet adjacent to Pluto). When John (later to
@@ -33,10 +34,6 @@ Compuserve at: 73753,2420 or on America Online with name:
 Genealogy1.
 
 Bob Carr
-}
-
- }
--Please-read-me{
 }
 
 Carr-166{
@@ -125,14 +122,15 @@ z=sqr(z) + c;
 |z| <=10
  }
 
-Carr-178{
-z=c=flip(1/pixel):
-z=sqr(z*z) + c;
-z=sqr(z) + c;
-z=sin(z*z) + c;
-z=sqr(z*z) = c,
-|z| <=10
- }
+Carr-178 {; Revised for Fractint v. 20 by George Martin 10/98
+  z=c=flip(1/pixel):
+  z=sqr(z*z) + c
+  z=sqr(z) + c
+  z=sin(z*z) + c
+  z = c   ; z=sqr(z*z) = c
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
 Carr-179{
 z=c=1/pixel:

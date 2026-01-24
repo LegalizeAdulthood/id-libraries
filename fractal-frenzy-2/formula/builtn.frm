@@ -1,4 +1,4 @@
-comment = ( ; Builtin.Frm
+comment { ; Builtin.Frm
  ;
  ; Formulas for some of Fractint's built-in fractal types.
  ;

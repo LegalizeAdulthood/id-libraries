@@ -670,19 +670,19 @@ OldJulibrot(ORIGIN) {		    ; for Transparent3D
     LastSqr <= 4;
   }
 
- Zexpe (XAXIS) = {
+ Zexpe (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
 
-  Zexpe2 (XAXIS) = {
+  Zexpe2 (XAXIS) {
       s = exp(1.,0.), z = Pixel:
       z = z ^ s + z ^ (s * pixel), |z| <= 100
    }
 
- comment = {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
+ comment {  s = log(-1.,0.) / (0.,1.)   is   (3.14159265358979, 0.0 }
 
- Exipi (XAXIS) = {
+ Exipi (XAXIS) {
       s = log(-1.,0.) / (0.,1.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }
@@ -774,7 +774,7 @@ OldJulibrot(ORIGIN) {		    ; for Transparent3D
  Fzppsqsi  {z = pixel, f = sin (pixel):
                        z = sqr (z)  + f, |z| <= 50}
 
- Leeze (XAXIS) = {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+ Leeze (XAXIS) {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 
  OldManowar (XAXIS) {

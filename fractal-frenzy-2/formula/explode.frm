@@ -1,4 +1,6 @@
+{
 	Here is the Fractint formula file used for explod.gif:
+}
 
 j1 {
 	z=pixel, c=p1:
@@ -97,39 +99,3 @@ mfnc {
 	c=c+p1*fn1(c),
 	|z| <= 4
 	}
-
-
-	Here is the parameter file:
-
-m1 {
-  reset type=formula formulafile=\FRACTINT\explode.frm formulaname=m1
-
-  center-mag=-0.62/0/0.85 params=0.03 float=y maxiter=150
-  periodicity=0 colors=@pastel
-  }
-
-mc {
-  reset type=formula formulafile=\FRACTINT\explode.frm formulaname=mc
-  center-mag=-0.62/0/0.85 params=0.03 float=y maxiter=150
-  periodicity=0 colors=@pastel
-  }
-
-mz {
-  reset type=formula formulafile=\FRACTINT\explode.frm formulaname=mz
-  center-mag=-0.62/0/0.85 params=0.03 float=y maxiter=150
-  periodicity=0 colors=@pastel
-  }
-
-moc {
-  reset type=formula formulafile=\FRACTINT\explode.frm
-formulaname=moc
-  center-mag=-0.62/0/0.85 params=0.03 float=y maxiter=150
-  periodicity=0 colors=@pastel
-  }
-
-moz {
-  reset type=formula formulafile=\FRACTINT\explode.frm
-formulaname=moz
-  center-mag=-0.62/0/0.85 params=0.03 float=y maxiter=150
-  periodicity=0 colors=@pastel
-  }

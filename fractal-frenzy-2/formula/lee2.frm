@@ -190,6 +190,6 @@
  Fzppsqsi  {z = pixel, f = sin (pixel):
                        z = sqr (z)  + f, |z| <= 50}
 
- Leeze (XAXIS) = {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
+ Leeze (XAXIS) {     s = exp(1.,0.), z = Pixel, f = Pixel ^ s:
                        z = cosxx (z) + f, |z| <= 50 }
 

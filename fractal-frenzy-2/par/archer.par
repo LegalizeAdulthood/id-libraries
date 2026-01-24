@@ -123,7 +123,7 @@
   }
 
 1contrcp           {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=dafrm10
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM10
   function=cosxx center-mag=0.315672/-1.#IND/-1.#IND
   params=0/0/0/0/0/0 float=y inside=epsiloncross outside=imag
   potential=0/300/0
@@ -346,7 +346,7 @@
   }
 
 1da0348            {
-  reset=1800 type=formula formulafile=fractint.frm formulaname=DAFRM02
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM02
   function=sqr
   center-mag=-2.14815715000000000/-1.#IND0000000000000/984.6676/0.002708/-\
   57.2957795130823229/32.7042204869176771 params=0/0/0/0/0/0 float=y
@@ -357,7 +357,7 @@
   }
 
 1da0352            {
-  reset=1800 type=formula formulafile=fractint.frm formulaname=DAFRM03
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM03
   function=cotanh
   center-mag=-0.00424999/-1.#IND/18.72758/0.1424/-57.2957795130823229/32.7\
   042204869176771 params=0/0/0/0/0/0 float=y cyclerange=1/77
@@ -367,7 +367,7 @@
   }
 
 1da0353            {
-  reset=1800 type=formula formulafile=fractint.frm formulaname=DAFRM03
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM03
   function=cotan passes=b
   center-mag=-1.57296/-1.#IND/21.45697/0.1243/-57.2957795130823229/32.7042\
   204869176771 params=0/0/0/0/0/0 float=y inside=maxiter
@@ -379,7 +379,7 @@
   }
 
 1da0354            {
-  reset=1800 type=formula formulafile=fractint.frm formulaname=DAFRM03
+  reset=1800 type=formula formulafile=da.frm formulaname=DAFRM03
   function=sin
   center-mag=-0.956602/-1.#IND/3.453802/0/-57.2957795130823229/32.70422048\
   69176771 params=0/0/0/0/0/0 float=y inside=epsiloncross
@@ -437,7 +437,7 @@
   }
 
 1da0366            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=DAFRM08
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM08
   function=cosh passes=b
   center-mag=0.667202/-1.#IND/2.732239/0.0001/-57.2957795130823229/32.7042\
   204869176771 params=0/0/0/0/0/0 float=y inside=maxiter
@@ -447,7 +447,7 @@
   }
 
 1da0373            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=DAFRM11
+  reset=1820 type=formula formulafile=da00.frm formulaname=DAFRM11
   function=cotanh center-mag=-0.0501567/-1.#IND/-1.#IND
   params=0.25/0/0/0/0/0 float=y
   colors=000000MMM5S3000000QQQ<32>vvv<3>zzzzzzyyy<56>555444333<2>000000001\
@@ -691,7 +691,7 @@
   }
 
 1da0467            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=liar.frm
   formulaname=F'Liar1C function=ident/sqr
   center-mag=1.72042/-1.#IND/-1.#IND params=1/0/0/0/0/0 float=y
   maxiter=500
@@ -702,7 +702,7 @@
   }
 
 1da0468            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=liar.frm
   formulaname=F'Liar1C function=ident/cotanh
   center-mag=0.482242/-1.#IND/-1.#IND params=0/0/0/0/0/0 float=y
   maxiter=500 potential=0/300/0
@@ -713,7 +713,7 @@
   }
 
 1da0469            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=liar.frm
   formulaname=F'Liar1C function=ident/conj
   center-mag=-1.65145/-1.#IND/0.9472565/0.0001/-57.2957795130823229/32.704\
   2204869176771 params=1/0/0/0/0/0 float=y maxiter=500 inside=maxiter
@@ -724,7 +724,7 @@
   }
 
 1da0470            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=f'liar1
+  reset=1820 type=formula formulafile=fractint.frm formulaname=F'Liar1
   function=ident center-mag=1.08091/-1.#IND/-1.#IND
   params=0.9/0/0/0/0/0 float=y
   colors=0003lv3mvst4s47B6x0zzzzzz3zst4s47B6x000<46>000<4>0008Yz<38>UUrVUr\
@@ -733,7 +733,7 @@
   }
 
 1da0472            {
-  reset=1827 type=formula formulafile=fractint.frm formulaname=F'Liar2
+  reset=1827 type=formula formulafile=form2.frm formulaname=F'Liar2
   function=tan center-mag=0.148383/-1.#IND/-1.#IND
   params=1/0/2.25/0/0/0 float=y maxiter=1000 potential=0/399/0
   cyclerange=0/255
@@ -744,7 +744,7 @@
   }
 
 1da0475            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=f'liar2
+  reset=1820 type=formula formulafile=form2.frm formulaname=F'Liar2
   function=sqr center-mag=0.715925/-1.#IND/-1.#IND
   params=1/0/2.25/0/0/0 float=y maxiter=1000 potential=0/399/0
   colors=000zY0<24>zv0<3>zz0yz0wz0<23>Dz0Bz09z0<3>1z0<10>Nz0<3>Vz0Wz0Xz0<2\
@@ -952,7 +952,7 @@
   }
 
 1da0563            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=tetrate
+  reset=1820 type=formula formulafile=builtn.frm formulaname=tetrate
   center-mag=-0.589354/-1.#IND/1.163539/0.0001/-57.2957795130823229/32.704\
   2204869176771 params=0.9/0/1/0.7/0/0 float=y inside=epsiloncross
   outside=real
@@ -1179,7 +1179,7 @@
 
 1da0694            {
   reset=1820 type=formula formulafile=fractint.frm
-  formulaname=sjmand03 function=cosh
+  formulaname=SJMAND03 function=cosh
   center-mag=0.810384/-1.#IND/-1.#IND params=0/0/0/0/0/0 float=y
   maxiter=1000 inside=0
   colors=000WW0<25>uu0<4>zz0<25>zB4z94z74z54z34z05<25>C01A01801<3>000<25>n\
@@ -1211,7 +1211,7 @@
   }
 
 1da0698            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=ok-36
+  reset=1820 type=formula formulafile=fractint.frm formulaname=OK-36
   function=recip/tanh/tanh/recip
   center-mag=-0.621378/-1.#IND/2.641143/0.0001/-57.2957795130823229/32.704\
   2204869176771 params=0/0/0/0/0/0 float=y
@@ -1226,7 +1226,7 @@
   }
 
 1da0699            {
-  reset=1821 type=formula formulafile=fractint.frm formulaname=zeppo
+  reset=1821 type=formula formulafile=fractint.frm formulaname=Zeppo
   function=log/tan
   center-mag=-1.6322/-1.#IND/66.45207/0.04013/-57.2957795130823229/32.7042\
   204869176771 params=0/0/0/0/0/0 float=y maxiter=10000 decomp=256
@@ -1237,7 +1237,7 @@
   }
 
 1da0701            {
-  reset=1821 type=formula formulafile=fractint.frm formulaname=zeppo
+  reset=1821 type=formula formulafile=fractint.frm formulaname=Zeppo
   function=cosxx/cosxx center-mag=0.312805/-1.#IND/-1.#IND
   params=0/0/0/0/0/0 float=y decomp=256
   colors=z05<25>C01A01801<3>000<25>nn0pp0rr0<2>xx0zz0zz1<24>zznzzpzzr<2>zz\
@@ -1246,7 +1246,7 @@
   }
 
 1da0702            {
-  reset=1821 type=formula formulafile=fractint.frm formulaname=zeppo
+  reset=1821 type=formula formulafile=fractint.frm formulaname=Zeppo
   function=ident/ident passes=b center-mag=0.180239/-1.#IND/-1.#IND
   params=0.55/0.6/-0.55/-0.55/0/0 float=y fillcolor=1 logmap=old
   decomp=256
@@ -1258,7 +1258,7 @@
   }
 
 1da0705            {
-  reset=1821 type=formula formulafile=fractint.frm formulaname=3rdim03
+  reset=1821 type=formula formulafile=3dfract.frm formulaname=3RDIM03
   function=sqr
   center-mag=+0.09596139283548187/-1.#IND0000000000000/625.2501/0.004265/-\
   57.2957795130823229/32.7042204869176771
@@ -1340,7 +1340,7 @@
   }
 
 1da0723            {
-  reset=1821 type=formula formulafile=fractint.frm formulaname=3rdim03
+  reset=1821 type=formula formulafile=3dfract.frm formulaname=3RDIM03
   function=cosh
   center-mag=-0.43866390100909690/-1.#IND0000000000000/82.91412/0.03216/-5\
   7.2957795130823229/32.7042204869176771
@@ -1380,7 +1380,7 @@
   }
 
 1da0728            {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=OK-26
+  reset=1820 type=formula formulafile=overkill.frm formulaname=OK-26
   function=conj center-mag=3.665e-006/-1.#IND/-1.#IND
   params=-1/0/0/0/0/0 float=y maxiter=60 inside=zmag outside=real
   potential=1/300/1
@@ -1531,7 +1531,7 @@
 
 1da0754            {
   reset=1820 type=formula formulafile=fractint.frm
-  formulaname=sjmand01
+  formulaname=SJMAND01
   center-mag=1.36493/-1.#IND/3.16204/0.0001/-57.2957795130823229/32.704220\
   4869176771 params=0/0/-0.75/0/0/0 float=y maxiter=32000
   colors=000xQ5<3>tQBsQDrQEqQGoRI<3>TaCOcBIf9Ci86l6<3>Qk5Vk4_k4<2>ni2<3>sn\
@@ -1697,7 +1697,7 @@
   }
 
 1da0779            {
-  reset=1823 type=formula formulafile=fractint.frm formulaname=jm_25
+  reset=1823 type=formula formulafile=fractint.frm formulaname=Jm_25
   function=ident/ident
   center-mag=-1.76879940692079200/-1.#IND0000000000000/-1.#IND
   params=1/-0.75/0/0/0/0 float=y maxiter=32767 inside=maxiter
@@ -1759,7 +1759,7 @@
   }
 
 1da0791            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=reb005.frm
   formulaname=3RDIMFRAME-ROBERT
   center-mag=-0.84454816017059870/-1.#IND0000000000000/7383.894/0.0003611/\
   -57.2957795130823229/32.7042204869176771
@@ -1772,8 +1772,8 @@
   }
 
 1da0792            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=3rdimikenaga01 passes=b
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMIKENAGA01 passes=b
   center-mag=+0.50827683282363070/-1.#IND0000000000000/-1.#IND
   params=0.66667/0.33333/-0.66667/-0.33333/0/0 float=y maxiter=1024
   colors=000jjj<4>QQQLLLHHH<3>000000<8>aaaeeeiii<3>zzzzzz<8>PPPLLLHHH<3>00\
@@ -1784,8 +1784,8 @@
   }
 
 1da0797            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=3rdimikenaga01
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMIKENAGA01
   center-mag=-0.51912883674999940/-1.#IND0000000000000/49.01961/0.0544/-57\
   .2957795130823229/32.7042204869176771
   params=0.66667/0.33333/0.66667/0.33333/0/0 float=y maxiter=10240
@@ -1796,8 +1796,8 @@
   }
 
 1da0798            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=3rdimikenaga01
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMIKENAGA01
   center-mag=-0.52047476676397570/-1.#IND0000000000000/-1.#IND
   params=0.66667/0.33333/0.66667/0.33333/0/0 float=y maxiter=10240
   colors=000mmm<2>zzzzzz<8>PPPLLLHHH<3>000000<9>bbbfffjjj<3>zzz<8>PPPLLLHH\
@@ -1808,8 +1808,8 @@
   }
 
 1da0800            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=3rdimikenaga01 passes=1
+  reset=1820 type=formula formulafile=reb005.frm
+  formulaname=3RDIMIKENAGA01 passes=1
   center-mag=-0.13927529160000410/-1.#IND0000000000000/98.03922/0.0272/-57\
   .2957795130823229/32.7042204869176771
   params=0.75/0.5/0.33333/0.33333/0/0 float=y maxiter=512
@@ -1961,7 +1961,7 @@
 
 1da0866            {
   reset=1820 type=formula formulafile=fractint.frm
-  formulaname=3damand01
+  formulaname=3daMand01
   center-mag=+0.32147351527093240/-1.#IND0000000000000/5579931/4.779e-007/\
   -57.2957795130823229/32.7042204869176771 params=-0.75/0.1875/0/0/0/0
   float=y maxiter=2048
@@ -2012,7 +2012,7 @@
   }
 
 1da0872            {
-  reset=0 type=formula formulafile=fractint.frm formulaname=timserrda3
+  reset=0 type=formula formulafile=form2.frm formulaname=timserrda3
   function=log
   center-mag=0.745732/-1.#IND/3.676471/0.0001/-57.2957795130823229/32.7042\
   204869176771 params=0/0/0/0/0/0 float=y fillcolor=15 inside=bof60
@@ -2025,8 +2025,8 @@
   }
 
 1da0873            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=fugue_02 function=conj/sqr/cosxx
+  reset=1820 type=formula formulafile=fugue.frm
+  formulaname=FUGUE_02 function=conj/sqr/cosxx
   center-mag=0.638835/-1.#IND/0.2156312/0.0001/-57.2957795130823229/32.704\
   2204869176771 params=0.666667/0.333333/0/0/0/0 float=y inside=bof60
   colors=000B0L<3>J0ZL1bM1e<3>U1s<9>n7Lp8Ir9E<3>zB0<9>OVbKXfGZj<3>0fz<9>bX\
@@ -2037,7 +2037,7 @@
   }
 
 1da0874            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=fugue.frm
   formulaname=FUGUE_04 function=flip/conj/ident/ident
   center-mag=0.00613434/-1.#IND/1.356584/0.0001/-57.2957795130823229/32.70\
   42204869176771 params=0.666667/0.333333/0/0/0/0 float=y inside=bof60
@@ -2050,7 +2050,7 @@
   }
 
 1da0876            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=fugue.frm
   formulaname=FUGUE_09 function=conj/conj/ident/ident
   center-mag=-0.281525/-1.#IND/0.9363296/0/-57.2957795130823229/32.7042204\
   869176771 params=0/0/0/0/0/0 float=y maxiter=1500 potential=1/300/1
@@ -2068,8 +2068,8 @@
   }
 
 1da0877            {
-  reset=1820 type=formula formulafile=fractint.frm
-  formulaname=fugue_04 function=conj/conj/log/log
+  reset=1820 type=formula formulafile=fugue.frm
+  formulaname=FUGUE_04 function=conj/conj/log/log
   center-mag=0.113428/-1.#IND/2.028387/0.0001/-57.2957795130823229/32.7042\
   204869176771 params=1.1/1.5/0/0/0/0 float=y maxiter=1500
   inside=bof61 potential=1/300/1
@@ -2079,7 +2079,7 @@
   }
 
 1da0878            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=fugue.frm
   formulaname=FUGUE_06 function=cosxx/cosxx/cosxx/cosxx
   center-mag=2.91323e-013/-1.#IND/-1.#IND params=0.5/0.5/0/0/0/0
   float=y maxiter=1500 potential=0/300/0
@@ -2097,7 +2097,7 @@
   }
 
 1da0879            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=fugue.frm
   formulaname=FUGUE_07 function=tan/tan/tan/conj
   center-mag=-2.13873/-1.#IND/16.50854/0.1615/-57.2957795130823229/32.7042\
   204869176771 params=0/0/0/0/0/0 float=y maxiter=1500
@@ -2108,7 +2108,7 @@
   }
 
 1da0880            {
-  reset=1820 type=formula formulafile=fractint.frm
+  reset=1820 type=formula formulafile=fugue.frm
   formulaname=FUGUE_09 function=conj/conj/log/log
   center-mag=0.5826/-1.#IND/0.9861933/0.0001/-57.2957795130823229/32.70422\
   04869176771 params=0/0/0/0/0/0 float=y maxiter=1500
@@ -2144,14 +2144,14 @@
 
 1nfinity           {
   reset=1800 type=formula formulafile=fractint.frm
-  formulaname=fzppfnsr function=recip
+  formulaname=Fzppfnsr function=recip
   center-mag=-2.13242/-1.#IND/-1.#IND params=0/0/0/0/0/0 float=y
   maxiter=1500 inside=maxiter outside=real decomp=64 biomorph=1
   colors=000110<24>YYXZZZ___<3>eee<24>HH9GG7FF6<3>BB0000<190>000
   }
 
 1pointer           {
-  reset=1820 type=formula formulafile=fractint.frm formulaname=dafrm07
+  reset=1820 type=formula formulafile=fractint.frm formulaname=DAFRM07
   function=cotanh passes=b
   center-mag=-0.73690787275983370/-1.#IND0000000000000/842.457/0.003165/-5\
   7.2957795130823229/32.7042204869176771 params=0/0/0/0/0/0 float=y

@@ -1,5 +1,5 @@
 
- comment = { SKINV13R.FRM }
+ comment { SKINV13R.FRM }
 
  ScSkSin(XAXIS) { z = pixel, TEST = (p1+3): z = sin(z) - sqr(z), |z|<TEST }
 
@@ -17,9 +17,9 @@
 
  ScSkZCZZ(XYAXIS) { z = pixel, TEST = (p1+3): z = (z*cosxx(z)) - z, |z|<TEST }
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
- comment = { Mandelbrot form 1 of the Tetration formula }
+ comment { Mandelbrot form 1 of the Tetration formula }
 
  MTet (XAXIS) {
    z = pixel:
@@ -27,7 +27,7 @@
            |z| <= (P1 + 3)
  }
 
- comment = { Mandelbrot form 2 of the Tetration formula }
+ comment { Mandelbrot form 2 of the Tetration formula }
 
  AltMTet (XAXIS) {
    z = 0:
@@ -35,7 +35,7 @@
            |z| <= (P1 + 3)
  }
 
- comment = { Julia form 1 of the Tetration formula }
+ comment { Julia form 1 of the Tetration formula }
 
  JTet (XAXIS) {
    z = pixel:
@@ -43,7 +43,7 @@
            |z| <= (P2 + 3)
  }
 
- comment = { Julia form 2 of the Tetration formula }
+ comment { Julia form 2 of the Tetration formula }
 
  AltJTet (XAXIS) {
    z = P1:
@@ -51,100 +51,100 @@
            |z| <= (P2 + 3)
  }
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
- comment = { Tetrated Sine - appears to be identical with a horizontally
+ comment { Tetrated Sine - appears to be identical with a horizontally
                              shifted Tetrated Cosine }
 
- TSin (XAXIS) = {
+ TSin (XAXIS) {
         z = c = sin(pixel):
                 z = c ^ z,
                    |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Hyperbolic Sine }
+ comment { Tetrated Hyperbolic Sine }
 
- TSinh (XAXIS) = {
+ TSinh (XAXIS) {
         z = c = sinh(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Hyperbolic Cosine }
+ comment { Tetrated Hyperbolic Cosine }
 
- TCosH (XAXIS) = {
+ TCosH (XAXIS) {
         z = c = cosh(pixel):
                 z = c ^ z,
                    |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Square Root }
+ comment { Tetrated Square Root }
 
- TSqr (XYAXIS) = {
+ TSqr (XYAXIS) {
         z = c = sqr(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Exponential }
+ comment { Tetrated Exponential }
 
- TExp (XAXIS) = {
+ TExp (XAXIS) {
         z = c = exp(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Log }
+ comment { Tetrated Log }
 
- TLog (XAXIS) = {
+ TLog (XAXIS) {
         z = c = log(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated (Log * Square Root) }
+ comment { Tetrated (Log * Square Root) }
 
- TLSQ (XAXIS) = {
+ TLSQ (XAXIS) {
         z = c = log(pixel) * sqr(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated (Sinh * Cosh) }
+ comment { Tetrated (Sinh * Cosh) }
 
- TSHCH (XAXIS) = {
+ TSHCH (XAXIS) {
         z = c = sinh(pixel) * cosh(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated (Sin * Sinh) }
+ comment { Tetrated (Sin * Sinh) }
 
- TSSH (XYAXIS) = {
+ TSSH (XYAXIS) {
         z = c = sin(pixel) * sinh(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated (Exp * Log) }
+ comment { Tetrated (Exp * Log) }
 
- TEL (XAXIS) = {
+ TEL (XAXIS) {
         z = c = exp(pixel) * log(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated Square - Looks almost identical to square root! }
+ comment { Tetrated Square - Looks almost identical to square root! }
 
- Tsq (XYAXIS) = {
+ Tsq (XYAXIS) {
         z = c = pixel * pixel:
                 z = c ^ z,
                     |z| <= (p1 + 3)
         }
 
- comment = { Tetrated (square root of the log time the sine squared) }
+ comment { Tetrated (square root of the log time the sine squared) }
 
- TSLPS2 (XAXIS) = {
+ TSLPS2 (XAXIS) {
         z = c = sqr( log(pixel) ) * sin(pixel) * sin(pixel):
                 z = c ^ z,
                     |z| <= (p1 + 3)
@@ -155,7 +155,7 @@
  SkMandelHypSine(XYAXIS) { z = pixel:  z = sinh(z) * pixel, |z| <= (p1 + 3) }
  SkMandelHypCosine(XYAXIS) { z = pixel: z = cosh(z) * pixel, |z| <= (p1 + 3) }
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
  Cubic {
           p = pixel,
@@ -187,7 +187,7 @@
                z0 = z1;
                z1 = z,  |z| < test }
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
  InvCosSq (XAXIS) {
            z = pixel,
@@ -196,14 +196,15 @@
               zde = 1 +  (imag(z1)*imag(z1) );
                 z = (real(z1) / zde) - (imag(z1) / zde),   |z| < test }
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
  BugInvCosSq (XAXIS) {
            z = pixel,
         test = (p1+3):
                z1 = cosxx(z) * cosxx(z);
+}
 
- comment = [ --------------------------------------------------------------- }
+ comment { --------------------------------------------------------------- }
 
 
 

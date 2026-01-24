@@ -1,3 +1,4 @@
+{
 Some years back while serving a "dime" at Joliet for embezalment, I
 chanced on a fellow inmate who was serving 2 "dimes". Let's call this
 fellow inmate Al Cappone to secure his anonimity. Big Al supplied me 
@@ -17,11 +18,6 @@ work well at that age so I'm planning a less stressful career.
 This file (or any of it's parts) may not be used for ANY commercial 
 purpose without my written and signed consent. I can be reached at 
 CompuServe: 73753,2420 or America Online: Genealogy1 
-
-
-}
-
--Please-read-me{
 }
 
 Carr-205{

@@ -1,3 +1,4 @@
+{
 Some years back, I was privy to a private conversation between Sig
 Freud and Al Einstein. They were basically just batting the breeze
 as most regular guys tend to do. 
@@ -21,8 +22,8 @@ Ocala, FL 34482
 
 Only send me positive comments about this file. If you have any
 negative comments please keep them to yourself!! <g>
-
 }
+
 Carr-571{;Also in 06CARR.FRM
 z=1/conj(pixel-p1),c=sin(z/pixel)^conj(z/pixel):
 z=z*z+(c-p2),
@@ -56,11 +57,12 @@ z=z*z+conj(c-p2),
 |z| <=10
 }
 
-Carr-576{
-z=1/conj(pixel-p1),
-c=conj(cos(z/(1/pixel)))*conj(z(1/pixel)):
-z=z*z*z+conj(c-p2),
-|z| <=10
+Carr-576 {
+  z=1/conj(pixel-p1)
+  c=conj(cos(z/(1/pixel)))*conj(z/(1/pixel)):
+  z=z*z*z+conj(c-p2)
+  |z| <=10
+  ;SOURCE: carr.frm
 }
 
 Carr-577{
@@ -279,9 +281,11 @@ z=conj(z*z+c),
 }
 
 Carr-612{
-z=1/conj(pixel),c=1/sqr(pixel)/z*z+pixel):
+z=1/conj(pixel),c=1/(sqr(pixel)/z*z+pixel):
 z=conj(z*z+c),
 |z| <=10
+  ;SOURCE: 05carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 Carr-613{
@@ -387,9 +391,11 @@ z=z*z+(c-0.024),
 }
 
 Carr-630{
-z=cosxx(sinh(1/pixel-0.394),c=sin(1/cosxx(-2.5064,0.3124)):
+z=cosxx(sinh(1/pixel-0.394)),c=sin(1/cosxx(-2.5064,0.3124)):
 z=(z-0.124)*(z+0.287)+(c-0.024),
 |z| <=10
+  ;SOURCE: 05carr.frm
+  ;SOURCE: to-bob-6.frm
 }
 
 Carr-631{

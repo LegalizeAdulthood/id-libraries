@@ -1,3 +1,4 @@
+{
 Some years back while serving a "dime" at Joliet for embezalment, I
 chanced on a fellow inmate who was serving 2 "dimes". Let's call this
 fellow inmate Al Cappone to secure his anonimity. Big Al supplied me 
@@ -15,9 +16,6 @@ time I get out I'll be 108 years old. The old nimble fingers won't
 work well at that age so I'm planning a less stressful career.
 
 
-}
-
--Please-read-me{
 }
 
 Carr-205{
@@ -297,14 +295,15 @@ z=1/z*1/z+log(c),
 |z| <=10
 }
 
-Carr-246{
-z=c=1/pixel:
-Bob2=conj((z^3.5)*(z^3.5)*(z^3.5)-0.4)+cosxx(sqr(z-0.35)),
-Bob3=conj(c*1/pixel-0.124):
-z=(Bob2/Bob3)/Bob3;
-z=sin((z*z)*(z*z))-flip(c-0.224);
-z=sqr(z*z)+flip(c-0.324),
-|z| <=10
+Carr-246 {
+  z=c=1/pixel
+  Bob2=conj((z^3.5)*(z^3.5)*(z^3.5)-0.4)+cosxx(sqr(z-0.35))
+  Bob3=conj(c*1/pixel-0.124)
+  z=(Bob2/Bob3)/Bob3 :
+  z=sin((z*z)*(z*z))-flip(c-0.224)
+  z=sqr(z*z)+flip(c-0.324)
+  |z| <=10
+  ;SOURCE: carr-9.frm
 }
 
 Carr-247{

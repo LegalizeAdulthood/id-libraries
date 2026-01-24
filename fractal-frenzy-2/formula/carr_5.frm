@@ -1,3 +1,4 @@
+{
 These formulas were discovered while I was on an expedition to the
 Far East in search of rare spices. While in the remote Province of
 Wonchuria, in Northern Taicong, I occasioned on a Budfushan 
@@ -27,19 +28,21 @@ Bob Carr
 }
 
 
-Carr-14 {modified fnzp fnpix
+Carr-14 { ; modified fnzp fnpix
 z = 1 / tan(1 / pixel) +p1,
 c = ((1 * (|p2|<=0) +p2) * fn2(1 / pixel) ):
 z = fn1(z) * fn2(z),
  |z| <=64 
  }
 
-Carr-15(xaxis) {; Mark Peterson modified(Zoom all the way out & look)
-  z = log(pixel) + 4c, z = cosxx(z): 
- z = z + cosxx(pixel);
- z = sqr(z)
-     Lastsqr <=4 
-  }
+Carr-15 (xaxis) {; Mark Peterson modified(Zoom all the way out & look)
+                 ; Edited for Fractint v20 by G. Martin
+  z = log(pixel), z = cosxx(z):
+  z = z + cosxx(pixel)
+  z = sqr(z)
+  Lastsqr <=4
+  ;SOURCE: carr.frm
+}
 
 Carr-16 {
 z = 0:
@@ -95,50 +98,51 @@ z = sin(cosxx(1 / (z)) )
   |z| <= 4
    }
 
-Carr-24 {InvRadius-Mandel formula manipulated
+Carr-24 { ; InvRadius-Mandel formula manipulated
 c=z=1/pixel:
 z=sqr(z*z) - c;
 |z| <=4
  }
 
-Carr-25 { Carr-24 Modified
+Carr-25 { ; Carr-24 Modified
 c=z=1/pixel:
 z=sqr(z) + (c-1);
 |z| <= 4
   }
 
-Carr-27 { Carr-24 Modified
-c=z=1/pixel:
-z=sqr(z) + (c-1 1/4);
- |z| <=10
- }
+Carr-27 {; Carr-24 Modified
+  c=z=1/pixel:
+  z=sqr(z) + (c-1)*(1/4)
+  |z| <=10
+  ;SOURCE: carr.frm
+}
 
-Carr-28 {Carr-24 Modified
+Carr-28 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z) + c;
 |z| <= 4
  }
 
-Carr-29 {Carr-24 Modified
+Carr-29 { ; Carr-24 Modified
 c=z=1/pixel:
 z=1-(z*z*z) + c;
 |z| <= 4
  }
 
-Carr-30 {Carr-24 Modified
+Carr-30 { ; Carr-24 Modified
 c=z=1/pixel:
 z=(z*z*z*z*z) +c;
 |Z| <= 4
  }
 
 
-Carr-32 {Carr-24 Modified
+Carr-32 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z) + c;
 |z| <= 4
   }
 
-Carr-34 {Carr-24 Modified
+Carr-34 { ; Carr-24 Modified
 c=z=pixel:
 z=(z*z*z*z*z*z*z) + c;
  |z| <= 8

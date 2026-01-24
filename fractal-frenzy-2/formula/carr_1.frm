@@ -1,3 +1,4 @@
+{
 These formulas were discovered while I was working as a spy for the 
 C.I.A. in K.G.B Headquarters in Moscow some years back. By a stroke
 of luck I gained access to the K.G.B.'s Very Top SECRET file room
@@ -60,12 +61,12 @@ z=sqr(conj(z^z^z^z^z)) + .33;
  }
 
 Carr-02D {
-c=z=(1/pixel)/pixel-o.25:
+c=z=(1/pixel)/pixel-0.25:
 z=sqr(z) + 0.33;
 |z| <=4
  }
 
-Carr-02E {Try using Distance Estimator function on this formula
+Carr-02E { ; Try using Distance Estimator function on this formula
 c=z=1/pixel:
 z=sqr(z) + c;
 z1=sqr(z) + 0.33,
@@ -96,28 +97,30 @@ c = z = 1 / pixel
   |z| <= 4
   }
 
-Carr-06 {was OK-03 and was modified
+Carr-06 { ; was OK-03 and was modified
 z = c = pixel:
 z = cosxx(z)/c;
 z = sin(z),
 |z| <= (5 + p1)
   }
 
-Carr-07 {was OK-02 and was modified
-z = c = 1 / pixel, k = 1 + p1:
-z = (c^z) + c:
-z = cotan(z) * k,
-|z| <= (5 + p2)
-  }
+Carr-07 {; was OK-02 and was modified
+         ; Edited for Fractint v. 20 by George Martin, 10/98
+  z = c = 1 / pixel, k = 1 + p1:
+  z = (c^z) + c
+  z = cotan(z) * k
+  |z| <= (5 + p2)
+  ;SOURCE: carr.frm
+}
 
-Carr-08 {was OK-01 and was modified
+Carr-08 { ; was OK-01 and was modified
 z = 0, c = 1 / pixel:
 z = (c^z) + c;
 z = sqr(z),
 |z| <= (5 + p1)
   }
 
-Carr-09 {was OK-04 and was modified
+Carr-09 { ; was OK-04 and was modified
 z = 0, c = cosxx(pixel):
 z = sqr(z) + c,
 |z| <= (5 + p1)
@@ -143,12 +146,11 @@ z=sqr(z) + c,
 |z| <= 4
   }
 
-Carr-13 {
-c = z = cosxx(pixel):
-z = cosxx(z) + 2;
-zx = real(p2) +1, zy = imag(z);
-c = z = 1 / sqr(pixel):
-z = 1 / cosxx(z) +c;
-|z| <= 4
-  }
-
+Carr-13 {; Edited for Fractint v. 20 by George Martin, 10/98
+  c = z = cosxx(pixel):
+  z = cosxx(z) + 2
+  c = z = 1 / sqr(pixel)
+  z = 1 / cosxx(z) +c
+  |z| <= 4
+  ;SOURCE: carr.frm
+}

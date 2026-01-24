@@ -33,7 +33,7 @@ JULIAP (ORIGIN) {
     |z| <=4
     }
 
- Zexpp (XAXIS) = {
+ Zexpp (XAXIS) {
       s = (3.1415926535,0.), z = Pixel:
       z = z ^ s + pixel, |z| <= 100
    }

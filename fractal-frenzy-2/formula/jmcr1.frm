@@ -109,11 +109,11 @@ z=fn1(z)*fn2(z)+fn3(fn4(p1)),
 
 InvJm1-M(xaxis) { ; Ceci n'est *pas* InvMand2  Jm Collard-Richard
 c=z=1/(pixel*pixel):
-z=z*z+c       }           { 'type' Mandelbrot }
+z=z*z+c       }           ; 'type' Mandelbrot
 
 InvJm1-J        {; Jm Collard-Richard  Ceci n'est *pas* InvJulia2
 z=1/(pixel*pixel):
-z=z*z+p1      }           { 'type' Julia      }
+z=z*z+p1      }           ; 'type' Julia
 
 InvJmN-M      {  ; Jm Collard-Richard    Ceci n'est pas InvMandelN
 c=z=1/(pixel^p1):
@@ -244,4 +244,4 @@ z=c=1/pixel:
 z=z^p1+c,
 |z|<=4                    }
 
-                     jmc@math.ethz.ch
+;                    jmc@math.ethz.ch

@@ -13,23 +13,29 @@
    |z| <= 4
    }
 
-   DAFRM08  {
-   z = pixel, c = z + z^ (1 - z):
-   tmp = fn1(z),
-   real(tmp) = real(tmp) * real(c) - imag(tmp) * imag(c),
-   imag(tmp) = real(tmp) * imag(c) - imag(tmp) * real(c), 
-   z = tmp + pixel,
-   |z| <= 100
-   }
+DAFRM08 {; Edited for Fractint v. 20 by George Martin, 10/98
+         ; The revision is to give the result that the author
+         ; intended
+  z = pixel, c = z + z^ (1 - z):
+  tmp = fn1(z)
+  tmp = real(tmp)*real(c)-imag(tmp)*imag(c)\
+          + flip(real(tmp)*imag(c)-imag(tmp)*real(c))
+  z = tmp + pixel
+  |z| <= 100
+  ;SOURCE: da00.frm
+}
 
-   DAFRM09  {  
-   z = pixel, c = z + z^ (z - 1):
-   tmp = fn1(z),
-   real(tmp) = real(tmp) * real(c) - imag(tmp) * imag(c),
-   imag(tmp) = real(tmp) * imag(c) - imag(tmp) * real(c), 
-   z = tmp + pixel + 12,
-   |z| <= 4
-   }
+DAFRM09 {; Edited for Fractint v. 20 by George Martin, 10/98
+         ; The revision is to give the result that the author
+         ; intended
+  z = pixel, c = z + z^ (z - 1):
+  tmp = fn1(z)
+  tmp = real(tmp)*real(c)-imag(tmp)*imag(c)\
+         + flip(real(tmp)*imag(c)-imag(tmp)*real(c))
+  z = tmp + pixel + 12
+  |z| <= 4
+  ;SOURCE: fractint.frm
+}
 
    DAFRM10  { ; var Ron Barnett REB004K
    z = pixel:
